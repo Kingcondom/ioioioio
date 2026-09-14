@@ -7,6 +7,169 @@
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 04 · Pericarditis, Myocarditis (อ.เจตวรงค์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - เจ็บหน้าอกที่ดีขึ้นเมื่อโน้มตัวไปข้างหน้า → acute pericarditis
+  - ECG: ST ยกเป็นวงกว้างแบบเว้า + PR depression (ยกทุก lead ยกเว้น aVR)
+  - Electrical alternans + low voltage → pericardial effusion/tamponade
+  - Beck triad → tamponade = obstructive shock และทำ pericardiocentesis
+  - ยาตัวแรกของ pericarditis = NSAID/ASA + colchicine (ไม่ใช่ colchicine เดี่ยว ไม่ใช่สเตียรอยด์)
+  - Myocarditis สาเหตุที่พบบ่อยที่สุด = ไวรัส · doxorubicin = cardiomyopathy
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเจ็บหน้าอก เหนื่อย ความดันตก → ไล่จาก pericarditis ไปเป็น tamponade แล้วถามการรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR เงาหัวใจโตทรงขวดน้ำ + บอกการรักษา (pericardiocentesis)
+  - อ่าน ECG ชุด pericarditis / AV block / hyperkalemia / MI ให้แยกกันได้
+
+ต้องตอบให้ได้:
+  - แยก pericarditis (ST ยกทั่ว เว้า ไม่มี reciprocal) ออกจาก STEMI ให้ได้ทุกครั้ง
+  - tamponade วินิจฉัยจากคลินิก + echo ไม่ต้องรอผลอื่น และห้ามให้ยาขับปัสสาวะ
+
+เจอในโพย: MED30–MED35 (MCQ ทุกรุ่น · OSCE MED31, MED32)
+ข้อตัวอย่าง: C-MCQ-01, C-MCQ-02, C-OLD-04, C-OLD-05, C-OLD-07
+
+### Lec 10 · Shock (AL) (อ.เจตวรงค์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - จำแนกชนิดของ shock จากโจทย์ (obstructive / cardiogenic / hypovolemic / distributive)
+  - JVP เป็นตัวแยกข้างเตียง: แฟบ = hypovolemic-distributive, สูง = cardiogenic-obstructive
+  - Anaphylaxis → adrenaline IM ต้นขา (ไม่ใช่ antihistamine/steroid) และ type I hypersensitivity
+  - Septic shock: ปลายมืออุ่น SVR ต่ำ ให้ noradrenaline เป็นตัวแรก
+  - Shock + AST/ALT สูงหลักพัน → ischemic hepatitis
+
+MEQ — โจทย์ที่เคยออก:
+  - Undifferentiated shock — ซักประวัติ ตรวจร่างกาย แยกชนิด แล้ววางแผนการให้สารน้ำ/ยา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - สถานีวัดความดันและประเมินสัญญาณชีพ + แปลผลภาวะช็อก
+
+ต้องตอบให้ได้:
+  - บอกชนิดของ shock ได้จาก JVP + ปลายมือเย็น/อุ่น + pulse pressure
+  - anaphylaxis ต้องตอบ adrenaline IM เสมอ และก่อนกลับบ้านต้องจ่ายปากกา adrenaline
+
+เจอในโพย: MED30–MED35 (ออกทุกรุ่น มักคู่กับ anaphylaxis)
+ข้อตัวอย่าง: C-MCQ-06, C-MCQ-07, C-OLD-18, C-OLD-24, C-OLD-28
+
+### Lec 13 · Ischemic heart diseases (AL) (อ.สุรพันธ์) — ออกหนักที่สุดของ Cardio
+
+MCQ — ถามอะไรบ่อย:
+  - STEMI + ไป PCI ได้ใน 120 นาที → primary PCI (ถ้าเกิน ให้ fibrinolytic ใน 30 นาที)
+  - อ่าน ECG บอกผนังและหลอดเลือด: V1-V4 = anterior/LAD, II-III-aVF = inferior/RCA
+  - Inferior STEMI ต้องติด V3R-V4R หา RV infarct (ห้ามให้ไนเตรต)
+  - เจ็บหน้าอก + ECG/troponin ปกติ → ตรวจซ้ำเป็นชุด ไม่ใช่ตัดออกทันที
+  - Statin ความแรงสูงในผู้ที่มี ASCVD แล้ว · xanthoma + LDL สูงมาก = LDL receptor เสีย
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเจ็บแน่นหน้าอก ให้ ECG มาอ่าน → definitive diagnosis → ทำไมต้อง PCI → ยาที่ต้องให้ต่อ
+  - ห้ามตอบ 'CAG' เดี่ยว ๆ ว่าเป็นการรักษา ต้องระบุ reperfusion
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติเจ็บหน้าอก 4-5 นาที แล้วส่ง investigation
+  - อ่าน ECG 12 lead ให้ครบ rate-rhythm-axis-interval-chamber-ST/T-Q wave
+
+ต้องตอบให้ได้:
+  - เขียนอ่าน ECG ให้ครบทุกหัวข้อ ไม่ใช่บอกแต่ชื่อโรค
+  - ยาหลังกล้ามเนื้อหัวใจตาย: DAPT + statin + beta-blocker + ACEI
+
+เจอในโพย: MED28–MED35 ทุกรุ่น ทั้ง MCQ, MEQ และ OSCE/SAQ
+ข้อตัวอย่าง: C-MCQ-11, C-MCQ-15, C-OLD-33, C-OLD-42, C-OSCE-02
+
+### Lec 24 · Atrial fibrillation (อ.อภิชัย) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - ประเมิน stroke ด้วย CHA2DS2-VASc (HAS-BLED ใช้ดูเลือดออก ไม่ใช่เหตุผลไม่ให้ยา)
+  - Valvular AF (MS/ลิ้นเทียมโลหะ) ต้องใช้ warfarin ห้าม DOAC
+  - ตรวจร่างกาย: ชีพจรไม่สม่ำเสมอ + pulse deficit
+  - AF ที่ไม่คงที่ → synchronised cardioversion ทันที
+  - AF ใหม่ ต้องส่ง TFT เสมอ (ไทรอยด์เป็นพิษ) และถาม holiday heart
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยใจสั่นเหนื่อย + AF ร่วมกับหัวใจล้มเหลว/ลิ้นตีบ ถามการคุม rate และการป้องกัน stroke
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน ECG AF/atrial flutter → บอกการรักษา → ทำอะไรต่อเมื่อกลับเป็น sinus
+
+ต้องตอบให้ได้:
+  - แยก rate/rhythm control ออกจาก anticoagulation ให้ชัด (คนละเป้าหมาย)
+  - aspirin ไม่มีที่ใช้ป้องกัน stroke จาก AF แล้ว
+
+เจอในโพย: MED30–MED35 (MCQ ทุกรุ่น · OSCE MED31, MED32)
+ข้อตัวอย่าง: C-MCQ-18, C-MCQ-22, C-OLD-56, C-OLD-65, C-OSCE-03
+
+### Lec 27 · Rheumatic fever and Valvular heart disease (อ.ชนัญญา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - จับคู่ murmur กับโรค: diastolic rumble ที่ apex = MS, blowing diastolic ที่ LSB = AR, systolic ejection ร้าวไปคอ = AS, pansystolic ร้าวไปรักแร้ = MR
+  - Mid-systolic click ที่เปลี่ยนตามท่ายืน = MVP
+  - ARF: Jones criteria + erythema marginatum + ส่ง ASO titre
+  - IE: ไข้เรื้อรัง + murmur → hemoculture 3 ชุด (ไม่ใช่ ASO) + echo; Roth spot/Osler/Janeway
+  - Fixed wide split S2 = ASD
+
+MEQ — โจทย์ที่เคยออก:
+  - Rheumatic heart disease with severe MS + AF + heart failure — ถาม pathophysiology และการรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - สถานีตรวจร่างกายหัวใจและบรรยาย murmur ให้ครบตำแหน่ง จังหวะ การร้าว
+
+ต้องตอบให้ได้:
+  - บอกตำแหน่งฟัง + ช่วงของ murmur + ท่าที่ทำให้ดังขึ้น
+  - MS ในไทยส่วนใหญ่มาจากไข้รูมาติก และต้องได้ secondary prophylaxis
+
+เจอในโพย: MED28–MED35 (โจทย์ murmur ออกทุกรุ่น)
+ข้อตัวอย่าง: C-MCQ-23, C-MCQ-27, C-OLD-72, C-OLD-87, C-OSCE-04
+
+### Lec 36 · Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ) — ออกทุกรุ่น (เน้น SAQ)
+
+MCQ — ถามอะไรบ่อย:
+  - แยก AV block: 1st = PR ยาวคงที่ · Mobitz I = PR ยาวขึ้นจนตก · Mobitz II = PR คงที่แล้วตก (ใส่ pacemaker) · complete = P กับ QRS แยกกัน
+  - SVT คงที่ → vagal แล้ว adenosine; ไม่คงที่ → synchronised cardioversion
+  - Pulseless VT/VF → defibrillation ทันที
+  - Tall peaked T = hyperkalemia → calcium gluconate ก่อน
+  - อ่าน ECG ให้ครบ 7 หัวข้อทุกครั้ง
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยใจสั่น/หมดสติ ให้ ECG แล้วถามการรักษาทันทีและการรักษาต่อเนื่อง
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - SAQ ให้ ECG 1 แผ่น: บรรยาย + วินิจฉัย + การรักษา (ออกซ้ำทุกรุ่น)
+  - ชุด ECG ที่ออกซ้ำ: pericarditis, AV block, hyperkalemia, MI
+
+ต้องตอบให้ได้:
+  - เขียน rate, rhythm, axis, interval, chamber, ST-T, Q wave ให้ครบก่อนสรุปชื่อโรค
+
+เจอในโพย: MED29–MED35 (SAQ ECG แทบทุกรุ่น)
+ข้อตัวอย่าง: C-MCQ-29, C-MCQ-33, C-OLD-97, C-OLD-103, C-OSCE-02
+
+### Lec 39 · Hypertension / Heart failure / Pulmonary edema (อ.วิไล) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก white coat / masked / resistant hypertension
+  - เบาะแส secondary HT: เริ่มเร็ว รุนแรง ดื้อยา K ต่ำโดยไม่ได้กินยาขับปัสสาวะ
+  - ยาความดันในครรภ์ = methyldopa/labetalol/nifedipine (ห้าม ACEI/ARB)
+  - HFrEF ต้องได้สี่เสาหลัก (ACEI/ARNI + beta-blocker + MRA + SGLT2i)
+  - กลไก pulmonary edema = hydrostatic pressure ในหลอดเลือดฝอยปอดสูง
+  - JVP แยก CHF ออกจากตับแข็ง · Aortic dissection ต้องให้ beta-blocker ก่อนยาขยายหลอดเลือด
+
+MEQ — โจทย์ที่เคยออก:
+  - Acute decompensated HF ที่มีความดันสูงและปอดบวมน้ำ — ถามลำดับการรักษาและยาที่ต้องปรับ
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR ของ CHF (cardiomegaly, cephalisation, Kerley B line, pleural effusion) + แปล UA
+
+ต้องตอบให้ได้:
+  - ตอบชื่อยาเป็นกลุ่มพร้อมเหตุผลว่าลดอัตราตายหรือลดอาการ
+  - หาตัวกระตุ้นของ HF เฉียบพลัน (FAILURE) ทุกครั้ง
+
+เจอในโพย: MED28–MED35 (ออกทุกรุ่น ทั้ง MCQ และ OSCE)
+ข้อตัวอย่าง: C-MCQ-35, C-MCQ-38, C-OLD-110, C-OLD-117, C-OSCE-05
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [C-MCQ-01] Acute pericarditis – first-line treatment
@@ -5065,6 +5228,169 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
 
 ข้อใหม่: MCQ 40 · MEQ/OSCE 10 · คลังข้อสอบเก่า 124 ข้อ
 เฉลยเป็นตัวอักษรตรงกับเว็บและ PDF (ตัวเลือกถูกสลับด้วย seed ของชุดแล้ว)
+
+---
+
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 05 · Fluid electrolyte: Divalent (อ.ธิติยา) — ออกเกือบทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - สาเหตุ hypercalcemia: ผู้ป่วยนอก = primary hyperparathyroidism, ผู้ป่วยใน = มะเร็ง
+  - Ca สูง + PO4 ต่ำ = PTH ทำงานมาก · CRAB = multiple myeloma
+  - Tumor lysis syndrome: K, PO4, uric acid สูง แต่ Ca ต่ำ
+  - Hypokalemia ที่แก้ไม่ขึ้น → ตรวจและแก้ Mg ก่อน
+  - Citrate จากการให้เลือดจำนวนมาก → ionised calcium ต่ำ
+
+MEQ — โจทย์ที่เคยออก:
+  - Symptomatic hypercalcemia จากมะเร็งร่วมกับ AKI — แปลผลแลป ให้การวินิจฉัย และเรียงลำดับการรักษา (สารน้ำ → bisphosphonate)
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผลชุดอิเล็กโทรไลต์ผิดปกติหลายค่าพร้อมกัน
+
+ต้องตอบให้ได้:
+  - ลำดับรักษา hypercalcemia: สารน้ำ isotonic ก่อนเสมอ แล้วค่อย bisphosphonate
+  - TLS ให้สารน้ำ + rasburicase/allopurinol ป้องกัน
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: N-MCQ-01, N-MCQ-05, N-OLD-001, N-OLD-010, N-MEQ-04
+
+### Lec 14 · Nephrotic / Nephritic syndrome (อ.ฉันทิศา) — ออกหนักมาก คุ้มค่าที่สุดของ Nephro
+
+MCQ — ถามอะไรบ่อย:
+  - เกณฑ์ nephrotic 4 ข้อ (hematuria ไม่ใช่เกณฑ์)
+  - Oval fat body / fatty cast = nephrotic · dysmorphic RBC + RBC cast = glomerular
+  - APSGN: หลังคออักเสบ 1-3 สัปดาห์ C3 ต่ำชั่วคราว · IgA nephropathy: พร้อมหวัด complement ปกติ
+  - วัดโปรตีนด้วย UPCR ไม่ใช่ dipstick
+  - ภาวะแทรกซ้อน nephrotic: ลิ่มเลือดจากเสีย antithrombin III, ติดเชื้อ
+
+MEQ — โจทย์ที่เคยออก:
+  - ชายหนุ่มปวดศีรษะ ปัสสาวะสีน้ำล้างเนื้อ ความดันสูงหลังเจ็บคอ → APSGN: วินิจฉัย ส่งตรวจ และรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA: บอกสิ่งที่พบ (dysmorphic RBC, RBC cast) + DDx 3 โรค
+  - ซักประวัติผู้ป่วยบวมทั้งตัว แล้วบอก investigation
+
+ต้องตอบให้ได้:
+  - แยก nephrotic กับ nephritic จาก UA ให้ได้ทันที
+  - SLE ที่มีไตอักเสบต้องเจาะชิ้นเนื้อไตเพื่อจัด class ก่อนให้ยากดภูมิ
+
+เจอในโพย: MED28–MED35 (MCQ + MEQ + SAQ อ่าน UA ทุกรุ่น)
+ข้อตัวอย่าง: N-MCQ-07, N-MCQ-11, N-OLD-016, N-OLD-029, N-OSCE-01
+
+### Lec 19 · Chronic kidney disease (อ.วรางคณา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก AKI กับ CKD: ไตเล็ก cortex บาง echogenicity สูง + ซีด + PTH สูง
+  - ปัจจัยเร่งการเสื่อม: น้ำตาล ความดัน โปรตีนรั่ว บุหรี่ ยาที่เป็นพิษต่อไต
+  - คัดกรองเบาหวานลงไตด้วย UACR · SGLT2 inhibitor ชะลอไตเสื่อม
+  - metformin หยุดเมื่อ eGFR < 30
+  - ข้อบ่งชี้ฟอกเลือด AEIOU (ไม่ใช่ระดับ creatinine)
+
+MEQ — โจทย์ที่เคยออก:
+  - CKD stage 5 ที่มีอาการ uremia — ประเมินข้อบ่งชี้และอธิบายทางเลือกการบำบัดทดแทนไต
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล ABG + อิเล็กโทรไลต์ในผู้ป่วยไตวาย
+  - อ่าน ECG hyperkalemia ในผู้ป่วย CKD ที่ได้ยา nephrotoxic
+
+ต้องตอบให้ได้:
+  - ตอบ AEIOU ให้ครบเมื่อถามข้อบ่งชี้ฟอกเลือด
+  - รู้ว่า eGFR ใช้ไม่ได้ตอน creatinine กำลังเปลี่ยน
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: N-MCQ-13, N-MCQ-16, N-OLD-034, N-OLD-048, N-OSCE-05
+
+### Lec 22 · Fluid electrolytes: Dysnatremia & Dyskalemia (อ.ชุมพล) — ออกทุกรุ่น ทั้งคำนวณและ ECG
+
+MCQ — ถามอะไรบ่อย:
+  - อัลกอริทึม hyponatremia: osmolality → volume status → urine Na/osm
+  - Hypovolemic hyponatremia ให้ 0.9% NaCl (3% เมื่อมีอาการทางสมอง)
+  - แก้เร็วเกิน → osmotic demyelination (จำกัด 8-10 mEq/L/วัน)
+  - SIADH: euvolemic + urine osm สูง + urine Na > 40 (small cell lung cancer)
+  - Hyperkalemia: calcium ก่อน แล้วย้ายเข้าเซลล์ แล้วขับออก · ECG tall peaked T
+  - Hypokalemia ที่อ่อนแรง + TSH ต่ำ = thyrotoxic periodic paralysis
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยอ่อนแรงจากโพแทสเซียมต่ำร่วมกับไทรอยด์เป็นพิษ — แปลผลและวางแผนแก้ไข
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน ECG hyperkalemia (ออกซ้ำหลายรุ่น)
+  - แปลผลอิเล็กโทรไลต์พร้อมคำนวณ corrected Na
+
+ต้องตอบให้ได้:
+  - ตอบลำดับการรักษา hyperkalemia ให้ถูกลำดับเสมอ
+  - รู้ว่าโพแทสเซียมต่ำเป็นภาวะเดียวในกลุ่มที่มักไม่ทำให้ชัก
+
+เจอในโพย: MED30–MED35 (ออกทุกรุ่น)
+ข้อตัวอย่าง: N-MCQ-19, N-MCQ-23, N-OLD-050, N-OLD-064, N-OSCE-04
+
+### Lec 28 · Urine analysis / Common abdominal pain in nephro (อ.ธนิศร) — ออกทุกรุ่น (SAQ อ่าน UA)
+
+MCQ — ถามอะไรบ่อย:
+  - จับคู่ cast กับโรค: muddy brown = ATN, WBC cast = pyelonephritis/AIN, RBC cast = GN, fatty cast = nephrotic
+  - นิ่ว: calcium oxalate พบบ่อยสุด · staghorn = struvite จากเชื้อสร้าง urease (Proteus)
+  - นิ่วกรดยูริกโปร่งรังสี ห้ามให้ probenecid
+  - Functional/orthostatic proteinuria = ไม่ต้องสืบค้นเพิ่ม
+  - ปัสสาวะเป็นเลือดไม่เจ็บในคนสูบบุหรี่ → cystoscopy
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยปวดท้อง/ปวดหลังร่วมกับ UA ผิดปกติ — แยกนิ่ว การติดเชื้อ และไตอักเสบ
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน KUB staghorn + บอกผลึกที่จำเพาะ (triple phosphate)
+  - แปลผล UA lupus nephritis / glomerulonephritis
+
+ต้องตอบให้ได้:
+  - ดู UA แล้วบอกได้ว่าเป็นที่ glomerulus, ท่อไต หรือทางเดินปัสสาวะ
+
+เจอในโพย: MED29–MED35
+ข้อตัวอย่าง: N-MCQ-25, N-MCQ-28, N-OLD-072, N-OLD-084, N-OSCE-03
+
+### Lec 30 · Urinary tract infection (อ.กรทิพย์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Asymptomatic bacteriuria รักษาเฉพาะหญิงตั้งครรภ์และก่อนหัตถการทางเดินปัสสาวะ
+  - E. coli เป็นเชื้ออันดับหนึ่ง · nitrite บวก = Enterobacteriaceae
+  - ผู้ชายเป็น UTI ซ้ำ = complicated ต้องตรวจต่อมลูกหมากและหาการอุดกั้น
+  - ไข้ไม่ลงใน 48-72 ชั่วโมง → หาฝีหรือการอุดกั้น
+  - SGLT2 inhibitor เพิ่มการติดเชื้อทางเดินปัสสาวะ
+
+MEQ — โจทย์ที่เคยออก:
+  - Recurrent UTI ที่มี staghorn stone — อธิบายวงจรเชื้อกับนิ่วและการรักษาที่ต้องเอานิ่วออก
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA + Gram stain ของปัสสาวะ บอกเชื้อที่น่าจะเป็น
+
+ต้องตอบให้ได้:
+  - อย่าด่วนสรุปว่า delirium ในผู้สูงอายุเกิดจาก bacteriuria
+  - เลือกยาตามเพศ อายุ การตั้งครรภ์ และความรุนแรง
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: N-MCQ-30, N-MCQ-33, N-OLD-088, N-OLD-094, N-OLD-099
+
+### Lec 42 · Acute kidney injury (อ.วรรณิยา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก prerenal (FENa < 1%, BUN/Cr > 20) จาก ATN (FENa > 2%, muddy brown cast)
+  - Rhabdomyolysis จาก statin + fibrate → CK สูง ให้สารน้ำมาก
+  - NSAID ลด prostaglandin ที่ afferent arteriole (triple whammy)
+  - AIN: ผื่น ไข้ eosinophilia + WBC cast หลังได้ยา
+  - Post-renal: คลำกระเพาะปัสสาวะได้ → ใส่สายสวนทันที
+  - กัน contrast AKI ด้วยสารน้ำ ไม่ใช่ NAC
+
+MEQ — โจทย์ที่เคยออก:
+  - Drug-induced rhabdomyolysis with AKI, hyperkalemia, hyperphosphatemia — วางแผนการรักษาและข้อบ่งชี้ฟอกเลือด
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA + ค่าไต แยกชนิดของ AKI
+  - อ่าน ECG hyperkalemia ในผู้ป่วย AKI
+
+ต้องตอบให้ได้:
+  - ตอบกลไกของยาแต่ละตัวที่ทำให้ไตวายได้ (NSAID, ACEI, aminoglycoside, contrast)
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: N-MCQ-35, N-MCQ-36, N-OLD-105, N-OLD-113, N-MEQ-02
 
 ---
 
@@ -10428,6 +10754,122 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 03 · Pulmonary tuberculosis / ABG (อ.ศิวพร) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - สูตรยาวัณโรค 2IRZE/4IR และพิษของยาแต่ละตัว (EMB = ตา, INH = ปลายประสาท, RIF = สารคัดหลั่งส้ม, PZA = uric acid)
+  - การวินิจฉัย: Xpert MTB/RIF + AFB (TST/IGRA บอกการติดเชื้อ ไม่ใช่โรค)
+  - Drug-induced liver injury: หยุด INH/RIF/PZA เมื่อ ALT > 3 เท่าพร้อมอาการ หรือ > 5 เท่า
+  - TB ติดต่อทาง airborne → ห้องความดันลบ + N95
+  - แปลผล ABG: Henderson-Hasselbalch, Winter's formula, A-a gradient, delta ratio
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยไอเรื้อรัง เสมหะปนเลือด น้ำหนักลด — วินิจฉัย ส่งตรวจ ให้สูตรยา และจัดการผู้สัมผัสในบ้าน
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ย้อมเสมหะ AFB/Gram stain แล้วบอกเชื้อและยา
+  - แปลผล ABG ของผู้ป่วย COPD/ไตวาย
+
+ต้องตอบให้ได้:
+  - ตอบสูตรยาให้ครบทั้งระยะและจำนวนเดือน
+  - แปล ABG ให้ครบ 4 ขั้น: pH → ความผิดปกติหลัก → การชดเชย → anion gap
+
+เจอในโพย: MED28–MED35 (TB และ ABG ออกทุกรุ่น)
+ข้อตัวอย่าง: CH-MCQ-01, CH-MCQ-09, CH-OLD-01, CH-OLD-13, CH-OSCE-05
+
+### Lec 17 · Pleural disease / Respiratory failure (อ.สกล) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Light's criteria — คำนวณให้ได้ว่าเป็น exudate หรือ transudate
+  - pH < 7.2 / glucose < 40 / Gram stain บวก = complicated parapneumonic → ใส่ ICD
+  - Lymphocyte เด่น + ADA สูง = TB pleuritis
+  - Pneumothorax เล็ก (< 2 ซม. ไม่มีอาการ) = observe + O2 · tension = เจาะระบายทันที
+  - แยก type 1 กับ type 2 respiratory failure และเป้าหมาย SpO2 88-92% ใน COPD
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเหนื่อย ไข้ เจ็บแบบ pleuritic — เจาะน้ำเยื่อหุ้มปอด แปลผล และตัดสินใจใส่สายระบาย
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR tension pneumothorax แล้วบอกการรักษาทันที
+  - แปลผล pleural fluid ตาม Light's criteria
+
+ต้องตอบให้ได้:
+  - คำนวณ Light's criteria ให้เห็นตัวเลขในคำตอบ
+  - tension pneumothorax วินิจฉัยจากคลินิก ห้ามรอฟิล์ม
+
+เจอในโพย: MED29–MED35
+ข้อตัวอย่าง: CH-MCQ-17, CH-MCQ-20, CH-OLD-24, CH-OLD-29, CH-OSCE-02
+
+### Lec 21 · CXR interpretation / Occupational lung disease — ออกบ่อย
+
+MCQ — ถามอะไรบ่อย:
+  - อ่าน CXR อย่างเป็นระบบ (adequacy → airway → bone → cardiac → diaphragm → effusion → fields)
+  - Eggshell calcification = silicosis (และเสี่ยงวัณโรค)
+  - Asbestos → pleural plaque และ mesothelioma
+  - White-out hemithorax: ดูทิศทางที่ trachea เบี่ยง
+  - Solitary pulmonary nodule: ขนาด ขอบ การเติบโต และประวัติสูบบุหรี่
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเหนื่อยเรื้อรังจากการทำงาน — ซักประวัติอาชีพ แปลฟิล์ม และวางแผนสืบค้น
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR แล้วบรรยาย + ให้การวินิจฉัยแยกโรค 3 โรค
+
+ต้องตอบให้ได้:
+  - ซักประวัติอาชีพและระยะเวลาสัมผัสทุกครั้งที่เจอพังผืดในปอด
+
+เจอในโพย: MED31–MED35
+ข้อตัวอย่าง: CH-MCQ-25, CH-MCQ-29, CH-OLD-35, CH-OLD-37, CH-OLD-39
+
+### Lec 26 · Pneumonia (อ.ปรียานุช) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - CURB-65 ตัดสินว่ารักษาที่บ้านหรือรับไว้
+  - เชื้อตามบริบท: Klebsiella (เบาหวาน/สุรา + ฝีในตับ), Legionella (Na ต่ำ ท้องเสีย สับสน), Mycoplasma, melioidosis ในชาวนาไทย
+  - ไข้ไม่ลงหลัง 48-72 ชั่วโมง → หา empyema/abscess/เชื้อดื้อยา
+  - Aspiration pneumonia ในผู้ป่วยกลืนลำบาก
+  - แยก HAP/VAP ออกจาก CAP
+
+MEQ — โจทย์ที่เคยออก:
+  - Severe CAP with parapneumonic effusion — CURB-65, ยาที่เลือก, และการจัดการน้ำในเยื่อหุ้มปอด
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติไข้ ไอ เหนื่อย 3 วัน แล้วส่ง investigation
+  - อ่าน Gram stain เสมหะแล้วบอกเชื้อ
+
+ต้องตอบให้ได้:
+  - คำนวณ CURB-65 ให้เห็นในคำตอบ และเลือกยาตามสถานที่รักษา
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: CH-MCQ-33, CH-MCQ-35, CH-OLD-43, CH-OLD-45, CH-MEQ-04
+
+### Lec 37 · Asthma / COPD (AL) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Asthma กำเริบใน ER: O2 + SABA + สเตียรอยด์ระบบ (ไม่ใช่ ICS ขนาดสูงแทน)
+  - PaCO2 ปกติหรือสูงใน asthma กำเริบ = สัญญาณอันตราย ต้องเตรียมใส่ท่อ
+  - COPD วินิจฉัยด้วย post-bronchodilator FEV1/FVC < 0.70
+  - สิ่งที่ลดอัตราตายใน COPD: เลิกบุหรี่ + LTOT ตามเกณฑ์ (PaO2 ≤ 55 หรือ ≤ 59 ที่มี cor pulmonale)
+  - AECOPD ที่ pH < 7.35 และ PaCO2 > 45 → NIV
+
+MEQ — โจทย์ที่เคยออก:
+  - AECOPD ที่มี hypercapnic respiratory failure — แปล ABG, เป้าหมายออกซิเจน, ข้อบ่งชี้และข้อห้ามของ NIV
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปล ABG ของ COPD (acute on chronic respiratory acidosis)
+  - สอนพ่นยาและประเมินเทคนิคการใช้ inhaler
+
+ต้องตอบให้ได้:
+  - เป้าหมาย SpO2 88-92% ใน COPD และเหตุผล
+  - แยก asthma กับ COPD จาก spirometry และการตอบสนองต่อยา
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: CH-MCQ-36, CH-MCQ-37, CH-OLD-48, CH-OLD-52, CH-MEQ-02
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [CH-MCQ-01] Latent tuberculosis infection in a household contact
@@ -14743,6 +15185,84 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
 
 ข้อใหม่: MCQ 50 · MEQ/OSCE 10 · คลังข้อสอบเก่า 50 ข้อ
 เฉลยเป็นตัวอักษรตรงกับเว็บและ PDF (ตัวเลือกถูกสลับด้วย seed ของชุดแล้ว)
+
+---
+
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 08 · Allergy and clinical immunology — คาดว่าออกบ่อย (อิงแนวข้อสอบ ID/Skin เดิม)
+
+MCQ — ถามอะไรบ่อย:
+  - Anaphylaxis → adrenaline IM ต้นขา และก่อนกลับบ้านต้องได้ปากกา adrenaline
+  - Urticaria = type I hypersensitivity · ตุ่มอยู่เกิน 24 ชม. = urticarial vasculitis
+  - Allopurinol + HLA-B*58:01 / carbamazepine + HLA-B*15:02
+  - SJS/TEN: หยุดยาต้นเหตุทันที ดูแลแบบแผลไฟไหม้ ปรึกษาจักษุ
+  - DRESS: ผื่น + eosinophilia + ตับอักเสบ มาช้า 2-8 สัปดาห์
+  - ปฏิกิริยาจากการให้เลือด: AHTR vs FNHTR vs allergic (ชนิดเดียวที่ให้เลือดต่อได้)
+
+MEQ — โจทย์ที่เคยออก:
+  - Anaphylaxis จากยา — ลำดับการรักษา 5 ขั้นแรก ระยะเวลาสังเกตอาการ และการดูแลก่อนจำหน่าย
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติแพ้ยาให้ได้ว่าอาการคืออะไร เกิดวันที่เท่าไรของยา และรุนแรงแค่ไหน
+  - SAQ ปฏิกิริยาจากการให้เลือด: วินิจฉัย กลไก และสิ่งส่งตรวจ
+
+ต้องตอบให้ได้:
+  - แยก 'แพ้ยาจริง' ออกจาก 'ผื่นจากไวรัส' ให้ได้ เพราะเปลี่ยนการรักษาทั้งชีวิต
+  - SJS/TEN และ DRESS = ห้ามใช้ยานั้นซ้ำตลอดชีวิต ห้าม desensitize
+
+เจอในโพย: อิงจากโพย MED33–MED35 หมวด Skin/ID/Hemato (แพ้ยา, transfusion reaction, anaphylaxis)
+ข้อตัวอย่าง: AIR-MCQ-01, AIR-MCQ-06, AIR-OLD-04, AIR-OLD-06, AIR-MEQ-03
+
+### Lec 23 · Approach to arthritis / crystal and infective arthropathy — ออกบ่อย (MEQ/SAQ ผลึกออกซ้ำ)
+
+MCQ — ถามอะไรบ่อย:
+  - ข้ออักเสบเฉียบพลันข้อเดียว = เจาะข้อก่อนเสมอ (cell count, crystal, Gram stain, culture)
+  - เข็ม negative birefringent = gout · rhomboid positive = CPPD
+  - WBC > 50,000 + PMN > 90% = septic arthritis → ระบายหนอง + cloxacillin
+  - uric acid ปกติตอน flare ไม่ตัดเก๊าท์ และ uric acid สูงไม่ตัดข้อติดเชื้อ
+  - ยาวัณโรคที่ทำให้ uric acid สูง = pyrazinamide
+  - ULT: เริ่มต่ำ เพิ่มช้า + colchicine กัน flare 3-6 เดือน เป้าหมาย < 6 (มี tophus < 5)
+
+MEQ — โจทย์ที่เคยออก:
+  - ชายปวดเข่ามากจนเดินไม่ได้ + ไข้ — DDx, วิธีดูน้ำไขข้อ, definitive diagnosis, การรักษาระยะแรกและระยะยาว
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - SAQ ภาพผลึกใต้ polarised light → บรรยาย + วินิจฉัย + ค่าที่บ่ง septic arthritis
+  - อ่านฟิล์มข้อมือ/มือแยก RA กับ OA
+
+ต้องตอบให้ได้:
+  - บรรยายผลึกให้ครบทั้งรูปร่าง การหักเหแสง และตำแหน่งในเซลล์
+  - เจอผลึกแล้วยังต้องส่งเพาะเชื้อเสมอ
+
+เจอในโพย: MED33–MED35 (MEQ เก๊าท์และ SAQ ผลึกออกซ้ำ)
+ข้อตัวอย่าง: AIR-MCQ-14, AIR-MCQ-15, AIR-OLD-19, AIR-OLD-24, AIR-MEQ-01
+
+### Lec 33 · Connective tissue diseases and vasculitis — ออกบ่อย
+
+MCQ — ถามอะไรบ่อย:
+  - ANA = คัดกรอง · anti-dsDNA/anti-Sm = ยืนยัน · C3/C4 ต่ำ = active
+  - Lupus nephritis: โปรตีนรั่ว ≥ 0.5 g/วัน หรือ active sediment → เจาะชิ้นเนื้อไตก่อนให้ยา
+  - Drug-induced lupus: anti-histone บวก, anti-dsDNA ลบ, complement ปกติ → หยุดยา
+  - APS: แท้งซ้ำ + ลิ่มเลือด → LA, anticardiolipin, anti-β2GPI ยืนยันซ้ำที่ 12 สัปดาห์
+  - ผู้ป่วยกดภูมิ + ไข้ = คิดติดเชื้อก่อนโรคกำเริบ (PCP)
+  - Hydroxychloroquine ต้องตรวจจอตา · statin myalgia ส่ง CK · GCA ให้สเตียรอยด์ก่อน biopsy
+
+MEQ — โจทย์ที่เคยออก:
+  - SLE ที่มี lupus nephritis — วินิจฉัย ส่งตรวจ ประเมิน class และวางแผนการรักษาพร้อมการป้องกันการติดเชื้อ
+  - ข้ออักเสบหลายข้อเรื้อรัง → early RA และหลักการ treat-to-target
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปล UA ของ lupus nephritis
+  - SAQ ผื่น palpable purpura → กลไกและวินิจฉัยแยกโรค
+  - SAQ กล้ามเนื้ออ่อนแรงส่วนต้น + CK สูง → dermatomyositis และการคัดกรองมะเร็ง
+
+ต้องตอบให้ได้:
+  - จำคู่ autoantibody กับโรคให้แม่น
+  - ผู้ป่วยโรคภูมิต้านตนเองที่มีไข้ ต้องตัดการติดเชื้อออกก่อนเพิ่มยากดภูมิเสมอ
+
+เจอในโพย: MED33–MED35 (หมวด Rheumato)
+ข้อตัวอย่าง: AIR-MCQ-31, AIR-MCQ-36, AIR-OLD-34, AIR-OLD-39, AIR-MEQ-02
 
 ---
 

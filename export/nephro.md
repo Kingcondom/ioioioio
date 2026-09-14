@@ -7,6 +7,169 @@
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 05 · Fluid electrolyte: Divalent (อ.ธิติยา) — ออกเกือบทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - สาเหตุ hypercalcemia: ผู้ป่วยนอก = primary hyperparathyroidism, ผู้ป่วยใน = มะเร็ง
+  - Ca สูง + PO4 ต่ำ = PTH ทำงานมาก · CRAB = multiple myeloma
+  - Tumor lysis syndrome: K, PO4, uric acid สูง แต่ Ca ต่ำ
+  - Hypokalemia ที่แก้ไม่ขึ้น → ตรวจและแก้ Mg ก่อน
+  - Citrate จากการให้เลือดจำนวนมาก → ionised calcium ต่ำ
+
+MEQ — โจทย์ที่เคยออก:
+  - Symptomatic hypercalcemia จากมะเร็งร่วมกับ AKI — แปลผลแลป ให้การวินิจฉัย และเรียงลำดับการรักษา (สารน้ำ → bisphosphonate)
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผลชุดอิเล็กโทรไลต์ผิดปกติหลายค่าพร้อมกัน
+
+ต้องตอบให้ได้:
+  - ลำดับรักษา hypercalcemia: สารน้ำ isotonic ก่อนเสมอ แล้วค่อย bisphosphonate
+  - TLS ให้สารน้ำ + rasburicase/allopurinol ป้องกัน
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: N-MCQ-01, N-MCQ-05, N-OLD-001, N-OLD-010, N-MEQ-04
+
+### Lec 14 · Nephrotic / Nephritic syndrome (อ.ฉันทิศา) — ออกหนักมาก คุ้มค่าที่สุดของ Nephro
+
+MCQ — ถามอะไรบ่อย:
+  - เกณฑ์ nephrotic 4 ข้อ (hematuria ไม่ใช่เกณฑ์)
+  - Oval fat body / fatty cast = nephrotic · dysmorphic RBC + RBC cast = glomerular
+  - APSGN: หลังคออักเสบ 1-3 สัปดาห์ C3 ต่ำชั่วคราว · IgA nephropathy: พร้อมหวัด complement ปกติ
+  - วัดโปรตีนด้วย UPCR ไม่ใช่ dipstick
+  - ภาวะแทรกซ้อน nephrotic: ลิ่มเลือดจากเสีย antithrombin III, ติดเชื้อ
+
+MEQ — โจทย์ที่เคยออก:
+  - ชายหนุ่มปวดศีรษะ ปัสสาวะสีน้ำล้างเนื้อ ความดันสูงหลังเจ็บคอ → APSGN: วินิจฉัย ส่งตรวจ และรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA: บอกสิ่งที่พบ (dysmorphic RBC, RBC cast) + DDx 3 โรค
+  - ซักประวัติผู้ป่วยบวมทั้งตัว แล้วบอก investigation
+
+ต้องตอบให้ได้:
+  - แยก nephrotic กับ nephritic จาก UA ให้ได้ทันที
+  - SLE ที่มีไตอักเสบต้องเจาะชิ้นเนื้อไตเพื่อจัด class ก่อนให้ยากดภูมิ
+
+เจอในโพย: MED28–MED35 (MCQ + MEQ + SAQ อ่าน UA ทุกรุ่น)
+ข้อตัวอย่าง: N-MCQ-07, N-MCQ-11, N-OLD-016, N-OLD-029, N-OSCE-01
+
+### Lec 19 · Chronic kidney disease (อ.วรางคณา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก AKI กับ CKD: ไตเล็ก cortex บาง echogenicity สูง + ซีด + PTH สูง
+  - ปัจจัยเร่งการเสื่อม: น้ำตาล ความดัน โปรตีนรั่ว บุหรี่ ยาที่เป็นพิษต่อไต
+  - คัดกรองเบาหวานลงไตด้วย UACR · SGLT2 inhibitor ชะลอไตเสื่อม
+  - metformin หยุดเมื่อ eGFR < 30
+  - ข้อบ่งชี้ฟอกเลือด AEIOU (ไม่ใช่ระดับ creatinine)
+
+MEQ — โจทย์ที่เคยออก:
+  - CKD stage 5 ที่มีอาการ uremia — ประเมินข้อบ่งชี้และอธิบายทางเลือกการบำบัดทดแทนไต
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล ABG + อิเล็กโทรไลต์ในผู้ป่วยไตวาย
+  - อ่าน ECG hyperkalemia ในผู้ป่วย CKD ที่ได้ยา nephrotoxic
+
+ต้องตอบให้ได้:
+  - ตอบ AEIOU ให้ครบเมื่อถามข้อบ่งชี้ฟอกเลือด
+  - รู้ว่า eGFR ใช้ไม่ได้ตอน creatinine กำลังเปลี่ยน
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: N-MCQ-13, N-MCQ-16, N-OLD-034, N-OLD-048, N-OSCE-05
+
+### Lec 22 · Fluid electrolytes: Dysnatremia & Dyskalemia (อ.ชุมพล) — ออกทุกรุ่น ทั้งคำนวณและ ECG
+
+MCQ — ถามอะไรบ่อย:
+  - อัลกอริทึม hyponatremia: osmolality → volume status → urine Na/osm
+  - Hypovolemic hyponatremia ให้ 0.9% NaCl (3% เมื่อมีอาการทางสมอง)
+  - แก้เร็วเกิน → osmotic demyelination (จำกัด 8-10 mEq/L/วัน)
+  - SIADH: euvolemic + urine osm สูง + urine Na > 40 (small cell lung cancer)
+  - Hyperkalemia: calcium ก่อน แล้วย้ายเข้าเซลล์ แล้วขับออก · ECG tall peaked T
+  - Hypokalemia ที่อ่อนแรง + TSH ต่ำ = thyrotoxic periodic paralysis
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยอ่อนแรงจากโพแทสเซียมต่ำร่วมกับไทรอยด์เป็นพิษ — แปลผลและวางแผนแก้ไข
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน ECG hyperkalemia (ออกซ้ำหลายรุ่น)
+  - แปลผลอิเล็กโทรไลต์พร้อมคำนวณ corrected Na
+
+ต้องตอบให้ได้:
+  - ตอบลำดับการรักษา hyperkalemia ให้ถูกลำดับเสมอ
+  - รู้ว่าโพแทสเซียมต่ำเป็นภาวะเดียวในกลุ่มที่มักไม่ทำให้ชัก
+
+เจอในโพย: MED30–MED35 (ออกทุกรุ่น)
+ข้อตัวอย่าง: N-MCQ-19, N-MCQ-23, N-OLD-050, N-OLD-064, N-OSCE-04
+
+### Lec 28 · Urine analysis / Common abdominal pain in nephro (อ.ธนิศร) — ออกทุกรุ่น (SAQ อ่าน UA)
+
+MCQ — ถามอะไรบ่อย:
+  - จับคู่ cast กับโรค: muddy brown = ATN, WBC cast = pyelonephritis/AIN, RBC cast = GN, fatty cast = nephrotic
+  - นิ่ว: calcium oxalate พบบ่อยสุด · staghorn = struvite จากเชื้อสร้าง urease (Proteus)
+  - นิ่วกรดยูริกโปร่งรังสี ห้ามให้ probenecid
+  - Functional/orthostatic proteinuria = ไม่ต้องสืบค้นเพิ่ม
+  - ปัสสาวะเป็นเลือดไม่เจ็บในคนสูบบุหรี่ → cystoscopy
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยปวดท้อง/ปวดหลังร่วมกับ UA ผิดปกติ — แยกนิ่ว การติดเชื้อ และไตอักเสบ
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน KUB staghorn + บอกผลึกที่จำเพาะ (triple phosphate)
+  - แปลผล UA lupus nephritis / glomerulonephritis
+
+ต้องตอบให้ได้:
+  - ดู UA แล้วบอกได้ว่าเป็นที่ glomerulus, ท่อไต หรือทางเดินปัสสาวะ
+
+เจอในโพย: MED29–MED35
+ข้อตัวอย่าง: N-MCQ-25, N-MCQ-28, N-OLD-072, N-OLD-084, N-OSCE-03
+
+### Lec 30 · Urinary tract infection (อ.กรทิพย์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Asymptomatic bacteriuria รักษาเฉพาะหญิงตั้งครรภ์และก่อนหัตถการทางเดินปัสสาวะ
+  - E. coli เป็นเชื้ออันดับหนึ่ง · nitrite บวก = Enterobacteriaceae
+  - ผู้ชายเป็น UTI ซ้ำ = complicated ต้องตรวจต่อมลูกหมากและหาการอุดกั้น
+  - ไข้ไม่ลงใน 48-72 ชั่วโมง → หาฝีหรือการอุดกั้น
+  - SGLT2 inhibitor เพิ่มการติดเชื้อทางเดินปัสสาวะ
+
+MEQ — โจทย์ที่เคยออก:
+  - Recurrent UTI ที่มี staghorn stone — อธิบายวงจรเชื้อกับนิ่วและการรักษาที่ต้องเอานิ่วออก
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA + Gram stain ของปัสสาวะ บอกเชื้อที่น่าจะเป็น
+
+ต้องตอบให้ได้:
+  - อย่าด่วนสรุปว่า delirium ในผู้สูงอายุเกิดจาก bacteriuria
+  - เลือกยาตามเพศ อายุ การตั้งครรภ์ และความรุนแรง
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: N-MCQ-30, N-MCQ-33, N-OLD-088, N-OLD-094, N-OLD-099
+
+### Lec 42 · Acute kidney injury (อ.วรรณิยา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก prerenal (FENa < 1%, BUN/Cr > 20) จาก ATN (FENa > 2%, muddy brown cast)
+  - Rhabdomyolysis จาก statin + fibrate → CK สูง ให้สารน้ำมาก
+  - NSAID ลด prostaglandin ที่ afferent arteriole (triple whammy)
+  - AIN: ผื่น ไข้ eosinophilia + WBC cast หลังได้ยา
+  - Post-renal: คลำกระเพาะปัสสาวะได้ → ใส่สายสวนทันที
+  - กัน contrast AKI ด้วยสารน้ำ ไม่ใช่ NAC
+
+MEQ — โจทย์ที่เคยออก:
+  - Drug-induced rhabdomyolysis with AKI, hyperkalemia, hyperphosphatemia — วางแผนการรักษาและข้อบ่งชี้ฟอกเลือด
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปลผล UA + ค่าไต แยกชนิดของ AKI
+  - อ่าน ECG hyperkalemia ในผู้ป่วย AKI
+
+ต้องตอบให้ได้:
+  - ตอบกลไกของยาแต่ละตัวที่ทำให้ไตวายได้ (NSAID, ACEI, aminoglycoside, contrast)
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: N-MCQ-35, N-MCQ-36, N-OLD-105, N-OLD-113, N-MEQ-02
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [N-MCQ-01] Most common cause of hypercalcaemia – outpatient vs inpatient

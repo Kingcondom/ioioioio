@@ -130,6 +130,26 @@ def validate(setkey, mcq, meq, oldgroups, lectures):
         die(f"ชุด {setkey} มีปัญหา {len(errs)} จุด:\n    - " + '\n    - '.join(errs[:30]))
 
 
+def validate_hot(setkey, hot, mcq, meq, oldgroups, lectures):
+    """หัวข้อที่ออกบ่อย: ต้องอ้าง lec ที่มีจริง และ id ตัวอย่างต้องมีอยู่ในคลัง"""
+    if not hot:
+        return
+    errs = []
+    known = {it.get('id') for it in mcq + meq}
+    known |= {it.get('id') for g in oldgroups for it in g['items']}
+    for h in hot:
+        if h.get('lec') not in lectures:
+            errs.append(f"หัวข้อออกบ่อยอ้าง lec {h.get('lec')} ซึ่งไม่มีใน config.lectures")
+        for f in ('lecture', 'level', 'mcq'):
+            if not h.get(f):
+                errs.append(f"หัวข้อออกบ่อย lec {h.get('lec')} ขาดฟิลด์ {f}")
+        miss = [i for i in h.get('ids', []) if i not in known]
+        if miss:
+            warn(f"[{setkey}] หัวข้อออกบ่อย lec {h.get('lec')} อ้าง id ที่ไม่มีในคลัง: {', '.join(miss)}")
+    if errs:
+        die(f"ชุด {setkey} (หัวข้อออกบ่อย) มีปัญหา {len(errs)} จุด:\n    - " + '\n    - '.join(errs))
+
+
 # ---------------------------------------------------------------- build
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
@@ -147,6 +167,7 @@ def main():
         mcq = load_many(s.get('mcq', []))
         meq = load_many(s.get('meq', []))
         old_raw = load_many(s.get('old', []))
+        hot = load_many(s.get('hot', []))
 
         names = {}
         for it in mcq + meq:
@@ -154,6 +175,7 @@ def main():
         oldg = group_old(old_raw, s.get('lecture_order', []), names)
 
         validate(k, mcq, meq, oldg, CFG['lectures'])
+        validate_hot(k, hot, mcq, meq, oldg, CFG['lectures'])
 
         # สลับตำแหน่งเฉลย — เขียนข้อด้วย answer: 0 เสมอ แล้วให้ตรงนี้สลับให้
         # seed แยกต่อระบบ เพื่อให้ build ระบบเดียวหรือทั้งหมดได้ผลเหมือนกันเสมอ
@@ -164,12 +186,14 @@ def main():
             it['choices'] = [ch[i] for i in order]
             it['answer'] = it['choices'].index(correct)
 
-        bank[k] = {'mcq': mcq, 'meq': meq, 'old': oldg}
+        bank[k] = {'mcq': mcq, 'meq': meq, 'old': oldg, 'hot': hot}
         dist = collections.Counter(x['answer'] for x in mcq)
+        hotn = len(hot)
         codes = {c for it in mcq + meq + [x for g in oldg for x in g['items']] for c in it.get('nl', [])}
         print(f"  ✓ {k:8s} MCQ {len(mcq):3d} · MEQ/OSCE {len(meq):2d} · เก่า {sum(len(g['items']) for g in oldg):3d}"
               f"   กระจายเฉลย {dict(sorted(dist.items()))}"
-              + (f" · NL {len(codes)} หัวข้อ" if codes else ""))
+              + (f" · NL {len(codes)} หัวข้อ" if codes else "")
+              + (f" · ออกบ่อย {hotn} คาบ" if hotn else ""))
 
     # เรียงลำดับ set ตาม config
     bank = {s['key']: bank[s['key']] for s in CFG['sets'] if s['key'] in bank}

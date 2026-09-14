@@ -148,6 +148,25 @@ a{color:var(--accent-ink)}
 .panel .refs{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule-strong)}
 .refs ul{margin:0;padding-inline-start:18px}
 .refs li{font-size:12.5px;color:var(--ink-3);margin-bottom:3px}
+.hotcard{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:18px 20px;margin-bottom:16px}
+.hotcard h3{margin:6px 0 4px;font-size:17px;letter-spacing:-.01em}
+.hotcard .lvl{background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent);
+  border-radius:999px;padding:1px 10px;font-size:11.5px;font-weight:600}
+.hotsec{margin-top:13px;padding-top:11px;border-top:1px dashed var(--rule)}
+.hotsec:first-of-type{border-top:0}
+.hotsec h4{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 7px}
+.hotsec ul{margin:0;padding-inline-start:19px}
+.hotsec li{margin-bottom:5px;font-size:14.5px;line-height:1.6}
+.hotsec.must{background:var(--surface-sunk);border-radius:5px;padding:11px 13px;border-top:0;margin-top:13px}
+.hotsec.must h4{color:var(--ink-2)}
+.hotids{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.hotids .lbl{font-size:12px;color:var(--ink-3);margin-inline-end:2px}
+.jump{font-family:var(--mono);font-size:11px;border:1px solid var(--rule-strong);background:var(--surface-sunk);
+  color:var(--ink-2);border-radius:3px;padding:2px 7px;cursor:pointer}
+.jump:hover{border-color:var(--accent);color:var(--accent)}
+.hotseen{margin-top:10px;font-size:12.5px;color:var(--ink-3)}
+.item.flash{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
 .nlrefs{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule-strong)}
 .nlchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
 .nlchip{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;border:1px solid var(--accent);
@@ -255,7 +274,7 @@ var BANK = JSON.parse(document.getElementById('bank').textContent);
 var LEC = __LEC__;
 var SETS=__SETS__;
 var NL  = __NL__;
-var MODES=[{k:"new",label:"ข้อสอบใหม่"},{k:"old",label:"คลังข้อสอบเก่า"}];
+var MODES=[{k:"new",label:"ข้อสอบใหม่"},{k:"old",label:"คลังข้อสอบเก่า"},{k:"hot",label:"ออกบ่อย"}];
 var PARTS=[{k:"MCQ",label:"MCQ"},{k:"MEQ",label:"MEQ"},{k:"OSCE/SAQ",label:"OSCE / SAQ"}];
 
 var state={set:"cardio",mode:"new",lec:"all",part:"all",answers:{},shown:{}};
@@ -326,8 +345,10 @@ function filtered(){
     return true;
   });
 }
+function hotList(set){return (BANK[set]&&BANK[set].hot)||[];}
 function modeItems(){
-  // นับตามโหมดที่กำลังดูอยู่ — ข้อใหม่ หรือคลังข้อสอบเก่า
+  // นับตามโหมดที่กำลังดูอยู่ — ข้อใหม่ / คลังข้อสอบเก่า / หัวข้อออกบ่อย
+  if(state.mode==="hot")return hotList(state.set);
   if(state.mode!=="old")return newItems(state.set);
   var out=[];
   BANK[state.set].old.forEach(function(g){
@@ -566,6 +587,56 @@ function renderOldChoice(it,g){
   }
   return sec;
 }
+function jumpTo(id){
+  state.mode=(id.indexOf("-OLD-")>-1)?"old":"new";
+  state.lec="all";state.part="all";save();render();
+  setTimeout(function(){
+    var n=document.getElementById("it-"+id);
+    if(!n)return;
+    n.scrollIntoView({block:"center",behavior:"smooth"});
+    n.classList.add("flash");setTimeout(function(){n.classList.remove("flash");},2200);
+  },60);
+}
+function renderHot(stream){
+  var rows=hotList(state.set).filter(function(h){return state.lec==="all"||h.lec===state.lec;});
+  var head=document.createElement("div");head.className="part-head";
+  head.innerHTML="<h2>หัวข้อที่ออกสอบบ่อย — แยกตาม lecture</h2><span class='meta'>"+rows.length+" คาบ</span>";
+  stream.appendChild(head);
+  var note=document.createElement("p");note.className="lecnote";
+  note.textContent="สรุปจากคลังข้อสอบเก่า MED28–MED35 ในชุดนี้ ว่าแต่ละคาบถูกถามซ้ำเรื่องอะไร และถามในรูปแบบ MCQ, MEQ หรือ OSCE/SAQ — กดรหัสข้อท้ายการ์ดเพื่อกระโดดไปทำข้อนั้น";
+  stream.appendChild(note);
+  if(!rows.length){stream.innerHTML+="<p class='empty'>ยังไม่ได้สรุปหัวข้อออกบ่อยของคาบนี้</p>";return;}
+  rows.forEach(function(h){
+    var sec=document.createElement("article");sec.className="hotcard";
+    var html="<div class='ihead'><span class='qno'>Lec "+esc(h.lec)+"</span>"+
+      "<span class='lvl'>"+esc(h.level||"")+"</span>"+
+      "<span class='tag'>"+esc((LEC[h.lec]||{}).d||"")+"</span></div>"+
+      "<h3>"+esc(shortName(h.lecture))+"</h3>";
+    function block(title,arr,cls){
+      if(!arr||!arr.length)return "";
+      return "<div class='hotsec"+(cls?" "+cls:"")+"'><h4>"+title+"</h4><ul>"+
+        arr.map(function(x){return "<li>"+inline(x)+"</li>";}).join("")+"</ul></div>";
+    }
+    html+=block("MCQ — ถามอะไรบ่อย",h.mcq);
+    html+=block("MEQ — โจทย์ที่เคยออก",h.meq);
+    html+=block("OSCE / SAQ — สถานีที่เคยออก",h.osce);
+    html+=block("ต้องตอบให้ได้",h.must,"must");
+    if(h.seen)html+="<p class='hotseen'>เจอในโพย: "+esc(h.seen)+"</p>";
+    sec.innerHTML=html;
+    if(h.ids&&h.ids.length){
+      var box=document.createElement("div");box.className="hotids";
+      box.innerHTML="<span class='lbl'>ไปทำข้อตัวอย่าง</span>";
+      h.ids.forEach(function(id){
+        var b=document.createElement("button");
+        b.type="button";b.className="jump";b.textContent=id;
+        b.addEventListener("click",function(){jumpTo(id);});
+        box.appendChild(b);
+      });
+      sec.appendChild(box);
+    }
+    stream.appendChild(sec);
+  });
+}
 function renderOld(stream){
   var groups=BANK[state.set].old.filter(function(g){return state.lec==="all"||g.lec===state.lec;});
   var head=document.createElement("div");head.className="part-head";
@@ -602,23 +673,28 @@ function render(){
   buildStrip(document.getElementById("setbar"),SETS,state.set,function(k){
     if(k===state.set)return;state.set=k;state.lec="all";save();render();
   },counts);
-  var mcounts={new:newItems(state.set).length,old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)};
+  var mcounts={new:newItems(state.set).length,
+               old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0),
+               hot:hotList(state.set).length};
   if(!mcounts.old&&state.mode==="old"){state.mode="new";save();}
-  // ชุดที่ไม่มีคลังข้อสอบเก่า (เช่น Mock) ให้ซ่อนแท็บคลังเก่าไปเลย
+  if(!mcounts.hot&&state.mode==="hot"){state.mode="new";save();}
+  // ซ่อนแท็บที่ชุดนั้นไม่มีข้อมูล (เช่น Mock ไม่มีคลังเก่าและยังไม่มีสรุปออกบ่อย)
   buildStrip(document.getElementById("modebar"),
-    MODES.filter(function(m){return m.k!=="old"||mcounts.old>0;}),state.mode,function(k){
+    MODES.filter(function(m){return m.k==="new"||mcounts[m.k]>0;}),state.mode,function(k){
     state.mode=k;save();render();
   },mcounts);
   buildLecs();buildParts();
   document.getElementById("partblock").style.display=
     (state.mode==="new"&&document.getElementById("partbar").children.length)?"":"none";
   var oldHasCh=BANK[state.set].old.some(function(g){return g.items.length&&g.items[0].choices;});
-  var showBtns=(state.mode==="new")||oldHasCh;
+  var showBtns=(state.mode==="new")||(state.mode==="old"&&oldHasCh);
   document.getElementById("btn-reveal").style.display=showBtns?"":"none";
   document.getElementById("btn-reset").style.display=showBtns?"":"none";
   updateScore();
   var stream=document.getElementById("stream");stream.innerHTML="";
-  if(state.mode==="new")renderNew(stream);else renderOld(stream);
+  if(state.mode==="new")renderNew(stream);
+  else if(state.mode==="hot")renderHot(stream);
+  else renderOld(stream);
 }
 
 /* ---------- actions ---------- */
