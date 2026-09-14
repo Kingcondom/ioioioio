@@ -99,86 +99,108 @@ def esc(s):
 
 
 CSS = """
-:root{color-scheme:light dark;--bg:#f6f7f9;--card:#fff;--ink:#16181d;--muted:#5b6472;--line:#e3e6ec;
---accent:ACCENT;--accent-soft:ACCENT14;--ok:#137a4d;--ok-soft:#137a4d18;--warn:#8a5a00;--radius:14px}
-:root:not([data-theme=light]){@media (prefers-color-scheme:dark){}}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12141a;--card:#1a1d25;--ink:#e8eaee;
---muted:#9aa3b2;--line:#2a2f3a;--accent-soft:ACCENT28;--ok:#4ade80;--ok-soft:#4ade8020}}
-:root[data-theme=dark]{--bg:#12141a;--card:#1a1d25;--ink:#e8eaee;--muted:#9aa3b2;--line:#2a2f3a;
---accent-soft:ACCENT28;--ok:#4ade80;--ok-soft:#4ade8020}
+:root{
+ --bg:#f4f7f7; --surface:#fff; --surface-2:#eef3f3; --ink:#0f1719; --muted:#5b6f74; --line:#dbe5e6;
+ --accent:ACCENT; --accent-soft:ACCENT16; --ok:#0b6b4f; --ok-soft:#0b6b4f14; --bad:#a83a34; --bad-soft:#a83a3412;
+ --shadow:0 1px 2px rgba(15,23,25,.05);
+ --f-ui:"IBM Plex Sans Thai","IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+ --f-data:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+ --bg:#0c1113; --surface:#131a1d; --surface-2:#182125; --ink:#e7eeef; --muted:#94a7ac; --line:#233035;
+ --accent-soft:ACCENT2e; --ok:#5fd39f; --ok-soft:#5fd39f1c; --bad:#e08079; --bad-soft:#e0807916;
+ --shadow:none;}}
+:root[data-theme=dark]{
+ --bg:#0c1113; --surface:#131a1d; --surface-2:#182125; --ink:#e7eeef; --muted:#94a7ac; --line:#233035;
+ --accent-soft:ACCENT2e; --ok:#5fd39f; --ok-soft:#5fd39f1c; --bad:#e08079; --bad-soft:#e0807916; --shadow:none;}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Sarabun,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding-block:28px;padding-left:18px;padding-right:18px}
-header.hero{border-left:5px solid var(--accent);padding:2px 0 2px 14px;margin-bottom:18px}
-h1{font-size:1.6rem;margin:0 0 4px}
-.sub{color:var(--muted);font-size:.92rem}
-.stats{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:.85rem}
-.stat b{color:var(--accent);font-size:1.05rem}
-.bar{position:sticky;top:0;z-index:9;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);
-display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
-select,input[type=search],button{font:inherit;color:var(--ink);background:var(--card);
-border:1px solid var(--line);border-radius:9px;padding:7px 11px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15.5px;line-height:1.62;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding-block:34px 56px;padding-left:18px;padding-right:18px}
+header.hero{display:flex;flex-direction:column;gap:6px;padding-bottom:20px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:var(--f-data);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(1.55rem,4.4vw,2.1rem);line-height:1.18;margin:0;font-weight:600;letter-spacing:-.015em;text-wrap:balance}
+.sub{color:var(--muted);font-size:.9rem}
+.stats{display:flex;flex-wrap:wrap;gap:0;margin:0;border-bottom:1px solid var(--line)}
+.stat{padding:12px 20px 12px 0;margin-right:20px;font-size:.78rem;color:var(--muted);letter-spacing:.02em}
+.stat b{display:block;font-family:var(--f-data);font-size:1.35rem;font-weight:500;color:var(--ink);
+ font-variant-numeric:tabular-nums;line-height:1.2}
+.bar{position:sticky;top:0;z-index:9;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);
+ display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+select,input[type=search],button{font:inherit;font-size:.88rem;color:var(--ink);background:var(--surface);
+ border:1px solid var(--line);border-radius:7px;padding:7px 11px}
 button{cursor:pointer}
+button:hover{border-color:var(--accent)}
 button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-input[type=search]{flex:1;min-width:140px}
-.item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}
-.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:9px;font-size:.76rem;color:var(--muted)}
-.tag{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 9px;font-weight:600}
-.tag.grey{background:var(--line);color:var(--muted)}
-.stem{margin:0 0 12px}
-ol.choices{list-style:none;margin:0;padding:0;counter-reset:c}
-ol.choices li{counter-increment:c;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 38px;
-margin-bottom:7px;position:relative;cursor:pointer}
-ol.choices li::before{content:counter(c,lower-alpha) ".";position:absolute;left:14px;color:var(--muted);font-weight:600}
-ol.choices li.correct{border-color:var(--ok);background:var(--ok-soft)}
-ol.choices li.wrong{border-color:#d9534f;background:#d9534f14}
-.answer{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:11px;font-size:.92rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=search]{flex:1;min-width:150px}
+.score{font-family:var(--f-data);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto}
+.score b{color:var(--ink)}
+.item{padding:22px 0;border-bottom:1px solid var(--line)}
+.meta{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:10px;
+ font-family:var(--f-data);font-size:.74rem;letter-spacing:.03em;color:var(--muted)}
+.meta .id{color:var(--accent);font-weight:600}
+.meta .topic{font-family:var(--f-ui);font-size:.82rem;color:var(--ink);letter-spacing:0;font-weight:500}
+.meta .lec{font-size:.72rem;opacity:.8}
+.stem{margin:0 0 14px}
+ol.choices{list-style:none;margin:0;padding:0;counter-reset:c;display:flex;flex-direction:column;gap:6px}
+ol.choices li{counter-increment:c;border:1px solid var(--line);background:var(--surface);border-radius:8px;
+ padding:9px 13px 9px 40px;position:relative;cursor:pointer;transition:border-color .12s,background .12s}
+ol.choices li:hover{border-color:var(--accent)}
+ol.choices li::before{content:counter(c,lower-alpha);position:absolute;left:14px;top:9px;
+ font-family:var(--f-data);font-size:.82rem;color:var(--muted)}
+ol.choices li.correct,.item.show ol.choices li.key{border-color:var(--ok);background:var(--ok-soft)}
+ol.choices li.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.answer{display:none;margin-top:14px;padding-left:15px;border-left:3px solid var(--accent);font-size:.94rem}
 .item.show .answer{display:block}
-.item.show ol.choices li.key{border-color:var(--ok);background:var(--ok-soft)}
-.answer .lbl{font-weight:700;color:var(--ok)}
-.pearl{background:var(--accent-soft);border-radius:10px;padding:9px 12px;margin:9px 0}
-.pearl b{color:var(--accent)}
-.ref{color:var(--muted);font-size:.83rem}
-.nl{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px}
-.nlchip{font-size:.76rem;border:1px solid var(--accent);color:var(--accent);border-radius:999px;
-padding:2px 9px;cursor:help}
-.nlbox{margin-top:8px;font-size:.82rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:10px}
-.meq .scenario{background:var(--accent-soft);border-radius:10px;padding:11px 13px;margin-bottom:11px}
-.meq ol.sub{padding-left:20px;margin:0}
-.meq ol.sub li{margin-bottom:10px}
-.meq .a{display:none;color:var(--ok);margin-top:4px}
-.item.show .meq-a,.item.show .a{display:block}
-.note{font-size:.82rem;color:var(--warn);margin-top:8px}
-footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);margin-top:26px;padding-top:14px}
+.answer .lbl{display:block;font-weight:600;color:var(--ok);margin-bottom:8px}
+.pearl{margin:0 0 8px}
+.pearl b{font-family:var(--f-data);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);
+ margin-right:6px}
+.ref{color:var(--muted);font-size:.82rem}
+.nl{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.nlchip{font-family:var(--f-data);font-size:.72rem;background:var(--accent-soft);color:var(--accent);
+ border-radius:4px;padding:2px 7px;cursor:help}
+.nlbox{margin-top:8px;font-size:.82rem;color:var(--muted);display:flex;flex-direction:column;gap:5px}
+.nlbox b{font-family:var(--f-data);color:var(--ink);font-weight:500}
+.meq .scenario{background:var(--surface-2);border-radius:8px;padding:13px 15px;margin-bottom:13px}
+.meq ol.sub{padding-left:22px;margin:0;display:flex;flex-direction:column;gap:11px}
+.meq .a{display:none;color:var(--ok);margin-top:5px;font-size:.92rem}
+.item.show .a{display:block}
+.note{font-size:.82rem;color:var(--muted);margin-top:8px;font-style:italic}
+.toggle{margin-top:12px;font-size:.8rem;padding:5px 10px}
+footer{color:var(--muted);font-size:.82rem;margin-top:30px;padding-top:16px;border-top:2px solid var(--ink);
+ display:flex;flex-direction:column;gap:6px}
+code{font-family:var(--f-data);font-size:.85em;background:var(--surface-2);padding:1px 5px;border-radius:4px}
 a{color:var(--accent)}
-.syslist{display:grid;gap:12px}
-.syscard{display:block;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
-border-radius:var(--radius);padding:16px 18px;text-decoration:none;color:inherit}
-.syscard h2{margin:0 0 4px;font-size:1.15rem}
+.syslist{display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.syscard{display:block;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);
+ border-radius:10px;padding:17px 19px;text-decoration:none;color:inherit;box-shadow:var(--shadow)}
+.syscard:hover{border-color:var(--accent)}
+.syscard h2{margin:0 0 3px;font-size:1.1rem;font-weight:600}
+@media (max-width:430px){.stat{padding-right:14px;margin-right:14px}.score{margin-left:0}}
 @media print{
- .bar,.stats{display:none}
- body{background:#fff}
- .item{break-inside:avoid;border-color:#ccc}
+ .bar,.toggle{display:none}
+ body{background:#fff;color:#000;font-size:11pt}
  .answer,.a{display:block !important}
+ .item{break-inside:avoid;border-bottom:1px solid #bbb}
+ ol.choices li{border-color:#ccc}
 }
 """
 
 JS = """
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-let revealed=false;
+let revealed=false, tried=0, right=0;
 function apply(){
   const lec=$('#lec').value, q=$('#q').value.trim().toLowerCase();
   let n=0;
   $$('.item').forEach(el=>{
-    const okLec = lec==='all' || el.dataset.lec===lec;
-    const okQ = !q || el.innerText.toLowerCase().includes(q);
-    const show = okLec && okQ;
-    el.hidden = !show; if(show) n++;
+    const show=(lec==='all'||el.dataset.lec===lec) && (!q||el.innerText.toLowerCase().includes(q));
+    el.hidden=!show; if(show) n++;
   });
   $('#count').textContent=n;
 }
+function score(){ $('#score').innerHTML = tried ? 'ตอบแล้ว <b>'+tried+'</b> · ถูก <b>'+right+'</b> ('+Math.round(right/tried*100)+'%)' : 'ยังไม่ได้ตอบ'; }
 function toggleAll(){
   revealed=!revealed;
   $$('.item').forEach(el=>el.classList.toggle('show',revealed));
@@ -189,13 +211,15 @@ document.addEventListener('click',e=>{
   if(li){
     const item=li.closest('.item');
     if(!item.classList.contains('show')){
-      li.classList.add(li.dataset.key==='1'?'correct':'wrong');
+      const ok=li.dataset.key==='1';
+      li.classList.add(ok?'correct':'wrong');
       item.classList.add('show');
+      tried++; if(ok) right++; score();
     }
     return;
   }
   const head=e.target.closest('[data-toggle]');
-  if(head){ head.closest('.item').classList.toggle('show'); }
+  if(head) head.closest('.item').classList.toggle('show');
 });
 document.addEventListener('DOMContentLoaded',()=>{
   $('#lec').addEventListener('change',apply);
@@ -204,9 +228,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   $('#reset').addEventListener('click',()=>{
     $$('ol.choices li').forEach(li=>li.classList.remove('correct','wrong'));
     $$('.item').forEach(el=>el.classList.remove('show'));
-    revealed=false; $('#reveal').textContent='เปิดเฉลยทั้งหมด';
+    revealed=false; tried=0; right=0; score();
+    $('#reveal').textContent='เปิดเฉลยทั้งหมด';
   });
-  apply();
+  score(); apply();
 });
 """
 
@@ -234,8 +259,8 @@ def nl_chips(item, nl_entries):
 
 
 def render_item(item, nl_entries, lec_title):
-    meta = ('<div class="meta"><span class="tag">%s</span><span class="tag grey">%s</span>'
-            '<span>%s</span><span>· %s</span></div>'
+    meta = ('<div class="meta"><span class="id">%s</span><span>%s</span>'
+            '<span class="topic">%s</span><span class="lec">%s</span></div>'
             % (esc(item["id"]), esc(item["type"].upper()), esc(item.get("topic", "")), esc(lec_title)))
     nl = nl_chips(item, nl_entries)
     note = '<div class="note">หมายเหตุ: %s</div>' % esc(item["source_note"]) if item.get("source_note") else ""
@@ -264,7 +289,7 @@ def render_item(item, nl_entries, lec_title):
                 '<div class="answer">%s%s%s%s<div class="ref">รวม %s คะแนน</div></div>'
                 % (esc(item["scenario"]), subs, pearl, ref, note, nl, total))
     return ('<article class="item" data-lec="%s" id="%s">%s%s'
-            '<div style="margin-top:10px"><button data-toggle>เปิด/ปิดเฉลย</button></div></article>'
+            '<button class="toggle" data-toggle>เปิด/ปิดเฉลย</button></article>'
             % (esc(item["lec"]), esc(item["id"]), meta, body))
 
 
@@ -281,37 +306,39 @@ def render_system(sysdef, data, nl, cfg):
     body = "".join(render_item(i, nl_entries, lec_title[i["lec"]]) for i in items)
     css = CSS.replace("ACCENT28", sysdef["color"] + "28").replace("ACCENT14", sysdef["color"] + "14").replace("ACCENT", sysdef["color"])
 
-    return """<title>%(name)s — MED421 Drill</title>
+    return """<title>%(key_up)s Exam Drill</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap">
 <style>%(css)s</style>
 <div class="wrap">
 <header class="hero">
+  <div class="eyebrow">MED421 · %(key_up)s</div>
   <h1>%(name)s</h1>
-  <div class="sub">%(course)s · %(name_th)s · build %(built)s</div>
+  <div class="sub">%(name_th)s · ผูกเกณฑ์แพทยสภา พ.ศ. 2567 รายข้อ · build %(built)s</div>
 </header>
 <div class="stats">
-  <div class="stat"><b>%(n_mcq)d</b> MCQ</div>
-  <div class="stat"><b>%(n_meq)d</b> MEQ</div>
-  <div class="stat"><b>%(n_lec)d</b> lecture</div>
-  <div class="stat"><b>%(n_nl)d</b> หัวข้อ NL 2567 ที่ครอบคลุม</div>
+  <div class="stat"><b>%(n_mcq)d</b>MCQ</div>
+  <div class="stat"><b>%(n_meq)d</b>MEQ</div>
+  <div class="stat"><b>%(n_lec)d</b>lecture</div>
+  <div class="stat"><b>%(n_nl)d</b>หัวข้อ NL ที่ครอบคลุม</div>
 </div>
 <div class="bar">
-  <select id="lec"><option value="all">ทุก lecture</option>%(opts)s</select>
-  <input id="q" type="search" placeholder="ค้นหาคำในโจทย์ / เฉลย / pearl">
+  <select id="lec" aria-label="เลือก lecture"><option value="all">ทุก lecture</option>%(opts)s</select>
+  <input id="q" type="search" placeholder="ค้นหาในโจทย์ เฉลย หรือ pearl">
   <button id="reveal" class="primary">เปิดเฉลยทั้งหมด</button>
   <button id="reset">ล้างคำตอบ</button>
-  <span class="ref">แสดง <b id="count">0</b> ข้อ</span>
+  <span class="score" id="score"></span>
 </div>
+<div class="sub" style="margin:6px 0 4px">แสดง <b id="count">0</b> ข้อ — คลิกตัวเลือกเพื่อตอบ ระบบจะเฉลยและนับคะแนนให้</div>
 %(body)s
 <footer>
-  อ้างอิงเกณฑ์ NL: %(nlsrc)s<br>
-  ชิป <span class="nlchip">NL …</span> ในแต่ละข้อคือรหัสหัวข้อตามเกณฑ์แพทยสภา พ.ศ. 2567 (ชี้เมาส์เพื่อดูชื่อเต็ม)<br>
-  สร้างจาก med421-kit — แก้ข้อสอบที่ <code>%(file)s</code> แล้วสั่ง <code>python3 build.py %(key)s</code>
+  <div>ชิป <span class="nlchip">NL …</span> คือรหัสหัวข้อตาม %(nlsrc)s (ชี้เมาส์เพื่อดูชื่อเต็ม)</div>
+  <div>สร้างจาก med421-kit — แก้ข้อสอบที่ <code>%(file)s</code> แล้วสั่ง <code>python3 build.py %(key)s</code></div>
 </footer>
 </div>
 <script>%(js)s</script>
 """ % dict(name=esc(sysdef["name_en"]), name_th=esc(sysdef["name_th"]), course=esc(cfg["course"]),
            css=css, js=JS, opts=opts, body=body, built=date.today().isoformat(),
-           n_mcq=n_mcq, n_meq=n_meq, n_lec=len(sysdef["lectures"]), n_nl=n_nl,
+           n_mcq=n_mcq, n_meq=n_meq, n_lec=len(sysdef["lectures"]), n_nl=n_nl, key_up=esc(sysdef["key"].upper()),
            nlsrc=esc(nl.get("source", "-")), file=esc(sysdef["file"]), key=esc(sysdef["key"]))
 
 
@@ -325,12 +352,16 @@ def render_index(cfg, built, nl):
         for s, d in built)
     css = CSS.replace("ACCENT28", "#0ea5a428").replace("ACCENT14", "#0ea5a414").replace("ACCENT", "#0ea5a4")
     return """<title>MED421 Exam Kit</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap">
 <style>%(css)s</style>
 <div class="wrap">
-<header class="hero"><h1>%(course)s</h1>
-<div class="sub">คลังข้อสอบแยกตามระบบ · ผูกเกณฑ์ NL 2567 รายข้อ · build %(built)s</div></header>
+<header class="hero">
+  <div class="eyebrow">คลังข้อสอบแยกตามระบบ</div>
+  <h1>%(course)s</h1>
+  <div class="sub">ผูกเกณฑ์แพทยสภา พ.ศ. 2567 รายข้อ · build %(built)s</div>
+</header>
 <div class="syslist">%(cards)s</div>
-<footer>อ้างอิงเกณฑ์: %(nlsrc)s</footer>
+<footer><div>อ้างอิงเกณฑ์: %(nlsrc)s</div></footer>
 </div>
 """ % dict(css=css, course=esc(cfg["course"]), built=date.today().isoformat(), cards=cards,
            nlsrc=esc(nl.get("source", "-")))
