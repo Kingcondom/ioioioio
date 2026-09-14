@@ -3,7 +3,7 @@
   "shuffle_seed": 20260913,
   "site": {
     "title": "MED421 Ward Drill",
-    "subtitle": "Cardio · Nephro · Chest · AIR — ข้อสอบใหม่ 210 ข้อ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ทุกข้อมี 5 ตัวเลือกที่มีเหตุผลรองรับ แต่ถูกเพียงข้อเดียว · ชุด AIR ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
+    "subtitle": "Cardio · Nephro · Chest · AIR · Mock NL — ข้อสอบใหม่ 210 ข้อ + ชุดจำลอง NL Part 1 อีก 200 ข้อแยกตามระบบ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
   },
   "lectures": {
     "03": {
@@ -114,6 +114,61 @@
     "42": {
       "date": "ศ. 30 ต.ค.",
       "week": 7,
+      "al": 0
+    },
+    "M01": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M02": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M03": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M04": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M05": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M06": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M07": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M08": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M09": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M10": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
+      "al": 0
+    },
+    "M11": {
+      "date": "NL Part 1 · ชุดจำลอง",
+      "week": "",
       "al": 0
     }
   },
@@ -246,6 +301,39 @@
         "data/air_old_a.json",
         "data/air_old_b.json"
       ]
+    },
+    {
+      "key": "mock",
+      "label": "Mock NL",
+      "thai": "ข้อสอบจำลอง NL Part 1 (200 ข้อ)",
+      "blurb": "ชุดจำลองศรว. ขั้นตอนที่ 1 · 200 ข้อ แยกตามระบบ 11 สาขา · เฉลยพร้อมคำอธิบายภาษาไทยรายข้อ",
+      "accent": {
+        "light": "#4b3b8f",
+        "soft": "#ebe8f7",
+        "ink": "#3a2e73",
+        "dark": "#a99ae0",
+        "darkSoft": "#1b1826",
+        "darkInk": "#c7bbee"
+      },
+      "lecture_order": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11"
+      ],
+      "mcq": [
+        "data/mock_a.json",
+        "data/mock_b.json"
+      ],
+      "meq": [],
+      "old": []
     }
   ],
   "nl_reference_file": "refs/nl_2567.json"

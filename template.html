@@ -367,7 +367,9 @@ function buildLecs(){
 }
 function buildParts(){
   var el=document.getElementById("partbar");el.innerHTML="";
-  var opts=[{k:"all",label:"ทั้งหมด"}].concat(PARTS);
+  var have={};newItems(state.set).forEach(function(it){have[it.part||"MCQ"]=1;});
+  var opts=[{k:"all",label:"ทั้งหมด"}].concat(PARTS.filter(function(p){return have[p.k];}));
+  if(opts.length<=2)return;               // มีอย่างเดียวก็ไม่ต้องโชว์แถบเลือก
   opts.forEach(function(o){
     var b=document.createElement("button");
     b.type="button";b.className="chip";b.setAttribute("aria-pressed",String(state.part===o.k));
@@ -388,11 +390,13 @@ function updateScore(){
   document.getElementById("sc-right").textContent=right;
   document.getElementById("sc-acc").textContent=done?Math.round(right/done*100)+"%":"—";
   var mcqN=BANK[state.set].mcq.length;
-  document.getElementById("railnote").innerHTML=
-    "<b>ชุดนี้</b> MCQ "+mcqN+" ข้อ · MEQ "+BANK[state.set].meq.filter(function(x){return x.part==="MEQ";}).length+
-    " ชุด · OSCE/SAQ "+BANK[state.set].meq.filter(function(x){return x.part!=="MEQ";}).length+" สถานี<br>"+
-    "<b>ข้อสอบเก่าที่ใช้อ้างอิง</b> "+BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)+" ข้อ จาก MED28–MED35<br>"+
-    "กด <b>1–5</b> เพื่อตอบข้อที่เห็นอยู่บนจอ · ความคืบหน้าถูกเก็บไว้ในเบราว์เซอร์นี้";
+  var meqN=BANK[state.set].meq.filter(function(x){return x.part==="MEQ";}).length;
+  var osceN=BANK[state.set].meq.filter(function(x){return x.part!=="MEQ";}).length;
+  var oldN=BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0);
+  var bits=["<b>ชุดนี้</b> MCQ "+mcqN+" ข้อ"+(meqN?" · MEQ "+meqN+" ชุด":"")+(osceN?" · OSCE/SAQ "+osceN+" สถานี":"")];
+  if(oldN)bits.push("<b>ข้อสอบเก่าที่ใช้อ้างอิง</b> "+oldN+" ข้อ จาก MED28–MED35");
+  bits.push("กด <b>1–5</b> เพื่อตอบข้อที่เห็นอยู่บนจอ · ความคืบหน้าถูกเก็บไว้ในเบราว์เซอร์นี้");
+  document.getElementById("railnote").innerHTML=bits.join("<br>");
 }
 
 /* ---------- render: new items ---------- */
@@ -403,7 +407,7 @@ function renderMCQ(it,idx){
   var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
     "<span class='tag'>Lec "+esc(it.lec)+" · "+esc(meta.d||"")+"</span>"+
     (meta.al?"<span class='tag al'>Active learning</span>":"")+
-    "<span class='tag'>สัปดาห์ "+esc(String(meta.w||"-"))+"</span></div>";
+    (meta.w?"<span class='tag'>สัปดาห์ "+esc(String(meta.w))+"</span>":"")+"</div>";
   h+="<h3 class='topic'>"+esc(it.topic)+"</h3>";
   h+="<p class='lecline'>"+esc(shortName(it.lecture))+(teacher(it.lecture)?" · "+esc(teacher(it.lecture)):"")+"</p>";
   h+="<p class='stem'>"+inline(it.stem)+"</p>";
@@ -590,11 +594,15 @@ function render(){
     if(k===state.set)return;state.set=k;state.lec="all";save();render();
   },counts);
   var mcounts={new:newItems(state.set).length,old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)};
-  buildStrip(document.getElementById("modebar"),MODES,state.mode,function(k){
+  if(!mcounts.old&&state.mode==="old"){state.mode="new";save();}
+  // ชุดที่ไม่มีคลังข้อสอบเก่า (เช่น Mock) ให้ซ่อนแท็บคลังเก่าไปเลย
+  buildStrip(document.getElementById("modebar"),
+    MODES.filter(function(m){return m.k!=="old"||mcounts.old>0;}),state.mode,function(k){
     state.mode=k;save();render();
   },mcounts);
   buildLecs();buildParts();
-  document.getElementById("partblock").style.display=state.mode==="new"?"":"none";
+  document.getElementById("partblock").style.display=
+    (state.mode==="new"&&document.getElementById("partbar").children.length)?"":"none";
   var oldHasCh=BANK[state.set].old.some(function(g){return g.items.length&&g.items[0].choices;});
   var showBtns=(state.mode==="new")||oldHasCh;
   document.getElementById("btn-reveal").style.display=showBtns?"":"none";
