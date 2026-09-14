@@ -39,6 +39,7 @@ data/                คลังข้อสอบทั้งหมด  <ร�
 refs/nl_2567.json    ดัชนีเกณฑ์แพทยสภา 2567 (250 หัวข้อ)
 export/              ไฟล์ข้อความรายระบบ + ALL.md (สร้างใหม่ได้ตลอด)
 attic/               44 ข้อระบบหายใจที่ทำเกินไว้ ยังไม่ได้ยุบเข้า chest
+sources/             โพย MED28–34, โพย MED35, NL Syllabus 2567 (ต้นทางสำหรับทำระบบใหม่ — ไม่ต้องอัปโหลดซ้ำ)
 SPEC.md PROMPT.md README.md HANDOFF.md
 ```
 
@@ -61,6 +62,8 @@ python3 export_text.py            # export/<ระบบ>.md + export/ALL.md
 6. ตัวเลขในโจทย์ต้องสอดคล้องกัน — รัน `check_numbers.py` ให้ได้ **0 ข้อไม่สอดคล้อง**
 7. ระบบใหม่ต้องมี `data/<key>_hot.json` (หัวข้อออกบ่อย) ด้วย — schema อยู่ใน SPEC.md §3.4
 
+> **ไม่ต้องแนบไฟล์อะไรเพิ่มในแชทใหม่** — โพยเก่าและ NL Syllabus อยู่ในโฟลเดอร์ `sources/` แล้ว
+
 ## 6. งานค้าง
 
 1. **ทำระบบที่เหลือ** ตามลำดับที่แนะนำ: Infectious (5 คาบ ใหญ่สุด) → Neuro → GI → Endocrine → Hemato → Skin → Onco
@@ -77,10 +80,11 @@ python3 export_text.py            # export/<ระบบ>.md + export/ALL.md
 งานวันนี้: ทำชุด "Infectious disease" ต่อจาก Cardio / Nephro / Chest / AIR ที่เสร็จแล้ว
 ทำตามมาตรฐานใน SPEC.md ทุกข้อ ห้ามลดสเปก
 
-1. สกัดข้อสอบเก่าของระบบนี้จากโพยที่แนบ แล้วเรียบเรียงเป็น MCQ 5 ตัวเลือกพร้อมเฉลยไทย (schema §3.3)
+1. สกัดข้อสอบเก่าของระบบนี้จาก sources/MED28-34_poy_text.txt และ sources/MED35_poy_text.txt
+   แล้วเรียบเรียงเป็น MCQ 5 ตัวเลือกพร้อมเฉลยไทย (schema §3.3)
 2. สร้างข้อใหม่ 50 ข้อ (MCQ 40 + MEQ 5 + OSCE/SAQ 5) ตาม §3.1–3.2
 3. เขียน data/id_hot.json หัวข้อที่ออกบ่อยของทุกคาบ ตาม §3.4
-4. ผูก nl ทุกข้อ (เพิ่มรหัสใหม่ใน refs/nl_2567.json ถ้ายังไม่มี)
+4. ผูก nl ทุกข้อ — รหัสที่ยังไม่มีให้คัดเพิ่มจาก sources/NL_Syllabus_2567_text.md ลง refs/nl_2567.json
 5. เพิ่ม block ใน config.json พร้อมสีและ lecture_order (เลขคาบยังไม่รู้ให้ใส่เลขว่างแล้วบอกไว้)
 6. รัน check_numbers.py ให้ผ่าน 0 ข้อ แล้ว build.py + export_text.py
 7. อัปเดตหน้าเว็บเดิมด้วยเครื่องมือ Artifact โดยส่ง url =
