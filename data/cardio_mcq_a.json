@@ -1,0 +1,462 @@
+[
+ {
+  "id": "C-MCQ-01",
+  "lec": "04",
+  "lecture": "Pericarditis, Myocarditis (อ.เจตวรงค์)",
+  "topic": "Acute pericarditis – first-line treatment",
+  "stem": "A 38-year-old man presents with 3 days of sharp retrosternal chest pain that worsens when he lies flat and on deep inspiration, and is relieved by sitting up and leaning forward. He had an upper respiratory tract infection 10 days ago. Vital signs: BT 37.8 C, PR 96/min, BP 118/74 mmHg, RR 20/min. A scratchy triphasic sound is heard at the left lower sternal border, loudest at end-expiration while sitting forward. ECG shows widespread concave-upward ST elevation with PR-segment depression in II, III, aVF and V2-V6, with ST depression and PR elevation in aVR. Troponin-I is minimally elevated. Echocardiogram: normal LV systolic function, no pericardial effusion, no regional wall motion abnormality. Which of the following is the most appropriate initial treatment?",
+  "choices": [
+   "Emergency coronary angiography with primary PCI",
+   "Urgent echo-guided pericardiocentesis",
+   "Intravenous furosemide plus nitroglycerine",
+   "Prednisolone 1 mg/kg/day",
+   "High-dose aspirin plus colchicine"
+  ],
+  "answer": 4,
+  "explain": "กลไก: เยื่อหุ้มหัวใจอักเสบจาก viral/idiopathic ทำให้เกิด inflammation ของ parietal+visceral pericardium → เจ็บแบบ pleuritic (เพราะ parietal pericardium รับ sensory จาก phrenic nerve) ดีขึ้นเมื่อโน้มตัวไปหน้า (ลด stretch) และได้ friction rub. ECG ที่เป็น **diffuse concave ST elevation ร่วมกับ PR depression** และ **PR elevation + ST depression ใน aVR** คือ signature ของ pericarditis เพราะกระแสอักเสบกินชั้น subepicardium ทั่วหัวใจ ไม่ได้จำกัดตาม coronary territory จึง **ไม่มี reciprocal change** และ **ไม่มี regional WMA** บน echo\n\nรักษา first-line = **NSAID ขนาดสูง (ASA 750-1000 mg q8h หรือ ibuprofen 600 mg q8h) + colchicine 0.5 mg/day (BW<70 kg) หรือ bid** — colchicine ลด recurrence ได้ประมาณครึ่งหนึ่ง (COPE/CORP/ICAP trials) ถือเป็น high-yield ที่ออกสอบซ้ำ\n\nทำไมข้ออื่นผิด:\n- **Prednisolone**: ได้ผลเร็วจริง แต่ steroid เพิ่ม recurrence rate ชัดเจน → สงวนไว้เมื่อมี contraindication ต่อ NSAID, เป็น autoimmune/uremic pericarditis หรือ refractory\n- **Primary PCI**: ตัดด้วยกลไก — ST elevation กระจายทุก territory + PR depression + no reciprocal change + echo ไม่มี WMA + trop ขึ้นน้อย ไม่เข้ากับ plaque rupture occlusion (ข้อนี้คือจุดหลอกที่ทำคนพลาดบ่อยสุด)\n- **Pericardiocentesis**: ใช้เมื่อมี effusion + hemodynamic compromise (tamponade) — เคสนี้ echo ไม่มี effusion เลย ไม่มีข้อบ่งชี้และเสี่ยงเปล่า\n- **Furosemide + NTG**: ใช้ใน cardiogenic pulmonary edema — เคสนี้ปอด clear, EF ปกติ",
+  "pearl": "trop ขึ้นเล็กน้อย + ST elevation ทั่ว = myopericarditis ยังรักษาแบบ pericarditis แต่ **ห้ามออกกำลังกายหนัก** และต้องตาม EF; ถ้า EF ตก = myocarditis เด่น ต้อง admit",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 4 (LS loop B) MCQ ข้อ 7 – First line tx pericarditis (pleuritic chest pain, better when leaning forward)",
+   "MED33 MCQ loop E+F ข้อ 'ECG ตอบ myopericarditis'",
+   "MED30 MCQ ข้อ 60 – EKG ST elevate ทุก lead ยกเว้น aVR → Pericarditis",
+   "MED31 MCQ ข้อ 13 – EKG QRS สูงหลาย lead นั่งโน้มตัวไปหน้าแล้วดีขึ้น → Pericarditis"
+  ]
+ },
+ {
+  "id": "C-MCQ-02",
+  "lec": "04",
+  "lecture": "Pericarditis, Myocarditis (อ.เจตวรงค์)",
+  "topic": "Cardiac tamponade – additional physical finding",
+  "stem": "A 28-year-old woman with acute pericarditis returns with progressive dyspnea. Vital signs: PR 122/min, BP 84/62 mmHg, RR 26/min. Neck veins are distended to the angle of the jaw and do not collapse on inspiration. Heart sounds are distant. ECG now shows beat-to-beat variation of QRS amplitude (electrical alternans). Which of the following additional physical findings is most likely to be present?",
+  "choices": [
+   "Bibasilar fine crepitations in both lower lung fields",
+   "Inspiratory fall in systolic blood pressure of more than 10 mmHg",
+   "Loud S3 gallop at the apex",
+   "Wide pulse pressure with bounding peripheral pulses",
+   "Hyperdynamic apical impulse displaced laterally"
+  ],
+  "answer": 1,
+  "explain": "กลไก: effusion ทำให้ intrapericardial pressure สูงเท่ากันทุก chamber (pressure equalization) → pericardium กลายเป็น fixed-volume box ดังนั้น RV กับ LV ต้อง **แย่งพื้นที่กัน (interventricular interdependence)**\n\nช่วง inspiration: intrathoracic pressure ลบมากขึ้น → venous return เข้า RV เพิ่ม → RV โป่ง → septum ดันไปเบียด LV → LV filling ลด → stroke volume ลด → **systolic BP ตกลง >10 mmHg = pulsus paradoxus** (จริงๆคือ exaggeration ของสรีรวิทยาปกติ ไม่ใช่ paradox)\n\nElectrical alternans = หัวใจแกว่ง (swinging heart) ในถุงน้ำ ทำให้แกนไฟฟ้าเปลี่ยนสลับ beat ต่อ beat — specific มากสำหรับ large effusion with tamponade\n\nทำไมข้ออื่นผิด:\n- **S3 gallop**: เกิดจาก rapid ventricular filling ใน volume-overloaded ventricle (HF, severe MR) — ใน tamponade ventricle **filling ไม่ได้** จึงไม่มี S3; ตรงข้ามกับกลไกเลย\n- **Bibasilar crepitation**: tamponade คือ **obstructive** ไม่ใช่ LV failure → ปอดมักจะ clear (จุดนี้เอามาแยก tamponade ออกจาก LV failure / doxorubicin cardiomyopathy ในข้อสอบบ่อย)\n- **Hyperdynamic displaced apex**: บ่งถึง LV volume overload/dilated cardiomyopathy; tamponade จะคลำ apex ไม่ชัดเพราะมีน้ำคั่น\n- **Wide pulse pressure**: เข้ากับ AR/thyrotoxicosis/anemia — tamponade มี **narrow pulse pressure** เพราะ stroke volume ต่ำ",
+  "pearl": "Beck triad (hypotension + distended neck veins + muffled heart sounds) ครบทั้ง 3 พบจริงแค่ส่วนน้อย; **pulsus paradoxus + JVP ไม่ยุบตอนหายใจเข้า** sensitive กว่า. ข้อสอบชอบถามว่า shock ชนิดไหน → **obstructive shock**",
+  "ref": [
+   "MED31 past paper loop C&D – A 28 year-old female with acute pericarditis develops jugular venous obstruction and hypotension. The ECG shows electrical alternans",
+   "MED34 FA MCQ ข้อ 4 – EKG Electrical alternans → Cardiac tamponade",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 7 – Beck triad → Obstructive shock",
+   "MED30 SAQ ข้อ 6 – Beck triad → Cardiac tamponade"
+  ]
+ },
+ {
+  "id": "C-MCQ-03",
+  "lec": "04",
+  "lecture": "Pericarditis, Myocarditis (อ.เจตวรงค์)",
+  "topic": "Post-chemotherapy dyspnea – tamponade vs anthracycline cardiomyopathy",
+  "stem": "A 40-year-old woman with breast cancer (T2N1M0) presents with dyspnea progressing over 3 days. She completed 6 cycles of cyclophosphamide, doxorubicin and fluorouracil 6 months ago. She has no pleuritic chest pain. Vital signs: BP 80/60 mmHg with a 14 mmHg inspiratory fall in systolic pressure, PR 120/min. Jugular venous pressure is elevated to 10 cm. Lungs are clear on auscultation. There is trace pitting edema of both legs. Chest radiograph shows cardiomegaly with a globular heart, no pleural effusion and no pulmonary infiltrate. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Doxorubicin-induced dilated cardiomyopathy",
+   "Tension pneumothorax",
+   "Pericardial tamponade from malignant pericardial effusion",
+   "Superior vena cava syndrome",
+   "Acute pulmonary embolism"
+  ],
+  "answer": 2,
+  "explain": "กลไกที่ใช้ตัดสิน: ทั้ง tamponade และ anthracycline cardiomyopathy ทำให้ **JVP สูง + cardiomegaly + hypotension** ได้เหมือนกัน จุดแยกอยู่ที่ **ปอด**\n\n- **Tamponade** = obstructive, ขัดที่ diastolic filling ของทั้งสอง ventricle พร้อมกัน → เลือดไม่เข้าหัวใจ แต่ก็ **ไม่คั่งในปอดด้วย** → ปอด clear + pulsus paradoxus + narrow pulse pressure + globular/water-bottle heart\n- **Doxorubicin cardiomyopathy** = LV systolic failure → LVEDP สูง ย้อนไป pulmonary capillary → **ต้องมี crepitation / pulmonary congestion บน CXR** และมักมี S3\n\nเคสนี้: ปอด clear + pulsus paradoxus 14 mmHg + ไม่มี pulmonary infiltrate → **tamponade** (malignant pericardial effusion พบบ่อยใน breast CA, lung CA, lymphoma)\n\nทำไมข้ออื่นผิด:\n- **Doxorubicin cardiomyopathy**: ตัดด้วย clear lungs + pulsus paradoxus (ไม่ใช่ feature ของ systolic HF). Anthracycline toxicity เกิดจาก topoisomerase-2β inhibition → ROS ทำลาย cardiomyocyte, dose-dependent (>450-550 mg/m2) — ถ้าเป็นจริง CXR จะมี pulmonary edema\n- **PE**: ให้ hypotension + JVP สูงได้ (obstructive เหมือนกัน) แต่มักมี pleuritic pain, hypoxemia เด่น, CXR มักปกติ **ไม่มี cardiomegaly** และ ไม่มี pulsus paradoxus ชัด\n- **SVC syndrome**: คอ/หน้าบวม, distended chest wall vein, JVP สูงแบบ **ไม่ pulsatile และไม่เปลี่ยนตามหายใจ** แต่ไม่ทำให้ hypotension + cardiomegaly\n- **Tension pneumothorax**: ต้องมี unilateral absent breath sound + hyperresonance + trachea shift — โจทย์บอก breath sound ปกติทั้งสองข้าง",
+  "pearl": "ถ้าโจทย์มี **JVP สูง + ปอด clear** ให้คิด obstructive (tamponade, PE, constrictive pericarditis) หรือ RV failure เสมอ; ถ้า **JVP สูง + ปอดมี crackle** ให้คิด LV failure",
+  "ref": [
+   "MED31 past paper loop C&D – ผู้ป่วยหญิง 40 ปี breast cancer T2N1M0 หลัง CAF chemotherapy, JVP elevated 10 cm, lungs clear → Pericardial tamponade",
+   "MED32 MCQ ข้อ 64 – ได้ chemo มี doxorubicin → doxorubicin induced cardiomyopathy",
+   "MED34 FA MCQ ข้อ 10 – chemotherapy ตัวไหนทำให้เกิด cardiomyopathy → Doxorubicin"
+  ]
+ },
+ {
+  "id": "C-MCQ-04",
+  "lec": "04",
+  "lecture": "Pericarditis, Myocarditis (อ.เจตวรงค์)",
+  "topic": "Acute myocarditis – most common cause",
+  "stem": "A 22-year-old previously healthy man presents with 5 days of fever, myalgia and diarrhoea, followed by 2 days of progressive dyspnoea and orthopnoea. Vital signs: BT 38.0 C, PR 118/min, BP 96/64 mmHg. There is an S3 gallop and bibasilar crepitations. ECG shows sinus tachycardia with diffuse low-amplitude T wave inversion and no ST elevation. Troponin-I is 4.8 ng/mL (normal <0.04). Echocardiogram shows globally reduced LV systolic function (LVEF 32%) with no segmental pattern. Coronary angiography shows normal coronary arteries. Which of the following is the most likely aetiology of his condition?",
+  "choices": [
+   "Systemic lupus erythematosus",
+   "Rheumatic carditis from group A streptococcus",
+   "Chronic alcohol consumption",
+   "Viral infection",
+   "Coronary atherosclerotic plaque rupture"
+  ],
+  "answer": 3,
+  "explain": "กลไก: **viral myocarditis** (enterovirus/coxsackie B, adenovirus, parvovirus B19, HHV-6, SARS-CoV-2) เป็นสาเหตุที่พบบ่อยที่สุดทั่วโลก ไวรัสเข้า cardiomyocyte ผ่าน receptor (เช่น CAR สำหรับ coxsackie) → direct cytotoxicity ระยะแรก ตามด้วย **immune-mediated injury** (T cell + molecular mimicry ต่อ cardiac myosin) → myocyte necrosis กระจายทั่ว\n\nเบาะแสในโจทย์ที่ชี้ myocarditis:\n1. **prodrome ไข้/ท้องเสีย/ปวดเมื่อย** นำมาก่อน 1-2 สัปดาห์\n2. trop ขึ้นสูงแต่ **ECG ไม่มี ST elevation แบบ territorial**\n3. **global hypokinesis ไม่เป็นตาม coronary territory**\n4. **coronary ปกติ** (MINOCA-like picture)\n\nทำไมข้ออื่นผิด:\n- **Plaque rupture**: ถูกตัดด้วย normal coronary angiogram + global (ไม่ใช่ regional) dysfunction + อายุ 22 ไม่มี risk factor\n- **Rheumatic carditis**: ต้องมีหลักฐาน GAS pharyngitis + Jones criteria (migratory polyarthritis, new murmur เช่น MR/AR, erythema marginatum, subcutaneous nodules, chorea) และ **valvulitis เป็นแกน** ไม่ใช่ global myocyte necrosis เดี่ยวๆ; โจทย์ไม่มี murmur ไม่มีปวดข้อ\n- **SLE**: ทำให้เกิด pericarditis/myocarditis ได้ แต่ต้องมี multisystem features (malar rash, photosensitivity, arthritis, cytopenia, proteinuria) เพศหญิงวัยเจริญพันธุ์เป็นหลัก\n- **Alcoholic cardiomyopathy**: ต้องดื่มหนักต่อเนื่องหลายปี (>80-90 g/day >5 ปี), onset ค่อยเป็นค่อยไป, ไม่มี trop ขึ้นสูงและไม่มี viral prodrome",
+  "pearl": "Gold standard วินิจฉัย = endomyocardial biopsy (Dallas criteria) แต่ practice ใช้ **cardiac MRI (Lake Louise criteria)** แทน; การรักษาคือ supportive HF therapy + **ห้ามออกกำลังกาย 3-6 เดือน** และ **ห้ามให้ NSAID ขนาดสูง** เมื่อ EF ตก",
+  "ref": [
+   "MED31 MCQ ข้อ 65 – common cause myocarditis → viral",
+   "MED28 MED421 Medicine I ข้อ 4 – Which of the following is the most common cause of myocarditis?"
+  ]
+ },
+ {
+  "id": "C-MCQ-05",
+  "lec": "04",
+  "lecture": "Pericarditis, Myocarditis (อ.เจตวรงค์)",
+  "topic": "Constrictive pericarditis vs restrictive cardiomyopathy",
+  "stem": "A 55-year-old man with previously treated tuberculous pericarditis presents with 6 months of progressive abdominal distension and leg oedema. He denies orthopnoea. Vital signs: PR 92/min regular, BP 106/70 mmHg. JVP is elevated and rises further on inspiration. An early diastolic high-pitched sound is heard at the apex. The liver is enlarged, there is ascites and 3+ pitting oedema. Lungs are clear. Chest radiograph shows pericardial calcification and a normal-sized heart. Which of the following findings best supports the diagnosis of constrictive pericarditis rather than restrictive cardiomyopathy?",
+  "choices": [
+   "Discordant respiratory variation of right and left ventricular systolic pressures on cardiac catheterisation",
+   "Symmetrical left ventricular wall thickening with sparkling myocardial texture on echocardiography",
+   "Presence of low-voltage QRS complexes in all leads",
+   "Reduced left ventricular ejection fraction of 35%",
+   "Markedly elevated serum NT-proBNP level"
+  ],
+  "answer": 0,
+  "explain": "กลไกแกน: constriction คือ pericardium หนา/แข็ง/calcified → **แยกหัวใจออกจาก intrathoracic pressure (dissociation)** และบังคับให้ RV+LV อยู่ใน fixed total volume\n\nผลที่ตามมา 2 อย่างที่เป็น hallmark:\n1. **Ventricular interdependence** → inspiration: venous return เข้า RV เพิ่ม แต่ total volume คงที่ → **RV systolic pressure ขึ้น ขณะที่ LV systolic pressure ลง = discordance** (ใน restrictive cardiomyopathy pericardium ปกติ แรงดัน intrathoracic ส่งผ่านได้ปกติ → RV กับ LV ขึ้นลง **concordant** พร้อมกัน)\n2. **Kussmaul sign** (JVP สูงขึ้นตอนหายใจเข้า) และ **pericardial knock** (early diastolic sound จาก filling หยุดทันทีเมื่อชน pericardium ที่แข็ง) → ตรงกับโจทย์\n\nทำไมข้ออื่นผิด:\n- **NT-proBNP สูงมาก**: ใน constriction myocardium ถูก \"หุ้ม\" ไม่ได้ stretch มาก → BNP มักขึ้น **น้อยกว่า** restrictive cardiomyopathy ซึ่ง myocardium เองผิดปกติและถูก stretch เต็มที่ (ใช้แยกได้ แต่ทิศทางตรงข้ามกับที่ choice บอก — นี่คือจุดหลอก)\n- **Symmetrical LV thickening + sparkling texture**: นี่คือ **cardiac amyloidosis** = restrictive cardiomyopathy ไม่ใช่ constriction (ใน constriction ผนัง LV หนาปกติ)\n- **LVEF 35%**: ทั้งสองโรคเป็น **diastolic** dysfunction โดย EF มักจะยังปกติ; EF ตกบ่งถึง dilated cardiomyopathy มากกว่า\n- **Low voltage ทุก lead**: non-specific — พบได้ทั้งใน constriction, amyloid, pericardial effusion, COPD, obesity จึงแยกสองโรคนี้ไม่ได้",
+  "pearl": "Constriction รักษาหายขาดได้ด้วย **pericardiectomy** ขณะที่ restrictive cardiomyopathy รักษาที่โรคต้นเหตุ — การแยกจึงเปลี่ยนการรักษาโดยสิ้นเชิง; ในไทย **TB คือสาเหตุอันดับหนึ่งของ constrictive pericarditis**",
+  "ref": [
+   "MED30 สรุป Cardio – gtx constrictive pericarditis / pericardial knock",
+   "MED30 สรุป Cardio – pericardial effusion (electrical alternans), pericardial friction rub",
+   "MED31 MCQ ข้อ 75 – ฟังได้ murmur, ขาบวม, liver span 2 cm"
+  ]
+ },
+ {
+  "id": "C-MCQ-06",
+  "lec": "10",
+  "lecture": "Shock (AL) (อ.เจตวรงค์)",
+  "topic": "Classification of shock – obstructive",
+  "stem": "A 46-year-old woman is brought to the emergency department with dyspnoea and near-syncope. Vital signs: PR 130/min, BP 76/58 mmHg, RR 30/min. Heart sounds are muffled, neck veins are engorged and there is a 16 mmHg inspiratory fall in systolic blood pressure. Bedside echocardiography shows a large circumferential pericardial effusion with right atrial and right ventricular diastolic collapse. Which haemodynamic profile best matches her type of shock?",
+  "choices": [
+   "Low central venous pressure, low cardiac output, high systemic vascular resistance",
+   "Normal central venous pressure, normal cardiac output, low systemic vascular resistance",
+   "High central venous pressure, high cardiac output, low systemic vascular resistance",
+   "Low central venous pressure, high cardiac output, low systemic vascular resistance",
+   "High central venous pressure, low cardiac output, high systemic vascular resistance"
+  ],
+  "answer": 4,
+  "explain": "กลไก: tamponade = **obstructive shock** — มีสิ่งกีดขวางทาง mechanical ขัดการ fill ของ ventricle ทั้งที่หัวใจบีบตัวได้ดี\n\nไล่ตามสรีรวิทยา:\n- เลือดกลับเข้าหัวใจไม่ได้ → คั่งต้นน้ำ → **CVP/JVP สูง**\n- preload ต่ำจริงที่ระดับ ventricle → stroke volume ต่ำ → **cardiac output ต่ำ**\n- ร่างกายชดเชยด้วย sympathetic activation → vasoconstriction → **SVR สูง** (มือเท้าเย็น, narrow pulse pressure, capillary refill ช้า)\n\nดังนั้น **CVP สูง + CO ต่ำ + SVR สูง**\n\nทำไมข้ออื่นผิด (ใช้เป็นตารางจำ):\n- **CVP ต่ำ + CO ต่ำ + SVR สูง** = **hypovolemic shock** (เสียเลือด/น้ำ) — JVP แฟบ, ตอบสนองต่อ fluid challenge\n- **CVP ต่ำ + CO สูง + SVR ต่ำ** = **distributive shock ระยะแรก** (septic/anaphylactic/neurogenic) — มือเท้าอุ่น, wide pulse pressure\n- **CVP สูง + CO สูง + SVR ต่ำ** = ภาวะ high-output เช่น septic shock ที่ได้ volume เยอะแล้ว, thyrotoxicosis, AV fistula, cirrhosis — ไม่เข้ากับ tamponade\n- **ทุกอย่างปกติยกเว้น SVR ต่ำ** = ไม่ใช่ shock pattern ที่เข้ากับ hypotension รุนแรงแบบนี้\n\nข้อควรระวังทางคลินิก: ใน tamponade **ห้ามให้ยาลด preload (nitrate, diuretic) และห้าม intubate/PEEP โดยไม่จำเป็น** เพราะจะทำให้ venous return ตกยิ่งขึ้น — ให้ IV fluid ชั่วคราวเพื่อ bridge แล้วรีบ **pericardiocentesis** ซึ่งเป็นการรักษาที่แท้จริง",
+  "pearl": "Obstructive shock มี 4 ตัวหลักที่ต้องนึกถึง: cardiac tamponade, massive PE, tension pneumothorax, severe dynamic hyperinflation (auto-PEEP) — ทุกตัวมี **JVP สูง + ปอดไม่มี congestion** (ยกเว้น tension PTX ที่ breath sound หาย)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 7 – Beck triad แล้วเกิด shock ต่อ shock นั้นเป็นประเภทอะไร → Obstructive shock",
+   "MED34 FA MCQ ข้อ 10 – Cardiac tamponade เป็น shock แบบไหน → Obstructive shock",
+   "MED30 สรุป Cardio – cardiogenic / obstructive / hypovolemic / distributive shock",
+   "MED31 MCQ ข้อ 18 – EKG pericarditis + BP ต่ำ → Cardiac shock"
+  ]
+ },
+ {
+  "id": "C-MCQ-07",
+  "lec": "10",
+  "lecture": "Shock (AL) (อ.เจตวรงค์)",
+  "topic": "Anaphylactic shock – initial management",
+  "stem": "A 34-year-old woman develops generalised urticaria, hoarseness, wheezing and light-headedness 10 minutes after eating shellfish at dinner. Vital signs: PR 124/min, BP 78/44 mmHg, RR 28/min, SpO2 92% on room air. There is peri-oral oedema and diffuse expiratory wheeze. Which of the following is the most appropriate immediate treatment?",
+  "choices": [
+   "Intravenous chlorpheniramine 10 mg",
+   "Intramuscular adrenaline 0.5 mg into the anterolateral thigh",
+   "Nebulised salbutamol 2.5 mg",
+   "Intravenous ranitidine 50 mg",
+   "Intravenous hydrocortisone 200 mg"
+  ],
+  "answer": 1,
+  "explain": "กลไก: anaphylaxis = **type I (IgE-mediated) hypersensitivity** → mast cell/basophil degranulation ปล่อย histamine, tryptase, leukotriene, PAF → (1) systemic vasodilation + (2) increased capillary permeability (plasma leak ออกจาก intravascular ได้ถึง 35% ในไม่กี่นาที) + (3) bronchoconstriction + (4) mucosal edema\n\nเหตุผลที่ต้องเป็น **adrenaline IM**:\n- **α1**: vasoconstriction → แก้ vasodilation และลด mucosal/laryngeal edema (ช่วยชีวิตจาก airway obstruction)\n- **β1**: เพิ่ม inotropy/chronotropy → เพิ่ม cardiac output\n- **β2**: bronchodilation + **ยับยั้ง mast cell mediator release เพิ่มเติม** (หยุดวงจร)\nเป็นยาตัวเดียวที่แก้ได้ทุกกลไกพร้อมกัน และ **เป็นยาเดียวที่ลด mortality**\n\nตำแหน่ง **anterolateral thigh (vastus lateralis) IM** ดูดซึมเร็วและ peak สูงกว่า SC หรือ IM ที่ deltoid; ขนาดผู้ใหญ่ 0.3-0.5 mg (1:1000) ซ้ำได้ทุก 5-15 นาที\n\nทำไมข้ออื่นผิด — ทุกข้อเป็น \"adjunct\" ที่ถูกต้องแต่ **ไม่ใช่ immediate**:\n- **Antihistamine (H1)**: แก้เฉพาะ cutaneous symptoms (ผื่น คัน) **ไม่แก้ hypotension ไม่แก้ airway** และออกฤทธิ์ช้า — การให้ antihistamine ก่อน adrenaline คือสาเหตุการตายที่ป้องกันได้ที่พบบ่อยสุด\n- **Steroid**: onset 4-6 ชม. อาจช่วยลด protracted/biphasic reaction (หลักฐานไม่หนัก) ไม่ช่วยใน acute phase เลย\n- **Nebulised salbutamol**: แก้ bronchospasm เฉยๆ ไม่แก้ vasodilation, ไม่แก้ laryngeal edema\n- **H2 blocker**: adjunct ต่อ urticaria เท่านั้น\n\nหลังให้ adrenaline: นอนราบยกขา, ให้ **IV isotonic crystalloid 1-2 L เร็ว** (เพราะมี distributive + capillary leak), O2, เฝ้าระวัง biphasic reaction 4-12 ชม., และก่อนกลับบ้าน **สั่ง adrenaline autoinjector + ส่งปรึกษา allergist**",
+  "pearl": "Anaphylactic shock = **distributive shock**; ถ้าให้ adrenaline IM 2-3 ครั้งแล้วยังไม่ขึ้น ให้เปลี่ยนเป็น **adrenaline IV infusion** ไม่ใช่ IV bolus (เสี่ยง arrhythmia); ผู้ป่วยที่กิน β-blocker อยู่อาจดื้อ adrenaline → พิจารณา glucagon",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 28 – หญิงไป dinner เกิดผื่น asthma attack BP 80/50 initial management",
+   "MED33 MCQ – กินข้าว > ผื่นขึ้น > Anaphylaxis > treat โดย Adrenaline IM",
+   "MED30 SAQ ข้อ 11 – Anaphylactic shock → Distributive shock",
+   "MED31 MCQ ข้อ 85 – รักษา anaphylaxis → adrenaline",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 2-3 – Urticaria / Anaphylaxis → hypersensitivity type 1"
+  ]
+ },
+ {
+  "id": "C-MCQ-08",
+  "lec": "10",
+  "lecture": "Shock (AL) (อ.เจตวรงค์)",
+  "topic": "Septic shock – first-line vasopressor",
+  "stem": "A 68-year-old man with pyelonephritis remains hypotensive after receiving 30 mL/kg of balanced crystalloid. Vital signs: BT 38.9 C, PR 118/min, BP 82/40 mmHg, RR 26/min. Extremities are warm with brisk capillary refill and the pulse pressure is wide. Serum lactate is 4.2 mmol/L. Echocardiography shows a hyperdynamic left ventricle with LVEF 65% and a non-collapsed inferior vena cava. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Transfuse packed red cells to a haemoglobin target of 10 g/dL",
+   "Start intravenous norepinephrine infusion targeting a mean arterial pressure of 65 mmHg",
+   "Start intravenous dopamine infusion at 5 micrograms/kg/min",
+   "Give an additional 2 litres of crystalloid before starting any vasopressor",
+   "Start intravenous dobutamine infusion to augment cardiac output"
+  ],
+  "answer": 1,
+  "explain": "กลไก: septic shock = **distributive** — endotoxin/PAMPs กระตุ้น innate immunity → NO synthase (iNOS) ↑, prostacyclin ↑, ATP-sensitive K channel เปิด → **vascular smooth muscle ไม่ตอบสนองต่อ catecholamine (vasoplegia)** → SVR ต่ำ, CO สูงชดเชย → มือเท้าอุ่น, wide pulse pressure, hyperdynamic LV (ตรงกับโจทย์ทุกข้อ)\n\nเมื่อ **fluid resuscitation เพียงพอแล้ว (30 mL/kg) + IVC ไม่ collapse** แต่ MAP ยังต่ำ ปัญหาคือ **SVR ไม่ใช่ preload** → ต้องให้ vasopressor\n\n**Norepinephrine เป็น first-line** (Surviving Sepsis Campaign): α1 เด่น → vasoconstriction แก้ vasoplegia ตรงกลไก, β1 อ่อนๆ ช่วย CO โดยไม่เพิ่ม HR มาก → **arrhythmia น้อยกว่า dopamine** (ยืนยันจาก SOAP II trial ซึ่ง dopamine มี arrhythmia และแนวโน้ม mortality สูงกว่า). เป้าหมาย **MAP ≥ 65 mmHg**\n\nทำไมข้ออื่นผิด:\n- **ให้ fluid เพิ่มอีก 2 L**: เคสนี้ตัวชี้วัด fluid responsiveness เป็นลบ (IVC ไม่ collapse, LV hyperdynamic) → ให้ต่อจะได้แต่ **interstitial/pulmonary edema, ↑ venous congestion, AKI แย่ลง** และเสีย time-to-vasopressor (ทุก 1 ชม.ที่ช้า mortality เพิ่ม)\n- **Dopamine**: เคยเป็น first-line แต่ถูกถอดไปแล้ว — เสี่ยง tachyarrhythmia สูงกว่า, ฤทธิ์เปลี่ยนตาม dose (dopaminergic/β/α) คาดเดายาก, \"renal-dose dopamine\" พิสูจน์แล้วว่าไม่ป้องกัน AKI\n- **Dobutamine**: β1 agonist เพิ่ม inotropy + **β2 ทำให้ vasodilate → BP ตกยิ่งขึ้น**; ใช้เมื่อมี septic cardiomyopathy (EF ตก, CO ต่ำ) — เคสนี้ EF 65% hyperdynamic อยู่แล้ว ให้ไปจะซ้ำเติม\n- **Transfusion เป้า Hb 10**: TRISS trial แสดงว่า restrictive threshold **Hb 7 g/dL** ไม่แย่กว่า; โจทย์ไม่ได้บอกว่าซีดหรือมี active bleeding",
+  "pearl": "Bundle 1 ชั่วโมงแรกของ septic shock: วัด **lactate**, เจาะ **hemoculture ก่อนให้ยา**, ให้ **broad-spectrum antibiotic**, ให้ **crystalloid 30 mL/kg**, และ **เริ่ม vasopressor ถ้า MAP <65 ระหว่างหรือหลังให้น้ำ**; ตัวที่ 2 คือ vasopressin, ถ้ายังไม่พอพิจารณา hydrocortisone",
+  "ref": [
+   "MED34 FA MCQ – Patient develops shock 2 days after starting antibiotics → Septic shock",
+   "MED31 past paper loop C&D – A 75 year old woman with fever, leukocyte 13,000, UA 20-25 WBC/HPF, urine & blood culture E. coli → Sepsis / severe sepsis terminology",
+   "MED31 MCQ – ผู้ป่วยชายอายุ 40 ปี septic shock 6 ชั่วโมง ไม่มี urine ประมาณค่า GFR"
+  ]
+ },
+ {
+  "id": "C-MCQ-09",
+  "lec": "10",
+  "lecture": "Shock (AL) (อ.เจตวรงค์)",
+  "topic": "Cardiogenic shock from tachyarrhythmia",
+  "stem": "A 72-year-old man presents with 2 days of worsening dyspnoea and confusion. Vital signs: PR 132/min irregularly irregular, BP 80/58 mmHg, RR 28/min, SpO2 88% on room air. He has cool mottled extremities with capillary refill of 5 seconds, JVP 8 cm above the sternal angle, bibasilar crepitations to the mid zones and an S3 gallop. Chest radiograph shows cardiomegaly with bilateral perihilar opacities. Serum lactate 5.0 mmol/L, creatinine rising from 0.9 to 1.9 mg/dL. Which of the following best describes the type of shock and the most appropriate immediate intervention?",
+  "choices": [
+   "Cardiogenic shock; urgent synchronised cardioversion or rate control with haemodynamic support",
+   "Obstructive shock; immediate needle pericardiocentesis",
+   "Hypovolaemic shock; rapid infusion of 30 mL/kg crystalloid",
+   "Cardiogenic shock; high-dose intravenous beta-blocker for rate control",
+   "Distributive shock; intravenous norepinephrine plus broad-spectrum antibiotics"
+  ],
+  "answer": 0,
+  "explain": "กลไก: ภาพคือ **cardiogenic shock** — หัวใจเป็นตัวปัญหาเอง → CO ต่ำ ขณะที่ **filling pressure สูงทั้งสองข้าง**\nหลักฐานในโจทย์ที่ครบชุด:\n- ปลายน้ำ hypoperfusion: มือเท้าเย็น, mottled, capillary refill 5 วินาที, confusion, lactate 5, Cr ขึ้น (**cardiorenal**)\n- ต้นน้ำคั่ง: **JVP สูง + crepitation + S3 + pulmonary edema บน CXR** → LV failure (ต่างจาก tamponade ที่ปอด clear)\n- ตัวกระตุ้น: **AF with rapid ventricular response 132/min** — อัตราเร็วทำให้ diastolic filling time สั้นลง + เสีย atrial contribution (ประมาณ 20-30% ของ filling) → stroke volume ตก และ **myocardial oxygen demand เพิ่มขณะ coronary perfusion ลด** เกิดวงจรเลวลง\n\nการรักษาที่ตรงกลไก = **เอา arrhythmia ออก**: unstable tachyarrhythmia → **synchronised cardioversion** (หรือคุม rate ด้วยยาที่ไม่กด inotropy เช่น IV digoxin/amiodarone) พร้อม support ด้วย **inotrope/vasopressor (norepinephrine ± dobutamine)** และ NIV\n\nทำไมข้ออื่นผิด:\n- **Hypovolemic + 30 mL/kg**: JVP สูงและปอดท่วมอยู่แล้ว ให้ volume จะทำให้ pulmonary edema แย่ทันที — นี่คือกับดักที่อันตรายที่สุด\n- **Distributive/septic**: distributive จะมือเท้า **อุ่น** + wide pulse pressure + SVR ต่ำ และไม่มี S3/pulmonary edema แบบนี้ (โจทย์ไม่มีไข้ มี narrow pulse pressure)\n- **Obstructive + pericardiocentesis**: tamponade จะ **ปอด clear** + pulsus paradoxus + muffled heart sound; เคสนี้มี crepitation เต็มและ S3\n- **High-dose IV beta-blocker**: ใน **decompensated HF ที่ shock อยู่** การให้ BB IV ขนาดสูงจะกด inotropy → CO ตกฮวบ อาจถึงแก่ชีวิต (BB มีที่ใช้เมื่อ euvolemic/compensated แล้วเท่านั้น)",
+  "pearl": "แยก cardiogenic จาก tamponade/PE ด้วย **ปอด**: cardiogenic = crepitation + S3 + pulmonary edema; obstructive = ปอด clear + JVP สูง. แยกจาก hypovolemic ด้วย **JVP/IVC**",
+  "ref": [
+   "MED34 MCQ ครั้งที่ 4 ข้อ 19 – Cardiomegaly c HR 130 (irregular) come with shock → cardiogenic shock",
+   "MED31 MCQ ข้อ 61 – Hypotension, pulse เร็ว (irregular) → cardiogenic shock",
+   "MED32 MCQ ข้อ 13 – PR 130 (irregular) → cardioembolic / cardiogenic shock",
+   "MED30 MCQ ข้อ 65 – Shock ในข้อนี้เกิดจากอะไร → Cardiogenic shock"
+  ]
+ },
+ {
+  "id": "C-MCQ-10",
+  "lec": "10",
+  "lecture": "Shock (AL) (อ.เจตวรงค์)",
+  "topic": "Bedside differentiation of shock – jugular venous pressure",
+  "stem": "A 55-year-old man is hypotensive in the emergency department with BP 78/50 mmHg, PR 126/min and cool extremities. No history is available. Which single bedside finding is most useful to distinguish hypovolaemic shock from cardiogenic shock in this patient?",
+  "choices": [
+   "Skin temperature of the extremities",
+   "Presence of metabolic acidosis on blood gas",
+   "Jugular venous pressure",
+   "Heart rate",
+   "Urine output over the past hour"
+  ],
+  "answer": 2,
+  "explain": "กลไก: shock ทั้ง hypovolemic และ cardiogenic มี **CO ต่ำ + SVR สูง** เหมือนกัน → ปลายน้ำเหมือนกันหมด (มือเท้าเย็น, tachycardia, oliguria, lactate/metabolic acidosis) **แยกกันไม่ได้ด้วยอาการปลายน้ำ**\n\nจุดที่ต่างกันคือ **preload ที่ต้นน้ำ**:\n- **Hypovolemic**: เสีย intravascular volume → venous return ต่ำ → **JVP แฟบ / IVC collapse** → ตอบสนองดีต่อ fluid\n- **Cardiogenic**: ปั๊มเสีย ปริมาตรยังอยู่ แต่ดันไปข้างหน้าไม่ได้ → คั่งย้อนขึ้น → **JVP สูง + อาจมี S3, crepitation, hepatomegaly**\n\nการดู JVP (หรือ IVC ด้วย POCUS) จึงเปลี่ยนการรักษาแบบพลิกขั้ว: **JVP แฟบ → ให้น้ำ**, **JVP สูง → ห้ามให้น้ำ ต้องให้ inotrope/ลด afterload/decongest**\n\nทำไมข้ออื่นผิด:\n- **Skin temperature**: แยก **distributive (อุ่น) ออกจาก low-output shock (เย็น)** ได้ แต่ hypovolemic กับ cardiogenic **เย็นทั้งคู่**\n- **Heart rate**: tachycardia เป็น compensatory response ทั่วไปในทุกชนิด (และอาจหายไปในผู้ป่วยที่กิน β-blocker หรือสูงอายุ)\n- **Urine output**: ทั้งสองกลุ่มมี renal hypoperfusion → oliguria เหมือนกัน\n- **Metabolic acidosis**: lactate ขึ้นจาก tissue hypoperfusion ใน shock ทุกชนิด ไม่จำเพาะ",
+  "pearl": "สอบ OSCE มักให้ \"flatted neck vein + แห้งจัด\" → ตอบ **ให้ IV isotonic fluid**; ถ้า \"JVP สูง + crepitation\" → ห้ามให้น้ำ. ที่ bedside ใช้ **POCUS 3 จุด** ช่วย: IVC (volume), heart (EF/effusion/RV), lung (B-line) แยกได้ทั้ง 4 ชนิดในไม่กี่นาที",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 43 – คนไข้ flatted neck vein ดูแห้งมาก ทำไงดี → ให้น้ำ",
+   "MED32 MCQ ข้อ 84 – JVP flat → 0.9% NSS load",
+   "MED34 OSCE+SAQ – ตรวจ dehydration: skin turgor, JVP, capillary refill time",
+   "MED30 สรุป Cardio – hypovolemic / cardiogenic / obstructive / distributive shock"
+  ]
+ },
+ {
+  "id": "C-MCQ-11",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "STEMI – reperfusion strategy when PCI is available",
+  "stem": "A 58-year-old man with diabetes and hypertension presents 70 minutes after the onset of crushing retrosternal chest pain radiating to the left jaw, with diaphoresis. Vital signs: PR 96/min, BP 138/86 mmHg, lungs clear. ECG shows ST elevation of 3 mm in leads I, aVL and V2-V6 with reciprocal ST depression in II, III and aVF. High-sensitivity troponin-I is elevated. Your hospital has no catheterisation laboratory, but a PCI-capable centre can receive the patient and inflate the balloon 95 minutes from now. Which of the following is the most appropriate reperfusion strategy?",
+  "choices": [
+   "Start intravenous unfractionated heparin and plan elective coronary angiography in 48 hours",
+   "Start intravenous nitroglycerine and metoprolol and observe in the coronary care unit",
+   "Give intravenous streptokinase now and transfer afterwards",
+   "Transfer immediately for primary percutaneous coronary intervention",
+   "Give dual antiplatelet therapy and repeat troponin in 3 hours before deciding"
+  ],
+  "answer": 3,
+  "explain": "กลไก: STEMI = **plaque rupture → platelet-rich thrombus อุด coronary 100%** → transmural ischemia → myocyte necrosis ลุกลามจาก endocardium ออกนอก (\"wavefront phenomenon\") **time = myocardium** เป้าหมายคือเปิดหลอดเลือดให้เร็วที่สุด\n\nกฎการตัดสินใจที่ต้องจำ:\n- ถ้า **คาดว่าจะทำ PCI ได้ (balloon inflation) ภายใน 120 นาที** นับจากวินิจฉัย STEMI → **primary PCI ดีกว่า** (patency สูงกว่า ~90% vs ~50-60%, re-infarction และ intracranial hemorrhage น้อยกว่า, mortality ต่ำกว่า)\n- ถ้า **>120 นาที** → ให้ **fibrinolytic ภายใน 10 นาที** แล้วส่งต่อทำ angiography ภายใน 2-24 ชม. (pharmaco-invasive)\n\nเคสนี้ 95 นาที < 120 นาที → **ส่งไปทำ primary PCI ทันที** (พร้อมให้ ASA + P2Y12 inhibitor + anticoagulant ก่อนออกเดินทาง)\n\nการอ่าน ECG: ST elevation ที่ **I, aVL, V2-V6** = **anterolateral wall** (LAD proximal) + reciprocal depression ที่ II, III, aVF — ตรงกับข้อสอบเก่าที่ออกซ้ำหลายรุ่น\n\nทำไมข้ออื่นผิด:\n- **Streptokinase ตอนนี้**: ด้อยกว่า PCI เมื่อ PCI ทำได้ทัน และเพิ่มความเสี่ยง bleeding/ICH โดยไม่จำเป็น\n- **รอ troponin ซ้ำ**: STEMI **วินิจฉัยจาก ECG + clinical ไม่ต้องรอ biomarker** — การรอคือการเสียกล้ามเนื้อหัวใจ (การรอ trop ใช้ใน NSTE-ACS ที่ ECG ไม่ชัดเท่านั้น)\n- **Heparin + elective CAG 48 ชม.**: เป็นแนวทางของ NSTE-ACS ความเสี่ยงปานกลาง ไม่ใช่ STEMI ที่หลอดเลือดอุดสนิทอยู่\n- **NTG + metoprolol แล้วสังเกต**: เป็น adjunct ไม่ใช่ reperfusion; และ **IV beta-blocker ห้ามใช้ถ้ามี HF, hypotension, bradycardia หรือสงสัย RV infarct**",
+  "pearl": "จำตัวเลข: door-to-balloon **≤90 นาที** (รพ.ที่มี cath lab), first medical contact-to-PCI **≤120 นาที**, door-to-needle ของ fibrinolytic **≤30 นาที (ควร ≤10)**. ข้อสอบชอบให้เวลา \"120 นาที\" แล้วดูว่าจะเลือกอะไร",
+  "ref": [
+   "MED34 FA MCQ ข้อ 5 – ให้ EKG STEMI Trop T elevate ไป PCI center ได้ใน 120 นาที management ทำอะไร",
+   "MED30 สรุป Cardio – 120 min → PCI",
+   "MED32 MCQ ข้อ 53 – Initial management ACS → cardiac catheter",
+   "MED31 MEQ ข้อ 2.6 – โจทย์ถามทำไมคนไข้ถึงได้ทำ PCI",
+   "MED35 MEQ (formative + summative) – acute STEMI reperfusion therapy"
+  ]
+ },
+ {
+  "id": "C-MCQ-12",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "STEMI – contraindication to fibrinolytic therapy",
+  "stem": "A 64-year-old man in a district hospital has an inferior STEMI that began 2 hours ago. The nearest PCI centre is 4 hours away by road. Vital signs: PR 88/min, BP 150/92 mmHg. Which of the following features in his history would be an absolute contraindication to fibrinolytic therapy?",
+  "choices": [
+   "Venepuncture of a compressible vein 1 hour ago",
+   "Chronic warfarin therapy with an INR of 1.6",
+   "Ischaemic stroke with residual hemiparesis 3 weeks ago",
+   "Peptic ulcer disease diagnosed and healed 5 years ago",
+   "Well-controlled hypertension on amlodipine for 10 years"
+  ],
+  "answer": 2,
+  "explain": "กลไก: fibrinolytic (streptokinase, alteplase, tenecteplase) เปลี่ยน plasminogen → plasmin ซึ่งย่อย fibrin **ทุกที่ในร่างกาย ไม่เลือกเฉพาะ coronary thrombus** ดังนั้นก้อนเลือดที่กำลัง \"อุดรูรั่ว\" อยู่ที่อื่นจะถูกละลายด้วย → เลือดออกรุนแรง โดยที่กลัวที่สุดคือ **intracranial hemorrhage**\n\n**Absolute contraindication ที่ต้องจำ:**\n- **ischemic stroke ภายใน 3 เดือน** (เคสนี้ 3 สัปดาห์ → ห้ามเด็ดขาด เพราะ blood-brain barrier ที่เสียหายและ infarcted tissue เสี่ยง hemorrhagic transformation สูงมาก)\n- intracranial hemorrhage เมื่อไหร่ก็ตาม\n- known cerebral AVM / intracranial neoplasm\n- suspected aortic dissection\n- active bleeding / bleeding diathesis (ไม่รวมประจำเดือน)\n- significant closed head/facial trauma ภายใน 3 เดือน\n- ผ่าตัดสมองหรือไขสันหลังภายใน 2 เดือน\n\nทำไมข้ออื่นไม่ใช่ absolute:\n- **HT คุมได้ดี**: ที่เป็น relative contraindication คือ **severe uncontrolled HT ขณะนั้น (SBP >180 หรือ DBP >110 mmHg)** หรือประวัติ chronic severe poorly controlled HT ไม่ใช่ HT ที่คุมอยู่\n- **PUD หายแล้ว 5 ปี**: active PUD = relative; แผลที่หายแล้วนานไม่ใช่ข้อห้าม\n- **Warfarin, INR 1.6**: ยิ่ง INR สูงยิ่งเสี่ยง — ถือเป็น **relative** (โดยเฉพาะ INR >1.7-2.0); INR 1.6 ไม่ใช่ absolute\n- **Venepuncture ที่เส้นกดได้**: non-compressible vascular puncture คือ relative contraindication; **เส้นที่กดห้ามเลือดได้ไม่ใช่ข้อห้าม**",
+  "pearl": "ถ้ามี absolute contraindication ต่อ fibrinolytic ใน STEMI → ต้อง **ส่งไปทำ primary PCI ไม่ว่าจะไกลแค่ไหน** (transfer for PCI เป็นทางเดียว); อย่าตอบ \"รักษาแบบ medical เฉยๆ\"",
+  "ref": [
+   "MED35 MEQ – Acute management STEMI: Reperfusion therapy / Fibrinolytic agent (Streptokinase) พร้อมเหตุผล",
+   "MED34 FA MCQ ข้อ 5 – Fibrinolytic agent, oral antiplatelets vs emergency CAG",
+   "MED30 สรุป Cardio – 120 min → PCI"
+  ]
+ },
+ {
+  "id": "C-MCQ-13",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "Unstable angina – next step with normal initial troponin and ECG",
+  "stem": "A 62-year-old woman with hypertension and dyslipidaemia presents with three episodes of retrosternal pressure in the past 24 hours, each lasting 20 minutes, the last occurring at rest 1 hour ago and now resolved. Previously her chest discomfort occurred only on walking uphill and resolved with rest. Vital signs and cardiac examination are normal. The initial 12-lead ECG and high-sensitivity troponin-I are both normal. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Discharge with a follow-up appointment because the troponin is normal",
+   "Give intravenous fibrinolytic therapy immediately",
+   "Order a CT coronary angiogram only if a second troponin is elevated",
+   "Admit for serial ECG and repeat high-sensitivity troponin, and start aspirin plus an anticoagulant",
+   "Arrange an outpatient exercise stress test within 2 weeks"
+  ],
+  "answer": 3,
+  "explain": "กลไก: **unstable angina** = plaque rupture/erosion ที่เกิด **non-occlusive thrombus** → ischemia ชั่วคราวแต่ยังไม่ถึง necrosis (หรือยังน้อยจน trop ไม่ขึ้น) — คนละสเปกตรัมเดียวกับ NSTEMI ต่างกันที่ biomarker\n\nสัญญาณ \"unstable\" ในโจทย์ครบทั้ง 3 รูปแบบคลาสสิก:\n1. **crescendo** — เดิมเจ็บเฉพาะตอนเดินขึ้นเขา กลายเป็นถี่ขึ้น/รุนแรงขึ้น\n2. **rest angina** — เจ็บขณะพัก\n3. **new/prolonged** — นาน 20 นาที\n\nเหตุผลที่ trop และ ECG ปกติ **ไม่ได้ตัดโรค**:\n- trop ใช้เวลา release; hs-troponin ครั้งเดียวที่เวลา <3 ชม.จาก onset ยัง sensitivity ไม่พอ → ต้องใช้ **0/1-hour หรือ 0/3-hour algorithm** (ดู delta)\n- ECG ใน UA มักปกติระหว่างที่ไม่เจ็บ — ต้องทำ **serial ECG** และทำซ้ำ**ขณะมีอาการ**\n- โดยนิยาม UA คือ **trop ไม่ขึ้น** ฉะนั้นถ้ารอให้ trop ขึ้นก่อนจะวินิจฉัย UA ไม่ได้เลย\n\nจึง admit + serial ECG/trop + **ให้ ASA + anticoagulant (enoxaparin/fondaparinux) + statin ขนาดสูง + anti-anginal** (ส่วน P2Y12 inhibitor แนวทางปัจจุบัน **ไม่แนะนำให้ pretreatment เป็นกิจวัตร** เมื่อวางแผนทำ angiography เร็ว ให้ตอนรู้ anatomy แล้ว) และประเมิน risk ด้วย TIMI/GRACE เพื่อเลือกเวลาทำ invasive angiography\n\nทำไมข้ออื่นผิด:\n- **Discharge**: UA มีความเสี่ยงเกิด MI/ตายใน 30 วันสูง — การส่งกลับบ้านคือความผิดพลาดที่ฟ้องร้องบ่อยที่สุด\n- **Exercise stress test ผู้ป่วยนอก 2 สัปดาห์**: stress test **ห้ามทำในผู้ป่วยที่ยังไม่ stabilize** (ยังมี rest angina) เพราะอาจกระตุ้น MI; stress test ใช้กับ **stable** angina หรือหลังคุมอาการได้แล้ว\n- **Fibrinolytic**: มีประโยชน์เฉพาะ **STEMI** — ใน NSTE-ACS พิสูจน์แล้วว่า **เพิ่มอันตราย (เพิ่ม MI และ bleeding)** เพราะก้อนเป็น platelet-rich ไม่ใช่ fibrin-rich และหลอดเลือดไม่ได้อุดสนิท\n- **รอ trop ขึ้นก่อนจะสืบค้นต่อ**: เป็นการ mislabel UA ว่าไม่มีโรค",
+  "pearl": "Typical angina 3 ข้อ: (1) retrosternal, (2) เกิดจาก exertion/emotion, (3) ดีขึ้นด้วยพักหรือ nitrate — ครบ 3 = typical, 2 = atypical, ≤1 = non-cardiac. ข้อสอบเก่าถามซ้ำว่าอันไหน \"considered ACS\" → **pain radiating to back/jaw + rest pain + crescendo**, ไม่ใช่ pain on exertion only",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 29 – แน่นหน้าอก พักแล้วหาย investigation tropT ecg cxr ปกติ → typical angina",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 40 – TopI + EKG normal → Repeat TopI + EKG",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 77 – Chest pain 20 นาที ขยับแล้วเหนื่อย lab ไม่ขึ้น → unstable angina",
+   "MED31 MCQ ข้อ 55 – เจ็บหน้าอก normal enzyme → unstable angina pectoris",
+   "MED32 MCQ ข้อ 11 – Unstable angina pectoris normal trop I, ECG",
+   "MED34 FA MCQ – Which is considered ACS?"
+  ]
+ },
+ {
+  "id": "C-MCQ-14",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "Pathogenesis of STEMI",
+  "stem": "A 55-year-old smoker with a 30 pack-year history collapses at work with crushing chest pain. ECG shows ST elevation in V1-V4. He had been completely asymptomatic and a treadmill test 1 year ago was normal. Coronary angiography shows total thrombotic occlusion of the proximal left anterior descending artery with only a 40% stenosis in the adjacent segment. Which of the following best explains the pathogenesis of his presentation?",
+  "choices": [
+   "Rupture of a lipid-rich plaque with a thin fibrous cap, triggering platelet aggregation and thrombus formation",
+   "Spontaneous coronary artery dissection with intramural haematoma",
+   "Increased myocardial oxygen demand exceeding a fixed supply limit",
+   "Progressive concentric luminal narrowing of the artery to more than 90% of the diameter",
+   "Embolisation of a left atrial thrombus into the coronary circulation"
+  ],
+  "answer": 0,
+  "explain": "กลไก (หัวใจของข้อนี้): **plaque ที่ทำให้เกิด STEMI มักไม่ใช่ plaque ที่ตีบมากที่สุด** — เป็น **\"vulnerable plaque\"** ที่มี\n- lipid/necrotic core ใหญ่\n- **thin fibrous cap (<65 µm)**\n- macrophage/inflammation เยอะ, cap ถูกย่อยด้วย MMP จาก macrophage\n- มัก **remodel ออกข้างนอก (positive remodeling)** จึงตีบ lumen ไม่มาก (40-50%)\n\nเมื่อ cap แตก → collagen + tissue factor ใน core สัมผัสเลือด → platelet adhesion (GP Ib-vWF), activation, aggregation (GP IIb/IIIa) + coagulation cascade → **occlusive thrombus เต็มรู** → transmural ischemia = STEMI\n\nนี่คือเหตุผลที่ **treadmill test ปกติปีก่อนไม่ป้องกัน MI** — stress test ตรวจจับ flow-limiting stenosis (>70%) ไม่ตรวจจับ plaque vulnerability\n\nทำไมข้ออื่นผิด:\n- **ตีบค่อยเป็นค่อยไปจนเกิน 90%**: กลไกของ **stable angina** (เจ็บตอนใช้งาน หายตอนพัก) และมักมี collateral พัฒนาไว้ → เมื่ออุดมักไม่เกิด transmural necrosis รุนแรง; โจทย์บอกเลยว่าตีบรอบข้างแค่ 40%\n- **SCAD**: พบในหญิงวัยกลางคน, ตั้งครรภ์/หลังคลอด, fibromuscular dysplasia — angiography เห็น intimal flap/intramural hematoma ไม่ใช่ thrombus บน plaque\n- **Demand > fixed supply**: กลไกของ **type 2 MI** (เช่น tachyarrhythmia, anemia รุนแรง, sepsis, thyrotoxicosis) — ไม่มี acute thrombotic occlusion บน angiography\n- **Embolism จาก LA thrombus**: พบใน AF/MS ได้ แต่พบน้อยมากใน coronary และโจทย์ไม่มี AF/MS; ภาพ angiography เป็น thrombus บน plaque ในตำแหน่ง proximal LAD",
+  "pearl": "จุดหลอกที่ออกซ้ำ: \"ผู้ป่วยเจ็บหน้าอกแต่ CAG ไม่เจอหลอดเลือดตีบ\" → นึกถึง **MINOCA** (plaque erosion, vasospasm, microvascular dysfunction, SCAD, myocarditis, embolism) ไม่ใช่ \"ไม่เป็นอะไร\"",
+  "ref": [
+   "MED33 MCQ – MI เกิดจากไร → Plaque rupture / STEMI น่าจะมาจาก cause อะไร → plaque rupture",
+   "MED31 MCQ ข้อ 106 – Most common cause of STEMI → Plaque rupture",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 31 – เจ็บหน้าอกตอนออกกำลัง พักแล้วดีขึ้น กลไกคือ atherosclerosis ตีบ",
+   "MED34 FA MCQ ข้อ 6 – มีเจ็บหน้าอกแต่ CAG ไม่เจอความผิดปกติของหลอดเลือด เกิดจาก increase oxygen demand, decrease supply"
+  ]
+ },
+ {
+  "id": "C-MCQ-15",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "Inferior STEMI with right ventricular infarction",
+  "stem": "A 60-year-old man presents with 90 minutes of chest pain and nausea. ECG shows ST elevation in leads II, III and aVF with ST elevation greater in III than in II, and reciprocal ST depression in I and aVL. Vital signs on arrival: PR 58/min, BP 118/74 mmHg, lungs clear, JVP 7 cm above the sternal angle. Sublingual nitroglycerine is given and his blood pressure falls to 72/48 mmHg. Which of the following is the most appropriate immediate management, and which additional ECG leads would confirm the underlying problem?",
+  "choices": [
+   "Repeat sublingual nitroglycerine; record a 15-lead ECG with V7-V9",
+   "Immediate transcutaneous pacing; record a long lead II rhythm strip",
+   "Rapid intravenous isotonic saline; record leads V3R and V4R",
+   "Intravenous metoprolol 5 mg; record leads V3R and V4R",
+   "Intravenous furosemide 40 mg; record leads V7, V8 and V9"
+  ],
+  "answer": 2,
+  "explain": "กลไก: ST elevation ที่ **II, III, aVF** = **inferior wall MI**; **III > II ร่วมกับ ST depression ใน I และ aVL** บ่งว่า culprit เป็น **RCA** (ไม่ใช่ LCx) และ RCA proximal เป็นตัวเลี้ยง **RV ผ่าน acute marginal branch** → เกิด **RV infarction** ร่วม\n\nสรีรวิทยาของ RV infarct: RV บีบตัวไม่ได้ → ไม่สามารถดันเลือดผ่านปอดไปเติม LV → **LV preload ต่ำ** ทั้งที่ **JVP สูง** และ **ปอด clear** (classic triad: hypotension + elevated JVP + clear lungs)\n\nผู้ป่วยกลุ่มนี้ **preload-dependent อย่างมาก** → ยาอะไรที่ลด preload จะทำให้ BP ตกฮวบ: **nitrate (เกิดขึ้นในโจทย์แล้ว), morphine, diuretic** → จึงต้องรักษาด้วย **IV isotonic fluid load** (และถ้ายังไม่พอ ใช้ dobutamine) แล้วรีบ reperfusion\n\nLeads ที่ยืนยัน: **V3R, V4R** (right precordial leads) — ST elevation ≥1 mm ใน V4R มี sensitivity/specificity สูงสำหรับ RV infarct\n\nทำไมข้ออื่นผิด:\n- **Furosemide + V7-V9**: furosemide ลด preload → ซ้ำเติม; V7-V9 (posterior leads) ใช้ตรวจ **posterior MI** (เบาะแสคือ ST depression + tall R ใน V1-V3) ไม่ใช่ RV\n- **NTG ซ้ำ**: คือสิ่งที่ทำให้ BP ตกรอบแรก — ห้ามทำซ้ำ\n- **IV metoprolol**: ผู้ป่วยมี **bradycardia 58 + hypotension** อยู่แล้ว; inferior MI มักมี vagal tone สูงและ AV node ischemia (RCA เลี้ยง AV node ~90%) → BB จะทำให้เกิด complete heart block/cardiogenic shock\n- **Transcutaneous pacing ทันที**: HR 58 ที่ perfusion ยังไม่ได้แย่จาก bradycardia เองไม่ใช่ข้อบ่งชี้ — สาเหตุของ hypotension คือ preload ไม่ใช่ rate (ถ้ามี symptomatic complete AV block จึงพิจารณา atropine/pacing)",
+  "pearl": "**Inferior STEMI + hypotension หลังให้ nitrate = RV infarct จนกว่าจะพิสูจน์ว่าไม่ใช่** → ให้น้ำ ไม่ให้ยาลด preload; และระวัง AV block เพราะ RCA เลี้ยง AV node",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 68 – ST elevated at lead II, III, aVF ต้องติด lead อะไรเพิ่ม → V3R, V4R",
+   "MED33 OSCE ข้อ 1 – Inferior wall STEMI (ST-elevation @ II, III, aVF with reciprocal change)",
+   "MED35 ลงกองครั้งที่ 2 SAQ – EKG ST elevate at lead II, III, aVF + reciprocal change at I, aVL",
+   "MED29 SAQ – EKG: inferior wall MI"
+  ]
+ },
+ {
+  "id": "C-MCQ-16",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์) / Dyslipidemia (อ.นวพร)",
+  "topic": "Indication for high-intensity statin",
+  "stem": "Which of the following patients has the strongest indication for high-intensity statin therapy regardless of the baseline LDL-cholesterol level?",
+  "choices": [
+   "A 45-year-old woman with isolated fasting triglycerides of 280 mg/dL and LDL-C 95 mg/dL",
+   "A 52-year-old woman with hypothyroidism and total cholesterol of 245 mg/dL before levothyroxine replacement",
+   "A 30-year-old man with metabolic syndrome and LDL-C 110 mg/dL",
+   "A 60-year-old man 2 days after an acute ischaemic stroke of atherosclerotic origin",
+   "A 38-year-old man with a 10-year atherosclerotic cardiovascular disease risk of 4 percent"
+  ],
+  "answer": 3,
+  "explain": "กลไก: statin ยับยั้ง HMG-CoA reductase → ลด intracellular cholesterol → upregulate **LDL receptor** ที่ตับ → ดึง LDL ออกจากเลือด; นอกจากนั้นมี **pleiotropic effect** คือ **plaque stabilization** (ลด inflammation, ลด MMP, ทำ fibrous cap หนาขึ้น), ปรับ endothelial function และลด thrombogenicity\n\n**High-intensity statin (atorvastatin 40-80 mg หรือ rosuvastatin 20-40 mg)** ให้โดยไม่ต้องดู LDL ตั้งต้นใน **established ASCVD (secondary prevention)** ซึ่งรวม:\n- ACS/MI, stable CAD, เคยทำ PCI/CABG\n- **ischemic stroke/TIA จาก atherosclerosis**\n- peripheral arterial disease\nเป้าหมาย LDL-C **<70 mg/dL (บางแนวทาง <55 ใน very high risk)** และลด ≥50% จาก baseline\n\nทำไมข้ออื่นผิด:\n- **TG 280 เดี่ยวๆ LDL 95**: ความผิดปกติหลักคือ TG ไม่ใช่ LDL → แก้ที่ lifestyle, คุมเบาหวาน, ลดแอลกอฮอล์; ถ้า TG **>500** ให้ **fibrate** เพื่อป้องกัน pancreatitis (statin ลด TG ได้จำกัด) — ไม่ใช่ข้อบ่งชี้ high-intensity statin\n- **ASCVD risk 4%**: เป็น **low risk** → เน้น lifestyle; statin พิจารณาเมื่อ risk ≥7.5-10% (moderate-intensity) หรือมี risk enhancer\n- **Hypothyroid ที่ยังไม่ได้รักษา**: เป็น **secondary dyslipidemia** — hypothyroidism ลด LDL receptor activity ทำให้ LDL สูงลวง; ต้อง **แก้ไทรอยด์ก่อนแล้ววัดไขมันซ้ำ** (และถ้าให้ statin ขณะ hypothyroid จะเพิ่มความเสี่ยง myopathy/rhabdomyolysis) — นี่คือจุดหลอกคลาสสิก\n- **Metabolic syndrome, LDL 110, อายุ 30**: เป็น primary prevention ความเสี่ยงยังต่ำ → lifestyle เป็นหลัก",
+  "pearl": "ก่อนเริ่ม statin ต้อง **คัด secondary cause ของ dyslipidemia**: hypothyroidism, nephrotic syndrome, cholestasis, DM ที่คุมไม่ได้, แอลกอฮอล์, ยา (steroid, thiazide, retinoid, protease inhibitor). ระวัง **statin + fibrate = rhabdomyolysis** ซึ่งเป็นโจทย์ MEQ ของ MED33",
+  "ref": [
+   "MED33 MCQ ข้อ 95 – คนไข้คนไหนที่น่าจะ on high-potency statin → คนที่เป็น acute ischemic stroke",
+   "MED33 MCQ – High dose statin : ตอบอันที่มี stroke",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 71 – TG 880 → gemfibrozil",
+   "MED31 MCQ ข้อ 42 – TG สูง / MED32 MCQ ข้อ 25 – TG 220 → fibrate",
+   "MED31 โพย – TG > 150, LDL 190 ให้ lifestyle modification และอะไรเพิ่ม → statin",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 3 – พ่อเป็น MI ตายตอนอายุ 40 + xanthoma tendon → LDL receptor defect"
+  ]
+ },
+ {
+  "id": "C-MCQ-17",
+  "lec": "13",
+  "lecture": "Ischemic heart diseases (AL) (อ.สุรพันธ์)",
+  "topic": "Chest pain with normal coronary arteries",
+  "stem": "A 58-year-old woman has a 6-month history of exertional retrosternal chest tightness relieved by rest. An exercise treadmill test reproduced her symptoms with 1.5 mm of ST depression. Coronary angiography shows smooth epicardial coronary arteries with no obstructive stenosis. Coronary flow reserve measured during the study is 1.8 (normal greater than 2.5). Which of the following best explains her angina?",
+  "choices": [
+   "Oesophageal spasm causing referred chest discomfort",
+   "Acute plaque rupture with non-occlusive thrombus",
+   "Impaired coronary microvascular vasodilator capacity causing supply-demand mismatch",
+   "Fixed epicardial stenosis greater than 70 percent of the luminal diameter",
+   "Left ventricular outflow tract obstruction from septal hypertrophy"
+  ],
+  "answer": 2,
+  "explain": "กลไก: โจทย์นี้คือ **INOCA / microvascular angina** — angina แท้จริงจาก ischemia แต่ **epicardial coronary ปกติ**\n\nสรีรวิทยา: ความต้านทานของ coronary circulation กว่า 70% อยู่ที่ **microcirculation (arteriole <400 µm)** ไม่ใช่ epicardial artery. เมื่อมี endothelial dysfunction (NO bioavailability ลด) + smooth muscle dysfunction → arteriole ขยายไม่ได้เมื่อต้องการ flow เพิ่ม → **coronary flow reserve (CFR) ต่ำ <2.0** → ตอน exertion demand เพิ่มแต่ supply เพิ่มตามไม่ได้ = **supply-demand mismatch** → ST depression + angina (ตรงกับ CFR 1.8 ในโจทย์)\n\nพบบ่อยในหญิงวัยหลังหมดประจำเดือน, DM, HT, CKD, สูบบุหรี่ — prognosis ไม่ benign อย่างที่เคยเชื่อ รักษาด้วย risk factor control, β-blocker, CCB, ACEI, statin, ranolazine\n\nทำไมข้ออื่นผิด:\n- **Fixed stenosis >70%**: ถูกตัดตรงๆโดย angiography ที่บอกว่า **no obstructive stenosis**\n- **Plaque rupture with thrombus**: นั่นคือ ACS — จะมาแบบ **acute rest pain** + trop ขึ้น/ECG เปลี่ยน ไม่ใช่ exertional อาการคงที่ 6 เดือน และ angiography จะเห็น thrombus/irregular plaque\n- **Esophageal spasm**: เป็น non-cardiac chest pain — จะ **ไม่สัมพันธ์กับ exertion แบบ reproducible** และ **ไม่ทำให้เกิด ST depression ขณะ exercise**; โจทย์มีหลักฐาน ischemia ชัดเจน\n- **LVOT obstruction (HOCM)**: ทำให้เจ็บหน้าอก/เป็นลมตอนออกแรงได้ แต่จะมี **systolic murmur ที่ดังขึ้นเมื่อ Valsalva/ยืน**, LVH บน ECG และ echo เห็น asymmetric septal hypertrophy — โจทย์ไม่มี และ CFR ที่วัดได้บ่งชี้ microvascular โดยตรง",
+  "pearl": "เวลาเจอ \"เจ็บหน้าอกแต่ CAG ปกติ\" จำกลุ่ม MINOCA/INOCA: **microvascular dysfunction, vasospastic angina (Prinzmetal), SCAD, plaque erosion, coronary embolism, myocarditis, Takotsubo** — ห้ามสรุปว่า \"ไม่ใช่โรคหัวใจ\"",
+  "ref": [
+   "MED34 FA MCQ ข้อ 6 – มีเจ็บหน้าอก แต่ CAG ไม่เจอความผิดปกติของหลอดเลือด เกิดจาก increase oxygen demand, decrease supply",
+   "MED31 MCQ ข้อ 69/76 – ACS เจ็บแบบไหน",
+   "MED32 MCQ ข้อ 35 – Dyspnea on exertion เจ็บหน้าอก what is first initial investigation → EKG"
+  ]
+ },
+ {
+  "id": "C-MCQ-18",
+  "lec": "24",
+  "lecture": "Atrial fibrillation (อ.อภิชัย)",
+  "topic": "Stroke risk stratification in atrial fibrillation",
+  "stem": "A 70-year-old woman with hypertension and type 2 diabetes is found to have an irregularly irregular pulse. ECG confirms atrial fibrillation with a ventricular rate of 92/min. She has no valvular disease on echocardiography and no history of stroke or bleeding. Which of the following is the most appropriate next step to decide on antithrombotic therapy?",
+  "choices": [
+   "Start aspirin 81 mg daily because her ventricular rate is controlled",
+   "Calculate the CHA2DS2-VASc score and start a direct oral anticoagulant if the score is 2 or more in women",
+   "Start anticoagulation only if a transoesophageal echocardiogram shows a left atrial thrombus",
+   "Withhold antithrombotic therapy because she is in permanent rather than paroxysmal atrial fibrillation",
+   "Calculate the TIMI risk score and start dual antiplatelet therapy"
+  ],
+  "answer": 1,
+  "explain": "กลไก: ใน AF, atrium ไม่บีบตัวเป็นระเบียบ → เลือดนิ่งใน **left atrial appendage** → ครบ Virchow triad (stasis + endothelial dysfunction + hypercoagulability) → **thrombus** → หลุดไป **cardioembolic stroke** (มักเป็น large-vessel occlusion, อาการรุนแรง, onset ทันที)\n\n**CHA2DS2-VASc** = เครื่องมือมาตรฐาน:\n- **C**ongestive HF 1, **H**ypertension 1, **A**ge ≥75 **2**, **D**iabetes 1, **S**troke/TIA/thromboembolism **2**, **V**ascular disease 1, **A**ge 65-74 1, **S**ex category (female) 1\n- ผู้ป่วยนี้: HT 1 + DM 1 + age 65-74 1 + female 1 = **4** → มีข้อบ่งชี้ anticoagulation ชัดเจน\n- เกณฑ์: เริ่ม OAC เมื่อ **≥2 ในผู้หญิง / ≥2 ในผู้ชาย** (≥1 พิจารณา), และใช้ **HAS-BLED** เพื่อ**แก้ไขปัจจัยเลือดออกที่แก้ได้** ไม่ใช่เพื่อห้ามให้ยา\n- ใน **non-valvular AF** เลือก **DOAC ก่อน warfarin** (ลด ICH และไม่ต้องตาม INR)\n\nทำไมข้ออื่นผิด:\n- **Aspirin**: ป้องกัน cardioembolic stroke ใน AF **ได้น้อยมากแต่เลือดออกใกล้เคียง OAC** → ปัจจุบัน **ไม่แนะนำใช้ aspirin เดี่ยวเพื่อ stroke prevention ใน AF**; และ **rate control ไม่ได้ลดความเสี่ยง stroke** (ความเข้าใจผิดที่ออกสอบ)\n- **รอ TEE เห็น thrombus ก่อน**: TEE ใช้เมื่อจะทำ early cardioversion โดยไม่ได้ anticoagulate ครบ 3 สัปดาห์ — ไม่ใช่เกณฑ์ตัดสินการให้ OAC ระยะยาว (ไม่เห็น thrombus วันนี้ไม่ได้แปลว่าจะไม่เกิด)\n- **TIMI score + DAPT**: TIMI ใช้ใน **ACS** ไม่ใช่ AF; DAPT ไม่ใช่การรักษา cardioembolic risk\n- **Permanent vs paroxysmal**: **ความเสี่ยง stroke ไม่ต่างกันตามรูปแบบ AF** — paroxysmal ก็ต้องให้ OAC ตามคะแนนเหมือนกัน (จุดหลอกที่เจอบ่อย)",
+  "pearl": "**Valvular AF (rheumatic mitral stenosis ระดับ moderate-severe หรือ mechanical valve) ต้องใช้ warfarin ห้ามใช้ DOAC** — ข้อสอบไทยชอบออกเพราะ RHD ยังพบมาก. ระวังความต่างของแนวทาง: **ACC/AHA ใช้เกณฑ์ ≥2 ทั้งสองเพศ** แต่ **ESC ใช้ชาย ≥2 / หญิง ≥3 เป็น class I (ชาย 1 / หญิง 2 = class IIa)** — ถ้าอาจารย์สอนตาม ESC ให้ตอบตามเกณฑ์แยกเพศ",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 8 – Afib ระวัง thromboembolism ต้องประเมินอะไร → CHA2DS2-VASc score",
+   "MED33 MCQ – Management of Atrial fibrillation > Digoxin (คำนวณ CHADS2)",
+   "MED30 MCQ ข้อ 85 – เป็น Mitral stenosis & Atrial fibrillation แล้วเป็น stroke",
+   "MED31 MCQ ข้อ 42 – EKG atrial flutter แล้วเป็น stroke ถามสาเหตุ"
+  ]
+ },
+ {
+  "id": "C-MCQ-19",
+  "lec": "24",
+  "lecture": "Atrial fibrillation (อ.อภิชัย)",
+  "topic": "Rate control in AF with decompensated HFrEF and hypotension",
+  "stem": "A 76-year-old man with known heart failure (LVEF 28%) presents with 3 days of orthopnoea. Vital signs: PR 148/min irregularly irregular, BP 88/60 mmHg, RR 26/min, SpO2 90% on room air. He has JVP 9 cm, bibasilar crepitations and 2+ pedal oedema. ECG shows atrial fibrillation with rapid ventricular response and no pre-excitation. He is alert and not in extremis. Which of the following is the most appropriate drug for ventricular rate control in this patient?",
+  "choices": [
+   "Intravenous verapamil",
+   "Oral flecainide",
+   "Intravenous diltiazem",
+   "Intravenous digoxin",
+   "Intravenous metoprolol"
+  ],
+  "answer": 3,
+  "explain": "กลไก: ผู้ป่วย **decompensated HFrEF + hypotension** cardiac output พึ่ง sympathetic drive อยู่มาก — ยาที่ **กด inotropy (negative inotrope)** จะทำให้ CO ตกและเกิด cardiogenic shock\n\n**Digoxin** เป็นตัวเลือกที่เหมาะในสถานการณ์นี้เพราะ:\n- ออกฤทธิ์ยับยั้ง Na-K ATPase → Na ในเซลล์สูง → ลด Ca efflux ผ่าน Na/Ca exchanger → **Ca ใน cytosol สูง = positive inotrope** (ช่วย หรือน้อยสุดคือ \"ไม่ทำร้าย\" การบีบตัว)\n- ขณะเดียวกันเพิ่ม **vagal tone ที่ AV node** → ชะลอ AV conduction → **คุม rate** ได้\n- จึงเป็นยาไม่กี่ตัวที่ **คุม rate ได้โดยไม่ลด BP**\nข้อจำกัด: onset ช้า (30-60 นาที, peak หลายชั่วโมง), คุม rate ตอนออกแรงได้ไม่ดี, narrow therapeutic index (ระวังใน CKD และ hypokalemia)\n\nทำไมข้ออื่นผิด:\n- **IV metoprolol**: β-blocker เป็นยาหลักใน HFrEF ระยะ **stable/euvolemic** แต่ใน **acute decompensation + SBP 88** การให้ IV BB จะกด contractility → shock (ข้อห้ามชัดเจน)\n- **IV verapamil / IV diltiazem**: non-dihydropyridine CCB เป็น **negative inotrope ชัดเจน** และ **ห้ามใช้ใน HFrEF** โดยเฉพาะขณะ decompensated — เป็นคำตอบลวงที่ดูสมเหตุสมผลเพราะคุม rate เก่ง\n- **Flecainide**: class IC ใช้ rhythm control ใน **structurally normal heart เท่านั้น**; ใน CAD/HF เพิ่ม mortality (CAST trial) และ proarrhythmic; ยังเป็น negative inotrope ด้วย\n\nถ้าผู้ป่วยกลายเป็น **unstable (hypotension รุนแรง, pulmonary edema ที่ไม่ตอบสนอง, ischemia, altered mental status)** → **synchronised cardioversion ทันที** ไม่ต้องรอยา; พิจารณา **IV amiodarone** เป็นทางเลือกเมื่อ digoxin ไม่พอ (แต่ระวัง hypotension จาก vasodilation)",
+  "pearl": "AF + **pre-excitation (WPW)**: **ห้ามให้ digoxin, β-blocker, verapamil/diltiazem, adenosine** เพราะบล็อก AV node ทำให้ impulse ไปลง accessory pathway ทั้งหมด → VF; ให้ **procainamide หรือ cardioversion**",
+  "ref": [
+   "MED33 MCQ ข้อ 14 – Digoxin or warfarin (AF ใช้ Digoxin ส่วน Warfarin ใช้ embolism associated with AF)",
+   "MED33 MCQ ข้อ 104 – ECG เป็น AF ให้ยาอะไร → Digoxin",
+   "MED32 MCQ ข้อ 15 – AF control symptoms : choice asa, warfarin, amiodarone, atenolol",
+   "MED31 OSCE ข้อ 8.3 – ถ้าคนไข้กลับมา sinus rhythm จะต้องรักษาด้วยอะไร (propranolol, digoxin, diltiazem)"
+  ]
+ },
+ {
+  "id": "C-MCQ-20",
+  "lec": "24",
+  "lecture": "Atrial fibrillation (อ.อภิชัย) / Arrhythmia (อ.สุรชาติ)",
+  "topic": "Unstable tachyarrhythmia – synchronised cardioversion",
+  "stem": "A 59-year-old man presents with palpitations and dizziness. Vital signs: PR 186/min, BP 74/46 mmHg, RR 28/min. He is diaphoretic, confused and has cool extremities. ECG shows a regular monomorphic wide-complex tachycardia at 186/min. A carotid pulse is palpable. Which of the following is the most appropriate immediate management?",
+  "choices": [
+   "Unsynchronised defibrillation at 200 joules",
+   "Intravenous adenosine 6 mg rapid push",
+   "Synchronised cardioversion after sedation",
+   "Begin chest compressions and give intravenous adrenaline 1 mg",
+   "Intravenous amiodarone 150 mg over 10 minutes"
+  ],
+  "answer": 2,
+  "explain": "กลไก/หลักการ: tachyarrhythmia ที่ **มี pulse แต่ unstable** → **synchronised cardioversion** ทันที\nนิยาม \"unstable\" (จำให้ได้ 4 ข้อ): **hypotension/shock, altered mental status, ischemic chest pain, acute heart failure** — โจทย์มี hypotension + confusion + hypoperfusion ครบ\n\nทำไมต้อง **synchronised**: เครื่องจะปล่อยพลังงาน **ตรงกับ R wave** เพื่อหลีกเลี่ยงการ shock ลงบน **T wave (vulnerable period)** ซึ่งจะเหนี่ยวนำ **VF** ได้ — ในผู้ป่วยที่ยังมี organized QRS และคลำ pulse ได้ จึงต้อง sync\n\nWide-complex tachycardia ที่ regular monomorphic ในผู้ใหญ่มี structural heart disease ให้ **ถือว่าเป็น VT จนพิสูจน์ว่าไม่ใช่**\n\nทำไมข้ออื่นผิด:\n- **Unsynchronised defibrillation**: ใช้กับ **pulseless VT และ VF** (และ polymorphic VT/torsades ที่ sync ไม่ได้) — ผู้ป่วยนี้ยังคลำ pulse ได้ การ shock แบบไม่ sync เสี่ยงตกบน T wave → VF\n- **Adenosine**: ใช้กับ **regular narrow-complex** SVT ที่ stable; ใน wide-complex ที่เป็น VT จริงจะไม่ได้ผลและอาจทำให้แย่ลง (hypotension, เร่ง conduction ถ้าเป็น pre-excited AF) — ห้ามใช้ในผู้ป่วย unstable\n- **IV amiodarone**: เป็นทางเลือกของ **stable** monomorphic VT (หรือหลัง cardioversion เพื่อกันกลับเป็นซ้ำ) — onset ช้าเกินไปสำหรับคนที่ shock อยู่ และตัวยาเองทำให้ hypotension\n- **CPR + adrenaline**: ทำเมื่อ **pulseless** — ผู้ป่วยนี้ยังคลำ pulse ได้และรู้สึกตัว การกดหน้าอกจะเป็นอันตราย",
+  "pearl": "ตาราง 3 สถานการณ์: **มี pulse + stable** → ยา; **มี pulse + unstable** → synchronised cardioversion; **ไม่มี pulse** → unsynchronised defibrillation + CPR. Pulseless VT/VF = **defibrillation ทันทีเป็นสิ่งสำคัญที่สุด**",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 7 – คนไข้ unstable VT → cardioversion",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 46 – Monomorphic VT → cardioversion",
+   "MED31 past paper – In the ICU a patient suddenly becomes pulseless with VT. What is the best first therapy?",
+   "MED30 SAQ ข้อ 10 – EKG + VT + คลำ pulse ไม่ได้ → asynchronous cardioversion 200 J",
+   "MED31 โพย – Pulseless VT ใช้ asynchronous cardioversion"
+  ]
+ }
+]

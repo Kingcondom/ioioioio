@@ -1,35 +1,252 @@
 {
-  "course": "MED421 — Internal Medicine Exam Kit",
-  "institution": "MED35",
-  "academic_year": "2569",
-  "build": {
-    "out_dir": "site",
-    "pdf": true,
-    "nl_reference_file": "refs/nl_2567.json"
+  "_readme": "แก้ไฟล์นี้อย่างเดียวเมื่อเพิ่มระบบใหม่ แล้วสั่ง `python3 build.py` — ไม่ต้องแตะโค้ด",
+  "shuffle_seed": 20260913,
+  "site": {
+    "title": "MED421 Ward Drill",
+    "subtitle": "Cardio · Nephro · Chest · AIR — ข้อสอบใหม่ 210 ข้อ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ทุกข้อมี 5 ตัวเลือกที่มีเหตุผลรองรับ แต่ถูกเพียงข้อเดียว · ชุด AIR ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
   },
-  "systems": [
+  "lectures": {
+    "03": {
+      "date": "อ. 15 ก.ย.",
+      "week": 1,
+      "al": 0
+    },
+    "04": {
+      "date": "อ. 15 ก.ย.",
+      "week": 1,
+      "al": 0
+    },
+    "05": {
+      "date": "พฤ. 17 ก.ย.",
+      "week": 1,
+      "al": 0
+    },
+    "08": {
+      "date": "TBD — แก้ใน config.lectures",
+      "week": 1,
+      "al": 0
+    },
+    "10": {
+      "date": "อ. 22 ก.ย.",
+      "week": 2,
+      "al": 1
+    },
+    "13": {
+      "date": "พฤ. 24 ก.ย.",
+      "week": 2,
+      "al": 1
+    },
+    "14": {
+      "date": "พฤ. 24 ก.ย.",
+      "week": 2,
+      "al": 0
+    },
+    "17": {
+      "date": "จ. 28 ก.ย.",
+      "week": 3,
+      "al": 0
+    },
+    "19": {
+      "date": "พ. 30 ก.ย.",
+      "week": 3,
+      "al": 0
+    },
+    "21": {
+      "date": "พฤ. 1 ต.ค.",
+      "week": 3,
+      "al": 0
+    },
+    "22": {
+      "date": "พฤ. 1 ต.ค.",
+      "week": 3,
+      "al": 0
+    },
+    "23": {
+      "date": "TBD — แก้ใน config.lectures",
+      "week": 3,
+      "al": 0
+    },
+    "24": {
+      "date": "จ. 5 ต.ค.",
+      "week": 4,
+      "al": 0
+    },
+    "26": {
+      "date": "อ. 6 ต.ค.",
+      "week": 4,
+      "al": 0
+    },
+    "27": {
+      "date": "อ. 6 ต.ค.",
+      "week": 4,
+      "al": 0
+    },
+    "28": {
+      "date": "พฤ. 8 ต.ค.",
+      "week": 4,
+      "al": 0
+    },
+    "30": {
+      "date": "ศ. 9 ต.ค.",
+      "week": 4,
+      "al": 0
+    },
+    "33": {
+      "date": "TBD — แก้ใน config.lectures",
+      "week": 5,
+      "al": 0
+    },
+    "36": {
+      "date": "จ. 19 ต.ค.",
+      "week": 6,
+      "al": 1
+    },
+    "37": {
+      "date": "อ. 20 ต.ค.",
+      "week": 6,
+      "al": 1
+    },
+    "39": {
+      "date": "จ. 26 ต.ค.",
+      "week": 7,
+      "al": 0
+    },
+    "42": {
+      "date": "ศ. 30 ต.ค.",
+      "week": 7,
+      "al": 0
+    }
+  },
+  "sets": [
+    {
+      "key": "cardio",
+      "label": "Cardio",
+      "thai": "ระบบหัวใจและหลอดเลือด",
+      "blurb": "7 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น",
+      "accent": {
+        "light": "#8c1d2f",
+        "soft": "#f6e9eb",
+        "ink": "#6e1624",
+        "dark": "#e0697a",
+        "darkSoft": "#2c1a1f",
+        "darkInk": "#f0a3ae"
+      },
+      "lecture_order": [
+        "04",
+        "10",
+        "13",
+        "24",
+        "27",
+        "36",
+        "39"
+      ],
+      "mcq": [
+        "data/cardio_mcq_a.json",
+        "data/cardio_mcq_b.json"
+      ],
+      "meq": [
+        "data/cardio_meq_osce.json"
+      ],
+      "old": [
+        "data/cardio_old.json"
+      ]
+    },
+    {
+      "key": "nephro",
+      "label": "Nephro",
+      "thai": "ระบบไตและสมดุลเกลือแร่",
+      "blurb": "7 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น",
+      "accent": {
+        "light": "#14585f",
+        "soft": "#e4eef0",
+        "ink": "#0f464b",
+        "dark": "#58b3b8",
+        "darkSoft": "#10262a",
+        "darkInk": "#8ad2d6"
+      },
+      "lecture_order": [
+        "05",
+        "14",
+        "19",
+        "22",
+        "28",
+        "30",
+        "42"
+      ],
+      "mcq": [
+        "data/nephro_mcq_a.json",
+        "data/nephro_mcq_b.json"
+      ],
+      "meq": [
+        "data/nephro_meq_osce.json"
+      ],
+      "old": [
+        "data/nephro_old.json"
+      ]
+    },
+    {
+      "key": "chest",
+      "label": "Chest",
+      "thai": "ระบบการหายใจและทรวงอก",
+      "blurb": "5 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD",
+      "accent": {
+        "light": "#4a5a86",
+        "soft": "#e6e9f2",
+        "ink": "#38456b",
+        "dark": "#9aaad8",
+        "darkSoft": "#171c2b",
+        "darkInk": "#b6c2e6"
+      },
+      "lecture_order": [
+        "03",
+        "17",
+        "21",
+        "26",
+        "37"
+      ],
+      "mcq": [
+        "data/chest_mcq_a.json",
+        "data/chest_mcq_b.json"
+      ],
+      "meq": [
+        "data/chest_meq_osce.json"
+      ],
+      "old": [
+        "data/chest_old_a.json",
+        "data/chest_old_b.json",
+        "data/chest_old_c.json"
+      ]
+    },
     {
       "key": "air",
-      "name_th": "ระบบการหายใจ",
-      "name_en": "AIR — Airway & Respiratory System",
-      "file": "data/air.json",
-      "color": "#0ea5a4",
-      "color_dark": "#0b7c7b",
-      "seed": 4210,
-      "lectures": [
-        { "lec": "AIR-01", "title": "Approach to dyspnea, cough and hemoptysis", "date": "" },
-        { "lec": "AIR-02", "title": "Pulmonary function test & spirometry interpretation", "date": "" },
-        { "lec": "AIR-03", "title": "Asthma", "date": "" },
-        { "lec": "AIR-04", "title": "COPD", "date": "" },
-        { "lec": "AIR-05", "title": "Pneumonia & lung abscess", "date": "" },
-        { "lec": "AIR-06", "title": "Tuberculosis", "date": "" },
-        { "lec": "AIR-07", "title": "Pleural diseases: effusion, empyema, pneumothorax", "date": "" },
-        { "lec": "AIR-08", "title": "Bronchiectasis & chronic airway infection", "date": "" },
-        { "lec": "AIR-09", "title": "Respiratory failure, ABG & ARDS", "date": "" },
-        { "lec": "AIR-10", "title": "Pulmonary embolism & pulmonary hypertension", "date": "" },
-        { "lec": "AIR-11", "title": "Lung cancer & solitary pulmonary nodule", "date": "" },
-        { "lec": "AIR-12", "title": "Upper airway: rhinitis, URI, OSA", "date": "" }
+      "label": "AIR",
+      "thai": "ภูมิแพ้ ภูมิคุ้มกัน และโรคข้อรูมาติก",
+      "blurb": "3 คาบบรรยาย · Allergy/Immunology/Rheumatology — แพ้ยา anaphylaxis · gout/CPPD/septic arthritis · SLE RA vasculitis myositis",
+      "accent": {
+        "light": "#8a5a12",
+        "soft": "#f4ecdd",
+        "ink": "#6d460c",
+        "dark": "#d9ab63",
+        "darkSoft": "#241d12",
+        "darkInk": "#ecc98f"
+      },
+      "lecture_order": [
+        "08",
+        "23",
+        "33"
+      ],
+      "mcq": [
+        "data/air_mcq_a.json",
+        "data/air_mcq_b.json"
+      ],
+      "meq": [
+        "data/air_meq_osce.json"
+      ],
+      "old": [
+        "data/air_old_a.json",
+        "data/air_old_b.json"
       ]
     }
-  ]
+  ],
+  "nl_reference_file": "refs/nl_2567.json"
 }

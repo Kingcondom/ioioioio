@@ -1,0 +1,648 @@
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+Thai:wght@500;600;700&display=swap">
+<style>
+:root{
+  --paper:#f6f7f9;
+  --surface:#ffffff;
+  --surface-sunk:#eef1f5;
+  --ink:#121a22;
+  --ink-2:#3f4b58;
+  --ink-3:#6b7886;
+  --rule:#dde3ea;
+  --rule-strong:#c3ccd6;
+  --accent:#8c1d2f;
+  --accent-soft:#f6e9eb;
+  --accent-ink:#6e1624;
+  --ok:#136c45;
+  --ok-soft:#e6f1eb;
+  --miss:#8a5608;
+  --miss-soft:#f7efdf;
+  --focus:#1f6feb;
+  --shadow:0 1px 2px rgba(18,26,34,.06),0 8px 24px -16px rgba(18,26,34,.28);
+  --serif:"Noto Serif Thai",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans Thai","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+__SETCSS_LIGHT__
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1319; --surface:#161d25; --surface-sunk:#1d262f;
+    --ink:#e9edf2; --ink-2:#b3bec9; --ink-3:#838f9d;
+    --rule:#27313b; --rule-strong:#3a4651;
+    --accent:#e0697a; --accent-soft:#2c1a1f; --accent-ink:#f0a3ae;
+    --ok:#5ec08f; --ok-soft:#15251d; --miss:#d9a84b; --miss-soft:#262015;
+    --focus:#6aa3ff;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 28px -18px rgba(0,0,0,.9);
+  }
+__SETCSS_AUTODARK__
+}
+:root[data-theme="dark"]{
+  --paper:#0e1319; --surface:#161d25; --surface-sunk:#1d262f;
+  --ink:#e9edf2; --ink-2:#b3bec9; --ink-3:#838f9d;
+  --rule:#27313b; --rule-strong:#3a4651;
+  --accent:#e0697a; --accent-soft:#2c1a1f; --accent-ink:#f0a3ae;
+  --ok:#5ec08f; --ok-soft:#15251d; --miss:#d9a84b; --miss-soft:#262015;
+  --focus:#6aa3ff;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 28px -18px rgba(0,0,0,.9);
+}
+__SETCSS_DARK__
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-wrap:break-word;word-break:break-word}
+h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- masthead ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.mast{border-bottom:1px solid var(--rule);background:var(--surface)}
+.mast-in{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;padding-block:22px 16px}
+.brand{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:baseline;min-width:0;flex:1 1 320px}
+.brand>div{min-width:0;flex:1 1 260px}
+.brand-mark{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:3px 6px;white-space:nowrap}
+.brand h1{font-size:clamp(21px,3.4vw,29px);letter-spacing:-.01em;line-height:1.15}
+.brand p{margin:4px 0 0;color:var(--ink-3);font-size:13px;max-width:52ch}
+.scoreboard{display:flex;gap:22px;align-items:flex-end;font-variant-numeric:tabular-nums}
+.sc{text-align:right}
+.sc b{display:block;font-family:var(--mono);font-size:25px;font-weight:600;line-height:1;letter-spacing:-.02em}
+.sc span{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.sc.acc b{color:var(--accent)}
+
+/* ---------- tab strips ---------- */
+.strip{display:flex;gap:2px;border-bottom:1px solid var(--rule);background:var(--surface);overflow-x:auto;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip-in{display:flex;gap:2px;min-width:max-content}
+.tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;color:var(--ink-3);font:inherit;font-size:14px;font-weight:500;padding:11px 15px;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tab .n{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-inline-start:7px}
+.tab[aria-selected="true"] .n{color:var(--accent)}
+
+/* ---------- shell ---------- */
+.shell{display:grid;grid-template-columns:268px minmax(0,1fr);gap:34px;padding-block:28px 60px;align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:1fr;gap:20px} .shell>*{min-width:0} }
+
+/* ---------- rail ---------- */
+.rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.rail>*{min-width:0}
+@media (max-width:900px){ .rail{position:static} }
+.rail h2{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
+.lecs{display:flex;flex-direction:column;gap:1px}
+@media (max-width:900px){ .lecs{flex-direction:row;overflow-x:auto;gap:7px;padding-bottom:6px;max-width:100%} .lecs::-webkit-scrollbar{height:0} }
+.lec{display:grid;grid-template-columns:auto 1fr auto;gap:9px;align-items:baseline;text-align:start;appearance:none;background:none;border:0;border-inline-start:2px solid transparent;color:var(--ink-2);font:inherit;font-size:13.5px;padding:6px 8px;cursor:pointer;border-radius:0 3px 3px 0}
+@media (max-width:900px){ .lec{border:1px solid var(--rule);border-radius:999px;white-space:nowrap;padding:5px 12px;grid-template-columns:auto auto auto} }
+.lec:hover{background:var(--surface-sunk);color:var(--ink)}
+.lec[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-ink);border-inline-start-color:var(--accent);font-weight:600}
+.lec .slot{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.lec[aria-pressed="true"] .slot{color:var(--accent)}
+.lec .ct{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.lec .nm{line-height:1.35}
+.parts{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;padding:4px 11px;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
+.railacts{display:flex;flex-wrap:wrap;gap:8px}
+.ghost{appearance:none;border:1px solid var(--rule-strong);background:none;color:var(--ink-2);font:inherit;font-size:12.5px;padding:5px 11px;border-radius:3px;cursor:pointer}
+.ghost:hover{color:var(--ink);border-color:var(--ink-3)}
+.railnote{font-size:12px;color:var(--ink-3);line-height:1.55;border-top:1px solid var(--rule);padding-top:14px}
+.railnote b{color:var(--ink-2);font-weight:600}
+
+/* ---------- item stream ---------- */
+.stream{display:flex;flex-direction:column;gap:0;min-width:0}
+.part-head{display:flex;align-items:baseline;gap:12px;padding:26px 0 10px;border-bottom:2px solid var(--ink)}
+.part-head:first-child{padding-top:0}
+.part-head h2{font-size:19px}
+.part-head .meta{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-inline-start:auto}
+.item{border-bottom:1px solid var(--rule);padding:22px 0 24px;min-width:0}
+.ihead{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:11px}
+.qno{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:2px 7px;border-radius:2px}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--rule-strong);padding:2px 7px;border-radius:2px;white-space:nowrap}
+.tag.al{color:var(--miss);border-color:var(--miss)}
+.topic{font-family:var(--serif);font-size:16.5px;font-weight:600;line-height:1.4;margin:0 0 9px}
+.lecline{font-size:12.5px;color:var(--ink-3);margin:0 0 14px}
+.stem{margin:0 0 15px;max-width:68ch}
+.stem em{font-style:normal;background:var(--surface-sunk);padding:0 3px}
+
+.choices{display:flex;flex-direction:column;gap:7px;max-width:72ch}
+.choice{display:grid;grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:start;appearance:none;text-align:start;background:var(--surface);border:1px solid var(--rule);color:var(--ink);font:inherit;padding:11px 13px;border-radius:4px;cursor:pointer;transition:border-color .12s,background .12s}
+.choice:hover:not([disabled]){border-color:var(--ink-3)}
+.choice .ltr{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--ink-3);border:1px solid var(--rule-strong);border-radius:3px;text-align:center;line-height:22px;height:23px}
+.choice[disabled]{cursor:default}
+.choice.is-ok{border-color:var(--ok);background:var(--ok-soft)}
+.choice.is-ok .ltr{background:var(--ok);border-color:var(--ok);color:#fff}
+.choice.is-miss{border-color:var(--miss);background:var(--miss-soft)}
+.choice.is-miss .ltr{background:var(--miss);border-color:var(--miss);color:#fff}
+.choice.is-dim{opacity:.55}
+.verdict{display:flex;align-items:center;gap:9px;margin:15px 0 0;font-size:13.5px;font-weight:600}
+.verdict .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.verdict.ok{color:var(--ok)} .verdict.ok .dot{background:var(--ok)}
+.verdict.miss{color:var(--miss)} .verdict.miss .dot{background:var(--miss)}
+
+.panel{margin-top:14px;border-inline-start:2px solid var(--accent);background:var(--surface-sunk);padding:15px 17px;border-radius:0 4px 4px 0;max-width:74ch}
+.panel h4{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.panel h4+*{margin-top:0}
+.panel .pearl{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule-strong)}
+.panel .refs{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule-strong)}
+.refs ul{margin:0;padding-inline-start:18px}
+.refs li{font-size:12.5px;color:var(--ink-3);margin-bottom:3px}
+.nlrefs{margin-top:14px;padding-top:13px;border-top:1px dashed var(--rule-strong)}
+.nlchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+.nlchip{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;border:1px solid var(--accent);
+  color:var(--accent);border-radius:3px;padding:1px 6px;white-space:nowrap}
+.nllist{margin:0;padding:0;list-style:none}
+.nllist li{font-size:12.5px;color:var(--ink-3);margin-bottom:4px;line-height:1.5}
+.nllist b{font-family:var(--mono);font-weight:600;color:var(--ink)}
+.nllist i{font-style:normal;color:var(--accent)}
+.md p{margin:0 0 9px} .md p:last-child{margin-bottom:0}
+.md ul,.md ol{margin:0 0 9px;padding-inline-start:20px}
+.md li{margin-bottom:4px}
+.md strong{font-weight:600;color:var(--ink)}
+.md code{font-family:var(--mono);font-size:.88em;background:var(--surface);border:1px solid var(--rule);padding:0 4px;border-radius:2px}
+.tablewrap{overflow-x:auto;margin:0 0 10px}
+.md table{border-collapse:collapse;font-size:13px;min-width:100%}
+.md th,.md td{border:1px solid var(--rule-strong);padding:5px 9px;text-align:start;vertical-align:top}
+.md th{background:var(--surface);font-weight:600;white-space:nowrap}
+
+/* MEQ / OSCE */
+.vign{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:15px 17px;margin:0 0 16px;font-size:14.5px;white-space:pre-wrap;max-width:74ch}
+.vign strong{font-weight:600}
+.subq{border-top:1px solid var(--rule);padding:13px 0 3px}
+.subq:first-of-type{border-top:2px solid var(--rule-strong)}
+.subq .qtext{font-weight:600;margin:0 0 9px;max-width:70ch}
+.reveal{appearance:none;border:1px dashed var(--rule-strong);background:none;color:var(--accent-ink);font:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:3px;cursor:pointer}
+.reveal:hover{border-style:solid;border-color:var(--accent)}
+.station{font-family:var(--mono);font-size:11.5px;color:var(--miss);margin:0 0 11px}
+
+/* old bank */
+.oldgrp{border-bottom:1px solid var(--rule);padding:24px 0}
+.oldgrp > h3{font-size:18px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+.oldnote{font-size:12.5px;color:var(--ink-3);margin:7px 0 16px;max-width:70ch}
+.oldnote.wide{margin:-6px 0 18px;padding:9px 12px;border-left:2px solid var(--accent);background:var(--accent-soft);color:var(--accent-ink);border-radius:0 4px 4px 0}
+.tag.old{color:var(--accent-ink);border-color:var(--accent)}
+.olditem-mcq{border-top:1px dotted var(--rule-strong);padding-top:18px}
+.olditem{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;padding:11px 0;border-top:1px dotted var(--rule-strong);align-items:start}
+.olditem .pt{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding-top:3px}
+.olditem .q{margin:0 0 5px}
+.olditem .a{margin:0;font-size:13.5px;color:var(--ok);font-weight:500}
+.olditem .a::before{content:"→ ";opacity:.6}
+.olditem .src{margin:5px 0 0;font-family:var(--mono);font-size:11px;color:var(--ink-3);line-height:1.5}
+.empty{padding:60px 0;text-align:center;color:var(--ink-3)}
+.foot{border-top:1px solid var(--rule);padding-block:22px 44px;font-size:12.5px;color:var(--ink-3);line-height:1.65}
+.foot b{color:var(--ink-2)}
+
+@media print{
+  .strip,.rail,.mast .scoreboard,.reveal,.foot{display:none!important}
+  .shell{display:block}
+  body{background:#fff;font-size:11pt}
+  .item,.oldgrp{break-inside:avoid}
+  .panel,.subq .ans{display:block!important}
+}
+</style>
+
+<header class="mast">
+  <div class="wrap mast-in">
+    <div class="brand">
+      <span class="brand-mark">MED 421/422</span>
+      <div>
+        <h1>__TITLE__</h1>
+        <p>__SUBTITLE__</p>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="sc"><b id="sc-done">0</b><span>ทำแล้ว</span></div>
+      <div class="sc"><b id="sc-right">0</b><span>ถูก</span></div>
+      <div class="sc acc"><b id="sc-acc">—</b><span>ความแม่น</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="strip" aria-label="ระบบอวัยวะ"><div class="wrap strip-in" id="setbar"></div></nav>
+<nav class="strip" aria-label="โหมด"><div class="wrap strip-in" id="modebar"></div></nav>
+
+<div class="wrap shell">
+  <aside class="rail">
+    <div>
+      <h2>Lecture</h2>
+      <div class="lecs" id="lecbar"></div>
+    </div>
+    <div id="partblock">
+      <h2>Part</h2>
+      <div class="parts" id="partbar"></div>
+    </div>
+    <div class="railacts">
+      <button class="ghost" id="btn-reveal" type="button">เฉลยทั้งหมด</button>
+      <button class="ghost" id="btn-reset" type="button">เริ่มใหม่</button>
+      <button class="ghost" id="btn-print" type="button">พิมพ์</button>
+    </div>
+    <p class="railnote" id="railnote"></p>
+  </aside>
+  <main class="stream" id="stream" aria-live="polite"></main>
+</div>
+
+<footer class="wrap foot">
+  <p><b>ที่มาของข้อสอบ</b> — ทุกข้อใหม่มีบรรทัด <b>Ref</b> ระบุข้อสอบเก่าที่ใช้เป็นต้นแบบ (รุ่น / ครั้งที่สอบ / loop / เลขข้อ) สกัดจากโพยใหญ่ MED (MED28–MED34) และโพย MED35 ของปีนี้<br>
+  <b>ข้อควรระวัง</b> — คำเฉลยในโพยเก่าบางข้อไม่ถูกต้องตามแนวทางปัจจุบัน จุดที่ต่างถูกทำเครื่องหมายไว้ในคำอธิบาย (เช่น N-MCQ-37 contrast-associated AKI ที่โพยตอบ NAC) ใช้ประกอบการทบทวน ไม่ใช่แทนตำราหรือแนวทางเวชปฏิบัติ</p>
+</footer>
+
+<script type="application/json" id="bank">__DATA__</script>
+<script>
+(function(){
+"use strict";
+var BANK = JSON.parse(document.getElementById('bank').textContent);
+var LEC = __LEC__;
+var SETS=__SETS__;
+var NL  = __NL__;
+var MODES=[{k:"new",label:"ข้อสอบใหม่"},{k:"old",label:"คลังข้อสอบเก่า"}];
+var PARTS=[{k:"MCQ",label:"MCQ"},{k:"MEQ",label:"MEQ"},{k:"OSCE/SAQ",label:"OSCE / SAQ"}];
+
+var state={set:"cardio",mode:"new",lec:"all",part:"all",answers:{},shown:{}};
+try{var raw=localStorage.getItem("med421-drill-v1");if(raw){var s=JSON.parse(raw);
+  if(s&&typeof s==="object"){state.answers=s.answers||{};state.shown=s.shown||{};
+    if(s.set)state.set=s.set; if(s.mode)state.mode=s.mode;}}}catch(e){}
+function save(){try{localStorage.setItem("med421-drill-v1",JSON.stringify(
+  {answers:state.answers,shown:state.shown,set:state.set,mode:state.mode}));}catch(e){}}
+
+/* ---------- tiny markdown ---------- */
+function esc(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function inline(t){
+  return esc(t)
+    .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+    .replace(/`([^`]+)`/g,"<code>$1</code>")
+    .replace(/\*([^*\n]+)\*/g,"<em>$1</em>");
+}
+function md(src){
+  var lines=String(src).split("\n"),out=[],i=0;
+  function flushTable(){
+    var rows=[];
+    while(i<lines.length && /^\s*\|/.test(lines[i])){rows.push(lines[i]);i++;}
+    if(!rows.length)return;
+    var cells=rows.map(function(r){
+      return r.trim().replace(/^\|/,"").replace(/\|$/,"").split("|").map(function(c){return c.trim();});
+    });
+    var hasSep=cells.length>1 && cells[1].every(function(c){return /^:?-{2,}:?$/.test(c);});
+    var head=cells[0],body=hasSep?cells.slice(2):cells.slice(1);
+    var h="<div class='tablewrap'><table><thead><tr>"+head.map(function(c){return "<th>"+inline(c)+"</th>";}).join("")+"</tr></thead><tbody>";
+    body.forEach(function(r){h+="<tr>"+r.map(function(c){return "<td>"+inline(c)+"</td>";}).join("")+"</tr>";});
+    out.push(h+"</tbody></table></div>");
+  }
+  function flushList(ordered){
+    var tag=ordered?"ol":"ul",items=[];
+    while(i<lines.length){
+      var m=ordered?lines[i].match(/^\s*\d+[.)]\s+(.*)$/):lines[i].match(/^\s*[-•]\s+(.*)$/);
+      if(!m)break;
+      var txt=m[1];i++;
+      while(i<lines.length && /^\s{2,}\S/.test(lines[i]) && !/^\s*[-•]\s/.test(lines[i]) && !/^\s*\d+[.)]\s/.test(lines[i]) && !/^\s*\|/.test(lines[i])){
+        txt+=" "+lines[i].trim();i++;
+      }
+      items.push("<li>"+inline(txt)+"</li>");
+    }
+    out.push("<"+tag+">"+items.join("")+"</"+tag+">");
+  }
+  var para=[];
+  function flushPara(){if(para.length){out.push("<p>"+para.map(inline).join("<br>")+"</p>");para=[];}}
+  while(i<lines.length){
+    var L=lines[i];
+    if(/^\s*\|/.test(L)){flushPara();flushTable();continue;}
+    if(/^\s*[-•]\s+/.test(L)){flushPara();flushList(false);continue;}
+    if(/^\s*\d+[.)]\s+/.test(L)){flushPara();flushList(true);continue;}
+    if(!L.trim()){flushPara();i++;continue;}
+    para.push(L.trim());i++;
+  }
+  flushPara();
+  return out.join("");
+}
+
+/* ---------- data access ---------- */
+function newItems(set){return BANK[set].mcq.concat(BANK[set].meq);}
+function partOf(it){return it.part||"MCQ";}
+function filtered(){
+  var items=newItems(state.set);
+  return items.filter(function(it){
+    if(state.lec!=="all"&&it.lec!==state.lec)return false;
+    if(state.part!=="all"&&partOf(it)!==state.part)return false;
+    return true;
+  });
+}
+function lecList(){
+  var seen=[],map={};
+  newItems(state.set).forEach(function(it){
+    if(!map[it.lec]){map[it.lec]={lec:it.lec,name:it.lecture,n:0};seen.push(map[it.lec]);}
+    map[it.lec].n++;
+  });
+  seen.sort(function(a,b){return Number(a.lec)-Number(b.lec);});
+  return seen;
+}
+function shortName(full){return String(full).replace(/\s*\(.*$/,"").replace(/\s*\(AL\)/,"");}
+function teacher(full){var m=String(full).match(/\(([^)]*อ\.[^)]*)\)/);return m?m[1]:"";}
+
+/* ---------- chrome ---------- */
+function buildStrip(el,opts,cur,onPick,counts){
+  el.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button";b.className="tab";b.setAttribute("role","tab");
+    b.setAttribute("aria-selected",String(o.k===cur));
+    b.innerHTML=esc(o.label)+(counts&&counts[o.k]!=null?"<span class='n'>"+counts[o.k]+"</span>":"");
+    b.addEventListener("click",function(){onPick(o.k);});
+    el.appendChild(b);
+  });
+}
+function buildLecs(){
+  var el=document.getElementById("lecbar");el.innerHTML="";
+  var all=document.createElement("button");
+  all.type="button";all.className="lec";all.setAttribute("aria-pressed",String(state.lec==="all"));
+  all.innerHTML="<span class='slot'>ทั้ง</span><span class='nm'>ทุกหัวข้อ</span><span class='ct'>"+newItems(state.set).length+"</span>";
+  all.addEventListener("click",function(){state.lec="all";render();});
+  el.appendChild(all);
+  lecList().forEach(function(L){
+    var b=document.createElement("button");
+    b.type="button";b.className="lec";b.setAttribute("aria-pressed",String(state.lec===L.lec));
+    b.innerHTML="<span class='slot'>"+esc(L.lec)+"</span><span class='nm'>"+esc(shortName(L.name))+"</span><span class='ct'>"+L.n+"</span>";
+    b.addEventListener("click",function(){state.lec=L.lec;render();});
+    el.appendChild(b);
+  });
+}
+function buildParts(){
+  var el=document.getElementById("partbar");el.innerHTML="";
+  var opts=[{k:"all",label:"ทั้งหมด"}].concat(PARTS);
+  opts.forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button";b.className="chip";b.setAttribute("aria-pressed",String(state.part===o.k));
+    b.textContent=o.label;
+    b.addEventListener("click",function(){state.part=o.k;render();});
+    el.appendChild(b);
+  });
+}
+function updateScore(){
+  var ids={},items=newItems(state.set);
+  items.forEach(function(it){ids[it.id]=1;});
+  var done=0,right=0;
+  Object.keys(state.answers).forEach(function(k){
+    if(!ids[k])return;done++;
+    if(state.answers[k].ok)right++;
+  });
+  document.getElementById("sc-done").textContent=done;
+  document.getElementById("sc-right").textContent=right;
+  document.getElementById("sc-acc").textContent=done?Math.round(right/done*100)+"%":"—";
+  var mcqN=BANK[state.set].mcq.length;
+  document.getElementById("railnote").innerHTML=
+    "<b>ชุดนี้</b> MCQ "+mcqN+" ข้อ · MEQ "+BANK[state.set].meq.filter(function(x){return x.part==="MEQ";}).length+
+    " ชุด · OSCE/SAQ "+BANK[state.set].meq.filter(function(x){return x.part!=="MEQ";}).length+" สถานี<br>"+
+    "<b>ข้อสอบเก่าที่ใช้อ้างอิง</b> "+BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)+" ข้อ จาก MED28–MED35<br>"+
+    "กด <b>1–5</b> เพื่อตอบข้อที่เห็นอยู่บนจอ · ความคืบหน้าถูกเก็บไว้ในเบราว์เซอร์นี้";
+}
+
+/* ---------- render: new items ---------- */
+function renderMCQ(it,idx){
+  var sec=document.createElement("article");sec.className="item";sec.id="it-"+it.id;
+  var meta=LEC[it.lec]||{};
+  var ans=state.answers[it.id];
+  var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
+    "<span class='tag'>Lec "+esc(it.lec)+" · "+esc(meta.d||"")+"</span>"+
+    (meta.al?"<span class='tag al'>Active learning</span>":"")+
+    "<span class='tag'>สัปดาห์ "+esc(String(meta.w||"-"))+"</span></div>";
+  h+="<h3 class='topic'>"+esc(it.topic)+"</h3>";
+  h+="<p class='lecline'>"+esc(shortName(it.lecture))+(teacher(it.lecture)?" · "+esc(teacher(it.lecture)):"")+"</p>";
+  h+="<p class='stem'>"+inline(it.stem)+"</p>";
+  sec.innerHTML=h;
+  var wrap=document.createElement("div");wrap.className="choices";
+  it.choices.forEach(function(c,ci){
+    var b=document.createElement("button");
+    b.type="button";b.className="choice";
+    b.innerHTML="<span class='ltr'>"+"ABCDE"[ci]+"</span><span>"+inline(c)+"</span>";
+    if(ans){
+      b.disabled=true;
+      if(ci===it.answer)b.classList.add("is-ok");
+      else if(ci===ans.pick)b.classList.add("is-miss");
+      else b.classList.add("is-dim");
+    }else{
+      b.addEventListener("click",function(){
+        state.answers[it.id]={pick:ci,ok:ci===it.answer};save();render();
+        var n=document.getElementById("it-"+it.id);if(n)n.scrollIntoView({block:"nearest"});
+      });
+    }
+    wrap.appendChild(b);
+  });
+  sec.appendChild(wrap);
+  if(ans){
+    var v=document.createElement("p");
+    v.className="verdict "+(ans.ok?"ok":"miss");
+    v.innerHTML="<span class='dot'></span>"+(ans.ok?"ถูกต้อง":"ยังไม่ใช่ — คำตอบคือข้อ "+"ABCDE"[it.answer]);
+    sec.appendChild(v);
+    var p=document.createElement("div");p.className="panel";
+    p.innerHTML="<h4>กลไกและการตัดช้อยส์</h4><div class='md'>"+md(it.explain)+"</div>"+
+      (it.pearl?"<div class='pearl'><h4>High-yield pearl</h4><div class='md'>"+md(it.pearl)+"</div></div>":"")+
+      "<div class='refs'><h4>Ref — ข้อสอบเก่าที่เป็นต้นแบบ</h4><ul>"+
+      (it.ref||[]).map(function(r){return "<li>"+inline(r)+"</li>";}).join("")+"</ul></div>"+
+      nlBlock(it);
+    sec.appendChild(p);
+  }
+  return sec;
+}
+function nlBlock(it){
+  if(!it.nl||!it.nl.length)return "";
+  var chips=it.nl.map(function(c){return "<span class='nlchip'>NL "+esc(c)+"</span>";}).join("");
+  var lis=it.nl.map(function(c){
+    var e=NL[c];
+    if(!e)return "<li><b>NL "+esc(c)+"</b> — ไม่พบในดัชนีอ้างอิง</li>";
+    return "<li><b>NL "+esc(c)+"</b> "+esc(e.title)+
+      (e.group?" <i>(กลุ่มที่ "+esc(e.group)+")</i>":"")+
+      "<br>"+esc(e.section)+(e.page?" · หน้า "+esc(String(e.page)):"")+"</li>";
+  }).join("");
+  return "<div class='nlrefs'><h4>เกณฑ์แพทยสภา พ.ศ. 2567 (NL)</h4>"+
+    "<div class='nlchips'>"+chips+"</div><ul class='nllist'>"+lis+"</ul></div>";
+}
+function renderLong(it){
+  var sec=document.createElement("article");sec.className="item";sec.id="it-"+it.id;
+  var meta=LEC[it.lec]||{};
+  var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
+    "<span class='tag'>Lec "+esc(it.lec)+" · "+esc(meta.d||"")+"</span>"+
+    "<span class='tag'>"+esc(it.part)+"</span></div>";
+  h+="<h3 class='topic'>"+esc(it.topic)+"</h3>";
+  h+="<p class='lecline'>"+esc(shortName(it.lecture))+(teacher(it.lecture)?" · "+esc(teacher(it.lecture)):"")+"</p>";
+  if(it.station)h+="<p class='station'>"+esc(it.station)+"</p>";
+  if(it.vignette)h+="<div class='vign'>"+inline(it.vignette)+"</div>";
+  if(it.instruction)h+="<div class='vign'>"+inline(it.instruction)+"</div>";
+  sec.innerHTML=h;
+  var qs=it.questions||[{q:"แนวคำตอบ / เกณฑ์การให้คะแนน",a:it.answer}];
+  qs.forEach(function(q,qi){
+    var key=it.id+"#"+qi;
+    var d=document.createElement("section");d.className="subq";
+    d.innerHTML="<p class='qtext'>"+inline(q.q)+"</p>";
+    if(state.shown[key]){
+      var p=document.createElement("div");p.className="panel";
+      p.innerHTML="<h4>แนวคำตอบ</h4><div class='md'>"+md(q.a)+"</div>";
+      d.appendChild(p);
+    }else{
+      var b=document.createElement("button");
+      b.type="button";b.className="reveal";b.textContent="ดูแนวคำตอบ";
+      b.addEventListener("click",function(){state.shown[key]=1;save();render();
+        var n=document.getElementById("it-"+it.id);if(n)n.scrollIntoView({block:"nearest"});});
+      d.appendChild(b);
+    }
+    sec.appendChild(d);
+  });
+  if((it.ref&&it.ref.length)||(it.nl&&it.nl.length)){
+    var r=document.createElement("div");r.className="panel";
+    r.innerHTML=(it.ref&&it.ref.length?"<h4>Ref — ข้อสอบเก่าที่เป็นต้นแบบ</h4><div class='refs'><ul>"+
+      it.ref.map(function(x){return "<li>"+inline(x)+"</li>";}).join("")+"</ul></div>":"")+nlBlock(it);
+    sec.appendChild(r);
+  }
+  return sec;
+}
+function renderNew(stream){
+  var items=filtered();
+  if(!items.length){stream.innerHTML="<p class='empty'>ไม่มีข้อในเงื่อนไขนี้ — ลองเลือกหัวข้ออื่น</p>";return;}
+  var groups=[["MCQ","Part 1 · MCQ (เลือกคำตอบที่ถูกที่สุด 1 ข้อ)"],
+              ["MEQ","Part 2 · MEQ (ข้อเขียนเคสต่อเนื่อง)"],
+              ["OSCE/SAQ","Part 3 · OSCE / SAQ (สถานีละ 5 นาที)"]];
+  groups.forEach(function(g){
+    var list=items.filter(function(it){return partOf(it)===g[0];});
+    if(!list.length)return;
+    var head=document.createElement("div");head.className="part-head";
+    head.innerHTML="<h2>"+esc(g[1])+"</h2><span class='meta'>"+list.length+" ข้อ</span>";
+    stream.appendChild(head);
+    list.forEach(function(it,i){
+      stream.appendChild(g[0]==="MCQ"?renderMCQ(it,i):renderLong(it));
+    });
+  });
+}
+
+/* ---------- render: old bank ---------- */
+function renderOldChoice(it,g){
+  var sec=document.createElement("article");sec.className="item olditem-mcq";sec.id="it-"+it.id;
+  var meta=LEC[it.lec||g.lec]||{};
+  var ans=state.answers[it.id];
+  var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
+    "<span class='tag old'>ข้อสอบเก่า</span>"+
+    "<span class='tag'>Lec "+esc(it.lec||g.lec)+" · "+esc(meta.d||"")+"</span></div>";
+  h+="<p class='stem'>"+inline(it.q)+"</p>";
+  sec.innerHTML=h;
+  var wrap=document.createElement("div");wrap.className="choices";
+  it.choices.forEach(function(c,ci){
+    var b=document.createElement("button");
+    b.type="button";b.className="choice";
+    b.innerHTML="<span class='ltr'>"+"ABCDE"[ci]+"</span><span>"+inline(c)+"</span>";
+    if(ans){
+      b.disabled=true;
+      if(ci===it.answer)b.classList.add("is-ok");
+      else if(ci===ans.pick)b.classList.add("is-miss");
+      else b.classList.add("is-dim");
+    }else{
+      b.addEventListener("click",function(){
+        state.answers[it.id]={pick:ci,ok:ci===it.answer};save();render();
+        var n=document.getElementById("it-"+it.id);if(n)n.scrollIntoView({block:"nearest"});
+      });
+    }
+    wrap.appendChild(b);
+  });
+  sec.appendChild(wrap);
+  if(ans){
+    var v=document.createElement("p");
+    v.className="verdict "+(ans.ok?"ok":"miss");
+    v.innerHTML="<span class='dot'></span>"+(ans.ok?"ถูกต้อง":"ยังไม่ใช่ — คำตอบคือข้อ "+"ABCDE"[it.answer]);
+    sec.appendChild(v);
+    var p=document.createElement("div");p.className="panel";
+    p.innerHTML="<h4>เฉลยและกลไก</h4><div class='md'>"+md(it.note||"")+"</div>"+
+      (it.src?"<div class='refs'><h4>ที่มา</h4><ul><li>"+inline(it.src)+"</li></ul></div>":"")+
+      nlBlock(it);
+    sec.appendChild(p);
+  }
+  return sec;
+}
+function renderOld(stream){
+  var groups=BANK[state.set].old.filter(function(g){return state.lec==="all"||g.lec===state.lec;});
+  var head=document.createElement("div");head.className="part-head";
+  var total=groups.reduce(function(a,g){return a+g.items.length;},0);
+  var hasChoices=groups.some(function(g){return g.items.length&&g.items[0].choices;});
+  head.innerHTML="<h2>ข้อสอบเก่าที่สกัดได้ (MED28–MED35)</h2><span class='meta'>"+total+" ข้อ</span>";
+  stream.appendChild(head);
+  if(hasChoices){
+    var n=document.createElement("p");n.className="oldnote wide";
+    n.textContent="ข้อสอบเก่าชุดนี้ถูกเรียบเรียงเป็นตัวเลือก 5 ข้อพร้อมเฉลย — กดเลือกคำตอบได้เหมือนข้อสอบใหม่";
+    stream.appendChild(n);
+  }
+  groups.forEach(function(g){
+    var meta=LEC[g.lec]||{};
+    var sec=document.createElement("section");sec.className="oldgrp";
+    sec.innerHTML="<h3><span class='qno'>Lec "+esc(g.lec)+"</span>"+esc(shortName(g.lecture))+
+      "<span class='tag'>"+esc(meta.d||"")+"</span><span class='tag'>"+g.items.length+" ข้อ</span></h3>"+
+      (g.count_note?"<p class='oldnote'>"+esc(g.count_note)+"</p>":"");
+    g.items.forEach(function(it){
+      if(it.choices){ sec.appendChild(renderOldChoice(it,g)); return; }
+      var d=document.createElement("div");d.className="olditem";
+      d.innerHTML="<span class='pt'>"+esc(it.part)+"</span><div><p class='q'>"+inline(it.q)+"</p>"+
+        "<p class='a'>"+inline(it.a)+"</p><p class='src'>"+inline(it.src)+"</p></div>";
+      sec.appendChild(d);
+    });
+    stream.appendChild(sec);
+  });
+}
+
+/* ---------- main render ---------- */
+function render(){
+  document.documentElement.setAttribute("data-set",state.set);
+  var counts={};SETS.forEach(function(s){counts[s.k]=newItems(s.k).length;});
+  buildStrip(document.getElementById("setbar"),SETS,state.set,function(k){
+    if(k===state.set)return;state.set=k;state.lec="all";save();render();
+  },counts);
+  var mcounts={new:newItems(state.set).length,old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)};
+  buildStrip(document.getElementById("modebar"),MODES,state.mode,function(k){
+    state.mode=k;save();render();
+  },mcounts);
+  buildLecs();buildParts();
+  document.getElementById("partblock").style.display=state.mode==="new"?"":"none";
+  var oldHasCh=BANK[state.set].old.some(function(g){return g.items.length&&g.items[0].choices;});
+  var showBtns=(state.mode==="new")||oldHasCh;
+  document.getElementById("btn-reveal").style.display=showBtns?"":"none";
+  document.getElementById("btn-reset").style.display=showBtns?"":"none";
+  updateScore();
+  var stream=document.getElementById("stream");stream.innerHTML="";
+  if(state.mode==="new")renderNew(stream);else renderOld(stream);
+}
+
+/* ---------- actions ---------- */
+function activeItems(){
+  if(state.mode==="new")return filtered();
+  var out=[];
+  BANK[state.set].old.filter(function(g){return state.lec==="all"||g.lec===state.lec;})
+    .forEach(function(g){g.items.forEach(function(it){if(it.choices)out.push(it);});});
+  return out;
+}
+document.getElementById("btn-reveal").addEventListener("click",function(){
+  activeItems().forEach(function(it){
+    if(it.choices){ if(!state.answers[it.id])state.answers[it.id]={pick:it.answer,ok:true,auto:1}; }
+    else (it.questions||[{}]).forEach(function(_,qi){state.shown[it.id+"#"+qi]=1;});
+  });
+  save();render();
+});
+document.getElementById("btn-reset").addEventListener("click",function(){
+  activeItems().forEach(function(it){
+    delete state.answers[it.id];
+    (it.questions||[{}]).forEach(function(_,qi){delete state.shown[it.id+"#"+qi];});
+  });
+  save();render();
+});
+document.getElementById("btn-print").addEventListener("click",function(){window.print();});
+
+document.addEventListener("keydown",function(e){
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
+  var t=e.target;if(t&&/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))return;
+  var k=Number(e.key);if(!(k>=1&&k<=5))return;
+  var nodes=document.querySelectorAll(".item");
+  for(var i=0;i<nodes.length;i++){
+    var r=nodes[i].getBoundingClientRect();
+    if(r.bottom>90&&r.top<window.innerHeight*0.75){
+      var btns=nodes[i].querySelectorAll(".choice:not([disabled])");
+      if(btns[k-1]){btns[k-1].click();e.preventDefault();}
+      return;
+    }
+  }
+});
+
+render();
+})();
+</script>

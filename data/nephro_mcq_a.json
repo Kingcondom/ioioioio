@@ -1,0 +1,478 @@
+[
+ {
+  "id": "N-MCQ-01",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา)",
+  "topic": "Most common cause of hypercalcaemia – outpatient vs inpatient",
+  "stem": "A 62-year-old woman is found to have a serum calcium of 11.2 mg/dL (normal 8.6-10.2) on a routine health check-up. She has no symptoms, takes no medication and no vitamin supplements. Serum phosphate is 2.1 mg/dL (normal 2.7-4.5), albumin 4.2 g/dL, creatinine 0.9 mg/dL. Which of the following is the most likely cause of her hypercalcaemia?",
+  "choices": [
+   "Milk-alkali syndrome",
+   "Primary hyperparathyroidism",
+   "Thyrotoxicosis",
+   "Malignancy with bone metastasis",
+   "Vitamin D intoxication"
+  ],
+  "answer": 1,
+  "explain": "กลไกและหลักการแยก: **primary hyperparathyroidism (PHPT)** เป็นสาเหตุอันดับหนึ่งของ hypercalcemia ใน **ผู้ป่วยนอก/คนที่ไม่มีอาการ** (ส่วนใหญ่มาจาก solitary parathyroid adenoma) ขณะที่ **malignancy เป็นอันดับหนึ่งในผู้ป่วยใน (inpatient)** — นี่คือจุดที่ข้อสอบหลอกโดยสลับบริบท\n\nสรีรวิทยาที่ต้องใช้ตัดสินในโจทย์นี้: PTH ส่วนเกินออกฤทธิ์\n- **กระดูก**: กระตุ้น osteoclast (ผ่าน RANKL บน osteoblast) → ปล่อย Ca และ PO4\n- **ไต**: เพิ่มการดูดซึม **Ca** กลับที่ distal tubule แต่ **ยับยั้ง NaPi cotransporter ที่ proximal tubule → ขับ phosphate ออก**\n- **ลำไส้**: กระตุ้น 1α-hydroxylase → **calcitriol สูง** → ดูดซึม Ca เพิ่ม\n→ ผลคือ **Ca สูง + PO4 ต่ำ** ซึ่งตรงกับโจทย์ (PO4 2.1) = ลายเซ็นของ PTH-mediated hypercalcemia\n\nทำไมข้ออื่นผิด:\n- **Malignancy**: มักมีอาการ (น้ำหนักลด ปวดกระดูก) และ **มาเร็ว Ca สูงมาก**; กลไกหลักคือ **PTH-rP** (humoral hypercalcemia of malignancy) ซึ่งก็ทำให้ PO4 ต่ำได้ แต่ **PTH จะถูกกด** และผู้ป่วยไม่ใช่ภาพ \"ตรวจสุขภาพแล้วเจอโดยไม่มีอาการ\"\n- **Milk-alkali syndrome**: จากการกิน calcium carbonate/ยาลดกรดปริมาณมาก → Ca สูง, **metabolic alkalosis, ไตวาย** และ **PO4 มักปกติหรือสูง**; โจทย์ระบุว่าไม่กินอาหารเสริมและ Cr ปกติ\n- **Vitamin D intoxication**: calcitriol สูงจะเพิ่มการดูดซึมทั้ง Ca **และ PO4** จากลำไส้ → **PO4 สูงหรือปกติ ไม่ใช่ต่ำ**; และโจทย์บอกว่าไม่กินวิตามิน\n- **Thyrotoxicosis**: thyroid hormone เพิ่ม bone turnover → Ca สูงได้เล็กน้อย แต่ต้องมีอาการ hyperthyroid (น้ำหนักลด ใจสั่น ขี้ร้อน มือสั่น) และ PO4 มักปกติ\n\nขั้นต่อไปทางคลินิก: **วัด intact PTH** — ถ้า **สูงหรือ inappropriately normal** → PTH-dependent (PHPT, tertiary HPT, familial hypocalciuric hypercalcemia); ถ้า **ถูกกด** → PTH-independent (malignancy, vitamin D, granulomatous disease, myeloma, ยา)",
+  "pearl": "แยก PHPT จาก **familial hypocalciuric hypercalcemia (FHH)** ด้วย **24-hour urine calcium และ calcium/creatinine clearance ratio** (FHH ขับ Ca ในปัสสาวะต่ำ <0.01) เพราะ FHH **ไม่ต้องผ่าตัด** — ถ้าผ่าไปจะไม่หาย",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 2 FA MCQ ข้อ 2 – Most common cause of hypercalcemia in out patient (choices: milk-alkali, medication, malignancies, primary hyperparathyroid)",
+   "MED31 past paper – ผู้ป่วยอายุ 70 ปี ไม่มีอาการ ตรวจสุขภาพพบ Ca 11 mg/dl (8.6-10.2) PO4 1.1 (2.7-4.5) ไม่มีประวัติใช้ยา สาเหตุของ hypercalcemia",
+   "MED31 MCQ – Ans hypercalcemia",
+   "MED30 สรุป – parathyroid → hypercalcemia",
+   "MED32 MCQ ข้อ 7 – drowsiness, polyuria, constipation u/d CA bone metastasis → hypercalcemia"
+  ]
+ },
+ {
+  "id": "N-MCQ-02",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา)",
+  "topic": "Symptomatic hypercalcaemia of malignancy with AKI – management",
+  "stem": "A 68-year-old woman with known breast cancer presents with 5 days of progressive drowsiness, polyuria, constipation and vomiting. Vital signs: PR 104/min, BP 96/62 mmHg, dry mucous membranes. Laboratory results: corrected calcium 14.8 mg/dL, phosphate 4.6 mg/dL, creatinine 2.6 mg/dL (baseline 0.8), intact PTH 4 pg/mL (low), albumin 3.2 g/dL. Which of the following is the most appropriate initial treatment?",
+  "choices": [
+   "Intravenous isotonic saline to restore intravascular volume",
+   "Haemodialysis",
+   "Intravenous furosemide to promote calciuresis before fluid replacement",
+   "Intravenous zoledronic acid as the single first step",
+   "Subcutaneous calcitonin alone"
+  ],
+  "answer": 0,
+  "explain": "กลไกของวงจรเลวร้ายที่ต้องเข้าใจ: hypercalcemia → **ยับยั้ง NKCC2 ที่ thick ascending limb ผ่าน calcium-sensing receptor** และ **ทำให้ collecting duct ดื้อต่อ ADH (nephrogenic diabetes insipidus)** → **polyuria → volume depletion**\n→ เมื่อ volume ต่ำ ไตจะ **ดูดซึม Na กลับมากขึ้นที่ proximal tubule และ Ca ตามมาด้วย (paracellular, ตาม Na/น้ำ)** → **ขับ Ca ออกได้น้อยลง → Ca ยิ่งสูง** → ปัสสาวะออกมากขึ้น → วนซ้ำ\n\n**ดังนั้นการรักษาลำดับแรกคือ \"เติมน้ำ\" ด้วย IV isotonic saline** — แก้ทั้ง volume depletion, เพิ่ม GFR, และ **เพิ่มการขับ Ca ทางปัสสาวะ** ทำให้ Ca เริ่มลงภายในชั่วโมงแรกๆ และยังช่วยแก้ prerenal AKI\n\n**ลำดับการรักษาทั้งชุด**: (1) **IV isotonic saline** (2) **calcitonin** สำหรับผลเร็วใน 12-48 ชม. แต่เกิด **tachyphylaxis** จึงใช้เป็นสะพาน (3) **bisphosphonate (zoledronic acid) หรือ denosumab** สำหรับผลยั่งยืน (onset 2-4 วัน) เพราะกลไกคือยับยั้ง osteoclast-mediated bone resorption ซึ่งเป็นต้นเหตุใน malignancy (4) รักษามะเร็งต้นเหตุ (5) **หยุด thiazide, calcium และ vitamin D**\n\nทำไมข้ออื่นผิด:\n- **Zoledronic acid เป็นขั้นแรกเดี่ยวๆ**: onset ช้า 2-4 วัน (แก้ภาวะฉุกเฉินไม่ทัน) และ **มี nephrotoxicity** — การให้ขณะที่ยัง volume depleted และ Cr 2.6 เสี่ยงทำให้ไตแย่ลง; ต้องให้**หลัง**เติมน้ำและปรับขนาดตาม renal function (ถ้า GFR ต่ำมากพิจารณา **denosumab** แทนเพราะไม่ถูกขับทางไต)\n- **Furosemide ก่อนเติมน้ำ**: ผิดกลไกอย่างร้ายแรง — loop diuretic ยับยั้ง NKCC2 ทำให้ขับ Ca จริง แต่การให้ในผู้ป่วยที่ **volume depleted อยู่แล้ว** จะยิ่งทำให้ volume ลด → Ca สูงขึ้นและไตแย่ลง; ปัจจุบัน **ไม่แนะนำเป็นกิจวัตร** ใช้เฉพาะเมื่อเกิด volume overload จากการให้น้ำ\n- **Hemodialysis**: สงวนไว้เมื่อ Ca สูงรุนแรงร่วมกับ **ไตวายที่ให้น้ำไม่ได้ (oliguric/volume overload)** หรือมีอาการทางระบบประสาท/หัวใจรุนแรงที่ไม่ตอบสนอง — ไม่ใช่ขั้นแรกในผู้ป่วยที่ยังให้น้ำได้\n- **Calcitonin เดี่ยวๆ**: ลด Ca ได้เพียง 1-2 mg/dL และหมดฤทธิ์ใน 48 ชม. จาก tachyphylaxis — ใช้เป็น adjunct ไม่ใช่การรักษาหลัก",
+  "pearl": "อาการของ hypercalcemia จำด้วย **\"stones, bones, groans, thrones, psychiatric overtones\"** (นิ่วไต, ปวดกระดูก, ปวดท้อง/ท้องผูก, ปัสสาวะมาก, ซึม/สับสน). ถ้าเป็นมะเร็งร่วมกับ **CRAB (hyperCalcemia, Renal failure, Anemia, Bone lesion)** ต้องนึกถึง **multiple myeloma**",
+  "ref": [
+   "MED32 MEQ ข้อ 2 – Symptomatic hypercalcemia from malignancy with acute kidney injury: แปลผลแลป (anemia, mild hyponatremia, hypokalemia, hypercalcemia), definitive diagnosis, ให้การรักษาภาวะ hypercalcemia, และ normal saline ช่วยลด hypercalcemia อย่างไร",
+   "MED32 MCQ ข้อ 7 – drowsiness, polyuria, constipation u/d CA bone metastasis → hypercalcemia",
+   "MED30 MCQ ข้อ 38 – Ca สูง มี sign ของ MM (CRAB: hypercalcemia, renal failure, anemia, osteolytic bone lesion)",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 94 – หญิง 77 ปี ปวดหลังมาก hypercalcemia CRAB → Multiple myeloma"
+  ]
+ },
+ {
+  "id": "N-MCQ-03",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา)",
+  "topic": "Refractory hypokalaemia – the role of magnesium",
+  "stem": "A 16-year-old girl with acute lymphoblastic leukaemia has been hospitalised for 2 months and has received multiple courses of amphotericin B for candidaemia. Over the past 2 weeks she has had persistent hypokalaemia (potassium 2.8-3.1 mEq/L) despite daily oral and intravenous potassium replacement. Renal function is normal and she is not vomiting or taking diuretics. Which additional laboratory value should be checked, and would it be expected to be high or low?",
+  "choices": [
+   "Calcium, expected to be low",
+   "Sodium, expected to be high",
+   "Calcium, expected to be high",
+   "Magnesium, expected to be low",
+   "Magnesium, expected to be high"
+  ],
+  "answer": 3,
+  "explain": "กลไก (เป็นคำถามที่วัดความเข้าใจสรีรวิทยาระดับ channel): **hypomagnesaemia ทำให้ hypokalaemia ดื้อต่อการให้ potassium**\n\nเหตุผลเชิงโมเลกุล: การขับ K ออกที่ **cortical collecting duct** เกิดผ่าน **ROMK channel**; ภายในเซลล์ **Mg2+ ทำหน้าที่เป็นตัวอุดรูจากด้านใน (intracellular Mg blocks ROMK)**\n- เมื่อ **Mg ในเซลล์ต่ำ** → การอุดรูหายไป → **ROMK เปิดกว้าง → K รั่วออกทางปัสสาวะไม่หยุด**\n- ดังนั้นไม่ว่าจะเติม K เท่าไร K ก็จะถูกขับทิ้ง → **ต้องแก้ Mg ก่อน K จึงจะขึ้น**\n\nในโจทย์มีปัจจัยเสี่ยงของ Mg ต่ำชัดเจน: **amphotericin B** (ทำให้ renal tubular wasting ของ Mg และ K, เกิด distal RTA), การรักษาด้วยยาอื่นที่ทิ้ง Mg (เช่น aminoglycoside, cisplatin), ภาวะโภชนาการไม่ดีจากการนอน รพ. นาน, ท้องเสียจากเคมีบำบัด\n\nทำไมข้ออื่นผิด:\n- **Magnesium สูง**: hypermagnesaemia พบในไตวายหรือได้รับ Mg มากเกิน และจะ **กด** การขับ K ไม่ได้ทำให้ K ต่ำดื้อ — ทิศทางกลับกัน\n- **Calcium สูง**: hypercalcemia ไม่ใช่กลไกของ refractory hypokalemia (และในผู้ป่วย leukemia ที่ได้ chemo มักเจอ **hypocalcemia** จาก tumor lysis มากกว่า)\n- **Calcium ต่ำ**: พบร่วมกับ Mg ต่ำได้จริง (เพราะ Mg ต่ำ **กดการหลั่ง PTH และทำให้ end-organ ดื้อต่อ PTH** → hypocalcemia ที่แก้ด้วย Ca เฉยๆไม่หาย) แต่ **hypocalcemia ไม่ใช่สาเหตุที่ทำให้ K ต่ำดื้อ** — คำถามถามตัวที่อธิบาย K ต่ำ จึงต้องตอบ Mg\n- **Sodium สูง**: ไม่มีความเชื่อมโยงเชิงกลไกกับ refractory hypokalemia\n\nการรักษา: ให้ **MgSO4 IV** (หรือ Mg oral ถ้าไม่รุนแรง) พร้อมกับ K; ระวังว่า **serum Mg สะท้อน total body Mg ได้แย่** (Mg ส่วนใหญ่อยู่ในกระดูกและเซลล์) จึงอาจต้องเติมแม้ค่าจะ \"เกือบปกติ\" และต้องระวังในผู้ป่วยไตเสื่อม",
+  "pearl": "ท่องเป็นกฎ: **\"แก้ K ไม่ขึ้น ให้ดู Mg; แก้ Ca ไม่ขึ้น ให้ดู Mg\"** — Mg ต่ำทำให้ทั้ง hypokalemia และ hypocalcemia ดื้อต่อการรักษา และเป็นสาเหตุของ **torsades de pointes**",
+  "ref": [
+   "MED31 past paper loop C&D – A 16 year old girl with ALL hospitalized >2 months, Candida septicemia, persistent hypokalemia despite daily repletion. What laboratory value should the physician check and is it expected to be high or low? (choices: Ca high/low, Mg high/low, Na high)",
+   "MED31 past paper – ผู้ป่วยหญิง 21 ปี HIV CD4 29 admit ด้วย cryptococcal meningitis ได้ amphotericin B 1 สัปดาห์ แขนขาไม่มีแรง proximal grade 3 → ส่งตรวจ electrolyte และ Mg",
+   "MED31 MCQ – Ans hypokalemia"
+  ]
+ },
+ {
+  "id": "N-MCQ-04",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา) / Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Hypocalcaemia in end-stage renal disease",
+  "stem": "A 54-year-old man with end-stage renal disease on maintenance haemodialysis has a corrected calcium of 7.2 mg/dL, phosphate 6.8 mg/dL, intact PTH 620 pg/mL and alkaline phosphatase 320 U/L. He is not taking calcium or vitamin D supplements. Which of the following best explains his hypocalcaemia?",
+  "choices": [
+   "Reduced renal 1-alpha-hydroxylase activity with hyperphosphataemia-driven suppression of calcitriol synthesis",
+   "Magnesium excess inhibiting parathyroid hormone secretion",
+   "Autoimmune destruction of the parathyroid glands",
+   "Increased renal calcium excretion from impaired distal tubular reabsorption",
+   "Reduced dietary calcium intake as the sole mechanism"
+  ],
+  "answer": 0,
+  "explain": "กลไกของ **CKD-mineral and bone disorder (CKD-MBD)** ไล่เป็นลำดับ:\n1. **GFR ลด → ขับ phosphate ไม่ได้ → phosphate retention** (เริ่มเห็นชัดเมื่อ eGFR <30)\n2. Phosphate ที่สูงกระตุ้น **FGF-23** จากกระดูก และ FGF-23 **ยับยั้ง 1α-hydroxylase** ที่ proximal tubule; ร่วมกับ **การสูญเสียเนื้อไตทำให้ 1α-hydroxylase น้อยลงโดยตรง**\n3. ผลคือ **calcitriol (1,25-(OH)2 vitamin D) ต่ำ** → **ดูดซึม Ca ที่ลำไส้ลดลง** → **hypocalcaemia**\n4. นอกจากนี้ phosphate ที่สูง **จับกับ Ca เกิด calcium-phosphate complex ตกตะกอน** → Ca อิสระยิ่งต่ำ (เป็นกลไกเสริมที่สำคัญ)\n5. Ca ต่ำ + PO4 สูง + calcitriol ต่ำ → กระตุ้น **PTH สูงขึ้นเรื้อรัง = secondary hyperparathyroidism** (PTH 620 ในโจทย์) → **bone resorption เพิ่ม (ALP สูง)** เกิด renal osteodystrophy\n\nทำไมข้ออื่นผิด:\n- **Autoimmune parathyroid destruction**: จะให้ **PTH ต่ำ** (hypoparathyroidism) — โจทย์ PTH **สูงถึง 620** ซึ่งตรงข้ามโดยสิ้นเชิง\n- **การกินแคลเซียมน้อยเพียงอย่างเดียว**: ลำพังอาหารไม่พอที่จะทำให้เกิดภาพ PO4 สูง + PTH สูงถึงระดับนี้; ปัญหาแกนคือ **การสร้าง calcitriol ล้มเหลว** ไม่ใช่แค่ปริมาณที่กิน\n- **ขับ Ca ออกทางไตมากขึ้น**: ใน CKD **PTH ที่สูงกลับเพิ่มการดูดซึม Ca** ที่ distal tubule และ GFR ที่ต่ำก็ทำให้ filtered load ของ Ca ลดลง → ไม่ใช่กลไกของ Ca ต่ำใน ESRD\n- **Magnesium สูงกด PTH**: hypermagnesemia พบได้ใน CKD จริง และ Mg **สูงมาก** กด PTH ได้ แต่โจทย์มี **PTH สูงลิ่ว** แสดงว่า parathyroid ตอบสนองเต็มที่ — ขัดกับกลไกนี้\n\nการรักษาตามกลไก: **จำกัด phosphate ในอาหาร + phosphate binder (พิจารณา non-calcium-based ถ้ามี vascular calcification) + active vitamin D หรือ vitamin D analogue + calcimimetic (cinacalcet) เพื่อลด PTH**; ถ้า refractory → **parathyroidectomy**",
+  "pearl": "ระวังภาวะ **tertiary hyperparathyroidism** — ต่อมกลายเป็น autonomous ทำให้ **Ca สูง** ได้ในที่สุด; และระวัง **calciphylaxis** เมื่อ Ca x PO4 product สูงมาก. ข้อสอบชอบถาม \"most common cause of hypocalcemia\" ซึ่งโดยทั่วไปตอบ **iatrogenic/post-surgical (hypoparathyroidism หลังผ่าตัดคอ)** แต่ในบริบท **ESRD ตอบ CKD-MBD**",
+  "ref": [
+   "MED33 MCQ – เป็น ESRD > Most common cause of Hypocalcemia > มีชอย low small intestinal absorption, low vitamin D diet, low vitamin D → น่าจะตอบข้อ Phosphate",
+   "MED31 past paper – Which one is the most common cause of hypocalcemia? (choices: iatrogenic, autoimmune, infiltrative disease, maternal neonatal complications, development disorder)",
+   "MED32 SAQ – hypocalcemia",
+   "MED30 สรุป Renal – phosphate, magnesium",
+   "MED28 MED421 – ข้อที่ถาม hyperphosphatemia/hypercalcemia/hyperkalemia ในบริบทไตวาย"
+  ]
+ },
+ {
+  "id": "N-MCQ-05",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา)",
+  "topic": "Tumour lysis syndrome – which finding is NOT expected",
+  "stem": "A 42-year-old man with acute lymphoblastic leukaemia and a high white cell count develops oliguria, nausea and muscle cramps 24 hours after his first cycle of chemotherapy. Which of the following laboratory findings would NOT be expected in this condition?",
+  "choices": [
+   "Hyperuricaemia",
+   "Hyperphosphataemia",
+   "Hyperkalaemia",
+   "Hypercalcaemia",
+   "Acute kidney injury with rising creatinine"
+  ],
+  "answer": 3,
+  "explain": "กลไก: **tumour lysis syndrome (TLS)** เกิดจากเซลล์มะเร็งจำนวนมากแตกพร้อมกัน (มักใน 12-72 ชม. หลังเริ่มเคมีบำบัด ในมะเร็งที่ **โตเร็ว, ก้อนใหญ่, LDH สูง, WBC สูง** เช่น ALL, Burkitt lymphoma, AML)\n\nสิ่งที่อยู่ในเซลล์ไหลออกมาในเลือด:\n- **K+ ในเซลล์สูงมาก (~140 mEq/L)** → **hyperkalaemia** (อันตรายที่สุด ทำให้ arrhythmia/cardiac arrest)\n- **phosphate ในเซลล์สูง** → **hyperphosphataemia**\n- **nucleic acid → purine → xanthine → uric acid** → **hyperuricaemia**\n- **hypocalcaemia (ไม่ใช่ hyper!)** เพราะ **phosphate ที่สูงจับกับ calcium เกิด calcium-phosphate ตกตะกอนในเนื้อเยื่อ** → Ca อิสระต่ำ → เกิดอาการ **muscle cramps, tetany, ชัก, QT ยาว, arrhythmia** (ตรงกับ muscle cramps ในโจทย์)\n- **AKI** จากหลายกลไกร่วมกัน: **uric acid ตกผลึกใน tubule (urate nephropathy), calcium-phosphate ตกตะกอนใน tubule (nephrocalcinosis), volume depletion และ cytokine-mediated injury**\n\n→ ดังนั้น **hypercalcaemia เป็นสิ่งที่ \"ไม่\" คาดว่าจะพบ** = คำตอบ\n\nการป้องกันและรักษาตามกลไก:\n- **IV fluid ปริมาณมากเพื่อเพิ่ม urine flow** (มาตรการสำคัญที่สุด) — ปัจจุบัน **ไม่แนะนำ urine alkalinization เป็นกิจวัตร** เพราะทำให้ calcium-phosphate ตกตะกอนง่ายขึ้น\n- **Allopurinol** (xanthine oxidase inhibitor) สำหรับ **ป้องกัน** ในความเสี่ยงปานกลาง\n- **Rasburicase** (recombinant urate oxidase เปลี่ยน uric acid เป็น allantoin ที่ละลายน้ำดี) สำหรับความเสี่ยงสูงหรือมี TLS แล้ว — **ห้ามใช้ใน G6PD deficiency** (ทำให้เกิด hemolysis รุนแรง ซึ่งเป็น pitfall ที่สำคัญในไทย)\n- **แก้ hyperkalaemia อย่างเร่งด่วน** (calcium gluconate, insulin+glucose, binder, dialysis)\n- **ไม่ควรให้ calcium เพื่อแก้ hypocalcaemia ถ้าไม่มีอาการ** เพราะจะยิ่งเพิ่มการตกตะกอนของ calcium-phosphate\n- **Dialysis** เมื่อมีข้อบ่งชี้ (hyperkalaemia/acidosis/overload ที่ดื้อต่อการรักษา, phosphate สูงมาก, oliguric AKI)",
+  "pearl": "Cairo-Bishop criteria: **laboratory TLS** = ความผิดปกติอย่างน้อย 2 อย่างใน (uric acid, K, PO4 สูง / Ca ต่ำ) ภายใน 3 วันก่อน–7 วันหลังเริ่มรักษา; **clinical TLS** = laboratory TLS + **Cr สูงขึ้น / arrhythmia / ชัก**",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 2 FA MCQ ข้อ 12 – Tumor lysis syndrome ข้อใดผิด → ตอบ hypercalcemia",
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (Hemato ข้อ 5) – คนไข้เป็นมะเร็งได้รับยา chemotherapy มา 1 วัน มีอาการต่างๆ และมี K 5.6 → Tumor lysis syndrome",
+   "MED32 MCQ ข้อ 29 – ALL ได้รับ 1st chemotherapy K 5.6 Ca 7.8 → tumor lysis syndrome",
+   "MED31 MCQ ข้อ 26 – คนไข้ AML ไปทำ chemotherapy แล้ว hyperkalemia / MED31 MCQ – มี hypocalcemia ตอบ tumor lysis syndrome",
+   "MED31 MCQ ข้อ 49 – ทำ chemo ไตพัง BUN Cr K สูง เกิดจากอะไร"
+  ]
+ },
+ {
+  "id": "N-MCQ-06",
+  "lec": "05",
+  "lecture": "Fluid electrolyte: Divalent (อ.ธิติยา)",
+  "topic": "Citrate toxicity after massive transfusion",
+  "stem": "A 34-year-old man with massive upper gastrointestinal bleeding receives 12 units of packed red cells and 6 units of fresh frozen plasma over 3 hours. He then develops peri-oral numbness, carpopedal spasm and a positive Trousseau sign. ECG shows a prolonged QT interval. Which electrolyte abnormality is most likely responsible?",
+  "choices": [
+   "Hypernatraemia",
+   "Hypocalcaemia",
+   "Hypermagnesaemia",
+   "Hyperkalaemia",
+   "Hypophosphataemia"
+  ],
+  "answer": 1,
+  "explain": "กลไก: **citrate เป็นสารกันเลือดแข็ง (anticoagulant) ในถุงเลือด** โดยออกฤทธิ์ด้วยการ **จับ (chelate) calcium ที่เป็น free ionised Ca2+** ซึ่งเป็น cofactor จำเป็นของ coagulation cascade\n\nในภาวะปกติตับจะ **metabolise citrate เป็น bicarbonate ได้เร็ว** → ไม่เกิดปัญหา แต่เมื่อ\n- ให้เลือดปริมาณมากเร็ว (**massive transfusion**: ≥10 units ใน 24 ชม. หรือ ≥4 units ใน 1 ชม.)\n- หรือผู้ป่วยมี **การทำงานของตับบกพร่อง / hypoperfusion / hypothermia**\n→ citrate สะสม → **จับ ionised calcium ในเลือด → ionised hypocalcaemia** (โดยที่ **total calcium อาจดูปกติ** เพราะ Ca ที่จับกับ citrate ยังถูกนับรวม — จึงต้องวัด **ionised calcium** ไม่ใช่ total)\n\nอาการตรงกับ hypocalcaemia แบบฉบับ: **peri-oral numbness, paraesthesia, carpopedal spasm, Trousseau sign, Chvostek sign, tetany, ชัก, QT ยาว, hypotension และ myocardial depression**\n\nการรักษา: **IV calcium gluconate (หรือ calcium chloride ในภาวะวิกฤต) โดยให้ผ่านคนละเส้นกับเลือด**, อุ่นเลือด/ผู้ป่วยเพื่อแก้ hypothermia, ติดตาม ionised calcium และ ECG\n\nทำไมข้ออื่นผิด — ทุกข้อพบได้ใน massive transfusion แต่ไม่อธิบายอาการชุดนี้:\n- **Hyperkalaemia**: เกิดจาก K ที่รั่วออกจาก RBC ใน stored blood (ยิ่งเก่ายิ่งสูง) — จะให้ **peaked T wave, QRS กว้าง, กล้ามเนื้ออ่อนแรง** ไม่ใช่ tetany และทำให้ **QT สั้น** ไม่ใช่ยาว\n- **Hypernatraemia**: ไม่ใช่ปัญหาเด่นของ transfusion และไม่ทำให้ tetany\n- **Hypophosphataemia**: ทำให้กล้ามเนื้ออ่อนแรง, rhabdomyolysis, hemolysis, respiratory failure — ไม่ใช่ tetany กับ Trousseau sign\n- **Hypermagnesaemia**: จะ **กด** neuromuscular transmission → **DTR หาย, อ่อนแรง, hypotension, bradycardia** ซึ่งตรงข้ามกับภาวะ hyperexcitability ในโจทย์",
+  "pearl": "ภาวะแทรกซ้อนของ massive transfusion ที่ต้องจำ: **hypocalcaemia (citrate), hyperkalaemia, hypothermia, metabolic alkalosis (citrate → bicarbonate) หรือ acidosis จาก hypoperfusion, dilutional coagulopathy, TACO/TRALI**. ข้อสอบ MED ออกทั้ง \"citrate toxicity ทำให้ electrolyte ใดตก\" และ \"ให้เลือดแล้ว volume overload → TACO\"",
+  "ref": [
+   "MED31 past paper loop C&D – What electrolyte may fall in level as a result of citrate toxicity from massive blood transfusion? (choices: calcium, phosphorus, sodium, potassium, magnesium)",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 25 – ให้เลือดผ่าตัดแล้วเลือดออกเยอะ → dilutional coagulopathy จาก massive infusion",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 26 – ให้เลือดแล้ว volume overload, CXR เจอ pulmonary edema → TACO"
+  ]
+ },
+ {
+  "id": "N-MCQ-07",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา)",
+  "topic": "Criteria for nephrotic syndrome",
+  "stem": "Which of the following is NOT part of the diagnostic criteria for nephrotic syndrome?",
+  "choices": [
+   "Hyperlipidaemia",
+   "Generalised pitting oedema",
+   "Microscopic haematuria with dysmorphic red blood cells",
+   "Proteinuria greater than 3.5 grams per 1.73 square metres per day",
+   "Serum albumin less than 3.0 grams per decilitre"
+  ],
+  "answer": 2,
+  "explain": "กลไกแกนของ nephrotic syndrome: ความเสียหายของ **glomerular filtration barrier ที่ชั้น podocyte** (foot process effacement, ความผิดปกติของ nephrin/podocin, การสูญเสีย negative charge ของ glomerular basement membrane) → **รั่ว protein ออกมหาศาลโดยที่ \"ไม่มีการอักเสบที่ทำลาย capillary wall\"**\n\nผลที่ตามมาเป็นลูกโซ่ = องค์ประกอบของ tetrad\n1. **Heavy proteinuria >3.5 g/1.73 m2/day** (ในเด็กใช้ >40 mg/m2/hr หรือ UPCR >2-3)\n2. **Hypoalbuminaemia** (albumin <3.0 g/dL) จากการสูญเสียเกินกว่าตับจะสร้างชดเชย\n3. **Oedema** — จาก oncotic pressure ที่ลด (underfill) ร่วมกับ **การดูดซึม Na กลับที่ไตเพิ่มขึ้นโดยตรงจากการกระตุ้น ENaC (overfill)** ซึ่งเป็นกลไกที่สำคัญกว่าในผู้ใหญ่จำนวนมาก\n4. **Hyperlipidaemia** — ตับเพิ่มการสร้าง lipoprotein เพื่อชดเชย oncotic pressure ที่ลด ร่วมกับ **การสูญเสีย lipoprotein lipase regulator ทางปัสสาวะ** → LDL และ cholesterol สูง\n\n**Microscopic haematuria ที่มี dysmorphic RBC และ RBC cast เป็นลักษณะของ \"nephritic\" ไม่ใช่ \"nephrotic\"** — เพราะ nephritic เกิดจาก **การอักเสบ (inflammation) ที่ทำลายผนัง glomerular capillary** ทำให้เม็ดเลือดแดงลอดออกมาและถูกบีบจนเสียรูป (dysmorphic) ขณะผ่าน tubule → คำตอบที่ \"ไม่ใช่\"\n\n**ตารางแยก nephrotic vs nephritic (high-yield)**\n| | **Nephrotic** | **Nephritic** |\n|---|---|---|\n| กลไก | podocyte injury, non-inflammatory | **inflammation/proliferation** |\n| Proteinuria | **>3.5 g/day** | <3.5 g/day (sub-nephrotic) |\n| ปัสสาวะ | **oval fat body, fatty/waxy cast** | **dysmorphic RBC, RBC cast** |\n| ความดัน | ปกติหรือสูงเล็กน้อย | **สูง** |\n| GFR | มักปกติในระยะแรก | **ลดลง (azotemia), oliguria** |\n| ตัวอย่างโรค | MCD, FSGS, membranous, diabetic nephropathy, amyloid | PSGN, IgA nephropathy, lupus nephritis, RPGN, anti-GBM |\n\nภาวะแทรกซ้อนของ nephrotic ที่ออกสอบ: **hypercoagulable state (เสีย antithrombin III ทางปัสสาวะ → renal vein thrombosis, DVT/PE)**, **การติดเชื้อ** (เสีย IgG และ complement factor B → เสี่ยง encapsulated organism, spontaneous bacterial peritonitis), **vitamin D deficiency** (เสีย vitamin D binding protein), **anemia** (เสีย transferrin/EPO), **AKI**, และ **hypothyroidism** (เสีย thyroxine-binding globulin)",
+  "pearl": "บางโรคมาเป็น **nephritic-nephrotic overlap** (เช่น lupus nephritis class IV, membranoproliferative GN, diffuse proliferative GN) — เจอ proteinuria หนักร่วมกับ dysmorphic RBC/RBC cast ได้ จึงต้องอ่าน UA ให้ครบทุกองค์ประกอบ ไม่ฟันธงจากข้อเดียว",
+  "ref": [
+   "MED28 MED421 Medicine I ข้อ 48 – Which of the following is NOT included in the criteria for diagnosis of nephrotic syndrome? (มี choice Hematuria)",
+   "MED32 MCQ – ลักษณะที่ common ของ nephrotic syndrome → Ans: ascites",
+   "MED31 MCQ ข้อ 13 – red urine suspected glomerular disease ไม่ควรเจออะไร → Clot urine",
+   "MED32 MCQ ข้อ 41 – Foamy urine, edema, oval fat bodies → nephrotic syndrome"
+  ]
+ },
+ {
+  "id": "N-MCQ-08",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา)",
+  "topic": "Quantifying proteinuria",
+  "stem": "A 46-year-old woman presents with 3 weeks of periorbital puffiness in the morning, bilateral leg oedema and frothy urine. Urine analysis shows specific gravity 1.020, protein 4+, glucose negative, RBC 0-2/HPF, WBC 0-1/HPF, and oval fat bodies with a Maltese cross appearance under polarised light. Serum albumin is 2.4 g/dL and total cholesterol 340 mg/dL. Which investigation is most appropriate to quantify the severity of her proteinuria in routine practice?",
+  "choices": [
+   "Urine protein-to-creatinine ratio from a first-morning voided specimen",
+   "Repeat urine dipstick for protein on three consecutive days",
+   "Renal ultrasonography with Doppler study",
+   "Creatinine clearance calculated from the Cockcroft-Gault equation",
+   "Serum protein electrophoresis"
+  ],
+  "answer": 0,
+  "explain": "หลักการ: dipstick บอกได้แค่ **กึ่งปริมาณ (semi-quantitative)** และถูกรบกวนมากจาก **ความเข้มข้นของปัสสาวะ** (ปัสสาวะเข้มข้นทำให้ดูมากเกินจริง, เจือจางทำให้ดูน้อยเกินจริง) นอกจากนี้ dipstick ตรวจจับ **albumin เป็นหลัก** จึงอาจพลาด **light chain (Bence Jones protein)** ใน multiple myeloma\n\n**Urine protein-to-creatinine ratio (UPCR)** แก้ปัญหานี้ด้วยการ **หารด้วย creatinine** — เนื่องจาก creatinine ถูกขับในอัตราที่ค่อนข้างคงที่ การหารจึง **ชดเชยความเข้มข้นของปัสสาวะโดยอัตโนมัติ** → ค่าที่ได้ (g/g creatinine) **สัมพันธ์ใกล้เคียงกับ 24-hour urine protein (g/day)** แต่ **สะดวกกว่า ไม่มีปัญหาการเก็บไม่ครบ 24 ชั่วโมง** ซึ่งเป็นข้อผิดพลาดที่พบบ่อยที่สุดของการเก็บปัสสาวะ 24 ชม.\n- ใช้ **first-morning specimen** เพื่อตัด **orthostatic (postural) proteinuria** ออกไป\n- UPCR >3-3.5 g/g = nephrotic range; >0.2 g/g = abnormal\n\nทำไมข้ออื่นผิด:\n- **Dipstick ซ้ำ 3 วัน**: ยังเป็นการตรวจกึ่งปริมาณ ไม่ได้ค่าเชิงปริมาณที่ใช้ติดตามการรักษา (แต่การยืนยันว่า persistent ก็มีประโยชน์ในกรณี transient proteinuria)\n- **Serum protein electrophoresis**: ใช้คัด **monoclonal gammopathy/multiple myeloma** ซึ่งเป็น **สาเหตุ** ของ nephrotic syndrome ที่ต้องคัดในผู้สูงอายุ — แต่ **ไม่ใช่การวัดปริมาณ proteinuria**\n- **Renal ultrasonography with Doppler**: ประเมินขนาดไต, echogenicity, การอุดกั้น และ renal vein thrombosis (ภาวะแทรกซ้อนสำคัญของ nephrotic syndrome) — มีประโยชน์ **แต่ไม่วัด proteinuria**\n- **Creatinine clearance (Cockcroft-Gault)**: ประเมิน **GFR** ไม่ใช่ proteinuria; และการประเมิน GFR ด้วยสูตรนี้ใน nephrotic syndrome ยังไม่น่าเชื่อถือเพราะน้ำหนักเปลี่ยนจาก edema\n\n**ขั้นต่อไปหลังยืนยันปริมาณ**: หาสาเหตุ — ตรวจ **glucose/HbA1c (diabetic nephropathy), ANA/anti-dsDNA/complement (lupus), HBsAg, anti-HCV, anti-HIV, VDRL, serum/urine protein electrophoresis + free light chain, anti-PLA2R (primary membranous)** และพิจารณา **renal biopsy** ในผู้ใหญ่เกือบทุกรายที่ไม่มีสาเหตุชัดเจน",
+  "pearl": "**Oval fat body / Maltese cross** บน polarised light และ **fatty cast** เป็นลักษณะเฉพาะของ nephrotic range proteinuria — ออกทั้ง MCQ และ SAQ แปลผล UA ทุกปี",
+  "ref": [
+   "MED34 MCQ ครั้งที่ 4 ข้อ 93 – เป็น nephrotic ส่งตรวจไร → UPCR",
+   "MED34 FA – UPCR",
+   "MED32 MCQ ข้อ 41 – Foamy urine, edema, oval fat bodies → nephrotic syndrome",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 50 – Foamy urine → nephrotic syndrome",
+   "MED32 OSCE – ให้รูป urine sediment: oval fat body, dysmorphic RBC",
+   "MED33 MCQ – Fatty cast : nephrotic syndrome",
+   "MED30 SAQ – 1. Fatty cast 2. Nephrotic syndrome"
+  ]
+ },
+ {
+  "id": "N-MCQ-09",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา)",
+  "topic": "HIV-associated nephropathy",
+  "stem": "A 25-year-old man is evaluated for swelling of the feet and legs. He has a 5-year history of HIV infection and has refused antiretroviral therapy. Vital signs: temperature normal, BP 138/84 mmHg, PR 86/min, RR 20/min, BMI 23. Cardiopulmonary and abdominal examinations are normal. There is 2+ presacral and 3+ bilateral lower extremity oedema. Laboratory studies: CD4 count 140 cells/microlitre, HIV RNA 120,000 copies/mL, HBsAg negative, anti-HCV negative, VDRL negative, ANA negative, BUN/creatinine 18/1.5 mg/dL, urine examination protein 4+ with RBC 2-3/HPF and WBC 2-3/HPF, 24-hour urine protein 12 grams. Renal ultrasonography shows bilaterally enlarged kidneys with increased echogenicity. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Minimal change disease",
+   "IgA nephropathy",
+   "Collapsing focal segmental glomerulosclerosis",
+   "Membranous nephropathy",
+   "Post-infectious glomerulonephritis"
+  ],
+  "answer": 2,
+  "explain": "กลไก: **HIV-associated nephropathy (HIVAN)** ลักษณะทางพยาธิวิทยาคือ **collapsing focal segmental glomerulosclerosis (collapsing FSGS)** ร่วมกับ **microcystic tubular dilatation** และ **tubulointerstitial inflammation**\n- ไวรัส HIV เข้า podocyte และ tubular epithelial cell โดยตรง, **ยีน nef และ vpr** ทำให้ podocyte สูญเสีย differentiation, เกิด proliferation และ collapse ของ glomerular capillary tuft\n- พบมากใน **ผู้ที่มีเชื้อสายแอฟริกัน** ซึ่งสัมพันธ์กับ **APOL1 risk allele (G1/G2)**\n- เกิดใน **ผู้ที่ CD4 ต่ำและ viral load สูง ไม่ได้รับ ART** → ตรงกับโจทย์ (CD4 140, viral load 120,000, ปฏิเสธการรักษา)\n\nเบาะแสที่ \"ชี้\" HIVAN ในโจทย์:\n1. **Proteinuria หนักมาก 12 g/day** (massive, มักเกิน 10 g)\n2. **Renal insufficiency ดำเนินเร็ว** (Cr 1.5 และมีแนวโน้มแย่ลง)\n3. **ไตโตทั้งสองข้างและ echogenicity สูง** — ลักษณะค่อนข้างจำเพาะของ HIVAN (โรค nephrotic อื่นไตมักขนาดปกติ)\n4. **ไม่มี hypertension เด่น** แม้มี nephrotic รุนแรง\n5. serology อื่นลบทั้งหมด (ตัด HBV-related membranous, HCV-related MPGN, lupus, syphilis)\n\nทำไมข้ออื่นผิด:\n- **IgA nephropathy**: มาเป็น **nephritic** (gross haematuria หลังติดเชื้อทางเดินหายใจบน \"synpharyngitic\", dysmorphic RBC, RBC cast) โดย proteinuria มัก sub-nephrotic; ไตขนาดปกติ\n- **Post-infectious GN**: เกิด **1-3 สัปดาห์หลังการติดเชื้อ** (strep) ด้วยภาพ nephritic เฉียบพลัน (HT, cola-coloured urine, oliguria, **low C3**) ไม่ใช่ nephrotic 12 g\n- **Membranous nephropathy**: เป็นสาเหตุ nephrotic ที่พบบ่อยในผู้ใหญ่วัยกลาง-สูงอายุ; ใน HIV พบได้แต่น้อยกว่า และมักสัมพันธ์กับ **HBV co-infection (โจทย์ HBsAg ลบ)**; ไตขนาดปกติ และมักมี anti-PLA2R ในรูปแบบ primary\n- **Minimal change disease**: พบมากในเด็ก, onset เฉียบพลันมาก, **ไตขนาดปกติ, renal function ปกติ**, ตอบสนองต่อ steroid ดีมาก — ไม่เข้ากับไตโต echogenic และ Cr ขึ้น\n\nการรักษา: **เริ่ม ART ทันที** (เป็นการรักษาหลักที่เปลี่ยน prognosis), **ACEI/ARB** ลด proteinuria และชะลอการเสื่อม, พิจารณา **corticosteroid** ในบางราย, และดูแลตามหลัก CKD",
+  "pearl": "ใน HIV ที่มีโรคไต ต้องแยก 3 กลุ่ม: **(1) HIVAN (collapsing FSGS) (2) HIV-immune complex kidney disease (3) โรคไตจากยา** เช่น **tenofovir disoproxil fumarate → proximal tubulopathy/Fanconi syndrome** และ **indinavir/atazanavir → crystalluria/นิ่ว**",
+  "ref": [
+   "MED31 past paper loop C&D – A 25 year-old man with 5 year history of HIV refused treatment, 24-hr urine protein 12 g, U/S bilaterally enlarged kidneys with increased density (เฉลยในโพยเขียนกำกับว่า HIV nephropathy)",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 66 – 20 yo male, heavy proteinuria (nephrotic-range) → Minimal change disease",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 90 – Nephrotic ตอบ membranous nephropathy",
+   "MED32 MCQ ข้อ 80 – lab มี protein positive, RBC positive → Ans: Membranous"
+  ]
+ },
+ {
+  "id": "N-MCQ-10",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา)",
+  "topic": "Acute post-streptococcal glomerulonephritis",
+  "stem": "A 30-year-old man presents with occipital headache for 3 hours. Two weeks earlier he had fever and sore throat. Two days ago he noticed dark cola-coloured urine without frothiness and without dysuria. Vital signs: BT 37.0 C, PR 84/min, RR 18/min, BP 180/106 mmHg, BMI 27 kg/m2. Examination shows no pale conjunctivae, no injected pharynx, no CVA tenderness, no rash and no oedema. Laboratory results: urine analysis protein 1+, RBC 30-50/HPF with dysmorphic forms and occasional RBC casts, WBC 2-3/HPF; anti-streptolysin O titre elevated; C3 low with normal C4; creatinine 1.3 mg/dL. Which of the following is the most likely diagnosis and the most important immediate management?",
+  "choices": [
+   "Acute pyelonephritis; start intravenous ceftriaxone",
+   "IgA nephropathy; start high-dose corticosteroid immediately",
+   "Nephrotic syndrome from minimal change disease; start prednisolone 1 mg/kg/day",
+   "Acute post-streptococcal glomerulonephritis; control blood pressure and restrict salt and water",
+   "Rapidly progressive glomerulonephritis from anti-GBM disease; start plasma exchange"
+  ],
+  "answer": 3,
+  "explain": "กลไก: **APSGN** เป็น **immune complex-mediated glomerulonephritis** — antigen ของ nephritogenic strain ของ group A Streptococcus (**NAPlr, SPE-B**) จับกับ antibody เกิด immune complex ที่เกาะ **subepithelial (hump) ใน glomerulus** → **กระตุ้น complement ทาง alternative pathway** → neutrophil แทรกซึม เกิด **endocapillary proliferation** → ทำลายผนัง capillary\n\nผลตามมา = **nephritic syndrome**\n- **ผนัง capillary รั่ว** → **dysmorphic RBC และ RBC cast** → ปัสสาวะสีโคล่า/น้ำล้างเนื้อ **โดยไม่มีฟอง** (proteinuria แค่ sub-nephrotic)\n- **GFR ลด** → Cr ขึ้น, **Na และน้ำคั่ง** → **hypertension** (ซึ่งเป็นสาเหตุของปวดศีรษะในโจทย์) และ edema\n- **oliguria**\n\n**หลักฐานทางแลปที่เป็นลายเซ็น**: **ASO titer สูง (ยืนยันการติดเชื้อ strep ที่ผ่านมา) ร่วมกับ C3 ต่ำ แต่ C4 ปกติ** — เพราะกระตุ้น **alternative pathway** (ถ้าเป็น classical pathway เช่น lupus nephritis หรือ MPGN type I จะ **C3 และ C4 ต่ำทั้งคู่**) จุดนี้เป็น high-yield ที่แยกโรคได้\n- ระยะเวลา **latent period 1-3 สัปดาห์หลัง pharyngitis** (3-6 สัปดาห์ถ้าเป็นที่ผิวหนัง) — ต่างจาก IgA nephropathy ที่เกิด **พร้อม** การติดเชื้อ (synpharyngitic, 1-3 วัน)\n- **C3 จะกลับเป็นปกติภายใน 6-8 สัปดาห์** — ถ้าไม่กลับ ต้องคิดถึง C3 glomerulopathy/MPGN\n\n**การรักษา (เป็น supportive เพราะส่วนใหญ่หายเอง)**\n1. **ควบคุมความดันโลหิต** — loop diuretic เป็นตัวเลือกแรกเพราะเหตุคือ Na/water retention; เพิ่ม CCB/vasodilator ตามความจำเป็น\n2. **จำกัดเกลือและน้ำ**\n3. **กำจัดเชื้อ**: penicillin (ไม่เปลี่ยนการดำเนินโรคของไตแต่ลดการแพร่เชื้อ)\n4. ติดตาม renal function, urine output, K และเฝ้าระวังภาวะแทรกซ้อน (hypertensive encephalopathy, pulmonary edema, AKI ที่ต้องฟอกเลือด)\n5. **ไม่ให้ steroid เป็นกิจวัตร** — พิจารณาเฉพาะเมื่อมีลักษณะ RPGN (crescentic GN)\n\nทำไมข้ออื่นผิด:\n- **IgA nephropathy + steroid ทันที**: timing ไม่เข้า (IgA เกิดพร้อมการติดเชื้อ), **C3 ปกติใน IgA** และ ASO ไม่สูง; การให้ steroid ขนาดสูงทันทีไม่ใช่แนวทาง (ต้องควบคุม BP/proteinuria ด้วย RAS blockade ก่อน)\n- **Anti-GBM disease + plasma exchange**: จะมาด้วย **RPGN (Cr เพิ่มเร็วเป็นวัน-สัปดาห์) ± pulmonary hemorrhage** และตรวจพบ **anti-GBM antibody, linear IgG deposition**; ASO สูงและ C3 ต่ำไม่เข้า\n- **Acute pyelonephritis**: ต้องมี **ไข้ หนาวสั่น CVA tenderness pyuria WBC cast** — โจทย์ระบุว่าไม่มีไข้ ไม่มี CVA tenderness และ WBC ในปัสสาวะ 2-3 ตัวเท่านั้น\n- **Minimal change disease**: เป็น **nephrotic** (ฟองเยอะ, protein 3-4+, albumin ต่ำ, edema เด่น) — โจทย์เป็นภาพ nephritic ชัดเจน (protein แค่ 1+, RBC เด่น, HT, Cr ขึ้น) และ **ไม่มีฟองในปัสสาวะ**",
+  "pearl": "แยก **nephritic ที่ C3 ต่ำ**: APSGN (C3 ต่ำ C4 ปกติ, หายเอง), lupus nephritis (C3 **และ** C4 ต่ำ, ANA/anti-dsDNA positive), MPGN/C3 glomerulopathy (C3 ต่ำนานเกิน 8 สัปดาห์), infective endocarditis-associated GN (มีไข้เรื้อรัง murmur hemoculture positive)",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 2 FA MEQ – ผู้ชายไทยอายุ 30 ปี ปวดศีรษะ 3 ชั่วโมงก่อนมารพ., 2 wk PTA มีไข้เจ็บคอ, 2 d PTA ปัสสาวะเป็นสีน้ำล้างเนื้อ ไม่มีฟอง ไม่แสบขัด, BP 180/106, UA proteinuria 1+ RBC WBC, ASO titer ขึ้น, low C3 normal C4 → Dx acute poststreptococcal glomerulonephritis, tx antihypertensive drug",
+   "MED31 OSCE ข้อ 9 – ผู้ป่วยหญิง urine RBC 50-100, protein trace → Dysmorphic RBC, doughnut cell, DDx: Post streptococcal glomerulonephritis, IgA nephropathy, RPGN",
+   "MED29 SAQ – Acute post streptococcal glomerulonephritis, IgA nephropathy, Rapidly Progressive Glomerulonephritis",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 91 – มี RBC ตอบ glomerulonephritis"
+  ]
+ },
+ {
+  "id": "N-MCQ-11",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา) / Urine analysis (อ.ธนิศร)",
+  "topic": "Glomerular versus non-glomerular haematuria",
+  "stem": "A 30-year-old woman presents with red-coloured urine. You suspect a glomerular source of bleeding. Which of the following findings would argue AGAINST a glomerular origin?",
+  "choices": [
+   "Dysmorphic red blood cells on phase-contrast microscopy",
+   "Blood clots passed in the urine",
+   "Uniform red discolouration throughout the entire urinary stream",
+   "Red blood cell casts in the urinary sediment",
+   "Associated proteinuria of 1 gram per day"
+  ],
+  "answer": 1,
+  "explain": "กลไกที่ใช้ตัดสิน: เลือดที่ออกจาก **glomerulus** ต้องผ่าน **glomerular basement membrane ที่มีรูเล็กมาก** แล้วเดินทางผ่าน **tubule ที่มี osmolality และ pH เปลี่ยนแปลงรุนแรง** → RBC ถูกบีบและเสียรูป (**dysmorphic, acanthocyte, doughnut cell**) และอาจถูกห่อด้วย **Tamm-Horsfall protein เกิดเป็น RBC cast**\n\nที่สำคัญคือ **tubular fluid มี urokinase และ Tamm-Horsfall protein ซึ่งยับยั้งการแข็งตัวของเลือด** → **เลือดจาก glomerulus จะไม่เกิดลิ่ม (clot)**\n→ ดังนั้น **การมี blood clot ในปัสสาวะบ่งชี้ว่าเลือดออกจากทางเดินปัสสาวะส่วนล่างหรือ ureter/กระเพาะปัสสาวะ/ต่อมลูกหมาก (non-glomerular)** ไม่ใช่จาก glomerulus = คำตอบ\n\nทำไมข้ออื่นสนับสนุน glomerular origin:\n- **Dysmorphic RBC (>80% หรือพบ acanthocyte >5%)**: เกิดจากการถูกบีบผ่าน GBM และ osmotic stress ใน tubule — เป็นตัวบ่งชี้ที่ดีที่สุดอย่างหนึ่ง\n- **RBC cast**: **จำเพาะเกือบสมบูรณ์ (pathognomonic)** ต่อ glomerulonephritis เพราะ cast ก่อตัวได้เฉพาะใน tubule\n- **Proteinuria 1 g/day**: เลือดออกจากทางเดินปัสสาวะส่วนล่างทำให้ protein ในปัสสาวะขึ้นเพียงเล็กน้อย — **proteinuria ที่มีนัยสำคัญร่วมกับ hematuria บ่งถึงโรคที่ glomerulus**\n- **สีแดงสม่ำเสมอทั้งสาย (total haematuria)**: บ่งว่าเลือดผสมมาตั้งแต่ต้นทาง (ไตหรือ ureter); ถ้าเป็น **initial haematuria** (แดงตอนต้น) ชี้ urethra, **terminal haematuria** (แดงตอนปลาย) ชี้ bladder neck/prostate\n\n**แนวทางต่อไป**: ถ้าภาพเป็น **non-glomerular** โดยเฉพาะผู้ป่วยอายุ >40 ปี, สูบบุหรี่, สัมผัสสีย้อม/aromatic amine → ต้องคัด **urothelial carcinoma** ด้วย **cystoscopy + CT urography**; ถ้าเป็น **glomerular** → ตรวจ complement, ANA, ANCA, anti-GBM, serology ไวรัส และพิจารณา renal biopsy\n\n**สาเหตุที่ทำให้ปัสสาวะแดงแต่ \"ไม่ใช่เลือด\" (pseudohaematuria)** ที่ต้องแยกด้วย dipstick + microscopy: **myoglobinuria (rhabdomyolysis), haemoglobinuria (intravascular hemolysis), porphyria, beetroot, rifampicin, phenazopyridine, nitrofurantoin** — dipstick บวกแต่ **ไม่เห็น RBC ใต้กล้อง** ชี้ไปที่ myoglobin/hemoglobin",
+  "pearl": "ชุดคำ \"**smoking + painless gross haematuria**\" = ต้องคิดถึง **bladder cancer** → investigation of choice คือ **cystoscopy** (ออกใน MED34 ครั้งที่ 4 ข้อ 4 และ MED35 ข้อ 35)",
+  "ref": [
+   "MED31 MCQ ข้อ 13 – red urine suspected glomerular disease ไม่ควรเจออะไร → Clot urine",
+   "MED31 OSCE ข้อ 9 – ผู้ป่วยหญิง urine RBC 50-100 protein trace glucose neg WBC 0-1 พบอะไรใน UA → Dysmorphic RBC, doughnut cell",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 4 – Smoking, hematuria what investigate for definite dx → Cystoscope",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 35 – ฉี่เป็นเลือด มี UGIB → UA cast crystal / MRA renal artery",
+   "MED33 MCQ – ผู้หญิงผลตรวจทุกอย่างปกติ เจอ RBC ใน UA 20-30"
+  ]
+ },
+ {
+  "id": "N-MCQ-12",
+  "lec": "14",
+  "lecture": "Nephrotic / Nephritic syndrome (อ.ฉันทิศา)",
+  "topic": "Minimal change disease and its complications",
+  "stem": "A 20-year-old man presents with 1 week of rapidly progressive periorbital and leg oedema. Urine protein is 4+ with a urine protein-to-creatinine ratio of 9 g/g, serum albumin 1.8 g/dL, total cholesterol 420 mg/dL, creatinine 0.9 mg/dL, and urine microscopy shows no red cells and no casts apart from occasional fatty casts. Complement levels, ANA, HBsAg, anti-HCV and anti-HIV are all negative. He is started on prednisolone 1 mg/kg/day. Two days later he develops sudden right flank pain, gross haematuria and a rise in creatinine to 2.1 mg/dL. Which of the following is the most likely explanation?",
+  "choices": [
+   "Steroid-induced acute interstitial nephritis",
+   "Renal vein thrombosis related to the hypercoagulable state of nephrotic syndrome",
+   "Acute kidney injury from intravascular volume depletion after diuresis",
+   "Obstructive uropathy from a ureteric calculus",
+   "Transformation to rapidly progressive glomerulonephritis"
+  ],
+  "answer": 1,
+  "explain": "กลไก: ภาพแรกเข้าได้กับ **minimal change disease (MCD)** — nephrotic รุนแรงที่ onset เร็ว, **renal function ปกติ**, **ปัสสาวะไม่มี RBC/cast (bland sediment)**, serology ลบทั้งหมด, และพบในคนอายุน้อย (MCD เป็นสาเหตุ nephrotic ที่พบบ่อยที่สุดในเด็ก และพบได้ราว 10-15% ในผู้ใหญ่) เกิดจาก **podocyte foot process effacement** โดยไม่เห็นความผิดปกติบน light microscopy (จึงชื่อ \"minimal change\")\n\n**ภาวะ hypercoagulable ของ nephrotic syndrome** เกิดจากหลายกลไกรวมกัน:\n1. **สูญเสีย antithrombin III ทางปัสสาวะ** (MW ใกล้ albumin) → heparin cofactor ลด\n2. **สูญเสีย protein S, plasminogen** และมี **ระดับ protein C/free protein S ที่ผิดปกติ**\n3. **ตับสร้าง fibrinogen, factor V, VIII, vWF เพิ่ม** (เช่นเดียวกับที่สร้าง lipoprotein เพิ่ม)\n4. **platelet hyperaggregability** (จาก hypoalbuminaemia ทำให้ free arachidonic acid สูง และจาก hyperlipidaemia)\n5. **haemoconcentration** จากการใช้ diuretic และ intravascular volume depletion\n→ ความเสี่ยงสูงสุดเมื่อ **albumin <2.0-2.5 g/dL** และสูงเป็นพิเศษใน **membranous nephropathy** แต่เกิดได้ในทุกชนิด\n\n**Renal vein thrombosis (RVT)** จึงมาด้วย **triad: ปวดสีข้างเฉียบพลัน + gross haematuria + การทำงานของไตแย่ลงเฉียบพลัน** (อาจมี proteinuria เพิ่มขึ้นและขนาดไตโตขึ้น) → ยืนยันด้วย **CT venography / MR venography / Doppler ultrasound** และรักษาด้วย **anticoagulation**\n\nทำไมข้ออื่นผิด:\n- **Steroid-induced AIN**: AIN เกิดจากยาเช่น NSAID, PPI, β-lactam, rifampicin, allopurinol — **corticosteroid เป็นการ \"รักษา\" AIN ไม่ใช่สาเหตุ**; และ AIN จะมี **pyuria, WBC cast, eosinophiluria** ไม่ใช่ปวดสีข้างเฉียบพลันกับ gross haematuria\n- **เปลี่ยนเป็น RPGN**: RPGN ดำเนินเป็นสัปดาห์-เดือนโดยมี **dysmorphic RBC, RBC cast, crescent บน biopsy** — MCD **ไม่** เปลี่ยนเป็น RPGN และ bland sediment เดิมของผู้ป่วยขัดกับสิ่งนี้\n- **นิ่วอุดกั้น ureter**: ให้ปวดสีข้างและ haematuria ได้จริง (เป็น distractor ที่ดี) แต่จะมี **ปวดแบบ colicky ร้าวลงขาหนีบ** และ **ไม่อธิบายว่าทำไมเกิดในบริบท nephrotic ที่ albumin 1.8**; การวินิจฉัยต้องเห็นนิ่ว/hydronephrosis\n- **Contrast-induced ATN**: โจทย์ไม่มีประวัติได้รับสารทึบรังสี และ ATN ไม่ทำให้ **ปวดสีข้างเฉียบพลันกับ gross haematuria**\n\nภาวะแทรกซ้อนอื่นของ nephrotic ที่ต้องเฝ้าระวัง: **การติดเชื้อ** (เสีย IgG และ complement factor B → pneumococcus, spontaneous bacterial peritonitis), **AKI จาก intravascular volume depletion**, **ภาวะขาดวิตามิน D และ hypocalcaemia**, **anaemia**, **hypothyroidism** และ **accelerated atherosclerosis**",
+  "pearl": "MCD ในผู้ใหญ่: ต้องคัด **secondary cause** ทุกราย — **NSAID, lithium, interferon, Hodgkin lymphoma และมะเร็งทางโลหิตวิทยา**; ตอบสนองต่อ steroid ดีมาก (>80%) แต่ **relapse บ่อย**",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 66 – 20 yo male heavy proteinuria (nephrotic-range) → Minimal change disease",
+   "MED32 MCQ ข้อ 39 – มาด้วยบวม Dx เป็น minimal change disease ตรวจอีกใน 2 สัปดาห์ไตวาย เป็นไร (choice: RPGN, ...)",
+   "MED32 MCQ ข้อ 21 – Pt. Minimal change disease ให้ steroid น่าจะตอบ AIN",
+   "MED31 past paper – A 37 year old man with generalized edema, albumin 2.8, UA 3+ protein without significant RBC or WBC, scars in linear pattern on arms → heroin abuse (FSGS)"
+  ]
+ },
+ {
+  "id": "N-MCQ-13",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Differentiating AKI from CKD",
+  "stem": "A 64-year-old man is found to have a creatinine of 4.2 mg/dL on his first visit to your clinic. No previous laboratory results are available and he cannot recall any prior illness. Which of the following findings would most strongly support a diagnosis of chronic kidney disease rather than acute kidney injury?",
+  "choices": [
+   "Blood urea nitrogen to creatinine ratio greater than 20 to 1",
+   "Muddy brown granular casts in the urinary sediment",
+   "Oliguria with urine output less than 400 millilitres per day",
+   "Bilaterally small kidneys of 8 centimetres with increased cortical echogenicity and thin cortex on ultrasonography",
+   "Fractional excretion of sodium less than 1 percent"
+  ],
+  "answer": 3,
+  "explain": "หลักการ: การแยก AKI จาก CKD เปลี่ยนแนวทางทั้งหมด (AKI ต้องหาสาเหตุที่แก้ได้อย่างเร่งด่วน; CKD ต้องวางแผนชะลอการเสื่อมและเตรียม renal replacement therapy) โดยเครื่องมือที่ดีที่สุดเมื่อ **ไม่มีผลแลปเดิม** คือ **หลักฐานทาง \"โครงสร้าง\"**\n\n**หลักฐานของความเรื้อรัง (chronicity)**\n1. **ขนาดไตเล็กลงทั้งสองข้าง (<9 cm) ร่วมกับ cortex บางและ echogenicity สูง** — สะท้อน **parenchymal fibrosis และ glomerulosclerosis** ที่ต้องใช้เวลาหลายเดือน-ปี\n2. **Anaemia แบบ normochromic normocytic** (EPO deficiency)\n3. **Hyperphosphataemia, hypocalcaemia, PTH สูง (secondary hyperparathyroidism), renal osteodystrophy**\n4. **การมีอยู่ของ proteinuria/albuminuria เรื้อรังและ HT ที่เป็นมานาน, LVH**\n5. อาการค่อยเป็นค่อยไป ทนต่อ uraemia ได้สูงกว่าที่คาด\n\n(**ข้อยกเว้นที่ต้องรู้**: CKD ที่ไตไม่เล็ก ได้แก่ **diabetic nephropathy ระยะต้น, polycystic kidney disease, amyloidosis, HIVAN, infiltrative disease และ obstructive uropathy**)\n\nทำไมข้ออื่นผิด:\n- **BUN/Cr >20:1**: บ่ง **prerenal state** (ซึ่งเป็นชนิดหนึ่งของ **AKI**) เพราะ BUN ถูกดูดซึมกลับตาม Na/น้ำที่ proximal tubule เมื่อ volume ต่ำ; ยังพบใน GI bleeding, high protein intake, steroid, catabolic state — ไม่ได้บอกความเรื้อรัง\n- **Muddy brown granular cast**: เป็นลักษณะของ **acute tubular necrosis** = AKI ชัดเจน\n- **FENa <1%**: บ่ง **prerenal AKI** (ไตยังสงวน Na ได้ดี) — อย่างไรก็ตามต้องตีความระวังเพราะ FENa <1% พบได้ใน contrast nephropathy, hepatorenal syndrome, glomerulonephritis และใช้ไม่ได้ถ้าได้ diuretic (ให้ใช้ **FEurea <35%** แทน)\n- **Oliguria <400 mL/วัน**: เป็นลักษณะของ **AKI** มากกว่า; ผู้ป่วย CKD ส่วนใหญ่ **ยังมีปัสสาวะปริมาณปกติจนถึงระยะท้ายมาก** (เพราะไตเสีย concentrating ability ทำให้ปัสสาวะเยอะแต่เจือจาง — บางรายมี nocturia เด่น)\n\n**นิยามที่ต้องจำ**: CKD = ความผิดปกติของโครงสร้างหรือการทำงานของไต **นานกว่า 3 เดือน** (eGFR <60 หรือมีหลักฐานความเสียหาย เช่น albuminuria, ความผิดปกติของ sediment, ภาพรังสี หรือพยาธิวิทยา)",
+  "pearl": "โพยเก่าออกซ้ำหลายรุ่นด้วยคำว่า \"**ขนาดไต <8-9 cm**\" และ \"**u/s kidney**\" ว่าเป็นตัวแยก AKI กับ CKD — ส่วนคำตอบ \"BUN/Cr >20\" ที่ปรากฏในโพยบางเล่มนั้นหมายถึงการแยก **prerenal จาก intrinsic AKI** ไม่ใช่แยก acute จาก chronic ต้องระวังอย่าจำสลับ",
+  "ref": [
+   "MED31 MCQ – แยก AKI and CKD : size of kidney < 8 cm / MED31 MCQ ข้อ 70 – AKI vs CKD → size renal more than 8 cm",
+   "MED31 MCQ ข้อ 3 – แยก Acute kidney injury differentiate from CKD (ตามโพย) A. BUN/Cr > 20",
+   "MED32 MCQ ข้อ 47 – แยก AKI ออกจาก CKD ได้ยังไง",
+   "MED33 MCQ – Specific CKD โจทย์บอกว่า kidney เล็กข้างหนึ่งด้วย → u/s kidney / MED31 MCQ ข้อ 102 – Indicate CKD → U/S kidney",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 67 และ 89 – Kidney shrink, thin cortical / Sunken kidney 6 cm → ESRD chronic process",
+   "MED28 MED421 ข้อ 32 – Which of the following is a pathognomonic sign of CKD?"
+  ]
+ },
+ {
+  "id": "N-MCQ-14",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Factor driving progression of CKD",
+  "stem": "A 58-year-old man has chronic kidney disease stage 3b (eGFR 38 mL/min/1.73 m2). He has type 2 diabetes with HbA1c 11 percent, hypertension with home blood pressure averaging 152/92 mmHg, and urine albumin-to-creatinine ratio 850 mg/g. He takes metformin, amlodipine and a sulfonylurea. Which factor is most strongly associated with progression of his kidney disease and should be targeted first?",
+  "choices": [
+   "Albuminuria together with poorly controlled blood pressure and hyperglycaemia, addressed by renin-angiotensin system blockade plus an SGLT2 inhibitor",
+   "Serum phosphate level, addressed by a phosphate binder",
+   "Serum uric acid level, addressed by allopurinol",
+   "Dietary protein intake, addressed by protein restriction to 0.8 grams per kilogram per day",
+   "Haemoglobin level, addressed by an erythropoiesis-stimulating agent"
+  ],
+  "answer": 0,
+  "explain": "กลไกของการเสื่อมใน CKD (**final common pathway**): ไม่ว่าสาเหตุเริ่มต้นจะเป็นอะไร เมื่อ nephron สูญเสียไปจำนวนหนึ่ง nephron ที่เหลือจะเกิด **compensatory hyperfiltration**\n- **glomerular capillary pressure สูงขึ้น** → mechanical stress ต่อ podocyte และ mesangium → **protein รั่วเข้า tubular lumen**\n- **protein ที่ผ่านเข้ามาเป็นพิษต่อ tubular cell โดยตรง** → กระตุ้น NF-κB, TGF-β, complement → **tubulointerstitial inflammation และ fibrosis** (ซึ่งสัมพันธ์กับ prognosis มากกว่า glomerular lesion เอง)\n→ วงจรนี้ทำให้ **ระดับ albuminuria เป็นตัวทำนายการเสื่อมที่ทรงพลังที่สุด** และการลด albuminuria เป็นเป้าหมายการรักษาที่เปลี่ยน outcome\n\n**การรักษาที่ตรงกลไก**\n1. **RAS blockade (ACEI/ARB)** — angiotensin II หดตัว **efferent arteriole** เป็นหลัก; การบล็อกจึง **ลดความดันใน glomerulus (intraglomerular pressure)** → ลด hyperfiltration และลด proteinuria; **คาดหวังว่า Cr จะขึ้นได้ถึง 30% ในช่วงแรกซึ่งเป็นผลที่ต้องการ ไม่ใช่เหตุให้หยุดยา** (ถ้าขึ้นเกินกว่านี้ต้องคัด renal artery stenosis หรือ volume depletion)\n2. **SGLT2 inhibitor** — ยับยั้งการดูดกลับ Na/glucose ที่ proximal tubule → Na ถึง **macula densa มากขึ้น → tubuloglomerular feedback หดตัว afferent arteriole** → ลด intraglomerular pressure; ลดทั้ง CKD progression, CV event และ mortality (DAPA-CKD, EMPA-KIDNEY, CREDENCE) **ทั้งในผู้ที่เป็นและไม่เป็นเบาหวาน**\n3. **คุมความดันโลหิต** เป้าโดยทั่วไป <130/80 mmHg\n4. **คุมน้ำตาล** (ผู้ป่วยนี้ HbA1c 11% ซึ่งสูงมาก) — และพิจารณา **finerenone (non-steroidal MRA)** ในเบาหวานที่มี albuminuria\n\nทำไมข้ออื่นผิด — ทุกข้อเป็นสิ่งที่ต้องดูแลใน CKD แต่ **ไม่ใช่ปัจจัยขับการเสื่อมอันดับแรกและไม่ใช่สิ่งที่ทำก่อน**:\n- **Phosphate binder**: จัดการ CKD-MBD เพื่อลด vascular calcification — ยังไม่มีหลักฐานหนักว่าชะลอการเสื่อมของ GFR\n- **ESA**: แก้ anaemia เพื่อคุณภาพชีวิตและลดการให้เลือด; การแก้ Hb ให้ **สูงเกินไป (>13 g/dL) กลับเพิ่ม stroke และ CV event** (CHOIR/CREATE/TREAT) และไม่ชะลอ CKD\n- **Allopurinol ลดกรดยูริก**: การทดลองแบบสุ่ม (CKD-FIX, PERL) แสดงว่า **การลด uric acid ในผู้ที่ไม่มีอาการ ไม่ชะลอการเสื่อมของไต** — เป็นคำตอบลวงที่ดูน่าเชื่อ\n- **จำกัดโปรตีนอย่างรุนแรง 0.4 g/kg/day**: การจำกัดโปรตีน **พอประมาณ (0.6-0.8 g/kg/day)** อาจช่วยลด uraemic symptom และ proteinuria แต่การจำกัดรุนแรงทำให้เกิด **protein-energy wasting** ซึ่งเพิ่ม mortality อย่างชัดเจน",
+  "pearl": "ปัจจัยเร่ง CKD ที่ต้องคัดทุกครั้งที่ Cr ขึ้นผิดปกติ: **volume depletion, NSAID, contrast, aminoglycoside, การอุดกั้นทางเดินปัสสาวะ (โดยเฉพาะชายสูงอายุที่มี BPH), การติดเชื้อทางเดินปัสสาวะ, HT ที่คุมไม่ได้ และ decompensated HF (cardiorenal)**",
+  "ref": [
+   "MED32 MCQ ข้อ 70 – U/D HTN, DM, CKD ถามว่าอะไรทำให้ CKD progress มากสุด → DM",
+   "MED32 MCQ ข้อ 13 – คนไข้ u/d HT, DM, CKD HbA1C 11% น้ำตาลคุมไม่ดี อะไรทำให้ CKD progress มากสุด → DM",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 51 – คนไข้เป็น prolonged DM แล้วเกิด CKD, CKD นี้เกิดจาก → DM",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 43 – Patho DM nephropathy → glomerular hyperfiltration",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 63 / LMS – ยา DM อะไร renoprotective → SGLT-2 inhibitor",
+   "MED31 MCQ ข้อ 58 – screening DM nephropathy → microalbuminuria"
+  ]
+ },
+ {
+  "id": "N-MCQ-15",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Treating acute gout in CKD stage 3",
+  "stem": "A 66-year-old man with chronic kidney disease stage 3 (eGFR 42 mL/min/1.73 m2) presents with an acutely swollen, red, warm and exquisitely tender first metatarsophalangeal joint. Arthrocentesis shows needle-shaped negatively birefringent crystals and no organisms on Gram stain. He has hypertension and takes losartan and amlodipine. Which of the following is the most appropriate treatment for his acute attack?",
+  "choices": [
+   "Full-dose oral colchicine 1.2 mg followed by 0.6 mg every hour until symptoms resolve",
+   "Oral prednisolone",
+   "Start allopurinol 300 mg daily immediately",
+   "Oral indomethacin at full dose",
+   "Intravenous pegloticase"
+  ],
+  "answer": 1,
+  "explain": "กลไกของ gout: **monosodium urate crystal** ตกตะกอนในข้อ → ถูก phagocytose โดย macrophage → กระตุ้น **NLRP3 inflammasome → caspase-1 → IL-1β** → neutrophil หลั่งไหล เกิดการอักเสบรุนแรงเฉียบพลัน\n\n**การรักษา acute attack มี 3 ทางเลือกหลัก: NSAID, colchicine และ corticosteroid** — การเลือกขึ้นกับโรคร่วม\nในผู้ป่วย **CKD stage 3** คำตอบที่ปลอดภัยที่สุดคือ **corticosteroid (prednisolone 0.5 mg/kg/day 5-10 วัน หรือฉีดเข้าข้อถ้าเป็นข้อเดียว)** — ไม่พึ่งการขับทางไตและไม่กระทบ renal hemodynamics\n\nทำไมข้ออื่นผิด (แต่ละข้อมีกลไกอันตรายเฉพาะ):\n- **Indomethacin ขนาดเต็ม**: NSAID ยับยั้ง **prostaglandin (PGE2, PGI2)** ซึ่งในผู้ป่วย CKD เป็นตัวช่วย **ขยาย afferent arteriole** เพื่อคง GFR → การให้จะทำให้ **AKI ซ้อนบน CKD**; ยิ่งผู้ป่วยใช้ **losartan (ARB) อยู่** ซึ่งขยาย efferent arteriole — การรวม **\"triple whammy\" (NSAID + RAS blocker + diuretic)** เป็นสาเหตุคลาสสิกของ AKI; ยังเสี่ยง hyperkalaemia, Na retention และเลือดออกทางเดินอาหาร\n- **Colchicine ขนาดเต็มแบบไล่ทุกชั่วโมง**: colchicine ถูกขับทางไตและตับ (substrate ของ CYP3A4 และ P-glycoprotein) → ใน CKD เกิด **พิษสะสม: ท้องเสียรุนแรง, myopathy/rhabdomyolysis, neuropathy, bone marrow suppression**; ขนาดแบบไล่ทุกชั่วโมงเป็น **ตารางเก่าที่เลิกใช้แล้ว** (ปัจจุบันใช้ 1.2 mg แล้ว 0.6 mg ที่ 1 ชั่วโมง จบ) และต้องลดขนาดใน CKD; ห้ามใช้ร่วมกับ clarithromycin/statin โดยไม่ระวัง\n- **เริ่ม allopurinol ทันที**: allopurinol เป็น **urate-lowering therapy** ใช้ป้องกันระยะยาว — **การเริ่มระหว่าง acute attack อาจกระตุ้นให้ flare แย่ลง** (ถ้าผู้ป่วยกินอยู่แล้วให้กินต่อ ไม่ต้องหยุด) และต้อง **เริ่มขนาดต่ำแล้วไล่ขึ้น (start low, go slow)** โดยเฉพาะใน CKD เพื่อลดความเสี่ยง **allopurinol hypersensitivity syndrome/SJS-TEN** ซึ่งสัมพันธ์กับ **HLA-B*58:01** (พบบ่อยในคนไทยและเอเชีย จึงควรตรวจก่อนเริ่มยา)\n- **Pegloticase IV**: สงวนไว้สำหรับ **chronic refractory tophaceous gout** ที่ดื้อต่อการรักษาทั้งหมด ไม่ใช่การรักษา acute attack\n\n**ข้อควรทำร่วม**: ดูดน้ำไขข้อส่งตรวจเพื่อ **คัด septic arthritis** เสมอ (ทั้งสองภาวะอยู่ร่วมกันได้), ประคบเย็น, พักข้อ, ทบทวนยาที่กระตุ้น gout (**thiazide, loop diuretic, low-dose aspirin, cyclosporine, pyrazinamide, ethambutol**)",
+  "pearl": "ตัวเลือกยาลดกรดยูริกใน CKD: **allopurinol ยังใช้ได้โดยปรับขนาดและไล่ขึ้นตามระดับ urate (เป้า <6 mg/dL หรือ <5 ถ้ามี tophi)**; **febuxostat** ใช้ได้ใน CKD แต่มีคำเตือนเรื่อง CV; **probenecid ใช้ไม่ได้เมื่อ eGFR <50** และ **ห้ามในผู้ที่มีนิ่วยูริก**",
+  "ref": [
+   "MED32 MCQ ข้อ 52 – CKD stage 3 + gout ให้ยาอะไร → ตอบ Prednisolone",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 41 – ข้อปวด บวม แดง ร้อน management → Arthrocentesis",
+   "MED32 MCQ ข้อ 29 – ข้อใดถูกเกี่ยวกับ gout (choice: ปวด upper limb มากกว่า, Renal ...)",
+   "MED33 MCQ – Gout ให้ colchicine / negative birefringence → Gout → Ibuprofen",
+   "MED31 MCQ ข้อ 12 – กินยา statin ปวดกล้ามเนื้อ Rhabdomyolysis",
+   "MED35 Formative SAQ ข้อ 7 – ผู้ชายปวดข้อ ชอบดื่มเหล้า เจาะน้ำไขข้อพบ needle shape crystal → Gouty arthritis"
+  ]
+ },
+ {
+  "id": "N-MCQ-16",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Indications for urgent dialysis",
+  "stem": "A 59-year-old man with chronic kidney disease stage 5 (eGFR 7 mL/min/1.73 m2) presents with nausea, hiccups and confusion. Vital signs: PR 96/min, BP 168/96 mmHg, RR 28/min. He has a pericardial friction rub, asterixis and bibasilar crepitations. Laboratory results: BUN 142 mg/dL, creatinine 11.8 mg/dL, potassium 6.9 mEq/L with peaked T waves on ECG, bicarbonate 11 mEq/L, pH 7.18. Which of the following best describes the indication for urgent renal replacement therapy in this patient?",
+  "choices": [
+   "Uraemic anorexia and pruritus without pericarditis or encephalopathy",
+   "Severe hyperkalaemia that has responded to medical therapy, without other features",
+   "Refractory hyperkalaemia, severe metabolic acidosis, volume overload and uraemic pericarditis with encephalopathy",
+   "Hypertension that is difficult to control alone",
+   "eGFR below 10 mL/min/1.73 m2 alone"
+  ],
+  "answer": 2,
+  "explain": "หลักการสำคัญ: **ข้อบ่งชี้ของการฟอกเลือดฉุกเฉินตัดสินด้วย \"อาการและภาวะแทรกซ้อน\" ไม่ใช่ตัวเลขของ creatinine, BUN หรือ eGFR เพียงอย่างเดียว** — ผู้ป่วยที่ eGFR 7 แต่ไม่มีอาการอาจยังรอได้และเตรียมตัวแบบไม่ฉุกเฉิน ในขณะที่ผู้ป่วยที่ eGFR สูงกว่าแต่มี hyperkalaemia ที่ดื้อต่อการรักษาต้องฟอกทันที\n\n**จำด้วยอักษรย่อ \"AEIOU\"**\n- **A — Acidosis**: metabolic acidosis รุนแรงที่แก้ด้วยยาไม่ได้ (ผู้ป่วยนี้ pH 7.18, HCO3 11)\n- **E — Electrolyte**: **hyperkalaemia ที่ดื้อต่อการรักษา** (K 6.9 พร้อม ECG เปลี่ยน) หรือ hypercalcaemia/hyperphosphataemia รุนแรง\n- **I — Intoxication**: สารพิษที่ถูกกำจัดด้วย dialysis ได้ (**methanol, ethylene glycol, lithium, salicylate, metformin-associated lactic acidosis, valproate** — จำว่า \"SLIME\")\n- **O — Overload**: volume overload/pulmonary edema ที่ดื้อต่อ diuretic (ผู้ป่วยนี้มี crepitation)\n- **U — Uraemia**: อาการจาก uraemia เช่น **encephalopathy (สับสน, asterixis, สะอึก), pericarditis, เลือดออกจาก platelet dysfunction, คลื่นไส้อาเจียนรุนแรง/เบื่ออาหาร, neuropathy**\n\n**Uraemic pericarditis เป็นข้อบ่งชี้ที่เด่นชัด** เพราะเสี่ยงต่อ **haemorrhagic pericardial effusion และ tamponade** และต้องฟอกแบบ **heparin-free หรือ minimal heparin** เพื่อลดความเสี่ยงเลือดออกในถุงหุ้มหัวใจ\n\nทำไมข้ออื่นผิด: **Cr >10, eGFR <10, BUN >100 หรือ HT ที่คุมยาก ลำพังไม่ใช่ข้อบ่งชี้ฉุกเฉิน** — การทดลองขนาดใหญ่ (IDEAL trial, และ AKIKI/STARRT-AKI ใน AKI) แสดงว่า **การเริ่มฟอกเร็วตามตัวเลขโดยไม่มีข้อบ่งชี้ทางคลินิก ไม่ได้ให้ผลลัพธ์ดีกว่า** แต่เพิ่มความเสี่ยงจากหัตถการ (catheter-related infection, bleeding, hypotension)\n\n**สิ่งที่ต้องทำควบคู่ในเคสนี้**: แก้ **hyperkalaemia ทันที** (IV calcium gluconate เพื่อ stabilize membrane → insulin + glucose และ/หรือ salbutamol เพื่อ shift → binder/dialysis เพื่อขับออก; หยุด ARB/MRA/NSAID/potassium), ให้ NaHCO3 ตามสมควร, จำกัดน้ำและเกลือ, และ **ปรึกษา nephrologist เพื่อใส่สาย dialysis อย่างเร่งด่วน**\n\n**การวางแผนระยะยาว (CKD stage 5)**: ให้ความรู้และให้ผู้ป่วยเลือกวิธี (**haemodialysis, peritoneal dialysis หรือ kidney transplantation**), **สร้าง AV fistula ล่วงหน้าและหลีกเลี่ยงการแทงเส้นที่แขนข้างนั้น**, ฉีดวัคซีนไวรัสตับอักเสบบี, ดูแล anaemia/CKD-MBD/โภชนาการ และพูดคุยเรื่อง **conservative (palliative) care** ในผู้สูงอายุที่มีโรคร่วมมาก",
+  "pearl": "อาการ uraemia ที่ข้อสอบมักใช้เป็นธงแดง: **pericardial friction rub, asterixis, สะอึกไม่หยุด, uraemic frost, คันทั้งตัว, รสโลหะในปาก และ platelet dysfunction ที่ทำให้เลือดออกง่ายโดยที่ platelet count ปกติ**",
+  "ref": [
+   "MED30 MCQ ข้อ 82 – Ans. Hemodialysis",
+   "MED31 past paper – D. Set hemodialysis due to removed myoglobin and correct acidosis",
+   "MED32 MCQ ข้อ 8 – ยาไหนห้ามให้ในคนที่ GFR ต่ำกว่า 10 / MED31 MCQ ข้อ 24 – Cr<10 GFR ต่ำ ให้ยา DM อะไรได้บ้าง",
+   "MED31 MCQ ข้อ 35 – อะไรไม่ช่วย treat hyperkalemia",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 68 – Cardiorenal syndrome → restrict salt, dialysis, fluid resus + loop diuretic"
+  ]
+ },
+ {
+  "id": "N-MCQ-17",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา)",
+  "topic": "Anaemia of chronic kidney disease",
+  "stem": "A 62-year-old woman with chronic kidney disease stage 4 (eGFR 22 mL/min/1.73 m2) is found to have haemoglobin 8.4 g/dL with MCV 88 fL and MCH 30 pg. Peripheral blood smear shows normochromic normocytic red cells without schistocytes. Reticulocyte count is low. Ferritin is 340 ng/mL, transferrin saturation 32 percent, vitamin B12 and folate are normal, and stool occult blood is negative. Which of the following best explains her anaemia and the most appropriate treatment?",
+  "choices": [
+   "Haemolysis from uraemic toxins; treat with corticosteroid",
+   "Dilutional anaemia from volume overload; treat with high-dose furosemide",
+   "Aplastic anaemia; perform bone marrow biopsy and start immunosuppression",
+   "Relative erythropoietin deficiency; treat with an erythropoiesis-stimulating agent targeting haemoglobin 10 to 11.5 g/dL",
+   "Iron deficiency; treat with intravenous iron 1 gram targeting transferrin saturation above 30 percent"
+  ],
+  "answer": 3,
+  "explain": "กลไก: **erythropoietin (EPO)** สร้างโดย **peritubular interstitial fibroblast ใน renal cortex** ที่ตอบสนองต่อ hypoxia ผ่าน **HIF (hypoxia-inducible factor)**\n- ใน CKD เนื้อไตถูกแทนที่ด้วย fibrosis → **การสร้าง EPO ลดลงอย่าง \"ไม่สมสัดส่วน\" กับระดับ Hb ที่ต่ำ (relative/inappropriate EPO deficiency)**\n- ร่วมกับกลไกเสริม: **uraemic toxin ยับยั้ง erythropoiesis, อายุ RBC สั้นลง, การอักเสบเรื้อรังทำให้ hepcidin สูง → functional iron deficiency, การขาดสารอาหาร และเสียเลือดจาก platelet dysfunction/การฟอกเลือด**\n→ ผลคือ **normochromic normocytic anaemia ที่ reticulocyte ต่ำ** ตรงกับโจทย์ และมักเริ่มเห็นชัดเมื่อ **eGFR <30-45**\n\n**การรักษาที่ถูกต้อง**: เมื่อ **คลังเหล็กเพียงพอแล้ว** (ferritin 340 และ TSAT 32% = เพียงพอตามเกณฑ์ CKD คือ ferritin >100-200 และ TSAT >20%) และ **คัดสาเหตุอื่นออกแล้ว** (B12/folate ปกติ, ไม่มีเลือดออก, ไม่มี hemolysis) → ให้ **ESA (erythropoiesis-stimulating agent)** โดยเป้า **Hb 10-11.5 g/dL**\n\n**เหตุผลที่ห้ามทำ Hb ให้ถึงระดับปกติ**: การทดลอง **CHOIR, CREATE และ TREAT** แสดงว่าการตั้งเป้า Hb >13 g/dL **เพิ่ม stroke, thromboembolism, การตายและ CV event** (โดยเฉพาะในผู้ป่วยเบาหวาน) — เชื่อว่าเกิดจากทั้งความหนืดของเลือดที่เพิ่มและผลของ ESA ขนาดสูงเองในผู้ที่ \"ดื้อ\"\n\nทำไมข้ออื่นผิด:\n- **Iron deficiency เป้า ferritin >800**: โจทย์มีเหล็กเพียงพอ (ferritin 340, TSAT 32%) และ MCV/MCH ปกติ (IDA จะเป็น **hypochromic microcytic**, ferritin ต่ำ, TSAT ต่ำ, TIBC สูง); การไล่ ferritin >800 เสี่ยง **iron overload และเพิ่มความเสี่ยงการติดเชื้อ**\n- **Haemolysis จาก uraemic toxin + steroid**: uraemia ย่น RBC survival ได้บ้างแต่ไม่ใช่กลไกหลัก; และถ้าเป็น hemolysis จริงจะมี **reticulocyte สูง, LDH สูง, indirect bilirubin สูง, haptoglobin ต่ำ, schistocyte/spherocyte** — โจทย์มี **reticulocyte ต่ำ** และ smear ปกติ; steroid ใช้รักษา **autoimmune** hemolysis ไม่ใช่ภาวะนี้\n- **Aplastic anaemia**: จะมี **pancytopenia (ทั้ง WBC และ platelet ต่ำ)** — โจทย์ผิดปกติเฉพาะ Hb\n- **Dilutional anaemia + furosemide ขนาดสูง**: volume overload ทำให้ Hb ดูต่ำลงได้เล็กน้อยจริง แต่ไม่อธิบาย Hb 8.4 กับ reticulocyte ต่ำ; การให้ furosemide ขนาดสูงเพื่อ \"แก้ซีด\" เสี่ยงทำให้เกิด volume depletion และ AKI ซ้อน",
+  "pearl": "ลำดับการดูแล anaemia ใน CKD: **(1) คัดสาเหตุอื่นก่อน (เลือดออก, B12/folate, hemolysis, myeloma, ไทรอยด์, การอักเสบ) (2) เติมเหล็กให้พอก่อน (เพราะ ESA จะใช้เหล็กจำนวนมาก ถ้าไม่เติมจะเกิด functional iron deficiency และดื้อ ESA) (3) จึงให้ ESA เป้า Hb 10-11.5**; ถ้าดื้อ ESA ต้องคิดถึง **การอักเสบ, การติดเชื้อ, hyperparathyroidism รุนแรง, aluminium toxicity หรือ pure red cell aplasia จาก anti-EPO antibody**",
+  "ref": [
+   "MED28 MED421 Medicine I ข้อ 32 – Which of the following is a pathognomonic sign of CKD?",
+   "MED32 MEQ ข้อ 2.4 – แปลผลแลปที่ผิดปกติ >> anemia, mild hyponatremia, hypokalemia, hypercalcemia",
+   "MED31 past paper – Lab studies Hct 25%, Platelet 340,000, BUN/Cr 22/1.8, 24 hr protein 5.2 gram (โจทย์ CKD ที่มีซีดร่วม)",
+   "MED30 สรุป Renal – ภาวะแทรกซ้อนของ CKD"
+  ]
+ },
+ {
+  "id": "N-MCQ-18",
+  "lec": "19",
+  "lecture": "Chronic kidney disease (อ.วรางคณา) / Divalent (อ.ธิติยา)",
+  "topic": "Hyperphosphataemia management in CKD",
+  "stem": "A 57-year-old man on maintenance haemodialysis has a persistently elevated serum phosphate of 7.4 mg/dL despite dietary counselling. Corrected calcium is 10.4 mg/dL, intact PTH 380 pg/mL, and a plain radiograph shows extensive medial arterial calcification. Which of the following is the most appropriate phosphate-lowering strategy?",
+  "choices": [
+   "Calcium carbonate 1 gram three times daily taken between meals",
+   "A non-calcium-based phosphate binder taken with meals",
+   "Further dietary phosphate restriction alone without a binder",
+   "Calcium acetate taken with meals",
+   "Increase the dose of active vitamin D to improve calcium absorption"
+  ],
+  "answer": 1,
+  "explain": "กลไก: ใน CKD ระยะท้าย ไตขับ phosphate ไม่ได้ → **hyperphosphataemia** ซึ่งเป็นตัวขับสำคัญของ\n1. **Secondary hyperparathyroidism** (กระตุ้น PTH ทั้งโดยตรงและผ่าน FGF-23 ที่ยับยั้ง calcitriol)\n2. **Vascular calcification** — phosphate ที่สูงทำให้ **vascular smooth muscle cell เปลี่ยนสภาพเป็น osteoblast-like cell (osteogenic transdifferentiation)** เกิดการสะสมแคลเซียมในผนังหลอดเลือด → **arterial stiffness, LVH, CV mortality สูง** ซึ่งเป็นสาเหตุการตายอันดับหนึ่งของผู้ป่วย dialysis\n3. สัมพันธ์กับ **mortality** อย่างเป็นเส้นตรง\n\n**Phosphate binder ต้องกินพร้อมอาหาร** เพราะออกฤทธิ์โดย **จับ phosphate ในลำไส้เพื่อไม่ให้ดูดซึม** (ถ้ากินตอนท้องว่างจะไม่มีอะไรให้จับ)\n\nในผู้ป่วยรายนี้ที่มี **calcium อยู่ปลายบน (10.4) และมี vascular calcification ชัดเจน** → ต้อง **หลีกเลี่ยงการเพิ่ม calcium load** จึงเลือก **non-calcium-based binder** เช่น **sevelamer, lanthanum carbonate, sucroferric oxyhydroxide, ferric citrate** (มีข้อมูลว่าลด progression ของ coronary calcification เทียบกับ calcium-based binder)\n\nทำไมข้ออื่นผิด:\n- **Calcium carbonate ระหว่างมื้อ**: ผิดสองชั้น — (ก) **กินระหว่างมื้อทำให้ไม่ได้ทำหน้าที่ binder** กลับถูกดูดซึมเป็น calcium supplement (ข) เพิ่ม **calcium load** ในผู้ที่ Ca ปลายบนและมี calcification อยู่แล้ว → เร่ง vascular calcification และเสี่ยง **calciphylaxis**\n- **เพิ่ม active vitamin D**: calcitriol/analogue เพิ่มการดูดซึม **ทั้ง Ca และ PO4** จากลำไส้ → **PO4 ยิ่งสูงและ Ca ยิ่งสูง** → ซ้ำเติม calcification (ยามีที่ใช้เพื่อกด PTH แต่ต้องใช้เมื่อ Ca และ PO4 ควบคุมได้; ถ้า Ca สูงควรเลือก **calcimimetic เช่น cinacalcet** ซึ่งลด PTH โดย **ลด** Ca และ PO4)\n- **IV calcium gluconate สัปดาห์ละ 3 ครั้ง**: ไม่มีข้อบ่งชี้เลย (ใช้รักษา symptomatic hypocalcaemia/hyperkalaemia) และจะเพิ่ม calcium-phosphate product อย่างมาก\n- **จำกัดโปรตีน 0.3 g/kg/day**: การจำกัด phosphate ในอาหารมีบทบาทจริง (เน้นเลี่ยง **phosphate additive ในอาหารแปรรูป, น้ำอัดลมสีเข้ม, เครื่องในสัตว์, นม/ชีส**) แต่ผู้ป่วยฟอกเลือดต้องการโปรตีน **1.0-1.2 g/kg/day** เพราะสูญเสียกรดอะมิโนระหว่างการฟอก — การจำกัดรุนแรงทำให้เกิด **protein-energy wasting** ซึ่งเพิ่ม mortality สูงมาก\n\n**มาตรการครบชุดของการคุม phosphate**: จำกัด phosphate ในอาหาร (เน้น additive) → **phosphate binder พร้อมมื้อ** → **เพิ่มประสิทธิภาพ/ความถี่ของการฟอกเลือด** → คุม PTH ด้วย calcimimetic/vitamin D analogue → **parathyroidectomy** ถ้า refractory",
+  "pearl": "**Calciphylaxis** (calcific uraemic arteriolopathy) — แผลเนื้อตายที่เจ็บรุนแรงบริเวณขา/ลำตัว ในผู้ป่วย dialysis ที่มี Ca x PO4 product สูง, ใช้ warfarin, หรือได้ calcium/vitamin D มาก — prognosis แย่มาก ต้องหยุด calcium/vitamin D/warfarin และพิจารณา sodium thiosulfate",
+  "ref": [
+   "MED33 MCQ – เป็น ESRD > Most common cause of Hypocalcemia → น่าจะตอบข้อ Phosphate",
+   "MED30 สรุป Renal – phosphate, magnesium",
+   "MED28 MED421 – ข้อที่มี choice Hyperphosphatemia ในบริบทไตวาย",
+   "MED32 MEQ – แปลผลแลปผิดปกติในผู้ป่วยไตวาย"
+  ]
+ },
+ {
+  "id": "N-MCQ-19",
+  "lec": "22",
+  "lecture": "Fluid electrolytes: Dysnatremia & Dyskalemia (อ.ชุมพล)",
+  "topic": "Hypovolaemic hyponatraemia",
+  "stem": "A 72-year-old woman presents with 3 days of vomiting and poor oral intake, now drowsy. Vital signs: PR 112/min, BP 92/58 mmHg lying and 74/48 mmHg sitting, dry mucous membranes, skin turgor decreased, JVP not visible. Laboratory results: sodium 105 mEq/L, potassium 3.4 mEq/L, chloride 72 mEq/L, bicarbonate 28 mEq/L, BUN 38 mg/dL, creatinine 1.4 mg/dL, serum osmolality 228 mOsm/kg, urine osmolality 620 mOsm/kg, urine sodium 8 mEq/L. She has no seizures. Which of the following is the most appropriate initial treatment?",
+  "choices": [
+   "Fluid restriction to 800 mL per day",
+   "Intravenous 3 percent hypertonic saline 150 mL bolus repeated until sodium reaches 130 mEq/L",
+   "Oral tolvaptan",
+   "Intravenous 0.9 percent sodium chloride with frequent monitoring of serum sodium",
+   "Intravenous furosemide plus potassium supplementation"
+  ],
+  "answer": 3,
+  "explain": "**ขั้นที่ 1 — ยืนยันว่าเป็น hypotonic hyponatraemia จริง**: serum osmolality 228 (ต่ำ) → **hypotonic** (ถ้า osmolality ปกติ/สูงต้องคิดถึง pseudohyponatraemia จาก hyperlipidaemia/hyperproteinaemia หรือ translocational จาก hyperglycaemia/mannitol)\n\n**ขั้นที่ 2 — ประเมิน volume status**: orthostatic hypotension, tachycardia, mucous membrane แห้ง, skin turgor ลด, **JVP มองไม่เห็น**, **BUN/Cr ratio สูง (38/1.4 ≈ 27)** → **hypovolaemic**\n\n**ขั้นที่ 3 — อ่าน urine indices ให้เข้ากับกลไก**: **urine Na 8 mEq/L (<20)** = ไตกำลัง **สงวน Na อย่างสุดความสามารถ** → ยืนยัน extrarenal loss (อาเจียน) และตัด SIADH ออก (SIADH จะมี **urine Na >30-40 ร่วมกับ euvolaemia**); **urine osmolality 620 (เข้มข้น)** อธิบายได้ด้วย **ADH ที่หลั่งจากการกระตุ้นของ baroreceptor (non-osmotic stimulus)** ซึ่งเป็นกลไกที่ทำให้ Na ต่ำลง\n\n**กลไกโดยรวม**: อาเจียนเสียทั้ง Na และน้ำ แต่ผู้ป่วยดื่มน้ำเปล่าชดเชย + **hypovolaemia กระตุ้น ADH อย่างแรง** (ร่างกายเลือกรักษาปริมาตรมากกว่ารักษาความเข้มข้น) → น้ำถูกเก็บไว้ → **dilutional hyponatraemia**; การอาเจียนยังทำให้เกิด **metabolic alkalosis (HCO3 28) และ hypokalaemia** ตรงกับโจทย์\n\n**การรักษา: ให้ 0.9% NaCl** — เมื่อแก้ volume depletion แล้ว **ADH stimulus หายไป → ไตขับน้ำส่วนเกินออกเองอย่างรวดเร็ว (water diuresis)** ซึ่งเป็นเหตุที่ทำให้ **Na อาจขึ้นเร็วเกินไป** จึงต้อง **ตรวจ Na ซ้ำทุก 2-4 ชั่วโมง** และพร้อมจะ **ชะลอด้วย 5% dextrose ± desmopressin** ถ้าขึ้นเร็วเกินขีด\n\n**ขีดจำกัดความเร็วที่ต้องจำ**: ไม่เกิน **8-10 mEq/L ใน 24 ชั่วโมง** (บางแนวทางแนะนำ ≤8 และในกลุ่มความเสี่ยงสูงคือ ≤6) เพราะการแก้เร็วเกินทำให้เกิด **osmotic demyelination syndrome (ODS)** — ความเสี่ยงสูงเป็นพิเศษใน **Na ต่ำเรื้อรังและรุนแรง, โรคพิษสุราเรื้อรัง, ทุพโภชนาการ, hypokalaemia, โรคตับ** ซึ่งผู้ป่วยรายนี้เข้าข่าย (Na 105 และ K ต่ำ)\n\nทำไมข้ออื่นผิด:\n- **3% hypertonic saline ตามที่เขียนใน choice นี้**: ผิดที่ **\"ซ้ำจนถึง 130 mEq/L\"** ซึ่งเป็นการยก Na ขึ้น 25 mEq/L = เกินขีดอย่างมหาศาล → ODS แน่นอน\n  *(ข้อควรรู้: ภาวะ drowsy ถือเป็น **moderately severe symptom** ซึ่งแนวทางยอมให้ **3% bolus 100-150 mL ครั้งเดียว** เพื่อยก Na ขึ้น 4-6 mEq/L ได้ — แต่ **isotonic saline ยังเป็นการรักษา \"ปริมาตรที่ขาด\" ซึ่งเป็นต้นเหตุ** และไม่ว่าจะใช้ทางใด **เพดาน 8-10 mEq/L ใน 24 ชม. ต้องไม่ถูกละเมิด**)\n- **Fluid restriction**: เป็นการรักษาของ **SIADH/euvolaemic hyponatraemia** — ใช้ในผู้ป่วย **hypovolaemic จะซ้ำเติม** ทำให้ perfusion แย่ลงและ AKI\n- **Furosemide + K**: loop diuretic ขับทั้ง Na และน้ำ → ยิ่ง volume ต่ำ (ใช้ใน **hypervolaemic hyponatraemia** เช่น HF/cirrhosis)\n- **Tolvaptan**: vasopressin V2 receptor antagonist ทำให้เกิด aquaresis — ใช้ใน euvolaemic/hypervolaemic hyponatraemia; **ห้ามใช้ใน hypovolaemia** และมีความเสี่ยงแก้ Na เร็วเกินไปจนเกิด ODS รวมถึง hepatotoxicity",
+  "pearl": "อัลกอริทึม hyponatraemia: **osmolality → volume status → urine Na และ urine osmolality**. Urine Na <20 = extrarenal loss (อาเจียน ท้องเสีย เหงื่อ third space); Urine Na >20 ในผู้ที่ hypovolaemic = renal loss (diuretic, adrenal insufficiency, cerebral salt wasting, salt-losing nephropathy)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 81 – hyponatremia 105 แล้วมี vomiting → hyponatremia hypovolemia: ให้ NSS vs 3% NaCl",
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (CVS ข้อ 3) – Hypertension มาด้วยซึม อ่อนแรง on thiazide Na 105 management",
+   "MED31 MCQ ข้อ 32 – ผู้ป่วยมีแลป Na 100 กว่า Cl 70 กว่า BUN Cr สูง ควรให้อะไร (choice: Furosemide, 3%NaCl + Furosemide)",
+   "MED30 MCQ ข้อ 44 – Na 112 มี hypovolemic event",
+   "MED33 MCQ – Hypovolemic shock Na ต่ำ BUN Cr สูง → ให้ 3%",
+   "MED35 FA MCQ ข้อ 17 – Na 114, K 4.1 ไม่ให้อะไร (choice: K supplement, 0.9% NaCl)",
+   "MED30 สรุป – hypovolemic hyponatremia / euvolemic"
+  ]
+ },
+ {
+  "id": "N-MCQ-20",
+  "lec": "22",
+  "lecture": "Fluid electrolytes: Dysnatremia & Dyskalemia (อ.ชุมพล)",
+  "topic": "SIADH from small cell lung cancer",
+  "stem": "A 66-year-old man with a 40 pack-year smoking history is found to have a right hilar mass on chest radiograph. He is admitted for confusion. Vital signs: PR 82/min, BP 124/78 mmHg, no oedema, JVP 3 cm above the sternal angle, moist mucous membranes, normal skin turgor. Laboratory results: sodium 116 mEq/L, potassium 4.0 mEq/L, BUN 8 mg/dL, creatinine 0.7 mg/dL, serum osmolality 248 mOsm/kg, urine osmolality 540 mOsm/kg, urine sodium 68 mEq/L, uric acid 2.1 mg/dL, TSH and morning cortisol normal. Which of the following is the most likely diagnosis and the most appropriate initial management?",
+  "choices": [
+   "Cerebral salt wasting; intravenous 0.9 percent saline with sodium supplementation",
+   "Syndrome of inappropriate antidiuretic hormone secretion from small cell lung carcinoma; fluid restriction with treatment of the underlying tumour",
+   "Hypervolaemic hyponatraemia from heart failure; furosemide and fluid restriction",
+   "Psychogenic polydipsia; fluid restriction and psychiatric referral",
+   "Primary adrenal insufficiency; intravenous hydrocortisone and fluid resuscitation"
+  ],
+  "answer": 1,
+  "explain": "กลไก: **small cell lung carcinoma (SCLC)** มีต้นกำเนิดจาก neuroendocrine cell จึง **สร้างและหลั่ง ADH (vasopressin) แบบ ectopic** โดยไม่ขึ้นกับ osmolality ปกติ → **SIADH**\n- ADH จับ **V2 receptor ที่ collecting duct** → เพิ่ม **aquaporin-2** → ดูดซึมน้ำกลับ → **น้ำคั่ง (water retention) โดยไม่ได้คั่ง Na** → **dilutional hyponatraemia ที่ euvolaemic**\n- ร่างกายชดเชยด้วยการ **ขับ Na ออก (ผ่าน ANP/BNP และ pressure natriuresis)** เพื่อไม่ให้ volume overload → จึงมี **urine Na สูง (>30-40)** และ **ไม่มี edema**\n\n**เกณฑ์วินิจฉัย SIADH (ตรงกับโจทย์ทุกข้อ)**\n1. **Hypotonic hyponatraemia** (Na 116, serum osm 248 <275)\n2. **Urine osmolality สูงไม่เหมาะสม >100 mOsm/kg** (540 — ไตควรขับปัสสาวะเจือจางเมื่อเลือดจาง แต่กลับเข้มข้น)\n3. **Urine Na >30-40 mEq/L** (68)\n4. **Euvolaemia ทางคลินิก** (ไม่มี edema, JVP ปกติ, mucous membrane ชุ่ม, BP ปกติ)\n5. **คัดสาเหตุอื่นออกแล้ว**: thyroid และ adrenal function ปกติ, ไม่ได้ใช้ diuretic, renal function ปกติ\n6. **เบาะแสเสริม: BUN ต่ำ (8) และ uric acid ต่ำ (2.1)** — ทั้งคู่ถูกเจือจางและขับออกมากขึ้นจาก volume expansion เล็กน้อย ซึ่งเป็น **hallmark ที่ช่วยแยก SIADH จาก hypovolaemic hyponatraemia** (ซึ่ง BUN และ uric acid จะ **สูง**)\n\n**การรักษา**: **จำกัดน้ำ (<800-1000 mL/วัน)** เป็นหลัก + **รักษามะเร็งต้นเหตุ** (SCLC ตอบสนองต่อเคมีบำบัดดี และ SIADH มักดีขึ้นตามการตอบสนองของมะเร็ง); ถ้า Na ไม่ขึ้นพิจารณา **เพิ่มเกลือ/โปรตีนในอาหาร, urea, loop diuretic ร่วมกับเกลือ, tolvaptan** (จำกัดการใช้เพราะราคาและความเสี่ยงแก้เร็วเกิน) และ **demeclocycline** (ใช้น้อยลง)\n- ถ้ามี **ชักหรือซึมรุนแรง** → ให้ **3% hypertonic saline 100-150 mL bolus** แล้วค่อยจำกัดน้ำ โดยยึดขีด **≤8-10 mEq/L/24 ชม.** เพื่อกัน ODS\n\nทำไมข้ออื่นผิด:\n- **Cerebral salt wasting (CSW)**: **แยกจาก SIADH ยากที่สุด** เพราะ urine Na สูงทั้งคู่ — จุดต่างคือ CSW ผู้ป่วย **hypovolaemic** (ปัสสาวะออกมาก, น้ำหนักลด, CVP ต่ำ, BUN/uric acid สูง) และเกิดในบริบท **โรคทางระบบประสาท โดยเฉพาะ subarachnoid haemorrhage** — โจทย์นี้ euvolaemic, BUN และ uric acid **ต่ำ** และมีก้อนที่ปอด จึงเป็น SIADH; ที่สำคัญการรักษาสวนทางกัน (CSW ต้องให้เกลือและน้ำ, SIADH ต้องจำกัดน้ำ) จึงต้องแยกให้ถูก\n- **Primary adrenal insufficiency**: จะมี **Na ต่ำ + K สูง** (aldosterone ขาด), hypotension, hyperpigmentation, eosinophilia และ **cortisol ต่ำ** — โจทย์ K 4.0 ปกติและ cortisol ปกติ\n- **Psychogenic polydipsia**: ดื่มน้ำมหาศาลเกินความสามารถในการขับ → **urine osmolality ต่ำมาก (<100) และปัสสาวะเจือจางปริมาณมาก** — ตรงข้ามกับ urine osm 540 ในโจทย์\n- **Hypervolaemic hyponatraemia จาก HF**: ต้องมี **edema, JVP สูง, crepitation, S3** และ **urine Na ต่ำ (<20)** เพราะไตสงวน Na — โจทย์ไม่มี edema และ urine Na สูง",
+  "pearl": "สาเหตุ SIADH จำเป็น 5 กลุ่ม: **มะเร็ง (SCLC เป็นต้นแบบ), โรคปอด (pneumonia, TB), โรคระบบประสาท (stroke, meningitis, SAH, trauma), ยา (SSRI, carbamazepine, cyclophosphamide, vincristine, NSAID, desmopressin, MDMA) และหลังผ่าตัด/ปวด/คลื่นไส้**. Paraneoplastic syndrome ของ SCLC ที่ออกสอบบ่อย: **SIADH, Cushing จาก ectopic ACTH, Lambert-Eaton myasthenic syndrome, ภาวะทางระบบประสาทจาก anti-Hu**",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 61 – Small cell lung cancer → SIADH",
+   "MED32 MCQ ข้อ 5 – postpartum hemorrhage what cause hyponatremia → loss ACTH",
+   "MED30 MCQ ข้อ 12 – Serum K 2.5 Type 2 DM → Primary adrenal insufficiency",
+   "MED30 สรุป – hypovolemic hyponatremia / euvolemic / adrenal insufficiency",
+   "MED31 past paper – ผู้ป่วยชายอายุ 27 ปี subarachnoid hemorrhage หลังผ่าตัด 3 วันแขนขวาอ่อนแรง (choice: vasospasm, hyponatremia)"
+  ]
+ }
+]

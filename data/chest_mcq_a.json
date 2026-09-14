@@ -1,0 +1,458 @@
+[
+ {
+  "id": "CH-MCQ-01",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Latent tuberculosis infection in a household contact",
+  "stem": "A 28-year-old healthy woman is the household contact of her father, who has just been diagnosed with smear-positive pulmonary tuberculosis. She is asymptomatic with a normal chest radiograph. An interferon-gamma release assay is positive. She is not pregnant, has normal liver function and takes no medication. Which of the following is the most appropriate management?",
+  "choices": [
+   "Treat for latent tuberculosis infection after active disease has been excluded",
+   "Start the standard four-drug regimen for active tuberculosis",
+   "Observe without treatment and repeat the chest radiograph in 1 year",
+   "Give BCG vaccination now",
+   "Start isoniazid only if she develops cough or fever"
+  ],
+  "answer": 0,
+  "explain": "**แยกแนวคิดให้ชัด: latent TB infection (LTBI) ไม่ใช่โรค แต่คือการมีเชื้อที่ร่างกายควบคุมไว้ได้**\n\n| | **LTBI** | **Active TB** |\n|---|---|---|\n| อาการ | **ไม่มี** | ไอเรื้อรัง ไข้ เหงื่อกลางคืน น้ำหนักลด |\n| CXR | **ปกติ** | ผิดปกติ (infiltrate, cavity) |\n| แพร่เชื้อ | **ไม่แพร่** | แพร่ได้ |\n| การรักษา | **ยาตัวเดียวหรือสองตัว ระยะสั้น** | **สูตร 4 ตัว 6 เดือน** |\n\n**ลำดับที่ถูกต้อง**: (1) **คัด active disease ให้แน่ใจก่อนเสมอ** ด้วยอาการ + CXR (± ส่งเสมหะถ้ามีเบาะแส) เพราะการให้ยาตัวเดียวในผู้ที่เป็น active TB จะ **สร้างเชื้อดื้อยา** (2) เมื่อแน่ใจว่าเป็น LTBI จึงรักษา\n\n**สูตร LTBI ที่ใช้ปัจจุบัน**: **3HP (isoniazid + rifapentine สัปดาห์ละครั้ง 12 ครั้ง)**, **4R (rifampicin 4 เดือน)**, **3HR (3 เดือน)** หรือ **6-9H (isoniazid 6-9 เดือน)** — สูตรที่มี rifamycin สั้นกว่าและผู้ป่วยกินครบมากกว่า\n\n**กลุ่มที่ควรคัดกรองและรักษา LTBI**: ผู้สัมผัสใกล้ชิดผู้ป่วย TB, **ผู้ติดเชื้อ HIV**, ผู้ที่จะได้รับ **anti-TNF หรือยากดภูมิ**, ผู้ป่วยฟอกไต, ผู้รับการปลูกถ่ายอวัยวะ, silicosis\n\nทำไมข้ออื่นผิด\n- **สูตร 4 ตัว**: เกินความจำเป็นและมีพิษมากกว่าใน LTBI\n- **สังเกตอาการเฉยๆ**: **ความเสี่ยงกลายเป็น active สูงสุดใน 2 ปีแรกหลังสัมผัส** การรักษา LTBI ลดความเสี่ยงได้ 60-90%\n- **BCG**: ป้องกัน **disseminated TB และ TB meningitis ในเด็กเล็ก** ไม่มีที่ใช้ในผู้ใหญ่ที่ติดเชื้อแล้ว\n- **รอจนมีอาการ**: คือปล่อยให้เป็นโรคและแพร่เชื้อ",
+  "pearl": "**IGRA เหนือกว่า TST ในผู้ที่เคยฉีด BCG** เพราะไม่ข้ามปฏิกิริยากับ BCG และ NTM ส่วนใหญ่; ทั้งสองวิธี **แยก latent จาก active ไม่ได้** และ **ผลลบไม่ตัดโรค** โดยเฉพาะในผู้ที่ภูมิคุ้มกันต่ำ",
+  "ref": [
+   "MED32 MCQ ข้อ 19 – คนไหนเสี่ยง MDR TB → close contact MDR TB",
+   "MED32 MCQ ข้อ 32 – ให้อาการ extrapulmonary TB ทำยังไงดี (ไม่ต้อง admit, admit ห้องแยก, face mask)",
+   "MED35 MEQ – ซักประวัติปฏิเสธประวัติครอบครัวเป็นวัณโรค และบอกวิธีแพร่กระจายของเชื้อวัณโรค"
+  ]
+ },
+ {
+  "id": "CH-MCQ-02",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Anti-tuberculous therapy in pregnancy",
+  "stem": "A 26-year-old woman at 12 weeks of gestation is diagnosed with smear-positive pulmonary tuberculosis. Which anti-tuberculous drug must be avoided during her pregnancy?",
+  "choices": [
+   "Streptomycin",
+   "Isoniazid",
+   "Rifampicin",
+   "Pyrazinamide",
+   "Ethambutol"
+  ],
+  "answer": 0,
+  "explain": "**Streptomycin เป็น aminoglycoside ที่ผ่านรกได้และเป็นพิษต่อ cranial nerve VIII ของทารก** → ทำให้เกิด **congenital sensorineural deafness และ vestibular damage ถาวร** จึงเป็น **ข้อห้ามเด็ดขาดในการตั้งครรภ์** (เช่นเดียวกับ aminoglycoside ตัวอื่น: amikacin, kanamycin, capreomycin)\n\n**ยาที่ปลอดภัยและใช้ได้ในครรภ์**: **isoniazid, rifampicin, ethambutol** และในแนวทางของ WHO **pyrazinamide ก็ใช้ได้** (ข้อมูลความปลอดภัยจำกัดกว่าแต่ประโยชน์มากกว่าความเสี่ยง) → สูตรมาตรฐาน **2HRZE/4HR ใช้ได้ในครรภ์**\n\n**สิ่งที่ต้องทำเพิ่มในหญิงตั้งครรภ์ที่เป็นวัณโรค**\n1. **ให้ pyridoxine (vitamin B6) ทุกราย** ที่ได้ isoniazid\n2. **ให้ vitamin K แก่แม่ในช่วงท้ายและแก่ทารกแรกเกิด** เพราะ **rifampicin เหนี่ยวนำเอนไซม์ตับ → ลด vitamin K-dependent clotting factor → เสี่ยงเลือดออกในทารกแรกเกิด**\n3. **ติดตามค่าตับใกล้ชิด** เพราะการตั้งครรภ์เพิ่มความเสี่ยง hepatotoxicity\n4. **ให้นมบุตรได้** — ยาผ่านน้ำนมในปริมาณน้อยมาก และการแยกแม่ลูกทำเฉพาะเมื่อแม่ยังแพร่เชื้อ\n\n**วัณโรคที่ไม่รักษาอันตรายต่อทั้งแม่และทารกมากกว่าผลข้างเคียงของยา** (เพิ่มการแท้ง คลอดก่อนกำหนด ทารกน้ำหนักน้อย) → **ห้ามเลื่อนการรักษาเพราะกลัวยา**\n\nทำไมข้ออื่นไม่ใช่: INH, RIF, EMB, PZA ล้วนอยู่ในสูตรที่แนะนำสำหรับหญิงตั้งครรภ์",
+  "pearl": "ยาวัณโรคแนวที่สองที่ **ห้ามในครรภ์** เพิ่มเติม: **fluoroquinolone, ethionamide (teratogenic ชัด), aminoglycoside ทุกตัว**",
+  "ref": [
+   "MED31 past paper – ยาในข้อใดเหมาะสมที่สุดในการรักษา hypertension ในคนท้อง (หลักการความปลอดภัยของยาในครรภ์)",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 13 – Pregnant woman GA 8 wk ยา thyroid → PTU",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 48 – UTI ในหญิงตั้งครรภ์ → Amoxicillin"
+  ]
+ },
+ {
+  "id": "CH-MCQ-03",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Tuberculous meningitis – CSF profile and adjunctive therapy",
+  "stem": "A 32-year-old man presents with 3 weeks of headache, low-grade fever and progressive drowsiness, followed by a left sixth cranial nerve palsy. Lumbar puncture shows opening pressure 28 cmH2O, clear but slightly xanthochromic fluid, WBC 220 cells/microlitre with 85 percent lymphocytes, protein 180 mg/dL and CSF glucose 28 mg/dL with simultaneous blood glucose 100 mg/dL. Which diagnosis is most likely, and which adjunctive treatment improves survival?",
+  "choices": [
+   "Tuberculous meningitis; adjunctive corticosteroid",
+   "Cryptococcal meningitis; adjunctive serial lumbar punctures only",
+   "Bacterial meningitis; adjunctive corticosteroid",
+   "Viral meningoencephalitis; adjunctive acyclovir",
+   "Carcinomatous meningitis; adjunctive intrathecal chemotherapy"
+  ],
+  "answer": 0,
+  "explain": "**อ่าน CSF profile ให้เป็นคือหัวใจ**\n\n| | **Bacterial** | **TB** | **Viral** | **Cryptococcal** |\n|---|---|---|---|---|\n| เซลล์ | **PMN เด่น พันๆ** | **lymphocyte เด่น 100-500** | lymphocyte, <500 | lymphocyte น้อย-ปานกลาง |\n| Protein | สูงมาก | **สูงมาก (>100)** | ปกติ-สูงเล็กน้อย | สูง |\n| Glucose | **ต่ำมาก** | **ต่ำ (<50% ของเลือด)** | **ปกติ** | ต่ำ |\n| Opening pressure | สูง | สูง | ปกติ-สูงเล็กน้อย | **สูงมาก** |\n\nเคสนี้: **lymphocyte เด่น + protein สูงมาก + glucose ต่ำ (28/100 = 28%) + ดำเนินโรคเป็นสัปดาห์ + cranial nerve palsy** = **TB meningitis**\n\n**กลไกที่อธิบายอาการ**: การอักเสบเกิดที่ **basal meninges** → (1) **หุ้ม cranial nerve** โดยเฉพาะ **CN VI (พบบ่อยที่สุด), III, VII** (2) **อุดทางเดินน้ำไขสันหลัง → hydrocephalus และความดันในกะโหลกสูง** (3) **vasculitis ของหลอดเลือดที่ฐานสมอง → infarction**\n\n**Corticosteroid (dexamethasone) ลด mortality อย่างมีนัยสำคัญ** ในผู้ป่วย TB meningitis ทุกระดับความรุนแรง โดยลดการอักเสบและภาวะแทรกซ้อนจาก vasculitis/hydrocephalus — เป็นหนึ่งในไม่กี่โรคที่ **steroid ช่วยชีวิต**\n\nการรักษาอื่น: ยาต้านวัณโรคสูตรมาตรฐานแต่ **ระยะเวลานาน 9-12 เดือน**; **ส่ง CSF AFB, culture, molecular test (Xpert MTB/RIF Ultra) และเจาะน้ำปริมาณมากจะเพิ่มความไว**; อย่าลืม **ตรวจ HIV**\n\nทำไมข้ออื่นผิด\n- **Cryptococcal**: opening pressure มักสูงกว่านี้มากและตรวจพบ **India ink / cryptococcal antigen บวก**; รักษาด้วย amphotericin B + flucytosine และ **ต้องเจาะระบายน้ำซ้ำ**\n- **Bacterial**: ดำเนินโรคเป็นชั่วโมง-วัน, **PMN เด่น**\n- **Viral**: **glucose ปกติ** และ protein ไม่สูงขนาดนี้\n- **Carcinomatous**: ต้องมีมะเร็งเดิมและ cytology บวก",
+  "pearl": "**การเริ่ม ART ในผู้ป่วย HIV ที่มี TB meningitis ควรเลื่อนไปประมาณ 4-8 สัปดาห์** (ต่างจาก TB ที่อื่นซึ่งเริ่มใน 2 สัปดาห์เมื่อ CD4 ต่ำ) เพราะ **paradoxical IRIS ในสมองอันตรายถึงชีวิต**",
+  "ref": [
+   "MED33 OSCE ข้อ 3 – Meningitis (TB/Crypto จาก unsafe sex): high opening pressure, increase WBC with lymphocyte predominance, high protein, low sugar → Tuberculous meningitis",
+   "MED31 past paper – ผู้ป่วยชายไทย 30 ปี ปวดศีรษะ 2 สัปดาห์ oral candidiasis, LP 12 cmH2O wbc 5 lymphocyte, encapsulated budding yeast → Cryptococcal meningitis",
+   "MED32 OSCE – TB meningitis, CSF PCR for TB",
+   "MED31 MCQ – ตอบ TB meningitis"
+  ]
+ },
+ {
+  "id": "CH-MCQ-04",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Timing of antiretroviral therapy in HIV-associated tuberculosis",
+  "stem": "A 29-year-old man is newly diagnosed with HIV infection and smear-positive pulmonary tuberculosis. His CD4 count is 30 cells/microlitre. Anti-tuberculous therapy is started. Which statement about starting antiretroviral therapy is correct?",
+  "choices": [
+   "Start antiretroviral therapy within the first 2 weeks of anti-tuberculous treatment because the CD4 count is below 50",
+   "Delay antiretroviral therapy until anti-tuberculous treatment is completed to avoid drug interactions",
+   "Start both anti-tuberculous therapy and antiretroviral therapy on the same day",
+   "Start antiretroviral therapy only if the CD4 count falls below 20",
+   "Do not treat tuberculosis until the viral load is suppressed"
+  ],
+  "answer": 0,
+  "explain": "**หลักการ: รักษาวัณโรคก่อนเสมอ แล้วเริ่ม ART โดยเร็วตามระดับ CD4**\n- **CD4 < 50 cells/µL → เริ่ม ART ภายใน 2 สัปดาห์**\n- **CD4 ≥ 50 → เริ่มภายใน 8 สัปดาห์**\n- **ยกเว้น TB meningitis → เลื่อนไปประมาณ 4-8 สัปดาห์** เพราะ IRIS ในสมองมี mortality สูง\n\nเหตุผล: การทดลอง (SAPIT, CAMELIA, STRIDE) แสดงว่า **การเริ่ม ART เร็วในผู้ที่ CD4 ต่ำมากลด mortality อย่างชัดเจน** แม้จะแลกกับ IRIS ที่มากขึ้น\n\n**Paradoxical TB-IRIS**: ระบบภูมิคุ้มกันฟื้นตัวแล้วตอบสนองต่อ antigen ของเชื้อที่ตายหรือยังอยู่ → **ไข้กลับมา ต่อมน้ำเหลืองโตขึ้น รอยโรคในปอดแย่ลง** ทั้งที่การรักษาได้ผล → **ไม่ใช่การรักษาล้มเหลว** จัดการด้วย NSAID/steroid และ **ให้ยาทั้งสองสูตรต่อ**\n\n**Drug interaction ที่ต้องรู้**: **rifampicin เป็น CYP3A4 inducer แรง** → ลดระดับ **protease inhibitor และ integrase inhibitor** อย่างมาก → ในทางปฏิบัติ\n- ใช้ **efavirenz-based regimen** ได้โดยไม่ต้องปรับ\n- ถ้าใช้ **dolutegravir ต้องเพิ่มเป็นวันละ 2 ครั้ง**\n- ถ้าเลี่ยงไม่ได้จริงๆ ใช้ **rifabutin** แทน rifampicin\n→ **แต่ interaction ไม่ใช่เหตุผลให้เลื่อน ART ออกไปเป็นเดือนๆ**\n\nทำไมข้ออื่นผิด\n- **รอจนรักษา TB ครบ**: ผู้ป่วย CD4 30 มีความเสี่ยงติดเชื้อฉวยโอกาสและเสียชีวิตสูงมากในระหว่างนั้น\n- **เริ่มพร้อมกันวันเดียวกัน**: เพิ่ม IRIS, พิษยาซ้อนทับ และภาระเม็ดยาจนผู้ป่วยกินไม่ไหว\n- **รอ CD4 < 20**: ไม่มีเกณฑ์นี้\n- **ไม่รักษา TB ก่อน**: ตรงข้ามกับหลักการโดยสิ้นเชิง",
+  "pearl": "ผู้ป่วย HIV ที่เป็น TB มักมีภาพ **ไม่คลาสสิก**: CXR อาจเป็น **lower zone infiltrate, lymphadenopathy, miliary หรือแม้แต่ปกติ** และ **smear มักลบ** เมื่อ CD4 ต่ำ → ใช้ **molecular test และ urine LF-LAM** ช่วย",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 73 – HIV ให้ยา Tenofovir disoproxil fumarate/Lamivudine/Dolutegravir",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 43 – hiv on tivir ทำไรต่อ → cd4 count, viral load, screen crypto, screen toxo",
+   "MED31 MCQ ข้อ 49 – HIV เหนื่อยมากขึ้น infiltration at right lower lobe → Reactivate TB",
+   "MED32 MCQ ข้อ 22 – คนไข้ HIV มีอาการไอ เหนื่อย ให้รูป AFB"
+  ]
+ },
+ {
+  "id": "CH-MCQ-05",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Miliary tuberculosis",
+  "stem": "A 45-year-old man with diabetes presents with 6 weeks of fever, weight loss and progressive dyspnoea. Chest radiograph shows innumerable uniform 2 mm nodules evenly distributed throughout both lungs. He is confused on examination. Which of the following is the most appropriate combination of investigations?",
+  "choices": [
+   "Sputum and blood for mycobacterial culture, fundoscopy for choroidal tubercles and lumbar puncture",
+   "Sputum culture alone and observation",
+   "High-resolution CT of the chest only",
+   "Bronchoscopy with bronchoalveolar lavage for Pneumocystis only",
+   "Serial chest radiographs for 4 weeks before any invasive test"
+  ],
+  "answer": 0,
+  "explain": "**Miliary TB = การแพร่กระจายของเชื้อทางกระแสเลือดไปทั่วร่างกาย** ชื่อมาจากลักษณะ **nodule เล็ก 1-3 มม. กระจายสม่ำเสมอทั้งสองปอดเหมือนเมล็ดข้าวฟ่าง (millet seed)**\n\n**กลุ่มเสี่ยง**: **เบาหวาน, HIV, ผู้สูงอายุ, เด็กเล็ก, ผู้ได้ยากดภูมิ/anti-TNF, ไตวาย, ทุพโภชนาการ, ตั้งครรภ์/หลังคลอด**\n\n**หลักการสืบค้น: เมื่อกระจายทางเลือด ต้องหาเชื้อจากหลายอวัยวะพร้อมกัน**\n1. **Sputum AFB/culture/molecular test** — แม้ CXR จะไม่มี cavity ก็ควรส่ง\n2. **Blood culture สำหรับ mycobacteria** — มีความไวสูงเป็นพิเศษในผู้ติดเชื้อ HIV\n3. **Fundoscopy หา choroidal tubercle** — เป็นสิ่งตรวจที่ **ทำได้ทันที ไม่รุกล้ำ และค่อนข้างจำเพาะ**\n4. **Lumbar puncture** — เพราะ **miliary TB ร่วมกับ TB meningitis ได้บ่อยมาก** และผู้ป่วยรายนี้ **สับสน** ซึ่งเป็นข้อบ่งชี้ชัดเจน (ควรถ่ายภาพสมองก่อนถ้ามี focal deficit หรือ papilloedema)\n5. อื่นๆตามอาการ: **bone marrow และ liver biopsy** (ให้ผลบวกสูงในรายที่หาไม่เจอจากที่อื่น), ปัสสาวะ, น้ำในเยื่อหุ้มต่างๆ\n\n**อย่ารอผลก่อนเริ่มรักษา**: miliary TB มี mortality สูง → **เริ่มยาต้านวัณโรคเชิงประจักษ์เมื่อภาพทางคลินิกเข้าได้** และเพิ่ม **steroid เมื่อมี meningitis หรือ pericarditis ร่วม**\n\nทำไมข้ออื่นผิด: การส่งเสมหะอย่างเดียวมีความไวต่ำใน miliary TB (มักไม่มี cavity เชื้อจึงน้อย); CT ช่วยเห็นรอยโรคแต่ไม่ให้การวินิจฉัยจุลชีววิทยา; PCP ให้ **ground-glass** ไม่ใช่ miliary nodule; การเฝ้าดู 4 สัปดาห์คือการปล่อยให้ผู้ป่วยเสียชีวิต",
+  "pearl": "DDx ของ **miliary pattern** บน CXR: **TB, เชื้อรากระจาย (histoplasmosis, cryptococcosis), มะเร็งแพร่กระจาย (thyroid, renal cell, melanoma), silicosis, sarcoidosis และ hypersensitivity pneumonitis**",
+  "ref": [
+   "MED32 MCQ ข้อ 32 – ให้อาการ extrapulmonary TB ทำยังไงดี",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 53 – ตัด ileum ไปตรวจ biopsy เจอ granulomatous inflammation → TB",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 76 – Terminal ileum thickening + lymphadenopathy → TB",
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (GI ข้อ 2) – ascites low SAAG high protein → TB peritoneal"
+  ]
+ },
+ {
+  "id": "CH-MCQ-06",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Sputum conversion at the end of the intensive phase",
+  "stem": "A patient with drug-susceptible smear-positive pulmonary tuberculosis has completed 2 months of isoniazid, rifampicin, pyrazinamide and ethambutol under directly observed therapy. He feels much better and has gained weight, but the sputum smear at the end of the second month is still positive. What is the most appropriate next step?",
+  "choices": [
+   "Send sputum for culture and drug susceptibility testing, and continue treatment while awaiting results",
+   "Immediately switch to a second-line multidrug-resistant tuberculosis regimen",
+   "Stop all treatment and repeat the smear in 1 month",
+   "Add a fluoroquinolone to the current regimen indefinitely",
+   "Declare treatment failure and restart the same regimen from the beginning"
+  ],
+  "answer": 0,
+  "explain": "**Smear ที่ยังบวกเมื่อจบ intensive phase ไม่ได้แปลว่าล้มเหลว** — ต้องแยกสาเหตุ 4 อย่าง\n1. **เชื้อที่ตายแล้ว (non-viable bacilli)** — smear เป็น microscopy ที่ **แยกเชื้อเป็นกับเชื้อตายไม่ได้** ผู้ป่วยที่มี cavity ใหญ่และเชื้อจำนวนมากตั้งต้นอาจ smear บวกนานกว่า ทั้งที่ culture ลบแล้ว\n2. **เชื้อจำนวนมากตั้งต้น / รอยโรคกว้าง** → conversion ช้ากว่าปกติ\n3. **การกินยาไม่สม่ำเสมอ** — แต่ผู้ป่วยรายนี้อยู่ใน **DOT** และอาการดีขึ้นชัด\n4. **เชื้อดื้อยา** — ต้องพิสูจน์ ไม่ใช่สันนิษฐาน\n\n**สิ่งที่ต้องทำ: ส่ง culture + drug susceptibility testing (หรือ molecular test เช่น Xpert MTB/RIF, line probe assay)** และ **ให้ยาสูตรเดิมต่อระหว่างรอผล** — ในผู้ป่วยที่อาการทางคลินิกดีขึ้นชัดเจน\n\n**ตัวชี้วัดที่เชื่อถือได้กว่าคือ culture conversion** และตัวชี้วัดทางคลินิก: **น้ำหนักขึ้น ไข้ลง อาการไอลดลง**\n\nทำไมข้ออื่นผิด\n- **เปลี่ยนเป็นสูตร MDR ทันที**: สูตรที่สองมีพิษสูง ระยะเวลานาน ราคาแพง — **ห้ามใช้โดยไม่มีหลักฐานความดื้อยา**\n- **หยุดยา 1 เดือน**: การหยุดยาคือสิ่งที่สร้างเชื้อดื้อยาโดยตรง\n- **เติม fluoroquinolone ตัวเดียวเข้าไปในสูตรที่กำลังล้มเหลว**: เป็นความผิดพลาดคลาสสิกที่เรียกว่า **\"adding a single drug to a failing regimen\"** → สร้างการดื้อต่อยาตัวใหม่ทันที\n- **เริ่มสูตรเดิมใหม่ทั้งหมด**: ไม่มีเหตุผลทางเภสัชวิทยาและทำให้ระยะเวลารักษายืดออกโดยเปล่าประโยชน์",
+  "pearl": "**กฎทองของวัณโรค: ห้ามเติมยาเพียงตัวเดียวเข้าไปในสูตรที่ไม่ได้ผล** — ถ้าจะเปลี่ยนต้องเปลี่ยนเป็นสูตรใหม่ที่มียาที่เชื้อยังไวอย่างน้อย 3-4 ตัว",
+  "ref": [
+   "MED32 MCQ ข้อ 18 – AFB positive treat TB ไป 8 weeks แต่อาการไม่ดีขึ้นและยัง AFB positive จะทำยังไงต่อ (PCR for TB, drug compliance)",
+   "MED30 SAQ ข้อ 4 – TB กินยามา 6 อาทิตย์อาการไม่ดีขึ้น → poor compliance (choice TB drug resistance)",
+   "MED32 MCQ ข้อ 27 – คนไข้ TB กินยาตามสูตรแล้วไม่ได้ผล ถามว่าทำไงต่อ",
+   "MED33 MCQ – เป็น TB, AFB positive อะไรเป็นตัว prognosis → CXR"
+  ]
+ },
+ {
+  "id": "CH-MCQ-07",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Anti-tuberculous drug dosing in renal impairment",
+  "stem": "A patient with end-stage renal disease on haemodialysis is diagnosed with pulmonary tuberculosis. Which pair of first-line drugs requires dose or interval adjustment in this setting?",
+  "choices": [
+   "Ethambutol and pyrazinamide",
+   "Isoniazid and rifampicin",
+   "Rifampicin and ethambutol",
+   "Isoniazid and pyrazinamide",
+   "No first-line drug requires adjustment"
+  ],
+  "answer": 0,
+  "explain": "**หลักการ: ยาที่ขับทางไตต้องปรับ ยาที่ขับทางตับไม่ต้องปรับ**\n\n| ยา | ทางขับหลัก | ปรับใน renal failure |\n|---|---|---|\n| **Isoniazid** | **ตับ (acetylation)** | **ไม่ต้อง** |\n| **Rifampicin** | **ตับ/น้ำดี** | **ไม่ต้อง** |\n| **Pyrazinamide** | **ตับ แต่ metabolite ขับทางไตและสะสม** | **ต้องปรับ — ให้สัปดาห์ละ 3 ครั้ง** |\n| **Ethambutol** | **ไต 80%** | **ต้องปรับ — ให้สัปดาห์ละ 3 ครั้ง** |\n\n**เหตุผลเชิงพิษวิทยา**\n- **Ethambutol สะสม → optic neuritis** ซึ่งเป็นพิษที่ dose-dependent → ต้องตรวจ visual acuity และ colour vision เป็นระยะ\n- **Pyrazinamide** — metabolite **pyrazinoic acid สะสม → hyperuricaemia รุนแรงและ arthralgia**\n\n**ข้อควรปฏิบัติเพิ่มเติมในผู้ป่วยฟอกไต**\n- **ให้ยาหลังการฟอกเลือดในวันที่ฟอก** เพื่อไม่ให้ยาถูกกำจัดออกไปและเอื้อต่อ DOT\n- **ให้ pyridoxine ทุกราย** เพราะผู้ป่วยไตวายเสี่ยง peripheral neuropathy อยู่แล้ว\n- **ห้ามลดขนาด isoniazid และ rifampicin** เพราะการลดขนาดยาสองตัวที่ฆ่าเชื้อได้ดีที่สุดจะทำให้รักษาล้มเหลวและเกิดเชื้อดื้อยา\n\nทำไมข้ออื่นผิด: ทุกข้อที่ระบุว่า INH หรือ RIF ต้องปรับล้วนขัดกับเภสัชจลนศาสตร์ของยา และการบอกว่าไม่ต้องปรับเลยจะทำให้เกิดพิษจาก EMB/PZA",
+  "pearl": "ในผู้ป่วยโรคตับ: **pyrazinamide เป็นพิษต่อตับมากที่สุด** → ในตับแข็งรุนแรงอาจต้องใช้สูตรที่ไม่มี PZA (2HRE/7HR) หรือสูตรที่มียาตับ ≤1 ตัวในรายที่รุนแรงมาก",
+  "ref": [
+   "MED31 past paper – A 30 year old woman with smear positive pulmonary TB developed hepatotoxicity",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 17 – เป็น TB แล้ว start anti-TB drug 10 days แล้วไตแหก",
+   "MED31 past paper – ผู้ป่วยวัณโรคได้สูตร 2HRZE/4HR แล้วตามัว → หยุด ethambutol"
+  ]
+ },
+ {
+  "id": "CH-MCQ-08",
+  "lec": "03",
+  "lecture": "Pulmonary tuberculosis / ABG (อ.ศิวพร)",
+  "topic": "Mechanism of tuberculosis transmission and infection control",
+  "stem": "Which statement best describes how Mycobacterium tuberculosis is transmitted, and what is the most effective single measure to interrupt transmission in a hospital?",
+  "choices": [
+   "Airborne droplet nuclei 1-5 micrometres that remain suspended in air; prompt identification and effective treatment of infectious cases",
+   "Large respiratory droplets over 5 micrometres that fall within 1 metre; surgical masks for all visitors",
+   "Direct contact with contaminated surfaces; alcohol-based hand rub",
+   "Ingestion of contaminated food or milk; pasteurisation of dairy products",
+   "Percutaneous inoculation through needlestick injury; sharps disposal protocols"
+  ],
+  "answer": 0,
+  "explain": "**กลไกการแพร่เชื้อ**: เมื่อผู้ป่วยไอ จาม พูด หรือร้องเพลง จะปล่อยละอองที่ระเหยน้ำออกจนเหลือ **droplet nuclei ขนาด 1-5 ไมครอน** ซึ่ง\n- **ลอยในอากาศได้นานหลายชั่วโมง** และกระจายไปตามกระแสลมทั่วห้อง\n- **เล็กพอที่จะผ่านลงไปถึง alveoli** ได้โดยตรง (ละอองใหญ่จะติดที่ทางเดินหายใจส่วนบนและถูกกำจัด)\n→ ดังนั้นวัณโรคจึงเป็น **airborne** ไม่ใช่ droplet และ **การอยู่ห่างกันเกิน 1 เมตรไม่เพียงพอ**\n\n**ลำดับชั้นของการป้องกัน (hierarchy of controls)**\n1. **Administrative control — ได้ผลมากที่สุด**: **คัดกรองและวินิจฉัยเร็ว แยกผู้ป่วยทันที และเริ่มการรักษาที่ได้ผล** เพราะ **ผู้ป่วยที่ได้ยาที่เชื้อไวจะลดการแพร่เชื้อลงอย่างมากภายใน 2 สัปดาห์** — การรักษาคือมาตรการควบคุมการติดเชื้อที่ทรงพลังที่สุด\n2. **Environmental control**: **ห้องความดันลบ 6-12 ACH**, การระบายอากาศตามธรรมชาติ (เปิดหน้าต่าง — ใช้ได้ดีในบริบทไทย), **UV germicidal irradiation**\n3. **Personal protective equipment — ชั้นสุดท้าย**: **บุคลากรใส่ N95** (ต้องทำ fit test); **ผู้ป่วยใส่ surgical mask** เมื่อออกจากห้อง (เพื่อดักละอองที่ต้นทาง — ไม่ใช้ N95 กับผู้ป่วยเพราะมี exhalation valve ในบางรุ่นและหายใจลำบาก)\n\n**ปัจจัยที่เพิ่มการแพร่**: เสมหะ **AFB smear บวก**, มี **cavity**, ไอมาก, **ยังไม่ได้รับการรักษา**, พื้นที่แออัดและระบายอากาศไม่ดี, ระยะเวลาสัมผัสนาน\n\nทำไมข้ออื่นผิด: การแพร่แบบ droplet ใหญ่คือ influenza/pertussis; contact คือ MRSA/C. difficile; **Mycobacterium bovis** ต่างหากที่ติดจากนมไม่ผ่านการฆ่าเชื้อ (ไม่ใช่ M. tuberculosis); และวัณโรคไม่ติดทางเข็มตำในทางปฏิบัติ",
+  "pearl": "เกณฑ์ยุติการแยกผู้ป่วยวัณโรคปอดในโรงพยาบาล: **ได้ยาที่เหมาะสมอย่างน้อย 2 สัปดาห์ + อาการทางคลินิกดีขึ้น + AFB smear ลบ 3 ครั้งจากคนละวัน** (และต้องไม่สงสัย MDR-TB ซึ่งต้องรอ culture conversion)",
+  "ref": [
+   "MED35 MEQ (สอบลงกอง) ข้อ 7 – บอกวิธีแพร่กระจายของเชื้อวัณโรค → Air borne",
+   "MED32 MCQ ข้อ 28, 32, 60 – คนไข้ TB ให้นอนห้องแบบไหน ต้องใส่ mask ไหม → negative pressure room",
+   "MED32 MCQ ข้อ 8 – ถ้าเป็น TB ควรแยกจากคนอื่นกี่สัปดาห์",
+   "MED34 FA MCQ (Infection ข้อ 15) – ถามการ transmission ของเชื้อ"
+  ]
+ },
+ {
+  "id": "CH-MCQ-09",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Calculating and interpreting the alveolar-arterial oxygen gradient",
+  "stem": "A 70-year-old man breathing room air has an arterial blood gas showing pH 7.36, PaCO2 40 mmHg and PaO2 60 mmHg. Assume the respiratory quotient is 0.8. What is his alveolar-arterial oxygen gradient, and what does it indicate?",
+  "choices": [
+   "Approximately 40 mmHg; widened, indicating intrinsic lung disease",
+   "Approximately 40 mmHg; normal for his age, indicating hypoventilation",
+   "Approximately 10 mmHg; normal, indicating hypoventilation",
+   "Approximately 10 mmHg; widened, indicating a shunt",
+   "Cannot be calculated without knowing the inspired oxygen fraction"
+  ],
+  "answer": 0,
+  "explain": "**สูตร**\n- **PAO2 = FiO2 × (Patm − PH2O) − PaCO2/R** = 0.21 × (760 − 47) − 40/0.8 = **150 − 50 = 100 mmHg**\n- **A-a gradient = PAO2 − PaO2 = 100 − 60 = 40 mmHg**\n- **ค่าปกติที่คาดตามอายุ ≈ (อายุ/4) + 4 = (70/4) + 4 ≈ 21.5 mmHg**\n→ **40 mmHg กว้างกว่าปกติชัดเจน = มีพยาธิสภาพของเนื้อปอดเอง**\n\n**ทำไม A-a gradient จึงเป็นเครื่องมือที่ทรงพลัง**: มันแยก **ปัญหาที่ \"การระบายอากาศ\"** ออกจาก **ปัญหาที่ \"การแลกเปลี่ยนก๊าซ\"** ได้ทันที\n\n| | **A-a gradient ปกติ** | **A-a gradient กว้าง** |\n|---|---|---|\n| กลไก | ปอดปกติ แต่ระบายอากาศไม่พอ | เนื้อปอดผิดปกติ |\n| ตัวอย่าง | **hypoventilation** (opioid, กล้ามเนื้ออ่อนแรง, CNS depression, obesity hypoventilation), **FiO2 ต่ำ/ที่สูง** | **V/Q mismatch, shunt, diffusion impairment** — pneumonia, ARDS, PE, pulmonary oedema, ILD, COPD |\n\n**ขั้นถัดไปหลังพบว่ากว้าง**: ให้ **ออกซิเจน 100%** แล้วดูการตอบสนอง — **ดีขึ้น = V/Q mismatch; ไม่ดีขึ้น = shunt** (เพราะเลือดที่ผ่าน shunt ไม่ได้สัมผัสก๊าซเลย)\n\nทำไมข้ออื่นผิด\n- \"40 mmHg ปกติตามอายุ\": ค่าปกติของอายุ 70 คือราว 21 ไม่ใช่ 40\n- \"10 mmHg\": คำนวณผิด (น่าจะเผลอเอา PaCO2 ลบตรงๆ)\n- \"คำนวณไม่ได้\": โจทย์ระบุว่าหายใจอากาศห้อง = FiO2 0.21",
+  "pearl": "**ถ้า PaCO2 สูงและ A-a gradient ปกติ → ปัญหาอยู่นอกปอด (การหายใจ)** ให้มองหา CNS depression, ยา, กล้ามเนื้ออ่อนแรง, ผนังทรวงอกผิดรูป; **ถ้า PaCO2 สูงแต่ A-a gradient กว้างด้วย → โรคปอดเอง** เช่น COPD ที่รุนแรง",
+  "ref": [
+   "MED29 SAQ – สูตร ((150) − PaCO2/0.8) − PaO2; แปลผล ABG ต้องเขียนทั้ง Oxygenation, Ventilation และ acid-base",
+   "MED33 MCQ ข้อ 97 – Increase a-a gradient, severe shunt that causes hypoxemia → ARDS",
+   "MED30 MCQ ข้อ 82 – A-a gradient เหมือนจะให้ O2 แล้วดีขึ้น ถามสาเหตุของ hypoxemia",
+   "MED31 OSCE – ให้ blood gas ผู้ป่วยวิเคราะห์ และบอกว่าโรคอะไรทำให้เกิด hypoxemia 2 อย่าง"
+  ]
+ },
+ {
+  "id": "CH-MCQ-10",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Distinguishing type 1 from type 2 respiratory failure",
+  "stem": "Which arterial blood gas result on room air defines type 2 (hypercapnic) respiratory failure?",
+  "choices": [
+   "PaO2 55 mmHg with PaCO2 60 mmHg",
+   "PaO2 55 mmHg with PaCO2 32 mmHg",
+   "PaO2 85 mmHg with PaCO2 48 mmHg",
+   "PaO2 70 mmHg with PaCO2 40 mmHg",
+   "PaO2 95 mmHg with PaCO2 30 mmHg"
+  ],
+  "answer": 0,
+  "explain": "**นิยามที่ต้องจำ**\n- **Type 1 (hypoxaemic) respiratory failure**: **PaO2 < 60 mmHg โดยที่ PaCO2 ปกติหรือต่ำ** — ปัญหาอยู่ที่ **การแลกเปลี่ยนออกซิเจน (oxygenation)**\n  สาเหตุ: pneumonia, pulmonary oedema, ARDS, PE, atelectasis, ILD → กลไกคือ **V/Q mismatch และ shunt**\n- **Type 2 (hypercapnic) respiratory failure**: **PaCO2 > 45-50 mmHg** (มักร่วมกับ PaO2 ต่ำ) — ปัญหาอยู่ที่ **การระบายอากาศ (ventilation)**\n  สาเหตุ: **AECOPD, asthma ที่ล้า, obesity hypoventilation, กล้ามเนื้ออ่อนแรง (Guillain-Barré, myasthenia), ยากดการหายใจ, ผนังทรวงอกผิดรูป**\n\nเคสในโจทย์: **PaO2 55 (ต่ำ) ร่วมกับ PaCO2 60 (สูง)** = **type 2**\n\n**ทำไมการแยกจึงเปลี่ยนการรักษา**\n- **Type 1** → แก้ที่ **oxygenation**: ให้ออกซิเจน, **HFNC**, CPAP, PEEP เพื่อ recruit alveoli\n- **Type 2** → ออกซิเจนอย่างเดียว **ไม่พอและอาจเป็นอันตราย**; ต้อง **ช่วยการระบายอากาศด้วย NIV (BiPAP)** เพื่อขับ CO2 และ **คุมเป้า SpO2 88-92%**\n\n**สังเกตว่า \"PaCO2 ปกติ\" ในผู้ป่วยหอบหืดรุนแรงเป็นสัญญาณอันตราย** เพราะผู้ป่วยที่หายใจหอบควรมี CO2 ต่ำ — ถ้ากลับมาปกติหรือสูงแปลว่า **กล้ามเนื้อหายใจกำลังล้า** และกำลังจะเข้าสู่ type 2 failure → **เตรียมใส่ท่อช่วยหายใจ**\n\nทำไมข้ออื่นผิด: ข้อที่ PaO2 55 กับ PaCO2 32 คือ **type 1**; ข้อที่ PaCO2 48 โดย PaO2 ปกติเป็นเพียง hypercapnia เล็กน้อยที่ยังไม่เข้าเกณฑ์ respiratory failure เต็มรูป; อีกสองข้อเป็นค่าปกติหรือ hyperventilation",
+  "pearl": "**Acute-on-chronic**: ผู้ป่วย COPD ที่มี CO2 คั่งเรื้อรังจะมี **HCO3 สูงชดเชยและ pH เกือบปกติ** — สิ่งที่บอกว่า \"เฉียบพลัน\" คือ **pH ที่ตก** ไม่ใช่ระดับ PaCO2",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 OSCE/SAQ ข้อ 7 – COPD ABG pH 7.30 CO2 80 HCO3 38 จงแปลผล",
+   "MED34 FA MCQ (CNS ข้อ 7) – AECOPD low SpO2 despite nasal cannula → NIV vs ET tube vs HFNC",
+   "MED31 MCQ ข้อ 45, 68 – อะไรทำให้เกิด hypercapnia",
+   "MED30 SAQ – Hypoventilation / Good oxygenation"
+  ]
+ },
+ {
+  "id": "CH-MCQ-11",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Causes of primary respiratory alkalosis",
+  "stem": "A 24-year-old woman presents with breathlessness and tingling around the mouth and fingers. Arterial blood gas on room air: pH 7.52, PaCO2 26 mmHg, PaO2 105 mmHg, HCO3 21 mEq/L. Which finding in the history would most strongly argue AGAINST a benign hyperventilation syndrome and require urgent further investigation?",
+  "choices": [
+   "Pleuritic chest pain with unilateral calf swelling",
+   "Recent examination stress with similar previous episodes",
+   "Symptom onset while arguing with a family member",
+   "Complete resolution of symptoms with reassurance and slow breathing",
+   "A normal chest radiograph and normal D-dimer"
+  ],
+  "answer": 0,
+  "explain": "ABG แสดง **acute respiratory alkalosis**: pH สูง, **PaCO2 ต่ำ (สาเหตุปฐมภูมิ)**, HCO3 ลดเล็กน้อยตามการชดเชยแบบเฉียบพลัน (PaCO2 ลด 10 → HCO3 ลด 2)\nอาการ **ชารอบปากและปลายนิ้ว** เกิดจาก **ภาวะด่างทำให้ ionised calcium ลดลง** (H+ หลุดจาก albumin แล้ว Ca2+ เข้าจับแทน) → neuromuscular excitability เพิ่ม → paraesthesia, carpopedal spasm, Chvostek/Trousseau sign\n\n**อันตรายคือการรีบสรุปว่าเป็น \"hyperventilation syndrome\"** ซึ่งเป็น **การวินิจฉัยแยกโรคที่ต้องตัดสาเหตุอื่นออกให้หมดก่อน**\n\n**สาเหตุของ respiratory alkalosis ที่ต้องคัด**\n1. **ภาวะขาดออกซิเจน**: **pulmonary embolism (ตัวที่พลาดแล้วตาย)**, pneumonia, pneumothorax, pulmonary oedema, ที่สูง, ซีดรุนแรง\n2. **โรคปอดโดยตรง**: โรคที่กระตุ้น J-receptor\n3. **สาเหตุกลาง**: ความวิตกกังวล/ความเจ็บปวด, ไข้, **sepsis (มักเป็นสัญญาณแรกสุด)**, เลือดออกในสมอง, **liver failure**\n4. **ยาและสารพิษ**: **salicylate (กระตุ้นศูนย์หายใจโดยตรง)**, progesterone, catecholamine\n5. **การตั้งครรภ์** (progesterone) และ **การช่วยหายใจด้วยเครื่องมากเกินไป**\n\n**เบาะแสในโจทย์ที่เป็นธงแดง: pleuritic chest pain ร่วมกับขาบวมข้างเดียว = DVT/PE** → ต้องประเมินด้วย **Wells score, D-dimer และ CT pulmonary angiography** ตามความเสี่ยง; ใน PE ระยะแรก **PaO2 อาจปกติ** และ **CXR มักปกติ** จึงหลอกได้ง่าย\n\nทำไมข้ออื่นไม่ใช่ธงแดง: ความเครียด เหตุการณ์กระตุ้นทางอารมณ์ อาการหายเมื่อปลอบ และผลตรวจพื้นฐานปกติ ล้วนสนับสนุน hyperventilation syndrome",
+  "pearl": "ใน **salicylate poisoning** จะพบ **respiratory alkalosis ร่วมกับ high anion gap metabolic acidosis พร้อมกัน** ทำให้ pH อาจดูเกือบปกติ — เป็นกับดักที่ออกสอบ (โจทย์ LMS ของ MED35 ก็ใช้รูปแบบนี้)",
+  "ref": [
+   "MED35 LMS – A 19 year old man with altered mental status, ABG pH 7.42 PaCO2 20, wide anion gap → Salicylate poisoning (wide AG acidosis + respiratory alkalosis)",
+   "MED30 SAQ – Hyperventilation syndrome",
+   "MED31 MCQ ข้อ 62 / MED34 MCQ ครั้งที่ 4 ข้อ 14 – Sudden dyspnea and syncope, EKG S1Q3T3 → pulmonary embolism",
+   "MED31 past paper – หญิงตั้งครรภ์ 3 เดือน ขาขวาบวม 1 สัปดาห์ แล้วเจ็บหน้าอกฉับพลัน CXR ปกติ → Pulmonary embolism"
+  ]
+ },
+ {
+  "id": "CH-MCQ-12",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Metabolic alkalosis from vomiting",
+  "stem": "A 48-year-old man with gastric outlet obstruction has vomited repeatedly for 5 days. Arterial blood gas: pH 7.52, PaCO2 48 mmHg, HCO3 38 mEq/L. Electrolytes: Na 138, K 2.8, Cl 88 mEq/L. Urine chloride is 8 mEq/L. What is the most appropriate treatment?",
+  "choices": [
+   "Intravenous 0.9 percent sodium chloride with potassium chloride replacement",
+   "Intravenous sodium bicarbonate",
+   "Acetazolamide as first-line therapy",
+   "Fluid restriction with a loop diuretic",
+   "Intravenous hydrochloric acid infusion as the initial step"
+  ],
+  "answer": 0,
+  "explain": "**การเกิด metabolic alkalosis ต้องมี 2 ขั้นเสมอ**\n1. **Generation** — เสีย H+ หรือได้ base: ในเคสนี้คือ **อาเจียนเสีย HCl จากกระเพาะ** → ทุก H+ ที่เสียไป ตับจะเหลือ HCO3 ไว้ในเลือด\n2. **Maintenance** — ไตต้อง \"เก็บ\" bicarbonate ไว้ไม่ขับทิ้ง ซึ่งเกิดจาก **volume depletion, hypochloraemia และ hypokalaemia** ร่วมกัน\n   - volume ต่ำ → **RAAS ทำงาน → aldosterone สูง → ดูดซึม Na และขับ H+/K+** → ยิ่งด่างและ K ยิ่งต่ำ\n   - **Cl ต่ำ** → ไตดูดซึม Na กลับไม่ได้คู่กับ Cl จึงต้องดูดคู่กับ **HCO3** แทน → ค้าง bicarbonate ไว้\n   - **K ต่ำ** → H+ เคลื่อนเข้าเซลล์แลกกับ K ที่ออกมา และไตเพิ่มการขับ H+ → alkalosis คงอยู่\n\n**Urine chloride คือกุญแจในการแยกชนิด**\n- **Urine Cl < 20 (\"chloride-responsive\")** — อาเจียน, ดูดของออกทาง NG tube, ภายหลังใช้ diuretic, ท้องเสียที่เสีย Cl → **รักษาด้วย NSS + KCl** ก็หายเอง\n- **Urine Cl > 20 (\"chloride-resistant\")** — hyperaldosteronism, Cushing, **Bartter/Gitelman**, ขณะที่ยังใช้ diuretic อยู่ → การให้ NSS ไม่ช่วย ต้องแก้ต้นเหตุ\n\nเคสนี้ **urine Cl 8** → chloride-responsive → **0.9% NaCl เติมทั้ง volume และ Cl พร้อม KCl เติม K** ซึ่งแก้ทั้ง maintenance factor ทั้งสามอย่างพร้อมกัน; ร่วมกับแก้การอุดกั้นของกระเพาะ\n\nทำไมข้ออื่นผิด\n- **NaHCO3**: เติมด่างให้กับผู้ป่วยที่เป็นด่างอยู่แล้ว\n- **Acetazolamide**: ใช้เป็น adjunct ในผู้ที่ **volume overload ร่วมด้วย** (เช่น HF ที่ได้ diuretic มาก) — ไม่ใช่ first-line ในผู้ที่ขาดน้ำ\n- **Loop diuretic**: ทำให้เสีย Cl, K และ volume เพิ่ม → **ซ้ำเติม alkalosis**\n- **HCl infusion**: สงวนไว้ในรายที่รุนแรงมาก (pH > 7.55) ที่แก้ด้วยวิธีอื่นไม่ได้ และต้องให้ทาง central line",
+  "pearl": "การชดเชยของ **metabolic alkalosis**: PaCO2 ขึ้นประมาณ **0.7 mmHg ต่อ HCO3 ที่ขึ้น 1 mEq/L** — เคสนี้ HCO3 ขึ้น 14 → คาด PaCO2 ≈ 40 + 10 = **50** ซึ่งใกล้เคียงค่าที่วัดได้ (48) = ชดเชยเหมาะสม; และการชดเชยมี **เพดานราว PaCO2 55 mmHg** เพราะร่างกายจะไม่ยอม hypoventilate จนขาดออกซิเจน",
+  "ref": [
+   "MED35 LMS / MED31 past paper – ผู้ป่วยเบาหวานที่มี pneumonia ร่วมกับอาเจียน: respiratory alkalosis + metabolic alkalosis + high anion gap metabolic acidosis",
+   "MED32 MCQ ข้อ 16 – แปล blood gas ตอบ respiratory alkalosis, metabolic acidosis, metabolic alkalosis",
+   "MED30 สรุป – met acidosis / met alkalosis"
+  ]
+ },
+ {
+  "id": "CH-MCQ-13",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Oxyhaemoglobin dissociation curve",
+  "stem": "Which set of conditions shifts the oxyhaemoglobin dissociation curve to the RIGHT, favouring oxygen release to the tissues?",
+  "choices": [
+   "Increased temperature, increased PaCO2, acidosis and increased 2,3-diphosphoglycerate",
+   "Decreased temperature, decreased PaCO2, alkalosis and decreased 2,3-diphosphoglycerate",
+   "Increased carbon monoxide binding and presence of fetal haemoglobin",
+   "Alkalosis with hypothermia and stored transfused blood",
+   "Methaemoglobinaemia with decreased 2,3-diphosphoglycerate"
+  ],
+  "answer": 0,
+  "explain": "**หลักคิดที่จำง่ายที่สุด: กล้ามเนื้อที่กำลังทำงานหนักต้องการออกซิเจน — สภาพแวดล้อมของมันคือ \"ร้อน เป็นกรด CO2 สูง\" → เส้นโค้งเลื่อนขวาเพื่อปล่อยออกซิเจนให้เนื้อเยื่อ**\n\n**เลื่อนขวา (ปล่อย O2 ง่ายขึ้น, P50 สูงขึ้น, affinity ลดลง)** = **\"CADET, face Right\"**\n- **C**O2 สูง\n- **A**cid (pH ต่ำ) — **Bohr effect**\n- **2,3-D**PG สูง (พบใน **ภาวะซีดเรื้อรัง, ที่สูง, โรคปอดเรื้อรัง, hyperthyroidism** — เป็นการปรับตัว)\n- **E**xercise\n- **T**emperature สูง\n\n**เลื่อนซ้าย (ยึด O2 ไว้แน่น ปล่อยยาก)**: ด่าง, CO2 ต่ำ, อุณหภูมิต่ำ, 2,3-DPG ต่ำ (**เลือดที่เก็บในธนาคารเลือดนาน**), **fetal haemoglobin (HbF)** ซึ่งจับ 2,3-DPG ได้ไม่ดีจึงดึงออกซิเจนจากแม่ได้, **carboxyhaemoglobin** และ **methaemoglobin**\n\n**ความสำคัญทางคลินิกของ CO poisoning (ออกสอบบ่อย)**: CO ไม่เพียงแย่งจับฮีโมโกลบิน (affinity สูงกว่า O2 ~240 เท่า) แต่ยัง **เลื่อนเส้นโค้งไปทางซ้าย** ทำให้ออกซิเจนที่เหลืออยู่ก็ปล่อยให้เนื้อเยื่อได้ยากขึ้นอีก → เนื้อเยื่อขาดออกซิเจนรุนแรง\n**ที่สำคัญ: PaO2 และ pulse oximetry จะดู \"ปกติ\" อย่างหลอกลวง** เพราะ pulse oximeter แยก oxyhaemoglobin จาก carboxyhaemoglobin ไม่ได้ → ต้องวัด **carboxyhaemoglobin ด้วย co-oximetry** และรักษาด้วย **ออกซิเจน 100% (± hyperbaric)**\n\nทำไมข้ออื่นผิด: ทุกข้อที่เหลือเป็นเงื่อนไขที่ทำให้เส้นโค้ง **เลื่อนซ้าย** (ยึดออกซิเจนไว้) ซึ่งตรงข้ามกับที่คำถามต้องการ",
+  "pearl": "**Methaemoglobinaemia** (จาก dapsone, ยาชาเฉพาะที่, nitrate): ผู้ป่วยเขียวคล้ำแต่ **PaO2 ปกติ** และ **pulse oximeter ค้างอยู่ราว 85% ไม่ว่าจะให้ออกซิเจนเท่าไร**; เลือดสีน้ำตาลช็อกโกแลต รักษาด้วย **methylene blue**",
+  "ref": [
+   "MED30 สรุป Chest – oxygen therapy, hypoxemia",
+   "MED29 SAQ – แปลผล ABG ต้องเขียนทั้ง Oxygenation, Ventilation และ acid-base",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 44 – คำนวณ ABG พร้อม O2 saturation 80%"
+  ]
+ },
+ {
+  "id": "CH-MCQ-14",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Oxygen target in acute exacerbation of COPD",
+  "stem": "A 72-year-old man with severe COPD is brought to the emergency department with an exacerbation. SpO2 is 84 percent on room air. Which oxygen strategy is most appropriate while awaiting arterial blood gas results?",
+  "choices": [
+   "Controlled oxygen by nasal cannula or Venturi mask targeting SpO2 88 to 92 percent",
+   "High-flow oxygen by non-rebreathing mask targeting SpO2 above 98 percent",
+   "Withhold all oxygen until the arterial blood gas result is available",
+   "Oxygen only if the patient reports feeling breathless",
+   "Immediate intubation before any oxygen is given"
+  ],
+  "answer": 0,
+  "explain": "**เป้าหมายคือ \"พอ\" ไม่ใช่ \"มาก\"** — ในผู้ป่วย COPD ที่เสี่ยงคั่ง CO2 ให้ **SpO2 88-92%**\n\n**หลักฐาน**: การทดลองแบบสุ่มในผู้ป่วย AECOPD ก่อนถึงโรงพยาบาล (Austin et al., BMJ 2010) พบว่า **การให้ออกซิเจนแบบควบคุมเป้า 88-92% ลด mortality ลงประมาณครึ่งหนึ่ง** เทียบกับการให้ออกซิเจนแบบ high-flow\n\n**กลไกที่ออกซิเจนมากเกินทำให้ CO2 คั่ง (เรียงตามความสำคัญ)**\n1. **ยกเลิก hypoxic pulmonary vasoconstriction** → เลือดไหลกลับไปยังถุงลมที่ระบายอากาศแย่ → **V/Q mismatch แย่ลง เพิ่ม dead space** (กลไกหลัก)\n2. **Haldane effect** — ฮีโมโกลบินที่อิ่มออกซิเจนปล่อย CO2 กลับเข้าพลาสมามากขึ้น\n3. **ลด hypoxic respiratory drive** — บทบาทน้อยที่สุด แม้จะเป็นคำอธิบายที่ถูกสอนมากที่สุด\n\n**แต่ต้องไม่แกว่งไปอีกทาง**: **ห้ามงดออกซิเจนในผู้ป่วยที่ hypoxaemic** เพราะ **ภาวะขาดออกซิเจนฆ่าคนก่อนภาวะ CO2 คั่ง** — SpO2 84% เป็นระดับที่อันตรายต่ออวัยวะสำคัญ\n\n**ลำดับการดูแล**: ให้ออกซิเจนแบบควบคุม (Venturi mask ควบคุม FiO2 ได้แม่นกว่า) → **เจาะ ABG ภายใน 30-60 นาที** → ถ้า **pH < 7.35 ร่วมกับ PaCO2 สูง → เริ่ม NIV** → ถ้า NIV ล้มเหลวหรือมีข้อห้าม → **ใส่ท่อช่วยหายใจ**\nพร้อมกับให้ **bronchodilator พ่นถี่, systemic corticosteroid และ antibiotic ตามข้อบ่งชี้**\n\nทำไมข้ออื่นผิด: high-flow เป้า >98% คือสิ่งที่หลักฐานบอกว่าเพิ่มการตาย; การงดออกซิเจนรอผลแลปเป็นอันตรายทันที; การให้ตามความรู้สึกของผู้ป่วยไม่ใช่เกณฑ์ทางสรีรวิทยา; และการใส่ท่อทันทีข้ามขั้น NIV ซึ่งเป็นการรักษาที่ดีกว่าในผู้ป่วยที่ยังรู้สึกตัว",
+  "pearl": "ผู้ป่วยกลุ่มอื่นที่ใช้เป้า **88-92%** เช่นกัน: **obesity hypoventilation, ผนังทรวงอกผิดรูป (kyphoscoliosis), โรคกล้ามเนื้ออ่อนแรงเรื้อรัง, bronchiectasis รุนแรง และ cystic fibrosis** — ส่วนผู้ป่วยทั่วไปที่ไม่เสี่ยงคั่ง CO2 ใช้เป้า **94-98%**",
+  "ref": [
+   "MED34 MCQ ครั้งที่ 4 ข้อ 13 – COPD ให้ oxygen ยังไง keep SpO2 เท่าไหร่ (cannula กี่ลิตร, non-rebreathing, venturi)",
+   "MED32 MCQ ข้อ 66 – SpO2 88% (RA) ให้ O2 cannula 3 LPM แล้วไม่ดีขึ้น",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 37 – COPD SpO2 88% what is the indication of O2 supplement",
+   "MED31 MCQ ข้อ 79 – COPD ให้ O2 แล้วดีขึ้น"
+  ]
+ },
+ {
+  "id": "CH-MCQ-15",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Delta ratio and identification of a mixed disorder",
+  "stem": "A patient has Na 140, Cl 107, HCO3 12 mEq/L and albumin 4.0 g/dL. The arterial pH is 7.30 with PaCO2 26 mmHg. What does the delta ratio indicate?",
+  "choices": [
+   "The delta ratio is approximately 0.8, indicating a coexisting normal anion gap metabolic acidosis",
+   "The delta ratio is approximately 0.8, indicating a coexisting metabolic alkalosis",
+   "The delta ratio is approximately 2.5, indicating a coexisting metabolic alkalosis",
+   "The delta ratio is approximately 1.5, indicating a pure high anion gap metabolic acidosis",
+   "The delta ratio cannot be calculated because the albumin is normal"
+  ],
+  "answer": 0,
+  "explain": "**การคำนวณทีละขั้น**\n1. **Anion gap** = Na − (Cl + HCO3) = 140 − (107 + 12) = **21** (สูงกว่าปกติ = high AG acidosis)\n2. **ΔAG** = AG ที่วัดได้ − AG ปกติ = 21 − 12 = **9**\n3. **ΔHCO3** = 24 − HCO3 ที่วัดได้ = 24 − 12 = **12**\n4. **Delta ratio = ΔAG / ΔHCO3 = 9 / 12 = 0.75 ≈ 0.8**\n\n→ **HCO3 ตกลงไป 12 แต่ anion gap ขึ้นมาแค่ 9** แปลว่า **มีกรดอีกชนิดที่กิน bicarbonate ไปโดยไม่เพิ่ม anion gap** ซ้อนอยู่ = **normal anion gap (hyperchloraemic) metabolic acidosis ร่วมด้วย** — สังเกตว่า **Cl 107 สูงค่อนไปทางขอบบน** ซึ่งเป็นเบาะแสสนับสนุน (สาเหตุที่พบบ่อย: **ท้องเสีย, renal tubular acidosis, การให้ NSS ปริมาณมาก**)\n\n**การแปลผลมาตรฐาน**\n| Delta ratio | ความหมาย |\n|---|---|\n| **< 0.4** | **normal AG (hyperchloraemic) acidosis ล้วน** |\n| **0.4 - 0.8** | **high AG acidosis ร่วมกับ normal AG acidosis** |\n| **1 - 2** | **high AG metabolic acidosis ล้วน** |\n| **> 2** | **high AG acidosis ร่วมกับ metabolic alkalosis** (หรือ chronic respiratory acidosis ที่มี HCO3 สูงอยู่ก่อน) |\n\n**ตรรกะเบื้องหลัง**: ในกรดชนิด high AG ล้วน **ทุก 1 mEq ของกรดที่เพิ่มขึ้นควรกิน bicarbonate ไป 1 mEq** → อัตราส่วนควรใกล้ 1 ถ้า **HCO3 ตกมากเกินกว่าที่ AG ขึ้น** แปลว่ามีกรดอีกชนิดที่ไม่เพิ่ม AG (เช่นท้องเสีย, RTA, ให้ NSS ปริมาณมาก) ซ้อนอยู่\n\n**Winter's formula ในเคสนี้** = 1.5(12) + 8 ± 2 = **24-28** → PaCO2 26 อยู่ในเกณฑ์ = **ชดเชยเหมาะสม ไม่มีความผิดปกติทางการหายใจซ้อน**\n\n**อย่าลืมปรับ AG ตาม albumin**: **corrected AG = AG + 2.5 × (4.0 − albumin)** — ในเคสนี้ albumin ปกติจึงไม่ต้องปรับ แต่ในผู้ป่วยที่ albumin 2.0 การไม่ปรับจะทำให้ **พลาด high AG acidosis ไปเลย**",
+  "pearl": "ลำดับการอ่าน ABG ที่ไม่ควรข้าม: **(1) pH (2) ความผิดปกติปฐมภูมิ (3) การชดเชยด้วยสูตร (4) anion gap ที่ปรับ albumin แล้ว (5) delta ratio** — ทำครบ 5 ขั้นจะไม่พลาด mixed disorder",
+  "ref": [
+   "MED35 LMS – delta anion gap to delta HCO3 is over 2, reflect mixed wide anion gap and metabolic alkalosis",
+   "MED30 MCQ ข้อ 49 – Simple wide anion gap metabolic acidosis (โพยเก่าเฉลย metabolic acidosis with compensate respiratory alkalosis แต่คำนวณแล้วได้ predicted PCO2 22.5-26.5)",
+   "MED29 โพย – Anion gap = Na − Cl − HCO3 ปกติ = 12",
+   "MED28 MED421 ข้อ 66 – Wide gap metabolic acidosis with normal gap metabolic acidosis"
+  ]
+ },
+ {
+  "id": "CH-MCQ-16",
+  "lec": "26",
+  "lecture": "Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ.ศิวพร)",
+  "topic": "Limits of pulse oximetry",
+  "stem": "A 45-year-old man is rescued from a house fire. He is confused with a headache and nausea. SpO2 by pulse oximetry reads 99 percent on room air and arterial PaO2 is 96 mmHg. Which statement best explains the discrepancy between his clinical state and the oxygen readings?",
+  "choices": [
+   "Pulse oximetry cannot distinguish carboxyhaemoglobin from oxyhaemoglobin, so co-oximetry is needed",
+   "The pulse oximeter is faulty and should be replaced",
+   "A normal PaO2 excludes significant tissue hypoxia in all circumstances",
+   "The confusion is unrelated to the fire and requires urgent brain imaging first",
+   "Carbon monoxide lowers PaO2 markedly, so the blood gas must be repeated"
+  ],
+  "answer": 0,
+  "explain": "**กลไกของ carbon monoxide poisoning และเหตุที่ตัวเลขหลอก**\n- CO จับฮีโมโกลบินด้วย **affinity สูงกว่าออกซิเจนราว 200-250 เท่า** เกิด **carboxyhaemoglobin (COHb)** → **ปริมาณออกซิเจนที่เลือดขนส่งได้ (oxygen content) ลดลงอย่างมาก**\n- **แต่ PaO2 คือ \"ออกซิเจนที่ละลายในพลาสมา\" ซึ่ง CO ไม่กระทบ** → **PaO2 ปกติ** แม้ผู้ป่วยจะขาดออกซิเจนรุนแรง\n- **Pulse oximeter ใช้แสง 2 ความยาวคลื่น** และ **COHb ดูดกลืนแสงคล้าย oxyhaemoglobin มาก** → เครื่อง **อ่านค่าสูงเกินจริง** (อาจอ่าน 99% ทั้งที่ COHb สูง)\n- CO ยัง **เลื่อน oxyhaemoglobin dissociation curve ไปทางซ้าย** และ **จับกับ cytochrome c oxidase** รบกวนการหายใจระดับเซลล์ → ซ้ำเติมอีกสองทาง\n\n**การวินิจฉัย: ต้องวัด carboxyhaemoglobin ด้วย co-oximetry** (เจาะเลือดแดงหรือดำก็ได้) — ไม่ใช่ pulse oximeter ธรรมดา\n\n**การรักษา**: **ออกซิเจน 100% ทาง non-rebreathing mask ทันที** (ลด half-life ของ COHb จาก ~4-5 ชั่วโมงในอากาศห้อง เหลือ ~60-90 นาที) และพิจารณา **hyperbaric oxygen** (ลดเหลือ ~20-30 นาที) เมื่อมี **หมดสติ, อาการทางระบบประสาท, ischaemia ของหัวใจ, COHb > 25% หรือหญิงตั้งครรภ์ที่ COHb > 15-20%**\n\n**ในผู้ป่วยไฟไหม้ต้องคิดถึงอีก 2 อย่างพร้อมกัน**: **cyanide poisoning** (จากการเผาไหม้พลาสติก/โฟม — ให้สงสัยเมื่อมี lactate สูงมากและ acidosis รุนแรงที่ไม่อธิบายด้วย CO) และ **inhalation injury ของทางเดินหายใจ** (เขม่าในจมูกปาก ขนจมูกไหม้ เสียงแหบ stridor → **ต้องใส่ท่อช่วยหายใจก่อนที่ทางเดินหายใจจะบวมจนใส่ไม่ได้**)\n\nทำไมข้ออื่นผิด: เครื่องไม่ได้เสีย แต่เป็นข้อจำกัดของเทคโนโลยี; PaO2 ปกติ **ไม่ได้** ตัดภาวะขาดออกซิเจนของเนื้อเยื่อ (เช่นเดียวกับในภาวะซีดรุนแรงและ methaemoglobinaemia); การสั่งภาพสมองก่อนโดยไม่ให้ออกซิเจนคือการเสียเวลาที่อันตราย",
+  "pearl": "สถานการณ์อื่นที่ **pulse oximetry เชื่อไม่ได้**: **methaemoglobinaemia (ค้างราว 85%)**, ภาวะซีดรุนแรง, ปลายมือเย็น/perfusion ต่ำ, ยาสีเล็บเข้ม, การเคลื่อนไหวมาก, บิลิรูบินสูงมาก และสีย้อมทางหลอดเลือดดำ",
+  "ref": [
+   "MED30 สรุป Chest – oxygen therapy / hypoxemia",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 44 – ABG พร้อม O2 saturation",
+   "MED31 OSCE – ให้ blood gas วิเคราะห์และบอกโรคที่ทำให้เกิด hypoxemia 2 อย่าง"
+  ]
+ },
+ {
+  "id": "CH-MCQ-17",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Management of empyema",
+  "stem": "A 55-year-old man with pneumonia has a loculated right pleural collection. Thoracentesis yields frank pus; Gram stain shows gram-positive cocci. A chest drain is inserted but only 50 mL drains and the collection persists on ultrasound after 48 hours, with ongoing fever. Which is the most appropriate next step?",
+  "choices": [
+   "Intrapleural fibrinolytic with deoxyribonuclease, or surgical decortication by video-assisted thoracoscopy if that fails",
+   "Remove the chest drain and continue intravenous antibiotics alone for 6 weeks",
+   "Repeat needle thoracentesis daily until the collection resolves",
+   "Start systemic corticosteroid to reduce pleural inflammation",
+   "Switch to oral antibiotics and discharge with outpatient follow-up"
+  ],
+  "answer": 0,
+  "explain": "**Empyema = หนองในช่องเยื่อหุ้มปอด** ซึ่งดำเนินไป 3 ระยะ\n1. **Exudative (ระยะแรก ~สัปดาห์แรก)** — น้ำใส ไหลอิสระ → **ระบายด้วยสายอย่างเดียวได้ผล**\n2. **Fibrinopurulent** — fibrin สะสมเป็น **septation/loculation** → น้ำแบ่งเป็นกระเปาะ **สายระบายเข้าถึงไม่หมด** (ตรงกับโจทย์)\n3. **Organising (หลัง 2-4 สัปดาห์)** — เกิด **fibrous peel หนาหุ้มปอด** ทำให้ปอดขยายไม่ได้ → ต้อง **decortication**\n\n**การจัดการเมื่อระบายไม่สำเร็จ**\n- **Intrapleural tPA + DNase** — หลักฐานจาก **MIST2 trial**: การให้ **คู่กัน** ลดปริมาณของเหลวที่ค้าง ลดการต้องผ่าตัดและลดวันนอน ขณะที่ **การให้ตัวใดตัวหนึ่งเดี่ยวๆไม่ได้ผล**\n  - **tPA สลาย fibrin septation**; **DNase ย่อย DNA จาก neutrophil ที่ตายซึ่งทำให้หนองหนืด**\n- **VATS decortication** เมื่อ fibrinolytic ล้มเหลว หรือเมื่อผู้ป่วยมาช้าในระยะ organising — ยิ่งทำเร็วยิ่งได้ผลดี\n- **ยาปฏิชีวนะต้องให้นาน 2-6 สัปดาห์** และครอบคลุม **anaerobe** เมื่อสงสัยการสำลัก\n\n**หลักการสำคัญ: การติดเชื้อที่มีหนองขังต้องระบาย — ยาปฏิชีวนะอย่างเดียวไม่มีทางหาย** เพราะยาเข้าถึงใจกลางหนองไม่ได้ (ไม่มีเลือดไปเลี้ยง pH เป็นกรด และมี biofilm)\n\nทำไมข้ออื่นผิด: ถอดสายทิ้งคือยกเลิก source control; เจาะซ้ำทุกวันไม่สามารถระบาย loculation ได้และเสี่ยงบาดเจ็บ; steroid กดภูมิคุ้มกันในภาวะติดเชื้อที่ยังไม่ควบคุม; การเปลี่ยนเป็นยากินและส่งกลับบ้านทั้งที่ยังมีไข้และหนองค้างเป็นอันตรายถึงชีวิต",
+  "pearl": "เกณฑ์ใส่สายระบายในน้ำข้างปอดจากปอดอักเสบ: **หนองชัดเจน, Gram stain หรือ culture บวก, pH < 7.2, glucose < 60 หรือมี loculation** — ถ้าเข้าข้อใดข้อหนึ่งอย่ารอ",
+  "ref": [
+   "MED34 FA MCQ (RS ข้อ 9) – pleural fluid exudate pH <7.2 glucose <40 → complicated parapneumonic effusion",
+   "MED33 MCQ ข้อ 74 / MED32 – Light's criteria exudative, Fluid LDH 1000 → complicated parapneumonic effusion",
+   "MED30 สรุป Chest – exudate / empyema",
+   "MED34 MEQ (loop NB FA) – Community acquired pneumonia with parapneumonic effusion at right lower lung"
+  ]
+ },
+ {
+  "id": "CH-MCQ-18",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Secondary spontaneous pneumothorax",
+  "stem": "A 68-year-old man with severe emphysema develops sudden right-sided chest pain and breathlessness. He is haemodynamically stable. Chest radiograph shows a 15 percent right pneumothorax with no mediastinal shift. Which management is most appropriate?",
+  "choices": [
+   "Admit and insert an intercostal chest drain",
+   "Discharge with observation and outpatient review in 1 week",
+   "Simple needle aspiration in the emergency department and discharge if successful",
+   "High-flow oxygen with observation for 4 hours then discharge",
+   "Immediate video-assisted thoracoscopic surgery"
+  ],
+  "answer": 0,
+  "explain": "**การแยก primary จาก secondary spontaneous pneumothorax เปลี่ยนการรักษาโดยสิ้นเชิง**\n\n| | **Primary (PSP)** | **Secondary (SSP)** |\n|---|---|---|\n| ผู้ป่วย | **อายุน้อย สูง ผอม สูบบุหรี่ ไม่มีโรคปอด** | **มีโรคปอดอยู่เดิม (COPD, TB, ILD, cystic fibrosis, มะเร็ง)** |\n| กลไก | **apical subpleural bleb แตก** | **การทำลายเนื้อปอดจากโรคเดิม** |\n| การทนต่อภาวะ | ทนได้ดี ปอดที่เหลือปกติ | **ทนไม่ได้ เพราะ reserve เหลือน้อย → หายใจล้มเหลวได้แม้ลมน้อย** |\n| การรักษา | ถ้าเล็ก (<2 cm) และไม่มีอาการ → **observe + O2**; ถ้าใหญ่/มีอาการ → aspiration | **แทบทุกรายต้อง admit และใส่ ICD** |\n| การหายเอง | หายเองได้ | **ช้ากว่ามากและกลับเป็นซ้ำสูง** |\n\n→ ผู้ป่วยรายนี้เป็น **SSP บน severe emphysema** ดังนั้นแม้ขนาดจะดู \"ไม่มาก\" ก็ **ต้อง admit และใส่สายระบาย**\n\n**ประโยชน์ของออกซิเจนเสริม**: การให้ O2 ความเข้มข้นสูงจะ **ล้าง nitrogen ออกจากช่องเยื่อหุ้มปอด** ทำให้ gradient ของ nitrogen ระหว่างช่องเยื่อหุ้มปอดกับเลือดสูงขึ้น → **เร่งการดูดซึมลมได้ประมาณ 4 เท่า** (ปกติดูดซึมเองเพียง ~1-2% ของปริมาตรทรวงอกต่อวัน) — แต่ใน COPD ต้อง **ระวังเป้า SpO2 88-92%**\n\n**ข้อบ่งชี้ของการผ่าตัด (pleurodesis/bullectomy)**: **เป็นซ้ำข้างเดิม, เกิดข้างตรงข้าม, ลมรั่วต่อเนื่องเกิน 3-5 วัน, ปอดไม่ขยาย, tension pneumothorax, ผู้ที่ทำอาชีพเสี่ยง (นักบิน นักดำน้ำ)**\n\nทำไมข้ออื่นผิด: การส่งกลับบ้านหรือ aspirate แล้วปล่อยกลับเป็นแนวทางของ **PSP ไม่ใช่ SSP**; การเฝ้าดู 4 ชั่วโมงแล้วกลับบ้านเสี่ยงลมเพิ่มขึ้นจนหายใจล้มเหลว; VATS ทันทีเป็นการข้ามขั้นที่ยังไม่มีข้อบ่งชี้",
+  "pearl": "**ห้ามดำน้ำลึกตลอดชีวิต** หลังเป็น pneumothorax เว้นแต่ได้รับการผ่าตัดป้องกันแบบถาวร; การเดินทางโดยเครื่องบินให้รอจน **ปอดขยายเต็มที่และยืนยันด้วยภาพรังสี** (โดยทั่วไปรออย่างน้อย 1-2 สัปดาห์หลังหาย)",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 84 – Breathlessness 1 day CXR เจอ 10% pneumothorax ทำไรต่อ",
+   "MED34 FA MCQ – Pneumothorax 10% ทำอะไร → observe; MED34 FA MCQ ข้อ 13 – Pneumothorax → chest drainage",
+   "MED32 MCQ ข้อ 38 – 10% pneumothorax",
+   "MED31 past paper – A 52 year old mechanically ventilated with PEEP, 10% pneumothorax → Tube thoracostomy",
+   "MED32 MCQ ข้อ 2 / MED34 FA MCQ (RS ข้อ 4) – decreased breath sound, tympanic on percussion → ruptured apical bleb"
+  ]
+ },
+ {
+  "id": "CH-MCQ-19",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Hepatic hydrothorax",
+  "stem": "A 58-year-old man with alcoholic cirrhosis and ascites develops a large right-sided pleural effusion. Pleural fluid analysis shows a transudate with a serum-to-pleural fluid albumin gradient of 1.8 g/dL, total nucleated cells 120/microlitre and a negative Gram stain. What is the diagnosis, and what is the most appropriate initial management?",
+  "choices": [
+   "Hepatic hydrothorax; sodium restriction with diuretics and treatment of the underlying liver disease",
+   "Malignant pleural effusion; therapeutic thoracentesis and pleurodesis",
+   "Parapneumonic effusion; intravenous antibiotics and chest drain",
+   "Tuberculous pleural effusion; anti-tuberculous therapy",
+   "Chylothorax; a low-fat diet with medium-chain triglycerides"
+  ],
+  "answer": 0,
+  "explain": "**Hepatic hydrothorax** = pleural effusion ในผู้ป่วยตับแข็งที่มี portal hypertension โดยไม่มีโรคหัวใจหรือปอดอธิบาย\n\n**กลไก**: มี **รูเล็กๆในกะบังลม (diaphragmatic defect)** ซึ่งเกิดจากส่วนเอ็นที่บางลง → **แรงดันลบในช่องอกดูด ascites จากช่องท้องขึ้นไปในช่องเยื่อหุ้มปอด** → เกิดน้ำในช่องอก\n- **พบข้างขวาประมาณ 85%** เพราะกะบังลมด้านขวามีจุดอ่อนมากกว่าและด้านซ้ายมีหัวใจกับ tendinous part ที่หนากว่า\n- **ปริมาณน้ำในช่องอกอาจมากกว่าที่คาด แม้ ascites จะน้อยหรือแทบไม่มี**\n\n**การรักษา = รักษาเหมือน ascites** เพราะต้นเหตุเดียวกัน\n1. **จำกัดโซเดียม (< 2 g/วัน)**\n2. **Diuretic: spironolactone ± furosemide** (อัตราส่วน 100:40 เป็นจุดตั้งต้น)\n3. รักษาโรคตับและภาวะแทรกซ้อน, งดสุรา, ประเมิน **TIPS** ในรายที่ดื้อต่อยา และท้ายที่สุดคือ **การปลูกถ่ายตับ**\n4. **ระบายด้วยการเจาะเป็นครั้งคราวเมื่อมีอาการ**\n\n**สิ่งที่ห้ามทำ: ห้ามใส่สายระบายทรวงอกค้างไว้** — ทำให้เกิดการสูญเสียโปรตีนและสารน้ำปริมาณมหาศาล, ภาวะไตวาย, การติดเชื้อ และทำให้ระบายไม่มีที่สิ้นสุด (สัมพันธ์กับ mortality ที่สูงขึ้นอย่างชัดเจน)\n\n**ภาวะแทรกซ้อนที่ต้องเฝ้าระวัง: spontaneous bacterial empyema** — วินิจฉัยเมื่อ **PMN > 250 cells/µL ร่วมกับ culture บวก** (หรือ PMN > 500 เมื่อ culture ลบ) โดย **ไม่มี pneumonia** → รักษาด้วย **cephalosporin รุ่นที่ 3** เช่นเดียวกับ SBP\n\nทำไมข้ออื่นผิด: น้ำเป็น transudate ที่ **albumin gradient > 1.1** และเซลล์น้อย ซึ่งตัด malignant, parapneumonic, TB (ทั้งหมดเป็น exudate) และไม่มีลักษณะขาวขุ่นของ chylothorax",
+  "pearl": "ในน้ำข้างปอดของผู้ป่วยตับแข็ง ถ้า **PMN > 250** ต้องคิดถึง **spontaneous bacterial empyema** ทันที และเจาะ **hemoculture + ส่งน้ำใส่ขวด culture ข้างเตียง** เพื่อเพิ่มโอกาสพบเชื้อ",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (RS ข้อ 6) – Child-Pugh score C มี ascites + pleural effusion → Diaphragmatic defect",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 38 – Pleural effusion จาก liver disease ให้อะไรต่อ (spironolactone / SBP ceftriaxone)",
+   "MED31 MCQ ข้อ 22 – Transudate ให้ Light's criteria → CHF, hydrothorax",
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (GI ข้อ 3) – ascites เจ็บท้อง neutrophil > 250 → Cefotaxime"
+  ]
+ },
+ {
+  "id": "CH-MCQ-20",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Next step in a lymphocytic exudate with high adenosine deaminase",
+  "stem": "A 28-year-old man has 6 weeks of low-grade fever, weight loss and right-sided pleuritic chest pain. Pleural fluid is an exudate with 92 percent lymphocytes, adenosine deaminase 78 U/L, negative AFB smear, negative Gram stain and cytology negative for malignant cells. Which is the most appropriate next step?",
+  "choices": [
+   "Start anti-tuberculous therapy, having sent pleural fluid and tissue for mycobacterial culture",
+   "Repeat thoracentesis weekly and observe without treatment",
+   "Start broad-spectrum antibiotics for a parapneumonic effusion",
+   "Proceed directly to pleurodesis for a presumed malignant effusion",
+   "Start corticosteroid alone to suppress the pleural inflammation"
+  ],
+  "answer": 0,
+  "explain": "**ภาพนี้คือ tuberculous pleural effusion แทบจะแน่นอน** — ในพื้นที่ที่วัณโรคชุกอย่างประเทศไทย\n\n**หลักฐานที่ครบ**\n1. **ผู้ป่วยอายุน้อย อาการเรื้อรังเป็นสัปดาห์ ไข้ต่ำ น้ำหนักลด**\n2. **Exudate ที่ lymphocyte เด่นกว่า 90%**\n3. **ADA > 40 U/L** — ในบริบทที่ TB ชุก ค่านี้มี **sensitivity และ specificity สูงกว่า 90%**\n4. **AFB smear ลบ** ซึ่ง **ไม่ตัดโรคเลย** เพราะ TB pleuritis เกิดจาก **delayed hypersensitivity reaction ต่อ antigen ที่รั่วเข้าช่องเยื่อหุ้มปอด** ไม่ใช่จากเชื้อจำนวนมาก → **smear บวกเพียงราว 5% และ culture บวกเพียง 25-35%**\n\n**ADA สูงแบบผลบวกลวงพบได้ใน**: **empyema, rheumatoid effusion, lymphoma** → จึงต้องอ่านร่วมกับภาพทางคลินิกและ **สัดส่วน lymphocyte/neutrophil** เสมอ\n\n**การตรวจที่ให้ผลดีที่สุดคือ pleural biopsy** (ผ่านกล้อง thoracoscopy หรือเข็ม Abrams) → พบ **caseating granuloma** และเพาะเชื้อได้ **มากกว่า 70-80%**\n\n**การตัดสินใจทางคลินิก**: ในพื้นที่ที่ TB ชุก ผู้ป่วยที่มีภาพครบเช่นนี้ควร **เริ่มยาต้านวัณโรคเชิงประจักษ์ไปเลย** พร้อมกับส่งสิ่งส่งตรวจไว้ — เพราะ **การรอ culture 6 สัปดาห์คือการปล่อยให้โรคลุกลามและเกิด pleural fibrosis ถาวร**\n\n**ประเด็นเพิ่มเติม**: TB pleural effusion ส่วนใหญ่ **ดูดซึมหายเองได้แม้ไม่รักษา** แต่ **ราวครึ่งหนึ่งจะกลายเป็นวัณโรคปอดใน 5 ปีถัดมา** → จึงต้องรักษาทุกราย; **ไม่ต้องใส่สายระบายเป็นกิจวัตร** และ **steroid ไม่มีหลักฐานว่าช่วย** (ต่างจาก TB pericarditis และ meningitis)\n\nทำไมข้ออื่นผิด: การเฝ้าดูเฉยๆเสี่ยงลุกลาม; ยาปฏิชีวนะทั่วไปไม่ครอบคลุมเชื้อวัณโรค; การทำ pleurodesis โดยยังไม่มีหลักฐานมะเร็งเป็นการรักษาผิดโรคและปิดโอกาสการวินิจฉัยภายหลัง; steroid เดี่ยวๆกดภูมิคุ้มกันโดยไม่ฆ่าเชื้อ",
+  "ref": [
+   "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (RS ข้อ 5) – Pleural fluid ADA 70 AFB negative cytology pending → TB",
+   "MED31 MCQ ข้อ 27 – คิด Light criteria ได้ exudative, ADA > 40 ถ้าว่าต้อง treat ยังไงต่อ",
+   "MED31 MCQ ข้อ 72 – Yellow color exudate ADA 50 positive ถามว่า fluid มาจากไหน",
+   "MED30 SAQ ข้อ 1 – ให้อาการมา สงสัย TB pleural effusion → PCR for TB (choice ADA)",
+   "MED31 OSCE ข้อ 4 – แปลผล pleural fluid: ไข้ 2 เดือน ไอปนเลือด น้ำหนักลด lymph เด่น Light criteria exudative"
+  ],
+  "pearl": "TB pleuritis: ADA > 40 + lymphocyte เด่น + mesothelial cell < 1% = เริ่มยาได้เลยในพื้นที่ชุก — AFB smear ลบเป็นเรื่องปกติ (บวก < 10%) และ culture จากน้ำบวกแค่ 25–40% ต้องอาศัย pleural biopsy จึงจะไวถึง 80–90%"
+ }
+]

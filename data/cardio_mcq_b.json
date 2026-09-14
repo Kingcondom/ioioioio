@@ -1,0 +1,466 @@
+[
+ {
+  "id": "C-MCQ-21",
+  "lec": "24",
+  "lecture": "Atrial fibrillation (อ.อภิชัย)",
+  "topic": "Alcohol-related paroxysmal atrial fibrillation",
+  "stem": "A 42-year-old man reports recurrent episodes of palpitations with an irregular pulse, each lasting several hours and resolving spontaneously. The episodes characteristically occur on Monday mornings after heavy weekend drinking. He has no hypertension, no diabetes and no structural heart disease; echocardiography and thyroid function tests are normal. Which of the following is the most likely diagnosis and the most appropriate intervention?",
+  "choices": [
+   "Paroxysmal supraventricular tachycardia; teach vagal manoeuvres",
+   "Atrial flutter with 2:1 conduction; refer for catheter ablation of the cavotricuspid isthmus",
+   "Thyrotoxic atrial fibrillation; start methimazole",
+   "Alcohol-induced paroxysmal atrial fibrillation; advise abstinence from alcohol",
+   "Multifocal atrial tachycardia; start verapamil"
+  ],
+  "answer": 3,
+  "explain": "กลไก: เรียกว่า **\"holiday heart syndrome\"** — แอลกอฮอล์ทำให้เกิด AF ผ่านหลายทางร่วมกัน\n1. เพิ่ม **sympathetic tone** และ catecholamine หลัง binge + ช่วง withdrawal\n2. **ย่น atrial action potential duration และเพิ่ม conduction heterogeneity** → เอื้อต่อ re-entry\n3. **electrolyte derangement** (hypokalemia, hypomagnesemia จาก renal loss และอาเจียน)\n4. **vagal surge** ระหว่างหลับ/หลังดื่ม และ acetaldehyde มี direct myocardial toxicity\nแอลกอฮอล์มี **dose-response** ต่อ AF incidence ชัดเจน และการ**งดสุราลด AF recurrence ได้จริง** (randomized trial: abstinence ลด recurrence จาก 73% เหลือ 53%)\n\nเบาะแสในโจทย์: เวลาเกิดสัมพันธ์กับการดื่ม + อายุน้อย + **ไม่มี structural heart disease/thyroid ปกติ** → รักษาที่ต้นเหตุคือ **แนะนำงดสุรา** (ร่วมกับประเมิน CHA2DS2-VASc; เคสนี้ = 0 จึงยังไม่ต้อง OAC)\n\nทำไมข้ออื่นผิด:\n- **Thyrotoxic AF**: thyrotoxicosis เป็นสาเหตุสำคัญที่ต้องคัดทุกรายของ new-onset AF จริง — แต่โจทย์บอกชัดว่า **TFT ปกติ** จึงตัดไป\n- **Atrial flutter 2:1**: จะเห็น **regular** tachycardia ~150/min พร้อม sawtooth flutter wave — โจทย์บอก **irregular pulse** ซึ่งเข้ากับ AF\n- **MAT**: พบใน **COPD รุนแรง/hypoxemia/theophylline** โดยมี P wave ≥3 แบบและ PR ต่างกัน; verapamil ไม่ใช่การรักษาหลักและผู้ป่วยนี้ไม่มีโรคปอด\n- **PSVT (AVNRT)**: จะเป็น **regular narrow-complex ~150-250/min** เริ่ม-หยุดทันที และ vagal manoeuvre หยุดได้ — ไม่สัมพันธ์กับการดื่มและ pulse ต้อง regular",
+  "pearl": "New-onset AF ต้องคัด reversible cause ทุกครั้ง: **thyrotoxicosis, แอลกอฮอล์, OSA, ไข้/ติดเชื้อ, hypokalemia/hypomagnesemia, PE, ischemia, ยา (theophylline, sympathomimetic)**",
+  "ref": [
+   "MED31 MCQ ข้อ 69 – irregular pulse, palpitation ทุกวันจันทร์หลัง party → AF from alcohol",
+   "MED31 MCQ ข้อ 53 – Hyperthyroid ไม่รักษาเกิดอะไร → AF",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 79 – ไข้สูง 39, HF, AF, Thyroid สูง → thyroid storm",
+   "MED32 MCQ ข้อ 40 – มาด้วย palpitation ตรวจอย่างอื่นปกติ จะส่งตรวจอะไรต่อ → EKG, Thyroid function"
+  ]
+ },
+ {
+  "id": "C-MCQ-22",
+  "lec": "24",
+  "lecture": "Atrial fibrillation (อ.อภิชัย) / Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Anticoagulant choice in valvular AF",
+  "stem": "A 48-year-old woman with rheumatic heart disease and moderate-to-severe mitral stenosis (mitral valve area 1.2 cm2) develops atrial fibrillation. Her CHA2DS2-VASc score is 2. Renal and liver function are normal. Which of the following is the most appropriate antithrombotic therapy?",
+  "choices": [
+   "Apixaban 5 mg twice daily",
+   "Aspirin 81 mg plus clopidogrel 75 mg daily",
+   "Enoxaparin 1 mg/kg subcutaneously twice daily long term",
+   "Rivaroxaban 20 mg once daily",
+   "Warfarin with a target INR of 2.0 to 3.0"
+  ],
+  "answer": 4,
+  "explain": "กลไก/หลักฐาน: ใน **rheumatic mitral stenosis** ระดับ moderate-severe การเกิด thrombus แตกต่างจาก non-valvular AF — left atrium โตมาก, stasis รุนแรง, มี valve inflammation/fibrosis → ความเสี่ยง thromboembolism สูงมาก\n\n**DOAC ถูกทดสอบใน rheumatic MS แล้วและแพ้ warfarin ชัดเจน**: INVICTUS trial (2022, rivaroxaban vs VKA ใน rheumatic heart disease with AF) พบว่า **rivaroxaban มี composite outcome และ mortality แย่กว่า warfarin** → แนวทางปัจจุบันจึงระบุว่า **valvular AF (moderate-severe rheumatic MS หรือ mechanical prosthetic valve) ต้องใช้ warfarin เท่านั้น** เป้า INR 2.0-3.0 (mechanical mitral valve เป้าสูงกว่า)\n\nนี่คือ **จุดหลอกที่ออกบ่อย** เพราะนักศึกษาจำว่า \"AF ใช้ DOAC ก่อน warfarin\" แล้วเอามาใช้ผิดที่ ประเทศไทยยังมี RHD สูงจึงสำคัญมาก\n\nทำไมข้ออื่นผิด:\n- **Apixaban / Rivaroxaban**: ตามเหตุผลข้างบน — DOAC ใช้ได้กับ **non-valvular** AF (ซึ่งรวม aortic stenosis, MR, mild MS, TAVI, bioprosthetic valve หลัง 3 เดือนได้) แต่ **ไม่ใช้ใน moderate-severe rheumatic MS และ mechanical valve**\n- **ASA + clopidogrel**: DAPT ด้อยกว่า OAC อย่างมากในการป้องกัน cardioembolic stroke (ACTIVE-W) ขณะที่เลือดออกใกล้เคียง\n- **Enoxaparin 1 mg/kg bid ระยะยาว**: เป็นขนาด therapeutic จริงและใช้เป็น bridge ได้ แต่ **ไม่มีหลักฐานรองรับการใช้ LMWH ระยะยาวเพื่อป้องกัน stroke ใน AF** ทั้งยังต้องฉีดวันละสองครั้งตลอดชีวิต เสี่ยง osteoporosis และ HIT",
+  "pearl": "สรุปที่ต้องจำ: **Mechanical valve + moderate/severe rheumatic MS = warfarin เท่านั้น**; DOAC ใช้ได้ใน non-valvular AF และ bioprosthetic valve (หลัง 3 เดือนแรก). AF + MS ยังเป็นต้นเหตุคลาสสิกของ stroke ในข้อสอบ",
+  "ref": [
+   "MED30 MCQ ข้อ 85 – เป็น Mitral stenosis & Atrial fibrillation แล้วเป็น stroke",
+   "MED30 สรุป Cardio – MS > AF / Valvular thrombi & mural thrombi / Mitral stenosis & ASD",
+   "MED33 MCQ ข้อ 14 – AF ใช้ Digoxin ส่วน Warfarin ใช้ embolism associated with AF",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 8 – Afib ระวัง thromboembolism → CHA2DS2-VASc"
+  ]
+ },
+ {
+  "id": "C-MCQ-23",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Physical findings of mitral stenosis",
+  "stem": "A 45-year-old woman from a rural province presents with 1 year of progressive exertional dyspnoea and recent haemoptysis. Which of the following physical findings is most consistent with mitral stenosis?",
+  "choices": [
+   "A pansystolic murmur at the apex radiating to the left axilla",
+   "An early diastolic high-frequency sound following S2 at the apex, followed by a low-pitched diastolic rumble",
+   "A harsh systolic ejection murmur at the right second intercostal space radiating to the carotids",
+   "A high-pitched blowing decrescendo diastolic murmur at the left sternal border with a wide pulse pressure",
+   "A mid-systolic click followed by a late systolic murmur that moves earlier on standing"
+  ],
+  "answer": 1,
+  "explain": "กลไก: MS = mitral valve ตีบ (ในไทยเกือบทั้งหมดจาก **rheumatic**) → ขัดการไหลจาก LA → LV ใน diastole → **transmitral gradient** → LA pressure สูง → pulmonary venous congestion (เหนื่อย, **hemoptysis** จาก pulmonary venous rupture/bronchial vein varix) → ต่อมา pulmonary HT → RHF\n\nเสียงที่ตรงกลไก:\n- **Opening snap** = ลิ้นที่หนา/ติดกันแต่ยังเปิดได้ \"กระตุก\" เปิดอย่างฉับพลันในต้น diastole → เสียงสูงคมตามหลัง S2; **A2-OS interval สั้นลงเมื่อ MS รุนแรงขึ้น** (เพราะ LA pressure สูงทำให้ลิ้นเปิดเร็ว) — เป็นตัวบอก severity\n- **Low-pitched diastolic rumbling murmur ที่ apex** (ฟังด้วย bell, ท่าตะแคงซ้าย) จาก turbulent flow ผ่านรูแคบ; ยาวขึ้นเมื่อรุนแรงขึ้น\n- **Loud S1** (ลิ้นปิดจากตำแหน่งที่เปิดกว้าง), **loud P2** เมื่อมี pulmonary HT, mitral facies\n\nทำไมข้ออื่นผิด — ทุกข้อเป็นลิ้นอื่นที่ต้องแยกให้ได้:\n- **High-pitched blowing decrescendo diastolic ที่ LSB + wide pulse pressure** = **aortic regurgitation** (เลือดไหลย้อนกลับใน diastole → SV สูง, diastolic BP ต่ำ → wide pulse pressure, water-hammer pulse, Corrigan, de Musset)\n- **Harsh systolic ejection ที่ RUSB ร้าวไป carotid** = **aortic stenosis** (+ slow-rising pulse, delayed/absent A2, S4)\n- **Pansystolic ที่ apex ร้าวไป axilla** = **mitral regurgitation**\n- **Mid-systolic click + late systolic murmur ที่ขยับมาเร็วขึ้นเมื่อยืน** = **mitral valve prolapse** (ยืน → preload ลด → LV เล็กลง → leaflet prolapse เร็วขึ้น → click มาเร็วขึ้นและ murmur ยาวขึ้น)",
+  "pearl": "MS ที่ออกสอบซ้ำทุกปี: **diastolic rumbling murmur at apex + opening snap + loud S1 + loud P2**; complication ที่ต้องนึกถึงคือ **AF, systemic embolism, pulmonary HT → RHF, hemoptysis** และในหญิงตั้งครรภ์จะ decompensate เพราะ HR และ volume เพิ่ม",
+  "ref": [
+   "MED31 past paper – การตรวจร่างกายข้อใดต่อไปนี้เข้าได้กับภาวะ mitral stenosis → Opening snap",
+   "MED32 MCQ ข้อ 45 – Which of the following choices is not a sign of mitral stenosis",
+   "MED34 FA MCQ – คนไข้มาด้วยอาการ heart failure มี crepitation ทั้งสองข้าง และ diastolic rumbling murmur → CHF + Mitral stenosis",
+   "MED33 MCQ – Diastolic rumbling ที่ Apex : MS",
+   "MED30 MCQ ข้อ 41 – Ans. mitral stenosis",
+   "MED34 MEQ1 – Rheumatic heart disease with severe MS with HF"
+  ]
+ },
+ {
+  "id": "C-MCQ-24",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Aortic regurgitation",
+  "stem": "A tall, thin 19-year-old woman presents with reduced vision and exertional dyspnoea. She has long arms, arachnodactyly and a high-arched palate. Vital signs: PR 78/min with a rapid upstroke and collapse, BP 180/55 mmHg. A high-pitched blowing decrescendo diastolic murmur is heard at the left sternal border, and the head nods with each heartbeat. Which of the following is the most likely diagnosis, and which underlying condition should be suspected?",
+  "choices": [
+   "Mitral regurgitation due to papillary muscle rupture",
+   "Aortic stenosis due to a congenital bicuspid aortic valve",
+   "Aortic regurgitation due to aortic root dilatation in Marfan syndrome",
+   "Mitral stenosis due to rheumatic heart disease",
+   "Hypertrophic cardiomyopathy with dynamic outflow obstruction"
+  ],
+  "answer": 2,
+  "explain": "กลไก: AR = เลือดไหลย้อนจาก aorta กลับเข้า LV ใน diastole\n→ LV ได้รับ volume 2 ทาง (จาก LA + regurgitant volume) → **LV eccentric hypertrophy/dilatation**, total stroke volume สูงมาก\n→ **systolic BP สูง** (SV มาก) ร่วมกับ **diastolic BP ต่ำ** (เลือดรั่วกลับ) = **wide pulse pressure** (180/55, pulse pressure 125 mmHg)\n→ pulse ขึ้นเร็วตกเร็ว = **water-hammer / Corrigan pulse**, หัวผงกตามจังหวะ = **de Musset sign**, อาการอื่น: Quincke, Traube pistol-shot, Duroziez, Müller, Hill sign\n\nเสียง: **high-pitched blowing decrescendo diastolic murmur ที่ LSB/aortic area** (ฟังด้วย diaphragm, ผู้ป่วยนั่งโน้มตัวกลั้นหายใจออก); อาจมี **Austin Flint murmur** (diastolic rumble ที่ apex จาก regurgitant jet กระทบ anterior mitral leaflet → เลียนแบบ MS)\n\nเบาะแส Marfan: ตัวสูงผอม แขนยาว **arachnodactyly, high-arched palate** และ **ตามัว (ectopia lentis เลนส์เคลื่อน ซึ่งใน Marfan เคลื่อนขึ้น superotemporal)** — Marfan จาก **FBN1 mutation → fibrillin-1 ผิดปกติ → TGF-β signaling เพิ่ม → aortic media เสื่อม (cystic medial necrosis)** → **aortic root dilatation → AR และเสี่ยง aortic dissection** ถ่ายทอดแบบ **autosomal dominant**\n\nทำไมข้ออื่นผิด:\n- **MS**: murmur เป็น **diastolic rumble ที่ apex + opening snap** และจะมี **narrow** pulse pressure ไม่ใช่ wide\n- **AS**: murmur เป็น **systolic** ejection ที่ RUSB + **pulsus parvus et tardus** (ขึ้นช้า) และ pulse pressure **narrow** — ตรงกันข้ามกับโจทย์\n- **MR จาก papillary muscle rupture**: เป็น **acute pansystolic murmur** ในบริบท acute MI ร่วมกับ pulmonary edema เฉียบพลัน\n- **HOCM**: **systolic** murmur ที่ดัง**ขึ้น**เมื่อ Valsalva/ยืน (preload ลด), พร้อม bisferiens pulse — ไม่ใช่ diastolic murmur และไม่มี wide pulse pressure",
+  "pearl": "**Acute AR** (จาก aortic dissection หรือ IE) ต่างจาก chronic โดยสิ้นเชิง: LV ยังไม่ dilate → LVEDP พุ่ง → **pulmonary edema + hypotension + murmur สั้นเบา** และ **ไม่มี wide pulse pressure** → เป็น surgical emergency",
+  "ref": [
+   "MED31 past paper – This tall, thin 19 year old female... strong pulse, BP 180/70 and a high pitched blowing diastolic decrescendo murmur → Aortic regurgitation",
+   "MED34 FA MCQ ข้อ 2 – Wide pulse pressure, diastolic blowing murmur at lt. sternal border → Aortic regurgitation",
+   "MED32 MCQ ข้อ 21 – AR : wide pulse diastolic blowing murmur",
+   "MED34 FA MCQ ข้อ 9 – ให้ clinical ของ marfan syndrome และ pedigree → Autosomal dominant"
+  ]
+ },
+ {
+  "id": "C-MCQ-25",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Aortic stenosis – complications and indications for intervention",
+  "stem": "A 74-year-old man presents with exertional dyspnoea and two episodes of syncope while climbing stairs. Examination reveals a harsh late-peaking systolic ejection murmur at the right second intercostal space radiating to both carotids, a single S2 and a slow-rising low-amplitude carotid pulse. Echocardiography shows a calcified aortic valve with a mean gradient of 52 mmHg, aortic valve area 0.7 cm2 and LVEF 58%. Which of the following is NOT an expected complication of his condition?",
+  "choices": [
+   "Sudden cardiac death",
+   "Gastrointestinal bleeding from angiodysplasia with acquired von Willebrand abnormality",
+   "Exertional syncope from inability to increase cardiac output",
+   "Infective endocarditis of the calcified valve",
+   "Wide pulse pressure with a bounding peripheral pulse"
+  ],
+  "answer": 4,
+  "explain": "กลไก: AS = ทางออกของ LV ตีบ → LV ต้องสร้างแรงดันสูงเพื่อผ่านรูแคบ → **concentric hypertrophy** → แข็ง (diastolic dysfunction), **fixed stroke volume**\n\nผลที่เกิดจาก **fixed, reduced stroke volume**:\n- **pulse pressure แคบ** ไม่ใช่กว้าง; pulse ขึ้นช้าแอมพลิจูดต่ำ = **pulsus parvus et tardus**; murmur peak ช้า; S2 เบาหรือ single (A2 หายไป) → ทั้งหมดนี้บอก severe AS\n→ ดังนั้น **\"wide pulse pressure with bounding pulse\" เป็นลักษณะของ AR/thyrotoxicosis/anemia ไม่ใช่ AS** = คำตอบที่ \"ไม่ใช่\"\n\nทำไมข้ออื่นเป็น complication จริง:\n- **Exertional syncope**: ออกแรง → peripheral vasodilation แต่ CO เพิ่มไม่ได้เพราะตีบ → BP ตก → cerebral hypoperfusion; ยังเกิดจาก ventricular arrhythmia และ baroreceptor reflex ผิดปกติ — **syncope เป็นหนึ่งในสาม classic symptom (angina, syncope, dyspnoea/HF)** และบ่งว่า prognosis แย่ ต้องผ่าตัด\n- **GI bleeding จาก angiodysplasia** = **Heyde syndrome**: แรงเฉือน (shear stress) สูงผ่านรูตีบ ทำให้ **high-molecular-weight vWF multimer ถูกย่อยโดย ADAMTS13** → acquired von Willebrand type 2A → เลือดออกจาก angiodysplasia; หายได้หลังเปลี่ยนลิ้น (เป็น pearl ที่ออกสอบระดับยาก)\n- **Sudden cardiac death**: พบในผู้ที่มีอาการแล้ว (~1%/ปีใน asymptomatic severe AS, สูงขึ้นมากเมื่อมีอาการ) จาก ventricular arrhythmia/ischemia\n- **Infective endocarditis**: ลิ้นที่ผิดปกติ/calcified เป็นจุดเกาะของ bacteria หลัง transient bacteremia\n\nการรักษา: severe AS **ที่มีอาการ** → **AVR (surgical หรือ TAVI ตามอายุ/ความเสี่ยง)**; ยาไม่เปลี่ยนประวัติธรรมชาติ และ **ระวัง vasodilator/nitrate/ACEI ขนาดสูง** เพราะ preload/afterload dependent อาจ BP ตกรุนแรง",
+  "pearl": "Severe AS criteria: **Vmax ≥4 m/s, mean gradient ≥40 mmHg, AVA ≤1.0 cm2**. ในผู้สูงอายุสาเหตุอันดับหนึ่งคือ **calcific degeneration**; อายุ <65 คิดถึง **bicuspid aortic valve**; ในไทยยังต้องนึกถึง **rheumatic** ซึ่งมักมี mitral ร่วม",
+  "ref": [
+   "MED32 MCQ ข้อ 4 – อะไรไม่ใช่ complication ของ severe aortic stenosis",
+   "MED34 FA MCQ ข้อ 4 – Systolic ejection murmur at upper sternal border radiate to carotid → Aortic stenosis",
+   "MED28 MED421 ข้อ 102 – systolic ejection murmur at the right 2nd intercostal space → Aortic stenosis",
+   "MED31 MCQ – Ans Aortic stenosis and mitral stenosis",
+   "MED30 สรุป Cardio – mid systolic ejection murmur @ apex / Aortic stenosis"
+  ]
+ },
+ {
+  "id": "C-MCQ-26",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Acute rheumatic fever – Jones criteria",
+  "stem": "A 14-year-old boy presents with fever and migratory joint pain that began in the right knee, then moved to the left ankle and left wrist over 5 days. He had a sore throat 3 weeks ago. Examination shows a temperature of 38.3 C, a new apical pansystolic murmur and painless subcutaneous nodules over the extensor surface of the elbows. ESR is 86 mm/h and anti-streptolysin O titre is markedly elevated. Throat swab culture is negative. Which of the following is the most appropriate interpretation and management?",
+  "choices": [
+   "Systemic lupus erythematosus; start hydroxychloroquine and prednisolone",
+   "Acute gouty arthritis; give indomethacin and start allopurinol",
+   "Septic arthritis of the knee; perform arthrocentesis and give intravenous cloxacillin",
+   "Acute rheumatic fever; give benzathine penicillin G now and continue long-term secondary prophylaxis",
+   "Disseminated gonococcal arthritis; give ceftriaxone for 7 days"
+  ],
+  "answer": 3,
+  "explain": "กลไก: ARF เกิดจาก **molecular mimicry** — antibody/T cell ที่สร้างต่อ **group A streptococcal M protein** ไปข้ามปฏิกิริยากับโปรตีนของ host (cardiac myosin, laminin, vimentin, glycoprotein ของ valve, neuronal antigen ที่ basal ganglia) → เกิด pancarditis, arthritis, chorea ช้ากว่า pharyngitis ประมาณ **2-4 สัปดาห์** (ซึ่งเป็นเหตุผลว่าทำไม **throat culture มักกลับเป็นลบแล้ว** ต้องใช้ **ASO titer / anti-DNase B** เป็นหลักฐานการติดเชื้อที่ผ่านมา)\n\n**Jones criteria (revised)** ต้องมี evidence of preceding GAS infection + **2 major** หรือ **1 major + 2 minor**\n- **Major (จำ \"JONES\")**: **J**oint (migratory polyarthritis), **O** = carditis (♡), **N**odules (subcutaneous), **E**rythema marginatum, **S**ydenham chorea\n- **Minor**: ไข้, arthralgia, ESR/CRP สูง, prolonged PR interval (1st degree AV block)\nเคสนี้มี major 3 อย่าง (migratory polyarthritis + carditis จาก new murmur MR + subcutaneous nodules) + ASO สูง → **วินิจฉัยได้**\n\nการรักษา:\n1. **กำจัดเชื้อ: benzathine penicillin G IM ครั้งเดียว** (หรือ penicillin V oral 10 วัน)\n2. ลดการอักเสบ: **ASA/NSAID ขนาดสูง**; ถ้า carditis รุนแรง/HF → corticosteroid\n3. **Secondary prophylaxis สำคัญที่สุดต่อ prognosis**: benzathine penicillin G IM ทุก 3-4 สัปดาห์ — ระยะเวลาขึ้นกับว่ามี carditis/valve disease หรือไม่ (เช่น carditis + residual valve disease: ≥10 ปี หรือถึงอายุ 40 ปี แล้วแต่อันไหนนานกว่า)\n\nทำไมข้ออื่นผิด:\n- **Disseminated GC arthritis**: ก็มา **migratory arthritis + ไข้** ได้ (เป็น distractor ที่ดีมาก) แต่จะมี **tenosynovitis + pustular skin lesion**, มีประวัติ sexual exposure/urethral discharge และ **ไม่มี new murmur/subcutaneous nodule/ASO สูง**\n- **Septic arthritis**: มักเป็น **monoarthritis ข้อเดียว ไม่ย้ายที่**, ปวดรุนแรงขยับไม่ได้เลย, synovial WBC >50,000 PMN เด่น — ไม่เข้ากับ migratory และ nodules\n- **Gout**: ผู้ชายอายุ 14 พบน้อยมาก, มักเป็น monoarthritis (MTP1), มี needle-shaped negatively birefringent crystal; ไม่มี carditis\n- **SLE**: arthritis มักเป็น **symmetrical non-erosive polyarthritis ไม่ย้ายที่** + มี mucocutaneous/renal/hematologic involvement + ANA positive; subcutaneous nodule และ ASO สูงไม่เข้า",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 47 – Acute rheumatic fever (เจอ murmur เจ็บคอ ปวดข้อ) → ASO titer",
+   "MED31 past paper – ข้อใดต่อไปนี้พบได้ใน Rheumatic fever → Erythema marginatum",
+   "MED33 MCQ ข้อ 91 – Migratory joint pain เข่าปวดบวมแดง ส่งไร → ส่ง ASO",
+   "MED31 MCQ – Acute rheumatic fever / Bacterial endocarditis / Acute myocarditis",
+   "MED30 สรุป – Rheumatic fever"
+  ],
+  "pearl": "ระยะเวลาของ secondary prophylaxis: **ไม่มี carditis → 5 ปี หรือถึงอายุ 21 ปี**; **มี carditis แต่ไม่เหลือ valve disease → 10 ปี หรือถึงอายุ 21 ปี**; **มี carditis + residual valve disease → ≥10 ปี หรือถึงอายุ 40 ปี** แล้วแต่อันไหนนานกว่า (รายรุนแรงพิจารณาตลอดชีวิต)"
+ },
+ {
+  "id": "C-MCQ-27",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Infective endocarditis – treatment of viridans streptococcal native valve IE",
+  "stem": "A 54-year-old man is evaluated for 3 months of fever, fatigue and backache. He has no known cardiac disease and no drug allergy. Examination shows splinter haemorrhages under the fingernails, conjunctival haemorrhages and a decrescendo diastolic murmur of aortic insufficiency. Transthoracic echocardiography shows an oscillating mass on the aortic valve. Four sets of blood cultures grow viridans streptococci with a penicillin MIC of 0.06 mcg/mL (fully susceptible). There is no heart failure, abscess or conduction abnormality. Which of the following is the most appropriate antibiotic regimen?",
+  "choices": [
+   "Oral amoxicillin for 6 weeks after 3 days of intravenous therapy",
+   "Vancomycin intravenously for 4 weeks",
+   "Penicillin G plus gentamicin intravenously for 6 weeks",
+   "Penicillin G intravenously for 4 weeks, or penicillin G plus gentamicin for 2 weeks",
+   "Ceftriaxone intravenously for 2 weeks as monotherapy"
+  ],
+  "answer": 3,
+  "explain": "กลไก: IE เกิดจาก **endothelial injury → platelet-fibrin deposition (nonbacterial thrombotic vegetation) → bacteria เกาะระหว่าง transient bacteremia → vegetation โตโดย bacteria ถูกห่อใน biofilm และ fibrin** ทำให้\n1. ยาต้านจุลชีพเข้าถึงยาก และ bacteria อยู่ใน **stationary phase** → ต้องใช้ยา **ฆ่าเชื้อ (bactericidal), ทางหลอดเลือดดำ, ขนาดสูง, ระยะยาว**\n2. เกิด **immunologic phenomena** (Roth spot, Osler node, glomerulonephritis, RF positive) และ **embolic/vascular phenomena** (Janeway lesion, splinter hemorrhage, conjunctival hemorrhage, septic emboli) — ตรงกับโจทย์\n\nสำหรับ **native valve, viridans streptococci ที่ penicillin-susceptible (MIC ≤0.12)**:\n- **Penicillin G (หรือ ceftriaxone) IV 4 สัปดาห์** เป็นมาตรฐาน **หรือ**\n- **Penicillin G/ceftriaxone + gentamicin 2 สัปดาห์** (regimen สั้น ใช้ในผู้ที่ไม่มี complication, ไตดี, ไม่ใช่ prosthetic valve) — aminoglycoside ให้ **synergy** ด้วยการเพิ่ม uptake ของ β-lactam\n\nทำไมข้ออื่นผิด:\n- **Penicillin + gentamicin 6 สัปดาห์**: 6 สัปดาห์สงวนไว้สำหรับ **prosthetic valve IE** หรือ enterococcal IE / เชื้อดื้อ; การให้ gentamicin นาน 6 สัปดาห์เพิ่ม **nephrotoxicity และ ototoxicity** โดยไม่ได้ประโยชน์เพิ่ม\n- **Vancomycin 4 สัปดาห์**: สงวนไว้เมื่อ **แพ้ penicillin ชนิดรุนแรง** หรือเชื้อ MRSA — vancomycin ฆ่าเชื้อช้ากว่า β-lactam ใน streptococci → **ผลลัพธ์แย่กว่า** เมื่อใช้แทนโดยไม่จำเป็น; โจทย์บอกว่า **ไม่แพ้ยา**\n- **Ceftriaxone monotherapy 2 สัปดาห์**: สั้นเกินไป — monotherapy ต้อง **4 สัปดาห์**; 2 สัปดาห์ใช้ได้เฉพาะเมื่อ **ร่วมกับ gentamicin**\n- **Oral amoxicillin ต่อ**: IE ต้องการ **sustained bactericidal level ใน vegetation** → การเปลี่ยนเป็น oral เร็วไม่เป็นมาตรฐาน (partial oral switch ใน POET trial ทำได้ในผู้ป่วย stable ที่คัดเลือกเฉพาะ หลังให้ IV ≥10 วันและในศูนย์ที่มีทีมเฉพาะทาง ไม่ใช่หลัง 3 วัน)",
+  "pearl": "IE ที่มีข้อบ่งชี้ผ่าตัด: **HF จาก valve destruction, uncontrolled infection (abscess/fistula/เชื้อดื้อ), recurrent embolism หรือ vegetation >10 mm ที่ยังเคลื่อนที่**. Roth spot = **retinal hemorrhage ที่มีจุดขาวกลาง**; Osler node = **เจ็บ**; Janeway lesion = **ไม่เจ็บ**",
+  "ref": [
+   "MED31 past paper – A 54 year old man... splinter hemorrhages, conjunctival hemorrhage, diastolic murmur of aortic insufficiency, hemoculture grow viridans streptococci sensitive to penicillin",
+   "MED31 past paper – ใน infective endocarditis ข้อใดต่อไปนี้คือ Roth's spot → Retinal hemorrhage",
+   "MED32 MCQ ข้อ 59 – มี heart murmur → bacterial endocarditis / sore throat 5 วัน pansystolic murmur → IE",
+   "MED28 MED421 ข้อ 24 – A patient who has infective endocarditis is about to undergo a dental procedure, allergic to penicillin"
+  ]
+ },
+ {
+  "id": "C-MCQ-28",
+  "lec": "27",
+  "lecture": "Rheumatic fever and Valvular heart disease (อ.ชนัญญา)",
+  "topic": "Mitral regurgitation and mitral valve prolapse",
+  "stem": "A 30-year-old woman is found to have a mid-systolic click followed by a late systolic murmur at the apex. On standing, the click occurs earlier and the murmur becomes longer; on squatting, the click moves later and the murmur shortens. Echocardiography shows billowing of the posterior mitral leaflet into the left atrium with mild mitral regurgitation and normal left ventricular size. Which of the following best explains the change in auscultatory findings on standing?",
+  "choices": [
+   "Increased systemic vascular resistance augments the regurgitant volume",
+   "Increased venous return stretches the mitral annulus and delays leaflet coaptation",
+   "Reduced left ventricular end-diastolic volume allows the leaflet to prolapse earlier in systole",
+   "Reduced heart rate lengthens diastole and increases ventricular filling",
+   "Increased left atrial pressure shortens the time to mitral valve opening"
+  ],
+  "answer": 2,
+  "explain": "กลไก: MVP เกิดจาก **myxomatous degeneration** — proteoglycan สะสมใน leaflet, collagen/elastin จัดเรียงผิด → leaflet ยืดหนา, chordae ยาว → leaflet \"พับ\" เข้า LA ขณะ systole\n\n**ตรรกะของ dynamic maneuvers (ออกสอบซ้ำทุกปี):** MVP ขึ้นอยู่กับ **ความไม่สมดุลระหว่างขนาดของ leaflet กับขนาดของ LV cavity**\n- **ยืน / Valsalva** → venous return ลด → **LVEDV เล็กลง** → leaflet ที่ยาวเกินเมื่อเทียบกับโพรงที่เล็ก จึง prolapse **เร็วขึ้น** → **click มาเร็วขึ้น + murmur ยาวขึ้น**\n- **นั่งยอง (squatting) / leg raise** → venous return และ afterload เพิ่ม → **LV ใหญ่ขึ้น** → leaflet ตึงขึ้น prolapse **ช้าลง** → **click มาช้าลง + murmur สั้นลง**\n\n(เปรียบเทียบ: **HOCM** murmur **ดังขึ้น**ตอนยืน/Valsalva และ **เบาลง**ตอน squat — ทิศทางเดียวกันเพราะทั้งคู่เป็น dynamic; ขณะที่ **AS/MR แท้** murmur **เบาลง**ตอน Valsalva เพราะ SV ลด)\n\nทำไมข้ออื่นผิด:\n- **SVR เพิ่มทำให้ regurgitant volume มากขึ้น**: เกิดตอน **squatting/handgrip** (ทำให้ murmur ของ MR แท้ดังขึ้น) ไม่ใช่ตอนยืน — ทิศทางผิด\n- **Venous return เพิ่ม**: ตอน **ยืน venous return ลด** ไม่ใช่เพิ่ม — ข้อเท็จจริงผิด\n- **HR ลดทำให้ diastole ยาว**: ตอนยืน **HR เพิ่ม** (reflex tachycardia) ไม่ใช่ลด\n- **LA pressure สูงทำให้ลิ้นเปิดเร็ว**: อธิบาย **A2-opening snap interval ใน MS** ไม่เกี่ยวกับ MVP click",
+  "pearl": "MVP เป็นสาเหตุอันดับหนึ่งของ **primary (degenerative) MR** ในประเทศพัฒนาแล้ว; ส่วนใหญ่ prognosis ดี แต่ติดตาม severity ของ MR, ขนาด LV, AF และความเสี่ยง IE. MR รุนแรงที่มีอาการหรือ LVEF ≤60% / LVESD ≥40 mm → ส่งผ่าตัดซ่อมลิ้น",
+  "ref": [
+   "MED34 MCQ ครั้งที่ 4 ข้อ 41 – Mid systolic click : mitral valve prolapse",
+   "MED31 MCQ ข้อ 57 – Murmur ตอนยืน and systolic click → MR with leaflet prolapse",
+   "MED31 MCQ ข้อ 58 – มีขาบวม + lung crepitation ฟังหัวใจมี pansystolic murmur at apex radiate to axilla → CHF + mitral regurgitation",
+   "MED32 MCQ – mitral valve prolapse",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 76 – Pansystolic murmur at lower sternal border"
+  ]
+ },
+ {
+  "id": "C-MCQ-29",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Second-degree AV block Mobitz type I",
+  "stem": "A 68-year-old asymptomatic man has an ECG performed before elective hernia repair. The rhythm strip shows progressive lengthening of the PR interval over three consecutive beats (200, 260, 320 ms) followed by a non-conducted P wave, after which the cycle repeats. The QRS duration is 84 ms. Which of the following is the correct diagnosis and the expected site of block?",
+  "choices": [
+   "Third-degree (complete) AV block; block below the AV node",
+   "First-degree AV block; delayed conduction within the AV node",
+   "Second-degree AV block Mobitz type I; block within the AV node",
+   "Second-degree AV block Mobitz type II; block in the His-Purkinje system",
+   "Sinoatrial exit block; block at the sinoatrial node"
+  ],
+  "answer": 2,
+  "explain": "กลไก: **Mobitz I (Wenckebach)** — เซลล์ของ **AV node** มี **decremental conduction** (ยิ่งถูกกระตุ้นถี่ ยิ่งฟื้นตัวช้า) → แต่ละ beat ใช้เวลานำไฟฟ้านานขึ้นเรื่อยๆ (**PR ยาวขึ้นทีละ beat**) จนเซลล์ยัง refractory อยู่และ **บล็อกไป 1 beat** แล้วพักฟื้นตัว → เริ่มวงจรใหม่\nลักษณะเพิ่มเติมที่สอดคล้อง: **QRS แคบ** (เพราะบล็อกเหนือ bundle of His ระบบด้านล่างปกติ), RR interval **ค่อยๆสั้นลง** ก่อน dropped beat, มักสัมพันธ์กับ **vagal tone สูง** (นักกีฬา, หลับ, inferior MI เพราะ RCA เลี้ยง AV node) หรือยา (BB, CCB, digoxin)\n→ **Benign prognosis ในคนไม่มีอาการ** → ไม่ต้องใส่ pacemaker, แค่ติดตาม/ทบทวนยา\n\nทำไมข้ออื่นผิด:\n- **Mobitz II**: **PR คงที่** แล้ว **ตกหายไปทันทีโดยไม่เตือน**, มักมี **QRS กว้าง** (โรคอยู่ที่ His-Purkinje) และ **เสี่ยงเปลี่ยนเป็น complete AV block เฉียบพลัน** → ต้องใส่ pacemaker; โจทย์บอกชัดว่า PR ยาวขึ้นเรื่อยๆ และ QRS แคบ\n- **Complete AV block**: **P wave และ QRS ไม่สัมพันธ์กันเลย (AV dissociation)** มี escape rhythm ของตัวเอง — ในโจทย์ P ส่วนใหญ่ยังนำได้\n- **First-degree AV block**: **PR ยาว >200 ms แต่ทุก P นำได้ ไม่มี dropped beat** — โจทย์มี P ที่ไม่นำ\n- **SA exit block**: ปัญหาอยู่ที่การสร้าง/ออกของ impulse จาก SA node → จะเห็น **P wave หายไปทั้งตัวพร้อม QRS (pause)** ไม่ใช่ P ที่มาแล้วไม่นำ",
+  "pearl": "เคล็ดจำ: **\"Longer, longer, longer, drop → then you have a Wenckebach\"** และ **\"If some Ps just don't get through, then you have a Mobitz II\"**. จุดหลอก: Mobitz I 2:1 conduction อาจแยกจาก Mobitz II ยาก — ใช้ QRS width, การตอบสนองต่อ atropine/exercise (Mobitz I ดีขึ้น, Mobitz II แย่ลง) ช่วยแยก",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 73 – EKG: progressive PR prolonging, QRS หาย ถามเป็นไร",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 19 – ให้ EKG มา ตอบเป็น 2 degree AV block Mobitz 1",
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 5 – ให้ภาพ EKG: type II AV block Mobitz type",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 1 / MED31 โพย / MED32 MCQ ข้อ 4, 9 – รูป EKG → 1st degree AV block",
+   "MED30 สรุป Cardio – degree AV block (Mobitz type 1), 3rd degree AV block"
+  ]
+ },
+ {
+  "id": "C-MCQ-30",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Mobitz II / high-grade AV block – definitive management",
+  "stem": "A 76-year-old woman presents with three episodes of syncope in the past month. Her ECG shows sinus rhythm at 78/min with a constant PR interval of 180 ms, intermittent sudden non-conducted P waves without preceding PR prolongation, and a QRS duration of 140 ms with a left bundle branch block pattern. She takes no rate-limiting drugs, and her electrolytes and thyroid function are normal. Which of the following is the most appropriate definitive management?",
+  "choices": [
+   "Implantation of a permanent pacemaker",
+   "Oral theophylline to enhance atrioventricular conduction",
+   "Radiofrequency catheter ablation of the atrioventricular node",
+   "Temporary transvenous pacing alone without a permanent device",
+   "Observation with repeat ECG in 6 months"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Mobitz II** — พยาธิสภาพอยู่ที่ **His-Purkinje system** (infranodal) ซึ่งมีลักษณะ **all-or-none conduction** ไม่ใช่ decremental แบบ AV node → ดังนั้น **PR คงที่** แล้วจู่ๆ **บล็อกหายไปโดยไม่มีสัญญาณเตือน**; **QRS กว้างพร้อม LBBB** ยืนยันว่าโรคกินระบบนำไฟฟ้าส่วนล่างกว้าง\n\nเหตุผลที่ต้องใส่ pacemaker:\n1. **เสี่ยงเปลี่ยนเป็น complete AV block แบบทันทีและคาดเดาไม่ได้** โดย escape pacemaker ที่อยู่ต่ำ (ventricular, 20-40/min) **ไม่เสถียร** → เกิด syncope, asystole, sudden death\n2. เป็นความผิดปกติ **เชิงโครงสร้างถาวร** (fibrosis/degeneration, ischemia, infiltrative, post-surgical) **ไม่ reversible**\n3. ผู้ป่วยนี้มี **syncope = symptomatic bradyarrhythmia** → ข้อบ่งชี้ชัดเจน class I\n\nทำไมข้ออื่นผิด:\n- **Observation 6 เดือน**: ผู้ป่วยเป็นลมแล้ว 3 ครั้ง — การรอคือเสี่ยง sudden death/บาดเจ็บจากการหมดสติ (เหมาะกับ Mobitz I ไม่มีอาการเท่านั้น)\n- **Theophylline**: อาจช่วยเพิ่ม conduction ใน **AV nodal** block บางกรณี (เช่น post-transplant, vagally mediated) ไม่น่าเชื่อถือใน infranodal block และไม่ใช่ definitive therapy\n- **Temporary transvenous pacing เดี่ยวๆ**: เป็นมาตรการที่ถูกต้องแต่ **ชั่วคราว** เหมาะสำหรับพยุงระหว่างรอ ไม่ใช่การรักษาที่ definitive เพราะพยาธิสภาพของ Mobitz II เป็นความเสื่อมถาวรของ His-Purkinje และสายชั่วคราวที่คาไว้นานเสี่ยงติดเชื้อและเคลื่อนหลุด (หมายเหตุ: **atropine ออกฤทธิ์ที่ AV node ผ่าน vagolytic effect จึงไม่ช่วยใน infranodal block และอาจทำให้แย่ลง** เพราะเพิ่ม atrial rate → ยิ่งบล็อกมากขึ้น)\n- **Ablation AV node**: เป็นการ **ทำลาย** การนำไฟฟ้าโดยเจตนา ใช้ใน AF ที่คุม rate ไม่ได้ **หลังฝัง pacemaker แล้ว** — การทำในผู้ป่วยที่บล็อกอยู่แล้วจะยิ่งซ้ำเติม",
+  "pearl": "ข้อบ่งชี้ pacemaker ที่ต้องจำ: **Mobitz II, complete AV block, high-grade AV block, symptomatic sinus node dysfunction, alternating bundle branch block** — และ **Mobitz I ที่มีอาการหรือบล็อกระดับ infranodal**. ชั่วคราวระหว่างรอ: **transcutaneous/transvenous pacing**",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 5 – type II AV block Mobitz type: Delayed conduction AV / Intermittent conduction AV / Complete conduction AV",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 73 – Second degree AV block mobitz II vs I vs complete heart block",
+   "MED30 สรุป Cardio – 3rd degree AV block",
+   "MED29 SAQ – EKG: Acute pericarditis, AV block, Hyperkalemia, MI"
+  ]
+ },
+ {
+  "id": "C-MCQ-31",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Asymptomatic first-degree AV block",
+  "stem": "A 24-year-old competitive long-distance runner has a pre-participation ECG showing sinus bradycardia at 50/min with a PR interval of 230 ms, narrow QRS and normal repolarisation. He is completely asymptomatic, has no family history of sudden death, and his echocardiogram and electrolytes are normal. The PR interval shortens to 170 ms during exercise. Which of the following is the most appropriate management?",
+  "choices": [
+   "Permanent pacemaker implantation before clearance for competition",
+   "24-hour Holter monitoring before clearance for competition",
+   "No specific treatment; reassurance and routine follow-up",
+   "Electrophysiological study to measure the HV interval",
+   "Disqualify from all competitive sport permanently"
+  ],
+  "answer": 2,
+  "explain": "กลไก: **First-degree AV block** = PR >200 ms แต่ **ทุก P wave นำลงเป็น QRS ครบ** ไม่มี dropped beat → เป็นเพียง \"delay\" ไม่ใช่ \"block\" จริง\n\nในนักกีฬา endurance การฝึกหนักทำให้เกิด **athlete's heart / cardiac remodeling** พร้อมกับ **vagal tone สูงขึ้น (parasympathetic predominance)** → sinus bradycardia, first-degree AV block, Mobitz I ขณะหลับ, early repolarization, J-point elevation — ทั้งหมดเป็น **physiological adaptation** ไม่ใช่โรค\n\n**หลักฐานยืนยันว่า benign ในโจทย์**: **PR สั้นลงเมื่อออกกำลังกาย** → แสดงว่าเป็น **AV nodal delay ที่ขึ้นกับ autonomic tone** (sympathetic ขึ้น/vagal ลดตอน exercise → AV node นำเร็วขึ้น) ตรงข้ามกับ **infranodal disease ซึ่ง PR/บล็อกจะ \"แย่ลง\" เมื่อ atrial rate เพิ่ม**\n\nดังนั้น → **ไม่ต้องรักษา** ให้ความมั่นใจและติดตามตามปกติ\n\nทำไมข้ออื่นผิด:\n- **Pacemaker**: ไม่มีข้อบ่งชี้เลยใน first-degree AV block ที่ไม่มีอาการ (พิจารณาเฉพาะกรณี PR ยาวมาก >300 ms ที่มีอาการจาก AV dyssynchrony หรือมีโรคกล้ามเนื้อ/neuromuscular disease บางชนิด)\n- **EP study วัด HV interval**: invasive ไม่จำเป็น — ใช้เมื่อสงสัย infranodal block ที่อธิบาย syncope ไม่ได้; เคสนี้ไม่มีอาการและ response ต่อ exercise บ่งบอกตำแหน่งชัดแล้ว\n- **Holter 24 ชั่วโมงก่อนอนุญาตให้แข่ง**: เป็นการตรวจที่สมเหตุสมผลถ้ามี **อาการ (ใจสั่น เป็นลม วิงเวียนขณะออกแรง) หรือ ECG ผิดปกติที่น่ากังวล** แต่ในนักกีฬาที่ **ไม่มีอาการเลยและ ECG เข้ากับ vagal adaptation ที่ดีขึ้นเมื่อออกกำลังกาย** การตรวจเพิ่มจะได้ผลบวกลวงและนำไปสู่การสืบค้นที่ไม่จำเป็น\n- **ตัดสิทธิ์แข่งขันตลอดชีวิต**: first-degree AV block จาก vagal tone **ไม่เป็นข้อห้ามในการเล่นกีฬา** — สิ่งที่ต้องกังวลในการคัดกรองนักกีฬาคือ HCM, ARVC, channelopathy (long QT, Brugada), anomalous coronary, WPW",
+  "pearl": "ตรวจ ECG นักกีฬา: **normal adaptation** = sinus bradycardia, 1st degree AVB, incomplete RBBB, early repolarization, isolated LVH by voltage. **ต้องสืบค้นเพิ่ม** = T wave inversion (นอกเหนือ V1-V3), pathological Q, LBBB, QRS >140 ms, long/short QT, Brugada pattern, ventricular arrhythmia",
+  "ref": [
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 6 – 1st degree AV block no symptoms → observe",
+   "MED34 MCQ ครั้งที่ 4 ข้อ 1 – รูป EKG > 1st degree av block",
+   "MED32 MCQ ข้อ 4, 9 – รูป EKG PR prolonged → 1st AV block",
+   "MED31 โพย – ECG → 1 degree AV block"
+  ]
+ },
+ {
+  "id": "C-MCQ-32",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Stable narrow-complex regular tachycardia (AVNRT)",
+  "stem": "A 26-year-old woman presents with sudden-onset palpitations that began abruptly 30 minutes ago while she was sitting. Vital signs: PR 186/min, BP 112/72 mmHg, RR 18/min, fully alert with warm extremities. ECG shows a regular narrow-complex tachycardia at 186/min with no visible P waves and no pre-excitation in previous tracings. Valsalva manoeuvre and carotid sinus massage fail to terminate the rhythm. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Intravenous adenosine 6 mg by rapid push, followed by 12 mg if needed",
+   "Synchronised cardioversion at 100 joules after sedation",
+   "Intravenous amiodarone 300 mg over 1 hour",
+   "Oral metoprolol 50 mg and discharge with outpatient follow-up",
+   "Intravenous digoxin loading"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **AVNRT** (พบบ่อยสุดของ PSVT) อาศัย **re-entry circuit ที่ AV node** ระหว่าง slow pathway (นำช้า ฟื้นเร็ว) และ fast pathway (นำเร็ว ฟื้นช้า) → PAC ที่มาในจังหวะเหมาะจะลง slow pathway แล้วย้อนขึ้น fast pathway ได้ → วงจรหมุนวน\n**จุดสำคัญ: AV node เป็นส่วนหนึ่งของวงจร** → ยาที่บล็อก AV node จะ **ตัดวงจร** และหยุด arrhythmia ได้\n\n**Adenosine** = ยาเลือกแรกเมื่อ vagal manoeuvre ไม่สำเร็จ\n- จับ **A1 receptor** → เปิด K channel (hyperpolarize) + ยับยั้ง cAMP → ลด Ca current → **กด AV nodal conduction ชั่วคราว**\n- **half-life ~10 วินาที** → ผลหมดเร็ว ปลอดภัยสูง; ต้องฉีด **rapid push พร้อม flush** ทาง IV เส้นใหญ่\n- ผู้ป่วยจะรู้สึกแน่นอก หน้าแดง หายใจไม่ออกชั่วครู่ (ต้องเตือนก่อน)\n- ระวังในผู้ป่วย **asthma รุนแรง** (bronchospasm) และผู้ที่กิน **dipyridamole/carbamazepine** (ฤทธิ์แรงขึ้น)\nนอกจากรักษา adenosine ยังมีค่า **วินิจฉัย**: ถ้าหยุดทันที = AV node ร่วมในวงจร (AVNRT/AVRT); ถ้าไม่หยุดแต่เห็น flutter wave = atrial flutter/AT\n\nทำไมข้ออื่นผิด:\n- **Synchronised cardioversion**: สงวนไว้สำหรับผู้ป่วย **unstable** หรือหลังยาไม่สำเร็จ — ผู้ป่วยนี้ BP 112/72 รู้สึกตัวดี (**stable**) ไม่ควรเริ่มด้วยการ shock ที่ต้อง sedate\n- **IV digoxin**: onset ช้ามาก (30-60 นาที) ไม่เหมาะกับ acute termination\n- **IV amiodarone**: ใช้ในกรณีดื้อ/wide-complex; เป็น \"ค้อนหนัก\" ที่มี hypotension, phlebitis และผลระยะยาว (thyroid, ปอด, ตับ) — ไม่ใช่ first-line ใน stable AVNRT\n- **Metoprolol กินแล้วกลับบ้าน**: ไม่หยุด arrhythmia ที่กำลังเป็นอยู่ (แม้ IV BB/CCB เป็นทางเลือกที่สองได้) และการส่งกลับขณะยัง tachycardia 186/min ไม่ปลอดภัย",
+  "pearl": "ลำดับจัดการ stable SVT: **vagal manoeuvre (modified Valsalva ท่ายกขานอนราบได้ผลดีกว่าเดิม) → adenosine → IV diltiazem/verapamil หรือ beta-blocker → synchronised cardioversion**. ถ้ามี **WPW ร่วมกับ AF (pre-excited)** ห้าม adenosine/CCB/BB/digoxin",
+  "ref": [
+   "MED31 MCQ ข้อ 20 – EKG AVNRT ที่ยังคลำ pulse ได้ ถ้าไม่ทำ valsalva manoeuvre ก็ตามต่อด้วยให้อะไร → IV adenosine",
+   "MED34 FA MCQ – Given EKG SVT ดู HR 120 QRS แคบ ให้ยาอะไร → Adenosine",
+   "MED30 SAQ ข้อ 10 – choice: synchronous 100 J, adenosine"
+  ]
+ },
+ {
+  "id": "C-MCQ-33",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Pulseless ventricular tachycardia",
+  "stem": "A 63-year-old man in the coronary care unit suddenly becomes unresponsive. The cardiac monitor shows a wide-complex tachycardia at 210/min. No carotid or femoral pulse is palpable and he is not breathing normally. A defibrillator is at the bedside. Which of the following is the best first therapy?",
+  "choices": [
+   "Adrenaline 1 mg intravenous push",
+   "Immediate unsynchronised defibrillation at maximal recommended energy",
+   "Lidocaine 1.5 mg/kg intravenous push",
+   "Amiodarone 150 mg intravenous push",
+   "Synchronised cardioversion at 100 joules"
+  ],
+  "answer": 1,
+  "explain": "กลไก: **pulseless VT จัดเป็น shockable rhythm เทียบเท่า VF** — ventricle บีบตัวแบบไม่ประสานกันที่อัตราสูงมาก → **ไม่มี effective stroke volume** → cardiac arrest\n\nการรักษาที่เปลี่ยนผลลัพธ์มากที่สุดคือ **defibrillation เร็วที่สุด** เพราะ\n- กลไก: กระแสไฟปริมาณมากทำให้ **myocardium ทั้งก้อน depolarize พร้อมกัน (global depolarization)** → ดับ re-entry circuit ทั้งหมด → เปิดโอกาสให้ SA node ซึ่งเป็น pacemaker ที่เร็วที่สุดกลับมาคุม\n- **survival ลดลงประมาณ 7-10% ต่อทุก 1 นาทีที่ช้าออกไป** (ถ้ามี CPR คุณภาพดีจะลดช้าลงเหลือ 3-4%/นาที)\n\nทำไมต้อง **unsynchronised**: เครื่องไม่สามารถ sync กับ R wave ที่ organized ได้ในภาวะ arrest และการรอ sync จะทำให้เครื่องไม่ปล่อยพลังงาน → **เสียเวลาอันมีค่า**\n\nลำดับที่ถูกต้อง: ยืนยันไม่มี pulse → **CPR คุณภาพสูงขณะชาร์จ → shock ทันทีที่พร้อม → CPR ต่อ 2 นาที → ประเมินซ้ำ**; **adrenaline ให้หลัง shock ครั้งแรก/ครั้งที่สอง** และ **amiodarone 300 mg หลัง shock ครั้งที่ 3** (refractory)\n\nทำไมข้ออื่นผิด:\n- **Amiodarone 150 mg push**: ขนาด 150 mg ใช้กับ **stable VT ที่มี pulse** (ให้ช้าใน 10 นาที); ใน arrest ใช้ **300 mg bolus และให้หลัง shock** ไม่ใช่แทน shock — ยาไม่เคยมาก่อนไฟฟ้าใน shockable rhythm\n- **Lidocaine**: ทางเลือกแทน amiodarone ได้ แต่ยังเป็น **หลัง** defibrillation เสมอ\n- **Adrenaline 1 mg**: จำเป็นในการช่วยฟื้นคืนชีพ แต่ **ใน shockable rhythm ต้อง shock ก่อน**; adrenaline เป็น first drug ใน **non-shockable rhythm (asystole/PEA)**\n- **Synchronised cardioversion 100 J**: ใช้กับ **VT ที่ยังมี pulse แต่ unstable** — ผู้ป่วยนี้ **ไม่มี pulse** การพยายาม sync จะหน่วงเวลาโดยไม่จำเป็น",
+  "pearl": "แยกให้ชัด 3 สถานการณ์: **pulseless VT/VF → unsynchronised defibrillation + CPR**; **VT มี pulse แต่ unstable → synchronised cardioversion**; **VT มี pulse และ stable → antiarrhythmic (amiodarone/procainamide) หรือ elective cardioversion**. Polymorphic VT/torsades ให้ **unsynchronised shock + MgSO4**",
+  "ref": [
+   "MED31 past paper – In the ICU, a patient suddenly becomes pulseless with VT. What is the best first therapy? (A. Amiodarone 150 mg IV push, D. Cardioversion at 200, E. Begin CPR)",
+   "MED30 SAQ ข้อ 10 – EKG + VT + คลำ pulse ไม่ได้ → asynchronous cardioversion 200 J",
+   "MED31 โพย – Pulseless VT ใช้ asynchronous cardioversion",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 7, 46 – unstable VT / monomorphic VT → cardioversion"
+  ]
+ },
+ {
+  "id": "C-MCQ-34",
+  "lec": "36",
+  "lecture": "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)",
+  "topic": "Symptomatic complete AV block",
+  "stem": "An 80-year-old woman is brought in after collapsing at home. Vital signs: PR 34/min, BP 72/44 mmHg, RR 20/min, and she is drowsy with cool extremities. ECG shows P waves at 84/min and QRS complexes at 34/min with no relationship between them; the QRS is wide. Serum potassium is 4.2 mEq/L, she takes no rate-limiting drugs and troponin is normal. Intravenous atropine 1 mg produces no change. Which of the following is the most appropriate immediate next step?",
+  "choices": [
+   "Synchronised cardioversion at 50 joules",
+   "Repeat atropine 1 mg every 3 minutes up to a total of 6 mg",
+   "Intravenous calcium gluconate 10 percent, 10 mL",
+   "Transcutaneous pacing, with preparation for temporary transvenous pacing and subsequent permanent pacemaker",
+   "Intravenous amiodarone infusion"
+  ],
+  "answer": 3,
+  "explain": "กลไก: ECG ที่ **P wave 84/min และ QRS 34/min โดยไม่มีความสัมพันธ์กัน (complete AV dissociation)** = **third-degree (complete) AV block** → atrium และ ventricle เต้นแยกกันสิ้นเชิง; **QRS กว้าง** บ่งว่า escape pacemaker อยู่ **ต่ำกว่า AV node (ventricular escape 20-40/min)** → ช้าและ **ไม่เสถียร เสี่ยง asystole**\n\nผู้ป่วยมี **hemodynamic instability จาก bradycardia** (BP 72/44, drowsy, cool extremities) → ต้อง **เพิ่ม ventricular rate ทันทีด้วยวิธีกลไฟฟ้า**: **transcutaneous pacing** (สะดวกเร็วที่สุดข้างเตียง ต้องให้ยาแก้ปวด/sedation) แล้วตามด้วย **temporary transvenous pacing** และ **permanent pacemaker** เพราะสาเหตุเป็น degenerative/ถาวร\n\nเหตุผลที่ **atropine ไม่ได้ผล**: atropine ออกฤทธิ์โดยยับยั้ง **muscarinic receptor ที่ SA node และ AV node** ซึ่งได้ vagal innervation — **His-Purkinje/ventricular escape focus ไม่มี vagal innervation** → **atropine ไม่ช่วยใน infranodal/complete heart block** (อาจทำให้แย่ลงโดยเพิ่ม atrial rate แต่ ventricle ยังช้าเท่าเดิม)\n\nทำไมข้ออื่นผิด:\n- **IV amiodarone**: เป็น antiarrhythmic ที่ **กด conduction** → จะทำให้ bradycardia/block แย่ลงอย่างมาก (ใช้รักษา tachyarrhythmia ไม่ใช่ bradyarrhythmia)\n- **Atropine ซ้ำจนถึง 6 mg**: เพดานขนาดคือ 3 mg และกลไกไม่ตรงตำแหน่งบล็อกอยู่แล้ว — การไล่ขนาดคือการเสียเวลาในผู้ป่วยที่ช็อก (ถ้าจะใช้ยา bridge ควรเป็น **dopamine หรือ adrenaline infusion**)\n- **Synchronised cardioversion 50 J**: ใช้กับ **tachyarrhythmia** — ผู้ป่วยนี้เต้นช้า การ shock ไม่มีประโยชน์และเป็นอันตราย\n- **Calcium gluconate**: เป็นการรักษา **hyperkalemia** ที่ทำให้เกิด bradyarrhythmia/wide QRS — แต่โจทย์ให้ **K 4.2 ปกติ** จึงไม่ใช่สาเหตุ (ถ้า K สูง ข้อนี้จะกลายเป็นคำตอบ — เป็นกับดักที่ต้องอ่านค่าแลปให้ครบ)",
+  "pearl": "สาเหตุ **reversible** ของ bradyarrhythmia ที่ต้องคัดก่อนฝัง pacemaker (จำ): **ยา (BB, CCB, digoxin, amiodarone), hyperkalemia, hypothyroidism, hypothermia, inferior MI, increased ICP, Lyme/infiltrative disease, OSA**",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 5 – AV block / Complete conduction AV",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 73 – Complete heart block",
+   "MED30 สรุป Cardio – 3rd degree AV block",
+   "MED32 MCQ ข้อ 32 – EKG เจอ tall peak T-wave → 10% calcium gluconate, 7.5% NaHCO3"
+  ]
+ },
+ {
+  "id": "C-MCQ-35",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "White coat, masked and resistant hypertension",
+  "stem": "A 52-year-old man has office blood pressure readings of 152/94, 156/90 and 150/92 mmHg on three separate visits. He is taking no antihypertensive medication. Home blood pressure monitoring over 7 days, performed with a validated device and correct technique, shows an average of 122/78 mmHg, and 24-hour ambulatory monitoring shows a daytime average of 125/79 mmHg. He has no diabetes, no chronic kidney disease and no target organ damage. Which of the following is the correct diagnosis and the most appropriate management?",
+  "choices": [
+   "Masked hypertension; start an angiotensin-converting enzyme inhibitor",
+   "Resistant hypertension; add spironolactone",
+   "Secondary hypertension; screen for primary aldosteronism",
+   "White coat hypertension; lifestyle modification and periodic out-of-office blood pressure monitoring",
+   "Stage 2 hypertension; start two antihypertensive drugs immediately"
+  ],
+  "answer": 3,
+  "explain": "กลไก: การวัดในคลินิกกระตุ้น **sympathetic/alerting response (white coat effect)** ทำให้ BP สูงขึ้นชั่วคราว — เมื่อ **office BP สูง แต่ out-of-office BP ปกติ** เรียกว่า **white coat hypertension**\n\nนิยาม 4 แบบที่ต้องแยกให้ได้ (เปรียบเทียบ office vs out-of-office):\n| | Out-of-office ปกติ | Out-of-office สูง |\n|---|---|---|\n| **Office ปกติ** | Normotension | **Masked HT** |\n| **Office สูง** | **White coat HT** | Sustained HT |\n\nเกณฑ์ที่ใช้ (ABPM daytime ≥135/85 หรือ HBPM ≥135/85 = สูง) — ผู้ป่วยนี้ HBPM 122/78 และ ABPM daytime 125/79 → **ปกติทั้งคู่** ร่วมกับ **ไม่มี target organ damage** → **white coat HT**\n\nการดูแล: **ยังไม่ต้องเริ่มยา** เน้น lifestyle (ลดเกลือ <2 g Na/วัน, DASH diet, ลดน้ำหนัก, ออกกำลังกาย 150 นาที/สัปดาห์, จำกัดแอลกอฮอล์) และ **ติดตาม out-of-office BP เป็นระยะ** เพราะกลุ่มนี้มีโอกาสพัฒนาเป็น sustained HT และมีความเสี่ยง CV สูงกว่า normotensive เล็กน้อย\n\nทำไมข้ออื่นผิด:\n- **Stage 2 HT เริ่ม 2 ยา**: วินิจฉัย HT **ห้ามอาศัย office BP อย่างเดียว** เมื่อมีข้อมูล out-of-office ที่ปกติ — การให้ยาจะทำให้เกิด **hypotension จริงนอกคลินิก** (เวียน ล้ม ในผู้สูงอายุ)\n- **Masked HT**: ต้องเป็น **office ปกติ แต่ out-of-office สูง** — ตรงข้ามกับโจทย์ (masked HT สำคัญเพราะถูกมองข้ามและมีความเสี่ยง CV สูง พบในคนทำงานเครียด สูบบุหรี่ OSA)\n- **Resistant HT + spironolactone**: นิยามคือ **BP ยังไม่ถึงเป้าแม้ใช้ยา 3 ชนิดขนาดเหมาะสมรวม diuretic** (หรือคุมได้ด้วย ≥4 ยา) — ผู้ป่วยนี้ **ยังไม่ได้กินยาเลย**\n- **Secondary HT screening**: ทำเมื่อมีธงแดง เช่น **อายุน้อย <30, เริ่มรุนแรงฉับพลัน, resistant, hypokalemia ที่ไม่อธิบายได้, BP ต่างกันสองแขน, bruit ที่ท้อง, อาการ paroxysmal (pheochromocytoma), features ของ Cushing/OSA** — ไม่มีในเคสนี้",
+  "pearl": "ข้อสอบออกซ้ำทุกรุ่น: \"**วัดที่บ้าน 120/80 วัดที่ รพ. 150/80**\" → **white coat hypertension**; \"วัดที่ รพ. 180/120 วัดที่บ้านได้เท่ากันและกินยา 3 ตัวรวม HCTZ\" → **resistant hypertension**",
+  "ref": [
+   "MED34 FA MCQ – วัดความดันที่บ้าน 120/80 วัดความดันที่ รพ ได้ 150/80 → White coat hypertension",
+   "MED32 MCQ ข้อ 31 – คนไข้วัด bp ที่ รพ ได้ 180/120 วัดที่บ้านได้เท่ากัน ยาได้ 3 อย่างในนั้นมี hydrochlorothiazide → resistant hypertension vs white coat vs masked hypertension",
+   "MED33 MCQ ข้อ 90 – อันไหนนึกถึง secondary hypertension"
+  ]
+ },
+ {
+  "id": "C-MCQ-36",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "Hypertension with unexplained hypokalemia",
+  "stem": "A 41-year-old man has hypertension diagnosed 2 years ago, currently 168/104 mmHg on amlodipine and enalapril. Routine laboratory testing shows sodium 142 mEq/L, potassium 2.9 mEq/L, chloride 103 mEq/L, bicarbonate 30 mEq/L and creatinine 1.0 mg/dL. He takes no diuretics, no laxatives and has no vomiting or diarrhoea. Urine potassium is inappropriately high. Which of the following is the most appropriate next investigation?",
+  "choices": [
+   "Overnight 1 mg dexamethasone suppression test",
+   "Renal artery Doppler ultrasonography",
+   "Plasma aldosterone concentration to plasma renin activity ratio",
+   "24-hour urinary metanephrines and normetanephrines",
+   "Polysomnography for obstructive sleep apnoea"
+  ],
+  "answer": 2,
+  "explain": "กลไก: ชุดข้อมูล **hypertension + spontaneous hypokalemia + metabolic alkalosis (HCO3 30) + renal K wasting** คือลายเซ็นของ **mineralocorticoid excess** โดยที่พบบ่อยสุดคือ **primary aldosteronism (PA)**\n\nสรีรวิทยา: aldosterone ส่วนเกินออกฤทธิ์ที่ **principal cell ของ cortical collecting duct**\n- เพิ่ม **ENaC** → ดูดซึม Na กลับ → volume expansion → **HT** (และเกิด \"aldosterone escape\" จึงมักไม่ edema)\n- การดูด Na สร้าง **lumen-negative potential** → ขับ **K ออกทาง ROMK → hypokalemia** และกระตุ้น **H-ATPase ที่ α-intercalated cell → ขับ H → metabolic alkalosis**\n- volume expansion กด **renin** → ดังนั้น **aldosterone สูงพร้อม renin ต่ำ = ARR สูง** ซึ่งเป็น screening test ที่ถูกต้อง\n\nหมายเหตุเชิงปฏิบัติ: ควร **แก้ hypokalemia ก่อนเจาะ** (K ต่ำกด aldosterone secretion ทำให้ผลลวงเป็นลบ) และทราบว่า **MRA (spironolactone/eplerenone) ต้องหยุด 4-6 สัปดาห์**; ACEI/ARB และ CCB รบกวนน้อยและตีความได้ (ACEI/ARB ทำให้ renin สูงขึ้น → ถ้า renin ยังต่ำแม้ใช้ ACEI ยิ่งสนับสนุน PA)\n\nทำไมข้ออื่นผิด:\n- **Renal artery Doppler**: renal artery stenosis ทำให้ **renin สูง → secondary hyperaldosteronism** ซึ่งก็มี HT + hypokalemia ได้ — แต่ลักษณะทางคลินิกมักเป็น **HT ที่คุมยาก, bruit ที่ท้อง, Cr ขึ้นหลังให้ ACEI, ขนาดไตสองข้างไม่เท่ากัน, flash pulmonary edema** ซึ่งโจทย์ไม่มี; และขั้นแรกที่คุ้มค่ากว่าสำหรับภาพ hypokalemia + alkalosis คือ ARR\n- **Urinary metanephrines (pheochromocytoma)**: จะมี **อาการเป็นพักๆ (paroxysmal headache, palpitation, diaphoresis), BP แปรปรวนมาก, hyperglycemia** — และมักไม่ทำให้ hypokalemia/alkalosis แบบนี้\n- **Dexamethasone suppression test (Cushing)**: ทำให้ HT + hypokalemia ได้ แต่ต้องมี **phenotype** คือ central obesity, moon face, buffalo hump, purple striae, proximal myopathy, ผิวบาง, hyperglycemia — โจทย์ไม่มีเลย\n- **Polysomnography**: OSA เป็นสาเหตุสำคัญของ resistant HT จริง แต่ **ไม่อธิบาย hypokalemia + metabolic alkalosis** และควรมีเบาะแส (นอนกรน, หยุดหายใจ, ง่วงกลางวัน, BMI สูง)",
+  "pearl": "PA พบได้ถึง **5-10% ของผู้ป่วย HT และ ~20% ของ resistant HT** และหลายรายมี **K ปกติ** — ควรคัดกรองเมื่อ: resistant HT, HT + hypokalemia, HT + adrenal incidentaloma, HT + OSA, HT อายุน้อย, หรือมีประวัติครอบครัวเป็น HT/stroke อายุน้อย. ยืนยันด้วย confirmatory test แล้วแยก unilateral (adenoma → ผ่าตัด) vs bilateral (hyperplasia → MRA) ด้วย CT + adrenal vein sampling",
+  "ref": [
+   "MED31 past paper – ผู้ป่วยชายไทย 60 ปี on glipizide, amlodipine, metoprolol, doxazosin, hydralazine, BP 170/90, BUN/Cr 25/2.5, Na 140 K 2.5 HCO3 28 ท่านจะ management ผู้ป่วยรายนี้อย่างไร",
+   "MED33 MCQ ข้อ 90 – อันไหนนึกถึง secondary hypertension",
+   "MED31 MCQ – Hypertensive nephrosclerosis / workup Doppler renal artery for rule out stenosis",
+   "MED32 MCQ ข้อ 37 – Renal artery stenosis ห้ามให้ยา Enalapril"
+  ]
+ },
+ {
+  "id": "C-MCQ-37",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "Mechanism of cardiogenic pulmonary edema",
+  "stem": "A 70-year-old man with long-standing hypertension presents with sudden severe dyspnoea at 2 a.m. and pink frothy sputum. Vital signs: PR 118/min, BP 206/112 mmHg, RR 34/min, SpO2 84% on room air. There are diffuse crepitations to the apices, an S3 gallop and JVP 8 cm. Chest radiograph shows bilateral perihilar bat-wing opacities with Kerley B lines. Which of the following best explains the mechanism of his pulmonary oedema?",
+  "choices": [
+   "Reduced plasma oncotic pressure from severe hypoalbuminaemia",
+   "Increased alveolar-capillary membrane permeability from systemic inflammatory mediators",
+   "Elevated pulmonary capillary hydrostatic pressure exceeding the opposing oncotic and lymphatic clearance capacity",
+   "Obstruction of pulmonary lymphatic drainage by tumour infiltration",
+   "Sudden decrease in alveolar surface tension with surfactant depletion"
+  ],
+  "answer": 2,
+  "explain": "กลไก (ใช้ **Starling equation** เป็นแกน): การเคลื่อนของของเหลวข้างผนัง capillary = Kf × [(Pc − Pi) − σ(πc − πi)]\n\nใน **cardiogenic (hydrostatic) pulmonary edema**:\n- LV ทำงานล้มเหลว/afterload สูงฉับพลัน → **LVEDP สูง** → ส่งย้อนไป **LA → pulmonary vein → pulmonary capillary** → **Pc (hydrostatic) สูง**\n- เมื่อ Pc เกินราว 18-25 mmHg → ของเหลวซึมออกเกินกว่าที่ **lymphatic** จะระบายได้ → interstitial edema (Kerley B line, peribronchial cuffing) → แล้วล้นเข้า alveoli (bat-wing opacity, pink frothy sputum จาก plasma + RBC แตก)\n- **Kf/permeability ยังปกติ** → ของเหลวมี protein ต่ำ (transudate)\n\nเคสนี้เป็น **SCAPE (sympathetic crashing acute pulmonary edema)** — afterload พุ่ง (BP 206/112) → LV ดันเลือดไปข้างหน้าไม่ได้ → redistribution ของเลือดจาก splanchnic เข้าสู่ปอด (ไม่ใช่ volume overload ทั้งตัว) → ปอดท่วมเร็วมากใน **ไม่กี่สิบนาที**\nการรักษาตามกลไก: **NIV/CPAP (เพิ่ม intrathoracic pressure → ลด preload และ afterload, เปิด alveoli) + IV nitrate ขนาดสูงเพื่อลด afterload** เป็นหลัก; furosemide มีบทบาทรองเพราะผู้ป่วยมักไม่ได้ volume overload จริง\n\nทำไมข้ออื่นผิด:\n- **Permeability เพิ่มจาก inflammation** = **ARDS / non-cardiogenic** → ของเหลวมี protein สูง (exudate), ไม่มี S3/JVP สูง, หัวใจขนาดปกติ, PCWP ≤18 mmHg และมีต้นเหตุ (sepsis, aspiration, pancreatitis, trauma)\n- **Oncotic pressure ต่ำจาก hypoalbuminemia** (nephrotic, liver failure, malnutrition): ทำให้ peripheral edema เด่น; ลำพังมักไม่พอทำให้ **pulmonary** edema รุนแรง เพราะ lymphatic ชดเชยได้และ interstitial oncotic ก็ลดตามกัน\n- **Lymphatic obstruction จากมะเร็ง**: เป็นกลไกของ lymphangitic carcinomatosis ซึ่งดำเนินช้าเป็นสัปดาห์-เดือน ไม่ใช่เฉียบพลันกลางคืน และไม่ให้ pink frothy sputum\n- **Surfactant depletion**: surfactant **ลด** surface tension; การขาด surfactant จะ **เพิ่ม** surface tension → atelectasis (เช่น neonatal RDS) ไม่ใช่กลไกหลักของ cardiogenic edema (ข้อนี้ยังสลับทิศทางของหลักสรีรวิทยาอีกด้วย)",
+  "pearl": "**Paroxysmal nocturnal dyspnoea** อธิบายด้วยการนอนราบ → venous return และ interstitial fluid จากขากลับเข้า central circulation เพิ่ม + vagal tone สูงตอนกลางคืน → Pc สูงขึ้น; ต่างจาก orthopnoea ที่เกิดทันทีเมื่อนอนราบ",
+  "ref": [
+   "MED31 MCQ ข้อ 57 – มาด้วย heart failure แล้ว pulmonary edema ถาม mechanism",
+   "MED33 MCQ – ให้อาการ CHF แล้วมี pleural effusion ถามว่า patho คืออะไร → increase hydrostatic pressure",
+   "MED31 MCQ ข้อ 37 – Wake up at night with pink sputum, JVP 2 cm + lung symptoms → left side HF",
+   "MED32 MCQ ข้อ 43 – Pink sputum, orthopnea, JVP 2 cm → Left sided heart failure",
+   "MED33 MCQ – อาการของ left HF : Crepitation / Lt side HF ตอบ crackle"
+  ]
+ },
+ {
+  "id": "C-MCQ-38",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "Disease-modifying therapy in HFrEF",
+  "stem": "A 64-year-old man has heart failure with LVEF 28% and NYHA class II symptoms. He is euvolaemic on furosemide. Vital signs: PR 76/min sinus rhythm, BP 124/76 mmHg. Serum creatinine 1.2 mg/dL (eGFR 62 mL/min/1.73 m2), potassium 4.2 mEq/L. Which of the following drugs has been shown to reduce mortality in this patient?",
+  "choices": [
+   "Enalapril",
+   "Diltiazem",
+   "Amlodipine",
+   "Digoxin",
+   "Furosemide"
+  ],
+  "answer": 0,
+  "explain": "กลไก: ใน HFrEF การที่ CO ตกทำให้เกิด **neurohormonal activation เรื้อรัง** (RAAS + sympathetic nervous system) ซึ่งตอนแรกช่วยชดเชย แต่ระยะยาวเป็นตัวขับ **adverse remodeling**: angiotensin II และ aldosterone กระตุ้น myocyte hypertrophy, apoptosis, **fibrosis**, Na/water retention และ vasoconstriction; catecholamine ทำ β-receptor downregulation และ arrhythmia\n\n**ยาที่ลด mortality จึงเป็นยาที่ \"บล็อก neurohormonal axis\"** ไม่ใช่ยาที่บรรเทาอาการ:\n- **ACEI/ARB/ARNI** (เคสนี้ = **enalapril**; CONSENSUS, SOLVD; ARNI ดีกว่า ACEI ใน PARADIGM-HF)\n- **β-blocker ที่มีหลักฐาน** (carvedilol, metoprolol succinate, bisoprolol)\n- **MRA** (spironolactone/eplerenone; RALES, EMPHASIS-HF)\n- **SGLT2 inhibitor** (dapagliflozin/empagliflozin; DAPA-HF, EMPEROR-Reduced) ไม่ว่าจะเป็นเบาหวานหรือไม่\n→ รวมเรียก **\"four pillars\"** ของ HFrEF\n\nทำไมข้ออื่นผิด:\n- **Furosemide**: ลดอาการคั่งน้ำได้ดีที่สุด (ยาที่ผู้ป่วยรู้สึกดีขึ้นทันที) แต่ **ไม่มีหลักฐานลด mortality** และการใช้ขนาดสูงสัมพันธ์กับ RAAS activation, electrolyte disturbance และ worsening renal function — ใช้เท่าที่จำเป็นเพื่อ euvolemia\n- **Digoxin**: **DIG trial** แสดงว่า **ลดการ admit แต่ไม่ลด mortality**; ใช้เป็น add-on เพื่อบรรเทาอาการ/คุม rate ใน AF\n- **Amlodipine**: dihydropyridine CCB เป็นกลางต่อ mortality ใน HFrEF (PRAISE) — ใช้ได้ถ้าจำเป็นเพื่อคุม BP/angina แต่ **ไม่ใช่ disease-modifying**\n- **Diltiazem**: non-dihydropyridine CCB เป็น **negative inotrope → ห้ามใช้ใน HFrEF** (เพิ่ม worsening HF และ event)\n\nหมายเหตุ: ผู้ป่วยนี้ BP 124/76, eGFR 62, K 4.2 → **เหมาะจะเริ่มและไล่ขนาดยา (titrate to target dose) ได้ทั้ง 4 ชนิด**; อย่าลืมประเมิน **ICD/CRT** เมื่อ EF ยัง ≤35% หลัง optimal medical therapy ≥3 เดือน",
+  "pearl": "ข้อสอบชอบถาม \"EF <35% ให้ยาอะไร\" → ตอบกลุ่ม **ACEI/ARNI, β-blocker, MRA, SGLT2i**; และ \"antihypertensive ที่ได้ผลดีที่สุดใน CHF\" → **ACEI (enalapril)**. ห้ามจำสลับกับ **HFpEF** ที่หลักฐานหนักสุดคือ **SGLT2 inhibitor**",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 93 – LVEF <35% ให้ยาอะไร → enalapril",
+   "MED28 MED421 ข้อ 100 – Which of the following antihypertensive drugs is most effective in congestive heart failure → Enalapril",
+   "MED32 MCQ ข้อ 14 – คนไข้ clinical HF u/d HT ถามว่าอะไรช่วยลด hypertension น้อยสุด",
+   "MED32 MCQ ข้อ 69 – ข้อไหนไม่ใช่ precipitating factor of HF (obesity, severe HT, anemia)"
+  ]
+ },
+ {
+  "id": "C-MCQ-39",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "Hypertension in pregnancy",
+  "stem": "A 28-year-old woman at 30 weeks of gestation has blood pressure readings of 152/98 and 150/96 mmHg taken 6 hours apart. She has no headache, no visual symptoms and no epigastric pain. Urine protein-creatinine ratio is 0.2, platelet count, liver enzymes and creatinine are normal. Which of the following antihypertensive agents is most appropriate?",
+  "choices": [
+   "Losartan",
+   "Methyldopa",
+   "Enalapril",
+   "Atenolol",
+   "Hydrochlorothiazide"
+  ],
+  "answer": 1,
+  "explain": "กลไก/ความปลอดภัย: ยาลดความดันในหญิงตั้งครรภ์ต้อง **ไม่รบกวนการพัฒนาของทารกและไม่ลด uteroplacental perfusion**\n\n**ยาที่ปลอดภัยและใช้ได้ (จำ \"LMN\")**: **L**abetalol, **M**ethyldopa, **N**ifedipine (ER) — และ hydralazine สำหรับภาวะฉุกเฉิน\n- **Methyldopa** เป็น **central α2-agonist** → ลด sympathetic outflow จากก้านสมอง → ลด BP โดย **ไม่ลด uterine blood flow**; มีข้อมูลความปลอดภัยระยะยาวต่อทารกมากที่สุด (ติดตามถึงวัยเด็ก) ข้อเสียคือง่วง ปากแห้ง, Coombs positive, และพบ hepatitis ได้น้อย\n\nทำไมข้ออื่นผิด — แต่ละข้อมีกลไกอันตรายเฉพาะ:\n- **Enalapril (ACEI)** และ **Losartan (ARB)**: **ห้ามเด็ดขาดทุกไตรมาส** — การยับยั้ง fetal RAS ทำให้ไตของทารกสร้างปัสสาวะไม่ได้ → **oligohydramnios** → **Potter sequence** (pulmonary hypoplasia, limb contracture, facial deformity), **fetal renal failure**, calvarial hypoplasia และเสียชีวิตในครรภ์\n- **Atenolol**: β1-selective blocker ที่สัมพันธ์กับ **fetal growth restriction (IUGR)** ชัดเจนกว่า β-blocker ตัวอื่น (จากการลด cardiac output ของแม่และ placental perfusion เป็นเวลานาน) จึงควรหลีกเลี่ยง — ต่างจาก **labetalol** ที่มี α-blocking ร่วมและปลอดภัยกว่า\n- **Hydrochlorothiazide**: ลด plasma volume ซึ่งในครรภ์ต้องขยายตัวเพื่อเลี้ยง placenta → เสี่ยงลด uteroplacental perfusion, electrolyte disturbance และ neonatal thrombocytopenia; ไม่ใช่ยาเริ่มต้นในครรภ์\n\nหมายเหตุการวินิจฉัย: ผู้ป่วยนี้ BP ≥140/90 **ที่ GA 30 สัปดาห์** โดยไม่มี proteinuria และไม่มี end-organ dysfunction → **gestational hypertension** (ถ้าสูงก่อน GA 20 สัปดาห์ = chronic HT; ถ้ามี proteinuria หรือ severe features = preeclampsia) — **severe-range BP (SBP ≥160 **หรือ** DBP ≥110) ต้องลดภายใน 30-60 นาที** เพื่อป้องกัน maternal stroke และต้องประเมิน preeclampsia ซ้ำเป็นระยะ (รวมถึง MgSO4 เพื่อป้องกัน eclampsia เมื่อมีข้อบ่งชี้)",
+  "pearl": "ท่องให้แม่น: ยาที่ **ห้าม** ในครรภ์ = **ACEI, ARB, aliskiren, atenolol, nitroprusside (cyanide), spironolactone (antiandrogen)**; ยาที่ **ใช้ได้** = **labetalol, methyldopa, nifedipine, hydralazine**",
+  "ref": [
+   "MED31 past paper – ยาในข้อใดต่อไปนี้เหมาะสมที่สุดในการรักษา hypertension ในคนท้อง → Methyldopa",
+   "MED32 MCQ ข้อ 1 – ผู้หญิงท้อง 8 เดือน เป็น hypertension ควรให้ยารักษา",
+   "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 13 – Pregnant woman GA 8 wk ยา thyroid → PTU (หลักการเดียวกันเรื่องความปลอดภัยในครรภ์)"
+  ]
+ },
+ {
+  "id": "C-MCQ-40",
+  "lec": "39",
+  "lecture": "Hypertension / Heart failure / Pulmonary edema (อ.วิไล)",
+  "topic": "Hypertensive emergency vs urgency",
+  "stem": "A 58-year-old man is brought to the emergency department with severe tearing chest pain radiating to the interscapular region. Vital signs: BP 212/118 mmHg in the right arm and 178/96 mmHg in the left arm, PR 104/min. A new early diastolic murmur is heard at the right upper sternal border. Chest radiograph shows a widened mediastinum. Which of the following is the most appropriate immediate pharmacological management?",
+  "choices": [
+   "Intravenous esmolol first, then add intravenous sodium nitroprusside to reach a systolic pressure of 100 to 120 mmHg",
+   "Intravenous hydralazine 10 mg every 20 minutes",
+   "Sublingual nifedipine 10 mg repeated as needed",
+   "Oral captopril 25 mg and observation for 6 hours",
+   "Intravenous sodium nitroprusside alone titrated rapidly to a systolic pressure of 100 mmHg"
+  ],
+  "answer": 0,
+  "explain": "กลไก: ภาพคือ **acute aortic dissection** (เจ็บแบบฉีกร้าวไปหลัง, **BP ต่างกันสองแขน >20 mmHg**, **new AR murmur** จาก dissection ลงถึง aortic root, mediastinum กว้าง) = **hypertensive emergency** ที่มี end-organ damage ชัดเจน\n\nหลักการรักษา: ต้องลด **สองสิ่ง** ที่เป็นแรงขับให้ intimal tear ลุกลาม\n1. **dP/dt (อัตราการเพิ่มของความดันต่อหน่วยเวลา = แรงเฉือนต่อผนัง)** ซึ่งขึ้นกับ **ความแรงและความเร็วของการบีบตัวของหัวใจ**\n2. **ค่า BP สัมบูรณ์**\n\nจึงต้อง **ให้ β-blocker (esmolol) ก่อน** เพื่อลด HR และ contractility → ลด dP/dt **แล้วจึงเติม vasodilator** เพื่อลด BP ให้ถึงเป้า SBP **100-120 mmHg** (หรือต่ำที่สุดที่ยังมี perfusion) และคุม HR <60/min\n\n**ลำดับสำคัญมาก**: ถ้าให้ **vasodilator ก่อน** จะเกิด **reflex tachycardia และ reflex increase ใน contractility** → **dP/dt พุ่งขึ้น → dissection ลุกลาม/แตก** นี่คือจุดหลอกที่ข้อสอบชอบที่สุด\n\nทำไมข้ออื่นผิด:\n- **Nitroprusside เดี่ยวๆ**: ผิดตามเหตุผลข้างต้น (reflex sympathetic activation) — ห้ามใช้เดี่ยวใน dissection\n- **Sublingual nifedipine**: ออกฤทธิ์เร็วและ **ควบคุมไม่ได้** → BP ตกฮวบ เกิด cerebral/coronary/renal hypoperfusion; ถูกถอดออกจากการใช้ในภาวะ hypertensive emergency มานานแล้ว\n- **IV hydralazine**: direct arteriolar vasodilator ที่ทำให้เกิด **reflex tachycardia** อย่างมากและมี response ที่คาดเดายาก → ไม่เหมาะใน dissection (มีที่ใช้ในครรภ์)\n- **Oral captopril แล้วสังเกต 6 ชม.**: เป็นวิธีจัดการ **hypertensive urgency** (BP สูงมากแต่ไม่มี end-organ damage เฉียบพลัน) ซึ่งต้องลด BP อย่างค่อยเป็นค่อยไปเป็นวัน — การทำแบบนี้ใน dissection คือปล่อยให้ผู้ป่วยเสียชีวิต\n\nและต้องไม่ลืม: **Stanford type A (กิน ascending aorta) = ต้องผ่าตัดฉุกเฉิน**; type B ที่ไม่มี complication รักษาด้วยยาเป็นหลัก",
+  "pearl": "แยก **emergency vs urgency** ที่ \"มี acute target organ damage หรือไม่\" ไม่ใช่ที่ตัวเลข BP. Emergency ได้แก่ **aortic dissection, acute pulmonary edema, ACS, hypertensive encephalopathy/stroke, eclampsia, acute AKI, pheochromocytoma crisis** — ส่วนใหญ่ลด MAP ลง **ไม่เกิน 25% ในชั่วโมงแรก** ยกเว้น **aortic dissection ที่ต้องลงเร็วถึงเป้า** และ ischemic stroke ที่มีเกณฑ์เฉพาะ",
+  "ref": [
+   "MED30 SAQ ข้อ 5 – Aortic dissection ไม่ควรมี (ใช้ vasodilator เดี่ยว)",
+   "MED30 โพย – Ao dissect / aortic dissection 180/120",
+   "MED34 MCQ – aortic dissection ใน DDx ของ acute chest pain",
+   "MED35 MEQ – DDx acute chest pain: ACS, aortic dissection, PE, pneumothorax, pericarditis"
+  ]
+ }
+]

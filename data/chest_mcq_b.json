@@ -1,0 +1,445 @@
+[
+ {
+  "id": "CH-MCQ-21",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Therapeutic thoracentesis in massive pleural effusion",
+  "stem": "A 62-year-old man with a large left pleural effusion is dyspnoeic at rest. The chest radiograph shows opacification of the whole left hemithorax with the trachea deviated to the right. Therapeutic thoracentesis is started. After 1.4 litres of straw-coloured fluid has been removed he develops persistent cough and vague chest tightness, but remains haemodynamically stable with SpO2 95% on room air. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Stop the drainage now and arrange a chest radiograph",
+   "Continue until the effusion is completely drained since he is stable",
+   "Give intravenous furosemide and continue draining",
+   "Clamp the catheter for 5 minutes, then resume until 3 litres are removed",
+   "Apply high negative suction to speed up the drainage before symptoms worsen"
+  ],
+  "answer": 0,
+  "explain": "**กลไก: re-expansion pulmonary oedema (REPE)**\n\nปอดที่ถูกกดยุบไว้นานมี **surfactant ลดลง + capillary permeability เพิ่ม** เมื่อขยายกลับเร็ว ๆ แรงดันในช่องเยื่อหุ้มปอดติดลบมาก (pleural pressure ตกต่ำกว่า **−20 cmH2O**) ทำให้ **hydrostatic + permeability oedema** เกิดในปอดข้างที่เพิ่งขยาย — อัตราตายรายงานได้ถึง 20%\n\n**สัญญาณเตือนให้หยุดทันที (ไม่ต้องรอครบปริมาณ)**\n- **ไอไม่หยุด** (cough) ← ข้อนี้\n- **แน่น/เจ็บหน้าอก** chest tightness\n- **vasovagal / ความดันตก**\n\n**กฎปริมาณ**: โดยทั่วไปไม่เกิน **1–1.5 ลิตรต่อครั้ง** ถ้าไม่ได้วัด pleural manometry — ผู้ป่วยรายนี้ได้ **1.4 ลิตรแล้ว และมีอาการ** → หยุดเป็นคำตอบเดียวที่ถูก\n\n**ทำไมข้ออื่นผิด**\n- **ระบายจนหมดเพราะยังสถานะคงที่**: REPE เกิด **หลัง** การระบาย 1–24 ชม. — stable ตอนนี้ไม่ได้แปลว่าปลอดภัย และอาการไอคือ endpoint ที่ guideline กำหนดให้หยุด\n- **Furosemide**: REPE ไม่ใช่ volume overload แต่เป็น permeability + hydrostatic เฉพาะที่ — ยาขับปัสสาวะไม่ป้องกันและอาจทำให้ความดันตก\n- **Clamp แล้วระบายต่อจนครบ 3 ลิตร**: ปริมาณเกินขีดชัดเจน\n- **ดูดด้วย negative suction แรง**: ยิ่งทำให้ pleural pressure ติดลบมาก → เร่ง REPE โดยตรง\n\n**ถ้าจำเป็นต้องเอาน้ำออกมาก** → แบ่งทำหลายครั้ง หรือใส่ ICD ต่อ underwater seal แล้ว **ปล่อยไหลช้า ๆ ไม่ต่อ suction ใน 24 ชม.แรก**",
+  "pearl": "หยุดเจาะน้ำเมื่อ (1) ครบ 1–1.5 L (2) ไอ/เจ็บหน้าอก (3) pleural pressure < −20 cmH2O — อย่างใดอย่างหนึ่งมาก่อน",
+  "ref": [
+   "MED33 MCQ pleural effusion",
+   "MED31 past paper loop C&D — thoracentesis complication"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-22",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "High-flow nasal cannula in type 1 respiratory failure",
+  "stem": "A 48-year-old previously healthy man has community-acquired pneumonia. On a non-rebreather mask at 15 L/min he is alert and cooperative, respiratory rate 30/min, SpO2 89%. Arterial blood gas: pH 7.46, PaCO2 31 mmHg, PaO2 56 mmHg, HCO3 22 mmol/L. Chest radiograph shows bilateral lower-zone consolidation. He is haemodynamically stable. Which of the following is the most appropriate next step in oxygen therapy?",
+  "choices": [
+   "High-flow nasal cannula oxygen with close monitoring of the ROX index",
+   "Bilevel non-invasive ventilation with EPAP 5 and IPAP 15 cmH2O",
+   "Continue the non-rebreather mask and add nebulised bronchodilators",
+   "Immediate intubation because the PaO2/FiO2 ratio is below 200",
+   "Venturi mask at FiO2 0.28 to avoid suppressing hypoxic drive"
+  ],
+  "answer": 0,
+  "explain": "**อ่านก๊าซให้ออกก่อน**: pH สูง, **PaCO2 ต่ำ (31)**, PaO2 ต่ำ → **type 1 (hypoxaemic) respiratory failure** จาก **shunt** ของ consolidation ไม่ใช่ ventilatory failure\n\n**หลักการเลือกเครื่องช่วยหายใจแบบไม่ใส่ท่อ**\n\n| ภาวะ | เครื่องมือที่เลือก | เหตุผลเชิงกลไก |\n|---|---|---|\n| **Type 1 (pneumonia, ARDS เบา)** | **HFNC** | ให้ FiO2 คงที่ถึง ~1.0, ล้าง dead space ในโพรงจมูก, สร้าง **PEEP effect ~2–5 cmH2O**, ลด work of breathing, ทน sedation ไม่ต้อง |\n| **Type 2 (COPD, hypercapnia)** | **BiPAP** | เพิ่ม alveolar ventilation → ลด PaCO2 |\n| **Cardiogenic pulmonary oedema** | **CPAP/BiPAP** | ลด preload/afterload, recruit alveoli |\n\n**FLORALI trial**: HFNC ในผู้ป่วย hypoxaemic non-hypercapnic respiratory failure **ลดอัตราตาย 90 วัน** เทียบกับ NIV และ conventional oxygen\n\n**ROX index = (SpO2/FiO2) ÷ RR** — ใช้ติดตามว่าจะ fail หรือไม่: **< 3.85 ที่ 12 ชม. → พยากรณ์ HFNC failure** ต้องรีบใส่ท่อ ไม่ใช่ทนต่อ (delayed intubation เพิ่มอัตราตาย)\n\n**ทำไมข้ออื่นผิด**\n- **BiPAP**: ไม่ใช่ตัวเลือกแรกใน hypoxaemic failure จาก pneumonia — ใน FLORALI กลุ่ม NIV ตายมากกว่า เชื่อว่าเกิดจาก **large tidal volume → P-SILI (patient self-inflicted lung injury)**\n- **NRM + bronchodilator**: NRM ให้ FiO2 สูงสุดแล้วแต่ยัง SpO2 89% = ล้มเหลว; ไม่มี wheeze ไม่มีเหตุผลให้ bronchodilator\n- **ใส่ท่อทันทีเพราะ P/F < 200**: P/F ≈ 56/0.8 ≈ 70 จริง แต่ผู้ป่วย **alert, stable, ไม่มี fatigue** → มีข้อบ่งชี้ลอง HFNC ก่อนพร้อมเกณฑ์ escalate ชัดเจน (ตัวเลข P/F อย่างเดียวไม่ใช่ข้อบ่งชี้ใส่ท่อ)\n- **Venturi 0.28 กลัวกด hypoxic drive**: **กับดักคลาสสิก** — hypoxic drive เป็นประเด็นเฉพาะ **type 2 COPD** เท่านั้น รายนี้ CO2 ต่ำ การจำกัดออกซิเจนจะฆ่าผู้ป่วย",
+  "pearl": "HFNC = ทางเลือกแรกของ type 1; BiPAP = ทางเลือกแรกของ type 2 — ติดตามด้วย ROX index, < 3.85 ที่ 12 ชม. ให้รีบใส่ท่อ",
+  "ref": [
+   "MED34 MCQ respiratory failure",
+   "MED35 สอบลงกองครั้งที่ 2 — oxygen therapy"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-23",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Recurrent malignant pleural effusion",
+  "stem": "A 70-year-old woman with metastatic breast carcinoma has had three therapeutic thoracenteses in the past 6 weeks for a right pleural effusion; each time symptoms recur within 10–14 days. Cytology is positive for adenocarcinoma. After the last drainage the lung re-expanded fully on chest radiograph. Her performance status is ECOG 1 and she is expected to live more than 6 months. Which of the following is the most appropriate definitive management?",
+  "choices": [
+   "Chemical pleurodesis with talc, or an indwelling pleural catheter",
+   "Repeat thoracentesis whenever symptoms recur, indefinitely",
+   "Pleuroperitoneal shunt insertion",
+   "Systemic corticosteroids to reduce pleural fluid formation",
+   "Radical pleurectomy and decortication"
+  ],
+  "answer": 0,
+  "explain": "**กลไก malignant pleural effusion**: เซลล์มะเร็งบนเยื่อหุ้มปอด → **เพิ่ม capillary permeability + อุดกั้น lymphatic stomata** ที่ parietal pleura ทำให้การดูดกลับเสียไป → **น้ำกลับมาเสมอถ้าไม่ปิดช่อง**\n\n**เกณฑ์ตัดสินใจสำคัญที่สุดคือ \"lung expands หรือไม่\"**\n\n| สถานการณ์ | การรักษา |\n|---|---|\n| **ปอดขยายได้เต็ม (ข้อนี้)** | **Talc pleurodesis** (slurry ทาง ICD หรือ poudrage ทาง thoracoscopy) **หรือ IPC (indwelling pleural catheter)** — ได้ผลใกล้เคียงกัน |\n| **Trapped lung (ปอดไม่ขยาย)** | **IPC เท่านั้น** — pleurodesis ล้มเหลวเพราะเยื่อสองชั้นไม่แนบกัน |\n| **อายุขัยสั้นมาก / ECOG แย่** | IPC หรือ thoracentesis ตามอาการ |\n\n**Talc ทำงานอย่างไร**: กระตุ้น **intense pleural inflammation → fibrin deposition → symphysis** ของ visceral กับ parietal pleura ต้องให้ปอดแนบกันก่อนจึงจะติด\n\n**ทำไมข้ออื่นผิด**\n- **เจาะซ้ำไปเรื่อย ๆ**: ผู้ป่วยกลับมาเร็วทุก 10–14 วัน + คาดว่าอยู่ได้ > 6 เดือน → เสี่ยง pneumothorax สะสม, เสียโปรตีน, คุณภาพชีวิตแย่ เป็นการรักษาชั่วคราวไม่ใช่ definitive\n- **Pleuroperitoneal shunt**: ใช้น้อยมากแล้ว อุดตันบ่อย ต้อง pump เอง สงวนไว้เมื่อ IPC/pleurodesis ทำไม่ได้\n- **Corticosteroid**: ไม่มีบทบาทลดการสร้างน้ำใน MPE (คนละกลไกกับ effusion จาก inflammatory disease)\n- **Pleurectomy/decortication**: ผ่าตัดใหญ่ morbidity สูง สงวนไว้สำหรับ **mesothelioma ที่เลือกผู้ป่วยแล้ว** ไม่ใช่ metastatic breast cancer palliation",
+  "pearl": "MPE: ดูว่า lung re-expand ไหม — ขยายได้ → pleurodesis หรือ IPC; trapped lung → IPC เท่านั้น",
+  "ref": [
+   "MED34 FA MEQ — pleural effusion/adenocarcinoma",
+   "MED30 MCQ malignant effusion"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-24",
+  "lec": "17",
+  "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+  "topic": "Recurrence prevention and lifestyle advice after primary spontaneous pneumothorax",
+  "stem": "A 22-year-old tall, slim man who smokes 10 cigarettes a day has had his second right-sided primary spontaneous pneumothorax within 9 months; both were treated with intercostal drainage. He is an avid scuba diver and asks about future activities. Which of the following statements is the most appropriate advice?",
+  "choices": [
+   "He should be offered a definitive surgical procedure, and scuba diving is permanently contraindicated unless definitive bilateral surgery is performed",
+   "He may resume scuba diving 2 weeks after the drain is removed and the lung is fully expanded",
+   "Commercial air travel is permanently contraindicated after any pneumothorax",
+   "No further intervention is needed; recurrence risk falls to baseline after the second episode",
+   "Pleurodesis is contraindicated in young patients because it precludes future lung transplantation"
+  ],
+  "answer": 0,
+  "explain": "**กลไกการกลับเป็นซ้ำ**: PSP เกิดจาก **apical subpleural blebs/bullae** ในคนสูงผอม + **สูบบุหรี่** (เพิ่มความเสี่ยงหลายเท่าและสัมพันธ์กับปริมาณ) — bleb ยังอยู่ ความเสี่ยงจึงสะสม\n- หลังครั้งแรก recurrence ~ **30%**\n- หลังครั้งที่สอง ~ **50–60%**\n- หลังครั้งที่สาม > 80%\n→ **ครั้งที่ 2 = ข้อบ่งชี้ผ่าตัด** (VATS bullectomy + pleurodesis/pleural abrasion) ลด recurrence เหลือ ~1–5%\n\n**ทำไมดำน้ำห้ามถาวร**: ตอนขึ้นสู่ผิวน้ำ ก๊าซในถุงลมขยายตามกฎของ **Boyle** ถ้ามี bleb หรือ air trapping → **ถุงลมแตก → pneumothorax กลายเป็น tension ใต้น้ำ + arterial gas embolism** ซึ่งถึงตายได้ แนวทาง BTS: **ห้ามดำน้ำตลอดชีวิต ยกเว้นได้รับการผ่าตัดแบบ definitive ทั้งสองข้าง (bilateral surgical pleurectomy) และผล CT/การทำงานปอดปกติ**\n\n**ทำไมข้ออื่นผิด**\n- **ดำน้ำได้ใน 2 สัปดาห์**: อันตรายที่สุดในข้อนี้\n- **ห้ามขึ้นเครื่องบินถาวร**: **ไม่จริง** — เครื่องบินพาณิชย์มี cabin pressure ~ 8,000 ฟุต ปริมาตรก๊าซขยายราว 30% เท่านั้น แนะนำให้รอ **~1–2 สัปดาห์หลัง CXR ยืนยันว่าปอดขยายเต็มแล้ว** (บางแนวทาง 7 วัน) จึงบินได้\n- **ไม่ต้องทำอะไร ความเสี่ยงกลับสู่ baseline**: ตรงข้ามความจริง\n- **Pleurodesis ห้ามในคนอายุน้อยเพราะขัดการปลูกถ่ายปอด**: การมี pleural adhesion ทำให้ผ่าตัดปลูกถ่ายยากขึ้นจริง แต่เป็น **relative** ไม่ใช่ข้อห้าม และไม่เกี่ยวกับผู้ป่วยรายนี้ที่ปอดปกติ\n\n**อย่าลืม**: **เลิกบุหรี่** คือคำแนะนำที่ลดการกลับเป็นซ้ำและต้องพูดทุกครั้ง",
+  "pearl": "PSP ครั้งที่ 2 = ผ่าตัด; ห้ามดำน้ำถาวร (Boyle's law) แต่บินได้หลังปอดขยายเต็ม ~1–2 สัปดาห์",
+  "ref": [
+   "MED32 MCQ pneumothorax",
+   "MED35 สอบลงกองครั้งที่ 1 — pneumothorax"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-25",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Systematic assessment of chest radiograph adequacy",
+  "stem": "A junior doctor reviews a portable AP chest radiograph taken in the emergency department. The medial ends of both clavicles are 1.5 cm from the spinous process on the right and 0.4 cm on the left; the right hemidiaphragm appears elevated and the right hilum looks prominent. Which of the following is the most appropriate interpretation?",
+  "choices": [
+   "The film is rotated, so hilar, mediastinal and diaphragmatic asymmetry cannot be reliably assessed",
+   "There is right lower lobe collapse causing the raised hemidiaphragm",
+   "There is a right hilar mass requiring urgent computed tomography",
+   "The film is under-penetrated, which explains the prominent hilum",
+   "Cardiomegaly is present and accounts for the asymmetry"
+  ],
+  "answer": 0,
+  "explain": "**ก่อนตีความสิ่งผิดปกติทุกครั้ง ต้องเช็คความเหมาะสมของฟิล์ม — RIPE**\n\n| ตัวย่อ | ตรวจอะไร | เกณฑ์ |\n|---|---|---|\n| **R** — Rotation | ระยะปลาย clavicle ถึง spinous process **ทั้งสองข้างต้องเท่ากัน** | ต่างกัน → หมุน |\n| **I** — Inspiration | เห็น **posterior rib 9–10** หรือ **anterior rib 5–6** | น้อยกว่านั้น → หายใจเข้าไม่พอ ทำให้ heart ดูโต + basal crowding เหมือน infiltrate |\n| **P** — Penetration | เห็น **vertebral bodies ลาง ๆ หลังเงาหัวใจ** และเห็น left hemidiaphragm ทะลุเงาหัวใจ | |\n| **E** — Exposure/Area | ครอบคลุมทั้งสอง apex และ costophrenic angle | |\n\n**กลไกของภาพลวงเมื่อหมุน**: ระยะ clavicle ขวา 1.5 ซม. ≠ ซ้าย 0.4 ซม. → **ฟิล์มหมุนแน่นอน** (ข้างที่ระยะกว้างกว่าคือข้างที่ถอยห่างจากฟิล์ม) ผลคือ **ข้างที่อยู่ไกลฟิล์มถูกฉายขยายมากกว่า** → hilum ข้างนั้นดูใหญ่ขึ้น, mediastinum ดูกว้าง, hemidiaphragm สองข้างดูไม่เท่ากัน — **ทั้งหมดเป็น artifact** ต้องถ่ายใหม่ก่อนสรุป\n\n> **อย่าเสียเวลาจำว่า \"หมุนไปทางไหน\"** — สิ่งที่ข้อสอบต้องการคือให้รู้ว่า **เมื่อฟิล์มหมุน ห้ามตีความความไม่สมมาตรใด ๆ**\n\n**นอกจากนี้เป็น AP portable**: กำลังขยายเพิ่มเงาหัวใจและ mediastinum อยู่แล้ว **ห้ามวินิจฉัย cardiomegaly จากฟิล์ม AP**\n\n**ทำไมข้ออื่นผิด**\n- **RLL collapse**: ทำให้ diaphragm ขวาสูงขึ้นได้จริง แต่ต้องมี **volume loss อื่นร่วม** (trachea/mediastinum เอียงเข้าหาข้างนั้น, ช่องซี่โครงแคบ) และต้องได้ฟิล์มที่ไม่หมุนก่อนจึงจะสรุป\n- **Hilar mass**: กระโดดไป CT จากฟิล์มที่อ่านไม่ได้\n- **Under-penetration**: ทำให้ปอดดูขาวขึ้นทั่วไป ไม่ใช่สาเหตุของ **ความไม่สมมาตร**\n- **Cardiomegaly**: วัด CTR จาก AP portable ไม่ได้ และไม่อธิบายความต่างของ clavicle",
+  "pearl": "เช็ค RIPE ก่อนเสมอ — ฟิล์มหมุนทำให้ hilum/mediastinum/diaphragm ดูไม่สมมาตรเป็นเท็จ และ AP portable ห้ามวินิจฉัย cardiomegaly",
+  "ref": [
+   "MED33 SAQ CXR interpretation",
+   "MED31 past paper loop C&D — CXR basics"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-26",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Solitary pulmonary nodule",
+  "stem": "A 58-year-old woman with a 30 pack-year smoking history has an incidental 9 mm solid nodule in the right upper lobe found on a chest radiograph taken before elective surgery. She is asymptomatic. Which of the following should be done first?",
+  "choices": [
+   "Obtain and review any previous chest imaging for comparison",
+   "Arrange percutaneous CT-guided needle biopsy of the nodule",
+   "Repeat the chest radiograph in 12 months",
+   "Start empirical anti-tuberculous treatment given the endemic setting",
+   "Refer directly for video-assisted thoracoscopic wedge resection"
+  ],
+  "answer": 0,
+  "explain": "**หลักคิดของ solitary pulmonary nodule (SPN)**: เป้าหมายคือแยก **benign vs malignant** โดยใช้ข้อมูลที่ได้มาถูกและเสี่ยงน้อยที่สุดก่อน\n\n**ขั้นแรกที่ถูกที่สุดเสมอ = เปรียบเทียบกับฟิล์มเก่า**\n- **นิ่งไม่โตใน ≥ 2 ปี (solid nodule)** → **benign** แทบแน่นอน ไม่ต้องตามต่อ — จบเรื่องในนาทีเดียว ไม่ต้องเจาะ ไม่ต้องผ่า\n- ถ้าโตขึ้น → เดินหน้าประเมินต่อ\n> ข้อควรระวัง: กฎ 2 ปีนี้ใช้กับ **solid nodule เท่านั้น** — **subsolid/ground-glass (adenocarcinoma in situ)** โตช้ามาก ต้องตามนานกว่า\n\n**ถ้าไม่มีฟิล์มเก่า** ลำดับต่อไปคือ **CT chest (thin-section)** เพื่อดูขนาดจริง ขอบ (spiculated = ร้าย), การมี calcification แบบ benign (central, laminated, popcorn, diffuse) และตำแหน่ง จากนั้นคำนวณความเสี่ยงตาม **Fleischner/Brock model** → ตาม CT ซ้ำ, PET-CT (เหมาะกับก้อน **> 8 มม.** solid), เจาะชิ้นเนื้อ หรือผ่าตัด\n\n**ปัจจัยเสี่ยงมะเร็งในรายนี้**: อายุ 58, สูบ 30 pack-year, **upper lobe**, ขนาด 9 มม. → ความเสี่ยงไม่ต่ำ จึงจะละเลยไม่ได้ แต่ยัง **ไม่ใช่เหตุผลให้ข้ามขั้นไปเจาะทันที**\n\n**ทำไมข้ออื่นผิด**\n- **เจาะ CT-guided ทันที**: invasive, pneumothorax ~15–25%, และอาจไม่จำเป็นเลยถ้าฟิล์ม 3 ปีก่อนแสดงก้อนขนาดเท่าเดิม\n- **ถ่าย CXR ซ้ำ 12 เดือน**: CXR ความไวต่ำเกินไปสำหรับติดตามก้อน 9 มม. (การติดตามใช้ **CT**) และช้าเกินไปสำหรับผู้มีความเสี่ยงสูง\n- **ให้ยาวัณโรคเลย**: รักษามะเร็งช้าไป 6 เดือน + ไม่มีหลักฐานเชื้อ ไม่เคยเป็นคำตอบที่ถูก\n- **ส่งผ่าตัดเลย**: ต้องมีข้อมูลความเสี่ยงและภาพก่อน; ผ่าตัดในก้อน benign คือ morbidity ที่หลีกเลี่ยงได้",
+  "pearl": "SPN: ขอฟิล์มเก่าก่อนเสมอ — solid nodule นิ่ง ≥ 2 ปี = benign; แต่ subsolid/GGO ต้องตามนานกว่า 2 ปี",
+  "ref": [
+   "MED30 MCQ lung nodule",
+   "MED34 MCQ CXR/lung mass"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-27",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Mediastinal staging of non-small cell lung cancer",
+  "stem": "A 65-year-old man has a 4 cm spiculated right upper lobe mass. Contrast CT shows a 1.6 cm right paratracheal (station 4R) lymph node and a 1.2 cm subcarinal (station 7) node; there are no distant metastases on PET-CT, but both nodes are FDG-avid. He is otherwise fit and being considered for curative resection. Which of the following is the most appropriate next investigation?",
+  "choices": [
+   "Endobronchial ultrasound-guided transbronchial needle aspiration of the mediastinal nodes",
+   "Proceed directly to right upper lobectomy with intra-operative node sampling",
+   "CT-guided transthoracic needle biopsy of the primary mass only",
+   "Sputum cytology on three consecutive mornings",
+   "Start concurrent chemoradiotherapy on the basis of the PET-CT findings"
+  ],
+  "answer": 0,
+  "explain": "**ทำไม staging ของ mediastinum เป็นตัวตัดสินชีวิต**: N2 disease (ต่อม mediastinal ข้างเดียวกัน) เปลี่ยนระยะเป็น **stage IIIA** ซึ่งการรักษาหลักคือ **chemo/chemoradiation ± surgery ในผู้ป่วยที่เลือกแล้ว** ไม่ใช่ผ่าตัดตรงไป — ผ่าตัดในรายที่มี bulky N2 ไม่เพิ่มการรอดชีวิต\n\n**ทำไม CT และ PET ไม่พอ (ต้องมีเนื้อเยื่อ)**\n- **CT** ใช้ขนาด > 1 ซม. (short axis) เป็นเกณฑ์ → ต่อมโตจาก **anthracosis, TB, reactive** ในคนไทยพบบ่อยมาก (false positive), และมะเร็งใน micrometastasis ในต่อมเล็ก (false negative)\n- **PET** FDG จับที่ **การอักเสบ/granuloma** ได้พอ ๆ กับมะเร็ง — ในพื้นที่ระบาด TB ค่า **PPV ต่ำ**\n→ **หลักการ: PET/CT ที่บวก ต้องได้รับการยืนยันด้วยพยาธิวิทยาเสมอ ก่อนปฏิเสธการผ่าตัด**\n\n**EBUS-TBNA คือมาตรฐานปัจจุบัน**: เข้าถึงสถานี **2R/2L, 4R/4L, 7, 10, 11** ผ่านหลอดลม, ทำเป็น OPD ได้, sensitivity ~90% และภาวะแทรกซ้อนต่ำกว่า **mediastinoscopy** มาก (mediastinoscopy สงวนเมื่อ EBUS ได้ผลลบแต่ความน่าจะเป็นยังสูง หรือเข้าไม่ถึงสถานี 5/6 ซึ่งใช้ **EUS-FNA / VATS / Chamberlain**)\n\n**ทำไมข้ออื่นผิด**\n- **ผ่าตัดเลยแล้วค่อยสุ่มต่อมตอนผ่า**: ถ้าเป็น N2 จริง ผู้ป่วยเสี่ยงผ่าตัดใหญ่โดยไม่ได้ประโยชน์\n- **เจาะเฉพาะก้อนหลัก**: ยืนยันชนิดเซลล์ได้ แต่ **ไม่ตอบคำถาม staging** ที่เป็นตัวเปลี่ยนการรักษา (และ EBUS ข้อเดียวได้ทั้งชิ้นเนื้อและ stage)\n- **Sputum cytology**: ความไวต่ำ โดยเฉพาะก้อนรอบนอก ไม่ให้ข้อมูล stage\n- **เริ่ม CCRT ตาม PET**: รักษาเกินจริงจาก false-positive จาก granuloma — ต้องมีผลพยาธิก่อน",
+  "pearl": "PET-positive mediastinal node ต้องพิสูจน์ด้วยเข็มเสมอ (EBUS-TBNA) — โดยเฉพาะพื้นที่ TB ระบาดที่ false positive สูง",
+  "ref": [
+   "MED32 MCQ lung cancer staging",
+   "MED35 สอบลงกองครั้งที่ 3 — lung mass"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-28",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Hypersensitivity pneumonitis",
+  "stem": "A 45-year-old woman has had 6 months of progressive exertional dyspnoea and dry cough. She keeps 20 pigeons in a loft at home. Examination shows fine inspiratory crackles and no clubbing. Spirometry shows FVC 62% predicted, FEV1/FVC 0.85 and DLCO 55% predicted. HRCT shows diffuse centrilobular ground-glass nodules with mosaic attenuation and air trapping on expiration. Serum precipitins to avian antigens are positive. Which of the following is the single most important component of management?",
+  "choices": [
+   "Complete and permanent removal of the patient from exposure to the birds",
+   "Long-term oral prednisolone with no change in her environment",
+   "Inhaled corticosteroid plus long-acting beta-2 agonist",
+   "Antifibrotic therapy with nintedanib",
+   "Empirical azithromycin for 6 weeks"
+  ],
+  "answer": 0,
+  "explain": "**กลไก hypersensitivity pneumonitis (HP)**: ปฏิกิริยาภูมิไวเกิน **type III (immune complex) + type IV (T-cell/granuloma)** ต่อแอนติเจนอินทรีย์ที่สูดเข้าไป (นกพิราบ = **bird fancier's lung**, รา = farmer's lung, น้ำใน air-conditioner) — พยาธิสภาพอยู่ที่ **bronchiole รอบนอกและ interstitium**\n\n**ทำไมภาพและสไปโรเมตรีเป็นแบบนี้**\n- อักเสบรอบ bronchiole → **centrilobular ground-glass nodules**\n- bronchiolar obstruction → อากาศค้าง → **mosaic attenuation + air trapping ตอนหายใจออก** (**head-cheese sign** เมื่อมีทั้ง ground-glass, ปอดปกติ, และ air trapping)\n- interstitium หนา → **restrictive pattern (FVC ลด, ratio ปกติ/สูง) + DLCO ลด**\n\n**ข้อสำคัญที่สุดของการรักษา = ตัดแอนติเจนออกอย่างถาวร** — ถ้าไม่หยุดสัมผัส โรคจะดำเนินไปสู่ **fibrotic HP** ซึ่งพยากรณ์โรคแย่ใกล้ IPF ไม่ว่าจะให้ยาอะไรก็ตาม; **steroid ช่วยให้หายเร็วขึ้นในระยะสั้นแต่ไม่เปลี่ยนผลระยะยาว**\n\n> **precipitins บวก = สัมผัสแอนติเจน ไม่ใช่ = เป็นโรค** — คนเลี้ยงนกจำนวนมากมี precipitins บวกโดยไม่ป่วย ต้องแปลผลร่วมกับอาการ/HRCT/BAL (lymphocytosis > 30%)\n\n**ทำไมข้ออื่นผิด**\n- **Prednisolone ระยะยาวโดยไม่เปลี่ยนสิ่งแวดล้อม**: รักษาอาการแต่ปล่อยให้ตัวกระตุ้นทำลายปอดต่อ + ผลข้างเคียงสะสม\n- **ICS/LABA**: HP ไม่ใช่ asthma; พยาธิสภาพอยู่ที่ interstitium/bronchiole ไม่ตอบสนองต่อยาสูด\n- **Nintedanib**: ใช้ใน **progressive pulmonary fibrosis ที่ fibrotic แล้ว** ไม่ใช่ระยะ inflammatory ที่ยังกลับคืนได้\n- **Azithromycin**: ไม่ใช่โรคติดเชื้อ",
+  "pearl": "HP: ตัด antigen ถาวรคือหัวใจ — precipitins บวกบอกแค่ว่าสัมผัส ไม่ได้บอกว่าเป็นโรค",
+  "ref": [
+   "MED31 MCQ occupational lung disease",
+   "MED33 MCQ interstitial lung disease"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-29",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Silicosis and tuberculosis risk",
+  "stem": "A 52-year-old man has worked for 20 years cutting and polishing engineered stone countertops. He has mild exertional dyspnoea. Chest radiograph shows multiple small rounded opacities predominantly in the upper zones with bilateral eggshell calcification of the hilar nodes. He is HIV-negative and has no cough or fever. Which of the following is the most appropriate additional management?",
+  "choices": [
+   "Screen for tuberculosis, including latent infection, and repeat screening periodically",
+   "Start whole-lung lavage to remove the retained silica",
+   "Prescribe long-term oral corticosteroids to prevent progressive massive fibrosis",
+   "Give chelation therapy to remove silica from the lung",
+   "Reassure him that the radiographic findings are benign and need no follow-up"
+  ],
+  "answer": 0,
+  "explain": "**ภาพจำเพาะ**: ก้อนกลมเล็กกระจาย **upper zone** + **eggshell calcification** ของต่อมน้ำเหลืองขั้วปอด = **silicosis** (engineered/artificial stone เป็นสาเหตุใหม่ที่ระบาดในช่างหินเทียม และมักรุนแรงกว่า เกิดเร็วกว่า)\n\n**กลไกที่ทำให้เสี่ยง TB (ประเด็นหลักของข้อนี้)**\nผลึกซิลิกาถูก **alveolar macrophage** กลืน → ทำลาย **phagolysosomal membrane** → macrophage ตาย ปล่อยซิลิกาออกมาให้ตัวใหม่กลืนซ้ำเป็นวงจร ผลคือ **หน้าที่ของ macrophage ซึ่งเป็นเซลล์หลักในการควบคุม M. tuberculosis เสียไป**\n→ **silicotuberculosis**: ความเสี่ยง TB สูงกว่าคนทั่วไป **ประมาณ 3–30 เท่า** (สูงขึ้นตามความรุนแรงของ silicosis) และยังเพิ่มความเสี่ยง **NTM** ด้วย\n→ แนวทางสากล: ผู้ป่วย silicosis ต้อง **คัดกรอง TB (active + latent) และตรวจซ้ำเป็นระยะ** และรักษา LTBI เมื่อพบ\n\n**ประเด็นอื่นที่ต้องทำ**: **หยุดสัมผัสฝุ่นซิลิกา** (โรคดำเนินต่อได้แม้หยุดแล้ว), ควบคุมฝุ่นที่แหล่งกำเนิด/ใช้น้ำตัด, เลิกบุหรี่, วัคซีนไข้หวัดใหญ่/นิวโมคอคคัส, เฝ้าระวัง **PMF, autoimmune disease (scleroderma — Erasmus syndrome), มะเร็งปอด (silica เป็น IARC group 1)**\n\n**ทำไมข้ออื่นผิด**\n- **Whole-lung lavage**: เป็นการรักษามาตรฐานของ **pulmonary alveolar proteinosis** ไม่ใช่ silicosis (มีรายงานทดลองใน silicosis เท่านั้น)\n- **Steroid ระยะยาว**: ไม่มีหลักฐานว่าป้องกัน PMF และกดภูมิ → **ยิ่งเพิ่มความเสี่ยง TB** ในคนที่เสี่ยงอยู่แล้ว\n- **Chelation**: ซิลิกาไม่ใช่โลหะหนัก ไม่มียาขับออก — silicosis **รักษาให้หายไม่ได้ ป้องกันได้อย่างเดียว**\n- **ให้ความมั่นใจว่าไม่ต้องติดตาม**: พลาดทั้ง TB, PMF และมะเร็งปอด",
+  "pearl": "Silicosis = macrophage เสียหน้าที่ → เสี่ยง TB 3–30 เท่า ต้องคัดกรอง TB ซ้ำเป็นระยะ และห้ามให้ steroid ลอย ๆ",
+  "ref": [
+   "MED33 MCQ occupational lung disease",
+   "MED29 MCQ silicosis"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-30",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Distinguishing coal worker's pneumoconiosis from silicosis",
+  "stem": "Two retired miners are compared. Patient A worked at the coal face for 25 years; his chest radiograph shows small rounded opacities in the upper zones without hilar node calcification, and lung function is near normal. Patient B drilled through quartz-bearing rock for 20 years; his radiograph shows upper-zone nodules with bilateral eggshell hilar calcification. Which of the following statements best distinguishes the two conditions?",
+  "choices": [
+   "Eggshell calcification of hilar nodes and a markedly increased risk of tuberculosis favour silicosis rather than simple coal worker's pneumoconiosis",
+   "Simple coal worker's pneumoconiosis characteristically causes lower-zone opacities, unlike silicosis",
+   "Coal worker's pneumoconiosis never progresses to progressive massive fibrosis, whereas silicosis often does",
+   "Silicosis characteristically causes an obstructive spirometric pattern, whereas coal worker's pneumoconiosis causes a restrictive pattern",
+   "Only coal worker's pneumoconiosis is associated with rheumatoid arthritis"
+  ],
+  "answer": 0,
+  "explain": "**ทั้งสองโรคคล้ายกันมาก ข้อสอบชอบเอามาหลอก — จำจุดแยกให้แม่น**\n\n| | **Simple CWP** | **Silicosis** |\n|---|---|---|\n| ฝุ่น | ผงถ่านหิน (carbon) | **ผลึก crystalline silica (quartz)** — เหมือง เจาะหิน พ่นทราย หินเทียม |\n| ตำแหน่ง CXR | ก้อนกลมเล็ก **upper zone** | ก้อนกลมเล็ก **upper zone** (เหมือนกัน!) |\n| **Eggshell calcification** | **ไม่พบ (พบได้น้อยมาก)** | **พบได้จำเพาะ** ← จุดแยกข้อแรก |\n| **ความเสี่ยง TB** | เพิ่มเล็กน้อย | **เพิ่มมาก 3–30 เท่า** ← จุดแยกข้อสอง |\n| PMF | **เกิดได้** | เกิดได้ (บ่อยกว่า) |\n| Caplan syndrome | **พบได้** | **พบได้เช่นกัน** |\n| มะเร็งปอด | ไม่ชัดเจน | **เพิ่ม (IARC group 1)** |\n\n**กลไกที่อธิบายว่าทำไมซิลิกาเลวร้ายกว่า**: ผลึกซิลิกา **เป็นพิษต่อ macrophage โดยตรง** (ทำลาย lysosome, กระตุ้น NLRP3 inflammasome → IL-1β) ขณะที่ผงถ่านหินค่อนข้าง **inert** จึงต้องสะสมมากและนานกว่าจะก่อพังผืด\n\n**ทำไมข้ออื่นผิด**\n- **CWP อยู่ lower zone**: ผิด — **ทั้งคู่ upper zone** (asbestosis ต่างหากที่เป็น **lower zone** + pleural plaque) นี่คือกับดักที่พบบ่อยที่สุด\n- **CWP ไม่เคยเป็น PMF**: ผิดชัดเจน — **PMF เป็นภาวะแทรกซ้อนของ CWP ที่รู้จักดี** (complicated CWP)\n- **Silicosis = obstructive, CWP = restrictive**: ทั้งคู่โดยหลักเป็น **restrictive (nodular fibrosis)** และอาจมี obstruction ร่วมจากฝุ่น/บุหรี่ ไม่ใช่จุดแยก\n- **มีแต่ CWP ที่สัมพันธ์กับ RA**: ผิด — **Caplan syndrome (pneumoconiosis + RA → ก้อนกลมหลายก้อนโตเร็ว)** พบได้ทั้ง CWP และ silicosis",
+  "pearl": "CWP กับ silicosis อยู่ upper zone ทั้งคู่ — ตัวแยกคือ eggshell calcification + ความเสี่ยง TB; asbestosis ต่างหากที่ lower zone",
+  "ref": [
+   "MED29 MCQ pneumoconiosis",
+   "MED31 past paper loop C&D — occupational lung"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-31",
+  "lec": "21",
+  "lecture": "Chest X-ray / Occupational lung diseases (อ.พจนี)",
+  "topic": "Approach to a complete white-out hemithorax",
+  "stem": "A 68-year-old man presents with progressive dyspnoea. The chest radiograph shows complete opacification of the left hemithorax. The trachea and mediastinum are shifted towards the left, and the left ribs appear crowded. Which of the following is the most likely cause?",
+  "choices": [
+   "Complete collapse of the left lung from an endobronchial lesion",
+   "Massive left pleural effusion",
+   "Left-sided tension pneumothorax",
+   "Large left diaphragmatic hernia",
+   "Left-sided consolidation of the entire lung"
+  ],
+  "answer": 0,
+  "explain": "**กุญแจของ white-out hemithorax คือ ทิศทางที่ trachea/mediastinum เบนไป — เพราะมันบอกว่าข้างนั้น \"เสียปริมาตร\" หรือ \"มีของเพิ่ม\"**\n\n| ทิศทาง mediastinum | แปลว่า | สาเหตุ |\n|---|---|---|\n| **ดึงเข้าหาข้างที่ขาว (ข้อนี้)** | **volume loss** | **Lung collapse** (ก้อนอุด bronchus, mucus plug, เสมหะ), **pneumonectomy**, pulmonary agenesis |\n| **ดันออกจากข้างที่ขาว** | **มีของเพิ่ม** | **Massive pleural effusion**, ก้อนขนาดใหญ่, diaphragmatic hernia |\n| **อยู่ตรงกลาง** | ปริมาตรไม่เปลี่ยน | **Consolidation ทั้งปอด**, ARDS ข้างเดียว, effusion + collapse หักล้างกันพอดี |\n\n**หลักฐานสนับสนุนในข้อนี้**: trachea **เบนไปทางซ้าย (ข้างที่ขาว)** + **ซี่โครงชิดกัน (rib crowding)** + hemidiaphragm สูงขึ้น = **volume loss ชัดเจน** → collapse\n\n**ทางคลินิกต่อ**: ชายอายุ 68 + collapse ทั้งข้าง ต้องนึกถึง **endobronchial mass (มะเร็งปอด)** เป็นอันดับแรก → **bronchoscopy** เป็นทั้งการวินิจฉัยและการรักษา (ดูด mucus plug/เก็บชิ้นเนื้อ); **ห้ามใส่ ICD** เพราะไม่มีน้ำให้ระบายและจะทำให้เกิด pneumothorax\n\n**ทำไมข้ออื่นผิด**\n- **Massive effusion**: จะ **ดัน** mediastinum ไปข้างตรงข้าม (ขวา) และซี่โครงจะ **ห่างออก** ไม่ใช่ชิดกัน\n- **Tension pneumothorax**: ฟิล์มจะ **ดำ (hyperlucent)** ไม่ใช่ขาว และดัน mediastinum ออก\n- **Diaphragmatic hernia**: มักเห็น **ลำไส้มีก๊าซ/gas-fluid level** ในทรวงอก และดัน mediastinum\n- **Consolidation ทั้งปอด**: mediastinum **อยู่กลาง** และมักเห็น **air bronchogram**; rib crowding ไม่มี",
+  "pearl": "White-out: ดูทิศ trachea — ดึงเข้า = collapse (ส่องกล้อง), ดันออก = effusion (เจาะ/ใส่สาย), อยู่กลาง = consolidation",
+  "ref": [
+   "MED32 SAQ CXR white-out",
+   "MED34 MCQ CXR interpretation"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-32",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Atypical pneumonia due to Mycoplasma pneumoniae",
+  "stem": "A 19-year-old university student living in a dormitory has had 10 days of dry cough, low-grade fever, headache and malaise. He looks well; temperature 37.9°C, respiratory rate 18/min, SpO2 97% on room air. Chest examination is almost normal but the chest radiograph shows bilateral patchy reticulonodular infiltrates far more extensive than expected from the examination. Haemoglobin 10.8 g/dL with a positive direct Coombs test. Which of the following is the most appropriate treatment?",
+  "choices": [
+   "Oral azithromycin",
+   "Oral amoxicillin-clavulanate",
+   "Intravenous ceftriaxone plus vancomycin",
+   "Oral oseltamivir",
+   "Oral trimethoprim-sulfamethoxazole"
+  ],
+  "answer": 0,
+  "explain": "**กลุ่มอาการที่ชี้ชัด**: วัยรุ่นอยู่หอ, **อาการค่อยเป็นค่อยไป (subacute)**, ไอแห้ง, **ตรวจร่างกายปอดแทบปกติแต่ฟิล์มเป็นมาก (radiographic–clinical dissociation)**, + **cold agglutinin-mediated haemolytic anaemia (Coombs บวก)** = **Mycoplasma pneumoniae**\n\n**กลไกสำคัญที่ทำให้เลือกยาได้ถูก**: Mycoplasma **ไม่มีผนังเซลล์ (no peptidoglycan)** → **ยาทุกตัวที่ออกฤทธิ์ที่ผนังเซลล์ใช้ไม่ได้เลย** ได้แก่ **penicillins, cephalosporins, carbapenems, vancomycin**\n→ ต้องใช้ยาที่ออกฤทธิ์ภายในเซลล์: **macrolide (azithromycin)**, **doxycycline (tetracycline)**, หรือ **respiratory fluoroquinolone**\n\n**ภาวะนอกปอดของ Mycoplasma ที่ออกสอบบ่อย**\n- **Cold agglutinin (IgM ต่อ I antigen) → haemolysis** ← ในโจทย์\n- **Erythema multiforme / Stevens-Johnson-like (MIRM)**\n- **Bullous myringitis**\n- Guillain-Barré, encephalitis, transverse myelitis\n- Raynaud phenomenon\n\n**ทำไมข้ออื่นผิด**\n- **Amoxicillin-clavulanate**: ออกฤทธิ์ที่ผนังเซลล์ → **ไม่มีผลต่อ Mycoplasma เลย** (ตัวลวงที่คนตอบผิดมากที่สุด)\n- **Ceftriaxone + vancomycin**: กว้างเกินไปสำหรับผู้ป่วยนอกที่ดูดี และก็ยังครอบ Mycoplasma ไม่ได้อยู่ดี\n- **Oseltamivir**: ไข้หวัดใหญ่มาเร็วภายใน 48 ชม. อาการปวดเมื่อยรุนแรง ไม่เข้ากับ 10 วันแบบค่อยเป็นค่อยไป และไม่อธิบาย Coombs บวก\n- **TMP-SMX**: ใช้กับ **PCP** ไม่ครอบ Mycoplasma",
+  "pearl": "Mycoplasma ไม่มีผนังเซลล์ → beta-lactam ทุกตัวใช้ไม่ได้; ตรวจร่างกายไม่สมกับฟิล์ม + cold agglutinin = เบาะแสหลัก",
+  "ref": [
+   "MED30 MCQ atypical pneumonia",
+   "MED33 MCQ CAP"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-33",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Legionella pneumonia",
+  "stem": "A 58-year-old smoker returns from a 5-day hotel stay with 3 days of high fever, dry cough, watery diarrhoea and confusion. Temperature 39.8°C, pulse 92/min, respiratory rate 26/min, SpO2 91% on room air. Sodium 126 mmol/L, ALT 96 U/L, and chest radiograph shows patchy consolidation of the right lower lobe. Gram stain of sputum shows many neutrophils but no organisms. Which of the following investigations will most rapidly establish the diagnosis?",
+  "choices": [
+   "Urinary antigen test",
+   "Blood culture, two sets",
+   "Sputum culture on standard blood and chocolate agar",
+   "Serum cold agglutinin titre",
+   "Acid-fast bacilli smear of sputum"
+  ],
+  "answer": 0,
+  "explain": "**เบาะแสที่ประกอบกันเป็น Legionella pneumophila**\n- ไข้สูง + **ชีพจรช้ากว่าที่ควร (relative bradycardia — Faget sign)**: ไข้ 39.8 แต่ชีพจร 92\n- **อาการนอกปอดเด่น**: **ท้องเสีย, สับสน**\n- **Hyponatraemia (SIADH)** — พบบ่อยใน Legionella มากกว่าปอดอักเสบชนิดอื่นอย่างมีนัยสำคัญ\n- **ตับอักเสบเล็กน้อย**\n- ประวัติ **โรงแรม/ระบบน้ำ/แอร์/cooling tower** (เชื้ออยู่ในน้ำอุ่นและ biofilm)\n- **Gram stain มี PMN แต่ไม่เห็นเชื้อ** — เพราะเป็น **แบคทีเรียในเซลล์ ผนังบาง ติดสีกรัมไม่ดี**\n\n**ทำไม urinary antigen เป็นคำตอบ**\n- **รู้ผลภายในไม่กี่ชั่วโมง** เปลี่ยนการรักษาได้ทันที\n- **ยังบวกแม้เริ่มยาปฏิชีวนะไปแล้ว** และบวกอยู่ได้นานหลายสัปดาห์\n- ข้อจำกัดที่ต้องรู้: ตรวจได้เฉพาะ **serogroup 1** (แต่ครอบคลุม ~80–90% ของรายที่ป่วย)\n\n**การรักษา**: **respiratory fluoroquinolone (levofloxacin) หรือ azithromycin** — beta-lactam **ไม่ได้ผล** เพราะเชื้ออยู่ในเซลล์\n\n**ทำไมข้ออื่นผิด**\n- **Hemoculture**: Legionella แทบไม่ขึ้นในขวดเพาะเลือดมาตรฐาน และช้า\n- **เพาะเสมหะบน blood/chocolate agar**: **เชื้อไม่ขึ้น** ต้องใช้ **BCYE agar (ต้องการ L-cysteine และเหล็ก)** ซึ่งเป็นข้อสอบยอดนิยม — และแม้บน BCYE ก็ใช้เวลา 3–5 วัน\n- **Cold agglutinin**: ของ Mycoplasma และความจำเพาะต่ำ\n- **AFB smear**: ไม่เข้ากับอาการเฉียบพลัน 3 วัน + ท้องเสีย + Na ต่ำ",
+  "pearl": "Legionella: ไข้สูง + ชีพจรช้า + ท้องเสีย + Na ต่ำ + gram stain มีแต่ PMN → urinary antigen (serogroup 1), เพาะต้องใช้ BCYE",
+  "ref": [
+   "MED31 MCQ pneumonia",
+   "MED35 สอบลงกองครั้งที่ 2 — CAP"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-34",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Post-influenza necrotising pneumonia",
+  "stem": "A 42-year-old man had typical influenza with fever, myalgia and cough that began to improve after 4 days. On day 6 he deteriorates abruptly with rigors, pleuritic chest pain and haemoptysis. Temperature 39.5°C, blood pressure 96/60 mmHg, SpO2 88% on room air. Chest radiograph shows multilobar consolidation with early cavitation. Gram stain of sputum shows abundant Gram-positive cocci in clusters. Which of the following is the most appropriate initial antimicrobial therapy?",
+  "choices": [
+   "Intravenous vancomycin (or linezolid) plus a beta-lactam active against Streptococcus pneumoniae",
+   "Oral oseltamivir alone, since the underlying illness is viral",
+   "Intravenous ceftriaxone alone",
+   "Intravenous ampicillin plus gentamicin",
+   "Intravenous metronidazole plus clindamycin"
+  ],
+  "answer": 0,
+  "explain": "**รูปแบบ \"ดีขึ้นแล้วทรุดซ้ำ (biphasic illness)\" หลังไข้หวัดใหญ่ = secondary bacterial pneumonia**\n\n**กลไกที่ไข้หวัดใหญ่เปิดทางให้แบคทีเรีย**\n1. ทำลาย **ciliated respiratory epithelium** → mucociliary clearance เสีย\n2. **เปิด receptor** ให้แบคทีเรียเกาะ + neuraminidase ช่วยการเกาะติด\n3. กด **neutrophil และ macrophage function**\n\n**เชื้อที่พบบ่อย**: *S. pneumoniae* > ***S. aureus*** > *H. influenzae* — แต่ลักษณะ **necrotising/cavitating + haemoptysis + ช็อกเร็ว + GPC เป็นกลุ่ม** ชี้ไปที่ ***S. aureus*** โดยเฉพาะสายที่สร้าง **Panton-Valentine leukocidin (PVL)** ซึ่งทำลาย neutrophil โดยตรง → **necrotising pneumonia** อัตราตายสูง\n\n**ทำไมต้องคลุม MRSA ทันที**: รอผลเพาะเชื้อ 48–72 ชม. ในภาวะนี้ = สายเกินไป → ให้ **vancomycin หรือ linezolid** (linezolid มีข้อได้เปรียบเชิงทฤษฎีเพราะ **ยับยั้งการสร้าง toxin** และซึมเข้า ELF ดี) **ร่วมกับ beta-lactam** เพื่อคลุม pneumococcus ที่ยังเป็นสาเหตุอันดับหนึ่งอยู่; **ให้ oseltamivir ร่วมด้วย** ในผู้ป่วยหนัก แม้เกิน 48 ชม.\n\n**ทำไมข้ออื่นผิด**\n- **Oseltamivir อย่างเดียว**: มองข้ามการติดเชื้อแบคทีเรียซ้ำซึ่งเป็นสาเหตุของการทรุดและอาจถึงตายใน 24 ชม.\n- **Ceftriaxone อย่างเดียว**: ครอบ MSSA ได้บ้าง แต่ **ไม่ครอบ MRSA** ในบริบท necrotising pneumonia + ช็อก ถือว่าเสี่ยงเกินไป\n- **Ampicillin + gentamicin**: สูตรของ neonatal sepsis/enterococcus; aminoglycoside ทำงานแย่ในหนองและ pH ต่ำของปอด\n- **Metronidazole + clindamycin**: คลุม anaerobe สำหรับ aspiration/lung abscess ซึ่งดำเนินโรคเป็นสัปดาห์ ไม่ใช่ภาพเฉียบพลันหลังไข้หวัดใหญ่",
+  "pearl": "หวัดใหญ่ดีขึ้นแล้วทรุดซ้ำ + cavitation + GPC clusters = PVL S. aureus → คลุม MRSA ทันที ร่วมกับ beta-lactam และให้ oseltamivir ด้วย",
+  "ref": [
+   "MED34 MCQ pneumonia complication",
+   "MED32 MCQ influenza"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-35",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Melioidosis pneumonia in a Thai diabetic farmer",
+  "stem": "A 54-year-old rice farmer from Ubon Ratchathani with poorly controlled type 2 diabetes (HbA1c 10.4%) presents in the rainy season with 2 weeks of fever, productive cough and weight loss. Temperature 39.2°C, blood pressure 88/54 mmHg. Chest radiograph shows right upper lobe consolidation with a thin-walled cavity. Sputum AFB smear is negative on three specimens. Blood cultures grow a Gram-negative bacillus with bipolar 'safety-pin' staining that is oxidase-positive. Which of the following is the most appropriate initial therapy?",
+  "choices": [
+   "Intravenous ceftazidime (or meropenem) for at least 10–14 days, followed by oral eradication therapy",
+   "Intravenous ceftriaxone for 10 days",
+   "Standard four-drug anti-tuberculous therapy",
+   "Oral ciprofloxacin for 14 days",
+   "Intravenous gentamicin plus ampicillin"
+  ],
+  "answer": 0,
+  "explain": "**ระบุเชื้อจากเบาะแส**: ชาวนาอีสาน + **เบาหวานคุมไม่ดี** + **ฤดูฝน** + ปอดบวมมีโพรงที่ upper lobe เลียนแบบวัณโรค + **Gram-negative bacillus ย้อมติดสองขั้วแบบ \"safety pin\"** = ***Burkholderia pseudomallei*** (**เมลิออยด์**) — โรคประจำถิ่นของภาคอีสานไทย\n\n**กลไกและปัจจัยเสี่ยง**: เชื้ออยู่ในดินและน้ำ เข้าทางผิวหนังที่มีแผล การสูดละออง หรือกลืนน้ำ — **เบาหวานคือปัจจัยเสี่ยงอันดับหนึ่ง (>50% ของผู้ป่วย)** เพราะ neutrophil function บกพร่อง; อื่น ๆ: ไตวายเรื้อรัง, ธาลัสซีเมีย, ดื่มสุรา, ได้ steroid\n\n**หลักการรักษาแบ่งสองระยะเสมอ (ออกสอบทุกปี)**\n| ระยะ | ยา | ระยะเวลา |\n|---|---|---|\n| **Intensive (IV)** | **Ceftazidime** หรือ **meropenem** (เลือก meropenem ถ้ามี septic shock/neuro-melioidosis) | **อย่างน้อย 10–14 วัน** (นานกว่านี้ถ้ามี deep-seated focus) |\n| **Eradication (oral)** | **TMP-SMX** (± doxycycline) | **3–6 เดือน** |\n\n**ทำไมต้องมี eradication phase**: เชื้ออยู่ในเซลล์ได้ ทำให้ **relapse สูงมากถ้าหยุดยาเร็ว** — นี่คือจุดที่คนตอบผิดบ่อยที่สุด\n\n**ต้องหา abscess ทั่วร่างกายด้วยเสมอ**: **ultrasound/CT ตับ ม้าม ต่อมลูกหมาก** — พบฝีหลายตำแหน่งได้บ่อยและเปลี่ยนระยะเวลาการรักษา\n\n**ทำไมข้ออื่นผิด**\n- **Ceftriaxone**: แม้เป็น 3rd generation cephalosporin เหมือนกัน แต่ ***B. pseudomallei* ดื้อต่อ ceftriaxone/cefotaxime** — ceftazidime เท่านั้นที่ได้ผล **นี่คือตัวลวงที่ดีที่สุดของข้อนี้**\n- **สูตรยาวัณโรค**: ภาพคล้าย TB จริง (โพรง upper lobe, น้ำหนักลด) แต่ AFB ลบ 3 ครั้ง + hemoculture ขึ้นเชื้อชัด; และเมลิออยด์ดำเนินโรคเร็วกว่า\n- **Ciprofloxacin เดี่ยว**: ให้ผลการรักษาแย่ อัตรา relapse สูง ไม่แนะนำ\n- **Gentamicin + ampicillin**: ***B. pseudomallei* ดื้อ aminoglycoside และ penicillin โดยธรรมชาติ** (intrinsic resistance) — เป็นลักษณะเฉพาะที่ใช้ช่วยระบุเชื้อในห้องแล็บได้",
+  "pearl": "เมลิออยด์: ceftazidime/meropenem 10–14 วัน แล้วต่อ TMP-SMX 3–6 เดือน — ดื้อ ceftriaxone, gentamicin, penicillin โดยธรรมชาติ",
+  "ref": [
+   "MED33 MCQ melioidosis",
+   "MED35 สอบลงกองครั้งที่ 1 — CAP ในชาวนา",
+   "MED29 MEQ melioidosis"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-36",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Life-threatening asthma: the 'normal' PaCO2",
+  "stem": "A 24-year-old woman with asthma presents with severe breathlessness. She can speak only in single words, respiratory rate 32/min, pulse 128/min, and the chest is quiet on auscultation. Peak expiratory flow is 32% of her best. She has received continuous nebulised salbutamol and ipratropium plus intravenous hydrocortisone for 1 hour. Arterial blood gas now shows pH 7.36, PaCO2 41 mmHg, PaO2 68 mmHg on oxygen, HCO3 23 mmol/L. Which of the following is the most appropriate interpretation and action?",
+  "choices": [
+   "The 'normal' PaCO2 indicates impending respiratory failure; she needs urgent senior review in a critical care area with preparation for ventilatory support",
+   "The blood gas is reassuring and she can be stepped down to intermittent nebulisers on the general ward",
+   "The findings indicate metabolic compensation is adequate, so no further escalation is required",
+   "She should be given a beta-blocker to control the tachycardia",
+   "The quiet chest indicates the attack has resolved and she may be discharged after observation"
+  ],
+  "answer": 0,
+  "explain": "**กลไก: ทำไม PaCO2 \"ปกติ\" จึงเป็นสัญญาณอันตราย**\n\nในหอบหืดเฉียบพลัน ผู้ป่วยหายใจเร็วเพื่อชดเชย → **PaCO2 ควรจะต่ำ (respiratory alkalosis)** เป็นปกติ\nเมื่อการอุดกั้นรุนแรงขึ้นและ **กล้ามเนื้อหายใจล้า (fatigue)** ผู้ป่วยหมดแรงจะระบาย CO2 → PaCO2 ค่อย ๆ ไต่กลับ **\"ปกติ\"** แล้วจึง **สูงขึ้น**\n→ **PaCO2 ปกติในผู้ป่วยหอบรุนแรง = จุดข้ามผ่านสู่ระบบหายใจล้มเหลว ไม่ใช่การดีขึ้น**\n\n**สัญญาณอันตรายถึงชีวิต (life-threatening asthma) ที่มีในโจทย์**\n- **พูดได้ทีละคำ**\n- **Silent chest** — ลมเข้าออกน้อยเกินกว่าจะเกิดเสียงหวีด (**wheeze หายไป = แย่ลง ไม่ใช่ดีขึ้น**)\n- **PEF < 33–50%** ของค่าดีที่สุด\n- **PaCO2 ปกติหรือสูง**\n- อื่น ๆ ที่ต้องจำ: **ซึม/สับสน, เขียว, หัวใจเต้นช้าลงหรือความดันตก, ท่าทางหมดแรง, SpO2 < 92%**\n\n**ต้องทำอะไร**: ตามแพทย์อาวุโส/ICU ทันที, **ให้ออกซิเจนคุม SpO2 94–98%**, พ่นยาต่อเนื่อง, **IV magnesium sulfate 2 g**, พิจารณา IV salbutamol/aminophylline, **เตรียมใส่ท่อช่วยหายใจ** (ระวัง **dynamic hyperinflation/auto-PEEP → ใช้ permissive hypercapnia, expiratory time ยาว, RR ต่ำ**)\n\n**ทำไมข้ออื่นผิด**\n- **ก๊าซดูดี ย้ายไปหอผู้ป่วยสามัญ**: ตีความกลับด้าน = อันตรายที่สุด\n- **ชดเชยพอแล้ว**: HCO3 23 คือค่าปกติ ไม่มีการชดเชยอะไรเกิดขึ้น และการชดเชยทางเมตาบอลิกใช้เวลาหลายวัน\n- **ให้ beta-blocker**: **ห้ามเด็ดขาด** — หลอดลมหดตัวรุนแรงขึ้น; ชีพจรเร็วเป็นผลจาก beta-agonist และภาวะเครียดของโรคเอง\n- **Silent chest = หายแล้ว**: กับดักคลาสสิกที่สุดของเรื่องนี้",
+  "pearl": "หอบรุนแรง: silent chest + PaCO2 ปกติ = ใกล้หายใจล้มเหลว ไม่ใช่ดีขึ้น — ขึ้น ICU และเตรียมใส่ท่อ",
+  "ref": [
+   "MED30 MCQ acute asthma",
+   "MED34 MEQ asthma",
+   "MED35 สอบลงกองครั้งที่ 3 — asthma"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-37",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Indications for long-term oxygen therapy in COPD",
+  "stem": "A 70-year-old man with severe COPD (FEV1 34% predicted) has stopped smoking for 1 year. He is clinically stable on triple inhaled therapy and has had no exacerbation for 4 months. On two separate occasions 4 weeks apart, arterial blood gas on room air at rest shows PaO2 52 and 54 mmHg with PaCO2 48 mmHg. Haematocrit is 46% and echocardiography is normal. Which of the following is most likely to improve his survival?",
+  "choices": [
+   "Long-term oxygen therapy for at least 15 hours per day",
+   "Nocturnal oxygen only, for 8 hours during sleep",
+   "Oxygen used as needed when he feels breathless",
+   "Adding oral theophylline to his regimen",
+   "Long-term oral prednisolone 10 mg daily"
+  ],
+  "answer": 0,
+  "explain": "**LTOT เป็นหนึ่งในไม่กี่การรักษาของ COPD ที่ \"ยืดชีวิตได้จริง\"** (ร่วมกับ **เลิกบุหรี่** และ **การผ่าตัดลดปริมาตรปอดในผู้ป่วยที่คัดเลือกแล้ว**) — หลักฐานจาก **NOTT** และ **MRC trial**\n\n**เกณฑ์ให้ LTOT (ต้องวัด ABG ขณะ stable อย่างน้อย 2 ครั้ง ห่างกัน ≥ 3–4 สัปดาห์ และห่างจาก exacerbation ≥ 4–6 สัปดาห์)**\n- **PaO2 ≤ 55 mmHg (หรือ SpO2 ≤ 88%)** — ข้อนี้เข้าเกณฑ์ (52 และ 54) **หรือ**\n- **PaO2 56–59 mmHg (SpO2 ≤ 89%)** ร่วมกับ **หลักฐานของผลตามมาจากภาวะพร่องออกซิเจนเรื้อรัง** ได้แก่ **cor pulmonale / ขาบวม, P pulmonale ใน ECG, หรือ polycythaemia (Hct > 55%)**\n\n**กลไกที่ทำให้รอดชีวิตนานขึ้น**: hypoxia เรื้อรัง → **hypoxic pulmonary vasoconstriction** ทั่วปอด → **pulmonary hypertension → cor pulmonale**; ออกซิเจนต่อเนื่องลดแรงต้านหลอดเลือดปอด ชะลอ cor pulmonale และลด secondary polycythaemia\n\n**เวลาที่ใช้สำคัญและเป็น dose-dependent**: **≥ 15 ชั่วโมง/วัน** เป็นขั้นต่ำ — **NOTT** แสดงว่า **ใช้ต่อเนื่อง ~19 ชม./วัน ดีกว่า 12 ชม./คืน อย่างชัดเจน** ยิ่งใช้มากยิ่งดี\n\n**เป้าหมาย**: ปรับให้ **PaO2 > 60 mmHg หรือ SpO2 90–92%** และเฝ้าระวัง CO2 คั่ง\n\n**ทำไมข้ออื่นผิด**\n- **เฉพาะกลางคืน 8 ชม.**: ต่ำกว่าขั้นต่ำ 15 ชม. **ไม่แสดงว่ายืดชีวิต** (isolated nocturnal desaturation ที่ PaO2 กลางวันปกติ ไม่มีข้อบ่งชี้ LTOT)\n- **ใช้เมื่อเหนื่อย (PRN)**: บรรเทาอาการชั่วคราวแต่ **ไม่เปลี่ยนอัตราตาย** เพราะไม่ได้แก้ hypoxia เรื้อรัง\n- **Theophylline**: ประโยชน์น้อย ขอบเขตการรักษาแคบ ไม่ลดอัตราตาย\n- **Prednisolone ระยะยาว**: **ห้าม** ใน COPD คงที่ — ไม่ลดอัตราตาย แต่ทำให้กล้ามเนื้ออ่อนแรง กระดูกพรุน เบาหวาน และ **เพิ่มอัตราตาย**",
+  "pearl": "LTOT: PaO2 ≤55 หรือ 56–59 ที่มี cor pulmonale/Hct >55% — ต้องใช้ ≥15 ชม./วัน (ยิ่งมากยิ่งดี) และวัด ABG ตอน stable สองครั้ง",
+  "ref": [
+   "MED31 MCQ COPD",
+   "MED33 MEQ COPD"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-38",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Antibiotics in acute exacerbation of COPD",
+  "stem": "A 66-year-old man with COPD presents with 3 days of increased breathlessness and increased sputum volume; the sputum has changed from white to green. Temperature 37.4°C, SpO2 90% on room air, no consolidation on chest radiograph. He is alert and able to speak in sentences. Which of the following best supports giving him an antibiotic?",
+  "choices": [
+   "He has all three Anthonisen cardinal symptoms, including increased sputum purulence",
+   "His oxygen saturation is below 92%, which by itself indicates bacterial infection",
+   "He has a temperature above 37.0°C",
+   "The chest radiograph is normal, so an antibiotic is required to prevent pneumonia",
+   "Any exacerbation of COPD requires an antibiotic regardless of symptoms"
+  ],
+  "answer": 0,
+  "explain": "**แนวคิดหลัก**: AECOPD เกิดจากไวรัส (~50%), แบคทีเรีย, และมลพิษ — **ไม่ใช่ทุกครั้งที่ต้องได้ยาปฏิชีวนะ** จึงต้องมีเกณฑ์\n\n**Anthonisen cardinal symptoms (3 ข้อ)**\n1. **หายใจเหนื่อยมากขึ้น**\n2. **ปริมาณเสมหะมากขึ้น**\n3. **เสมหะเป็นหนอง (purulence)** ← ข้อนี้ทำนายการมีแบคทีเรียได้ดีที่สุด\n\n**ข้อบ่งชี้ให้ยาปฏิชีวนะตาม GOLD**\n- มีครบ **ทั้ง 3 ข้อ** (type I) ← ผู้ป่วยรายนี้\n- มี **2 ข้อ โดยหนึ่งในนั้นต้องเป็น purulence** (type II)\n- **ต้องใช้เครื่องช่วยหายใจ (invasive หรือ non-invasive)** — กลุ่มนี้ให้เสมอ\n\n**กลไกของ purulence**: สีเขียวมาจาก **myeloperoxidase ใน neutrophil** ที่หลั่งออกมาตอบสนองต่อแบคทีเรีย → เป็น marker ทางคลินิกที่ใช้แทนการเพาะเชื้อได้ดี\n**เชื้อที่พบบ่อย**: *H. influenzae*, *S. pneumoniae*, *M. catarrhalis* (±*Pseudomonas* ถ้า FEV1 ต่ำมาก ได้ยาปฏิชีวนะบ่อย หรือเคยแยกได้มาก่อน)\n**ระยะเวลา**: โดยทั่วไป **5–7 วัน**\n\n**ทำไมข้ออื่นผิด**\n- **SpO2 < 92% เพียงอย่างเดียว**: บอกความรุนแรงของการแลกเปลี่ยนก๊าซ ไม่ได้บอกว่ามีแบคทีเรีย — ให้ออกซิเจนเป้าหมาย **88–92%** ไม่ใช่ยาปฏิชีวนะ\n- **ไข้ > 37.0°C**: 37.4 ไม่ใช่ไข้ด้วยซ้ำ และไข้ไม่ใช่เกณฑ์ Anthonisen\n- **ฟิล์มปกติจึงต้องให้ยากันปอดบวม**: ตรรกะกลับด้าน — ถ้าฟิล์ม **ผิดปกติ** จะเป็น **pneumonia** ซึ่งต้องให้ยาตามแนวทาง CAP; ยาปฏิชีวนะไม่ได้ใช้ป้องกัน\n- **ทุก exacerbation ต้องให้ยา**: ทำให้เกิดการดื้อยาและ *C. difficile* โดยไม่จำเป็น",
+  "pearl": "ให้ยาปฏิชีวนะใน AECOPD เมื่อครบ 3 อาการ, หรือ 2 อาการที่ต้องมี purulence, หรือต้องใช้เครื่องช่วยหายใจ",
+  "ref": [
+   "MED32 MCQ AECOPD",
+   "MED35 สอบลงกองครั้งที่ 2 — COPD exacerbation"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-39",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Beta-blockers in obstructive airway disease",
+  "stem": "A 72-year-old man with moderate COPD (FEV1 55% predicted, no bronchodilator reversibility) has just had an anterior ST-elevation myocardial infarction with a left ventricular ejection fraction of 38%. The medical team is hesitant to start a beta-blocker because of his lung disease. Which of the following is the most appropriate course of action?",
+  "choices": [
+   "Start a cardioselective beta-1 blocker such as bisoprolol at a low dose and titrate with monitoring",
+   "Avoid all beta-blockers permanently and use verapamil instead",
+   "Start propranolol, since non-selective agents are equally safe in airway disease",
+   "Withhold beta-blockade until formal bronchial provocation testing is done",
+   "Use ivabradine in place of a beta-blocker as it has the same mortality benefit after myocardial infarction"
+  ],
+  "answer": 0,
+  "explain": "**ประเด็นสมดุลความเสี่ยง**: ผู้ป่วยหลัง STEMI ที่มี **LVEF 38%** ได้ประโยชน์จาก beta-blocker ชัดเจน (**ลดอัตราตายและ sudden cardiac death**) — การงดยาเพราะกลัวโรคปอดคือ **การรักษาที่ต่ำกว่ามาตรฐานซึ่งพบบ่อยมากในเวชปฏิบัติจริง**\n\n**กลไกที่ทำให้ cardioselective ปลอดภัยกว่า**\n- **β1** อยู่ที่หัวใจเป็นหลัก; **β2** อยู่ที่กล้ามเนื้อเรียบของหลอดลม → การปิดกั้น β2 ทำให้หลอดลมหดตัว\n- **Bisoprolol, metoprolol succinate, nebivolol** เลือกจับ β1 สูง → ผลต่อ FEV1 น้อยมากใน COPD\n- **หลักฐาน**: meta-analysis ของ cardioselective beta-blocker ใน COPD ไม่พบการลด FEV1 หรือเพิ่มการใช้ยาขยายหลอดลมอย่างมีนัยสำคัญ\n> **ข้อควรระวัง**: ความเลือกจับ **ลดลงเมื่อขนาดยาสูงขึ้น** → จึงต้อง **เริ่มต่ำ ค่อย ๆ เพิ่ม พร้อมติดตามอาการและ PEF/spirometry**\n\n**ความต่างระหว่าง COPD กับ asthma ที่ต้องแยกให้ได้**\n| | **COPD (ข้อนี้)** | **Asthma** |\n|---|---|---|\n| Cardioselective BB | **ใช้ได้ ควรใช้เมื่อมีข้อบ่งชี้ทางหัวใจ** | ใช้ด้วยความระมัดระวังมาก เฉพาะเมื่อจำเป็นจริง และในโรคควบคุมได้ |\n| Non-selective BB | หลีกเลี่ยง | **ข้อห้าม** |\n\n**ทำไมข้ออื่นผิด**\n- **งด beta-blocker ถาวร ใช้ verapamil**: **verapamil เป็นข้อห้ามใน LVEF ลด** เพราะกด inotropy อย่างแรง → หัวใจล้มเหลวกำเริบ\n- **Propranolol**: **non-selective** ปิดกั้น β2 ด้วย → หลอดลมหดตัว และยังไม่ใช่ยาที่มีหลักฐานใน HFrEF\n- **รอ bronchial provocation test**: ผู้ป่วยหลัง STEMI ต้องได้ยาป้องกันทุติยภูมิภายในไม่กี่วัน การเลื่อนออกไปเพื่อการตรวจที่ไม่จำเป็นและมีความเสี่ยงคือความผิดพลาด\n- **Ivabradine แทน**: ลดอัตราการเต้นหัวใจผ่าน **If channel ของ SA node** ใช้เป็น **ยาเสริม** เมื่อ HR ยังสูงทั้งที่ได้ beta-blocker เต็มขนาดแล้ว **ไม่มีหลักฐานลดอัตราตายหลัง MI เทียบเท่า beta-blocker**",
+  "pearl": "COPD ไม่ใช่ข้อห้ามของ cardioselective beta-blocker — เริ่มต่ำแล้วไต่ขึ้น; ความเลือกจับ β1 ลดลงเมื่อยาขนาดสูง",
+  "ref": [
+   "MED34 MCQ COPD/comorbidity",
+   "MED30 MCQ post-MI management"
+  ],
+  "part": "MCQ"
+ },
+ {
+  "id": "CH-MCQ-40",
+  "lec": "37",
+  "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+  "topic": "Community-acquired pneumonia failing to improve",
+  "stem": "A 55-year-old man admitted with left lower lobe community-acquired pneumonia has been on intravenous ceftriaxone and azithromycin for 72 hours. He remains febrile at 38.9°C with a rising white cell count, new pleuritic pain and decreased breath sounds at the left base. Blood cultures are negative. The repeat chest radiograph shows an enlarging left basal opacity with blunting of the costophrenic angle. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Bedside ultrasound of the chest and diagnostic pleural fluid sampling",
+   "Broaden antibiotics to meropenem plus vancomycin and reassess in another 72 hours",
+   "Add oral prednisolone to reduce the inflammatory response",
+   "Repeat blood cultures and continue the current antibiotics unchanged",
+   "Arrange outpatient follow-up as radiographic clearing normally lags behind clinical recovery"
+  ],
+  "answer": 0,
+  "explain": "**หลักการ**: ผู้ป่วย CAP ส่วนใหญ่ **ดีขึ้นทางคลินิกภายใน 48–72 ชม.** ถ้าไม่ดีขึ้น ต้องถามเป็นระบบว่า **\"ผิดที่เชื้อ ผิดที่ยา หรือผิดที่ภาวะแทรกซ้อน/การวินิจฉัย\"**\n\n**สาเหตุของ non-responding pneumonia**\n| หมวด | ตัวอย่าง |\n|---|---|\n| **ภาวะแทรกซ้อนเฉพาะที่** ← ข้อนี้ | **Parapneumonic effusion/empyema**, lung abscess, obstruction จากก้อน |\n| เชื้อไม่ครอบคลุม | MRSA, *Pseudomonas*, **TB**, เชื้อรา, anaerobe |\n| ไม่ใช่การติดเชื้อ | PE, มะเร็ง, organising pneumonia, vasculitis, heart failure |\n| ปัจจัยผู้ป่วย | ภูมิคุ้มกันบกพร่อง, empyema ที่ไม่ได้ระบาย, ยาไม่ถึงระดับ |\n\n**ทำไมต้องแทงน้ำ ไม่ใช่แค่เปลี่ยนยา**: มี **เจ็บแบบ pleuritic ใหม่ + เสียงหายใจเบาลง + costophrenic angle ทึบ** → **parapneumonic effusion** ซึ่ง **ยาปฏิชีวนะเพียงอย่างเดียวรักษาไม่หายถ้าเข้าสู่ระยะ complicated/empyema** — หนองเป็น **undrained focus** ที่ยาเข้าไม่ถึง (pH ต่ำ, ยาเสื่อมฤทธิ์, แบคทีเรียอยู่ใน stationary phase)\n\n**Ultrasound ดีกว่า CXR ตรงไหน**: บอกปริมาณน้ำ, **แยก loculation/septation**, และนำทางการแทงได้ปลอดภัยกว่า\n\n**เกณฑ์ที่ต้องใส่สายระบาย (complicated parapneumonic/empyema)**\n- **หนองเห็นด้วยตา** หรือ **ย้อมกรัม/เพาะเชื้อพบเชื้อ**\n- **pH < 7.20**\n- **glucose < 40 mg/dL** หรือ **LDH > 1,000 U/L**\n- มี **loculation**\n\n**ทำไมข้ออื่นผิด**\n- **ขยายยาเป็น meropenem + vancomycin แล้วรออีก 72 ชม.**: กว้างขึ้นก็ไม่ทะลุเข้าไปในหนองที่ยังไม่ระบาย — **source control มาก่อนการขยายสเปกตรัม**\n- **Prednisolone**: ไม่ใช่การรักษาของ undrained infection และกดภูมิ\n- **เพาะเลือดซ้ำแล้วให้ยาเดิม**: เพาะเลือดซ้ำพอทำได้ แต่ **ปล่อยเวลาผ่านไปโดยไม่แก้สาเหตุ**\n- **ให้กลับบ้านเพราะฟิล์มช้ากว่าอาการ**: ประโยคนี้จริงในผู้ป่วยที่ **อาการดีขึ้น** เท่านั้น — รายนี้ **แย่ลงทางคลินิก** จึงใช้ไม่ได้",
+  "pearl": "CAP ไม่ดีขึ้นใน 72 ชม. + pleuritic pain ใหม่ = คิดถึง empyema — ultrasound + เจาะน้ำก่อน อย่าเพิ่งขยายยา",
+  "ref": [
+   "MED33 MEQ pneumonia complication",
+   "MED31 MCQ empyema",
+   "MED35 สอบลงกองครั้งที่ 3 — CAP"
+  ],
+  "part": "MCQ"
+ }
+]

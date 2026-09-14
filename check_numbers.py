@@ -1,90 +1,100 @@
 #!/usr/bin/env python3
-"""ตรวจความสอดคล้องของตัวเลขในข้อสอบ (ABG / anion gap / Winter's formula).
-
-ใช้:  python3 check_numbers.py [system ...]
-ออก exit code 1 ถ้าพบข้อที่ตัวเลขขัดกันเอง
 """
-import json
-import math
-import sys
-from pathlib import Path
+check_numbers.py — ไล่ตรวจตัวเลข ABG ทุกข้อใน data/ ว่าสอดคล้องกันเองหรือไม่
 
-ROOT = Path(__file__).resolve().parent
-PH_TOL = 0.03          # ยอมรับความคลาดเคลื่อน pH จาก Henderson-Hasselbalch
-WINTER_TOL = 3.0       # mmHg นอกช่วง Winter's ที่ยังไม่ถือว่าผิด (เผื่อ mixed disorder ที่ตั้งใจ)
+หาข้อความรูปแบบ  pH 7.28 ... PaCO2 68 ... HCO3 31  ในโจทย์/คำอธิบาย
+แล้วตรวจด้วย Henderson–Hasselbalch:  pH = 6.1 + log( HCO3 / (0.03 * PaCO2) )
+พร้อมรายงานการชดเชยตาม Winter's formula และการชดเชยของ respiratory acidosis
 
+ใช้: python3 check_numbers.py            # ตรวจทุกไฟล์ใน data/
+     python3 check_numbers.py chest      # ตรวจเฉพาะไฟล์ที่ชื่อมีคำว่า chest
+"""
+import json, re, math, glob, sys, os
 
-def hh_ph(hco3, paco2):
-    """Henderson-Hasselbalch: pH = 6.1 + log10(HCO3 / (0.03 x PaCO2))"""
-    return 6.1 + math.log10(hco3 / (0.03 * paco2))
+os.chdir(os.path.dirname(os.path.abspath(__file__)) or '.')
+TOL = 0.03          # ยอมให้ต่างได้เท่านี้ (การปัดเศษปกติ)
 
-
-def winters(hco3):
-    """คาดการณ์ PaCO2 ใน metabolic acidosis: 1.5 x HCO3 + 8 +/- 2"""
-    mid = 1.5 * hco3 + 8
-    return mid - 2, mid + 2
+PH   = re.compile(r'pH\s*[:=]?\s*(\d\.\d{2})', re.I)
+PCO2 = re.compile(r'Pa?CO2\s*[:=]?\s*(\d{1,3}(?:\.\d)?)', re.I)
+HCO3 = re.compile(r'HCO3\s*[:=]?\s*(\d{1,3}(?:\.\d)?)', re.I)
 
 
-def check_item(item):
-    abg = item.get("abg")
-    if not abg:
-        return []
+def texts(it):
+    """เก็บทุกฟิลด์ที่อาจมีค่า ABG"""
+    for k in ('stem', 'q', 'vignette', 'instruction', 'explain', 'note', 'answer'):
+        v = it.get(k)
+        if isinstance(v, str):
+            yield k, v
+    for q in it.get('questions', []) or []:
+        yield 'questions.q', q.get('q', '')
+        yield 'questions.a', q.get('a', '')
+
+
+def check(field, txt):
+    """คืน list ของปัญหาที่เจอในข้อความหนึ่งก้อน"""
     out = []
-    ph, paco2, hco3 = abg.get("ph"), abg.get("paco2"), abg.get("hco3")
-    if None in (ph, paco2, hco3):
-        out.append((item["id"], "ABG ไม่ครบ (ต้องมี ph, paco2, hco3)"))
-        return out
-
-    calc = hh_ph(hco3, paco2)
-    if abs(calc - ph) > PH_TOL:
-        out.append((item["id"],
-                    "pH ไม่สอดคล้อง: ระบุ %.2f แต่ HH คำนวณได้ %.2f "
-                    "(PaCO2 %s, HCO3 %s) -> ควรแก้ pH เป็น %.2f"
-                    % (ph, calc, paco2, hco3, round(calc, 2))))
-
-    # anion gap + Winter's เมื่อเป็น metabolic acidosis และให้ electrolyte มาครบ
-    na, cl = abg.get("na"), abg.get("cl")
-    if na is not None and cl is not None:
-        ag = na - cl - hco3
-        note = "AG = %d" % ag
-        if hco3 < 22:
-            lo, hi = winters(hco3)
-            if not (lo - WINTER_TOL <= paco2 <= hi + WINTER_TOL):
-                note += (" ; PaCO2 %s อยู่นอกช่วง Winter's %.0f-%.0f "
-                         "(ตั้งใจให้เป็น mixed disorder หรือไม่?)" % (paco2, lo, hi))
-        out.append((item["id"], "INFO " + note))
-    elif hco3 < 22 and ph < 7.38:
-        lo, hi = winters(hco3)
-        if not (lo - WINTER_TOL <= paco2 <= hi + WINTER_TOL):
-            out.append((item["id"],
-                        "INFO PaCO2 %s นอกช่วง Winter's %.0f-%.0f (mixed disorder?)"
-                        % (paco2, lo, hi)))
+    # จับเป็นช่วง ๆ ละ 320 ตัวอักษร เพื่อไม่ให้จับ pH ของเคสหนึ่งไปคู่กับ HCO3 ของอีกเคส
+    for m in PH.finditer(txt):
+        window = txt[m.start():m.start() + 320]
+        p = PCO2.search(window)
+        h = HCO3.search(window)
+        if not (p and h):
+            continue
+        ph, pco2, hco3 = float(m.group(1)), float(p.group(1)), float(h.group(1))
+        if pco2 <= 0 or hco3 <= 0:
+            continue
+        calc = 6.1 + math.log10(hco3 / (0.03 * pco2))
+        if abs(calc - ph) > TOL:
+            out.append(f"[{field}] pH {ph} / PaCO2 {pco2} / HCO3 {hco3} → H-H ได้ {calc:.2f} "
+                       f"(ต่าง {abs(calc - ph):.2f})")
+        else:
+            # ตัวเลขสอดคล้องแล้ว — รายงานการชดเชยไว้ให้ตรวจว่าข้อสรุปในเฉลยตรงกันไหม
+            notes = []
+            if hco3 < 22 and ph < 7.40:
+                lo, hi = 1.5 * hco3 + 6, 1.5 * hco3 + 10
+                verdict = ('พอดี' if lo <= pco2 <= hi
+                           else ('สูงเกิน → resp acidosis ซ้อน' if pco2 > hi
+                                 else 'ต่ำเกิน → resp alkalosis ซ้อน'))
+                notes.append(f"Winter's คาด {lo:.0f}–{hi:.0f} ได้ {pco2:.0f} = {verdict}")
+            if pco2 > 45:
+                acute = 24 + (pco2 - 40) / 10 * 1
+                chronic = 24 + (pco2 - 40) / 10 * 3.5
+                notes.append(f"resp acidosis: HCO3 ถ้า acute ≈ {acute:.0f} / chronic ≈ {chronic:.0f} (จริง {hco3:.0f})")
+            if notes:
+                out.append(f"  · [{field}] pH {ph} PaCO2 {pco2} HCO3 {hco3} — " + ' ; '.join(notes))
     return out
 
 
-def main(argv):
-    cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
-    wanted = set(argv[1:])
-    errors, infos, n_abg = [], [], 0
+def main():
+    pat = sys.argv[1] if len(sys.argv) > 1 else ''
+    files = [f for f in sorted(glob.glob('data/*.json')) if pat in f]
+    if not files:
+        print('ไม่พบไฟล์ใน data/'); return
+    bad = ok = 0
+    for f in files:
+        rows = json.load(open(f, encoding='utf-8'))
+        items = []
+        for r in rows:
+            items += r['items'] if isinstance(r, dict) and 'items' in r else [r]
+        for it in items:
+            hits = []
+            for field, txt in texts(it):
+                hits += check(field, txt)
+            errs = [h for h in hits if not h.startswith('  ·')]
+            info = [h for h in hits if h.startswith('  ·')]
+            if errs:
+                bad += 1
+                print(f"\n✗ {it.get('id', '?')}  ({os.path.basename(f)})")
+                for e in errs:
+                    print('   ' + e)
+            elif info:
+                ok += 1
+                print(f"\n✓ {it.get('id', '?')}")
+                for i in info:
+                    print('  ' + i)
+    print(f"\n{'-' * 52}\nตัวเลขไม่สอดคล้อง {bad} ข้อ · ตรวจแล้วผ่าน {ok} ข้อ")
+    print('หมายเหตุ: บรรทัด ✓ แสดงผลการชดเชยไว้ให้เทียบกับข้อสรุปในเฉลยด้วยตาอีกครั้ง')
 
-    for sysdef in cfg["systems"]:
-        if wanted and sysdef["key"] not in wanted:
-            continue
-        data = json.loads((ROOT / sysdef["file"]).read_text(encoding="utf-8"))
-        for item in data["items"]:
-            if item.get("abg"):
-                n_abg += 1
-            for iid, msg in check_item(item):
-                (infos if msg.startswith("INFO ") else errors).append((sysdef["key"], iid, msg))
 
-    for key, iid, msg in infos:
-        print("  [%s] %s: %s" % (key, iid, msg[5:]))
-    for key, iid, msg in errors:
-        print("  ERROR [%s] %s: %s" % (key, iid, msg))
-
-    print("\nตรวจ ABG %d ข้อ — ไม่สอดคล้อง %d ข้อ" % (n_abg, len(errors)))
-    return 1 if errors else 0
-
-
-if __name__ == "__main__":
-    sys.exit(main(sys.argv))
+if __name__ == '__main__':
+    main()
