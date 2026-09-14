@@ -326,9 +326,18 @@ function filtered(){
     return true;
   });
 }
+function modeItems(){
+  // นับตามโหมดที่กำลังดูอยู่ — ข้อใหม่ หรือคลังข้อสอบเก่า
+  if(state.mode!=="old")return newItems(state.set);
+  var out=[];
+  BANK[state.set].old.forEach(function(g){
+    g.items.forEach(function(it){out.push({lec:it.lec||g.lec,lecture:it.lecture||g.lecture});});
+  });
+  return out;
+}
 function lecList(){
   var seen=[],map={};
-  newItems(state.set).forEach(function(it){
+  modeItems().forEach(function(it){
     if(!map[it.lec]){map[it.lec]={lec:it.lec,name:it.lecture,n:0};seen.push(map[it.lec]);}
     map[it.lec].n++;
   });
@@ -354,7 +363,7 @@ function buildLecs(){
   var el=document.getElementById("lecbar");el.innerHTML="";
   var all=document.createElement("button");
   all.type="button";all.className="lec";all.setAttribute("aria-pressed",String(state.lec==="all"));
-  all.innerHTML="<span class='slot'>ทั้ง</span><span class='nm'>ทุกหัวข้อ</span><span class='ct'>"+newItems(state.set).length+"</span>";
+  all.innerHTML="<span class='slot'>ทั้ง</span><span class='nm'>ทุกหัวข้อ</span><span class='ct'>"+modeItems().length+"</span>";
   all.addEventListener("click",function(){state.lec="all";render();});
   el.appendChild(all);
   lecList().forEach(function(L){
