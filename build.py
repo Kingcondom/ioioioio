@@ -210,7 +210,7 @@ def main():
         return '\n'.join(
             f"{indent}{sel % s['key']}{{ --accent:{s['accent'][key_a]}; "
             f"--accent-soft:{s['accent'][key_s]}; --accent-ink:{s['accent'][key_i]}; }}"
-            for s in live[1:])   # ชุดแรกใช้สีจาก :root เป็นค่าเริ่มต้น
+            for s in live)   # ทุกชุดกำหนดสีของตัวเองชัดเจน (:root เป็นสีกลางของธีม)
 
     html = (t.replace('__TITLE__', CFG['site']['title'])
              .replace('__SUBTITLE__', CFG['site']['subtitle'])
