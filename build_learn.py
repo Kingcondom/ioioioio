@@ -134,6 +134,66 @@ def main():
     if missing:
         die('อ้าง id ข้อสอบที่ไม่มีในคลัง %d จุด:\n    - %s' % (len(missing), '\n    - '.join(missing[:20])))
 
+    # ---- ไฟล์ข้อความของบทเรียน (เอาไปวางในแชทอื่นได้ทั้งไฟล์)
+    os.makedirs('export', exist_ok=True)
+    for c in courses:
+        out = [f"# บทเรียน MED421 · {c['label']} — {c.get('title','')}", '']
+        if c.get('intro'):
+            out += [c['intro'], '']
+        n_sec = sum(len(l['sections']) for l in c['lectures'])
+        n_q = sum(len(s['items']) for l in c['lectures'] for s in l['sections'])
+        out += [f"{len(c['lectures'])} คาบ · {n_sec} หัวข้อ · ข้อเช็คความเข้าใจ {n_q} ข้อ · "
+                f"MEQ {sum(len(l['meq']) for l in c['lectures'])} · "
+                f"OSCE/SAQ {sum(len(l['osce']) for l in c['lectures'])}",
+                '', '---', '']
+        for l in c['lectures']:
+            out += [f"## คาบ {l['lec']} · {l['title']}" + (f" ({l['date']})" if l.get('date') else ''), '']
+            if l.get('subtitle'):
+                out += [l['subtitle'], '']
+            if l.get('objectives'):
+                out += ['**วัตถุประสงค์**'] + [f'- {o}' for o in l['objectives']] + ['']
+            for sec in l['sections']:
+                out += [f"### [{sec['id']}] {sec['title']}", '']
+                if sec.get('summary'):
+                    out += [f"_{sec['summary']}_", '']
+                if sec.get('source'):
+                    out += [f"ที่มา: {sec['source']}", '']
+                if sec.get('nl'):
+                    out += ['NL: ' + ' · '.join(
+                        f"{code} {NL_ENTRIES.get(code, {}).get('title', '')}".strip() for code in sec['nl']), '']
+                out += [sec['md'].strip(), '']
+                if sec.get('pearls'):
+                    out += ['**จำไปสอบ**'] + [f'- {x}' for x in sec['pearls']] + ['']
+                if sec['items']:
+                    out += [f"**ข้อสอบเช็คความเข้าใจ ({len(sec['items'])} ข้อ)**", '']
+                for it in sec['items']:
+                    out += [f"[{it['id']}] {it.get('topic','')}".strip(), '', it['stem'], '']
+                    out += [f"{'ABCDE'[i]}. {ch}" for i, ch in enumerate(it['choices'])]
+                    out += ['', f"ANSWER: {'ABCDE'[it['answer']]}. {it['choices'][it['answer']]}", '']
+                    if it.get('explain'):
+                        out += ['EXPLAIN:', it['explain'].strip(), '']
+                    if it.get('pearl'):
+                        out += [f"PEARL: {it['pearl']}", '']
+                    if it.get('src'):
+                        out += [f"SRC: {it['src']}", '']
+                    if it.get('ref'):
+                        out += ['REF: ' + ' | '.join(it['ref']), '']
+                    if it.get('nl'):
+                        out += ['NL: ' + ' · '.join(
+                            f"{code} {NL_ENTRIES.get(code, {}).get('title', '')}".strip() for code in it['nl']), '']
+                    out += ['']
+            for it in l['meq']:
+                out += [f"### [{it['id']}] MEQ — {it.get('topic','')}", '', it.get('vignette', ''), '']
+                for q in it.get('questions', []):
+                    out += [q['q'], '', 'แนวคำตอบ:', q['a'].strip(), '']
+            for it in l['osce']:
+                out += [f"### [{it['id']}] {it.get('station','OSCE/SAQ')} — {it.get('topic','')}", '',
+                        it.get('instruction', ''), '', 'เฉลยและเกณฑ์ให้คะแนน:', (it.get('answer') or '').strip(), '']
+            out += ['---', '']
+        path = 'export/learn_%s.md' % c['set']
+        open(path, 'w', encoding='utf-8').write('\n'.join(out))
+        print('  ✓ %-22s %.0f KB' % (path, len(''.join(out).encode()) / 1024))
+
     t = open('learn_template.html', encoding='utf-8').read()
     html = (t.replace('__TITLE__', CFG['site'].get('learn_title', 'MED421 · เรียนเนื้อหา Internal Medicine'))
              .replace('__NL__', json.dumps(NL_ENTRIES, ensure_ascii=False))

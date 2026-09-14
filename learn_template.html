@@ -169,6 +169,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 <header class="mast">
   <div class="wrap">
     <div class="brand"><b id="brandTitle">MED421</b><span id="brandSub"></span></div>
+    <div class="tabs" id="courseTabs"></div>
     <div class="tabs" id="tabs"></div>
     <div class="ring" id="ring"></div>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
@@ -266,10 +267,24 @@ function nlChips(codes){
 
 /* ---------- masthead ---------- */
 var TABS=[{k:"home",label:"ภาพรวม"},{k:"learn",label:"เรียนเนื้อหา"},{k:"meq",label:"Practice · MEQ"},{k:"osce",label:"Practice · OSCE/SAQ"},{k:"review",label:"ทบทวนข้อที่ผิด"}];
+function darkNow(){
+  var t=document.documentElement.getAttribute("data-theme");
+  if(t==="dark")return true; if(t==="light")return false;
+  try{return window.matchMedia("(prefers-color-scheme:dark)").matches;}catch(e){return false;}
+}
+function applyAccent(c){
+  var a=c.accent||{},d=darkNow(),r=document.documentElement.style;
+  var acc=d?a.dark:a.light, soft=d?a.darkSoft:a.soft, ink=d?a.darkInk:a.ink;
+  if(acc)r.setProperty("--accent",acc); if(soft)r.setProperty("--accent-soft",soft);
+  if(ink)r.setProperty("--accent-ink",ink);
+}
 function renderMast(){
   var c=course();
+  applyAccent(c);
   document.getElementById('brandTitle').textContent="MED421 · "+c.label;
   document.getElementById('brandSub').textContent=c.thai||"";
+  document.getElementById('courseTabs').innerHTML = COURSES.length<2 ? "" :
+    COURSES.map(function(x){return "<button class='btn"+(x.set===state.course?" on":"")+"' data-course='"+x.set+"'>"+esc(x.label)+"</button>";}).join("");
   document.getElementById('tabs').innerHTML=TABS.map(function(t){
     return "<button class='btn"+(state.view===t.k||(state.view==="section"&&t.k==="learn")?" on":"")+"' data-tab='"+t.k+"'>"+t.label+"</button>";
   }).join("");
@@ -498,6 +513,13 @@ document.addEventListener('click',function(e){
     var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
     if(nx)document.documentElement.setAttribute("data-theme",nx);else document.documentElement.removeAttribute("data-theme");
     state.theme=nx;save();return;
+  }
+  if(t.dataset.course){
+    if(t.dataset.course!==state.course){
+      state.course=t.dataset.course;state.view="home";state.lec=null;state.sec=null;state.pid=null;
+      render();window.scrollTo({top:0});
+    }
+    return;
   }
   if(t.dataset.tab){
     state.view=t.dataset.tab;state.pid=null;
