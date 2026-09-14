@@ -1,0 +1,73 @@
+<title>MED421 Exam Kit</title>
+<style>
+:root{color-scheme:light dark;--bg:#f6f7f9;--card:#fff;--ink:#16181d;--muted:#5b6472;--line:#e3e6ec;
+--accent:#0ea5a4;--accent-soft:#0ea5a414;--ok:#137a4d;--ok-soft:#137a4d18;--warn:#8a5a00;--radius:14px}
+:root:not([data-theme=light]){@media (prefers-color-scheme:dark){}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12141a;--card:#1a1d25;--ink:#e8eaee;
+--muted:#9aa3b2;--line:#2a2f3a;--accent-soft:#0ea5a428;--ok:#4ade80;--ok-soft:#4ade8020}}
+:root[data-theme=dark]{--bg:#12141a;--card:#1a1d25;--ink:#e8eaee;--muted:#9aa3b2;--line:#2a2f3a;
+--accent-soft:#0ea5a428;--ok:#4ade80;--ok-soft:#4ade8020}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Sarabun,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding-block:28px;padding-left:18px;padding-right:18px}
+header.hero{border-left:5px solid var(--accent);padding:2px 0 2px 14px;margin-bottom:18px}
+h1{font-size:1.6rem;margin:0 0 4px}
+.sub{color:var(--muted);font-size:.92rem}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:.85rem}
+.stat b{color:var(--accent);font-size:1.05rem}
+.bar{position:sticky;top:0;z-index:9;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);
+display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+select,input[type=search],button{font:inherit;color:var(--ink);background:var(--card);
+border:1px solid var(--line);border-radius:9px;padding:7px 11px}
+button{cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+input[type=search]{flex:1;min-width:140px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:9px;font-size:.76rem;color:var(--muted)}
+.tag{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 9px;font-weight:600}
+.tag.grey{background:var(--line);color:var(--muted)}
+.stem{margin:0 0 12px}
+ol.choices{list-style:none;margin:0;padding:0;counter-reset:c}
+ol.choices li{counter-increment:c;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 38px;
+margin-bottom:7px;position:relative;cursor:pointer}
+ol.choices li::before{content:counter(c,lower-alpha) ".";position:absolute;left:14px;color:var(--muted);font-weight:600}
+ol.choices li.correct{border-color:var(--ok);background:var(--ok-soft)}
+ol.choices li.wrong{border-color:#d9534f;background:#d9534f14}
+.answer{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:11px;font-size:.92rem}
+.item.show .answer{display:block}
+.item.show ol.choices li.key{border-color:var(--ok);background:var(--ok-soft)}
+.answer .lbl{font-weight:700;color:var(--ok)}
+.pearl{background:var(--accent-soft);border-radius:10px;padding:9px 12px;margin:9px 0}
+.pearl b{color:var(--accent)}
+.ref{color:var(--muted);font-size:.83rem}
+.nl{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px}
+.nlchip{font-size:.76rem;border:1px solid var(--accent);color:var(--accent);border-radius:999px;
+padding:2px 9px;cursor:help}
+.nlbox{margin-top:8px;font-size:.82rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:10px}
+.meq .scenario{background:var(--accent-soft);border-radius:10px;padding:11px 13px;margin-bottom:11px}
+.meq ol.sub{padding-left:20px;margin:0}
+.meq ol.sub li{margin-bottom:10px}
+.meq .a{display:none;color:var(--ok);margin-top:4px}
+.item.show .meq-a,.item.show .a{display:block}
+.note{font-size:.82rem;color:var(--warn);margin-top:8px}
+footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);margin-top:26px;padding-top:14px}
+a{color:var(--accent)}
+.syslist{display:grid;gap:12px}
+.syscard{display:block;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+border-radius:var(--radius);padding:16px 18px;text-decoration:none;color:inherit}
+.syscard h2{margin:0 0 4px;font-size:1.15rem}
+@media print{
+ .bar,.stats{display:none}
+ body{background:#fff}
+ .item{break-inside:avoid;border-color:#ccc}
+ .answer,.a{display:block !important}
+}
+</style>
+<div class="wrap">
+<header class="hero"><h1>MED421 — Internal Medicine Exam Kit</h1>
+<div class="sub">คลังข้อสอบแยกตามระบบ · ผูกเกณฑ์ NL 2567 รายข้อ · build 2026-09-14</div></header>
+<div class="syslist"><a class="syscard" href="air.html" style="--accent:#0ea5a4"><h2>AIR — Airway &amp; Respiratory System</h2><div class="sub">ระบบการหายใจ · 44 ข้อ (41 MCQ / 3 MEQ) · 12 lecture</div></a></div>
+<footer>อ้างอิงเกณฑ์: ประกาศแพทยสภาที่ 4/2567 — เกณฑ์ความรู้ความสามารถในการประเมินเพื่อรับใบอนุญาตเป็นผู้ประกอบวิชาชีพเวชกรรม พ.ศ. 2567 (NL Syllabus 2567)</footer>
+</div>

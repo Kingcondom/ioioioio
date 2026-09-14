@@ -1,0 +1,35 @@
+{
+  "course": "MED421 — Internal Medicine Exam Kit",
+  "institution": "MED35",
+  "academic_year": "2569",
+  "build": {
+    "out_dir": "site",
+    "pdf": true,
+    "nl_reference_file": "refs/nl_2567.json"
+  },
+  "systems": [
+    {
+      "key": "air",
+      "name_th": "ระบบการหายใจ",
+      "name_en": "AIR — Airway & Respiratory System",
+      "file": "data/air.json",
+      "color": "#0ea5a4",
+      "color_dark": "#0b7c7b",
+      "seed": 4210,
+      "lectures": [
+        { "lec": "AIR-01", "title": "Approach to dyspnea, cough and hemoptysis", "date": "" },
+        { "lec": "AIR-02", "title": "Pulmonary function test & spirometry interpretation", "date": "" },
+        { "lec": "AIR-03", "title": "Asthma", "date": "" },
+        { "lec": "AIR-04", "title": "COPD", "date": "" },
+        { "lec": "AIR-05", "title": "Pneumonia & lung abscess", "date": "" },
+        { "lec": "AIR-06", "title": "Tuberculosis", "date": "" },
+        { "lec": "AIR-07", "title": "Pleural diseases: effusion, empyema, pneumothorax", "date": "" },
+        { "lec": "AIR-08", "title": "Bronchiectasis & chronic airway infection", "date": "" },
+        { "lec": "AIR-09", "title": "Respiratory failure, ABG & ARDS", "date": "" },
+        { "lec": "AIR-10", "title": "Pulmonary embolism & pulmonary hypertension", "date": "" },
+        { "lec": "AIR-11", "title": "Lung cancer & solitary pulmonary nodule", "date": "" },
+        { "lec": "AIR-12", "title": "Upper airway: rhinitis, URI, OSA", "date": "" }
+      ]
+    }
+  ]
+}
