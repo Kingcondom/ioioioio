@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="th">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+Thai:wght@500;600;700&display=swap">
+<style>
+:root{
+  --paper:#f6f7f9; --surface:#ffffff; --surface-sunk:#eef1f5;
+  --ink:#121a22; --ink-2:#3f4b58; --ink-3:#6b7886;
+  --rule:#dde3ea; --rule-strong:#c3ccd6;
+  --accent:#8a5a12; --accent-soft:#f4ecdd; --accent-ink:#6d460c;
+  --ok:#136c45; --ok-soft:#e6f1eb; --miss:#8a5608; --miss-soft:#f7efdf;
+  --bad:#a3271f; --bad-soft:#f8e9e7;
+  --focus:#1f6feb;
+  --shadow:0 1px 2px rgba(18,26,34,.06),0 8px 24px -16px rgba(18,26,34,.28);
+  --serif:"Noto Serif Thai",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans Thai","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1319; --surface:#161d25; --surface-sunk:#1d262f;
+    --ink:#e9edf2; --ink-2:#b3bec9; --ink-3:#838f9d;
+    --rule:#27313b; --rule-strong:#3a4651;
+    --accent:#d9ab63; --accent-soft:#241d12; --accent-ink:#ecc98f;
+    --ok:#5ec08f; --ok-soft:#15251d; --miss:#d9a84b; --miss-soft:#262015;
+    --bad:#e8877c; --bad-soft:#2a1715;
+    --focus:#6aa3ff;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 28px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1319; --surface:#161d25; --surface-sunk:#1d262f;
+  --ink:#e9edf2; --ink-2:#b3bec9; --ink-3:#838f9d;
+  --rule:#27313b; --rule-strong:#3a4651;
+  --accent:#d9ab63; --accent-soft:#241d12; --accent-ink:#ecc98f;
+  --ok:#5ec08f; --ok-soft:#15251d; --miss:#d9a84b; --miss-soft:#262015;
+  --bad:#e8877c; --bad-soft:#2a1715;
+  --focus:#6aa3ff;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 28px -18px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.64;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;margin:0;text-wrap:balance}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:18px}
+
+/* ---------- masthead ---------- */
+.mast{background:var(--surface);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:30}
+.mast .wrap{display:flex;align-items:center;gap:14px;padding-block:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;margin-right:auto;min-width:0}
+.brand b{font-family:var(--serif);font-size:18px;letter-spacing:.01em}
+.brand span{color:var(--ink-3);font-size:12.5px}
+.btn{font:inherit;font-size:13px;color:var(--ink-2);background:var(--surface);border:1px solid var(--rule-strong);
+     border-radius:999px;padding:5px 13px;cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--accent);color:var(--accent-ink)}
+.btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.ghost{border-style:dashed}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.ring{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.bar{width:110px;height:6px;border-radius:999px;background:var(--surface-sunk);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+
+/* ---------- layout ---------- */
+.cols{display:grid;grid-template-columns:290px minmax(0,1fr);gap:26px;padding-block:22px 60px;align-items:start}
+@media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
+aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
+@media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
+@media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow)}
+.outline{padding:12px 12px 14px}
+.outline h4{font-size:12px;font-family:var(--sans);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:10px 6px 6px}
+.olec{margin-bottom:6px}
+.olec>button{display:flex;width:100%;gap:8px;align-items:center;text-align:left;font:inherit;font-weight:600;font-size:13.5px;
+  color:var(--ink);background:transparent;border:0;border-radius:9px;padding:7px 8px;cursor:pointer}
+.olec>button:hover{background:var(--surface-sunk)}
+.olec>button.on{background:var(--accent-soft);color:var(--accent-ink)}
+.olec .num{font:600 11px/1 var(--mono);color:var(--ink-3);border:1px solid var(--rule-strong);border-radius:5px;padding:3px 4px}
+.osec{list-style:none;margin:2px 0 8px;padding:0 0 0 8px;border-left:1px solid var(--rule)}
+.osec li button{display:flex;gap:7px;width:100%;text-align:left;font:inherit;font-size:13px;color:var(--ink-2);
+  background:transparent;border:0;border-radius:8px;padding:5px 8px;cursor:pointer}
+.osec li button:hover{background:var(--surface-sunk);color:var(--ink)}
+.osec li button.on{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.tick{flex:0 0 15px;height:15px;margin-top:3px;border-radius:50%;border:1.5px solid var(--rule-strong);font:700 9px/13px var(--sans);text-align:center;color:transparent}
+.tick.done{background:var(--ok);border-color:var(--ok);color:#fff}
+.tick.part{border-color:var(--miss);background:var(--miss-soft);color:var(--miss)}
+
+/* ---------- content ---------- */
+main{min-width:0;display:flex;flex-direction:column;gap:18px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow);padding:22px 24px}
+@media (max-width:560px){.card{padding:18px 15px;border-radius:13px}}
+.eyebrow{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-ink);font-weight:700}
+.card h2{font-size:23px;margin:6px 0 4px;line-height:1.35}
+.card h3{font-size:18px;margin:22px 0 6px}
+.lede{color:var(--ink-2);font-size:14.5px}
+.prose{font-size:15.5px}
+.prose p{margin:11px 0}
+.prose ul,.prose ol{margin:9px 0;padding-left:22px}
+.prose li{margin:4px 0}
+.prose strong{color:var(--ink);font-weight:600}
+.prose code{font-family:var(--mono);font-size:.88em;background:var(--surface-sunk);padding:1px 5px;border-radius:5px}
+.prose h4{font-size:15.5px;font-family:var(--sans);font-weight:700;margin:18px 0 4px;color:var(--accent-ink)}
+.tablewrap{overflow-x:auto;margin:14px 0;border:1px solid var(--rule);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:460px}
+th,td{border-bottom:1px solid var(--rule);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:var(--surface-sunk);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.callout{border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--accent-soft);
+  border-radius:0 11px 11px 0;padding:12px 15px;margin:16px 0;font-size:14.5px}
+.callout b{color:var(--accent-ink)}
+.pearls{margin:18px 0 0;padding:14px 16px;border:1px dashed var(--rule-strong);border-radius:12px;background:var(--surface-sunk)}
+.pearls h4{margin:0 0 6px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);font-family:var(--sans)}
+.pearls ul{margin:0;padding-left:20px;font-size:14.4px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--ink-3);font-size:12.3px;margin-top:8px}
+.chip{display:inline-block;border:1px solid var(--rule-strong);border-radius:999px;padding:2px 9px;font-size:11.8px;color:var(--ink-3);background:var(--surface)}
+.chip.nl{border-style:dashed}
+.chip.acc{border-color:var(--accent);color:var(--accent-ink);background:var(--accent-soft)}
+
+/* ---------- quiz ---------- */
+.quiz{border-top:2px solid var(--accent);margin-top:26px;padding-top:18px}
+.qhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.qhead h3{margin:0;font-size:19px}
+.q{border:1px solid var(--rule);border-radius:13px;padding:16px 17px;margin-top:14px;background:var(--surface)}
+.q .qid{font:600 11px/1 var(--mono);color:var(--ink-3)}
+.stem{margin:7px 0 12px;font-size:15.2px}
+.choices{display:flex;flex-direction:column;gap:7px}
+.ch{display:flex;gap:10px;text-align:left;font:inherit;font-size:14.6px;width:100%;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;padding:9px 12px;color:var(--ink)}
+.ch:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.ch:disabled{cursor:default}
+.ch .k{font:700 13px/1.5 var(--mono);color:var(--ink-3);flex:0 0 16px}
+.ch.correct{border-color:var(--ok);background:var(--ok-soft)}
+.ch.correct .k{color:var(--ok)}
+.ch.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.ch.wrong .k{color:var(--bad)}
+.verdict{margin-top:12px;font-weight:600;font-size:14.4px}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--bad)}
+.explain{margin-top:8px;border-top:1px dashed var(--rule);padding-top:10px;font-size:14.6px}
+.pearl{margin-top:10px;background:var(--accent-soft);border-radius:10px;padding:9px 13px;font-size:14.3px}
+.pearl b{color:var(--accent-ink)}
+.scorebar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px;padding:12px 14px;
+  border-radius:12px;background:var(--surface-sunk);font-size:14px}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+
+/* ---------- practice ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:13px;margin-top:14px}
+.tile{text-align:left;font:inherit;background:var(--surface);border:1px solid var(--rule);border-radius:13px;
+  padding:14px 15px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px}
+.tile:hover{border-color:var(--accent)}
+.tile b{font-size:14.8px;font-family:var(--serif)}
+.tile span{font-size:12.6px;color:var(--ink-3)}
+.vignette{white-space:pre-wrap;font-size:14.6px;background:var(--surface-sunk);border-radius:12px;padding:14px 16px;margin:12px 0 4px}
+textarea{width:100%;min-height:104px;font:inherit;font-size:14.5px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--rule-strong);border-radius:11px;padding:10px 12px;resize:vertical}
+.selfrate{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.timer{font:600 15px/1 var(--mono);color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:6px 12px}
+.hr{height:1px;background:var(--rule);margin:18px 0}
+footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center}
+.hide{display:none!important}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brand"><b id="brandTitle">MED421</b><span id="brandSub"></span></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="ring" id="ring"></div>
+    <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
+  </div>
+</header>
+
+<div class="wrap cols">
+  <aside class="panel outline" id="outline"></aside>
+  <main id="main"></main>
+</div>
+<footer class="wrap">MED421 Internal Medicine · เว็บเรียนเนื้อหา + เช็คความเข้าใจจากคลังข้อสอบ MED28–MED35 · ความคืบหน้าเก็บไว้ในเครื่องของคุณเอง (localStorage)</footer>
+
+<script type="application/json" id="courses">__COURSES__</script>
+<script>
+(function(){
+"use strict";
+var COURSES=JSON.parse(document.getElementById('courses').textContent);
+var NL=__NL__;
+var KEY="med421-learn-v1";
+var state={course:COURSES[0].set,view:"home",lec:null,sec:null,pid:null,
+           done:{},ans:{},notes:{},rate:{},theme:""};
+try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);if(s&&typeof s==="object"){
+  for(var k in state) if(k in s) state[k]=s[k];}}}catch(e){}
+if(state.theme)document.documentElement.setAttribute("data-theme",state.theme);
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+
+/* ---------- tiny markdown (เหมือน drill.html) ---------- */
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function inline(t){return esc(t)
+  .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+  .replace(/`([^`]+)`/g,"<code>$1</code>")
+  .replace(/\*([^*\n]+)\*/g,"<em>$1</em>");}
+function md(src){
+  var lines=String(src==null?"":src).split("\n"),out=[],i=0,para=[];
+  function flushPara(){if(para.length){out.push("<p>"+para.map(inline).join("<br>")+"</p>");para=[];}}
+  function flushTable(){
+    var rows=[];while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i]);i++;}
+    if(!rows.length)return;
+    var cells=rows.map(function(r){return r.trim().replace(/^\|/,"").replace(/\|$/,"").split("|").map(function(c){return c.trim();});});
+    var hasSep=cells.length>1&&cells[1].every(function(c){return /^:?-{2,}:?$/.test(c);});
+    var head=cells[0],body=hasSep?cells.slice(2):cells.slice(1);
+    var h="<div class='tablewrap'><table><thead><tr>"+head.map(function(c){return "<th>"+inline(c)+"</th>";}).join("")+"</tr></thead><tbody>";
+    body.forEach(function(r){h+="<tr>"+r.map(function(c){return "<td>"+inline(c)+"</td>";}).join("")+"</tr>";});
+    out.push(h+"</tbody></table></div>");
+  }
+  function flushList(ordered){
+    var tag=ordered?"ol":"ul",items=[];
+    while(i<lines.length){
+      var m=ordered?lines[i].match(/^\s*\d+[.)]\s+(.*)$/):lines[i].match(/^\s*[-•]\s+(.*)$/);
+      if(!m)break;
+      var txt=m[1];i++;
+      while(i<lines.length&&/^\s{2,}\S/.test(lines[i])&&!/^\s*[-•]\s/.test(lines[i])&&!/^\s*\d+[.)]\s/.test(lines[i])&&!/^\s*\|/.test(lines[i])){txt+=" "+lines[i].trim();i++;}
+      items.push("<li>"+inline(txt)+"</li>");
+    }
+    out.push("<"+tag+">"+items.join("")+"</"+tag+">");
+  }
+  while(i<lines.length){
+    var L=lines[i];
+    if(/^\s*>\s?/.test(L)){var q=[];while(i<lines.length&&/^\s*>\s?/.test(lines[i])){q.push(lines[i].replace(/^\s*>\s?/,""));i++;}
+      flushPara();out.push("<div class='callout'>"+md(q.join("\n"))+"</div>");continue;}
+    if(/^\s*####\s+/.test(L)){flushPara();out.push("<h4>"+inline(L.replace(/^\s*####\s+/,""))+"</h4>");i++;continue;}
+    if(/^\s*###\s+/.test(L)){flushPara();out.push("<h3>"+inline(L.replace(/^\s*###\s+/,""))+"</h3>");i++;continue;}
+    if(/^\s*\|/.test(L)){flushPara();flushTable();continue;}
+    if(/^\s*[-•]\s+/.test(L)){flushPara();flushList(false);continue;}
+    if(/^\s*\d+[.)]\s+/.test(L)){flushPara();flushList(true);continue;}
+    if(!L.trim()){flushPara();i++;continue;}
+    para.push(L.trim());i++;
+  }
+  flushPara();return out.join("");
+}
+
+/* ---------- data helpers ---------- */
+function course(){return COURSES.filter(function(c){return c.set===state.course;})[0]||COURSES[0];}
+function lectures(){return course().lectures;}
+function lecOf(id){return lectures().filter(function(l){return l.lec===id;})[0];}
+function secOf(lec,id){return (lec?lec.sections:[]).filter(function(s){return s.id===id;})[0];}
+function allSections(){var o=[];lectures().forEach(function(l){l.sections.forEach(function(s){o.push({lec:l,sec:s});});});return o;}
+function secStat(sec){
+  var n=sec.items.length,a=0,ok=0;
+  sec.items.forEach(function(it){var v=state.ans[it.id];if(v!=null){a++;if(v===it.answer)ok++;}});
+  return {n:n,answered:a,correct:ok,read:!!state.done[sec.id],
+          complete:!!state.done[sec.id]&&(n===0||a===n)};
+}
+function courseProgress(){
+  var all=allSections(),done=0;
+  all.forEach(function(x){if(secStat(x.sec).complete)done++;});
+  return {done:done,total:all.length,pct:all.length?Math.round(done*100/all.length):0};
+}
+function letter(i){return "ABCDE".charAt(i)||String(i+1);}
+function nlChips(codes){
+  if(!codes||!codes.length)return "";
+  return codes.map(function(c){var e=NL[c];
+    return "<span class='chip nl' title='"+esc(e?(e.section+" · หน้า "+e.page):"")+"'>NL "+esc(c)+(e?" · "+esc(e.title):"")+"</span>";}).join(" ");
+}
+
+/* ---------- masthead ---------- */
+var TABS=[{k:"home",label:"ภาพรวม"},{k:"learn",label:"เรียนเนื้อหา"},{k:"meq",label:"Practice · MEQ"},{k:"osce",label:"Practice · OSCE/SAQ"},{k:"review",label:"ทบทวนข้อที่ผิด"}];
+function renderMast(){
+  var c=course();
+  document.getElementById('brandTitle').textContent="MED421 · "+c.label;
+  document.getElementById('brandSub').textContent=c.thai||"";
+  document.getElementById('tabs').innerHTML=TABS.map(function(t){
+    return "<button class='btn"+(state.view===t.k||(state.view==="section"&&t.k==="learn")?" on":"")+"' data-tab='"+t.k+"'>"+t.label+"</button>";
+  }).join("");
+  var p=courseProgress();
+  document.getElementById('ring').innerHTML=
+    "<span>เรียนจบ "+p.done+"/"+p.total+" หัวข้อ</span><span class='bar'><i style='width:"+p.pct+"%'></i></span>";
+}
+
+/* ---------- outline ---------- */
+function renderOutline(){
+  var html="<h4>หัวข้อทั้งหมด</h4>";
+  lectures().forEach(function(l){
+    var open=state.lec===l.lec;
+    html+="<div class='olec'><button data-lec='"+l.lec+"' class='"+(open?"on":"")+"'>"+
+      "<span class='num'>"+esc(l.lec)+"</span><span>"+esc(l.title)+"</span></button>";
+    html+="<ul class='osec"+(open?"":" hide")+"'>"+l.sections.map(function(s){
+      var st=secStat(s),cls=st.complete?"done":(st.answered||st.read?"part":"");
+      return "<li><button data-sec='"+s.id+"' data-slec='"+l.lec+"' class='"+(state.sec===s.id?"on":"")+"'>"+
+        "<span class='tick "+cls+"'>✓</span><span>"+esc(s.title)+"</span></button></li>";
+    }).join("")+"</ul></div>";
+  });
+  document.getElementById('outline').innerHTML=html;
+}
+
+/* ---------- views ---------- */
+function viewHome(){
+  var c=course(),p=courseProgress();
+  var h="<section class='card'><div class='eyebrow'>"+esc(c.label)+" · Internal medicine</div>"+
+    "<h2>"+esc(c.title)+"</h2><p class='lede'>"+esc(c.intro||"")+"</p>"+
+    "<div class='meta'><span class='chip acc'>"+lectures().length+" คาบบรรยาย</span>"+
+    "<span class='chip'>"+allSections().length+" หัวข้อ</span>"+
+    "<span class='chip'>ข้อเช็คความเข้าใจ "+allSections().reduce(function(a,x){return a+x.sec.items.length;},0)+" ข้อ</span>"+
+    "<span class='chip'>MEQ "+lectures().reduce(function(a,l){return a+l.meq.length;},0)+" · OSCE/SAQ "+lectures().reduce(function(a,l){return a+l.osce.length;},0)+"</span></div>";
+  if(c.howto)h+="<div class='callout'>"+md(c.howto)+"</div>";
+  h+="<div class='nav' style='margin-top:16px'><button class='btn primary' data-go='next'>"+(p.done?"เรียนต่อจากที่ค้างไว้":"เริ่มเรียนหัวข้อแรก")+"</button></div></section>";
+
+  lectures().forEach(function(l){
+    var done=l.sections.filter(function(s){return secStat(s).complete;}).length;
+    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
+      "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
+    if(l.objectives&&l.objectives.length)
+      h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
+    h+="<div class='meta'><span class='chip"+(done===l.sections.length?" acc":"")+"'>ความคืบหน้า "+done+"/"+l.sections.length+" หัวข้อ</span>"+
+       "<span class='chip'>MEQ "+l.meq.length+"</span><span class='chip'>OSCE/SAQ "+l.osce.length+"</span></div>";
+    h+="<div class='grid'>"+l.sections.map(function(s){
+      var st=secStat(s);
+      return "<button class='tile' data-sec='"+s.id+"' data-slec='"+l.lec+"'><b>"+esc(s.title)+"</b>"+
+        "<span>"+esc(s.summary||"")+"</span>"+
+        "<span class='chip"+(st.complete?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+
+        (st.complete?"ผ่านแล้ว "+st.correct+"/"+st.n:(st.answered? "ทำไป "+st.answered+"/"+st.n+" ข้อ":"ยังไม่ได้เรียน"))+"</span></button>";
+    }).join("")+"</div></section>";
+  });
+  return h;
+}
+
+function viewSection(){
+  var l=lecOf(state.lec),s=secOf(l,state.sec);
+  if(!s)return viewHome();
+  var st=secStat(s),list=allSections(),idx=-1;
+  list.forEach(function(x,i){if(x.sec.id===s.id)idx=i;});
+  var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
+    "<h2>"+esc(s.title)+"</h2>"+(s.summary?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
+    "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"</div>"+
+    "<div class='prose'>"+md(s.md)+"</div>";
+  if(s.pearls&&s.pearls.length)
+    h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
+
+  h+="<div class='quiz'><div class='qhead'><h3>เช็คความเข้าใจ</h3>"+
+     "<span class='chip'>"+s.items.length+" ข้อ</span>"+
+     "<span class='chip'>ตอบถูก "+st.correct+"/"+(st.answered||0)+" ที่ทำไปแล้ว</span></div>"+
+     "<p class='lede'>ตอบให้ครบทุกข้อเพื่อปิดหัวข้อนี้ — ข้อสอบดึงจากคลัง MED28–MED35 และข้อใหม่ของชุดนี้</p>";
+  h+=s.items.map(qHtml).join("");
+  if(!s.items.length)h+="<p class='lede'>หัวข้อนี้ยังไม่มีข้อสอบผูกไว้</p>";
+
+  h+="<div class='scorebar'>"+
+     (st.answered===st.n&&st.n?("<b>ทำครบแล้ว "+st.correct+"/"+st.n+" ข้อ</b>"+
+       (st.correct===st.n?" · เก่งมาก ไปหัวข้อถัดไปได้เลย":" · ข้อที่ผิดอ่านคำอธิบายซ้ำอีกรอบก่อนไปต่อ"))
+      :("<b>ทำไปแล้ว "+st.answered+"/"+st.n+" ข้อ</b>"))+
+     "<span style='flex:1'></span>"+
+     "<button class='btn ghost' data-act='resetsec'>ล้างคำตอบหัวข้อนี้</button>"+
+     "<button class='btn "+(st.complete?"":"primary")+"' data-act='markread'>"+(state.done[s.id]?"✓ ทำเครื่องหมายว่าเรียนแล้ว":"ทำเครื่องหมายว่าเรียนแล้ว")+"</button>"+
+     "</div>";
+  h+="<div class='nav' style='margin-top:14px'>"+
+     (idx>0?"<button class='btn' data-goto='"+list[idx-1].sec.id+"' data-golec='"+list[idx-1].lec.lec+"'>← "+esc(list[idx-1].sec.title)+"</button>":"")+
+     (idx<list.length-1?"<button class='btn primary' data-goto='"+list[idx+1].sec.id+"' data-golec='"+list[idx+1].lec.lec+"'>"+esc(list[idx+1].sec.title)+" →</button>":"<button class='btn primary' data-tab='meq'>ไปฝึก MEQ ต่อ →</button>")+
+     "</div></div></section>";
+  return h;
+}
+
+function qHtml(it){
+  var picked=state.ans[it.id],shown=picked!=null;
+  var h="<div class='q' id='q-"+esc(it.id)+"'><div class='qid'>"+esc(it.id)+
+        (it.kind==="old"?" · คลังข้อสอบเก่า":"")+(it.topic?" · "+esc(it.topic):"")+"</div>"+
+        "<div class='stem'>"+md(it.stem)+"</div><div class='choices'>";
+  it.choices.forEach(function(c,i){
+    var cls="ch";
+    if(shown&&i===it.answer)cls+=" correct";
+    else if(shown&&i===picked)cls+=" wrong";
+    h+="<button class='"+cls+"' data-q='"+esc(it.id)+"' data-i='"+i+"'"+(shown?" disabled":"")+
+       "><span class='k'>"+letter(i)+"</span><span>"+inline(c)+"</span></button>";
+  });
+  h+="</div>";
+  if(shown){
+    var ok=picked===it.answer;
+    h+="<div class='verdict "+(ok?"ok":"no")+"'>"+(ok?"✓ ถูกต้อง":"✗ ยังไม่ใช่ — เฉลยคือข้อ "+letter(it.answer))+"</div>";
+    if(it.explain)h+="<div class='explain prose'>"+md(it.explain)+"</div>";
+    if(it.pearl)h+="<div class='pearl'><b>Pearl · </b>"+inline(it.pearl)+"</div>";
+    var m=[];
+    if(it.src)m.push("<span class='chip'>โพย: "+esc(String(it.src).slice(0,90))+"</span>");
+    (it.ref||[]).forEach(function(r){m.push("<span class='chip'>"+esc(r)+"</span>");});
+    var nl=nlChips(it.nl);
+    if(m.length||nl)h+="<div class='meta'>"+m.join("")+nl+"</div>";
+  }
+  return h+"</div>";
+}
+
+function viewPractice(kind){
+  var title=kind==="meq"?"Practice · MEQ":"Practice · OSCE / SAQ";
+  var all=[];lectures().forEach(function(l){(kind==="meq"?l.meq:l.osce).forEach(function(it){all.push({l:l,it:it});});});
+  if(state.pid){
+    var hit=all.filter(function(x){return x.it.id===state.pid;})[0];
+    if(hit)return kind==="meq"?viewMeq(hit.l,hit.it):viewOsce(hit.l,hit.it);
+  }
+  var h="<section class='card'><div class='eyebrow'>"+esc(title)+"</div><h2>"+
+    (kind==="meq"?"โจทย์ MEQ — เขียนตอบทีละข้อแล้วเทียบแนวคำตอบ":"สถานี OSCE / SAQ — จับเวลา เขียนตอบ แล้วตรวจตามเกณฑ์")+"</h2>"+
+    "<p class='lede'>"+(kind==="meq"
+      ? "อ่านโจทย์ให้จบ เขียนคำตอบของตัวเองก่อนกดดูเฉลยเสมอ แล้วให้คะแนนตัวเองตามความตรงของคำตอบ"
+      : "กดเริ่มจับเวลาแล้วเขียนตอบให้ทันเวลาเหมือนสอบจริง จากนั้นจึงเปิดเกณฑ์ให้คะแนน")+"</p>";
+  lectures().forEach(function(l){
+    var items=kind==="meq"?l.meq:l.osce;
+    if(!items.length)return;
+    h+="<h3>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</h3><div class='grid'>"+items.map(function(it){
+      var r=state.rate[it.id];
+      return "<button class='tile' data-pid='"+esc(it.id)+"'><b>"+esc(it.topic||it.id)+"</b>"+
+        "<span>"+esc(it.station||("MEQ · "+((it.questions||[]).length)+" คำถามย่อย"))+"</span>"+
+        "<span class='chip"+(r?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+(r?("ประเมินตัวเองแล้ว: "+r):"ยังไม่ได้ทำ")+"</span></button>";
+    }).join("")+"</div>";
+  });
+  return h+"</section>";
+}
+
+function viewMeq(l,it){
+  var h="<section class='card'><div class='eyebrow'>MEQ · คาบ "+esc(l.lec)+" · "+esc(l.lecture||l.title)+"</div>"+
+    "<h2>"+esc(it.topic||it.id)+"</h2><div class='vignette'>"+esc(it.vignette)+"</div>";
+  (it.questions||[]).forEach(function(q,i){
+    var kid=it.id+"#"+i,open=!!state.notes[kid+"!shown"];
+    h+="<div class='hr'></div><div class='prose'><strong>"+inline(q.q)+"</strong></div>"+
+      "<textarea data-note='"+esc(kid)+"' placeholder='เขียนคำตอบของคุณก่อนดูเฉลย…'>"+esc(state.notes[kid]||"")+"</textarea>"+
+      "<div class='nav' style='margin-top:9px'><button class='btn"+(open?"":" primary")+"' data-reveal='"+esc(kid)+"'>"+(open?"ซ่อนแนวคำตอบ":"ดูแนวคำตอบ")+"</button></div>"+
+      (open?"<div class='explain prose'>"+md(q.a)+"</div>":"");
+  });
+  h+="<div class='hr'></div>"+rateBar(it)+
+     "<div class='nav' style='margin-top:14px'><button class='btn' data-pid='' data-back='meq'>← กลับไปเลือกโจทย์อื่น</button></div></section>";
+  return h;
+}
+
+function viewOsce(l,it){
+  var mins=(String(it.station||"").match(/(\d+)\s*นาที/)||[])[1]||5;
+  var h="<section class='card'><div class='eyebrow'>OSCE / SAQ · คาบ "+esc(l.lec)+"</div>"+
+    "<h2>"+esc(it.topic||it.id)+"</h2>"+
+    "<div class='meta'><span class='chip acc'>"+esc(it.station||"")+"</span>"+
+    "<span class='timer' id='timer'>"+mins+":00</span>"+
+    "<button class='btn' data-timer='"+mins+"'>เริ่มจับเวลา</button></div>"+
+    "<div class='vignette'>"+esc(it.instruction)+"</div>"+
+    "<textarea data-note='"+esc(it.id)+"' placeholder='เขียนคำตอบของคุณ…'>"+esc(state.notes[it.id]||"")+"</textarea>"+
+    "<div class='nav' style='margin-top:10px'><button class='btn"+(state.notes[it.id+"!shown"]?"":" primary")+"' data-reveal='"+esc(it.id)+"'>"+
+      (state.notes[it.id+"!shown"]?"ซ่อนเฉลย":"ดูเฉลยและเกณฑ์ให้คะแนน")+"</button></div>"+
+    (state.notes[it.id+"!shown"]?"<div class='explain prose'>"+md(it.answer)+"</div>":"")+
+    "<div class='hr'></div>"+rateBar(it)+
+    "<div class='nav' style='margin-top:14px'><button class='btn' data-pid='' data-back='osce'>← กลับไปเลือกสถานีอื่น</button></div></section>";
+  return h;
+}
+
+function rateBar(it){
+  var r=state.rate[it.id];
+  return "<div class='selfrate'><span class='lede'>ประเมินตัวเอง:</span>"+
+    ["ตอบได้ครบ","ตอบได้บางส่วน","ยังไม่ได้"].map(function(x){
+      return "<button class='btn"+(r===x?" on":"")+"' data-rate='"+esc(it.id)+"' data-val='"+x+"'>"+x+"</button>";
+    }).join("")+"</div>";
+}
+
+function viewReview(){
+  var wrong=[];
+  allSections().forEach(function(x){x.sec.items.forEach(function(it){
+    var v=state.ans[it.id];if(v!=null&&v!==it.answer)wrong.push({s:x.sec,l:x.lec,it:it});});});
+  var h="<section class='card'><div class='eyebrow'>ทบทวน</div><h2>ข้อที่เคยตอบผิด</h2>"+
+    "<p class='lede'>รวมทุกข้อที่ตอบผิดไว้ที่เดียว — กด “ล้างคำตอบ” เพื่อกลับไปทำใหม่แบบไม่เห็นเฉลย</p>";
+  if(!wrong.length)return h+"<p class='lede'>ยังไม่มีข้อที่ตอบผิด — เริ่มทำข้อในหัวข้อต่าง ๆ ก่อน</p></section>";
+  h+="<div class='meta'><span class='chip acc'>"+wrong.length+" ข้อ</span>"+
+     "<button class='btn ghost' data-act='resetwrong'>ล้างคำตอบทุกข้อที่ผิด</button></div>";
+  var byLec={};wrong.forEach(function(w){(byLec[w.l.lec]=byLec[w.l.lec]||[]).push(w);});
+  Object.keys(byLec).forEach(function(lc){
+    h+="<h3>คาบ "+esc(lc)+" · "+esc(lecOf(lc).title)+"</h3>";
+    byLec[lc].forEach(function(w){h+="<div class='lede' style='margin-top:10px'>หัวข้อ: "+esc(w.s.title)+"</div>"+qHtml(w.it);});
+  });
+  return h+"</section>";
+}
+
+/* ---------- render ---------- */
+function render(){
+  renderMast();renderOutline();
+  var m=document.getElementById('main'),h;
+  if(state.view==="section")h=viewSection();
+  else if(state.view==="meq")h=viewPractice("meq");
+  else if(state.view==="osce")h=viewPractice("osce");
+  else if(state.view==="review")h=viewReview();
+  else if(state.view==="learn"){h=viewHome();}
+  else h=viewHome();
+  m.innerHTML=h;
+  save();
+}
+
+function openSection(lec,sec){state.view="section";state.lec=lec;state.sec=sec;render();window.scrollTo({top:0});}
+function firstUnfinished(){
+  var list=allSections();
+  for(var i=0;i<list.length;i++)if(!secStat(list[i].sec).complete)return list[i];
+  return list[0];
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button');if(!t)return;
+  if(t.id==="themeBtn"){
+    var cur=document.documentElement.getAttribute("data-theme");
+    var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
+    if(nx)document.documentElement.setAttribute("data-theme",nx);else document.documentElement.removeAttribute("data-theme");
+    state.theme=nx;save();return;
+  }
+  if(t.dataset.tab){
+    state.view=t.dataset.tab;state.pid=null;
+    if(state.view==="learn"){var f=firstUnfinished();openSection(f.lec.lec,f.sec.id);return;}
+    render();window.scrollTo({top:0});return;
+  }
+  if(t.dataset.go==="next"){var f2=firstUnfinished();openSection(f2.lec.lec,f2.sec.id);return;}
+  if(t.dataset.lec){state.lec=(state.lec===t.dataset.lec?null:t.dataset.lec);renderOutline();save();return;}
+  if(t.dataset.sec){openSection(t.dataset.slec,t.dataset.sec);return;}
+  if(t.dataset.goto){openSection(t.dataset.golec,t.dataset.goto);return;}
+  if(t.dataset.q){
+    if(state.ans[t.dataset.q]==null){
+      state.ans[t.dataset.q]=+t.dataset.i;
+      var sec=secOf(lecOf(state.lec),state.sec);
+      if(sec&&secStat(sec).answered===sec.items.length)state.done[sec.id]=true;
+      var id=t.dataset.q;render();
+      var el=document.getElementById('q-'+id);if(el)el.scrollIntoView({block:"nearest"});
+    }
+    return;
+  }
+  if(t.dataset.act==="markread"){state.done[state.sec]=!state.done[state.sec];render();return;}
+  if(t.dataset.act==="resetsec"){
+    var s2=secOf(lecOf(state.lec),state.sec);
+    s2.items.forEach(function(it){delete state.ans[it.id];});delete state.done[s2.id];render();return;
+  }
+  if(t.dataset.act==="resetwrong"){
+    allSections().forEach(function(x){x.sec.items.forEach(function(it){
+      if(state.ans[it.id]!=null&&state.ans[it.id]!==it.answer){delete state.ans[it.id];delete state.done[x.sec.id];}});});
+    render();return;
+  }
+  if(t.dataset.pid!==undefined&&t.dataset.pid!==""){state.pid=t.dataset.pid;render();window.scrollTo({top:0});return;}
+  if(t.dataset.back){state.pid=null;state.view=t.dataset.back;render();window.scrollTo({top:0});return;}
+  if(t.dataset.reveal){var k=t.dataset.reveal+"!shown";state.notes[k]=!state.notes[k];render();return;}
+  if(t.dataset.rate){state.rate[t.dataset.rate]=t.dataset.val;render();return;}
+  if(t.dataset.timer){startTimer(+t.dataset.timer);return;}
+});
+document.addEventListener('input',function(e){
+  var ta=e.target;if(ta.tagName!=="TEXTAREA"||!ta.dataset.note)return;
+  state.notes[ta.dataset.note]=ta.value;save();
+});
+var timer=null;
+function startTimer(mins){
+  if(timer)clearInterval(timer);
+  var left=mins*60,el=document.getElementById('timer');
+  timer=setInterval(function(){
+    left--;el=document.getElementById('timer');
+    if(!el){clearInterval(timer);timer=null;return;}
+    if(left<=0){clearInterval(timer);timer=null;el.textContent="หมดเวลา";return;}
+    el.textContent=Math.floor(left/60)+":"+("0"+(left%60)).slice(-2);
+  },1000);
+}
+render();
+})();
+</script>
