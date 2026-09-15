@@ -2,7 +2,7 @@
 
 เรียนเนื้อหา Internal medicine ของชุด AIR ทีละหัวข้อ จบแต่ละหัวข้อแล้วมีข้อสอบเช็คความเข้าใจทันที โดยดึงข้อจากคลังข้อสอบเก่า MED28–MED35 และข้อใหม่ของชุดนี้ จากนั้นฝึก MEQ และ OSCE/SAQ ของคาบเดียวกันต่อได้เลย เนื้อหาของคาบ 23 และ 33 เสริมด้วยสิ่งที่อาจารย์เน้นในสไลด์บรรยาย
 
-3 คาบ · 30 หัวข้อ · ข้อเช็คความเข้าใจ 101 ข้อ · MEQ 4 · OSCE/SAQ 6
+3 คาบ · 34 หัวข้อ · ข้อเช็คความเข้าใจ 109 ข้อ · MEQ 4 · OSCE/SAQ 6
 
 ---
 
@@ -2534,7 +2534,7 @@ SLE และ lupus nephritis · APS · systemic sclerosis · myositis · PMR/GC
 
 _ANA ใช้คัดกรอง ไม่ใช่ใช้ยืนยัน — และแอนติบอดีแต่ละตัวบอกอะไร_
 
-ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease
+ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease · สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
 
 NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus
 
@@ -2568,6 +2568,44 @@ NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus eryt
 
 **MCTD — เมื่อผู้ป่วยมีหลายโรคปนกัน**
 ลักษณะผสมของ **lupus + scleroderma + polymyositis** ร่วมกับ **anti-U1RNP ไทเตอร์สูง** อวัยวะที่ต้องเฝ้าระวังคือ **pulmonary hypertension, ILD, myocarditis** ส่วนไตมักถูกกระทบไม่มาก และมักมี **Raynaud, มือบวม, sicca symptom**
+
+### ที่อาจารย์เน้นในสไลด์ (SLE and systemic autoimmune diseases)
+
+**ภูมิคุ้มกันเสียสมดุลได้สองทาง** — ทำงาน **มากเกิน** ไปเป็น allergy (ตอบสนองต่อสิ่งภายนอกเกินเหตุ) และ **autoimmunity (เสีย self tolerance ต่อสิ่งภายในตัวเอง)** ส่วนทำงาน **น้อยเกิน** ไปเป็นการติดเชื้อและมะเร็ง
+
+**กลไกการเกิดโรคภูมิต้านตนเอง** = **พันธุกรรม (ยีน MHC/HLA และ non-MHC) + สิ่งแวดล้อม (การติดเชื้อ · แสง UV · ยาและสารพิษ)** → ภูมิคุ้มกันเสีย self tolerance → **B cell สร้าง autoantibody + เกิดการอักเสบ** → อาการ
+
+**แยกสองกลุ่มให้ออก**
+| กลุ่ม | ตัวอย่างและแอนติเจนเป้าหมาย |
+|---|---|
+| **Organ-specific** | Graves (**TSH receptor**) · myasthenia gravis (**ACh receptor**) · **AIHA** (แอนติเจนผิวเม็ดเลือดแดง) · **ITP** (**GpIIb:IIIa**) · pemphigus vulgaris (**desmoglein 3**) · เบาหวานชนิดที่ 1 (เซลล์เบตา) · multiple sclerosis |
+| **Systemic (connective tissue disease)** | **RA · SLE · APS · SSc · IIM · Sjögren · MCTD · UCTD · vasculitis** — ลักษณะร่วมคือ **อาการทั่วกาย · หลายอวัยวะ · อาการทางกล้ามเนื้อและข้อ · ผื่นและ Raynaud · มี autoantibody** |
+
+**ANA ทำด้วยวิธี indirect immunofluorescence บนเซลล์ HEp-2** — **ผลบวกเริ่มที่ 1:80 แต่ที่ถือว่ามีนัยสำคัญคือ 1:160 ขึ้นไป** ส่วนแอนติบอดีจำเพาะตรวจต่อด้วย ELISA
+รูปแบบการย้อม (pattern) ช่วยเดาแอนติบอดีได้ และ **dense fine speckled** มักพบในคนปกติ ไม่ใช่โรค
+
+| โรค | แอนติบอดี | ANA pattern | ความหมายทางคลินิก |
+|---|---|---|---|
+| **SLE** | **anti-dsDNA** | **Homogeneous** | **สัมพันธ์กับกิจกรรมของโรคและ lupus nephritis** |
+| **SLE** | **anti-Sm** | Coarse speckled | **จำเพาะต่อ SLE · พยากรณ์โรคดีกว่า** |
+| SLE / MCTD | **anti-U1RNP** | Coarse speckled | **Raynaud's phenomenon** |
+| SLE / Sjögren | **anti-SSA (Ro)** | Fine speckled | **SCLE · neonatal lupus · sicca · ILD** |
+| SLE / Sjögren | anti-SSB (La) | Fine speckled | sicca · neonatal lupus |
+| **SSc** | **anti-Scl-70 (topoisomerase I)** | Homogeneous/nucleolar, speckled | **diffuse cutaneous SSc** |
+| **SSc** | **anti-centromere** | **Centromere** | **limited cutaneous SSc** |
+| **IIM** | **anti-Jo-1** | **Cytoplasm** | **anti-synthetase syndrome** |
+| RA | RF, anti-CCP | — | — |
+| Vasculitis | ANCA | — | — |
+
+**ระบาดวิทยาเปรียบเทียบ (จำไว้ใช้เดาโรคจากอายุและเพศ)**
+
+| โรค | ลักษณะเด่น | ความชุก | หญิง:ชาย | อายุที่เริ่ม (ปี) | ANA บวก |
+|---|---|---|---|---|---|
+| **SLE** | ผื่น ข้ออักเสบ **LN** AIHA | 1:1,000 | **9:1** | **20–30** | **99–100%** |
+| **Sjögren** | **sicca** ต่อมน้ำลายโต | 1:1,000 | **20:1** | **50–60** | 48–96% |
+| **SSc** | **Raynaud** ผิวแข็ง ILD | 1:10,000 | 8:1 | 30–50 | 97% |
+| **IIM** | กล้ามเนื้ออักเสบ ผื่น | 1:100,000 | 2.5:1 | **45–65** | 40–80% |
+| **MCTD** | Raynaud, sclerodactyly, myositis, ข้ออักเสบ | < 1:10,000 | 9:1 | 35–40 | **100%** |
 
 **จำไปสอบ**
 - ANA ไวสูงแต่ไม่จำเพาะ — ใช้คัดกรอง ผลลบช่วยตัด SLE
@@ -2621,7 +2659,7 @@ NL: B5.3(5) Serologic studies: antinuclear antibody (ANA), rheumatoid factor · 
 
 _หญิงวัยเจริญพันธุ์ที่มีอาการหลายระบบ + ANA บวก และเมื่อไรต้องเจาะไต_
 
-ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease
+ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease · สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
 
 NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus
 
@@ -2667,6 +2705,49 @@ CBC with differential · Cr และ eGFR · **urinalysis พร้อมดู
 - **LE-specific** — **acute** (malar “butterfly” rash, generalized erythema) · **subacute (SCLE)** แบบ annular/polycyclic และ papulosquamous · **chronic** (discoid ทั้งเฉพาะที่และกระจาย, hypertrophic, lupus profundus, mucosal LE, lupus tumidus, chilblain lupus)
 - **LE-non-specific** — **leukocytoclastic vasculitis (palpable purpura), urticarial vasculitis** · vasculopathy (periungual telangiectasia, livedo reticularis, Raynaud) · **ผมร่วงชนิดไม่เป็นแผลเป็น “lupus hair”** · แผลในปาก · calcinosis cutis
 ผื่นกลุ่ม non-specific บอก **กิจกรรมของโรคหรือภาวะแทรกซ้อน** ส่วนกลุ่ม specific ใช้ช่วยวินิจฉัย
+
+### ที่อาจารย์เน้นในสไลด์ (SLE and systemic autoimmune diseases)
+
+> **SLE ไม่มี “diagnostic criteria” มีแต่ classification criteria** ซึ่งสร้างไว้เพื่อคัดผู้ป่วยเข้างานวิจัยให้เป็นกลุ่มเดียวกัน — ใช้ช่วยคิดได้ แต่ **การวินิจฉัยยังเป็นดุลยพินิจทางคลินิก และต้องตัดสาเหตุอื่นของทุกข้อออกก่อน**
+
+**ความถี่ของอาการรายระบบ (ตัวเลขจากสไลด์)**
+| ระบบ | พบราว |
+|---|---|
+| **กล้ามเนื้อและข้อ** | **85%** |
+| **ผิวหนังและเยื่อบุ** | **70%** |
+| **อาการทั่วกาย** (ไข้ อ่อนเพลีย น้ำหนักลด) | **70%** |
+| **ไต** | **30–70%** |
+| **ระบบประสาท** | **50%** |
+| **เลือด** | **50%** |
+| เยื่อหุ้มปอด | 40% |
+| ทางเดินอาหาร | 30–50% |
+| เยื่อหุ้มหัวใจ | 20% |
+| Raynaud | 20% |
+
+**แล็บที่ต้องส่ง แบ่งตามวัตถุประสงค์ — วิธีจัดกลุ่มที่ใช้ตอบข้อสอบ MEQ ได้ทันที**
+| วัตถุประสงค์ | ส่งอะไร |
+|---|---|
+| **วินิจฉัยและประเมินอวัยวะ** | **CBC · UA · UPCR · CXR/EKG · LFT** |
+| **วินิจฉัยทางภูมิคุ้มกัน** | **ANA · anti-dsDNA · anti-Sm · complement (C3/C4) · antiphospholipid antibodies** |
+| **ประเมินภาวะแทรกซ้อน** | BUN, Cr, electrolytes |
+| **เตรียมก่อนให้ยากดภูมิคุ้มกัน** | **CXR · ตรวจอุจจาระหาพยาธิ (โดยเฉพาะ _Strongyloides_) · ตรวจฟัน** |
+
+**ภาวะซีดในผู้ป่วย SLE — อย่าด่วนสรุปว่าเป็น AIHA**
+- **AIHA** ต้องครบทั้ง **reticulocyte สูง · haptoglobin ต่ำ · indirect bilirubin สูง · LDH สูง ร่วมกับ direct Coombs test บวก**
+- สาเหตุอื่นที่ต้องไล่: **สร้างน้อย** (anemia of inflammation, ขาดเหล็ก/B12/folate) · **ไขกระดูกล้มเหลว** (aplastic anemia, PRCA, hemophagocytosis, myelofibrosis, myelodysplasia) · **MAHA** (DIC, TTP, **catastrophic APS**, scleroderma renal crisis, ความดันสูงขั้นวิกฤต, vasculitis) · **ซีดจาก CKD** · **ผลของยา** (cyclophosphamide, methotrexate, azathioprine, เลือดออกทางเดินอาหารจาก NSAIDs/steroid) · **hypersplenism**
+
+**Lupus nephritis รายชั้น — ตัวเลขที่บอกว่าทำไมต้องเจาะไต**
+| Class | นิยาม | ตะกอนปัสสาวะ active | โปรตีนรั่ว | Nephrotic | ไตเสื่อม | **อัตรารอดของไตที่ 5 ปี** |
+|---|---|---|---|---|---|---|
+| **I** | minimal mesangial | 0 | 0 | 0 | 0 | **100%** |
+| **II** | mesangial proliferative | < 25% | 25–50% | 0 | < 15% | **> 90%** |
+| **III** | focal (< 50% ของ glomeruli) | 50% | 67% | 25–33% | 10–25% | **70–80%** |
+| **IV** | diffuse (≥ 50% ของ glomeruli) | **75%** | **> 95%** | **50%** | **> 50%** | **60–80%** |
+| **V** | membranous (± ร่วมกับ III/IV) | 30% | > 95% | **90%** | 10% | 80–90% |
+
+**เยื่อหุ้มปอดและเยื่อหุ้มหัวใจอักเสบ**
+- **เยื่อหุ้มปอดอักเสบมัก “สองข้าง” มากกว่าข้างเดียว ปริมาณน้ำน้อยถึงปานกลาง เป็น exudate** และอาจเป็นแบบ **“dry” pleuritis ที่ไม่มีน้ำเลย** · มักพบเยื่อหุ้มหัวใจอักเสบร่วม
+- **Acute pericarditis วินิจฉัยเมื่อเข้า 2 ใน 4 ข้อ** — (1) **เจ็บหน้าอกแบบแหลม แย่ลงเมื่อหายใจเข้า ดีขึ้นเมื่อโน้มตัวไปข้างหน้า** (2) **pericardial rub** (3) **EKG: ST ยกขึ้นทั่วไปหรือ PR depression** (4) **น้ำในเยื่อหุ้มหัวใจใหม่หรือมากขึ้นจากภาพถ่าย**
 
 **จำไปสอบ**
 - SLE = หญิงวัยเจริญพันธุ์ + อาการหลายระบบ + ANA บวก และตัดการติดเชื้อออกแล้ว
@@ -2760,6 +2841,222 @@ SRC: ต่อยอดจาก MED34 โพย SLE in pregnancy (เขีย�
 NL: 2.3.13-3(15) Systemic lupus erythematosus · B5.4(3) Disease-modifying antirheumatic drugs (DMARDs)
 
 
+### [air-33-02b] เกณฑ์ EULAR/ACR 2019 และผื่นของลูปัส
+
+_ใช้เกณฑ์ให้เป็น และเรียกชื่อผื่นให้ถูกชนิด_
+
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus · B4.2.2-3(6) Cutaneous lupus erythematosus
+
+### EULAR/ACR 2019 classification criteria
+
+**Entry criterion — ANA ≥ 1:80 บนเซลล์ HEp-2 (หรือการตรวจที่เทียบเท่า)**
+ถ้า ANA ไม่ถึงเกณฑ์นี้ **ไม่เข้าเกณฑ์จำแนกโรคตั้งแต่ต้น** (แต่ไม่ได้แปลว่าผู้ป่วยไม่เป็นโรค — ยังต้องใช้ดุลยพินิจทางคลินิก)
+
+**จากนั้นนับคะแนนตามกลุ่มอาการ (additive criteria)** โดยมีเกณฑ์ตัวเลขที่ต้องจำ
+- **ไข้ > 38.3 °C**
+- **เม็ดเลือดขาว < 4,000/µL** · **เกล็ดเลือด < 100,000/µL**
+- **ผมร่วงและแผลในปาก ต้องเป็นสิ่งที่แพทย์ตรวจเห็นเอง** (observed by clinician) ไม่ใช่แค่ผู้ป่วยเล่า
+- **เยื่อหุ้มปอด/หัวใจอักเสบ ต้องมีหลักฐานจากภาพถ่าย** (imaging evidence)
+- **โปรตีนในปัสสาวะใช้ค่า spot UPCR ได้**
+
+**กติกาการนับที่คนทำข้อสอบพลาดบ่อยที่สุด**
+1. **ห้ามนับข้อใดถ้ามีคำอธิบายอื่นที่น่าจะเป็นมากกว่า SLE** — ไข้ที่อธิบายด้วยการติดเชื้อได้ ห้ามนับ
+2. **เกิดเพียงครั้งเดียวในอดีตก็นับได้** ไม่ต้องกำลังเป็นอยู่ขณะตรวจ
+3. **ในแต่ละกลุ่มอาการ (domain) ให้นับเฉพาะข้อที่มีคะแนนสูงสุดข้อเดียว**
+4. **ต้องมีอย่างน้อย 1 ข้อที่เป็นอาการทางคลินิก และคะแนนรวม ≥ 10** จึงจัดเป็น SLE
+
+### ผื่นของลูปัส — แบ่งเป็น LE-specific กับ LE-non-specific
+
+**LE-specific**
+| ชนิด | รูปแบบย่อย | ลักษณะสำคัญ |
+|---|---|---|
+| **ACLE** (เฉียบพลัน) | localized | **ผื่นปีกผีเสื้อ (malar rash)** และ **ผื่นที่หลังนิ้วบริเวณระหว่างข้อ (interknuckle) ซึ่งเว้นข้อนิ้ว** |
+| | disseminated | ผื่น maculopapular ทั่วตัว · ผื่นแพ้แสง |
+| **SCLE** (กึ่งเฉียบพลัน) | annular | ผื่นวงกลมขอบแดง |
+| | papulosquamous | ผื่นแดงลอกเป็นขุยคล้ายสะเก็ดเงิน |
+| **CCLE** (เรื้อรัง) | **chronic DLE** | **รอยโรคที่ทิ้งแผลเป็น** · **follicular plugging** · **carpet tack sign** (สะเก็ดที่ลอกออกมีเดือยคล้ายตะปูพรม) · hyperkeratosis · **ตรงกลางฝ่อเป็นแผลเป็น ขอบมีสีคล้ำ** |
+
+**LE-non-specific** — **ผมร่วงชนิดไม่เป็นแผลเป็น (non-scarring alopecia)** · **แผลในปาก** · **Raynaud's phenomenon**
+> จุดที่ต้องแยก — **ผมร่วงแบบไม่เป็นแผลเป็นคือ non-specific และงอกกลับได้** ส่วน **ผมร่วงแบบเป็นแผลเป็นคือ discoid lupus (CCLE) ซึ่งเป็น LE-specific และงอกกลับไม่ได้** จึงต้องรีบรักษาก่อนผมหายถาวร
+
+### ข้ออักเสบใน SLE
+เข้าเกณฑ์เมื่อ **(1) มี synovitis ตั้งแต่ 2 ข้อขึ้นไป โดยบวมหรือมีน้ำในข้อ** หรือ **(2) กดเจ็บตั้งแต่ 2 ข้อขึ้นไป ร่วมกับข้อฝืดตอนเช้านานอย่างน้อย 30 นาที**
+- **Jaccoud's arthropathy** — ข้อผิดรูปคล้าย RA แต่ **เกิดจากเอ็นและเยื่อหุ้มข้อหย่อน ดัดกลับเข้าที่ได้ และภาพรังสีไม่มี erosion**
+- **ต้องแยกจาก** — **ข้อติดเชื้อ** (ผู้ป่วยได้ยากดภูมิคุ้มกันอยู่) · **rhupus** (ซ้อนทับกับ RA จริง มี erosion) · **osteonecrosis** จากสเตียรอยด์
+
+**จำไปสอบ**
+- Entry criterion ของเกณฑ์ 2019 คือ ANA ≥ 1:80 บน HEp-2 · ต้องมีอาการทางคลินิกอย่างน้อย 1 ข้อ และรวม ≥ 10 คะแนน
+- ห้ามนับเกณฑ์ข้อที่มีคำอธิบายอื่นน่าจะเป็นมากกว่า และในแต่ละ domain นับเฉพาะข้อคะแนนสูงสุด
+- ผมร่วงไม่เป็นแผลเป็น = non-specific · ผมร่วงเป็นแผลเป็น = discoid lupus ซึ่งงอกกลับไม่ได้
+- Jaccoud's arthropathy ดัดกลับได้และไม่มี erosion — ต่างจาก rhupus
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[AIR-33-02B-Q1] เกณฑ์ EULAR/ACR 2019 และผื่นของลูปัส
+
+A 24-year-old woman has a 2-month history of photosensitive malar rash, painless oral ulcers seen by the physician, and morning stiffness with swelling of both wrists and several MCP joints. Investigations: ANA 1:640 speckled, anti-dsDNA positive, C3 and C4 low, platelet 96,000/uL, urinalysis normal. She also has a fever of 38.5 C on the day she is seen; blood cultures are negative and there is no localizing source. Which of the following statements about applying the EULAR/ACR 2019 criteria to this patient is correct?
+
+A. Oral ulcers reported by the patient in the past would score the same as ulcers observed by the clinician, so documentation does not matter
+B. The fever must be excluded from scoring because any fever requires at least 2 weeks of documented negative cultures before it can be attributed to SLE
+C. The fever may be counted because no more likely explanation than SLE has been found, and only the highest-weighted criterion within each domain is counted
+D. A positive ANA at 1:640 alone is sufficient to classify the patient as having SLE
+E. Because her urinalysis is normal she cannot reach the threshold for classification regardless of her other findings
+
+ANSWER: C. The fever may be counted because no more likely explanation than SLE has been found, and only the highest-weighted criterion within each domain is counted
+
+EXPLAIN:
+เกณฑ์ **EULAR/ACR 2019** มีกติกาสามข้อที่ต้องใช้พร้อมกัน
+
+1. **Entry criterion — ANA ≥ 1:80** ผู้ป่วยรายนี้ผ่าน แต่ **ANA อย่างเดียวไม่ใช่การวินิจฉัย** ต้องมีคะแนนรวม ≥ 10 และมีอาการทางคลินิกอย่างน้อย 1 ข้อ
+2. **ห้ามนับข้อที่มีคำอธิบายอื่นน่าจะเป็นมากกว่า SLE** — ไข้รายนี้หาสาเหตุแล้วไม่พบจุดติดเชื้อและเพาะเชื้อไม่ขึ้น จึง **นับได้** (เกณฑ์ใช้คำว่า *more likely explanation*ไม่ได้กำหนดว่าต้องรอผลเพาะเชื้อสองสัปดาห์)
+3. **ในแต่ละ domain นับเฉพาะข้อที่มีคะแนนสูงสุดข้อเดียว** และ **เกิดเพียงครั้งเดียวในอดีตก็นับได้**
+
+**ทำไมข้ออื่นผิด**
+- ไม่มีกติกาเรื่อง “เพาะเชื้อเป็นลบ 2 สัปดาห์” ในเกณฑ์นี้
+- **ไตปกติไม่ได้ปิดกั้นการเข้าเกณฑ์** — ผู้ป่วยรายนี้มีทั้ง ผื่น ACLE, แผลในปาก, ข้ออักเสบ, เกล็ดเลือดต่ำ, complement ต่ำ และ anti-dsDNA บวก ซึ่งรวมกันเกิน 10 คะแนนได้สบาย
+- **แผลในปากต้องเป็นสิ่งที่แพทย์ตรวจเห็น (observed by clinician)** ตามที่เกณฑ์กำหนด การบันทึกจึงสำคัญ
+- ANA บวกอย่างเดียวพบได้ในคนปกติราวร้อยละ 5–15 จึงใช้วินิจฉัยไม่ได้
+
+PEARL: เกณฑ์ 2019 = ANA ≥ 1:80 เป็นประตูเข้า + ≥ 1 อาการทางคลินิก + คะแนนรวม ≥ 10 โดยห้ามนับข้อที่โรคอื่นอธิบายได้ดีกว่า และนับข้อคะแนนสูงสุดข้อเดียวในแต่ละ domain
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus
+
+
+[AIR-33-02B-Q2] เกณฑ์ EULAR/ACR 2019 และผื่นของลูปัส
+
+A 32-year-old woman has scaly, coin-shaped plaques on the scalp and cheeks for the past year. The plaques have a depressed, atrophic centre with surrounding hyperpigmentation, and hair does not regrow within them. Peeling a scale reveals keratin spikes on its undersurface. Which of the following is the most appropriate description and implication of this lesion?
+
+A. Chronic discoid lupus erythematosus, an LE-specific lesion that scars permanently, so treatment should be started promptly to preserve hair follicles
+B. Tinea capitis, which should be treated with a topical antifungal before any immunologic testing
+C. Subacute cutaneous lupus erythematosus, which characteristically heals without scarring and is strongly associated with anti-Sm antibody
+D. Non-scarring alopecia of active systemic lupus, which will regrow completely once disease activity is controlled
+E. Acute cutaneous lupus erythematosus, which indicates active systemic disease and requires renal biopsy
+
+ANSWER: A. Chronic discoid lupus erythematosus, an LE-specific lesion that scars permanently, so treatment should be started promptly to preserve hair follicles
+
+EXPLAIN:
+ลักษณะที่บรรยายคือ **chronic discoid lupus erythematosus (CCLE)** — รอยโรคเป็นแผ่นกลม **ตรงกลางฝ่อเป็นแผลเป็น ขอบมีสีคล้ำ (central atrophic scar with peripheral hyperpigmentation)** และ **carpet tack sign** คือเมื่อลอกสะเก็ดออกจะเห็นเดือย keratin ที่ติดมากับรูขุมขน (**follicular plugging**)
+
+**ความสำคัญคือมันทำลายรูขุมขนถาวร** — ผมที่ร่วงจาก DLE เป็น **scarring alopecia ซึ่งไม่งอกกลับ** จึงต้องรีบรักษา (ยาทาสเตียรอยด์แรงหรือ calcineurin inhibitor ที่ใบหน้า, **hydroxychloroquine**, เลี่ยงแดดและใช้ครีมกันแดดชนิด broad-spectrum, งดบุหรี่ซึ่งทำให้ตอบสนองต่อ HCQ แย่ลง)
+
+**ทำไมข้ออื่นผิด**
+- **ผมร่วงแบบ non-scarring** เป็นรอยโรคชนิด **LE-non-specific** ของ SLE ที่กำลังกำเริบและงอกกลับได้ — ต่างจากรายนี้ที่ผมไม่งอก
+- **SCLE** หายโดยไม่ทิ้งแผลเป็น (อาจทิ้งรอยด่างขาวชั่วคราว) และสัมพันธ์กับ **anti-Ro/SSA** ไม่ใช่ anti-Sm
+- **ACLE** คือผื่นปีกผีเสื้อ ไม่ทิ้งแผลเป็น และการเจาะไตพิจารณาจากปัสสาวะผิดปกติ ไม่ใช่จากชนิดของผื่น
+- Tinea capitis ไม่ทำให้เกิดขอบสีคล้ำและตรงกลางฝ่อแบบนี้ และไม่มี carpet tack sign
+
+PEARL: Carpet tack sign + follicular plugging + ตรงกลางฝ่อขอบคล้ำ = discoid lupus ซึ่งทำให้ผมร่วงถาวร ต้องรีบรักษา
+
+NL: B4.2.2-3(6) Cutaneous lupus erythematosus · B5.2.2-3(5) Systemic lupus erythematosus
+
+
+### [air-33-02c] การรักษา SLE ตามความรุนแรงและการดูแลระยะยาว
+
+_ตารางเลือกยาตามอวัยวะและขนาดสเตียรอยด์ · สิ่งที่ต้องทำทุกรายนอกจากยากดภูมิคุ้มกัน_
+
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus · B5.4(3) Disease-modifying antirheumatic drugs (DMARDs)
+
+### ก่อนจะบอกว่า “โรคกำเริบ” ต้องทำสองอย่างเสมอ
+1. **ตัดสาเหตุอื่นออก — การติดเชื้อ และพิษจากยา** (อาการเหมือนกันได้มาก และการเพิ่มยากดภูมิคุ้มกันในผู้ป่วยติดเชื้อคือความผิดพลาดที่อันตรายที่สุด)
+2. **ประเมินว่าอวัยวะใดถูกกระทบและรุนแรงแค่ไหน** เพราะขนาดยาขึ้นกับข้อนี้ล้วน ๆ
+
+### ตารางเลือกการรักษาตามระบบอวัยวะ (จากสไลด์)
+
+| ระบบ | **Prednisolone < 20 มก./วัน (เบา)** | **20–40 มก./วัน (ปานกลาง)** | **> 40 มก./วัน (รุนแรง)** | ยากดภูมิคุ้มกันที่ใช้ร่วม |
+|---|---|---|---|---|
+| **กล้ามเนื้อและข้อ** | ปวดข้อ/ปวดกล้ามเนื้อ | **ข้ออักเสบ / กล้ามเนื้ออักเสบ** | ไม่ตอบสนองขนาดปานกลาง | **NSAIDs, HCQ, methotrexate** |
+| **ผิวหนัง** | ผื่นทั่วไป **< 9% BSA (ใช้ยาทา)** | **9–18% BSA · vasculitis** | **DLE รุนแรง · vasculitis** | **HCQ, methotrexate** |
+| **Serositis** | ไม่ตอบสนอง NSAIDs | ไม่ตอบสนองขนาดต่ำ | ไม่ตอบสนองขนาดปานกลาง | NSAIDs, HCQ, methotrexate |
+| **เลือด** | **เกล็ดเลือด < 100,000** | **เกล็ดเลือด < 50,000** | **AIHA · เกล็ดเลือด < 25,000 (ให้ IVMP)** | **azathioprine** |
+| **Lupus nephritis** | — | **ให้ RAAS blocker ร่วมเสมอ** | **class III, IV, V (ให้ IVMP)** | **cyclophosphamide, mycophenolate mofetil, cyclosporin** |
+
+- **Pulse methylprednisolone (IVMP)** ใช้เมื่อ **อวัยวะสำคัญหรือชีวิตถูกคุกคาม และต้องการผลเร็ว**
+- **NSAIDs** ใช้กับข้ออักเสบและ serositis · **Hydroxychloroquine ให้ทุกรายที่ไม่มีข้อห้าม** เพราะช่วยทั้งผื่น ข้อ serositis และ **ป้องกันการกำเริบ**
+- **ก่อนเริ่มยากดภูมิคุ้มกันต้องคัดกรองการติดเชื้อที่ซ่อนอยู่ — CXR · ตรวจอุจจาระหาพยาธิ · ตรวจฟัน**
+- **ผู้ป่วยที่ได้ HCQ หรือ chloroquine ทุกราย ต้องตรวจตาเพื่อคัดกรอง maculopathy** — ภาพคลาสสิกคือ **bull's eye maculopathy**
+
+### ผลข้างเคียงของกลูโคคอร์ติคอยด์ที่ต้องท่องให้ครบ
+**หน้ากลม (moon face) · น้ำตาลในเลือดสูงและเบาหวาน · กล้ามเนื้อต้นแขนต้นขาอ่อนแรง · ขนดก · กระดูกพรุน · ความดันโลหิตสูง · หนอกควาย (buffalo hump) · ผิวแตกลายสีม่วง · ช้ำง่ายและสิวจากสเตียรอยด์ · อ้วนลงพุง · ผลข้างเคียงทางเดินอาหาร · ต้อกระจกชนิด posterior subcapsular · อาการทางจิต · การติดเชื้อ**
+
+### การดูแลระยะยาวที่ต้องทำทุกราย (นอกเหนือจากยากดภูมิคุ้มกัน)
+**ตัวกระตุ้นการกำเริบ: แสงแดด · การติดเชื้อ · ความเครียด · การตั้งครรภ์**
+
+| ด้าน | สิ่งที่ต้องทำ |
+|---|---|
+| **หัวใจและหลอดเลือด** | ปรับพฤติกรรม (**เลิกบุหรี่** คุมน้ำหนัก ออกกำลังกาย) · **คุมไขมันและความดัน** · **aPL บวกให้แอสไพริน · aPL บวกร่วมกับมีลิ่มเลือดให้ warfarin** |
+| **การติดเชื้อ** | **คัดกรอง HBV, HCV, HIV และฉีดวัคซีนไวรัสตับอักเสบบี** · **ป้องกัน _Pneumocystis jirovecii_** · **วัคซีนไข้หวัดใหญ่และนิวโมคอคคัส** · **วัคซีน HPV ในหญิงอายุน้อยเพื่อป้องกันมะเร็งปากมดลูก** · พิจารณา **recombinant zoster vaccine** เป็นรายบุคคล |
+| **กระดูก** | **ประเมินความเสี่ยงกระดูกหักและวัดมวลกระดูก** · **แคลเซียมและวิตามินดี** · **bisphosphonate เมื่อมีข้อบ่งชี้** |
+| **แสงแดด** | **ครีมกันแดด broad-spectrum** และลดการสัมผัสแสงอัลตราไวโอเลต |
+| **การตั้งครรภ์** | ให้คำปรึกษาเรื่องการคุมกำเนิดที่เหมาะกับความเสี่ยงลิ่มเลือดและอายุ · **เมื่อตั้งครรภ์ให้แอสไพรินขนาดต่ำเพื่อลดครรภ์เป็นพิษ (ตาม EULAR)** |
+
+**จำไปสอบ**
+- ก่อนบอกว่ากำเริบ ต้องตัดการติดเชื้อและพิษยาออกก่อนเสมอ
+- ขนาด prednisolone เลือกตามอวัยวะและความรุนแรง — เกล็ดเลือด < 25,000 หรือ AIHA หรือ LN class III/IV/V ใช้ pulse methylprednisolone
+- HCQ ให้ทุกรายและต้องตรวจตาคัดกรอง bull's eye maculopathy
+- ก่อนให้ยากดภูมิคุ้มกัน: CXR + ตรวจอุจจาระหาพยาธิ + ตรวจฟัน
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[AIR-33-02C-Q1] การรักษา SLE ตามความรุนแรงและการดูแลระยะยาว
+
+A 27-year-old woman with SLE on hydroxychloroquine alone presents with a 2-week history of easy bruising. She has no fever, no rash, and no new joint symptoms. Hb 12.4 g/dL, WBC 5,200/uL, platelet 18,000/uL, reticulocyte 1.2%, direct Coombs test negative, urinalysis normal, C3 low, anti-dsDNA rising. A blood smear confirms true thrombocytopenia without schistocytes. Which of the following is the most appropriate initial treatment?
+
+A. Cyclophosphamide as first-line therapy for isolated thrombocytopenia
+B. Pulse intravenous methylprednisolone, continuing hydroxychloroquine
+C. Prednisolone 10 mg/day and observation, since she has no bleeding
+D. Platelet transfusion to keep the count above 50,000/uL, without immunosuppression
+E. Start warfarin because a low platelet count in lupus indicates antiphospholipid syndrome
+
+ANSWER: B. Pulse intravenous methylprednisolone, continuing hydroxychloroquine
+
+EXPLAIN:
+**เกล็ดเลือด < 25,000/µL ในผู้ป่วย SLE จัดเป็นภาวะรุนแรง** ตารางการรักษาตามความรุนแรงระบุให้ใช้ **pulse methylprednisolone (IVMP)** เพราะต้องการผลเร็วเพื่อป้องกันเลือดออกในอวัยวะสำคัญ จากนั้นจึงตามด้วย prednisolone และยากดภูมิคุ้มกันประคับประคอง (เช่น **azathioprine** ซึ่งเป็นตัวเลือกสำหรับความผิดปกติทางเลือดใน SLE) และ **ให้ hydroxychloroquine ต่อเสมอ**
+
+ข้อมูลที่ช่วยยืนยันว่าเป็นกลไกภูมิคุ้มกันของ SLE เอง: **เกล็ดเลือดต่ำเดี่ยว ๆ · ไม่มี schistocyte (ตัด TTP/MAHA) · Coombs ลบ (ไม่ใช่ Evans syndrome) · complement ต่ำและ anti-dsDNA สูงขึ้นบอกว่าโรคกำลัง active**
+
+**ทำไมข้ออื่นผิด**
+- **Prednisolone 10 มก./วันแล้วรอดู** เป็นการรักษาของกลุ่มที่เกล็ดเลือดยังสูงกว่า 50,000 — ที่ 18,000 ถือว่าเสี่ยงเลือดออกเองแล้ว
+- **การให้เกล็ดเลือดไม่ใช่การรักษาหลัก** เพราะถูกทำลายโดยแอนติบอดีอย่างรวดเร็ว ใช้เฉพาะเมื่อมีเลือดออกรุนแรงหรือก่อนหัตถการ และต้องให้ร่วมกับการกดภูมิคุ้มกันเสมอ
+- **เกล็ดเลือดต่ำไม่ได้แปลว่าเป็น APS** และการให้ warfarin ขณะเกล็ดเลือด 18,000 อันตรายมาก การวินิจฉัย APS ต้องมีลิ่มเลือดหรือภาวะแทรกซ้อนการตั้งครรภ์ ร่วมกับแอนติบอดีที่ยืนยันซ้ำห่างกัน 12 สัปดาห์
+- **Cyclophosphamide** เก็บไว้สำหรับอวัยวะสำคัญ เช่น lupus nephritis class III/IV หรือ NPSLE ไม่ใช่ทางเลือกแรกของเกล็ดเลือดต่ำ
+
+PEARL: เกล็ดเลือด < 25,000 หรือ AIHA ใน SLE = ให้ pulse methylprednisolone ไม่ใช่ steroid ขนาดต่ำ และให้ HCQ ต่อเสมอ
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus
+
+
+[AIR-33-02C-Q2] การรักษา SLE ตามความรุนแรงและการดูแลระยะยาว
+
+A 30-year-old woman is about to start prednisolone 40 mg/day plus mycophenolate mofetil for class IV lupus nephritis. Which of the following pre-treatment and long-term measures is most appropriate?
+
+A. Give the live attenuated zoster vaccine now, before immunosuppression takes effect
+B. Defer bone protection until a fragility fracture occurs, since she is young and premenopausal
+C. Screen with chest radiograph, stool examination for parasites and a dental examination, give Pneumocystis prophylaxis, and add calcium, vitamin D and fracture-risk assessment
+D. Avoid all vaccination indefinitely because vaccines trigger lupus flares
+E. Stop hydroxychloroquine because it adds no benefit once mycophenolate is started
+
+ANSWER: C. Screen with chest radiograph, stool examination for parasites and a dental examination, give Pneumocystis prophylaxis, and add calcium, vitamin D and fracture-risk assessment
+
+EXPLAIN:
+**ก่อนเริ่มยากดภูมิคุ้มกันในบ้านเรา ต้องคัดกรองการติดเชื้อที่ซ่อนอยู่เสมอ — CXR (วัณโรค) · ตรวจอุจจาระหาพยาธิ (โดยเฉพาะ _Strongyloides_ ซึ่งเกิด hyperinfection syndrome ได้เมื่อได้สเตียรอยด์) · และตรวจฟัน** เพื่อกำจัดแหล่งติดเชื้อเรื้อรัง
+
+จากนั้นตามแนวทางการดูแลระยะยาว: **ป้องกัน _Pneumocystis jirovecii_** ในผู้ที่ได้สเตียรอยด์ขนาดสูงร่วมกับยากดภูมิคุ้มกัน · **คัดกรอง HBV, HCV, HIV และให้วัคซีนไวรัสตับอักเสบบี ไข้หวัดใหญ่ นิวโมคอคคัส และ HPV** · และ **ประเมินความเสี่ยงกระดูกหักพร้อมให้แคลเซียมและวิตามินดีตั้งแต่ต้น** (ไม่ต้องรอให้กระดูกหักก่อน)
+
+**ทำไมข้ออื่นผิด**
+- **วัคซีนเชื้อเป็นเป็นข้อห้ามเมื่อกดภูมิคุ้มกันแล้ว** และถ้าจะให้ต้องให้ล่วงหน้าอย่างน้อย 2–4 สัปดาห์ · ปัจจุบันแนะนำ **recombinant (subunit) zoster vaccine** ซึ่งไม่ใช่เชื้อเป็น
+- **hydroxychloroquine ต้องให้ต่อ** — ลดการกำเริบ ลดลิ่มเลือด และเพิ่มอัตรารอดชีวิต
+- วัคซีนเชื้อตายไม่ได้ทำให้ลูปัสกำเริบ และการติดเชื้อที่ป้องกันได้คือสาเหตุการตายอันดับต้นของผู้ป่วยกลุ่มนี้
+- ผู้ป่วยที่ได้สเตียรอยด์ขนาดสูงนานเสี่ยงกระดูกพรุนตั้งแต่เดือนแรก ๆ แม้อายุน้อย
+
+PEARL: ก่อนกดภูมิคุ้มกัน: CXR + อุจจาระหาพยาธิ + ตรวจฟัน แล้วตามด้วย PJP prophylaxis วัคซีนเชื้อตาย และการดูแลกระดูกตั้งแต่ต้น
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.1.1 ไข้ (fever)
+
+
 ### [air-33-03] Drug-induced lupus
 
 _ยาเก่าไม่กี่ตัว · anti-histone บวก · ไตและสมองมักไม่ถูกทำลาย · หยุดยาแล้วหาย_
@@ -2850,6 +3147,8 @@ NL: 2.3.13-3(15) Systemic lupus erythematosus · B5.3(5) Serologic studies: anti
 
 _ลิ่มเลือดหรือการสูญเสียการตั้งครรภ์ + แอนติบอดีที่ยังบวกซ้ำหลัง 12 สัปดาห์_
 
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
 NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus erythematosus
 
 ### เกณฑ์วินิจฉัย — ต้องมีทั้งทางคลินิกและทางห้องปฏิบัติการ
@@ -2873,6 +3172,18 @@ NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13-3(15) Systemic lupus eryt
 - **Obstetric APS** — **low-dose aspirin ร่วมกับ heparin ขนาดป้องกัน (LMWH) ตลอดการตั้งครรภ์และต่อไปอีก 6 สัปดาห์หลังคลอด** · **ห้าม warfarin ระหว่างตั้งครรภ์** เพราะทำให้ทารกพิการ · การให้ prednisolone หรือ IVIG ไม่ใช่การรักษามาตรฐาน
 - **Catastrophic APS** (ลิ่มเลือดหลายอวัยวะพร้อมกันในเวลาไม่กี่วัน) — ให้ heparin + steroid ขนาดสูง + plasma exchange หรือ IVIG และรักษาปัจจัยกระตุ้น
 - ผู้ป่วยที่มีแอนติบอดีบวกแต่ไม่เคยมีลิ่มเลือด: ควบคุมปัจจัยเสี่ยงหลอดเลือด พิจารณา aspirin ขนาดต่ำเป็นรายบุคคล และให้ hydroxychloroquine เมื่อมี SLE ร่วม
+
+### ที่อาจารย์เน้นในสไลด์
+
+**เกณฑ์ทางห้องปฏิบัติการฉบับละเอียด**
+- **Anticardiolipin (IgG หรือ IgM) ที่ไทเตอร์ปานกลางถึงสูง — มากกว่า 40 GPL/MPL หรือเกินเปอร์เซ็นไทล์ที่ 99**
+- **Anti-β2-glycoprotein I (IgG หรือ IgM) บวก**
+- **Lupus anticoagulant บวก**
+
+**ลำดับการแปลผล lupus anticoagulant ที่ออกสอบ**
+**aPTT ยาว → ทำ mixing test แล้วยังไม่แก้ (uncorrected) → เติม phospholipid แล้วแก้ (corrected with PL)** = มีสารยับยั้งที่ขึ้นกับ phospholipid นั่นคือ **lupus anticoagulant** (ถ้า mixing test แก้ได้แปลว่าขาดปัจจัยการแข็งตัวของเลือด ไม่ใช่ APS)
+
+**APS แบ่งเป็น primary (ไม่มีโรคอื่น) และ secondary (พบร่วมกับ SLE)** อาการหลักคือ **ลิ่มเลือดในหลอดเลือดแดง · ลิ่มเลือดในหลอดเลือดดำ · และภาวะแทรกซ้อนของการตั้งครรภ์ (แท้งซ้ำติดกัน และคลอดก่อนกำหนดจากครรภ์เป็นพิษ)**
 
 **จำไปสอบ**
 - ต้องยืนยันแอนติบอดีซ้ำห่างกันอย่างน้อย 12 สัปดาห์
@@ -3153,6 +3464,8 @@ NL: 2.3.13-3(15) Systemic lupus erythematosus
 
 _แยก limited กับ diffuse · แอนติบอดีทำนายภาวะแทรกซ้อน · renal crisis คือภาวะฉุกเฉิน_
 
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
 NL: B4.2.2-3(9) Scleroderma · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
 
 ### สองรูปแบบใหญ่
@@ -3182,6 +3495,49 @@ CREST = Calcinosis · Raynaud · Esophageal dysmotility · Sclerodactyly · Tela
 - ปัจจัยเสี่ยง: **diffuse SSc ระยะแรก · anti-RNA polymerase III · และการได้ corticosteroid ขนาด ≥ 15 mg/วัน** — นี่คือเหตุผลที่ **หลีกเลี่ยง steroid ขนาดสูงในผู้ป่วย systemic sclerosis**
 - **การรักษาคือ ACE inhibitor ขนาดสูง (captopril ปรับขึ้นเร็ว) ทันที** และให้ต่อแม้ครีแอตินินจะสูงขึ้นในช่วงแรกหรือแม้ต้องฟอกไตชั่วคราว — **ห้ามใช้ยาลดความดันกลุ่มอื่นแทน ARB ก็ไม่ใช่ยาที่พิสูจน์แล้ว**
 - อวัยวะอื่นที่ต้องเฝ้าระวังทุกปี: **ILD (PFT + HRCT)** และ **PAH (echocardiogram)** · GERD รุนแรงให้ PPI ขนาดสูง · dysphagia จาก esophageal dysmotility
+
+### ที่อาจารย์เน้นในสไลด์ (SLE and systemic autoimmune diseases)
+
+**เห็นผิวแข็งอย่าเพิ่งเรียกสเกลอโรเดอร์มา** — ต้องแยก **scleroderma-like disorders** ออกก่อน: **nephrogenic systemic fibrosis (NSF) · eosinophilic fasciitis · scleredema diabeticorum · scleromyxedema · porphyria · lichen sclerosus · GVHD · diabetic cheiroarthropathy**
+
+**การแบ่งกลุ่มของ scleroderma**
+- **Localized** — **morphea** และ **linear scleroderma** (ผิวเฉพาะที่ ไม่มีอวัยวะภายใน)
+- **Systemic sclerosis** — **limited (lcSSc) · diffuse (dcSSc) · sine scleroderma (มีอวัยวะภายในโดยผิวไม่แข็ง) · overlap** (สไลด์ระบุสัดส่วน dcSSc 78% · lcSSc 12% · sine 1% · overlap 43% — รวมเกิน 100% เพราะกลุ่ม overlap ถูกนับซ้ำกับกลุ่มอื่น)
+- **CREST = Calcinosis · Raynaud's · Esophageal dysmotility · Sclerodactyly · Telangiectasia**
+- เกณฑ์จำแนกโรคใช้ **2013 ACR/EULAR ซึ่งวินิจฉัยเมื่อได้ ≥ 9 คะแนน**
+
+**แอนติบอดีพร้อมความชุก (ตัวเลขจากสไลด์)**
+| แอนติบอดี | ANA pattern | ความชุก | กลุ่มผิวหนัง | อาการที่ต้องเฝ้าระวัง |
+|---|---|---|---|---|
+| **Anti-topoisomerase I (Scl-70)** | speckled, homogeneous, nucleolar | **9.4–42%** | **diffuse** | **interstitial lung disease** |
+| **Anti-centromere (ACA)** | discrete speckled | **20–40%** | **limited** | **pulmonary arterial hypertension** |
+| **Anti-RNA polymerase III** | speckled ± nucleolar | **11%** | **diffuse** | **scleroderma renal crisis** |
+
+ทุกกลุ่มพบ **myositis/arthritis** และ **esophageal dysmotility (GERD)** ร่วมได้
+
+**Raynaud's phenomenon — สามสีตามลำดับ: ขาว (หลอดเลือดหดเกร็ง) → เขียวคล้ำ (cyanosis) → แดง (reactive hyperaemia)**
+
+| | **Primary RP** | **Secondary RP** |
+|---|---|---|
+| หลอดเลือด | **ปกติ** | **vasculopathy** |
+| ผู้ป่วย | **วัยรุ่นหญิง มีประวัติครอบครัว** | **มักอายุมากกว่า 40 ปี** |
+| ลักษณะการกำเริบ | **สมมาตรสองข้าง** | **ไม่สมมาตร** |
+| ตัวกระตุ้น | ความเย็นและความเครียดทางอารมณ์ | ความเย็น |
+| ภาวะแทรกซ้อน | ไม่มี · **ครบสามสีและกลับเป็นปกติทุกครั้ง** | **แผลและเนื้อตายที่ปลายนิ้ว** |
+| ลักษณะภูมิคุ้มกัน | **ไม่มี** | **มี autoimmune feature และแล็บผิดปกติ** |
+
+**ผิวหนังที่ต้องรู้จัก** — **edematous phase (มือบวมตึงระยะแรก) · skin thickening · digital pitting scar · calcinosis cutis · telangiectasia · poikiloderma**
+**Nailfold capillary ที่ผิดปกติ** — **giant loop · เลือดออก (hemorrhage) · และ capillary หายเป็นหย่อม (drop out)**
+
+**การรักษาแยกตามปัญหา**
+| ปัญหา | ยา |
+|---|---|
+| **Raynaud** | เลี่ยงความเย็น · **ยาขยายหลอดเลือดกลุ่ม CCB (amlodipine, nifedipine)** · **PDE-5 inhibitor** · **IV iloprost เมื่อรุนแรง** · fluoxetine |
+| **ผิวแข็ง** | **methotrexate, mycophenolate mofetil** |
+| **GERD** | **PPI ขนาดสูง + ยาเพิ่มการเคลื่อนไหวของทางเดินอาหาร** |
+| **Scleroderma renal crisis** | **ACE inhibitor** |
+| **PAH** | endothelin receptor antagonist · PDE-5 inhibitor · riociguat · prostanoid (epoprostenol, iloprost, treprostinil) |
+| **ILD** | **steroid ขนาดต่ำ + cyclophosphamide หรือ mycophenolate mofetil** |
 
 **จำไปสอบ**
 - Anti-centromere → PAH (limited) · anti-Scl-70 → ILD · anti-RNA pol III → renal crisis (diffuse)
@@ -3331,7 +3687,7 @@ NL: B4.2.2-3(9) Scleroderma · 2.1.50 ผื่นผิวหนัง (skin ra
 
 _อ่อนแรงต้นแขนต้นขาแบบสมมาตร + เอนไซม์สูง — และอย่าลืมว่า AST สูงอาจมาจากกล้ามเนื้อ_
 
-ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease (ส่วน IIM)
+ที่มา: สไลด์ อ.โชคชัย — SLE and systemic autoimmune disease (ส่วน IIM) · สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
 
 NL: B5.2.2-3(2) Polymyositis, dermatomyositis · 2.3.13-3(10) Polymyositis, dermatomyositis · 2.1.22 กล้ามเนื้ออ่อนแรง (muscle weakness)
 
@@ -3370,6 +3726,36 @@ NL: B5.2.2-3(2) Polymyositis, dermatomyositis · 2.3.13-3(10) Polymyositis, derm
 | **Pathognomonic** | **Gottron papules** และ **heliotrope rash** |
 | **Characteristic** | Gottron sign · **shawl sign · V sign · holster sign** · **mechanic's hand** · periungual erythema · nail-fold telangiectasia · cuticular overgrowth · poikiloderma vasculare atrophicans · ผื่นแพ้แสง |
 | **Non-specific** | calcinosis cutis · erythroderma · vesiculobullous · ichthyosis · ผมร่วง · leukocytoclastic vasculitis · livedo reticularis · panniculitis · lipodystrophy |
+
+### ที่อาจารย์เน้นในสไลด์ (SLE and systemic autoimmune diseases)
+
+**เกณฑ์ Bohan and Peter — 5 ข้อ ที่ยังใช้สอบกันอยู่**
+1. **กล้ามเนื้อ** — อ่อนแรงต้นแขนต้นขาแบบสมมาตร ค่อยเป็นค่อยไปเป็นสัปดาห์ถึงเดือน ± กลืนลำบากหรือกะบังลมอ่อนแรง
+2. **เอนไซม์กล้ามเนื้อสูง** — CK, aldolase, AST, ALT และ/หรือ LDH
+3. **EMG** — motor unit เล็ก แอมพลิจูดต่ำ polyphasic, fibrillation potential, positive sharp wave, insertional activity เพิ่ม
+4. **ชิ้นเนื้อกล้ามเนื้อ** — myofiber necrosis, phagocytosis, regeneration, ขนาดเส้นใยไม่เท่ากัน และมีเซลล์อักเสบแทรก
+5. **ผิวหนัง** — **heliotrope rash** ร่วมกับหนังตาบวม และ **Gottron's sign**
+
+**ครบ 4/5 = definite · 3/5 = probable · 2/5 = possible**
+เกณฑ์ใหม่ **2017 EULAR/ACR** ใช้คะแนน — **ไม่มีชิ้นเนื้อ: possible > 5.3 · probable > 5.5 · definite > 7.5** และ **มีชิ้นเนื้อ: > 6.5 · > 6.7 · > 8.7** ตามลำดับ
+
+**แยกสี่ชนิดให้ออก**
+| | **DM** | **PM** | **IBM** | **NAM / IMNM** |
+|---|---|---|---|---|
+| อายุที่เริ่ม | **< 16 และ > 40** | ~40 | **> 45** | ~40 |
+| ระยะเวลาดำเนินโรค | สัปดาห์–เดือน | สัปดาห์–เดือน | **เดือน–ปี (ช้าที่สุด)** | **วัน–สัปดาห์ (เร็วที่สุด)** |
+| กล้ามเนื้อที่จับ | ต้นแขนต้นขา | ต้นแขนต้นขา | **งอนิ้ว/ข้อมือ และ quadriceps · CK สูงเล็กน้อย** | **ต้นแขนต้นขา ปวด · CK สูงมาก** |
+| สมมาตร | ใช่ | ใช่ | **ไม่สมมาตร** | ใช่ |
+| อาการทางระบบประสาท | ไม่มี | ไม่มี | **มี** | ไม่มี |
+| ชิ้นเนื้อ | **perimysial/perivascular · CD4 และ B cell · perifascicular atrophy · MAC ที่ capillary** | **endomysial · CD8 + macrophage** | **endomysial · rim vacuole · tubulofilament** | **เส้นใยตายโดยมีเซลล์อักเสบน้อย · macrophage · MAC ที่ sarcolemma** |
+| MSA | **Mi-2, MDA5, ARS, TIF1-γ, NXP2, SAE** | antisynthetase, SRP | **cN-1A** | **SRP, HMGCR** |
+
+**สองสิ่งที่ทำให้ผู้ป่วยเสียชีวิต — ILD (อาจเป็นสาเหตุการตาย) และมะเร็งที่พบร่วม**
+จึงต้อง **คัดกรองมะเร็งตามอายุและเพศ พร้อม “ตรวจ ENT ให้ครบ” เพื่อมองหามะเร็งโพรงหลังจมูก** ซึ่งพบบ่อยในคนไทยและเอเชีย
+
+**การรักษา** — **prednisolone 0.5–1 มก./กก./วัน** เป็นหลัก · **กล้ามเนื้ออักเสบ: methotrexate หรือ azathioprine** · **ILD: cyclophosphamide, mycophenolate หรือ calcineurin inhibitor**
+
+**ผื่นที่ต้องเรียกชื่อให้ถูก** — **Gottron's papules และ Gottron's sign · heliotrope · V-sign (คอด้านหน้า) · shawl sign (บ่าและหลังส่วนบน) · holster sign (ด้านข้างสะโพก) · sleeve sign (ด้านนอกต้นแขน)** และ **แผลที่ผิวหนัง (cutaneous ulceration)** ซึ่งสัมพันธ์กับ **anti-MDA5** และ ILD ที่รุนแรง
 
 **จำไปสอบ**
 - อ่อนแรงต้นแขนต้นขาแบบสมมาตรโดยไม่ชา = myopathy ให้ส่ง CK
@@ -3501,6 +3887,212 @@ EXPLAIN:
 SRC: MED33 โพย Rheumato ข้อ 5 'มาด้วยอาการปวดกล้ามเนื้อ มี dyslipidemia กินยา statin ควรส่งตรวจอะไร — a. CPK Level'
 
 NL: 2.1.26 ปวดกล้ามเนื้อ ปวดกระดูก (musculoskeletal pain) · 2.3.13-3(7) Myopathy · B5.2.5-3(1) Myopathy (inflammatory myopathy, metabolic myopathy)
+
+
+### [air-33-07b] Sjögren's syndrome
+
+_ตาแห้งปากแห้งที่ต้องพิสูจน์ด้วยตัวเลข และความเสี่ยงมะเร็งต่อมน้ำเหลือง_
+
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
+
+### ภาพรวม
+- **Primary Sjögren** = เป็นเอง · **Secondary Sjögren** = พบร่วมกับโรคเนื้อเยื่อเกี่ยวพันอื่น โดยเฉพาะ **RA และ SLE**
+- พบใน **หญิงมากกว่าชายราว 20:1** และ **เริ่มช่วงอายุ 50–60 ปี** ซึ่งแก่กว่า SLE ชัดเจน
+- **อาการของต่อมมีท่อ** — **ตาแห้ง ปากแห้ง (sicca)** และ **ต่อมน้ำลายโต** (parotid/submandibular)
+- **อาการนอกต่อม** — ปวดข้อ Raynaud ผื่น purpura ปลายประสาทอักเสบ **interstitial lung disease** **renal tubular acidosis ชนิดที่ 1** และตับอักเสบจากภูมิคุ้มกัน
+- **ความเสี่ยงที่ต้องเฝ้าระวังตลอดชีวิตคือมะเร็งต่อมน้ำเหลือง (โดยเฉพาะ MALT lymphoma)** — สัญญาณเตือนคือ **ต่อมน้ำลายโตข้างเดียวที่โตขึ้นเรื่อย ๆ ต่อมน้ำเหลืองโต C4 ต่ำ cryoglobulin บวก และ purpura**
+
+### เกณฑ์จำแนกโรค ACR-EULAR 2017
+ใช้กับผู้ที่ **มีอาการตาแห้งหรือปากแห้งอย่างน้อยหนึ่งอาการ หรือมีอาการทางระบบที่ชวนให้คิดถึงโรคนี้**
+
+| ข้อ | รายละเอียด | คะแนน |
+|---|---|---|
+| **Focus score ≥ 1** | ชิ้นเนื้อต่อมน้ำลายที่ริมฝีปาก พบกลุ่มเซลล์โมโนนิวเคลียร์ **≥ 50 เซลล์ ต่อพื้นที่ 4 ตร.มม.** | **3** |
+| **Anti-SSA (Ro) บวก** | นับเฉพาะ **anti-Ro60** — **anti-Ro52 เดี่ยว ๆ ไม่จำเพาะ** | **3** |
+| **Ocular staining score ≥ 5** | ย้อม fluorescein และ lissamine green (คะแนน 0–12) | 1 |
+| **Schirmer test ≤ 5 มม./5 นาที** | วัดการสร้างน้ำตา | 1 |
+| **น้ำลายที่ไหลเองโดยไม่กระตุ้น ≤ 0.1 มล./นาที** | เก็บน้ำลายอย่างน้อย 5 นาที | 1 |
+
+**รวม ≥ 4 คะแนน = เข้าเกณฑ์**
+
+**ข้อที่ต้องตัดออกก่อน (exclusion)** — **การติดเชื้อไวรัสตับอักเสบซีที่ยังแอคทีฟ · เคยฉายรังสีบริเวณคอ · sarcoidosis · GVHD · การใช้ยาต้านโคลิเนอร์จิก · และ IgG4-related disease**
+
+> **สองข้อที่ให้ 3 คะแนนคือ focus score และ anti-Ro60** — ผู้ป่วยที่ไม่มีทั้งสองข้อนี้ จะเก็บคะแนนจากการตรวจตาและน้ำลายให้ครบ 4 ได้ยาก นี่คือเหตุผลที่ **ปากแห้งตาแห้งอย่างเดียวไม่พอที่จะบอกว่าเป็น Sjögren**
+
+### การรักษา
+- **ดูแลช่องปากและตรวจฟันสม่ำเสมอ** — น้ำลายน้อยทำให้ฟันผุลุกลามเร็วมาก
+- **สารหล่อลื่นเฉพาะที่** — น้ำตาเทียม น้ำลายเทียม และสารหล่อลื่นช่องคลอด
+- **Muscarinic agonist — pilocarpine** (หรือ cevimeline) เมื่ออาการแห้งรบกวนมาก
+- **ยากดภูมิคุ้มกันใช้เฉพาะเมื่อมีอาการนอกต่อมที่กระทบอวัยวะสำคัญ** ไม่ใช่ใช้เพื่อรักษาอาการแห้ง
+- **hydroxychloroquine** ช่วยเรื่องปวดข้อและอ่อนเพลีย
+
+**จำไปสอบ**
+- Sjögren: หญิง:ชาย ราว 20:1 เริ่มอายุ 50–60 ปี
+- เกณฑ์ 2017 ให้ focus score ≥ 1 และ anti-Ro60 อย่างละ 3 คะแนน รวม ≥ 4 จึงเข้าเกณฑ์ — anti-Ro52 เดี่ยว ๆ ไม่นับ
+- ต้องตัด HCV ที่ยังแอคทีฟ IgG4-RD sarcoidosis GVHD และยาต้านโคลิเนอร์จิกออกก่อน
+- ต่อมน้ำลายโตข้างเดียวที่โตขึ้นเรื่อย ๆ + C4 ต่ำ + cryoglobulin = ระวัง MALT lymphoma
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[AIR-33-07B-Q1] Sjögren's syndrome
+
+A 54-year-old woman reports 2 years of gritty eyes and a dry mouth that forces her to sip water while eating. Schirmer test is 3 mm in 5 minutes bilaterally and unstimulated salivary flow is 0.05 mL/min. ANA is 1:320 fine speckled, anti-Ro52 is positive, anti-Ro60 and anti-La are negative, rheumatoid factor is negative. Which of the following is the most appropriate next step?
+
+A. Repeat the ANA in 12 weeks; a rising titre would confirm the diagnosis
+B. Start pilocarpine and hydroxychloroquine and make no further diagnostic effort, as the classification has no bearing on care
+C. Order a parotid sialogram, which has replaced biopsy in the 2017 ACR-EULAR criteria
+D. Perform a minor labial salivary gland biopsy, since her current score is below the classification threshold and a focus score would carry 3 points
+E. Classify her as primary Sjögren syndrome now, because a positive anti-Ro52 antibody scores 3 points
+
+ANSWER: D. Perform a minor labial salivary gland biopsy, since her current score is below the classification threshold and a focus score would carry 3 points
+
+EXPLAIN:
+นับคะแนนตามเกณฑ์ **ACR-EULAR 2017** ของผู้ป่วยรายนี้ — **Schirmer ≤ 5 มม./5 นาที = 1 คะแนน** และ **น้ำลายที่ไหลเอง ≤ 0.1 มล./นาที = 1 คะแนน** รวมได้เพียง **2 คะแนน** ยังไม่ถึงเกณฑ์ที่ต้องได้ **≥ 4**
+
+**anti-Ro52 เดี่ยว ๆ ไม่นับ** เกณฑ์ระบุชัดว่าให้คะแนนเฉพาะ **anti-Ro60** (anti-Ro52 พบได้ในโรคอื่นหลายโรค เช่น myositis และโรคตับอักเสบจากภูมิคุ้มกัน จึงไม่จำเพาะ) ดังนั้นข้อที่จะทำให้ได้คะแนนเพิ่มอย่างมีความหมายคือ **การตัดชิ้นเนื้อต่อมน้ำลายที่ริมฝีปาก ซึ่ง focus score ≥ 1 ให้ 3 คะแนน** และจะทำให้รวมเป็น 5 คะแนน
+
+ระหว่างนี้ยังต้อง **ตัดสาเหตุอื่นของอาการแห้ง** — ไวรัสตับอักเสบซีที่ยังแอคทีฟ, IgG4-related disease, sarcoidosis, GVHD, ประวัติฉายรังสีบริเวณคอ และ **ยาต้านโคลิเนอร์จิก** (ยาแก้แพ้ ยาต้านซึมเศร้า ยาคลายกังวล) ซึ่งเป็นสาเหตุที่พบบ่อยที่สุดของปากแห้งในผู้สูงอายุ
+
+**ทำไมข้ออื่นผิด**
+- การรักษาตามอาการอย่างเดียวโดยไม่วินิจฉัยให้ชัด ทำให้พลาดการเฝ้าระวัง **อาการนอกต่อมและมะเร็งต่อมน้ำเหลือง**
+- **sialogram ไม่ได้อยู่ในเกณฑ์ 2017**
+- **ไทเตอร์ ANA ไม่ได้ใช้ติดตามหรือยืนยันโรคนี้**
+
+PEARL: ในเกณฑ์ Sjögren 2017 มีเพียง focus score ≥ 1 และ anti-Ro60 ที่ให้ 3 คะแนน — anti-Ro52 เดี่ยว ๆ ไม่นับ
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
+
+
+[AIR-33-07B-Q2] Sjögren's syndrome
+
+A 58-year-old woman with primary Sjögren syndrome of 8 years returns with a firm, progressively enlarging left parotid swelling for 3 months, new palpable purpura on both legs, and cervical lymphadenopathy. Laboratory tests show C4 0.06 g/L (low), positive cryoglobulins and a monoclonal IgM kappa band. Which of the following is the most likely diagnosis?
+
+A. IgG4-related disease involving the salivary gland
+B. Acute bacterial parotitis from reduced salivary flow
+C. Mucosa-associated lymphoid tissue (MALT) lymphoma arising in the parotid gland
+D. Reactivation of Sjögren-related glandular inflammation, treatable with a short course of prednisolone
+E. Sarcoidosis with parotid involvement (Heerfordt syndrome)
+
+ANSWER: C. Mucosa-associated lymphoid tissue (MALT) lymphoma arising in the parotid gland
+
+EXPLAIN:
+ผู้ป่วย Sjögren มีความเสี่ยงต่อ **มะเร็งต่อมน้ำเหลือง โดยเฉพาะ MALT lymphoma ของต่อมน้ำลาย** สูงกว่าประชากรทั่วไปหลายเท่า และโจทย์รายนี้มี **ปัจจัยทำนายครบชุด**: **ต่อมน้ำลายโตข้างเดียวที่โตขึ้นเรื่อย ๆ · purpura ที่คลำได้ · ต่อมน้ำเหลืองโต · C4 ต่ำ · cryoglobulin บวก · และมี monoclonal band** ทั้งหมดนี้คือสัญญาณเตือนที่ต้อง **ตัดชิ้นเนื้อต่อมน้ำลายหรือต่อมน้ำเหลืองเพื่อวินิจฉัยทันที**
+
+**ทำไมข้ออื่นผิด**
+- **ต่อมน้ำลายอักเสบจากแบคทีเรีย** เกิดเฉียบพลัน เจ็บมาก บวมแดงร้อน และมีหนองไหลจากท่อ ไม่ใช่ก้อนแข็งที่ค่อย ๆ โตใน 3 เดือน
+- **การกำเริบของตัวโรคเอง** ไม่ทำให้เกิด monoclonal band และไม่อธิบายต่อมน้ำเหลืองโตร่วมกับ C4 ต่ำและ cryoglobulin — การให้สเตียรอยด์ไปก่อนโดยไม่ตัดชิ้นเนื้อจะทำให้การวินิจฉัยมะเร็งล่าช้าและอ่านผลยากขึ้น
+- **IgG4-related disease** มักโตหลายต่อมทั้งสองข้าง ระดับ IgG4 สูง และไม่ทำให้ C4 ต่ำร่วมกับ cryoglobulin แบบนี้
+- **Sarcoidosis** (Heerfordt) มีไข้ ม่านตาอักเสบ อัมพาตเส้นประสาทใบหน้า และต่อมน้ำเหลืองขั้วปอดโต ซึ่งไม่มีในโจทย์
+
+PEARL: Sjögren + ต่อมน้ำลายโตข้างเดียวที่โตขึ้นเรื่อย ๆ + C4 ต่ำ + cryoglobulin + purpura = สงสัย MALT lymphoma ต้องตัดชิ้นเนื้อ
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
+
+
+### [air-33-07c] MCTD และ UCTD — เมื่ออาการยังไม่เข้าโรคใดโรคหนึ่ง
+
+_นิยามที่ต่างกันสามคำ: MCTD · overlap syndrome · UCTD_
+
+ที่มา: สไลด์ อ.พรรณนิภา บุปผาเรณู (หน่วยโรคข้อและรูมาติสซั่ม รพ.ราชวิถี) — SLE and systemic autoimmune diseases 2567
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
+
+### Mixed connective tissue disease (MCTD)
+โรคที่มี **ลักษณะผสมของ SSc, SLE, IIM และ RA** โดยมี **anti-U1RNP ไทเตอร์สูง** เป็นตัวยึด
+
+**เกณฑ์ Alarcón-Segovia** (ใช้ง่ายและออกสอบบ่อยที่สุด)
+- **ทางซีรัมวิทยา: anti-U1RNP มากกว่า 1:1,000** *และ*
+- **ทางคลินิก ต้องมีอย่างน้อย 3 ใน 5 ข้อ** — **synovitis · Raynaud's phenomenon · มือบวม (puffy hands) · myositis · sclerodactyly**
+
+- **ANA บวกเกือบ 100%** ของผู้ป่วย และมักเป็น **coarse speckled**
+- **รักษาเหมือน SLE แต่พยากรณ์โรคดีกว่า** — สิ่งที่ต้องเฝ้าระวังระยะยาวคือ **pulmonary arterial hypertension และ ILD**
+
+> **MCTD ไม่ใช่ overlap syndrome** — **overlap syndrome คือผู้ป่วยที่เข้าเกณฑ์ของโรคหนึ่งเต็มรูปแบบ แล้วมีอาการของอีกโรคหนึ่งที่อธิบายด้วยโรคแรกไม่ได้** ส่วน MCTD เป็นกลุ่มอาการเฉพาะของตัวเองที่ผูกกับ anti-U1RNP
+
+### Undifferentiated connective tissue disease (UCTD)
+- **มีอาการและผลเลือดของโรคเนื้อเยื่อเกี่ยวพัน แต่ยังไม่เข้าเกณฑ์ของโรคใดเลย**
+- **Stable UCTD** — อยู่แบบนี้ได้นานกว่า 2–3 ปีโดยไม่กลายเป็นโรคใดชัดเจน (เป็นกลุ่มส่วนใหญ่)
+- **Evolving UCTD ราวร้อยละ 30 จะกลายเป็นโรคที่ชัดเจนในภายหลัง** โดยสัดส่วนจากสไลด์คือ
+
+| กลายเป็น | สัดส่วน |
+|---|---|
+| **RA** | **38%** |
+| **Sjögren** | **19%** |
+| **SLE** | **12%** |
+| **MCTD** | **11%** |
+| SSc | 8% |
+| IIM | 2% |
+
+**สิ่งที่ต้องทำกับผู้ป่วย UCTD คือติดตามเป็นระยะ ไม่ใช่รีบตั้งชื่อโรค** — ตรวจอาการใหม่ ปัสสาวะ และเม็ดเลือดเป็นระยะ ให้การรักษาตามอาการ (HCQ ช่วยได้ในหลายราย) และบอกผู้ป่วยว่าอาการใดที่ต้องรีบกลับมาพบแพทย์
+
+### สรุปสามคำให้ไม่สับสน
+| คำ | ความหมาย |
+|---|---|
+| **MCTD** | มี **anti-U1RNP ไทเตอร์สูง** + กลุ่มอาการจำเพาะ (Raynaud, puffy hands, synovitis, myositis, sclerodactyly) |
+| **Overlap syndrome** | **เข้าเกณฑ์โรคหนึ่งครบ + มีอาการของอีกโรคที่อธิบายไม่ได้ด้วยโรคแรก** |
+| **UCTD** | มีอาการและแอนติบอดี **แต่ยังไม่เข้าเกณฑ์โรคใดเลย** |
+
+**จำไปสอบ**
+- MCTD = anti-U1RNP > 1:1,000 + อย่างน้อย 3 ใน 5 (synovitis, Raynaud, puffy hands, myositis, sclerodactyly)
+- MCTD รักษาเหมือน SLE พยากรณ์ดีกว่า แต่ต้องเฝ้าระวัง PAH และ ILD
+- UCTD ราว 30% กลายเป็นโรคชัดเจน โดยกลายเป็น RA มากที่สุด
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[AIR-33-07C-Q1] MCTD และ UCTD — เมื่ออาการยังไม่เข้าโรคใดโรคหนึ่ง
+
+A 30-year-old woman presents with polyarthritis for 3 weeks together with Raynaud phenomenon and sclerodactyly. ANA is positive at 1:160 speckled, anti-RNP is positive and anti-Sm is negative. Hand radiographs are normal. What is the most likely diagnosis?
+
+A. Systemic lupus erythematosus (SLE)
+B. Overlap syndrome
+C. Undifferentiated connective tissue disease (UCTD)
+D. Systemic sclerosis (SSc)
+E. Mixed connective tissue disease (MCTD)
+
+ANSWER: E. Mixed connective tissue disease (MCTD)
+
+EXPLAIN:
+ผู้ป่วยมีสามข้อจากห้าข้อทางคลินิกของ **Alarcón-Segovia** — **synovitis (ข้ออักเสบหลายข้อ) · Raynaud's phenomenon · sclerodactyly** ร่วมกับ **anti-U1RNP บวก** จึงเข้าได้กับ **MCTD** มากที่สุด (ในทางปฏิบัติควรยืนยันไทเตอร์ของ anti-U1RNP ว่าสูงจริงตามเกณฑ์)
+
+**ทำไมข้ออื่นผิด**
+- **SLE** — ไม่มีอาการเด่นของลูปัส (ผื่นปีกผีเสื้อ แผลในปาก ไตอักเสบ เม็ดเลือดต่ำ) **anti-Sm ลบ** และ sclerodactyly ไม่ใช่ลักษณะของ SLE
+- **SSc** — ผิวแข็งจำกัดอยู่แค่ปลายนิ้วโดยไม่มี anti-centromere หรือ anti-Scl-70 และการมีข้ออักเสบเด่นร่วมกับ anti-RNP ชี้ไปทาง MCTD มากกว่า
+- **UCTD** — ใช้เรียกผู้ที่ **ยังไม่เข้าเกณฑ์ของโรคใดเลย** แต่รายนี้เข้าเกณฑ์ MCTD แล้ว
+- **Overlap syndrome** — ต้อง **เข้าเกณฑ์ของโรคหนึ่งอย่างครบถ้วนก่อน** แล้วจึงมีอาการของอีกโรคหนึ่งเพิ่ม ซึ่งผู้ป่วยรายนี้ไม่เข้าเกณฑ์เต็มของ SLE หรือ SSc เลย
+
+PEARL: Raynaud + puffy hands/sclerodactyly + ข้ออักเสบ + anti-U1RNP = MCTD ไม่ใช่ overlap syndrome
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
+
+
+[AIR-33-07C-Q2] MCTD และ UCTD — เมื่ออาการยังไม่เข้าโรคใดโรคหนึ่ง
+
+A 41-year-old woman has had Raynaud phenomenon, arthralgia and a positive ANA (1:160 speckled) for 3 years. She has never had a rash, oral ulcer, serositis, nephritis, cytopenia, sclerodactyly or muscle weakness; anti-dsDNA, anti-Sm, anti-RNP, anti-Ro/La, anti-Scl-70 and anti-centromere are all negative, and complement levels are normal. Which of the following statements about her condition is most accurate?
+
+A. Because she has remained undifferentiated for 3 years, no further follow-up is required
+B. She has undifferentiated connective tissue disease; about 30% of such patients evolve into a defined disease over time, most often rheumatoid arthritis, so she needs periodic reassessment
+C. Nailfold capillaroscopy is contraindicated as it cannot distinguish primary from secondary Raynaud phenomenon
+D. She should be treated empirically with cyclophosphamide to prevent progression to systemic lupus erythematosus
+E. A positive ANA at this titre with Raynaud phenomenon is sufficient to classify her as having SLE
+
+ANSWER: B. She has undifferentiated connective tissue disease; about 30% of such patients evolve into a defined disease over time, most often rheumatoid arthritis, so she needs periodic reassessment
+
+EXPLAIN:
+ผู้ป่วยมีอาการและแอนติบอดีของโรคเนื้อเยื่อเกี่ยวพัน **แต่ไม่เข้าเกณฑ์ของโรคใดเลย** = **undifferentiated connective tissue disease (UCTD)** ตามสไลด์ **ราวร้อยละ 30 เป็น evolving UCTD ที่กลายเป็นโรคชัดเจนในภายหลัง โดยกลายเป็น RA มากที่สุด (38%) รองลงมาคือ Sjögren (19%), SLE (12%), MCTD (11%), SSc (8%) และ IIM (2%)** ที่เหลือเป็น **stable UCTD** ซึ่งอยู่แบบนี้ได้นานหลายปี
+
+การดูแลคือ **ติดตามเป็นระยะ** — ถามอาการใหม่ ตรวจปัสสาวะและ CBC และสอนผู้ป่วยว่าอาการใดต้องรีบกลับมา (ผื่นแพ้แสง แผลในปาก บวม ปัสสาวะเป็นฟอง ไข้เรื้อรัง แผลที่ปลายนิ้ว) ให้การรักษาตามอาการ โดย **hydroxychloroquine** ช่วยเรื่องปวดข้อและอ่อนเพลียได้
+
+**ทำไมข้ออื่นผิด**
+- **ห้ามให้ cyclophosphamide เพื่อ “ป้องกัน”** — พิษของยาสูงมากและไม่มีข้อบ่งชี้เมื่อไม่มีอวัยวะสำคัญถูกทำลาย
+- **ANA บวกร่วมกับ Raynaud ไม่พอจะเรียกว่า SLE** ต้องมีอาการทางคลินิกและคะแนนรวมถึงเกณฑ์
+- **ยังต้องติดตามต่อ** เพราะการเปลี่ยนเป็นโรคชัดเจนเกิดได้หลังหลายปี
+- **Nailfold capillaroscopy เป็นเครื่องมือที่ช่วยแยก primary ออกจาก secondary Raynaud ได้ดีที่สุด** ควรทำ ไม่ใช่ข้อห้าม
+
+PEARL: UCTD = มีอาการและแอนติบอดีแต่ไม่เข้าเกณฑ์โรคใด · ราว 30% กลายเป็นโรคชัดเจน (RA มากที่สุด) จึงต้องนัดติดตาม
+
+NL: B5.2.2-3(5) Systemic lupus erythematosus · 2.3.13 โรคระบบกล้ามเนื้อ กระดูก และเนื้อเยื่อเกี่ยวพัน (ทั้งหมวด)
 
 
 ### [air-33-08] Polymyalgia rheumatica และ giant cell arteritis

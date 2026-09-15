@@ -4,7 +4,7 @@ build_learn.py — สร้างเว็บ "เรียนเนื้อ�
 
 วิธีใช้
     python3 build_learn.py            # สร้างทุกระบบที่มีไฟล์บทเรียนใน learn/
-    python3 build_learn.py air        # สร้างเฉพาะบางระบบ
+    python3 build_learn.py air        # ตรวจเฉพาะระบบที่ระบุ (learn.html ยังรวมทุกระบบเสมอ)
 
 แนวคิด
     - เนื้อหาบทเรียนอยู่ในไฟล์ learn/<ระบบ>.json อย่างเดียว (markdown ภาษาไทย)
@@ -59,11 +59,15 @@ def main():
     idx = index_bank(bank)
     setmeta = {s['key']: s for s in CFG['sets']}
 
+    # learn.html รวมทุกระบบไว้ในไฟล์เดียวเสมอ (สลับชุดได้ในหน้าเว็บ)
+    # อาร์กิวเมนต์เป็นแค่ตัวกรองว่าจะให้ build หยุดถ้าระบบนั้นมีปัญหา ไม่ได้ตัดระบบอื่นออกจากไฟล์
     files = sorted(glob.glob('learn/*.json'))
-    if args:
-        files = [f for f in files if os.path.splitext(os.path.basename(f))[0] in args]
     if not files:
-        die('ไม่พบไฟล์บทเรียนใน learn/ (ที่ตรงกับ: %s)' % (', '.join(args) or 'ทั้งหมด'))
+        die('ไม่พบไฟล์บทเรียนใน learn/')
+    known = [os.path.splitext(os.path.basename(f))[0] for f in files]
+    for a in args:
+        if a not in known:
+            die('ไม่พบไฟล์บทเรียน learn/%s.json — มีให้เลือก: %s' % (a, ', '.join(known)))
 
     courses, missing = [], []
     for path in files:
