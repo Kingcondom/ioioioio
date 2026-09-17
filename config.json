@@ -250,6 +250,11 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "O01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -545,6 +550,30 @@
       ],
       "meq": [
         "data/derm_meq_osce.json"
+      ],
+      "old": []
+    },
+    {
+      "key": "onco",
+      "label": "Onco",
+      "thai": "มะเร็งวิทยา",
+      "blurb": "1 คาบบรรยาย · หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง — SVC obstruction · ไขสันหลังถูกกดทับ · ก้อนแพร่กระจายในสมอง · มะเร็งปอด · การคัดกรองมะเร็งที่พบบ่อย · การคุมความปวด · พิษของยาเคมีบำบัด · การดูแลประคับประคอง",
+      "accent": {
+        "light": "#6b5b3f",
+        "soft": "#f0ead9",
+        "ink": "#54472f",
+        "dark": "#cbbfa8",
+        "darkSoft": "#201d16",
+        "darkInk": "#ddd5c5"
+      },
+      "lecture_order": [
+        "O01"
+      ],
+      "mcq": [
+        "data/onco_mcq_a.json"
+      ],
+      "meq": [
+        "data/onco_meq_osce.json"
       ],
       "old": []
     },
