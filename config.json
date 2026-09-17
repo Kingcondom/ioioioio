@@ -3,7 +3,7 @@
   "shuffle_seed": 20260913,
   "site": {
     "title": "MED421 Ward Drill",
-    "subtitle": "Cardio · Nephro · Chest · AIR · Mock NL — ข้อสอบใหม่ 210 ข้อ + ชุดจำลอง NL Part 1 อีก 200 ข้อแยกตามระบบ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
+    "subtitle": "Cardio · Nephro · Chest · Neuro · AIR · Mock NL — ข้อสอบใหม่ 230 ข้อ + ชุดจำลอง NL Part 1 อีก 200 ข้อแยกตามระบบ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
   },
   "lectures": {
     "03": {
@@ -18,6 +18,11 @@
     },
     "05": {
       "date": "พฤ. 17 ก.ย.",
+      "week": 1,
+      "al": 0
+    },
+    "07": {
+      "date": "TBD — แก้ใน config.lectures",
       "week": 1,
       "al": 0
     },
@@ -273,6 +278,30 @@
         "data/chest_old_b.json",
         "data/chest_old_c.json"
       ]
+    },
+    {
+      "key": "neuro",
+      "label": "Neuro",
+      "thai": "ระบบประสาท",
+      "blurb": "เริ่มจากคาบ acute ischemic stroke — กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด",
+      "accent": {
+        "light": "#6b3f8c",
+        "soft": "#efe8f5",
+        "ink": "#542f70",
+        "dark": "#b998d8",
+        "darkSoft": "#1d1526",
+        "darkInk": "#cdb6e3"
+      },
+      "lecture_order": [
+        "07"
+      ],
+      "mcq": [
+        "data/neuro_mcq_a.json"
+      ],
+      "meq": [
+        "data/neuro_meq_osce.json"
+      ],
+      "old": []
     },
     {
       "key": "air",
