@@ -180,6 +180,21 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": "",
       "al": 0
+    },
+    "I01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "I02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "I03": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -339,6 +354,34 @@
         "data/air_old_a.json",
         "data/air_old_b.json"
       ]
+    },
+    {
+      "key": "infect",
+      "label": "ID",
+      "thai": "โรคติดเชื้อ",
+      "blurb": "5 คาบบรรยาย · ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ · ไข้เฉียบพลันในเขตร้อน (เดงกี เลปโตสไปโรซิส สครับไทฟัส มาลาเรีย เมลิออยโดสิส ไข้รากสาดน้อย) · เอชไอวีและโรคติดเชื้อฉวยโอกาส",
+      "accent": {
+        "light": "#0f766e",
+        "soft": "#d5f2ee",
+        "ink": "#0b5b54",
+        "dark": "#4fd6c4",
+        "darkSoft": "#0e2422",
+        "darkInk": "#8fe9dd"
+      },
+      "lecture_order": [
+        "I01",
+        "I02",
+        "I03"
+      ],
+      "mcq": [
+        "data/infect_mcq_a.json",
+        "data/infect_mcq_b.json",
+        "data/infect_mcq_c.json"
+      ],
+      "meq": [
+        "data/infect_meq_osce.json"
+      ],
+      "old": []
     },
     {
       "key": "mock",
