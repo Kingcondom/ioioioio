@@ -240,6 +240,16 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "D01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "D02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -509,6 +519,32 @@
       ],
       "meq": [
         "data/heme_meq_osce.json"
+      ],
+      "old": []
+    },
+    {
+      "key": "derm",
+      "label": "Derm",
+      "thai": "ผิวหนัง",
+      "blurb": "2 คาบบรรยาย · ผื่นเฉียบพลันและภาวะฉุกเฉินทางผิวหนัง (SSSS · erythema multiforme · เนื้อเยื่ออ่อนติดเชื้อชนิดเนื้อตาย · จ้ำเลือด · eczema herpeticum · ผิวแดงลอกทั่วตัว · AGEP) · ผื่นเรื้อรังและผื่นติดเชื้อที่พบบ่อย",
+      "accent": {
+        "light": "#0369a1",
+        "soft": "#d9eefb",
+        "ink": "#025680",
+        "dark": "#5fc8f0",
+        "darkSoft": "#0d2029",
+        "darkInk": "#9fdef7"
+      },
+      "lecture_order": [
+        "D01",
+        "D02"
+      ],
+      "mcq": [
+        "data/derm_mcq_a.json",
+        "data/derm_mcq_b.json"
+      ],
+      "meq": [
+        "data/derm_meq_osce.json"
       ],
       "old": []
     },
