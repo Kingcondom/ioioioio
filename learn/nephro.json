@@ -1,0 +1,398 @@
+{
+  "set": "nephro",
+  "title": "Nephro · ระบบไตและสมดุลเกลือแร่",
+  "intro": "เริ่มจากคาบ 14 ของ อ.ฉันทิศา — Approach to glomerular disease — เนื้อหาเรียบเรียงจากสไลด์บรรยายจริงทั้งคาบ ตั้งแต่กำแพงกรอง 3 ชั้น การแปลผลโปรตีนและเม็ดเลือดแดงในปัสสาวะ โครงคิด 6 คำถาม ไปจนถึงโรคโกลเมอรูลัสปฐมภูมิและทุติยภูมิทีละโรค จบแต่ละหัวข้อมีข้อสอบเช็คความเข้าใจจากคลัง MED28–MED35 และข้อใหม่ของชุด Nephro ทันที",
+  "howto": "**วิธีใช้** — อ่านเนื้อหาให้จบแล้วตอบข้อสอบท้ายหัวข้อ ระบบเฉลยพร้อมคำอธิบายกลไกทันทีที่ตอบ · ตอบครบทุกข้อแล้วหัวข้อจะถูกทำเครื่องหมายว่าเรียนจบ · ข้อที่ตอบผิดรวมอยู่ในแท็บ **ทบทวนข้อที่ผิด** · เรียนจบคาบแล้วไปฝึก **MEQ** และ **OSCE/SAQ** ต่อได้เลย\n\n> **อ่านตามลำดับ** — สี่หัวข้อแรกคือเครื่องมือ (กำแพงกรอง · โปรตีน · เลือดในปัสสาวะ) หัวข้อที่ห้าคือโครงคิด 6 คำถาม แล้วหกหัวข้อสุดท้ายคือโรคทีละโรค ถ้าข้ามไปอ่านโรคก่อนจะจำได้แต่ไม่เข้าใจว่าทำไมโรคหนึ่งออกมาเป็น nephrotic และอีกโรคออกมาเป็น nephritic\n\nคาบที่เหลือของชุด Nephro (divalent · CKD · dysnatremia/dyskalemia · urine analysis · UTI · AKI) ยังไม่ได้ทำบทเรียน แต่ข้อสอบมีอยู่ครบใน drill.html แล้ว",
+  "lectures": [
+    {
+      "lec": "14",
+      "title": "Approach to glomerular disease",
+      "subtitle": "กำแพงกรอง 3 ชั้น · การแปลผล proteinuria และ hematuria · กลุ่มอาการทางโกลเมอรูลัส 5 แบบ · MCD · FSGS · MN · IgA nephropathy · APSGN · lupus nephritis",
+      "objectives": [
+        "อธิบายกำแพงกรอง 3 ชั้นของโกลเมอรูลัสและเชื่อมโยงได้ว่าชั้นไหนเสียหายแล้วเกิดอาการใด",
+        "เลือกวิธีวัดโปรตีนในปัสสาวะได้ถูกสถานการณ์ และรู้ว่า **dipstick ตรวจจับได้แทบเฉพาะ albumin** จึงพลาด light chain",
+        "แยก proteinuria ออกเป็น functional · orthostatic · overflow · tubular · glomerular ได้จากปริมาณและบริบท",
+        "ไล่ผู้ป่วยปัสสาวะสีแดงตามลำดับ dipstick → ปั่นดู supernatant → แยก **glomerular ออกจาก non-glomerular hematuria** ได้",
+        "จัดผู้ป่วยเข้ากลุ่มอาการทั้ง 5 (asymptomatic · nephrotic · nephritic · RPGN · CGN) ตามเกณฑ์วินิจฉัยได้",
+        "บอกภาพ LM / IF / EM ของ MCD, FSGS, MN, IgA nephropathy, APSGN และ lupus nephritis ได้",
+        "แยก **primary ออกจาก secondary glomerular disease** และรู้ว่าต้องสืบค้นอะไรก่อนตัดสินใจให้ยากดภูมิคุ้มกัน",
+        "วางแผนการรักษาเบื้องต้นของแต่ละโรคตามแนวทาง KDIGO และจัดชั้น lupus nephritis ตาม ISN/RPS เพื่อเลือกการรักษาได้"
+      ],
+      "meq": [
+        "N-MEQ-01",
+        "N-MEQ-03"
+      ],
+      "osce": [
+        "N-OSCE-02"
+      ],
+      "sections": [
+        {
+          "id": "nephro-14-01",
+          "title": "กำแพงกรองของโกลเมอรูลัส — 3 ชั้น และสิ่งที่เกิดขึ้นเมื่อมันพัง",
+          "minutes": 8,
+          "summary": "ทำไมคนปกติไม่มีโปรตีนและเม็ดเลือดแดงในปัสสาวะ และพังตรงไหนถึงได้อาการแบบไหน",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.1.2(2)",
+            "2.3.14(2)",
+            "B9.2.2(4)"
+          ],
+          "md": "ทุกอย่างในคาบนี้ต่อยอดมาจากประโยคเดียว — **น้ำกรองผ่านได้ แต่โปรตีนกับเม็ดเลือดแดงผ่านไม่ได้** เพราะมีกำแพง 3 ชั้นเรียงกันอยู่ พอรู้ว่าชั้นไหนพัง จะเดาอาการและพยาธิสภาพได้เกือบหมด\n\n### กำแพงกรอง 3 ชั้น (glomerular filtration barrier)\n\n| ชั้น | โครงสร้าง | หน้าที่ในการกั้น |\n|---|---|---|\n| **1. Glomerular endothelial cell** | เซลล์บุหลอดเลือดที่มีรูพรุน (fenestrae) คลุมด้วย glycocalyx ประจุลบ | **กั้นด้วยประจุ (anionic charge barrier)** — ผลักโปรตีนประจุลบอย่าง albumin ไม่ให้เข้าใกล้ |\n| **2. Glomerular basement membrane (GBM)** | extracellular matrix — **type IV collagen, laminin, fibronectin** | กั้นด้วย **ขนาด** และมีประจุลบเสริม เป็นชั้นที่แข็งแรงเชิงกลที่สุด |\n| **3. Glomerular epithelial cell (podocyte)** | **foot process** ประสานกันเป็น **filtration slit diaphragm** | ด่านสุดท้าย กั้นโมเลกุลใหญ่ และเป็นชั้นที่เสียหายในโรคที่ทำให้โปรตีนรั่วมากที่สุด |\n\n> **กลไกที่ต้องไล่ให้ได้** — albumin หนัก 69 kDa และ **มีประจุลบ** จึงถูกกั้นทั้งด้วยขนาดและด้วยประจุ ฉะนั้น **ถ้าเสียเฉพาะประจุ** โปรตีนที่รั่วออกมาจะเป็น **albumin เป็นหลัก (selective proteinuria)** แต่ **ถ้าโครงสร้างพังจริง** จะรั่วทุกขนาดรวมถึง immunoglobulin (**non-selective**)\n\n### พังแล้วได้อะไร — แยกเป็นสองกลุ่มอาการเสมอ\n\n**กลุ่มที่ 1 · เสียความสามารถในการกั้น (loss of barrier)**\n- **Proteinuria** → **ปัสสาวะเป็นฟอง (foamy urine)** และ **บวมทั้งตัว (generalized edema)**\n- **Hematuria** → **microscopic** หรือ **macroscopic hematuria**\n\n**กลุ่มที่ 2 · อัตราการกรองลดลง (decreased eGFR)**\n- **Azotemia** — BUN/Cr ขึ้น\n- **Oliguria** — ปัสสาวะออกน้อย\n- **Salt/water retention** → **บวม** และ **ความดันโลหิตสูง**\n\n**เม็ดเลือดแดงออกมาได้อย่างไร** — GBM ต้องมี **รอยฉีกขาด** เม็ดเลือดแดงจึงเบียดผ่านออกมาได้ ระหว่างที่บีบผ่านรูแคบและเดินทางต่อไปตาม tubule ที่ความเข้มข้นและ pH เปลี่ยนไปมา เยื่อหุ้มเซลล์จึงเสียรูป กลายเป็น **dysmorphic RBC** และถ้าหลุดออกมาพร้อมกันมาก ๆ ใน tubule ก็จับกับ Tamm–Horsfall protein เป็น **RBC cast** — สองอย่างนี้จึงเป็น \"ลายเซ็น\" ว่าเลือดมาจากโกลเมอรูลัส ไม่ใช่จากทางเดินปัสสาวะส่วนล่าง\n\n### กับดักที่คนพลาดจริง\n- **บวมของ nephrotic กับบวมของ nephritic คนละกลไก** — nephrotic บวมเพราะ **albumin ต่ำ → oncotic pressure ตก** (และ Na คั่งจาก ENaC ที่ถูกกระตุ้นโดยตรง) ส่วน nephritic บวมเพราะ **GFR ตก → Na/น้ำคั่ง** จึงมาพร้อม **ความดันสูง** เสมอ ซึ่ง nephrotic ล้วน ๆ มักไม่มี\n- **\"ไตพัง\" ไม่เท่ากับ \"โกลเมอรูลัสพัง\"** — ATN, AIN, obstruction ก็ทำให้ Cr ขึ้นได้ แต่จะ **ไม่มี dysmorphic RBC/RBC cast และโปรตีนไม่ถึงระดับ glomerular** ต้องดูตะกอนปัสสาวะทุกครั้งก่อนสรุป\n\n### ที่อาจารย์เน้นในสไลด์\nอาจารย์เปิดคาบด้วยรูป 3 ชั้นนี้แล้วย้ำว่า **ให้จำเป็นคู่: \"loss of barrier\" กับ \"decreased eGFR\"** เพราะทุกกลุ่มอาการที่จะเรียนต่อไปคือส่วนผสมของสองอย่างนี้ในสัดส่วนต่างกัน — nephrotic คือ loss of barrier เด่น, nephritic คือ decreased eGFR เด่นและมี barrier รั่วร่วมด้วย",
+          "pearls": [
+            "ประจุลบอยู่ที่ endothelium และ GBM ส่วน slit diaphragm ของ podocyte กั้นด้วยขนาด — เสียประจุอย่างเดียวได้ selective albuminuria (MCD) เสียโครงสร้างได้ non-selective",
+            "Dysmorphic RBC และ RBC cast แปลว่าเลือดมาจากโกลเมอรูลัส ไม่ต้องส่องกล้องกระเพาะปัสสาวะ",
+            "บวม + ความดันสูง + ปัสสาวะออกน้อย = กลุ่ม decreased eGFR (nephritic) · บวม + ฟอง + albumin ต่ำ = กลุ่ม loss of barrier (nephrotic)"
+          ],
+          "quiz": [],
+          "extra": [
+            {
+              "stem": "Which component of the glomerular filtration barrier is chiefly responsible for the anionic charge barrier that repels albumin?",
+              "choices": [
+                "The fenestrated glomerular endothelial cell and its negatively charged glycocalyx",
+                "The type IV collagen scaffold of the glomerular basement membrane, which excludes molecules purely by size",
+                "The slit diaphragm between podocyte foot processes, which is electrically neutral",
+                "The mesangial cell, which phagocytoses circulating immune complexes",
+                "The parietal epithelium of Bowman capsule, which reabsorbs filtered albumin"
+              ],
+              "answer": 0,
+              "explain": "**ชั้นในสุดของกำแพงกรองคือ endothelial cell ที่มีรูพรุนและคลุมด้วย glycocalyx ประจุลบ** — นี่คือ *charge barrier* ที่ผลัก albumin (ประจุลบ, 69 kDa) ไม่ให้เข้าใกล้รูกรองตั้งแต่ต้น\n\n- **GBM (type IV collagen, laminin, fibronectin)** กั้นด้วย **ขนาด** เป็นหลักและมีประจุลบเสริม — ไม่ใช่ตัวหลักของ charge barrier และข้อความที่ว่ากั้น \"purely by size\" ก็ไม่ถูก\n- **Slit diaphragm** ของ podocyte เป็นด่านสุดท้ายที่กั้นด้วยขนาด **ไม่ใช่ electrically neutral** แต่ก็ไม่ใช่แหล่งประจุลบหลัก\n- **Mesangial cell** ทำหน้าที่ค้ำโครงสร้างและกลืนกินสิ่งแปลกปลอม **อยู่นอกเส้นทางการกรอง**\n- **Parietal epithelium ของ Bowman capsule ไม่ดูดกลับ albumin** — การดูดกลับโปรตีนที่รั่วออกมาเกิดที่ **proximal tubule** ต่างหาก",
+              "pearl": "Charge barrier อยู่ที่ endothelium + GBM · size barrier อยู่ที่ slit diaphragm — เสียประจุได้ albumin รั่วอย่างเดียว เสียโครงสร้างได้โปรตีนรั่วทุกขนาด",
+              "nl": [
+                "B9.1.2(2)",
+                "B9.2.2(4)"
+              ]
+            },
+            {
+              "stem": "A 24-year-old man has cola-coloured urine. Microscopy shows red cells with blebs and vesicles, more than 5 percent acanthocytes, and occasional red cell casts. Which mechanism best explains the abnormal red cell shapes?",
+              "choices": [
+                "Red cells are deformed as they squeeze through gaps in the glomerular basement membrane and are then osmotically stressed along the tubule",
+                "Red cells are mechanically abraded by a stone moving down the ureter",
+                "Red cells are lysed by urease-producing bacteria in an infected bladder",
+                "The patient has hereditary spherocytosis and the abnormal cells are filtered intact from plasma",
+                "The specimen is contaminated and the cells are degenerating squamous epithelial cells"
+              ],
+              "answer": 0,
+              "explain": "**Dysmorphic RBC เกิดจากสองแรงกระทำต่อกัน** — (1) เม็ดเลือดแดงต้อง **เบียดผ่านรอยฉีกของ GBM** ซึ่งบิดเยื่อหุ้มเซลล์จนเกิดตุ่มและถุง (**acanthocyte** คือรูปแบบที่จำเพาะที่สุด) และ (2) ระหว่างเดินทางตาม tubule ต้องเจอ **osmolality และ pH ที่แกว่งมาก** ทำให้เสียรูปซ้ำ · การมี **RBC cast** ยิ่งยืนยันว่าเม็ดเลือดแดงอยู่ใน tubule นานพอจะจับกับ Tamm–Horsfall protein\n\n- **นิ่วในท่อไต** ทำให้เลือดออกจากเยื่อบุทางเดินปัสสาวะ เม็ดเลือดแดงจะ **รูปร่างปกติ (isomorphic)** และ **ไม่มี RBC cast** แต่อาจมีลิ่มเลือด\n- **แบคทีเรียที่สลายเม็ดเลือดแดง** จะมาพร้อม **pyuria และ bacteriuria** ไม่ใช่ acanthocyte\n- **Hereditary spherocytosis** เม็ดเลือดแดงผิดรูปอยู่ในกระแสเลือด แต่ **โกลเมอรูลัสปกติไม่กรองเม็ดเลือดแดงออกมาเลย** จึงอธิบาย hematuria ไม่ได้\n- **Squamous epithelial cell** บอกแค่ว่าเก็บปัสสาวะไม่สะอาด **ไม่ใช่เม็ดเลือดแดง** และไม่ทำให้ปัสสาวะสีโคล่า",
+              "pearl": "Acanthocyte เกิน 5% หรือ RBC cast แม้อันเดียว = เลือดออกจากโกลเมอรูลัส ให้หยุดตามหาสาเหตุในทางเดินปัสสาวะส่วนล่าง",
+              "nl": [
+                "2.1.43",
+                "B9.3(2)",
+                "3.1.6"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nephro-14-02",
+          "title": "วัดโปรตีนในปัสสาวะ — dipstick, SSA, 24 ชั่วโมง และ UPCR",
+          "minutes": 9,
+          "summary": "แต่ละวิธีวัดอะไรได้และพลาดอะไร กับดักใหญ่คือ dipstick ตรวจจับเฉพาะ albumin",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.3(2)",
+            "3.1.6",
+            "2.3.14(12)"
+          ],
+          "md": "แบ่งวิธีวัดเป็นสองกลุ่ม — **กึ่งปริมาณ (semi-quantitative)** ใช้คัดกรอง และ **เชิงปริมาณ (quantitative)** ใช้ยืนยันและติดตาม\n\n### กลุ่มที่ 1 · กึ่งปริมาณ\n\n**Urine dipstick** — อาศัยหลักการ *protein error of pH indicator* คือโปรตีนไปจับกับสีบ่งชี้แล้วทำให้เปลี่ยนสี **แต่ปฏิกิริยานี้ไวต่อโปรตีนที่มีประจุลบ จึงตรวจจับได้แทบเฉพาะ albumin**\n\n| Dipstick | Urine protein (mg/dL) |\n|---|---|\n| Negative | 0 |\n| Trace | 15 – 30 |\n| **1+** | 30 – 100 |\n| **2+** | 100 – 300 |\n| **3+** | 300 – 1,000 |\n| **4+** | **> 1,000** |\n\n**Turbidometric test (sulfosalicylic acid, SSA)** — ผสม **ปัสสาวะ : SSA = 1 : 3** กรดจะทำให้โปรตีน**ทุกชนิด**ตกตะกอนเป็นความขุ่น จึงจับ **light chain ได้ด้วย**\n\n| Urine turbidity | Urine protein (mg/dL) |\n|---|---|\n| 0 | 0 |\n| Trace | 1 – 10 |\n| **1+** | 15 – 30 |\n| **2+** | 40 – 100 |\n| **3+** | 150 – 350 |\n| **4+** | **> 500** |\n\n> **กับดักข้อสอบที่ออกทุกปี** — **dipstick ลบ แต่ SSA บวก** หรือ **dipstick ลบ แต่โปรตีน 24 ชั่วโมงสูง** แปลว่าโปรตีนที่รั่วออกมา **ไม่ใช่ albumin** ให้คิดถึง **light chain (Bence Jones protein) จาก multiple myeloma** ทันที\n\n### กลุ่มที่ 2 · เชิงปริมาณ\n\n**เก็บปัสสาวะ 24 ชั่วโมง** — ยังเป็นมาตรฐาน แต่ผิดพลาดง่ายเพราะเก็บไม่ครบ **จึงต้องตรวจ urine creatinine ในถังเดียวกันเพื่อพิสูจน์ว่าเก็บครบจริง**\n\n| เพศ | Urine creatinine ที่คาดว่าจะได้ |\n|---|---|\n| หญิง | **15 – 20 mg/kg/วัน** |\n| ชาย | **20 – 25 mg/kg/วัน** |\n\nถ้าค่าที่ได้ต่ำกว่านี้มาก แปลว่า **เก็บปัสสาวะไม่ครบ** ตัวเลขโปรตีนที่รายงานจะ **ต่ำกว่าความจริง** ห้ามเอาไปแปลผล\n\n**Urine protein-creatinine ratio (UPCR)** — เก็บปัสสาวะครั้งเดียว หารด้วย creatinine ในตัวอย่างเดียวกันเพื่อหักล้างความเข้มข้นของปัสสาวะ **ค่า UPCR (g/g) ประมาณโปรตีน 24 ชั่วโมงเป็นกรัม/วันได้โดยตรง** เช่น UPCR 3.5 g/g ≈ 3.5 g/วัน · สะดวกและทำซ้ำได้จึงใช้ติดตามผลการรักษาได้ดีกว่า\n\n### ลำดับที่ควรส่งในผู้ป่วยบวม + ปัสสาวะเป็นฟอง\n1. **Urinalysis (dipstick + ดูตะกอนด้วยกล้อง)** — ราคาถูก ได้คำตอบทันทีว่าโปรตีนรั่วจริงไหม และมี **dysmorphic RBC, RBC cast, oval fat body** หรือไม่\n2. **ยืนยันเชิงปริมาณ** ด้วย **UPCR** หรือโปรตีน 24 ชั่วโมง\n3. **Serum albumin, lipid profile, Cr/eGFR** เพื่อเติมเกณฑ์ nephrotic ให้ครบ\n4. ค่อยตามด้วยการค้นหาสาเหตุทุติยภูมิและพิจารณาเจาะชิ้นเนื้อไต\n\n### กับดักที่คนพลาดจริง\n- **Dipstick บวกไม่ได้แปลว่าเป็นโรคไตเสมอ** — ปัสสาวะเข้มข้นมาก, pH ด่างจัด, มีเลือดหรือหนองปน, หรือมีสารทึบรังสี ล้วนให้ผลบวกลวง **ต้องยืนยันซ้ำเสมอ**\n- **Dipstick ลบไม่ได้ตัดโรคไต** — นอกจาก light chain แล้ว **microalbuminuria ในเบาหวานระยะแรกก็ต่ำกว่าเกณฑ์ที่ dipstick จับได้** ต้องส่ง urine albumin-creatinine ratio (ACR) ต่างหาก\n- **อย่าตัดสิน nephrotic จาก dipstick 4+ อย่างเดียว** — 4+ แปลว่า > 1,000 mg/dL ซึ่งขึ้นกับว่าปัสสาวะเข้มข้นแค่ไหน **ต้องมีตัวเลขเชิงปริมาณเสมอ**\n\n### ที่อาจารย์เน้นในสไลด์\nอาจารย์วางตาราง dipstick กับตาราง SSA **ไว้คู่กันในสไลด์เดียว** เพื่อให้เห็นว่า **เกณฑ์ตัวเลขของสองวิธีไม่เท่ากัน** (4+ ของ dipstick = >1,000 mg/dL แต่ 4+ ของ SSA = >500 mg/dL) และย้ำว่าประโยชน์ที่แท้จริงของ SSA คือ **ใช้จับโปรตีนที่ไม่ใช่ albumin** ซึ่ง dipstick มองไม่เห็น",
+          "pearls": [
+            "Dipstick จับได้แทบเฉพาะ albumin — dipstick ลบแต่โปรตีน 24 ชั่วโมงสูง ให้คิดถึง light chain จาก multiple myeloma ทันที",
+            "SSA ผสมปัสสาวะต่อกรด 1:3 ตกตะกอนโปรตีนทุกชนิด จึงเป็นตัวจับ Bence Jones protein ข้างเตียง",
+            "เก็บปัสสาวะ 24 ชั่วโมงต้องดู urine creatinine คู่เสมอ (หญิง 15–20 ชาย 20–25 mg/kg/วัน) ไม่งั้นไม่รู้ว่าเก็บครบไหม",
+            "UPCR หน่วย g/g ประมาณโปรตีนกรัมต่อวันได้เลย ใช้ติดตามสะดวกกว่าเก็บ 24 ชั่วโมง"
+          ],
+          "quiz": [
+            "N-MCQ-08",
+            "N-OLD-018",
+            "N-OLD-032"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-03",
+          "title": "แยกชนิดของ proteinuria — ชั่วคราวหรือถาวร และมาจากกลไกไหน",
+          "minutes": 8,
+          "summary": "functional · orthostatic · overflow · tubular · glomerular — ปริมาณโปรตีนบอกกลไกได้เกือบหมด",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.3(2)",
+            "2.3.14(12)",
+            "2.3.2"
+          ],
+          "md": "เจอโปรตีนในปัสสาวะแล้ว **อย่าเพิ่งวินิจฉัยโรคไต** — ต้องไล่ก่อนว่าเป็นชั่วคราวหรือถาวร และถ้าถาวรมาจากกลไกไหน **ตัวเลขปริมาณโปรตีนเป็นเบาะแสที่ดีที่สุด**\n\n### Transient proteinuria — ตรวจซ้ำแล้วหายไป\n\n| ชนิด | ปริมาณ | ลักษณะเด่น |\n|---|---|---|\n| **Functional** | **< 1 – 2 g/วัน** | ตะกอนปัสสาวะสะอาด (bland) · เกิดตอน **เครียด ออกกำลังหนัก ไข้ ติดเชื้อทางเดินปัสสาวะ หัวใจล้มเหลว** |\n| **Orthostatic** | **< 1 g/วัน** | **บวกตอนยืน ลบตอนนอน** — พบในวัยรุ่นผอมสูง พยากรณ์โรคดีมาก |\n\n**กลไก** — ภาวะเหล่านี้เพิ่ม **glomerular hemodynamic stress** ชั่วคราว (angiotensin II, norepinephrine สูงขึ้น ทำให้ efferent arteriole หดตัว ความดันในโกลเมอรูลัสสูงขึ้น) โปรตีนจึงรั่วมากกว่าปกติโดยที่**ไม่มีรอยโรคจริง** พอปัจจัยกระตุ้นหายไปโปรตีนก็หาย\n\n> **วิธีพิสูจน์ orthostatic proteinuria** — ให้ปัสสาวะทิ้งก่อนนอน แล้ว **เก็บปัสสาวะแรกตื่นทันทีที่ยังไม่ลุกเดิน** ถ้าโปรตีนลบ แต่ตัวอย่างกลางวันบวก = orthostatic **ไม่ต้องสืบค้นต่อ ไม่ต้องเจาะไต**\n\n### Persistent proteinuria — ตรวจซ้ำแล้วยังอยู่\n\n| ชนิด | ปริมาณ | กลไก | ตัวอย่าง |\n|---|---|---|---|\n| **Overflow** | หลากหลาย มัก **dipstick ลบ** | โปรตีนเล็กในเลือดสูงจนล้นความสามารถดูดกลับของ proximal tubule | **Light chain Ig — multiple myeloma** · **Lysozyme — AML** · **Myoglobin — rhabdomyolysis** · **Hemoglobin — hemolysis** |\n| **Tubular** | **< 1 – 2 g/วัน** | proximal tubule เสียหาย ดูดโปรตีนเล็ก (β2-microglobulin) กลับไม่ได้ | **ATN, AIN, chronic tubulointerstitial nephritis, ความดันโลหิตสูง** |\n| **Glomerular** | ตั้งแต่ **subnephrotic จนถึง > 3.5 g/วัน** | กำแพงกรองรั่ว | โรคโกลเมอรูลัสทุกชนิดในคาบนี้ |\n\n### วิธีคิดที่ใช้ได้จริงข้างเตียง\n1. **โปรตีน > 3.5 g/วัน = glomerular แทบแน่นอน** — tubular และ functional ไม่เคยขึ้นไปถึงระดับนี้\n2. **โปรตีน 1 – 2 g/วัน + ตะกอนสะอาด** — เป็นได้ทั้ง tubular, functional และ glomerular ระยะแรก ต้องดูบริบทและตรวจซ้ำ\n3. **โปรตีนสูงแต่ dipstick ลบ = overflow** จนกว่าจะพิสูจน์เป็นอย่างอื่น → ส่ง **SSA, serum/urine protein electrophoresis, serum free light chain**\n4. **มี dysmorphic RBC หรือ RBC cast ร่วมด้วย = glomerular** ไม่ว่าโปรตีนจะเท่าไร\n\n### กับดักที่คนพลาดจริง\n- **ผู้สูงอายุ + ซีด + ไตวาย + โปรตีนสูงแต่ dipstick ลบ + normal anion gap acidosis + K ต่ำ** = ภาพของ **multiple myeloma ที่ทำให้ proximal tubule เสียหายแบบ Fanconi** — ข้อนี้ออกสอบซ้ำ ๆ และคนมักตอบ chronic glomerulonephritis ผิด\n- **Tubular proteinuria ไม่ทำให้บวม** เพราะโปรตีนที่เสียน้อยเกินกว่าจะกด serum albumin ลงได้ ถ้าคนไข้บวมชัดต้องมองหา glomerular\n- **หัวใจล้มเหลวทำให้โปรตีนรั่วได้จริง** อย่ารีบสรุปว่าเป็นโรคไตปฐมภูมิในคนไข้ที่ decompensate อยู่ — รักษาให้ compensate แล้วตรวจซ้ำ",
+          "pearls": [
+            "โปรตีนเกิน 3.5 g/วัน = glomerular แทบแน่นอน · tubular กับ functional ไม่เคยเกิน 1–2 g/วัน",
+            "Orthostatic proteinuria พิสูจน์ด้วยปัสสาวะแรกตื่นก่อนลุกเดิน — ลบตอนนอน บวกตอนยืน แล้วจบ ไม่ต้องเจาะไต",
+            "โปรตีนมากแต่ dipstick ลบ = overflow (light chain) ต้องส่ง SPEP/UPEP และ serum free light chain",
+            "Overflow ที่พบบ่อยสี่ตัว: light chain (MM), lysozyme (AML), myoglobin (rhabdomyolysis), hemoglobin (hemolysis)"
+          ],
+          "quiz": [
+            "N-OLD-028",
+            "N-OLD-025"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-04",
+          "title": "ปัสสาวะสีแดง — ไล่จนได้ว่าเลือดออกจากโกลเมอรูลัสหรือไม่",
+          "minutes": 9,
+          "summary": "แผนภูมิ dipstick → ปั่นดูน้ำใส → แยก glomerular ออกจาก non-glomerular hematuria",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "2.1.43",
+            "B9.3(2)",
+            "3.1.6"
+          ],
+          "md": "ปัสสาวะสีแดงไม่ได้แปลว่ามีเลือดเสมอ อาจารย์ให้ไล่เป็นขั้นตายตัว **สามขั้น**\n\n### ขั้นที่ 1 · dipstick บวกหรือลบ\n\n**Dipstick ลบ** = ไม่มี heme เลย สีแดงมาจากสารอื่น\n- **Rifampin** (และ phenazopyridine, methyldopa)\n- **Porphyrin** (porphyria — ปัสสาวะคล้ำขึ้นเมื่อตั้งทิ้งไว้โดนแสง)\n- **สีผสมอาหารและอาหาร** เช่น บีทรูท แบล็กเบอร์รี\n\n### ขั้นที่ 2 · dipstick บวก → **ปั่นปัสสาวะแล้วดูน้ำส่วนบน (supernatant)**\n\n> **หลักการ** — dipstick จับ **heme** ซึ่งมีทั้งใน hemoglobin, myoglobin และในเม็ดเลือดแดง **ถ้าเป็นเม็ดเลือดแดงจริง เม็ดเลือดจะตกตะกอนลงก้นหลอด น้ำส่วนบนจะใส**\n\n| น้ำส่วนบนหลังปั่น | แปลว่า | คิดถึง |\n|---|---|---|\n| **ใส** + ตะกอนมีเม็ดเลือดแดง | **Hematuria จริง** | ไปขั้นที่ 3 |\n| **แดง** (ไม่มีเม็ดเลือดแดงในตะกอน) | มี heme ละลายอยู่ในน้ำปัสสาวะ | **Myoglobinuria** (rhabdomyolysis — CK สูง) หรือ **Hemoglobinuria** (intravascular hemolysis — serum haptoglobin ต่ำ, ซีรัมสีชมพู) |\n\n### ขั้นที่ 3 · เป็น hematuria จริง → glomerular หรือ non-glomerular\n\n| | **Glomerular hematuria** | **Non-glomerular hematuria** |\n|---|---|---|\n| สีปัสสาวะ | **แดงคล้ำ ขุ่นควัน หรือสีโคล่า (coca-cola)** | **แดงสดหรือชมพู** |\n| ลิ่มเลือด | **ไม่มี** | **อาจมี** |\n| โปรตีน | **> 500 mg/วัน** | **< 500 mg/วัน** |\n| รูปร่างเม็ดเลือดแดง | **Dysmorphic RBC** | **รูปร่างปกติ (isomorphic)** |\n| RBC cast | **มี** | **ไม่มี** |\n\n**เกณฑ์ตัวเลขที่ต้องจำ**\n- **Hematuria = เม็ดเลือดแดง ≥ 3 /HPF** ในปัสสาวะที่ปั่นแล้ว\n- เข้าเกณฑ์ **glomerular** เมื่อมีข้อใดข้อหนึ่ง\n  1. **RBC cast** — พบแม้อันเดียวก็นับ\n  2. **Dysmorphic RBC** — **เสียรูปแบบ microcystic มากกว่า 50%** หรือ **acanthocyte มากกว่า 5%**\n\n**ทำไมสีถึงต่างกัน** — เลือดจากโกลเมอรูลัสอยู่ใน tubule นาน เจอ **pH เป็นกรด** ทำให้ hemoglobin กลายเป็น **methemoglobin สีน้ำตาลคล้ำเหมือนโคล่า** และเพราะเลือดออกทีละน้อยกระจายตัวใน tubule จึง **ไม่จับเป็นลิ่ม** ส่วนเลือดจากกระเพาะปัสสาวะหรือท่อไตออกมาเป็นก้อนในที่โล่ง จึง **แดงสดและจับลิ่มได้**\n\n### วินิจฉัยแยกโรคเมื่อเป็น glomerular hematuria\n- **Post-streptococcal GN** — มีการติดเชื้อนำ 1–3 สัปดาห์ **C3 ต่ำ**\n- **IgA nephropathy** — ปัสสาวะเป็นเลือด **พร้อมกับ** การติดเชื้อทางเดินหายใจ (synpharyngitic) **complement ปกติ**\n- **RPGN** — ไตวายเร็วเป็นวันถึงสัปดาห์ **ต้องเจาะชิ้นเนื้อไตด่วน**\n- **Lupus nephritis** · **thin basement membrane disease** · **Alport syndrome**\n\n### กับดักที่คนพลาดจริง\n- **ประจำเดือนปนเปื้อน** เป็นสาเหตุอันดับต้น ๆ ของ hematuria ผลบวกลวง — ให้เก็บซ้ำหลังหมดประจำเดือน 1 สัปดาห์\n- **เม็ดเลือดแดงเยอะมากแต่ไม่มี pyuria** ให้คิดถึงโกลเมอรูลัส ไม่ใช่การติดเชื้อ — **การติดเชื้อต้องมีเม็ดเลือดขาวด้วยเสมอ**\n- **อายุมากกว่า 40 ปีที่มี hematuria แบบ non-glomerular** ต้องสืบค้นหา **มะเร็งทางเดินปัสสาวะ** ด้วย CT urography และส่องกล้องกระเพาะปัสสาวะ **อย่าหยุดแค่บอกว่าไม่ใช่โรคโกลเมอรูลัส**\n- **Dysmorphic RBC ต้องดูจากปัสสาวะสด** ถ้าตั้งทิ้งไว้นานเม็ดเลือดแดงปกติก็เสียรูปได้ กลายเป็นผลบวกลวง\n\n### ที่อาจารย์เน้นในสไลด์\nอาจารย์วาดแผนภูมิ **\"Red urine → dipstick → ปั่นดู supernatant\"** ไว้เป็นหน้าเดียวจบ และเน้นตัวเลขสองตัวคือ **acanthocyte > 5%** และ **distorted microcystic RBC > 50%** ว่าเป็นเกณฑ์ที่ใช้ตัดสินจริงในห้องปฏิบัติการ ไม่ใช่แค่ \"เห็นเม็ดเลือดแดงรูปร่างแปลก ๆ\"",
+          "pearls": [
+            "ปัสสาวะแดง + dipstick บวก ให้ปั่นดูน้ำส่วนบนก่อนเสมอ — น้ำใสคือ hematuria จริง น้ำแดงคือ myoglobin หรือ hemoglobin",
+            "สีโคล่า ไม่มีลิ่มเลือด โปรตีนเกิน 500 mg/วัน dysmorphic RBC และ RBC cast = glomerular ทั้งชุด",
+            "เกณฑ์ตัวเลข: acanthocyte > 5% หรือ distorted microcystic RBC > 50% หรือ RBC cast แม้อันเดียว",
+            "Hematuria แบบ non-glomerular ในคนอายุเกิน 40 ปี ต้องตัดมะเร็งทางเดินปัสสาวะออกเสมอ"
+          ],
+          "quiz": [
+            "N-MCQ-11",
+            "N-OLD-026",
+            "N-OLD-027",
+            "N-OLD-030"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-05",
+          "title": "Step approach — 6 คำถาม และกลุ่มอาการทางโกลเมอรูลัส 5 แบบ",
+          "minutes": 10,
+          "summary": "โครงคิดหลักของคาบนี้ พร้อมเกณฑ์วินิจฉัยและตารางเทียบ nephrotic กับ nephritic",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "2.3.14(12)",
+            "2.3.14(2)",
+            "B9.2.2(4)",
+            "2.1.39"
+          ],
+          "md": "นี่คือโครงที่อาจารย์ใช้ทั้งคาบ — **ถามซ้ำ 6 คำถามนี้ทุกครั้งที่เจอผู้ป่วยสงสัยโรคโกลเมอรูลัส**\n\n### 6 คำถามตามลำดับ\n1. **Is this glomerular disease?** → มี **glomerular hematuria และ/หรือ glomerular proteinuria** หรือไม่\n2. **What's the glomerular syndrome?** → จัดเข้ากลุ่มอาการ 1 ใน 5\n3. **What's the morphological diagnosis?** → MCD · FSGS · MN · deposition disease · ANCA · anti-GBM\n4. **Is this primary or secondary?** → **primary = renal limited** · **secondary = มีโรคระบบอื่นอยู่เบื้องหลัง**\n5. **What are the proper investigations?**\n6. **What are the proper treatments?**\n\n> **ข้อ 4 สำคัญที่สุดในเวชปฏิบัติ** — เพราะถ้าเป็น secondary การรักษาคือ **รักษาโรคต้นเหตุ** (หยุดยา รักษามะเร็ง รักษาการติดเชื้อ) ไม่ใช่ให้ยากดภูมิคุ้มกัน การให้ steroid กับ MN ที่เกิดจากมะเร็งโดยไม่หามะเร็งก่อนคือความผิดพลาดที่อันตราย\n\n### กลุ่มอาการทั้ง 5 และเกณฑ์\n\n**1 · Asymptomatic urinary abnormality**\n- **Isolated proteinuria 130 mg – 3 g/วัน** และ/หรือ\n- **Hematuria** — dysmorphic RBC **> 2 /HPF** ในปัสสาวะที่ปั่นแล้ว หรือ **RBC cast > 1**\n\n**2 · Nephrotic syndrome** (ต้องครบทั้งชุด)\n- **Proteinuria > 3.5 g/วัน**\n- **บวม (edema)**\n- **Hypoalbuminemia < 3.5 g/dL**\n- **Hypercholesterolemia > 200 mg/dL**\n- **Lipiduria** — **oval fat body หรือ fatty cast** (ส่องด้วย polarised light เห็นเป็น **Maltese cross**)\n\n**3 · Nephritic syndrome**\n- **Glomerular hematuria** (dysmorphic RBC / RBC cast)\n- **Proteinuria < 3 g/วัน**\n- **Azotemia**\n- **บวม**\n- **Oliguria หรือ AKI**\n- **ความดันโลหิตสูงที่เพิ่งเกิดขึ้น**\n\n**4 · Rapidly progressive glomerulonephritis (RPGN)**\n- **Acute GN ที่มี crescent จำนวนมาก — มักมากกว่า 30 – 50% ของโกลเมอรูลัส**\n- **ไตเสื่อมเร็ว — โดยทั่วไป GFR ลดลง 50% ภายใน 3 เดือน**\n\n**5 · Chronic glomerulonephritis (CGN)**\n- **ไตเสื่อมช้า ๆ นานกว่า 3 เดือน**\n- **Proteinuria > 3 g/วัน และ/หรือ glomerular hematuria**\n- **ความดันโลหิตสูง**\n- **ไตขนาดเล็ก หรือมี glomerulosclerosis รุนแรง**\n\n### ตารางเทียบ nephrotic กับ nephritic\n\n| ลักษณะ | **Nephrotic syndrome** | **Nephritic syndrome** |\n|---|---|---|\n| บวม | **++++** | ++ |\n| ความดันโลหิตสูง | **ไม่มี** | **มี** |\n| น้ำท่วมปอด | มักไม่มี | **อาจมี** |\n| ปัสสาวะเป็นฟอง / proteinuria | **++++** | ++ |\n| Serum albumin | **ต่ำ** | ปกติหรือต่ำเล็กน้อย |\n| Glomerular hematuria | **ไม่มี** | **มี** |\n| Oliguria / AKI | มักไม่มี | **มี** |\n\n### โรคไหนออกมาเป็นกลุ่มอาการไหน\n\n| โรค | Nephrotic | Nephritic |\n|---|---|---|\n| **Minimal change disease (MCD)** | **++++** | – |\n| **Membranous nephropathy (MN)** | **++++** | + |\n| **Focal segmental glomerulosclerosis (FSGS)** | +++ | ++ |\n| **Mesangial proliferative GN** (IgA nephropathy, lupus nephritis) | ++ | ++ |\n| **Membranoproliferative GN (MPGN)** | ++ | **+++** |\n| **Severe GN** (IgA nephropathy, lupus nephritis) | ++ | **+++** |\n| **Crescentic GN** | + | **++++** |\n\n> อ่านตารางนี้เป็นสเปกตรัม — **ยิ่งโรคทำให้เซลล์แบ่งตัวและอักเสบมาก (proliferative/crescentic) ยิ่งออกทาง nephritic** · **ยิ่งโรครบกวนเฉพาะ podocyte โดยไม่อักเสบ ยิ่งออกทาง nephrotic**\n\n### กับดักที่คนพลาดจริง\n- **Nephrotic ไม่ใช่แค่ \"โปรตีนเกิน 3.5\"** — ต้องมี hypoalbuminemia ด้วย ถ้าโปรตีนรั่วมากแต่ albumin ยังปกติ เรียก **nephrotic-range proteinuria เฉย ๆ** (พบใน FSGS ทุติยภูมิจากอ้วนและใน diabetic nephropathy ระยะแรก)\n- **ภาวะแทรกซ้อนของ nephrotic มาจากการเสียโปรตีนหลายชนิด ไม่ใช่แค่ albumin** — เสีย **antithrombin III → ลิ่มเลือดอุดตัน โดยเฉพาะ renal vein thrombosis ใน MN** · เสีย **immunoglobulin → ติดเชื้อ โดยเฉพาะ pneumococcus** · เสีย **vitamin D-binding protein** และ **transferrin**\n- **สองกลุ่มอาการทับซ้อนกันได้** โดยเฉพาะ FSGS, IgA nephropathy และ lupus nephritis — เจอคนไข้ที่มีทั้งโปรตีนเยอะและเม็ดเลือดแดงเยอะ **อย่าพยายามยัดเข้ากล่องเดียว แต่ให้คิดถึงโรคที่อยู่กลางตาราง**\n\n### ที่อาจารย์เน้นในสไลด์\nอาจารย์วางสไลด์ 6 คำถามนี้ซ้ำเป็นสไลด์คั่นทุกครั้งก่อนขึ้นหัวข้อใหม่ แล้วค่อยไฮไลต์ว่ากำลังตอบคำถามข้อไหนอยู่ — **ให้ใช้โครงนี้เป็นแผนที่ของทั้งคาบ** และจำตาราง **\"โรค × ++++\" ** ไว้ เพราะเป็นตัวเชื่อมระหว่างกลุ่มอาการที่เห็นข้างเตียงกับพยาธิสภาพที่จะเจอในชิ้นเนื้อไต",
+          "pearls": [
+            "เกณฑ์ nephrotic ครบชุด: โปรตีน > 3.5 g/วัน + บวม + albumin < 3.5 g/dL + cholesterol > 200 mg/dL + lipiduria (oval fat body/fatty cast)",
+            "ความดันโลหิตสูงกับ glomerular hematuria คือสองตัวที่แยก nephritic ออกจาก nephrotic ได้เร็วที่สุด",
+            "RPGN = crescent มากกว่า 30–50% และ GFR ตกครึ่งหนึ่งภายใน 3 เดือน — เจอเมื่อไรต้องเจาะไตด่วน",
+            "ภาวะแทรกซ้อน nephrotic มาจากโปรตีนที่เสียไป: antithrombin III (ลิ่มเลือด) · immunoglobulin (ติดเชื้อ) · vitamin D-binding protein · transferrin",
+            "ถามให้ครบ 6 คำถาม โดยเฉพาะข้อ 'primary หรือ secondary' เพราะมันเปลี่ยนการรักษาทั้งหมด"
+          ],
+          "quiz": [
+            "N-MCQ-07",
+            "N-OLD-016",
+            "N-OLD-017",
+            "N-OLD-019"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-06",
+          "title": "Minimal change disease — nephrotic ที่ชิ้นเนื้อดูปกติ",
+          "minutes": 9,
+          "summary": "โรค nephrotic อันดับหนึ่งของเด็ก ตอบสนอง steroid ดีมาก แต่ต้องมองหาสาเหตุทุติยภูมิในผู้ใหญ่",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.2.2(4)",
+            "2.3.14(12)",
+            "2.1.39"
+          ],
+          "md": "**กลไก** — เชื่อว่าเป็นโรคของ **podocyte** ที่ถูกรบกวนด้วยปัจจัยที่ไหลเวียนในเลือด (circulating permeability factor จาก T cell ที่ผิดปกติ และในบางรายมี **แอนติบอดีต่อ nephrin**) ทำให้ **foot process แบนราบไปทั้งหมด (diffuse effacement)** และ **เสียประจุลบ** โปรตีนจึงรั่วออกมาอย่างมหาศาล **แต่ไม่มีการอักเสบ ไม่มีการแบ่งตัวของเซลล์ และไม่มี immune complex มาเกาะ** — นี่คือเหตุผลที่ชิ้นเนื้อดู \"ปกติ\" ใต้กล้องธรรมดา และเป็นเหตุผลที่**ไม่มีความดันสูง ไม่มีเลือดในปัสสาวะ และ Cr ไม่ขึ้น**\n\n### ใครเป็น\n- **เด็กมากกว่าผู้ใหญ่ · ชายมากกว่าหญิง**\n- **70% ของกลุ่มอาการ nephrotic ในเด็กอายุน้อยกว่า 10 ปี**\n- **10 – 15% ของผู้ใหญ่**\n- ในผู้ใหญ่มีการกระจายแบบ **bimodal** — พบมากในเด็กเล็กและกลับมาพบมากอีกครั้งในผู้สูงอายุ\n\n### ภาพทางคลินิก\n- **เกิดขึ้นเร็วทันที (abrupt onset)** — คนไข้มักบอกวันที่เริ่มบวมได้\n- **โปรตีนรั่วมาก (heavy proteinuria)**\n- **Hypoalbuminemia < 3.0 g/dL**\n- **Hyperlipidemia**\n- **แทบไม่มีอาการของ glomerulonephritis** — ไม่ค่อยมีความดันสูง ไม่ค่อยมีเลือดในปัสสาวะ Cr ไม่ค่อยขึ้น\n\n### สาเหตุทุติยภูมิที่ต้องถามทุกราย\n\n| กลุ่ม | ตัวอย่าง |\n|---|---|\n| **การติดเชื้อ** | ไวรัส · ปรสิต |\n| **ยา** | **NSAIDs** · gold · lithium · interferon · ampicillin · rifampin |\n| **มะเร็ง** | **Hodgkin lymphoma** (คลาสสิกที่สุด) · lymphoma/leukemia · solid tumor |\n| **ภูมิแพ้** | อาหาร · ฝุ่น · ผึ้งต่อย · เกสร · poison ivy/oak · dermatitis herpetiformis |\n| **โรคอื่น** | SLE · หลังปลูกถ่ายเซลล์ต้นกำเนิดเม็ดเลือด |\n\n### พยาธิสภาพ — จำสามบรรทัด\n\n| | สิ่งที่เห็น |\n|---|---|\n| **LM** | **ปกติ ไม่มีพยาธิสภาพจำเพาะ** |\n| **IF** | **ไม่ติดสีอะไรเลย (no staining)** |\n| **EM** | **Diffuse fusion (effacement) ของ foot process · ไม่มี electron dense deposit** |\n\n### การรักษา (KDIGO)\n- **Prednisolone 1 mg/kg/วัน (สูงสุด 80 mg) วันละครั้ง** หรือ **2 mg/kg (สูงสุด 120 mg) วันเว้นวัน** *(เกรด 2C)*\n- ให้ **steroid ขนาดสูงอย่างน้อย 4 สัปดาห์** และ **นานที่สุดไม่เกิน 16 สัปดาห์** ถ้ายังไม่ complete remission *(2C)*\n- **ลดขนาดยาอย่างช้า ๆ (5 – 10 mg ต่อสัปดาห์) รวมระยะเวลาได้ถึง 6 เดือนหลัง remission**\n\n> **หมายเหตุให้ทันสมัย** — สไลด์อ้าง **KDIGO 2012** ฉบับปัจจุบันคือ **KDIGO 2021** ซึ่ง **ขนาดและระยะเวลาของ steroid ยังเหมือนเดิม** แต่เพิ่มทางเลือกให้ชัดขึ้นในรายที่ **กลับเป็นซ้ำบ่อยหรือพึ่ง steroid** ได้แก่ **cyclophosphamide, calcineurin inhibitor, mycophenolate หรือ rituximab** เพื่อลดผลข้างเคียงสะสมจาก steroid — ตอบข้อสอบตามสไลด์ได้ แต่ให้รู้ทางเลือกกลุ่มนี้ไว้ด้วย\n\n### กับดักที่คนพลาดจริง\n- **เด็กที่เข้าได้กับ MCD ไม่ต้องเจาะไตก่อน** — ให้ steroid ไปเลย เจาะเมื่อ **ไม่ตอบสนอง** หรือมีลักษณะผิดแผน (อายุน้อยกว่า 1 ปีหรือมากกว่า 12 ปี ความดันสูง เลือดในปัสสาวะมาก Cr ขึ้น C3 ต่ำ) · **ผู้ใหญ่ต้องเจาะเสมอ** เพราะสาเหตุกระจายกว่ามาก\n- **ผู้ใหญ่ที่เป็น MCD ต้องคัดกรอง Hodgkin lymphoma และถามยา NSAIDs ทุกราย**\n- **NSAIDs ทำให้เกิด MCD ร่วมกับ acute interstitial nephritis พร้อมกันได้** จึงเป็นรายที่ **มีทั้ง nephrotic และ Cr ขึ้น** ผิดจาก MCD ทั่วไป\n- **Cr ที่ขึ้นระหว่างรักษา MCD ไม่ได้แปลว่าโรคกำเริบเสมอ** — ต้องแยก **ภาวะขาดน้ำจากยาขับปัสสาวะ**, **renal vein thrombosis** และ **acute interstitial nephritis จากยา** (เบาะแส: **ปัสสาวะมีเม็ดเลือดขาวโดยเพาะเชื้อไม่ขึ้น และมี WBC cast**)",
+          "pearls": [
+            "MCD = LM ปกติ · IF ไม่ติดสี · EM foot process effacement ทั่วทั้งหมด ไม่มี deposit",
+            "เด็กเข้าเกณฑ์ MCD ให้ steroid ได้เลยไม่ต้องเจาะไต แต่ผู้ใหญ่ต้องเจาะทุกราย",
+            "ผู้ใหญ่เป็น MCD ให้มองหา Hodgkin lymphoma และ NSAIDs เสมอ",
+            "Steroid ขนาดสูงอย่างน้อย 4 สัปดาห์ สูงสุด 16 สัปดาห์ แล้วลดช้า ๆ 5–10 mg/สัปดาห์ นานถึง 6 เดือน",
+            "กำลังรักษา MCD แล้ว Cr ขึ้น + sterile pyuria + WBC cast = acute interstitial nephritis จากยา ไม่ใช่โรคกำเริบ"
+          ],
+          "quiz": [
+            "N-MCQ-12",
+            "N-OLD-021",
+            "N-OLD-022"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-07",
+          "title": "Focal segmental glomerulosclerosis — เมื่อ podocyte หายไปจริง ๆ",
+          "minutes": 9,
+          "summary": "สเปกตรัมกว้างตั้งแต่โปรตีนเล็กน้อยถึงมหาศาล แยก primary ออกจาก secondary ให้ได้ก่อนให้ยากดภูมิ",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.2.2(4)",
+            "2.3.14(12)",
+            "2.3.1"
+          ],
+          "md": "**กลไก** — ต่างจาก MCD ตรงที่ **podocyte ตายและหลุดออกไปจริง** เมื่อ podocyte หายไปบางจุด ผนังหลอดเลือดฝอยส่วนนั้นจะยึดติดกับ Bowman capsule แล้ว **กลายเป็นแผลเป็น (sclerosis)** — ชื่อโรคจึงบอกลักษณะครบ: **focal = เป็นบางโกลเมอรูลัส** และ **segmental = เป็นบางส่วนของโกลเมอรูลัสนั้น**\n\n> **ผลของการเป็นแค่บางจุด** — ถ้าเข็มเจาะไตดูดเนื้อมาได้น้อยหรือเจาะไม่โดนบริเวณที่เป็น **จะรายงานผลออกมาเป็น MCD ได้** นี่คือเหตุผลที่ **MCD ที่ไม่ตอบสนอง steroid มักกลายเป็น FSGS ที่เจาะพลาด**\n\n### ภาพทางคลินิก — กว้างกว่า MCD มาก\n- **เริ่มได้ทั้งเฉียบพลันและค่อยเป็นค่อยไป**\n- **ปริมาณโปรตีนหลากหลาย** ตั้งแต่ **non-nephrotic 1 – 2 g/วัน** จนถึง **มากกว่า 10 g/วัน**\n- **เข้าเกณฑ์ nephrotic syndrome 60 – 75%**\n- **ความดันโลหิตสูง 45 – 65%**\n- **Microscopic hematuria 30 – 50%**\n- **การทำงานของไตบกพร่อง 25 – 50%**\n\n**สังเกตว่าทั้งความดันสูง เลือดในปัสสาวะ และ Cr ที่ขึ้น พบได้บ่อยใน FSGS** ซึ่งเป็นสามอย่างที่ MCD แทบไม่มี — นี่คือจุดแยกข้างเตียงที่ใช้ได้จริง\n\n### สาเหตุทุติยภูมิ — แบ่งตามกลไก 3 กลุ่ม\n\n| กลุ่ม | สาเหตุ |\n|---|---|\n| **1. ไวรัส** | **HIV** (collapsing FSGS — HIVAN) · CMV · อาจเป็น parvovirus B19 |\n| **2. ยา** | **Pamidronate** · **interferon** · **anabolic steroid** · (และ **heroin ฉีดเข้าหลอดเลือดดำ**) |\n| **3. ภาระการกรองเกินตัว** — glomerulomegaly / จำนวน nephron ลดลง | **อ้วนมาก (morbid obesity)** · sickle cell disease · โรคหัวใจพิการแต่กำเนิดชนิดเขียว · โรคปอดที่ทำให้ขาดออกซิเจนเรื้อรัง · **ไตข้างเดียวแต่กำเนิด** · oligomeganephronia · reflux nephropathy · หลัง focal cortical necrosis · **หลังตัดไตออกหนึ่งข้าง** |\n\n**กลไกของกลุ่มที่ 3 ต้องเข้าใจ** — เมื่อ nephron เหลือน้อยลงหรือร่างกายใหญ่เกินไป nephron ที่เหลือต้อง **hyperfiltration** ความดันในโกลเมอรูลัสสูงขึ้นเรื้อรัง podocyte ยืดจนเสียหายและหลุดออกไป **นี่คือเหตุผลที่การรักษากลุ่มนี้คือลดความดันในโกลเมอรูลัสด้วย ACEI/ARB และลดน้ำหนัก ไม่ใช่ steroid**\n\n### พยาธิสภาพ\n\n| | สิ่งที่เห็น |\n|---|---|\n| **LM** | **Segmental sclerosis** — ชนิดที่พบบ่อยที่สุดคือ **NOS (not otherwise specified)** |\n| **IF** | **ปกติ หรือติด IgM, C1q และ C3 เฉพาะบริเวณที่เป็นแผลเป็น** (เป็นการดักจับแบบ nonspecific ไม่ใช่ immune complex จริง) |\n| **EM** | **ดูขอบเขตของ foot process effacement** — **primary มัก effacement แพร่กระจายทั้งหมด** ส่วน **secondary มัก effacement เป็นหย่อม ๆ** |\n\n> **จุดแยก primary กับ secondary ที่ใช้ตัดสินการรักษา** — **primary FSGS** มักมาแบบ **เฉียบพลัน โปรตีนมาก albumin ต่ำ ครบเกณฑ์ nephrotic และ EM effacement ทั้งหมด → ให้ยากดภูมิคุ้มกัน** ส่วน **secondary FSGS** มักมาแบบ **ค่อยเป็นค่อยไป โปรตีนน้อยกว่า albumin มักปกติ และ EM effacement เป็นหย่อม → รักษาที่ต้นเหตุ + ACEI/ARB ไม่ให้ steroid**\n\n### กับดักที่คนพลาดจริง\n- **โปรตีนรั่วระดับ nephrotic แต่ albumin ปกติ** เป็นภาพคลาสสิกของ **secondary FSGS จากความอ้วน** — ให้ steroid ไปก็ไม่ได้ผลและได้ผลข้างเคียงฟรี\n- **ผู้ป่วย HIV ที่โปรตีนรั่วมากและอัลตราซาวด์เห็น \"ไตโตทั้งสองข้างและ echo เพิ่มขึ้น\"** = **HIVAN (collapsing FSGS)** — ผิดจากโรคไตเรื้อรังทั่วไปที่ไตมักเล็กลง · **การรักษาหลักคือยาต้านไวรัส**\n- **รอยแผลเป็นเป็นเส้นตามแนวหลอดเลือดที่แขน** = การฉีดสารเสพติดเข้าหลอดเลือดดำ → นึกถึง **heroin-associated nephropathy ซึ่งมักเป็น FSGS** และต้อง **คัดกรอง HIV, ไวรัสตับอักเสบบีและซี รวมถึงลิ้นหัวใจอักเสบติดเชื้อ** เสมอ\n- **FSGS กลับเป็นซ้ำในไตที่ปลูกถ่ายได้เร็วมาก (เป็นชั่วโมงถึงวัน)** ซึ่งเป็นหลักฐานสนับสนุนว่ามี circulating factor จริง",
+          "pearls": [
+            "FSGS ต่างจาก MCD ตรงที่มีความดันสูง เลือดในปัสสาวะ และ Cr ขึ้นได้บ่อย (30–65%)",
+            "เจาะไตได้ผลเป็น MCD แต่ไม่ตอบสนอง steroid ให้สงสัย FSGS ที่เจาะพลาดบริเวณรอยโรค",
+            "Primary FSGS: เฉียบพลัน + ครบเกณฑ์ nephrotic + EM effacement ทั้งหมด → ให้ยากดภูมิ · Secondary: ค่อยเป็นค่อยไป + albumin ปกติ + effacement เป็นหย่อม → รักษาต้นเหตุ + ACEI/ARB",
+            "HIV + โปรตีนมหาศาล + ไตโตสองข้าง echo เพิ่ม = HIVAN (collapsing FSGS) รักษาด้วยยาต้านไวรัส",
+            "อ้วนมาก ไตข้างเดียว หรือหลังตัดไต ทำให้เกิด FSGS จาก hyperfiltration — รักษาด้วยการลดความดันในโกลเมอรูลัส ไม่ใช่ steroid"
+          ],
+          "quiz": [
+            "N-MCQ-09",
+            "N-OLD-023",
+            "N-OLD-024"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-08",
+          "title": "Membranous nephropathy — nephrotic ของผู้ใหญ่ที่ต้องตามหามะเร็ง",
+          "minutes": 9,
+          "summary": "Subepithelial deposit กับ spike · กฎสามส่วน · ลิ่มเลือดอุดตันที่พบบ่อยที่สุดในกลุ่มโรคไต",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.2.2(4)",
+            "2.3.14(12)",
+            "2.3.2"
+          ],
+          "md": "**กลไก** — แอนติบอดี (ที่พบบ่อยที่สุดคือ **anti-PLA2R**) จับกับแอนติเจนบนผิว podocyte **ด้านที่หันออกนอกหลอดเลือด** เกิดเป็น immune complex สะสมอยู่ **ใต้ podocyte เหนือ GBM = subepithelial** ตำแหน่งนี้สำคัญมาก เพราะ **complement ที่ถูกกระตุ้น (C5b-9) ทำร้าย podocyte ได้โดยตรง แต่เซลล์อักเสบในกระแสเลือดเข้าไม่ถึง** เนื่องจากถูก GBM กั้นไว้\n\n> **นี่คือเหตุผลที่ MN เป็นโรคที่ \"โปรตีนรั่วมากแต่ไม่อักเสบ\"** — จึงมาแบบ **ตะกอนปัสสาวะสะอาด ไม่มีความดันสูงชัดเจน และการทำงานของไตปกติหรือลดลงเล็กน้อย** ต่างจากโรคที่ deposit อยู่ **ใต้ endothelium (subendothelial)** อย่าง lupus class IV ซึ่งเซลล์อักเสบเข้าถึงได้เต็มที่จึงออกมาเป็น nephritic รุนแรง\n\n### ใครเป็น\n- **ผู้ใหญ่อายุมากกว่า 40 ปี (พบมากช่วง 30 – 50 ปี)**\n- **ชาย : หญิง = 2 – 3 : 1**\n- เป็นสาเหตุอันดับต้นของ nephrotic syndrome ในผู้ใหญ่ที่ไม่ได้เป็นเบาหวาน\n\n### ภาพทางคลินิก\n- **มากกว่า 80% มีโปรตีนมากกว่า 3 g/วัน**\n- **เริ่มแบบค่อยเป็นค่อยไปเกือบทุกราย (insidious onset)**\n- **ตะกอนปัสสาวะสะอาด (bland urine sediment)**\n- **Microscopic hematuria เล็กน้อย 30 – 40%**\n- **ความดันโลหิตสูง 15 – 55%**\n- **การทำงานของไตปกติหรือลดลงเล็กน้อย**\n- **Hypoalbuminemia · LDL และ VLDL สูง**\n- **ลิ่มเลือดอุดตัน — renal vein thrombosis, PE, DVT**\n- **ความเสี่ยงมะเร็งเพิ่มขึ้นตามอายุ**\n\n**กฎสามส่วน (rule of thirds) ของธรรมชาติโรค** — **หายเองประมาณ 30% · คงที่ 30% · ดำเนินโรคแย่ลง 30%** จึงเป็นเหตุผลที่**ไม่ได้ให้ยากดภูมิคุ้มกันทุกราย** แต่ให้เฉพาะรายที่เสี่ยงสูง\n\n### สาเหตุทุติยภูมิ — ต้องไล่ให้ครบก่อนเรียกว่า primary\n\n| กลุ่ม | ตัวอย่าง |\n|---|---|\n| **การติดเชื้อ** | **HBV, HCV, HIV** · ปรสิต (filariasis, schistosomiasis, malaria) · โรคเรื้อน · ซิฟิลิส |\n| **มะเร็ง** | **solid tumor — ปอด 26% · ต่อมลูกหมาก 15% · โรคเลือด 14% · ลำไส้ใหญ่ 11%** · mesothelioma · melanoma |\n| **โรคภูมิต้านตนเอง** | **SLE (class V)** · thyroiditis · เบาหวาน · rheumatoid arthritis · **Sjögren syndrome** · dermatomyositis · MCTD · ankylosing spondylitis · IgG4-related disease |\n| **ยาและสารพิษ** | **NSAIDs และ COX-2 inhibitor** · gold · **d-penicillamine** · captopril · anti-TNFα · **ปรอท** · lithium · formaldehyde |\n| **Alloimmune** | graft versus host disease · MN ที่เกิดใหม่ในไตปลูกถ่าย |\n\n### พยาธิสภาพ\n\n| | สิ่งที่เห็น |\n|---|---|\n| **LM** | **GBM หนาตัวทั่วทั้งหมด (diffuse thickening)** · ย้อม silver เห็น **spike appearance** — คือเนื้อ GBM ที่งอกแทรกขึ้นมาระหว่างก้อน deposit |\n| **IF** | **IgG และ C3 ติดเป็นเม็ดละเอียดตลอดแนวผนังหลอดเลือดฝอย (diffuse granular capillary wall staining)** |\n| **EM** | **Subepithelial electron dense deposit** |\n\n### การสืบค้นที่ต้องทำ (แนวทาง KDIGO 2021)\n- **ตรวจ anti-PLA2R antibody ในเลือด** — ถ้าบวกร่วมกับภาพทางคลินิกที่เข้าได้ **บางรายไม่จำเป็นต้องเจาะไต** และใช้ระดับแอนติบอดีติดตามการตอบสนองต่อการรักษาได้\n- **คัดกรองมะเร็งตามอายุและเพศ** — โดยเฉพาะ **anti-PLA2R ลบ** ซึ่งเพิ่มโอกาสเป็น secondary\n- **ตรวจ HBsAg, anti-HCV, anti-HIV, ANA และทบทวนรายการยา (โดยเฉพาะ NSAIDs)**\n\n> **ข้อที่สไลด์ยังไม่ได้ลงรายละเอียด** — anti-PLA2R เป็นเครื่องมือมาตรฐานของ **KDIGO 2021** ที่เปลี่ยนเวชปฏิบัติไปมาก (พบบวกราว 70 – 80% ของ primary MN) และปัจจุบัน **rituximab เป็นทางเลือกแรกของ primary MN ที่เสี่ยงปานกลางถึงสูง** แทนสูตร cyclophosphamide สลับ steroid แบบเดิม\n\n### กับดักที่คนพลาดจริง\n- **ผู้ใหญ่อายุมากที่เป็น nephrotic + microscopic hematuria ต้องตามหามะเร็งเสมอ** — MN เป็นชนิดที่สัมพันธ์กับมะเร็งมากที่สุด และมะเร็งอาจเจอหลังวินิจฉัยโรคไตเป็นเดือนถึงปี\n- **Renal vein thrombosis พบใน MN บ่อยที่สุดในบรรดาโรค nephrotic ทั้งหมด** — สงสัยเมื่อมี **ปวดสีข้างเฉียบพลัน ปัสสาวะเป็นเลือดมากขึ้น หรือ Cr สูงขึ้นทันที** ให้ส่ง CT venography\n- **อย่ารีบให้ยากดภูมิคุ้มกัน** เพราะหายเองได้ 30% — ให้การรักษาประคับประคอง (ACEI/ARB, ควบคุมความดัน, statin, ลดเกลือ) ก่อน แล้วประเมินความเสี่ยงซ้ำ\n- **MN จาก SLE คือ class V** ต้องแยกออกจาก primary MN ให้ได้ เพราะแนวทางรักษาต่างกัน — เบาะแสคือ **IF ติดแบบ full house และมี deposit ที่ mesangium ร่วมด้วย**",
+          "pearls": [
+            "MN: LM เห็น GBM หนาและ spike · IF เห็น IgG กับ C3 เป็นเม็ดตลอดแนวผนัง · EM เห็น subepithelial deposit",
+            "Deposit อยู่ subepithelial เซลล์อักเสบเข้าไม่ถึง จึงโปรตีนรั่วมากแต่ตะกอนปัสสาวะสะอาด",
+            "กฎสามส่วน: หายเอง 30% คงที่ 30% แย่ลง 30% — จึงไม่ให้ยากดภูมิทุกราย",
+            "ผู้ใหญ่อายุมากเป็น MN ต้องคัดกรองมะเร็ง โดยเฉพาะปอด ต่อมลูกหมาก โรคเลือด และลำไส้ใหญ่",
+            "MN เป็นโรคที่เกิด renal vein thrombosis บ่อยที่สุด — ปวดสีข้าง + เลือดในปัสสาวะมากขึ้น + Cr ขึ้นทันที ให้นึกถึง"
+          ],
+          "quiz": [
+            "N-OLD-020"
+          ],
+          "extra": [
+            {
+              "stem": "A 58-year-old man has 6 months of progressive leg swelling. Urine protein is 6 g/day with a bland sediment, albumin 2.4 g/dL and creatinine 1.0 mg/dL. Kidney biopsy shows diffuse thickening of the capillary walls with silver-positive spikes, granular IgG and C3 along the capillary wall on immunofluorescence, and subepithelial electron dense deposits. Which investigation is most important to perform next?",
+              "choices": [
+                "Serum anti-PLA2R antibody together with age-appropriate malignancy screening and viral serology",
+                "Anti-GBM antibody and urgent plasma exchange",
+                "Serum ANCA and pulse cyclophosphamide without further testing",
+                "Repeat kidney biopsy in 6 weeks to look for crescents",
+                "Renal artery duplex ultrasound to exclude renal artery stenosis"
+              ],
+              "answer": 0,
+              "explain": "ภาพชิ้นเนื้อ (**GBM หนา + spike, IgG/C3 แบบ granular ตามผนัง, subepithelial deposit**) คือ **membranous nephropathy** เต็มรูปแบบ · คำถามถัดไปตามโครง 6 ข้อของคาบนี้คือ **\"primary หรือ secondary\"** จึงต้องส่ง **anti-PLA2R** (บวกราว 70–80% ของ primary) พร้อม **คัดกรองมะเร็งตามอายุและเพศ** และ **serology ของ HBV/HCV/HIV กับ ANA** — ถ้า anti-PLA2R ลบ โอกาสเป็น secondary สูงขึ้นมาก จึงต้องตามหาต้นเหตุให้เจอก่อนตัดสินใจให้ยากดภูมิคุ้มกัน\n\n- **Anti-GBM + plasma exchange** ใช้กับ **anti-GBM disease** ซึ่งมาแบบ **RPGN** ไตวายเร็วและมี crescent ไม่ใช่ nephrotic ที่ตะกอนสะอาดและ Cr ปกติ\n- **ANCA + cyclophosphamide** ใช้กับ **pauci-immune crescentic GN** ซึ่ง **IF แทบไม่ติดสี** ตรงข้ามกับผู้ป่วยรายนี้ที่ติด IgG/C3 ชัดเจน\n- **เจาะชิ้นเนื้อซ้ำ** ไม่มีประโยชน์ เพราะได้การวินิจฉัยทางพยาธิวิทยาครบแล้ว สิ่งที่ยังขาดคือสาเหตุ\n- **Renal artery stenosis** ทำให้ความดันสูงและไตเสื่อม **ไม่ทำให้โปรตีนรั่วระดับ nephrotic และไม่มี deposit**",
+              "pearl": "เจอ MN ในชิ้นเนื้อแล้วงานยังไม่จบ — ต้องส่ง anti-PLA2R และคัดกรองมะเร็ง ไวรัส และยา เพื่อตอบว่า primary หรือ secondary ก่อนเลือกการรักษา",
+              "nl": [
+                "B9.2.2(4)",
+                "2.3.14(12)",
+                "2.3.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nephro-14-09",
+          "title": "IgA nephropathy — เลือดในปัสสาวะพร้อมกับการติดเชื้อ",
+          "minutes": 8,
+          "summary": "โรคโกลเมอรูลัสปฐมภูมิที่พบบ่อยที่สุดในโลก จุดตัดสินคือ synpharyngitic hematuria กับ complement ปกติ",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "2.3.14(2)",
+            "2.1.43",
+            "2.3.14-3(1)"
+          ],
+          "md": "**กลไก** — ผู้ป่วยสร้าง **IgA1 ที่ขาดน้ำตาล galactose (galactose-deficient IgA1)** ร่างกายมองว่าแปลกปลอมจึงสร้าง **IgG ต่อต้าน** เกิดเป็น immune complex ลอยในกระแสเลือดแล้วไป **ตกค้างที่ mesangium** กระตุ้น mesangial cell ให้แบ่งตัวและหลั่งสารอักเสบ · เนื่องจาก **IgA1 ส่วนใหญ่ผลิตที่เยื่อบุ (mucosa)** เมื่อมีการติดเชื้อที่เยื่อบุ การผลิตจะพุ่งขึ้น **ภายใน 1 – 2 วัน** — นี่คือที่มาของคำว่า **synpharyngitic hematuria**\n\n> **เปรียบเทียบให้ชัด** — **IgA nephropathy เลือดออก \"พร้อมกับ\" การติดเชื้อ (1–2 วัน) เพราะแอนติบอดีมีอยู่แล้ว** ส่วน **APSGN เลือดออก \"หลัง\" การติดเชื้อ 1–3 สัปดาห์ เพราะต้องรอเวลาสร้างแอนติบอดีและก่อ immune complex** · และ **IgA nephropathy complement ปกติ** แต่ **APSGN C3 ต่ำ**\n\n### ภาพทางคลินิก — สเปกตรัมกว้างมาก\n\n| อาการ | ความถี่ |\n|---|---|\n| **ปัสสาวะเป็นเลือดตาเห็นซ้ำ ๆ กระตุ้นด้วยการติดเชื้อเยื่อบุ (synpharyngitic)** | **40 – 50%** |\n| **Microscopic hematuria ร่วมกับหรือไม่มีโปรตีนรั่ว** | **30 – 40%** |\n| **Nephrotic syndrome** | **5%** |\n| **RPGN** | **น้อยกว่า 10%** |\n\n### สาเหตุทุติยภูมิ (secondary IgA nephropathy)\n\n| กลุ่มโรค | ตัวอย่าง |\n|---|---|\n| **โรคข้อและภูมิต้านตนเอง** | **Ankylosing spondylitis** · rheumatoid arthritis · Reiter syndrome · uveitis |\n| **โรคทางเดินอาหาร** | **Celiac disease** |\n| **โรคตับ** | **ตับแข็งจากสุรา** · ตับแข็งที่ไม่ได้เกิดจากสุรา · โรคตับจากพยาธิใบไม้ |\n| **โรคปอด** | Sarcoidosis |\n| **โรคผิวหนัง** | Dermatitis herpetiformis |\n| **การติดเชื้อ** | **HIV** · ไวรัสตับอักเสบบี (ในพื้นที่ระบาด) |\n\n**โรคตับเป็นสาเหตุทุติยภูมิที่สำคัญ** เพราะตับเป็นอวัยวะหลักที่กำจัด IgA complex ออกจากกระแสเลือด เมื่อตับแข็งการกำจัดลดลง IgA จึงไปตกที่ mesangium มากขึ้น\n\n### พยาธิสภาพ\n\n| | สิ่งที่เห็น |\n|---|---|\n| **LM** | **Mesangial expansion และ hypercellularity** |\n| **IF** | **IgA ติดที่ mesangium** ← **ข้อวินิจฉัย ต้องมีเสมอ** |\n| **EM** | **Electron dense deposit ที่ mesangium** |\n\n### การรักษา (KDIGO)\n- **ACEI หรือ ARB ระยะยาว** เมื่อ **โปรตีนมากกว่า 1 g/วัน** และปรับขนาดขึ้นตามความดันที่ทนได้ *(1B)*\n- **ปรับ ACEI/ARB ขึ้นจนโปรตีนน้อยกว่า 1 g/วัน** *(2C)*\n- **น้ำมันปลา** เมื่อโปรตีนยังมากกว่า 1 g/วัน หลังการรักษาประคับประคองเต็มที่ 3 – 6 เดือน *(2D)*\n- **Corticosteroid 6 เดือน** เมื่อโปรตีนยังมากกว่า 1 g/วัน หลังการรักษาประคับประคองเต็มที่ 3 – 6 เดือน **และ GFR มากกว่า 50 mL/min/1.73 m²** *(2C)*\n\n> **หมายเหตุให้ทันสมัย** — สไลด์อ้าง **KDIGO 2012** ฉบับ **KDIGO 2021** เปลี่ยนไปสามเรื่องที่ควรรู้: (1) **เป้าความดันเข้มขึ้นเป็น systolic < 120 mmHg** (2) **ระวัง steroid มากขึ้น** เพราะการศึกษา **STOP-IgAN และ TESTING** พบผลข้างเคียงรุนแรงโดยเฉพาะการติดเชื้อ จึงให้เฉพาะรายที่เสี่ยงสูงและคุยความเสี่ยงกับผู้ป่วยก่อน และ (3) **น้ำมันปลามีหลักฐานอ่อนลง** ขณะที่ **SGLT2 inhibitor กลายเป็นการรักษาประคับประคองมาตรฐานของโรคไตเรื้อรังที่มีโปรตีนรั่ว** — ตอบข้อสอบตามสไลด์ได้ แต่ให้รู้ไว้ว่าเวชปฏิบัติจริงเปลี่ยนแล้ว\n\n### กับดักที่คนพลาดจริง\n- **\"ติดเชื้อทางเดินหายใจแล้วปัสสาวะเป็นเลือด\" ต้องถามว่าห่างกันกี่วัน** — นี่คือคำถามเดียวที่แยก IgA nephropathy ออกจาก APSGN ได้เร็วที่สุด และเป็นข้อที่ออกสอบซ้ำที่สุดของคาบนี้\n- **complement ปกติไม่ได้ตัดโรคโกลเมอรูลัสออก** — IgA nephropathy, anti-GBM disease และ ANCA vasculitis ล้วน **complement ปกติ** ส่วนกลุ่มที่ **C3 ต่ำ** คือ APSGN, lupus nephritis (C3 และ C4 ต่ำทั้งคู่), MPGN และ endocarditis-associated GN\n- **IgA nephropathy ไม่ใช่โรคไม่ร้ายแรงเสมอไป** — ราว 20 – 40% ดำเนินไปสู่ไตวายระยะสุดท้ายใน 20 ปี ตัวทำนายที่แย่คือ **โปรตีนมากกว่า 1 g/วันต่อเนื่อง ความดันสูง Cr สูงตั้งแต่แรก และพังผืดใน interstitium**\n- **Henoch–Schönlein purpura (IgA vasculitis) คือโรคเดียวกันในรูปแบบทั่วร่างกาย** — ผื่นจ้ำเลือดที่ขา ปวดข้อ ปวดท้อง ร่วมกับไตอักเสบ IgA",
+          "pearls": [
+            "IgA nephropathy = synpharyngitic hematuria (เลือดออกภายใน 1–2 วันของการติดเชื้อ) + complement ปกติ · APSGN = ทิ้งช่วง 1–3 สัปดาห์ + C3 ต่ำ",
+            "ข้อวินิจฉัยคือ IF ติด IgA ที่ mesangium — ไม่มีอันนี้วินิจฉัยไม่ได้",
+            "ตับแข็งทำให้เกิด secondary IgA nephropathy เพราะตับกำจัด IgA complex ไม่ได้",
+            "เป้าการรักษาคือกด ACEI/ARB จนโปรตีนน้อยกว่า 1 g/วัน ก่อนจะคิดถึง steroid",
+            "กลุ่ม C3 ต่ำ: APSGN · lupus nephritis · MPGN · endocarditis — กลุ่ม complement ปกติ: IgA nephropathy · anti-GBM · ANCA"
+          ],
+          "quiz": [
+            "N-OLD-033"
+          ],
+          "extra": [
+            {
+              "stem": "A 29-year-old man with biopsy-proven IgA nephropathy has blood pressure 138/86 mmHg, creatinine 1.1 mg/dL with eGFR 82 mL/min/1.73 m2, and urine protein 1.8 g/day on no medication. Which is the most appropriate initial management?",
+              "choices": [
+                "Start an ACE inhibitor or ARB and titrate the dose upwards aiming to reduce proteinuria below 1 g/day",
+                "Start high-dose prednisolone 1 mg/kg/day immediately for 6 months",
+                "Start prophylactic penicillin to prevent further episodes of macroscopic haematuria",
+                "Perform tonsillectomy, as this reliably induces remission in IgA nephropathy",
+                "Observe without treatment because proteinuria below 3.5 g/day carries no risk of progression"
+              ],
+              "answer": 0,
+              "explain": "**โปรตีนมากกว่า 1 g/วันคือตัวทำนายการดำเนินโรคที่แข็งแรงที่สุดของ IgA nephropathy** แนวทาง KDIGO จึงให้เริ่มด้วย **ACEI หรือ ARB ระยะยาวและปรับขนาดขึ้นจนโปรตีนต่ำกว่า 1 g/วัน** ควบคู่กับการคุมความดัน · กลไกคือลดความดันใน glomerulus ผ่านการขยาย efferent arteriole ซึ่งลดทั้งแรงกลที่ทำร้าย podocyte และปริมาณโปรตีนที่ผ่านออกมา\n\n- **Steroid ขนาดสูงทันที** เร็วเกินไป — จะพิจารณาเมื่อ **โปรตีนยังเกิน 1 g/วันหลังการรักษาประคับประคองเต็มที่ 3–6 เดือน และ GFR ยังมากกว่า 50** เท่านั้น และการศึกษา **STOP-IgAN/TESTING** ชี้ว่าผลข้างเคียงจากการติดเชื้อสูง\n- **Penicillin ป้องกัน** ไม่มีที่ใช้ — การติดเชื้อเป็นเพียงตัวกระตุ้นการผลิต IgA ไม่ใช่สาเหตุที่กำจัดได้ด้วยยาปฏิชีวนะ (ต่างจาก APSGN ที่ให้ยาฆ่าเชื้อเพื่อกำจัด streptococcus)\n- **ตัดต่อมทอนซิล** หลักฐานยังขัดแย้งกันและจำกัดอยู่ในบางประเทศ **ไม่ใช่การรักษามาตรฐาน**\n- **การเฝ้าดูเฉย ๆ ผิด** — ความเชื่อว่าต้องถึง 3.5 g/วันจึงจะเสี่ยงนั้นไม่จริง **เกณฑ์ที่ใช้ตัดสินใน IgA nephropathy คือ 1 g/วัน**",
+              "pearl": "ใน IgA nephropathy ตัวเลขที่ต้องจำคือ 1 กรัมต่อวัน — เกินเมื่อไรให้ ACEI/ARB และปรับขึ้นจนต่ำกว่านั้น",
+              "nl": [
+                "2.3.14(2)",
+                "2.3.14-3(1)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nephro-14-10",
+          "title": "Acute post-streptococcal glomerulonephritis — ต้นแบบของ nephritic syndrome",
+          "minutes": 9,
+          "summary": "ทิ้งช่วงหลังติดเชื้อ · C3 ต่ำชั่วคราว · hump ใต้ epithelium · ยาฆ่าเชื้อไม่ได้รักษาไตที่อักเสบแล้ว",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "B9.2.2(3)",
+            "2.3.14(2)",
+            "2.2.4"
+          ],
+          "md": "**กลไก** — เชื้อ **nephritogenic streptococcus** ปล่อยแอนติเจน (NAPlr และ SPE B) ที่ไปเกาะค้างในโกลเมอรูลัส **ร่างกายต้องใช้เวลา 1 – 3 สัปดาห์สร้างแอนติบอดี** แล้วจึงเกิด immune complex ในตำแหน่งนั้น กระตุ้น **complement ทาง alternative pathway** → **C3 ต่ำแต่ C4 ปกติ** และดึงเม็ดเลือดขาว neutrophil เข้ามาอุด capillary lumen → **GFR ตก → น้ำและเกลือคั่ง → ความดันสูงและบวม**\n\n> **ระยะฟักตัวคือหัวใจของการวินิจฉัย** — **หลังติดเชื้อที่ผิวหนัง 4 – 6 สัปดาห์** · **หลังคออักเสบ 2 – 4 สัปดาห์** · ภาพทางคลินิกของ nephritic เองมักปรากฏภายในเวลาน้อยกว่า 2 สัปดาห์หลังเริ่มมีอาการ\n\n### ภาพทางคลินิก\n\n| อาการ | ความถี่ |\n|---|---|\n| **ปัสสาวะเป็นเลือด** (microscopic เกือบ 100%) | **100%** |\n| **บวมและภาวะน้ำเกิน จนถึงหัวใจล้มเหลว** | **80 – 90%** |\n| **ความดันโลหิตสูง** | **60 – 80%** |\n| **ปัสสาวะออกน้อย** | **10 – 58%** |\n| **โปรตีนระดับ nephrotic** (พบไม่บ่อย) | **20%** |\n\n### การตรวจทางห้องปฏิบัติการ\n\n**Complement**\n- **ต่ำใน 90% ของผู้ป่วย**\n- **C3 และ CH50 ลดลงภายใน 2 สัปดาห์**\n- **C4 มักปกติ** (เพราะกระตุ้นทาง alternative pathway)\n- **กลับมาปกติภายใน 8 – 10 สัปดาห์** ← **ข้อนี้สำคัญมาก ถ้าเกิน 12 สัปดาห์แล้ว C3 ยังต่ำ ต้องเปลี่ยนไปคิดถึง MPGN, C3 glomerulopathy หรือ lupus nephritis และควรเจาะชิ้นเนื้อไต**\n\n**แอนติบอดีต่อ streptococcus**\n- **Anti-streptolysin O (ASO) บวก 30%** — ไวต่อการติดเชื้อที่คอ แต่ **ไขมันที่ผิวหนังยับยั้ง streptolysin O จึงมักลบในผู้ที่ติดเชื้อทางผิวหนัง**\n- **Anti-DNase B บวก 70%** — **ไวกว่ามากโดยเฉพาะเมื่อติดเชื้อที่ผิวหนัง**\n\n### พยาธิสภาพ\n\n| | สิ่งที่เห็น |\n|---|---|\n| **LM** | **Exudative GN** — endocapillary proliferative GN ที่มี **neutrophil แทรกเต็มไปหมด** |\n| **IF** | **IgG และ C3 ติดเป็นเม็ดหยาบ (coarse granular)** — ลาย \"starry sky\" |\n| **EM** | **Subepithelial electron dense deposit ขนาดใหญ่รูปโหนก = \"hump\"** |\n\n> **เทียบกับ MN ให้ชัด** — **ทั้งคู่ deposit อยู่ subepithelial** แต่ **APSGN เป็นก้อนใหญ่กระจัดกระจาย (hump) และมีการอักเสบเต็มที่** ขณะที่ **MN เป็นเม็ดเล็กสม่ำเสมอตลอดแนวและไม่มีการอักเสบ** — ความต่างนี้อธิบายว่าทำไมโรคหนึ่งออกมาเป็น nephritic และอีกโรคออกมาเป็น nephrotic\n\n### การรักษา\n- **ยาปฏิชีวนะ — penicillin หรือ erythromycin**\n  - **เป้าหมายคือกำจัดเชื้อ streptococcus และป้องกันการแพร่เชื้อ nephritogenic strain ไปสู่คนใกล้ชิด**\n  - **ยาปฏิชีวนะช่วยแก้ไตอักเสบที่เกิดแล้วไม่ได้** เพราะ **immune complex ก่อตัวขึ้นเรียบร้อยแล้ว** ← จุดที่ข้อสอบชอบถาม\n- **การรักษาประคับประคองคือหลัก** — **จำกัดเกลือและน้ำ · ยาขับปัสสาวะกลุ่ม loop · ยาลดความดัน** จนกว่า GFR จะฟื้น\n- **Pulse IV methylprednisolone** พิจารณาเฉพาะรายที่มาแบบ **RPGN** โดยอนุมานจากโรค crescentic GN อื่น ๆ — **ยังไม่มีหลักฐานจากการศึกษาแบบสุ่ม**\n\n**พยากรณ์โรค** — **เด็กหายเกือบทั้งหมด** ปัสสาวะออกดีขึ้นใน 1 สัปดาห์ Cr กลับปกติใน 3 – 4 สัปดาห์ แต่ **microscopic hematuria อาจอยู่นานถึง 1 – 2 ปี ซึ่งเป็นเรื่องปกติ ไม่ต้องตกใจ** · ผู้ใหญ่โดยเฉพาะผู้สูงอายุพยากรณ์โรคแย่กว่า\n\n### กับดักที่คนพลาดจริง\n- **ความดันสูงใน APSGN เกิดจากน้ำเกิน ไม่ใช่หลอดเลือดหดตัว** — การรักษาหลักจึงเป็น **ยาขับปัสสาวะและจำกัดเกลือ** ไม่ใช่เร่งให้ยาขยายหลอดเลือดอย่างเดียว · ในเด็กที่ความดันสูงมากอาจมาด้วย **ชักจาก hypertensive encephalopathy** ซึ่งเป็นภาวะฉุกเฉิน\n- **ASO ลบไม่ตัดโรค** โดยเฉพาะถ้าติดเชื้อมาจากผิวหนัง — ต้องส่ง **anti-DNase B**\n- **C3 ที่ยังต่ำเกิน 8 – 10 สัปดาห์ผิดปกติ** ต้องหาโรคอื่น อย่าปล่อยไว้ว่าเป็น APSGN ที่หายช้า\n- **อย่าให้ steroid ใน APSGN ทั่วไป** — โรคหายเองได้ การให้ยากดภูมิคุ้มกันมีแต่โทษ ยกเว้นรายที่มาเป็น RPGN จริง ๆ\n\n### ที่อาจารย์เน้นในสไลด์\nอาจารย์ย้ำสองประโยคในสไลด์การรักษาว่า **ยาปฏิชีวนะมีไว้ \"resolve streptococcal infection and prevent the spread\"** และ **\"antibiotics are of little help for reversing GN\"** — ให้จำคู่กันไว้ เพราะข้อสอบมักให้เลือกว่าจะให้ยาปฏิชีวนะเพื่ออะไร",
+          "pearls": [
+            "ระยะฟักตัว: หลังติดเชื้อผิวหนัง 4–6 สัปดาห์ หลังคออักเสบ 2–4 สัปดาห์ — ถ้าเลือดออกพร้อมการติดเชื้อให้คิด IgA nephropathy แทน",
+            "C3 และ CH50 ต่ำแต่ C4 ปกติ (alternative pathway) และต้องกลับมาปกติภายใน 8–10 สัปดาห์ ถ้าไม่กลับให้เจาะไต",
+            "ติดเชื้อที่ผิวหนังให้ส่ง anti-DNase B (บวก 70%) เพราะ ASO มักลบ (บวกแค่ 30%)",
+            "EM เห็น hump ใต้ epithelium · IF ติด IgG กับ C3 เป็นเม็ดหยาบ · LM เห็น neutrophil เต็มไปหมด",
+            "ยาปฏิชีวนะให้เพื่อกำจัดเชื้อและกันแพร่ ไม่ได้ทำให้ไตที่อักเสบแล้วดีขึ้น — การรักษาหลักคือขับปัสสาวะและจำกัดเกลือ"
+          ],
+          "quiz": [
+            "N-MCQ-10",
+            "N-OLD-029"
+          ],
+          "extra": []
+        },
+        {
+          "id": "nephro-14-11",
+          "title": "Lupus nephritis — จัดชั้น ISN/RPS แล้วรักษาตามชั้น",
+          "minutes": 10,
+          "summary": "โรคเดียวที่แสดงออกได้ทุกกลุ่มอาการ · เกณฑ์ ACR 2012 · ข้อบ่งชี้เจาะไต · การรักษาแยกตาม class",
+          "source": "สไลด์ อ.ฉันทิศา อารยางกูร — Approach to glomerular disease (หน่วยโรคไต รพ.ราชวิถี)",
+          "nl": [
+            "2.3.13-3(15)",
+            "B5.2.2-3(5)",
+            "2.3.14(12)",
+            "2.3.14(2)"
+          ],
+          "md": "**กลไก (ตามสไลด์ 5 ขั้น)**\n1. **เสีย self-tolerance** — กำจัดเซลล์ที่ตายแบบ apoptosis ได้ไม่ดี **แอนติเจนจากนิวเคลียสจึงโผล่ออกมา** ถูก dendritic cell จับเข้าไปและกระตุ้นผ่าน **TLR7/TLR9** ภายในเซลล์ แล้วนำเสนอต่อ autoreactive T cell (แสงอัลตราไวโอเลตเร่งกระบวนการนี้จึงมี photosensitivity)\n2. **สร้าง autoantibody** — T cell ช่วย B cell ผลิตแอนติบอดีปริมาณมาก เกิดเป็น **immune complex (IC)**\n3. **IC ตกค้างในเนื้อเยื่อ** — กำจัดไม่ทัน จึงไปสะสมที่ **ไตและผิวหนัง**\n4. **อักเสบจาก IC** — กระตุ้น **complement ทาง classical pathway (จึง C3 และ C4 ต่ำทั้งคู่)** และกระตุ้น macrophage กับ neutrophil ผ่าน Fc receptor\n5. **พังผืดและความเสียหายถาวร** — cytokine ที่ก่อการอักเสบและพังผืดทำให้เนื้อไตเสียอย่างถาวร\n\n> **ตำแหน่งที่ IC ไปเกาะเป็นตัวกำหนดว่าจะออกมาเป็นกลุ่มอาการไหน** — **subendothelial (class III, IV) อยู่ด้านที่สัมผัสกระแสเลือด เซลล์อักเสบเข้าถึงได้เต็มที่ → nephritic รุนแรง ไตวายเร็ว** · **subepithelial (class V) ถูก GBM กั้น เซลล์อักเสบเข้าไม่ถึง → nephrotic ตะกอนสะอาด**\n\n### ภาพทางคลินิก — แสดงออกได้ทุกแบบ\n\n**Glomerular syndrome**\n\n| อาการ | ความถี่ |\n|---|---|\n| **Proteinuria** | **100%** |\n| **Microscopic hematuria** | **80%** |\n| **การทำงานของไตบกพร่อง** | **40 – 80%** |\n| **Nephrotic syndrome** | **45 – 65%** |\n| **RPGN** | **30%** |\n| **ความดันโลหิตสูง** | **15 – 50%** |\n| **Macroscopic hematuria** | **1 – 2%** |\n\n**Vascular syndrome** — **ลิ่มเลือดอุดตันหลอดเลือดดำหรือแดงของไต** (สัมพันธ์กับ antiphospholipid antibody)\n\n**Tubular abnormality** — **renal tubular acidosis** · **hyperkalemia 15%**\n\n### เกณฑ์ ACR 2012 ว่ามีไตอักเสบจากลูปัส\n- **Spot urine protein/creatinine ratio > 0.5** หรือ\n- **ตะกอนปัสสาวะที่ยัง active** — **เม็ดเลือดแดง > 5/HPF** หรือ **เม็ดเลือดขาว > 5/HPF โดยไม่มีการติดเชื้อ** หรือ **cellular cast ที่เป็น RBC cast หรือ WBC cast**\n\n### ข้อบ่งชี้ในการเจาะชิ้นเนื้อไต\n- **Cr สูงขึ้นโดยไม่มีสาเหตุอื่นที่อธิบายได้**\n- **ยืนยันแล้วว่าโปรตีนมากกว่า 1.0 g/24 ชั่วโมง**\n- **ตรวจอย่างน้อย 2 ครั้งในระยะเวลาสั้น ๆ แล้วพบ**\n  - **โปรตีน ≥ 0.5 g/24 ชั่วโมง ร่วมกับ hematuria ≥ 5 RBC/HPF** หรือ\n  - **โปรตีน ≥ 0.5 g/24 ชั่วโมง ร่วมกับ cellular cast**\n\n### การจัดชั้นตาม ISN/RPS\n\n| Class | ชื่อ | ตำแหน่ง deposit | จุดตัดสิน |\n|---|---|---|---|\n| **I** | Minimal mesangial | **Mesangium** (เห็นเฉพาะ IF/EM) | LM ปกติ |\n| **II** | Mesangial proliferative | **Mesangium** | **มี mesangial hypercellularity** |\n| **III** | **Focal** lupus nephritis | **Subendothelial** | **โกลเมอรูลัสที่เป็น < 50%** |\n| **IV** | **Diffuse** lupus nephritis | **Subendothelial** | **โกลเมอรูลัสที่เป็น ≥ 50%** |\n| **V** | **Membranous** lupus nephritis | **Subepithelial และ intramembranous** | ภาพเหมือน MN |\n| **VI** | Advanced sclerosing | – | **Global glomerulosclerosis > 90%** |\n\n**ภาพทางพยาธิวิทยาที่จำเพาะของลูปัส**\n- **IF ติดแบบ \"full house\"** — **IgG, IgA, IgM ร่วมกับ C1q และ C3** ครบทุกตัว และยัง **ติดตามแนว tubular basement membrane และหลอดเลือด** ด้วย ← **ไม่มีโรคอื่นทำแบบนี้**\n- **EM** — **electron dense deposit ที่ subendothelium** หรือที่ **mesangium** อย่างชัดเจน\n\n### การรักษาตาม class\n\n| Class | การรักษา |\n|---|---|\n| **I** | **ไม่ต้องรักษาทางไต** — ปัสสาวะปกติหรือผิดปกติเล็กน้อย |\n| **II** | **รักษาตามอาการนอกไต** · หลักฐานยังน้อย ถ้าโปรตีน **> 1 – 2 g/วัน** ให้ **prednisolone ระยะสั้น 6 – 8 สัปดาห์** |\n| **III และ IV** (proliferative) | **Prednisolone 0.5 – 1 mg/kg/วัน ร่วมกับยากดภูมิคุ้มกันตัวอื่น** |\n| **V** (membranous) | **Prednisolone 0.5 – 1 mg/kg/วัน ร่วมกับยากดภูมิคุ้มกันตัวอื่น** |\n| **VI** | **รักษาประคับประคองอย่างเดียว** — เนื้อไตเป็นแผลเป็นไปแล้ว ให้ยากดภูมิคุ้มกันมีแต่โทษ |\n\n> **หมายเหตุให้ทันสมัย** — ยากดภูมิคุ้มกันที่ใช้คู่กับ steroid ใน class III/IV/V ปัจจุบันคือ **mycophenolate mofetil** หรือ **cyclophosphamide ขนาดต่ำแบบ Euro-Lupus** และแนวทางใหม่ (KDIGO 2024) แนะนำ **การรักษาสามตัวตั้งแต่ต้น** โดยเพิ่ม **belimumab** หรือ **voclosporin** เข้าไป พร้อมทั้งให้ **hydroxychloroquine กับผู้ป่วยลูปัสทุกราย** ที่ไม่มีข้อห้าม\n\n### กับดักที่คนพลาดจริง\n- **ผู้ป่วยลูปัสทุกรายต้องตรวจปัสสาวะทุกครั้งที่มาตรวจ** — ไตอักเสบระยะแรก **ไม่มีอาการเลย** กว่าจะบวมหรือ Cr ขึ้นก็มักเสียเนื้อไตไปแล้ว\n- **ลูปัสทำให้ C3 และ C4 ต่ำทั้งคู่** ต่างจาก **APSGN ที่ C3 ต่ำแต่ C4 ปกติ** — ใช้แยกได้เร็วข้างเตียง\n- **class เปลี่ยนไปมาได้ระหว่างดำเนินโรค** — ถ้าภาพทางคลินิกเปลี่ยน (เช่น จาก nephrotic กลายเป็นไตวายเร็ว) **ต้องเจาะซ้ำ** ไม่ใช่รักษาตามผลเดิม\n- **หญิงสาวที่มีผื่นแพ้แสงและปวดข้อ แล้วมีทั้งโปรตีนและเม็ดเลือดแดงในปัสสาวะ** — วินิจฉัยคือ **lupus nephritis** และขั้นต่อไปคือ **ส่ง ANA, anti-dsDNA, C3, C4 แล้วเจาะชิ้นเนื้อไตเพื่อจัด class** เพราะ **การรักษาขึ้นกับ class ทั้งหมด**",
+          "pearls": [
+            "Full house IF (IgG + IgA + IgM + C1q + C3) คือลายเซ็นของ lupus nephritis ไม่มีโรคอื่นทำแบบนี้",
+            "Class III กับ IV แยกกันที่สัดส่วนโกลเมอรูลัสที่เป็น — น้อยกว่า 50% คือ III ตั้งแต่ 50% ขึ้นไปคือ IV",
+            "Subendothelial deposit (III, IV) = nephritic รุนแรง · subepithelial deposit (V) = nephrotic ตะกอนสะอาด",
+            "ลูปัส C3 และ C4 ต่ำทั้งคู่ (classical pathway) ส่วน APSGN C3 ต่ำแต่ C4 ปกติ (alternative pathway)",
+            "เกณฑ์เจาะไต: Cr ขึ้นโดยไม่มีสาเหตุอื่น หรือโปรตีนเกิน 1 g/วัน หรือโปรตีนตั้งแต่ 0.5 g/วันร่วมกับ hematuria หรือ cellular cast",
+            "Class I ไม่ต้องรักษา · Class VI ประคับประคองอย่างเดียว · ให้ยากดภูมิคุ้มกันเฉพาะ III, IV, V"
+          ],
+          "quiz": [
+            "N-OLD-031"
+          ],
+          "extra": [
+            {
+              "stem": "A 24-year-old woman with SLE has creatinine rising from 0.8 to 1.9 mg/dL over 6 weeks, urine protein 2.8 g/day, 30 red cells/HPF with red cell casts, and low C3 and C4. Kidney biopsy shows endocapillary proliferation involving 70 percent of glomeruli with subendothelial deposits and full house immunofluorescence. Which ISN/RPS class and initial treatment are correct?",
+              "choices": [
+                "Class IV diffuse lupus nephritis — prednisolone 0.5 to 1 mg/kg/day combined with another immunosuppressive agent",
+                "Class III focal lupus nephritis — hydroxychloroquine alone with close monitoring",
+                "Class V membranous lupus nephritis — an ACE inhibitor and a statin without immunosuppression",
+                "Class II mesangial proliferative lupus nephritis — a short 6 to 8 week course of prednisolone",
+                "Class VI advanced sclerosing lupus nephritis — supportive treatment and preparation for dialysis"
+              ],
+              "answer": 0,
+              "explain": "**Endocapillary proliferation ที่ 70% ของโกลเมอรูลัส (≥ 50%) ร่วมกับ subendothelial deposit = class IV (diffuse)** · การที่ deposit อยู่ **ด้านที่สัมผัสกระแสเลือด** ทำให้เซลล์อักเสบเข้าถึงได้เต็มที่ จึงออกมาเป็น **nephritic รุนแรง ไตวายเร็ว มี RBC cast และ complement ต่ำทั้ง C3 และ C4** · **class III และ IV คือกลุ่ม proliferative ที่ต้องให้ prednisolone 0.5–1 mg/kg/วัน ร่วมกับยากดภูมิคุ้มกันตัวอื่น** (ปัจจุบันคือ mycophenolate หรือ cyclophosphamide ขนาดต่ำ)\n\n- **Class III** ใช้เกณฑ์เดียวกันแต่ **โกลเมอรูลัสที่เป็นต้องน้อยกว่า 50%** — รายนี้ 70% จึงเป็น IV · และ **hydroxychloroquine อย่างเดียวไม่พอสำหรับ proliferative lupus nephritis** (ถึงแม้จะต้องให้ทุกรายเป็นพื้นฐาน)\n- **Class V** deposit อยู่ **subepithelial** และมาแบบ **nephrotic ตะกอนสะอาด** ไม่ใช่ RBC cast กับไตวายเร็ว — และ class V เองก็ยังต้องให้ยากดภูมิคุ้มกัน ไม่ใช่ ACEI กับ statin เท่านั้น\n- **Class II** จำกัดอยู่ที่ **mesangium** LM ไม่มี endocapillary proliferation และไม่ทำให้ Cr พุ่ง\n- **Class VI** ต้องมี **global glomerulosclerosis > 90%** ซึ่งเป็นแผลเป็นถาวร รายนี้เป็นการอักเสบที่ยังรักษาให้กลับคืนได้ **การไปประคับประคองเฉย ๆ จะทำให้เสียไตโดยไม่จำเป็น**",
+              "pearl": "เห็น proliferative lupus nephritis ให้นับสัดส่วนโกลเมอรูลัสก่อน — ต่ำกว่า 50% คือ class III ตั้งแต่ 50% ขึ้นไปคือ class IV แต่ทั้งคู่รักษาเหมือนกันคือ steroid ร่วมกับยากดภูมิคุ้มกัน",
+              "nl": [
+                "2.3.13-3(15)",
+                "2.3.14(2)",
+                "2.3.14(12)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
