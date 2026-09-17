@@ -114,6 +114,107 @@
   cardiac rehab (ลด cardiac mortality 22%, 8–24 สัปดาห์) · SBP <140 (elderly ผ่อนได้) ·
   บินได้ตั้งแต่วันที่ 3 ถ้า revascularize ครบและ LVEF >40%
 
+## คาบ 05 · Fluid electrolyte: Divalent — อ.ธิติยา · พฤ. 17 ก.ย. (สัปดาห์ 1)
+
+อ.ธิติยา = Thitiya Puavilai, MD · Renal Unit, รพ.ราชวิถี · สไลด์ลงวันที่ 30-05-24
+อ้างอิงหลัก: AJKD Vol 83 Iss 2 (Feb 2024) + Brenner & Rector's The Kidney 11e
+
+| ไฟล์ | fileId | ดึงข้อความ |
+|---|---|---|
+| For นศพ. 4 Divalent_Ca, P, Mg (67).pdf | `1-cfSazesXUXy99L4NAJKM4khAdCwAF9a` | ✅ **ครบ** — ข้อความเต็มทั้งชุด (48.5K ตัวอักษร) |
+
+โครงสไลด์: Axis of PTH/FGF-23/1,25(OH)₂D → Calcium (homeostasis, hyper-, hypo-)
+→ Phosphate (homeostasis, hyper-, hypo-) → Magnesium (homeostasis, hypo-, hyper-)
+
+**เขียนเป็นบทเรียนแล้วครบทั้งคาบ** — 9 หัวข้อใน `learn/nephro.json` ผูกข้อสอบคาบ 05 ครบทั้ง 21 ข้อ + เขียนเอง 4 ข้อ · MEQ 1
+
+สาระที่ดึงได้ครบ:
+- **แคลเซียมในเลือด**: 1% ของทั้งร่างกายอยู่ในเลือด · ในเลือดแบ่งเป็น **40% จับโปรตีน · 10% จับประจุลบ · 50% ionized**
+- **ดูดกลับแคลเซียมที่ไต**: **PCT 60% · TAL 25% · DCT 15%** (95% ของที่กรอง) ·
+  PCT paracellular claudin-2/12 · TAL claudin-16/19 อาศัยแรงดันจาก NKCC2+ROMK ·
+  DCT transcellular TRPV5 → calbindin D-28k → PMCA4/NCX1
+- **CaSR ที่ TAL**: Ca สูง → ยับยั้ง ROMK → แรงดันบวกหาย → ขับ Ca ออก (อธิบาย loop diuretic, thiazide, FHH)
+- **สาเหตุ hypercalcemia ครบ 4 กลุ่มมะเร็ง** (HHM/PTHrP · LOH · ก้อนสร้าง 1,25(OH)₂D · ectopic PTH) ·
+  granulomatous (sarcoid, TB, leprosy, histoplasmosis, berylliosis, silicone) · ยา (thiazide, lithium, milk-alkali,
+  vit D/A, teriparatide, foscarnet, theophylline) · FHH · immobilization · hyperthyroidism
+- **อาการ hypercalcemia ครบทุกระบบ** รวม **QT สั้น · band keratopathy · nephrogenic DI**
+- **ตารางรักษา hypercalcemia พร้อมขนาดยา**: NSS 200–500 mL/h · furosemide 20–40 mg IV **หลัง rehydrate** ·
+  **pamidronate 60–90 mg IV 2 ชม.** · **zoledronate 4 mg IV 15 นาที** · prednisone 60 mg × 10 วัน ·
+  **calcitonin 4–8 U/kg SC/IM q12h (escape phenomenon)** · mithramycin 25 μg/kg · gallium nitrate ·
+  **denosumab 120 mg วันที่ 1, 8, 15, 29 แล้ว q4wk**
+- **สาเหตุ hypocalcemia ครบ** + **gadodiamide/gadoversetamide รบกวน colorimetric assay ให้ค่าต่ำเทียม**
+- **Hungry bone syndrome**: หลังตัดพาราไทรอยด์ → **Ca, PO4, Mg ต่ำพร้อมกัน** และ **มักมี K สูงร่วม (กลไกไม่ทราบ)**
+- **ฟอสเฟต**: 80–85% ในกระดูก · 14% ในเซลล์ · 1% นอกเซลล์ · ดูดกลับ **PCT 85% · LOH 10% · DCT 3% · CD 2%** ·
+  **FE ปกติ <15%** · NaPi-2a/2c/PiT-2 · **FGF-23 และ PTH กด NaPi** · **SGLT2i เพิ่มการดูดกลับ** ·
+  phytate ในพืชดูดซึมแย่ แต่ **ฟอสเฟตในวัตถุเจือปนอาหารดูดซึมดีที่สุด**
+- **Hypophosphatemia**: **urine PO4 >100 mg/d หรือ FE PO4 >20% = ไตรั่ว** · สูตร FE phosphate ครบ ·
+  **TIO (ectopic FGF-23) → burosumab** · **หลังปลูกถ่ายไต 85–90%** · CRRT
+- **แมกนีเซียม**: PCT 20–25% · **TAL ส่วนใหญ่ paracellular claudin-16/19** · DCT 10% ผ่าน **TRPM6** ·
+  **claudin-14 ลดการซึมผ่านเมื่อ Mg สูง** · **urine Mg >24 mg/d = ไตรั่ว** ·
+  **FEMg = U.Mg×P.Cr ÷ (0.7×P.Mg×U.Cr) ×100 · >3–4% = ไตรั่ว**
+- **Mg ต่ำ → K ต่ำดื้อ** (Mg ในไซโทซอลพร่อง → ปลดบล็อก **ROMK** → ไตขับ K ทิ้ง) ·
+  **Mg ต่ำ → Ca ต่ำ 50%** (กด PTH กลับปกติใน 24 ชม. หลังเติม Mg) · **vertical nystagmus** ·
+  ชักที่ถูกกระตุ้นด้วยเสียงดัง (กลไก NMDA) · **torsades ที่ตอบสนอง Mg เท่านั้น**
+- **ขนาดยา Mg**: ชัก/arrhythmia **8–16 mEq (1–2 g) IV ใน 2–4 นาที** · ไม่ฉุกเฉิน **64 mEq (8 g)/24 ชม. แล้ว 32 mEq (4 g)/วัน × 2–6 วัน** ·
+  MgO 140 mg × 4–5 ครั้ง/วัน (bioavailability 33%) · **ให้ต่ออีก 1–2 วันหลังค่าในเลือดปกติ** ·
+  GFR ลด → ลดขนาด 25–50% · **ตรวจรีเฟล็กซ์เอ็นเป็น bedside test ของ Mg เกิน**
+- **Hypermagnesemia**: เกิดแค่ 2 สถานการณ์ (ไตเสื่อม + ได้ Mg) · CKD คุมได้จน **CrCl <20** ·
+  **>4–6 mg/dL ความดันต่ำ/หน้าแดง/ileus · >8–12 รีเฟล็กซ์หาย อ่อนปวกเปียก** → กดหายใจ โคม่า asystole ·
+  **anion gap ต่ำหรือติดลบเป็นเบาะแส** · **ครึ่งชีวิต 28 ชม.** · แก้ด้วย **CaCl₂ 1 g เส้นกลาง 2–5 นาที** + saline/furosemide + HD
+
+## คาบ 22 · Fluid and Electrolyte: Dysnatremia & Dyskalemia — อ.ชุมพล · พฤ. 1 ต.ค. (สัปดาห์ 3)
+
+อ.ชุมพล = Chumpol Santisiripat, MD · Nephrologist, รพ.ราชวิถี — วิทยาลัยแพทยศาสตร์ ม.รังสิต
+
+| ไฟล์ | fileId | ดึงข้อความ |
+|---|---|---|
+| Fluid and Electrolyte Tutorial .pdf | `13bjiTCP1fxxzoQYkI9-ZOMnVUwKyqFQg` | ⚠️ **ครบเฉพาะ hyponatremia และ hypokalemia** — **hypernatremia และ hyperkalemia เป็นแผนภูมิภาพและจบด้วย "To be continued"** |
+
+โครงสไลด์: Body Fluid Compartment → Water (and Sodium) Homeostasis → DysNatremia → DysKalemia
+
+**เขียนเป็นบทเรียนแล้วครบทั้งคาบ** — 9 หัวข้อใน `learn/nephro.json` ผูกข้อสอบคาบ 22 ครบทั้ง 28 ข้อ + เขียนเอง 4 ข้อ · OSCE 2
+หัวข้อ hypernatremia และ hyperkalemia เรียบเรียงเพิ่มจากตำราที่อาจารย์อ้างอิง (Comprehensive Clinical Nephrology,
+Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว้ในฟิลด์ source ของหัวข้อนั้นแล้ว**
+
+สาระที่ดึงได้ครบ:
+- **TBW 60% · ICF 2/3 · ECF 1/3 · ISF 3/4 · IVF 1/4 · TBV = 7% BW ≈ 5L (พลาสมา 60% + RBC 40%)** ·
+  **ทารกแรกเกิด 75% · ทารก 70% · ชาย 60% · หญิง 50–55% · ผู้สูงอายุ 45%**
+- **ตาราง solute ICF/ECF**: Na 142/14 · K 4.2/140 · Cl 106/4 · HCO3 24/10 · Mg 0.8/20 · osmolar activity ~281 เท่ากัน
+- **POsm = 2(Na+K) + กลูโคส/18 + BUN/2.8 ≈ 2×Na** · ปกติ 280–295 · **BUN มีส่วนร่วม <5 mOsm/kg**
+- **Effective osmole**: NaCl, กลูโคส (เมื่อขาดอินซูลิน), mannitol, glycine, maltose ·
+  **Ineffective**: **urea, ethanol, ethylene glycol, isopropyl alcohol, methanol**
+- **ให้สารน้ำแล้วเกิดอะไร**: free water → ICF>>ECF, POsm ลด · **0.9%NSS → ECF เท่านั้น POsm ไม่เปลี่ยน** ·
+  3%NaCl → ECF ขึ้น ICF หด POsm ขึ้น
+- **สมองปรับตัว**: volume regulatory decrease (ขับ K/Cl แล้วตามด้วยออสโมลอินทรีย์) / regulatory increase
+- **ADH**: **osmotic threshold ของ ADH ต่ำกว่า threshold ของ thirst** (thirst เริ่มตอนไตเข้มข้นสุดแล้ว) ·
+  **UOsm ∝ 1/urine volume** · non-osmotic: **คลื่นไส้ (แรงที่สุด)** · hemodynamic · drinking · stress ·
+  hypoglycemia · RAAS · hypoxia/hypercapnia · ยา · **สัญญาณ hemodynamic เลื่อน set point ไม่ได้ทำลาย osmoregulation**
+- **สมดุลน้ำ**: เข้า 2–2.5 L/วัน (น้ำดื่ม + อาหาร 0.5–1L + เมตะบอลิซึม 0.25–0.4L) ·
+  ออก: อุจจาระ 100 mL · ผิวหนัง 300–400 · ลมหายใจ 300–400 ·
+  **ตัวอย่าง: solute 600 mOsm ÷ UOsm สูงสุด 1,200 = ปัสสาวะขั้นต่ำ 500 mL**
+- **ตาราง Disorder of Sodium and Water 8 แถว** (ECFV × tonicity × pathogenic process)
+- **Hyponatremia 5 ขั้น**: ยืนยัน POsm (**<275–280 hypotonic · 275–290 isotonic · >290 hypertonic**) →
+  **UOsm ≷ 100** → volume status → severity → treatment
+- **Pseudohyponatremia**: **TG >1,000 mg/dL · protein >10 g/dL · LP-x (LCAT)** · **indirect ISE < direct ISE**
+- **กลุ่มเสี่ยงสมองบวมเฉียบพลัน**: หญิงวัยมีประจำเดือนหลังผ่าตัด · หญิงสูงอายุกิน thiazide · ผู้ป่วยจิตเวชดื่มน้ำมาก ·
+  เด็ก · hypoxemic · **นักวิ่งมาราธอน**
+- **กลุ่มเสี่ยง ODS**: **ผู้ป่วยปลูกถ่ายตับ · ติดสุรา/ขาดสารอาหาร · hypokalemia · แผลไฟไหม้ ·
+  หญิงสูงอายุกิน thiazide · hypoxemic · PNa < 105**
+- **ตารางเป้าการแก้ USA vs European ครบ**: เป้า **4–6 (USA) / 5 (EU) mEq/L ใน 1–2 ชม.** ·
+  3%NaCl severe **100 mL/10 นาที ซ้ำได้ 3 ครั้ง (USA)** vs **150 mL/20 นาที ซ้ำ 2–3 ครั้ง (EU)** ·
+  moderate **0.5–2 mL/kg/hr (USA)** vs **150 mL/20 นาที ครั้งเดียว (EU)** ·
+  ติดตาม **q4–6 ชม. (USA) / q6 ชม. (EU)** ใน 24 ชม.แรก ·
+  **re-lowering: USA ไม่ต้องถ้า PNa0 >120, พิจารณาถ้า <120 และขึ้น >6–8/24ชม. · EU เฉพาะเมื่อขึ้น >10/24ชม.
+  ด้วย free water 10 mL/kg ± desmopressin 2 mcg IV** · สูตร **Na ที่ต้องให้ = TBW × (Na ที่ต้องการ − Na ปัจจุบัน)**
+- **โพแทสเซียม**: **98% ในเซลล์ (ส่วนใหญ่กล้ามเนื้อลาย) 2% นอกเซลล์** · ขับที่ **principal cell ผ่าน ROMK/ENaC**
+- **สาเหตุ hypokalemia ตามที่อาจารย์จัดกลุ่ม**: pseudo (leukocytosis, ส่งช้า, อุณหภูมิ) · shift (alkalosis, insulin,
+  β2-agonist, **HypoK PP / thyrotoxic PP**) · กินไม่พอ (**CHO สูงแต่โปรตีน/ผักต่ำ, อดอาหาร, clay ingestion**) ·
+  เสียนอกไต (อาเจียน ท้องเสีย ยาระบาย เหงื่อ) · **เสียทางไต (อาเจียน, RTA, ยา, aldosteronism, aldosterone-like)**
+- **อาการ hypokalemia 6 ระบบ**: **ECG ST ตก · T แบน/หัวกลับ · U wave · PAC/PVC · bradycardia · AV block · VT/VF** ·
+  cramp/myalgia/paralysis/**rhabdomyolysis** · ileus/ท้องผูก/**hepatic encephalopathy แย่ลง** ·
+  glucose intolerance · **nephrogenic DI, metabolic alkalosis, hypokalemic nephropathy** · **respiratory acidosis**
+- **ปริมาณเติม K ตามกลไก**: **shift 60–120 mEq PO · เสียนอกไต 100–300 mEq PO±IV · เสียทางไต อาจ >300 mEq**
+
 ## คาบ 14 · Nephrotic / Nephritic syndrome — อ.ฉันทิศา · พฤ. 24 ก.ย. (สัปดาห์ 2)
 
 อ.ฉันทิศา = Chantisa Arayangkoon, MD · Division of Renal Unit, Dept. of Internal Medicine, รพ.ราชวิถี
