@@ -1,8 +1,8 @@
 # บทเรียน MED421 · Cardio — Cardio · ระบบหัวใจและหลอดเลือด
 
-เริ่มจากคาบ 04 — Inflammatory MyoPericardial Syndrome ของ อ.เจตวรงค์ ซึ่งรวมเยื่อหุ้มหัวใจอักเสบ กล้ามเนื้อหัวใจอักเสบ น้ำในเยื่อหุ้มหัวใจ ภาวะบีบรัดหัวใจ และภาวะเยื่อหุ้มหัวใจรัดตัว ไว้เป็นเรื่องเดียวกัน เนื้อหาเรียบเรียงจากสไลด์บรรยายจริง ร่วมกับแนวทาง ESC ที่อาจารย์อ้างอิงไว้ จบแต่ละหัวข้อมีข้อสอบเช็คความเข้าใจจากคลัง MED28–MED35 และข้อใหม่ของชุด Cardio ทันที
+เริ่มจากสองคาบของ อ.เจตวรงค์ — คาบ 04 Inflammatory MyoPericardial Syndrome ที่รวมเยื่อหุ้มหัวใจอักเสบ กล้ามเนื้อหัวใจอักเสบ น้ำในเยื่อหุ้มหัวใจ ภาวะบีบรัดหัวใจ และภาวะเยื่อหุ้มหัวใจรัดตัวไว้เป็นเรื่องเดียวกัน และคาบ 10 Circulatory Shock ที่ต่อยอดกันพอดี เพราะ tamponade กับ obstructive shock คือเรื่องเดียวกันคนละมุม เนื้อหาเรียบเรียงจากสไลด์บรรยายจริง ร่วมกับ Harrison's ฉบับที่ 21 และแนวทาง ESC ที่อาจารย์อ้างอิงไว้ จบแต่ละหัวข้อมีข้อสอบเช็คความเข้าใจจากคลัง MED28–MED35 และข้อใหม่ของชุด Cardio ทันที
 
-1 คาบ · 12 หัวข้อ · ข้อเช็คความเข้าใจ 27 ข้อ · MEQ 1 · OSCE/SAQ 0
+2 คาบ · 20 หัวข้อ · ข้อเช็คความเข้าใจ 50 ข้อ · MEQ 2 · OSCE/SAQ 0
 
 ---
 
@@ -1583,5 +1583,1157 @@ RS: clear both lungs; Abd: tender hepatomegaly; Ext: no pitting edema
 4. **ติดตาม echocardiography ซ้ำเป็นระยะ** เพื่อเฝ้าระวัง (ก) การกลับมาของ effusion (ข) การเกิด **constrictive pericarditis** (JVP สูง + Kussmaul sign + pericardial knock + ascites เด่นกว่าขาบวม) ซึ่งถ้าเกิดขึ้นต้องพิจารณา **pericardiectomy**
 5. **ติดตามผลข้างเคียงยา**: LFT (INH/RIF/PZA hepatitis), visual acuity และ color vision (ethambutol optic neuropathy), uric acid/ข้ออักเสบ (pyrazinamide), peripheral neuropathy (INH → ให้ pyridoxine ป้องกัน)
 6. **การควบคุมโรคติดต่อ**: สอบสวนโรคและคัดกรองผู้สัมผัสใกล้ชิด, ประเมินว่ามี pulmonary TB ร่วมหรือไม่ (ถ่ายภาพรังสีปอดและส่งเสมหะ), ให้คำแนะนำเรื่อง DOT และความสำคัญของการกินยาครบ
+
+---
+
+## คาบ 10 · Circulatory Shock (อ. 22 ก.ย.)
+
+พยาธิสรีรวิทยาและสมการการส่งออกซิเจน · จำแนกชนิด · ระยะของช็อก · การประเมิน · การรักษาเบื้องต้น
+
+**วัตถุประสงค์**
+- อธิบายช็อกจากสมการ **DO₂ = CO × CaO₂** และบอกได้ว่าช็อกแต่ละชนิดเกิดจากตัวแปรใดในสมการที่เสียไป
+- จำแนกช็อกทั้งห้ากลุ่มด้วยโปรไฟล์ **CVP · PCWP · CO · SVR** และแยกได้ข้างเตียงด้วย **อุณหภูมิปลายมือเท้าและ JVP**
+- แยก **compensated shock** ออกจาก decompensated ได้ และรู้ว่าทำไมความดันปกติจึงไม่ตัดช็อกออก
+- ใช้ **หน้าต่างสามบาน (สมอง ไต ผิวหนัง)** ประเมินว่าอวัยวะเริ่มเสียหรือยัง
+- อ่าน **ECG สี่รูปแบบ** ที่บ่งชี้สาเหตุของช็อก และรู้ว่า **POCUS** ตอบอะไรได้บ้าง
+- วางแผนการให้สารน้ำโดยใช้แนวคิด **Starling curve และ passive leg raise** และรู้ว่าเมื่อไรการเติมน้ำเป็นโทษ
+- เลือก **norepinephrine หรือ dobutamine** ให้ตรงกับกลไกที่เสีย และตั้งเป้าหมาย **MAP และลักเตท** ได้
+- ระบุช็อกที่ต้องทำ **หัตถการช่วยชีวิตทันที** โดยเฉพาะ **anaphylaxis** และ **หัวใจเต้นผิดจังหวะที่เป็นต้นเหตุ**
+
+### [cardio-10-01] ช็อกคืออะไร — ไล่จากสมการการส่งออกซิเจน
+
+_สมการเดียวที่อธิบายช็อกได้ทุกชนิด และบอกด้วยว่าจะแก้ตรงไหน_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation
+
+### นิยามที่ใช้ได้จริง
+**ช็อกคือภาวะที่การส่งออกซิเจนไปยังเนื้อเยื่อไม่พอกับความต้องการของเซลล์** จนเกิดการเผาผลาญแบบไม่ใช้ออกซิเจนและอวัยวะเริ่มทำงานผิดปกติ
+
+> **ช็อกไม่เท่ากับความดันต่ำ** — คนไข้อาจช็อกโดยที่ความดันยังปกติ (**compensated shock**) และคนความดันต่ำเรื้อรังบางคนก็ไม่ได้ช็อก สิ่งที่นิยามช็อกคือ **หลักฐานว่าเนื้อเยื่อขาดออกซิเจน** ไม่ใช่ตัวเลขความดัน
+
+### สมการที่เป็นแกนของทั้งคาบ
+> **DO₂ = CO × CaO₂**
+
+แตกออกมาได้เป็น
+- **CO (cardiac output) = HR × SV**
+- **SV ∝ (Preload × Contractility) ÷ SVR**
+- **CaO₂ = (Hb × 1.39 × SaO₂) + (PaO₂ × 0.03)**
+
+**อ่านสมการนี้ให้เป็น แล้วจะรู้ว่าช็อกเกิดได้ตรงไหนบ้าง**
+
+| ตัวแปรที่เสีย | เกิดเป็นช็อกชนิด | ตัวอย่าง |
+|---|---|---|
+| **Preload ต่ำ** | **Hypovolemic** | เสียเลือด ท้องเสีย อาเจียน |
+| **Contractility เสีย** | **Cardiogenic** | กล้ามเนื้อหัวใจตาย กล้ามเนื้อหัวใจอักเสบ ลิ้นหัวใจพิการระยะท้าย |
+| **HR ผิดปกติมาก** | **Cardiogenic** | หัวใจเต้นเร็วหรือช้าผิดจังหวะ |
+| **มีสิ่งขัดขวางเชิงกล** | **Obstructive** | ลิ่มเลือดอุดกั้นปอด · **cardiac tamponade** · tension pneumothorax · constrictive pericarditis · **aortic dissection** |
+| **SVR ต่ำมาก** | **Distributive** | **ติดเชื้อรุนแรง · แพ้รุนแรง** |
+| **CaO₂ ต่ำ** | ซ้ำเติมทุกชนิด | ซีดมาก · ออกซิเจนในเลือดต่ำ · พิษคาร์บอนมอนอกไซด์ |
+
+### สองกลไกที่สไลด์แยกไว้ในกลุ่ม peripheral
+- **แรงต้านหลอดเลือดส่วนปลายลดลง (decreased SVR)**
+- **ความสามารถในการดึงออกซิเจนไปใช้เปลี่ยนไป (altered oxygen extraction)**
+
+> **ข้อที่สองสำคัญมากในภาวะติดเชื้อรุนแรง** — คนไข้บางรายมี **CO สูงและ DO₂ พอ แต่เซลล์ดึงออกซิเจนไปใช้ไม่ได้** เพราะไมโทคอนเดรียเสียหายและการไหลเวียนระดับจุลภาคผิดปกติ นี่คือเหตุผลที่ **ลักเตทยังสูงทั้งที่ความดันกลับมาปกติแล้ว** และเป็นเหตุผลที่การไล่ตัวเลข DO₂ ให้สูงเกินความจำเป็นไม่ได้ช่วยให้รอดมากขึ้น
+
+### กับดักแรกของหัวข้อนี้
+- **ความดันปกติไม่ตัดช็อกออก** — ต้องมองหา **ลักเตทที่สูง ปัสสาวะออกน้อย ซึมสับสน ปลายมือเท้าเย็น**
+- **หัวใจเต้นเร็วมักมาก่อนความดันตก** เป็นกลไกชดเชยแรก ๆ · ในคนที่กิน **beta-blocker** อยู่ หรือผู้สูงอายุ **อาจไม่มีหัวใจเต้นเร็วให้เห็น** ทำให้ประเมินต่ำกว่าความจริง
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์วางโครงทั้งคาบไว้ห้าหัวข้อ: **Pathophysiological Mechanism → Classification → Stage → Evaluation → Initial Treatment** และอ้างอิง **Harrison's Principles of Internal Medicine ฉบับที่ 21 (2022)** ตลอดทั้งคาบ
+- สไลด์เริ่มจาก **สมการ DO₂ ก่อนพูดถึงชนิดของช็อก** — เป็นวิธีวางเนื้อหาที่ทำให้ชนิดของช็อกไม่ใช่การท่องจำ แต่เป็นผลของการที่ตัวแปรใดตัวแปรหนึ่งในสมการเสียไป
+- สไลด์แยกกลุ่มสาเหตุออกเป็น **peripheral · hypovolemia · cardiogenic factor · obstruction · distributive factor** อ้างอิง **N Engl J Med 2013;369:1726-34**
+
+**จำไปสอบ**
+- DO₂ = CO × CaO₂ · CO = HR × SV · SV ∝ (preload × contractility) ÷ SVR — ช็อกคือการที่ตัวใดตัวหนึ่งพัง
+- ช็อกไม่เท่ากับความดันต่ำ — นิยามคือเนื้อเยื่อขาดออกซิเจน ความดันอาจยังปกติได้
+- ในภาวะติดเชื้อ ลักเตทที่ยังสูงทั้งที่ความดันปกติ อธิบายด้วย altered oxygen extraction
+- หัวใจเต้นเร็วมาก่อนความดันตก — แต่คนที่กิน beta-blocker อาจไม่มีให้เห็น
+
+**ข้อสอบเช็คความเข้าใจ (1 ข้อ)**
+
+[CARDIO-10-01-Q1] ช็อกคืออะไร — ไล่จากสมการการส่งออกซิเจน
+
+A 24-year-old woman with severe iron-deficiency anaemia has a haemoglobin of 4.2 g/dL. Her blood pressure is 112/70 mmHg, heart rate 118/min, and she has a wide pulse pressure with warm extremities. Serum lactate is 3.8 mmol/L. Which component of oxygen delivery is primarily responsible for her tissue hypoxia?
+
+A. Preload, because intravascular volume is depleted
+B. Cardiac output, because stroke volume has fallen
+C. Systemic vascular resistance, because it is pathologically low
+D. Arterial oxygen content, because haemoglobin is the dominant term in CaO2
+E. Arterial oxygen saturation, because SaO2 has fallen below 90%
+
+ANSWER: D. Arterial oxygen content, because haemoglobin is the dominant term in CaO2
+
+EXPLAIN:
+**กลไก** — จากสมการ **CaO₂ = (Hb × 1.39 × SaO₂) + (PaO₂ × 0.03)** จะเห็นว่า **ฮีโมโกลบินเป็นตัวหลักของปริมาณออกซิเจนในเลือด** ส่วนออกซิเจนที่ละลายในพลาสมา (PaO₂ × 0.03) มีสัดส่วนน้อยมากจนแทบไม่มีความหมาย
+
+ลองคิดเป็นตัวเลข: **Hb 4.2 กับ SaO₂ 100% ให้ CaO₂ ราว 5.8 mL/dL** เทียบกับคนปกติ **Hb 14 ที่ได้ราว 19.5 mL/dL** คือ **เหลือไม่ถึงหนึ่งในสาม** ร่างกายจึงชดเชยด้วยการ **เพิ่ม CO (หัวใจเต้นเร็ว ชีพจรแรง ความดันช่วงกว้าง ปลายมือเท้าอุ่น)** แต่เมื่อชดเชยไม่พอ ลักเตทจึงขึ้น
+
+**ทำไมตัวลวงจึงผิด**
+- *Cardiac output / preload* — คนไข้รายนี้ **CO สูงขึ้น ไม่ได้ต่ำ** (ชีพจรเร็ว ความดันช่วงกว้าง ปลายมืออุ่น) และไม่มีหลักฐานว่าปริมาตรในหลอดเลือดพร่อง
+- *SVR ต่ำผิดปกติ* — SVR ที่ลดลงเป็นการตอบสนองตามหลังความหนืดเลือดที่ลดลงและการชดเชยของ CO ที่สูง ไม่ใช่ต้นเหตุ และไม่มีไข้หรือแหล่งติดเชื้อที่จะทำให้คิดถึง distributive shock
+- *SaO₂ ต่ำกว่า 90%* — โจทย์ไม่ได้ระบุว่าพร่องออกซิเจน และในภาวะซีด **SaO₂ มักปกติ** เพราะปัญหาอยู่ที่ *จำนวนตัวพา* ไม่ใช่ *ความอิ่มตัวของตัวพา*
+
+**ประเด็นการรักษา** — การให้ออกซิเจนช่วยได้น้อยมากเพราะเพิ่มได้แค่เทอมที่เล็กที่สุด สิ่งที่แก้ตรงจุดคือ **การให้เลือด**
+
+PEARL: ฮีโมโกลบินคือตัวหลักของ CaO₂ — ซีดรุนแรงทำให้เนื้อเยื่อขาดออกซิเจนได้แม้ SaO₂ 100% และให้ออกซิเจนก็ไม่ช่วย
+
+NL: B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic
+
+
+### [cardio-10-02] จำแนกชนิดของช็อกด้วยโปรไฟล์ไหลเวียน
+
+_ตารางสี่ช่อง CVP · PCWP · CO · SVR ที่ตอบได้เกือบทุกข้อของคาบนี้_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation · B7.2.3(1) Cardiac tamponade
+
+### สไลด์แบ่งไว้ 6 กลุ่ม
+**Distributive · Cardiogenic · Hypovolemic · Obstructive · Mixed · Undifferentiated**
+
+สองกลุ่มหลังไม่ใช่กลไกใหม่ แต่เป็นสภาพจริงที่เจอข้างเตียง
+- **Mixed shock** — มีมากกว่าหนึ่งกลไกพร้อมกัน เช่น **ติดเชื้อรุนแรงในคนที่มีกล้ามเนื้อหัวใจเสียอยู่เดิม**
+- **Undifferentiated shock** — ยังไม่รู้ว่าชนิดไหน ซึ่งเป็นสภาพตอนคนไข้เพิ่งมาถึงห้องฉุกเฉิน **และต้องเริ่มรักษาไปพร้อมกับสืบค้น**
+
+### ตารางที่ต้องจำให้แม่น
+
+| ชนิด | **CVP** | **PCWP** | **CO** | **SVR** | มือเท้า |
+|---|---|---|---|---|---|
+| **Hypovolemic** | **↓** | **↓** | **↓** | **↑** | **เย็น** |
+| **Cardiogenic** | **↑** | **↑** | **↓** | **↑** | **เย็น** |
+| **Obstructive** | **↑** | **↓ หรือ ↑** | **↓** | **↑** | **เย็น** |
+| **Distributive** | **↓** | **↓** | **↑ หรือปกติ** | **↓↓↓** | **อุ่น** |
+
+> **ทางลัดข้างเตียงที่ใช้ได้จริง — ไล่สองคำถามนี้ตามลำดับ**
+> **1. ปลายมือเท้าอุ่นหรือเย็น** → **อุ่น = distributive (CO สูง)** · **เย็น = อีกสามชนิด (CO ต่ำ)**
+> **2. ถ้าเย็น ให้ดู JVP** → **JVP ต่ำ/แฟบ = hypovolemic** · **JVP สูง = cardiogenic หรือ obstructive**
+
+### แยก cardiogenic ออกจาก obstructive
+ทั้งคู่ **JVP สูง CO ต่ำ SVR สูง** เหมือนกัน ต้องใช้เบาะแสอื่น
+
+| | **Cardiogenic** | **Obstructive** |
+|---|---|---|
+| **ปอด** | **มีเสียงกรอบแกรบ น้ำท่วมปอด** | **มักปอดโล่ง** (ยกเว้น tension pneumothorax ที่เสียงหายไปข้างเดียว) |
+| **PCWP** | **สูง** | **ต่ำใน PE และ tension pneumothorax · สูงเท่ากันทุกห้องใน tamponade** |
+| **เอคโค่** | **การบีบตัวเสีย ห้องหัวใจโต** | **น้ำรอบหัวใจ · RV โตกดผนังกั้น · หัวใจไฮเปอร์ไดนามิกแต่ตัวเล็ก** |
+| **เบาะแสอื่น** | **ECG แบบกล้ามเนื้อหัวใจตาย · หัวใจเต้นผิดจังหวะ** | **เสียงหัวใจเบา pulsus paradoxus (tamponade) · S1Q3T3 (PE) · หลอดลมเบนและเสียงหายข้างเดียว (tension pneumothorax)** |
+
+### กับดักที่ทำให้แยกผิด
+- **ภาวะติดเชื้อรุนแรงในระยะแรกที่ยังขาดน้ำอยู่ อาจมือเท้าเย็นและ JVP แฟบ** เหมือน hypovolemic — จะเห็นภาพ **CO สูง SVR ต่ำ** ก็ต่อเมื่อเติมน้ำพอแล้ว จึงเรียก **"cold septic shock"**
+- **คนไข้หัวใจล้มเหลวที่ได้ยาขับปัสสาวะมานาน อาจ JVP ไม่สูง** ทั้งที่เป็น cardiogenic
+- **Tamponade ในคนที่เสียเลือดมาก อาจ JVP ไม่สูง** (low-pressure tamponade)
+- **อย่ารอความดันตกจึงจะเรียกช็อก** — คนอายุน้อยชดเชยได้ดีมาก ความดันจะตกก็ต่อเมื่อเสียไปมากแล้ว
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์ไล่ตารางทีละชนิดโดยเน้น **CO = SV × HR** เป็นแกนกลาง แล้วใส่ลูกศรของ **CVP, PCWP, SVR** ล้อมรอบ — ให้ท่องเป็นภาพว่าแต่ละชนิดลูกศรชี้ทางไหน
+- สไลด์ระบุ **distributive shock ว่ามี "↓↓↓ SVR" (ลูกศรสามตัว)** เพื่อย้ำว่าเป็นการลดลงอย่างมาก และมี **"+/- third space loss"** กำกับไว้ คือมีการรั่วของสารน้ำออกนอกหลอดเลือดร่วมด้วย จึงต้องเติมน้ำมากกว่าที่คิด
+- สไลด์ใส่ **obstructive shock** ไว้ครบทั้ง **PE · tamponade · tension pneumothorax · constrictive pericarditis · aortic dissection** ซึ่งเชื่อมกับคาบ 04 โดยตรง
+
+**จำไปสอบ**
+- อุ่น = distributive · เย็น = อีกสามชนิด แล้วค่อยแยกด้วย JVP
+- JVP แฟบ + เย็น = hypovolemic · JVP สูง + เย็น = cardiogenic หรือ obstructive
+- Cardiogenic มีน้ำท่วมปอดและ PCWP สูง · obstructive ปอดมักโล่ง
+- Cold septic shock — ติดเชื้อระยะแรกที่ยังขาดน้ำ อาจมือเย็นและ JVP แฟบ หลอกให้คิดว่า hypovolemic
+- Mixed และ undifferentiated ไม่ใช่กลไกใหม่ แต่คือสภาพจริงตอนคนไข้มาถึง
+
+**ข้อสอบเช็คความเข้าใจ (6 ข้อ)**
+
+[C-MCQ-06] Classification of shock – obstructive
+
+A 46-year-old woman is brought to the emergency department with dyspnoea and near-syncope. Vital signs: PR 130/min, BP 76/58 mmHg, RR 30/min. Heart sounds are muffled, neck veins are engorged and there is a 16 mmHg inspiratory fall in systolic blood pressure. Bedside echocardiography shows a large circumferential pericardial effusion with right atrial and right ventricular diastolic collapse. Which haemodynamic profile best matches her type of shock?
+
+A. High central venous pressure, high cardiac output, low systemic vascular resistance
+B. Normal central venous pressure, normal cardiac output, low systemic vascular resistance
+C. Low central venous pressure, high cardiac output, low systemic vascular resistance
+D. High central venous pressure, low cardiac output, high systemic vascular resistance
+E. Low central venous pressure, low cardiac output, high systemic vascular resistance
+
+ANSWER: D. High central venous pressure, low cardiac output, high systemic vascular resistance
+
+EXPLAIN:
+กลไก: tamponade = **obstructive shock** — มีสิ่งกีดขวางทาง mechanical ขัดการ fill ของ ventricle ทั้งที่หัวใจบีบตัวได้ดี
+
+ไล่ตามสรีรวิทยา:
+- เลือดกลับเข้าหัวใจไม่ได้ → คั่งต้นน้ำ → **CVP/JVP สูง**
+- preload ต่ำจริงที่ระดับ ventricle → stroke volume ต่ำ → **cardiac output ต่ำ**
+- ร่างกายชดเชยด้วย sympathetic activation → vasoconstriction → **SVR สูง** (มือเท้าเย็น, narrow pulse pressure, capillary refill ช้า)
+
+ดังนั้น **CVP สูง + CO ต่ำ + SVR สูง**
+
+ทำไมข้ออื่นผิด (ใช้เป็นตารางจำ):
+- **CVP ต่ำ + CO ต่ำ + SVR สูง** = **hypovolemic shock** (เสียเลือด/น้ำ) — JVP แฟบ, ตอบสนองต่อ fluid challenge
+- **CVP ต่ำ + CO สูง + SVR ต่ำ** = **distributive shock ระยะแรก** (septic/anaphylactic/neurogenic) — มือเท้าอุ่น, wide pulse pressure
+- **CVP สูง + CO สูง + SVR ต่ำ** = ภาวะ high-output เช่น septic shock ที่ได้ volume เยอะแล้ว, thyrotoxicosis, AV fistula, cirrhosis — ไม่เข้ากับ tamponade
+- **ทุกอย่างปกติยกเว้น SVR ต่ำ** = ไม่ใช่ shock pattern ที่เข้ากับ hypotension รุนแรงแบบนี้
+
+ข้อควรระวังทางคลินิก: ใน tamponade **ห้ามให้ยาลด preload (nitrate, diuretic) และห้าม intubate/PEEP โดยไม่จำเป็น** เพราะจะทำให้ venous return ตกยิ่งขึ้น — ให้ IV fluid ชั่วคราวเพื่อ bridge แล้วรีบ **pericardiocentesis** ซึ่งเป็นการรักษาที่แท้จริง
+
+PEARL: Obstructive shock มี 4 ตัวหลักที่ต้องนึกถึง: cardiac tamponade, massive PE, tension pneumothorax, severe dynamic hyperinflation (auto-PEEP) — ทุกตัวมี **JVP สูง + ปอดไม่มี congestion** (ยกเว้น tension PTX ที่ breath sound หาย)
+
+REF: MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 7 – Beck triad แล้วเกิด shock ต่อ shock นั้นเป็นประเภทอะไร → Obstructive shock | MED34 FA MCQ ข้อ 10 – Cardiac tamponade เป็น shock แบบไหน → Obstructive shock | MED30 สรุป Cardio – cardiogenic / obstructive / hypovolemic / distributive shock | MED31 MCQ ข้อ 18 – EKG pericarditis + BP ต่ำ → Cardiac shock
+
+NL: B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic
+
+
+[C-OLD-18]
+
+Cardiac tamponade causes which category of shock?
+
+A. Neurogenic shock
+B. Hypovolaemic shock
+C. Cardiogenic shock
+D. Obstructive shock
+E. Distributive shock
+
+ANSWER: D. Obstructive shock
+
+EXPLAIN:
+**Obstructive shock** = มีสิ่งขวางการไหลเวียนนอกกล้ามเนื้อหัวใจ (tamponade, tension pneumothorax, massive PE) กล้ามเนื้อหัวใจยังบีบตัวดีแต่เติมเลือดไม่ได้ จึงมี **JVP สูงร่วมกับปลายมือเย็น**; ต่างจาก cardiogenic ที่ตัวปั๊มเสียเอง
+
+SRC: MED34 FA MCQ ข้อ 10 / MED35 สอบลงกองครั้งที่ 1 ข้อ 7
+
+NL: B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.3(1) Cardiac tamponade
+
+
+[C-OLD-19]
+
+A patient admitted with pneumonia develops fever 39 C, BP 80/45 mmHg, warm extremities and bounding pulses 2 days after starting antibiotics. What type of shock is most likely?
+
+A. Cardiogenic shock
+B. Obstructive shock
+C. Hypovolaemic shock
+D. Septic (distributive) shock
+E. Anaphylactic shock
+
+ANSWER: D. Septic (distributive) shock
+
+EXPLAIN:
+**ไข้สูง + ปลายมือ 'อุ่น' + pulse pressure กว้าง 2 วันหลังเริ่มยา = septic shock** จากการติดเชื้อที่ยังคุมไม่ได้ (vasodilatation + capillary leak); **anaphylaxis จะเกิดภายในนาทีถึงชั่วโมงหลังได้ยาและมีผื่น/หลอดลมตีบ** ไม่ใช่ 2 วันให้หลัง — เป็นตัวลวงของโพยข้อนี้
+
+SRC: MED34 FA MCQ
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.3.1 โรคติดเชื้อและโรคปรสิต (ทั้งหมวด)
+
+
+[C-OLD-20]
+
+A patient with cardiomegaly presents with shock, heart rate 130/min and an irregularly irregular pulse, with crepitations at both lung bases and cold extremities. What type of shock is this?
+
+A. Obstructive shock
+B. Hypovolaemic shock
+C. Distributive shock
+D. Neurogenic shock
+E. Cardiogenic shock
+
+ANSWER: E. Cardiogenic shock
+
+EXPLAIN:
+**หัวใจโต + AF เร็ว + ปอดมีน้ำ + ปลายมือเย็น = cardiogenic shock** จาก tachyarrhythmia ที่ทำให้เวลาเติมเลือดสั้นลงในหัวใจที่ทำงานไม่ดีอยู่แล้ว; การรักษาคือคุมอัตราเต้น/ช็อกไฟฟ้าเมื่อไม่คงที่ ไม่ใช่การให้สารน้ำปริมาณมาก
+
+SRC: MED34 ข้อสอบ MED ครั้งที่ 4 MCQ ข้อ 19
+
+NL: B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block)
+
+
+[C-OLD-23]
+
+Anaphylactic shock belongs to which category of shock?
+
+A. Distributive shock
+B. Obstructive shock
+C. Neurogenic shock
+D. Hypovolaemic shock
+E. Cardiogenic shock
+
+ANSWER: A. Distributive shock
+
+EXPLAIN:
+**Anaphylaxis เป็น distributive shock** — mediator จาก mast cell ทำให้หลอดเลือดขยายและรั่ว ปริมาตรในหลอดเลือดจึงไม่พอทั้งที่ปริมาตรรวมในร่างกายยังปกติ (กลุ่มเดียวกับ septic และ neurogenic shock)
+
+SRC: MED30 SAQ ข้อ 11
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic)
+
+
+[C-OLD-32]
+
+Which haemodynamic pattern fits distributive (septic) shock before fluid resuscitation?
+
+A. Low cardiac output with pulmonary oedema
+B. High systemic vascular resistance with low cardiac output
+C. Low systemic vascular resistance with high or normal cardiac output
+D. High central venous pressure with pulsus paradoxus
+E. Bradycardia with warm dry skin from loss of sympathetic tone
+
+ANSWER: C. Low systemic vascular resistance with high or normal cardiac output
+
+EXPLAIN:
+**Septic shock = SVR ต่ำ, cardiac output ปกติหรือสูง (warm shock)** ต่างจาก cardiogenic/hypovolaemic ที่ SVR สูงเพื่อชดเชยและ output ต่ำ; จำคู่กับการรักษา — ให้สารน้ำ ยาปฏิชีวนะเร็วภายใน 1 ชั่วโมง และ **noradrenaline เป็น vasopressor ตัวแรก**
+
+SRC: MED30 สรุป Cardio (หน้า 272-274)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation
+
+
+### [cardio-10-03] ระยะของช็อก — ทำไมต้องจับให้ได้ตั้งแต่ยังไม่ความดันตก
+
+_สามระยะ และหน้าต่างที่ยังแก้กลับได้_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · B9.2.5(2) Disorders of fluid, electrolytes and acid-base balance (acidosis, alkalosis, dysnatremia, dyskalemia, calcium/phosphate disorders)
+
+### สามระยะตามสไลด์
+
+**1. Compensated shock (preshock)**
+- ร่างกายตอบสนองหลายอย่างเพื่อ **ต้านการกระทบครั้งแรกและพยายามรักษาการไหลเวียนและการส่งออกซิเจนให้พอ**
+- **ยังไม่มีสัญญาณของอวัยวะทำงานผิดปกติที่ชัดเจน**
+- **ตรวจทางห้องปฏิบัติการจึงจะเห็น** — อวัยวะทำงานผิดปกติเล็กน้อย หรือ **ลักเตทสูงขึ้นเล็กน้อย**
+- ตัวอย่างที่สไลด์ให้ไว้
+  - **ติดเชื้อ** → **หัวใจเต้นเร็วและ CO เพิ่มขึ้นเป็นการชดเชย**
+  - **เสียเลือด** → **SVR และ HR เพิ่มขึ้นเป็นการชดเชย**
+
+**2. Shock (decompensated shock)**
+- **กลไกชดเชยของร่างกายเอาไม่อยู่แล้ว**
+- **มีหลักฐานว่าอวัยวะทำงานผิดปกติ**
+
+**3. Irreversible shock**
+- **ถ้าไม่ได้รับการรักษา จะเข้าสู่ระยะที่แก้กลับไม่ได้ และเสียชีวิตจากอวัยวะล้มเหลวหลายระบบ (MSOF)**
+
+### ทำไมระยะแรกจึงสำคัญที่สุด
+> **หน้าต่างที่การรักษาได้ผลดีที่สุดคือระยะ compensated ซึ่งเป็นระยะที่ความดันยังปกติ** ถ้ารอให้ความดันตกจึงเริ่มรักษา แปลว่าปล่อยให้คนไข้เดินผ่านหน้าต่างนั้นไปแล้ว
+
+**สิ่งที่บอกว่าเป็น compensated shock ทั้งที่ความดันยังปกติ**
+- **หัวใจเต้นเร็วโดยไม่มีคำอธิบายอื่น**
+- **ความดันช่วง (pulse pressure) แคบลง** — เป็นสัญญาณแรก ๆ ของ SV ที่ลดลงใน hypovolemic และ cardiogenic
+- **ปัสสาวะออกน้อยลง (< 0.5 mL/kg/ชม.)**
+- **ลักเตทสูงขึ้น** แม้เพียงเล็กน้อย
+- **ปลายมือเท้าเย็น ลายเป็นร่างแห (mottling) เวลาเติมเลือดฝอยกลับช้า**
+- **ซึมลงหรือสับสน**
+
+> **ในคนอายุน้อยและหญิงตั้งครรภ์ กลไกชดเชยดีมาก** — อาจเสียเลือดไปถึง 30−40% โดยความดันยังปกติ แล้วตกฮวบทีเดียว · ตรงกันข้าม **ผู้สูงอายุและคนที่กิน beta-blocker จะไม่มีหัวใจเต้นเร็วให้เห็น** ทั้งสองกลุ่มจึงถูกประเมินต่ำกว่าความจริงได้ง่าย
+
+### ลักเตท — ตัวชี้วัดที่ใช้ได้ทั้งวินิจฉัยและติดตาม
+- สูงขึ้นเพราะ **เซลล์เปลี่ยนไปเผาผลาญแบบไม่ใช้ออกซิเจน** (และในภาวะติดเชื้อยังมีกลไกอื่นร่วม เช่นการเร่ง glycolysis จากฤทธิ์ beta-adrenergic และการกำจัดลักเตทที่ตับลดลง)
+- **ใช้ติดตามการตอบสนองได้** — สไลด์ระบุเป้าหมายว่า **ลดลงอย่างน้อย 20% ใน 2 ชั่วโมง สัมพันธ์กับอัตราตายในโรงพยาบาลที่ลดลง**
+- **ลักเตทที่ไม่ลดลงหลังรักษา เป็นสัญญาณเตือนที่หนักแน่นกว่าความดันที่ดูดีขึ้น**
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์ใช้คำว่า **"preshock"** คู่กับ compensated shock และย้ำว่าระยะนี้ **"no overt signs of organ dysfunction"** ต้องอาศัย **การตรวจทางห้องปฏิบัติการ** จึงจะจับได้
+- สไลด์ยกตัวอย่างการชดเชยที่ต่างกันระหว่าง **ติดเชื้อ (เพิ่ม HR และ CO)** กับ **เสียเลือด (เพิ่ม SVR และ HR)** — สองตัวอย่างนี้สะท้อนตารางโปรไฟล์ไหลเวียนในหัวข้อที่แล้วพอดี
+
+**จำไปสอบ**
+- Compensated shock = ความดันยังปกติ แต่ลักเตทขึ้นและปัสสาวะเริ่มน้อย — นี่คือหน้าต่างที่รักษาได้ผลที่สุด
+- Pulse pressure ที่แคบลงมาก่อนความดันซิสโตลิกตก
+- เป้าหมายคือลักเตทลดลงอย่างน้อย 20% ใน 2 ชั่วโมง
+- คนอายุน้อยชดเชยได้จนเสียเลือด 30−40% แล้วตกฮวบ · ผู้สูงอายุและคนกิน beta-blocker ไม่มีหัวใจเต้นเร็วให้เห็น
+
+**ข้อสอบเช็คความเข้าใจ (1 ข้อ)**
+
+[C-OLD-31]
+
+A patient in prolonged shock is found to have AST 1,800 U/L and ALT 1,600 U/L with normal alkaline phosphatase, which fall rapidly over 3 days after blood pressure is restored. What is the most likely diagnosis?
+
+A. Acute viral hepatitis
+B. Paracetamol toxicity
+C. Biliary obstruction
+D. Ischaemic hepatitis (shock liver)
+E. Alcoholic hepatitis
+
+ANSWER: D. Ischaemic hepatitis (shock liver)
+
+EXPLAIN:
+**Ischaemic hepatitis**: ตับขาดเลือดช่วง shock ทำให้ transaminase พุ่งขึ้นหลักพันภายใน 1-3 วันแล้ว **ลดลงเร็วเมื่อการไหลเวียนกลับมาปกติ** ต่างจากไวรัสตับอักเสบที่ค่อย ๆ ขึ้นลง และ alcoholic hepatitis ที่ AST:ALT ~2:1 แต่ค่าไม่สูงถึงหลักพัน
+
+SRC: MED34 MCQ ครั้งที่ 4 ข้อ 52 / MED33 MCQ
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 2.3.11 โรคระบบทางเดินอาหาร (ทั้งหมวด) · B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation
+
+
+### [cardio-10-04] ประเมินข้างเตียง — หน้าต่างสามบานและ JVP
+
+_สมอง ไต ผิวหนัง คือสามหน้าต่างที่มองเห็นการไหลเวียนได้โดยไม่ต้องใช้เครื่องมือ_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.1.5 หน้ามืด เป็นลม (fainting, syncope)
+
+### หลักการรักษาช็อกที่สไลด์วางไว้ก่อนอย่างอื่น
+> 1. **จับช็อกให้ได้เร็ว (recognize shock early)**
+> 2. **ประเมินว่าเป็นช็อกชนิดไหน**
+> 3. **เริ่มการรักษาไปพร้อมกับการสืบค้นหาสาเหตุ** — ไม่ใช่รอให้รู้สาเหตุก่อนแล้วค่อยรักษา
+> 4. **ใช้ทีมสหสาขา**
+> 5. **เป้าหมายของการรักษาคือคืนการส่งออกซิเจนให้เนื้อเยื่อ**
+
+**ข้อ 3 คือหัวใจของเวชปฏิบัติจริง** — คนไข้ undifferentiated shock ต้องได้สารน้ำ ออกซิเจน และเลือดเจาะส่งตรวจ **ขณะที่ยังไม่รู้ว่าช็อกชนิดไหน**
+
+### ประวัติ
+- **ต้องกระชับและมีเป้าหมาย**
+- แยกให้ออกว่าอาการนั้น **เป็นอาการของโรคที่ทำให้ช็อก หรือเป็นผลจากการที่เนื้อเยื่อได้ออกซิเจนไม่พอ**
+- **สองอาการสำคัญที่สไลด์ทำเครื่องหมายว่าเป็น key**
+  - **ระดับความรู้สึกตัวเปลี่ยนไป**
+  - **ปัสสาวะออกน้อยลง (oliguria)**
+
+### การตรวจร่างกาย
+**เกณฑ์ความดันที่สไลด์ให้ไว้**
+> **ความดันซิสโตลิก < 90 mmHg หรือ MAP < 65 mmHg**
+> **หัวใจเต้นเร็วเป็นกลไกชดเชยที่พบบ่อยที่สุด**
+
+**หน้าต่างสามบานที่ใช้ดูว่าอวัยวะเริ่มเสียหรือยัง**
+
+| หน้าต่าง | สิ่งที่พบ |
+|---|---|
+| **ระบบประสาทส่วนกลาง** | **สับสน ซึม สมองทำงานผิดปกติ (encephalopathy)** |
+| **ไต** | **ปัสสาวะออกน้อยกว่า 0.5 mL/kg/ชม.** |
+| **ผิวหนัง** | **เย็นชื้น → ลายเป็นร่างแห (mottling) → เวลาเติมเลือดฝอยกลับนานขึ้น** |
+
+**แยกชนิดด้วยการคลำและดูสองอย่าง**
+
+| | **CO ต่ำ** (cardiogenic, obstructive, hypovolemic) | **CO สูง** (distributive) |
+|---|---|---|
+| ปลายมือเท้า | **เย็น** | **อุ่น** |
+| เวลาเติมเลือดฝอย | **ช้า** | **ปกติ (< 2 วินาที)** |
+| ชีพจร | **เบา ความดันช่วงแคบ** | **แรง ความดันช่วงกว้าง (ตัวล่างต่ำ)** |
+
+**แล้วใช้ JVP แยกต่อ**
+
+| JVP | ความหมาย | ชนิด |
+|---|---|---|
+| **< 8 ซม. (ต่ำ/แฟบ)** | **ปริมาตรในหลอดเลือดพร่อง** | **Hypovolemic** |
+| **สูง (± บวมรอบนอก)** | **ความดันเติมเลือดสูง** | **Cardiogenic และ Obstructive** |
+
+> **JVP คือสัญญาณเดียวที่ให้ข้อมูลมากที่สุดข้างเตียงในคนไข้ช็อกที่ไม่รู้ประวัติ** เพราะแยก "ขาดน้ำ" ออกจาก "หัวใจหรือมีสิ่งขัดขวาง" ได้ทันที ซึ่งเปลี่ยนการรักษาคนละทาง — **กลุ่มแรกต้องเติมน้ำเร็ว ส่วนกลุ่มหลังการเติมน้ำมากอาจทำให้แย่ลง**
+
+### กับดักของการตรวจร่างกาย
+- **ปลายมือเท้าอุ่นไม่ได้แปลว่าไม่ช็อก** — distributive shock อุ่นเสมอ
+- **Mottling ที่หัวเข่าเป็นสัญญาณพยากรณ์โรคที่ไม่ดี** และมักมาก่อนความดันตกในภาวะติดเชื้อ
+- **คนไข้ที่หนาวสั่นหรืออยู่ห้องเย็น ปลายมือเท้าจะเย็นโดยไม่ได้ช็อก** ต้องดูร่วมกับสัญญาณอื่น
+- **เป็นลมจากปฏิกิริยา vasovagal** ให้ภาพความดันต่ำร่วมกับ **หัวใจเต้นช้า** ซึ่งต่างจากช็อกจริงที่มักเต้นเร็ว และมักหายเองเมื่อนอนราบยกขาสูง
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์ใช้คำว่า **"Windows" which we can identify organ dysfunction** สำหรับสมอง ไต และผิวหนัง — เป็นกรอบที่จำง่ายและใช้ได้จริงตอนราวด์
+- สไลด์แยกภาพการตรวจร่างกายเป็นสองหน้า หน้าแรกแยก **CO ต่ำกับ CO สูง** ด้วยอุณหภูมิปลายมือเท้า เวลาเติมเลือดฝอย และความดันช่วง หน้าที่สองแยก **ปริมาตรในหลอดเลือด** ด้วย **JVP < 8 ซม.** กับ **JVP สูงและบวมรอบนอก**
+
+**จำไปสอบ**
+- เริ่มรักษาไปพร้อมกับสืบค้นสาเหตุ อย่ารอให้รู้ชนิดก่อน
+- หน้าต่างสามบาน — สมอง (สับสน) ไต (ปัสสาวะ < 0.5 mL/kg/ชม.) ผิวหนัง (เย็นชื้น mottling)
+- JVP < 8 ซม. = hypovolemic · JVP สูง = cardiogenic หรือ obstructive
+- ความดันช่วงกว้างกับปลายมืออุ่น = CO สูง = distributive
+- เป็นลม vasovagal ให้ความดันต่ำร่วมกับหัวใจเต้นช้า ไม่ใช่เต้นเร็วแบบช็อกจริง
+
+**ข้อสอบเช็คความเข้าใจ (3 ข้อ)**
+
+[C-MCQ-10] Bedside differentiation of shock – jugular venous pressure
+
+A 55-year-old man is hypotensive in the emergency department with BP 78/50 mmHg, PR 126/min and cool extremities. No history is available. Which single bedside finding is most useful to distinguish hypovolaemic shock from cardiogenic shock in this patient?
+
+A. Heart rate
+B. Skin temperature of the extremities
+C. Presence of metabolic acidosis on blood gas
+D. Jugular venous pressure
+E. Urine output over the past hour
+
+ANSWER: D. Jugular venous pressure
+
+EXPLAIN:
+กลไก: shock ทั้ง hypovolemic และ cardiogenic มี **CO ต่ำ + SVR สูง** เหมือนกัน → ปลายน้ำเหมือนกันหมด (มือเท้าเย็น, tachycardia, oliguria, lactate/metabolic acidosis) **แยกกันไม่ได้ด้วยอาการปลายน้ำ**
+
+จุดที่ต่างกันคือ **preload ที่ต้นน้ำ**:
+- **Hypovolemic**: เสีย intravascular volume → venous return ต่ำ → **JVP แฟบ / IVC collapse** → ตอบสนองดีต่อ fluid
+- **Cardiogenic**: ปั๊มเสีย ปริมาตรยังอยู่ แต่ดันไปข้างหน้าไม่ได้ → คั่งย้อนขึ้น → **JVP สูง + อาจมี S3, crepitation, hepatomegaly**
+
+การดู JVP (หรือ IVC ด้วย POCUS) จึงเปลี่ยนการรักษาแบบพลิกขั้ว: **JVP แฟบ → ให้น้ำ**, **JVP สูง → ห้ามให้น้ำ ต้องให้ inotrope/ลด afterload/decongest**
+
+ทำไมข้ออื่นผิด:
+- **Skin temperature**: แยก **distributive (อุ่น) ออกจาก low-output shock (เย็น)** ได้ แต่ hypovolemic กับ cardiogenic **เย็นทั้งคู่**
+- **Heart rate**: tachycardia เป็น compensatory response ทั่วไปในทุกชนิด (และอาจหายไปในผู้ป่วยที่กิน β-blocker หรือสูงอายุ)
+- **Urine output**: ทั้งสองกลุ่มมี renal hypoperfusion → oliguria เหมือนกัน
+- **Metabolic acidosis**: lactate ขึ้นจาก tissue hypoperfusion ใน shock ทุกชนิด ไม่จำเพาะ
+
+PEARL: สอบ OSCE มักให้ "flatted neck vein + แห้งจัด" → ตอบ **ให้ IV isotonic fluid**; ถ้า "JVP สูง + crepitation" → ห้ามให้น้ำ. ที่ bedside ใช้ **POCUS 3 จุด** ช่วย: IVC (volume), heart (EF/effusion/RV), lung (B-line) แยกได้ทั้ง 4 ชนิดในไม่กี่นาที
+
+REF: MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 43 – คนไข้ flatted neck vein ดูแห้งมาก ทำไงดี → ให้น้ำ | MED32 MCQ ข้อ 84 – JVP flat → 0.9% NSS load | MED34 OSCE+SAQ – ตรวจ dehydration: skin turgor, JVP, capillary refill time | MED30 สรุป Cardio – hypovolemic / cardiogenic / obstructive / distributive shock
+
+NL: B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic)
+
+
+[C-OLD-28]
+
+Which bedside finding best distinguishes hypovolaemic shock from cardiogenic and obstructive shock?
+
+A. Narrow pulse pressure
+B. Cold peripheries
+C. Flat (low) jugular venous pressure
+D. Oliguria
+E. Tachycardia
+
+ANSWER: C. Flat (low) jugular venous pressure
+
+EXPLAIN:
+**JVP คือตัวแยกที่เร็วและแม่นที่สุดข้างเตียง**: ต่ำ = hypovolaemic หรือ distributive; สูง = cardiogenic หรือ obstructive (tamponade, tension pneumothorax, PE); ส่วน tachycardia ปลายมือเย็น ปัสสาวะน้อย พบได้ในทุกชนิดจึงแยกไม่ได้
+
+SRC: MED35 FA MCQ ข้อ 18
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic)
+
+
+[C-OLD-30]
+
+During thoracentesis a patient becomes light-headed with cold extremities. BP 80/60 mmHg, pulse 40/min, and breath sounds are equal bilaterally. What is the most likely cause?
+
+A. Intercostal artery injury with haemorrhage
+B. Tension pneumothorax
+C. Cardiogenic shock
+D. Vasovagal reaction
+E. Anaphylaxis to local anaesthetic
+
+ANSWER: D. Vasovagal reaction
+
+EXPLAIN:
+**ความดันตกพร้อมชีพจรช้า (bradycardia) = vasovagal** จากการกระตุ้น vagus ระหว่างหัตถการ — ต่างจากทุกภาวะช็อกอื่นที่ชีพจรจะเร็ว; ฟังปอดเท่ากันสองข้างช่วยตัด tension pneumothorax และยังไม่มีหลักฐานเสียเลือด รักษาโดยหยุดหัตถการ นอนราบยกขา ให้สารน้ำ และให้ atropine ถ้าจำเป็น
+
+SRC: MED31 past paper loop C&D
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 2.1.5 หน้ามืด เป็นลม (fainting, syncope) · B6.3(1) Pleural fluid analysis
+
+
+### [cardio-10-05] การตรวจเพิ่มเติม — แล็บ ECG ภาพรังสี และ POCUS
+
+_ECG สี่แบบที่ต้องอ่านออกทันที และเหตุผลที่อัลตราซาวด์ข้างเตียงเปลี่ยนเกม_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 3.1.12 Electrocardiography · B7.3(3) Electrocardiography: axis, rate and rhythm, diagnosis of acute STEMI · 3.3.23 Echocardiography
+
+### ชุดตรวจที่สไลด์ให้ส่งในคนไข้ช็อก
+**ลักเตท · การทำงานของไต · การทำงานของตับ · เอนไซม์หัวใจ · CBC พร้อม differential · PT, PTT, INR · การตรวจการตั้งครรภ์ · ปัสสาวะและตะกอนปัสสาวะ · ก๊าซในเลือดแดง · ECG · ภาพรังสีทรวงอก**
+
+> **ข้อที่คนลืมบ่อยคือการตรวจการตั้งครรภ์** — หญิงวัยเจริญพันธุ์ที่ช็อกโดยไม่ทราบสาเหตุ **ต้องนึกถึงการตั้งครรภ์นอกมดลูกแตก** ซึ่งเป็นช็อกจากการเสียเลือดในช่องท้องที่มองไม่เห็นจากภายนอก
+
+### ECG — สี่รูปแบบที่สไลด์ระบุว่าต้องจับให้ได้
+
+| สิ่งที่พบ | ชี้ไปที่ |
+|---|---|
+| **หัวใจเต้นช้าหรือเร็วผิดจังหวะแบบร้ายแรง** | **ภาวะหัวใจเต้นผิดจังหวะที่เป็นต้นเหตุของช็อก** |
+| **ST ยกขึ้น** | **กล้ามเนื้อหัวใจตาย** |
+| **S1Q3T3** | **ลิ่มเลือดอุดกั้นปอด** |
+| **ไฟฟ้าต่ำ ร่วมกับ electrical alternans** | **ภาวะบีบรัดหัวใจ (tamponade)** |
+
+**ข้อควรรู้เพิ่มเกี่ยวกับ S1Q3T3** — เป็นรูปแบบที่ **จำเพาะพอสมควรแต่ไวต่ำมาก** พบเพียงส่วนน้อยของผู้ป่วยลิ่มเลือดอุดกั้นปอด สิ่งที่พบบ่อยกว่าคือ **หัวใจเต้นเร็วธรรมดา** และ **T inversion ใน V1−V4** ดังนั้น **ECG ที่ปกติไม่ตัด PE ออก**
+
+### ภาพรังสีทรวงอก
+ใช้แยกได้เร็วหลายอย่าง — **น้ำท่วมปอด (cardiogenic) · ปอดอักเสบ (septic) · เงาหัวใจทรงขวดน้ำ (tamponade) · ปอดแฟบจากลมรั่วและหลอดลมเบน (tension pneumothorax) · ช่องอกเมดิแอสตินัมกว้าง (aortic dissection)**
+
+> **แต่ถ้าสงสัย tension pneumothorax อย่ารอฟิล์ม** — เป็นการวินิจฉัยทางคลินิกที่ต้อง **เจาะระบายลมทันที**
+
+### POCUS — อัลตราซาวด์ข้างเตียง
+สไลด์ระบุว่ามีบทบาทมากขึ้นเรื่อย ๆ เพราะ **ราคาถูก ทำได้เร็ว และไม่รุกล้ำ** โดยดูได้ที่ **หัวใจ ปอด ช่องเยื่อหุ้มปอด IVC หลอดเลือดแดงใหญ่ในช่องท้อง ช่องท้อง และอุ้งเชิงกราน**
+
+**สิ่งที่ตอบได้ภายในไม่กี่นาที**
+| ดูอะไร | บอกอะไร |
+|---|---|
+| **การบีบตัวของหัวใจ** | **เสีย = cardiogenic** · **แรงมากแต่ห้องเล็ก = hypovolemic หรือ distributive** |
+| **น้ำรอบหัวใจ + ห้องขวายุบ** | **tamponade** |
+| **ห้องขวาโต ผนังกั้นเบน** | **ลิ่มเลือดอุดกั้นปอดขนาดใหญ่** |
+| **IVC เล็กและยุบตามหายใจ** | **ปริมาตรพร่อง — เติมน้ำได้** |
+| **IVC ใหญ่และไม่ยุบ** | **ความดันเติมเลือดสูง — ระวังการเติมน้ำ** |
+| **ปอด: B-line กระจาย** | **น้ำท่วมปอด** |
+| **ปอด: ไม่มี lung sliding** | **ลมรั่วในช่องเยื่อหุ้มปอด** |
+| **ช่องท้อง: มีน้ำอิสระ** | **เลือดออกในช่องท้อง** |
+| **เอออร์ตาในช่องท้องโป่ง** | **หลอดเลือดแดงใหญ่โป่งพองแตก** |
+
+> **POCUS คือสิ่งที่เปลี่ยน "undifferentiated shock" ให้กลายเป็นชนิดที่ระบุได้เร็วที่สุด** และตอบคำถามที่สำคัญที่สุดข้างเตียงพร้อมกันสองข้อ: **เป็นช็อกชนิดไหน** และ **เติมน้ำได้อีกไหม**
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์แยก **ECG เป็นหัวข้อของตัวเองเต็มหนึ่งหน้า** และบอกว่าเป็น **"essential part of the evaluation of the patient with shock"** พร้อมยกสี่รูปแบบข้างต้นเป็นตัวอย่าง
+- สไลด์ระบุเหตุผลของ POCUS ไว้สามข้อคือ **low cost, rapidity, noninvasive** และไล่รายการอวัยวะที่ต้องกวาดดูไว้ครบ
+- ชุดแล็บในสไลด์ครอบคลุมทั้ง **การหาสาเหตุ (เอนไซม์หัวใจ ปัสสาวะ CBC) และการประเมินความรุนแรง (ลักเตท ก๊าซในเลือด การทำงานของตับและไต)**
+
+**จำไปสอบ**
+- ECG สี่แบบในคนช็อก — จังหวะร้ายแรง · ST ยก · S1Q3T3 · ไฟฟ้าต่ำกับ electrical alternans
+- ECG ปกติไม่ตัดลิ่มเลือดอุดกั้นปอดออก — S1Q3T3 ไวต่ำมาก
+- สงสัย tension pneumothorax ให้เจาะระบายลมทันที อย่ารอฟิล์ม
+- POCUS ตอบสองคำถามพร้อมกัน — ช็อกชนิดไหน และเติมน้ำได้อีกไหม
+- หญิงวัยเจริญพันธุ์ที่ช็อกไม่ทราบสาเหตุ ต้องส่งตรวจการตั้งครรภ์เสมอ
+
+**ข้อสอบเช็คความเข้าใจ (1 ข้อ)**
+
+[CARDIO-10-05-Q1] การตรวจเพิ่มเติม — แล็บ ECG ภาพรังสี และ POCUS
+
+A 61-year-old man presents with hypotension and dyspnoea of sudden onset. Blood pressure is 82/54 mmHg, heart rate 124/min, and his extremities are cool. Bedside ultrasound shows a dilated, poorly contracting right ventricle with septal flattening, a vigorously contracting and underfilled left ventricle, no pericardial effusion, normal lung sliding bilaterally and a plethoric inferior vena cava that does not collapse. Which diagnosis do these findings most support?
+
+A. Septic shock with fluid-responsive hypovolaemia
+B. Tension pneumothorax causing obstructive shock
+C. Cardiac tamponade causing obstructive shock
+D. Acute left ventricular infarction causing cardiogenic shock
+E. Massive pulmonary embolism causing obstructive shock
+
+ANSWER: E. Massive pulmonary embolism causing obstructive shock
+
+EXPLAIN:
+**กลไก** — ภาพ POCUS ชุดนี้บอกได้ครบทุกอย่าง **ห้องล่างขวาโตและบีบตัวแย่ ร่วมกับผนังกั้นแบนราบ** คือภาพของ **ห้องขวาที่ต้องสู้กับแรงต้านในปอดที่เพิ่มขึ้นกะทันหัน** (acute cor pulmonale) ส่วน **ห้องล่างซ้ายบีบตัวแรงแต่มีเลือดน้อย** เพราะเลือดผ่านปอดมาถึงห้องซ้ายไม่ได้ และ **IVC ที่อิ่มและไม่ยุบ** ยืนยันว่าความดันหลอดเลือดดำสูง ไม่ใช่ปริมาตรพร่อง
+
+**ทำไมตัวลวงจึงผิด**
+- *Tamponade* — ต้องมี **น้ำรอบหัวใจ** ซึ่งโจทย์ระบุชัดว่าไม่มี และภาพของ tamponade คือ **ห้องขวายุบตัว ไม่ใช่ห้องขวาโต**
+- *กล้ามเนื้อหัวใจห้องซ้ายตาย* — จะเห็น **ห้องซ้ายบีบตัวแย่** แต่ในโจทย์ห้องซ้าย **บีบตัวแรงมาก** ซึ่งตรงข้ามกัน
+- *Tension pneumothorax* — ทำให้ JVP สูงและช็อกแบบ obstructive ได้จริง แต่ POCUS จะพบ **lung sliding หายไปข้างหนึ่ง** ซึ่งโจทย์ระบุว่าปกติทั้งสองข้าง
+- *Septic shock ที่เติมน้ำได้* — จะมี **IVC เล็กและยุบตามหายใจ ปลายมือเท้าอุ่น** ตรงข้ามกับโจทย์ทั้งสองข้อ
+
+**ประเด็นการรักษา** — ช็อกจาก PE ขนาดใหญ่ **การเติมน้ำมากเกินไปทำให้แย่ลง** เพราะยิ่งถ่างห้องขวาและเบียดห้องซ้ายผ่านผนังกั้น สิ่งที่ต้องทำคือ **ให้น้ำอย่างระมัดระวัง ใช้ norepinephrine ประคองความดัน และพิจารณาการสลายลิ่มเลือด**
+
+PEARL: RV โตกับผนังกั้นแบน + LV เล็กแต่บีบแรง + IVC อิ่ม + ไม่มีน้ำรอบหัวใจ = PE ขนาดใหญ่ และอย่าเติมน้ำเยอะ
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 3.3.23 Echocardiography
+
+
+### [cardio-10-06] การให้สารน้ำ — ให้เท่าไรและรู้ได้อย่างไรว่าพอ
+
+_Starling curve, passive leg raise และเหตุผลที่การให้น้ำเกินก็ฆ่าคนได้_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B9.4(2) Drugs and fluids used to treat volume, electrolyte and acid-base disorders · B7.1.2(2) Hemodynamics, including systemic and pulmonary circulation
+
+### หลักการ
+- **การคืนการไหลเวียนให้เนื้อเยื่อคือหัวใจของการรักษาช็อก** และสารน้ำมักเป็นสิ่งแรกที่ให้
+- **เป้าหมายคือดันคนไข้ไปให้ถึงช่วงของ Starling curve ที่ไม่ขึ้นกับ preload อีกแล้ว (preload-independent portion)**
+
+> **อ่าน Starling curve ให้เป็น** — ช่วงต้นของกราฟ **ชัน** คือการเติมน้ำเพิ่ม preload แล้ว **SV เพิ่มขึ้นชัดเจน** เรียกว่า **fluid responsive** แต่เมื่อขึ้นถึงส่วนที่ **ราบ** แล้ว การเติมน้ำต่อ **ไม่เพิ่ม SV อีก มีแต่ทำให้บวม ปอดมีน้ำ และความดันในช่องท้องสูงขึ้น** จุดประสงค์ของการประเมินจึงไม่ใช่ "ให้ครบเท่าไร" แต่คือ **"ยังอยู่ช่วงชันหรือช่วงราบแล้ว"**
+
+### Distributive shock ให้น้ำเยอะได้
+สไลด์ระบุว่า **ในกรณีของ distributive shock ความจำเป็นของการเติมสารน้ำเร็วและมากตั้งแต่ต้นเป็นสิ่งที่มีหลักฐานชัดเจนแล้ว** — เพราะมีทั้ง **การขยายตัวของหลอดเลือด (ปริมาตรสัมพัทธ์พร่อง)** และ **การรั่วของสารน้ำออกนอกหลอดเลือด (third space loss)** ตามที่สไลด์กำกับไว้ในตารางโปรไฟล์
+- ในภาวะติดเชื้อรุนแรง ขนาดเริ่มต้นที่ใช้กันคือ **คริสตัลลอยด์ 30 mL/kg ในชั่วโมงแรก ๆ** แล้วประเมินซ้ำ
+
+### ชนิดของสารน้ำ
+- **คริสตัลลอยด์ไอโซโทนิกเป็นตัวเลือกแรก** — **0.9% NaCl หรือ balanced crystalloid (Ringer's lactate, Acetar)**
+- **เสียเลือดต้องให้เลือด** ไม่ใช่คริสตัลลอยด์อย่างเดียว
+- **หลีกเลี่ยงสารละลายที่มีน้ำตาลอย่างเดียว (D5W)** เพราะกระจายเข้าเซลล์ ไม่อยู่ในหลอดเลือด
+
+### การประเมินว่ายังเติมน้ำได้อีกไหม
+> **Passive leg raise (PLR) test** — สไลด์ระบุว่าใช้ **ทำนายการตอบสนองต่อสารน้ำที่จะให้เพิ่ม** โดย **เป็นการให้ก้อนสารน้ำจากในตัวคนไข้เอง (endogenous volume bolus)**
+
+**วิธีและหลักการ** — ยกขาทั้งสองข้างขึ้นราว 45 องศาจากท่ากึ่งนั่ง ทำให้ **เลือดจากขาไหลกลับเข้าสู่ระบบไหลเวียนส่วนกลางราว 300 mL ชั่วคราว** ถ้า **CO หรือ SV เพิ่มขึ้นชัดเจน (มักใช้เกณฑ์ราว 10%)** แปลว่า **ยังอยู่ช่วงชันของกราฟ เติมน้ำได้อีก**
+**ข้อดีคือกลับคืนได้เอง** — ถ้าไม่ตอบสนองก็แค่วางขาลง ไม่ได้ให้สารน้ำที่เอาออกไม่ได้เข้าไปจริง
+
+**ตัวช่วยอื่น** — **IVC ที่เล็กและยุบตามการหายใจ** จาก POCUS · การแปรผันของความดันชีพจรตามการหายใจในคนที่ใส่เครื่องช่วยหายใจ
+
+### กับดักที่สำคัญที่สุดของหัวข้อนี้
+- **การให้น้ำมากเกินไปมีอันตรายจริง** — ทำให้ **ปอดมีน้ำ ถอดเครื่องช่วยหายใจยาก ไตบวมจากความดันดำสูงจนไตวายแย่ลง และความดันในช่องท้องสูง**
+- **Cardiogenic shock ที่ JVP สูงและมีน้ำท่วมปอดอยู่แล้ว การให้น้ำมากทำให้แย่ลงทันที** — กลุ่มนี้ต้องการ **ยาเพิ่มแรงบีบหัวใจ ไม่ใช่สารน้ำ**
+- **Obstructive shock ต้องแก้ที่สิ่งขัดขวาง** สารน้ำเป็นเพียงการประคองชั่วคราว
+- ทั้งสองข้อข้างบนคือเหตุผลที่ต้อง **แยกชนิดของช็อกก่อนหรืออย่างน้อยพร้อมกับการเติมน้ำ**
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์ใช้คำว่า **"aim to preload-independent portion of the Starling curve"** เป็นเป้าหมายของการให้สารน้ำ ซึ่งเป็นการวางเป้าหมายเชิงสรีรวิทยา ไม่ใช่เชิงปริมาตร
+- สไลด์อธิบาย PLR ว่าเป็น **"providing the patient with an endogenous volume bolus"** — เป็นนิยามที่จำง่ายและอธิบายข้อดีของการทดสอบนี้ในตัวเอง
+
+**จำไปสอบ**
+- เป้าหมายของสารน้ำคือไปให้ถึงช่วงราบของ Starling curve ไม่ใช่ให้ครบตามสูตร
+- Passive leg raise = ให้ก้อนสารน้ำจากในตัวคนไข้เอง ประมาณ 300 mL และกลับคืนได้
+- Distributive shock ต้องเติมน้ำเร็วและมาก เพราะมีทั้งหลอดเลือดขยายและ third space loss
+- Cardiogenic shock ที่ JVP สูงและปอดมีน้ำ การเติมน้ำมากทำให้แย่ลง — ต้องการยาเพิ่มแรงบีบหัวใจ
+- น้ำเกินทำให้ปอดมีน้ำ ถอดเครื่องยาก และไตวายแย่ลงจากความดันดำที่สูง
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[C-OLD-27]
+
+A hypotensive patient has flat neck veins, dry mucous membranes, poor skin turgor and a history of profuse diarrhoea. What is the most appropriate initial management?
+
+A. Rapid infusion of isotonic crystalloid (0.9% normal saline)
+B. Intravenous noradrenaline as the first step
+C. Packed red cell transfusion
+D. Pericardiocentesis
+E. Intravenous furosemide
+
+ANSWER: A. Rapid infusion of isotonic crystalloid (0.9% normal saline)
+
+EXPLAIN:
+**JVP แฟบ + ขาดน้ำชัดเจน = hypovolaemic shock → ให้สารน้ำ isotonic อย่างรวดเร็วก่อน** แล้วประเมินซ้ำ; ยากระตุ้นความดันใช้เมื่อให้สารน้ำเพียงพอแล้วยังไม่ดีขึ้น ไม่ใช่ทางเลือกแรกในผู้ป่วยที่ปริมาตรพร่อง
+
+SRC: MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 43 / MED32 MCQ ข้อ 84
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B9.2.5(2) Disorders of fluid, electrolytes and acid-base balance (acidosis, alkalosis, dysnatremia, dyskalemia, calcium/phosphate disorders) · B9.4(2) Drugs and fluids used to treat volume, electrolyte and acid-base disorders
+
+
+[C-OLD-29]
+
+A patient with severe vomiting and diarrhoea has BP 85/50 mmHg, Na 120 mEq/L, BUN 40 mg/dL and creatinine 1.8 mg/dL. What is the most appropriate initial fluid?
+
+A. 3% hypertonic saline
+B. Albumin 20% infusion
+C. 0.9% normal saline
+D. 5% dextrose in water
+E. 0.45% saline
+
+ANSWER: C. 0.9% normal saline
+
+EXPLAIN:
+เป็น **hypovolaemic hyponatraemia** — เสียทั้งน้ำและเกลือ ร่างกายหลั่ง ADH เพื่อรักษาปริมาตร ทำให้ Na เจือจาง; การให้ **isotonic saline แก้ทั้งความดันและโซเดียมพร้อมกัน** โดยไม่ต้องใช้ 3% NaCl (สงวนไว้เมื่อมีอาการทางสมอง เช่น ชัก ซึม) และต้องระวังแก้ Na เร็วเกิน 8-10 mEq/L ต่อวัน
+
+SRC: MED33 MCQ
+
+NL: B9.2.5(2) Disorders of fluid, electrolytes and acid-base balance (acidosis, alkalosis, dysnatremia, dyskalemia, calcium/phosphate disorders) · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B9.4(2) Drugs and fluids used to treat volume, electrolyte and acid-base disorders
+
+
+### [cardio-10-07] ยากระตุ้นหลอดเลือด ยาเพิ่มแรงบีบหัวใจ และการช่วยหายใจ
+
+_เลือกยาตามกลไกที่เสีย ไม่ใช่ตามความดันที่เห็น_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic)
+
+### เมื่อไรจึงเริ่มยา
+> **เริ่มเมื่อเติมสารน้ำจนเหมาะสมแล้ว แต่ความดันยังต่ำและเนื้อเยื่อยังได้เลือดไม่พอ**
+> **และต้องเลือกยาให้ตรงกับความผิดปกติทางสรีรวิทยาที่เป็นต้นเหตุ**
+
+*(ในทางปฏิบัติ ถ้าความดันต่ำมากจนอวัยวะเสี่ยงทันที สามารถเริ่มยาไปพร้อมกับการเติมน้ำได้เลย ไม่ต้องรอให้เติมครบ)*
+
+### สองตัวเลือกแรกที่สไลด์ระบุชัด
+
+| ชนิดของช็อก | เป้าหมายทางสรีรวิทยา | ยาตัวแรก | ฤทธิ์ |
+|---|---|---|---|
+| **Distributive** | **เพิ่ม SVR** | **Norepinephrine** | **α₁ แรง ร่วมกับ β₁ พอควร** |
+| **Cardiogenic** | **เพิ่มแรงบีบตัว** | **Dobutamine** | **ออกฤทธิ์ผ่าน β เป็นหลัก มีฤทธิ์ α น้อยมาก** |
+
+> **ตรรกะเบื้องหลัง — ถามว่า "อะไรพัง" แล้วจึงเลือกยา**
+> **SVR พัง → ให้ยาที่บีบหลอดเลือด (norepinephrine)**
+> **แรงบีบหัวใจพัง → ให้ยาที่เพิ่มแรงบีบ (dobutamine)**
+> การให้ยาบีบหลอดเลือดแรง ๆ ในคนที่หัวใจบีบตัวไม่ไหว จะ **เพิ่ม afterload จน CO ยิ่งตก** ส่วนการให้ dobutamine ในคนติดเชื้อที่ SVR ต่ำอยู่แล้ว จะ **ทำให้ความดันตกลงอีก** เพราะ β₂ ขยายหลอดเลือด
+
+### ยาที่ควรรู้จักเพิ่ม
+| ยา | ฤทธิ์เด่น | ใช้เมื่อ |
+|---|---|---|
+| **Norepinephrine** | **α₁ > β₁** | **ตัวแรกของช็อกจากการติดเชื้อและช็อกจากหัวใจที่ความดันต่ำมาก** |
+| **Adrenaline (epinephrine)** | **α และ β ทั้งคู่แรง** | **ช็อกจากการแพ้รุนแรง (ตัวแรกและสำคัญที่สุด)** · ภาวะหัวใจหยุดเต้น · เสริมเมื่อดื้อ |
+| **Dobutamine** | **β₁ > β₂** | **เพิ่ม CO ในช็อกจากหัวใจ** — มักใช้ควบกับ norepinephrine |
+| **Vasopressin** | **V₁ ไม่ผ่านตัวรับอะดรีเนอร์จิก** | **เสริม norepinephrine ในช็อกติดเชื้อเพื่อลดขนาด norepinephrine** |
+| **Dopamine** | ขึ้นกับขนาด | **ปัจจุบันไม่ใช่ตัวแรก** เพราะ **เพิ่มหัวใจเต้นผิดจังหวะมากกว่า norepinephrine** |
+
+**ข้อควรระวังที่ใช้บ่อย** — ยาบีบหลอดเลือดควรให้ทาง **เส้นเลือดดำส่วนกลาง** เมื่อทำได้ เพราะรั่วออกนอกเส้นแล้วทำให้เนื้อเยื่อตาย · แต่ **ห้ามรอเปิดเส้นกลางจนคนไข้ทรุด** เริ่มทางเส้นส่วนปลายเส้นใหญ่ไปก่อนได้แล้วค่อยเปลี่ยน
+
+### ออกซิเจนและการช่วยหายใจ
+> **ให้ออกซิเจนเสริมและปรับให้ SpO₂ อยู่ที่ 92−95%**
+
+**ข้อบ่งชี้ของการใส่เครื่องช่วยหายใจตามสไลด์**
+- **เพื่อลดระยะเวลาที่เนื้อเยื่อขาดออกซิเจน**
+- **เมื่อคนไข้ไม่สามารถหายใจชดเชยภาวะเลือดเป็นกรดจากเมตาบอลิกได้อีกต่อไป**
+
+**และเมื่อใส่แล้วให้ใช้กลยุทธ์ปกป้องปอด**
+- **ปริมาตรลมหายใจต่ำ (low tidal volume)**
+- **ปรับ PEEP ให้เหมาะสมเพื่อลดการบาดเจ็บของปอดจากเครื่องช่วยหายใจ**
+
+> **กับดักที่ต้องระวังตอนใส่ท่อช่วยหายใจในคนไข้ช็อก** — **ยานำสลบทำให้หลอดเลือดขยายและความดันตก** และ **ความดันบวกในช่องอกลดเลือดดำที่กลับเข้าหัวใจ** ทั้งสองอย่างรวมกันทำให้ **หัวใจหยุดเต้นรอบการใส่ท่อได้** จึงควร **เติมน้ำและเตรียมยากระตุ้นหลอดเลือดให้พร้อมก่อนเสมอ** · ข้อนี้ร้ายแรงเป็นพิเศษใน **obstructive shock เช่น tamponade และ PE ขนาดใหญ่** ที่พึ่ง preload มาก
+
+### ยาปฏิชีวนะ
+- ใน **undifferentiated shock** สไลด์ระบุว่า **ภาวะติดเชื้อและช็อกจากการติดเชื้อเป็นสาเหตุที่พบบ่อยที่สุดของช็อก**
+- **ให้ยาปฏิชีวนะครอบคลุมกว้างหลังเก็บเพาะเชื้อที่เหมาะสมแล้ว** — และไม่ควรรอผลเพาะเชื้อ
+- **เมื่อตัดการติดเชื้อออกไปแล้ว การหยุดยาปฏิชีวนะทั้งหมดคือส่วนสำคัญของการใช้ยาอย่างรับผิดชอบ (antibiotic stewardship)**
+
+### สามคำที่สไลด์ใช้สรุปการกู้ชีพ
+> **Ventilate (ให้ออกซิเจน) · Infuse (เติมสารน้ำ) · Pump (ยาที่ออกฤทธิ์ต่อหลอดเลือดและหัวใจ)** — อ้างอิง N Engl J Med 2013
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์เขียนฤทธิ์ของยาไว้ในวงเล็บชัดเจน: **norepinephrine "with potent α1 and β1 adrenergic effects"** และ **dobutamine "primarily β-mediated effects and minimal α adrenergic effects"** — เป็นเหตุผลที่ยาสองตัวนี้ถูกจับคู่กับช็อกคนละชนิด
+- สไลด์ให้เป้าหมาย **SpO₂ 92−95%** ซึ่งเป็นช่วงที่ไม่สูงเกินไป สะท้อนหลักฐานปัจจุบันว่าออกซิเจนที่มากเกินจำเป็นก็มีโทษ
+- สไลด์ย้ำเรื่อง **การหยุดยาปฏิชีวนะเมื่อตัดการติดเชื้อออกแล้ว** ซึ่งเป็นประเด็นที่มักถูกลืมในเวชปฏิบัติ
+
+**จำไปสอบ**
+- Distributive → norepinephrine (เพิ่ม SVR) · cardiogenic → dobutamine (เพิ่มแรงบีบ)
+- เลือกยาตามกลไกที่พัง ไม่ใช่ตามตัวเลขความดัน
+- SpO₂ เป้าหมาย 92−95% · ใส่เครื่องช่วยหายใจใช้ปริมาตรลมต่ำและปรับ PEEP
+- ระวังหัวใจหยุดเต้นรอบการใส่ท่อช่วยหายใจ — เติมน้ำและเตรียมยากระตุ้นหลอดเลือดก่อน
+- Ventilate · Infuse · Pump คือสามเสาของการกู้ชีพช็อก
+- ตัดการติดเชื้อออกได้แล้วต้องหยุดยาปฏิชีวนะ
+
+**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+
+[C-MCQ-08] Septic shock – first-line vasopressor
+
+A 68-year-old man with pyelonephritis remains hypotensive after receiving 30 mL/kg of balanced crystalloid. Vital signs: BT 38.9 C, PR 118/min, BP 82/40 mmHg, RR 26/min. Extremities are warm with brisk capillary refill and the pulse pressure is wide. Serum lactate is 4.2 mmol/L. Echocardiography shows a hyperdynamic left ventricle with LVEF 65% and a non-collapsed inferior vena cava. Which of the following is the most appropriate next step?
+
+A. Transfuse packed red cells to a haemoglobin target of 10 g/dL
+B. Start intravenous dopamine infusion at 5 micrograms/kg/min
+C. Give an additional 2 litres of crystalloid before starting any vasopressor
+D. Start intravenous norepinephrine infusion targeting a mean arterial pressure of 65 mmHg
+E. Start intravenous dobutamine infusion to augment cardiac output
+
+ANSWER: D. Start intravenous norepinephrine infusion targeting a mean arterial pressure of 65 mmHg
+
+EXPLAIN:
+กลไก: septic shock = **distributive** — endotoxin/PAMPs กระตุ้น innate immunity → NO synthase (iNOS) ↑, prostacyclin ↑, ATP-sensitive K channel เปิด → **vascular smooth muscle ไม่ตอบสนองต่อ catecholamine (vasoplegia)** → SVR ต่ำ, CO สูงชดเชย → มือเท้าอุ่น, wide pulse pressure, hyperdynamic LV (ตรงกับโจทย์ทุกข้อ)
+
+เมื่อ **fluid resuscitation เพียงพอแล้ว (30 mL/kg) + IVC ไม่ collapse** แต่ MAP ยังต่ำ ปัญหาคือ **SVR ไม่ใช่ preload** → ต้องให้ vasopressor
+
+**Norepinephrine เป็น first-line** (Surviving Sepsis Campaign): α1 เด่น → vasoconstriction แก้ vasoplegia ตรงกลไก, β1 อ่อนๆ ช่วย CO โดยไม่เพิ่ม HR มาก → **arrhythmia น้อยกว่า dopamine** (ยืนยันจาก SOAP II trial ซึ่ง dopamine มี arrhythmia และแนวโน้ม mortality สูงกว่า). เป้าหมาย **MAP ≥ 65 mmHg**
+
+ทำไมข้ออื่นผิด:
+- **ให้ fluid เพิ่มอีก 2 L**: เคสนี้ตัวชี้วัด fluid responsiveness เป็นลบ (IVC ไม่ collapse, LV hyperdynamic) → ให้ต่อจะได้แต่ **interstitial/pulmonary edema, ↑ venous congestion, AKI แย่ลง** และเสีย time-to-vasopressor (ทุก 1 ชม.ที่ช้า mortality เพิ่ม)
+- **Dopamine**: เคยเป็น first-line แต่ถูกถอดไปแล้ว — เสี่ยง tachyarrhythmia สูงกว่า, ฤทธิ์เปลี่ยนตาม dose (dopaminergic/β/α) คาดเดายาก, "renal-dose dopamine" พิสูจน์แล้วว่าไม่ป้องกัน AKI
+- **Dobutamine**: β1 agonist เพิ่ม inotropy + **β2 ทำให้ vasodilate → BP ตกยิ่งขึ้น**; ใช้เมื่อมี septic cardiomyopathy (EF ตก, CO ต่ำ) — เคสนี้ EF 65% hyperdynamic อยู่แล้ว ให้ไปจะซ้ำเติม
+- **Transfusion เป้า Hb 10**: TRISS trial แสดงว่า restrictive threshold **Hb 7 g/dL** ไม่แย่กว่า; โจทย์ไม่ได้บอกว่าซีดหรือมี active bleeding
+
+PEARL: Bundle 1 ชั่วโมงแรกของ septic shock: วัด **lactate**, เจาะ **hemoculture ก่อนให้ยา**, ให้ **broad-spectrum antibiotic**, ให้ **crystalloid 30 mL/kg**, และ **เริ่ม vasopressor ถ้า MAP <65 ระหว่างหรือหลังให้น้ำ**; ตัวที่ 2 คือ vasopressin, ถ้ายังไม่พอพิจารณา hydrocortisone
+
+REF: MED34 FA MCQ – Patient develops shock 2 days after starting antibiotics → Septic shock | MED31 past paper loop C&D – A 75 year old woman with fever, leukocyte 13,000, UA 20-25 WBC/HPF, urine & blood culture E. coli → Sepsis / severe sepsis terminology | MED31 MCQ – ผู้ป่วยชายอายุ 40 ปี septic shock 6 ชั่วโมง ไม่มี urine ประมาณค่า GFR
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation
+
+
+[CARDIO-10-07-Q1] ยากระตุ้นหลอดเลือด ยาเพิ่มแรงบีบหัวใจ และการช่วยหายใจ
+
+A 70-year-old man with an anterior ST-elevation myocardial infarction has a blood pressure of 84/56 mmHg, heart rate 108/min, cold mottled extremities, a jugular venous pressure of 12 cm and bibasilar crepitations. Echocardiography shows an ejection fraction of 20%. He has already received 500 mL of crystalloid without improvement. Which of the following is the most appropriate next step in haemodynamic support?
+
+A. Start intravenous furosemide alone and withhold vasoactive drugs
+B. Start dobutamine, adding norepinephrine if the mean arterial pressure remains below 65 mmHg
+C. Start high-dose phenylephrine to raise the systemic vascular resistance
+D. Give a further 30 mL/kg of crystalloid before starting any vasoactive drug
+E. Start dopamine as the first-line agent because it supports both rate and pressure
+
+ANSWER: B. Start dobutamine, adding norepinephrine if the mean arterial pressure remains below 65 mmHg
+
+EXPLAIN:
+**กลไก** — คนไข้รายนี้เป็น **cardiogenic shock** ชัดเจน: **JVP สูง 12 ซม. มีน้ำในปอด ปลายมือเท้าเย็น และ EF 20%** สิ่งที่พังคือ **แรงบีบตัวของหัวใจ** สไลด์จึงระบุให้ **dobutamine เป็นยาตัวแรกของช็อกจากหัวใจ** เพราะออกฤทธิ์ผ่าน **β เป็นหลักและมีฤทธิ์ α น้อยมาก** จึงเพิ่ม CO โดยไม่เพิ่ม afterload มาก
+
+**ทำไมต้องเติม norepinephrine เมื่อ MAP ยังต่ำ** — dobutamine มีฤทธิ์ **β₂ ที่ขยายหลอดเลือด** จึงอาจทำให้ความดันตกลงอีกในระยะแรก การใช้คู่กันจึงเป็นมาตรฐานเมื่อความดันยังต่ำ: **norepinephrine ประคองความดันเพื่อให้หลอดเลือดหัวใจได้เลือดเลี้ยง ส่วน dobutamine ดัน CO**
+
+**ทำไมตัวลวงจึงผิด**
+- *เติมน้ำอีก 30 mL/kg* — เป็นขนาดของ **septic shock** คนไข้รายนี้ **JVP สูงและมีน้ำในปอดอยู่แล้ว** การเติมน้ำต่อจะทำให้ปอดแย่ลงทันที และเขาก็ **ไม่ตอบสนองต่อ 500 mL แรกไปแล้ว**
+- *Phenylephrine ขนาดสูง* — เป็นยา **α บริสุทธิ์** จึงเพิ่ม afterload โดยไม่ช่วยแรงบีบเลย ในหัวใจที่ EF 20% การเพิ่ม afterload จะทำให้ **CO ตกลงไปอีก** เป็นตัวลวงที่อันตรายที่สุดในข้อนี้
+- *Furosemide อย่างเดียว* — คนไข้น้ำท่วมปอดก็จริง แต่ **กำลังช็อก** การลด preload โดยไม่ประคองการไหลเวียนก่อนจะทำให้ความดันตกลงอีก ยาขับปัสสาวะใช้ได้หลังการไหลเวียนนิ่งแล้ว
+- *Dopamine เป็นตัวแรก* — ปัจจุบัน **ไม่ใช่ตัวเลือกแรก** เพราะมีหลักฐานว่า **ทำให้หัวใจเต้นผิดจังหวะมากกว่า norepinephrine และในกลุ่มช็อกจากหัวใจสัมพันธ์กับอัตราตายที่สูงกว่า**
+
+**สิ่งที่ต้องทำควบคู่** — คนไข้รายนี้ต้อง **เปิดหลอดเลือดหัวใจอย่างเร่งด่วน** ซึ่งเป็นการรักษาที่ตรงต้นเหตุ และพิจารณาเครื่องพยุงการไหลเวียนถ้ายังไม่ดีขึ้น
+
+PEARL: Cardiogenic shock ให้ dobutamine เพิ่ม CO และเติม norepinephrine ประคองความดัน — ห้ามให้ยา α บริสุทธิ์เพราะเพิ่ม afterload จน CO ยิ่งตก
+
+NL: B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic
+
+
+### [cardio-10-08] การรักษาจำเพาะตามสาเหตุ เป้าหมาย และสี่ระยะของการกู้ชีพ
+
+_ช็อกบางชนิดยาไม่ช่วย ต้องแก้ที่ต้นเหตุทันที_
+
+ที่มา: สไลด์ อ.เจตวรงค์ (Jaidwarong Thanakitcharu, M.D.) หน่วยโรคหัวใจ รพ.ราชวิถี — Circulatory Shock (อ้างอิง Harrison's 21e และ N Engl J Med 2013;369:1726-34)
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block) · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation
+
+### ช็อกที่ต้องทำหัตถการช่วยชีวิตทันที ไม่ใช่แค่ให้ยา
+สไลด์ไล่ไว้เป็นตัวอย่าง
+
+| สาเหตุ | สิ่งที่ต้องทำเพิ่มจากการประคอง |
+|---|---|
+| **แพ้รุนแรง (anaphylaxis)** | **เอาสิ่งกระตุ้นออก · ให้อะดรีนาลีน · เติมสารน้ำและยากระตุ้นหลอดเลือด** |
+| **ต่อมหมวกไตบกพร่อง** | **ให้สเตียรอยด์ขนาดเครียดทางหลอดเลือด** |
+| **กล้ามเนื้อหัวใจขาดเลือดเฉียบพลัน** | **เปิดหลอดเลือดหัวใจ และใช้เครื่องพยุงการไหลเวียนชั่วคราว** |
+| **ช็อกจากการเสียเลือด** | **ผ่าตัดในรายอุบัติเหตุ · ส่องกล้องหรือทำหัตถการทางรังสีร่วมรักษาในรายเลือดออกทางเดินอาหาร** |
+| **Tension pneumothorax** | **เจาะระบายลมทันที** |
+
+*(จากคาบ 04 เพิ่มอีกสองข้อในกลุ่ม obstructive — **tamponade ต้องเจาะระบายน้ำ** และ **PE ขนาดใหญ่พิจารณาสลายลิ่มเลือด**)*
+
+### ช็อกจากการแพ้รุนแรง — จุดที่ออกสอบซ้ำที่สุด
+- เป็น **ปฏิกิริยาภูมิไวเกินชนิดที่ 1 ผ่าน IgE** → mast cell หลั่งฮิสตามีนและตัวกลางอื่น → **หลอดเลือดขยายและรั่ว** จึงเป็น **distributive shock**
+- **อะดรีนาลีนคือยาตัวแรกและไม่มีอะไรมาแทนได้**
+  - **0.5 mg (1:1000) ฉีดเข้ากล้ามเนื้อที่ต้นขาด้านหน้าข้าง (anterolateral thigh)** ซ้ำได้ทุก 5−15 นาที
+  - **เข้ากล้ามที่ต้นขา ไม่ใช่ใต้ผิวหนังและไม่ใช่ที่ต้นแขน** เพราะดูดซึมเร็วกว่าและได้ระดับยาสูงกว่า
+- **ยาแก้แพ้และสเตียรอยด์เป็นยาเสริม ไม่ใช่ยาหลัก** — ออกฤทธิ์ช้าเกินกว่าจะช่วยชีวิต การให้ยาเหล่านี้แทนอะดรีนาลีนคือความผิดพลาดที่ทำให้เสียชีวิต
+- **ก่อนกลับบ้านต้องให้อะดรีนาลีนชนิดพกพา (auto-injector) พร้อมสอนวิธีใช้และแผนปฏิบัติเป็นลายลักษณ์อักษร** และนัดติดตาม เพราะอาจเกิด **ปฏิกิริยาสองระลอก (biphasic reaction)**
+
+### ช็อกจากหัวใจเต้นผิดจังหวะ
+- **ถ้าหัวใจเต้นเร็วผิดจังหวะเป็นต้นเหตุของความดันต่ำ ต้องช็อกไฟฟ้าแบบสัมพันธ์กับคลื่นหัวใจ (synchronised cardioversion) ทันที ไม่ใช่ให้ยา**
+- คำถามที่ต้องตอบให้ได้คือ **"จังหวะที่ผิดเป็นเหตุ หรือเป็นผล"** — คนไข้ติดเชื้อรุนแรงที่หัวใจเต้นเร็ว การช็อกไฟฟ้าไม่ช่วย เพราะจังหวะเร็วเป็น **ผล** ของช็อก ส่วนคนที่ AF เต้น 150−180 แล้วความดันตกโดยไม่มีเหตุอื่น จังหวะนั้นเป็น **เหตุ**
+- **AF ยังทำให้เกิดลิ่มเลือดหลุดจากหัวใจห้องบนซ้ายไปอุดหลอดเลือดสมอง** จึงเป็นกลไกของอัมพาตเฉียบพลันที่มาพร้อมกัน
+
+### เป้าหมายของการประคองการไหลเวียน
+| เป้าหมาย | ตัวเลข |
+|---|---|
+| **ความดันแดง** | **MAP 65−70 mmHg** |
+| **CO และการส่งออกซิเจน** | **ติดตามแนวโน้มการตอบสนอง และ SvO₂** |
+| **ลักเตท** | **ลดลงอย่างน้อย 20% ใน 2 ชั่วโมง สัมพันธ์กับอัตราตายในโรงพยาบาลที่ลดลง** |
+| **การไหลเวียนระดับจุลภาค** | ประเมินด้วย **OPS imaging** (ยังเป็นงานวิจัยเป็นหลัก) |
+
+### สี่ระยะของการรักษา — จำด้วยอักษรย่อ **SOSD**
+| ระยะ | ทำอะไร |
+|---|---|
+| **Salvage** | **ทำให้ความดันขึ้นมาถึงระดับต่ำสุดที่ยอมรับได้ และทำหัตถการช่วยชีวิต** |
+| **Optimization** | **ทำให้ออกซิเจนเพียงพอ ปรับ CO, SvO₂ และลักเตทให้ดีที่สุด** |
+| **Stabilization** | **ประคองอวัยวะ และลดภาวะแทรกซ้อน** |
+| **De-escalation** | **ถอนยาที่ออกฤทธิ์ต่อหลอดเลือด และทำให้สมดุลสารน้ำติดลบ** |
+
+> **ระยะที่คนมักลืมคือ de-escalation** — สารน้ำที่ช่วยชีวิตในวันแรก กลายเป็นภาระในวันที่สาม การ **ถอนยาและขับน้ำส่วนเกินออก** เป็นส่วนหนึ่งของการรักษา ไม่ใช่เรื่องที่ค่อยว่ากันทีหลัง
+
+### ที่อาจารย์เน้นในสไลด์
+- สไลด์แยกหัวข้อ **"Specific Causes of Shock Requiring Tailored Intervention"** ออกมาต่างหาก พร้อมทำเครื่องหมายดอกจัน เพื่อย้ำว่าการประคองอย่างเดียวไม่พอในบางสาเหตุ
+- สไลด์ให้เป้าหมาย **MAP 65−70 mmHg** และ **ลักเตทลดลง 20% ใน 2 ชั่วโมง** เป็นตัวเลขที่จับต้องได้ อ้างอิง **N Engl J Med 2013;369:1726-34**
+- สไลด์ปิดท้ายด้วยแผนภาพ **สี่ระยะ Salvage → Optimization → Stabilization → De-escalation** ซึ่งเป็นกรอบที่ใช้สื่อสารกับทีมได้ว่าตอนนี้คนไข้อยู่ระยะไหน
+
+**จำไปสอบ**
+- อะดรีนาลีน 0.5 mg เข้ากล้ามที่ต้นขาด้านหน้าข้าง คือยาตัวแรกของ anaphylaxis — ยาแก้แพ้และสเตียรอยด์เป็นแค่ตัวเสริม
+- ก่อนกลับบ้านต้องได้อะดรีนาลีนชนิดพกพาพร้อมแผนปฏิบัติ เพราะอาจเกิดปฏิกิริยาสองระลอก
+- จังหวะหัวใจที่ผิดเป็นเหตุหรือเป็นผล — ถ้าเป็นเหตุให้ช็อกไฟฟ้าทันที
+- เป้าหมาย MAP 65−70 mmHg และลักเตทลดลงอย่างน้อย 20% ใน 2 ชั่วโมง
+- สี่ระยะ SOSD — Salvage, Optimization, Stabilization, De-escalation และอย่าลืมระยะสุดท้าย
+
+**ข้อสอบเช็คความเข้าใจ (7 ข้อ)**
+
+[C-MCQ-07] Anaphylactic shock – initial management
+
+A 34-year-old woman develops generalised urticaria, hoarseness, wheezing and light-headedness 10 minutes after eating shellfish at dinner. Vital signs: PR 124/min, BP 78/44 mmHg, RR 28/min, SpO2 92% on room air. There is peri-oral oedema and diffuse expiratory wheeze. Which of the following is the most appropriate immediate treatment?
+
+A. Intravenous hydrocortisone 200 mg
+B. Intravenous chlorpheniramine 10 mg
+C. Nebulised salbutamol 2.5 mg
+D. Intramuscular adrenaline 0.5 mg into the anterolateral thigh
+E. Intravenous ranitidine 50 mg
+
+ANSWER: D. Intramuscular adrenaline 0.5 mg into the anterolateral thigh
+
+EXPLAIN:
+กลไก: anaphylaxis = **type I (IgE-mediated) hypersensitivity** → mast cell/basophil degranulation ปล่อย histamine, tryptase, leukotriene, PAF → (1) systemic vasodilation + (2) increased capillary permeability (plasma leak ออกจาก intravascular ได้ถึง 35% ในไม่กี่นาที) + (3) bronchoconstriction + (4) mucosal edema
+
+เหตุผลที่ต้องเป็น **adrenaline IM**:
+- **α1**: vasoconstriction → แก้ vasodilation และลด mucosal/laryngeal edema (ช่วยชีวิตจาก airway obstruction)
+- **β1**: เพิ่ม inotropy/chronotropy → เพิ่ม cardiac output
+- **β2**: bronchodilation + **ยับยั้ง mast cell mediator release เพิ่มเติม** (หยุดวงจร)
+เป็นยาตัวเดียวที่แก้ได้ทุกกลไกพร้อมกัน และ **เป็นยาเดียวที่ลด mortality**
+
+ตำแหน่ง **anterolateral thigh (vastus lateralis) IM** ดูดซึมเร็วและ peak สูงกว่า SC หรือ IM ที่ deltoid; ขนาดผู้ใหญ่ 0.3-0.5 mg (1:1000) ซ้ำได้ทุก 5-15 นาที
+
+ทำไมข้ออื่นผิด — ทุกข้อเป็น "adjunct" ที่ถูกต้องแต่ **ไม่ใช่ immediate**:
+- **Antihistamine (H1)**: แก้เฉพาะ cutaneous symptoms (ผื่น คัน) **ไม่แก้ hypotension ไม่แก้ airway** และออกฤทธิ์ช้า — การให้ antihistamine ก่อน adrenaline คือสาเหตุการตายที่ป้องกันได้ที่พบบ่อยสุด
+- **Steroid**: onset 4-6 ชม. อาจช่วยลด protracted/biphasic reaction (หลักฐานไม่หนัก) ไม่ช่วยใน acute phase เลย
+- **Nebulised salbutamol**: แก้ bronchospasm เฉยๆ ไม่แก้ vasodilation, ไม่แก้ laryngeal edema
+- **H2 blocker**: adjunct ต่อ urticaria เท่านั้น
+
+หลังให้ adrenaline: นอนราบยกขา, ให้ **IV isotonic crystalloid 1-2 L เร็ว** (เพราะมี distributive + capillary leak), O2, เฝ้าระวัง biphasic reaction 4-12 ชม., และก่อนกลับบ้าน **สั่ง adrenaline autoinjector + ส่งปรึกษา allergist**
+
+PEARL: Anaphylactic shock = **distributive shock**; ถ้าให้ adrenaline IM 2-3 ครั้งแล้วยังไม่ขึ้น ให้เปลี่ยนเป็น **adrenaline IV infusion** ไม่ใช่ IV bolus (เสี่ยง arrhythmia); ผู้ป่วยที่กิน β-blocker อยู่อาจดื้อ adrenaline → พิจารณา glucagon
+
+REF: MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 28 – หญิงไป dinner เกิดผื่น asthma attack BP 80/50 initial management | MED33 MCQ – กินข้าว > ผื่นขึ้น > Anaphylaxis > treat โดย Adrenaline IM | MED30 SAQ ข้อ 11 – Anaphylactic shock → Distributive shock | MED31 MCQ ข้อ 85 – รักษา anaphylaxis → adrenaline | MED35 ลงกองครั้งที่ 2 MCQ ข้อ 2-3 – Urticaria / Anaphylaxis → hypersensitivity type 1
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(4) Shock (hypovolemic, anaphylactic, septic, cardiogenic) · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation
+
+
+[C-OLD-24]
+
+A woman develops generalised urticaria, wheeze and BP 80/50 mmHg minutes after dinner. What is the most appropriate initial treatment?
+
+A. Intramuscular adrenaline into the anterolateral thigh
+B. Intravenous ranitidine
+C. Intravenous hydrocortisone alone
+D. Nebulised salbutamol alone
+E. Intravenous chlorpheniramine
+
+ANSWER: A. Intramuscular adrenaline into the anterolateral thigh
+
+EXPLAIN:
+**Adrenaline IM คือยาแรกเสมอ** — ยาแก้แพ้ H1/H2 และสเตียรอยด์เป็นเพียงยาเสริมที่ออกฤทธิ์ช้า ไม่แก้ความดันตกหรือทางเดินหายใจบวม; ให้พร้อมกับนอนราบยกขาสูง ออกซิเจน และสารน้ำปริมาณมาก
+
+SRC: MED35 สอบลงกองครั้งที่ 1 MCQ ข้อ 28 / MED33 MCQ / MED31 MCQ
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B4.2.2(12) Urticaria · B7.4(6) Inotropic and vasoconstrictor sympathomimetics, drugs used in cardiopulmonary resuscitation
+
+
+[C-OLD-25]
+
+Urticaria and anaphylaxis are which type of hypersensitivity reaction?
+
+A. Type II (cytotoxic)
+B. Type III (immune complex)
+C. Non-immune idiosyncratic reaction
+D. Type IV (delayed, cell-mediated)
+E. Type I (IgE-mediated)
+
+ANSWER: E. Type I (IgE-mediated)
+
+EXPLAIN:
+**Type I** — IgE บนผิว mast cell จับ allergen แล้วปล่อย histamine และ mediator อื่นทันทีภายในนาที ทำให้หลอดเลือดขยาย รั่ว และหลอดลมตีบ
+
+SRC: MED35 ลงกองครั้งที่ 2 MCQ ข้อ 2-3 / MED34 MCQ ครั้งที่ 4
+
+NL: B4.2.2(12) Urticaria · 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · 2.3.12(12) Urticaria
+
+
+[C-OLD-26]
+
+A patient who survived anaphylactic shock is being discharged. What is the most important item to provide?
+
+A. A daily corticosteroid prescription
+B. A medical certificate to avoid work
+C. A daily antihistamine prescription
+D. Routine skin testing to all foods before discharge
+E. An adrenaline auto-injector with training and a written action plan
+
+ANSWER: E. An adrenaline auto-injector with training and a written action plan
+
+EXPLAIN:
+**ต้องจ่ายปากกา adrenaline พร้อมสอนใช้และเขียน action plan** เพราะปฏิกิริยาครั้งหน้าอาจเร็วและรุนแรงกว่าเดิม; ยาแก้แพ้กินทุกวันไม่ป้องกัน anaphylaxis และอาจกลบอาการเตือน
+
+SRC: MED34 MCQ ครั้งที่ 4 ข้อ 45
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B4.2.2(12) Urticaria
+
+
+[C-MCQ-09] Cardiogenic shock from tachyarrhythmia
+
+A 72-year-old man presents with 2 days of worsening dyspnoea and confusion. Vital signs: PR 132/min irregularly irregular, BP 80/58 mmHg, RR 28/min, SpO2 88% on room air. He has cool mottled extremities with capillary refill of 5 seconds, JVP 8 cm above the sternal angle, bibasilar crepitations to the mid zones and an S3 gallop. Chest radiograph shows cardiomegaly with bilateral perihilar opacities. Serum lactate 5.0 mmol/L, creatinine rising from 0.9 to 1.9 mg/dL. Which of the following best describes the type of shock and the most appropriate immediate intervention?
+
+A. Obstructive shock; immediate needle pericardiocentesis
+B. Hypovolaemic shock; rapid infusion of 30 mL/kg crystalloid
+C. Distributive shock; intravenous norepinephrine plus broad-spectrum antibiotics
+D. Cardiogenic shock; urgent synchronised cardioversion or rate control with haemodynamic support
+E. Cardiogenic shock; high-dose intravenous beta-blocker for rate control
+
+ANSWER: D. Cardiogenic shock; urgent synchronised cardioversion or rate control with haemodynamic support
+
+EXPLAIN:
+กลไก: ภาพคือ **cardiogenic shock** — หัวใจเป็นตัวปัญหาเอง → CO ต่ำ ขณะที่ **filling pressure สูงทั้งสองข้าง**
+หลักฐานในโจทย์ที่ครบชุด:
+- ปลายน้ำ hypoperfusion: มือเท้าเย็น, mottled, capillary refill 5 วินาที, confusion, lactate 5, Cr ขึ้น (**cardiorenal**)
+- ต้นน้ำคั่ง: **JVP สูง + crepitation + S3 + pulmonary edema บน CXR** → LV failure (ต่างจาก tamponade ที่ปอด clear)
+- ตัวกระตุ้น: **AF with rapid ventricular response 132/min** — อัตราเร็วทำให้ diastolic filling time สั้นลง + เสีย atrial contribution (ประมาณ 20-30% ของ filling) → stroke volume ตก และ **myocardial oxygen demand เพิ่มขณะ coronary perfusion ลด** เกิดวงจรเลวลง
+
+การรักษาที่ตรงกลไก = **เอา arrhythmia ออก**: unstable tachyarrhythmia → **synchronised cardioversion** (หรือคุม rate ด้วยยาที่ไม่กด inotropy เช่น IV digoxin/amiodarone) พร้อม support ด้วย **inotrope/vasopressor (norepinephrine ± dobutamine)** และ NIV
+
+ทำไมข้ออื่นผิด:
+- **Hypovolemic + 30 mL/kg**: JVP สูงและปอดท่วมอยู่แล้ว ให้ volume จะทำให้ pulmonary edema แย่ทันที — นี่คือกับดักที่อันตรายที่สุด
+- **Distributive/septic**: distributive จะมือเท้า **อุ่น** + wide pulse pressure + SVR ต่ำ และไม่มี S3/pulmonary edema แบบนี้ (โจทย์ไม่มีไข้ มี narrow pulse pressure)
+- **Obstructive + pericardiocentesis**: tamponade จะ **ปอด clear** + pulsus paradoxus + muffled heart sound; เคสนี้มี crepitation เต็มและ S3
+- **High-dose IV beta-blocker**: ใน **decompensated HF ที่ shock อยู่** การให้ BB IV ขนาดสูงจะกด inotropy → CO ตกฮวบ อาจถึงแก่ชีวิต (BB มีที่ใช้เมื่อ euvolemic/compensated แล้วเท่านั้น)
+
+PEARL: แยก cardiogenic จาก tamponade/PE ด้วย **ปอด**: cardiogenic = crepitation + S3 + pulmonary edema; obstructive = ปอด clear + JVP สูง. แยกจาก hypovolemic ด้วย **JVP/IVC**
+
+REF: MED34 MCQ ครั้งที่ 4 ข้อ 19 – Cardiomegaly c HR 130 (irregular) come with shock → cardiogenic shock | MED31 MCQ ข้อ 61 – Hypotension, pulse เร็ว (irregular) → cardiogenic shock | MED32 MCQ ข้อ 13 – PR 130 (irregular) → cardioembolic / cardiogenic shock | MED30 MCQ ข้อ 65 – Shock ในข้อนี้เกิดจากอะไร → Cardiogenic shock
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(5) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block) · 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block)
+
+
+[C-OLD-21]
+
+A hypotensive patient has an irregularly irregular tachycardia at 150/min, elevated JVP and cold clammy skin. Which is the most appropriate immediate treatment?
+
+A. Intravenous metoprolol bolus
+B. Synchronised cardioversion
+C. Intravenous adrenaline infusion
+D. Rapid infusion of 2 litres of normal saline
+E. Observation with oxygen only
+
+ANSWER: B. Synchronised cardioversion
+
+EXPLAIN:
+**Tachyarrhythmia ที่ทำให้เกิด shock = unstable → synchronised cardioversion ทันที** (AF/atrial flutter/SVT/VT ที่มีชีพจร) ห้ามเสียเวลาลองยาก่อน; **ห้ามให้ beta-blocker ทางหลอดเลือดดำในผู้ที่ความดันตก** เพราะจะยิ่งกดการบีบตัว
+
+SRC: MED31 MCQ ข้อ 61 / MED30 MCQ ข้อ 65 / MED31 MCQ ข้อ 69
+
+NL: 2.2.7 Shock: hypovolemic, anaphylactic, septic, cardiogenic · B7.2.5(5) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block) · 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block)
+
+
+[C-OLD-22]
+
+A 72-year-old man with atrial fibrillation at 130/min develops acute hemiparesis and hypotension. What is the most likely mechanism of the neurological event?
+
+A. Cardioembolism from the left atrium
+B. Hypoperfusion watershed infarction from hypovolaemia
+C. Intracerebral haemorrhage from hypertension
+D. Carotid dissection
+E. Small-vessel lacunar infarction
+
+ANSWER: A. Cardioembolism from the left atrium
+
+EXPLAIN:
+**AF ทำให้เลือดคั่งใน left atrial appendage เกิดลิ่มเลือดแล้วหลุดไปอุดหลอดเลือดสมอง** เป็นกลไกหลักของ stroke ในผู้ป่วย AF จึงต้องประเมิน **CHA2DS2-VASc** และให้ยาต้านการแข็งตัวของเลือดเมื่อเข้าเกณฑ์
+
+SRC: MED32 MCQ ข้อ 13
+
+NL: 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block) · 2.3.9-3(3) Cerebrovascular diseases · B7.2.5(5) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block)
+
+
+### [C-MEQ-05] MEQ — Undifferentiated shock – systematic approach
+
+ผู้ป่วยชายไทยอายุ 58 ปี ถูกนำมาส่งห้องฉุกเฉินด้วยอาการซึมลง 3 ชั่วโมง
+U/D: DM type 2, BPH
+PI: 3 วันก่อน มีไข้ หนาวสั่น ปัสสาวะแสบขัด ปัสสาวะกะปริบกะปรอย
+1 วันก่อน ปวดเอวด้านขวา อาเจียน 4-5 ครั้ง รับประทานอาหารและน้ำได้น้อย
+3 ชั่วโมงก่อน ซึมลง เรียกแล้วลืมตาแต่พูดสับสน
+PE: V/S BT 39.2 C, PR 126/min, RR 30/min, BP 78/42 mmHg, SpO2 94% room air
+GA: drowsy, E3V4M6, ผิวแห้ง, ปลายมือปลายเท้า **อุ่น** capillary refill 2 วินาที
+HEENT: dry mucous membrane, JVP ไม่สูง (2 cm above sternal angle)
+Heart: tachycardia, no murmur, no gallop; RS: clear both lungs
+Abd: right CVA tenderness positive; Ext: no edema
+Lab: WBC 19,200/mm3 (N 88%), Hct 38%, platelet 118,000/mm3, BUN 58 mg/dL, Cr 2.4 mg/dL (baseline 1.0), Na 132 mEq/L, K 4.4 mEq/L, HCO3 16 mEq/L, lactate 4.6 mmol/L, UA: WBC 50-100/HPF, nitrite positive, WBC cast seen
+
+1. จงบอกว่าผู้ป่วยมี shock ชนิดใด และใช้ข้อมูลใดในการตัดสิน
+
+แนวคำตอบ:
+**Septic shock (distributive shock) ร่วมกับ hypovolemia**
+
+**ข้อมูลที่สนับสนุน distributive shock**
+- **ปลายมือปลายเท้าอุ่น, capillary refill 2 วินาที** ("warm shock") → **SVR ต่ำ** ซึ่งแยกจาก low-output shock (hypovolemic/cardiogenic) ที่ปลายมือเท้าจะ **เย็น**
+- **Diastolic BP ต่ำเด่น (78/42)** เข้ากับ systemic vascular resistance ที่ต่ำจาก vasodilation
+- มีแหล่งติดเชื้อชัดเจน (**acute pyelonephritis**: ไข้สูง หนาวสั่น CVA tenderness, UA มี pyuria + nitrite positive + **WBC cast** ซึ่งบ่ง renal parenchymal involvement) ร่วมกับ leukocytosis, thrombocytopenia และ **lactate 4.6** (>2 mmol/L)
+- มี **organ dysfunction**: AKI (Cr 2.4 จาก baseline 1.0), altered mental status, metabolic acidosis
+
+**ข้อมูลที่บ่งว่ามี hypovolemia ร่วม (สำคัญต่อการรักษา)**
+- อาเจียนและกินน้ำได้น้อย, **ผิวแห้ง, mucous membrane แห้ง, JVP ไม่สูง (2 cm)**, BUN/Cr ratio สูงขึ้นเข้าทาง prerenal (58/2.4 ≈ 24, >20) → มี prerenal component ร่วม
+→ ดังนั้น **ตอบสนองดีต่อ fluid resuscitation** และต้องให้น้ำก่อน/พร้อมกับการประเมินความจำเป็นของ vasopressor
+
+**นิยามที่ควรระบุ**: septic shock (Sepsis-3) = **sepsis ที่ต้องใช้ vasopressor เพื่อคง MAP ≥65 mmHg ร่วมกับ (และ) lactate >2 mmol/L แม้ได้รับสารน้ำเพียงพอแล้ว**
+
+2. จง differential diagnosis ของ shock ในผู้ป่วยรายนี้และเหตุผลที่ตัดออก
+
+แนวคำตอบ:
+1. **Septic shock จาก acute pyelonephritis (สาเหตุที่เป็นไปได้มากที่สุด)** — ไข้สูง, CVA tenderness, pyuria + WBC cast, leukocytosis, lactate สูง, warm extremities
+2. **Hypovolemic shock จาก GI loss และกินได้น้อย** — มีองค์ประกอบนี้ร่วมจริง (JVP ต่ำ, แห้ง) แต่ **ลำพังไม่อธิบายไข้ 39.2 C, leukocytosis และปลายมือเท้าอุ่น** (hypovolemic ต้องปลายมือเท้าเย็น SVR สูง)
+3. **Cardiogenic shock** — **ตัดออกเพราะ** JVP ไม่สูง, ปอด clear, ไม่มี S3/gallop, ไม่มี crepitation, ปลายมือเท้าอุ่น (cardiogenic จะเย็นและคั่งน้ำ)
+4. **Obstructive shock (PE / tamponade / tension pneumothorax)** — **ตัดออกเพราะ** JVP ไม่สูง (ทุกภาวะนี้ JVP ต้องสูง), ไม่มี pulsus paradoxus, breath sound เท่ากันทั้งสองข้าง, SpO2 94% ไม่ hypoxemic มาก
+5. **Adrenal insufficiency / adrenal crisis** — ต้องคิดถึงในผู้ป่วยช็อกที่ดื้อต่อ fluid และ vasopressor โดยเฉพาะถ้ามีประวัติใช้ steroid, Na ต่ำ K สูง, eosinophilia; เคสนี้ K 4.4 ปกติและมีแหล่งติดเชื้อชัดเจนจึงโอกาสน้อย แต่ถ้า refractory ต้องพิจารณา
+6. **DKA / hyperglycemic emergency** — ผู้ป่วยเป็น DM และมี HCO3 16 ร่วมกับซึมลง; ต้องส่ง **capillary blood glucose, serum ketone/urine ketone, anion gap และ ABG** เพื่อคัดออก (การติดเชื้อเป็น precipitating factor ที่พบบ่อยที่สุดของ DKA)
+
+3. จงวางแผนการรักษาใน 1 ชั่วโมงแรก (hour-1 bundle)
+
+แนวคำตอบ:
+**Hour-1 bundle ของ sepsis/septic shock — ทำพร้อมกัน ไม่ใช่ทำตามลำดับ**
+1. **วัด serum lactate** (และวัดซ้ำใน 2-4 ชม. ถ้าค่าแรก >2 mmol/L เพื่อติดตามการตอบสนอง)
+2. **เจาะ hemoculture ≥2 sets ก่อนให้ยาปฏิชีวนะ** (พร้อม urine culture, และเก็บสิ่งส่งตรวจจากแหล่งที่สงสัย) — แต่ **ห้ามให้การเจาะเลือดทำให้ antibiotic ช้าเกิน 45 นาที**
+3. **ให้ยาปฏิชีวนะ broad-spectrum ทางหลอดเลือดดำโดยเร็วที่สุด** — ครอบคลุม gram-negative bacilli ของทางเดินปัสสาวะ (เช่น **ceftriaxone** หรือถ้าเสี่ยง ESBL/เคยได้ยาบ่อย/นอน รพ. พิจารณา **ertapenem/meropenem ± การครอบคลุม enterococci**) แล้ว **de-escalate ตามผล culture**; **ทุก 1 ชั่วโมงที่ให้ยาช้าลง mortality เพิ่มขึ้น**
+4. **ให้ crystalloid 30 mL/kg ภายใน 3 ชั่วโมงแรก** (ผู้ป่วยนี้มี hypovolemia ชัด จึงได้ประโยชน์เต็มที่) — ใช้ **balanced crystalloid** และประเมินการตอบสนองซ้ำๆ (dynamic assessment: passive leg raise, IVC variation, stroke volume variation, urine output, lactate clearance, capillary refill)
+5. **เริ่ม vasopressor (norepinephrine) เป้า MAP ≥65 mmHg** ถ้า BP ยังต่ำระหว่างหรือหลังให้สารน้ำ — ไม่ต้องรอให้ให้สารน้ำครบจึงเริ่ม ถ้า MAP ต่ำมาก
+
+**การดูแลอื่นในชั่วโมงแรก**
+- O2 เป้า SpO2 >94%, monitor ECG/BP ต่อเนื่อง, เปิด IV line 2 เส้น, พิจารณา central line เมื่อต้องใช้ vasopressor นาน
+- **ตรวจ capillary blood glucose ทันที** และคัด DKA (serum/urine ketone, anion gap, ABG)
+- ส่ง CBC, coagulogram, electrolytes, BUN/Cr, LFT, ABG, UA/urine culture
+- **Source control**: ultrasound/CT ไตและทางเดินปัสสาวะเพื่อหา **obstruction, pyonephrosis หรือ renal/perinephric abscess** — ถ้ามีการอุดกั้นต้อง **ระบายทางเดินปัสสาวะอย่างเร่งด่วน (percutaneous nephrostomy หรือ ureteric stent)** เพราะยาปฏิชีวนะลำพังจะไม่หาย (ผู้ป่วยมี BPH เป็นปัจจัยเสี่ยงของการอุดกั้น)
+- **ตรวจ per rectal examination ประเมินต่อมลูกหมาก** (prostatitis/abscess เป็นแหล่งติดเชื้อซ้ำซากในชายสูงอายุ)
+- ใส่สายสวนปัสสาวะเพื่อวัด urine output, บันทึก I/O
+- พิจารณา **hydrocortisone** เมื่อยังต้องใช้ vasopressor ขนาดสูงต่อเนื่อง
+- ปรับขนาดยาตาม renal function และหลีกเลี่ยง nephrotoxin (NSAID, contrast ที่ไม่จำเป็น)
+
+4. ให้สารน้ำ 30 mL/kg และ norepinephrine แล้ว MAP ขึ้นเป็น 70 mmHg แต่ urine output ยังน้อยกว่า 0.3 mL/kg/hr 6 ชั่วโมง Cr ขึ้นเป็น 3.2 mg/dL และ K 6.2 mEq/L จงประเมินและวางแผนต่อ
+
+แนวคำตอบ:
+**การประเมิน: Septic AKI (sepsis-associated acute kidney injury, KDIGO stage 3) ร่วมกับ hyperkalemia**
+กลไก: ผสมกันระหว่าง (ก) **prerenal/hypoperfusion** จาก shock (ข) **inflammatory microvascular dysfunction และ tubular injury (ATN)** จาก sepsis (ค) **venous congestion** ถ้าให้สารน้ำมากเกิน และ (ง) ความเป็นไปได้ของ **obstructive uropathy** จาก BPH
+
+**แผนการดูแล**
+1. **รักษา hyperkalemia ทันที (K 6.2)** — เรียงตามกลไก
+   - **ทำ ECG ทันที** ดู peaked T wave, PR ยาว, QRS กว้าง
+   - **IV 10% calcium gluconate** → stabilize cardiac membrane (ไม่ลด K แต่กัน arrhythmia)
+   - **Regular insulin + glucose** (และ/หรือ **nebulized salbutamol ขนาดสูง**) → **shift K เข้าเซลล์**
+   - **NaHCO3** พิจารณาเมื่อมี metabolic acidosis ร่วม
+   - **ขับ K ออกจากร่างกาย**: loop diuretic ถ้ายังมี urine output พอ, **potassium binder (sodium polystyrene sulfonate / patiromer / SZC)**; ถ้า **refractory → hemodialysis**
+   - **หยุดยาและสารที่เพิ่ม K**: ACEI/ARB, MRA, NSAID, potassium supplement, trimethoprim
+2. **ประเมินและแก้ภาวะอุดกั้นอย่างเร่งด่วน** — **ultrasound ไตและกระเพาะปัสสาวะ** (ดู hydronephrosis, residual urine, นิ่ว, abscess); ถ้ามีการอุดกั้น → ระบาย (Foley/nephrostomy/stent) นี่คือสาเหตุที่ **แก้ไขได้** และมักถูกมองข้าม
+3. **ประเมินสถานะสารน้ำซ้ำด้วยวิธี dynamic** (POCUS: IVC, B-line ที่ปอด, การทำงานของหัวใจ; passive leg raise) — **อย่าให้สารน้ำเพิ่มแบบอัตโนมัติ** เพราะ fluid overload ในระยะนี้ทำให้ **renal venous congestion และ pulmonary edema** ซ้ำเติม AKI
+4. **ตรวจ urine sediment และดัชนีแยก prerenal vs ATN**: **muddy brown granular cast** สนับสนุน ATN; FENa (ในผู้ที่ไม่ได้รับ diuretic), urine Na, urine osmolality
+5. **หลีกเลี่ยง nephrotoxin และปรับขนาดยาทุกตัวตาม renal function** (รวมถึงขนาด antibiotic — แต่ **ห้ามลดขนาดจนต่ำกว่าระดับรักษาในช่วงแรกของ sepsis**)
+6. **ทบทวน source control ซ้ำ**: ถ้าไข้ไม่ลงหรือ lactate ไม่ลดใน 48-72 ชม. ต้องสงสัย abscess/obstruction/เชื้อดื้อยา → **ส่ง CT และทบทวนสูตรยาตามผล culture**
+7. **ข้อบ่งชี้เร่งด่วนของการบำบัดทดแทนไต (จำ "AEIOU")**: **A**cidosis ที่แก้ไม่ได้, **E**lectrolyte (hyperkalemia ที่ดื้อต่อการรักษา), **I**ntoxication, **O**verload (volume ที่ดื้อต่อ diuretic ทำให้ pulmonary edema), **U**remia (encephalopathy, pericarditis, bleeding)
+8. **ปรึกษา nephrologist และ urologist** และวางแผนติดตามการทำงานของไตระยะยาว (ผู้ป่วยมี DM อยู่แล้ว เสี่ยงเป็น CKD ต่อเนื่องหลัง AKI)
 
 ---
