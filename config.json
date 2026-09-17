@@ -195,6 +195,21 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "G01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "G02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "G03": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -380,6 +395,34 @@
       ],
       "meq": [
         "data/infect_meq_osce.json"
+      ],
+      "old": []
+    },
+    {
+      "key": "gi",
+      "label": "GI",
+      "thai": "ระบบทางเดินอาหารและตับ",
+      "blurb": "4 คาบบรรยาย · เลือดออกทางเดินอาหารส่วนต้นและโรคหลอดอาหาร-กระเพาะอาหาร · ตับและทางเดินน้ำดี · ลำไส้ ตับอ่อน และอาการท้องเสีย",
+      "accent": {
+        "light": "#b45309",
+        "soft": "#fdead5",
+        "ink": "#8a3f07",
+        "dark": "#ff9f5a",
+        "darkSoft": "#261a11",
+        "darkInk": "#ffc296"
+      },
+      "lecture_order": [
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "mcq": [
+        "data/gi_mcq_a.json",
+        "data/gi_mcq_b.json",
+        "data/gi_mcq_c.json"
+      ],
+      "meq": [
+        "data/gi_meq_osce.json"
       ],
       "old": []
     },
