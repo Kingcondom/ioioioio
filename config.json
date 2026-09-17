@@ -225,6 +225,21 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "H01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "H02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "H03": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -466,6 +481,34 @@
       ],
       "meq": [
         "data/endo_meq_osce.json"
+      ],
+      "old": []
+    },
+    {
+      "key": "heme",
+      "label": "Heme",
+      "thai": "โลหิตวิทยา",
+      "blurb": "3 คาบบรรยาย · โลหิตจางและธาลัสซีเมีย · เกล็ดเลือด การแข็งตัวของเลือด และการให้เลือด · มะเร็งเม็ดเลือดและภาวะฉุกเฉินที่เกี่ยวข้อง",
+      "accent": {
+        "light": "#a21351",
+        "soft": "#fbe0ee",
+        "ink": "#820f41",
+        "dark": "#ef86c8",
+        "darkSoft": "#26121d",
+        "darkInk": "#f5b0dc"
+      },
+      "lecture_order": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "mcq": [
+        "data/heme_mcq_a.json",
+        "data/heme_mcq_b.json",
+        "data/heme_mcq_c.json"
+      ],
+      "meq": [
+        "data/heme_meq_osce.json"
       ],
       "old": []
     },
