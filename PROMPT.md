@@ -64,6 +64,18 @@ data/cardio_old.json (130 ข้อ) และ data/nephro_old.json (124 ข้�
 
 ---
 
+## E. แพ็กชุดไฟล์ไปแชทใหม่
+
+```bash
+python3 make_kit.py          # ได้ med421-kit.zip (ครบ ~2.4 MB)
+python3 make_kit.py --lean   # ตัด export/ และ bank_merged.json ออก ไฟล์เล็กลงมาก
+```
+
+ในซิปมี `README_KIT.md` ที่สรุปสถานะล่าสุด (จำนวนข้อ จำนวนบทเรียน และงานที่ค้าง) ให้อัตโนมัติ
+เปิดแชทใหม่แล้วแนบซิป พร้อมข้อความว่า **"แตกไฟล์ med421-kit.zip แล้วอ่าน README_KIT.md กับ SPEC.md ก่อนเริ่ม"**
+
+---
+
 ## สิ่งที่ควรแนบเข้าแชทใหม่ด้วย
 
 - `med421-kit.zip` (อันนี้)

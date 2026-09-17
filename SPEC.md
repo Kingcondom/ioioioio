@@ -209,6 +209,15 @@ python3 check_numbers.py          # ไล่ ABG ทุกข้อใน data/
 
 ---
 
+## 8.5 แพ็กไปแชทใหม่ — `make_kit.py`
+
+`python3 make_kit.py` สร้าง **`med421-kit.zip`** ที่มีสเปก พรอมป์ โค้ด build ทุกตัว เทมเพลต
+`data/` `learn/` `refs/` `export/` และ `bank_merged.json` พร้อม **`README_KIT.md` ที่สรุปสถานะล่าสุดให้อัตโนมัติ**
+(ไม่ใส่ไฟล์ที่ build เองได้ — `drill.html`, `learn.html`, `print_*.html`, `MED421_*.pdf`)
+ใช้ `--lean` เพื่อตัด `export/` และ `bank_merged.json` ออกเมื่อต้องการไฟล์เล็ก
+
+---
+
 ## 8. เว็บเรียนเนื้อหา `learn.html` (โหมด Lecture + Practice)
 
 นอกจาก `drill.html` (ทำข้อสอบ) ยังมี **`learn.html` = เว็บเรียนเนื้อหา** ที่พาเรียนทีละหัวข้อ
