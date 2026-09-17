@@ -2,7 +2,7 @@
 
 เริ่มจากคาบ acute ischemic stroke ของงานประสาทวิทยา รพ.ราชวิถี — ไล่ตั้งแต่การแปลอาการกลับเป็นตำแหน่งหลอดเลือด ไปจนถึงการตัดสินใจให้ยาละลายลิ่มเลือดภายในหน้าต่างเวลา เนื้อหาเรียบเรียงจากสไลด์บรรยายจริง ร่วมกับแนวทาง AHA/ASA ที่อาจารย์อ้างอิงไว้ จบแต่ละหัวข้อมีข้อสอบเช็คความเข้าใจทันที
 
-1 คาบ · 10 หัวข้อ · ข้อเช็คความเข้าใจ 20 ข้อ · MEQ 1 · OSCE/SAQ 1
+1 คาบ · 10 หัวข้อ · ข้อเช็คความเข้าใจ 26 ข้อ · MEQ 1 · OSCE/SAQ 1
 
 ---
 
@@ -504,7 +504,7 @@ NL: 2.3.9-3(3) Cerebrovascular diseases · 2.1.4 มึนศีรษะ เว
 - เจาะน้ำตาลปลายนิ้วทุกราย — น้ำตาลต่ำเลียนแบบ stroke ได้เหมือนจริง
 - Stroke mimics สี่กลุ่ม — อุบัติเหตุ · ก้อนในสมอง · ชักที่มีอาการค้าง · เมตาบอลิก
 
-**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+**ข้อสอบเช็คความเข้าใจ (3 ข้อ)**
 
 [NEU-MCQ-06] Stroke mimic – hypoglycaemia
 
@@ -582,6 +582,38 @@ REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — �
 NL: 2.3.9-3(3) Cerebrovascular diseases · 2.1.4 มึนศีรษะ เวียนศีรษะ (dizziness, vertigo) · 2.3.6 โรคระบบประสาท (ทั้งหมวด)
 
 
+[NEU-MCQ-19] TIA – urgency of evaluation
+
+A 68-year-old man with hypertension had 20 minutes of right arm weakness and slurred speech yesterday, which resolved completely. He is now neurologically normal. Which of the following is the most appropriate management?
+
+A. Urgent evaluation and start of secondary prevention now, because the risk of completed stroke is highest in the first few days
+B. Repeat brain computed tomography in 3 months and treat only if an infarct appears
+C. Admit for intravenous alteplase even though symptoms have resolved
+D. Reassure him and arrange an outpatient appointment in 6 weeks, since the deficit has resolved
+E. Start anticoagulation empirically without investigating the mechanism
+
+ANSWER: A. Urgent evaluation and start of secondary prevention now, because the risk of completed stroke is highest in the first few days
+
+EXPLAIN:
+**ไล่กลไก** — TIA คือการอุดตันชั่วคราวที่เปิดออกเองก่อนเนื้อสมองจะตาย **กลไกที่ทำให้เกิดยังอยู่ครบ** ไม่ว่าจะเป็นคราบไขมันที่มีลิ่มเลือดเกาะ หรือลิ่มเลือดจากหัวใจ ดังนั้นสิ่งเดียวที่ต่างจาก stroke คือ **โชค** ไม่ใช่ความรุนแรงของโรค
+
+> **ความเสี่ยงต่อ stroke สมบูรณ์สูงที่สุดใน 48 ชั่วโมงถึงไม่กี่วันแรก** สไลด์จึงเน้นในหัวข้อ **T = Time of onset** ว่า **"ให้โทรตามรถพยาบาลฉุกเฉินตั้งแต่ที่พบผู้ป่วยมีอาการ แม้ว่าอาการจะหายไปก็ตาม"**
+
+**สิ่งที่ต้องทำทันที** — **ภาพถ่ายสมองและหลอดเลือด (CTA หรืออัลตราซาวด์ carotid) · ECG และติดตามจังหวะการเต้นเพื่อหา AF · เจาะไขมันและน้ำตาล** แล้ว **เริ่มยาต้านเกล็ดเลือดและ statin ทันที** พร้อมคุมความดัน · ถ้าพบ **AF ให้ยาต้านการแข็งตัวของเลือด** · ถ้าพบ **carotid ตีบมากและมีอาการ ให้พิจารณาผ่าตัดภายในไม่กี่วัน**
+
+**ทำไมตัวลวงจึงผิด**
+- *นัด 6 สัปดาห์* — เป็นความผิดพลาดที่คลาสสิกที่สุด ผู้ป่วยจำนวนมากเกิด stroke จริงก่อนถึงวันนัด
+- *ให้ alteplase ทั้งที่อาการหายแล้ว* — **อาการที่หายสนิทเป็นข้อห้ามสัมพัทธ์** (อาการเล็กน้อยไม่ก่อความพิการหรือกำลังดีขึ้นเร็ว) และไม่มีอะไรให้รักษาแล้ว มีแต่ความเสี่ยงเลือดออก
+- *ให้ยาต้านการแข็งตัวของเลือดโดยไม่หากลไก* — การป้องกันต้องตรงกับกลไกตาม TOAST การให้ยาผิดกลุ่มทั้งไม่ได้ผลและเสี่ยงเลือดออก
+- *รอ 3 เดือนแล้วค่อยรักษา* — ปล่อยให้ผู้ป่วยผ่านช่วงที่เสี่ยงที่สุดโดยไม่มีการป้องกันใด ๆ
+
+PEARL: TIA คือ stroke ที่ยังไม่เกิด — เสี่ยงสูงสุดในไม่กี่วันแรก ต้องสืบค้นและเริ่มป้องกันทันที ไม่ใช่นัดทีหลัง
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.6 โรคระบบประสาท (ทั้งหมวด)
+
+
 ### [neuro-07-06] TOAST classification — รู้กลไกเพื่อเลือกการป้องกัน
 
 _ห้ากลุ่ม และเหตุผลว่าทำไมต้องแยกให้ได้ก่อนเลือกยา_
@@ -649,7 +681,7 @@ NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.9(1) Cardiac arrhythmias (AF, SVT
 - จำแนกเพื่อเลือกการป้องกัน — AF ให้ยาต้านการแข็งตัวของเลือด · หลอดเลือดแข็งให้ยาต้านเกล็ดเลือดกับ statin
 - หาสาเหตุไม่ได้ถึง 30% จึงต้องสืบค้นอย่างเป็นระบบก่อนสรุป
 
-**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+**ข้อสอบเช็คความเข้าใจ (3 ข้อ)**
 
 [NEU-MCQ-02] TOAST subtype – cardioembolic stroke
 
@@ -722,6 +754,42 @@ PEARL: เป็นขั้นบันได + TIA ซ้ำในแขนง
 REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
 
 NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.9(3) Disorders of lipoprotein metabolism and lipidemia · B7.2.5(6) Disorders of lipoprotein metabolism and lipidemia
+
+
+[NEU-MCQ-23] Stroke in the young – cervical artery dissection
+
+A 34-year-old woman develops left-sided neck pain and headache after a chiropractic neck manipulation, followed 2 days later by vertigo, ataxia and right-sided numbness. She has no vascular risk factors. Which of the following is the most likely mechanism of her stroke?
+
+A. Cardioembolism from atrial fibrillation
+B. Venous sinus thrombosis
+C. Vertebral artery dissection with artery-to-artery embolism
+D. Primary central nervous system vasculitis
+E. Small vessel disease from chronic hypertension
+
+ANSWER: C. Vertebral artery dissection with artery-to-artery embolism
+
+EXPLAIN:
+**ไล่กลไก** — การฉีกขาดของผนังหลอดเลือด (**dissection**) เกิดเมื่อผนังชั้นในฉีก เลือดจึงแทรกเข้าไปในผนังหลอดเลือด ทำให้ **รูหลอดเลือดแคบลง และผิวที่ฉีกกลายเป็นจุดก่อลิ่มเลือดซึ่งหลุดไปอุดปลายทางได้** สไลด์ระบุ **dissection ไว้ในกลไกย่อยของ thrombosis ในกลุ่ม large artery** ว่าเป็นสาเหตุของการอุดตันในตำแหน่งนั้นเอง
+
+**ลายเซ็นทางคลินิกที่ต้องจับให้ได้**
+- **อายุน้อยและไม่มีปัจจัยเสี่ยงของหลอดเลือดแข็ง** — เป็นสาเหตุอันดับต้นของ stroke ในคนอายุน้อย
+- **ปวดคอหรือปวดศีรษะนำมาก่อนอาการทางประสาท** ซึ่งเป็นความเจ็บจากตัวผนังหลอดเลือดที่ฉีก
+- **มีเหตุกระตุ้นทางกล** เช่น **การจัดกระดูกคอ** อุบัติเหตุ ไอรุนแรง หรือแม้แต่การหันคอแรง ๆ
+- **อาการของระบบไหลเวียนด้านหลัง** (เวียนศีรษะ เดินเซ ชาแบบไขว้) เข้ากับ **vertebral artery** ส่วนถ้าเป็น **carotid dissection** จะได้อาการซีกสมองร่วมกับ **Horner syndrome ข้างเดียวกัน**
+
+**การวินิจฉัย** — **CTA หรือ MRA ของหลอดเลือดคอ** (MRI แบบ fat-suppressed เห็น mural hematoma ได้ดี)
+
+**ทำไมตัวลวงจึงผิด**
+- *Small vessel disease* — เป็นโรคของผู้สูงอายุที่มีความดันสูงเรื้อรัง และให้ **lacunar syndrome ที่ไม่มีอาการก้านสมองหลายอย่างพร้อมกัน**
+- *Cardioembolism จาก AF* — ไม่มีข้อมูลว่ามีโรคหัวใจ และ AF พบน้อยมากในคนอายุ 34 ที่แข็งแรงดี
+- *หลอดเลือดสมองอักเสบปฐมภูมิ* — พบน้อยมาก มักดำเนินโรคแบบค่อยเป็นค่อยไปหลายสัปดาห์ร่วมกับปวดศีรษะเรื้อรังและการรู้คิดถดถอย ไม่ใช่เกิดทันทีหลังเหตุกระตุ้นทางกล
+- *ลิ่มเลือดอุดหลอดเลือดดำในสมอง* — มักมาด้วย **ปวดศีรษะที่แย่ลงเรื่อย ๆ ชัก และอาการที่ไม่เข้ากับเขตหลอดเลือดแดงใด** ร่วมกับปัจจัยเสี่ยงเช่นยาคุมกำเนิดหรือการตั้งครรภ์
+
+PEARL: Stroke ในคนอายุน้อย + ปวดคอหรือศีรษะนำมาก่อน + มีเหตุกระตุ้นทางกล = หลอดเลือดฉีกขาด
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.6 โรคระบบประสาท (ทั้งหมวด) · 2.1.4 มึนศีรษะ เวียนศีรษะ (dizziness, vertigo)
 
 
 ### [neuro-07-07] การประเมิน — เวลาเริ่มอาการ การดูแลเบื้องต้น และ NIHSS
@@ -1090,7 +1158,7 @@ NL: 2.3.9-3(3) Cerebrovascular diseases · 2.2.4 Malignant hypertension · B7.2.
 - ปวดศีรษะรุนแรง อาเจียน ความดันพุ่ง หรืออาการแย่ลงระหว่างหยดยา = หยุดยาและส่ง CT ทันที
 - รอ CT ซ้ำที่ 24 ชั่วโมงก่อนเริ่มยาต้านเกล็ดเลือดหรือยาต้านการแข็งตัวของเลือด
 
-**ข้อสอบเช็คความเข้าใจ (4 ข้อ)**
+**ข้อสอบเช็คความเข้าใจ (5 ข้อ)**
 
 [NEU-MCQ-11] Blood pressure threshold before thrombolysis
 
@@ -1234,6 +1302,41 @@ REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — �
 NL: 2.3.9-3(3) Cerebrovascular diseases · 3.3.20 Computerized tomography (CT) scan
 
 
+[NEU-MCQ-20] Haemorrhagic transformation after thrombolysis
+
+Twelve hours after receiving alteplase, a patient's National Institutes of Health Stroke Scale score has risen from 12 to 19 and he has become drowsy. Repeat computed tomography shows blood within the infarcted territory with mass effect. Which of the following is the most appropriate next step?
+
+A. Stop all antithrombotic agents, correct the coagulopathy with cryoprecipitate or fibrinogen concentrate, and consult neurosurgery
+B. Give aspirin 300 mg and observe on the ward
+C. Give intravenous heparin to prevent further clot propagation
+D. Repeat the alteplase infusion because the vessel has probably re-occluded
+E. Start mannitol alone and repeat imaging in 24 hours
+
+ANSWER: A. Stop all antithrombotic agents, correct the coagulopathy with cryoprecipitate or fibrinogen concentrate, and consult neurosurgery
+
+EXPLAIN:
+**ไล่กลไก** — เนื้อสมองที่ขาดเลือดจะมี **ผนังหลอดเลือดและ blood-brain barrier ที่เสียหาย** เมื่อเลือดไหลกลับเข้ามา (ไม่ว่าจะเปิดเองหรือจากยา) เลือดจะ **ซึมออกนอกหลอดเลือดเข้าสู่เนื้อที่ตายแล้ว** เรียกว่า **haemorrhagic transformation** · ยาละลายลิ่มเลือดเพิ่มความเสี่ยงนี้เพราะทำให้ระบบห้ามเลือดทำงานไม่ได้ชั่วคราว
+
+**สัญญาณที่ต้องสงสัย** — **อาการทางประสาทแย่ลง ซึมลง ปวดศีรษะรุนแรง อาเจียน หรือความดันพุ่ง** — สไลด์ระบุให้ **หยุดหยดยาและส่ง CT ฉุกเฉิน** ทันทีที่พบ
+
+**การรักษาเมื่อยืนยันแล้ว**
+1. **หยุดยาต้านลิ่มเลือดทุกชนิด**
+2. **แก้ภาวะเลือดแข็งตัวไม่ได้** — **cryoprecipitate หรือ fibrinogen concentrate** (เพราะ alteplase ทำให้ไฟบริโนเจนต่ำ) ร่วมกับ **ยาต้านการสลายลิ่มเลือด** เช่น tranexamic acid
+3. **ส่งเลือดตรวจการแข็งตัว ไฟบริโนเจน และจองเลือด**
+4. **คุมความดันและความดันในกะโหลก · ปรึกษาประสาทศัลยแพทย์**
+
+**ทำไมตัวลวงจึงผิด**
+- *ให้เฮปาริน* และ *ให้แอสไพริน* — เติมยาต้านลิ่มเลือดทับเข้าไปขณะที่กำลังเลือดออก ทำให้เลือดออกมากขึ้น เป็นสองตัวเลือกที่อันตรายที่สุด
+- *ให้ alteplase ซ้ำ* — ตรงข้ามกับสิ่งที่ต้องทำโดยสิ้นเชิง
+- *ให้ mannitol อย่างเดียวแล้วรอ 24 ชั่วโมง* — mannitol ช่วยลดสมองบวมได้จริง แต่ **ไม่ได้แก้ภาวะเลือดแข็งตัวไม่ได้ที่ทำให้เลือดยังออกต่อ** การรอ 24 ชั่วโมงในภาวะนี้ช้าเกินไป
+
+PEARL: อาการแย่ลงหลัง rtPA = สงสัยเลือดออกแทรก — หยุดยาต้านลิ่มเลือด แก้การแข็งตัวด้วย cryoprecipitate และปรึกษาศัลยแพทย์
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 3.3.20 Computerized tomography (CT) scan
+
+
 ### [neuro-07-10] การลากลิ่มเลือด การดูแลทั่วไป และการป้องกันการเป็นซ้ำ
 
 _ใครควรได้สายสวน และหลังพ้นวิกฤตต้องทำอะไรต่อ_
@@ -1301,7 +1404,7 @@ NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.9(1) Cardiac arrhythmias (AF, SVT
 - หอผู้ป่วย stroke ลดการเสียชีวิตและความพิการได้แม้ในผู้ที่ไม่ได้รับยาละลายลิ่มเลือด
 - ประเมินการกลืนก่อนให้อาหารทางปากทุกราย
 
-**ข้อสอบเช็คความเข้าใจ (2 ข้อ)**
+**ข้อสอบเช็คความเข้าใจ (5 ข้อ)**
 
 [NEU-MCQ-15] Mechanical thrombectomy – patient selection
 
@@ -1378,6 +1481,106 @@ PEARL: เลือกการป้องกันตามกลไก — AF
 REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
 
 NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.9(1) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block) · B7.2.5(5) Cardiac arrhythmias (AF, SVT, PVC, PAC, VT, VF, AV block)
+
+
+[NEU-MCQ-21] Malignant middle cerebral artery infarction
+
+A 52-year-old woman with a complete left middle cerebral artery infarct becomes progressively drowsy on day 2. Computed tomography shows infarction of more than two-thirds of the middle cerebral artery territory with 8 mm of midline shift. Which intervention has been shown to reduce mortality in this situation?
+
+A. Therapeutic hypothermia to 32 degrees Celsius
+B. Prophylactic antiepileptic drugs
+C. Intravenous alteplase given late
+D. High-dose intravenous corticosteroids
+E. Decompressive hemicraniectomy
+
+ANSWER: E. Decompressive hemicraniectomy
+
+EXPLAIN:
+**ไล่กลไก** — เนื้อสมองที่ตายเป็นบริเวณกว้างจะ **บวมมากที่สุดในวันที่ 2−5** กะโหลกเป็นกล่องแข็งที่ขยายไม่ได้ ความดันในกะโหลกจึงพุ่งขึ้น ดัน **เนื้อสมองเคลื่อนข้ามแนวกลางและเลื่อนลงกดก้านสมอง (herniation)** ซึ่งเป็นสาเหตุการเสียชีวิต ไม่ใช่ตัว stroke เอง · เรียกภาวะนี้ว่า **malignant MCA infarction** อัตราตายถ้ารักษาแบบประคับประคองอย่างเดียวสูงราว 80%
+
+**การผ่าตัดเปิดกะโหลกลดความดัน (decompressive hemicraniectomy)** คือการ **เอากระดูกกะโหลกออกเพื่อให้สมองที่บวมมีที่ขยาย** จึงแก้ปัญหาที่ต้นเหตุเชิงกลไกโดยตรง **ลดอัตราตายได้อย่างชัดเจน** และได้ประโยชน์มากที่สุดเมื่อ **ทำเร็ว (ภายใน 48 ชั่วโมง) และในผู้ป่วยอายุน้อย**
+
+> **ประเด็นที่ต้องคุยกับญาติ — การผ่าตัดลดการเสียชีวิต แต่ผู้รอดชีวิตจำนวนหนึ่งยังมีความพิการอยู่** จึงเป็นการตัดสินใจร่วมกัน ไม่ใช่การผ่าตัดอัตโนมัติ
+
+**ทำไมตัวลวงจึงผิด**
+- *สเตียรอยด์ขนาดสูง* — **ไม่มีประโยชน์ในสมองบวมจาก stroke** (ต่างจากสมองบวมรอบเนื้องอกซึ่งเป็น vasogenic edema ที่ตอบสนองดี) และเพิ่มการติดเชื้อกับน้ำตาลสูง
+- *ลดอุณหภูมิร่างกาย* — ยังไม่มีหลักฐานว่าลดอัตราตายใน stroke และมีภาวะแทรกซ้อนมาก · สิ่งที่ทำจริงคือ **ลดไข้ไม่ให้สูง** ตามที่สไลด์ระบุใน general management
+- *ให้ alteplase ช้า* — พ้นหน้าต่างเวลาไปแล้ว และในเนื้อสมองที่ตายกว้างขนาดนี้ **CT ที่มีเนื้อตายเกินหนึ่งในสามของซีกสมองเป็นข้อห้ามเด็ดขาด**
+- *ให้ยากันชักป้องกัน* — **ไม่แนะนำให้ป้องกันในผู้ที่ยังไม่เคยชัก** และไม่ได้แก้ปัญหาสมองบวม
+
+PEARL: Malignant MCA infarction ตายจากสมองบวมและ herniation — การผ่าตัดเปิดกะโหลกลดความดันลดอัตราตาย ส่วนสเตียรอยด์ไม่ช่วย
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 3.3.20 Computerized tomography (CT) scan · 2.3.6 โรคระบบประสาท (ทั้งหมวด)
+
+
+[NEU-MCQ-22] Symptomatic carotid stenosis
+
+A 70-year-old man had a right hemispheric transient ischaemic attack 5 days ago and has recovered fully. Carotid duplex and computed tomography angiography show 80 percent stenosis of the right internal carotid artery. He is otherwise fit for surgery. Which of the following is the most appropriate management?
+
+A. Carotid endarterectomy deferred for 6 months to allow the plaque to stabilise
+B. Immediate bilateral carotid endarterectomy regardless of which side caused symptoms
+C. Carotid endarterectomy within the next 2 weeks, in addition to antiplatelet therapy and a statin
+D. Lifelong warfarin instead of antiplatelet therapy
+E. Medical therapy alone, because endarterectomy is only indicated for asymptomatic stenosis
+
+ANSWER: C. Carotid endarterectomy within the next 2 weeks, in addition to antiplatelet therapy and a statin
+
+EXPLAIN:
+**ไล่กลไก** — คราบไขมันที่ **ตีบมากและเพิ่งทำให้เกิดอาการ** คือคราบที่ **ผิวแตกและมีลิ่มเลือดเกาะอยู่** จึงพร้อมจะปล่อยเศษหลุดไปอุดสมองซ้ำได้ทุกเมื่อ · **ความเสี่ยงต่อ stroke ซ้ำสูงที่สุดในสองสัปดาห์แรกหลังมีอาการ** การผ่าตัดลอกคราบไขมันออกจึงต้องทำเร็ว
+
+> **หลักที่ต้องจำ — ยิ่งเร็วยิ่งได้ประโยชน์** โดยทั่วไปแนะนำ **ภายใน 2 สัปดาห์หลังมีอาการ** ในผู้ป่วยที่อาการคงที่แล้ว และ **ประโยชน์ชัดเจนที่สุดเมื่อตีบ 70−99% และมีอาการในด้านเดียวกับที่ตีบ**
+
+**ต้องทำควบคู่เสมอ** — **ยาต้านเกล็ดเลือด · statin ขนาดสูง · คุมความดันและเบาหวาน · หยุดสูบบุหรี่** เพราะการผ่าตัดแก้ได้เฉพาะจุดเดียว แต่โรคหลอดเลือดแข็งอยู่ทั่วร่างกาย
+
+**ทำไมตัวลวงจึงผิด**
+- *รักษาด้วยยาอย่างเดียว เพราะผ่าตัดใช้เฉพาะรายที่ไม่มีอาการ* — **กลับด้านโดยสิ้นเชิง** กลุ่มที่ได้ประโยชน์ชัดเจนที่สุดคือ **กลุ่มที่มีอาการ** ส่วนกลุ่มไม่มีอาการประโยชน์น้อยกว่ามากและยังเป็นที่ถกเถียง
+- *เลื่อนไป 6 เดือน* — ปล่อยให้ผู้ป่วยผ่านช่วงที่เสี่ยงที่สุดไปโดยไม่ได้แก้ต้นเหตุ
+- *ให้ warfarin แทนยาต้านเกล็ดเลือด* — กลไกคือ **คราบไขมันกับเกล็ดเลือด** ไม่ใช่เลือดคั่งนิ่งแบบใน AF ยาต้านการแข็งตัวของเลือดจึงไม่ได้เหนือกว่าและเพิ่มความเสี่ยงเลือดออก
+- *ผ่าตัดสองข้างพร้อมกัน* — เพิ่มความเสี่ยงอย่างมากโดยไม่จำเป็น **ผ่าข้างที่เป็นต้นเหตุของอาการก่อน**
+
+PEARL: Carotid ตีบ 70−99% และมีอาการข้างเดียวกัน = ผ่าตัดภายใน 2 สัปดาห์ ควบคู่กับยาต้านเกล็ดเลือดและ statin
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.9(3) Disorders of lipoprotein metabolism and lipidemia · B7.2.5(6) Disorders of lipoprotein metabolism and lipidemia
+
+
+[NEU-MCQ-24] Early complications and supportive care
+
+A 75-year-old woman admitted with an acute middle cerebral artery infarct is alert but has slurred speech. Her daughter asks whether she can have her usual breakfast. Which of the following is the most appropriate action before allowing oral intake?
+
+A. Allow thickened fluids only, without any swallowing assessment
+B. Insert a nasogastric tube in all stroke patients on admission
+C. Allow a normal diet, since she is alert and able to follow commands
+D. Delay all oral intake for 7 days regardless of swallowing ability
+E. Perform a bedside swallowing screen, and keep her nil by mouth until it is passed
+
+ANSWER: E. Perform a bedside swallowing screen, and keep her nil by mouth until it is passed
+
+EXPLAIN:
+**ไล่กลไก** — การกลืนอาศัยการทำงานประสานของเส้นประสาทสมองหลายคู่และเปลือกสมองทั้งสองซีก **stroke จึงทำให้กลืนผิดปกติได้บ่อยมาก แม้ผู้ป่วยจะรู้สึกตัวดีและพูดคุยได้** · ที่อันตรายคือ **silent aspiration** คือสำลักโดยไม่ไอ เพราะการรับความรู้สึกที่คอหอยเสียไปด้วย ผู้ป่วยจึงไม่แสดงอาการให้เห็น
+
+**ผลที่ตามมาคือ ปอดอักเสบจากการสำลัก** ซึ่งเป็น **สาเหตุการเสียชีวิตที่พบบ่อยที่สุดในช่วงหลังของการนอนโรงพยาบาลด้วย stroke** และเป็นภาวะแทรกซ้อนที่ป้องกันได้
+
+> สไลด์จึงระบุไว้ในรายการดูแลเบื้องต้นว่า **"งดน้ำงดอาหารทางปาก"** ตั้งแต่ก่อนส่งทำภาพถ่าย และให้เริ่มกินได้เมื่อ **ผ่านการประเมินการกลืนแล้วเท่านั้น**
+
+**การประเมินข้างเตียง** — ดูระดับความรู้สึกตัว ความสามารถในการนั่ง การควบคุมน้ำลาย เสียงพูดเปลี่ยนหลังกลืน แล้วทดสอบกลืนน้ำปริมาณน้อยภายใต้การเฝ้าดู · ถ้าไม่ผ่านให้ส่งนักกิจกรรมบำบัดหรือประเมินละเอียดต่อ
+
+**ภาวะแทรกซ้อนอื่นที่ต้องป้องกันตั้งแต่วันแรก** — **หลอดเลือดดำที่ขาอุดตัน** (ให้ลุกเคลื่อนไหวเร็ว ใช้ถุงน่องหรือยาป้องกันตามความเหมาะสม) · **แผลกดทับ** · **ติดเชื้อทางเดินปัสสาวะจากการคาสายสวนโดยไม่จำเป็น** · **ภาวะซึมเศร้าหลัง stroke**
+
+**ทำไมตัวลวงจึงผิด**
+- *ให้กินได้เลยเพราะรู้สึกตัวดี* — เป็นความเข้าใจผิดที่พบบ่อยที่สุด **ระดับความรู้สึกตัวไม่ได้ทำนายความสามารถในการกลืน** และ **พูดไม่ชัดเป็นสัญญาณเตือนว่ากล้ามเนื้อกลุ่มเดียวกันอาจทำงานผิดปกติ**
+- *ใส่สายให้อาหารทางจมูกทุกราย* — เกินความจำเป็น รุกล้ำ และผู้ป่วยส่วนใหญ่ผ่านการประเมินการกลืนได้ · สไลด์ยังระบุให้ **เลื่อนการใส่สายออกไปก่อนในผู้ที่เพิ่งได้ rtPA**
+- *ให้อาหารข้นโดยไม่ประเมิน* — การปรับความข้นต้องมาจากผลการประเมิน ไม่ใช่เดา และ **ผู้ที่สำลักเงียบก็ยังสำลักอาหารข้นได้**
+- *งดอาหาร 7 วันทุกราย* — ทำให้ขาดสารอาหารโดยไม่จำเป็นและทำให้ฟื้นตัวช้าลง
+
+PEARL: ประเมินการกลืนก่อนให้กินทุกราย — รู้สึกตัวดีไม่ได้แปลว่ากลืนได้ และ silent aspiration ไม่แสดงอาการ
+
+REF: สไลด์ Acute ischemic stroke: Pathophysiology and management — งานประสาทวิทยา กลุ่มงานอายุรศาสตร์ รพ.ราชวิถี (2567)
+
+NL: 2.3.9-3(3) Cerebrovascular diseases · 2.3.6 โรคระบบประสาท (ทั้งหมวด) · 2.3.10(5) Lower respiratory tract infections (bronchitis, bronchiolitis, pneumonia, lung abscess, bronchiectasis)
 
 
 ### [NEU-MEQ-01] MEQ — Acute ischaemic stroke – onset time, eligibility and thrombolysis

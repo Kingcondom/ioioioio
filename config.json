@@ -175,6 +175,11 @@
       "date": "NL Part 1 · ชุดจำลอง",
       "week": "",
       "al": 0
+    },
+    "N02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": "",
+      "al": 0
     }
   },
   "sets": [
@@ -283,7 +288,7 @@
       "key": "neuro",
       "label": "Neuro",
       "thai": "ระบบประสาท",
-      "blurb": "เริ่มจากคาบ acute ischemic stroke — กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด",
+      "blurb": "ชุดระบบประสาท — คาบ acute ischemic stroke (กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด) ร่วมกับหัวข้ออื่นของระบบประสาทที่ออกสอบบ่อย (SAH · เยื่อหุ้มสมองอักเสบ · ชัก · GBS · myasthenia · ไขสันหลังถูกกด · ปวดศีรษะ · เวียนศีรษะ)",
       "accent": {
         "light": "#6b3f8c",
         "soft": "#efe8f5",
@@ -293,10 +298,12 @@
         "darkInk": "#cdb6e3"
       },
       "lecture_order": [
-        "07"
+        "07",
+        "N02"
       ],
       "mcq": [
-        "data/neuro_mcq_a.json"
+        "data/neuro_mcq_a.json",
+        "data/neuro_mcq_b.json"
       ],
       "meq": [
         "data/neuro_meq_osce.json"
