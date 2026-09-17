@@ -210,6 +210,21 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "E01": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "E02": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
+    },
+    "E03": {
+      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
+      "week": 0,
+      "al": 0
     }
   },
   "sets": [
@@ -423,6 +438,34 @@
       ],
       "meq": [
         "data/gi_meq_osce.json"
+      ],
+      "old": []
+    },
+    {
+      "key": "endo",
+      "label": "Endo",
+      "thai": "ต่อมไร้ท่อและเมตาบอลิก",
+      "blurb": "3 คาบบรรยาย · เบาหวานและภาวะฉุกเฉินทางเมตาบอลิก (DKA · HHS · น้ำตาลต่ำ) · โรคของต่อมไทรอยด์ · ต่อมหมวกไต ต่อมใต้สมอง และเมตาบอลิซึมของกระดูก",
+      "accent": {
+        "light": "#4d7c0f",
+        "soft": "#e9f3d3",
+        "ink": "#3c620c",
+        "dark": "#c2dd52",
+        "darkSoft": "#1b2110",
+        "darkInk": "#d8e98d"
+      },
+      "lecture_order": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "mcq": [
+        "data/endo_mcq_a.json",
+        "data/endo_mcq_b.json",
+        "data/endo_mcq_c.json"
+      ],
+      "meq": [
+        "data/endo_meq_osce.json"
       ],
       "old": []
     },
