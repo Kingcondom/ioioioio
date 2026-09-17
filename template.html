@@ -182,6 +182,7 @@ a{color:var(--accent-ink)}
 .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);
   background:var(--surface-sunk);border:0;padding:5px 11px;border-radius:999px;white-space:nowrap}
 .tag.al{color:var(--miss);background:var(--miss-soft)}
+.tag.yr{color:var(--accent);background:var(--accent-soft);font-weight:600}
 .topic{font-family:var(--sans);font-size:17px;font-weight:700;line-height:1.35;margin:0 0 8px;letter-spacing:-.01em}
 .lecline{font-size:12.5px;color:var(--ink-3);margin:0 0 14px}
 .stem{margin:0 0 16px;max-width:68ch}
@@ -314,6 +315,10 @@ a{color:var(--accent-ink)}
       <button class="ghost" id="btn-reset" type="button">เริ่มใหม่</button>
       <button class="ghost" id="btn-print" type="button">พิมพ์</button>
     </div>
+    <p class="railnote" id="yearnote" style="display:none">
+      <b>ปีที่ออก</b> ดึงจากช่อง <b>ref</b> ของแต่ละข้อ (MED28–MED35)<br>
+      <b>ออกบ่อย</b> = ข้อที่ ref ระบุว่าเคยออกตั้งแต่ <b>2 รุ่นขึ้นไป</b> เรียงจากออกซ้ำมากที่สุด
+    </p>
     <p class="railnote" id="railnote"></p>
   </aside>
   <main class="stream" id="stream" aria-live="polite"></main>
@@ -332,7 +337,8 @@ var BANK = JSON.parse(document.getElementById('bank').textContent);
 var LEC = __LEC__;
 var SETS=__SETS__;
 var NL  = __NL__;
-var MODES=[{k:"new",label:"ข้อสอบใหม่"},{k:"old",label:"คลังข้อสอบเก่า"}];
+var MODES=[{k:"new",label:"ข้อสอบใหม่"},{k:"old",label:"คลังข้อสอบเก่า"},{k:"year",label:"MEQ/OSCE ตามปี"},{k:"hot",label:"ออกบ่อย"}];
+var HOT_MIN=2;  /* ออกบ่อย = ref ระบุว่าเคยออกตั้งแต่กี่รุ่นขึ้นไป */
 var PARTS=[{k:"MCQ",label:"MCQ"},{k:"MEQ",label:"MEQ"},{k:"OSCE/SAQ",label:"OSCE / SAQ"}];
 
 var state={set:"cardio",mode:"new",lec:"all",part:"all",answers:{},shown:{}};
@@ -394,6 +400,25 @@ function md(src){
 
 /* ---------- data access ---------- */
 function newItems(set){return BANK[set].mcq.concat(BANK[set].meq);}
+function yrs(it){return it.years||[];}
+function yearItems(set){return BANK[set].meq.filter(function(it){return yrs(it).length;});}
+function hotList(set){
+  var out=[];
+  BANK[set].mcq.forEach(function(it){if(yrs(it).length>=HOT_MIN)out.push({kind:"mcq",it:it});});
+  BANK[set].meq.forEach(function(it){if(yrs(it).length>=HOT_MIN)out.push({kind:"long",it:it});});
+  BANK[set].old.forEach(function(g){g.items.forEach(function(it){
+    if(yrs(it).length>=HOT_MIN)out.push({kind:it.choices?"oldc":"oldp",it:it,g:g});});});
+  out.sort(function(a,b){return (yrs(b.it).length-yrs(a.it).length)||
+    String(a.it.id).localeCompare(String(b.it.id));});
+  return out;
+}
+function hotFiltered(set){
+  return hotList(set).filter(function(e){
+    var l=e.it.lec||(e.g&&e.g.lec);
+    return state.lec==="all"||l===state.lec;});
+}
+function yearBadge(it){var y=yrs(it);return y.length?"<span class='tag yr'>"+
+  y.map(function(x){return "MED"+x;}).join(" · ")+"</span>":"";}
 function partOf(it){return it.part||"MCQ";}
 function filtered(){
   var items=newItems(state.set);
@@ -404,7 +429,10 @@ function filtered(){
   });
 }
 function modeItems(){
-  // นับตามโหมดที่กำลังดูอยู่ — ข้อใหม่ หรือคลังข้อสอบเก่า
+  // นับตามโหมดที่กำลังดูอยู่
+  if(state.mode==="year")return yearItems(state.set);
+  if(state.mode==="hot")return hotList(state.set).map(function(e){
+    return {lec:e.it.lec||(e.g&&e.g.lec),lecture:e.it.lecture||(e.g&&e.g.lecture)};});
   if(state.mode!=="old")return newItems(state.set);
   var out=[];
   BANK[state.set].old.forEach(function(g){
@@ -496,7 +524,8 @@ function renderMCQ(it,idx){
   var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
     "<span class='tag'>Lec "+esc(it.lec)+" · "+esc(meta.d||"")+"</span>"+
     (meta.al?"<span class='tag al'>Active learning</span>":"")+
-    (meta.w?"<span class='tag'>สัปดาห์ "+esc(String(meta.w))+"</span>":"")+"</div>";
+    (meta.w?"<span class='tag'>สัปดาห์ "+esc(String(meta.w))+"</span>":"")+
+    yearBadge(it)+"</div>";
   h+="<h3 class='topic'>"+esc(it.topic)+"</h3>";
   h+="<p class='lecline'>"+esc(shortName(it.lecture))+(teacher(it.lecture)?" · "+esc(teacher(it.lecture)):"")+"</p>";
   h+="<p class='stem'>"+inline(it.stem)+"</p>";
@@ -553,7 +582,7 @@ function renderLong(it){
   var meta=LEC[it.lec]||{};
   var h="<div class='ihead'><span class='qno'>"+esc(it.id)+"</span>"+
     "<span class='tag'>Lec "+esc(it.lec)+" · "+esc(meta.d||"")+"</span>"+
-    "<span class='tag'>"+esc(it.part)+"</span></div>";
+    "<span class='tag'>"+esc(it.part)+"</span>"+yearBadge(it)+"</div>";
   h+="<h3 class='topic'>"+esc(it.topic)+"</h3>";
   h+="<p class='lecline'>"+esc(shortName(it.lecture))+(teacher(it.lecture)?" · "+esc(teacher(it.lecture)):"")+"</p>";
   if(it.station)h+="<p class='station'>"+esc(it.station)+"</p>";
@@ -601,6 +630,50 @@ function renderNew(stream){
     list.forEach(function(it,i){
       stream.appendChild(g[0]==="MCQ"?renderMCQ(it,i):renderLong(it));
     });
+  });
+}
+
+/* ---------- render: MEQ/OSCE แยกตามปี ---------- */
+function renderYear(stream){
+  var items=yearItems(state.set).filter(function(it){return state.lec==="all"||it.lec===state.lec;});
+  var noyear=BANK[state.set].meq.filter(function(it){return !yrs(it).length&&(state.lec==="all"||it.lec===state.lec);});
+  if(!items.length&&!noyear.length){
+    stream.innerHTML="<p class='empty'>ชุดนี้ยังไม่มี MEQ/OSCE ที่ระบุปีที่ออก</p>";return;}
+  var by={};
+  items.forEach(function(it){yrs(it).forEach(function(y){(by[y]=by[y]||[]).push(it);});});
+  Object.keys(by).sort().reverse().forEach(function(y){
+    var list=by[y];
+    var head=document.createElement("div");head.className="part-head";
+    head.innerHTML="<h2>MED"+esc(y)+"</h2><span class='meta'>"+list.length+" ข้อ</span>";
+    stream.appendChild(head);
+    list.forEach(function(it){stream.appendChild(renderLong(it));});
+  });
+  if(noyear.length){
+    var h=document.createElement("div");h.className="part-head";
+    h.innerHTML="<h2>ยังไม่ระบุปีที่ออก</h2><span class='meta'>"+noyear.length+" ข้อ</span>";
+    stream.appendChild(h);
+    noyear.forEach(function(it){stream.appendChild(renderLong(it));});
+  }
+}
+
+/* ---------- render: ชุดออกบ่อย ---------- */
+function renderHot(stream){
+  var list=hotFiltered(state.set);
+  if(!list.length){
+    stream.innerHTML="<p class='empty'>ชุดนี้ยังไม่มีข้อที่ ref ระบุว่าเคยออกตั้งแต่ "+HOT_MIN+" รุ่นขึ้นไป</p>";return;}
+  var head=document.createElement("div");head.className="part-head";
+  head.innerHTML="<h2>ออกซ้ำตั้งแต่ "+HOT_MIN+" รุ่นขึ้นไป</h2><span class='meta'>"+list.length+" ข้อ</span>";
+  stream.appendChild(head);
+  list.forEach(function(e){
+    if(e.kind==="mcq"){stream.appendChild(renderMCQ(e.it,0));return;}
+    if(e.kind==="long"){stream.appendChild(renderLong(e.it));return;}
+    if(e.kind==="oldc"){stream.appendChild(renderOldChoice(e.it,e.g));return;}
+    var d=document.createElement("article");d.className="item";
+    d.innerHTML="<div class='ihead'><span class='qno'>"+esc(e.it.id||"")+"</span>"+
+      yearBadge(e.it)+"<span class='tag'>"+esc(e.it.part||"")+"</span></div>"+
+      "<p class='q'>"+inline(e.it.q)+"</p><p class='a'>"+inline(e.it.a)+"</p>"+
+      "<p class='src'>"+inline(e.it.src||"")+"</p>";
+    stream.appendChild(d);
   });
 }
 
@@ -682,28 +755,37 @@ function render(){
   buildStrip(document.getElementById("setbar"),SETS,state.set,function(k){
     if(k===state.set)return;state.set=k;state.lec="all";save();render();
   },counts);
-  var mcounts={new:newItems(state.set).length,old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0)};
-  if(!mcounts.old&&state.mode==="old"){state.mode="new";save();}
+  var mcounts={new:newItems(state.set).length,
+    old:BANK[state.set].old.reduce(function(a,g){return a+g.items.length;},0),
+    year:yearItems(state.set).length,
+    hot:hotList(state.set).length};
+  if(!mcounts[state.mode]){state.mode="new";save();}
   // ชุดที่ไม่มีคลังข้อสอบเก่า (เช่น Mock) ให้ซ่อนแท็บคลังเก่าไปเลย
   buildStrip(document.getElementById("modebar"),
-    MODES.filter(function(m){return m.k!=="old"||mcounts.old>0;}),state.mode,function(k){
+    MODES.filter(function(m){return m.k==="new"||mcounts[m.k]>0;}),state.mode,function(k){
     state.mode=k;save();render();
   },mcounts);
   buildLecs();buildParts();
   document.getElementById("partblock").style.display=
     (state.mode==="new"&&document.getElementById("partbar").children.length)?"":"none";
+  document.getElementById("yearnote").style.display=(state.mode==="year"||state.mode==="hot")?"":"none";
   var oldHasCh=BANK[state.set].old.some(function(g){return g.items.length&&g.items[0].choices;});
-  var showBtns=(state.mode==="new")||oldHasCh;
+  var showBtns=(state.mode==="new")||oldHasCh||state.mode==="hot"||state.mode==="year";
   document.getElementById("btn-reveal").style.display=showBtns?"":"none";
   document.getElementById("btn-reset").style.display=showBtns?"":"none";
   updateScore();
   var stream=document.getElementById("stream");stream.innerHTML="";
-  if(state.mode==="new")renderNew(stream);else renderOld(stream);
+  if(state.mode==="new")renderNew(stream);
+  else if(state.mode==="year")renderYear(stream);
+  else if(state.mode==="hot")renderHot(stream);
+  else renderOld(stream);
 }
 
 /* ---------- actions ---------- */
 function activeItems(){
   if(state.mode==="new")return filtered();
+  if(state.mode==="year")return yearItems(state.set);
+  if(state.mode==="hot")return hotFiltered(state.set).map(function(e){return e.it;});
   var out=[];
   BANK[state.set].old.filter(function(g){return state.lec==="all"||g.lec===state.lec;})
     .forEach(function(g){g.items.forEach(function(it){if(it.choices)out.push(it);});});

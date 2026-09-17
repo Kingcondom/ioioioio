@@ -16,7 +16,7 @@ build.py — สร้างเว็บทำข้อสอบ + PDF ทุก
 
 เพิ่มระบบใหม่ = เขียนไฟล์ JSON ใน data/ + เพิ่ม block ใน config.json เท่านั้น
 """
-import json, os, random, subprocess, sys, glob, collections
+import json, os, random, re, subprocess, sys, glob, collections
 
 ROOT = os.path.dirname(os.path.abspath(__file__)) or '.'
 os.chdir(ROOT)
@@ -31,6 +31,24 @@ CHROME_CANDIDATES = sorted(glob.glob('/opt/pw-browsers/chromium*/chrome-linux/ch
 
 
 # ---------------------------------------------------------------- helpers
+YEAR_RE = re.compile(r'MED\s?(\d{2})(?!\d)')
+YEAR_MIN, YEAR_MAX = 28, 35
+
+
+def exam_years(it):
+    """ปีที่ข้อนี้เคยออก — ดึงจาก ref และ src (ตัด MED421/422 ที่เป็นรหัสวิชาออกด้วย (?!\d))"""
+    blob = ' '.join(it.get('ref') or []) + ' ' + str(it.get('src') or '')
+    ys = {y for y in YEAR_RE.findall(blob) if YEAR_MIN <= int(y) <= YEAR_MAX}
+    return sorted(ys)
+
+
+def tag_years(items):
+    for it in items:
+        ys = exam_years(it)
+        if ys:
+            it['years'] = ys
+    return items
+
 def load_many(paths):
     out = []
     for p in paths:
@@ -164,6 +182,8 @@ def main():
             it['choices'] = [ch[i] for i in order]
             it['answer'] = it['choices'].index(correct)
 
+        tag_years(mcq); tag_years(meq)
+        for g in oldg: tag_years(g['items'])
         bank[k] = {'mcq': mcq, 'meq': meq, 'old': oldg}
         dist = collections.Counter(x['answer'] for x in mcq)
         codes = {c for it in mcq + meq + [x for g in oldg for x in g['items']] for c in it.get('nl', [])}
