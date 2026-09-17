@@ -114,6 +114,56 @@
   cardiac rehab (ลด cardiac mortality 22%, 8–24 สัปดาห์) · SBP <140 (elderly ผ่อนได้) ·
   บินได้ตั้งแต่วันที่ 3 ถ้า revascularize ครบและ LVEF >40%
 
+## คาบ 14 · Nephrotic / Nephritic syndrome — อ.ฉันทิศา · พฤ. 24 ก.ย. (สัปดาห์ 2)
+
+อ.ฉันทิศา = Chantisa Arayangkoon, MD · Division of Renal Unit, Dept. of Internal Medicine, รพ.ราชวิถี
+
+| ไฟล์ | fileId | ดึงข้อความ |
+|---|---|---|
+| Approach to glomerular disease .pdf | `1jBWuaZbxe-3Z9lMY7vhPK3xrED2PKQSv` | ✅ **ครบ** — ข้อความเต็มทั้งชุด (ไฟล์ 13 MB เกินลิมิต `download_file_content` 10 MB ให้ใช้ `read_file_content` แทน) |
+
+โครงสไลด์: Glomerular structure → Clinical manifestation (proteinuria, hematuria)
+→ Step approach to glomerular syndrome → Primary glomerular diseases → Secondary glomerular diseases
+
+**เขียนเป็นบทเรียนแล้วครบทั้งคาบ** — `learn/nephro.json` 11 หัวข้อ ผูกข้อสอบคาบ 14 ครบทั้ง 24 ข้อ
++ ข้อที่เขียนเอง 5 ข้อ · MEQ 2 · OSCE 1 (ดู SPEC.md §8.3)
+
+สาระที่ดึงได้ครบ:
+- **กำแพงกรอง 3 ชั้น**: endothelial cell (**anion charge barrier**) · GBM (**type IV collagen, laminin,
+  fibronectin**) · podocyte foot process (**filtration slit diaphragm**)
+- **ตาราง dipstick**: trace 15–30 · 1+ 30–100 · 2+ 100–300 · 3+ 300–1,000 · 4+ >1,000 mg/dL
+- **ตาราง SSA (urine:SSA = 1:3)**: trace 1–10 · 1+ 15–30 · 2+ 40–100 · 3+ 150–350 · 4+ >500 mg/dL
+- **Urine creatinine ที่คาดใน 24 ชม.**: หญิง 15–20 · ชาย 20–25 mg/kg/วัน (ใช้เช็คว่าเก็บครบ)
+- **แยกชนิด proteinuria**: transient (functional <1–2 g/d · orthostatic <1 g/d บวกตอนยืน) ·
+  persistent (overflow — light chain/lysozyme/myoglobin/hemoglobin · tubular <1–2 g/d · glomerular >3.5 g/d)
+- **แผนภูมิปัสสาวะแดง**: dipstick ลบ (rifampin, porphyrin, สีอาหาร) → dipstick บวก ปั่นดู supernatant
+  (แดง = myoglobin/hemoglobin · ใส = hematuria จริง)
+- **Glomerular vs non-glomerular hematuria**: สีโคล่า/ไม่มีลิ่ม/โปรตีน >500 mg/d/dysmorphic RBC/RBC cast ·
+  เกณฑ์ **acanthocyte >5%** หรือ **distorted microcystic RBC >50%** · RBC ≥3/HPF
+- **6 คำถามของ step approach** + **กลุ่มอาการ 5 แบบ** (asymptomatic · nephrotic · nephritic · RPGN · CGN)
+  พร้อมเกณฑ์ตัวเลขครบ — RPGN = crescent >30–50% + GFR ลด 50% ใน 3 เดือน
+- **ตารางเทียบ nephrotic vs nephritic** และ **ตารางโรค × ++++** (MCD ++++/- ถึง crescentic GN +/++++)
+- **MCD**: 70% ของเด็ก <10 ปี · 10–15% ของผู้ใหญ่ · LM ปกติ/IF ไม่ติดสี/EM foot process effacement ·
+  สาเหตุทุติยภูมิ (NSAIDs, **Hodgkin**, ภูมิแพ้) · KDIGO pred 1 MKD (max 80) หรือ 2 mg/kg AD (max 120),
+  4–16 สัปดาห์, taper 5–10 mg/wk ถึง 6 เดือน
+- **FSGS**: nephrotic 60–75% · HT 45–65% · hematuria 30–50% · renal insufficiency 25–50% ·
+  LM segmental sclerosis (NOS) / IF IgM,C1q,C3 ที่รอยแผล / EM extent of effacement ·
+  secondary: **HIV (collapsing)**, pamidronate/interferon/anabolic steroid, hyperfiltration (อ้วน, ไตข้างเดียว, หลังตัดไต)
+- **MN**: ชาย:หญิง 2–3:1 · >40 ปี · >80% โปรตีน >3 g/d · bland sediment · **RVT/PE/DVT** ·
+  **rule of thirds 30/30/30** · LM spike / IF granular IgG+C3 ตามผนัง / EM subepithelial deposit ·
+  secondary: มะเร็ง (ปอด 26% · ต่อมลูกหมาก 15% · โรคเลือด 14% · ลำไส้ใหญ่ 11%), HBV/HCV/HIV, SLE class V, NSAIDs
+- **IgA nephropathy**: **synpharyngitis 40–50%** · micro hematuria 30–40% · nephrotic 5% · RPGN <10% ·
+  IF mesangial IgA · KDIGO ACEI/ARB เมื่อ >1 g/d (1B) titrate จน <1 g/d (2C) · fish oil (2D) ·
+  steroid 6 เดือนเมื่อ GFR >50 (2C)
+- **APSGN**: หลังผิวหนัง 4–6 สัปดาห์ · หลังคอ 2–4 สัปดาห์ · **C3/CH50 ต่ำ 90% C4 ปกติ กลับปกติใน 8–10 สัปดาห์** ·
+  **ASO 30% · anti-DNase B 70%** · LM exudative GN / IF coarse granular IgG+C3 / EM **hump** ·
+  ยาปฏิชีวนะกำจัดเชื้อและกันแพร่ **แต่ไม่ทำให้ GN ที่เกิดแล้วดีขึ้น**
+- **Lupus nephritis**: pathogenesis 5 ขั้น (loss of self-tolerance → autoantibody → IC deposition →
+  IC inflammation → fibrosis) · proteinuria 100% · hematuria 80% · nephrotic 45–65% · RPGN 30% ·
+  **ACR 2012**: UPCR >0.5 หรือ active sediment (RBC/WBC >5/HPF, cellular cast) ·
+  **ข้อบ่งชี้เจาะไต** ครบ · **ISN/RPS class I–VI** (III <50% · IV ≥50% · VI >90% sclerosis) ·
+  **full house IF** · การรักษาตาม class (I ไม่ต้อง · II pred สั้น · III/IV/V pred 0.5–1 MKD + IS · VI ประคับประคอง)
+
 ## หมายเหตุสำหรับงานต่อ
 ไฟล์ที่ขึ้น ⚠️ เนื้อหาหลักเป็น **ภาพตาราง ESC** ที่ text layer ดึงไม่ออก — ถ้าจะเขียนบทเรียน
 คาบ 13 ให้ครบตามสไลด์จริง ต้องเปิดดูภาพจากสองไฟล์นั้นเพิ่ม (หรือใช้เนื้อหาจากไกด์ไลน์ ESC ต้นทางแทน
