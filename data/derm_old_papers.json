@@ -1,0 +1,194 @@
+[
+ {
+  "id": "DE-OLDP-001",
+  "lec": "D01",
+  "lecture": "ผิวหนัง: ผื่นเฉียบพลันและภาวะฉุกเฉินทางผิวหนัง (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with Stevens-Johnson syndrome. He had recently been started on allopurinol without any pharmacogenetic testing beforehand. Which allele should have been tested before the drug was prescribed?",
+  "choices": [
+   "HLA-B*58:01",
+   "HLA-B*15:02",
+   "HLA-B*57:01",
+   "HLA-A*31:01",
+   "HLA-B*13:01"
+  ],
+  "answer": 0,
+  "note": "เฉลย: HLA-B*58:01\n\nกลไก: allopurinol และ metabolite oxypurinol จับกับ HLA-B*58:01 แล้วนำเสนอ self-peptide ที่เปลี่ยนรูปให้ CD8+ cytotoxic T cell → clonal expansion ปล่อย granulysin/perforin ทำลาย keratinocyte เกิด severe cutaneous adverse reaction (SJS/TEN, DRESS) ความสัมพันธ์นี้แรงมากในคนไทย จีนฮั่น และเกาหลี (odds ratio หลายสิบถึงหลักร้อย) แนวทางไทยและ CPIC จึงแนะนำตรวจ HLA-B*58:01 ก่อนเริ่ม allopurinol โดยเฉพาะผู้ที่มี CKD (ความเสี่ยงสูงขึ้นจาก oxypurinol คั่ง) ถ้าผลเป็นบวกให้เลี่ยงไปใช้ febuxostat หรือ probenecid\n\nหมายเหตุสำคัญ: โพยบันทึกตัวเลือกไว้ 2 ข้อ (HLA-B1502, HLA-B5802) และไม่ได้วงคำตอบ ตัวเลขที่ถูกต้องทางเภสัชพันธุศาสตร์คือ B*58:01 — \"B5802\" ในโพยเป็นการจดคลาดเคลื่อนของ B*5801\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- HLA-B*15:02: สัมพันธ์กับ carbamazepine-induced SJS/TEN (และบางส่วนกับ phenytoin/oxcarbazepine) ไม่ใช่ allopurinol — เป็นตัวลวงหลักของข้อนี้\n- HLA-B*57:01: abacavir hypersensitivity syndrome (ไข้ ผื่น อาการทางระบบ) ไม่ใช่ผื่นจาก allopurinol\n- HLA-A*31:01: carbamazepine-induced DRESS/maculopapular rash ในคนยุโรปและญี่ปุ่น\n- HLA-B*13:01: dapsone hypersensitivity syndrome",
+  "src": "MED34 · [MED34] 2. คนไข ้มาด ้วย SJS ก่อนหน้านี้มีประวัติให ้ยา Allopurinol ซึ่งไม่ได ้ส่งตรวจยีนอะไรก่อนให ้\n- A. HLA-B1502\n- B. HLA-B5802"
+ },
+ {
+  "id": "DE-OLDP-002",
+  "lec": "D01",
+  "lecture": "ผิวหนัง: ผื่นเฉียบพลันและภาวะฉุกเฉินทางผิวหนัง (ยังไม่ระบุคาบ)",
+  "q": "A patient who recently started allopurinol develops a drug eruption with erosions involving the mucosa (oral and ocular). Which adverse drug reaction is this?",
+  "choices": [
+   "Stevens–Johnson syndrome (SJS)",
+   "DRESS syndrome (drug rash with eosinophilia and systemic symptoms)",
+   "Maculopapular (morbilliform) drug eruption",
+   "Acute generalized exanthematous pustulosis (AGEP)",
+   "Fixed drug eruption"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Stevens–Johnson syndrome (SJS)\n\nกลไก/เหตุผล: allopurinol เป็นสาเหตุอันดับต้น ๆ ของ severe cutaneous adverse reaction (SCAR) โดยเฉพาะในคนไทย/เอเชียที่มี HLA-B*58:01 (ผ่านกลไก drug-specific CD8+ cytotoxic T cell ปล่อย granulysin/perforin ทำให้ keratinocyte ตายแบบ apoptosis เป็นวงกว้าง) จุดชี้ขาดที่โจทย์ให้มาคือ \"involve mucosa\" — SJS/TEN เป็นกลุ่มเดียวที่มี mucosal erosion ตั้งแต่ 2 ตำแหน่งขึ้นไป (ริมฝีปาก/ช่องปาก เยื่อบุตา อวัยวะเพศ) ร่วมกับ dusky/targetoid macules, Nikolsky sign positive; ถ้า epidermal detachment <10% BSA = SJS, 10–30% = SJS/TEN overlap, >30% = TEN การรักษาคือหยุดยาที่สงสัยทันที ดูแลแบบ supportive/burn-unit care และปรึกษาจักษุแพทย์เพื่อป้องกัน ocular sequelae\n\nทำไมตัวเลือกอื่นผิด:\n- DRESS (ตรงกับตัวเลือก b \"Drug-induced eosinophilia\" ที่โพยจดไว้) ก็เกิดจาก allopurinol ได้บ่อย แต่เด่นด้วยผื่น morbilliform กระจายทั่วตัว ไข้สูง facial edema ต่อมน้ำเหลืองโต eosinophilia และตับอักเสบ โดย latency นาน 2–6 สัปดาห์ mucosal involvement ไม่ใช่ลักษณะเด่น (พบได้บ้างแต่ไม่ erode รุนแรง) จึงไม่ตอบโจทย์ที่เน้น mucosa\n- Maculopapular (morbilliform) drug eruption เป็นผื่นแดงราบ/นูนคัน ไม่มี mucosal involvement ไม่มีอาการทางระบบ และหายเองเมื่อหยุดยา\n- AGEP เป็น pustule เล็ก ๆ จำนวนมากบนผื่นแดง เกิดเร็วภายใน 1–2 วัน มักจาก beta-lactam/macrolide มี leukocytosis neutrophil เด่น mucosa มักไม่ถูกทำลาย\n- Fixed drug eruption เป็นผื่นกลมขอบชัดสีคล้ำ เกิดซ้ำที่ตำแหน่งเดิมทุกครั้งที่ได้ยา อาจอยู่ที่ริมฝีปากหรืออวัยวะเพศได้ แต่เป็นรอยโรคจำกัดไม่กี่จุด ไม่ใช่ mucosal erosion หลายตำแหน่งพร้อมผื่นทั่วตัว",
+  "src": "MED34 · [MED34] 2. Allopurinol แพ ้ยาแบบ involve mucosa\na. SJS\nb. Drug-induced eosinophilia"
+ },
+ {
+  "id": "DE-OLDP-003",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A diabetic patient presents with fever and a bright red, raised skin plaque with a sharply demarcated border. What is the most likely diagnosis?",
+  "choices": [
+   "Erysipelas",
+   "Cellulitis",
+   "Necrotizing fasciitis",
+   "Acute allergic contact dermatitis",
+   "Stasis dermatitis"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Erysipelas\n\nกลไก: เป็นการติดเชื้อของ upper dermis และ superficial lymphatics ส่วนใหญ่จาก Streptococcus pyogenes (group A beta-haemolytic streptococcus) การอักเสบที่จำกัดอยู่ชั้นตื้นและลามไปตามท่อน้ำเหลืองทำให้ผื่นมีลักษณะเฉพาะคือ 'ขอบชัดยกนูน' (sharply demarcated, raised border) สีแดงสด ร้อน กดเจ็บ และมีไข้หนาวสั่นนำมาก่อนผื่น ปัจจัยเสี่ยงคือเบาหวาน ขาบวมน้ำเหลือง เชื้อราที่เท้าหรือแผลถลอกเป็นทางเข้าเชื้อ รักษาด้วย penicillin หรือ amoxicillin เป็นหลัก\n\nทำไมตัวเลือกอื่นผิด: Cellulitis อยู่ลึกถึง deep dermis และ subcutaneous fat ขอบผื่นจึงไม่ชัดและไม่ยกนูน สีแดงคล้ำกว่า (แต่เป็น differential ที่ใกล้ที่สุด); Necrotizing fasciitis จะปวดมากเกินกว่าที่ตรวจพบ ผิวคล้ำม่วง มี bullae/crepitus ผิวหนังชา และมีภาวะ systemic toxicity/ช็อก ซึ่งโจทย์ไม่ได้บันทึก; Acute allergic contact dermatitis ขอบผื่นชัดตามบริเวณที่สัมผัสสารได้เช่นกันแต่มีอาการคันเป็นหลัก มี vesicle/ผื่นน้ำเหลืองเยิ้ม และไม่มีไข้; Stasis dermatitis เป็นผื่นเรื้อรังสองข้างที่ขาส่วนล่างจาก venous insufficiency มีผิวคล้ำ hyperpigmentation และไม่มีไข้",
+  "src": "MED33 · [MED33] ขอผื่นขอบชัด ีแดง เปนเบา วาน มีไข>Erysipelas"
+ },
+ {
+  "id": "DE-OLDP-004",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A housewife presents with dry, cracked skin and painful fissures over the palms and the fingertips. What is the most likely diagnosis?",
+  "choices": [
+   "Irritant contact dermatitis",
+   "Allergic contact dermatitis",
+   "Palmoplantar psoriasis",
+   "Tinea manuum",
+   "Dyshidrotic eczema (pompholyx)"
+  ],
+  "answer": 0,
+  "note": "เฉลย: irritant contact dermatitis (housewife's hand dermatitis จากงานเปียก)\n\nกลไก: การสัมผัสน้ำ สบู่ ผงซักฟอกและ detergent ซ้ำ ๆ ชะล้าง lipid และ natural moisturizing factor ของ stratum corneum → skin barrier เสีย, TEWL เพิ่ม, keratinocyte หลั่ง IL-1, TNF-alpha เกิดการอักเสบโดยตรง ไม่ผ่านกลไกภูมิคุ้มกันแบบจำเพาะ (ไม่ต้องมี sensitization และเกิดได้ในคนที่สัมผัสทุกคนถ้ามากพอ) ลักษณะเด่นคือผิวแห้ง แดง แสบมากกว่าคัน และแตกเป็น fissure ที่ฝ่ามือกับปลายนิ้วซึ่งเป็นจุดรับแรงและสัมผัสมากที่สุด\nรักษา: หลีกเลี่ยงสิ่งระคายเคือง/ใส่ถุงมือฝ้ายซับในกับถุงมือยาง, emollient เป็นหลัก, topical corticosteroid ช่วงอักเสบ\n\nเหตุที่ตัวเลือกอื่นผิด:\n- Allergic contact dermatitis เป็น type IV ต้องมี sensitization ต่อสารจำเพาะ (nickel, rubber accelerator, น้ำยาบางชนิด) ผื่นคันเด่น มี vesicle และมักลามเกินบริเวณที่สัมผัส ยืนยันด้วย patch test\n- Palmoplantar psoriasis เป็น well-demarcated plaque ขุยหนาสีเงิน มักมีรอยโรคที่เล็บ (pitting, oil drop) หรือตำแหน่งอื่นของร่างกายร่วม\n- Tinea manuum มักเป็นข้างเดียว ขอบชัดมีขุยที่ขอบ มักพบ tinea pedis ร่วม (two feet-one hand) และ KOH พบเชื้อ\n- Dyshidrotic eczema (pompholyx) เป็นตุ่มน้ำใสลึกคล้ายเมล็ดสาคูที่ฝ่ามือและด้านข้างนิ้ว คันมาก เป็นซ้ำเป็นระลอก ไม่ใช่ผิวแห้งแตกเรื้อรังจากงานเปียก",
+  "src": "MED31 · 40. House wifeมีแผลตรง fissure ของ palm และปลายนิวมือ —> Irritant contact dermatitis"
+ },
+ {
+  "id": "DE-OLDP-005",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient has a fungal nail infection (onychomycosis). Which drug is the treatment of choice?",
+  "choices": [
+   "Oral terbinafine",
+   "Oral griseofulvin",
+   "Oral ketoconazole",
+   "Topical clotrimazole cream",
+   "Topical amorolfine nail lacquer as monotherapy"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Terbinafine ชนิดรับประทาน (250 มก./วัน ประมาณ 6 สัปดาห์สำหรับเล็บมือ และ 12 สัปดาห์สำหรับเล็บเท้า)\n\nกลไก/เหตุผล: onychomycosis ส่วนใหญ่เกิดจาก dermatophyte โดยเฉพาะ Trichophyton rubrum การรักษาต้องใช้ยากิน เพราะยาทาไม่สามารถซึมผ่าน nail plate ไปถึง nail bed/matrix ได้ terbinafine เป็น allylamine ยับยั้งเอนไซม์ squalene epoxidase ทำให้สร้าง ergosterol ไม่ได้และมีการสะสม squalene ซึ่งเป็นพิษต่อเชื้อ จึงออกฤทธิ์ fungicidal ต่อ dermatophyte และยาสะสมอยู่ใน keratin ของเล็บได้นานหลายเดือนหลังหยุดยา ให้ cure rate สูงที่สุดในกลุ่ม (itraconazole เป็นทางเลือกรอง โดยเฉพาะเมื่อสงสัย Candida หรือ nondermatophyte mould) ควรยืนยันด้วย KOH/culture ก่อนเริ่มยา เพราะโรคเล็บอื่น (psoriasis, trauma) เลียนแบบได้ และติดตามผลข้างเคียงตับตามข้อบ่งชี้\n\nทำไมตัวเลือกอื่นผิด:\n- Griseofulvin ต้องกินนานมาก (6–12 เดือน) ซึมเข้าเล็บได้ไม่ดี cure rate ต่ำและ relapse สูง ปัจจุบันไม่ใช่ยาตัวเลือกแรกของ onychomycosis (ยังใช้ใน tinea capitis)\n- Ketoconazole ชนิดกินถูกจำกัด/เพิกถอนข้อบ่งใช้แบบระบบเพราะ hepatotoxicity รุนแรงและกดการสร้างฮอร์โมน adrenal/androgen จึงห้ามใช้รักษาเชื้อราที่เล็บ\n- Clotrimazole cream ใช้ได้เฉพาะเชื้อราที่ผิวหนัง (tinea corporis/cruris/pedis) ไม่สามารถผ่านแผ่นเล็บได้\n- Amorolfine (หรือ ciclopirox) nail lacquer เดี่ยว ๆ ใช้ได้เฉพาะรายที่โรคน้อยแบบ distal subungual < 50% ของเล็บ ไม่มี matrix/lunula involvement และเล็บเป็นไม่กี่เล็บ ไม่ใช่ยาหลักของ onychomycosis ทั่วไป",
+  "src": "MED34 · ข ้อสอบ MED ครั้งที่4 LS loop B (รอบ 3) ข้อสอบ 100 ข้อ 2 ชม · [MED34] 10. เล็บเป็นเชื้อรา ใช ้ยาอะไรรักษา > terbinafine"
+ },
+ {
+  "id": "DE-OLDP-006",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient has a whitish discolouration of the nail. Scraping of the nail material grows Trichophyton rubrum. Which treatment is most appropriate?",
+  "choices": [
+   "Oral itraconazole",
+   "Topical amorolfine nail lacquer alone",
+   "Oral griseofulvin",
+   "Topical clotrimazole cream twice daily",
+   "Oral ketoconazole"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: itraconazole (ยากิน)\n\nกลไก: เล็บขาวผิดปกติ + ขูดเล็บพบ Trichophyton rubrum = onychomycosis (tinea unguium) จาก dermatophyte ซึ่ง T. rubrum เป็นเชื้อที่พบบ่อยที่สุด การรักษาต้องใช้ยาต้านเชื้อราชนิดกิน เพราะ nail plate เป็น keratin หนาที่ยาทาซึมผ่านไปถึง nail bed/matrix ไม่ได้ Itraconazole เป็น triazole ยับยั้ง 14-alpha-demethylase ทำให้สร้าง ergosterol ไม่ได้ ให้แบบ 200 mg/day ต่อเนื่อง หรือ pulse 400 mg/day 1 สัปดาห์ต่อเดือน (เล็บมือ 2 pulse, เล็บเท้า 3 pulse) ตัวยาสะสมใน nail keratin จึงยังออกฤทธิ์ต่อหลังหยุดยา\n\nข้อควรระวัง (โพย vs แนวทางปัจจุบัน): ปัจจุบัน first-line ของ dermatophyte onychomycosis คือ terbinafine 250 mg/day (เล็บมือ 6 สัปดาห์, เล็บเท้า 12 สัปดาห์) เพราะ cure rate สูงกว่าและ drug interaction น้อยกว่า itraconazole — โพยบันทึกคำตอบว่า itraconazole ซึ่งเป็นทางเลือกที่ยอมรับได้ (และเหนือกว่าเมื่อเป็น Candida/non-dermatophyte) ถ้าข้อสอบจริงมี terbinafine อยู่ในช้อย ให้เลือก terbinafine ก่อน\n\nทำไมตัวเลือกอื่นผิด:\n- Topical amorolfine lacquer เดี่ยวๆ: ใช้ได้เฉพาะโรคไม่รุนแรง (distal <50% ของเล็บ, ไม่โดน matrix, เล็บน้อยกว่า 3-4 เล็บ) ไม่ใช่การรักษาหลัก\n- Oral griseofulvin: ซึมเข้า nail ได้ไม่ดี ต้องกินนาน 6-12 เดือน อัตราหายต่ำและ relapse สูง จึงเลิกใช้สำหรับเล็บ\n- Topical clotrimazole cream: ครีมทาไม่ผ่าน nail plate ใช้ได้กับ tinea corporis/pedis ที่ผิวหนังเท่านั้น\n- Oral ketoconazole: ถูกเพิกถอนข้อบ่งใช้สำหรับเชื้อราผิวหนัง/เล็บเพราะ severe hepatotoxicity และ QT prolongation",
+  "src": "MED32 · Loop นี · [MED32] 34. มีขาวๆทีเล็บ ขูดมาเจอ trichophyton rubrum tx: itraconazole"
+ },
+ {
+  "id": "DE-OLDP-007",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient is shown with a photograph of grouped herpetic vesicles on an erythematous base on the abdominal wall. Which bedside investigation should be sent to confirm the diagnosis?",
+  "choices": [
+   "Tzanck smear — scraping from the base of a freshly opened vesicle, stained to look for multinucleated giant cells",
+   "KOH preparation of the blister roof",
+   "Gram stain and bacterial culture of the vesicle fluid",
+   "Wood's lamp examination of the lesion",
+   "Skin biopsy of perilesional skin for direct immunofluorescence"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Tzanck smear\n\nกลไก/เหตุผล: ผื่นตุ่มน้ำใสเรียงเป็นกลุ่ม (grouped vesicles) บน erythematous base ที่หน้าท้อง เข้าได้กับการติดเชื้อกลุ่ม herpes (HSV หรือ VZV/herpes zoster) การตรวจข้างเตียงที่เร็ว ถูก และตอบโจทย์ที่สุดคือ Tzanck smear — เลือกตุ่มน้ำใหม่ เปิดหลังคาตุ่ม ขูดฐานตุ่ม (floor) ป้ายบนสไลด์ ย้อม Giemsa/Wright/Tzanck จะเห็น multinucleated giant cells และ acantholytic keratinocyte ที่มี ballooning degeneration ซึ่งเป็น cytopathic effect ของ herpesvirus (แยก HSV จาก VZV ไม่ได้ ต้องอาศัย DFA หรือ PCR ถ้าจำเป็น) ข้อจำกัดคือความไวขึ้นกับระยะของรอยโรค (ตุ่มน้ำใหม่ไวกว่าระยะตกสะเก็ด) ปัจจุบัน PCR/DFA ไวและจำเพาะกว่า แต่ในบริบทข้อสอบและเวชปฏิบัติแบบ bedside คำตอบคือ Tzanck smear\n\nทำไมตัวเลือกอื่นผิด:\n- KOH preparation ใช้หาเส้นใย/สปอร์ของเชื้อรา (tinea, candida) ไม่ตรวจหา viral cytopathic change และผื่น herpetic ไม่ใช่เชื้อรา\n- Gram stain/culture ใช้เมื่อคิดถึงการติดเชื้อแบคทีเรีย (bullous impetigo, ecthyma, secondary infection) ถ้าเป็น herpes เดี่ยว ๆ จะได้ผลลบ/ไม่ช่วยวินิจฉัย\n- Wood's lamp ใช้ดู fluorescence ใน tinea capitis จาก Microsporum, erythrasma (coral red), pityriasis versicolor, หรือดูขอบเขตของ vitiligo ไม่มีประโยชน์ในผื่นตุ่มน้ำจากไวรัส\n- Skin biopsy + DIF ใช้วินิจฉัยโรคตุ่มน้ำจากภูมิคุ้มกัน (pemphigus, bullous pemphigoid, dermatitis herpetiformis) เป็น invasive และผลช้า ไม่ใช่การตรวจแรกของผื่น herpetic",
+  "src": "MED34 · [MED34] 61. Picture herpes at พุง ส่งอะไร > tzanck"
+ },
+ {
+  "id": "DE-OLDP-008",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with a chronic, intensely itchy eczematous rash typical of atopic dermatitis. Which treatment is most appropriate?",
+  "choices": [
+   "Topical corticosteroid together with regular emollient",
+   "A course of oral prednisolone",
+   "Oral antihistamine alone",
+   "Oral ciclosporin",
+   "Topical mupirocin"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: topical steroid\n\nกลไก: atopic dermatitis เกิดจาก skin barrier defect (filaggrin mutation, ceramide ลดลง, TEWL เพิ่ม) ร่วมกับการอักเสบแบบ Th2 (IL-4, IL-13, IL-31 ทำให้คัน) การรักษาหลักช่วง flare จึงเป็น topical anti-inflammatory คือ topical corticosteroid เลือก potency ตามความรุนแรงและตำแหน่ง (ใบหน้า/ข้อพับใช้ low potency, ลำตัว/แขนขาใช้ medium potency) ทาสั้นๆ จนสงบแล้วลดลง ควบคู่กับ emollient สม่ำเสมอเพื่อซ่อม barrier ซึ่งเป็น maintenance ที่ลดการกลับเป็นซ้ำ และหลีกเลี่ยง trigger (สบู่แรง อากาศแห้ง เหงื่อ ขนสัตว์)\n\nทำไมตัวเลือกอื่นผิด:\n- Oral prednisolone: ได้ผลเร็วแต่สงวนไว้เฉพาะรายรุนแรงมากที่ดื้อการรักษา เพราะมี rebound flare หลังหยุดและผลข้างเคียงระบบ\n- Oral antihistamine เดี่ยวๆ: ช่วยแค่ฤทธิ์ง่วง/บรรเทาคันบางส่วน ไม่ลดการอักเสบที่ผิวหนัง จึงไม่ทำให้ผื่นหาย\n- Oral ciclosporin: เป็น systemic immunosuppressant สำหรับ moderate-to-severe AD ที่ไม่ตอบสนอง topical therapy ไม่ใช่ขั้นแรก และต้องเฝ้าระวัง BP/creatinine\n- Topical mupirocin: ใช้เมื่อมี secondary bacterial infection (impetiginized eczema) เท่านั้น ไม่ได้รักษาตัวโรคอักเสบ",
+  "src": "MED32 · Loop 3 (เพิมเติม) + MCQ 100 ข้อ 2 Oct 2023 · [MED32] 21. อาการ Atopic dermatitis ถาม treatment ตอบ topical steroid"
+ },
+ {
+  "id": "DE-OLDP-009",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with a rash erupting in the distribution of a single nerve (dermatomal pattern). What is the most likely diagnosis?",
+  "choices": [
+   "Herpes zoster",
+   "Herpes simplex virus infection",
+   "Zosteriform allergic contact dermatitis",
+   "Lichen striatus (linear eruption along Blaschko lines)",
+   "Varicella (chickenpox)"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Herpes zoster (งูสวัด)\n\nหมายเหตุเรื่องแหล่งข้อมูล: โพยของ MED33 จดรายละเอียดโจทย์ไว้ไม่ครบและผู้จดเองเขียนกำกับว่า \"เลยมั้ง\" (ไม่มั่นใจในรายละเอียด) แต่ประเด็นที่ถูกบันทึกชัดเจนคือ ผื่นขึ้นเรียงตามแนวเส้นประสาท/dermatome และคำตอบที่บันทึกไว้คือ herpes zoster ซึ่งสอดคล้องกับเวชปฏิบัติ จึงเก็บข้อนี้ไว้แต่ให้ความมั่นใจระดับกลาง\n\nกลไก/เหตุผล: ผื่นที่จำกัดอยู่ใน dermatome เดียว ข้างเดียว ไม่ข้ามแนวกลางตัว เป็นลักษณะจำเพาะของ herpes zoster ซึ่งเกิดจาก reactivation ของ varicella-zoster virus ที่แฝงอยู่ใน sensory (dorsal root/cranial) ganglion หลังการติดเชื้อ varicella ครั้งแรก เมื่อภูมิคุ้มกันชนิดเซลล์ลดลง (อายุมาก ภาวะกดภูมิ HIV มะเร็ง ยา) ไวรัสจะเพิ่มจำนวนและเดินทางตาม axon ออกมาที่ผิวหนังใน dermatome ของ ganglion นั้น ทำให้เกิดตุ่มน้ำเป็นกลุ่มบนฐานแดงร่วมกับอาการปวดแสบตามเส้นประสาท และมี prodromal pain นำมาก่อนผื่นได้ 2–3 วัน ควรให้ยาต้านไวรัสภายใน 72 ชั่วโมง และถ้าเกิดในคนอายุน้อยหรือหลาย dermatome ควรตรวจหา HIV/ภาวะกดภูมิคุ้มกัน\n\nทำไมตัวเลือกอื่นผิด:\n- HSV ก่อตุ่มน้ำกลุ่มเล็ก ๆ ที่ริมฝีปาก/อวัยวะเพศ กลับเป็นซ้ำตำแหน่งเดิม ไม่กระจายเต็ม dermatome (zosteriform HSV มีรายงานแต่พบน้อยมาก)\n- Zosteriform allergic contact dermatitis อาจเรียงเป็นแนวเส้นตรงตามรอยที่ผิวหนังสัมผัสสาร (เช่น ใบพืช) แต่ขอบเขตจะตรงกับบริเวณสัมผัส ไม่ตรงกับ dermatome จริง อาการเด่นคือคันมากกว่าปวด\n- Lichen striatus เป็นผื่น papule แบนเรียงเป็นแนวตาม Blaschko lines (ไม่ใช่ dermatome) พบในเด็ก ไม่มีตุ่มน้ำและไม่ปวด หายได้เอง\n- Varicella กระจายทั่วตัวทั้งสองข้าง มีไข้ และเห็นรอยโรคหลายระยะพร้อมกัน ไม่จำกัดตามเส้นประสาท",
+  "src": "MED33 · [MED33] 45. ใ อาการมา รอยผื่นขึ้นตามnerve/dermatomeเลยมั้ง>Herpes zoster"
+ },
+ {
+  "id": "DE-OLDP-010",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with multiple small vesicles and pustules covered by honey-coloured crusts. What is the most likely diagnosis?",
+  "choices": [
+   "Impetigo contagiosa",
+   "Herpes simplex virus infection",
+   "Varicella",
+   "Staphylococcal scalded skin syndrome",
+   "Acute allergic contact dermatitis"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: impetigo\n\nกลไก: non-bullous impetigo (impetigo contagiosa) เป็นการติดเชื้อแบคทีเรียชั้น epidermis ตื้นๆ จาก Staphylococcus aureus และ/หรือ Streptococcus pyogenes เชื้อเข้าทางผิวหนังที่มีรอยถลอก ยุงกัด หรือผื่น eczema เดิม เกิด vesicle/pustule เล็กๆ ที่แตกง่าย น้ำเหลืองและ serum แห้งกรังเป็นสะเก็ดสีเหลืองน้ำผึ้ง (honey-coloured crust) ซึ่งเป็นลักษณะจำเพาะ มักขึ้นบริเวณใบหน้ารอบปาก-รอบจมูกและแขนขา ติดต่อกันได้ง่ายโดยการสัมผัส การรักษา: ถ้าเป็นเฉพาะที่ไม่กี่จุดใช้ topical mupirocin หรือ fusidic acid, ถ้าเป็นหลายตำแหน่งให้ยากินกลุ่ม anti-staphylococcal เช่น dicloxacillin/cloxacillin หรือ cephalexin และต้องนึกถึง post-streptococcal glomerulonephritis เป็นภาวะแทรกซ้อนตามหลัง\n\nทำไมตัวเลือกอื่นผิด:\n- HSV infection: ตุ่มน้ำใสเรียงกลุ่มบนฐานแดง มีอาการแสบ/ปวดนำมาก่อน เป็นซ้ำที่ตำแหน่งเดิม สะเก็ดเป็นสีน้ำตาลไม่ใช่เหลืองน้ำผึ้ง Tzanck smear พบ multinucleated giant cell\n- Varicella: ตุ่มกระจายทั่วตัวและอยู่ต่างระยะกันพร้อมกัน (macule, vesicle, crust) ร่วมกับไข้และอาการนำทั่วร่างกาย ไม่ใช่ผื่นเฉพาะที่มีสะเก็ดน้ำผึ้ง\n- Staphylococcal scalded skin syndrome: เกิดจาก exotoxin ทำให้ผิวแดงเจ็บทั่วตัว ลอกเป็นแผ่นกว้าง Nikolsky sign positive พบในเด็กเล็ก/ผู้มีภูมิคุ้มกันต่ำ อาการรุนแรงกว่ามาก\n- Acute allergic contact dermatitis: คันเด่น ผื่นแดงบวมมีตุ่มน้ำตามขอบเขตที่สัมผัสสาร (รูปร่างเป็นเส้น/เป็นรูปวัตถุ) ไม่มีสะเก็ดสีน้ำผึ้งและไม่ติดต่อ",
+  "src": "MED32 · Loop 3 (เพิมเติม) · [MED32] 34. Multiple small vesicle covers with honey-crust -> impetigo"
+ },
+ {
+  "id": "DE-OLDP-011",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with vesicles and pustules on the back. Which investigation is most appropriate?",
+  "choices": [
+   "Tzanck smear",
+   "KOH preparation of the lesion scraping",
+   "Gram stain and bacterial culture of pustule fluid",
+   "Skin biopsy for histopathology",
+   "Wood's lamp examination"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Tzanck test (Tzanck smear)\n\nกลไก: ผื่นตุ่มน้ำและตุ่มหนองบริเวณหลัง (มักเรียงตาม dermatome) ชวนคิดถึงการติดเชื้อกลุ่ม herpes คือ herpes zoster หรือ herpes simplex การทำ Tzanck smear คือขูดฐานของตุ่มน้ำที่เปิดออกแล้วย้อม Giemsa หรือ Wright จะเห็น multinucleated giant cells และ acantholytic cells ที่มี ballooning degeneration ซึ่งเป็นการตรวจที่ทำได้ข้างเตียง ราคาถูก และให้ผลทันที (ถ้าต้องแยกชนิดไวรัสให้แน่ชัดใช้ PCR หรือ direct fluorescent antibody ซึ่งไวกว่า)\n\nทำไมตัวเลือกอื่นผิด: KOH preparation ใช้หา fungal hyphae หรือ spore ในผื่นเชื้อรา เช่น tinea หรือ Malassezia ไม่ตอบโจทย์ตุ่มน้ำจากไวรัส; Gram stain/culture ของหนองใช้เมื่อคิดถึง bacterial pustule เช่น impetigo หรือ folliculitis แต่ไม่พบเชื้อในตุ่มน้ำจากไวรัสและใช้เวลารอผลเพาะเชื้อ; Skin biopsy ให้ผลยืนยันได้แต่ invasive เกินความจำเป็นและช้า จึงไม่ใช่ investigation แรก; Wood's lamp ใช้ประเมิน pigment disorder, erythrasma หรือ tinea capitis บางชนิด ไม่ช่วยในผื่นตุ่มน้ำ",
+  "src": "MED32 · MED32: Loop นี · [MED32] 20. Vesicle + pustule บนหลัง ถาม investigation : Tzanck test"
+ },
+ {
+  "id": "DE-OLDP-012",
+  "lec": "D02",
+  "lecture": "ผิวหนัง: ผื่นเรื้อรังและผื่นจากการติดเชื้อที่พบบ่อย (ยังไม่ระบุคาบ)",
+  "q": "Multiple grouped vesicles are found on the left upper back and left arm (unilateral, one side only). What is the most likely diagnosis?",
+  "choices": [
+   "Herpes zoster",
+   "Herpes simplex virus infection",
+   "Varicella (chickenpox)",
+   "Bullous impetigo",
+   "Vesicular allergic contact dermatitis"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Herpes zoster\n\nกลไก/เหตุผล: ตุ่มน้ำใสเรียงเป็นกลุ่มบนฐานแดง จำกัดอยู่ข้างเดียวและครอบคลุมบริเวณหลังส่วนบนซ้ายต่อเนื่องถึงแขนซ้าย = การกระจายตาม dermatome ของ C5–T2 ข้างซ้าย ไม่ข้ามแนวกลางตัว เกิดจาก reactivation ของ varicella-zoster virus ที่แฝงตัวอยู่ใน dorsal root ganglion แล้วเดินทางตามเส้นประสาทรับความรู้สึกออกมาที่ผิวหนัง ผู้ป่วยมักมีอาการปวดแสบ/คันนำมาก่อนผื่น 2–3 วัน (prodromal neuritic pain) การรักษาคือให้ยาต้านไวรัส (acyclovir/valacyclovir/famciclovir) ภายใน 72 ชั่วโมงเพื่อลดความรุนแรงและ postherpetic neuralgia\n\nทำไมตัวเลือกอื่นผิด:\n- HSV มักเป็นตุ่มน้ำกลุ่มเล็ก ๆ ที่ริมฝีปากหรืออวัยวะเพศ กลับเป็นซ้ำที่ตำแหน่งเดิม ไม่กระจายกินพื้นที่ทั้ง dermatome (zosteriform HSV มีรายงานแต่พบน้อยมาก)\n- Varicella กระจายทั่วตัวทั้งสองข้างพร้อมไข้ และเห็นรอยโรคหลายระยะปนกัน (macule, papule, vesicle, crust — dew drop on rose petal) ไม่จำกัดข้างเดียว\n- Bullous impetigo จาก S. aureus ที่สร้าง exfoliative toxin เป็น flaccid bullae แตกง่ายเหลือ honey-colored crust พบบ่อยในเด็กบริเวณหน้า/ข้อพับ ไม่เรียงตาม dermatome\n- Vesicular allergic contact dermatitis อาการเด่นคือคันมาก ขอบเขตรอยโรคตรงกับบริเวณที่สัมผัสสารก่อภูมิแพ้ (รูปร่างแปลกตามวัตถุ) ไม่ตรงกับแนว dermatome และไม่มีอาการปวดแสบนำมาก่อน",
+  "src": "MED34 · [MED34] 3. Multiple Vesicle at Left upper back and arm dx.\na. Herpes zoster"
+ }
+]

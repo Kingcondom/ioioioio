@@ -1,0 +1,226 @@
+[
+ {
+  "id": "ON-OLDP-001",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A T1N0M0 mass is completely excised. Histology of the resected specimen shows no malignancy. What is the most appropriate next step?",
+  "choices": [
+   "Observation with regular surveillance",
+   "Adjuvant chemotherapy",
+   "Adjuvant radiotherapy",
+   "Concurrent chemoradiotherapy",
+   "Re-excision to obtain wider margins"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: Observation\n\nกลไก/หลักการ: adjuvant treatment มีเหตุผลเดียวคือกำจัด micrometastasis หรือ residual disease ที่เหลือหลังผ่าตัด ดังนั้นต้องมีความเสี่ยงให้กำจัด เมื่อรอยโรคเป็นระยะต้นสุด (T1N0M0 คือก้อนเล็ก ไม่มีต่อมน้ำเหลือง ไม่มีการแพร่กระจาย) ถูกตัดออกหมด และผลพยาธิวิทยาของชิ้นเนื้อที่ตัดออก \"ไม่พบเซลล์มะเร็ง\" (margin free / ไม่มี residual tumour) ก็ไม่มีเป้าหมายให้รักษาเพิ่ม การให้เคมีบำบัดหรือรังสีรักษาต่อมีแต่ความเป็นพิษโดยไม่ได้ประโยชน์ สิ่งที่ถูกต้องคือติดตามเป็นระยะ (surveillance) ตามแนวทางของอวัยวะนั้น\n\nข้อจำกัดของโพย: บันทึกไว้สั้นมากและไม่ได้ระบุอวัยวะต้นกำเนิดของก้อน จึงไม่รู้ว่าเป็นมะเร็งระบบใด แต่คำตอบ observation ยังยืนได้ไม่ว่าอวัยวะใด เพราะเงื่อนไข \"ตัดหมด + ไม่พบมะเร็งในชิ้นเนื้อ\" ตัดข้อบ่งชี้ของการรักษาเสริมออกทั้งหมด (ยกเว้นกรณีมะเร็งเต้านม ER positive ที่ยังอาจพิจารณา endocrine therapy ซึ่งโพยไม่ได้กล่าวถึง)\n\nทำไมตัวเลือกอื่นผิด:\n- Adjuvant chemotherapy: ใช้เมื่อระยะสูงขึ้น มี node positive หรือมี high-risk pathologic feature (LVI, high grade, margin positive)\n- Adjuvant radiotherapy: ใช้เมื่อ margin positive/close หรือมีข้อบ่งชี้ตามอวัยวะ เช่นหลัง breast-conserving surgery ไม่ใช่กรณี specimen ไม่พบมะเร็ง\n- Concurrent chemoradiotherapy: สำหรับ locally advanced หรือผ่าตัดไม่ได้ ไม่ใช่ระยะ T1N0M0 ที่ตัดออกหมดแล้ว\n- Re-excision: ทำเมื่อ margin positive หรือ close margin เท่านั้น เมื่อไม่พบมะเร็งในชิ้นเนื้อจึงไม่มีเหตุให้ผ่าซ้ำ",
+  "src": "MED32 · Loop 3 (เพิมเติม) · [MED32] 31. Mass (T1N0M0) Tx. ผ่าออกแล ้ว biopsy: no malignancy -> Observation"
+ },
+ {
+  "id": "ON-OLDP-002",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A patient has a family history of colorectal cancer without polyposis together with endometrial cancer. What is the diagnosis?",
+  "choices": [
+   "Lynch syndrome (hereditary non-polyposis colorectal cancer, HNPCC)",
+   "Familial adenomatous polyposis (FAP)",
+   "Peutz–Jeghers syndrome",
+   "MUTYH-associated polyposis",
+   "Li–Fraumeni syndrome"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Lynch syndrome หรือ hereditary non-polyposis colorectal cancer (HNPCC)\n\nกลไก/เหตุผล: Lynch syndrome ถ่ายทอดแบบ autosomal dominant จาก germline mutation ของยีนกลุ่ม DNA mismatch repair (MLH1, MSH2, MSH6, PMS2) หรือ EPCAM deletion ที่ทำให้ MSH2 ไม่ทำงาน เมื่อระบบ MMR เสีย ความผิดพลาดของ DNA ที่บริเวณลำดับซ้ำจะสะสม เกิด microsatellite instability (MSI-high) และ mutation สะสมเร็วในยีนควบคุมการเจริญ ลักษณะทางคลินิกที่ตรงกับโจทย์คือ มะเร็งลำไส้ใหญ่ที่เกิดอายุน้อย มักอยู่ด้าน right colon โดย \"ไม่มี\" polyposis จำนวนมาก (ต่างจาก FAP) และมะเร็งนอกลำไส้ที่พบบ่อยที่สุดคือ endometrial cancer รองลงมาคือ ovary, กระเพาะอาหาร, ทางเดินปัสสาวะ, ตับ-ท่อน้ำดี, ลำไส้เล็ก การคัดกรองใช้ Amsterdam II criteria/revised Bethesda ร่วมกับตรวจ IHC ของโปรตีน MMR หรือ MSI ในชิ้นเนื้อ แล้วยืนยันด้วย germline testing ผู้ที่มี mutation ควรส่องกล้องลำไส้ใหญ่ทุก 1–2 ปี เริ่มอายุ 20–25 ปี และพิจารณา risk-reducing hysterectomy with BSO เมื่อมีบุตรเพียงพอ นอกจากนี้เนื้องอกที่ MSI-high ตอบสนองดีต่อ immune checkpoint inhibitor\n\nทำไมตัวเลือกอื่นผิด:\n- FAP เกิดจาก germline APC mutation มี adenomatous polyps หลายร้อยถึงหลายพันเม็ดในลำไส้ใหญ่ ซึ่งขัดกับโจทย์ที่ระบุว่า non-polyps\n- Peutz–Jeghers syndrome (STK11) มี hamartomatous polyps ในลำไส้เล็กร่วมกับ mucocutaneous melanin pigmentation ที่ริมฝีปาก/เยื่อบุช่องปาก ไม่ใช่ภาพของ colon + endometrium แบบนี้\n- MUTYH-associated polyposis ถ่ายทอดแบบ autosomal recessive และมี adenoma จำนวนมาก (attenuated polyposis) จึงยังเป็นกลุ่ม polyposis\n- Li–Fraumeni syndrome (TP53) เด่นด้วย sarcoma, มะเร็งเต้านมอายุน้อยมาก, เนื้องอกสมอง, adrenocortical carcinoma และ leukemia ไม่ใช่รูปแบบมะเร็งลำไส้ใหญ่ร่วมกับมะเร็งเยื่อบุโพรงมดลูก",
+  "src": "MED33 · [MED33] 59. Family history of colon cancer (non polyps) and endometrial cancer : diagnosis hereditary non-polyposis colorectal cancer\n(HNPCC)"
+ },
+ {
+  "id": "ON-OLDP-003",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A patient is diagnosed with colorectal cancer with no polyposis of the colon. His mother had cancer and his sister also had colon cancer; his father is unaffected. Which hereditary cancer syndrome does this family pattern represent?",
+  "choices": [
+   "Hereditary nonpolyposis colorectal cancer (Lynch syndrome), autosomal dominant",
+   "Familial adenomatous polyposis (FAP)",
+   "MUTYH-associated polyposis",
+   "Peutz-Jeghers syndrome",
+   "Juvenile polyposis syndrome"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Hereditary nonpolyposis colorectal cancer (HNPCC / Lynch syndrome) ซึ่งถ่ายทอดแบบ autosomal dominant\n\nกลไก: germline mutation ของยีน DNA mismatch repair (MLH1, MSH2, MSH6, PMS2 หรือ EPCAM deletion) ทำให้ซ่อมแซม base-base mismatch ไม่ได้ เกิด microsatellite instability (MSI-high) มะเร็งจึงเกิดเร็วจาก adenoma เดี่ยว ๆ โดยไม่ต้องมี polyp จำนวนมาก ลักษณะเข้ากับโจทย์คือ colon CA โดย 'ไม่มี polyposis' ร่วมกับญาติสายตรงหลายคนเป็นมะเร็ง (แม่เป็นมะเร็ง พี่สาวเป็น colon CA) เข้าข่าย Amsterdam II / revised Bethesda criteria มะเร็งมักอยู่ right colon อายุน้อย และเสี่ยงมะเร็งนอกลำไส้ เช่น endometrium, ovary, stomach, small bowel, urothelium\n\nทำไมตัวเลือกอื่นผิด: FAP ต้องมี adenomatous polyp เป็นร้อยถึงพันตำแหน่ง (APC mutation) ซึ่งโจทย์ระบุชัดว่าไม่มี polyp; MUTYH-associated polyposis ถ่ายทอดแบบ autosomal recessive และมี oligopolyposis ประมาณ 10-100 ตำแหน่ง พ่อแม่มักปกติทั้งคู่ ไม่เข้ากับประวัติที่แม่และพี่สาวเป็นมะเร็ง; Peutz-Jeghers มี hamartomatous polyp ที่ small bowel ร่วมกับ mucocutaneous pigmentation ที่ริมฝีปากและเยื่อบุช่องปาก; Juvenile polyposis มี juvenile hamartomatous polyps หลายตำแหน่งในเด็กหรือวัยรุ่น มาด้วยเลือดออกหรือลำไส้กลืนกัน\n\nหมายเหตุ: โพยจดคำถามว่า 'ถ่ายทอดแบบไหน' แต่บันทึกคำตอบเป็นชื่อกลุ่มโรค (HNPCC) จึงเรียบเรียงโจทย์เป็นการถามว่าเป็น hereditary syndrome ใด และระบุ pattern ของ HNPCC (autosomal dominant) ไว้ในตัวเลือกที่ถูกเพื่อให้ครอบคลุมทั้งสองมุมของคำถามเดิม",
+  "src": "MED33 · [MED33] 84. คนไขเปน colon CA เเบบ ไมมี polyp แมเปนมะเร็ง พี่ าวเปนมะเร็ง colon เ มือนกัน พอปกติ ถายทอดเเบบไ น ? ตอบ Hereditary\nnonpolyposis colorectal cancer"
+ },
+ {
+  "id": "ON-OLDP-004",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A patient is diagnosed with small cell lung cancer. Which is the most appropriate therapy?",
+  "choices": [
+   "Chemotherapy",
+   "Immunotherapy",
+   "Radiation",
+   "Surgery",
+   "Pleural drainage"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Chemotherapy (ตัวเลือก C ในโพย) — โพยบันทึกตัวเลือก A-E ครบแต่ไม่ได้จดข้อที่ถูก คำตอบนี้มาจากหลักการรักษา SCLC ไม่ใช่จากบันทึก จึงให้ confidence เพียงระดับกลาง\n\nกลไก: SCLC เป็น high-grade neuroendocrine tumour ที่ doubling time สั้นและมี micrometastasis แล้วตั้งแต่วินิจฉัย (ประมาณสองในสามเป็น extensive stage) จึงถือเป็น systemic disease ที่ต้องรักษาด้วยยาเป็นหลัก และไวต่อ platinum-etoposide มาก (response rate 60-80%) ใน limited stage ให้ concurrent chemoradiation ตามด้วย prophylactic cranial irradiation ใน extensive stage ให้ chemotherapy ร่วมกับ anti-PD-L1 (atezolizumab/durvalumab) แกนหลักของทุกสูตรจึงเป็น chemotherapy\n\nทำไมตัวเลือกอื่นผิด: Immunotherapy ปัจจุบันใช้ 'เสริม' กับ chemotherapy ใน extensive stage ไม่ได้ใช้เดี่ยวเป็น first-line; Radiation ควบคุมได้เฉพาะเฉพาะที่ (thoracic RT หรือ palliative RT) ไม่คุม micrometastasis จึงเป็นการรักษาร่วมไม่ใช่การรักษาหลัก; Surgery มีที่ใช้น้อยมากใน SCLC เฉพาะ T1-2N0 ซึ่งพบไม่ถึง 5% และยังต้องให้ adjuvant chemotherapy ตาม; Pleural drainage เป็นเพียงการรักษาตามอาการของ malignant pleural effusion ไม่ได้รักษาตัวมะเร็ง",
+  "src": "MED33 · [MED33] 101. Small cell lung CA อันนั้นเป็น most appropriate therapy ?\nA. Immunotherapy\nB. Radiation\nC. Chemo\nD. Sx\nE. Drain"
+ },
+ {
+  "id": "ON-OLDP-005",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A patient with acute lymphoblastic leukaemia develops K 5.6 mEq/L and Ca 7.8 mg/dL shortly after the first cycle of chemotherapy. What is the diagnosis?",
+  "choices": [
+   "Tumour lysis syndrome",
+   "Pseudohyperkalaemia from marked leukocytosis in the specimen",
+   "Citrate toxicity from platelet transfusion",
+   "Primary adrenal insufficiency",
+   "Chemotherapy-induced acute tubular necrosis"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Tumour lysis syndrome (โพยจดคำตอบนี้พร้อมเครื่องหมายคำถาม แสดงว่าผู้จดไม่มั่นใจ แต่ชุดผลเลือดที่บันทึกไว้เข้ากับ TLS อย่างชัดเจน)\n\nกลไก: ALL มี tumour burden สูงและแบ่งตัวเร็ว เมื่อได้ยาเคมีบำบัดครั้งแรก เซลล์มะเร็งแตกสลายพร้อมกันจำนวนมาก ปล่อยสารในเซลล์ออกมาสู่กระแสเลือดเร็วกว่าที่ไตจะขับออกได้ ทำให้เกิด hyperkalaemia (K 5.6), hyperphosphataemia, hyperuricaemia และ hypocalcaemia (Ca 7.8) จากการที่ฟอสเฟตส่วนเกินจับแคลเซียมตกตะกอนเป็น calcium phosphate การตกตะกอนในท่อไตร่วมกับ uric acid crystal ทำให้เกิด AKI ซ้ำเติมจนโพแทสเซียมยิ่งสูง เกณฑ์วินิจฉัยใช้ Cairo-Bishop (laboratory TLS ภายใน 3 วันก่อนถึง 7 วันหลังเริ่มการรักษา) การป้องกันคือให้สารน้ำมาก ๆ ร่วมกับ allopurinol หรือ rasburicase ในกลุ่มเสี่ยงสูง และต้องเฝ้าระวัง cardiac arrhythmia จาก hyperkalaemia เป็นอันดับแรก\n\nทำไมตัวเลือกอื่นผิด: Pseudohyperkalaemia จากเม็ดเลือดขาวสูงมากหรือเลือดแตกในหลอด อธิบายเฉพาะ K ที่สูงแต่ไม่อธิบาย hypocalcaemia และไม่สัมพันธ์กับช่วงหลังให้ยาเคมีบำบัด; Citrate toxicity จากการให้เกล็ดเลือดหรือพลาสมาจำนวนมากทำให้แคลเซียมอิสระต่ำได้ แต่มักทำให้เกิด metabolic alkalosis และไม่ทำให้โพแทสเซียมสูง; Primary adrenal insufficiency ให้ hyperkalaemia คู่กับ hyponatraemia, ความดันต่ำและ hypoglycaemia ไม่ทำให้แคลเซียมต่ำ และไม่ใช่เหตุการณ์ที่เกิดทันทีหลังยาเคมีบำบัดครั้งแรก; Chemotherapy-induced acute tubular necrosis ทำให้โพแทสเซียมสูงได้จากไตวาย แต่ในบริบทนี้ไตวายเป็นผลตามมาของ TLS เอง และการเกิดขึ้นทันทีพร้อม hypocalcaemia ชี้ไปที่การสลายของเซลล์มะเร็งเป็นต้นเหตุหลัก",
+  "src": "MED32 · MED32: Loop นี · [MED32] 29. ALL ได ้รับ 1st chemotherapy K5.6 Ca7.8 dx? : tumor lysis syndrome ? (โพยบันทึกพร ้อมเครืองหมาย ? — ผู้จดไม่มันใจ)"
+ },
+ {
+  "id": "ON-OLDP-006",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A woman has breast cancer that is oestrogen-receptor positive and HER2 negative. Which drug is appropriate for her?",
+  "choices": [
+   "Tamoxifen",
+   "Trastuzumab",
+   "Pembrolizumab",
+   "Olaparib",
+   "Capecitabine"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: tamoxifen (เป็นช้อยที่โพยบันทึกไว้ตรงๆ)\n\nกลไก: การเลือกยาในมะเร็งเต้านมขึ้นกับ receptor status เมื่อ ER positive แสดงว่าเซลล์มะเร็งใช้ estrogen เป็นตัวกระตุ้นการเจริญ จึงได้ประโยชน์จาก endocrine therapy Tamoxifen เป็น SERM ที่จับ ER แบบ competitive และออกฤทธิ์ต้าน estrogen ที่เนื้อเยื่อเต้านม ทำให้เซลล์หยุดอยู่ใน G1 ให้เป็น adjuvant 5-10 ปี ลดทั้ง recurrence และ mortality ส่วน HER2 negative หมายความว่าไม่มีเป้าให้ anti-HER2 therapy\n\nข้อสังเกตเทียบแนวทางปัจจุบัน: โพยไม่ได้บันทึกอายุหรือภาวะหมดประจำเดือน ถ้าผู้ป่วยเป็น postmenopausal แนวทางปัจจุบันนิยม aromatase inhibitor (letrozole/anastrozole) มากกว่า tamoxifen (ลด recurrence ได้ดีกว่าเล็กน้อย) ส่วน premenopausal ใช้ tamoxifen หรือ ovarian suppression + AI ในรายเสี่ยงสูง — คำตอบ tamoxifen ถูกในกรอบช้อยที่บันทึกไว้ ผลข้างเคียงที่ต้องจำ: endometrial carcinoma, VTE, hot flush\n\nทำไมตัวเลือกอื่นผิด:\n- Trastuzumab: ใช้เฉพาะ HER2 positive ผู้ป่วยรายนี้ HER2 negative จึงไม่ได้ประโยชน์ และยังมีความเสี่ยง cardiotoxicity เปล่าๆ\n- Pembrolizumab: ข้อบ่งใช้อยู่ในกลุ่ม triple-negative (PD-L1 positive ระยะแพร่กระจาย หรือ neoadjuvant ในรายเสี่ยงสูง) ไม่ใช่ ER positive\n- Olaparib: PARP inhibitor สำหรับผู้ที่มี germline BRCA1/2 mutation ซึ่งโพยไม่ได้ระบุ\n- Capecitabine: เป็น cytotoxic chemotherapy ใช้ในระยะแพร่กระจายหรือ residual disease หลัง neoadjuvant ไม่ใช่ยาที่เลือกจาก receptor status ของโจทย์นี้",
+  "src": "MED32 · Loop 3 (เพิมเติม) + MCQ 100 ข้อ 2 Oct 2023 · [MED32] 28. Breast cancer (ER positive, Her-2 negative) ให ้ยาอะไร? Choice: tamoxifen"
+ },
+ {
+  "id": "ON-OLDP-007",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "A woman is diagnosed with ovarian cancer; her mother had breast cancer. Which factor is the most important one in this patient?",
+  "choices": [
+   "Genetic predisposition — germline BRCA1/BRCA2 mutation (hereditary breast–ovarian cancer syndrome)",
+   "Hormonal factors — nulliparity with uninterrupted ovulation",
+   "Environmental/occupational carcinogen exposure such as perineal talc or asbestos",
+   "Chronic pelvic inflammation from prior pelvic inflammatory disease",
+   "Oncogenic viral infection (HPV)"
+  ],
+  "answer": 0,
+  "note": "เฉลย: ปัจจัยทางพันธุกรรม (genetic) — germline BRCA1/BRCA2 mutation\n\nกลไก/เหตุผล: การมี ovarian cancer ในตัวผู้ป่วยร่วมกับ breast cancer ในญาติสายตรงลำดับที่หนึ่ง (มารดา) คือลักษณะของ hereditary breast–ovarian cancer syndrome ซึ่งถ่ายทอดแบบ autosomal dominant จาก germline mutation ของ BRCA1/BRCA2 ยีนทั้งสองทำหน้าที่ซ่อม DNA double-strand break ด้วยกลไก homologous recombination เมื่อสูญเสียหน้าที่ (second hit ที่ allele อีกข้างตาม Knudson two-hit) เซลล์ต้องพึ่ง error-prone repair ทำให้เกิด genomic instability และมะเร็ง ความสำคัญทางเวชปฏิบัติคือต้องส่ง genetic counseling/germline testing เพราะมีผลต่อ (1) การรักษา — มะเร็งที่มี BRCA mutation ตอบสนองดีต่อ platinum และมีข้อบ่งชี้ใช้ PARP inhibitor (synthetic lethality) (2) การเฝ้าระวังและ risk-reducing salpingo-oophorectomy/การตรวจเต้านม และ (3) การตรวจคัดกรองญาติสายเลือด\n\nทำไมตัวเลือกอื่นผิด:\n- ปัจจัยฮอร์โมน (nulliparity, ovulation ต่อเนื่อง, ใช้ estrogen) เป็นปัจจัยเสี่ยงทั่วไปของ ovarian cancer จริง แต่อธิบายการเกิดมะเร็งเป็นกลุ่มในครอบครัว (ovary + breast) ไม่ได้ จึงไม่ใช่ปัจจัย \"สำคัญที่สุด\" ของรายนี้\n- สารก่อมะเร็งสิ่งแวดล้อม/แป้งฝุ่น-แอสเบสตอส หลักฐานยังอ่อนและไม่สอดคล้องกับประวัติครอบครัว\n- Chronic pelvic inflammation/endometriosis มีความเกี่ยวข้องบางส่วนกับ clear cell/endometrioid subtype แต่ไม่ใช่กลไกที่อธิบาย clustering ในครอบครัว\n- HPV เกี่ยวข้องกับมะเร็งปากมดลูก ช่องคลอด ทวารหนัก และ oropharynx ไม่ใช่ปัจจัยของมะเร็งรังไข่หรือเต้านม",
+  "src": "MED34 · [MED34] 2. ผญ. เป็นovarian CA แม่เป็นbreast CA ปัจจัยที่สําคัญในผู้ป่ วยรายนี้คือ\na. Genetic"
+ },
+ {
+  "id": "ON-OLDP-008",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Activation of the epidermal growth factor receptor (EGFR) on a tumour cell produces which of the following effects?",
+  "choices": [
+   "Downstream RAS-MAPK and PI3K-AKT signalling that increases tumour cell proliferation",
+   "Caspase activation leading to apoptosis of the tumour cell",
+   "Cell cycle arrest at the G1/S checkpoint",
+   "Repair of DNA double-strand breaks by homologous recombination",
+   "Downregulation of VEGF with inhibition of tumour angiogenesis"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: increase proliferation\n\nกลไก: EGFR (HER1/ErbB1) เป็น receptor tyrosine kinase ที่ผิวเซลล์ เมื่อ ligand (EGF, TGF-alpha) จับ จะเกิด dimerization และ autophosphorylation ของ tyrosine ใน intracellular domain แล้วส่งสัญญาณลงสองสายหลักคือ RAS-RAF-MEK-ERK และ PI3K-AKT-mTOR ผลลัพธ์คือเซลล์เดินหน้าผ่าน cell cycle, เพิ่ม proliferation, ยับยั้ง apoptosis, และเสริม angiogenesis/invasion ในมะเร็ง เช่น NSCLC ที่มี activating mutation (exon 19 deletion, L858R) หรือ EGFR overexpression/amplification สัญญาณนี้จะเปิดค้างแบบ constitutive ทำให้เซลล์โตไม่หยุด จึงเป็นเป้าของยา EGFR-TKI (gefitinib, erlotinib, osimertinib) และ monoclonal antibody (cetuximab)\n\nทำไมตัวเลือกอื่นผิด:\n- Caspase activation/apoptosis: EGFR ทำตรงกันข้าม คือส่งสัญญาณ pro-survival ผ่าน AKT ยับยั้ง BAD/caspase\n- Cell cycle arrest ที่ G1/S: เป็นหน้าที่ของ tumour suppressor p53-p21 และ Rb ไม่ใช่ growth factor receptor ซึ่งผลักให้ผ่าน checkpoint\n- Homologous recombination repair: เป็นงานของ BRCA1/2-RAD51 ไม่เกี่ยวกับ EGFR (และเป็นเป้าของ PARP inhibitor)\n- ลด VEGF/ยับยั้ง angiogenesis: EGFR signalling เพิ่ม VEGF ส่งเสริมการสร้างหลอดเลือด ส่วนการยับยั้ง angiogenesis เป็นฤทธิ์ของ bevacizumab",
+  "src": "MED32 · Loop นี · [MED32] 66. epidermal growth factor receptor : increase proliferation"
+ },
+ {
+  "id": "ON-OLDP-009",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Extravasation of which chemotherapeutic agent causes the most severe local tissue injury?",
+  "choices": [
+   "Doxorubicin",
+   "Cisplatin",
+   "Cyclophosphamide",
+   "Methotrexate",
+   "5-Fluorouracil"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Doxorubicin\n\nกลไก: doxorubicin เป็น vesicant กลุ่ม anthracycline ที่รุนแรงที่สุด เมื่อรั่วออกนอกหลอดเลือดยาจะเข้าไปจับ DNA ของเซลล์เนื้อเยื่อรอบข้าง เมื่อเซลล์นั้นตายก็ปล่อยยาที่ยังออกฤทธิ์ออกมาทำลายเซลล์ข้างเคียงต่อเป็นลูกโซ่ (retention + recycling) แผลจึงลุกลามช้าๆ เป็นสัปดาห์ถึงเดือน กลายเป็น full-thickness necrosis ลึกถึง tendon และข้อ อาจต้อง debridement หรือ skin graft การจัดการ: หยุดให้ยาทันทีโดยไม่ดึงเข็มออก ดูดยาที่ค้างออกให้มากที่สุด ยกแขนสูง ประคบเย็นเป็นช่วงๆ พิจารณา dexrazoxane ทางหลอดเลือดดำ (หรือ topical DMSO) และปรึกษาศัลยกรรม\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Cisplatin: จัดเป็น irritant ทำให้แสบแดงอักเสบ จะกลายเป็น vesicant เฉพาะเมื่อรั่วในความเข้มข้นสูงและปริมาณมาก\n- Cyclophosphamide: non-vesicant เพราะต้องถูก activate ที่ตับก่อนจึงออกฤทธิ์ รั่วแล้วไม่ทำให้เนื้อตาย\n- Methotrexate และ 5-Fluorouracil: เป็น irritant ทำให้ปวดแสบ แดง บวมชั่วคราว หายเองได้ ไม่ก่อ progressive necrosis แบบ anthracycline\n\nหมายเหตุ: vinca alkaloid (vincristine/vinblastine) ก็เป็น true vesicant และต้องประคบอุ่น + hyaluronidase (ตรงข้ามกับ anthracycline) แต่ตัวที่ก่อแผลเนื้อตายลึกและยืดเยื้อที่สุดตามที่โพยตอบคือ doxorubicin จึงไม่นำ vincristine มาเป็นตัวลวงเพื่อไม่ให้คำตอบซ้อนกัน",
+  "src": "MED34 · [MED34] 6. ยา chemotherapy อะไรถ ้า extravasation แล ้วจะอันตรายที่สุด\na. Doxorubicin"
+ },
+ {
+  "id": "ON-OLDP-010",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Which chemotherapeutic agent characteristically causes cardiomyopathy?",
+  "choices": [
+   "Doxorubicin",
+   "Bleomycin",
+   "Cisplatin",
+   "Vincristine",
+   "Methotrexate"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Doxorubicin\n\nกลไก: anthracycline ทำให้เกิด dilated cardiomyopathy แบบ dose-dependent และไม่ผันกลับ (type I cardiotoxicity) ความเสี่ยงเพิ่มชัดเมื่อ cumulative dose เกิน 450–550 mg/m2 กลไกหลักคือยับยั้ง topoisomerase-2β ในเซลล์กล้ามเนื้อหัวใจร่วมกับการสร้าง reactive oxygen species จากวง quinone และ iron complex → DNA double-strand break, mitochondrial dysfunction, myofibrillar loss และ apoptosis (biopsy เห็น vacuolization และ myofibrillar dropout) แสดงออกเป็น LVEF ลดลง จนถึง heart failure ได้ทั้งแบบ early (ภายในปีแรก) และ late (หลายปีต่อมา โดยเฉพาะผู้ที่รับยาตอนเด็ก) การป้องกัน: จำกัด cumulative dose, ติดตาม echo/LVEF, ใช้ liposomal doxorubicin หรือ dexrazoxane, และให้ ACEI/beta-blocker เมื่อ LVEF เริ่มลด\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Bleomycin: พิษเด่นคือ pulmonary fibrosis (dose-dependent) และ skin hyperpigmentation ไม่กระทบกล้ามเนื้อหัวใจ\n- Cisplatin: nephrotoxicity, ototoxicity, peripheral neuropathy, hypomagnesemia\n- Vincristine: peripheral และ autonomic neuropathy, ileus, SIADH — ไม่ใช่พิษต่อหัวใจ\n- Methotrexate: mucositis, myelosuppression, hepatotoxicity, pneumonitis\n\nเสริม: trastuzumab ก็ทำให้ LVEF ลดลงได้ แต่เป็น type II cardiotoxicity ที่ไม่สัมพันธ์กับขนาดยาและมักกลับคืนได้เมื่อหยุดยา และไม่ใช่ยาเคมีบำบัด cytotoxic จึงไม่ใช่คำตอบของโจทย์นี้",
+  "src": "MED34 · MED32 · ข ้อสอบ MED ครั้งที่2 (MED34) · [MED34] 10.chemotherapy ตัวไหนทีทําให ้เกิด cardiomyopathy\nตอบ Doxorubicin || [MED32] 12.chemotherapy ตัวไหนทีทําให ้เกิด cardiomyopathy\nตอบ Doxorubicin"
+ },
+ {
+  "id": "ON-OLDP-011",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Which chemotherapeutic agent is classically associated with pulmonary toxicity (interstitial pneumonitis progressing to pulmonary fibrosis)?",
+  "choices": [
+   "Bleomycin",
+   "Doxorubicin",
+   "Cisplatin",
+   "Vincristine",
+   "Cyclophosphamide"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Bleomycin — เป็นยาเคมีบำบัดที่ขึ้นชื่อเรื่องพิษต่อปอด (bleomycin-induced pneumonitis → pulmonary fibrosis)\n\nกลไก: ปอดและผิวหนังมีเอนไซม์ bleomycin hydrolase ต่ำ ยาจึงคั่งอยู่ในเนื้อเยื่อ แล้วจับกับ Fe2+ และ O2 เกิด free radical / reactive oxygen species ทำลาย type I pneumocyte และ capillary endothelium → interstitial pneumonitis → collagen deposition → pulmonary fibrosis\nปัจจัยเสี่ยง: cumulative dose สูง (> 400 units), อายุมาก (> 70 ปี), GFR ต่ำ, ฉายรังสีบริเวณทรวงอกร่วม และการได้รับ O2 ความเข้มข้นสูง (สำคัญมากเวลาดมยาสลบ)\nอาการ/การติดตาม: เหนื่อยหอบ ไอแห้ง ฟังได้ bibasilar crackles; CXR/HRCT เป็น bilateral basal reticular-ground glass; DLCO ลดลงก่อนมีอาการ จึงใช้ติดตามพิษ\n\nเหตุที่ตัวเลือกอื่นผิด:\n- Doxorubicin → dose-dependent cardiomyopathy/heart failure (ไม่ใช่ปอด)\n- Cisplatin → nephrotoxicity, ototoxicity, peripheral neuropathy, hypomagnesaemia/hypokalaemia\n- Vincristine → peripheral neuropathy, paralytic ileus และเป็น vesicant\n- Cyclophosphamide → haemorrhagic cystitis, SIADH, gonadal toxicity (พิษต่อปอดพบได้แต่น้อยมากและไม่ใช่ classic)\nหมายเหตุ: ยาอื่นที่ทำให้ปอด fibrosis ได้และควรรู้คือ busulfan และ methotrexate",
+  "src": "MED32 · 82. มีอาการทาง pulmonary เกิดจากการใช ้ยา chemotherapy อะไร → Ans : Bleomycin"
+ },
+ {
+  "id": "ON-OLDP-012",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Which malignancy shows the best response to chemotherapy?",
+  "choices": [
+   "Testicular cancer (germ cell tumour)",
+   "Renal cell carcinoma",
+   "Hepatocellular carcinoma",
+   "Pancreatic adenocarcinoma",
+   "Malignant melanoma"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Testicular cancer\n\nกลไก: germ cell tumour ของอัณฑะเป็นต้นแบบของมะเร็งที่ไวต่อยาเคมีบำบัดมากที่สุด เพราะเซลล์แบ่งตัวเร็ว มี apoptotic threshold ต่ำ ยังคง wild-type p53 และมีความสามารถซ่อมแซม DNA cross-link ที่จำกัด จึงตอบสนองอย่างมากต่อสูตร cisplatin-based (BEP) แม้ระยะแพร่กระจายก็ยังหายขาดได้ (cure rate ราว 80-90% ใน metastatic disease) ทำให้ใช้เป็นตัวอย่างคลาสสิกของคำว่า chemocurable solid tumour\n\nทำไมตัวเลือกอื่นผิด: Renal cell carcinoma ขึ้นชื่อว่าดื้อยาเคมีบำบัด (P-glycoprotein/MDR-1 สูง) ต้องใช้ targeted therapy หรือ immunotherapy; Hepatocellular carcinoma ตอบสนองต่อยาเคมีบำบัดต่ำและมักมีตับแข็งจำกัดการให้ยา จึงใช้ TACE หรือ systemic targeted/immunotherapy; Pancreatic adenocarcinoma มี dense stroma ทำให้ยาเข้าถึงก้อนได้น้อยและ response rate ต่ำ พยากรณ์โรคแย่; Malignant melanoma ตอบสนองต่อ dacarbazine เพียงประมาณ 10-20% ปัจจุบันจึงใช้ immune checkpoint inhibitor หรือ BRAF/MEK inhibitor เป็นหลัก (หมายเหตุ: มะเร็งทางโลหิตวิทยาบางชนิดเช่น lymphoma และ ALL ก็ไวต่อยาเคมีบำบัดมาก แต่ในบริบทของโจทย์ที่เทียบมะเร็งก้อนคำตอบคือ testicular cancer)",
+  "src": "MED32 · MED32: Loop นี · [MED32] 14.ตอบสนองต่อ chemotherapy ดีทีสุด : testicular cancer"
+ },
+ {
+  "id": "ON-OLDP-013",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Which of the following cancer screening tests has been shown to reduce mortality?",
+  "choices": [
+   "Mammography for breast cancer",
+   "Breast self-examination",
+   "Chest radiography for lung cancer in smokers",
+   "Serum CA-125 with transvaginal ultrasound for ovarian cancer",
+   "Urine cytology for bladder cancer"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Mammography (screening mammogram)\n\nเหตุผล: mammography เป็นหนึ่งใน screening ไม่กี่อย่างที่มีหลักฐานระดับ randomized controlled trial และ meta-analysis ว่าลด breast-cancer mortality ได้จริง ประมาณ 20% ในหญิงอายุ 50–69 ปี (แนวทางส่วนใหญ่แนะนำทุก 1–2 ปีในช่วงอายุ 40–74 ปีตามการชั่งน้ำหนักประโยชน์กับ overdiagnosis) กลไกที่ได้ผลคือ mammogram ตรวจพบ mammographic abnormality ในระยะ preclinical ที่ยังเป็น in situ หรือก้อนเล็กไม่ลุกลามต่อมน้ำเหลือง ซึ่งเป็นช่วงที่การรักษาเปลี่ยนผลลัพธ์ได้ จึงลดการเสียชีวิต ไม่ใช่เพียงเลื่อนเวลาวินิจฉัย (หลีกเลี่ยง lead-time และ length-time bias ได้เพราะออกแบบเป็น RCT วัด mortality เป็น endpoint)\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Breast self-examination: RCT ขนาดใหญ่ในเซี่ยงไฮ้พบว่าไม่ลด breast-cancer mortality เพียงเพิ่มการตรวจชิ้นเนื้อ benign ที่ไม่จำเป็น ปัจจุบันจึงไม่แนะนำเป็น screening (สอนเป็น breast awareness ได้)\n- Chest radiography ในผู้สูบบุหรี่: Mayo Lung Project และ PLCO แสดงว่า CXR (ร่วมกับ sputum cytology) ไม่ลดอัตราตายจากมะเร็งปอด การ screening ที่ลด mortality คือ low-dose CT ตาม NLST/NELSON\n- CA-125 + transvaginal ultrasound: UKCTOCS และ PLCO ไม่พบการลด ovarian-cancer mortality มีแต่ false positive และการผ่าตัดที่ไม่จำเป็น\n- Urine cytology สำหรับมะเร็งกระเพาะปัสสาวะ: ความไว/ความจำเพาะไม่พอ ไม่มีหลักฐานว่าลดอัตราตาย ไม่แนะนำในประชากรทั่วไป\n\nหมายเหตุ: โพยบันทึกสั้นมาก (\"Screening decrease mortality > mammogram\") จึงเรียบเรียง stem ให้ตรงกับคำตอบที่บันทึก และเจตนาเลือกตัวลวงเป็น screening ที่ไม่มีหลักฐานลดอัตราตาย เพราะ screening อื่นอย่าง Pap smear/HPV test, FIT/colonoscopy และ low-dose CT ก็ลด mortality เช่นกัน หากนำมาเป็นตัวลวงจะทำให้มีคำตอบถูกซ้อนกัน",
+  "src": "MED34 · [MED34] 54. Screening decrease mortality > mammogram"
+ },
+ {
+  "id": "ON-OLDP-014",
+  "lec": "O01",
+  "lecture": "มะเร็งวิทยา: หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (ยังไม่ระบุคาบ)",
+  "q": "Which of the following is NOT a feature of tumor lysis syndrome?",
+  "choices": [
+   "Hypercalcaemia",
+   "Hyperkalaemia",
+   "Hyperphosphataemia",
+   "Hyperuricaemia",
+   "Acute kidney injury"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Hypercalcaemia เป็นข้อที่ผิด — TLS ทำให้เกิด hypocalcaemia ไม่ใช่ hypercalcaemia\n\nกลไก: เมื่อเซลล์มะเร็งแตกพร้อมกันจำนวนมาก สารในเซลล์ถูกปล่อยออกมาตามสัดส่วนที่อยู่ในเซลล์ คือ โพแทสเซียม (hyperkalaemia), ฟอสเฟต (hyperphosphataemia) และกรดนิวคลีอิกที่ถูกย่อยผ่าน xanthine oxidase เป็น uric acid (hyperuricaemia) ฟอสเฟตที่สูงจะจับกับแคลเซียมอิสระตกตะกอนเป็น calcium-phosphate ทำให้ ionized calcium ในเลือด \"ลดลง\" จึงเกิด hypocalcaemia (paresthesia, tetany, QT ยาว, ชัก) ผลึก uric acid และ calcium-phosphate ที่ตกใน renal tubule ทำให้เกิด AKI ซึ่งเป็นเกณฑ์ clinical TLS ตาม Cairo-Bishop ร่วมกับ arrhythmia และ seizure\n\nทำไมตัวเลือกอื่นไม่ใช่คำตอบ: hyperkalaemia, hyperphosphataemia, hyperuricaemia และ acute kidney injury ล้วนเป็นลักษณะจริงของ TLS (สามข้อแรกคือ laboratory TLS ร่วมกับ hypocalcaemia, ข้อสุดท้ายคือ clinical TLS) จึงไม่ใช่ \"ข้อที่ผิด\" ที่โจทย์ถาม\n\nข้อควรระวังในการอ่านโจทย์: คำถามเป็นแบบ negative stem (ข้อใดผิด) คำตอบที่ถูกต้องคือข้อที่ \"ไม่เข้ากับโรค\"",
+  "src": "MED34 · ข ้อสอบ MED ครั้งที่2 · [MED34] 12. Tumor lysis syndrome ข ้อใดผิด\nตอบ hypercalcemia"
+ }
+]
