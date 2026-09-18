@@ -1242,13 +1242,13 @@ NL: 2.1.27 ปวดข้อ ข้อฝืด ข้อติด (joint pain,
 
 A 45-year-old man presents with acute arthritis. Which of the following history items is most important to obtain?
 
-A. Only current occupation
-B. Sexual history, alcohol intake, recent infection and family history of arthritis
-C. Only a history of previous trauma
-D. Only the response to paracetamol
+A. Sexual history, alcohol intake, recent infection and family history of arthritis
+B. Only the response to paracetamol
+C. Only current occupation
+D. Only a history of previous trauma
 E. Only the duration of pain
 
-ANSWER: B. Sexual history, alcohol intake, recent infection and family history of arthritis
+ANSWER: A. Sexual history, alcohol intake, recent infection and family history of arthritis
 
 EXPLAIN:
 โพยเก่าตอบ **'sex, drinking, smoking, family'** — เหตุผลคือประวัติแต่ละข้อชี้โรคคนละโรค: **เพศสัมพันธ์** → gonococcal arthritis และ reactive arthritis, **สุรา** → เก๊าท์และ osteonecrosis, **การติดเชื้อทางเดินอาหาร/ปัสสาวะนำมาก่อน** → reactive arthritis, **ประวัติครอบครัว** → RA, spondyloarthropathy, สะเก็ดเงิน; บวก **ยาที่ใช้** (thiazide, pyrazinamide) และ **ประวัติฉีดยาเข้าเส้น**
@@ -1366,13 +1366,13 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 
 A 50-year-old man with acute pain of the first metatarsophalangeal joint has synovial fluid showing needle-shaped, strongly negatively birefringent crystals. What is the diagnosis?
 
-A. Osteoarthritis with effusion
-B. Pseudogout
+A. Psoriatic arthritis
+B. Acute gouty arthritis
 C. Reactive arthritis
-D. Acute gouty arthritis
-E. Psoriatic arthritis
+D. Osteoarthritis with effusion
+E. Pseudogout
 
-ANSWER: D. Acute gouty arthritis
+ANSWER: B. Acute gouty arthritis
 
 EXPLAIN:
 **เข็ม + negative birefringent (เหลืองเมื่อขนานแกน compensator) = monosodium urate → gout**; ตำแหน่งโคนนิ้วหัวแม่เท้าเรียก **podagra**; การพบผลึก **ภายในเซลล์เม็ดเลือดขาว** ยืนยันว่าเป็นสาเหตุของการอักเสบครั้งนี้จริง
@@ -1417,11 +1417,11 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 
 Which drug is the most appropriate first-line treatment for an acute gout flare in a patient with peptic ulcer disease?
 
-A. Allopurinol
-B. Naproxen
+A. Naproxen
+B. Indomethacin
 C. Colchicine
-D. Aspirin
-E. Indomethacin
+D. Allopurinol
+E. Aspirin
 
 ANSWER: C. Colchicine
 
@@ -1528,10 +1528,10 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · B5.4(4) Drugs for treatm
 Which of the following is an indication to start urate-lowering therapy?
 
 A. Presence of tophi or two or more gout flares per year
-B. A single gout flare in a young patient
-C. Family history of gout alone
-D. Dietary purine excess alone
-E. Asymptomatic hyperuricemia of 8 mg/dL
+B. Asymptomatic hyperuricemia of 8 mg/dL
+C. A single gout flare in a young patient
+D. Family history of gout alone
+E. Dietary purine excess alone
 
 ANSWER: A. Presence of tophi or two or more gout flares per year
 
@@ -1576,10 +1576,10 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 A patient on anti-tuberculous therapy develops joint pain with a serum uric acid of 10 mg/dL. Which drug is responsible?
 
 A. Pyrazinamide
-B. Rifampicin
+B. Isoniazid
 C. Ethionamide
 D. Streptomycin
-E. Isoniazid
+E. Rifampicin
 
 ANSWER: A. Pyrazinamide
 
@@ -1656,13 +1656,13 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 
 Which radiographic finding is most characteristic of long-standing tophaceous gout?
 
-A. Bamboo spine
-B. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
-C. Marginal erosion with periarticular osteopenia and uniform joint space narrowing
-D. Chondrocalcinosis of the menisci
+A. Marginal erosion with periarticular osteopenia and uniform joint space narrowing
+B. Chondrocalcinosis of the menisci
+C. Bamboo spine
+D. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
 E. Osteophyte with subchondral sclerosis
 
-ANSWER: B. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
+ANSWER: D. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
 
 EXPLAIN:
 **Punched-out erosion + overhanging edge + ช่องข้อกว้างปกติ = chronic gout**; marginal erosion + periarticular osteopenia = RA; osteophyte = OA; **chondrocalcinosis = CPPD**; bamboo spine = ankylosing spondylitis
@@ -1808,11 +1808,11 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 
 Synovial fluid from a painful knee contains rhomboid-shaped crystals that are weakly positively birefringent under polarized light. What is the diagnosis?
 
-A. Gout
-B. Hydroxyapatite deposition disease
+A. Rheumatoid arthritis
+B. Septic arthritis
 C. Calcium pyrophosphate deposition disease (pseudogout)
-D. Rheumatoid arthritis
-E. Septic arthritis
+D. Hydroxyapatite deposition disease
+E. Gout
 
 ANSWER: C. Calcium pyrophosphate deposition disease (pseudogout)
 
@@ -1829,10 +1829,10 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 In the same patient with pseudogout of the knee, which additional synovial fluid profile is expected?
 
 A. Inflammatory fluid with WBC 2,000-50,000/mm3, predominantly neutrophils, and reduced viscosity
-B. Clear fluid with normal viscosity and WBC below 200/mm3
-C. Purulent fluid with WBC above 100,000/mm3 and positive Gram stain
-D. Bloody fluid with fat globules
-E. Non-inflammatory fluid with WBC below 2,000/mm3 and high viscosity
+B. Non-inflammatory fluid with WBC below 2,000/mm3 and high viscosity
+C. Bloody fluid with fat globules
+D. Purulent fluid with WBC above 100,000/mm3 and positive Gram stain
+E. Clear fluid with normal viscosity and WBC below 200/mm3
 
 ANSWER: A. Inflammatory fluid with WBC 2,000-50,000/mm3, predominantly neutrophils, and reduced viscosity
 
@@ -1877,13 +1877,13 @@ NL: B5.2.5(1) Crystal arthropathy (gout, pseudogout) · 2.3.13(2) Crystal arthro
 
 A 70-year-old man on hemodialysis develops an acutely painful shoulder. Aspiration shows no crystals under polarized light but the fluid contains clumps that stain with alizarin red. What is the most likely diagnosis?
 
-A. Basic calcium phosphate (hydroxyapatite) associated arthritis
+A. Gout
 B. Rotator cuff tear
 C. Septic arthritis
-D. Pseudogout
-E. Gout
+D. Basic calcium phosphate (hydroxyapatite) associated arthritis
+E. Pseudogout
 
-ANSWER: A. Basic calcium phosphate (hydroxyapatite) associated arthritis
+ANSWER: D. Basic calcium phosphate (hydroxyapatite) associated arthritis
 
 EXPLAIN:
 **Hydroxyapatite ไม่หักเหแสงใน polarized light จึง 'มองไม่เห็น' ต้องย้อม alizarin red** — พบในผู้ป่วยไตวายเรื้อรังและกลุ่มอาการ **Milwaukee shoulder** (ข้อไหล่ถูกทำลายพร้อมน้ำในข้อปริมาณมาก); รักษาตามอาการด้วย NSAID/สเตียรอยด์และคุมสมดุลแคลเซียม-ฟอสเฟต
@@ -2039,13 +2039,13 @@ NL: 2.3.13-3(6) Infective arthritis · B5.2.2-3(1) Infective arthritis · B5.3(3
 
 A patient with a hot swollen knee has synovial fluid Gram stain showing gram-positive cocci in clusters. What is the most appropriate antibiotic?
 
-A. Oral doxycycline
-B. Intravenous ceftriaxone
-C. Intravenous cloxacillin
-D. Intravenous metronidazole
-E. Oral amoxicillin
+A. Intravenous metronidazole
+B. Intravenous cloxacillin
+C. Oral amoxicillin
+D. Oral doxycycline
+E. Intravenous ceftriaxone
 
-ANSWER: C. Intravenous cloxacillin
+ANSWER: B. Intravenous cloxacillin
 
 EXPLAIN:
 **GPC in clusters = Staphylococcus aureus** ซึ่งเป็นเชื้อที่พบบ่อยที่สุดของ septic arthritis ในผู้ใหญ่ → **cloxacillin หรือ cefazolin สำหรับ MSSA** (ถ้าเสี่ยง MRSA ให้ vancomycin ไปก่อน) และต้อง **ระบายหนองออกจากข้อ** ควบคู่เสมอ มิฉะนั้นกระดูกอ่อนถูกทำลายถาวร
@@ -2059,11 +2059,11 @@ NL: 2.3.13-3(6) Infective arthritis · B5.2.2-3(1) Infective arthritis · B5.3(3
 
 A 30-year-old sexually active man has migratory polyarthralgia, tenosynovitis of the wrist and a few pustular skin lesions, then develops a hot swollen knee. What is the most likely organism?
 
-A. Salmonella species
-B. Mycobacterium tuberculosis
+A. Mycobacterium tuberculosis
+B. Staphylococcus aureus
 C. Neisseria gonorrhoeae
-D. Streptococcus pyogenes
-E. Staphylococcus aureus
+D. Salmonella species
+E. Streptococcus pyogenes
 
 ANSWER: C. Neisseria gonorrhoeae
 
@@ -2082,8 +2082,8 @@ A patient with septic arthritis on intravenous cloxacillin for 12 days is clinic
 A. Recognize drug-induced neutropenia and switch to another effective antibiotic class with monitoring
 B. Continue the same antibiotic and repeat the count in 1 month
 C. Stop all antibiotics and observe
-D. Add granulocyte colony-stimulating factor and continue the same drug
-E. Perform bone marrow biopsy before any change
+D. Perform bone marrow biopsy before any change
+E. Add granulocyte colony-stimulating factor and continue the same drug
 
 ANSWER: A. Recognize drug-induced neutropenia and switch to another effective antibiotic class with monitoring
 
@@ -2197,11 +2197,11 @@ NL: B5.2.7(1) Osteoarthritis · 2.3.13(5) Osteoarthritis · 2.1.27 ปวดข�
 
 A 60-year-old woman has bilateral knee pain worse with walking, relieved by rest, with 10 minutes of morning stiffness and bony enlargement of the distal interphalangeal joints. ANA and rheumatoid factor are negative. Radiograph shows joint space narrowing with osteophytes. What is the diagnosis?
 
-A. Psoriatic arthritis
-B. Rheumatoid arthritis
+A. Systemic lupus erythematosus
+B. Polymyalgia rheumatica
 C. Osteoarthritis
-D. Polymyalgia rheumatica
-E. Systemic lupus erythematosus
+D. Psoriatic arthritis
+E. Rheumatoid arthritis
 
 ANSWER: C. Osteoarthritis
 
@@ -2353,13 +2353,13 @@ NL: B5.2.2-3(3) Spondyloarthropathies (e.g., ankylosing spondylitis, reactive ar
 
 A patient with acute pericarditis has pleuritic chest pain relieved by leaning forward. Which drug combination is first-line?
 
-A. Colchicine alone
+A. Aspirin or an NSAID plus colchicine
 B. Anticoagulant plus an NSAID
 C. Antibiotics alone
-D. Aspirin or an NSAID plus colchicine
+D. Colchicine alone
 E. Corticosteroid alone
 
-ANSWER: D. Aspirin or an NSAID plus colchicine
+ANSWER: A. Aspirin or an NSAID plus colchicine
 
 EXPLAIN:
 โพยเก่าให้ตัวเลือก 'colchicine alone' กับ 'ASA + colchicine' — **คำตอบคือ NSAID/aspirin ร่วมกับ colchicine** เพราะ colchicine ลดอาการและลดการเป็นซ้ำอย่างชัดเจน (ESC 2015) ส่วน **สเตียรอยด์เพิ่มการกลับเป็นซ้ำ** จึงสงวนไว้เมื่อมีข้อห้ามหรือเป็นจากโรคภูมิต้านตนเอง และ **ห้ามให้ยาต้านการแข็งตัวของเลือดโดยไม่จำเป็น** เพราะเสี่ยง hemopericardium
@@ -2641,9 +2641,9 @@ Which antibody pattern is most specific for systemic lupus erythematosus?
 
 A. Anti-Smith and anti-double-stranded DNA
 B. Anti-Jo-1 and anti-Mi-2
-C. Anti-mitochondrial and anti-smooth muscle
+C. Anti-Scl-70 and anticentromere
 D. Rheumatoid factor and anti-CCP
-E. Anti-Scl-70 and anticentromere
+E. Anti-mitochondrial and anti-smooth muscle
 
 ANSWER: A. Anti-Smith and anti-double-stranded DNA
 
@@ -2826,10 +2826,10 @@ NL: 2.3.13-3(15) Systemic lupus erythematosus · B5.2.2-3(5) Systemic lupus eryt
 A woman with SLE and lupus nephritis wishes to become pregnant. Which drug must be stopped and replaced before conception?
 
 A. Calcium and vitamin D supplements
-B. Prednisolone, stopped completely
+B. Low-dose aspirin, stopped without replacement
 C. Mycophenolate mofetil, replaced by azathioprine
-D. Low-dose aspirin, stopped without replacement
-E. Hydroxychloroquine, replaced by no alternative
+D. Hydroxychloroquine, replaced by no alternative
+E. Prednisolone, stopped completely
 
 ANSWER: C. Mycophenolate mofetil, replaced by azathioprine
 
@@ -3424,13 +3424,13 @@ NL: 2.3.13-3(8) Osteonecrosis · 2.3.13-3(15) Systemic lupus erythematosus · B5
 
 A 34-year-old woman with SLE on long-term high-dose prednisolone develops progressive right groin pain on weight bearing. Hip radiograph is normal. What is the most appropriate next investigation?
 
-A. Hip joint aspiration
-B. Serum uric acid
-C. Repeat plain radiograph in 3 months
-D. MRI of both hips
-E. Bone mineral density
+A. Serum uric acid
+B. Bone mineral density
+C. MRI of both hips
+D. Hip joint aspiration
+E. Repeat plain radiograph in 3 months
 
-ANSWER: D. MRI of both hips
+ANSWER: C. MRI of both hips
 
 EXPLAIN:
 **Osteonecrosis ของหัวกระดูกต้นขาจากสเตียรอยด์** — ฟิล์มธรรมดาปกติในระยะแรกเสมอ **MRI ไวที่สุดและต้องถ่ายทั้งสองข้าง** เพราะเป็นสองข้างได้ 50-80%; ถ้าจับได้ก่อนหัวกระดูกยุบยังมีทางรักษาข้อไว้ได้
@@ -3585,12 +3585,12 @@ NL: B4.2.2-3(9) Scleroderma · B5.3(5) Serologic studies: antinuclear antibody (
 A patient with features of systemic sclerosis has a negative ANA on the standard screening assay. Which test should be sent next?
 
 A. Anti-double-stranded DNA
-B. Erythrocyte sedimentation rate
-C. Anti-histone antibody
-D. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+B. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+C. Erythrocyte sedimentation rate
+D. Anti-histone antibody
 E. Rheumatoid factor
 
-ANSWER: D. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+ANSWER: B. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
 
 EXPLAIN:
 โพยเก่าให้ตัวเลือก ESR / anti-dsDNA / RF — ทั้งสามไม่ช่วยวินิจฉัย systemic sclerosis; **ANA ที่ลบไม่ตัดโรคออกเมื่อคลินิกชัด** ต้องส่ง **antibody จำเพาะ**: anti-Scl-70 (สัมพันธ์กับ ILD), anticentromere (limited SSc, ความดันปอดสูง), anti-RNA polymerase III (renal crisis) และประเมินอวัยวะด้วย HRCT, PFT, echocardiography
@@ -3632,13 +3632,13 @@ NL: B4.2.2-3(9) Scleroderma · 2.3.13-3(15) Systemic lupus erythematosus
 
 A patient with diffuse systemic sclerosis recently started on prednisolone develops blood pressure 210/120 mmHg, acute kidney injury and schistocytes on blood smear. Which drug should be started immediately?
 
-A. Captopril
-B. Labetalol
-C. Nifedipine
+A. Labetalol
+B. Captopril
+C. Furosemide
 D. Hydralazine
-E. Furosemide
+E. Nifedipine
 
-ANSWER: A. Captopril
+ANSWER: B. Captopril
 
 EXPLAIN:
 **Scleroderma renal crisis** เกิดจาก renin-angiotensin ที่ถูกกระตุ้นอย่างรุนแรง — **ACE inhibitor ออกฤทธิ์สั้น (captopril) คือยาที่ช่วยชีวิต** ปรับขนาดขึ้นเร็วทุก 4-8 ชั่วโมง **ห้ามหยุดแม้ creatinine จะสูงขึ้นในช่วงแรก**; **สเตียรอยด์ตั้งแต่ 15 mg/วันขึ้นไปเป็นตัวกระตุ้นสำคัญ** จึงควรเลี่ยงใน SSc
@@ -3801,8 +3801,8 @@ NL: B5.2.2-3(2) Polymyositis, dermatomyositis · 2.3.13-3(10) Polymyositis, derm
 A 55-year-old woman has proximal muscle weakness, a violaceous periorbital rash and scaly papules over the knuckles. Apart from treating the myositis, what must not be missed?
 
 A. Screening for an underlying malignancy
-B. Screening for iron deficiency
-C. Screening for hepatitis A
+B. Screening for hepatitis A
+C. Screening for iron deficiency
 D. Screening for diabetes mellitus
 E. Screening for osteoporosis before treatment
 
@@ -3820,13 +3820,13 @@ NL: B5.2.2-3(2) Polymyositis, dermatomyositis · 2.3.13-3(10) Polymyositis, derm
 
 A patient has proximal muscle weakness with AST 1,000 U/L but normal ALT, ALP and GGT. What is the most appropriate next investigation?
 
-A. Serum ammonia
-B. Liver biopsy
-C. Creatine kinase
+A. Abdominal ultrasound
+B. Creatine kinase
+C. Serum ammonia
 D. Hepatitis serology
-E. Abdominal ultrasound
+E. Liver biopsy
 
-ANSWER: C. Creatine kinase
+ANSWER: B. Creatine kinase
 
 EXPLAIN:
 **AST อยู่ในกล้ามเนื้อลายด้วย** จึงสูงได้จากโรคกล้ามเนื้อโดยที่ตับปกติ — เบาะแสคือ **ALP และ GGT ปกติ** และมีอาการอ่อนแรงส่วนต้น ให้ยืนยันด้วย **CK (และ aldolase)** ก่อนจะไปสืบค้นตับหรือเจาะตับโดยไม่จำเป็น
@@ -3874,12 +3874,12 @@ NL: 2.1.26 ปวดกล้ามเนื้อ ปวดกระดูก (
 A 58-year-old man on simvastatin complains of symmetric proximal muscle aching. Which investigation should be ordered first?
 
 A. Electromyography
-B. Nerve conduction study
+B. Serum creatine kinase
 C. Serum aldolase only
-D. Serum creatine kinase
-E. Muscle biopsy
+D. Muscle biopsy
+E. Nerve conduction study
 
-ANSWER: D. Serum creatine kinase
+ANSWER: B. Serum creatine kinase
 
 EXPLAIN:
 โพยเก่าตอบ **CPK (creatine kinase)** — เป็นตัวแยกระหว่าง myalgia (CK ปกติ), myopathy (CK สูง > 10 เท่า), **rhabdomyolysis** (CK สูงมาก + ปัสสาวะสีเข้ม + ไตวาย) และ immune-mediated necrotizing myopathy (CK สูงและไม่ดีขึ้นหลังหยุดยา → ส่ง anti-HMGCR); อย่าลืมตรวจ **TSH** และทบทวนยาที่ยับยั้ง CYP3A4 เช่น clarithromycin, itraconazole, gemfibrozil
@@ -4155,13 +4155,13 @@ NL: B5.2.2-3(2b) Vasculitis syndrome (e.g., Kawasaki disease, polyarteritis nodo
 
 A 72-year-old woman has new temporal headache, scalp tenderness, jaw claudication and ESR 95 mm/hr. Vision is normal. What should be done first?
 
-A. Arrange temporal artery biopsy and wait for the result before treatment
-B. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
-C. Start an NSAID and review in 1 week
-D. Arrange CT brain and treat only if abnormal
-E. Start low-dose prednisolone 10 mg daily
+A. Start low-dose prednisolone 10 mg daily
+B. Arrange CT brain and treat only if abnormal
+C. Arrange temporal artery biopsy and wait for the result before treatment
+D. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
+E. Start an NSAID and review in 1 week
 
-ANSWER: B. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
+ANSWER: D. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
 
 EXPLAIN:
 **Giant cell arteritis เป็นภาวะฉุกเฉินทางตา** — ตาบอดถาวรเกิดได้ภายในไม่กี่ชั่วโมงถึงวัน จึง **ให้สเตียรอยด์ก่อน แล้วค่อยตัดชิ้นเนื้อภายใน 1-2 สัปดาห์** ซึ่งยังให้ผลบวกได้; **jaw claudication เป็นอาการที่มี likelihood ratio สูงที่สุด** ของโรคนี้
@@ -4176,12 +4176,12 @@ NL: B5.2.2-3(2b) Vasculitis syndrome (e.g., Kawasaki disease, polyarteritis nodo
 A 68-year-old woman has 2 months of bilateral shoulder and hip girdle aching with prolonged morning stiffness, ESR 88 mm/hr, normal creatine kinase and no true weakness on testing. What is the most likely diagnosis and treatment?
 
 A. Polymyositis; high-dose prednisolone plus methotrexate
-B. Hypothyroid myopathy; levothyroxine
+B. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
 C. Fibromyalgia; exercise and amitriptyline
-D. Osteoarthritis of both shoulders; NSAID
-E. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
+D. Hypothyroid myopathy; levothyroxine
+E. Osteoarthritis of both shoulders; NSAID
 
-ANSWER: E. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
+ANSWER: B. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
 
 EXPLAIN:
 **PMR: ปวดเมื่อยไหล่และสะโพกสองข้าง ฝืดเช้านาน ESR สูงมาก แต่ CK ปกติและไม่มีอ่อนแรงจริง** (ขยับไม่ไหวเพราะเจ็บ ไม่ใช่แรงตก) — ตอบสนองต่อ prednisolone ขนาดต่ำอย่างรวดเร็วภายใน 24-72 ชั่วโมง (ถ้าไม่ตอบสนองให้ทบทวนการวินิจฉัย); **ต้องถามอาการของ giant cell arteritis ทุกครั้ง** เพราะพบร่วมกันได้ ~15%
@@ -4265,12 +4265,12 @@ NL: B5.2.2-3(2b) Vasculitis syndrome (e.g., Kawasaki disease, polyarteritis nodo
 A 56-year-old man with chronic sinusitis and bloody nasal discharge develops hemoptysis, cavitating lung nodules and glomerulonephritis with red cell casts. Which antibody is most likely to be positive?
 
 A. Anti-glomerular basement membrane antibody
-B. Anti-proteinase 3 (c-ANCA)
-C. Anti-centromere antibody
-D. Anti-double-stranded DNA
-E. Anti-mitochondrial antibody
+B. Anti-centromere antibody
+C. Anti-double-stranded DNA
+D. Anti-mitochondrial antibody
+E. Anti-proteinase 3 (c-ANCA)
 
-ANSWER: B. Anti-proteinase 3 (c-ANCA)
+ANSWER: E. Anti-proteinase 3 (c-ANCA)
 
 EXPLAIN:
 **ทางเดินหายใจส่วนบน + ปอดเป็นโพรง + ไตอักเสบ = granulomatosis with polyangiitis → c-ANCA (anti-PR3)**; anti-GBM (Goodpasture) ไม่เข้าไซนัสและไม่ทำให้เกิดโพรงในปอด; SLE จะมี complement ต่ำและอาการหลายระบบอื่น — เป็น **pulmonary-renal syndrome** ที่ต้องรีบให้สเตียรอยด์ขนาดสูงร่วมกับ rituximab หรือ cyclophosphamide
@@ -4317,12 +4317,12 @@ NL: 2.3.13-3(2) Allergic purpura (Henoch-Schonlein purpura) · B5.2.2-3(2b) Vasc
 A 19-year-old man has palpable purpura over both legs and buttocks, colicky abdominal pain, arthralgia and hematuria one week after an upper respiratory infection. Platelet count and coagulation tests are normal. What is the diagnosis?
 
 A. Disseminated intravascular coagulation
-B. IgA vasculitis (Henoch-Schonlein purpura)
-C. Acute rheumatic fever
+B. Immune thrombocytopenia
+C. IgA vasculitis (Henoch-Schonlein purpura)
 D. Meningococcemia
-E. Immune thrombocytopenia
+E. Acute rheumatic fever
 
-ANSWER: B. IgA vasculitis (Henoch-Schonlein purpura)
+ANSWER: C. IgA vasculitis (Henoch-Schonlein purpura)
 
 EXPLAIN:
 **Palpable purpura + เกล็ดเลือดปกติ = vasculitis ไม่ใช่ความผิดปกติของเกล็ดเลือด**; tetrad ของ IgA vasculitis คือ purpura ที่ขาและก้น + ปวดข้อ + ปวดท้อง + ไตอักเสบ — **ไตเป็นตัวกำหนดพยากรณ์โรค** ต้องตรวจปัสสาวะและความดันเป็นระยะหลายเดือน
@@ -4429,13 +4429,13 @@ NL: 2.3.13-3(12) Rheumatoid arthritis · B5.2.2-3(4) Rheumatoid arthritis · B5.
 
 A 46-year-old woman has symmetric swelling of the MCP and PIP joints of both hands with morning stiffness of more than 30 minutes for 4 months. What is the most likely diagnosis?
 
-A. Rheumatoid arthritis
-B. Reactive arthritis
+A. Reactive arthritis
+B. Septic arthritis
 C. Gouty arthritis
-D. Septic arthritis
+D. Rheumatoid arthritis
 E. Osteoarthritis
 
-ANSWER: A. Rheumatoid arthritis
+ANSWER: D. Rheumatoid arthritis
 
 EXPLAIN:
 **ข้อเล็กสองข้างสมมาตร + ฝืดเช้านาน + เป็นเรื้อรังเกิน 6 สัปดาห์ = RA**; โพยเก่าใช้เกณฑ์ 'morning stiffness > 30 นาที' แต่เกณฑ์ ACR/EULAR 2010 ให้น้ำหนักกับ **จำนวนและขนาดของข้อที่บวม ระยะเวลา ≥ 6 สัปดาห์ RF/anti-CCP และ ESR/CRP** — ฝืดเช้าเป็นเพียงลักษณะประกอบที่บ่งว่าเป็น inflammatory
@@ -4449,13 +4449,13 @@ NL: 2.3.13-3(12) Rheumatoid arthritis · B5.2.2-3(4) Rheumatoid arthritis · 2.1
 
 Which conventional DMARD is the anchor drug for newly diagnosed rheumatoid arthritis, and how is it given?
 
-A. Prednisolone 10 mg daily as monotherapy
-B. Methotrexate, given once weekly with folic acid supplementation
-C. Allopurinol 100 mg daily
-D. Colchicine 0.6 mg twice daily
-E. Methotrexate, given once daily with folic acid
+A. Methotrexate, given once weekly with folic acid supplementation
+B. Prednisolone 10 mg daily as monotherapy
+C. Methotrexate, given once daily with folic acid
+D. Allopurinol 100 mg daily
+E. Colchicine 0.6 mg twice daily
 
-ANSWER: B. Methotrexate, given once weekly with folic acid supplementation
+ANSWER: A. Methotrexate, given once weekly with folic acid supplementation
 
 EXPLAIN:
 **Methotrexate สัปดาห์ละครั้ง** (การสั่งเป็นทุกวันเป็นความผิดพลาดที่ทำให้เกิด pancytopenia และเสียชีวิตได้) ร่วมกับ **folic acid** เพื่อลดแผลในปากและพิษต่อตับ; ติดตาม CBC, LFT, creatinine; **ห้ามในหญิงตั้งครรภ์**; สเตียรอยด์ใช้เป็นสะพานระยะสั้นเท่านั้น
@@ -4500,10 +4500,10 @@ NL: B5.4(3) Disease-modifying antirheumatic drugs (DMARDs) · 2.3.3-3(5) Immune 
 A patient with rheumatoid arthritis on methotrexate develops fever, dry cough and diffuse interstitial infiltrates with leukopenia. What should be done first?
 
 A. Stop methotrexate and evaluate for both opportunistic infection and drug-induced pneumonitis
-B. Add an NSAID and observe
-C. Increase the methotrexate dose for a presumed flare
-D. Give folic acid and continue the same dose
-E. Start an anti-TNF agent immediately
+B. Give folic acid and continue the same dose
+C. Add an NSAID and observe
+D. Start an anti-TNF agent immediately
+E. Increase the methotrexate dose for a presumed flare
 
 ANSWER: A. Stop methotrexate and evaluate for both opportunistic infection and drug-induced pneumonitis
 
@@ -4603,13 +4603,13 @@ NL: B5.2.2-3(3) Spondyloarthropathies (e.g., ankylosing spondylitis, reactive ar
 
 A 27-year-old man has chronic low back pain that improves with exercise, wakes him in the early morning, with morning stiffness of 1 hour and a past episode of acute anterior uveitis. What is the most likely diagnosis?
 
-A. Mechanical low back pain
+A. Axial spondyloarthritis (ankylosing spondylitis)
 B. Lumbar disc herniation
-C. Axial spondyloarthritis (ankylosing spondylitis)
+C. Mechanical low back pain
 D. Vertebral compression fracture
 E. Fibromyalgia
 
-ANSWER: C. Axial spondyloarthritis (ankylosing spondylitis)
+ANSWER: A. Axial spondyloarthritis (ankylosing spondylitis)
 
 EXPLAIN:
 **Inflammatory back pain**: อายุน้อยกว่า 45, ค่อยเป็นค่อยไป, **ดีขึ้นเมื่อขยับ แย่ลงเมื่อพัก**, ตื่นกลางดึกช่วงครึ่งหลัง, ฝืดเช้า > 30 นาที + **uveitis** ซึ่งเป็นอาการนอกข้อที่พบบ่อยที่สุด (สัมพันธ์กับ HLA-B27); รักษาด้วย **ออกกำลังกาย + NSAID เต็มขนาด** และ anti-TNF/anti-IL-17 เมื่อไม่ตอบสนอง — **methotrexate ไม่ได้ผลกับโรคแกนกลาง**
@@ -4684,13 +4684,13 @@ NL: 2.1.1 ไข้ (fever) · 2.1.27 ปวดข้อ ข้อฝืด ข�
 
 A 28-year-old woman has daily evening fever for 3 weeks, an evanescent salmon-coloured rash, sore throat, arthralgia, neutrophilic leukocytosis and ferritin 8,000 ng/mL, with negative ANA, RF and blood cultures. What is the most likely diagnosis?
 
-A. Adult-onset Still disease
+A. Rheumatoid arthritis
 B. Systemic lupus erythematosus
-C. Infective endocarditis
-D. Lymphoma
-E. Rheumatoid arthritis
+C. Lymphoma
+D. Adult-onset Still disease
+E. Infective endocarditis
 
-ANSWER: A. Adult-onset Still disease
+ANSWER: D. Adult-onset Still disease
 
 EXPLAIN:
 **ไข้รายวัน + ผื่นสีปลาแซลมอนที่มาพร้อมไข้ + เจ็บคอ + เม็ดเลือดขาวสูงชนิด neutrophil + ferritin สูงมาก + ANA/RF ลบ = adult-onset Still disease** ซึ่งเป็นการวินิจฉัยแบบตัดโรคอื่นออก (ต้องตัดการติดเชื้อ โดยเฉพาะ endocarditis และวัณโรค กับมะเร็งต่อมน้ำเหลืองออกก่อน); ระวังภาวะแทรกซ้อน **macrophage activation syndrome** เมื่อเม็ดเลือดต่ำลงทุกซีรีส์และ ferritin พุ่งขึ้นอีก
