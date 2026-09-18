@@ -1,0 +1,674 @@
+[
+ {
+  "id": "ID-OLDP-001",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "A 75-year-old woman is brought to the emergency room because of a 2-day history of fever and fatigue. On physical examination, temperature is 38.4°C, pulse 95/min, respiratory rate 22/min, BP 130/70 mmHg, O2 saturation 95% on room air. The leukocyte count is 13,000/µL and urinalysis shows 20–25 leukocytes/HPF. Urine culture and blood culture are both growing E. coli. Which of the following terms best describes this patient's illness?",
+  "choices": [
+   "Sepsis",
+   "Bacteraemia",
+   "Severe sepsis",
+   "Systemic inflammatory response syndrome (SIRS)",
+   "Early sepsis"
+  ],
+  "answer": 0,
+  "note": "เฉลย (ตามกรอบที่ข้อสอบข้อนี้ใช้): Sepsis\n\nกลไก/การให้เหตุผล: ข้อนี้ออกตามนิยาม Sepsis-1/2 (ACCP/SCCM 1991, 2001) ซึ่งวางบันไดเป็น SIRS → sepsis → severe sepsis → septic shock ผู้ป่วยเข้าเกณฑ์ SIRS ครบถึง 4 ข้อ คือ T 38.4°C (>38), HR 95 (>90), RR 22 (>20), WBC 13,000 (>12,000) และมี documented infection ชัดเจนคือ acute pyelonephritis/UTI (pyuria 20–25 WBC/HPF) ที่เพาะขึ้น E. coli ทั้งจากปัสสาวะและเลือด SIRS + การติดเชื้อที่ยืนยันแล้ว = sepsis ส่วนที่ยังไม่ถึง severe sepsis เพราะไม่มี organ dysfunction หรือ hypoperfusion (BP 130/70, O2 sat 95%, ไม่มี altered mentation, ไม่มี lactate สูงหรือ oliguria ที่บันทึกไว้)\n\nข้อควรรู้ที่ขัดกับแนวทางปัจจุบัน — ต้องบอกให้ชัด: นิยาม Sepsis-3 (JAMA 2016) ยกเลิกคำว่า SIRS เป็นเกณฑ์วินิจฉัยและยกเลิกคำ \"severe sepsis\" ไปแล้ว โดยนิยาม sepsis ใหม่ว่า \"infection + life-threatening organ dysfunction\" ซึ่งวัดด้วย SOFA เพิ่มขึ้น ≥2 คะแนน ผู้ป่วยรายนี้ qSOFA ได้เพียง 1 คะแนน (RR ≥22 เท่านั้น; SBP ไม่ ≤100, GCS ปกติ) และไม่มีหลักฐาน organ dysfunction ดังนั้นถ้าตอบตามนิยามปัจจุบันจะจัดเป็น \"E. coli bacteraemia จาก UTI/pyelonephritis โดยยังไม่มี organ dysfunction\" ไม่เรียกว่า sepsis จึงตอบ Bacteraemia ผู้เรียนควรจำทั้งสองกรอบ และดูว่าข้อสอบใช้ชุดคำใด — การมีตัวเลือก \"severe sepsis\" และ \"SIRS\" อยู่ในโพยบ่งว่าเป็นข้อเก่าที่ใช้กรอบ SIRS จึงเฉลยเป็น sepsis\n\nทำไมตัวเลือกอื่นไม่ใช่ (ในกรอบ SIRS):\n- Bacteraemia: บอกได้แค่ว่ามีเชื้อในกระแสเลือดจากผล h/c เป็นข้อค้นพบทางจุลชีววิทยา ไม่ได้บรรยายภาวะการตอบสนองของร่างกายทั้งระบบที่ผู้ป่วยแสดงออก จึงไม่ \"best describes this illness\"\n- Severe sepsis: ต้องมี organ dysfunction/tissue hypoperfusion/hypotension ร่วม เช่น creatinine เพิ่ม, bilirubin สูง, platelet ต่ำ, lactate >2, urine output ลด ซึ่งไม่มีในโจทย์\n- SIRS: ใช้เมื่อเข้าเกณฑ์อักเสบทั่วร่างกายแต่ยังไม่พบ/ไม่ใช่การติดเชื้อ (เช่น pancreatitis, trauma, burn) รายนี้พบเชื้อยืนยันแล้วจึงเลื่อนขึ้นเป็น sepsis\n- Early sepsis: ไม่ใช่คำนิยามที่มีอยู่ในระบบใดทั้ง Sepsis-1/2 และ Sepsis-3 เป็นตัวลวงล้วน",
+  "src": "MED31 · [MED31] A 75 year old woman was brought to the emergency room because of a 2 days history of\nfever and fatigue. On physical examination, temperature is 38.4 c, pulses 95/min, RR\n22/min, BP 130/70 mmHg O2 sat 95% with room air. The leukocyte count is 13,000\n/ul, urine analysis shows 20-25 leukocytes/HPF Urine culture and blood culture are\ngrowing E.coli\nWhich of the following terms best describes this patients illness?\nA. Bacteremia\nB. Early sepsis\nC. Sepsis\nD. Severe sepsis\nE. Systemic inﬂammatory response syndrome"
+ },
+ {
+  "id": "ID-OLDP-002",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "A febrile patient develops hemorrhagic purpura on the legs and feet. Which organism is the most likely cause?",
+  "choices": [
+   "Neisseria meningitidis",
+   "Streptococcus pneumoniae",
+   "Rickettsia rickettsii",
+   "Staphylococcus aureus",
+   "Dengue virus"
+  ],
+  "answer": 0,
+  "note": "เฉลย Neisseria meningitidis\n\nกลไก: ไข้ร่วมกับผื่น petechiae/purpura ที่ลุกลามเร็วบริเวณปลายแขนปลายขาเป็นภาพคลาสสิกของ meningococcemia เชื้อ N. meningitidis มี lipooligosaccharide (endotoxin) ปริมาณมากในผนังเซลล์ กระตุ้น cytokine อย่างรุนแรงและกระตุ้น coagulation cascade พร้อมกับกดระบบ protein C/antithrombin ทำให้เกิด DIC และ microthrombosis ในหลอดเลือดผิวหนัง จนเกิดเลือดออกเป็นจุดดำ/purpura fulminans และเนื้อตายที่ปลายมือปลายเท้า เป็นภาวะฉุกเฉินที่ต้องให้ ceftriaxone หรือ penicillin G ทันทีและแยกผู้ป่วย (droplet precautions) พร้อมให้ยาป้องกันผู้สัมผัสใกล้ชิด\n\nทำไมตัวเลือกอื่นผิด:\n- Streptococcus pneumoniae: ทำให้เกิด purpura fulminans ได้ แต่มักเฉพาะในผู้ป่วยไม่มีม้าม/ม้ามทำงานบกพร่อง ไม่ใช่สาเหตุที่พบบ่อยที่สุดของภาพนี้\n- Rickettsia rickettsii: ผื่นของ spotted fever เริ่มที่ข้อมือ/ข้อเท้าแล้วลามเข้าลำตัว และไม่พบในไทย ในไทยที่พบคือ scrub typhus ซึ่งมี eschar ไม่ใช่ purpura ลุกลาม\n- Staphylococcus aureus: ทำให้เกิดผื่นจาก septic emboli ใน infective endocarditis ได้ แต่เป็น petechiae กระจายพร้อม Janeway lesion/Osler node และมีเสียง murmur ไม่ใช่ purpura ลุกลามเร็วแบบนี้\n- Dengue virus: มี petechiae และ tourniquet test บวก แต่จากเกล็ดเลือดต่ำและ capillary fragility ไม่ทำให้เกิด purpura ดำเนื้อตายที่ปลายเท้า และเป็นไวรัสไม่ใช่ \"เชื้อ\" ที่รักษาด้วยยาปฏิชีวนะ",
+  "src": "MED30 · [MED30] 27. Hemorrhagic purpura on legs and feet (เท้าดำจุด)\nAns : N.meningitidis"
+ },
+ {
+  "id": "ID-OLDP-003",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "A febrile patient is found to have a greyish patch (pseudomembrane) over the pharynx. He has a documented penicillin allergy. Which antibiotic should be given instead?",
+  "choices": [
+   "Erythromycin",
+   "Ceftriaxone",
+   "Clindamycin",
+   "Ciprofloxacin",
+   "Doxycycline"
+  ],
+  "answer": 0,
+  "note": "เฉลย: erythromycin — greyish/whitish pseudomembrane ที่คอหอยที่ขูดออกแล้วเลือดออกง่าย คือ diphtheria จาก Corynebacterium diphtheriae (gram-positive bacillus รูป club-shaped เรียงตัวแบบ Chinese letter) การรักษาประกอบด้วย diphtheria antitoxin (สำคัญที่สุด ต้องให้เร็วเพราะ antitoxin กลาง toxin ที่ยังไม่จับเซลล์), ยาปฏิชีวนะ 14 วันเพื่อฆ่าเชื้อและหยุดการสร้าง toxin/ลดการแพร่เชื้อ, isolation และให้วัคซีนหลังหาย ยาที่แนะนำคือ penicillin G หรือ erythromycin ดังนั้นเมื่อแพ้ penicillin จึงเลือก macrolide คือ erythromycin (ปัจจุบันยอมรับ azithromycin/clarithromycin ได้เช่นกันเพราะทนต่อยาดีกว่า) ทำไมข้ออื่นผิด: ceftriaxone เป็น beta-lactam เช่นเดียวกับ penicillin จึงมีความเสี่ยง cross-reactivity และไม่ใช่ยามาตรฐานของ diphtheria; clindamycin ครอบคลุม gram-positive และ anaerobe ในฝีที่คอได้ แต่ไม่ใช่ยาที่แนะนำสำหรับ C. diphtheriae; ciprofloxacin ครอบคลุม gram-negative เป็นหลัก ไม่เหมาะกับเชื้อนี้; doxycycline ใช้กับ atypical/rickettsia ไม่ใช่ยาหลักของ diphtheria",
+  "src": "MED33 · (โพยไม่ระบุ sitting) · [MED33] 81. คนไขเเพ penicillin มี greyish patch at pharynx ตองใชยาอะไรเเทน ? Erythromycin"
+ },
+ {
+  "id": "ID-OLDP-004",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "A patient is admitted with Neisseria meningitidis infection (the photograph shows hemorrhagic purpura). Which antimicrobial should be given to close household contacts as chemoprophylaxis?",
+  "choices": [
+   "Ciprofloxacin 500 mg orally, single dose",
+   "Penicillin V orally for 10 days",
+   "Amoxicillin orally for 7 days",
+   "Doxycycline 100 mg orally twice daily for 7 days",
+   "Co-trimoxazole orally twice daily for 5 days"
+  ],
+  "answer": 0,
+  "note": "เฉลย: ciprofloxacin (ผู้ใหญ่ 500 mg กินครั้งเดียว) ตามที่โพยบันทึก\n\nกลไก/หลักคิด: ผู้ป่วยรายนี้เป็น meningococcemia (ไข้ + hemorrhagic purpura/purpura fulminans) เป้าหมายของ chemoprophylaxis ในผู้สัมผัสใกล้ชิด (คนในบ้าน สัมผัสสารคัดหลั่งภายใน 7 วันก่อนผู้ป่วยมีอาการ บุคลากรที่ทำ mouth-to-mouth/ใส่ท่อช่วยหายใจโดยไม่ป้องกัน) คือ กำจัดเชื้อที่คั่งอยู่ใน nasopharynx (eradicate carriage) ไม่ใช่แค่ยับยั้งเชื้อในเลือด ยาที่ใช้ต้องกระจายเข้า nasopharyngeal secretion ได้ดี ciprofloxacin ทำได้ดีและให้ครั้งเดียวจึง compliance สูงที่สุด ควรเริ่มเร็วที่สุด (ภายใน 24 ชั่วโมง; ถ้าเกิน 14 วันไม่มีประโยชน์)\n\nข้อควรทราบ: rifampicin 600 mg ทุก 12 ชั่วโมง 2 วัน และ ceftriaxone 250 mg IM ครั้งเดียว (เลือกใช้ในหญิงตั้งครรภ์) ก็เป็นสูตรที่แนวทางยอมรับเช่นกัน ข้อสอบเลือก ciprofloxacin เพราะเป็นสูตรครั้งเดียวสำหรับผู้ใหญ่ทั่วไป และในพื้นที่ที่มี ciprofloxacin-resistant meningococci ต้องเปลี่ยนไปใช้ rifampicin หรือ ceftriaxone\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Penicillin V: เป็นตัวลวงคลาสสิก ใช้รักษาโรคได้ (penicillin G ขนาดสูงทางหลอดเลือด) แต่ระดับยาใน nasopharyngeal secretion ต่ำ กำจัด carriage ไม่ได้ ผู้ป่วยที่รักษาด้วย penicillin จึงต้องได้ยากำจัด carriage ก่อนกลับบ้านด้วย\n- Amoxicillin: เหตุผลเดียวกับ penicillin กำจัดพาหะในคอไม่ได้ และไม่อยู่ในสูตรที่แนะนำ\n- Doxycycline: เป็นยาป้องกันของโรคอื่น (leptospirosis, scrub typhus, malaria prophylaxis บางพื้นที่) ไม่ใช่สูตรกำจัด meningococcal carriage และห้ามในเด็กเล็ก/หญิงตั้งครรภ์\n- Co-trimoxazole: เคยใช้ในอดีตแต่เชื้อดื้อสูงมาก ปัจจุบันไม่แนะนำ (เป็นยาป้องกัน PCP ไม่ใช่ meningococcus)",
+  "src": "MED31 · [MED31] 56.\nprophylaxis neisseria meningitidis ให ้รูป hemorrhagic purpura ให ้ยาอะไร\nตอบ ciprofloxacin"
+ },
+ {
+  "id": "ID-OLDP-005",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "A patient with a painful genital ulcer is diagnosed with chancroid caused by Haemophilus ducreyi. What is the appropriate treatment?",
+  "choices": [
+   "Azithromycin 1 g orally as a single dose",
+   "Benzathine penicillin G 2.4 million units intramuscularly as a single dose",
+   "Acyclovir 400 mg orally three times daily for 7 days",
+   "Doxycycline 100 mg orally twice daily for 21 days",
+   "Metronidazole 2 g orally as a single dose"
+  ],
+  "answer": 0,
+  "note": "เฉลย: azithromycin 1 g กินครั้งเดียว — เป็น first-line ของ chancroid ตาม CDC (ทางเลือกอื่น: ceftriaxone 250-500 mg IM ครั้งเดียว, ciprofloxacin 500 mg bid 3 วัน, erythromycin base 500 mg tid 7 วัน) และควรตรวจ HIV/ syphilis ร่วมด้วยเพราะ genital ulcer เพิ่มความเสี่ยงติด HIV และอาจติดร่วมกัน; ถ้ามี bubo ที่ fluctuant ต้อง needle aspiration หรือ I&D. H. ducreyi เป็น gram-negative coccobacilli เรียงตัวแบบ \"school of fish\" ลักษณะแผลคือ เจ็บมาก ขอบแผลขยุ่ยไม่เรียบ ก้นแผลเป็น purulent exudate และมี tender suppurative inguinal lymphadenopathy. ตัวลวง: benzathine penicillin G เป็นยาของ primary syphilis ซึ่งแผล \"ไม่เจ็บ\" ขอบแข็ง (chancre) ก้นแผลสะอาด; acyclovir ใช้กับ genital herpes ที่เป็น vesicle นำมาก่อนแล้วแตกเป็นแผลตื้นหลายแผล มักมีไข้/ปวดร่วมในครั้งแรก; doxycycline 21 วันเป็น regimen ของ lymphogranuloma venereum (C. trachomatis L1-L3) ซึ่งแผลเล็กหายเอง แต่มี tender matted inguinal nodes/groove sign และ H. ducreyi มักดื้อ tetracycline; metronidazole ครั้งเดียวใช้รักษา trichomoniasis ซึ่งเป็น vaginitis/urethritis ไม่ใช่โรคแผลที่อวัยวะเพศ",
+  "src": "MED32 · MED32: Loop 3 · [MED32] 17. Hemophilus ducreyi chancroid:azithro1 g"
+ },
+ {
+  "id": "ID-OLDP-006",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "Gram stain of purulent material shows gram-positive beaded, filamentous, branching bacilli lying extracellularly, with a PMN-predominant exudate. Which organism is most likely?",
+  "choices": [
+   "Nocardia spp.",
+   "Actinomyces israelii",
+   "Streptomyces spp.",
+   "Mycobacterium tuberculosis",
+   "Listeria monocytogenes"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Nocardia spp. (โพย บันทึกตัวเลือกไว้สองข้อโดยไม่กากบาท แต่คำว่า \"beaded\" เป็นคำบรรยายเฉพาะของ Nocardia)\n\nกลไก/การแยก: Nocardia เป็น aerobic actinomycete ติดสี gram positive เป็นเส้นสายแตกแขนงมุมฉากและติดสีไม่สม่ำเสมอจึงเห็นเป็นปุ่ม ๆ (beaded) ย้อม modified acid-fast (Kinyoun 1% H2SO4) ติดสีอ่อน เพราะผนังเซลล์มี mycolic acid สั้น เจริญได้ใน aerobic culture (ใช้เวลา 3–5 วันหรือนานกว่า จึงต้องแจ้งห้องปฏิบัติการให้เก็บจานนาน) ก่อโรค pulmonary/cutaneous/CNS nocardiosis ในผู้ที่มี cell-mediated immunity บกพร่อง (steroid, transplant, HIV CD4 ต่ำ) ปฏิกิริยาเนื้อเยื่อเป็น suppurative จึงเห็น PMN เด่นและเชื้ออยู่นอกเซลล์ รักษาด้วย TMP-SMX ± carbapenem/amikacin นานหลายเดือน และต้องตรวจสมองหา abscess\n\nทำไมตัวเลือกอื่นผิด: Actinomyces israelii เป็น anaerobe ที่แตกแขนงเช่นกันแต่ \"ไม่ beaded\" และ acid-fast negative มักเป็น chronic indolent infection ที่ทะลุผิวหนังเป็น sinus tract พบ sulfur granule ร่วมกับ mixed oral flora ตอบสนอง penicillin ขนาดสูง; Streptomyces แตกแขนงเป็นเส้นสายแต่แทบไม่ก่อโรคในคนยกเว้น mycetoma ที่เท้า; M. tuberculosis ย้อม acid-fast ติดสีเข้มและเห็น beading ได้ แต่ไม่ติดสี gram และไม่แตกแขนงเป็น filament แท้ ปฏิกิริยาเนื้อเยื่อเป็น granuloma ที่มี lymphocyte/macrophage ไม่ใช่ PMN เด่น; Listeria monocytogenes เป็น gram positive bacilli สั้น ไม่แตกแขนง และเป็น facultative intracellular ซึ่งขัดกับคำว่า extracellular ในโจทย์",
+  "src": "MED34 · ไม่ระบุรอบสอบ · [MED34] 7. gram positive beaded filamentous branching bacilli extracellular PMN predominate เป็น\nเชื้ออะไร\na. Nocardia\nb. Actinomyces"
+ },
+ {
+  "id": "ID-OLDP-007",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "Gram stain of pus from a chronic suppurative lesion shows gram-positive branching filamentous organisms; the modified acid-fast stain is negative and culture identifies Actinomyces israelii. Which antimicrobial treatment is appropriate?",
+  "choices": [
+   "Azithromycin",
+   "Trimethoprim-sulfamethoxazole",
+   "Metronidazole",
+   "Isoniazid + rifampicin + pyrazinamide + ethambutol",
+   "Itraconazole"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: azithromycin. หลักการแยกเชื้อ: gram-positive branching filaments ที่ modified acid-fast (Kinyoun) \"negative\" = Actinomyces (anaerobe ในช่องปาก/ทางเดินอาหาร ทำให้เกิด chronic suppuration, sinus tract, sulfur granules) ถ้า modified AFB \"positive\" = Nocardia (aerobe, พบใน immunocompromised, ลงปอด/สมอง) ซึ่งรักษาด้วย TMP-SMX — นี่คือคู่เทียบที่ข้อสอบมักถาม. ข้อควรระวังทางแนวทางปัจจุบัน: first-line ของ actinomycosis คือ high-dose penicillin G IV 2-6 สัปดาห์ แล้วต่อด้วย amoxicillin หรือ penicillin V กินนาน 6-12 เดือน; macrolide (azithromycin/erythromycin), doxycycline, clindamycin, ceftriaxone เป็นเพียง \"ทางเลือก\" กรณีแพ้ penicillin. ดังนั้นคำตอบที่โพยบันทึก (azithromycin) ถูกเฉพาะเมื่อในตัวเลือกไม่มี penicillin G/amoxicillin — ถ้าเจอข้อสอบที่มี penicillin G หรือ amoxicillin ให้เลือกตัวนั้นแทน. ตัวลวง: TMP-SMX เป็นยาของ Nocardia ซึ่งต้อง AFB positive; metronidazole ใช้ไม่ได้เพราะ Actinomyces ดื้อ metronidazole ทั้งที่เป็น anaerobe; regimen 4 ตัวของ TB ผิดเพราะ AFB negative และ Actinomyces ไม่ใช่ mycobacteria; itraconazole เป็นยาเชื้อรา (Sporothrix / eumycetoma) ขณะที่เชื้อนี้ย้อมติด gram positive เป็นแบคทีเรีย",
+  "src": "MED32 · (ไม่ระบุรอบสอบ) · [MED32] 26.gram stain positive branching\nAFB negative > actinomyces Israelii\nตอบ azithromycin"
+ },
+ {
+  "id": "ID-OLDP-008",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "q": "Which of the following behaviours is INEFFECTIVE for protecting a person against COVID-19?",
+  "choices": [
+   "Sewing a mask out of household cloth and wearing it out into public places",
+   "Washing the hands with soap and water or 70% alcohol gel after touching shared surfaces",
+   "Keeping a physical distance of at least 1 to 2 metres from other people",
+   "Wearing a surgical mask every time one leaves the house",
+   "Avoiding crowded, poorly ventilated places and self-quarantining for 14 days after close contact with a case"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: การเอาผ้ามาทำเป็นหน้ากากแล้วออกไปในที่สาธารณะ. กลไก: หน้ากากผ้าทำเองมีประสิทธิภาพการกรองอนุภาคต่ำ (หลายชนิดกรองได้เพียง 10-30%) เนื้อผ้าพรุน แนบใบหน้าไม่สนิทจึงมี face-seal leakage สูง และเมื่อชื้นจากลมหายใจยังยอมให้ละอองผ่านได้มากขึ้น การใส่แล้วเข้าไปในที่สาธารณะที่มีคนแออัดจึงป้องกันตัวผู้สวมได้น้อยมาก และมักทำให้ประมาทเรื่องระยะห่าง. เหตุผลที่ตัวเลือกอื่นผิด (คือเป็นมาตรการที่ได้ผลจริง): การล้างมือด้วยสบู่หรือแอลกอฮอล์ 70% ทำลายเยื่อไขมันหุ้มไวรัสและตัด fomite transmission; การเว้นระยะ 1-2 เมตรลดการรับ respiratory droplet ซึ่งตกลงพื้นในระยะสั้น; surgical mask มีชั้นกรองมาตรฐานและกันละอองได้ดีกว่าหน้ากากผ้าอย่างชัดเจน; การหลีกเลี่ยงที่แออัดอากาศไม่ถ่ายเทและกักตัว 14 วันหลังสัมผัสเป็นมาตรการหลักในการตัดวงจรการระบาด. ข้อควรทราบ: คำว่า 'ineffective' ในข้อนี้เป็นเชิงเปรียบเทียบ — แนวทาง WHO/CDC ช่วงการระบาดยังแนะนำหน้ากากผ้าในประชาชนทั่วไปเพื่อ source control ในภาวะที่หน้ากากทางการแพทย์ขาดแคลน ไม่ได้ถือว่าไร้ประโยชน์โดยสิ้นเชิง แต่ในบรรดาทางเลือกทั้งหมดถือว่าป้องกันผู้สวมได้ต่ำสุด และปัจจุบันแนะนำ medical mask หรือ N95/KF94 ในสถานที่เสี่ยง",
+  "src": "MED32 · [MED32] 72. พฤติกรรมที ineffective ต่อ covid-19 → Ans: cloth มาทําเป็น mask แล ้วออกไป public"
+ },
+ {
+  "id": "ID-OLDP-009",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A 48-year-old woman with diabetes mellitus treated with glipizide presents with fever from an abscess over the right hip. Gram stain of the pus shows slender gram-negative bacilli that stain more darkly at both ends (bipolar staining). Which organism is most likely responsible?",
+  "choices": [
+   "Burkholderia pseudomallei",
+   "Klebsiella pneumoniae",
+   "Salmonella enterica serovar Typhi",
+   "Escherichia coli",
+   "Acinetobacter baumannii"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Burkholderia pseudomallei. gram-negative bacilli รูปร่างผอมเรียวและติดสีเข้มที่ปลายทั้งสองข้าง (bipolar staining หรือ safety-pin appearance) เป็นลักษณะคลาสสิกของ B. pseudomallei และผู้ป่วยมี DM ซึ่งเป็น risk factor อันดับหนึ่งของ melioidosis (พบเป็นฝีกล้ามเนื้อ/ใต้ผิวหนัง ฝีตับ ฝีม้าม ปอดอักเสบ หรือ septicemia) ควรส่ง pus culture + hemoculture และรักษา intensive phase ด้วย ceftazidime หรือ carbapenem ตามด้วย eradication phase ด้วย cotrimoxazole นาน 3-6 เดือน. ทำไมตัวอื่นไม่ใช่: Klebsiella pneumoniae เป็น GNB อ้วนสั้นมี capsule ทำ pyogenic liver abscess ในผู้ป่วย DM ได้ แต่ย้อมไม่เห็น bipolar staining; Salmonella Typhi ทำ enteric fever (ไข้ยืดเยื้อ ปวดท้อง rose spots) ไม่ใช่ฝีที่สะโพก และไม่ให้ safety-pin appearance; E. coli เป็น GNB ทั่วไป ไม่มี bipolar staining; Acinetobacter baumannii เป็น gram-negative coccobacilli และเป็นเชื้อ nosocomial มากกว่าจะทำฝีใน community.",
+  "src": "MED31 · [MED31] หญิงอายุ 48 ป เปน DM รักษาด้วย glipicide มีไข้จากฝทีสะโพกขวา ย้อม gram stain พบ gram\nnegative bacilli ตัวผอม ติดสีเข้มทีปลายทัง 2 ข้าง\n7\nbyaonaon\nA. Salmonella typhi\nB. Klebsiella pneumoniae\nC. E. coli\nD. Acinetobacter\nE. Burkholderia pseudomallei"
+ },
+ {
+  "id": "ID-OLDP-010",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A febrile patient has conjunctival suffusion and jaundice. Which serological investigation best confirms the suspected diagnosis?",
+  "choices": [
+   "Indirect fluorescent antibody (IFA) test for Leptospira",
+   "Indirect fluorescent antibody test for Orientia tsutsugamushi (scrub typhus)",
+   "Dengue NS1 antigen test",
+   "Blood culture for Salmonella enterica serovar Typhi",
+   "Thick and thin peripheral blood films for malaria parasites"
+  ],
+  "answer": 0,
+  "note": "เฉลย: IFA for Leptospira (ตามที่โพยบันทึก)\n\nกลไก: conjunctival suffusion คือเยื่อบุตาแดงแบบไม่มีขี้ตาและมีเลือดออกใต้เยื่อบุตาได้ เกิดจาก vasculitis ของหลอดเลือดขนาดเล็กจากการติดเชื้อ Leptospira เมื่อรวมกับตัวเหลือง (ตับอักเสบแบบ cholestasis จาก leptospirosis) ก็เข้ากับ Weil's disease จึงต้องส่งตรวจที่จำเพาะต่อ Leptospira โดย IFA/IgM เป็นการตรวจหา antibody ที่ให้ผลได้เร็วในสัปดาห์แรกถึงสอง\n\nข้อสังเกตเทียบกับแนวทางปัจจุบัน: gold standard ของ leptospirosis คือ microscopic agglutination test (MAT) ซึ่งต้องเจาะเลือดคู่ acute/convalescent ดู 4-fold rise ส่วน IFA และ IgM ELISA/rapid test เป็น screening ที่ใช้จริงในเวชปฏิบัติ ดังนั้นคำตอบที่โพยจดไว้ถูกต้องในบริบท \"ตรวจอะไรเพื่อยืนยันเชื้อนี้\" แต่ถ้าโจทย์ถามหา definitive test คำตอบควรเป็น MAT (หรือ PCR ในช่วงไข้วันแรก ๆ) จึงไม่ควรจำว่า IFA คือ gold standard\n\nทำไมตัวเลือกอื่นผิด: IFA for O. tsutsugamushi ใช้เมื่อสงสัย scrub typhus ที่มี eschar และต่อมน้ำเหลืองโต ไม่ใช่ conjunctival suffusion; NS1 ใช้วินิจฉัย dengue ซึ่งมักไม่ทำให้ตัวเหลือง; hemoculture หา Salmonella Typhi ใช้กับไข้ที่ท้องอืด rose spots ไม่มีเลือดออกใต้เยื่อบุตา; blood film หา malaria ใช้เมื่อมีประวัติพื้นที่ระบาดและไข้หนาวสั่นเป็นรอบ ตัวเหลืองจาก haemolysis ไม่ใช่จาก cholestasis",
+  "src": "MED33 · MED32 · ไม่ระบุรอบสอบ · \"[MED33] conjunctival suffusion , jaundice : IFA - leptospira\" / \"[MED32] 21.conjunctival suffusion , jaundice : IFA - leptospira\""
+ },
+ {
+  "id": "ID-OLDP-011",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A febrile patient is found to have a painless ulcer with a black necrotic crust and an erythematous rim on the genital area. What is the most likely diagnosis?",
+  "choices": [
+   "Scrub typhus",
+   "Murine typhus",
+   "Primary syphilis",
+   "Chancroid",
+   "Cutaneous anthrax"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Scrub typhus (เชื้อ Orientia tsutsugamushi)\n\nกลไก: แผลที่เห็นคือ eschar ซึ่งเป็นรอยที่ตัวไรอ่อน (chigger, ตัวอ่อนของ Leptotrombidium) กัดและปล่อยเชื้อเข้าสู่ผิวหนัง เชื้อเพิ่มจำนวนใน endothelial cell บริเวณนั้นทำให้เกิด local vasculitis และ ischaemic necrosis กลายเป็นแผลก้นดำคล้ายรอยบุหรี่จี้ ขอบแดง และไม่เจ็บ ผู้ป่วยจึงมักไม่รู้ตัวและไม่บอกเอง ตำแหน่งที่พบบ่อยคือบริเวณอับชื้นใต้ร่มผ้า เช่น ขาหนีบ อวัยวะเพศ รักแร้ ใต้ราวนม รอบเอวที่ขอบกางเกงรัด จึงต้องเปิดตรวจทุกซอกหลีกในผู้ป่วยไข้ไม่ทราบสาเหตุที่มีประวัติเข้าป่า เข้าไร่ หรือลุยหญ้า ลักษณะร่วมคือไข้สูง ปวดศีรษะมาก ปวดเมื่อย ตาแดง lymphadenopathy ทั้งตัว AST/ALT สูงเล็กน้อย เกล็ดเลือดต่ำ และอาจมี maculopapular rash รักษาด้วย doxycycline (azithromycin ในหญิงตั้งครรภ์และเด็กเล็ก) ซึ่งตอบสนองดีภายใน 48 ชั่วโมง\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Murine typhus (Rickettsia typhi จากหมัดหนู): อาการไข้ ปวดศีรษะ ผื่น คล้ายกันมาก แต่ \"ไม่มี eschar\" ซึ่งเป็นจุดแยกสำคัญที่สุดระหว่างสองโรคนี้\n- Primary syphilis: chancre ไม่เจ็บเหมือนกัน แต่เป็นแผลขอบแข็งยกนูน ก้นแผลสะอาดเรียบ ไม่มีสะเก็ดดำ และไม่มีไข้สูงเฉียบพลันแบบนี้\n- Chancroid: แผลเจ็บมาก ก้นแผลมีหนอง ขอบแผลไม่เรียบและ undermined ต่อมน้ำเหลืองขาหนีบโตกดเจ็บเป็นหนอง ต่างจาก eschar ที่ไม่เจ็บ\n- Cutaneous anthrax: ทำให้เกิด painless black eschar ได้เหมือนกัน (เป็นตัวลวงที่ดีที่สุด) แต่จะมี marked non-pitting oedema รอบแผลอย่างชัดเจน มีตุ่มน้ำรอบ ๆ (satellite vesicles) และเกิดที่บริเวณที่สัมผัสสัตว์หรือหนังสัตว์ เช่น มือ แขน ใบหน้า ไม่ใช่บริเวณอวัยวะเพศ\n\nหมายเหตุ: โพยระบุว่าโจทย์ให้มาเป็นรูปแผล eschar ที่อวัยวะเพศ เมื่อนำมาทำเป็นข้อความจึงบรรยายลักษณะแผลตามที่โพยบันทึก (eschar at genitalia) แทนภาพ ไม่ได้เพิ่มข้อมูลผู้ป่วยอื่นที่โพยไม่ได้จด",
+  "src": "MED31 · [MED31] 15.ให ้รูปแผล eschar at genitalia (รูปคล ้ายๆด ้านล่าง)\nAns scrub typhus"
+ },
+ {
+  "id": "ID-OLDP-012",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A febrile patient is found to have jaundice together with conjunctival suffusion (red eyes without discharge). Which is the most likely diagnosis?",
+  "choices": [
+   "Leptospirosis",
+   "Scrub typhus",
+   "Dengue fever",
+   "Acute viral hepatitis A",
+   "Falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย Leptospirosis\n\nกลไก: Conjunctival suffusion คือเยื่อบุตาแดงจากหลอดเลือดขยาย/เลือดออกเล็กน้อย โดยไม่มีขี้ตาและไม่มี exudate เป็นอาการที่ค่อนข้างจำเพาะของ leptospirosis เชื้อ Leptospira interrogans เข้าทางผิวหนังถลอกหรือเยื่อบุจากน้ำ/ดินที่ปนปัสสาวะหนู แล้วทำให้เกิด vasculitis ของหลอดเลือดขนาดเล็กทั่วร่างกาย เมื่อรวมกับตัวเหลืองจะเข้ากับ severe leptospirosis (Weil's disease) คือ jaundice + AKI + bleeding ลักษณะตัวเหลืองของ lepto จะเหลืองจัด (bilirubin สูงมาก) แต่ transaminase สูงไม่มาก (มักไม่เกิน 200 U/L) ซึ่งช่วยแยกจากตับอักเสบจากไวรัส มักมีปวดกล้ามเนื้อน่องและ CPK สูงร่วมด้วย\n\nทำไมตัวเลือกอื่นผิด:\n- Scrub typhus: จุดเด่นคือ eschar ต่อมน้ำเหลืองโต ตัวเหลืองพบไม่บ่อย และ conjunctival suffusion ไม่ใช่ลักษณะเด่น\n- Dengue fever: เด่นที่ petechiae/tourniquet test บวก platelet ต่ำ Hct สูงจาก plasma leakage ตัวเหลืองพบน้อยมากยกเว้นมี severe hepatitis และไม่มี conjunctival suffusion\n- Acute viral hepatitis A: เหลืองจริง แต่ AST/ALT สูงเป็นหลักพันถึงหมื่น และไม่มีตาแดงหรือปวดน่อง\n- Falciparum malaria: เหลืองได้จาก hemolysis แต่ต้องมีประวัติเข้าป่า/พื้นที่ระบาด และต้องพบเชื้อใน blood smear ไม่ทำให้เกิด conjunctival suffusion",
+  "src": "MED30 · โพย MED421 พวกเห็นแก่ตัวมันต้องตาย2021 · [MED30] 47. Conjunctival suffusion มีเหลือง+ตาแดง\nAns. Leptospirosis"
+ },
+ {
+  "id": "ID-OLDP-013",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A man has had calf pain and jaundice for 5 days; over the next 5 days he develops vomiting with deepening jaundice. AST is about 1000 U/L and ALT is just over 1000 U/L. What is the most likely diagnosis?",
+  "choices": [
+   "Leptospirosis (Weil's disease)",
+   "Acute hepatitis A",
+   "Severe dengue with hepatitis",
+   "Scrub typhus",
+   "Severe falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: leptospirosis — กลไก: เชื้อ Leptospira interrogans เข้าทางผิวหนังถลอกหรือเยื่อบุจากน้ำ/ดินที่ปนปัสสาวะหนู ทำให้เกิด vasculitis ทั่วร่างกาย อาการเด่นคือไข้สูงเฉียบพลัน ปวดกล้ามเนื้อน่องอย่างมาก (calf myalgia) conjunctival suffusion และเมื่อเข้าสู่ระยะ icteric (Weil's disease) จะมีตัวเหลืองจาก cholestatic pattern ร่วมกับไตวาย (AKI แบบ non-oliguric hypokalemic) และเลือดออกในปอดได้ การวินิจฉัยใช้ MAT/PCR ยืนยัน รักษาด้วย ceftriaxone หรือ penicillin G (mild ใช้ doxycycline) — ข้อสังเกตที่ต่างจากตำรา: ใน leptospirosis ทั่วไป AST/ALT มักขึ้นเพียงเล็กน้อยถึงปานกลาง (ส่วนใหญ่ < 200 U/L) โดยบิลิรูบินขึ้นสูงเกินสัดส่วนของ transaminase ดังนั้นตัวเลข AST/ALT ระดับ 1000 ตามที่จดไว้จริง ๆ เข้ากับ acute viral hepatitis มากกว่า (อาจเป็นการจดตัวเลขคลาดเคลื่อน) แต่ประวัติปวดน่องนำมาก่อนตัวเหลืองเป็นลายเซ็นของ leptospirosis — ทำไมตัวเลือกอื่นผิด: hepatitis A ให้ transaminase สูงระดับพันได้แต่มี prodrome เบื่ออาหาร/คลื่นไส้นำ ไม่มีปวดน่องเด่นและไม่มีไตวาย; severe dengue มีไข้ 2–7 วัน ปวดเมื่อยตัว เกล็ดเลือดต่ำ hematocrit สูงขึ้นและรั่วของพลาสมา ตัวเหลืองไม่ใช่อาการนำ; scrub typhus มี eschar ต่อมน้ำเหลืองโต ผื่น และตัวเหลืองไม่รุนแรงเท่านี้; falciparum malaria ตัวเหลืองเกิดจาก hemolysis (indirect bilirubin สูง) มีไข้หนาวสั่นเป็นรอบและซีด ไม่ใช่ปวดน่องเด่น",
+  "src": "MED31 · sitting ไม่ระบุ · [MED31] 51.มีอาการปวดน่อง ตัวเหลือง มา5วัน แล ้วต่อมาอีก5วัน มีอาเจียน ตัวเหลือง, AST 1000, ALT1000กว่า\nAns leptospirosis"
+ },
+ {
+  "id": "ID-OLDP-014",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A man living in Bangkok presents with fever, abdominal pain and subconjunctival haemorrhage (conjunctival suffusion). What is the most likely diagnosis?",
+  "choices": [
+   "Leptospirosis",
+   "Dengue fever",
+   "Scrub typhus",
+   "Enteric fever (typhoid)",
+   "Falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Leptospirosis\n\nกลไก: Leptospira interrogans เข้าทางผิวหนังที่มีรอยถลอกหรือเยื่อบุที่สัมผัสน้ำ/ดินที่ปนปัสสาวะสัตว์รังโรค (หนูเป็นตัวหลัก) แล้ว spirochete กระจายทางกระแสเลือดไปทำให้เกิด vasculitis ของหลอดเลือดขนาดเล็กทั่วร่างกาย จึงได้ภาพไข้สูงเฉียบพลัน ปวดกล้ามเนื้อน่องมาก ปวดท้อง ตัวเหลือง ไตวาย และ conjunctival suffusion/subconjunctival haemorrhage ซึ่งเป็น hallmark ที่ใช้แยกจากไข้เขตร้อนอื่นได้ดีที่สุด การอยู่กรุงเทพฯ ไม่ตัดโรคนี้ออก เพราะพบได้จากน้ำท่วมขัง ท่อระบายน้ำ ตลาดสด และงานทำความสะอาด\n\nทำไมตัวเลือกอื่นผิด: Dengue ให้ไข้ ปวดเมื่อย เกล็ดเลือดต่ำ และมี conjunctival injection ได้ แต่ไม่ให้เลือดออกใต้เยื่อบุตาเป็นลักษณะเด่น และมักไม่มีตัวเหลือง; Scrub typhus เด่นที่ eschar และต่อมน้ำเหลืองโต ไม่ใช่เลือดออกใต้เยื่อบุตา; Enteric fever ไข้ขึ้นแบบ step-ladder ท้องอืด rose spots ชีพจรช้ากว่าที่ควรเมื่อเทียบกับไข้ และไม่มี conjunctival suffusion; Malaria ต้องมีประวัติเข้าพื้นที่ป่าเขา/ชายแดน ไข้เป็นรอบหนาวสั่น สลับกับสร่าง\n\nข้อควรระวัง: โพยจดคำว่า \"splenectomy\" ไว้ในโจทย์ ซึ่งน่าจะคลาดเคลื่อนมาจาก splenomegaly (โพยไม่ได้บันทึกแน่ชัด) ข้อนี้จึงตัดสินจากจุดชี้ขาดที่บันทึกไว้ชัดคือ subconjunctival haemorrhage ร่วมกับไข้และปวดท้องเป็นหลัก",
+  "src": "MED33 · ไม่ระบุรอบสอบ · \"[MED33] คนกทม มีไขปวดทอง splenectomy subconjuctiva >lebtospirosis\""
+ },
+ {
+  "id": "ID-OLDP-015",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A man waded barefoot through standing floodwater during the rainy season and subsequently develops features of leptospirosis. Which route of transmission best explains how he acquired the infection?",
+  "choices": [
+   "Direct penetration of the organism through abraded skin or a wound on the foot",
+   "Inhalation of aerosolized organisms from contaminated water",
+   "Bite of an infected rodent",
+   "Bite of an infected mosquito vector",
+   "Person-to-person spread from contact with an infected patient"
+  ],
+  "answer": 0,
+  "note": "เฉลย: เชื้อไชผ่านผิวหนังที่มีบาดแผลหรือรอยถลอกบริเวณเท้า (direct penetration through abraded skin)\n\nกลไก: Leptospira interrogans เป็น spirochete ที่อาศัยใน renal tubule ของสัตว์รังโรค (หนูเป็นตัวหลัก) และถูกขับออกมากับปัสสาวะสู่ดินและน้ำ เมื่อฝนตกน้ำท่วมขัง เชื้อกระจายอยู่ในน้ำและมีชีวิตอยู่ได้นานหลายสัปดาห์ในน้ำจืดที่เป็นกลางถึงด่างอ่อน เชื้อมี axial filament ทำให้เคลื่อนที่แบบ corkscrew ไชผ่านผิวหนังที่มีรอยถลอก บาดแผล หรือผิวที่เปื่อยยุ่ยจากการแช่น้ำนาน (macerated skin) รวมทั้งผ่านเยื่อบุตาและเยื่อบุช่องปากได้ จึงเป็น occupational/recreational exposure ของเกษตรกร ชาวนา และผู้เดินลุยน้ำท่วม จากนั้นเชื้อเข้ากระแสเลือด (leptospiremic phase) ไปทำให้เกิด vasculitis ของหลอดเลือดขนาดเล็ก จนเกิดอาการคลาสสิก คือไข้สูง ปวดกล้ามเนื้อน่องรุนแรง conjunctival suffusion และ AKI แบบ non-oliguric hypokalemic\n\nทำไมตัวเลือกอื่นผิด\n- Inhalation of aerosol: leptospirosis ไม่ใช่โรคติดต่อทางการหายใจ (ทางอากาศเป็นเรื่องของ TB, melioidosis บางกรณี หรือ hantavirus) ถึงผู้ป่วยจะมี pulmonary hemorrhage ก็เป็นผลจาก vasculitis ไม่ใช่ทางเข้าของเชื้อ\n- Bite of an infected rodent: หนูเป็น reservoir แต่แพร่เชื้อผ่าน 'ปัสสาวะ' ไม่ใช่การกัด (การถูกหนูกัดเชื่อมโยงกับ rat-bite fever จาก Streptobacillus moniliformis หรือ Spirillum minus)\n- Bite of an infected mosquito vector: leptospirosis ไม่ใช่ vector-borne disease ข้อนี้เข้ากับ dengue, malaria, chikungunya ซึ่งเป็นโรคไข้เขตร้อนที่ต้องแยกจากกัน\n- Person-to-person spread: การแพร่จากคนสู่คนแทบไม่เกิดขึ้น ไม่ต้องแยกผู้ป่วยแบบ contact isolation",
+  "src": "MED34 | สอบ: ไม่ได้ระบุในโพย | โพย (verbatim):\n[MED34] 15. คนเดินเหยียบนํ้าช่วงฝนตก แล ้วมีอาการของ leptospirosis ถามการ transmission\n○ Invade ผ่านบาดแผลที่เท ้า"
+ },
+ {
+  "id": "ID-OLDP-016",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A man who lives in Bangkok and gives no rural or farming exposure history presents with an acute febrile illness whose clinical picture fits leptospirosis. Which investigation confirms the diagnosis?",
+  "choices": [
+   "Microscopic agglutination test (MAT) for Leptospira on paired sera",
+   "Weil-Felix test",
+   "Dengue NS1 antigen test",
+   "Blood culture (hemoculture) for Salmonella Typhi",
+   "Thick and thin blood films for malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย: MAT (microscopic agglutination test) — เป็น serologic gold standard ของ leptospirosis โดย single titer ≥ 1:400 ในพื้นที่ระบาด หรือ 4-fold rise ของ paired sera ถือว่ายืนยันการวินิจฉัย ในระยะแรก (< 7 วัน, leptospiremic phase) ยังตรวจไม่ขึ้นเพราะ antibody ยังไม่สูง จึงอาจต้องอาศัย blood culture (EMJH/Fletcher) หรือ PCR ร่วมด้วย แต่ถ้าถามตัวยืนยันคำตอบคือ MAT จุดหลอกของโจทย์คือคำว่า 'คนกรุงเทพ' — lepto ไม่ได้จำกัดอยู่เฉพาะชาวนาหรือคนลุยน้ำในนา คนเมืองติดได้จากน้ำท่วมขัง ท่อระบายน้ำ ตลาดสด และปัสสาวะหนู (urban leptospirosis) จึงไม่ตัดโรคนี้ออกเพราะภูมิลำเนา ทำไมข้ออื่นผิด: Weil-Felix ใช้คัดกรอง rickettsioses (scrub/murine typhus) ความไว-ความจำเพาะต่ำและไม่ได้ตรวจ Leptospira; NS1 antigen ใช้วินิจฉัย dengue ซึ่งมักไม่มี AKI, conjunctival suffusion หรือ jaundice แบบ lepto; hemoculture หา Salmonella Typhi ใช้กับ enteric fever ที่ไข้ขึ้นแบบ step-ladder และมักมีอาการทางเดินอาหารเด่น; blood films หา malaria ต้องมีประวัติเข้าป่าหรืออยู่พื้นที่ระบาด ซึ่งโจทย์ไม่มี",
+  "src": "MED33 · (โพยไม่ระบุ sitting) · [MED33] 29. โจทยพูดวาคนกรุงเทพแตอาการlepto>MAT for lepto"
+ },
+ {
+  "id": "ID-OLDP-017",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A patient had fever for 7 days which then resolved, after which the fever returned together with jaundice. What is the most likely diagnosis?",
+  "choices": [
+   "Leptospirosis",
+   "Chikungunya",
+   "Dengue fever",
+   "Scrub typhus",
+   "Falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Leptospirosis (โพย บันทึกตัวเลือกไว้สองข้อ ไม่ได้กากบาท แต่ biphasic fever + jaundice ชี้ leptospirosis ชัดเจน)\n\nกลไก: leptospirosis คลาสสิกเป็น biphasic (saddleback) illness — ระยะที่ 1 septicaemic phase ~4–7 วัน มีไข้สูง ปวดกล้ามเนื้อน่อง conjunctival suffusion เชื้ออยู่ในเลือด/CSF จากนั้นไข้ลงสั้น ๆ 1–3 วัน แล้วเข้าระยะที่ 2 immune phase ซึ่งเกิดจาก antibody-mediated inflammation พร้อมกับมี leptospiruria ถ้ามีตัวเหลืองร่วมกับไตวายและเลือดออก = Weil's disease ตัวเหลืองใน lepto เป็น conjugated hyperbilirubinaemia ที่สูงมากโดยที่ transaminase ขึ้นเพียงเล็กน้อย (bilirubin–transaminase dissociation) ซึ่งเป็นจุดแยกจาก viral hepatitis รักษาด้วย IV penicillin G หรือ ceftriaxone (mild: doxycycline)\n\nทำไมตัวเลือกอื่นผิด: Chikungunya มีไข้สูงเฉียบพลันพร้อม severe symmetrical polyarthralgia เป็นอาการนำ ไข้อาจเป็น saddleback ได้แต่ \"ตัวเหลือง\" ไม่ใช่ลักษณะของโรคนี้; Dengue ไข้ลงในวันที่ 4–6 เข้าสู่ critical phase ที่มี plasma leakage ไม่ใช่ไข้กลับขึ้นใหม่ และตัวเหลืองพบน้อย (เจอเมื่อมี severe hepatitis/shock); Scrub typhus ไข้ต่อเนื่องพร้อม eschar + lymphadenopathy ไม่เป็น biphasic; Falciparum malaria ไข้เป็นรอบทุก 24–48 ชม.ไม่หายไปหลายวัน และตัวเหลืองเกิดจาก haemolysis (indirect bilirubin สูง) ต้องมีประวัติเข้าพื้นที่ระบาด",
+  "src": "MED34 · ไม่ระบุรอบสอบ · [MED34] 4. มีไข ้มา7วันก่อน แล ้วหาย แล ้วกลับมาไข ้ขึ้นอีกรอบ มีตัวเหลือง\na. Leptospirosis\nb. Chikungunya"
+ },
+ {
+  "id": "ID-OLDP-018",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with fever and myalgia and is found to have conjunctival suffusion. What is the most likely diagnosis?",
+  "choices": [
+   "Leptospirosis",
+   "Scrub typhus",
+   "Dengue fever",
+   "Murine typhus",
+   "Falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Leptospirosis\n\nกลไก: conjunctival suffusion (เยื่อบุตาแดงเรื่อทั่ว ๆ โดยไม่มีขี้ตาหรือ exudate และไม่เจ็บ) เป็น hallmark ของ leptospirosis เชื้อ Leptospira spp. เข้าทางผิวหนังถลอกหรือเยื่อบุหลังลุยน้ำ/ทำนา แล้วกระจายทั่วร่างกายทำให้เกิด systemic small-vessel vasculitis เยื่อบุตาจึงมีเลือดคั่ง ร่วมกับไข้สูงเฉียบพลันและปวดกล้ามเนื้อรุนแรงโดยเฉพาะน่อง (gastrocnemius) อาการอื่นที่ช่วยยืนยันคือ AKI ที่มักเป็น non-oliguric ร่วมกับ hypokalemia, jaundice แบบ Weil's disease และ pulmonary hemorrhage การรักษาคือ penicillin G, ceftriaxone หรือ doxycycline\n\nทำไมตัวเลือกอื่นผิด:\n- Scrub typhus: ไข้ + ปวดเมื่อยได้เหมือนกัน แต่จุดเด่นคือ eschar, lymphadenopathy ทั่วตัว และ maculopapular rash ไม่ใช่ conjunctival suffusion\n- Dengue: ไข้สูง ปวดเมื่อย ปวดกระบอกตาได้ แต่เด่นที่ platelet ต่ำ Hct เพิ่ม tourniquet test บวก และไม่มี conjunctival suffusion เป็นลักษณะจำเพาะ\n- Murine typhus: ติดจากหมัดหนู มีไข้ ปวดศีรษะ ผื่น อาการคล้ายกันแต่ไม่มี conjunctival suffusion และไม่ปวดน่องเด่น\n- Falciparum malaria: ไข้หนาวสั่นเป็นรอบ ซีด ตับม้ามโต ต้องมีประวัติเข้าพื้นที่ป่าเขาที่มีการระบาด และตาไม่แดงแบบนี้",
+  "src": "MED32 · MED32: Loop นี · [MED32] 19. Fever + myalgia + มี conjunctival suffusion : leptospirosis"
+ },
+ {
+  "id": "ID-OLDP-019",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A patient returns from Kalasin province with fever and headache. Examination reveals a black ulcer with an erythematous base (eschar). What is the most likely diagnosis?",
+  "choices": [
+   "Scrub typhus (Orientia tsutsugamushi)",
+   "Leptospirosis",
+   "Dengue fever",
+   "Melioidosis",
+   "Falciparum malaria"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Scrub typhus. Eschar — แผลดำคล้ายรอยบุหรี่จี้ ขอบแดง ไม่เจ็บ มักอยู่ที่บริเวณอับชื้น (ขาหนีบ รักแร้ เอว) — เป็นลักษณะจำเพาะที่สุดของ scrub typhus ซึ่งเกิดจาก Orientia tsutsugamushi ติดจากตัวไรอ่อน (chigger, Leptotrombidium) ในพื้นที่ป่าละเมาะ/ทุ่งหญ้าภาคอีสาน เช่น กาฬสินธุ์ อาการคือไข้สูง ปวดศีรษะรุนแรง ปวดเมื่อยตัว ต่อมน้ำเหลืองโต ตับม้ามโต อาจมี transaminase สูงเล็กน้อย ยืนยันด้วย IFA/IgM หรือ PCR จาก eschar และตอบสนองดีมากต่อ doxycycline. หมายเหตุ: โพยจดคำถามว่า 'ส่งตรวจอะไร' แต่คำตอบที่จดไว้เป็นชื่อโรค จึงเรียบเรียง stem เป็นคำถามวินิจฉัย (src เก็บข้อความเดิมไว้ให้เห็น). ตัวลวง: leptospirosis มี conjunctival suffusion ปวดกล้ามเนื้อน่อง ตัวเหลือง ไตวาย แต่ไม่มี eschar; dengue มีหน้าแดง ผื่น เกล็ดเลือดต่ำ tourniquet test บวก ไม่มี eschar; melioidosis ในผู้ป่วย DM มักเป็นปอดอักเสบหรือฝีหลายอวัยวะ/sepsis ไม่ใช่แผล eschar เดี่ยว; falciparum malaria มีไข้หนาวสั่นเป็นรอบ ซีด ตัวเหลือง ม้ามโต ไม่มี eschar.",
+  "src": "MED30 · โพย MED421 พวกเห็นแก่ตัวมันต้องตาย2021 · \"[MED30] 8. ไปกาฬสินธุ์มา มีไข้ ปวดหัว ตรวจเจอBlack ulcer erythematous base (eschar) ส่งตรวจอะไร\nAns. Scrub thyphus\""
+ },
+ {
+  "id": "ID-OLDP-020",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A patient with acute fever from Nakhon province is found to have a brown-black crusted skin ulcer (eschar). Which antibiotic is the treatment of choice?",
+  "choices": [
+   "Doxycycline",
+   "Ceftriaxone",
+   "Penicillin G sodium",
+   "Ciprofloxacin",
+   "Amoxicillin/clavulanate"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Doxycycline\n\nกลไก: แผลสะเก็ดสีน้ำตาลดำคล้ายรอยบุหรี่จี้ ไม่เจ็บ (eschar) ร่วมกับไข้เฉียบพลันในผู้ที่มีประวัติสัมผัสป่า/ทุ่งหญ้า เป็นลักษณะจำเพาะของ scrub typhus จาก Orientia tsutsugamushi ซึ่งติดต่อทางกัดของ chigger (ตัวอ่อนไรอ่อน) เชื้อเป็น obligate intracellular bacteria ที่เข้าไปเพิ่มจำนวนในเซลล์ endothelium ทำให้เกิด vasculitis ทั่วร่างกาย Doxycycline ผ่านเข้าเซลล์ได้ดีและยับยั้ง 30S ribosome ให้ขนาด 100 mg วันละ 2 ครั้ง 7 วัน ผู้ป่วยมักไข้ลงภายใน 48 ชั่วโมงซึ่งใช้เป็น therapeutic diagnosis ได้\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Ceftriaxone, Penicillin G และ Amoxicillin/clavulanate: เป็น beta-lactam ที่ออกฤทธิ์ต่อ peptidoglycan cell wall แต่ Orientia มี peptidoglycan และ LPS น้อยมาก และอยู่ในเซลล์ซึ่ง beta-lactam เข้าไม่ถึง จึงไม่ได้ผลเลย (ceftriaxone ยังเป็นตัวลวงที่ดีเพราะมักถูกเลือกเป็น empiric ในไข้เฉียบพลัน และหากคิดถึง melioidosis ยาที่ถูกต้องคือ ceftazidime ไม่ใช่ ceftriaxone)\n- Ciprofloxacin: มีรายงาน treatment failure ใน scrub typhus จาก mutation ที่ gyrA จึงไม่ใช่ตัวเลือกที่แนะนำ\n\nหมายเหตุ 1: ทางเลือกที่ได้ผลจริงคือ azithromycin (ใช้ในหญิงตั้งครรภ์และเด็กเล็ก) และ chloramphenicol แต่จงใจไม่นำมาเป็นตัวลวงเพื่อไม่ให้มีคำตอบที่ถูกซ้อนกัน\nหมายเหตุ 2: cutaneous anthrax ก็ทำให้เกิด black eschar และตอบสนองต่อ doxycycline เช่นกัน คำตอบจึงยังเป็น doxycycline ไม่ว่าจะตีความไปทางใด\nหมายเหตุ 3: โพยบันทึกเพียง \"Brown black crust ulcer 'Nakhon' —> doxycycline\" คำว่า 'ไข้เฉียบพลัน' ในโจทย์เป็นการเรียบเรียงบริบททางคลินิกตามปกติของโรคนี้",
+  "src": "MED31 · [MED31] 68. Brown black crust ulcer “Nakhon” —> doxycycline"
+ },
+ {
+  "id": "ID-OLDP-021",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "A patient with dengue infection has a markedly low platelet count together with a markedly raised haemoglobin/haematocrit. What is the appropriate management?",
+  "choices": [
+   "Intravenous isotonic crystalloid fluid therapy",
+   "Prophylactic platelet transfusion",
+   "Fresh frozen plasma transfusion",
+   "Packed red cell transfusion",
+   "Intravenous dexamethasone"
+  ],
+  "answer": 0,
+  "note": "เฉลย: IV fluid (isotonic crystalloid เช่น 0.9% NSS หรือ Ringer's lactate)\n\nกลไก: Hb/Hct ที่สูงมากในผู้ป่วย dengue คือสัญญาณของ haemoconcentration จาก plasma leakage ซึ่งเป็นหัวใจของ critical phase (วันที่ 3-7 ของไข้ ช่วงที่ไข้เริ่มลง) ไซโตไคน์ทำให้ endothelial permeability เพิ่ม น้ำรั่วออกนอกหลอดเลือดเป็น pleural effusion/ascites ปริมาตรในหลอดเลือดลดลง ถ้าไม่แก้จะเข้าสู่ dengue shock syndrome ส่วน platelet ที่ต่ำเป็นผลจาก bone marrow suppression + immune-mediated destruction ซึ่ง 'คาดว่าจะต่ำ' ตามธรรมชาติของโรคและจะขึ้นเองหลัง leakage หยุด ดังนั้นสิ่งที่ต้องรักษาคือ intravascular volume ไม่ใช่ตัวเลข platelet ให้สารน้ำโดยติดตาม Hct, urine output, vital signs และลดอัตราลงเมื่อเข้า recovery phase เพื่อเลี่ยง fluid overload\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Prophylactic platelet transfusion: RCT (เช่น การศึกษาในเอเชียใต้/เอเชียตะวันออกเฉียงใต้) แสดงว่าการให้เกล็ดเลือดเพื่อป้องกันในผู้ป่วย dengue ที่ไม่มีเลือดออกรุนแรง ไม่ลด bleeding และเพิ่มภาวะแทรกซ้อน (fluid overload, transfusion reaction) ให้เฉพาะเมื่อมี clinically significant bleeding หรือก่อนทำหัตถการเท่านั้น\n- FFP: ไม่มีข้อบ่งชี้ เพราะกลไกไม่ใช่ factor deficiency พิจารณาเฉพาะเมื่อมี DIC ที่มีเลือดออกร่วมกับ coagulopathy ชัดเจน\n- PRC transfusion: ผู้ป่วยรายนี้ Hb 'สูง' จาก haemoconcentration ไม่ได้เสียเลือด การให้เลือดยิ่งเพิ่มความข้นหนืดและไม่แก้ปัญหา plasma leakage\n- IV dexamethasone: ไม่มีหลักฐานว่า corticosteroid ลด shock, ลดการเสียชีวิต หรือทำให้ platelet ขึ้นใน dengue จึงไม่แนะนำ\n\nหมายเหตุ: โพยบันทึกตัวเลือกไว้เพียง 2 ข้อ (IV fluid, platelet transfusion) ตัวลวงอีก 3 ข้อเขียนเพิ่มตามแนวทางเวชปฏิบัติ",
+  "src": "MED31 · [MED31] 76.เป็น dengue มี plateletตํา, Hbสูงมากๆ what is appropriate management?\n1. IV fluid\n2. Platelet transfusion\nAns IV fluid"
+ },
+ {
+  "id": "ID-OLDP-022",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "Imaging shows a multiloculated, multi-septate (\"honeycomb\") liver abscess. Which organism is the most likely cause?",
+  "choices": [
+   "Burkholderia pseudomallei",
+   "Entamoeba histolytica",
+   "Klebsiella pneumoniae",
+   "Staphylococcus aureus",
+   "Escherichia coli"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Burkholderia pseudomallei (melioidosis) ตามที่โพยบันทึกไว้ว่า b. melioidosis\n\nกลไก/ลักษณะจำเพาะ: ฝีในตับหรือม้ามจาก melioidosis มีลักษณะภาพรังสีที่จำเพาะมากคือเป็นโพรงหลายโพรงซ้อนกันมีผนังกั้น (multiloculated/multiseptate) เรียก honeycomb sign หรือ necklace sign (ฝีเล็ก ๆ เรียงเป็นวงล้อมโพรงกลาง) เกิดจาก B. pseudomallei ซึ่งอยู่ในดินและน้ำ เข้าสู่ร่างกายทางผิวหนังที่มีบาดแผล การหายใจ หรือการกลืน เป็นเชื้อที่อยู่ในเซลล์ได้ (facultative intracellular) จึงเกิดเป็น microabscess กระจายและรวมกันเป็นโพรงหลายช่อง พบมากในภาคอีสานของไทยและออสเตรเลียตอนเหนือ ปัจจัยเสี่ยงหลักคือเบาหวาน ธาลัสซีเมีย ไตเรื้อรัง ดื่มสุรา สัมผัสดินน้ำ (เกษตรกร) การรักษาต้องใช้ ceftazidime หรือ meropenem ในระยะ intensive อย่างน้อย 10–14 วัน ตามด้วย eradication ด้วย co-trimoxazole 3–6 เดือน ไม่ตอบสนองต่อยาที่ใช้กับฝีในตับทั่วไป\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Entamoeba histolytica: amoebic liver abscess มักเป็นโพรงเดี่ยวขนาดใหญ่ที่ right lobe ผนังบาง ไม่มีผนังกั้นหลายชั้น หนองสีน้ำตาลแดงแบบ anchovy paste ไม่มีแบคทีเรีย ตอบสนองต่อ metronidazole\n- Klebsiella pneumoniae: เป็นสาเหตุอันดับแรกของ pyogenic liver abscess ในเอเชียและในผู้ป่วยเบาหวาน แต่มักเป็นโพรงเดี่ยว อาจมี gas-forming และมาพร้อม metastatic infection (endophthalmitis, meningitis) ไม่ให้ภาพ honeycomb\n- Staphylococcus aureus: ฝีในตับจากการกระจายทางกระแสเลือด พบในเด็ก ผู้ใช้ยาเสพติดฉีด หรือ endocarditis มักมีฝีที่อวัยวะอื่นร่วม ไม่ใช่ภาพ multiseptate จำเพาะ\n- Escherichia coli: ทำให้เกิด pyogenic abscess ที่มีต้นทางจากทางเดินน้ำดีหรือ portal (appendicitis, diverticulitis) มักเป็นหลายโพรงกระจายตามท่อน้ำดีแต่ไม่ใช่ honeycomb และมักมีประวัติ biliary obstruction/ผ่าตัดช่องท้องนำมาก่อน",
+  "src": "MED31 · [MED31] 65. septate liver abscess ถามเชือ\nตอบ b.meloidoses"
+ },
+ {
+  "id": "ID-OLDP-023",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "Which of the following is NOT associated with Salmonella infection?",
+  "choices": [
+   "Myofascial pain syndrome",
+   "Enteric fever",
+   "Gastroenteritis",
+   "Infected (mycotic) aneurysm",
+   "Chronic carrier state"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Myofascial pain syndrome (เป็นข้อที่ไม่เกี่ยวข้องกับ Salmonella)\n\nกลไก: Salmonella แบ่งเป็น typhoidal (S. typhi, S. paratyphi) และ non-typhoidal (NTS เช่น S. enteritidis, S. choleraesuis) ทั้งสองกลุ่มเข้าทางเดินอาหาร ผ่าน M cell ของ Peyer patch แล้วแยกทางกัน: NTS มักอยู่เฉพาะที่ลำไส้เป็น gastroenteritis, ส่วน typhoidal เข้า reticuloendothelial system ทำให้เกิด enteric fever (ไข้ขึ้นเป็นขั้นบันได rose spot bradycardia สัมพัทธ์) เมื่อมี sustained bacteremia เชื้อจะไปเกาะที่ผนังหลอดเลือดที่มี atherosclerotic plaque หรือ aneurysm เดิม เกิด infected/mycotic aneurysm ซึ่งเป็น endovascular complication คลาสสิกของ Salmonella (พบบ่อยใน NTS ผู้สูงอายุ) และเชื้อยังไปอาศัยใน gallbladder โดยเฉพาะผู้ที่มีนิ่วถุงน้ำดี เกิด chronic carrier state (ขับเชื้อทางอุจจาระ >12 เดือน) ส่วน Myofascial pain syndrome เป็นภาวะปวดกล้ามเนื้อเรื้อรังจาก trigger point ไม่ใช่โรคติดเชื้อและไม่มีความสัมพันธ์กับ Salmonella เลย\n\nทำไมตัวเลือกอื่นผิด (คือเป็นสิ่งที่สัมพันธ์กับ Salmonella จริง จึงไม่ใช่คำตอบ)\n- Enteric fever: คือโรคจาก S. typhi/paratyphi โดยตรง\n- Gastroenteritis: อาการหลักของ non-typhoidal Salmonella จากอาหารปนเปื้อน\n- Infected aneurysm: endovascular infection ที่เป็น hallmark complication ของ Salmonella bacteremia\n- Chronic carrier state: การพาเชื้อในถุงน้ำดีระยะยาว เป็นแหล่งแพร่โรคที่รู้จักดี (เช่น Typhoid Mary)\n\nหมายเหตุ: reactive arthritis เป็น immune-mediated sequela ที่เกี่ยวข้องกับ Salmonella จริง นักศึกษามักสับสนกับ myofascial pain — แต่สองภาวะนี้ไม่ใช่สิ่งเดียวกัน",
+  "src": "MED34 · MED31 · MED35 | สอบ: MED34 Formative Med Exam ครั้งที่1 loopA+B (MCQ ข ้อช ้อย); MED35 สอบครั้งที่ 1 (loopA+B) — FA MCQ 50 ข้อ 1 ชั่วโมง; MED35 / MCQ (50 ข้อ) | โพย (verbatim):\n[MED34] [ภาพหน้า 5 - LMS Quiz Screenshot - ถอดความจากภาพ]\nQuestion 2 - Correct - Mark 1.00 out of 1.00\nWhich of the following is NOT associated with salmonella infection?\nSelect one:\na. Enteric fever\nb. Gastroenteritis\nc. Myofascial pain syndrome [เลือกและถูกต้อง - เฉลย]\nd. Infected aneurysm\ne. Chronic carrier state\nคำอธิบาย: All of the following choice are associated with salmonella infection except Myofascial pain syndrome.\n---\n[MED31] 10. Which of the following is not associated with salmonella infection?\n: Myofascial pain syndrome\n---\n[MED35] 11. (Question 2 - Correct, Mark 1.00/1.00) Which of the following is not associated with salmonella infection?\nSelect one:\na. Enteric fever\nb. Gastroenteritis\nc. Myofascial pain syndrome *** เฉลย (ถูก) ***\nd. Infected aneurysm\ne. Chronic carrier state\nหมายเหตุลายมือ: enteric fever/gastroenteritis = diarrhea + fever; infected aneurysm/chronic carrier เกี่ยวกับ typhoid complication\nคำอธิบาย: All of the following choice are associated with salmonella infection except Myofascial pain syndrome."
+ },
+ {
+  "id": "ID-OLDP-024",
+  "lec": "I02",
+  "lecture": "โรคติดเชื้อ: ไข้เฉียบพลันในเขตร้อน (ยังไม่ระบุคาบ)",
+  "q": "Which of the following statements about leptospirosis is correct?",
+  "choices": [
+   "Conjunctival suffusion is seen more often than subconjunctival haemorrhage during the first week of illness",
+   "The disease is caused by Leptospira biflexa",
+   "The commonest chest radiographic pattern is diffuse interstitial infiltration",
+   "Renal failure in leptospirosis is more often oliguric than non-oliguric",
+   "The standard (reference) diagnostic method is the indirect haemagglutination assay"
+  ],
+  "answer": 0,
+  "note": "เฉลย: พบ conjunctival suffusion บ่อยกว่า subconjunctival hemorrhage ในสัปดาห์แรก (ข้อ B ในโพย)\n\nกลไก: conjunctival suffusion คือการที่หลอดเลือดเยื่อบุตาขยายแดงทั่วโดยไม่มีขี้ตาหรือ exudate เกิดจาก vasculitis/endothelial injury ของ leptospira เป็นอาการคลาสสิกใน septicaemic phase (สัปดาห์แรก) พบได้ประมาณครึ่งหนึ่งของผู้ป่วย และเป็นเบาะแสสำคัญที่ช่วยแยกจากไข้เฉียบพลันอื่นเมื่อมาพร้อมไข้สูง ปวดกล้ามเนื้อน่องรุนแรง และปวดศีรษะ ส่วน subconjunctival hemorrhage เกิดจากเลือดออกจริงในชั้นใต้เยื่อบุตา พบได้แต่น้อยกว่าและมักปรากฏช้ากว่าในรายที่รุนแรง\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Leptospira biflexa: เป็นสายพันธุ์ saprophyte อาศัยอิสระในน้ำและสิ่งแวดล้อม ไม่ก่อโรคในคน เชื้อก่อโรคคือกลุ่ม pathogenic species ได้แก่ L. interrogans (sensu lato) เช่น serovar Icterohaemorrhagiae, Bataviae, Autumnalis\n- CXR แบบ diffuse interstitial infiltration: ภาพที่พบบ่อยในการมีปอดร่วมของ leptospirosis คือ patchy alveolar infiltration หรือ small nodular densities กระจาย ซึ่งสะท้อน alveolar haemorrhage และอาจรวมกันเป็นปื้นใหญ่จนถึง ARDS ไม่ใช่ลาย interstitial\n- renal failure เป็น oliguric มากกว่า nonoliguric: กลับกัน ลักษณะเฉพาะของ leptospiral AKI คือ non-oliguric hypokalaemic AKI จากความเสียหายของ tubule โดยตรง (proximal Na/K reabsorption เสีย ร่วมกับการขับ K ที่ distal เพิ่ม) ทำให้ปัสสาวะยังออกแต่ K ต่ำ — จุดนี้ใช้แยกจาก AKI สาเหตุอื่นได้ดี ส่วน oliguric AKI พบในรายที่รุนแรงและช็อกแล้ว\n- indirect haemagglutination assay เป็นวิธีมาตรฐาน: วิธีอ้างอิง (gold standard) ทาง serology คือ microscopic agglutination test (MAT) โดยต้องเก็บ paired sera ดู titre เพิ่ม ≥4 เท่า IHA และ IgM ELISA/rapid test เป็นเพียงการตรวจคัดกรองหรือทางเลือก ส่วนการเพาะเชื้อและ PCR ใช้ในระยะแรกของโรค",
+  "src": "MED31 · [MED31] ข้อใดถูกต้องเกียวกับโรค leptospirosis\nA. เกิดจากเชือ leptospira biﬂexa\nB. พบอาการ conjunctival suffusion บ่อยกว่า subconjunctival hemorrhage ในสัปดาห์\nแรก\nC. ลักษณะของ cxr ทีพบบ่อยคือ diffuse interstitial inﬁltration\nD. ผู้ปวยทีมี renal failure จะมีลักษณะเปน oliguric มากกว่า nonoliguric\nE. วิธีมาตรฐานในการตรวจคือ indirect haemagglutination assay"
+ },
+ {
+  "id": "ID-OLDP-025",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A 20-year-old HIV-infected man with a CD4 count of 500/mm3 presents with pneumonia. What is the most likely organism in this patient?",
+  "choices": [
+   "Streptococcus pneumoniae",
+   "Mycobacterium tuberculosis",
+   "Nocardia",
+   "Mycobacterium avium complex",
+   "Pneumocystis jirovecii (PCP)"
+  ],
+  "answer": 0,
+  "note": "เฉลย: C. Streptococcus pneumoniae\n\nหลักคิด: ใช้ระดับ CD4 เป็นตัวบอกว่าเชื้อโรคชนิดใดเป็นไปได้ CD4 500/mm3 ถือว่ายังไม่มี immunosuppression ที่รุนแรง เชื้อที่ทำให้ปอดอักเสบจึงยังเป็นเชื้อของ community-acquired pneumonia ตามปกติ และ S. pneumoniae พบบ่อยที่สุด นอกจากนี้ผู้ติดเชื้อ HIV มีความเสี่ยง invasive pneumococcal disease สูงกว่าคนทั่วไปหลายเท่าในทุกระดับ CD4 จากความบกพร่องของ humoral immunity จึงเป็นคำตอบที่ \"most likely\" ที่สุด (และเป็นเหตุผลที่แนะนำวัคซีน pneumococcal)\n\nทำไมตัวเลือกอื่นไม่ใช่ (จำเกณฑ์ CD4):\n- Mycobacterium tuberculosis เกิดได้ที่ทุกระดับ CD4 จริง และในพื้นที่ที่ TB ชุกเช่นประเทศไทยต้องนึกถึงเสมอ แต่ภาพ pneumonia เฉียบพลันในคน CD4 ปกติ โอกาสน้อยกว่า pneumococcus ข้อนี้ถามว่า most likely\n- Nocardia เป็น opportunist ของ CD4 < 100 และดำเนินโรคแบบกึ่งเฉียบพลันมีโพรงฝี\n- Mycobacterium avium complex ต้อง CD4 < 50 และมักมาแบบ disseminated (ไข้เรื้อรัง น้ำหนักลด ต่อมน้ำเหลืองโต) ไม่ใช่ pneumonia เดี่ยว ๆ\n- Pneumocystis jirovecii ต้อง CD4 < 200 มาด้วยไข้ ไอแห้ง เหนื่อยแบบค่อยเป็นค่อยไป และ hypoxia ไม่เข้ากับ CD4 500",
+  "src": "MED34 · MED32 · MED34: ข ้อสอบ MED ครั้งที่2 · [MED34] 7. A 20 year old HIV infected man with CD4 count 500/mm3 present with pneumonia.What is\nthe most likely organism in this patient?\nA. TB\nB. Norcardiao\nC. Streptococcus pneumoniae\nD. Mycobacterium avium complex\nE. PCP\nตอบ C. Streptococcus pneumoniae || [MED32] 16.A 20 year old HIV infected man with CD4 count 500/mm3 present with pneumonia.What is\nthe most likely organism in this patient?\nA.TB\nB.Norcardia\nC.Streptococcus pneumoniae\nD.Mycobacterium avium complex\nE.PCP\nตอบ C. Streptococcus pneumoniae"
+ },
+ {
+  "id": "ID-OLDP-026",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A 21-year-old woman with symptomatic HIV (last CD4 29 cells/mm3, 2%) is admitted with cryptococcal meningitis and has received amphotericin B 40 mg/day for one week. This morning she is fatigued with weakness of all four limbs; bowel and bladder control are normal and she swallows normally. Neurological examination: motor power grade 3+ in all proximal groups and grade 5 in all distal groups, normal deep tendon reflexes, negative Babinski sign, normal sensation and normal cranial nerves. What is the most appropriate next step?",
+  "choices": [
+   "Send serum electrolytes together with magnesium",
+   "Send serum electrolytes together with calcium and phosphate",
+   "Send BUN and creatinine",
+   "Withhold amphotericin B for now",
+   "Emergency CT brain"
+  ],
+  "answer": 0,
+  "note": "เฉลย: ส่ง electrolyte พร้อม magnesium. amphotericin B ทำให้ท่อไตรั่ว เกิด distal (type 1) RTA ร่วมกับ renal wasting ของ K+ และ Mg2+ ผู้ป่วยได้ยามา 1 สัปดาห์แล้วอ่อนแรงแบบ proximal สมมาตร (grade 3+) ขณะที่ distal ปกติ DTR ปกติ ไม่มี Babinski, sensory และ cranial nerve ปกติ คุมการขับถ่ายได้ = ภาพของ hypokalemic myopathy ไม่ใช่รอยโรคใน CNS หรือไขสันหลัง และ hypomagnesemia ที่มักมาด้วยกันเป็นเหตุให้แก้ K ไม่ขึ้นถ้าไม่เติม Mg จึงต้องเจาะทั้ง electrolyte และ Mg แล้วแก้ไขพร้อมกัน. ทำไมตัวอื่นไม่ใช่: CT brain ไม่มีข้อบ่งชี้ เพราะไม่มี UMN sign, cranial nerve palsy, ชัก หรือระดับความรู้สึกตัวเปลี่ยน; หยุด amphotericin B ทันทีไม่เหมาะ เพราะยังต้องรักษา cryptococcal meningitis ต่อ สิ่งที่ถูกคือหาสาเหตุและเติม KCl/MgSO4 พร้อมติดตามค่าไต; BUN/Cr ควรติดตามอยู่แล้วเพราะ ampho B nephrotoxic แต่ azotemia ไม่อธิบายอ่อนแรงเฉพาะ proximal; hypocalcemia/hypophosphatemia แสดงเป็น tetany, paresthesia, Chvostek/Trousseau sign มากกว่า และ ampho B ไม่ได้ทำให้เสีย Ca เป็นหลัก.",
+  "src": "MED31 · [MED31] ผู้ปวยหญิงไทยโสด อายุ 21 ป underlying symptomatic HIV last CD4 -\n= 29 (2%) admit ด้วยปญหา cryptococcal meningitis ได้รับยา amphotericin B 40 mg/day\nมา 1 สัปดาห์ เช้านีสังเกตเห็นว่าผู้ปวยอ่อนเพลีย แขนขาไม่มีแรง กลันอุจจาระ ปสสาวะได้ปกติ\nกลืนอาหารได้ปกติ ครวจร่างกายทางระบบประสาท motor system - proximal group grade 3+\nall, distal group grade 5 all, normal DTR, normal babinski sign, Normal sensory system\nand cranial nerve\nA. CT brain emergency\nB. หยุด amphotericin B ไว้ก่อน\nC. ส่งตรวจ BUN/Cr\nD. ส่งตรวจ electrolyte และ Ca2+ PO43-\nE. ส่งตรวจ electrolyte และ Mg"
+ },
+ {
+  "id": "ID-OLDP-027",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A 30-year-old Thai man presents with headache for 2 weeks. Examination shows oral candidiasis, pruritic papular eruption and multiple enlarged cervical lymph nodes about 1 cm in size; neurological examination shows no neck stiffness and no papilloedema, and is otherwise unremarkable. Lumbar puncture: opening pressure 12 cmH2O, WBC 5 cells (all lymphocytes), protein 200 mg/dL, CSF sugar 30 mg% with blood sugar 130 mg%; CSF Gram stain shows multiple encapsulated budding yeasts. What is the diagnosis?",
+  "choices": [
+   "Cryptococcal meningitis",
+   "Candida meningitis",
+   "Histoplasma meningitis",
+   "Tuberculous (TB) meningitis",
+   "Streptococcus pneumoniae meningitis"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Cryptococcal meningitis\n\nกลไก: คำชี้ขาดคือ \"multiple encapsulated budding yeast\" ใน CSF — ยีสต์ที่แตกหน่อและมีแคปซูลหนาล้อมรอบคือ Cryptococcus neoformans แคปซูลเป็น glucuronoxylomannan ที่ไม่ติดสี จึงเห็นเป็นวงใสรอบตัวเชื้อ (ชัดที่สุดด้วย India ink หรือ mucicarmine) แคปซูลนี้เองคือปัจจัยก่อโรคหลักเพราะยับยั้ง phagocytosis และกด inflammatory response พื้นหลังของผู้ป่วยบ่งชี้ HIV ระยะภูมิคุ้มกันต่ำมาก (CD4 มักต่ำกว่า 100) จาก oral candidiasis + pruritic papular eruption (PPE) + generalized lymphadenopathy จุดที่ผู้เรียนมักพลาดคือ CSF WBC เพียง 5 เซลล์ซึ่งดู \"แทบปกติ\" — ในผู้ป่วยเอดส์ การอักเสบน้อยเช่นนี้เป็นเรื่องปกติและกลับสัมพันธ์กับพยากรณ์โรคที่แย่ ห้ามใช้เซลล์ต่ำมาตัดโรคออก ประกอบกับ protein สูง 200 และ CSF glucose 30 เทียบ blood 130 (อัตราส่วน <0.5) ที่ยืนยันว่ามีการติดเชื้อในเยื่อหุ้มสมองจริง ควรส่ง CSF cryptococcal antigen (CrAg/lateral flow) ซึ่งไวและจำเพาะสูงสุด ร่วมกับ fungal culture และ serum CrAg รักษาด้วย induction: amphotericin B (+ flucytosine) ตามด้วย fluconazole consolidation/maintenance และต้องวัด opening pressure ทุกครั้งเพื่อจัดการ raised ICP ด้วยการเจาะระบายซ้ำ (รายนี้ 12 cmH2O ยังปกติ) และเลื่อนเริ่ม ART ออกไปราว 4–6 สัปดาห์เพื่อลด IRIS\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Candida meningitis: Candida เป็น budding yeast ที่พบ pseudohyphae ได้ แต่ \"ไม่มีแคปซูล\" และเกิดเยื่อหุ้มสมองอักเสบเฉพาะกลุ่มเสี่ยงจำเพาะ เช่น ทารกแรกเกิด ผู้มี ventricular shunt หลังผ่าตัดประสาท หรือผู้ใช้ยาเสพติดฉีด — การที่ผู้ป่วยมี oral candidiasis เป็นแค่ตัวบ่งชี้ภูมิคุ้มกันต่ำ ไม่ได้แปลว่าเชื้อในน้ำไขสันหลังคือ Candida\n- Histoplasma meningitis: Histoplasma เป็นยีสต์ขนาดเล็กมากที่อยู่ \"ภายใน\" macrophage ไม่มีแคปซูลใส มักมาเป็นโรคแพร่กระจายพร้อมไข้เรื้อรัง ตับม้ามโต pancytopenia และแผลในปาก/ผิวหนัง\n- S. pneumoniae meningitis: เป็นแบคทีเรีย gram-positive diplococci ไม่ใช่ยีสต์ และให้ภาพเฉียบพลันรุนแรง คอแข็ง ซึมลง โดย CSF มี neutrophil หลักพันถึงหลักหมื่น ไม่ใช่ 5 เซลล์ lymphocyte\n- TB meningitis: เข้าได้กับ lymphocytic pleocytosis, protein สูง, glucose ต่ำ และเป็นโรคร่วมที่พบบ่อยใน HIV เช่นกัน แต่ AFB ไม่ใช่ยีสต์แตกหน่อมีแคปซูล มักดำเนินโรคพร้อมเส้นประสาทสมองพิการและ basal meningeal enhancement และเซลล์ใน CSF มักสูงกว่านี้ชัดเจน",
+  "src": "MED31 · [MED31] ผู้ปวยชายไทย อายุ 30 ป มาด้วยอาการปวดศีรษะมา 2 สัปดาห์ ตรวจร่างกายพบ oral\ncandidiasis, pruritic papular eruption multiple cervical lymph nodes enlargement size 1\ncm. Neuro sign no neck stiffness, no papilledema otherwise ENL ทํา lumbar puncture 12\ncmH2O wbc 5 cell เปน lymphocyte ทังหมด ย้อม CSF gram stain พบ multiple\nencapsulated budding yeast Protein 200 mg/dl sugar 30 mg% blood sugar 130 mg%\nจงให้การวินิจฉัย\nA. Candida meningitis\nB. Histoplasma meningitis\nC. S. pneumoniae meningitis\nD. TB meningitis\nE. Cryptococcal meningitis"
+ },
+ {
+  "id": "ID-OLDP-028",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A 36-year-old woman has had progressive exertional dyspnoea for 2 weeks and one week of low-grade fever with a non-productive cough; for the last 2-3 days she has been breathless even at rest. Examination: BT 38 C, BP 100/70 mmHg, PR 130/min, RR 30/min, mild pallor, no icteric sclerae, oral hairy leukoplakia present, normal heart sounds, tachypnoea with normal breath sounds and no adventitious sounds, rest within normal limits. ABG on room air: pH 7.45, PaO2 55 mmHg, PaCO2 30 mmHg, O2 saturation 80%. Besides oxygen therapy, which treatment is most appropriate?",
+  "choices": [
+   "Cotrimoxazole plus prednisolone",
+   "Cotrimoxazole alone, without corticosteroid",
+   "Ceftriaxone and ciprofloxacin",
+   "Anti-tuberculosis drugs",
+   "Furosemide and fluid restriction"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Cotrimoxazole ร่วมกับ prednisolone. oral hairy leukoplakia บ่งว่าผู้ป่วยติดเชื้อ HIV; อาการเหนื่อยค่อยเป็นค่อยไป 2 สัปดาห์ ไข้ต่ำ ไอแห้ง ฟังปอดปกติแต่ hypoxemia รุนแรง (PaO2 55, SaO2 80%) ร่วมกับ respiratory alkalosis และ A-a gradient กว้าง = ภาพคลาสสิกของ Pneumocystis jirovecii pneumonia ที่อาการไม่สัมพันธ์กับสิ่งที่ตรวจพบในปอด ยาหลักคือ cotrimoxazole ขนาดสูง 21 วัน และเนื่องจาก PaO2 < 70 mmHg (หรือ A-a gradient >= 35) จัดเป็น severe PCP ต้องให้ corticosteroid ร่วมด้วย ซึ่งลด respiratory failure และ mortality อย่างชัดเจน. ทำไมตัวอื่นไม่ใช่: cotrimoxazole เดี่ยว ๆ เลือกยาถูกแต่ขาด steroid ในราย severe ทำให้ผู้ป่วยแย่ลงในวันที่ 3-5 จากการอักเสบหลังเชื้อตาย; ceftriaxone + ciprofloxacin ใช้กับ bacterial pneumonia ซึ่งมักเฉียบพลัน เสมหะข้น และมี consolidation ที่ตรวจพบได้; anti-TB ใช้เมื่อมี CXR infiltrate/cavity หรือ AFB บวก ไม่เข้ากับปอดที่ฟังปกติและ desaturate เร็ว; furosemide + restrict fluid สำหรับ pulmonary edema ซึ่งไม่มี crepitation, JVP สูง หรือ cardiomegaly. หมายเหตุ: โพยบันทึกตัวเลือกไว้เพียง 4 ข้อ จึงเพิ่ม distractor ข้อที่ 5 (cotrimoxazole เดี่ยว) ตามรูปแบบของคลังข้อสอบ.",
+  "src": "MED31 · [MED31] ผู้ปวยหญิง 36 ปมาด้วยเหนือยง่ายขึนมา 2 สัปดาห์ 1 สัปดาห์เริมมีไข้ตาๆ ไอไม่มีเสมหะ 2-3 วันนี\nเหนือยมากอยู่เฉยๆก็เหนือย จึงมาโรงพยาบาล ตรวจร่างกาย BT 38 c BP 100/70 mmHg PR\n130/min RR 30/min HEENT mild pale, no icteric sclera, oral hairy leukoplakia positive.\nHeart normal, Chest tachypnea, normal breath sound no adventitious sound. Others\nWNL ABG (room air); pH 7.45, PO2 55 mmHg, PCO2 30 mmHg, O2 sat 80% นอกจาก\noxygen therapy แล้ว การรักษาทีเหมาะสมในผู้ปวยรายนีคือ\nA. Cotrimoxazole, prednisolone\nB. Cetriaxone and ciproﬂoxacin\nC. Anti TB drug\nD. Furosemide, restrict ﬂuid"
+ },
+ {
+  "id": "ID-OLDP-029",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with a copper-coloured papulosquamous rash involving the palms and soles, and is diagnosed with secondary syphilis. Which is the appropriate treatment?",
+  "choices": [
+   "Benzathine penicillin G 2.4 million units IM, single dose",
+   "Benzathine penicillin G 2.4 million units IM weekly for 3 doses",
+   "Aqueous crystalline penicillin G 18–24 million units/day IV for 10–14 days",
+   "Doxycycline 100 mg PO twice daily for 28 days",
+   "Ceftriaxone 250 mg IM single dose plus azithromycin 1 g PO single dose"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว (โพย บันทึกเฉพาะ choice ไม่ได้กากบาทคำตอบ แต่ตัวเลือกที่บันทึกไว้สองข้อเป็นการแยก early กับ late syphilis ตรง ๆ)\n\nกลไก/หลักการ: ผื่น papulosquamous สีแดงน้ำตาลที่ฝ่ามือ–ฝ่าเท้าเป็นลักษณะเฉพาะของ secondary syphilis ซึ่งจัดอยู่ในกลุ่ม early syphilis (ระยะ <1 ปี ได้แก่ primary, secondary, early latent) การรักษามาตรฐานคือ benzathine penicillin G 2.4 MU IM dose เดียว เพราะยาออกฤทธิ์ยาวคง treponemicidal level (>0.018 mcg/mL) ในเลือดได้ 2–3 สัปดาห์ ซึ่งพอสำหรับ generation time ที่ช้าของ T. pallidum ต้องเตือนผู้ป่วยเรื่อง Jarisch–Herxheimer reaction ใน 24 ชม.แรก และตามผล nontreponemal titer (RPR/VDRL) ที่ 6 และ 12 เดือน คาดหวัง 4-fold decline\n\nทำไมตัวเลือกอื่นผิด: (1) 2.4 MU weekly x 3 dose เป็นสูตรของ late latent / latent ที่ไม่ทราบระยะเวลา หรือ tertiary (cardiovascular/gummatous) ไม่ใช่ secondary — ให้เกินความจำเป็น (2) aqueous penicillin G IV 10–14 วัน ใช้ใน neurosyphilis / ocular–otosyphilis เท่านั้น ซึ่งเคสนี้ไม่มีอาการทางระบบประสาท (3) doxycycline 100 mg bid 28 วัน เป็นทางเลือกเมื่อแพ้ penicillin และเป็น late latent; ใน early syphilis ที่แพ้ penicillin ใช้ 14 วัน และไม่ใช่ first line เพราะข้อมูล efficacy ด้อยกว่า (4) ceftriaxone + azithromycin เป็นสูตร gonorrhoea/chlamydia ไม่ครอบคลุม syphilis (azithromycin มี macrolide resistance ของ T. pallidum สูงมาก)",
+  "src": "MED34 · ไม่ระบุรอบสอบ · [MED34] 2. Syphilis ผื่นpalm and sole tx.\na. Benzathine penicillin G 2.4 mU IM once\nb. Benzathine penicillin G 2.4 mU weekly 3 dose"
+ },
+ {
+  "id": "ID-OLDP-030",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A patient presents with a painful genital ulcer. He gives a history of penicillin allergy. Which antibiotic should be given?",
+  "choices": [
+   "Azithromycin 1 g orally as a single dose",
+   "Benzathine penicillin G 2.4 million units intramuscularly as a single dose",
+   "Doxycycline 100 mg orally twice daily for 14 days",
+   "Ceftriaxone 250 mg intramuscularly as a single dose",
+   "Acyclovir 400 mg orally three times daily for 7 days"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Azithromycin (1 g กินครั้งเดียว)\n\nกลไก: แผลที่อวัยวะเพศแบบ \"เจ็บ\" ชี้ไปที่ chancroid จากเชื้อ Haemophilus ducreyi (gram-negative coccobacilli เรียงตัวแบบ school of fish) ลักษณะแผลคือ deep, ขอบแผลไม่เรียบและ undermined ก้นแผลมีหนองสีเทาเหลือง กดเจ็บมาก มักมี tender suppurative inguinal lymphadenopathy (bubo) ร่วม ซึ่งต่างจาก chancre ของซิฟิลิสที่ไม่เจ็บและก้นแผลสะอาด แนวทาง CDC ให้ azithromycin 1 g กินครั้งเดียวเป็น first-line เพราะได้ผลดี ให้ครั้งเดียวจบ (adherence ดีในโรคติดต่อทางเพศสัมพันธ์) และไม่ใช่ beta-lactam จึงปลอดภัยในผู้ที่แพ้ penicillin ทางเลือกอื่นคือ ceftriaxone 250 mg IM ครั้งเดียว, ciprofloxacin 500 mg วันละ 2 ครั้ง 3 วัน หรือ erythromycin base 500 mg วันละ 3 ครั้ง 7 วัน และต้องเจาะระบาย bubo ที่ fluctuant พร้อมตรวจ HIV/ซิฟิลิสร่วมทุกราย\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- Benzathine penicillin G: เป็นยาของซิฟิลิสระยะแรก ซึ่งแผลไม่เจ็บ และผู้ป่วยรายนี้แพ้ penicillin จึงถูกตัดออกทั้งสองเหตุ (ตัวลวงหลักของข้อนี้)\n- Doxycycline 14 วัน: ใช้เป็นทางเลือกของซิฟิลิสในผู้แพ้ penicillin และใช้ใน LGV (21 วัน) แต่ H. ducreyi มีรายงานดื้อ tetracycline สูง จึงไม่ใช่ยาที่เลือกสำหรับ chancroid\n- Ceftriaxone 250 mg IM: เป็น alternative regimen ของ chancroid จริง แต่เป็น beta-lactam ซึ่งโจทย์ตั้งใจให้เลี่ยงเพราะระบุประวัติแพ้ penicillin ไว้ชัด (cross-reactivity ของ cephalosporin รุ่นใหม่ต่ำ ~1-2% แต่กรอบของข้อสอบคือให้เลือกยาที่ไม่ใช่กลุ่ม penicillin)\n- Acyclovir: ใช้ใน genital herpes ซึ่งเจ็บเช่นกัน แต่ลักษณะเป็นตุ่มน้ำใสหลายตุ่มแตกเป็นแผลตื้นกลุ่ม ๆ มี prodrome แสบคัน และมักเป็นซ้ำ ไม่ใช่แผลลึกก้นหนองเดี่ยว ๆ\n\nหมายเหตุ: หากแยก HSV จาก chancroid ทางคลินิกไม่ได้ แนวทางบางฉบับแนะนำให้ครอบคลุมทั้งคู่ และหากมองโจทย์เป็นซิฟิลิสในผู้แพ้ penicillin azithromycin 2 g ก็เคยเป็นทางเลือก (ปัจจุบันไม่แนะนำเพราะมีการดื้อยา) ทุกเส้นทางการตีความจึงลงที่ azithromycin ตรงกับที่โพยบันทึก",
+  "src": "MED31 · [MED31] 17.painful genital ulcer แพ ้penicillin ให ้ยาอะไร\n:azithromycin"
+ },
+ {
+  "id": "ID-OLDP-031",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A patient with HIV presents with clinical features of Pneumocystis pneumonia (PCP). Which of the following is NOT an investigation used to diagnose PCP?",
+  "choices": [
+   "Serum LDH",
+   "Induced sputum for Pneumocystis staining (GMS/Giemsa/DFA)",
+   "Bronchoalveolar lavage for Pneumocystis jirovecii",
+   "Chest radiograph",
+   "Serum beta-D-glucan"
+  ],
+  "answer": 0,
+  "note": "เฉลย Serum LDH\n\nกลไก: การวินิจฉัย PCP ต้องอาศัยการพบตัวเชื้อ Pneumocystis jirovecii จากสิ่งส่งตรวจในทางเดินหายใจ คือ induced sputum หรือ bronchoalveolar lavage (BAL) แล้วย้อม GMS, Giemsa, toluidine blue, direct fluorescent antibody หรือทำ PCR ซึ่ง BAL มีความไวสูงสุด (มากกว่า 90%) LDH ในเลือดสูงขึ้นได้จริงใน PCP จากการทำลายเนื้อปอด และใช้บอกความรุนแรง/พยากรณ์โรคหรือติดตามการรักษาได้ แต่สูงได้ในภาวะอื่นจำนวนมาก (hemolysis, lymphoma, การบาดเจ็บของเนื้อเยื่อ, ปอดอักเสบจากเหตุอื่น) จึงไม่จำเพาะและไม่ใช่การตรวจเพื่อวินิจฉัย ข้อนี้สอดคล้องกับ guideline ปัจจุบันที่จัด LDH เป็น supportive/prognostic marker ไม่ใช่ diagnostic test\n\nทำไมตัวเลือกอื่นผิด (คือเป็นการตรวจเพื่อวินิจฉัยจริง):\n- Induced sputum ย้อมหาเชื้อ: เป็นการตรวจแรกที่ไม่รุกล้ำ ถ้าพบเชื้อก็วินิจฉัยได้เลย\n- BAL: gold standard เมื่อ induced sputum ให้ผลลบ\n- Chest radiograph: แสดง bilateral perihilar/diffuse interstitial infiltrate เป็นการตรวจพื้นฐานที่ช่วยวินิจฉัย (HRCT เห็น ground-glass opacity ชัดกว่า)\n- Serum beta-D-glucan: ความไวสูง ใช้ช่วยวินิจฉัย/คัดออกในผู้ป่วยที่ทำ BAL ไม่ได้ ถือเป็น adjunctive diagnostic test",
+  "src": "MED30 · [MED30] 16. Given symptoms of pneumocystis pneumonia (PCP) , which one is not investigation?\nAns : LDH"
+ },
+ {
+  "id": "ID-OLDP-032",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A patient with known HIV infection presents with fever and headache, and neck stiffness is positive on examination. Which investigation should be obtained first?",
+  "choices": [
+   "Non-contrast CT of the brain before lumbar puncture",
+   "Immediate lumbar puncture without any neuroimaging",
+   "Contrast-enhanced CT of the brain as the first study",
+   "MRI of the brain with gadolinium as the first study",
+   "Electroencephalography (EEG)"
+  ],
+  "answer": 0,
+  "note": "เฉลย: CT brain non-contrast ก่อนเจาะหลัง\n\nกลไก/เหตุผล: ผู้ป่วย HIV ที่มีไข้ ปวดศีรษะ และคอแข็ง ต้องนึกถึงทั้งเยื่อหุ้มสมองอักเสบ (bacterial, TB, cryptococcal) และรอยโรคกินที่ในสมอง (cerebral toxoplasmosis, CNS lymphoma, tuberculoma, cryptococcoma) ที่อาจมี mass effect หรือ obstructive hydrocephalus ร่วมด้วย แนวทาง IDSA ถือว่า immunocompromised state (รวม HIV), focal neurological deficit, new-onset seizure, papilledema และระดับความรู้สึกตัวลดลง เป็นข้อบ่งชี้ให้ทำ neuroimaging ก่อน LP เพื่อลดความเสี่ยง herniation; non-contrast CT ทำได้เร็ว มีทุกโรงพยาบาล และเพียงพอต่อการดู midline shift / hydrocephalus / hemorrhage (ถ้าสงสัย bacterial meningitis ให้เจาะ hemoculture และเริ่ม empirical antibiotic ± dexamethasone ก่อนส่ง CT ไม่ต้องรอ) เมื่อ CT ไม่มีข้อห้ามจึงเจาะหลัง วัด opening pressure และส่ง cell count, protein/sugar, India ink, cryptococcal antigen, AFB/TB-PCR, culture\n\nทำไมข้ออื่นผิด: LP ทันทีโดยไม่ทำ imaging — เสี่ยง herniation เพราะกลุ่ม HIV พบ space-occupying lesion ได้บ่อย; CT with contrast และ MRI with gadolinium เห็นรอยโรค OI ชัดกว่าจริง แต่ใช้เวลา/ต้องรอคิว และไม่ใช่การตรวจที่ใช้ตัดสิน \"เจาะหลังได้หรือไม่\" (เก็บไว้ทำต่อเมื่อ CT ผิดปกติหรือมี focal deficit); EEG ใช้เมื่อสงสัย seizure/encephalitis ไม่ได้ช่วยประเมินความปลอดภัยก่อนเจาะหลัง",
+  "src": "MED32 · Loop 3 · \"[MED32] 40. ผู้ป่ วย HIV stiff neck +ve investigate อะไร :CT non contrast\""
+ },
+ {
+  "id": "ID-OLDP-033",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A pregnant woman with risk factors for HIV infection has a negative anti-HIV test. She is completely asymptomatic. What should be done next?",
+  "choices": [
+   "Schedule a repeat anti-HIV test in about 2 months because of the window period",
+   "Report the result as HIV negative and tell her no further testing is needed",
+   "Start antiretroviral therapy immediately",
+   "Send a CD4 count to look for HIV infection",
+   "Send an HIV Western blot to confirm the negative result"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: นัดมาตรวจ anti-HIV ซ้ำ (โพยบันทึกว่า 2 เดือน)\n\nกลไก: anti-HIV เป็นการตรวจแอนติบอดี ซึ่งต้องรอให้ร่างกายสร้างขึ้นก่อน ช่วง window period (ตั้งแต่ติดเชื้อจนตรวจแอนติบอดีขึ้น) ทำให้ผลลบครั้งเดียวในผู้ที่มีความเสี่ยงเพิ่งเกิดขึ้น ไม่สามารถตัดการติดเชื้อออกได้ จึงต้องนัดตรวจซ้ำ ยิ่งในหญิงตั้งครรภ์ยิ่งสำคัญเพราะการวินิจฉัยเปลี่ยนการดูแลทันที (ให้ ART เพื่อป้องกันการถ่ายทอดเชื้อสู่ลูก)\n\nข้อควรระวัง: โพยบันทึกคำตอบไว้พร้อมเครื่องหมายคำถาม และช่วงเวลา \"2 เดือน\" ไม่ตรงกับแนวทางปัจจุบันเป๊ะ ๆ — แนวทางฝากครรภ์ของไทยให้ตรวจ anti-HIV ซ้ำในไตรมาสที่ 3 และหากมีความเสี่ยงชัดเจนช่วงที่ผ่านมาให้ตรวจซ้ำที่ประมาณ 1 เดือน หรือใช้ HIV NAT/4th generation Ag-Ab assay เพื่อจับ acute infection ให้เร็วขึ้น ให้ยึดหลักการ \"ผลลบในระยะ window ต้องตรวจซ้ำ\" มากกว่าตัวเลขเดือนที่โพยจดไว้\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- แจ้งว่าไม่ติดเชื้อและจบการตรวจ เป็นความผิดพลาดหลักของข้อนี้ เพราะละเลย window period ในคนที่มีความเสี่ยง\n- เริ่ม ART ทันทีโดยยังไม่มีการวินิจฉัย ไม่ถูกต้อง (คนละเรื่องกับ PrEP/PEP ซึ่งมีข้อบ่งชี้และการปรึกษาเฉพาะของตัวเอง)\n- CD4 count เป็นการประเมินระดับภูมิคุ้มกัน ใช้หลังวินิจฉัยแล้ว ไม่ใช่การตรวจวินิจฉัย HIV และค่าปกติไม่ตัดโรค\n- Western blot เป็นการตรวจยืนยันผล บวก (และไทยใช้ 3-test strategy แทนไปแล้ว) ไม่มีที่ใช้ยืนยันผลลบ",
+  "src": "MED34 · [MED34] 8. คนไข ้ท ้อง มีความเสี่ยงต่อ HIV ตรวจ anti-hiv ไม่ขึ้น คนไข ้ไม่มีอาการอะไรเลย ควรทําอะไรต่อ\na. นัดมาตรวจใหม่ 2 เดือน?"
+ },
+ {
+  "id": "ID-OLDP-034",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A woman is treated for candidiasis, but the infection returns one month after she completed treatment. What should be done next?",
+  "choices": [
+   "Check a blood glucose level to look for underlying diabetes mellitus",
+   "Treat her sexual partner with fluconazole at the same time",
+   "Start long-term suppressive fluconazole without any further investigation",
+   "Send a vaginal swab for bacterial culture and treat for bacterial vaginosis",
+   "Perform a Pap smear with HPV testing"
+  ],
+  "answer": 0,
+  "note": "เฉลย: ตรวจระดับน้ำตาลในเลือด เพื่อมองหาโรคเบาหวานที่ซ่อนอยู่\n\nกลไก: Candida เป็นเชื้อประจำถิ่น การเป็นซ้ำเร็วหลังรักษาหายแล้วบ่งว่ามี host factor ที่ทำให้เชื้อกลับมาเติบโตได้ ปัจจัยที่พบบ่อยที่สุดและแก้ไขได้คือเบาหวานที่ควบคุมไม่ดี เพราะ (1) ระดับกลูโคสในเลือดและในเยื่อบุที่สูงเป็นอาหารให้ยีสต์และเพิ่มการเกาะติดของ Candida กับ epithelium (2) glucosuria เปลี่ยนสภาพแวดล้อมบริเวณอวัยวะเพศ (3) hyperglycaemia กด neutrophil chemotaxis และ phagocytosis ทำให้กำจัดเชื้อได้ลดลง ดังนั้นในผู้ป่วย recurrent candidiasis จึงต้องคัดกรองเบาหวาน (FPG/HbA1c) และทบทวนปัจจัยอื่น เช่น การได้ยาปฏิชีวนะ สเตียรอยด์ การตั้งครรภ์ ยาคุมกำเนิด และภาวะกดภูมิคุ้มกัน\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- รักษาคู่นอนพร้อมกัน: vulvovaginal candidiasis ไม่ถือเป็นโรคติดต่อทางเพศสัมพันธ์ แนวทางไม่แนะนำให้รักษาคู่นอน ยกเว้นคู่นอนมีอาการ balanitis เอง\n- ให้ fluconazole กดยาวโดยไม่ตรวจอะไรเพิ่ม: การให้ maintenance therapy (เช่น fluconazole สัปดาห์ละครั้ง 6 เดือน) ใช้ในนิยาม recurrent VVC จริง แต่การให้โดยไม่หาสาเหตุพื้นฐานเป็นการรักษาปลายเหตุ และพลาดการวินิจฉัยเบาหวาน\n- เพาะเชื้อแบคทีเรียและรักษา bacterial vaginosis: คนละพยาธิกำเนิด ไม่มีข้อบ่งชี้เมื่ออาการเข้ากับ candida ที่ยืนยันแล้ว\n- Pap smear/HPV: เป็นการคัดกรองมะเร็งปากมดลูก ไม่เกี่ยวกับการเป็นเชื้อราซ้ำ\n\nหมายเหตุเทียบกับแนวทางปัจจุบัน: คำตอบของโพย (ตรวจน้ำตาล) สอดคล้องกับแนวทาง แต่ในเวชปฏิบัติจริงยังมี 2 อย่างที่ควรคิดควบคู่กัน คือ (1) ส่งเพาะเชื้อราเพื่อยืนยันสปีชีส์ เพราะ recurrent case อาจเป็น Candida glabrata ที่ตอบสนองต่อ azole ไม่ดี และ (2) พิจารณาตรวจ anti-HIV เมื่อมีปัจจัยเสี่ยงหรือมี candidiasis ซ้ำ ๆ ในตำแหน่งอื่น (ปาก คอหอย) ซึ่งนับเป็น OI indicator — ทั้งสองข้อไม่ได้ขัดกับคำตอบ แต่เบาหวานเป็นสาเหตุที่พบบ่อยที่สุดและเป็นจุดที่ข้อสอบต้องการ",
+  "src": "MED31 · [MED31] 56. ผญ มาด ้วยติดเชือ candida รักษาแล ้วกลับมาเป็นอีกหลังจากนัน1เดือน ควรทําอะไรต่อ\nตอบ ตรวจนําตาล"
+ },
+ {
+  "id": "ID-OLDP-035",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "A woman with multiple sexual partners has urethral discharge and dysuria with a clear discharge. She has taken doxycycline for several days with no improvement. NAAT is negative for both N. gonorrhoeae and C. trachomatis. Which pathogen is the most likely cause?",
+  "choices": [
+   "Mycoplasma genitalium",
+   "Ureaplasma urealyticum",
+   "Neisseria gonorrhoeae",
+   "Trichomonas vaginalis",
+   "Herpes simplex virus"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Mycoplasma genitalium (เลือกจากตัวเลือกที่ โพย บันทึกไว้สามข้อ; โพย ไม่ได้กากบาทคำตอบ)\n\nกลไก: M. genitalium เป็นสาเหตุอันดับหนึ่งของ non-gonococcal non-chlamydial urethritis และเป็นสาเหตุที่พบบ่อยที่สุดของ persistent/recurrent urethritis หลังได้ doxycycline เพราะ tetracycline เป็นเพียง bacteriostatic ต่อเชื้อที่ไม่มี cell wall นี้ อัตรา eradication เพียงประมาณ 30–45% วินิจฉัยด้วย NAAT เฉพาะเชื้อ (ไม่ขึ้นใน routine culture เพราะโตช้ามาก) และแนวทางปัจจุบันให้รักษาแบบ sequential คือ doxycycline 7 วันเพื่อลด bacterial load แล้วตามด้วย azithromycin (ถ้าไม่มี macrolide resistance) หรือ moxifloxacin ถ้า macrolide resistance positive ในหญิงเชื้อนี้ยังสัมพันธ์กับ cervicitis และ PID\n\nทำไมตัวเลือกอื่นผิด: Ureaplasma urealyticum บทบาทก่อโรคยังไม่ชัด (พบเป็น commensal ในคนไม่มีอาการจำนวนมาก) และโดยทั่วไป susceptible ต่อ doxycycline จึงไม่อธิบายการไม่ตอบสนอง; N. gonorrhoeae ถูกตัดออกด้วย NAAT ที่เป็นลบ และลักษณะ discharge ใสไม่ใช่ purulent; Trichomonas vaginalis เป็น distractor ที่ดีเพราะ doxycycline ไม่ครอบคลุมและทำให้ urethritis เรื้อรังได้จริง (ในเวชปฏิบัติต้องส่ง wet prep/NAAT ด้วย) แต่ไม่อยู่ในตัวเลือกที่ โพย บันทึก และมักมี discharge เหลืองเขียวมีกลิ่น คันช่องคลอด; HSV ทำให้ urethritis ได้แต่ปวดแสบมากและพบแผล vesicle/ulcer ร่วม",
+  "src": "MED34 · ไม่ระบุรอบสอบ · [MED34] 6. คนไข ้เพศ ญ multiple partners มีอาการ Urethral discharge , dysuria , central clear\ndischarge กิน Doxycycline มาหลายวัน อาการไม่กินขึ้น ทํา NAT negative for N. gonorrhea,\nChlamydia ถามว่าเชื้อก่อโรคควรเป็นตัวไหน\na. Mycoplasma genitalum\nb. Ureaplasma urealyticum\nc. N. gonorrhea"
+ },
+ {
+  "id": "ID-OLDP-036",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient has progressively worsening dyspnoea. Chest radiograph shows infiltration of the right lower lobe, and sputum Gram stain shows no causative organism. What is the most likely diagnosis?",
+  "choices": [
+   "Reactivation pulmonary tuberculosis",
+   "Pneumocystis jirovecii pneumonia",
+   "Pneumococcal community-acquired pneumonia",
+   "Pulmonary cryptococcosis",
+   "Pulmonary Kaposi sarcoma"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Reactivation pulmonary tuberculosis\n\nกลไก: ในผู้ติดเชื้อ HIV ที่ CD4 ลดลง cell-mediated immunity บกพร่อง granuloma ที่เคยกักเชื้อ M. tuberculosis ไว้จึงแตก เกิด reactivation ลักษณะภาพรังสีมัก 'atypical' ต่างจากคนภูมิคุ้มกันปกติ คือพบ infiltration ที่ lower lobe หรือ middle lobe, ไม่ค่อยมี cavity, อาจมี hilar/mediastinal lymphadenopathy หรือ miliary pattern ได้ อาการค่อยเป็นค่อยไปหลายสัปดาห์ (เหนื่อยมากขึ้น ไข้ต่ำๆ น้ำหนักลด) ข้อสำคัญคือ Gram stain ไม่ขึ้นเชื้อ เพราะผนังเซลล์ที่มี mycolic acid ติดสี Gram ได้ไม่ดี ต้องส่ง AFB smear, Xpert MTB/RIF และ mycobacterial culture\n\nทำไมตัวเลือกอื่นไม่ใช่:\n- PCP: Gram stain ก็ไม่ขึ้นเชื้อเช่นกัน แต่ภาพรังสีเป็น diffuse bilateral perihilar/interstitial infiltrate ไม่ใช่ focal lobar และมักมี marked hypoxia กับ exertional desaturation ชัดเจน พร้อม LDH สูงเด่น\n- Pneumococcal CAP: อาการเฉียบพลันเป็นวัน เสมหะเป็นหนอง และ Gram stain ควรเห็น gram-positive diplococci จำนวนมาก ซึ่งขัดกับข้อมูลที่ให้\n- Pulmonary cryptococcosis: มักพบเมื่อ CD4 ต่ำมากและมาพร้อมอาการเยื่อหุ้มสมองอักเสบ ภาพรังสีเป็น nodule/mass-like ต้องย้อม India ink หรือส่ง cryptococcal antigen\n- Pulmonary Kaposi sarcoma: ต้องมี mucocutaneous KS lesion นำมาก่อนเกือบทุกราย ภาพรังสีเป็น peribronchial/nodular infiltrate ตาม bronchovascular bundle ร่วมกับ pleural effusion เลือด\n\nหมายเหตุ: โพยเขียนว่า \"sputum gram neutral\" ซึ่งตีความว่า Gram stain ไม่พบเชื้อก่อโรค ข้อความต้นฉบับพิมพ์ไม่สมบูรณ์ แต่คำตอบที่บันทึกไว้ชัดเจนว่าเป็น reactivate TB จึงคงข้อนี้ไว้พร้อมระดับความมั่นใจปานกลาง",
+  "src": "MED31 · [MED31] 49. HIV, เหนือยมากขึน, infiltration at right lower lobe, sputum gram neutral —> Reactivate TB"
+ },
+ {
+  "id": "ID-OLDP-037",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient presents with a new seizure and has no focal neurological deficit. What should be done next?",
+  "choices": [
+   "CT brain",
+   "Lumbar puncture",
+   "CD4/CD8 count",
+   "HIV viral load",
+   "MRI brain"
+  ],
+  "answer": 0,
+  "note": "เฉลย: CT brain — กลไก/เหตุผล: ผู้ป่วย HIV ที่ชักครั้งแรกมีโอกาสสูงที่จะมี space-occupying lesion เช่น cerebral toxoplasmosis (ring-enhancing lesion ที่ basal ganglia), primary CNS lymphoma, tuberculoma, cryptococcoma หรือ PML แม้ตรวจร่างกายจะไม่พบ focal deficit (lesion ที่ยังเล็กหรืออยู่ในบริเวณ silent area ก็ทำให้ชักได้) จึงต้องทำ neuroimaging ก่อนเจาะหลังทุกครั้งเพื่อประเมิน mass effect และความเสี่ยง herniation; CT with contrast ทำได้เร็วและมีทุกโรงพยาบาลจึงเป็นขั้นตอนถัดไปในห้องฉุกเฉิน — ทำไมตัวเลือกอื่นผิด: lumbar puncture ทำได้แต่ต้องทำหลังภาพถ่ายสมองยืนยันว่าไม่มี mass effect/midline shift ไม่ใช่ขั้นตอนแรก; CD4/CD8 บอกระดับภูมิคุ้มกันและช่วยจัดลำดับโรคแทรกซ้อนแต่ไม่ได้จัดการปัญหาเฉียบพลันและผลไม่ทันใช้; viral load ใช้ติดตามการรักษา ART ไม่เกี่ยวกับสาเหตุการชักโดยตรง; MRI brain ไวกว่าจริง (ดี PML, small lesion, temporal lobe) แต่เข้าถึงช้า ราคาสูง จึงเป็นขั้นตอนตามมาเมื่อ CT ไม่อธิบายอาการ ไม่ใช่การตรวจถัดไปทันที",
+  "src": "MED31 · sitting ไม่ระบุ · [MED31] 55.คนไข ้เป็น HIV มาด ้วย seizure no neurodeficit what should do next?\nA.Lumbar puncture\nB.CT Brain\nC.CD4/CD8\nD.viral load\nE.MRI brain\nAns CT Brain"
+ },
+ {
+  "id": "ID-OLDP-038",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient presents with cough and dyspnoea. A stain of the respiratory specimen shows beaded, branching filamentous rods that are weakly (partially) acid-fast on modified acid-fast stain. Which organism is most likely?",
+  "choices": [
+   "Nocardia species",
+   "Mycobacterium tuberculosis",
+   "Mycobacterium avium complex",
+   "Rhodococcus equi",
+   "Actinomyces israelii"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Nocardia (โพยบันทึกตรงกันถึงสามครั้งในรุ่น MED32)\n\nกลไก: Nocardia เป็นแบคทีเรียแกรมบวกรูปแท่งแตกแขนงเป็นสายคล้ายเส้นใยและติดสีแบบ partially acid-fast เพราะผนังเซลล์มี mycolic acid สายสั้นกว่าเชื้อวัณโรค จึงย้อมติดด้วย modified acid-fast (Kinyoun ที่ลดความเข้มข้นของกรด) แต่ไม่ติดด้วย Ziehl-Neelsen มาตรฐานเท่าเชื้อวัณโรค ผู้ป่วย HIV ที่ CD4 ต่ำมีภูมิคุ้มกันชนิดเซลล์บกพร่องจึงติดเชื้อนี้ทางการหายใจ เกิด pulmonary nocardiosis ที่ไอ เหนื่อย ภาพรังสีเห็นเป็น nodule/ก้อน/แผลโพรง และอาจกระจายไปสมองได้ การรักษาใช้ high-dose co-trimoxazole เป็นหลัก ความสำคัญของข้อนี้อยู่ที่การไม่ด่วนสรุปว่าอะไรที่ย้อมติดสีทนกรดคือวัณโรคทั้งหมด — รูปแบบแตกแขนงเป็นสายคือจุดชี้ขาด\n\nหมายเหตุ: โจทย์เดิมให้รูปภาพการย้อม AFB มาดู ซึ่งไม่สามารถนำภาพมาลงได้ จึงบรรยายลักษณะที่เห็นในภาพ (branching, beaded, partially acid-fast) แทน\n\nทำไมตัวเลือกอื่นผิด: M. tuberculosis ย้อมติดสีทนกรดเข้ม เป็นแท่งเรียวไม่แตกแขนง; MAC พบเมื่อ CD4 ต่ำมากและมักเป็น disseminated ที่มีไข้ น้ำหนักลด ท้องเสีย ตับม้ามโต มากกว่าอาการทางปอดเด่น และก็เป็นแท่งไม่แตกแขนง; Rhodococcus equi เป็น partially acid-fast ในผู้ป่วยภูมิคุ้มกันต่ำได้จริงและเป็น distractor ที่ดี แต่เป็น coccobacilli ไม่แตกแขนงเป็นสาย; Actinomyces แตกแขนงเป็นสายเหมือนกันแต่ไม่ติดสีทนกรดเลย และเป็น anaerobe ที่มักลุกลามเป็นก้อนแข็งมี sinus tract และ sulfur granule",
+  "src": "MED32 · รอบสอบ: Loop นี / เพิมเติม · \"[MED32] 1. คนไข ้HIV มีอาการไอ เหนือย ให ้รูป AFB Ans: Nocardia\" / \"[MED32] 22.คนไข ้HIV มีอาการไอ เหนือย ให ้รูป AFB Nocardia\""
+ },
+ {
+  "id": "ID-OLDP-039",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient presents with meningitis and a positive neck stiffness. Which treatment should be started?",
+  "choices": [
+   "Amphotericin B 0.7 mg/kg IV q 24 hr",
+   "Fluconazole 400 mg PO q 24 hr",
+   "Ceftriaxone 2 g IV q 12 hr plus dexamethasone",
+   "Pyrimethamine plus sulfadiazine",
+   "Acyclovir 10 mg/kg IV q 8 hr"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: Amphotericin B 0.7 mg/kg IV q 24 hr. กลไก/เหตุผล: ผู้ป่วย HIV (CD4 มักต่ำกว่า 100) ที่มาด้วย meningitis + stiff neck ต้องคิดถึง cryptococcal meningitis เป็นอันดับแรก การรักษาแบ่งเป็น induction ด้วย amphotericin B deoxycholate 0.7–1 mg/kg/วัน IV, consolidation ด้วย fluconazole 400 mg/วัน 8 สัปดาห์ และ maintenance fluconazole 200 mg/วัน พร้อมกับต้องทำ therapeutic LP ลด ICP. ข้อควรระวังเทียบกับแนวทางปัจจุบัน: induction ที่ถูกต้องคือ amphotericin B ร่วมกับ flucytosine 100 mg/kg/วัน (ไม่ใช่ amphotericin B เดี่ยว ๆ) และ WHO 2022 / AMBITION-cm แนะนำ liposomal amphotericin B ครั้งเดียว 10 mg/kg ร่วมกับ flucytosine + fluconazole เป็นสูตรที่ต้องการมากกว่า — คำตอบที่โพยบันทึกจึงถูกเฉพาะตัวยาหลัก แต่ไม่ครบสูตร. ทำไมตัวเลือกอื่นผิด: Fluconazole 400 mg เดี่ยว ๆ ใช้เป็น consolidation/maintenance ไม่ใช่ induction (ใช้เป็น induction เดี่ยวมี mortality สูงกว่าอย่างชัดเจน); Ceftriaxone + dexamethasone เป็นการรักษา acute bacterial meningitis ซึ่งใน HIV ที่ดำเนินโรคช้าและ CSF เป็น lymphocyte ไม่เข้ากับภาพนี้; Pyrimethamine + sulfadiazine ใช้รักษา cerebral toxoplasmosis ที่มาด้วย focal deficit และ ring-enhancing lesion ไม่ใช่ meningeal signs; Acyclovir ใช้ใน HSV encephalitis ที่มาด้วย fever + altered mental status/temporal lobe involvement",
+  "src": "MED31 · ไม่ระบุครั้งสอบ · [MED31] 6. HIV meningitis, stiff neck positive โจทย์ถามว่า จะใ ้ยาอะไร : Amphotericin B 0.7 mg/kg IV q 24 hr"
+ },
+ {
+  "id": "ID-OLDP-040",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient presents with multiple umbilicated skin papules. What is the most likely diagnosis?",
+  "choices": [
+   "Disseminated fungal infection (cryptococcosis or talaromycosis)",
+   "Kaposi sarcoma",
+   "Bacillary angiomatosis",
+   "Eosinophilic folliculitis",
+   "Papular secondary syphilis"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: disseminated fungal infection. กลไก: ในผู้ป่วย HIV ที่ CD4 ต่ำ (มักน้อยกว่า 100) เชื้อราที่กระจายทางกระแสเลือด — Cryptococcus neoformans, Talaromyces (Penicillium) marneffei ซึ่งพบมากในไทยและเอเชียตะวันออกเฉียงใต้ และ Histoplasma — ไปฝังที่ผิวหนังทำให้เกิดตุ่ม papule ที่มีรอยบุ๋มตรงกลาง (umbilicated/molluscum-like papule) กระจายที่หน้า คอ และลำตัว การวินิจฉัยต้องขูดหรือ biopsy ย้อม Wright/GMS และเพาะเชื้อ พร้อมเจาะเลือดเพาะและตรวจ serum cryptococcal antigen เพราะเป็นสัญญาณของโรคที่กระจายทั่วร่างกายซึ่งต้องรักษาด้วย amphotericin B ทันที. จุดที่ต้องระวังและเป็นแก่นของข้อนี้: molluscum contagiosum ก็ให้ตุ่ม umbilicated เหมือนกันและพบบ่อยใน HIV แต่จะไม่มีอาการทางระบบ ตุ่มไม่เจ็บ ไม่มีไข้ ไม่โตเร็ว จึงต้องแยกด้วยการมีไข้/น้ำหนักลด/ตุ่มเพิ่มเร็ว และยืนยันด้วยการย้อมเชื้อ — ข้อสอบต้องการให้ตอบโรคที่พลาดไม่ได้ (must-not-miss). ทำไมตัวเลือกอื่นผิด: Kaposi sarcoma เป็น patch/plaque/nodule สีม่วงแดง ไม่บุ๋มกลาง; Bacillary angiomatosis เป็นตุ่มแดงสด friable เลือดออกง่ายคล้าย pyogenic granuloma; Eosinophilic folliculitis เป็นตุ่ม follicular คันมากที่ลำตัวและหน้า ไม่มี umbilication; papular secondary syphilis เป็นผื่นแดงน้ำตาลกระจายรวมฝ่ามือฝ่าเท้าและมี lymphadenopathy ไม่ใช่ตุ่มบุ๋มกลาง. หมายเหตุ: ข้อความในโพยส่วนหลังเป็น OCR ที่อ่านไม่ออก ('ñañg ... Marilyn DDX -31in') แต่ทั้งหัวข้อและคำตอบที่บันทึกไว้ชัดเจน",
+  "src": "MED31 · ไม่ระบุครั้งสอบ · [MED31] Multiple Umbilicated papule + HIV = ñañg Disseminated fungal infection Marilyn DDX -31in"
+ },
+ {
+  "id": "ID-OLDP-041",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "An HIV-infected patient presents with progressively worsening dyspnoea. Chest radiograph shows an infiltrate at the right lower lobe and sputum Gram stain shows no organisms. Which diagnosis is most likely?",
+  "choices": [
+   "Reactivation pulmonary tuberculosis",
+   "Pneumocystis jirovecii pneumonia",
+   "Streptococcus pneumoniae community-acquired pneumonia",
+   "Pulmonary cryptococcosis",
+   "Pulmonary Kaposi sarcoma"
+  ],
+  "answer": 0,
+  "note": "เฉลย: Reactivation pulmonary tuberculosis (ตามที่โพยบันทึกไว้). ในผู้ติดเชื้อ HIV วัณโรคเป็น opportunistic infection ที่พบบ่อยที่สุดในประเทศไทย และเมื่อภูมิคุ้มกันต่ำ ภาพรังสีมักไม่ตรงตำรา คือเป็น infiltrate ที่ lower lobe หรือแบบ primary-like (ต่อมน้ำเหลืองโต, miliary) ได้ ไม่จำเป็นต้องเป็น upper lobe cavity ส่วนการย้อมกรัมเสมหะไม่พบเชื้อก่อโรค (โพยเขียนว่า sputum gram neutral) เข้ากับเชื้อที่ย้อมกรัมไม่ติด จึงต้องส่ง AFB smear, Xpert MTB/RIF และ mycobacterial culture. ทำไมตัวอื่นไม่ใช่: PCP ให้ diffuse bilateral interstitial infiltrate ไม่ใช่ focal lobar และมักไม่มีเสมหะเลย; pneumococcal pneumonia อาการเฉียบพลันหนึ่งถึงสองวัน ไข้สูงหนาวสั่น เสมหะเป็นหนอง และ Gram stain มักเห็น gram-positive diplococci ชัดเจน; pulmonary cryptococcosis มักเป็น nodule/mass และพบร่วมกับเยื่อหุ้มสมองอักเสบ; pulmonary Kaposi sarcoma มักมี mucocutaneous lesion นำมาก่อน และให้ peribronchovascular nodule กับ hemorrhagic pleural effusion. ข้อจำกัด: ข้อนี้เป็น fragment สั้น ไม่ได้บันทึกระยะเวลา อาการร่วม หรือระดับ CD4 จึงยึดคำเฉลยที่โพยบันทึกไว้เป็นหลัก.",
+  "src": "MED31 · [MED31] 49. HIV, เหนือยมากขึน, infiltration at right lower lobe, sputum gram neutral —> Reactivate TB"
+ },
+ {
+  "id": "ID-OLDP-042",
+  "lec": "I03",
+  "lecture": "โรคติดเชื้อ: เอชไอวีและโรคติดเชื้อฉวยโอกาส (ยังไม่ระบุคาบ)",
+  "q": "Which body fluid is the least likely route of HIV transmission?",
+  "choices": [
+   "Urine",
+   "Blood",
+   "Semen",
+   "Cervicovaginal secretions",
+   "Breast milk"
+  ],
+  "answer": 0,
+  "note": "เฉลยตามโพย: urine — กลไก: การติดเชื้อ HIV ต้องมีไวรัสปริมาณมากพอสัมผัสเยื่อบุที่ฉีกขาดหรือเข้ากระแสเลือดโดยตรง สารคัดหลั่งที่ถือว่าติดเชื้อคือ เลือด น้ำอสุจิ สารคัดหลั่งช่องคลอด/ปากมดลูก น้ำนม และของเหลวในโพรงร่างกาย (CSF, pleural, peritoneal, amniotic) ส่วนปัสสาวะ น้ำลาย น้ำตา เหงื่อ อุจจาระ และอาเจียน มีปริมาณไวรัสน้อยมากจนไม่เคยมีรายงานการติดต่อ (ปัสสาวะยังมี urea, pH และ osmolality ที่ไม่เอื้อต่อไวรัส) จึงไม่ถือเป็นสารคัดหลั่งเสี่ยงตามหลัก universal precaution ยกเว้นเมื่อปนเลือดให้เห็นชัด — ทำไมตัวเลือกอื่นผิด: เลือดเป็นเส้นทางที่เสี่ยงที่สุด (การรับเลือดที่ปนเชื้อเสี่ยงประมาณ 90–95%, เข็มตำ ~0.3%); น้ำอสุจิมี viral load สูงและเป็นเส้นทางหลักของการติดต่อทางเพศสัมพันธ์ (receptive anal intercourse ~1.4% ต่อครั้ง); สารคัดหลั่งช่องคลอดทำให้เกิดการติดต่อทั้งชายและหญิงและเพิ่มความเสี่ยงเมื่อมีแผลหรือโรคติดต่อทางเพศสัมพันธ์ร่วม; น้ำนมทำให้เกิด mother-to-child transmission สะสมได้ราว 15–20% หากไม่ได้รับ ART จึงทั้งสี่ข้อเป็นเส้นทางที่ติดต่อได้จริง",
+  "src": "MED31 · sitting ไม่ระบุ · [MED31] 56.HIVติดผ่านrouteไหนยากสุด (ตามโพย)\nAns urine"
+ }
+]
