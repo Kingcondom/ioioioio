@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 20 ก.ย. 2569)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 20 ก.ย. 2569 · รอบที่ 2)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -52,7 +52,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 9**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 10**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -65,27 +65,32 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 ## 2. ที่อยู่ไฟล์
 
 ```
-scratchpad/med421/
-├── build/                     ← ต้นฉบับ artifact (publish จากที่นี่)
-│   ├── index.html             ← หน้าเว็บ (39,730 ตัวอักษร)
-│   └── data/
-│       ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
-│       ├── nl.json            ← พจนานุกรม นล. 655 รหัส (218 KB)
-│       ├── air.json (3 คาบ)   cardio.json (3)  chest.json (2)
-│       └── nephro.json (1)    neuro.json (4)
-├── nl/                        ← งานแกะเกณฑ์ นล.
-│   ├── NL_syllabus.pdf        ← ประกาศแพทยสภา 4/2567 · 106 หน้า · ไม่มี text layer
-│   ├── img/056.png–074.png    ← ภาค ข. 19 หน้า (อ่านครบแล้ว)
-│   ├── imgA/006.png–047.png   ← ภาค ก. 42 หน้า (อ่านครบแล้ว)
+/home/user/ioioioio/          ← repo · branch claude/internal-med-learning-web-j9ca6l
+├── artifact/                  ← ต้นฉบับ artifact (publish จากที่นี่)
+│   ├── index.html             ← หน้าเว็บ (43 KB)
+│   ├── README.md              ← วิธีเพิ่มคาบใหม่ + schema ย่อ
+│   ├── data/
+│   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
+│   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
+│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (2)
+│   │   └── nephro.json (1)    neuro.json (5)
+│   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py ·
+│                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
+│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
+├── nl/                        ← งานแกะเกณฑ์ นล. (เสร็จแล้ว ไม่ต้องทำซ้ำ)
 │   ├── vis/056.txt–074.txt    ← ผลอ่านภาค ข. ด้วยสายตา
 │   ├── visA/010.txt–047.txt   ← ผลอ่านภาค ก. ด้วยสายตา + _scheme.md (โครงรหัส)
 │   ├── nl_partB.json (511)  ·  nl_partA.json (698)
 │   ├── build_vis.py · build_visA.py   ← vis*/ → nl_part*.json
-│   └── merge_full.py          ← รวมทั้งสองภาคเข้า build/data/nl.json + แก้รหัสผิด
-├── ref/curriculum-topics-2569.md   ← หัวข้อตามหลักสูตรทางการ
-├── verify.py                  ← ทดสอบด้วย Playwright (ต้องผ่านก่อน publish ทุกครั้ง)
-└── build_*.py                 ← สคริปต์สร้างคาบแต่ละคาบ
+│   └── merge_full.py          ← รวมทั้งสองภาคเข้า artifact/data/nl.json + แก้รหัสผิด
+├── refs/curriculum-topics-2569.md  ← หัวข้อตามหลักสูตรทางการ
+├── slides/SOURCES.md          ← รายการไฟล์สไลด์ที่ได้รับและ Drive file id
+└── (ของเดิมคนละสาย: drill.html · learn.html · build.py · data/ · export/)
 ```
+
+> ⚠️ **ไฟล์ทั้งหมดอยู่ใน repo แล้ว ไม่ได้อยู่ใน `scratchpad/` อีกต่อไป**
+> รอบที่แล้ว container ถูกคืนไปจริงและ `scratchpad/` หายทั้งหมด — งานไม่หายเพราะ commit ไว้ครบ
+> `NL_syllabus.pdf` และ `nl/img*/` ไม่ได้ commit (โหลด/เรนเดอร์ใหม่ได้)
 
 **แผนรายสัปดาห์เต็ม:** `/root/.claude/plans/google-calendar-humming-dijkstra.md`
 
@@ -113,7 +118,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 13 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 14 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -130,6 +135,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
 | neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
 | neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
+| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
 
 > ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
 > ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
@@ -186,11 +192,11 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
 
-**อ.พิมลพรรณ** (เจ้าของ paranee.k@rsu.ac.th) — ใช้ไปแล้ว 3/4
+**อ.พิมลพรรณ** (เจ้าของ paranee.k@rsu.ac.th) — ✅ **ใช้ครบทั้ง 4 ไฟล์แล้ว**
 - Epilepsy `1tWDtfQ-ZA-tDDR1_YgGkYgyS-4md6hQ5` ✅
 - CNS infection `1dnFAWEZRkkzF7MgbJ487vU1Jv9pNZHjp` ✅
 - LP + eye exam `13UzOj8-vMSv_P3cQqg06033ws9NV9w2l` ✅
-- **Acute Confusional State `1JtJeNHGY-Fls5CiGvIpwx2lp8FfUIi8g` ⏳ ยังไม่ได้ทำ (W6 · 21 ต.ค.)**
+- Acute Confusional State `1JtJeNHGY-Fls5CiGvIpwx2lp8FfUIi8g` ✅ (W6 · 21 ต.ค.)
 
 **อ.สุรพันธ์ พงศ์สุธนะ** (Cardiology) — รวมเป็นคาบเดียวแล้ว ✅
 - CAD complete2019 `1Pcst0l92BATWKClV00umsyNQXgdFvD4k` (ยังไม่ได้อ่าน — สำรองไว้)
@@ -208,13 +214,13 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
-1. Acute Confusional State (อ.พิมลพรรณ ไฟล์สุดท้าย · W6)
-2. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
-3. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
+1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
+2. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
    Dyslipidemia · Septicemia (รอสไลด์)
-4. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
+3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
+> ✅ **สไลด์ของ อ.พิมลพรรณ ใช้ครบทุกไฟล์แล้ว** — คาบที่เหลือรอสไลด์จากอาจารย์ท่านอื่น
 
 **เสนอไว้แต่ยังไม่ได้ทำ:** อ่าน CAD complete2019 เพิ่มรายละเอียด · ใส่ `guidelines` ให้ 9 คาบแรก ·
 เพิ่มหัวข้อ status epilepticus ในคาบ Epilepsy
@@ -234,7 +240,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 9. รายละเอียดทางเทคนิคที่เคยติดปัญหา
 
-- **Playwright:** ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
+- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
+  ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
   และ `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
   เป็นเรื่องปกติของ container ไม่ใช่บั๊ก
 - **อย่าใช้ `pgrep -f <script>` ในลูปรอ** — มันแมตช์ตัว bash command เองแล้วค้างตลอดกาล
