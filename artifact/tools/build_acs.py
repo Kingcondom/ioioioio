@@ -766,3 +766,235 @@ followed by the slow return to the midposition >> specific for acute pontine les
         "Spontaneous eye movements in coma",
         [SRC], ["2.2.36"]),
     ])
+
+sec("neuro-acs-08", "ระบบสั่งการ: Decorticate, Decerebrate และการระบุระดับรอยโรค",
+    "ท่าทางที่เกิดเอง กำลังกล้ามเนื้อ รีเฟล็กซ์ และการไล่ระดับจากเปลือกสมองลงสู่ไขสันหลัง", 10,
+"""### ท่าพักและการเคลื่อนไหวที่เกิดเอง (resting posture and adventitious movements)
+
+**สไลด์ให้นิยามไว้ชัดเจน**
+
+| ท่า | นิยามตามสไลด์ | ระดับรอยโรค |
+|---|---|---|
+| **Decorticate posturing** | **bilateral flexion at the elbows and wrists, with shoulder adduction and extension of the lower extremities** | **เหนือสมองส่วนกลาง** — เปลือกสมอง เนื้อขาว หรือ internal capsule สองข้าง |
+| **Decerebrate posturing** | **bilateral extensor posture, with extension of the lower extremities and adduction and internal rotation of the shoulders and extension at the elbows** | **สมองส่วนกลางถึงพอนส์ส่วนบน** |
+
+**กลไกที่ทำให้จำได้ไม่ลืม**
+- **Decorticate** — เสียการยับยั้งจากเปลือกสมอง แต่ **rubrospinal tract จากสมองส่วนกลางยังอยู่** ซึ่ง **กระตุ้นกล้ามเนื้องอของแขน** → **แขนงอ**
+- **Decerebrate** — รอยโรคลงต่ำกว่านิวเคลียสสีแดง ทำให้ **เสีย rubrospinal** เหลือแต่ **vestibulospinal และ reticulospinal ที่กระตุ้นกล้ามเนื้อเหยียด** → **แขนเหยียด**
+- ดังนั้น **decerebrate = รอยโรคต่ำกว่าและแย่กว่า decorticate** และ **การเปลี่ยนจาก decorticate เป็น decerebrate คือสัญญาณว่าผู้ป่วยกำลังทรุด (rostro-caudal deterioration)** ซึ่งต้องรายงานทันที
+- **ไม่ตอบสนองเลย (flaccid)** แย่ที่สุด
+
+> **จำ** — *"งอเข้าหาแกนกลาง (core) = de**cor**ticate"* และในคะแนน **GCS decorticate = M3 · decerebrate = M2**
+> ส่วนใน **FOUR score decorticate = M2 · decerebrate = M1**
+
+**การเคลื่อนไหวอื่นที่ต้องมองหา**
+- **Myoclonus ทั้งตัว** — หลังภาวะหัวใจหยุดเต้น บ่งการพยากรณ์โรคที่เลวร้าย (**M0 ใน FOUR score**)
+- **การกระตุกเล็ก ๆ ที่มุมปาก นิ้ว หรือลูกตา** — อาจเป็นสัญญาณเดียวของ **non-convulsive status epilepticus** ซึ่ง **ต้องส่ง EEG**
+- **Asterixis** — ในผู้ป่วยที่ยังทำตามสั่งได้ บ่งถึง **โรคสมองจากตับ ไต หรือคาร์บอนไดออกไซด์คั่ง**
+- **การสั่นหรือกระตุกแบบไม่เป็นจังหวะ** — คิดถึงภาวะถอนยาและกลุ่มอาการเซโรโทนิน
+
+### ส่วนอื่นของการตรวจระบบสั่งการที่สไลด์ระบุ
+
+- **Muscle tone** — **ความไม่สมมาตรมีค่ามากกว่าค่าสัมบูรณ์** · ระยะแรกของรอยโรคเฉียบพลันอาจ **อ่อนปวกเปียก (spinal shock)** ก่อนจะเกร็งภายหลัง
+- **Motor power / motor response to painful stimuli** — ในผู้ป่วยที่ทำตามสั่งไม่ได้ **ใช้การตอบสนองต่อความเจ็บเทียบสองข้าง**
+  วิธีที่ไวคือ **ยกแขนทั้งสองข้างขึ้นเหนือหน้าอกแล้วปล่อย** — **ข้างที่อ่อนแรงจะตกลงเร็วกว่าแบบไร้แรงต้าน**
+- **DTR and long tract signs** — **รีเฟล็กซ์ที่ไวขึ้นข้างเดียวและฝ่าเท้าตอบสนองแบบเหยียดนิ้วหัวแม่เท้า (Babinski)** บ่งรอยโรคของ upper motor neuron
+  แต่ **Babinski สองข้างพบได้ในโคม่าจากเมแทบอลิกและหลังชัก** จึงไม่จำเพาะ
+
+### การไล่ระดับรอยโรค — Rostro-caudal deterioration
+
+สไลด์สรุปเป็นลำดับ **Cerebral hemispheres → Diencephalon → Brainstem → Spinal cord**
+
+| ระดับ | รูปแบบการหายใจ | รูม่านตา | การกลอกตา | การเคลื่อนไหว |
+|---|---|---|---|---|
+| **ไดเอนเซฟาลอน** | **Cheyne-Stokes** | เล็กแต่ตอบสนอง | doll's eye ปกติ | **Decorticate** |
+| **สมองส่วนกลาง** | **Central neurogenic hyperventilation** | **ขนาดกลางคงที่ 4–6 มม.** | เริ่มผิดปกติ | **Decerebrate** |
+| **พอนส์** | **Apneustic** | **เท่าหัวเข็มหมุด** | เสีย | Decerebrate หรือ flaccid |
+| **เมดัลลา** | **Ataxic (Biot) → หยุดหายใจ** | ขยายค้าง | ไม่ตอบสนอง | **Flaccid** |
+
+> **คุณค่าจริงของตารางนี้ไม่ได้อยู่ที่การท่องจำ แต่อยู่ที่การเห็นว่าผู้ป่วยกำลังเลื่อนลงบันไดหรือไม่**
+> **การเปลี่ยนแปลงระหว่างการตรวจสองครั้งมีค่ามากกว่าการตรวจครั้งเดียวเสมอ** — นี่คือเหตุผลที่ต้อง **ตรวจซ้ำบ่อย ๆ และบันทึกทุกครั้ง**
+""",
+    ["Decorticate แขนงอ = เหนือสมองส่วนกลาง · Decerebrate แขนเหยียด = สมองส่วนกลางถึงพอนส์",
+     "การเปลี่ยนจาก decorticate เป็น decerebrate = ผู้ป่วยกำลังทรุด ต้องรายงานทันที",
+     "GCS: decorticate M3, decerebrate M2 · FOUR: decorticate M2, decerebrate M1",
+     "การกระตุกเล็ก ๆ ที่มุมปากหรือลูกตาในผู้ป่วยโคม่า = ส่ง EEG หา non-convulsive status",
+     "การตรวจซ้ำแล้วเทียบกันมีค่ากว่าการตรวจครั้งเดียวเสมอ"],
+    [
+    mcq("NEU-ACS-MCQ-15",
+        "A patient with a large intracerebral haemorrhage initially shows bilateral elbow and wrist flexion with leg extension in response to pain. Four hours later both arms extend and internally rotate with pain. What does this change signify?",
+        ["Rostro-caudal deterioration — the lesion is now affecting the midbrain or upper pons",
+         "Improvement, because extensor posturing scores higher on the GCS motor scale",
+         "Development of a spinal cord injury",
+         "A metabolic complication such as hyponatraemia",
+         "Recovery of the rubrospinal tract"],
+        0,
+        """**ผู้ป่วยเปลี่ยนจาก decorticate เป็น decerebrate ซึ่งคือการทรุดลงจากบนลงล่าง (rostro-caudal deterioration)**
+
+**กลไกที่อธิบายทุกอย่าง — ตำแหน่งของนิวเคลียสสีแดง (red nucleus) ในสมองส่วนกลาง**
+- **Decorticate** — รอยโรคอยู่ **เหนือ** นิวเคลียสสีแดง **rubrospinal tract ที่กระตุ้นกล้ามเนื้องอของแขนยังทำงาน** → **แขนงอ**
+- **Decerebrate** — รอยโรคลงมา **ต่ำกว่า** นิวเคลียสสีแดง **เสีย rubrospinal** เหลือแต่ **vestibulospinal และ reticulospinal ซึ่งกระตุ้นกล้ามเนื้อเหยียด** → **แขนเหยียด**
+
+**ความหมายทางคลินิก** — เลือดที่ออกกำลัง **ขยายตัวหรือทำให้สมองบวมจนเกิด transtentorial herniation**
+**ลำดับต่อไปคือ flaccid แล้วเสียชีวิต** จึงต้องทำทันที — **CT สมองซ้ำ · ยกหัวเตียงและจัดศีรษะให้ตรง ·
+hyperosmolar therapy · ควบคุมความดันโลหิตและแก้ภาวะการแข็งตัวของเลือดผิดปกติ · ปรึกษาประสาทศัลยแพทย์ทันที**
+
+**ทำไมข้ออื่นผิด** — **ไม่ใช่การดีขึ้น** และคะแนนก็ตรงกันข้าม — ใน GCS **decorticate = M3 ส่วน decerebrate = M2 ซึ่งต่ำกว่า** ·
+**การบาดเจ็บไขสันหลัง** ทำให้อ่อนปวกเปียกใต้ระดับรอยโรค ไม่ใช่ท่าเหยียดเกร็ง ·
+**ภาวะโซเดียมต่ำ** ควรตรวจหาเสมอในฐานะเหตุร่วมที่แก้ได้ แต่ **โดยลำพังไม่ทำให้เกิดการเปลี่ยนแปลงของท่าทางที่ไล่ระดับเช่นนี้** ·
+**การกลับมาของ rubrospinal tract** จะให้ผลตรงกันข้าม คือกลับมางอแขน""",
+        "Decorticate → decerebrate ใน 4 ชั่วโมง = herniation กำลังดำเนินอยู่ ต้องลงมือทันที",
+        "Rostro-caudal deterioration",
+        [SRC], ["2.2.36"]),
+    mcq("NEU-ACS-MCQ-16",
+        "A comatose patient after cardiac arrest has subtle rhythmic twitching of the left corner of the mouth and intermittent eyelid fluttering. Which investigation is most likely to change management?",
+        ["Electroencephalography", "Repeat CT brain", "Serum creatine kinase", "Nerve conduction study", "Echocardiography"],
+        0,
+        """**การกระตุกเล็ก ๆ เป็นจังหวะที่มุมปากหรือเปลือกตาในผู้ป่วยโคม่าคือสัญญาณของ non-convulsive status epilepticus จนกว่าจะพิสูจน์เป็นอื่น**
+และ **EEG เป็นการตรวจเดียวที่วินิจฉัยได้**
+
+**ทำไมเรื่องนี้สำคัญ** — **ราว 10–30% ของผู้ป่วยโคม่าที่ไม่ทราบสาเหตุในหอผู้ป่วยวิกฤตมีการชักที่ไม่แสดงอาการ**
+โดยเฉพาะ **หลังภาวะหัวใจหยุดเต้น หลังชักที่ดูเหมือนหยุดแล้ว หลังการบาดเจ็บสมอง และในโรคสมองอักเสบ**
+ภาวะนี้ **ทำให้สมองเสียหายต่อเนื่องและรักษาได้** การพลาดจึงมีราคาแพงมาก
+
+**เบาะแสข้างเตียงที่ต้องไวต่อมัน** — **ตากระตุกหรือกลอกเป็นจังหวะ · การกระตุกที่มุมปากหรือนิ้ว ·
+การกระตุกของหน้าท้อง · รูม่านตาที่เปลี่ยนขนาดเป็นจังหวะ · ผู้ป่วยที่ไม่ฟื้นตามที่ควรหลังชักภายใน 30–60 นาที**
+
+**สิ่งที่ทำระหว่างรอ EEG** — ถ้าความสงสัยสูงและผู้ป่วยไม่เสถียร **ให้ benzodiazepine เพื่อการวินิจฉัยและการรักษาไปพร้อมกัน**
+แล้วดูว่าอาการทางคลินิกและระดับความรู้สึกตัวดีขึ้นหรือไม่ ตามที่สไลด์ระบุในขั้นการรักษาจำเพาะว่า
+**"Seizure → benzodiazepine → antiepileptic"**
+
+**หมายเหตุเรื่อง myoclonus หลังหัวใจหยุดเต้น** — ต้องแยกจาก **myoclonic status** ซึ่ง **FOUR score จัดไว้ที่ M0** และบ่งพยากรณ์โรคที่เลวร้าย
+**EEG ช่วยแยกสองภาวะนี้ออกจากกันได้**
+
+**ทำไมข้ออื่นผิด** — **CT ซ้ำ** อาจจำเป็นถ้ามีข้อบ่งชี้อื่น แต่ **ไม่วินิจฉัยการชัก** ·
+**CK** บอกการบาดเจ็บของกล้ามเนื้อ ไม่ใช่การชัก · **การตรวจการนำกระแสประสาท** ใช้กับโรคเส้นประสาทส่วนปลาย ·
+**การตรวจหัวใจด้วยคลื่นเสียง** มีประโยชน์ในการหาสาเหตุของหัวใจหยุดเต้น แต่ไม่เปลี่ยนการดูแลเรื่องการชักที่กำลังเกิดอยู่""",
+        "กระตุกเล็ก ๆ เป็นจังหวะในผู้ป่วยโคม่า = ส่ง EEG หา non-convulsive status ทันที",
+        "Non-convulsive status epilepticus",
+        [SRC], ["2.2.36", "2.1.23"]),
+    ])
+
+sec("neuro-acs-09", "ขั้นที่ 4: หาสาเหตุด้วยกรอบหกกลุ่ม และการตรวจที่ตรงเป้า",
+    "Structural · Metabolic · Toxic/Drug · Infection · Cardiovascular/Systemic · Neurological พร้อมการตรวจของแต่ละกลุ่ม", 12,
+"""สไลด์แจกแจงสาเหตุไว้ **หกกลุ่ม พร้อมระบุการตรวจของแต่ละกลุ่ม** — นี่คือตารางที่ควรจำไปใช้จริงในห้องฉุกเฉิน
+
+### STRUCTURAL — **Tests: CT brain (non-contrast)**
+- **Intracranial hemorrhage**
+- **Ischemic stroke**
+- **Subdural / epidural hematoma**
+- **Brain tumor**
+- **Hydrocephalus**
+- **Traumatic brain injury**
+
+> **CT สมองแบบไม่ฉีดสารทึบรังสีคือการตรวจแรกเสมอ** เพราะเร็ว หาได้ทุกที่ และ **ตอบคำถามที่ต้องผ่าตัดได้ทันที**
+
+### METABOLIC — **Tests: Blood tests, ABG, Electrolytes, LFT, RFT, TSH**
+- **Hypoglycemia / hyperglycemia**
+- **Electrolyte disturbances (Na⁺, Ca²⁺, Mg²⁺)**
+- **Renal failure (uremia)**
+- **Hepatic failure**
+- **Thyroid disorders**
+
+### TOXIC / DRUG — **Tests: Toxicology screen, serum levels, ABG (CO)**
+- **Alcohol · Opioids · Sedatives/Hypnotics · Anticonvulsants · Antidepressants**
+- **CO, cyanide, organophosphate**
+
+> **ยาแก้พิษที่ต้องนึกถึงในนาทีแรก — naloxone สำหรับ opioid · flumazenil ใช้ด้วยความระมัดระวังอย่างยิ่ง**
+> (**flumazenil กระตุ้นการชักได้ในผู้ที่ใช้ benzodiazepine เรื้อรังหรือได้ยากลุ่ม tricyclic ร่วม จึงไม่ใช่ยาที่ให้ตามธรรมเนียม**)
+
+### INFECTION — **Tests: CBC, CRP, LP, blood culture**
+- **Meningitis · Encephalitis · Brain abscess · Sepsis**
+
+> **ถ้าสงสัยเยื่อหุ้มสมองอักเสบ ห้ามให้การเจาะหลังมาถ่วงเวลาการให้ยาปฏิชีวนะ** — **ให้ยาปฏิชีวนะและ dexamethasone ก่อน แล้วค่อยเจาะหลัง**
+> และ **ทำ CT ก่อนเจาะหลังในผู้ที่ซึม มีอาการเฉพาะที่ ชัก หรือภูมิคุ้มกันบกพร่อง**
+
+### CARDIOVASCULAR — **Tests: ECG, troponin, echocardiography**
+- **Shock · Cardiac arrest (ROSC) · Arrhythmia · Severe anemia · Hypoxia/hypercapnia**
+
+### NEUROLOGICAL / SYSTEMIC — **Tests: EEG, MRI brain**
+- **Seizure (postictal) · Status epilepticus · Brainstem stroke · Demyelinating disease**
+
+### การตรวจเพิ่มตามข้อบ่งชี้ที่สไลด์ระบุ
+**ECG · Chest X-ray · Urinalysis · Blood culture · Lumbar puncture · MRI brain · EEG**
+
+### วิธีใช้กรอบนี้ให้เร็วที่สุดในห้องฉุกเฉิน
+
+**สั่งพร้อมกันเป็นชุดเดียว ไม่ใช่ทีละอย่าง** เพราะผู้ป่วยโคม่ามักมีหลายสาเหตุซ้อนกัน
+
+| กลุ่ม | สั่งทันทีในทุกราย | สั่งเมื่อมีข้อบ่งชี้ |
+|---|---|---|
+| ข้างเตียง | **น้ำตาลปลายนิ้ว · ECG · ABG** | อุณหภูมิแกนกลาง |
+| เลือด | **CBC, electrolytes (รวม Ca, Mg, PO₄), BUN/Cr, LFT, ammonia, TSH, CRP, hemoculture** | ระดับยากันชัก ระดับพาราเซตามอล คาร์บอกซีฮีโมโกลบิน |
+| ภาพ | **CT สมองไม่ฉีดสารทึบรังสี** | CTA เมื่อสงสัย basilar occlusion · MRI เมื่อ CT ปกติแต่ยังอธิบายไม่ได้ |
+| อื่น ๆ | **ปัสสาวะและ toxicology screen** | **LP · EEG** |
+
+> **กฎที่ช่วยชีวิต — ถ้าตรวจครบแล้วยังอธิบายไม่ได้ ให้เหลือสองอย่างในใจเสมอ คือ non-convulsive status epilepticus
+> และ basilar artery occlusion** เพราะทั้งคู่ **CT ธรรมดามักปกติ** และ **ทั้งคู่รักษาได้ถ้าจับได้ทัน**
+""",
+    ["หกกลุ่มสาเหตุ: structural · metabolic · toxic · infection · cardiovascular · neurological",
+     "CT สมองไม่ฉีดสารทึบรังสีคือภาพแรกเสมอ เพราะตอบคำถามที่ต้องผ่าตัดได้ทันที",
+     "สงสัยเยื่อหุ้มสมองอักเสบ = ให้ยาปฏิชีวนะก่อน อย่าให้ LP ถ่วงเวลา",
+     "สั่งตรวจเป็นชุดพร้อมกัน เพราะผู้ป่วยโคม่ามักมีหลายสาเหตุซ้อนกัน",
+     "อธิบายไม่ได้ = คิดถึง non-convulsive status และ basilar artery occlusion ซึ่ง CT ธรรมดามักปกติ"],
+    [
+    mcq("NEU-ACS-MCQ-17",
+        "A 70-year-old woman is found unresponsive. CT brain is normal, glucose, electrolytes, renal and liver function are normal, and toxicology is negative. Her pupils are equal and reactive and she has intermittent right eyelid twitching. Which two diagnoses must remain highest on the list?",
+        ["Non-convulsive status epilepticus and basilar artery occlusion",
+         "Subdural haematoma and hypoglycaemia",
+         "Hepatic encephalopathy and uraemia",
+         "Conversion disorder and malingering",
+         "Normal pressure hydrocephalus and Alzheimer disease"],
+        0,
+        """**เมื่อ CT ปกติและผลเลือดปกติ สองภาวะที่รักษาได้และ CT ธรรมดามองไม่เห็นคือ non-convulsive status epilepticus และ basilar artery occlusion**
+
+**1) Non-convulsive status epilepticus**
+- เข้าได้กับ **การกระตุกของเปลือกตาที่เป็น ๆ หาย ๆ** ในผู้ป่วยรายนี้พอดี
+- **EEG เป็นการตรวจที่วินิจฉัย** และตามกรอบในสไลด์ กลุ่ม **NEUROLOGICAL/SYSTEMIC ระบุ Tests: EEG, MRI brain** ไว้ชัดเจน
+- **รักษาด้วย benzodiazepine แล้วตามด้วยยากันชัก** ตามขั้นที่ 5 ของสไลด์
+
+**2) Basilar artery occlusion**
+- **CT สมองแบบไม่ฉีดสารทึบรังสีมักปกติในชั่วโมงแรก ๆ** เพราะก้านสมองอยู่ลึกและมี artifact จากกระดูกมาก
+- อาการมัก **ผันผวน** สลับกับช่วงที่ดูดีขึ้น ทำให้ถูกมองข้าม
+- **CTA หรือ MRI/MRA คือการตรวจที่ต้องสั่ง** และ **การเปิดหลอดเลือดด้วยสายสวนเปลี่ยนผลลัพธ์ได้อย่างมาก**
+- เบาะแสที่ช่วย — **ความผิดปกติของการกลอกตา รูม่านตา หรือการตรวจที่บ่งก้านสมอง** และ **ประวัติเวียนศีรษะหรือพูดไม่ชัดนำมาก่อน**
+
+**ทำไมข้ออื่นผิด** — **เลือดคั่งใต้เยื่อหุ้มสมองจะเห็นใน CT** และ **น้ำตาลต่ำถูกตัดไปแล้ว** ·
+**โรคสมองจากตับและไต** ถูกตัดด้วยผลการทำงานของตับและไตที่ปกติ ·
+**การวินิจฉัยว่าแกล้งป่วยในผู้ป่วยโคม่าที่หาสาเหตุไม่พบเป็นความผิดพลาดที่อันตรายที่สุด** และห้ามวินิจฉัยโดยการคัดออกอย่างหละหลวม ·
+**NPH และอัลไซเมอร์** ดำเนินโรคเป็นเดือนถึงปี ไม่ทำให้ไม่รู้สึกตัวเฉียบพลัน""",
+        "CT ปกติ + เลือดปกติ + ยังโคม่า = คิด non-convulsive status (ส่ง EEG) และ basilar occlusion (ส่ง CTA)",
+        "The comatose patient with a normal CT",
+        [SRC], ["2.2.36", "2.2.39", "2.1.23"]),
+    mcq("NEU-ACS-MCQ-18",
+        "A febrile, confused patient with neck stiffness is being worked up. CT brain must be done before lumbar puncture because of drowsiness and a focal deficit. What is the correct sequence?",
+        ["Blood cultures, then empirical antibiotics and dexamethasone, then CT, then lumbar puncture",
+         "CT, then lumbar puncture, then antibiotics once CSF confirms bacterial meningitis",
+         "Lumbar puncture first because CT delays diagnosis",
+         "Antibiotics only after the CSF Gram stain result is available",
+         "Dexamethasone only after 48 hours of antibiotics"],
+        0,
+        """**ลำดับที่ถูกต้องคือ เจาะเลือดส่งเพาะเชื้อ → ให้ยาปฏิชีวนะพร้อม dexamethasone → CT → LP**
+
+**หลักการ — การรักษาต้องไม่ถูกถ่วงเวลาด้วยการตรวจวินิจฉัย**
+- **ทุกชั่วโมงที่ช้าในการให้ยาปฏิชีวนะเพิ่มอัตราตายในเยื่อหุ้มสมองอักเสบจากแบคทีเรีย**
+- **การเพาะเชื้อจากเลือดยังขึ้นได้ในราว 50–70% ของราย** และ **น้ำไขสันหลังยังแปลผลได้อยู่หลายชั่วโมงหลังให้ยา**
+  (เซลล์ โปรตีน น้ำตาล และ PCR ยังใช้ได้ แม้การย้อมสีและการเพาะเชื้ออาจเป็นลบ)
+- **dexamethasone ต้องให้ก่อนหรือพร้อมกับยาปฏิชีวนะขนาดแรก** เพราะออกฤทธิ์โดย **ลดการอักเสบที่เกิดตามหลังการแตกสลายของเชื้อ**
+  ถ้าให้ช้ากว่านั้นก็ไม่ได้ประโยชน์
+
+**ใครต้องทำ CT ก่อนเจาะหลัง** — **ระดับความรู้สึกตัวลดลง · อาการทางระบบประสาทเฉพาะที่ · ชักครั้งใหม่ ·
+ภูมิคุ้มกันบกพร่อง · ประวัติโรคของระบบประสาทส่วนกลางมาก่อน · papilledema**
+เพื่อลดความเสี่ยงของ **การเคลื่อนของสมองหลังเจาะ** ผู้ป่วยรายนี้ **ซึมและมีอาการเฉพาะที่** จึงเข้าเกณฑ์
+
+**เชื่อมกับสไลด์** — กลุ่ม **INFECTION ระบุ Tests: CBC, CRP, LP, blood culture** และขั้นที่ 5 ระบุ
+**"Infection → start empirical antibiotics/antivirals"** โดย **ไม่ได้ให้รอผลอะไรก่อน**
+ในผู้ที่สงสัย **herpes encephalitis** ต้องเพิ่ม **acyclovir** ทันทีเช่นกัน
+
+**ทำไมข้ออื่นผิด** — **การรอผลน้ำไขสันหลังหรือผลย้อมสีก่อนให้ยา** ทำให้ผู้ป่วยตายได้ ·
+**การเจาะหลังก่อนทำ CT ในผู้ป่วยที่มีข้อบ่งชี้** เสี่ยงต่อการเคลื่อนของสมอง ·
+**dexamethasone ที่ให้หลังยาปฏิชีวนะไปแล้วนาน ไม่มีประโยชน์**""",
+        "สงสัยเยื่อหุ้มสมองอักเสบ: เพาะเลือด → ยาปฏิชีวนะ + dexamethasone → CT → LP",
+        "Sequence in suspected bacterial meningitis",
+        [SRC], ["2.2.36", "2.3.6(5)", "2.2.48"]),
+    ])
