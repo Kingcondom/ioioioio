@@ -52,7 +52,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 10**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 11**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -124,7 +124,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 |---|---|---|
 | air | 08 | Allergy and clinical immunology |
 | air | 23 | Approach to arthritis / crystal and infective |
-| air | 33 | Connective tissue disease, vasculitis |
+| air | 33 | Connective tissue disease, vasculitis (18 หัวข้อ — เติมส่วนที่ขาดจากสไลด์ อ.พรรณนิภา ครบแล้ว) |
 | cardio | 04 | Inflammatory MyoPericardial Syndrome (IMPS) |
 | cardio | 10 | Circulatory Shock |
 | cardio | 24/9 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ |
