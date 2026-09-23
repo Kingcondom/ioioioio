@@ -669,4 +669,147 @@ sec("chest-eptb-12", "พิษของยาแนวแรก และกา
          "EPTB ล้วนที่ตัดวัณโรคปอดแล้ว → ไม่ต้องแยกห้อง airborne", "Infection control in EPTB", ["สไลด์ อ.ภาณุวัฒน์ หน้า 16", "MED32 MCQ ข้อ 32 – ให้อาการ extrapulmonary TB ทำยังไงดี (ไม่ต้อง admit, admit ห้องแยก, face mask)"]),
     ], NLN + ["B1.5.1(3)"])
 
-# ═══ ต่อส่วนที่ 2 ด้านล่าง ═══
+
+LECNAME = "Extrapulmonary tuberculosis (อ.ภาณุวัฒน์)"
+MEQ = [{"id": "CH-MEQ-EP-01", "part": "MEQ", "lec": "23/9", "lecture": LECNAME,
+ "topic": "Tuberculous peritonitis in a patient newly found to have HIV — diagnosis, treatment and ART timing",
+ "vignette": """ผู้ป่วยหญิงไทยอายุ 34 ปี อาชีพพนักงานโรงงาน มาโรงพยาบาลด้วยอาการท้องโตขึ้นเรื่อย ๆ 6 สัปดาห์
+PI: 2 เดือนก่อนมาโรงพยาบาล มีไข้ต่ำ ๆ ตอนเย็น เหงื่อออกกลางคืน เบื่ออาหาร น้ำหนักลด 7 กิโลกรัม 6 สัปดาห์ก่อนสังเกตว่าท้องโตขึ้น ปวดท้องตื้อ ๆ ทั่วท้อง ไม่มีตัวเหลือง ไม่มีขาบวม ไม่มีไอ
+U/D: ไม่มีโรคประจำตัว ไม่ดื่มสุรา ไม่เคยตรวจ HIV
+PE: V/S: BT 37.9 C, PR 96/min, BP 112/70 mmHg, RR 18/min
+GA: ผอม ไม่ซีด ไม่เหลือง · ไม่มี spider nevi ไม่มี palmar erythema
+Abdomen: distended, shifting dullness positive, diffuse mild tenderness, doughy feeling, ไม่คลำได้ตับม้าม
+Lymph node: ไม่โต · Lungs: clear
+Lab: CBC Hb 10.8 g/dL, WBC 6,200 /mm3 (L 18%), Plt 310,000 /mm3 · albumin 2.9 g/dL · LFT ปกติ · Anti-HIV positive, CD4 180 cells/µL""",
+ "questions": [
+  {"q": "1. จงบอกการตรวจน้ำในช่องท้องที่ต้องส่ง และผลที่คาดว่าจะพบถ้าเป็นโรคที่สงสัยมากที่สุด (4 คะแนน)",
+   "a": """**การวินิจฉัยที่สงสัยมากที่สุด: tuberculous peritonitis** — ไข้ต่ำเรื้อรัง เหงื่อออกกลางคืน น้ำหนักลด **ท้องโตร่วมกับปวดทั่วท้อง** (สไลด์หน้า 3) หน้าท้องหนืด ไม่มีลักษณะตับแข็ง และมี **HIV** เป็นปัจจัยเสี่ยง
+
+**ส่งตรวจน้ำในช่องท้อง (diagnostic paracentesis)**
+| การตรวจ | ผลที่คาดใน TB peritonitis |
+|---|---|
+| ลักษณะ | ใสสีฟาง อาจขุ่นเล็กน้อย |
+| **Albumin ในน้ำ → คำนวณ SAAG** | **SAAG < 1.1 g/dL** (ไม่ใช่ portal hypertension) |
+| **Total protein** | **สูง (มากกว่า 2.5–3 g/dL)** |
+| **Cell count และ differential** | เม็ดเลือดขาวราว 500–2,000 **lymphocyte เด่น** |
+| **ADA** | **> 36–40 U/L** (sens 100% / spec 97%) |
+| Glucose, LDH | glucose ต่ำกว่าเลือด LDH สูง |
+| **AFB smear, Xpert MTB/RIF, mycobacterial culture** | smear แทบไม่บวก · culture ให้ผลบวกมากกว่า |
+| **Cytology** | ไม่พบเซลล์มะเร็ง (แยก peritoneal carcinomatosis) |
+| Gram stain และ culture ธรรมดา | ลบ |"""},
+  {"q": "2. ผลน้ำในช่องท้อง: SAAG 0.7, protein 4.6 g/dL, WBC 1,200 (lymphocyte 90%), ADA 64 U/L, AFB smear negative, Xpert negative, cytology negative — จะวินิจฉัยอย่างไร และถ้าต้องการยืนยันด้วยเนื้อเยื่อ ควรทำหัตถการใด (3 คะแนน)",
+   "a": """**การวินิจฉัย: tuberculous peritonitis** — **SAAG ต่ำ + protein สูง + lymphocyte เด่น + ADA 64 > 36–40 U/L** และไม่พบเซลล์มะเร็ง
+
+**AFB smear และ Xpert เป็นลบไม่ได้ตัดโรค** เพราะ EPTB เป็น **paucibacillary** (สไลด์หน้า 8 และ 11)
+
+**การยืนยันด้วยเนื้อเยื่อ: laparoscopy with peritoneal biopsy** — เห็นตุ่มขาวเล็กกระจายบนเยื่อบุช่องท้อง พยาธิวิทยาเป็น **caseating granuloma** และส่ง AFB NAAT culture จากชิ้นเนื้อ ในบริบทที่ ADA สูงชัดเจนและตัดมะเร็งได้ สามารถ **เริ่มยาวัณโรคได้เลย** ระหว่างรอผล culture"""},
+  {"q": "3. จงเขียนสูตรยาและระยะเวลาการรักษา พร้อมระบุยาเสริมที่ควรให้ (3 คะแนน)",
+   "a": """**สูตรยา: 2IRZE/4IR** (สไลด์หน้า 12 — วัณโรคช่องท้องใช้ระยะเวลามาตรฐาน 6 เดือน)
+- **Initial phase 2 เดือน**: isoniazid + rifampicin + pyrazinamide + ethambutol — ฆ่าเชื้อและหยุดการแพร่
+- **Continuation phase 4 เดือน**: isoniazid + rifampicin — กันการกลับเป็นซ้ำ
+- **ยาเสริม: pyridoxine 50–100 มก./วัน** ป้องกัน peripheral neuropathy จาก isoniazid (ผู้ป่วย HIV และทุพโภชนาการเป็นกลุ่มเสี่ยง)
+- **Co-trimoxazole prophylaxis** เพราะเป็นผู้ป่วย HIV ที่มีวัณโรค
+- **ไม่ให้ corticosteroid เป็นกิจวัตร**
+- ติดตาม **LFT** (H, R, Z เป็นพิษต่อตับ) และ **สายตา** (ethambutol)"""},
+  {"q": "4. ผู้ป่วยรายนี้ควรเริ่มยาต้านไวรัส (ART) เมื่อใด และต้องระวังอะไร (3 คะแนน)",
+   "a": """**เริ่ม ART ภายในราว 2–8 สัปดาห์หลังเริ่มยาวัณโรค** — CD4 180 ไม่ต่ำกว่า 50 จึงเริ่มได้ภายใน 8 สัปดาห์ (ถ้า CD4 < 50 ให้เริ่มภายใน 2 สัปดาห์) · **ไม่ใช่วัณโรคเยื่อหุ้มสมอง** จึงไม่ต้องเลื่อนนานเป็นพิเศษ
+
+**ข้อควรระวัง**
+- **ยาตีกัน** — rifampicin เหนี่ยวนำเอนไซม์ตับ ลดระดับยาต้านไวรัสหลายตัว เช่น **dolutegravir ต้องเพิ่มเป็นวันละสองครั้ง** และห้ามใช้ร่วมกับ protease inhibitor ส่วนใหญ่
+- **IRIS** — หลังเริ่ม ART อาจมีไข้ ต่อมน้ำเหลืองโต หรือน้ำในช่องท้องเพิ่มขึ้นชั่วคราว ไม่ได้แปลว่ายาล้มเหลว
+- **พิษต่อตับซ้อนกัน** ระหว่างยาวัณโรคกับยาต้านไวรัส"""},
+  {"q": "5. ญาติถามว่าผู้ป่วยต้องแยกห้องหรือไม่ และคนในบ้านต้องทำอย่างไร จงตอบ (2 คะแนน)",
+   "a": """- **ต้องตัดวัณโรคปอดก่อน** ด้วย **CXR และเสมหะ AFB/Xpert** — ถ้าไม่มีรอยโรคที่ปอดหรือกล่องเสียง **วัณโรคช่องท้องโดยทั่วไปไม่แพร่ทางอากาศ** ไม่ต้องแยกห้องแบบ airborne
+- ถ้าพบวัณโรคปอดร่วมด้วย → มาตรการสามชั้น: **แยกตัวอย่างน้อย 2 สัปดาห์หรือจน culture ลบ · ระบายอากาศ · N95/หน้ากากอนามัย**
+- **ผู้สัมผัสใกล้ชิด** คัดกรองด้วย **TST (≥ 10 มม.) หรือ IGRA** และอาการ ตรวจ **ทุก 6 เดือนเป็นเวลา 2 ปี แล้วปีละครั้ง** (สไลด์หน้า 16)"""}],
+ "ref": ["สไลด์ อ.ภาณุวัฒน์ หน้า 3, 8, 10–13, 16", "MED34 ข้อสอบ MED ครั้งที่ 2 MCQ (GI ข้อ 2) – ascites low SAAG high protein → TB peritoneal"],
+ "nl": ["2.3.1(20)", "2.1.12", "2.3.1(9)", "3.3.15", "B6.2.2(8)"], "years": ["34"], "_kind": "meq", "_set": "chest"}]
+
+OSCE = [{"id": "CH-OSCE-EP-01", "part": "OSCE/SAQ", "lec": "23/9", "lecture": LECNAME,
+ "topic": "SAQ – Body fluid interpretation in extrapulmonary TB (pleural, CSF, ascites)",
+ "station": "SAQ (เขียนตอบ) 5 นาที",
+ "instruction": """จงแปลผลสารน้ำจากผู้ป่วย 3 รายต่อไปนี้
+
+**ผู้ป่วย A** — ชายอายุ 28 ปี ไข้ต่ำ เจ็บหน้าอกซ้ายเวลาหายใจ 4 สัปดาห์ · pleural fluid: straw colored, WBC 2,600 (lymphocyte 88%, eosinophil 1%), mesothelial cell rare, protein 5.0 g/dL (serum 7.2), LDH 520 (serum 260; ULN 250), glucose ต่ำกว่า serum, ADA 71 U/L, cytology negative
+
+**ผู้ป่วย B** — หญิงอายุ 41 ปี ปวดศีรษะ ไข้ 3 สัปดาห์ ซึมลง ตาเข (CN VI palsy) · CSF: clear, WBC 240 (mononuclear 85%), protein 260 mg/dL, glucose 34 mg/dL (blood 118)
+
+**ผู้ป่วย C** — ชายอายุ 60 ปี ติดสุรา ตาเหลือง ท้องมาน · ascitic fluid: SAAG 1.9 g/dL, protein 1.0 g/dL, WBC 180 (PMN 20%), ADA 8 U/L
+
+จงตอบ
+1. ผู้ป่วย A — จำแนกตาม Light's criteria และการวินิจฉัยที่น่าจะเป็นที่สุด (3 คะแนน)
+2. ผู้ป่วย B — การวินิจฉัยที่น่าจะเป็นที่สุด และการรักษาที่ต้องให้ร่วมกับยาวัณโรค (3 คะแนน)
+3. ผู้ป่วย C — เป็นวัณโรคเยื่อบุช่องท้องหรือไม่ เพราะอะไร (2 คะแนน)
+4. ระบุภาวะที่ทำให้ ADA ในน้ำเยื่อหุ้มปอดสูงได้โดยไม่ใช่วัณโรค อย่างน้อย 3 ภาวะ (2 คะแนน)""",
+ "answer": """**1. ผู้ป่วย A**
+| เกณฑ์ Light | คำนวณ | ผล |
+|---|---|---|
+| protein ratio > 0.5 | 5.0/7.2 = **0.69** | ✔ |
+| LDH ratio > 0.6 | 520/260 = **2.0** | ✔ |
+| LDH > 2/3 ULN | 520 > 167 | ✔ |
+→ **Exudate** · **lymphocyte เด่น + eosinophil < 5% + mesothelial น้อย + ADA 71 > 40** → **Tuberculous pleuritis**
+(ตารางแนวทางไทย 2561: straw colored · cell 1,000–5,000 · lymphocyte 50–90% · protein > 2.5 · glucose < serum)
+
+**2. ผู้ป่วย B — Tuberculous meningitis**
+- กึ่งเฉียบพลัน + **CN VI palsy (basal meningitis)** · CSF **cell 100–500 mononuclear เด่น · protein 100–500 mg/dL · glucose ราว 30% ของเลือด**
+- รักษา **2IRZE/10IR (12 เดือน)** + **dexamethasone** (absolute indication ลดตายราว 25%)
+- ส่งเพิ่ม: CSF Xpert, AFB culture, cryptococcal antigen · ตรวจ HIV · CT/MRI หา hydrocephalus
+
+**3. ผู้ป่วย C — ไม่ใช่วัณโรคเยื่อบุช่องท้อง**
+- **SAAG 1.9 ≥ 1.1 = portal hypertension** จากตับแข็ง · **protein ต่ำ** · **ADA 8** ต่ำกว่าจุดตัด 36–40 U/L · PMN 36 เซลล์ ไม่ถึงเกณฑ์ SBP (≥ 250)
+
+**4. ADA สูงโดยไม่ใช่วัณโรค** (สไลด์หน้า 10)
+**empyema · lymphoma · malignant pleural effusion · parapneumonic effusion · collagen vascular disease (เช่น rheumatoid, SLE)**
+
+**ข้อที่ทำให้เสียคะแนน**: บอกว่า AFB smear ลบจึงไม่ใช่วัณโรค · ให้สูตร 6 เดือนกับ TB meningitis · ลืม steroid ใน TB meningitis · อ่าน ADA โดยไม่ดูชนิดเซลล์""",
+ "ref": ["สไลด์ อ.ภาณุวัฒน์ หน้า 9–10, 12, 14", "MED31 OSCE ข้อ 4 – แปลผล pleural fluid lymph เด่น Light criteria exudative", "MED30 SAQ ข้อ 1 – สงสัย TB pleural effusion"],
+ "nl": ["2.3.1(20)", "2.3.10(7)", "2.3.6(5)", "B3.3(2)", "2.1.12"], "years": ["30", "31"], "_kind": "meq", "_set": "chest"}]
+
+LECTURE = {
+ "lec": "23/9",
+ "date": "พ. 23 ก.ย.",
+ "title": "Extrapulmonary tuberculosis",
+ "subtitle": "ภาระโรคและผลของ HIV · ทำไมวินิจฉัยยาก · ถอดรหัสสารน้ำและ ADA · เยื่อหุ้มปอด ต่อมน้ำเหลือง กระดูกสันหลัง สมอง เยื่อหุ้มหัวใจ ช่องท้อง และทางเดินปัสสาวะ · ระยะเวลายา steroid ผ่าตัด · พิษยาและการตัดวงจรการแพร่เชื้อ",
+ "objectives": [
+   "อธิบายว่าทำไม EPTB เป็นส่วนใต้น้ำของวัณโรค และระบุกลุ่มเสี่ยงได้",
+   "เปรียบเทียบรูปแบบ EPTB ระหว่างผู้ป่วยที่ติดและไม่ติด HIV และบอกเหตุผลที่ต้องตรวจ HIV ในผู้ป่วยวัณโรคทุกราย",
+   "เลือกการตรวจทางจุลชีววิทยาที่เหมาะสม — smear, culture, NAAT — และรู้ข้อจำกัดของแต่ละวิธีรวมถึง TST",
+   "แปลผลน้ำในเยื่อหุ้มปอด เยื่อหุ้มหัวใจ น้ำไขสันหลัง และน้ำในช่องท้อง รวมถึงจุดตัดและผลบวกลวงของ ADA",
+   "จดจำอาการและการวินิจฉัยของวัณโรคเยื่อหุ้มปอด ต่อมน้ำเหลือง กระดูกสันหลัง เยื่อหุ้มสมอง เยื่อหุ้มหัวใจ ช่องท้อง และทางเดินปัสสาวะ",
+   "กำหนดระยะเวลาการรักษาตามอวัยวะ ข้อบ่งชี้ของ corticosteroid สามระดับ และข้อบ่งชี้ของการผ่าตัด",
+   "ระบุพิษของยาแนวแรกทีละอวัยวะ และวางมาตรการป้องกันการแพร่เชื้อและการตามผู้สัมผัส"],
+ "nlGap": "**เกณฑ์ฯ รวมวัณโรคทุกตำแหน่งไว้ในรหัสเดียว** (`นล. 2.3.1(20)` และ `B6.2.2(8)`) ไม่แยกรหัสสำหรับวัณโรคต่อมน้ำเหลือง ช่องท้อง กระดูกสันหลัง หรือทางเดินปัสสาวะ และไม่มีรหัสของ **ADA** หรือ **NAAT (GeneXpert)** เนื้อหาส่วนนั้นจึงอิงแนวทางที่อาจารย์อ้างและแนวทางปัจจุบันด้านล่าง",
+ "guidelines": [
+   "**แนวทางการวินิจฉัยและดูแลรักษาผู้ป่วยวัณโรคในประเทศไทย 2561** — ตาราง body fluid, ADA, ระยะเวลาตามอวัยวะ, พิษยา, steroid และข้อบ่งชี้ผ่าตัด (อาจารย์อ้างในสไลด์)",
+   "**แนวทางการควบคุมวัณโรคประเทศไทย 2564** — สูตร 2HRZE/4HR และ 2HRZE/10HR สำหรับวัณโรคเยื่อหุ้มสมองและกระดูกข้อ",
+   "**WHO Consolidated Guidelines on Tuberculosis — Module 3: Diagnosis (2024)** — การใช้ Xpert MTB/RIF Ultra กับสิ่งส่งตรวจนอกปอด",
+   "**ATS/CDC/ERS/IDSA 2016 — Treatment of Drug-Susceptible Tuberculosis** — ระยะเวลาตามอวัยวะและ corticosteroid ใน TB meningitis และ pericarditis",
+   "**ESC 2015 — Guidelines for the Diagnosis and Management of Pericardial Diseases** — steroid เฉพาะผู้ป่วย HIV ลบ",
+   "**Cochrane 2016 — Corticosteroids for managing tuberculous meningitis** · **IMPI (NEJM 2014)** · **ACT HIV (NEJM 2023)**"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+# ── ตรวจ id ซ้ำทั้งชุดวิชาก่อนเขียน
+path = os.path.join(BUILD, "data", "chest.json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LECTURE["lec"]]
+seen = set()
+for l in data + [LECTURE]:
+    for x in [i for s in l["sections"] for i in s["items"]] + l.get("meq", []) + l.get("osce", []) + [{"id": s["id"]} for s in l["sections"]]:
+        assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+        seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+codes = {c for s in S for c in s["nl"]} | {c for s in S for i in s["items"] for c in i["nl"]} | {c for m in MEQ + OSCE for c in m["nl"]}
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบในพจนานุกรม: %s" % missing
+for s in S:
+    assert "```" not in s["md"], s["id"]
+
+data.append(LECTURE)
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == "chest": m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print("sections %d | items %d | meq %d | osce %d | nl codes %d" % (len(S), sum(len(s["items"]) for s in S), len(MEQ), len(OSCE), len(codes)))
+print("chest.json มี %d คาบ · %d bytes" % (len(data), os.path.getsize(path)))
