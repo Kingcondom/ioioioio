@@ -466,4 +466,207 @@ sec("chest-eptb-08", "วัณโรคเยื่อหุ้มสมอง�
          "TBM + HIV → เริ่ม ART หลังยาวัณโรคราว 4–8 สัปดาห์", "ART timing in TBM", ["สไลด์ อ.ภาณุวัฒน์ หน้า 4, 14"], NLN + ["2.3.1(9)", "2.3.6(5)"]),
     ], NLN + ["2.3.6(5)", "B3.2.2(1)", "B3.3(2)"])
 
+
+# ───────────────────────────── 9
+sec("chest-eptb-09", "วัณโรคเยื่อหุ้มหัวใจ (TB pericarditis)",
+    "น้ำในเยื่อหุ้มหัวใจเรื้อรัง ADA > 40 เสี่ยง tamponade และ constriction · steroid เป็นข้อบ่งชี้แบบมีเงื่อนไข", 7,
+"""### ภาพรวม
+วัณโรคเป็น **สาเหตุสำคัญของน้ำในเยื่อหุ้มหัวใจปริมาณมากในประเทศที่วัณโรคชุก** เชื้อมักลามมาจาก **ต่อมน้ำเหลืองในช่องอกข้างหลอดลม** หรือมาทางกระแสเลือด
+ข้อมูลในสไลด์หน้า 4 พบรอยโรคที่เยื่อหุ้มหัวใจ **71.4% ในผู้ป่วย HIV ลบ เทียบกับ 7.1% ในผู้ป่วย HIV บวก**
+
+### ระยะของโรคและผลที่ตามมา
+| ระยะ | สิ่งที่เกิด |
+|---|---|
+| **Effusive** | น้ำสีฟางหรือปนเลือด (serosanguinous) สะสมช้า ๆ → **cardiac tamponade** ได้ |
+| **Effusive-constrictive** | น้ำยังอยู่ แต่เยื่อหุ้มเริ่มหนา |
+| **Constrictive** | เยื่อหุ้มหนาเป็นพังผืดและหินปูน → **constrictive pericarditis** (JVP สูง Kussmaul sign บวมและท้องมาน) |
+
+### สารน้ำ (ตารางสไลด์หน้า 9 ★)
+- **straw colored หรือ serosanguinous**
+- **lymphocyte เพิ่ม** · ระยะแรก PMN เด่น ต่อมา mononuclear
+- **protein สูง · glucose ต่ำ** · ไม่พบเซลล์มะเร็ง
+- **ADA ≥ 40–45 U/L** สนับสนุนวัณโรค และช่วยแยกจากมะเร็งที่เยื่อหุ้มหัวใจ
+
+### การรักษา
+- **2IRZE/4IR รวม 6 เดือน**
+- **เจาะระบายน้ำ (pericardiocentesis)** เมื่อมี tamponade หรือเพื่อวินิจฉัย
+- **Corticosteroid = ข้อบ่งชี้แบบมีเงื่อนไข (conditional)** — ช่วยลดการตาย และลดการต้องเจาะระบายหรือผ่าตัดลอกเยื่อหุ้มหัวใจ แนะนำ **เฉพาะผู้ป่วย HIV ลบ** (ESC 2015) หรือใช้เชิงประจักษ์
+  - เหตุผลที่เลี่ยงในผู้ป่วย HIV: การศึกษา **IMPI (NEJM 2014)** พบว่า prednisolone **ลดการเกิด constriction** แต่ **ไม่ลดการตายโดยรวม** และ **เพิ่มมะเร็งที่สัมพันธ์กับ HIV**
+- **Pericardiectomy** เมื่อ constriction ไม่ดีขึ้นหลังได้ยาวัณโรคไปแล้ว
+""",
+    ["TB pericarditis: effusive → effusive-constrictive → constrictive",
+     "Pericardial fluid: serosanguinous · lymphocyte · protein สูง · ADA ≥ 40",
+     "รักษา 6 เดือน (2IRZE/4IR)",
+     "Steroid = conditional: เฉพาะ HIV ลบ (ESC 2015) · ลด constriction",
+     "Constriction ที่ไม่ดีขึ้นหลังยา → pericardiectomy"],
+    [mcq(N(24), "A 44-year-old HIV-negative man has a large pericardial effusion. Pericardiocentesis yields serosanguinous fluid with lymphocyte predominance, high protein, ADA 62 U/L and no malignant cells. He is started on 2IRZE/4IR. Regarding adjunctive corticosteroid, which statement best matches the lecture?",
+         ["Contraindicated in all patients with TB pericarditis", "Absolute indication identical to TB meningitis",
+          "Conditional indication: may be used in HIV-negative patients because it reduces constriction and the need for pericardiocentesis or pericardiectomy",
+          "Required only if the patient is HIV-positive", "Should replace anti-tuberculous therapy"], 2,
+         "สไลด์หน้า 14 จัด **TB pericarditis เป็น conditional indication** — steroid **สัมพันธ์กับการตายที่ลดลงและลดการต้องเจาะระบายหรือผ่าตัดลอกเยื่อหุ้มหัวใจ** แนะนำ **เฉพาะผู้ป่วย HIV ลบ (ESC 2015)** หรือใช้เชิงประจักษ์\n\nหลักฐานประกอบ: **IMPI (NEJM 2014)** — ลด constriction แต่ไม่ลดการตายโดยรวม และ **เพิ่มมะเร็งที่สัมพันธ์กับ HIV** จึงเลี่ยงในผู้ป่วย HIV\n\nเทียบ: **TB meningitis = absolute** · **LN, pleura, bone/spine, GU = not recommended**",
+         "Steroid: meningitis = absolute · pericarditis = conditional (HIV ลบ) · ที่เหลือ = ไม่แนะนำ", "Corticosteroid in TB pericarditis", ["สไลด์ อ.ภาณุวัฒน์ หน้า 14", "MED ข้อสอบเก่า – pericardial fluid tuberculous vs malignant"], NLN + ["2.3.9-3(6)", "B7.2.2-3(3)", "B1.7.4"]),
+    ], NLN + ["2.3.9-3(6)", "B7.2.2-3(3)"])
+
+# ───────────────────────────── 10
+sec("chest-eptb-10", "วัณโรคช่องท้องและระบบทางเดินปัสสาวะ",
+    "เยื่อบุช่องท้อง: ท้องโต + ปวดทั่วท้อง · ลำไส้: ปวดท้องขวาล่าง 80–90% · ไต: sterile pyuria และผ่าตัดไตที่ไม่ทำงาน", 9,
+"""### วัณโรคเยื่อบุช่องท้อง (TB peritonitis)
+**อาการ** (สไลด์หน้า 3) — **ท้องโตร่วมกับปวดท้องทั่ว ๆ** ร่วมกับไข้ น้ำหนักลด อาจคลำได้หน้าท้องหนืดคล้ายแป้งนวด (doughy abdomen)
+
+**น้ำในช่องท้อง**
+| ค่า | TB peritonitis | เทียบกับ cirrhosis |
+|---|---|---|
+| **SAAG** | **< 1.1 g/dL** (ไม่ใช่ portal hypertension) | ≥ 1.1 g/dL |
+| Protein | **สูง (มักมากกว่า 2.5–3 g/dL)** | ต่ำ |
+| Cell | **lymphocyte เด่น** | PMN ต่ำถ้าไม่ติดเชื้อ |
+| **ADA** | **> 36–40 U/L** → sens 100% / spec 97% (สไลด์หน้า 10) | ต่ำ |
+
+**การยืนยัน** — AFB smear ของน้ำในช่องท้องแทบไม่เคยบวก การตรวจที่ให้ผลดีที่สุดคือ **ส่องกล้องช่องท้องตัดชิ้นเนื้อเยื่อบุช่องท้อง (laparoscopic peritoneal biopsy)** เห็นตุ่มเล็กขาวกระจายทั่ว และพยาธิวิทยาเป็น caseating granuloma
+**ข้อควรระวัง** — ผู้ป่วยตับแข็งก็เป็น TB peritonitis ซ้อนได้ ทำให้ SAAG สูงหลอกได้
+
+### วัณโรคลำไส้ (TB enteritis)
+- **ปวดท้องขวาล่าง (RLQ) พบ 80–90%** เพราะตำแหน่งที่พบบ่อยที่สุดคือ **ileocecal region** — มีเนื้อเยื่อน้ำเหลืองมาก และเนื้อหาในลำไส้ค้างอยู่นาน
+- ภาพ CT: **ผนัง terminal ileum และ cecum หนา + ต่อมน้ำเหลืองในช่องท้องโต**
+- **การวินิจฉัยแยกโรคสำคัญคือ Crohn's disease** — ต้องได้ชิ้นเนื้อจากการส่องกล้องลำไส้ ส่งพยาธิวิทยา (granuloma มี caseation) AFB NAAT และ culture
+- ภาวะแทรกซ้อน: ลำไส้ตีบ อุดตัน ทะลุ
+
+### วัณโรคระบบทางเดินปัสสาวะและอวัยวะสืบพันธุ์ (GU TB)
+- ในข้อมูลของสไลด์พบ **เฉพาะในผู้ป่วย HIV ลบ** — เป็นโรคของ reactivation ที่ใช้เวลานานหลายปี
+- เบาะแสสำคัญ: **sterile pyuria** (มีเม็ดเลือดขาวในปัสสาวะแต่เพาะเชื้อธรรมดาไม่ขึ้น) และ **ปัสสาวะเป็นเลือด**
+- ตรวจ **ปัสสาวะตอนเช้า 3 วันติดกัน** ส่ง AFB NAAT และ culture
+- ระยะหลัง: ท่อไตตีบ ไตบวมน้ำ หินปูนในไต จนไตไม่ทำงาน ในชายอาจมี epididymitis ในหญิงอาจเป็นหมัน
+- **รักษา 6 เดือน (2IRZE/4IR)** · **ไม่ให้ steroid**
+- **ข้อบ่งชี้ผ่าตัดไตออก (nephrectomy)** (สไลด์หน้า 15) — **ไตที่ไม่ทำงานแล้ว** ร่วมกับ **ความดันโลหิตสูงที่คุมไม่ได้ หรือปวดสีข้างรุนแรงต่อเนื่อง**
+""",
+    ["TB peritonitis: ท้องโต + ปวดทั่วท้อง · SAAG < 1.1 · protein สูง · lymphocyte · ADA > 36–40",
+     "ยืนยัน TB peritonitis ด้วย laparoscopic peritoneal biopsy",
+     "TB enteritis: ปวด RLQ 80–90% · ileocecal · DDx Crohn",
+     "GU TB: sterile pyuria + hematuria · ปัสสาวะเช้า 3 วัน",
+     "Nephrectomy: ไตไม่ทำงาน + HT คุมไม่ได้ หรือปวดสีข้างรุนแรงต่อเนื่อง"],
+    [mcq(N(25), "A 32-year-old woman has 2 months of abdominal distension, diffuse abdominal pain, evening fever and weight loss. Ascitic fluid: SAAG 0.6 g/dL, total protein 4.8 g/dL, WBC 1,100/µL (88% lymphocytes), ADA 58 U/L, cytology negative. What is the most likely diagnosis?",
+         ["Cirrhotic ascites", "Spontaneous bacterial peritonitis", "Tuberculous peritonitis", "Nephrotic syndrome", "Congestive heart failure"], 2,
+         "สไลด์หน้า 3 — **TB peritoneum: ท้องโตร่วมกับปวดทั่วท้อง**\n\nน้ำในช่องท้องเป็น **SAAG ต่ำ (< 1.1) = ไม่ใช่ portal hypertension** · **protein สูง** · **lymphocyte เด่น** · **ADA 58 > 36–40 U/L** (sens 100% / spec 97%) และไม่พบเซลล์มะเร็ง → **TB peritonitis**\n\nทำไมข้ออื่นผิด: cirrhosis และ heart failure มี SAAG สูง · SBP มี PMN เด่น · nephrotic syndrome มี SAAG ต่ำแต่ protein ต่ำ\n\nยืนยันด้วย **laparoscopic peritoneal biopsy**",
+         "Ascites SAAG ต่ำ + protein สูง + lymphocyte + ADA > 36–40 = TB peritonitis", "TB peritonitis", ["สไลด์ อ.ภาณุวัฒน์ หน้า 3, 10", "MED34 MCQ ครั้งที่ 2 (GI ข้อ 2) – ascites low SAAG high protein → TB peritoneal"], NLN + ["2.1.12"]),
+     mcq(N(26), "A 40-year-old man has 3 months of right lower quadrant pain, fever and weight loss. CT shows thickening of the terminal ileum and caecum with enlarged mesenteric lymph nodes. Colonoscopic ileal biopsy shows caseating granulomas. What is the diagnosis and the key differential that the biopsy has helped exclude?",
+         ["Acute appendicitis; mesenteric adenitis", "Intestinal tuberculosis; Crohn's disease", "Amoebic colitis; ulcerative colitis", "Colon cancer; diverticulitis", "Typhoid fever; yersiniosis"], 1,
+         "สไลด์หน้า 3 — **TB enteritis: ปวดท้องขวาล่าง 80–90%** เพราะรอยโรคอยู่ที่ **ileocecal region** เป็นหลัก\n\n**Caseating granuloma** ชี้ว่าเป็นวัณโรค และช่วยแยกจาก **Crohn's disease** ซึ่งให้ภาพ ileocecal thickening เหมือนกันแต่ granuloma **ไม่มี caseation** — การแยกนี้สำคัญมาก เพราะถ้าให้ steroid หรือยากดภูมิแก่ผู้ป่วยวัณโรคที่ถูกวินิจฉัยผิดว่าเป็น Crohn's โรคจะลุกลาม",
+         "Ileocecal thickening + caseating granuloma = intestinal TB (แยกจาก Crohn)", "Intestinal TB vs Crohn", ["สไลด์ อ.ภาณุวัฒน์ หน้า 3", "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 53 – ตัด ileum biopsy เจอ granulomatous inflammation → TB", "MED34 MCQ ครั้งที่ 4 ข้อ 76 – Terminal ileum thickening + lymphadenopathy → TB"], NLN + ["2.1.11"]),
+     mcq(N(27), "A 52-year-old man with a history of treated pulmonary TB has recurrent dysuria and microscopic haematuria. Urinalysis repeatedly shows pyuria, but routine urine cultures are negative. Which test is most appropriate next?",
+         ["Repeat routine urine culture", "Three consecutive early-morning urine samples for AFB, NAAT and mycobacterial culture",
+          "Serum ADA", "Prostate-specific antigen", "Empirical 3-day ciprofloxacin"], 1,
+         "**Sterile pyuria** (มีเม็ดเลือดขาวในปัสสาวะแต่เพาะเชื้อธรรมดาไม่ขึ้น) + ปัสสาวะเป็นเลือด ในผู้ที่เคยเป็นวัณโรค → คิดถึง **GU TB**\n\nตรวจ **ปัสสาวะตอนเช้า 3 วันติดกัน** ส่ง AFB NAAT และ culture เพราะเชื้อออกมาในปัสสาวะเป็นช่วง ๆ และจำนวนน้อย\n\nสไลด์หน้า 4 พบ GU TB **เฉพาะในผู้ป่วย HIV ลบ** — เป็น reactivation ที่ใช้เวลานาน",
+         "Sterile pyuria + hematuria → คิด GU TB → urine AFB/culture เช้า 3 วัน", "Genitourinary TB", ["สไลด์ อ.ภาณุวัฒน์ หน้า 4, 15"], NLN + ["2.1.43"]),
+     mcq(N(28), "In genitourinary tuberculosis, which situation is an indication for nephrectomy according to the lecture?",
+         ["Any positive urine mycobacterial culture", "Sterile pyuria at diagnosis",
+          "A non-functioning kidney associated with intractable hypertension or continuous severe flank pain",
+          "Bilateral renal involvement with normal function", "Drug-susceptible disease responding to therapy"], 2,
+         "สไลด์หน้า 15 — **nephrectomy ทำเมื่อไตไม่ทำงานแล้ว (non-functioning kidney)** และต้อง **มีความดันโลหิตสูงที่คุมไม่ได้ หรือปวดสีข้างรุนแรงต่อเนื่อง** ร่วมด้วย\n\nกลไกของความดันสูง: ไตที่ขาดเลือดจากพังผืดหลั่ง **renin** มากเกิน\n\nข้อบ่งชี้ผ่าตัดโดยรวม: **ไม่ตอบสนองต่อยา หรือยังมีการติดเชื้อที่ทำลายเนื้อเยื่ออยู่**",
+         "GU TB: ผ่าตัดไตเมื่อไม่ทำงาน + HT คุมไม่ได้/ปวดสีข้างต่อเนื่อง", "Surgery in GU TB", ["สไลด์ อ.ภาณุวัฒน์ หน้า 15"]),
+    ], NLN + ["2.1.12", "2.1.11", "2.1.43"])
+
+# ───────────────────────────── 11
+sec("chest-eptb-11", "สรุปการรักษา: ระยะเวลา steroid และการผ่าตัด",
+    "ส่วนใหญ่ 6 เดือน · กระดูกสันหลังนานขึ้น · สมอง 12 เดือน · steroid แบ่งสามระดับ · ผ่าตัดเมื่อยาไม่พอ", 8,
+"""### สูตรมาตรฐาน (แนวทางวัณโรคประเทศไทย 2561)
+| ระยะ | ยา | เป้าหมาย |
+|---|---|---|
+| **Initial phase 2 เดือน** | **I**soniazid · **R**ifampicin · **Z** (pyrazinamide) · **E**thambutol | **ฆ่าเชื้อให้มากที่สุดและหยุดการแพร่** |
+| **Continuation phase ≥ 4 เดือน** | **I**soniazid · **R**ifampicin | **ป้องกันการกลับเป็นซ้ำ** |
+
+### ระยะเวลาตามอวัยวะ
+| อวัยวะ | ระยะเวลา |
+|---|---|
+| **ต่อมน้ำเหลือง · เยื่อหุ้มปอด · เยื่อหุ้มหัวใจ · ทางเดินปัสสาวะ** | **6 เดือน — 2IRZE/4IR** |
+| **กระดูกและกระดูกสันหลัง** | **นานขึ้น ราว 9–12 เดือน** |
+| **เยื่อหุ้มสมองและสมอง (tuberculoma)** | **12 เดือน — 2IRZE/10IR** รักษานานและติดตามใกล้ชิด |
+
+**หลักจำ** — อวัยวะที่ **ยาเข้าได้ยาก** (กระดูก สมองที่ผ่าน blood–brain barrier) หรือที่ **ผลเสียจากการกลับเป็นซ้ำร้ายแรง** จะรักษานานขึ้น
+
+### Corticosteroid สามระดับ (สไลด์หน้า 14)
+| ระดับ | ตำแหน่ง | เหตุผล |
+|---|---|---|
+| **Absolute** | **TB meningitis** | **ลดการตายราว 25%** (Cochrane) · ช่วย paradoxical worsening |
+| **Conditional** | **TB pericarditis** | ลดการตาย ลดการเจาะระบายและผ่าตัด · **เฉพาะ HIV ลบ (ESC 2015)** หรือเชิงประจักษ์ |
+| **Not recommended** | **LN · pleura · bone/spine · GU** | ไม่มีประโยชน์ชัดเจน · เพิ่มผลข้างเคียง |
+
+**ข้อควรรู้** — rifampicin **เหนี่ยวนำเอนไซม์ตับ** ทำให้ระดับ steroid ในเลือดลดลง ขนาดยาที่ใช้ร่วมกับยาวัณโรคจึงสูงกว่าปกติ
+
+### ผ่าตัดเมื่อไร (สไลด์หน้า 15)
+**หลักใหญ่** — **ไม่ตอบสนองต่อยา หรือยังมีการติดเชื้อที่ทำลายเนื้อเยื่ออยู่**
+| ตำแหน่ง | ข้อบ่งชี้ |
+|---|---|
+| **TB spondylitis** | cord compression + neuro deficit **คงอยู่หรือกลับเป็นซ้ำแม้ได้ยา** · **spinal instability** |
+| **TB kidney** | **ไตไม่ทำงาน** + **HT คุมไม่ได้** หรือ **ปวดสีข้างรุนแรงต่อเนื่อง** → nephrectomy |
+| (เพิ่มเติม) TB pericarditis | constriction ที่ไม่ดีขึ้นหลังได้ยา → pericardiectomy |
+""",
+    ["LN · pleura · pericardium · GU = 6 เดือน (2IRZE/4IR)",
+     "Bone/spine ราว 9–12 เดือน · CNS 12 เดือน (2IRZE/10IR)",
+     "Steroid: meningitis absolute · pericarditis conditional · LN/pleura/bone/GU ไม่แนะนำ",
+     "ผ่าตัดเมื่อยาไม่พอ: Pott's + neuro deficit/instability · ไตไม่ทำงาน + HT/ปวด"],
+    [mcq(N(29), "Which extrapulmonary TB site requires the longest standard duration of treatment according to the Thai guideline shown in the lecture?",
+         ["Cervical lymph node", "Pleura", "Pericardium", "Meninges and brain (tuberculoma)", "Genitourinary tract"], 3,
+         "สไลด์หน้า 12 — **LN, pleura, pericardium, GU = 6 เดือน (2IRZE/4IR)** · **bone and spine นานขึ้น** · **meningitis และ CNS (tuberculoma) = รักษานานที่สุดและต้องติดตามใกล้ชิด** โดยใช้ **2IRZE/10IR รวม 12 เดือน**\n\nเหตุผล: ยาหลายตัวผ่าน blood–brain barrier ได้จำกัด โดยเฉพาะเมื่อการอักเสบลดลง และผลเสียจากการกลับเป็นซ้ำในสมองร้ายแรงมาก",
+         "CNS TB = 12 เดือน (2IRZE/10IR) — นานที่สุด", "Duration by organ", ["สไลด์ อ.ภาณุวัฒน์ หน้า 12"]),
+     mcq(N(30), "For which form of tuberculosis is adjunctive corticosteroid NOT recommended as routine therapy?",
+         ["Tuberculous meningitis", "Tuberculous pericarditis in an HIV-negative patient", "Tuberculous pleuritis", "Tuberculous meningitis with paradoxical worsening", "None; corticosteroid is recommended for all EPTB"], 2,
+         "สไลด์หน้า 14 แบ่ง steroid เป็นสามระดับ\n- **Absolute — TB meningitis** (ลดตายราว 25%)\n- **Conditional — TB pericarditis** (HIV ลบ)\n- **Not recommended — TB lymphadenitis, TB pleura, TB bone/spine, GU TB**\n\nTB pleuritis จึงไม่ควรได้ steroid เป็นกิจวัตร แม้จะมีน้ำมากก็ตาม",
+         "ไม่ให้ steroid: LN · pleura · bone/spine · GU", "Corticosteroid indications", ["สไลด์ อ.ภาณุวัฒน์ หน้า 14"], NLN + ["B1.7.4"]),
+    ], NLN + ["B1.7.4"])
+
+# ───────────────────────────── 12
+sec("chest-eptb-12", "พิษของยาแนวแรก และการตัดวงจรการแพร่เชื้อ",
+    "แผนที่พิษยาทีละอวัยวะ · มาตรการสามชั้น administrative–environmental–personal · การตามผู้สัมผัส", 8,
+"""### แผนที่พิษของยาแนวแรก (สไลด์หน้า 13)
+| อวัยวะ | ยา | พิษ |
+|---|---|---|
+| **ตา** | **E — ethambutol** | **optic neuropathy** — ตามัว เห็นสีผิด (แดง–เขียว) อาจสูญเสียการมองเห็นถาวร |
+| **หู** | **S — streptomycin** | **ototoxicity** — หูหนวก เวียนศีรษะ ตากระตุก |
+| **ตับ** | **H, R, Z** | **ตับอักเสบรุนแรง** — ทั้งสามตัวเป็นพิษต่อตับ · **R ทำให้ bilirubin (TB/DB) สูงแบบ cholestatic** · **Z ทำให้กรดยูริกสูงและปวดข้อ** |
+| **ไต** | **S — streptomycin** | ปัสสาวะออกน้อย **ไตวายเฉียบพลัน** |
+| **ระบบเลือดและทั่วร่างกาย** | **R — rifampicin** | **จ้ำเลือด เกล็ดเลือดต่ำ ช็อกเฉียบพลัน อาการคล้ายไข้หวัดใหญ่รุนแรง** (มักเกิดเมื่อกินยาไม่สม่ำเสมอหรือกลับมากินใหม่) |
+| **เส้นประสาท** | **H — isoniazid** | **peripheral neuropathy** → ป้องกันและรักษาด้วย **pyridoxine (vitamin B6) 50–100 มก./วัน** |
+
+รายละเอียดการจัดการตับอักเสบจากยา (เกณฑ์หยุดยาและการกลับมาให้ยาทีละตัว) อยู่ในคาบ **03 Pulmonary tuberculosis**
+
+### ตัดวงจรการแพร่เชื้อ (แนวทางควบคุมวัณโรคประเทศไทย 2554)
+| ชั้น | มาตรการ |
+|---|---|
+| **1. Administrative** | จัดระบบบริการและ **แยกผู้ป่วย** · ผู้ป่วยหยุดงานหรือแยกตัว **อย่างน้อย 2 สัปดาห์ หรือจนเพาะเชื้อเป็นลบ** (โดยเฉพาะเชื้อดื้อยา) |
+| **2. Environmental** | **จัดการระบายอากาศ** ในพื้นที่ให้บริการอย่างเข้มงวด |
+| **3. Personal** | ป้องกันทางเดินหายใจด้วย **หน้ากาก N95 หรือหน้ากากอนามัย** |
+
+**EPTB แพร่เชื้อหรือไม่** — EPTB **ที่ไม่มีรอยโรคที่ปอดหรือกล่องเสียง โดยทั่วไปไม่แพร่ทางอากาศ** จึงไม่ต้องแยกห้องแบบ airborne หลังจาก **ตัดวัณโรคปอดด้วย CXR และเสมหะแล้ว** ข้อยกเว้นคือแผลที่มีหนองไหลหรือหัตถการที่ทำให้เกิดละอองจากรอยโรค
+
+### การตามผู้สัมผัสใกล้ชิด
+- คัดกรองด้วย **TST (≥ 10 มม. = บวก)** หรือ **IGRA**
+- ตรวจคัดกรอง **ทุก 6 เดือนเป็นเวลา 2 ปี แล้วปีละครั้ง**
+
+### บทสรุปของอาจารย์
+**EPTB คือเชื้อที่เปลี่ยนรูปได้และมีจำนวนน้อย (shape-shifting, paucibacillary)** การเอาชนะต้องอาศัย
+1. **ความสงสัยทางคลินิกสูง**
+2. **การวินิจฉัยหลายวิธีร่วมกัน (NAAT และ culture)**
+3. **การรักษาที่ยาวขึ้นและเฉพาะตามอวัยวะ**
+""",
+    ["E → ตา (optic neuropathy) · S → หูและไต · H/R/Z → ตับ",
+     "R → จ้ำเลือด เกล็ดเลือดต่ำ ช็อก flu-like · Z → กรดยูริกสูง",
+     "H → peripheral neuropathy → pyridoxine 50–100 มก./วัน",
+     "แยกตัว ≥ 2 สัปดาห์หรือจน culture ลบ · ระบายอากาศ · N95",
+     "ผู้สัมผัส: TST ≥ 10 มม. หรือ IGRA ทุก 6 เดือน × 2 ปี แล้วปีละครั้ง",
+     "EPTB ล้วนที่ตัดวัณโรคปอดแล้ว โดยทั่วไปไม่ต้องแยกห้องแบบ airborne"],
+    [mcq(N(31), "A patient on 2IRZE for TB lymphadenitis develops purpura, thrombocytopenia and hypotension shortly after restarting his medication following a 2-week interruption. Which drug is most likely responsible?",
+         ["Isoniazid", "Rifampicin", "Pyrazinamide", "Ethambutol", "Pyridoxine"], 1,
+         "สไลด์หน้า 13 — **Rifampicin: purpura, thrombocytopenia, acute shock, severe flu-like syndrome**\n\nกลไกเป็น **ปฏิกิริยาทางภูมิคุ้มกัน (แอนติบอดีต่อ rifampicin)** ซึ่งมักเกิด **เมื่อกินยาไม่สม่ำเสมอหรือกลับมากินใหม่หลังหยุดไป** → ต้อง **หยุด rifampicin ถาวร**\n\nเทียบ: E → ตา · S → หูและไต · H → เส้นประสาทส่วนปลาย · H/R/Z → ตับ",
+         "R: จ้ำเลือด เกล็ดเลือดต่ำ ช็อก flu-like — มักเกิดเมื่อกินยาไม่สม่ำเสมอ", "Rifampicin hypersensitivity", ["สไลด์ อ.ภาณุวัฒน์ หน้า 13"]),
+     mcq(N(32), "A 50-year-old man with diabetes and tuberculous pleuritis is starting 2IRZE/4IR. Which supplement should be given to prevent a nerve toxicity of this regimen?",
+         ["Folic acid 5 mg/day", "Pyridoxine 50–100 mg/day", "Vitamin B12 injection monthly", "Thiamine 100 mg/day", "Vitamin D 1,000 IU/day"], 1,
+         "สไลด์หน้า 13 — **Isoniazid → peripheral neuropathy** รักษาและป้องกันด้วย **pyridoxine 50–100 มก./วัน**\n\nกลไก: isoniazid จับกับ pyridoxine และเพิ่มการขับออก ทำให้ขาด vitamin B6 ซึ่งจำเป็นต่อการทำงานของเส้นประสาท กลุ่มเสี่ยง ได้แก่ **เบาหวาน สุรา ทุพโภชนาการ ไตวาย HIV และหญิงตั้งครรภ์**",
+         "H → neuropathy → pyridoxine 50–100 มก./วัน", "Isoniazid neuropathy", ["สไลด์ อ.ภาณุวัฒน์ หน้า 13", "MED ข้อสอบเก่า – ยาวัณโรคตัวไหนทำให้ peripheral neuropathy"]),
+     mcq(N(33), "A 30-year-old woman is diagnosed with tuberculous cervical lymphadenitis. Chest radiograph is normal and three sputum samples are negative by smear and Xpert. She asks whether she must be admitted to an isolation room. What is the most appropriate advice?",
+         ["She must be admitted to a negative-pressure room for 2 months", "She must wear an N95 respirator at home for 6 months",
+          "She does not need airborne isolation, because extrapulmonary TB without pulmonary or laryngeal involvement is generally not transmissible by air",
+          "She should stop working for 12 months", "All household contacts must start 2IRZE"], 2,
+         "EPTB ที่ **ไม่มีรอยโรคที่ปอดหรือกล่องเสียง** โดยทั่วไป **ไม่แพร่ทางอากาศ** เพราะเชื้อไม่ได้ถูกไอออกมาเป็นละออง เมื่อ **ตัดวัณโรคปอดด้วย CXR และเสมหะแล้ว** จึงไม่ต้องแยกห้องแบบ airborne ดูแลแบบผู้ป่วยนอกได้\n\nมาตรการสามชั้นในสไลด์หน้า 16 (แยกตัว ≥ 2 สัปดาห์ ระบายอากาศ N95) ใช้กับผู้ป่วย **ที่แพร่เชื้อได้** คือวัณโรคปอดหรือกล่องเสียง\n\nผู้สัมผัสในบ้านยังควรได้รับการคัดกรองตามแนวทาง แต่ **ไม่ได้ให้ยาสูตรรักษาโรคทุกคน**",
+         "EPTB ล้วนที่ตัดวัณโรคปอดแล้ว → ไม่ต้องแยกห้อง airborne", "Infection control in EPTB", ["สไลด์ อ.ภาณุวัฒน์ หน้า 16", "MED32 MCQ ข้อ 32 – ให้อาการ extrapulmonary TB ทำยังไงดี (ไม่ต้อง admit, admit ห้องแยก, face mask)"]),
+    ], NLN + ["B1.5.1(3)"])
+
 # ═══ ต่อส่วนที่ 2 ด้านล่าง ═══
