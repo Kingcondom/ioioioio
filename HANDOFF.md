@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 20 ก.ย. 2569 · รอบที่ 2)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 23 ก.ย. 2569 · รอบที่ 3)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -27,7 +27,7 @@ Claude รันอยู่บนเครื่องชั่วคราว�
 ```bash
 cd /home/user/ioioioio
 git add -A && git commit -m "<สรุปสั้น ๆ ว่าทำอะไร>"
-git push -u origin claude/internal-med-learning-web-j9ca6l
+git push -u origin claude/med421-learn-artifact-qp4u5f
 ```
 
 เกณฑ์ว่า "ก้อนหนึ่ง" คือ — สร้างคาบเรียนเสร็จ 1 คาบ · แกะเอกสารเสร็จ 1 ภาค · เขียนสคริปต์เสร็จ 1 ตัว
@@ -52,7 +52,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 11**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 12**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -65,16 +65,16 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 ## 2. ที่อยู่ไฟล์
 
 ```
-/home/user/ioioioio/          ← repo · branch claude/internal-med-learning-web-j9ca6l
+/home/user/ioioioio/          ← repo · branch claude/med421-learn-artifact-qp4u5f (แตกจาก claude/keen-brahmagupta-nqy0my)
 ├── artifact/                  ← ต้นฉบับ artifact (publish จากที่นี่)
 │   ├── index.html             ← หน้าเว็บ (43 KB)
 │   ├── README.md              ← วิธีเพิ่มคาบใหม่ + schema ย่อ
 │   ├── data/
 │   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
 │   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
-│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (2)
+│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (3)
 │   │   └── nephro.json (1)    neuro.json (5)
-│   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py ·
+│   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
 │                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
 │                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
 ├── nl/                        ← งานแกะเกณฑ์ นล. (เสร็จแล้ว ไม่ต้องทำซ้ำ)
@@ -85,6 +85,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 │   └── merge_full.py          ← รวมทั้งสองภาคเข้า artifact/data/nl.json + แก้รหัสผิด
 ├── refs/curriculum-topics-2569.md  ← หัวข้อตามหลักสูตรทางการ
 ├── slides/SOURCES.md          ← รายการไฟล์สไลด์ที่ได้รับและ Drive file id
+├── slides/eptb_notes.md       ← โน้ตอ่านสไลด์ Extrapulmonary TB ทีละหน้า (16 หน้า + ลายมือ)
 └── (ของเดิมคนละสาย: drill.html · learn.html · build.py · data/ · export/)
 ```
 
@@ -118,7 +119,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 14 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 15 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -130,6 +131,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | cardio | 24/9 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ |
 | chest | 03 | Pulmonary tuberculosis |
 | chest | 26 | Arterial blood gas analysis |
+| chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
 | nephro | 05 | Fluid electrolyte: Divalent |
 | neuro | 07 | Acute ischemic stroke |
 | neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
@@ -192,6 +194,10 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
 
+**อ.ภาณุวัฒน์ (Panuwat Wongkulab)** — Extrapulmonary TB: The Hidden Pathogen (Apr 2026) ✅
+- ผู้ใช้อัปโหลดในแชทเป็น PDF ภาพล้วน 16 หน้า (ไม่อยู่ใน Drive) → อ่านด้วยสายตา โน้ตเต็มที่ `slides/eptb_notes.md`
+- ⚠️ ไฟล์ bank `CH-MCQ-20` และ `CH-OSCE-04` (pleural/ADA) ของคาบ 17 อ.สกล ยังว่าง — ตั้งใจไม่ใช้ในคาบ EPTB เพื่อเก็บไว้ให้คาบเยื่อหุ้มปอด
+
 **อ.พิมลพรรณ** (เจ้าของ paranee.k@rsu.ac.th) — ✅ **ใช้ครบทั้ง 4 ไฟล์แล้ว**
 - Epilepsy `1tWDtfQ-ZA-tDDR1_YgGkYgyS-4md6hQ5` ✅
 - CNS infection `1dnFAWEZRkkzF7MgbJ487vU1Jv9pNZHjp` ✅
@@ -215,8 +221,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
 1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
-2. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
-   Dyslipidemia · Septicemia (รอสไลด์)
+2. W2 เหลือ 4 คาบ: Skin infections · Nephrotic/Nephritis ·
+   Dyslipidemia · Septicemia (รอสไลด์) — ✅ Extrapulmonary TB เสร็จแล้ว (v12)
 3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
