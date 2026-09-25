@@ -28,8 +28,8 @@ try:
         pg.wait_for_selector("#courseTabs button", timeout=10000)
         tabs = pg.eval_on_selector_all("#courseTabs button", "els=>els.map(e=>e.textContent)")
         print("แท็บชุดวิชา:", tabs)
-        if len(tabs) != 5:
-            fail.append("แท็บควรมี 5 ชุด แต่ได้ %d" % len(tabs))
+        if len(tabs) != 6:
+            fail.append("แท็บควรมี 6 ชุด แต่ได้ %d" % len(tabs))
 
         pg.wait_for_selector("aside .olec", timeout=10000)
         n = pg.eval_on_selector_all("aside .olec", "els=>els.length")
@@ -48,6 +48,17 @@ try:
         pg.click("#courseTabs button:has-text('Cardio')")
         pg.wait_for_function("document.querySelectorAll('aside .olec').length===%d" % ncar, timeout=10000)
         print("Cardio outline: %d คาบ ✓" % ncar)
+
+        # สลับไป Endo (ชุดใหม่) → ต้องโหลด endo.json ได้ แล้วกลับมา Cardio
+        nend = len(_j.load(open(os.path.join(BUILD, "data", "endo.json"), encoding="utf-8")))
+        pg.click("#courseTabs button:has-text('Endo')")
+        pg.wait_for_function("document.querySelectorAll('aside .olec').length===%d" % nend, timeout=10000)
+        pg.click("aside .olec > button")
+        pg.wait_for_selector("aside .osec li button", timeout=5000)
+        nsec = pg.eval_on_selector_all("aside .osec li button", "e=>e.length")
+        print("Endo outline: %d คาบ · %d หัวข้อ ✓" % (nend, nsec))
+        pg.click("#courseTabs button:has-text('Cardio')")
+        pg.wait_for_function("document.querySelectorAll('aside .olec').length===%d" % ncar, timeout=10000)
 
         # เปิดคาบแรก → หัวข้อย่อย → ตอบข้อสอบ 1 ข้อ
         pg.click("aside .olec > button")
