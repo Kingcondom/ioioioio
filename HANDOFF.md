@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 23 ก.ย. 2569 · รอบที่ 3)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 25 ก.ย. 2569 · รอบที่ 4)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -52,7 +52,7 @@ git push -u origin claude/med421-learn-artifact-qp4u5f
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 12**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 13** · มี 6 ชุดวิชา — เพิ่ม **Endo**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -73,7 +73,8 @@ git push -u origin claude/med421-learn-artifact-qp4u5f
 │   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
 │   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
 │   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (3)
-│   │   └── nephro.json (1)    neuro.json (5)
+│   │   ├── nephro.json (1)    neuro.json (5)
+│   │   └── endo.json (1)      ← ชุดใหม่ 25 ก.ย. (build_mets.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
 │   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
 │                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
 │                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
@@ -119,7 +120,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 15 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 16 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -138,6 +139,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
 | neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
 | neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
+| endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
 
 > ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
 > ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
@@ -210,6 +212,12 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - NSTEMI 2020 `17iNJA1PvpedUAz8wyM4CzZBU1MAy1EdI`
 - STEMI2017 `1j-EtRG61awYlCMKRx-q9MKymdhYF2BAA`
 
+**อ.นวพร นภาทิวาอำนวย** (Diabetes & Metabolism) — ✅ ใช้แล้ว (ชุด Endo คาบ 01)
+- Lec 1 2026 MS, obesity, DLP Handout `1ttUNtkD5EXmVXVIhKuScn4Y6wOV9-yQe` (15 MB · อยู่ใน Drive ผู้ใช้เอง)
+  ⚠️ `read_file_content` ได้ข้อความถึงสไลด์ DLCN แล้วหยุด — ส่วนรักษา dyslipidemia ดึงไม่ได้
+  ดาวน์โหลดตรงก็ไม่ได้ (proxy 403) → หัวข้อ 11–13 ของคาบนี้ใช้ ESC/EAS 2019 แทนและระบุไว้ใน `nlGap`
+  ถ้าผู้ใช้ส่งภาพสไลด์ส่วนนั้นมา ให้เทียบแล้วแก้ `build_mets.py`
+
 **เข้าไม่ถึง (น่าจะอยู่บัญชี @rsu.ac.th):**
 - UTI `1GG55VJ6ddTMQ2IETf1IqUpU_tMDizEH7`
 - Tropical disease `1ax8FzPhmAZ4iFSSsXGQcb5TGobcG4nn9` (ผู้ใช้สั่งข้าม Malaria ไปก่อน)
@@ -222,7 +230,7 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
 2. W2 เหลือ 4 คาบ: Skin infections · Nephrotic/Nephritis ·
-   Dyslipidemia · Septicemia (รอสไลด์) — ✅ Extrapulmonary TB เสร็จแล้ว (v12)
+   Septicemia (รอสไลด์) — ✅ Extrapulmonary TB (v12) · ✅ Dyslipidemia/MetS/Obesity (v13 · ชุด Endo)
 3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
