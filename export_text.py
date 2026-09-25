@@ -80,13 +80,29 @@ def long_block(it):
 def export_set(key):
     s = next(x for x in CFG['sets'] if x['key'] == key)
     d = BANK[key]
-    mcq, meq, old = d['mcq'], d['meq'], d['old']
+    mcq, meq, old, hot = d['mcq'], d['meq'], d['old'], d.get('hot') or []
     n_old = sum(len(g['items']) for g in old)
     L = ['# MED421 · %s (%s)' % (s['label'], s['thai']), '',
          s.get('blurb', ''), '',
          'ข้อใหม่: MCQ %d · MEQ/OSCE %d · คลังข้อสอบเก่า %d ข้อ' % (len(mcq), len(meq), n_old),
          'เฉลยเป็นตัวอักษรตรงกับเว็บและ PDF (ตัวเลือกถูกสลับด้วย seed ของชุดแล้ว)', '',
-         '---', '', '## ส่วนที่ 1 · MCQ ข้อใหม่', '']
+         '---', '']
+    if hot:
+        L += ['## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)', '']
+        for h in hot:
+            L += ['### Lec %s · %s — %s' % (h['lec'], h['lecture'], h.get('level', '')), '']
+            for title, key in (('MCQ — ถามอะไรบ่อย', 'mcq'), ('MEQ — โจทย์ที่เคยออก', 'meq'),
+                               ('OSCE/SAQ — สถานีที่เคยออก', 'osce'), ('ต้องตอบให้ได้', 'must')):
+                rows = h.get(key) or []
+                if rows:
+                    L += [title + ':'] + ['  - ' + x for x in rows] + ['']
+            if h.get('seen'):
+                L += ['เจอในโพย: ' + h['seen']]
+            if h.get('ids'):
+                L += ['ข้อตัวอย่าง: ' + ', '.join(h['ids'])]
+            L += ['']
+        L += ['---', '']
+    L += ['## ส่วนที่ 1 · MCQ ข้อใหม่', '']
     for it in mcq:
         L += mcq_block(it)
     if meq:

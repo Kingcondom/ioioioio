@@ -39,8 +39,8 @@ try:
 
         ring = pg.inner_text("#ring")
         print("แถบความคืบหน้า:", ring.replace("\n", " "))
-        if "/34" not in ring:   # AIR = 9+9+16 หัวข้อ (แถบนี้นับเฉพาะชุดที่เปิดอยู่)
-            fail.append("ความคืบหน้าของ AIR ควรเป็น 34 หัวข้อ ได้: %r" % ring)
+        if "/36" not in ring:   # AIR = 9+9+18 หัวข้อ (แถบนี้นับเฉพาะชุดที่เปิดอยู่)
+            fail.append("ความคืบหน้าของ AIR ควรเป็น 36 หัวข้อ ได้: %r" % ring)
 
         # สลับไป Cardio → ต้องโหลดไฟล์ใหม่แล้วแสดงคาบครบตามไฟล์ data
         import json as _j
