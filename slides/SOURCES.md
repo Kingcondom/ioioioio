@@ -265,6 +265,58 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
   **ข้อบ่งชี้เจาะไต** ครบ · **ISN/RPS class I–VI** (III <50% · IV ≥50% · VI >90% sclerosis) ·
   **full house IF** · การรักษาตาม class (I ไม่ต้อง · II pred สั้น · III/IV/V pred 0.5–1 MKD + IS · VI ประคับประคอง)
 
+## Endo คาบ 01 · Metabolic syndrome, Obesity, Dyslipidemia — อ.นวพร นภาทิวาอำนวย · 25 ก.ย. 2569
+
+อ.นวพร = Navaporn Napartivaumnuay · Division of Diabetes and Metabolism รพ.ราชวิถี (เจ้าของไฟล์ nutt.spider@gmail.com)
+
+| ไฟล์ | fileId | ดึงข้อความ |
+|---|---|---|
+| Lec 1 2026 MS, obesity, DLP 4th year Handout.pdf (15 MB) | `1ttUNtkD5EXmVXVIhKuScn4Y6wOV9-yQe` | ⚠️ **ได้ถึงสไลด์ Dutch Lipid Clinic Network แล้วข้อความหยุด** — ส่วน dyslipidemia ที่เหลือ (FH criteria, secondary causes, treatment) ดึงไม่ออก |
+
+ดาวน์โหลดไฟล์ PDF ตรงไม่ได้ (proxy 403 ที่ drive.usercontent) และไฟล์ใหญ่เกินกว่าจะส่งผ่าน `download_file_content`
+
+สาระที่ดึงได้:
+- **MetS**: insulin resistance + visceral adiposity · เสี่ยง T2D 5–7 เท่า · CVD 3 เท่า · ตายทุกสาเหตุ 1.5 เท่า ·
+  เกณฑ์ WC (เฉพาะเชื้อชาติ) + TG >150 · HDL <40 ชาย/<50 หญิง · BP >130/85 · FPG >100 (หรือรักษาอยู่) ·
+  WC เอเชีย ≥90/≥80 · ยุโรป ≥94/≥80 · ATP III 102/88 · **รอบเอว > ครึ่งหนึ่งของส่วนสูง** (170 cm → >85 cm) ·
+  วัดผ่านสะดือ สายวัดขนานพื้น
+- **จัดการ MetS**: TLC 150–300 นาที/สัปดาห์ (ปานกลาง) หรือ 75–150 (หนัก) · ลดน้ำหนัก 5–10% ·
+  ±metformin · statin · ACEI/ARB · incretin · metabolic surgery (JAMA 2023 prediabetes review)
+- **ระบาดวิทยา**: 1 ใน 4 ของโลกจะอ้วนภายในปี 2035 · ไทย 2025 น้ำหนักเกิน/อ้วน ~48–49% · อ้วน 17% ·
+  มาเลเซีย 54.4% สูงสุดใน SEA · high BMI → 1.6 ล้านการตายก่อนวัยอันควร
+- **BMI**: WHO 18.5–24.9 / 25–29.9 / ≥30 (stage 30–34.9, 35–39.9, ≥40) · Asia-Pacific 18.5–22.9 / 23–27.4 / ≥27.5
+  (stage 27.5–32.4, 32.5–37.4, ≥37.5) · อีกคอลัมน์ Asian: overweight 23–24.9 · obese I 25–29.9 · obese II ≥30 ·
+  WC Caucasian ≥102/88 · Asian ≥90/80 · วัดกึ่งกลางขอบซี่โครงล่างกับ iliac crest · BIA ข้อดี/ข้อเสีย
+- **สาเหตุ**: ฮอร์โมน (leptin resistance, hypothyroid, Cushing) · depression · นอนไม่พอ · ยา · พันธุกรรม · สิ่งแวดล้อม
+- **ยาที่ทำให้น้ำหนักขึ้น + ทางเลือก** (Canadian CPG 2020) — ตารางครบ: insulin/SU/TZD → GLP-1RA, SGLT2i ·
+  β-blocker non-selective → ACEI/ARB/CCB · TCA/paroxetine/mirtazapine → fluoxetine, sertraline, bupropion ·
+  clozapine/olanzapine/quetiapine → lurasidone, aripiprazole, ziprasidone · lithium/valproate → lamotrigine ·
+  gabapentin/pregabalin/valproate → topiramate, zonisamide · DMPA → COC, IUD · glucocorticoid → NSAID, biologic ·
+  diphenhydramine → loratadine
+- **นิยามใหม่**: Lancet Commission 2025 (clinical vs preclinical obesity) · EASO: BMI ≥30 หรือ BMI ≥25 + WHtR ≥0.5
+  ร่วมกับความบกพร่องทางการแพทย์ การทำงาน หรือจิตใจ
+- **ภาวะแทรกซ้อน**: anatomical (OSA, OHS, OA, GERD/Barrett) · metabolic (T2D, CHD, stroke, HF, MASLD, gallbladder,
+  asthma, cancer, HT, DLP, CKD, gout, GDM, PCOS, sperm ↓, varicose, DVT, acanthosis) · psychological ·
+  BMI 30–35 อายุสั้นลง ~3 ปี · 40–50 สั้นลง 8–10 ปี (Lancet 2009)
+- **MHO + ตัวอย่างเป้าน้ำหนัก**: 100 kg, 165 cm, BMI 37 → ลด 3–10% ใน 6 เดือน · BMI 22.9 = 63 kg · 27.4 = 75 kg
+- **DM remission** (แนวทางไทย 2565): twin cycle — ไขมันตับ/ตับอ่อน
+- **ประวัติ/ตรวจร่างกาย/แล็บ** (Canadian 2020): STOP-BANG · Cushing features · striae >1 cm ·
+  แล็บทุกคน FBS/HbA1c, electrolytes, renal, lipid, ALT, CBC, cancer screening · ตามข้อบ่งชี้ TSH/FT4, uric, iron,
+  vit D, UA · PCOS: LH, FSH, testosterone, prolactin · **STOP-BANG >4 → ส่งปรึกษาแพทย์ปอด**
+- **รักษา**: VLCD <800 kcal · balanced low energy 1000–1200 kcal (carb 50–55, protein 15–20, fat 30–35%) ·
+  aerobic + resistance · behavioral · **lifestyle ≥3 เดือนก่อน AOM · ลดได้ >10% ไม่ต้องใช้ยา ·
+  AOM 3–5 เดือนแล้วลด <5% พิจารณาหยุด**
+- **ข้อบ่งชี้ AOM**: BMI ≥30 หรือ ≥27 + โรคร่วม · (อีกคอลัมน์) ≥27 หรือ ≥25 + T2D/HT/DLP ·
+  ยา: orlistat (lipase) · phentermine · phentermine/topiramate · naltrexone/bupropion · liraglutide 3.0 ·
+  semaglutide 2.4 (FDA มิ.ย. 2021) · tirzepatide · semaglutide ปากกา 5 สี 0.25→0.5→1.0→1.7→2.4 ·
+  ตู้เย็น 2–8°C · อุณหภูมิห้อง <30°C ได้ 6 สัปดาห์ · **ลืมฉีด: ≤5 วันฉีดทันที · >5 วันข้าม** ·
+  ข้อห้าม AOM: อายุ <12 ปี · ตั้งครรภ์ · ไม่อยู่ในความดูแลของแพทย์
+- **MBS** ASMBS/IFSO 2022: ≥35 แนะนำเสมอ · ≥30 + T2D · 30–34.9 ที่ไม่สำเร็จด้วยวิธีอื่น · เอเชีย >27.5 ·
+  **ไทย 2564**: ≥37.5 ไม่ต้องมีโรคร่วม · ≥32.5 + โรคร่วมที่คุมไม่ได้ · ≥30 + T2D/MetS (ทางเลือก) ·
+  27.5–30 ในงานวิจัย · อายุ 18–65 · ลด 5–10% ก่อนผ่าตัด · มาตามนัด ≥80% · RYGB และ sleeve
+- **Dyslipidemia**: outline (definition · endogenous/exogenous pathway · plaque formation · primary/secondary · treatment) ·
+  ข้อความเรื่อง pathway และ plaque (Moore & Tabas 2011) · primary = genetic defect · **จบที่หัวสไลด์ DLCN for FH**
+
 ## หมายเหตุสำหรับงานต่อ
 ไฟล์ที่ขึ้น ⚠️ เนื้อหาหลักเป็น **ภาพตาราง ESC** ที่ text layer ดึงไม่ออก — ถ้าจะเขียนบทเรียน
 คาบ 13 ให้ครบตามสไลด์จริง ต้องเปิดดูภาพจากสองไฟล์นั้นเพิ่ม (หรือใช้เนื้อหาจากไกด์ไลน์ ESC ต้นทางแทน
