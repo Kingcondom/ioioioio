@@ -22,7 +22,7 @@ learn/<set>.json              --build_learn.py-->  learn.html  +  export/learn_<
 ### Artifact ที่ publish แล้ว
 | หน้า | ลิงก์ |
 |---|---|
-| **drill.html** (Version 9) | https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X |
+| **drill.html** (Version 10 · 25 ก.ย. เพิ่ม E04 + TB2) | https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X |
 | **learn.html** (Version 1) | https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE |
 
 > อัปเดต artifact เดิมด้วยการส่ง `url` นั้นเข้าไป — ถ้า publish เฉย ๆ จะได้ artifact ใหม่คนละอัน
