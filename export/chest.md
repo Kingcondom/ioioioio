@@ -1,8 +1,8 @@
 # MED421 · Chest (ระบบการหายใจและทรวงอก)
 
-5 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD
+6 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD · วัณโรคนอกปอด (อ.ภานุวัฒน์)
 
-ข้อใหม่: MCQ 40 · MEQ/OSCE 10 · คลังข้อสอบเก่า 56 ข้อ
+ข้อใหม่: MCQ 50 · MEQ/OSCE 11 · คลังข้อสอบเก่า 58 ข้อ
 เฉลยเป็นตัวอักษรตรงกับเว็บและ PDF (ตัวเลือกถูกสลับด้วย seed ของชุดแล้ว)
 
 ---
@@ -1601,6 +1601,352 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.3.10(5) — Lower respiratory tract infections (bronchitis, bronchiolitis, pneumonia, lung abscess, bronchiectasis) [กลุ่มที่ 2] · 2.3.10 Disorders of the respiratory system หน้า 65
   - NL 2.3.10-3(2) — Empyema thoracis [กลุ่มที่ 3] · 2.3.10 Disorders of the respiratory system หน้า 65
 
+### [CH-MCQ-41] Tuberculous pleurisy – the test that best supports the diagnosis
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 34-year-old HIV-negative man has 4 weeks of fever, dry cough, weight loss and left pleuritic chest pain that did not improve with a course of amoxicillin-clavulanate. Chest radiograph shows a moderate left pleural effusion without parenchymal infiltrate. Thoracentesis yields straw-coloured fluid: protein 5.1 g/dL (serum 7.0), LDH 480 U/L (serum upper limit 250), WBC 2,800/mm3 with 85% lymphocytes and 2% eosinophils, glucose 70 mg/dL, few mesothelial cells, and no malignant cells. Pleural fluid AFB smear is negative. Which additional result on the pleural fluid most strongly supports tuberculous pleurisy?
+
+A. A positive tuberculin skin test of 15 mm
+B. Pleural fluid pH of 7.45
+C. Pleural fluid eosinophils above 10%
+D. Negative GeneXpert MTB/RIF on pleural fluid
+E. Adenosine deaminase (ADA) of 72 U/L
+
+ANSWER: E. Adenosine deaminase (ADA) of 72 U/L
+
+EXPLAIN:
+**ภาพรวม:** exudate ตาม Light's criteria (protein ratio 0.73, LDH > 2/3 ของค่าสูงสุดปกติ) + **lymphocyte เด่น 50–90% · eosinophil < 5% · mesothelial cell น้อย · ไม่มีเซลล์มะเร็ง** ตรงตามตาราง body fluid ในสไลด์อาจารย์ (หัวข้อที่อาจารย์ติดดาวว่าออกสอบมากที่สุด)
+
+**ADA** เป็นเอนไซม์ใน purine metabolism ที่เพิ่มขึ้นเมื่อ T cell แบ่งตัว จึงสะท้อน cell-mediated immunity ต่อเชื้อวัณโรคในโพรงเยื่อหุ้มปอด
+- ค่าตัด pleural **> 40 U/L: sensitivity 92% · specificity 89%**
+- ผลบวกลวง: empyema · lymphoma · malignant effusion · parapneumonic · collagen vascular disease (แต่ส่วนใหญ่มี neutrophil เด่นหรือพบเซลล์มะเร็ง)
+
+**ทำไมตัวลวงผิด**
+- *TST บวก* — บอกแค่ว่าเคยติดเชื้อ (latent) **ใช้วินิจฉัย active TB ไม่ได้** และในประเทศไทยบวกได้จาก BCG หรือการสัมผัสในอดีต
+- *pH 7.45* — TB pleurisy pH **แทบไม่เคยต่ำกว่า 7.3 และไม่เคยเกิน 7.4** ค่า 7.45 จึงไปทางอื่น
+- *Eosinophil > 10%* — ชี้ไปทางอากาศหรือเลือดในโพรงปอด ยา หรือพยาธิ และค้านวัณโรค
+- *GeneXpert ลบ* — sensitivity ในน้ำเยื่อหุ้มปอดต่ำมาก (ราว 0.34) ผลลบจึงตัดวัณโรคไม่ได้
+
+PEARL: น้ำเยื่อหุ้มปอด exudate ที่ lymphocyte เด่น eosinophil < 5% + ADA > 40 = TB pleurisy — TST ใช้วินิจฉัย active TB ไม่ได้
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 | MED31 ข้อ 27 — Light criteria ได้ exudate, ADA > 40 ต้องรักษาอย่างไร → ยาวัณโรค | MED31 ข้อ 72 — exudate สีเหลือง ADA 50 | MED30 — สงสัย TB pleural effusion ส่งตรวจอะไร (ADA / PCR for TB)
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL B6.3(1) — Pleural fluid analysis · B6.3 การสืบค้นโรคและการแปลผล หน้า 31
+  - NL 3.1.7 — Body fluid analysis (e.g., CSF, pleural, synovial) · 3.1 ตรวจและแปลผลได้ด้วยตนเอง หน้า 71
+  - NL 2.3.10(7) — Pleural effusion [กลุ่มที่ 2] · 2.3.10 Disorders of the respiratory system หน้า 65
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
+### [CH-MCQ-42] Tuberculous pleurisy – treatment regimen and the role of steroids
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: The patient in the previous item is diagnosed with tuberculous pleurisy (ADA 72 U/L). He weighs 60 kg, HIV test is negative and liver function is normal. Which is the most appropriate treatment?
+
+A. The same 6-month regimen plus prednisolone 1 mg/kg/day for 4 weeks
+B. 2 months of four drugs followed by 10 months of isoniazid and rifampicin
+C. Isoniazid alone for 9 months
+D. 2 months of isoniazid, rifampicin, pyrazinamide and ethambutol, followed by 4 months of isoniazid and rifampicin
+E. Therapeutic chest drain insertion and antibiotics only, since TB pleurisy resolves spontaneously
+
+ANSWER: D. 2 months of isoniazid, rifampicin, pyrazinamide and ethambutol, followed by 4 months of isoniazid and rifampicin
+
+EXPLAIN:
+**ระยะเวลารักษาตามอวัยวะ (แนวทางไทย 2561 ในสไลด์)**
+
+| ตำแหน่ง | สูตร |
+|---|---|
+| ต่อมน้ำเหลือง · **เยื่อหุ้มปอด** · เยื่อหุ้มหัวใจ · ทางเดินปัสสาวะ | **2HRZE/4HR = 6 เดือน** |
+| กระดูกและกระดูกสันหลัง | ยาวขึ้น 9–12 เดือน |
+| เยื่อหุ้มสมอง / tuberculoma | **2HRZE/10HR = 12 เดือน** |
+
+ช่วงเข้มข้น 2 เดือนใช้ 4 ตัวเพื่อฆ่าเชื้อให้เร็วและกันดื้อยา ช่วงต่อเนื่อง HR เพื่อกันกลับเป็นซ้ำ
+
+**Steroid:** อาจารย์จัด TB pleura ไว้ในกลุ่ม **ไม่แนะนำ** (เช่นเดียวกับต่อมน้ำเหลือง กระดูกสันหลัง และทางเดินปัสสาวะ) เพราะไม่ลดการตายหรือพังผืดในระยะยาว
+
+**ทำไมตัวลวงผิด**
+- *เพิ่ม prednisolone* — ไม่มีข้อบ่งชี้ในเยื่อหุ้มปอด
+- *12 เดือน* — เป็นสูตรของ TB meningitis
+- *ICD + antibiotic* — TB pleurisy ไม่รักษาจะหายเองได้ แต่ **ราว 2 ใน 3 จะกลับมาเป็นวัณโรคปอดหรือนอกปอดภายใน 5 ปี** จึงต้องให้ยาวัณโรคเสมอ
+- *INH เดี่ยว* — เป็นการรักษา latent TB ไม่ใช่ active disease
+
+PEARL: TB เยื่อหุ้มปอด = 2HRZE/4HR 6 เดือน ไม่ให้ steroid
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+  - NL 2.3.10(7) — Pleural effusion [กลุ่มที่ 2] · 2.3.10 Disorders of the respiratory system หน้า 65
+
+### [CH-MCQ-43] Tuberculous lymphadenitis – how to confirm the diagnosis
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 26-year-old woman has noticed firm, painless swellings on both sides of her neck for 6 weeks. There is low-grade evening fever and 3 kg weight loss. The nodes are 2–3 cm, rubbery, non-tender, without overlying erythema; one is matted. Chest radiograph is normal. HIV test is negative. Which is the most appropriate next step?
+
+A. Excisional biopsy (or FNA) of a node for histopathology, AFB stain, mycobacterial culture and GeneXpert
+B. Start empirical anti-TB treatment without tissue sampling
+C. A 2-week course of amoxicillin-clavulanate and review
+D. Oral prednisolone to shrink the nodes
+E. Tuberculin skin test and start anti-TB treatment if it is positive
+
+ANSWER: A. Excisional biopsy (or FNA) of a node for histopathology, AFB stain, mycobacterial culture and GeneXpert
+
+EXPLAIN:
+**ต่อมน้ำเหลืองโตแบบไม่เจ็บ ค่อย ๆ โตเป็นสัปดาห์ แข็ง ไม่มีการอักเสบเฉียบพลัน** เป็นลักษณะของ TB lymphadenitis (scrofula) ในสไลด์อาจารย์ แต่ **ต้องแยกมะเร็ง** (lymphoma, มะเร็งที่แพร่มา) ซึ่งเป็นโรคที่อาจารย์เน้นให้หา primary ที่ศีรษะ คอ และเยื่อหุ้มปอด
+
+**ต้องได้เนื้อเยื่อเสมอ:** excisional biopsy หรือ FNA
+- พยาธิ: **caseating granuloma** · AFB รูปคล้ายลูกปัด
+- **อัตราวินิจฉัยทางพยาธิ ~100%** สำหรับ LN EPTB
+- **GeneXpert ในเนื้อเยื่อต่อมน้ำเหลืองมี pooled sensitivity 0.96** (ต่างจากน้ำเยื่อหุ้มปอดที่ได้แค่ 0.34)
+- **ส่งเพาะเชื้อ** เพื่อยืนยันและทำ DST
+
+**ทำไมตัวลวงผิด**
+- *Antibiotic 2 สัปดาห์* — ภาพไม่เข้ากับ bacterial lymphadenitis (ไม่เจ็บ ไม่แดง นานหลายสัปดาห์) และทำให้เสียเวลาวินิจฉัยมะเร็ง
+- *TST* — ใช้วินิจฉัย active TB ไม่ได้
+- *รักษาโดยไม่เอาชิ้นเนื้อ* — ถ้าเป็น lymphoma จะวินิจฉัยช้า
+- *Steroid* — ไม่มีข้อบ่งชี้ และบดบังการวินิจฉัย lymphoma
+
+PEARL: ต่อมน้ำเหลืองโตไม่เจ็บหลายสัปดาห์ → เอาชิ้นเนื้อไปตรวจพยาธิ AFB เพาะเชื้อ และ Xpert (sensitivity ในต่อมน้ำเหลือง 0.96) — ต้องแยก lymphoma เสมอ
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Case 02 painless lymphadenopathy · NAAT vs culture
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+  - NL B6.2.2(8) — Tuberculosis [กลุ่มที่ 1-2] · B6.2.2 Infectious/inflammatory/immunologic disorders หน้า 30
+
+### [CH-MCQ-44] Tuberculous spondylitis (Pott disease) – indication for surgery
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 45-year-old man with HIV infection has 4 months of worsening thoracic back pain with focal spinous tenderness at T10. For the past 3 days he has had progressive leg weakness and urinary retention. There is a fluctuant, non-warm paraspinal swelling. MRI shows destruction of the T9 and T10 vertebral bodies with relative disc preservation, a large paraspinal abscess and spinal cord compression. Which is the most appropriate management in addition to anti-TB drugs?
+
+A. Radiotherapy to the thoracic spine
+B. Urgent surgical decompression and stabilisation
+C. Bed rest with a thoracolumbar brace for 3 months before any other intervention
+D. High-dose dexamethasone instead of surgery
+E. Anti-TB drugs alone, since the abscess will resolve with treatment
+
+ANSWER: B. Urgent surgical decompression and stabilisation
+
+EXPLAIN:
+**TB spondylitis (Pott disease)**: เชื้อไปทางเลือดสู่ส่วนหน้าของ vertebral body ทำลายกระดูกสองปล้องติดกัน มัก **ไม่ทำลายหมอนรองกระดูกจนระยะหลัง** (ต่างจาก pyogenic discitis) และเกิด **cold abscess** คือหนองที่ไม่ร้อนไม่แดง พบบ่อยในผู้ป่วยที่ไม่ได้รักษาหรือติดเชื้อ HIV
+
+**ข้อบ่งชี้ผ่าตัดแบบ absolute ในสไลด์ (แนวทางไทย 2561)**
+1. **cord compression ที่มีอาการทางระบบประสาทบกพร่อง** ไม่ดีขึ้นหรือเป็นซ้ำแม้รักษา — และถ้าอ่อนแรงเร็วร่วมกับปัสสาวะไม่ออก ต้องผ่าตัด **ด่วน**
+2. **กระดูกสันหลังไม่มั่นคง (spinal instability)**
+
+รายนี้มีทั้งขาอ่อนแรงเร็ว ปัสสาวะคั่ง และ cord compression → **ผ่าตัดลดแรงกดและยึดกระดูกโดยด่วน** ร่วมกับยาวัณโรค 9–12 เดือน
+
+**ทำไมตัวลวงผิด**
+- *ยาอย่างเดียว* — ใช้ได้เมื่อไม่มี neurological deficit ที่ลุกลาม
+- *Dexamethasone* — อาจารย์จัด TB กระดูกสันหลังไว้ใน **ไม่แนะนำ steroid**
+- *Radiotherapy* — ใช้กับ cord compression จากมะเร็ง ไม่ใช่วัณโรค
+- *Brace 3 เดือน* — ขาจะอ่อนแรงถาวร
+
+PEARL: Pott disease: ผ่าตัดเมื่อมี cord compression + neurological deficit หรือ spinal instability · ไม่ให้ steroid
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Case 03 Pott disease · Surgery absolute indications
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
+### [CH-MCQ-45] Tuberculous meningitis – CSF profile
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 38-year-old woman has 3 weeks of headache, low-grade fever and personality change, and now drowsiness with a right sixth cranial nerve palsy. Blood glucose is 110 mg/dL. Which cerebrospinal fluid profile is most consistent with tuberculous meningitis?
+
+A. Opening pressure normal, WBC 2/mm3, protein 35 mg/dL, glucose 75 mg/dL
+B. Opening pressure raised, WBC 3,500/mm3 with 92% neutrophils, protein 300 mg/dL, glucose 10 mg/dL
+C. Opening pressure raised, WBC 250/mm3 with 85% lymphocytes, protein 220 mg/dL, glucose 42 mg/dL
+D. Opening pressure very high, WBC 20/mm3, protein 60 mg/dL, glucose 50 mg/dL, with a positive India ink stain
+E. Opening pressure normal, WBC 60/mm3 with 90% lymphocytes, protein 55 mg/dL, glucose 70 mg/dL
+
+ANSWER: C. Opening pressure raised, WBC 250/mm3 with 85% lymphocytes, protein 220 mg/dL, glucose 42 mg/dL
+
+EXPLAIN:
+**ภาพ subacute meningitis 2–3 สัปดาห์ + เปลี่ยนบุคลิก + cranial nerve palsy (basal meningitis ชอบกิน CN VI)** เข้ากับวัณโรค
+
+**CSF ของ TB meningitis (ตารางในสไลด์อาจารย์ ติด 3 ดาว)**
+- ใสในระยะแรก ขุ่นเมื่อเรื้อรัง
+- **เซลล์ 100–500/mm³** ระยะแรกอาจมี neutrophil ต่อมา **mononuclear สูงถึง 95%**
+- **โปรตีนสูง 100–500 mg/dL**
+- **น้ำตาล 40–50 mg/dL (ราวครึ่งหนึ่งของน้ำตาลในเลือด)**
+- ADA ค่าตัดราว 8–20 U/L (แปรปรวนมาก) · AFB smear เจอเพียง 5–37% · เพาะเชื้อขึ้น 40–80%
+
+**ตัวลวงแต่ละตัว**
+- *WBC 3,500 neutrophil เด่น glucose 10* — bacterial meningitis
+- *lymphocyte เด่น โปรตีนสูงเล็กน้อย glucose ปกติ* — viral meningitis
+- *Pressure สูงมาก เซลล์น้อย India ink บวก* — cryptococcal meningitis (มักพบใน HIV)
+- *ปกติทั้งหมด* — CSF ปกติ
+
+PEARL: TB meningitis: lymphocyte 100–500 · โปรตีนสูงมาก · glucose ราวครึ่งหนึ่งของเลือด · CN VI palsy
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Laboratory profiles in body fluid analysis | MED32 MEQ — ไข้ 10 วัน ปวดหัว stiff neck, CSF protein 200, WBC 200 (L 90%), sugar 30/DTX 150, ADA 140 → TB meningitis
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 3.1.7 — Body fluid analysis (e.g., CSF, pleural, synovial) · 3.1 ตรวจและแปลผลได้ด้วยตนเอง หน้า 71
+  - NL B3.2.2(1) — Meningitis (bacterial, viral, tuberculous, cryptococcal, eosinophilic) [กลุ่มที่ 1-2] · B3.2.2 Infectious/inflammatory/immunologic disorders (Nervous system) หน้า 19
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
+### [CH-MCQ-46] Adjunctive corticosteroids in extrapulmonary TB
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: In which of the following patients, all starting standard anti-TB therapy, is adjunctive corticosteroid therapy most clearly indicated?
+
+A. A 55-year-old woman with tuberculous spondylitis of L2–L3 without neurological deficit
+B. A 45-year-old man with renal tuberculosis
+C. A 25-year-old woman with tuberculous cervical lymphadenitis
+D. A 30-year-old man with tuberculous meningitis and drowsiness
+E. A 40-year-old man with a moderate tuberculous pleural effusion
+
+ANSWER: D. A 30-year-old man with tuberculous meningitis and drowsiness
+
+EXPLAIN:
+**ข้อบ่งชี้ steroid ในสไลด์อาจารย์**
+
+| ระดับ | ตำแหน่ง | เหตุผล |
+|---|---|---|
+| **Absolute** | **TB meningitis** | ลดการตายราว 25% (Cochrane) และช่วย paradoxical worsening หลังเริ่มยา |
+| Conditional | TB pericarditis | ลดการตายและลดการต้องเจาะหรือผ่าเยื่อหุ้มหัวใจ แนะนำเฉพาะ HIV ลบ (ESC 2015) |
+| **ไม่แนะนำ** | ต่อมน้ำเหลือง · เยื่อหุ้มปอด · กระดูกและกระดูกสันหลัง · ทางเดินปัสสาวะ | ไม่มีประโยชน์ชัด |
+
+**กลไก:** ใน TB meningitis ความเสียหายส่วนใหญ่มาจาก **การอักเสบของร่างกายเอง** ที่ฐานสมอง ทำให้หลอดเลือดอักเสบ (สมองขาดเลือด) และทางเดินน้ำไขสันหลังอุดตัน (hydrocephalus) steroid ลดการอักเสบเหล่านี้
+
+สูตรที่ใช้บ่อย: dexamethasone 0.3–0.4 mg/kg/day แล้วค่อย ๆ ลดใน 6–8 สัปดาห์
+
+PEARL: Steroid: meningitis = ต้องให้ · pericarditis = พิจารณา (HIV ลบ) · อื่น ๆ = ไม่ให้
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Corticosteroid indications
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+  - NL B3.2.2(1) — Meningitis (bacterial, viral, tuberculous, cryptococcal, eosinophilic) [กลุ่มที่ 1-2] · B3.2.2 Infectious/inflammatory/immunologic disorders (Nervous system) หน้า 19
+
+### [CH-MCQ-47] HIV and extrapulmonary TB – what changes
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 32-year-old man newly diagnosed with HIV infection (CD4 45 cells/mm3) has 3 weeks of high fever and weight loss. He has hepatosplenomegaly, anaemia and thrombocytopenia. Chest radiograph shows innumerable 1–2 mm nodules in both lungs. Which statement is most accurate?
+
+A. Sputum AFB smear is usually positive in miliary TB, so bronchoscopy and tissue sampling are unnecessary
+B. Disseminated (miliary) TB is far more common in HIV-positive than HIV-negative patients, and every TB patient should be tested for HIV
+C. A negative tuberculin skin test excludes TB in this patient
+D. Pleural and spinal TB are the most typical sites in advanced HIV infection
+E. Antiretroviral therapy should be started first and anti-TB treatment deferred until CD4 exceeds 200
+
+ANSWER: B. Disseminated (miliary) TB is far more common in HIV-positive than HIV-negative patients, and every TB patient should be tested for HIV
+
+EXPLAIN:
+**ข้อมูลไทยในสไลด์ (Tawatcai, SEATROPH 2008): ภูมิคุ้มกันกำหนดว่าวัณโรคไปอยู่อวัยวะไหน**
+- **Disseminated TB: HIV บวก 87.5% vs HIV ลบ 12.5% (OR 41.5)** · TB สมอง/เยื่อหุ้มสมองก็พบมากขึ้นใน HIV
+- HIV ลบ: **เยื่อหุ้มปอด และกระดูกสันหลัง** เด่น (ราว 74%) ซึ่งต้องอาศัยการตอบสนองแบบ granuloma ที่ดี
+
+**สิ่งที่อาจารย์เขียนเน้น: ผู้ป่วย HIV ทุกรายต้องทำ CXR หาวัณโรค และผู้ป่วยวัณโรคทุกรายต้องตรวจ HIV** เพราะเปลี่ยนการรักษา (ยาปฏิสัมพันธ์กับ rifampicin, ระยะเวลาเริ่ม ART, co-trimoxazole prophylaxis)
+
+**ทำไมตัวลวงผิด**
+- *เยื่อหุ้มปอดและกระดูกสันหลัง* — กลับกัน เป็นแบบของ HIV ลบ
+- *TST ลบตัด TB ได้* — CD4 ต่ำ ร่างกายไม่ตอบสนองต่อ TST (anergy)
+- *Sputum smear มักบวกใน miliary* — ส่วนใหญ่ลบ ต้องอาศัยเพาะเชื้อ ชิ้นเนื้อ ไขกระดูก เลือด หรือ urine LAM
+- *เริ่ม ART ก่อน* — **เริ่มยาวัณโรคก่อน** แล้วเริ่ม ART ภายใน 2 สัปดาห์เมื่อ CD4 < 50 (ยกเว้น TB meningitis ที่รอ 4–8 สัปดาห์)
+
+PEARL: HIV บวก → disseminated/miliary TB · HIV ลบ → เยื่อหุ้มปอด กระดูกสันหลัง · ผู้ป่วย TB ทุกรายต้องตรวจ HIV
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — HIV serostatus alters organ involvement
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+  - NL B6.2.2(8) — Tuberculosis [กลุ่มที่ 1-2] · B6.2.2 Infectious/inflammatory/immunologic disorders หน้า 30
+
+### [CH-MCQ-48] Anti-TB drug toxicity – peripheral neuropathy
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 58-year-old man with diabetes and chronic alcohol use has been on 2HRZE for tuberculous lymphadenitis for 7 weeks. He now reports burning pain and numbness in both feet in a stocking distribution. Ankle reflexes are reduced. Liver function tests are normal and vision is unchanged. Which is the most appropriate action?
+
+A. Stop ethambutol permanently
+B. Continue anti-TB therapy and give pyridoxine 50–100 mg daily
+C. Replace rifampicin with streptomycin
+D. Stop all anti-TB drugs until the symptoms resolve
+E. Stop pyrazinamide and extend treatment to 9 months
+
+ANSWER: B. Continue anti-TB therapy and give pyridoxine 50–100 mg daily
+
+EXPLAIN:
+**Isoniazid ทำให้ขาด pyridoxine (vitamin B6)** — INH จับกับ pyridoxal phosphate และเร่งการขับออกทางปัสสาวะ ทำให้เส้นประสาทส่วนปลายเสื่อม แบบถุงเท้าถุงมือ
+
+**กลุ่มเสี่ยงที่ควรได้ B6 ป้องกันตั้งแต่แรก:** เบาหวาน · ดื่มแอลกอฮอล์ · ขาดสารอาหาร · HIV · ไตวายเรื้อรัง · ตั้งครรภ์และให้นม · อายุมาก
+
+**สไลด์อาจารย์: H → peripheral neuropathy → pyridoxine 50–100 mg/day ใช้ทั้งรักษาและป้องกัน** โดยไม่ต้องหยุด INH ในอาการระดับนี้
+
+**แผนที่พิษของยาแนวแรกในสไลด์**
+| อวัยวะ | ยา |
+|---|---|
+| ตา — optic neuropathy | **E** |
+| หู — หูหนวก เวียนศีรษะ | **S** |
+| ตับ — ตับอักเสบ | **H, R, Z** (R ทำให้บิลิรูบินสูงแบบ cholestatic · Z ทำให้กรดยูริกสูง ปวดข้อ) |
+| ไต — AKI | **S** |
+| เลือด/ทั้งระบบ — จ้ำเลือด เกล็ดเลือดต่ำ ช็อก ไข้คล้ายไข้หวัดใหญ่ | **R** |
+| เส้นประสาทส่วนปลาย | **H** |
+
+**ทำไมตัวลวงผิด:** หยุดยาทั้งหมดทำให้เสี่ยงดื้อยา · ethambutol ทำพิษต่อเส้นประสาทตาไม่ใช่เท้า · ไม่มีเหตุให้เปลี่ยน rifampicin หรือหยุด pyrazinamide
+
+PEARL: INH → ปลายประสาทอักเสบ → ให้ pyridoxine 50–100 mg/วัน ไม่ต้องหยุดยา
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Severe toxicity mapping of first-line drugs
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
+### [CH-MCQ-49] Anti-TB drug toxicity – loss of colour vision
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 50-year-old woman with chronic kidney disease (eGFR 32 mL/min/1.73 m2) is receiving 2HRZE for tuberculous pericarditis. After 6 weeks she reports blurred vision and difficulty distinguishing red from green. Visual acuity has fallen from 6/6 to 6/18 in both eyes. Which is the most appropriate action?
+
+A. Stop isoniazid and give pyridoxine
+B. Continue all drugs and recheck vision at the end of the intensive phase
+C. Stop pyrazinamide and check serum uric acid
+D. Stop ethambutol and refer urgently to an ophthalmologist
+E. Stop rifampicin because of drug interaction
+
+ANSWER: D. Stop ethambutol and refer urgently to an ophthalmologist
+
+EXPLAIN:
+**Ethambutol → optic neuritis (retrobulbar)** อาการแรกคือ **สูญเสียการแยกสีแดง-เขียว** ตามมาด้วยสายตาลดลงและลานสายตาผิดปกติ ขึ้นกับขนาดยา และ **ยาถูกขับทางไต** ดังนั้นในไตวายระดับยาจะสะสม (ต้องปรับเป็นให้สัปดาห์ละ 3 ครั้งเมื่อ CrCl < 30)
+
+สไลด์อาจารย์ระบุว่า E ทำให้ **สูญเสียการมองเห็นถาวรได้** จึงต้อง **หยุดยาทันที** และส่งจักษุแพทย์ ถ้าหยุดเร็ว ส่วนใหญ่ฟื้นตัว
+
+**ป้องกัน:** ตรวจสายตาและการแยกสี (Ishihara) ก่อนเริ่มยาและทุกเดือน ใช้ขนาด 15–20 mg/kg/day และปรับตามไต
+
+**ทำไมตัวลวงผิด:** INH ทำพิษต่อเส้นประสาทส่วนปลาย (optic neuritis จาก INH พบได้แต่น้อยมาก) · rifampicin และ pyrazinamide ไม่ทำพิษต่อเส้นประสาทตา · การรอดูทำให้ตาบอดถาวรได้
+
+PEARL: Ethambutol → ตาบอดสีแดง-เขียว → หยุดยาทันที ต้องปรับขนาดในไตวาย
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Severe toxicity mapping (Eye — E) | MED31 — ได้ 2HRZE/4HR แล้วตามัวทั้งสองข้าง → หยุด ethambutol และปรึกษาจักษุแพทย์
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
+### [CH-MCQ-50] Tuberculous pericarditis – steroids depend on HIV status
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์) · พ. 23 ก.ย.
+
+Q: A 36-year-old HIV-negative man has 2 weeks of fever, dyspnoea and chest discomfort. Echocardiography shows a large pericardial effusion without tamponade. Pericardial fluid is exudative, lymphocyte-predominant, with ADA 68 U/L. Which is the most appropriate treatment?
+
+A. 2HRZE/10HR because pericardial TB requires 12 months
+B. 2HRZE/4HR without steroids, with pericardiectomy performed immediately
+C. Prednisolone alone until the effusion resolves, then start anti-TB drugs
+D. High-dose aspirin and colchicine only
+E. 2HRZE/4HR plus adjunctive prednisolone
+
+ANSWER: E. 2HRZE/4HR plus adjunctive prednisolone
+
+EXPLAIN:
+**TB pericarditis ตามสไลด์อาจารย์**
+- ระยะเวลา: กลุ่ม **6 เดือน (2HRZE/4HR)** เช่นเดียวกับต่อมน้ำเหลือง เยื่อหุ้มปอด และทางเดินปัสสาวะ
+- Steroid: **conditional** — ลดการตายและลดการต้องเจาะหรือผ่าเยื่อหุ้มหัวใจ **แนะนำใน HIV ลบ** (ESC 2015) ใน HIV บวก steroid สัมพันธ์กับ Kaposi sarcoma มากขึ้น (IMPI trial)
+- ADA ในน้ำเยื่อหุ้มหัวใจค่าตัด **40–45 U/L** เหมือนเยื่อหุ้มปอด
+
+**ภาวะแทรกซ้อนระยะยาว:** constrictive pericarditis — วัณโรคเป็นสาเหตุอันดับหนึ่งในประเทศไทย
+
+**ทำไมตัวลวงผิด**
+- *Pericardiectomy ทันที* — ทำเมื่อเกิด constriction ที่ไม่ดีขึ้นด้วยยา ไม่ใช่ขั้นแรก
+- *12 เดือน* — ใช้กับ TB meningitis
+- *Aspirin + colchicine* — รักษา viral/idiopathic pericarditis ไม่ได้ฆ่าเชื้อวัณโรค
+- *Steroid อย่างเดียว* — ห้ามให้กดภูมิโดยไม่มียาวัณโรค เชื้อจะลุกลาม
+
+PEARL: TB pericarditis = 2HRZE/4HR ± prednisolone (HIV ลบ) · ภาวะแทรกซ้อนระยะยาวคือ constrictive pericarditis
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+  - NL B7.2.2-3(3) — Pericarditis [กลุ่มที่ 3] · B7.2.2 Infectious/inflammatory/immunologic disorders หน้า 33
+
 ---
 
 ## ส่วนที่ 2 · MEQ และ OSCE/SAQ
@@ -2718,6 +3064,80 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.3.10(5) — Lower respiratory tract infections (bronchitis, bronchiolitis, pneumonia, lung abscess, bronchiectasis) [กลุ่มที่ 2] · 2.3.10 Disorders of the respiratory system หน้า 65
   - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
 
+### [CH-MEQ-06] MEQ — Tuberculous pleurisy – from exudate to regimen and drug monitoring
+Lecture: TB2 Extrapulmonary tuberculosis (อ.ภานุวัฒน์)
+
+VIGNETTE:
+ผู้ป่วยชายไทยอายุ 29 ปี พนักงานโรงงาน มาด้วยไข้ต่ำ ๆ ตอนเย็น ไอแห้ง และเจ็บหน้าอกซ้ายเวลาหายใจลึก 5 สัปดาห์ น้ำหนักลด 4 kg
+
+PI: ได้ยา amoxicillin-clavulanate จากคลินิก 10 วัน อาการไม่ดีขึ้น เหนื่อยมากขึ้นเวลาเดินขึ้นบันได เพื่อนร่วมห้องพักเป็นวัณโรคปอดเมื่อ 6 เดือนก่อน
+
+V/S: BT 37.8 °C, PR 96/min, RR 22/min, BP 118/72 mmHg, SpO2 96% room air
+
+PE:
+- Lungs: ปอดซ้ายส่วนล่างเคาะทึบ เสียงหายใจลดลง tactile fremitus ลดลง
+- ไม่มีต่อมน้ำเหลืองโต ตับม้ามไม่โต
+
+CXR: moderate left pleural effusion ไม่เห็นรอยโรคในเนื้อปอด
+
+Pleural fluid: สีเหลืองฟาง · protein 5.4 g/dL (serum 7.2) · LDH 520 U/L (serum 210, ULN 250) · glucose 78 mg/dL (serum 96) · pH 7.36 · WBC 3,200/mm³ (lymphocyte 88%, neutrophil 8%, eosinophil 1%) · mesothelial cell น้อย · Gram stain ไม่พบเชื้อ · AFB smear negative · cytology ไม่พบเซลล์มะเร็ง
+
+Q1: 1. จงแปลผลน้ำเยื่อหุ้มปอดด้วย Light's criteria แสดงการคำนวณ
+A1: **Light's criteria — ถ้ามีข้อใดข้อหนึ่งเป็น exudate**
+- pleural/serum protein = 5.4/7.2 = **0.75 > 0.5** ✅
+- pleural/serum LDH = 520/210 = **2.48 > 0.6** ✅
+- pleural LDH 520 > 2/3 × ULN (167) ✅
+
+→ **Exudate** ที่ **lymphocyte เด่น (88%) eosinophil < 5% mesothelial cell น้อย glucose ไม่ต่ำมาก pH 7.3–7.4**
+
+Q2: 2. จงให้การวินิจฉัยที่น่าจะเป็นมากที่สุด การวินิจฉัยแยกโรค 3 โรค และการตรวจเพิ่มเติมเพื่อยืนยัน
+A2: **การวินิจฉัย: tuberculous pleurisy** — lymphocytic exudate + ไข้ต่ำเรื้อรัง น้ำหนักลด ไม่ตอบสนองต่อยา CAP + สัมผัสผู้ป่วยวัณโรค
+
+**การวินิจฉัยแยกโรค:** malignant pleural effusion / lymphoma · parapneumonic effusion ที่รักษาบางส่วน · collagen vascular disease (SLE, RA)
+
+**ตรวจเพิ่ม**
+- **Pleural fluid ADA** (> 40 U/L: sens 92% spec 89%) — การตรวจที่เหมาะที่สุด
+- **Mycobacterial culture** ของน้ำเยื่อหุ้มปอด (ขึ้น 12–70%) เพื่อยืนยันและทำ DST
+- **Sputum หรือ induced sputum** AFB/Xpert/culture — แม้ CXR ไม่เห็นรอยโรค ก็ยังพบเชื้อได้บางราย
+- **Pleural biopsy** (closed หรือ thoracoscopy) ถ้ายังไม่ชัดเจน → caseating granuloma (ผลบวกสูงสุด)
+- **Anti-HIV** ทุกราย
+- ข้อควรรู้: AFB smear ในน้ำเยื่อหุ้มปอด < 10% และ Xpert sensitivity ราว 0.34 ผลลบจึงตัดวัณโรคไม่ได้ · **TST ใช้วินิจฉัย active TB ไม่ได้**
+
+Q3: 3. ผล ADA 78 U/L และ anti-HIV negative ผู้ป่วยหนัก 55 kg จงเขียนสูตรยาพร้อมระยะเวลา และบอกว่าควรให้ steroid หรือไม่
+A3: **สูตร 2HRZE/4HR (6 เดือน)** ตามแนวทางไทย 2561 สำหรับเยื่อหุ้มปอด
+
+| ยา | ขนาด | 55 kg |
+|---|---|---|
+| Isoniazid (H) | 5 mg/kg | 300 mg |
+| Rifampicin (R) | 10 mg/kg | 450 mg (< 50 kg) – 600 mg (≥ 50 kg) → **600 mg** |
+| Pyrazinamide (Z) | 20–30 mg/kg | 1,500 mg |
+| Ethambutol (E) | 15–20 mg/kg | 800–1,000 mg |
+
+กินวันละครั้งตอนท้องว่าง 2 เดือนแรกครบ 4 ตัว จากนั้น H + R อีก 4 เดือน (DOT)
+
+**ไม่ให้ steroid** — อาจารย์จัด TB pleura ไว้ในกลุ่มไม่แนะนำ
+
+เจาะระบายน้ำเยื่อหุ้มปอดเพื่อบรรเทาอาการเหนื่อยได้ แต่ไม่จำเป็นต้องใส่สายระบายถาวร
+
+Q4: 4. จงบอกการติดตามพิษของยา และการป้องกันผู้สัมผัส
+A4: **ก่อนเริ่มยา:** LFT, Cr, uric acid, CBC · ตรวจสายตาและการแยกสี (สำหรับ E) · ถามเรื่องแอลกอฮอล์และยาอื่น (rifampicin ลดระดับยาหลายชนิด เช่น ยาคุมกำเนิด warfarin)
+
+**ติดตามพิษตามอวัยวะ (สไลด์อาจารย์)**
+- ตับ (H, R, Z): อาการตาเหลือง คลื่นไส้ · ถ้า ALT > 3 เท่ามีอาการ หรือ > 5 เท่าไม่มีอาการ → หยุดยาที่เป็นพิษต่อตับ
+- ตา (E): การแยกสีแดง-เขียวทุกเดือน
+- ปลายประสาท (H): ให้ **pyridoxine 50–100 mg/day** ในกลุ่มเสี่ยง
+- R: เกล็ดเลือดต่ำ จ้ำเลือด ไข้คล้ายไข้หวัดใหญ่ ช็อก → หยุดถาวร · แจ้งว่าปัสสาวะ น้ำตา จะเป็นสีส้มแดง
+- Z: กรดยูริกสูง ปวดข้อ
+
+**ป้องกัน (แนวทางไทย 2554):** TB เยื่อหุ้มปอดอย่างเดียวแพร่เชื้อได้น้อย แต่ต้องหาผู้ป่วยต้นเหตุ (เพื่อนร่วมห้องที่เป็นวัณโรค) และคัดกรองผู้สัมผัสใกล้ชิดด้วยอาการ CXR และ TST (≥ 10 mm = บวก) หรือ IGRA
+
+REF: สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 | MED33 MEQ pleural effusion — pleural fluid ADA 48 (ปกติ < 40) → TB | MED30 — สงสัย TB pleural effusion ส่งตรวจอะไร
+NL (เกณฑ์แพทยสภา พ.ศ. 2567):
+  - NL 2.3.10(7) — Pleural effusion [กลุ่มที่ 2] · 2.3.10 Disorders of the respiratory system หน้า 65
+  - NL B6.3(1) — Pleural fluid analysis · B6.3 การสืบค้นโรคและการแปลผล หน้า 31
+  - NL 3.1.7 — Body fluid analysis (e.g., CSF, pleural, synovial) · 3.1 ตรวจและแปลผลได้ด้วยตนเอง หน้า 71
+  - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
+
 ---
 
 ## ส่วนที่ 3 · คลังข้อสอบเก่า MED28–MED35
@@ -2729,13 +3149,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: A 30-year-old previously healthy woman with smear-positive pulmonary tuberculosis was started on isoniazid, rifampicin, pyrazinamide and ethambutol once daily. After 1 week she develops progressive nausea, vomiting and malaise. Physical findings are unremarkable. Liver function tests: total bilirubin / direct bilirubin 2.8 / 1.6 mg/dL, AST/ALT 180/170 U/L, ALP 150 U/L (normal <115). What is the most appropriate immediate management?
 
-A. Stop only pyrazinamide and continue the other three drugs
-B. Replace rifampicin with ofloxacin and continue the rest
-C. Add domperidone and continue the same regimen
-D. Split isoniazid into three doses daily after meals
-E. Stop all hepatotoxic drugs, switch to ethambutol plus a fluoroquinolone, then perform a drug challenge test when liver function recovers
+A. Add domperidone and continue the same regimen
+B. Stop only pyrazinamide and continue the other three drugs
+C. Split isoniazid into three doses daily after meals
+D. Stop all hepatotoxic drugs, switch to ethambutol plus a fluoroquinolone, then perform a drug challenge test when liver function recovers
+E. Replace rifampicin with ofloxacin and continue the rest
 
-ANSWER: E. Stop all hepatotoxic drugs, switch to ethambutol plus a fluoroquinolone, then perform a drug challenge test when liver function recovers
+ANSWER: D. Stop all hepatotoxic drugs, switch to ethambutol plus a fluoroquinolone, then perform a drug challenge test when liver function recovers
 
 EXPLAIN:
 **Drug-induced liver injury จากยาต้านวัณโรค** — เกณฑ์ที่ต้องหยุดยาคือ **ALT >3 เท่าของค่าปกติร่วมกับอาการ** หรือ **>5 เท่าแม้ไม่มีอาการ** หรือ **bilirubin สูงร่วมด้วย** (เคสนี้มีทั้งอาการและ bilirubin สูง) → **หยุด INH, RIF, PZA ทั้งหมด** แล้วใช้สูตรที่ไม่เป็นพิษต่อตับชั่วคราว (ethambutol + fluoroquinolone ± aminoglycoside) จนค่าตับกลับเป็นปกติ แล้วจึง **re-challenge ทีละตัว**
@@ -2752,11 +3172,11 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: A patient receiving the 2HRZE/4HR anti-tuberculous regimen develops painless blurring of vision in both eyes with impaired colour discrimination after several weeks of treatment. There is no eye redness or pain. Which of the following is the most appropriate action?
 
-A. Stop isoniazid and refer to an ophthalmologist
+A. Stop pyrazinamide and refer to an ophthalmologist
 B. Stop rifampicin and refer to an ophthalmologist
 C. Continue the same regimen and refer to an ophthalmologist
 D. Stop ethambutol and refer to an ophthalmologist
-E. Stop pyrazinamide and refer to an ophthalmologist
+E. Stop isoniazid and refer to an ophthalmologist
 
 ANSWER: D. Stop ethambutol and refer to an ophthalmologist
 
@@ -2775,13 +3195,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: Which anti-tuberculous drug most characteristically causes hyperuricaemia and may precipitate an acute gouty attack?
 
-A. Pyrazinamide
+A. Levofloxacin
 B. Streptomycin
-C. Isoniazid
-D. Levofloxacin
+C. Pyrazinamide
+D. Isoniazid
 E. Rifampicin
 
-ANSWER: A. Pyrazinamide
+ANSWER: C. Pyrazinamide
 
 EXPLAIN:
 **Pyrazinamide** และ metabolite (pyrazinoic acid) **ยับยั้งการขับกรดยูริกที่ proximal tubule (URAT1)** → hyperuricaemia และ arthralgia; **ethambutol ก็ทำให้กรดยูริกสูงได้แต่น้อยกว่า** (โพยเก่าตอบเป็นคู่ pyrazinamide + ethambutol)
@@ -2799,11 +3219,11 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: A patient completing anti-tuberculous therapy notices that his urine, tears and sweat have turned orange-red. He feels well and liver function tests are normal. Which drug is responsible?
 
-A. Ethambutol
+A. Isoniazid
 B. Rifampicin
-C. Streptomycin
-D. Pyrazinamide
-E. Isoniazid
+C. Ethambutol
+D. Streptomycin
+E. Pyrazinamide
 
 ANSWER: B. Rifampicin
 
@@ -2822,13 +3242,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: Which anti-tuberculous drug causes peripheral neuropathy, and what is given to prevent it?
 
-A. Streptomycin; prevented by magnesium
-B. Ethambutol; prevented by thiamine (vitamin B1)
-C. Isoniazid; prevented by pyridoxine (vitamin B6)
+A. Rifampicin; prevented by folic acid
+B. Isoniazid; prevented by pyridoxine (vitamin B6)
+C. Ethambutol; prevented by thiamine (vitamin B1)
 D. Pyrazinamide; prevented by allopurinol
-E. Rifampicin; prevented by folic acid
+E. Streptomycin; prevented by magnesium
 
-ANSWER: C. Isoniazid; prevented by pyridoxine (vitamin B6)
+ANSWER: B. Isoniazid; prevented by pyridoxine (vitamin B6)
 
 EXPLAIN:
 **Isoniazid** จับกับ **pyridoxal phosphate** และเร่งการขับ pyridoxine ทางปัสสาวะ → **pyridoxine deficiency → peripheral neuropathy** (ชาปลายมือปลายเท้าแบบ stocking-glove)
@@ -2847,13 +3267,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: What is the definition of multidrug-resistant tuberculosis (MDR-TB)?
 
-A. Resistance to any two first-line drugs
+A. Resistance to at least isoniazid and rifampicin
 B. Resistance to all four first-line drugs
 C. Resistance to isoniazid and ethambutol
-D. Resistance to at least isoniazid and rifampicin
-E. Resistance to rifampicin and pyrazinamide
+D. Resistance to rifampicin and pyrazinamide
+E. Resistance to any two first-line drugs
 
-ANSWER: D. Resistance to at least isoniazid and rifampicin
+ANSWER: A. Resistance to at least isoniazid and rifampicin
 
 EXPLAIN:
 **MDR-TB = ดื้อต่อ isoniazid และ rifampicin เป็นอย่างน้อย** (สองตัวที่ฆ่าเชื้อได้แรงที่สุดของสูตรมาตรฐาน)
@@ -2872,11 +3292,11 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: A patient with smear-positive pulmonary tuberculosis has been on the standard regimen for 8 weeks but his sputum smear remains AFB positive and his symptoms have not improved. He obtains his medication from the local health centre and admits missing doses frequently. Which is the most likely explanation and the best next step?
 
-A. Non-tuberculous mycobacterial infection; stop all anti-tuberculous drugs
+A. Paradoxical reaction; add systemic corticosteroid and continue the same regimen
 B. Poor adherence; assess and reinforce adherence with directly observed therapy while sending sputum for culture and drug susceptibility testing
-C. Paradoxical reaction; add systemic corticosteroid and continue the same regimen
-D. Primary drug resistance; empirically start a second-line MDR regimen immediately
-E. Drug malabsorption; double the dose of all four drugs
+C. Non-tuberculous mycobacterial infection; stop all anti-tuberculous drugs
+D. Drug malabsorption; double the dose of all four drugs
+E. Primary drug resistance; empirically start a second-line MDR regimen immediately
 
 ANSWER: B. Poor adherence; assess and reinforce adherence with directly observed therapy while sending sputum for culture and drug susceptibility testing
 
@@ -2899,12 +3319,12 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 Q: A patient with newly diagnosed smear-positive pulmonary tuberculosis is admitted. Which admission arrangement is most appropriate?
 
 A. Admit to a positive-pressure isolation room with staff wearing surgical masks
-B. Admit to a negative-pressure isolation room and have all staff wear an N95 respirator
-C. Admit to a general ward with contact precautions and gowns
-D. Admit to a general ward and have the patient wear a surgical mask only
+B. Admit to a general ward with contact precautions and gowns
+C. Admit to a general ward and have the patient wear a surgical mask only
+D. Admit to a negative-pressure isolation room and have all staff wear an N95 respirator
 E. No isolation is needed once anti-tuberculous drugs have been started
 
-ANSWER: B. Admit to a negative-pressure isolation room and have all staff wear an N95 respirator
+ANSWER: D. Admit to a negative-pressure isolation room and have all staff wear an N95 respirator
 
 EXPLAIN:
 วัณโรคปอดแพร่ทาง **airborne (droplet nuclei ขนาด 1-5 ไมครอน ลอยในอากาศได้นาน)** → ต้องใช้ **airborne precautions: ห้องแยกความดันลบ (negative pressure) ที่มีการระบายอากาศ 6-12 ACH และบุคลากรใส่ N95**
@@ -2923,13 +3343,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: Which investigation is the gold standard for the diagnosis of pulmonary tuberculosis?
 
-A. Sputum acid-fast bacilli smear
-B. Chest radiograph showing upper lobe cavitation
-C. Tuberculin skin test
-D. Mycobacterial culture of sputum
+A. Chest radiograph showing upper lobe cavitation
+B. Tuberculin skin test
+C. Mycobacterial culture of sputum
+D. Sputum acid-fast bacilli smear
 E. Xpert MTB/RIF (molecular) assay
 
-ANSWER: D. Mycobacterial culture of sputum
+ANSWER: C. Mycobacterial culture of sputum
 
 EXPLAIN:
 **Culture เป็น gold standard** เพราะ (ก) ไวที่สุด ตรวจพบได้ที่ **10-100 เชื้อ/mL** เทียบกับ smear ที่ต้องการ **5,000-10,000 เชื้อ/mL** (ข) **ให้ผลความไวต่อยา (drug susceptibility)** (ค) ระบุสปีชีส์ได้ (แยก NTM)
@@ -2950,13 +3370,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: Reactivation pulmonary tuberculosis in an immunocompetent adult most characteristically involves which part of the lung, and why?
 
-A. Right middle lobe, because of its narrow bronchus
-B. Basal segments of the lower lobes, because of gravity-dependent ventilation
-C. Peripheral subpleural regions of both lower lobes, because of higher perfusion
-D. Lingula, because of poor lymphatic drainage
-E. Apical and posterior segments of the upper lobes, because of the higher oxygen tension there
+A. Apical and posterior segments of the upper lobes, because of the higher oxygen tension there
+B. Right middle lobe, because of its narrow bronchus
+C. Lingula, because of poor lymphatic drainage
+D. Basal segments of the lower lobes, because of gravity-dependent ventilation
+E. Peripheral subpleural regions of both lower lobes, because of higher perfusion
 
-ANSWER: E. Apical and posterior segments of the upper lobes, because of the higher oxygen tension there
+ANSWER: A. Apical and posterior segments of the upper lobes, because of the higher oxygen tension there
 
 EXPLAIN:
 **M. tuberculosis เป็น obligate aerobe** → เจริญได้ดีที่สุดในบริเวณที่มี **oxygen tension สูงและ perfusion ต่ำ** ซึ่งคือ **apical/posterior segment ของ upper lobe และ superior segment ของ lower lobe**
@@ -2977,12 +3397,12 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 Q: A 34-year-old man with HIV infection who has never received antiretroviral therapy presents with 3 weeks of dry cough and progressive exertional dyspnoea. CD4 count is 125 cells/microlitre. Chest radiograph shows bilateral perihilar ground-glass opacities. Which organism is most likely responsible?
 
 A. Cryptococcus neoformans
-B. Streptococcus pneumoniae
+B. Pneumocystis jirovecii
 C. Mycobacterium avium complex
-D. Pneumocystis jirovecii
-E. Mycobacterium tuberculosis
+D. Mycobacterium tuberculosis
+E. Streptococcus pneumoniae
 
-ANSWER: D. Pneumocystis jirovecii
+ANSWER: B. Pneumocystis jirovecii
 
 EXPLAIN:
 **PCP (Pneumocystis jirovecii pneumonia)** เกิดเมื่อ **CD4 < 200** โดยลักษณะคลาสสิกคือ **ไอแห้ง เหนื่อยเพิ่มขึ้นช้าๆ เป็นสัปดาห์ ไข้ต่ำ** และ **ฟังปอดมักปกติ** ขณะที่ **hypoxaemia รุนแรงและแย่ลงเมื่อออกแรง (exercise desaturation)** ร่วมกับ **LDH สูง**
@@ -3003,13 +3423,13 @@ Lecture: 03 Pulmonary tuberculosis / ABG (อ.ศิวพร) · อ. 15 ก.�
 
 Q: A patient with pulmonary tuberculosis develops acute kidney injury 10 days after starting the standard four-drug regimen. Which urinary finding would best support drug-induced acute interstitial nephritis as the cause?
 
-A. Oval fat bodies and fatty casts
-B. Dysmorphic red blood cells with red cell casts
-C. Numerous uric acid crystals
-D. Sterile pyuria with white blood cell casts
-E. Muddy brown granular casts
+A. Muddy brown granular casts
+B. Numerous uric acid crystals
+C. Oval fat bodies and fatty casts
+D. Dysmorphic red blood cells with red cell casts
+E. Sterile pyuria with white blood cell casts
 
-ANSWER: D. Sterile pyuria with white blood cell casts
+ANSWER: E. Sterile pyuria with white blood cell casts
 
 EXPLAIN:
 **Rifampicin เป็นยาต้านวัณโรคที่ทำให้เกิด acute interstitial nephritis (AIN) ได้บ่อยที่สุด** โดยเฉพาะเมื่อ **ให้แบบไม่ต่อเนื่อง (intermittent) หรือหยุดแล้วเริ่มใหม่** เพราะเป็นปฏิกิริยาผ่าน antibody ต่อ rifampicin
@@ -3026,20 +3446,20 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.3.4(20) — Tuberculosis [กลุ่มที่ 2] · 2.3 Infectious and parasitic diseases หน้า 62
   - NL B9.2.7(1) — Acute kidney injury [กลุ่มที่ 1-2] · B9.2.7 Others หน้า 40
 
-## Lec 17 · Pleural disease / Respiratory failure (อ.สกล) (12 ข้อ)
+## Lec 17 · Pleural disease / Respiratory failure (อ.สกล) (14 ข้อ)
 
 ### [CH-OLD-23] ข้อสอบเก่า
 Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก.ย.
 
 Q: A 16-year-old man with 1 month of low-grade fever and cough has a chest radiograph showing right upper lobe infiltration with a right pleural effusion. Pleural fluid is yellow with WBC 900 cells/dL (neutrophils 10 percent, lymphocytes 90 percent), pleural fluid to serum LDH ratio 0.8 and pleural fluid to serum protein ratio 0.7. What is the most likely diagnosis?
 
-A. Chylothorax
-B. Congestive heart failure
-C. Tuberculous pleural effusion
-D. Parapneumonic pleural effusion
+A. Tuberculous pleural effusion
+B. Chylothorax
+C. Parapneumonic pleural effusion
+D. Congestive heart failure
 E. Malignant pleural effusion
 
-ANSWER: C. Tuberculous pleural effusion
+ANSWER: A. Tuberculous pleural effusion
 
 EXPLAIN:
 **Light's criteria** — เป็น exudate ถ้าเข้าข้อใดข้อหนึ่ง: **fluid/serum protein > 0.5**, **fluid/serum LDH > 0.6**, หรือ **fluid LDH > 2/3 ของค่าสูงสุดปกติในซีรัม** → เคสนี้เข้าทั้งสองข้อแรก = **exudate**
@@ -3059,13 +3479,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: A patient with fever and pleuritic chest pain has a pleural effusion. Analysis shows an exudate by Light's criteria with pleural fluid pH 7.10, glucose 35 mg/dL and LDH 1000 U/L. Gram stain shows no organisms. What is the diagnosis and the most appropriate management?
 
-A. Uncomplicated parapneumonic effusion; antibiotics alone with observation
-B. Complicated parapneumonic effusion; insert an intercostal chest drain in addition to antibiotics
+A. Complicated parapneumonic effusion; insert an intercostal chest drain in addition to antibiotics
+B. Transudative effusion from heart failure; give diuretics
 C. Malignant pleural effusion; arrange pleurodesis
-D. Transudative effusion from heart failure; give diuretics
+D. Uncomplicated parapneumonic effusion; antibiotics alone with observation
 E. Tuberculous pleural effusion; start anti-tuberculous drugs without drainage
 
-ANSWER: B. Complicated parapneumonic effusion; insert an intercostal chest drain in addition to antibiotics
+ANSWER: A. Complicated parapneumonic effusion; insert an intercostal chest drain in addition to antibiotics
 
 EXPLAIN:
 **การแบ่งชั้นของ parapneumonic effusion** (เป็นหนึ่งในเรื่องที่ออกสอบซ้ำมากที่สุดของ Chest)
@@ -3088,13 +3508,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: Thoracentesis yields milky-white pleural fluid. Analysis shows WBC 1200 cells/microlitre with lymphocyte predominance and triglyceride 300 mg/dL. What is the most likely diagnosis?
 
-A. Pseudochylothorax from chronic rheumatoid effusion
-B. Chylothorax
-C. Empyema
-D. Malignant effusion
-E. Tuberculous effusion
+A. Malignant effusion
+B. Empyema
+C. Chylothorax
+D. Tuberculous effusion
+E. Pseudochylothorax from chronic rheumatoid effusion
 
-ANSWER: B. Chylothorax
+ANSWER: C. Chylothorax
 
 EXPLAIN:
 **Chylothorax** = น้ำเหลืองจาก **thoracic duct** รั่วเข้าช่องเยื่อหุ้มปอด
@@ -3119,13 +3539,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: A 65-year-old smoker has 2 months of progressive breathlessness. Chest radiograph shows a mass at the right upper lobe with a massive pleural effusion. Thoracentesis shows an exudate with WBC 10,000 cells/microlitre, 90 percent mononuclear cells, and markedly elevated LDH. What is the most likely cause of the effusion?
 
-A. Malignant pleural effusion from lung cancer
-B. Pulmonary embolism
-C. Complicated parapneumonic effusion
+A. Pulmonary embolism
+B. Malignant pleural effusion from lung cancer
+C. Congestive heart failure
 D. Tuberculous pleural effusion
-E. Congestive heart failure
+E. Complicated parapneumonic effusion
 
-ANSWER: A. Malignant pleural effusion from lung cancer
+ANSWER: B. Malignant pleural effusion from lung cancer
 
 EXPLAIN:
 เบาะแสที่ชี้ **malignant effusion**: อายุ 65 สูบบุหรี่, **มี mass ในปอดร่วมด้วย**, **น้ำปริมาณมาก (massive)**, exudate ที่ **mononuclear เด่น**, LDH สูงมาก และมักเป็น **serosanguinous/เลือดปน**
@@ -3147,13 +3567,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: A patient has a bilateral pleural effusion. Pleural fluid analysis shows a transudate by Light's criteria. Which of the following is the most likely cause?
 
-A. Tuberculosis
-B. Congestive heart failure
-C. Rheumatoid arthritis
-D. Pulmonary embolism with infarction
-E. Bacterial pneumonia
+A. Pulmonary embolism with infarction
+B. Rheumatoid arthritis
+C. Tuberculosis
+D. Bacterial pneumonia
+E. Congestive heart failure
 
-ANSWER: B. Congestive heart failure
+ANSWER: E. Congestive heart failure
 
 EXPLAIN:
 **Transudate = ความไม่สมดุลของแรงดัน (hydrostatic สูงหรือ oncotic ต่ำ) โดยที่เยื่อหุ้มปอดปกติ**
@@ -3177,11 +3597,11 @@ Q: A 25-year-old tall thin man develops sudden right-sided chest pain and dyspno
 
 A. Start high-flow oxygen and observe for 24 hours
 B. Perform CT of the chest to confirm the diagnosis
-C. Obtain an urgent chest radiograph before any intervention
-D. Immediate needle decompression followed by intercostal chest drain insertion
-E. Give intravenous fluid and non-invasive ventilation
+C. Give intravenous fluid and non-invasive ventilation
+D. Obtain an urgent chest radiograph before any intervention
+E. Immediate needle decompression followed by intercostal chest drain insertion
 
-ANSWER: D. Immediate needle decompression followed by intercostal chest drain insertion
+ANSWER: E. Immediate needle decompression followed by intercostal chest drain insertion
 
 EXPLAIN:
 **Tension pneumothorax เป็นการวินิจฉัยทางคลินิก — ห้ามรอภาพรังสี**
@@ -3205,12 +3625,12 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 Q: A 52-year-old woman is mechanically ventilated with pressure-controlled ventilation and PEEP for severe pneumonia. After subclavian catheterisation she develops subcutaneous emphysema and a chest radiograph shows a 10 percent right pneumothorax. What is the most appropriate management?
 
 A. Increase FiO2 to 1.0 and observe
-B. Discontinue PEEP and observe
-C. Tube thoracostomy
-D. Observation with serial chest radiographs
-E. Simple needle aspiration only
+B. Observation with serial chest radiographs
+C. Simple needle aspiration only
+D. Tube thoracostomy
+E. Discontinue PEEP and observe
 
-ANSWER: C. Tube thoracostomy
+ANSWER: D. Tube thoracostomy
 
 EXPLAIN:
 **กฎที่ต้องจำ: pneumothorax ในผู้ป่วยที่ใส่เครื่องช่วยหายใจแรงดันบวก ต้องใส่สายระบายทรวงอกเสมอ ไม่ว่าจะขนาดเท่าไร**
@@ -3232,13 +3652,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: A large pleural effusion is drained and 2 litres of fluid are removed in a single session. Shortly afterwards the patient develops cough, chest tightness and worsening hypoxaemia, with new unilateral infiltrates on the side that was drained. What is the most likely complication?
 
-A. Re-expansion pulmonary oedema
-B. Haemothorax from intercostal artery injury
+A. Haemothorax from intercostal artery injury
+B. Re-expansion pulmonary oedema
 C. Air embolism
-D. Pneumothorax from lung puncture
-E. Empyema from introduced infection
+D. Empyema from introduced infection
+E. Pneumothorax from lung puncture
 
-ANSWER: A. Re-expansion pulmonary oedema
+ANSWER: B. Re-expansion pulmonary oedema
 
 EXPLAIN:
 **Re-expansion pulmonary oedema** เกิดเมื่อระบายน้ำออก **มากหรือเร็วเกินไป** โดยกลไกคือ ปอดที่แฟบมานานถูกขยายอย่างรวดเร็ว → **ความดันลบในช่องเยื่อหุ้มปอดมากขึ้น + reperfusion injury ทำให้ capillary permeability เพิ่ม** → ของเหลวรั่วเข้าถุงลมของปอดข้างที่เพิ่งขยาย
@@ -3257,13 +3677,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: During thoracentesis a patient becomes light-headed with cold extremities. Blood pressure is 80/60 mmHg and pulse rate 40/min. Breath sounds are equal on both sides. What is the most likely cause?
 
-A. Cardiogenic shock
-B. Vasovagal reaction
-C. Anaphylaxis to local anaesthetic
-D. Intercostal artery injury with haemothorax
+A. Vasovagal reaction
+B. Cardiogenic shock
+C. Intercostal artery injury with haemothorax
+D. Anaphylaxis to local anaesthetic
 E. Tension pneumothorax
 
-ANSWER: B. Vasovagal reaction
+ANSWER: A. Vasovagal reaction
 
 EXPLAIN:
 เบาะแสที่ตัดสินคือ **bradycardia (PR 40) ร่วมกับ hypotension และเสียงปอดเท่ากันสองข้าง**
@@ -3287,12 +3707,12 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 Q: A patient with acute exacerbation of chronic obstructive pulmonary disease has persistent dyspnoea and SpO2 88 percent despite oxygen by nasal cannula. ABG shows pH 7.28, PaCO2 65 mmHg and HCO3 28 mEq/L. He is alert and able to protect his airway. What is the most appropriate next step?
 
 A. Immediate endotracheal intubation and mechanical ventilation
-B. Intravenous respiratory stimulant (doxapram)
-C. High-flow nasal cannula oxygen therapy alone
-D. Increase oxygen flow through a non-rebreathing mask
-E. Non-invasive positive pressure ventilation
+B. High-flow nasal cannula oxygen therapy alone
+C. Intravenous respiratory stimulant (doxapram)
+D. Non-invasive positive pressure ventilation
+E. Increase oxygen flow through a non-rebreathing mask
 
-ANSWER: E. Non-invasive positive pressure ventilation
+ANSWER: D. Non-invasive positive pressure ventilation
 
 EXPLAIN:
 **NIV เป็นการรักษาที่มีหลักฐานแข็งที่สุดใน AECOPD ที่มี acute hypercapnic respiratory failure** — ลดอัตราการใส่ท่อช่วยหายใจ ลดการติดเชื้อในโรงพยาบาล ลดวันนอน และ **ลด mortality**
@@ -3316,13 +3736,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: A 60-year-old man has decreased breath sounds and dullness to percussion at the right lower chest with decreased tactile fremitus and reduced chest wall expansion on that side. Which condition do these findings indicate?
 
-A. Pleural effusion
-B. Bronchial asthma
-C. Pneumothorax
-D. Emphysema
-E. Lobar consolidation from pneumonia
+A. Bronchial asthma
+B. Emphysema
+C. Lobar consolidation from pneumonia
+D. Pleural effusion
+E. Pneumothorax
 
-ANSWER: A. Pleural effusion
+ANSWER: D. Pleural effusion
 
 EXPLAIN:
 **ตารางแยกที่ต้องจำให้ขึ้นใจ (ออกสอบเกือบทุกรุ่น)**
@@ -3348,13 +3768,13 @@ Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก
 
 Q: Which of the following is NOT a recognised cause of an amylase-rich pleural effusion?
 
-A. Rheumatoid pleural effusion
-B. Chronic pancreatic pseudocyst with pleural fistula
-C. Malignant effusion from lung adenocarcinoma
-D. Acute pancreatitis
-E. Oesophageal rupture
+A. Chronic pancreatic pseudocyst with pleural fistula
+B. Oesophageal rupture
+C. Acute pancreatitis
+D. Malignant effusion from lung adenocarcinoma
+E. Rheumatoid pleural effusion
 
-ANSWER: A. Rheumatoid pleural effusion
+ANSWER: E. Rheumatoid pleural effusion
 
 EXPLAIN:
 **Amylase-rich pleural effusion** (pleural fluid amylase สูงกว่าค่าปกติของซีรัม หรือ fluid/serum amylase ratio > 1) มี **3 สาเหตุหลัก**
@@ -3371,6 +3791,57 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL B6.3(1) — Pleural fluid analysis · B6.3 การสืบค้นโรคและการแปลผล หน้า 31
   - NL 3.1.7 — Body fluid analysis (e.g., CSF, pleural, synovial) · 3.1 ตรวจและแปลผลได้ด้วยตนเอง หน้า 71
 
+### [CH-OLDP-001] ข้อสอบเก่า
+Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก.ย.
+
+Q: A former smoker (20 pack-years, stopped 10 years ago) has a pleural effusion. Pleural fluid meets Light's criteria for an exudate and pleural ADA is 30 U/L (significant when >40). What is the most likely cause of the effusion?
+
+A. Malignant pleural effusion from adenocarcinoma of the lung
+B. Parapneumonic effusion / early empyema
+C. Pleural effusion from congestive heart failure
+D. Tuberculous pleuritis
+E. Malignant pleural mesothelioma
+
+ANSWER: A. Malignant pleural effusion from adenocarcinoma of the lung
+
+EXPLAIN:
+เฉลย: Adenocarcinoma of lung (malignant pleural effusion) ตามที่โพยบันทึก
+กลไก/การให้เหตุผล: (1) Light's criteria เข้าเกณฑ์ exudate (pleural/serum protein >0.5, pleural/serum LDH >0.6, หรือ pleural LDH >2/3 ULN) จึงตัดสาเหตุ transudate ออก (2) pleural ADA 30 U/L ต่ำกว่า cut-off >40 U/L — ADA ต่ำมี negative predictive value สูงสำหรับ TB pleuritis ในพื้นที่ชุกวัณโรค จึงไม่เข้ากับวัณโรคเยื่อหุ้มปอด (3) ประวัติสูบบุหรี่ 20 pack-year แม้เลิกมา 10 ปี ความเสี่ยงมะเร็งปอดยังสูงกว่าคนไม่สูบอย่างชัดเจน (ลดลงแต่ไม่กลับเป็นศูนย์) เมื่อเหลือ exudate ที่ lymphocyte เด่นและ ADA ต่ำในผู้ที่เคยสูบบุหรี่ สาเหตุที่น่าจะเป็นที่สุดคือ malignant pleural effusion และ adenocarcinoma เป็น histology ของมะเร็งปอดที่ลุกลามเยื่อหุ้มปอดและพบบ่อยที่สุดในปัจจุบัน ขั้นต่อไปคือ pleural fluid cytology (ปริมาณมากพอ, ส่งซ้ำได้) ± CT chest, pleural biopsy/thoracoscopy และส่งตรวจ molecular (EGFR/ALK)
+ทำไมข้ออื่นผิด: TB pleuritis — ADA 30 ต่ำกว่าเกณฑ์ที่ significant จึงไม่เข้า (แม้ lymphocyte จะเด่นเหมือนกัน); Parapneumonic effusion/empyema — ต้องมีไข้ อาการปอดอักเสบเฉียบพลัน neutrophil เด่น pH <7.2 glucose ต่ำ LDH สูงมาก โจทย์ไม่มีบริบทติดเชื้อ; CHF — เป็น transudate ไม่ผ่าน Light's criteria (ยกเว้นกรณีได้ diuretic มาก จึงกลายเป็น pseudoexudate แต่ก็ไม่มีประวัติในโจทย์); Mesothelioma — สัมพันธ์กับ asbestos ไม่ใช่บุหรี่ และพบน้อยกว่ามาก
+
+REF: MED30 · [MED30] 30. ให้ lab pleural fluid มา คิด Light's criteria เข้าได้กับ exudate + ADA 30 (sig.เมื่อ >40)
+Hx:สูบบุหรี่ 20 pack year เลิกมาได้ 10 ปีแล้ว ถามว่าเกิดจากอะไร
+Ans: Adenocarcinoma of lung
+
+### [CH-OLDP-002] ข้อสอบเก่า
+Lecture: 17 Pleural disease / Respiratory failure (อ.สกล) · จ. 28 ก.ย.
+
+Q: A patient has had progressive breathlessness for 2 months. Chest X-ray shows a mass in the right upper lobe with a massive pleural effusion. Thoracentesis yields an exudate with WBC 10,000/mm3, 90% mononuclear cells, and a markedly elevated LDH. What is the most likely cause of the effusion?
+
+A. Complicated parapneumonic effusion progressing to empyema
+B. Pleural effusion associated with pulmonary embolism
+C. Transudative effusion from decompensated heart failure
+D. Tuberculous pleuritis
+E. Malignant pleural effusion from bronchogenic carcinoma
+
+ANSWER: E. Malignant pleural effusion from bronchogenic carcinoma
+
+EXPLAIN:
+เฉลย: malignant pleural effusion จากมะเร็งปอด (bronchogenic carcinoma) ที่ลุกลามเยื่อหุ้มปอด
+
+กลไก/การให้เหตุผล: อาการเหนื่อยค่อยเป็นค่อยไป 2 เดือน + CXR มี mass ที่ RUL คือตัวชี้ว่ามีก้อนเนื้องอกเป็นต้นเหตุ ไม่ใช่โรคเฉียบพลัน น้ำในเยื่อหุ้มปอดเป็น exudate ตาม Light's criteria และปริมาณมาก (massive effusion) ซึ่งสาเหตุที่ทำให้น้ำท่วมเกือบเต็มช่องปอดข้างเดียวส่วนใหญ่คือมะเร็ง cell differential เป็น mononuclear/lymphocyte 90% บอกว่าเป็นกระบวนการอักเสบเรื้อรัง ไม่ใช่ pyogenic acute inflammation และ LDH ที่สูงมากสะท้อน pleural inflammation กับ cell turnover สูงจาก tumour burden กลไกการเกิดน้ำคือ tumour อุดกั้น lymphatic drainage ของ parietal pleura ร่วมกับ pleural permeability เพิ่มขึ้น ขั้นต่อไปคือส่ง pleural fluid cytology (sensitivity ~60%) และถ้าไม่ได้คำตอบให้ทำ pleural biopsy/thoracoscopy รวมถึงประเมิน staging
+
+ทำไมตัวเลือกอื่นผิด:
+- Tuberculous pleuritis ให้ lymphocyte-predominant exudate ที่ LDH สูงได้เหมือนกัน และเป็น DDx ที่สำคัญที่สุดในบริบทไทย แต่มักไม่ massive มักมีไข้ต่ำ ๆ เหงื่อออกกลางคืน และไม่มี mass ก้อนโตชัดเจนแบบนี้ (ควรส่ง ADA, AFB, TB-PCR ควบคู่เสมอ)
+- Parapneumonic effusion/empyema จะเป็น neutrophil-predominant มีไข้สูงเฉียบพลัน glucose ในน้ำต่ำ pH ต่ำ ไม่ใช่ mononuclear 90%
+- Heart failure ให้ transudate (LDH และโปรตีนต่ำ) มักเป็นสองข้างหรือขวามากกว่าซ้าย พร้อมภาวะน้ำเกินอื่น ๆ และไม่อธิบาย mass
+- Pleural effusion จาก pulmonary embolism มักปริมาณน้อย เกิดเฉียบพลันพร้อมเจ็บอกแบบ pleuritic อาจมีเลือดปนและ neutrophil นำ ไม่เข้ากับ 2 เดือน + massive
+
+หมายเหตุความน่าเชื่อถือของโพย: ผู้จดบันทึกคำตอบไว้ว่า "cancer?" มีเครื่องหมายคำถาม แสดงว่าไม่มั่นใจในตัวเลือกที่เฉลย และไม่ได้บันทึกว่าตัวเลือกจริงเขียนว่าอะไร แต่ข้อมูลในโจทย์ (mass + massive lymphocytic exudate + LDH สูงมาก) สนับสนุนมะเร็งชัดเจน จึงเรียบเรียงตามนี้
+
+REF: MED35 · สอบลงกองครั้งที่ 2 · [MED35] 87. Breathlessness for 2 months CXR เจอ mass at RUL with massive pleural effusion, thoracentesis exudate WBC 10,000 mononuclear/monocyte 90% LDH สูงมาก ถามคิดว่า cause จากอะไร?
+: cancer?
+
 ## Lec 21 · Chest X-ray / Occupational lung diseases (อ.พจนี) (8 ข้อ)
 
 ### [CH-OLD-35] ข้อสอบเก่า
@@ -3379,12 +3850,12 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 Q: A 55-year-old man who has worked in a stone-grinding and sandblasting factory for 25 years has progressive exertional dyspnoea. Chest radiograph shows multiple small upper-zone nodules with bilateral hilar lymph nodes that have peripheral rim calcification. What is the most likely diagnosis?
 
 A. Sarcoidosis
-B. Asbestosis
-C. Silicosis
-D. Miliary tuberculosis
-E. Coal workers' pneumoconiosis
+B. Coal workers' pneumoconiosis
+C. Miliary tuberculosis
+D. Asbestosis
+E. Silicosis
 
-ANSWER: C. Silicosis
+ANSWER: E. Silicosis
 
 EXPLAIN:
 **"Eggshell calcification" ของ hilar lymph node เป็นลักษณะที่จำเพาะต่อ silicosis** (พบใน sarcoidosis ได้บ้างแต่น้อยกว่ามาก)
@@ -3406,13 +3877,13 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: A 60-year-old man worked for 30 years in a roofing-sheet factory. He has progressive dyspnoea and a dry cough. Chest radiograph shows irregular opacities with a fine reticular pattern in the lower zones, together with calcified pleural plaques on the diaphragmatic pleura. What is the most likely diagnosis?
 
-A. Hypersensitivity pneumonitis
-B. Asbestosis
-C. Idiopathic pulmonary fibrosis
-D. Malignant mesothelioma
-E. Silicosis
+A. Idiopathic pulmonary fibrosis
+B. Malignant mesothelioma
+C. Asbestosis
+D. Silicosis
+E. Hypersensitivity pneumonitis
 
-ANSWER: B. Asbestosis
+ANSWER: C. Asbestosis
 
 EXPLAIN:
 **Asbestosis = pulmonary fibrosis จากใยหิน** โดยมีลายเซ็น 2 อย่างรวมกัน
@@ -3433,10 +3904,10 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: A 68-year-old man with a remote history of asbestos exposure presents with chest pain and a pleural effusion. Thoracentesis shows an exudate; cytology reports atypical mesothelial cells and is negative for malignant epithelial cells. What is the most likely diagnosis, and what is the principal risk factor?
 
-A. Benign asbestos pleural effusion; recent asbestos exposure
-B. Rheumatoid pleural effusion; rheumatoid arthritis
-C. Tuberculous pleuritis; previous tuberculosis infection
-D. Metastatic adenocarcinoma of the lung; cigarette smoking
+A. Rheumatoid pleural effusion; rheumatoid arthritis
+B. Metastatic adenocarcinoma of the lung; cigarette smoking
+C. Benign asbestos pleural effusion; recent asbestos exposure
+D. Tuberculous pleuritis; previous tuberculosis infection
 E. Malignant pleural mesothelioma; asbestos exposure
 
 ANSWER: E. Malignant pleural mesothelioma; asbestos exposure
@@ -3460,13 +3931,13 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: A 35-year-old bakery worker has had wheezing and cough for 6 months. Symptoms begin a few hours after arriving at work, worsen through the working week and improve completely during weekends and holidays. Lung examination at the clinic is normal. What is the most likely diagnosis and the most important management?
 
-A. Idiopathic asthma; start inhaled corticosteroid and continue the same work
+A. Occupational asthma; remove the patient from exposure to the causative agent
 B. Hypersensitivity pneumonitis; start systemic corticosteroid
 C. Vocal cord dysfunction; refer for speech therapy
-D. Chronic obstructive pulmonary disease; start long-acting bronchodilators
-E. Occupational asthma; remove the patient from exposure to the causative agent
+D. Idiopathic asthma; start inhaled corticosteroid and continue the same work
+E. Chronic obstructive pulmonary disease; start long-acting bronchodilators
 
-ANSWER: E. Occupational asthma; remove the patient from exposure to the causative agent
+ANSWER: A. Occupational asthma; remove the patient from exposure to the causative agent
 
 EXPLAIN:
 **เบาะแสที่วินิจฉัย occupational asthma คือความสัมพันธ์ของอาการกับที่ทำงาน** — เป็นมากขึ้นในวันทำงาน ดีขึ้นในวันหยุดและช่วงลาพักยาว ("Monday wheezing" หรือแย่ลงสะสมตลอดสัปดาห์)
@@ -3489,12 +3960,12 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 Q: A chest radiograph of a febrile coughing patient shows homogeneous opacification of the right lower zone containing air bronchograms, with the right heart border remaining clearly visible and no blunting of the costophrenic angle. What is the most likely diagnosis?
 
 A. Right lower lobe atelectasis
-B. Right middle lobe consolidation
-C. Right pleural effusion
-D. Lobar pneumonia of the right lower lobe
-E. Right lower lobe mass
+B. Lobar pneumonia of the right lower lobe
+C. Right middle lobe consolidation
+D. Right lower lobe mass
+E. Right pleural effusion
 
-ANSWER: D. Lobar pneumonia of the right lower lobe
+ANSWER: B. Lobar pneumonia of the right lower lobe
 
 EXPLAIN:
 **Air bronchogram = หลอดลมที่มีอากาศตัดผ่านเนื้อปอดที่ทึบ** → บอกว่าความทึบนั้นเกิดจาก **alveoli ที่เต็มไปด้วยของเหลว/หนอง/เลือด (consolidation)** ไม่ใช่จากน้ำในช่องเยื่อหุ้มปอดหรือก้อน
@@ -3516,13 +3987,13 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: A 62-year-old man who has smoked 40 pack-years presents with facial and upper limb swelling, distended neck and chest wall veins that do not pulsate, and a right upper lobe mass on chest radiograph. What is the most likely diagnosis?
 
-A. Cardiac tamponade from malignant pericardial effusion
-B. Superior vena cava syndrome from bronchogenic carcinoma
-C. Bilateral internal jugular vein thrombosis
-D. Angio-oedema
-E. Right heart failure from cor pulmonale
+A. Right heart failure from cor pulmonale
+B. Bilateral internal jugular vein thrombosis
+C. Angio-oedema
+D. Superior vena cava syndrome from bronchogenic carcinoma
+E. Cardiac tamponade from malignant pericardial effusion
 
-ANSWER: B. Superior vena cava syndrome from bronchogenic carcinoma
+ANSWER: D. Superior vena cava syndrome from bronchogenic carcinoma
 
 EXPLAIN:
 **SVC syndrome**: SVC ถูกกดหรืออุดตัน → เลือดจากศีรษะ คอ และแขนกลับหัวใจไม่ได้
@@ -3542,13 +4013,13 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: A 58-year-old heavy smoker is found to have a small cell lung carcinoma with mediastinal involvement. Which paraneoplastic syndrome is most characteristically associated with this tumour?
 
-A. Syndrome of inappropriate antidiuretic hormone secretion
-B. Polycythaemia from erythropoietin secretion
+A. Polycythaemia from erythropoietin secretion
+B. Hypercalcaemia from parathyroid hormone-related peptide
 C. Hypertrophic pulmonary osteoarthropathy
 D. Carcinoid syndrome
-E. Hypercalcaemia from parathyroid hormone-related peptide
+E. Syndrome of inappropriate antidiuretic hormone secretion
 
-ANSWER: A. Syndrome of inappropriate antidiuretic hormone secretion
+ANSWER: E. Syndrome of inappropriate antidiuretic hormone secretion
 
 EXPLAIN:
 **Small cell lung carcinoma มีต้นกำเนิดจาก neuroendocrine cell** จึงหลั่งฮอร์โมนผิดที่ได้บ่อย
@@ -3568,13 +4039,13 @@ Lecture: 21 Chest X-ray / Occupational lung diseases (อ.พจนี) · พ�
 
 Q: Which of the following malignancies is LEAST associated with cigarette smoking?
 
-A. Bladder cancer
-B. Laryngeal cancer
-C. Lung cancer
-D. Breast cancer
+A. Breast cancer
+B. Lung cancer
+C. Laryngeal cancer
+D. Bladder cancer
 E. Pancreatic cancer
 
-ANSWER: D. Breast cancer
+ANSWER: A. Breast cancer
 
 EXPLAIN:
 **บุหรี่สัมพันธ์กับมะเร็งหลายระบบ** ไม่ใช่แค่ปอด: **ปอด (ทั้ง small cell และ non-small cell), กล่องเสียง, ช่องปากและคอหอย, หลอดอาหาร, กระเพาะปัสสาวะและทางเดินปัสสาวะ, ไต, ตับอ่อน, กระเพาะอาหาร, ตับ, ปากมดลูก, ลำไส้ใหญ่ และ acute myeloid leukaemia**
@@ -3595,13 +4066,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: An arterial blood gas shows pH 7.15, PaCO2 30 mmHg and HCO3 10 mEq/L. Which acid-base disorder is present?
 
-A. Mixed respiratory alkalosis and metabolic alkalosis
-B. Metabolic alkalosis with respiratory compensation
-C. Respiratory alkalosis with metabolic compensation
-D. Mixed metabolic acidosis and respiratory acidosis
+A. Mixed metabolic acidosis and respiratory acidosis
+B. Mixed respiratory alkalosis and metabolic alkalosis
+C. Metabolic alkalosis with respiratory compensation
+D. Respiratory alkalosis with metabolic compensation
 E. Metabolic acidosis with appropriate respiratory compensation
 
-ANSWER: D. Mixed metabolic acidosis and respiratory acidosis
+ANSWER: A. Mixed metabolic acidosis and respiratory acidosis
 
 EXPLAIN:
 ไล่เป็นขั้น: **pH 7.15 → acidaemia รุนแรง**; **HCO3 10 ต่ำมาก → primary metabolic acidosis**; PaCO2 30 ต่ำกว่าปกติ จึงไม่ใช่ต้นเหตุของกรด
@@ -3629,13 +4100,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: A patient becomes dyspnoeic 6 hours ago. Arterial blood gas on room air: pH 7.26, PaCO2 60 mmHg, HCO3 26 mEq/L, O2 saturation 80 percent. Which interpretation is correct?
 
-A. Acute metabolic acidosis without compensation
-B. Acute metabolic acidosis with respiratory compensation
-C. Chronic respiratory acidosis with full metabolic compensation
-D. Chronic metabolic acidosis with respiratory compensation
-E. Acute respiratory acidosis with minimal metabolic compensation
+A. Acute metabolic acidosis with respiratory compensation
+B. Chronic respiratory acidosis with full metabolic compensation
+C. Acute respiratory acidosis with minimal metabolic compensation
+D. Acute metabolic acidosis without compensation
+E. Chronic metabolic acidosis with respiratory compensation
 
-ANSWER: E. Acute respiratory acidosis with minimal metabolic compensation
+ANSWER: C. Acute respiratory acidosis with minimal metabolic compensation
 
 EXPLAIN:
 **กฎการชดเชยของ respiratory acidosis**
@@ -3662,13 +4133,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: A 60-year-old man with chronic obstructive pulmonary disease presents with worsening dyspnoea. Arterial blood gas: pH 7.30, PaCO2 80 mmHg, HCO3 38 mEq/L. Which interpretation is correct?
 
-A. Acute-on-chronic respiratory acidosis with partial metabolic compensation
-B. Fully compensated chronic respiratory acidosis
-C. Primary metabolic alkalosis with respiratory compensation
-D. Pure acute respiratory acidosis
+A. Pure acute respiratory acidosis
+B. Primary metabolic alkalosis with respiratory compensation
+C. Acute-on-chronic respiratory acidosis with partial metabolic compensation
+D. Fully compensated chronic respiratory acidosis
 E. Mixed respiratory acidosis and metabolic acidosis
 
-ANSWER: A. Acute-on-chronic respiratory acidosis with partial metabolic compensation
+ANSWER: C. Acute-on-chronic respiratory acidosis with partial metabolic compensation
 
 EXPLAIN:
 **HCO3 38 บ่งว่าไตชดเชยมานานแล้ว (chronic)** — PaCO2 ขึ้น 40 จากปกติ ถ้าเป็น chronic เต็มที่ HCO3 ควรอยู่ราว 24 + (4 × 4) = **~40** ซึ่งใกล้เคียงกับ 38
@@ -3689,8 +4160,8 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 Q: A 56-year-old diabetic man presents with fever, productive cough and vomiting for 3 days. Vital signs: BT 38.5 C, PR 110/min, RR 28/min, BP 95/55 mmHg, moderate dehydration, crepitations at the lower lung. Laboratory results: blood sugar 128 mg/dL, BUN 14, creatinine 1.0 mg/dL, Na 140, K 4.1, Cl 78, HCO3 15 mEq/L, albumin 4.0 g/dL. ABG: pH 7.50, PaO2 70 mmHg, PaCO2 20 mmHg. What best describes the acid-base abnormality?
 
 A. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and normal anion gap metabolic acidosis from vomiting
-B. High anion gap metabolic acidosis from lactic acidosis alone
-C. Respiratory acidosis from pneumonia
+B. Respiratory acidosis from pneumonia
+C. High anion gap metabolic acidosis from lactic acidosis alone
 D. Respiratory alkalosis from pneumonia and high anion gap metabolic acidosis from lactic acidosis
 E. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and high anion gap metabolic acidosis from lactic acidosis
 
@@ -3721,13 +4192,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: Which statement correctly describes a physiological shunt?
 
-A. A right-to-left communication at the level of the great vessels only
+A. An area of lung with reduced diffusion capacity but normal ventilation and perfusion
 B. Alveolar units with both high ventilation and high perfusion
-C. An area of lung with reduced diffusion capacity but normal ventilation and perfusion
-D. Alveolar units that are ventilated but not perfused, causing an increase in dead space
-E. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
+C. Alveolar units that are ventilated but not perfused, causing an increase in dead space
+D. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
+E. A right-to-left communication at the level of the great vessels only
 
-ANSWER: E. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
+ANSWER: D. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
 
 EXPLAIN:
 **Shunt = perfusion โดยไม่มี ventilation (V/Q = 0)** เช่น **atelectasis, pneumonia ที่ alveoli เต็มไปด้วยหนอง, pulmonary edema, ARDS**
@@ -3749,12 +4220,12 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 Q: A patient has severe hypoxaemia with a markedly increased alveolar-arterial oxygen gradient that does not improve despite a high fraction of inspired oxygen. Bilateral infiltrates are present on chest radiograph and there is no evidence of cardiac failure. Which condition best explains this?
 
 A. High altitude exposure
-B. Neuromuscular weakness causing hypoventilation
-C. Acute respiratory distress syndrome
-D. Opioid overdose causing hypoventilation
-E. Pure carbon monoxide poisoning
+B. Opioid overdose causing hypoventilation
+C. Neuromuscular weakness causing hypoventilation
+D. Pure carbon monoxide poisoning
+E. Acute respiratory distress syndrome
 
-ANSWER: C. Acute respiratory distress syndrome
+ANSWER: E. Acute respiratory distress syndrome
 
 EXPLAIN:
 **ARDS = shunt รุนแรง** จาก alveoli ที่เต็มไปด้วยของเหลวและ atelectasis → **A-a gradient กว้างมากและ refractory ต่อการให้ออกซิเจน**
@@ -3775,13 +4246,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: A 45-year-old man is brought to the emergency department confused and drowsy. Arterial blood gas: PaO2 170 mmHg (on supplemental oxygen), PaCO2 56 mmHg, pH 7.28. He has a 15 pack-year smoking history and pulmonary function testing 3 months ago showed severe airway obstruction. What is the most likely cause of his hypercapnic respiratory failure?
 
-A. Cardiogenic pulmonary oedema
-B. Acute pneumonia
-C. Right-to-left intracardiac shunt
-D. Acute pulmonary embolism
-E. Chronic obstructive pulmonary disease with excessive oxygen administration
+A. Chronic obstructive pulmonary disease with excessive oxygen administration
+B. Right-to-left intracardiac shunt
+C. Acute pulmonary embolism
+D. Cardiogenic pulmonary oedema
+E. Acute pneumonia
 
-ANSWER: E. Chronic obstructive pulmonary disease with excessive oxygen administration
+ANSWER: A. Chronic obstructive pulmonary disease with excessive oxygen administration
 
 EXPLAIN:
 เบาะแสสำคัญคือ **PaO2 สูงถึง 170 mmHg** ซึ่ง **สูงเกินความจำเป็น** ในผู้ป่วยที่มี severe airway obstruction — บ่งว่าได้รับออกซิเจนมากเกินไป
@@ -3804,13 +4275,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: Which of the following causes hypoxaemia with a NORMAL alveolar-arterial oxygen gradient?
 
-A. Hypoventilation from an opioid overdose
-B. Acute respiratory distress syndrome
+A. Pneumonia with lobar consolidation
+B. Hypoventilation from an opioid overdose
 C. Interstitial lung disease
-D. Pulmonary embolism
-E. Pneumonia with lobar consolidation
+D. Acute respiratory distress syndrome
+E. Pulmonary embolism
 
-ANSWER: A. Hypoventilation from an opioid overdose
+ANSWER: B. Hypoventilation from an opioid overdose
 
 EXPLAIN:
 **A-a gradient = PAO2 − PaO2** โดย **PAO2 = FiO2 × (Patm − PH2O) − PaCO2/R** ≈ **150 − PaCO2/0.8** เมื่อหายใจอากาศห้องที่ระดับน้ำทะเล
@@ -3832,12 +4303,12 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 Q: A patient with diabetic ketoacidosis has an arterial blood gas showing pH 7.26, PaCO2 23 mmHg and HCO3 10 mEq/L, with Na 140, Cl 100 mEq/L. Which interpretation is correct?
 
 A. Primary respiratory alkalosis with metabolic compensation
-B. High anion gap metabolic acidosis with appropriate respiratory compensation
-C. High anion gap metabolic acidosis with superimposed respiratory acidosis
-D. Mixed metabolic acidosis and metabolic alkalosis
-E. Normal anion gap metabolic acidosis with respiratory compensation
+B. Mixed metabolic acidosis and metabolic alkalosis
+C. Normal anion gap metabolic acidosis with respiratory compensation
+D. High anion gap metabolic acidosis with superimposed respiratory acidosis
+E. High anion gap metabolic acidosis with appropriate respiratory compensation
 
-ANSWER: B. High anion gap metabolic acidosis with appropriate respiratory compensation
+ANSWER: E. High anion gap metabolic acidosis with appropriate respiratory compensation
 
 EXPLAIN:
 **AG** = 140 − (100 + 10) = **30** → high anion gap metabolic acidosis (จาก ketoacid)
@@ -3859,13 +4330,13 @@ Lecture: 26 Pulmonary TB / ABG (แบ่งชั่วโมงสอน) (อ
 
 Q: A 36-year-old woman with HIV infection presents with 2 weeks of progressive exertional dyspnoea, low-grade fever and dry cough. Examination: BT 38 C, PR 130/min, RR 30/min, mild pallor, oral hairy leukoplakia, normal breath sounds with no adventitious sounds. ABG on room air: pH 7.45, PaO2 55 mmHg, PaCO2 30 mmHg, O2 saturation 80 percent. Apart from oxygen therapy, which treatment is most appropriate?
 
-A. Ceftriaxone plus ciprofloxacin
-B. Furosemide with fluid restriction
+A. Cotrimoxazole plus systemic corticosteroid
+B. Anti-tuberculous drugs
 C. Broad-spectrum antifungal therapy
-D. Cotrimoxazole plus systemic corticosteroid
-E. Anti-tuberculous drugs
+D. Ceftriaxone plus ciprofloxacin
+E. Furosemide with fluid restriction
 
-ANSWER: D. Cotrimoxazole plus systemic corticosteroid
+ANSWER: A. Cotrimoxazole plus systemic corticosteroid
 
 EXPLAIN:
 ภาพคือ **PCP ที่รุนแรง**: ผู้ป่วย HIV (oral hairy leukoplakia บ่งภูมิคุ้มกันต่ำ), ไอแห้ง เหนื่อยเพิ่มขึ้นเป็นสัปดาห์, **ฟังปอดปกติแต่ hypoxaemia รุนแรง** (PaO2 55) ซึ่งเป็นลักษณะที่ "อาการกับการตรวจร่างกายไม่เข้ากัน"
@@ -3888,8 +4359,8 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 Q: A 62-year-old man with poorly controlled diabetes and chronic alcohol use has fever and cough productive of thick, blood-tinged sputum described as red currant jelly. Chest radiograph shows right upper lobe consolidation with a bulging fissure. Which organism is most likely responsible?
 
 A. Mycoplasma pneumoniae
-B. Streptococcus pneumoniae
-C. Staphylococcus aureus
+B. Staphylococcus aureus
+C. Streptococcus pneumoniae
 D. Legionella pneumophila
 E. Klebsiella pneumoniae
 
@@ -3913,13 +4384,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 40-year-old man with no comorbidity has community-acquired pneumonia. He is alert, RR 18/min, BP 122/78 mmHg, BUN 15 mg/dL and creatinine 0.87 mg/dL. What is the most appropriate management?
 
-A. Outpatient treatment with high-dose oral amoxicillin
-B. Outpatient observation without antibiotics
+A. Outpatient observation without antibiotics
+B. Admit to a general ward for intravenous ceftriaxone plus azithromycin
 C. Admit to the intensive care unit for broad-spectrum antibiotics
 D. Outpatient treatment with amoxicillin-clavulanate plus azithromycin
-E. Admit to a general ward for intravenous ceftriaxone plus azithromycin
+E. Outpatient treatment with high-dose oral amoxicillin
 
-ANSWER: A. Outpatient treatment with high-dose oral amoxicillin
+ANSWER: E. Outpatient treatment with high-dose oral amoxicillin
 
 EXPLAIN:
 **CURB-65** (ให้ข้อละ 1 คะแนน)
@@ -3956,10 +4427,10 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 Q: A patient with community-acquired pneumonia has a sputum Gram stain showing gram-positive lancet-shaped diplococci in pairs, with abundant polymorphonuclear leucocytes and few epithelial cells. Which antibiotic is most appropriate?
 
 A. Ceftriaxone
-B. Trimethoprim-sulfamethoxazole
-C. Gentamicin
-D. Metronidazole
-E. Vancomycin
+B. Metronidazole
+C. Trimethoprim-sulfamethoxazole
+D. Vancomycin
+E. Gentamicin
 
 ANSWER: A. Ceftriaxone
 
@@ -3986,13 +4457,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: An elderly bed-ridden man who has had a stroke with dysphagia develops fever and cough. Chest radiograph shows consolidation of the posterior segment of the right upper lobe and the superior segment of the right lower lobe. Sputum Gram stain shows mixed pleomorphic rods. Which organisms are most likely responsible?
 
-A. Pseudomonas aeruginosa
-B. Streptococcus pneumoniae alone
-C. Anaerobic oral flora
-D. Legionella pneumophila
-E. Mycoplasma pneumoniae
+A. Streptococcus pneumoniae alone
+B. Mycoplasma pneumoniae
+C. Legionella pneumophila
+D. Pseudomonas aeruginosa
+E. Anaerobic oral flora
 
-ANSWER: C. Anaerobic oral flora
+ANSWER: E. Anaerobic oral flora
 
 EXPLAIN:
 **Aspiration pneumonia** — เชื้อมาจาก **แบคทีเรียในช่องปาก ซึ่งมักเป็นเชื้อผสมและมี anaerobe ร่วม** (Peptostreptococcus, Prevotella, Fusobacterium, Bacteroides) ร่วมกับ streptococci
@@ -4016,11 +4487,11 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A patient who has been in the intensive care unit for 10 days is extubated after treatment for pneumonia. He develops a new fever with purulent secretions, and culture grows a gram-negative bacillus that is oxidase positive and produces a green pigment. Which organism is most likely, and which empirical therapy is appropriate?
 
-A. Streptococcus pneumoniae; ceftriaxone
+A. Klebsiella pneumoniae; ertapenem
 B. Haemophilus influenzae; amoxicillin
 C. Pseudomonas aeruginosa; an anti-pseudomonal beta-lactam such as piperacillin-tazobactam or cefepime
-D. Mycoplasma pneumoniae; azithromycin
-E. Klebsiella pneumoniae; ertapenem
+D. Streptococcus pneumoniae; ceftriaxone
+E. Mycoplasma pneumoniae; azithromycin
 
 ANSWER: C. Pseudomonas aeruginosa; an anti-pseudomonal beta-lactam such as piperacillin-tazobactam or cefepime
 
@@ -4044,10 +4515,10 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 65-year-old man with 4 months of breathlessness and greyish morning sputum has an increased anteroposterior chest diameter and normal breath sounds. Post-bronchodilator spirometry shows FEV1/FVC 68 percent with FEV1 75 percent predicted. What is the most likely diagnosis?
 
-A. Bronchiectasis
+A. Pneumonia
 B. Acute bronchitis
-C. Pneumonia
-D. Asthma
+C. Asthma
+D. Bronchiectasis
 E. Chronic obstructive pulmonary disease
 
 ANSWER: E. Chronic obstructive pulmonary disease
@@ -4078,13 +4549,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 68-year-old man with COPD remains breathless on exertion despite regular inhaled tiotropium and as-needed salbutamol, and has had two exacerbations in the past year. What is the most appropriate next step in his maintenance therapy?
 
-A. Stop tiotropium and use salbutamol more frequently
+A. Add as-needed short-acting anticholinergic
 B. Add oral prednisolone daily
 C. Add oral theophylline
-D. Add a long-acting beta-2 agonist to make a LABA plus LAMA combination
-E. Add as-needed short-acting anticholinergic
+D. Stop tiotropium and use salbutamol more frequently
+E. Add a long-acting beta-2 agonist to make a LABA plus LAMA combination
 
-ANSWER: D. Add a long-acting beta-2 agonist to make a LABA plus LAMA combination
+ANSWER: E. Add a long-acting beta-2 agonist to make a LABA plus LAMA combination
 
 EXPLAIN:
 **ขั้นบันไดของยา maintenance ใน COPD (GOLD)**
@@ -4105,13 +4576,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 65-year-old man with COPD can perform activities of daily living but becomes breathless walking more than one block. He is on appropriate inhaled therapy for his stage. SpO2 on room air is 96 percent. Which of the following is indicated in the management of this condition?
 
-A. Varicella vaccination
+A. Pulmonary rehabilitation
 B. Long-term home oxygen therapy
-C. Daily low-carbohydrate diet
-D. Meningococcal vaccination
-E. Pulmonary rehabilitation
+C. Meningococcal vaccination
+D. Varicella vaccination
+E. Daily low-carbohydrate diet
 
-ANSWER: E. Pulmonary rehabilitation
+ANSWER: A. Pulmonary rehabilitation
 
 EXPLAIN:
 **Pulmonary rehabilitation** เป็นการรักษาที่ **ปรับปรุงอาการเหนื่อย ความสามารถในการออกกำลังกาย และคุณภาพชีวิตได้มากที่สุด** ในผู้ป่วย COPD ที่ยังเหนื่อยแม้ได้ยาเต็มที่ และ **ลดการนอนโรงพยาบาลซ้ำ** เมื่อทำหลัง exacerbation
@@ -4134,13 +4605,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: What is the single most common precipitating cause of an acute exacerbation of COPD?
 
-A. Respiratory tract infection
-B. Pulmonary embolism
-C. Non-adherence to inhaled therapy
-D. Air pollution exposure
-E. Concomitant asthma
+A. Concomitant asthma
+B. Respiratory tract infection
+C. Air pollution exposure
+D. Non-adherence to inhaled therapy
+E. Pulmonary embolism
 
-ANSWER: A. Respiratory tract infection
+ANSWER: B. Respiratory tract infection
 
 EXPLAIN:
 **การติดเชื้อทางเดินหายใจเป็นสาเหตุกระตุ้น AECOPD ที่พบบ่อยที่สุด (ประมาณ 70-80%)** — ทั้ง **ไวรัส (rhinovirus พบบ่อยที่สุด, influenza, RSV)** และ **แบคทีเรีย (Haemophilus influenzae, Streptococcus pneumoniae, Moraxella catarrhalis; ถ้าโรครุนแรงหรือเคยได้ยาบ่อยให้นึกถึง Pseudomonas)**
@@ -4163,13 +4634,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 30-year-old woman with asthma comes to the emergency department with progressive dyspnoea and non-productive cough over 3 days. She stopped her inhaled corticosteroid 3 months ago and has used her reliever inhaler every day in the past week, three times in the last hour. Vital signs: BT 37 C, PR 120/min, RR 30/min, BP 140/90 mmHg, SpO2 90 percent on room air, with generalised expiratory wheeze. What is the most appropriate initial treatment?
 
-A. Systemic corticosteroid and inhaled short-acting beta-2 agonist without oxygen
-B. Oxygen supplementation, systemic corticosteroid and inhaled short-acting beta-2 agonist
-C. High-dose inhaled corticosteroid and inhaled short-acting beta-2 agonist only
-D. Oral and inhaled corticosteroid with oxygen supplementation
+A. Oral and inhaled corticosteroid with oxygen supplementation
+B. High-dose inhaled corticosteroid and inhaled short-acting beta-2 agonist only
+C. Systemic corticosteroid and inhaled short-acting beta-2 agonist without oxygen
+D. Oxygen supplementation, systemic corticosteroid and inhaled short-acting beta-2 agonist
 E. Oxygen, high-dose inhaled corticosteroid and inhaled short-acting beta-2 agonist
 
-ANSWER: B. Oxygen supplementation, systemic corticosteroid and inhaled short-acting beta-2 agonist
+ANSWER: D. Oxygen supplementation, systemic corticosteroid and inhaled short-acting beta-2 agonist
 
 EXPLAIN:
 **การรักษา acute asthma exacerbation ที่ห้องฉุกเฉินมี 3 เสาหลัก**
@@ -4197,9 +4668,9 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 Q: A 24-year-old man has had nocturnal wheeze and breathlessness almost every night for 1 week, with no daytime symptoms and no leg oedema. He has nasal congestion and rhinorrhoea every evening. Examination shows pale swollen inferior turbinates, no jugular venous distension, normal heart sounds and clear lungs. What is the most likely cause of his breathlessness?
 
 A. Bronchiectasis
-B. Pulmonary embolism
-C. Chronic obstructive pulmonary disease
-D. Congestive heart failure
+B. Chronic obstructive pulmonary disease
+C. Congestive heart failure
+D. Pulmonary embolism
 E. Asthma
 
 ANSWER: E. Asthma
@@ -4225,13 +4696,13 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 
 Q: A 28-year-old woman with asthma has symptoms twice a week and wakes at night once or twice a month. She currently uses only an as-needed short-acting beta-2 agonist. According to current asthma guidelines, what should she be prescribed?
 
-A. As-needed low-dose inhaled corticosteroid-formoterol as reliever therapy
-B. A long-acting beta-2 agonist alone as controller
-C. A long-acting muscarinic antagonist alone
-D. As-needed short-acting beta-2 agonist alone, continued
-E. Oral theophylline daily
+A. As-needed short-acting beta-2 agonist alone, continued
+B. Oral theophylline daily
+C. As-needed low-dose inhaled corticosteroid-formoterol as reliever therapy
+D. A long-acting beta-2 agonist alone as controller
+E. A long-acting muscarinic antagonist alone
 
-ANSWER: A. As-needed low-dose inhaled corticosteroid-formoterol as reliever therapy
+ANSWER: C. As-needed low-dose inhaled corticosteroid-formoterol as reliever therapy
 
 EXPLAIN:
 **การเปลี่ยนแปลงสำคัญของแนวทาง asthma (GINA) ที่ต้องรู้: ไม่แนะนำให้ใช้ SABA เดี่ยวๆ อีกต่อไปในผู้ใหญ่และวัยรุ่นทุกระดับความรุนแรง**
@@ -4260,8 +4731,8 @@ Q: Which test best confirms the diagnosis of asthma in a patient with intermitte
 
 A. Single peak expiratory flow measurement in the clinic
 B. Arterial blood gas analysis
-C. Chest radiograph
-D. Total serum IgE level
+C. Total serum IgE level
+D. Chest radiograph
 E. Spirometry with bronchodilator reversibility testing
 
 ANSWER: E. Spirometry with bronchodilator reversibility testing
@@ -4290,12 +4761,12 @@ Lecture: 37 Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศั
 Q: A previously healthy 40-year-old woman has a chronic productive cough with large volumes of purulent sputum and recurrent infections. High-resolution CT shows dilated, thick-walled bronchi. Which organism is the most common cause of infective exacerbations in a patient like this with no underlying immunodeficiency?
 
 A. Aspergillus fumigatus
-B. Staphylococcus aureus
-C. Mycobacterium tuberculosis
-D. Pseudomonas aeruginosa
-E. Haemophilus influenzae
+B. Haemophilus influenzae
+C. Pseudomonas aeruginosa
+D. Mycobacterium tuberculosis
+E. Staphylococcus aureus
 
-ANSWER: E. Haemophilus influenzae
+ANSWER: B. Haemophilus influenzae
 
 EXPLAIN:
 **Bronchiectasis** = หลอดลมขยายและผนังหนาอย่างถาวรจาก **วงจร "การติดเชื้อ → การอักเสบ → ทำลายผนังหลอดลม → เสียกลไกการกำจัดเสมหะ → ติดเชื้อซ้ำ" (vicious cycle)**

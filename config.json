@@ -255,6 +255,16 @@
       "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
       "week": 0,
       "al": 0
+    },
+    "E04": {
+      "date": "ศ. 25 ก.ย.",
+      "week": 2,
+      "al": 0
+    },
+    "TB2": {
+      "date": "พ. 23 ก.ย.",
+      "week": 2,
+      "al": 0
     }
   },
   "sets": [
@@ -330,7 +340,7 @@
       "key": "chest",
       "label": "Chest",
       "thai": "ระบบการหายใจและทรวงอก",
-      "blurb": "5 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD",
+      "blurb": "6 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD · วัณโรคนอกปอด (อ.ภานุวัฒน์)",
       "accent": {
         "light": "#4a5a86",
         "soft": "#e6e9f2",
@@ -344,14 +354,17 @@
         "17",
         "21",
         "26",
-        "37"
+        "37",
+        "TB2"
       ],
       "mcq": [
         "data/chest_mcq_a.json",
-        "data/chest_mcq_b.json"
+        "data/chest_mcq_b.json",
+        "data/chest_mcq_eptb.json"
       ],
       "meq": [
-        "data/chest_meq_osce.json"
+        "data/chest_meq_osce.json",
+        "data/chest_meq_eptb.json"
       ],
       "old": [
         "data/chest_old_a.json",
@@ -483,7 +496,7 @@
       "key": "endo",
       "label": "Endo",
       "thai": "ต่อมไร้ท่อและเมตาบอลิก",
-      "blurb": "3 คาบบรรยาย · เบาหวานและภาวะฉุกเฉินทางเมตาบอลิก (DKA · HHS · น้ำตาลต่ำ) · โรคของต่อมไทรอยด์ · ต่อมหมวกไต ต่อมใต้สมอง และเมตาบอลิซึมของกระดูก",
+      "blurb": "4 หัวข้อ · Metabolic syndrome โรคอ้วน และไขมันในเลือดผิดปกติ (อ.นวพร) · เบาหวานและภาวะฉุกเฉินทางเมตาบอลิก (DKA · HHS · น้ำตาลต่ำ) · โรคของต่อมไทรอยด์ · ต่อมหมวกไต ต่อมใต้สมอง และเมตาบอลิซึมของกระดูก",
       "accent": {
         "light": "#4d7c0f",
         "soft": "#e9f3d3",
@@ -493,6 +506,7 @@
         "darkInk": "#d8e98d"
       },
       "lecture_order": [
+        "E04",
         "E01",
         "E02",
         "E03"
@@ -500,10 +514,12 @@
       "mcq": [
         "data/endo_mcq_a.json",
         "data/endo_mcq_b.json",
-        "data/endo_mcq_c.json"
+        "data/endo_mcq_c.json",
+        "data/endo_mcq_mets.json"
       ],
       "meq": [
-        "data/endo_meq_osce.json"
+        "data/endo_meq_osce.json",
+        "data/endo_meq_mets.json"
       ],
       "old": [
         "data/endo_old_papers.json"

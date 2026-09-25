@@ -1,0 +1,257 @@
+[
+ {
+  "id": "CH-MCQ-41",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous pleurisy – the test that best supports the diagnosis",
+  "stem": "A 34-year-old HIV-negative man has 4 weeks of fever, dry cough, weight loss and left pleuritic chest pain that did not improve with a course of amoxicillin-clavulanate. Chest radiograph shows a moderate left pleural effusion without parenchymal infiltrate. Thoracentesis yields straw-coloured fluid: protein 5.1 g/dL (serum 7.0), LDH 480 U/L (serum upper limit 250), WBC 2,800/mm3 with 85% lymphocytes and 2% eosinophils, glucose 70 mg/dL, few mesothelial cells, and no malignant cells. Pleural fluid AFB smear is negative. Which additional result on the pleural fluid most strongly supports tuberculous pleurisy?",
+  "choices": [
+   "Adenosine deaminase (ADA) of 72 U/L",
+   "A positive tuberculin skin test of 15 mm",
+   "Pleural fluid pH of 7.45",
+   "Pleural fluid eosinophils above 10%",
+   "Negative GeneXpert MTB/RIF on pleural fluid"
+  ],
+  "answer": 0,
+  "explain": "**ภาพรวม:** exudate ตาม Light's criteria (protein ratio 0.73, LDH > 2/3 ของค่าสูงสุดปกติ) + **lymphocyte เด่น 50–90% · eosinophil < 5% · mesothelial cell น้อย · ไม่มีเซลล์มะเร็ง** ตรงตามตาราง body fluid ในสไลด์อาจารย์ (หัวข้อที่อาจารย์ติดดาวว่าออกสอบมากที่สุด)\n\n**ADA** เป็นเอนไซม์ใน purine metabolism ที่เพิ่มขึ้นเมื่อ T cell แบ่งตัว จึงสะท้อน cell-mediated immunity ต่อเชื้อวัณโรคในโพรงเยื่อหุ้มปอด\n- ค่าตัด pleural **> 40 U/L: sensitivity 92% · specificity 89%**\n- ผลบวกลวง: empyema · lymphoma · malignant effusion · parapneumonic · collagen vascular disease (แต่ส่วนใหญ่มี neutrophil เด่นหรือพบเซลล์มะเร็ง)\n\n**ทำไมตัวลวงผิด**\n- *TST บวก* — บอกแค่ว่าเคยติดเชื้อ (latent) **ใช้วินิจฉัย active TB ไม่ได้** และในประเทศไทยบวกได้จาก BCG หรือการสัมผัสในอดีต\n- *pH 7.45* — TB pleurisy pH **แทบไม่เคยต่ำกว่า 7.3 และไม่เคยเกิน 7.4** ค่า 7.45 จึงไปทางอื่น\n- *Eosinophil > 10%* — ชี้ไปทางอากาศหรือเลือดในโพรงปอด ยา หรือพยาธิ และค้านวัณโรค\n- *GeneXpert ลบ* — sensitivity ในน้ำเยื่อหุ้มปอดต่ำมาก (ราว 0.34) ผลลบจึงตัดวัณโรคไม่ได้",
+  "pearl": "น้ำเยื่อหุ้มปอด exudate ที่ lymphocyte เด่น eosinophil < 5% + ADA > 40 = TB pleurisy — TST ใช้วินิจฉัย active TB ไม่ได้",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561",
+   "MED31 ข้อ 27 — Light criteria ได้ exudate, ADA > 40 ต้องรักษาอย่างไร → ยาวัณโรค",
+   "MED31 ข้อ 72 — exudate สีเหลือง ADA 50",
+   "MED30 — สงสัย TB pleural effusion ส่งตรวจอะไร (ADA / PCR for TB)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "B6.3(1)",
+   "3.1.7",
+   "2.3.10(7)",
+   "2.3.4(20)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-42",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous pleurisy – treatment regimen and the role of steroids",
+  "stem": "The patient in the previous item is diagnosed with tuberculous pleurisy (ADA 72 U/L). He weighs 60 kg, HIV test is negative and liver function is normal. Which is the most appropriate treatment?",
+  "choices": [
+   "2 months of isoniazid, rifampicin, pyrazinamide and ethambutol, followed by 4 months of isoniazid and rifampicin",
+   "The same 6-month regimen plus prednisolone 1 mg/kg/day for 4 weeks",
+   "2 months of four drugs followed by 10 months of isoniazid and rifampicin",
+   "Therapeutic chest drain insertion and antibiotics only, since TB pleurisy resolves spontaneously",
+   "Isoniazid alone for 9 months"
+  ],
+  "answer": 0,
+  "explain": "**ระยะเวลารักษาตามอวัยวะ (แนวทางไทย 2561 ในสไลด์)**\n\n| ตำแหน่ง | สูตร |\n|---|---|\n| ต่อมน้ำเหลือง · **เยื่อหุ้มปอด** · เยื่อหุ้มหัวใจ · ทางเดินปัสสาวะ | **2HRZE/4HR = 6 เดือน** |\n| กระดูกและกระดูกสันหลัง | ยาวขึ้น 9–12 เดือน |\n| เยื่อหุ้มสมอง / tuberculoma | **2HRZE/10HR = 12 เดือน** |\n\nช่วงเข้มข้น 2 เดือนใช้ 4 ตัวเพื่อฆ่าเชื้อให้เร็วและกันดื้อยา ช่วงต่อเนื่อง HR เพื่อกันกลับเป็นซ้ำ\n\n**Steroid:** อาจารย์จัด TB pleura ไว้ในกลุ่ม **ไม่แนะนำ** (เช่นเดียวกับต่อมน้ำเหลือง กระดูกสันหลัง และทางเดินปัสสาวะ) เพราะไม่ลดการตายหรือพังผืดในระยะยาว\n\n**ทำไมตัวลวงผิด**\n- *เพิ่ม prednisolone* — ไม่มีข้อบ่งชี้ในเยื่อหุ้มปอด\n- *12 เดือน* — เป็นสูตรของ TB meningitis\n- *ICD + antibiotic* — TB pleurisy ไม่รักษาจะหายเองได้ แต่ **ราว 2 ใน 3 จะกลับมาเป็นวัณโรคปอดหรือนอกปอดภายใน 5 ปี** จึงต้องให้ยาวัณโรคเสมอ\n- *INH เดี่ยว* — เป็นการรักษา latent TB ไม่ใช่ active disease",
+  "pearl": "TB เยื่อหุ้มปอด = 2HRZE/4HR 6 เดือน ไม่ให้ steroid",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)",
+   "2.3.10(7)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-43",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous lymphadenitis – how to confirm the diagnosis",
+  "stem": "A 26-year-old woman has noticed firm, painless swellings on both sides of her neck for 6 weeks. There is low-grade evening fever and 3 kg weight loss. The nodes are 2–3 cm, rubbery, non-tender, without overlying erythema; one is matted. Chest radiograph is normal. HIV test is negative. Which is the most appropriate next step?",
+  "choices": [
+   "Excisional biopsy (or FNA) of a node for histopathology, AFB stain, mycobacterial culture and GeneXpert",
+   "A 2-week course of amoxicillin-clavulanate and review",
+   "Tuberculin skin test and start anti-TB treatment if it is positive",
+   "Start empirical anti-TB treatment without tissue sampling",
+   "Oral prednisolone to shrink the nodes"
+  ],
+  "answer": 0,
+  "explain": "**ต่อมน้ำเหลืองโตแบบไม่เจ็บ ค่อย ๆ โตเป็นสัปดาห์ แข็ง ไม่มีการอักเสบเฉียบพลัน** เป็นลักษณะของ TB lymphadenitis (scrofula) ในสไลด์อาจารย์ แต่ **ต้องแยกมะเร็ง** (lymphoma, มะเร็งที่แพร่มา) ซึ่งเป็นโรคที่อาจารย์เน้นให้หา primary ที่ศีรษะ คอ และเยื่อหุ้มปอด\n\n**ต้องได้เนื้อเยื่อเสมอ:** excisional biopsy หรือ FNA\n- พยาธิ: **caseating granuloma** · AFB รูปคล้ายลูกปัด\n- **อัตราวินิจฉัยทางพยาธิ ~100%** สำหรับ LN EPTB\n- **GeneXpert ในเนื้อเยื่อต่อมน้ำเหลืองมี pooled sensitivity 0.96** (ต่างจากน้ำเยื่อหุ้มปอดที่ได้แค่ 0.34)\n- **ส่งเพาะเชื้อ** เพื่อยืนยันและทำ DST\n\n**ทำไมตัวลวงผิด**\n- *Antibiotic 2 สัปดาห์* — ภาพไม่เข้ากับ bacterial lymphadenitis (ไม่เจ็บ ไม่แดง นานหลายสัปดาห์) และทำให้เสียเวลาวินิจฉัยมะเร็ง\n- *TST* — ใช้วินิจฉัย active TB ไม่ได้\n- *รักษาโดยไม่เอาชิ้นเนื้อ* — ถ้าเป็น lymphoma จะวินิจฉัยช้า\n- *Steroid* — ไม่มีข้อบ่งชี้ และบดบังการวินิจฉัย lymphoma",
+  "pearl": "ต่อมน้ำเหลืองโตไม่เจ็บหลายสัปดาห์ → เอาชิ้นเนื้อไปตรวจพยาธิ AFB เพาะเชื้อ และ Xpert (sensitivity ในต่อมน้ำเหลือง 0.96) — ต้องแยก lymphoma เสมอ",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Case 02 painless lymphadenopathy · NAAT vs culture"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)",
+   "B6.2.2(8)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-44",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous spondylitis (Pott disease) – indication for surgery",
+  "stem": "A 45-year-old man with HIV infection has 4 months of worsening thoracic back pain with focal spinous tenderness at T10. For the past 3 days he has had progressive leg weakness and urinary retention. There is a fluctuant, non-warm paraspinal swelling. MRI shows destruction of the T9 and T10 vertebral bodies with relative disc preservation, a large paraspinal abscess and spinal cord compression. Which is the most appropriate management in addition to anti-TB drugs?",
+  "choices": [
+   "Urgent surgical decompression and stabilisation",
+   "Anti-TB drugs alone, since the abscess will resolve with treatment",
+   "High-dose dexamethasone instead of surgery",
+   "Radiotherapy to the thoracic spine",
+   "Bed rest with a thoracolumbar brace for 3 months before any other intervention"
+  ],
+  "answer": 0,
+  "explain": "**TB spondylitis (Pott disease)**: เชื้อไปทางเลือดสู่ส่วนหน้าของ vertebral body ทำลายกระดูกสองปล้องติดกัน มัก **ไม่ทำลายหมอนรองกระดูกจนระยะหลัง** (ต่างจาก pyogenic discitis) และเกิด **cold abscess** คือหนองที่ไม่ร้อนไม่แดง พบบ่อยในผู้ป่วยที่ไม่ได้รักษาหรือติดเชื้อ HIV\n\n**ข้อบ่งชี้ผ่าตัดแบบ absolute ในสไลด์ (แนวทางไทย 2561)**\n1. **cord compression ที่มีอาการทางระบบประสาทบกพร่อง** ไม่ดีขึ้นหรือเป็นซ้ำแม้รักษา — และถ้าอ่อนแรงเร็วร่วมกับปัสสาวะไม่ออก ต้องผ่าตัด **ด่วน**\n2. **กระดูกสันหลังไม่มั่นคง (spinal instability)**\n\nรายนี้มีทั้งขาอ่อนแรงเร็ว ปัสสาวะคั่ง และ cord compression → **ผ่าตัดลดแรงกดและยึดกระดูกโดยด่วน** ร่วมกับยาวัณโรค 9–12 เดือน\n\n**ทำไมตัวลวงผิด**\n- *ยาอย่างเดียว* — ใช้ได้เมื่อไม่มี neurological deficit ที่ลุกลาม\n- *Dexamethasone* — อาจารย์จัด TB กระดูกสันหลังไว้ใน **ไม่แนะนำ steroid**\n- *Radiotherapy* — ใช้กับ cord compression จากมะเร็ง ไม่ใช่วัณโรค\n- *Brace 3 เดือน* — ขาจะอ่อนแรงถาวร",
+  "pearl": "Pott disease: ผ่าตัดเมื่อมี cord compression + neurological deficit หรือ spinal instability · ไม่ให้ steroid",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Case 03 Pott disease · Surgery absolute indications"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-45",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous meningitis – CSF profile",
+  "stem": "A 38-year-old woman has 3 weeks of headache, low-grade fever and personality change, and now drowsiness with a right sixth cranial nerve palsy. Blood glucose is 110 mg/dL. Which cerebrospinal fluid profile is most consistent with tuberculous meningitis?",
+  "choices": [
+   "Opening pressure raised, WBC 250/mm3 with 85% lymphocytes, protein 220 mg/dL, glucose 42 mg/dL",
+   "Opening pressure raised, WBC 3,500/mm3 with 92% neutrophils, protein 300 mg/dL, glucose 10 mg/dL",
+   "Opening pressure normal, WBC 60/mm3 with 90% lymphocytes, protein 55 mg/dL, glucose 70 mg/dL",
+   "Opening pressure very high, WBC 20/mm3, protein 60 mg/dL, glucose 50 mg/dL, with a positive India ink stain",
+   "Opening pressure normal, WBC 2/mm3, protein 35 mg/dL, glucose 75 mg/dL"
+  ],
+  "answer": 0,
+  "explain": "**ภาพ subacute meningitis 2–3 สัปดาห์ + เปลี่ยนบุคลิก + cranial nerve palsy (basal meningitis ชอบกิน CN VI)** เข้ากับวัณโรค\n\n**CSF ของ TB meningitis (ตารางในสไลด์อาจารย์ ติด 3 ดาว)**\n- ใสในระยะแรก ขุ่นเมื่อเรื้อรัง\n- **เซลล์ 100–500/mm³** ระยะแรกอาจมี neutrophil ต่อมา **mononuclear สูงถึง 95%**\n- **โปรตีนสูง 100–500 mg/dL**\n- **น้ำตาล 40–50 mg/dL (ราวครึ่งหนึ่งของน้ำตาลในเลือด)**\n- ADA ค่าตัดราว 8–20 U/L (แปรปรวนมาก) · AFB smear เจอเพียง 5–37% · เพาะเชื้อขึ้น 40–80%\n\n**ตัวลวงแต่ละตัว**\n- *WBC 3,500 neutrophil เด่น glucose 10* — bacterial meningitis\n- *lymphocyte เด่น โปรตีนสูงเล็กน้อย glucose ปกติ* — viral meningitis\n- *Pressure สูงมาก เซลล์น้อย India ink บวก* — cryptococcal meningitis (มักพบใน HIV)\n- *ปกติทั้งหมด* — CSF ปกติ",
+  "pearl": "TB meningitis: lymphocyte 100–500 · โปรตีนสูงมาก · glucose ราวครึ่งหนึ่งของเลือด · CN VI palsy",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Laboratory profiles in body fluid analysis",
+   "MED32 MEQ — ไข้ 10 วัน ปวดหัว stiff neck, CSF protein 200, WBC 200 (L 90%), sugar 30/DTX 150, ADA 140 → TB meningitis"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "3.1.7",
+   "B3.2.2(1)",
+   "2.3.4(20)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-46",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Adjunctive corticosteroids in extrapulmonary TB",
+  "stem": "In which of the following patients, all starting standard anti-TB therapy, is adjunctive corticosteroid therapy most clearly indicated?",
+  "choices": [
+   "A 30-year-old man with tuberculous meningitis and drowsiness",
+   "A 25-year-old woman with tuberculous cervical lymphadenitis",
+   "A 40-year-old man with a moderate tuberculous pleural effusion",
+   "A 55-year-old woman with tuberculous spondylitis of L2–L3 without neurological deficit",
+   "A 45-year-old man with renal tuberculosis"
+  ],
+  "answer": 0,
+  "explain": "**ข้อบ่งชี้ steroid ในสไลด์อาจารย์**\n\n| ระดับ | ตำแหน่ง | เหตุผล |\n|---|---|---|\n| **Absolute** | **TB meningitis** | ลดการตายราว 25% (Cochrane) และช่วย paradoxical worsening หลังเริ่มยา |\n| Conditional | TB pericarditis | ลดการตายและลดการต้องเจาะหรือผ่าเยื่อหุ้มหัวใจ แนะนำเฉพาะ HIV ลบ (ESC 2015) |\n| **ไม่แนะนำ** | ต่อมน้ำเหลือง · เยื่อหุ้มปอด · กระดูกและกระดูกสันหลัง · ทางเดินปัสสาวะ | ไม่มีประโยชน์ชัด |\n\n**กลไก:** ใน TB meningitis ความเสียหายส่วนใหญ่มาจาก **การอักเสบของร่างกายเอง** ที่ฐานสมอง ทำให้หลอดเลือดอักเสบ (สมองขาดเลือด) และทางเดินน้ำไขสันหลังอุดตัน (hydrocephalus) steroid ลดการอักเสบเหล่านี้\n\nสูตรที่ใช้บ่อย: dexamethasone 0.3–0.4 mg/kg/day แล้วค่อย ๆ ลดใน 6–8 สัปดาห์",
+  "pearl": "Steroid: meningitis = ต้องให้ · pericarditis = พิจารณา (HIV ลบ) · อื่น ๆ = ไม่ให้",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Corticosteroid indications"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)",
+   "B3.2.2(1)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-47",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "HIV and extrapulmonary TB – what changes",
+  "stem": "A 32-year-old man newly diagnosed with HIV infection (CD4 45 cells/mm3) has 3 weeks of high fever and weight loss. He has hepatosplenomegaly, anaemia and thrombocytopenia. Chest radiograph shows innumerable 1–2 mm nodules in both lungs. Which statement is most accurate?",
+  "choices": [
+   "Disseminated (miliary) TB is far more common in HIV-positive than HIV-negative patients, and every TB patient should be tested for HIV",
+   "Pleural and spinal TB are the most typical sites in advanced HIV infection",
+   "A negative tuberculin skin test excludes TB in this patient",
+   "Sputum AFB smear is usually positive in miliary TB, so bronchoscopy and tissue sampling are unnecessary",
+   "Antiretroviral therapy should be started first and anti-TB treatment deferred until CD4 exceeds 200"
+  ],
+  "answer": 0,
+  "explain": "**ข้อมูลไทยในสไลด์ (Tawatcai, SEATROPH 2008): ภูมิคุ้มกันกำหนดว่าวัณโรคไปอยู่อวัยวะไหน**\n- **Disseminated TB: HIV บวก 87.5% vs HIV ลบ 12.5% (OR 41.5)** · TB สมอง/เยื่อหุ้มสมองก็พบมากขึ้นใน HIV\n- HIV ลบ: **เยื่อหุ้มปอด และกระดูกสันหลัง** เด่น (ราว 74%) ซึ่งต้องอาศัยการตอบสนองแบบ granuloma ที่ดี\n\n**สิ่งที่อาจารย์เขียนเน้น: ผู้ป่วย HIV ทุกรายต้องทำ CXR หาวัณโรค และผู้ป่วยวัณโรคทุกรายต้องตรวจ HIV** เพราะเปลี่ยนการรักษา (ยาปฏิสัมพันธ์กับ rifampicin, ระยะเวลาเริ่ม ART, co-trimoxazole prophylaxis)\n\n**ทำไมตัวลวงผิด**\n- *เยื่อหุ้มปอดและกระดูกสันหลัง* — กลับกัน เป็นแบบของ HIV ลบ\n- *TST ลบตัด TB ได้* — CD4 ต่ำ ร่างกายไม่ตอบสนองต่อ TST (anergy)\n- *Sputum smear มักบวกใน miliary* — ส่วนใหญ่ลบ ต้องอาศัยเพาะเชื้อ ชิ้นเนื้อ ไขกระดูก เลือด หรือ urine LAM\n- *เริ่ม ART ก่อน* — **เริ่มยาวัณโรคก่อน** แล้วเริ่ม ART ภายใน 2 สัปดาห์เมื่อ CD4 < 50 (ยกเว้น TB meningitis ที่รอ 4–8 สัปดาห์)",
+  "pearl": "HIV บวก → disseminated/miliary TB · HIV ลบ → เยื่อหุ้มปอด กระดูกสันหลัง · ผู้ป่วย TB ทุกรายต้องตรวจ HIV",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — HIV serostatus alters organ involvement"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)",
+   "B6.2.2(8)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-48",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Anti-TB drug toxicity – peripheral neuropathy",
+  "stem": "A 58-year-old man with diabetes and chronic alcohol use has been on 2HRZE for tuberculous lymphadenitis for 7 weeks. He now reports burning pain and numbness in both feet in a stocking distribution. Ankle reflexes are reduced. Liver function tests are normal and vision is unchanged. Which is the most appropriate action?",
+  "choices": [
+   "Continue anti-TB therapy and give pyridoxine 50–100 mg daily",
+   "Stop all anti-TB drugs until the symptoms resolve",
+   "Stop ethambutol permanently",
+   "Replace rifampicin with streptomycin",
+   "Stop pyrazinamide and extend treatment to 9 months"
+  ],
+  "answer": 0,
+  "explain": "**Isoniazid ทำให้ขาด pyridoxine (vitamin B6)** — INH จับกับ pyridoxal phosphate และเร่งการขับออกทางปัสสาวะ ทำให้เส้นประสาทส่วนปลายเสื่อม แบบถุงเท้าถุงมือ\n\n**กลุ่มเสี่ยงที่ควรได้ B6 ป้องกันตั้งแต่แรก:** เบาหวาน · ดื่มแอลกอฮอล์ · ขาดสารอาหาร · HIV · ไตวายเรื้อรัง · ตั้งครรภ์และให้นม · อายุมาก\n\n**สไลด์อาจารย์: H → peripheral neuropathy → pyridoxine 50–100 mg/day ใช้ทั้งรักษาและป้องกัน** โดยไม่ต้องหยุด INH ในอาการระดับนี้\n\n**แผนที่พิษของยาแนวแรกในสไลด์**\n| อวัยวะ | ยา |\n|---|---|\n| ตา — optic neuropathy | **E** |\n| หู — หูหนวก เวียนศีรษะ | **S** |\n| ตับ — ตับอักเสบ | **H, R, Z** (R ทำให้บิลิรูบินสูงแบบ cholestatic · Z ทำให้กรดยูริกสูง ปวดข้อ) |\n| ไต — AKI | **S** |\n| เลือด/ทั้งระบบ — จ้ำเลือด เกล็ดเลือดต่ำ ช็อก ไข้คล้ายไข้หวัดใหญ่ | **R** |\n| เส้นประสาทส่วนปลาย | **H** |\n\n**ทำไมตัวลวงผิด:** หยุดยาทั้งหมดทำให้เสี่ยงดื้อยา · ethambutol ทำพิษต่อเส้นประสาทตาไม่ใช่เท้า · ไม่มีเหตุให้เปลี่ยน rifampicin หรือหยุด pyrazinamide",
+  "pearl": "INH → ปลายประสาทอักเสบ → ให้ pyridoxine 50–100 mg/วัน ไม่ต้องหยุดยา",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Severe toxicity mapping of first-line drugs"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-49",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Anti-TB drug toxicity – loss of colour vision",
+  "stem": "A 50-year-old woman with chronic kidney disease (eGFR 32 mL/min/1.73 m2) is receiving 2HRZE for tuberculous pericarditis. After 6 weeks she reports blurred vision and difficulty distinguishing red from green. Visual acuity has fallen from 6/6 to 6/18 in both eyes. Which is the most appropriate action?",
+  "choices": [
+   "Stop ethambutol and refer urgently to an ophthalmologist",
+   "Stop isoniazid and give pyridoxine",
+   "Stop rifampicin because of drug interaction",
+   "Continue all drugs and recheck vision at the end of the intensive phase",
+   "Stop pyrazinamide and check serum uric acid"
+  ],
+  "answer": 0,
+  "explain": "**Ethambutol → optic neuritis (retrobulbar)** อาการแรกคือ **สูญเสียการแยกสีแดง-เขียว** ตามมาด้วยสายตาลดลงและลานสายตาผิดปกติ ขึ้นกับขนาดยา และ **ยาถูกขับทางไต** ดังนั้นในไตวายระดับยาจะสะสม (ต้องปรับเป็นให้สัปดาห์ละ 3 ครั้งเมื่อ CrCl < 30)\n\nสไลด์อาจารย์ระบุว่า E ทำให้ **สูญเสียการมองเห็นถาวรได้** จึงต้อง **หยุดยาทันที** และส่งจักษุแพทย์ ถ้าหยุดเร็ว ส่วนใหญ่ฟื้นตัว\n\n**ป้องกัน:** ตรวจสายตาและการแยกสี (Ishihara) ก่อนเริ่มยาและทุกเดือน ใช้ขนาด 15–20 mg/kg/day และปรับตามไต\n\n**ทำไมตัวลวงผิด:** INH ทำพิษต่อเส้นประสาทส่วนปลาย (optic neuritis จาก INH พบได้แต่น้อยมาก) · rifampicin และ pyrazinamide ไม่ทำพิษต่อเส้นประสาทตา · การรอดูทำให้ตาบอดถาวรได้",
+  "pearl": "Ethambutol → ตาบอดสีแดง-เขียว → หยุดยาทันที ต้องปรับขนาดในไตวาย",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561 — Severe toxicity mapping (Eye — E)",
+   "MED31 — ได้ 2HRZE/4HR แล้วตามัวทั้งสองข้าง → หยุด ethambutol และปรึกษาจักษุแพทย์"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)"
+  ]
+ },
+ {
+  "id": "CH-MCQ-50",
+  "lec": "TB2",
+  "lecture": "Extrapulmonary tuberculosis (อ.ภานุวัฒน์)",
+  "topic": "Tuberculous pericarditis – steroids depend on HIV status",
+  "stem": "A 36-year-old HIV-negative man has 2 weeks of fever, dyspnoea and chest discomfort. Echocardiography shows a large pericardial effusion without tamponade. Pericardial fluid is exudative, lymphocyte-predominant, with ADA 68 U/L. Which is the most appropriate treatment?",
+  "choices": [
+   "2HRZE/4HR plus adjunctive prednisolone",
+   "2HRZE/4HR without steroids, with pericardiectomy performed immediately",
+   "2HRZE/10HR because pericardial TB requires 12 months",
+   "High-dose aspirin and colchicine only",
+   "Prednisolone alone until the effusion resolves, then start anti-TB drugs"
+  ],
+  "answer": 0,
+  "explain": "**TB pericarditis ตามสไลด์อาจารย์**\n- ระยะเวลา: กลุ่ม **6 เดือน (2HRZE/4HR)** เช่นเดียวกับต่อมน้ำเหลือง เยื่อหุ้มปอด และทางเดินปัสสาวะ\n- Steroid: **conditional** — ลดการตายและลดการต้องเจาะหรือผ่าเยื่อหุ้มหัวใจ **แนะนำใน HIV ลบ** (ESC 2015) ใน HIV บวก steroid สัมพันธ์กับ Kaposi sarcoma มากขึ้น (IMPI trial)\n- ADA ในน้ำเยื่อหุ้มหัวใจค่าตัด **40–45 U/L** เหมือนเยื่อหุ้มปอด\n\n**ภาวะแทรกซ้อนระยะยาว:** constrictive pericarditis — วัณโรคเป็นสาเหตุอันดับหนึ่งในประเทศไทย\n\n**ทำไมตัวลวงผิด**\n- *Pericardiectomy ทันที* — ทำเมื่อเกิด constriction ที่ไม่ดีขึ้นด้วยยา ไม่ใช่ขั้นแรก\n- *12 เดือน* — ใช้กับ TB meningitis\n- *Aspirin + colchicine* — รักษา viral/idiopathic pericarditis ไม่ได้ฆ่าเชื้อวัณโรค\n- *Steroid อย่างเดียว* — ห้ามให้กดภูมิโดยไม่มียาวัณโรค เชื้อจะลุกลาม",
+  "pearl": "TB pericarditis = 2HRZE/4HR ± prednisolone (HIV ลบ) · ภาวะแทรกซ้อนระยะยาวคือ constrictive pericarditis",
+  "ref": [
+   "สไลด์ อ.ภานุวัฒน์ — Extrapulmonary TB: The Hidden Pathogen (พ. 23 ก.ย. 2569) · แนวทางวัณโรคประเทศไทย 2561"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4(20)",
+   "B7.2.2-3(3)"
+  ]
+ }
+]

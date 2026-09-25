@@ -2,7 +2,7 @@
 
 3 คาบบรรยาย · Allergy/Immunology/Rheumatology — แพ้ยา anaphylaxis · gout/CPPD/septic arthritis · SLE RA vasculitis myositis
 
-ข้อใหม่: MCQ 50 · MEQ/OSCE 10 · คลังข้อสอบเก่า 50 ข้อ
+ข้อใหม่: MCQ 50 · MEQ/OSCE 10 · คลังข้อสอบเก่า 56 ข้อ
 เฉลยเป็นตัวอักษรตรงกับเว็บและ PDF (ตัวเลือกถูกสลับด้วย seed ของชุดแล้ว)
 
 ---
@@ -2180,7 +2180,7 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
 
 ## ส่วนที่ 3 · คลังข้อสอบเก่า MED28–MED35
 
-## Lec 08 · Allergy and clinical immunology (18 ข้อ)
+## Lec 08 · Allergy and clinical immunology (23 ข้อ)
 
 ### [AIR-OLD-01] ข้อสอบเก่า
 Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
@@ -2565,6 +2565,142 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.3.13-3(15) — Systemic lupus erythematosus [กลุ่มที่ 3] · 2.3.13 Disorders of the musculoskeletal system and connective tissue หน้า 67
   - NL B5.3(5) — Serologic studies: antinuclear antibody (ANA), rheumatoid factor · B5.3 การสืบค้นโรคและการแปลผล หน้า 28
 
+### [AIR-OLDP-001] ข้อสอบเก่า
+Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
+
+Q: A patient has recovered from anaphylactic shock and is being discharged. Which is the most appropriate management to arrange at discharge?
+
+A. Give a daily antihistamine injection
+B. Refer every patient for allergen immunotherapy before discharge
+C. Prescribe an adrenaline (epinephrine) auto-injector and teach the patient to self-inject
+D. Start a daily inhaled corticosteroid
+E. Start long-term daily oral prednisolone
+
+ANSWER: C. Prescribe an adrenaline (epinephrine) auto-injector and teach the patient to self-inject
+
+EXPLAIN:
+เฉลย: สั่ง adrenaline auto-injector ("พกปากกา") พร้อมสอนวิธีใช้
+
+เหตุผล: adrenaline เป็นยาเดียวที่ลดอัตราตายจาก anaphylaxis ออกฤทธิ์ผ่าน alpha-1 (vasoconstriction แก้ hypotension และ mucosal edema), beta-1 (เพิ่ม inotropy/chronotropy) และ beta-2 (bronchodilation และยับยั้ง mediator release จาก mast cell) เนื่องจากปฏิกิริยาครั้งต่อไปอาจเกิดเร็วและรุนแรงกว่าเดิม ผู้ป่วยทุกรายที่เคยมี anaphylaxis จึงต้องได้ auto-injector กลับบ้าน (พิจารณา 2 เข็ม) ฝึกฉีดเข้ากล้าม vastus lateralis ด้านข้างต้นขา พร้อมกับ (1) ระบุและหลีกเลี่ยงสิ่งกระตุ้น (2) เขียน written anaphylaxis action plan และให้โทรเรียกรถพยาบาลทุกครั้งหลังฉีด (3) สังเกตอาการในโรงพยาบาลก่อน d/c เพราะมี biphasic reaction ได้ (4) ส่งปรึกษา allergist เพื่อหาสาเหตุ (specific IgE/skin test, serum tryptase)
+
+ทำไมตัวเลือกอื่นไม่ใช่:
+- ฉีด antihistamine ทุกวัน: antihistamine แก้ได้เพียงผื่นและคัน ไม่แก้ airway obstruction หรือ shock และไม่มีข้อบ่งชี้ให้ฉีดต่อเนื่องทุกวัน — เป็นตัวลวงที่โพยบันทึกไว้คู่กัน
+- Prednisolone ระยะยาว: ไม่มีหลักฐานว่าป้องกัน biphasic reaction หรือ anaphylaxis ครั้งต่อไป แต่ทำให้เกิดผลข้างเคียงจากสเตียรอยด์
+- Inhaled corticosteroid: เป็นยาควบคุมโรคหืด ไม่ใช่การป้องกัน anaphylaxis
+- Allergen immunotherapy ทุกราย: มีที่ใช้เฉพาะบางกรณีเช่น venom immunotherapy หรือ aeroallergen และต้องประเมินโดยผู้เชี่ยวชาญก่อน ไม่ใช่มาตรการแรกตอนจำหน่าย
+
+หมายเหตุ: โพยบันทึกเฉพาะตัวเลือก 2 ข้อ ("พกปากกา", "ฉีด antihistamine ทุกวัน") และไม่ได้วงคำตอบ แต่คำตอบที่ถูกตามแนวทางคือ adrenaline auto-injector
+
+REF: MED34 · [MED34] 45. Anaphylactic shock d/c แล ้วทําไรต่อ > พกปากกา, ฉีด antihistamine ทุกวัน
+
+### [AIR-OLDP-002] ข้อสอบเก่า
+Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
+
+Q: A patient with an allergic reaction develops generalised swelling with itchy weals (urticaria and angio-oedema). Which mechanism is responsible?
+
+A. Mast cell degranulation with histamine release
+B. IgG-mediated cytotoxic destruction of target cells
+C. T-lymphocyte mediated delayed hypersensitivity
+D. Bradykinin accumulation from C1-esterase inhibitor deficiency
+E. Immune complex deposition in vessel walls
+
+ANSWER: A. Mast cell degranulation with histamine release
+
+EXPLAIN:
+เฉลย: mast cell degranulation (ปล่อย histamine)
+
+กลไก: ลมพิษคัน + ตัวบวมจากการแพ้คือ type I (immediate) hypersensitivity — allergen จับ specific IgE ที่ติดอยู่กับ FcεRI บนผิว mast cell ทำให้เกิด cross-linking → Ca เข้าเซลล์ → degranulation ปล่อย histamine, tryptase และสร้าง leukotriene, prostaglandin, PAF ตามมา → vasodilatation และเพิ่ม vascular permeability ที่ชั้น dermis เกิด wheal คัน (urticaria) ถ้าลึกถึง deep dermis/subcutaneous ก็เป็น angio-oedema
+การรักษา: second-generation H1-antihistamine เป็นหลัก และ adrenaline IM ทันทีถ้ามี anaphylaxis (หลอดลมตีบ/ความดันต่ำ)
+
+เหตุที่ตัวเลือกอื่นผิด:
+- Immune complex deposition คือ type III (serum sickness, vasculitis) ผื่นเป็น palpable purpura อยู่นานหลายวัน ไม่ใช่ลมพิษที่ย้ายที่ได้ใน 24 ชั่วโมง
+- T-lymphocyte mediated delayed hypersensitivity คือ type IV (contact dermatitis, tuberculin reaction) ผื่นเป็น eczema เกิดหลังสัมผัส 24-72 ชั่วโมง
+- Bradykinin จาก C1-esterase inhibitor deficiency คือ hereditary angioedema — บวมโดยไม่มีลมพิษและไม่คัน ไม่ตอบสนองต่อ antihistamine/steroid (กลไกนี้พบใน ACEI-induced angioedema ด้วย)
+- IgG-mediated cytotoxic reaction คือ type II (AIHA, ITP, Goodpasture) ทำลายเซลล์เป้าหมาย ไม่ทำให้เกิดลมพิษ
+
+REF: MED31 · 52.แพ ้ตัวบวม ผืนคัน เกิดจากอะไร
+ตอบ mast cell degranulation
+
+### [AIR-OLDP-003] ข้อสอบเก่า
+Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
+
+Q: A woman with a known seafood allergy develops an itchy, scaly eczematous rash on both earlobes at the sites where her earrings touch the skin. Which test should be used to identify the cause of this rash?
+
+A. Oral food challenge
+B. Skin prick test
+C. Serum allergen-specific IgE
+D. Patch test
+E. Intradermal skin test
+
+ANSWER: D. Patch test
+
+EXPLAIN:
+เฉลย: patch test
+
+กลไก: ผื่นเรื้อรังคันตรงตำแหน่งที่ตุ้มหูสัมผัสผิวหนังคือ allergic contact dermatitis ซึ่งส่วนใหญ่แพ้ nickel เป็น delayed-type hypersensitivity (type IV, T-cell mediated) — hapten ซึมผ่านผิวหนัง จับกับโปรตีน ถูก Langerhans cell นำเสนอให้ memory T cell → ผื่นเกิดหลังสัมผัส 24-72 ชั่วโมง การตรวจที่ตรงกลไกคือ patch test คือปิดแผ่นสารทดสอบไว้ 48 ชั่วโมง แล้วอ่านผลที่ 48 และ 96 ชั่วโมง
+จุดหลอกของข้อนี้: ประวัติแพ้อาหารทะเลเป็น type I (IgE-mediated) แต่โจทย์ถามหาสาเหตุของ 'ผื่นจากตุ้มหู' ไม่ใช่การแพ้อาหาร จึงต้องเลือกการตรวจของ type IV
+
+เหตุที่ตัวเลือกอื่นผิด:
+- Skin prick test และ serum allergen-specific IgE ใช้ตรวจ IgE-mediated immediate reaction (อาหาร ไรฝุ่น ละอองเกสร) อ่านผลใน 15-20 นาที ตรวจ contact dermatitis ไม่ได้
+- Intradermal skin test ใช้ในกรณี drug allergy หรือ venom allergy (และใช้ทดสอบ TB แบบ tuberculin) ไม่ใช้กับ contact allergen
+- Oral food challenge เป็น gold standard ของ food allergy แต่ไม่เกี่ยวกับผื่นสัมผัสจากตุ้มหู และมีความเสี่ยง anaphylaxis
+
+หมายเหตุการอ่านโพย: ต้นฉบับพิมพ์ว่า 'ต ้มหู' ซึ่งตกสระตามทั้งไฟล์ (เช่น ผืน = ผื่น, นิวมือ = นิ้วมือ) อ่านได้ว่า 'ตุ้มหู' = ต่างหู สอดคล้องกับคำตอบ patch test
+
+REF: MED31 · 51.แพ ้อาหารทะเล แพ ้ต ้มหู test อะไร
+ตอบ patch test
+
+### [AIR-OLDP-004] ข้อสอบเก่า
+Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
+
+Q: Allergen-induced urticaria is mediated by which type of hypersensitivity reaction?
+
+A. Type IVb (Th2 and eosinophil-mediated)
+B. Type III (immune complex-mediated)
+C. Type I (IgE-mediated immediate hypersensitivity)
+D. Type IV (delayed, T-cell mediated)
+E. Type II (antibody-mediated cytotoxicity)
+
+ANSWER: C. Type I (IgE-mediated immediate hypersensitivity)
+
+EXPLAIN:
+เฉลย: Type I (IgE-mediated immediate hypersensitivity)
+
+กลไก: หลังจาก sensitization ร่างกายสร้าง allergen-specific IgE ซึ่งไปจับกับ FcεRI บนผิว mast cell ในชั้น dermis และ basophil เมื่อพบ allergen อีกครั้ง allergen จะ cross-link IgE สองโมเลกุล → mast cell degranulation ปล่อย histamine, tryptase, leukotriene และ prostaglandin ภายในไม่กี่นาที histamine ออกฤทธิ์ผ่าน H1 receptor ทำให้ vasodilation (erythema/flare), เพิ่ม vascular permeability ที่ superficial dermis เกิด wheal บวมนูนคัน และกระตุ้นปลายประสาทให้คัน ผื่นแต่ละผื่นอยู่ไม่เกิน 24 ชั่วโมงและย้ายที่ได้ ตอบสนองต่อ second-generation H1-antihistamine (ถ้าบวมลึกถึง deep dermis/subcutaneous คือ angioedema กลไกเดียวกัน)
+
+ทำไมตัวเลือกอื่นไม่ใช่:
+- Type II: แอนติบอดีจับ antigen บนผิวเซลล์แล้วทำลายเซลล์ เช่น AIHA, ITP, Goodpasture, acute hemolytic transfusion reaction — ไม่ใช่ผื่นลมพิษเฉียบพลัน
+- Type III: immune complex ตกที่หลอดเลือดเล็ก เช่น serum sickness, SLE, urticarial vasculitis ซึ่งผื่นจะอยู่นานกว่า 24 ชั่วโมง มี purpura และทิ้งรอยคล้ำ ต่างจาก urticaria แท้
+- Type IV: delayed T-cell mediated ใช้เวลา 48–72 ชั่วโมง เช่น allergic contact dermatitis, tuberculin reaction, maculopapular drug rash, SJS/TEN
+- Type IVb: Th2/eosinophil-driven ซึ่งอธิบาย DRESS และ eosinophilic drug reaction ไม่ใช่ wheal ที่เกิดในนาที
+
+หมายเหตุ: chronic spontaneous urticaria ส่วนใหญ่กลไกต่างออกไป คือ autoimmune (IgG ต่อ IgE หรือต่อ FcεRI ซึ่งจัดเป็น type IIb) แต่โจทย์ถาม urticaria ในกรอบ classic Gell–Coombs จึงตอบ type I ตามที่โพยบันทึก
+
+REF: MED34 · [MED34] 44. Urticaria hypersensitivity type 1
+
+### [AIR-OLDP-005] ข้อสอบเก่า
+Lecture: 08 Allergy and clinical immunology · TBD — แก้ใน config.lectures
+
+Q: Urticaria is classified as chronic when recurrent wheals have been present for at least how long?
+
+A. 6 weeks
+B. 4 weeks
+C. 8 weeks
+D. 12 weeks
+E. 2 weeks
+
+ANSWER: A. 6 weeks
+
+EXPLAIN:
+เฉลย: 6 สัปดาห์ (6 wk) — โพยบันทึกเฉลยไว้ตรงกับแนวทางปัจจุบัน (EAACI/GA²LEN/EuroGuiDerm/WAO)
+
+กลไก/หลักการ: urticaria คือผื่น wheal ที่เกิดจาก mast cell degranulation ปล่อย histamine ทำให้ plasma รั่วออกจาก postcapillary venule ในชั้น dermis ผื่นแต่ละตุ่มอยู่ไม่เกิน 24 ชั่วโมงแล้วหายไปโดยไม่ทิ้งรอย เส้นแบ่งเวลาที่ 6 สัปดาห์ใช้แยกกลุ่มโรคเชิงกลไกและเชิงการรักษา — ถ้าเป็นไม่เกิน 6 สัปดาห์ (acute urticaria) ส่วนใหญ่มีตัวกระตุ้นชัดเจน เช่น การติดเชื้อไวรัส ยา (NSAIDs, ยาปฏิชีวนะ) อาหาร แมลงกัดต่อย และหายเอง ไม่ต้องสืบค้นมาก; ถ้าเกิน 6 สัปดาห์ (chronic urticaria) มักเป็น chronic spontaneous urticaria ที่มีกลไก autoimmune/autoallergic (IgG anti-IgE receptor หรือ IgE ต่อ autoantigen) ตรวจเพิ่มแค่ CBC, ESR/CRP และให้ second-generation H1-antihistamine ต่อเนื่อง แล้ว step-up ด้วยการเพิ่มขนาดยาได้ถึง 4 เท่า ก่อนไปถึง omalizumab หรือ cyclosporine
+
+เหตุที่ตัวเลือกอื่นผิด: 2 สัปดาห์และ 4 สัปดาห์ยังอยู่ในช่วง acute urticaria ทั้งคู่ ยังไม่เข้านิยาม chronic; 8 สัปดาห์เป็นเกณฑ์ของ chronic cough (และ chronic diarrhoea ใช้ 4 สัปดาห์) นักศึกษามักจำสลับกัน; 12 สัปดาห์เป็นเกณฑ์เวลาที่ใช้ในโรคอื่น เช่น persistent ITP/chronic ITP และ CKD จึงเป็นตัวลวงที่ฟังดูคุ้นแต่ไม่ใช่เกณฑ์ของลมพิษ
+
+REF: MED35 · MED35 / MCQ (50ข้อ) ชุดที่ 3 · [MED35] 3. Chronic urticaria คือกี่วัน
+ตอบ: 6 wk
+
 ## Lec 23 · Approach to arthritis / crystal and infective arthropathy (15 ข้อ)
 
 ### [AIR-OLD-19] ข้อสอบเก่า
@@ -2572,11 +2708,11 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: Synovial fluid from a painful knee contains rhomboid-shaped crystals that are weakly positively birefringent under polarized light. What is the diagnosis?
 
-A. Gout
-B. Hydroxyapatite deposition disease
+A. Rheumatoid arthritis
+B. Septic arthritis
 C. Calcium pyrophosphate deposition disease (pseudogout)
-D. Rheumatoid arthritis
-E. Septic arthritis
+D. Hydroxyapatite deposition disease
+E. Gout
 
 ANSWER: C. Calcium pyrophosphate deposition disease (pseudogout)
 
@@ -2595,10 +2731,10 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 Q: In the same patient with pseudogout of the knee, which additional synovial fluid profile is expected?
 
 A. Inflammatory fluid with WBC 2,000-50,000/mm3, predominantly neutrophils, and reduced viscosity
-B. Clear fluid with normal viscosity and WBC below 200/mm3
-C. Purulent fluid with WBC above 100,000/mm3 and positive Gram stain
-D. Bloody fluid with fat globules
-E. Non-inflammatory fluid with WBC below 2,000/mm3 and high viscosity
+B. Non-inflammatory fluid with WBC below 2,000/mm3 and high viscosity
+C. Bloody fluid with fat globules
+D. Purulent fluid with WBC above 100,000/mm3 and positive Gram stain
+E. Clear fluid with normal viscosity and WBC below 200/mm3
 
 ANSWER: A. Inflammatory fluid with WBC 2,000-50,000/mm3, predominantly neutrophils, and reduced viscosity
 
@@ -2616,13 +2752,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 50-year-old man with acute pain of the first metatarsophalangeal joint has synovial fluid showing needle-shaped, strongly negatively birefringent crystals. What is the diagnosis?
 
-A. Osteoarthritis with effusion
-B. Pseudogout
+A. Psoriatic arthritis
+B. Acute gouty arthritis
 C. Reactive arthritis
-D. Acute gouty arthritis
-E. Psoriatic arthritis
+D. Osteoarthritis with effusion
+E. Pseudogout
 
-ANSWER: D. Acute gouty arthritis
+ANSWER: B. Acute gouty arthritis
 
 EXPLAIN:
 **เข็ม + negative birefringent (เหลืองเมื่อขนานแกน compensator) = monosodium urate → gout**; ตำแหน่งโคนนิ้วหัวแม่เท้าเรียก **podagra**; การพบผลึก **ภายในเซลล์เม็ดเลือดขาว** ยืนยันว่าเป็นสาเหตุของการอักเสบครั้งนี้จริง
@@ -2638,11 +2774,11 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: Which drug is the most appropriate first-line treatment for an acute gout flare in a patient with peptic ulcer disease?
 
-A. Allopurinol
-B. Naproxen
+A. Naproxen
+B. Indomethacin
 C. Colchicine
-D. Aspirin
-E. Indomethacin
+D. Allopurinol
+E. Aspirin
 
 ANSWER: C. Colchicine
 
@@ -2661,10 +2797,10 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 Q: A patient on anti-tuberculous therapy develops joint pain with a serum uric acid of 10 mg/dL. Which drug is responsible?
 
 A. Pyrazinamide
-B. Rifampicin
+B. Isoniazid
 C. Ethionamide
 D. Streptomycin
-E. Isoniazid
+E. Rifampicin
 
 ANSWER: A. Pyrazinamide
 
@@ -2682,13 +2818,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A patient with a hot swollen knee has synovial fluid Gram stain showing gram-positive cocci in clusters. What is the most appropriate antibiotic?
 
-A. Oral doxycycline
-B. Intravenous ceftriaxone
-C. Intravenous cloxacillin
-D. Intravenous metronidazole
-E. Oral amoxicillin
+A. Intravenous metronidazole
+B. Intravenous cloxacillin
+C. Oral amoxicillin
+D. Oral doxycycline
+E. Intravenous ceftriaxone
 
-ANSWER: C. Intravenous cloxacillin
+ANSWER: B. Intravenous cloxacillin
 
 EXPLAIN:
 **GPC in clusters = Staphylococcus aureus** ซึ่งเป็นเชื้อที่พบบ่อยที่สุดของ septic arthritis ในผู้ใหญ่ → **cloxacillin หรือ cefazolin สำหรับ MSSA** (ถ้าเสี่ยง MRSA ให้ vancomycin ไปก่อน) และต้อง **ระบายหนองออกจากข้อ** ควบคู่เสมอ มิฉะนั้นกระดูกอ่อนถูกทำลายถาวร
@@ -2707,8 +2843,8 @@ Q: A patient with septic arthritis on intravenous cloxacillin for 12 days is cli
 A. Recognize drug-induced neutropenia and switch to another effective antibiotic class with monitoring
 B. Continue the same antibiotic and repeat the count in 1 month
 C. Stop all antibiotics and observe
-D. Add granulocyte colony-stimulating factor and continue the same drug
-E. Perform bone marrow biopsy before any change
+D. Perform bone marrow biopsy before any change
+E. Add granulocyte colony-stimulating factor and continue the same drug
 
 ANSWER: A. Recognize drug-induced neutropenia and switch to another effective antibiotic class with monitoring
 
@@ -2725,13 +2861,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 45-year-old man presents with acute arthritis. Which of the following history items is most important to obtain?
 
-A. Only current occupation
-B. Sexual history, alcohol intake, recent infection and family history of arthritis
-C. Only a history of previous trauma
-D. Only the response to paracetamol
+A. Sexual history, alcohol intake, recent infection and family history of arthritis
+B. Only the response to paracetamol
+C. Only current occupation
+D. Only a history of previous trauma
 E. Only the duration of pain
 
-ANSWER: B. Sexual history, alcohol intake, recent infection and family history of arthritis
+ANSWER: A. Sexual history, alcohol intake, recent infection and family history of arthritis
 
 EXPLAIN:
 โพยเก่าตอบ **'sex, drinking, smoking, family'** — เหตุผลคือประวัติแต่ละข้อชี้โรคคนละโรค: **เพศสัมพันธ์** → gonococcal arthritis และ reactive arthritis, **สุรา** → เก๊าท์และ osteonecrosis, **การติดเชื้อทางเดินอาหาร/ปัสสาวะนำมาก่อน** → reactive arthritis, **ประวัติครอบครัว** → RA, spondyloarthropathy, สะเก็ดเงิน; บวก **ยาที่ใช้** (thiazide, pyrazinamide) และ **ประวัติฉีดยาเข้าเส้น**
@@ -2747,11 +2883,11 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 60-year-old woman has bilateral knee pain worse with walking, relieved by rest, with 10 minutes of morning stiffness and bony enlargement of the distal interphalangeal joints. ANA and rheumatoid factor are negative. Radiograph shows joint space narrowing with osteophytes. What is the diagnosis?
 
-A. Psoriatic arthritis
-B. Rheumatoid arthritis
+A. Systemic lupus erythematosus
+B. Polymyalgia rheumatica
 C. Osteoarthritis
-D. Polymyalgia rheumatica
-E. Systemic lupus erythematosus
+D. Psoriatic arthritis
+E. Rheumatoid arthritis
 
 ANSWER: C. Osteoarthritis
 
@@ -2769,13 +2905,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 46-year-old woman has symmetric swelling of the MCP and PIP joints of both hands with morning stiffness of more than 30 minutes for 4 months. What is the most likely diagnosis?
 
-A. Rheumatoid arthritis
-B. Reactive arthritis
+A. Reactive arthritis
+B. Septic arthritis
 C. Gouty arthritis
-D. Septic arthritis
+D. Rheumatoid arthritis
 E. Osteoarthritis
 
-ANSWER: A. Rheumatoid arthritis
+ANSWER: D. Rheumatoid arthritis
 
 EXPLAIN:
 **ข้อเล็กสองข้างสมมาตร + ฝืดเช้านาน + เป็นเรื้อรังเกิน 6 สัปดาห์ = RA**; โพยเก่าใช้เกณฑ์ 'morning stiffness > 30 นาที' แต่เกณฑ์ ACR/EULAR 2010 ให้น้ำหนักกับ **จำนวนและขนาดของข้อที่บวม ระยะเวลา ≥ 6 สัปดาห์ RF/anti-CCP และ ESR/CRP** — ฝืดเช้าเป็นเพียงลักษณะประกอบที่บ่งว่าเป็น inflammatory
@@ -2791,13 +2927,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: Which radiographic finding is most characteristic of long-standing tophaceous gout?
 
-A. Bamboo spine
-B. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
-C. Marginal erosion with periarticular osteopenia and uniform joint space narrowing
-D. Chondrocalcinosis of the menisci
+A. Marginal erosion with periarticular osteopenia and uniform joint space narrowing
+B. Chondrocalcinosis of the menisci
+C. Bamboo spine
+D. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
 E. Osteophyte with subchondral sclerosis
 
-ANSWER: B. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
+ANSWER: D. Punched-out erosion with sclerotic margin and overhanging edge, with preserved joint space
 
 EXPLAIN:
 **Punched-out erosion + overhanging edge + ช่องข้อกว้างปกติ = chronic gout**; marginal erosion + periarticular osteopenia = RA; osteophyte = OA; **chondrocalcinosis = CPPD**; bamboo spine = ankylosing spondylitis
@@ -2814,10 +2950,10 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 Q: Which of the following is an indication to start urate-lowering therapy?
 
 A. Presence of tophi or two or more gout flares per year
-B. A single gout flare in a young patient
-C. Family history of gout alone
-D. Dietary purine excess alone
-E. Asymptomatic hyperuricemia of 8 mg/dL
+B. Asymptomatic hyperuricemia of 8 mg/dL
+C. A single gout flare in a young patient
+D. Family history of gout alone
+E. Dietary purine excess alone
 
 ANSWER: A. Presence of tophi or two or more gout flares per year
 
@@ -2835,13 +2971,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 70-year-old man on hemodialysis develops an acutely painful shoulder. Aspiration shows no crystals under polarized light but the fluid contains clumps that stain with alizarin red. What is the most likely diagnosis?
 
-A. Basic calcium phosphate (hydroxyapatite) associated arthritis
+A. Gout
 B. Rotator cuff tear
 C. Septic arthritis
-D. Pseudogout
-E. Gout
+D. Basic calcium phosphate (hydroxyapatite) associated arthritis
+E. Pseudogout
 
-ANSWER: A. Basic calcium phosphate (hydroxyapatite) associated arthritis
+ANSWER: D. Basic calcium phosphate (hydroxyapatite) associated arthritis
 
 EXPLAIN:
 **Hydroxyapatite ไม่หักเหแสงใน polarized light จึง 'มองไม่เห็น' ต้องย้อม alizarin red** — พบในผู้ป่วยไตวายเรื้อรังและกลุ่มอาการ **Milwaukee shoulder** (ข้อไหล่ถูกทำลายพร้อมน้ำในข้อปริมาณมาก); รักษาตามอาการด้วย NSAID/สเตียรอยด์และคุมสมดุลแคลเซียม-ฟอสเฟต
@@ -2856,11 +2992,11 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A 30-year-old sexually active man has migratory polyarthralgia, tenosynovitis of the wrist and a few pustular skin lesions, then develops a hot swollen knee. What is the most likely organism?
 
-A. Salmonella species
-B. Mycobacterium tuberculosis
+A. Mycobacterium tuberculosis
+B. Staphylococcus aureus
 C. Neisseria gonorrhoeae
-D. Streptococcus pyogenes
-E. Staphylococcus aureus
+D. Salmonella species
+E. Streptococcus pyogenes
 
 ANSWER: C. Neisseria gonorrhoeae
 
@@ -2878,13 +3014,13 @@ Lecture: 23 Approach to arthritis / crystal and infective arthropathy · TBD —
 
 Q: A patient with acute pericarditis has pleuritic chest pain relieved by leaning forward. Which drug combination is first-line?
 
-A. Colchicine alone
+A. Aspirin or an NSAID plus colchicine
 B. Anticoagulant plus an NSAID
 C. Antibiotics alone
-D. Aspirin or an NSAID plus colchicine
+D. Colchicine alone
 E. Corticosteroid alone
 
-ANSWER: D. Aspirin or an NSAID plus colchicine
+ANSWER: A. Aspirin or an NSAID plus colchicine
 
 EXPLAIN:
 โพยเก่าให้ตัวเลือก 'colchicine alone' กับ 'ASA + colchicine' — **คำตอบคือ NSAID/aspirin ร่วมกับ colchicine** เพราะ colchicine ลดอาการและลดการเป็นซ้ำอย่างชัดเจน (ESC 2015) ส่วน **สเตียรอยด์เพิ่มการกลับเป็นซ้ำ** จึงสงวนไว้เมื่อมีข้อห้ามหรือเป็นจากโรคภูมิต้านตนเอง และ **ห้ามให้ยาต้านการแข็งตัวของเลือดโดยไม่จำเป็น** เพราะเสี่ยง hemopericardium
@@ -2894,7 +3030,7 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.3.13(1) — Costochondritis [กลุ่มที่ 2] · 2.3.13 Disorders of the musculoskeletal system and connective tissue หน้า 67
   - NL B5.4(1) — Non-steroidal anti-inflammatory drugs · B5.4 หลักการใช้ยาอย่างสมเหตุผล หน้า 28
 
-## Lec 33 · Connective tissue diseases and vasculitis (17 ข้อ)
+## Lec 33 · Connective tissue diseases and vasculitis (18 ข้อ)
 
 ### [AIR-OLD-34] ข้อสอบเก่า
 Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน config.lectures
@@ -2902,12 +3038,12 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A patient with features of systemic sclerosis has a negative ANA on the standard screening assay. Which test should be sent next?
 
 A. Anti-double-stranded DNA
-B. Erythrocyte sedimentation rate
-C. Anti-histone antibody
-D. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+B. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+C. Erythrocyte sedimentation rate
+D. Anti-histone antibody
 E. Rheumatoid factor
 
-ANSWER: D. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
+ANSWER: B. Anti-topoisomerase I (anti-Scl-70) and anticentromere antibodies
 
 EXPLAIN:
 โพยเก่าให้ตัวเลือก ESR / anti-dsDNA / RF — ทั้งสามไม่ช่วยวินิจฉัย systemic sclerosis; **ANA ที่ลบไม่ตัดโรคออกเมื่อคลินิกชัด** ต้องส่ง **antibody จำเพาะ**: anti-Scl-70 (สัมพันธ์กับ ILD), anticentromere (limited SSc, ความดันปอดสูง), anti-RNA polymerase III (renal crisis) และประเมินอวัยวะด้วย HRCT, PFT, echocardiography
@@ -2923,13 +3059,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A patient with diffuse systemic sclerosis recently started on prednisolone develops blood pressure 210/120 mmHg, acute kidney injury and schistocytes on blood smear. Which drug should be started immediately?
 
-A. Captopril
-B. Labetalol
-C. Nifedipine
+A. Labetalol
+B. Captopril
+C. Furosemide
 D. Hydralazine
-E. Furosemide
+E. Nifedipine
 
-ANSWER: A. Captopril
+ANSWER: B. Captopril
 
 EXPLAIN:
 **Scleroderma renal crisis** เกิดจาก renin-angiotensin ที่ถูกกระตุ้นอย่างรุนแรง — **ACE inhibitor ออกฤทธิ์สั้น (captopril) คือยาที่ช่วยชีวิต** ปรับขนาดขึ้นเร็วทุก 4-8 ชั่วโมง **ห้ามหยุดแม้ creatinine จะสูงขึ้นในช่วงแรก**; **สเตียรอยด์ตั้งแต่ 15 mg/วันขึ้นไปเป็นตัวกระตุ้นสำคัญ** จึงควรเลี่ยงใน SSc
@@ -2945,12 +3081,12 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A 58-year-old man on simvastatin complains of symmetric proximal muscle aching. Which investigation should be ordered first?
 
 A. Electromyography
-B. Nerve conduction study
+B. Serum creatine kinase
 C. Serum aldolase only
-D. Serum creatine kinase
-E. Muscle biopsy
+D. Muscle biopsy
+E. Nerve conduction study
 
-ANSWER: D. Serum creatine kinase
+ANSWER: B. Serum creatine kinase
 
 EXPLAIN:
 โพยเก่าตอบ **CPK (creatine kinase)** — เป็นตัวแยกระหว่าง myalgia (CK ปกติ), myopathy (CK สูง > 10 เท่า), **rhabdomyolysis** (CK สูงมาก + ปัสสาวะสีเข้ม + ไตวาย) และ immune-mediated necrotizing myopathy (CK สูงและไม่ดีขึ้นหลังหยุดยา → ส่ง anti-HMGCR); อย่าลืมตรวจ **TSH** และทบทวนยาที่ยับยั้ง CYP3A4 เช่น clarithromycin, itraconazole, gemfibrozil
@@ -2966,13 +3102,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A patient has proximal muscle weakness with AST 1,000 U/L but normal ALT, ALP and GGT. What is the most appropriate next investigation?
 
-A. Serum ammonia
-B. Liver biopsy
-C. Creatine kinase
+A. Abdominal ultrasound
+B. Creatine kinase
+C. Serum ammonia
 D. Hepatitis serology
-E. Abdominal ultrasound
+E. Liver biopsy
 
-ANSWER: C. Creatine kinase
+ANSWER: B. Creatine kinase
 
 EXPLAIN:
 **AST อยู่ในกล้ามเนื้อลายด้วย** จึงสูงได้จากโรคกล้ามเนื้อโดยที่ตับปกติ — เบาะแสคือ **ALP และ GGT ปกติ** และมีอาการอ่อนแรงส่วนต้น ให้ยืนยันด้วย **CK (และ aldolase)** ก่อนจะไปสืบค้นตับหรือเจาะตับโดยไม่จำเป็น
@@ -2989,8 +3125,8 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A 55-year-old woman has proximal muscle weakness, a violaceous periorbital rash and scaly papules over the knuckles. Apart from treating the myositis, what must not be missed?
 
 A. Screening for an underlying malignancy
-B. Screening for iron deficiency
-C. Screening for hepatitis A
+B. Screening for hepatitis A
+C. Screening for iron deficiency
 D. Screening for diabetes mellitus
 E. Screening for osteoporosis before treatment
 
@@ -3010,13 +3146,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A 72-year-old woman has new temporal headache, scalp tenderness, jaw claudication and ESR 95 mm/hr. Vision is normal. What should be done first?
 
-A. Arrange temporal artery biopsy and wait for the result before treatment
-B. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
-C. Start an NSAID and review in 1 week
-D. Arrange CT brain and treat only if abnormal
-E. Start low-dose prednisolone 10 mg daily
+A. Start low-dose prednisolone 10 mg daily
+B. Arrange CT brain and treat only if abnormal
+C. Arrange temporal artery biopsy and wait for the result before treatment
+D. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
+E. Start an NSAID and review in 1 week
 
-ANSWER: B. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
+ANSWER: D. Start high-dose corticosteroid immediately, then arrange temporal artery biopsy
 
 EXPLAIN:
 **Giant cell arteritis เป็นภาวะฉุกเฉินทางตา** — ตาบอดถาวรเกิดได้ภายในไม่กี่ชั่วโมงถึงวัน จึง **ให้สเตียรอยด์ก่อน แล้วค่อยตัดชิ้นเนื้อภายใน 1-2 สัปดาห์** ซึ่งยังให้ผลบวกได้; **jaw claudication เป็นอาการที่มี likelihood ratio สูงที่สุด** ของโรคนี้
@@ -3033,12 +3169,12 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A 19-year-old man has palpable purpura over both legs and buttocks, colicky abdominal pain, arthralgia and hematuria one week after an upper respiratory infection. Platelet count and coagulation tests are normal. What is the diagnosis?
 
 A. Disseminated intravascular coagulation
-B. IgA vasculitis (Henoch-Schonlein purpura)
-C. Acute rheumatic fever
+B. Immune thrombocytopenia
+C. IgA vasculitis (Henoch-Schonlein purpura)
 D. Meningococcemia
-E. Immune thrombocytopenia
+E. Acute rheumatic fever
 
-ANSWER: B. IgA vasculitis (Henoch-Schonlein purpura)
+ANSWER: C. IgA vasculitis (Henoch-Schonlein purpura)
 
 EXPLAIN:
 **Palpable purpura + เกล็ดเลือดปกติ = vasculitis ไม่ใช่ความผิดปกติของเกล็ดเลือด**; tetrad ของ IgA vasculitis คือ purpura ที่ขาและก้น + ปวดข้อ + ปวดท้อง + ไตอักเสบ — **ไตเป็นตัวกำหนดพยากรณ์โรค** ต้องตรวจปัสสาวะและความดันเป็นระยะหลายเดือน
@@ -3055,12 +3191,12 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A 56-year-old man with chronic sinusitis and bloody nasal discharge develops hemoptysis, cavitating lung nodules and glomerulonephritis with red cell casts. Which antibody is most likely to be positive?
 
 A. Anti-glomerular basement membrane antibody
-B. Anti-proteinase 3 (c-ANCA)
-C. Anti-centromere antibody
-D. Anti-double-stranded DNA
-E. Anti-mitochondrial antibody
+B. Anti-centromere antibody
+C. Anti-double-stranded DNA
+D. Anti-mitochondrial antibody
+E. Anti-proteinase 3 (c-ANCA)
 
-ANSWER: B. Anti-proteinase 3 (c-ANCA)
+ANSWER: E. Anti-proteinase 3 (c-ANCA)
 
 EXPLAIN:
 **ทางเดินหายใจส่วนบน + ปอดเป็นโพรง + ไตอักเสบ = granulomatosis with polyangiitis → c-ANCA (anti-PR3)**; anti-GBM (Goodpasture) ไม่เข้าไซนัสและไม่ทำให้เกิดโพรงในปอด; SLE จะมี complement ต่ำและอาการหลายระบบอื่น — เป็น **pulmonary-renal syndrome** ที่ต้องรีบให้สเตียรอยด์ขนาดสูงร่วมกับ rituximab หรือ cyclophosphamide
@@ -3075,13 +3211,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: Which conventional DMARD is the anchor drug for newly diagnosed rheumatoid arthritis, and how is it given?
 
-A. Prednisolone 10 mg daily as monotherapy
-B. Methotrexate, given once weekly with folic acid supplementation
-C. Allopurinol 100 mg daily
-D. Colchicine 0.6 mg twice daily
-E. Methotrexate, given once daily with folic acid
+A. Methotrexate, given once weekly with folic acid supplementation
+B. Prednisolone 10 mg daily as monotherapy
+C. Methotrexate, given once daily with folic acid
+D. Allopurinol 100 mg daily
+E. Colchicine 0.6 mg twice daily
 
-ANSWER: B. Methotrexate, given once weekly with folic acid supplementation
+ANSWER: A. Methotrexate, given once weekly with folic acid supplementation
 
 EXPLAIN:
 **Methotrexate สัปดาห์ละครั้ง** (การสั่งเป็นทุกวันเป็นความผิดพลาดที่ทำให้เกิด pancytopenia และเสียชีวิตได้) ร่วมกับ **folic acid** เพื่อลดแผลในปากและพิษต่อตับ; ติดตาม CBC, LFT, creatinine; **ห้ามในหญิงตั้งครรภ์**; สเตียรอยด์ใช้เป็นสะพานระยะสั้นเท่านั้น
@@ -3118,13 +3254,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A 34-year-old woman with SLE on long-term high-dose prednisolone develops progressive right groin pain on weight bearing. Hip radiograph is normal. What is the most appropriate next investigation?
 
-A. Hip joint aspiration
-B. Serum uric acid
-C. Repeat plain radiograph in 3 months
-D. MRI of both hips
-E. Bone mineral density
+A. Serum uric acid
+B. Bone mineral density
+C. MRI of both hips
+D. Hip joint aspiration
+E. Repeat plain radiograph in 3 months
 
-ANSWER: D. MRI of both hips
+ANSWER: C. MRI of both hips
 
 EXPLAIN:
 **Osteonecrosis ของหัวกระดูกต้นขาจากสเตียรอยด์** — ฟิล์มธรรมดาปกติในระยะแรกเสมอ **MRI ไวที่สุดและต้องถ่ายทั้งสองข้าง** เพราะเป็นสองข้างได้ 50-80%; ถ้าจับได้ก่อนหัวกระดูกยุบยังมีทางรักษาข้อไว้ได้
@@ -3139,13 +3275,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A 27-year-old man has chronic low back pain that improves with exercise, wakes him in the early morning, with morning stiffness of 1 hour and a past episode of acute anterior uveitis. What is the most likely diagnosis?
 
-A. Mechanical low back pain
+A. Axial spondyloarthritis (ankylosing spondylitis)
 B. Lumbar disc herniation
-C. Axial spondyloarthritis (ankylosing spondylitis)
+C. Mechanical low back pain
 D. Vertebral compression fracture
 E. Fibromyalgia
 
-ANSWER: C. Axial spondyloarthritis (ankylosing spondylitis)
+ANSWER: A. Axial spondyloarthritis (ankylosing spondylitis)
 
 EXPLAIN:
 **Inflammatory back pain**: อายุน้อยกว่า 45, ค่อยเป็นค่อยไป, **ดีขึ้นเมื่อขยับ แย่ลงเมื่อพัก**, ตื่นกลางดึกช่วงครึ่งหลัง, ฝืดเช้า > 30 นาที + **uveitis** ซึ่งเป็นอาการนอกข้อที่พบบ่อยที่สุด (สัมพันธ์กับ HLA-B27); รักษาด้วย **ออกกำลังกาย + NSAID เต็มขนาด** และ anti-TNF/anti-IL-17 เมื่อไม่ตอบสนอง — **methotrexate ไม่ได้ผลกับโรคแกนกลาง**
@@ -3162,12 +3298,12 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A 68-year-old woman has 2 months of bilateral shoulder and hip girdle aching with prolonged morning stiffness, ESR 88 mm/hr, normal creatine kinase and no true weakness on testing. What is the most likely diagnosis and treatment?
 
 A. Polymyositis; high-dose prednisolone plus methotrexate
-B. Hypothyroid myopathy; levothyroxine
+B. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
 C. Fibromyalgia; exercise and amitriptyline
-D. Osteoarthritis of both shoulders; NSAID
-E. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
+D. Hypothyroid myopathy; levothyroxine
+E. Osteoarthritis of both shoulders; NSAID
 
-ANSWER: E. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
+ANSWER: B. Polymyalgia rheumatica; low-dose prednisolone 12.5-25 mg daily with a dramatic response expected
 
 EXPLAIN:
 **PMR: ปวดเมื่อยไหล่และสะโพกสองข้าง ฝืดเช้านาน ESR สูงมาก แต่ CK ปกติและไม่มีอ่อนแรงจริง** (ขยับไม่ไหวเพราะเจ็บ ไม่ใช่แรงตก) — ตอบสนองต่อ prednisolone ขนาดต่ำอย่างรวดเร็วภายใน 24-72 ชั่วโมง (ถ้าไม่ตอบสนองให้ทบทวนการวินิจฉัย); **ต้องถามอาการของ giant cell arteritis ทุกครั้ง** เพราะพบร่วมกันได้ ~15%
@@ -3184,10 +3320,10 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A patient with rheumatoid arthritis on methotrexate develops fever, dry cough and diffuse interstitial infiltrates with leukopenia. What should be done first?
 
 A. Stop methotrexate and evaluate for both opportunistic infection and drug-induced pneumonitis
-B. Add an NSAID and observe
-C. Increase the methotrexate dose for a presumed flare
-D. Give folic acid and continue the same dose
-E. Start an anti-TNF agent immediately
+B. Give folic acid and continue the same dose
+C. Add an NSAID and observe
+D. Start an anti-TNF agent immediately
+E. Increase the methotrexate dose for a presumed flare
 
 ANSWER: A. Stop methotrexate and evaluate for both opportunistic infection and drug-induced pneumonitis
 
@@ -3206,9 +3342,9 @@ Q: Which antibody pattern is most specific for systemic lupus erythematosus?
 
 A. Anti-Smith and anti-double-stranded DNA
 B. Anti-Jo-1 and anti-Mi-2
-C. Anti-mitochondrial and anti-smooth muscle
+C. Anti-Scl-70 and anticentromere
 D. Rheumatoid factor and anti-CCP
-E. Anti-Scl-70 and anticentromere
+E. Anti-mitochondrial and anti-smooth muscle
 
 ANSWER: A. Anti-Smith and anti-double-stranded DNA
 
@@ -3226,10 +3362,10 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 Q: A woman with SLE and lupus nephritis wishes to become pregnant. Which drug must be stopped and replaced before conception?
 
 A. Calcium and vitamin D supplements
-B. Prednisolone, stopped completely
+B. Low-dose aspirin, stopped without replacement
 C. Mycophenolate mofetil, replaced by azathioprine
-D. Low-dose aspirin, stopped without replacement
-E. Hydroxychloroquine, replaced by no alternative
+D. Hydroxychloroquine, replaced by no alternative
+E. Prednisolone, stopped completely
 
 ANSWER: C. Mycophenolate mofetil, replaced by azathioprine
 
@@ -3246,13 +3382,13 @@ Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน
 
 Q: A 28-year-old woman has daily evening fever for 3 weeks, an evanescent salmon-coloured rash, sore throat, arthralgia, neutrophilic leukocytosis and ferritin 8,000 ng/mL, with negative ANA, RF and blood cultures. What is the most likely diagnosis?
 
-A. Adult-onset Still disease
+A. Rheumatoid arthritis
 B. Systemic lupus erythematosus
-C. Infective endocarditis
-D. Lymphoma
-E. Rheumatoid arthritis
+C. Lymphoma
+D. Adult-onset Still disease
+E. Infective endocarditis
 
-ANSWER: A. Adult-onset Still disease
+ANSWER: D. Adult-onset Still disease
 
 EXPLAIN:
 **ไข้รายวัน + ผื่นสีปลาแซลมอนที่มาพร้อมไข้ + เจ็บคอ + เม็ดเลือดขาวสูงชนิด neutrophil + ferritin สูงมาก + ANA/RF ลบ = adult-onset Still disease** ซึ่งเป็นการวินิจฉัยแบบตัดโรคอื่นออก (ต้องตัดการติดเชื้อ โดยเฉพาะ endocarditis และวัณโรค กับมะเร็งต่อมน้ำเหลืองออกก่อน); ระวังภาวะแทรกซ้อน **macrophage activation syndrome** เมื่อเม็ดเลือดต่ำลงทุกซีรีส์และ ferritin พุ่งขึ้นอีก
@@ -3262,3 +3398,31 @@ NL (เกณฑ์แพทยสภา พ.ศ. 2567):
   - NL 2.1.1 — ไข้ (fever) · 2.1 อาการ/ปัญหาสำคัญ หน้า 55
   - NL 2.1.27 — ปวดข้อ ข้อฝืด ข้อติด (joint pain, stiff joint, frozen joint) · 2.1 อาการ/ปัญหาสำคัญ หน้า 55
   - NL 2.1.50 — ผื่นผิวหนัง (skin rash and lesions) · 2.1 อาการ/ปัญหาสำคัญ หน้า 56
+
+### [AIR-OLDP-006] ข้อสอบเก่า
+Lecture: 33 Connective tissue diseases and vasculitis · TBD — แก้ใน config.lectures
+
+Q: A young woman presents with a malar rash and is found to be ANA positive, consistent with systemic lupus erythematosus. Which drug should be given to control her disease?
+
+A. Rituximab
+B. Systemic corticosteroid (prednisolone)
+C. Mycophenolate mofetil
+D. Azathioprine
+E. Cyclophosphamide
+
+ANSWER: B. Systemic corticosteroid (prednisolone)
+
+EXPLAIN:
+เฉลยตามโพย: systemic corticosteroid (prednisolone)
+
+กลไก/แนวคิด: malar rash + ANA positive เข้าได้กับ SLE (ANA มี sensitivity สูงแต่ specificity ต่ำ ใช้เป็น entry criterion ของ EULAR/ACR 2019 แล้วจึงส่ง anti-dsDNA, anti-Sm, C3/C4, CBC, urinalysis เพื่อประเมิน organ involvement) ส่วน glucocorticoid ออกฤทธิ์กด NF-kB → ลดการสร้าง cytokine, ลด T/B cell activation และลด immune complex-mediated inflammation จึงทำให้โรคที่กำลัง active สงบได้เร็ว ใช้เป็น bridge therapy
+
+ข้อควรระวัง — คำตอบของโพยไม่ตรงกับแนวทางปัจจุบันเสียทั้งหมด: EULAR 2023 แนะนำให้ hydroxychloroquine ในผู้ป่วย SLE ทุกราย และถ้าเป็นผื่นเฉพาะที่ไม่รุนแรง first-line คือ topical corticosteroid/calcineurin inhibitor ร่วมกับ HCQ โดยพยายามลด prednisolone ให้ ≤ 5 มก./วัน ดังนั้น 'prednisolone' เหมาะกับกรณีที่โรค active หรือมี organ involvement มากกว่าจะเป็นคำตอบแรกของผื่นเดี่ยว ๆ — โพยไม่ได้บันทึกความรุนแรงหรือตัวเลือกเดิมไว้ จึงถือคำตอบนี้ตามที่บันทึก แต่ผู้อ่านควรทราบข้อจำกัดนี้
+
+เหตุที่ตัวเลือกอื่นผิด:
+- Cyclophosphamide สงวนไว้สำหรับ severe lupus nephritis (class III/IV) หรือ CNS lupus เท่านั้น เพราะมีพิษต่อรังไข่และ haemorrhagic cystitis
+- Azathioprine และ Mycophenolate mofetil เป็น steroid-sparing/maintenance agent ออกฤทธิ์ช้าเป็นสัปดาห์ถึงเดือน ไม่ใช้คุมโรคระยะเฉียบพลันเพียงตัวเดียว
+- Rituximab ใช้เฉพาะรายที่ refractory ต่อการรักษามาตรฐาน
+
+REF: MED31 · 40.SLE ให ้malar rashมา ทําอะไรต่อ ANA+ve ทําอะไรต่อ
+ตอบ steroid(prednisolone)

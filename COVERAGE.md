@@ -19,16 +19,16 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 | จ. 21 | Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์) | derm `D02` ผื่นเรื้อรังและผื่นจากการติดเชื้อ (3 / 0 / 34) | 🟡 ข้อใหม่มีแค่ 3 ข้อ ไม่มี MEQ ของการติดเชื้อที่ผิวหนัง |
 | อ. 22 | SLE and systemic autoimmune diseases (อ.ปัญนิภา) | air `33` Connective tissue diseases and vasculitis (10 / 1 / 10) | ✅ แต่วันที่ของคาบ 33 ใน config ยังเป็น TBD |
 | พ. 23 | Epilepsy (อ.พิมลพรรณ) | neuro `N02` หัวข้ออื่นของระบบประสาท (3 / 1 / 16) | 🟡 ไม่มีกลุ่มคาบของตัวเอง ข้อใหม่มีแค่ 3 ข้อ |
-| พ. 23 | Extrapulmonary TB (อ.ภาณุวัฒน์) | กระจายอยู่ใน chest `03`, cardio `04` (TB pericarditis) รวมประมาณ 5 ข้อ | ❌ ยังไม่มีชุดของตัวเอง |
+| พ. 23 | Extrapulmonary TB (อ.ภาณุวัฒน์) | chest `TB2` (10 / 1 / 0) — เพิ่ม 25 ก.ย. | ✅ |
 | พฤ. 24 | Ischemic heart diseases (AL) (อ.สุรพันธ์) | cardio `13` (7 / 2 / 23) | ✅ |
 | พฤ. 24 | Nephrotic / Nephritic syndrome (อ.ฉันทิศา) | nephro `14` (6 / 3 / 18) | ✅ |
-| ศ. 25 | Dyslipidemia, obesity and metabolic syndrome (อ.นวพร) | ข้อเก่าใน endo `E01` (0 / 0 / 10) + statin ใน cardio `13` | ❌ ไม่มีข้อใหม่ |
+| ศ. 25 | Dyslipidemia, obesity and metabolic syndrome (อ.นวพร) | endo `E04` (12 / 2 / 6) — เพิ่ม 25 ก.ย. | ✅ |
 | ศ. 25 | หัตถการ Blood transfusion (อ.ชัชวาล) | heme `H02` (2 / 0 / 8) | 🟡 ยังไม่มีเรื่องหมู่เลือด ABO/Rh, crossmatch, ขั้นตอนหัตถการ |
 | ศ. 25 | Septicemia and antibiotic usage (อ.พจน์) | infect `I01` (7 / 1 / 6) | ✅ ข้อเก่าอย่าง qSOFA (MED32) ยังพักอยู่ใน `_held_unverified_papers.json` |
 
 **ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
-1. Dyslipidemia / Obesity / MetS: เปิดกลุ่มใหม่ใน endo แล้วเขียน MCQ + MEQ
-2. Extrapulmonary TB: เปิดกลุ่มใหม่ (infect หรือ chest)
+1. ~~Dyslipidemia / Obesity / MetS~~ ✅ เพิ่มแล้ว (`E04`)
+2. ~~Extrapulmonary TB~~ ✅ เพิ่มแล้ว (`TB2`)
 3. Blood transfusion: เพิ่มเรื่อง ABO/Rh compatibility, crossmatch, AHTR ต้อง stop transfusion ก่อน (MED28), ABO ของ FFP/cryo/platelet (MED31)
 4. Epilepsy: แยกออกจาก `N02` เป็นกลุ่มคาบของตัวเอง แล้วเพิ่ม MCQ
 5. Derm infection: เพิ่ม MCQ/MEQ เรื่อง impetigo, cellulitis, herpes, exanthem, tinea
