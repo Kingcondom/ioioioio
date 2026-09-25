@@ -26,6 +26,10 @@ learn/<set>.json              --build_learn.py-->  learn.html  +  export/learn_<
 
 > อัปเดต artifact เดิมด้วยการส่ง `url` นั้นเข้าไป — ถ้า publish เฉย ๆ จะได้ artifact ใหม่คนละอัน
 
+> **หน้าหลัก (ตั้งไว้ 25 ก.ย. 2569): drill.html = `Fdi5gcNXKqFLAXg4fQBV7X`** — build ใหม่ทุกครั้งให้ republish ด้วย `url` นี้เท่านั้น
+> - ลิงก์เก่า `https://claude.ai/code/artifact/69931ac7-6ac2-4b0a-b4f3-41b7f4aff86d` (คิท 5 ระบบจาก main / `claude/med-exam-pipeline-kit-g3zgv1`) **เลิกใช้แล้ว** อย่า publish ทับหรือต่อยอดจากตัวนั้น
+> - โค้ดต้นทางของหน้าหลักคือ branch นี้ (`claude/lecture-artifact-integration-5plhhc` และ `claude/adoring-babbage-zkg8ih` ที่ต่อจากมัน) ไม่ใช่ main
+
 ---
 
 ## 2. สถานะคลังข้อสอบ — 1,318 ข้อ
