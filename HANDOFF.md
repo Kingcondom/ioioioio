@@ -27,7 +27,7 @@ Claude รันอยู่บนเครื่องชั่วคราว�
 ```bash
 cd /home/user/ioioioio
 git add -A && git commit -m "<สรุปสั้น ๆ ว่าทำอะไร>"
-git push -u origin claude/med421-learn-artifact-qp4u5f
+git push -u origin <branch ที่ session นั้นได้รับมอบหมาย>
 ```
 
 เกณฑ์ว่า "ก้อนหนึ่ง" คือ — สร้างคาบเรียนเสร็จ 1 คาบ · แกะเอกสารเสร็จ 1 ภาค · เขียนสคริปต์เสร็จ 1 ตัว
@@ -50,6 +50,11 @@ git push -u origin claude/med421-learn-artifact-qp4u5f
 
 ---
 
+> **เริ่ม session ใหม่:** ถ้า branch ที่ได้รับมอบหมายยังไม่มีงานล่าสุด ให้ `git fetch origin` แล้ว merge
+> `origin/claude/add-today-blougl` เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
+> `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
+> (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
+
 ## 1. ตัวงานหลัก
 
 **artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 13** · มี 6 ชุดวิชา — เพิ่ม **Endo**)
@@ -65,7 +70,7 @@ git push -u origin claude/med421-learn-artifact-qp4u5f
 ## 2. ที่อยู่ไฟล์
 
 ```
-/home/user/ioioioio/          ← repo · branch claude/med421-learn-artifact-qp4u5f (แตกจาก claude/keen-brahmagupta-nqy0my)
+/home/user/ioioioio/          ← repo · ฉบับล่าสุดอยู่ที่ claude/add-today-blougl = claude/keen-brahmagupta-nqy0my (commit เดียวกัน)
 ├── artifact/                  ← ต้นฉบับ artifact (publish จากที่นี่)
 │   ├── index.html             ← หน้าเว็บ (43 KB)
 │   ├── README.md              ← วิธีเพิ่มคาบใหม่ + schema ย่อ
