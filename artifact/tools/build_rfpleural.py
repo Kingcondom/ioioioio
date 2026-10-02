@@ -21,6 +21,9 @@ def sec(sid, title, summary, minutes, md, pearls, items, nl=None):
 
 def mcq(iid, stem, choices, answer, explain, pearl, topic, ref, nl=None):
     assert len(choices) == 5 and 0 <= answer <= 4
+    import random
+    order = list(range(5)); random.Random("own-" + iid).shuffle(order)   # กระจายตำแหน่งเฉลยแบบคงที่
+    choices, answer = [choices[k] for k in order], order.index(answer)
     return {"id": iid, "kind": "mcq", "stem": stem, "choices": choices, "answer": answer,
             "explain": explain, "pearl": pearl, "topic": topic, "src": "", "ref": ref, "nl": nl or NLN}
 
