@@ -321,3 +321,12 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
 ไฟล์ที่ขึ้น ⚠️ เนื้อหาหลักเป็น **ภาพตาราง ESC** ที่ text layer ดึงไม่ออก — ถ้าจะเขียนบทเรียน
 คาบ 13 ให้ครบตามสไลด์จริง ต้องเปิดดูภาพจากสองไฟล์นั้นเพิ่ม (หรือใช้เนื้อหาจากไกด์ไลน์ ESC ต้นทางแทน
 แล้วระบุ `source` ตามสไลด์)
+
+## รอบ 2 ต.ค. 2569 — โฟลเดอร์ Drive "Claude" ของผู้ใช้ (`1mft-8EhUVLSAXIwVX7zV6JmHoiaBPzsM`)
+
+| ไฟล์ | fileId | ดึงข้อความ | ใช้ที่ |
+|---|---|---|---|
+| Lec12 Respiratory failure, pleural disease.pdf (อ.สกล) | `12_uIP-b1TWP-u35yfm90Q9PT5QTNgPvp` | ⚠️ ราว 2/3 — ตัดหลัง work up effusion | chest คาบ 17 · โน้ต `rf_pleural_notes.md` |
+| Lec14 Thyroid disorder_2026.pdf (อ.ศิวกร) | `1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5` | ⚠️ ถึง nodule algorithm | endo คาบ 14 · โน้ต `thyroid_notes.md` |
+| Sepsis _ Principle ATB medical student.pdf (อ.พจน์) | `10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc` | ❌ ภาพล้วน 175 MB | id คาบ 25/9 (อิง SSC 2026) · โน้ต `sepsis_notes.md` |
+| Lec7 Epilepsy (อ.พิมลพรรณ · มีลายมือ) | `1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW` | ✅ | ซ้ำกับคาบ Epilepsy ที่ทำแล้ว |

@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 25 ก.ย. 2569 · รอบที่ 4)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 2 ต.ค. 2569 · รอบที่ 5)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -25,7 +25,7 @@ Claude รันอยู่บนเครื่องชั่วคราว�
 **2. จบงานหนึ่งก้อน → commit เข้า repo ทันที ไม่รอจบ session**
 
 ```bash
-cd /home/user/ioioioio
+cd /home/claude/ioioioio (หรือ /home/user/ioioioio แล้วแต่ container)
 git add -A && git commit -m "<สรุปสั้น ๆ ว่าทำอะไร>"
 git push -u origin <branch ที่ session นั้นได้รับมอบหมาย>
 ```
@@ -57,7 +57,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 13** · มี 6 ชุดวิชา — เพิ่ม **Endo**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 14** · มี **7 ชุดวิชา** — เพิ่ม **ID** · 19 คาบ)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -77,12 +77,14 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 │   ├── data/
 │   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
 │   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
-│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (3)
+│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (4)
 │   │   ├── nephro.json (1)    neuro.json (5)
-│   │   └── endo.json (1)      ← ชุดใหม่ 25 ก.ย. (build_mets.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
+│   │   ├── endo.json (2)
+│   │   └── id.json (1)        ← ชุดใหม่ 2 ต.ค. (build_sepsis.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
 │   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
-│                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
-│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
+│                                 build_ihd.py · build_lp.py · build_mets.py · build_rfpleural.py ·
+│                                 build_thyroid.py · build_sepsis.py · map_nl.py · refactor.py ·
+│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish · นับแท็บจาก index.json เอง)
 ├── nl/                        ← งานแกะเกณฑ์ นล. (เสร็จแล้ว ไม่ต้องทำซ้ำ)
 │   ├── vis/056.txt–074.txt    ← ผลอ่านภาค ข. ด้วยสายตา
 │   ├── visA/010.txt–047.txt   ← ผลอ่านภาค ก. ด้วยสายตา + _scheme.md (โครงรหัส)
@@ -92,6 +94,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 ├── refs/curriculum-topics-2569.md  ← หัวข้อตามหลักสูตรทางการ
 ├── slides/SOURCES.md          ← รายการไฟล์สไลด์ที่ได้รับและ Drive file id
 ├── slides/eptb_notes.md       ← โน้ตอ่านสไลด์ Extrapulmonary TB ทีละหน้า (16 หน้า + ลายมือ)
+├── slides/rf_pleural_notes.md · thyroid_notes.md · sepsis_notes.md  ← โน้ตรอบ 2 ต.ค.
 └── (ของเดิมคนละสาย: drill.html · learn.html · build.py · data/ · export/)
 ```
 
@@ -125,7 +128,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 16 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 19 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -138,6 +141,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | chest | 03 | Pulmonary tuberculosis |
 | chest | 26 | Arterial blood gas analysis |
 | chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
+| chest | 17 | Respiratory failure + Pleural disease ← อ.สกล (12 หัวข้อ · 36 ข้อ รวมคลังคาบ 17 ครบ · CH-MEQ-03 · CH-OSCE-02/04) |
 | nephro | 05 | Fluid electrolyte: Divalent |
 | neuro | 07 | Acute ischemic stroke |
 | neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
@@ -145,6 +149,8 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
 | neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
 | endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
+| endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
+| id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
 
 > ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
 > ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
@@ -195,7 +201,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - `B11.2.6` พิมพ์เป็น `11.2.6` ขาด B
 - หัวข้อ 2.2 เขียนว่า "49 รายการ" แต่เลขไล่ถึง 2.2.50
 
-ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย
+ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย · ทุก build_*.py assert รหัสกับ nl.json ก่อนเขียน
+(รอบ 2 ต.ค. พบรหัสผิดในคลัง: `2.3.5-3(1)` = bipolar ถูกใส่ในข้อมะเร็งปอด → build_rfpleural.py ตัดทิ้ง)
 
 ---
 
@@ -223,6 +230,18 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
   ดาวน์โหลดตรงก็ไม่ได้ (proxy 403) → หัวข้อ 11–13 ของคาบนี้ใช้ ESC/EAS 2019 แทนและระบุไว้ใน `nlGap`
   ถ้าผู้ใช้ส่งภาพสไลด์ส่วนนั้นมา ให้เทียบแล้วแก้ `build_mets.py`
 
+**รอบ 2 ต.ค. (โฟลเดอร์ Drive "Claude" `1mft-8EhUVLSAXIwVX7zV6JmHoiaBPzsM` ของผู้ใช้)** — ✅ v14
+- Lec12 Respiratory failure, pleural disease `12_uIP-b1TWP-u35yfm90Q9PT5QTNgPvp` → chest คาบ **17** (ใช้เลขคาบตามคลังข้อสอบ ไม่ใช่ "Lec12")
+  ⚠️ ข้อความถูกตัดหลัง work up pleural effusion → Light's/empyema/malignant/การรักษา PTX ไม่ tension ใช้ BTS 2023
+- Lec14 Thyroid disorder_2026 `1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5` → endo คาบ **14**
+  ⚠️ ข้อความถูกตัดหลัง nodule algorithm → hypothyroid/amiodarone/Bethesda เทียบจาก artifact บทเรียน Thyroid ของผู้ใช้
+  (claude.ai/artifact/S9FmtzVewjtqtWxnuNQxRu — ทำจากสไลด์ชุดเดียวกันใน session อื่น) · thyroid storm ใช้ ATA/JTA 2016
+- Sepsis _ Principle ATB `10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc` (175 MB **ภาพล้วน** · read_file_content ว่าง) → id คาบ 25/9
+  ใช้ SSC 2026 (ตรวจกับ sccm.org แล้ว) + artifact Sepsis ของผู้ใช้ (claude.ai/artifact/DB59ZbY5ize8MhxXiHkZJZ) · **ถ้าได้ภาพสไลด์มาให้แก้ build_sepsis.py**
+- Lec7 Epilepsy `1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW` = สไลด์ชุดเดียวกับคาบ Epilepsy ที่ทำแล้ว (มีลายมือ) → ไม่สร้างซ้ำ
+- ผู้ใช้มี artifact บทเรียนแยกต่อหัวข้อใน "ห้องสมุดท่าอาจารย์" (claude.ai/artifact/QebhLmV2eKyzj3mkqstnjR) — ใช้เป็นแหล่งเทียบได้เมื่อสไลด์ดึงไม่ครบ
+- ตำแหน่งเฉลย: build ใหม่ทั้งสามสลับตัวเลือกแบบคงที่ด้วย random.Random(id) — คลังเดิม (CH-MCQ/CH-OLD) เฉลย ก. ทุกข้อ
+
 **เข้าไม่ถึง (น่าจะอยู่บัญชี @rsu.ac.th):**
 - UTI `1GG55VJ6ddTMQ2IETf1IqUpU_tMDizEH7`
 - Tropical disease `1ax8FzPhmAZ4iFSSsXGQcb5TGobcG4nn9` (ผู้ใช้สั่งข้าม Malaria ไปก่อน)
@@ -234,8 +253,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
 1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
-2. W2 เหลือ 4 คาบ: Skin infections · Nephrotic/Nephritis ·
-   Septicemia (รอสไลด์) — ✅ Extrapulmonary TB (v12) · ✅ Dyslipidemia/MetS/Obesity (v13 · ชุด Endo)
+2. W2 เหลือ: Skin infections · Nephrotic/Nephritis — ✅ Extrapulmonary TB (v12) · ✅ Dyslipidemia/MetS/Obesity (v13) ·
+   ✅ Septicemia (v14 · อิง SSC 2026 รอภาพสไลด์จริง) · ✅ Pleural/Resp failure (v14) · ✅ Thyroid (v14)
 3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
@@ -259,9 +278,9 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 9. รายละเอียดทางเทคนิคที่เคยติดปัญหา
 
-- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
+- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install --break-system-packages playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
   ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
-  และ `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
+  และ `args=["--no-sandbox"]` · Google Fonts โดน proxy บล็อก (ERR_CERT_AUTHORITY_INVALID หรือ ERR_TUNNEL_CONNECTION_FAILED — verify.py กรองทั้งสองแบบแล้ว)
   เป็นเรื่องปกติของ container ไม่ใช่บั๊ก
 - **อย่าใช้ `pgrep -f <script>` ในลูปรอ** — มันแมตช์ตัว bash command เองแล้วค้างตลอดกาล
 - แถบความคืบหน้านับเฉพาะ set ที่เปิดอยู่ (AIR = 34 ไม่ใช่ 91) — เคยเข้าใจผิดว่าเป็นบั๊ก

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """เปิด build/index.html ด้วย Chromium จริง ตรวจว่า loader ทำงานและสลับ set ได้"""
-import subprocess, sys, time, os
+import subprocess, sys, time, os, json as _json
 from playwright.sync_api import sync_playwright
 
 BUILD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # โฟลเดอร์ artifact/
@@ -28,8 +28,9 @@ try:
         pg.wait_for_selector("#courseTabs button", timeout=10000)
         tabs = pg.eval_on_selector_all("#courseTabs button", "els=>els.map(e=>e.textContent)")
         print("แท็บชุดวิชา:", tabs)
-        if len(tabs) != 6:
-            fail.append("แท็บควรมี 6 ชุด แต่ได้ %d" % len(tabs))
+        nset = len(_json.load(open(os.path.join(BUILD, "data", "index.json"), encoding="utf-8")))
+        if len(tabs) != nset:
+            fail.append("แท็บควรมี %d ชุด แต่ได้ %d" % (nset, len(tabs)))
 
         pg.wait_for_selector("aside .olec", timeout=10000)
         n = pg.eval_on_selector_all("aside .olec", "els=>els.length")
@@ -57,6 +58,17 @@ try:
         pg.wait_for_selector("aside .osec li button", timeout=5000)
         nsec = pg.eval_on_selector_all("aside .osec li button", "e=>e.length")
         print("Endo outline: %d คาบ · %d หัวข้อ ✓" % (nend, nsec))
+        # ชุดที่เพิ่มรอบ 2 ต.ค.: Chest (คาบ 17) และ ID (ชุดใหม่) → ต้องโหลดได้และเปิดหัวข้อได้
+        for lab, fn in (("Chest", "chest"), ("ID", "id")):
+            nn = len(_j.load(open(os.path.join(BUILD, "data", fn + ".json"), encoding="utf-8")))
+            pg.click("#courseTabs button:text-is('%s')" % lab)
+            pg.wait_for_function("document.querySelectorAll('aside .olec').length===%d" % nn, timeout=10000)
+            pg.click("aside .olec:last-child > button")
+            pg.wait_for_selector("aside .olec:last-child .osec li button", timeout=5000)
+            k = pg.eval_on_selector_all("aside .olec:last-child .osec li button", "e=>e.length")
+            pg.click("aside .olec:last-child .osec li button")
+            pg.wait_for_selector("main .card h2", timeout=5000)
+            print("%s outline: %d คาบ · คาบล่าสุด %d หัวข้อ · เปิด: %s ✓" % (lab, nn, k, pg.inner_text("main .card h2")[:50]))
         pg.click("#courseTabs button:has-text('Cardio')")
         pg.wait_for_function("document.querySelectorAll('aside .olec').length===%d" % ncar, timeout=10000)
 
@@ -100,7 +112,7 @@ try:
         print("คำขอที่ล้มเหลวทั้งหมด:", bad)
         if ours:
             fail.append("คำขอของหน้าเราล้มเหลว: %r" % ours)
-        real = [e for e in errs if "ERR_CERT" not in e and "404" not in e]
+        real = [e for e in errs if "ERR_CERT" not in e and "ERR_TUNNEL" not in e and "404" not in e]  # Google Fonts ถูก proxy บล็อก
         if real:
             fail.append("console error: %r" % real[:5])
         b.close()
