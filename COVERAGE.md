@@ -36,3 +36,32 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 **config ต้องแก้**
 - คาบ `33` ใส่วันที่ "อ. 22 ก.ย."
 - คาบ `10` Shock (AL) ใน config เป็น "อ. 22 ก.ย." แต่ย้ายไปแล้ว → "พ. 21 ต.ค. 15:00"
+
+---
+
+## สัปดาห์ที่ 3 · 28 ก.ย.–2 ต.ค. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 28 | Pleurisy, pleural effusion, empyema, Respiratory failure (อ.สกล) | chest `17` (8 / 3 / 14) | ✅ แต่เรื่อง empyema และ respiratory failure มี MCQ ใหม่แค่ 2 ข้อ (ที่เหลือเป็นเรื่อง effusion/PTX) |
+| อ. 29 | Acute arthritis, crystal arthropathy, septic arthritis (อ.สูงชัย) | air `23` (17 / 2 / 15) — gout/CPPD/septic 9 ข้อใหม่ | ✅ |
+| พ. 30 | Chronic kidney disease (อ.วรางคณา) | nephro `19` (6 / 1 / 16) | ✅ |
+| พ. 30 | Thyroid diseases (อ.ศิวกร) | endo `E02` โรคของต่อมไทรอยด์ (7 / 1 / 18) | ✅ แต่ `E02` ยังเป็นกลุ่มหัวข้อ "ยังไม่ระบุคาบ" |
+| พฤ. 1 | Chest X-ray interpretation / Occupational lung diseases (อ.พจนี) | chest `21` (7 / 0 / 8) | ✅ แต่ยังไม่มี MEQ/SAQ อ่านฟิล์ม |
+| พฤ. 1 | Fluid electrolytes: Dysnatremia, dyskalemia (อ.ชุมพล) | nephro `22` (6 / 2 / 22) | ✅ |
+| ศ. 2 | Approach to Arthritis (AL) (อ.กิตติวรรณ) | air `23` (ใช้กลุ่มเดียวกับคาบวันอังคาร) | ✅ |
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json` (ยังไม่ผ่านการตรวจ จึงไม่อยู่ในคลัง): ไทรอยด์ ~44 · Na/K ~31 · เยื่อหุ้มปอด/หายใจล้มเหลว ~15 · CXR/โรคปอดจากการทำงาน ~15 · gout/septic arthritis ~13 · CKD ~12
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. Chest `17`: MCQ เรื่อง empyema (เกณฑ์ใส่ ICD, fibrinolytic/VATS) และ respiratory failure type 1/2
+2. Chest `21`: SAQ อ่าน CXR (silicosis, asbestosis, pneumothorax ฯลฯ)
+3. ตรวจข้อเก่าที่พักไว้ของไทรอยด์และ Na/K แล้วเอาเข้าคลัง (จำนวนมากที่สุด)
+4. ค้างจากสัปดาห์ที่ 2: Blood transfusion, Epilepsy, Derm infection (ยัง 🟡)
+
+**config ต้องแก้**
+- คาบ `23` ยังเป็น TBD → "อ. 29 ก.ย." (และ AL ศ. 2 ต.ค.)
+- `E02` → "พ. 30 ก.ย." (เป็นคาบ Thyroid diseases ของ อ.ศิวกร)
+- ค้างจากสัปดาห์ที่ 2: คาบ `33` → "อ. 22 ก.ย." · คาบ `10` Shock → "พ. 21 ต.ค."
+
+สัปดาห์ที่ 2: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
