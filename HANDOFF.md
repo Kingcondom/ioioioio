@@ -57,7 +57,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 14** · มี **7 ชุดวิชา** — เพิ่ม **ID** · 19 คาบ)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 15** · มี **7 ชุดวิชา** · 20 คาบ)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -128,7 +128,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 19 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 20 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -137,7 +137,8 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | air | 33 | Connective tissue disease, vasculitis (18 หัวข้อ — เติมส่วนที่ขาดจากสไลด์ อ.พรรณนิภา ครบแล้ว) |
 | cardio | 04 | Inflammatory MyoPericardial Syndrome (IMPS) |
 | cardio | 10 | Circulatory Shock |
-| cardio | 24/9 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ |
+| cardio | 13 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ · พฤ. 24 ก.ย. (เดิมใช้เลข 24/9 — เปลี่ยนเป็นเลขคาบจริงจากคลัง Ward Drill แล้ว · ผูกคลังคาบ 13 ครบ 32 ข้อ ด้วย `tools/link_ihd_bank.py`) |
+| cardio | 24 | Atrial fibrillation ← อ.อภิชัย · จ. 5 ต.ค. (11 หัวข้อ · 20 MCQ ใหม่ + คลังคาบ 24 ครบ 21 ข้อ · MEQ AF RVR + warfarin · OSCE counselling warfarin) |
 | chest | 03 | Pulmonary tuberculosis |
 | chest | 26 | Arterial blood gas analysis |
 | chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
@@ -152,8 +153,11 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
 | id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
 
-> ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
-> ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
+> ⚠️ เลข `lec` แบบวันที่ (เช่น "23/9") เป็นตัวแทนชั่วคราว — **เลขคาบจริงดูได้จากฟิลด์ `lec` ใน `bank_merged.json`** (คลังเดียวกับ Ward Drill)
+> ถ้าคาบนั้นมีข้อในคลัง ให้ใช้เลขนั้นและผูกข้อด้วย `artifact/tools/link_bank.py` (ดูตัวอย่าง `link_ihd_bank.py` และท้าย `build_af.py`)
+
+**ความครอบคลุมคลัง Ward Drill (5 ต.ค.)** — ผูกเข้าบทเรียนแล้ว **293/570 ข้อ**: AIR 110/110 · Cardio 97/180 · Chest 64/106 · Nephro 22/174 (Mock 200 ข้อไม่ผูกคาบ) ·
+คาบในคลังที่ยังไม่มีบทเรียน: Cardio 27 Rheumatic/Valvular · 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 14, 19, 22, 28, 30, 42
 
 ---
 
@@ -207,6 +211,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ---
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
+
+**อ.อภิชัย ปกวัฒนา** — Atrial fibrillation (update 16 Nov 2025) ✅ Drive `1zK9eofxHl5ldCi-5IqIjyTStGVHYhlRO` · ดึงข้อความด้วย `read_file_content` ได้ครบ · โน้ต `slides/af_notes.md`
 
 **อ.ภาณุวัฒน์ (Panuwat Wongkulab)** — Extrapulmonary TB: The Hidden Pathogen (Apr 2026) ✅
 - ผู้ใช้อัปโหลดในแชทเป็น PDF ภาพล้วน 16 หน้า (ไม่อยู่ใน Drive) → อ่านด้วยสายตา โน้ตเต็มที่ `slides/eptb_notes.md`
