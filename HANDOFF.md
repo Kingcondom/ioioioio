@@ -55,6 +55,16 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 > `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
 > (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
 
+> 🧰 **Skill `med421-lecture`** (`.claude/skills/med421-lecture/SKILL.md`) — ขั้นตอนเต็มตั้งแต่รับไฟล์สไลด์จนขึ้นเว็บ ·
+> เครื่องมือ: `check_lecture.py` (ตรวจข้อมูล) · `check_render.py` (ไล่กดทุกหัวข้อบนเบราว์เซอร์) · `coverage.py` (คลัง Ward Drill, `--find`) ·
+> `compare_live.py` (เทียบเว็บกับ repo ก่อน publish) · `link_bank.py` (ผูกข้อคลัง)
+>
+> ⚠️ **ปัญหาเก่าที่ `check_lecture.py` พบ (5 ต.ค. · ยังไม่แก้ รอผู้ใช้ตัดสินใจ)**
+> - **`**` ค้างบนจอ 127 จุด** — ตัวหนาคร่อมการขึ้นบรรทัดในย่อหน้า: neuro 21/10 (74 · เห็นบนจอใน 9 หัวข้อ) · air 33 (14) · air 08 (12) · nephro 05 (8) · air 23 (7) · cardio 04 (5) · cardio 10 (3) · neuro 07 (2) · chest 26 (1) · endo 14 (1 — `HLA DQB1*02`)
+>   แก้ได้โดยไม่กระทบความคืบหน้าของผู้ใช้ (แก้แค่ข้อความ)
+> - **คำตอบกระจุก** — chest 23/9 (B/C เท่านั้น) · neuro 21/10 (A 25/30) · cardio 13 · neuro 23/9, 15/10, 9/10 · air 23
+>   การสลับตำแหน่งคำตอบของข้อที่ขึ้นเว็บแล้วจะทำให้คำตอบที่ผู้ใช้เคยทำ (เก็บเป็น index) ผิด → ต้องถามผู้ใช้ก่อน
+
 ## 1. ตัวงานหลัก
 
 **artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 16** · มี **7 ชุดวิชา** · 21 คาบ)
