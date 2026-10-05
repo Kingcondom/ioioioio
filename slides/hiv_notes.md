@@ -1,4 +1,4 @@
-# AIDS and HIV infection — พ.ญ.มนัสวี วรรธนะธวัชโชติ? (Manasawee Wantanatavatod, MD · ID รพ.ราชวิถี)
+# AIDS and HIV infection — พ.ญ.มนัสวี (Manasawee Wantanatavatod, MD · Infectious Disease, รพ.ราชวิถี)
 
 ไฟล์: Drive `13PhGovTDoDXERCeB2zfMC1_1nZq2mAlJ` "HIV and AIDS พ.ญ.มนัสวี.pdf" (25 MB) · บรรยาย จ. 5 ต.ค. 2569 10:00–12:00 (ย้ายจาก 9 ต.ค.)
 ดึงข้อความด้วย read_file_content ได้ — **สไลด์ที่เป็นตาราง/ภาพ (WHO staging, สูตรยาแรก, ตารางยาตีกัน, ตาราง OI prophylaxis, การรักษา crypto, LTBI) ไม่มีข้อความ** → ส่วนนั้นในบทเรียนอิงแนวทางไทย/สากลและระบุไว้
