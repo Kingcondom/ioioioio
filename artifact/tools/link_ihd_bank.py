@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""ผูกข้อสอบคาบ 13 Ischemic heart disease ในคลัง Ward Drill (33 ข้อ) เข้าบทเรียน cardio 24/9
+"""ผูกข้อสอบคาบ 13 Ischemic heart disease ในคลัง Ward Drill (33 ข้อ) เข้าบทเรียน cardio คาบ 13 (เดิมใช้เลข 24/9)
 รันหลัง build_ihd.py ทุกครั้ง"""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -17,5 +17,5 @@ MAP = {
     "cardio-ihd-08": ["C-MCQ-13", "C-OLD-37", "C-OLD-39"],                       # NSTE-ACS / UA
     "cardio-ihd-11": ["C-MCQ-16", "C-OLD-45", "C-OLD-46", "C-OLD-47", "C-OLD-55", "C-OLD-44"],  # secondary prevention
 }
-n = link("cardio", "24/9", MAP, meq=["C-MEQ-01"], osce=["C-OSCE-01"])
+n = link("cardio", "13", MAP, meq=["C-MEQ-01"], osce=["C-OSCE-01"])
 print("ผูกเพิ่ม %d ข้อ" % n)

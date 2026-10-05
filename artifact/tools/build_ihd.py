@@ -944,7 +944,7 @@ sec("cardio-ihd-11", "หลังรอดจาก MI — ยาและก�
     ])
 
 MEQ = [{
- "id": "CAR-IHD-MEQ-01", "part": "MEQ", "lec": "24/9", "lecture": "Ischemic heart diseases",
+ "id": "CAR-IHD-MEQ-01", "part": "MEQ", "lec": "13", "lecture": "Ischemic heart diseases",
  "topic": "Acute STEMI at a non-PCI hospital — diagnosis, reperfusion decision and complications",
  "vignette": """ชายไทยอายุ 58 ปี มาห้องฉุกเฉินโรงพยาบาลชุมชนด้วยเจ็บแน่นหน้าอก 50 นาที
 PI: 50 นาทีก่อนมาโรงพยาบาล ขณะเดินขึ้นบันได มีอาการแน่นกลางอกเหมือนถูกกดทับ ร้าวไปกรามและแขนซ้าย เหงื่อแตกท่วมตัว คลื่นไส้ อาเจียน 1 ครั้ง นั่งพักแล้วไม่ดีขึ้น
@@ -1069,7 +1069,7 @@ ECG 12 ลีด (ทำที่นาทีที่ 8 หลังถึง�
  "nl": ["2.3.9-3(1)"], "years": [], "_kind": "meq", "_set": "cardio"}]
 
 OSCE = [{
- "id": "CAR-IHD-OSCE-01", "part": "OSCE/SAQ", "lec": "24/9", "lecture": "Ischemic heart diseases",
+ "id": "CAR-IHD-OSCE-01", "part": "OSCE/SAQ", "lec": "13", "lecture": "Ischemic heart diseases",
  "topic": "SAQ – แปลผล ECG และตัดสินใจเปิดหลอดเลือดสี่สถานการณ์",
  "station": "SAQ (เขียนตอบ) 10 นาที",
  "instruction": """ผู้ป่วยสี่รายมาด้วยเจ็บแน่นหน้าอก จงตอบคำถามท้ายตาราง
@@ -1133,7 +1133,7 @@ ST elevation **2.5 mm ใน V2–V4** · ผู้ชายอายุ 45 ป�
  "nl": ["2.3.9-3(1)"], "years": [], "_kind": "meq", "_set": "cardio"}]
 
 LECTURE = {
- "lec": "24/9",
+ "lec": "13", "date": "พฤ. 24 ก.ย.",
  "title": "Ischemic heart disease — ตั้งแต่ CCS ถึง STEMI",
  "subtitle": "atherosclerosis timeline และ plaque rupture · step approach และ pretest probability ของ CCS · ยาลดอาการกับยาที่ลดการตาย · นิยาม MI · เกณฑ์ ECG ของ STEMI และ posterior MI · เวลาเป้าหมายของการเปิดหลอดเลือด · ยาละลายลิ่มเลือด · hs-troponin 0h/1h · GRACE และความเร่งด่วนของการสวน · DAPT และผู้ป่วยที่ต้องกิน OAC · การป้องกันทุติยภูมิ",
  "objectives": [
