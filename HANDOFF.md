@@ -168,7 +168,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 > ⚠️ เลข `lec` แบบวันที่ (เช่น "23/9") เป็นตัวแทนชั่วคราว — **เลขคาบจริงดูได้จากฟิลด์ `lec` ใน `bank_merged.json`** (คลังเดียวกับ Ward Drill)
 > ถ้าคาบนั้นมีข้อในคลัง ให้ใช้เลขนั้นและผูกข้อด้วย `artifact/tools/link_bank.py` (ดูตัวอย่าง `link_ihd_bank.py` และท้าย `build_af.py`)
 
-**ความครอบคลุมคลัง Ward Drill (5 ต.ค.)** — ผูกเข้าบทเรียนแล้ว **324/570 ข้อ (6 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 22/174 (Mock 200 ข้อไม่ผูกคาบ) ·
+**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **324/570 ข้อ (6 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 22/174 (Mock 200 ข้อไม่ผูกคาบ) ·
 คาบในคลังที่ยังไม่มีบทเรียน: Cardio 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 14, 19, 22, 28, 30, 42
 
 ---
