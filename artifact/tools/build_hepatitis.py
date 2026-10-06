@@ -590,34 +590,7 @@ if not any(m["set"] == SET for m in idx):
     idx.append(GI_META)
 json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-# ผูกข้อ Mock หมวด GI ที่ตรงเรื่อง (ผ่าน link_bank ซึ่งตรวจว่าไม่ซ้ำกับคาบอื่นในชุดนี้)
-import link_bank
-_orig = link_bank.link
-def link_mock(setkey, lec, sections):
-    """ข้อ mock อยู่ในคลังชุด 'mock' แต่ลงในไฟล์ชุด gi"""
-    idxm = link_bank.bank_index("mock")
-    d = json.load(open(path, encoding="utf-8"))
-    L = [l for l in d if l["lec"] == lec][0]
-    have = {i["id"] for s_ in L["sections"] for i in s_["items"]}
-    used = set()
-    for f in os.listdir(os.path.join(BUILD, "data")):
-        if f.endswith(".json") and f not in ("nl.json", "index.json"):
-            for l in json.load(open(os.path.join(BUILD, "data", f), encoding="utf-8")):
-                if f == SET + ".json" and l["lec"] == lec:
-                    continue
-                used |= {i["id"] for s_ in l["sections"] for i in s_["items"]}
-    n = 0
-    secs = {s_["id"]: s_ for s_ in L["sections"]}
-    for sid, ids in sections.items():
-        for i in ids:
-            assert i in idxm and i not in used, i
-            if i not in have:
-                it = dict(idxm[i]); it["kind"] = "old"
-                it["topic"] = (it.get("topic") or "").split("·", 1)[-1].strip()
-                it["ref"] = ["Mock exam MED421 — " + i] + list(it.get("ref", []))
-                secs[sid]["items"].append(it); n += 1
-    json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    return n
+from link_mock import link_mock
 added = link_mock(SET, "12/10", {"gi-hep-03": ["MOCK-149"], "gi-hep-05": ["MOCK-153"]})
 
 d = json.load(open(path, encoding="utf-8"))
