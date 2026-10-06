@@ -74,5 +74,81 @@
   },
   "file": "data/nephro.json",
   "lectureCount": 9
+ },
+ {
+  "set": "endo",
+  "label": "Endocrine",
+  "thai": "ต่อมไร้ท่อและเมแทบอลิซึม",
+  "title": "Endocrine · ต่อมไร้ท่อและเมแทบอลิซึม",
+  "source": "สไลด์ NL2-Endocrine",
+  "intro": "ชุด Endocrine มี 7 หมวด 26 หัวข้อ ครอบคลุม deck NL2-Endocrine ทั้ง 347 หน้า ได้แก่ เบาหวาน, hypoglycemia กับ DKA/HHS, thyrotoxicosis (Graves, ผลข้างเคียงยา ATD, TPP, thyroiditis, storm), hypothyroidism/myxedema coma/thyroid nodule, hypercalcemia, ต่อมหมวกไตกับต่อมใต้สมอง (Cushing, adrenal insufficiency, Sheehan) และไขมันในเลือด พร้อมข้อสอบเก่าจากสไลด์เกือบทุกข้อ\nแนะนำให้อ่านเรียงตามลำดับ: เบาหวานก่อน แล้วต่อด้วยภาวะฉุกเฉินจากน้ำตาล จากนั้นอ่านไทรอยด์สองหมวดต่อกัน (ใช้ตาราง TSH × FT4 ร่วมกัน) แล้วจึงอ่าน Ca และ HPA axis ปิดท้ายด้วย dyslipidemia ซึ่งเชื่อมกับหมวดเบาหวานและหัวใจ",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#2e7a4a",
+   "soft": "#e2f1e7",
+   "ink": "#225e38",
+   "dark": "#7fdca2",
+   "darkSoft": "#10241a",
+   "darkInk": "#a9ebc1"
+  },
+  "file": "data/endo.json",
+  "lectureCount": 7
+ },
+ {
+  "set": "hemato",
+  "label": "Hemato",
+  "thai": "โลหิตวิทยา",
+  "title": "Hemato · โลหิตวิทยา",
+  "source": "สไลด์ NL2-Hemato",
+  "intro": "ชุด Hemato มี 10 หมวด 37 หัวข้อ ครอบคลุมทั้ง deck NL2-Hemato (387 หน้า): approach to anemia, hemolytic anemia, thalassemia, coagulation, platelet/TMA, bone marrow failure และ acute leukemia, lymphoma, MPN, transfusion medicine และ snake bite พร้อมข้อสอบเก่าในสไลด์เกือบทุกข้อ\nแนะนำเรียงตามลำดับ: เริ่ม CBC/reticulocyte และซีดแบบสร้างไม่พอ → hemolysis → thalassemia (ใช้ MCV และ hemolysis ต่อกัน) แล้วไป coagulation ก่อน platelet/TTP/DIC เพราะต้องอ่าน coagulogram เป็น จากนั้นมะเร็งเม็ดเลือด (หมวด 6–8) ปิดท้ายด้วย blood product/transfusion reaction และ snake bite ซึ่งใช้ความรู้ coagulogram อีกครั้ง",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#a3271f",
+   "soft": "#f8e7e5",
+   "ink": "#821e17",
+   "dark": "#f29086",
+   "darkSoft": "#2a1513",
+   "darkInk": "#f7b6ae"
+  },
+  "file": "data/hemato.json",
+  "lectureCount": 10
+ },
+ {
+  "set": "id",
+  "label": "Infectious",
+  "thai": "โรคติดเชื้อ",
+  "title": "Infectious · โรคติดเชื้อ",
+  "source": "สไลด์ NL2-Infectious (Completed)",
+  "intro": "Deck NL2-Infectious (324 หน้า) แบ่งเป็น 9 หมวด 31 หัวข้อ ไล่ตาม outline ของสไลด์: ไข้เฉียบพลันจากแบคทีเรียในไทย (AUF, melioidosis, leptospirosis, rickettsia) → dengue, chikungunya, infectious mononucleosis → malaria → anthrax, diphtheria, pertussis, mucormycosis → rabies, tetanus, C. difficile → STI (syphilis, chancroid, LGV, gonorrhea, NGU) → HIV (วินิจฉัย OI ตาม CD4 ART และ PrEP/PEP) → OI ใน HIV (ฝ้าขาวในปาก เชื้อรา dimorphic ท้องเสียเรื้อรัง) → พยาธิ (ใบไม้ Strongyloides Capillaria) และเรื่องปิดท้าย candidemia กับ pneumococcal vaccine\nแนะนำให้อ่านหมวด 01–03 ต่อกันเพราะใช้แยกโรคไข้เขตร้อนจากประวัติสัมผัสและ CBC ส่วนหมวด 07 (HIV) ควรอ่านก่อนหมวด 08 (OI)\nข้อสอบท้ายหัวข้อส่วนใหญ่ (ป้าย \"ข้อสอบเก่า\") เรียบเรียงจากตัวอย่างข้อสอบในสไลด์ เฉลยในสไลด์เป็นภาพไฮไลต์ จึงตอบตามหลักฐานในสไลด์และแนวทางปัจจุบัน และบอกไว้ในคำอธิบายเมื่อแนวทางเปลี่ยนไปแล้ว (เช่น ACT ของ malaria, ยา CDI)",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#4d6b12",
+   "soft": "#ebf1dd",
+   "ink": "#3b530c",
+   "dark": "#bde06a",
+   "darkSoft": "#1a2210",
+   "darkInk": "#d3ec98"
+  },
+  "file": "data/id.json",
+  "lectureCount": 9
+ },
+ {
+  "set": "neuro",
+  "label": "Neuro",
+  "thai": "ระบบประสาท",
+  "title": "Neuro · ระบบประสาท",
+  "source": "สไลด์ NL2-Neuro",
+  "intro": "ชุด Neuro มี 11 หมวด 38 หัวข้อ ครอบคลุมทั้ง deck NL2-Neuro (418 หน้า): localization, stroke, seizure/epilepsy, CNS infection (รวม eosinophilic meningitis และ neurocysticercosis), dementia, Parkinson/tremor, secondary และ primary headache, spinal cord, peripheral nerve (facial palsy, GBS) และ NMJ/muscle พร้อมข้อสอบเก่าในสไลด์เกือบทุกข้อ\nแนะนำเริ่มจากหมวด 01 localization เพราะใช้ต่อทุกหมวด แล้วอ่าน stroke → seizure → CNS infection ซึ่งออกสอบมากที่สุด จากนั้นจึงไป headache (07 ก่อน 08 เพื่อคัด red flag ก่อน) และปิดด้วย spinal cord → peripheral nerve → NMJ/muscle ซึ่งอ่านคู่กับภาพ motor unit ในหมวด 11",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#3a4fa8",
+   "soft": "#e6e9f7",
+   "ink": "#2c3d87",
+   "dark": "#9fb0f5",
+   "darkSoft": "#151a2c",
+   "darkInk": "#c3cefa"
+  },
+  "file": "data/neuro.json",
+  "lectureCount": 11
  }
 ]

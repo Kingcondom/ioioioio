@@ -11,10 +11,29 @@ import json, sys, os, hashlib, random
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# ชุดที่ publish ไปแล้วก่อนมีโหมดสมดุล — คงวิธีเดิมไว้ ไม่ให้คำตอบที่ผู้ใช้เคยทำผิดตำแหน่ง
+LEGACY = {"gi", "cardio", "resp", "nephro"}
+
 def spread(key):
     path = os.path.join(ROOT, "data", f"{key}.json")
     data = json.load(open(path))
     n = 0
+    if key not in LEGACY:
+        raw = [it for l in data for s in l.get("sections", []) for it in s.get("items", []) if it.get("_raw")]
+        seq = []
+        rng0 = random.Random(int(hashlib.md5(key.encode()).hexdigest(), 16))
+        while len(seq) < len(raw):
+            blk = list(range(5)); rng0.shuffle(blk); seq += blk
+        for it, target in zip(raw, seq):
+            it.pop("_raw")
+            if it.pop("keep_order", False):
+                continue
+            assert it["answer"] == 0, it["id"]
+            rng = random.Random(int(hashlib.md5(it["id"].encode()).hexdigest(), 16))
+            rest = it["choices"][1:]; rng.shuffle(rest)
+            it["choices"] = rest[:target] + [it["choices"][0]] + rest[target:]
+            it["answer"] = target
+            n += 1
     for l in data:
         for s in l.get("sections", []):
             for it in s.get("items", []):
