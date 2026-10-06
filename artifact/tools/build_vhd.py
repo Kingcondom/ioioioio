@@ -213,4 +213,209 @@ mean gradient ช่วยประเมินแต่ขึ้นกับอ
          "Rheumatic MS + AF = warfarin ไม่ใช่ NOAC", "Anticoagulation in rheumatic MS", R("Mitral stenosis — treatment") + [ESC25, "INVICTUS, NEJM 2022"], NLN + ["2.3.9(1)", "B2.4(3)"]),
     ], NLN + ["3.3.23"], SRC + " · อัปเดตตาม ESC/EACTS 2025")
 
-# ═══ ต่อส่วนที่ 2 ด้านล่าง ═══
+
+# ───────────────────────────── 5
+sec("cardio-vhd-05", "Mitral regurgitation และ mitral valve prolapse",
+    "Acute MR → pulmonary edema ทันที · chronic MR → LA/LV ขยายค่อยเป็นค่อยไป · primary กับ secondary รักษาต่างกัน", 10,
+"""### สาเหตุ (สไลด์)
+| **Acute** | **Chronic** |
+|---|---|
+| **Papillary muscle rupture หลัง MI** | **RHD** |
+| อุบัติเหตุกระแทกหน้าอก | **Mitral valve prolapse (MVP)** |
+| **Infective endocarditis** | พิการแต่กำเนิด (cleft mitral) |
+| **Chordae ขาด** (acute-on-chronic ใน myxomatous) | **HOCM** · **DCM** |
+
+### Primary กับ secondary MR — คำถามแรกที่ต้องตอบ
+| | **Primary (degenerative/organic)** | **Secondary (functional)** |
+|---|---|---|
+| ปัญหาอยู่ที่ | **ตัวลิ้น** (RHD, MVP, IE) | **ห้องหัวใจ** — LV ขยาย (ischemic, DCM) หรือ LA/วงแหวนขยาย (AF) ดึงลิ้นให้ปิดไม่สนิท |
+| รักษา | **แก้ลิ้น** — ผ่าตัดซ่อม (repair) ดีกว่าเปลี่ยน | **รักษาหัวใจก่อน** — GDMT, CRT, revascularization · แล้วจึงพิจารณาหัตถการ |
+
+### Acute กับ chronic — ทำไมอาการต่างกันมาก
+- **Acute** — LA ขนาดปกติ ยืดไม่ทัน → ความดันพุ่ง → **pulmonary edema และช็อกทันที** เสียงฟู่อาจสั้นและเบา (ความดันสองห้องเท่ากันเร็ว)
+- **Chronic** — LA และ LV **ค่อย ๆ ขยายรับปริมาตร** → ไม่มีอาการนาน · เมื่อรุนแรงจึง **เหนื่อยง่าย หอบเมื่อออกแรง นอนราบไม่ได้** · ระวัง **LV เสื่อมเงียบ ๆ** ก่อนมีอาการ
+
+### ตรวจร่างกาย chronic MR (สไลด์)
+- **Apex ย้ายออกด้านข้าง** (LV ขยาย)
+- **S1 เบาหรือหายไป** (ลิ้นปิดไม่สนิท)
+- **Holosystolic murmur ที่ MVA กระจายไปรักแร้**
+- ECG: LA/LV โต AF · CXR: LA LV โต อาจมีปอดคั่ง · **Echo: หาสาเหตุ วัดขนาดและการทำงานของ LV ประเมินว่าซ่อมได้ไหม**
+
+### Mitral valve prolapse (สไลด์)
+- **Mid/late systolic click + late systolic murmur** (เสียงแหลม)
+- ลิ้นหนาแบบ **myxomatous** — ความผิดปกติของคอลลาเจน · พบร่วมกับ **ทรวงอกผิดรูปและ Marfan** · **หญิง > ชาย**
+- ส่วนใหญ่ไม่มีอาการ หรือเจ็บหน้าอกไม่จำเพาะ ใจสั่น · บางรายเป็น MR รุนแรง
+- **Maneuver** — **ยืน/Valsalva (LV เล็กลง) → click เร็วขึ้น murmur ยาวขึ้น** · **นั่งยอง (LV ใหญ่ขึ้น) → click ช้าลง murmur สั้นลง**
+- **MR รุนแรงที่มีอาการ → ผ่าตัดซ่อมลิ้น (MV repair)**
+""",
+    ["Acute MR (papillary rupture, IE, chordae) → pulmonary edema ทันที",
+     "Primary MR = ลิ้นเสีย → ซ่อมลิ้น · secondary = หัวใจขยาย → GDMT/CRT ก่อน",
+     "Chronic MR: apex ย้ายด้านข้าง · S1 เบา · holosystolic ที่ apex กระจายไปรักแร้",
+     "MVP: mid-systolic click + late systolic murmur · ยืน → click เร็ว murmur ยาว"],
+    [mcq(N(7), "Three days after an inferior STEMI, a patient suddenly develops severe pulmonary oedema and hypotension. A new, soft, short apical systolic murmur is heard without a thrill. What is the most likely cause?",
+         ["Ventricular septal rupture", "Papillary muscle rupture causing acute mitral regurgitation", "Acute aortic regurgitation", "Pericardial tamponade", "Pulmonary embolism"], 1,
+         "**Acute MR จาก papillary muscle rupture** (มักเป็น posteromedial papillary muscle ซึ่งมีเลือดเลี้ยงเส้นเดียวจาก RCA → พบหลัง inferior MI) — LA ขนาดปกติรับปริมาตรไม่ทัน → **pulmonary edema และช็อกทันที** · เสียงฟู่ **อาจเบาและสั้น** เพราะความดัน LA สูงทันความดัน LV เร็ว\n\nแยกจาก **VSR**: pansystolic ดังพร้อม **thrill ที่ LLSB** · ทั้งสองต้องทำ echo ด่วนและผ่าตัด",
+         "หลัง MI: murmur ที่ apex ไม่มี thrill + pulmonary edema = papillary rupture", "Acute MR after MI", R("Mitral regurgitation — acute"), NLN + ["2.2.1"]),
+    ], NLN + ["B7.1.2(1)"])
+
+# ───────────────────────────── 6
+sec("cardio-vhd-06", "MR — เกณฑ์ความรุนแรงและเมื่อไรต้องผ่าตัด (อัปเดต ESC/EACTS 2025)",
+    "Severe MR: VC ≥ 0.7 · RVol ≥ 60 · RF ≥ 50% · EROA ≥ 0.4 · ผ่าตัดก่อน LV เสีย: LVEF ≤ 60 หรือ LVESD ≥ 40", 9,
+"""### เกณฑ์ MR รุนแรงทาง echo (สไลด์)
+| ตัวแปร | Severe |
+|---|---|
+| **Vena contracta** | **≥ 0.7 ซม.** |
+| **Regurgitant volume (RVol)** | **≥ 60 มล.** |
+| **Regurgitant fraction (RF)** | **≥ 50%** |
+| **EROA** | **≥ 0.4 ซม.²** (primary MR) |
+| ร่วมกับ | LV และ LA ขยาย |
+
+### Primary MR — เมื่อไรผ่าตัด
+**หลักคิด** — LVEF ใน MR **สูงเกินจริง** (เลือดส่วนหนึ่งรั่วกลับเข้า LA ที่ความดันต่ำ) **LVEF 60% จึงถือว่าเริ่มเสื่อมแล้ว** ต้องผ่าตัดก่อน LV เสียถาวร
+
+| สถานการณ์ | ACC/AHA 2020 (สไลด์) | **ESC/EACTS 2025** |
+|---|---|---|
+| **มีอาการ** | ผ่าตัด (I) | ผ่าตัด (I) — **ซ่อมลิ้นถ้าทำได้** |
+| **ไม่มีอาการ + LV เริ่มเสื่อม** | **LVEF ≤ 60% หรือ LVESD ≥ 40 มม.** → ผ่าตัด (I) | เหมือนเดิม **+ เพิ่ม LVESD index ≥ 20 มม./ม.²** |
+| **ไม่มีอาการ LV ยังดี** | ซ่อมได้ > 95% และเสี่ยงตาย < 1% → ซ่อม (IIa) · **AF ใหม่ หรือ PASP > 50** → (IIa) | **ซ่อมลิ้นแนะนำ (I) เมื่อมี ≥ 3 ข้อ: AF · PASP > 50 mmHg · LA volume index ≥ 60 มล./ม.² · secondary TR ปานกลางขึ้นไป** · น้อยกว่า 3 ข้อ → ควรพิจารณา (IIa) — ในศูนย์ที่ซ่อมได้ผลทนทาน |
+| Progressive (ยังไม่รุนแรง) | ติดตามเป็นระยะ | ติดตามเป็นระยะ |
+**ผู้สูงอายุ/เสี่ยงผ่าตัดสูง** — **TEER (transcatheter edge-to-edge repair, MitraClip)** เป็นทางเลือก
+
+### Secondary MR
+1. **รักษาหัวใจล้มเหลวเต็มที่ (GDMT)** · **CRT** ถ้าเข้าเกณฑ์ · **รักษาหลอดเลือดหัวใจ**
+2. ยังมีอาการแม้ได้ GDMT เต็มที่ → **TEER** ในผู้ป่วยที่เลือกแล้ว (หลักฐาน COAPT) หรือผ่าตัดถ้าต้องผ่าตัดหัวใจอื่นอยู่แล้ว
+""",
+    ["Severe MR: VC ≥ 0.7 · RVol ≥ 60 · RF ≥ 50% · EROA ≥ 0.4",
+     "ใน MR LVEF สูงเกินจริง → LVEF ≤ 60% = LV เริ่มเสื่อม",
+     "ไม่มีอาการ: LVEF ≤ 60 หรือ LVESD ≥ 40 (หรือ LVESDi ≥ 20) → ผ่าตัด",
+     "ESC 2025: AF · PASP > 50 · LAVi ≥ 60 · TR ≥ ปานกลาง — ≥ 3 ข้อ → ซ่อม (I)",
+     "Secondary MR: GDMT/CRT ก่อน → TEER"],
+    [mcq(N(8), "An asymptomatic 55-year-old man has severe primary mitral regurgitation from a flail posterior leaflet. LVEF is 58% and LVESD 42 mm. What is the recommended management?",
+         ["Repeat echocardiography in 2 years", "Start ACE inhibitor and observe", "Mitral valve surgery (repair preferred)", "TEER as first-line regardless of surgical risk", "Wait until symptoms develop"], 2,
+         "**Primary MR รุนแรงที่ไม่มีอาการแต่ LV เริ่มเสื่อม** — **LVEF ≤ 60% หรือ LVESD ≥ 40 มม.** (ESC/EACTS 2025 เพิ่ม LVESDi ≥ 20 มม./ม.²) → **ผ่าตัด (Class I) โดยซ่อมลิ้นถ้าทำได้**\n\nเหตุผล: ใน MR **LVEF สูงเกินจริง** การรอให้มีอาการหรือ LVEF ต่ำแบบปกติจะทำให้ LV เสียถาวร · ยาขยายหลอดเลือดไม่ได้ชะลอการผ่าตัดใน primary MR · TEER สำหรับผู้ที่เสี่ยงผ่าตัดสูง",
+         "Primary MR ไม่มีอาการ + LVEF ≤ 60 หรือ LVESD ≥ 40 → ผ่าตัด", "Surgery timing in primary MR", R("Mitral regurgitation algorithm") + [ESC25], NLN + ["3.3.23"]),
+    ], NLN + ["3.3.23"], SRC + " · อัปเดตตาม ESC/EACTS 2025")
+
+# ───────────────────────────── 7
+sec("cardio-vhd-07", "Aortic stenosis — อาการ ตรวจร่างกาย และการรักษา (อัปเดต ESC/EACTS 2025)",
+    "Angina · syncope · HF · ESM ที่ RUSB ไป carotid · pulsus parvus et tardus · TAVI อายุ ≥ 70 ปี", 11,
+"""### สาเหตุ (สไลด์)
+**หินปูนเสื่อม (degenerative calcification)** — ผู้สูงอายุ · **ลิ้นสองแฉก (bicuspid)** หรือแฉกเดียวแต่กำเนิด — อายุน้อยกว่า · **รูมาติก** (มักมี MS ร่วม)
+
+### อาการสามอย่าง — และความหมายต่อการพยากรณ์
+| อาการ | กลไก |
+|---|---|
+| **Angina** | LV หนา ต้องการออกซิเจนมาก + ความดันในผนังสูงบีบหลอดเลือดใต้เยื่อหุ้ม |
+| **Syncope เมื่อออกแรง** | กล้ามเนื้อหลอดเลือดขยาย แต่ cardiac output เพิ่มไม่ได้ผ่านลิ้นที่ตีบ |
+| **Heart failure** | LV แข็งแล้วล้ม |
+**เมื่อมีอาการแล้วการพยากรณ์แย่ลงทันที** โดยไม่ผ่าตัด — จึงเป็นข้อบ่งชี้หลักของการเปลี่ยนลิ้น
+
+### ตรวจร่างกาย
+- **Ejection systolic murmur ที่ช่องซี่โครงที่ 2 ขวา กระจายไปคอทั้งสองข้าง** (สไลด์) · ยิ่งรุนแรง **ยอดเสียงยิ่งช้า (late-peaking)**
+- **Pulsus parvus et tardus** — ชีพจรเบาและขึ้นช้า · **pulse pressure แคบ** (ตรงข้ามกับ AR)
+- **S2 เบาหรือเดี่ยว** (A2 หาย) · **LV heave** ยกค้าง
+- ECG: **LVH with strain** · left axis deviation · CXR: หัวใจไม่ค่อยโต · **aorta ส่วนต้นขยาย** · หินปูนที่ลิ้น
+
+### เกณฑ์ AS รุนแรง (echo)
+**Vmax ≥ 4.0 ม./วินาที · mean gradient ≥ 40 mmHg · AVA ≤ 1.0 ซม.²**
+ถ้า AVA เล็กแต่ gradient ต่ำ (low-flow low-gradient) → **dobutamine stress echo** หรือ **CT calcium score** เพื่อแยก AS จริงกับ pseudo-severe
+
+### การรักษา — ESC/EACTS 2025
+| สถานการณ์ | คำแนะนำ |
+|---|---|
+| **AS รุนแรง + มีอาการ** | **เปลี่ยนลิ้น (Class I)** |
+| **ไม่มีอาการ + LVEF < 50%** ไม่มีสาเหตุอื่น | **เปลี่ยนลิ้น (Class I)** |
+| ไม่มีอาการ + **LVEF < 55%** | ควรพิจารณา (IIa) |
+| **ไม่มีอาการ + high-gradient AS + LVEF ปกติ + ความเสี่ยงหัตถการต่ำ** | **ใหม่ — แนวทาง 2025 สนับสนุนการเปลี่ยนลิ้นเร็วขึ้น** แทนการรอดูอาการ (หลักฐาน EARLY TAVR, AVATAR, EVOLVED) |
+
+**เลือกวิธี (Heart Team)** — **TAVI สำหรับอายุ ≥ 70 ปี** (ลดจาก 75 ในแนวทางเดิม) ที่ทางเข้าหลอดเลือดเหมาะ · **SAVR สำหรับอายุ < 70 ปีที่ความเสี่ยงผ่าตัดต่ำ** · พิจารณาอายุขัยและแผนการรักษาตลอดชีวิตร่วมด้วย · ลิ้นสองแฉกที่ความเสี่ยงผ่าตัดสูงขึ้นอาจใช้ TAVI ได้ถ้ากายวิภาคเหมาะ
+
+**ระหว่างรอ** (สไลด์) — **เลี่ยงกีฬาแข่งขันและภาวะขาดน้ำ** · ยาไม่ชะลอการตีบ · ระวังยาขยายหลอดเลือดแรง ๆ ที่ทำให้ความดันตก
+""",
+    ["AS: angina · syncope · HF — มีอาการแล้วพยากรณ์แย่ → เปลี่ยนลิ้น",
+     "ESM RUSB → carotid · late-peaking · pulsus parvus et tardus · pulse pressure แคบ",
+     "Severe AS: Vmax ≥ 4 · MG ≥ 40 · AVA ≤ 1.0",
+     "ESC 2025: TAVI ≥ 70 ปี · SAVR < 70 ความเสี่ยงต่ำ",
+     "ไม่มีอาการ: LVEF < 50 → I · < 55 → IIa · high-gradient ความเสี่ยงต่ำ → เปลี่ยนเร็วขึ้น"],
+    [mcq(N(9), "A 78-year-old man has exertional syncope. A harsh late-peaking systolic murmur is heard at the right upper sternal border radiating to both carotids. Echo: Vmax 4.6 m/s, mean gradient 52 mmHg, AVA 0.7 cm², LVEF 60%. Transfemoral access is suitable. According to the 2025 ESC/EACTS guideline, what is the preferred treatment?",
+         ["Medical therapy with a vasodilator", "Balloon aortic valvuloplasty as definitive therapy", "Transcatheter aortic valve implantation (TAVI)",
+          "Watchful waiting until heart failure develops", "Surgical repair of the aortic valve"], 2,
+         "**AS รุนแรง** (Vmax ≥ 4 · MG ≥ 40 · AVA ≤ 1.0) **ที่มีอาการ** (syncope เมื่อออกแรง) → **เปลี่ยนลิ้น (Class I)**\n\n**ESC/EACTS 2025 ลดเกณฑ์อายุของ TAVI จาก 75 เป็น 70 ปี** → ผู้ป่วย 78 ปีที่ทางเข้าหลอดเลือดเหมาะ → **TAVI** · SAVR สำหรับอายุ < 70 ที่ความเสี่ยงต่ำ\n\nยาไม่ชะลอโรค · balloon valvuloplasty ใช้เป็นสะพานชั่วคราวเท่านั้น",
+         "AS รุนแรงมีอาการ อายุ ≥ 70 → TAVI (ESC 2025)", "AS intervention", R("Aortic stenosis") + [ESC25], NLN + ["2.1.5", "3.3.23"]),
+    ], NLN + ["2.1.5", "3.3.23"], SRC + " · อัปเดตตาม ESC/EACTS 2025")
+
+# ───────────────────────────── 8
+sec("cardio-vhd-08", "Aortic regurgitation — ชีพจรกระแทก และเกณฑ์ผ่าตัดใหม่",
+    "Diastolic blowing · ICS 3 ซ้าย = ลิ้น · ICS 2 ขวา = root · wide pulse pressure · ESC 2025 ใช้ค่า index", 10,
+"""### สาเหตุ (สไลด์)
+| **ที่ตัวลิ้น** | **ที่ราก aorta** |
+|---|---|
+| **รูมาติก** · ลิ้นสองแฉก · ลิ้นหย่อน · **IE** · อุบัติเหตุ · ซิฟิลิส · ankylosing spondylitis | **Marfan syndrome** · **aortic dissection** · ความดันสูง · aortitis |
+
+### ตรวจร่างกาย
+- **Diastolic blowing murmur (decrescendo เสียงแหลม)** — **ดังสุดที่ ICS 3 ซ้าย = โรคที่ลิ้น · ICS 2 ขวา = โรคที่ราก aorta** (สไลด์) · ฟังท่านั่งโน้มตัวไปข้างหน้า หายใจออกสุดแล้วกลั้น
+- **LV heave · apex ย้ายลงล่างและออกด้านข้าง** (LV ขยายมาก)
+- **Chronic severe AR — ชีพจรและความดันชีพจรกว้าง**: **water-hammer (Corrigan's pulse)** · **de Musset** (ศีรษะผงกตามจังหวะ) · **Quincke** (เส้นเลือดฝอยใต้เล็บเต้น) · **Müller** (ลิ้นไก่เต้น) · **Traube** (เสียง "pistol shot" ที่ femoral) · **Duroziez** (เสียงฟู่สองจังหวะเมื่อกด femoral)
+**กลไก** — stroke volume ใหญ่มาก (รวมเลือดที่รั่วกลับ) ดันความดัน systolic สูง แล้วเลือดไหลกลับเข้า LV ทำให้ diastolic ตกต่ำ
+
+### เกณฑ์ AR รุนแรง (สไลด์)
+**Vena contracta > 0.6 ซม. · holodiastolic flow reversal ใน descending aorta · RVol ≥ 60 มล. · RF ≥ 50% · EROA ≥ 0.3 ซม.²** · LV ขยาย
+
+### เมื่อไรผ่าตัด
+| สถานการณ์ | ACC/AHA 2020 (สไลด์) | **ESC/EACTS 2025** |
+|---|---|---|
+| **มีอาการ** | AVR (I) | AVR (I) |
+| ไม่มีอาการ + **LVEF < 50%** (2025: **≤ 50%**) | AVR (I) | AVR (I) |
+| ไม่มีอาการ + **LVESD > 50 มม.** | AVR (IIa) | **LVESD > 50 มม. หรือ LVESDi > 25 มม./ม.²** → AVR |
+| ไม่มีอาการ ความเสี่ยงผ่าตัดต่ำ | **LVEDD > 65 มม.** (IIb) | **ใหม่: อาจพิจารณาเมื่อ LVESDi > 22 มม./ม.² · LVESVi > 45 มล./ม.² · หรือ LVEF ≤ 55%** |
+| ต้องผ่าตัดหัวใจอื่นอยู่แล้ว | AVR (I) | AVR (I) |
+- **ESC 2025** — **TAVI อาจพิจารณาในผู้ป่วย AR ที่มีอาการแต่ผ่าตัดไม่ได้** และกายวิภาคเหมาะ
+- **Acute AR** (IE, aortic dissection) → LV ปรับตัวไม่ทัน เกิด pulmonary edema/ช็อก → **ผ่าตัดด่วน** · ห้ามใส่ IABP
+- **Marfan** — ผ่าตัดราก aorta ตามขนาด (ประมาณ ≥ 50 มม. หรือเล็กกว่านั้นถ้ามีปัจจัยเสี่ยง)
+""",
+    ["AR: diastolic blowing · ICS 3 ซ้าย = ลิ้น · ICS 2 ขวา = root",
+     "Wide pulse pressure · water-hammer · Quincke · de Musset · Duroziez",
+     "Severe AR: VC > 0.6 · holodiastolic reversal · RVol ≥ 60 · RF ≥ 50% · EROA ≥ 0.3",
+     "ผ่าตัด: มีอาการ · LVEF ≤ 50 · LVESD > 50 หรือ LVESDi > 25",
+     "ESC 2025: พิจารณาเร็วขึ้นถ้า LVESDi > 22 · LVESVi > 45 · LVEF ≤ 55 (เสี่ยงต่ำ)"],
+    [mcq(N(10), "A diastolic blowing murmur of aortic regurgitation is heard loudest at the right second intercostal space rather than the left third intercostal space. What does this suggest?",
+         ["Rheumatic valve disease", "Aortic root disease such as Marfan syndrome or dissection", "Coexisting mitral stenosis", "Pulmonary regurgitation", "A bicuspid aortic valve without root dilatation"], 1,
+         "สไลด์: **diastolic blowing murmur ดังสุดที่ ICS 3 ซ้าย → โรคที่ตัวลิ้น · ICS 2 ขวา → โรคที่ราก aorta**\n\nราก aorta ที่ขยาย (Marfan, dissection, ความดันสูง, aortitis) ดันกระแสเลือดที่รั่วไปทางขวาของกระดูกอก · ต้องตรวจขนาดราก aorta ด้วย echo/CT เพราะการรักษาต่างกัน",
+         "AR ดังที่ ICS 2 ขวา = root disease", "AR — valve vs root", R("Aortic regurgitation — clinical presentation"), NLN + ["B7.2.6-3(1)", "B7.1.2(1)"]),
+     mcq(N(11), "An asymptomatic 46-year-old man has severe chronic aortic regurgitation. LVEF is 48% with no other cause. What is the recommended management?",
+         ["Annual echocardiography only", "Vasodilator therapy to delay surgery", "Aortic valve replacement", "Wait for symptoms before any intervention", "Beta-blocker to reduce regurgitation"], 2,
+         "AR รุนแรงที่ **ไม่มีอาการแต่ LVEF ≤ 50%** → **AVR (Class I)** ทั้ง ACC/AHA และ ESC/EACTS 2025 · LV เริ่มเสื่อมแล้ว รอต่อจะเสียถาวร\n\nยาขยายหลอดเลือดใช้ลดความดันในผู้ที่ความดันสูงหรือผ่าตัดไม่ได้ **ไม่ใช่ทางชะลอการผ่าตัด** · β-blocker ยืด diastole ทำให้รั่วมากขึ้น",
+         "AR ไม่มีอาการ + LVEF ≤ 50% → AVR", "AR intervention", R("Aortic regurgitation algorithm") + [ESC25], NLN + ["3.3.23"]),
+    ], NLN + ["3.3.23"], SRC + " · อัปเดตตาม ESC/EACTS 2025")
+
+# ───────────────────────────── 9
+sec("cardio-vhd-09", "ลิ้นหัวใจด้านขวา — tricuspid และ pulmonic",
+    "ส่วนใหญ่เป็นผลตามมาจาก pulmonary hypertension · primary จาก RHD, IE, carcinoid, พิการแต่กำเนิด", 6,
+"""### สาเหตุ (สไลด์)
+| ลิ้น | Primary | Secondary |
+|---|---|---|
+| **Tricuspid regurgitation** | **RHD · IE (ผู้ใช้ยาเสพติดฉีด) · carcinoid · อุบัติเหตุ · papillary muscle บาดเจ็บ** | **Pulmonary hypertension** (พบบ่อยที่สุด) · RV/วงแหวนขยาย · AF |
+| **Tricuspid stenosis** | **RHD · พิการแต่กำเนิด** | — |
+| **Pulmonic regurgitation** | **RHD · พิการแต่กำเนิด** | **Pulmonary hypertension · pulmonary artery ขยายไม่ทราบสาเหตุ · Marfan** |
+| **Pulmonic stenosis** | **พิการแต่กำเนิด · carcinoid** | — |
+
+### อาการและอาการแสดงของ TR
+- **JVP สูง มี v wave ใหญ่** · ตับโตและเต้น (pulsatile liver) · ท้องมาน ขาบวม
+- **Pansystolic murmur ที่ LLSB ดังขึ้นเมื่อหายใจเข้า = Carvallo's sign** — หายใจเข้าดึงเลือดกลับหัวใจขวามากขึ้น
+
+### การรักษา (ESC/EACTS 2025)
+- **TR รุนแรงที่มีอาการ** → ยาขับปัสสาวะ รักษาสาเหตุ (PH, AF, หัวใจซ้าย)
+- **ซ่อมลิ้น tricuspid ระหว่างผ่าตัดลิ้นด้านซ้าย** เมื่อ TR รุนแรง หรือ TR ปานกลางที่วงแหวนขยาย
+- **Transcatheter tricuspid therapy (T-TEER หรือเปลี่ยนลิ้นผ่านสายสวน)** — เป็นทางเลือกใหม่สำหรับผู้ที่มีอาการและเสี่ยงผ่าตัดสูง
+""",
+    ["Secondary TR/PR จาก PH พบบ่อยที่สุด",
+     "Carvallo's sign: TR ดังขึ้นตอนหายใจเข้า",
+     "TS: RHD/พิการแต่กำเนิด · PS: พิการแต่กำเนิด/carcinoid",
+     "ซ่อม TR พร้อมผ่าตัดลิ้นซ้าย · transcatheter ในผู้เสี่ยงสูง"],
+    [mcq(N(12), "A pansystolic murmur at the lower left sternal border becomes louder during inspiration. Which lesion is most likely?",
+         ["Mitral regurgitation", "Tricuspid regurgitation", "Aortic stenosis", "Ventricular septal defect", "Hypertrophic cardiomyopathy"], 1,
+         "**Carvallo's sign** — murmur ของ **TR ดังขึ้นเมื่อหายใจเข้า** เพราะความดันในช่องอกลดลงดึงเลือดกลับเข้าหัวใจขวามากขึ้น\n\nMR ฟังที่ apex กระจายไปรักแร้และไม่เปลี่ยนตามการหายใจ · ใน MS ที่มี PH จะพบ TR นี้ร่วมได้ (สไลด์)",
+         "ดังขึ้นตอนหายใจเข้า = murmur ของหัวใจขวา", "Carvallo's sign", R("Mitral stenosis — associated lesions"), NLN + ["B7.1.2(1)"]),
+    ], NLN + ["B7.1.2(2)"])
+
+# ═══ ต่อส่วนที่ 3 ด้านล่าง ═══
