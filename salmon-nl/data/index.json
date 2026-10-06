@@ -1,1 +1,78 @@
-[]
+[
+ {
+  "set": "cardio",
+  "label": "Cardio",
+  "thai": "หัวใจและหลอดเลือด",
+  "title": "Cardio · หัวใจและหลอดเลือด",
+  "source": "สไลด์ NL2-Cardio",
+  "intro": "ชุด Cardio มี 6 หมวด ตาม outline ของสไลด์ NL2-Cardio (353 หน้า): 01 การช่วยชีวิตและ arrhythmia (BLS, ACLS, tachycardia, AF, bradycardia) · 02 โรคลิ้นหัวใจและ syncope · 03 ความดันโลหิตสูง (การวินิจฉัย การเลือกยา secondary HT และ hypertensive crises) · 04 โรคเยื่อหุ้มหัวใจและ aortic dissection · 05 CAD และ ACS · 06 heart failure, digoxin toxicity และ infective endocarditis\nแนะนำให้เรียนตามลำดับ 01 → 06 เพราะหมวดหลังใช้ EKG และ algorithm จากหมวดแรก (เช่น AF ร่วมกับ acute HF, RV infarct กับ nitrate) ข้อที่มีป้าย \"ข้อสอบเก่า\" เรียบเรียงมาจากข้อสอบในสไลด์ ส่วนเนื้อหาที่ติดป้าย (เสริม) เติมจากแนวทางมาตรฐานเพราะสไลด์หน้านั้นเป็นภาพ",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#b3263a",
+   "soft": "#f8e6e8",
+   "ink": "#8e1c2d",
+   "dark": "#ff8f9d",
+   "darkSoft": "#2a1418",
+   "darkInk": "#ffb6bf"
+  },
+  "file": "data/cardio.json",
+  "lectureCount": 6
+ },
+ {
+  "set": "resp",
+  "label": "Respiratory",
+  "thai": "ระบบหายใจ",
+  "title": "Respiratory · ระบบหายใจ",
+  "source": "สไลด์ NL2-Respiratory",
+  "intro": "ชุด Respiratory จากสไลด์ NL2-Respiratory (MedSalmon ติว NL by พี่ซี) มี 7 หมวด: obstructive (spirometry, COPD, asthma, bronchiectasis) · restrictive (ILD, systemic sclerosis, occupational) · pleural diseases (effusion, empyema, pneumothorax) · pulmonary embolism · influenza และ pneumonia (CAP/HAP) · PCP, lung abscess, aspergillosis · tuberculosis\nแนะนำให้เริ่มที่หมวด 01 (อ่าน spirometry และ ABG ก่อน เพราะใช้ทั้งชุด) แล้วไล่ 03–04 ซึ่งเป็น algorithm ที่ออกสอบบ่อย จากนั้นค่อยทำกลุ่ม infection 05–07 และปิดท้ายด้วยหมวด 02\nข้อที่มีป้าย \"ข้อสอบเก่า\" เรียบเรียงมาจากข้อสอบในสไลด์ ส่วนเนื้อหาที่มีป้าย (เสริม) เติมจากแนวทางมาตรฐาน",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#1f6f8b",
+   "soft": "#e0eff4",
+   "ink": "#175569",
+   "dark": "#7cc6e2",
+   "darkSoft": "#10222a",
+   "darkInk": "#a9dcef"
+  },
+  "file": "data/resp.json",
+  "lectureCount": 7
+ },
+ {
+  "set": "gi",
+  "label": "GI",
+  "thai": "ระบบทางเดินอาหาร ตับ และตับอ่อน",
+  "title": "GI · ระบบทางเดินอาหาร ตับ และตับอ่อน",
+  "source": "สไลด์ NL2-GI",
+  "intro": "Deck NL2-GI (285 หน้า) แบ่งเป็น 8 หมวด 29 หัวข้อ ไล่ตาม outline ของสไลด์: หลอดอาหาร-กระเพาะ (GERD, dyspepsia, H. pylori) → UGIB → GI infection และ IBS → ตับอ่อนอักเสบเฉียบพลันและเรื้อรัง → อ่าน LFT และ viral hepatitis A/B/C → โรคตับจากยา ขาดเลือด แอลกอฮอล์ ไขมัน และ Wilson → ฝีในตับ → ตับแข็งและภาวะแทรกซ้อน (ascites/SAAG, SBP, hepatic encephalopathy)\nแนะนำให้อ่านตามลำดับ โดยหมวด 05 (LFT/serology) ควรอ่านก่อนหมวด 06–08 และหมวด 02 (UGIB) ทบทวนคู่กับหมวด 08 เรื่อง varices\nข้อสอบท้ายหัวข้อส่วนใหญ่ (ป้าย \"ข้อสอบเก่า\") เรียบเรียงจากตัวอย่างข้อสอบในสไลด์ และเฉลยตามสไลด์ โดยบอกไว้ในคำอธิบายเมื่อเฉลยต่างจากแนวทางปัจจุบัน",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#8a5a12",
+   "soft": "#f4ecdd",
+   "ink": "#6d460c",
+   "dark": "#f5c268",
+   "darkSoft": "#241d12",
+   "darkInk": "#f8d596"
+  },
+  "file": "data/gi.json",
+  "lectureCount": 8
+ },
+ {
+  "set": "nephro",
+  "label": "Nephro",
+  "thai": "ไต น้ำ และเกลือแร่",
+  "title": "Nephro · ไต น้ำ และเกลือแร่",
+  "source": "สไลด์ NL2-Nephro",
+  "intro": "ชุด Nephro มี 9 หมวด 34 หัวข้อ ครอบคลุมทั้ง deck NL2-Nephro (296 หน้า): AKI, nephritic, nephrotic, CKD, polyuria/Na, K, ABG, metabolic acidosis และ UTI พร้อมข้อสอบเก่าในสไลด์ทุกข้อ\nแนะนำเรียงตามลำดับ: เริ่ม UA → AKI → glomerular disease → CKD แล้วจึงไปน้ำ–เกลือแร่ (Na → K) ต่อด้วย ABG ก่อน metabolic acidosis เพราะใช้สูตรต่อกัน ปิดท้ายด้วย UTI ซึ่งแยกอ่านได้",
+  "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
+  "accent": {
+   "light": "#6b3f8c",
+   "soft": "#efe8f5",
+   "ink": "#542f70",
+   "dark": "#c6a6e6",
+   "darkSoft": "#1d1526",
+   "darkInk": "#dbc6f0"
+  },
+  "file": "data/nephro.json",
+  "lectureCount": 9
+ }
+]
