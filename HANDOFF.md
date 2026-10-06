@@ -67,7 +67,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 17** · มี **7 ชุดวิชา** · 22 คาบ)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 18** · มี **9 ชุดวิชา** · 26 คาบ)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -138,7 +138,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 22 คาบ
+## 4. คาบที่ทำเสร็จแล้ว 26 คาบ
 
 | set | lec | เรื่อง |
 |---|---|---|
@@ -164,11 +164,15 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
 | id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
 | id | 5/10 | AIDS and HIV infection ← พ.ญ.มนัสวี · จ. 5 ต.ค. (13 หัวข้อ · 27 MCQ · MEQ PCP/advanced HIV · OSCE pre-test counselling) — สไลด์ส่วนตาราง (WHO staging, สูตรยา, OI prophylaxis, crypto Rx) เป็นภาพ → อิงแนวทางไทย 2025/WHO และระบุในบทเรียน · ไม่มีข้อในคลัง Ward Drill |
+| gi | 12/10 | Acute and chronic hepatitis ← อ.เฉลิมรัฐ · จ. 12 ต.ค. (11 หัวข้อ · 14 MCQ + MOCK-149/153 · MEQ acute HBV · SAQ HBV serology) — WHO 2024/EASL 2025 HBV · AASLD–IDSA HCV · EASL 2024 MASLD |
+| gi | 27/10 | Approach to abdominal pain ← นพ.กิตติ · อ. 27 ต.ค. (11 หัวข้อ · 16 MCQ + MOCK-152/154–157/160/161 · MEQ gallstone pancreatitis · SAQ ปวดท้อง 6 ราย) — ACG 2024 AP · TG18 · ACG/CAG 2017 · Maastricht VI |
+| gi | 29/10 | Liver function tests ← นพ.กิตติ · พฤ. 29 ต.ค. (8 หัวข้อ · 15 MCQ + MOCK-035/150 · MEQ paracetamol · SAQ แปล LFT 5 ราย) — ACG 2017 · EASL 2024 PBC · AASLD 2022 Wilson |
+| hemonc | 2/11 | General oncology ← พญ.ปิยวรรณ · จ. 2 พ.ย. (8 หัวข้อ · 17 MCQ + MOCK-024–027/038 · MEQ breast cancer · SAQ ยาต้านมะเร็ง) — GLOBOCAN 2022 · ASCO irAE 2021 · USPSTF 2024 · CDK4/6 · สไลด์ระบาดวิทยาเป็นภาพ |
 
 > ⚠️ เลข `lec` แบบวันที่ (เช่น "23/9") เป็นตัวแทนชั่วคราว — **เลขคาบจริงดูได้จากฟิลด์ `lec` ใน `bank_merged.json`** (คลังเดียวกับ Ward Drill)
 > ถ้าคาบนั้นมีข้อในคลัง ให้ใช้เลขนั้นและผูกข้อด้วย `artifact/tools/link_bank.py` (ดูตัวอย่าง `link_ihd_bank.py` และท้าย `build_af.py`)
 
-**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **324/570 ข้อ (6 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 22/174 (Mock 200 ข้อไม่ผูกคาบ) ·
+**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **324/570 ข้อ (6 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 22/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 16 ข้อด้วย `tools/link_mock.py` ในชุด GI/Heme-Onc) ·
 คาบในคลังที่ยังไม่มีบทเรียน: Cardio 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 14, 19, 22, 28, 30, 42
 
 ---
@@ -223,6 +227,12 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ---
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
+
+**รอบ 6 ต.ค. (โฟลเดอร์ Drive `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj`)** — ✅ v18 · ทั้ง 4 ไฟล์ดึงข้อความด้วย `read_file_content` ได้
+- Acute and chronic hepatitis (อ.เฉลิมรัฐ) `1X6QMVuq2GWT3SLbV9VactnQ11MVtml98` → gi 12/10 · โน้ต `slides/hepatitis_notes.md`
+- Approach to abdominal pain 65 (นพ.กิตติ) `10g5J-s6Zv5JZB3RbHs6dh2QWUR5Xzr5V` → gi 27/10 · โน้ต `slides/abdpain_notes.md`
+- Liver Function Tests 63 (นพ.กิตติ) `1HWt4TMmRmpgSw8lT_NIjt74YQ5LC-zJ3` → gi 29/10 · โน้ต `slides/lft_notes.md`
+- Lec 1 General Oncology (พญ.ปิยวรรณ) `1nzh5iBJ_uJ5uP9_q2zDlAxQ-Opw5xRJg` (19.5 MB) → hemonc 2/11 · โน้ต `slides/oncology_notes.md` · กราฟ GLOBOCAN 2012/มะเร็งไทยเป็นภาพ → ใช้ GLOBOCAN 2022 และระบุไว้
 
 **พ.ญ.ชนัญญา** — VHD + ARF ✅ Drive `1IVsvzRiGSfwCrfi6wcJt49fkwP4Zfzq2` · ข้อความครบ ลายมืออ่านไม่ได้ · โน้ต `slides/vhd_arf_notes.md`
 
