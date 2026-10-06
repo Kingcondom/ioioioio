@@ -416,6 +416,246 @@ sec("hon-onc-08", "มะเร็งเต้านม — คัดกรอ�
          "HR+ แพร่ไปกระดูก ไม่มี visceral crisis → endocrine (+ CDK4/6i)", "Metastatic breast cancer", R("Breast cancer — metastatic") + ["ESMO/NCCN metastatic breast cancer"], BR + ["B5.2.4-3(2)"]),
     ], BR + ["B1.7.3"], SRC + " · USPSTF 2024 · NCCN/ESMO breast")
 
+# ───────────────────────────── 9
+TM = ["B1.6.4(2)", "B1.6.4(3)", "3.3.24"]
+sec("hon-onc-09", "Staging, grading และ tumour markers",
+    "TNM บอกระยะ grade บอกความดุ · tumour marker ใช้ติดตามผลและหาการกลับเป็นซ้ำ ไม่ใช้วินิจฉัยหรือคัดกรอง (ยกเว้นบางตัว) · CEA AFP CA19-9 CA-125 PSA β-hCG LDH", 9,
+"""> หัวข้อ 9–13 **ไม่ได้มาจากสไลด์** — สไลด์ประกาศหัวข้อ "Common cancer" แต่ในไฟล์มีรายละเอียดเฉพาะมะเร็งเต้านม จึงเติมจากตำราและแนวทางปัจจุบันให้ครอบคลุมมะเร็งที่ออกสอบบ่อยและข้อ Mock หมวด Oncology
+
+### Staging กับ grading
+| | **Stage (ระยะ)** | **Grade (ความดุ)** |
+|---|---|---|
+| บอกอะไร | **ขนาดและการลุกลาม — TNM** (T ก้อน · N ต่อมน้ำเหลือง · M แพร่กระจาย) | **เซลล์ผิดปกติแค่ไหน** — well / moderately / poorly differentiated · mitosis · Ki-67 |
+| ใช้ทำอะไร | **ตัวกำหนดพยากรณ์และการรักษาที่สำคัญที่สุด** | ช่วยทำนายพฤติกรรม และการตอบสนองต่อยาเคมี (หัวข้อ 3) |
+- **Clinical stage (cTNM)** จากตรวจร่างกายและภาพถ่าย · **pathological stage (pTNM)** จากชิ้นเนื้อผ่าตัด
+- การหา M: **CT ทรวงอก ช่องท้อง เชิงกราน** เป็นพื้นฐานของมะเร็งก้อนตันส่วนใหญ่ · bone scan เมื่อปวดกระดูก/ALP สูง หรือมะเร็งที่ชอบกระดูก · PET-CT ในบางโรค · MRI สมองในมะเร็งปอด
+
+### Tumour markers
+| Marker | มะเร็งหลัก | สูงได้จากเหตุอื่น |
+|---|---|---|
+| **CEA** | **ลำไส้ใหญ่** (ติดตามหลังผ่าตัด) | สูบบุหรี่ ลำไส้อักเสบ ตับแข็ง |
+| **AFP** | **HCC · germ cell (non-seminoma, yolk sac)** | ตับอักเสบ ตั้งครรภ์ |
+| **CA 19-9** | **ตับอ่อน · ท่อน้ำดี** | **ท่อน้ำดีอุดตัน/อักเสบ** (ลดลงหลังระบาย) · คนที่ไม่มี Lewis antigen ไม่สร้าง |
+| **CA-125** | **มะเร็งรังไข่ชนิด epithelial** | **ประจำเดือน endometriosis PID ตั้งครรภ์ น้ำในช่องท้อง/เยื่อหุ้มปอด** |
+| **PSA** | **ต่อมลูกหมาก** | ต่อมลูกหมากโต อักเสบ หลังสวนปัสสาวะ |
+| **β-hCG** | **choriocarcinoma · germ cell** · gestational trophoblastic disease | ตั้งครรภ์ |
+| **LDH** | lymphoma · germ cell · melanoma (พยากรณ์) | เม็ดเลือดแดงแตก เนื้อเยื่อตาย |
+| Calcitonin · thyroglobulin | medullary · differentiated thyroid ca (ติดตามหลังผ่าตัด) | |
+
+**หลักใช้**
+1. **ไม่ใช้วินิจฉัยแทนชิ้นเนื้อ** — ไวและจำเพาะไม่พอ · **การวินิจฉัยมะเร็งต้องได้ชิ้นเนื้อเสมอ** (ยกเว้น HCC ที่ภาพ CT/MRI เข้าเกณฑ์ LI-RADS 5 ในตับแข็ง)
+2. **ไม่ใช้คัดกรองประชากรทั่วไป** (ยกเว้น **AFP + US ในผู้เสี่ยง HCC** และ PSA แบบตัดสินใจร่วมกัน)
+3. **ใช้ดีที่สุดเพื่อติดตามการตอบสนองและการกลับเป็นซ้ำ** — ต้องสูงก่อนรักษาจึงจะใช้ติดตามได้
+4. Germ cell tumour: **AFP β-hCG LDH** ใช้ทั้งวินิจฉัยร่วม จัดระยะ (S stage) และติดตาม · **seminoma บริสุทธิ์ไม่สร้าง AFP**
+""",
+    ["Stage (TNM) = พยากรณ์และการรักษาสำคัญที่สุด · grade = ความดุ",
+     "วินิจฉัยมะเร็งต้องได้ชิ้นเนื้อ — marker ใช้ติดตาม",
+     "CEA ลำไส้ · AFP HCC/non-seminoma · CA19-9 ตับอ่อน · CA-125 รังไข่ · PSA ต่อมลูกหมาก · β-hCG germ cell",
+     "CA19-9 สูงเท็จในท่อน้ำดีอุดตัน · CA-125 สูงเท็จใน endometriosis/PID/น้ำในช่องท้อง"],
+    [mcq(N(18), "A 64-year-old man had a curative resection for stage III colon cancer. His preoperative CEA was 18 ng/mL and fell to normal after surgery. What is the main role of measuring CEA during follow-up?",
+         ["To screen his siblings for colon cancer", "To detect recurrence early during surveillance", "To replace colonoscopy", "To confirm the original diagnosis", "To choose between FOLFOX and CAPOX"], 1,
+         "Tumour marker **ใช้ดีที่สุดเพื่อติดตามการตอบสนองและการกลับเป็นซ้ำ** โดยเฉพาะเมื่อ **สูงก่อนรักษาแล้วลดลงหลังผ่าตัด** — CEA ที่กลับขึ้นใหม่ทำให้ต้องหาการกลับเป็นซ้ำด้วย CT\n\nCEA **ไม่ใช้คัดกรองหรือวินิจฉัย** (สูงได้ในคนสูบบุหรี่ ตับแข็ง ลำไส้อักเสบ) และไม่แทนการส่องกล้องตามนัด",
+         "Marker ที่สูงก่อนรักษา → ใช้ติดตามการกลับเป็นซ้ำ", "Tumour markers", ["NCCN colon cancer survivorship"], TM + ["B8.2.4-3(1)"]),
+     mcq(N(19), "A 30-year-old woman with pelvic pain and fever has a tender adnexal mass and CA-125 of 160 U/mL. Which statement is most accurate?",
+         ["CA-125 confirms ovarian cancer", "CA-125 can be raised by pelvic inflammatory disease, endometriosis and menstruation, so it is non-specific in premenopausal women", "CA-125 is a screening test for all women",
+          "CA-125 is specific for mucinous tumours", "A raised CA-125 excludes infection"], 1,
+         "**CA-125 ไม่จำเพาะ** โดยเฉพาะ **ก่อนหมดประจำเดือน** — สูงได้จาก **PID/ฝีที่ท่อนำไข่และรังไข่ endometriosis ประจำเดือน ตั้งครรภ์ น้ำในช่องท้อง** · หญิงอายุน้อย มีไข้ กดเจ็บ → นึกถึง **tubo-ovarian abscess** ก่อน\n\nCA-125 มีค่ามากในหญิงหลังหมดประจำเดือนที่มีก้อนรังไข่ และใช้ **ติดตาม** มะเร็งรังไข่ชนิด epithelial · ไม่ใช้คัดกรองประชากร",
+         "CA-125 สูงเท็จใน PID endometriosis ก่อนหมดประจำเดือน", "Tumour markers", ["Standard gynaecologic oncology practice"], TM + ["B10.2.4-3(4)"]),
+    ], TM, "เพิ่มเติม (ไม่ได้มาจากสไลด์) — AJCC 8th · NCCN")
+
+# ───────────────────────────── 10
+SCR = ["B1.6.4(4)", "B1.3.4(1)"]
+sec("hon-onc-10", "คัดกรองและป้องกันมะเร็ง",
+    "เต้านม mammogram · ปากมดลูก HPV DNA · ลำไส้ใหญ่ FIT/colonoscopy · ปอด LDCT ในผู้สูบบุหรี่ · HCC US + AFP ทุก 6 เดือนในผู้เสี่ยง · วัคซีน HBV HPV", 9,
+"""### เกณฑ์ของโปรแกรมคัดกรองที่ดี
+โรคพบบ่อยและรุนแรง · มีระยะก่อนอาการที่ตรวจพบได้ · การตรวจแม่นและยอมรับได้ · **รักษาเร็วแล้วลดการตายได้จริง**
+> ระวัง **lead-time bias** (เจอเร็วขึ้นดูเหมือนรอดนานขึ้น) และ **overdiagnosis** (เจอโรคที่ไม่เคยทำอันตราย เช่น มะเร็งต่อมลูกหมากบางส่วน มะเร็งไทรอยด์ขนาดเล็ก)
+
+### ตารางคัดกรองหลัก (ไม่ได้มาจากสไลด์)
+| มะเร็ง | ใคร | วิธี |
+|---|---|---|
+| **เต้านม** | หญิง **40–74 ปี** (USPSTF 2024) | **Mammogram ทุก 2 ปี** (สไลด์: ปีละครั้งช่วง 40–50) · BRCA: MRI ปีละครั้งตั้งแต่ 25–30 |
+| **ปากมดลูก** | หญิง **25/30–65 ปี** | **HPV DNA ทุก 5 ปี** (โครงการ สปสช. 30–60 ปี · เก็บเองได้) หรือ Pap smear ทุก 3 ปี |
+| **ลำไส้ใหญ่** | **45/50–75 ปี** (ไทย 50–70 ปี) | **FIT ทุกปี** → บวก → **colonoscopy** · หรือ colonoscopy ทุก 10 ปี · ญาติสายตรงเป็นก่อน 60 → เริ่ม 40 หรือก่อนอายุญาติ 10 ปี |
+| **ปอด** | **50–80 ปี สูบ ≥ 20 pack-year** ยังสูบหรือเลิก < 15 ปี (USPSTF 2021) | **Low-dose CT ปีละครั้ง** — CXR ไม่ลดการตาย |
+| **ตับ (HCC)** | **ตับแข็งทุกสาเหตุ · HBV เรื้อรังกลุ่มเสี่ยง** (ชาย > 40 หญิง > 50 ปี ประวัติครอบครัว) | **อัลตราซาวนด์ ± AFP ทุก 6 เดือน** |
+| **ต่อมลูกหมาก** | ชาย 55–69 ปี | **PSA แบบตัดสินใจร่วมกัน (shared decision)** — ไม่คัดกรองทุกคน |
+| **ท่อน้ำดี** | ภาคอีสาน กินปลาดิบ | ตรวจอุจจาระหาพยาธิ · US ในโครงการ CASCAP |
+
+### การป้องกัน
+- **เลิกบุหรี่** — ลดมะเร็งปอด ศีรษะและคอ หลอดอาหาร กระเพาะปัสสาวะ ตับอ่อน
+- **วัคซีน HBV** (แรกเกิด) → ลด HCC · **วัคซีน HPV** (หญิงและชาย 9–26 ปี · ไทยให้นักเรียนหญิง ป.5) → ลดมะเร็งปากมดลูก ทวารหนัก ช่องปากและคอ
+- **รักษา HBV/HCV** · **กำจัดพยาธิใบไม้ตับ งดปลาดิบ** · ลดเหล้า น้ำหนัก เนื้อแดง/เนื้อแปรรูป
+- **ยาป้องกัน**: tamoxifen/AI ในหญิงเสี่ยงสูงต่อมะเร็งเต้านม · aspirin ใน Lynch syndrome
+""",
+    ["Mammogram 40–74 ทุก 2 ปี · HPV DNA ทุก 5 ปี · FIT ทุกปี 50–70 (ไทย)",
+     "ปอด: LDCT ปีละครั้ง 50–80 ปี ≥ 20 pack-year — CXR ไม่ช่วย",
+     "HCC: US ± AFP ทุก 6 เดือนในตับแข็ง/HBV เสี่ยง",
+     "PSA = shared decision · ระวัง overdiagnosis และ lead-time bias"],
+    [mcq(N(20), "A 52-year-old woman asks about colorectal cancer screening. She has no symptoms and no family history. Which approach is appropriate in the Thai national programme?",
+         ["Serum CEA every year", "Annual faecal immunochemical test (FIT), with colonoscopy if positive", "Barium enema every year", "CT abdomen every 2 years", "No screening until age 70"], 1,
+         "โครงการคัดกรองมะเร็งลำไส้ใหญ่ของไทย: **อายุ 50–70 ปี ตรวจ FIT** → **ผลบวกส่ง colonoscopy** · ทางเลือกอื่นคือ colonoscopy ทุก 10 ปี (แนวทางสหรัฐฯ เริ่มที่ 45 ปี)\n\n**CEA ไม่ใช้คัดกรอง** (ไวต่ำ ไม่จำเพาะ)\n\n*(ไม่ได้มาจากสไลด์)*",
+         "คัดกรองลำไส้ใหญ่ไทย: FIT 50–70 → บวก → colonoscopy", "Cancer screening", ["Thai national CRC screening programme · USPSTF 2021"], SCR + ["B8.2.4-3(1)"]),
+    ], SCR, "เพิ่มเติม (ไม่ได้มาจากสไลด์) — USPSTF · สปสช.")
+
+# ───────────────────────────── 11
+GI_LUNG = ["B6.2.4-3(2)", "B8.2.4-3(1)", "B8.2.4-3(2)", "2.3.2-3(1)"]
+sec("hon-onc-11", "มะเร็งที่พบบ่อย 1 — ปอด ลำไส้ใหญ่ ตับ และทางเดินอาหารส่วนบน",
+    "NSCLC vs SCLC · paraneoplastic · ตรวจ driver mutation · CRC ระยะลุกลาม FOLFOX/FOLFIRI + ยามุ่งเป้า · HCC จาก HBV · กระเพาะ Virchow node · หลอดอาหาร กลืนลำบากต้องส่องกล้อง", 13,
+"""### มะเร็งปอด
+| | **Non-small cell (85%)** | **Small cell (15%)** |
+|---|---|---|
+| ชนิด | **Adenocarcinoma** (พบบ่อยสุด อยู่รอบนอก ไม่สูบบุหรี่ก็เป็น) · **squamous** (กลางปอด สูบบุหรี่ hypercalcemia จาก PTHrP) · large cell | สัมพันธ์บุหรี่มาก อยู่กลางปอด โตเร็ว **แพร่กระจายเร็ว** |
+| Paraneoplastic | **Hypercalcemia (PTHrP — squamous)** · hypertrophic osteoarthropathy | **SIADH · Cushing (ACTH) · Lambert–Eaton** |
+| รักษา | ระยะ I–II: **ผ่าตัด** · III: เคมี-ฉายแสง + immunotherapy · IV: **ตรวจ driver mutation (EGFR ALK ROS1 …) + PD-L1** → ยามุ่งเป้า หรือ immunotherapy ± เคมี | **ไวต่อเคมีและรังสีมาก** — **etoposide + platinum** (+ atezolizumab/durvalumab) · ไม่ผ่าตัด · **กลับเป็นซ้ำเร็ว** |
+- อาการ: ไอเรื้อรัง ไอเป็นเลือด น้ำหนักลด · **Pancoast tumour** (ยอดปอด → Horner, ปวดแขน) · **SVC syndrome** · เสียงแหบ (recurrent laryngeal nerve)
+- **Mesothelioma** — สัมผัส **แร่ใยหิน (asbestos)** · เยื่อหุ้มปอดหนาเป็นปุ่ม + น้ำในเยื่อหุ้มปอด · latency 20–40 ปี
+
+### มะเร็งลำไส้ใหญ่และทวารหนัก
+- **Adenoma → carcinoma** (APC → KRAS → TP53) · ปัจจัยเสี่ยง: อายุ ประวัติครอบครัว **Lynch (MSI-H) · FAP** · IBD · เนื้อแดง อ้วน
+- **ซ้าย**: ถ่ายเปลี่ยน อุจจาระเล็กลง ถ่ายเป็นเลือด ลำไส้อุดตัน · **ขวา**: **ซีดจากขาดเหล็ก** ก้อนท้องขวาล่าง · **ชายสูงอายุ/หญิงหมดประจำเดือนที่ขาดเหล็ก → ส่องกล้องทั้งบนและล่าง**
+- วินิจฉัย: **colonoscopy + ชิ้นเนื้อ** · จัดระยะ: **CT ทรวงอก ช่องท้อง เชิงกราน + CEA** · มะเร็งทวารหนัก: MRI เชิงกราน
+- **ระยะแพร่กระจาย (สไลด์ advanced colon เป็นภาพ — สรุปจากแนวทาง)**: **FOLFOX หรือ FOLFIRI** (หรือ CAPOX) + **bevacizumab** หรือ **cetuximab/panitumumab (RAS wild-type และก้อนข้างซ้าย)** · **MSI-H/dMMR → pembrolizumab ทางเลือกแรก** · BRAF V600E → encorafenib + cetuximab · แพร่ไปตับ/ปอดจำนวนน้อย → **ผ่าตัดออกอาจหายขาด** · การรอดชีวิตเฉลี่ยราว **30 เดือน** ด้วยยาหลายสาย
+
+### ตับและท่อน้ำดี
+- **HCC**: **HBV (สาเหตุนำในไทยและทั่วโลก)** HCV เหล้า MASLD aflatoxin · มักมีตับแข็ง · **วินิจฉัยด้วย CT/MRI หลายระยะ: arterial enhancement + washout** ได้โดยไม่ต้องเจาะ · รักษาตาม BCLC: ผ่าตัด/จี้/ปลูกถ่ายตับ → TACE → **atezolizumab + bevacizumab** หรือ durvalumab + tremelimumab
+- **Cholangiocarcinoma**: พยาธิใบไม้ตับ (อีสาน) · PSC · เหลืองไม่ปวด · CA 19-9
+
+### ทางเดินอาหารส่วนบนและตับอ่อน
+- **หลอดอาหาร**: **squamous** (บุหรี่ เหล้า ส่วนกลาง) vs **adenocarcinoma** (GERD/Barrett ส่วนปลาย) · **กลืนลำบากที่ค่อย ๆ เป็นจากของแข็งไปของเหลว + น้ำหนักลด → ส่องกล้องตัดชิ้นเนื้อ**
+- **กระเพาะ**: H. pylori · อิ่มเร็ว ปวดใต้ลิ้นปี่ น้ำหนักลด ซีด · **Virchow node (ไหปลาร้าซ้าย)** · Sister Mary Joseph (สะดือ) · Krukenberg (รังไข่) · **ส่องกล้องตัดชิ้นเนื้อ** · HER2 บวก → trastuzumab
+- **ตับอ่อน**: หัวตับอ่อน → **เหลืองไม่ปวด + Courvoisier** · ปวดร้าวหลัง น้ำหนักลด เบาหวานเกิดใหม่ · Trousseau (ลิ่มเลือดดำย้ายที่) · CA 19-9 · ผ่าตัดได้เพียง 15–20%
+""",
+    ["SCLC: กลางปอด SIADH Cushing Lambert–Eaton · ไวยา etoposide + platinum · ไม่ผ่าตัด",
+     "NSCLC ระยะ IV: ตรวจ EGFR ALK ROS1 … + PD-L1 ก่อนเลือกยา",
+     "CRC ขวา: ซีดจากขาดเหล็ก · ซ้าย: ถ่ายเปลี่ยน/อุดตัน · ระยะ: CT C/A/P + CEA",
+     "mCRC: FOLFOX/FOLFIRI + bevacizumab หรือ anti-EGFR (RAS wt ซ้าย) · MSI-H → pembrolizumab",
+     "กลืนลำบาก + น้ำหนักลด → ส่องกล้อง · Virchow node = มะเร็งกระเพาะ"],
+    [mcq(N(21), "A 63-year-old smoker has a central lung mass, confusion and serum sodium 118 mmol/L with euvolaemia and inappropriately concentrated urine. Biopsy is pending. Which histology is most likely?",
+         ["Adenocarcinoma", "Squamous cell carcinoma", "Small cell lung carcinoma", "Bronchial carcinoid", "Mesothelioma"], 2,
+         "**ก้อนกลางปอด + ผู้สูบบุหรี่ + SIADH (Na ต่ำ euvolemia ปัสสาวะเข้มข้น)** = **small cell lung cancer** — เซลล์ neuroendocrine หลั่ง ADH (และ ACTH) · ร่วมกับ Lambert–Eaton ได้\n\nSquamous สัมพันธ์กับ **hypercalcemia จาก PTHrP** · adenocarcinoma อยู่รอบนอกปอด\n\nSCLC **ไวต่อเคมีและรังสี** → etoposide + platinum ± immunotherapy\n\n*(ไม่ได้มาจากสไลด์)*",
+         "SCLC = กลางปอด + SIADH/ACTH/LEMS", "Lung cancer", ["NCCN SCLC guideline"], GI_LUNG + ["2.3.4-3(5)"]),
+     mcq(N(22), "A 66-year-old man presents with fatigue and iron-deficiency anaemia (Hb 8.9 g/dL, ferritin 6 ng/mL). He denies GI symptoms. Which investigation is most important?",
+         ["Iron supplements and recheck in 3 months", "Bidirectional endoscopy (upper endoscopy and colonoscopy)", "Serum CEA", "Bone marrow biopsy", "Stool culture"], 1,
+         "**ชายสูงอายุที่ขาดเหล็กโดยไม่มีสาเหตุชัด = เลือดออกจากทางเดินอาหารจนกว่าพิสูจน์เป็นอื่น** โดยเฉพาะ **มะเร็งลำไส้ใหญ่ซีกขวา** (มักไม่มีอาการลำไส้ มาด้วยซีด) และมะเร็งกระเพาะ\n\n→ **ส่องกล้องทั้งบนและล่าง** · ให้เหล็กได้แต่ห้ามแทนการสืบค้น · CEA ไม่ใช้วินิจฉัย",
+         "ชายสูงอายุขาดเหล็ก → ส่องกล้องบน + ล่าง", "Colorectal cancer", ["BSG guideline for iron deficiency anaemia (2021)"], GI_LUNG),
+     mcq(N(23), "A patient has newly diagnosed metastatic colorectal cancer with multiple liver metastases. Tumour testing shows mismatch-repair deficiency (dMMR/MSI-high). What is the preferred first-line systemic therapy?",
+         ["Cetuximab alone", "Pembrolizumab (immune checkpoint inhibitor)", "Tamoxifen", "Imatinib", "Best supportive care only"], 1,
+         "มะเร็ง **MSI-H/dMMR** มีการกลายพันธุ์จำนวนมาก → **neoantigen มาก** ระบบภูมิคุ้มกันมองเห็นได้ดี → ตอบสนองต่อ **immune checkpoint inhibitor** สูงและนาน (KEYNOTE-177: pembrolizumab ดีกว่าเคมีบำบัด) — สอดคล้องกับสไลด์ที่ระบุ **MSI-high CRC และ dMMR solid tumours** ในข้อบ่งใช้ ICI\n\nกรณีที่ไม่ใช่ MSI-H ใช้ FOLFOX/FOLFIRI + bevacizumab หรือ anti-EGFR (RAS wild-type)",
+         "mCRC MSI-H/dMMR → pembrolizumab ก่อน", "Metastatic colorectal cancer", ["KEYNOTE-177 (NEJM 2020) · NCCN colon"] + R("Approved treatment for immune checkpoint inhibitors"), GI_LUNG + ["B1.4.14"]),
+    ], GI_LUNG, "เพิ่มเติม (ไม่ได้มาจากสไลด์) — NCCN/ESMO · BCLC 2022")
+
+# ───────────────────────────── 12
+OTH = ["B10.2.4-3(4)", "B9.2.4-3(2)", "B11.2.4-3(2)", "B4.2.4-3(1)", "B3.2.4-3(2)", "B5.2.4-3(2)"]
+sec("hon-onc-12", "มะเร็งที่พบบ่อย 2 — ต่อมลูกหมาก ปากมดลูก รังไข่ ไต ไทรอยด์ ผิวหนัง และสมอง",
+    "PSA + ต้านฮอร์โมนเพศชาย · HPV 16/18 · รังไข่ CA-125 ผ่าตัด + platinum · RCC triad + polycythemia · papillary psammoma · BCC pearly · แพร่กระจายไปสมองพบบ่อยกว่าเนื้องอกปฐมภูมิ", 11,
+"""### ระบบสืบพันธุ์และทางเดินปัสสาวะ
+| มะเร็ง | จุดสำคัญ |
+|---|---|
+| **ต่อมลูกหมาก** | ชายสูงอายุ · มักไม่มีอาการ หรือปัสสาวะลำบาก ปวดกระดูก · **PSA + MRI → ชิ้นเนื้อ (Gleason/ISUP grade)** · ชอบแพร่ไป **กระดูกแบบ osteoblastic** · เฉพาะที่: เฝ้าติดตาม/ผ่าตัด/ฉายแสง · แพร่กระจาย: **ยาต้านฮอร์โมนเพศชาย (ADT)** + ARPI (abiraterone enzalutamide) ± docetaxel · กระดูก: **zoledronic acid/denosumab** |
+| **ปากมดลูก** | **HPV 16/18** · เลือดออกหลังมีเพศสัมพันธ์ · squamous ส่วนใหญ่ · ระยะแรกผ่าตัด · ลุกลามเฉพาะที่: **เคมี-ฉายแสง (cisplatin)** · ป้องกันด้วยวัคซีนและคัดกรอง |
+| **รังไข่** | อาการไม่ชัด **ท้องอืด อิ่มเร็ว** ก้อนในเชิงกราน น้ำในช่องท้อง · **CA-125** · BRCA · มักพบระยะ III · **ผ่าตัดลดก้อนให้มากที่สุด + carboplatin/paclitaxel** · BRCA/HRD → **PARP inhibitor (olaparib)** |
+| **เยื่อบุโพรงมดลูก** | **เลือดออกหลังหมดประจำเดือน** · estrogen ไม่มี progesterone ต้าน (อ้วน PCOS **tamoxifen**) · Lynch |
+| **ไต (RCC — clear cell)** | **ปัสสาวะเป็นเลือด + ปวดสีข้าง + ก้อน** (triad พบน้อย) · paraneoplastic: **polycythemia (EPO)** hypercalcemia · ส่วนใหญ่พบโดยบังเอิญจาก CT · VHL · **ผ่าตัด** · แพร่กระจาย: **IO + VEGFR-TKI** (ดื้อเคมีและรังสี) |
+| **กระเพาะปัสสาวะ** | **ปัสสาวะเป็นเลือดไม่ปวด** ผู้สูบบุหรี่ สีย้อม · **cystoscopy** |
+| **อัณฑะ (germ cell)** | ชายหนุ่ม ก้อนอัณฑะไม่เจ็บ · **AFP β-hCG LDH** · **ตัดอัณฑะทางขาหนีบ (ห้ามเจาะผ่านถุงอัณฑะ)** · **หายขาดได้แม้แพร่กระจาย (BEP)** |
+
+### ไทรอยด์
+| ชนิด | ลักษณะ |
+|---|---|
+| **Papillary (~80%)** | **psammoma bodies · ground-glass (Orphan Annie) nuclei · nuclear grooves** · แพร่ทางน้ำเหลือง · รังสีบริเวณคอ · พยากรณ์ดีมาก |
+| Follicular | แพร่ทางเลือด (กระดูก ปอด) · ต้องดูการรุกแคปซูล/หลอดเลือด (FNA บอกไม่ได้) |
+| **Medullary** | C cell → **calcitonin** · **MEN2 (RET)** |
+| Anaplastic | ผู้สูงอายุ โตเร็วมาก พยากรณ์แย่ |
+
+### ผิวหนัง
+- **Basal cell carcinoma** — พบบ่อยที่สุด ใบหน้า (แสงแดด) **ตุ่มมันวาวขอบนูน (pearly) เส้นเลือดฝอย แผลตรงกลาง** · **แพร่กระจายน้อยมาก รุกเฉพาะที่** → **ผ่าตัดให้ขอบปลอดมะเร็ง** (Mohs บริเวณใบหน้า)
+- **Squamous cell carcinoma** — แผลเรื้อรัง (Marjolin ulcer) actinic keratosis · แพร่กระจายได้มากกว่า BCC
+- **Melanoma** — ABCDE · ความหนา (Breslow) คือพยากรณ์สำคัญ · ไทยพบ **acral lentiginous** (ฝ่าเท้า ใต้เล็บ) · ระยะลุกลาม: **anti-PD-1 ± anti-CTLA-4** · BRAF V600E → BRAF + MEK inhibitor
+
+### สมอง
+- **ก้อนในสมองของผู้ใหญ่ที่พบบ่อยที่สุดคือมะเร็งแพร่กระจายมา** — จาก **ปอด เต้านม melanoma ไต ลำไส้** · มักหลายก้อนที่รอยต่อเนื้อสมองขาว-เทา
+- ปฐมภูมิ: **glioblastoma** (ผู้สูงอายุ ขอบ ring-enhancing เนื้อตาย ข้ามซีกผ่าน corpus callosum) · meningioma (ไม่ร้าย)
+- รักษาก้อนแพร่กระจาย: **dexamethasone ลดสมองบวม** · ก้อนเดียว → ผ่าตัด/SRS · หลายก้อน → SRS หรือ whole-brain RT · ยามุ่งเป้าที่ผ่านสมองได้ (osimertinib, alectinib)
+""",
+    ["Prostate: PSA → MRI → biopsy · กระดูก osteoblastic · ADT",
+     "รังไข่: ท้องอืด อิ่มเร็ว CA-125 · ผ่าตัด + carboplatin/paclitaxel · BRCA → PARPi",
+     "RCC: hematuria flank pain mass + polycythemia · ดื้อเคมี/รังสี",
+     "Papillary: psammoma + Orphan Annie nuclei · medullary: calcitonin MEN2",
+     "BCC: pearly + telangiectasia ไม่ค่อยแพร่กระจาย → ผ่าตัดขอบปลอด",
+     "ก้อนในสมองผู้ใหญ่ส่วนใหญ่ = แพร่กระจายมา (ปอด เต้านม melanoma)"],
+    [mcq(N(24), "A 24-year-old man has a painless, firm right testicular mass. AFP and β-hCG are raised. What is the correct first step after scrotal ultrasound?",
+         ["Fine-needle aspiration through the scrotum", "Radical inguinal orchiectomy", "Observation for 3 months", "Antibiotics for epididymitis", "Scrotal biopsy"], 1,
+         "ก้อนอัณฑะแข็งไม่เจ็บในชายหนุ่ม + **AFP/β-hCG สูง** = **germ cell tumour (non-seminoma)** → **ตัดอัณฑะผ่านทางขาหนีบ (radical inguinal orchiectomy)** ซึ่งได้ทั้งวินิจฉัยและรักษา\n\n**ห้ามเจาะหรือตัดผ่านถุงอัณฑะ** เพราะเปลี่ยนทางระบายน้ำเหลืองและเพิ่มการกระจายเฉพาะที่ · แม้แพร่กระจายก็ **หายขาดได้สูงด้วย BEP** (ไวต่อเคมีมาก — หัวข้อ 5)",
+         "ก้อนอัณฑะ → inguinal orchiectomy ห้ามผ่านถุงอัณฑะ", "Testicular cancer", ["EAU testicular cancer guideline"], ["B10.2.4-3(2)", "3.3.24", "2.1.49"]),
+     mcq(N(25), "A 72-year-old man has worsening low back pain, PSA 210 ng/mL and multiple sclerotic (osteoblastic) lesions on bone scan. What is the backbone of systemic treatment?",
+         ["Anthracycline chemotherapy", "Androgen deprivation therapy (with an androgen-receptor pathway inhibitor)", "Trastuzumab", "Tamoxifen", "Radical prostatectomy alone"], 1,
+         "มะเร็งต่อมลูกหมากแพร่ไปกระดูก (**osteoblastic**) อาศัยฮอร์โมนเพศชาย → แกนหลักคือ **androgen deprivation therapy (GnRH agonist/antagonist หรือตัดอัณฑะ)** ปัจจุบันให้ร่วมกับ **abiraterone/enzalutamide/apalutamide** ± docetaxel\n\nร่วมกับ **bisphosphonate/denosumab** เมื่อดื้อต่อการตัดฮอร์โมน และเฝ้าระวัง **spinal cord compression** (ปวดหลังที่แย่ลง)",
+         "Prostate แพร่กระจาย → ADT + ARPI", "Prostate cancer", ["NCCN/EAU prostate cancer"], ["B10.2.4-3(4)", "B5.2.4-3(2)"]),
+    ], OTH, "เพิ่มเติม (ไม่ได้มาจากสไลด์) — NCCN/ESMO/EAU")
+
+# ───────────────────────────── 13
+EM = ["2.3.3(2)", "2.2.13", "2.2.38", "2.3.4(2)"]
+sec("hon-onc-13", "ภาวะฉุกเฉินทางมะเร็งและการดูแลประคับประคอง",
+    "Febrile neutropenia: antibiotic ภายใน 1 ชม. · TLS: สารน้ำ allopurinol/rasburicase · hypercalcemia: NSS + bisphosphonate · SVC syndrome · spinal cord compression: dexamethasone + MRI ด่วน · malignant effusion", 12,
+"""### Febrile neutropenia
+- **ไข้ ≥ 38.3 °C ครั้งเดียว หรือ ≥ 38.0 °C นาน 1 ชม.** + **ANC < 500** (หรือคาดว่าจะ < 500 ใน 48 ชม.) · มักช่วง **nadir 7–14 วันหลังยา**
+- อาการอักเสบอาจไม่ชัดเพราะไม่มีเม็ดเลือดขาว
+- **เพาะเชื้อแล้วให้ยาปฏิชีวนะครอบคลุม Pseudomonas ภายใน 1 ชม.** — **cefepime / piperacillin–tazobactam / meropenem** · เพิ่ม vancomycin เมื่อสงสัยติดเชื้อสายสวน ผิวหนัง ปอดอักเสบ MRSA หรือช็อก
+- ความเสี่ยงต่ำ (MASCC ≥ 21) อาจกินยาที่บ้านได้ · ป้องกันด้วย G-CSF ในสูตรยาที่เสี่ยงสูง
+
+### Tumour lysis syndrome
+- เซลล์มะเร็งแตกจำนวนมากหลังเริ่มยา — **lymphoma/leukaemia ที่โตเร็ว (Burkitt ALL) ก้อนใหญ่ LDH สูง**
+- **K สูง · phosphate สูง · uric acid สูง · Ca ต่ำ** (จับกับ phosphate) → **ไตวายเฉียบพลัน** หัวใจเต้นผิดจังหวะ ชัก
+- ป้องกัน/รักษา: **สารน้ำมาก (ปัสสาวะ 80–100 มล./ชม.)** · **allopurinol** (ป้องกัน) · **rasburicase** (เสี่ยงสูงหรือ uric acid สูงแล้ว — ห้ามใน G6PD deficiency) · แก้ K · ฟอกไตเมื่อจำเป็น
+
+### Hypercalcemia of malignancy
+- กลไก: **PTHrP** (squamous cell — ปอด ศีรษะและคอ · ไต · เต้านม) · **ก้อนในกระดูกสลายกระดูก** (myeloma เต้านม) · **calcitriol** (lymphoma)
+- **ซึม สับสน กระหายน้ำ ปัสสาวะมาก ท้องผูก ไตวาย** · PTH ต่ำ
+- รักษา: **NSS ทางหลอดเลือด** (ขาดน้ำจาก nephrogenic DI) → **zoledronic acid** (ออกฤทธิ์ 2–4 วัน) · **calcitonin** (เร็วแต่สั้น) · denosumab เมื่อไตวาย · steroid ใน lymphoma · ไม่ใช้ furosemide เป็นหลัก
+
+### SVC syndrome
+- ก้อนในทรวงอกกดหลอดเลือดดำใหญ่ — **มะเร็งปอด (SCLC) · lymphoma** · สายสวนหลอดเลือด
+- **หน้าบวม แดง เส้นเลือดที่คอและอกโป่ง แขนบวม** อาการแย่ลงเมื่อก้มหรือนอน
+- **ต้องได้ชิ้นเนื้อก่อนให้ steroid/ฉายแสง** (ยกเว้นทางเดินหายใจหรือสมองบวมคุกคามชีวิต) · **stent หลอดเลือดดำ** ช่วยเร็ว · รักษาตามชนิดมะเร็ง
+
+### Malignant spinal cord compression
+- **ปวดหลังที่แย่ลงตอนกลางคืน/นอนราบ** ในผู้ป่วยมะเร็ง (ปอด เต้านม ต่อมลูกหมาก myeloma) → ขาอ่อนแรง ชา ปัสสาวะ/อุจจาระผิดปกติ (สายเกินไป)
+- **Dexamethasone ทันที** → **MRI ทั้งกระดูกสันหลังภายใน 24 ชม.** → **ฉายแสง** หรือ **ผ่าตัดลดแรงกด + ฉายแสง** (ก้อนเดียว ยังเดินได้ไม่นาน กระดูกไม่มั่นคง)
+- **ผลลัพธ์ขึ้นกับการเดินได้ก่อนรักษา** — ยังเดินได้มักเดินต่อได้
+
+### Malignant pleural effusion
+- กลไกหลัก: **เซลล์มะเร็งอุดท่อน้ำเหลืองของเยื่อหุ้มปอด ระบายน้ำไม่ได้** + เยื่อหุ้มปอดรั่ว
+- **Exudate** · cytology บวก ~60% · เกิดซ้ำบ่อย → **pleurodesis (talc)** หรือ **สายระบายฝังใต้ผิวหนัง (IPC)** · ปอดไม่ขยาย (trapped lung) → IPC
+
+### อาการอื่นที่ต้องดูแล
+- **คลื่นไส้อาเจียนจากยาเคมี**: 5-HT3 antagonist (ondansetron) + **NK1 antagonist (aprepitant)** + dexamethasone ± olanzapine สำหรับยาก่ออาเจียนสูง (cisplatin)
+- **ปวดจากมะเร็ง**: บันไดยา WHO · opioid ให้ยาตามเวลา + ยาระบายป้องกันท้องผูก
+- **การดูแลแบบประคับประคองควบคู่ตั้งแต่เริ่ม** ในมะเร็งระยะลุกลาม — เพิ่มคุณภาพชีวิต (และอาจยืดชีวิต) · การแจ้งข่าวร้าย (SPIKES)
+""",
+    ["Febrile neutropenia: เพาะเชื้อ + cefepime/pip-tazo/meropenem ภายใน 1 ชม.",
+     "TLS: K↑ PO4↑ urate↑ Ca↓ → สารน้ำ allopurinol rasburicase (ห้ามใน G6PD)",
+     "Hypercalcemia: NSS → zoledronic acid · PTHrP ใน squamous",
+     "SVC: ชิ้นเนื้อก่อน steroid/RT ถ้าไม่คุกคามชีวิต",
+     "Cord compression: dexamethasone → MRI ทั้งแนวภายใน 24 ชม. → RT/ผ่าตัด"],
+    [mcq(N(26), "Ten days after chemotherapy for breast cancer, a woman has a temperature of 38.6 °C, BP 118/70 mmHg and ANC 200/µL. No focus is found. After blood cultures, what is the most appropriate next step?",
+         ["Wait for culture results before giving antibiotics", "Start IV anti-pseudomonal beta-lactam (e.g. cefepime or piperacillin–tazobactam) within 1 hour", "Oral amoxicillin at home", "G-CSF alone", "Start antifungal therapy only"], 1,
+         "**Febrile neutropenia** (ไข้ ≥ 38.3 + ANC < 500 ช่วง nadir) เป็น **ภาวะฉุกเฉิน** — ติดเชื้อแกรมลบลุกลามเร็ว → **เพาะเชื้อแล้วให้ยาปฏิชีวนะต้าน Pseudomonas ทางหลอดเลือดภายใน 1 ชม.** (cefepime pip-tazo meropenem)\n\nไม่รอผลเพาะเชื้อ · ยาต้านเชื้อราพิจารณาเมื่อไข้ไม่ลง 4–7 วัน · G-CSF ไม่แทนยาปฏิชีวนะ\n\n*(ไม่ได้มาจากสไลด์ — IDSA/ASCO)*",
+         "FN → antipseudomonal β-lactam ภายใน 1 ชม.", "Febrile neutropenia", ["IDSA/ASCO febrile neutropenia guideline (2018)"], ["2.3.3(2)", "2.3.3-3(5)"]),
+     mcq(N(27), "Two days after starting chemotherapy for bulky Burkitt lymphoma, a patient has K 6.4 mmol/L, phosphate 8.2 mg/dL, uric acid 14 mg/dL, Ca 6.8 mg/dL and rising creatinine. G6PD status is normal. What is the best management?",
+         ["Stop IV fluids", "Aggressive IV hydration, rasburicase, treatment of hyperkalaemia and early nephrology input", "Calcium gluconate infusion to normalise calcium as the main therapy", "Allopurinol alone and repeat labs in a week", "Thiazide diuretic"], 1,
+         "**Tumour lysis syndrome** (K↑ PO4↑ urate↑ Ca↓ + ไตวาย) หลังเริ่มยาในมะเร็งโตเร็วก้อนใหญ่ → **สารน้ำมาก · rasburicase** (ย่อย uric acid ที่มีอยู่แล้ว — allopurinol แค่กันการสร้างใหม่) · **แก้ K สูงแบบเร่งด่วน** · ปรึกษาฟอกไตถ้าปัสสาวะไม่ออกหรือเกลือแร่ไม่ลง\n\n**ไม่ให้แคลเซียมแก้ Ca ต่ำที่ไม่มีอาการ** เพราะตกตะกอน calcium-phosphate ในไต · rasburicase **ห้ามใน G6PD deficiency** (เม็ดเลือดแดงแตก)",
+         "TLS ที่เกิดแล้ว → สารน้ำ + rasburicase + แก้ K", "Tumour lysis syndrome", ["Cairo–Bishop TLS criteria · BSH TLS guideline"], ["2.3.4(2)", "B9.2.5(2)"]),
+     mcq(N(28), "A 66-year-old man with metastatic prostate cancer has 2 weeks of worsening thoracic back pain, worse lying down, and today new leg weakness and numbness below the umbilicus. What should be done first?",
+         ["NSAIDs and review in clinic next week", "High-dose dexamethasone immediately, then urgent whole-spine MRI", "Plain X-ray of the spine and physiotherapy", "Start chemotherapy", "Lumbar puncture"], 1,
+         "ปวดหลังแย่ลงเมื่อนอนราบในผู้ป่วยมะเร็ง + **ขาอ่อนแรงและระดับการรับความรู้สึก** = **malignant spinal cord compression** → **dexamethasone ทันที** แล้ว **MRI ทั้งแนวกระดูกสันหลังด่วน (ภายใน 24 ชม.)** → **ฉายแสง หรือผ่าตัดลดแรงกด + ฉายแสง**\n\nผลการเดินหลังรักษาขึ้นกับการเดินได้ก่อนรักษา — ทุกชั่วโมงสำคัญ",
+         "Cord compression: dexamethasone → MRI ทั้งแนวด่วน", "Spinal cord compression", ["NICE NG234 metastatic spinal cord compression (2023)"], ["2.2.38", "B3.2.3(3)", "B5.2.4-3(2)"]),
+     mcq(N(29), "A 70-year-old woman with lung squamous cell carcinoma is confused and dehydrated. Calcium is 14.2 mg/dL, PTH is suppressed and PTHrP is raised. Which initial treatment is most appropriate?",
+         ["Oral calcium restriction only", "IV normal saline followed by IV zoledronic acid", "Thiazide diuretic", "Furosemide alone without fluids", "Vitamin D supplementation"], 1,
+         "**Humoral hypercalcemia of malignancy (PTHrP)** จาก squamous cell carcinoma · Ca > 14 มีอาการ → **NSS ทางหลอดเลือด** แก้การขาดน้ำ (แคลเซียมสูงทำให้ไตเข้มข้นปัสสาวะไม่ได้) **แล้วให้ zoledronic acid** ยับยั้ง osteoclast (ออกฤทธิ์ 2–4 วัน) ± calcitonin ระหว่างรอ\n\nThiazide **เพิ่ม** แคลเซียม · furosemide ใช้เฉพาะเมื่อน้ำเกินหลังให้สารน้ำแล้ว",
+         "Hypercalcemia of malignancy: NSS → zoledronic acid", "Hypercalcaemia of malignancy", ["Endocrine Society hypercalcemia of malignancy guideline (2022)"], ["2.3.4(2)", "B6.2.4-3(2)"]),
+    ], EM, "เพิ่มเติม (ไม่ได้มาจากสไลด์) — IDSA/ASCO · NICE NG234 · Endocrine Society 2022")
+
 # ───────────────────────────── MEQ / OSCE
 LECNAME = "General oncology (พญ.ปิยวรรณ)"
 MEQ = [{"id": "HON-ONC-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
@@ -446,7 +686,35 @@ CT chest/abdomen และ bone scan: ไม่พบการแพร่กร
    "a": """- มะเร็งเต้านมก่อน 45 ปี + มารดาเป็นมะเร็งรังไข่ → สงสัย **HBOC** → **ให้คำปรึกษาทางพันธุกรรมและตรวจ BRCA1/2**
 - ถ้ายีนบวก: มีผลต่อการผ่าตัด (พิจารณาตัดเต้านมสองข้าง/ผ่าตัดรังไข่และท่อนำไข่ป้องกัน) และ **ตรวจคัดกรองญาติสายตรง** (เริ่มคัดกรองตั้งแต่อายุ 25–30 ปีด้วย MRI/mammogram)"""}],
  "ref": ["สไลด์ พญ.ปิยวรรณ — breast cancer", "NCCN/ESMO early breast cancer guidelines"],
- "nl": ["B10.2.4-3(4)", "2.1.55", "B1.7.3"], "years": [], "_kind": "meq", "_set": SET}]
+ "nl": ["B10.2.4-3(4)", "2.1.55", "B1.7.3"], "years": [], "_kind": "meq", "_set": SET},
+ {"id": "HON-ONC-MEQ-02", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Oncologic emergencies after first chemotherapy — febrile neutropenia and tumour lysis",
+ "vignette": """ผู้ป่วยชายไทยอายุ 45 ปี เพิ่งได้รับการวินิจฉัย diffuse large B-cell lymphoma ก้อนใหญ่ในช่องท้อง 12 ซม. LDH 1,850 U/L ได้ยาเคมีบำบัด R-CHOP รอบแรกเมื่อ 3 วันก่อน
+PI: ปัสสาวะออกน้อยลง 1 วัน คลื่นไส้ อ่อนเพลีย ใจสั่น
+PE: BT 37.0 C · BP 132/84 · HR 104 · ไม่มีไข้ · บวมขาเล็กน้อย
+Lab: BUN 48 · Cr 3.1 (เดิม 0.9) · K 6.6 · phosphate 9.1 mg/dL · Ca 6.9 mg/dL · uric acid 15.2 mg/dL · EKG: T wave สูงแหลม
+10 วันต่อมาหลังไตฟื้นตัว ผู้ป่วยกลับมาด้วยไข้ 38.7 C หนาวสั่น BP 96/60 · ANC 180/µL""",
+ "questions": [
+  {"q": "1. จงให้การวินิจฉัยในครั้งแรก พร้อมปัจจัยเสี่ยงของผู้ป่วย (3 คะแนน)",
+   "a": """**Tumour lysis syndrome (laboratory + clinical)** — K, phosphate, uric acid สูง · Ca ต่ำ · **ไตวายเฉียบพลัน** · EKG เปลี่ยน
+ปัจจัยเสี่ยง: **lymphoma โตเร็ว · ก้อนใหญ่ (bulky > 10 ซม.) · LDH สูงมาก** · เริ่มยาที่ได้ผลแรง · (ไม่ได้ป้องกันด้วยสารน้ำ/allopurinol หรือ rasburicase เพียงพอ)"""},
+  {"q": "2. จงบอกการรักษาเร่งด่วน (4 คะแนน)",
+   "a": """- **K สูงที่มี EKG เปลี่ยน**: **calcium gluconate IV** ปกป้องหัวใจ (ข้อยกเว้นที่ให้แคลเซียม) · **insulin + glucose** · salbutamol พ่น · ยาขับ K/ resin
+- **สารน้ำทางหลอดเลือดมาก** ให้ปัสสาวะ 80–100 มล./ชม. (ระวังน้ำเกินเมื่อไตวาย)
+- **Rasburicase** (ตรวจ G6PD ก่อนถ้าทำได้) — allopurinol ไม่ลด uric acid ที่มีอยู่แล้ว
+- **ปรึกษาฟอกไต** เมื่อ K/phosphate ไม่ลง น้ำเกิน หรือปัสสาวะไม่ออก
+- ไม่แก้ Ca ต่ำที่ไม่มีอาการ · ติดตามเกลือแร่ทุก 6–8 ชม."""},
+  {"q": "3. ครั้งที่สอง ผู้ป่วยเป็นอะไร และต้องทำอะไรภายในชั่วโมงแรก (4 คะแนน)",
+   "a": """**Febrile neutropenia + ความดันต่ำ (สงสัย septic shock)** ช่วง nadir (วันที่ 7–14)
+- **เพาะเชื้อเลือด 2 ขวด** (รวมจากสายสวน ถ้ามี) ปัสสาวะ CXR
+- **ยาปฏิชีวนะต้าน Pseudomonas ภายใน 1 ชม.** — รายนี้ความดันต่ำ → **meropenem + vancomycin** (± aminoglycoside)
+- **สารน้ำ crystalloid 30 มล./กก.** → norepinephrine ถ้า MAP < 65 · lactate · ย้าย ICU
+- พิจารณา G-CSF ในรายที่เสี่ยงสูงมาก · รอบต่อไปให้ **G-CSF ป้องกัน**"""},
+  {"q": "4. รอบต่อไปจะป้องกันภาวะทั้งสองอย่างไร (2 คะแนน)",
+   "a": """- TLS: ประเมินความเสี่ยงก่อนทุกรอบแรก — **สารน้ำล่วงหน้า + allopurinol** (เสี่ยงปานกลาง) หรือ **rasburicase** (เสี่ยงสูง) · ให้ prednisolone นำก่อนในก้อนใหญ่มาก
+- FN: **G-CSF (pegfilgrastim) ป้องกันหลังยา** เมื่อเคยมี FN · สอนผู้ป่วยให้วัดไข้และมาโรงพยาบาลทันทีเมื่อไข้ ≥ 38"""}],
+ "ref": ["IDSA/ASCO febrile neutropenia (2018)", "Cairo–Bishop TLS criteria · BSH TLS guideline"],
+ "nl": ["2.3.3(2)", "2.3.4(2)", "2.3.3-3(5)"], "years": [], "_kind": "meq", "_set": SET}]
 
 OSCE = [{"id": "HON-ONC-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
  "topic": "SAQ – Anticancer drugs: mechanism, biomarker and key toxicity",
@@ -470,12 +738,33 @@ OSCE = [{"id": "HON-ONC-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LEC
 | **E. Cetuximab** | **Monoclonal antibody ต่อ EGFR** | **RAS (KRAS/NRAS) wild-type** | **ผื่นแบบสิว** Mg ต่ำ แพ้ระหว่างหยด | 2 |
 | **F. Pembrolizumab** | **Anti-PD-1 immune checkpoint inhibitor** | PD-L1 (NSCLC) · **MSI-H/dMMR** | **irAE** — colitis hepatitis pneumonitis ไทรอยด์ | 2 |""",
  "ref": ["สไลด์ พญ.ปิยวรรณ — chemotherapy and cancer cell, targeted therapy, immuno-oncology"],
- "nl": ["B1.7.3", "B1.4.14", "B1.6.4(1)"], "years": [], "_kind": "meq", "_set": SET}]
+ "nl": ["B1.7.3", "B1.4.14", "B1.6.4(1)"], "years": [], "_kind": "meq", "_set": SET},
+ {"id": "HON-ONC-OSCE-02", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "SAQ – Oncologic emergencies and tumour markers",
+ "station": "SAQ (เขียนตอบ) 6 นาที",
+ "instruction": """จงให้การวินิจฉัยและการจัดการเร่งด่วน 1–2 ข้อ สำหรับผู้ป่วยมะเร็ง 5 รายต่อไปนี้
+
+| ราย | ข้อมูล |
+|---|---|
+| A | หญิง 50 ปี มะเร็งเต้านม 9 วันหลังยาเคมี ไข้ 38.5 °C ANC 300 |
+| B | ชาย 60 ปี มะเร็งปอด หน้าบวมแดง เส้นเลือดดำที่คอและอกโป่ง หายใจปกติ ยังไม่มีชิ้นเนื้อ |
+| C | ชาย 68 ปี มะเร็งต่อมลูกหมาก ปวดหลังกลางคืน 3 สัปดาห์ วันนี้ขาอ่อนแรง |
+| D | หญิง 72 ปี มะเร็งปอด squamous ซึม Ca 14.5 mg/dL PTH ต่ำ |
+| E | ชาย 25 ปี ก้อนอัณฑะแข็งไม่เจ็บ — ควรตรวจเลือดอะไร และผ่าตัดแบบใด |""",
+ "answer": """| ราย | วินิจฉัย | จัดการ | คะแนน |
+|---|---|---|---|
+| **A** | **Febrile neutropenia** | เพาะเชื้อ + **cefepime/pip-tazo ภายใน 1 ชม.** | 2 |
+| **B** | **SVC syndrome** | **หาชิ้นเนื้อก่อน** steroid/ฉายแสง (ไม่คุกคามชีวิต) · ยกหัวสูง · stent ถ้าอาการมาก | 2 |
+| **C** | **Malignant spinal cord compression** | **dexamethasone ทันที → MRI ทั้งแนวภายใน 24 ชม.** → ฉายแสง/ผ่าตัด | 2 |
+| **D** | **Hypercalcemia of malignancy (PTHrP)** | **NSS → zoledronic acid** ± calcitonin | 2 |
+| **E** | **Testicular germ cell tumour** | **AFP β-hCG LDH** · **radical inguinal orchiectomy** (ห้ามผ่านถุงอัณฑะ) | 2 |""",
+ "ref": ["IDSA/ASCO · NICE NG234 · Endocrine Society 2022 · EAU testicular cancer"],
+ "nl": ["2.3.3(2)", "2.2.13", "2.2.38", "3.3.24"], "years": [], "_kind": "meq", "_set": SET}]
 
 LECTURE = {
  "lec": LEC, "date": "จ. 2 พ.ย.",
  "title": "General oncology",
- "subtitle": "ระบาดวิทยา · เป้าหมายการรักษาและ performance status · วงจรเซลล์และ hallmarks · ยาเคมีตามระยะของวงจรเซลล์ · targeted therapy และ immunotherapy · มะเร็งเต้านม",
+ "subtitle": "ระบาดวิทยา · เป้าหมายการรักษาและ performance status · วงจรเซลล์และ hallmarks · ยาเคมีตามระยะของวงจรเซลล์ · targeted therapy และ immunotherapy · มะเร็งเต้านม · tumour markers คัดกรอง มะเร็งที่พบบ่อย และภาวะฉุกเฉินทางมะเร็ง",
  "objectives": [
    "บอกมะเร็งที่พบบ่อยของโลกและประเทศไทย และปัจจัยเสี่ยงที่ป้องกันได้",
    "แยกเป้าหมายการรักษาระยะแรกกับระยะลุกลาม และความหมายของ neoadjuvant/adjuvant",
@@ -483,20 +772,25 @@ LECTURE = {
    "อธิบายการควบคุมวงจรเซลล์ hallmarks of cancer และการก่อมะเร็งหลายขั้นตอน",
    "จัดกลุ่มยาเคมีตามระยะของวงจรเซลล์ และบอกพิษเฉพาะของยาหลัก",
    "อธิบายกลไก biomarker และพิษของยามุ่งเป้าและ immune checkpoint inhibitor",
-   "วางแผนคัดกรอง วินิจฉัยชนิดย่อย และรักษามะเร็งเต้านมตามระยะ"],
- "nlGap": "เกณฑ์ฯ มีรหัสวิทยาศาสตร์พื้นฐาน `นล. B1.6.4` Neoplasm · `B1.7.3` General principles of antineoplastic agents · `B1.4.12` Tumor immunology · `B10.2.4-3(4)` Malignant neoplasm of reproductive system (breast) · `2.1.55` Breast mass แต่ **ไม่มีรหัสของ immune checkpoint inhibitor, irAE หรือ performance status** โดยตรง และสไลด์ใช้ข้อมูล GLOBOCAN 2012 และการรักษามะเร็งเต้านมก่อนยุค CDK4/6 inhibitor จึงอ้างอิงแนวทางด้านล่าง",
+   "วางแผนคัดกรอง วินิจฉัยชนิดย่อย และรักษามะเร็งเต้านมตามระยะ",
+   "ใช้ staging และ tumour markers อย่างถูกต้อง และเลือกวิธีคัดกรองมะเร็งที่มีหลักฐาน",
+   "จดจำลักษณะเด่นและหลักการรักษาของมะเร็งที่พบบ่อย (ปอด ลำไส้ใหญ่ ตับ กระเพาะ ต่อมลูกหมาก นรีเวช ไต ไทรอยด์ ผิวหนัง สมอง)",
+   "วินิจฉัยและจัดการภาวะฉุกเฉินทางมะเร็ง: febrile neutropenia, TLS, hypercalcemia, SVC syndrome, spinal cord compression"],
+ "nlGap": "เกณฑ์ฯ มีรหัสวิทยาศาสตร์พื้นฐาน `นล. B1.6.4` Neoplasm · `B1.7.3` General principles of antineoplastic agents · `B1.4.12` Tumor immunology · `B10.2.4-3(4)` Malignant neoplasm of reproductive system (breast) · `2.1.55` Breast mass แต่ **ไม่มีรหัสของ immune checkpoint inhibitor, irAE หรือ performance status** โดยตรง และสไลด์ใช้ข้อมูล GLOBOCAN 2012 และการรักษามะเร็งเต้านมก่อนยุค CDK4/6 inhibitor จึงอ้างอิงแนวทางด้านล่าง · **หัวข้อ 9–13 เพิ่มเองทั้งหมด** เพราะไฟล์สไลด์มีส่วน Common cancer เฉพาะมะเร็งเต้านม — ครอบคลุมรหัส `3.3.24` Tumor markers · `2.3.3(2)` Febrile neutropenia · `2.2.13` SVC obstruction · `2.2.38` Spinal cord compression",
  "guidelines": [
    "**GLOBOCAN 2022 (IARC, CA Cancer J Clin 2024)** — อุบัติการณ์และการตายจากมะเร็งทั่วโลก",
    "**Hanahan D. Hallmarks of cancer: new dimensions (Cancer Discovery 2022)** — ต่อจากฉบับ 2000 และ 2011 ที่อยู่ในสไลด์",
    "**ASCO Guideline: Management of immune-related adverse events (2021)** และ **ESMO irAE guideline (2022)**",
    "**USPSTF Breast cancer screening (2024)** — mammogram ทุก 2 ปี อายุ 40–74",
    "**NCCN/ESMO Breast cancer guidelines** — CDK4/6 inhibitor ใน HR+ แพร่กระจาย · KEYNOTE-522 ใน TNBC · neoadjuvant ใน HER2+",
-   "**NCCN/ESMO Colon cancer** — adjuvant FOLFOX/CAPOX ใน stage III · anti-EGFR เฉพาะ RAS wild-type"],
+   "**NCCN/ESMO Colon cancer** — adjuvant FOLFOX/CAPOX ใน stage III · anti-EGFR เฉพาะ RAS wild-type · KEYNOTE-177 (MSI-H)",
+   "**USPSTF Lung (2021) และ Colorectal (2021) cancer screening** · โครงการคัดกรองมะเร็งลำไส้ใหญ่และปากมดลูก (HPV DNA) ของ สปสช.",
+   "**IDSA/ASCO Outpatient management of fever and neutropenia (2018)** · **Endocrine Society Hypercalcemia of malignancy (2022)** · **NICE NG234 Spinal metastases and MSCC (2023)**"],
  "sections": S, "meq": MEQ, "osce": OSCE,
 }
 
 HEMONC_META = {"set": "hemonc", "title": "Heme/Onc · โลหิตวิทยาและมะเร็งวิทยา",
- "intro": "ชุดใหม่ของโลหิตวิทยาและมะเร็งวิทยา เริ่มจากคาบ **General oncology ของ พญ.ปิยวรรณ (2 พ.ย.)** — ระบาดวิทยา เป้าหมายการรักษา performance status วงจรเซลล์และ hallmarks of cancer ยาเคมีตามระยะของวงจรเซลล์ ยามุ่งเป้า immunotherapy และมะเร็งเต้านม พร้อมอัปเดตแนวทางที่เปลี่ยนไปหลังสไลด์",
+ "intro": "ชุดใหม่ของโลหิตวิทยาและมะเร็งวิทยา เริ่มจากคาบ **General oncology ของ พญ.ปิยวรรณ (2 พ.ย.)** — ระบาดวิทยา เป้าหมายการรักษา performance status วงจรเซลล์และ hallmarks of cancer ยาเคมีตามระยะของวงจรเซลล์ ยามุ่งเป้า immunotherapy มะเร็งเต้านม ต่อด้วย tumour markers การคัดกรอง มะเร็งที่พบบ่อย และภาวะฉุกเฉินทางมะเร็ง พร้อมอัปเดตแนวทางที่เปลี่ยนไปหลังสไลด์",
  "howto": "**วิธีใช้** — อ่านเนื้อหาให้จบแล้วตอบข้อสอบท้ายหัวข้อ ระบบเฉลยพร้อมคำอธิบายทันที · ข้อที่ตอบผิดรวมอยู่ในแท็บ **ทบทวนข้อที่ผิด** · จบคาบแล้วฝึก **MEQ** และ **OSCE/SAQ**\n\n**ลำดับที่แนะนำ** — หัวข้อ 5 (ยาเคมีตามระยะของวงจรเซลล์และพิษเฉพาะยา) และหัวข้อ 8 (มะเร็งเต้านม) ออกสอบบ่อยที่สุด ฝึกทำตาราง SAQ ยาต้านมะเร็งให้ได้เอง\n\n**หมายเหตุ** — ชุดนี้ยังไม่มีคลังข้อสอบเก่ารายคาบใน Ward Drill จึงผูกข้อจาก Mock exam หมวด Oncology ที่ตรงเรื่องแทน · ข้อความที่ไม่ได้มาจากสไลด์มีระบุไว้ทุกจุด",
  "label": "Heme/Onc", "thai": "โลหิตวิทยาและมะเร็งวิทยา",
  "accent": {"light": "#8a2a63", "soft": "#f5e6ef", "ink": "#6c1f4d", "dark": "#f59ac9", "darkSoft": "#26141e", "darkInk": "#f8bddb"},
@@ -524,7 +818,9 @@ if not any(m["set"] == SET for m in idx):
 json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 added = link_mock(SET, LEC, {"hon-onc-01": ["MOCK-027"], "hon-onc-02": ["MOCK-026", "MOCK-024"],
-                             "hon-onc-08": ["MOCK-025", "MOCK-038"]})
+                             "hon-onc-08": ["MOCK-025", "MOCK-038"],
+                             "hon-onc-10": ["MOCK-033"], "hon-onc-11": ["MOCK-022", "MOCK-023", "MOCK-032", "MOCK-029"],
+                             "hon-onc-12": ["MOCK-034", "MOCK-036", "MOCK-037", "MOCK-021", "MOCK-028"], "hon-onc-13": ["MOCK-031"]})
 
 d = json.load(open(path, encoding="utf-8"))
 L = [l for l in d if l["lec"] == LEC][0]
