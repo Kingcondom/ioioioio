@@ -8,12 +8,12 @@
   "intro": "ชุด Cardio มี 6 หมวด ตาม outline ของสไลด์ NL2-Cardio (353 หน้า): 01 การช่วยชีวิตและ arrhythmia (BLS, ACLS, tachycardia, AF, bradycardia) · 02 โรคลิ้นหัวใจและ syncope · 03 ความดันโลหิตสูง (การวินิจฉัย การเลือกยา secondary HT และ hypertensive crises) · 04 โรคเยื่อหุ้มหัวใจและ aortic dissection · 05 CAD และ ACS · 06 heart failure, digoxin toxicity และ infective endocarditis\nแนะนำให้เรียนตามลำดับ 01 → 06 เพราะหมวดหลังใช้ EKG และ algorithm จากหมวดแรก (เช่น AF ร่วมกับ acute HF, RV infarct กับ nitrate) ข้อที่มีป้าย \"ข้อสอบเก่า\" เรียบเรียงมาจากข้อสอบในสไลด์ ส่วนเนื้อหาที่ติดป้าย (เสริม) เติมจากแนวทางมาตรฐานเพราะสไลด์หน้านั้นเป็นภาพ",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#b3263a",
-   "soft": "#f8e6e8",
-   "ink": "#8e1c2d",
-   "dark": "#ff8f9d",
-   "darkSoft": "#2a1418",
-   "darkInk": "#ffb6bf"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/cardio.json",
   "lectureCount": 6
@@ -27,12 +27,12 @@
   "intro": "ชุด Respiratory จากสไลด์ NL2-Respiratory (MedSalmon ติว NL by พี่ซี) มี 7 หมวด: obstructive (spirometry, COPD, asthma, bronchiectasis) · restrictive (ILD, systemic sclerosis, occupational) · pleural diseases (effusion, empyema, pneumothorax) · pulmonary embolism · influenza และ pneumonia (CAP/HAP) · PCP, lung abscess, aspergillosis · tuberculosis\nแนะนำให้เริ่มที่หมวด 01 (อ่าน spirometry และ ABG ก่อน เพราะใช้ทั้งชุด) แล้วไล่ 03–04 ซึ่งเป็น algorithm ที่ออกสอบบ่อย จากนั้นค่อยทำกลุ่ม infection 05–07 และปิดท้ายด้วยหมวด 02\nข้อที่มีป้าย \"ข้อสอบเก่า\" เรียบเรียงมาจากข้อสอบในสไลด์ ส่วนเนื้อหาที่มีป้าย (เสริม) เติมจากแนวทางมาตรฐาน",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#1f6f8b",
-   "soft": "#e0eff4",
-   "ink": "#175569",
-   "dark": "#7cc6e2",
-   "darkSoft": "#10222a",
-   "darkInk": "#a9dcef"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/resp.json",
   "lectureCount": 7
@@ -46,12 +46,12 @@
   "intro": "Deck NL2-GI (285 หน้า) แบ่งเป็น 8 หมวด 29 หัวข้อ ไล่ตาม outline ของสไลด์: หลอดอาหาร-กระเพาะ (GERD, dyspepsia, H. pylori) → UGIB → GI infection และ IBS → ตับอ่อนอักเสบเฉียบพลันและเรื้อรัง → อ่าน LFT และ viral hepatitis A/B/C → โรคตับจากยา ขาดเลือด แอลกอฮอล์ ไขมัน และ Wilson → ฝีในตับ → ตับแข็งและภาวะแทรกซ้อน (ascites/SAAG, SBP, hepatic encephalopathy)\nแนะนำให้อ่านตามลำดับ โดยหมวด 05 (LFT/serology) ควรอ่านก่อนหมวด 06–08 และหมวด 02 (UGIB) ทบทวนคู่กับหมวด 08 เรื่อง varices\nข้อสอบท้ายหัวข้อส่วนใหญ่ (ป้าย \"ข้อสอบเก่า\") เรียบเรียงจากตัวอย่างข้อสอบในสไลด์ และเฉลยตามสไลด์ โดยบอกไว้ในคำอธิบายเมื่อเฉลยต่างจากแนวทางปัจจุบัน",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#8a5a12",
-   "soft": "#f4ecdd",
-   "ink": "#6d460c",
-   "dark": "#f5c268",
-   "darkSoft": "#241d12",
-   "darkInk": "#f8d596"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/gi.json",
   "lectureCount": 8
@@ -65,12 +65,12 @@
   "intro": "ชุด Nephro มี 9 หมวด 34 หัวข้อ ครอบคลุมทั้ง deck NL2-Nephro (296 หน้า): AKI, nephritic, nephrotic, CKD, polyuria/Na, K, ABG, metabolic acidosis และ UTI พร้อมข้อสอบเก่าในสไลด์ทุกข้อ\nแนะนำเรียงตามลำดับ: เริ่ม UA → AKI → glomerular disease → CKD แล้วจึงไปน้ำ–เกลือแร่ (Na → K) ต่อด้วย ABG ก่อน metabolic acidosis เพราะใช้สูตรต่อกัน ปิดท้ายด้วย UTI ซึ่งแยกอ่านได้",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#6b3f8c",
-   "soft": "#efe8f5",
-   "ink": "#542f70",
-   "dark": "#c6a6e6",
-   "darkSoft": "#1d1526",
-   "darkInk": "#dbc6f0"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/nephro.json",
   "lectureCount": 9
@@ -84,12 +84,12 @@
   "intro": "ชุด Endocrine มี 7 หมวด 26 หัวข้อ ครอบคลุม deck NL2-Endocrine ทั้ง 347 หน้า ได้แก่ เบาหวาน, hypoglycemia กับ DKA/HHS, thyrotoxicosis (Graves, ผลข้างเคียงยา ATD, TPP, thyroiditis, storm), hypothyroidism/myxedema coma/thyroid nodule, hypercalcemia, ต่อมหมวกไตกับต่อมใต้สมอง (Cushing, adrenal insufficiency, Sheehan) และไขมันในเลือด พร้อมข้อสอบเก่าจากสไลด์เกือบทุกข้อ\nแนะนำให้อ่านเรียงตามลำดับ: เบาหวานก่อน แล้วต่อด้วยภาวะฉุกเฉินจากน้ำตาล จากนั้นอ่านไทรอยด์สองหมวดต่อกัน (ใช้ตาราง TSH × FT4 ร่วมกัน) แล้วจึงอ่าน Ca และ HPA axis ปิดท้ายด้วย dyslipidemia ซึ่งเชื่อมกับหมวดเบาหวานและหัวใจ",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#2e7a4a",
-   "soft": "#e2f1e7",
-   "ink": "#225e38",
-   "dark": "#7fdca2",
-   "darkSoft": "#10241a",
-   "darkInk": "#a9ebc1"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/endo.json",
   "lectureCount": 7
@@ -103,12 +103,12 @@
   "intro": "ชุด Hemato มี 10 หมวด 37 หัวข้อ ครอบคลุมทั้ง deck NL2-Hemato (387 หน้า): approach to anemia, hemolytic anemia, thalassemia, coagulation, platelet/TMA, bone marrow failure และ acute leukemia, lymphoma, MPN, transfusion medicine และ snake bite พร้อมข้อสอบเก่าในสไลด์เกือบทุกข้อ\nแนะนำเรียงตามลำดับ: เริ่ม CBC/reticulocyte และซีดแบบสร้างไม่พอ → hemolysis → thalassemia (ใช้ MCV และ hemolysis ต่อกัน) แล้วไป coagulation ก่อน platelet/TTP/DIC เพราะต้องอ่าน coagulogram เป็น จากนั้นมะเร็งเม็ดเลือด (หมวด 6–8) ปิดท้ายด้วย blood product/transfusion reaction และ snake bite ซึ่งใช้ความรู้ coagulogram อีกครั้ง",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#a3271f",
-   "soft": "#f8e7e5",
-   "ink": "#821e17",
-   "dark": "#f29086",
-   "darkSoft": "#2a1513",
-   "darkInk": "#f7b6ae"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/hemato.json",
   "lectureCount": 10
@@ -122,12 +122,12 @@
   "intro": "Deck NL2-Infectious (324 หน้า) แบ่งเป็น 9 หมวด 31 หัวข้อ ไล่ตาม outline ของสไลด์: ไข้เฉียบพลันจากแบคทีเรียในไทย (AUF, melioidosis, leptospirosis, rickettsia) → dengue, chikungunya, infectious mononucleosis → malaria → anthrax, diphtheria, pertussis, mucormycosis → rabies, tetanus, C. difficile → STI (syphilis, chancroid, LGV, gonorrhea, NGU) → HIV (วินิจฉัย OI ตาม CD4 ART และ PrEP/PEP) → OI ใน HIV (ฝ้าขาวในปาก เชื้อรา dimorphic ท้องเสียเรื้อรัง) → พยาธิ (ใบไม้ Strongyloides Capillaria) และเรื่องปิดท้าย candidemia กับ pneumococcal vaccine\nแนะนำให้อ่านหมวด 01–03 ต่อกันเพราะใช้แยกโรคไข้เขตร้อนจากประวัติสัมผัสและ CBC ส่วนหมวด 07 (HIV) ควรอ่านก่อนหมวด 08 (OI)\nข้อสอบท้ายหัวข้อส่วนใหญ่ (ป้าย \"ข้อสอบเก่า\") เรียบเรียงจากตัวอย่างข้อสอบในสไลด์ เฉลยในสไลด์เป็นภาพไฮไลต์ จึงตอบตามหลักฐานในสไลด์และแนวทางปัจจุบัน และบอกไว้ในคำอธิบายเมื่อแนวทางเปลี่ยนไปแล้ว (เช่น ACT ของ malaria, ยา CDI)",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#4d6b12",
-   "soft": "#ebf1dd",
-   "ink": "#3b530c",
-   "dark": "#bde06a",
-   "darkSoft": "#1a2210",
-   "darkInk": "#d3ec98"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/id.json",
   "lectureCount": 9
@@ -141,12 +141,12 @@
   "intro": "ชุด Neuro มี 11 หมวด 38 หัวข้อ ครอบคลุมทั้ง deck NL2-Neuro (418 หน้า): localization, stroke, seizure/epilepsy, CNS infection (รวม eosinophilic meningitis และ neurocysticercosis), dementia, Parkinson/tremor, secondary และ primary headache, spinal cord, peripheral nerve (facial palsy, GBS) และ NMJ/muscle พร้อมข้อสอบเก่าในสไลด์เกือบทุกข้อ\nแนะนำเริ่มจากหมวด 01 localization เพราะใช้ต่อทุกหมวด แล้วอ่าน stroke → seizure → CNS infection ซึ่งออกสอบมากที่สุด จากนั้นจึงไป headache (07 ก่อน 08 เพื่อคัด red flag ก่อน) และปิดด้วย spinal cord → peripheral nerve → NMJ/muscle ซึ่งอ่านคู่กับภาพ motor unit ในหมวด 11",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#3a4fa8",
-   "soft": "#e6e9f7",
-   "ink": "#2c3d87",
-   "dark": "#9fb0f5",
-   "darkSoft": "#151a2c",
-   "darkInk": "#c3cefa"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/neuro.json",
   "lectureCount": 11
@@ -160,12 +160,12 @@
   "intro": "deck NL2-Rheumato (163 หน้า) แบ่งเป็น 6 หมวด: เริ่มจาก approach to arthritis + synovial fluid แล้วต่อด้วย SLE/APS, RA, seronegative SpA (AS, ReA, PsA), crystal arthritis (gout, ULT, CPPD), septic arthritis/DGI กับ OA และปิดด้วย inflammatory myopathy กับ IgA vasculitis\nแนะนำให้อ่านหมวด 01 ก่อน เพราะตารางน้ำไขข้อและหลัก mono/oligo/polyarthritis ใช้ในทุกหมวด จากนั้นอ่านตามลำดับ หมวด 04–05 (gout, septic arthritis, OA) มีข้อสอบเก่าในสไลด์มากที่สุด ให้ทำข้อสอบท้ายหัวข้อให้ครบ",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#0f766e",
-   "soft": "#ddf1ef",
-   "ink": "#0b5c56",
-   "dark": "#6fd9cd",
-   "darkSoft": "#0f2523",
-   "darkInk": "#a2e8e0"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/rheum.json",
   "lectureCount": 6
@@ -179,12 +179,12 @@
   "intro": "Deck NL2-Dermato (363 หน้า) แบ่งเป็น 10 หมวด 41 หัวข้อ ไล่ตาม outline ของสไลด์: eczema (ICD, ACD, atopic, seborrheic, dyshidrotic, stasis) → psoriasis, pityriasis rosea และสิว → ลมพิษและผื่นแพ้ยา (MPE, FDE, SJS/TEN, DRESS, AGEP) → โรคตุ่มน้ำ (EM, pemphigus, pemphigoid) → ติดเชื้อไวรัส แบคทีเรีย เชื้อรา และปรสิตที่ผิวหนัง → viral exanthem กับโรคจาก toxin (scarlet fever, SSSS, TSS) → โรคเรื้อนและ erythema nodosum → ด่างขาว ผมร่วง แผลเป็น xanthoma และมะเร็งผิวหนัง\nภาพทางคลินิกในสไลด์อ่านเป็นข้อความไม่ได้ ทุกโรคจึงมีตาราง \"สิ่งที่เห็น\" ที่บรรยายผื่นเป็นคำแบบที่ NL ใช้ในโจทย์ และมีภาพ schematic (ชั้นผิวหนัง แผนที่ผื่น เวลาเกิดผื่นแพ้ยา ผล KOH/Tzanck) แทนภาพถ่าย แนะนำให้อ่านหัวข้อแรกของหมวด 01 (ศัพท์ผื่น) ก่อน และอ่านหมวด 03 กับ 04 ต่อกันเพื่อแยก EM/SJS/SSSS/AIBD\nข้อสอบส่วนใหญ่ (ป้าย \"ข้อสอบเก่า\") เรียบเรียงจากตัวอย่างข้อสอบในสไลด์ ซึ่งบรรยายผื่นแทนภาพ เฉลยในสไลด์เป็นภาพไฮไลต์ จึงตอบตามหลักฐานในสไลด์และแนวทางปัจจุบัน และบอกไว้ในคำอธิบายเมื่อตัวเลือกในสไลด์ถูกปรับ",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#9a4a6b",
-   "soft": "#f6e8ee",
-   "ink": "#7a3753",
-   "dark": "#eba3c1",
-   "darkSoft": "#28161e",
-   "darkInk": "#f3c5d8"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/derm.json",
   "lectureCount": 10
@@ -198,12 +198,12 @@
   "intro": "คลังข้อสอบ **NL2 Medicine ปี 2025 (update)** ครบทุกข้อในสไลด์ **77 ข้อ** จัดตามระบบ 10 หมวด: Cardio 12 · Respiratory 6 · GI 9 · Nephro/electrolyte 5 · Endocrine 7 · Hemato 9 · Infectious 11 · Neuro 11 · Rheumato 2 · Dermato 5 ข้อ แต่ละหัวข้อย่อยเป็นกลุ่มโจทย์เรื่องเดียวกัน พร้อมสรุปสั้น ๆ ว่าข้อสอบเรื่องนั้นวัดอะไร\nวิธีใช้ที่แนะนำ: อ่านและทำข้อสอบในชุดระบบนั้น ๆ ให้จบก่อน แล้วค่อยมาทำคลังนี้เพื่อเช็กว่าทำโจทย์จริงได้ไหม — หรือใช้แท็บ **สุ่มข้อสอบ** ทำทั้ง 77 ข้อแบบคละระบบเหมือนสนามจริง ข้อที่ตัวเลือกหรือตัวเลขถูกปรับจากสไลด์ เฉลยจะเขียนบอกไว้",
   "howto": "**วิธีใช้** — เลือกหัวข้อย่อยจากแถบซ้าย อ่านสรุปแล้วตอบข้อสอบท้ายหัวข้อ เฉลยขึ้นทันทีพร้อมเหตุผลของทุกตัวเลือก · ตอบครบแล้วหัวข้อจะถูกติ๊กว่าเรียนจบ · แท็บ **สุ่มข้อสอบ** คละโจทย์ทั้งชุดแบบสนามจริง · ข้อที่ผิดทั้งหมดรวมอยู่ใน **ทบทวนข้อที่ผิด**",
   "accent": {
-   "light": "#c24f36",
-   "soft": "#fbebe6",
-   "ink": "#9c3a24",
-   "dark": "#ff9a80",
-   "darkSoft": "#2a1813",
-   "darkInk": "#ffbba8"
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
   },
   "file": "data/exam25.json",
   "lectureCount": 10

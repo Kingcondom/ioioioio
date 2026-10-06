@@ -1,13 +1,167 @@
 [
- {"set":"cardio","label":"Cardio","thai":"หัวใจและหลอดเลือด","deck":"NL2-Cardio","fileId":"1x_riI72TN3dYZ_WAfGTobdQawQv31kAvyR6M-sEgFS0","accent":{"light":"#b3263a","soft":"#f8e6e8","ink":"#8e1c2d","dark":"#ff8f9d","darkSoft":"#2a1418","darkInk":"#ffb6bf"}},
- {"set":"resp","label":"Respiratory","thai":"ระบบหายใจ","deck":"NL2-Respiratory","fileId":"13lFyWAgMkDwCb-_rbGtEElElBJHBt5EKS2eE8_G9vOY","accent":{"light":"#1f6f8b","soft":"#e0eff4","ink":"#175569","dark":"#7cc6e2","darkSoft":"#10222a","darkInk":"#a9dcef"}},
- {"set":"gi","label":"GI","thai":"ระบบทางเดินอาหาร ตับ และตับอ่อน","deck":"NL2-GI","fileId":"1ostC65DkFCGOPfkP8tNosypQMGxmJefoGZJ9YbpJ2FY","accent":{"light":"#8a5a12","soft":"#f4ecdd","ink":"#6d460c","dark":"#f5c268","darkSoft":"#241d12","darkInk":"#f8d596"}},
- {"set":"nephro","label":"Nephro","thai":"ไต น้ำ และเกลือแร่","deck":"NL2-Nephro","fileId":"1ztD8xtClf2JPpIltOq1PNMUDekmCrO5DCCxbnQbiPXM","accent":{"light":"#6b3f8c","soft":"#efe8f5","ink":"#542f70","dark":"#c6a6e6","darkSoft":"#1d1526","darkInk":"#dbc6f0"}},
- {"set":"endo","label":"Endocrine","thai":"ต่อมไร้ท่อและเมแทบอลิซึม","deck":"NL2-Endocrine","fileId":"1sXrzRMf4T_1AtBi-x6OXBw_ONEEum_XQS9Ux9InIAZU","accent":{"light":"#2e7a4a","soft":"#e2f1e7","ink":"#225e38","dark":"#7fdca2","darkSoft":"#10241a","darkInk":"#a9ebc1"}},
- {"set":"hemato","label":"Hemato","thai":"โลหิตวิทยา","deck":"NL2-Hemato","fileId":"1sRTGqMsM8qjG4QgqUoIxIUbc3ywc_E0yba_pFtiZIt8","accent":{"light":"#a3271f","soft":"#f8e7e5","ink":"#821e17","dark":"#f29086","darkSoft":"#2a1513","darkInk":"#f7b6ae"}},
- {"set":"id","label":"Infectious","thai":"โรคติดเชื้อ","deck":"NL2-Infectious (Completed)","fileId":"13vVAZhZ1IrA1z7vzgNZAJZjTFqUVopBWlW2b37xZTQU","accent":{"light":"#4d6b12","soft":"#ebf1dd","ink":"#3b530c","dark":"#bde06a","darkSoft":"#1a2210","darkInk":"#d3ec98"}},
- {"set":"neuro","label":"Neuro","thai":"ระบบประสาท","deck":"NL2-Neuro","fileId":"1NCgWh0rBfRUuoLNV_N8DDzjhU9zHgNfMfQuCnz0MAmM","accent":{"light":"#3a4fa8","soft":"#e6e9f7","ink":"#2c3d87","dark":"#9fb0f5","darkSoft":"#151a2c","darkInk":"#c3cefa"}},
- {"set":"rheum","label":"Rheumato","thai":"โรคข้อและภูมิคุ้มกัน","deck":"NL2-Rheumato","fileId":"1Ay2ZSng9MQ_rW2KZV4xFmJkobXQ2P2R81q39wAYofo0","accent":{"light":"#0f766e","soft":"#ddf1ef","ink":"#0b5c56","dark":"#6fd9cd","darkSoft":"#0f2523","darkInk":"#a2e8e0"}},
- {"set":"derm","label":"Dermato","thai":"ผิวหนัง","deck":"NL2-Dermato","fileId":"1a7VRDYgSdgEEj1TW-uDAVcJtSKtMHBM7sIoRgUVsdzo","accent":{"light":"#9a4a6b","soft":"#f6e8ee","ink":"#7a3753","dark":"#eba3c1","darkSoft":"#28161e","darkInk":"#f3c5d8"}},
- {"set":"exam25","label":"ข้อสอบ 2025","thai":"Update ข้อสอบ NL2 Medicine 2025","deck":"Update ข้อสอบ 2025 NL2-Medicine","fileId":"1Upp4_MyhQgV00q71uxNr4jy5HykyobzyUXxLMPJU9fU","accent":{"light":"#c24f36","soft":"#fbebe6","ink":"#9c3a24","dark":"#ff9a80","darkSoft":"#2a1813","darkInk":"#ffbba8"}}
+ {
+  "set": "cardio",
+  "label": "Cardio",
+  "thai": "หัวใจและหลอดเลือด",
+  "deck": "NL2-Cardio",
+  "fileId": "1x_riI72TN3dYZ_WAfGTobdQawQv31kAvyR6M-sEgFS0",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "resp",
+  "label": "Respiratory",
+  "thai": "ระบบหายใจ",
+  "deck": "NL2-Respiratory",
+  "fileId": "13lFyWAgMkDwCb-_rbGtEElElBJHBt5EKS2eE8_G9vOY",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "gi",
+  "label": "GI",
+  "thai": "ระบบทางเดินอาหาร ตับ และตับอ่อน",
+  "deck": "NL2-GI",
+  "fileId": "1ostC65DkFCGOPfkP8tNosypQMGxmJefoGZJ9YbpJ2FY",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "nephro",
+  "label": "Nephro",
+  "thai": "ไต น้ำ และเกลือแร่",
+  "deck": "NL2-Nephro",
+  "fileId": "1ztD8xtClf2JPpIltOq1PNMUDekmCrO5DCCxbnQbiPXM",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "endo",
+  "label": "Endocrine",
+  "thai": "ต่อมไร้ท่อและเมแทบอลิซึม",
+  "deck": "NL2-Endocrine",
+  "fileId": "1sXrzRMf4T_1AtBi-x6OXBw_ONEEum_XQS9Ux9InIAZU",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "hemato",
+  "label": "Hemato",
+  "thai": "โลหิตวิทยา",
+  "deck": "NL2-Hemato",
+  "fileId": "1sRTGqMsM8qjG4QgqUoIxIUbc3ywc_E0yba_pFtiZIt8",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "id",
+  "label": "Infectious",
+  "thai": "โรคติดเชื้อ",
+  "deck": "NL2-Infectious (Completed)",
+  "fileId": "13vVAZhZ1IrA1z7vzgNZAJZjTFqUVopBWlW2b37xZTQU",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "neuro",
+  "label": "Neuro",
+  "thai": "ระบบประสาท",
+  "deck": "NL2-Neuro",
+  "fileId": "1NCgWh0rBfRUuoLNV_N8DDzjhU9zHgNfMfQuCnz0MAmM",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "rheum",
+  "label": "Rheumato",
+  "thai": "โรคข้อและภูมิคุ้มกัน",
+  "deck": "NL2-Rheumato",
+  "fileId": "1Ay2ZSng9MQ_rW2KZV4xFmJkobXQ2P2R81q39wAYofo0",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "derm",
+  "label": "Dermato",
+  "thai": "ผิวหนัง",
+  "deck": "NL2-Dermato",
+  "fileId": "1a7VRDYgSdgEEj1TW-uDAVcJtSKtMHBM7sIoRgUVsdzo",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ },
+ {
+  "set": "exam25",
+  "label": "ข้อสอบ 2025",
+  "thai": "Update ข้อสอบ NL2 Medicine 2025",
+  "deck": "Update ข้อสอบ 2025 NL2-Medicine",
+  "fileId": "1Upp4_MyhQgV00q71uxNr4jy5HykyobzyUXxLMPJU9fU",
+  "accent": {
+   "light": "#d8604a",
+   "soft": "#fde8e1",
+   "ink": "#a8402c",
+   "dark": "#ff9a84",
+   "darkSoft": "#33190f",
+   "darkInk": "#ffbfae"
+  }
+ }
 ]
