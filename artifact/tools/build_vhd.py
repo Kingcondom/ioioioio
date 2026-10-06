@@ -418,4 +418,314 @@ sec("cardio-vhd-09", "ลิ้นหัวใจด้านขวา — tricu
          "ดังขึ้นตอนหายใจเข้า = murmur ของหัวใจขวา", "Carvallo's sign", R("Mitral stenosis — associated lesions"), NLN + ["B7.1.2(1)"]),
     ], NLN + ["B7.1.2(2)"])
 
-# ═══ ต่อส่วนที่ 3 ด้านล่าง ═══
+
+# ───────────────────────────── 10
+sec("cardio-vhd-10", "Acute rheumatic fever — กลไกและเกณฑ์ Jones",
+    "หลังคออักเสบจาก GAS 2–4 สัปดาห์ · molecular mimicry · 2 major หรือ 1 major + 2 minor + หลักฐาน GAS · Jones 2015 แยกตามความเสี่ยงของประชากร", 11,
+"""### กลไก (สไลด์)
+**ภูมิคุ้มกันทำลายตัวเองหลังติดเชื้อ Group A Streptococcus (GAS)** ที่คอหรือ scarlet fever ที่ **รักษาไม่เพียงพอ**
+แอนติบอดีและ T-cell ต่อ **M protein** ของเชื้อ **จับข้ามกับโปรตีนของร่างกาย (molecular mimicry)** — myosin และ laminin ในหัวใจ/ลิ้น · ข้อ · ปมประสาทฐานสมอง (chorea) · ผิวหนัง
+- อาการเริ่ม **2–4 สัปดาห์หลังคออักเสบ** · พบมากที่สุดอายุ **5–15 ปี**
+- **ผลระยะยาวที่สำคัญคือ rheumatic heart disease** — ลิ้น mitral เสียบ่อยที่สุด (ในไทย MS เป็นผลระยะยาวที่พบบ่อยที่สุด)
+
+### เกณฑ์ Jones (สไลด์)
+**2 major หรือ 1 major + 2 minor** ร่วมกับ **หลักฐานการติดเชื้อ GAS ก่อนหน้า**
+
+| **Major** — จำว่า "ขอบ-ข้อ-คอ-คำ-คว" (สไลด์) | **Minor** |
+|---|---|
+| **Erythema marginatum** (ผื่นขอบชัด ตรงกลางซีด ไม่คัน) | **ไข้** |
+| **Polyarthritis** (ข้อใหญ่ ย้ายที่ ตอบสนองต่อ aspirin ดีมาก) | **ปวดข้อ (arthralgia)** |
+| **Sydenham's chorea** (St. Vitus' dance) | **PR interval ยาว** |
+| **Carditis** | **ESR หรือ CRP สูง** |
+| **Subcutaneous nodules** (ไม่เจ็บ บนปุ่มกระดูก) | |
+
+**หลักฐาน GAS** — throat culture หรือ rapid antigen บวก · **ASO** หรือ **anti-DNase B** สูงหรือเพิ่มขึ้น
+
+### Revised Jones 2015 (AHA) — ที่แนวทาง WHO 2024 ใช้
+**แยกเกณฑ์ตามความเสี่ยงของประชากร** — ประเทศที่มี RHD ชุกปานกลาง–สูง (รวมพื้นที่ในไทย) ใช้เกณฑ์ที่หลวมกว่า
+| | **ประชากรเสี่ยงต่ำ** | **ประชากรเสี่ยงปานกลาง–สูง** |
+|---|---|---|
+| Carditis | ทางคลินิก **หรือ subclinical (พบจาก echo)** | ทางคลินิก **หรือ subclinical** |
+| อาการข้อที่นับเป็น major | **polyarthritis เท่านั้น** | **monoarthritis หรือ polyarthritis หรือ polyarthralgia** |
+| ข้อที่นับเป็น minor | polyarthralgia | monoarthralgia |
+| ไข้ (minor) | **≥ 38.5°C** | **≥ 38.0°C** |
+| ESR/CRP (minor) | **ESR ≥ 60** และ/หรือ CRP ≥ 3.0 มก./ดล. | **ESR ≥ 30** และ/หรือ CRP ≥ 3.0 มก./ดล. |
+| PR ยาว (minor) | นับได้ถ้าไม่ได้ใช้ carditis เป็น major | เหมือนกัน |
+- **ครั้งแรก** — 2 major หรือ 1 major + 2 minor
+- **กลับเป็นซ้ำ** — 2 major · 1 major + 2 minor · **หรือ 3 minor**
+- **Echo จำเป็นในทุกราย** — จับ **subclinical carditis** ที่ฟังไม่ได้ยิน
+
+### ข้อยกเว้นของ WHO 2002–2003 (สไลด์)
+- เคยมี RHD แล้วกลับเป็นซ้ำ → **2 minor + หลักฐาน GAS** ก็พอ
+- **Chorea เดี่ยว หรือ indolent carditis** → **ไม่ต้องมี major อื่นหรือหลักฐาน GAS** (เพราะเกิดช้าหลังติดเชื้อนานจนแอนติบอดีลดแล้ว)
+
+### Carditis (สไลด์)
+พบ **40–60%** · เป็น **pancarditis**
+| ชั้น | อาการแสดง |
+|---|---|
+| **Endocarditis/valvulitis** | **apical pansystolic murmur (MR)** · **apical short mid-diastolic murmur = Carey Coombs** · **basal diastolic blowing (AR)** |
+| **Myocarditis** | หัวใจโต · หัวใจล้มเหลว |
+| **Pericarditis** | pericardial friction rub · น้ำในเยื่อหุ้มหัวใจ |
+""",
+    ["ARF: 2–4 สัปดาห์หลัง GAS pharyngitis · อายุ 5–15 ปี · molecular mimicry",
+     "Major: erythema marginatum · polyarthritis · chorea · carditis · nodules (ขอบ-ข้อ-คอ-คำ-คว)",
+     "Minor: ไข้ · ปวดข้อ · PR ยาว · ESR/CRP สูง + หลักฐาน GAS (ASO, anti-DNase B)",
+     "Jones 2015: ประชากรเสี่ยงสูงนับ monoarthritis/polyarthralgia เป็น major · echo ทุกราย",
+     "Chorea เดี่ยวหรือ indolent carditis ไม่ต้องมีหลักฐาน GAS"],
+    [mcq(N(13), "A 10-year-old girl from a high-RHD-prevalence area has fever 38.2°C and arthritis of the right knee only, 3 weeks after a sore throat. ESR is 45 mm/h and ASO titre is raised. Echocardiography shows pathological mitral regurgitation not audible on auscultation. Under the 2015 revised Jones criteria, how should she be classified?",
+         ["Does not meet criteria because arthritis is monoarticular", "Acute rheumatic fever: two major (subclinical carditis, monoarthritis) plus GAS evidence",
+          "Post-streptococcal reactive arthritis only", "Infective endocarditis", "Juvenile idiopathic arthritis"], 1,
+         "**Revised Jones 2015** ในประชากร **เสี่ยงปานกลาง–สูง**: **monoarthritis นับเป็น major** และ **subclinical carditis จาก echo ก็นับเป็น carditis (major)** → **2 major + หลักฐาน GAS (ASO สูง) = ARF**\n\nนอกจากนี้ยังมี minor ครบ: **ไข้ ≥ 38.0** และ **ESR ≥ 30** · ในประชากรเสี่ยงต่ำ monoarthritis จะไม่นับเป็น major — จึงต้องรู้ว่าผู้ป่วยมาจากพื้นที่แบบไหน",
+         "Jones 2015 ประชากรเสี่ยงสูง: monoarthritis + subclinical carditis นับเป็น major", "Revised Jones criteria", R("Revised Jones criteria ACC/AHA 2015") + ["Gewitz MH, et al. Circulation 2015 · WHO 2024"], ARF + ["2.1.27", "3.3.23"]),
+     mcq(N(14), "Which finding is a MINOR rather than a major Jones criterion?",
+         ["Sydenham's chorea", "Erythema marginatum", "Prolonged PR interval", "Subcutaneous nodules", "Carditis"], 2,
+         "**Minor criteria** (สไลด์): **ไข้ · ปวดข้อ · PR interval ยาว · ESR/CRP สูง**\n\n**Major** จำว่า **ขอบ-ข้อ-คอ-คำ-คว**: erythema marginatum · polyarthritis · chorea · carditis · subcutaneous nodules\n\nPR ยาวไม่ใช่ carditis — เป็นการนำไฟฟ้าช้าจากการอักเสบ ไม่ทำนาย RHD จึงนับเป็นเพียง minor",
+         "PR ยาว = minor ไม่ใช่ carditis", "Jones minor criteria", R("Minor criteria"), ARF),
+    ], ARF + ["2.1.27", "2.1.50"], SRC + " · อัปเดตตาม revised Jones 2015 และ WHO 2024")
+
+# ───────────────────────────── 11
+sec("cardio-vhd-11", "รักษาไข้รูมาติก และป้องกันการกลับเป็นซ้ำ (อัปเดต WHO 2024)",
+    "กำจัด GAS · ลดการอักเสบ · benzathine penicillin G ทุก 4 สัปดาห์ · ระยะเวลาตามความรุนแรงของหัวใจ", 10,
+"""### สามเป้าหมาย (สไลด์)
+1. **บรรเทาอาการ**  2. **กำจัด Group A Streptococcus**  3. **ป้องกันการติดเชื้อซ้ำ**
+
+### รักษาคออักเสบจาก GAS (primary prevention)
+| ยา | ขนาด |
+|---|---|
+| **Benzathine penicillin G (BPG)** | **1.2 ล้านยูนิต IM ครั้งเดียว** · **600,000 ยูนิตถ้า < 27 กก.** |
+| **Penicillin V หรือ amoxicillin** | เด็ก 250 มก. วันละ 2 ครั้ง · ผู้ใหญ่ 500 มก. วันละ 2 ครั้ง **นาน 10 วัน** · **WHO 2024: amoxicillin 50 มก./กก./วัน (ไม่เกิน 1,000 มก.) วันละครั้งได้ ครบ 10 วัน** |
+| แพ้ penicillin | cephalosporin หรือ macrolide **ครบ 10 วัน** |
+**ต้องครบ 10 วัน** — ยาสั้นกว่านั้นกำจัดเชื้อไม่หมดและไม่ป้องกันไข้รูมาติก
+
+### ลดการอักเสบ (สไลด์)
+| อาการ | ยา |
+|---|---|
+| **Arthritis** | **Salicylate 75 มก./กก./วัน 4–6 สัปดาห์** |
+| **Carditis ไม่มีหัวใจโต** | **Salicylate 90–100 มก./กก./วัน 4–8 สัปดาห์** |
+| **Carditis มีหัวใจโตหรือ CHF** | **Prednisolone 2 มก./กก./วัน × 2 สัปดาห์** แล้วต่อ **salicylate 90–100 มก./กก./วัน × 6 สัปดาห์** |
+- **WHO 2024** — ยาต้านการอักเสบ (aspirin, NSAID เช่น naproxen, steroid, IVIG) **ใช้บรรเทาอาการได้** แต่ **ไม่มีหลักฐานว่าป้องกันการเกิด RHD** จึงไม่แนะนำทั้งให้และไม่ให้เพื่อจุดประสงค์นั้น
+- **Chorea** — ส่วนใหญ่หายเอง · รุนแรงใช้ยา (เช่น carbamazepine หรือ valproate)
+- **หัวใจล้มเหลว** — รักษามาตรฐาน (ยาขับปัสสาวะ) · พักตามอาการ
+
+### ป้องกันการกลับเป็นซ้ำ (secondary prophylaxis)
+**การกลับเป็นซ้ำแต่ละครั้งทำลายลิ้นเพิ่ม** — นี่คือมาตรการที่ป้องกัน RHD ได้ดีที่สุด
+| ยา | ขนาด |
+|---|---|
+| **BPG** (ทางเลือกแรก) | **1.2 ล้านยูนิต IM ทุก 3–4 สัปดาห์** (สไลด์) · **WHO 2024: ทุก 4 สัปดาห์ ดีกว่ายากิน** · **ผสมยาชาเฉพาะที่ (lidocaine) ลดความเจ็บได้** |
+| Penicillin V | 250 มก. กิน วันละ 2 ครั้ง |
+| Erythromycin (แพ้ penicillin) | 250 มก. กิน วันละ 2 ครั้ง |
+
+### ระยะเวลา (สไลด์ — AHA)
+| กลุ่ม | ระยะเวลา |
+|---|---|
+| **มี carditis และยังมีโรคลิ้นหัวใจหลงเหลือ** | **อย่างน้อย 10 ปีหลังครั้งสุดท้าย และอย่างน้อยถึงอายุ 40 ปี** บางรายตลอดชีวิต |
+| **มี carditis แต่ไม่มีโรคลิ้นหลงเหลือ** | **10 ปี หรือถึงอายุ 21 ปี** (แล้วแต่อันไหนนานกว่า) |
+| **ไม่มี carditis** | **5 ปี หรือถึงอายุ 21 ปี** (แล้วแต่อันไหนนานกว่า) |
+**WHO 2024 เพิ่ม** — เด็กและวัยรุ่นที่ **ตรวจคัดกรองด้วย echo แล้วพบ RHD ขั้นต่ำ** ควรได้ยาป้องกันเพื่อชะลอการดำเนินโรค · และต้องมีระบบช่วยให้ผู้ป่วยมารับยาสม่ำเสมอ
+""",
+    ["คออักเสบ GAS: BPG 1.2 MU IM ครั้งเดียว (600,000 ถ้า < 27 กก.) หรือ penicillin/amoxicillin 10 วัน",
+     "Arthritis: salicylate 75 มก./กก./วัน · carditis + หัวใจโต/CHF: prednisolone 2 มก./กก./วัน",
+     "Secondary prophylaxis: BPG 1.2 MU ทุก 4 สัปดาห์ (WHO 2024) ดีกว่ายากิน",
+     "Carditis + ลิ้นเสีย: ≥ 10 ปี และถึงอายุ ≥ 40 · carditis ไม่มีลิ้นเสีย: 10 ปี/21 ปี · ไม่มี carditis: 5 ปี/21 ปี",
+     "ยาต้านการอักเสบช่วยอาการ แต่ไม่ป้องกัน RHD"],
+    [mcq(N(15), "A 16-year-old had acute rheumatic fever with carditis and now has residual moderate mitral regurgitation. How long should secondary prophylaxis continue?",
+         ["5 years or until age 21, whichever is longer", "10 years or until age 21, whichever is longer",
+          "At least 10 years after the last episode and at least until age 40, sometimes lifelong", "Only until the ESR normalises", "1 year"], 2,
+         "ตารางในสไลด์: **ไข้รูมาติกที่มี carditis และยังมีโรคลิ้นหัวใจหลงเหลือ → อย่างน้อย 10 ปีหลังครั้งสุดท้าย และอย่างน้อยถึงอายุ 40 ปี บางรายตลอดชีวิต**\n\nCarditis ที่ไม่มีลิ้นเสียหลงเหลือ → 10 ปีหรือถึงอายุ 21 · ไม่มี carditis → 5 ปีหรือถึงอายุ 21\n\nยาที่ใช้: **BPG 1.2 ล้านยูนิต IM ทุก 4 สัปดาห์** (WHO 2024)",
+         "Carditis + ลิ้นเสีย → ≥ 10 ปี และถึงอายุ ≥ 40", "Duration of secondary prophylaxis", R("Duration of secondary rheumatic fever prophylaxis") + ["WHO 2024"], ARF),
+     mcq(N(16), "According to the WHO 2024 guideline, what is the preferred agent for secondary prophylaxis of rheumatic fever?",
+         ["Oral penicillin V twice daily", "Intramuscular benzathine benzylpenicillin every 4 weeks", "Oral azithromycin weekly", "Aspirin long term", "Oral amoxicillin only during sore throat episodes"], 1,
+         "WHO 2024: **benzathine benzylpenicillin IM ทุก 4 สัปดาห์** เป็นยาป้องกันที่ได้ผลดีที่สุดและ **ดีกว่ายากิน** · อาจผสมยาชาเฉพาะที่เพื่อลดความเจ็บและช่วยให้ผู้ป่วยมารับยาต่อเนื่อง\n\nยากิน (penicillin V, erythromycin) เป็นทางเลือกเมื่อฉีดไม่ได้ · aspirin เป็นยาลดการอักเสบ ไม่ได้ป้องกันการติดเชื้อซ้ำ",
+         "Secondary prophylaxis: BPG IM ทุก 4 สัปดาห์", "WHO 2024 secondary prophylaxis", ["WHO guideline on the prevention and diagnosis of RF and RHD, 2024"] + R("Secondary prophylaxis"), ARF + ["B6.2.2(3)"]),
+    ], ARF + ["B6.2.2(3)"], SRC + " · อัปเดตตาม WHO 2024")
+
+# ───────────────────────────── 12
+sec("cardio-vhd-12", "Infective endocarditis — สงสัยเมื่อไร และวินิจฉัยตาม Duke-ISCVID 2023",
+    "ไข้ + murmur = IE จนกว่าจะพิสูจน์ว่าไม่ใช่ · เพาะเชื้อ 3 ชุดก่อนให้ยา · echo · เกณฑ์ใหม่เพิ่ม CT/PET-CT และผลผ่าตัด", 10,
+"""สไลด์ของคาบนี้ไม่มีหัวข้อ IE แต่ **คลังข้อสอบ Ward Drill คาบ 27 มี IE 7 ข้อ** และ IE เป็นภาวะแทรกซ้อนสำคัญของโรคลิ้นหัวใจรูมาติก — เนื้อหาส่วนนี้อิง **ESC 2023 Guidelines for the management of endocarditis** และ **2023 Duke-ISCVID criteria**
+
+### เมื่อไรต้องคิดถึง IE
+**ไข้ + เสียงฟู่ (โดยเฉพาะใหม่) = IE จนกว่าจะพิสูจน์ว่าไม่ใช่** — ยิ่งมี **ลิ้นหัวใจผิดปกติ (RHD) ลิ้นเทียม เคยเป็น IE ใช้ยาฉีด หรือมีอุปกรณ์ในหัวใจ**
+อาการกึ่งเฉียบพลัน (viridans streptococci) — ไข้เรื้อรังเป็นสัปดาห์ถึงเดือน อ่อนเพลีย น้ำหนักลด ปวดหลัง ม้ามโต ซีด
+
+| อาการแสดง | กลไก |
+|---|---|
+| **Splinter hemorrhage · conjunctival hemorrhage** | ลิ่มเชื้อเล็ก ๆ/หลอดเลือดอักเสบ |
+| **Janeway lesion** (ไม่เจ็บ ฝ่ามือฝ่าเท้า) | emboli |
+| **Osler node** (เจ็บ ปลายนิ้ว) | immune complex |
+| **Roth spot** — **เลือดออกที่จอตามีจุดซีดตรงกลาง** | immune complex |
+| Glomerulonephritis · RF บวก | immune complex |
+| Stroke · ไตหรือม้ามตาย · mycotic aneurysm | ก้อนเชื้อหลุด |
+
+### การตรวจ
+1. **เพาะเชื้อจากเลือดอย่างน้อย 3 ชุด จากตำแหน่งต่างกัน ก่อนให้ยาปฏิชีวนะ** — สำคัญที่สุด
+2. **Echocardiography** — TTE ก่อน · **TEE** เมื่อสงสัยมากแต่ TTE ไม่ชัด ลิ้นเทียม หรือหาฝี
+
+### 2023 Duke-ISCVID criteria (สรุป)
+| **Major** | **Minor** |
+|---|---|
+| **จุลชีววิทยา** — เชื้อทั่วไปของ IE ขึ้น ≥ 2 ชุด (viridans strep, S. gallolyticus, HACEK, S. aureus, **E. faecalis** และอื่น ๆ ที่เพิ่มเข้ามา) · PCR/sequencing จากลิ้น · Coxiella | **มีปัจจัยเสี่ยง** (ลิ้นผิดปกติ ลิ้นเทียม ยาฉีด เคยเป็น IE) |
+| **ภาพถ่าย** — echo พบ vegetation ฝี ลิ้นทะลุ ลิ้นเทียมหลวม · **ใหม่: cardiac CT และ FDG-PET/CT** | **ไข้ ≥ 38.0°C** |
+| **ใหม่: พบหลักฐานจากการผ่าตัดโดยตรง** (major clinical) | **ปรากฏการณ์หลอดเลือด** — emboli (รวมที่พบจากภาพถ่ายโดยไม่มีอาการ) · Janeway · เลือดออกในสมอง · mycotic aneurysm · conjunctival hemorrhage |
+| | **ปรากฏการณ์ภูมิคุ้มกัน** — Osler · Roth · GN · RF บวก |
+| | จุลชีววิทยาที่ไม่ถึงเกณฑ์ major |
+**Definite IE** = **2 major · หรือ 1 major + 3 minor · หรือ 5 minor** · เกณฑ์ใหม่ไวกว่าเกณฑ์ modified Duke เดิม
+""",
+    ["ไข้ + murmur = IE จนกว่าจะพิสูจน์ว่าไม่ใช่",
+     "เพาะเชื้อ ≥ 3 ชุดต่างตำแหน่งก่อนให้ยา · echo (TEE ถ้าจำเป็น)",
+     "Roth spot = เลือดออกที่จอตาจุดซีดกลาง · Osler เจ็บ · Janeway ไม่เจ็บ",
+     "Duke-ISCVID 2023: เพิ่ม CT/PET-CT · ผลผ่าตัดเป็น major · E. faecalis เป็นเชื้อทั่วไป",
+     "Definite: 2 major · 1 major + 3 minor · 5 minor"],
+    [mcq(N(17), "A 42-year-old woman with known rheumatic mitral regurgitation has 4 weeks of fever, weight loss and new splenomegaly. What is the single most important first step before starting antibiotics?",
+         ["Start empirical ceftriaxone immediately and then culture", "Obtain at least three sets of blood cultures from separate venepunctures",
+          "Order a CT abdomen", "Check ASO titre", "Perform bone marrow biopsy"], 1,
+         "**ไข้เรื้อรัง + ลิ้นหัวใจผิดปกติ + ม้ามโต = สงสัย IE** → ขั้นแรกคือ **เพาะเชื้อจากเลือดอย่างน้อย 3 ชุดจากตำแหน่งต่างกันก่อนให้ยาปฏิชีวนะ** · การให้ยาก่อนทำให้เพาะเชื้อไม่ขึ้นและเลือกยาไม่ได้\n\nในผู้ป่วยที่อาการไม่รุนแรง (กึ่งเฉียบพลัน) รอผลเพาะเชื้อได้ · ถ้าอาการหนักให้เก็บเชื้อให้ครบอย่างรวดเร็วแล้วเริ่มยาทันที",
+         "สงสัย IE → blood culture ≥ 3 ชุดก่อนยา", "IE diagnosis", ["ESC 2023 endocarditis guidelines", "2023 Duke-ISCVID criteria"], IE + ["2.1.1"]),
+    ], IE + ["2.1.1", "3.3.23"], "ESC 2023 Endocarditis guidelines · 2023 Duke-ISCVID criteria (ไม่อยู่ในสไลด์ — เพิ่มตามคลังข้อสอบ)")
+
+# ───────────────────────────── 13
+sec("cardio-vhd-13", "Infective endocarditis — รักษา ผ่าตัด และป้องกัน (ESC 2023)",
+    "Viridans strep: penicillin G/ceftriaxone 4 สัปดาห์ หรือ 2 สัปดาห์ + gentamicin · oral step-down · ผ่าตัดเมื่อ HF ติดเชื้อคุมไม่ได้ หรือป้องกัน emboli", 9,
+"""### ยาปฏิชีวนะ — ตัวอย่างที่ออกสอบ
+**Viridans streptococci ที่ไวต่อ penicillin บนลิ้นธรรมชาติ**
+- **Penicillin G หรือ ceftriaxone ทางหลอดเลือด 4 สัปดาห์**
+- หรือ **2 สัปดาห์ร่วมกับ gentamicin** ในรายที่ไม่มีภาวะแทรกซ้อนและไตปกติ
+ลิ้นเทียม → **6 สัปดาห์** · S. aureus และเชื้ออื่นใช้สูตรต่างกัน
+
+### Oral step-down (ใหม่ใน ESC 2023)
+ผู้ป่วย **IE ด้านซ้ายที่อาการคงที่** จาก **streptococci, E. faecalis, S. aureus หรือ CoNS** ที่ได้ยาทางหลอดเลือดแล้ว **≥ 10 วัน** (หรือ ≥ 7 วันหลังผ่าตัด) ไม่มีไข้ ไม่มีฝี และ TEE ไม่มีปัญหา → **เปลี่ยนเป็นยากินจนครบได้ (IIa)** — หลักฐานจาก **POET trial**
+
+### ผ่าตัดเมื่อไร (สามเหตุผลหลัก)
+| เหตุผล | ตัวอย่าง |
+|---|---|
+| **หัวใจล้มเหลว** | ลิ้นรั่วหรือทะลุจนเกิด pulmonary edema/ช็อก → ผ่าตัดด่วน |
+| **ติดเชื้อคุมไม่ได้** | **ฝี** · เชื้อในเลือดไม่หายแม้ได้ยาเหมาะสม · เชื้อรา หรือเชื้อดื้อยา |
+| **ป้องกัน emboli** | **vegetation ≥ 10 มม. ร่วมกับเคยมี emboli** · vegetation ใหญ่มาก |
+
+### ป้องกันก่อนทำฟัน (ESC 2023 / AHA)
+**ให้เฉพาะกลุ่มเสี่ยงสูง** ที่ทำ **หัตถการฟันที่มีการจับเหงือกหรือรอบปลายรากฟัน**
+- กลุ่มเสี่ยงสูง: **ลิ้นหัวใจเทียม (รวม TAVI และวัสดุซ่อมลิ้น)** · **เคยเป็น IE** · โรคหัวใจพิการแต่กำเนิดชนิดเขียวที่ยังไม่แก้ไข หรือแก้ด้วยวัสดุเทียม · อุปกรณ์ช่วยการทำงานของหัวใจ (VAD)
+- ยา: **amoxicillin 2 ก. กิน 30–60 นาทีก่อนทำ**
+- **แพ้ penicillin: azithromycin หรือ clarithromycin 500 มก. หรือ doxycycline 100 มก.**
+- **อัปเดต** — **clindamycin ไม่แนะนำแล้ว** (AHA 2021 และ ESC 2023) เพราะเสี่ยง C. difficile และแพ้ยารุนแรง ทั้งที่ข้อสอบเก่าบางข้อยังใช้เป็นคำตอบ
+- **RHD ที่ไม่มีลิ้นเทียมหรือไม่เคยเป็น IE ไม่ต้องให้ยาป้องกันเป็นกิจวัตร** — สุขภาพช่องปากที่ดีสำคัญกว่า
+""",
+    ["Viridans strep ลิ้นธรรมชาติ: penicillin G/ceftriaxone 4 สัปดาห์ หรือ 2 สัปดาห์ + gentamicin",
+     "ESC 2023: oral step-down หลัง IV ≥ 10 วันในรายที่คงที่ (POET)",
+     "ผ่าตัด: HF · ติดเชื้อคุมไม่ได้/ฝี · vegetation ≥ 10 มม. + emboli",
+     "ป้องกันก่อนทำฟันเฉพาะเสี่ยงสูง: ลิ้นเทียม · เคยเป็น IE · CHD บางชนิด",
+     "แพ้ penicillin: azithromycin/clarithromycin/doxycycline — clindamycin ไม่แนะนำแล้ว"],
+    [mcq(N(18), "A patient with a mechanical mitral valve and a documented penicillin allergy (urticaria) is scheduled for a dental extraction. According to current AHA (2021) and ESC (2023) guidance, which prophylaxis is most appropriate?",
+         ["No prophylaxis is needed", "Clindamycin 600 mg orally before the procedure", "Azithromycin 500 mg orally 30–60 minutes before the procedure",
+          "Amoxicillin 2 g orally", "Vancomycin for 7 days after the procedure"], 2,
+         "ลิ้นหัวใจเทียม = **กลุ่มเสี่ยงสูง** + ถอนฟัน (จับเหงือก) → **ต้องให้ยาป้องกัน** · แพ้ penicillin → **azithromycin หรือ clarithromycin 500 มก.** (หรือ doxycycline 100 มก.) **ครั้งเดียว 30–60 นาทีก่อนทำ**\n\n**Clindamycin ไม่แนะนำแล้ว** ตั้งแต่ AHA 2021 และ ESC 2023 เพราะเสี่ยง **C. difficile** และแพ้ยารุนแรงมากกว่าประโยชน์ — ข้อสอบเก่าบางข้อยังใช้ clindamycin เป็นคำตอบ ให้ตอบตามแนวทางใหม่ถ้ามีตัวเลือกให้\n\nAmoxicillin ห้ามในผู้ที่แพ้ penicillin",
+         "แพ้ penicillin → azithromycin/clarithromycin/doxycycline (ไม่ใช่ clindamycin แล้ว)", "IE prophylaxis update", ["ESC 2023 endocarditis guidelines", "AHA Scientific Statement 2021: Prevention of viridans group streptococcal IE"], IE),
+    ], IE, "ESC 2023 Endocarditis guidelines (ไม่อยู่ในสไลด์ — เพิ่มตามคลังข้อสอบ)")
+
+# ───────────────────────────── MEQ (ใหม่) — ส่วน MEQ/OSCE ของคลังผูกท้ายสคริปต์
+LECNAME = "Valvular heart disease and acute rheumatic fever (พ.ญ.ชนัญญา)"
+MEQ = [{"id": "CAR-VHD-MEQ-01", "part": "MEQ", "lec": "27", "lecture": LECNAME,
+ "topic": "Acute rheumatic fever with carditis — Jones criteria, treatment and secondary prophylaxis",
+ "vignette": """เด็กชายไทยอายุ 11 ปี ภูมิลำเนาจังหวัดในภาคตะวันออกเฉียงเหนือ มาด้วยไข้และปวดข้อ 6 วัน
+PI: 3 สัปดาห์ก่อนเจ็บคอ มีไข้ 2 วัน ซื้อยาลดไข้กินเอง ไม่ได้รับยาปฏิชีวนะ · 6 วันก่อนปวดบวมข้อเข่าขวา 2 วันต่อมาย้ายไปข้อเท้าซ้ายและข้อมือขวา · 2 วันก่อนเหนื่อยเวลาเดิน
+PE: BT 38.6 C, PR 128/min, RR 26/min, BP 100/60 mmHg
+ข้อมือขวาบวมแดงร้อน กดเจ็บมาก · ผื่นวงแหวนสีชมพูขอบชัดตรงกลางซีดที่ลำตัว ไม่คัน
+Heart: apex ที่ ICS 6 แนว anterior axillary line · pansystolic murmur grade III/VI ที่ apex ไปรักแร้ · short mid-diastolic murmur ที่ apex
+Lungs: fine crepitations ทั้งสองข้างล่าง · ตับโต 2 ซม.
+Lab: CBC WBC 14,200 · ESR 92 mm/h · CRP 12 mg/dL · ASO 800 Todd units (สูง)
+ECG: sinus tachycardia, PR 0.22 s · CXR: cardiomegaly, pulmonary congestion""",
+ "questions": [
+  {"q": "1. จงให้การวินิจฉัย และแสดงเกณฑ์ที่ใช้ (4 คะแนน)",
+   "a": """**Acute rheumatic fever with carditis (และหัวใจล้มเหลว)** — เกณฑ์ Jones
+- **Major**: **carditis** (MR + Carey Coombs murmur + หัวใจโต + CHF) · **migratory polyarthritis** · **erythema marginatum**
+- **Minor**: **ไข้** · **ESR/CRP สูง** · (PR ยาว — นับไม่ได้เพราะใช้ carditis เป็น major แล้ว)
+- **หลักฐาน GAS**: **ASO สูง** + เจ็บคอ 3 สัปดาห์ก่อนที่ไม่ได้ยาปฏิชีวนะ
+→ 3 major + minor + หลักฐาน GAS · ควรทำ **echocardiography** ประเมินลิ้นและ carditis"""},
+  {"q": "2. จงอธิบายกลไกการเกิดโรค และบอกว่าเสียงฟู่ที่ apex ทั้งสองเสียงเกิดจากอะไร (3 คะแนน)",
+   "a": """- **Molecular mimicry** — แอนติบอดี/T-cell ต่อ **M protein** ของ GAS จับข้ามกับโปรตีนในหัวใจ (myosin, ลิ้น) ข้อ ผิวหนัง → **pancarditis**
+- **Pansystolic murmur ที่ apex → MR** จาก valvulitis (วงแหวนขยาย ลิ้นบวม)
+- **Short mid-diastolic murmur ที่ apex → Carey Coombs murmur** — เลือดปริมาณมากไหลผ่านลิ้น mitral ที่อักเสบบวม (ไม่ใช่ MS ที่ตีบจริง)"""},
+  {"q": "3. จงเขียนการรักษาในโรงพยาบาล (4 คะแนน)",
+   "a": """- **กำจัด GAS**: **benzathine penicillin G 1.2 ล้านยูนิต IM** (น้ำหนัก ≥ 27 กก.) หรือ penicillin V/amoxicillin 10 วัน
+- **Carditis ที่มีหัวใจโตและ CHF → prednisolone 2 มก./กก./วัน × 2 สัปดาห์** แล้วต่อ **salicylate 90–100 มก./กก./วัน × 6 สัปดาห์** (สไลด์)
+- **รักษาหัวใจล้มเหลว**: จำกัดเกลือ **furosemide** · นอนพัก
+- ติดตาม echo · ESR/CRP"""},
+  {"q": "4. หลังจำหน่าย จะป้องกันการกลับเป็นซ้ำอย่างไร นานเท่าใด และถ้าผู้ปกครองถามว่าทำไมต้องฉีดยานานขนาดนี้จะตอบอย่างไร (4 คะแนน)",
+   "a": """- **Benzathine penicillin G 1.2 ล้านยูนิต IM ทุก 4 สัปดาห์** (WHO 2024 — ดีกว่ายากิน · ผสมยาชาลดเจ็บได้) · แพ้ penicillin → erythromycin
+- **ระยะเวลา**: เป็น carditis — ถ้า **มีโรคลิ้นหลงเหลือ → อย่างน้อย 10 ปีหลังครั้งสุดท้ายและถึงอายุอย่างน้อย 40 ปี** (บางรายตลอดชีวิต) · ถ้าลิ้นหายเป็นปกติ → 10 ปีหรือถึงอายุ 21 แล้วแต่อันไหนนานกว่า
+- **อธิบายผู้ปกครอง**: การติดเชื้อที่คอซ้ำแต่ละครั้งทำให้ไข้รูมาติกกลับมาและ **ลิ้นหัวใจเสียเพิ่มทุกครั้ง** จนเป็นลิ้นตีบหรือรั่วถาวรที่ต้องผ่าตัด · การฉีดยาสม่ำเสมอเป็นวิธีที่ได้ผลที่สุดในการป้องกัน
+- ดูแลฟันให้ดี · แจ้งแพทย์ว่ามีโรคหัวใจรูมาติกทุกครั้ง"""}],
+ "ref": ["สไลด์ พ.ญ.ชนัญญา — ARF, Jones criteria, treatment", "WHO 2024 RF/RHD guideline"],
+ "nl": ARF + ["2.1.27", "2.1.50", "2.3.9(5)"], "years": [], "_kind": "meq", "_set": "cardio"}]
+
+LECTURE = {
+ "lec": "27", "date": "อ. 6 ต.ค.",
+ "title": "Valvular heart disease และ acute rheumatic fever",
+ "subtitle": "ตรวจร่างกายลิ้นหัวใจ · แยก murmur · MS MR AS AR และลิ้นด้านขวา · เกณฑ์ผ่าตัดตาม ESC/EACTS 2025 · ไข้รูมาติก — Jones 2015 การรักษาและการป้องกันตาม WHO 2024 · infective endocarditis ตาม Duke-ISCVID 2023 และ ESC 2023",
+ "objectives": [
+   "ตรวจร่างกายระบบหัวใจตามลำดับ ดู คลำ เคาะ ฟัง และบรรยาย murmur ได้ครบองค์ประกอบ",
+   "แยกชนิดของ murmur ตามจังหวะและรูปแบบ และอธิบายกลไกที่ทำให้แต่ละเสียงต่างกัน",
+   "อธิบายกลไก อาการ อาการแสดง และผลตรวจของ MS MR AS และ AR",
+   "บอกเกณฑ์ความรุนแรงทาง echo และข้อบ่งชี้ของหัตถการแต่ละลิ้นตามแนวทาง ESC/EACTS 2025",
+   "เลือกยาต้านการแข็งตัวที่ถูกต้องใน rheumatic MS ที่มี AF",
+   "วินิจฉัยไข้รูมาติกด้วยเกณฑ์ Jones ฉบับปรับปรุง 2015",
+   "รักษาไข้รูมาติก และกำหนดยาและระยะเวลาการป้องกันการกลับเป็นซ้ำ",
+   "สงสัยและวินิจฉัย infective endocarditis และให้ยาป้องกันได้ถูกกลุ่มตามแนวทางปัจจุบัน"],
+ "nlGap": "เกณฑ์ฯ มีรหัส `นล. 2.3.9-3(8)` Valvular heart diseases · `2.3.9-3(1)` Acute rheumatic fever · `2.3.9-3(5)` Infective endocarditis (กลุ่ม 3 — วินิจฉัยแล้วส่งต่อ) แต่ **ไม่ได้ระบุเกณฑ์หัตถการแต่ละลิ้น** — ผู้ใช้ขอให้อัปเดตการวินิจฉัยและรักษาตามแนวทางล่าสุด จึงเทียบแผนภูมิ ACC/AHA 2020 ในสไลด์กับแนวทางด้านล่าง",
+ "guidelines": [
+   "**2025 ESC/EACTS Guidelines for the management of valvular heart disease** (Eur Heart J 2025) — TAVI อายุ ≥ 70 · เปลี่ยนลิ้นเร็วขึ้นใน AS ไม่มีอาการ · LVESDi ใน MR/AR · ซ่อม MR เมื่อมี AF/PH/LA โต/TR",
+   "**2020 ACC/AHA Guideline for the management of patients with valvular heart disease** — แผนภูมิ MS MR AR ในสไลด์",
+   "**WHO guideline on the prevention and diagnosis of rheumatic fever and rheumatic heart disease (2024)** — BPG ทุก 4 สัปดาห์ · amoxicillin วันละครั้ง · ยาป้องกันในผู้ที่พบ RHD จาก echo",
+   "**Revision of the Jones criteria (AHA Scientific Statement, Circulation 2015)**",
+   "**2023 ESC Guidelines for the management of endocarditis** และ **2023 Duke-ISCVID criteria** (Clin Infect Dis 2023)",
+   "**INVICTUS trial (NEJM 2022)** — VKA ดีกว่า rivaroxaban ใน AF จากโรคหัวใจรูมาติก"],
+ "sections": S, "meq": MEQ, "osce": [],
+}
+
+# กระจายตำแหน่งคำตอบของข้อใหม่ (ก่อนขึ้นเว็บครั้งแรกเท่านั้น)
+ORDERED = {N(1)}
+_slot = 0
+for s_ in S:
+    for it in s_["items"]:
+        if it["id"] in ORDERED:
+            continue
+        tgt = [0, 2, 4, 1, 3][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+path = os.path.join(BUILD, "data", "cardio.json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LECTURE["lec"]]
+data.append(LECTURE)
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
+BANK_MAP = {
+    "cardio-vhd-02": ["C-OLD-82", "C-OLD-91", "C-OLD-81", "C-OLD-83"],
+    "cardio-vhd-03": ["C-MCQ-23", "C-OLD-72", "C-OLD-73", "C-OLD-74", "C-OLD-94"],
+    "cardio-vhd-04": ["C-OLD-92", "C-OLD-93"],
+    "cardio-vhd-05": ["C-MCQ-28", "C-OLD-79", "C-OLD-80"],
+    "cardio-vhd-07": ["C-MCQ-25", "C-OLD-77", "C-OLD-78"],
+    "cardio-vhd-08": ["C-MCQ-24", "C-OLD-75", "C-OLD-76"],
+    "cardio-vhd-10": ["C-MCQ-26", "C-OLD-84", "C-OLD-85"],
+    "cardio-vhd-12": ["C-OLD-86", "C-OLD-88", "C-OLD-90"],
+    "cardio-vhd-13": ["C-MCQ-27", "C-OLD-87", "C-OLD-89"],
+}
+added = link("cardio", "27", BANK_MAP, meq=["C-MEQ-02"], osce=["C-OSCE-04"])
+
+data = json.load(open(path, encoding="utf-8"))
+L = [l for l in data if l["lec"] == "27"][0]
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+codes = {c for s_ in L["sections"] for c in s_["nl"]} | {c for s_ in L["sections"] for i in s_["items"] for c in i["nl"]} | {c for m in L["meq"] + L["osce"] for c in m.get("nl", [])}
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+data.sort(key=lambda l: (0, int(l["lec"])) if l["lec"].isdigit() else (1, l["lec"]))
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == "cardio": m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+new = sum(1 for s_ in S for i in s_["items"])
+print("sections %d | ข้อใหม่ %d + คลัง %d = %d | meq %d | osce %d | nl %d" % (
+    len(S), new, added, sum(len(s_["items"]) for s_ in L["sections"]), len(L["meq"]), len(L["osce"]), len(codes)))
+print("cardio.json มี %d คาบ: %s" % (len(data), [l["lec"] for l in data]))
