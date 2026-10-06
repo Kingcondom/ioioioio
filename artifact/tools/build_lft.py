@@ -450,7 +450,7 @@ data = [l for l in data if l.get("lec") != LEC] + [LECTURE]
 data.sort(key=lambda l: tuple(int(x) for x in l["lec"].split("/")[::-1]))
 json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
-added = link_mock(SET, LEC, {"gi-lft-06": ["MOCK-150"]})
+added = link_mock(SET, LEC, {"gi-lft-05": ["MOCK-035"], "gi-lft-06": ["MOCK-150"]})
 
 d = json.load(open(path, encoding="utf-8"))
 L = [l for l in d if l["lec"] == LEC][0]
