@@ -65,3 +65,35 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - ค้างจากสัปดาห์ที่ 2: คาบ `33` → "อ. 22 ก.ย." · คาบ `10` Shock → "พ. 21 ต.ค."
 
 สัปดาห์ที่ 2: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 4 · 5–9 ต.ค. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 5 | Atrial fibrillation (อ.อภิชัย) | cardio `24` (5 / 0 / 16) | ✅ แต่ยังไม่มี MEQ/OSCE |
+| จ. 5 | AIDS/HIV infection (อ.มนัสวี) — ย้ายมาจาก ศ. 9 ต.ค. | infect `I03` เอชไอวีและโรคติดเชื้อฉวยโอกาส (8 / 2 / 18) | ✅ แต่ `I03` ยังเป็นกลุ่มหัวข้อ "ยังไม่ระบุคาบ" |
+| จ. 5 | Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล) | heme `H02` (เรื่องเลือดออก 4 / 0 / 10 จากทั้งกลุ่ม 7 / 1 / 13) | 🟡 MCQ เรื่องเลือดออกมี 4 ข้อ ไม่มี MEQ |
+| อ. 6 | Pulmonary TB / ABG (อ.ศิวพร) | chest `26` (8 / 1 / 10) | ✅ |
+| อ. 6 | Rheumatic fever and valvular heart disease (อ.ชนัญญา) | cardio `27` (6 / 2 / 23) | ✅ |
+| พฤ. 8 | Urine analysis / Common abdominal pain in nephro (อ.ธนิศร) | nephro `28` (5 / 2 / 16) | ✅ |
+| ศ. 9 | Sexually transmitted diseases (อ.พจน์) | ไม่มีกลุ่มของตัวเอง มีแต่ข้อเก่ากระจายใน infect/derm (~6–9 ข้อ) และ mock 2 ข้อ | ❌ ไม่มีข้อใหม่ |
+
+ไม่นับ: หัตถการ LP / ophthalmoscope / Snellen chart (ศ. 9) เพราะเป็นหัตถการ ไม่ใช่ lecture
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: valve/RHD ~36 · HIV ~35 · TB/ABG ~32 · AF ~28 · bleeding/ITP/hemophilia ~27 · STD ~19 · UA/ปวดท้อง ~11
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. STDs: เปิดกลุ่มใหม่ใน infect (syphilis, gonorrhoea/chlamydia, genital ulcer, PID) — ตรวจข้อเก่า STD ~19 ข้อที่พักไว้ด้วย
+2. Bleeding disorder: แยกออกจาก `H02` เป็นกลุ่มคาบ แล้วเพิ่ม MCQ + MEQ (hemophilia, ITP, vWD, การอ่าน PT/aPTT/mixing test)
+3. AF: เพิ่ม MEQ (rate vs rhythm, CHA₂DS₂-VASc, anticoagulation)
+4. ค้างจากสัปดาห์ก่อน: Blood transfusion · Epilepsy · Derm infection (🟡) · Empyema/resp failure และ SAQ อ่าน CXR
+
+**config ต้องแก้**
+- `I03` → "จ. 5 ต.ค." (AIDS/HIV อ.มนัสวี)
+- `H02` → "จ. 5 ต.ค." (Bleeding/Hemophilia/ITP AL) — กลุ่มนี้รวมหัตถการ blood transfusion (ศ. 25 ก.ย.) ไว้ด้วย
+- คาบ `30` UTI ใน config เป็น "ศ. 9 ต.ค." แต่ปฏิทินบอกว่าย้ายไป "ศ. 18 ก.ย." แล้ว
+- ค้างจากสัปดาห์ก่อน: `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย. · `10` Shock → พ. 21 ต.ค.
+
+สัปดาห์ที่ 2–3: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
