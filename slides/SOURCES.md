@@ -330,3 +330,12 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
 | Lec14 Thyroid disorder_2026.pdf (อ.ศิวกร) | `1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5` | ⚠️ ถึง nodule algorithm | endo คาบ 14 · โน้ต `thyroid_notes.md` |
 | Sepsis _ Principle ATB medical student.pdf (อ.พจน์) | `10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc` | ❌ ภาพล้วน 175 MB | id คาบ 25/9 (อิง SSC 2026) · โน้ต `sepsis_notes.md` |
 | Lec7 Epilepsy (อ.พิมลพรรณ · มีลายมือ) | `1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW` | ✅ | ซ้ำกับคาบ Epilepsy ที่ทำแล้ว |
+
+## รอบ 13 ต.ค. 2569 — โฟลเดอร์ Drive `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` (Version 21)
+
+| ไฟล์ | Drive id | ข้อความ | ใช้ที่ |
+|---|---|---|---|
+| Lec11 Approach to glomerular disease.pdf (พญ.ฉันทิศา) | `1R5f1MtTJIlwCUeomxvcBD10MKpDzYob4` | ✅ ข้อความครบ · ภาพพยาธิ/KDIGO อ่านไม่ได้ | nephro คาบ 14 · โน้ต `glomerular_notes.md` |
+| Lec5 UTI_4thRSU2026.pdf (อ.กรทิพย์) | `1OeevfDxn_c6H3iLUw6nXIjPOv6DPHawD` | ⚠️ สไลด์ภาพล้วนบางหน้าอ่านไม่ได้ | nephro คาบ 30 · โน้ต `uti_notes.md` |
+| Lec19 Essential Renal Imaging (handout).pdf (อ.ธนิศร) | `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` | ⚠️ อ่านได้แต่คำบรรยายภาพ | nephro คาบ Imaging · โน้ต `renalimg_notes.md` |
+| Lec22 Approach to WBC disorder and lymphadenopathy.pdf (อ.เบญจมาภรณ์) | `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` | ✅ เรนเดอร์ครบ 66 หน้า + ลายมือ | hemonc คาบ 12/10 · โน้ต `wbc_notes.md` |
