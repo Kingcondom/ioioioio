@@ -18,14 +18,23 @@ diff = 0
 for dp, _, fs in os.walk(live):
     for f in sorted(fs):
         p = os.path.join(dp, f); rel = os.path.relpath(p, live)
-        if rel == "index.html":
-            continue  # บริการ artifact ห่อหน้าเว็บเพิ่ม เทียบตรง ๆ ไม่ได้
         lv = open(p, "rb").read()
+        if rel == "index.html":
+            # บริการ artifact ห่อหน้าเว็บด้วยบรรทัดแรก <!doctype html><html><head>…<body> และปิดท้าย </body></html> เพิ่ม — ถอดออกก่อนเทียบ
+            # (13 ต.ค. 2569: หน้าเว็บมีแพตช์ deep link จาก session dashboard ที่ repo ไม่มี — ถ้าไม่เทียบไฟล์นี้จะ publish ทับ)
+            t = lv.decode("utf-8").split("\n")
+            if t and t[0].startswith("<!doctype html><html><head><meta charset=utf8>"):
+                body = "\n".join(t[1:]).rstrip()
+                if body.endswith("</body></html>"):
+                    body = body[:-len("</body></html>")]
+                lv = (body.rstrip() + "\n").encode("utf-8")
         try:
             rp = (subprocess.run(["git", "-C", ROOT, "show", "%s:artifact/%s" % (base, rel)], capture_output=True, check=True).stdout
                   if base else open(os.path.join(ART, rel), "rb").read())
         except Exception:
             rp = None
+        if rel == "index.html" and rp is not None:
+            rp = (rp.decode("utf-8").rstrip() + "\n").encode("utf-8")
         same = rp is not None and h(lv) == h(rp)
         diff += not same
         print("%-22s เว็บ %s  repo %s  %s" % (rel, h(lv), h(rp) if rp else "—ไม่มี—", "ตรงกัน" if same else "ต่าง"))

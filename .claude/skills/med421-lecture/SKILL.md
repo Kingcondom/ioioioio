@@ -70,7 +70,8 @@ description: Turn a MED421 lecture file (Google Drive link, uploaded PDF/PPTX, o
 
 ## 5. Publish อย่างปลอดภัย
 1. commit + push ก่อน
-2. `Artifact read` ด้วย `paths` ของไฟล์ที่จะส่ง → `compare_live.py <dir> <commit ก่อนเริ่มงาน>` ต้อง "ตรงกัน" (เว็บยังเป็นฐานเดียวกับที่เราเริ่ม)
+2. `Artifact read` ด้วย `paths` ของไฟล์ที่จะส่ง **รวม `index.html` ถ้าแก้หน้าเว็บ** → `compare_live.py <dir> <commit ก่อนเริ่มงาน>` ต้อง "ตรงกัน" (เว็บยังเป็นฐานเดียวกับที่เราเริ่ม)
+   ⚠️ 13 ต.ค.: index.html บนเว็บเคยมีแพตช์ deep link ที่ repo ไม่มี — ถ้า "ต่าง" ให้ถอด wrapper แล้ว diff หาแพตช์ของ session อื่น รวมเข้า repo ก่อน
 3. `Artifact read` url เปล่าหนึ่งครั้ง (นับเป็นการดูเวอร์ชันล่าสุด) แล้ว publish:
    `url` = artifact เดิม · `file_path` = `artifact/index.html` · `root` = `artifact` · `files` = **เฉพาะไฟล์ที่แก้** (เช่น `data/id.json`, `data/index.json`) · `label` สั้น ๆ
 4. `Artifact list` scope files → ขนาดไฟล์ต้องตรงกับ `wc -c artifact/data/*.json`
