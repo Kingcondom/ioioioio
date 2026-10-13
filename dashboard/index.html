@@ -7,7 +7,8 @@
    search pill, hero, category chips, then one plain box per lecture standing for the professor's slides,
    grouped by system and coloured by review state · a lavender "chat" side panel listing what to review next.
    First tab plans today's reviews so every lecture gets its target rounds before the exam; the shelf tab holds the boxes;
-   the schedule tab keeps Learn / Drill buttons; the NL tab scores every lesson against the NL 2567 criteria. */
+   the schedule tab keeps Learn / Drill buttons; the NL tab scores every lesson against the NL 2567 criteria;
+   the plan tab proposes the lessons still needed for full NL coverage and records which ones the user wants. */
 :root{
   --bg:#e7dccf; --panel:#f8f3ed; --card:#fffdfa; --sunk:#efe6dc;
   --ink:#2a221d; --ink-2:#5b4f46; --ink-3:#8b7d72; --line:#e4d8cb; --line-2:#d3c4b4;
@@ -100,6 +101,7 @@ a{color:inherit}
 .tabs button{border:0;background:transparent;border-radius:999px;padding:8px 16px;font-family:var(--display);font-weight:600;font-size:14px;color:var(--ink-3);cursor:pointer;
   transition:background .2s var(--e),color .2s var(--e)}
 .tabs button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+@media (max-width:760px){.tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{flex:none;white-space:nowrap}}
 
 .cols{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;margin-top:16px;align-items:start}
 @media (max-width:1099px){.cols{grid-template-columns:1fr}}
@@ -437,6 +439,68 @@ a.act:hover{filter:brightness(1.07)}
 .fcb span{display:block;font-size:12.5px;color:var(--ink-2);line-height:1.45;margin-top:2px}
 .fcb.warn b{color:var(--todo)}
 
+/* ---------- plan tab: lessons to add for full NL coverage ---------- */
+.pl-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:16px 22px;align-items:center;background:var(--card);border:1px solid var(--line);
+  border-radius:22px;padding:18px;margin-top:6px}
+@media (max-width:760px){.pl-hero{grid-template-columns:1fr}}
+.pl-hero .eyebrow{font-size:12px;font-weight:600;color:var(--ink-3)}
+.pl-hero h1{font-size:clamp(22px,3.2vw,29px);margin-top:4px}
+.pl-hero p{margin:7px 0 0;color:var(--ink-2);font-size:14px;max-width:62ch}
+.pl-hero p b{color:var(--ink)}
+.proj{background:var(--panel);border-radius:18px;padding:14px}
+.proj .big{display:flex;align-items:baseline;gap:8px;font-family:var(--display);font-weight:700}
+.proj .big s{font-size:20px;color:var(--ink-3);text-decoration:none}
+.proj .big b{font-size:34px;color:var(--ok);line-height:1}
+.proj .big span{font-size:13px;font-weight:500;color:var(--ink-2);font-family:var(--sans)}
+.proj .mix{margin-top:10px}
+.proj .legend{font-size:12px}
+.pl-acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.pl-acts .pillbtn{margin-top:0}
+.savenote{font-size:12.5px;color:var(--ink-3);display:inline-flex;align-items:center;gap:6px}
+.savenote i{width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
+.savenote.cloud i{background:var(--ok)}
+.trk{margin-top:26px}
+.trk>h2{font-size:18px;display:flex;align-items:baseline;gap:4px 10px;flex-wrap:wrap}
+.trk>h2 small{font-family:var(--sans);font-size:12.5px;font-weight:500;color:var(--ink-3)}
+.trk>p{margin:3px 0 0;font-size:13px;color:var(--ink-2);max-width:70ch}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:12px}
+@media (max-width:460px){.pcards{grid-template-columns:1fr}}
+.pcard{display:flex;flex-direction:column;gap:6px;min-width:0;background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:12px 13px;
+  transition:border-color .2s var(--e),background .2s var(--e),opacity .2s var(--e)}
+.pcard.y{border-color:var(--ok);background:color-mix(in srgb,var(--ok-soft) 70%,var(--card))}
+.pcard.n{opacity:.62}
+.pcard .ph{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11.5px;font-weight:600;color:var(--ink-3)}
+.pcard .ph i{width:10px;height:10px;border-radius:3px;background:var(--bk);flex:none}
+.pcard .ph .id{font-family:ui-monospace,Menlo,monospace;color:var(--ink-2)}
+.pcard .rec{margin-left:auto;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:1px 9px;font-size:11px}
+.pcard h3{font-size:15.5px;line-height:1.3}
+.pcard .sc{font-size:13px;color:var(--ink-2);line-height:1.45}
+.pcard .why{margin-top:0}
+.pcard .why.rc b{color:var(--accent)}
+.pcard .stats{display:flex;flex-wrap:wrap;gap:5px}
+.pcard .stats span{font-size:11.5px;font-weight:600;border-radius:999px;padding:1px 8px;background:var(--sunk);color:var(--ink-2)}
+.pcard .stats .z{background:var(--todo-soft);color:var(--todo)}
+.pcard .stats .h{background:var(--ok-soft);color:var(--ok)}
+.pcard .stats .q{background:var(--lav);color:var(--lav-ink)}
+.pcard details{font-size:12.5px}
+.pcard details summary{cursor:pointer;color:var(--ink-2);font-weight:600}
+.pcard .codes{display:flex;flex-direction:column;gap:4px;margin-top:6px}
+.pcard .codes span{display:flex;gap:6px;align-items:baseline;line-height:1.35;color:var(--ink)}
+.pcard .codes code{flex:none;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;border-radius:5px;padding:0 5px}
+.pcard .codes .s0 code{background:var(--todo-soft);color:var(--todo)}
+.pcard .codes .s1 code{background:var(--due-soft);color:var(--due)}
+.pcard .codes em{font-style:normal;font-size:10.5px;color:var(--ink-3);flex:none}
+.pcard .links{flex-direction:row;flex-wrap:wrap;gap:6px}
+.pcard .yn{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:auto;padding-top:4px}
+.pcard .yn button{border:1.5px solid var(--line-2);background:var(--card);border-radius:12px;padding:7px 10px;font-family:var(--display);font-weight:600;font-size:14px;
+  cursor:pointer;color:var(--ink-2);display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:background .2s var(--e),color .2s var(--e)}
+.pcard .yn button svg{width:15px;height:15px}
+.pcard .yn .yes[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.pcard .yn .no2[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.picksum{margin-top:24px;background:var(--panel);border:1.5px dashed var(--line-2);border-radius:16px;padding:12px 14px;font-size:13.5px;color:var(--ink-2);
+  user-select:text;-webkit-user-select:text}
+.picksum b{color:var(--ink)}
+
 /* ---------- detail sheet ---------- */
 .scrim{position:fixed;inset:0;background:rgba(30,20,12,.42);backdrop-filter:blur(2px);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s var(--e)}
 .scrim.on{opacity:1;pointer-events:auto}
@@ -484,6 +548,7 @@ footer b{color:var(--ink-2);font-weight:600}
     <button type="button" class="ricon" data-tab="shelf" aria-label="สไลด์อาจารย์ เช็กการทวน"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4v16H4zM10 4h4v16h-4zM16.5 5.2l3.8-1 3.2 14.8-3.8 1z" transform="translate(-1 0)"/><path d="M2 21h20"/></svg></button>
     <button type="button" class="ricon" data-tab="schedule" aria-label="ตารางเรียนและปุ่ม Learn Drill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button>
     <button type="button" class="ricon" data-tab="nl" aria-label="ครอบคลุมเกณฑ์ NL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></button>
+    <button type="button" class="ricon" data-tab="plan" aria-label="แผนเติมบทเรียนให้ครบ NL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></button>
     <span class="rsep" aria-hidden="true"></span>
     <a class="ricon" id="r-learn" href="#" target="_blank" rel="noopener" aria-label="เปิด MED421 learn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></a>
     <a class="ricon" id="r-drill" href="#" target="_blank" rel="noopener" aria-label="เปิด MED421 Ward Drill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></a>
@@ -509,6 +574,7 @@ footer b{color:var(--ink-2);font-weight:600}
       <button type="button" data-tab="shelf" id="t-shelf">สไลด์อาจารย์ · เช็กการทวน</button>
       <button type="button" data-tab="schedule" id="t-schedule">ตารางเรียน · Learn &amp; Drill</button>
       <button type="button" data-tab="nl" id="t-nl">ครอบคลุม NL</button>
+      <button type="button" data-tab="plan" id="t-plan">แผนเติม NL</button>
     </div>
 
     <div class="cols">
@@ -522,6 +588,7 @@ footer b{color:var(--ink-2);font-weight:600}
   <b>ที่มา</b> — วันเวลาและอาจารย์จาก Google Calendar (13 ต.ค. 2569 · คาบที่ย้ายวันใช้วันใหม่แล้ว) · ไฟล์สไลด์ลิงก์ไป Google Drive ของคุณ ·
   จำนวนหัวข้อและข้อสอบนับจาก MED421 learn และ Ward Drill วันเดียวกัน · <b>ถึงรอบทวน</b> = ทวนครั้งล่าสุดผ่านมาแล้ว 3 วัน ตามนัดทวนทุก 3 วันในปฏิทิน ·
   <b>วันนี้ทวนอะไร</b> = จำนวนคาบต่อวันที่น้อยที่สุดที่จำลองไปจนวันก่อนสอบแล้วทุกคาบได้ทวนครบเป้า (ทวนซ้ำห่างกันอย่างน้อย 3 วัน) ·
+  <b>แผนเติม NL</b> = ข้อเสนอบทเรียนที่ยังขาดเพื่อให้ครบเกณฑ์ ที่เลือกไว้เก็บในบัญชีให้ Claude อ่านต่อ ·
   <b>Drill ชุดรวม</b> = คลังยังไม่แยกรายคาบสำหรับระบบนั้น · <b>ครอบคลุม NL</b> คำนวณด้วย build_nl.py
 </footer>
 
@@ -735,7 +802,7 @@ function commit(){saveLocal();writeCloud();render();}
 (function connect(){
   if(!window.claude||typeof window.claude.use!=="function")return;
   Promise.all([window.claude.use("db"),window.claude.use("user")]).then(function(r){
-    var db=r[0],user=r[1];if(!db||!user)return null;
+    var db=r[0],user=r[1];if(db)connectPlan(db);if(!db||!user)return null;
     return user.id().then(function(uid){
       if(!uid)return;
       var ref=db.doc("data/users/"+uid+"/slides"),first=true;
@@ -832,12 +899,47 @@ function suggestions(){return plan().queue.map(function(x){return {l:x.l,s:statu
 /* ---------- NL coverage data (สร้างโดย build_nl.py) ---------- */
 var NLD={rows:[],groups:[]};
 try{NLD=JSON.parse(document.getElementById("nldata").textContent)||NLD;if(!NLD.rows)NLD={rows:[],groups:[]};}catch(e){}
+/* ---------- แผนเติมบทเรียนให้ครบ NL: ข้อเสนอ 3 กลุ่ม ให้ผู้ใช้เลือกเอา/ไม่เอา ----------
+   A = บท Learn ของคาบในตารางที่ยังไม่มีบทเรียน · B = บทใหม่นอกตาราง · C = เติมหัวข้อย่อยในบท Learn เดิม
+   c = รหัส NL ที่ยังไม่ครบ (s<2) ที่บทนี้จะปิด · แต่ละรหัสอยู่ในข้อเสนอเดียว · ref = id คาบ (A) หรือ hash บท Learn (C)
+   ที่เลือกเก็บใน db เอกสารรวม plans/nl-lessons ({picks:{A1:"y",B2:"n"}}) ให้ Claude อ่านต่อได้ · ไม่มี db ใช้ localStorage */
+var PLAN=[{"id":"A1","tr":"A","s":"nephro","t":"Urinary tract infection","d":"cystitis · pyelonephritis · ASB · เลือกยาตามเชื้อ","c":["2.1.40","2.1.41","2.3.14(14)"],"ref":"2026-09-18-1400","rec":"คลังข้อสอบมี 19 ข้อเรื่องนี้ แต่ยังไม่มีบทสอน"},{"id":"A2","tr":"A","s":"id","t":"Malaria and tropical disease","d":"มาลาเรีย · ไทฟอยด์ · ไข้เลือดออก (Hct) · zoonosis · พยาธิในเนื้อเยื่อ","c":["2.3.1(14)","2.3.1(21)","2.3.1-3(9)","2.3.1-3(8)","3.1.3","3.1.1"],"ref":"2026-09-18-1600","rec":"ไข้เขตร้อนออกทั้งสอบลงกองและ NL · ปิด 6 ข้อ"},{"id":"A3","tr":"A","s":"derm","t":"Impetigo, cellulitis, herpes, viral exanthem, superficial mycoses","d":"ติดเชื้อผิวหนังและเนื้อเยื่ออ่อน · เริม งูสวัด · ผื่นไวรัส · เชื้อราตื้น · KOH/Tzanck","c":["2.3.12(9)","2.3.12(2)","2.2.50","2.3.12-3(6)","2.3.13-3(11)","2.3.12-3(12)","2.3.1(8)","2.3.1(22)","2.3.1(23)","2.3.12(11)","2.3.12(15)","2.3.12-3(3)","3.1.10"],"ref":"2026-09-21-1300","rec":"ยังไม่มีบท Learn ผิวหนังเลย · ปิดได้มากที่สุด 13 ข้อ"},{"id":"A4","tr":"A","s":"nephro","t":"Nephrotic / Nephritic syndrome","d":"แยก nephrotic กับ nephritic · AGN หลังติดเชื้อ · แนวส่งตรวจ","c":["2.3.14(2)"],"ref":"2026-09-24-1500"},{"id":"A5","tr":"A","s":"nephro","t":"Chronic kidney disease","d":"ระยะ CKD · ชะลอไต · ภาวะแทรกซ้อน · เตรียมบำบัดทดแทนไต","c":[],"ref":"2026-09-30-0730","note":"NL เรื่องนี้มีครบจากห้องสมุดแล้ว แต่ช่วยทวนสอบลงกอง"},{"id":"A6","tr":"A","s":"chest","t":"Chest X-ray interpretation / Occupational lung diseases","d":"อ่านฟิล์มอย่างเป็นระบบ · atelectasis · pneumoconiosis และโรคจากอาชีพ","c":["2.3.10(2)","2.3.10-3(4)","2.3.19(8)"],"ref":"2026-10-01-1300"},{"id":"A7","tr":"A","s":"nephro","t":"Fluid electrolytes: Dysnatremia, dyskalemia","d":"hypo/hypernatremia · SIADH · hypo/hyperkalemia · periodic paralysis","c":["2.3.4-3(5)","2.3.6(7)"],"ref":"2026-10-01-1500"},{"id":"A8","tr":"A","s":"heme","t":"Bleeding disorder, hemophilia, ITP","d":"primary vs secondary hemostasis · ITP · hemophilia · โรคเกล็ดเลือดอื่น","c":["2.3.3-3(2)"],"ref":"2026-10-05-1300"},{"id":"A9","tr":"A","s":"nephro","t":"Urine analysis, common abdominal pain in nephro","d":"อ่าน UA · นิ่ว · RTA · KUB film","c":["3.1.6","2.3.14-3(15)","2.3.14-3(12)","3.2.3"],"ref":"2026-10-08-1430","rec":"คลังข้อสอบมี 33 ข้อ UA ออกบ่อยมาก"},{"id":"A10","tr":"A","s":"id","t":"Sexually transmitted diseases","d":"หนองในแท้/เทียม · แผลที่อวัยวะเพศ (ซิฟิลิส แผลริมอ่อน เริม) · รักษาคู่นอน","c":["2.1.47","2.1.48"],"ref":"2026-10-09-1600"},{"id":"A11","tr":"A","s":"heme","t":"Approach to WBC disorder and lymphadenopathy","d":"WBC สูง/ต่ำ · neutropenia · ม้ามไม่ทำงาน · ต่อมน้ำเหลืองโต","c":["2.3.3-3(5)"],"ref":"2026-10-12-1300"},{"id":"A12","tr":"A","s":"endo","t":"Diabetes mellitus (incl. DKA)","d":"วินิจฉัย · ยาเบาหวาน · DKA/HHS · ปัสสาวะมาก","c":["2.1.42"],"ref":"2026-10-14-1030"},{"id":"A13","tr":"A","s":"cardio","t":"Common cardiac arrhythmia and basic EKG","d":"อ่าน EKG ทีละขั้น · tachy/brady ที่พบบ่อย","c":[],"ref":"2026-10-19-1300","note":"NL เรื่องนี้มีครบแล้ว แต่ช่วยทวนสอบลงกอง"},{"id":"A14","tr":"A","s":"chest","t":"Pneumonia / Asthma / COPD","d":"CAP · ไข้หวัดใหญ่และโรคอุบัติใหม่ · spirometry/PEFR · asthma/COPD exacerbation","c":["2.3.1(11)","2.3.1-3(5)","3.3.18"],"ref":"2026-10-20-1000"},{"id":"A15","tr":"A","s":"nephro","t":"Urethral catheterization","d":"ข้อบ่งชี้ · ขั้นตอน · ภาวะแทรกซ้อน (หัตถการ ไม่อยู่ในหมวดโรคของ NL)","c":[],"ref":"2026-10-22-1500","note":"หัตถการ ไม่อยู่ในหมวดโรคของ NL ที่นับ แต่ช่วยทวนสอบลงกอง"},{"id":"A16","tr":"A","s":"cardio","t":"Hypertension / Heart failure / Pulmonary edema","d":"HT และ HT จากสาเหตุอื่น (RAS, OSA) · HF · acute pulmonary edema","c":["2.3.14-3(13)","2.3.10-3(5)"],"ref":"2026-10-26-1300"},{"id":"A17","tr":"A","s":"nephro","t":"Acute kidney injury","d":"pre/intra/post-renal · ATN vs AIN · ทางเดินปัสสาวะอุดตัน","c":["2.3.14-3(8)","2.3.14-3(9)"],"ref":"2026-10-30-1300"},{"id":"A18","tr":"A","s":"gi","t":"Liver cirrhosis and complications","d":"ascites · SBP · varices · hepatic encephalopathy","c":["2.3.6(6)"],"ref":"2026-11-03-1300"},{"id":"A19","tr":"A","s":"heme","t":"Anemia, nutritional deficiency, G6PD, thalassemia","d":"อ่าน CBC/red cell indices · retic · iron studies · Hb typing · G6PD · hemolysis","c":["3.3.2","3.3.3","3.3.26","3.3.5","3.3.4","2.3.3(3)","2.3.3-3(3)","2.3.3-3(6)"],"ref":"2026-11-09-0800","rec":"แปลผล lab เลือด 5 ตัวรวมในบทเดียว · คาบ 9 พ.ย. ใกล้สอบ"},{"id":"A20","tr":"A","s":"derm","t":"Dermatitis, eczema, urticaria, STDs, leprosy","d":"คัน · eczema ชนิดต่าง ๆ · dyshidrosis/miliaria · หิด เหา · โรคเรื้อน","c":["2.1.51","2.3.12(7)","2.3.12(8)","2.3.12(10)","2.3.12-3(9)"],"ref":"2026-11-11-1300","rec":"คาบ 11 พ.ย. เรียนใกล้สอบที่สุด ควรมีบทอ่านรอไว้"},{"id":"B1","tr":"B","s":"tox","t":"สัตว์กัด งูพิษ และภาวะจากสิ่งแวดล้อม","d":"สุนัข/แมวกัด + rabies PEP · งูพิษ + 20WBCT · แมลงต่อย · heat stroke · ไฟดูด · สารกัดกร่อน · แผลไฟไหม้","c":["2.2.45","2.3.18(1)","2.3.18(8)","3.1.5","2.3.1-3(1)","2.3.18(2)","2.3.12(3)"],"rec":"ทั้ง 7 ข้อยังไม่มีเลย และเป็นกลุ่ม 1–2 หรือภาวะฉุกเฉิน"},{"id":"B2","tr":"B","s":"id","t":"โรคติดเชื้อป้องกันได้ด้วยวัคซีน และโรคจากท็อกซิน","d":"บาดทะยัก · botulism · คอตีบ · ไอกรน · คางทูม · โปลิโอ · ไข้กาฬหลังแอ่น","c":["2.3.1(5)","2.3.1(3)","2.3.1(4)","2.3.1(6)","2.3.1(15)","2.3.1-3(2)","2.3.1(17)"],"rec":"ทั้ง 7 ข้อยังไม่มีเลย และเป็นกลุ่ม 1–2"},{"id":"B3","tr":"B","s":"chest","t":"เจ็บคอ น้ำมูก และ URI ที่อายุรแพทย์เจอ","d":"แยก viral/bacterial pharyngitis (Centor) · infectious mononucleosis และ CMV · rhinitis · ไม่ให้ยาฆ่าเชื้อเกินจำเป็น","c":["2.1.28","2.1.29","2.3.10(8)","2.3.10(9)","2.3.1(10)","2.3.1-3(4)"],"rec":"อาการที่เจอบ่อยในห้องตรวจ · ปิด 6 ข้อ"},{"id":"B4","tr":"B","s":"cardio","t":"โรคหลอดเลือดแดงใหญ่และหลอดเลือดส่วนปลาย","d":"aortic dissection/aneurysm · PAD · acute limb ischemia (6P)","c":["2.2.6","2.3.9-3(2)","2.3.9-3(7)","2.2.19"]},{"id":"B5","tr":"B","s":"gi","t":"GERD กลืนลำบาก คลื่นไส้อาเจียน และแผลในปาก","d":"GERD/esophagitis · alarm features · dysphagia · N/V · aphthous ulcer · oral thrush","c":["2.3.11(5)","2.1.17","2.1.15","2.3.11(9)"]},{"id":"B6","tr":"B","s":"gi","t":"ท้องเสีย ท้องผูก และพยาธิลำไส้","d":"acute diarrhea/food poisoning · chronic diarrhea · พยาธิลำไส้ · stool exam/FOBT · ท้องผูก","c":["2.3.1(7)","2.3.11-3(2)","2.3.1(12)","3.1.8","2.1.19"]},{"id":"B7","tr":"B","s":"gi","t":"Acute abdomen ที่ต้องส่งศัลย์","d":"acute abdomen · อ่าน plain abdomen · diverticulitis · liver abscess","c":["2.2.43","3.2.2","2.3.11-3(9)","2.3.11(8)"]},{"id":"B8","tr":"B","s":"neuro","t":"เส้นประสาทส่วนปลายและเส้นประสาทสมอง","d":"อาการชา · polyneuropathy · GBS · carpal tunnel · Bell palsy · trigeminal neuralgia · ALS","c":["2.1.25","2.3.6-3(9)","2.3.6-3(4)","2.3.6-3(10)","2.3.6(2)","2.3.6-3(12)","2.3.6-3(2)"]},{"id":"B9","tr":"B","s":"neuro","t":"สมองเสื่อม เดินผิดปกติ และ Parkinsonism","d":"dementia/Alzheimer · Parkinsonism · NPH (hydrocephalus) · แยกท่าเดิน","c":["2.1.7","2.3.6-3(1)","2.3.6-3(8)","2.3.6-3(5)"]},{"id":"B10","tr":"B","s":"endo","t":"ต่อมหมวกไต ต่อมใต้สมอง และพาราไทรอยด์","d":"Cushing · Addison/adrenal crisis · pituitary · DI · hyperparathyroidism · hypogonadism · BMD","c":["2.3.4-3(1)","2.3.4-3(4)","3.3.25"]},{"id":"B11","tr":"B","s":"endo","t":"โภชนาการ วิตามิน และเบื่ออาหาร","d":"เบื่ออาหาร/น้ำหนักลด · ขาดโปรตีนพลังงาน · วิตามินขาดและเกิน (B1 B12 D K A)","c":["2.1.14","2.3.4(8)","2.3.4(10)","2.3.4-3(6)"]},{"id":"B12","tr":"B","s":"air","t":"กล้ามเนื้อ กระดูก และปวดทั่วตัว","d":"myopathy (inflammatory/statin/rhabdo) · fibromyalgia · osteonecrosis · ESR/CRP ใช้เมื่อไร","c":["2.3.13-3(7)","2.3.13-3(3)","2.3.13-3(8)","3.3.6","3.3.7"]},{"id":"B13","tr":"B","s":"derm","t":"ผื่นเรื้อรัง ตุ่มน้ำ และสีผิวผิดปกติ","d":"psoriasis/pityriasis rosea/lichen planus · pemphigus/pemphigoid · EM/EN · cutaneous lupus · vitiligo · melasma · ผมร่วง","c":["2.3.12-3(11)","2.3.12-3(2)","2.3.12-3(5)","2.3.12-3(4)","2.3.12-3(14)","2.3.12-3(10)","2.3.12-3(1)","2.1.52"]},{"id":"B14","tr":"B","s":"derm","t":"สิว ก้อนใต้ผิวหนัง แผล และเนื้องอกผิวหนัง","d":"acne · cyst/corn · ก้อนใต้ผิวหนัง · แผลเรื้อรัง · scar/keloid · hemangioma · เนื้องอกผิวหนังดี/ร้าย","c":["2.3.12(1)","2.3.12(6)","2.3.12(5)","2.1.54","2.3.12(13)","2.3.12(12)","2.3.12-3(8)","2.3.12-3(7)","2.3.2(1)","2.3.2-3(2)"],"rec":"ปิด 10 ข้อ ส่วนใหญ่ยังไม่มีบทไหนพูดถึง"},{"id":"C1","tr":"C","s":"chest","t":"เติมในบท ABG: Hyperventilation syndrome","d":"แยก hyperventilation syndrome จาก respiratory alkalosis สาเหตุอื่น","c":["2.2.22"],"ref":"chest-26","rec":"เติมสั้น ๆ ในบทเดิม ใช้เวลาน้อย"},{"id":"C2","tr":"C","s":"neuro","t":"เติมในบท Acute confusional state: Acute increased ICP","d":"อาการ ICP สูง · herniation · การดูแลเบื้องต้น","c":["2.2.35"],"ref":"neuro-21.10","rec":"เติมสั้น ๆ ในบทเดิม ใช้เวลาน้อย"},{"id":"C3","tr":"C","s":"onco","t":"เติมในบท General oncology: อ่านผลพยาธิวิทยา","d":"อ่านใบรายงาน cytology/pathology · IHC ที่พบบ่อย","c":["3.3.11"],"ref":"hemonc-2.11","rec":"เติมสั้น ๆ ในบทเดิม · คลังข้อสอบมี 22 ข้อ"},{"id":"C4","tr":"C","s":"air","t":"เติมในบท Approach to arthritis: ปวดนอกข้อ","d":"costochondritis · tendinitis/bursitis · อ่านฟิล์มกระดูกและข้อ","c":["2.3.13(1)","2.3.13(7)","3.2.5"],"ref":"air-23","rec":"เติมสั้น ๆ ในบทเดิม ปิด 3 ข้อ"}];
+var PBYID={};PLAN.forEach(function(p){PBYID[p.id]=p;});
+var NLROW={};NLD.rows.forEach(function(r){NLROW[r.c]=r;});
+var PKEY="med421-nlplan-v1",PICKS={},PSYNC={mode:"local",ref:null,writing:false,dirty:false,err:""};
+function cleanPicks(o){var r={};if(o&&typeof o==="object")Object.keys(o).forEach(function(k){if(PBYID[k]&&(o[k]==="y"||o[k]==="n"))r[k]=o[k];});return r;}
+function canon(o){var r={};Object.keys(o).sort().forEach(function(k){r[k]=o[k];});return JSON.stringify(r);}
+try{PICKS=cleanPicks((JSON.parse(localStorage.getItem(PKEY)||"{}")||{}).picks);}catch(e){}
+function savePicksLocal(){try{localStorage.setItem(PKEY,JSON.stringify({picks:PICKS}));}catch(e){}}
+function writePlan(){
+  if(PSYNC.mode!=="cloud"||!PSYNC.ref)return;
+  if(PSYNC.writing){PSYNC.dirty=true;return;}
+  PSYNC.writing=true;PSYNC.dirty=false;
+  PSYNC.ref.set({picks:JSON.parse(JSON.stringify(PICKS)),updatedAt:new Date().toISOString(),v:1}).then(function(){
+    PSYNC.writing=false;if(PSYNC.dirty)writePlan();
+  },function(){PSYNC.writing=false;PSYNC.mode="local";PSYNC.err="บันทึกขึ้นบัญชีไม่ได้";if(st.tab==="plan")render();});
+}
+function connectPlan(db){
+  var ref=db.doc("plans/nl-lessons"),first=true;
+  ref.onSnapshot(function(snap){
+    var cloud=snap.exists?cleanPicks((snap.data()||{}).picks):{};
+    if(first){
+      first=false;PSYNC.mode="cloud";PSYNC.ref=ref;
+      if(snap.exists)PICKS=cloud;else if(Object.keys(PICKS).length)writePlan();
+      savePicksLocal();if(st.tab==="plan")render();return;
+    }
+    if(PSYNC.writing||PSYNC.dirty||snap.metadata&&snap.metadata.hasPendingWrites)return;
+    if(canon(cloud)!==canon(PICKS)){PICKS=cloud;savePicksLocal();if(st.tab==="plan")render();}
+  },function(){PSYNC.mode="local";if(st.tab==="plan")render();});
+}
+function setPick(id,v){if(PICKS[id]===v)delete PICKS[id];else PICKS[id]=v;savePicksLocal();writePlan();render();}
+
 
 /* ---------- state ---------- */
 var VKEY="med421-dash-view-v2";
-var TABS=["today","shelf","schedule","nl"];
+var TABS=["today","shelf","schedule","nl","plan"];
 /* เปิดมาเจอหน้า "วันนี้ทวนอะไร" เสมอ เว้นแต่ลิงก์ระบุแท็บ (#shelf · #schedule · #nl) · k = เป้าทวนต่อคาบ */
-var st={tab:"today",sys:"",f:"all",q:"",open:null,nlf:"all",nllv:"all",nlg:"",nlq:"all",k:2};
+var st={tab:"today",sys:"",f:"all",q:"",open:null,nlf:"all",nllv:"all",nlg:"",nlq:"all",k:2,pf:"all"};
 try{var vv=JSON.parse(localStorage.getItem(VKEY)||"{}");if(SYS[vv.sys])st.sys=vv.sys;if([1,2,3].indexOf(vv.k)>=0)st.k=vv.k;}catch(e){}
 var h0=String(location.hash||"").replace(/^#/,"");if(TABS.indexOf(h0)>=0)st.tab=h0;
 function saveView(){try{localStorage.setItem(VKEY,JSON.stringify({sys:st.sys,k:st.k}));}catch(e){}}
@@ -1125,7 +1227,7 @@ function renderNL(){
       mixBar(cc,rs.length)+"<small class='num'>"+rs.length+" ข้อ · มีบท "+cc[2]+" · บางส่วน "+cc[1]+" · ไม่มี "+cc[0]+"</small>"+
       "<span class='qline num'>ข้อสอบถามตรง "+Math.round(rs.filter(function(r){return r.q>0;}).length*100/rs.length)+"%</span></button>";}).join("")+"</div>";
   var gap=rows.filter(function(r){return r.s===0&&(r.lv==="2"||/^2\.(1|2)\./.test(r.c));});
-  if(gap.length)h+="<section class='gaps'><h3>ช่องโหว่ที่ควรเติมก่อน · "+gap.length+" ข้อ</h3><p>อาการนำ ภาวะฉุกเฉิน และโรคกลุ่ม 1–2 ที่ยังไม่มีบทไหนพูดถึงเลย</p><div class='gaplist'>"+
+  if(gap.length)h+="<section class='gaps'><h3>ช่องโหว่ที่ควรเติมก่อน · "+gap.length+" ข้อ</h3><p>อาการนำ ภาวะฉุกเฉิน และโรคกลุ่ม 1–2 ที่ยังไม่มีบทไหนพูดถึงเลย · <button type='button' class='lb-open' data-tab='plan' style='border:1px solid var(--todo);background:var(--card);color:var(--todo);border-radius:999px;padding:1px 10px;font-size:12px;font-weight:600;cursor:pointer'>ดูแผนเติมบทเรียน →</button></p><div class='gaplist'>"+
     gap.map(function(r){return "<span><code>"+esc(r.c)+"</code>"+esc(r.t.replace(/\s*\(.*$/,""))+"</span>";}).join("")+"</div></section>";
   var fs=[["all","ทั้งหมด",n],["0","ยังไม่มี",c[0]],["1","บางส่วน",c[1]],["2","มีบทเรียน",c[2]]];
   h+="<div class='fbar' role='group' aria-label='กรองตามความครอบคลุม'><span class='lbl'>แสดง</span>"+fs.map(function(f){
@@ -1152,6 +1254,77 @@ function renderNL(){
     "<li>จับคู่จากชื่อบท ชื่อหัวข้อ ชื่อข้อสอบ และรหัส NL ที่ผูกไว้ ด้วยคำค้นทั้งไทยและอังกฤษ บทที่สอนเรื่องนั้นแต่ไม่ได้เอ่ยชื่อในหัวข้ออาจถูกนับเป็นบางส่วนหรือยังไม่มี กดลิงก์หลักฐานใต้แต่ละข้อเพื่อเช็กได้</li>"+
     "<li><b>คลังข้อสอบ</b> — แต่ละข้อนับครั้งเดียว (ข้อเช็คใน Learn ที่ซ้ำกับ Ward Drill ไม่นับซ้ำ) · <b>ถามตรง</b> = รหัส NL ที่ผูก ชื่อข้อ หรือคำตอบที่ถูกตรงกับหัวข้อ · <b>พูดถึงในเฉลย</b> = เรื่องนั้นอยู่ในต้นคำอธิบาย เช่นเป็นโรคที่ใช้แยก · ข้อที่ถามการรักษาโดยไม่เอ่ยชื่อโรคในคำตอบอาจไม่ถูกนับเป็นถามตรง</li>"+
     "<li>ข้อมูล ณ "+esc(NLD.asof||"")+" · บทเรียนใหม่จะถูกนับเมื่ออัปเดตหน้านี้</li></ul></details>";
+  return h;
+}
+
+/* ---------- plan tab ---------- */
+var TRK={A:["A · บท Learn ของคาบที่ยังไม่มีบทเรียน","คาบในตารางของกลุ่มเรา 20 คาบยังไม่มีบทใน MED421 learn ทำแล้วได้ทั้งเติม NL และทวนสอบลงกอง (ถ้ามีสไลด์อาจารย์ใน Drive จะเรียบเรียงตามสไลด์)"],
+  B:["B · บทใหม่นอกตารางบรรยาย","หัวข้อ NL ที่ไม่มีคาบไหนสอน รวมเป็นบทสั้นตามเรื่องที่เจอด้วยกันบ่อย"],
+  C:["C · เติมหัวข้อย่อยในบท Learn ที่มีอยู่","เพิ่ม 1–2 หัวข้อในบทเดิมที่เรื่องนั้นควรอยู่"]};
+var TMIN={A:"บทเต็ม ~90 นาที",B:"บทสั้น ~40 นาที",C:"เพิ่ม ~10 นาที"};
+function planProj(ids){
+  var closed={};ids.forEach(function(id){PBYID[id].c.forEach(function(c){closed[c]=1;});});
+  var c=nlCount(NLD.rows);
+  NLD.rows.forEach(function(r){if(closed[r.c]&&r.s<2){c[r.s]--;c[2]++;}});
+  return {c:c,score:(c[2]+c[1]/2)/NLD.rows.length,n:Object.keys(closed).length};
+}
+function planCard(p){
+  var v=PICKS[p.id]||"",S=SYS[p.s]||SYS.mock,rs=p.c.map(function(c){return NLROW[c];}).filter(Boolean);
+  var z=rs.filter(function(r){return r.s===0;}).length,hi=rs.filter(function(r){return r.lv!=="3";}).length,q=rs.reduce(function(a,r){return a+r.q;},0);
+  var l=p.tr==="A"?BYID[p.ref]:null,where=p.tr==="A"?"Learn "+S.label+" · คาบ "+(l?dshort(l.d):""):p.tr==="B"?"บทใหม่ · "+S.label:"บทเดิมใน Learn";
+  var links=[];
+  if(l&&l.sl)links.push(ext(DRV(l.sl[0][1]),"","สไลด์อาจารย์","เปิดสไลด์ "+l.title));
+  if(l&&l.drill)links.push(ext(DRILL+"#"+l.drill[0],"","Drill คาบนี้","เปิด Drill "+l.title));
+  if(p.tr==="C")links.push(ext(LEARN+"#"+p.ref,"","เปิดบทเดิม","เปิดบท Learn เดิม"));
+  return "<article class='pcard"+(v?" "+v:"")+"' style='--bk:"+S.bk+"'>"+
+    "<div class='ph'><i></i><span class='id'>"+p.id+"</span><span>"+esc(where)+"</span>"+(l&&l.sl?"<span>· มีสไลด์</span>":"")+(p.rec?"<span class='rec'>แนะนำ</span>":"")+"</div>"+
+    "<h3>"+esc(p.t)+"</h3><div class='sc'>"+esc(p.d)+"</div>"+
+    (p.rec?"<div class='why rc'><b>ทำไม</b> · "+esc(p.rec)+"</div>":p.note?"<div class='why'>"+esc(p.note)+"</div>":"")+
+    "<div class='stats'>"+(rs.length?"<span class='h'>ปิด NL "+rs.length+" ข้อ</span>"+(z?"<span class='z'>ยังไม่มีเลย "+z+"</span>":"")+
+        (hi?"<span>กลุ่ม 1–2/อาการ/ฉุกเฉิน "+hi+"</span>":"")+(q?"<span class='q'>คลังข้อสอบ "+q+" ข้อ</span>":""):"<span>ไม่เพิ่ม NL</span>")+
+      "<span>"+TMIN[p.tr]+"</span></div>"+
+    (rs.length?"<details><summary>หัวข้อ NL ที่จะปิด</summary><div class='codes'>"+rs.map(function(r){
+      return "<span class='s"+r.s+"'><code>"+esc(r.c)+"</code><span>"+esc(r.t.length>90?r.t.slice(0,88)+"…":r.t)+"</span>"+(r.lv?"<em>"+LVN[r.lv]+"</em>":"")+"</span>";}).join("")+"</div></details>":"")+
+    (links.length?"<div class='lb-list'>"+links.join("")+"</div>":"")+
+    "<div class='yn' role='group' aria-label='เลือก "+esc(p.id)+"'>"+
+      "<button type='button' class='yes' data-pick='"+p.id+":y' aria-pressed='"+(v==="y")+"'>"+ICON.check+"เอา</button>"+
+      "<button type='button' class='no2' data-pick='"+p.id+":n' aria-pressed='"+(v==="n")+"'>"+ICON.x+"ไม่เอา</button></div>"+
+  "</article>";
+}
+function renderPlan(){
+  if(!NLD.rows.length)return "<p class='none-found'>ยังไม่มีข้อมูล NL — รัน build_nl.py ก่อน</p>";
+  var ys=PLAN.filter(function(p){return PICKS[p.id]==="y";}),ns=PLAN.filter(function(p){return PICKS[p.id]==="n";});
+  var now=planProj([]),pj=planProj(ys.map(function(p){return p.id;})),all=planProj(PLAN.map(function(p){return p.id;}));
+  var recs=PLAN.filter(function(p){return p.rec;}),rp=planProj(recs.map(function(p){return p.id;})),N=NLD.rows.length,gapN=N-now.c[2];
+  var h="<section class='pl-hero'><div><div class='eyebrow'>แผนเติมบทเรียนให้ครบ NL 2567 · อายุรกรรม "+N+" หัวข้อ</div>"+
+    "<h1>เลือกบทที่จะเพิ่ม</h1>"+
+    "<p>ตอนนี้ยังมี <b class='num'>"+gapN+"</b> หัวข้อที่ไม่มีบทสอนเต็ม (ยังไม่มีเลย "+now.c[0]+" · แตะบางส่วน "+now.c[1]+") จัดเป็น <b class='num'>"+PLAN.length+"</b> บท ทำครบทุกบท = "+Math.round(all.score*100)+"% "+
+      "· กด <b>เอา</b> หรือ <b>ไม่เอา</b> ทีละบท ชุดที่ติดป้ายแนะนำ "+recs.length+" บท ปิดได้ "+rp.n+" หัวข้อ</p>"+
+    "<div class='pl-acts'><button type='button' class='pillbtn' data-prec>เลือกตามที่แนะนำ</button>"+
+      "<span class='savenote"+(PSYNC.mode==="cloud"?" cloud":"")+"'><i></i>"+(PSYNC.mode==="cloud"?"บันทึกในบัญชี · เลือกเสร็จแล้วบอก Claude ได้เลย":(PSYNC.err?PSYNC.err+" · ":"")+"บันทึกในเครื่องนี้ · เลือกเสร็จแล้วส่งรายการท้ายหน้าให้ Claude")+"</span></div></div>"+
+    "<div class='proj'><div class='big'><s class='num'>"+Math.round(now.score*100)+"%</s><span>→</span><b class='num'>"+Math.round(pj.score*100)+"%</b><span>ถ้าทำบทที่เลือก</span></div>"+
+      mixBar(pj.c,N)+"<div class='legend'><span><i class='sw f'></i>มีบท <b>"+pj.c[2]+"</b></span><span><i class='sw p'></i>บางส่วน <b>"+pj.c[1]+"</b></span><span><i class='sw n'></i>ไม่มี <b>"+pj.c[0]+"</b></span></div>"+
+      "<div class='legend'><span>เอา <b>"+ys.length+"</b></span><span>ไม่เอา <b>"+ns.length+"</b></span><span>ยังไม่เลือก <b>"+(PLAN.length-ys.length-ns.length)+"</b></span></div></div></section>";
+  var fs=[["all","ทั้งหมด",PLAN.length],["un","ยังไม่เลือก",PLAN.length-ys.length-ns.length],["y","เอา",ys.length],["n","ไม่เอา",ns.length],["rec","แนะนำ",recs.length]];
+  h+="<div class='fbar' role='group' aria-label='กรองบท'><span class='lbl'>แสดง</span>"+fs.map(function(f){
+    var col=f[0]==="y"?"var(--ok)":f[0]==="n"?"var(--ink)":f[0]==="rec"?"var(--accent)":"var(--ink-3)";
+    return "<button type='button' class='fpill' data-pf='"+f[0]+"' aria-pressed='"+(st.pf===f[0])+"' style='--c:"+col+"'>"+(f[0]==="all"?"":"<span class='dot'></span>")+f[1]+" <span class='n num'>"+f[2]+"</span></button>";}).join("")+"</div>";
+  var show=function(p){var v=PICKS[p.id]||"";return st.pf==="all"||(st.pf==="un"&&!v)||(st.pf==="rec"&&p.rec)||st.pf===v;};
+  var any=false;
+  ["A","B","C"].forEach(function(t){
+    var ps=PLAN.filter(function(p){return p.tr===t&&show(p);});if(!ps.length)return;any=true;
+    var tp=planProj(PLAN.filter(function(p){return p.tr===t;}).map(function(p){return p.id;}));
+    h+="<section class='trk'><h2>"+esc(TRK[t][0])+" <small>"+PLAN.filter(function(p){return p.tr===t;}).length+" บท · ปิด NL ได้ "+tp.n+" หัวข้อ</small></h2><p>"+esc(TRK[t][1])+"</p>"+
+      "<div class='pcards'>"+ps.map(planCard).join("")+"</div></section>";
+  });
+  if(!any)h+="<p class='none-found'>ไม่มีบทในตัวกรองนี้</p>";
+  h+="<div class='picksum'><b>สรุปที่เลือก</b> — เอา: "+(ys.length?ys.map(function(p){return p.id+" "+p.t;}).join(" · "):"–")+
+    "<br>ไม่เอา: "+(ns.length?ns.map(function(p){return p.id;}).join(", "):"–")+"</div>";
+  h+="<details class='method'><summary>จัดแผนยังไง</summary><ul>"+
+    "<li>เริ่มจากหัวข้อ NL อายุรกรรมที่ยังไม่มีบทสอนเต็ม ("+gapN+" ข้อ) จากแท็บครอบคลุม NL · แต่ละหัวข้ออยู่ในข้อเสนอเดียว ทำครบทุกบทจึงได้ 100%</li>"+
+    "<li>ถ้าเรื่องนั้นมีคาบในตาราง ใส่ไว้ในบท Learn ของคาบนั้น (กลุ่ม A) · ถ้าเข้ากับบท Learn ที่มีอยู่แล้ว ใช้วิธีเติมหัวข้อ (กลุ่ม C) · ที่เหลือรวมเป็นบทใหม่ตามเรื่อง (กลุ่ม B)</li>"+
+    "<li>ตัวเลข % คาดการณ์ว่าหัวข้อที่บทนั้นสอนจะนับเป็นมีบทเรียนเต็ม · เวลาอ่านประมาณจากบท Learn ปัจจุบัน (กลาง ๆ ราว 100 นาทีต่อคาบ)</li>"+
+    "<li>ป้ายแนะนำ = ปิดได้หลายข้อ เป็นกลุ่ม 1–2 ที่ยังไม่มีเลย มีข้อสอบในคลังเยอะ หรือเป็นคาบใกล้สอบ</li></ul></details>";
   return h;
 }
 
@@ -1214,12 +1387,15 @@ function openSheet(id){lastFocus=document.activeElement;st.open=id;renderSheet()
 function closeSheet(){st.open=null;renderSheet();if(lastFocus&&document.body.contains(lastFocus))lastFocus.focus();}
 
 /* ---------- render ---------- */
-function mainHtml(){return st.tab==="today"?renderToday():st.tab==="shelf"?renderShelf():st.tab==="nl"?renderNL():renderSchedule();}
+function mainHtml(){return st.tab==="today"?renderToday():st.tab==="shelf"?renderShelf():st.tab==="nl"?renderNL():st.tab==="plan"?renderPlan():renderSchedule();}
 function render(){
   document.getElementById("t-today").setAttribute("aria-pressed",String(st.tab==="today"));
   document.getElementById("t-shelf").setAttribute("aria-pressed",String(st.tab==="shelf"));
   document.getElementById("t-schedule").setAttribute("aria-pressed",String(st.tab==="schedule"));
   document.getElementById("t-nl").setAttribute("aria-pressed",String(st.tab==="nl"));
+  document.getElementById("t-plan").setAttribute("aria-pressed",String(st.tab==="plan"));
+  var tb=document.querySelector(".tabs"),at=document.getElementById("t-"+st.tab);
+  if(tb&&at&&tb.scrollWidth>tb.clientWidth)tb.scrollLeft=Math.max(0,at.offsetLeft-tb.offsetLeft-12);
   [].forEach.call(document.querySelectorAll(".rail [data-tab]"),function(b){b.setAttribute("aria-pressed",String(b.dataset.tab===st.tab));});
   document.getElementById("main").innerHTML=mainHtml();
   renderSide();renderSync();
@@ -1239,6 +1415,9 @@ document.addEventListener("click",function(e){
   if(b.dataset.tab){st.tab=b.dataset.tab;render();window.scrollTo({top:0});return;}
   if(b.dataset.sys!==undefined){st.sys=(st.sys===b.dataset.sys?"":b.dataset.sys);render();return;}
   if(b.dataset.k){st.k=+b.dataset.k;render();return;}
+  if(b.dataset.pick){var pk=b.dataset.pick.split(":");if(PBYID[pk[0]])setPick(pk[0],pk[1]);return;}
+  if(b.dataset.pf){st.pf=b.dataset.pf;render();return;}
+  if(b.hasAttribute("data-prec")){PLAN.forEach(function(p){if(p.rec&&!PICKS[p.id])PICKS[p.id]="y";});savePicksLocal();writePlan();render();return;}
   if(b.dataset.nlf){st.nlf=b.dataset.nlf;render();return;}
   if(b.dataset.nllv){st.nllv=b.dataset.nllv;render();return;}
   if(b.dataset.nlq){st.nlq=b.dataset.nlq;render();return;}
