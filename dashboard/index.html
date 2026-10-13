@@ -1,0 +1,607 @@
+<title>MED421 Lectures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: ward-board timeline — summary strip and per-system coverage first, then one row per lecture
+   (date block · topic · Learn/Drill actions), grouped by week or by organ system.
+   Tokens follow the sibling MED421 learn / Ward Drill pages so the three read as one kit. */
+:root{
+  --paper:#eef3f0; --surface:#ffffff; --sunk:#e3ebe6;
+  --ink:#0d1712; --ink-2:#3d4c44; --ink-3:#6d7f75;
+  --rule:#d8e2dc; --rule-strong:#bccbc3;
+  --accent:#8c1d2f; --accent-soft:#f6e9eb; --accent-ink:#6e1624; --on-accent:#ffffff;
+  --ok:#0f7a4a; --ok-soft:#dff0e6; --warn:#9a5f08; --warn-soft:#f8efdc;
+  --focus:#1f6feb;
+  --shadow:0 1px 2px rgba(13,23,18,.05),0 12px 28px -20px rgba(13,23,18,.3);
+  --sans:"IBM Plex Sans Thai","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --r-lg:20px; --r-md:14px; --r-sm:10px;
+  --e:cubic-bezier(.22,.9,.28,1);
+
+  --cardio:#8c1d2f; --cardio-s:#f6e9eb;
+  --nephro:#14585f; --nephro-s:#e4eef0;
+  --chest:#4a5a86;  --chest-s:#e6e9f2;
+  --neuro:#6b3f8c;  --neuro-s:#efe8f5;
+  --air:#8a5a12;    --air-s:#f4ecdd;
+  --id:#a3402a;     --id-s:#f6e6e1;
+  --gi:#a14a07;     --gi-s:#fdead5;
+  --endo:#4d7c0f;   --endo-s:#e9f3d3;
+  --heme:#a21351;   --heme-s:#fbe0ee;
+  --onco:#6b5b3f;   --onco-s:#f0ead9;
+  --derm:#0369a1;   --derm-s:#d9eefb;
+  --mock:#4b3b8f;   --mock-s:#ebe8f7;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#090d0b; --surface:#111915; --sunk:#18221d;
+    --ink:#e7f0ea; --ink-2:#a5b8ac; --ink-3:#788c80;
+    --rule:#1d2922; --rule-strong:#2a3830;
+    --accent:#ff8fa3; --accent-soft:#24151a; --accent-ink:#ffb3c0; --on-accent:#08110c;
+    --ok:#5fe3a1; --ok-soft:#0f2419; --warn:#e8bb63; --warn-soft:#241f10;
+    --focus:#7fb4ff;
+    --shadow:0 1px 2px rgba(0,0,0,.6),0 18px 40px -28px rgba(0,0,0,1);
+    --cardio:#ff8fa3; --cardio-s:#24151a;
+    --nephro:#5fe3a1; --nephro-s:#0f2419;
+    --chest:#8fb4ff;  --chest-s:#141b2b;
+    --neuro:#c79bff;  --neuro-s:#1d1526;
+    --air:#f5c268;    --air-s:#241d12;
+    --id:#ff9b7a;     --id-s:#2a1712;
+    --gi:#ffb46b;     --gi-s:#261a11;
+    --endo:#c2dd52;   --endo-s:#1b2110;
+    --heme:#ef86c8;   --heme-s:#26121d;
+    --onco:#cbbfa8;   --onco-s:#201d16;
+    --derm:#5fc8f0;   --derm-s:#0d2029;
+    --mock:#b3a5ff;   --mock-s:#1b1826;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#090d0b; --surface:#111915; --sunk:#18221d;
+  --ink:#e7f0ea; --ink-2:#a5b8ac; --ink-3:#788c80;
+  --rule:#1d2922; --rule-strong:#2a3830;
+  --accent:#ff8fa3; --accent-soft:#24151a; --accent-ink:#ffb3c0; --on-accent:#08110c;
+  --ok:#5fe3a1; --ok-soft:#0f2419; --warn:#e8bb63; --warn-soft:#241f10;
+  --focus:#7fb4ff;
+  --shadow:0 1px 2px rgba(0,0,0,.6),0 18px 40px -28px rgba(0,0,0,1);
+  --cardio:#ff8fa3; --cardio-s:#24151a;
+  --nephro:#5fe3a1; --nephro-s:#0f2419;
+  --chest:#8fb4ff;  --chest-s:#141b2b;
+  --neuro:#c79bff;  --neuro-s:#1d1526;
+  --air:#f5c268;    --air-s:#241d12;
+  --id:#ff9b7a;     --id-s:#2a1712;
+  --gi:#ffb46b;     --gi-s:#261a11;
+  --endo:#c2dd52;   --endo-s:#1b2110;
+  --heme:#ef86c8;   --heme-s:#26121d;
+  --onco:#cbbfa8;   --onco-s:#201d16;
+  --derm:#5fc8f0;   --derm-s:#0d2029;
+  --mock:#b3a5ff;   --mock-s:#1b1826;
+}
+.s-cardio{--c:var(--cardio);--cs:var(--cardio-s)} .s-nephro{--c:var(--nephro);--cs:var(--nephro-s)}
+.s-chest{--c:var(--chest);--cs:var(--chest-s)}    .s-neuro{--c:var(--neuro);--cs:var(--neuro-s)}
+.s-air{--c:var(--air);--cs:var(--air-s)}          .s-id{--c:var(--id);--cs:var(--id-s)}
+.s-gi{--c:var(--gi);--cs:var(--gi-s)}             .s-endo{--c:var(--endo);--cs:var(--endo-s)}
+.s-heme{--c:var(--heme);--cs:var(--heme-s)}       .s-onco{--c:var(--onco);--cs:var(--onco-s)}
+.s-derm{--c:var(--derm);--cs:var(--derm-s)}       .s-mock{--c:var(--mock);--cs:var(--mock-s)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:8px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px}
+@media (min-width:700px){.wrap{padding-inline:24px}}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:28px 8px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.mast h1{font-size:clamp(28px,6vw,40px);line-height:1.1;margin-top:8px}
+.mast p{margin:10px 0 0;color:var(--ink-2);max-width:62ch}
+.kit{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.kit a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:13.5px;
+  background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:8px 15px;color:var(--ink);
+  transition:border-color .2s var(--e),background .2s var(--e)}
+.kit a:hover{border-color:var(--rule-strong);background:var(--sunk)}
+.kit a b{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink-3)}
+
+/* ---------- summary ---------- */
+.summary{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px;margin-top:22px;align-items:start}
+@media (max-width:820px){.summary{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:18px 20px}
+.next .lab{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--accent-ink)}
+.next .lab i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.next h2{font-size:clamp(20px,3.6vw,25px);line-height:1.25;margin-top:8px}
+.next .when{margin-top:4px;color:var(--ink-2);font-size:14px}
+.next .acts{display:flex;flex-direction:row;flex-wrap:wrap;gap:8px;margin-top:14px;min-width:0}
+.next .acts>*{flex:1 1 200px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-md);padding:13px 15px;min-width:0}
+.stat b{display:block;font-family:var(--mono);font-size:24px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat b small{font-size:14px;color:var(--ink-3);font-weight:500}
+.stat span{display:block;margin-top:5px;font-size:12.5px;color:var(--ink-3)}
+.stat.hl{background:var(--accent-soft);border-color:transparent}
+.stat.hl b{color:var(--accent-ink)}
+
+/* ---------- system coverage ---------- */
+.cov-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:26px}
+.cov-head h2{font-size:18px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3);margin-left:auto}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sq{width:12px;height:12px;border-radius:3px;display:inline-block;flex:none}
+.sq.l{background:var(--ink-2)} .sq.d{border:2px solid var(--ink-2)} .sq.n{background:var(--sunk);border:1px dashed var(--rule-strong)}
+.cov{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:12px}
+.sysc{appearance:none;text-align:left;font:inherit;color:var(--ink);cursor:pointer;background:var(--surface);
+  border:1px solid var(--rule);border-radius:var(--r-md);padding:12px 13px;display:flex;flex-direction:column;gap:8px;min-width:0;
+  transition:border-color .2s var(--e),transform .2s var(--e)}
+.sysc:hover{border-color:var(--c);transform:translateY(-1px)}
+.sysc[aria-pressed="true"]{border-color:var(--c);background:var(--cs);box-shadow:inset 0 0 0 1px var(--c)}
+.sysc .nm{display:flex;align-items:center;gap:7px;font-weight:700;font-size:14px}
+.sysc .nm i{width:9px;height:9px;border-radius:50%;background:var(--c);flex:none}
+.sysc .th{font-size:12px;color:var(--ink-3);line-height:1.35}
+.blocks{display:flex;gap:3px;flex-wrap:wrap}
+.blocks i{width:14px;height:14px;border-radius:3px;display:block}
+.blocks i.l{background:var(--c)}
+.blocks i.d{border:2px solid var(--c)}
+.blocks i.n{background:var(--sunk);border:1px dashed var(--rule-strong)}
+.sysc .ct{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+
+/* ---------- controls ---------- */
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;margin-top:24px;padding-block:10px;
+  background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;background:var(--sunk);border-radius:999px;padding:3px}
+.seg button{appearance:none;border:0;background:transparent;font:inherit;font-size:13.5px;font-weight:600;color:var(--ink-3);
+  padding:7px 14px;border-radius:999px;cursor:pointer;transition:background .2s var(--e),color .2s var(--e)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+#q{flex:1 1 220px;min-width:0;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--rule-strong);border-radius:999px;padding:8px 15px}
+#q::placeholder{color:var(--ink-3)}
+.chk{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:var(--ink-2);cursor:pointer;user-select:none}
+.chk input{width:16px;height:16px;accent-color:var(--accent);margin:0}
+.filt{display:none;align-items:center;gap:6px;font-size:13px;font-weight:600;background:var(--cs);color:var(--c);
+  border:0;border-radius:999px;padding:6px 12px;cursor:pointer;font-family:inherit}
+.filt.on{display:inline-flex}
+
+/* ---------- lecture list ---------- */
+main{padding-block:8px 40px}
+.group{margin-top:26px}
+.gh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:0 2px 10px;border-bottom:1px solid var(--rule)}
+.gh h3{font-size:17px}
+.gh .sub{font-size:13px;color:var(--ink-3)}
+.gh .now{font-size:11.5px;font-weight:700;color:var(--on-accent);background:var(--accent);border-radius:999px;padding:2px 9px}
+.gh .glinks{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.gh .glinks a{font-size:12.5px;font-weight:600;text-decoration:none;color:var(--c,var(--ink-2));
+  border:1px solid var(--rule-strong);border-radius:999px;padding:3px 11px;background:var(--surface)}
+.gh .glinks a:hover{border-color:var(--c,var(--ink-3))}
+.list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+
+.lec{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:16px;align-items:start;
+  background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);padding:14px 16px;box-shadow:var(--shadow)}
+.lec.past{background:color-mix(in srgb,var(--surface) 70%,var(--paper))}
+.lec.is-next{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent),var(--shadow)}
+@media (max-width:720px){
+  .lec{grid-template-columns:60px minmax(0,1fr);gap:12px}
+  .lec .acts{grid-column:1/-1}
+}
+.date{background:var(--cs);color:var(--c);border-radius:12px;padding:8px 4px 7px;text-align:center;line-height:1.1}
+.date .dd{font-family:var(--mono);font-size:24px;font-weight:600;display:block}
+.date .mm{font-size:12px;font-weight:600;display:block;margin-top:2px}
+.date .wd{font-size:11px;display:block;margin-top:3px;opacity:.85}
+.body{min-width:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:4px}
+.sys{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--c)}
+.sys i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.tag{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;background:var(--sunk);color:var(--ink-2);white-space:nowrap}
+.tag.al{background:var(--warn-soft);color:var(--warn)}
+.tag.st-past{background:var(--ok-soft);color:var(--ok)}
+.tag.st-today,.tag.st-next{background:var(--accent);color:var(--on-accent)}
+.tag.st-soon{background:var(--accent-soft);color:var(--accent-ink)}
+.body h4{margin:0;font-size:16.5px;line-height:1.35;font-weight:700;letter-spacing:-.01em}
+.meta{font-size:13px;color:var(--ink-3);margin-top:3px}
+.meta .mono{color:var(--ink-2);font-size:12.5px}
+.note{font-size:12.5px;color:var(--warn);margin-top:4px}
+.more{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;align-items:center}
+.more span{font-size:11.5px;font-weight:600;color:var(--ink-3);letter-spacing:.04em}
+.more a{font-size:12.5px;text-decoration:none;color:var(--ink-2);background:var(--sunk);border-radius:8px;padding:2px 9px;
+  transition:color .2s var(--e),background .2s var(--e)}
+.more a:hover{color:var(--c);background:var(--cs)}
+
+.acts{display:flex;flex-direction:column;gap:7px;min-width:210px}
+@media (max-width:720px){.acts{flex-direction:row;flex-wrap:wrap;min-width:0}.acts>*{flex:1 1 150px}}
+.go{display:flex;flex-direction:column;gap:1px;text-decoration:none;border-radius:12px;padding:8px 13px;
+  transition:transform .18s var(--e),background .2s var(--e),border-color .2s var(--e)}
+.go:active{transform:scale(.98)}
+.go b{font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px}
+.go small{font-size:11.5px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.go.learn{background:var(--ink);color:var(--paper)}
+.go.learn small{color:color-mix(in srgb,var(--paper) 70%,var(--ink))}
+.go.learn:hover{background:var(--c)}
+.go.drill{border:1.5px solid var(--c);color:var(--c);background:var(--surface)}
+.go.drill small{color:var(--ink-3)}
+.go.drill:hover{background:var(--cs)}
+.none{font-size:12.5px;color:var(--ink-3);border:1px dashed var(--rule-strong);border-radius:12px;padding:8px 13px}
+.done{appearance:none;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:600;color:var(--ink-3);
+  background:transparent;border:0;padding:4px 2px;cursor:pointer;align-self:flex-start}
+.done .bx{width:16px;height:16px;border-radius:5px;border:1.5px solid var(--rule-strong);display:grid;place-items:center;font-size:11px;color:transparent}
+.done[aria-pressed="true"]{color:var(--ok)}
+.done[aria-pressed="true"] .bx{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.empty{padding:40px 0;text-align:center;color:var(--ink-3)}
+
+/* ---------- extras + footer ---------- */
+.extras{margin-top:34px}
+.extras h2{font-size:18px}
+.extras p.lede{margin:4px 0 0;color:var(--ink-3);font-size:13.5px}
+footer{color:var(--ink-3);font-size:12.5px;padding-block:10px 40px;line-height:1.7}
+footer b{color:var(--ink-2);font-weight:600}
+</style>
+
+<header class="wrap mast">
+  <div class="eyebrow">MED421/422 · อายุรศาสตร์ · รพ.ราชวิถี · 14 ก.ย. – 22 พ.ย. 2569</div>
+  <h1>ทุกคาบบรรยาย MED</h1>
+  <p>ตารางบรรยายของกลุ่มเราทั้งหมด เรียงตามวันจริงจากปฏิทิน แต่ละคาบมีปุ่มเปิด <b>Learn</b> (บทเรียน + ข้อเช็คความเข้าใจ) และ <b>Drill</b> (ข้อสอบใหม่ + คลังเก่า MED28–35) ตรงคาบนั้นทันที</p>
+  <nav class="kit" aria-label="เว็บในชุด MED421">
+    <a id="kit-learn" href="#" target="_blank" rel="noopener">MED421 learn <b>เปิด</b></a>
+    <a id="kit-drill" href="#" target="_blank" rel="noopener">MED421 Ward Drill <b>เปิด</b></a>
+    <a id="kit-lib" href="#" target="_blank" rel="noopener">ห้องสมุดท่าอาจารย์ <b>บทข้างเตียง</b></a>
+  </nav>
+
+  <section class="summary" aria-label="สรุป">
+    <div class="panel next" id="next"></div>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <div class="cov-head">
+    <h2>ความครอบคลุมรายระบบ</h2>
+    <div class="legend" aria-hidden="true">
+      <span><i class="sq l"></i>มีทั้ง Learn และ Drill</span>
+      <span><i class="sq d"></i>มีแค่ Drill</span>
+      <span><i class="sq n"></i>ยังไม่มี</span>
+    </div>
+  </div>
+  <div class="cov" id="cov" role="group" aria-label="กรองตามระบบ"></div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="seg" role="group" aria-label="จัดกลุ่ม">
+      <button type="button" id="v-date" data-view="date">ตามวัน</button>
+      <button type="button" id="v-sys" data-view="sys">ตามระบบ</button>
+    </div>
+    <input id="q" type="search" placeholder="ค้นหา เช่น AF, thyroid, อ.สกล, sepsis" autocomplete="off" aria-label="ค้นหาคาบบรรยาย">
+    <label class="chk"><input type="checkbox" id="hide-done"> ซ่อนคาบที่ทวนแล้ว</label>
+    <button type="button" class="filt" id="filt" aria-label="ล้างตัวกรองระบบ"></button>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+
+<section class="wrap extras" aria-labelledby="ex-h">
+  <h2 id="ex-h">นอกตารางบรรยายของกลุ่ม</h2>
+  <p class="lede">บทเรียนหรือชุดข้อสอบที่มีในเว็บ แต่ไม่ใช่คาบบรรยายในปฏิทินของกลุ่มเรา</p>
+  <div class="list" id="extras"></div>
+</section>
+
+<footer class="wrap">
+  <b>ที่มา</b> — วันเวลาและอาจารย์จาก Google Calendar (ดึงเมื่อ 13 ต.ค. 2569 · คาบที่ย้ายวันใช้วันใหม่แล้ว) ·
+  จำนวนหัวข้อและข้อสอบนับจาก MED421 learn และ Ward Drill วันเดียวกัน ·
+  ปุ่ม Learn/Drill เปิดในแท็บใหม่และกระโดดไปคาบนั้นเลย · ช่อง “ทวนแล้ว” เก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น<br>
+  <b>Drill ชุดรวม</b> = คลัง Ward Drill ยังไม่ได้แยกเป็นรายคาบสำหรับระบบนั้น ปุ่มจะพาไปกลุ่มหัวข้อที่ใกล้ที่สุด
+</footer>
+
+<script>
+(function(){
+"use strict";
+var LEARN="https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE";
+var DRILL="https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X";
+var LIB="https://claude.ai/artifact/QebhLmV2eKyzj3mkqstnjR";
+function A(id){return "https://claude.ai/artifact/"+id;}
+var EXAM="2026-11-17";
+
+/* ระบบ: ชื่อ · ชุดใน learn · ชุดใน drill · หมวดใน Mock NL */
+var SYS={
+  cardio:{label:"Cardio",th:"หัวใจและหลอดเลือด",learn:"cardio",drill:"cardio",mock:"M07"},
+  chest:{label:"Chest",th:"ระบบหายใจและทรวงอก",learn:"chest",drill:"chest",mock:"M08"},
+  nephro:{label:"Nephro",th:"ไตและสมดุลเกลือแร่",learn:"nephro",drill:"nephro",mock:"M10"},
+  neuro:{label:"Neuro",th:"ระบบประสาท",learn:"neuro",drill:"neuro",mock:"M06"},
+  id:{label:"ID",th:"โรคติดเชื้อ",learn:"id",drill:"infect",mock:"M01"},
+  gi:{label:"GI",th:"ทางเดินอาหารและตับ",learn:"gi",drill:"gi",mock:"M09"},
+  endo:{label:"Endo",th:"ต่อมไร้ท่อและเมตาบอลิซึม",learn:"endo",drill:"endo",mock:"M11"},
+  heme:{label:"Heme",th:"โลหิตวิทยา",learn:"hemonc",drill:"heme",mock:"M03"},
+  onco:{label:"Onco",th:"มะเร็งวิทยา",learn:"hemonc",drill:"onco",mock:"M02"},
+  air:{label:"AIR",th:"ภูมิแพ้ ภูมิคุ้มกัน รูมาติก",learn:"air",drill:"air",mock:"M05"},
+  derm:{label:"Derm",th:"ผิวหนัง",learn:null,drill:"derm",mock:"M04"}
+};
+var ORDER=["cardio","chest","nephro","neuro","id","gi","endo","heme","onco","air","derm"];
+
+/* คาบบรรยาย — learn:[ลิงก์คาบ, หัวข้อ, ข้อเช็ค] · drill:[ลิงก์คาบ, MCQ, MEQ+OSCE, คลังเก่า, ชุดรวม?] · more:[[ชื่อ, artifact id]] */
+var LECS=[
+ {d:"2026-09-15",t:"09:00",e:"10:00",s:"chest",title:"Pulmonary TB / ABG interpretation",by:"อ.ศิวพร",
+  learn:["chest-03",9,20],drill:["chest-03",8,2,12],note:"ชั่วโมงแรก: วัณโรคปอด · ABG สอนต่อ 6 ต.ค."},
+ {d:"2026-09-15",t:"14:00",e:"16:00",s:"cardio",title:"Pericarditis, myocarditis",by:"อ.เจตวรงค์",
+  learn:["cardio-04",12,27],drill:["cardio-04",5,1,17],more:[["Pulsus Paradoxus ข้างเตียง","1iFvgMWos7hDzUaogkVhzU"],["Inferior · Pericarditis · P wave","TbXj8Cep4rDZzSQMDw8ET1"]]},
+ {d:"2026-09-17",t:"15:00",e:"16:00",s:"nephro",title:"Fluid electrolyte: Divalent (Ca · PO₄ · Mg)",by:"อ.ธิติยา",
+  learn:["nephro-05",12,29],drill:["nephro-05",6,1,15],more:[["ธาตุประจุคู่ Divalent","Qv6AC4n5iFX7LdCEPdFLuV"],["Magnesium ข้างเตียง","MaQspFooxSmaHUnzdX5EMf"]]},
+ {d:"2026-09-18",t:"13:00",e:"14:00",s:"neuro",title:"Ischemic stroke, ICH",by:"อ.ธัญวรัตน์",
+  learn:["neuro-07",10,26],drill:["neuro-07",24,2,16],more:[["Acute Stroke ข้างเตียง","C3nWajgmBFLpZ6yMJ9TNi1"],["Stroke in the Young","NWtBKFtKfQGaFmSABHVgTd"],["Lacunar Syndrome ข้างเตียง","PMnQxmEN9baPAKYCsnRhYc"]]},
+ {d:"2026-09-18",t:"14:00",e:"16:00",s:"nephro",title:"Urinary tract infection",by:"อ.กรทิพย์",
+  drill:["nephro-30",5,0,17],note:"ย้ายมาจาก 9 ต.ค.",more:[["Contrast และ ASB ข้างเตียง","LTNG148b4pjuNS5aWD8Qyo"]]},
+ {d:"2026-09-18",t:"16:00",e:"18:00",s:"id",title:"Malaria and tropical disease",by:"อ.พจน์",
+  drill:["infect-I02",8,2,16],more:[["Dengue ข้างเตียง","RKsXACTy4bsDkJ8tYsaB1m"],["ไข้ หาเชื้อ ให้ยา","UZ6RpyBxNnchwY63fSUAQv"]]},
+ {d:"2026-09-21",t:"13:00",e:"14:00",s:"derm",title:"Impetigo, cellulitis, herpes, viral exanthem, superficial mycoses",by:"อ.วรณิสร์",
+  drill:["derm-D02",7,1,40,1]},
+ {d:"2026-09-22",t:"13:00",e:"15:00",s:"air",title:"SLE and systemic autoimmune diseases",by:"อ.ปัญนิภา",
+  learn:["air-33",18,58],drill:["air-33",20,5,18],more:[["Kikuchi + SLE ข้างเตียง","Xooww4pWG8ouuHPf27ZX9h"]]},
+ {d:"2026-09-23",t:"13:00",e:"14:00",s:"neuro",title:"Epilepsy",by:"อ.พิมลพรรณ",
+  learn:["neuro-23.9",12,23],drill:["neuro-N02",16,8,62,1]},
+ {d:"2026-09-23",t:"14:30",e:"16:00",s:"chest",title:"Extrapulmonary TB",by:"อ.ภาณุวัฒน์",
+  learn:["chest-23.9",12,33],drill:["chest-TB2",10,1,0]},
+ {d:"2026-09-24",t:"13:00",e:"15:00",s:"cardio",title:"Ischemic heart diseases",by:"อ.สุรพันธ์",al:1,
+  learn:["cardio-13",11,46],drill:["cardio-13",7,2,23],more:[["ACS 2025 ข้างเตียง","QPaGSm5j89rc2AG1CGtmN2"],["EKG อ่าน ACS ข้างเตียง","S2q2YPJ28yrpZ352Zmu5nx"],["เส้นเลือดหัวใจข้างเตียง","UM64XLaDLJEHRVdLjhcSsG"]]},
+ {d:"2026-09-24",t:"15:00",e:"16:30",s:"nephro",title:"Nephrotic / Nephritic syndrome",by:"อ.ฉันทิศา",
+  drill:["nephro-14",6,3,18],more:[["Nephrotic Syndrome ข้างเตียง","MjrMAFHPuhcGuYPmyb6J8Z"],["ตะแกรงไต 6 คำถาม","X6vGtSKXqqWWirN5yX83JU"],["กลไกตะแกรงไตพัง","8GgzwwQDTAsxp4c1odXPAm"]]},
+ {d:"2026-09-25",t:"10:00",e:"12:00",s:"endo",title:"Dyslipidemia, obesity and metabolic syndrome",by:"อ.นวพร",
+  learn:["endo-01",13,35],drill:["endo-E04",12,2,6]},
+ {d:"2026-09-25",t:"16:00",e:"18:00",s:"id",title:"Septicemia and antibiotic usage",by:"อ.พจน์",
+  learn:["id-25.9",11,20],drill:["infect-I01",8,2,8],more:[["Sepsis SSC 2026 ข้างเตียง","DB59ZbY5ize8MhxXiHkZJZ"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
+ {d:"2026-09-28",t:"13:00",e:"15:00",s:"chest",title:"Pleurisy, pleural effusion, empyema, respiratory failure",by:"อ.สกล",
+  learn:["chest-17",12,36],drill:["chest-17",8,3,14],more:[["Pleural Effusion ทุกแบบ","2dQ9NivX8hdLSP2vHeZ5CU"],["ICD — ทำไมต้องต่อขวดแบบนี้","Bqe2Y7pFsL1v1KmTnAr7KW"],["BTS Oxygen ข้างเตียง","VH8nbhTLwcwJd2xUPgJt3Z"]]},
+ {d:"2026-09-29",t:"13:00",e:"15:00",s:"air",title:"Acute arthritis, crystal arthropathy, septic arthritis",by:"อ.สูงชัย",
+  learn:["air-23",9,32],drill:["air-23",17,2,15]},
+ {d:"2026-09-30",t:"07:30",e:"08:30",s:"nephro",title:"Chronic kidney disease",by:"อ.วรางคณา",
+  drill:["nephro-19",6,1,16]},
+ {d:"2026-09-30",t:"13:00",e:"15:00",s:"endo",title:"Thyroid diseases",by:"อ.ศิวกร",
+  learn:["endo-14",13,26],drill:["endo-E02",7,1,18],more:[["Thyroid Disorder ข้างเตียง","S9FmtzVewjtqtWxnuNQxRu"]]},
+ {d:"2026-10-01",t:"13:00",e:"15:00",s:"chest",title:"Chest X-ray interpretation / Occupational lung diseases",by:"อ.พจนี",
+  drill:["chest-21",7,0,8],more:[["อ่าน Chest X-ray ให้ขาด","XE4zBCFjzc3VZbUyWnLefR"]]},
+ {d:"2026-10-01",t:"15:00",e:"16:00",s:"nephro",title:"Fluid electrolytes: Dysnatremia, dyskalemia",by:"อ.ชุมพล",
+  drill:["nephro-22",6,2,22],more:[["Dysnatremia · Dyskalemia","JzyGHWeDiBLvVaMpqBiLyV"],["Approach to Hyponatremia","R5tE7oLQVHXVL5xzuQidhY"],["Approach to Hypernatremia","89V98BpEBHspJNsDSmN43t"]]},
+ {d:"2026-10-02",t:"13:00",e:"15:00",s:"air",title:"Approach to arthritis",by:"อ.กิตติวรรณ",al:1,
+  learn:["air-23",9,32],drill:["air-23",17,2,15],note:"บทเรียนกับข้อสอบรวมอยู่คาบเดียวกับ Acute arthritis (29 ก.ย.)"},
+ {d:"2026-10-05",t:"09:00",e:"10:00",s:"cardio",title:"Atrial fibrillation",by:"อ.อภิชัย",
+  learn:["cardio-24",11,41],drill:["cardio-24",5,0,16],more:[["AF ESC 2024 ข้างเตียง","7xn7YL6HBhRznK9K2jKiEa"],["HAS-BLED & CHA₂DS₂-VASc","5BqR96JYBL9ii2QGEc4EA6"]]},
+ {d:"2026-10-05",t:"10:00",e:"12:00",s:"id",title:"AIDS / HIV infection",by:"อ.มนัสวี",
+  learn:["id-5.10",13,27],drill:["infect-I03",8,2,18],note:"ย้ายมาจาก 9 ต.ค.",more:[["Coccidia & Microsporidia","M5Lr6tWvaQwyKHhq9aqPVq"],["Nocardia ข้างเตียง","6VDwfHMrLofGnPaJc5uqnB"],["ปอดอักเสบในภูมิคุ้มกันบกพร่อง","Anztm2vrfGJ5ipjjUdH6HR"]]},
+ {d:"2026-10-05",t:"13:00",e:"15:00",s:"heme",title:"Bleeding disorder, hemophilia, ITP",by:"อ.ชัชวาล",al:1,
+  drill:["heme-H02",7,1,13,1],more:[["Bleeding Disorder ข้างเตียง","EsnXvNYymsE65e5qhmPpMP"],["Primary & Secondary Hemostasis","LNeJtv3fCWL8J3Wdo8WHPL"],["VWD ข้างเตียง","4rAatByuseWExDNxC3MR2z"]]},
+ {d:"2026-10-06",t:"09:00",e:"10:00",s:"chest",title:"Pulmonary TB / ABG (ต่อ) — Arterial blood gas",by:"อ.ศิวพร",
+  learn:["chest-26",6,19],drill:["chest-26",8,1,10],more:[["ABG ข้างเตียง","99TuNJgzfqZ58zRheYGg7R"]]},
+ {d:"2026-10-06",t:"10:00",e:"11:00",s:"cardio",title:"Rheumatic fever and valvular heart disease",by:"อ.ชนัญญา",
+  learn:["cardio-27",13,47],drill:["cardio-27",6,2,23],more:[["Stenosis Murmur ข้างเตียง","X565KqcoqWxHHe9mKPCENU"],["Regurgitation Murmur ข้างเตียง","E6fFYcMsvMytsjuBhZWS4A"],["Full Heart Examination","WAcnzuQf4vJmu7V7suKqBP"]]},
+ {d:"2026-10-08",t:"14:30",e:"16:00",s:"nephro",title:"Urine analysis, common abdominal pain in nephro",by:"อ.ธนิศร",
+  drill:["nephro-28",5,2,16]},
+ {d:"2026-10-09",t:"16:00",e:"17:30",s:"id",title:"Sexually transmitted diseases",by:"อ.พจน์"},
+ {d:"2026-10-12",t:"10:00",e:"12:00",s:"gi",title:"Acute hepatitis and hepatic failure",by:"อ.เฉลิมรัฐ",
+  learn:["gi-12.10",11,16],drill:["gi-G02",7,3,23,1],more:[["ห่วงโซ่ตับ HBV ถึง Varices","BcBGEAwj1UZxgyTc8VmAcP"]]},
+ {d:"2026-10-12",t:"13:00",e:"15:00",s:"heme",title:"Approach to WBC disorder and lymphadenopathy",by:"อ.เบญจมาภรณ์",al:1,
+  drill:["heme-H03",7,1,13,1],more:[["Lymphoma ข้างเตียง","SgMbR3kdd4sNDkwxRNfCkp"],["Hodgkin Lymphoma ข้างเตียง","G1vUm69fgbm5CY8oFGreoM"],["Neck Mass ข้างเตียง","9qjVQ2eMQs3ZqqAKRgy8RX"]]},
+ {d:"2026-10-14",t:"10:30",e:"12:30",s:"endo",title:"Diabetes mellitus (incl. DKA)",by:"อ.ชัยชาญ",
+  drill:["endo-E01",7,1,20],more:[["DKA & HHS Consensus 2024","9c9ywgmj3RiLoUqMprCYoP"],["อาการและกลไก DKA–HHS","B4hCuvXtVU2WBkPxaYDwaa"]]},
+ {d:"2026-10-15",t:"13:00",e:"14:00",s:"neuro",title:"CNS infection and CSF interpretation",by:"อ.ดำรงวิทย์",
+  learn:["neuro-15.10",9,15],drill:["neuro-N02",16,8,62,1],more:[["Lumbar Puncture ข้างเตียง","8r8jUni9fb6DHaD6rGR3JB"]]},
+ {d:"2026-10-19",t:"13:00",e:"15:00",s:"cardio",title:"Common cardiac arrhythmia and basic EKG",by:"อ.สุรชาติ",al:1,
+  drill:["cardio-36",6,2,15],more:[["No Panic EKG Day 1","WjXbD3jBwVuCqMPrxp6rgU"],["No Panic EKG Day 2","H5xf5XeLT54tDZED3n9Xsh"],["คลื่นไฟฟ้าหัวใจ EKG","71gZvTqfT3Gq5DQJZiokSE"]]},
+ {d:"2026-10-20",t:"10:00",e:"12:00",s:"chest",title:"Pneumonia / Asthma / COPD",by:"อ.เกรียงศักดิ์",al:1,
+  drill:["chest-37",9,4,14],more:[["หอบกำเริบ Asthma vs COPD","Wgu2rvAFTc3hvuoo1ECfBC"],["COPD ทุกชนิด ข้างเตียง","8tZkUgWMrVmZTUb3rU43u1"],["Pneumonia & AECOPD ข้างเตียง","LGLtZBKNC5U8f9A9q4M33f"]]},
+ {d:"2026-10-21",t:"13:00",e:"15:00",s:"neuro",title:"Acute confusional state and alteration of consciousness",by:"อ.เพชรรัตน์",
+  learn:["neuro-21.10",15,30],drill:["neuro-N02",16,8,62,1],more:[["Coma สามทางแยก","M5f4yCLVrJSH1MXu8DxA5G"],["ลมหายใจบอกชั้นสมอง","6FYVFAHusEVnge2sKi5Nc2"]]},
+ {d:"2026-10-21",t:"15:00",e:"16:00",s:"cardio",title:"Shock",by:"อ.เจตวรงค์",al:1,
+  learn:["cardio-10",8,23],drill:["cardio-10",5,1,15],note:"ย้ายมาจาก 22 ก.ย.",more:[["ตารางยาหดหลอดเลือด","T71r7Gyn9Xrf32hevEFbfH"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
+ {d:"2026-10-22",t:"15:00",e:"16:00",s:"nephro",title:"Urethral catheterization",by:"อ.ธนิศร",note:"คาบหัตถการ"},
+ {d:"2026-10-26",t:"13:00",e:"16:00",s:"cardio",title:"Hypertension / Heart failure / Pulmonary edema",by:"อ.วิไล",
+  drill:["cardio-39",6,2,21],more:[["HF Diagnosis ตามกลไก","G7DxSNFLe2p3JaQR4yUsTg"],["HF Management ตามกลไก","GGgq9LQjgfdnfF7wqrQ6pT"],["Acute HF ข้างเตียง","5kc5Q49wwBiiiQEZ3RaMCp"]]},
+ {d:"2026-10-27",t:"13:00",e:"14:00",s:"gi",title:"Approach to abdominal pain",by:"อ.กิตติ",
+  learn:["gi-27.10",11,23],drill:["gi-G03",7,1,15,1]},
+ {d:"2026-10-29",t:"13:00",e:"14:00",s:"gi",title:"Liver function tests",by:"อ.กิตติ",
+  learn:["gi-29.10",8,17],drill:["gi-G02",7,3,23,1],note:"ย้ายมาจาก 6 ต.ค."},
+ {d:"2026-10-30",t:"13:00",e:"15:00",s:"nephro",title:"Acute kidney injury",by:"อ.วรรณิยา",
+  drill:["nephro-42",6,1,20],more:[["AKI สามท่อ","GWfxJG4kLPTxLbrdEB2xNz"],["AKI Player","DRtkqA47o9GxEWE4PAWoNt"]]},
+ {d:"2026-11-02",t:"13:00",e:"16:00",s:"onco",title:"General oncology",by:"อ.ปิยวรรณ",
+  learn:["hemonc-2.11",13,45],drill:["onco-O01",12,2,44],more:[["General Oncology ข้างเตียง","1ZTNsfXzk6C6eXm1DtRdeV"],["Lung Cancer ข้างเตียง","AAmUw4YT4o9Xdf3BAMbsgY"],["Febrile Neutropenia ข้างเตียง","JgZNGWmtDYn9PhKH87RSpZ"]]},
+ {d:"2026-11-03",t:"13:00",e:"15:00",s:"gi",title:"Liver cirrhosis and complications",by:"อ.สยาม",
+  drill:["gi-G02",7,3,23,1],more:[["Cirrhosis ตับวายเรื้อรัง","4WzSNuBss4nkTzahFMXWmu"],["SAAG ข้างเตียง","BsushEbQD2tpGXb83RPwLJ"],["Signs of CLD ข้างเตียง","RMURRtSBTacMRWkCDzZZgM"]]},
+ {d:"2026-11-09",t:"08:00",e:"10:00",s:"heme",title:"Anemia, nutritional deficiency, G6PD, thalassemia",by:"อ.คุณาภา",al:1,
+  drill:["heme-H01",7,2,21],more:[["IDA และเกณฑ์ให้เลือด","JUFqFw8FbgGo6uRAwJNWq5"],["Hemolytic Crisis ใน NTDT","1yV8ywcViQnGM9fqx5Na8a"],["AIHA ข้างเตียง","HkmEGaVF71FkfXGC2z1wTS"]]},
+ {d:"2026-11-11",t:"13:00",e:"15:00",s:"derm",title:"Dermatitis, eczema, urticaria, STDs, leprosy",by:"อ.ภูริชญ์",
+  drill:["derm",14,2,48,1]}
+];
+
+/* นอกตาราง */
+var EXTRAS=[
+ {s:"air",title:"Allergy and clinical immunology",by:"คาบ 08 ของตารางกลุ่ม 3 (C+D)",
+  learn:["air-08",9,25],drill:["air-08",13,3,23],note:"ไม่มีในปฏิทินของกลุ่มเรา แต่มีครบทั้งบทเรียนและข้อสอบ"},
+ {s:"neuro",title:"หัตถการ: Lumbar puncture, ophthalmoscope, Snellen chart",by:"อ.ดำรงวิทย์ · ศ. 9 ต.ค. 13:00",
+  learn:["neuro-9.10",6,10],more:[["Lumbar Puncture ข้างเตียง","8r8jUni9fb6DHaD6rGR3JB"]]},
+ {s:"mock",title:"Mock NL Part 1 — ข้อสอบจำลอง 200 ข้อ แยก 11 สาขา",by:"ชุดจำลอง ศรว. ขั้นตอนที่ 1",
+  drill:["mock",200,0,0]}
+];
+
+/* ---------- เวลา ---------- */
+var TH_M=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+var TH_D=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."];
+var START=Date.UTC(2026,8,14), DAY=864e5;
+function parts(d){var p=d.split("-");return {y:+p[0],m:+p[1],d:+p[2]};}
+function utc(d){var p=parts(d);return Date.UTC(p.y,p.m-1,p.d);}
+function at(d,t){return new Date(d+"T"+t+":00+07:00").getTime();}
+function weekOf(d){return Math.floor((utc(d)-START)/DAY/7)+1;}
+function weekRange(w){
+  var a=new Date(START+(w-1)*7*DAY),b=new Date(START+((w-1)*7+6)*DAY);
+  return a.getUTCDate()+(a.getUTCMonth()===b.getUTCMonth()?"":" "+TH_M[a.getUTCMonth()])+" – "+b.getUTCDate()+" "+TH_M[b.getUTCMonth()];
+}
+function thDate(d){var p=parts(d),wd=new Date(utc(d)).getUTCDay();return TH_D[wd]+" "+p.d+" "+TH_M[p.m-1];}
+function todayBkk(){
+  var n=new Date(Date.now()+7*3600e3);
+  return Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate());
+}
+var NOW=Date.now(), TODAY=todayBkk();
+
+LECS.forEach(function(l,i){
+  l.id=l.d+"-"+l.t.replace(":","");
+  l.start=at(l.d,l.t); l.end=at(l.d,l.e);
+  l.week=weekOf(l.d); l.idx=i;
+});
+var NEXT=null;
+LECS.forEach(function(l){if(!NEXT&&l.end>NOW)NEXT=l;});
+function status(l){
+  if(l.end<=NOW)return {k:"past",t:"เรียนแล้ว"};
+  if(l.start<=NOW)return {k:"today",t:"กำลังบรรยาย"};
+  var days=Math.round((utc(l.d)-TODAY)/DAY);
+  if(days===0)return {k:"today",t:"วันนี้ "+l.t};
+  if(l===NEXT)return {k:"next",t:days===1?"คาบถัดไป · พรุ่งนี้":"คาบถัดไป · อีก "+days+" วัน"};
+  if(days<=7)return {k:"soon",t:"อีก "+days+" วัน"};
+  return {k:"later",t:"อีก "+days+" วัน"};
+}
+
+/* ---------- state ---------- */
+var KEY="med421-lectures-v1";
+var st={view:"date",sys:"",q:"",hide:false,done:{}};
+try{var raw=localStorage.getItem(KEY);if(raw){var sv=JSON.parse(raw);
+  if(sv&&typeof sv==="object"){if(sv.view==="sys")st.view="sys";if(SYS[sv.sys])st.sys=sv.sys;
+    st.hide=!!sv.hide;if(sv.done&&typeof sv.done==="object")st.done=sv.done;}}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({view:st.view,sys:st.sys,hide:st.hide,done:st.done}));}catch(e){}}
+
+/* ---------- html helpers ---------- */
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function link(url,cls,inner,label){return "<a class='"+cls+"' href='"+esc(url)+"' target='_blank' rel='noopener'"+(label?" aria-label='"+esc(label)+"'":"")+">"+inner+"</a>";}
+function learnBtn(l){
+  if(!l.learn)return "<div class='none'>ยังไม่มีบทเรียน Learn</div>";
+  return link(LEARN+"#"+l.learn[0],"go learn","<b>Learn</b><small>"+l.learn[1]+" หัวข้อ · "+l.learn[2]+" ข้อเช็ค</small>","เปิดบทเรียน "+l.title);
+}
+function drillBtn(l){
+  if(!l.drill)return "<div class='none'>ยังไม่มีข้อสอบใน Drill</div>";
+  var x=l.drill,bits=["MCQ "+x[1]];
+  if(x[2])bits.push("MEQ/OSCE "+x[2]);
+  if(x[3])bits.push("เก่า "+x[3]);
+  return link(DRILL+"#"+x[0],"go drill","<b>Drill"+(x[4]?" <span class='tag'>ชุดรวม</span>":"")+"</b><small>"+bits.join(" · ")+"</small>","เปิดข้อสอบ "+l.title);
+}
+function moreLinks(l){
+  if(!l.more||!l.more.length)return "";
+  return "<div class='more'><span>อ่านคู่</span>"+l.more.map(function(m){return link(A(m[1]),"",esc(m[0]));}).join("")+"</div>";
+}
+function rowHtml(l){
+  var S=SYS[l.s],s=status(l),done=!!st.done[l.id],p=parts(l.d);
+  return "<article class='lec s-"+l.s+(s.k==="past"?" past":"")+(l===NEXT?" is-next":"")+"' id='L"+l.id+"'>"+
+    "<div class='date'><span class='dd'>"+p.d+"</span><span class='mm'>"+TH_M[p.m-1]+"</span>"+
+      "<span class='wd'>"+TH_D[new Date(utc(l.d)).getUTCDay()]+" "+l.t+"</span></div>"+
+    "<div class='body'><div class='tags'><span class='sys'><i></i>"+esc(S.label)+"</span>"+
+      (l.al?"<span class='tag al'>Active learning</span>":"")+
+      "<span class='tag st-"+s.k+"'>"+esc(s.t)+"</span></div>"+
+      "<h4>"+esc(l.title)+"</h4>"+
+      "<div class='meta'>"+esc(l.by)+" · <span class='mono'>"+l.t+"–"+l.e+"</span> · "+esc(thDate(l.d))+"</div>"+
+      (l.note?"<div class='note'>"+esc(l.note)+"</div>":"")+moreLinks(l)+"</div>"+
+    "<div class='acts'>"+learnBtn(l)+drillBtn(l)+
+      "<button type='button' class='done' data-done='"+l.id+"' aria-pressed='"+done+"'><span class='bx'>✓</span>"+(done?"ทวนแล้ว":"ทำเครื่องหมายว่าทวนแล้ว")+"</button></div>"+
+  "</article>";
+}
+function extraHtml(x){
+  var S=SYS[x.s]||{label:"Mock NL"};
+  return "<article class='lec s-"+x.s+"'>"+
+    "<div class='date'><span class='dd'>+</span><span class='mm'>นอกตาราง</span></div>"+
+    "<div class='body'><div class='tags'><span class='sys'><i></i>"+esc(S.label)+"</span></div>"+
+      "<h4>"+esc(x.title)+"</h4><div class='meta'>"+esc(x.by)+"</div>"+
+      (x.note?"<div class='note'>"+esc(x.note)+"</div>":"")+moreLinks(x)+"</div>"+
+    "<div class='acts'>"+learnBtn(x)+drillBtn(x)+"</div></article>";
+}
+
+/* ---------- summary ---------- */
+function renderTop(){
+  document.getElementById("kit-learn").href=LEARN;
+  document.getElementById("kit-drill").href=DRILL;
+  document.getElementById("kit-lib").href=LIB;
+  var nx=document.getElementById("next");
+  if(NEXT){
+    var s=status(NEXT),S=SYS[NEXT.s];
+    nx.className="panel next s-"+NEXT.s;
+    nx.innerHTML="<div class='lab'><i></i>"+esc(s.t)+"</div>"+
+      "<h2>"+esc(NEXT.title)+"</h2>"+
+      "<div class='when'>"+esc(thDate(NEXT.d))+" · <span class='mono'>"+NEXT.t+"–"+NEXT.e+"</span> · "+esc(NEXT.by)+" · "+esc(S.label)+"</div>"+
+      "<div class='acts'>"+learnBtn(NEXT)+drillBtn(NEXT)+"</div>"+moreLinks(NEXT);
+  }else{
+    nx.innerHTML="<div class='lab'>ครบทุกคาบแล้ว</div><h2>บรรยายจบรอบแล้ว ทวนต่อจากชุด Drill และ Mock NL</h2>";
+  }
+  var past=LECS.filter(function(l){return l.end<=NOW;}).length;
+  var nl=LECS.filter(function(l){return l.learn;}).length, nd=LECS.filter(function(l){return l.drill;}).length;
+  var done=LECS.filter(function(l){return st.done[l.id];}).length;
+  var ex=Math.round((utc(EXAM)-TODAY)/DAY);
+  document.getElementById("stats").innerHTML=
+    "<div class='stat'><b>"+past+"<small>/"+LECS.length+"</small></b><span>คาบที่เรียนผ่านมาแล้ว</span></div>"+
+    "<div class='stat'><b>"+done+"<small>/"+LECS.length+"</small></b><span>คาบที่ทวนแล้ว (ติ๊กเอง)</span></div>"+
+    "<div class='stat'><b>"+nl+"<small> / "+nd+"</small></b><span>คาบที่มีบทเรียน Learn / มีข้อ Drill (จาก "+LECS.length+" คาบ)</span></div>"+
+    "<div class='stat hl'><b>"+(ex>0?ex:0)+"<small> วัน</small></b><span>ถึงสอบลงกอง 17–18 พ.ย.</span></div>";
+}
+function renderCov(){
+  var html=ORDER.map(function(k){
+    var ls=LECS.filter(function(l){return l.s===k;});
+    if(!ls.length)return "";
+    var nl=ls.filter(function(l){return l.learn;}).length,nd=ls.filter(function(l){return l.drill;}).length;
+    return "<button type='button' class='sysc s-"+k+"' data-sys='"+k+"' aria-pressed='"+(st.sys===k)+"'>"+
+      "<span class='nm'><i></i>"+esc(SYS[k].label)+"</span><span class='th'>"+esc(SYS[k].th)+"</span>"+
+      "<span class='blocks' aria-hidden='true'>"+ls.map(function(l){
+        return "<i class='"+(l.learn?"l":(l.drill?"d":"n"))+"' title='"+esc(l.title)+"'></i>";}).join("")+"</span>"+
+      "<span class='ct'>"+ls.length+" คาบ<br>Learn "+nl+" · Drill "+nd+"</span></button>";
+  }).join("");
+  document.getElementById("cov").innerHTML=html;
+  var f=document.getElementById("filt");
+  if(st.sys){f.className="filt on s-"+st.sys;f.textContent="เฉพาะ "+SYS[st.sys].label+" ✕";}
+  else{f.className="filt";f.textContent="";}
+}
+
+/* ---------- list ---------- */
+function matches(l){
+  if(st.sys&&l.s!==st.sys)return false;
+  if(st.hide&&st.done[l.id])return false;
+  if(st.q){
+    var hay=(l.title+" "+l.by+" "+SYS[l.s].label+" "+SYS[l.s].th+" "+(l.note||"")+" "+
+      (l.more||[]).map(function(m){return m[0];}).join(" ")).toLowerCase();
+    var ok=st.q.toLowerCase().split(/\s+/).every(function(w){return !w||hay.indexOf(w)>=0;});
+    if(!ok)return false;
+  }
+  return true;
+}
+function renderList(){
+  var ls=LECS.filter(matches),h="";
+  var curW=weekOf(new Date(TODAY).toISOString().slice(0,10));
+  if(!ls.length){
+    h="<p class='empty'>ไม่พบคาบที่ตรงกับตัวกรอง ลองล้างคำค้นหรือกดเลือกระบบใหม่</p>";
+  }else if(st.view==="date"){
+    var weeks={};ls.forEach(function(l){(weeks[l.week]=weeks[l.week]||[]).push(l);});
+    Object.keys(weeks).map(Number).sort(function(a,b){return a-b;}).forEach(function(w){
+      h+="<section class='group'><div class='gh'><h3>สัปดาห์ที่ "+w+"</h3><span class='sub'>"+weekRange(w)+" · "+weeks[w].length+" คาบ</span>"+
+        (w===curW?"<span class='now'>สัปดาห์นี้</span>":"")+"</div><div class='list'>"+weeks[w].map(rowHtml).join("")+"</div></section>";
+    });
+  }else{
+    ORDER.forEach(function(k){
+      var g=ls.filter(function(l){return l.s===k;});if(!g.length)return;
+      var S=SYS[k];
+      h+="<section class='group s-"+k+"'><div class='gh'><h3>"+esc(S.label)+"</h3><span class='sub'>"+esc(S.th)+" · "+g.length+" คาบ</span>"+
+        "<span class='glinks'>"+(S.learn?link(LEARN+"#"+S.learn,"","Learn ทั้งชุด"):"")+
+        link(DRILL+"#"+S.drill,"","Drill ทั้งชุด")+link(DRILL+"#mock-"+S.mock,"","Mock NL หมวดนี้")+"</span></div>"+
+        "<div class='list'>"+g.map(rowHtml).join("")+"</div></section>";
+    });
+  }
+  document.getElementById("main").innerHTML=h;
+  document.getElementById("v-date").setAttribute("aria-pressed",String(st.view==="date"));
+  document.getElementById("v-sys").setAttribute("aria-pressed",String(st.view==="sys"));
+  document.getElementById("hide-done").checked=st.hide;
+}
+function render(){renderTop();renderCov();renderList();save();}
+
+document.getElementById("extras").innerHTML=EXTRAS.map(extraHtml).join("");
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  if(b.dataset.view){st.view=b.dataset.view;render();return;}
+  if(b.dataset.sys){st.sys=(st.sys===b.dataset.sys?"":b.dataset.sys);render();
+    document.querySelector(".controls").scrollIntoView({block:"start"});return;}
+  if(b.id==="filt"){st.sys="";render();return;}
+  if(b.dataset.done){var id=b.dataset.done;if(st.done[id])delete st.done[id];else st.done[id]=1;render();return;}
+});
+document.getElementById("q").addEventListener("input",function(e){st.q=e.target.value.trim();renderList();});
+document.getElementById("hide-done").addEventListener("change",function(e){st.hide=e.target.checked;render();});
+render();
+})();
+</script>
