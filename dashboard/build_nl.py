@@ -1,0 +1,156 @@
+# -*- coding: utf-8 -*-
+"""ไล่ว่าบทเรียนทั้งหมด (MED421 learn · Ward Drill · ห้องสมุดท่าอาจารย์) ครอบคลุมเกณฑ์ NL 2567 ข้อไหนแล้ว
+แล้วฝังผลลงแท็บ "ครอบคลุม NL" ของ dashboard/index.html
+
+    python3 dashboard/build_nl.py <learn data dir> <drill bank.json> <library items.json>
+
+- learn data dir   = ไฟล์ data/*.json ของ artifact MED421 learn (รวม nl.json)
+- drill bank.json  = ก้อน <script id="bank"> ของ MED421 Ward Drill
+- library items.json = อาร์เรย์ ITEMS ของห้องสมุดท่าอาจารย์ ({g,t,d,u})
+
+หลักฐานแบ่ง 2 ระดับ
+  เต็ม  = มีบทสอนเรื่องนั้นจริง: ชื่อคาบหรือชื่อหัวข้อใน learn, รหัส nl ที่ผูกระดับหัวข้อ, หรือชื่อบทในห้องสมุด
+  บางส่วน = แตะเรื่องนั้น: คำโปรย/สรุปหัวข้อใน learn, ข้อสอบใน learn/drill (ชื่อข้อหรือรหัส nl)
+           หรือคำบรรยายของบทในห้องสมุด
+"""
+import json, os, re, sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from nl_scope import SCOPE, GROUPS  # noqa: E402
+
+LEARN = "https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE"
+DRILL = "https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X"
+SETS = ["air", "cardio", "chest", "endo", "gi", "hemonc", "id", "nephro", "neuro"]
+SET_NAME = {"air": "AIR", "cardio": "Cardio", "chest": "Chest", "endo": "Endo", "gi": "GI",
+            "hemonc": "Heme/Onc", "id": "ID", "nephro": "Nephro", "neuro": "Neuro"}
+
+
+def slug(x):
+    return re.sub(r"[^A-Za-z0-9._~-]", ".", str(x))
+
+
+def main(learn_dir, bank_path, lib_path):
+    nl = json.load(open(os.path.join(learn_dir, "nl.json"), encoding="utf-8"))
+    pats = {c: [re.compile(p, re.I) for p in ps] for c, ps in SCOPE.items()}
+    missing = [c for c in SCOPE if c not in nl]
+    if missing:
+        sys.exit("รหัสใน nl_scope.py ที่ไม่มีใน nl.json: %s" % missing)
+
+    strong = {c: {} for c in SCOPE}   # code -> {key: (label, url)}
+    weak = {c: {} for c in SCOPE}
+    qcount = {c: 0 for c in SCOPE}
+
+    def hit(text):
+        return [c for c, ps in pats.items() if any(p.search(text) for p in ps)]
+
+    def add(store, codes, key, label, url):
+        for c in codes:
+            if c in store:
+                store[c].setdefault(key, (label, url))
+
+    # ---- MED421 learn
+    for s in SETS:
+        for L in json.load(open(os.path.join(learn_dir, s + ".json"), encoding="utf-8")):
+            url = LEARN + "#" + s + "-" + slug(L["lec"])
+            lname = "Learn · " + SET_NAME[s] + " · " + L["title"]
+            add(strong, hit(L["title"]), "L:" + url, lname, url)
+            add(weak, hit(L.get("subtitle") or ""), "L:" + url, lname, url)
+            for sec in L.get("sections", []):
+                add(strong, hit(sec["title"]), "L:" + url, lname, url)
+                add(weak, hit(sec.get("summary") or ""), "L:" + url, lname, url)
+                add(strong, sec.get("nl") or [], "L:" + url, lname, url)
+                for it in sec.get("items", []):
+                    codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
+                    for c in codes:
+                        qcount[c] += 1
+                    add(weak, codes, "LQ:" + url, lname + " (ข้อเช็ค)", url)
+            for k in ("meq", "osce"):
+                for it in L.get(k, []):
+                    codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
+                    for c in codes:
+                        qcount[c] += 1
+                    add(weak, codes, "LQ:" + url, lname + " (" + k.upper() + ")", url)
+
+    # ---- Ward Drill
+    bank = json.load(open(bank_path, encoding="utf-8"))
+    for s, v in bank.items():
+        if s == "mock":
+            continue
+        for it in v["mcq"] + v["meq"]:
+            url = DRILL + "#" + s + "-" + it["lec"]
+            codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
+            for c in codes:
+                qcount[c] += 1
+            add(weak, codes, "D:" + url, "Drill · " + (it.get("lecture") or s).split(" (")[0], url)
+        for g in v["old"]:
+            url = DRILL + "#" + s + "-" + g["lec"]
+            for it in g["items"]:
+                codes = set(c for c in (it.get("nl") or []) if c in SCOPE)
+                for c in codes:
+                    qcount[c] += 1
+                add(weak, codes, "D:" + url, "Drill · " + (g.get("lecture") or s).split(" (")[0] + " (คลังเก่า)", url)
+
+    # ---- ห้องสมุดท่าอาจารย์
+    lib = json.load(open(lib_path, encoding="utf-8"))
+    for it in lib:
+        add(strong, hit(it["t"]), "B:" + it["u"], "ห้องสมุด · " + it["t"], it["u"])
+        add(weak, hit(it.get("d") or ""), "B:" + it["u"], "ห้องสมุด · " + it["t"], it["u"])
+
+    # ---- บทเรียน artifact อื่นของผู้ใช้ที่ยังไม่อยู่ในห้องสมุด (extra_lessons.tsv: ชื่อ<TAB>artifact id[<TAB>หัวข้อที่แตะ])
+    in_lib = {it["u"].rstrip("/").rsplit("/", 1)[-1] for it in lib}
+    for line in open(os.path.join(HERE, "extra_lessons.tsv"), encoding="utf-8"):
+        if not line.strip():
+            continue
+        parts = line.rstrip("\n").split("\t")
+        title, aid = parts[0], parts[1]
+        if aid in in_lib:
+            continue
+        url = "https://claude.ai/artifact/" + aid
+        label = "บทเรียน · " + re.sub(r"\s*\([^)]*\)\s*$", "", title)
+        add(strong, hit(title), "B:" + url, label, url)
+        if len(parts) > 2:  # คอลัมน์ 3 = หัวข้อที่บทนั้นแตะ (ตรวจจากเนื้อหาจริง)
+            add(weak, hit(parts[2]), "B:" + url, label, url)
+
+    def key(c):
+        return [int(x) if x.isdigit() else x for x in re.split(r"(\d+)", c)]
+
+    rows = []
+    for c in sorted(SCOPE, key=key):
+        e = nl[c]
+        st = 2 if strong[c] else (1 if weak[c] else 0)
+        part = [v for k, v in weak[c].items() if k not in strong[c]]
+        grp = next(g for g, _, pre in GROUPS if c.startswith(pre))
+        rows.append({
+            "c": c, "t": e["title"], "lv": e.get("group") or "", "g": grp, "s": st,
+            "L": [list(v) for v in strong[c].values()][:5],
+            "P": [list(v) for v in part][:4],
+            "q": qcount[c],
+        })
+    out = {"asof": "13 ต.ค. 2569", "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows}
+    path = os.path.join(HERE, "nl_data.json")
+    json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
+    html = os.path.join(HERE, "index.html")
+    page = open(html, encoding="utf-8").read()
+    blob = json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    new, n = re.subn(r'(<script type="application/json" id="nldata">).*?(</script>)',
+                     lambda m: m.group(1) + blob + m.group(2), page, flags=re.S)
+    if n != 1:
+        sys.exit("ไม่พบ <script id=\"nldata\"> ใน index.html")
+    open(html, "w", encoding="utf-8").write(new)
+
+    tot = len(rows)
+    full = sum(r["s"] == 2 for r in rows)
+    part = sum(r["s"] == 1 for r in rows)
+    print("NL ในขอบเขต %d ข้อ · มีบทเรียน %d · บางส่วน %d · ยังไม่มี %d" % (tot, full, part, tot - full - part))
+    for g, n, _ in GROUPS:
+        rs = [r for r in rows if r["g"] == g]
+        print("  %-24s %3d  เต็ม %3d  บางส่วน %3d  ไม่มี %3d" % (n, len(rs), sum(r["s"] == 2 for r in rs),
+                                                               sum(r["s"] == 1 for r in rs), sum(r["s"] == 0 for r in rs)))
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        sys.exit(__doc__)
+    main(*sys.argv[1:])
