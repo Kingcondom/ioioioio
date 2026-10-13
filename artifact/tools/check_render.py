@@ -27,7 +27,7 @@ FIGJS = """() => Array.from(document.querySelectorAll('main .fig svg')).map((s, 
   });
   for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) {
     const a = T[i][1], b = T[j][1], ox = Math.min(a.right, b.right) - Math.max(a.left, b.left), oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
-    if (ox > 3 * sc && oy > 3 * sc) out.push('ข้อความทับ: ' + T[i][0].textContent.trim().slice(0, 18) + ' × ' + T[j][0].textContent.trim().slice(0, 18));
+    if (ox > 3 * sc && oy > 0.4 * Math.min(a.height, b.height)) out.push('ข้อความทับ: ' + T[i][0].textContent.trim().slice(0, 18) + ' × ' + T[j][0].textContent.trim().slice(0, 18));
   }
   return out;
 })"""

@@ -468,4 +468,455 @@ RPGN แบ่งตาม **immunofluorescence** เป็น 3 กลไก
         "**Linear** — แอนติบอดีจับ GBM เองทั้งแผ่น (anti-GBM) · **Granular** — immune complex เป็นก้อน ๆ (PSGN, IgAN, LN, MPGN) · **Pauci-immune** — แทบไม่มี immunoglobulin เพราะความเสียหายมาจาก neutrophil ที่ถูก ANCA กระตุ้น",
         F.ifpat())})
 
-# ═══════════════════════════ END SECTIONS
+# ───────────────────────────── 9
+sec("neph-gn-09", "Podocytopathy — minimal change disease และ FSGS",
+    "MCD: บวมทันที ไม่อักเสบ ตอบ steroid · FSGS: แผลเป็นเป็นหย่อม — ปฐมภูมิ ปรับตัว ไวรัส ยา", 12,
+"""[[fig:fp]]
+
+### Minimal change disease (MCD) — สไลด์
+| ประเด็น | รายละเอียด |
+|---|---|
+| ใครเป็น | **เด็ก > ผู้ใหญ่** (ชาย > หญิง) · **70% ของเนโฟรติกในเด็ก < 10 ปี** · **10–15% ในผู้ใหญ่** · มีสองช่วงอายุ (เด็กเล็กและผู้สูงอายุ) |
+| อาการ | **เริ่มทันที (abrupt)** · โปรตีนรั่วมาก (ลายมือ: *massive*) · albumin **< 3.0 g/dL** · ไขมันสูง · **แทบไม่มีสัญญาณ GN** (ความดันสูง hematuria Cr ขึ้น) |
+| พยาธิ | LM **ปกติ** · IF **ไม่ติดสี** · EM **foot process หลอมรวมทั่วทั้ง glomerulus ไม่มี deposit** |
+
+#### ทำไม MCD ถึงเป็นแบบนี้
+| ลักษณะ | กลไก |
+|---|---|
+| บวมเร็วภายในวัน–สัปดาห์ | podocyte เสียหน้าที่ทันทีทั้งไต (ไม่ต้องรอ deposit สะสม) → albumin รั่วมากทันที |
+| ไม่มี hematuria ไม่มีความดันสูง | **ไม่มีการอักเสบ** และ GBM ไม่ฉีก — เป็นปัญหาของ podocyte ล้วน |
+| LM ปกติแต่ EM ผิดปกติ | foot process แผ่แบนเล็กเกินกว่ากล้องธรรมดาจะเห็น |
+| โปรตีนรั่วเป็น albumin เกือบล้วน (selective) | ตะแกรงเสียแค่ด่าน podocyte โปรตีนก้อนใหญ่ (IgG) ยังถูกกัน |
+| ตอบ steroid ดีมาก | podocyte ไม่ได้ตาย กลับมาเรียงตัวได้ · งานวิจัยใหม่พบ **แอนติบอดีต่อ nephrin** (โปรตีนของ slit diaphragm) ในผู้ป่วย MCD จำนวนมาก (NEJM 2024) และสาเหตุทุติยภูมิหลายตัวเป็นโรคของระบบภูมิคุ้มกัน (Hodgkin, ภูมิแพ้) |
+
+**สาเหตุทุติยภูมิของ MCD (สไลด์ อ้าง Brenner & Rector)** — ติดเชื้อไวรัส (ลายมือ: HBV/HCV/HIV) และปรสิต · **NSAIDs** ☆ · gold, lithium, interferon · ampicillin, rifampin · **Hodgkin** ☆, lymphoma/leukemia, มะเร็งก้อน · **ภูมิแพ้** อาหาร ฝุ่น ผึ้งต่อย เกสร poison ivy · dermatitis herpetiformis · SLE · หลังปลูกถ่ายไขกระดูก
+
+**การรักษา MCD (สไลด์ — KDIGO 2012; KDIGO 2021 คงหลักเดิม)**
+- **Prednisolone 1 mg/kg/วัน (สูงสุด 80 มก.) วันละครั้ง** หรือ **2 mg/kg วันเว้นวัน (สูงสุด 120 มก.)**
+- ขนาดสูงอย่างน้อย **4 สัปดาห์** และนานสุด **16 สัปดาห์** ถ้ายังไม่ complete remission
+- หลัง remission **ค่อย ๆ ลด 5–10 มก./สัปดาห์** รวมระยะเวลาถึง **6 เดือน**
+- กำเริบบ่อยหรือพึ่ง steroid → calcineurin inhibitor, rituximab, cyclophosphamide หรือ MMF (KDIGO 2021)
+
+> เด็กเนโฟรติกแบบฉบับ (อายุ 1–10 ปี ไม่มี hematuria ความดันปกติ C3 ปกติ) ให้ steroid ได้เลยโดยไม่ต้องเจาะไต เพราะเกือบทั้งหมดเป็น MCD — ผู้ใหญ่ต้องหาสาเหตุทุติยภูมิและเจาะไตก่อน
+
+### Focal segmental glomerulosclerosis (FSGS) — สไลด์
+| ประเด็น | รายละเอียด |
+|---|---|
+| อาการ | เริ่มทันทีหรือค่อยเป็น · โปรตีน 1–2 ถึง > 10 g/วัน · **nephrotic 60–75%** · **ความดันสูง 45–65%** · micro hematuria 30–50% · ไตเสื่อม 25–50% (ลายมือ: *Nephro–Nephri* — มาได้ทั้งสองแบบ) |
+| พยาธิ | LM **segmental sclerosis** (ชนิด NOS พบบ่อยสุด) · IF ปกติ หรือ IgM, C1q, C3 เฉพาะตรงแผลเป็น · EM foot process effacement มากน้อยตามชนิด |
+
+| ชนิด | กลไก | ตัวอย่าง (สไลด์) |
+|---|---|---|
+| ปฐมภูมิ | สารในเลือดที่ทำร้าย podocyte ทั่วไต → effacement ทั่ว · nephrotic เต็มรูปแบบ | — |
+| **ไวรัส** | ไวรัสทำให้ podocyte แบ่งตัวผิดปกติ → **collapsing** FSGS | **HIV**, CMV, parvovirus B19 |
+| **ยา** | พิษต่อ podocyte | **pamidronate**, interferon, **anabolic steroid** · เฮโรอีน |
+| **ปรับตัว (adaptive)** | nephron ที่เหลือต้อง **กรองหนัก (hyperfiltration)** → glomerulus โต podocyte ถูกยืดจนคลุมไม่พอ หลุดลอก → แผลเป็น | **อ้วนมาก** · sickle cell · หัวใจพิการแต่กำเนิดชนิดเขียว · โรคปอดที่ขาดออกซิเจน · ไตข้างเดียว · oligomeganephronia · reflux nephropathy · หลัง cortical necrosis · หลังตัดไต |
+
+[[fig:fsgs]]
+
+#### ทำไม FSGS ถึงมีความดันสูงและ hematuria มากกว่า MCD
+แผลเป็นทำให้ nephron หายไปจริง GFR จึงลดและไตเก็บโซเดียม · FSGS แบบปรับตัวมัก **โปรตีนรั่วไม่ถึงขั้นเนโฟรติกและ albumin ปกติ** เพราะ podocyte เสียเป็นหย่อม ๆ — ต่างจาก MCD ที่เสียทั่วไตพร้อมกัน · **collapsing FSGS จาก HIV** ไตจะ **ใหญ่และสว่าง** บนอัลตราซาวนด์แม้ไตวายมาก
+
+**รักษา**: ชนิดปรับตัว → ACEi/ARB ลดแรงดันใน glomerulus + ลดน้ำหนัก **ไม่ให้ steroid** · ชนิดปฐมภูมิ → steroid ขนาดสูง ถ้าไม่ตอบใช้ CNI · ชนิดไวรัส → รักษาไวรัส (ART ใน HIV) (KDIGO 2021 — สไลด์ไม่ได้ระบุ)
+""",
+    ["MCD: เด็ก < 10 ปี 70% · บวมทันที · LM ปกติ IF ลบ EM foot process หลอมรวม · ไม่มี GN signs",
+     "MCD secondary: NSAIDs · Hodgkin · ภูมิแพ้ · ไวรัส · lithium/gold/interferon",
+     "Pred 1 mg/kg/วัน (max 80) หรือ 2 mg/kg วันเว้นวัน (max 120) · 4–16 สัปดาห์ · ลด 5–10 มก./สัปดาห์ รวม 6 เดือน",
+     "FSGS: nephrotic 60–75% · HT 45–65% · secondary = HIV/CMV/parvo · pamidronate/anabolic · อ้วน/nephron น้อย",
+     "FSGS ปรับตัว = hyperfiltration → ACEi/ARB + ลดน้ำหนัก ไม่ใช่ steroid · HIV collapsing ไตใหญ่สว่าง"],
+    [mcq(N(16), "A 38-year-old man with BMI 46 kg/m² has urine protein 2.6 g/day, serum albumin 3.9 g/dL, no edema and creatinine 1.3 mg/dL. Biopsy shows perihilar segmental sclerosis with enlarged glomeruli and only segmental foot-process effacement. What is the best management?",
+         ["High-dose prednisolone for 16 weeks", "Cyclophosphamide with steroids", "RAS blockade and weight reduction", "Plasma exchange", "Rituximab"], 2,
+         "ภาพนี้คือ **FSGS แบบปรับตัว (adaptive)** จากอ้วนมาก — nephron ทำงานหนักเกิน (hyperfiltration) glomerulus โต podocyte หลุดเป็นหย่อม โปรตีนรั่วไม่ถึงขั้น nephrotic และ **albumin ปกติ** ซึ่งต่างจาก FSGS ปฐมภูมิ การรักษาคือ **ลดแรงดันใน glomerulus ด้วย ACEi/ARB และลดน้ำหนัก**\n\n- **Steroid, cyclophosphamide, rituximab** ใช้กับโรคที่มีภูมิคุ้มกันเป็นตัวขับ ไม่ช่วยและเพิ่มผลเสียในชนิดปรับตัว\n- **Plasma exchange** ใช้ใน anti-GBM หรือ FSGS ที่กลับเป็นซ้ำหลังปลูกถ่ายไต",
+         "FSGS + อ้วน + albumin ปกติ + effacement เป็นหย่อม = adaptive → ACEi/ARB + ลดน้ำหนัก", "FSGS", R("FSGS secondary causes: reduced nephron numbers, morbid obesity"), [NS, "B9.2.2(4)"]),
+     mcq(N(17), "A 70-kg 30-year-old man has biopsy-proven minimal change disease. According to the dosing in the lecture (KDIGO), which initial regimen is correct?",
+         ["Prednisolone 35 mg daily for 2 weeks then stop", "Prednisolone 70 mg daily for at least 4 weeks (up to 16 weeks if not in complete remission), then taper", "Prednisolone 140 mg daily for 4 weeks", "Prednisolone 80 mg on alternate days for 6 months without taper", "Methylprednisolone 1 g IV daily for 3 days only"], 1,
+         "สไลด์ (KDIGO): **prednisolone 1 mg/kg/วัน สูงสุด 80 มก.** → 70 กก. = **70 มก./วัน** (หรือ 2 mg/kg วันเว้นวัน สูงสุด 120 มก.) ให้ขนาดสูง **อย่างน้อย 4 สัปดาห์** ถ้ายังไม่ complete remission ให้ต่อได้ถึง **16 สัปดาห์** แล้ว **ลด 5–10 มก./สัปดาห์** รวมถึง 6 เดือนหลัง remission\n\n- 35 มก. 2 สัปดาห์ ขนาดและเวลาไม่พอ เสี่ยงกำเริบ\n- 140 มก./วัน เกินขนาดสูงสุด\n- 80 มก. วันเว้นวัน ต่ำกว่า 2 mg/kg และหยุดทันทีไม่ได้\n- pulse methylprednisolone ใช้กับ RPGN ไม่ใช่ MCD",
+         "MCD: 1 mg/kg/วัน (max 80) ≥ 4 สัปดาห์ ถึง 16 สัปดาห์ → ลด 5–10 มก./สัปดาห์", "MCD treatment", R("MCD treatment — KDIGO 2012"), [NS])],
+    [NS, "B9.2.2(4)"],
+    {"fp": fig("Podocyte ปกติ เทียบกับ foot process effacement",
+        "ปกติ foot process ของ podocyte เรียงสลับเป็นซี่ ระหว่างซี่มี **slit diaphragm** กัน albumin ไว้ · ใน **MCD และ FSGS** foot process แผ่แบนรวมเป็นแผ่นเดียว slit diaphragm หาย albumin จึงรั่วออกมาก — มองไม่เห็นใน LM ต้องใช้ **EM**",
+        F.fp()),
+     "fsgs": fig("FSGS แบบปรับตัว — วงจรที่เร่งตัวเอง",
+        "เมื่อ nephron เหลือน้อย ที่เหลือต้องกรองหนักจน glomerulus โต podocyte ซึ่งแบ่งตัวไม่ได้ถูกยืดจนคลุมไม่พอและหลุดลอก เกิดแผลเป็นเป็นหย่อม (segmental sclerosis) nephron จึงตายเพิ่ม — **ACEi/ARB** ตัดวงจรโดยลดแรงดันใน glomerulus (กลไกเดียวกับ hyperfiltration ระยะแรกของเบาหวาน)",
+        F.fsgs())})
+
+# ───────────────────────────── 10
+sec("neph-gn-10", "Membranous nephropathy — nephrotic ของผู้ใหญ่ ที่ต้องคิดถึงมะเร็งและลิ่มเลือด",
+    "anti-PLA2R · subepithelial deposit · spike · rule of thirds · RVT · หาสาเหตุทุติยภูมิ · รักษาตามความเสี่ยง", 11,
+"""### ลักษณะทางคลินิก (สไลด์)
+| ประเด็น | รายละเอียด |
+|---|---|
+| ใครเป็น | ผู้ใหญ่ **> 40 ปี** (30–50) · **ชาย : หญิง = 2–3 : 1** |
+| อาการ | **> 80% โปรตีน > 3 g/วัน** · **ค่อยเป็นค่อยไปเกือบทุกราย** · **ตะกอนใส** · micro hematuria 30–40% · ความดันสูง 15–55% · ไตปกติหรือลดเล็กน้อย · albumin ต่ำ LDL/VLDL สูง |
+| ภาวะแทรกซ้อน | **thromboembolism — RVT, PE, DVT** · **ความเสี่ยงมะเร็งเพิ่มตามอายุ** |
+| การดำเนินโรค | **หายเอง 30% · คงที่ 30% · แย่ลง 30%** (rule of thirds) |
+| พยาธิ | LM **GBM หนาทั่ว** + **spike** · IF **granular IgG + C3 ตามผนังหลอดเลือด** · EM **subepithelial electron-dense deposit** |
+
+### กลไก — ทำไม MN ถึงรั่วมากแต่ตะกอนใส
+[[fig:mnspike]]
+
+ใน MN ปฐมภูมิ แอนติบอดี (ส่วนใหญ่ **anti-PLA2R** ราว 70–80% · ส่วนน้อย THSD7A) จับกับแอนติเจนที่อยู่บนผิว **podocyte** โดยตรง immune complex จึง **ก่อตัวตรงนั้น (in situ)** ใต้ podocyte → complement ถูกกระตุ้นจนเกิด **membrane attack complex (C5b-9)** เจาะ podocyte → โปรตีนรั่ว — แต่ทุกอย่างอยู่ **นอก GBM ด้านปัสสาวะ** neutrophil ในเลือดเข้าไม่ถึง จึง **ไม่มีการอักเสบ ตะกอนใส** และ GBM ตอบสนองโดยงอกแทรกระหว่างก้อน (spike) จนคลุมหนาทั้งแผ่น
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **ค่อยเป็นค่อยไป** (ต่างจาก MCD) | deposit ต้องสะสมใต้ podocyte ทีละน้อยก่อนความเสียหายจะมากพอ |
+| **ลิ่มเลือดบ่อยที่สุดในบรรดา nephrotic** — RVT | โปรตีนรั่วมากและนาน + antithrombin III รั่ว + fibrinogen สูง · albumin < 2.5 g/dL เสี่ยงสูงขึ้นชัด · **RVT**: ปวดสีข้างเฉียบพลัน hematuria โปรตีนเพิ่ม Cr ขึ้น varicocele ซ้าย · หลุดไปปอดเป็น PE |
+| **สัมพันธ์กับมะเร็ง** | แอนติเจนจากก้อนมะเร็งกลายเป็นเป้าของ immune complex (ทุติยภูมิ) — anti-PLA2R มักลบ |
+
+### MN ทุติยภูมิ — ต้องหาเสมอ (สไลด์)
+| กลุ่ม | ตัวอย่าง |
+|---|---|
+| ติดเชื้อ | **HBV**, HCV, HIV, ปรสิต (filariasis, schistosomiasis, malaria), เรื้อน, **ซิฟิลิส** |
+| มะเร็ง | ก้อน — **ปอด 26%** · ต่อมลูกหมาก 15% · โลหิตวิทยา 14% · **ลำไส้ใหญ่ 11%** · melanoma ฯลฯ |
+| ภูมิต้านตนเอง | **SLE (class V)** · thyroiditis · RA · Sjögren · IgG4 disease |
+| ยา/สารพิษ | **NSAIDs/COX-2** · gold · penicillamine · **captopril** · anti-TNF · ปรอท · lithium · มลพิษอากาศ |
+
+**ชุดตรวจหาสาเหตุ (ตาราง KDIGO 2021 ในสไลด์เป็นภาพ — สรุปจากแนวทาง)**: **anti-PLA2R** · HBsAg, anti-HCV, anti-HIV, VDRL · ANA, anti-dsDNA, C3/C4 · ประวัติยา · คัดกรองมะเร็งตามอายุและเพศ (CXR หรือ CT ทรวงอก · ส่องกล้องลำไส้ · แมมโมแกรม · PSA) — ถ้า **anti-PLA2R บวก** และภาพเข้ากับ MN ปฐมภูมิ KDIGO 2021 ระบุว่าวินิจฉัยได้โดย **ไม่ต้องเจาะไต**
+
+### การรักษา (อัลกอริทึมในสไลด์เป็นภาพ — สรุปจาก KDIGO 2021)
+| ความเสี่ยงที่ไตจะเสื่อม | ลักษณะ (ย่อ) | การรักษา |
+|---|---|---|
+| ต่ำ | eGFR ปกติ · โปรตีน < 3.5 g/วัน · albumin > 3 g/dL | **supportive** — ACEi/ARB คุมความดัน รอ remission เอง |
+| ปานกลาง | eGFR ปกติ · โปรตีน > 4 g/วัน และไม่ลดลง > 50% หลัง supportive 6 เดือน | **rituximab** หรือ calcineurin inhibitor |
+| สูง | eGFR < 60 และ/หรือ โปรตีน > 8 g/วัน นานกว่า 6 เดือน · หรือ anti-PLA2R สูงมาก albumin ต่ำมาก | **rituximab** หรือ **cyclophosphamide + steroid** |
+| สูงมาก | nephrotic รุนแรงคุกคามชีวิต · ไตเสื่อมเร็วโดยไม่มีสาเหตุอื่น | **cyclophosphamide + steroid** |
+**Anticoagulant ป้องกัน**: เมื่อ albumin ต่ำมาก (< 2–2.5 g/dL) ร่วมกับปัจจัยเสี่ยงอื่น และเลือดออกง่ายต่ำ
+""",
+    ["MN: ผู้ใหญ่ > 40 ปี ชาย 2–3 : 1 · > 80% โปรตีน > 3 g · ค่อยเป็น · ตะกอนใส",
+     "Anti-PLA2R ~70–80% ของ MN ปฐมภูมิ — complex ก่อตัวใต้ podocyte → C5b-9 → รั่วแต่ไม่อักเสบ",
+     "LM GBM หนา + spike · IF granular IgG/C3 · EM subepithelial deposit",
+     "Rule of thirds: หายเอง 30% · คงที่ 30% · แย่ลง 30% · เสี่ยง RVT สูงสุด",
+     "หาสาเหตุทุติยภูมิ: HBV · มะเร็ง (ปอด ลำไส้) · SLE class V · NSAIDs/captopril"],
+    [mcq(N(18), "A 56-year-old man with membranous nephropathy (albumin 1.7 g/dL, urine protein 11 g/day) suddenly develops left flank pain, gross hematuria and a new left-sided varicocele; creatinine rises from 1.0 to 1.7 mg/dL. Which complication is most likely?",
+         ["Nephrolithiasis with obstruction", "Renal vein thrombosis", "Acute pyelonephritis", "Transformation to crescentic glomerulonephritis", "Testicular torsion"], 1,
+         "**Renal vein thrombosis** — MN เป็น nephrotic ที่เสี่ยงลิ่มเลือดสูงสุด (albumin < 2 g/dL เสี่ยงยิ่งขึ้น) RVT ข้างซ้ายทำให้ **varicocele ซ้าย** เพราะหลอดเลือดดำอัณฑะซ้ายเทเข้า renal vein ซ้าย ร่วมกับปวดสีข้าง hematuria และไตแย่ลง → ยืนยันด้วย Doppler US หรือ CT venography แล้วให้ anticoagulant\n\n- นิ่วไม่อธิบาย varicocele\n- pyelonephritis ต้องมีไข้ ปัสสาวะแสบขัด\n- crescentic GN ไม่ทำให้ปวดสีข้างเฉียบพลันและ varicocele\n- testicular torsion ปวดอัณฑะเฉียบพลัน ไม่ใช่ varicocele + hematuria",
+         "MN + ปวดสีข้าง + hematuria + varicocele ซ้าย = RVT", "MN complications", R("MN: thromboembolic manifestation (RVT, PE, DVT)"), [NS, "2.3.9(2)"]),
+     mcq(N(19), "A 47-year-old woman has nephrotic syndrome with normal eGFR, bland sediment and a strongly positive serum anti-PLA2R antibody. HBV, HCV, HIV, ANA and age-appropriate cancer screening are negative. According to KDIGO 2021, what is the status of kidney biopsy?",
+         ["Biopsy is mandatory before any treatment", "Biopsy is not required to diagnose primary membranous nephropathy in this setting", "Biopsy is contraindicated in all nephrotic patients", "Biopsy should be replaced by anti-GBM testing", "Biopsy is required only if C3 is low"], 1,
+         "KDIGO 2021: ผู้ป่วยเนโฟรติกที่ **anti-PLA2R บวก** และภาพทางคลินิกเข้ากับ MN ปฐมภูมิ (ตรวจหาสาเหตุทุติยภูมิแล้วไม่พบ) **วินิจฉัย MN ได้โดยไม่ต้องเจาะไต** — แต่ถ้า eGFR ลดหรือภาพไม่ตรงยังควรเจาะเพื่อหาโรคร่วม\n\n- ไม่ได้ห้ามเจาะไตในเนโฟรติกทุกราย\n- anti-GBM ไม่เกี่ยวกับ MN\n- C3 ต่ำชี้ไปทาง LN/MPGN ไม่ใช่เงื่อนไขของ MN",
+         "anti-PLA2R บวก + ภาพเข้ากับ MN ปฐมภูมิ → วินิจฉัยได้โดยไม่ต้องเจาะไต (KDIGO 2021)", "MN diagnosis", ["KDIGO 2021 Glomerular Diseases — ตาราง/อัลกอริทึม MN ในสไลด์เป็นภาพ"], [NS, "B1.6.1(1)"])],
+    [NS, "B9.2.2(4)", "2.3.9(2)"],
+    {"mnspike": fig("Membranous nephropathy — จาก immune complex ใต้ podocyte ถึง GBM หนา",
+        "① แอนติบอดี (anti-PLA2R) จับแอนติเจนบน podocyte → immune complex ก่อตัวใต้ podocyte · ② GBM งอกแทรกระหว่างก้อน เห็นเป็น **spike** ใน silver stain · ③ GBM คลุมก้อนจนหนาทั้งแผ่น — ทุกอย่างอยู่ **นอก GBM ด้านปัสสาวะ** จึงรั่วมากแต่ไม่อักเสบ",
+        F.mnspike())})
+
+# ───────────────────────────── 11
+sec("neph-gn-11", "IgA nephropathy — เลือดออกตามหลังเจ็บคอใน 1–2 วัน",
+    "Gd-IgA1 4 ขั้น · synpharyngitic hematuria · C3 ปกติ · mesangial IgA · รักษาด้วย ACEi/ARB", 10,
+"""### ลักษณะทางคลินิก (สไลด์)
+| แบบที่มา | สัดส่วน |
+|---|---|
+| **ปัสสาวะเป็นเลือดเห็นด้วยตาเป็นพัก ๆ หลังติดเชื้อเยื่อบุ** (synpharyngitic) | **40–50%** |
+| micro hematuria ± proteinuria (เจอจากตรวจสุขภาพ) | 30–40% |
+| Nephrotic syndrome | 5% |
+| RPGN | < 10% |
+
+**โรคที่พบร่วม (สไลด์)**: ankylosing spondylitis · RA · Reiter · uveitis · **celiac** · **โรคตับจากแอลกอฮอล์/ตับแข็ง** · schistosomiasis ตับ · sarcoid · dermatitis herpetiformis · **HIV, HBV** (ถิ่นระบาด)
+**พยาธิ**: LM **mesangial expansion และ hypercellularity** · IF **mesangial IgA** · EM **mesangial deposit**
+
+### กลไก 4 ขั้น — ทำไมเลือดออกเร็วหลังเจ็บคอ
+[[fig:igan]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **เลือดออกภายใน 1–2 วัน หลังเจ็บคอ/ท้องเสีย** | เยื่อบุที่ติดเชื้อสร้าง **IgA1 ชนิดขาด galactose** เพิ่มขึ้น **ทันที** → immune complex ที่มีอยู่แล้วเพิ่มและไปติด mesangium — ไม่ต้องรอสร้างแอนติบอดีใหม่ |
+| **Hematuria เด่น โปรตีนไม่มาก** | deposit อยู่ที่ **mesangium** → mesangial cell แบ่งตัว ทำให้ผนังหลอดเลือดฝอยรอบ ๆ เปราะและฉีกเป็นจุด ๆ ส่วน podocyte ยังดี |
+| **C3 ในเลือดปกติ** | complement ถูกกระตุ้นเฉพาะที่ใน glomerulus (alternative/lectin pathway) ไม่ได้ถูกใช้หมดทั้งร่างกาย — ใช้แยกจาก PSGN และ LN |
+| สัมพันธ์กับโรคตับ ลำไส้ | ตับเป็นที่กำจัด IgA complex (ตับแข็งกำจัดไม่ได้) · โรคลำไส้กระตุ้นการสร้าง IgA ที่เยื่อบุ |
+
+### การรักษา
+**สไลด์ (KDIGO 2012)**
+- **ACEi หรือ ARB ระยะยาว** เมื่อโปรตีน **> 1 g/วัน** ปรับขนาดขึ้นตามความดัน (1B) — ไต่ขนาดให้โปรตีน **< 1 g/วัน** (2C)
+- **Fish oil** เมื่อโปรตีนยัง > 1 g/วัน หลัง supportive ดีที่สุด 3–6 เดือน (2D)
+- **Corticosteroid 6 เดือน** เมื่อโปรตีนยัง > 1 g/วัน หลัง supportive 3–6 เดือน **และ GFR > 50** (2C)
+
+**แนวทางปัจจุบัน — KDIGO 2025 (ไม่ได้อยู่ในสไลด์)**: เป้าหมายโปรตีน **< 0.5 g/วัน (ดีที่สุด < 0.3)** · supportive: RAS blockade ขนาดสูงสุดที่ทนได้ หรือ **sparsentan** + **SGLT2 inhibitor** + คุมความดัน · ยาลดการสร้าง Gd-IgA1: **budesonide ชนิดออกฤทธิ์ที่ลำไส้ (targeted-release)** หรือ steroid ระบบในผู้ที่เสี่ยงสูง
+""",
+    ["IgAN: macroscopic hematuria หลังติดเชื้อเยื่อบุ 40–50% · micro ± protein 30–40% · nephrotic 5% · RPGN < 10%",
+     "Synpharyngitic = เลือดออก 1–2 วันหลังเจ็บคอ (PSGN ต้องรอ 2–4 สัปดาห์)",
+     "Gd-IgA1 → anti-glycan IgG → immune complex → mesangium · C3 ปกติ",
+     "พยาธิ: mesangial hypercellularity + mesangial IgA",
+     "KDIGO 2012 (สไลด์): ACEi/ARB ถ้า > 1 g ให้ < 1 g · steroid 6 เดือนถ้ายัง > 1 g และ GFR > 50 · KDIGO 2025 เป้า < 0.5 g"],
+    [mcq(N(20), "Which sequence best describes the pathogenesis of IgA nephropathy?",
+         ["Anti-PLA2R antibodies bind podocytes and form subepithelial immune complexes", "Galactose-deficient IgA1 is recognized by IgG autoantibodies, forming immune complexes that deposit in the mesangium", "Streptococcal antigens planted in the glomerulus bind antibody 2–4 weeks after infection", "Autoantibodies against type IV collagen bind the GBM in a linear pattern", "ANCA-activated neutrophils cause pauci-immune necrotizing lesions"], 1,
+         "IgAN เกิดจาก 4 ขั้น: ① **IgA1 ขาด galactose (Gd-IgA1)** จากเยื่อบุ ② ร่างกายสร้าง **IgG ต่อต้าน Gd-IgA1** ③ รวมเป็น **immune complex** ในเลือด ④ ไปติดที่ **mesangium** → mesangial cell แบ่งตัวและ complement ถูกกระตุ้นเฉพาะที่\n\n- **anti-PLA2R** = membranous nephropathy\n- **แอนติเจน strep** = PSGN\n- **anti-type IV collagen** = anti-GBM\n- **ANCA** = pauci-immune vasculitis",
+         "IgAN = Gd-IgA1 + anti-glycan IgG → mesangial deposit", "IgAN", ["หลักพยาธิกำเนิด (KDIGO 2025) — สไลด์แสดง LM/IF/EM"], [AGN])],
+    [AGN, "2.1.43"],
+    {"igan": fig("IgA nephropathy เกิดเป็น 4 ขั้น",
+        "เยื่อบุสร้าง **IgA1 ที่ขาด galactose** → ร่างกายมองเป็นสิ่งแปลกปลอมและสร้าง **IgG** มาจับ → เป็น **immune complex** → ไปติดที่ **mesangium** เมื่อติดเชื้อทางเดินหายใจ เยื่อบุสร้าง IgA1 เพิ่มทันที เลือดในปัสสาวะจึงตามมาใน 1–2 วัน",
+        F.igan())})
+
+# ───────────────────────────── 12
+sec("neph-gn-12", "Post-streptococcal GN — nephritic ต้นแบบ",
+    "latency 2–4 / 4–6 สัปดาห์ · C3 ต่ำ C4 ปกติ กลับใน 8–10 สัปดาห์ · hump · รักษาประคับประคอง", 11,
+"""### ลักษณะทางคลินิก (สไลด์)
+| ประเด็น | รายละเอียด |
+|---|---|
+| การเริ่ม | acute nephritic มัก **< 2 สัปดาห์** · **4–6 สัปดาห์หลังติดเชื้อผิวหนัง** · **2–4 สัปดาห์หลังคออักเสบ** |
+| อาการ | **gross hematuria** (microscopic 100%) · **ความดันสูง 60–80%** · **บวม/volume เกิน (หัวใจล้มเหลว) 80–90%** · oliguria 10–58% · nephrotic range ได้ราว 20% |
+| Complement | **ต่ำ 90%** · **C3 และ CH50 ลดลงภายใน 2 สัปดาห์** · **C4 มักปกติ** · **กลับปกติใน 8–10 สัปดาห์** |
+| แอนติบอดี | **ASO 30%** · **anti-DNase B 70%** |
+| พยาธิ | LM **exudative / endocapillary proliferative GN มี neutrophil** · IF **coarse granular IgG + C3** · EM **subepithelial hump** |
+
+[[fig:psgn]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **อาการไตตามหลังติดเชื้อหลายสัปดาห์** (latency) | ต้องรอให้ร่างกาย **สร้างแอนติบอดี** ต่อแอนติเจนของ strep ที่ไปฝังใน glomerulus ก่อน — ต่างจาก IgAN ที่เลือดออกใน 1–2 วัน |
+| **C3 ต่ำ C4 ปกติ** | complement ถูกกระตุ้นทาง **alternative pathway** (ไม่ผ่าน C4) และถูกใช้มากจนระดับในเลือดลด |
+| **ปัสสาวะสีโค้ก + RBC cast** | neutrophil และการแบ่งตัวของเซลล์ทำให้ GBM ฉีก |
+| **ความดันสูง ปวดศีรษะ บวมหน้า หอบ** | GFR ลดจากหลอดเลือดฝอยถูกอุด แต่ท่อไตยังดูดโซเดียม → **volume เกิน (overfill)** renin ต่ำ — ความดันอาจสูงจน **hypertensive encephalopathy** |
+| **ASO บวกน้อยหลังติดเชื้อผิวหนัง** | streptolysin O ถูกไขมันในผิวหนังจับไว้ภูมิจึงไม่ค่อยขึ้น → ใช้ **anti-DNase B** ซึ่งไวกว่า |
+
+[[fig:timeline]]
+
+### การรักษา (สไลด์ — KDIGO 2012)
+- **Antibiotic** (penicillin หรือ erythromycin) — **กำจัด strep และกันการแพร่** ไปยังคนใกล้ชิด แต่ **ช่วยย้อน GN ได้น้อย** เพราะ immune complex ฝังในไตแล้ว
+- **Pulse IV methylprednisolone** เฉพาะรายที่เป็น RPGN (อนุมานจาก crescentic GN อื่น — **ไม่มี RCT**)
+- ส่วนหลักคือ **ประคับประคอง** (แนวทางทั่วไป): **จำกัดเกลือและน้ำ** · **loop diuretic** · ยาลดความดัน · ฟอกไตถ้าน้ำเกิน/K สูง/ยูรีเมียรุนแรง
+
+### เมื่อไรต้องสงสัยว่าไม่ใช่ PSGN — ควรเจาะไต
+**C3 ยังต่ำเกิน 8–10 สัปดาห์** (นึกถึง C3 glomerulopathy, MPGN, LN) · ไตเสื่อมเร็วแบบ RPGN · โปรตีนรั่วระดับ nephrotic นาน · ไม่มีหลักฐานติดเชื้อ strep · ผู้ใหญ่ที่มีโรคร่วม — ผู้ใหญ่พยากรณ์โรคแย่กว่าเด็ก
+""",
+    ["PSGN: 2–4 สัปดาห์หลังคอ · 4–6 สัปดาห์หลังผิวหนัง · gross hematuria · HT 60–80% · บวม 80–90%",
+     "C3 + CH50 ต่ำใน 2 สัปดาห์ (90%) · C4 ปกติ · กลับปกติใน 8–10 สัปดาห์ — ถ้ายังต่ำ ต้องเจาะไต",
+     "ASO 30% · anti-DNase B 70% (ไวกว่าหลังติดเชื้อผิวหนัง)",
+     "พยาธิ: exudative GN มี neutrophil · IF coarse granular IgG/C3 · EM subepithelial hump",
+     "รักษา: ประคับประคอง (เกลือ/น้ำ, loop, ลดความดัน) · ATB กำจัดเชื้อแต่ไม่ย้อน GN"],
+    [mcq(N(21), "A 12-year-old boy with post-impetigo acute nephritic syndrome had low C3 at presentation. At 12 weeks, his blood pressure has normalized but C3 remains low and microscopic hematuria persists. What is the most appropriate next step?",
+         ["Reassure; low C3 can persist for 1 year in PSGN", "Repeat ASO titer and treat with penicillin again", "Kidney biopsy to look for C3 glomerulopathy, MPGN or lupus nephritis", "Start high-dose prednisolone empirically", "Tonsillectomy"], 2,
+         "สไลด์: C3 ใน PSGN **กลับปกติภายใน 8–10 สัปดาห์** — **ยังต่ำที่ 12 สัปดาห์** ทำให้ต้องสงสัยโรคที่ complement ถูกกระตุ้นต่อเนื่อง เช่น **C3 glomerulopathy, MPGN หรือ LN** จึงควร **เจาะไต**\n\n- การรอถึง 1 ปีไม่ถูกต้องตามธรรมชาติของ PSGN\n- ATB ซ้ำไม่แก้ C3 ต่ำ\n- ให้ steroid โดยไม่มีพยาธิวินิจฉัยไม่เหมาะ\n- ตัดต่อมทอนซิลไม่ใช่การรักษา PSGN",
+         "C3 ต่ำเกิน 8–10 สัปดาห์ = ไม่ใช่ PSGN ธรรมดา → เจาะไต", "PSGN", R("PSGN: complement level usually normal within 8–10 weeks"), [AGN, "B9.2.2(3)"]),
+     mcq(N(22), "A 7-year-old girl develops cola-colored urine and hypertension 5 weeks after impetigo. Which serologic test is most likely to document the preceding streptococcal infection?",
+         ["Antistreptolysin O (ASO)", "Anti-DNase B", "Anti-dsDNA", "Anti-PLA2R", "Rheumatoid factor"], 1,
+         "สไลด์: **ASO บวกเพียง 30%** แต่ **anti-DNase B บวก 70%** — หลัง **ติดเชื้อผิวหนัง** ASO ขึ้นน้อยเป็นพิเศษ (streptolysin O ถูกไขมันในผิวหนังจับไว้) anti-DNase B จึงเป็นตัวที่ดีกว่า\n\n- anti-dsDNA ใช้กับ SLE\n- anti-PLA2R ใช้กับ MN\n- RF ไม่จำเพาะ",
+         "หลัง impetigo ใช้ anti-DNase B (70%) ดีกว่า ASO (30%)", "PSGN", R("PSGN: ASO 30%, anti-DNase B 70%"), [AGN, "B9.2.2(3)"])],
+    [AGN, "B9.2.2(3)", "2.1.43"],
+    {"psgn": fig("PSGN — จาก strep ถึงอาการสามกลุ่ม",
+        "แอนติเจนของ strep ไปฝังใน glomerulus แล้วจับกับแอนติบอดีเป็น immune complex (**hump**) → complement ทาง alternative ถูกใช้ (**C3 ต่ำ C4 ปกติ**) → neutrophil เข้ามาและเซลล์แบ่งตัว (**exudative GN**) → แตกเป็นสามกลุ่มอาการ: GFR ลด · โซเดียมคั่ง · GBM ฉีก",
+        F.psgn()),
+     "timeline": fig("เวลาเป็นตัวแยก IgAN จาก PSGN",
+        "บน: **IgAN** เลือดออก 1–2 วันหลังเจ็บคอ · **PSGN** ต้องรอ 2–4 สัปดาห์หลังคออักเสบ หรือ 4–6 สัปดาห์หลังติดเชื้อผิวหนัง · ล่าง: **C3 ใน PSGN** ต่ำตั้งแต่ 2 สัปดาห์แรกแล้วกลับปกติใน 8–10 สัปดาห์ (IgAN C3 ปกติตลอด)",
+        F.timeline())})
+
+# ───────────────────────────── 13
+sec("neph-gn-13", "Lupus nephritis — class บอกตำแหน่ง deposit และการรักษา",
+    "อาการ 3 ระบบ · ACR 2012 · ข้อบ่งชี้เจาะไต · full house · class I–VI · รักษาตาม class", 12,
+"""### อาการของ LN (สไลด์)
+| กลุ่ม | สัดส่วน |
+|---|---|
+| **Glomerular** | proteinuria **100%** · nephrotic 45–65% · micro hematuria **80%** · macro 1–2% · ไตเสื่อม 40–80% · **RPGN 30%** · ความดันสูง 15–50% |
+| **Vascular** | renal vein หรือ artery thrombosis (มัก antiphospholipid) |
+| **Tubular** | renal tubular acidosis · **K สูง 15%** |
+
+### กลไก (แผนภาพในสไลด์)
+[[fig:sle]]
+
+### เกณฑ์ LN ของ ACR 2012 (สไลด์)
+- **Spot UPCR > 0.5**
+- **Active urinary sediment**: > 5 RBC/HPF · > 5 WBC/HPF (ไม่มีติดเชื้อ) · หรือ cellular cast (RBC หรือ WBC cast)
+
+### ข้อบ่งชี้เจาะไตใน SLE (สไลด์)
+- **creatinine สูงขึ้น** โดยไม่มีสาเหตุอื่นที่ชัดเจน
+- **proteinuria ยืนยัน > 1.0 g/24 ชม.**
+- จากการตรวจอย่างน้อย 2 ครั้งในเวลาใกล้กัน: **proteinuria ≥ 0.5 g/24 ชม. + hematuria ≥ 5 RBC/HPF** หรือ **proteinuria ≥ 0.5 g/24 ชม. + cellular cast**
+
+**พยาธิ**: IF **"full house"** — IgG, IgA, IgM, C1q, C3 (ติดทั้ง glomerulus TBM และหลอดเลือด) · EM deposit **subendothelial** หรือ **mesangial** เด่น
+
+### Class (ISN/RPS) — deposit อยู่ตรงไหน → ได้กลุ่มอาการอะไร → รักษาอย่างไร
+| Class | พยาธิ | deposit | ภาพทางคลินิก | การรักษา (สไลด์) |
+|---|---|---|---|---|
+| **I** | minimal mesangial | mesangium น้อย | ปัสสาวะแทบปกติ | **ไม่ต้องรักษาที่ไต** |
+| **II** | mesangial proliferative | mesangium | hematuria/โปรตีนเล็กน้อย | รักษาอาการนอกไต · โปรตีน > 1–2 g/วัน: pred สั้น 6–8 สัปดาห์ (หลักฐานน้อย) |
+| **III / IV** | **proliferative** — focal (< 50% glomeruli) / diffuse (≥ 50%) | **subendothelial** ติดเลือด | **nephritic** · RPGN · Cr ขึ้น | **pred 0.5–1 mg/kg/วัน + ยากดภูมิอื่น** |
+| **V** | **membranous** | **subepithelial** | **nephrotic** ตะกอนใส | pred 0.5–1 mg/kg/วัน + ยากดภูมิอื่น (กลุ่มพิเศษ) |
+| **VI** | advanced sclerosing (≥ 90% แผลเป็น) | — | ไตวายเรื้อรัง | **supportive** (เตรียมบำบัดทดแทนไต) |
+
+> ทบทวนภาพ "ตำแหน่ง deposit" ในหัวข้อ 6 — **class IV คือ subendothelial = ติดเลือด = อักเสบ** · **class V คือ subepithelial = รั่ว ไม่อักเสบ** · ผู้ป่วยหนึ่งคนอาจเป็น **III/IV + V** ร่วมกัน จึงเห็น oval fat body ร่วมกับ dysmorphic RBC
+
+**แนวทางปัจจุบัน — KDIGO 2024 LN (ไม่ได้อยู่ในสไลด์)**: **hydroxychloroquine ทุกราย** · class III/IV: glucocorticoid ร่วมกับ **mycophenolate** หรือ **cyclophosphamide ขนาดต่ำ (Euro-Lupus)** หรือแบบสามยา (เพิ่ม **belimumab** หรือ calcineurin inhibitor เช่น voclosporin) · ลด steroid ให้เร็ว · ACEi/ARB ลดโปรตีน · ระวังลิ่มเลือดถ้ามี antiphospholipid
+""",
+    ["LN: proteinuria 100% · micro hematuria 80% · nephrotic 45–65% · RPGN 30% · K สูง 15%",
+     "ACR 2012: UPCR > 0.5 หรือ active sediment (> 5 RBC, > 5 WBC/HPF ไม่ติดเชื้อ, cellular cast)",
+     "เจาะไต: Cr ขึ้น · protein > 1 g/24 ชม. · protein ≥ 0.5 g + hematuria ≥ 5 RBC หรือ + cellular cast",
+     "IF full house (IgG IgA IgM C1q C3) · EM subendothelial/mesangial",
+     "Class III/IV = subendothelial = nephritic → pred + ยากดภูมิ · V = subepithelial = nephrotic · VI = supportive"],
+    [mcq(N(23), "A 29-year-old woman with SLE has edema, urine protein 6 g/day, bland sediment, normal creatinine and low-normal C3. Biopsy shows diffuse GBM thickening with subepithelial deposits and no endocapillary proliferation. Which ISN/RPS class is this?",
+         ["Class II", "Class III", "Class IV", "Class V", "Class VI"], 3,
+         "**Class V (membranous lupus nephritis)** — deposit อยู่ **subepithelial** เหมือน MN จึงเป็น **nephrotic ตะกอนใส** และไม่มี proliferative lesion\n\n- **Class II** deposit ที่ mesangium อาการน้อย\n- **Class III/IV** มี subendothelial deposit + endocapillary proliferation → nephritic\n- **Class VI** แผลเป็น ≥ 90% ไตวายเรื้อรัง",
+         "LN nephrotic ตะกอนใส + subepithelial = class V", "Lupus nephritis", R("Lupus nephritis classes; Class V: membranous nephropathy"), [NS, "B5.2.2-3(5)"]),
+     mcq(N(24), "A 24-year-old woman with SLE has two urine tests a week apart showing protein 0.7 g/24 h and 10 RBC/HPF without infection; creatinine is normal. According to the lecture's criteria, what is the most appropriate next step?",
+         ["Observe and repeat in 6 months", "Kidney biopsy", "Start cyclophosphamide without biopsy", "Treat as a urinary tract infection", "Restrict protein intake only"], 1,
+         "สไลด์ระบุข้อบ่งชี้เจาะไต: **proteinuria ≥ 0.5 g/24 ชม. ร่วมกับ hematuria ≥ 5 RBC/HPF** จากการตรวจอย่างน้อย 2 ครั้ง — รายนี้เข้าเกณฑ์ (0.7 g + 10 RBC) จึงควร **เจาะไต** เพื่อกำหนด class และการรักษา แม้ creatinine ยังปกติ\n\n- การรอ 6 เดือนเสี่ยงพลาด proliferative LN\n- ให้ cyclophosphamide โดยไม่รู้ class ไม่เหมาะ\n- ไม่มีหลักฐานติดเชื้อ\n- จำกัดโปรตีนไม่ใช่การรักษาหลัก",
+         "SLE + protein ≥ 0.5 g + RBC ≥ 5/HPF (หรือ cellular cast) → เจาะไต", "Lupus nephritis", R("Indication for kidney biopsy in SLE"), [AGN, "B5.2.2-3(5)", "B1.6.1(1)"])],
+    [AGN, NS, "B5.2.2-3(5)", "2.3.13-3(15)", "B1.6.1(1)"],
+    {"sle": fig("Lupus nephritis — จากซากเซลล์ถึงแผลเป็น",
+        "ซากเซลล์ตายที่เก็บกวาดไม่หมดเผยแอนติเจนในนิวเคลียส → กระตุ้น TLR7/9 และ interferon → B cell สร้าง **anti-dsDNA** → immune complex ไปติดที่ไต → **complement ถูกใช้ (C3, C4 ต่ำ)** และเซลล์อักเสบทำลาย → ถ้าไม่หยุดจะกลายเป็นพังผืด (class VI) — ตำแหน่งที่ complex ไปติดกำหนด class",
+        F.sle())})
+
+# ───────────────────────────── MEQ / OSCE
+LECNAME = "Approach to glomerular disease (พญ.ฉันทิศา)"
+MEQ = [{"id": "NEPH-GN-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Adult nephrotic syndrome — membranous nephropathy complicated by renal vein thrombosis",
+ "vignette": """ผู้ป่วยชายไทยอายุ 58 ปี อาชีพขับรถรับจ้าง มาด้วยขาบวมสองข้าง 6 สัปดาห์
+PI: 6 สัปดาห์ก่อน สังเกตว่าปัสสาวะเป็นฟองมาก กดชักโครกแล้วฟองยังไม่หาย ต่อมาตื่นนอนหนังตาบวม ตอนบ่ายขาบวม น้ำหนักเพิ่ม 7 กก. นอนราบได้ ไม่หอบ ปัสสาวะไม่เป็นสีโค้ก
+PH: ปวดเข่า ซื้อยาแก้ปวดกินเกือบทุกวันมา 1 ปี · สูบบุหรี่ 30 pack-year
+PE: BP 132/84 mmHg, PR 80/min · ไม่ซีด ไม่เหลือง JVP ไม่สูง · pitting edema 3+ ถึงต้นขา · มีน้ำในช่องท้องเล็กน้อย · ปอดใส
+Lab: UA: SG 1.020, protein 4+, blood 1+, RBC 3–5/HPF รูปร่างปกติ, WBC 0–2/HPF, พบ oval fat bodies และ fatty casts
+UPCR 9.2 g/g · albumin 1.9 g/dL · cholesterol 386 mg/dL · creatinine 1.0 mg/dL · C3, C4 ปกติ
+HBsAg ลบ · anti-HCV ลบ · anti-HIV ลบ · ANA ลบ""",
+ "questions": [
+  {"q": "1. ผู้ป่วยมีกลุ่มอาการทาง glomerulus แบบใด จงบอกเกณฑ์ที่ใช้ให้ครบ (3 คะแนน)",
+   "a": """**Nephrotic syndrome** — ครบเกณฑ์ (สไลด์)
+- **Proteinuria > 3.5 g/วัน** — UPCR 9.2 g/g ≈ 9 g/วัน
+- **Edema** — pitting edema ถึงต้นขา + ascites
+- **Hypoalbuminemia** — 1.9 g/dL
+- **Hypercholesterolemia > 200** — 386 mg/dL
+- **Lipiduria** — oval fat bodies, fatty casts
+ไม่มี glomerular hematuria (RBC น้อย รูปร่างปกติ) ความดันไม่สูง ไตปกติ → ไม่ใช่ nephritic"""},
+  {"q": "2. จงอธิบายกลไกที่ทำให้ผู้ป่วยบวมและไขมันในเลือดสูง (3 คะแนน)",
+   "a": """**บวม** — สองกลไกร่วมกัน
+- **Underfill**: albumin ต่ำ → oncotic pressure ในหลอดเลือดลด → น้ำซึมออกนอกหลอดเลือด → volume ลด → RAAS/ADH → ไตเก็บน้ำเกลือ
+- **Overfill**: plasminogen ที่รั่วมาในน้ำกรองถูกเปลี่ยนเป็น plasmin → ตัดและเปิด **ENaC** ที่ collecting duct → ไตเก็บโซเดียมเองโดยตรง
+**ไขมันสูง** — albumin ต่ำกระตุ้นตับให้ **สร้าง lipoprotein (apoB) เพิ่ม** + PCSK9 เพิ่ม LDL receptor ลด + **lipoprotein lipase ทำงานลด** จึงกำจัด VLDL ช้า (ไม่ได้เกิดจากอาหาร)"""},
+  {"q": "3. โรคทาง glomerulus ที่น่าจะเป็นมากที่สุดคืออะไร เพราะเหตุใด และจะหาสาเหตุทุติยภูมิอะไรเพิ่มในผู้ป่วยรายนี้ (4 คะแนน)",
+   "a": """**Membranous nephropathy (MN)** — ผู้ใหญ่ > 40 ปี เพศชาย nephrotic ค่อยเป็นค่อยไป **ตะกอนใส** ไตปกติ (ลักษณะตามสไลด์)
+ต้องหาสาเหตุทุติยภูมิ (ผู้ป่วยรายนี้มีสองประเด็นเด่น)
+- **ยา NSAIDs** ที่ซื้อกินประจำ — หยุดยา
+- **มะเร็ง** — อายุ 58 สูบบุหรี่มาก → **CT ทรวงอก (มะเร็งปอดพบบ่อยสุด 26%)** · ส่องกล้องลำไส้ใหญ่ · PSA
+- ตรวจแล้ว: HBV, HCV, HIV, ANA ลบ — ส่ง **VDRL** เพิ่ม
+- **Anti-PLA2R** — ถ้าบวกสนับสนุน MN ปฐมภูมิ"""},
+  {"q": "4. ผลชิ้นเนื้อไต: LM พบ GBM หนาทั่วและมี spike ใน silver stain · IF พบ granular IgG และ C3 ตามผนังหลอดเลือดฝอย — จะพบอะไรใน EM และอธิบายว่าทำไมผู้ป่วยรายนี้ไม่มี hematuria หรือการอักเสบ (3 คะแนน)",
+   "a": """**EM: subepithelial electron-dense deposits** (ระหว่าง GBM กับ podocyte)
+แอนติบอดี (anti-PLA2R) จับแอนติเจนบน **podocyte** → immune complex ก่อตัว **ใต้ podocyte** → complement (C5b-9) เจาะ podocyte → โปรตีนรั่วมาก แต่ deposit อยู่ **นอก GBM ฝั่งปัสสาวะ** เซลล์อักเสบในเลือดเข้าไม่ถึง → ไม่มี proliferation ไม่มี RBC cast ตะกอนใส · GBM งอกแทรกระหว่างก้อนเห็นเป็น spike"""},
+  {"q": "5. 10 วันต่อมา ผู้ป่วยปวดสีข้างซ้ายเฉียบพลัน ปัสสาวะเป็นเลือดเห็นด้วยตา คลำได้เส้นเลือดขอดที่ถุงอัณฑะซ้าย creatinine 1.0 → 1.6 mg/dL — จงให้การวินิจฉัย การตรวจยืนยัน และการรักษา (4 คะแนน)",
+   "a": """**Left renal vein thrombosis (RVT)** — ภาวะแทรกซ้อนที่พบบ่อยที่สุดใน MN (albumin < 2 g/dL)
+- กลไก: antithrombin III รั่ว · fibrinogen, factor V/VIII สูง · เกล็ดเลือดจับกลุ่ม · เลือดข้นจากยาขับปัสสาวะ
+- **varicocele ซ้าย** เพราะ left gonadal vein เทเข้า left renal vein
+- ยืนยัน: **Doppler ultrasound ของ renal vein** หรือ **CT venography / MR venography**
+- รักษา: **anticoagulation** (heparin → warfarin หรือยาตามแนวทาง) ตลอดช่วงที่ยังเนโฟรติก · เฝ้าระวัง **PE**"""},
+  {"q": "6. จงเขียนการรักษาทั่วไปของ nephrotic syndrome ในผู้ป่วยรายนี้ (3 คะแนน)",
+   "a": """- **จำกัดเกลือ** (Na < 2 g/วัน) + **loop diuretic** ขนาดสูงพอ (albumin ต่ำ furosemide ถึงท่อน้อย) ± thiazide/amiloride
+- **ACEi หรือ ARB** ลดโปรตีนรั่ว (ลดแรงดันใน glomerulus) — ติดตาม Cr, K
+- **Statin**
+- **Anticoagulant** (มี RVT แล้ว — ให้รักษา)
+- **วัคซีน** pneumococcus, influenza · หลีกเลี่ยง **NSAIDs**
+- ประเมินความเสี่ยงตาม KDIGO 2021 เพื่อพิจารณา **rituximab** หรือ cyclophosphamide + steroid (โปรตีน > 8 g/วัน = ความเสี่ยงสูงถ้าไม่ลดลง)"""}],
+ "ref": ["สไลด์ พญ.ฉันทิศา — Nephrotic syndrome, MN", "KDIGO 2021 Glomerular Diseases"],
+ "nl": [NS, "B9.2.2(4)", "2.1.39", "2.3.9(2)"], "years": [], "_kind": "meq", "_set": SET}]
+
+OSCE = [{"id": "NEPH-GN-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "SAQ – Interpreting urinalysis and sediment in five patients",
+ "station": "SAQ 10 นาที",
+ "instruction": """จงแปลผลปัสสาวะต่อไปนี้ บอกว่าเข้าได้กับภาวะใด และกลไกที่ทำให้ได้ผลเช่นนั้น (รายละ 2 คะแนน)
+
+| ราย | ผลตรวจ |
+|---|---|
+| A | หญิง 25 ปี บวมทั้งตัว · protein 4+ · RBC 0–2/HPF · **oval fat bodies** (Maltese cross ใต้แสงโพลาไรซ์) |
+| B | ชาย 30 ปี ความดัน 170/100 ปัสสาวะสีโค้ก · protein 1+ · RBC 50–100/HPF **dysmorphic 70%** · **RBC cast** |
+| C | ชาย 22 ปี หลังวิ่งมาราธอน ปัสสาวะสีน้ำตาลแดง · **dipstick blood 3+** · RBC 0–2/HPF · น้ำส่วนบนหลังปั่นยังแดง |
+| D | หญิง 68 ปี ซีด ปวดหลัง Ca 11.8 mg/dL · **dipstick protein trace** · **SSA 3+** · 24-h protein 3.2 g |
+| E | ชาย 66 ปี สูบบุหรี่ ปัสสาวะแดงสดมี **ลิ่มเลือด** · protein trace · RBC เต็ม HPF **รูปร่างปกติ** ไม่มี cast |""",
+ "answer": """**เกณฑ์ให้คะแนน (10 คะแนน)**
+
+| ราย | การแปลผล | กลไก | คะแนน |
+|---|---|---|---|
+| A | **Nephrotic syndrome** (lipiduria) | lipoprotein รั่วผ่านตะแกรง เซลล์ท่อไตกลืนไขมันเป็น oval fat body · cholesterol ester เห็นเป็น Maltese cross | 2 |
+| B | **Nephritic syndrome / glomerular hematuria** | RBC เบียดผ่าน GBM ที่ฉีกและผ่านท่อไตที่ความเข้มข้นเปลี่ยน → dysmorphic · Tamm–Horsfall หุ้มเป็น RBC cast · GFR ลด + Na คั่ง → HT | 2 |
+| C | **Myoglobinuria (rhabdomyolysis)** | heme ของ myoglobin ทำปฏิกิริยา peroxidase กับแผ่น blood ทั้งที่ไม่มี RBC · สีอยู่ในน้ำส่วนบน → ส่ง CK | 2 |
+| D | **Overflow proteinuria — light chain (multiple myeloma)** | dipstick จับเฉพาะ albumin · SSA ตกตะกอนโปรตีนทุกชนิด → ส่ง SPEP/UPEP, serum free light chain | 2 |
+| E | **Non-glomerular hematuria** — สงสัยมะเร็งทางเดินปัสสาวะ | เลือดออกใกล้ทางออก RBC ไม่ผ่านท่อไตจึงรูปร่างปกติ · ไม่มี urokinase ปริมาณมากจึงจับเป็นลิ่ม → CT urography + cystoscopy | 2 |
+
+**ข้อที่ทำให้เสียคะแนน**: แปลราย C ว่าเป็น hematuria · แปลราย D ว่าโปรตีนน้อยตาม dipstick · ไม่บอกกลไก""",
+ "ref": ["สไลด์ พญ.ฉันทิศา — Proteinuria, hematuria"], "nl": UA + ["2.1.43", NS, AGN],
+ "years": [], "_kind": "meq", "_set": SET}]
+
+LECTURE = {
+ "lec": LEC, "date": "พฤ. 1 ต.ค.",
+ "title": "Approach to glomerular disease — nephrotic · nephritic",
+ "subtitle": "ตะแกรง 3 ชั้น · อาการมาจาก 2 กลไก · วัดโปรตีน · proteinuria 5 ชนิด · hematuria · 6 คำถาม 5 กลุ่มอาการ · nephrotic · nephritic/RPGN · MCD · FSGS · MN · IgAN · PSGN · lupus nephritis",
+ "objectives": [
+   "อธิบายโครงสร้างตะแกรงกรอง 3 ชั้นของ glomerulus และบอกว่าความเสียหายของแต่ละชั้นทำให้เกิดอาการอะไร",
+   "อธิบายกลไกของอาการเด่น — ปัสสาวะเป็นฟอง บวมรอบตา บวมทั้งตัว ความดันสูง ปัสสาวะสีโค้ก ปัสสาวะน้อย",
+   "เลือกและแปลผลการตรวจโปรตีนในปัสสาวะ (dipstick, SSA, 24 ชม., UPCR) และแยก proteinuria 5 ชนิด",
+   "แยก glomerular จาก non-glomerular hematuria และอธิบายที่มาของ dysmorphic RBC และ RBC cast",
+   "จัดผู้ป่วยเข้า 5 กลุ่มอาการ และอธิบายว่าตำแหน่ง deposit กำหนด nephrotic หรือ nephritic อย่างไร",
+   "อธิบายกลไกภาวะแทรกซ้อนของ nephrotic (ไขมันสูง ลิ่มเลือด ติดเชื้อ) และให้การรักษาทั่วไป",
+   "วินิจฉัยและรักษา MCD, FSGS, MN, IgAN, PSGN และ lupus nephritis ตามสไลด์และแนวทาง KDIGO"],
+ "nlGap": "เกณฑ์ฯ มีรหัส nephrotic syndrome (`นล. 2.3.14(12)`, `B9.2.2(4)`) acute GN (`2.3.14(2)`) APSGN (`B9.2.2(3)`) chronic GN (`2.3.14-3(1)`) urinalysis (`3.1.6`, `B9.3(2)`) และ SLE (`B5.2.2-3(5)`) แต่ **ไม่มีรหัสเฉพาะของ MCD, FSGS, membranous nephropathy, IgA nephropathy, RPGN หรือ class ของ lupus nephritis** — และสไลด์ส่วนภาพ (พยาธิ LM/IF/EM, ตารางและอัลกอริทึม KDIGO 2021 ของ MN, ภาพ LN class) อ่านไม่ได้ เนื้อหาส่วนนั้นจึงอิงแนวทางด้านล่างและระบุไว้ในแต่ละหัวข้อ",
+ "guidelines": [
+   "**KDIGO 2012 Clinical Practice Guideline for Glomerulonephritis** — การรักษา MCD, IgAN, PSGN ในสไลด์ (อาจารย์อ้าง)",
+   "**KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases** — การรักษาทั่วไปของ nephrotic, การหาสาเหตุและการรักษา MN ตามความเสี่ยง (อาจารย์อ้าง)",
+   "**KDIGO 2025 Clinical Practice Guideline for the Management of IgA Nephropathy and IgA Vasculitis** — เป้าหมายโปรตีน < 0.5 g/วัน",
+   "**KDIGO 2024 Clinical Practice Guideline for the Management of Lupus Nephritis** และ **ACR 2012 Lupus Nephritis guideline** (อาจารย์อ้างเกณฑ์ LN และข้อบ่งชี้เจาะไต)",
+   "**KDIGO 2024 Clinical Practice Guideline for the Management of ANCA-Associated Vasculitis** — RPGN",
+   "**Brenner & Rector's The Kidney** — glomerular vs non-glomerular hematuria, สาเหตุทุติยภูมิ (อาจารย์อ้าง)"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+# ───────────────────────────── กระจายตำแหน่งคำตอบ (ก่อนขึ้นเว็บครั้งแรกเท่านั้น) · ตัวเลือกเรียงตามธรรมชาติไม่สลับ
+ORDERED = {N(6), N(23)}
+_slot = 0
+for s_ in S:
+    for it in s_["items"]:
+        if it["id"] in ORDERED:
+            continue
+        tgt = [3, 0, 4, 2, 1][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+# ───────────────────────────── เขียนลงไฟล์ แล้วผูกข้อคลัง
+path = os.path.join(BUILD, "data", SET + ".json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LEC]
+data.append(LECTURE)
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
+BANK_MAP = {
+    "neph-gn-02": ["N-OLD-032"],
+    "neph-gn-03": ["N-MCQ-08", "N-OLD-018", "N-OLD-025"],
+    "neph-gn-04": ["N-MCQ-29", "N-OLD-078", "N-OLD-079", "N-OLD-028"],
+    "neph-gn-05": ["N-MCQ-11", "N-OLD-026", "N-OLD-027", "N-OLD-030"],
+    "neph-gn-06": ["N-MCQ-07", "N-OLD-016"],
+    "neph-gn-07": ["N-OLD-017", "N-OLD-075", "N-MCQ-12", "N-OLD-019"],
+    "neph-gn-09": ["N-OLD-021", "N-OLD-022", "N-MCQ-09", "N-OLD-023", "N-OLD-024"],
+    "neph-gn-10": ["N-OLD-020"],
+    "neph-gn-11": ["N-OLD-033"],
+    "neph-gn-12": ["N-MCQ-10", "N-OLD-029"],
+    "neph-gn-13": ["N-OLD-031", "N-OLD-076", "N-OLD-085", "N-OLD-086"],
+}
+added = link(SET, LEC, BANK_MAP, meq=["N-MEQ-01", "N-MEQ-03"], osce=["N-OSCE-02", "N-OSCE-01"])
+added_m = link_mock(SET, LEC, {"neph-gn-06": ["MOCK-166"], "neph-gn-08": ["MOCK-177"],
+                               "neph-gn-09": ["MOCK-168", "MOCK-167"], "neph-gn-11": ["MOCK-176"], "neph-gn-12": ["MOCK-172"]})
+
+data = json.load(open(path, encoding="utf-8"))
+L = [l for l in data if l["lec"] == LEC][0]
+seen = set()
+for l in data:
+    for x in [i for s_ in l["sections"] for i in s_["items"]] + l["meq"] + l["osce"] + [{"id": s_["id"]} for s_ in l["sections"]]:
+        assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+        seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+codes = ({c for s_ in L["sections"] for c in s_["nl"]} | {c for s_ in L["sections"] for i in s_["items"] for c in i.get("nl", [])}
+         | {c for m in L["meq"] + L["osce"] for c in m.get("nl", [])})
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+for s_ in L["sections"]:
+    assert "```" not in s_["md"], s_["id"]
+data.sort(key=lambda l: (0, int(l["lec"])) if l["lec"].isdigit() else (1, l["lec"]))
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == SET: m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+from collections import Counter
+print("sections %d | ข้อใหม่ %d + คลัง %d + mock %d = %d | meq %d | osce %d | ภาพ %d | nl %d" % (
+    len(S), sum(1 for s_ in S for i in s_["items"] if i["id"].startswith("NEPH-GN")), added - 4, added_m,
+    sum(len(s_["items"]) for s_ in L["sections"]), len(L["meq"]), len(L["osce"]),
+    sum(len(s_["figs"]) for s_ in S), len(codes)))
+print("ตำแหน่งคำตอบข้อใหม่:", dict(sorted(Counter(i["answer"] for s_ in S for i in s_["items"] if i["kind"] == "mcq" and i["id"].startswith("NEPH-GN")).items())))
+print("%s.json มี %d คาบ: %s" % (SET, len(data), [l["lec"] for l in data]))

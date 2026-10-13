@@ -251,3 +251,120 @@ def ifpat():
         out += [t(cx, 148, title, "b mid"), t(cx, 166, sub, "xs mid i2")]
     return svg(600, 182, "รูปแบบ immunofluorescence สามแบบ linear granular และ pauci-immune บอกกลไกของ RPGN",
         *out, line(200, 14, 200, 170, "lru da"), line(400, 14, 400, 170, "lru da"))
+
+
+def fp():
+    out = [t(140, 22, "ปกติ", "b mid"), t(140, 42, "foot process สลับซี่ มี slit diaphragm", "xs mid i2"),
+           t(420, 22, "MCD / FSGS", "b mid"), t(420, 42, "foot process แผ่แบนเป็นแผ่นเดียว (effacement)", "xs mid i2"),
+           line(280, 14, 280, 214, "lru da")]
+    for x0, ok in ((20, True), (300, False)):
+        out += [rect(x0, 80, 240, 16, "ms", 3), rect(x0, 160, 240, 34, "wa", 6)]
+        if ok:
+            out += [rect(x0 + 4 + 34 * j, 100, 24, 22, "ac", 6) for j in range(7)]
+            out += [line(x0 + 29 + 34 * j, 104, x0 + 37 + 34 * j, 104, "lac w2") for j in range(6)]
+            out += [ell(x0 + 70, 140, 44, 10, "ac"), ell(x0 + 176, 140, 44, 10, "ac")]
+            out += [circ(x0 + 60 + 60 * j, 64, 7, "msf") for j in range(3)]
+            out += [line(x0 + 60 + 60 * j, 72, x0 + 60 + 60 * j, 78, "lmu", "ah-mu") for j in range(3)]
+            out.append(t(x0 + 120, 212, "albumin ถูกกันไว้", "sm mid tok b"))
+        else:
+            out += [rect(x0, 100, 240, 12, "ac", 5), ell(x0 + 70, 128, 50, 10, "ac"), ell(x0 + 176, 128, 50, 10, "ac")]
+            out += [circ(x0 + 60 + 60 * j, 64, 7, "msf") for j in range(3)]
+            out += [line(x0 + 60 + 60 * j, 72, x0 + 60 + 60 * j, 168, "lbad w2", "ah-bad") for j in range(3)]
+            out += [circ(x0 + 48 + 60 * j, 182, 5, "msf") for j in range(3)]
+            out.append(t(x0 + 120, 212, "albumin รั่วออกจำนวนมาก", "sm mid tbad b"))
+    return svg(560, 222, "podocyte ปกติมี foot process เป็นซี่และ slit diaphragm กัน albumin ส่วนใน MCD foot process แผ่แบน albumin จึงรั่ว",
+        *out)
+
+
+def fsgs():
+    return svg(400, 312, "วงจรของ FSGS แบบปรับตัว nephron เหลือน้อย ที่เหลือกรองหนัก podocyte ถูกยืดจนหลุด เกิดแผลเป็นและ nephron ตายเพิ่ม",
+        box(95, 8, 210, 58, "ms", "nephron เหลือน้อย\nอ้วน · ไตข้างเดียว · reflux", fs=12),
+        box(250, 112, 145, 78, "bx", "ที่เหลือกรองหนัก\nhyperfiltration\nglomerulus โต", fs=12),
+        box(95, 238, 210, 58, "bad", "podocyte ถูกยืดจนคลุมไม่พอ\n→ หลุดลอก", fs=12),
+        box(5, 112, 145, 78, "sk", "segmental sclerosis\n→ nephron ตายเพิ่ม", fs=12),
+        path("M305 40 Q340 50 330 108", "ln", "ah"), path("M330 192 Q340 236 308 264", "ln", "ah"),
+        path("M93 266 Q60 252 70 194", "ln", "ah"), path("M70 110 Q60 52 92 38", "ln", "ah"),
+        t(200, 134, "วงจรที่", "sm mid b"), t(200, 154, "เร่งตัวเอง", "sm mid b"),
+        pill(156, 166, "ACEi/ARB ตัดวงจร", "ok", "xs b mid tok", w=88, h=20))
+
+
+def mnspike():
+    out = []
+    titles = (("① immune complex ใต้ podocyte", "anti-PLA2R จับแอนติเจนบน podocyte"),
+              ("② GBM งอกแทรกระหว่างก้อน", "= spike (silver stain)"),
+              ("③ GBM คลุมก้อนจนหนา", "= GBM thickening ทั้งแผ่น"))
+    for k, (a, b) in enumerate(titles):
+        x0 = 15 + 195 * k
+        out += [t(x0 + 85, 20, a, "xs mid b"), t(x0 + 85, 36, b, "xs mid i2"), rect(x0, 48, 170, 14, "bad", 4)]
+        gh = 30 if k == 2 else 16
+        out.append(rect(x0, 66, 170, gh, "ms", 3))
+        fy = 66 + gh + 12
+        out += [rect(x0 + 4 + 34 * j, fy, 26, 20, "ac", 6) for j in range(5)]
+        dy = 66 + gh - 10 if k == 2 else 66 + gh + 5
+        out += [ell(x0 + 17 + 34 * j, dy, 9, 5, "inkf") for j in range(5)]
+        if k == 1:
+            out += [rect(x0 + 31 + 34 * j, 80, 5, 14, "ms", 1) for j in range(4)]
+    return svg(600, 172, "membranous nephropathy เริ่มจาก immune complex ใต้ podocyte แล้ว GBM งอกแทรกเป็น spike และคลุมจนหนา",
+        *out, t(300, 150, "IF: granular IgG + C3 ตามผนังหลอดเลือด · EM: subepithelial deposits (สไลด์)", "xs mid i2"),
+        t(300, 166, "ไม่มีเซลล์อักเสบ เพราะทุกอย่างอยู่นอก GBM ด้านปัสสาวะ → ตะกอนใส", "xs mid i2"))
+
+
+def igan():
+    labels = ["Hit 1\nIgA1 ขาด galactose\n(Gd-IgA1) จากเยื่อบุ", "Hit 2\nIgG ต่อต้าน\nGd-IgA1",
+              "Hit 3\nimmune complex\nในเลือด", "Hit 4\nติดที่ mesangium\nmesangial cell แบ่งตัว"]
+    out = []
+    for k, s in enumerate(labels):
+        x = 9 + 150 * k
+        out.append(box(x, 14, 132, 84, "ac" if k < 3 else "ms", s, fs=12))
+        if k < 3: out.append(line(x + 132, 56, x + 148, 56, "ln", "ah"))
+    return svg(600, 196, "IgA nephropathy เกิดจาก 4 ขั้น Gd-IgA1 แอนติบอดี immune complex และการสะสมที่ mesangium",
+        *out, box(9, 118, 582, 62, "sk", "ติดเชื้อทางเดินหายใจ/ลำไส้ → เยื่อบุสร้าง IgA1 เพิ่มทันที → เลือดในปัสสาวะภายใน 1–2 วัน (synpharyngitic)\nต่างจาก PSGN ที่ต้องรอ 2–4 สัปดาห์ให้ร่างกายสร้างแอนติบอดีต่อเชื้อก่อน", fs=12))
+
+
+def timeline():
+    X = lambda w: 116 + 57 * w
+    out = [line(X(0), 150, X(8), 150, "lmu"), t(X(8), 186, "สัปดาห์หลังติดเชื้อ", "xs end mu")]
+    out += [p for w in range(0, 9, 2) for p in (line(X(w), 146, X(w), 154, "lmu"), t(X(w), 168, str(w), "xs mid mu"))]
+    out += [t(10, 40, "IgAN", "sm b"), rect(X(1 / 7), 30, X(2 / 7) - X(1 / 7) + 6, 16, "ms", 3), t(X(0.5), 43, "เลือดออก 1–2 วันหลังเจ็บคอ", "xs i2"),
+            t(10, 80, "PSGN คอ", "sm b"), line(X(0), 76, X(2), 76, "lmu da"), rect(X(2), 68, X(4) - X(2), 16, "bad", 3),
+            t(X(4) + 8, 81, "latency 2–4 สัปดาห์", "xs i2"),
+            t(10, 120, "PSGN ผิวหนัง", "sm b"), line(X(0), 116, X(4), 116, "lmu da"), rect(X(4), 108, X(6) - X(4), 16, "bad", 3),
+            t(X(6) + 8, 121, "4–6 สัปดาห์", "xs i2")]
+    Y = lambda w: 70 + 46 * w
+    c3 = [(0, 214), (0.6, 214), (1.4, 262), (2, 266), (4, 258), (6, 238), (8, 220), (10, 214), (11, 214)]
+    out += [t(10, 206, "C3", "sm b"), line(Y(0), 214, Y(11), 214, "lmu dt"), t(Y(11), 208, "ระดับปกติ", "xs end mu"),
+            poly([(Y(w), y) for w, y in c3], "lbad w2"), line(Y(0), 282, Y(11), 282, "lmu"),
+            t(Y(1.7), 246, "ต่ำใน 2 สัปดาห์แรก (90%)", "xs tbad"), t(Y(8), 236, "กลับปกติ 8–10 สัปดาห์", "xs tbad"),
+            t(Y(11), 316, "สัปดาห์หลังเริ่มอาการไต", "xs end mu")]
+    out += [p for w in range(0, 11, 2) for p in (line(Y(w), 278, Y(w), 286, "lmu"), t(Y(w), 298, str(w), "xs mid mu"))]
+    return svg(600, 324, "IgAN มีเลือดในปัสสาวะภายใน 1 ถึง 2 วันหลังติดเชื้อ ส่วน PSGN ต้องรอ 2 ถึง 6 สัปดาห์ และ C3 ต่ำแล้วกลับปกติใน 8 ถึง 10 สัปดาห์",
+        *out)
+
+
+def psgn():
+    return svg(400, 404, "กลไก PSGN จาก strep ถึง immune complex complement และอาการสามกลุ่ม",
+        box(60, 6, 280, 44, "sk", "Strep กลุ่ม A สายพันธุ์ก่อโรคไต\nคอ หรือ ผิวหนัง", fs=12), line(200, 50, 200, 66, "ln", "ah"),
+        box(60, 68, 280, 44, "bx", "แอนติเจน (SpeB) ฝังใน glomerulus\n+ แอนติบอดี → immune complex (hump)", fs=12), line(200, 112, 200, 128, "ln", "ah"),
+        box(60, 130, 280, 44, "wa", "complement ทาง alternative ถูกใช้\n→ C3 ต่ำ · C4 ปกติ", fs=12), line(200, 174, 200, 190, "ln", "ah"),
+        box(60, 192, 280, 44, "bad", "neutrophil + endocapillary proliferation\n(exudative GN)", fs=12),
+        line(130, 236, 66, 262, "ln", "ah"), line(200, 236, 200, 262, "ln", "ah"), line(270, 236, 334, 262, "ln", "ah"),
+        box(4, 264, 124, 74, "ms", "GFR ↓\noliguria\nBUN/Cr ↑", fs=11.5),
+        box(138, 264, 124, 74, "ms", "Na คั่ง\nBP ↑ ปวดหัว\nบวม ปอดคั่ง", fs=11.5),
+        box(272, 264, 124, 74, "bad", "GBM ฉีก\nปัสสาวะสีโค้ก\nRBC cast", fs=11.5),
+        t(200, 364, "ยาฆ่าเชื้อกำจัด strep ได้ แต่ไม่ย้อน GN", "sm mid i2"),
+        t(200, 384, "เพราะ immune complex ฝังในไตไปแล้ว (สไลด์)", "sm mid i2"))
+
+
+def sle():
+    L = ["ซากเซลล์ตาย (apoptosis, UV)\nเก็บกวาดไม่หมด", "แอนติเจนในนิวเคลียส\nกระตุ้น TLR7/9 · IFN-α", "B cell สร้าง anti-dsDNA\n(T cell ช่วย)",
+         "immune complex\nไปติดที่ไต", "complement ถูกใช้ (C3, C4 ↓)\n+ FcR → อักเสบ", "cytokine สร้างพังผืด\n→ แผลเป็น (class VI)"]
+    out = []
+    for k, s in enumerate(L):
+        row, col = divmod(k, 3)
+        x = 10 + 200 * (col if row == 0 else 2 - col)
+        y = 12 + 96 * row
+        out.append(box(x, y, 180, 58, ["sk", "sk", "ac", "ms", "bad", "bx"][k], s, fs=11.5))
+    out += [line(190, 41, 208, 41, "ln", "ah"), line(390, 41, 408, 41, "ln", "ah"), line(500, 70, 500, 106, "ln", "ah"),
+            line(410, 137, 392, 137, "ln", "ah"), line(210, 137, 192, 137, "ln", "ah")]
+    return svg(600, 196, "กลไกของ lupus nephritis จากซากเซลล์ที่เก็บกวาดไม่หมด สู่ anti-dsDNA immune complex complement และแผลเป็น",
+        *out, t(300, 190, "ตำแหน่งที่ immune complex ไปติดกำหนด class (ภาพตำแหน่ง deposit หัวข้อ 6)", "xs mid mu"))
