@@ -456,6 +456,12 @@ a.act:hover{filter:brightness(1.07)}
 .proj .legend{font-size:12px}
 .pl-acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
 .pl-acts .pillbtn{margin-top:0}
+.ghostbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line-2);background:var(--card);color:var(--ink-2);border-radius:999px;
+  padding:8px 16px;font-family:var(--display);font-weight:600;font-size:14px;cursor:pointer;transition:border-color .2s var(--e),color .2s var(--e)}
+.ghostbtn svg{width:14px;height:14px}
+.ghostbtn:hover:not(:disabled){border-color:var(--todo);color:var(--todo)}
+.ghostbtn:disabled{opacity:.45;cursor:default}
+.ghostbtn.undo{border-color:var(--lav-deep);color:var(--lav-ink);background:var(--lav)}
 .savenote{font-size:12.5px;color:var(--ink-3);display:inline-flex;align-items:center;gap:6px}
 .savenote i{width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
 .savenote.cloud i{background:var(--ok)}
@@ -932,7 +938,9 @@ function connectPlan(db){
     if(canon(cloud)!==canon(PICKS)){PICKS=cloud;savePicksLocal();if(st.tab==="plan")render();}
   },function(){PSYNC.mode="local";if(st.tab==="plan")render();});
 }
-function setPick(id,v){if(PICKS[id]===v)delete PICKS[id];else PICKS[id]=v;savePicksLocal();writePlan();render();}
+var PUNDO=null;   /* ที่เลือกไว้ก่อนกดล้าง ให้กดคืนได้จนกว่าจะเลือกใหม่ */
+function setPicks(o){PICKS=o;savePicksLocal();writePlan();render();}
+function setPick(id,v){PUNDO=null;var o=Object.assign({},PICKS);if(o[id]===v)delete o[id];else o[id]=v;setPicks(o);}
 
 
 /* ---------- state ---------- */
@@ -1301,6 +1309,8 @@ function renderPlan(){
     "<p>ตอนนี้ยังมี <b class='num'>"+gapN+"</b> หัวข้อที่ไม่มีบทสอนเต็ม (ยังไม่มีเลย "+now.c[0]+" · แตะบางส่วน "+now.c[1]+") จัดเป็น <b class='num'>"+PLAN.length+"</b> บท ทำครบทุกบท = "+Math.round(all.score*100)+"% "+
       "· กด <b>เอา</b> หรือ <b>ไม่เอา</b> ทีละบท ชุดที่ติดป้ายแนะนำ "+recs.length+" บท ปิดได้ "+rp.n+" หัวข้อ</p>"+
     "<div class='pl-acts'><button type='button' class='pillbtn' data-prec>เลือกตามที่แนะนำ</button>"+
+      (PUNDO?"<button type='button' class='ghostbtn undo' data-pundo>คืนที่เลือกไว้ "+Object.keys(PUNDO).length+" บท</button>"
+        :"<button type='button' class='ghostbtn' data-pclear"+(Object.keys(PICKS).length?"":" disabled")+">"+ICON.x+"ล้างการเลือก</button>")+
       "<span class='savenote"+(PSYNC.mode==="cloud"?" cloud":"")+"'><i></i>"+(PSYNC.mode==="cloud"?"บันทึกในบัญชี · เลือกเสร็จแล้วบอก Claude ได้เลย":(PSYNC.err?PSYNC.err+" · ":"")+"บันทึกในเครื่องนี้ · เลือกเสร็จแล้วส่งรายการท้ายหน้าให้ Claude")+"</span></div></div>"+
     "<div class='proj'><div class='big'><s class='num'>"+Math.round(now.score*100)+"%</s><span>→</span><b class='num'>"+Math.round(pj.score*100)+"%</b><span>ถ้าทำบทที่เลือก</span></div>"+
       mixBar(pj.c,N)+"<div class='legend'><span><i class='sw f'></i>มีบท <b>"+pj.c[2]+"</b></span><span><i class='sw p'></i>บางส่วน <b>"+pj.c[1]+"</b></span><span><i class='sw n'></i>ไม่มี <b>"+pj.c[0]+"</b></span></div>"+
@@ -1417,7 +1427,9 @@ document.addEventListener("click",function(e){
   if(b.dataset.k){st.k=+b.dataset.k;render();return;}
   if(b.dataset.pick){var pk=b.dataset.pick.split(":");if(PBYID[pk[0]])setPick(pk[0],pk[1]);return;}
   if(b.dataset.pf){st.pf=b.dataset.pf;render();return;}
-  if(b.hasAttribute("data-prec")){PLAN.forEach(function(p){if(p.rec&&!PICKS[p.id])PICKS[p.id]="y";});savePicksLocal();writePlan();render();return;}
+  if(b.hasAttribute("data-prec")){PUNDO=null;var o=Object.assign({},PICKS);PLAN.forEach(function(p){if(p.rec&&!o[p.id])o[p.id]="y";});setPicks(o);return;}
+  if(b.hasAttribute("data-pclear")){if(Object.keys(PICKS).length){PUNDO=PICKS;setPicks({});}return;}
+  if(b.hasAttribute("data-pundo")){var u=PUNDO;PUNDO=null;if(u)setPicks(u);return;}
   if(b.dataset.nlf){st.nlf=b.dataset.nlf;render();return;}
   if(b.dataset.nllv){st.nllv=b.dataset.nllv;render();return;}
   if(b.dataset.nlq){st.nlq=b.dataset.nlq;render();return;}
