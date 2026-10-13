@@ -183,7 +183,8 @@ tr:last-child td{border-bottom:0}
 .tile:hover{border-color:var(--accent);transform:translateY(-2px)}
 .tile b{font-size:14.8px;font-weight:700;letter-spacing:-.01em}
 .tile span{font-size:12.6px;color:var(--ink-3)}
-.vignette{white-space:pre-wrap;font-size:14.6px;background:var(--surface-sunk);border-radius:var(--r-md);padding:15px 17px;margin:12px 0 4px}
+.vignette{font-size:14.6px;background:var(--surface-sunk);border-radius:var(--r-md);padding:15px 17px;margin:12px 0 4px}
+.vignette.prose p:first-child{margin-top:0}.vignette.prose p:last-child{margin-bottom:0}.vignette .tablewrap{background:var(--surface)}
 textarea{width:100%;min-height:104px;font:inherit;font-size:14.5px;color:var(--ink);background:var(--surface);
   border:1px solid var(--rule-strong);border-radius:var(--r-md);padding:11px 13px;resize:vertical}
 .selfrate{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px;align-items:center}
@@ -569,7 +570,7 @@ function viewPractice(kind){
 
 function viewMeq(l,it){
   var h="<section class='card'><div class='eyebrow'>MEQ · คาบ "+esc(l.lec)+" · "+esc(l.lecture||l.title)+"</div>"+
-    "<h2>"+esc(it.topic||it.id)+"</h2><div class='vignette'>"+esc(it.vignette)+"</div>";
+    "<h2>"+esc(it.topic||it.id)+"</h2><div class='vignette prose'>"+md(it.vignette)+"</div>";
   (it.questions||[]).forEach(function(q,i){
     var kid=it.id+"#"+i,open=!!state.notes[kid+"!shown"];
     h+="<div class='hr'></div><div class='prose'><strong>"+inline(q.q)+"</strong></div>"+
@@ -589,7 +590,7 @@ function viewOsce(l,it){
     "<div class='meta'><span class='chip acc'>"+esc(it.station||"")+"</span>"+
     "<span class='timer' id='timer'>"+mins+":00</span>"+
     "<button class='btn' data-timer='"+mins+"'>เริ่มจับเวลา</button></div>"+
-    "<div class='vignette'>"+esc(it.instruction)+"</div>"+
+    "<div class='vignette prose'>"+md(it.instruction)+"</div>"+
     "<textarea data-note='"+esc(it.id)+"' placeholder='เขียนคำตอบของคุณ…'>"+esc(state.notes[it.id]||"")+"</textarea>"+
     "<div class='nav' style='margin-top:10px'><button class='btn"+(state.notes[it.id+"!shown"]?"":" primary")+"' data-reveal='"+esc(it.id)+"'>"+
       (state.notes[it.id+"!shown"]?"ซ่อนเฉลย":"ดูเฉลยและเกณฑ์ให้คะแนน")+"</button></div>"+
