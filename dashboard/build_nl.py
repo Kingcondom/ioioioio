@@ -52,6 +52,7 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
         sys.exit("รหัสใน nl_scope.py ที่ไม่มีใน nl.json: %s" % missing)
 
     strong = {c: {} for c in SCOPE}   # code -> {key: (label, url)}
+    names = {"L": {}, "S": {}, "B": {}}  # ชื่อแหล่งสำหรับหมายเหตุบทซ้อน
     weak = {c: {} for c in SCOPE}
 
     def hit(text):
@@ -67,6 +68,7 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
         for L in json.load(open(os.path.join(learn_dir, s + ".json"), encoding="utf-8")):
             url = LEARN + "#" + s + "-" + slug(L["lec"])
             lname = "Learn · " + SET_NAME[s] + " · " + L["title"]
+            names["L"][s + "-" + slug(L["lec"])] = SET_NAME[s] + " · " + L["title"]
             add(strong, hit(L["title"]), "L:" + url, lname, url)
             add(weak, hit(L.get("subtitle") or ""), "L:" + url, lname, url)
             for sec in L.get("sections", []):
@@ -102,6 +104,7 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
         for L in ls:
             url = SALMON + "#" + cset + "-" + slug(L["lec"])
             lname = "Salmon NL · " + clabel + " · " + L["title"]
+            names["S"][cset + "-" + slug(L["lec"])] = clabel + " · " + L["title"]
             if not is_exam:
                 add(strong, hit(L["title"]), "S:" + url, lname, url)
                 add(weak, hit(L.get("subtitle") or ""), "S:" + url, lname, url)
@@ -117,6 +120,7 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
     # ---- ห้องสมุดท่าอาจารย์
     lib = json.load(open(lib_path, encoding="utf-8"))
     for it in lib:
+        names["B"][it["u"].rstrip("/").rsplit("/", 1)[-1]] = it["t"]
         add(strong, hit(it["t"]), "B:" + it["u"], "ห้องสมุด · " + it["t"], it["u"])
         add(weak, hit(it.get("d") or ""), "B:" + it["u"], "ห้องสมุด · " + it["t"], it["u"])
 
@@ -131,6 +135,7 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
             continue
         url = "https://claude.ai/artifact/" + aid
         label = "บทเรียน · " + re.sub(r"\s*\([^)]*\)\s*$", "", title)
+        names["B"][aid] = re.sub(r"\s*\([^)]*\)\s*$", "", title)
         add(strong, hit(title), "B:" + url, label, url)
         if len(parts) > 2:  # คอลัมน์ 3 = หัวข้อที่บทนั้นแตะ (ตรวจจากเนื้อหาจริง)
             add(weak, hit(parts[2]), "B:" + url, label, url)
@@ -198,8 +203,23 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
             "P": [list(v) for v in part][:4],
             "q": qd[c], "qx": qx[c],
         })
+    # ---- หัวข้อ NL ที่แต่ละแหล่งสอนเต็ม (ใช้บอกว่าบทอ่านของคาบหนึ่งซ้อนทับกันตรงไหน)
+    #   L = บท Learn (key = hash คาบ) · S = Salmon NL (<ชุด>-<คาบ>) · B = ห้องสมุด/บทข้างเตียง (artifact id)
+    #   D = Drill (hash lec) นับจากข้อสอบ จึงเป็นแค่ "แตะ"
+    src = {"L": {}, "S": {}, "B": {}, "D": {}}
+    def keyed(store, kinds):
+        for c in SCOPE:
+            for k in store[c]:
+                kind, url = k.split(":", 1)
+                if kind in kinds:
+                    sid = url.rsplit("#", 1)[1] if kind != "B" else url.rstrip("/").rsplit("/", 1)[-1]
+                    src[kind].setdefault(sid, set()).add(c)
+    keyed(strong, ("L", "S", "B"))
+    keyed(weak, ("D",))
+    src = {k: {i: sorted(v, key=key) for i, v in sorted(d.items())} for k, d in src.items()}
     out = {"asof": "13 ต.ค. 2569", "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows,
-           "qtotal": len(Q), "qsrc": {k: [nsrc[k], len(per[k])] for k in per}}
+           "qtotal": len(Q), "qsrc": {k: [nsrc[k], len(per[k])] for k in per}, "src": src,
+           "names": {k: {i: n for i, n in sorted(d.items()) if i in src[k]} for k, d in names.items()}}
     path = os.path.join(HERE, "nl_data.json")
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
