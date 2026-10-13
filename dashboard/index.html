@@ -1,298 +1,363 @@
 <title>MED421 Lectures</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@600;700&display=swap">
 <style>
-/* Layout: ward-board timeline — summary strip and per-system coverage first, then one row per lecture
-   (date block · topic · Learn/Drill actions), grouped by week or by organ system.
-   Tokens follow the sibling MED421 learn / Ward Drill pages so the three read as one kit. */
+/* Layout: a library-app frame (after the user's Pinterest reference) — icon rail · cream app panel with a
+   search pill, hero, category chips, then one plain box per lecture standing for the professor's slides,
+   grouped by system and coloured by review state · a lavender "chat" side panel listing what to review next.
+   Second tab keeps the schedule with Learn / Drill buttons. */
 :root{
-  --paper:#eef3f0; --surface:#ffffff; --sunk:#e3ebe6;
-  --ink:#0d1712; --ink-2:#3d4c44; --ink-3:#6d7f75;
-  --rule:#d8e2dc; --rule-strong:#bccbc3;
-  --accent:#8c1d2f; --accent-soft:#f6e9eb; --accent-ink:#6e1624; --on-accent:#ffffff;
-  --ok:#0f7a4a; --ok-soft:#dff0e6; --warn:#9a5f08; --warn-soft:#f8efdc;
-  --focus:#1f6feb;
-  --shadow:0 1px 2px rgba(13,23,18,.05),0 12px 28px -20px rgba(13,23,18,.3);
+  --bg:#e7dccf; --panel:#f8f3ed; --card:#fffdfa; --sunk:#efe6dc;
+  --ink:#2a221d; --ink-2:#5b4f46; --ink-3:#8b7d72; --line:#e4d8cb; --line-2:#d3c4b4;
+  --lav:#d9d4fb; --lav-2:#c4bdf6; --lav-ink:#3f3392; --lav-deep:#7d70e0;
+  --accent:#e4553f; --accent-ink:#ffffff;
+  --grad:linear-gradient(90deg,#ffb04a,#ff6f8e 52%,#9c7bff);
+  --plank:#c8a17a; --plank-2:#a9825c;
+  --ok:#2e8a57; --ok-soft:#dcf1e3; --due:#c27a10; --due-soft:#fbecd2; --todo:#d14848; --todo-soft:#fbe3e1;
+  --focus:#4b5fe0;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 18px 40px -26px rgba(60,40,20,.45);
+  --book-shadow:0 1px 1px rgba(0,0,0,.18),0 10px 18px -10px rgba(40,25,10,.55);
+  --display:"Prompt","IBM Plex Sans Thai",system-ui,sans-serif;
   --sans:"IBM Plex Sans Thai","Helvetica Neue",Arial,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
-  --r-lg:20px; --r-md:14px; --r-sm:10px;
+  --serif:"Noto Serif Thai","IBM Plex Sans Thai",Georgia,serif;
   --e:cubic-bezier(.22,.9,.28,1);
-
-  --cardio:#8c1d2f; --cardio-s:#f6e9eb;
-  --nephro:#14585f; --nephro-s:#e4eef0;
-  --chest:#4a5a86;  --chest-s:#e6e9f2;
-  --neuro:#6b3f8c;  --neuro-s:#efe8f5;
-  --air:#8a5a12;    --air-s:#f4ecdd;
-  --id:#a3402a;     --id-s:#f6e6e1;
-  --gi:#a14a07;     --gi-s:#fdead5;
-  --endo:#4d7c0f;   --endo-s:#e9f3d3;
-  --heme:#a21351;   --heme-s:#fbe0ee;
-  --onco:#6b5b3f;   --onco-s:#f0ead9;
-  --derm:#0369a1;   --derm-s:#d9eefb;
-  --mock:#4b3b8f;   --mock-s:#ebe8f7;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     color-scheme:dark;
-    --paper:#090d0b; --surface:#111915; --sunk:#18221d;
-    --ink:#e7f0ea; --ink-2:#a5b8ac; --ink-3:#788c80;
-    --rule:#1d2922; --rule-strong:#2a3830;
-    --accent:#ff8fa3; --accent-soft:#24151a; --accent-ink:#ffb3c0; --on-accent:#08110c;
-    --ok:#5fe3a1; --ok-soft:#0f2419; --warn:#e8bb63; --warn-soft:#241f10;
-    --focus:#7fb4ff;
-    --shadow:0 1px 2px rgba(0,0,0,.6),0 18px 40px -28px rgba(0,0,0,1);
-    --cardio:#ff8fa3; --cardio-s:#24151a;
-    --nephro:#5fe3a1; --nephro-s:#0f2419;
-    --chest:#8fb4ff;  --chest-s:#141b2b;
-    --neuro:#c79bff;  --neuro-s:#1d1526;
-    --air:#f5c268;    --air-s:#241d12;
-    --id:#ff9b7a;     --id-s:#2a1712;
-    --gi:#ffb46b;     --gi-s:#261a11;
-    --endo:#c2dd52;   --endo-s:#1b2110;
-    --heme:#ef86c8;   --heme-s:#26121d;
-    --onco:#cbbfa8;   --onco-s:#201d16;
-    --derm:#5fc8f0;   --derm-s:#0d2029;
-    --mock:#b3a5ff;   --mock-s:#1b1826;
+    --bg:#14100e; --panel:#1e1916; --card:#28211d; --sunk:#2f2722;
+    --ink:#f4ece3; --ink-2:#cdbfb2; --ink-3:#9d8f83; --line:#372e28; --line-2:#4a3f37;
+    --lav:#2e2950; --lav-2:#3b3566; --lav-ink:#e1dcff; --lav-deep:#a69bff;
+    --accent:#ff7560; --accent-ink:#1a0d0a;
+    --plank:#6e533c; --plank-2:#58402d;
+    --ok:#62d69b; --ok-soft:#173022; --due:#f3b54d; --due-soft:#33270f; --todo:#ff7b74; --todo-soft:#381a18;
+    --focus:#9aa8ff;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 20px 44px -28px rgba(0,0,0,.9);
+    --book-shadow:0 1px 1px rgba(0,0,0,.5),0 12px 20px -10px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --paper:#090d0b; --surface:#111915; --sunk:#18221d;
-  --ink:#e7f0ea; --ink-2:#a5b8ac; --ink-3:#788c80;
-  --rule:#1d2922; --rule-strong:#2a3830;
-  --accent:#ff8fa3; --accent-soft:#24151a; --accent-ink:#ffb3c0; --on-accent:#08110c;
-  --ok:#5fe3a1; --ok-soft:#0f2419; --warn:#e8bb63; --warn-soft:#241f10;
-  --focus:#7fb4ff;
-  --shadow:0 1px 2px rgba(0,0,0,.6),0 18px 40px -28px rgba(0,0,0,1);
-  --cardio:#ff8fa3; --cardio-s:#24151a;
-  --nephro:#5fe3a1; --nephro-s:#0f2419;
-  --chest:#8fb4ff;  --chest-s:#141b2b;
-  --neuro:#c79bff;  --neuro-s:#1d1526;
-  --air:#f5c268;    --air-s:#241d12;
-  --id:#ff9b7a;     --id-s:#2a1712;
-  --gi:#ffb46b;     --gi-s:#261a11;
-  --endo:#c2dd52;   --endo-s:#1b2110;
-  --heme:#ef86c8;   --heme-s:#26121d;
-  --onco:#cbbfa8;   --onco-s:#201d16;
-  --derm:#5fc8f0;   --derm-s:#0d2029;
-  --mock:#b3a5ff;   --mock-s:#1b1826;
+  --bg:#14100e; --panel:#1e1916; --card:#28211d; --sunk:#2f2722;
+  --ink:#f4ece3; --ink-2:#cdbfb2; --ink-3:#9d8f83; --line:#372e28; --line-2:#4a3f37;
+  --lav:#2e2950; --lav-2:#3b3566; --lav-ink:#e1dcff; --lav-deep:#a69bff;
+  --accent:#ff7560; --accent-ink:#1a0d0a;
+  --plank:#6e533c; --plank-2:#58402d;
+  --ok:#62d69b; --ok-soft:#173022; --due:#f3b54d; --due-soft:#33270f; --todo:#ff7b74; --todo-soft:#381a18;
+  --focus:#9aa8ff;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 20px 44px -28px rgba(0,0,0,.9);
+  --book-shadow:0 1px 1px rgba(0,0,0,.5),0 12px 20px -10px rgba(0,0,0,.9);
 }
-.s-cardio{--c:var(--cardio);--cs:var(--cardio-s)} .s-nephro{--c:var(--nephro);--cs:var(--nephro-s)}
-.s-chest{--c:var(--chest);--cs:var(--chest-s)}    .s-neuro{--c:var(--neuro);--cs:var(--neuro-s)}
-.s-air{--c:var(--air);--cs:var(--air-s)}          .s-id{--c:var(--id);--cs:var(--id-s)}
-.s-gi{--c:var(--gi);--cs:var(--gi-s)}             .s-endo{--c:var(--endo);--cs:var(--endo-s)}
-.s-heme{--c:var(--heme);--cs:var(--heme-s)}       .s-onco{--c:var(--onco);--cs:var(--onco-s)}
-.s-derm{--c:var(--derm);--cs:var(--derm-s)}       .s-mock{--c:var(--mock);--cs:var(--mock-s)}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;
   -webkit-font-smoothing:antialiased;overflow-wrap:break-word}
-h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:600;letter-spacing:-.01em;text-wrap:balance;line-height:1.25}
+button{font:inherit;color:inherit}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:8px}
+:focus-visible{outline:2.5px solid var(--focus);outline-offset:3px;border-radius:10px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-.wrap{max-width:1100px;margin:0 auto;padding-inline:16px}
-@media (min-width:700px){.wrap{padding-inline:24px}}
-.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
 
-/* ---------- masthead ---------- */
-.mast{padding-block:28px 8px}
-.eyebrow{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
-.mast h1{font-size:clamp(28px,6vw,40px);line-height:1.1;margin-top:8px}
-.mast p{margin:10px 0 0;color:var(--ink-2);max-width:62ch}
-.kit{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.kit a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:13.5px;
-  background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:8px 15px;color:var(--ink);
-  transition:border-color .2s var(--e),background .2s var(--e)}
-.kit a:hover{border-color:var(--rule-strong);background:var(--sunk)}
-.kit a b{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink-3)}
+/* ---------- app frame ---------- */
+.app{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;max-width:1360px;margin:0 auto;padding:16px}
+@media (max-width:899px){.app{grid-template-columns:1fr;padding:12px 16px}}
+.rail{position:sticky;top:calc(16px + env(safe-area-inset-top,0px));align-self:start;display:flex;flex-direction:column;align-items:center;gap:10px;
+  background:var(--panel);border-radius:22px;padding:14px 0;box-shadow:var(--shadow)}
+@media (max-width:899px){.rail{display:none}}
+.logo{width:38px;height:38px;border-radius:12px;background:var(--grad);display:grid;place-items:center;margin-bottom:6px}
+.logo svg{width:22px;height:22px}
+.ricon{width:42px;height:42px;border-radius:14px;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;text-decoration:none;color:var(--ink-3);
+  transition:background .2s var(--e),color .2s var(--e)}
+.ricon svg{width:21px;height:21px}
+.ricon:hover{background:var(--sunk);color:var(--ink)}
+.ricon[aria-pressed="true"]{background:var(--lav);color:var(--lav-ink)}
+.rsep{width:24px;height:1px;background:var(--line);margin:4px 0}
 
-/* ---------- summary ---------- */
-.summary{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px;margin-top:22px;align-items:start}
-@media (max-width:820px){.summary{grid-template-columns:1fr}}
-.panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:18px 20px}
-.next .lab{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--accent-ink)}
-.next .lab i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;animation:pulse 1.8s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.35}}
-.next h2{font-size:clamp(20px,3.6vw,25px);line-height:1.25;margin-top:8px}
-.next .when{margin-top:4px;color:var(--ink-2);font-size:14px}
-.next .acts{display:flex;flex-direction:row;flex-wrap:wrap;gap:8px;margin-top:14px;min-width:0}
-.next .acts>*{flex:1 1 200px}
-.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.stat{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-md);padding:13px 15px;min-width:0}
-.stat b{display:block;font-family:var(--mono);font-size:24px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
-.stat b small{font-size:14px;color:var(--ink-3);font-weight:500}
-.stat span{display:block;margin-top:5px;font-size:12.5px;color:var(--ink-3)}
-.stat.hl{background:var(--accent-soft);border-color:transparent}
-.stat.hl b{color:var(--accent-ink)}
+.frame{background:var(--panel);border-radius:26px;box-shadow:var(--shadow);padding:18px 20px 28px;min-width:0}
+@media (max-width:560px){.frame{padding:14px 12px 22px;border-radius:22px}}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}
+.brand .logo{display:none;margin:0}
+@media (max-width:899px){.brand .logo{display:grid}}
+.brand b{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em}
+.brand span{font-size:12.5px;color:var(--ink-3)}
+.search{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 5px 5px 16px;
+  flex:1 1 320px;max-width:560px;min-width:0}
+.search svg{width:17px;height:17px;color:var(--ink-3);flex:none}
+.search input{border:0;background:transparent;font:inherit;font-size:14.5px;color:var(--ink);flex:1;min-width:0;padding:6px 0;outline:none}
+.search input::placeholder{color:var(--ink-3)}
+.search:focus-within{border-color:var(--lav-deep);box-shadow:0 0 0 3px var(--lav)}
+.search button{border:0;border-radius:999px;background:var(--grad);color:#fff;font-family:var(--display);font-weight:600;font-size:13.5px;padding:7px 16px;cursor:pointer}
+.sync{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-3);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.sync i{width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
+.sync.cloud i{background:var(--ok)} .sync.busy i{background:var(--due)}
 
-/* ---------- system coverage ---------- */
-.cov-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:26px}
-.cov-head h2{font-size:18px}
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3);margin-left:auto}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.sq{width:12px;height:12px;border-radius:3px;display:inline-block;flex:none}
-.sq.l{background:var(--ink-2)} .sq.d{border:2px solid var(--ink-2)} .sq.n{background:var(--sunk);border:1px dashed var(--rule-strong)}
-.cov{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:12px}
-.sysc{appearance:none;text-align:left;font:inherit;color:var(--ink);cursor:pointer;background:var(--surface);
-  border:1px solid var(--rule);border-radius:var(--r-md);padding:12px 13px;display:flex;flex-direction:column;gap:8px;min-width:0;
-  transition:border-color .2s var(--e),transform .2s var(--e)}
-.sysc:hover{border-color:var(--c);transform:translateY(-1px)}
-.sysc[aria-pressed="true"]{border-color:var(--c);background:var(--cs);box-shadow:inset 0 0 0 1px var(--c)}
-.sysc .nm{display:flex;align-items:center;gap:7px;font-weight:700;font-size:14px}
-.sysc .nm i{width:9px;height:9px;border-radius:50%;background:var(--c);flex:none}
-.sysc .th{font-size:12px;color:var(--ink-3);line-height:1.35}
-.blocks{display:flex;gap:3px;flex-wrap:wrap}
-.blocks i{width:14px;height:14px;border-radius:3px;display:block}
-.blocks i.l{background:var(--c)}
-.blocks i.d{border:2px solid var(--c)}
-.blocks i.n{background:var(--sunk);border:1px dashed var(--rule-strong)}
-.sysc .ct{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+.tabs{display:inline-flex;background:var(--sunk);border-radius:999px;padding:4px;margin-top:16px;gap:2px;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;border-radius:999px;padding:8px 16px;font-family:var(--display);font-weight:600;font-size:14px;color:var(--ink-3);cursor:pointer;
+  transition:background .2s var(--e),color .2s var(--e)}
+.tabs button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
 
-/* ---------- controls ---------- */
-.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;margin-top:24px;padding-block:10px;
-  background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
-.controls .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.seg{display:inline-flex;background:var(--sunk);border-radius:999px;padding:3px}
-.seg button{appearance:none;border:0;background:transparent;font:inherit;font-size:13.5px;font-weight:600;color:var(--ink-3);
-  padding:7px 14px;border-radius:999px;cursor:pointer;transition:background .2s var(--e),color .2s var(--e)}
-.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-#q{flex:1 1 220px;min-width:0;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);
-  border:1px solid var(--rule-strong);border-radius:999px;padding:8px 15px}
-#q::placeholder{color:var(--ink-3)}
-.chk{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:var(--ink-2);cursor:pointer;user-select:none}
-.chk input{width:16px;height:16px;accent-color:var(--accent);margin:0}
-.filt{display:none;align-items:center;gap:6px;font-size:13px;font-weight:600;background:var(--cs);color:var(--c);
-  border:0;border-radius:999px;padding:6px 12px;cursor:pointer;font-family:inherit}
-.filt.on{display:inline-flex}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;margin-top:16px;align-items:start}
+@media (max-width:1099px){.cols{grid-template-columns:1fr}}
+main{min-width:0}
 
-/* ---------- lecture list ---------- */
-main{padding-block:8px 40px}
-.group{margin-top:26px}
-.gh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:0 2px 10px;border-bottom:1px solid var(--rule)}
-.gh h3{font-size:17px}
-.gh .sub{font-size:13px;color:var(--ink-3)}
-.gh .now{font-size:11.5px;font-weight:700;color:var(--on-accent);background:var(--accent);border-radius:999px;padding:2px 9px}
-.gh .glinks{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
-.gh .glinks a{font-size:12.5px;font-weight:600;text-decoration:none;color:var(--c,var(--ink-2));
-  border:1px solid var(--rule-strong);border-radius:999px;padding:3px 11px;background:var(--surface)}
-.gh .glinks a:hover{border-color:var(--c,var(--ink-3))}
-.list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+/* ---------- category chips (mini books) ---------- */
+.cats{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scrollbar-width:thin}
+.cat{flex:none;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:66px;border:0;background:transparent;cursor:pointer;padding:6px 4px;border-radius:14px;
+  transition:background .2s var(--e)}
+.cat:hover{background:var(--sunk)}
+.cat[aria-pressed="true"]{background:var(--card);box-shadow:0 0 0 1.5px var(--ink) inset}
+.mini{width:22px;height:30px;border-radius:2px 4px 4px 2px;background:var(--bk);position:relative;box-shadow:var(--book-shadow)}
+.mini::before{content:"";position:absolute;left:3px;top:0;bottom:0;width:2px;background:rgba(255,255,255,.35)}
+.mini.all{background:conic-gradient(from 200deg,#d5524f,#e2b33c,#6aa84f,#4f7cc2,#7b5cc4,#d5524f)}
+.cat b{font-size:12px;font-weight:600;line-height:1.2}
+.cat small{font-size:11px;color:var(--ink-3);line-height:1}
 
-.lec{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:16px;align-items:start;
-  background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);padding:14px 16px;box-shadow:var(--shadow)}
-.lec.past{background:color-mix(in srgb,var(--surface) 70%,var(--paper))}
-.lec.is-next{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent),var(--shadow)}
-@media (max-width:720px){
-  .lec{grid-template-columns:60px minmax(0,1fr);gap:12px}
-  .lec .acts{grid-column:1/-1}
-}
-.date{background:var(--cs);color:var(--c);border-radius:12px;padding:8px 4px 7px;text-align:center;line-height:1.1}
-.date .dd{font-family:var(--mono);font-size:24px;font-weight:600;display:block}
-.date .mm{font-size:12px;font-weight:600;display:block;margin-top:2px}
-.date .wd{font-size:11px;display:block;margin-top:3px;opacity:.85}
-.body{min-width:0}
-.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:4px}
-.sys{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--c)}
-.sys i{width:8px;height:8px;border-radius:50%;background:var(--c)}
-.tag{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;background:var(--sunk);color:var(--ink-2);white-space:nowrap}
-.tag.al{background:var(--warn-soft);color:var(--warn)}
-.tag.st-past{background:var(--ok-soft);color:var(--ok)}
-.tag.st-today,.tag.st-next{background:var(--accent);color:var(--on-accent)}
-.tag.st-soon{background:var(--accent-soft);color:var(--accent-ink)}
-.body h4{margin:0;font-size:16.5px;line-height:1.35;font-weight:700;letter-spacing:-.01em}
-.meta{font-size:13px;color:var(--ink-3);margin-top:3px}
-.meta .mono{color:var(--ink-2);font-size:12.5px}
-.note{font-size:12.5px;color:var(--warn);margin-top:4px}
-.more{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;align-items:center}
-.more span{font-size:11.5px;font-weight:600;color:var(--ink-3);letter-spacing:.04em}
-.more a{font-size:12.5px;text-decoration:none;color:var(--ink-2);background:var(--sunk);border-radius:8px;padding:2px 9px;
-  transition:color .2s var(--e),background .2s var(--e)}
-.more a:hover{color:var(--c);background:var(--cs)}
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;background:var(--card);border-radius:22px;padding:18px;margin-top:6px;border:1px solid var(--line)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}}
+.hero-l{display:flex;gap:18px;align-items:center;min-width:0}
+@media (max-width:460px){.hero-l{flex-direction:column;align-items:flex-start}}
+.stack{position:relative;width:150px;height:150px;flex:none}
+.stack i{position:absolute;left:var(--x);bottom:var(--y);width:var(--w);height:19px;border-radius:3px 6px 6px 3px;background:var(--c);
+  box-shadow:inset -10px 0 0 rgba(255,255,255,.22),inset 0 -3px 0 rgba(0,0,0,.12),0 2px 3px rgba(40,25,10,.25)}
+.stack i::after{content:"";position:absolute;left:14px;top:7px;width:38%;height:3px;border-radius:2px;background:rgba(255,255,255,.55)}
+.stack .stand{width:22px;height:62px;border-radius:2px 4px 4px 2px;bottom:var(--y)}
+.stack .stand::after{left:5px;top:10px;width:3px;height:36%}
+.hero-t .eyebrow{font-size:12px;font-weight:600;color:var(--ink-3);letter-spacing:.04em}
+.hero-t h1{font-size:clamp(23px,3.2vw,30px);margin-top:4px}
+.hero-t p{margin:8px 0 0;color:var(--ink-2);font-size:14px;max-width:46ch}
+.pillbtn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;border:0;border-radius:999px;background:var(--accent);color:var(--accent-ink);
+  font-family:var(--display);font-weight:600;font-size:14px;padding:9px 18px;cursor:pointer;box-shadow:0 8px 16px -10px var(--accent);
+  transition:transform .18s var(--e)}
+.pillbtn:hover{transform:translateY(-1px)} .pillbtn:active{transform:scale(.97)}
+.hero-r{display:flex;flex-direction:column;gap:8px;min-width:0}
+.hero-r h3{font-size:14px;color:var(--ink-2)}
+.recent{display:flex;align-items:center;gap:10px;border:0;background:var(--panel);border-radius:14px;padding:7px 10px;cursor:pointer;text-align:left;min-width:0;
+  transition:background .2s var(--e)}
+.recent:hover{background:var(--sunk)}
+.recent .mini{flex:none}
+.recent b{display:block;font-size:13.5px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.recent span{display:block;font-size:12px;color:var(--ink-3)}
+.recent>div{min-width:0}
+.empty-note{font-size:13px;color:var(--ink-3);background:var(--panel);border-radius:14px;padding:12px}
 
-.acts{display:flex;flex-direction:column;gap:7px;min-width:210px}
-@media (max-width:720px){.acts{flex-direction:row;flex-wrap:wrap;min-width:0}.acts>*{flex:1 1 150px}}
-.go{display:flex;flex-direction:column;gap:1px;text-decoration:none;border-radius:12px;padding:8px 13px;
-  transition:transform .18s var(--e),background .2s var(--e),border-color .2s var(--e)}
-.go:active{transform:scale(.98)}
-.go b{font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px}
-.go small{font-size:11.5px;font-family:var(--mono);font-variant-numeric:tabular-nums}
-.go.learn{background:var(--ink);color:var(--paper)}
-.go.learn small{color:color-mix(in srgb,var(--paper) 70%,var(--ink))}
-.go.learn:hover{background:var(--c)}
-.go.drill{border:1.5px solid var(--c);color:var(--c);background:var(--surface)}
-.go.drill small{color:var(--ink-3)}
-.go.drill:hover{background:var(--cs)}
-.none{font-size:12.5px;color:var(--ink-3);border:1px dashed var(--rule-strong);border-radius:12px;padding:8px 13px}
-.done{appearance:none;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:600;color:var(--ink-3);
-  background:transparent;border:0;padding:4px 2px;cursor:pointer;align-self:flex-start}
-.done .bx{width:16px;height:16px;border-radius:5px;border:1.5px solid var(--rule-strong);display:grid;place-items:center;font-size:11px;color:transparent}
-.done[aria-pressed="true"]{color:var(--ok)}
-.done[aria-pressed="true"] .bx{background:var(--ok);border-color:var(--ok);color:var(--surface)}
-.empty{padding:40px 0;text-align:center;color:var(--ink-3)}
+/* ---------- filter bar ---------- */
+.fbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.fbar .lbl{font-size:12.5px;color:var(--ink-3);margin-right:2px}
+.fpill{border:1px solid var(--line-2);background:var(--card);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;color:var(--ink-2);cursor:pointer;
+  display:inline-flex;gap:6px;align-items:center;transition:background .2s var(--e)}
+.fpill .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--ink-3))}
+.fpill[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.fpill .n{font-size:11.5px;opacity:.75}
 
-/* ---------- extras + footer ---------- */
-.extras{margin-top:34px}
+/* ---------- lecture boxes ---------- */
+.shelf{margin-top:24px}
+.sh-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sh-head h2{font-size:19px}
+.sh-head .th{font-size:13px;color:var(--ink-3)}
+.sh-head .prog{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2)}
+.bar{width:90px;height:7px;border-radius:999px;background:var(--sunk);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:999px;background:var(--ok)}
+.boxes{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px}
+@media (max-width:460px){.boxes{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.box{position:relative;display:flex;flex-direction:column;gap:8px;min-width:0;background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:12px 12px 10px;
+  transition:transform .2s var(--e),box-shadow .2s var(--e)}
+.box:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.box .open{border:0;background:transparent;padding:0;margin:0;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0;color:inherit}
+.box .kick{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--ink-3)}
+.box .kick i{width:10px;height:10px;border-radius:3px;background:var(--bk);flex:none}
+.box .ttl{font-family:var(--display);font-weight:600;font-size:14.5px;line-height:1.3;color:var(--ink);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.box .by{font-size:12.5px;color:var(--ink-3)}
+.box .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.box .foot .tag{white-space:normal;line-height:1.35;padding:2px 9px}
+.box.fresh{border-color:var(--ok);background:var(--ok-soft)}
+.box.due{border-color:var(--due);background:var(--due-soft)}
+.box.soon{border-style:dashed;background:transparent}
+.box.soon .ttl{color:var(--ink-2)}
+.box.next{box-shadow:0 0 0 2.5px var(--accent)}
+.quick{flex:none;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line-2);background:var(--card);color:var(--ink-3);cursor:pointer;
+  display:grid;place-items:center;transition:transform .18s var(--e),background .2s var(--e),color .2s var(--e)}
+.quick svg{width:16px;height:16px}
+.quick:hover{transform:scale(1.08);color:var(--ok);border-color:var(--ok)}
+.quick[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.none-found{padding:36px 0;text-align:center;color:var(--ink-3)}
+
+/* ---------- side panel (chat style) ---------- */
+.side{position:sticky;top:calc(16px + env(safe-area-inset-top,0px));display:flex;flex-direction:column;gap:12px;background:var(--card);border:1px solid var(--line);
+  border-radius:22px;padding:16px;min-width:0}
+@media (max-width:1099px){.side{position:static}}
+.side-h{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.side-h h2{font-size:16px}
+.ringwrap{display:flex;align-items:center;gap:14px}
+.ring{width:84px;height:84px;flex:none}
+.ring text{font-family:var(--display);font-weight:700;fill:var(--ink)}
+.ring .sub{font-family:var(--sans);font-weight:500;fill:var(--ink-3)}
+.ringwrap p{margin:0;font-size:13px;color:var(--ink-2);line-height:1.5}
+.ringwrap p b{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tile{border:0;text-align:left;border-radius:14px;padding:9px 11px;cursor:pointer;background:var(--sunk);min-width:0}
+.tile b{display:block;font-family:var(--display);font-size:20px;font-weight:700;line-height:1.1}
+.tile span{font-size:12px;color:var(--ink-2)}
+.tile.ok{background:var(--ok-soft)} .tile.ok b{color:var(--ok)}
+.tile.due{background:var(--due-soft)} .tile.due b{color:var(--due)}
+.tile.todo{background:var(--todo-soft)} .tile.todo b{color:var(--todo)}
+.chat{display:flex;flex-direction:column;gap:7px;background:var(--lav);border-radius:18px;padding:12px}
+.chat h3{font-size:13.5px;color:var(--lav-ink)}
+.bub{align-self:flex-end;max-width:92%;border:0;text-align:left;cursor:pointer;background:var(--lav-deep);color:#fff;border-radius:16px 16px 4px 16px;padding:8px 12px;
+  transition:transform .18s var(--e)}
+.bub:hover{transform:translateX(-2px)}
+.bub b{display:block;font-size:13px;font-weight:600;line-height:1.3}
+.bub span{display:block;font-size:11.5px;opacity:.85}
+.bub.in{align-self:flex-start;background:var(--card);color:var(--ink);border-radius:16px 16px 16px 4px}
+.bub.in span{color:var(--ink-3);opacity:1}
+.chat .quiet{font-size:12.5px;color:var(--lav-ink);opacity:.8}
+.countdown{display:flex;align-items:baseline;gap:8px;background:var(--panel);border-radius:14px;padding:10px 12px}
+.countdown b{font-family:var(--display);font-size:24px;font-weight:700;color:var(--accent)}
+.countdown span{font-size:12.5px;color:var(--ink-2)}
+.links{display:flex;flex-direction:column;gap:6px}
+.links a{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:13.5px;font-weight:600;border-radius:12px;padding:8px 10px;background:var(--panel);
+  transition:background .2s var(--e)}
+.links a:hover{background:var(--sunk)}
+.links a svg{width:17px;height:17px;color:var(--ink-3)}
+.links a small{margin-left:auto;font-size:11.5px;font-weight:500;color:var(--ink-3)}
+
+/* ---------- schedule ---------- */
+.week{margin-top:22px}
+.week-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding-bottom:8px;border-bottom:2px dashed var(--line-2)}
+.week-h h2{font-size:17px}
+.week-h span{font-size:13px;color:var(--ink-3)}
+.week-h .now{font-size:11.5px;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:2px 10px}
+.rows{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.row{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:14px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px}
+.row.past{background:color-mix(in srgb,var(--card) 65%,var(--panel))}
+.row.next{box-shadow:0 0 0 2px var(--accent)}
+@media (max-width:720px){.row{grid-template-columns:54px minmax(0,1fr)}.row .acts{grid-column:1/-1}}
+.spinedate{position:relative;height:80px;border-radius:14px;background:var(--bk);color:var(--bink);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  line-height:1.1;overflow:hidden}
+.spinedate b{font-family:var(--display);font-size:22px;font-weight:700}
+.spinedate span{font-size:11.5px;font-weight:600}
+.spinedate small{font-size:10.5px;opacity:.85;margin-top:2px}
+.rbody{min-width:0}
+.rtags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:3px}
+.sys{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--ink-2)}
+.sys i{width:9px;height:9px;border-radius:3px;background:var(--bk)}
+.tag{font-size:11px;font-weight:600;border-radius:999px;padding:1px 9px;background:var(--sunk);color:var(--ink-2);white-space:nowrap}
+.tag.al{background:var(--lav);color:var(--lav-ink)}
+.tag.fresh{background:var(--ok-soft);color:var(--ok)} .tag.due{background:var(--due-soft);color:var(--due)}
+.tag.todo{background:var(--todo-soft);color:var(--todo)} .tag.soon{background:var(--sunk);color:var(--ink-3)}
+.tag.nx{background:var(--accent);color:var(--accent-ink)}
+.rbody h3{font-size:16px;font-weight:600}
+.meta{font-size:13px;color:var(--ink-3);margin-top:2px}
+.note{font-size:12.5px;color:var(--due);margin-top:3px}
+.more{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.more span{font-size:11.5px;font-weight:600;color:var(--ink-3)}
+.more a{font-size:12.5px;text-decoration:none;color:var(--ink-2);background:var(--panel);border-radius:9px;padding:2px 9px;transition:background .2s var(--e)}
+.more a:hover{background:var(--lav);color:var(--lav-ink)}
+.acts{display:flex;flex-direction:column;gap:7px;min-width:200px}
+@media (max-width:720px){.acts{flex-direction:row;flex-wrap:wrap;min-width:0}.acts>*{flex:1 1 140px}}
+.go{display:flex;flex-direction:column;gap:1px;text-decoration:none;border-radius:14px;padding:8px 13px;transition:transform .18s var(--e),filter .2s var(--e)}
+.go:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.go b{font-family:var(--display);font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px}
+.go small{font-size:11.5px;font-variant-numeric:tabular-nums;opacity:.85}
+.go.learn{background:var(--ink);color:var(--panel)}
+.go.drill{background:var(--lav);color:var(--lav-ink)}
+.go.slide{background:var(--due-soft);color:var(--ink)}
+.go .tag{background:rgba(255,255,255,.55);color:inherit}
+.nope{font-size:12.5px;color:var(--ink-3);border:1.5px dashed var(--line-2);border-radius:14px;padding:8px 13px}
+.extras{margin-top:30px}
 .extras h2{font-size:18px}
-.extras p.lede{margin:4px 0 0;color:var(--ink-3);font-size:13.5px}
-footer{color:var(--ink-3);font-size:12.5px;padding-block:10px 40px;line-height:1.7}
+.extras>p{margin:4px 0 0;font-size:13.5px;color:var(--ink-3)}
+
+/* ---------- detail sheet ---------- */
+.scrim{position:fixed;inset:0;background:rgba(30,20,12,.42);backdrop-filter:blur(2px);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s var(--e)}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:41;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--panel);box-shadow:-20px 0 50px -20px rgba(0,0,0,.45);
+  transform:translateX(105%);transition:transform .32s var(--e);overflow-y:auto;
+  padding:calc(18px + env(safe-area-inset-top,0px)) 20px calc(26px + env(safe-area-inset-bottom,0px))}
+.sheet.on{transform:none}
+@media (max-width:620px){
+  .sheet{top:auto;left:0;width:100%;max-height:90%;border-radius:24px 24px 0 0;transform:translateY(105%)}
+  .sheet.on{transform:none}
+}
+.sh-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.sh-top span{font-size:12.5px;color:var(--ink-3)}
+.x{width:36px;height:36px;border-radius:50%;border:0;background:var(--sunk);cursor:pointer;display:grid;place-items:center}
+.x svg{width:16px;height:16px}
+.sh-main{margin-top:12px}
+.sh-main .kick{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--ink-3);margin-bottom:6px}
+.sh-main .kick i{width:11px;height:11px;border-radius:3px;background:var(--bk)}
+.sh-main h2{font-size:20px;line-height:1.3}
+.sh-main .meta{margin-top:6px}
+.sh-sec{margin-top:18px}
+.sh-sec h3{font-size:13.5px;color:var(--ink-3);font-weight:600;margin-bottom:8px}
+.statusline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}
+.revbtn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:16px;padding:12px 16px;cursor:pointer;
+  font-family:var(--display);font-weight:600;font-size:15px;background:var(--ok);color:#fff;transition:transform .18s var(--e)}
+.revbtn:active{transform:scale(.98)}
+.revbtn.undo{background:var(--sunk);color:var(--ink)}
+.revbtn svg{width:18px;height:18px}
+.hist{display:flex;flex-wrap:wrap;gap:6px}
+.hist span{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 6px 3px 11px}
+.hist button{border:0;background:transparent;cursor:pointer;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;color:var(--ink-3)}
+.hist button:hover{background:var(--todo-soft);color:var(--todo)}
+.hist button svg{width:11px;height:11px}
+.hint{font-size:12.5px;color:var(--ink-3);margin:6px 0 0}
+.golist{display:flex;flex-direction:column;gap:7px}
+footer{max-width:1360px;margin:0 auto;padding:4px 32px 34px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
 footer b{color:var(--ink-2);font-weight:600}
+@media (max-width:899px){footer{padding:4px 20px 28px}}
 </style>
 
-<header class="wrap mast">
-  <div class="eyebrow">MED421/422 · อายุรศาสตร์ · รพ.ราชวิถี · 14 ก.ย. – 22 พ.ย. 2569</div>
-  <h1>ทุกคาบบรรยาย MED</h1>
-  <p>ตารางบรรยายของกลุ่มเราทั้งหมด เรียงตามวันจริงจากปฏิทิน แต่ละคาบมีปุ่มเปิด <b>Learn</b> (บทเรียน + ข้อเช็คความเข้าใจ) และ <b>Drill</b> (ข้อสอบใหม่ + คลังเก่า MED28–35) ตรงคาบนั้นทันที</p>
-  <nav class="kit" aria-label="เว็บในชุด MED421">
-    <a id="kit-learn" href="#" target="_blank" rel="noopener">MED421 learn <b>เปิด</b></a>
-    <a id="kit-drill" href="#" target="_blank" rel="noopener">MED421 Ward Drill <b>เปิด</b></a>
-    <a id="kit-lib" href="#" target="_blank" rel="noopener">ห้องสมุดท่าอาจารย์ <b>บทข้างเตียง</b></a>
+<div class="app">
+  <nav class="rail" aria-label="เมนู">
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+    <button type="button" class="ricon" data-tab="shelf" aria-label="สไลด์อาจารย์ เช็กการทวน"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4v16H4zM10 4h4v16h-4zM16.5 5.2l3.8-1 3.2 14.8-3.8 1z" transform="translate(-1 0)"/><path d="M2 21h20"/></svg></button>
+    <button type="button" class="ricon" data-tab="schedule" aria-label="ตารางเรียนและปุ่ม Learn Drill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button>
+    <span class="rsep" aria-hidden="true"></span>
+    <a class="ricon" id="r-learn" href="#" target="_blank" rel="noopener" aria-label="เปิด MED421 learn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></a>
+    <a class="ricon" id="r-drill" href="#" target="_blank" rel="noopener" aria-label="เปิด MED421 Ward Drill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></a>
+    <a class="ricon" id="r-lib" href="#" target="_blank" rel="noopener" aria-label="เปิดห้องสมุดท่าอาจารย์"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg></a>
   </nav>
 
-  <section class="summary" aria-label="สรุป">
-    <div class="panel next" id="next"></div>
-    <div class="stats" id="stats"></div>
-  </section>
-
-  <div class="cov-head">
-    <h2>ความครอบคลุมรายระบบ</h2>
-    <div class="legend" aria-hidden="true">
-      <span><i class="sq l"></i>มีทั้ง Learn และ Drill</span>
-      <span><i class="sq d"></i>มีแค่ Drill</span>
-      <span><i class="sq n"></i>ยังไม่มี</span>
+  <div class="frame">
+    <div class="top">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+        <div><b>MED421 Lectures</b><br><span>อายุรศาสตร์ · รพ.ราชวิถี · 14 ก.ย. – 22 พ.ย. 2569</span></div>
+      </div>
+      <form class="search" id="sform" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="ค้นหาคาบ เช่น AF, thyroid, อ.สกล" autocomplete="off" aria-label="ค้นหาคาบบรรยาย">
+        <button type="submit">ค้นหา</button>
+      </form>
+      <span class="sync" id="sync"><i></i><span>บันทึกในเครื่องนี้</span></span>
     </div>
-  </div>
-  <div class="cov" id="cov" role="group" aria-label="กรองตามระบบ"></div>
-</header>
 
-<div class="controls">
-  <div class="wrap">
-    <div class="seg" role="group" aria-label="จัดกลุ่ม">
-      <button type="button" id="v-date" data-view="date">ตามวัน</button>
-      <button type="button" id="v-sys" data-view="sys">ตามระบบ</button>
+    <div class="tabs" role="group" aria-label="หน้า">
+      <button type="button" data-tab="shelf" id="t-shelf">สไลด์อาจารย์ · เช็กการทวน</button>
+      <button type="button" data-tab="schedule" id="t-schedule">ตารางเรียน · Learn &amp; Drill</button>
     </div>
-    <input id="q" type="search" placeholder="ค้นหา เช่น AF, thyroid, อ.สกล, sepsis" autocomplete="off" aria-label="ค้นหาคาบบรรยาย">
-    <label class="chk"><input type="checkbox" id="hide-done"> ซ่อนคาบที่ทวนแล้ว</label>
-    <button type="button" class="filt" id="filt" aria-label="ล้างตัวกรองระบบ"></button>
+
+    <div class="cols">
+      <main id="main"></main>
+      <aside class="side" id="side" aria-label="สรุปการทวน"></aside>
+    </div>
   </div>
 </div>
 
-<main class="wrap" id="main"></main>
-
-<section class="wrap extras" aria-labelledby="ex-h">
-  <h2 id="ex-h">นอกตารางบรรยายของกลุ่ม</h2>
-  <p class="lede">บทเรียนหรือชุดข้อสอบที่มีในเว็บ แต่ไม่ใช่คาบบรรยายในปฏิทินของกลุ่มเรา</p>
-  <div class="list" id="extras"></div>
-</section>
-
-<footer class="wrap">
-  <b>ที่มา</b> — วันเวลาและอาจารย์จาก Google Calendar (ดึงเมื่อ 13 ต.ค. 2569 · คาบที่ย้ายวันใช้วันใหม่แล้ว) ·
-  จำนวนหัวข้อและข้อสอบนับจาก MED421 learn และ Ward Drill วันเดียวกัน ·
-  ปุ่ม Learn/Drill เปิดในแท็บใหม่และกระโดดไปคาบนั้นเลย · ช่อง “ทวนแล้ว” เก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น<br>
-  <b>Drill ชุดรวม</b> = คลัง Ward Drill ยังไม่ได้แยกเป็นรายคาบสำหรับระบบนั้น ปุ่มจะพาไปกลุ่มหัวข้อที่ใกล้ที่สุด
+<footer>
+  <b>ที่มา</b> — วันเวลาและอาจารย์จาก Google Calendar (13 ต.ค. 2569 · คาบที่ย้ายวันใช้วันใหม่แล้ว) · ไฟล์สไลด์ลิงก์ไป Google Drive ของคุณ ·
+  จำนวนหัวข้อและข้อสอบนับจาก MED421 learn และ Ward Drill วันเดียวกัน · <b>ถึงรอบทวน</b> = ทวนครั้งล่าสุดผ่านมาแล้ว 3 วัน ตามนัดทวนทุก 3 วันในปฏิทิน ·
+  <b>Drill ชุดรวม</b> = คลังยังไม่แยกรายคาบสำหรับระบบนั้น
 </footer>
+
+<div class="scrim" id="scrim"></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-title" aria-hidden="true"></section>
 
 <script>
 (function(){
@@ -301,32 +366,35 @@ var LEARN="https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE";
 var DRILL="https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X";
 var LIB="https://claude.ai/artifact/QebhLmV2eKyzj3mkqstnjR";
 function A(id){return "https://claude.ai/artifact/"+id;}
-var EXAM="2026-11-17";
+function DRV(id){return "https://drive.google.com/file/d/"+id+"/view";}
+var EXAM="2026-11-17", DUE_DAYS=3;
 
-/* ระบบ: ชื่อ · ชุดใน learn · ชุดใน drill · หมวดใน Mock NL */
+/* ระบบ: ชื่อ · สีประจำระบบ · ชุดใน learn · ชุดใน drill · หมวด Mock NL */
 var SYS={
-  cardio:{label:"Cardio",th:"หัวใจและหลอดเลือด",learn:"cardio",drill:"cardio",mock:"M07"},
-  chest:{label:"Chest",th:"ระบบหายใจและทรวงอก",learn:"chest",drill:"chest",mock:"M08"},
-  nephro:{label:"Nephro",th:"ไตและสมดุลเกลือแร่",learn:"nephro",drill:"nephro",mock:"M10"},
-  neuro:{label:"Neuro",th:"ระบบประสาท",learn:"neuro",drill:"neuro",mock:"M06"},
-  id:{label:"ID",th:"โรคติดเชื้อ",learn:"id",drill:"infect",mock:"M01"},
-  gi:{label:"GI",th:"ทางเดินอาหารและตับ",learn:"gi",drill:"gi",mock:"M09"},
-  endo:{label:"Endo",th:"ต่อมไร้ท่อและเมตาบอลิซึม",learn:"endo",drill:"endo",mock:"M11"},
-  heme:{label:"Heme",th:"โลหิตวิทยา",learn:"hemonc",drill:"heme",mock:"M03"},
-  onco:{label:"Onco",th:"มะเร็งวิทยา",learn:"hemonc",drill:"onco",mock:"M02"},
-  air:{label:"AIR",th:"ภูมิแพ้ ภูมิคุ้มกัน รูมาติก",learn:"air",drill:"air",mock:"M05"},
-  derm:{label:"Derm",th:"ผิวหนัง",learn:null,drill:"derm",mock:"M04"}
+  cardio:{label:"Cardio",th:"หัวใจและหลอดเลือด",bk:"#d1504c",learn:"cardio",drill:"cardio",mock:"M07"},
+  chest:{label:"Chest",th:"ระบบหายใจและทรวงอก",bk:"#4c78bf",learn:"chest",drill:"chest",mock:"M08"},
+  nephro:{label:"Nephro",th:"ไตและสมดุลเกลือแร่",bk:"#2e968b",learn:"nephro",drill:"nephro",mock:"M10"},
+  neuro:{label:"Neuro",th:"ระบบประสาท",bk:"#7656c2",learn:"neuro",drill:"neuro",mock:"M06"},
+  id:{label:"ID",th:"โรคติดเชื้อ",bk:"#de7f35",learn:"id",drill:"infect",mock:"M01"},
+  gi:{label:"GI",th:"ทางเดินอาหารและตับ",bk:"#c99a22",learn:"gi",drill:"gi",mock:"M09"},
+  endo:{label:"Endo",th:"ต่อมไร้ท่อและเมตาบอลิซึม",bk:"#5f9e47",learn:"endo",drill:"endo",mock:"M11"},
+  heme:{label:"Heme",th:"โลหิตวิทยา",bk:"#c4457a",learn:"hemonc",drill:"heme",mock:"M03"},
+  onco:{label:"Onco",th:"มะเร็งวิทยา",bk:"#8a6a4a",learn:"hemonc",drill:"onco",mock:"M02"},
+  air:{label:"AIR",th:"ภูมิแพ้ ภูมิคุ้มกัน รูมาติก",bk:"#e3b23a",learn:"air",drill:"air",mock:"M05"},
+  derm:{label:"Derm",th:"ผิวหนัง",bk:"#52a9d1",learn:null,drill:"derm",mock:"M04"}
 };
 var ORDER=["cardio","chest","nephro","neuro","id","gi","endo","heme","onco","air","derm"];
 
-/* คาบบรรยาย — learn:[ลิงก์คาบ, หัวข้อ, ข้อเช็ค] · drill:[ลิงก์คาบ, MCQ, MEQ+OSCE, คลังเก่า, ชุดรวม?] · more:[[ชื่อ, artifact id]] */
+/* คาบบรรยาย — learn:[ลิงก์คาบ, หัวข้อ, ข้อเช็ค] · drill:[ลิงก์ lec, MCQ, MEQ+OSCE, คลังเก่า, 1=ชุดรวม]
+   sl:[[ชื่อไฟล์สไลด์, Drive file id]] · more:[[บทข้างเตียง, artifact id]] */
 var LECS=[
  {d:"2026-09-15",t:"09:00",e:"10:00",s:"chest",title:"Pulmonary TB / ABG interpretation",by:"อ.ศิวพร",
   learn:["chest-03",9,20],drill:["chest-03",8,2,12],note:"ชั่วโมงแรก: วัณโรคปอด · ABG สอนต่อ 6 ต.ค."},
  {d:"2026-09-15",t:"14:00",e:"16:00",s:"cardio",title:"Pericarditis, myocarditis",by:"อ.เจตวรงค์",
   learn:["cardio-04",12,27],drill:["cardio-04",5,1,17],more:[["Pulsus Paradoxus ข้างเตียง","1iFvgMWos7hDzUaogkVhzU"],["Inferior · Pericarditis · P wave","TbXj8Cep4rDZzSQMDw8ET1"]]},
  {d:"2026-09-17",t:"15:00",e:"16:00",s:"nephro",title:"Fluid electrolyte: Divalent (Ca · PO₄ · Mg)",by:"อ.ธิติยา",
-  learn:["nephro-05",12,29],drill:["nephro-05",6,1,15],more:[["ธาตุประจุคู่ Divalent","Qv6AC4n5iFX7LdCEPdFLuV"],["Magnesium ข้างเตียง","MaQspFooxSmaHUnzdX5EMf"]]},
+  learn:["nephro-05",12,29],drill:["nephro-05",6,1,15],sl:[["For นศพ. 4 Divalent_Ca, P, Mg (67).pdf","1-cfSazesXUXy99L4NAJKM4khAdCwAF9a"]],
+  more:[["ธาตุประจุคู่ Divalent","Qv6AC4n5iFX7LdCEPdFLuV"],["Magnesium ข้างเตียง","MaQspFooxSmaHUnzdX5EMf"]]},
  {d:"2026-09-18",t:"13:00",e:"14:00",s:"neuro",title:"Ischemic stroke, ICH",by:"อ.ธัญวรัตน์",
   learn:["neuro-07",10,26],drill:["neuro-07",24,2,16],more:[["Acute Stroke ข้างเตียง","C3nWajgmBFLpZ6yMJ9TNi1"],["Stroke in the Young","NWtBKFtKfQGaFmSABHVgTd"],["Lacunar Syndrome ข้างเตียง","PMnQxmEN9baPAKYCsnRhYc"]]},
  {d:"2026-09-18",t:"14:00",e:"16:00",s:"nephro",title:"Urinary tract infection",by:"อ.กรทิพย์",
@@ -336,48 +404,60 @@ var LECS=[
  {d:"2026-09-21",t:"13:00",e:"14:00",s:"derm",title:"Impetigo, cellulitis, herpes, viral exanthem, superficial mycoses",by:"อ.วรณิสร์",
   drill:["derm-D02",7,1,40,1]},
  {d:"2026-09-22",t:"13:00",e:"15:00",s:"air",title:"SLE and systemic autoimmune diseases",by:"อ.ปัญนิภา",
-  learn:["air-33",18,58],drill:["air-33",20,5,18],more:[["Kikuchi + SLE ข้างเตียง","Xooww4pWG8ouuHPf27ZX9h"]]},
+  learn:["air-33",18,58],drill:["air-33",20,5,18],sl:[["SLE and systemic autoimmune diseases 2567.pdf","1-iOQ1fi-NbU2pQFHRioJxw8SlzzfvEkn"]],
+  more:[["Kikuchi + SLE ข้างเตียง","Xooww4pWG8ouuHPf27ZX9h"]]},
  {d:"2026-09-23",t:"13:00",e:"14:00",s:"neuro",title:"Epilepsy",by:"อ.พิมลพรรณ",
-  learn:["neuro-23.9",12,23],drill:["neuro-N02",16,8,62,1]},
+  learn:["neuro-23.9",12,23],drill:["neuro-N02",16,8,62,1],sl:[["Lec7 Epilepsy (มีลายมือ).pdf","1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW"]]},
  {d:"2026-09-23",t:"14:30",e:"16:00",s:"chest",title:"Extrapulmonary TB",by:"อ.ภาณุวัฒน์",
   learn:["chest-23.9",12,33],drill:["chest-TB2",10,1,0]},
  {d:"2026-09-24",t:"13:00",e:"15:00",s:"cardio",title:"Ischemic heart diseases",by:"อ.สุรพันธ์",al:1,
-  learn:["cardio-13",11,46],drill:["cardio-13",7,2,23],more:[["ACS 2025 ข้างเตียง","QPaGSm5j89rc2AG1CGtmN2"],["EKG อ่าน ACS ข้างเตียง","S2q2YPJ28yrpZ352Zmu5nx"],["เส้นเลือดหัวใจข้างเตียง","UM64XLaDLJEHRVdLjhcSsG"]]},
+  learn:["cardio-13",11,46],drill:["cardio-13",7,2,23],
+  sl:[["CAD complete2019.pdf","1Pcst0l92BATWKClV00umsyNQXgdFvD4k"],["NSTEMI 2020.pdf","17iNJA1PvpedUAz8wyM4CzZBU1MAy1EdI"],["Chronic coronary syndrome 2019.pdf","1BqP50Nbbuw2BszsHKNoDnLeFlA4eoPWJ"],["STEMI2017.pdf","1j-EtRG61awYlCMKRx-q9MKymdhYF2BAA"]],
+  more:[["ACS 2025 ข้างเตียง","QPaGSm5j89rc2AG1CGtmN2"],["EKG อ่าน ACS ข้างเตียง","S2q2YPJ28yrpZ352Zmu5nx"],["เส้นเลือดหัวใจข้างเตียง","UM64XLaDLJEHRVdLjhcSsG"]]},
  {d:"2026-09-24",t:"15:00",e:"16:30",s:"nephro",title:"Nephrotic / Nephritic syndrome",by:"อ.ฉันทิศา",
-  drill:["nephro-14",6,3,18],more:[["Nephrotic Syndrome ข้างเตียง","MjrMAFHPuhcGuYPmyb6J8Z"],["ตะแกรงไต 6 คำถาม","X6vGtSKXqqWWirN5yX83JU"],["กลไกตะแกรงไตพัง","8GgzwwQDTAsxp4c1odXPAm"]]},
+  drill:["nephro-14",6,3,18],sl:[["Approach to glomerular disease.pdf","1jBWuaZbxe-3Z9lMY7vhPK3xrED2PKQSv"]],
+  more:[["Nephrotic Syndrome ข้างเตียง","MjrMAFHPuhcGuYPmyb6J8Z"],["ตะแกรงไต 6 คำถาม","X6vGtSKXqqWWirN5yX83JU"],["กลไกตะแกรงไตพัง","8GgzwwQDTAsxp4c1odXPAm"]]},
  {d:"2026-09-25",t:"10:00",e:"12:00",s:"endo",title:"Dyslipidemia, obesity and metabolic syndrome",by:"อ.นวพร",
-  learn:["endo-01",13,35],drill:["endo-E04",12,2,6]},
+  learn:["endo-01",13,35],drill:["endo-E04",12,2,6],sl:[["Lec 1 2026 MS, obesity, DLP Handout.pdf","1ttUNtkD5EXmVXVIhKuScn4Y6wOV9-yQe"]]},
  {d:"2026-09-25",t:"16:00",e:"18:00",s:"id",title:"Septicemia and antibiotic usage",by:"อ.พจน์",
-  learn:["id-25.9",11,20],drill:["infect-I01",8,2,8],more:[["Sepsis SSC 2026 ข้างเตียง","DB59ZbY5ize8MhxXiHkZJZ"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
+  learn:["id-25.9",11,20],drill:["infect-I01",8,2,8],sl:[["Sepsis _ Principle ATB medical student.pdf","10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc"]],
+  more:[["Sepsis SSC 2026 ข้างเตียง","DB59ZbY5ize8MhxXiHkZJZ"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
  {d:"2026-09-28",t:"13:00",e:"15:00",s:"chest",title:"Pleurisy, pleural effusion, empyema, respiratory failure",by:"อ.สกล",
-  learn:["chest-17",12,36],drill:["chest-17",8,3,14],more:[["Pleural Effusion ทุกแบบ","2dQ9NivX8hdLSP2vHeZ5CU"],["ICD — ทำไมต้องต่อขวดแบบนี้","Bqe2Y7pFsL1v1KmTnAr7KW"],["BTS Oxygen ข้างเตียง","VH8nbhTLwcwJd2xUPgJt3Z"]]},
+  learn:["chest-17",12,36],drill:["chest-17",8,3,14],sl:[["Lec12 Respiratory failure, pleural disease.pdf","12_uIP-b1TWP-u35yfm90Q9PT5QTNgPvp"]],
+  more:[["Pleural Effusion ทุกแบบ","2dQ9NivX8hdLSP2vHeZ5CU"],["ICD — ทำไมต้องต่อขวดแบบนี้","Bqe2Y7pFsL1v1KmTnAr7KW"],["BTS Oxygen ข้างเตียง","VH8nbhTLwcwJd2xUPgJt3Z"]]},
  {d:"2026-09-29",t:"13:00",e:"15:00",s:"air",title:"Acute arthritis, crystal arthropathy, septic arthritis",by:"อ.สูงชัย",
   learn:["air-23",9,32],drill:["air-23",17,2,15]},
  {d:"2026-09-30",t:"07:30",e:"08:30",s:"nephro",title:"Chronic kidney disease",by:"อ.วรางคณา",
   drill:["nephro-19",6,1,16]},
  {d:"2026-09-30",t:"13:00",e:"15:00",s:"endo",title:"Thyroid diseases",by:"อ.ศิวกร",
-  learn:["endo-14",13,26],drill:["endo-E02",7,1,18],more:[["Thyroid Disorder ข้างเตียง","S9FmtzVewjtqtWxnuNQxRu"]]},
+  learn:["endo-14",13,26],drill:["endo-E02",7,1,18],sl:[["Lec14 Thyroid disorder_2026.pdf","1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5"]],
+  more:[["Thyroid Disorder ข้างเตียง","S9FmtzVewjtqtWxnuNQxRu"]]},
  {d:"2026-10-01",t:"13:00",e:"15:00",s:"chest",title:"Chest X-ray interpretation / Occupational lung diseases",by:"อ.พจนี",
   drill:["chest-21",7,0,8],more:[["อ่าน Chest X-ray ให้ขาด","XE4zBCFjzc3VZbUyWnLefR"]]},
  {d:"2026-10-01",t:"15:00",e:"16:00",s:"nephro",title:"Fluid electrolytes: Dysnatremia, dyskalemia",by:"อ.ชุมพล",
-  drill:["nephro-22",6,2,22],more:[["Dysnatremia · Dyskalemia","JzyGHWeDiBLvVaMpqBiLyV"],["Approach to Hyponatremia","R5tE7oLQVHXVL5xzuQidhY"],["Approach to Hypernatremia","89V98BpEBHspJNsDSmN43t"]]},
+  drill:["nephro-22",6,2,22],sl:[["Fluid and Electrolyte Tutorial.pdf","13bjiTCP1fxxzoQYkI9-ZOMnVUwKyqFQg"]],
+  more:[["Dysnatremia · Dyskalemia","JzyGHWeDiBLvVaMpqBiLyV"],["Approach to Hyponatremia","R5tE7oLQVHXVL5xzuQidhY"],["Approach to Hypernatremia","89V98BpEBHspJNsDSmN43t"]]},
  {d:"2026-10-02",t:"13:00",e:"15:00",s:"air",title:"Approach to arthritis",by:"อ.กิตติวรรณ",al:1,
   learn:["air-23",9,32],drill:["air-23",17,2,15],note:"บทเรียนกับข้อสอบรวมอยู่คาบเดียวกับ Acute arthritis (29 ก.ย.)"},
  {d:"2026-10-05",t:"09:00",e:"10:00",s:"cardio",title:"Atrial fibrillation",by:"อ.อภิชัย",
-  learn:["cardio-24",11,41],drill:["cardio-24",5,0,16],more:[["AF ESC 2024 ข้างเตียง","7xn7YL6HBhRznK9K2jKiEa"],["HAS-BLED & CHA₂DS₂-VASc","5BqR96JYBL9ii2QGEc4EA6"]]},
+  learn:["cardio-24",11,41],drill:["cardio-24",5,0,16],sl:[["AF for medical student 4th yr (update 16 Nov 2025).pdf","1zK9eofxHl5ldCi-5IqIjyTStGVHYhlRO"]],
+  more:[["AF ESC 2024 ข้างเตียง","7xn7YL6HBhRznK9K2jKiEa"],["HAS-BLED & CHA₂DS₂-VASc","5BqR96JYBL9ii2QGEc4EA6"]]},
  {d:"2026-10-05",t:"10:00",e:"12:00",s:"id",title:"AIDS / HIV infection",by:"อ.มนัสวี",
-  learn:["id-5.10",13,27],drill:["infect-I03",8,2,18],note:"ย้ายมาจาก 9 ต.ค.",more:[["Coccidia & Microsporidia","M5Lr6tWvaQwyKHhq9aqPVq"],["Nocardia ข้างเตียง","6VDwfHMrLofGnPaJc5uqnB"],["ปอดอักเสบในภูมิคุ้มกันบกพร่อง","Anztm2vrfGJ5ipjjUdH6HR"]]},
+  learn:["id-5.10",13,27],drill:["infect-I03",8,2,18],note:"ย้ายมาจาก 9 ต.ค.",sl:[["HIV and AIDS พ.ญ.มนัสวี.pdf","13PhGovTDoDXERCeB2zfMC1_1nZq2mAlJ"]],
+  more:[["Coccidia & Microsporidia","M5Lr6tWvaQwyKHhq9aqPVq"],["Nocardia ข้างเตียง","6VDwfHMrLofGnPaJc5uqnB"],["ปอดอักเสบในภูมิคุ้มกันบกพร่อง","Anztm2vrfGJ5ipjjUdH6HR"]]},
  {d:"2026-10-05",t:"13:00",e:"15:00",s:"heme",title:"Bleeding disorder, hemophilia, ITP",by:"อ.ชัชวาล",al:1,
   drill:["heme-H02",7,1,13,1],more:[["Bleeding Disorder ข้างเตียง","EsnXvNYymsE65e5qhmPpMP"],["Primary & Secondary Hemostasis","LNeJtv3fCWL8J3Wdo8WHPL"],["VWD ข้างเตียง","4rAatByuseWExDNxC3MR2z"]]},
  {d:"2026-10-06",t:"09:00",e:"10:00",s:"chest",title:"Pulmonary TB / ABG (ต่อ) — Arterial blood gas",by:"อ.ศิวพร",
   learn:["chest-26",6,19],drill:["chest-26",8,1,10],more:[["ABG ข้างเตียง","99TuNJgzfqZ58zRheYGg7R"]]},
  {d:"2026-10-06",t:"10:00",e:"11:00",s:"cardio",title:"Rheumatic fever and valvular heart disease",by:"อ.ชนัญญา",
-  learn:["cardio-27",13,47],drill:["cardio-27",6,2,23],more:[["Stenosis Murmur ข้างเตียง","X565KqcoqWxHHe9mKPCENU"],["Regurgitation Murmur ข้างเตียง","E6fFYcMsvMytsjuBhZWS4A"],["Full Heart Examination","WAcnzuQf4vJmu7V7suKqBP"]]},
+  learn:["cardio-27",13,47],drill:["cardio-27",6,2,23],sl:[["Lec 4 VHD student 4th year (อ.ชนัญญา).pdf","1IVsvzRiGSfwCrfi6wcJt49fkwP4Zfzq2"]],
+  more:[["Stenosis Murmur ข้างเตียง","X565KqcoqWxHHe9mKPCENU"],["Regurgitation Murmur ข้างเตียง","E6fFYcMsvMytsjuBhZWS4A"],["Full Heart Examination","WAcnzuQf4vJmu7V7suKqBP"]]},
  {d:"2026-10-08",t:"14:30",e:"16:00",s:"nephro",title:"Urine analysis, common abdominal pain in nephro",by:"อ.ธนิศร",
   drill:["nephro-28",5,2,16]},
  {d:"2026-10-09",t:"16:00",e:"17:30",s:"id",title:"Sexually transmitted diseases",by:"อ.พจน์"},
  {d:"2026-10-12",t:"10:00",e:"12:00",s:"gi",title:"Acute hepatitis and hepatic failure",by:"อ.เฉลิมรัฐ",
-  learn:["gi-12.10",11,16],drill:["gi-G02",7,3,23,1],more:[["ห่วงโซ่ตับ HBV ถึง Varices","BcBGEAwj1UZxgyTc8VmAcP"]]},
+  learn:["gi-12.10",11,16],drill:["gi-G02",7,3,23,1],sl:[["Lec Acute and chronic hepatitis for MS4 2020.pdf","1X6QMVuq2GWT3SLbV9VactnQ11MVtml98"]],
+  more:[["ห่วงโซ่ตับ HBV ถึง Varices","BcBGEAwj1UZxgyTc8VmAcP"]]},
  {d:"2026-10-12",t:"13:00",e:"15:00",s:"heme",title:"Approach to WBC disorder and lymphadenopathy",by:"อ.เบญจมาภรณ์",al:1,
   drill:["heme-H03",7,1,13,1],more:[["Lymphoma ข้างเตียง","SgMbR3kdd4sNDkwxRNfCkp"],["Hodgkin Lymphoma ข้างเตียง","G1vUm69fgbm5CY8oFGreoM"],["Neck Mass ข้างเตียง","9qjVQ2eMQs3ZqqAKRgy8RX"]]},
  {d:"2026-10-14",t:"10:30",e:"12:30",s:"endo",title:"Diabetes mellitus (incl. DKA)",by:"อ.ชัยชาญ",
@@ -391,18 +471,20 @@ var LECS=[
  {d:"2026-10-21",t:"13:00",e:"15:00",s:"neuro",title:"Acute confusional state and alteration of consciousness",by:"อ.เพชรรัตน์",
   learn:["neuro-21.10",15,30],drill:["neuro-N02",16,8,62,1],more:[["Coma สามทางแยก","M5f4yCLVrJSH1MXu8DxA5G"],["ลมหายใจบอกชั้นสมอง","6FYVFAHusEVnge2sKi5Nc2"]]},
  {d:"2026-10-21",t:"15:00",e:"16:00",s:"cardio",title:"Shock",by:"อ.เจตวรงค์",al:1,
-  learn:["cardio-10",8,23],drill:["cardio-10",5,1,15],note:"ย้ายมาจาก 22 ก.ย.",more:[["ตารางยาหดหลอดเลือด","T71r7Gyn9Xrf32hevEFbfH"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
+  learn:["cardio-10",8,23],drill:["cardio-10",5,1,15],note:"ย้ายมาจาก 22 ก.ย.",sl:[["Circulatory Shock.pdf","1dVp3lJT6SsIXDgeLESAsVAWxPxr630cx"]],
+  more:[["ตารางยาหดหลอดเลือด","T71r7Gyn9Xrf32hevEFbfH"],["Lactate บนกราฟ Starling","FgKhyrQCXWt1C6VcCAZiEC"]]},
  {d:"2026-10-22",t:"15:00",e:"16:00",s:"nephro",title:"Urethral catheterization",by:"อ.ธนิศร",note:"คาบหัตถการ"},
  {d:"2026-10-26",t:"13:00",e:"16:00",s:"cardio",title:"Hypertension / Heart failure / Pulmonary edema",by:"อ.วิไล",
   drill:["cardio-39",6,2,21],more:[["HF Diagnosis ตามกลไก","G7DxSNFLe2p3JaQR4yUsTg"],["HF Management ตามกลไก","GGgq9LQjgfdnfF7wqrQ6pT"],["Acute HF ข้างเตียง","5kc5Q49wwBiiiQEZ3RaMCp"]]},
  {d:"2026-10-27",t:"13:00",e:"14:00",s:"gi",title:"Approach to abdominal pain",by:"อ.กิตติ",
-  learn:["gi-27.10",11,23],drill:["gi-G03",7,1,15,1]},
+  learn:["gi-27.10",11,23],drill:["gi-G03",7,1,15,1],sl:[["Lec Approach to abdominal pain 65.pdf","10g5J-s6Zv5JZB3RbHs6dh2QWUR5Xzr5V"]]},
  {d:"2026-10-29",t:"13:00",e:"14:00",s:"gi",title:"Liver function tests",by:"อ.กิตติ",
-  learn:["gi-29.10",8,17],drill:["gi-G02",7,3,23,1],note:"ย้ายมาจาก 6 ต.ค."},
+  learn:["gi-29.10",8,17],drill:["gi-G02",7,3,23,1],note:"ย้ายมาจาก 6 ต.ค.",sl:[["Lec Liver Function Tests 63.pdf","1HWt4TMmRmpgSw8lT_NIjt74YQ5LC-zJ3"]]},
  {d:"2026-10-30",t:"13:00",e:"15:00",s:"nephro",title:"Acute kidney injury",by:"อ.วรรณิยา",
   drill:["nephro-42",6,1,20],more:[["AKI สามท่อ","GWfxJG4kLPTxLbrdEB2xNz"],["AKI Player","DRtkqA47o9GxEWE4PAWoNt"]]},
  {d:"2026-11-02",t:"13:00",e:"16:00",s:"onco",title:"General oncology",by:"อ.ปิยวรรณ",
-  learn:["hemonc-2.11",13,45],drill:["onco-O01",12,2,44],more:[["General Oncology ข้างเตียง","1ZTNsfXzk6C6eXm1DtRdeV"],["Lung Cancer ข้างเตียง","AAmUw4YT4o9Xdf3BAMbsgY"],["Febrile Neutropenia ข้างเตียง","JgZNGWmtDYn9PhKH87RSpZ"]]},
+  learn:["hemonc-2.11",13,45],drill:["onco-O01",12,2,44],sl:[["Lec 1 General Oncology.pdf","1nzh5iBJ_uJ5uP9_q2zDlAxQ-Opw5xRJg"]],
+  more:[["General Oncology ข้างเตียง","1ZTNsfXzk6C6eXm1DtRdeV"],["Lung Cancer ข้างเตียง","AAmUw4YT4o9Xdf3BAMbsgY"],["Febrile Neutropenia ข้างเตียง","JgZNGWmtDYn9PhKH87RSpZ"]]},
  {d:"2026-11-03",t:"13:00",e:"15:00",s:"gi",title:"Liver cirrhosis and complications",by:"อ.สยาม",
   drill:["gi-G02",7,3,23,1],more:[["Cirrhosis ตับวายเรื้อรัง","4WzSNuBss4nkTzahFMXWmu"],["SAAG ข้างเตียง","BsushEbQD2tpGXb83RPwLJ"],["Signs of CLD ข้างเตียง","RMURRtSBTacMRWkCDzZZgM"]]},
  {d:"2026-11-09",t:"08:00",e:"10:00",s:"heme",title:"Anemia, nutritional deficiency, G6PD, thalassemia",by:"อ.คุณาภา",al:1,
@@ -410,198 +492,348 @@ var LECS=[
  {d:"2026-11-11",t:"13:00",e:"15:00",s:"derm",title:"Dermatitis, eczema, urticaria, STDs, leprosy",by:"อ.ภูริชญ์",
   drill:["derm",14,2,48,1]}
 ];
-
-/* นอกตาราง */
 var EXTRAS=[
  {s:"air",title:"Allergy and clinical immunology",by:"คาบ 08 ของตารางกลุ่ม 3 (C+D)",
   learn:["air-08",9,25],drill:["air-08",13,3,23],note:"ไม่มีในปฏิทินของกลุ่มเรา แต่มีครบทั้งบทเรียนและข้อสอบ"},
  {s:"neuro",title:"หัตถการ: Lumbar puncture, ophthalmoscope, Snellen chart",by:"อ.ดำรงวิทย์ · ศ. 9 ต.ค. 13:00",
   learn:["neuro-9.10",6,10],more:[["Lumbar Puncture ข้างเตียง","8r8jUni9fb6DHaD6rGR3JB"]]},
- {s:"mock",title:"Mock NL Part 1 — ข้อสอบจำลอง 200 ข้อ แยก 11 สาขา",by:"ชุดจำลอง ศรว. ขั้นตอนที่ 1",
-  drill:["mock",200,0,0]}
+ {s:"mock",title:"Mock NL Part 1 — ข้อสอบจำลอง 200 ข้อ แยก 11 สาขา",by:"ชุดจำลอง ศรว. ขั้นตอนที่ 1",drill:["mock",200,0,0]}
 ];
+SYS.mock={label:"Mock NL",th:"ข้อสอบจำลอง",bk:"#6f5fc4"};
 
 /* ---------- เวลา ---------- */
 var TH_M=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
 var TH_D=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."];
+var TH_DF=["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสฯ","ศุกร์","เสาร์"];
 var START=Date.UTC(2026,8,14), DAY=864e5;
-function parts(d){var p=d.split("-");return {y:+p[0],m:+p[1],d:+p[2]};}
-function utc(d){var p=parts(d);return Date.UTC(p.y,p.m-1,p.d);}
+function utc(d){var p=d.split("-");return Date.UTC(+p[0],+p[1]-1,+p[2]);}
 function at(d,t){return new Date(d+"T"+t+":00+07:00").getTime();}
 function weekOf(d){return Math.floor((utc(d)-START)/DAY/7)+1;}
-function weekRange(w){
-  var a=new Date(START+(w-1)*7*DAY),b=new Date(START+((w-1)*7+6)*DAY);
-  return a.getUTCDate()+(a.getUTCMonth()===b.getUTCMonth()?"":" "+TH_M[a.getUTCMonth()])+" – "+b.getUTCDate()+" "+TH_M[b.getUTCMonth()];
-}
-function thDate(d){var p=parts(d),wd=new Date(utc(d)).getUTCDay();return TH_D[wd]+" "+p.d+" "+TH_M[p.m-1];}
-function todayBkk(){
-  var n=new Date(Date.now()+7*3600e3);
-  return Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate());
-}
-var NOW=Date.now(), TODAY=todayBkk();
+function weekRange(w){var a=new Date(START+(w-1)*7*DAY),b=new Date(START+((w-1)*7+6)*DAY);
+  return a.getUTCDate()+(a.getUTCMonth()===b.getUTCMonth()?"":" "+TH_M[a.getUTCMonth()])+" – "+b.getUTCDate()+" "+TH_M[b.getUTCMonth()];}
+function dshort(d){var x=new Date(utc(d));return x.getUTCDate()+" "+TH_M[x.getUTCMonth()];}
+function dlong(d){var x=new Date(utc(d));return TH_DF[x.getUTCDay()]+" "+x.getUTCDate()+" "+TH_M[x.getUTCMonth()];}
+var NOW=Date.now();
+var TODAY=(function(){var n=new Date(NOW+7*3600e3);return n.toISOString().slice(0,10);})();
+function daysBetween(a,b){return Math.round((utc(b)-utc(a))/DAY);}
 
-LECS.forEach(function(l,i){
+/* ---------- สีประจำระบบ ---------- */
+function hexRgb(h){h=h.replace("#","");return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+function lum(h){var c=hexRgb(h).map(function(v){v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4);});return .2126*c[0]+.7152*c[1]+.0722*c[2];}
+
+var BYID={};
+LECS.forEach(function(l){
   l.id=l.d+"-"+l.t.replace(":","");
-  l.start=at(l.d,l.t); l.end=at(l.d,l.e);
-  l.week=weekOf(l.d); l.idx=i;
+  l.start=at(l.d,l.t); l.end=at(l.d,l.e); l.week=weekOf(l.d);
+  l.bk=SYS[l.s].bk; l.bink=lum(l.bk)>.42?"#2a1d10":"#ffffff";
+  BYID[l.id]=l;
 });
-var NEXT=null;
-LECS.forEach(function(l){if(!NEXT&&l.end>NOW)NEXT=l;});
+EXTRAS.forEach(function(x){x.bk=SYS[x.s].bk;x.bink=lum(x.bk)>.42?"#2a1d10":"#ffffff";});
+var NEXT=null;LECS.forEach(function(l){if(!NEXT&&l.end>NOW)NEXT=l;});
+
+/* ---------- บันทึกการทวน: บัญชีของคุณ (db) หรือในเครื่องนี้ ---------- */
+var LKEY="med421-slides-v1";
+var R={};          /* id -> ["2026-10-12", ...] วันที่ทวน เรียงจากเก่าไปใหม่ */
+var SYNC={mode:"local",ref:null,writing:false,dirty:false,err:""};
+function clean(obj){var o={};if(!obj||typeof obj!=="object")return o;
+  Object.keys(obj).forEach(function(id){if(!BYID[id]||!Array.isArray(obj[id]))return;
+    var ds=obj[id].filter(function(x){return typeof x==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(x);});
+    ds=ds.filter(function(x,i){return ds.indexOf(x)===i;}).sort().slice(-40);
+    if(ds.length)o[id]=ds;});return o;}
+try{var raw=localStorage.getItem(LKEY);if(raw)R=clean(JSON.parse(raw).reviews);
+  var old=localStorage.getItem("med421-lectures-v1");
+  if(old){var ov=JSON.parse(old);if(ov&&ov.done)Object.keys(ov.done).forEach(function(id){if(BYID[id]&&!R[id])R[id]=[TODAY];});}
+}catch(e){}
+function saveLocal(){try{localStorage.setItem(LKEY,JSON.stringify({reviews:R}));}catch(e){}}
+function same(a,b){return JSON.stringify(a)===JSON.stringify(b);}
+function union(a,b){var o={};[a,b].forEach(function(src){Object.keys(src).forEach(function(id){o[id]=(o[id]||[]).concat(src[id]);});});return clean(o);}
+function writeCloud(){
+  if(SYNC.mode!=="cloud"||!SYNC.ref)return;
+  if(SYNC.writing){SYNC.dirty=true;return;}
+  SYNC.writing=true;SYNC.dirty=false;renderSync();
+  var body={reviews:JSON.parse(JSON.stringify(R)),updatedAt:new Date().toISOString(),v:1};
+  SYNC.ref.set(body).then(function(){
+    SYNC.writing=false;renderSync();if(SYNC.dirty)writeCloud();
+  },function(e){
+    SYNC.writing=false;
+    if(e&&e.code==="unavailable"&&!SYNC.retried){SYNC.retried=1;setTimeout(writeCloud,800+Math.random()*900);return;}
+    SYNC.mode="local";SYNC.err="บันทึกขึ้นบัญชีไม่ได้ ตอนนี้เก็บในเครื่องนี้แทน";renderSync();
+  });
+}
+function commit(){saveLocal();writeCloud();render();}
+(function connect(){
+  if(!window.claude||typeof window.claude.use!=="function")return;
+  Promise.all([window.claude.use("db"),window.claude.use("user")]).then(function(r){
+    var db=r[0],user=r[1];if(!db||!user)return null;
+    return user.id().then(function(uid){
+      if(!uid)return;
+      var ref=db.doc("data/users/"+uid+"/slides"),first=true;
+      ref.onSnapshot(function(snap){
+        var cloud=snap.exists?clean((snap.data()||{}).reviews):{};
+        if(first){
+          first=false;SYNC.mode="cloud";SYNC.ref=ref;
+          var merged=union(cloud,R);R=merged;saveLocal();
+          if(!same(merged,cloud))writeCloud();
+          render();return;
+        }
+        if(SYNC.writing||SYNC.dirty||snap.metadata&&snap.metadata.hasPendingWrites)return;
+        if(!same(cloud,R)){R=cloud;saveLocal();render();}
+      },function(){SYNC.mode="local";SYNC.err="";renderSync();});
+    });
+  }).catch(function(){});
+})();
+
+/* ---------- สถานะการทวนของแต่ละคาบ ---------- */
 function status(l){
-  if(l.end<=NOW)return {k:"past",t:"เรียนแล้ว"};
-  if(l.start<=NOW)return {k:"today",t:"กำลังบรรยาย"};
-  var days=Math.round((utc(l.d)-TODAY)/DAY);
-  if(days===0)return {k:"today",t:"วันนี้ "+l.t};
-  if(l===NEXT)return {k:"next",t:days===1?"คาบถัดไป · พรุ่งนี้":"คาบถัดไป · อีก "+days+" วัน"};
-  if(days<=7)return {k:"soon",t:"อีก "+days+" วัน"};
-  return {k:"later",t:"อีก "+days+" วัน"};
+  var ds=R[l.id]||[];
+  if(!ds.length){
+    if(l.start>NOW)return {k:"soon",t:l===NEXT?"คาบถัดไป · "+dshort(l.d):"ยังไม่ถึงคาบ · "+dshort(l.d)};
+    return {k:"todo",t:"ยังไม่ทวน"};
+  }
+  var ago=daysBetween(ds[ds.length-1],TODAY),n=ds.length;
+  if(ago>=DUE_DAYS)return {k:"due",t:"ถึงรอบทวน · ทวนล่าสุด "+ago+" วันก่อน",n:n,ago:ago};
+  return {k:"fresh",t:(ago<=0?"ทวนวันนี้แล้ว":"ทวนเมื่อ "+ago+" วันก่อน")+" · รอบที่ "+n,n:n,ago:ago};
+}
+function reviewedToday(l){var ds=R[l.id]||[];return ds.length&&ds[ds.length-1]===TODAY;}
+function markToday(id){var ds=(R[id]||[]).slice();if(ds.indexOf(TODAY)<0)ds.push(TODAY);R[id]=ds.sort();commit();}
+function unmarkDate(id,d){var ds=(R[id]||[]).filter(function(x){return x!==d;});if(ds.length)R[id]=ds;else delete R[id];commit();}
+function toggleToday(id){if(reviewedToday(BYID[id]))unmarkDate(id,TODAY);else markToday(id);}
+function counts(list){var c={fresh:0,due:0,todo:0,soon:0};(list||LECS).forEach(function(l){c[status(l).k]++;});c.done=c.fresh+c.due;return c;}
+function suggestions(){
+  var due=[],todo=[];
+  LECS.forEach(function(l){var s=status(l);if(s.k==="due")due.push({l:l,s:s});else if(s.k==="todo")todo.push({l:l,s:s});});
+  due.sort(function(a,b){return b.s.ago-a.s.ago;});
+  return due.concat(todo);
 }
 
 /* ---------- state ---------- */
-var KEY="med421-lectures-v1";
-var st={view:"date",sys:"",q:"",hide:false,done:{}};
-try{var raw=localStorage.getItem(KEY);if(raw){var sv=JSON.parse(raw);
-  if(sv&&typeof sv==="object"){if(sv.view==="sys")st.view="sys";if(SYS[sv.sys])st.sys=sv.sys;
-    st.hide=!!sv.hide;if(sv.done&&typeof sv.done==="object")st.done=sv.done;}}}catch(e){}
-function save(){try{localStorage.setItem(KEY,JSON.stringify({view:st.view,sys:st.sys,hide:st.hide,done:st.done}));}catch(e){}}
+var VKEY="med421-dash-view-v2";
+var st={tab:"shelf",sys:"",f:"all",q:"",open:null};
+try{var vv=JSON.parse(localStorage.getItem(VKEY)||"{}");if(vv.tab==="schedule")st.tab="schedule";if(SYS[vv.sys])st.sys=vv.sys;}catch(e){}
+var h0=String(location.hash||"").replace(/^#/,"");if(h0==="schedule"||h0==="shelf")st.tab=h0;
+function saveView(){try{localStorage.setItem(VKEY,JSON.stringify({tab:st.tab,sys:st.sys}));}catch(e){}}
 
-/* ---------- html helpers ---------- */
-function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-function link(url,cls,inner,label){return "<a class='"+cls+"' href='"+esc(url)+"' target='_blank' rel='noopener'"+(label?" aria-label='"+esc(label)+"'":"")+">"+inner+"</a>";}
+/* ---------- helpers ---------- */
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+function ext(url,cls,inner,label){return "<a class='"+cls+"' href='"+esc(url)+"' target='_blank' rel='noopener'"+(label?" aria-label='"+esc(label)+"'":"")+">"+inner+"</a>";}
+var ICON={
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg>',
+  target:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>',
+  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg>'
+};
+function matches(l){
+  if(st.sys&&l.s!==st.sys)return false;
+  if(st.q){var hay=(l.title+" "+l.by+" "+SYS[l.s].label+" "+SYS[l.s].th+" "+(l.note||"")+" "+
+      (l.more||[]).map(function(m){return m[0];}).join(" ")+" "+(l.sl||[]).map(function(m){return m[0];}).join(" ")).toLowerCase();
+    if(!st.q.toLowerCase().split(/\s+/).every(function(w){return !w||hay.indexOf(w)>=0;}))return false;}
+  return true;
+}
+function passStatus(l){var k=status(l).k;
+  if(st.f==="all")return true; if(st.f==="done")return k==="fresh"||k==="due"; return k===st.f;}
+function shortLabel(l,s){
+  if(s.k==="fresh")return "✓ ทวนแล้ว · รอบ "+s.n;
+  if(s.k==="due")return "ถึงรอบทวน · "+s.ago+" วันแล้ว";
+  if(s.k==="todo")return "ยังไม่ทวน";
+  return l===NEXT?"คาบถัดไป":"ยังไม่ถึงคาบ";
+}
+function boxHtml(l){
+  var s=status(l),t=reviewedToday(l),S=SYS[l.s];
+  return "<div class='box "+s.k+(l===NEXT?" next":"")+"' style='--bk:"+l.bk+"'>"+
+    "<button type='button' class='open' data-open='"+l.id+"' aria-label='"+esc(l.title+" · "+l.by+" · "+s.t+" · เปิดรายละเอียด")+"'>"+
+      "<span class='kick'><i></i>"+esc(S.label)+" · "+esc(dshort(l.d))+(l.al?" · Active learning":"")+"</span>"+
+      "<span class='ttl'>"+esc(l.title)+"</span><span class='by'>"+esc(l.by)+" · <span class='num'>"+l.t+"</span></span></button>"+
+    "<div class='foot'><span class='tag "+s.k+"'>"+esc(shortLabel(l,s))+"</span>"+
+      "<button type='button' class='quick' data-quick='"+l.id+"' aria-pressed='"+(t?"true":"false")+"' aria-label='"+(t?"ยกเลิกการทวนวันนี้ของ ":"บันทึกว่าทวนวันนี้: ")+esc(l.title)+"'>"+ICON.check+"</button></div>"+
+  "</div>";
+}
 function learnBtn(l){
-  if(!l.learn)return "<div class='none'>ยังไม่มีบทเรียน Learn</div>";
-  return link(LEARN+"#"+l.learn[0],"go learn","<b>Learn</b><small>"+l.learn[1]+" หัวข้อ · "+l.learn[2]+" ข้อเช็ค</small>","เปิดบทเรียน "+l.title);
+  if(!l.learn)return "<div class='nope'>ยังไม่มีบทเรียน Learn</div>";
+  return ext(LEARN+"#"+l.learn[0],"go learn","<b>"+ICON.book.replace("<svg","<svg width='16' height='16'")+"Learn</b><small>"+l.learn[1]+" หัวข้อ · "+l.learn[2]+" ข้อเช็ค</small>","เปิดบทเรียน "+l.title);
 }
 function drillBtn(l){
-  if(!l.drill)return "<div class='none'>ยังไม่มีข้อสอบใน Drill</div>";
-  var x=l.drill,bits=["MCQ "+x[1]];
-  if(x[2])bits.push("MEQ/OSCE "+x[2]);
-  if(x[3])bits.push("เก่า "+x[3]);
-  return link(DRILL+"#"+x[0],"go drill","<b>Drill"+(x[4]?" <span class='tag'>ชุดรวม</span>":"")+"</b><small>"+bits.join(" · ")+"</small>","เปิดข้อสอบ "+l.title);
+  if(!l.drill)return "<div class='nope'>ยังไม่มีข้อสอบใน Drill</div>";
+  var x=l.drill,bits=["MCQ "+x[1]];if(x[2])bits.push("MEQ/OSCE "+x[2]);if(x[3])bits.push("เก่า "+x[3]);
+  return ext(DRILL+"#"+x[0],"go drill","<b>"+ICON.target.replace("<svg","<svg width='16' height='16'")+"Drill"+(x[4]?" <span class='tag'>ชุดรวม</span>":"")+"</b><small>"+bits.join(" · ")+"</small>","เปิดข้อสอบ "+l.title);
 }
 function moreLinks(l){
   if(!l.more||!l.more.length)return "";
-  return "<div class='more'><span>อ่านคู่</span>"+l.more.map(function(m){return link(A(m[1]),"",esc(m[0]));}).join("")+"</div>";
+  return "<div class='more'><span>อ่านคู่</span>"+l.more.map(function(m){return ext(A(m[1]),"",esc(m[0]));}).join("")+"</div>";
 }
+
+/* ---------- shelf tab ---------- */
+function stackHtml(){
+  var c=[["#d1504c",8,0,128],["#4c78bf",0,19,140],["#5f9e47",14,38,118],["#e3b23a",4,57,132],["#7656c2",18,76,110],["#c4457a",8,95,124]];
+  return "<div class='stack' aria-hidden='true'>"+c.map(function(b){return "<i style='--c:"+b[0]+";--x:"+b[1]+"px;--y:"+b[2]+"px;--w:"+b[3]+"px'></i>";}).join("")+
+    "<i class='stand' style='--c:#2e968b;--x:34px;--y:114px'></i><i class='stand' style='--c:#de7f35;--x:58px;--y:114px;height:54px'></i><i class='stand' style='--c:#52a9d1;--x:82px;--y:114px;height:58px'></i></div>";
+}
+function renderShelf(){
+  var c=counts(),list=LECS.filter(matches);
+  var h="";
+  /* category chips */
+  h+="<div class='cats' role='group' aria-label='เลือกระบบ'><button type='button' class='cat' data-sys='' aria-pressed='"+(!st.sys)+"'><span class='mini all'></span><b>ทั้งหมด</b><small class='num'>"+c.done+"/"+LECS.length+"</small></button>"+
+    ORDER.map(function(k){var ls=LECS.filter(function(l){return l.s===k;});var cc=counts(ls);
+      return "<button type='button' class='cat' data-sys='"+k+"' aria-pressed='"+(st.sys===k)+"'><span class='mini' style='--bk:"+SYS[k].bk+"'></span><b>"+esc(SYS[k].label)+"</b><small class='num'>"+cc.done+"/"+ls.length+"</small></button>";}).join("")+"</div>";
+  /* hero */
+  var sug=suggestions(),held=LECS.length-c.soon;
+  var rec=LECS.filter(function(l){return R[l.id];}).sort(function(a,b){var x=R[a.id],y=R[b.id];return x[x.length-1]<y[y.length-1]?1:-1;}).slice(0,3);
+  h+="<section class='hero'><div class='hero-l'>"+stackHtml()+"<div class='hero-t'><div class='eyebrow'>MED421 · สไลด์อาจารย์</div>"+
+    "<h1>ทวนแล้ว <span class='num'>"+c.done+"</span> จาก "+LECS.length+" คาบ</h1>"+
+    "<p>หนึ่งกล่องคือสไลด์ของหนึ่งคาบบรรยาย กดวงกลมในกล่องเมื่อทวนจบ กล่องจะเป็นสีเขียว พอผ่านไป 3 วันจะเปลี่ยนเป็นสีส้มให้กลับมาทวนอีกรอบ</p>"+
+    (sug.length?"<button type='button' class='pillbtn' data-open='"+sug[0].l.id+"'>ทวนต่อ: "+esc(sug[0].l.title.length>24?sug[0].l.title.slice(0,23)+"…":sug[0].l.title)+"</button>"
+      :"<button type='button' class='pillbtn' data-tab='schedule'>ดูตารางเรียน</button>")+
+    "</div></div><div class='hero-r'><h3>เพิ่งทวน</h3>"+
+    (rec.length?rec.map(function(l){var ds=R[l.id];var ago=daysBetween(ds[ds.length-1],TODAY);
+      return "<button type='button' class='recent' data-open='"+l.id+"'><span class='mini' style='--bk:"+l.bk+"'></span><div><b>"+esc(l.title)+"</b><span>"+(ago<=0?"วันนี้":ago+" วันก่อน")+" · รอบที่ "+ds.length+" · "+esc(l.by)+"</span></div></button>";}).join("")
+      :"<div class='empty-note'>ยังไม่ได้ทวนคาบไหน เริ่มจาก "+held+" คาบที่เรียนไปแล้วได้เลย</div>")+
+    "</div></section>";
+  /* status filter */
+  var fs=[["all","ทั้งหมด",LECS.length],["todo","ยังไม่ทวน",c.todo],["due","ถึงรอบทวน",c.due],["done","ทวนแล้ว",c.done],["soon","ยังไม่ถึงคาบ",c.soon]];
+  h+="<div class='fbar' role='group' aria-label='กรองตามสถานะ'><span class='lbl'>สถานะ</span>"+fs.map(function(f){
+    var col=f[0]==="todo"?"var(--todo)":f[0]==="due"?"var(--due)":f[0]==="done"?"var(--ok)":"var(--ink-3)";
+    return "<button type='button' class='fpill' data-f='"+f[0]+"' aria-pressed='"+(st.f===f[0])+"' style='--c:"+col+"'>"+(f[0]==="all"?"":"<span class='dot'></span>")+f[1]+" <span class='n num'>"+f[2]+"</span></button>";}).join("")+"</div>";
+  /* shelves */
+  var any=false;
+  ORDER.forEach(function(k){
+    var ls=list.filter(function(l){return l.s===k&&passStatus(l);});
+    if(!ls.length)return;any=true;
+    var all=LECS.filter(function(l){return l.s===k;}),cc=counts(all);
+    h+="<section class='shelf'><div class='sh-head'><span class='mini' style='--bk:"+SYS[k].bk+"'></span><h2>"+esc(SYS[k].label)+"</h2><span class='th'>"+esc(SYS[k].th)+"</span>"+
+      "<span class='prog'><span class='num'>ทวนแล้ว "+cc.done+"/"+all.length+"</span><span class='bar'><i style='width:"+Math.round(cc.done*100/all.length)+"%'></i></span></span></div>"+
+      "<div class='boxes'>"+ls.map(boxHtml).join("")+"</div></section>";
+  });
+  if(!any)h+="<p class='none-found'>ไม่มีคาบที่ตรงกับตัวกรอง ลองเปลี่ยนสถานะหรือระบบ หรือล้างคำค้น</p>";
+  return h;
+}
+
+/* ---------- schedule tab ---------- */
 function rowHtml(l){
-  var S=SYS[l.s],s=status(l),done=!!st.done[l.id],p=parts(l.d);
-  return "<article class='lec s-"+l.s+(s.k==="past"?" past":"")+(l===NEXT?" is-next":"")+"' id='L"+l.id+"'>"+
-    "<div class='date'><span class='dd'>"+p.d+"</span><span class='mm'>"+TH_M[p.m-1]+"</span>"+
-      "<span class='wd'>"+TH_D[new Date(utc(l.d)).getUTCDay()]+" "+l.t+"</span></div>"+
-    "<div class='body'><div class='tags'><span class='sys'><i></i>"+esc(S.label)+"</span>"+
-      (l.al?"<span class='tag al'>Active learning</span>":"")+
-      "<span class='tag st-"+s.k+"'>"+esc(s.t)+"</span></div>"+
-      "<h4>"+esc(l.title)+"</h4>"+
-      "<div class='meta'>"+esc(l.by)+" · <span class='mono'>"+l.t+"–"+l.e+"</span> · "+esc(thDate(l.d))+"</div>"+
+  var s=status(l),S=SYS[l.s],x=new Date(utc(l.d));
+  var past=l.end<=NOW;
+  return "<article class='row"+(past?" past":"")+(l===NEXT?" next":"")+"'>"+
+    "<div class='spinedate' style='--bk:"+l.bk+";--bink:"+l.bink+"'><b class='num'>"+x.getUTCDate()+"</b><span>"+TH_M[x.getUTCMonth()]+"</span><small>"+TH_D[x.getUTCDay()]+" "+l.t+"</small></div>"+
+    "<div class='rbody'><div class='rtags'><span class='sys'><i style='--bk:"+S.bk+"'></i>"+esc(S.label)+"</span>"+
+      (l.al?"<span class='tag al'>Active learning</span>":"")+(l===NEXT?"<span class='tag nx'>คาบถัดไป</span>":"")+
+      "<span class='tag "+s.k+"'>"+esc(s.k==="soon"?(past?"":"ยังไม่ถึงคาบ"):s.t.split(" · ")[0])+"</span></div>"+
+      "<h3>"+esc(l.title)+"</h3><div class='meta'>"+esc(l.by)+" · <span class='num'>"+l.t+"–"+l.e+"</span> · "+esc(dlong(l.d))+"</div>"+
       (l.note?"<div class='note'>"+esc(l.note)+"</div>":"")+moreLinks(l)+"</div>"+
     "<div class='acts'>"+learnBtn(l)+drillBtn(l)+
-      "<button type='button' class='done' data-done='"+l.id+"' aria-pressed='"+done+"'><span class='bx'>✓</span>"+(done?"ทวนแล้ว":"ทำเครื่องหมายว่าทวนแล้ว")+"</button></div>"+
+      "<button type='button' class='go slide' data-open='"+l.id+"' style='border:0;cursor:pointer;text-align:left'><b>สไลด์ · บันทึกการทวน</b><small>"+(l.sl?l.sl.length+" ไฟล์ใน Drive":"ยังไม่มีไฟล์ใน Drive")+"</small></button></div>"+
   "</article>";
 }
 function extraHtml(x){
-  var S=SYS[x.s]||{label:"Mock NL"};
-  return "<article class='lec s-"+x.s+"'>"+
-    "<div class='date'><span class='dd'>+</span><span class='mm'>นอกตาราง</span></div>"+
-    "<div class='body'><div class='tags'><span class='sys'><i></i>"+esc(S.label)+"</span></div>"+
-      "<h4>"+esc(x.title)+"</h4><div class='meta'>"+esc(x.by)+"</div>"+
-      (x.note?"<div class='note'>"+esc(x.note)+"</div>":"")+moreLinks(x)+"</div>"+
-    "<div class='acts'>"+learnBtn(x)+drillBtn(x)+"</div></article>";
+  return "<article class='row'><div class='spinedate' style='--bk:"+x.bk+";--bink:"+x.bink+"'><b>+</b><span>นอกตาราง</span></div>"+
+    "<div class='rbody'><div class='rtags'><span class='sys'><i style='--bk:"+x.bk+"'></i>"+esc(SYS[x.s].label)+"</span></div><h3>"+esc(x.title)+"</h3><div class='meta'>"+esc(x.by)+"</div>"+
+    (x.note?"<div class='note'>"+esc(x.note)+"</div>":"")+moreLinks(x)+"</div><div class='acts'>"+learnBtn(x)+drillBtn(x)+"</div></article>";
 }
-
-/* ---------- summary ---------- */
-function renderTop(){
-  document.getElementById("kit-learn").href=LEARN;
-  document.getElementById("kit-drill").href=DRILL;
-  document.getElementById("kit-lib").href=LIB;
-  var nx=document.getElementById("next");
-  if(NEXT){
-    var s=status(NEXT),S=SYS[NEXT.s];
-    nx.className="panel next s-"+NEXT.s;
-    nx.innerHTML="<div class='lab'><i></i>"+esc(s.t)+"</div>"+
-      "<h2>"+esc(NEXT.title)+"</h2>"+
-      "<div class='when'>"+esc(thDate(NEXT.d))+" · <span class='mono'>"+NEXT.t+"–"+NEXT.e+"</span> · "+esc(NEXT.by)+" · "+esc(S.label)+"</div>"+
-      "<div class='acts'>"+learnBtn(NEXT)+drillBtn(NEXT)+"</div>"+moreLinks(NEXT);
-  }else{
-    nx.innerHTML="<div class='lab'>ครบทุกคาบแล้ว</div><h2>บรรยายจบรอบแล้ว ทวนต่อจากชุด Drill และ Mock NL</h2>";
-  }
-  var past=LECS.filter(function(l){return l.end<=NOW;}).length;
-  var nl=LECS.filter(function(l){return l.learn;}).length, nd=LECS.filter(function(l){return l.drill;}).length;
-  var done=LECS.filter(function(l){return st.done[l.id];}).length;
-  var ex=Math.round((utc(EXAM)-TODAY)/DAY);
-  document.getElementById("stats").innerHTML=
-    "<div class='stat'><b>"+past+"<small>/"+LECS.length+"</small></b><span>คาบที่เรียนผ่านมาแล้ว</span></div>"+
-    "<div class='stat'><b>"+done+"<small>/"+LECS.length+"</small></b><span>คาบที่ทวนแล้ว (ติ๊กเอง)</span></div>"+
-    "<div class='stat'><b>"+nl+"<small> / "+nd+"</small></b><span>คาบที่มีบทเรียน Learn / มีข้อ Drill (จาก "+LECS.length+" คาบ)</span></div>"+
-    "<div class='stat hl'><b>"+(ex>0?ex:0)+"<small> วัน</small></b><span>ถึงสอบลงกอง 17–18 พ.ย.</span></div>";
-}
-function renderCov(){
-  var html=ORDER.map(function(k){
-    var ls=LECS.filter(function(l){return l.s===k;});
-    if(!ls.length)return "";
-    var nl=ls.filter(function(l){return l.learn;}).length,nd=ls.filter(function(l){return l.drill;}).length;
-    return "<button type='button' class='sysc s-"+k+"' data-sys='"+k+"' aria-pressed='"+(st.sys===k)+"'>"+
-      "<span class='nm'><i></i>"+esc(SYS[k].label)+"</span><span class='th'>"+esc(SYS[k].th)+"</span>"+
-      "<span class='blocks' aria-hidden='true'>"+ls.map(function(l){
-        return "<i class='"+(l.learn?"l":(l.drill?"d":"n"))+"' title='"+esc(l.title)+"'></i>";}).join("")+"</span>"+
-      "<span class='ct'>"+ls.length+" คาบ<br>Learn "+nl+" · Drill "+nd+"</span></button>";
-  }).join("");
-  document.getElementById("cov").innerHTML=html;
-  var f=document.getElementById("filt");
-  if(st.sys){f.className="filt on s-"+st.sys;f.textContent="เฉพาะ "+SYS[st.sys].label+" ✕";}
-  else{f.className="filt";f.textContent="";}
-}
-
-/* ---------- list ---------- */
-function matches(l){
-  if(st.sys&&l.s!==st.sys)return false;
-  if(st.hide&&st.done[l.id])return false;
-  if(st.q){
-    var hay=(l.title+" "+l.by+" "+SYS[l.s].label+" "+SYS[l.s].th+" "+(l.note||"")+" "+
-      (l.more||[]).map(function(m){return m[0];}).join(" ")).toLowerCase();
-    var ok=st.q.toLowerCase().split(/\s+/).every(function(w){return !w||hay.indexOf(w)>=0;});
-    if(!ok)return false;
-  }
-  return true;
-}
-function renderList(){
+function renderSchedule(){
   var ls=LECS.filter(matches),h="";
-  var curW=weekOf(new Date(TODAY).toISOString().slice(0,10));
-  if(!ls.length){
-    h="<p class='empty'>ไม่พบคาบที่ตรงกับตัวกรอง ลองล้างคำค้นหรือกดเลือกระบบใหม่</p>";
-  }else if(st.view==="date"){
-    var weeks={};ls.forEach(function(l){(weeks[l.week]=weeks[l.week]||[]).push(l);});
-    Object.keys(weeks).map(Number).sort(function(a,b){return a-b;}).forEach(function(w){
-      h+="<section class='group'><div class='gh'><h3>สัปดาห์ที่ "+w+"</h3><span class='sub'>"+weekRange(w)+" · "+weeks[w].length+" คาบ</span>"+
-        (w===curW?"<span class='now'>สัปดาห์นี้</span>":"")+"</div><div class='list'>"+weeks[w].map(rowHtml).join("")+"</div></section>";
-    });
-  }else{
-    ORDER.forEach(function(k){
-      var g=ls.filter(function(l){return l.s===k;});if(!g.length)return;
-      var S=SYS[k];
-      h+="<section class='group s-"+k+"'><div class='gh'><h3>"+esc(S.label)+"</h3><span class='sub'>"+esc(S.th)+" · "+g.length+" คาบ</span>"+
-        "<span class='glinks'>"+(S.learn?link(LEARN+"#"+S.learn,"","Learn ทั้งชุด"):"")+
-        link(DRILL+"#"+S.drill,"","Drill ทั้งชุด")+link(DRILL+"#mock-"+S.mock,"","Mock NL หมวดนี้")+"</span></div>"+
-        "<div class='list'>"+g.map(rowHtml).join("")+"</div></section>";
-    });
-  }
-  document.getElementById("main").innerHTML=h;
-  document.getElementById("v-date").setAttribute("aria-pressed",String(st.view==="date"));
-  document.getElementById("v-sys").setAttribute("aria-pressed",String(st.view==="sys"));
-  document.getElementById("hide-done").checked=st.hide;
+  h+="<div class='cats' role='group' aria-label='เลือกระบบ'><button type='button' class='cat' data-sys='' aria-pressed='"+(!st.sys)+"'><span class='mini all'></span><b>ทั้งหมด</b><small class='num'>"+LECS.length+" คาบ</small></button>"+
+    ORDER.map(function(k){var n=LECS.filter(function(l){return l.s===k;}).length;
+      return "<button type='button' class='cat' data-sys='"+k+"' aria-pressed='"+(st.sys===k)+"'><span class='mini' style='--bk:"+SYS[k].bk+"'></span><b>"+esc(SYS[k].label)+"</b><small class='num'>"+n+" คาบ</small></button>";}).join("")+"</div>";
+  if(st.sys){var S=SYS[st.sys];
+    h+="<div class='fbar'><span class='lbl'>ทั้งชุด "+esc(S.label)+"</span>"+(S.learn?ext(LEARN+"#"+S.learn,"fpill","Learn ทั้งชุด"):"")+
+      ext(DRILL+"#"+S.drill,"fpill","Drill ทั้งชุด")+ext(DRILL+"#mock-"+S.mock,"fpill","Mock NL หมวดนี้")+"</div>";}
+  var curW=weekOf(TODAY),weeks={};
+  ls.forEach(function(l){(weeks[l.week]=weeks[l.week]||[]).push(l);});
+  var keys=Object.keys(weeks).map(Number).sort(function(a,b){return a-b;});
+  if(!keys.length)h+="<p class='none-found'>ไม่พบคาบที่ตรงกับคำค้น</p>";
+  keys.forEach(function(w){
+    h+="<section class='week'><div class='week-h'><h2>สัปดาห์ที่ "+w+"</h2><span>"+weekRange(w)+" · "+weeks[w].length+" คาบ</span>"+(w===curW?"<span class='now'>สัปดาห์นี้</span>":"")+"</div>"+
+      "<div class='rows'>"+weeks[w].map(rowHtml).join("")+"</div></section>";
+  });
+  if(!st.sys&&!st.q)h+="<section class='extras'><h2>นอกตารางบรรยายของกลุ่ม</h2><p>บทเรียนหรือชุดข้อสอบที่มีในเว็บ แต่ไม่ใช่คาบในปฏิทินของกลุ่มเรา</p><div class='rows'>"+EXTRAS.map(extraHtml).join("")+"</div></section>";
+  return h;
 }
-function render(){renderTop();renderCov();renderList();save();}
 
-document.getElementById("extras").innerHTML=EXTRAS.map(extraHtml).join("");
+/* ---------- side panel ---------- */
+function renderSide(){
+  var c=counts(),held=LECS.length-c.soon,doneHeld=LECS.filter(function(l){var k=status(l).k;return l.start<=NOW&&(k==="fresh"||k==="due");}).length;
+  var pct=held?doneHeld/held:0,R0=34,C=2*Math.PI*R0;
+  var sug=suggestions().slice(0,5),ex=Math.max(0,daysBetween(TODAY,EXAM));
+  var h="<div class='side-h'><h2>การทวนของฉัน</h2></div>"+
+    "<div class='ringwrap'><svg class='ring' viewBox='0 0 84 84' role='img' aria-label='ทวนแล้ว "+doneHeld+" จาก "+held+" คาบที่เรียนไปแล้ว'>"+
+      "<circle cx='42' cy='42' r='"+R0+"' fill='none' stroke='var(--sunk)' stroke-width='9'/>"+
+      "<circle cx='42' cy='42' r='"+R0+"' fill='none' stroke='var(--ok)' stroke-width='9' stroke-linecap='round' stroke-dasharray='"+(C*pct).toFixed(1)+" "+C.toFixed(1)+"' transform='rotate(-90 42 42)'/>"+
+      "<text x='42' y='45' text-anchor='middle' font-size='19'>"+Math.round(pct*100)+"%</text><text class='sub' x='42' y='60' text-anchor='middle' font-size='9.5'>ของที่เรียนแล้ว</text></svg>"+
+      "<p>ทวนแล้ว <b class='num'>"+doneHeld+"</b> จาก <b class='num'>"+held+"</b> คาบที่เรียนผ่านมา<br>ทั้งหมด "+LECS.length+" คาบ เหลืออีก "+c.soon+" คาบ</p></div>"+
+    "<div class='tiles'>"+
+      "<button type='button' class='tile ok' data-f='done'><b class='num'>"+c.done+"</b><span>ทวนแล้ว</span></button>"+
+      "<button type='button' class='tile due' data-f='due'><b class='num'>"+c.due+"</b><span>ถึงรอบทวน</span></button>"+
+      "<button type='button' class='tile todo' data-f='todo'><b class='num'>"+c.todo+"</b><span>ยังไม่ทวน</span></button>"+
+      "<button type='button' class='tile' data-f='soon'><b class='num'>"+c.soon+"</b><span>ยังไม่ถึงคาบ</span></button></div>"+
+    "<div class='chat'><h3>ควรทวนต่อ</h3>"+
+      (NEXT?"<button type='button' class='bub in' data-open='"+NEXT.id+"'><b>คาบถัดไป · "+esc(NEXT.title)+"</b><span>"+esc(dlong(NEXT.d))+" "+NEXT.t+" · "+esc(NEXT.by)+"</span></button>":"")+
+      (sug.length?sug.map(function(x){return "<button type='button' class='bub' data-open='"+x.l.id+"'><b>"+esc(x.l.title)+"</b><span>"+
+        (x.s.k==="due"?"ทวนล่าสุด "+x.s.ago+" วันก่อน":"ยังไม่ทวน · เรียนเมื่อ "+esc(dshort(x.l.d)))+"</span></button>";}).join("")
+        :"<span class='quiet'>ไม่มีคาบค้างทวน</span>")+
+    "</div>"+
+    "<div class='countdown'><b class='num'>"+ex+"</b><span>วัน ถึงสอบลงกอง 17–18 พ.ย.</span></div>"+
+    "<div class='links'>"+ext(LEARN,"",ICON.book+"MED421 learn<small>บทเรียน</small>")+ext(DRILL,"",ICON.target+"Ward Drill<small>ข้อสอบ</small>")+ext(LIB,"",ICON.home+"ห้องสมุดท่าอาจารย์<small>ข้างเตียง</small>")+"</div>";
+  document.getElementById("side").innerHTML=h;
+}
+function renderSync(){
+  var el=document.getElementById("sync");
+  el.className="sync"+(SYNC.mode==="cloud"?(SYNC.writing?" busy":" cloud"):"");
+  el.lastChild.textContent=SYNC.mode==="cloud"?(SYNC.writing?"กำลังบันทึก…":"บันทึกในบัญชี · ทุกเครื่อง"):(SYNC.err||"บันทึกในเครื่องนี้");
+}
+
+/* ---------- detail sheet ---------- */
+var lastFocus=null;
+function renderSheet(){
+  var sh=document.getElementById("sheet"),l=BYID[st.open];
+  if(!l){sh.classList.remove("on");sh.setAttribute("aria-hidden","true");document.getElementById("scrim").classList.remove("on");return;}
+  var s=status(l),t=reviewedToday(l),ds=(R[l.id]||[]).slice().reverse(),S=SYS[l.s];
+  var h="<div class='sh-top'><span>"+esc(S.label)+" · "+esc(S.th)+"</span><button type='button' class='x' data-close aria-label='ปิด'>"+ICON.x+"</button></div>"+
+    "<div class='sh-main' style='--bk:"+l.bk+"'><div class='kick'><i></i>"+esc(S.label)+"</div><div><h2 id='sh-title'>"+esc(l.title)+"</h2>"+
+      "<div class='meta'>"+esc(l.by)+"<br>"+esc(dlong(l.d))+" · <span class='num'>"+l.t+"–"+l.e+"</span>"+(l.al?" · Active learning":"")+"</div>"+
+      (l.note?"<div class='note'>"+esc(l.note)+"</div>":"")+
+      "<div class='statusline'><span class='tag "+s.k+"'>"+esc(s.t)+"</span></div></div></div>"+
+    "<div class='sh-sec'>"+(t?"<button type='button' class='revbtn undo' data-unmark='"+TODAY+"'>"+ICON.x+"ยกเลิกการทวนวันนี้</button>"
+        :"<button type='button' class='revbtn' data-mark>"+ICON.check+"ทวนสไลด์คาบนี้แล้ววันนี้</button>")+
+      "<p class='hint'>กดทุกครั้งที่ทวนจบหนึ่งรอบ ระบบจะเตือนให้กลับมาทวนเมื่อผ่านไป 3 วัน</p></div>"+
+    "<div class='sh-sec'><h3>ประวัติการทวน"+(ds.length?" · "+ds.length+" รอบ":"")+"</h3>"+
+      (ds.length?"<div class='hist'>"+ds.map(function(d){return "<span>"+esc(dlong(d))+"<button type='button' data-unmark='"+d+"' aria-label='ลบการทวนวันที่ "+esc(dlong(d))+"'>"+ICON.x+"</button></span>";}).join("")+"</div>"
+        :"<p class='hint'>ยังไม่เคยทวนคาบนี้</p>")+"</div>"+
+    "<div class='sh-sec'><h3>สไลด์ของอาจารย์</h3><div class='golist'>"+
+      (l.sl?l.sl.map(function(f){return ext(DRV(f[1]),"go slide","<b>เปิดใน Google Drive</b><small>"+esc(f[0])+"</small>");}).join("")
+        :"<div class='nope'>ยังไม่มีไฟล์สไลด์ของคาบนี้ใน Drive ที่เชื่อมไว้</div>")+"</div></div>"+
+    "<div class='sh-sec'><h3>เรียนและฝึกต่อ</h3><div class='golist'>"+learnBtn(l)+drillBtn(l)+"</div>"+moreLinks(l)+"</div>";
+  sh.innerHTML=h;sh.classList.add("on");sh.setAttribute("aria-hidden","false");document.getElementById("scrim").classList.add("on");
+}
+function openSheet(id){lastFocus=document.activeElement;st.open=id;renderSheet();var x=document.querySelector("#sheet [data-close]");if(x)x.focus();}
+function closeSheet(){st.open=null;renderSheet();if(lastFocus&&document.body.contains(lastFocus))lastFocus.focus();}
+
+/* ---------- render ---------- */
+function render(){
+  document.getElementById("t-shelf").setAttribute("aria-pressed",String(st.tab==="shelf"));
+  document.getElementById("t-schedule").setAttribute("aria-pressed",String(st.tab==="schedule"));
+  [].forEach.call(document.querySelectorAll(".rail [data-tab]"),function(b){b.setAttribute("aria-pressed",String(b.dataset.tab===st.tab));});
+  document.getElementById("main").innerHTML=st.tab==="shelf"?renderShelf():renderSchedule();
+  renderSide();renderSync();
+  if(st.open)renderSheet();
+  saveView();
+}
+document.getElementById("r-learn").href=LEARN;document.getElementById("r-drill").href=DRILL;document.getElementById("r-lib").href=LIB;
+
 document.addEventListener("click",function(e){
-  var b=e.target.closest("button");if(!b)return;
-  if(b.dataset.view){st.view=b.dataset.view;render();return;}
-  if(b.dataset.sys){st.sys=(st.sys===b.dataset.sys?"":b.dataset.sys);render();
-    document.querySelector(".controls").scrollIntoView({block:"start"});return;}
-  if(b.id==="filt"){st.sys="";render();return;}
-  if(b.dataset.done){var id=b.dataset.done;if(st.done[id])delete st.done[id];else st.done[id]=1;render();return;}
+  var b=e.target.closest("button");
+  if(!b){if(e.target.id==="scrim")closeSheet();return;}
+  if(b.hasAttribute("data-close")){closeSheet();return;}
+  if(b.dataset.quick){toggleToday(b.dataset.quick);return;}
+  if(b.dataset.open){openSheet(b.dataset.open);return;}
+  if(b.hasAttribute("data-mark")){markToday(st.open);return;}
+  if(b.dataset.unmark){unmarkDate(st.open,b.dataset.unmark);return;}
+  if(b.dataset.tab){st.tab=b.dataset.tab;render();window.scrollTo({top:0});return;}
+  if(b.dataset.sys!==undefined){st.sys=(st.sys===b.dataset.sys?"":b.dataset.sys);render();return;}
+  if(b.dataset.f){st.tab="shelf";st.f=(st.f===b.dataset.f&&b.dataset.f!=="all"?"all":b.dataset.f);render();
+    if(b.classList.contains("tile")){var fb=document.querySelector(".fbar");if(fb)fb.scrollIntoView({block:"start"});}return;}
 });
-document.getElementById("q").addEventListener("input",function(e){st.q=e.target.value.trim();renderList();});
-document.getElementById("hide-done").addEventListener("change",function(e){st.hide=e.target.checked;render();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&st.open)closeSheet();});
+document.getElementById("q").addEventListener("input",function(e){st.q=e.target.value.trim();document.getElementById("main").innerHTML=st.tab==="shelf"?renderShelf():renderSchedule();});
+document.getElementById("sform").addEventListener("submit",function(e){e.preventDefault();var m=document.getElementById("main");if(m)m.scrollIntoView({block:"start"});});
+window.addEventListener("hashchange",function(){var h=String(location.hash||"").replace(/^#/,"");if(h==="schedule"||h==="shelf"){st.tab=h;render();}});
 render();
 })();
 </script>
