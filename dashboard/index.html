@@ -254,10 +254,17 @@ main{min-width:0}
 .rbody h3{font-size:16px;font-weight:600}
 .meta{font-size:13px;color:var(--ink-3);margin-top:2px}
 .note{font-size:12.5px;color:var(--due);margin-top:3px}
-.more{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
-.more span{font-size:11.5px;font-weight:600;color:var(--ink-3)}
-.more a{font-size:12.5px;text-decoration:none;color:var(--ink-2);background:var(--panel);border-radius:9px;padding:2px 9px;transition:background .2s var(--e)}
-.more a:hover{background:var(--lav);color:var(--lav-ink)}
+.libbox{margin-top:10px;border:1.5px solid var(--lav-2);background:color-mix(in srgb,var(--lav) 38%,var(--card));border-radius:14px;padding:9px 11px;min-width:0}
+.lb-h{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:7px}
+.lb-h svg{width:16px;height:16px;color:var(--lav-deep);flex:none}
+.lb-h b{font-family:var(--display);font-size:13px;font-weight:600;color:var(--lav-ink)}
+.lb-h span{font-size:12px;color:var(--ink-3)}
+.lb-h .lb-open{margin-left:auto;font-size:12px;font-weight:600;color:var(--lav-ink);text-decoration:none;border-radius:999px;padding:1px 9px;border:1px solid var(--lav-2)}
+.lb-h .lb-open:hover{background:var(--lav)}
+.lb-list{display:flex;flex-wrap:wrap;gap:6px}
+.lb-list a{font-size:12.5px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:2px 9px;transition:background .2s var(--e),border-color .2s var(--e)}
+.lb-list a:hover{border-color:var(--lav-deep);background:var(--lav)}
+.lb-list a small{font-size:10.5px;color:var(--ink-3);margin-left:4px}
 .acts{display:flex;flex-direction:column;gap:7px;min-width:200px}
 @media (max-width:720px){.acts{flex-direction:row;flex-wrap:wrap;min-width:0}.acts>*{flex:1 1 140px}}
 .go{display:flex;flex-direction:column;gap:1px;text-decoration:none;border-radius:14px;padding:8px 13px;transition:transform .18s var(--e),filter .2s var(--e)}
@@ -743,9 +750,13 @@ function drillBtn(l){
   var x=l.drill,bits=["MCQ "+x[1]];if(x[2])bits.push("MEQ/OSCE "+x[2]);if(x[3])bits.push("เก่า "+x[3]);
   return ext(DRILL+"#"+x[0],"go drill","<b>"+ICON.target.replace("<svg","<svg width='16' height='16'")+"Drill"+(x[4]?" <span class='tag'>ชุดรวม</span>":"")+"</b><small>"+bits.join(" · ")+"</small>","เปิดข้อสอบ "+l.title);
 }
+/* บทข้างเตียงที่อ่านคู่ — กรอบบอกชัดว่ามาจากห้องสมุดท่าอาจารย์ (4 บทที่ยังไม่อยู่ในห้องสมุดติดป้ายไว้) */
+var NOTLIB={"71gZvTqfT3Gq5DQJZiokSE":1,"Qv6AC4n5iFX7LdCEPdFLuV":1,"T71r7Gyn9Xrf32hevEFbfH":1,"TbXj8Cep4rDZzSQMDw8ET1":1};
 function moreLinks(l){
   if(!l.more||!l.more.length)return "";
-  return "<div class='more'><span>อ่านคู่</span>"+l.more.map(function(m){return ext(A(m[1]),"",esc(m[0]));}).join("")+"</div>";
+  return "<div class='libbox'><div class='lb-h'>"+ICON.home+"<b>จากห้องสมุดท่าอาจารย์</b><span>บทข้างเตียงที่อ่านคู่กับคาบนี้</span>"+
+    ext(LIB,"lb-open","เปิดห้องสมุด ↗","เปิดห้องสมุดท่าอาจารย์")+"</div><div class='lb-list'>"+
+    l.more.map(function(m){return ext(A(m[1]),"",esc(m[0])+(NOTLIB[m[1]]?"<small>นอกห้องสมุด</small>":""));}).join("")+"</div></div>";
 }
 
 /* ---------- shelf tab ---------- */
