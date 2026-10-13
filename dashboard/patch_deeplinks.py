@@ -1,3 +1,9 @@
+"""เพิ่มลิงก์ตรงเข้าคาบ (#<ชุด>-<คาบ>) ให้ artifact ปลายทางของ dashboard
+
+    python3 patch_deeplinks.py learn  <index.html ที่ดาวน์โหลด> <ไฟล์ออก>   # MED421 learn
+    python3 patch_deeplinks.py salmon <index.html ที่ดาวน์โหลด> <ไฟล์ออก>   # Salmon NL (engine เดียวกับ learn)
+    python3 patch_deeplinks.py drill  <index.html ที่ดาวน์โหลด> <ไฟล์ออก>   # MED421 Ward Drill
+"""
 import sys
 def unwrap(src):
     lines=src.split("\n")
@@ -10,17 +16,19 @@ def unwrap(src):
 def sub(s,old,new):
     assert s.count(old)==1,(old[:60],s.count(old)); return s.replace(old,new)
 
-learn_in,learn_out,drill_in,drill_out=sys.argv[1:5]
-s=unwrap(open(learn_in,encoding="utf-8").read())
-s=sub(s,".card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);",
-        ".card[id]{scroll-margin-top:84px}\n.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);")
-s=sub(s,"""    if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
+
+
+def patch_learn(src):
+    s=unwrap(src)
+    s=sub(s,".card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);",
+            ".card[id]{scroll-margin-top:84px}\n.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);")
+    s=sub(s,"""    if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
     return ensure(state.course);
   }).then(render).catch(""","""    if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
     readHash();
     return ensure(state.course);
   }).then(function(){render();landHash();}).catch(""")
-s=sub(s,"""function boot(){""","""/* ---------- ลิงก์ตรงจาก Lecture Dashboard: #<ชุด> หรือ #<ชุด>-<คาบ> ----------
+    s=sub(s,"""function boot(){""","""/* ---------- ลิงก์ตรงจาก Lecture Dashboard: #<ชุด> หรือ #<ชุด>-<คาบ> ----------
    เลขคาบที่มี / ใช้ . แทน (เช่น #gi-27.10 = คาบ 27/10 ของชุด GI) */
 function slug(x){return String(x==null?"":x).replace(/[^A-Za-z0-9._~-]/g,".");}
 var pendingLec=null;
@@ -40,7 +48,10 @@ function landHash(){
   if(!hit)return;
   state.lec=hit.lec;render();
   var el=document.getElementById("lec-"+slug(hit.lec));
-  if(el)el.scrollIntoView({block:"start"});
+  if(!el)return;
+  el.scrollIntoView({block:"start"});
+  /* ฟอนต์โหลดเสร็จทีหลังทำให้ความสูงด้านบนขยับ เลื่อนซ้ำอีกครั้งเมื่อพร้อม */
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(document.body.contains(el))el.scrollIntoView({block:"start"});});
 }
 window.addEventListener("hashchange",function(){
   if(!COURSES.length||!readHash())return;
@@ -48,12 +59,14 @@ window.addEventListener("hashchange",function(){
   ensure(state.course).then(function(){render();landHash();});
 });
 function boot(){""")
-s=sub(s,"""    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date""",
-        """    h+="<section class='card' id='lec-"+esc(slug(l.lec))+"'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date""")
-open(learn_out,"w",encoding="utf-8").write(s)
+    s=sub(s,"""    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date""",
+            """    h+="<section class='card' id='lec-"+esc(slug(l.lec))+"'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date""")
+    return s
 
-d=unwrap(open(drill_in,encoding="utf-8").read())
-d=sub(d,"""
+
+def patch_drill(src):
+    d=unwrap(src)
+    d=sub(d,"""
 render();
 })();
 </script>""","""
@@ -76,5 +89,13 @@ window.addEventListener("hashchange",function(){if(applyHash()){render();window.
 render();
 })();
 </script>""")
-open(drill_out,"w",encoding="utf-8").write(d)
-print("ok",len(s),len(d))
+    return d
+
+
+if __name__=="__main__":
+    if len(sys.argv)!=4 or sys.argv[1] not in ("learn","salmon","drill"):
+        sys.exit(__doc__)
+    kind,src,out=sys.argv[1:]
+    res=(patch_drill if kind=="drill" else patch_learn)(open(src,encoding="utf-8").read())
+    open(out,"w",encoding="utf-8").write(res)
+    print("ok",kind,len(res))

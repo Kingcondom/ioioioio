@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""ไล่ว่าบทเรียนทั้งหมด (MED421 learn · Ward Drill · ห้องสมุดท่าอาจารย์) ครอบคลุมเกณฑ์ NL 2567 ข้อไหนแล้ว
+"""ไล่ว่าบทเรียนทั้งหมด (MED421 learn · Ward Drill · ห้องสมุดท่าอาจารย์ · Salmon NL) ครอบคลุมเกณฑ์ NL 2567 ข้อไหนแล้ว
 แล้วฝังผลลงแท็บ "ครอบคลุม NL" ของ dashboard/index.html
 
-    python3 dashboard/build_nl.py <learn data dir> <drill bank.json> <library items.json>
+    python3 dashboard/build_nl.py <learn data dir> <drill bank.json> <library items.json> [<salmon data dir>]
 
 - learn data dir   = ไฟล์ data/*.json ของ artifact MED421 learn (รวม nl.json)
 - drill bank.json  = ก้อน <script id="bank"> ของ MED421 Ward Drill
 - library items.json = อาร์เรย์ ITEMS ของห้องสมุดท่าอาจารย์ ({g,t,d,u})
+- salmon data dir  = ไฟล์ data/*.json ของ artifact Salmon NL (สรุปสไลด์ MedSalmon ติว NL2 Medicine, engine เดียวกับ learn)
+                     ชุด exam25 (ข้อสอบ NL2 2025) นับเป็นข้อสอบอย่างเดียว ไม่นับเป็นบทสอน
 
 หลักฐานแบ่ง 2 ระดับ
   เต็ม  = มีบทสอนเรื่องนั้นจริง: ชื่อคาบหรือชื่อหัวข้อใน learn, รหัส nl ที่ผูกระดับหัวข้อ, หรือชื่อบทในห้องสมุด
@@ -21,6 +23,7 @@ from nl_scope import SCOPE, GROUPS  # noqa: E402
 
 LEARN = "https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE"
 DRILL = "https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X"
+SALMON = "https://claude.ai/artifact/EL8HrvUJawWYs1rr25qzGK"
 SETS = ["air", "cardio", "chest", "endo", "gi", "hemonc", "id", "nephro", "neuro"]
 SET_NAME = {"air": "AIR", "cardio": "Cardio", "chest": "Chest", "endo": "Endo", "gi": "GI",
             "hemonc": "Heme/Onc", "id": "ID", "nephro": "Nephro", "neuro": "Neuro"}
@@ -30,7 +33,18 @@ def slug(x):
     return re.sub(r"[^A-Za-z0-9._~-]", ".", str(x))
 
 
-def main(learn_dir, bank_path, lib_path):
+def salmon_courses(salmon_dir):
+    """[(set, label, lectures, is_exam)] ของ Salmon NL"""
+    if not salmon_dir:
+        return []
+    out = []
+    for c in json.load(open(os.path.join(salmon_dir, "index.json"), encoding="utf-8")):
+        ls = json.load(open(os.path.join(salmon_dir, os.path.basename(c["file"])), encoding="utf-8"))
+        out.append((c["set"], c["label"], ls, c["set"] == "exam25"))
+    return out
+
+
+def main(learn_dir, bank_path, lib_path, salmon_dir=None):
     nl = json.load(open(os.path.join(learn_dir, "nl.json"), encoding="utf-8"))
     pats = {c: [re.compile(p, re.I) for p in ps] for c, ps in SCOPE.items()}
     missing = [c for c in SCOPE if c not in nl]
@@ -81,6 +95,24 @@ def main(learn_dir, bank_path, lib_path):
             for it in g["items"]:
                 codes = set(c for c in (it.get("nl") or []) if c in SCOPE)
                 add(weak, codes, "D:" + url, "Drill · " + (g.get("lecture") or s).split(" (")[0] + " (คลังเก่า)", url)
+
+    # ---- Salmon NL: ชื่อคาบ/หัวข้อ/รหัส nl ระดับหัวข้อ = เต็ม · คำโปรย/สรุป/ข้อสอบ = บางส่วน
+    salmon = salmon_courses(salmon_dir)
+    for cset, clabel, ls, is_exam in salmon:
+        for L in ls:
+            url = SALMON + "#" + cset + "-" + slug(L["lec"])
+            lname = "Salmon NL · " + clabel + " · " + L["title"]
+            if not is_exam:
+                add(strong, hit(L["title"]), "S:" + url, lname, url)
+                add(weak, hit(L.get("subtitle") or ""), "S:" + url, lname, url)
+            for sec in L.get("sections", []):
+                if not is_exam:
+                    add(strong, hit(sec["title"]), "S:" + url, lname, url)
+                    add(weak, hit(sec.get("summary") or ""), "S:" + url, lname, url)
+                    add(strong, [c for c in (sec.get("nl") or []) if c in SCOPE], "S:" + url, lname, url)
+                for it in sec.get("items", []):
+                    codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
+                    add(weak, codes, "SQ:" + url, lname + " (ข้อสอบ)", url)
 
     # ---- ห้องสมุดท่าอาจารย์
     lib = json.load(open(lib_path, encoding="utf-8"))
@@ -133,9 +165,15 @@ def main(learn_dir, bank_path, lib_path):
                         continue
                     d = tags(it) | set(hit((it.get("topic") or "") + " · " + correct(it)))
                     Q[it["id"]] = ("learn", d, set(hit((it.get("explain") or "")[:220])) - d)
+    for cset, clabel, ls, is_exam in salmon:
+        for L in ls:
+            for sec in L.get("sections", []):
+                for it in sec.get("items", []):
+                    d = tags(it) | set(hit((it.get("topic") or "") + " · " + correct(it)))
+                    Q["salmon:" + it["id"]] = ("nl25" if is_exam else "salmon", d, set(hit((it.get("explain") or "")[:220])) - d)
     qd = {c: 0 for c in SCOPE}
     qx = {c: 0 for c in SCOPE}
-    per = {k: set() for k in ("drill", "old", "mock", "learn")}
+    per = {k: set() for k in ("drill", "old", "mock", "learn", "salmon", "nl25")}
     nsrc = {k: 0 for k in per}
     for src, d, x in Q.values():
         nsrc[src] += 1
@@ -188,6 +226,6 @@ def main(learn_dir, bank_path, lib_path):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) not in (4, 5):
         sys.exit(__doc__)
     main(*sys.argv[1:])
