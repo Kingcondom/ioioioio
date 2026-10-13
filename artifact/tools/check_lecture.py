@@ -63,6 +63,32 @@ def odd_stars(text, inline_only=False):
             bad.append("ดอกจันกลางคำ: " + u.strip()[:60])
     return bad
 
+def check_figs(s):
+    """[[fig:key]] ใน md ต้องมีใน section.figs และทุกภาพต้องถูกใช้ · SVG ต้องเป็น XML ถูกต้อง มี viewBox role=img aria-label
+    ห้าม script/style/foreignObject/on*= · ห้ามมี id (ลูกศรใช้ marker กลาง #ah #ah-ac ... ใน index.html)"""
+    import xml.etree.ElementTree as ET
+    bad = []
+    used = re.findall(r"^\s*\[\[fig:([\w-]+)\]\]\s*$", s.get("md", ""), re.M)
+    figs = s.get("figs") or {}
+    for k in used:
+        if k not in figs: bad.append("อ้าง [[fig:%s]] แต่ไม่มีใน figs" % k)
+    for k, f in figs.items():
+        if k not in used: bad.append("%s ไม่ถูกอ้างใน md" % k)
+        v = f.get("svg", "")
+        if not v.startswith("<svg"): bad.append("%s: svg ต้องขึ้นต้นด้วย <svg" % k); continue
+        if not re.search(r'viewBox="[-\d. ]+"', v): bad.append("%s: ไม่มี viewBox" % k)
+        if 'role="img"' not in v or "aria-label=" not in v: bad.append("%s: ขาด role=img/aria-label" % k)
+        if re.search(r"<script|<style|foreignObject|\son\w+=", v, re.I): bad.append("%s: มี script/style/foreignObject/on*=" % k)
+        if re.search(r'\sid="', v): bad.append("%s: มี id ภายใน svg (ใช้ marker กลางแทน)" % k)
+        for m in re.findall(r"url\(#([\w-]+)\)", v):
+            if m not in ("ah", "ah-ac", "ah-ok", "ah-bad", "ah-ms", "ah-wa", "ah-mu"): bad.append("%s: marker #%s ไม่มีใน index.html" % (k, m))
+        try: ET.fromstring(v)
+        except ET.ParseError as e: bad.append("%s: SVG ไม่ใช่ XML ที่ถูกต้อง (%s)" % (k, e))
+        for fld in ("title", "cap"):
+            if str(f.get(fld, "")).count("**") % 2: bad.append("%s: %s ดอกจันไม่ครบคู่" % (k, fld))
+        if not f.get("cap"): bad.append("%s: ไม่มีคำอธิบายภาพ (cap)" % k)
+    return bad
+
 seen = {}
 for meta in idx:
     path = os.path.join(ART, meta["file"])
@@ -87,6 +113,8 @@ for meta in idx:
                 err.append("%s/%s: มี code fence (``` ) — parser ไม่รองรับ" % (tag, s["id"]))
             for b in odd_stars(s.get("md", "")) + [x for p in s.get("pearls", []) for x in odd_stars(p, True)]:
                 err.append("%s/%s: markdown ดอกจันไม่ครบคู่ → %s" % (tag, s["id"], b))
+            for b in check_figs(s):
+                err.append("%s/%s: ภาพ → %s" % (tag, s["id"], b))
             items += s.get("items", [])
             ids = [s["id"]]
             for c in s.get("nl", []):
@@ -121,6 +149,8 @@ for meta in idx:
                 len(L["sections"]), len(items), len(new), len(items) - len(new),
                 len(L["meq"]), len(L["osce"]), len(codes), len(L.get("guidelines", []))))
             print("   ตำแหน่งคำตอบ:", dict(sorted(Counter(i["answer"] for i in items).items())))
+            nf = sum(len(s.get("figs") or {}) for s in L["sections"])
+            if nf: print("   ภาพประกอบ %d ภาพ ใน %d หัวข้อ" % (nf, sum(1 for s in L["sections"] if s.get("figs"))))
 
 for w in warn: print("  ! " + w)
 for e in err: print("  ✗ " + e)
