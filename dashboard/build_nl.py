@@ -39,7 +39,6 @@ def main(learn_dir, bank_path, lib_path):
 
     strong = {c: {} for c in SCOPE}   # code -> {key: (label, url)}
     weak = {c: {} for c in SCOPE}
-    qcount = {c: 0 for c in SCOPE}
 
     def hit(text):
         return [c for c, ps in pats.items() if any(p.search(text) for p in ps)]
@@ -62,14 +61,10 @@ def main(learn_dir, bank_path, lib_path):
                 add(strong, sec.get("nl") or [], "L:" + url, lname, url)
                 for it in sec.get("items", []):
                     codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
-                    for c in codes:
-                        qcount[c] += 1
                     add(weak, codes, "LQ:" + url, lname + " (ข้อเช็ค)", url)
             for k in ("meq", "osce"):
                 for it in L.get(k, []):
                     codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
-                    for c in codes:
-                        qcount[c] += 1
                     add(weak, codes, "LQ:" + url, lname + " (" + k.upper() + ")", url)
 
     # ---- Ward Drill
@@ -80,15 +75,11 @@ def main(learn_dir, bank_path, lib_path):
         for it in v["mcq"] + v["meq"]:
             url = DRILL + "#" + s + "-" + it["lec"]
             codes = set(hit(it.get("topic") or "")) | set(c for c in (it.get("nl") or []) if c in SCOPE)
-            for c in codes:
-                qcount[c] += 1
             add(weak, codes, "D:" + url, "Drill · " + (it.get("lecture") or s).split(" (")[0], url)
         for g in v["old"]:
             url = DRILL + "#" + s + "-" + g["lec"]
             for it in g["items"]:
                 codes = set(c for c in (it.get("nl") or []) if c in SCOPE)
-                for c in codes:
-                    qcount[c] += 1
                 add(weak, codes, "D:" + url, "Drill · " + (g.get("lecture") or s).split(" (")[0] + " (คลังเก่า)", url)
 
     # ---- ห้องสมุดท่าอาจารย์
@@ -112,6 +103,48 @@ def main(learn_dir, bank_path, lib_path):
         if len(parts) > 2:  # คอลัมน์ 3 = หัวข้อที่บทนั้นแตะ (ตรวจจากเนื้อหาจริง)
             add(weak, hit(parts[2]), "B:" + url, label, url)
 
+    # ---- เลนส์คลังข้อสอบ: ข้อหนึ่งถามเรื่องอะไร (นับข้อละครั้ง ไม่ซ้ำ id)
+    #   ถามตรง = รหัส nl ที่ผูก + ชื่อข้อ + ตัวเลือกที่ถูก · แตะในเฉลย = ต้นคำอธิบาย 220 ตัวอักษร
+    def correct(it):
+        ch = it.get("choices") or []
+        try:
+            return ch[int(it.get("answer"))] if ch else ""
+        except (TypeError, ValueError, IndexError):
+            return ""
+
+    def tags(it):
+        return {c for c in (it.get("nl") or []) if c in SCOPE}
+
+    Q = {}
+    for s, v in bank.items():
+        src = "mock" if s == "mock" else "drill"
+        for it in v["mcq"] + v["meq"]:
+            d = tags(it) | set(hit((it.get("topic") or "") + " · " + correct(it)))
+            Q[it["id"]] = (src, d, set(hit((it.get("explain") or "")[:220])) - d)
+        for g in v["old"]:
+            for it in g["items"]:
+                d = tags(it) | set(hit(correct(it)))
+                Q[it["id"]] = ("old", d, set(hit((it.get("note") or "")[:220])) - d)
+    for s in SETS:
+        for L in json.load(open(os.path.join(learn_dir, s + ".json"), encoding="utf-8")):
+            for sec in L.get("sections", []):
+                for it in sec.get("items", []):
+                    if it["id"] in Q:
+                        continue
+                    d = tags(it) | set(hit((it.get("topic") or "") + " · " + correct(it)))
+                    Q[it["id"]] = ("learn", d, set(hit((it.get("explain") or "")[:220])) - d)
+    qd = {c: 0 for c in SCOPE}
+    qx = {c: 0 for c in SCOPE}
+    per = {k: set() for k in ("drill", "old", "mock", "learn")}
+    nsrc = {k: 0 for k in per}
+    for src, d, x in Q.values():
+        nsrc[src] += 1
+        for c in d:
+            qd[c] += 1
+            per[src].add(c)
+        for c in x:
+            qx[c] += 1
+
     def key(c):
         return [int(x) if x.isdigit() else x for x in re.split(r"(\d+)", c)]
 
@@ -125,9 +158,10 @@ def main(learn_dir, bank_path, lib_path):
             "c": c, "t": e["title"], "lv": e.get("group") or "", "g": grp, "s": st,
             "L": [list(v) for v in strong[c].values()][:5],
             "P": [list(v) for v in part][:4],
-            "q": qcount[c],
+            "q": qd[c], "qx": qx[c],
         })
-    out = {"asof": "13 ต.ค. 2569", "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows}
+    out = {"asof": "13 ต.ค. 2569", "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows,
+           "qtotal": len(Q), "qsrc": {k: [nsrc[k], len(per[k])] for k in per}}
     path = os.path.join(HERE, "nl_data.json")
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
@@ -144,6 +178,9 @@ def main(learn_dir, bank_path, lib_path):
     full = sum(r["s"] == 2 for r in rows)
     part = sum(r["s"] == 1 for r in rows)
     print("NL ในขอบเขต %d ข้อ · มีบทเรียน %d · บางส่วน %d · ยังไม่มี %d" % (tot, full, part, tot - full - part))
+    q1 = sum(r["q"] >= 1 for r in rows)
+    print("คลังข้อสอบ %d ข้อ · หัวข้อที่มีข้อถามตรง %d (%d%%) · ≥3 ข้อ %d · นับเฉลยด้วย %d" % (
+        len(Q), q1, round(100 * q1 / tot), sum(r["q"] >= 3 for r in rows), sum(1 for r in rows if r["q"] or r["qx"])))
     for g, n, _ in GROUPS:
         rs = [r for r in rows if r["g"] == g]
         print("  %-24s %3d  เต็ม %3d  บางส่วน %3d  ไม่มี %3d" % (n, len(rs), sum(r["s"] == 2 for r in rs),
