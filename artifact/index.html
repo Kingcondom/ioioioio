@@ -105,6 +105,7 @@ aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 
 /* ---------- content ---------- */
 main{min-width:0;display:flex;flex-direction:column;gap:18px}
+.card[id]{scroll-margin-top:84px}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);
   padding:24px 26px;animation:rise .32s var(--e) both}
 @media (max-width:560px){.card{padding:18px 16px;border-radius:var(--r-md)}}
@@ -255,6 +256,36 @@ function ensure(set){
     .catch(function(e){c.lectures=[];c._loaded=true;c._err=String(e);});
   return c._p;
 }
+/* ---------- ลิงก์ตรงจาก Lecture Dashboard: #<ชุด> หรือ #<ชุด>-<คาบ> ----------
+   เลขคาบที่มี / ใช้ . แทน (เช่น #gi-27.10 = คาบ 27/10 ของชุด GI) */
+function slug(x){return String(x==null?"":x).replace(/[^A-Za-z0-9._~-]/g,".");}
+var pendingLec=null;
+function readHash(){
+  var h=String(location.hash||"").replace(/^#/,"");
+  if(!h)return false;
+  var i=h.indexOf("-"),set=i<0?h:h.slice(0,i),lec=i<0?"":h.slice(i+1);
+  if(!COURSES.some(function(c){return c.set===set;}))return false;
+  state.course=set;state.view="home";state.sec=null;state.pid=null;state.lec=null;
+  pendingLec=lec||null;
+  return true;
+}
+function landHash(){
+  if(!pendingLec)return;
+  var want=pendingLec;pendingLec=null;
+  var hit=lectures().filter(function(l){return slug(l.lec)===want;})[0];
+  if(!hit)return;
+  state.lec=hit.lec;render();
+  var el=document.getElementById("lec-"+slug(hit.lec));
+  if(!el)return;
+  el.scrollIntoView({block:"start"});
+  /* ฟอนต์โหลดเสร็จทีหลังทำให้ความสูงด้านบนขยับ เลื่อนซ้ำอีกครั้งเมื่อพร้อม */
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(document.body.contains(el))el.scrollIntoView({block:"start"});});
+}
+window.addEventListener("hashchange",function(){
+  if(!COURSES.length||!readHash())return;
+  render();window.scrollTo({top:0});
+  ensure(state.course).then(function(){render();landHash();});
+});
 function boot(){
   Promise.all([
     fetch("data/index.json",{cache:"no-cache"}).then(function(r){return r.json();}),
@@ -267,8 +298,9 @@ function boot(){
     });
     if(!COURSES.length)throw new Error("ไม่มีชุดวิชาใน data/index.json");
     if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
+    readHash();
     return ensure(state.course);
-  }).then(render).catch(function(e){
+  }).then(function(){render();landHash();}).catch(function(e){
     document.getElementById("main").innerHTML=
       "<section class='card'><h2>โหลดเนื้อหาไม่สำเร็จ</h2><p class='lede'>"+
       String(e&&e.message||e)+"</p></section>";
@@ -462,7 +494,7 @@ function viewHome(){
 
   lectures().forEach(function(l){
     var done=l.sections.filter(function(s){return secStat(s).complete;}).length;
-    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
+    h+="<section class='card' id='lec-"+esc(slug(l.lec))+"'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
       "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
     if(l.objectives&&l.objectives.length)
       h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
