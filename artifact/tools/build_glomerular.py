@@ -220,4 +220,252 @@ sec("neph-gn-04", "Proteinuria 5 ชนิด — โปรตีนรั่ว
         "① **Glomerular** — ตะแกรงรั่ว ได้ albumin มากที่สุด · ② **Tubular** — glomerulus ปกติ แต่ proximal tubule ดูดโปรตีนเล็กกลับไม่ได้ · ③ **Overflow** — โปรตีนเล็กในเลือดมากจนกรองออกมาเกินที่ท่อไตจะดูดกลับ · ④ **Functional / orthostatic** — แรงดันใน glomerulus เปลี่ยนชั่วคราว ปริมาณน้อยและตะกอนปกติ",
         F.protsrc())})
 
+# ───────────────────────────── 5
+sec("neph-gn-05", "Hematuria — เลือดมาจาก glomerulus หรือไม่",
+    "ปั่นก่อน · dysmorphic RBC · RBC cast · สีโค้ก · ไม่มีลิ่มเลือด — ทำไมแต่ละอย่างชี้ไปที่ glomerulus", 10,
+"""### ขั้นแรก: สีแดงนั้นเป็นเลือดจริงไหม (สไลด์)
+[[fig:redurine]]
+
+ปัสสาวะสีแดงต้อง **ปั่นก่อน** — ถ้าสีแดงตกเป็นตะกอน (มี Hct) คือ **hematuria** · ถ้าตะกอนใสแต่น้ำส่วนบนยังแดง ให้จุ่ม dipstick
+- **Dipstick heme บวก แต่ไม่มี RBC** → **myoglobinuria** (rhabdomyolysis) หรือ **hemoglobinuria** (hemolysis) — แผ่น dipstick ตรวจกิจกรรม peroxidase ของ heme จึงไม่แยกว่า heme อยู่ใน RBC หรือละลายอยู่
+- **Dipstick ลบ** → สีจากยาหรืออาหาร: **rifampin · porphyrin · beet root · สีผสมอาหาร**
+
+### Glomerular หรือ non-glomerular (สไลด์ อ้าง Brenner & Rector)
+| | **Glomerular hematuria** | **Non-glomerular hematuria** |
+|---|---|---|
+| สี | แดงขุ่น **smoky** สีน้ำตาล หรือ **coca-cola** | แดงสด หรือชมพู |
+| ลิ่มเลือด | **ไม่มี** | **อาจมี** |
+| Proteinuria | **> 500 มก./วัน** | < 500 มก./วัน |
+| ตะกอน | **Dysmorphic RBC / RBC cast** | RBC รูปร่างปกติ ไม่มี cast |
+
+**เกณฑ์ glomerular RBC** (RBC ≥ 3/HPF ร่วมกับข้อใดข้อหนึ่ง): ① **RBC cast** ② **dysmorphic RBC** — **distorted microcytic RBC > 50%** หรือ **acanthocyte > 5%**
+
+[[fig:rbcjourney]]
+
+#### ทำไมถึงมีอาการนี้
+| สิ่งที่เห็น | กลไก | ความหมาย |
+|---|---|---|
+| **Dysmorphic RBC** | RBC ต้อง **เบียดผ่านรอยฉีกเล็ก ๆ ของ GBM** แล้วไหลผ่านท่อไตที่ความเข้มข้น **เปลี่ยนสลับเจือจาง–เข้มข้น** (loop of Henle) เยื่อหุ้มเซลล์บวม-หดซ้ำจนเสียรูป | ชี้ว่าเลือดผ่าน nephron มาตั้งแต่ glomerulus |
+| **Acanthocyte** (วงแหวนมีตุ่มยื่น) | รูปที่จำเพาะที่สุดของความเสียหายแบบข้างต้น — แทบไม่เกิดจากเลือดที่ออกในกระเพาะปัสสาวะ | > 5% ก็พอจะบอกว่าเป็น glomerular |
+| **RBC cast** | **Tamm–Horsfall protein (uromodulin)** ที่หลั่งจาก thick ascending limb เป็นเจลในท่อไตส่วนปลาย RBC ที่หลุดมาจาก glomerulus ถูกหุ้มไว้ตามรูปท่อ จึงออกมาเป็นแท่ง | **บอกตำแหน่งได้แน่นอนที่สุด** — ต้องเกิดในท่อไต ไม่มีทางเกิดใต้ต่อไต |
+| **สีโค้ก / ชา / smoky** | hemoglobin อยู่ในปัสสาวะที่เป็นกรดนานตลอดทางยาวของท่อไต จึงถูกออกซิไดซ์เป็นสารสีน้ำตาล (acid hematin, methemoglobin) | เลือดที่ออกใกล้ทางออก (กระเพาะปัสสาวะ) ยังแดงสด |
+| **ไม่มีลิ่มเลือด** | RBC ปนอยู่ในน้ำกรองปริมาณมาก ความเข้มข้นต่ำ และท่อไตสร้าง **urokinase** ที่สลายไฟบริน | ลิ่มเลือดชี้ไปที่ทางเดินปัสสาวะส่วนล่าง (นิ่ว เนื้องอก) |
+| **Proteinuria > 500 มก./วัน** | GBM ที่ฉีกให้ RBC ลอดได้ ย่อมให้ albumin รั่วด้วย | hematuria ร่วมกับโปรตีนมาก = โรคเนื้อไต |
+
+### Non-glomerular — คิดอะไร
+นิ่ว · ติดเชื้อ · **มะเร็งทางเดินปัสสาวะ** (โดยเฉพาะผู้สูงอายุ สูบบุหรี่ เลือดออกไม่เจ็บ) · ต่อมลูกหมากโต · บาดเจ็บ · ยาต้านการแข็งตัวของเลือด (ยามักแค่เผยรอยโรคที่มีอยู่ ต้องหาสาเหตุต่อ) — การส่องกล้องและ CT urography เรียนในคาบ Renal imaging
+""",
+    ["ปัสสาวะแดง → ปั่นก่อน: ตะกอนแดง = hematuria · น้ำส่วนบนแดง + heme บวก = myoglobin/Hb · heme ลบ = ยา/อาหาร",
+     "Glomerular: สีโค้ก smoky · ไม่มี clot · protein > 500 มก./วัน · dysmorphic RBC / RBC cast",
+     "Dysmorphic: distorted microcytic RBC > 50% หรือ acanthocyte > 5%",
+     "RBC cast = Tamm–Horsfall หุ้ม RBC ในท่อไต → บอกว่ามาจาก nephron แน่นอน",
+     "ลิ่มเลือดในปัสสาวะ = เลือดออกจากทางเดินปัสสาวะส่วนล่าง"],
+    [mcq(N(8), "A 24-year-old man develops dark red urine 2 days after an extreme cross-fit session. The urine dipstick is 3+ for blood, but microscopy shows 0–2 RBC/HPF; the urine supernatant remains red after centrifugation. Serum creatine kinase is 48,000 U/L. What explains the dipstick result?",
+         ["Glomerular hematuria with lysed dysmorphic red cells", "Myoglobin reacting with the heme peroxidase pad", "Food dye producing a false-positive dipstick", "Rifampicin discoloration of the urine", "Bilirubin crossreacting with the blood pad"], 1,
+         "แผ่น blood ของ dipstick ตรวจ **กิจกรรม peroxidase ของ heme** — **myoglobin** จากกล้ามเนื้อสลายก็มี heme จึงให้ผลบวกแรงทั้งที่ **แทบไม่มี RBC** และสีแดงค้างอยู่ใน **น้ำส่วนบน** หลังปั่น (สไลด์: dipstick +ve → myoglobinuria / hemoglobinuria)\n\n- Glomerular hematuria จะเห็น RBC ในตะกอนจำนวนมาก\n- **สีผสมอาหารและ rifampin** ให้ปัสสาวะแดงแต่ **dipstick ลบ**\n- Bilirubin มีแผ่นตรวจของตัวเอง ไม่ทำให้แผ่น blood บวก",
+         "heme บวก + ไม่มี RBC + น้ำส่วนบนแดง = myoglobin หรือ hemoglobin", "Hematuria", R("Red urine algorithm"), ["2.1.43"] + UA),
+     mcq(N(9), "Urine microscopy from a 30-year-old woman shows 25 RBC/HPF. Which finding most strongly localizes the bleeding to the glomerulus?",
+         ["Bright red urine with small clots", "Acanthocytes making up 8% of the red cells", "Isomorphic red cells with a few white cells", "Hyaline casts", "Positive leukocyte esterase"], 1,
+         "สไลด์กำหนด dysmorphic RBC ว่า **distorted microcytic RBC > 50% หรือ acanthocyte > 5%** — acanthocyte 8% จึงเข้าเกณฑ์ glomerular hematuria เพราะ RBC ต้องเบียดผ่าน GBM และผ่านท่อไตที่ความเข้มข้นเปลี่ยนจึงจะได้รูปแบบนี้\n\n- **ลิ่มเลือดและสีแดงสด** ชี้ไปที่ทางเดินปัสสาวะส่วนล่าง\n- **RBC รูปร่างปกติ** = non-glomerular\n- **Hyaline cast** พบได้ในคนปกติ (ขาดน้ำ ออกกำลัง) ไม่บอกโรค glomerulus\n- **Leukocyte esterase** บอกว่ามีเม็ดเลือดขาว (ติดเชื้อ/อักเสบ)",
+         "acanthocyte > 5% หรือ dysmorphic > 50% หรือ RBC cast = glomerular", "Hematuria", R("Glomerular RBC criteria"), ["2.1.43"] + UA)],
+    ["2.1.43"] + UA,
+    {"redurine": fig("ปัสสาวะสีแดง — ปั่นก่อน แล้วดูว่าสีอยู่ตรงไหน",
+        "ขั้นตอนตามสไลด์: ตะกอนแดง = **hematuria** ไปส่องตะกอนต่อ · น้ำส่วนบนแดงให้ดู **dipstick heme** — บวกแต่ไม่มี RBC คือ myoglobin หรือ hemoglobin · ลบคือสีจากยา อาหาร หรือ porphyrin",
+        F.redurine()),
+     "rbcjourney": fig("ทำไม RBC จาก glomerulus ถึงผิดรูปและกลายเป็น cast",
+        "RBC ที่หลุดจาก glomerulus ต้อง ① **เบียดผ่าน GBM** ② ผ่านท่อไตที่ **ความเข้มข้นเปลี่ยนสลับ** จนเสียรูปเป็น **acanthocyte** และ ③ ถูก **Tamm–Horsfall** หุ้มเป็น **RBC cast** ระหว่างทาง hemoglobin ถูกกรดเปลี่ยนเป็นสีน้ำตาล — ส่วนเลือดจากกระเพาะปัสสาวะ RBC ยังกลม สีแดงสด และอาจจับเป็นลิ่ม",
+        F.rbcjourney())})
+
+# ───────────────────────────── 6
+sec("neph-gn-06", "6 คำถาม และ 5 กลุ่มอาการ — เดินจากปัสสาวะไปหาชื่อโรค",
+    "Clinical clues ของสไลด์ · asymptomatic · nephrotic · nephritic · RPGN · CGN · ทำไมตำแหน่ง deposit กำหนดกลุ่มอาการ", 11,
+"""### Clinical clues — ถาม 6 ข้อตามลำดับ (สไลด์)
+| | คำถาม | ใช้อะไรตอบ |
+|---|---|---|
+| 1 | **Is this glomerular disease?** | มี **glomerular hematuria** และ/หรือ **glomerular proteinuria** (หัวข้อ 4–5) |
+| 2 | **What's the glomerular syndrome?** | จัดเข้า 1 ใน 5 กลุ่มอาการ (ตารางถัดไป) |
+| 3 | **What's the morphological diagnosis?** | ชิ้นเนื้อไต — LM · IF · EM |
+| 4 | **Is this primary or secondary?** | primary = **จำกัดที่ไต** · secondary = **โรคทั้งระบบ** |
+| 5 | **Proper investigations?** | เลือกตามกลุ่มอาการและโรคที่สงสัย |
+| 6 | **Proper treatments?** | ทั่วไป + เฉพาะโรค |
+
+### 5 กลุ่มอาการ (สไลด์)
+| กลุ่มอาการ | เกณฑ์ |
+|---|---|
+| **Asymptomatic** (เจอจากการตรวจสุขภาพ) | isolated proteinuria **130 มก.–3 g/วัน** · hematuria **> 2 dysmorphic RBC/HPF** ในปัสสาวะปั่น หรือ **> 1 RBC cast** — ลายมือ: นึกถึง **IgAN · Alport · thin basement membrane** |
+| **Nephrotic syndrome** | proteinuria **> 3.5 g/วัน** · edema · albumin ต่ำ (**< 3–3.5 g/dL**) · cholesterol **> 200 mg/dL** · **lipiduria** (oval fat body, fatty cast) |
+| **Nephritic syndrome** | **glomerular hematuria** · proteinuria **< 3 g/วัน** · azotemia · edema · oliguria · ความดันสูงหรือ AKI ที่เพิ่งเกิด |
+| **RPGN** | acute GN ร่วมกับ **crescent จำนวนมาก (มัก > 30–50%)** · GFR ลด **50% ภายใน 3 เดือน** |
+| **Chronic GN (CGN)** | ไตเสื่อมช้า **> 3 เดือน** · proteinuria > 3 g/วัน และ/หรือ glomerular hematuria · HT · **ไตเล็ก** หรือ glomerulosclerosis รุนแรง |
+
+### Nephrotic เทียบ nephritic (สไลด์)
+| ลักษณะ | Nephrotic | Nephritic |
+|---|---|---|
+| Edema | ++++ | ++ |
+| ความดันสูง | ไม่มี | **มี** |
+| ปอดคั่งน้ำ | มักไม่มี | อาจมี |
+| ปัสสาวะเป็นฟอง/proteinuria | ++++ | ++ |
+| Albumin | **ต่ำ** | ปกติหรือต่ำเล็กน้อย |
+| Glomerular hematuria | ไม่มี | **มี** |
+| Oliguria / AKI | มักไม่มี | **มี** |
+
+### โรคแต่ละโรคอยู่ตรงไหนของสเปกตรัม
+[[fig:spectrum]]
+
+#### ทำไมบางโรค nephrotic บางโรค nephritic — ดูที่ตำแหน่งของ deposit
+[[fig:deposits]]
+
+| ตำแหน่ง | อยู่ติดกับอะไร | ผล | โรค |
+|---|---|---|---|
+| **Podocyte เอง** (ไม่มี deposit) | — | foot process แผ่แบน → รั่วล้วน ไม่อักเสบ | MCD · FSGS |
+| **Subepithelial** (นอก GBM ด้านปัสสาวะ) | podocyte · **ห่างจากกระแสเลือด** | complement เจาะ podocyte → รั่วมาก แต่เซลล์อักเสบในเลือดเข้าไม่ถึง → **ตะกอนใส** | **MN** (เล็กสม่ำเสมอ) · PSGN (hump ใหญ่ — แต่มีอักเสบใน capillary ร่วมด้วยจึงเป็น nephritic) |
+| **Subendothelial** (ใต้ endothelium ด้านเลือด) | **กระแสเลือดโดยตรง** | ดึง neutrophil/monocyte + complement → อักเสบ หลอดเลือดอุด GBM ฉีก → **nephritic** | **LN class III/IV** · MPGN |
+| **Mesangial** | แกนกลางกระจุกหลอดเลือด | mesangial cell แบ่งตัว → hematuria เด่น โปรตีนปานกลาง | **IgAN** · LN class II |
+
+### Morphological diagnosis (แผนภาพในสไลด์)
+podocytopathy (**MCD, FSGS**) · **MN** · deposition disease · **ANCA**-associated · **anti-GBM** (Goodpasture) — แต่ละกลุ่มอยู่ในหัวข้อ 8–13
+
+### Proper investigations — ชุดแรก (แนวทางทั่วไป อิง KDIGO 2021 — สไลด์ไม่ได้ลงรายละเอียด)
+| กลุ่ม | ส่งตรวจ |
+|---|---|
+| ทุกราย | UA + ตะกอน · UPCR · BUN/Cr/eGFR · albumin · lipid profile · CBC · อัลตราซาวนด์ไต (ขนาด ความหนาของเนื้อไต) |
+| หาสาเหตุทุติยภูมิ | **C3, C4** · ANA, anti-dsDNA · HBsAg, anti-HCV, anti-HIV · FBS/HbA1c |
+| ตามภาพ | nephritic หลังติดเชื้อ: **ASO, anti-DNase B** · RPGN: **ANCA (MPO/PR3), anti-GBM** · nephrotic ผู้ใหญ่: **anti-PLA2R** · อายุมาก: **SPEP/UPEP, serum free light chain** · คัดกรองมะเร็งตามอายุ (MN) |
+| ชิ้นเนื้อไต | ผู้ใหญ่ส่วนใหญ่ — ยกเว้นเด็กเนโฟรติกแบบฉบับ (ให้ steroid ก่อน) · **ไตเล็กแล้ว (CGN) ไม่เจาะ** เพราะได้แต่แผลเป็นและเสี่ยงเลือดออก |
+""",
+    ["6 คำถาม: ใช่โรค glomerulus ไหม → กลุ่มอาการอะไร → พยาธิอะไร → ปฐมภูมิหรือทุติยภูมิ → ส่งตรวจ → รักษา",
+     "Nephrotic: > 3.5 g/วัน + บวม + albumin ต่ำ + cholesterol > 200 + lipiduria",
+     "Nephritic: glomerular hematuria + protein < 3 g + azotemia + บวม + oliguria + HT ใหม่",
+     "RPGN: crescent > 30–50% + GFR ลด 50% ใน 3 เดือน · CGN: > 3 เดือน + ไตเล็ก",
+     "Deposit ติดด้านเลือด (subendothelial) = อักเสบ = nephritic · ด้านปัสสาวะ (subepithelial) = รั่ว = nephrotic"],
+    [mcq(N(10), "A 52-year-old woman has creatinine that rose from 0.9 to 2.4 mg/dL over 5 weeks, with dysmorphic red cells, red cell casts and urine protein 1.5 g/day. Which glomerular syndrome is this?",
+         ["Asymptomatic urinary abnormality", "Nephrotic syndrome", "Rapidly progressive glomerulonephritis", "Chronic glomerulonephritis", "Isolated tubular proteinuria"], 2,
+         "**RPGN** = acute GN ที่ไตเสื่อมเร็ว — เกณฑ์ในสไลด์คือ **GFR ลดลง 50% ภายใน 3 เดือน** (creatinine เพิ่มขึ้นเกินเท่าตัวใน 5 สัปดาห์) ร่วมกับตะกอนแบบ glomerular และพยาธิจะมี **crescent > 30–50%**\n\n- **Asymptomatic** ไตต้องปกติ\n- **Nephrotic** ต้องโปรตีน > 3.5 g และไม่มี active sediment เด่น\n- **CGN** ต้องดำเนินโรค > 3 เดือนและมักไตเล็ก\n- **Tubular proteinuria** ไม่มี RBC cast",
+         "creatinine เพิ่มเกินเท่าตัวในไม่กี่สัปดาห์ + RBC cast = RPGN → หา anti-GBM/ANCA/C3 และเจาะไตด่วน", "Glomerular syndromes", R("Rapidly progressive glomerulonephritis"), [AGN, "B9.2.7(1)"]),
+     mcq(N(11), "In which location do immune deposits typically produce heavy proteinuria with a bland urine sediment, because circulating inflammatory cells cannot reach them?",
+         ["Subendothelial space", "Mesangium", "Subepithelial space on the outer side of the GBM", "Within the tubular basement membrane", "Within the lumen of glomerular capillaries"], 2,
+         "deposit ที่อยู่ **ด้าน subepithelial** (นอก GBM ฝั่งปัสสาวะ ติด podocyte) อย่างใน **membranous nephropathy** อยู่ **หลังกำแพง GBM** ห่างจากกระแสเลือด complement ที่ถูกกระตุ้นเจาะ podocyte ให้โปรตีนรั่วมาก แต่ neutrophil และ monocyte ในเลือดเข้าไม่ถึง จึงไม่มีการอักเสบ ตะกอนใส\n\n- **Subendothelial** ติดกระแสเลือด → อักเสบ → nephritic (LN III/IV)\n- **Mesangium** → mesangial proliferation hematuria เด่น (IgAN)\n- TBM และในช่องหลอดเลือดไม่ใช่ตำแหน่งที่ให้ภาพนี้",
+         "subepithelial (MN) = รั่วไม่อักเสบ · subendothelial (LN IV) = อักเสบ", "Glomerular syndromes", ["หลักพยาธิสรีรวิทยา (Brenner & Rector) — ไม่ได้อยู่ในสไลด์ตรง ๆ"], [NS, AGN])],
+    [NS, AGN, CGN, "B9.2.2(4)", "B1.6.1(1)"],
+    {"spectrum": fig("สเปกตรัมจาก nephrotic ถึง nephritic (ตารางในสไลด์)",
+        "ความยาวแท่งตามจำนวน + ที่อาจารย์ให้ไว้ — **MCD** อยู่ปลาย nephrotic ล้วน **crescentic GN** อยู่ปลาย nephritic ล้วน โรคที่อยู่กลาง ๆ อย่าง **FSGS** (ลายมือ: *Nephro–Nephri*) หรือ **IgAN/LN** มาได้ทั้งสองแบบ ขึ้นกับความรุนแรง",
+        F.spectrum()),
+     "deposits": fig("ตำแหน่งของ immune deposit บอกกลุ่มอาการ",
+        "deposit ที่ **ติดด้านเลือด** (subendothelial) เรียกเซลล์อักเสบได้ทันที → **nephritic** · deposit **นอก GBM ด้านปัสสาวะ** (subepithelial) ทำร้าย podocyte แต่เซลล์อักเสบเข้าไม่ถึง → **nephrotic ตะกอนใส** · **hump** ของ PSGN อยู่ด้านเดียวกันแต่มาพร้อมการอักเสบใน capillary จึงเป็น nephritic · **mesangial** deposit ให้ hematuria เด่น",
+        F.deposits())})
+
+# ───────────────────────────── 7
+sec("neph-gn-07", "Nephrotic syndrome — ทำไมแต่ละอาการถึงเกิด",
+    "บวม (underfill + overfill) · ไขมันสูง · lipiduria · ลิ่มเลือด · ติดเชื้อ · Ca/T4 ต่ำ · การรักษาทั่วไป", 12,
+"""### ต้นไม้ของ nephrotic
+[[fig:nstree]]
+
+ทุกอาการเริ่มจากจุดเดียว — **podocyte พัง → albumin และโปรตีนอื่นรั่วมาก** แล้วแตกเป็นกิ่ง
+
+#### ทำไมถึงมีอาการนี้
+| อาการ / สิ่งตรวจพบ | กลไก | เบาะแสทางคลินิก |
+|---|---|---|
+| **บวมกดบุ๋ม ทั้งตัว** | สองกลไกร่วมกัน (ภาพถัดไป): **underfill** — albumin ต่ำ แรงดึงน้ำในหลอดเลือดลด น้ำซึมออก · **overfill** — plasminogen ที่รั่วมาถูกเปลี่ยนเป็น plasmin แล้วไป **เปิด ENaC** ที่ collecting duct ไตจึงเก็บโซเดียมเอง | บวมรอบตาตอนเช้า ขาตอนบ่าย · น้ำในช่องท้อง/เยื่อหุ้มปอด |
+| **ไม่ค่อยมีปอดคั่งน้ำ** | ความดันในหลอดเลือดไม่ได้สูงแบบ nephritic และ oncotic pressure ในเนื้อเยื่อปอดลดตามไปด้วย น้ำเหลืองระบายได้มากขึ้น | ต่างจาก nephritic ที่ volume ล้นในหลอดเลือด |
+| **Cholesterol สูง** | albumin ต่ำกระตุ้นให้ **ตับสร้าง lipoprotein (apoB) เพิ่ม** · PCSK9 เพิ่ม ทำให้ LDL receptor ลด · การทำงานของ **lipoprotein lipase ลด** จึงกำจัด VLDL/triglyceride ช้า — **ไม่ได้มาจากการกินหรือไตขับไม่ออก** | LDL และ TG สูง เสี่ยงหลอดเลือดแข็งระยะยาว |
+| **Lipiduria** — oval fat body, fatty cast | lipoprotein รั่วผ่านตะแกรง เซลล์ท่อไตกลืนไขมันไว้แล้วหลุดออกมา (**oval fat body**) หรือติดอยู่ใน cast · ใต้แสงโพลาไรซ์ cholesterol ester เห็นเป็น **Maltese cross** | ใช้ยืนยันว่าโปรตีนรั่วจาก glomerulus |
+| **ลิ่มเลือด** — RVT, PE, DVT | **antithrombin III** (ขนาดใกล้ albumin) รั่วออก · ตับสร้าง **fibrinogen, factor V, VIII** เพิ่ม · เกล็ดเลือดจับกลุ่มง่าย · เลือดข้นจากยาขับปัสสาวะ | **RVT**: ปวดสีข้างเฉียบพลัน hematuria โปรตีนรั่วมากขึ้น ไตวาย และในชาย **varicocele ข้างซ้าย** (หลอดเลือดดำอัณฑะซ้ายเทเข้า renal vein ซ้าย) · เสี่ยงสูงสุดใน **MN** |
+| **ติดเชื้อง่าย** | สูญเสีย **IgG** และ **complement factor B** ซึ่งจำเป็นต่อการเคลือบเชื้อมีแคปซูล + บวมน้ำเป็นแหล่งเพาะเชื้อ + ยากดภูมิ | เด็ก MCD ไข้ ปวดท้อง → **SBP จาก pneumococcus** · cellulitis |
+| **Muehrcke's lines** (เล็บมีแถบขาวคู่) | albumin ต่ำทำให้ฐานเล็บบวม | หายเมื่อ albumin กลับมา |
+| **Ca รวมต่ำ** | albumin ที่จับ Ca ลด + **vitamin D binding protein** รั่ว | ดู ionized Ca หรือแก้ด้วย albumin |
+| **T4 รวมต่ำ แต่ free T4/TSH ปกติ** | **thyroxine-binding globulin** รั่ว | ไม่ต้องให้ thyroxine |
+| **ซีด** | **transferrin** และ erythropoietin รั่ว | — |
+| **AKI** | volume ในหลอดเลือดต่ำเกิน (ขับน้ำมากไป) · เนื้อไตบวม · RVT · ยา (NSAIDs, AIN) | creatinine ขึ้นระหว่างรักษา |
+
+### ทำไมบวม — underfill หรือ overfill
+[[fig:fill]]
+
+### ทำไม furosemide ต้องใช้ขนาดสูง
+furosemide ต้อง **จับกับ albumin** เพื่อถูกส่งไปยัง proximal tubule แล้วหลั่งเข้าท่อ — albumin ในเลือดต่ำ ยาถึงท่อน้อย · และ albumin ที่รั่วอยู่ในน้ำกรอง **จับยาไว้ในท่อ** ไม่ให้ออกฤทธิ์ที่ loop of Henle → ต้องเพิ่มขนาด ให้วันละ 2 ครั้ง หรือร่วมกับ thiazide/amiloride (ยับยั้ง ENaC)
+
+### การรักษาทั่วไปของ nephrotic syndrome (อิง KDIGO 2021 — สไลด์เน้นการรักษาเฉพาะโรค)
+| เป้าหมาย | การรักษา | เหตุผลเชิงกลไก |
+|---|---|---|
+| บวม | **จำกัดเกลือ** (Na < 2 g/วัน) + **loop diuretic** ± thiazide | ลด Na คั่ง |
+| ลดโปรตีนรั่ว | **ACEi / ARB** (± SGLT2i ในผู้ใหญ่) | ขยาย efferent arteriole ลดแรงดันใน glomerulus — ระวัง Cr ขึ้นและ K สูง ไม่เริ่มขณะ volume ต่ำหรือ AKI |
+| ไขมัน | **statin** ถ้าโปรตีนรั่วต่อเนื่อง | ลดความเสี่ยงหลอดเลือด |
+| ลิ่มเลือด | **anticoagulant ป้องกัน** ใน MN ที่ albumin ต่ำมาก (< 2–2.5 g/dL) และเลือดออกง่ายต่ำ | MN เสี่ยงสูงสุด |
+| ติดเชื้อ | วัคซีน pneumococcus, influenza · ระวัง SBP | IgG/factor B รั่ว |
+""",
+    ["Nephrotic ทุกอาการเริ่มจาก podocyte พัง → โปรตีนรั่ว → albumin ต่ำ + โปรตีนอื่นรั่ว",
+     "บวม = underfill (albumin ต่ำ) + overfill (plasmin เปิด ENaC)",
+     "Cholesterol สูงเพราะตับสร้าง lipoprotein เพิ่ม + LPL ลด · lipiduria = oval fat body, Maltese cross",
+     "ลิ่มเลือด: AT-III รั่ว + fibrinogen/V/VIII เพิ่ม → RVT (ปวดสีข้าง hematuria varicocele ซ้าย) — MN เสี่ยงสุด",
+     "ติดเชื้อ: IgG/factor B รั่ว → เด็ก MCD เป็น pneumococcal SBP"],
+    [mcq(N(12), "A 40-year-old man with nephrotic syndrome (albumin 2.0 g/dL, urine protein 8 g/day) has low total T4 but normal free T4 and TSH. He has no thyroid symptoms. What is the best interpretation?",
+         ["Primary hypothyroidism requiring levothyroxine", "Central hypothyroidism from pituitary infarction", "Urinary loss of thyroxine-binding globulin with normal thyroid function", "Sick euthyroid syndrome requiring T3 replacement", "Iodine deficiency from proteinuria"], 2,
+         "**Thyroxine-binding globulin** เป็นโปรตีนขนาดเล็กพอจะรั่วออกทางตะแกรงที่พัง T4 ที่จับกับโปรตีนจึงลด → **T4 รวมต่ำ** แต่ส่วนที่ออกฤทธิ์ (**free T4**) และ **TSH ปกติ** = ต่อมไทรอยด์ทำงานปกติ ไม่ต้องให้ยา (หลักเดียวกับ Ca รวมต่ำจาก albumin ต่ำ)\n\n- **Primary hypothyroid** ต้องมี TSH สูง\n- **Central** ต้องมี free T4 ต่ำ\n- **Sick euthyroid** ไม่รักษาด้วย T3\n- โปรตีนรั่วไม่ทำให้ขาดไอโอดีน",
+         "nephrotic: T4 รวมต่ำ / Ca รวมต่ำ จากโปรตีนจับรั่ว — ดู free T4, ionized Ca", "Nephrotic complications", ["หลักพยาธิสรีรวิทยา — ไม่ได้อยู่ในสไลด์"], [NS]),
+     mcq(N(13), "A patient with nephrotic syndrome (albumin 1.9 g/dL) remains edematous despite oral furosemide 40 mg daily. Which mechanism best explains the diuretic resistance?",
+         ["Furosemide is excreted unchanged by the liver in hypoalbuminemia", "Reduced albumin-bound delivery to the proximal tubule and binding of furosemide by albumin within the tubular lumen", "Downregulation of the Na–K–2Cl cotransporter by aldosterone", "Increased renal blood flow washing out the drug", "Furosemide-induced hyperkalemia blocking its own action"], 1,
+         "furosemide ต้องจับกับ **albumin** จึงถูกนำไปส่งและหลั่งที่ proximal tubule — albumin ต่ำ ยาถึงท่อน้อย และ **albumin ที่รั่วอยู่ในท่อจับยาไว้** ไม่ให้ไปออกฤทธิ์ที่ Na–K–2Cl ของ loop of Henle ร่วมกับ ENaC ที่ถูก plasmin เปิดช่วยดูดโซเดียมกลับที่ปลายท่อ → ต้องใช้ขนาดสูงขึ้น วันละ 2 ครั้ง หรือเสริม thiazide/amiloride\n\n- furosemide ขับทางไต ไม่ใช่ตับ\n- aldosterone ไม่ได้ลดจำนวน NKCC2\n- เลือดไปไตใน nephrotic ไม่ได้เพิ่ม\n- furosemide ทำให้ K ต่ำ ไม่ใช่สูง",
+         "albumin ต่ำ = furosemide ส่งถึงท่อน้อย + ถูกจับในท่อ → ขนาดสูง ± thiazide/amiloride", "Nephrotic treatment", ["หลักเภสัชวิทยา + KDIGO 2021 — ไม่ได้อยู่ในสไลด์"], [NS, "B9.4(1)"])],
+    [NS, "B9.2.2(4)", "2.1.39", "B9.4(1)", "2.3.9(2)"],
+    {"nstree": fig("ต้นไม้ของ nephrotic syndrome",
+        "กิ่งซ้าย: **albumin ต่ำ** → บวม และตับเร่งสร้างไขมัน → lipiduria · กิ่งขวา: **โปรตีนอื่นรั่วตาม** — antithrombin III (ลิ่มเลือด) · IgG/factor B (ติดเชื้อ) · โปรตีนจับฮอร์โมนและแร่ธาตุ (Ca, T4 รวมต่ำ ซีด)",
+        F.nstree()),
+     "fill": fig("บวมใน nephrotic — สองกลไกที่เกิดพร้อมกัน",
+        "**Underfill** (ซ้าย) อธิบายบวมเมื่อ albumin ต่ำมาก โดยเฉพาะเด็ก MCD · **Overfill** (ขวา) อธิบายว่าทำไมผู้ป่วยหลายรายบวมทั้งที่ volume ในหลอดเลือดไม่ได้ต่ำ — plasminogen ที่รั่วมาเปิด **ENaC** ไตจึงเก็บโซเดียมเองโดยไม่ต้องรอ renin",
+        F.fill())})
+
+# ───────────────────────────── 8
+sec("neph-gn-08", "Nephritic · RPGN · CGN — ทำไม GFR ลด และ crescent คืออะไร",
+    "หลอดเลือดฝอยถูกเซลล์อักเสบอุด · GBM ฉีกจน fibrin รั่วเข้า Bowman space เป็น crescent · IF 3 แบบ", 10,
+"""### Nephritic syndrome (สไลด์)
+glomerular hematuria · proteinuria < 3 g/วัน · azotemia (ลายมือ: **BUN rising**) · edema · oliguria · ความดันสูงหรือ AKI ที่เพิ่งเกิด
+
+[[fig:glomx]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **Oliguria, BUN/Cr ขึ้น** | immune complex หรือแอนติบอดีกระตุ้น complement → neutrophil และ monocyte มาเกาะ · endothelial และ mesangial cell แบ่งตัว (**endocapillary proliferation**) → **ช่องหลอดเลือดฝอยตีบ** พื้นที่กรองลด → GFR ลด |
+| **ความดันสูง + บวม + ปอดคั่งน้ำ** | GFR ลดแต่ท่อไตยังดูดโซเดียมเต็มที่ → **โซเดียมคั่ง (overfill)** renin ถูกกด — ความดันอาจสูงจนปวดศีรษะ ชัก (hypertensive encephalopathy) |
+| **Hematuria สีโค้ก + RBC cast** | การอักเสบทำให้ **GBM ฉีก** RBC ลอดออกแล้วผ่านท่อไต (หัวข้อ 5) |
+| **Proteinuria ไม่มาก** | podocyte ไม่ได้เป็นเป้าหลัก และ GFR ที่ลดทำให้ปริมาณที่กรองลดด้วย |
+
+### RPGN — crescent เกิดอย่างไร
+เมื่อการอักเสบรุนแรงจน **GBM ฉีกเป็นรู** → fibrin และโปรตีนพลาสมาทะลักเข้า **Bowman space** → กระตุ้น **parietal epithelial cell** แบ่งตัวร่วมกับ macrophage เป็นชั้นรูปพระจันทร์เสี้ยว (**cellular crescent**) → **เบียดกระจุกหลอดเลือด** และปิดทางออกสู่ท่อไต → GFR ลดเร็วมาก ถ้าปล่อยไว้ crescent จะกลายเป็น **fibrocellular → fibrous** ซึ่งไม่กลับคืน — จึงต้อง **วินิจฉัยและรักษาภายในวัน–สัปดาห์**
+
+RPGN แบ่งตาม **immunofluorescence** เป็น 3 กลไก
+
+[[fig:ifpat]]
+
+| แบบ | IF | ตัวอย่าง | เบาะแส |
+|---|---|---|---|
+| **Anti-GBM** | **linear** IgG ตาม GBM | Goodpasture | **ไอเป็นเลือด** — แอนติเจนเป้าหมาย (α3 ของ type IV collagen) มีทั้งใน GBM และ **alveolar basement membrane** · สูบบุหรี่เผยแอนติเจนในปอด |
+| **Immune complex** | **granular** | PSGN · IgAN · LN · MPGN | C3 ต่ำ (PSGN, LN, MPGN) · ANA/anti-dsDNA · ASO |
+| **Pauci-immune** | แทบไม่ติดสี | **ANCA** (MPO, PR3) | ไซนัส ปอด ผื่น เส้นประสาท · อายุมาก |
+
+การรักษา (อิง KDIGO 2024 ANCA vasculitis และ KDIGO 2021 — สไลด์ระบุเพียงชื่อกลุ่ม): **methylprednisolone pulse** + **cyclophosphamide หรือ rituximab** · **plasma exchange** ใน anti-GBM · เจาะไตโดยเร็วแต่ไม่ต้องรอผลก่อนเริ่มยาถ้าภาพชัด
+
+### Chronic GN (CGN)
+ไตเสื่อมช้า > 3 เดือน · proteinuria และ/หรือ glomerular hematuria · ความดันสูง · **ไตเล็ก** หรือ glomerulosclerosis รุนแรง (สไลด์) — ถ้าอัลตราซาวนด์พบไตเล็ก เนื้อไตบาง **การเจาะไตมักไม่ช่วย** (เห็นแต่แผลเป็น) และเลือดออกง่าย การดูแลคือชะลอไตเสื่อมแบบ CKD
+""",
+    ["Nephritic: เซลล์อักเสบอุดช่องหลอดเลือด → GFR ลด · ท่อไตยังดูด Na → HT บวม (overfill)",
+     "RPGN: GBM ฉีก → fibrin เข้า Bowman space → crescent เบียด tuft — fibrous แล้วไม่กลับ",
+     "IF: linear = anti-GBM · granular = immune complex · pauci-immune = ANCA",
+     "Anti-GBM ไอเป็นเลือดเพราะแอนติเจนเดียวกันอยู่ที่ alveolar BM",
+     "CGN ไตเล็ก — ไม่เจาะไต"],
+    [mcq(N(14), "A 68-year-old woman has chronic sinusitis, creatinine rising from 1.0 to 3.1 mg/dL over 4 weeks and red cell casts. Kidney biopsy shows crescents in 60% of glomeruli with little or no immunoglobulin or complement staining. Which test is most likely positive?",
+         ["Anti-glomerular basement membrane antibody", "Antistreptolysin O titer with low C3", "Anti-phospholipase A2 receptor antibody", "Antineutrophil cytoplasmic antibody", "Serum IgA with mesangial deposits"], 3,
+         "crescentic GN ที่ IF **แทบไม่ติดสี = pauci-immune** — เกือบทั้งหมดเป็น **ANCA-associated vasculitis** (MPO หรือ PR3) ภาพไซนัสเรื้อรังเข้ากับ granulomatosis with polyangiitis\n\n- **Anti-GBM** ให้ **linear IgG**\n- **PSGN** ให้ granular IgG/C3\n- **Anti-PLA2R** เป็นของ membranous nephropathy (nephrotic ไม่ใช่ crescent)\n- **IgAN** เห็น mesangial IgA ชัด ไม่ใช่ pauci-immune",
+         "crescent + IF ว่าง = pauci-immune = ANCA", "RPGN", ["สไลด์ พญ.ฉันทิศา — morphological diagnosis: ANCA, anti-GBM; KDIGO 2024 AAV"], [AGN, "B5.2.2-3(6)"]),
+     mcq(N(15), "A 45-year-old man has hypertension, creatinine 4.8 mg/dL that has been rising for 3 years, urine protein 2.5 g/day and dysmorphic hematuria. Ultrasound shows both kidneys measuring 8 cm with thin echogenic cortex. What is the most appropriate next step?",
+         ["Urgent kidney biopsy to identify the primary glomerulonephritis", "Pulse methylprednisolone followed by cyclophosphamide", "CKD care: BP control, RAS blockade as tolerated and preparation for kidney replacement therapy, without biopsy", "Plasma exchange", "Repeat ultrasound in 1 week to see if the kidneys enlarge"], 2,
+         "ภาพนี้คือ **chronic GN** — ไตเสื่อมช้า > 3 เดือน และ **ไตเล็ก เนื้อไตบางและสว่าง** (แผลเป็น) สไลด์ระบุว่า CGN มี small kidney/severe glomerulosclerosis การเจาะไตตอนนี้จะเห็นแต่แผลเป็น ไม่เปลี่ยนการรักษา และเสี่ยงเลือดออก จึงดูแลแบบ **CKD** และเตรียมบำบัดทดแทนไต\n\n- ยากดภูมิแรง ๆ และ plasma exchange ไม่ช่วยแผลเป็นที่ไม่กลับคืน\n- ไตเล็กไม่โตกลับมา",
+         "ไตเล็ก + เสื่อม > 3 เดือน = CGN → ดูแลแบบ CKD ไม่เจาะไต", "CGN", R("Chronic glomerulonephritis"), [CGN, "2.3.14(3)", "B9.2.7(2)"])],
+    [AGN, CGN, "B9.2.7(1)", "B5.2.2-3(6)", "2.1.44"],
+    {"glomx": fig("Glomerulus ปกติ · nephritic · RPGN",
+        "**ปกติ** — ช่องหลอดเลือดฝอยเปิดกว้าง · **Nephritic** — เซลล์อักเสบและเซลล์ที่แบ่งตัวอุดช่องหลอดเลือด GFR จึงลด · **RPGN** — fibrin ทะลัก GBM ที่ฉีกเข้า Bowman space จนเซลล์บุผนังแบ่งตัวเป็น **crescent** (สีเหลือง) เบียดกระจุกหลอดเลือดให้เล็กลง",
+        F.glomx()),
+     "ifpat": fig("Immunofluorescence 3 แบบ บอกกลไกของ RPGN",
+        "**Linear** — แอนติบอดีจับ GBM เองทั้งแผ่น (anti-GBM) · **Granular** — immune complex เป็นก้อน ๆ (PSGN, IgAN, LN, MPGN) · **Pauci-immune** — แทบไม่มี immunoglobulin เพราะความเสียหายมาจาก neutrophil ที่ถูก ANCA กระตุ้น",
+        F.ifpat())})
+
 # ═══════════════════════════ END SECTIONS
