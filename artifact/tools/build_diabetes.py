@@ -559,4 +559,472 @@ sec("endo-dm-10", "Diabetic retinopathy — จาก microaneurysm ถึงห
         "**ปกติ** · **NPDR** microaneurysm จุดเลือด exudate ยังมองเห็นปกติ · **macular edema** น้ำรั่วรอบ macula ทำให้ตามัวแม้ยังไม่ถึง PDR · **PDR** หลอดเลือดใหม่ (เส้นหยัก) เปราะ แตกเป็นเลือดออกก้อนใหญ่ (ภาพวาดเชิงหลักการ — ภาพจอตาจริงอยู่ในสไลด์)",
         F.retina())})
 
-# ═══════════════════════════ END SECTIONS
+# ───────────────────────────── 11
+sec("endo-dm-11", "Diabetic nephropathy — hyperfiltration ถึงไตวาย และยาที่ลดแรงดันใน glomerulus",
+    "5 ระยะ · microalbuminuria 30–300 · UACR ทุกปี · BP < 130/80 · ACEi/ARB · SGLT2i", 11,
+"""### ภาพรวม (สไลด์)
+- glomerulus เสื่อม → albumin/โปรตีนรั่ว
+- **สาเหตุอันดับ 1 ของไตวายระยะสุดท้าย (35% ของ ESRD)**
+- 20–30% ของผู้ป่วย T1/T2 มีหลักฐานของโรคไต แต่ใน T2 ส่วนน้อยกว่าที่ไปถึง ESRD
+- **อัตราตาย 90% ถ้าอยู่ใน ESRD เกิน 10 ปี**
+
+### 5 ระยะ (สไลด์)
+[[fig:dn_stages]]
+
+| ระยะ | เริ่มเมื่อ | ชื่อ | การเปลี่ยนแปลงที่ไต |
+|---|---|---|---|
+| 1 | ตอนวินิจฉัย | **Hyperfunction** | GFR ↑ |
+| 2 | 2–3 ปี | **"Silent"** | GFR ↑ · **GBM หนาขึ้น** |
+| 3 | > 5 ปี | **Incipient DN** | **Microalbuminuria** |
+| 4 | > 10 ปี | **Overt DN** | **Clinical proteinuria** · GFR ↓ |
+| 5 | > 15 ปี | **Uremia** | GFR < 10 mL/min |
+
+#### ทำไมถึงเกิด — กลไกของแต่ละระยะ
+| ระยะ | กลไก |
+|---|---|
+| **GFR สูงช่วงแรก** | glucose ที่ถูกกรองมาก ทำให้ proximal tubule ดูด glucose พร้อม Na ผ่าน **SGLT2 มากขึ้น** → Na ไปถึง **macula densa** น้อย → ไตเข้าใจว่าเลือดมาน้อย จึง **ขยาย afferent arteriole** (tubuloglomerular feedback) ร่วมกับ angiotensin II **หด efferent** → แรงดันใน glomerulus สูง (เหมือน MOCK ที่ถาม mechanism ของ early DN) |
+| **GBM หนา · mesangium ขยาย** | น้ำตาลจับโปรตีนเป็น AGEs + แรงดันสูงกระตุ้น TGF-β → สร้าง matrix มาก → **Kimmelstiel–Wilson nodule** (nodular glomerulosclerosis) |
+| **Albumin รั่ว** | podocyte บาดเจ็บจากแรงดันและ AGEs · ประจุลบของตะแกรงลดลง (ทวนคาบ glomerular — Nephro คาบ 14) |
+| **GFR ลดจนไตวาย** | glomerulus กลายเป็นแผลเป็นทีละหน่วย nephron ที่เหลือกรองหนักขึ้นอีก — วงจรเดียวกับ FSGS แบบปรับตัว |
+
+[[fig:renoprot]]
+
+### Albuminuria (สไลด์)
+- **Microalbuminuria = 30–300 mg/24 ชม.** · ตรวจปัสสาวะเช้าเป็น **UACR 30–300 mg albumin/g creatinine**
+- **ทำนายการเกิด DN และการตายจากโรคหัวใจ**
+- **ต้องตัด UTI ออกก่อน** วินิจฉัยว่าเป็นโรคไต (ไข้ ออกกำลังหนัก หัวใจล้มเหลว ก็ทำให้บวกชั่วคราว — ต้องผิดปกติ 2 ใน 3 ครั้งใน 3–6 เดือน)
+
+### คัดกรอง (สไลด์)
+T2 **ตั้งแต่วินิจฉัย** · T1 **หลังเป็น 3–5 ปี** · ตรวจ **UACR และ serum creatinine ทุกปี**
+
+### รักษา
+**สไลด์**: คุมความดัน **< 130/80 mmHg** · **ACEi หรือ ARB** — ใช้รักษา microalbuminuria, proteinuria และความดันสูง และ **ใช้ได้แม้ความดันปกติ** · HbA1c < 6.5–7% · โปรตีนปริมาณปานกลาง
+**แนวทางปัจจุบัน (KDIGO 2022 / ADA — ไม่อยู่ในสไลด์)**: **SGLT2i** ใน T2 ที่มี CKD (เริ่มได้เมื่อ eGFR ≥ 20) · **finerenone** เมื่อยังมี albuminuria · GLP-1RA ช่วยเพิ่ม · metformin ลดขนาดเมื่อ eGFR 30–44 และหยุดเมื่อ < 30 · creatinine ขึ้นไม่เกิน 30% หลังเริ่ม ACEi/ARB หรือ SGLT2i **ไม่ต้องหยุดยา**
+""",
+    ["DN = สาเหตุ ESRD อันดับ 1 (35%) · ESRD > 10 ปี ตาย 90%",
+     "5 ระยะ: hyperfunction (GFR ↑) → silent (GBM หนา) → microalbuminuria (> 5 ปี) → overt (> 10 ปี) → uremia (> 15 ปี)",
+     "Hyperfiltration: SGLT2 ดูด Na มาก → macula densa → afferent ขยาย + Ang II หด efferent",
+     "Microalbuminuria 30–300 mg/วัน (UACR 30–300 mg/g) · ตัด UTI ก่อน · คัดกรอง T2 ตั้งแต่วินิจฉัย T1 หลัง 3–5 ปี",
+     "BP < 130/80 · ACEi/ARB แม้ BP ปกติ · ปัจจุบัน + SGLT2i (eGFR ≥ 20) · Cr ขึ้น ≤ 30% ไม่ต้องหยุด"],
+    [mcq(N(21), "A 58-year-old man with type 2 diabetes and UACR 420 mg/g is started on losartan. Two weeks later creatinine rises from 1.20 to 1.40 mg/dL and potassium is 4.8 mEq/L. What is the best action?",
+         ["Stop losartan because of acute kidney injury", "Continue losartan; a rise in creatinine of up to about 30% reflects reduced intraglomerular pressure", "Switch losartan to an ACE inhibitor plus ARB combination", "Add a thiazide to lower creatinine", "Order a renal biopsy"], 1,
+         "creatinine ขึ้น **17%** (1.20 → 1.40) หลังเริ่ม ARB เป็นผลที่คาดได้ — ARB คลาย **efferent arteriole** แรงดันใน glomerulus ลด GFR จึงลดเล็กน้อยช่วงแรก ซึ่งเป็นกลไกเดียวกับที่ปกป้องไตระยะยาว — **ขึ้นไม่เกินราว 30% และ K ไม่สูงมาก ให้ยาต่อ**\n\n- หยุดยาจะเสียประโยชน์ป้องกันไต\n- ACEi + ARB ร่วมกันเพิ่ม AKI และ K สูงโดยไม่ได้ประโยชน์\n- thiazide ไม่ได้ลด creatinine\n- ไม่มีข้อบ่งชี้เจาะไต (ภาพเข้ากับ DN)",
+         "Cr ขึ้น ≤ 30% หลัง ACEi/ARB/SGLT2i = แรงดันใน glomerulus ลด → ให้ยาต่อ", "Diabetic nephropathy", R("Treatment diabetic nephropathy — ACEI or ARB"), [DM, "2.3.14(3)", "B9.2.7(2)"]),
+     mcq(N(22), "A woman with type 2 diabetes has a single spot UACR of 64 mg/g on a routine visit; urinalysis shows pyuria and nitrite positive and she has dysuria. What is the most appropriate approach?",
+         ["Diagnose diabetic nephropathy and start an ACE inhibitor", "Treat the urinary tract infection and repeat the UACR later; confirm with 2 of 3 abnormal samples", "Order a kidney biopsy", "Ignore albuminuria in diabetes", "Start finerenone"], 1,
+         "สไลด์ย้ำว่า **ต้องตัด UTI ออกก่อน** วินิจฉัย diabetic nephropathy — การติดเชื้อ (รวมถึงไข้ ออกกำลังหนัก HF) ทำให้ albumin รั่วชั่วคราว จึงรักษา UTI แล้วตรวจซ้ำ และวินิจฉัยเมื่อผิดปกติ **2 ใน 3 ครั้งในช่วง 3–6 เดือน**\n\n- เริ่มยาจากค่าครั้งเดียวที่มี UTI ยังเร็วเกิน\n- ไม่มีข้อบ่งชี้เจาะไต\n- albuminuria สำคัญมาก ไม่ควรละเลย",
+         "UACR ผิดปกติ: ตัด UTI/ไข้/ออกกำลัง แล้วยืนยัน 2 ใน 3 ครั้ง", "Albuminuria", R("Albuminuria — rule out UTI"), [DM, "2.3.14(3)", "3.1.6"])],
+    [DM, "2.3.14(3)", "B9.2.7(2)", "3.1.6"],
+    {"dn_stages": fig("5 ระยะของ diabetic nephropathy",
+        "เส้น GFR: **สูงขึ้นช่วงแรก** (hyperfiltration) คงที่ระยะเงียบ แล้ว **ลดเร็ว** หลังมี overt proteinuria จนถึง uremia · แถบล่าง: albumin ในปัสสาวะ ปกติ → **micro 30–300** → **overt > 300 mg/วัน** — ช่วงเวลาตามตารางในสไลด์",
+        F.dn_stages()),
+     "renoprot": fig("ทำไม ACEi/ARB และ SGLT2i ปกป้องไต",
+        "**เบาหวาน**: afferent ขยาย (SGLT2 ดูด Na มาก macula densa เห็น Na น้อย) + efferent หด (angiotensin II) → แรงดันใน glomerulus สูง · **ACEi/ARB** คลาย efferent · **SGLT2i** ทำให้ Na ถึง macula densa มากขึ้น afferent หดกลับ — ทั้งสองลดแรงดัน Cr จึงขึ้นเล็กน้อยช่วงแรก",
+        F.renoprot())})
+
+# ───────────────────────────── 12
+sec("endo-dm-12", "Diabetic neuropathy และเท้าเบาหวาน — ทำไมแผลเกิดโดยไม่เจ็บ",
+    "stocking–glove · autonomic · mononeuropathy · high-risk foot · Charcot · monofilament · ดูแลเท้าทุกวัน", 11,
+"""### ชนิดของ neuropathy (สไลด์)
+- **Peripheral** — พบบ่อยที่สุดของภาวะแทรกซ้อนเบาหวาน: polyneuropathy และ mononeuropathy
+- **Autonomic** — มักมาพร้อม peripheral: ทางเดินอาหาร ทางเดินปัสสาวะ หัวใจและหลอดเลือด
+
+### Peripheral neuropathy (สไลด์)
+- แบบ **"stocking and glove"** สองข้าง · พบ **1 ใน 4** ของผู้ป่วยเบาหวาน
+- ร่วมกับโรคหลอดเลือดทำให้เกิด **แผลและการตัดขา** · **5% เกิดแผลที่เท้า** · **ครึ่งหนึ่งของการตัดขาเกี่ยวกับเบาหวาน**
+
+[[fig:neuro]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **ชาเป็นรูปถุงเท้า–ถุงมือ** | เส้นประสาทเสื่อมแบบ **ขึ้นกับความยาว** — แอกซอนที่ยาวที่สุด (ไปปลายเท้า) ต้องลำเลียงสารอาหารไกลที่สุด จึงเสียก่อน · เมื่อชาขึ้นถึงระดับเข่าจึงเริ่มที่ปลายนิ้วมือ (ความยาวพอกัน) |
+| **ปวดแสบร้อน เข็มทิ่ม แย่ตอนกลางคืน** (สไลด์) | เส้นใยเล็ก (small fiber) เสียก่อนและส่งสัญญาณผิดปกติเอง · กลางคืนไม่มีสิ่งเร้าอื่นมากลบ |
+| **รับรู้ความเจ็บและอุณหภูมิลดลง** | small fiber หายไป → เหยียบของมีคม รองเท้ากัด น้ำร้อนลวก โดยไม่รู้ตัว |
+| **ตาปลา (callus) เท้าผิดรูป** (สไลด์) | motor neuropathy ทำให้กล้ามเนื้อเล็กในเท้าอ่อน นิ้วงอ (claw toe) น้ำหนักลงที่หัวกระดูกฝ่าเท้า → callus → แผลใต้ callus |
+| **ผิวเท้าแห้ง แตก** | autonomic neuropathy ทำให้เหงื่อไม่ออก ผิวแตกเป็นทางให้เชื้อเข้า |
+| **กลไกที่ทำให้เส้นประสาทเสีย** | น้ำตาลสูง → polyol (sorbitol) สะสม · AGEs · oxidative stress · หลอดเลือดเล็กที่เลี้ยงเส้นประสาท (vasa nervorum) ตีบ |
+
+**Autonomic neuropathy**: กระเพาะบีบตัวช้า (อิ่มเร็ว อาเจียน น้ำตาลแกว่ง) · ท้องเสียกลางคืน · กระเพาะปัสสาวะไม่บีบตัว (ปัสสาวะค้าง ติดเชื้อ) · หย่อนสมรรถภาพทางเพศ · **ความดันตกเมื่อลุกยืน** · ชีพจรเร็วขณะพัก · **MI แบบไม่เจ็บ** · น้ำตาลต่ำโดยไม่รู้ตัว
+**Mononeuropathy** (ไม่อยู่ในรายละเอียดสไลด์): carpal tunnel · **CN III palsy ที่รูม่านตาปกติ** — หลอดเลือดที่เลี้ยงแกนกลางเส้นประสาทอุดตัน ขณะที่ใยประสาทรูม่านตาอยู่ผิวนอกได้เลือดจากหลอดเลือดผิวจึงรอด (ต่างจากเส้นเลือดโป่งพองที่กดจากด้านนอกจนรูม่านตาขยาย)
+
+### เท้าเสี่ยงสูง (high-risk foot — สไลด์)
+**peripheral neuropathy · PVD · เคยเป็นแผล · เท้าผิดรูป** → ตรวจด้วย **monofilament 10 กรัม** (ร่วมกับ vibration 128 Hz, ankle reflex, คลำชีพจร, ABI)
+- **Neuropathic ulcer**: ใต้หัวกระดูกฝ่าเท้า ส้นเท้า ขอบแผลมี callus ไม่เจ็บ ชีพจรคลำได้
+- **Charcot arthropathy**: เท้าบวม แดง อุ่น มักไม่เจ็บ → กระดูกและข้อเท้ายุบ (rocker-bottom) — เพราะรับรู้ความเจ็บไม่ได้จึงลงน้ำหนักบนกระดูกที่หักซ้ำ ๆ ร่วมกับ autonomic neuropathy ทำให้เลือดไปกระดูกมากจนกระดูกบาง · ต้องแยกจาก cellulitis/osteomyelitis
+
+### รักษาและป้องกัน (สไลด์)
+- คุมน้ำตาลและความดัน · **ยาลดปวด**: tricyclic antidepressant · anticonvulsant · ยาทา (salicylate, **capsaicin**) — ปัจจุบัน ADA ให้ pregabalin, duloxetine, gabapentin เป็นยาแรก
+- **ป้องกันแผลที่เท้า**: สอนดูแลเท้า · **ตรวจเท้าทุกวัน** · รองเท้าที่เหมาะสม · คุมเบาหวาน · **เลิกบุหรี่** · หาเท้าเสี่ยงสูงแต่เนิ่น ๆ
+- **รองเท้าที่ดี 6 ข้อ**: มีเชือก/สายรัด · วัดขนาดพอดี · หัวกว้างและลึก · ส้นแข็งหุ้มกระชับ · ส้นเตี้ยกว้าง (≤ 1 นิ้ว) · พื้นแข็งแต่งอได้ตรงฝ่าเท้าและนุ่ม
+- **ดูแลเท้าทุกวัน**: ล้างและเช็ดให้แห้ง (โดยเฉพาะซอกนิ้ว) · ทาครีมผิวแห้งโดยเฉพาะส้น · ตาปลาใช้หินขัด · **ตัดเล็บตรง ไม่สั้นเกิน** · ตรวจเท้าทุกวันเทียบขนาด สี อุณหภูมิ · **ห้ามเดินเท้าเปล่า** · ใส่รองเท้าพอดีและตรวจรองเท้าก่อนใส่ทุกวัน
+""",
+    ["Neuropathy พบบ่อยสุด · stocking–glove 1 ใน 4 · 5% เกิดแผลเท้า · ครึ่งหนึ่งของการตัดขา",
+     "เส้นยาวสุดเสียก่อน (length-dependent) · small fiber → ปวดแสบร้อนกลางคืน และไม่รู้สึกเจ็บ",
+     "Motor → claw toe → callus → แผล · Autonomic → ผิวแห้งแตก · PAD → หายช้า",
+     "High-risk foot: neuropathy · PVD · เคยเป็นแผล · deformity → monofilament 10 g ทุกปี",
+     "CN III palsy ในเบาหวาน รูม่านตาปกติ (ischemic core) · Charcot = เท้าบวมแดงอุ่นไม่เจ็บ → rocker-bottom"],
+    [mcq(N(23), "A 62-year-old man with long-standing diabetes has sudden diplopia and ptosis of the left eye with the eye deviated down and out. The left pupil is equal and reactive. What is the most likely mechanism?",
+         ["Compression of the third nerve by a posterior communicating artery aneurysm", "Ischemia of the central core of the third nerve with sparing of the peripheral pupillomotor fibers", "Myasthenia gravis", "Horner syndrome", "Raised intracranial pressure"], 1,
+         "**Diabetic (ischemic) CN III palsy** — หลอดเลือดเล็กที่เลี้ยง **แกนกลาง** ของเส้นประสาทอุดตัน ใยประสาทที่ควบคุมรูม่านตาอยู่ **ผิวนอก** ได้เลือดจากหลอดเลือดที่ผิวจึงรอด → **รูม่านตาปกติ (pupil-sparing)** มักฟื้นเองใน 2–3 เดือน\n\n- **เส้นเลือดโป่งพอง** กดจากด้านนอก โดนใยรูม่านตาก่อน → รูม่านตาขยาย (ต้องทำ CTA ด่วน)\n- myasthenia ไม่มีรูม่านตาผิดปกติและอาการแปรผันตามความล้า\n- Horner มีหนังตาตกเล็กน้อยกับรูม่านตาเล็ก ไม่มีตาเหล่ลงล่างออกนอก",
+         "CN III palsy + รูม่านตาปกติ ในเบาหวาน = ischemic core", "Mononeuropathy", ["หลักประสาทวิทยา — สไลด์ระบุ mononeuropathy"], ["2.3.6-3(9)", DM]),
+     mcq(N(24), "A 55-year-old woman with diabetic neuropathy has a warm, swollen, red right foot without fever; she reports little pain. Pulses are bounding, and the midfoot looks flattened. What is the most likely diagnosis?",
+         ["Acute gout", "Charcot neuroarthropathy", "Critical limb ischemia", "Deep vein thrombosis", "Plantar fasciitis"], 1,
+         "**Charcot neuroarthropathy** — ผู้ป่วยรับรู้ความเจ็บไม่ได้จึงลงน้ำหนักบนกระดูกที่หักเล็ก ๆ ซ้ำ ๆ ร่วมกับ autonomic neuropathy ทำให้เลือดไปเท้ามากขึ้น (ชีพจรแรง) กระดูกถูกสลาย → เท้า **บวม แดง อุ่น เจ็บน้อย** และกลางเท้ายุบ (rocker-bottom) → ต้องงดลงน้ำหนัก (total contact cast) และแยกจาก cellulitis/osteomyelitis\n\n- **เกาต์** ปวดมาก\n- **ขาดเลือด** เท้าเย็น ชีพจรเบา\n- **DVT** บวมทั้งขา\n- plantar fasciitis ไม่ทำให้บวมแดงอุ่น",
+         "เท้าเบาหวาน บวมแดงอุ่น เจ็บน้อย ชีพจรแรง = Charcot", "Diabetic foot", R("Charcot arthropathy"), ["2.3.6-3(9)", "2.3.12(13)"])],
+    ["2.3.6-3(9)", "2.3.12(13)", "B3.4(7)", "2.3.9-3(7)", DM],
+    {"neuro": fig("ทำไมเท้าเบาหวานถึงเป็นแผลโดยไม่รู้ตัว",
+        "ซ้าย: เส้นประสาทที่ **ยาวที่สุด** เสียก่อน จึงชาเป็น **ถุงเท้า** แล้วจึงตามด้วย **ถุงมือ** · ขวา: sensory (ไม่เจ็บ) · motor (นิ้วงอ จุดกดทับ) · autonomic (ผิวแห้งแตก) · PAD (เลือดน้อย) รวมกับบาดเจ็บเล็กน้อย → **แผลที่เท้า** → ติดเชื้อ → ตัดขา",
+        F.neuro())})
+
+# ───────────────────────────── 13
+sec("endo-dm-13", "Macrovascular และเป้าหมายการรักษาแบบองค์รวม",
+    "โรคหัวใจ 70% ของการตาย · stroke · PVD ใต้เข่า ABI < 0.9 · holistic 9 ข้อ · HbA1c < 7 หรือปรับตามคน", 9,
+"""### Macrovascular complications (สไลด์)
+**โรคหัวใจและหลอดเลือด**
+- **สาเหตุการตายอันดับ 1** — ราว **70% ของการตาย** ในผู้ป่วยเบาหวาน
+- โรคกระจายกว้างและรุนแรงกว่า ผลลัพธ์หลังเกิดเหตุแย่กว่า · **เกิดตั้งแต่อายุน้อยกว่า**
+
+**หลอดเลือดสมอง**
+- **stroke 4%** ในผู้ป่วยเบาหวาน เทียบกับ **0.5%** ในคนทั่วไป · ตายมากกว่า ฟื้นตัวแย่กว่า กลับเป็นซ้ำบ่อย · ยาลดความดันป้องกันได้
+
+**หลอดเลือดส่วนปลาย (PVD)**
+- atherosclerosis ของหลอดเลือดขา · มัก **สองข้าง หลายตำแหน่ง และอยู่ส่วนปลายใต้เข่า**
+- ร่วมกับ neuropathy เพิ่มการติดเชื้อ แผล และข้อถูกทำลาย · **พบมากกว่าคนทั่วไป 4 เท่า**
+- คัดกรองด้วย **ankle–brachial index (ABI) < 0.9**
+
+#### ทำไมเบาหวานทำให้หลอดเลือดใหญ่เสียเร็ว
+น้ำตาลสูงจับโปรตีนเป็น AGEs ทำให้ผนังหลอดเลือดแข็งและอักเสบ · insulin resistance มาพร้อม **ไขมันผิดปกติ** (TG สูง HDL ต่ำ LDL เล็กหนาแน่น) และ **ความดันสูง** · เกล็ดเลือดเกาะง่าย และการสลายลิ่มเลือดลดลง — ปัจจัยเสี่ยงจึงซ้อนกันหลายตัว (สไลด์: dyslipidemia, HT, บุหรี่, อ้วน, น้ำตาลสูง, อายุ/เพศ/พฤติกรรม, พันธุกรรม, microalbuminuria)
+**ทำไม MI ในเบาหวานมักไม่เจ็บ**: autonomic neuropathy ทำลายเส้นประสาทรับความรู้สึกจากหัวใจ → มาด้วยเหนื่อย หัวใจล้มเหลว หรือน้ำตาลแกว่งแทน
+
+### Holistic management of T2DM (สไลด์)
+1. เป้าหมายน้ำตาล 2. เป้าหมายความดัน 3. เป้าหมายไขมัน 4. **aspirin ในรายที่เลือก** 5. **ACEi/ARB ในรายที่เลือก** 6. **เลิกบุหรี่** 7. น้ำหนักเหมาะสม 8. ให้ความรู้และดูแลตนเอง 9. **คัดกรองภาวะแทรกซ้อนทุกปี**
+
+### เป้าหมายน้ำตาล (สไลด์)
+| | **ADA** | **IDF** |
+|---|---|---|
+| HbA1c (ปกติ 4.0–6.0%) | **< 7.0%** | < 6.5% |
+| FPG (ก่อนอาหาร) | < 130 | < 110 |
+| หลังอาหาร | < 180 | < 140 |
+
+[[fig:glyc_target]]
+
+**ประโยชน์ของการคุมเข้ม = ลด microvascular · ความเสี่ยง = hypoglycemia** (สไลด์)
+- **เข้มงวด A1C < 6.5–7%**: วินิจฉัยใหม่ · อายุขัยยาว
+- **ผ่อนปรน A1C ≥ 7.5%**: เด็กเล็ก · สูงอายุมาก · ภาวะแทรกซ้อนมาก
+
+**เป้าความดันและไขมัน (ADA Standards of Care — ไม่อยู่ในสไลด์)**: BP < 130/80 · statin ทุกคนอายุ 40–75 ปี — มีโรคหัวใจแล้วเป้า **LDL < 55 mg/dL** · ยังไม่มีแต่มีปัจจัยเสี่ยง **LDL < 70** · aspirin ใช้ป้องกันซ้ำ (secondary) ส่วนป้องกันปฐมภูมิเฉพาะรายเสี่ยงสูงที่เลือดออกง่ายต่ำ
+""",
+    ["CVD = สาเหตุตายอันดับ 1 (~70%) · เป็นเร็วกว่า รุนแรงกว่า · stroke 4% vs 0.5%",
+     "PVD 4 เท่า สองข้าง หลายตำแหน่ง ใต้เข่า · ABI < 0.9",
+     "MI ไม่เจ็บเพราะ autonomic neuropathy",
+     "Holistic 9 ข้อ: น้ำตาล ความดัน ไขมัน aspirin ACEi/ARB บุหรี่ น้ำหนัก education คัดกรองทุกปี",
+     "ADA: A1c < 7 · FPG < 130 · PP < 180 · IDF 6.5/110/140 · เข้ม < 6.5–7 ในรายใหม่ · ผ่อน ≥ 7.5 ในสูงอายุ/เด็กเล็ก"],
+    [mcq(N(25), "An 84-year-old woman with type 2 diabetes for 25 years, heart failure, CKD stage 4 and two recent hypoglycemic falls has HbA1c 7.1% on insulin. What is the most appropriate glycemic approach?",
+         ["Intensify insulin to reach HbA1c below 6.5%", "Relax the HbA1c target to about 7.5–8% and reduce insulin to avoid hypoglycemia", "Stop all glucose-lowering therapy", "Add a sulfonylurea", "Target HbA1c below 6.0%"], 1,
+         "สไลด์: **ผู้สูงอายุมาก มีภาวะแทรกซ้อนมาก** ควรใช้ **เป้าผ่อนปรน A1C ≥ 7.5%** เพราะประโยชน์ด้าน microvascular ต้องใช้เวลาหลายปี ขณะที่ **hypoglycemia** (หกล้ม หัวใจเต้นผิดจังหวะ) เป็นอันตรายทันที — A1c 7.1% กับประวัติน้ำตาลต่ำ แปลว่าคุมเข้มเกิน → ลด insulin\n\n- เพิ่ม insulin หรือเพิ่ม SU ยิ่งเสี่ยงน้ำตาลต่ำ (SU สะสมใน CKD)\n- หยุดยาทั้งหมดเสี่ยงน้ำตาลสูงจนมีอาการ/HHS",
+         "สูงอายุมาก + ภาวะแทรกซ้อน + hypo บ่อย → เป้า A1c ผ่อน ≥ 7.5", "Glycemic goals", R("Benefit and risk of tight glycemic control"), [DM, HYPO])],
+    [DM, "2.3.9(6)", "2.2.39", "2.3.9-3(7)", "B7.2.6-3(2)", "2.3.9(3)", "2.3.9(4)"],
+    {"glyc_target": fig("เป้า HbA1c — ปรับตามผู้ป่วย",
+        "ยิ่งเป้าต่ำ **ภาวะแทรกซ้อนหลอดเลือดเล็กยิ่งลด** (เขียว) แต่ **hypoglycemia ยิ่งเพิ่ม** (แดง) — เลือกเข้มงวด < 6.5–7% ในผู้ป่วยใหม่อายุขัยยาว และผ่อนปรน ≥ 7.5% ในเด็กเล็ก ผู้สูงอายุมาก หรือผู้ที่มีภาวะแทรกซ้อนมาก (สไลด์)",
+        F.glyc_target())})
+
+# ───────────────────────────── 14
+sec("endo-dm-14", "ยาเม็ดและยากลุ่ม incretin — ออกฤทธิ์ที่ไหน และผลข้างเคียงมาจากไหน",
+    "secretagogue · sensitizer · AGI · SGLT2i · GLP-1RA vs DPP-4i · ตารางเปรียบเทียบประสิทธิภาพ น้ำหนัก หัวใจ ไต", 13,
+"""### 4 กลุ่มของยาเม็ด (สไลด์)
+| กลุ่ม | ยา |
+|---|---|
+| **1. กระตุ้นการหลั่ง insulin (secretagogue)** | **sulfonylurea** (glipizide) · glinides · **gliptins (DPP-4 inhibitor)** · **glutides (GLP-1 RA)** |
+| **2. เพิ่มความไวต่อ insulin (sensitizer)** | **metformin** · thiazolidinedione (**pioglitazone**) |
+| **3. ยับยั้งการดูดซึมน้ำตาลจากลำไส้** | **α-glucosidase inhibitor** (acarbose) |
+| **4. ขับน้ำตาลทางไต** | **SGLT2 inhibitor** (gliflozin) |
+
+[[fig:drug_sites]]
+
+### Incretin — GLP-1 receptor agonist เทียบ DPP-4 inhibitor (สไลด์)
+[[fig:incretin]]
+
+กินอาหาร → ลำไส้หลั่ง **GLP-1 และ GIP** → กระตุ้น insulin **เฉพาะเมื่อน้ำตาลสูง (glucose dependent)** และ GLP-1 ลด glucagon → ตับปล่อยน้ำตาลลด — แต่ถูกเอนไซม์ **DPP-4 ทำลายภายในไม่กี่นาที**
+| | **GLP-1 RA** (liraglutide, semaglutide, tirzepatide*) | **DPP-4 inhibitor** (sitagliptin) |
+|---|---|---|
+| ระดับ GLP-1 | สูงเกินสรีรวิทยาต่อเนื่อง | เฉพาะหลังอาหาร (ของตัวเอง) |
+| ศูนย์อิ่มในสมอง | ✓ | ไม่มีผล |
+| ชะลอการบีบตัวของกระเพาะ | ✓ | ไม่มีผล |
+| คลื่นไส้อาเจียน | พบบ่อย | ทนได้ดี |
+| น้ำหนัก | **ลด** | คงที่ |
+| รูปแบบ | ฉีดใต้ผิวหนัง · ชนิดกิน | กิน |
+*tirzepatide เป็น dual GIP/GLP-1 receptor agonist
+
+### SGLT2 inhibitor — ทิ้งน้ำตาลทางไต (สไลด์)
+[[fig:sglt2]]
+
+### ตารางเปรียบเทียบ (สไลด์)
+| ยา | ประสิทธิภาพ | Hypo | น้ำหนัก | ASCVD | HF | ไต (DKD) | ราคา | ผลข้างเคียง |
+|---|---|---|---|---|---|---|---|---|
+| **Metformin** | สูง | ไม่ | คงที่ (ลด) | อาจได้ประโยชน์ | เป็นกลาง | เป็นกลาง | ถูก | GI · ขาด B12 |
+| **SGLT2i** | ปานกลาง | ไม่ | ลด | **ประโยชน์** | **ประโยชน์** | **ประโยชน์** | แพง | ติดเชื้อทางเดินปัสสาวะ/อวัยวะเพศ · DKA · ขาดน้ำ |
+| **GLP-1 RA** | สูง | ไม่ | ลด | **ประโยชน์** | เป็นกลาง | อาจได้ประโยชน์ | แพงมาก | คลื่นไส้อาเจียน · เสี่ยง C-cell tumor |
+| **DPP-4i** | ปานกลาง | ไม่ | คงที่ | เป็นกลาง | เป็นกลาง | เป็นกลาง | แพง | ตับอ่อนอักเสบ? |
+| **TZD** | สูง | ไม่ | เพิ่ม | อาจได้ประโยชน์ | **เพิ่มความเสี่ยง** | เป็นกลาง | ถูก | บวม · น้ำคั่ง · กระดูกหัก |
+| **SU** | สูง | **ใช่** | เพิ่ม | เป็นกลาง | เป็นกลาง | เป็นกลาง | ถูก | **hypoglycemia** |
+| **Insulin** | สูงสุด | **ใช่** | เพิ่ม | เป็นกลาง | เป็นกลาง | เป็นกลาง | ถูก | **hypoglycemia** |
+
+#### ทำไมผลข้างเคียงถึงเป็นแบบนี้
+| ผลข้างเคียง | กลไก |
+|---|---|
+| **SU → น้ำตาลต่ำ น้ำหนักขึ้น** | ปิด **K-ATP channel** ของ β cell ทำให้หลั่ง insulin **ไม่ว่าน้ำตาลจะเท่าไร** — ต่างจาก GLP-1/DPP-4i ที่หลั่งเฉพาะเมื่อน้ำตาลสูง |
+| **TZD → บวม หัวใจล้มเหลวกำเริบ** | กระตุ้น PPAR-γ ซึ่งเพิ่มการดูด Na ที่ collecting duct (ENaC) → น้ำคั่ง · ห้ามใช้ใน HF ที่รุนแรง |
+| **Metformin → ท้องเสีย ขาด B12** | ยาความเข้มข้นสูงในลำไส้ · รบกวนการดูดซึม B12 ที่ ileum → ตรวจ B12 เมื่อใช้นาน/มีชาปลายมือเท้า · ลดขนาดเมื่อ eGFR 30–44 หยุดเมื่อ < 30 |
+| **SGLT2i → เชื้อราอวัยวะเพศ** | glucose ในปัสสาวะเป็นอาหารของเชื้อรา |
+| **SGLT2i → euglycemic DKA** | น้ำตาลลดลงทำให้ร่างกายหลั่ง insulin น้อยลงและ glucagon มากขึ้น → สลายไขมันเป็น ketone ทั้งที่น้ำตาล < 250 · หยุดยา 3 วันก่อนผ่าตัดหรือเมื่อเจ็บป่วยเฉียบพลัน |
+| **GLP-1 RA → คลื่นไส้** | ชะลอการบีบตัวของกระเพาะ + กระตุ้นศูนย์ในสมอง · ห้ามใน medullary thyroid carcinoma/MEN2 (C-cell tumor ในสัตว์ทดลอง) |
+| **AGI → ท้องอืด ผายลม** | แป้งที่ไม่ถูกย่อยไปถึงลำไส้ใหญ่ให้แบคทีเรียหมัก · น้ำตาลต่ำต้องแก้ด้วย **glucose** ไม่ใช่น้ำตาลทราย |
+""",
+    ["4 กลุ่ม: secretagogue (SU, glinide, DPP-4i, GLP-1RA) · sensitizer (metformin, TZD) · AGI · SGLT2i",
+     "SU ปิด K-ATP หลั่ง insulin ไม่ขึ้นกับน้ำตาล → hypo · GLP-1/DPP-4i หลั่งเฉพาะเมื่อน้ำตาลสูง",
+     "GLP-1RA: อิ่ม ชะลอกระเพาะ น้ำหนักลด คลื่นไส้ · DPP-4i: น้ำหนักคงที่ ทนได้ดี",
+     "SGLT2i: ประโยชน์ ASCVD + HF + ไต · AE ติดเชื้อราอวัยวะเพศ ขาดน้ำ euglycemic DKA",
+     "TZD: น้ำคั่ง HF แย่ลง กระดูกหัก · metformin: GI, B12, หยุดเมื่อ eGFR < 30"],
+    [mcq(N(26), "A 67-year-old man with type 2 diabetes and heart failure with reduced ejection fraction develops worsening leg edema and dyspnea after a new oral agent was added. Which drug is most likely responsible?",
+         ["Metformin", "Pioglitazone", "Empagliflozin", "Sitagliptin", "Acarbose"], 1,
+         "**Pioglitazone (TZD)** กระตุ้น PPAR-γ ที่ไต เพิ่มการดูด Na ที่ collecting duct → **น้ำคั่ง บวม และหัวใจล้มเหลวกำเริบ** (ตารางในสไลด์: HF = เพิ่มความเสี่ยง) จึงห้ามใช้ใน HF ที่มีอาการ\n\n- metformin เป็นกลางต่อ HF\n- **empagliflozin (SGLT2i) ให้ประโยชน์ใน HF** — ขับ Na/น้ำ\n- sitagliptin และ acarbose ไม่ทำให้น้ำคั่ง",
+         "TZD = น้ำคั่ง HF แย่ลง · SGLT2i = ช่วย HF", "Oral agents", R("Comparison table of glucose-lowering agents"), [DRUG]),
+     mcq(N(27), "A patient taking acarbose and gliclazide develops symptomatic hypoglycemia (glucose 52 mg/dL) but is awake. Which treatment is most appropriate?",
+         ["A glass of sweetened condensed milk with table sugar (sucrose)", "Oral glucose tablets or glucose solution", "A slice of white bread", "Intramuscular glucagon only", "Wait 30 minutes and recheck"], 1,
+         "acarbose ยับยั้ง **α-glucosidase** ที่ย่อยแป้งและ **sucrose** เป็นน้ำตาลโมเลกุลเดียว การแก้ด้วยน้ำตาลทราย ขนมปัง หรือนมหวาน จึงดูดซึมช้า → ต้องใช้ **glucose** โดยตรง (ส่วนน้ำตาลต่ำมาจาก gliclazide ซึ่งเป็น SU)\n\n- glucagon สงวนไว้เมื่อกลืนไม่ได้\n- การรอโดยไม่แก้อันตราย",
+         "ใช้ acarbose แล้วน้ำตาลต่ำ → แก้ด้วย glucose ไม่ใช่ sucrose", "Oral agents", ["หลักเภสัชวิทยา — สไลด์: AGI ยับยั้งการดูดซึมน้ำตาล"], [DRUG, HYPO]),
+     mcq(N(28), "A 52-year-old woman with type 2 diabetes on empagliflozin presents 2 days after laparoscopic cholecystectomy with nausea and abdominal pain. Glucose 186 mg/dL, pH 7.21, HCO3 12 mEq/L, anion gap 22, serum beta-hydroxybutyrate 4.8 mmol/L. What is the diagnosis?",
+         ["Lactic acidosis from metformin", "Euglycemic diabetic ketoacidosis associated with SGLT2 inhibitor", "Hyperosmolar hyperglycemic state", "Starvation ketosis only", "Post-operative pancreatitis without acidosis"], 1,
+         "กรด AG สูง + **β-OHB 4.8 mmol/L** ทั้งที่ **glucose < 250** ในผู้ที่ใช้ **SGLT2i** ช่วงผ่าตัดและกินได้น้อย = **euglycemic DKA** — SGLT2i ทิ้งน้ำตาลทางไต น้ำตาลจึงไม่สูงมาก ร่างกายหลั่ง insulin น้อยลงและ glucagon มากขึ้นจนสลายไขมันเป็น ketone → หยุดยา ให้สารน้ำที่มี dextrose ร่วมกับ insulin\n\n- lactic acidosis ต้องมี lactate สูง\n- HHS ต้อง glucose ≥ 600 ไม่มีกรด\n- starvation ketosis ไม่ทำให้ HCO₃ ต่ำขนาดนี้",
+         "SGLT2i + ป่วย/ผ่าตัด + กรด ketone น้ำตาลไม่สูง = euglycemic DKA", "SGLT2i", ["สไลด์: SGLT2i AE = DKA · ADA 2024 consensus"], [DRUG, CRI])],
+    [DRUG, DM],
+    {"drug_sites": fig("ยาเบาหวานออกฤทธิ์ที่ไหน",
+        "**สมอง/กระเพาะ** — GLP-1RA ทำให้อิ่มและกระเพาะบีบช้า · **ลำไส้** — AGI ชะลอย่อยแป้ง · **ตับ** — metformin ลดการปล่อยน้ำตาล · **ตับอ่อน** — SU/glinide บังคับหลั่ง insulin (จึงทำให้น้ำตาลต่ำได้) ส่วน GLP-1RA/DPP-4i หลั่งเฉพาะเมื่อน้ำตาลสูง · **กล้ามเนื้อ/ไขมัน** — TZD · **ไต** — SGLT2i",
+        F.drug_sites()),
+     "incretin": fig("Incretin — GLP-1 ถูก DPP-4 ทำลายในไม่กี่นาที",
+        "อาหารกระตุ้นลำไส้หลั่ง GLP-1/GIP ซึ่งเพิ่ม insulin เฉพาะเมื่อน้ำตาลสูงและลด glucagon · ล่าง: GLP-1 ตามธรรมชาติอยู่ไม่กี่นาที · **DPP-4 inhibitor** ทำให้ GLP-1 ของตัวเองอยู่นานขึ้นหลังมื้ออาหาร · **GLP-1RA** ทนต่อ DPP-4 ให้ระดับสูงต่อเนื่องจึงอิ่มและน้ำหนักลด (เส้นเชิงหลักการ)",
+        F.incretin()),
+     "sglt2": fig("SGLT2 inhibitor — ทิ้งน้ำตาลทางไต",
+        "ปกติ **SGLT2 ที่ proximal tubule ส่วนต้น** ดูด glucose กลับเกือบทั้งหมด (สไลด์: S1 SGLT2 · S3 SGLT1) · เมื่อยับยั้ง glucose และ Na หลุดไปในปัสสาวะ — ได้ประโยชน์เรื่องน้ำหนัก ความดัน ไต และหัวใจ แต่มีผลข้างเคียงที่มาจากกลไกเดียวกัน (แถบแดง)",
+        F.sglt2())})
+
+# ───────────────────────────── 15
+sec("endo-dm-15", "แนวทางรักษา T2 (Thai CPG 2020) และการใช้ insulin",
+    "metformin → เลือกยาตามโรคหัวใจ ไต HF · เป้าตอนวินิจฉัย · UKPDS · insulin 4 ชนิด · basal–bolus · basal plus", 12,
+"""### แนวทางเวชปฏิบัติเบาหวานไทย 2020 — อัลกอริทึม T2 (สไลด์)
+**ไม่มี ASCVD, HF หรือ CKD**
+1. ปรับพฤติกรรม → ไม่ถึงเป้า **เริ่ม metformin**
+2. ไม่ถึงเป้า **เพิ่ม SU หรือ TZD** (ทางเลือก: DPP-4i, AGI, repaglinide)
+3. ไม่ถึงเป้า **ยาเม็ด 3 ชนิด** (ทางเลือก: DPP-4i, SGLT2i, AGI, repaglinide, basal insulin, GLP-1 RA)
+4. ไม่ถึงเป้า **ยาเม็ด ± GLP-1 RA ร่วมกับ insulin**
+
+**มี ASCVD หรือ HF หรือ CKD (GFR < 60 และ/หรือ UACR > 200 mg/g)** — ไม่ว่าวินิจฉัยใหม่หรือเป็นอยู่แล้ว
+| โรคร่วม | ยาที่เลือก |
+|---|---|
+| **ASCVD** | **GLP-1 RA หรือ SGLT2i** (ถ้าไม่ติดเรื่องค่าใช้จ่าย) · ถ้าติดเรื่องค่าใช้จ่าย metformin + SU หรือ TZD |
+| **Heart failure** | **SGLT2i** |
+| **CKD** | **SGLT2i** (ใช้ GLP-1 RA ถ้าใช้ SGLT2i ไม่ได้) |
+†อาจใช้เดี่ยว หรือร่วมกับ metformin
+
+**เลือกจุดเริ่มต้นจากระดับน้ำตาลตอนวินิจฉัย (สไลด์)**
+| ตอนวินิจฉัย | เริ่มด้วย |
+|---|---|
+| FPG < 140 · HbA1c < 7% | ปรับพฤติกรรม |
+| FPG 140–280 · HbA1c 7–8.5% | ยาเม็ด |
+| FPG > 280 · HbA1c > 8.5% **มีอาการมาก** (หรือ FPG/casual > 350) | พิจารณา **insulin** |
+**Master decision path**: ยาเดี่ยวไม่ถึงเป้าใน **4–8 สัปดาห์** → ยาผสม · ยาผสมขนาดสูงสุดไม่ถึงเป้าใน **4–8 สัปดาห์** → insulin
+
+> **T2 เป็นโรคที่แย่ลงเรื่อย ๆ** — UKPDS พบ β-cell function ลดลงต่อเนื่องทุกปี ส่วนใหญ่สุดท้ายต้องใช้ insulin (ไม่ใช่ความล้มเหลวของผู้ป่วย)
+> ADA Standards of Care ปัจจุบัน (ไม่อยู่ในสไลด์) ใช้หลักเดียวกัน: ให้ SGLT2i/GLP-1 RA ในผู้ที่มี ASCVD, HF, CKD **โดยไม่ขึ้นกับ HbA1c** · เมื่อต้องใช้ยาฉีด เลือก GLP-1 RA ก่อน insulin ถ้าไม่มีข้อห้าม
+
+### Insulin (สไลด์)
+ร่างกายปกติหลั่ง insulin 2 แบบ — **basal** ต่อเนื่องตลอดวัน และ **bolus** หลังอาหาร
+| ชนิด | ตัวอย่าง | เริ่มออกฤทธิ์ | สูงสุด | อยู่นาน |
+|---|---|---|---|---|
+| Rapid-acting (prandial) | **lispro, aspart** | **10 นาที** | 1.5 ชม. | 4 ชม. |
+| Short-acting (prandial) | **regular (RI)** | 30 นาที | 2 ชม. | 6 ชม. |
+| Intermediate (basal) | **NPH** | 1–2 ชม. | **4–8 ชม.** | 14–18 ชม. |
+| Long-acting (basal) | **glargine** | 1–2 ชม. | **ไม่มีจุดสูงสุด** | ~24 ชม. |
+| Premixed | NPH/regular 70/30, 50/50 · lispro mix 75/25 · aspart mix 70/30 | | | |
+
+[[fig:insulin_profiles]]
+
+#### ทำไมต้องรู้รูปร่างของแต่ละตัว
+| ปัญหา | กลไก | แก้ |
+|---|---|---|
+| **น้ำตาลต่ำตอนตี 2–3** ในผู้ที่ฉีด NPH ก่อนอาหารเย็น | NPH ออกฤทธิ์สูงสุด 4–8 ชม. หลังฉีด ตรงกับกลางดึกที่ไม่ได้กินอะไร | ย้าย NPH ไปฉีด **ก่อนนอน** หรือเปลี่ยนเป็น glargine |
+| **น้ำตาลเช้าสูง** | ① ฤทธิ์ basal หมดก่อนเช้า ② **dawn phenomenon** — GH และ cortisol หลั่งช่วงเช้ามืด ③ น้ำตาลต่ำกลางดึกแล้วเด้งกลับ (Somogyi) | เจาะน้ำตาลตี 3 เพื่อแยก ก่อนจะเพิ่มขนาด |
+| ต้องฉีด regular ก่อนอาหาร **30 นาที** แต่ rapid ฉีดก่อนกินได้เลย | regular รวมกันเป็น hexamer ต้องแยกตัวก่อนดูดซึม · analog ถูกดัดแปลงให้แยกเร็ว | — |
+
+### รูปแบบการฉีด (สไลด์)
+[[fig:basal_bolus]]
+
+- **Type 1**: **basal–bolus** — RI/rapid ก่อนอาหาร 3 มื้อ + NPH หรือ glargine (ก่อนนอน) · หรือ regular + NPH วันละ 2 ครั้ง
+- **Type 2**: ยาเม็ด 2 ชนิดไม่ถึงเป้า → **ยาเม็ด + basal insulin ก่อนนอน (basal plus)** → premixed วันละ 1–2 ครั้ง + ยาเม็ด
+- เริ่ม basal ใน T2 (ADA — ไม่อยู่ในสไลด์): **10 ยูนิต หรือ 0.1–0.2 U/kg ก่อนนอน** ปรับเพิ่มทีละ 2 ยูนิตทุก 3 วันตามน้ำตาลเช้า
+""",
+    ["ไม่มีโรคร่วม: lifestyle → metformin → + SU/TZD → 3 ยา → + insulin",
+     "มี ASCVD → GLP-1RA หรือ SGLT2i · HF หรือ CKD (GFR < 60 / UACR > 200) → SGLT2i",
+     "ตอนวินิจฉัย: A1c < 7 lifestyle · 7–8.5 ยาเม็ด · > 8.5 มีอาการ/FPG > 350 → insulin · ไม่ถึงเป้า 4–8 สัปดาห์ เพิ่มขั้น",
+     "Rapid 10 นาที/1.5/4 ชม. · regular 30 นาที/2/6 · NPH 1–2/4–8/14–18 · glargine flat 24 ชม.",
+     "NPH ก่อนอาหารเย็น → hypo ตี 2–3 · T1 = basal–bolus · T2 = basal plus → premixed"],
+    [mcq(N(29), "A 60-year-old man with type 2 diabetes (HbA1c 8.2% on metformin) has heart failure with reduced ejection fraction and eGFR 52. According to the Thai 2020 algorithm in the lecture, which add-on is preferred?",
+         ["Pioglitazone", "Sulfonylurea", "SGLT2 inhibitor", "Acarbose", "Repaglinide"], 2,
+         "อัลกอริทึม TH DM CPG 2020: ผู้ป่วยที่มี **heart failure หรือ CKD (GFR < 60)** ให้เลือก **SGLT2 inhibitor** (ตารางยา: ประโยชน์ทั้ง HF และ DKD)\n\n- **pioglitazone ทำให้ HF แย่ลง**\n- SU และ repaglinide ไม่ได้ประโยชน์ต่อหัวใจ/ไต และเสี่ยงน้ำตาลต่ำ\n- acarbose ไม่มีประโยชน์ด้านนี้",
+         "T2 + HF หรือ CKD → SGLT2i", "Treatment algorithm", R("2020 TH DM CPG: T2D treatment algorithm"), [DM, DRUG]),
+     mcq(N(30), "A woman with type 1 diabetes injects regular insulin before meals and NPH before dinner. She has recurrent sweating and nightmares around 2–3 a.m. with capillary glucose 50 mg/dL. What is the best adjustment?",
+         ["Increase the dinner NPH dose", "Move the NPH injection from before dinner to bedtime (or switch to glargine)", "Add a bedtime dose of regular insulin", "Stop all insulin overnight", "Give a sulfonylurea at night"], 1,
+         "สไลด์: **NPH ออกฤทธิ์สูงสุด 4–8 ชม.** หลังฉีด — ฉีดก่อนอาหารเย็น (~18.00) ฤทธิ์สูงสุดจะตกช่วง **ตี 2–3** ซึ่งไม่ได้กินอะไร → น้ำตาลต่ำกลางดึก (เหงื่อแตก ฝันร้าย) แก้โดย **ย้ายไปฉีดก่อนนอน** ให้จุดสูงสุดเลื่อนไปใกล้เช้า หรือเปลี่ยนเป็น **glargine ที่ไม่มีจุดสูงสุด**\n\n- เพิ่ม NPH ยิ่งต่ำ\n- regular ก่อนนอนเพิ่มน้ำตาลต่ำ\n- T1 หยุด insulin ทั้งคืนเสี่ยง DKA\n- SU ไม่มีบทบาทใน T1",
+         "NPH ก่อนอาหารเย็น → hypo ตี 2–3 → ย้ายไปก่อนนอนหรือใช้ glargine", "Insulin", R("Insulin onset/peak/duration"), [DRUG, HYPO]),
+     mcq(N(31), "A 38-year-old man has newly diagnosed type 2 diabetes with polyuria, 7 kg weight loss, FPG 380 mg/dL and HbA1c 12.5%; ketones are negative. Based on the lecture's starting thresholds, what is the most appropriate initial treatment?",
+         ["Lifestyle modification alone for 3 months", "Metformin monotherapy and review in 6 months", "Start insulin (with lifestyle ± metformin)", "Acarbose", "DPP-4 inhibitor monotherapy"], 2,
+         "สไลด์: ตอนวินิจฉัย **FPG > 280 หรือ HbA1c > 8.5% ที่มีอาการมาก** (และ FPG > 350) ควรเริ่ม **insulin** เพื่อแก้ภาวะ glucotoxicity ที่ทำให้ β cell ล้า — เมื่อน้ำตาลลงแล้วมักลดหรือเปลี่ยนเป็นยาเม็ดได้\n\n- lifestyle อย่างเดียวหรือยาเม็ดตัวเดียวไม่พอที่ระดับนี้ (น้ำหนักลดคือสัญญาณขาด insulin)\n- acarbose และ DPP-4i ลด A1c ได้น้อย",
+         "วินิจฉัยใหม่ A1c > 8.5 + อาการมาก/FPG > 350 → insulin", "Treatment algorithm", R("Targets for glycemic control at diagnosis"), [DM, DRUG])],
+    [DM, DRUG],
+    {"insulin_profiles": fig("รูปแบบการออกฤทธิ์ของ insulin 4 ชนิด",
+        "**Rapid** ขึ้นเร็วสูงสุด 1.5 ชม. หมดใน 4 ชม. · **Regular** สูงสุด 2 ชม. อยู่ 6 ชม. · **NPH** สูงสุด 4–8 ชม. อยู่ 14–18 ชม. (จุดสูงสุดนี้ทำให้น้ำตาลต่ำกลางดึก) · **Glargine** แบนราบราว 24 ชม. — ตัวเลขตามตารางในสไลด์",
+        F.insulin_profiles()),
+     "basal_bolus": fig("insulin ของร่างกาย เทียบกับการฉีดแบบ basal–bolus",
+        "บน: ร่างกายหลั่ง insulin **ฐาน (basal)** ตลอดวัน และ **พุ่งขึ้นหลังอาหาร (bolus)** · ล่าง: **basal–bolus** ใช้ glargine/NPH ก่อนนอนแทนส่วนฐาน และ rapid/regular ก่อนอาหารแทนส่วนพุ่ง — เลียนแบบรูปแบบธรรมชาติ (T1) · T2 มักเริ่มด้วย basal อย่างเดียวร่วมกับยาเม็ด",
+        F.basal_bolus())})
+
+# ───────────────────────────── MEQ / OSCE
+LECNAME = "Diabetes mellitus (ศ.นพ.ชัยชาญ)"
+MEQ = [{"id": "END-DM-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Diabetic ketoacidosis as the first presentation of type 1 diabetes",
+ "vignette": """ผู้ป่วยหญิงไทยอายุ 19 ปี นักศึกษา มาด้วยอาเจียนและปวดท้อง 1 วัน
+PI: 3 สัปดาห์ก่อน ปัสสาวะบ่อย ตื่นกลางคืน 3–4 ครั้ง กระหายน้ำมาก น้ำหนักลด 6 กก. ทั้งที่กินจุขึ้น 2 วันก่อน เจ็บคอ มีไข้ต่ำ ๆ 1 วันก่อน อาเจียนหลายครั้ง ปวดท้องทั่ว ๆ หายใจเหนื่อย
+PH: ไม่มีโรคประจำตัว มารดาเป็นไทรอยด์เป็นพิษ
+PE: BT 37.8 C, PR 124/min, RR 32/min หายใจลึก, BP 96/60 mmHg · ซึมเล็กน้อย ตอบคำถามได้ · ปากแห้ง ลมหายใจมีกลิ่นผลไม้ · ท้องกดเจ็บทั่ว ๆ ไม่มี guarding
+Lab: capillary glucose 486 mg/dL
+Na 129, K 5.6, Cl 95, HCO₃ 8 mEq/L · BUN 32, Cr 1.6 mg/dL
+venous pH 7.12 · serum β-hydroxybutyrate 6.2 mmol/L · urine ketone 3+
+CBC: WBC 16,800/mm³""",
+ "questions": [
+  {"q": "1. จงให้การวินิจฉัย ระบุความรุนแรง และเกณฑ์ที่ใช้ (3 คะแนน)",
+   "a": """**Diabetic ketoacidosis (DKA) ระดับ moderate** เป็นอาการแรกของเบาหวาน — น่าจะเป็น **type 1** (อายุน้อย น้ำหนักลด เริ่มเร็ว ครอบครัวมีโรคภูมิต้านตนเอง)
+เกณฑ์ (ADA consensus 2024): glucose **≥ 200** (486) · **β-OHB ≥ 3.0** (6.2) · **pH < 7.3 และ/หรือ HCO₃ < 18** (7.12 / 8)
+ความรุนแรง (ADA 2009): pH 7.00–7.24 = moderate (HCO₃ 8 < 10 เข้าเกณฑ์ severe — ประเมินร่วมกับระดับความรู้สึกตัว)"""},
+  {"q": "2. จงคำนวณ anion gap และ corrected Na และอธิบายว่าทำไม K 5.6 แต่ผู้ป่วยยังมี K ทั้งร่างกายพร่อง (3 คะแนน)",
+   "a": """- **AG = 129 − (95 + 8) = 26** → high anion gap metabolic acidosis จาก ketone
+- **Corrected Na = 129 + 1.6 × (486 − 100)/100 ≈ 129 + 6.2 = 135** → Na จริงปกติ (ต่ำจากการเจือจางของ glucose)
+- **K สูงในเลือด** เพราะขาด insulin + ภาวะกรด + osmolality สูง ดึง K ออกจากเซลล์ ขณะที่ osmotic diuresis และอาเจียน **ขับ K ทิ้ง** → K ทั้งร่างกายพร่อง จะลดลงเร็วเมื่อเริ่ม insulin"""},
+  {"q": "3. จงเขียนการรักษาใน 2 ชั่วโมงแรก (4 คะแนน)",
+   "a": """- **0.9% NaCl 15–20 mL/kg (≈ 1–1.5 ลิตร) ในชั่วโมงแรก** แล้วปรับตาม corrected Na (135 ปกติ → 0.45% NaCl 250–500 mL/ชม.)
+- **ดู K ก่อนเริ่ม insulin**: K 5.6 > 5.2 → ยังไม่ให้ K เช็คทุก 2 ชม.
+- **Regular insulin IV 0.1 U/kg bolus แล้ว 0.1 U/kg/ชม.** (หรือ 0.14 U/kg/ชม.) เป้า glucose ลด 50–75 mg/dL/ชม.
+- **ไม่ให้ bicarbonate** (pH 7.12 > 6.9)
+- เฝ้าระวัง: glucose ทุก 1 ชม. · electrolyte, venous pH, AG ทุก 2–4 ชม. · ปัสสาวะ · ความรู้สึกตัว
+- หาตัวกระตุ้น: เจ็บคอมีไข้ → ตรวจหาการติดเชื้อ (throat, CXR, UA, hemoculture) · β-hCG"""},
+  {"q": "4. 4 ชั่วโมงต่อมา glucose 230 mg/dL, K 3.1 mEq/L, HCO₃ 13, AG 18 — จะปรับการรักษาอย่างไร (3 คะแนน)",
+   "a": """- **K 3.1 < 3.3** → **ให้ K ทดแทนทันที และหยุด insulin ชั่วคราว** จน K ≥ 3.3 (insulin ดัน K เข้าเซลล์)
+- glucose ใกล้ 200–250 แต่ **กรดยังไม่หาย** (HCO₃ 13, AG 18) → เมื่อเริ่ม insulin ต่อให้ **ลดขนาด (0.02–0.05 U/kg/ชม.) และเติม dextrose (D5/0.45% NaCl)** รักษา glucose 150–200 จนกรดหาย
+- **ห้ามหยุด insulin ถาวร** เพียงเพราะน้ำตาลลง"""},
+  {"q": "5. จะประเมินว่า DKA หายแล้วอย่างไร และเปลี่ยนเป็น insulin ใต้ผิวหนังอย่างไร (3 คะแนน)",
+   "a": """- **หาย (ADA 2009)**: glucose < 200 ร่วมกับ 2 ใน 3 ข้อ — **HCO₃ ≥ 15 · venous pH > 7.3 · AG ≤ 12** (consensus 2024: β-OHB < 0.6 และ pH ≥ 7.3 หรือ HCO₃ ≥ 18) และกินได้
+- เริ่ม **basal–bolus** (เช่น ราว 0.5–0.6 U/kg/วัน แบ่ง basal ครึ่งหนึ่ง bolus ครึ่งหนึ่งก่อนอาหาร 3 มื้อ)
+- **ฉีด basal insulin ใต้ผิวหนัง 1–2 ชม. ก่อนหยุด IV insulin** เพราะ IV insulin หมดฤทธิ์ในไม่กี่นาที"""},
+  {"q": "6. ก่อนกลับบ้าน จะให้คำแนะนำอะไรบ้างเพื่อป้องกัน DKA ซ้ำ และตรวจอะไรเพิ่มเพื่อยืนยันชนิดของเบาหวาน (2 คะแนน)",
+   "a": """- **Sick-day rules**: **ห้ามหยุด insulin แม้กินไม่ได้** · เจาะน้ำตาลบ่อยขึ้น (ทุก 2–4 ชม.) · ตรวจ ketone ถ้าน้ำตาล > 250 หรือคลื่นไส้อาเจียน · ดื่มน้ำมาก · มาโรงพยาบาลถ้าอาเจียนต่อเนื่อง หายใจหอบ ketone สูง
+- สอนฉีดยา เก็บยา หมุนตำแหน่งฉีด · **อาการและการแก้ hypoglycemia** (กฎ 15)
+- ยืนยัน T1: **autoantibody (GAD65, IA-2, ZnT8)** · **C-peptide** (ต่ำ) · คัดกรองไทรอยด์ (TSH) และ celiac เพราะโรคภูมิต้านตนเองพบร่วม"""}],
+ "ref": ["ADA/EASD/JBDS/AACE/DTS consensus on hyperglycemic crises 2024", "ADA 2009 (Kitabchi) hyperglycemic crises", "สไลด์ ศ.นพ.ชัยชาญ — T1 vs T2, C-peptide"],
+ "nl": [CRI, CRI1, DM, "B9.2.5(2)", "B9.4(2)"], "years": [], "_kind": "meq", "_set": SET}]
+
+OSCE = [{"id": "END-DM-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "OSCE – Diabetic foot examination and foot-care counselling",
+ "station": "OSCE (ตรวจร่างกาย + ให้คำแนะนำ) 8 นาที",
+ "instruction": """ชายอายุ 64 ปี เป็นเบาหวานชนิดที่ 2 มา 15 ปี สูบบุหรี่ มาตรวจติดตามประจำปี บ่นชาปลายเท้าทั้งสองข้าง ปวดแสบร้อนตอนกลางคืน
+
+**จงตรวจเท้าผู้ป่วยเพื่อคัดกรองเท้าเสี่ยงสูง แล้วให้คำแนะนำการดูแลเท้า ภายใน 8 นาที** (ผู้ป่วยมาตรฐานมีอุปกรณ์ monofilament 10 กรัม และส้อมเสียง 128 Hz วางไว้ให้)""",
+ "answer": """**เกณฑ์ให้คะแนน (16 คะแนน)**
+
+| ข้อ | สิ่งที่ต้องทำ | คะแนน |
+|---|---|---|
+| 1 | แนะนำตัว ขออนุญาต ถอดรองเท้าถุงเท้าทั้งสองข้าง ล้างมือ | 1 |
+| 2 | **ดู**: ผิวแห้ง แตก ตาปลา (callus) แผล เชื้อราซอกนิ้ว เล็บ · **รูปเท้า**: claw/hammer toe, bunion, Charcot · สี · **ดูรองเท้าและถุงเท้า** | 2 |
+| 3 | **คลำ**: อุณหภูมิเทียบสองข้าง · ชีพจร **dorsalis pedis และ posterior tibial** ทั้งสองข้าง | 2 |
+| 4 | **Monofilament 10 g**: สาธิตที่มือก่อน ให้หลับตา กดตั้งฉากจนเส้นงอ ค้างราว 1–2 วินาที หลายตำแหน่ง (ปลายนิ้วโป้ง หัวกระดูกฝ่าเท้า) เลี่ยงแผล/callus · ถามว่ารู้สึกไหมและที่ไหน | 3 |
+| 5 | **Vibration 128 Hz** ที่ข้อปลายนิ้วโป้ง และ/หรือ **ankle reflex** | 1 |
+| 6 | สรุปผล: มี neuropathy (ไม่รู้สึก monofilament) ± ชีพจรเบา → **high-risk foot** · แนะนำวัด **ABI** (< 0.9 = PAD) | 2 |
+| 7 | **ดูแลเท้าทุกวัน**: ตรวจเท้าทุกวัน (ใช้กระจก) · ล้างและเช็ดให้แห้งโดยเฉพาะซอกนิ้ว · ทาครีมผิวแห้งแต่ไม่ทาซอกนิ้ว · **ตัดเล็บตรง ไม่สั้นเกิน** · ตาปลาใช้หินขัด ไม่ตัดเอง | 2 |
+| 8 | **ห้ามเดินเท้าเปล่า** · ตรวจในรองเท้าก่อนใส่ · **รองเท้าพอดี** หัวกว้างลึก ส้นเตี้ย มีสายรัด · ระวังน้ำร้อน/กระเป๋าน้ำร้อน | 2 |
+| 9 | **เลิกบุหรี่** · คุมน้ำตาล ความดัน ไขมัน · ถ้ามีแผล บวมแดง หรือเท้าอุ่นผิดปกติให้มาทันที · นัดตรวจเท้าบ่อยขึ้น · ยาลดปวดปลายประสาท | 1 |
+
+**ข้อที่ทำให้เสียคะแนน**: ตรวจเท้าข้างเดียว · ไม่ถอดถุงเท้า · ใช้ monofilament ลากหรือกดบน callus · ไม่ให้คำแนะนำเรื่องรองเท้าและการตรวจเท้าทุกวัน""",
+ "ref": ["สไลด์ ศ.นพ.ชัยชาญ — prevention diabetic foot ulcer, high risk foot, monofilament, good footwear, daily footcare", "IWGDF 2023"],
+ "nl": ["2.3.6-3(9)", "2.3.12(13)", "2.3.9-3(7)", DM], "years": [], "_kind": "meq", "_set": SET}]
+
+LECTURE = {
+ "lec": LEC, "date": "พ. 14 ต.ค.",
+ "title": "Diabetes mellitus — ตั้งแต่วินิจฉัยถึง DKA",
+ "subtitle": "insulin ทำงานที่ไหน · ทำไมปัสสาวะมาก น้ำหนักลด ตามัว · วินิจฉัยและคัดกรอง · T1 · T2 และ C-peptide · GDM · DKA/HHS กลไกและการรักษา · hypoglycemia · retinopathy · nephropathy · neuropathy และเท้า · macrovascular และเป้าหมาย · ยาเม็ด/GLP-1/SGLT2 · Thai CPG 2020 และ insulin",
+ "objectives": [
+   "อธิบายการออกฤทธิ์ของ insulin ที่ตับ กล้ามเนื้อ และไขมัน และใช้อธิบายกลไกของอาการเบาหวาน (ปัสสาวะมาก กระหายน้ำ น้ำหนักลด ตามัว ติดเชื้อง่าย)",
+   "วินิจฉัยเบาหวานและภาวะก่อนเบาหวาน และบอกได้ว่าใครต้องคัดกรอง",
+   "แยกเบาหวานชนิดที่ 1 ชนิดที่ 2 ชนิดจำเพาะ และ GDM จากกลไกและลักษณะทางคลินิก รวมถึงการใช้ C-peptide",
+   "อธิบายกลไก Pedersen ของภาวะแทรกซ้อนในทารกของแม่ที่เป็น GDM และแปลผล OGTT ในหญิงตั้งครรภ์",
+   "อธิบายกลไกของ DKA และ HHS วินิจฉัย คำนวณ AG/corrected Na/osmolality และสั่งการรักษาโดยเฉพาะสารน้ำ insulin และ K",
+   "รู้จักอาการและการรักษา hypoglycemia รวมถึง unawareness",
+   "อธิบายกลไกและการคัดกรองภาวะแทรกซ้อนทางตา ไต เส้นประสาท เท้า และหลอดเลือดใหญ่",
+   "เลือกยาลดน้ำตาลตามกลไก ผลข้างเคียง และโรคร่วมตามแนวทางเวชปฏิบัติไทย 2020 และใช้ insulin ได้ถูกต้อง"],
+ "nlGap": "เกณฑ์ฯ ครอบคลุมเบาหวาน (`นล. 2.3.4(1)`, `B11.2.5(4)`) hyperglycemic crisis (`2.2.16`) hypoglycemia (`2.2.17`) retinopathy polyneuropathy และยาเบาหวาน (`B11.4(1)`) ครบ — แต่ **สไลด์ไม่มีเนื้อหา DKA/HHS/hypoglycemia** (มีแค่ชื่อในขั้นที่ 4 ของ approach) และหลายส่วนเป็นภาพ (ความชุก NHES7 กราฟ natural history ภาพจอตา/เท้า) หัวข้อ 7–9 และส่วนที่ระบุในแต่ละหัวข้อจึงอิงแนวทางด้านล่าง",
+ "guidelines": [
+   "**แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน 2020 (TH DM CPG 2020)** — อัลกอริทึมการรักษา T2 และเป้าหมายตอนวินิจฉัย (อาจารย์อ้างในสไลด์)",
+   "**ADA/EASD/JBDS/AACE/DTS — Hyperglycemic Crises in Adults With Diabetes: A Consensus Report (2024)** — เกณฑ์ DKA/HHS และเกณฑ์หายใหม่",
+   "**ADA — Hyperglycemic Crises in Adult Patients With Diabetes (Kitabchi 2009)** — ขั้นตอนสารน้ำ insulin K bicarbonate ที่ยังใช้สอน",
+   "**ADA Standards of Care in Diabetes** — hypoglycemia levels, การคัดกรอง, เป้าความดัน/ไขมัน, GDM หลังคลอด, เลือกยาตามโรคร่วม",
+   "**KDIGO 2022 Clinical Practice Guideline for Diabetes Management in CKD** — SGLT2i, metformin ตาม eGFR, finerenone",
+   "**IWGDF 2023 guidelines on the prevention and management of diabetes-related foot disease**",
+   "**WHO/IADPSG และ Carpenter–Coustan/NDDG** — เกณฑ์ GDM (อาจารย์อ้างในสไลด์)"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+# ───────────────────────────── กระจายตำแหน่งคำตอบ (ก่อนขึ้นเว็บครั้งแรกเท่านั้น) · ตัวเลือกเรียงตามธรรมชาติไม่สลับ
+ORDERED = {N(5), N(12)}
+_slot = 0
+for s_ in S:
+    for it in s_["items"]:
+        if it["id"] in ORDERED:
+            continue
+        tgt = [2, 4, 0, 3, 1][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+# ───────────────────────────── เขียนลงไฟล์ แล้วผูกข้อ Mock
+path = os.path.join(BUILD, "data", SET + ".json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LEC]
+data.append(LECTURE)
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+added_m = link_mock(SET, LEC, {"endo-dm-04": ["MOCK-192"], "endo-dm-07": ["MOCK-190"], "endo-dm-08": ["MOCK-189"],
+                               "endo-dm-11": ["MOCK-191", "MOCK-124"], "endo-dm-12": ["MOCK-188"]})
+
+data = json.load(open(path, encoding="utf-8"))
+L = [l for l in data if l["lec"] == LEC][0]
+seen = set()
+for f in os.listdir(os.path.join(BUILD, "data")):
+    if f.endswith(".json") and f not in ("nl.json", "index.json"):
+        for l in json.load(open(os.path.join(BUILD, "data", f), encoding="utf-8")):
+            for x in [i for s_ in l["sections"] for i in s_["items"]] + l["meq"] + l["osce"] + [{"id": s_["id"]} for s_ in l["sections"]]:
+                assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+                seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+codes = ({c for s_ in L["sections"] for c in s_["nl"]} | {c for s_ in L["sections"] for i in s_["items"] for c in i.get("nl", [])}
+         | {c for m in L["meq"] + L["osce"] for c in m.get("nl", [])})
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+for s_ in L["sections"]:
+    assert "```" not in s_["md"], s_["id"]
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == SET: m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+from collections import Counter
+print("sections %d | ข้อใหม่ %d + mock %d = %d | meq %d | osce %d | ภาพ %d | nl %d" % (
+    len(S), sum(1 for s_ in S for i in s_["items"] if i["id"].startswith("END-DM")), added_m,
+    sum(len(s_["items"]) for s_ in L["sections"]), len(L["meq"]), len(L["osce"]), sum(len(s_["figs"]) for s_ in S), len(codes)))
+print("ตำแหน่งคำตอบข้อใหม่:", dict(sorted(Counter(i["answer"] for s_ in S for i in s_["items"] if i["id"].startswith("END-DM")).items())))
+print("%s.json มี %d คาบ: %s" % (SET, len(data), [l["lec"] for l in data]))
