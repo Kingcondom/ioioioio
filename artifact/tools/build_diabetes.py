@@ -582,7 +582,7 @@ sec("endo-dm-11", "Diabetic nephropathy — hyperfiltration ถึงไตว�
 #### ทำไมถึงเกิด — กลไกของแต่ละระยะ
 | ระยะ | กลไก |
 |---|---|
-| **GFR สูงช่วงแรก** | glucose ที่ถูกกรองมาก ทำให้ proximal tubule ดูด glucose พร้อม Na ผ่าน **SGLT2 มากขึ้น** → Na ไปถึง **macula densa** น้อย → ไตเข้าใจว่าเลือดมาน้อย จึง **ขยาย afferent arteriole** (tubuloglomerular feedback) ร่วมกับ angiotensin II **หด efferent** → แรงดันใน glomerulus สูง (เหมือน MOCK ที่ถาม mechanism ของ early DN) |
+| **GFR สูงช่วงแรก** | glucose ที่ถูกกรองมาก ทำให้ proximal tubule ดูด glucose พร้อม Na ผ่าน **SGLT2 มากขึ้น** → Na ไปถึง **macula densa** น้อย → ไตเข้าใจว่าเลือดมาน้อย จึง **ขยาย afferent arteriole** (tubuloglomerular feedback) ร่วมกับ angiotensin II **หด efferent** → แรงดันใน glomerulus สูง |
 | **GBM หนา · mesangium ขยาย** | น้ำตาลจับโปรตีนเป็น AGEs + แรงดันสูงกระตุ้น TGF-β → สร้าง matrix มาก → **Kimmelstiel–Wilson nodule** (nodular glomerulosclerosis) |
 | **Albumin รั่ว** | podocyte บาดเจ็บจากแรงดันและ AGEs · ประจุลบของตะแกรงลดลง (ทวนคาบ glomerular — Nephro คาบ 14) |
 | **GFR ลดจนไตวาย** | glomerulus กลายเป็นแผลเป็นทีละหน่วย nephron ที่เหลือกรองหนักขึ้นอีก — วงจรเดียวกับ FSGS แบบปรับตัว |

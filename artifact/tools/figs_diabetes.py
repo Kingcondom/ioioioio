@@ -192,12 +192,12 @@ def dkahhs():
 
 def kshift():
     def cell(cx, title, inward):
-        o = [t(cx, 20, title, "b mid"), circ(cx, 110, 56, "sk"), t(cx, 104, "ในเซลล์", "xs mid mu"),
-             t(cx, 124, "K⁺ K⁺ K⁺" if inward else "K⁺", "sm mid b")]
-        for ang in (30, 150, 270):
+        o = [t(cx, 20, title, "b mid"), circ(cx, 118, 52, "sk"), t(cx, 112, "ในเซลล์", "xs mid mu"),
+             t(cx, 132, "K⁺ K⁺ K⁺" if inward else "K⁺", "sm mid b")]
+        for ang in (25, 155, 90):
             a = math.radians(ang)
-            x1, y1 = cx + 60 * math.cos(a), 110 - 60 * math.sin(a)
-            x2, y2 = cx + 92 * math.cos(a), 110 - 92 * math.sin(a)
+            x1, y1 = cx + 56 * math.cos(a), 118 - 56 * math.sin(a)
+            x2, y2 = cx + 82 * math.cos(a), 118 - 82 * math.sin(a)
             o.append(line(x2, y2, x1, y1, "lok w2", "ah-ok") if inward else line(x1, y1, x2, y2, "lbad w2", "ah-bad"))
         return o
     return svg(600, 290, "ใน DKA โพแทสเซียมเคลื่อนออกนอกเซลล์และหายทางปัสสาวะ เมื่อให้ insulin โพแทสเซียมกลับเข้าเซลล์ ระดับในเลือดจึงดิ่ง",
@@ -264,11 +264,11 @@ def dn_stages():
     stages = [(0, 2, "1"), (2, 5, "2"), (5, 10, "3"), (10, 15, "4"), (15, 20, "5")]
     out = []
     for k, (a, b, s) in enumerate(stages):
-        out += [rect(X(a), 34, X(b) - X(a), 176, "sk" if k % 2 == 0 else "bx", 0), t((X(a) + X(b)) / 2, 50, "ระยะ " + s, "xs mid b")]
+        out += [rect(X(a), 34, X(b) - X(a), 176, "sk" if k % 2 == 0 else "bx", 0), t((X(a) + X(b)) / 2, 26, "ระยะ " + s, "xs mid b")]
     out += [line(X(0), Yg(0), X(20), Yg(0), "lmu"), t(X(0) - 6, Yg(150) + 4, "150", "xs end mu"), t(X(0) - 6, Yg(60) + 4, "60", "xs end mu"),
-            t(X(0) - 6, Yg(0) + 4, "0", "xs end mu"), t(12, 24, "GFR", "xs mu b"),
+            t(X(0) - 6, Yg(0) + 4, "0", "xs end mu"), t(12, 46, "GFR", "xs mu b"),
             poly([(X(a), Yg(b)) for a, b in gfr], "lac w3"),
-            t(X(1.0), Yg(150) - 10, "hyperfiltration", "xs b tac"), t(X(3.2), Yg(105), "GBM หนา", "xs i2"), t(X(3.2), Yg(105) + 14, "(เงียบ)", "xs i2"),
+            t(X(1.4), 78, "hyperfiltration", "xs b tac"), t(X(3.2), Yg(105), "GBM หนา", "xs i2"), t(X(3.2), Yg(105) + 14, "(เงียบ)", "xs i2"),
             t(X(13.6), Yg(80) - 4, "overt proteinuria", "xs b tbad"), t(X(15.6), Yg(42) - 2, "GFR ↓ เร็ว", "xs b tbad"),
             t(X(17.2), Yg(12) - 10, "uremia", "xs b tbad"),
             rect(X(0), 222, X(5) - X(0), 16, "ok", 0), rect(X(5), 222, X(10) - X(5), 16, "ms", 0), rect(X(10), 222, X(20) - X(10), 16, "bad", 0),
