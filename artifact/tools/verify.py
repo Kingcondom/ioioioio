@@ -34,6 +34,8 @@ try:
 
         pg.wait_for_selector("#courseTabs button", timeout=10000)
         tabs = pg.eval_on_selector_all("#courseTabs button", "els=>els.map(e=>e.textContent)")
+        import json as _j
+        _NSET = len(_j.load(open(os.path.join(BUILD, "data", "index.json"), encoding="utf-8")))
         print("แท็บชุดวิชา:", tabs)
         if len(tabs) != len(_idx):
             fail.append("แท็บควรมี %d ชุดตาม index.json แต่ได้ %d" % (len(_idx), len(tabs)))
@@ -109,6 +111,80 @@ try:
             fail.append("หน้าล้นแนวนอน %dpx" % ov)
 
         pg.screenshot(path=os.path.join(os.path.dirname(BUILD), "check-mobile.png"), full_page=False)
+
+        # ---- ปุ่มซ่อนเมนูแถบด้านบน ----
+        cost = []
+        HH = lambda: pg.evaluate(
+            "()=>Math.round(document.querySelector('header.mast').getBoundingClientRect().height)")
+        VIS = lambda sel: pg.evaluate(
+            "s=>{const e=document.querySelector(s);return !!e&&getComputedStyle(e).display!=='none'}", sel)
+        # เนื้อหาที่มองเห็นจริงต้องไม่ทับปุ่ม (ไล่ถึง text node ไม่ใช่กล่อง)
+        OVER = """()=>{const b=document.getElementById('mastBtn').getBoundingClientRect();const o=[];
+          const walk=e=>{if(e.id==='mastBtn'||getComputedStyle(e).display==='none')return;
+            for(const n of e.childNodes){
+              if(n.nodeType===3&&n.textContent.trim()){const r=document.createRange();r.selectNode(n);
+                /* ตัดตามบรรพบุรุษที่ clip อยู่ ไม่งั้นข้อความที่ถูกย่อด้วย ... จะวัดกว้างเกินจริง */
+                let cl=null;for(let a=e;a&&a!==document.body;a=a.parentElement){
+                  const ov=getComputedStyle(a);
+                  if(ov.overflowX!=='visible'||ov.overflowY!=='visible'){cl=a.getBoundingClientRect();break;}}
+                for(const q0 of r.getClientRects()){
+                  const q=cl?{left:Math.max(q0.left,cl.left),right:Math.min(q0.right,cl.right),
+                              top:Math.max(q0.top,cl.top),bottom:Math.min(q0.bottom,cl.bottom)}:q0;
+                  if(q.right>q.left&&q.bottom>q.top)o.push([e.id||e.className,q]);}}
+              else if(n.nodeType===1)walk(n);}};
+          document.querySelectorAll('.mast .wrap > *').forEach(walk);
+          return o.filter(([n,r])=>!(r.right<=b.left||r.left>=b.right||r.bottom<=b.top||r.top>=b.bottom))
+                  .map(([n])=>n);}"""
+
+        for w in (320, 360, 390, 560, 768, 1024, 1280):
+            pg.set_viewport_size({"width": w, "height": 900})
+            pg.wait_for_timeout(120)
+            open_h = HH()
+            # ปุ่มลอยอยู่นอก flex จึงต้องไม่ทำให้แถบสูงขึ้นเลย
+            base = pg.evaluate("""()=>{const b=document.getElementById('mastBtn'),p=b.parentNode;
+                b.remove();const h=Math.round(document.querySelector('header.mast').getBoundingClientRect().height);
+                p.appendChild(b);return h;}""")
+            # ปุ่มสูงกว่าตัวหนังสือในแถวชื่อ จึงดันแถบขึ้นราว 10px เป็นเรื่องปกติ
+            # แต่ถ้าเกินนั้นแปลว่าปุ่มเบียดจนมีแถวใหม่โผล่ — อันนั้นคือของเสีย
+            cost.append((w, open_h - base))
+            if open_h - base >= 20:
+                fail.append("ที่ %dpx ปุ่มซ่อนเมนูเบียดจนแถบงอกอีกแถว (+%dpx)" % (w, open_h - base))
+            hit = pg.evaluate(OVER)
+            if hit:
+                fail.append("ที่ %dpx ปุ่มซ่อนเมนูทับ %s" % (w, hit))
+            pg.click("#mastBtn"); pg.wait_for_timeout(130)
+            min_h = HH()
+            if min_h > open_h * 0.6:
+                fail.append("ที่ %dpx ย่อแล้วยังสูง %dpx (จาก %dpx)" % (w, min_h, open_h))
+            if pg.evaluate(OVER):
+                fail.append("ที่ %dpx ตอนย่อ ปุ่มทับเนื้อหา" % w)
+            if not VIS("#mastBtn"):
+                fail.append("ที่ %dpx ปุ่มหายตอนย่อ กดขยายกลับไม่ได้" % w)
+            pg.click("#mastBtn"); pg.wait_for_timeout(130)
+            if HH() != open_h:
+                fail.append("ที่ %dpx ขยายกลับแล้วความสูงไม่เท่าเดิม" % w)
+        print("ปุ่มซ่อนเมนูแถบ: ตรวจ %d ความกว้าง ✓ · ต้นทุนความสูงตอนกาง %s"
+              % (len(cost), " ".join("%d:+%d" % c for c in cost)))
+
+        # จำสถานะย่อข้ามรีโหลด
+        pg.set_viewport_size({"width": 390, "height": 844})
+        pg.click("#mastBtn"); pg.wait_for_timeout(130)
+        was = HH()
+        pg.reload(wait_until="networkidle"); pg.wait_for_timeout(250)
+        if HH() != was:
+            fail.append("รีโหลดแล้วไม่จำสถานะซ่อนเมนู")
+        if not VIS("#mastBtn") or "\u25be" not in pg.inner_text("#mastBtn"):
+            fail.append("หลังรีโหลด ปุ่มไม่ได้อยู่ในสถานะ 'ขยาย'")
+        # สลับชุดวิชาแล้วต้องยังย่ออยู่ (render() เรียก applyHdr)
+        pg.evaluate("()=>document.getElementById('mastBtn').click()"); pg.wait_for_timeout(130)
+        pg.click("#courseTabs button:has-text('Chest')"); pg.wait_for_timeout(700)
+        pg.click("#mastBtn"); pg.wait_for_timeout(130)
+        pg.click("#courseTabs button:has-text('AIR')") if VIS("#courseTabs") else None
+        pg.wait_for_timeout(500)
+        if HH() > was * 1.3:
+            fail.append("สลับชุดวิชาแล้วแถบเด้งกลับมากางเอง")
+        print("จำสถานะย่อ + ไม่เด้งกลับตอนสลับชุดวิชา ✓")
+        pg.set_viewport_size({"width": 390, "height": 844})
 
         # กรอง Google Fonts / favicon ที่ container บล็อกอยู่แล้ว ไม่เกี่ยวกับ refactor
         ours = [x for x in bad if "fonts.googleapis" not in x and "fonts.gstatic" not in x

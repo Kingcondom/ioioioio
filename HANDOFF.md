@@ -157,24 +157,12 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 ทางแก้คือ **อย่า publish ทับด้วยไฟล์ที่ไม่ได้สร้างจากเวอร์ชันล่าสุด** ถ้าถูกปฏิเสธ ระบบจะส่งไฟล์
 เวอร์ชันสดมาให้ ให้แก้ทับบนไฟล์นั้นแล้ว publish ใหม่
 
----|---|---|
-| air | 08 | Allergy and clinical immunology |
-| air | 23 | Approach to arthritis / crystal and infective |
-| air | 33 | Connective tissue disease, vasculitis |
-| cardio | 04 | Inflammatory MyoPericardial Syndrome (IMPS) |
-| cardio | 10 | Circulatory Shock |
-| cardio | 24/9 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ |
-| chest | 03 | Pulmonary tuberculosis |
-| chest | 26 | Arterial blood gas analysis |
-| nephro | 05 | Fluid electrolyte: Divalent |
-| neuro | 07 | Acute ischemic stroke |
-| neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
-| neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
-| neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
-| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
 
-> ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
-> ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
+**ฟีเจอร์ที่ session อื่นเพิ่มไว้ และยังไม่มีสคริปต์ build ใน repo**
+- หน้า **"คาบเรียน"** (`viewLectures` / `viewLecture`) + ลิงก์ตรงด้วย hash `#<ชุด>-<คาบ>`
+- **แผนภาพ SVG ในบทเรียน** — `[[fig:key]]` ใน `md` คู่กับ `section.figs`
+- **ปุ่มซ่อนเมนู** `#mastBtn` — จำสถานะใน localStorage คีย์ `med421-learn-mast`
+  (แยกจาก state หลัก `med421-learn-v1`)
 
 ---
 
