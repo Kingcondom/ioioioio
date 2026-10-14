@@ -278,4 +278,285 @@ sec("endo-dm-05", "Type 2 — ดื้อ insulin + β cell ล้า · แย
         "β cell ตัด proinsulin ได้ insulin (สาย A + B) และ **C-peptide** จำนวนเท่ากัน — C-peptide จึงเป็นตัวแทนของ insulin ที่ร่างกายสร้างเอง ใช้แยก T1 (ต่ำ) กับ T2 (ปกติ/สูง)",
         F.proinsulin())})
 
+# ───────────────────────────── 6
+sec("endo-dm-06", "Gestational diabetes — ทำไมทารกตัวโตแล้วน้ำตาลต่ำหลังคลอด",
+    "ฮอร์โมนรกทำให้ดื้อ insulin · Pedersen · ผลต่อทารกและมารดา · เกณฑ์ 100 g / 75 g · คัดกรอง 24–28 สัปดาห์", 10,
+"""### GDM คืออะไร (สไลด์)
+- glucose tolerance ผิดปกติที่พบขณะตั้งครรภ์
+- **ดื้อ insulin จากฮอร์โมนของรก** (human placental lactogen, progesterone, cortisol — เพิ่มขึ้นมากในไตรมาสที่ 2–3)
+- ตับอ่อนของแม่สร้าง insulin เพิ่มได้ไม่พอกับความต้องการ
+- **50% เป็นเบาหวานถาวรภายใน 10 ปี**
+
+### ทำไมทารกถึงมีปัญหา — กลไก Pedersen
+[[fig:pedersen]]
+
+#### ทำไมถึงมีอาการนี้ (ภาวะแทรกซ้อนต่อทารกในสไลด์)
+| ภาวะของทารก | กลไก |
+|---|---|
+| **ตัวโต (macrosomia)** | glucose ของแม่ผ่านรก แต่ insulin ไม่ผ่าน → ตับอ่อนทารกสร้าง insulin มาก · **insulin เป็นฮอร์โมนเร่งการเจริญเติบโต** ไขมันและอวัยวะโต (ไหล่กว้าง → ไหล่ติด) |
+| **น้ำตาลต่ำหลังคลอด** | ตัดสายสะดือ glucose จากแม่หยุดทันที แต่ทารกยังมี **insulin สูงค้าง** |
+| **RDS (ปอดไม่พร้อม)** | insulin สูงต้านการกระตุ้นของ cortisol ต่อการสร้าง **surfactant** |
+| **Polycythemia → ตัวเหลือง** | ทารกเผาผลาญมาก ใช้ออกซิเจนมาก → ขาดออกซิเจนเรื้อรัง → EPO ↑ · เม็ดเลือดแดงมากแตกเป็น bilirubin |
+| **Ca ต่ำ** | การทำงานของ parathyroid ในทารกยังไม่เต็มที่ (กลไกซับซ้อน) |
+
+**ต่อมารดา (สไลด์)**: ครรภ์เป็นพิษ (toxemia) · ผ่าคลอด · กรวยไตอักเสบ · ครรภ์แฝดน้ำ (ทารกปัสสาวะมากจากน้ำตาลสูง) · เสียชีวิต
+**ปัจจัยเสี่ยง (สไลด์)**: อายุ > 25 ปี · ครอบครัวเป็นเบาหวาน · อ้วน · เคยเป็น GDM หรือคลอดลูกตัวโต · ประวัติการตั้งครรภ์ไม่ดี
+
+### การคัดกรองและวินิจฉัย (สไลด์)
+**คัดกรอง**: หญิงเสี่ยงสูงตรวจตั้งแต่ ANC ครั้งแรก ถ้าปกติ **ตรวจซ้ำที่ 24–28 สัปดาห์** · **50-g glucose challenge** ถ้า 1 ชม. **≥ 130 (หรือ 140) mg/dL** → ทำ OGTT เต็ม
+| การตรวจ | ขณะอด | 1 ชม. | 2 ชม. | 3 ชม. |
+|---|---|---|---|---|
+| **100 g — Carpenter & Coustan** | ≥ 95 | ≥ 180 | ≥ 155 | ≥ 140 |
+| **100 g — NDDG** | ≥ 105 | ≥ 190 | ≥ 165 | ≥ 145 |
+| **75 g — WHO (IADPSG)** | ≥ 92 | ≥ 180 | ≥ 153 | — |
+การแปลผล (เกณฑ์มาตรฐาน — สไลด์ไม่ได้ระบุ): 100 g ต้องผิดปกติ **≥ 2 ค่า** · 75 g ผิดปกติ **≥ 1 ค่า** ก็วินิจฉัยได้
+
+### หลังวินิจฉัย (ADA — ไม่อยู่ในสไลด์)
+ควบคุมอาหารและออกกำลังกายก่อน · ถ้าไม่ถึงเป้า ยาแรกคือ **insulin** (metformin และ glibenclamide ผ่านรก) · หลังคลอด **OGTT ที่ 4–12 สัปดาห์** แล้วคัดกรองต่อทุก 1–3 ปีตลอดชีวิต (เพราะ 50% เป็นเบาหวานใน 10 ปี)
+""",
+    ["GDM = ดื้อ insulin จากฮอร์โมนรก + insulin ไม่พอ · 50% เป็นเบาหวานถาวรใน 10 ปี",
+     "Pedersen: glucose ผ่านรก insulin ไม่ผ่าน → ทารก hyperinsulinemia → ตัวโต · น้ำตาลต่ำหลังคลอด · RDS · polycythemia",
+     "คัดกรองหญิงเสี่ยงตั้งแต่ ANC แรก ซ้ำ 24–28 สัปดาห์ · 50-g GCT ≥ 130/140 → OGTT",
+     "100 g C&C: 95/180/155/140 (≥ 2 ค่า) · 75 g: 92/180/153 (≥ 1 ค่า)",
+     "หลังคลอด OGTT 4–12 สัปดาห์ แล้วคัดกรองตลอดชีวิต"],
+    [mcq(N(10), "A baby born at 38 weeks to a mother with poorly controlled gestational diabetes weighs 4.4 kg. At 2 hours of age the baby is jittery with a capillary glucose of 28 mg/dL. What is the mechanism of the hypoglycemia?",
+         ["Neonatal adrenal insufficiency", "Persistent fetal hyperinsulinemia after the maternal glucose supply stops at birth", "Transfer of maternal insulin across the placenta", "Congenital deficiency of glycogen storage", "Neonatal sepsis consuming glucose"], 1,
+         "**Pedersen hypothesis** — glucose ของแม่ผ่านรก (insulin ไม่ผ่าน) ตับอ่อนทารกจึงสร้าง insulin มากตลอดการตั้งครรภ์ (ทำให้ตัวโต 4.4 กก.) เมื่อคลอด glucose จากแม่หยุดทันที แต่ **insulin ของทารกยังสูงค้าง** → น้ำตาลต่ำในไม่กี่ชั่วโมงแรก\n\n- **insulin ของแม่ไม่ผ่านรก**\n- ไม่มีข้อมูลสนับสนุนต่อมหมวกไตบกพร่องหรือโรคสะสม glycogen\n- sepsis เป็นไปได้เสมอแต่ไม่อธิบายตัวโต",
+         "ทารกแม่ GDM: ตัวโต + น้ำตาลต่ำหลังคลอด = fetal hyperinsulinemia", "GDM", R("Gestational diabetes — complications to baby"), [DM, "2.3.15-3(11)", "2.3.16(5)"]),
+     mcq(N(11), "A 30-year-old woman at 26 weeks has a 100-g OGTT: fasting 98, 1-hour 186, 2-hour 150 and 3-hour 128 mg/dL. Using the Carpenter–Coustan thresholds from the lecture, what is the interpretation?",
+         ["Normal — only one value is abnormal", "Gestational diabetes — two values meet or exceed the thresholds", "Overt diabetes in pregnancy", "Impaired glucose tolerance only", "The test must be repeated with 75 g"], 1,
+         "เกณฑ์ **Carpenter & Coustan** (สไลด์): ขณะอด ≥ 95 · 1 ชม. ≥ 180 · 2 ชม. ≥ 155 · 3 ชม. ≥ 140 — รายนี้ **ขณะอด 98 และ 1 ชม. 186 ผิดปกติ = 2 ค่า** จึงวินิจฉัย **GDM** (100-g ต้องผิดปกติอย่างน้อย 2 ค่า)\n\n- 2 ชม. 150 และ 3 ชม. 128 ยังปกติ\n- overt diabetes ต้องเข้าเกณฑ์ของคนไม่ตั้งครรภ์ (เช่น FPG ≥ 126)\n- ไม่จำเป็นต้องตรวจซ้ำด้วย 75 g",
+         "100-g OGTT: ผิดปกติ ≥ 2 ค่า = GDM", "GDM", R("Diagnosis of GDM — Carpenter & Coustan"), [DM, "2.3.15-3(11)"] + LAB)],
+    [DM, "2.3.15-3(11)", "B10.1.3(3)", "2.3.16(5)"] + LAB,
+    {"pedersen": fig("กลไก Pedersen — ทำไมแม่น้ำตาลสูงแล้วทารกมีปัญหา",
+        "glucose ของแม่ **ผ่านรก** แต่ **insulin ไม่ผ่าน** ทารกจึงสร้าง insulin เองมาก (fetal hyperinsulinemia) แล้วแตกเป็นสี่ผล: ตัวโต · น้ำตาลต่ำหลังคลอด · ปอดไม่พร้อม · เลือดข้นจนตัวเหลือง",
+        F.pedersen())})
+
+# ───────────────────────────── 7
+sec("endo-dm-07", "DKA และ HHS — กลไก อาการ และเกณฑ์วินิจฉัย",
+    "ขาด insulin + ฮอร์โมนต้าน · ketone มาจากไขมัน · ทำไม HHS ไม่มี ketone · Kussmaul · corrected Na · osmolality", 13,
+"""> สไลด์ระบุ DKA และ HHNS เป็นภาวะแทรกซ้อนเฉียบพลันในขั้นที่ 4 ของ approach แต่ **ไม่มีสไลด์รายละเอียด** (ปฏิทินเขียนว่า "Inc. DKA") — หัวข้อ 7–9 จึงเรียบเรียงจาก **ADA/EASD/JBDS/AACE/DTS consensus 2024** และ **ADA 2009 (Kitabchi)**
+
+### DKA เกิดอย่างไร
+[[fig:dka]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ / ผลตรวจ | กลไก |
+|---|---|
+| **หายใจหอบลึก (Kussmaul)** | กรด ketone ทำให้ pH ต่ำ → กระตุ้น chemoreceptor ให้หายใจลึกเร็ว ระบาย CO₂ ชดเชยภาวะกรด |
+| **ลมหายใจกลิ่นผลไม้** | acetoacetate สลายเองเป็น **acetone** ที่ระเหยออกทางลมหายใจ |
+| **ปวดท้อง อาเจียน** (อาจคล้ายท้องเสียแบบผ่าตัด) | ภาวะกรดและ ketone ทำให้กระเพาะลำไส้บีบตัวน้อย ยืด · อาเจียนยิ่งเสียน้ำ — ปวดท้องที่ไม่ดีขึ้นเมื่อแก้กรดแล้วต้องหาสาเหตุอื่น |
+| **ขาดน้ำมาก ชีพจรเร็ว BP ต่ำ** | osmotic diuresis หลายวัน + อาเจียน — เสียน้ำราว **6 ลิตร** (HHS ราว **9 ลิตร**) |
+| **ซึม สับสน** | สัมพันธ์กับ **osmolality สูง** มากกว่าความเป็นกรด — ถ้า effective osmolality ไม่สูงแต่ซึมมาก ให้หาสาเหตุอื่น |
+| **Na ต่ำ** | glucose สูงดึงน้ำจากเซลล์ออกมาเจือจาง Na → ต้องดู **corrected Na** |
+| **K ปกติหรือสูง แต่ร่างกายพร่อง** | ขาด insulin + กรด + osmolality สูง ดึง K ออกจากเซลล์ ขณะที่ปัสสาวะขับ K ทิ้ง (หัวข้อ 8) |
+| WBC สูง · amylase สูง | ความเครียดและภาวะกรด — ไม่ได้แปลว่าติดเชื้อหรือตับอ่อนอักเสบเสมอไป แต่ต้องหาตัวกระตุ้น |
+| **urine ketone อาจบวกมากขึ้นระหว่างรักษา** | strip (nitroprusside) วัดได้แค่ **acetoacetate** ไม่วัด **β-hydroxybutyrate** (ketone หลักใน DKA) เมื่อรักษา β-OHB ถูกเปลี่ยนเป็น acetoacetate — ติดตามด้วย **β-OHB ในเลือด** ไม่ใช่ urine ketone |
+
+### ทำไม HHS ถึงไม่มี ketone
+[[fig:dkahhs]]
+
+HHS มักเป็นใน **T2 ผู้สูงอายุ** ที่ยังมี insulin อยู่บ้าง — insulin ปริมาณน้อยก็ **หยุดการสลายไขมันได้แล้ว** จึงไม่มี ketone แต่ไม่พอจะคุมน้ำตาล น้ำตาลจึงค่อย ๆ สูงเป็นวันถึงสัปดาห์ ปัสสาวะออกต่อเนื่องจนขาดน้ำรุนแรง osmolality สูงมาก และซึมจนหมดสติ
+
+### เกณฑ์วินิจฉัย
+| | **DKA** | **HHS** |
+|---|---|---|
+| Glucose | **≥ 200 mg/dL** หรือเคยเป็นเบาหวาน (ADA 2009 ใช้ > 250) | **≥ 600 mg/dL** |
+| Ketone | **β-OHB ≥ 3.0 mmol/L** หรือ urine ketone ≥ 2+ | ไม่มีนัยสำคัญ (β-OHB < 3.0) |
+| ความเป็นกรด | **pH < 7.3 และ/หรือ HCO₃ < 18** | pH ≥ 7.3 · HCO₃ ≥ 15 |
+| Osmolality | แปรผัน | **effective > 300 mOsm/kg** (หรือ total > 320) |
+| การเริ่ม | ชั่วโมง–1 วัน | หลายวัน–สัปดาห์ |
+(ADA consensus 2024 — ผู้ป่วยบางรายมีลักษณะทั้งสองภาวะร่วมกัน)
+
+**ความรุนแรงของ DKA (ADA 2009)**: mild pH 7.25–7.30 / HCO₃ 15–18 / ตื่นดี · moderate pH 7.00–7.24 / HCO₃ 10–< 15 / ง่วง · severe pH < 7.00 / HCO₃ < 10 / ซึม–หมดสติ
+
+### สูตรที่ต้องคำนวณเป็น
+| สูตร | ใช้ทำอะไร |
+|---|---|
+| **Anion gap** = Na − (Cl + HCO₃) | ปกติราว 12 ± 2 · ketone ทำให้สูง |
+| **Corrected Na** = Na + 1.6 × (glucose − 100)/100 | บอก Na จริงเพื่อเลือกสารน้ำ |
+| **Effective osmolality** = 2 × Na + glucose/18 | วินิจฉัย HHS · ติดตามไม่ให้ลดเร็วเกิน |
+
+**ตัวกระตุ้นที่ต้องหาเสมอ**: ติดเชื้อ (พบบ่อยสุด) · หยุดหรือขาด insulin · T1 รายใหม่ · MI, stroke, ตับอ่อนอักเสบ · ยา (steroid, **SGLT2i** — ทำให้เกิด **euglycemic DKA** ที่น้ำตาล < 250 แต่มีกรด ketone) · ตั้งครรภ์
+""",
+    ["DKA: ขาด insulin + glucagon สูง → สลายไขมัน → ketone → กรด AG สูง · glucose สูง → ขาดน้ำ ~6 ลิตร",
+     "Kussmaul = ชดเชยกรด · กลิ่นผลไม้ = acetone · ซึมสัมพันธ์กับ osmolality",
+     "HHS: insulin น้อยก็พอหยุด ketone แต่ไม่พอคุมน้ำตาล → glucose ≥ 600 · osm > 300 · pH ≥ 7.3",
+     "DKA 2024: glucose ≥ 200 (หรือเคยเป็น DM) · β-OHB ≥ 3 · pH < 7.3 และ/หรือ HCO₃ < 18",
+     "Corrected Na = Na + 1.6 × (glucose − 100)/100 · eff osm = 2Na + glucose/18 · urine ketone ไม่วัด β-OHB"],
+    [mcq(N(12), "A 22-year-old man with DKA has Na 128 mEq/L and glucose 700 mg/dL. What is his corrected sodium, and what does it imply?",
+         ["About 118 mEq/L — true severe hyponatremia", "About 128 mEq/L — no correction is needed", "About 138 mEq/L — the low measured sodium is dilutional from hyperglycemia", "About 148 mEq/L — severe hypernatremia", "Sodium cannot be interpreted until glucose is normal"], 2,
+         "**Corrected Na = 128 + 1.6 × (700 − 100)/100 = 128 + 9.6 ≈ 138 mEq/L** — Na ที่วัดได้ต่ำเพราะ glucose สูงดึงน้ำออกจากเซลล์มาเจือจาง ค่าแท้จริงปกติ → ใช้ค่า corrected เลือกสารน้ำหลังชั่วโมงแรก (corrected Na ปกติ/สูง → 0.45% NaCl)\n\n- ไม่ใช่ hyponatremia แท้\n- ต้องแก้ค่าเสมอเมื่อน้ำตาลสูง",
+         "Corrected Na = Na + 1.6 ต่อ glucose ทุก 100 ที่เกิน 100", "DKA labs", [SRC_ADD], [CRI, CRI1, "B9.2.5(2)"]),
+     mcq(N(13), "A 76-year-old woman with type 2 diabetes has been increasingly drowsy for 5 days. Glucose 980 mg/dL, Na 140 mEq/L, pH 7.36, HCO3 23 mEq/L, serum beta-hydroxybutyrate 0.8 mmol/L. Why is ketoacidosis absent despite severe hyperglycemia?",
+         ["Ketones are excreted too quickly to accumulate", "Residual insulin is enough to suppress lipolysis but not enough to control glucose", "Glucagon secretion is absent in elderly patients", "Severe dehydration prevents ketone formation in the liver", "Hyperosmolality directly inhibits ketone synthesis"], 1,
+         "ภาพนี้คือ **HHS** (glucose ≥ 600, effective osm = 2×140 + 980/18 ≈ 334 > 300, pH ≥ 7.3, β-OHB < 3) — **การยับยั้งการสลายไขมันต้องการ insulin น้อยกว่าการดึงน้ำตาลเข้าเซลล์มาก** ผู้ป่วย T2 ที่ยังมี insulin บ้างจึงไม่มี ketone แต่น้ำตาลสูงขึ้นเรื่อย ๆ จนขาดน้ำรุนแรงและซึม\n\n- ketone ไม่ได้ถูกขับเร็วผิดปกติ\n- glucagon ยังหลั่งได้\n- ภาวะขาดน้ำไม่ได้หยุดการสร้าง ketone (osmolality สูงมีส่วนบ้างแต่ไม่ใช่กลไกหลัก)",
+         "HHS = insulin น้อยพอหยุดสลายไขมัน แต่ไม่พอคุมน้ำตาล", "HHS", [SRC_ADD], [CRI, CRI1]),
+     mcq(N(14), "During treatment of DKA, the urine ketone dipstick changes from 2+ to 3+ while the patient is clinically improving and the anion gap is narrowing. What is the best explanation?",
+         ["Treatment is failing and insulin should be doubled", "The nitroprusside test detects acetoacetate but not beta-hydroxybutyrate, which is being converted to acetoacetate", "Ketones are now being produced by the kidney", "The urine is becoming more concentrated", "A new infection has developed"], 1,
+         "แผ่นตรวจ ketone ใช้ **nitroprusside** ซึ่งทำปฏิกิริยากับ **acetoacetate** (และ acetone) แต่ **ไม่วัด β-hydroxybutyrate** ซึ่งเป็น ketone หลักใน DKA เมื่อรักษา β-OHB ถูกออกซิไดซ์กลับเป็น acetoacetate ค่าแผ่นตรวจจึงดูแย่ลงทั้งที่ผู้ป่วยดีขึ้น — ติดตามด้วย **anion gap หรือ β-OHB ในเลือด**\n\n- ไม่ต้องเพิ่ม insulin เพราะ AG แคบลงแล้ว\n- ไตไม่ได้สร้าง ketone\n- ความเข้มข้นของปัสสาวะไม่ใช่เหตุหลัก",
+         "ติดตาม DKA ด้วย AG/β-OHB ในเลือด ไม่ใช่ urine ketone", "DKA monitoring", [SRC_ADD], [CRI, CRI1])],
+    [CRI, CRI1, DM, "B9.2.5(2)"],
+    {"dka": fig("DKA เกิดอย่างไร",
+        "ขาด insulin ร่วมกับฮอร์โมนต้าน (โดยเฉพาะ **glucagon**) แตกสองกิ่ง — ซ้าย: ตับปล่อยน้ำตาล กล้ามเนื้อใช้ไม่ได้ → glucose สูง → osmotic diuresis → **ขาดน้ำ** · ขวา: ไขมันสลาย FFA ไปตับ → **ketone** → กรด AG สูง → Kussmaul กลิ่นผลไม้ ปวดท้อง",
+        F.dka()),
+     "dkahhs": fig("ทำไม HHS ไม่มี ketone — insulin สองระดับ",
+        "เส้นเขียว: การหยุดสลายไขมัน **ต้องการ insulin น้อย** · เส้นฟ้า: การคุมน้ำตาล **ต้องการ insulin มากกว่า** — **DKA** แทบไม่มี insulin จึงเสียทั้งสองอย่าง (ketone + น้ำตาลสูง) · **HHS** มี insulin บ้าง ไขมันไม่สลาย ไม่มี ketone แต่น้ำตาลสูงมาก (กราฟเชิงหลักการ)",
+        F.dkahhs())},
+    source=SRC_ADD)
+
+# ───────────────────────────── 8
+sec("endo-dm-08", "รักษา DKA/HHS — น้ำก่อน · ดู K ก่อน insulin · ระวังน้ำตาลและ osmolality ลดเร็ว",
+    "0.9% NaCl 15–20 mL/kg ชั่วโมงแรก · K < 3.3 ห้ามเริ่ม insulin · insulin 0.1 U/kg/h · เติม dextrose · bicarbonate เมื่อ pH < 6.9", 12,
+"""### ลำดับการรักษา (ADA 2009 — ยังเป็นแกนของการสอน · ปรับตาม consensus 2024)
+| ขั้น | ทำอะไร | ทำไม |
+|---|---|---|
+| **1. สารน้ำ** | **0.9% NaCl 15–20 mL/kg/ชม. (1–1.5 ลิตร) ชั่วโมงแรก** · จากนั้นดู corrected Na: ปกติ/สูง → 0.45% NaCl · ต่ำ → 0.9% NaCl 250–500 mL/ชม. | แก้ volume ที่ขาด ~6–9 ลิตร · น้ำอย่างเดียวก็ลดน้ำตาลได้ (เจือจาง + ไตขับ glucose เมื่อเลือดไปไตดีขึ้น) |
+| **2. ดู K ก่อนเริ่ม insulin** | K **< 3.3**: ให้ K ก่อน ยังไม่ให้ insulin · **3.3–5.2**: ผสม K 20–30 mEq ต่อสารน้ำ 1 ลิตร · **> 5.2**: ยังไม่ให้ เช็คทุก 2 ชม. | insulin ดัน K เข้าเซลล์ (ภาพด้านล่าง) |
+| **3. Insulin** | **regular insulin IV 0.1 U/kg bolus แล้ว 0.1 U/kg/ชม.** (หรือ 0.14 U/kg/ชม. ไม่ต้อง bolus) · เป้าน้ำตาลลด 50–75 mg/dL/ชม. | หยุดการสร้าง ketone — insulin คือยาที่ **แก้กรด** น้ำตาลเป็นผลพลอยได้ |
+| **4. เติม dextrose** | glucose ถึง **200 mg/dL (DKA)** หรือ **300 (HHS)** → เปลี่ยนเป็น **D5/0.45% NaCl** และลด insulin เหลือ 0.02–0.05 U/kg/ชม. (consensus 2024: เติม dextrose เมื่อ < 250) | น้ำตาลลดเร็วกว่ากรด ต้อง **ให้ insulin ต่อจนกรดหาย** โดยไม่ให้น้ำตาลต่ำ |
+| **5. Bicarbonate** | เฉพาะ **pH < 6.9** | ให้เกินทำให้ K ต่ำ · กรดในสมองแย่ลง · ketone แก้ได้เองด้วย insulin |
+| **6. Phosphate** | ไม่ให้เป็นประจำ (ให้เมื่อ < 1.0 mg/dL, หัวใจ/การหายใจแย่) | — |
+
+### ทำไม K ถึงต้องระวังที่สุด
+[[fig:kshift]]
+
+### เมื่อไรถือว่าหาย และเปลี่ยนเป็น insulin ใต้ผิวหนัง
+- **DKA หาย (ADA 2009)**: glucose < 200 ร่วมกับ 2 ใน 3 ข้อ — **HCO₃ ≥ 15 · venous pH > 7.3 · AG ≤ 12** (consensus 2024: β-OHB < 0.6 mmol/L และ pH ≥ 7.3 หรือ HCO₃ ≥ 18)
+- **HHS หาย**: osmolality ปกติ และ **รู้สึกตัวดี**
+- **ฉีด basal insulin ใต้ผิวหนัง 1–2 ชั่วโมงก่อนหยุด IV insulin** — insulin IV มีครึ่งชีวิตเพียงไม่กี่นาที ถ้าหยุดก่อนยาใต้ผิวหนังออกฤทธิ์ DKA จะกลับมา
+
+### HHS ต่างจาก DKA ตรงไหน
+สารน้ำสำคัญที่สุด (ขาดน้ำมากกว่า) · insulin เริ่มได้เมื่อน้ำตาลไม่ลดด้วยน้ำอย่างเดียว ขนาดต่ำกว่า · **ลด osmolality ช้า ๆ** (ไม่ให้ลดเร็วจนน้ำเข้าเซลล์สมอง) · ป้องกันลิ่มเลือด (เลือดข้น นอนนาน)
+
+**ภาวะแทรกซ้อนจากการรักษา**: K ต่ำ · น้ำตาลต่ำ · **สมองบวม** (โดยเฉพาะเด็ก — osmolality ลดเร็วเกิน) · hyperchloremic acidosis จาก NaCl ปริมาณมาก
+""",
+    ["ขั้นแรก 0.9% NaCl 15–20 mL/kg (1–1.5 ลิตร) ชั่วโมงแรก · ต่อด้วย 0.45% หรือ 0.9% ตาม corrected Na",
+     "K < 3.3 ให้ K ก่อนห้ามเริ่ม insulin · 3.3–5.2 ผสม K 20–30 mEq/L · > 5.2 เช็คทุก 2 ชม.",
+     "Insulin 0.1 U/kg/h · glucose 200 (DKA)/300 (HHS) เติม dextrose ลด insulin แต่อย่าหยุดจนกรดหาย",
+     "Bicarbonate เฉพาะ pH < 6.9 · หาย = glucose < 200 + HCO₃ ≥ 15, pH > 7.3, AG ≤ 12 (2 ใน 3)",
+     "ฉีด basal SC 1–2 ชม. ก่อนหยุด IV insulin"],
+    [mcq(N(15), "A 19-year-old with DKA (pH 7.10, glucose 520 mg/dL) has received 1 L of 0.9% saline. Serum potassium is 3.0 mEq/L. What is the most appropriate next step?",
+         ["Start an IV insulin infusion at 0.1 U/kg/h immediately", "Give IV potassium and delay insulin until potassium is at least 3.3 mEq/L", "Give sodium bicarbonate", "Start subcutaneous insulin glargine", "Withhold fluids until potassium is corrected"], 1,
+         "ใน DKA K ทั้งร่างกายพร่องอยู่แล้ว — **insulin จะดัน K เข้าเซลล์** ถ้าเริ่มตอน K 3.0 จะลดต่อจนเกิดหัวใจเต้นผิดจังหวะ จึงต้อง **ให้ K ก่อนจน ≥ 3.3** แล้วค่อยเริ่ม insulin (สารน้ำให้ต่อได้)\n\n- เริ่ม insulin ทันทีอันตราย\n- bicarbonate ใช้เฉพาะ pH < 6.9 และยิ่งทำให้ K ต่ำ\n- SC glargine ไม่ใช่การรักษาหลักของ DKA ระยะแรก\n- ไม่ควรหยุดสารน้ำ",
+         "DKA: K < 3.3 → ให้ K ก่อน ยังไม่เริ่ม insulin", "DKA treatment", ["ADA 2009 hyperglycemic crises — ไม่อยู่ในสไลด์"], [CRI, CRI1, "B9.4(2)"]),
+     mcq(N(16), "Six hours into DKA treatment, glucose is 190 mg/dL but bicarbonate is 12 mEq/L and the anion gap is 20. What should be done with the insulin infusion?",
+         ["Stop insulin because glucose is normal", "Continue insulin (reduced dose) and add dextrose to the IV fluid until the ketoacidosis resolves", "Switch to oral metformin", "Double the insulin rate", "Give bicarbonate and stop insulin"], 1,
+         "น้ำตาลลดเร็วกว่ากรด — insulin เป็นยาที่ **หยุดการสร้าง ketone** จึงต้อง **ให้ต่อจนกรดหาย** (HCO₃ ≥ 15, pH > 7.3, AG ≤ 12) โดย **ลดขนาด insulin และเติม dextrose** ในสารน้ำเพื่อไม่ให้น้ำตาลต่ำ\n\n- หยุด insulin ตอนนี้ DKA จะกลับมา\n- metformin ไม่มีบทบาทใน DKA\n- เพิ่ม insulin เป็นสองเท่าทำให้น้ำตาลต่ำ\n- bicarbonate ไม่จำเป็นที่ระดับนี้",
+         "น้ำตาลลงแล้วแต่ AG ยังกว้าง → ลด insulin + เติม dextrose ห้ามหยุด", "DKA treatment", ["ADA 2009 hyperglycemic crises — ไม่อยู่ในสไลด์"], [CRI, CRI1, "B9.4(2)"])],
+    [CRI, CRI1, "B9.4(2)", "B9.2.5(2)", DRUG],
+    {"kshift": fig("K ใน DKA — ปกติในเลือด แต่พร่องทั้งร่างกาย",
+        "ซ้าย: ขาด insulin กรด และ osmolality สูง ดึง K ออกจากเซลล์ K ในเลือดจึงดูปกติหรือสูง ขณะที่ปัสสาวะขับทิ้งไปมาก · ขวา: เมื่อให้ insulin และแก้กรด K ถูกดันกลับเข้าเซลล์ ระดับในเลือดดิ่ง — แถบล่างคือเกณฑ์ของ ADA 2009 (JBDS ของอังกฤษใช้ 3.5)",
+        F.kshift())},
+    source=SRC_ADD)
+
+# ───────────────────────────── 9
+sec("endo-dm-09", "Hypoglycemia — อาการเตือน สมองขาดน้ำตาล และ unawareness",
+    "Whipple triad · ADA level 1–3 · adrenergic vs neuroglycopenic · SU/insulin/ไตเสื่อม · กฎ 15 · glucagon", 10,
+"""> สไลด์ระบุ hypoglycemia เป็นภาวะแทรกซ้อนเฉียบพลัน และเป็นผลข้างเคียงของ **SU และ insulin** ในตารางยา — รายละเอียดเรียบเรียงจาก ADA Standards of Care
+
+### นิยาม
+**Whipple triad**: ① อาการเข้ากับน้ำตาลต่ำ ② วัดน้ำตาลได้ต่ำ ③ อาการหายเมื่อให้น้ำตาล
+| ระดับ (ADA) | เกณฑ์ |
+|---|---|
+| **Level 1** | glucose **< 70 mg/dL** (และ ≥ 54) |
+| **Level 2** | glucose **< 54 mg/dL** |
+| **Level 3** | รุนแรง — สับสนหรือหมดสติจน **ต้องมีคนช่วย** (ไม่ขึ้นกับตัวเลข) |
+
+### ร่างกายตอบสนองเป็นลำดับ
+[[fig:hypo_ladder]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก |
+|---|---|
+| **ใจสั่น มือสั่น วิตกกังวล** | ระบบ sympathetic หลั่ง **adrenaline** (adrenergic) |
+| **เหงื่อแตก หิว** | sympathetic ชนิด **cholinergic** — ยา β-blocker **บังใจสั่น/มือสั่น แต่ไม่บังเหงื่อ** |
+| **สับสน พูดไม่ชัด พฤติกรรมแปลก ชัก หมดสติ** | สมองใช้ glucose เป็นพลังงานหลักและเก็บสำรองไม่ได้ (**neuroglycopenic**) |
+| **Hypoglycemia unawareness** | น้ำตาลต่ำบ่อยทำให้เกณฑ์ที่ร่างกายหลั่ง adrenaline เลื่อนต่ำลง → สมองขาดน้ำตาลก่อนจะมีอาการเตือน · พบมากใน T1 นาน และ autonomic neuropathy · แก้ได้โดย **หลีกเลี่ยงน้ำตาลต่ำ 2–3 สัปดาห์** และผ่อนเป้าน้ำตาล |
+
+### สาเหตุในผู้ป่วยเบาหวาน
+| สาเหตุ | กลไก |
+|---|---|
+| **Insulin** · **sulfonylurea** (โดยเฉพาะ glibenclamide) | กระตุ้น insulin โดยไม่ขึ้นกับระดับน้ำตาล — SU ออกฤทธิ์ยาวและสะสมเมื่อไตเสื่อม → **น้ำตาลต่ำซ้ำนานหลายวัน** |
+| อดอาหาร/กินน้อย · ออกกำลังมาก | ความต้องการ insulin ลดแต่ขนาดยาเท่าเดิม · กล้ามเนื้อดึงน้ำตาลเองได้ขณะออกกำลัง |
+| **แอลกอฮอล์** | ยับยั้ง gluconeogenesis ของตับ |
+| **ไตเสื่อม** | insulin ถูกกำจัดช้า · ไตสร้างน้ำตาลได้น้อยลง |
+
+### การรักษา
+- **รู้สึกตัว กลืนได้**: glucose **15–20 กรัม** (น้ำหวาน/ลูกอม/glucose tablet) **ตรวจซ้ำใน 15 นาที** ถ้ายังต่ำให้ซ้ำ ("กฎ 15") แล้วตามด้วยอาหารมื้อหลัก · ผู้ที่ใช้ acarbose ต้องใช้ **glucose** (ยายับยั้งการย่อย sucrose)
+- **ไม่รู้สึกตัว**: **50% glucose 25–50 mL IV** หรือ **glucagon 1 mg IM/SC** (glucagon ใช้ไม่ได้ผลถ้า glycogen หมด เช่น ติดสุรา อดอาหารนาน)
+- **น้ำตาลต่ำจาก SU**: รับไว้ในโรงพยาบาล ให้ dextrose ต่อเนื่อง เฝ้าระวัง 24–72 ชม. (พิจารณา octreotide) — ห้ามกลับบ้านทันทีแม้ฟื้นแล้ว
+""",
+    ["Whipple triad · level 1 < 70 · level 2 < 54 · level 3 ต้องมีคนช่วย",
+     "ลำดับ: ~80 หยุดหลั่ง insulin → ~65–70 glucagon/adrenaline → ~55 อาการเตือน → < 50 สมองขาดน้ำตาล",
+     "β-blocker บังใจสั่น/มือสั่น แต่ไม่บังเหงื่อ (cholinergic)",
+     "Unawareness: เกณฑ์อาการเตือนเลื่อนลง — หลีกเลี่ยงน้ำตาลต่ำ 2–3 สัปดาห์",
+     "รักษา: กฎ 15 (15–20 g, ตรวจซ้ำ 15 นาที) · ไม่รู้สึกตัว 50% glucose หรือ glucagon 1 mg · SU → admit"],
+    [mcq(N(17), "A 74-year-old man with CKD (eGFR 25) taking glibenclamide is found confused with glucose 38 mg/dL. He wakes up after 50 mL of 50% glucose. What is the most appropriate disposition?",
+         ["Discharge home with advice to eat more", "Admit for continuous dextrose infusion and monitoring for recurrent hypoglycemia over the next 24–72 hours", "Give glucagon and discharge", "Double the glibenclamide dose but take it with food", "Switch to insulin glargine and discharge"], 1,
+         "**glibenclamide** ออกฤทธิ์ยาวและสาร/ยาสะสมเมื่อไตเสื่อม — หลังฟื้นจาก D50 น้ำตาล **จะต่ำซ้ำได้อีกหลายครั้งในวันถัด ๆ ไป** จึงต้อง **รับไว้ ให้ dextrose ต่อเนื่อง และเฝ้าระวัง 24–72 ชม.** (พิจารณา octreotide) แล้วหยุด SU\n\n- กลับบ้านทันทีอันตราย\n- glucagon ออกฤทธิ์สั้น และ SU กระตุ้น insulin ต่อ\n- เพิ่ม SU ผิดชัด\n- การเปลี่ยนยาทำหลังผ่านช่วงเสี่ยงแล้ว",
+         "SU + ไตเสื่อม + hypoglycemia = admit เฝ้าระวัง 24–72 ชม.", "Hypoglycemia", ["ADA Standards of Care — ไม่อยู่ในสไลด์ · สไลด์: SU ทำให้ hypoglycemia"], [HYPO, DRUG]),
+     mcq(N(18), "A patient with type 1 diabetes started propranolol for migraine prophylaxis. During a hypoglycemic episode, which symptom is most likely still preserved?",
+         ["Palpitations", "Tremor", "Sweating", "Anxiety", "Tachycardia"], 2,
+         "**เหงื่อ** ในภาวะน้ำตาลต่ำเกิดจาก sympathetic ชนิด **cholinergic** (acetylcholine ที่ต่อมเหงื่อ) β-blocker จึงไม่บัง — ส่วน **ใจสั่น มือสั่น ชีพจรเร็ว วิตกกังวล** เป็นผลของ adrenaline ผ่าน β receptor จึงถูกบังได้ ทำให้ผู้ป่วยรู้ตัวช้า\n\nสอนผู้ป่วยที่ใช้ β-blocker ว่า **เหงื่อแตกโดยไม่มีเหตุ = ให้เจาะน้ำตาล**",
+         "β-blocker บัง adrenergic แต่ไม่บังเหงื่อ (cholinergic)", "Hypoglycemia", ["หลักสรีรวิทยา — ไม่ได้อยู่ในสไลด์"], [HYPO])],
+    [HYPO, DRUG, "3.1.17", "B11.3(1)"],
+    {"hypo_ladder": fig("เมื่อน้ำตาลลดลง ร่างกายตอบสนองเป็นลำดับ",
+        "ราว **80** ตับอ่อนหยุดหลั่ง insulin → **65–70** glucagon และ adrenaline หลั่ง → **55–60** อาการเตือน (adrenergic) → **< 50** สมองขาดน้ำตาล → **~30** ชัก หมดสติ (ตัวเลขโดยประมาณตามสรีรวิทยา) · ลูกศรประ: ผู้ที่น้ำตาลต่ำบ่อย เกณฑ์อาการเตือนเลื่อนลงจนสมองขาดน้ำตาลก่อนรู้ตัว",
+        F.hypo_ladder())},
+    source="ADA Standards of Care · Cryer (ไม่อยู่ในสไลด์)")
+
+# ───────────────────────────── 10
+sec("endo-dm-10", "Diabetic retinopathy — จาก microaneurysm ถึงหลอดเลือดใหม่ที่เปราะ",
+    "pericyte หาย → รั่ว → macular edema · ขาดเลือด → VEGF → PDR · ตรวจตา T2 ตั้งแต่วินิจฉัย T1 หลัง 5 ปี", 9,
+"""### ปัจจัยเสี่ยงของภาวะแทรกซ้อนหลอดเลือดเล็ก (สไลด์)
+ระยะเวลาที่เป็นเบาหวาน · น้ำตาลสูง · **ความดันสูง** · ประวัติครอบครัว
+
+### Retinopathy (สไลด์)
+- การเปลี่ยนแปลงจำเพาะของหลอดเลือดเล็กที่จอตา
+- **ราว 20% ของผู้ป่วยเบาหวานรายใหม่มี retinopathy แล้วตอนวินิจฉัย**
+- แบ่งเป็น **non-proliferative (NPDR)** และ **proliferative (PDR)**
+
+[[fig:retina]]
+
+#### ทำไมถึงมีอาการนี้
+| สิ่งที่เห็น | กลไก | ผลต่อการมองเห็น |
+|---|---|---|
+| **Microaneurysm** | น้ำตาลสูงทำลาย **pericyte** ที่ค้ำผนังหลอดเลือดฝอย ผนังอ่อนแอโป่งออก | ไม่มีอาการ |
+| **จุดเลือด (dot–blot hemorrhage)** | ผนังที่โป่งแตก เลือดออกในชั้นลึกของจอตา | ไม่มีอาการ |
+| **Hard exudate** | ผนังรั่ว ไขมันและโปรตีนตกค้าง | ถ้าอยู่ที่ macula ตามัว |
+| **Macular edema** | น้ำรั่วสะสมที่ **macula** (จุดรับภาพชัด) | **ตามัว** ได้แม้เป็นแค่ NPDR — สไลด์: NPDR ไม่ทำให้ตามัวเว้นแต่ macula เสีย |
+| **หลอดเลือดใหม่ (neovascularization)** | หลอดเลือดฝอยปิด จอตา **ขาดเลือด** → หลั่ง **VEGF** → หลอดเลือดใหม่งอก ซึ่ง **เปราะ** | — |
+| **เลือดออกในวุ้นตา · จอตาลอก** | หลอดเลือดใหม่แตก · พังผืดที่งอกตามดึงจอตา | **ตามัวทันที เห็นเงาดำ** — สูญเสียการมองเห็น |
+
+### รักษาและป้องกัน (สไลด์)
+- **Laser** — หยุดหลอดเลือดงอก ป้องกันเลือดออก **แต่ไม่คืนการมองเห็นที่เสียไป** (หลักการ: ทำลายจอตาส่วนที่ขาดเลือดเพื่อลด VEGF)
+- คุมน้ำตาลเข้มงวด **HbA1c < 6.5–7%** · คุมความดันให้ปกติ
+- ปัจจุบัน **ยาฉีดเข้าวุ้นตา anti-VEGF** เป็นหลักของ macular edema และใช้ใน PDR (ไม่อยู่ในสไลด์)
+
+### ตรวจคัดกรอง (สไลด์)
+| ชนิด | เริ่มตรวจตา | จากนั้น |
+|---|---|---|
+| **Type 2** | **ตั้งแต่วินิจฉัย** | ทุกปี |
+| **Type 1** | **5 ปีหลังวินิจฉัย** | ทุกปี |
+ตรวจถี่ขึ้นถ้า retinopathy กำลังแย่ลง · T2 ต้องตรวจทันทีเพราะเป็นมาหลายปีก่อนรู้ตัว ส่วน T1 รู้วันเริ่มโรคชัดเจน
+""",
+    ["Risk factors micro: duration · hyperglycemia · HT · family history · 20% มี retinopathy ตอนวินิจฉัย",
+     "NPDR: microaneurysm (pericyte หาย) · dot-blot · exudate · macular edema (ตามัวได้)",
+     "PDR: ขาดเลือด → VEGF → หลอดเลือดใหม่เปราะ → เลือดออกในวุ้นตา จอตาลอก",
+     "Laser หยุดหลอดเลือดงอก ไม่คืนการมองเห็น · คุม A1c < 6.5–7 + BP · ปัจจุบันมี anti-VEGF",
+     "ตรวจตา: T2 ตั้งแต่วินิจฉัย · T1 หลัง 5 ปี · แล้วทุกปี"],
+    [mcq(N(19), "Which mechanism directly drives the formation of new fragile vessels in proliferative diabetic retinopathy?",
+         ["Loss of pericytes causing microaneurysms", "Retinal ischemia from capillary closure stimulating VEGF release", "Lipid deposition forming hard exudates", "Osmotic swelling of the lens", "Increased intraocular pressure"], 1,
+         "หลอดเลือดฝอยปิดทำให้ **จอตาขาดเลือด** เซลล์ที่ขาดออกซิเจนหลั่ง **VEGF** กระตุ้นให้หลอดเลือดใหม่งอก ซึ่งเปราะและแตกง่าย = **PDR** (นี่คือเหตุผลที่ laser และ anti-VEGF ได้ผล)\n\n- **pericyte หาย** ทำให้เกิด microaneurysm ซึ่งเป็นระยะ NPDR\n- **hard exudate** เป็นผลของการรั่ว\n- เลนส์บวมทำให้ค่าสายตาเปลี่ยน\n- ความดันตาสูงไม่ใช่กลไกนี้ (แต่ neovascular glaucoma เป็นผลตามมาได้)",
+         "PDR = ขาดเลือด → VEGF → หลอดเลือดใหม่", "Retinopathy", R("Proliferative retinopathy"), ["2.3.7-3(7)", "B3.2.10-3(3)"]),
+     mcq(N(20), "When should retinal screening start in a 12-year-old diagnosed with type 1 diabetes today, compared with a 50-year-old diagnosed with type 2 diabetes today?",
+         ["Both at diagnosis", "Type 1: 5 years after diagnosis; type 2: at diagnosis", "Type 1: at diagnosis; type 2: after 5 years", "Both after 5 years", "Only when visual symptoms appear"], 1,
+         "สไลด์: **T2 ตรวจตาตั้งแต่วินิจฉัย** แล้วทุกปี (เพราะมักเป็นมาหลายปีก่อนรู้ตัว ~20% มี retinopathy แล้ว) · **T1 เริ่มตรวจ 5 ปีหลังวินิจฉัย** แล้วทุกปี (เริ่มโรคชัดเจน retinopathy ต้องใช้เวลา)\n\n- รอให้มีอาการไม่ได้ เพราะ NPDR ไม่มีอาการ",
+         "ตรวจตา: T2 ตั้งแต่วินิจฉัย · T1 หลัง 5 ปี", "Retinopathy screening", R("Screening diabetic retinopathy"), ["2.3.7-3(7)", DM])],
+    ["2.3.7-3(7)", "B3.2.10-3(3)", DM],
+    {"retina": fig("จอประสาทตาในเบาหวาน — 4 ระยะ",
+        "**ปกติ** · **NPDR** microaneurysm จุดเลือด exudate ยังมองเห็นปกติ · **macular edema** น้ำรั่วรอบ macula ทำให้ตามัวแม้ยังไม่ถึง PDR · **PDR** หลอดเลือดใหม่ (เส้นหยัก) เปราะ แตกเป็นเลือดออกก้อนใหญ่ (ภาพวาดเชิงหลักการ — ภาพจอตาจริงอยู่ในสไลด์)",
+        F.retina())})
+
 # ═══════════════════════════ END SECTIONS
