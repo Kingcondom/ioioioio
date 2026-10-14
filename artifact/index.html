@@ -85,6 +85,11 @@ a{color:var(--accent-ink)}
 @media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
 aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
+/* ปุ่มซ่อนแถบเมนู — พับเหลือแถวเดียว (จำไว้ในเครื่องนี้) */
+.mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
+.mast.min .wrap{padding-block:8px}
+#mastBtn{padding:6px 13px}
+@media (max-width:560px){.brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 @media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
 .panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow)}
 .outline{padding:12px 12px 14px}
@@ -249,6 +254,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
     <div class="ring" id="ring"></div>
     <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
+    <button class="btn" id="mastBtn" aria-expanded="true" title="ซ่อนแถบเมนู">ซ่อนเมนู ▴</button>
   </div>
 </header>
 
@@ -843,8 +849,19 @@ function firstUnfinished(){
 }
 
 /* ---------- events ---------- */
+function setMast(min){
+  var m=document.querySelector('.mast'),b=document.getElementById('mastBtn');
+  m.classList.toggle('min',min);b.setAttribute('aria-expanded',min?'false':'true');
+  b.textContent=min?'เมนู ▾':'ซ่อนเมนู ▴';b.title=min?'แสดงแถบเมนู':'ซ่อนแถบเมนู';
+}
+try{setMast(localStorage.getItem('med421-learn-mast')==='min');}catch(e){}
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
+  if(t.id==="mastBtn"){
+    var min=!document.querySelector('.mast').classList.contains('min');setMast(min);
+    try{localStorage.setItem('med421-learn-mast',min?'min':'');}catch(e2){}
+    return;
+  }
   if(t.id==="themeBtn"){
     var cur=document.documentElement.getAttribute("data-theme");
     var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
