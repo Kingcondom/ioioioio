@@ -1,6 +1,35 @@
+> ## ⚠️ อ่านก่อน — เอกสารนี้ตกรุ่นแล้ว (ตรวจเมื่อ 2026-10-14)
+>
+> เอกสารนี้เขียนขึ้นเมื่อ 2026-09-19 และบรรยายสถานะของ branch
+> `claude/lecture-artifact-integration-5plhhc` เท่านั้น ซึ่ง **ไม่ใช่** ต้นทางของ
+> artifact ที่ใช้งานจริงอยู่ตอนนี้ **อย่าเริ่มงานใหม่จาก branch นี้**
+>
+> **ต้นทางจริงของ `learn` artifact** คือไฟล์ `artifact/index.html` บน branch
+> **`claude/bold-euler-ok3iv7`** (commit `644c5ab`) ซึ่งถูก merge เข้า
+> `claude/add-today-blougl` (`7cca2c1`) แล้ว — ตรวจแล้วว่าไฟล์ตรงกับที่ publish อยู่
+> แบบ byte-identical
+>
+> **สิ่งที่ branch นั้นมีแต่ branch นี้ไม่มี**
+>
+> | | branch นี้ (ตกรุ่น) | ต้นทางจริง |
+> |---|---|---|
+> | รูปแบบ artifact | ไฟล์เดียว 1.7 MB | **12 ไฟล์** — `index.html` + JSON 11 ไฟล์ รวม ~6 MB โหลดแบบ lazy |
+> | ชุดที่มีบทเรียน | air · cardio · chest · nephro · neuro | เพิ่ม **endo · gi · hemonc · id** |
+> | `data/nl.json` | ไม่มี (รหัส นล. ขาดเป็น open item) | **483 KB** — มีรหัสเต็ม พร้อมกลุ่ม 1-2/3 และเลขหน้า |
+> | บันทึกความคืบหน้า | localStorage เครื่องเดียว | **ซิงก์เข้าบัญชี** (capability `db` + `user`) |
+> | หน้า "คาบเรียน" | ไม่มี | การ์ดทุกคาบ + ลิงก์ตรง `#gi-27.10` |
+> | แผนภาพ SVG ในบทเรียน | ไม่มี | มี (`[[fig:key]]` + `section.figs`) |
+> | ปุ่มซ่อนแถบเมนู | ไม่มี | มี (`.mast.min`, จำค่าใน localStorage) |
+>
+> ตัวเลขคลังข้อสอบ ตารางบทเรียน และ open items ในหัวข้อ 2–7 ข้างล่างนี้
+> จึงเป็นของ branch ที่ตกรุ่น และ **ต่ำกว่าความจริง** ให้ยึดจากต้นทางจริงแทน
+>
+> ส่วนที่ยังใช้ได้อยู่คือหัวข้อ **5 (กฎที่ห้ามผิด)** และ **8 (ข้อตกลงเรื่อง git)**
+> เพราะเป็นข้อตกลงของโปรเจกต์ ไม่ใช่สถานะของไฟล์
+
 # HANDOFF — สถานะโปรเจกต์ MED421 study kit
 
-อัปเดตล่าสุด: 2026-09-19 · branch `claude/lecture-artifact-integration-5plhhc` · commit ล่าสุด `0c5dde0`
+เขียนเมื่อ: 2026-09-19 · branch `claude/lecture-artifact-integration-5plhhc` · commit ล่าสุดของ branch นี้ `79b5b9a`
 
 ---
 
