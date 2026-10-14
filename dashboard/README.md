@@ -125,6 +125,10 @@ python3 dashboard/build_nl.py <learn data dir> <drill bank.json> <library items.
 - `extra_lessons.tsv` = บทข้างเตียงที่ยังไม่อยู่ในห้องสมุด (`ชื่อ<TAB>artifact id[<TAB>หัวข้อที่แตะ]`)
 
 สคริปต์เขียน `nl_data.json` และฝังลง `<script id="nldata">` ใน `index.html` ให้เอง แล้ว publish `index.html` ทับ URL เดิม
+ผล 14 ต.ค. 2569 (learn มีบท Diabetes mellitus 14/10 · สไลด์ "2026 Diabetes lecture Student.pdf")
+- บทเรียน: มีบทเรียน 281 · แตะบางส่วน 27 · ยังไม่มี 13 → ครอบคลุม 92% · คลังข้อสอบ 3,197 ข้อ ถามตรง 93%
+- แผนเติม NL: ช่องโหว่เหลือ 40 หัวข้อ · A12 มีบท Learn แล้ว
+
 ผล 13 ต.ค. 2569 (รอบอัปเดตเย็น · learn มีบทใหม่ UTI, Approach to glomerular disease, WBC disorder, Essential Renal Imaging)
 - บทเรียน: มีบทเรียน 278 · แตะบางส่วน 29 · ยังไม่มี 14 → ครอบคลุม 91% (ก่อนรวม Salmon NL: 179 · 82 · 60 = 69%)
 - คลังข้อสอบ 3,166 ข้อ (Ward Drill ใหม่ 420 · คลังเก่า 723 · Mock NL 200 · ข้อเช็คใน Learn ที่ไม่ซ้ำ 517 ·
