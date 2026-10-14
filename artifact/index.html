@@ -86,18 +86,13 @@ a{color:var(--accent-ink)}
 @media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
 aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
-@media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
-
-/* ---------- แถบด้านบนแบบย่อได้ ---------- */
-.mastbtn{flex:0 0 auto;padding-inline:12px}
-/* ชื่อเรื่องต้องย่อด้วย ... ไม่ใช่ดันปุ่มตกลงไปอีกแถว */
-.mast .brand{flex:1 1 0;min-width:0}
-.mast .brand>*{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.mast.min .wrap{padding-block:8px}
+/* ปุ่มซ่อนแถบเมนู — พับเหลือแถวเดียว (จำไว้ในเครื่องนี้) */
 .mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
-.mast.min ~ .cols aside{top:50px}
-.mast.min ~ .cols{padding-top:14px}
-
+.mast.min .wrap{padding-block:8px}
+#mastBtn{padding:6px 13px}
+/* ปุ่มอยู่แถวเดียวกับชื่อเรื่องทุกความกว้าง ไม่ให้กินแถวเพิ่มบนจอกว้าง */
+.brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
 .panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow)}
 .outline{padding:12px 12px 14px}
 .outline h4{font-size:12px;font-family:var(--sans);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:10px 6px 6px}
@@ -256,12 +251,12 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 <header class="mast">
   <div class="wrap">
     <div class="brand"><b id="brandTitle">MED421</b><span id="brandSub"></span></div>
-    <button class="btn mastbtn" id="mastBtn" aria-expanded="true" title="ซ่อนหรือแสดงแถบด้านบน">ซ่อนแถบ ▴</button>
     <div class="tabs" id="courseTabs"></div>
     <div class="tabs" id="tabs"></div>
     <div class="ring" id="ring"></div>
     <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
+    <button class="btn" id="mastBtn" aria-expanded="true" title="ซ่อนแถบเมนู">ซ่อนเมนู ▴</button>
   </div>
 </header>
 
@@ -341,25 +336,6 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}i
 /* ---------- บันทึกความคืบหน้าในบัญชี (capability db + user) ----------
    data/users/<id>/learn = {done, ans, rate} · data/users/<id>/learn-notes = {notes}
    SYNC.sent = สิ่งที่อยู่ในบัญชีล่าสุดที่รู้ · meta.cloud = เครื่องนี้เคยซิงก์แล้ว · meta.pend = มีของในเครื่องที่ยังไม่ได้อัปโหลด */
-/* แถบด้านบนย่อไว้หรือไม่ — เก็บแยกใน localStorage ของเครื่องนี้ ไม่ปนกับความคืบหน้าที่ซิงก์ขึ้นบัญชี */
-var MINKEY=KEY+":mastmin";
-function mastApply(min){
-  var h=document.querySelector(".mast"),b=document.getElementById("mastBtn");
-  if(h)h.classList.toggle("min",!!min);
-  if(b){b.setAttribute("aria-expanded",min?"false":"true");b.textContent=min?"เมนู ▾":"ซ่อนแถบ ▴";}
-}
-function mastInit(){
-  var min=false;
-  try{min=localStorage.getItem(MINKEY)==="1";}catch(e){}
-  mastApply(min);
-}
-function mastToggle(){
-  var h=document.querySelector(".mast"),min=!(h&&h.classList.contains("min"));
-  mastApply(min);
-  try{localStorage.setItem(MINKEY,min?"1":"0");}catch(e){}
-}
-mastInit();
-
 var MKEY=KEY+":sync";
 var SYNC={mode:"local",refs:null,uid:"",busy:{p:0,n:0},timer:null,first:{p:1,n:1},sent:{p:"",n:""},err:"",later:false,meta:{cloud:false,pend:false,uid:""}};
 try{var mm=JSON.parse(localStorage.getItem(MKEY)||"{}");SYNC.meta.cloud=!!mm.cloud;SYNC.meta.pend=!!mm.pend;SYNC.meta.uid=typeof mm.uid==="string"?mm.uid:"";}catch(e){}
@@ -875,9 +851,19 @@ function firstUnfinished(){
 }
 
 /* ---------- events ---------- */
+function setMast(min){
+  var m=document.querySelector('.mast'),b=document.getElementById('mastBtn');
+  m.classList.toggle('min',min);b.setAttribute('aria-expanded',min?'false':'true');
+  b.textContent=min?'เมนู ▾':'ซ่อนเมนู ▴';b.title=min?'แสดงแถบเมนู':'ซ่อนแถบเมนู';
+}
+try{setMast(localStorage.getItem('med421-learn-mast')==='min');}catch(e){}
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
-  if(t.id==="mastBtn"){mastToggle();return;}
+  if(t.id==="mastBtn"){
+    var min=!document.querySelector('.mast').classList.contains('min');setMast(min);
+    try{localStorage.setItem('med421-learn-mast',min?'min':'');}catch(e2){}
+    return;
+  }
   if(t.id==="themeBtn"){
     var cur=document.documentElement.getAttribute("data-theme");
     var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
