@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 13 ต.ค. 2569 · รอบที่ 6)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 14 ต.ค. 2569 · รอบที่ 7)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -51,7 +51,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 ---
 
 > **เริ่ม session ใหม่:** ถ้า branch ที่ได้รับมอบหมายยังไม่มีงานล่าสุด ให้ `git fetch origin` แล้ว merge
-> `origin/claude/bold-euler-ok3iv7` (ล่าสุด 13 ต.ค. · Version 21) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
+> `origin/claude/bold-euler-ok3iv7` (ล่าสุด 14 ต.ค. · Version 24) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
 > `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
 > (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
 
@@ -68,11 +68,14 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 21** · มี **9 ชุดวิชา** · 30 คาบ)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 24** · มี **9 ชุดวิชา** · 31 คาบ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
-> คาบที่มีภาพแล้ว: nephro 14 (19 ภาพ) · nephro 30 (20) · nephro Imaging (24) · hemonc 12/10 (17) — คาบเก่า 26 คาบยังไม่มีภาพ (เติมได้ถ้าผู้ใช้ขอ)
+> คาบที่มีภาพแล้ว: nephro 14 (19 ภาพ) · nephro 30 (20) · nephro Imaging (24) · hemonc 12/10 (17) · endo 14/10 (22) — คาบเก่า 26 คาบยังไม่มีภาพ (เติมได้ถ้าผู้ใช้ขอ)
+>
+> 👤 **Version 22–23 มาจาก session dashboard (`claude/intelligent-brown-xj38me`)**: v22 บันทึกความคืบหน้าในบัญชี (`patch_learn_sync.py` · capability `db`+`user` — **ห้าม publish โดยส่ง `capabilities` ที่ไม่มีสองตัวนี้**) · v23 แท็บ "คาบเรียน" (`patch_learn_lectures.py`)
+> repo ซิงก์ `artifact/index.html` กับหน้าเว็บ v23 แล้ว (commit 53491e2) — แก้หน้าเว็บต่อจากไฟล์นี้ได้เลย
 >
 > 🔗 **index.html บนเว็บมีโค้ด deep link** (`#<ชุด>-<คาบ>` จาก Lecture Dashboard · `patch_deeplinks.py` ใน branch `claude/intelligent-brown-xj38me`) — รวมเข้า repo แล้ว (Version 21)
 > `compare_live.py` เทียบ index.html ด้วยแล้ว (ถอด wrapper ของบริการ) → **ต้อง read `index.html` มาเทียบทุกครั้งก่อน publish index.html**
@@ -99,7 +102,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 │   │   ├── nephro.json (1)    neuro.json (5)
 │   │   ├── endo.json (2)
 │   │   └── id.json (1)        ← ชุดใหม่ 2 ต.ค. (build_sepsis.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
-│   └── tools/                 ← (13 ต.ค.) build_glomerular.py + figs_glomerular.py · build_uti.py · build_renalimg.py · build_wbc.py ·
+│   └── tools/                 ← (14 ต.ค.) build_diabetes.py + figs_diabetes.py · (13 ต.ค.) build_glomerular.py + figs_glomerular.py · build_uti.py · build_renalimg.py · build_wbc.py ·
 │                                 svg.py (ตัวช่วยวาดภาพ) · preview_figs.py (ดูภาพก่อนใส่) ·
 │                                 build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
 │                                 build_ihd.py · build_lp.py · build_mets.py · build_rfpleural.py ·
@@ -171,6 +174,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
 | neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
 | endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
+| endo | 14/10 | Diabetes mellitus (Inc. DKA) ← ศ.นพ.ชัยชาญ · พ. 14 ต.ค. (15 หัวข้อ · 31 MCQ + MOCK-124/188–192 · MEQ DKA รายแรกของ T1 · OSCE ตรวจเท้าเบาหวาน · **22 ภาพ**) — **สไลด์ไม่มี DKA/HHS/hypoglycemia** → หัวข้อ 7–9 อิง ADA 2024 consensus + ADA 2009 + ADA SoC · KDIGO 2022 DM-CKD · IWGDF 2023 · ไม่มีคลัง Ward Drill (ชุด Endo) |
 | endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
 | id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
 | id | 5/10 | AIDS and HIV infection ← พ.ญ.มนัสวี · จ. 5 ต.ค. (13 หัวข้อ · 27 MCQ · MEQ PCP/advanced HIV · OSCE pre-test counselling) — สไลด์ส่วนตาราง (WHO staging, สูตรยา, OI prophylaxis, crypto Rx) เป็นภาพ → อิงแนวทางไทย 2025/WHO และระบุในบทเรียน · ไม่มีข้อในคลัง Ward Drill |
@@ -242,6 +246,8 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ---
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
+
+**รอบ 14 ต.ค. (โฟลเดอร์เดิม)** — ✅ v24 · 2026 Diabetes lecture Student (ศ.นพ.ชัยชาญ) `1FB1Oe9v_DWc46H1Y37gi7Gu1ZbPcWdtH` → endo 14/10 · โน้ต `slides/diabetes_notes.md` · ข้อความครบ ภาพ/กราฟอ่านไม่ได้
 
 **รอบ 13 ต.ค. (โฟลเดอร์เดิม `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` · ผู้ใช้เพิ่ม 4 ไฟล์)** — ✅ v21 · ทำพร้อมกันด้วย subagent 3 ตัวใน git worktree แล้ว merge
 - Lec11 Approach to glomerular disease (พญ.ฉันทิศา) `1R5f1MtTJIlwCUeomxvcBD10MKpDzYob4` → nephro 14 · โน้ต `slides/glomerular_notes.md` · ข้อความครบ ภาพอ่านไม่ได้

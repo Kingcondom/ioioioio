@@ -339,3 +339,4 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
 | Lec5 UTI_4thRSU2026.pdf (อ.กรทิพย์) | `1OeevfDxn_c6H3iLUw6nXIjPOv6DPHawD` | ⚠️ สไลด์ภาพล้วนบางหน้าอ่านไม่ได้ | nephro คาบ 30 · โน้ต `uti_notes.md` |
 | Lec19 Essential Renal Imaging (handout).pdf (อ.ธนิศร) | `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` | ⚠️ อ่านได้แต่คำบรรยายภาพ | nephro คาบ Imaging · โน้ต `renalimg_notes.md` |
 | Lec22 Approach to WBC disorder and lymphadenopathy.pdf (อ.เบญจมาภรณ์) | `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` | ✅ เรนเดอร์ครบ 66 หน้า + ลายมือ | hemonc คาบ 12/10 · โน้ต `wbc_notes.md` |
+| 2026 Diabetes lecture Student.pdf (ศ.นพ.ชัยชาญ · 14 ต.ค.) | `1FB1Oe9v_DWc46H1Y37gi7Gu1ZbPcWdtH` | ✅ ข้อความครบ · ไม่มีสไลด์ DKA/HHS | endo คาบ 14/10 · โน้ต `diabetes_notes.md` |
