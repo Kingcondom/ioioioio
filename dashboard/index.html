@@ -592,6 +592,10 @@ a.act:hover{filter:brightness(1.07)}
 .ovl-codes em i.tB{background:var(--lav);color:var(--lav-ink)}
 .ovl-fn{margin:6px 0 0;font-size:11.5px;color:var(--ink-3)}
 .ovl .shr{font-style:normal;color:var(--lav-ink)}
+.ovl li .ln{display:block;margin-top:1px}
+.ovl li .ln.go{color:var(--ink)}
+.ovl li .ln.lst{color:var(--ink-3);font-size:12.5px}
+.ovl li .nm{display:block}
 .lb-list a .tg{font-size:10.5px;font-weight:700;border-radius:5px;padding:0 5px;margin-right:6px;background:var(--lav);color:var(--lav-ink)}
 .libbox.sal .lb-list a .tg{background:color-mix(in srgb,var(--accent) 16%,var(--card));color:var(--accent)}
 footer{max-width:1360px;margin:0 auto;padding:4px 32px 34px;color:var(--ink-3);font-size:12.5px;line-height:1.7}
@@ -1117,35 +1121,41 @@ function nlList(cs,max){max=max||6;var t=cs.slice(0,max).map(nlName).join(", ");
 /* คาบอื่นที่ลิงก์บทเดียวกัน — อ่านครั้งเดียวนับได้ทุกคาบ */
 function sharedWith(l,x){
   var o=LECS.filter(function(m){return m!==l&&(x.k==="S"?(m.sal||[]).indexOf(x.id)>=0:x.k==="B"?(m.more||[]).some(function(q){return q[1]===x.id;}):false);});
-  return o.length?" · <i class='shr'>บทเดียวกับคาบ "+o.map(function(m){return esc(dshort(m.d)+" "+clip(m.title,28));}).join(", ")+" อ่านครั้งเดียวนับได้ทุกคาบ</i>":"";
+  return o.length?"<i class='shr'>บทเดียวกับคาบ "+o.map(function(m){return esc(dshort(m.d)+" "+clip(m.title,28));}).join(", ")+" อ่านครั้งเดียวนับได้ทุกคาบ</i>":"";
 }
 function overlapNote(l){
+  /* แต่ละข้อ: ชื่อบรรทัดแรก แล้วรายละเอียดแยกบรรทัดละเรื่อง (ไม่ต่อกันด้วย ·) */
+  var ln=function(t,cls){return "<span class='ln"+(cls?" "+cls:"")+"'>"+t+"</span>";};
   var all=readSources(l),ss=all.filter(function(x){return x.codes.length;});
   var h="<div class='ovl'><h4>หมายเหตุ · ต้องอ่านครบทุกอันไหม</h4><ul>";
-  if(!ss.length)return h+"<li>ยังไม่มีบทอ่านของคาบนี้ที่เทียบกับ NL ได้ · ใช้สไลด์อาจารย์และ Drill</li></ul></div>";
+  if(!ss.length)return h+"<li><b>ยังไม่มีบทอ่านที่เทียบกับ NL ได้</b>"+ln("ใช้สไลด์อาจารย์และ Drill")+"</li></ul></div>";
   var core=ss[0].k==="L"?[ss[0]]:ss.filter(function(x){return x.k==="S";});if(!core.length)core=[ss[0]];
   var cs={},un={};core.forEach(function(x){x.codes.forEach(function(c){cs[c]=1;});});
   ss.forEach(function(x){x.codes.forEach(function(c){un[c]=1;});});
   var coreCodes=Object.keys(cs),uni=Object.keys(un),must=core.slice(),rows="";
   ss.filter(function(x){return core.indexOf(x)<0;}).forEach(function(x){
     var dup=x.codes.filter(function(c){return cs[c];}),add=x.codes.filter(function(c){return !cs[c];});
-    var only=add.filter(function(c){return !taughtElsewhere(c,x);}),v,pre=dup.length?"ซ้ำกับบทหลัก "+dup.length+" หัวข้อ · ":"";
-    if(!add.length)v="ซ้ำกับบทหลักทั้ง "+dup.length+" หัวข้อ · <b>ข้ามได้</b> ใช้ทวนหรือทำข้อท้ายบท";
-    else if(only.length){must.push(x);v=pre+"<b>ควรอ่านเพิ่ม</b> เพราะมี "+nlList(only)+" ที่บท Learn และ Salmon อื่นไม่ได้สอน";}
-    else v=pre+"เพิ่ม "+nlList(add,4)+" ซึ่งเป็นเรื่องที่มีบทหลักอื่นสอนแล้ว (เช่น "+esc(nlName(add[0]))+" อยู่ใน "+esc(clip(taughtElsewhere(add[0],x),48))+") · <b>ข้ามได้</b>";
-    rows+="<li>["+x.tag+"] "+esc(x.name)+" — "+v+sharedWith(l,x)+"</li>";
+    var only=add.filter(function(c){return !taughtElsewhere(c,x);}),v="";
+    if(dup.length)v+=ln("ซ้ำกับบทหลัก "+dup.length+" หัวข้อ");
+    if(!add.length)v+=ln("→ <b>ข้ามได้</b> ใช้ทวนหรือทำข้อท้ายบท","go");
+    else if(only.length){must.push(x);
+      v+=ln("เพิ่ม: "+nlList(only))+ln("→ <b>ควรอ่านเพิ่ม</b> เรื่องนี้บท Learn และ Salmon อื่นไม่ได้สอน","go");}
+    else v+=ln("เพิ่ม: "+nlList(add,4))+ln("เรื่องที่เพิ่มมีบทอื่นสอนแล้ว เช่น "+esc(nlName(add[0]))+" อยู่ใน "+esc(clip(taughtElsewhere(add[0],x),48)))+
+      ln("→ <b>ข้ามได้</b>","go");
+    var sh=sharedWith(l,x);if(sh)v+=ln(sh,"shr");
+    rows+="<li><b class='nm'>["+x.tag+"] "+esc(x.name)+"</b>"+v+"</li>";
   });
   all.filter(function(x){return !x.codes.length;}).forEach(function(x){
-    rows+="<li>["+x.tag+"] "+esc(x.name)+" — ไม่ได้ตั้งชื่อตรงหัวข้อ NL ไหน เป็นบทเสริมข้างเตียง · ข้ามได้ถ้าเวลาน้อย</li>";});
+    rows+="<li><b class='nm'>["+x.tag+"] "+esc(x.name)+"</b>"+ln("ไม่ได้ตั้งชื่อตรงหัวข้อ NL ไหน เป็นบทเสริมข้างเตียง")+ln("→ <b>ข้ามได้</b> ถ้าเวลาน้อย","go")+"</li>";});
   var nRead=all.length;
-  h+="<li>"+(must.length<nRead?"<b>ไม่ต้องอ่านครบ</b> — บทอ่าน "+nRead+" อันของคาบนี้แตะ NL รวม "+uni.length+" หัวข้อ แต่ซ้ำกันอยู่ อ่าน "+must.length+" อันก็ครบ"
-      :"<b>อ่านทุกอัน</b> — บทอ่าน "+nRead+" อันของคาบนี้สอนคนละเรื่อง แตะ NL รวม "+uni.length+" หัวข้อ")+"</li>";
-  h+="<li><b>อ่านหลัก: "+core.map(function(x){return "["+x.tag+"] "+esc(x.name);}).join(" + ")+"</b> — ครอบคลุม "+coreCodes.length+" หัวข้อ: "+nlList(coreCodes)+
-    (core[0].k!=="L"?" (คาบนี้ยังไม่มีบท Learn)":"")+"</li>"+rows;
-  if(l.drill)h+="<li><b>Drill</b> = ฝึกทำข้อสอบเรื่องเดียวกัน ไม่ใช่บทอ่าน · ทำหลังอ่านบทหลักเพื่อเช็กความเข้าใจ</li>";
-  if(l.sl)h+="<li><b>สไลด์อาจารย์</b> = ใช้ทวนสอบลงกอง (ออกจากคาบนี้) ไม่ได้นับกับ NL</li>";
-  h+="<li class='sum'><b>สรุป</b> — ให้ครบ NL ของคาบนี้ อ่าน "+must.map(function(x){return "["+x.tag+"]";}).join(" + ")+" ก็พอ"+
-    (must.length<nRead?" · ที่เหลือเป็นตัวเสริมหรือใช้ทวน":"")+"</li></ul>";
+  h+="<li>"+(must.length<nRead?"<b>ไม่ต้องอ่านครบ</b>"+ln("บทอ่าน "+nRead+" อันของคาบนี้แตะ NL รวม "+uni.length+" หัวข้อ แต่ซ้ำกันอยู่")+ln("อ่าน "+must.length+" อันก็ครบ")
+      :"<b>อ่านทุกอัน</b>"+ln("บทอ่าน "+nRead+" อันของคาบนี้สอนคนละเรื่อง แตะ NL รวม "+uni.length+" หัวข้อ"))+"</li>";
+  h+="<li><b class='nm'>อ่านหลัก: "+core.map(function(x){return "["+x.tag+"] "+esc(x.name);}).join(" + ")+"</b>"+
+    ln("ครอบคลุม "+coreCodes.length+" หัวข้อ"+(core[0].k!=="L"?" (คาบนี้ยังไม่มีบท Learn)":""))+ln(nlList(coreCodes),"lst")+"</li>"+rows;
+  if(l.drill)h+="<li><b>Drill</b>"+ln("ฝึกทำข้อสอบเรื่องเดียวกัน ไม่ใช่บทอ่าน")+ln("ทำหลังอ่านบทหลักเพื่อเช็กความเข้าใจ")+"</li>";
+  if(l.sl)h+="<li><b>สไลด์อาจารย์</b>"+ln("ใช้ทวนสอบลงกอง (ออกจากคาบนี้)")+ln("ไม่ได้นับกับ NL")+"</li>";
+  h+="<li class='sum'><b>สรุป</b>"+ln("ให้ครบ NL ของคาบนี้ อ่าน "+must.map(function(x){return "["+x.tag+"]";}).join(" + ")+" ก็พอ")+
+    (must.length<nRead?ln("ที่เหลือเป็นตัวเสริมหรือใช้ทวน"):"")+"</li></ul>";
   h+="<details><summary>ดูทีละหัวข้อ NL ว่าอยู่ในบทไหน</summary><div class='ovl-codes'>"+uni.sort(function(a,b){
       var na=ss.filter(function(x){return x.codes.indexOf(a)>=0;}).length,nb=ss.filter(function(x){return x.codes.indexOf(b)>=0;}).length;return nb-na;}).map(function(c){
     return "<span><code>"+esc(c)+"</code><span>"+esc(nlName(c))+"</span><em>"+ss.filter(function(x){return x.codes.indexOf(c)>=0;}).map(function(x){return "<i class='t"+x.k+"'>"+x.tag+"</i>";}).join("")+"</em></span>";}).join("")+
