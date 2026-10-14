@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 20 ก.ย. 2569 · รอบที่ 2)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 14 ต.ค. 2569)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -52,7 +52,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 10**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 26**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -118,10 +118,46 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 14 คาบ
+## 4. ความคืบหน้า — 31 คาบ · 355 หัวข้อ · ข้อสอบ 984 ข้อ
 
-| set | lec | เรื่อง |
-|---|---|---|
+| set | ชุดวิชา | คาบ | หัวข้อ | ข้อสอบ |
+|---|---|---|---|---|
+| air | AIR | 3 | 36 | 115 |
+| cardio | Cardio | 5 | 55 | 184 |
+| chest | Chest | 4 | 39 | 108 |
+| nephro | Nephro | 4 | 52 | 193 |
+| neuro | Neuro | 5 | 52 | 104 |
+| endo | Endo | 3 | 41 | 98 |
+| id | ID | 2 | 24 | 47 |
+| gi | GI | 3 | 30 | 56 |
+| hemonc | Heme/Onc | 2 | 26 | 79 |
+
+ชุด **endo · id · gi · hemonc** เพิ่มเข้ามาหลัง 20 ก.ย. · ดูรายชื่อคาบจริงได้จาก
+`python3 -c "import json;[print(m['set'],[l['lec'] for l in json.load(open(m['file']))]) for m in json.load(open('artifact/data/index.json'))]"`
+(รันในโฟลเดอร์ `artifact/`)
+
+> ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
+> ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
+
+---
+
+## 4b. ⚠️ บทเรียนจากรอบ 14 ต.ค. — repo ตามหลัง artifact ไป 1 เดือน
+
+ระหว่าง 20 ก.ย. ถึง 14 ต.ค. มี session อื่นทำงานเพิ่มอีก 17 คาบและเพิ่มความสามารถ
+**sync ความคืบหน้าขึ้นบัญชี (capabilities `db` + `user`)** แต่ **ไม่ได้ commit ลง repo เลย**
+`artifact/index.html` ในคลังจึงเก่าไป 19 KB และไม่มีไฟล์ `endo/id/gi/hemonc` อยู่เลย
+รอบนี้ดึงกลับมาครบแล้ว (commit `6afafc9`) แต่ย้ำกฎข้อ 2 ว่า **จบงานก้อนหนึ่งต้อง commit ทันที**
+ไม่ใช่ publish แล้วจบ เพราะ artifact ไม่ใช่ที่เก็บต้นฉบับ
+
+**ถ้าสงสัยว่า repo ตามหลังอยู่** ให้ตรวจก่อนเริ่มงานทุกครั้ง
+`Artifact action:list scope:files` เทียบขนาดไฟล์กับใน `artifact/` แล้วถ้าไม่ตรง
+ดึงกลับด้วย `Artifact action:read` + `paths:[...]` + `out_dir:/home/user/ioioioio/artifact`
+
+**มีหลาย session ทำงานบน artifact เดียวกันพร้อมกันได้** — รอบนี้ publish ชนกันหนึ่งครั้ง
+ทางแก้คือ **อย่า publish ทับด้วยไฟล์ที่ไม่ได้สร้างจากเวอร์ชันล่าสุด** ถ้าถูกปฏิเสธ ระบบจะส่งไฟล์
+เวอร์ชันสดมาให้ ให้แก้ทับบนไฟล์นั้นแล้ว publish ใหม่
+
+---|---|---|
 | air | 08 | Allergy and clinical immunology |
 | air | 23 | Approach to arthritis / crystal and infective |
 | air | 33 | Connective tissue disease, vasculitis |
@@ -214,6 +250,11 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
+> ⚠️ **หัวข้อ 6 และ 7 เป็นสถานะ ณ 20 ก.ย. และอาจไม่ตรงแล้ว** — มี session อื่นเพิ่มอีก 17 คาบ
+> (รวมชุด endo · id · gi · hemonc) ระหว่าง 20 ก.ย. – 14 ต.ค. โดยไม่ได้บันทึกไว้ที่นี่
+> จึงไม่ทราบว่าใช้สไลด์ไฟล์ใดไปแล้ว **ก่อนเริ่มงานใหม่ให้เทียบรายชื่อคาบจริงจาก `artifact/data/` ก่อน**
+> (คำสั่งอยู่ท้ายหัวข้อ 4) แล้วค่อยเลือกว่าจะทำอะไรต่อ
+
 1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
 2. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
    Dyslipidemia · Septicemia (รอสไลด์)
@@ -239,6 +280,12 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 ---
 
 ## 9. รายละเอียดทางเทคนิคที่เคยติดปัญหา
+
+- **artifact ตอนนี้ประกาศ capabilities `db` + `user` และ contract 0.2.76** (ความคืบหน้าซิงก์ขึ้นบัญชี
+  ถ้ายังไม่ล็อกอินจะเก็บใน localStorage ก่อน) — เวลา publish **ให้ละฟิลด์ `capabilities` และ `contract` ไว้**
+  ระบบจะคงค่าเดิมให้เอง ถ้าใส่ `capabilities:{}` จะเป็นการล้างทิ้งและทำให้ sync พัง
+- **ค่าที่ผู้ใช้เลือกเองระดับเครื่อง** (ธีม · ซ่อนแถบเมนู) เก็บแยกใน localStorage คนละคีย์
+  ไม่ปนกับ state ที่ซิงก์ขึ้นบัญชี — คีย์ปุ่มซ่อนแถบคือ `med421-learn-mast`
 
 - **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
   ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
