@@ -74,6 +74,14 @@ a{color:var(--accent-ink)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:700}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}
 .ring{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.mastbtn{font:inherit;font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface);border:1px solid var(--rule);
+  border-radius:999px;padding:5px 12px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+.mastbtn:hover{border-color:var(--rule-strong);color:var(--ink)}
+.mastbtn svg{width:12px;height:12px;transition:transform .22s var(--e)}
+.mast.min .wrap{padding-block:7px}
+@media (max-width:560px){.brand{flex:1 1 0}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.mastbtn{flex:none}}
+.mast.min .wrap>:not(.brand):not(.mastbtn){display:none}
+.mast.min .mastbtn svg{transform:rotate(180deg)}
 .lsync{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-3);background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:5px 11px;white-space:nowrap}
 .lsync i{width:8px;height:8px;border-radius:50%;background:var(--ink-3);flex:none}
 .lsync.cloud i{background:var(--ok)} .lsync.busy i{background:var(--miss)}
@@ -244,6 +252,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 <header class="mast">
   <div class="wrap">
     <div class="brand"><b id="brandTitle">MED421</b><span id="brandSub"></span></div>
+    <button class="mastbtn" id="mastBtn" type="button" aria-expanded="true" aria-controls="courseTabs tabs"><span>ซ่อนเมนู</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 8l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <div class="tabs" id="courseTabs"></div>
     <div class="tabs" id="tabs"></div>
     <div class="ring" id="ring"></div>
@@ -320,10 +329,18 @@ function boot(){
 
 var KEY="med421-learn-v1";
 var state={course:"",view:"home",lec:null,sec:null,pid:null,
-           done:{},ans:{},notes:{},rate:{},theme:""};
+           done:{},ans:{},notes:{},rate:{},theme:"",mastMin:false};
 try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);if(s&&typeof s==="object"){
   for(var k in state) if(k in s) state[k]=s[k];}}}catch(e){}
 if(state.theme)document.documentElement.setAttribute("data-theme",state.theme);
+/* ซ่อน/แสดงแถบเมนูด้านบน — จำค่าไว้ในเครื่อง */
+function applyMast(){
+  var m=document.querySelector(".mast"),b=document.getElementById("mastBtn");if(!m||!b)return;
+  m.classList.toggle("min",!!state.mastMin);
+  b.setAttribute("aria-expanded",state.mastMin?"false":"true");
+  b.firstChild.textContent=state.mastMin?"แสดงเมนู":"ซ่อนเมนู";
+}
+applyMast();
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}if(typeof syncCheck==="function")syncCheck();}
 /* ---------- บันทึกความคืบหน้าในบัญชี (capability db + user) ----------
    data/users/<id>/learn = {done, ans, rate} · data/users/<id>/learn-notes = {notes}
@@ -845,6 +862,7 @@ function firstUnfinished(){
 /* ---------- events ---------- */
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
+  if(t.id==="mastBtn"){state.mastMin=!state.mastMin;applyMast();save();return;}
   if(t.id==="themeBtn"){
     var cur=document.documentElement.getAttribute("data-theme");
     var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
