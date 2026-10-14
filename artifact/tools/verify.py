@@ -25,22 +25,29 @@ try:
         pg.on("requestfailed", lambda r: bad.append("failed %s (%s)" % (r.url, r.failure)))
         pg.goto("http://127.0.0.1:%d/index.html" % PORT, wait_until="networkidle")
 
+        # จำนวนที่คาดหวังอ่านจากไฟล์ data เอง ไม่ฝังเลขไว้ในสคริปต์
+        import json as _j0
+        _idx = _j0.load(open(os.path.join(BUILD, "data", "index.json"), encoding="utf-8"))
+        _first = _idx[0]
+        _flec = _j0.load(open(os.path.join(BUILD, _first["file"]), encoding="utf-8"))
+        _fsec = sum(len(l["sections"]) for l in _flec)
+
         pg.wait_for_selector("#courseTabs button", timeout=10000)
         tabs = pg.eval_on_selector_all("#courseTabs button", "els=>els.map(e=>e.textContent)")
         print("แท็บชุดวิชา:", tabs)
-        if len(tabs) != 5:
-            fail.append("แท็บควรมี 5 ชุด แต่ได้ %d" % len(tabs))
+        if len(tabs) != len(_idx):
+            fail.append("แท็บควรมี %d ชุดตาม index.json แต่ได้ %d" % (len(_idx), len(tabs)))
 
         pg.wait_for_selector("aside .olec", timeout=10000)
         n = pg.eval_on_selector_all("aside .olec", "els=>els.length")
-        print("AIR outline: %d คาบ" % n)
-        if n != 3:
-            fail.append("AIR ควรมี 3 คาบ ได้ %d" % n)
+        print("%s outline: %d คาบ" % (_first["label"], n))
+        if n != len(_flec):
+            fail.append("%s ควรมี %d คาบ ได้ %d" % (_first["label"], len(_flec), n))
 
         ring = pg.inner_text("#ring")
         print("แถบความคืบหน้า:", ring.replace("\n", " "))
-        if "/34" not in ring:   # AIR = 9+9+16 หัวข้อ (แถบนี้นับเฉพาะชุดที่เปิดอยู่)
-            fail.append("ความคืบหน้าของ AIR ควรเป็น 34 หัวข้อ ได้: %r" % ring)
+        if "/%d" % _fsec not in ring:   # แถบนี้นับเฉพาะชุดที่เปิดอยู่
+            fail.append("ความคืบหน้าของ %s ควรเป็น %d หัวข้อ ได้: %r" % (_first["label"], _fsec, ring))
 
         # สลับไป Cardio → ต้องโหลดไฟล์ใหม่แล้วแสดงคาบครบตามไฟล์ data
         import json as _j
@@ -74,6 +81,26 @@ try:
             fail.append("localStorage ไม่ถูกบันทึก")
         if cur != ["Cardio"]:
             fail.append("ไม่ได้กลับมาที่ Cardio หลังรีโหลด ได้ %r" % cur)
+
+        # ปุ่มซ่อนแถบด้านบน: กดแล้วแถบต้องเตี้ยลงและซ่อนแท็บ แล้วคงสถานะหลังรีโหลด
+        if pg.query_selector("#mastBtn"):
+            _h0 = pg.eval_on_selector(".mast", "e=>Math.round(e.getBoundingClientRect().height)")
+            pg.click("#mastBtn")
+            pg.wait_for_function("document.querySelector('.mast').classList.contains('min')", timeout=3000)
+            _h1 = pg.eval_on_selector(".mast", "e=>Math.round(e.getBoundingClientRect().height)")
+            print("ปุ่มซ่อนแถบ: %dpx → %dpx" % (_h0, _h1))
+            if _h1 >= _h0:
+                fail.append("กดซ่อนแถบแล้วความสูงไม่ลดลง (%d → %d)" % (_h0, _h1))
+            if pg.eval_on_selector("#courseTabs", "e=>e.getClientRects().length>0"):
+                fail.append("ซ่อนแถบแล้วแท็บชุดวิชายังแสดงอยู่")
+            pg.reload(wait_until="networkidle")
+            pg.wait_for_selector("#mastBtn", timeout=10000)
+            if not pg.eval_on_selector(".mast", "e=>e.classList.contains('min')"):
+                fail.append("สถานะซ่อนแถบไม่ถูกจำไว้หลังรีโหลด")
+            pg.click("#mastBtn")   # กางกลับก่อนตรวจการล้นแนวนอน
+            pg.wait_for_function("!document.querySelector('.mast').classList.contains('min')", timeout=3000)
+        else:
+            fail.append("ไม่พบปุ่ม #mastBtn")
 
         # ไม่มี horizontal scroll ที่ความกว้างมือถือ
         ov = pg.evaluate("document.documentElement.scrollWidth-document.documentElement.clientWidth")

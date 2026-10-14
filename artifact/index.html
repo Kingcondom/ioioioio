@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="th">
 <meta charset="utf-8">
@@ -74,6 +75,9 @@ a{color:var(--accent-ink)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:700}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}
 .ring{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.lsync{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-3);background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:5px 11px;white-space:nowrap}
+.lsync i{width:8px;height:8px;border-radius:50%;background:var(--ink-3);flex:none}
+.lsync.cloud i{background:var(--ok)} .lsync.busy i{background:var(--miss)}
 .bar{width:110px;height:7px;border-radius:999px;background:var(--surface-sunk);overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .5s var(--e)}
 
@@ -83,6 +87,17 @@ a{color:var(--accent-ink)}
 aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
 @media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
+
+/* ---------- แถบด้านบนแบบย่อได้ ---------- */
+.mastbtn{flex:0 0 auto;padding-inline:12px}
+/* ชื่อเรื่องต้องย่อด้วย ... ไม่ใช่ดันปุ่มตกลงไปอีกแถว */
+.mast .brand{flex:1 1 0;min-width:0}
+.mast .brand>*{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mast.min .wrap{padding-block:8px}
+.mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
+.mast.min ~ .cols aside{top:50px}
+.mast.min ~ .cols{padding-top:14px}
+
 .panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow)}
 .outline{padding:12px 12px 14px}
 .outline h4{font-size:12px;font-family:var(--sans);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:10px 6px 6px}
@@ -105,6 +120,7 @@ aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 
 /* ---------- content ---------- */
 main{min-width:0;display:flex;flex-direction:column;gap:18px}
+.card[id]{scroll-margin-top:84px}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);
   padding:24px 26px;animation:rise .32s var(--e) both}
 @media (max-width:560px){.card{padding:18px 16px;border-radius:var(--r-md)}}
@@ -181,9 +197,22 @@ tr:last-child td{border-bottom:0}
   padding:15px 16px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px;
   transition:border-color .22s var(--e),transform .22s var(--e)}
 .tile:hover{border-color:var(--accent);transform:translateY(-2px)}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:13px;margin-top:16px}
+.ltile{text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:var(--r-md);
+  padding:14px 15px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px;min-width:0;
+  transition:border-color .22s var(--e),transform .22s var(--e)}
+.ltile:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ltile .lnum{font:600 11.5px/1.3 var(--mono);color:var(--accent-ink);letter-spacing:.02em}
+.ltile b{font-size:16px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.ltile .lsub{font-size:12.8px;color:var(--ink-3);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ltile .lprog{display:flex;align-items:center;gap:8px;font-size:12.3px;color:var(--ink-2);margin-top:2px}
+.ltile .lprog .bar{width:90px;flex:none}
+.ltile .lchips{display:flex;flex-wrap:wrap;gap:5px}
+.lnav{align-items:center}
 .tile b{font-size:14.8px;font-weight:700;letter-spacing:-.01em}
 .tile span{font-size:12.6px;color:var(--ink-3)}
-.vignette{white-space:pre-wrap;font-size:14.6px;background:var(--surface-sunk);border-radius:var(--r-md);padding:15px 17px;margin:12px 0 4px}
+.vignette{font-size:14.6px;background:var(--surface-sunk);border-radius:var(--r-md);padding:15px 17px;margin:12px 0 4px}
+.vignette.prose p:first-child{margin-top:0}.vignette.prose p:last-child{margin-bottom:0}.vignette .tablewrap{background:var(--surface)}
 textarea{width:100%;min-height:104px;font:inherit;font-size:14.5px;color:var(--ink);background:var(--surface);
   border:1px solid var(--rule-strong);border-radius:var(--r-md);padding:11px 13px;resize:vertical}
 .selfrate{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px;align-items:center}
@@ -191,14 +220,47 @@ textarea{width:100%;min-height:104px;font:inherit;font-size:14.5px;color:var(--i
 .hr{height:1px;background:var(--rule);margin:18px 0}
 footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center}
 .hide{display:none!important}
+/* ---------- figures (แผนภาพ SVG ในบทเรียน · [[fig:key]] ใน md + section.figs) ---------- */
+.fig{margin:20px 0;border:1px solid var(--rule);border-radius:var(--r-md);background:var(--surface);padding:12px 14px 12px}
+.fig .figt{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--accent-ink);margin:0 0 8px}
+.fig .figt span{color:var(--ink-3);font-weight:600;margin-right:6px}
+.fig .figsv{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fig .figin{margin:0 auto}
+.fig svg{display:block;width:100%;height:auto;color:var(--ink);font-family:var(--sans)}
+.fig figcaption{font-size:13.3px;line-height:1.6;color:var(--ink-2);margin-top:10px;padding-top:9px;border-top:1px dashed var(--rule)}
+.fig figcaption strong{color:var(--ink)}
+.fig .figscroll{display:none;font-size:11.5px;color:var(--ink-3);margin-top:4px}
+@media (max-width:560px){.fig{padding:10px 10px}.fig .figscroll.on{display:block}}
+.fig svg text{fill:var(--ink);font-size:13px;stroke:none}
+.fig svg :is(rect,circle,ellipse,path,polygon){fill:none;stroke:var(--ink-2);stroke-width:1.3}
+.fig svg :is(line,polyline){fill:none;stroke:var(--ink-2);stroke-width:1.3}
+.fig .lg{font-size:15px}.fig .sm{font-size:11.5px}.fig .xs{font-size:10.5px}.fig .b{font-weight:700}
+.fig .mid{text-anchor:middle}.fig .end{text-anchor:end}
+.fig .mu{fill:var(--ink-3)}.fig .i2{fill:var(--ink-2)}.fig .tac{fill:var(--accent-ink)}.fig .tok{fill:var(--ok)}
+.fig .tbad{fill:var(--bad)}.fig .tms{fill:var(--miss)}.fig .twa{fill:var(--focus)}.fig .tpa{fill:var(--surface)}
+.fig .bx{fill:var(--surface);stroke:var(--rule-strong)}.fig .sk{fill:var(--surface-sunk);stroke:var(--rule-strong)}
+.fig .ac{fill:var(--accent-soft);stroke:var(--accent)}.fig .ok{fill:var(--ok-soft);stroke:var(--ok)}
+.fig .bad{fill:var(--bad-soft);stroke:var(--bad)}.fig .ms{fill:var(--miss-soft);stroke:var(--miss)}
+.fig .wa{fill:color-mix(in srgb,var(--focus) 14%,var(--surface));stroke:var(--focus)}
+.fig .acf{fill:var(--accent);stroke:none}.fig .okf{fill:var(--ok);stroke:none}.fig .badf{fill:var(--bad);stroke:none}
+.fig .msf{fill:var(--miss);stroke:none}.fig .waf{fill:var(--focus);stroke:none}.fig .inkf{fill:var(--ink-2);stroke:none}
+.fig .muf{fill:var(--ink-3);stroke:none}.fig .ruf{fill:var(--rule-strong);stroke:none}.fig .paf{fill:var(--surface);stroke:none}
+.fig .ln{fill:none;stroke:var(--ink-2)}.fig .lmu{fill:none;stroke:var(--ink-3)}.fig .lac{fill:none;stroke:var(--accent)}
+.fig .lok{fill:none;stroke:var(--ok)}.fig .lbad{fill:none;stroke:var(--bad)}.fig .lms{fill:none;stroke:var(--miss)}
+.fig .lwa{fill:none;stroke:var(--focus)}.fig .lru{fill:none;stroke:var(--rule-strong)}
+.fig .w2{stroke-width:2.2}.fig .w3{stroke-width:3.4}.fig .w5{stroke-width:5}.fig .da{stroke-dasharray:5 4}.fig .dt{stroke-dasharray:1.5 3.5;stroke-linecap:round}.fig .ns{stroke:none}
+.mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}
 </style>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk"/></marker><marker id="ah-ac" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ac"/></marker><marker id="ah-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ok"/></marker><marker id="ah-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-bad"/></marker><marker id="ah-ms" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ms"/></marker><marker id="ah-wa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-wa"/></marker><marker id="ah-mu" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-mu"/></marker></defs></svg>
 <header class="mast">
   <div class="wrap">
     <div class="brand"><b id="brandTitle">MED421</b><span id="brandSub"></span></div>
+    <button class="btn mastbtn" id="mastBtn" aria-expanded="true" title="ซ่อนหรือแสดงแถบด้านบน">ซ่อนแถบ ▴</button>
     <div class="tabs" id="courseTabs"></div>
     <div class="tabs" id="tabs"></div>
     <div class="ring" id="ring"></div>
+    <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
   </div>
 </header>
@@ -207,7 +269,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
   <aside class="panel outline" id="outline"></aside>
   <main id="main"></main>
 </div>
-<footer class="wrap">MED421 Internal Medicine · เว็บเรียนเนื้อหา + เช็คความเข้าใจจากคลังข้อสอบ MED28–MED35 · ความคืบหน้าเก็บไว้ในเครื่องของคุณเอง (localStorage)</footer>
+<footer class="wrap">MED421 Internal Medicine · เว็บเรียนเนื้อหา + เช็คความเข้าใจจากคลังข้อสอบ MED28–MED35 · ความคืบหน้าบันทึกในบัญชีของคุณ (ซิงก์ทุกเครื่อง) · ถ้ายังไม่ได้ล็อกอินจะเก็บในเครื่องนี้ก่อน แล้วรวมเข้าบัญชีให้เมื่อเชื่อมได้</footer>
 
 <script>
 (function(){
@@ -223,6 +285,31 @@ function ensure(set){
     .catch(function(e){c.lectures=[];c._loaded=true;c._err=String(e);});
   return c._p;
 }
+/* ---------- ลิงก์ตรงจาก Lecture Dashboard: #<ชุด> หรือ #<ชุด>-<คาบ> ----------
+   เลขคาบที่มี / ใช้ . แทน (เช่น #gi-27.10 = คาบ 27/10 ของชุด GI) */
+function slug(x){return String(x==null?"":x).replace(/[^A-Za-z0-9._~-]/g,".");}
+var pendingLec=null;
+function readHash(){
+  var h=String(location.hash||"").replace(/^#/,"");
+  if(!h)return false;
+  var i=h.indexOf("-"),set=i<0?h:h.slice(0,i),lec=i<0?"":h.slice(i+1);
+  if(!COURSES.some(function(c){return c.set===set;}))return false;
+  state.course=set;state.view="home";state.sec=null;state.pid=null;state.lec=null;
+  pendingLec=lec||null;
+  return true;
+}
+function landHash(){
+  if(!pendingLec)return;
+  var want=pendingLec;pendingLec=null;
+  var hit=lectures().filter(function(l){return slug(l.lec)===want;})[0];
+  if(!hit)return;
+  state.view="lecture";state.lec=hit.lec;render();window.scrollTo({top:0});
+}
+window.addEventListener("hashchange",function(){
+  if(!COURSES.length||!readHash())return;
+  render();window.scrollTo({top:0});
+  ensure(state.course).then(function(){render();landHash();});
+});
 function boot(){
   Promise.all([
     fetch("data/index.json",{cache:"no-cache"}).then(function(r){return r.json();}),
@@ -235,8 +322,9 @@ function boot(){
     });
     if(!COURSES.length)throw new Error("ไม่มีชุดวิชาใน data/index.json");
     if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
+    readHash();
     return ensure(state.course);
-  }).then(render).catch(function(e){
+  }).then(function(){render();landHash();}).catch(function(e){
     document.getElementById("main").innerHTML=
       "<section class='card'><h2>โหลดเนื้อหาไม่สำเร็จ</h2><p class='lede'>"+
       String(e&&e.message||e)+"</p></section>";
@@ -249,7 +337,130 @@ var state={course:"",view:"home",lec:null,sec:null,pid:null,
 try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);if(s&&typeof s==="object"){
   for(var k in state) if(k in s) state[k]=s[k];}}}catch(e){}
 if(state.theme)document.documentElement.setAttribute("data-theme",state.theme);
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}if(typeof syncCheck==="function")syncCheck();}
+/* ---------- บันทึกความคืบหน้าในบัญชี (capability db + user) ----------
+   data/users/<id>/learn = {done, ans, rate} · data/users/<id>/learn-notes = {notes}
+   SYNC.sent = สิ่งที่อยู่ในบัญชีล่าสุดที่รู้ · meta.cloud = เครื่องนี้เคยซิงก์แล้ว · meta.pend = มีของในเครื่องที่ยังไม่ได้อัปโหลด */
+/* แถบด้านบนย่อไว้หรือไม่ — เก็บแยกใน localStorage ของเครื่องนี้ ไม่ปนกับความคืบหน้าที่ซิงก์ขึ้นบัญชี */
+var MINKEY=KEY+":mastmin";
+function mastApply(min){
+  var h=document.querySelector(".mast"),b=document.getElementById("mastBtn");
+  if(h)h.classList.toggle("min",!!min);
+  if(b){b.setAttribute("aria-expanded",min?"false":"true");b.textContent=min?"เมนู ▾":"ซ่อนแถบ ▴";}
+}
+function mastInit(){
+  var min=false;
+  try{min=localStorage.getItem(MINKEY)==="1";}catch(e){}
+  mastApply(min);
+}
+function mastToggle(){
+  var h=document.querySelector(".mast"),min=!(h&&h.classList.contains("min"));
+  mastApply(min);
+  try{localStorage.setItem(MINKEY,min?"1":"0");}catch(e){}
+}
+mastInit();
+
+var MKEY=KEY+":sync";
+var SYNC={mode:"local",refs:null,uid:"",busy:{p:0,n:0},timer:null,first:{p:1,n:1},sent:{p:"",n:""},err:"",later:false,meta:{cloud:false,pend:false,uid:""}};
+try{var mm=JSON.parse(localStorage.getItem(MKEY)||"{}");SYNC.meta.cloud=!!mm.cloud;SYNC.meta.pend=!!mm.pend;SYNC.meta.uid=typeof mm.uid==="string"?mm.uid:"";}catch(e){}
+function saveMeta(){try{localStorage.setItem(MKEY,JSON.stringify(SYNC.meta));}catch(e){}}
+function trueKeys(o){var r={};if(o&&typeof o==="object")Object.keys(o).sort().forEach(function(k){if(o[k]===true)r[k]=true;});return r;}
+function pick(o,ok){var r={};if(o&&typeof o==="object")Object.keys(o).sort().forEach(function(k){if(ok(o[k]))r[k]=o[k];});return r;}
+function normP(o){o=o||{};return {done:trueKeys(o.done),ans:pick(o.ans,function(v){return typeof v==="number"&&v>=0&&v<10&&v===Math.floor(v);}),
+  rate:pick(o.rate,function(v){return typeof v==="string"&&v.length<40;})};}
+function normN(o){o=o||{};return {notes:pick(o.notes,function(v){return v===true||(typeof v==="string"&&v.length>0);})};}
+function cur(k){return JSON.stringify(k==="p"?normP(state):normN(state));}
+SYNC.sent.p=cur("p");SYNC.sent.n=cur("n");
+function syncCheck(){
+  if(cur("p")===SYNC.sent.p&&cur("n")===SYNC.sent.n)return;
+  if(!SYNC.meta.pend){SYNC.meta.pend=true;saveMeta();}
+  clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,700);
+}
+function flush(){
+  SYNC.timer=null;
+  if(SYNC.mode!=="cloud"||!SYNC.refs)return;
+  ["p","n"].forEach(function(k){
+    var c=cur(k);if(c===SYNC.sent[k]||SYNC.busy[k])return;
+    if(c.length>240000){SYNC.err="โน้ตยาวเกินที่บัญชีเก็บได้ ส่วนนี้บันทึกในเครื่องนี้";renderSync();return;}
+    SYNC.busy[k]=1;renderSync();
+    var body=JSON.parse(c);body.v=1;body.updatedAt=new Date().toISOString();
+    SYNC.refs[k].set(body).then(function(){
+      SYNC.busy[k]=0;SYNC.sent[k]=c;SYNC.err="";
+      if(cur("p")===SYNC.sent.p&&cur("n")===SYNC.sent.n){SYNC.meta.pend=false;SYNC.meta.cloud=true;SYNC.meta.uid=SYNC.uid;saveMeta();}
+      else{clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,300);}
+      renderSync();
+    },function(e){
+      SYNC.busy[k]=0;var code=e&&e.code;
+      if(code==="unavailable"||code==="resource_exhausted"){clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,2500+Math.random()*2000);}
+      else if(code==="revoked"){SYNC.mode="local";}
+      else SYNC.err="บันทึกขึ้นบัญชีไม่ได้ ตอนนี้เก็บในเครื่องนี้";
+      renderSync();
+    });
+  });
+}
+function adopt(k,data){
+  if(k==="p"){var p=normP(data);state.done=p.done;state.ans=p.ans;state.rate=p.rate;}
+  else state.notes=normN(data).notes;
+}
+function merge(k,data){
+  if(k==="p"){var c=normP(data),l=normP(state);
+    state.done=Object.assign({},c.done,l.done);state.ans=Object.assign({},l.ans,c.ans);state.rate=Object.assign({},c.rate,l.rate);}
+  else state.notes=Object.assign({},normN(data).notes,normN(state).notes);
+}
+function rerender(){
+  /* อย่ารีเรนเดอร์ทับช่องที่กำลังพิมพ์ */
+  var a=document.activeElement;
+  if(a&&a.tagName==="TEXTAREA"){SYNC.later=true;return;}
+  if(COURSES.length&&course()._loaded)render();else save();
+}
+document.addEventListener("focusout",function(e){if(SYNC.later&&e.target&&e.target.tagName==="TEXTAREA"){SYNC.later=false;setTimeout(rerender,0);}});
+function onSnap(k,snap){
+  var data=snap.exists?snap.data():null;
+  if(SYNC.first[k]){
+    SYNC.first[k]=0;
+    /* เบราว์เซอร์นี้เคยซิงก์กับบัญชีอื่น → ไม่เอาของในเครื่องไปปนกับบัญชีนี้ */
+    var other=!!(SYNC.meta.uid&&SYNC.meta.uid!==SYNC.uid);
+    if(!data){SYNC.sent[k]="";if(other)adopt(k,{});}
+    else{
+      SYNC.sent[k]=JSON.stringify(k==="p"?normP(data):normN(data));
+      if(other||(SYNC.meta.cloud&&!SYNC.meta.pend))adopt(k,data);else merge(k,data);
+    }
+    if(!SYNC.first.p&&!SYNC.first.n){
+      SYNC.mode="cloud";SYNC.meta.uid=SYNC.uid;
+      if(cur("p")===SYNC.sent.p&&cur("n")===SYNC.sent.n){SYNC.meta.pend=false;SYNC.meta.cloud=true;}
+      saveMeta();flush();
+    }
+    rerender();renderSync();return;
+  }
+  if(SYNC.busy[k]||SYNC.timer||snap.metadata&&snap.metadata.hasPendingWrites)return;
+  var c=data?JSON.stringify(k==="p"?normP(data):normN(data)):"";
+  if(!data||c===cur(k))return;
+  SYNC.sent[k]=c;adopt(k,data);rerender();
+}
+function renderSync(){
+  var el=document.getElementById("lsync");if(!el)return;
+  var busy=SYNC.busy.p||SYNC.busy.n;
+  el.className="lsync"+(SYNC.mode==="cloud"&&!SYNC.err?(busy?" busy":" cloud"):"");
+  el.lastChild.textContent=SYNC.err||(SYNC.mode==="cloud"?(busy?"กำลังบันทึก…":"บันทึกในบัญชี"):"บันทึกในเครื่องนี้");
+  el.title=SYNC.mode==="cloud"?"ความคืบหน้าบันทึกในบัญชีของคุณ เปิดเครื่องไหนก็เห็นเหมือนกัน":"ยังไม่ได้เชื่อมบัญชี ความคืบหน้าเก็บในเบราว์เซอร์เครื่องนี้";
+}
+(function connect(){
+  if(!window.claude||typeof window.claude.use!=="function")return;
+  Promise.all([window.claude.use("db"),window.claude.use("user")]).then(function(r){
+    var db=r[0],user=r[1];if(!db||!user)return null;
+    return user.id().then(function(uid){
+      if(!uid)return;
+      SYNC.uid=uid;var base="data/users/"+uid+"/";
+      SYNC.refs={p:db.doc(base+"learn"),n:db.doc(base+"learn-notes")};
+      ["p","n"].forEach(function(k){
+        SYNC.refs[k].onSnapshot(function(snap){onSnap(k,snap);},function(e){
+          if(e&&e.code==="revoked"){SYNC.mode="local";renderSync();}
+        });
+      });
+    });
+  }).catch(function(){});
+})();
+
 
 /* ---------- tiny markdown (เหมือน drill.html) ---------- */
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -257,6 +468,17 @@ function inline(t){return esc(t)
   .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
   .replace(/`([^`]+)`/g,"<code>$1</code>")
   .replace(/\*([^*\n]+)\*/g,"<em>$1</em>");}
+var FIGS={},FIGN=0;
+function figHtml(k){
+  var f=FIGS[k];if(!f||!f.svg)return "";
+  var m=/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"/.exec(f.svg),w=m?+m[1]:560;
+  var wide=w>440,sty="max-width:"+Math.round(w*1.25)+"px"+(wide?";min-width:"+Math.round(w*0.74)+"px":"");
+  FIGN++;
+  return "<figure class='fig'>"+(f.title?"<div class='figt'><span>ภาพ "+FIGN+"</span>"+inline(f.title)+"</div>":"")+
+    "<div class='figsv'><div class='figin' style='"+sty+"'>"+f.svg+"</div></div>"+
+    (wide?"<div class='figscroll on'>← เลื่อนภาพไปทางขวาเพื่อดูส่วนที่เหลือ →</div>":"")+
+    (f.cap?"<figcaption>"+inline(f.cap)+"</figcaption>":"")+"</figure>";
+}
 function md(src){
   var lines=String(src==null?"":src).split("\n"),out=[],i=0,para=[];
   function flushPara(){if(para.length){out.push("<p>"+para.map(inline).join("<br>")+"</p>");para=[];}}
@@ -282,7 +504,8 @@ function md(src){
     out.push("<"+tag+">"+items.join("")+"</"+tag+">");
   }
   while(i<lines.length){
-    var L=lines[i];
+    var L=lines[i],fm=/^\s*\[\[fig:([\w-]+)\]\]\s*$/.exec(L);
+    if(fm){flushPara();out.push(figHtml(fm[1]));i++;continue;}
     if(/^\s*>\s?/.test(L)){var q=[];while(i<lines.length&&/^\s*>\s?/.test(lines[i])){q.push(lines[i].replace(/^\s*>\s?/,""));i++;}
       flushPara();out.push("<div class='callout'>"+md(q.join("\n"))+"</div>");continue;}
     if(/^\s*####\s+/.test(L)){flushPara();out.push("<h4>"+inline(L.replace(/^\s*####\s+/,""))+"</h4>");i++;continue;}
@@ -352,7 +575,7 @@ function nlChips(codes){
 }
 
 /* ---------- masthead ---------- */
-var TABS=[{k:"home",label:"ภาพรวม"},{k:"learn",label:"เรียนเนื้อหา"},{k:"meq",label:"Practice · MEQ"},{k:"osce",label:"Practice · OSCE/SAQ"},{k:"review",label:"ทบทวนข้อที่ผิด"}];
+var TABS=[{k:"home",label:"ภาพรวม"},{k:"lectures",label:"คาบเรียน"},{k:"learn",label:"เรียนเนื้อหา"},{k:"meq",label:"Practice · MEQ"},{k:"osce",label:"Practice · OSCE/SAQ"},{k:"review",label:"ทบทวนข้อที่ผิด"}];
 function lum(hex){
   var h=String(hex).trim().replace("#","");
   if(h.length===3)h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
@@ -381,7 +604,7 @@ function renderMast(){
   document.getElementById('courseTabs').innerHTML = COURSES.length<2 ? "" :
     COURSES.map(function(x){return "<button class='btn"+(x.set===state.course?" on":"")+"' data-course='"+x.set+"'>"+esc(x.label)+"</button>";}).join("");
   document.getElementById('tabs').innerHTML=TABS.map(function(t){
-    return "<button class='btn"+(state.view===t.k||(state.view==="section"&&t.k==="learn")?" on":"")+"' data-tab='"+t.k+"'>"+t.label+"</button>";
+    return "<button class='btn"+(state.view===t.k||(state.view==="section"&&t.k==="learn")||(state.view==="lecture"&&t.k==="lectures")?" on":"")+"' data-tab='"+t.k+"'>"+t.label+"</button>";
   }).join("");
   var p=courseProgress();
   document.getElementById('ring').innerHTML=
@@ -416,24 +639,63 @@ function viewHome(){
   if(c.howto)h+="<div class='callout'>"+md(c.howto)+"</div>";
   h+="<div class='nav' style='margin-top:16px'><button class='btn primary' data-go='next'>"+(p.done?"เรียนต่อจากที่ค้างไว้":"เริ่มเรียนหัวข้อแรก")+"</button></div></section>";
 
-  lectures().forEach(function(l){
-    var done=l.sections.filter(function(s){return secStat(s).complete;}).length;
-    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
-      "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
-    if(l.objectives&&l.objectives.length)
-      h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
-    h+=nlPanel(l);
-    h+="<div class='meta'><span class='chip"+(done===l.sections.length?" acc":"")+"'>ความคืบหน้า "+done+"/"+l.sections.length+" หัวข้อ</span>"+
-       "<span class='chip'>MEQ "+l.meq.length+"</span><span class='chip'>OSCE/SAQ "+l.osce.length+"</span></div>";
-    h+="<div class='grid'>"+l.sections.map(function(s){
-      var st=secStat(s);
-      return "<button class='tile' data-sec='"+s.id+"' data-slec='"+l.lec+"'><b>"+esc(s.title)+"</b>"+
-        "<span>"+esc(s.summary||"")+"</span>"+
-        "<span class='chip"+(st.complete?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+
-        (st.complete?"ผ่านแล้ว "+st.correct+"/"+st.n:(st.answered? "ทำไป "+st.answered+"/"+st.n+" ข้อ":"ยังไม่ได้เรียน"))+"</span></button>";
-    }).join("")+"</div></section>";
-  });
+  lectures().forEach(function(l){h+=lecCard(l);});
   return h;
+}
+
+/* ---------- หน้า "คาบเรียน": การ์ดทุกคาบของชุด → กดเข้าไปดูทีละคาบ ---------- */
+function lecCard(l){
+  var h="";
+    var done=l.sections.filter(function(s){return secStat(s).complete;}).length;
+  h+="<section class='card' id='lec-"+esc(slug(l.lec))+"'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
+    "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
+  if(l.objectives&&l.objectives.length)
+    h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
+  h+=nlPanel(l);
+  h+="<div class='meta'><span class='chip"+(done===l.sections.length?" acc":"")+"'>ความคืบหน้า "+done+"/"+l.sections.length+" หัวข้อ</span>"+
+     "<span class='chip'>MEQ "+l.meq.length+"</span><span class='chip'>OSCE/SAQ "+l.osce.length+"</span></div>";
+  h+="<div class='grid'>"+l.sections.map(function(s){
+    var st=secStat(s);
+    return "<button class='tile' data-sec='"+s.id+"' data-slec='"+l.lec+"'><b>"+esc(s.title)+"</b>"+
+      "<span>"+esc(s.summary||"")+"</span>"+
+      "<span class='chip"+(st.complete?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+
+      (st.complete?"ผ่านแล้ว "+st.correct+"/"+st.n:(st.answered? "ทำไป "+st.answered+"/"+st.n+" ข้อ":"ยังไม่ได้เรียน"))+"</span></button>";
+  }).join("")+"</div></section>";
+  return h;
+}
+function lecStat(l){
+  var n=l.sections.length,d=l.sections.filter(function(s){return secStat(s).complete;}).length,
+      q=l.sections.reduce(function(a,s){return a+s.items.length;},0);
+  return {n:n,done:d,q:q,pct:n?Math.round(d*100/n):0};
+}
+function viewLectures(){
+  var c=course(),ls=lectures();
+  var h="<section class='card'><div class='eyebrow'>"+esc(c.label)+" · คาบเรียน</div><h2>เลือกคาบที่จะเรียน</h2>"+
+    "<p class='lede'>ชุดนี้มี "+ls.length+" คาบ · กดการ์ดเพื่อเข้าไปดูหัวข้อ ข้อเช็ค MEQ และ OSCE ของคาบนั้น</p>"+
+    "<div class='lgrid'>"+ls.map(function(l){var st=lecStat(l);
+      return "<button class='ltile' data-openlec='"+esc(l.lec)+"'>"+
+        "<span class='lnum'>คาบ "+esc(l.lec)+(l.date&&!/^TBD/.test(l.date)?" · "+esc(l.date):"")+"</span>"+
+        "<b>"+esc(l.title)+"</b>"+(l.subtitle?"<span class='lsub'>"+esc(l.subtitle)+"</span>":"")+
+        "<span class='lprog'><span class='bar'><i style='width:"+st.pct+"%'></i></span><span>เรียนจบ "+st.done+"/"+st.n+" หัวข้อ</span></span>"+
+        "<span class='lchips'><span class='chip'>ข้อเช็ค "+st.q+"</span><span class='chip'>MEQ "+(l.meq||[]).length+"</span><span class='chip'>OSCE/SAQ "+(l.osce||[]).length+"</span></span>"+
+        "</button>";}).join("")+"</div></section>";
+  return h;
+}
+function viewLecture(){
+  var ls=lectures(),l=lecOf(state.lec);
+  if(!l)return viewLectures();
+  var i=ls.indexOf(l),prev=ls[i-1],next=ls[i+1];
+  var nav="<div class='nav lnav'><button class='btn' data-tab='lectures'>← คาบทั้งหมด</button><span style='flex:1'></span>"+
+    (prev?"<button class='btn' data-openlec='"+esc(prev.lec)+"'>‹ คาบ "+esc(prev.lec)+"</button>":"")+
+    (next?"<button class='btn' data-openlec='"+esc(next.lec)+"'>คาบ "+esc(next.lec)+" ›</button>":"")+"</div>";
+  var h=nav+lecCard(l);
+  var pr=[];(l.meq||[]).forEach(function(it){pr.push({k:"meq",it:it});});(l.osce||[]).forEach(function(it){pr.push({k:"osce",it:it});});
+  if(pr.length)h+="<section class='card'><div class='eyebrow'>ฝึกต่อของคาบนี้</div><h2>MEQ และ OSCE/SAQ</h2><div class='grid'>"+pr.map(function(x){
+    var r=state.rate[x.it.id];
+    return "<button class='tile' data-pid='"+esc(x.it.id)+"' data-pv='"+x.k+"'><b>"+esc(x.it.topic||x.it.id)+"</b>"+
+      "<span>"+esc(x.k==="meq"?"MEQ · "+((x.it.questions||[]).length)+" คำถามย่อย":(x.it.station||"OSCE/SAQ"))+"</span>"+
+      "<span class='chip"+(r?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+(r?("ประเมินตัวเองแล้ว: "+r):"ยังไม่ได้ทำ")+"</span></button>";}).join("")+"</div></section>";
+  return h+nav;
 }
 
 function viewSection(){
@@ -445,7 +707,8 @@ function viewSection(){
     "<h2>"+esc(s.title)+"</h2>"+(s.summary?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
     (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"</div>"+
-    "<div class='prose'>"+md(s.md)+"</div>";
+    (FIGS=s.figs||{},FIGN=0,"<div class='prose'>"+md(s.md)+"</div>");
+  FIGS={};
   if(s.pearls&&s.pearls.length)
     h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
 
@@ -465,6 +728,7 @@ function viewSection(){
      "<button class='btn "+(st.complete?"":"primary")+"' data-act='markread'>"+(state.done[s.id]?"✓ ทำเครื่องหมายว่าเรียนแล้ว":"ทำเครื่องหมายว่าเรียนแล้ว")+"</button>"+
      "</div>";
   h+="<div class='nav' style='margin-top:14px'>"+
+     "<button class='btn' data-openlec='"+esc(l.lec)+"'>↑ หน้าคาบ "+esc(l.lec)+"</button>"+
      (idx>0?"<button class='btn' data-goto='"+list[idx-1].sec.id+"' data-golec='"+list[idx-1].lec.lec+"'>← "+esc(list[idx-1].sec.title)+"</button>":"")+
      (idx<list.length-1?"<button class='btn primary' data-goto='"+list[idx+1].sec.id+"' data-golec='"+list[idx+1].lec.lec+"'>"+esc(list[idx+1].sec.title)+" →</button>":"<button class='btn primary' data-tab='meq'>ไปฝึก MEQ ต่อ →</button>")+
      "</div></div></section>";
@@ -525,7 +789,7 @@ function viewPractice(kind){
 
 function viewMeq(l,it){
   var h="<section class='card'><div class='eyebrow'>MEQ · คาบ "+esc(l.lec)+" · "+esc(l.lecture||l.title)+"</div>"+
-    "<h2>"+esc(it.topic||it.id)+"</h2><div class='vignette'>"+esc(it.vignette)+"</div>";
+    "<h2>"+esc(it.topic||it.id)+"</h2><div class='vignette prose'>"+md(it.vignette)+"</div>";
   (it.questions||[]).forEach(function(q,i){
     var kid=it.id+"#"+i,open=!!state.notes[kid+"!shown"];
     h+="<div class='hr'></div><div class='prose'><strong>"+inline(q.q)+"</strong></div>"+
@@ -545,7 +809,7 @@ function viewOsce(l,it){
     "<div class='meta'><span class='chip acc'>"+esc(it.station||"")+"</span>"+
     "<span class='timer' id='timer'>"+mins+":00</span>"+
     "<button class='btn' data-timer='"+mins+"'>เริ่มจับเวลา</button></div>"+
-    "<div class='vignette'>"+esc(it.instruction)+"</div>"+
+    "<div class='vignette prose'>"+md(it.instruction)+"</div>"+
     "<textarea data-note='"+esc(it.id)+"' placeholder='เขียนคำตอบของคุณ…'>"+esc(state.notes[it.id]||"")+"</textarea>"+
     "<div class='nav' style='margin-top:10px'><button class='btn"+(state.notes[it.id+"!shown"]?"":" primary")+"' data-reveal='"+esc(it.id)+"'>"+
       (state.notes[it.id+"!shown"]?"ซ่อนเฉลย":"ดูเฉลยและเกณฑ์ให้คะแนน")+"</button></div>"+
@@ -595,6 +859,8 @@ function render(){
   else if(state.view==="meq")h=viewPractice("meq");
   else if(state.view==="osce")h=viewPractice("osce");
   else if(state.view==="review")h=viewReview();
+  else if(state.view==="lectures")h=viewLectures();
+  else if(state.view==="lecture")h=viewLecture();
   else if(state.view==="learn"){h=viewHome();}
   else h=viewHome();
   m.innerHTML=h;
@@ -611,15 +877,16 @@ function firstUnfinished(){
 /* ---------- events ---------- */
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
+  if(t.id==="mastBtn"){mastToggle();return;}
   if(t.id==="themeBtn"){
     var cur=document.documentElement.getAttribute("data-theme");
     var nx=cur==="dark"?"light":(cur==="light"?"":"dark");
     if(nx)document.documentElement.setAttribute("data-theme",nx);else document.documentElement.removeAttribute("data-theme");
-    state.theme=nx;save();return;
+    state.theme=nx;save();if(COURSES.length)applyAccent(course());return;
   }
   if(t.dataset.course){
     if(t.dataset.course!==state.course){
-      state.course=t.dataset.course;state.view="home";state.lec=null;state.sec=null;state.pid=null;
+      state.course=t.dataset.course;state.view=(state.view==="lectures"||state.view==="lecture")?"lectures":"home";state.lec=null;state.sec=null;state.pid=null;
       render();window.scrollTo({top:0});ensure(state.course).then(render);
     }
     return;
@@ -630,6 +897,7 @@ document.addEventListener('click',function(e){
     render();window.scrollTo({top:0});return;
   }
   if(t.dataset.go==="next"){var f2=firstUnfinished();openSection(f2.lec.lec,f2.sec.id);return;}
+  if(t.dataset.openlec){state.view="lecture";state.lec=t.dataset.openlec;state.sec=null;state.pid=null;render();window.scrollTo({top:0});return;}
   if(t.dataset.lec){state.lec=(state.lec===t.dataset.lec?null:t.dataset.lec);renderOutline();save();return;}
   if(t.dataset.sec){openSection(t.dataset.slec,t.dataset.sec);return;}
   if(t.dataset.goto){openSection(t.dataset.golec,t.dataset.goto);return;}
@@ -643,7 +911,7 @@ document.addEventListener('click',function(e){
     }
     return;
   }
-  if(t.dataset.act==="markread"){state.done[state.sec]=!state.done[state.sec];render();return;}
+  if(t.dataset.act==="markread"){if(state.done[state.sec])delete state.done[state.sec];else state.done[state.sec]=true;render();return;}
   if(t.dataset.act==="resetsec"){
     var s2=secOf(lecOf(state.lec),state.sec);
     s2.items.forEach(function(it){delete state.ans[it.id];});delete state.done[s2.id];render();return;
@@ -653,9 +921,9 @@ document.addEventListener('click',function(e){
       if(state.ans[it.id]!=null&&state.ans[it.id]!==it.answer){delete state.ans[it.id];delete state.done[x.sec.id];}});});
     render();return;
   }
-  if(t.dataset.pid!==undefined&&t.dataset.pid!==""){state.pid=t.dataset.pid;render();window.scrollTo({top:0});return;}
+  if(t.dataset.pid!==undefined&&t.dataset.pid!==""){if(t.dataset.pv)state.view=t.dataset.pv;state.pid=t.dataset.pid;render();window.scrollTo({top:0});return;}
   if(t.dataset.back){state.pid=null;state.view=t.dataset.back;render();window.scrollTo({top:0});return;}
-  if(t.dataset.reveal){var k=t.dataset.reveal+"!shown";state.notes[k]=!state.notes[k];render();return;}
+  if(t.dataset.reveal){var k=t.dataset.reveal+"!shown";if(state.notes[k])delete state.notes[k];else state.notes[k]=true;render();return;}
   if(t.dataset.rate){state.rate[t.dataset.rate]=t.dataset.val;render();return;}
   if(t.dataset.timer){startTimer(+t.dataset.timer);return;}
 });
@@ -674,8 +942,11 @@ function startTimer(mins){
     el.textContent=Math.floor(left/60)+":"+("0"+(left%60)).slice(-2);
   },1000);
 }
+renderSync();
 boot();
 })();
 </script>
+
+</body></html>
 
 </body></html>
