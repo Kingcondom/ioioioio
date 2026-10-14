@@ -193,7 +193,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 **ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
 - ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
 - แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
-- ⏳ **ยังไม่ publish** — artifact `Fdi5gcNXKqFLAXg4fQBV7X` แชร์ทุกคนที่มีลิงก์ ต้องให้ผู้ใช้ยืนยันก่อน · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch นั้น (สร้างใหม่ได้จากสคริปต์นี้ทุกครั้ง)
+- ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
 
 **ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **392/570 ข้อ = 69% (13 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 42 ข้อ) ·
 คาบในคลังที่ยังไม่มีบทเรียน: Cardio 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
