@@ -33,11 +33,12 @@ config.json          ไฟล์เดียวที่ต้องแก้�
 build.py             รวม → ตรวจ → สลับเฉลย → drill.html → PDF
 render_pdf.py        build.py เรียกเอง
 export_text.py       ดัมป์ทั้งคลังเป็น export/*.md (เอาไปใช้ในแชทอื่น)
+export_meq_osce.py   รวม MEQ + OSCE/SAQ ทั้งหมด (ข้อใหม่ + ข้อสอบเก่าจากโพย) เป็น export/MEQ_OSCE.md
 check_numbers.py     ตรวจ ABG ทุกข้อ (Henderson–Hasselbalch, Winter's, anion gap)
 template.html        หน้าเว็บ (มี placeholder __DATA__ __NL__ __LEC__ __SETS__ __SETCSS_*__)
 data/                คลังข้อสอบทั้งหมด  <ระบบ>_mcq_a/b · _meq_osce · _old_a/b · _hot
 refs/nl_2567.json    ดัชนีเกณฑ์แพทยสภา 2567 (250 หัวข้อ)
-export/              ไฟล์ข้อความรายระบบ + ALL.md (สร้างใหม่ได้ตลอด)
+export/              ไฟล์ข้อความรายระบบ + ALL.md + MEQ_OSCE.md (สร้างใหม่ได้ตลอด)
 attic/               44 ข้อระบบหายใจที่ทำเกินไว้ ยังไม่ได้ยุบเข้า chest
 sources/             โพย MED28–34, โพย MED35, NL Syllabus 2567 (ต้นทางสำหรับทำระบบใหม่ — ไม่ต้องอัปโหลดซ้ำ)
 SPEC.md PROMPT.md README.md HANDOFF.md
@@ -50,6 +51,7 @@ python3 build.py                  # ทุกระบบ (เว็บ + PDF)
 python3 build.py air --no-pdf     # ระบบเดียว ไม่ทำ PDF — ใช้ตอนกำลังเขียนข้อ
 python3 check_numbers.py          # ตรวจตัวเลข ABG ทั้งคลัง
 python3 export_text.py            # export/<ระบบ>.md + export/ALL.md
+python3 export_meq_osce.py        # export/MEQ_OSCE.md (MEQ + OSCE/SAQ ทั้งหมด)
 ```
 
 ## 5. กติกาที่ห้ามพลาด (สรุปจาก SPEC.md)
