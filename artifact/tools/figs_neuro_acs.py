@@ -80,8 +80,8 @@ def acs_aras():
            *[circ(210, 196 + 10 * k, 3.4, "acf") for k in range(5)],
            ell(210, 166, 34, 18, "ms"), t(210, 170, "thalamus", "xs mid b"),
            t(252, 182, "สถานีส่งต่อ", "xs i2"),
-           t(184, 204, "ARAS", "sm b tac end"), t(184, 220, "midbrain + pons บน", "xs end i2"),
-           t(184, 234, "สวิตช์ปลุกให้ตื่น", "xs end i2"),
+           t(180, 204, "ARAS", "sm b tac end"), t(180, 220, "midbrain + pons บน", "xs end i2"),
+           t(176, 234, "สวิตช์ปลุกให้ตื่น", "xs end i2"),
            t(246, 250, "pons", "xs mu"), t(230, 300, "medulla", "xs mu"),
            box(10, 322, 196, 64, "ac", "Arousal ↓\nARAS / thalamus หรือ\nเปลือกสมองทั้งสองซีก → Coma", fs=11.5),
            box(214, 322, 196, 64, "ms", "Content ↓ แต่ arousal ยังดี\nเปลือกสมองทำงานผิด\n→ Delirium", fs=11.5)]
@@ -100,12 +100,12 @@ def _coronal(x0, y0, mode, title, l1, l2, coma):
            circ(x0 + 100, y0 + 112, 4.5, "acf")]
     if mode == "mass":
         out += [circ(Lx - 4, cy - 4, 20, "bad"), path("M%d %d Q%d %d %d %d" % (x0 + 100, y0 + 30, x0 + 116, cy, x0 + 104, y0 + 98), "lbad w2"),
-                ar(Lx + 10, cy + 20, x0 + 94, y0 + 106, "lbad w2", "ah-bad"),
-                t(x0 + 100, y0 + 120, "✕", "b mid tbad")]
+                ar(Lx + 10, cy + 20, x0 + 90, y0 + 106, "lbad w2", "ah-bad"),
+                t(x0 + 116, y0 + 116, "ARAS ✕", "xs tbad b")]
     elif mode == "bilat":
         out += [t(Lx, cy + 4, "สารพิษ", "xs mid"), t(Rx, cy + 4, "เมแทบอลิก", "xs mid")]
     elif mode == "pf":
-        out += [t(x0 + 100, y0 + 120, "✕", "b mid tbad"), t(x0 + 116, y0 + 134, "pons", "xs tbad")]
+        out += [t(x0 + 116, y0 + 116, "ARAS ✕", "xs tbad b"), t(x0 + 116, y0 + 134, "pons", "xs tbad")]
     else:
         out += [circ(Lx - 14, cy + 2, 13, "bad"), t(x0 + 116, y0 + 118, "ARAS ✓", "xs tok b")]
     tc = "tbad" if coma else "tok"
@@ -164,9 +164,9 @@ def acs_motorm():
             ("M3", "Decorticate", "รอยโรคเหนือ red nucleus"),
             ("M2", "Decerebrate", "รอยโรค midbrain–pons ต่ำกว่า red nucleus"),
             ("M1", "None", "pons ล่าง / medulla · หรือยากดลึก")]
-    lv = [(20, 82, "ac", "เปลือกสมอง\nทำงาน"), (108, 38, "sk", "เปลือกสมอง\nเสียบางส่วน"),
+    lv = [(20, 82, "ok", "ไม่มี\nรอยโรค"), (108, 38, "sk", "เปลือกสมอง\nเสียบางส่วน"),
           (152, 38, "ms", "capsule /\nthalamus"), (196, 38, "ms", "midbrain\npons บน"), (240, 38, "bad", "pons ล่าง\nmedulla")]
-    out = [t(55, 12, "ระดับที่ยังทำงาน", "xs mid b")]
+    out = [t(55, 12, "รอยโรคอยู่ที่", "xs mid b")]
     for y, h, c, s in lv:
         out.append(box(10, y, 90, h, c, s, fs=11))
     for k, (m, en, th) in enumerate(rows):
@@ -202,7 +202,7 @@ def acs_gcsfour():
         out.append(t(x, 38, comp, "sm b mid tok"))
         for k in four[comp]:
             out.append(circ(x, 52 + 28 * k, 6, "okf"))
-    X = lambda d: 90 + (d - 1) * 140
+    X = lambda d: 90 + (d - 1) * 110
     Y = lambda v: 334 - 7.5 * v
     out += [t(10, 206, "Floor effect — ผู้ป่วยที่แย่ที่สุด 3 วัน", "sm b"),
             line(70, Y(0), 380, Y(0), "lmu"), line(70, Y(0), 70, Y(16), "lmu"),
@@ -234,20 +234,20 @@ def acs_secondary():
            rect(X(0), Y(78), X(65) - X(0), Y(0) - Y(78), "bad", 0),
            t(X(32), Y(70), "BP ต่ำ", "xs mid b tbad"),
            line(X(65), Y(0), X(65), Y(78), "lbad da"), t(X(65) + 4, Y(74), "MAP 65", "xs tbad b"),
-           poly([(X(m), Y(norm(m))) for m in ms_], "lok w3"),
-           poly([(X(m), Y(m * 0.4)) for m in ms_], "lbad w3"),
-           t(X(100), Y(50) - 10, "สมองปกติ: คงที่ (autoregulation)", "sm mid tok b"),
-           t(X(190), Y(76) + 4, "สมองบาดเจ็บ:", "sm end tbad b"), t(X(190), Y(76) + 20, "ไหลตามความดัน", "xs end tbad"),
+           poly([(X(m), Y(norm(m))) for m in ms_ if m <= 190], "lok w3"),
+           poly([(X(m), Y(m * 50 / 90.0)) for m in ms_ if m <= 140], "lbad w3"),
+           line(10, 226, 32, 226, "lok w3"), t(38, 230, "สมองปกติ: เลือดไหลคงที่", "xs b tok"),
+           line(210, 226, 232, 226, "lbad w3"), t(238, 230, "สมองบาดเจ็บ: ไหลตามความดัน", "xs b tbad"),
            t(X(65) + 6, Y(20) + 18, "BP ตกนิดเดียว → ขาดเลือด", "xs tbad")]
     pillars = [("wa", "Oxygen: SpO₂ 94–98%\nขาด → ATP ↓ · เกิน → อนุมูลอิสระ"),
                ("bad", "Perfusion: MAP ≥ 65\nไม่มี autoregulation คุ้มกัน"),
                ("ms", "Glucose ปกติ\nต่ำ = ไม่มีเชื้อเพลิง · สูง = lactate ↑"),
                ("ok", "อุณหภูมิปกติ\nไข้ → สมองใช้พลังงานและ O₂ มากขึ้น")]
     for k, (c, s) in enumerate(pillars):
-        out.append(box(10 + 204 * (k % 2), 222 + 58 * (k // 2), 196, 50, c, s, fs=10.5))
+        out.append(box(10 + 204 * (k % 2), 242 + 58 * (k // 2), 196, 50, c, s, fs=10.5))
     return fig("สมองที่บาดเจ็บเสีย autoregulation",
                "สมองปกติปรับขนาดหลอดเลือดเองให้ **เลือดไหลคงที่** แม้ความดันขึ้นลงในช่วงกว้าง สมองที่บาดเจ็บเสียกลไกนี้ เลือดที่ไปเลี้ยงจึง **ขึ้นลงตามความดันโดยตรง** — ความดันต่ำเพียงช่วงสั้นก็ทำให้เนื้อสมองรอบรอยโรคที่กำลังจะตายขาดเลือดซ้ำ นี่คือ **secondary brain injury** ที่สี่เสา (ออกซิเจน ความดัน น้ำตาล อุณหภูมิ) มีไว้ป้องกัน",
-               svg(420, 336, "กราฟเลือดไปสมองเทียบความดัน สมองปกติคงที่ สมองบาดเจ็บไหลตามความดัน และสี่เสาป้องกันการบาดเจ็บซ้ำ",
+               svg(420, 356, "กราฟเลือดไปสมองเทียบความดัน สมองปกติคงที่ สมองบาดเจ็บไหลตามความดัน และสี่เสาป้องกันการบาดเจ็บซ้ำ",
                    *out))
 
 
@@ -258,7 +258,7 @@ def acs_thiamine():
                    t(80, 16, "มี thiamine", "sm b mid tok"), t(310, 16, "ขาด thiamine", "sm b mid tbad"),
                    box(20, 26, 120, 34, "sk", "กลูโคส", "b"), ar(80, 60, 80, 78, "ln", "ah"),
                    box(20, 80, 120, 34, "sk", "pyruvate", "b"),
-                   ar(80, 114, 80, 150, "lok w3", "ah-ok"), t(88, 132, "PDH", "xs b tok"), t(88, 144, "ใช้ thiamine", "xs tok"),
+                   ar(80, 114, 80, 150, "lok w3", "ah-ok"), t(96, 132, "PDH", "xs b tok"), t(96, 144, "ใช้ thiamine", "xs tok"),
                    box(20, 152, 120, 40, "ok", "acetyl-CoA\n→ Krebs cycle", fs=11.5), ar(80, 192, 80, 210, "ln", "ah"),
                    box(20, 212, 120, 34, "ok", "ATP พอ", "b"),
                    ar(140, 97, 210, 97, "lbad w2", "ah-bad"), t(176, 90, "ทางตัน", "xs mid tbad b"),
@@ -285,9 +285,9 @@ def acs_pupils():
         out += _eyes(170, y + 26, rl, rr)
         out += [t(220, y + 22, a, "sm b"), t(220, y + 38, b, "xs i2")]
     out += [line(16, 266, 104, 266, "ln w3"), t(60, 282, "CN III", "xs mid"),
-            ell(56, 248, 22, 11, "bad"), t(56, 252, "uncus", "xs mid b"), ar(56, 238, 56, 230, "lbad", "ah-bad"),
+            ell(56, 240, 22, 11, "bad"), t(56, 244, "uncus", "xs mid b"), ar(56, 252, 56, 263, "lbad w2", "ah-bad"),
             box(16, 296, 90, 40, "sk", "ก้านสมองเสีย\nกว้าง / ยา", fs=11),
-            circ(92, 126, 4, "okf")]
+            ]
     return fig("รูม่านตาบอกระดับของรอยโรค",
                "รูม่านตาเป็นผลรวมของสองระบบ — **sympathetic** (ขยาย) ลงมาจาก hypothalamus ผ่านทั้งก้านสมอง และ **parasympathetic** (หด) ออกจาก midbrain ไปกับ CN III รอยโรคตัดระบบไหนได้ขนาดตามนั้น: diencephalon = เล็กแต่ตอบสนอง · midbrain = กลางและคงที่ · pons = pinpoint ส่วน **CN III ที่ถูก uncus กด** เสียใยหดที่อยู่ผิวนอกก่อน จึงขยายข้างเดียว เพราะวงจรนี้ทนต่อภาวะเมแทบอลิกสูง รูม่านตาที่ผิดปกติจึงมักหมายถึงรอยโรคโครงสร้าง",
                svg(420, 348, "ระดับรอยโรคในก้านสมองกับขนาดรูม่านตา diencephalon เล็ก midbrain กลางคงที่ pons เท่าหัวเข็มหมุด CN III ถูกกดขยายข้างเดียว",
@@ -346,7 +346,7 @@ def acs_gaze():
                    t(4, 14, "มองจากด้านบน", "xs mu")))
 
 
-def _head(cx, cy, face, gaze, r=26):
+def _head(cx, cy, face, gaze, r=26, ray=0):
     s = lambda a: math.sin(math.radians(a))
     c = lambda a: math.cos(math.radians(a))
     out = [ell(cx + (r + 1) * s(face + 90), cy - (r + 1) * c(face + 90), 5, 9, "sk", face),
@@ -357,37 +357,41 @@ def _head(cx, cy, face, gaze, r=26):
     for sd in (-1, 1):
         a = face + sd * 34
         ex, ey = cx + (r - 9) * s(a), cy - (r - 9) * c(a)
-        out += [circ(ex, ey, 6, "paf"), circ(ex, ey, 6, "ln"), circ(ex + 3.2 * s(gaze), ey - 3.2 * c(gaze), 2.8, "inkf")]
+        px, py = ex + 3.6 * s(gaze), ey - 3.6 * c(gaze)
+        if ray:
+            out.append(line(px, py, px + ray * s(gaze), py - ray * c(gaze), "lmu da"))
+        out += [circ(ex, ey, 7, "paf"), circ(ex, ey, 7, "ln"), circ(px, py, 3, "inkf")]
     return out
 
 
 def acs_vor():
     out = [t(10, 18, "Doll's eye — หันศีรษะไปทางขวาอย่างเร็ว", "sm b"),
-           *_head(110, 82, 35, 0), *_head(310, 82, 35, 35),
-           path("M88 46 Q110 34 132 44", "lmu", "ah-mu"), path("M288 46 Q310 34 332 44", "lmu", "ah-mu"),
-           t(110, 132, "ตายังมองที่เดิมในห้อง", "sm mid"), t(110, 148, "ก้านสมองดี ✓", "sm mid b tok"),
-           t(310, 132, "ตาหมุนไปพร้อมหัว", "sm mid"), t(310, 148, "ก้านสมองเสีย / ยากดลึก", "sm mid b tbad"),
-           line(10, 162, 410, 162, "lru da"),
-           t(10, 182, "Cold caloric — หยอดน้ำเย็นหูขวา", "sm b")]
+           *_head(110, 92, 35, 0, ray=30), *_head(310, 92, 35, 35, ray=30),
+           path("M60 70 Q66 52 84 46", "lmu w2", "ah-mu"), path("M260 70 Q266 52 284 46", "lmu w2", "ah-mu"),
+           t(110, 140, "ตายังมองที่เดิมในห้อง", "sm mid"), t(110, 156, "ก้านสมองดี ✓", "sm mid b tok"),
+           t(310, 140, "ตาหมุนไปพร้อมหัว", "sm mid"), t(310, 156, "ก้านสมองเสีย / ยากดลึก", "sm mid b tbad"),
+           line(10, 168, 410, 168, "lru da"),
+           t(10, 188, "Cold caloric — หยอดน้ำเย็นหูขวา", "sm b")]
+    cy = 254
     for k, (cx, gz, a, b, tc) in enumerate(((72, 0, "รู้สึกตัว", "ช้า → หูเย็น · เร็ว ← กลับ", "i2"),
                                           (210, 70, "โคม่า ก้านสมองดี", "เบนช้ามาหูเย็นแล้วค้าง", "tok"),
                                           (348, 0, "ก้านสมองเสีย / ยา", "ไม่ขยับเลย", "tbad"))):
-        cy = 238
-        out += _head(cx, cy, 0, gz)
+        out += _head(cx, cy, 0, gz, ray=18 if k == 1 else 0)
         out += [circ(cx + 40, cy - 6, 3, "waf"), circ(cx + 44, cy + 3, 3, "waf"), circ(cx + 38, cy + 10, 3, "waf")]
         out += [t(cx, cy + 46, a, "sm mid b " + tc), t(cx, cy + 62, b, "xs mid i2")]
-    out += [ar(62, 196, 88, 196, "lmu w2", "ah-mu"), ar(86, 206, 58, 206, "lac w3", "ah-ac"),
-            ar(200, 200, 228, 200, "lok w2", "ah-ok"), t(348, 204, "✕", "b mid tbad"),
-            t(392, 228, "น้ำเย็น", "xs end twa")]
+    out += [ar(58, 200, 86, 200, "lmu w2", "ah-mu"), t(92, 204, "ช้า", "xs i2"),
+            ar(86, 212, 58, 212, "lac w3", "ah-ac"), t(52, 216, "เร็ว", "xs end tac b"),
+            t(348, 210, "✕", "b mid tbad"),
+            t(118, 276, "น้ำเย็น", "xs twa")]
     chain = [("wa", "น้ำเย็นหูขวา\nendolymph ไหล"), ("sk", "ประสาททรงตัวขวา\nส่งสัญญาณลดลง"),
              ("ok", "ก้านสมองดันตา\nไปทางขวา (ช้า)"), ("ac", "เปลือกสมองดีด\nกลับซ้าย (เร็ว)")]
     for k, (c, s_) in enumerate(chain):
         x = 10 + 102 * k
-        out.append(box(x, 320, 96, 44, c, s_, fs=10.5))
-        if k < 3: out.append(line(x + 96, 342, x + 102, 342, "ln", "ah"))
+        out.append(box(x, 334, 96, 44, c, s_, fs=10.5))
+        if k < 3: out.append(line(x + 96, 356, x + 102, 356, "ln", "ah"))
     return fig("Doll's eye และ cold caloric ตรวจทางเดินเดียวกัน",
-               "ทั้งสองวิธีทดสอบ **vestibulo-ocular reflex** ที่วิ่งจากหูชั้นใน → vestibular nuclei (medulla) → MLF → นิวเคลียส CN VI และ III (pons–midbrain) ตาที่ยังอยู่กับที่ขณะหันหัว หรือเบนมาทางหูที่หยอดน้ำเย็น จึงยืนยันว่า **ก้านสมองต่อกันครบตั้งแต่ medulla ถึง midbrain** ส่วน fast phase ต้องใช้เปลือกสมอง ผู้ป่วยโคม่าจึงมีแต่ slow phase (COWS พูดถึงทิศของ fast phase)",
-               svg(420, 374, "doll's eye ปกติตามองที่เดิมเมื่อหันหัว ถ้าก้านสมองเสียตาหมุนตามหัว และ cold caloric ในคนรู้สึกตัวเกิด nystagmus ในโคม่าที่ก้านสมองดีตาเบนมาทางหูเย็น ถ้าก้านสมองเสียไม่ขยับ",
+               "ทั้งสองวิธีทดสอบ **vestibulo-ocular reflex** ที่วิ่งจากหูชั้นใน → vestibular nuclei (medulla) → MLF → นิวเคลียส CN VI และ III (pons–midbrain) ตาที่ยังมองที่เดิมขณะหันหัว หรือเบนมาทางหูที่หยอดน้ำเย็น จึงยืนยันว่า **ก้านสมองต่อกันครบตั้งแต่ medulla ถึง midbrain** ส่วน fast phase ต้องใช้เปลือกสมอง ผู้ป่วยโคม่าจึงมีแต่ slow phase (COWS พูดถึงทิศของ fast phase) · ภาพมองจากด้านบน จมูกชี้ขึ้น เส้นประคือทิศที่ตามอง",
+               svg(420, 386, "doll's eye ปกติตามองที่เดิมเมื่อหันหัว ถ้าก้านสมองเสียตาหมุนตามหัว และ cold caloric ในคนรู้สึกตัวเกิด nystagmus ในโคม่าที่ก้านสมองดีตาเบนมาทางหูเย็น ถ้าก้านสมองเสียไม่ขยับ",
                    *out))
 
 
@@ -442,7 +446,7 @@ def acs_rostro():
             elif kind == "ap":
                 ph = (tt % 0.25) / 0.25
                 v = ph / 0.15 if ph < 0.15 else (1 if ph < 0.55 else (1 - (ph - 0.55) / 0.15 if ph < 0.7 else 0))
-                v = v * 1.6 - 0.8
+                v = v * 0.9
             else:
                 v = 0
                 for s0, d, a in ((0.02, 0.07, 0.5), (0.14, 0.05, 0.9), (0.3, 0.1, 0.3), (0.5, 0.06, 0.7), (0.6, 0.04, 0.4)):
@@ -493,7 +497,7 @@ def acs_causes():
 def acs_icp():
     def bar(x, fr, title, sub, tc):
         out, y = [], 170
-        cols = [("bx", "brain"), ("ms", "mass"), ("bad", "blood"), ("wa", "CSF")]
+        cols = [("sk", "brain"), ("ms", "mass"), ("bad", "blood"), ("wa", "CSF")]
         for (c, _), f in zip(cols, fr):
             h = 140 * f
             if h > 0:
@@ -502,15 +506,15 @@ def acs_icp():
         out += [rect(x - 4, 26, 74, 148, "lmu w3", 10), t(x + 33, 190, title, "sm mid b"), t(x + 33, 206, sub, "xs mid " + tc)]
         return out
     out = [t(10, 16, "กะโหลกมีปริมาตรคงที่ (Monro–Kellie)", "sm b"),
-           *bar(20, (0.76, 0, 0.12, 0.12), "ปกติ", "ICP ปกติ", "i2"),
-           *bar(120, (0.76, 0.14, 0.05, 0.05), "มีก้อน", "บีบ CSF + เลือดดำออก", "tok"),
-           *bar(220, (0.76, 0.24, 0.0, 0.0), "เกินชดเชย", "ICP ↑↑ → herniation", "tbad"),
-           ar(254, 22, 254, 8, "lbad w2", "ah-bad"),
-           rect(318, 40, 14, 14, "bx", 2), t(338, 52, "เนื้อสมอง", "xs"),
+           *bar(18, (0.76, 0, 0.12, 0.12), "ปกติ", "ICP ปกติ", "i2"),
+           *bar(122, (0.76, 0.14, 0.05, 0.05), "มีก้อน", "บีบ CSF/เลือดออก", "tok"),
+           *bar(226, (0.76, 0.24, 0.0, 0.0), "เกินชดเชย", "ICP ↑↑ → herniation", "tbad"),
+           ar(259, 22, 259, 8, "lbad w2", "ah-bad"),
+           rect(318, 40, 14, 14, "sk", 2), t(338, 52, "เนื้อสมอง", "xs"),
            rect(318, 64, 14, 14, "ms", 2), t(338, 76, "ก้อน/บวม", "xs"),
            rect(318, 88, 14, 14, "bad", 2), t(338, 100, "เลือด", "xs"),
            rect(318, 112, 14, 14, "wa", 2), t(338, 124, "CSF", "xs"),
-           t(318, 156, "CPP = MAP − ICP", "sm b"), t(318, 172, "ICP ↑ → เลือดเข้าสมองลด", "xs i2"),
+           t(318, 156, "CPP = MAP − ICP", "sm b"), t(318, 172, "ICP ↑ → CPP ↓", "xs i2"), t(318, 186, "เลือดเข้าสมองลด", "xs i2"),
            line(10, 222, 410, 222, "lru da"), t(10, 242, "แต่ละมาตรการลดส่วนไหน", "sm b")]
     ms_ = [("ok", "ยกหัวเตียง 30° · ศีรษะตรง", "เลือดดำไหลออกง่าย → blood ↓", "bad"),
            ("ok", "ยาระงับปวด ยานอนหลับ", "ลดการเผาผลาญและการเบ่ง → blood ↓", "bad"),
@@ -550,7 +554,7 @@ def acs_ods():
            *cell(350, 16, 3, ("แก้ Na เร็ว", "น้ำออก เซลล์เหี่ยว"), "tbad", True),
            ar(80, 92, 108, 92, "lwa w2", "ah-wa"), ar(190, 92, 222, 92, "ln", "ah"), ar(278, 92, 330, 92, "lbad w2", "ah-bad"),
            t(304, 84, "เร็ว", "xs mid tbad b"),
-           t(150, 40, "ปรับตัว", "xs mid mu"),
+           t(206, 84, "ปรับตัว", "xs mid tok"),
            box(10, 194, 400, 44, "bad", "เซลล์เหี่ยว → oligodendrocyte ตาย → myelin ที่ pons หลุด\n→ พูดไม่ชัด กลืนลำบาก อ่อนแรงทั้งตัว จนถึง locked-in", fs=11.5),
            box(10, 248, 400, 34, "ok", "แก้ ≤ 8–10 mmol/L ใน 24 ชม. → เซลล์ดึง osmolyte กลับได้ทัน", fs=11.5)]
     return fig("Osmotic demyelination: เซลล์ปรับตัวแล้ว อย่าดึงกลับเร็ว",
@@ -605,11 +609,11 @@ def acs_threshold():
                    t(X1, Y0 + 18, "ความเปราะบางของสมองเดิม →", "xs end mu"),
                    t(X0 - 6, Y1 + 4, "สิ่ง", "xs end mu"), t(X0 - 6, Y1 + 18, "กระตุ้น", "xs end mu"), t(X0 - 6, Y1 + 32, "แรง", "xs end mu"),
                    t(X0 - 6, Y0 - 4, "เบา", "xs end mu"),
-                   poly(curve, "lbad w3"), t(X1 - 6, Y0 - 34, "เส้นเกณฑ์", "xs end tbad b"),
+                   poly(curve, "lbad w3"), t(X1, Y0 - 8, "เส้นเกณฑ์", "xs end tbad b"),
                    t(300, 70, "เกิด delirium", "b mid tbad"),
-                   t(150, 206, "ไม่เกิด", "sm mid tok b"),
+                   t(250, 228, "ไม่เกิด", "sm mid tok b"),
                    circ(96, 50, 6, "badf"), t(108, 48, "หนุ่มสาวแข็งแรง", "xs b"), t(108, 62, "+ septic shock · ICU", "xs i2"),
-                   circ(366, 196, 6, "badf"), t(354, 172, "ผู้สูงอายุสมองเสื่อม", "xs b end"), t(354, 186, "+ UTI ไม่มีไข้", "xs end i2"),
+                   circ(362, 184, 6, "badf"), t(352, 158, "ผู้สูงอายุสมองเสื่อม", "xs b end"), t(352, 172, "+ UTI ไม่มีไข้", "xs end i2"),
                    circ(110, 196, 6, "okf"), t(122, 190, "หนุ่มสาว + UTI", "xs b"), t(122, 204, "ไม่สับสน", "xs i2")))
 
 
@@ -680,7 +684,7 @@ def acs_cam():
                    circ(210, 104, 18, "ac"), t(210, 108, "และ", "sm mid b tac"),
                    line(210, 122, 210, 134, "ln"), line(105, 134, 315, 134, "ln"),
                    line(105, 134, 105, 148, "ln", "ah"), line(315, 134, 315, 148, "ln", "ah"),
-                   pill(176, 140, "หรือ", "ms", "sm b mid tms", w=68),
+                   pill(180, 124, "หรือ", "ms", "sm b mid tms", w=60, h=20),
                    box(10, 150, 190, 56, "bx", "③ ความคิดสับสน\nพูดวกวน เปลี่ยนเรื่อง", fs=11.5),
                    box(220, 150, 190, 56, "bx", "④ ระดับการตื่นตัวเปลี่ยน\nซึม หรือ ตื่นตัวเกิน", fs=11.5),
                    line(105, 206, 180, 232, "ln", "ah"), line(315, 206, 240, 232, "ln", "ah"),
@@ -746,10 +750,10 @@ def acs_iatro():
            path("M84 110 Q84 44 132 40", "lbad w2", "ah-bad"),
            t(210, 132, "วงจรที่", "sm mid b tbad"), t(210, 148, "เราสร้างเอง", "sm mid b tbad"),
            t(10, 288, "จุดตัดวงจร", "sm b tok")]
-    cuts = [("ถอดสายที่ไม่จำเป็น", 10, 298), ("ไม่ผูกยึด", 136, 298), ("แว่น · เครื่องช่วยฟัง", 220, 298),
-            ("กลางวันสว่าง กลางคืนมืดเงียบ", 10, 326), ("ลุกเดินเร็ว", 214, 326), ("เลี่ยง benzo", 300, 326)]
-    for s, x, y in cuts:
-        out.append(pill(x, y, s, "ok", "xs b mid tok"))
+    cuts = [("ถอดสายที่ไม่จำเป็น", 10, 298, 118), ("ไม่ผูกยึด", 134, 298, 70), ("แว่น · เครื่องช่วยฟัง", 210, 298, 124),
+            ("กลางวันสว่าง กลางคืนมืดเงียบ", 10, 326, 168), ("ลุกเดินเร็ว", 184, 326, 76), ("เลี่ยง benzo", 266, 326, 84)]
+    for s, x, y, w in cuts:
+        out.append(pill(x, y, s, "ok", "xs b mid tok", w=w))
     return fig("อันตรายจากการรักษา: วงจรที่ทำให้ delirium ยืดเยื้อ",
                "สิ่งที่ทำเพื่อ **ควบคุม** ผู้ป่วยมักทำให้ delirium แย่ลง — การผูกยึดและสายต่าง ๆ ตรึงผู้ป่วยไว้กับเตียง เป็นทางเข้าของเชื้อ และเป็นสิ่งที่ผู้ป่วยจะดึง · benzodiazepine กดสมาธิเพิ่ม · เสียงและแสงทั้งคืนทำลายการนอน ทั้งหมดวนกลับมาทำให้สมาธิและการตื่นตัวแย่ลง มาตรการที่ไม่ใช้ยาคือการ **ตัดวงจรนี้** จึงเป็นสิ่งเดียวที่ลดทั้งระยะเวลาและอัตราตาย",
                svg(420, 356, "วงจร delirium ทำให้ผูกยึดและให้ยา ทำให้ขยับไม่ได้ ติดเชื้อ นอนไม่หลับ ทำให้สมาธิแย่ลง และวนกลับมาเป็น delirium พร้อมจุดตัดวงจร",

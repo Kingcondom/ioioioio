@@ -422,7 +422,7 @@ def thy_hotnodule():
 
 def thy_storm():
     steps = [(10, 34, "① สร้างฮอร์โมนใหม่ (TPO)"), (64, 34, "② หลั่งจาก colloid"), (118, 34, "③ T4 → T3 ที่เนื้อเยื่อ"),
-             (172, 44, "④ T3 + catecholamine\nที่หัวใจ (β-receptor)"), (236, 34, "⑤ วนกลับ ตับ → ลำไส้")]
+             (172, 44, "④ T3 + catecholamine\nที่หัวใจ (β-receptor)"), (236, 34, "⑤ ขับทางน้ำดี → ลำไส้ดูดกลับ")]
     out = []
     for k, (y, h, s) in enumerate(steps):
         out.append(box(10, y, 190, h, "sk", s, fs=11.5))
@@ -534,8 +534,8 @@ def thy_nodule():
 
 
 def thy_follicular():
-    def nod(cx, cy):
-        o = [circ(cx, cy, 48, "lok w3")]
+    def nod(cx, cy, gap=False):
+        o = [path("M357.3 100.3 A 48 48 0 1 1 343.9 58.1", "lbad w3") if gap else circ(cx, cy, 48, "lok w3")]
         for dx, dy in ((-24, -18), (0, -26), (24, -16), (-30, 6), (-6, -2), (18, 8), (-16, 24), (10, 28), (32, 26)):
             o.append(circ(cx + dx, cy + dy, 7, "ac"))
         return o
@@ -545,7 +545,7 @@ def thy_follicular():
                "ให้พยาธิแพทย์ดูขอบก้อนทั้งหมด",
                svg(420, 262, "follicular adenoma มี capsule ครบ carcinoma ทะลุ capsule และเข้าหลอดเลือด FNA แยกไม่ได้",
                    *nod(100, 92), t(100, 166, "Follicular adenoma", "xs mid b tok"), t(100, 180, "capsule ครบ", "xs mid tok"),
-                   *nod(310, 92),
+                   *nod(310, 92, gap=True),
                    path("M352 70 C 372 60, 384 74, 376 88 C 370 100, 356 98, 350 90", "ac"), circ(368, 78, 6, "ac"),
                    rect(380, 30, 16, 120, "bad", 8), circ(388, 60, 5, "ac"), t(404, 26, "หลอดเลือด", "xs end tbad b"),
                    t(310, 166, "Follicular carcinoma", "xs mid b tbad"), t(310, 180, "ทะลุ capsule / เข้าหลอดเลือด", "xs mid tbad"),
