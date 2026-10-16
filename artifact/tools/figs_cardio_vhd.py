@@ -302,7 +302,7 @@ def vhd_mr_acute():
         Y = lambda p: 222 - p * 1.4
         out += [t(cx, 18, title, "sm b mid"), circ(cx, 72, r, "wa"), t(cx, 76, "LA", "sm b mid twa"),
                 line(cx + r * 0.5 + 10, 130, cx + r * 0.4, 72 + r * 0.6, "lbad w3", "ah-bad"),
-                t(cx + r + 6, 104, "เลือดรั่ว\njาก LV".replace("j", "จ"), "xs tbad"),
+                t(cx + r + 6, 104, "เลือดรั่ว\nจาก LV", "xs tbad"),
                 t(x0 + 24, 152, "ความดัน LA", "xs mu"),
                 line(X(0), Y(0), X(1), Y(0), "lmu"), line(X(0), Y(12), X(1), Y(12), "lru da"),
                 _plot(pts, X, Y, "lwa w3"),
