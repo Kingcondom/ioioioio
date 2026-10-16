@@ -518,7 +518,7 @@ def acs_icp():
            line(10, 222, 410, 222, "lru da"), t(10, 242, "แต่ละมาตรการลดส่วนไหน", "sm b")]
     ms_ = [("ok", "ยกหัวเตียง 30° · ศีรษะตรง", "เลือดดำไหลออกง่าย → blood ↓", "bad"),
            ("ok", "ยาระงับปวด ยานอนหลับ", "ลดการเผาผลาญและการเบ่ง → blood ↓", "bad"),
-           ("ms", "Hyperosmolar therapy", "ดึงน้ำออกจากเนื้อสมอง → brain ↓", "bx"),
+           ("ms", "Hyperosmolar therapy", "ดึงน้ำออกจากเนื้อสมอง → brain ↓", "ruf"),
            ("ms", "Hyperventilation ชั่วคราว", "CO₂ ↓ หลอดเลือดหด → blood ↓ (เสี่ยงขาดเลือด)", "bad"),
            ("bad", "ผ่าตัด / ระบาย CSF", "เอาก้อนหรือน้ำออก → mass / CSF ↓", "ms")]
     for k, (c, a, b, chip) in enumerate(ms_):
