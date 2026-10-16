@@ -390,7 +390,7 @@ def af_cv():
            line(X(4), 39, 412, 39, "lok w2", "ah-ok"),
            rect(X(-3), 120, X(0) - X(-3), 8, "badf", 2), t((X(-3) + X(0)) / 2, 142, "AF: ห้องบนไม่บีบ", "xs mid b tbad"),
            rect(X(0), 64, X(4) - X(0), 56, "ms", 0),
-           poly(rec, "lok w3"), line(X(4), 58, 412, 58, "lok w3"),
+           poly(rec, "lok w3"), line(X(4), rec[-1][1], 412, rec[-1][1], "lok w3"),
            t(X(1.6), 91, "ห้องบนยัง “ชา”", "xs b tms"), t(X(1.6), 104, "(atrial stunning)", "xs tms"), t(X(1.6), 117, "ลิ่มเลือดยังเกิดได้", "xs tms"),
            t(56, 72, "เส้นเขียว = แรงบีบห้องบน", "xs tok"),
            t(X(0), 112, "⚡", "lg mid"),
