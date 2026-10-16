@@ -1,0 +1,33 @@
+# Approach to the Abdominal Pain — นพ.กิตติ ชื่นยง (Kitti Chuenyong, GI รพ.ราชวิถี)
+ไฟล์: Drive `10g5J-s6Zv5JZB3RbHs6dh2QWUR5Xzr5V` "Lec Approach to abdominal pain 65.pdf" · บรรยาย อ. 27 ต.ค. 2569 13:00–14:00 · ข้อความครบ ไม่มีลายมือ · ไม่มีในคลังรายคาบ (ใช้ Mock M09)
+- 3 เคสเปิด: ชาย 55 ปวดใต้ลิ้นปี่หลังอาหาร 2–3 ชม. 2 เดือน → **biliary colic** · หญิง 35 ปวดบน/ซ้ายเป็น ๆ หาย ๆ ไม่สัมพันธ์อาหาร ท้องผูกสลับเสีย hyperactive BS → **colonic pain** · หญิง 55 ปวดใต้ลิ้นปี่ 3 วัน แน่น คลื่นไส้หลังอาหาร เรอ กินได้น้อย → **dyspepsia**
+- Visceral (C fiber, dull/cramp/burn, poorly localized, ไม่ lateralize เพราะ bilateral afferent) vs parietal (A-δ, sharp, localized, แย่ลงเมื่อขยับ/สั่น)
+- Gastroduodenum → celiac ganglion → epigastrium เสมอ · colon: ascending T10–L2 sympathetic, descending S2–S4 parasympathetic → colonic pain กระจายได้ทุก quadrant แม้ส่วนบน (mimic dyspepsia)
+- Foregut (stomach duodenum pancreas liver biliary) → epigastrium · midgut (jejunum ileum appendix proximal colon) → periumbilicus · hindgut (distal colon pelvic GU) → hypogastrium
+- ตาราง: visceral hollow (colicky dull, midline, wall tension/peristalsis/ischemia, restless, hyperactive BS) · solid (dull, lateralized, capsule stretch, relatively still, discomfort on pressing) · somato-parietal (sharp, varies, chemical/infection, still, rebound/percussion tenderness)
+- History: location (ชี้ด้วยนิ้ว) · temporal · character/intensity · relieving/aggravating · PE posture, SIRS, peritonism, bowel sound, shape, mass, ascites
+- Referred: diaphragm → shoulder · biliary → ipsilateral scapula · appendicitis periumbilical→RLQ · biliary colic steady >1 h · SBO colicky → constant when distended → parietal if ischemia/perforation
+- Exam: zoster · Cullen/Grey Turner · bowel sound, succussion splash · distension gas vs ascites · bruit (aortic mesenteric renal) · percussion tenderness · guarding voluntary vs involuntary · organomegaly · mass · rebound · pulsatile mass AAA · Murphy
+- Organ: gastroduodenal (dyspepsia) · biliary (epigastrium/RUQ) · pancreatic (deep upper midline → back) · liver (RUQ constant, Glisson) · spleen LUQ · small bowel periumbilical colicky · large bowel varies · pelvic
+- Midline: epigastrium (dyspepsia, biliary colic, visceral pancreas liver biliary spleen) · periumbilicus (small bowel) · hypogastrium (colon, gyne, bladder) · Lateralizing: upper (liver pancreas GB inflammation, mass, colon) · flanks (colon, peritoneum, KUB) · lower quadrants (appendicitis, colon, IBS, ovary)
+- Somatic-parietal: sharp, movement, involuntary guarding/rigidity · generalized (SBP, secondary — PU perforation, bile) vs localized (appendicitis, cholecystitis, abscess, diverticulitis)
+- Colonic pain: colicky various region, change frequency/consistency, relieved by defecation, tenesmus, incomplete evacuation, bloating · organic: infectious colitis, CA colon, UC, TB colon, parasitic, ischemic colitis
+- Rome IV IBS: recurrent pain ≥1 d/wk last 3 mo + ≥2 of (defecation, frequency change, form change) · onset ≥6 mo · IBS-C/D/M/U by >25% stool forms
+- IBS alarm: nocturnal pain/defecation · rectal bleeding · onset >50 · weight loss · FHx CRC · fever · anemia
+- IBS practical: Rome + exclude organic: colonoscopy · young: stool occult blood ×3 · CT/BE if colonoscopy not available
+- Dyspepsia = gastroduodenal lesion · epigastric pain + early satiation, postprandial fullness, N/V, upper bloating, belching · uninvestigated → organic (DU, GU, gastritis, gastric CA, lymphoma) vs functional · pain ไม่ออกนอก midline; ถ้าอาการร่วมไม่ชัด คิด mimics
+- DDx dyspepsia: gastroparesis · IBS/colonic · biliary colic (after meal, not preprandial) · SOD (RUQ/epigastric, no fever/jaundice, ↑AST/ALT/amylase) · chronic pancreatitis (wax-wane, steatorrhea, DM) · cancer of solid organ (left lobe liver, pancreas)
+- Rome IV FD: ≥1 bothersome PP fullness/early satiation/epigastric pain/burning + no structural disease (incl. EGD) · 3 mo, onset ≥6 mo
+- Alarm (สมาคมทางเดินอาหารไทย): dysphagia · GI bleeding/IDA · unexplained weight loss · persistent vomiting
+- UD approach (AJG 2005): age >55 or alarm → EGD · <55 no alarm: HP prev <10% → PPI trial → fail test-treat → EGD ; HP prev >10% → test-and-treat → fail PPI → EGD
+- Gallstone spectrum table: biliary colic (postprandial, recurrent, no fever, normal WBC/LFT) · acute cholecystitis (fever, RUQ, Murphy, WBC, mild bili, US) · CBD stone (jaundice no fever, ALP bili up, AST/ALT may up acute, amylase normal, dilated CBD) · cholangitis (jaundice+fever+RUQ, WBC) · gallstone pancreatitis (amylase/lipase ≥2×? AST/ALT)
+- AP: 2 of 3 (pain, amylase/lipase >3×ULN, CT/MRI) · causes alcohol gallstone metabolic trauma drugs hereditary idiopathic · steady upper pain → back ~50%, N/V · Cullen/Grey Turner 1–3%, ~48 h, mortality 37% · amylase rises 6 h–5 d, lipase lasts longer · severity Ranson APACHE-II BISAP SIRS-OF
+- CP: fibrosis, permanent · pain → back worse with food · type 3 DM, steatorrhea · imaging (normal pancreas ไม่ตัด) · PERT ไม่ช่วยปวด ใช้กับ steatorrhea · pain: NSAIDs opioid TCA, ERCP PD drainage, EUS celiac neurolysis, surgery
+- Classic: appendicitis periumbilical→RLQ fever N/V · cholecystitis · diverticulitis LLQ elderly · ectopic · mesenteric ischemia out of proportion · obstruction · pancreatitis → back · perforation abrupt generalized · ovarian torsion · ruptured AAA pain+back+pulsatile · ureterolithiasis flank→groin
+- Severe pain DDx: peritonitis · cancer · mesenteric ischemia · pancreatitis · aortic dissection · small hollow viscus obstruction (bile duct, ureter)
+- Gaseous abdomen: SBO · LBO · AMI · toxic megacolon · perforation free air
+- SBO: N/V, hyperactive BS (ยกเว้น ischemic), air-fluid level · adhesion, intussusception, volvulus, internal hernia · CT · NPO NG suction fluid · LBO: CRC, sigmoid volvulus, fecal impaction, intussusception · no distal air · CT · rectal tube
+- AMI: pain out of proportion · AMAE (AF, RHD valve, CAD; acute onset, diarrhea vomiting; angiography/CTA) · MAT (atherosclerosis; sitophobia, postprandial pain) · MVT (hypercoagulable, RV failure, malignancy, cirrhosis; gradual; CT/MRV) · NOMI (shock, digitalis, diuretics, BB)
+- Megacolon: cecum >12, ascending >8, transverse >6, rectosigmoid >6.5 cm · toxic = megacolon + SIRS
+- Peritonitis: constant severe, aggravated by pressure/movement, rebound · peritonitis vs peritonism · primary vs secondary · localized vs generalized · free air
+- Take home: visceral + parietal · hollow viscus midline except colon · solid lateralized · dyspepsia = gastroduodenum epigastrium · colonic pain anywhere · gallstone complications · location not enough, associated symptoms

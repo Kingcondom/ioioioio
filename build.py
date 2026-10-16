@@ -16,7 +16,7 @@ build.py — สร้างเว็บทำข้อสอบ + PDF ทุก
 
 เพิ่มระบบใหม่ = เขียนไฟล์ JSON ใน data/ + เพิ่ม block ใน config.json เท่านั้น
 """
-import json, os, random, re, subprocess, sys, glob, collections
+import json, os, random, subprocess, sys, glob, collections
 
 ROOT = os.path.dirname(os.path.abspath(__file__)) or '.'
 os.chdir(ROOT)
@@ -31,24 +31,6 @@ CHROME_CANDIDATES = sorted(glob.glob('/opt/pw-browsers/chromium*/chrome-linux/ch
 
 
 # ---------------------------------------------------------------- helpers
-YEAR_RE = re.compile(r'MED\s?(\d{2})(?!\d)')
-YEAR_MIN, YEAR_MAX = 28, 35
-
-
-def exam_years(it):
-    """ปีที่ข้อนี้เคยออก — ดึงจาก ref และ src (ตัด MED421/422 ที่เป็นรหัสวิชาออกด้วย (?!\d))"""
-    blob = ' '.join(it.get('ref') or []) + ' ' + str(it.get('src') or '')
-    ys = {y for y in YEAR_RE.findall(blob) if YEAR_MIN <= int(y) <= YEAR_MAX}
-    return sorted(ys)
-
-
-def tag_years(items):
-    for it in items:
-        ys = exam_years(it)
-        if ys:
-            it['years'] = ys
-    return items
-
 def load_many(paths):
     out = []
     for p in paths:
@@ -148,6 +130,26 @@ def validate(setkey, mcq, meq, oldgroups, lectures):
         die(f"ชุด {setkey} มีปัญหา {len(errs)} จุด:\n    - " + '\n    - '.join(errs[:30]))
 
 
+def validate_hot(setkey, hot, mcq, meq, oldgroups, lectures):
+    """หัวข้อที่ออกบ่อย: ต้องอ้าง lec ที่มีจริง และ id ตัวอย่างต้องมีอยู่ในคลัง"""
+    if not hot:
+        return
+    errs = []
+    known = {it.get('id') for it in mcq + meq}
+    known |= {it.get('id') for g in oldgroups for it in g['items']}
+    for h in hot:
+        if h.get('lec') not in lectures:
+            errs.append(f"หัวข้อออกบ่อยอ้าง lec {h.get('lec')} ซึ่งไม่มีใน config.lectures")
+        for f in ('lecture', 'level', 'mcq'):
+            if not h.get(f):
+                errs.append(f"หัวข้อออกบ่อย lec {h.get('lec')} ขาดฟิลด์ {f}")
+        miss = [i for i in h.get('ids', []) if i not in known]
+        if miss:
+            warn(f"[{setkey}] หัวข้อออกบ่อย lec {h.get('lec')} อ้าง id ที่ไม่มีในคลัง: {', '.join(miss)}")
+    if errs:
+        die(f"ชุด {setkey} (หัวข้อออกบ่อย) มีปัญหา {len(errs)} จุด:\n    - " + '\n    - '.join(errs))
+
+
 # ---------------------------------------------------------------- build
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
@@ -165,6 +167,7 @@ def main():
         mcq = load_many(s.get('mcq', []))
         meq = load_many(s.get('meq', []))
         old_raw = load_many(s.get('old', []))
+        hot = load_many(s.get('hot', []))
 
         names = {}
         for it in mcq + meq:
@@ -172,6 +175,7 @@ def main():
         oldg = group_old(old_raw, s.get('lecture_order', []), names)
 
         validate(k, mcq, meq, oldg, CFG['lectures'])
+        validate_hot(k, hot, mcq, meq, oldg, CFG['lectures'])
 
         # สลับตำแหน่งเฉลย — เขียนข้อด้วย answer: 0 เสมอ แล้วให้ตรงนี้สลับให้
         # seed แยกต่อระบบ เพื่อให้ build ระบบเดียวหรือทั้งหมดได้ผลเหมือนกันเสมอ
@@ -182,14 +186,14 @@ def main():
             it['choices'] = [ch[i] for i in order]
             it['answer'] = it['choices'].index(correct)
 
-        tag_years(mcq); tag_years(meq)
-        for g in oldg: tag_years(g['items'])
-        bank[k] = {'mcq': mcq, 'meq': meq, 'old': oldg}
+        bank[k] = {'mcq': mcq, 'meq': meq, 'old': oldg, 'hot': hot}
         dist = collections.Counter(x['answer'] for x in mcq)
+        hotn = len(hot)
         codes = {c for it in mcq + meq + [x for g in oldg for x in g['items']] for c in it.get('nl', [])}
         print(f"  ✓ {k:8s} MCQ {len(mcq):3d} · MEQ/OSCE {len(meq):2d} · เก่า {sum(len(g['items']) for g in oldg):3d}"
               f"   กระจายเฉลย {dict(sorted(dist.items()))}"
-              + (f" · NL {len(codes)} หัวข้อ" if codes else ""))
+              + (f" · NL {len(codes)} หัวข้อ" if codes else "")
+              + (f" · ออกบ่อย {hotn} คาบ" if hotn else ""))
 
     # เรียงลำดับ set ตาม config
     bank = {s['key']: bank[s['key']] for s in CFG['sets'] if s['key'] in bank}
@@ -206,7 +210,7 @@ def main():
         return '\n'.join(
             f"{indent}{sel % s['key']}{{ --accent:{s['accent'][key_a]}; "
             f"--accent-soft:{s['accent'][key_s]}; --accent-ink:{s['accent'][key_i]}; }}"
-            for s in live[1:])   # ชุดแรกใช้สีจาก :root เป็นค่าเริ่มต้น
+            for s in live)   # ทุกชุดกำหนดสีของตัวเองชัดเจน (:root เป็นสีกลางของธีม)
 
     html = (t.replace('__TITLE__', CFG['site']['title'])
              .replace('__SUBTITLE__', CFG['site']['subtitle'])

@@ -7,6 +7,122 @@
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 03 · Pulmonary tuberculosis / ABG (อ.ศิวพร) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - สูตรยาวัณโรค 2IRZE/4IR และพิษของยาแต่ละตัว (EMB = ตา, INH = ปลายประสาท, RIF = สารคัดหลั่งส้ม, PZA = uric acid)
+  - การวินิจฉัย: Xpert MTB/RIF + AFB (TST/IGRA บอกการติดเชื้อ ไม่ใช่โรค)
+  - Drug-induced liver injury: หยุด INH/RIF/PZA เมื่อ ALT > 3 เท่าพร้อมอาการ หรือ > 5 เท่า
+  - TB ติดต่อทาง airborne → ห้องความดันลบ + N95
+  - แปลผล ABG: Henderson-Hasselbalch, Winter's formula, A-a gradient, delta ratio
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยไอเรื้อรัง เสมหะปนเลือด น้ำหนักลด — วินิจฉัย ส่งตรวจ ให้สูตรยา และจัดการผู้สัมผัสในบ้าน
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ย้อมเสมหะ AFB/Gram stain แล้วบอกเชื้อและยา
+  - แปลผล ABG ของผู้ป่วย COPD/ไตวาย
+
+ต้องตอบให้ได้:
+  - ตอบสูตรยาให้ครบทั้งระยะและจำนวนเดือน
+  - แปล ABG ให้ครบ 4 ขั้น: pH → ความผิดปกติหลัก → การชดเชย → anion gap
+
+เจอในโพย: MED28–MED35 (TB และ ABG ออกทุกรุ่น)
+ข้อตัวอย่าง: CH-MCQ-01, CH-MCQ-09, CH-OLD-01, CH-OLD-13, CH-OSCE-05
+
+### Lec 17 · Pleural disease / Respiratory failure (อ.สกล) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Light's criteria — คำนวณให้ได้ว่าเป็น exudate หรือ transudate
+  - pH < 7.2 / glucose < 40 / Gram stain บวก = complicated parapneumonic → ใส่ ICD
+  - Lymphocyte เด่น + ADA สูง = TB pleuritis
+  - Pneumothorax เล็ก (< 2 ซม. ไม่มีอาการ) = observe + O2 · tension = เจาะระบายทันที
+  - แยก type 1 กับ type 2 respiratory failure และเป้าหมาย SpO2 88-92% ใน COPD
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเหนื่อย ไข้ เจ็บแบบ pleuritic — เจาะน้ำเยื่อหุ้มปอด แปลผล และตัดสินใจใส่สายระบาย
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR tension pneumothorax แล้วบอกการรักษาทันที
+  - แปลผล pleural fluid ตาม Light's criteria
+
+ต้องตอบให้ได้:
+  - คำนวณ Light's criteria ให้เห็นตัวเลขในคำตอบ
+  - tension pneumothorax วินิจฉัยจากคลินิก ห้ามรอฟิล์ม
+
+เจอในโพย: MED29–MED35
+ข้อตัวอย่าง: CH-MCQ-17, CH-MCQ-20, CH-OLD-24, CH-OLD-29, CH-OSCE-02
+
+### Lec 21 · CXR interpretation / Occupational lung disease — ออกบ่อย
+
+MCQ — ถามอะไรบ่อย:
+  - อ่าน CXR อย่างเป็นระบบ (adequacy → airway → bone → cardiac → diaphragm → effusion → fields)
+  - Eggshell calcification = silicosis (และเสี่ยงวัณโรค)
+  - Asbestos → pleural plaque และ mesothelioma
+  - White-out hemithorax: ดูทิศทางที่ trachea เบี่ยง
+  - Solitary pulmonary nodule: ขนาด ขอบ การเติบโต และประวัติสูบบุหรี่
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเหนื่อยเรื้อรังจากการทำงาน — ซักประวัติอาชีพ แปลฟิล์ม และวางแผนสืบค้น
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR แล้วบรรยาย + ให้การวินิจฉัยแยกโรค 3 โรค
+
+ต้องตอบให้ได้:
+  - ซักประวัติอาชีพและระยะเวลาสัมผัสทุกครั้งที่เจอพังผืดในปอด
+
+เจอในโพย: MED31–MED35
+ข้อตัวอย่าง: CH-MCQ-25, CH-MCQ-29, CH-OLD-35, CH-OLD-37, CH-OLD-39
+
+### Lec 26 · Pneumonia (อ.ปรียานุช) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - CURB-65 ตัดสินว่ารักษาที่บ้านหรือรับไว้
+  - เชื้อตามบริบท: Klebsiella (เบาหวาน/สุรา + ฝีในตับ), Legionella (Na ต่ำ ท้องเสีย สับสน), Mycoplasma, melioidosis ในชาวนาไทย
+  - ไข้ไม่ลงหลัง 48-72 ชั่วโมง → หา empyema/abscess/เชื้อดื้อยา
+  - Aspiration pneumonia ในผู้ป่วยกลืนลำบาก
+  - แยก HAP/VAP ออกจาก CAP
+
+MEQ — โจทย์ที่เคยออก:
+  - Severe CAP with parapneumonic effusion — CURB-65, ยาที่เลือก, และการจัดการน้ำในเยื่อหุ้มปอด
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติไข้ ไอ เหนื่อย 3 วัน แล้วส่ง investigation
+  - อ่าน Gram stain เสมหะแล้วบอกเชื้อ
+
+ต้องตอบให้ได้:
+  - คำนวณ CURB-65 ให้เห็นในคำตอบ และเลือกยาตามสถานที่รักษา
+
+เจอในโพย: MED28–MED35
+ข้อตัวอย่าง: CH-MCQ-33, CH-MCQ-35, CH-OLD-43, CH-OLD-45, CH-MEQ-04
+
+### Lec 37 · Asthma / COPD (AL) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - Asthma กำเริบใน ER: O2 + SABA + สเตียรอยด์ระบบ (ไม่ใช่ ICS ขนาดสูงแทน)
+  - PaCO2 ปกติหรือสูงใน asthma กำเริบ = สัญญาณอันตราย ต้องเตรียมใส่ท่อ
+  - COPD วินิจฉัยด้วย post-bronchodilator FEV1/FVC < 0.70
+  - สิ่งที่ลดอัตราตายใน COPD: เลิกบุหรี่ + LTOT ตามเกณฑ์ (PaO2 ≤ 55 หรือ ≤ 59 ที่มี cor pulmonale)
+  - AECOPD ที่ pH < 7.35 และ PaCO2 > 45 → NIV
+
+MEQ — โจทย์ที่เคยออก:
+  - AECOPD ที่มี hypercapnic respiratory failure — แปล ABG, เป้าหมายออกซิเจน, ข้อบ่งชี้และข้อห้ามของ NIV
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปล ABG ของ COPD (acute on chronic respiratory acidosis)
+  - สอนพ่นยาและประเมินเทคนิคการใช้ inhaler
+
+ต้องตอบให้ได้:
+  - เป้าหมาย SpO2 88-92% ใน COPD และเหตุผล
+  - แยก asthma กับ COPD จาก spirometry และการตอบสนองต่อยา
+
+เจอในโพย: MED30–MED35
+ข้อตัวอย่าง: CH-MCQ-36, CH-MCQ-37, CH-OLD-48, CH-OLD-52, CH-MEQ-02
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [CH-MCQ-01] Latent tuberculosis infection in a household contact

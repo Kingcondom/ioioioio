@@ -7,6 +7,169 @@
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 04 · Pericarditis, Myocarditis (อ.เจตวรงค์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - เจ็บหน้าอกที่ดีขึ้นเมื่อโน้มตัวไปข้างหน้า → acute pericarditis
+  - ECG: ST ยกเป็นวงกว้างแบบเว้า + PR depression (ยกทุก lead ยกเว้น aVR)
+  - Electrical alternans + low voltage → pericardial effusion/tamponade
+  - Beck triad → tamponade = obstructive shock และทำ pericardiocentesis
+  - ยาตัวแรกของ pericarditis = NSAID/ASA + colchicine (ไม่ใช่ colchicine เดี่ยว ไม่ใช่สเตียรอยด์)
+  - Myocarditis สาเหตุที่พบบ่อยที่สุด = ไวรัส · doxorubicin = cardiomyopathy
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเจ็บหน้าอก เหนื่อย ความดันตก → ไล่จาก pericarditis ไปเป็น tamponade แล้วถามการรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR เงาหัวใจโตทรงขวดน้ำ + บอกการรักษา (pericardiocentesis)
+  - อ่าน ECG ชุด pericarditis / AV block / hyperkalemia / MI ให้แยกกันได้
+
+ต้องตอบให้ได้:
+  - แยก pericarditis (ST ยกทั่ว เว้า ไม่มี reciprocal) ออกจาก STEMI ให้ได้ทุกครั้ง
+  - tamponade วินิจฉัยจากคลินิก + echo ไม่ต้องรอผลอื่น และห้ามให้ยาขับปัสสาวะ
+
+เจอในโพย: MED30–MED35 (MCQ ทุกรุ่น · OSCE MED31, MED32)
+ข้อตัวอย่าง: C-MCQ-01, C-MCQ-02, C-OLD-04, C-OLD-05, C-OLD-07
+
+### Lec 10 · Shock (AL) (อ.เจตวรงค์) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - จำแนกชนิดของ shock จากโจทย์ (obstructive / cardiogenic / hypovolemic / distributive)
+  - JVP เป็นตัวแยกข้างเตียง: แฟบ = hypovolemic-distributive, สูง = cardiogenic-obstructive
+  - Anaphylaxis → adrenaline IM ต้นขา (ไม่ใช่ antihistamine/steroid) และ type I hypersensitivity
+  - Septic shock: ปลายมืออุ่น SVR ต่ำ ให้ noradrenaline เป็นตัวแรก
+  - Shock + AST/ALT สูงหลักพัน → ischemic hepatitis
+
+MEQ — โจทย์ที่เคยออก:
+  - Undifferentiated shock — ซักประวัติ ตรวจร่างกาย แยกชนิด แล้ววางแผนการให้สารน้ำ/ยา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - สถานีวัดความดันและประเมินสัญญาณชีพ + แปลผลภาวะช็อก
+
+ต้องตอบให้ได้:
+  - บอกชนิดของ shock ได้จาก JVP + ปลายมือเย็น/อุ่น + pulse pressure
+  - anaphylaxis ต้องตอบ adrenaline IM เสมอ และก่อนกลับบ้านต้องจ่ายปากกา adrenaline
+
+เจอในโพย: MED30–MED35 (ออกทุกรุ่น มักคู่กับ anaphylaxis)
+ข้อตัวอย่าง: C-MCQ-06, C-MCQ-07, C-OLD-18, C-OLD-24, C-OLD-28
+
+### Lec 13 · Ischemic heart diseases (AL) (อ.สุรพันธ์) — ออกหนักที่สุดของ Cardio
+
+MCQ — ถามอะไรบ่อย:
+  - STEMI + ไป PCI ได้ใน 120 นาที → primary PCI (ถ้าเกิน ให้ fibrinolytic ใน 30 นาที)
+  - อ่าน ECG บอกผนังและหลอดเลือด: V1-V4 = anterior/LAD, II-III-aVF = inferior/RCA
+  - Inferior STEMI ต้องติด V3R-V4R หา RV infarct (ห้ามให้ไนเตรต)
+  - เจ็บหน้าอก + ECG/troponin ปกติ → ตรวจซ้ำเป็นชุด ไม่ใช่ตัดออกทันที
+  - Statin ความแรงสูงในผู้ที่มี ASCVD แล้ว · xanthoma + LDL สูงมาก = LDL receptor เสีย
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยเจ็บแน่นหน้าอก ให้ ECG มาอ่าน → definitive diagnosis → ทำไมต้อง PCI → ยาที่ต้องให้ต่อ
+  - ห้ามตอบ 'CAG' เดี่ยว ๆ ว่าเป็นการรักษา ต้องระบุ reperfusion
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติเจ็บหน้าอก 4-5 นาที แล้วส่ง investigation
+  - อ่าน ECG 12 lead ให้ครบ rate-rhythm-axis-interval-chamber-ST/T-Q wave
+
+ต้องตอบให้ได้:
+  - เขียนอ่าน ECG ให้ครบทุกหัวข้อ ไม่ใช่บอกแต่ชื่อโรค
+  - ยาหลังกล้ามเนื้อหัวใจตาย: DAPT + statin + beta-blocker + ACEI
+
+เจอในโพย: MED28–MED35 ทุกรุ่น ทั้ง MCQ, MEQ และ OSCE/SAQ
+ข้อตัวอย่าง: C-MCQ-11, C-MCQ-15, C-OLD-33, C-OLD-42, C-OSCE-02
+
+### Lec 24 · Atrial fibrillation (อ.อภิชัย) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - ประเมิน stroke ด้วย CHA2DS2-VASc (HAS-BLED ใช้ดูเลือดออก ไม่ใช่เหตุผลไม่ให้ยา)
+  - Valvular AF (MS/ลิ้นเทียมโลหะ) ต้องใช้ warfarin ห้าม DOAC
+  - ตรวจร่างกาย: ชีพจรไม่สม่ำเสมอ + pulse deficit
+  - AF ที่ไม่คงที่ → synchronised cardioversion ทันที
+  - AF ใหม่ ต้องส่ง TFT เสมอ (ไทรอยด์เป็นพิษ) และถาม holiday heart
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยใจสั่นเหนื่อย + AF ร่วมกับหัวใจล้มเหลว/ลิ้นตีบ ถามการคุม rate และการป้องกัน stroke
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน ECG AF/atrial flutter → บอกการรักษา → ทำอะไรต่อเมื่อกลับเป็น sinus
+
+ต้องตอบให้ได้:
+  - แยก rate/rhythm control ออกจาก anticoagulation ให้ชัด (คนละเป้าหมาย)
+  - aspirin ไม่มีที่ใช้ป้องกัน stroke จาก AF แล้ว
+
+เจอในโพย: MED30–MED35 (MCQ ทุกรุ่น · OSCE MED31, MED32)
+ข้อตัวอย่าง: C-MCQ-18, C-MCQ-22, C-OLD-56, C-OLD-65, C-OSCE-03
+
+### Lec 27 · Rheumatic fever and Valvular heart disease (อ.ชนัญญา) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - จับคู่ murmur กับโรค: diastolic rumble ที่ apex = MS, blowing diastolic ที่ LSB = AR, systolic ejection ร้าวไปคอ = AS, pansystolic ร้าวไปรักแร้ = MR
+  - Mid-systolic click ที่เปลี่ยนตามท่ายืน = MVP
+  - ARF: Jones criteria + erythema marginatum + ส่ง ASO titre
+  - IE: ไข้เรื้อรัง + murmur → hemoculture 3 ชุด (ไม่ใช่ ASO) + echo; Roth spot/Osler/Janeway
+  - Fixed wide split S2 = ASD
+
+MEQ — โจทย์ที่เคยออก:
+  - Rheumatic heart disease with severe MS + AF + heart failure — ถาม pathophysiology และการรักษา
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - สถานีตรวจร่างกายหัวใจและบรรยาย murmur ให้ครบตำแหน่ง จังหวะ การร้าว
+
+ต้องตอบให้ได้:
+  - บอกตำแหน่งฟัง + ช่วงของ murmur + ท่าที่ทำให้ดังขึ้น
+  - MS ในไทยส่วนใหญ่มาจากไข้รูมาติก และต้องได้ secondary prophylaxis
+
+เจอในโพย: MED28–MED35 (โจทย์ murmur ออกทุกรุ่น)
+ข้อตัวอย่าง: C-MCQ-23, C-MCQ-27, C-OLD-72, C-OLD-87, C-OSCE-04
+
+### Lec 36 · Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ) — ออกทุกรุ่น (เน้น SAQ)
+
+MCQ — ถามอะไรบ่อย:
+  - แยก AV block: 1st = PR ยาวคงที่ · Mobitz I = PR ยาวขึ้นจนตก · Mobitz II = PR คงที่แล้วตก (ใส่ pacemaker) · complete = P กับ QRS แยกกัน
+  - SVT คงที่ → vagal แล้ว adenosine; ไม่คงที่ → synchronised cardioversion
+  - Pulseless VT/VF → defibrillation ทันที
+  - Tall peaked T = hyperkalemia → calcium gluconate ก่อน
+  - อ่าน ECG ให้ครบ 7 หัวข้อทุกครั้ง
+
+MEQ — โจทย์ที่เคยออก:
+  - ผู้ป่วยใจสั่น/หมดสติ ให้ ECG แล้วถามการรักษาทันทีและการรักษาต่อเนื่อง
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - SAQ ให้ ECG 1 แผ่น: บรรยาย + วินิจฉัย + การรักษา (ออกซ้ำทุกรุ่น)
+  - ชุด ECG ที่ออกซ้ำ: pericarditis, AV block, hyperkalemia, MI
+
+ต้องตอบให้ได้:
+  - เขียน rate, rhythm, axis, interval, chamber, ST-T, Q wave ให้ครบก่อนสรุปชื่อโรค
+
+เจอในโพย: MED29–MED35 (SAQ ECG แทบทุกรุ่น)
+ข้อตัวอย่าง: C-MCQ-29, C-MCQ-33, C-OLD-97, C-OLD-103, C-OSCE-02
+
+### Lec 39 · Hypertension / Heart failure / Pulmonary edema (อ.วิไล) — ออกทุกรุ่น
+
+MCQ — ถามอะไรบ่อย:
+  - แยก white coat / masked / resistant hypertension
+  - เบาะแส secondary HT: เริ่มเร็ว รุนแรง ดื้อยา K ต่ำโดยไม่ได้กินยาขับปัสสาวะ
+  - ยาความดันในครรภ์ = methyldopa/labetalol/nifedipine (ห้าม ACEI/ARB)
+  - HFrEF ต้องได้สี่เสาหลัก (ACEI/ARNI + beta-blocker + MRA + SGLT2i)
+  - กลไก pulmonary edema = hydrostatic pressure ในหลอดเลือดฝอยปอดสูง
+  - JVP แยก CHF ออกจากตับแข็ง · Aortic dissection ต้องให้ beta-blocker ก่อนยาขยายหลอดเลือด
+
+MEQ — โจทย์ที่เคยออก:
+  - Acute decompensated HF ที่มีความดันสูงและปอดบวมน้ำ — ถามลำดับการรักษาและยาที่ต้องปรับ
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - อ่าน CXR ของ CHF (cardiomegaly, cephalisation, Kerley B line, pleural effusion) + แปล UA
+
+ต้องตอบให้ได้:
+  - ตอบชื่อยาเป็นกลุ่มพร้อมเหตุผลว่าลดอัตราตายหรือลดอาการ
+  - หาตัวกระตุ้นของ HF เฉียบพลัน (FAILURE) ทุกครั้ง
+
+เจอในโพย: MED28–MED35 (ออกทุกรุ่น ทั้ง MCQ และ OSCE)
+ข้อตัวอย่าง: C-MCQ-35, C-MCQ-38, C-OLD-110, C-OLD-117, C-OSCE-05
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [C-MCQ-01] Acute pericarditis – first-line treatment

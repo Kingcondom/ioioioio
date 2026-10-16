@@ -1,0 +1,31 @@
+# Liver Function Tests — นพ.กิตติ ชื่นยง (Kitti Chuenyong)
+ไฟล์: Drive `1HWt4TMmRmpgSw8lT_NIjt74YQ5LC-zJ3` "Lec Liver Function Tests 63.pdf" · บรรยาย พฤ. 29 ต.ค. 2569 13:00–14:00 (เลื่อนจาก 6 ต.ค.) · ข้อความครบ · ไม่มีในคลังรายคาบ (Mock M09: MOCK-150)
+- LFT: bilirubin (total = direct + indirect) · AST ALT · ALP · GGT · 5'-NT · albumin/globulin · coagulogram
+- Patterns: hepatocellular · cholestasis · isolated ALP · mixed · jaundice
+- Aminotransferase: mild 2–5× (nonspecific; alcohol, NASH, infiltrative) · moderate 5–40× (viral, AIH, drugs, WD, hemochromatosis) · marked 40–100× (ischemic, acetaminophen)
+- AST/ALT > 2 alcohol · < 1 viral, NAFLD (except cirrhosis) · 1–2 nonspecific · AST >>>> ALT extrahepatic
+- Case 29M malaise anorexia → jaundice, shellfish weeks ago, TB 15 AST 1350 ALT 1525 PT 14 → acute hepatitis (HAV)
+- Acute hepatitis algorithm: Hx/PE (alcohol viral drugs) → IgM anti-HAV, HBsAg + IgM anti-HBc, anti-HCV, anti-HDV if HBV → negative: WD, EBV, CMV, AIH, CHF → biopsy
+- Mild diffuse LFT: Hx/PE alcohol drug · viral B C · metabolic → NAFLD · autoimmune: globulin ANA SMA · hemochromatosis, Wilson · biopsy
+- Chronic hepatitis: risk viral drugs AI → HBV HCV → AIH WD hemochromatosis → biopsy
+- AIH: young female · asymptomatic/fatigue/jaundice/pruritus/arthralgia/ALF 2–5% · thyroiditis 10–23%, UC, celiac, T1DM, RA 2–5%, SLE 1–2% · type 1 ANA ASMA, type 2 anti-LKM anti-LC1 · histo interface hepatitis lymphoplasmacytic periportal · simplified score ≥6 probable ≥7 definite
+- Ischemic hepatitis ALT/LDH < 1.5
+- Wilson: hepatic/neuro · AST/ALT > 2.2 and ALP/TB < 4 · extrapyramidal · KF rings, sunflower cataract · ceruloplasmin < 200 mg/L
+- Cholestasis = direct hyperbilirubinemia + ALP > 3× · small duct may have normal bili
+- Obstructive (stone, periampullary CA, choledochal cyst, benign stricture) vs medical (drug, sepsis, PBC, PSC, AIDS cholangiopathy) · clues obstructive: RUQ pain fever, acholic stool, Courvoisier, pruritus
+- Case 57M fever jaundice abdominal pain 2 d T39 Murphy neg, normal stool, TB/DB 5/3 AST/ALT 55/60 ALP 380 → interpret, Dx, next
+- PBC: pruritus jaundice fatigue · ALP GGT up, transaminase normal · AMA, ASMA up to 67%, ANA up to 50%
+- Case 74F pneumonia jaundice TB/DB 5/3 AST ALT normal ALP 540 US normal → sepsis-induced cholestasis
+- ALP sources: bone placenta intestine leukocytes kidney · physiologic adolescent pregnancy postprandial · confirm liver: GGT, 5'-NT, isoenzyme · delta bilirubin (bili–albumin; t1/2 = albumin)
+- Case 30F checkup ALP 580 otherwise normal
+- GGT: hepatocyte + biliary epithelium; extrahepatic kidney spleen pancreas heart lung brain intestine prostate · sensitive · DM renal MI rheumatic pancreatitis · induced by drugs alcohol · NOT in bone
+- PT: all factors except VIII (endothelium) · factor V + vit K SC to differentiate hepatic dysfunction vs vit K def · albumin t1/2 ~20 d · CLD: ↓albumin ↑globulin
+- Isolated ALP: one main duct obstruction, infiltrative, mass, early small duct cholestasis (PBC, drug) · Isolated GGT: alcohol, drugs, anticonvulsants, warfarin
+- IB/TB > 0.8 · DB/TB > 0.5 = liver disease
+- Mixed: transaminase > 2× + ALP > 3× · passing stone, DILI, overlap, infiltrative, congested liver, SIRS
+- R ratio = (ALT/ULN)/(ALP/ULN): < 2 cholestatic · 2–5 mixed · > 5 hepatocellular (AJG 2017)
+- Fever + jaundice: hepatitis (AIH, DILI, fulminant, alcoholic, typhoidal, leptospirosis, malaria, infection with hemolysis) · cholestasis (PSC PBC TB melioidosis infiltrative liver abscess ascending cholangitis drug AIDS sepsis)
+- Pattern table: toxin/ischemia AST 50–100× · viral 5–50× · alcohol 2–5× · complete obstruction 1–5× ALP 2–20× bili 1–30× · partial 1–5× ALP 2–10× bili 1–5× · infiltrative 1–3× ALP 1–20× bili often normal · PT prolonged not respond to vit K in severe hepatic, respond in obstruction
+- Jaundice algorithm: Hx PE LFT → hepatitis / mixed (drug, overlap) / cholestasis → US → dilated CBD (cholangitis → ERCP; else CT/MRCP/ERCP) vs not dilated (serum markers, biopsy)
+- Case 23F pain pills "1 handful" 1 wk, jaundice fatigue low fever, liver 3 cm, mild spleen, A/G 3.4/3.5, TB/DB 8/5, AST 3580 ALT 2500 ALP 230
+- Viral serology tables (overlap with hepatitis lecture)

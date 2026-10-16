@@ -7,6 +7,84 @@
 
 ---
 
+## ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย (สรุปจากคลังข้อสอบเก่า MED28–MED35)
+
+### Lec 08 · Allergy and clinical immunology — คาดว่าออกบ่อย (อิงแนวข้อสอบ ID/Skin เดิม)
+
+MCQ — ถามอะไรบ่อย:
+  - Anaphylaxis → adrenaline IM ต้นขา และก่อนกลับบ้านต้องได้ปากกา adrenaline
+  - Urticaria = type I hypersensitivity · ตุ่มอยู่เกิน 24 ชม. = urticarial vasculitis
+  - Allopurinol + HLA-B*58:01 / carbamazepine + HLA-B*15:02
+  - SJS/TEN: หยุดยาต้นเหตุทันที ดูแลแบบแผลไฟไหม้ ปรึกษาจักษุ
+  - DRESS: ผื่น + eosinophilia + ตับอักเสบ มาช้า 2-8 สัปดาห์
+  - ปฏิกิริยาจากการให้เลือด: AHTR vs FNHTR vs allergic (ชนิดเดียวที่ให้เลือดต่อได้)
+
+MEQ — โจทย์ที่เคยออก:
+  - Anaphylaxis จากยา — ลำดับการรักษา 5 ขั้นแรก ระยะเวลาสังเกตอาการ และการดูแลก่อนจำหน่าย
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - ซักประวัติแพ้ยาให้ได้ว่าอาการคืออะไร เกิดวันที่เท่าไรของยา และรุนแรงแค่ไหน
+  - SAQ ปฏิกิริยาจากการให้เลือด: วินิจฉัย กลไก และสิ่งส่งตรวจ
+
+ต้องตอบให้ได้:
+  - แยก 'แพ้ยาจริง' ออกจาก 'ผื่นจากไวรัส' ให้ได้ เพราะเปลี่ยนการรักษาทั้งชีวิต
+  - SJS/TEN และ DRESS = ห้ามใช้ยานั้นซ้ำตลอดชีวิต ห้าม desensitize
+
+เจอในโพย: อิงจากโพย MED33–MED35 หมวด Skin/ID/Hemato (แพ้ยา, transfusion reaction, anaphylaxis)
+ข้อตัวอย่าง: AIR-MCQ-01, AIR-MCQ-06, AIR-OLD-04, AIR-OLD-06, AIR-MEQ-03
+
+### Lec 23 · Approach to arthritis / crystal and infective arthropathy — ออกบ่อย (MEQ/SAQ ผลึกออกซ้ำ)
+
+MCQ — ถามอะไรบ่อย:
+  - ข้ออักเสบเฉียบพลันข้อเดียว = เจาะข้อก่อนเสมอ (cell count, crystal, Gram stain, culture)
+  - เข็ม negative birefringent = gout · rhomboid positive = CPPD
+  - WBC > 50,000 + PMN > 90% = septic arthritis → ระบายหนอง + cloxacillin
+  - uric acid ปกติตอน flare ไม่ตัดเก๊าท์ และ uric acid สูงไม่ตัดข้อติดเชื้อ
+  - ยาวัณโรคที่ทำให้ uric acid สูง = pyrazinamide
+  - ULT: เริ่มต่ำ เพิ่มช้า + colchicine กัน flare 3-6 เดือน เป้าหมาย < 6 (มี tophus < 5)
+
+MEQ — โจทย์ที่เคยออก:
+  - ชายปวดเข่ามากจนเดินไม่ได้ + ไข้ — DDx, วิธีดูน้ำไขข้อ, definitive diagnosis, การรักษาระยะแรกและระยะยาว
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - SAQ ภาพผลึกใต้ polarised light → บรรยาย + วินิจฉัย + ค่าที่บ่ง septic arthritis
+  - อ่านฟิล์มข้อมือ/มือแยก RA กับ OA
+
+ต้องตอบให้ได้:
+  - บรรยายผลึกให้ครบทั้งรูปร่าง การหักเหแสง และตำแหน่งในเซลล์
+  - เจอผลึกแล้วยังต้องส่งเพาะเชื้อเสมอ
+
+เจอในโพย: MED33–MED35 (MEQ เก๊าท์และ SAQ ผลึกออกซ้ำ)
+ข้อตัวอย่าง: AIR-MCQ-14, AIR-MCQ-15, AIR-OLD-19, AIR-OLD-24, AIR-MEQ-01
+
+### Lec 33 · Connective tissue diseases and vasculitis — ออกบ่อย
+
+MCQ — ถามอะไรบ่อย:
+  - ANA = คัดกรอง · anti-dsDNA/anti-Sm = ยืนยัน · C3/C4 ต่ำ = active
+  - Lupus nephritis: โปรตีนรั่ว ≥ 0.5 g/วัน หรือ active sediment → เจาะชิ้นเนื้อไตก่อนให้ยา
+  - Drug-induced lupus: anti-histone บวก, anti-dsDNA ลบ, complement ปกติ → หยุดยา
+  - APS: แท้งซ้ำ + ลิ่มเลือด → LA, anticardiolipin, anti-β2GPI ยืนยันซ้ำที่ 12 สัปดาห์
+  - ผู้ป่วยกดภูมิ + ไข้ = คิดติดเชื้อก่อนโรคกำเริบ (PCP)
+  - Hydroxychloroquine ต้องตรวจจอตา · statin myalgia ส่ง CK · GCA ให้สเตียรอยด์ก่อน biopsy
+
+MEQ — โจทย์ที่เคยออก:
+  - SLE ที่มี lupus nephritis — วินิจฉัย ส่งตรวจ ประเมิน class และวางแผนการรักษาพร้อมการป้องกันการติดเชื้อ
+  - ข้ออักเสบหลายข้อเรื้อรัง → early RA และหลักการ treat-to-target
+
+OSCE/SAQ — สถานีที่เคยออก:
+  - แปล UA ของ lupus nephritis
+  - SAQ ผื่น palpable purpura → กลไกและวินิจฉัยแยกโรค
+  - SAQ กล้ามเนื้ออ่อนแรงส่วนต้น + CK สูง → dermatomyositis และการคัดกรองมะเร็ง
+
+ต้องตอบให้ได้:
+  - จำคู่ autoantibody กับโรคให้แม่น
+  - ผู้ป่วยโรคภูมิต้านตนเองที่มีไข้ ต้องตัดการติดเชื้อออกก่อนเพิ่มยากดภูมิเสมอ
+
+เจอในโพย: MED33–MED35 (หมวด Rheumato)
+ข้อตัวอย่าง: AIR-MCQ-31, AIR-MCQ-36, AIR-OLD-34, AIR-OLD-39, AIR-MEQ-02
+
+---
+
 ## ส่วนที่ 1 · MCQ ข้อใหม่
 
 ### [AIR-MCQ-01] Anaphylaxis — first-line treatment

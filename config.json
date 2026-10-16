@@ -3,7 +3,7 @@
   "shuffle_seed": 20260913,
   "site": {
     "title": "MED421 Ward Drill",
-    "subtitle": "Cardio · Nephro · Chest · Neuro · AIR · Mock NL — ข้อสอบใหม่ 230 ข้อ + ชุดจำลอง NL Part 1 อีก 200 ข้อแยกตามระบบ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
+    "subtitle": "Cardio · Nephro · Chest · AIR · Mock NL — ข้อสอบใหม่ 210 ข้อ + ชุดจำลอง NL Part 1 อีก 200 ข้อแยกตามระบบ พร้อมคลังข้อสอบเก่า MED28–MED35 แยกตาม lecture ของกลุ่ม 3 (C+D) รพ.ราชวิถี · ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 (NL) รายข้อ"
   },
   "lectures": {
     "03": {
@@ -18,11 +18,6 @@
     },
     "05": {
       "date": "พฤ. 17 ก.ย.",
-      "week": 1,
-      "al": 0
-    },
-    "07": {
-      "date": "TBD — แก้ใน config.lectures",
       "week": 1,
       "al": 0
     },
@@ -175,86 +170,6 @@
       "date": "NL Part 1 · ชุดจำลอง",
       "week": "",
       "al": 0
-    },
-    "N02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": "",
-      "al": 0
-    },
-    "I01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "I02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "I03": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "G01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "G02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "G03": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "E01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "E02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "E03": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "H01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "H02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "H03": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "D01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "D02": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
-    },
-    "O01": {
-      "date": "ยังไม่ระบุคาบ — รอ MED421-422_Lecture_List.txt",
-      "week": 0,
-      "al": 0
     }
   },
   "sets": [
@@ -264,12 +179,12 @@
       "thai": "ระบบหัวใจและหลอดเลือด",
       "blurb": "7 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น",
       "accent": {
-        "light": "#8c1d2f",
-        "soft": "#f6e9eb",
-        "ink": "#6e1624",
-        "dark": "#ff8fa3",
-        "darkSoft": "#24151a",
-        "darkInk": "#ffb3c0"
+        "light": "#e4586a",
+        "soft": "#ffe5e9",
+        "ink": "#b5384a",
+        "dark": "#ff97a3",
+        "darkSoft": "#3a2126",
+        "darkInk": "#ffb9c2"
       },
       "lecture_order": [
         "04",
@@ -290,6 +205,9 @@
       "old": [
         "data/cardio_old_a.json",
         "data/cardio_old_b.json"
+      ],
+      "hot": [
+        "data/cardio_hot.json"
       ]
     },
     {
@@ -298,12 +216,12 @@
       "thai": "ระบบไตและสมดุลเกลือแร่",
       "blurb": "7 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น",
       "accent": {
-        "light": "#14585f",
-        "soft": "#e4eef0",
-        "ink": "#0f464b",
-        "dark": "#5fe3a1",
-        "darkSoft": "#0f2419",
-        "darkInk": "#8ff0bf"
+        "light": "#2ea37c",
+        "soft": "#dcf1e7",
+        "ink": "#1e7a5c",
+        "dark": "#5ec79e",
+        "darkSoft": "#173328",
+        "darkInk": "#9fe4c6"
       },
       "lecture_order": [
         "05",
@@ -324,6 +242,9 @@
       "old": [
         "data/nephro_old_a.json",
         "data/nephro_old_b.json"
+      ],
+      "hot": [
+        "data/nephro_hot.json"
       ]
     },
     {
@@ -332,12 +253,12 @@
       "thai": "ระบบการหายใจและทรวงอก",
       "blurb": "5 คาบบรรยาย · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma/COPD",
       "accent": {
-        "light": "#4a5a86",
-        "soft": "#e6e9f2",
-        "ink": "#38456b",
-        "dark": "#8fb4ff",
-        "darkSoft": "#141b2b",
-        "darkInk": "#b3ccff"
+        "light": "#4a76c9",
+        "soft": "#e3ecfb",
+        "ink": "#345aa0",
+        "dark": "#8fb1ea",
+        "darkSoft": "#1a2338",
+        "darkInk": "#b8ccf3"
       },
       "lecture_order": [
         "03",
@@ -356,36 +277,10 @@
       "old": [
         "data/chest_old_a.json",
         "data/chest_old_b.json",
-        "data/chest_old_c.json",
-        "data/chest_old_papers.json"
-      ]
-    },
-    {
-      "key": "neuro",
-      "label": "Neuro",
-      "thai": "ระบบประสาท",
-      "blurb": "ชุดระบบประสาท — คาบ acute ischemic stroke (กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด) ร่วมกับหัวข้ออื่นของระบบประสาทที่ออกสอบบ่อย (SAH · เยื่อหุ้มสมองอักเสบ · ชัก · GBS · myasthenia · ไขสันหลังถูกกด · ปวดศีรษะ · เวียนศีรษะ)",
-      "accent": {
-        "light": "#6b3f8c",
-        "soft": "#efe8f5",
-        "ink": "#542f70",
-        "dark": "#c79bff",
-        "darkSoft": "#1d1526",
-        "darkInk": "#d9bcff"
-      },
-      "lecture_order": [
-        "07",
-        "N02"
+        "data/chest_old_c.json"
       ],
-      "mcq": [
-        "data/neuro_mcq_a.json",
-        "data/neuro_mcq_b.json"
-      ],
-      "meq": [
-        "data/neuro_meq_osce.json"
-      ],
-      "old": [
-        "data/neuro_old_papers.json"
+      "hot": [
+        "data/chest_hot.json"
       ]
     },
     {
@@ -394,12 +289,12 @@
       "thai": "ภูมิแพ้ ภูมิคุ้มกัน และโรคข้อรูมาติก",
       "blurb": "3 คาบบรรยาย · Allergy/Immunology/Rheumatology — แพ้ยา anaphylaxis · gout/CPPD/septic arthritis · SLE RA vasculitis myositis",
       "accent": {
-        "light": "#8a5a12",
-        "soft": "#f4ecdd",
-        "ink": "#6d460c",
-        "dark": "#f5c268",
-        "darkSoft": "#241d12",
-        "darkInk": "#f8d596"
+        "light": "#d79a1f",
+        "soft": "#fdf0d3",
+        "ink": "#9e7010",
+        "dark": "#f0c164",
+        "darkSoft": "#332a14",
+        "darkInk": "#f7d894"
       },
       "lecture_order": [
         "08",
@@ -415,182 +310,10 @@
       ],
       "old": [
         "data/air_old_a.json",
-        "data/air_old_b.json",
-        "data/air_old_papers.json"
-      ]
-    },
-    {
-      "key": "infect",
-      "label": "ID",
-      "thai": "โรคติดเชื้อ",
-      "blurb": "5 คาบบรรยาย · ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ · ไข้เฉียบพลันในเขตร้อน (เดงกี เลปโตสไปโรซิส สครับไทฟัส มาลาเรีย เมลิออยโดสิส ไข้รากสาดน้อย) · เอชไอวีและโรคติดเชื้อฉวยโอกาส",
-      "accent": {
-        "light": "#0f766e",
-        "soft": "#d5f2ee",
-        "ink": "#0b5b54",
-        "dark": "#4fd6c4",
-        "darkSoft": "#0e2422",
-        "darkInk": "#8fe9dd"
-      },
-      "lecture_order": [
-        "I01",
-        "I02",
-        "I03"
+        "data/air_old_b.json"
       ],
-      "mcq": [
-        "data/infect_mcq_a.json",
-        "data/infect_mcq_b.json",
-        "data/infect_mcq_c.json"
-      ],
-      "meq": [
-        "data/infect_meq_osce.json"
-      ],
-      "old": [
-        "data/infect_old_papers.json"
-      ]
-    },
-    {
-      "key": "gi",
-      "label": "GI",
-      "thai": "ระบบทางเดินอาหารและตับ",
-      "blurb": "4 คาบบรรยาย · เลือดออกทางเดินอาหารส่วนต้นและโรคหลอดอาหาร-กระเพาะอาหาร · ตับและทางเดินน้ำดี · ลำไส้ ตับอ่อน และอาการท้องเสีย",
-      "accent": {
-        "light": "#b45309",
-        "soft": "#fdead5",
-        "ink": "#8a3f07",
-        "dark": "#ff9f5a",
-        "darkSoft": "#261a11",
-        "darkInk": "#ffc296"
-      },
-      "lecture_order": [
-        "G01",
-        "G02",
-        "G03"
-      ],
-      "mcq": [
-        "data/gi_mcq_a.json",
-        "data/gi_mcq_b.json",
-        "data/gi_mcq_c.json"
-      ],
-      "meq": [
-        "data/gi_meq_osce.json"
-      ],
-      "old": [
-        "data/gi_old_papers.json"
-      ]
-    },
-    {
-      "key": "endo",
-      "label": "Endo",
-      "thai": "ต่อมไร้ท่อและเมตาบอลิก",
-      "blurb": "3 คาบบรรยาย · เบาหวานและภาวะฉุกเฉินทางเมตาบอลิก (DKA · HHS · น้ำตาลต่ำ) · โรคของต่อมไทรอยด์ · ต่อมหมวกไต ต่อมใต้สมอง และเมตาบอลิซึมของกระดูก",
-      "accent": {
-        "light": "#4d7c0f",
-        "soft": "#e9f3d3",
-        "ink": "#3c620c",
-        "dark": "#c2dd52",
-        "darkSoft": "#1b2110",
-        "darkInk": "#d8e98d"
-      },
-      "lecture_order": [
-        "E01",
-        "E02",
-        "E03"
-      ],
-      "mcq": [
-        "data/endo_mcq_a.json",
-        "data/endo_mcq_b.json",
-        "data/endo_mcq_c.json"
-      ],
-      "meq": [
-        "data/endo_meq_osce.json"
-      ],
-      "old": [
-        "data/endo_old_papers.json"
-      ]
-    },
-    {
-      "key": "heme",
-      "label": "Heme",
-      "thai": "โลหิตวิทยา",
-      "blurb": "3 คาบบรรยาย · โลหิตจางและธาลัสซีเมีย · เกล็ดเลือด การแข็งตัวของเลือด และการให้เลือด · มะเร็งเม็ดเลือดและภาวะฉุกเฉินที่เกี่ยวข้อง",
-      "accent": {
-        "light": "#a21351",
-        "soft": "#fbe0ee",
-        "ink": "#820f41",
-        "dark": "#ef86c8",
-        "darkSoft": "#26121d",
-        "darkInk": "#f5b0dc"
-      },
-      "lecture_order": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "mcq": [
-        "data/heme_mcq_a.json",
-        "data/heme_mcq_b.json",
-        "data/heme_mcq_c.json"
-      ],
-      "meq": [
-        "data/heme_meq_osce.json"
-      ],
-      "old": [
-        "data/heme_old_papers.json"
-      ]
-    },
-    {
-      "key": "derm",
-      "label": "Derm",
-      "thai": "ผิวหนัง",
-      "blurb": "2 คาบบรรยาย · ผื่นเฉียบพลันและภาวะฉุกเฉินทางผิวหนัง (SSSS · erythema multiforme · เนื้อเยื่ออ่อนติดเชื้อชนิดเนื้อตาย · จ้ำเลือด · eczema herpeticum · ผิวแดงลอกทั่วตัว · AGEP) · ผื่นเรื้อรังและผื่นติดเชื้อที่พบบ่อย",
-      "accent": {
-        "light": "#0369a1",
-        "soft": "#d9eefb",
-        "ink": "#025680",
-        "dark": "#5fc8f0",
-        "darkSoft": "#0d2029",
-        "darkInk": "#9fdef7"
-      },
-      "lecture_order": [
-        "D01",
-        "D02"
-      ],
-      "mcq": [
-        "data/derm_mcq_a.json",
-        "data/derm_mcq_b.json"
-      ],
-      "meq": [
-        "data/derm_meq_osce.json"
-      ],
-      "old": [
-        "data/derm_old_papers.json"
-      ]
-    },
-    {
-      "key": "onco",
-      "label": "Onco",
-      "thai": "มะเร็งวิทยา",
-      "blurb": "1 คาบบรรยาย · หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง — SVC obstruction · ไขสันหลังถูกกดทับ · ก้อนแพร่กระจายในสมอง · มะเร็งปอด · การคัดกรองมะเร็งที่พบบ่อย · การคุมความปวด · พิษของยาเคมีบำบัด · การดูแลประคับประคอง",
-      "accent": {
-        "light": "#6b5b3f",
-        "soft": "#f0ead9",
-        "ink": "#54472f",
-        "dark": "#cbbfa8",
-        "darkSoft": "#201d16",
-        "darkInk": "#ddd5c5"
-      },
-      "lecture_order": [
-        "O01"
-      ],
-      "mcq": [
-        "data/onco_mcq_a.json"
-      ],
-      "meq": [
-        "data/onco_meq_osce.json"
-      ],
-      "old": [
-        "data/onco_old_papers.json"
+      "hot": [
+        "data/air_hot.json"
       ]
     },
     {
@@ -599,12 +322,12 @@
       "thai": "ข้อสอบจำลอง NL Part 1 (200 ข้อ)",
       "blurb": "ชุดจำลองศรว. ขั้นตอนที่ 1 · 200 ข้อ แยกตามระบบ 11 สาขา · เฉลยพร้อมคำอธิบายภาษาไทยรายข้อ",
       "accent": {
-        "light": "#4b3b8f",
-        "soft": "#ebe8f7",
-        "ink": "#3a2e73",
-        "dark": "#b3a5ff",
-        "darkSoft": "#1b1826",
-        "darkInk": "#cdc3ff"
+        "light": "#7b63c9",
+        "soft": "#ece7fb",
+        "ink": "#5a45a0",
+        "dark": "#b2a0ea",
+        "darkSoft": "#221d38",
+        "darkInk": "#cdc0f3"
       },
       "lecture_order": [
         "M01",

@@ -20,6 +20,8 @@
 3. สร้างข้อสอบใหม่ 50 ข้อ (MCQ 40 + MEQ 5 + OSCE/SAQ 5) ตาม schema §3.1 และ §3.2
    -> data/id_mcq_a.json, data/id_mcq_b.json, data/id_meq_osce.json
 4. เพิ่ม block ของระบบนี้ใน config.json (พร้อมสีและ lecture_order) และเพิ่ม lecture ใหม่ใน config.lectures
+4.0 เขียน data/id_hot.json สรุป "หัวข้อที่ออกสอบบ่อย" ของทุก lecture ตาม schema §3.4
+    (แยกเป็น mcq / meq / osce / must + ระบุรุ่นที่เคยออก + ใส่ ids ของข้อตัวอย่างในคลัง)
 4.1 ผูกรหัสเกณฑ์แพทยสภา พ.ศ. 2567 ในฟิลด์ "nl" ของทุกข้อ (ทั้งข้อใหม่และคลังเก่า)
     - ใช้รหัสจาก refs/nl_2567.json ถ้ารหัสที่ต้องใช้ยังไม่มี ให้เพิ่มเข้าไปพร้อม title/section/page/group ตามต้นฉบับประกาศ
     - build.py จะเตือนให้เองว่าข้อไหนยังไม่ผูก และรหัสไหนไม่มีในดัชนี (ดู SPEC.md §7)

@@ -166,7 +166,7 @@ def nl_html(it):
 
 def render_set(setkey):
     S = SETMETA[setkey]; B = BANK[setkey]
-    mcq = B['mcq']; longs = B['meq']; old = B['old']
+    mcq = B['mcq']; longs = B['meq']; old = B['old']; hot = B.get('hot') or []
     meqs = [x for x in longs if x['part'] == 'MEQ']
     osces = [x for x in longs if x['part'] != 'MEQ']
     nold = sum(len(g['items']) for g in old)
@@ -188,10 +188,36 @@ def render_set(setkey):
         <dt>ระบบนี้</dt><dd>{S['blurb']}</dd>
       </dl>
       <div class="spacer"></div>
-      <div class="note"><b>สารบัญ</b> &nbsp; ส่วนที่ 1 ข้อสอบใหม่ (โจทย์) &nbsp;·&nbsp; ส่วนที่ 2 เฉลยและคำอธิบาย &nbsp;·&nbsp; ส่วนที่ 3 คลังข้อสอบเก่าแยกตาม lecture<br><br>
+      <div class="note"><b>สารบัญ</b> &nbsp; ส่วนที่ 0 หัวข้อที่ออกสอบบ่อย &nbsp;·&nbsp; ส่วนที่ 1 ข้อสอบใหม่ (โจทย์) &nbsp;·&nbsp; ส่วนที่ 2 เฉลยและคำอธิบาย &nbsp;·&nbsp; ส่วนที่ 3 คลังข้อสอบเก่าแยกตาม lecture<br><br>
       คำเฉลยในโพยเก่าบางข้อไม่ตรงกับแนวทางเวชปฏิบัติปัจจุบัน จุดที่ต่างถูกทำเครื่องหมายไว้ในคำอธิบาย
       เอกสารนี้ใช้ทบทวนประกอบตำราและแนวทางเวชปฏิบัติ ไม่ใช่เอกสารทางการของหลักสูตร</div>
     </div>""")
+
+    # ---- section 0: หัวข้อที่ออกบ่อย
+    if hot:
+        P.append('<h2 class="sec">ส่วนที่ 0 · หัวข้อที่ออกสอบบ่อย'
+                 '<span class="sub">สรุปจากคลังข้อสอบเก่า MED28–MED35 ว่าแต่ละคาบถูกถามซ้ำเรื่องอะไร '
+                 'และถามในรูปแบบ MCQ, MEQ หรือ OSCE/SAQ</span></h2>')
+        for h in hot:
+            d, w, al = LEC.get(h['lec'], ('', '', 0))
+            P.append('<h4 class="lec">Lec %s · %s &nbsp;—&nbsp; %s (%s)</h4>'
+                     % (E(h['lec']), E(short(h['lecture'])), E(d), E(h.get('level', ''))))
+            for title, key in (('MCQ — ถามอะไรบ่อย', 'mcq'),
+                               ('MEQ — โจทย์ที่เคยออก', 'meq'),
+                               ('OSCE / SAQ — สถานีที่เคยออก', 'osce'),
+                               ('ต้องตอบให้ได้', 'must')):
+                rows = h.get(key) or []
+                if not rows:
+                    continue
+                P.append('<div class="refs"><b class="tag">%s</b><ul>%s</ul></div>'
+                         % (title, ''.join('<li>%s</li>' % inline(x) for x in rows)))
+            tail = []
+            if h.get('seen'):
+                tail.append('เจอในโพย: %s' % E(h['seen']))
+            if h.get('ids'):
+                tail.append('ข้อตัวอย่างในเล่มนี้: %s' % E(', '.join(h['ids'])))
+            if tail:
+                P.append('<p class="lecnote">%s</p>' % ' &nbsp;·&nbsp; '.join(tail))
 
     # ---- section 1: questions
     P.append('<h2 class="sec">ส่วนที่ 1 · ข้อสอบ<span class="sub">ทำโดยยังไม่ดูเฉลย — เฉลยอยู่ในส่วนที่ 2</span></h2>')
