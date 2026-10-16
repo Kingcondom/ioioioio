@@ -315,24 +315,19 @@ def arth_ppi():
            box(220, 8, 190, 50, "bad", "Hyperparathyroidism\n→ Ca²⁺ สูง", fs=11.5),
            line(315, 58, 315, 76, "ln", "ah"),
            box(220, 78, 190, 40, "ac", "Ca²⁺ ↑", "b"),
-           line(105, 118, 180, 162, "ln", "ah"), line(315, 118, 240, 162, "ln", "ah"),
-           box(110, 164, 200, 48, "ms", "ผลึก CPPD ในกระดูกอ่อน\n= chondrocalcinosis", fs=12),
-           line(30, 118, 30, 248, "lok da"), t(36, 236, "สลาย PPi ทิ้ง", "xs tok"),
-           box(10, 250, 180, 52, "ok", "ALP / pyrophosphatase\nสลาย PPi → Pi\n(ใช้ Mg²⁺ เป็น cofactor)", fs=11),
-           box(222, 238, 188, 76, "bad", "ยับยั้งเอนไซม์นี้\n• hypophosphatasia (ALP ↓)\n• Mg ต่ำ (ขาด cofactor)\n• เหล็ก/ทองแดงเกิน", fs=11),
-           line(222, 276, 194, 276, "lbad w2"), line(194, 266, 194, 286, "lbad w2"),
-           line(210, 212, 210, 232, "ln"), path("M210 212 V226 H206", "ln"),
-           line(160, 212, 160, 232, "ln"), line(160, 232, 160, 232, "ln"),
-           box(10, 326, 400, 48, "bad", "ผลึกหลุดเข้าช่องข้อ → neutrophil + IL-1β = pseudogout (เข่า ข้อมือ)\nสะสมเรื้อรัง → กระดูกอ่อนแข็งเปราะ = pseudo-OA", fs=11),
-           path("M300 212 V220 H416", ""), ]
-    out = [p for p in out if p and 'class=""' not in p]
-    out += [path("M310 188 H416", "")] if False else []
-    out.append(path("M310 188 C 420 200, 420 300, 400 324", "ln", "ah"))
+           line(120, 118, 170, 148, "ln", "ah"), line(300, 118, 250, 148, "ln", "ah"),
+           box(110, 150, 200, 46, "ms", "ผลึก CPPD ในกระดูกอ่อน\n= chondrocalcinosis", fs=12),
+           line(210, 196, 210, 212, "ln", "ah"),
+           box(40, 214, 370, 46, "bad", "ผลึกหลุดเข้าช่องข้อ → neutrophil + IL-1β = pseudogout\nสะสมเรื้อรัง → กระดูกอ่อนแข็งเปราะ = pseudo-OA", fs=11),
+           path("M22 118 V318 H38", "lok w2 da", "ah-ok"), t(46, 284, "สลาย PPi ทิ้ง", "xs tok b"),
+           box(40, 292, 170, 54, "ok", "ALP / pyrophosphatase\nPPi → Pi\n(ใช้ Mg²⁺ เป็น cofactor)", fs=10.8),
+           box(240, 280, 170, 80, "bad", "ยับยั้งเอนไซม์นี้\n• hypophosphatasia (ALP ↓)\n• Mg ต่ำ (ขาด cofactor)\n• เหล็ก/ทองแดงเกิน", fs=10.8),
+           line(240, 319, 214, 319, "lbad w2"), line(214, 309, 214, 329, "lbad w2")]
     return fig("CPPD: PPi + Ca → ผลึก",
                "ผลึกเกิดเมื่อ **pyrophosphate (PPi) นอกเซลล์กระดูกอ่อนสูง** มาเจอ Ca — สาเหตุทุติยภูมิทุกตัวเข้าทางนี้: hyperparathyroidism เพิ่ม Ca · "
                "hypophosphatasia ขาด ALP ที่สลาย PPi · Mg ต่ำทำให้เอนไซม์สลาย PPi ทำงานไม่ได้ · เหล็กและทองแดงที่สะสมยับยั้งเอนไซม์และทำร้ายกระดูกอ่อน "
                "(hypothyroidism สัมพันธ์ได้แต่กลไกยังไม่ชัด) — จึงตรวจ Ca, PTH, Mg, ALP, ferritin เมื่อเจอ CPPD ในคนอายุน้อย",
-               svg(420, 384, "ผลึก CPPD เกิดจาก pyrophosphate และแคลเซียมสูง สาเหตุทุติยภูมิเพิ่มแคลเซียมหรือยับยั้งการสลาย pyrophosphate", *out))
+               svg(420, 370, "ผลึก CPPD เกิดจาก pyrophosphate และแคลเซียมสูง สาเหตุทุติยภูมิเพิ่มแคลเซียมหรือยับยั้งการสลาย pyrophosphate", *out))
 
 
 def arth_bcp():
