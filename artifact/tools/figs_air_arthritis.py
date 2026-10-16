@@ -123,8 +123,8 @@ def arth_artic():
            ell(A, 97, 48, 36, "bad"), *_bones(A),
            *[circ(A + dx, 97 + dy, 2.6, "waf") for dx in (-33, 33) for dy in (-8, 8)],
            line(A - 62, 97, A + 62, 97, "lmu da"), t(A + 64, 101, "แนวข้อ", "xs mu"),
-           path("M%d 150 Q%d 176 %d 182" % (A + 34, A + 44, A + 14), "lbad w2", "ah-bad"),
-           path("M%d 150 Q%d 176 %d 182" % (A - 34, A - 44, A - 14), "lbad w2", "ah-bad"),
+           path("M%d 158 Q%d 206 %d 158" % (A - 40, A, A + 40), "lbad w2", "ah-bad", "ah-bad"),
+           t(A + 44, 186, "ขยับทางไหน", "xs tbad"), t(A + 44, 199, "ก็เจ็บ", "xs tbad"),
            ell(B, 97, 30, 22, "lru"), *_bones(B),
            path("M%d 18 Q%d 97 %d 176" % (B - 28, B - 46, B - 28), "lms w3"), t(B - 36, 190, "เอ็น", "xs mid tms"),
            ell(B - 46, 70, 9, 16, "bad"), t(B - 62, 66, "bursa", "xs end tbad"),
@@ -238,28 +238,29 @@ def arth_urate():
 
 # ---------- 23-03 ----------
 def arth_ult():
-    out = [box(10, 10, 120, 36, "sk", "Hypoxanthine", fs=12), box(150, 10, 120, 36, "sk", "Xanthine", fs=12),
-           box(290, 10, 120, 36, "ac", "Uric acid", "b"),
-           ar(130, 28, 148, 28, "ln", "ah"), ar(270, 28, 288, 28, "ln", "ah"),
-           t(139, 60, "XO", "xs mid b"), t(279, 60, "XO", "xs mid b"),
-           pill(64, 66, "Uricostatic: allopurinol · febuxostat ⊣ XO", "ok", "xs b mid tok", w=292, h=22),
-           line(350, 46, 350, 102, "ln", "ah"),
-           box(290, 104, 120, 36, "bx", "Allantoin\nละลายน้ำดี", fs=11),
-           t(10, 112, "มนุษย์ไม่มี uricase", "xs mu"),
-           pill(10, 118, "Uricolytic: rasburicase · PEG-uricase", "ok", "xs b mid tok", w=270, h=22),
-           line(280, 129, 346, 80, "lok da"),
-           line(10, 156, 410, 156, "lru da"),
-           t(10, 176, "ไต: กรอง → URAT1 ดูดกลับ → ขับออก", "sm b"),
-           line(60, 196, 390, 196, "lbad w2"), t(392, 200, "เลือด", "xs mu"),
-           circ(40, 228, 16, "bad"), path("M56 228 H380", "lru w5"), path("M56 228 H380", "lwa w2", "ah-wa"),
-           t(392, 232, "ปัสสาวะ", "xs mu"),
-           line(200, 222, 200, 202, "lms w2", "ah-ms"), t(208, 214, "URAT1 ดูดกลับ", "xs b tms"),
-           box(10, 252, 400, 40, "ok", "Uricosuric ปิด URAT1 → ขับออกมากขึ้น\nprobenecid · benzbromarone · losartan · fenofibrate", fs=11.5),
-           box(10, 300, 400, 40, "bad", "เพิ่มการดูดกลับ / ลดการขับ → urate ↑\nPZA · thiazide/loop · aspirin ขนาดต่ำ · lactate/ketone", fs=11.5)]
+    out = [box(10, 24, 120, 36, "sk", "Hypoxanthine", fs=12), box(150, 24, 120, 36, "sk", "Xanthine", fs=12),
+           box(290, 24, 120, 36, "ac", "Uric acid", "b"),
+           ar(130, 42, 148, 42, "ln", "ah"), ar(270, 42, 288, 42, "ln", "ah"),
+           t(139, 16, "XO", "xs mid b"), t(279, 16, "XO", "xs mid b"),
+           line(139, 20, 139, 66, "lok da"), line(279, 20, 279, 66, "lok da"),
+           pill(16, 68, "Uricostatic: allopurinol · febuxostat ⊣ XO", "ok", "xs b mid tok", w=272, h=22),
+           line(350, 60, 350, 118, "ln", "ah"), t(356, 94, "uricase", "xs b"),
+           box(290, 120, 120, 36, "bx", "Allantoin\nละลายน้ำดี", fs=11),
+           t(16, 118, "มนุษย์ไม่มี uricase → ให้เป็นยา", "xs mu"),
+           pill(16, 126, "Uricolytic: rasburicase · PEG-uricase", "ok", "xs b mid tok", w=262, h=22),
+           line(278, 134, 344, 96, "lok da", "ah-ok"),
+           line(10, 172, 410, 172, "lru da"),
+           t(10, 192, "ไต: กรอง → URAT1 ดูดกลับ → ขับออก", "sm b"),
+           line(60, 210, 390, 210, "lbad w2"), t(392, 214, "เลือด", "xs mu"),
+           circ(40, 242, 16, "bad"), path("M56 242 H380", "lru w5"), path("M56 242 H380", "lwa w2", "ah-wa"),
+           t(380, 262, "ปัสสาวะ", "xs end mu"),
+           line(200, 236, 200, 216, "lms w2", "ah-ms"), t(208, 230, "URAT1 ดูดกลับ", "xs b tms"),
+           box(10, 272, 400, 40, "ok", "Uricosuric ปิด URAT1 → ขับออกมากขึ้น\nprobenecid · benzbromarone · losartan · fenofibrate", fs=11.5),
+           box(10, 320, 400, 40, "bad", "เพิ่มการดูดกลับ / ลดการขับ → urate ↑\nPZA · thiazide/loop · aspirin ขนาดต่ำ · lactate/ketone", fs=11.5)]
     return fig("ยาลดกรดยูริก 3 กลุ่ม ออกฤทธิ์ 3 จุด",
                "**ลดการสร้าง** ที่ xanthine oxidase (allopurinol, febuxostat) · **เพิ่มการขับ** โดยปิด URAT1 ที่ท่อไต (probenecid และฤทธิ์เสริมของ losartan, fenofibrate) "
                "· **ย่อยทิ้ง** ด้วย uricase ที่มนุษย์ไม่มี (rasburicase) — ยาที่ทำให้ urate สูงส่วนใหญ่ทำงานที่ท่อไตจุดเดียวกันแต่ทิศตรงข้าม",
-               svg(420, 350, "จุดออกฤทธิ์ของยาลดกรดยูริก ที่ xanthine oxidase ที่ uricase และที่ URAT1 ในท่อไต", *out))
+               svg(420, 370, "จุดออกฤทธิ์ของยาลดกรดยูริก ที่ xanthine oxidase ที่ uricase และที่ URAT1 ในท่อไต", *out))
 
 
 def arth_target():
@@ -272,17 +273,18 @@ def arth_target():
            *[t(X(0) - 6, Y(u) + 4, str(u), "xs end mu") for u in (4, 6, 8, 10)],
            t(X(12), Y(3) + 32, "เดือนหลังเริ่ม allopurinol", "xs end mu"), t(10, 18, "serum urate (mg/dL)", "xs b mu"),
            line(X(0), Y(6.8), X(12), Y(6.8), "lms da"), t(X(12), Y(6.8) - 5, "จุดอิ่มตัว 6.8 — สูงกว่านี้ผลึกโต", "xs end tms b"),
-           line(X(0), Y(6), X(12), Y(6), "lok"), t(X(12), Y(6) + 14, "เป้าหมาย < 6 ผลึกละลาย", "xs end tok b"),
-           line(X(0), Y(5), X(12), Y(5), "lok da"), t(X(12), Y(5) + 14, "มี tophus < 5", "xs end tok"),
+           line(X(0), Y(6), X(12), Y(6), "lok"), t(X(0) + 6, Y(6) + 14, "เป้าหมาย < 6", "xs tok b"),
+           line(X(0), Y(5), X(12), Y(5), "lok da"), t(X(0) + 6, Y(5) + 14, "มี tophus < 5", "xs tok"),
            poly([(X(a), Y(b)) for a, b in pts], "lac w3")]
     for m, d in ((0, "100"), (1, "200"), (2, "300"), (3, "400 mg")):
         u = dict(pts)[m]
         out += [circ(X(m), Y(u), 4, "acf"), t(X(m) + 6, Y(u) - 8, d, "xs tac b")]
-    out += [rect(X(0), 232, X(6) - X(0), 18, "ms", 4), t(X(0) + 6, 245, "ช่วงเสี่ยงกำเริบ → colchicine ป้องกัน", "xs b")]
+    out += [rect(X(0), 254, X(6) - X(0), 12, "ms", 4), t(X(6) + 6, 264, "ช่วงเสี่ยงกำเริบ", "xs b tms"),
+            t(X(0), 284, "→ ให้ colchicine ขนาดต่ำป้องกันช่วง 3–6 เดือนแรก", "xs b")]
     return fig("Treat to target · start low go slow",
                "เริ่ม allopurinol ขนาดต่ำแล้วปรับขึ้นทุก 2–5 สัปดาห์ (ตัวเลขขนาดยาในภาพเป็นตัวอย่าง) จน urate **ต่ำกว่า 6** — ต่ำกว่าจุดอิ่มตัวผลึกจึงละลายกลับได้ "
                "ระหว่างที่ระดับลดลง ผิวผลึกที่ละลายทำให้ผลึกเล็กหลุดออกมา จึง **กำเริบบ่อยขึ้นใน 3–6 เดือนแรก** ต้องให้ยาป้องกันร่วม และไม่หยุด allopurinol เมื่อกำเริบ",
-               svg(420, 288, "กราฟระดับกรดยูริกลดลงตามการปรับขนาด allopurinol จนต่ำกว่าเป้าหมาย 6 พร้อมช่วงเสี่ยงกำเริบช่วงแรก", *out))
+               svg(420, 292, "กราฟระดับกรดยูริกลดลงตามการปรับขนาด allopurinol จนต่ำกว่าเป้าหมาย 6 พร้อมช่วงเสี่ยงกำเริบช่วงแรก", *out))
 
 
 # ---------- 23-04 ----------
@@ -377,7 +379,7 @@ def arth_septic():
     for k, (c, s) in enumerate(eff):
         x = 10 + 136 * k
         out += [line(x + 64, 250, x + 64, 264, "ln", "ah"), box(x, 266, 128, 64, c, s, fs=11)]
-    out += [box(10, 346, 400, 40, "ok", "ยาเข้าหนองได้ไม่ดี → ต้องระบายหนองทุกวันหรือล้างข้อ", fs=12)]
+    out += [box(10, 346, 400, 40, "ok", "ยาอย่างเดียวไม่พอ → ระบายหนองทุกวัน/ล้างข้อ เอาเชื้อและเอนไซม์ออก", fs=12)]
     return fig("Septic arthritis: ทำไมต้องรีบและต้องระบาย",
                "เชื้อส่วนใหญ่มาทางกระแสเลือดแล้วตกที่ synovium ซึ่งไม่มี basement membrane กั้น neutrophil ที่ถูกเรียกมาสู้เชื้อและ toxin ของ *S. aureus* "
                "ปล่อยเอนไซม์ย่อยกระดูกอ่อนภายในไม่กี่วัน หนองที่ดันแคปซูลยังลดเลือดไปเลี้ยง — **เวลา** และ **การระบายหนอง** คือสิ่งที่รักษาข้อไว้ได้",
@@ -392,22 +394,22 @@ def arth_dgi():
            box(290, 10, 120, 62, "bad", "ระยะเฉพาะที่\nข้ออักเสบเป็นหนอง\nข้อเดียว", fs=10.5),
            t(210, 92, "เชื้อในเลือดน้อยและหายเร็ว → เพาะจากเลือด ข้อ ผิว ขึ้นยาก", "xs mid mu"),
            t(10, 120, "โอกาสพบเชื้อตามตำแหน่งที่ส่ง (%)", "sm b")]
-    rows = [("ท่อปัสสาวะ", 90, 90, "ac", "90"), ("ช่องคลอด", 50, 70, "ac", "50–70"), ("น้ำไขข้อ", 0, 50, "bad", "< 50"),
-            ("คอหอย", 20, 20, "ac", "20"), ("ทวารหนัก", 15, 15, "ac", "15"), ("รอยโรคผิว", 0, 10, "bad", "< 10"),
+    rows = [("ท่อปัสสาวะ", 90, 90, "ok", "90"), ("ช่องคลอด", 50, 70, "ok", "50–70"), ("น้ำไขข้อ", 50, 50, "bad", "< 50"),
+            ("คอหอย", 20, 20, "ok", "20"), ("ทวารหนัก", 15, 15, "ok", "15"), ("รอยโรคผิว", 10, 10, "bad", "< 10"),
             ("เลือด", 10, 10, "bad", "~10")]
     W = lambda v: v * 2.7
     for k, (n, a, b, c, lab) in enumerate(rows):
         y = 134 + 26 * k
         out += [t(108, y + 13, n, "xs end"), rect(116, y, max(W(a), 2), 16, c, 3) if a else "",
-                rect(116 + W(a), y, W(b) - W(a), 16, c, 3) if b > a else "",
+                rect(116 + W(a), y, W(b) - W(a), 16, "bx", 3) if b > a else "",
                 t(122 + W(b), y + 13, lab, "xs b")]
         if b > a:
             out.append(line(116 + W(a), y, 116 + W(a), y + 16, "lmu da"))
-    out += [rect(116, 324, 14, 10, "ac", 2), t(134, 333, "เยื่อบุ", "xs"), rect(200, 324, 14, 10, "bad", 2), t(218, 333, "ข้อ · ผิว · เลือด", "xs"),
+    out += [rect(116, 324, 14, 10, "ok", 2), t(134, 333, "เยื่อบุ", "xs"), rect(200, 324, 14, 10, "bad", 2), t(218, 333, "ข้อ · ผิว · เลือด", "xs"),
             t(10, 358, "→ ส่ง NAAT/เพาะจากเยื่อบุทุกตำแหน่ง ไม่ใช่แค่น้ำไขข้อ", "sm b tok")]
     return fig("DGI: เชื้อหาได้ที่เยื่อบุ ไม่ใช่ที่ข้อ",
                "gonococcus เริ่มที่เยื่อบุ (มักไม่มีอาการ) เข้ากระแสเลือดเป็นช่วงสั้น ๆ ทำให้ปลอกเอ็นอักเสบและตุ่มหนองที่ผิว แล้วอาจไปตั้งหลักเป็นข้ออักเสบเป็นหนอง "
-               "เชื้อในเลือดและในข้อมีน้อย เพาะขึ้นยาก แต่ที่เยื่อบุต้นทางยังมีเชื้อมาก — **ช่วง** ในภาพคือค่าจากตารางสไลด์ (ส่วนสีจางคือช่วงที่ไม่แน่นอน)",
+               "เชื้อในเลือดและในข้อมีน้อย เพาะขึ้นยาก แต่ที่เยื่อบุต้นทางยังมีเชื้อมาก — ตัวเลขจากตารางในสไลด์ (ช่องคลอดเป็นช่วง 50–70 · ส่วนโปร่งคือช่วงของค่า)",
                svg(420, 370, "การดำเนินโรคของ disseminated gonococcal infection และโอกาสเพาะเชื้อขึ้นตามตำแหน่ง", *out))
 
 
@@ -455,20 +457,20 @@ def arth_oa():
            # ปกติ
            *caps(N), *bones(N, ubot=80, ltop=130), rect(N - 48, 80, 96, 12, "wa", 4), rect(N - 48, 118, 96, 12, "wa", 4),
            # OA
-           *caps(O), *bones(O, ubot=80, ltop=130),
-           rect(O - 48, 80, 46, 10, "wa", 4), rect(O - 48, 120, 46, 10, "wa", 4),
-           rect(O + 2, 80, 46, 22, "inkf", 3), rect(O + 2, 108, 46, 22, "inkf", 3),
-           poly([(O + 50, 66), (O + 66, 84), (O + 50, 86)], "sk", True), poly([(O + 50, 144), (O + 66, 126), (O + 50, 124)], "sk", True),
-           poly([(O - 50, 70), (O - 60, 84), (O - 50, 86)], "sk", True),
-           circ(O + 24, 146, 6, "bx"),
-           t(O + 70, 74, "osteophyte", "xs tms"), t(O + 25, 168, "cyst", "xs mid mu"),
-           t(O + 25, 100, "", "xs"),
+           *bones(O, ubot=80, ltop=130),
+           rect(O - 48, 80, 48, 10, "wa", 4), rect(O - 48, 120, 48, 10, "wa", 4),
+           rect(O, 72, 50, 26, "sk ns", 4), rect(O, 112, 50, 26, "sk ns", 4),
+           rect(O + 2, 94, 46, 4, "inkf", 1), rect(O + 2, 112, 46, 4, "inkf", 1),
+           poly([(O + 50, 66), (O + 66, 88), (O + 50, 92)], "sk", True), poly([(O + 50, 144), (O + 66, 122), (O + 50, 118)], "sk", True),
+           poly([(O - 50, 72), (O - 60, 84), (O - 50, 86)], "sk", True),
+           circ(O + 24, 152, 6, "bx"),
+           t(O + 58, 58, "osteophyte", "xs mid tms b"), t(O + 24, 176, "cyst", "xs mid mu"),
            # RA
+           ell(R - 58, 105, 14, 32, "bad"), ell(R + 58, 105, 14, 32, "bad"),
            *bones(R, ubot=84, ltop=126), rect(R - 38, 84, 76, 6, "wa", 3), rect(R - 38, 120, 76, 6, "wa", 3),
-           circ(R - 48, 86, 7, "paf"), circ(R + 48, 124, 7, "paf"), circ(R + 48, 86, 6, "paf"), circ(R - 48, 124, 6, "paf"),
-           ell(R - 56, 105, 16, 34, "bad"), ell(R + 56, 105, 16, 34, "bad"),
+           circ(R - 48, 86, 8, "bad"), circ(R + 48, 124, 8, "bad"), circ(R + 48, 86, 8, "bad"), circ(R - 48, 124, 8, "bad"),
            *[circ(R + dx, 105, 2.4, "waf") for dx in (-20, -8, 8, 20)],
-           t(R + 74, 76, "pannus", "xs tbad b"),
+           t(R + 58, 62, "pannus", "xs mid tbad b"),
            *[circ(R + dx, dy, 1.6, "muf") for dx in (-40, -22, 0, 22, 40) for dy in (50, 150, 170)]]
     labs = [(N, ["กระดูกอ่อนหนาเท่ากัน", "ช่องข้อสม่ำเสมอ"]),
             (O, ["กระดูกอ่อนสึกฝั่งรับน้ำหนัก", "ช่องข้อแคบไม่สมมาตร", "sclerosis (แถบทึบ) · osteophyte"]),
@@ -485,7 +487,7 @@ def arth_oa():
 def arth_shoulder():
     A, B = 96, 316
     out = [t(105, 16, "Rotator cuff tendinopathy", "b mid tms"), t(315, 16, "Adhesive capsulitis", "b mid tbad"),
-           line(210, 8, 210, 268, "lru da"),
+           line(210, 8, 210, 236, "lru da"),
            rect(30, 46, 130, 14, "sk", 7), t(150, 40, "acromion", "xs end mu"),
            circ(A, 112, 36, "sk"), path("M24 96 Q60 64 104 72 Q130 78 132 104", "lms w3"),
            ell(110, 70, 14, 6, "bad"), t(40, 128, "หัว", "xs mid mu"), t(40, 140, "humerus", "xs mid mu"),
@@ -530,7 +532,7 @@ def arth_remodel():
            rect(10, 100, 400, 48, "sk", 4),
            path("M46 100 Q90 140 134 100 Z", "bx"),
            ell(90, 84, 44, 16, "bad"), *[circ(70 + 13 * k, 84, 3, "inkf") for k in range(4)],
-           path("M246 100 Q300 140 354 100 Z", "ms"), t(300, 116, "osteoid ใหม่", "xs mid tms"),
+           path("M246 100 Q300 140 354 100 Z", "ms"), t(300, 113, "osteoid", "xs mid tms"),
            *[rect(250 + 21 * k, 82, 18, 14, "ok", 4) for k in range(5)],
            path("M256 78 Q190 34 132 70", "lmu w2", "ah-mu"), t(194, 46, "RANKL", "xs mid b"),
            t(210, 168, "ปกติสลาย = สร้าง · กระดูกพรุน: สลาย > สร้าง", "sm mid b"),

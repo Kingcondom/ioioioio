@@ -109,23 +109,23 @@ def epi_balance():
             y = 112 + 18 * k
             out.append(_wave(cx - 80, y, 160, lambda x, sh=sh: sum(_spike(x, 80 + s, 12) for s in sh) + 0.25 * _noise(x + 9 * k), 1.5, "lmu"))
         if sz:
-            out.append(_wave(cx - 80, 206, 160, lambda x: sum(_spike(x, 80 + s, 26) for s in (-44, -2, 40)) + 0.4 * _noise(x), 1.2, "lbad w2"))
+            out.append(_wave(cx - 80, 224, 160, lambda x: sum(_spike(x, 80 + s, 22) for s in (-44, -2, 40)) + 0.4 * _noise(x), 1.2, "lbad w2"))
         else:
-            out.append(_wave(cx - 80, 206, 160, lambda x: 0.9 * _noise(x), 1.2, "ln w2"))
+            out.append(_wave(cx - 80, 224, 160, lambda x: 0.9 * _noise(x), 1.2, "ln w2"))
         return out
     return fig("ชักคือการยิงไฟฟ้าพร้อมกันเมื่อการกระตุ้นชนะการยับยั้ง",
                "ปกติ neuron แต่ละตัวยิงคนละจังหวะ ผลรวมบน EEG จึงเป็นคลื่นเล็ก เมื่อแรงกระตุ้น (glutamate) ชนะแรงยับยั้ง (GABA) neuron จำนวนมากถูกดึงให้ยิง **พร้อมกัน** "
                "ผลรวมจึงกลายเป็น **spike ขนาดใหญ่** และลามไปตามเครือข่าย อาการที่เห็นคือหน้าที่ของบริเวณนั้นถูกกระตุ้นหรือถูกขัดขวาง "
                "ยากันชักทุกตัวทำงานโดยดันสมดุลกลับ — ลดการกระตุ้น หรือเพิ่มการยับยั้ง",
-               svg(420, 330, "ปกติ neuron ยิงไม่พร้อมกัน EEG เป็นคลื่นเล็ก เมื่อการกระตุ้นชนะการยับยั้ง neuron ยิงพร้อมกัน EEG เป็น spike",
+               svg(420, 350, "ปกติ neuron ยิงไม่พร้อมกัน EEG เป็นคลื่นเล็ก เมื่อการกระตุ้นชนะการยับยั้ง neuron ยิงพร้อมกัน EEG เป็น spike",
                    t(105, 22, "ปกติ", "b mid tok"), t(315, 22, "ขณะชัก", "b mid tbad"),
                    *panel(105, False), *panel(315, True),
-                   line(210, 14, 210, 226, "lru da"),
+                   line(210, 14, 210, 240, "lru da"),
                    t(105, 186, "neuron แต่ละตัว: คนละจังหวะ", "xs mid mu"), t(315, 186, "ยิงพร้อมกัน (hypersynchronous)", "xs mid tbad"),
-                   t(14, 232, "EEG = ผลรวม", "xs mu"),
-                   box(10, 244, 400, 34, "ms", "ไฟฟ้าพร้อมเพรียงลามตามเครือข่าย → อาการตามหน้าที่ของบริเวณนั้น", fs=11.5),
-                   line(210, 278, 210, 290, "ln", "ah"),
-                   box(10, 292, 400, 34, "ok", "หยุดเองเมื่อการยับยั้งกลับมาและเซลล์หมดแรง → post-ictal", fs=11.5)))
+                   t(14, 250, "↑ EEG = ผลรวมของทุกตัว", "xs mu"),
+                   box(10, 262, 400, 34, "ms", "ไฟฟ้าพร้อมเพรียงลามตามเครือข่าย → อาการตามหน้าที่ของบริเวณนั้น", fs=11.5),
+                   line(210, 296, 210, 308, "ln", "ah"),
+                   box(10, 310, 400, 34, "ok", "หยุดเองเมื่อการยับยั้งกลับมาและเซลล์หมดแรง → post-ictal", fs=11.5)))
 
 
 def epi_threshold():
@@ -212,29 +212,31 @@ def epi_onset():
 
 
 def epi_lobes():
-    cx, cy = 210, 170
+    marks = [(130, 82, "1", "ac", "tac"), (196, 40, "2", "ms", "tms"), (272, 72, "3", "ac", "tac"),
+             (336, 96, "4", "ac", "tac"), (166, 172, "5", "ms", "tms")]
+    rows = [("1", "Frontal", "มอเตอร์ ท่าทางแปลก · สั้น ถี่ ขณะหลับ ฟื้นเร็ว", "ac", "tac"),
+            ("2", "Motor strip", "กระตุกแล้วลามตาม homunculus (Jacksonian)", "ms", "tms"),
+            ("3", "Parietal", "ชา เสียว ความรู้สึกผิดปกติ", "ac", "tac"),
+            ("4", "Occipital", "เห็นแสงวาบ ภาพผิดปกติ", "ac", "tac")]
+    out = []
+    for x, y, n, c, tc in marks:
+        out += [circ(x, y, 10, c), t(x, y + 4, n, "xs b mid " + tc)]
+    for k, (n, lobe, sx, c, tc) in enumerate(rows):
+        y = 240 + 26 * k
+        out += [circ(20, y - 4, 9, c), t(20, y, n, "xs b mid " + tc), t(36, y, lobe, "sm b"), t(126, y, sx, "sm")]
     return fig("อาการบอกกลีบสมอง — ไฟฟ้าไปกระตุ้นหน้าที่ของบริเวณนั้น",
                "focus อยู่ที่ไหน อาการช่วงแรกคือหน้าที่ของบริเวณนั้นถูกกระตุ้น — motor cortex → กระตุก (และลามตาม homunculus เป็น **Jacksonian march**) · "
                "parietal → ชา เสียว · occipital → เห็นแสงวาบ · temporal ด้านใน (hippocampus, amygdala) → **déjà vu กลัว จุกลิ้นปี่ลอยขึ้น** และเมื่อลามจนเสียการรู้ตัวจะเกิด automatism "
                "ส่วน frontal ชักสั้น ถี่ มักขณะหลับ และฟื้นเร็ว",
-               svg(420, 362, "สมองมองด้านข้าง focus ในแต่ละกลีบให้อาการต่างกัน frontal เป็นมอเตอร์ parietal ชา occipital เห็นแสง temporal déjà vu",
-                   ell(cx, cy, 132, 84, "bx"),
-                   path("M206 87 Q198 130 186 182", "ln w2"), t(206, 80, "central sulcus", "xs mid mu"),
-                   path("M112 196 Q180 170 262 166", "ln w2"),
-                   path("M300 102 Q296 150 316 208", "lmu da"),
-                   path("M200 88 Q192 130 178 184", "lms w5"),
-                   t(140, 140, "Frontal", "sm b mid"), t(258, 128, "Parietal", "sm b mid"),
-                   t(316, 176, "Occipital", "xs b mid"), t(200, 222, "Temporal", "sm b mid"),
-                   ell(204, 202, 30, 9, "ms"), t(242, 206, "hippocampus", "xs tms"),
-                   line(150, 116, 110, 64, "lmu"), line(194, 120, 196, 100, "lmu"),
-                   t(10, 20, "Frontal: มอเตอร์ ท่าทางแปลก", "xs b"), t(10, 34, "สั้น ถี่ ขณะหลับ ฟื้นเร็ว", "xs i2"),
-                   t(10, 54, "Motor strip: กระตุกลาม", "xs b tms"), t(10, 68, "ตาม homunculus (Jackson)", "xs i2"),
-                   line(258, 112, 300, 56, "lmu"), t(410, 34, "Parietal: ชา เสียว", "xs b end"),
-                   t(410, 48, "ความรู้สึกผิดปกติ", "xs i2 end"),
-                   line(330, 176, 360, 176, "lmu"), t(410, 160, "Occipital:", "xs b end"),
-                   t(410, 174, "เห็นแสงวาบ", "xs i2 end"),
-                   line(204, 212, 204, 270, "lmu"),
-                   box(60, 272, 300, 82, "ms", "Temporal (เด่นใน hippocampus / amygdala)\ndéjà vu · กลัวฉับพลัน · จุกลิ้นปี่ลอยขึ้น\n→ ลามจนไม่รู้ตัว: automatism\npost-ictal สับสนนาน", fs=11.5)))
+               svg(420, 408, "สมองมองด้านข้าง focus ในแต่ละกลีบให้อาการต่างกัน frontal เป็นมอเตอร์ parietal ชา occipital เห็นแสง temporal déjà vu",
+                   ell(210, 108, 140, 88, "bx"),
+                   path("M226 22 Q214 80 198 140", "ln w2"), path("M218 22 Q206 80 190 140", "lms w5"),
+                   path("M90 154 Q190 122 300 112", "ln w2"), path("M318 34 Q312 100 330 176", "lmu da"),
+                   t(110, 120, "Frontal", "sm b mid"), t(268, 100, "Parietal", "sm b mid"),
+                   t(240, 166, "Temporal", "sm b mid"), t(240, 34, "central sulcus", "xs mu"),
+                   ell(186, 150, 26, 8, "ms"), t(186, 212, "hippocampus · amygdala (ด้านใน)", "xs mid tms"),
+                   *out,
+                   box(10, 334, 400, 66, "ms", "5 Temporal: déjà vu · กลัวฉับพลัน · จุกลิ้นปี่ลอยขึ้น\nลามจนไม่รู้ตัว → automatism (เคี้ยว คลำ)\npost-ictal สับสนนาน", fs=11.5)))
 
 
 def _head(cx, cy, look, lfc, title, tc):
@@ -314,21 +316,22 @@ def epi_age():
             ("Lennox-Gastaut", 1, 7, "bad", "คงอยู่ · ดื้อยา", "lbad"),
             ("SeLECTS", 3, 13, "ok", "หายเองก่อน 16 ปี", None),
             ("CAE", 4, 10, "ms", "", None),
-            ("JME", 12, 18, "ms", "มักเป็นตลอดชีวิต คุมได้ด้วยยา", "lms")]
+            ("JME", 12, 18, "ms", "มักเป็นตลอดชีวิต", None)]
     out = [line(X(0), 246, X(36), 246, "lmu")]
     for a in (0, 1, 3, 7, 10, 16, 25, 36):
         out += [line(X(a), 242, X(a), 250, "lmu"), t(X(a), 264, str(a), "xs mid mu")]
     out.append(t(X(36), 280, "อายุ (ปี)", "xs end mu"))
     for k, (n, a1, a2, c, note, lc) in enumerate(rows):
         y = 24 + 44 * k
-        out += [t(X(a1), y - 4, n, "sm b"), rect(X(a1), y, max(X(a2) - X(a1), 14), 16, c, 4)]
+        out += [t(X(8) if n == "JME" else X(a1), y - 4, n, "sm b"), rect(X(a1), y, max(X(a2) - X(a1), 14), 16, c, 4)]
         if lc:
             out.append(line(X(a2), y + 8, X(36), y + 8, lc + " da"))
         if n == "SeLECTS":
             out += [line(X(a2), y + 8, X(16), y + 8, "lok da"), t(X(16) + 4, y + 13, "✓ " + note, "xs b tok")]
         elif n == "JME":
-            out += [rect(X(8), y + 4, X(12) - X(8), 8, "ms", 2)]
-        if note and n != "SeLECTS":
+            out += [rect(X(8), y + 4, X(36) - X(8), 8, "ms", 2), rect(X(a1), y, X(a2) - X(a1), 16, c, 4),
+                    t(X(36), y + 30, "เริ่มได้ 8–36 ปี ยอด 12–18 · " + note, "xs end i2")]
+        if note and n not in ("SeLECTS", "JME"):
             out.append(t(X(36), y - 4, note, "xs end i2"))
     return fig("กลุ่มอาการผูกกับอายุ — บางกลุ่มหายเอง บางกลุ่มกัดกร่อนพัฒนาการ",
                "แถบทึบคือช่วงอายุที่เริ่มเป็นตามสไลด์ (JME เริ่มได้ 8–36 ปีแต่ยอดอยู่ 12–18 ปี) เส้นประคือการดำเนินโรค "
@@ -347,7 +350,7 @@ def epi_selects():
                    ell(cx, cy, 128, 82, "bx"),
                    path("M156 70 Q148 120 136 170", "ln w2"), path("M40 186 Q100 168 210 164", "ln w2"),
                    path("M140 150 Q136 162 134 172", "lbad w5"), circ(136, 162, 14, "lbad da"),
-                   t(100, 104, "ขา ลำตัว แขน", "xs mid mu"), t(168, 92, "← homunculus", "xs mu"),
+                   t(150, 58, "ร่อง central = homunculus", "xs mid mu"), t(162, 92, "ขา", "xs i2"), t(152, 122, "แขน มือ", "xs i2"),
                    t(136, 196, "centrotemporal", "xs b mid tbad"),
                    line(150, 160, 290, 60, "lmu"), line(150, 164, 290, 128, "lmu"), line(148, 170, 290, 196, "lmu"),
                    box(292, 40, 122, 44, "bad", "ใบหน้า\nชา กระตุกมุมปาก", fs=11),
@@ -376,7 +379,7 @@ def epi_jme():
                    line(X(0), 122, X(24), 122, "lmu"),
                    *[t(X(h), 136, s, "xs mid mu") for h, s in ((0, "00"), (6, "06"), (12, "12"), (18, "18"), (24, "24 น."))],
                    t(X(7) + 8, 66, "jerk หลังตื่น", "xs b tms"),
-                   t(X(13), 104, "— ปกติ", "xs i2"), t(X(13), 36 + 0, "- - อดนอน · แอลกอฮอล์", "xs tbad b"),
+                   t(232, 18, "— ปกติ", "xs i2"), t(410, 18, "- - อดนอน · แอลกอฮอล์", "xs end tbad b"),
                    line(10, 152, 410, 152, "lru da"),
                    t(14, 174, "ลำดับการดำเนินโรค", "sm b"),
                    line(30, 214, 400, 214, "lmu", "ah-mu"),
@@ -388,13 +391,14 @@ def epi_jme():
 
 
 def epi_dravet():
-    def col(cx, title, tc, brake, out_w, note):
+    def col(cx, title, tc, brake, out_w, note, sub):
         bc = {3: "lok w5", 2: "lok w2 da", 1: "lok dt"}[brake]
         oc = {1: "lbad w2", 2: "lbad w3", 3: "lbad w5"}[out_w]
         return [t(cx, 20, title, "sm b mid " + tc),
-                circ(cx, 70, 26, "ok"), t(cx, 66, "inter-", "xs mid"), t(cx, 79, "neuron", "xs mid"),
-                t(cx, 112, "Nav1.1", "xs mid tok b"),
-                line(cx, 98, cx, 150, bc, "ah-ok"), t(cx + 8, 136, "GABA", "xs tok"),
+                t(cx, 36, sub, "xs mid i2"),
+                circ(cx, 74, 26, "ok"), t(cx, 70, "inter-", "xs mid"), t(cx, 83, "neuron", "xs mid"),
+                t(cx + 30, 64, "Nav1.1", "xs tok b"),
+                line(cx, 102, cx, 150, bc, "ah-ok"), t(cx + 8, 130, "GABA", "xs tok"),
                 poly([(cx - 26, 196), (cx + 26, 196), (cx, 154)], "bad", closed=True), t(cx, 188, "กระตุ้น", "xs mid"),
                 line(cx, 198, cx, 232, oc, "ah-bad"), t(cx, 250, note, "xs mid b tbad")]
     return fig("Dravet — เบรกเสียตั้งแต่แรก แล้ว sodium channel blocker ไปเหยียบเบรกซ้ำ",
@@ -402,11 +406,10 @@ def epi_dravet():
                "ใน Dravet ช่องนี้เสียไปครึ่งหนึ่ง เบรกจึงอ่อนตั้งแต่เกิด ไข้หรือความร้อนทำให้สมองตื่นตัวขึ้นจนชักนาน "
                "ยาที่ปิดช่องโซเดียม (CBZ, PHT, OXC, LTG) ไปปิดช่องที่เหลือของ interneuron ด้วย เบรกยิ่งหาย ชักยิ่งมาก",
                svg(420, 312, "ใน Dravet interneuron ที่ใช้ Nav1.1 ยับยั้งได้น้อยลง การให้ sodium channel blocker ยิ่งลดการยับยั้ง ทำให้ชักมากขึ้น",
-                   *col(72, "ปกติ", "tok", 3, 1, "ยิงพอดี"),
-                   *col(210, "Dravet (SCN1A)", "tbad", 2, 2, "ยิงมาก + ไข้ → ชัก"),
-                   *col(348, "Dravet + CBZ", "tbad", 1, 3, "ชักแย่ลง"),
+                   *col(72, "ปกติ", "tok", 3, 1, "ยิงพอดี", "เบรกแรง"),
+                   *col(210, "Dravet (SCN1A)", "tbad", 2, 2, "ยิงมาก + ไข้ → ชัก", "Nav1.1 เหลือครึ่งเดียว"),
+                   *col(348, "Dravet + CBZ", "tbad", 1, 3, "ชักแย่ลง", "ยาปิดช่องที่เหลือ"),
                    line(141, 30, 141, 256, "lru da"), line(279, 30, 279, 256, "lru da"),
-                   t(210, 128, "Nav1.1 ครึ่งหนึ่ง", "xs mid i2"), t(348, 128, "ถูกยาปิดซ้ำ", "xs mid i2"),
                    box(10, 266, 400, 40, "ok", "ใช้ยาที่ไม่ปิดช่องโซเดียม เช่น VPA · ป้องกันไข้และความร้อน", fs=12)))
 
 
@@ -442,7 +445,7 @@ def epi_eegmiss():
                "spike ระหว่างชักเกิดเป็นพัก ๆ และมักถี่ขึ้นขณะง่วงหรือหลับ การตรวจปกติบันทึกเพียงราวครึ่งชั่วโมงตอนตื่น **จึงพลาดได้ง่าย** "
                "นอกจากนี้ electrode บนหนังศีรษะเห็นเฉพาะ cortex ผิวนอกที่ยิงพร้อมกันเป็นบริเวณกว้างพอ focus ที่ลึก (เช่น frontal ด้านใน) หรือเล็กจะไม่ปรากฏ "
                "วิธีแก้คือเพิ่มโอกาส — อดนอน บันทึกขณะหลับ กระตุ้นด้วยหายใจเร็วและแสง และบันทึกซ้ำหรือยาวด้วย video-EEG",
-               svg(420, 332, "EEG ปกติพลาดได้เพราะบันทึกสั้นไม่ตรงช่วงที่มี spike และ focus ลึกที่ electrode บนหนังศีรษะมองไม่เห็น",
+               svg(420, 316, "EEG ปกติพลาดได้เพราะบันทึกสั้นไม่ตรงช่วงที่มี spike และ focus ลึกที่ electrode บนหนังศีรษะมองไม่เห็น",
                    t(14, 18, "① เวลา: spike เกิดเป็นพัก ๆ ถี่ขึ้นตอนหลับ", "sm b"),
                    line(20, 70, 400, 70, "lmu"),
                    rect(280, 30, 100, 40, "sk", 0), t(330, 44, "หลับ", "xs mid mu"),
@@ -452,11 +455,13 @@ def epi_eegmiss():
                    line(10, 138, 410, 138, "lru da"),
                    t(14, 158, "② ความลึก: electrode อยู่ห่าง focus", "sm b"),
                    path("M40 312 A170 130 0 0 1 380 312", "ln w3"), path("M60 312 A150 112 0 0 1 360 312", "lmu"),
-                   circ(120, 222, 6, "acf"), circ(210, 186, 6, "acf"), circ(300, 222, 6, "acf"),
-                   t(210, 178, "electrode", "xs mid mu"),
-                   path("M98 258 Q120 238 142 258", "lbad w5"), t(120, 278, "focus ผิว กว้าง", "xs mid b tbad"), t(120, 292, "→ เห็น ✓", "xs mid tok b"),
-                   circ(230, 290, 7, "badf"), t(258, 288, "focus ลึก / เล็ก", "xs b tbad"), t(258, 302, "→ ไม่เห็น ✕", "xs b tms"),
-                   line(120, 228, 120, 250, "lok w2", "ah-ok"), line(214, 194, 228, 276, "lmu da")))
+                   circ(120, 202, 6, "acf"), circ(210, 182, 6, "acf"), circ(300, 202, 6, "acf"),
+                   t(210, 174, "electrode", "xs mid mu"),
+                   t(356, 238, "หนังศีรษะ", "xs mu"), t(336, 266, "cortex", "xs end mu"),
+                   path("M96 239 Q118 222 144 211", "lbad w5"), line(121, 220, 120, 210, "lok w2", "ah-ok"),
+                   t(126, 262, "focus ผิว กว้าง", "xs mid b tbad"), t(126, 276, "→ เห็น ✓", "xs mid tok b"),
+                   circ(230, 290, 7, "badf"), t(244, 288, "focus ลึก / เล็ก", "xs b tbad"), t(244, 302, "→ ไม่เห็น ✕", "xs b tms"),
+                   line(212, 190, 228, 280, "lmu da")))
 
 
 def epi_asm():
@@ -471,7 +476,7 @@ def epi_asm():
                    rect(206, 70, 64, 52, "bad", 14), t(238, 100, "ปลาย", "xs mid"),
                    rect(290, 70, 120, 52, "sk", 10), t(350, 92, "neuron ถัดไป", "xs mid"), t(350, 106, "GABA-A receptor", "xs mid tok"),
                    *[circ(280, 82 + 9 * k, 2.4, "inkf") for k in range(4)],
-                   rect(112, 88, 26, 16, "ac", 4), t(125, 82, "Na⁺", "xs mid b tac"),
+                   rect(110, 87, 30, 18, "ac", 4), t(125, 100, "Na⁺", "xs mid b tac"),
                    pill(70, 34, "CBZ · PHT · OXC · LTG", "ac", "xs b mid tac", w=134),
                    line(125, 56, 125, 86, "lac", "ah-ac"),
                    t(125, 124, "ยิงซ้ำถี่ไม่ได้", "xs mid i2"),
@@ -506,7 +511,7 @@ def epi_pseudo():
                svg(420, 392, "เมื่อยาตัวแรกล้มเหลวให้คัดกรอง pseudoresistance หกข้อก่อน แล้วจึงเลือกเปลี่ยนยาหรือเพิ่มยาตามสาเหตุ",
                    box(110, 8, 200, 34, "bad", "ยาตัวแรกล้มเหลว", "b"),
                    line(210, 42, 210, 58, "ln", "ah"),
-                   rect(8, 60, 404, 98, "sk", 10), t(210, 82, "① คัดกรอง pseudoresistance (ระดับยาในเลือดช่วยได้)", "sm b mid"),
+                   rect(8, 60, 404, 98, "sk", 10), t(210, 82, "คัดกรอง pseudoresistance ก่อน (ระดับยาในเลือดช่วยได้)", "sm b mid"),
                    *out,
                    line(210, 158, 210, 176, "ln", "ah"), t(218, 172, "ล้มเหลวจริง", "xs b"),
                    line(210, 178, 74, 196, "ln", "ah"), line(210, 178, 210, 196, "ln", "ah"), line(210, 178, 346, 196, "ln", "ah"),
@@ -523,7 +528,7 @@ def epi_pseudo():
 def epi_sudep():
     chain = [("bad", "GTC โดยเฉพาะตอนกลางคืน"), ("ms", "หลังชัก ก้านสมองถูกกด\n→ หยุดหายใจ (central apnea)"),
              ("ms", "นอนคว่ำคนเดียว\n→ ทางเดินหายใจอุด ไม่มีใครพลิก"), ("bad", "O₂ ต่ำ CO₂ คั่ง\n→ หัวใจเต้นช้า → หยุดเต้น")]
-    fix = [("คุมการชักให้ได้\n(สำคัญที่สุด)", 0), ("ปรับยาคุมชักกลางคืน", 1), ("มีคนอยู่ด้วย / seizure alarm\nพลิกตะแคง กระตุ้น", 2)]
+    fix = [("คุมชักให้ได้ รวมถึง\nชักกลางคืน (สำคัญสุด)", 0), ("มีคนเห็น → ปลุก\nกระตุ้นให้หายใจ", 1), ("ไม่นอนคนเดียว\nalarm · พลิกตะแคง", 2)]
     out = []
     for k, (c, s) in enumerate(chain):
         y = 14 + 74 * k

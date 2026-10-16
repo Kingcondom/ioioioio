@@ -74,13 +74,13 @@ INSERTS = [
     ("neuro-07-06", "**สามกลไกย่อย**", "fig:stk_athero"),
     ("neuro-07-06", "- **อื่น ๆ** — **ลิ่มเลือดดำที่ขา", "fig:stk_cardioemb"),
     ("neuro-07-06", "> **แถวสุดท้ายคือเหตุผลทั้งหมดของการจำแนก**", TOAST_MD),
-    ("neuro-07-07", "### กรอบเวลาที่ต้องจำ", "fig:stk_lsw"),
+    ("neuro-07-07", "- **เกิดขณะทำกิจกรรมและมีพยานเห็น**", "fig:stk_lsw"),
     ("neuro-07-08", "**สี่สัญญาณตามสไลด์**", "fig:stk_ctsigns"),
     ("neuro-07-08", "> **จุดที่คนพลาดคือลืมว่า insula", "fig:stk_aspects"),
     ("neuro-07-09", "**ทางเลือกอื่น — Tenecteplase**", "fig:stk_tpa"),
     ("neuro-07-09", "> **สัญญาณที่ต้องหยุดยาทันที", ICH_MD),
-    ("neuro-07-10", "**Specific management**", "fig:stk_autoreg"),
-    ("neuro-07-10", "**จังหวะเวลาที่เริ่มยาต้านลิ่มเลือด**", "fig:stk_clots"),
+    ("neuro-07-10", "| **ไข้** |", "fig:stk_autoreg"),
+    ("neuro-07-10", "| **Small vessel disease** |", "fig:stk_clots"),
 ]
 
 
