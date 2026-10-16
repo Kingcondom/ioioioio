@@ -84,7 +84,7 @@ def af_mech():
             for r in (18, 32, 46):
                 o.append(path("M%s %s A%s %s 0 0 1 %s %s" % (36 + r, y + 20, r, r, 36, y + 20 + r), "lok w2"))
         else:
-            for cx, cy in ((44, 22), (78, 30), (116, 20), (58, 50), (100, 50), (138, 44)):
+            for cx, cy in ((40, 22), (70, 40), (98, 20), (112, 46), (138, 40)):
                 o.append(path("M%s %s A8 8 0 1 1 %s %s" % (cx + 8, y + cy, cx, y + cy + 8), "lbad w2", "ah-bad"))
         return o
     sin_beats = [210 + 56 * k for k in range(4)]
@@ -108,25 +108,26 @@ def af_mech():
 
 
 def af_laa():
-    out = [ell(250, 92, 36, 17, "ac", rot=-28),
-           ell(150, 110, 92, 58, "ac"),
-           path("M248 82 q8 -10 18 -4 q8 6 0 14 q-6 8 -14 4 q-10 -2 -4 -14 z", "badf"),
-           t(282, 52, "LAA กระเปาะปลายตัน", "xs b"), t(282, 66, "เลือดค้าง → ลิ่มเลือด", "xs b tbad"),
-           path("M100 128 q30 -36 64 -6", "lmu w2 da", "ah-mu"), path("M170 92 q-24 30 -56 8", "lmu w2 da", "ah-mu"),
-           t(150, 156, "ห้องบนสั่น ไม่บีบ", "xs mid b"), t(150, 170, "เลือดวนช้า (stasis)", "xs mid i2"),
-           line(150, 168 + 8, 150, 196, "ln", "ah"),
-           ell(150, 226, 60, 30, "sk"), t(150, 230, "LV", "sm b mid"),
-           path("M254 100 C 300 150, 230 200, 196 214", "lbad w2 da", "ah-bad"),
-           path("M206 222 C 290 230, 320 160, 340 96", "lbad w2 da", "ah-bad"),
-           t(296, 210, "ก้อนหลุด", "xs b tbad"), t(296, 224, "ผ่าน LV → aorta", "xs tbad"),
-           ell(362, 54, 48, 34, "bx"), path("M330 64 q20 -14 30 -4 q10 10 28 -2", "lbad w2"),
-           circ(360, 60, 6, "badf"), t(362, 108, "หลอดเลือดสมอง", "xs mid b"), t(362, 122, "ใหญ่ถูกอุด", "xs mid b"),
-           box(8, 262, 404, 44, "bad", "ก้อนจาก LA ใหญ่ อุดหลอดเลือดแดงใหญ่ในสมอง\n→ stroke รุนแรงกว่า stroke จากหลอดเลือดเล็ก", fs=11.5)]
+    out = [ell(224, 72, 34, 15, "ac", rot=-30),
+           ell(140, 110, 90, 56, "ac"),
+           path("M222 66 q8 -10 18 -4 q8 6 0 14 q-6 8 -14 4 q-10 -2 -4 -14 z", "badf"),
+           t(236, 22, "LAA กระเปาะปลายตัน", "xs b mid"), t(236, 36, "เลือดค้าง → ลิ่มเลือด", "xs b mid tbad"),
+           line(232, 40, 232, 54, "lmu"),
+           path("M108 96 A32 14 0 0 1 172 96", "lmu w2 da", "ah-mu"), path("M172 106 A32 14 0 0 1 108 106", "lmu w2 da", "ah-mu"),
+           t(140, 136, "ห้องบนสั่น ไม่บีบ", "xs mid b"), t(140, 150, "เลือดวนช้า (stasis)", "xs mid i2"),
+           line(140, 166, 140, 198, "ln", "ah"),
+           ell(140, 228, 60, 28, "sk"), t(140, 232, "LV", "sm b mid"),
+           path("M244 84 C 280 130, 240 190, 204 218", "lbad w2 da", "ah-bad"),
+           path("M200 236 C 290 250, 330 230, 350 188", "lbad w2 da", "ah-bad"),
+           t(250, 268, "ก้อนหลุด ผ่าน LV → aorta", "xs b tbad"),
+           t(362, 96, "หลอดเลือดสมอง", "xs mid b"), t(362, 110, "ใหญ่ถูกอุด", "xs mid b tbad"),
+           ell(362, 150, 48, 32, "bx"), path("M326 160 q20 -14 30 -4 q10 10 28 -2", "lbad w2"), circ(356, 156, 6, "badf"),
+           box(8, 282, 404, 44, "bad", "ก้อนจาก LA ใหญ่ อุดหลอดเลือดแดงใหญ่ในสมอง\n→ stroke รุนแรงกว่า stroke จากหลอดเลือดเล็ก", fs=11.5)]
     return fig("AF ทำให้เกิด stroke ได้อย่างไร",
                "ห้องบนที่สั่นพลิ้วไม่บีบตัว เลือดใน **left atrial appendage** (กระเปาะปลายตันของ LA) จึงไหลช้าและค้าง → "
                "เกิด **ลิ่มเลือด** ที่ LAA มากที่สุด → หลุดผ่าน LV ขึ้น aorta ไปอุดหลอดเลือดสมอง · ก้อนจากหัวใจมีขนาดใหญ่ "
                "จึงมักอุดหลอดเลือดแดงใหญ่และทำให้ stroke รุนแรง — เป็นเหตุผลของยาต้านการแข็งตัวและการปิด LAA",
-               svg(420, 314, "ลิ่มเลือดก่อตัวใน left atrial appendage ที่เลือดค้าง แล้วหลุดผ่าน LV และ aorta ไปอุดหลอดเลือดสมอง", *out))
+               svg(420, 334, "ลิ่มเลือดก่อตัวใน left atrial appendage ที่เลือดค้าง แล้วหลุดผ่าน LV และ aorta ไปอุดหลอดเลือดสมอง", *out))
 
 
 # ---------------------------------------------------------------- af-02
@@ -164,11 +165,11 @@ def af_kick():
            t(X0 - 4, 24, "ปริมาตรเลือดใน LV ช่วง diastole", "xs mu"), t(410, Y0 + 16, "เวลา →", "xs end mu"),
            poly(norm, "lok w3"), poly(slow, "lms w2 da"), poly(fast, "lbad w3"),
            circ(X0 + 310, Y0 - pas(250) - 30, 4, "okf"), circ(X0 + 300, Y0 - pas(300), 4, "msf"), circ(X0 + 100, Y0 - pas(100), 4, "badf"),
-           t(X0 + 304, Y0 - pas(250) - 38, "sinus: EDV เต็ม", "xs b tok end"),
-           t(X0 + 256, Y0 - pas(250) - 14, "atrial kick", "xs b tok end"), t(X0 + 256, Y0 - pas(250) - 2, "20–30%", "xs tok end"),
+           t(X0 + 304, 36, "sinus: EDV เต็ม", "xs b tok end"),
+           t(X0 + 246, 56, "atrial kick", "xs b tok end"), t(X0 + 246, 68, "20–30%", "xs tok end"),
            t(X0 + 300, Y0 - pas(300) + 18, "AF ช้า: ไม่มี kick", "xs b tms end"),
-           t(X0 + 106, Y0 - pas(100) + 4, "AF เร็ว: diastole สั้น", "xs b tbad"),
-           t(X0 + 106, Y0 - pas(100) + 18, "+ ไม่มี kick → EDV ต่ำสุด", "xs b tbad")]
+           t(X0 + 70, 134, "AF เร็ว: diastole สั้น", "xs b tbad"),
+           t(X0 + 70, 148, "+ ไม่มี kick → EDV ต่ำสุด", "xs b tbad")]
     chain = ["EDV ↓", "SV ↓", "CO ↓", "เหนื่อย หน้ามืด\nBP ต่ำ HF"]
     for k, s in enumerate(chain):
         x = 8 + 104 * k
@@ -183,26 +184,29 @@ def af_kick():
 
 
 def af_deficit():
-    beats = [30, 92, 116, 176, 202, 268, 292, 340, 396]
-    out = [t(8, 16, "ECG", "xs b mu"), _ecg(8, 412, 60, beats, "af", 0.8)]
-    base, thr = 190, 156
-    out += [line(8, base, 412, base, "lru"), line(8, thr, 412, thr, "lms da"),
-            t(412, thr - 6, "แรงพอคลำได้", "xs end tms b"), t(8, 104, "ความดันที่ข้อมือ", "xs b mu")]
+    beats = [92, 140, 160, 206, 226, 276, 294, 336, 382]
+    base, thr = 196, 166
+    out = [t(8, 64, "ECG", "xs b mu"), _ecg(80, 412, 64, beats, "af", 0.8),
+           t(8, 122, "ชีพจร", "xs b mu"), t(8, 136, "ที่ข้อมือ", "xs b mu"),
+           line(80, base, 412, base, "lru"), line(80, thr, 412, thr, "lms da"), t(8, thr + 4, "แรงพอคลำ", "xs tms b")]
     felt = 0
     for i, x in enumerate(beats):
         rr = x - beats[i - 1] if i else 60
-        amp = min(70, rr * 0.95)
-        pts = [(x + 4, base), (x + 12, base - amp), (x + 18, base - amp * 0.85), (x + 24, base - amp * 0.5), (x + 30, base)]
+        amp = min(56, rr * 0.95)
+        nxt = beats[i + 1] if i + 1 < len(beats) else 412
+        w = min(34, nxt - x)
+        sh = [(0.12, 0), (0.3, 0.8), (0.4, 1), (0.52, 0.92), (0.62, 0.7), (0.68, 0.73), (0.85, 0.35), (1, 0)]
+        pts = [(x + w * a, base - amp * b) for a, b in sh]
         ok = base - amp < thr
         felt += ok
-        out += [line(x, 92, x, base - 2, "lru dt"), poly(pts, "lbad w2" if ok else "lmu w2"),
+        out += [line(x, 96, x, base - 2, "lru dt"), poly(pts, "lbad w2" if ok else "lmu w2"),
                 t(x + 12, base + 16, "✓" if ok else "✕", "xs mid b " + ("tok" if ok else "tbad"))]
-    out += [t(8, 228, "R-R สั้น → LV เติมเลือดน้อย → SV น้อย → แรงดันไม่ถึงข้อมือ", "xs i2"),
-            t(8, 246, "ฟังที่หัวใจ %d ครั้ง · คลำชีพจรได้ %d ครั้ง → pulse deficit %d" % (len(beats), felt, len(beats) - felt), "sm b")]
+    out += [t(8, 234, "R-R สั้น → LV เติมเลือดน้อย → SV น้อย → แรงดันไม่ถึงข้อมือ", "xs i2"),
+            t(8, 252, "ฟังที่หัวใจ %d ครั้ง · คลำชีพจรได้ %d ครั้ง → pulse deficit %d" % (len(beats), felt, len(beats) - felt), "sm b")]
     return fig("Pulse deficit",
                "ทุก QRS ทำให้ห้องล่างบีบและได้ยินเสียงหัวใจ แต่จังหวะที่มาหลัง **R-R สั้น** มีเวลาเติมเลือดน้อย SV จึงเล็กจน "
                "**แรงดันไปไม่ถึงข้อมือ** · นับที่หัวใจจึงได้มากกว่าคลำชีพจร — ต้องนับอัตราจากการฟังหรือ ECG ไม่ใช่จากชีพจร",
-               svg(420, 256, "ECG ของ AF กับคลื่นความดันที่ข้อมือ จังหวะที่ R-R สั้นให้คลื่นเล็กจนคลำไม่ได้ เกิด pulse deficit", *out))
+               svg(420, 262, "ECG ของ AF กับคลื่นความดันที่ข้อมือ จังหวะที่ R-R สั้นให้คลื่นเล็กจนคลำไม่ได้ เกิด pulse deficit", *out))
 
 
 # ---------------------------------------------------------------- af-04
@@ -233,7 +237,7 @@ def af_types():
             ("Long-standing", "> 1 ปี ยังแก้จังหวะ", 112, 360, True), ("Permanent", "ตกลงไม่แก้จังหวะ", 112, 412, False)]
     out = [t(X["0"], 26, "เริ่ม", "xs mid mu")]
     for k, lab in (("48", "48 ชม."), ("7d", "7 วัน"), ("1y", "1 ปี")):
-        out += [line(X[k], 32, X[k], 236, "lmu da"), t(X[k], 26, lab, "xs mid b")]
+        out += [line(X[k], 32, X[k], 214, "lmu da"), t(X[k], 26, lab, "xs mid b")]
     for i, (a, b, x1, x2, conv) in enumerate(rows):
         y = 44 + 48 * i
         out += [t(8, y + 12, a, "sm b"), t(8, y + 28, b, "xs i2"),
@@ -244,7 +248,7 @@ def af_types():
             out += [t(x2 + 4, y + 18, "⚡", "sm"), line(x2 + 16, y + 13, 412, y + 13, "lok w3")]
             if i == 1: out.append(t(x2 + 4, y + 36, "cardioversion", "xs tok"))
         else:
-            out.append(t(404, y + 36, "คุมอัตราอย่างเดียว", "xs end tbad"))
+            out.append(t(404, y + 38, "คุมอัตราอย่างเดียว", "xs end tbad"))
     out += [path("M112 250 H404", "lms w2", "ah-ms"),
             t(112, 268, "ยิ่งนาน ห้องบนยิ่งโต พังผืดมาก → กลับ sinus ยากขึ้น", "xs b tms"),
             t(8, 290, "48 ชม.: ลิ่มเลือดอาจก่อตัวใน LAA แล้ว → ถ้าเกินหรือไม่ทราบ", "xs i2"),
@@ -290,12 +294,11 @@ def af_coag():
            box(8, 154, 184, 34, "bx", "X → Xa", "b", fs=12.5), line(100, 188, 100, 208, "ln", "ah"),
            box(8, 210, 184, 34, "bx", "II → IIa (thrombin)", "b", fs=12.5), line(100, 244, 100, 264, "ln", "ah"),
            box(8, 266, 184, 40, "bad", "fibrinogen → fibrin\n= ลิ่มเลือด", fs=12),
-           box(240, 154, 172, 34, "ac", "-xaban (anti-Xa)", "b", fs=12),
+           box(240, 149, 172, 44, "ac", "-xaban (anti-Xa)\nแก้: PCC / andexanet", fs=11.5),
            line(240, 171, 196, 171, "lac w3"), line(196, 162, 196, 180, "lac w3"),
-           t(246, 204, "แก้: PCC / andexanet", "xs tok"),
-           box(240, 222, 172, 34, "ac", "Dabigatran (anti-IIa)", "b", fs=12),
-           line(240, 239, 196, 227, "lac w3"), line(193, 219, 199, 235, "lac w3"),
-           t(246, 272, "แก้: idarucizumab", "xs tok"), t(246, 288, "(แอนติบอดีจับ dabigatran)", "xs i2")]
+           box(240, 205, 172, 44, "ac", "Dabigatran (anti-IIa)\nแก้: idarucizumab", fs=11.5),
+           line(240, 227, 196, 227, "lac w3"), line(196, 218, 196, 236, "lac w3"),
+           t(246, 272, "⊣ = ยับยั้ง", "xs mu")]
     return fig("ยาต้านการแข็งตัวออกฤทธิ์ที่ไหนของ coagulation",
                "**Warfarin** ไปยับยั้งวงจร vitamin K ที่ตับ ทำให้ factor **II VII IX X** ที่ทำงานได้ลดลง (ออกฤทธิ์ช้า ต้องวัด INR) · "
                "**-xaban** จับ **factor Xa** โดยตรง · **dabigatran** จับ **thrombin (IIa)** โดยตรง · ยาแก้ฤทธิ์ตามเป้า: vitamin K "
@@ -356,14 +359,14 @@ def af_wpw():
     def heart(x0, blocked):
         o = [rect(x0 + 16, 34, 164, 46, "ac", 12), t(x0 + 98, 62, "AF 350–600/นาที", "xs mid b"),
              rect(x0 + 16, 150, 164, 50, "sk", 12),
-             line(x0 + 64, 80, x0 + 64, 106, "ln w2"), circ(x0 + 64, 116, 11, "ms"), t(x0 + 64, 120, "AV", "xs mid b"),
-             line(x0 + 150, 80, x0 + 150, 148, "lbad " + ("w5" if blocked else "w2"), "ah-bad"),
-             t(x0 + 160, 108, "accessory", "xs tbad"), t(x0 + 160, 122, "pathway", "xs tbad")]
+             line(x0 + 64, 80, x0 + 64, 106, "ln"), circ(x0 + 64, 116, 11, "ms"), t(x0 + 64, 120, "AV", "xs mid b"),
+             line(x0 + 130, 80, x0 + 130, 146, "lbad " + ("w3" if blocked else "w2"), "ah-bad"),
+             t(x0 + 138, 108, "accessory", "xs tbad b"), t(x0 + 138, 122, "pathway", "xs tbad b")]
         if blocked:
             o += [line(x0 + 64, 128, x0 + 64, 148, "lmu da"), t(x0 + 84, 122, "✕", "b tbad"),
                   t(x0 + 98, 180, "ทุกสัญญาณลงทางลัด", "xs mid b tbad")]
         else:
-            o += [line(x0 + 64, 128, x0 + 64, 148, "ln w2", "ah"), t(x0 + 98, 180, "ลงได้สองทาง", "xs mid b")]
+            o += [line(x0 + 64, 128, x0 + 64, 146, "ln", "ah"), t(x0 + 98, 180, "ลงได้สองทาง", "xs mid b")]
         return o
     out = (heart(8, False) + heart(216, True) +
            [t(106, 20, "ก่อนให้ยา", "sm b mid"), t(314, 20, "ให้ยากด AV node", "sm b mid tbad"),
@@ -384,12 +387,12 @@ def af_cv():
     rec = [(X(0), 120)] + [(X(w / 10), 120 - 62 * (1 - math.exp(-(w / 10) / 1.3))) for w in range(1, 41)]
     out = [t(8, 16, "Elective cardioversion ใน AF > 48 ชม.", "sm b"),
            rect(X(-3), 30, X(4) - X(-3), 18, "ok", 6), t(X(-3) + 8, 43, "ยาต้านการแข็งตัว", "xs b tok"),
-           line(X(4), 39, 412, 39, "lok w3", "ah-ok"),
+           line(X(4), 39, 412, 39, "lok w2", "ah-ok"),
            rect(X(-3), 120, X(0) - X(-3), 8, "badf", 2), t((X(-3) + X(0)) / 2, 142, "AF: ห้องบนไม่บีบ", "xs mid b tbad"),
            rect(X(0), 64, X(4) - X(0), 56, "ms", 0),
            poly(rec, "lok w3"), line(X(4), 58, 412, 58, "lok w3"),
-           t(X(0) + 10, 78, "ห้องบนยัง “ชา” (stunning)", "xs b tms"), t(X(0) + 10, 92, "ลิ่มเลือดยังเกิดได้", "xs tms"),
-           t(X(4) - 4, 54, "บีบตัวกลับมา", "xs end tok b"),
+           t(X(1.6), 91, "ห้องบนยัง “ชา”", "xs b tms"), t(X(1.6), 104, "(atrial stunning)", "xs tms"), t(X(1.6), 117, "ลิ่มเลือดยังเกิดได้", "xs tms"),
+           t(56, 72, "เส้นเขียว = แรงบีบห้องบน", "xs tok"),
            t(X(0), 112, "⚡", "lg mid"),
            line(X(0), 150, X(0), 160, "lmu"),
            line(56, 160, 412, 160, "lmu"),
