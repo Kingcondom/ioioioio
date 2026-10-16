@@ -458,7 +458,7 @@ def lp_retina():
     out = [t(cA, 18, "Cotton wool spot", "sm b mid"), t(cB, 18, "Cherry red spot (CRAO)", "sm b mid"),
            line(210, 10, 210, 330, "lru da"),
            *_fundus(cA, 100),
-           ell(cA + 18, 70, 12, 8, "bx"), ell(cA + 30, 124, 10, 7, "bx"),
+           ell(cA + 18, 70, 12, 8, "muf"), ell(cA + 30, 124, 10, 7, "muf"),
            circ(cA + 22, 100, 5, "ms"),
            *_fundus(cB, 100, pale=True),
            circ(cB + 22, 100, 7, "badf"),
