@@ -211,8 +211,8 @@ def ctd_ana_flow():
 
 # ---------------------------------------------------------------- 02 SLE / LN
 def ctd_ln_site():
-    x0 = 150
-    feet = [rect(x0 + 4 + 32 * k, 116, 26, 14, "ac", 5) for k in range(8)]
+    x0 = 170
+    feet = [rect(x0 + 4 + 30 * k, 116, 24, 14, "ac", 5) for k in range(8)]
     rows = [(180, 48, "sk", "① Mesangial (class I–II)", ["อยู่ในแกนกลาง ห่างกระแสเลือด อักเสบน้อย → UA ผิดปกติเล็กน้อย"]),
             (236, 64, "bad", "② Subendothelial (class III–IV)", ["ติดฝั่งเลือด: complement และ neutrophil เข้าถึงทันที",
                                                               "→ เซลล์แบ่งตัว RBC cast GFR ↓ = nephritic"]),
@@ -225,16 +225,16 @@ def ctd_ln_site():
                "ยิ่ง immune complex อยู่ **ใกล้กระแสเลือด** (subendothelial) complement และ neutrophil ยิ่งเข้าถึงง่าย จึงอักเสบรุนแรงแบบ **proliferative (class III/IV)** ต้องให้ยากดภูมิแบบเข้มข้น "
                "ส่วน **subepithelial (class V)** อยู่อีกฝั่งของ GBM ทำร้าย podocyte จึงเด่นที่โปรตีนรั่ว — ปัสสาวะดูคล้ายกันได้ จึงต้อง **เจาะไต** เพื่อรู้ class",
                svg(420, 382, "ตำแหน่ง immune deposit ใน glomerulus mesangial subendothelial subepithelial สัมพันธ์กับ class ของ lupus nephritis",
-                   rect(x0, 14, 260, 44, "bad", 6), t(x0 + 10, 40, "เลือด: complement · neutrophil", "xs b"),
-                   rect(x0, 62, 260, 10, "sk", 3), t(x0 - 4, 70, "endothelium", "xs mu end"),
-                   ell(225, 81, 11, 6, "inkf"), ell(305, 81, 9, 5, "inkf"), t(392, 86, "②", "b mid tbad"),
-                   rect(x0, 90, 260, 14, "ms", 3), t(x0 - 4, 101, "GBM", "xs mu end"),
-                   ell(260, 110, 8, 4, "inkf"), ell(340, 110, 8, 4, "inkf"), t(392, 114, "③", "b mid tac"),
+                   rect(x0, 14, 240, 44, "bad", 6), t(x0 + 10, 40, "เลือด: complement · neutrophil", "xs b"),
+                   rect(x0, 62, 240, 10, "sk", 3), t(x0 - 4, 70, "endothelium", "xs mu end"),
+                   ell(235, 81, 11, 6, "inkf"), ell(315, 81, 9, 5, "inkf"), t(396, 86, "②", "b mid tbad"),
+                   rect(x0, 90, 240, 14, "ms", 3), t(x0 - 4, 101, "GBM", "xs mu end"),
+                   ell(270, 110, 8, 4, "inkf"), ell(345, 110, 8, 4, "inkf"), t(396, 114, "③", "b mid tac"),
                    *feet, t(x0 - 4, 127, "podocyte", "xs mu end"),
-                   rect(x0, 134, 260, 30, "wa", 6), t(x0 + 10, 154, "ปัสสาวะ (ช่อง Bowman)", "xs b twa"),
-                   rect(10, 14, 92, 150, "sk", 8), t(56, 34, "Mesangium", "xs b mid"),
-                   ell(40, 76, 10, 6, "inkf"), ell(72, 98, 9, 5, "inkf"), ell(48, 122, 8, 5, "inkf"),
-                   t(56, 154, "①", "b mid"),
+                   rect(x0, 134, 240, 30, "wa", 6), t(x0 + 10, 154, "ปัสสาวะ (ช่อง Bowman)", "xs b twa"),
+                   rect(10, 14, 86, 150, "sk", 8), t(53, 34, "Mesangium", "xs b mid"),
+                   ell(38, 76, 10, 6, "inkf"), ell(68, 98, 9, 5, "inkf"), ell(46, 122, 8, 5, "inkf"),
+                   t(53, 154, "①", "b mid"),
                    *out))
 
 
@@ -270,12 +270,12 @@ def ctd_rash_depth():
         out += [pill(x + 14, 26, name, c, "sm b mid", w=100),
                 rect(x, y0 + 20, 128, 100, "bx", 3), rect(x, y0, 128, 20, "sk", 3),
                 path("M%s %s V%s a7 7 0 0 0 14 0 V%s" % (fx, y0, y0 + 84, y0), "ln"),
-                line(fx + 7, y0 - 14, fx + 7, y0 + 80, "lmu" if lv < 3 else "lmu da")]
+                line(fx + 7, y0 - 6, fx + 7, y0 + 80, "lmu" if lv < 3 else "lmu da")]
         out += [circ(x + 10 + 14 * i, y0 + 21, 2.6, "badf") for i in range(5 if lv == 1 else 6)]
         if lv >= 2:
             out += [circ(x + 18 + 18 * i, y0 + 38 + (i % 2) * 6, 2.6, "badf") for i in range(4)]
         if lv == 3:
-            out += [rect(fx + 1, y0 - 4, 12, 16, "msf" if False else "ms", 2)]
+            out += [rect(fx + 1, y0 - 4, 12, 16, "ms", 2)]
             out += [circ(fx + dx, y0 + dy, 2.6, "badf") for dx, dy in
                     ((-6, 40), (-7, 58), (-6, 76), (21, 44), (21, 62), (20, 82), (7, 96), (-14, 88), (28, 96))]
         for i, s in enumerate(ls):
@@ -286,25 +286,22 @@ def ctd_rash_depth():
                svg(420, 300, "ผื่น ACLE SCLE อักเสบตื้นไม่มีแผลเป็น DLE อักเสบลึกรอบรูขุมขนเกิดแผลเป็นและผมร่วงถาวร",
                    t(210, 16, "UV → keratinocyte ตาย → แอนติเจนโผล่ → Ab + T cell", "xs mid i2"),
                    *out,
-                   t(400, y0 + 14, "หนังกำพร้า", "xs mu end") if False else "",
                    circ(16, 288, 3, "badf"), t(24, 292, "= เซลล์อักเสบ", "xs mu"),
                    t(410, 292, "เส้นประ = ผมหลุดถาวร", "xs mu end")))
 
 
 def ctd_jaccoud():
     def joint(cx, ra):
-        out = [rect(cx - 22, 130, 44, 70, "sk", 14)]
-        ph = [rect(cx - 20, 50, 40, 74, "sk" if ra else "sk", 14)]
-        if ra:
-            out += [path("M%s 118 Q%s 100 %s 132 Q%s 150 %s 140" % (cx - 40, cx - 30, cx - 22, cx - 30, cx - 40), "bad"),
-                    path("M%s 118 Q%s 100 %s 132 Q%s 150 %s 140" % (cx + 40, cx + 30, cx + 22, cx + 30, cx + 40), "bad"),
-                    circ(cx - 22, 136, 5, "paf"), circ(cx + 22, 136, 5, "paf")]
-            out.append(g(*ph, tr="rotate(22 %s 127)" % cx))
-        else:
-            out.append(path("M%s 98 C%s 108 %s 150 %s 162" % (cx - 26, cx - 52, cx - 52, cx - 26), "lms w2 da"))
-            out.append(path("M%s 98 C%s 108 %s 150 %s 162" % (cx + 26, cx + 52, cx + 52, cx + 26), "lms w2 da"))
+        out = [path("M%s 98 C%s 108 %s 154 %s 166" % (cx - 26, cx - 54, cx - 54, cx - 26), "ln w2" if ra else "lms w2 da"),
+               path("M%s 98 C%s 108 %s 154 %s 166" % (cx + 26, cx + 54, cx + 54, cx + 26), "ln w2" if ra else "lms w2 da"),
+               rect(cx - 22, 130, 44, 70, "sk", 14)]
+        if not ra:
             out.append(rect(cx - 20, 50, 40, 74, "lmu da", 14))
-            out.append(g(*ph, tr="rotate(22 %s 127)" % cx))
+        out.append(g(rect(cx - 20, 50, 40, 74, "sk", 14), tr="rotate(22 %s 127)" % cx))
+        if ra:
+            out += [ell(cx - 30, 136, 14, 24, "bad"), ell(cx + 30, 136, 14, 24, "bad"),
+                    circ(cx - 21, 140, 4, "paf"), circ(cx + 21, 140, 4, "paf")]
+        else:
             out.append(path("M%s 62 Q%s 40 %s 52" % (cx + 44, cx + 30, cx + 8), "lok w2", "ah-ok"))
         return out
     return fig("ข้อผิดรูปใน RA เทียบกับ Jaccoud",
@@ -315,6 +312,8 @@ def ctd_jaccoud():
                    line(210, 10, 210, 280, "lru da"),
                    *joint(95, True), *joint(305, False),
                    t(352, 46, "ดัดกลับได้", "xs b tok"),
+                   line(48, 150, 34, 176, "lmu"), t(34, 188, "pannus", "xs b tbad mid"),
+                   line(118, 142, 160, 176, "lmu"), t(160, 188, "erosion", "xs b mid"),
                    t(105, 222, "pannus กัดขอบกระดูก", "xs mid i2"), t(105, 238, "→ erosion ใน X-ray", "xs mid i2"),
                    t(105, 258, "ผิดรูปติดแน่น", "sm mid b tbad"),
                    t(315, 222, "เอ็น/แคปซูลหย่อน กระดูกปกติ", "xs mid i2"), t(315, 238, "→ X-ray ไม่มี erosion", "xs mid i2"),
@@ -480,7 +479,7 @@ def ctd_ssc_triad():
             ("ac", "ภูมิต้านตนเอง", "T cell · B cell", ["autoantibody", "บอกชนิดและอวัยวะ"],
              ["ACA → PAH", "Scl-70 → ILD", "RNAP III → SRC"]),
             ("ms", "พังผืด", "fibroblast · TGF-β", ["collagen สะสม", "ในหนังแท้และอวัยวะ"],
-             ["ผิวหนา sclerodactyly", "ILD", "หลอดอาหารไม่บีบ", "GERD กลืนติด"])]
+             ["ผิวหนา", "sclerodactyly", "ILD", "หลอดอาหารไม่บีบ", "GERD กลืนติด"])]
     out = []
     for k, (c, h, sub, mech, res) in enumerate(cols):
         x = 10 + 138 * k
@@ -539,9 +538,9 @@ def ctd_src():
                    path("M335 146 Q335 190 312 206", "ln", "ah"),
                    path("M108 213 Q85 210 85 148", "ln", "ah"),
                    path("M85 100 Q85 50 108 36", "ln", "ah"),
-                   pill(166, 112, "ACE inhibitor", "ok", "sm b mid tok", w=90),
-                   line(256, 123, 326, 172, "lok da"), t(330, 182, "✕", "b tok"),
-                   t(210, 158, "ห้ามใช้ยาอื่นแทน", "xs mid tok"),
+                   pill(166, 150, "ACE inhibitor", "ok", "sm b mid tok", w=90),
+                   line(256, 161, 326, 172, "lok da"), t(330, 178, "✕", "b tok"),
+                   t(211, 143, "ห้ามใช้ยาอื่นแทน", "xs mid tok"),
                    box(10, 260, 400, 46, "ms", "RBC ถูกตัดในหลอดเลือดที่แคบ → schistocyte · เกล็ดเลือดต่ำ (MAHA)\nสมอง: ชัก papilledema · หัวใจ: ปอดบวมน้ำ", fs=11.5),
                    box(10, 316, 400, 36, "sk", "ตัวจุด: dcSSc ระยะแรก · anti-RNA pol III · steroid ≥ 15 มก./วัน", fs=11.5)))
 
@@ -566,7 +565,7 @@ def ctd_ssc_score():
                    line(X(9), 22, X(9), 206, "lbad da w2"), t(X(9), 16, "≥ 9 = SSc", "xs b mid tbad"),
                    t(10, 54, "เคส ①", "sm b"), t(10, 68, "+ anti-centromere", "xs i2"), *r1, t(X(s1) + 4, 60, "10 ✓", "sm b tok"),
                    t(10, 118, "เคส ②", "sm b"), t(10, 132, "+ anti-U1RNP", "xs i2"), *r2,
-                   rect(X(7), 104, X(10) - X(7), 30, "lmu da", 3), t((X(7) + X(10)) / 2, 123, "U1RNP 0", "xs mid mu"),
+                   rect(X(7), 104, X(10) - X(7), 30, "lmu da", 3), t(X(7) + 6, 123, "U1RNP 0", "xs mu"),
                    t(X(7) - 4, 150, "7 ✗", "sm b tbad end"),
                    t(10, 182, "ข้อเดียวพอ", "sm b"), t(10, 196, "sufficient", "xs i2"), *r3,
                    t(10, 232, "กลุ่มเดียวกันนับข้อสูงสุด: บวม 2 + sclerodactyly 4 = 4 ไม่ใช่ 6", "xs i2"),
@@ -685,9 +684,9 @@ def ctd_mctd_terms():
                    t(280, 206, "+ อาการของโรค B", "xs mid i2"), t(280, 222, "ที่โรค A อธิบายไม่ได้", "xs mid i2"),
                    t(280, 238, "ไม่ใช่ MCTD", "xs mid b tms"),
                    line(386, 70, 550, 70, "lbad da w2"), t(548, 62, "เกณฑ์ของโรคใดโรคหนึ่ง", "xs end tbad"),
-                   circ(404, 150, 8, "acf"), t(404, 174, "อาการ + Ab", "xs mid"), t(404, 188, "ยังไม่ถึงเกณฑ์", "xs mid"),
-                   line(414, 150, 540, 150, "ln", "ah"), t(500, 144, "คงที่ (ส่วนใหญ่)", "xs mid i2"),
-                   path("M412 142 Q460 110 470 70", "lbad w2", "ah-bad"), t(478, 96, "~30%", "sm b tbad"),
+                   circ(398, 150, 8, "acf"), t(386, 174, "อาการ + Ab", "xs"), t(386, 188, "ยังไม่ถึงเกณฑ์", "xs"),
+                   line(408, 150, 540, 150, "ln", "ah"), t(500, 144, "คงที่ (ส่วนใหญ่)", "xs mid i2"),
+                   path("M404 142 Q458 110 470 70", "lbad w2", "ah-bad"), t(478, 96, "~30%", "sm b tbad"),
                    t(463, 214, "→ RA 38% · Sjögren 19%", "xs mid i2"), t(463, 228, "SLE 12% · MCTD 11%", "xs mid i2"),
                    t(463, 244, "ติดตาม ไม่รีบตั้งชื่อ", "xs mid b")))
 
@@ -796,7 +795,7 @@ def ctd_ra_joint():
                    line(r + 34, 112, 470, 112, "lmu"), t(472, 108, "marginal", "xs b"), t(472, 121, "erosion", "xs b"),
                    line(r + 46, 140, 470, 150, "lmu"), t(472, 154, "effusion", "xs b twa"), t(472, 167, "→ บวมนุ่ม", "xs i2"),
                    line(r + 22, 200, 470, 206, "lmu"), t(472, 204, "กระดูก", "xs b"), t(472, 217, "รอบข้อบาง", "xs b"),
-                   t(r - 10, 258, "pannus กัด bare area · ช่องข้อแคบ", "xs mid i2"), t(r - 10, 274, "ทั่วทั้งข้อ (สม่ำเสมอ)", "xs mid i2")))
+                   t(r - 10, 258, "pannus กัด bare area · ย่อยกระดูกอ่อน", "xs mid i2"), t(r - 10, 274, "→ ระยะหลังช่องข้อแคบสม่ำเสมอ", "xs mid i2")))
 
 
 def ctd_ra_cascade():
@@ -832,26 +831,26 @@ def ctd_enthesis():
     for k, (h, ls, s) in enumerate(stages):
         cx = 72 + 132 * k
         x = cx - 34
-        out += [t(cx, 64, h, "sm b mid"),
-                rect(x, 76, 68, 44, "sk", 6), rect(x + 4, 122, 60, 14, "wa", 4), rect(x, 138, 68, 44, "sk", 6)]
+        out += [t(cx, 80, h, "sm b mid"),
+                rect(x, 92, 68, 44, "sk", 6), rect(x + 4, 138, 60, 14, "wa", 4), rect(x, 154, 68, 44, "sk", 6)]
         if s == 1:
-            out += [circ(x + 2, y, 9, "bad") for y in (118, 140)] + [circ(x + 66, y, 9, "bad") for y in (118, 140)]
+            out += [circ(x + 2, y, 9, "bad") for y in (134, 156)] + [circ(x + 66, y, 9, "bad") for y in (134, 156)]
         if s == 2:
-            out += [circ(x + 1, y, 6, "paf") for y in (116, 142)] + [circ(x + 67, y, 6, "paf") for y in (116, 142)]
-            out += [path("M%s 110 Q%s 116 %s 124" % (x + 1, x + 8, x + 1), "lms w2"), path("M%s 110 Q%s 116 %s 124" % (x + 67, x + 60, x + 67), "lms w2")]
+            out += [circ(x + 1, y, 6, "paf") for y in (132, 158)] + [circ(x + 67, y, 6, "paf") for y in (132, 158)]
+            out += [path("M%s 126 Q%s 132 %s 140" % (x + 1, x + 8, x + 1), "lms w2"), path("M%s 126 Q%s 132 %s 140" % (x + 67, x + 60, x + 67), "lms w2")]
         if s == 3:
-            out += [path("M%s 116 Q%s 129 %s 142" % (x + 1, x - 8, x + 1), "ln w5"), path("M%s 116 Q%s 129 %s 142" % (x + 67, x + 76, x + 67), "ln w5")]
-        out += [t(cx, 204 + 15 * i, s_, "xs mid i2") for i, s_ in enumerate(ls)]
+            out += [path("M%s 132 Q%s 145 %s 158" % (x + 1, x - 8, x + 1), "ln w5"), path("M%s 132 Q%s 145 %s 158" % (x + 67, x + 76, x + 67), "ln w5")]
+        out += [t(cx, 220 + 15 * i, s_, "xs mid i2") for i, s_ in enumerate(ls)]
         if k < 3:
-            out.append(line(cx + 42, 130, cx + 88, 130, "ln", "ah"))
+            out.append(line(cx + 42, 146, cx + 88, 146, "ln", "ah"))
     return fig("Axial SpA — อักเสบที่ enthesis แล้วซ่อมด้วยกระดูกใหม่",
                "โรคเริ่มที่ **enthesis** (มุมกระดูกสันหลังที่เอ็นเกาะ) เกิดไขกระดูกบวมที่ **MRI เห็นได้ตั้งแต่แรก** แต่ภาพรังสียังปกติ (non-radiographic axSpA) "
                "ต่อมามุมกร่อนแล้วร่างกาย **ซ่อมด้วยกระดูกใหม่** จนเป็น syndesmophyte เชื่อมข้อ — กระดูกสันหลังจึงขยับได้น้อยลงเรื่อย ๆ ซึ่งการออกกำลังกายและยาที่คุมการอักเสบตั้งแต่ต้นช่วยชะลอ",
-               svg(540, 256, "ขั้นตอนของ axial spondyloarthritis จากปกติ enthesitis erosion จนเกิด syndesmophyte และช่วงที่ MRI กับภาพรังสีเห็น",
-                   rect(158, 10, 254, 24, "ac", 12), t(285, 27, "MRI เห็น (bone marrow edema)", "xs b mid tac"),
-                   rect(290, 38, 244, 20, "ms", 10), t(412, 52, "ภาพรังสีเห็น", "xs b mid tms"),
+               svg(540, 272, "ขั้นตอนของ axial spondyloarthritis จากปกติ enthesitis erosion จนเกิด syndesmophyte และช่วงที่ MRI กับภาพรังสีเห็น",
+                   rect(158, 8, 376, 22, "ac", 11), t(346, 23, "MRI เห็นได้ตั้งแต่ระยะ ② (bone marrow edema)", "xs b mid tac"),
+                   rect(290, 36, 244, 22, "ms", 11), t(412, 51, "ภาพรังสีเห็นตั้งแต่ระยะ ③", "xs b mid tms"),
                    *out,
-                   t(270, 248, "ขยับ = ไล่ของคั่งรอบจุดอักเสบ → ดีขึ้น · พักนาน = ฝืด", "xs mid mu")))
+                   t(270, 264, "ขยับ = ไล่ของคั่งรอบจุดอักเสบ → ดีขึ้น · พักนาน = ฝืด", "xs mid mu")))
 
 
 # ---------------------------------------------------------------- 12 Still
@@ -870,7 +869,7 @@ def ctd_still():
     for d in range(3):
         out += [t(X(24 * d + 12), Y(36) + 15, "วันที่ %d" % (d + 1), "xs mid mu"),
                 ell(X(24 * d + 17), Y(39.6) - 10, 9, 4, "bad")]
-    out.append(t(X(17) + 14, Y(39.6) - 6, "ผื่นแซลมอนขึ้นพร้อมไข้ แล้วจาง", "xs b tbad"))
+    out += [ell(176, 10, 9, 4, "bad"), t(190, 14, "= ผื่นแซลมอนขึ้นพร้อมไข้ จางเมื่อไข้ลง", "xs b tbad")]
     return fig("Still disease — innate immunity ที่หลั่ง IL-1 เป็นพัก ๆ",
                "ไข้พุ่งวันละครั้ง (quotidian) แล้วลงถึงปกติ ผื่นสีแซลมอนขึ้นพร้อมไข้แล้วจาง เพราะ cytokine หลั่งเป็นพัก · ไม่มี autoantibody **ANA และ RF จึงลบ** "
                "ถ้าการกระตุ้น macrophage ไม่หยุดจะกลายเป็น **macrophage activation syndrome** — ไข้ไม่ลง เม็ดเลือดลดทุกสาย ferritin สูงขึ้นอีก fibrinogen ต่ำ (ESR กลับลดลง)",
