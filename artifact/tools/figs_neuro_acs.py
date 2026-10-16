@@ -380,7 +380,7 @@ def acs_vor():
         out += [circ(cx + 40, cy - 6, 3, "waf"), circ(cx + 44, cy + 3, 3, "waf"), circ(cx + 38, cy + 10, 3, "waf")]
         out += [t(cx, cy + 46, a, "sm mid b " + tc), t(cx, cy + 62, b, "xs mid i2")]
     out += [ar(58, 200, 86, 200, "lmu w2", "ah-mu"), t(92, 204, "ช้า", "xs i2"),
-            ar(86, 212, 58, 212, "lac w3", "ah-ac"), t(52, 216, "เร็ว", "xs end tac b"),
+            ar(86, 212, 58, 212, "lac w3", "ah-ac"), t(92, 216, "เร็ว", "xs tac b"),
             t(348, 210, "✕", "b mid tbad"),
             t(118, 276, "น้ำเย็น", "xs twa")]
     chain = [("wa", "น้ำเย็นหูขวา\nendolymph ไหล"), ("sk", "ประสาททรงตัวขวา\nส่งสัญญาณลดลง"),
@@ -497,7 +497,7 @@ def acs_causes():
 def acs_icp():
     def bar(x, fr, title, sub, tc):
         out, y = [], 170
-        cols = [("sk", "brain"), ("ms", "mass"), ("bad", "blood"), ("wa", "CSF")]
+        cols = [("ruf", "brain"), ("ms", "mass"), ("bad", "blood"), ("wa", "CSF")]
         for (c, _), f in zip(cols, fr):
             h = 140 * f
             if h > 0:
@@ -510,7 +510,7 @@ def acs_icp():
            *bar(122, (0.76, 0.14, 0.05, 0.05), "มีก้อน", "บีบ CSF/เลือดออก", "tok"),
            *bar(226, (0.76, 0.24, 0.0, 0.0), "เกินชดเชย", "ICP ↑↑ → herniation", "tbad"),
            ar(259, 22, 259, 8, "lbad w2", "ah-bad"),
-           rect(318, 40, 14, 14, "sk", 2), t(338, 52, "เนื้อสมอง", "xs"),
+           rect(318, 40, 14, 14, "ruf", 2), t(338, 52, "เนื้อสมอง", "xs"),
            rect(318, 64, 14, 14, "ms", 2), t(338, 76, "ก้อน/บวม", "xs"),
            rect(318, 88, 14, 14, "bad", 2), t(338, 100, "เลือด", "xs"),
            rect(318, 112, 14, 14, "wa", 2), t(338, 124, "CSF", "xs"),
