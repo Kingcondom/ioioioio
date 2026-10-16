@@ -132,6 +132,8 @@ main{min-width:0;display:flex;flex-direction:column;gap:18px}
 .tablewrap{overflow-x:auto;margin:14px 0;border:1px solid var(--rule);border-radius:var(--r-md)}
 table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:460px}
 th,td{border-bottom:1px solid var(--rule);padding:8px 11px;text-align:left;vertical-align:top}
+/* " · " ในเนื้อหา = ขึ้นบรรทัดใหม่ (ผู้ใช้ขอ 16 ต.ค.) · ในตารางแต่ละท่อนเป็นบรรทัดของตัวเอง เว้นระยะนิดหนึ่ง */
+td .seg{display:block}td .seg+.seg{margin-top:5px}
 th{background:var(--surface-sunk);font-weight:600;white-space:nowrap}
 tr:last-child td{border-bottom:0}
 .callout{border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--accent-soft);
@@ -454,9 +456,24 @@ function figHtml(k){
     (wide?"<div class='figscroll on'>← เลื่อนภาพไปทางขวาเพื่อดูส่วนที่เหลือ →</div>":"")+
     (f.cap?"<figcaption>"+inline(f.cap)+"</figcaption>":"")+"</figure>";
 }
+/* แยกข้อความที่คั่นด้วย " · " เป็นท่อน (ทำหลัง inline เพื่อให้ตัวหนาที่คร่อมหลายท่อนยังถูกต้อง)
+   ไม่ตัดใน (วงเล็บ) · ถ้าตัวหนาคร่อมจุดตัด ปิด/เปิด <strong> ใหม่ให้แต่ละท่อน */
+function splitDots(h){
+  var out=[],cur="",dep=0,bold=false,i=0;
+  while(i<h.length){
+    if(h.substr(i,8)==="<strong>"){bold=true;cur+="<strong>";i+=8;continue;}
+    if(h.substr(i,9)==="</strong>"){bold=false;cur+="</strong>";i+=9;continue;}
+    var ch=h.charAt(i);
+    if(ch==="(")dep++;else if(ch===")"&&dep>0)dep--;
+    if(dep===0&&h.substr(i,3)===" \u00b7 "){out.push(cur+(bold?"</strong>":""));cur=bold?"<strong>":"";i+=3;continue;}
+    cur+=ch;i++;
+  }
+  out.push(cur);
+  return out.filter(function(x){return x!==""&&x!=="<strong></strong>";});
+}
 function md(src){
   var lines=String(src==null?"":src).split("\n"),out=[],i=0,para=[];
-  function flushPara(){if(para.length){out.push("<p>"+para.map(inline).join("<br>")+"</p>");para=[];}}
+  function flushPara(){if(para.length){out.push("<p>"+para.map(function(x){return splitDots(inline(x)).join("<br>");}).join("<br>")+"</p>");para=[];}}
   function flushTable(){
     var rows=[];while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i]);i++;}
     if(!rows.length)return;
@@ -464,7 +481,7 @@ function md(src){
     var hasSep=cells.length>1&&cells[1].every(function(c){return /^:?-{2,}:?$/.test(c);});
     var head=cells[0],body=hasSep?cells.slice(2):cells.slice(1);
     var h="<div class='tablewrap'><table><thead><tr>"+head.map(function(c){return "<th>"+inline(c)+"</th>";}).join("")+"</tr></thead><tbody>";
-    body.forEach(function(r){h+="<tr>"+r.map(function(c){return "<td>"+inline(c)+"</td>";}).join("")+"</tr>";});
+    body.forEach(function(r){h+="<tr>"+r.map(function(c){var sg=splitDots(inline(c));return "<td>"+(sg.length>1?sg.map(function(x){return "<span class='seg'>"+x+"</span>";}).join(""):(sg[0]||""))+"</td>";}).join("")+"</tr>";});
     out.push(h+"</tbody></table></div>");
   }
   function flushList(ordered){
@@ -474,7 +491,7 @@ function md(src){
       if(!m)break;
       var txt=m[1];i++;
       while(i<lines.length&&/^\s{2,}\S/.test(lines[i])&&!/^\s*[-•]\s/.test(lines[i])&&!/^\s*\d+[.)]\s/.test(lines[i])&&!/^\s*\|/.test(lines[i])){txt+=" "+lines[i].trim();i++;}
-      items.push("<li>"+inline(txt)+"</li>");
+      items.push("<li>"+splitDots(inline(txt)).join("<br>")+"</li>");
     }
     out.push("<"+tag+">"+items.join("")+"</"+tag+">");
   }
