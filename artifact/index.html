@@ -89,7 +89,8 @@ aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 .mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
 .mast.min .wrap{padding-block:8px}
 #mastBtn{padding:6px 13px}
-@media (max-width:560px){.brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+/* ปุ่มอยู่แถวเดียวกับชื่อเรื่องทุกความกว้าง ไม่ให้กินแถวเพิ่มบนจอกว้าง */
+.brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
 .panel{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow)}
 .outline{padding:12px 12px 14px}
