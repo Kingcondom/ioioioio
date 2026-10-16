@@ -141,8 +141,8 @@ def hiv_cmi():
                ell(90, y + 76, 58, 38, "sk"), t(90, y + 128, "macrophage", "xs mid mu")]
         dots = [(-24, -10), (-6, -18), (12, -8), (28, 6), (-16, 12), (4, 14), (20, -20), (-32, 6), (14, 22), (-6, 0)]
         if normal:
-            out += [circ(90 + dx, y + 76 + dy, 3, "muf") for dx, dy in dots[:3]]
-            out += [t(90, y + 70, "เชื้อถูกย่อย", "xs mid b tok")]
+            out += [circ(78 + 12 * k, y + 60, 3, "muf") for k in range(3)]
+            out += [t(90, y + 86, "เชื้อถูกย่อย", "xs mid b tok")]
             out += [circ(214, y + 76, 24, "ok"), t(214, y + 80, "CD4", "sm b mid tok"),
                     line(188, y + 76, 152, y + 76, "lok w3", "ah-ok"), t(170, y + 62, "IFN-γ", "xs mid b tok"),
                     box(256, y + 40, 146, 72, "ok", "macrophage ถูกปลุก\nฆ่าเชื้อในเซลล์\n+ ล้อมเป็น granuloma", fs=11)]
@@ -190,7 +190,7 @@ def hiv_mucosa():
                    *col(6, "ช่องคลอด", "sq", "หลายชั้น → เสี่ยงน้อยกว่า", "tok"),
                    *col(146, "ทวารหนัก", "col", "ชั้นเดียว → เสี่ยงสูง", "tbad"),
                    *col(286, "มีแผล STI", "ulc", "แผล + เซลล์เป้าหมายมาก", "tbad"),
-                   t(14, 222, "● ฟ้า/ส่วนบน = HIV ในสารคัดหลั่ง · ○ เขียว = CD4/dendritic cell ใต้เยื่อบุ", "xs mu"),
+                   t(14, 222, "● จุดเหนือเยื่อบุ = HIV ในสารคัดหลั่ง · ○ เขียว = CD4/dendritic cell", "xs mu"),
                    box(10, 234, 196, 48, "bad", "VL สูง (acute HIV, ไม่ได้ยา)\n→ ไวรัสมาก แพร่ง่ายสุด", fs=11),
                    box(214, 234, 196, 48, "ok", "VL < 200 ต่อเนื่อง (U=U)\n→ ไม่แพร่ทางเพศสัมพันธ์", fs=11)))
 
@@ -209,17 +209,17 @@ def hiv_course():
            t((Xy(9) + Xy(11)) / 2, 44, "AIDS", "xs b mid tbad"),
            line(Xw(0), 220, Xy(11), 220, "lmu"), line(Xw(0), 220, Xw(0), 24, "lmu"), line(Xy(11), 220, Xy(11), 24, "lmu"),
            path("M126 224 l4 -8 M131 224 l4 -8", "lmu"),
-           t(Xw(0), 236, "0", "xs mid mu"), t(Xw(6), 236, "6", "xs mid mu"), t(Xw(12), 236, "12 สัปดาห์", "xs mid mu"),
+           t(Xw(0), 236, "0", "xs mid mu"), t(Xw(6), 236, "6", "xs mid mu"), t(Xw(12) - 4, 236, "12", "xs mid mu"), t(Xw(6), 252, "สัปดาห์", "xs mid mu"),
            *[t(Xy(y), 236, str(y), "xs mid mu") for y in (3, 5, 7, 9)], t(Xy(11), 236, "11 ปี", "xs mid mu"),
            *[t(Xw(0) - 5, Yc(c) + 4, str(c), "xs end mu") for c in (200, 500, 1000)],
            *[t(Xy(11) + 4, Yv(lg) + 4, s, "xs mu") for lg, s in ((3, "10³"), (5, "10⁵"), (7, "10⁷"))],
            t(8, 18, "CD4 (cells/mm³)", "xs b tok"), t(412, 18, "HIV RNA (copies/mL)", "xs b end tbad"),
            line(Xw(0), Yc(200), Xy(11), Yc(200), "lbad da"),
            poly([(x, Yc(c)) for x, c in cd4], "lok w3"), poly([(x, Yv(v)) for x, v in vl], "lbad w3"),
-           t(Xw(5) + 4, Yv(6.6) - 6, "ไวรัสพุ่งสูงสุด", "xs b tbad"),
-           t(Xy(2.4), Yv(4.3) + 16, "set point", "xs b tbad"),
-           t(Xy(4), Yc(600) - 8, "CD4 ลดลงช้า ๆ ตลอด", "xs b tok"),
-           line(Xw(4), 220, Xw(4), 206, "lwa w2"), t(Xw(4), 254, "Ab เริ่มขึ้น", "xs mid twa b"),
+           t(134, 70, "← ไวรัสพุ่งสูงสุด", "xs b tbad"),
+           t(Xy(2.4), Yv(4.3) + 24, "set point", "xs b tbad"),
+           t(140, 178, "CD4 ลดลงช้า ๆ ตลอด", "xs b tok"),
+           line(Xw(4), 220, Xw(4), 206, "lwa w2"), t(Xw(4) + 4, 214, "Ab ขึ้น", "xs twa b"),
            box(10, 266, 128, 64, "ms", "VL สูงสุด\nแพร่ง่ายที่สุด\nCD4 ตกชั่วคราว", fs=10.5),
            box(146, 266, 128, 64, "sk", "ไม่มีอาการ\nแต่ไวรัสทำลาย\nCD4 ทุกวัน", fs=10.5),
            box(282, 266, 128, 64, "bad", "CD4 < 200\nติดเชื้อฉวยโอกาส\nมะเร็ง", fs=10.5)]
@@ -280,18 +280,18 @@ def hiv_window():
            for d in range(0, 91)]
     p24 = [(X(d), Y(0 if d < 12 else (60 * math.exp(-((d - 20) / 6) ** 2)))) for d in range(0, 91)]
     ab = [(X(d), Y(0 if d < 18 else 90 * (1 - math.exp(-(d - 18) / 10)))) for d in range(0, 91)]
-    out = [rect(X(0), 24, X(10) - X(0), 126, "sk", 0), t(X(5), 40, "eclipse", "xs mid b mu"),
+    out = [rect(X(0), 24, X(10) - X(0), 126, "sk", 0), t(X(0), 18, "eclipse ~10 วัน: ไม่มีการตรวจใดเจอ", "xs b mu"),
            line(X(0), 150, X(90), 150, "lmu"), line(X(0), 150, X(0), 20, "lmu"),
            *[t(X(d), 164, str(d), "xs mid mu") for d in (0, 10, 20, 30, 60, 84)], t(X(90), 178, "วันหลังติดเชื้อ", "xs end mu"),
            poly(rna, "lbad w3"), poly(p24, "lms w3"), poly(ab, "lok w3"),
-           t(X(24), Y(100) - 4, "HIV RNA", "xs b tbad"), t(X(26), Y(52), "p24", "xs b tms"),
-           t(X(60), Y(86) - 6, "แอนติบอดี", "xs b tok"),
-           line(X(84), 22, X(84), 150, "lwa da"), t(X(84) - 4, 34, "ตรวจซ้ำ", "xs end b twa"), t(X(84) - 4, 48, "12 สัปดาห์", "xs end twa")]
-    tests = [("NAT (HIV RNA)", 10, "bad"), ("4th gen (Ag + Ab)", 15, "ms"), ("Antibody อย่างเดียว", 25, "ok")]
+           t(X(24), Y(100) - 4, "HIV RNA", "xs b tbad"), t(X(16), 100, "p24", "xs b tms end"),
+           t(X(40), Y(86) - 8, "แอนติบอดี", "xs b tok"),
+           line(X(84), 22, X(84), 150, "lwa da"), t(X(84) - 4, 124, "ตรวจซ้ำ", "xs end b twa"), t(X(84) - 4, 138, "12 สัปดาห์", "xs end twa")]
+    tests = [("NAT (HIV RNA) · ~10 วัน", 10, "bad"), ("4th gen (p24 + Ab) · ~2 สัปดาห์", 14, "ms"), ("Ab อย่างเดียว · ~3–4 สัปดาห์", 24, "ok")]
+    out.append(t(10, 192, "ตรวจพบได้ตั้งแต่", "xs b mu"))
     for k, (name, d0, c) in enumerate(tests):
-        y = 192 + 26 * k
-        out += [t(10, y + 13, name, "xs b"), rect(X(d0), y, X(90) - X(d0), 18, c, 9),
-                t(X(d0) + 6, y + 13, "ตรวจพบได้ตั้งแต่ ~%d วัน" % d0, "xs")]
+        y = 200 + 24 * k
+        out += [rect(X(d0), y, X(90) - X(d0), 18, c, 9), t(X(d0) + 8, y + 13, name, "xs b")]
     return fig("Window period: อะไรขึ้นก่อน",
                "หลังติดเชื้อมีช่วง **eclipse** ราว 10 วันที่ไม่มีการตรวจใดเจอ · **RNA** ขึ้นก่อน ตามด้วย **p24** ซึ่งขึ้นชั่วคราวแล้วลดลงเมื่อถูกแอนติบอดีจับ · "
                "แอนติบอดีขึ้นช้าสุด · 4th gen ตรวจทั้ง p24 และแอนติบอดี จึงปิดช่องว่างนี้ได้เร็วกว่าการตรวจแอนติบอดีอย่างเดียว "
@@ -306,17 +306,17 @@ def hiv_algo():
                svg(420, 352, "ตรวจ A1 ถ้าลบ ไม่พบการติดเชื้อ ถ้าบวกตรวจ A2 และ A3 บวกทั้งหมดคือติดเชื้อ ผลขัดแย้งคือสรุปไม่ได้",
                    box(130, 8, 160, 40, "ac", "A1 (4th gen)\nไวสูงสุด", fs=11.5),
                    line(150, 48, 80, 70, "ln", "ah"), t(100, 56, "ลบ", "xs b tok end"),
-                   box(10, 72, 150, 52, "ok", "ไม่พบการติดเชื้อ\n(ถ้าพ้น window)", fs=11),
+                   box(8, 72, 134, 52, "ok", "ไม่พบการติดเชื้อ\n(ถ้าพ้น window)", fs=11),
                    line(210, 48, 210, 70, "ln", "ah"), t(218, 64, "บวก", "xs b tbad"),
                    box(150, 72, 120, 36, "ms", "A2 (antigen ต่าง)", fs=11),
                    line(210, 108, 210, 130, "ln", "ah"), t(218, 124, "บวก", "xs b tbad"),
                    box(150, 132, 120, 36, "ms", "A3 (Ab, ต่างอีก)", fs=11),
                    line(210, 168, 210, 190, "ln", "ah"), t(218, 184, "บวก", "xs b tbad"),
                    box(140, 192, 140, 36, "bad", "ติดเชื้อ HIV", "b", fs=12),
-                   path("M270 90 H330 V110", "ln", "ah"), path("M270 150 H330 V130", "ln"),
-                   t(300, 84, "ลบ", "xs mid b tok"), t(300, 144, "ลบ", "xs mid b tok"),
+                   path("M270 90 H330 V110", "ln", "ah"), path("M270 160 H340 V150", "ln", "ah"),
+                   t(300, 84, "ลบ", "xs mid b tok"), t(300, 176, "ลบ", "xs mid b tok"),
                    box(290, 112, 120, 36, "sk", "ขัดแย้ง\n= inconclusive", fs=11),
-                   line(350, 148, 350, 240, "ln", "ah"),
+                   line(390, 148, 390, 240, "ln", "ah"),
                    box(250, 242, 160, 64, "sk", "ตรวจซ้ำ 2 สัปดาห์\nสงสัย window → NAT", fs=11),
                    line(30, 140, 30, 300, "lac w5"), poly([(22, 296), (38, 296), (30, 312)], "acf", closed=True),
                    t(42, 150, "ไว (sensitivity)", "xs b tac"), t(42, 164, "ลดหลั่น", "xs tac"),
@@ -399,7 +399,7 @@ def _lung(x, y, w, h, flip=False):
 
 def hiv_tbcd4():
     lung = lambda x: [_lung(x, 40, 70, 130), _lung(x + 90, 40, 70, 130, True)]
-    out = [t(100, 20, "CD4 > 350", "b mid tok"), t(310, 20, "CD4 < 200", "b mid tbad"), line(210, 10, 210, 330, "lru da"),
+    out = [t(100, 20, "CD4 > 350", "b mid tok"), t(310, 20, "CD4 < 200", "b mid tbad"), line(210, 10, 210, 316, "lru da"),
            *lung(30), circ(66, 74, 13, "ms"), circ(66, 74, 7, "paf"), circ(66, 74, 13, "ln w3"), t(100, 190, "กลีบบน มีโพรง", "xs mid b"),
            *lung(240), *[circ(240 + dx, 40 + dy, 2.6, "badf") for dx, dy in
                           ((30, 100), (44, 112), (24, 120), (52, 96), (38, 128), (148, 104), (134, 116), (156, 122), (140, 96), (126, 128))],
@@ -407,8 +407,7 @@ def hiv_tbcd4():
            # granuloma left
            circ(100, 236, 28, "ok"), circ(100, 236, 16, "ms"), *[circ(100 + 22 * math.cos(math.radians(a)), 236 + 22 * math.sin(math.radians(a)), 4, "okf")
                                                                for a in range(0, 360, 40)],
-           t(100, 240, "เนื้อตาย", "xs mid tms"),
-           t(100, 284, "CD4 + macrophage ล้อมเชื้อ", "xs mid"), t(100, 298, "เนื้อตายกลางแตกเข้าหลอดลม = โพรง", "xs mid"),
+           t(100, 284, "CD4 + macrophage ล้อมเชื้อ (granuloma)", "xs mid"), t(100, 298, "เนื้อตายกลางแตกเข้าหลอดลม = โพรง", "xs mid"),
            t(100, 312, "เชื้อออกทางเสมหะ → smear บวกบ่อย", "xs mid b tok"),
            # dissemination right
            circ(310, 236, 18, "lmu da"), *[circ(310 + dx, 236 + dy, 2.6, "badf") for dx, dy in ((-6, -4), (5, 6), (6, -7), (-4, 8))],
@@ -442,8 +441,8 @@ def hiv_iris():
                    line(X(0), 190, X(16), 190, "lmu"), line(X(0), 190, X(0), 24, "lmu"),
                    *[t(X(w), 204, str(w), "xs mid mu") for w in (0, 4, 8, 12, 16)], t(X(16), 220, "สัปดาห์หลังเริ่ม ART", "xs end mu"),
                    poly(vl, "lbad w2"), poly(cd4, "lok w3"), poly(ag, "lms w2 da"), poly(inf, "lbad w3"),
-                   t(X(0) + 4, Y(100) + 2, "HIV RNA", "xs b tbad"), t(X(12), Y(76) - 6, "CD4 ฟื้น", "xs b tok"),
-                   t(X(10), Y(26) - 6, "แอนติเจนเชื้อที่ค้าง", "xs b tms"), t(X(6.6), Y(70), "การอักเสบ", "xs b tbad"),
+                   t(46, 40, "HIV RNA", "xs b tbad end"), t(X(12), Y(76) - 6, "CD4 ฟื้น", "xs b tok"),
+                   t(X(10), Y(26) - 6, "แอนติเจนเชื้อที่ค้าง", "xs b tms"), t(X(5.3), Y(78), "การอักเสบ (IRIS)", "xs b tbad"),
                    box(10, 230, 196, 32, "ms", "Paradoxical: รักษาอยู่ แล้วแย่ลง", fs=10.5),
                    box(214, 230, 196, 32, "ms", "Unmasking: โรคที่ซ่อนอยู่โผล่", fs=10.5)))
 
@@ -454,9 +453,10 @@ def hiv_pcp():
         if pcp:
             out += [circ(cx, cy, 58, "lms w5"), circ(cx, cy, 40, "ms")]
             out += [circ(cx + 34 * math.cos(math.radians(a)), cy + 34 * math.sin(math.radians(a)), 4.5, "inkf") for a in range(0, 360, 36)]
-            out += [circ(cx + dx, cy + dy, 3, "paf") for dx, dy in ((-10, -6), (8, 10), (-4, 14), (12, -12), (0, 0), (-16, 8))]
+            out += [circ(cx + dx, cy + dy, 3, "paf") for dx, dy in ((-14, -16), (16, 20), (-4, 22), (14, -18), (-20, 20), (22, -4))]
         path_cap = "M%d %d q20 10 40 0 q20 -10 40 0" % (cx - 40, cy + 68)
-        out += [path(path_cap, "lbad w5"), line(cx, cy - 20, cx, cy + 58, ("lwa w2" if not pcp else "lwa w2 da"), "ah-wa")]
+        out.append(path(path_cap, "lbad w5"))
+        if not pcp: out.append(line(cx, cy - 20, cx, cy + 58, "lwa w2", "ah-wa"))
         return out
     return fig("PCP: ถุงลมเต็มไปด้วยฟองและผนังหนา",
                "Pneumocystis เกาะ type I pneumocyte ถุงลมค่อย ๆ เต็มไปด้วย **exudate เป็นฟอง** (เชื้อ + โปรตีน) และผนังถุงลมหนาจากการอักเสบ · "
@@ -466,7 +466,7 @@ def hiv_pcp():
                    t(100, 18, "ถุงลมปกติ", "sm b mid tok"), t(320, 18, "PCP", "sm b mid tbad"),
                    *alv(100, 92, False), *alv(320, 92, True),
                    t(100, 186, "หลอดเลือดฝอย", "xs mid tbad"), t(320, 186, "O₂ ผ่านยาก", "xs mid twa b"),
-                   t(100, 66, "O₂", "xs mid b twa"), t(320, 64, "exudate", "xs mid b"),
+                   t(100, 66, "O₂", "xs mid b twa"), t(320, 90, "exudate", "xs mid b"), t(320, 104, "เป็นฟอง", "xs mid"),
                    line(10, 196, 410, 196, "lru da"),
                    box(10, 206, 196, 46, "wa", "ออกแรง → เลือดผ่านเร็ว\n→ SpO₂ ตก (exertional)", fs=11),
                    box(214, 206, 196, 46, "ms", "cyst/bleb แตก\n→ pneumothorax", fs=11),
