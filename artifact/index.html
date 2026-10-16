@@ -134,6 +134,13 @@ table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:460px}
 th,td{border-bottom:1px solid var(--rule);padding:8px 11px;text-align:left;vertical-align:top}
 /* " · " ในเนื้อหา = ขึ้นบรรทัดใหม่ (ผู้ใช้ขอ 16 ต.ค.) · ในตารางแต่ละท่อนเป็นบรรทัดของตัวเอง เว้นระยะนิดหนึ่ง */
 td .seg{display:block}td .seg+.seg{margin-top:5px}
+/* โหมดทวน: ซ่อนเนื้อหาทั้งคาบ เหลือหัวข้อ กดเปิดทีละส่วน (ผู้ใช้ขอ 16 ต.ค.) */
+.rvbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 4px}
+.rv{display:flex;gap:9px;align-items:baseline;width:100%;text-align:left;font:inherit;font-size:15.5px;font-weight:700;color:var(--ink);background:var(--surface-sunk);border:1px solid var(--rule);border-radius:var(--r-sm);padding:11px 14px;margin-top:8px;cursor:pointer;transition:border-color .2s var(--e),background .2s var(--e)}
+.rv:hover{border-color:var(--accent)}.rv[aria-expanded="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.rv .ar{flex:0 0 12px;color:var(--ink-3);font-size:12px}.rv.h4{margin-left:18px;width:calc(100% - 18px);font-size:14.6px;font-weight:600}
+.rvb{padding:2px 4px 6px 16px;border-left:2px solid var(--accent-soft);margin:4px 0 10px 8px}.rv.h4+.rvb{margin-left:26px}
+.chip.rvon{border-color:var(--miss);color:var(--miss);background:var(--miss-soft)}
 th{background:var(--surface-sunk);font-weight:600;white-space:nowrap}
 tr:last-child td{border-bottom:0}
 .callout{border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--accent-soft);
@@ -329,7 +336,7 @@ function boot(){
 
 var KEY="med421-learn-v1";
 var state={course:"",view:"home",lec:null,sec:null,pid:null,
-           done:{},ans:{},notes:{},rate:{},theme:""};
+           done:{},ans:{},notes:{},rate:{},theme:"",hide:{}};
 try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);if(s&&typeof s==="object"){
   for(var k in state) if(k in s) state[k]=s[k];}}}catch(e){}
 if(state.theme)document.documentElement.setAttribute("data-theme",state.theme);
@@ -635,6 +642,38 @@ function viewHome(){
   return h;
 }
 
+/* ---------- โหมดทวน: ซ่อนเนื้อหาของคาบ เหลือแค่หัวข้อ ---------- */
+function hideKey(l){return state.course+"|"+l.lec;}
+function lecHidden(l){return !!(state.hide&&state.hide[hideKey(l)]);}
+function hideBtn(l){
+  var on=lecHidden(l);
+  return "<button class='btn"+(on?" primary":"")+"' data-act='hidelec' data-hlec='"+esc(l.lec)+"'>"+(on?"แสดงเนื้อหา":"ซ่อนเนื้อหา (โหมดทวน)")+"</button>";
+}
+function rvBlock(k,title,lvl,body){
+  return "<button class='rv"+(lvl===4?" h4":"")+"' data-rv='"+k+"' aria-expanded='false' aria-controls='rvb-"+k+"'><span class='ar'>▸</span><span>"+inline(title)+"</span></button>"+
+    "<div class='rvb hide' id='rvb-"+k+"'>"+body+"</div>";
+}
+function recallHtml(s){
+  var lines=String(s.md||"").split("\n"),blocks=[],cur={title:"ภาพรวมหัวข้อ",lvl:3,lines:[]};
+  lines.forEach(function(L){
+    var m=/^\s*(#{3,4})\s+(.*)$/.exec(L);
+    if(m){blocks.push(cur);cur={title:m[2],lvl:m[1].length,lines:[]};}
+    else cur.lines.push(L);
+  });
+  blocks.push(cur);
+  blocks=blocks.filter(function(b,i){return i>0||b.lines.join("").trim();});
+  if(blocks.length===1&&blocks[0].title==="ภาพรวมหัวข้อ")blocks[0].title="เนื้อหาหัวข้อนี้";
+  var h="<div class='rvbar'><span class='chip rvon'>โหมดทวน · ลองนึกเนื้อหาของแต่ละหัวข้อก่อน แล้วกดเปิดดูเทียบ</span>"+
+    "<button class='btn' data-rvall='1'>เปิดทั้งหมด</button><button class='btn' data-rvall='0'>ปิดทั้งหมด</button></div>";
+  blocks.forEach(function(b,i){
+    var body=b.lines.join("\n").trim();
+    h+=rvBlock(s.id+"-"+i,b.title,b.lvl,body?md(body):"<p class='lede'>(หัวข้อนี้ไม่มีเนื้อหาเพิ่มเติม)</p>");
+  });
+  if(s.pearls&&s.pearls.length)
+    h+=rvBlock(s.id+"-p","จำไปสอบ",3,"<ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul>");
+  return h;
+}
+
 /* ---------- หน้า "คาบเรียน": การ์ดทุกคาบของชุด → กดเข้าไปดูทีละคาบ ---------- */
 function lecCard(l){
   var h="";
@@ -644,12 +683,14 @@ function lecCard(l){
   if(l.objectives&&l.objectives.length)
     h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
   h+=nlPanel(l);
+  var hid=lecHidden(l);
   h+="<div class='meta'><span class='chip"+(done===l.sections.length?" acc":"")+"'>ความคืบหน้า "+done+"/"+l.sections.length+" หัวข้อ</span>"+
-     "<span class='chip'>MEQ "+l.meq.length+"</span><span class='chip'>OSCE/SAQ "+l.osce.length+"</span></div>";
+     "<span class='chip'>MEQ "+l.meq.length+"</span><span class='chip'>OSCE/SAQ "+l.osce.length+"</span>"+
+     (hid?"<span class='chip rvon'>โหมดทวน · ซ่อนเนื้อหาอยู่</span>":"")+hideBtn(l)+"</div>";
   h+="<div class='grid'>"+l.sections.map(function(s){
     var st=secStat(s);
     return "<button class='tile' data-sec='"+s.id+"' data-slec='"+l.lec+"'><b>"+esc(s.title)+"</b>"+
-      "<span>"+esc(s.summary||"")+"</span>"+
+      (hid?"":"<span>"+esc(s.summary||"")+"</span>")+
       "<span class='chip"+(st.complete?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+
       (st.complete?"ผ่านแล้ว "+st.correct+"/"+st.n:(st.answered? "ทำไป "+st.answered+"/"+st.n+" ข้อ":"ยังไม่ได้เรียน"))+"</span></button>";
   }).join("")+"</div></section>";
@@ -693,15 +734,15 @@ function viewLecture(){
 function viewSection(){
   var l=lecOf(state.lec),s=secOf(l,state.sec);
   if(!s)return viewHome();
-  var st=secStat(s),list=allSections(),idx=-1;
+  var st=secStat(s),list=allSections(),idx=-1,hid=lecHidden(l);
   list.forEach(function(x,i){if(x.sec.id===s.id)idx=i;});
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
-    "<h2>"+esc(s.title)+"</h2>"+(s.summary?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
+    "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
-    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"</div>"+
-    (FIGS=s.figs||{},FIGN=0,"<div class='prose'>"+md(s.md)+"</div>");
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"</div>"+
+    (FIGS=s.figs||{},FIGN=0,"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
   FIGS={};
-  if(s.pearls&&s.pearls.length)
+  if(!hid&&s.pearls&&s.pearls.length)
     h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
 
   h+="<div class='quiz'><div class='qhead'><h3>เช็คความเข้าใจ</h3>"+
@@ -911,6 +952,22 @@ document.addEventListener('click',function(e){
       var id=t.dataset.q;render();
       var el=document.getElementById('q-'+id);if(el)el.scrollIntoView({block:"nearest"});
     }
+    return;
+  }
+  if(t.dataset.act==="hidelec"){
+    var hk=state.course+"|"+t.dataset.hlec;state.hide=state.hide||{};
+    if(state.hide[hk])delete state.hide[hk];else state.hide[hk]=true;render();return;
+  }
+  if(t.dataset.rv){
+    var rb=document.getElementById("rvb-"+t.dataset.rv);if(!rb)return;
+    var open=rb.classList.contains("hide");rb.classList.toggle("hide",!open);
+    t.setAttribute("aria-expanded",open?"true":"false");t.querySelector(".ar").textContent=open?"▾":"▸";return;
+  }
+  if(t.dataset.rvall){
+    var op=t.dataset.rvall==="1";
+    document.querySelectorAll("main .rv").forEach(function(b){
+      var x=document.getElementById("rvb-"+b.dataset.rv);if(x)x.classList.toggle("hide",!op);
+      b.setAttribute("aria-expanded",op?"true":"false");b.querySelector(".ar").textContent=op?"▾":"▸";});
     return;
   }
   if(t.dataset.act==="markread"){if(state.done[state.sec])delete state.done[state.sec];else state.done[state.sec]=true;render();return;}
