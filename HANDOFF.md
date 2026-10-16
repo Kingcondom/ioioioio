@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 14 ต.ค. 2569 · รอบที่ 7)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 16 ต.ค. 2569 · รอบที่ 8)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -51,7 +51,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 ---
 
 > **เริ่ม session ใหม่:** ถ้า branch ที่ได้รับมอบหมายยังไม่มีงานล่าสุด ให้ `git fetch origin` แล้ว merge
-> `origin/claude/bold-euler-ok3iv7` (ล่าสุด 14 ต.ค. · Version 24) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
+> `origin/claude/lecture-artifact-integration-5plhhc` (ล่าสุด 16 ต.ค. · Version 27) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
 > `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
 > (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
 
@@ -68,11 +68,20 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 24** · มี **9 ชุดวิชา** · 31 คาบ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 27** · มี **9 ชุดวิชา** · 31 คาบ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
-> คาบที่มีภาพแล้ว: nephro 14 (19 ภาพ) · nephro 30 (20) · nephro Imaging (24) · hemonc 12/10 (17) · endo 14/10 (22) — คาบเก่า 26 คาบยังไม่มีภาพ (เติมได้ถ้าผู้ใช้ขอ)
+> คาบที่มีภาพแล้ว: nephro 14 (19 ภาพ) · nephro 30 (20) · nephro Imaging (24) · hemonc 12/10 (17) · endo 14/10 (22) — **(16 ต.ค. · Version 27) ครบทุกคาบแล้ว: 31 คาบ 563 ภาพ**
+>
+> 🖼️ **รอบ 16 ต.ค. — เติมภาพ + กลไก ให้ 26 คาบเก่า** (ผู้ใช้ขอ "อธิบายรูปแทรกข้อความ ของทุกเลคเชอร์ อธิบายพวก pathophysiology")
+> - เพิ่ม **461 ภาพ** + **152 ก้อนข้อความกลไก** (`#### ทำไมถึงมีอาการนี้` ตาราง อาการ | กลไก | ใช้แยกโรค หรือรายการลูกศร) — ทุกหัวข้อของ 26 คาบมีภาพอย่างน้อย 1 ภาพ
+> - วิธีใส่: **`artifact/tools/apply_figs.py`** อ่านโมดูล `figs_<set>_<ชื่อ>.py` (มี `SET, LEC, INSERTS=[(section id, anchor, "fig:ชื่อฟังก์ชัน" หรือ markdown)]`) แล้วแทรกลง `md` + `figs` ของคาบที่ขึ้นเว็บแล้ว **ไม่ต้องรัน build_*.py ใหม่** · รันซ้ำได้ (ข้ามของที่มีแล้ว) · `--check` ตรวจโดยไม่เขียน · `--all` ทุกโมดูล
+> - ⚠️ **ถ้ารัน build_<topic>.py ของคาบเก่าใหม่ ภาพจะหาย** (สคริปต์ลบคาบแล้วสร้างใหม่) → รัน `python3 artifact/tools/apply_figs.py --all` ต่อท้ายทุกครั้ง
+> - แตะเฉพาะ `md` และ `figs` · ข้อความเดิมอยู่ครบตามลำดับ · ข้อสอบ/คำตอบ/id ไม่เปลี่ยน → ความคืบหน้าที่ผู้ใช้ทำไว้ไม่เพี้ยน · `check_lecture.py` ได้ 127 รายการเท่าเดิม (ของเก่าทั้งหมด ไม่มีใหม่) · `check_render.py` ทั้ง 26 คาบ ไม่มีปัญหาภาพ · `verify.py` ผ่าน
+> - เนื้อหาในภาพ/ตารางกลไกที่ **ไม่ได้มาจากสไลด์** เป็นสรีรวิทยาระดับตำรา (Harrison/Guyton) · กราฟเชิงแนวคิดระบุใน cap ว่า "ภาพแนวคิด/ค่าประมาณ"
+> - จุดที่ควรให้ผู้ใช้ตรวจ: ค่า Wilson ALP/TB ในคาบ GI 12/10 (< 2) ไม่ตรงกับคาบ 29/10 (< 4) — เป็นของเดิมในบทเรียน ไม่ได้แก้ · คาบ cardio 27 ภาพ BPG ระบุว่าบางแนวทางให้ทุก 3 สัปดาห์ในผู้เสี่ยงสูง (สไลด์: ทุก 3–4 สัปดาห์ · WHO 2024: ทุก 4 สัปดาห์)
+> - `index.html` บนเว็บ v26 มีแพตช์ CSS ปุ่มซ่อนเมนู (จาก `claude/internal-med-learning-web-j9ca6l`) — รวมเข้า repo แล้ว (commit 0ab309b)
 >
 > 👤 **Version 22–23 มาจาก session dashboard (`claude/intelligent-brown-xj38me`)**: v22 บันทึกความคืบหน้าในบัญชี (`patch_learn_sync.py` · capability `db`+`user` — **ห้าม publish โดยส่ง `capabilities` ที่ไม่มีสองตัวนี้**) · v23 แท็บ "คาบเรียน" (`patch_learn_lectures.py`)
 > repo ซิงก์ `artifact/index.html` กับหน้าเว็บ v23 แล้ว (commit 53491e2) — แก้หน้าเว็บต่อจากไฟล์นี้ได้เลย
