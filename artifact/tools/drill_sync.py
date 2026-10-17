@@ -21,6 +21,7 @@ Ward Drill (artifact Fdi5gcNXKqFLAXg4fQBV7X) build จาก branch `claude/ador
   5. template.html: ลิงก์ตรง #<ชุด>-<คาบ> (applyHash — ของ live v11 จาก Lecture Dashboard)
      + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตารางจริง
      + บันทึกคำตอบในบัญชี data/users/<id>/drill (ต้อง publish พร้อม capabilities {db:{}, user:{}})
+     + โหมด "สุ่มทำข้อสอบ" (สุ่มจากระบบนี้/ทุกระบบ · 10–100 ข้อ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด)
   6. refs/nl_2567.json: เติมรหัส NL ที่ข้อใหม่อ้าง (คัดจาก artifact/data/nl.json — ประกาศฉบับเต็ม)
 """
 import json, os, re, sys
@@ -262,6 +263,191 @@ SYNC_CSS = """.lsync{display:inline-flex;align-items:center;gap:7px;margin-top:1
 .lsync.cloud i{background:var(--ok)} .lsync.busy i{background:var(--miss)}
 """
 
+QUIZ_JS = r"""
+/* ---------- สุ่มทำข้อสอบ (โหมด quiz) ----------
+   สุ่มจาก MCQ ใหม่ + ข้อสอบเก่าที่มีตัวเลือก · ขอบเขตระบบนี้/ทุกระบบ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด
+   คำตอบในชุดสุ่มเก็บใน quiz.ans (ชุดใหม่เริ่มสะอาด) และเขียนทับ state.answers ด้วย → ซิงก์เข้าบัญชีตามปกติ
+   รายการข้อของชุดสุ่มเก็บในเครื่อง (med421-drill-quiz) */
+var QZ_SCOPE=[{k:"set",label:"ระบบนี้ทุกคาบ"},{k:"all",label:"ทุกระบบ"}];
+var QZ_NS=[10,20,50,100];
+var QZ_POOL=[{k:"any",label:"ทุกข้อ"},{k:"fresh",label:"ยังไม่เคยทำ"},{k:"wrong",label:"เคยตอบผิด"}];
+var QKEY="med421-drill-quiz";
+var quiz={scope:"set",n:20,pool:"any",ids:[],ans:{},set:"",from:""};
+try{var qr=JSON.parse(localStorage.getItem(QKEY)||"null");if(qr&&typeof qr==="object"){
+  if(qr.scope==="set"||qr.scope==="all")quiz.scope=qr.scope;
+  if(QZ_NS.indexOf(qr.n)>=0)quiz.n=qr.n;
+  if(qr.pool==="any"||qr.pool==="fresh"||qr.pool==="wrong")quiz.pool=qr.pool;
+  if(Array.isArray(qr.ids))quiz.ids=qr.ids.filter(function(x){return typeof x==="string";});
+  quiz.ans=normA(qr.ans);quiz.set=String(qr.set||"");quiz.from=String(qr.from||"");}}catch(e){}
+function qSave(){try{localStorage.setItem(QKEY,JSON.stringify(quiz));}catch(e){}}
+var QIDX=null;
+function qIndex(){
+  if(QIDX)return QIDX;QIDX={};
+  SETS.forEach(function(s){var B=BANK[s.k];if(!B)return;
+    B.mcq.forEach(function(it){QIDX[it.id]={it:it,set:s.k,kind:"mcq"};});
+    B.old.forEach(function(g){g.items.forEach(function(it){if(it.choices&&!QIDX[it.id])QIDX[it.id]={it:it,set:s.k,kind:"old",g:g};});});
+  });
+  return QIDX;
+}
+function setLabel(k){var s=SETS.filter(function(x){return x.k===k;})[0];return s?s.label:k;}
+function qPool(){
+  var idx=qIndex();
+  return Object.keys(idx).filter(function(id){
+    var e=idx[id];if(quiz.scope==="set"&&e.set!==state.set)return false;
+    var a=state.answers[id];
+    if(quiz.pool==="fresh")return !a;
+    if(quiz.pool==="wrong")return !!(a&&!a.ok&&!a.auto);
+    return true;
+  });
+}
+function qShuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function qDraw(ids){
+  quiz.ids=ids||qShuffle(qPool()).slice(0,quiz.n);quiz.ans={};quiz.set=state.set;
+  quiz.from=ids?"ข้อที่ผิดจากชุดก่อน":(quiz.scope==="all"?"ทุกระบบ":setLabel(state.set))+" · "+QZ_POOL.filter(function(p){return p.k===quiz.pool;})[0].label;
+  qSave();render();window.scrollTo({top:0});
+}
+function qItems(){var idx=qIndex();return quiz.ids.filter(function(id){return idx[id];}).map(function(id){return idx[id];});}
+function qChips(id,opts,cur,pick){
+  var el=document.getElementById(id);el.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button");b.type="button";b.className="chip";
+    b.setAttribute("aria-pressed",String(o.k===cur));b.textContent=o.label;
+    b.addEventListener("click",function(){pick(o.k);qSave();render();});
+    el.appendChild(b);
+  });
+}
+function buildQuizRail(){
+  qChips("qzscope",QZ_SCOPE,quiz.scope,function(k){quiz.scope=k;});
+  qChips("qzn",QZ_NS.map(function(n){return {k:n,label:n+" ข้อ"};}),quiz.n,function(k){quiz.n=k;});
+  qChips("qzpool",QZ_POOL,quiz.pool,function(k){quiz.pool=k;});
+  var n=qPool().length;
+  document.getElementById("qzinfo").textContent="มีให้สุ่ม "+n+" ข้อ"+(n<quiz.n&&n?" (น้อยกว่าที่เลือก จะได้ "+n+" ข้อ)":"");
+  document.getElementById("btn-qdraw").disabled=!n;
+}
+function qScore(){
+  var its=qItems(),done=0,right=0;
+  its.forEach(function(e){var a=quiz.ans[e.it.id];if(a){done++;if(a.ok)right++;}});
+  return {n:its.length,done:done,right:right};
+}
+function renderQuiz(stream){
+  var its=qItems(),sc=qScore();
+  var head=document.createElement("div");head.className="part-head";
+  head.innerHTML="<h2>สุ่มทำข้อสอบ</h2><span class='meta'>"+(its.length?"ทำแล้ว "+sc.done+"/"+sc.n:"ยังไม่ได้สุ่ม")+"</span>";
+  stream.appendChild(head);
+  if(!its.length){
+    var pool=qPool().length,c=document.createElement("section");c.className="item qzcard";
+    c.innerHTML="<h3 class='topic'>สุ่มข้อสอบมาทำเป็นชุด</h3>"+
+      "<p class='stem'>สุ่มจาก MCQ ใหม่และข้อสอบเก่าที่มีตัวเลือก คละทุกคาบ"+(quiz.scope==="all"?" ทุกระบบ":" ของ "+esc(setLabel(state.set)))+
+      " · ตั้งขอบเขต จำนวนข้อ และเลือกเฉพาะข้อที่ยังไม่เคยทำหรือเคยตอบผิดได้ที่แถบด้านข้าง</p>"+
+      (pool?"":"<p class='lecline'>ไม่มีข้อในเงื่อนไขนี้ — ลองเปลี่ยนเป็น “ทุกข้อ” หรือ “ทุกระบบ”</p>");
+    var b=document.createElement("button");b.type="button";b.className="reveal qzgo";
+    b.textContent="เริ่มสุ่ม "+Math.min(quiz.n,pool)+" ข้อ";b.disabled=!pool;
+    b.addEventListener("click",function(){qDraw();});
+    c.appendChild(b);stream.appendChild(c);return;
+  }
+  var info=document.createElement("p");info.className="oldnote wide";
+  info.textContent="ชุดนี้: "+quiz.from+" · "+sc.n+" ข้อ · ตอบแล้วเฉลยทันที กด 1–5 เพื่อตอบข้อที่เห็นอยู่บนจอ";
+  stream.appendChild(info);
+  its.forEach(function(e,i){
+    var el=e.kind==="mcq"?renderMCQ(e.it,i,quiz.ans):renderOldChoice(e.it,e.g,quiz.ans);
+    var ih=el.querySelector(".ihead");
+    if(ih)ih.insertAdjacentHTML("afterbegin","<span class='tag qzno'>ข้อ "+(i+1)+"/"+sc.n+"</span>"+
+      (quiz.scope==="all"||e.set!==state.set?"<span class='tag'>"+esc(setLabel(e.set))+"</span>":""));
+    stream.appendChild(el);
+  });
+  if(sc.done===sc.n){
+    var pct=Math.round(sc.right*100/sc.n),s=document.createElement("section");s.className="item qzcard";
+    var by={},wrong=[];
+    its.forEach(function(e){var a=quiz.ans[e.it.id];by[e.set]=by[e.set]||{n:0,r:0};by[e.set].n++;if(a.ok)by[e.set].r++;else wrong.push(e.it.id);});
+    var rows=Object.keys(by).map(function(k){return "<li><b>"+esc(setLabel(k))+"</b> "+by[k].r+"/"+by[k].n+"</li>";}).join("");
+    s.innerHTML="<h3 class='topic'>สรุปชุดนี้: ถูก "+sc.right+"/"+sc.n+" ข้อ ("+pct+"%)</h3>"+
+      (Object.keys(by).length>1?"<ul class='qzby'>"+rows+"</ul>":"");
+    var acts=document.createElement("div");acts.className="railacts qzacts";
+    var b1=document.createElement("button");b1.type="button";b1.className="reveal";b1.textContent="สุ่มชุดใหม่";
+    b1.addEventListener("click",function(){qDraw();});acts.appendChild(b1);
+    if(wrong.length){var b2=document.createElement("button");b2.type="button";b2.className="reveal";
+      b2.textContent="ทำข้อที่ผิดอีกรอบ ("+wrong.length+")";b2.addEventListener("click",function(){qDraw(qShuffle(wrong.slice()));});acts.appendChild(b2);}
+    s.appendChild(acts);stream.appendChild(s);
+  }
+}
+document.getElementById("btn-qdraw").addEventListener("click",function(){qDraw();});
+"""
+
+QUIZ_HTML = """    <div id="quizblock" style="display:none">
+      <h2>สุ่มจาก</h2>
+      <div class="parts" id="qzscope"></div>
+      <h2 class="qzh">จำนวนข้อ</h2>
+      <div class="parts" id="qzn"></div>
+      <h2 class="qzh">เลือกข้อ</h2>
+      <div class="parts" id="qzpool"></div>
+      <button class="ghost qzbtn" id="btn-qdraw" type="button">สุ่มชุดใหม่</button>
+      <p class="qzinfo" id="qzinfo"></p>
+    </div>
+"""
+
+QUIZ_CSS = """.ihead .tag{white-space:normal;max-width:100%}
+.qzh{margin-top:16px!important}
+.qzbtn{margin-top:16px;width:100%}
+.qzbtn[disabled]{opacity:.5;cursor:default}
+.qzinfo{margin:10px 0 0;font-size:12.5px;color:var(--ink-3)}
+.tag.qzno{color:var(--on-accent);background:var(--accent);font-weight:600}
+.qzcard .reveal{margin-top:6px}
+.reveal.qzgo{font-size:14px;padding:11px 22px;background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.reveal.qzgo:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.reveal.qzgo[disabled]{opacity:.5;cursor:default}
+.qzby{margin:4px 0 12px;padding-inline-start:18px;color:var(--ink-2);font-size:14px}
+.qzacts{background:none;border:0;box-shadow:none;padding:0}
+"""
+
+
+def patch_quiz(t):
+    """โหมดสุ่มทำข้อสอบ — ต้องรันหลัง account-sync (ใช้ normA)"""
+    if 'function qDraw' in t:
+        return t, False
+    rep = [
+        # renderMCQ / renderOldChoice รับที่เก็บคำตอบได้ (โหมดสุ่มใช้ quiz.ans)
+        ('function renderMCQ(it,idx){', 'function renderMCQ(it,idx,store){store=store||state.answers;'),
+        ('function renderOldChoice(it,g){', 'function renderOldChoice(it,g,store){store=store||state.answers;'),
+        ('{k:"hot",label:"ออกบ่อย"}];', '{k:"hot",label:"ออกบ่อย"},{k:"quiz",label:"สุ่มทำข้อสอบ"}];'),
+        ('  if(!mcounts[state.mode]){state.mode="new";save();}',
+         '  if(!mcounts[state.mode]&&state.mode!=="quiz"){state.mode="new";save();}'),
+        ('    MODES.filter(function(m){return m.k==="new"||mcounts[m.k]>0;}),state.mode,function(k){',
+         '    MODES.filter(function(m){return m.k==="new"||m.k==="quiz"||mcounts[m.k]>0;}),state.mode,function(k){'),
+        ('  var showBtns=(state.mode==="new")||oldHasCh||state.mode==="hot"||state.mode==="year";',
+         '  var qz=state.mode==="quiz";\n'
+         '  document.getElementById("lecbar").parentNode.style.display=qz?"none":"";\n'
+         '  document.getElementById("quizblock").style.display=qz?"":"none";\n'
+         '  if(qz)buildQuizRail();\n'
+         '  var showBtns=!qz&&((state.mode==="new")||oldHasCh||state.mode==="hot"||state.mode==="year");'),
+        ('  if(state.mode==="new")renderNew(stream);\n',
+         '  if(qz)renderQuiz(stream);\n  else if(state.mode==="new")renderNew(stream);\n'),
+        ('function updateScore(){\n',
+         'function updateScore(){\n'
+         '  if(state.mode==="quiz"){var q=qScore(),qp=q.done?Math.round(q.right/q.done*100):0;\n'
+         '    document.getElementById("sc-done").textContent=q.done;document.getElementById("sc-right").textContent=q.right;\n'
+         '    var qa=document.getElementById("sc-acc");qa.textContent=q.done?qp+"%":"—";qa.style.setProperty("--pct",qp);\n'
+         '    document.getElementById("railnote").innerHTML="<b>สุ่มทำข้อสอบ</b> คะแนนด้านบนนับเฉพาะชุดที่สุ่มอยู่ · คำตอบนับรวมในแต่ละระบบด้วย และบันทึกในบัญชีของคุณ";\n'
+         '    return;}\n'),
+        ('    <div class="railacts">\n', QUIZ_HTML + '    <div class="railacts">\n'),
+        ('.scoreboard{', QUIZ_CSS + '.scoreboard{'),
+        ('/* ---------- actions ---------- */', QUIZ_JS + '\n/* ---------- actions ---------- */'),
+    ]
+    for a, b in rep:
+        assert t.count(a) == 1, a[:70]
+        t = t.replace(a, b)
+    # ทั้งสองฟังก์ชัน: อ่าน/เขียนคำตอบผ่าน store (เขียน state.answers ด้วยเสมอ)
+    for fn in ('function renderMCQ(', 'function renderOldChoice('):
+        i = t.index(fn)
+        j = t.index('\nfunction ', i + 10)
+        body = t[i:j]
+        assert body.count('var ans=state.answers[it.id];') == 1
+        assert body.count('state.answers[it.id]={pick:ci,ok:ci===it.answer};') == 1
+        body = body.replace('var ans=state.answers[it.id];', 'var ans=store[it.id];')
+        body = body.replace('state.answers[it.id]={pick:ci,ok:ci===it.answer};',
+                            'store[it.id]=state.answers[it.id]={pick:ci,ok:ci===it.answer};if(store===quiz.ans)qSave();')
+        t = t[:i] + body + t[j:]
+    return t, True
+
 
 def patch_template(drill):
     p = os.path.join(drill, 'template.html')
@@ -303,6 +489,9 @@ def patch_template(drill):
     if a in t:
         t = t.replace(a, 'ความคืบหน้าบันทึกในบัญชีของคุณ (ถ้ายังไม่ได้เชื่อมบัญชีจะเก็บในเบราว์เซอร์นี้)')
         done.append('railnote')
+    t, q = patch_quiz(t)
+    if q:
+        done.append('quiz')
     open(p, 'w', encoding='utf-8').write(t)
     return done
 
