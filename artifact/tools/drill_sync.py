@@ -20,6 +20,7 @@ Ward Drill (artifact Fdi5gcNXKqFLAXg4fQBV7X) build จาก branch `claude/ador
   4. build.py: รองรับ `mcq_late`
   5. template.html: ลิงก์ตรง #<ชุด>-<คาบ> (applyHash — ของ live v11 จาก Lecture Dashboard)
      + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตารางจริง
+     + บันทึกคำตอบในบัญชี data/users/<id>/drill (ต้อง publish พร้อม capabilities {db:{}, user:{}})
   6. refs/nl_2567.json: เติมรหัส NL ที่ข้อใหม่อ้าง (คัดจาก artifact/data/nl.json — ประกาศฉบับเต็ม)
 """
 import json, os, re, sys
@@ -171,6 +172,96 @@ applyHash();
 window.addEventListener("hashchange",function(){if(applyHash()){render();window.scrollTo(0,0);}});
 '''
 
+SYNC_JS = r"""
+/* ---------- บันทึกคำตอบในบัญชี (capability db + user) ----------
+   data/users/<id>/drill = {answers, shown} · localStorage ยังเป็นสำเนาในเครื่อง (ใช้ตอนไม่ได้ล็อกอิน)
+   SYNC.sent = สิ่งที่อยู่ในบัญชีล่าสุดที่รู้ · meta.cloud = เครื่องนี้เคยซิงก์แล้ว · meta.pend = มีของในเครื่องที่ยังไม่ได้อัปโหลด */
+var MKEY="med421-drill-v1:sync";
+var SYNC={mode:"local",ref:null,uid:"",busy:0,timer:null,first:1,sent:"",err:"",meta:{cloud:false,pend:false,uid:""}};
+try{var mm=JSON.parse(localStorage.getItem(MKEY)||"{}");SYNC.meta.cloud=!!mm.cloud;SYNC.meta.pend=!!mm.pend;SYNC.meta.uid=typeof mm.uid==="string"?mm.uid:"";}catch(e){}
+function saveMeta(){try{localStorage.setItem(MKEY,JSON.stringify(SYNC.meta));}catch(e){}}
+function normA(a){var r={};if(a&&typeof a==="object")Object.keys(a).sort().forEach(function(k){var v=a[k];
+  if(v&&typeof v==="object"&&typeof v.pick==="number"&&v.pick>=0&&v.pick<10&&v.pick===Math.floor(v.pick)){
+    r[k]={pick:v.pick,ok:!!v.ok};if(v.auto)r[k].auto=1;}});return r;}
+function normS(s){var r={};if(s&&typeof s==="object")Object.keys(s).sort().forEach(function(k){if(s[k])r[k]=1;});return r;}
+function norm(o){o=o||{};return {answers:normA(o.answers),shown:normS(o.shown)};}
+function cur(){return JSON.stringify(norm(state));}
+SYNC.sent=cur();
+function syncCheck(){
+  if(cur()===SYNC.sent)return;
+  if(!SYNC.meta.pend){SYNC.meta.pend=true;saveMeta();}
+  clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,700);
+}
+function flush(){
+  SYNC.timer=null;
+  if(SYNC.mode!=="cloud"||!SYNC.ref||SYNC.busy)return;
+  var c=cur();if(c===SYNC.sent)return;
+  if(c.length>600000){SYNC.err="คำตอบเยอะเกินที่บัญชีเก็บได้ ส่วนนี้บันทึกในเครื่องนี้";renderSync();return;}
+  SYNC.busy=1;renderSync();
+  var body=JSON.parse(c);body.v=1;body.updatedAt=new Date().toISOString();
+  SYNC.ref.set(body).then(function(){
+    SYNC.busy=0;SYNC.sent=c;SYNC.err="";
+    if(cur()===SYNC.sent){SYNC.meta.pend=false;SYNC.meta.cloud=true;SYNC.meta.uid=SYNC.uid;saveMeta();}
+    else{clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,300);}
+    renderSync();
+  },function(e){
+    SYNC.busy=0;var code=e&&e.code;
+    if(code==="unavailable"||code==="resource_exhausted"){clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,2500+Math.random()*2000);}
+    else if(code==="revoked"){SYNC.mode="local";}
+    else SYNC.err="บันทึกขึ้นบัญชีไม่ได้ ตอนนี้เก็บในเครื่องนี้";
+    renderSync();
+  });
+}
+function adopt(data){var n=norm(data);state.answers=n.answers;state.shown=n.shown;}
+function merge(data){var c=norm(data),l=norm(state);
+  state.answers=Object.assign({},c.answers,l.answers);state.shown=Object.assign({},c.shown,l.shown);}
+function keep(){try{localStorage.setItem("med421-drill-v1",JSON.stringify(
+  {answers:state.answers,shown:state.shown,set:state.set,mode:state.mode}));}catch(e){}}
+function onSnap(snap){
+  var data=snap.exists?snap.data():null;
+  if(SYNC.first){
+    SYNC.first=0;
+    /* เบราว์เซอร์นี้เคยซิงก์กับบัญชีอื่น → ไม่เอาของในเครื่องไปปนกับบัญชีนี้ */
+    var other=!!(SYNC.meta.uid&&SYNC.meta.uid!==SYNC.uid);
+    if(!data){SYNC.sent="";if(other)adopt({});}
+    else{
+      SYNC.sent=JSON.stringify(norm(data));
+      if(other||(SYNC.meta.cloud&&!SYNC.meta.pend))adopt(data);else merge(data);
+    }
+    SYNC.mode="cloud";SYNC.meta.uid=SYNC.uid;
+    if(cur()===SYNC.sent){SYNC.meta.pend=false;SYNC.meta.cloud=true;}
+    saveMeta();keep();flush();render();renderSync();return;
+  }
+  if(SYNC.busy||SYNC.timer||snap.metadata&&snap.metadata.hasPendingWrites)return;
+  if(!data)return;
+  var c=JSON.stringify(norm(data));
+  if(c===cur())return;
+  SYNC.sent=c;adopt(data);keep();render();
+}
+function renderSync(){
+  var el=document.getElementById("lsync");if(!el)return;
+  el.className="lsync"+(SYNC.mode==="cloud"&&!SYNC.err?(SYNC.busy?" busy":" cloud"):"");
+  el.lastChild.textContent=SYNC.err||(SYNC.mode==="cloud"?(SYNC.busy?"กำลังบันทึก…":"บันทึกในบัญชี"):"บันทึกในเครื่องนี้");
+  el.title=SYNC.mode==="cloud"?"คำตอบบันทึกในบัญชีของคุณ เปิดเครื่องไหนก็เห็นเหมือนกัน":"ยังไม่ได้เชื่อมบัญชี คำตอบเก็บในเบราว์เซอร์เครื่องนี้ (อาจหายเมื่อเปิดในแอปหรือล้างข้อมูลเบราว์เซอร์)";
+}
+(function connect(){
+  if(!window.claude||typeof window.claude.use!=="function")return;
+  Promise.all([window.claude.use("db"),window.claude.use("user")]).then(function(r){
+    var db=r[0],user=r[1];if(!db||!user)return null;
+    return user.id().then(function(uid){
+      if(!uid)return;
+      SYNC.uid=uid;SYNC.ref=db.doc("data/users/"+uid+"/drill");
+      SYNC.ref.onSnapshot(onSnap,function(e){if(e&&e.code==="revoked"){SYNC.mode="local";renderSync();}});
+    });
+  }).catch(function(){});
+})();
+"""
+
+SYNC_CSS = """.lsync{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:12px;color:var(--ink-3);background:var(--surface-sunk);border-radius:999px;padding:5px 11px;white-space:nowrap}
+.lsync i{width:8px;height:8px;border-radius:50%;background:var(--ink-3);flex:none}
+.lsync.cloud i{background:var(--ok)} .lsync.busy i{background:var(--miss)}
+"""
+
 
 def patch_template(drill):
     p = os.path.join(drill, 'template.html')
@@ -194,6 +285,24 @@ def patch_template(drill):
         a = '.vign strong{font-weight:600}'
         t = t.replace(a, a + '\n.vign.vmd{white-space:normal}', 1)
         done.append('vign-md')
+    if 'data/users/' not in t:
+        # บันทึกคำตอบในบัญชี — publish พร้อม capabilities {db:{}, user:{}}
+        a = 'function save(){try{localStorage.setItem("med421-drill-v1",JSON.stringify(\n  {answers:state.answers,shown:state.shown,set:state.set,mode:state.mode}));}catch(e){}}\n'
+        assert t.count(a) == 1
+        t = t.replace(a, a.replace('catch(e){}}', 'catch(e){}if(typeof syncCheck==="function")syncCheck();}') + SYNC_JS)
+        a = '.scoreboard{'
+        assert t.count(a) == 1
+        t = t.replace(a, SYNC_CSS + a)
+        a = re.search(r'(<div class="brand">.*?</p>)', t, re.S).group(1)
+        t = t.replace(a, a + '\n        <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>', 1)
+        a = '\nrender();\n})();\n</script>'
+        assert t.count(a) == 1
+        t = t.replace(a, '\nrender();renderSync();\n})();\n</script>')
+        done.append('account-sync')
+    a = 'ความคืบหน้าถูกเก็บไว้ในเบราว์เซอร์นี้'
+    if a in t:
+        t = t.replace(a, 'ความคืบหน้าบันทึกในบัญชีของคุณ (ถ้ายังไม่ได้เชื่อมบัญชีจะเก็บในเบราว์เซอร์นี้)')
+        done.append('railnote')
     open(p, 'w', encoding='utf-8').write(t)
     return done
 
