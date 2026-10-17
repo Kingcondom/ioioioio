@@ -97,3 +97,31 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - ค้างจากสัปดาห์ก่อน: `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย. · `10` Shock → พ. 21 ต.ค.
 
 สัปดาห์ที่ 2–3: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 5 · 12–16 ต.ค. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 12 | Acute hepatitis and hepatic failure / Acute and chronic hepatitis (อ.เฉลิมรัฐ) | gi `G02` ตับและทางเดินน้ำดี (เรื่องตับอักเสบ 4 / 0 / 12 จากทั้งกลุ่ม 7 / 3 / 23) | 🟡 MCQ เรื่องตับอักเสบมี 4 ข้อ ไม่มี MEQ |
+| จ. 12 | Approach to WBC disorder and Lymphadenopathy (AL) (อ.เบญจมาภรณ์) | ไม่มีกลุ่มคาบ — heme `H03` มะเร็งเม็ดเลือด (7 / 1 / 13) ครอบคลุมบางส่วน · ข้อเก่าเรื่อง lymphadenopathy อยู่ใน onco | 🟡 ยังไม่มีข้อแนว approach (leukocytosis/leukopenia, ต่อมน้ำเหลืองโต) |
+| พ. 14 | Diabetes mellitus (incl. DKA) (อ.ชัยชาญ) | endo `E01` เบาหวานและภาวะฉุกเฉินทางเมตาบอลิก (7 / 1 / 20) | ✅ |
+| พฤ. 15 | CNS infection and CSF interpretation (อ.ดำรงวิทย์) | ไม่มีกลุ่มคาบ — กระจายใน neuro `N02` (2 / 1 / 29) · chest `TB2` (2 / 0 / 2) · infect (1 / 0 / 11) | 🟡 ข้อใหม่รวมแค่ ~5 ข้อ ไม่มีกลุ่มของตัวเอง |
+
+ไม่นับ: "📚 เรียน: Epilepsy ห้าด่าน" (พ. 14) เป็นบันทึกการทบทวน ไม่ใช่ lecture
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: WBC/ต่อมน้ำเหลือง ~75 · CNS infection/CSF ~53 · DM/DKA ~52 · ตับอักเสบ ~29
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. CNS infection / CSF: เปิดกลุ่มคาบใหม่ (bacterial vs viral vs TB vs cryptococcal, empirical therapy, ตาราง CSF) แล้วย้ายข้อที่กระจายอยู่มารวม — ข้อเก่าพักไว้ ~53 ข้อ
+2. Hepatitis: แยกออกจาก `G02` เพิ่ม MCQ + MEQ (serology HBV, acute liver failure, paracetamol overdose)
+3. Approach to WBC disorder / Lymphadenopathy: เปิดกลุ่มคาบ AL
+4. ค้างจากสัปดาห์ก่อน: STDs (❌) · Bleeding disorder · Blood transfusion · Epilepsy · Derm infection · Empyema/resp failure · SAQ อ่าน CXR · MEQ ของ AF
+
+**config ต้องแก้**
+- `G02` → "จ. 12 ต.ค." (hepatitis) · `E01` → "พ. 14 ต.ค." (DM/DKA)
+- ต้องสร้างรหัสคาบใหม่ให้ CNS infection (พฤ. 15 ต.ค.) และ WBC disorder (จ. 12 ต.ค., AL)
+- ค้างจากสัปดาห์ก่อน: `I03` / `H02` → จ. 5 ต.ค. · `30` UTI → ศ. 18 ก.ย. · `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย. · `10` Shock → พ. 21 ต.ค.
+
+สัปดาห์ที่ 2–4: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
