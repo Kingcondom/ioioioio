@@ -1,0 +1,869 @@
+{
+ "set": "endo",
+ "items": [
+  {
+   "sec": "endo-ms-01",
+   "after": "กลไกหลักสองอย่าง",
+   "anim": {
+    "key": "ms01-portal",
+    "title": "ไขมันพุง → portal vein → ตับ: รากเดียวของห้าองค์ประกอบ MetS",
+    "svg": "<svg viewBox=\"0 0 440 388\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ไขมันในช่องท้องปล่อยกรดไขมันอิสระผ่านหลอดเลือดดำพอร์ทัลเข้าตับ ตับสร้าง VLDL มากและดื้ออินซูลิน ทำให้ไตรกลีเซอไรด์สูง น้ำตาลสูง HDL ต่ำ และความดันสูง ครบห้าองค์ประกอบของ metabolic syndrome\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"150\" y=\"30\" width=\"130\" height=\"76\" rx=\"30\" class=\"ac\"/><text x=\"215\" y=\"62\" class=\"lg b mid\">ตับ</text><text x=\"215\" y=\"84\" class=\"xs mid tbad b\" data-s=\"3\">ดื้อ insulin</text><rect x=\"14\" y=\"272\" width=\"150\" height=\"84\" rx=\"16\" class=\"ms\"/><text x=\"89\" y=\"292\" class=\"sm b mid\">ไขมันในช่องท้อง</text><circle cx=\"36\" cy=\"320\" r=\"8\" class=\"msf\"/><circle cx=\"58\" cy=\"320\" r=\"8\" class=\"msf\"/><circle cx=\"80\" cy=\"320\" r=\"8\" class=\"msf\"/><circle cx=\"102\" cy=\"320\" r=\"8\" class=\"msf\"/><circle cx=\"124\" cy=\"320\" r=\"8\" class=\"msf\"/><circle cx=\"146\" cy=\"320\" r=\"8\" class=\"msf\"/><text x=\"89\" y=\"346\" class=\"xs mid\">lipolysis ไว → FFA</text><g data-s=\"2\"><path d=\"M120,272 C120,200 132,130 158,104\" class=\"lms w3 fl\" marker-end=\"url(#ah-ms)\"/><circle cx=\"120\" cy=\"272\" r=\"4\" class=\"msf\"><animateMotion dur=\"2.4s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 C0,-72 12,-142 38,-168\"/></circle><circle cx=\"120\" cy=\"272\" r=\"4\" class=\"msf\"><animateMotion dur=\"2.4s\" begin=\"-0.8s\" repeatCount=\"indefinite\" path=\"M0,0 C0,-72 12,-142 38,-168\"/></circle><circle cx=\"120\" cy=\"272\" r=\"4\" class=\"msf\"><animateMotion dur=\"2.4s\" begin=\"-1.6s\" repeatCount=\"indefinite\" path=\"M0,0 C0,-72 12,-142 38,-168\"/></circle><text x=\"14\" y=\"196\" class=\"xs b tms\">FFA ไหลตรง</text><text x=\"14\" y=\"210\" class=\"xs b tms\">เข้า portal vein</text></g><g data-s=\"3\"><rect x=\"296\" y=\"26\" width=\"120\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"356\" y=\"46\" class=\"sm b mid\">TG ≥ 150</text><text x=\"356\" y=\"64\" class=\"xs mid\">ตับสร้าง VLDL ↑</text><rect x=\"296\" y=\"90\" width=\"120\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"356\" y=\"110\" class=\"sm b mid\">FPG ≥ 100</text><text x=\"356\" y=\"128\" class=\"xs mid\">ปล่อยกลูโคสไม่หยุด</text><path d=\"M280,54 L294,52\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M280,92 L294,108\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"4\"><rect x=\"296\" y=\"154\" width=\"120\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"356\" y=\"174\" class=\"sm b mid\">HDL &lt; 40 / &lt; 50</text><text x=\"356\" y=\"192\" class=\"xs mid\">CETP → ถูกย่อยทิ้ง</text><path d=\"M416,50 C436,50 436,178 418,178\" class=\"lbad w2 da\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"5\"><path d=\"M164,290 C186,288 192,272 194,232\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><text x=\"176\" y=\"150\" class=\"xs b\">Adipokine:</text><text x=\"176\" y=\"164\" class=\"xs\">TNF-α, IL-6 ↑</text><text x=\"176\" y=\"178\" class=\"xs\">adiponectin ↓</text><text x=\"176\" y=\"196\" class=\"xs b tbad\">→ ดื้อ insulin ทั้งตัว</text><text x=\"176\" y=\"210\" class=\"xs\">→ insulin สูงชดเชย</text><rect x=\"296\" y=\"236\" width=\"120\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"356\" y=\"256\" class=\"sm b mid\">BP ≥ 130/85</text><text x=\"356\" y=\"274\" class=\"xs mid\">ไตดูด Na · SNS ↑</text><path d=\"M250,214 C270,226 280,250 294,256\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"6\"><rect x=\"180\" y=\"300\" width=\"250\" height=\"74\" rx=\"8\" class=\"sk\"/><text x=\"305\" y=\"322\" class=\"sm b mid\">ครบ ≥ 3 ใน 5 = MetS</text><text x=\"305\" y=\"342\" class=\"xs mid\">T2D ↑ 5–7 เท่า · CVD ↑ 3 เท่า</text><text x=\"305\" y=\"360\" class=\"xs mid tok b\">แก้ที่ราก = ลดไขมันในช่องท้อง</text><text x=\"89\" y=\"374\" class=\"xs mid b tms\">รอบเอว ชาย ≥ 90 · หญิง ≥ 80</text></g></svg>",
+    "steps": [
+     {
+      "t": "ไขมันในช่องท้องสลายไว",
+      "cap": "ไขมัน visceral **ทำ lipolysis ไวกว่าไขมันใต้ผิวหนัง** ปล่อย **FFA** ออกมามาก — หนึ่งในสองกลไกหลักของ MetS (visceral adiposity + insulin resistance)"
+     },
+     {
+      "t": "FFA ไหลตรงเข้าตับทาง portal vein",
+      "cap": "FFA จากไขมันในช่องท้อง **เข้า portal vein ถึงตับทันที** (จุดเหลืองวิ่ง) ตับจึงได้รับกรดไขมันปริมาณมากโดยตรง"
+     },
+     {
+      "t": "ตับ: VLDL ↑ และดื้อ insulin",
+      "cap": "FFA ส่วนเกิน → ตับ **สร้าง VLDL มาก → TG ≥ 150** และ **ตับดื้อ insulin** ปล่อยกลูโคสไม่หยุด → **FPG ≥ 100**"
+     },
+     {
+      "t": "CETP → HDL ต่ำ",
+      "cap": "**CETP** แลก TG จาก VLDL เข้า HDL → HDL ที่อุดม TG ถูก **hepatic lipase ย่อยและขับทิ้งเร็ว** → **HDL < 40 (ชาย) / < 50 (หญิง)**"
+     },
+     {
+      "t": "Adipokine → ดื้อ insulin ทั้งตัว → BP ↑",
+      "cap": "ไขมันที่โตเกินหลั่ง **TNF-α, IL-6** และ **adiponectin ลดลง** → กล้ามเนื้อดึงกลูโคสไม่เข้า · insulin สูงชดเชย → **ไตดูดกลับ Na + sympathetic ↑ → BP ≥ 130/85**"
+     },
+     {
+      "t": "รากเดียว ห้าองค์ประกอบ",
+      "cap": "อ้วนลงพุง + TG + HDL + BP + FPG ครบ **≥ 3 ใน 5 (harmonized)** = MetS → T2D 5–7 เท่า, CVD 3 เท่า · การรักษาที่ได้ผลกับทุกข้อคือ **ลดไขมันในช่องท้อง**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-ms-10",
+   "after": "จาก LDL สู่ plaque (Moore & Tabas 2011)",
+   "anim": {
+    "key": "ms10-plaque",
+    "title": "จาก LDL สู่ plaque ที่แตก — ทีละขั้นในผนังหลอดเลือด",
+    "svg": "<svg viewBox=\"0 0 440 362\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: LDL แทรกเข้าผนังหลอดเลือดชั้น intima ถูกออกซิไดซ์ monocyte เข้ามาเป็น macrophage กินจนเป็น foam cell กล้ามเนื้อเรียบสร้าง fibrous cap คลุม lipid core แล้ว cap บางแตกเกิดลิ่มเลือด\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"30\" width=\"420\" height=\"110\" rx=\"4\" class=\"bx\"/><text x=\"18\" y=\"48\" class=\"xs mu\">lumen (เลือด)</text><text x=\"18\" y=\"64\" class=\"xs tms b\">LDL (apoB)</text><rect x=\"10\" y=\"140\" width=\"420\" height=\"130\" rx=\"0\" class=\"ms\"/><text x=\"18\" y=\"262\" class=\"xs mu b\">intima</text><rect x=\"10\" y=\"270\" width=\"420\" height=\"62\" rx=\"0\" class=\"ac\"/><text x=\"18\" y=\"326\" class=\"xs mu b\">media (smooth muscle)</text><ellipse cx=\"70\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"120\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"170\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"220\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"270\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"320\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"370\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><ellipse cx=\"410\" cy=\"296\" rx=\"15\" ry=\"5\" class=\"acf\"/><line x1=\"10\" y1=\"140\" x2=\"168\" y2=\"140\" class=\"lwa w3\"/><line x1=\"202\" y1=\"140\" x2=\"430\" y2=\"140\" class=\"lwa w3\"/><text x=\"162\" y=\"132\" class=\"xs end tbad b\">endothelium เสียหาย</text><circle cx=\"26\" cy=\"86\" r=\"6\" class=\"msf\"><animateMotion dur=\"5s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L404,0\"/></circle><circle cx=\"26\" cy=\"86\" r=\"6\" class=\"msf\"><animateMotion dur=\"5s\" begin=\"-1.25s\" repeatCount=\"indefinite\" path=\"M0,0 L404,0\"/></circle><circle cx=\"26\" cy=\"86\" r=\"6\" class=\"msf\"><animateMotion dur=\"5s\" begin=\"-2.5s\" repeatCount=\"indefinite\" path=\"M0,0 L404,0\"/></circle><circle cx=\"26\" cy=\"86\" r=\"6\" class=\"msf\"><animateMotion dur=\"5s\" begin=\"-3.75s\" repeatCount=\"indefinite\" path=\"M0,0 L404,0\"/></circle><circle cx=\"150\" cy=\"86\" r=\"6\" class=\"msf\"><animateMotion dur=\"3s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 Q35,10 35,94\"/></circle><circle cx=\"160\" cy=\"190\" r=\"6\" class=\"badf\"/><circle cx=\"200\" cy=\"206\" r=\"6\" class=\"badf\"/><circle cx=\"172\" cy=\"224\" r=\"6\" class=\"badf\"/><text x=\"146\" y=\"214\" class=\"xs tbad b end\">oxLDL</text><g data-s=\"2\" data-x=\"4\"><circle cx=\"300\" cy=\"92\" r=\"11\" class=\"wa\"/><text x=\"316\" y=\"96\" class=\"xs twa b\">monocyte</text><path d=\"M290,140 L290,131 M285,126 L290,131 L295,126\" class=\"lwa w2\"/><path d=\"M310,140 L310,131 M305,126 L310,131 L315,126\" class=\"lwa w2\"/><text x=\"322\" y=\"124\" class=\"xs twa\">adhesion molecule</text><path d=\"M300,104 L300,172\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><circle cx=\"300\" cy=\"192\" r=\"16\" class=\"wa\" data-x=\"3\"/><text x=\"322\" y=\"196\" class=\"xs twa b\" data-x=\"3\">macrophage</text></g><g data-s=\"3\" data-x=\"4\"><circle cx=\"240\" cy=\"205\" r=\"16\" class=\"wa\"/><circle cx=\"234\" cy=\"201\" r=\"3\" class=\"msf\"/><circle cx=\"245\" cy=\"199\" r=\"3\" class=\"msf\"/><circle cx=\"240\" cy=\"211\" r=\"3\" class=\"msf\"/><circle cx=\"233\" cy=\"211\" r=\"3\" class=\"msf\"/><circle cx=\"247\" cy=\"208\" r=\"3\" class=\"msf\"/><circle cx=\"300\" cy=\"192\" r=\"16\" class=\"wa\"/><circle cx=\"294\" cy=\"188\" r=\"3\" class=\"msf\"/><circle cx=\"305\" cy=\"186\" r=\"3\" class=\"msf\"/><circle cx=\"300\" cy=\"198\" r=\"3\" class=\"msf\"/><circle cx=\"293\" cy=\"198\" r=\"3\" class=\"msf\"/><circle cx=\"307\" cy=\"195\" r=\"3\" class=\"msf\"/><circle cx=\"360\" cy=\"210\" r=\"16\" class=\"wa\"/><circle cx=\"354\" cy=\"206\" r=\"3\" class=\"msf\"/><circle cx=\"365\" cy=\"204\" r=\"3\" class=\"msf\"/><circle cx=\"360\" cy=\"216\" r=\"3\" class=\"msf\"/><circle cx=\"353\" cy=\"216\" r=\"3\" class=\"msf\"/><circle cx=\"367\" cy=\"213\" r=\"3\" class=\"msf\"/><text x=\"300\" y=\"248\" class=\"xs mid b tms\">foam cell → fatty streak</text></g><g data-s=\"4\"><path d=\"M170,140 Q290,70 410,140 Z\" class=\"ms\"/><ellipse cx=\"290\" cy=\"150\" rx=\"72\" ry=\"20\" class=\"msf\"/><text x=\"290\" y=\"154\" class=\"xs mid b\">necrotic lipid core</text><path d=\"M170,140 Q290,70 410,140\" class=\"lok w5\" data-x=\"5\"/><text x=\"290\" y=\"98\" class=\"xs mid tok b\" data-x=\"5\">fibrous cap</text><path d=\"M190,268 L204,176\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><path d=\"M392,268 L378,176\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"290\" y=\"232\" class=\"xs mid tok b\">SMC ย้ายขึ้นมาสร้างคอลลาเจน</text></g><g data-s=\"5\"><path d=\"M170,140 Q222,108 268,102\" class=\"lbad w2 da\"/><path d=\"M312,102 Q358,108 410,140\" class=\"lbad w2 da\"/><path d=\"M262,106 Q290,54 322,104 Z\" class=\"bad\"/><g><circle cx=\"290\" cy=\"96\" r=\"22\" class=\"lbad w2 pl\"/></g><text x=\"300\" y=\"48\" class=\"xs mid tbad b\">cap บาง → แตก → ลิ่มเลือด</text><text x=\"220\" y=\"352\" class=\"sm mid tbad b\">→ ACS / ischemic stroke</text></g></svg>",
+    "steps": [
+     {
+      "t": "LDL แทรกเข้า intima",
+      "cap": "อนุภาคที่มี **apoB (LDL)** ลอดผ่าน endothelium ที่เสียหายเข้าชั้น **intima** แล้วถูก **ออกซิไดซ์ (oxLDL)** — LDL ในเลือดยิ่งสูงยิ่งเข้าได้มาก"
+     },
+     {
+      "t": "Monocyte ถูกเรียกเข้า",
+      "cap": "endothelium แสดง **adhesion molecule** → **monocyte** เกาะแล้วมุดเข้า intima กลายเป็น **macrophage**"
+     },
+     {
+      "t": "Foam cell → fatty streak",
+      "cap": "macrophage กิน oxLDL จนอัดแน่นเป็น **foam cell** สะสมเป็น **fatty streak** — รอยโรคแรกสุดของหลอดเลือดแข็ง"
+     },
+     {
+      "t": "Fibrous cap ห่อ necrotic core",
+      "cap": "**smooth muscle cell** ย้ายจาก media ขึ้นมาสร้างคอลลาเจนเป็น **fibrous cap** ห่อ **necrotic lipid core** → plaque นูนเข้า lumen"
+     },
+     {
+      "t": "Cap บาง → แตก → ACS/stroke",
+      "cap": "การอักเสบและ T cell ทำให้ cap **บางลง (vulnerable plaque)** → แตก → ลิ่มเลือด → **ACS หรือ stroke** · ทุกขั้นเริ่มจากอนุภาค apoB → **LDL-C ยิ่งต่ำยิ่งดี**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-ms-12",
+   "after": "4. ไม่ถึงเป้า → ไล่ขั้น",
+   "anim": {
+    "key": "ms12-ldlr",
+    "title": "ยาลด LDL ทำงานตรงไหน — statin, PCSK9 inhibitor, ezetimibe",
+    "svg": "<svg viewBox=\"0 0 440 452\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: LDL receptor บนเซลล์ตับดึง LDL ออกจากเลือด statin ยับยั้ง HMG-CoA reductase ทำให้สร้าง receptor เพิ่ม PCSK9 พา receptor ไปทำลาย PCSK9 inhibitor ปลดเบรก ezetimibe ยับยั้งการดูดซึมคอเลสเตอรอลที่ลำไส้\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"24\" width=\"420\" height=\"62\" rx=\"6\" class=\"wa\"/><text x=\"18\" y=\"40\" class=\"xs twa b\">เลือด</text><text x=\"64\" y=\"40\" class=\"xs tms b\">LDL (จุดเหลือง)</text><circle cx=\"26\" cy=\"62\" r=\"7\" class=\"msf\"><animateMotion dur=\"6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L400,0\"/></circle><circle cx=\"26\" cy=\"62\" r=\"7\" class=\"msf\"><animateMotion dur=\"6s\" begin=\"-3s\" repeatCount=\"indefinite\" path=\"M0,0 L400,0\"/></circle><circle cx=\"26\" cy=\"62\" r=\"7\" class=\"msf\" data-x=\"2\"><animateMotion dur=\"6s\" begin=\"-1.5s\" repeatCount=\"indefinite\" path=\"M0,0 L400,0\"/></circle><circle cx=\"26\" cy=\"62\" r=\"7\" class=\"msf\" data-x=\"4\"><animateMotion dur=\"6s\" begin=\"-4.5s\" repeatCount=\"indefinite\" path=\"M0,0 L400,0\"/></circle><rect x=\"10\" y=\"96\" width=\"420\" height=\"236\" rx=\"14\" class=\"bx\"/><text x=\"420\" y=\"322\" class=\"sm b end mu\">เซลล์ตับ</text><path d=\"M50,110 L50,96 M43,86 L50,96 L57,86\" class=\"lok w3\"/><path d=\"M95,110 L95,96 M88,86 L95,96 L102,86\" class=\"lok w3\"/><circle cx=\"50\" cy=\"82\" r=\"6\" class=\"msf\"/><path d=\"M50,112 L62,148\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><circle cx=\"72\" cy=\"165\" r=\"17\" class=\"ok\"/><text x=\"94\" y=\"169\" class=\"xs tok\">endosome</text><path d=\"M86,152 C100,136 100,122 95,114\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"104\" y=\"132\" class=\"xs tok\">วนกลับ</text><path d=\"M72,183 L72,198\" class=\"lms w2\" marker-end=\"url(#ah-ms)\"/><rect x=\"16\" y=\"200\" width=\"140\" height=\"36\" rx=\"8\" class=\"ms\"/><text x=\"86\" y=\"222\" class=\"xs mid b\" data-x=\"2\">คอเลสเตอรอลในเซลล์</text><text x=\"86\" y=\"222\" class=\"xs mid b tbad\" data-s=\"2\">คอเลสเตอรอลในเซลล์ ↓</text><text x=\"350\" y=\"138\" class=\"xs mid b\">Acetyl-CoA</text><path d=\"M350,144 L350,170\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"360\" y=\"161\" class=\"xs mu\">ACL</text><text x=\"350\" y=\"184\" class=\"xs mid b\">HMG-CoA</text><path d=\"M350,190 L350,218 L160,218\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"364\" y=\"210\" class=\"xs mu\">reductase</text><circle cx=\"86\" cy=\"292\" r=\"26\" class=\"sk\"/><text x=\"86\" y=\"296\" class=\"xs mid\">nucleus</text><g data-s=\"2\"><path d=\"M343,197 L357,211 M357,197 L343,211\" class=\"lbad w3\"/><text x=\"338\" y=\"208\" class=\"sm b tbad end\">statin</text><path d=\"M86,238 L86,264\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><text x=\"96\" y=\"256\" class=\"xs tok b\">SREBP-2</text><path d=\"M112,292 C190,290 196,170 186,116\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"124\" y=\"318\" class=\"xs tok b\">ถอดยีน LDLR ↑</text><path d=\"M140,110 L140,96 M133,86 L140,96 L147,86\" class=\"lok w3\"/><path d=\"M185,110 L185,96 M178,86 L185,96 L192,86\" class=\"lok w3\"/><circle cx=\"140\" cy=\"82\" r=\"6\" class=\"msf\"/><text x=\"300\" y=\"40\" class=\"xs tok b\" data-x=\"4\">LDL ในเลือด ↓</text></g><g data-s=\"3\"><circle cx=\"194\" cy=\"84\" r=\"6\" class=\"inkf\"/><text x=\"232\" y=\"80\" class=\"xs b\">PCSK9</text><path d=\"M192,114 C206,120 222,128 234,140\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"250\" cy=\"150\" r=\"16\" class=\"bad\"/><text x=\"250\" y=\"182\" class=\"xs mid tbad b\">lysosome</text><text x=\"250\" y=\"194\" class=\"xs mid tbad\">ทำลาย LDLR</text></g><g data-s=\"4\"><path d=\"M208,80 L208,70 M202,62 L208,70 L214,62\" class=\"lwa w3\"/><text x=\"232\" y=\"64\" class=\"xs twa b\">PCSK9 inhibitor</text><path d=\"M206,120 L218,132 M218,120 L206,132\" class=\"lwa w3\"/><text x=\"300\" y=\"40\" class=\"xs tok b\">LDL ↓ อีก 50–60%</text></g><g data-s=\"5\"><rect x=\"10\" y=\"356\" width=\"420\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"380\" class=\"xs mid b\">ลำไส้เล็ก: NPC1L1 ดูดคอเลสเตอรอลจากอาหาร → ส่งเข้าตับ</text><path d=\"M30,354 L30,240\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><path d=\"M24,337 L36,349 M36,337 L24,349\" class=\"lbad w3\"/><text x=\"44\" y=\"348\" class=\"xs tbad b\">ezetimibe</text><path d=\"M345,152 L355,162 M355,152 L345,162\" class=\"lbad w2\"/><text x=\"338\" y=\"161\" class=\"xs tbad b end\">bempedoic</text></g><g data-s=\"6\"><rect x=\"10\" y=\"404\" width=\"420\" height=\"42\" rx=\"8\" class=\"sk\"/><text x=\"220\" y=\"422\" class=\"sm mid b\">statin สูงสุด → + ezetimibe → + PCSK9 inhibitor</text><text x=\"220\" y=\"438\" class=\"xs mid mu\">LDL ลด: 30–50% · เพิ่ม 20–25% · เพิ่ม 50–60%</text></g></svg>",
+    "steps": [
+     {
+      "t": "LDL receptor ดึง LDL ออกจากเลือด",
+      "cap": "LDL จับ **LDL receptor** ผ่าน apoB-100 → ถูกกลืนเข้า endosome · LDL ถูกย่อยเป็นคอเลสเตอรอลในเซลล์ ส่วน **receptor วนกลับ** ขึ้นผิวเซลล์มาใช้ใหม่"
+     },
+     {
+      "t": "Statin: ตัด HMG-CoA reductase",
+      "cap": "statin ยับยั้ง **HMG-CoA reductase** → คอเลสเตอรอลในเซลล์ตับลด → **SREBP-2** สั่ง **สร้าง LDLR เพิ่ม** → ดึง LDL ออกจากเลือดมากขึ้น (high-intensity ลด ≥ 50%)"
+     },
+     {
+      "t": "PCSK9: เบรกของ receptor",
+      "cap": "**PCSK9** จับ LDLR แล้วพาเข้า **lysosome ถูกทำลาย** แทนที่จะวนกลับ → receptor บนผิวเซลล์น้อยลง (PCSK9 gain-of-function จึงเป็นสาเหตุหนึ่งของ FH)"
+     },
+     {
+      "t": "PCSK9 inhibitor: ปลดเบรก",
+      "cap": "แอนติบอดี (evolocumab, alirocumab) หรือ siRNA (inclisiran) ปิด PCSK9 → LDLR **อยู่ได้นานขึ้น** → LDL ลดเพิ่ม ~50–60% เสริมฤทธิ์ statin"
+     },
+     {
+      "t": "Ezetimibe และ bempedoic acid",
+      "cap": "**ezetimibe** ยับยั้ง **NPC1L1** ที่ลำไส้ → คอเลสเตอรอลเข้าตับน้อยลง (−20–25%) · **bempedoic acid** ยับยั้ง **ACL** เหนือ reductase ไม่ทำงานในกล้ามเนื้อ เหมาะกับผู้ที่ทน statin ไม่ได้"
+     },
+     {
+      "t": "ไล่ขั้นเมื่อไม่ถึงเป้า",
+      "cap": "**statin ขนาดสูงสุดที่ทนได้ → + ezetimibe → + PCSK9 inhibitor** · ทุกตัวลงเอยที่ **LDL receptor ทำงานมากขึ้น** · ตรวจ lipid ซ้ำ 4–12 สัปดาห์หลังปรับยา"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-ms-13",
+   "after": "TG สูงมากจนเกิดตับอ่อนอักเสบ",
+   "anim": {
+    "key": "ms13-tgpanc",
+    "title": "TG > 1,000 ทำให้ตับอ่อนอักเสบได้อย่างไร — และทำไมให้ insulin drip",
+    "svg": "<svg viewBox=\"0 0 440 432\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ปกติ lipoprotein lipase ย่อยไตรกลีเซอไรด์ใน chylomicron เมื่อ LPL ทำงานไม่ได้ TG สูงเกิน 1000 เลือดหนืดไหลช้าในตับอ่อน lipase ของตับอ่อนย่อย TG เป็นกรดไขมันอิสระทำลายเซลล์ acinar เกิดตับอ่อนอักเสบ รักษาด้วย insulin infusion กระตุ้น LPL\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"16\" y=\"26\" class=\"xs b mu\">หลอดเลือดฝอยในกล้ามเนื้อ/ไขมัน</text><line x1=\"10\" y1=\"36\" x2=\"430\" y2=\"36\" class=\"ln w2\"/><line x1=\"10\" y1=\"100\" x2=\"430\" y2=\"100\" class=\"ln w2\"/><circle cx=\"24\" cy=\"68\" r=\"12\" class=\"msf\"><animateMotion dur=\"7s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L406,0\"/></circle><circle cx=\"24\" cy=\"68\" r=\"12\" class=\"msf\"><animateMotion dur=\"7s\" begin=\"-2.3s\" repeatCount=\"indefinite\" path=\"M0,0 L406,0\"/></circle><circle cx=\"24\" cy=\"68\" r=\"12\" class=\"msf\"><animateMotion dur=\"7s\" begin=\"-4.6s\" repeatCount=\"indefinite\" path=\"M0,0 L406,0\"/></circle><rect x=\"130\" y=\"96\" width=\"26\" height=\"8\" rx=\"3\" class=\"okf\"/><rect x=\"280\" y=\"96\" width=\"26\" height=\"8\" rx=\"3\" class=\"okf\"/><text x=\"218\" y=\"120\" class=\"xs mid tok b\">LPL (+ apoC-II) ย่อย TG</text><circle cx=\"143\" cy=\"104\" r=\"3\" class=\"okf\"><animateMotion dur=\"1.5s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,46\"/></circle><circle cx=\"293\" cy=\"104\" r=\"3\" class=\"okf\"><animateMotion dur=\"1.5s\" begin=\"-0.7s\" repeatCount=\"indefinite\" path=\"M0,0 L0,46\"/></circle><text x=\"152\" y=\"148\" class=\"xs tok\">FFA เข้าเนื้อเยื่อ</text><g data-s=\"2\" data-x=\"5\"><path d=\"M135,92 L151,108 M151,92 L135,108\" class=\"lbad w3\"/><path d=\"M285,92 L301,108 M301,92 L285,108\" class=\"lbad w3\"/></g><g data-s=\"2\" data-x=\"5\"><circle cx=\"40\" cy=\"62\" r=\"12\" class=\"msf\"/><circle cx=\"72\" cy=\"74\" r=\"12\" class=\"msf\"/><circle cx=\"104\" cy=\"60\" r=\"12\" class=\"msf\"/><circle cx=\"196\" cy=\"74\" r=\"12\" class=\"msf\"/><circle cx=\"232\" cy=\"60\" r=\"12\" class=\"msf\"/><circle cx=\"340\" cy=\"74\" r=\"12\" class=\"msf\"/><circle cx=\"372\" cy=\"60\" r=\"12\" class=\"msf\"/><circle cx=\"404\" cy=\"72\" r=\"12\" class=\"msf\"/></g><g data-s=\"2\"><text x=\"16\" y=\"168\" class=\"xs tbad b\">ขาด LPL/apoC-II หรือ secondary cause → TG &gt; 1,000</text><text x=\"16\" y=\"184\" class=\"xs tbad\">chylomicron ค้าง · ซีรัมขุ่นเหมือนนม</text><rect x=\"392\" y=\"158\" width=\"20\" height=\"44\" rx=\"6\" class=\"ms\"/></g><text x=\"16\" y=\"226\" class=\"xs b mu\">ตับอ่อน</text><line x1=\"10\" y1=\"236\" x2=\"430\" y2=\"236\" class=\"ln w2\"/><line x1=\"10\" y1=\"272\" x2=\"430\" y2=\"272\" class=\"ln w2\"/><circle cx=\"50\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"95\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"140\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"185\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"230\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"275\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"320\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"365\" cy=\"300\" r=\"16\" class=\"ac\"/><circle cx=\"410\" cy=\"300\" r=\"16\" class=\"ac\"/><text x=\"16\" y=\"334\" class=\"xs mu\">acinar cell</text><g data-s=\"3\"><circle cx=\"22\" cy=\"254\" r=\"10\" class=\"msf\"><animateMotion dur=\"14s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L408,0\"/></circle><circle cx=\"22\" cy=\"254\" r=\"10\" class=\"msf\"><animateMotion dur=\"14s\" begin=\"-3.5s\" repeatCount=\"indefinite\" path=\"M0,0 L408,0\"/></circle><circle cx=\"22\" cy=\"254\" r=\"10\" class=\"msf\"><animateMotion dur=\"14s\" begin=\"-7s\" repeatCount=\"indefinite\" path=\"M0,0 L408,0\"/></circle><circle cx=\"22\" cy=\"254\" r=\"10\" class=\"msf\"><animateMotion dur=\"14s\" begin=\"-10.5s\" repeatCount=\"indefinite\" path=\"M0,0 L408,0\"/></circle><text x=\"70\" y=\"226\" class=\"xs tbad b\">เลือดหนืด ไหลช้า · lipase ย่อย TG → FFA ท่วม</text><g><circle cx=\"150\" cy=\"279\" r=\"3\" class=\"badf pl\"/><circle cx=\"172\" cy=\"283\" r=\"3\" class=\"badf pl\"/><circle cx=\"196\" cy=\"278\" r=\"3\" class=\"badf pl\"/><circle cx=\"222\" cy=\"284\" r=\"3\" class=\"badf pl\"/><circle cx=\"246\" cy=\"279\" r=\"3\" class=\"badf pl\"/><circle cx=\"270\" cy=\"283\" r=\"3\" class=\"badf pl\"/><circle cx=\"292\" cy=\"278\" r=\"3\" class=\"badf pl\"/></g></g><g data-s=\"4\"><g><circle cx=\"140\" cy=\"300\" r=\"16\" class=\"lbad w3 pl\"/><circle cx=\"185\" cy=\"300\" r=\"16\" class=\"lbad w3 pl\"/><circle cx=\"230\" cy=\"300\" r=\"16\" class=\"lbad w3 pl\"/><circle cx=\"275\" cy=\"300\" r=\"16\" class=\"lbad w3 pl\"/><circle cx=\"320\" cy=\"300\" r=\"16\" class=\"lbad w3 pl\"/></g><text x=\"220\" y=\"356\" class=\"sm mid tbad b\">acinar ถูกทำลาย → ตับอ่อนอักเสบ</text><text x=\"220\" y=\"374\" class=\"xs mid\">ร่วมกับ eruptive xanthoma · lipemia retinalis</text></g><g data-s=\"5\"><g><circle cx=\"143\" cy=\"100\" r=\"11\" class=\"lok w2 pl\"/><circle cx=\"293\" cy=\"100\" r=\"11\" class=\"lok w2 pl\"/></g><rect x=\"10\" y=\"386\" width=\"420\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"402\" class=\"xs mid b\">insulin infusion → กระตุ้น LPL ลด TG ได้เร็ว</text><text x=\"220\" y=\"418\" class=\"xs mid\">ระยะยาว: fenofibrate (PPAR-α → LPL ↑) + งดสุรา + คุมเบาหวาน</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: LPL ย่อย TG ใน chylomicron",
+      "cap": "**LPL** บนผนังหลอดเลือดฝอย (ต้องมี **apoC-II** เป็นตัวกระตุ้น) ย่อย TG ใน chylomicron/VLDL → **FFA เข้ากล้ามเนื้อและไขมัน**"
+     },
+     {
+      "t": "LPL ทำงานไม่ได้ → TG > 1,000",
+      "cap": "ขาด LPL/apoC-II (familial chylomicronemia) หรือ secondary cause ซ้อน (**เบาหวานคุมไม่ได้ สุรา อ้วน ยา**) → chylomicron ค้าง → **TG > 1,000 ซีรัมขุ่นเหมือนนม**"
+     },
+     {
+      "t": "ในตับอ่อน: เลือดหนืด + lipase ย่อย TG",
+      "cap": "chylomicron ขนาดใหญ่ทำให้ **เลือดหนืด ไหลช้าในหลอดเลือดฝอยของตับอ่อน** → lipase ของตับอ่อนย่อย TG ตรงนั้น → **FFA จำนวนมาก**"
+     },
+     {
+      "t": "FFA ทำลาย acinar → pancreatitis",
+      "cap": "FFA เป็นพิษต่อ **acinar cell และหลอดเลือด** → ตับอ่อนอักเสบ · TG ≥ 500 เริ่มเสี่ยง > 1,000 เสี่ยงสูง · amylase อาจไม่สูงเท่าที่ควรเพราะซีรัมขุ่นรบกวนการวัด"
+     },
+     {
+      "t": "รักษา: ปลุก LPL",
+      "cap": "NPO + สารน้ำ + คุมปวด · **insulin infusion กระตุ้น LPL ลด TG ได้เร็ว** (± plasmapheresis) · ระยะยาว **fenofibrate** + งดสุรา + คุมเบาหวาน + ไขมันในอาหารต่ำมาก"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-th-02",
+   "after": "ลำดับการอ่าน",
+   "anim": {
+    "key": "th02-feedback",
+    "title": "Feedback loop อธิบาย TFT ทุกแบบ — primary สวนทาง, central ไปทางเดียวกัน",
+    "svg": "<svg viewBox=\"0 0 440 328\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แกน hypothalamus pituitary thyroid และ negative feedback อธิบายรูปแบบ TFT ได้แก่ primary hypothyroid TSH สูง FT4 ต่ำ primary thyrotoxicosis TSH ต่ำ FT4 สูง และ central hypothyroid TSH ไม่สูงทั้งที่ FT4 ต่ำ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"30\" y=\"14\" width=\"160\" height=\"46\" rx=\"8\" class=\"sk\"/><text x=\"110\" y=\"34\" class=\"sm b mid\">Hypothalamus</text><path d=\"M110,60 L110,92\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"118\" y=\"80\" class=\"xs mu\">TRH</text><rect x=\"30\" y=\"94\" width=\"160\" height=\"46\" rx=\"8\" class=\"sk\"/><text x=\"110\" y=\"114\" class=\"sm b mid\">Pituitary</text><path d=\"M110,140 L110,176\" class=\"lwa w3\" marker-end=\"url(#ah-wa)\"/><text x=\"118\" y=\"162\" class=\"xs twa b\">TSH</text><rect x=\"30\" y=\"178\" width=\"160\" height=\"46\" rx=\"20\" class=\"ac\"/><text x=\"110\" y=\"198\" class=\"sm b mid\">ต่อมไทรอยด์</text><path d=\"M110,224 L110,256\" class=\"lac w3\" marker-end=\"url(#ah-ac)\"/><text x=\"118\" y=\"244\" class=\"xs tac b\">T4 → T3</text><rect x=\"30\" y=\"258\" width=\"160\" height=\"36\" rx=\"8\" class=\"bx\"/><text x=\"110\" y=\"281\" class=\"sm mid\">เนื้อเยื่อ</text><path d=\"M190,240 C246,236 246,124 192,118\" class=\"lbad w2 da\" marker-end=\"url(#ah-bad)\"/><path d=\"M190,240 C276,236 276,40 192,36\" class=\"lbad w2 da\" marker-end=\"url(#ah-bad)\"/><text x=\"196\" y=\"264\" class=\"xs tbad b\">T4/T3 กดกลับ (−)</text><g><rect x=\"282\" y=\"14\" width=\"150\" height=\"48\" rx=\"8\" class=\"bx\"/><text x=\"357\" y=\"34\" class=\"sm b mid\">TSH ปกติ · FT4 ปกติ</text><text x=\"357\" y=\"52\" class=\"xs mid\">euthyroid</text></g><g data-s=\"2\"><rect x=\"282\" y=\"70\" width=\"150\" height=\"48\" rx=\"8\" class=\"wa\"/><text x=\"357\" y=\"90\" class=\"sm b mid\">TSH ↑↑ · FT4 ↓</text><text x=\"357\" y=\"108\" class=\"xs mid\">primary hypothyroid</text></g><g data-s=\"2\" data-x=\"3\"><text x=\"110\" y=\"216\" class=\"xs mid tbad b\">Hashimoto: สร้างไม่ได้</text><text x=\"110\" y=\"132\" class=\"xs mid tbad\">ไม่มี T4 กด → TSH พุ่ง</text><path d=\"M110,140 L110,176\" class=\"lbad w5\"/><text x=\"144\" y=\"162\" class=\"sm tbad b\">↑↑</text></g><g data-s=\"3\"><rect x=\"282\" y=\"126\" width=\"150\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"357\" y=\"146\" class=\"sm b mid\">TSH ↓ · FT4 ↑</text><text x=\"357\" y=\"164\" class=\"xs mid\">primary thyrotoxicosis</text></g><g data-s=\"3\" data-x=\"4\"><g><rect x=\"25\" y=\"173\" width=\"170\" height=\"56\" rx=\"24\" class=\"lbad w2 pl\"/></g><text x=\"110\" y=\"216\" class=\"xs mid tbad b\">Graves/thyroiditis → T4 ↑</text><path d=\"M110,224 L110,256\" class=\"lbad w5\"/><path d=\"M190,240 C246,236 246,124 192,118\" class=\"lbad w3 fl\"/><path d=\"M190,240 C276,236 276,40 192,36\" class=\"lbad w3 fl\"/><text x=\"144\" y=\"162\" class=\"xs twa b\">↓ ถูกกด</text></g><g data-s=\"4\"><rect x=\"282\" y=\"182\" width=\"150\" height=\"48\" rx=\"8\" class=\"ms\"/><text x=\"357\" y=\"202\" class=\"sm b mid\">TSH ไม่สูง · FT4 ↓</text><text x=\"357\" y=\"220\" class=\"xs mid\">central hypothyroid</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"110\" y=\"132\" class=\"xs mid tbad b\">tumor/Sheehan → TSH ต่ำ</text><path d=\"M170,98 L182,110 M182,98 L170,110\" class=\"lbad w3\"/><text x=\"110\" y=\"216\" class=\"xs mid tms b\">ไม่มีคนสั่ง → T4 ↓</text><text x=\"144\" y=\"162\" class=\"xs tbad b\">ต่ำ</text></g><g data-s=\"5\"><rect x=\"282\" y=\"240\" width=\"150\" height=\"76\" rx=\"8\" class=\"ok\"/><text x=\"357\" y=\"260\" class=\"sm b mid\">สวนทาง = primary</text><text x=\"357\" y=\"278\" class=\"xs mid b\">ทางเดียวกัน = central</text><text x=\"357\" y=\"294\" class=\"xs mid\">หรือ TSH-oma / RTHβ</text><text x=\"357\" y=\"309\" class=\"xs mid\">(FT4 ↑ แต่ TSH ไม่ต่ำ)</text><text x=\"110\" y=\"318\" class=\"xs mid b\">อ่าน TSH ก่อน → FT4 → FT3</text></g></svg>",
+    "steps": [
+     {
+      "t": "แกน HPT ปกติ",
+      "cap": "TRH → TSH → ต่อมสร้าง **T4** (เนื้อเยื่อเปลี่ยนเป็น T3) แล้ว **T4/T3 กดกลับ** TRH และ TSH · TSH ตอบสนองแบบ log-linear จึง **ไวที่สุด** ต่อ FT4 ที่ขยับเล็กน้อย"
+     },
+     {
+      "t": "ต่อมเสีย → TSH พุ่ง",
+      "cap": "**Primary hypothyroid** (เช่น Hashimoto): ต่อมสร้าง T4 ไม่ได้ → ไม่มีอะไรกดกลับ → **TSH สูง FT4 ต่ำ** — TSH > 10 คิดถึง primary"
+     },
+     {
+      "t": "ต่อมเร่ง → TSH ถูกกด",
+      "cap": "**Primary thyrotoxicosis** (Graves, thyroiditis, toxic nodule): ฮอร์โมนเกินกดกลับแรง → **TSH ต่ำมาก FT4/FT3 สูง** · FT3 สูงแต่ FT4 ปกติ = T3 toxicosis"
+     },
+     {
+      "t": "ผู้จัดการเสีย → central",
+      "cap": "ต่อมใต้สมอง/hypothalamus เสีย → TSH ออกไม่พอ → **FT4 ต่ำแต่ TSH ไม่สูงตาม (0.5–5)** = central → ตรวจแกนอื่นของต่อมใต้สมอง และ **cortisol ก่อนเริ่ม LT4**"
+     },
+     {
+      "t": "อ่าน TFT จากทิศทาง",
+      "cap": "อ่าน **TSH ก่อน → FT4** · **สวนทางกัน = primary** · **ไปทางเดียวกัน = central** หรือ inappropriate TSH (FT4 สูง TSH ไม่ต่ำ → ตัด assay interference → TSH-oma → RTHβ)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-th-05",
+   "after": "ป้ายชื่อของ Graves — มีแต่ Graves",
+   "anim": {
+    "key": "th05-graves",
+    "title": "Graves: TRAb ปลอมเป็น TSH — จากต่อมถึงตาโปนและหน้าแข้ง",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แอนติบอดี TRAb จับ TSH receptor กระตุ้นต่อมไทรอยด์ไม่หยุดทั้งที่ TSH ถูกกด และกระตุ้น fibroblast หลังลูกตาจนเนื้อเยื่อบวมดันลูกตาโปน รวมทั้ง pretibial myxedema ที่หน้าแข้ง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"16\" y=\"24\" class=\"xs b mu\">ต่อมไทรอยด์</text><rect x=\"22\" y=\"72\" width=\"186\" height=\"100\" rx=\"16\" class=\"bad\" data-s=\"2\"/><rect x=\"30\" y=\"80\" width=\"170\" height=\"84\" rx=\"14\" class=\"ac\" data-x=\"2\"/><rect x=\"62\" y=\"64\" width=\"18\" height=\"16\" rx=\"3\" class=\"ok\"/><rect x=\"142\" y=\"64\" width=\"18\" height=\"16\" rx=\"3\" class=\"ok\"/><text x=\"111\" y=\"74\" class=\"xs mid tok b\">TSHR</text><circle cx=\"71\" cy=\"48\" r=\"8\" class=\"waf\" data-x=\"2\"/><text x=\"84\" y=\"44\" class=\"xs twa b\" data-x=\"2\">TSH</text><text x=\"115\" y=\"112\" class=\"xs mid\" data-x=\"2\">TSH สั่ง → สร้าง T4/T3</text><text x=\"115\" y=\"150\" class=\"xs mid\">follicular cell</text><path d=\"M200,100 L232,100\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><g data-s=\"2\"><path d=\"M151,62 L151,50 M141,38 L151,50 L161,38\" class=\"lbad w3\"/><text x=\"168\" y=\"44\" class=\"xs tbad b\">TRAb</text><text x=\"20\" y=\"44\" class=\"xs twa b\">TSH ถูกกด ↓</text><text x=\"115\" y=\"108\" class=\"xs mid tbad b\">TRAb กระตุ้นไม่หยุด</text><text x=\"115\" y=\"124\" class=\"xs mid\">cAMP ↑ → โต + สร้างฮอร์โมน</text><path d=\"M208,100 L232,100\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"3\"><rect x=\"236\" y=\"14\" width=\"194\" height=\"108\" rx=\"8\" class=\"sk\"/><text x=\"333\" y=\"34\" class=\"sm b mid\">FT4 ↑ · FT3 ↑ · TSH ↓</text><text x=\"333\" y=\"54\" class=\"xs mid\">RAIU สูง (&gt; 30%)</text><text x=\"333\" y=\"70\" class=\"xs mid b tbad\">TRAb บวก (80–95%)</text><text x=\"333\" y=\"86\" class=\"xs mid\">คอพอกทั่วต่อม นุ่ม</text><text x=\"333\" y=\"102\" class=\"xs mid\">+ thyroid bruit</text></g><text x=\"16\" y=\"212\" class=\"xs b mu\">เบ้าตา (TSHR บน orbital fibroblast)</text><path d=\"M200,226 L52,246 L52,346 L200,366\" class=\"ln w3\"/><g data-x=\"4\"><ellipse cx=\"120\" cy=\"296\" rx=\"48\" ry=\"30\" class=\"ms\"/><line x1=\"56\" y1=\"282\" x2=\"170\" y2=\"272\" class=\"lac w5\"/><line x1=\"56\" y1=\"310\" x2=\"170\" y2=\"320\" class=\"lac w5\"/><circle cx=\"196\" cy=\"296\" r=\"32\" class=\"bx\"/><circle cx=\"224\" cy=\"296\" r=\"8\" class=\"inkf\"/></g><g data-s=\"4\"><ellipse cx=\"126\" cy=\"296\" rx=\"64\" ry=\"44\" class=\"ms\"/><line x1=\"56\" y1=\"276\" x2=\"214\" y2=\"264\" class=\"lbad w5\"/><line x1=\"56\" y1=\"316\" x2=\"214\" y2=\"328\" class=\"lbad w5\"/><circle cx=\"236\" cy=\"296\" r=\"32\" class=\"bx\"/><circle cx=\"264\" cy=\"296\" r=\"8\" class=\"inkf\"/><text x=\"126\" y=\"300\" class=\"xs mid b\">GAG ดูดน้ำ + ไขมัน ↑</text><text x=\"244\" y=\"254\" class=\"sm b tbad mid\">ตาโปน</text><text x=\"140\" y=\"386\" class=\"xs mid\">กล้ามเนื้อตาบวม → ภาพซ้อน มองขึ้นลำบาก</text></g><g data-s=\"5\"><text x=\"300\" y=\"222\" class=\"xs b mu\">ผิวหน้าแข้ง</text><rect x=\"300\" y=\"232\" width=\"40\" height=\"124\" rx=\"14\" class=\"bx\"/><ellipse cx=\"330\" cy=\"362\" rx=\"30\" ry=\"11\" class=\"bx\"/><ellipse cx=\"320\" cy=\"300\" rx=\"14\" ry=\"28\" class=\"bad\"/><text x=\"352\" y=\"280\" class=\"xs b tbad\">pretibial</text><text x=\"352\" y=\"294\" class=\"xs b tbad\">myxedema</text><text x=\"352\" y=\"310\" class=\"xs\">กดไม่บุ๋ม</text><text x=\"352\" y=\"324\" class=\"xs\">(GAG ใต้ผิว)</text><text x=\"352\" y=\"346\" class=\"xs b\">+ acropachy</text><text x=\"220\" y=\"410\" class=\"sm mid b tac\">ตาโปน · pretibial myxedema · acropachy = มีแต่ Graves</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: TSH สั่งงานต่อม",
+      "cap": "TSH จับ **TSH receptor (TSHR)** บน follicular cell → สร้างและหลั่ง T4/T3 · เมื่อฮอร์โมนพอ TSH จะลดลงเอง (feedback)"
+     },
+     {
+      "t": "TRAb ปลอมตัวเป็น TSH",
+      "cap": "autoantibody **TRAb กระตุ้น TSHR** เหมือน TSH แต่ **feedback ปิดไม่ได้** → ต่อมโตทั่วทั้งต่อมและสร้างฮอร์โมนไม่หยุด ขณะที่ **TSH ถูกกดต่ำ**"
+     },
+     {
+      "t": "สิ่งที่ตรวจพบ",
+      "cap": "**FT4/FT3 สูง TSH ต่ำ** · RAIU **สูง > 30%** (โรงงานเร่ง ต่างจาก thyroiditis < 10%) · **TRAb บวก** · คอพอกทั่วต่อม นุ่ม + **bruit** จากหลอดเลือดเพิ่ม"
+     },
+     {
+      "t": "TSHR หลังลูกตา → ตาโปน",
+      "cap": "TRAb + T cell กระตุ้น **orbital fibroblast** → GAG ดูดน้ำ ไขมันเพิ่ม กล้ามเนื้อตาบวม ในเบ้าตาที่เป็นกระดูกขยายไม่ได้ → **ลูกตาถูกดันออกหน้า** · แย่ลงเมื่อสูบบุหรี่/หลัง RAI"
+     },
+     {
+      "t": "ป้ายชื่อของ Graves",
+      "cap": "GAG สะสมในหนังแท้หน้าแข้ง → **pretibial myxedema กดไม่บุ๋ม** + acropachy · เห็น **ตาโปนจริง, pretibial myxedema หรือ acropachy** = Graves (ส่วน lid lag เกิดได้ทุกสาเหตุ)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-th-06",
+   "after": "Subacute (granulomatous, giant cell, de Quervain) thyroiditis",
+   "anim": {
+    "key": "th06-subacute",
+    "title": "Subacute thyroiditis สามระยะ — เป็นพิษ → ขาด → ฟื้น",
+    "svg": "<svg viewBox=\"0 0 440 390\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: subacute thyroiditis ไวรัสทำให้ follicle แตก ฮอร์โมนรั่วเป็นระยะเป็นพิษ ตามด้วยระยะขาดฮอร์โมนเมื่อคลังว่าง แล้วฟื้นตัว พร้อมกราฟ FT4 และ TSH สามระยะ\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"90\" cy=\"92\" r=\"52\" class=\"ac\"/><circle cx=\"90\" cy=\"92\" r=\"34\" class=\"ms\" data-x=\"3\"/><circle cx=\"90\" cy=\"92\" r=\"34\" class=\"ms\" data-s=\"4\"/><text x=\"90\" y=\"162\" class=\"xs mid mu\">follicle</text><circle cx=\"40\" cy=\"40\" r=\"5\" class=\"badf pl\"/><circle cx=\"150\" cy=\"46\" r=\"5\" class=\"badf pl\"/><circle cx=\"146\" cy=\"140\" r=\"5\" class=\"badf pl\"/><g data-x=\"2\"><text x=\"176\" y=\"36\" class=\"xs b\">ไวรัส (mumps, coxsackie, flu…) นำมาก่อน</text><text x=\"176\" y=\"54\" class=\"xs\">อักเสบแบบ granuloma (giant cell)</text><text x=\"176\" y=\"72\" class=\"xs\">ไข้ · ต่อมแข็ง กดเจ็บ ปวดร้าวหู</text><text x=\"176\" y=\"90\" class=\"xs b tbad\">ESR &gt; 50 mm/h</text></g><g data-s=\"2\" data-x=\"4\"><rect x=\"110\" y=\"80\" width=\"48\" height=\"24\" rx=\"0\" class=\"bx ns\"/></g><g data-s=\"2\" data-x=\"3\"><circle cx=\"100\" cy=\"92\" r=\"4\" class=\"msf\"><animateMotion dur=\"1.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L66,0\"/></circle><circle cx=\"100\" cy=\"92\" r=\"4\" class=\"msf\"><animateMotion dur=\"1.6s\" begin=\"-0.5s\" repeatCount=\"indefinite\" path=\"M0,0 L66,0\"/></circle><circle cx=\"100\" cy=\"92\" r=\"4\" class=\"msf\"><animateMotion dur=\"1.6s\" begin=\"-1.1s\" repeatCount=\"indefinite\" path=\"M0,0 L66,0\"/></circle><text x=\"176\" y=\"36\" class=\"sm b tbad\">ระยะ 1 · เป็นพิษ 3–6 สัปดาห์</text><text x=\"176\" y=\"56\" class=\"xs\">follicle แตก → ฮอร์โมนเก่ารั่ว</text><text x=\"176\" y=\"74\" class=\"xs b\">FT4 ↑ TSH ↓ · RAIU ต่ำ (&lt; 10%)</text><text x=\"176\" y=\"92\" class=\"xs\">Tg สูง · ATD ไม่ช่วย (ไม่มีการสร้างใหม่)</text></g><g data-s=\"3\" data-x=\"4\"><text x=\"176\" y=\"36\" class=\"sm b twa\">ระยะ 2 · ขาดฮอร์โมน ≤ 6 เดือน</text><text x=\"176\" y=\"56\" class=\"xs\">คลังว่าง + เซลล์ยังสร้างใหม่ไม่ได้</text><text x=\"176\" y=\"74\" class=\"xs b\">FT4 ↓ TSH ↑</text><text x=\"176\" y=\"92\" class=\"xs\">ติดตาม TFT จนฟื้น</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"176\" y=\"36\" class=\"sm b tok\">ระยะ 3 · ฟื้นตัว</text><text x=\"176\" y=\"56\" class=\"xs\">follicle ซ่อมเสร็จ สร้างฮอร์โมนได้</text><text x=\"176\" y=\"74\" class=\"xs b\">TFT กลับปกติ</text><text x=\"176\" y=\"92\" class=\"xs b tbad\">แต่ 5–15% ขาดฮอร์โมนถาวร</text></g><g data-s=\"5\"><text x=\"176\" y=\"36\" class=\"sm b tok\">รักษาที่การอักเสบ</text><text x=\"176\" y=\"56\" class=\"xs\">NSAID ขนาดสูง (ibuprofen 1,200–3,200 mg/วัน)</text><text x=\"176\" y=\"74\" class=\"xs\">ไม่ดีใน 2–3 วัน → prednisolone 40 mg/วัน</text><text x=\"176\" y=\"92\" class=\"xs b\">β-blocker ตามอาการ · ไม่ใช้ ATD</text></g><rect x=\"44\" y=\"250\" width=\"384\" height=\"40\" rx=\"0\" class=\"ok ns\" opacity=\".45\"/><text x=\"424\" y=\"302\" class=\"xs end tok\">ช่วงปกติ</text><line x1=\"44\" y1=\"350\" x2=\"428\" y2=\"350\" class=\"ln w2\"/><line x1=\"44\" y1=\"190\" x2=\"44\" y2=\"350\" class=\"ln w2\"/><text x=\"428\" y=\"366\" class=\"xs end mu\">เวลา →</text><line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"350\" class=\"lmu da\"/><line x1=\"320\" y1=\"190\" x2=\"320\" y2=\"350\" class=\"lmu da\"/><line x1=\"60\" y1=\"376\" x2=\"84\" y2=\"376\" class=\"lbad w3\"/><text x=\"90\" y=\"380\" class=\"xs tbad b\">FT4</text><line x1=\"130\" y1=\"376\" x2=\"154\" y2=\"376\" class=\"lwa w3 da\"/><text x=\"160\" y=\"380\" class=\"xs twa b\">TSH</text><g data-s=\"2\"><text x=\"97\" y=\"204\" class=\"xs mid b tbad\">1 เป็นพิษ</text><path d=\"M44,270 C70,270 78,214 100,214 C124,214 134,258 150,270\" class=\"lbad w3\"/><path d=\"M44,274 C66,274 80,334 104,334 C128,334 140,320 150,304\" class=\"lwa w3 da\"/></g><g data-s=\"3\"><text x=\"235\" y=\"204\" class=\"xs mid b twa\">2 ขาด</text><path d=\"M150,270 C176,312 200,318 235,318 C270,318 298,290 320,270\" class=\"lbad w3\"/><path d=\"M150,304 C172,250 204,226 236,226 C270,226 300,262 320,274\" class=\"lwa w3 da\"/></g><g data-s=\"4\"><text x=\"374\" y=\"204\" class=\"xs mid b tok\">3 ฟื้น</text><path d=\"M320,270 L428,270\" class=\"lbad w3\"/><path d=\"M320,274 L428,274\" class=\"lwa w3 da\"/></g></svg>",
+    "steps": [
+     {
+      "t": "ไวรัส → อักเสบแบบ granuloma",
+      "cap": "หลังติดเชื้อไวรัส (mumps, coxsackie, influenza…) เกิด **granulomatous inflammation** · ไข้ ต่อมแข็ง **กดเจ็บ ปวดร้าวหู/ขากรรไกร** · **ESR > 50**"
+     },
+     {
+      "t": "ระยะเป็นพิษ: โกดังแตก",
+      "cap": "follicle ถูกทำลาย **ฮอร์โมนที่สร้างไว้รั่วออก** → FT4 ↑ TSH ↓ แต่ **RAIU ต่ำ** (เซลล์เสียดูดไอโอดีนไม่ได้ + TSH ถูกกด) · นาน **3–6 สัปดาห์**"
+     },
+     {
+      "t": "ระยะขาด: คลังว่าง",
+      "cap": "ฮอร์โมนที่เก็บไว้หมด เซลล์ที่เสียหายยังสร้างใหม่ไม่ได้ → **FT4 ↓ TSH ↑** ได้นานถึง **6 เดือน**"
+     },
+     {
+      "t": "ระยะฟื้น",
+      "cap": "follicle ซ่อมเสร็จ TFT กลับปกติ · แต่ **5–15% ขาดฮอร์โมนถาวร** — ต่างจาก Graves ที่เป็นพิษต่อเนื่องไม่หยุดเอง"
+     },
+     {
+      "t": "รักษาที่การอักเสบ ไม่ใช่การสร้าง",
+      "cap": "**NSAID ขนาดสูง** · ไม่ดีขึ้นใน 2–3 วัน → **prednisolone 40 mg/วัน** 1–2 สัปดาห์แล้ว taper · β-blocker ตามอาการ · **ไม่ใช้ ATD** เพราะไม่มีการสร้างใหม่ให้ยับยั้ง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-th-10",
+   "after": "ทำไมถึงมีอาการนี้ — thyroid storm",
+   "anim": {
+    "key": "th10-storm",
+    "title": "Thyroid storm — ยาแต่ละตัวตัดวงจรตรงไหน และทำไมต้องเรียงลำดับ",
+    "svg": "<svg viewBox=\"0 0 440 428\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: thyroid storm และจุดที่ยาแต่ละตัวตัดวงจร propranolol ที่ beta receptor PTU ที่ TPO และการเปลี่ยน T4 เป็น T3 iodine หยุดการหลั่ง hydrocortisone ลด T4 เป็น T3 และห้าม aspirin\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"22\" class=\"xs mid b tms\">ตัวกระตุ้น: หยุดยาเอง · ติดเชื้อ · ผ่าตัด · คลอด · RAI · สารทึบรังสี</text><rect x=\"10\" y=\"40\" width=\"168\" height=\"178\" rx=\"18\" class=\"ac\"/><text x=\"94\" y=\"62\" class=\"sm b mid\">ต่อมไทรอยด์</text><text x=\"94\" y=\"88\" class=\"xs mid\">I⁻ เข้าต่อม (NIS)</text><path d=\"M94,94 L94,110\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"94\" y=\"126\" class=\"xs mid b\">TPO: สร้าง T4/T3</text><path d=\"M94,132 L94,148\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"94\" y=\"164\" class=\"xs mid\">เก็บใน colloid</text><path d=\"M94,170 L94,186\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"94\" y=\"202\" class=\"xs mid b\">หลั่งออก</text><path d=\"M130,198 L204,198\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><rect x=\"206\" y=\"60\" width=\"100\" height=\"80\" rx=\"8\" class=\"bx\"/><text x=\"256\" y=\"84\" class=\"sm b mid\">เนื้อเยื่อ</text><text x=\"256\" y=\"104\" class=\"xs mid\">T4 → T3 (D1)</text><rect x=\"206\" y=\"170\" width=\"100\" height=\"56\" rx=\"8\" class=\"bx\"/><text x=\"250\" y=\"192\" class=\"sm b mid\">T4 ในเลือด</text><text x=\"250\" y=\"212\" class=\"xs mid mu\">(จับ TBG)</text><path d=\"M222,170 L222,142\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><path d=\"M306,96 L334,96\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><rect x=\"336\" y=\"60\" width=\"94\" height=\"166\" rx=\"14\" class=\"bad\"/><g><rect x=\"332\" y=\"56\" width=\"102\" height=\"174\" rx=\"16\" class=\"lbad w2 pl\"/></g><text x=\"383\" y=\"84\" class=\"xs mid b\">T3 + β-receptor</text><text x=\"383\" y=\"106\" class=\"xs mid\">ไข้สูง</text><text x=\"383\" y=\"124\" class=\"xs mid\">HR ↑↑ · AF</text><text x=\"383\" y=\"142\" class=\"xs mid\">หัวใจล้มเหลว</text><text x=\"383\" y=\"160\" class=\"xs mid\">สับสน ชัก</text><text x=\"383\" y=\"178\" class=\"xs mid\">GI · ตัวเหลือง</text><g data-s=\"2\"><line x1=\"320\" y1=\"86\" x2=\"320\" y2=\"106\" class=\"lbad w5\"/><g><circle cx=\"320\" cy=\"72\" r=\"10\" class=\"bad\"/><text x=\"320\" y=\"76\" class=\"xs mid b\">1</text></g><g><circle cx=\"226\" cy=\"124\" r=\"10\" class=\"bad\"/><text x=\"226\" y=\"128\" class=\"xs mid b\">1</text></g><g><circle cx=\"24\" cy=\"248\" r=\"10\" class=\"bad\"/><text x=\"24\" y=\"252\" class=\"xs mid b\">1</text></g><text x=\"40\" y=\"252\" class=\"xs\">propranolol 60–80 mg q4h — ปิด β-receptor + ลด T4→T3</text></g><g data-s=\"3\"><line x1=\"82\" y1=\"140\" x2=\"106\" y2=\"140\" class=\"lbad w5\"/><g><circle cx=\"122\" cy=\"140\" r=\"10\" class=\"bad\"/><text x=\"122\" y=\"144\" class=\"xs mid b\">2</text></g><g><circle cx=\"250\" cy=\"124\" r=\"10\" class=\"bad\"/><text x=\"250\" y=\"128\" class=\"xs mid b\">2</text></g><g><circle cx=\"24\" cy=\"272\" r=\"10\" class=\"bad\"/><text x=\"24\" y=\"276\" class=\"xs mid b\">2</text></g><text x=\"40\" y=\"276\" class=\"xs\">PTU 500–1,000 mg แล้ว 250 mg q4h — หยุด TPO + ลด T4→T3</text></g><g data-s=\"4\"><line x1=\"192\" y1=\"188\" x2=\"192\" y2=\"208\" class=\"lbad w5\"/><g><circle cx=\"192\" cy=\"176\" r=\"10\" class=\"bad\"/><text x=\"192\" y=\"180\" class=\"xs mid b\">3</text></g><g><circle cx=\"24\" cy=\"296\" r=\"10\" class=\"bad\"/><text x=\"24\" y=\"300\" class=\"xs mid b\">3</text></g><text x=\"40\" y=\"300\" class=\"xs\">iodine (SSKI/Lugol) ≥ 1 ชม.หลัง PTU — หยุดการหลั่ง</text></g><g data-s=\"5\"><g><circle cx=\"274\" cy=\"124\" r=\"10\" class=\"bad\"/><text x=\"274\" y=\"128\" class=\"xs mid b\">4</text></g><g><circle cx=\"24\" cy=\"320\" r=\"10\" class=\"bad\"/><text x=\"24\" y=\"324\" class=\"xs mid b\">4</text></g><text x=\"40\" y=\"324\" class=\"xs\">hydrocortisone 300 mg แล้ว 100 mg q8h — ลด T4→T3 + adrenal</text></g><g data-s=\"6\"><g><circle cx=\"292\" cy=\"184\" r=\"10\" class=\"bad\"/><text x=\"292\" y=\"188\" class=\"xs mid b\">5</text></g><g><circle cx=\"24\" cy=\"344\" r=\"10\" class=\"bad\"/><text x=\"24\" y=\"348\" class=\"xs mid b\">5</text></g><text x=\"40\" y=\"348\" class=\"xs\">ไข้: paracetamol + cooling · ห้าม aspirin (แย่ง T4 จาก TBG)</text></g><g data-s=\"6\"><rect x=\"10\" y=\"370\" width=\"420\" height=\"52\" rx=\"8\" class=\"sk\"/><text x=\"220\" y=\"390\" class=\"sm mid b\">β-blocker → thionamide → iodine → steroid</text><text x=\"220\" y=\"410\" class=\"xs mid\">+ รักษาตัวกระตุ้น · สารน้ำ · ICU · Burch–Wartofsky ≥ 45</text></g></svg>",
+    "steps": [
+     {
+      "t": "Storm: ฮอร์โมนพุ่ง + อวัยวะล้ม",
+      "cap": "ตัวกระตุ้น (**หยุดยาเอง** ติดเชื้อ ผ่าตัด คลอด RAI สารทึบรังสี) → ฮอร์โมนอิสระ/catecholamine พุ่ง → **ไข้สูง HR เร็วมาก/AF หัวใจล้ม สับสน ชัก** · Burch–Wartofsky ≥ 45"
+     },
+     {
+      "t": "ยา 1: Propranolol — คุมหัวใจก่อน",
+      "cap": "**propranolol 60–80 mg ทุก 4 ชม.** (หรือ esmolol) ปิด β-receptor คุมชีพจร และขนาดสูง **ลด T4 → T3** ด้วย"
+     },
+     {
+      "t": "ยา 2: PTU — หยุดการสร้าง",
+      "cap": "**PTU** 500–1,000 mg แล้ว 250 mg ทุก 4 ชม. ยับยั้ง **TPO** และ **ลด T4 → T3 นอกต่อม** (หรือ MMI 60–80 mg/วัน)"
+     },
+     {
+      "t": "ยา 3: Iodine — หยุดการหลั่ง (หลัง PTU ≥ 1 ชม.)",
+      "cap": "SSKI/Lugol ยับยั้งการหลั่งฮอร์โมนที่เก็บไว้ · **ต้องให้หลัง thionamide อย่างน้อย 1 ชม.** ไม่เช่นนั้นไอโอดีนจะกลายเป็นวัตถุดิบสร้างฮอร์โมนเพิ่ม"
+     },
+     {
+      "t": "ยา 4: Hydrocortisone",
+      "cap": "**hydrocortisone 300 mg แล้ว 100 mg ทุก 8 ชม.** ลด T4 → T3 และชดเชย **adrenal reserve ที่ไม่พอ** ในภาวะเครียดรุนแรง"
+     },
+     {
+      "t": "ข้อ 5: ลดไข้ถูกวิธี + ภาพรวม",
+      "cap": "**paracetamol + cooling ห้าม aspirin** (แย่ง T4 ออกจาก TBG → free T4 ↑) · ลำดับ **β-blocker → thionamide → iodine → steroid** + รักษาตัวกระตุ้น สารน้ำ ใน ICU"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-dm-06",
+   "after": "ทำไมทารกถึงมีปัญหา — กลไก Pedersen",
+   "anim": {
+    "key": "dm06-pedersen",
+    "title": "กลไก Pedersen — glucose ข้ามรก insulin ไม่ข้าม",
+    "svg": "<svg viewBox=\"0 0 440 410\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: กลไก Pedersen glucose ของแม่ผ่านรกแต่ insulin ไม่ผ่าน ตับอ่อนทารกหลั่ง insulin มาก ทารกตัวโต เมื่อตัดสายสะดือ glucose หยุดแต่ insulin ยังสูง เกิดน้ำตาลต่ำหลังคลอด\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"50\" width=\"130\" height=\"140\" rx=\"8\" class=\"ac\"/><text x=\"75\" y=\"72\" class=\"sm b mid\">แม่ (GDM)</text><text x=\"75\" y=\"92\" class=\"xs mid\">ฮอร์โมนรก</text><text x=\"75\" y=\"106\" class=\"xs mid\">hPL · progesterone</text><text x=\"75\" y=\"120\" class=\"xs mid\">· cortisol</text><text x=\"75\" y=\"138\" class=\"xs mid b tbad\">→ ดื้อ insulin</text><text x=\"75\" y=\"160\" class=\"sm mid b tms\">glucose ↑</text><rect x=\"156\" y=\"38\" width=\"40\" height=\"170\" rx=\"14\" class=\"ms\"/><text x=\"176\" y=\"66\" class=\"sm b mid\">รก</text><rect x=\"214\" y=\"50\" width=\"216\" height=\"140\" rx=\"8\" class=\"wa\"/><text x=\"226\" y=\"72\" class=\"sm b\">ทารก</text><rect x=\"226\" y=\"138\" width=\"82\" height=\"38\" rx=\"8\" class=\"ok\"/><text x=\"267\" y=\"154\" class=\"xs mid b\">ตับอ่อนทารก</text><text x=\"267\" y=\"168\" class=\"xs mid\">β cell</text><ellipse cx=\"366\" cy=\"120\" rx=\"36\" ry=\"40\" class=\"bx\" data-x=\"3\"/><ellipse cx=\"366\" cy=\"120\" rx=\"52\" ry=\"56\" class=\"ms\" data-s=\"3\"/><text x=\"366\" y=\"124\" class=\"sm b mid tms\" data-s=\"3\">ตัวโต</text><g data-s=\"2\" data-x=\"4\"><circle cx=\"140\" cy=\"100\" r=\"5\" class=\"msf\"><animateMotion dur=\"2.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L200,4\"/></circle><circle cx=\"140\" cy=\"100\" r=\"5\" class=\"msf\"><animateMotion dur=\"2.6s\" begin=\"-0.9s\" repeatCount=\"indefinite\" path=\"M0,0 L200,4\"/></circle><circle cx=\"140\" cy=\"100\" r=\"5\" class=\"msf\"><animateMotion dur=\"2.6s\" begin=\"-1.7s\" repeatCount=\"indefinite\" path=\"M0,0 L200,4\"/></circle></g><g data-s=\"2\"><text x=\"176\" y=\"30\" class=\"xs mid b tms\">glucose ผ่านรก</text><circle cx=\"140\" cy=\"172\" r=\"5\" class=\"okf\"><animateMotion dur=\"1.2s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L14,0\"/></circle><path d=\"M160,166 L172,178 M172,166 L160,178\" class=\"lbad w3\"/><text x=\"176\" y=\"226\" class=\"xs mid b tbad\">insulin ไม่ผ่านรก</text></g><g data-s=\"3\"><g><rect x=\"222\" y=\"134\" width=\"90\" height=\"46\" rx=\"10\" class=\"lok w2 pl\"/></g><circle cx=\"300\" cy=\"150\" r=\"4\" class=\"okf\"><animateMotion dur=\"1.4s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L44,-24\"/></circle><circle cx=\"300\" cy=\"164\" r=\"4\" class=\"okf\"><animateMotion dur=\"1.4s\" begin=\"-0.7s\" repeatCount=\"indefinite\" path=\"M0,0 L50,-4\"/></circle><text x=\"300\" y=\"208\" class=\"xs mid tok b\">β cell โต → insulin ↑↑</text><text x=\"16\" y=\"252\" class=\"xs\">insulin = growth factor → ตัวโต (macrosomia) → ไหล่ติด</text><text x=\"16\" y=\"268\" class=\"xs\">insulin ต้าน cortisol → surfactant ↓ → RDS</text><text x=\"16\" y=\"284\" class=\"xs\">ใช้ O₂ มาก → EPO ↑ → polycythemia → ตัวเหลือง</text></g><g data-s=\"4\"><path d=\"M164,106 L188,130 M188,106 L164,130\" class=\"lbad w5\"/><text x=\"176\" y=\"148\" class=\"xs mid tbad b\">ตัด</text><g><ellipse cx=\"366\" cy=\"120\" rx=\"58\" ry=\"62\" class=\"lbad w2 pl\"/></g><text x=\"16\" y=\"304\" class=\"xs b tbad\">คลอด: glucose จากแม่หยุดทันที แต่ insulin ทารกยังสูงค้าง</text><text x=\"16\" y=\"320\" class=\"xs b tbad\">→ น้ำตาลต่ำหลังคลอด (neonatal hypoglycemia)</text></g><g data-s=\"5\"><rect x=\"10\" y=\"332\" width=\"420\" height=\"72\" rx=\"8\" class=\"sk\"/><text x=\"20\" y=\"352\" class=\"xs\">แม่: ครรภ์เป็นพิษ · ผ่าคลอด · ครรภ์แฝดน้ำ · 50% เป็น DM ใน 10 ปี</text><text x=\"20\" y=\"370\" class=\"xs b\">คุมอาหาร/ออกกำลัง → ไม่ถึงเป้าใช้ insulin</text><text x=\"20\" y=\"388\" class=\"xs\">หลังคลอด OGTT 4–12 สัปดาห์ แล้วคัดกรองต่อทุก 1–3 ปี</text></g></svg>",
+    "steps": [
+     {
+      "t": "แม่ดื้อ insulin จากฮอร์โมนรก",
+      "cap": "ไตรมาส 2–3 รกหลั่ง **hPL, progesterone, cortisol** → แม่ดื้อ insulin และตับอ่อนแม่ชดเชยไม่พอ → **glucose ของแม่สูง**"
+     },
+     {
+      "t": "Glucose ผ่านรก — insulin ไม่ผ่าน",
+      "cap": "**glucose ข้ามรกได้** (จุดเหลือง) แต่ **insulin ของแม่ข้ามไม่ได้** → ทารกได้รับน้ำตาลสูงและต้องจัดการเอง"
+     },
+     {
+      "t": "ทารก insulin สูง → ตัวโต RDS polycythemia",
+      "cap": "β cell ทารกโตและหลั่ง **insulin มาก** · insulin เป็น growth factor → **macrosomia/ไหล่ติด** · ต้าน cortisol → **RDS** · ใช้ O₂ มาก → EPO ↑ → **polycythemia → ตัวเหลือง**"
+     },
+     {
+      "t": "ตัดสายสะดือ → น้ำตาลต่ำ",
+      "cap": "หลังคลอด glucose จากแม่ **หยุดทันที** แต่ทารกยังมี **insulin สูงค้าง** → **neonatal hypoglycemia**"
+     },
+     {
+      "t": "ผลต่อแม่และการดูแล",
+      "cap": "แม่เสี่ยงครรภ์เป็นพิษ ผ่าคลอด ครรภ์แฝดน้ำ และ **50% เป็นเบาหวานใน 10 ปี** · ไม่ถึงเป้าใช้ **insulin** · **OGTT 4–12 สัปดาห์หลังคลอด** แล้วคัดกรองต่อ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-dm-07",
+   "after": "DKA เกิดอย่างไร",
+   "anim": {
+    "key": "dm07-dka",
+    "title": "DKA — ขาด insulin แล้วแตกเป็นสองสาย: น้ำตาล/ขาดน้ำ และ ketone/กรด",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: DKA ขาดอินซูลินร่วมกับฮอร์โมนต้าน ทำให้ตับปล่อยกลูโคส น้ำตาลสูงขับปัสสาวะจนขาดน้ำ ไขมันสลายเป็นกรดไขมันเข้าตับเปลี่ยนเป็น ketone เกิดกรด anion gap สูง หายใจ Kussmaul และโพแทสเซียมย้ายออกนอกเซลล์\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"110\" y=\"10\" width=\"220\" height=\"48\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"30\" class=\"sm b mid\">insulin ↓↓</text><text x=\"220\" y=\"48\" class=\"xs mid\">glucagon · cortisol · catecholamine ↑</text><g data-s=\"2\"><path d=\"M290,58 L320,80\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"236\" y=\"82\" width=\"194\" height=\"48\" rx=\"8\" class=\"bx\"/><text x=\"333\" y=\"102\" class=\"sm b mid\">ตับปล่อยกลูโคส ↑</text><text x=\"333\" y=\"120\" class=\"xs mid\">กล้ามเนื้อดึงกลูโคสไม่เข้า</text><path d=\"M333,130 L333,150\" class=\"ln w2\" marker-end=\"url(#ah)\"/><rect x=\"236\" y=\"152\" width=\"194\" height=\"40\" rx=\"8\" class=\"ms\"/><text x=\"333\" y=\"177\" class=\"sm b mid\">glucose สูง (≥ 200)</text><path d=\"M333,192 L333,212\" class=\"ln w2\" marker-end=\"url(#ah)\"/><rect x=\"236\" y=\"214\" width=\"194\" height=\"62\" rx=\"8\" class=\"wa\"/><text x=\"333\" y=\"232\" class=\"sm b mid\">osmotic diuresis</text><text x=\"333\" y=\"250\" class=\"xs mid\">ปัสสาวะมาก → ขาดน้ำ ~6 L</text><text x=\"333\" y=\"266\" class=\"xs mid\">ชีพจรเร็ว BP ต่ำ · ซึม (osm ↑)</text><circle cx=\"300\" cy=\"192\" r=\"4\" class=\"msf\"><animateMotion dur=\"1.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,84\"/></circle><circle cx=\"366\" cy=\"192\" r=\"4\" class=\"msf\"><animateMotion dur=\"1.6s\" begin=\"-0.8s\" repeatCount=\"indefinite\" path=\"M0,0 L0,84\"/></circle></g><g data-s=\"3\"><path d=\"M150,58 L120,80\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"10\" y=\"82\" width=\"194\" height=\"48\" rx=\"8\" class=\"ms\"/><text x=\"107\" y=\"102\" class=\"sm b mid\">ไขมันสลาย (lipolysis)</text><text x=\"107\" y=\"120\" class=\"xs mid\">FFA ไหลเข้าตับ</text><path d=\"M107,130 L107,152\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><circle cx=\"107\" cy=\"130\" r=\"3\" class=\"msf\"><animateMotion dur=\"1s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,22\"/></circle><rect x=\"10\" y=\"152\" width=\"194\" height=\"40\" rx=\"8\" class=\"ac\"/><text x=\"107\" y=\"168\" class=\"xs b mid\">ตับ (glucagon สูง)</text><text x=\"107\" y=\"185\" class=\"sm b mid\">FFA → ketone</text></g><g data-s=\"4\"><path d=\"M107,192 L107,212\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"10\" y=\"214\" width=\"194\" height=\"62\" rx=\"8\" class=\"bad\"/><text x=\"107\" y=\"232\" class=\"sm b mid\">β-OHB · acetoacetate</text><text x=\"107\" y=\"250\" class=\"xs mid\">HCO₃ ↓ · anion gap ↑</text><text x=\"107\" y=\"266\" class=\"xs mid b\">pH &lt; 7.3</text><path d=\"M56,276 L54,296\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"53\" y1=\"298\" x2=\"53\" y2=\"310\" class=\"ln w2\"/><ellipse cx=\"38\" cy=\"332\" rx=\"14\" ry=\"24\" class=\"wa\"><animate attributeName=\"ry\" values=\"19;28;19\" dur=\"1.3s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"68\" cy=\"332\" rx=\"14\" ry=\"24\" class=\"wa\"><animate attributeName=\"ry\" values=\"19;28;19\" dur=\"1.3s\" repeatCount=\"indefinite\"/></ellipse><text x=\"92\" y=\"316\" class=\"xs b\">Kussmaul: หายใจลึกเร็ว</text><text x=\"92\" y=\"332\" class=\"xs\">ระบาย CO₂ ชดเชยกรด</text><text x=\"92\" y=\"348\" class=\"xs\">ลมหายใจกลิ่น acetone</text></g><g data-s=\"5\"><path d=\"M333,276 L333,288\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"230\" y=\"290\" width=\"200\" height=\"90\" rx=\"8\" class=\"sk\"/><text x=\"330\" y=\"310\" class=\"sm b mid\">K⁺ ออกจากเซลล์</text><text x=\"330\" y=\"328\" class=\"xs mid\">ไม่มี insulin + กรด + osm ↑</text><text x=\"330\" y=\"344\" class=\"xs mid\">→ serum K ปกติ/สูง</text><text x=\"330\" y=\"362\" class=\"xs mid tbad b\">แต่ K รวมพร่อง (ปัสสาวะขับทิ้ง)</text></g><g data-s=\"6\"><rect x=\"10\" y=\"392\" width=\"420\" height=\"42\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"410\" class=\"sm b mid\">glucose ≥ 200 + β-OHB ≥ 3 + pH &lt; 7.3 / HCO₃ &lt; 18</text><text x=\"220\" y=\"426\" class=\"xs mid\">ซึมสัมพันธ์กับ osmolality · หาตัวกระตุ้น (ติดเชื้อ ขาด insulin)</text></g></svg>",
+    "steps": [
+     {
+      "t": "ขาด insulin + ฮอร์โมนต้าน",
+      "cap": "ตัวกระตุ้น (**ติดเชื้อ ขาด insulin** T1 รายใหม่ MI ยา SGLT2i) → **insulin ต่ำมาก** ร่วมกับ **glucagon, cortisol, catecholamine สูง**"
+     },
+     {
+      "t": "น้ำตาลสูง → ขาดน้ำ",
+      "cap": "ตับปล่อยกลูโคส (glycogenolysis + gluconeogenesis) ขณะกล้ามเนื้อดึงไม่เข้า → glucose เกิน renal threshold → **osmotic diuresis เสียน้ำ ~6 L** → ชีพจรเร็ว BP ต่ำ"
+     },
+     {
+      "t": "ไขมันสลาย → ketone",
+      "cap": "ไม่มี insulin ยับยั้ง **lipolysis** → FFA ไหลเข้าตับ ซึ่งมี glucagon สูงจึงเปลี่ยน FFA เป็น **ketone (β-OHB, acetoacetate)**"
+     },
+     {
+      "t": "กรด ketone → Kussmaul",
+      "cap": "ketoacid กิน HCO₃ → **high anion gap metabolic acidosis** → หายใจ **Kussmaul** ลึกเร็วระบาย CO₂ · acetoacetate สลายเป็น **acetone** กลิ่นผลไม้"
+     },
+     {
+      "t": "K ในเลือดหลอกตา",
+      "cap": "ขาด insulin + กรด + osmolality สูง ดึง **K ออกจากเซลล์** → serum K ปกติ/สูง ทั้งที่ **K รวมพร่อง** จากปัสสาวะ — ระวังเมื่อเริ่ม insulin"
+     },
+     {
+      "t": "เกณฑ์วินิจฉัย (consensus 2024)",
+      "cap": "**glucose ≥ 200** (หรือเคยเป็น DM) + **β-OHB ≥ 3.0** + **pH < 7.3 และ/หรือ HCO₃ < 18** · ซึมสัมพันธ์กับ osmolality · HHS ต่างตรงที่ insulin เหลือพอหยุด ketone"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-dm-08",
+   "after": "ทำไม K ถึงต้องระวังที่สุด",
+   "anim": {
+    "key": "dm08-kshift",
+    "title": "K ใน DKA — ค่าในเลือดปกติ แต่ร่างกายพร่อง",
+    "svg": "<svg viewBox=\"0 0 440 414\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: โพแทสเซียมใน DKA ย้ายออกจากเซลล์ทำให้ค่าในเลือดดูปกติหรือสูง ไตขับทิ้งจนโพแทสเซียมรวมพร่อง เมื่อให้อินซูลินโพแทสเซียมวิ่งกลับเข้าเซลล์ ค่าในเลือดตกฮวบ จึงต้องดูโพแทสเซียมก่อนเริ่มอินซูลิน\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"22\" class=\"xs mid b\" data-x=\"2\">ปกติ: K⁺ ~98% อยู่ในเซลล์</text><text x=\"220\" y=\"22\" class=\"xs mid b tms\" data-s=\"2\" data-x=\"3\">DKA: K⁺ ย้ายออกนอกเซลล์</text><text x=\"220\" y=\"22\" class=\"xs mid b tbad\" data-s=\"3\" data-x=\"4\">ปัสสาวะขับ K⁺ ทิ้ง → K รวมพร่อง</text><text x=\"220\" y=\"22\" class=\"xs mid b tbad\" data-s=\"4\" data-x=\"5\">เริ่ม insulin: K⁺ กลับเข้าเซลล์เร็ว → serum K ↓↓</text><text x=\"220\" y=\"22\" class=\"xs mid b tbad\" data-s=\"5\">กฎ: ดู K ก่อนเริ่ม insulin เสมอ</text><circle cx=\"398\" cy=\"46\" r=\"6\" class=\"inkf\"/><text x=\"410\" y=\"50\" class=\"xs b\">= K⁺</text><circle cx=\"130\" cy=\"170\" r=\"104\" class=\"ok\"/><text x=\"130\" y=\"92\" class=\"sm b mid tok\">ในเซลล์</text><circle cx=\"90\" cy=\"130\" r=\"6\" class=\"inkf\"/><circle cx=\"170\" cy=\"135\" r=\"6\" class=\"inkf\"/><circle cx=\"120\" cy=\"165\" r=\"6\" class=\"inkf\"/><circle cx=\"100\" cy=\"205\" r=\"6\" class=\"inkf\"/><circle cx=\"180\" cy=\"200\" r=\"6\" class=\"inkf\"/><circle cx=\"130\" cy=\"120\" r=\"6\" class=\"inkf\" data-x=\"2\"/><circle cx=\"80\" cy=\"170\" r=\"6\" class=\"inkf\" data-x=\"2\"/><circle cx=\"160\" cy=\"175\" r=\"6\" class=\"inkf\" data-x=\"2\"/><circle cx=\"140\" cy=\"210\" r=\"6\" class=\"inkf\" data-x=\"2\"/><circle cx=\"120\" cy=\"240\" r=\"6\" class=\"inkf\" data-x=\"3\"/><circle cx=\"70\" cy=\"210\" r=\"6\" class=\"inkf\" data-x=\"3\"/><circle cx=\"130\" cy=\"120\" r=\"6\" class=\"inkf\" data-s=\"4\"/><circle cx=\"80\" cy=\"170\" r=\"6\" class=\"inkf\" data-s=\"4\"/><circle cx=\"160\" cy=\"175\" r=\"6\" class=\"inkf\" data-s=\"4\"/><circle cx=\"140\" cy=\"210\" r=\"6\" class=\"inkf\" data-s=\"4\"/><rect x=\"270\" y=\"70\" width=\"160\" height=\"110\" rx=\"8\" class=\"bad\"/><text x=\"350\" y=\"92\" class=\"sm b mid\">เลือด (serum K)</text><text x=\"350\" y=\"142\" class=\"lg b mid\" data-x=\"2\">ปกติ</text><text x=\"350\" y=\"142\" class=\"lg b mid tms\" data-s=\"2\" data-x=\"4\">ปกติ/สูง</text><g data-s=\"4\"><text x=\"350\" y=\"142\" class=\"lg b mid tbad pl\">ต่ำ ↓↓</text></g><rect x=\"280\" y=\"214\" width=\"150\" height=\"60\" rx=\"8\" class=\"wa\"/><text x=\"355\" y=\"238\" class=\"sm b mid\">ไต</text><g data-s=\"2\" data-x=\"4\"><path d=\"M226,152 L268,152\" class=\"lms w3 fl\" marker-end=\"url(#ah-ms)\"/><circle cx=\"200\" cy=\"152\" r=\"6\" class=\"inkf\"><animateMotion dur=\"1.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L100,8\"/></circle><circle cx=\"300\" cy=\"162\" r=\"6\" class=\"inkf\"/><circle cx=\"330\" cy=\"162\" r=\"6\" class=\"inkf\"/><circle cx=\"370\" cy=\"162\" r=\"6\" class=\"inkf\"/><circle cx=\"404\" cy=\"162\" r=\"6\" class=\"inkf\"/><text x=\"16\" y=\"300\" class=\"xs\">ขาด insulin · กรด (H⁺ เข้า K⁺ ออก)</text><text x=\"16\" y=\"316\" class=\"xs\">· osmolality สูงลากน้ำและ K ออก</text></g><g data-s=\"3\" data-x=\"5\"><path d=\"M355,180 L355,212\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><path d=\"M355,274 L355,300\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"355\" cy=\"184\" r=\"5\" class=\"inkf\"><animateMotion dur=\"1.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,116\"/></circle><text x=\"355\" y=\"258\" class=\"xs mid\">osmotic diuresis</text><text x=\"355\" y=\"316\" class=\"xs mid tbad b\">K⁺ ออกทางปัสสาวะ</text></g><g data-s=\"3\" data-x=\"4\"><text x=\"130\" y=\"254\" class=\"sm mid tbad b\">K รวมพร่อง</text></g><g data-s=\"4\" data-x=\"5\"><path d=\"M268,124 L228,124\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><circle cx=\"300\" cy=\"124\" r=\"6\" class=\"inkf\"><animateMotion dur=\"1.6s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L-120,0\"/></circle><text x=\"16\" y=\"300\" class=\"xs tok b\">insulin → Na⁺/K⁺-ATPase + แก้กรด + สารน้ำ</text><text x=\"16\" y=\"316\" class=\"xs tbad b\">K⁺ วิ่งกลับเข้าเซลล์ → เสี่ยงหัวใจเต้นผิดจังหวะ</text></g><g data-s=\"5\"><rect x=\"10\" y=\"330\" width=\"420\" height=\"78\" rx=\"8\" class=\"sk\"/><text x=\"20\" y=\"350\" class=\"sm b tbad\">ดู K ก่อนเริ่ม insulin</text><text x=\"20\" y=\"368\" class=\"xs\">K &lt; 3.3 → ให้ K ก่อน ยังไม่เริ่ม insulin</text><text x=\"20\" y=\"385\" class=\"xs\">K 3.3–5.2 → ผสม K 20–30 mEq ต่อสารน้ำ 1 L</text><text x=\"20\" y=\"402\" class=\"xs\">K &gt; 5.2 → ยังไม่ให้ K เช็คทุก 2 ชม.</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: K อยู่ในเซลล์",
+      "cap": "K⁺ ราว 98% อยู่ในเซลล์ โดย **Na⁺/K⁺-ATPase ที่ insulin กระตุ้น** ช่วยดึงไว้ · ค่าในเลือดเป็นเพียงส่วนน้อยที่มองเห็น"
+     },
+     {
+      "t": "DKA: K ไหลออกนอกเซลล์",
+      "cap": "**ขาด insulin + กรด + osmolality สูง** ดึง K⁺ ออกนอกเซลล์ → serum K **ปกติหรือสูง** แม้ร่างกายกำลังเสีย K"
+     },
+     {
+      "t": "ไตขับ K ทิ้ง → K รวมพร่อง",
+      "cap": "**osmotic diuresis** (± อาเจียน) ขับ K ที่ออกมาในเลือดทิ้งทางปัสสาวะ → **K รวมในร่างกายพร่องมาก** ทั้งที่ตัวเลขในเลือดยังดูปกติ"
+     },
+     {
+      "t": "เริ่ม insulin: K วิ่งกลับเข้าเซลล์",
+      "cap": "insulin กระตุ้น Na⁺/K⁺-ATPase + แก้กรด + สารน้ำเจือจาง → K⁺ กลับเข้าเซลล์เร็ว → **serum K ตกฮวบ** → เสี่ยง **หัวใจเต้นผิดจังหวะ**"
+     },
+     {
+      "t": "ดู K ก่อน insulin",
+      "cap": "**K < 3.3** ให้ K ก่อน ห้ามเริ่ม insulin · **3.3–5.2** ผสม K 20–30 mEq/L · **> 5.2** ยังไม่ให้ K เช็คทุก 2 ชม. · bicarbonate (เฉพาะ pH < 6.9) ก็ทำให้ K ต่ำได้"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "endo-dm-11",
+   "after": "ทำไมถึงเกิด — กลไกของแต่ละระยะ",
+   "anim": {
+    "key": "dm11-hyperfilt",
+    "title": "Hyperfiltration ในเบาหวาน — และทำไม SGLT2i กับ ACEi/ARB ปกป้องไต",
+    "svg": "<svg viewBox=\"0 0 440 418\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: diabetic nephropathy น้ำตาลสูงทำให้ SGLT2 ดูดกลับโซเดียมมาก macula densa ได้เกลือน้อย afferent arteriole ขยาย angiotensin II หด efferent แรงดันใน glomerulus สูง กรองเกิน albumin รั่ว และยา SGLT2 inhibitor กับ ACEi ARB ลดแรงดัน\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"24\" y=\"100\" class=\"xs b mu\">afferent arteriole (เข้า)</text><text x=\"24\" y=\"210\" class=\"xs b mu\">efferent arteriole (ออก)</text><rect x=\"20\" y=\"118\" width=\"152\" height=\"20\" rx=\"4\" class=\"ac\" data-x=\"3\"/><rect x=\"20\" y=\"164\" width=\"152\" height=\"16\" rx=\"4\" class=\"ac\" data-x=\"3\"/><g data-s=\"3\" data-x=\"5\"><rect x=\"20\" y=\"108\" width=\"152\" height=\"40\" rx=\"4\" class=\"ac\"/><rect x=\"20\" y=\"168\" width=\"152\" height=\"8\" rx=\"3\" class=\"ac\"/><text x=\"96\" y=\"133\" class=\"xs mid tbad b\">ขยาย ← macula densa</text><text x=\"96\" y=\"192\" class=\"xs mid tbad b\">หด ← angiotensin II</text></g><g data-s=\"5\"><rect x=\"20\" y=\"118\" width=\"152\" height=\"20\" rx=\"4\" class=\"ac\"/><rect x=\"20\" y=\"164\" width=\"152\" height=\"16\" rx=\"4\" class=\"ac\"/><text x=\"96\" y=\"132\" class=\"xs mid tok b\">SGLT2i → หดกลับ</text><text x=\"96\" y=\"176\" class=\"xs mid tok b\">ACEi/ARB → ขยาย</text></g><circle cx=\"210\" cy=\"150\" r=\"58\" class=\"bx\"/><circle cx=\"210\" cy=\"150\" r=\"40\" class=\"ac\"/><path d=\"M182,140 C190,118 210,118 214,140 C218,162 236,162 240,140\" class=\"lac w2\"/><path d=\"M184,162 C196,176 222,176 232,160\" class=\"lac w2\"/><circle cx=\"20\" cy=\"128\" r=\"4\" class=\"acf\"><animateMotion dur=\"1.4s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L156,12\"/></circle><circle cx=\"176\" cy=\"166\" r=\"4\" class=\"acf\"><animateMotion dur=\"1.4s\" begin=\"-0.7s\" repeatCount=\"indefinite\" path=\"M0,0 L-156,6\"/></circle><path d=\"M268,150 L420,150 L420,60 L182,60\" class=\"lmu w5\"/><path d=\"M268,150 L420,150 L420,60 L182,60\" class=\"lwa w2 fl\"/><rect x=\"110\" y=\"50\" width=\"72\" height=\"20\" rx=\"6\" class=\"ms\"/><text x=\"110\" y=\"44\" class=\"xs b tms\">macula densa</text><path d=\"M140,72 L140,104\" class=\"lms w2 da\" marker-end=\"url(#ah-ms)\"/><circle cx=\"300\" cy=\"150\" r=\"7\" class=\"okf\"/><circle cx=\"340\" cy=\"150\" r=\"7\" class=\"okf\"/><circle cx=\"380\" cy=\"150\" r=\"7\" class=\"okf\"/><text x=\"340\" y=\"176\" class=\"xs mid tok b\">proximal tubule · SGLT2</text><circle cx=\"268\" cy=\"150\" r=\"4\" class=\"msf\"><animateMotion dur=\"4s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L152,0 L152,-90 L-86,-90\"/></circle><circle cx=\"268\" cy=\"150\" r=\"4\" class=\"msf\"><animateMotion dur=\"4s\" begin=\"-1.3s\" repeatCount=\"indefinite\" path=\"M0,0 L152,0 L152,-90 L-86,-90\"/></circle><circle cx=\"268\" cy=\"150\" r=\"4\" class=\"msf\"><animateMotion dur=\"4s\" begin=\"-2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L152,0 L152,-90 L-86,-90\"/></circle><text x=\"300\" y=\"50\" class=\"xs mu mid\" data-x=\"2\">NaCl ไปถึง macula densa</text><text x=\"300\" y=\"50\" class=\"xs mid tbad b\" data-s=\"2\">NaCl ถึง macula densa ↓</text><g data-s=\"2\"><g><circle cx=\"300\" cy=\"150\" r=\"11\" class=\"lok w2 pl\"/><circle cx=\"340\" cy=\"150\" r=\"11\" class=\"lok w2 pl\"/><circle cx=\"380\" cy=\"150\" r=\"11\" class=\"lok w2 pl\"/></g><path d=\"M320,142 L320,116\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><path d=\"M360,142 L360,116\" class=\"lok w2 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"340\" y=\"108\" class=\"xs mid tok b\">glucose + Na ดูดกลับ ↑</text><text x=\"16\" y=\"254\" class=\"xs\">1) glucose กรองมาก → SGLT2 ดูด glucose + Na ↑ → NaCl ถึง macula densa ↓</text></g><g data-s=\"3\" data-x=\"5\"><g><circle cx=\"210\" cy=\"150\" r=\"46\" class=\"lbad w3 pl\"/></g><text x=\"210\" y=\"228\" class=\"xs mid tbad b\">P ใน glomerulus ↑ → GFR ↑</text></g><g data-s=\"3\"><text x=\"16\" y=\"272\" class=\"xs\">2) ไตคิดว่าเลือดน้อย → afferent ขยาย + Ang II หด efferent → hyperfiltration</text></g><g data-s=\"4\"><circle cx=\"210\" cy=\"150\" r=\"40\" class=\"lbad w5\"/><circle cx=\"210\" cy=\"150\" r=\"3\" class=\"badf\"><animateMotion dur=\"2s\" begin=\"-0.2s\" repeatCount=\"indefinite\" path=\"M0,0 L52,0 L90,0\"/></circle><circle cx=\"210\" cy=\"150\" r=\"3\" class=\"badf\"><animateMotion dur=\"2s\" begin=\"-1s\" repeatCount=\"indefinite\" path=\"M0,0 L52,0 L90,0\"/></circle><text x=\"16\" y=\"290\" class=\"xs\">3) แรงดันสูง + AGEs → GBM หนา · mesangium ขยาย (Kimmelstiel–Wilson)</text><text x=\"16\" y=\"306\" class=\"xs\">    podocyte บาดเจ็บ → albumin รั่ว → nephron หาย → GFR ↓</text></g><g data-s=\"5\"><rect x=\"10\" y=\"318\" width=\"420\" height=\"94\" rx=\"8\" class=\"ok\"/><text x=\"20\" y=\"338\" class=\"sm b\">ยาลดแรงดันใน glomerulus</text><text x=\"20\" y=\"356\" class=\"xs\">SGLT2i: Na ถึง macula densa → afferent หดกลับ (eGFR ≥ 20)</text><text x=\"20\" y=\"372\" class=\"xs\">ACEi/ARB: efferent ขยาย — ใช้ได้แม้ BP ปกติ · BP &lt; 130/80</text><text x=\"20\" y=\"388\" class=\"xs\">+ finerenone เมื่อยังมี albuminuria</text><text x=\"20\" y=\"404\" class=\"xs b\">Cr ขึ้น ≤ 30% หลังเริ่มยา = แรงดันลดจริง ไม่ต้องหยุดยา</text></g></svg>",
+    "steps": [
+     {
+      "t": "Tubuloglomerular feedback ปกติ",
+      "cap": "macula densa วัด **NaCl ที่มาถึงปลาย tubule** แล้วปรับ afferent arteriole ให้ GFR พอดี — ถ้า NaCl มาน้อย ไตจะเข้าใจว่าเลือดมาน้อย"
+     },
+     {
+      "t": "น้ำตาลสูง: SGLT2 ทำงานเกิน",
+      "cap": "glucose ถูกกรองมาก → proximal tubule ดูด **glucose พร้อม Na ผ่าน SGLT2 มากขึ้น** → NaCl ไปถึง macula densa **น้อยลง**"
+     },
+     {
+      "t": "Afferent ขยาย + efferent หด",
+      "cap": "macula densa สั่ง **ขยาย afferent** ร่วมกับ **angiotensin II หด efferent** → แรงดันใน glomerulus สูง → **GFR สูง (ระยะ hyperfunction)**"
+     },
+     {
+      "t": "แรงดัน + AGEs → albumin รั่ว",
+      "cap": "แรงดันสูงและ AGEs กระตุ้น TGF-β → **GBM หนา mesangium ขยาย (Kimmelstiel–Wilson)** · podocyte บาดเจ็บ → **microalbuminuria 30–300 mg/วัน** → overt proteinuria → GFR ลด"
+     },
+     {
+      "t": "ยาที่ลดแรงดันใน glomerulus",
+      "cap": "**SGLT2i** คืน Na ให้ macula densa → afferent หด · **ACEi/ARB** ขยาย efferent (ใช้ได้แม้ BP ปกติ) · Cr ขึ้นไม่เกิน 30% หลังเริ่มยา **ไม่ต้องหยุด**"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "endo-ms-02",
+   "name": "รอบเอว < ครึ่งหนึ่งของส่วนสูง",
+   "what": "คัดกรองอ้วนลงพุงโดยไม่ต้องจำตัวเลขแยกเพศ/เชื้อชาติ",
+   "lines": [
+    [
+     "½",
+     "**Keep your waist to less than half your height** — รอบเอวไม่ควรเกินส่วนสูงหารสอง"
+    ],
+    [
+     "0.5",
+     "**WHtR ≥ 0.5** = อ้วนลงพุง · สูง 170 cm → รอบเอว > 85 cm"
+    ]
+   ],
+   "note": "เป็นเกณฑ์ที่อาจารย์ยกในสไลด์ · ถ้าข้อสอบถามเกณฑ์ MetS ตาม IDF ให้ใช้รอบเอวคนเอเชีย ชาย ≥ 90 · หญิง ≥ 80 cm",
+   "src": "ข้อความรณรงค์ที่ใช้แพร่หลายในไทย ('รอบเอวไม่เกินส่วนสูงหารสอง') · waist-to-height ratio 0.5 (Ashwell)"
+  },
+  {
+   "sec": "endo-ms-05",
+   "name": "Leptin keeps you thin · Ghrelin makes you ghungry",
+   "what": "ฮอร์โมนคุมความอิ่ม/ความหิว",
+   "lines": [
+    [
+     "Leptin",
+     "keeps you **thin** — หลั่งจากเซลล์ไขมัน บอก hypothalamus ว่า **อิ่ม** เผาผลาญมากขึ้น"
+    ],
+    [
+     "Ghrelin",
+     "makes you **gh**ungry — หลั่งจากกระเพาะ กระตุ้น **ความหิว**"
+    ]
+   ],
+   "note": "คนอ้วนส่วนใหญ่มี leptin สูงแต่ดื้อ (leptin resistance) — ให้ leptin เสริมไม่ได้ผล ยกเว้นขาด leptin แต่กำเนิด",
+   "src": "First Aid for the USMLE Step 1 (hypothalamus — appetite regulation) · ใช้กันทั่วไป"
+  },
+  {
+   "sec": "endo-ms-06",
+   "name": "STOP-BANG",
+   "what": "คัดกรอง obstructive sleep apnea ในผู้ป่วยอ้วน",
+   "lines": [
+    [
+     "S",
+     "**S**noring — กรนดัง"
+    ],
+    [
+     "T",
+     "**T**ired — ง่วง เพลียกลางวัน"
+    ],
+    [
+     "O",
+     "**O**bserved apnea — มีคนเห็นหยุดหายใจขณะหลับ"
+    ],
+    [
+     "P",
+     "**P**ressure — ความดันสูง"
+    ],
+    [
+     "B",
+     "**B**MI > 35"
+    ],
+    [
+     "A",
+     "**A**ge > 50 ปี"
+    ],
+    [
+     "N",
+     "**N**eck > 40 cm"
+    ],
+    [
+     "G",
+     "**G**ender — ชาย"
+    ]
+   ],
+   "note": "≥ 3 ข้อ = เสี่ยง OSA สูง ควรส่งตรวจการนอนหลับ · รอบคอ > 40 cm ตรงกับที่ระบุในคาบ",
+   "src": "STOP-Bang questionnaire (Chung et al., Anesthesiology 2008) — ใช้คัดกรอง OSA ทั่วโลก"
+  },
+  {
+   "sec": "endo-ms-10",
+   "name": "LDL = Lousy · HDL = Healthy",
+   "what": "แยกบทบาท lipoprotein สองตัวหลัก",
+   "lines": [
+    [
+     "LDL",
+     "**L**ousy — นำคอเลสเตอรอล (อนุภาค apoB) เข้าผนังหลอดเลือด → plaque"
+    ],
+    [
+     "HDL",
+     "**H**ealthy — reverse cholesterol transport ขนคอเลสเตอรอลกลับตับ"
+    ]
+   ],
+   "note": "เป้าหลักของการรักษายังเป็น **LDL-C (ยิ่งต่ำยิ่งดี)** ไม่ใช่การเพิ่ม HDL",
+   "src": "ใช้กันทั่วไปในการสอนผู้ป่วยและนักศึกษา ('bad' vs 'good' cholesterol — AHA)"
+  },
+  {
+   "sec": "endo-ms-10",
+   "name": "ApoE = Everything Except LDL",
+   "what": "apolipoprotein E อยู่บนอนุภาคไหน",
+   "lines": [
+    [
+     "E",
+     "**E**verything **E**xcept LDL — มีบน chylomicron/remnant, VLDL, IDL, HDL แต่ไม่มีบน LDL"
+    ],
+    [
+     "หน้าที่",
+     "ให้ตับจับเก็บ **remnant** (chylomicron remnant, IDL) กลับ"
+    ]
+   ],
+   "note": "apoE2/E2 จับ receptor ได้ไม่ดี → remnant ค้าง = dysbetalipoproteinemia (type III) · palmar xanthoma",
+   "src": "หลักจำ USMLE biochemistry (Picmonic/First Aid companion — apolipoproteins)"
+  },
+  {
+   "sec": "endo-ms-13",
+   "name": "I GET SMASHED",
+   "what": "สาเหตุของตับอ่อนอักเสบเฉียบพลัน",
+   "lines": [
+    [
+     "I",
+     "**I**diopathic"
+    ],
+    [
+     "G",
+     "**G**allstones"
+    ],
+    [
+     "E",
+     "**E**thanol"
+    ],
+    [
+     "T",
+     "**T**rauma"
+    ],
+    [
+     "S",
+     "**S**teroids"
+    ],
+    [
+     "M",
+     "**M**umps (และไวรัสอื่น)"
+    ],
+    [
+     "A",
+     "**A**utoimmune"
+    ],
+    [
+     "S",
+     "**S**corpion sting"
+    ],
+    [
+     "H",
+     "**H**ypertriglyceridemia · hypercalcemia · hypothermia"
+    ],
+    [
+     "E",
+     "**E**RCP"
+    ],
+    [
+     "D",
+     "**D**rugs"
+    ]
+   ],
+   "note": "ในคาบนี้เน้น **H = hypertriglyceridemia** (TG มัก > 1,000) · สาเหตุที่พบบ่อยที่สุดจริงคือนิ่วและสุรา",
+   "src": "หลักจำมาตรฐานสาเหตุ acute pancreatitis (ใช้แพร่หลายใน USMLE/ตำรา surgery)"
+  },
+  {
+   "sec": "endo-th-04",
+   "name": "4 B's ของ thyroid hormone",
+   "what": "ฤทธิ์หลักของฮอร์โมนไทรอยด์ — ใช้ไล่อาการไทรอยด์เป็นพิษ/ขาด",
+   "lines": [
+    [
+     "B",
+     "**B**rain maturation — พัฒนาการสมอง (ขาดในเด็ก → cretinism)"
+    ],
+    [
+     "B",
+     "**B**one growth — การเจริญของกระดูก"
+    ],
+    [
+     "B",
+     "**β**-adrenergic effects — β1 receptor ↑ → ใจสั่น HR เร็ว AF tremor"
+    ],
+    [
+     "B",
+     "**B**asal metabolic rate ↑ — Na⁺/K⁺-ATPase ↑ → ขี้ร้อน น้ำหนักลด"
+    ]
+   ],
+   "note": "ตรงกับตาราง 'อาการตามกลไก' ในคาบ — lid lag/retraction ก็เป็นผล β-adrenergic จึงพบได้ทุกสาเหตุ",
+   "src": "First Aid for the USMLE Step 1 (thyroid hormone functions)"
+  },
+  {
+   "sec": "endo-th-05",
+   "name": "NO SPECS",
+   "what": "ระดับความรุนแรงของตาในโรคไทรอยด์ (Werner)",
+   "lines": [
+    [
+     "N",
+     "**N**o signs or symptoms"
+    ],
+    [
+     "O",
+     "**O**nly signs — lid retraction, lid lag"
+    ],
+    [
+     "S",
+     "**S**oft tissue involvement — หนังตาบวม เยื่อบุตาแดง"
+    ],
+    [
+     "P",
+     "**P**roptosis — ตาโปน"
+    ],
+    [
+     "E",
+     "**E**xtraocular muscle — ภาพซ้อน มองขึ้นลำบาก"
+    ],
+    [
+     "C",
+     "**C**orneal involvement — exposure keratitis"
+    ],
+    [
+     "S",
+     "**S**ight loss — optic nerve ถูกกด"
+    ]
+   ],
+   "note": "ระดับ O (lid lag/retraction) เป็นผล adrenergic พบได้ทุกสาเหตุของ thyrotoxicosis ไม่ใช่หลักฐานของ Graves · ปัจจุบันประเมิน activity ด้วย CAS (EUGOGO)",
+   "src": "Werner's NO SPECS classification (ATA) — ตำรา endocrinology/ophthalmology"
+  },
+  {
+   "sec": "endo-th-07",
+   "name": "P-T-U",
+   "what": "สามสถานการณ์ที่เลือก PTU แทน MMI",
+   "lines": [
+    [
+     "P",
+     "**P**regnancy ไตรมาสแรก — เปลี่ยนเป็น MMI หลัง 16 สัปดาห์"
+    ],
+    [
+     "T",
+     "**T**hyroid storm — ยับยั้ง T4 → T3 นอกต่อมได้ด้วย"
+    ],
+    [
+     "U",
+     "**U**nable to take MMI — แพ้ MMI แบบไม่รุนแรง"
+    ]
+   ],
+   "note": "นอกจากนี้ MMI เป็นยาแรกเสมอ · แพ้รุนแรง (agranulocytosis ตับ vasculitis) ห้ามสลับไปอีกตัว → RAI/ผ่าตัด",
+   "src": "หลักจำที่อาจารย์ใช้ในสไลด์คาบนี้ (สอดคล้อง ATA 2016)"
+  },
+  {
+   "sec": "endo-th-10",
+   "name": "4 P's ของ thyroid storm",
+   "what": "ยาหลักในการรักษา thyroid storm",
+   "lines": [
+    [
+     "P",
+     "**P**ropranolol — คุมหัวใจ + ลด T4 → T3"
+    ],
+    [
+     "P",
+     "**P**TU — หยุดการสร้าง + ลด T4 → T3"
+    ],
+    [
+     "P",
+     "**P**rednisolone/steroid — ลด T4 → T3 (ในคาบใช้ **hydrocortisone**)"
+    ],
+    [
+     "P",
+     "**P**otassium iodide (SSKI/Lugol) — หยุดการหลั่ง · ให้หลัง thionamide ≥ 1 ชม."
+    ]
+   ],
+   "note": "ลำดับในคาบ: β-blocker → PTU → iodine → hydrocortisone · ลดไข้ด้วย paracetamol **ห้าม aspirin**",
+   "src": "First Aid for the USMLE Step 1 (thyroid storm treatment)"
+  },
+  {
+   "sec": "endo-th-12",
+   "name": "Amiodarone: check PFTs, LFTs, TFTs",
+   "what": "พิษของ amiodarone ที่ต้องตรวจติดตาม",
+   "lines": [
+    [
+     "PFTs",
+     "ปอด — pulmonary fibrosis"
+    ],
+    [
+     "LFTs",
+     "ตับ — hepatotoxicity"
+    ],
+    [
+     "TFTs",
+     "ไทรอยด์ — hypo (Wolff–Chaikoff) หรือ hyper (AIT type 1/2)"
+    ]
+   ],
+   "note": "ในคาบ: TFT ก่อนเริ่มยาและทุก 6 เดือน · hypo → LT4 ให้ amiodarone ต่อได้ · AIT 1 → MMI · AIT 2 → prednisone",
+   "src": "First Aid for the USMLE Step 1 (class III antiarrhythmics)"
+  },
+  {
+   "sec": "endo-th-13",
+   "name": "PSaMMoma bodies",
+   "what": "เนื้องอกที่พบ psammoma body (แคลเซียมก้อนเล็กเป็นชั้น)",
+   "lines": [
+    [
+     "P",
+     "**P**apillary carcinoma of thyroid"
+    ],
+    [
+     "S",
+     "**S**erous papillary cystadenocarcinoma ของรังไข่"
+    ],
+    [
+     "M",
+     "**M**eningioma"
+    ],
+    [
+     "M",
+     "**M**alignant mesothelioma"
+    ]
+   ],
+   "note": "บน US psammoma body เห็นเป็น **microcalcification** = ลักษณะ high suspicion ตาม ATA → FNA เมื่อ ≥ 1 cm",
+   "src": "First Aid for the USMLE Step 1 (psammoma bodies)"
+  },
+  {
+   "sec": "endo-dm-01",
+   "name": "BRICK LIPS",
+   "what": "เนื้อเยื่อที่นำ glucose เข้าเซลล์ได้โดย **ไม่ต้องพึ่ง insulin**",
+   "lines": [
+    [
+     "B",
+     "**B**rain"
+    ],
+    [
+     "R",
+     "**R**BCs"
+    ],
+    [
+     "I",
+     "**I**ntestine"
+    ],
+    [
+     "C",
+     "**C**ornea"
+    ],
+    [
+     "K",
+     "**K**idney"
+    ],
+    [
+     "L",
+     "**L**iver"
+    ],
+    [
+     "I",
+     "**I**slet (β) cells"
+    ],
+    [
+     "P",
+     "**P**lacenta"
+    ],
+    [
+     "S",
+     "**S**permatocytes"
+    ]
+   ],
+   "note": "ที่ต้องพึ่ง insulin (GLUT4) คือ **กล้ามเนื้อลายและไขมัน** · ตับรับ glucose เองได้ แต่ insulin ยังคุมการเก็บ glycogen และหยุดการปล่อยน้ำตาลของตับ",
+   "src": "First Aid for the USMLE Step 1 (insulin — insulin-independent glucose uptake)"
+  },
+  {
+   "sec": "endo-dm-02",
+   "name": "3P",
+   "what": "อาการคลาสสิกของน้ำตาลสูง",
+   "lines": [
+    [
+     "P",
+     "**P**olyuria — glucose เกิน renal threshold ~180 ดึงน้ำตามออก"
+    ],
+    [
+     "P",
+     "**P**olydipsia — เสียน้ำ osmolality สูง กระตุ้นศูนย์กระหาย"
+    ],
+    [
+     "P",
+     "**P**olyphagia — เซลล์ใช้น้ำตาลไม่ได้ ('อดอยากท่ามกลางน้ำตาล')"
+    ]
+   ],
+   "note": "มักมาคู่ **น้ำหนักลด** · T2 จำนวนมากไม่มีอาการ — 30% มีภาวะแทรกซ้อนแล้วตอนวินิจฉัย",
+   "src": "ใช้กันทั่วไปในตำราและในหมู่ นศพ.ไทย"
+  },
+  {
+   "sec": "endo-dm-07",
+   "name": "5 I's ของตัวกระตุ้น DKA",
+   "what": "หาสาเหตุที่ทำให้เกิด DKA ทุกราย",
+   "lines": [
+    [
+     "I",
+     "**I**nfection — พบบ่อยที่สุด"
+    ],
+    [
+     "I",
+     "**I**nsulin omission / ไม่พอ"
+    ],
+    [
+     "I",
+     "**I**nfarction — MI, stroke"
+    ],
+    [
+     "I",
+     "**I**nitial presentation — T1 รายใหม่"
+    ],
+    [
+     "I",
+     "**I**atrogenic / Intoxication — steroid, SGLT2i (euglycemic DKA), สุรา"
+    ]
+   ],
+   "note": "มีหลายฉบับ (5–7 I's) — ข้อที่ตรงกันทุกฉบับคือ infection และ insulin omission · บางฉบับเพิ่ม pregnancy ('Impregnation') ซึ่งคาบนี้ก็นับเป็นตัวกระตุ้น",
+   "src": "หลักจำที่ใช้ทั่วไปในการสอน internal/emergency medicine (มีหลายฉบับ)"
+  },
+  {
+   "sec": "endo-dm-09",
+   "name": "กฎ 15-15",
+   "what": "แก้น้ำตาลต่ำในผู้ที่รู้สึกตัว กลืนได้",
+   "lines": [
+    [
+     "15 g",
+     "ให้ glucose **15 กรัม** (คาบนี้ 15–20 g) — น้ำหวาน ลูกอม glucose tablet"
+    ],
+    [
+     "15 นาที",
+     "เจาะน้ำตาลซ้ำใน **15 นาที** · ยังต่ำ (< 70) ให้ซ้ำ"
+    ],
+    [
+     "แล้ว",
+     "ตามด้วยอาหารมื้อหลัก/ของว่าง กันต่ำซ้ำ"
+    ]
+   ],
+   "note": "ผู้ใช้ acarbose ต้องใช้ **glucose** ไม่ใช่น้ำตาลทราย · ไม่รู้สึกตัว → 50% glucose IV หรือ glucagon 1 mg · น้ำตาลต่ำจาก SU → admit",
+   "src": "ADA Standards of Care (rule of 15)"
+  },
+  {
+   "sec": "endo-dm-10",
+   "name": "Can't see · can't pee · can't feel",
+   "what": "ภาวะแทรกซ้อน microvascular ของเบาหวาน",
+   "lines": [
+    [
+     "see",
+     "**Retinopathy** — ตา"
+    ],
+    [
+     "pee",
+     "**Nephropathy** — ไต (หมายถึงไตเสีย ไม่ใช่ปัสสาวะไม่ออก)"
+    ],
+    [
+     "feel",
+     "**Neuropathy** — ชาปลายมือปลายเท้า"
+    ]
+   ],
+   "note": "macrovascular (CAD, stroke, PAD) คือสาเหตุตายอันดับ 1 (~70%) · คัดกรองตา/ไต: T2 ตั้งแต่วินิจฉัย T1 หลัง 5 ปี (ไต 3–5 ปี)",
+   "src": "หลักจำที่ใช้กันทั่วไปในโรงเรียนแพทย์"
+  },
+  {
+   "sec": "endo-dm-15",
+   "name": "No LAG",
+   "what": "insulin กลุ่ม rapid-acting",
+   "lines": [
+    [
+     "L",
+     "**L**ispro"
+    ],
+    [
+     "A",
+     "**A**spart"
+    ],
+    [
+     "G",
+     "**G**lulisine"
+    ]
+   ],
+   "note": "ในคาบ: rapid เริ่มออกฤทธิ์ 10 นาที สูงสุด 1.5 ชม. อยู่ 4 ชม. ฉีดก่อนกินได้เลย · glulisine ไม่อยู่ในตารางสไลด์",
+   "src": "First Aid for the USMLE Step 1 (insulin preparations)"
+  }
+ ]
+}

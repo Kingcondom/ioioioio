@@ -96,6 +96,19 @@ engine เดียวกับ learn จึงใช้แพตช์ชุด
 หน้าหัวข้อมีปุ่ม "↑ หน้าคาบ" · ลิงก์ตรงจาก dashboard เปิดหน้าคาบนั้นเลย · โค้ดอยู่ใน `patch_learn_lectures.py`
 (ลำดับแพตช์บนหน้า learn ต้นฉบับ: `patch_deeplinks.py learn` → `patch_learn_sync.py` → `patch_learn_lectures.py`)
 
+## กลไกโรคแบบภาพเคลื่อนไหว + หลักจำ (MED421 learn)
+
+ทุกคาบใน learn มีภาพเคลื่อนไหวกลไก 2–4 ภาพและหลักจำ 3–7 อัน (รวม 107 ภาพ · 140 หลักจำ · 19 ต.ค.)
+- ต้นฉบับอยู่ใน `learn_anim/<ชุด>.json` · ข้อกำหนดรูปแบบ/กติกา SVG ใน `learn_anim/SPEC.md`
+- section ใน data มี `anims` (+ `[[anim:key]]` ใน md) และ `mnem` · ตัวเล่นเล่นเองเมื่อเลื่อนมาเห็น มีปุ่มทีละขั้น ไม่เล่นเองถ้าเครื่องตั้งลดการเคลื่อนไหว
+- ตรวจ/ดูตัวอย่าง: `python3 anim_tool.py check <data> learn_anim/<ชุด>.json` · `python3 anim_tool.py preview <data> <learn index.html> learn_anim/<ชุด>.json <out> [port]`
+- ใส่ลงหน้า learn (ทำหลังแพตช์อื่น): `python3 patch_learn_anim.py page <index.html> <out.html>` และ `python3 patch_learn_anim.py data <data dir> learn_anim <data ออก>`
+  (ถ้า data ใน learn ถูกสร้างใหม่ ให้รัน data ซ้ำจากไฟล์ใน learn_anim — section id และหัวข้อ `after` ต้องยังมีอยู่ check จะบอก)
+
+## MED421 Ward Drill บันทึกคำตอบในบัญชี (รอผู้ใช้อนุมัติ publish)
+
+`patch_drill_sync.py <drill index.html> <out>` แล้ว publish พร้อม capabilities `{db:{}, user:{}}` · เอกสาร `data/users/<id>/drill` = {answers, shown} · กติการวมเหมือน learn
+
 ## แก้ข้อมูล
 
 ข้อมูลทั้งหมดอยู่ในอาร์เรย์ `LECS` / `EXTRAS` ในสคริปต์ของ `index.html`

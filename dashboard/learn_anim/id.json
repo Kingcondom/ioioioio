@@ -1,0 +1,526 @@
+{
+ "set": "id",
+ "items": [
+  {
+   "sec": "id-sep-01",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "sep-signs",
+    "title": "จาก cytokine ถึงสัญญาณชีพผิดปกติ — ทำไม sepsis มีไข้ ชีพจรเร็ว หายใจเร็ว",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อกระตุ้นการหลั่ง cytokine ซึ่งไปออกฤทธิ์ที่ hypothalamus ทำให้ไข้ ที่หลอดเลือดทำให้ความดันตกและชีพจรเร็ว lactate ทำให้หายใจเร็ว ไขกระดูกปล่อยเม็ดเลือดขาว และเลือดไปอวัยวะลดทำให้สับสน ผิวลาย ปัสสาวะน้อย\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"150\" y=\"8\" width=\"140\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"26\" class=\"sm b mid tbad\">แหล่งติดเชื้อ</text><text x=\"220\" y=\"43\" class=\"xs mid\">PAMPs (LPS) → TLR4</text><g><circle cx=\"162\" cy=\"20\" r=\"3.5\" class=\"badf pl\"/><circle cx=\"168\" cy=\"33\" r=\"3.5\" class=\"badf pl\"/><circle cx=\"278\" cy=\"20\" r=\"3.5\" class=\"badf pl\"/><circle cx=\"272\" cy=\"33\" r=\"3.5\" class=\"badf pl\"/></g><path d=\"M220,54 L220,146\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><rect x=\"140\" y=\"150\" width=\"160\" height=\"72\" rx=\"30\" class=\"ac\"/><text x=\"220\" y=\"181\" class=\"sm b mid tac\">Cytokine</text><text x=\"220\" y=\"199\" class=\"xs mid\">IL-1 · IL-6 · TNF-α</text><g data-s=\"2\"><path d=\"M150,160 C118,150 92,152 84,136\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M150,160 C118,150 92,152 84,136\"/></circle><rect x=\"8\" y=\"70\" width=\"150\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"83.0\" y=\"88\" class=\"mid sm b\">Hypothalamus</text><text x=\"83.0\" y=\"104\" class=\"mid xs\">PGE₂ ↑ → set point สูง</text><text x=\"83.0\" y=\"120\" class=\"mid xs b tbad\">ไข้ &gt;38 / ตัวเย็น &lt;36 °C</text></g><g data-s=\"3\"><path d=\"M290,160 C322,150 348,152 356,136\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M290,160 C322,150 348,152 356,136\"/></circle><rect x=\"282\" y=\"70\" width=\"150\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"357.0\" y=\"88\" class=\"mid sm b\">หลอดเลือดขยาย·รั่ว</text><text x=\"357.0\" y=\"104\" class=\"mid xs\">MAP ↓ → baroreflex</text><text x=\"357.0\" y=\"120\" class=\"mid xs b tbad\">ชีพจร &gt;90/min</text></g><g data-s=\"4\"><path d=\"M290,212 C322,222 348,224 356,242\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M290,212 C322,222 348,224 356,242\"/></circle><rect x=\"282\" y=\"246\" width=\"150\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"357.0\" y=\"264\" class=\"mid sm b\">Lactate ↑ (กรด)</text><text x=\"357.0\" y=\"280\" class=\"mid xs\">หายใจชดเชยไล่ CO₂</text><text x=\"357.0\" y=\"296\" class=\"mid xs b tbad\">RR &gt;20 · PaCO₂ &lt;32</text></g><g data-s=\"5\"><path d=\"M150,212 C118,222 92,224 84,242\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M150,212 C118,222 92,224 84,242\"/></circle><rect x=\"8\" y=\"246\" width=\"150\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"83.0\" y=\"264\" class=\"mid sm b\">ไขกระดูก</text><text x=\"83.0\" y=\"280\" class=\"mid xs\">G-CSF → ปล่อยตัวอ่อน</text><text x=\"83.0\" y=\"296\" class=\"mid xs b tbad\">WBC &gt;12k/&lt;4k · band &gt;10%</text></g><g data-s=\"6\"><path d=\"M220,224 L220,326\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M220,224 L220,326\"/></circle><rect x=\"30\" y=\"330\" width=\"380\" height=\"54\" rx=\"8\" class=\"bad\"/><text x=\"220.0\" y=\"348\" class=\"mid sm b tbad\">เลือดไปอวัยวะลด + microthrombi</text><text x=\"220.0\" y=\"364\" class=\"mid xs\">สับสน GCS ↓ · ผิวลาย CRT &gt;3 วิ · ปัสสาวะ &lt;0.5 mL/kg/h</text><text x=\"220\" y=\"406\" class=\"xs b mid tac\">SIRS ≥ 2 ข้อ = ตะแกรงคัดกรอง · Sepsis = ติดเชื้อ + SOFA ↑ ≥ 2</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อปลุก cytokine",
+      "cap": "ชิ้นส่วนเชื้อ (**PAMPs** เช่น LPS) จับ **TLR4** → NF-κB → หลั่ง **IL-1, IL-6, TNF-α** ออกไปทั่วตัว · อาการของ sepsis เกือบทั้งหมดมาจาก **การตอบสนองของร่างกาย** ไม่ใช่ตัวเชื้อโดยตรง"
+     },
+     {
+      "t": "ไข้ หรือ ตัวเย็น",
+      "cap": "Cytokine → **PGE₂ ที่ hypothalamus** ตั้งจุดอุณหภูมิสูงขึ้น → ไข้ > 38 °C · ถ้าร่างกายตอบสนองไม่ไหว (ผู้สูงอายุ ช็อกหนัก) กลับ **ตัวเย็น < 36 °C ซึ่งพยากรณ์แย่กว่า**"
+     },
+     {
+      "t": "ชีพจรเร็ว",
+      "cap": "หลอดเลือดขยาย (NO) + น้ำรั่วออกนอกหลอดเลือด → เลือดกลับหัวใจลด **MAP ตก** → **baroreceptor กระตุ้น sympathetic** → HR > 90 · ยังเร็วหลังให้น้ำและลดไข้ = ยังขาดปริมาตร/ยังช็อก"
+     },
+     {
+      "t": "หายใจเร็ว",
+      "cap": "**Lactic acidosis** → หายใจชดเชยไล่ CO₂ (RR > 20, PaCO₂ < 32) ร่วมกับ cytokine กระตุ้นศูนย์หายใจ · **RR ≥ 22** อยู่ใน qSOFA — มักเป็นสัญญาณแรกที่ถูกมองข้าม นับให้ครบ 1 นาที"
+     },
+     {
+      "t": "เม็ดเลือดขาวสูง/ต่ำ",
+      "cap": "G-CSF ดึง neutrophil ออกจากไขกระดูกเร็วจน **ตัวอ่อน (band > 10%)** ออกมาด้วย → WBC > 12,000 · ถ้าถูกใช้ที่แหล่งติดเชื้อเร็วกว่าสร้าง → **WBC < 4,000 ซึ่งพยากรณ์แย่**"
+     },
+     {
+      "t": "อวัยวะขาดเลือด = sepsis",
+      "cap": "เลือดไปอวัยวะลด + microthrombi → **สับสน (GCS ↓) · ผิวลาย CRT > 3 วิ · ปัสสาวะ < 0.5 mL/kg/h** · SIRS ≥ 2 ข้อใช้ **คัดกรอง** แต่ sepsis ตาม Sepsis-3 = ติดเชื้อ + **SOFA เพิ่ม ≥ 2**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-sep-02",
+   "after": "",
+   "anim": {
+    "key": "sep-hemo",
+    "title": "Distributive shock — SVR ตก CO ชดเชย แล้วแก้ด้วยน้ำกับ norepinephrine",
+    "svg": "<svg viewBox=\"0 0 440 412\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: วงจรเลือดจากหัวใจผ่าน arteriole capillary และหลอดเลือดดำ ใน sepsis arteriole ขยายจาก nitric oxide ทำให้ SVR และ MAP ตก capillary รั่วทำให้ preload ลด หัวใจชดเชยด้วยชีพจรเร็วและ CO สูง ระยะท้าย CO ลด รักษาด้วยสารน้ำและ norepinephrine\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"154\" y=\"30\" class=\"xs mid mu\">arteriole = ตัวกำหนด SVR</text><path d=\"M46,140 L46,62 L112,62\" class=\"lac w5\"/><path d=\"M112,55 L196,55 M112,69 L196,69\" class=\"lac w3\" data-x=\"2\"/><path d=\"M112,45 L196,45 M112,79 L196,79\" class=\"lbad w3\" data-s=\"2\"/><path d=\"M196,62 L236,62 L236,262 L196,262\" class=\"lac w5\"/><path d=\"M196,262 L120,262\" class=\"lac w3 da\"/><path d=\"M120,262 L46,262 L46,214\" class=\"lwa w5\"/><text x=\"158\" y=\"282\" class=\"xs mid mu\">capillary</text><text x=\"83\" y=\"282\" class=\"xs mid twa\">vein</text><rect x=\"14\" y=\"140\" width=\"64\" height=\"70\" rx=\"14\" class=\"ac\"/><text x=\"46\" y=\"179\" class=\"sm b mid\">หัวใจ</text><circle r=\"4\" class=\"badf\"><animateMotion dur=\"4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M46,140 L46,62 L236,62 L236,262 L46,262 L46,212\"/></circle><circle r=\"4\" class=\"badf\"><animateMotion dur=\"4s\" begin=\"-2s\" repeatCount=\"indefinite\" path=\"M46,140 L46,62 L236,62 L236,262 L46,262 L46,212\"/></circle><g data-s=\"2\"><text x=\"154\" y=\"98\" class=\"xs mid tbad b\">NO (iNOS) → ขยาย</text></g><g data-s=\"3\"><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" begin=\"-0.0s\" repeatCount=\"indefinite\" path=\"M130,264 L130,304\"/></circle><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" begin=\"-0.5s\" repeatCount=\"indefinite\" path=\"M152,264 L152,304\"/></circle><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" begin=\"-1.0s\" repeatCount=\"indefinite\" path=\"M174,264 L174,304\"/></circle><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" begin=\"-1.5s\" repeatCount=\"indefinite\" path=\"M192,264 L192,304\"/></circle><circle cx=\"132\" cy=\"290\" r=\"3\" class=\"waf\"/><circle cx=\"154\" cy=\"298\" r=\"3\" class=\"waf\"/><circle cx=\"174\" cy=\"288\" r=\"3\" class=\"waf\"/><circle cx=\"192\" cy=\"300\" r=\"3\" class=\"waf\"/><text x=\"150\" y=\"322\" class=\"xs mid twa b\">capillary leak → venous return ↓</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"157\" y=\"150\" class=\"sm b mid tms\">Warm shock</text><text x=\"157\" y=\"168\" class=\"xs mid\">ปลายมือเท้าอุ่น</text><text x=\"157\" y=\"184\" class=\"xs mid\">pulse pressure กว้าง</text></g><g data-s=\"5\"><text x=\"157\" y=\"150\" class=\"sm b mid tbad\">Cold shock (ระยะท้าย)</text><text x=\"157\" y=\"168\" class=\"xs mid\">septic cardiomyopathy</text><text x=\"157\" y=\"184\" class=\"xs mid\">microthrombi → ผิวลาย</text></g><rect x=\"262\" y=\"40\" width=\"170\" height=\"206\" rx=\"8\" class=\"sk\"/><text x=\"347\" y=\"62\" class=\"sm b mid\">ค่า hemodynamic</text><text x=\"274\" y=\"92\" class=\"sm b\">MAP</text><text x=\"274\" y=\"122\" class=\"sm b\">SVR</text><text x=\"274\" y=\"152\" class=\"sm b\">CVP / PCWP</text><text x=\"274\" y=\"182\" class=\"sm b\">HR</text><text x=\"274\" y=\"212\" class=\"sm b\">CO</text><text x=\"420\" y=\"92\" class=\"sm end mu\" data-x=\"2\">ปกติ</text><text x=\"420\" y=\"92\" class=\"sm end b tbad\" data-s=\"2\">↓ &lt;65</text><text x=\"420\" y=\"122\" class=\"sm end mu\" data-x=\"2\">ปกติ</text><text x=\"420\" y=\"122\" class=\"sm end b tbad\" data-s=\"2\">↓↓</text><text x=\"420\" y=\"152\" class=\"sm end mu\" data-x=\"3\">ปกติ</text><text x=\"420\" y=\"152\" class=\"sm end b twa\" data-s=\"3\">↓</text><text x=\"420\" y=\"182\" class=\"sm end mu\" data-x=\"4\">ปกติ</text><text x=\"420\" y=\"182\" class=\"sm end b tms\" data-s=\"4\">↑</text><text x=\"420\" y=\"212\" class=\"sm end mu\" data-x=\"4\">ปกติ</text><text x=\"420\" y=\"212\" class=\"sm end b tms\" data-s=\"4\" data-x=\"5\">↑ (warm)</text><text x=\"420\" y=\"212\" class=\"sm end b tbad\" data-s=\"5\">↓ (cold)</text><g data-s=\"6\"><rect x=\"8\" y=\"340\" width=\"206\" height=\"62\" rx=\"8\" class=\"ok\"/><text x=\"111.0\" y=\"358\" class=\"mid sm b tok\">สารน้ำ crystalloid</text><text x=\"111.0\" y=\"374\" class=\"mid xs\">≥ 30 mL/kg ใน 3 ชม.</text><text x=\"111.0\" y=\"390\" class=\"mid xs\">→ เติม preload (ท่อรั่ว)</text><rect x=\"226\" y=\"340\" width=\"206\" height=\"62\" rx=\"8\" class=\"ac\"/><text x=\"329.0\" y=\"358\" class=\"mid sm b tac\">Norepinephrine (α1)</text><text x=\"329.0\" y=\"374\" class=\"mid xs\">หด arteriole → SVR ↑</text><text x=\"329.0\" y=\"390\" class=\"mid xs\">เป้า MAP ≥ 65 mmHg</text></g></svg>",
+    "steps": [
+     {
+      "t": "วงจรปกติ",
+      "cap": "MAP = CO × SVR · **arteriole** เป็นตัวกำหนดแรงต้าน (SVR) ส่วน **หลอดเลือดดำ** เก็บเลือดไว้เป็น preload ส่งกลับหัวใจ"
+     },
+     {
+      "t": "ท่อขยาย: SVR ตก",
+      "cap": "Cytokine กระตุ้น **iNOS → nitric oxide** มาก → arteriole ขยายและตอบสนองต่อ catecholamine น้อยลง → **SVR ↓↓ MAP ↓** แม้หัวใจยังบีบดี"
+     },
+     {
+      "t": "ท่อรั่ว: preload ตก",
+      "cap": "**Glycocalyx หลุด → capillary leak** น้ำออกนอกหลอดเลือด + หลอดเลือดดำขยายเก็บเลือด → venous return ↓ → **CVP/PCWP ต่ำ** (ต่างจาก cardiogenic shock ที่ PCWP สูง)"
+     },
+     {
+      "t": "Warm shock: หัวใจชดเชย",
+      "cap": "Baroreflex → **HR ↑ CO ↑** · ปลายมือเท้า **อุ่น** ชีพจรแรง pulse pressure กว้าง — ระยะนี้ BP อาจตกทั้งที่ผิวไม่เย็น อย่าถูกหลอก"
+     },
+     {
+      "t": "Cold shock: ระยะท้าย",
+      "cap": "**Septic cardiomyopathy** ทำให้หัวใจบีบตัวลด CO ตก + microthrombi อุดหลอดเลือดฝอย → ผิว **ลาย เย็น CRT ช้า** · lactate สูงขึ้น"
+     },
+     {
+      "t": "แก้ตรงกลไก",
+      "cap": "ท่อรั่ว → **crystalloid ≥ 30 mL/kg ใน 3 ชม.** เติม preload · ท่อขยาย → **norepinephrine (α1)** หดหลอดเลือด เป้า **MAP ≥ 65** · ข้อสอบชอบถาม: distributive = **CO สูง SVR ต่ำ CVP/PCWP ต่ำ**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-sep-10",
+   "after": "กลไก: ทำไมโรคเขตร้อนแต่ละโรคมีอาการเฉพาะตัว",
+   "anim": {
+    "key": "sep-lepto",
+    "title": "Leptospirosis — เชื้อในเลือดทำร้าย endothelium แล้วแต่ละอวัยวะแสดงอาการเฉพาะ",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อ leptospira จากน้ำท่วมเข้าทางผิวที่มีแผลสู่กระแสเลือด ทำให้ตาแดง ปวดน่อง ตัวเหลืองโดย AST ขึ้นน้อย ไตวายแบบปัสสาวะไม่น้อยร่วมกับโพแทสเซียมต่ำ และเลือดออกในปอด\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"8\" width=\"130\" height=\"46\" rx=\"8\" class=\"wa\"/><text x=\"73.0\" y=\"26\" class=\"mid xs b twa\">น้ำท่วม · ปัสสาวะหนู</text><text x=\"73.0\" y=\"42\" class=\"mid xs\">ลุยน้ำ ทำนา</text><path d=\"M140,31 L174,31\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><rect x=\"180\" y=\"8\" width=\"130\" height=\"46\" rx=\"8\" class=\"sk\"/><text x=\"245.0\" y=\"26\" class=\"mid xs b\">ผิวมีแผล · เยื่อบุ</text><text x=\"245.0\" y=\"42\" class=\"mid xs\">ตา จมูก ปาก</text><path d=\"M245,56 L245,78\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"8\" y=\"74\" class=\"xs b tbad\">กระแสเลือด (leptospiremia)</text><rect x=\"8\" y=\"82\" width=\"424\" height=\"22\" rx=\"11\" class=\"bad\"/><path d=\"M52,93 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"/><path d=\"M142,93 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"/><path d=\"M282,93 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"/><path d=\"M372,93 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"/><path d=\"M-8,0 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"><animateMotion dur=\"5s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M20,93 L420,93\"/></path><path d=\"M-8,0 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"><animateMotion dur=\"5s\" begin=\"-2.5s\" repeatCount=\"indefinite\" path=\"M20,93 L420,93\"/></path><path d=\"M-8,0 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"><animateMotion dur=\"5s\" begin=\"-1.2s\" repeatCount=\"indefinite\" path=\"M20,93 L420,93\"/></path><path d=\"M-8,0 q2,-3 4,0 t4,0 t4,0 t4,0\" class=\"lbad w2\"><animateMotion dur=\"5s\" begin=\"-3.7s\" repeatCount=\"indefinite\" path=\"M20,93 L420,93\"/></path><g data-s=\"2\"><path d=\"M111,106 L111,122\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"8\" y=\"126\" width=\"206\" height=\"76\" rx=\"8\" class=\"ms\"/><text x=\"111\" y=\"144\" class=\"sm b mid\">ตา + กล้ามเนื้อ</text><text x=\"111\" y=\"161\" class=\"xs mid\">ตาแดงไม่มีขี้ตา (suffusion)</text><text x=\"111\" y=\"177\" class=\"xs mid\">myositis → ปวดน่องมาก</text><text x=\"111\" y=\"193\" class=\"xs mid b tbad\">CPK ขึ้นได้</text></g><g data-s=\"3\"><path d=\"M329,106 L329,122\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"226\" y=\"126\" width=\"206\" height=\"76\" rx=\"8\" class=\"ms\"/><text x=\"329\" y=\"144\" class=\"sm b mid\">ตับ</text><text x=\"329\" y=\"161\" class=\"xs mid\">รอยต่อเซลล์ตับหลุด</text><text x=\"329\" y=\"177\" class=\"xs mid\">น้ำดีรั่วกลับเข้าเลือด</text><text x=\"329\" y=\"193\" class=\"xs mid b tbad\">Bili ↑↑ แต่ AST/ALT ↑ น้อย</text></g><g data-s=\"4\"><path d=\"M220,106 L220,210\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><rect x=\"8\" y=\"214\" width=\"424\" height=\"90\" rx=\"8\" class=\"ms\"/><text x=\"220\" y=\"233\" class=\"sm b mid\">ไต: tubulointerstitial nephritis</text><rect x=\"16\" y=\"242\" width=\"94\" height=\"26\" rx=\"13\" class=\"bx\"/><text x=\"63\" y=\"259\" class=\"xs mid\">ท่อไตเสียหาย</text><path d=\"M112,255 L120,255\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"122\" y=\"242\" width=\"94\" height=\"26\" rx=\"13\" class=\"bx\"/><text x=\"169\" y=\"259\" class=\"xs mid\">ดูด Na กลับ ↓</text><path d=\"M218,255 L226,255\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"228\" y=\"242\" width=\"94\" height=\"26\" rx=\"13\" class=\"bx\"/><text x=\"275\" y=\"259\" class=\"xs mid\">Na ถึงท่อปลาย ↑</text><path d=\"M324,255 L332,255\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"334\" y=\"242\" width=\"94\" height=\"26\" rx=\"13\" class=\"bx\"/><text x=\"381\" y=\"259\" class=\"xs mid b tbad\">K รั่วทิ้ง</text><text x=\"220\" y=\"292\" class=\"xs mid b tbad\">AKI แบบ non-oliguric + hypokalemia — ลักษณะของ lepto</text></g><g data-s=\"5\"><rect x=\"8\" y=\"318\" width=\"206\" height=\"74\" rx=\"8\" class=\"bad\"/><text x=\"111\" y=\"336\" class=\"sm b mid\">ปอด</text><text x=\"111\" y=\"353\" class=\"xs mid\">หลอดเลือดฝอยในปอดเสียหาย</text><text x=\"111\" y=\"369\" class=\"xs mid\">→ เลือดออกในถุงลม</text><text x=\"111\" y=\"385\" class=\"xs mid b tbad\">ไอเป็นเลือด — ตายเร็ว</text></g><g data-s=\"6\"><rect x=\"226\" y=\"318\" width=\"206\" height=\"74\" rx=\"8\" class=\"ac\"/><text x=\"329\" y=\"336\" class=\"sm b mid tac\">Weil disease</text><text x=\"329\" y=\"353\" class=\"xs mid\">ตัวเหลือง + ไตวาย</text><text x=\"329\" y=\"369\" class=\"xs mid\">+ เลือดออก</text><text x=\"329\" y=\"385\" class=\"xs mid b\">= leptospirosis รุนแรง</text><text x=\"220\" y=\"412\" class=\"xs mid b\">รุนแรง: penicillin G / ceftriaxone · ไม่รุนแรง: doxycycline</text></g></svg>",
+    "steps": [
+     {
+      "t": "เข้าทางผิวที่มีแผลและเยื่อบุ",
+      "cap": "เชื้อ *Leptospira* ออกมากับ **ปัสสาวะหนู** ปนในน้ำท่วม/นา → ไชเข้าทาง **ผิวที่มีแผลหรือเยื่อบุ** (ตา จมูก ปาก) → เข้ากระแสเลือด (leptospiremia) และทำร้าย **endothelium** ทั่วตัว"
+     },
+     {
+      "t": "ตาแดง ปวดน่อง",
+      "cap": "หลอดเลือดเยื่อบุตาขยายจาก endothelium บาดเจ็บ → **ตาแดงไม่มีขี้ตา (conjunctival suffusion)** · เชื้อเข้ากล้ามเนื้อ → **myositis ปวดน่องมาก** CPK ขึ้นได้"
+     },
+     {
+      "t": "ตับ: เหลืองมาก ตับตายน้อย",
+      "cap": "รอยต่อระหว่างเซลล์ตับหลุด → **น้ำดีรั่วกลับเข้าเลือด** ทั้งที่เซลล์ตับตายน้อย → **bilirubin สูงมาก แต่ AST/ALT ขึ้นเล็กน้อย** — ช่วยแยกจากตับอักเสบจากไวรัส"
+     },
+     {
+      "t": "ไต: AKI ที่ K ต่ำ",
+      "cap": "เชื้อเกาะท่อไต → **tubulointerstitial nephritis** → ดูด Na กลับไม่ได้ Na ไปถึงท่อส่วนปลายมาก → **K รั่วทิ้ง** · ได้ **AKI แบบ non-oliguric + hypokalemia** ต่างจาก AKI ทั่วไปที่ K สูง"
+     },
+     {
+      "t": "ปอด: เลือดออกในถุงลม",
+      "cap": "Endothelium หลอดเลือดฝอยในปอดเสียหาย → **เลือดออกในถุงลม** ไอเป็นเลือด หายใจล้มเหลว — ตายได้เร็ว · ไข้ + ไอเลือดหลังน้ำท่วม → ให้ยาทันที"
+     },
+     {
+      "t": "สรุป: Weil disease และยา",
+      "cap": "**ตัวเหลือง + ไตวาย + เลือดออก** = Weil disease · รุนแรงให้ **penicillin G หรือ ceftriaxone** ไม่รุนแรงให้ **doxycycline** · ไม่แน่ใจ lepto หรือ scrub typhus → ceftriaxone + doxycycline คลุมทั้งคู่"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-hiv-03",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "hiv-acute",
+    "title": "Acute HIV — ไวรัสพุ่ง CD4 ลำไส้หาย แล้วอาการคล้าย mononucleosis",
+    "svg": "<svg viewBox=\"0 0 440 418\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: HIV ผ่านเยื่อบุ dendritic cell พาไปต่อมน้ำเหลือง ไวรัสแบ่งตัวจนปริมาณในเลือดหลายล้าน CD4 ในลำไส้ถูกทำลาย cytokine ทำให้ไข้ ผื่น ต่อมโต จากนั้น CD8 และแอนติบอดีคุมไวรัสลงสู่ set point ช่วงนี้ตรวจ RNA และ p24 บวกแต่แอนติบอดียังลบ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"14\" width=\"120\" height=\"60\" rx=\"8\" class=\"sk\"/><text x=\"68\" y=\"34\" class=\"xs b mid\">เยื่อบุอวัยวะเพศ</text><text x=\"68\" y=\"50\" class=\"xs mid\">ไวรัสผ่านเข้า</text><g><circle cx=\"40\" cy=\"63\" r=\"3\" class=\"badf pl\"/><circle cx=\"68\" cy=\"64\" r=\"3\" class=\"badf pl\"/><circle cx=\"96\" cy=\"63\" r=\"3\" class=\"badf pl\"/></g><path d=\"M130,44 L160,44\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><circle cx=\"196\" cy=\"44\" r=\"32\" class=\"wa\"/><text x=\"196\" y=\"41\" class=\"xs mid b\">Dendritic</text><text x=\"196\" y=\"55\" class=\"xs mid\">cell</text><path d=\"M230,44 L270,44\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><rect x=\"274\" y=\"14\" width=\"158\" height=\"60\" rx=\"28\" class=\"ok\"/><text x=\"353\" y=\"36\" class=\"sm b mid\">ต่อมน้ำเหลือง</text><text x=\"170\" y=\"98\" class=\"xs mid mu\" data-x=\"2\">วัน 0–10: eclipse — ยังไม่มีการตรวจใดเจอ</text><g data-s=\"2\"><text x=\"353\" y=\"56\" class=\"xs mid tbad b\">CD4 ติดเชื้อ แบ่งตัวระเบิด</text><path d=\"M353,76 L353,116\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><rect x=\"8\" y=\"120\" width=\"424\" height=\"42\" rx=\"12\" class=\"bad\"/><text x=\"200\" y=\"146\" class=\"xs mid b tbad\">เลือด: VL หลายล้าน copies/mL — แพร่เชื้อง่ายที่สุด</text></g><g data-s=\"2\" data-x=\"5\"><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-0.0s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-0.5s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-1.0s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-1.5s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-2.0s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-2.5s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-0.0s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-0.57s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-1.14s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-1.71s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-2.28s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-2.8499999999999996s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle cx=\"24\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"24\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"50\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"50\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"76\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"76\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"102\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"102\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"128\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"128\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"154\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"154\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"180\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"180\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"206\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"206\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"232\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"232\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"258\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"258\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"284\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"284\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"310\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"310\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"336\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"336\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"362\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"362\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"388\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"388\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"414\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"414\" cy=\"154\" r=\"3\" class=\"badf\"/></g><g data-s=\"3\"><path d=\"M108,164 L108,176\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"8\" y=\"180\" width=\"200\" height=\"72\" rx=\"8\" class=\"ms\"/><text x=\"108.0\" y=\"198\" class=\"mid sm b\">ลำไส้ (GALT)</text><text x=\"108.0\" y=\"214\" class=\"mid xs\">CD4 ในเยื่อบุลำไส้ถูกทำลายมาก</text><text x=\"108.0\" y=\"230\" class=\"mid xs\">CD4 ลดฮวบชั่วคราว</text><text x=\"108.0\" y=\"246\" class=\"mid xs b tbad\">→ เชื้อราในปากได้</text></g><g data-s=\"4\"><path d=\"M328,164 L328,176\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"224\" y=\"180\" width=\"208\" height=\"72\" rx=\"8\" class=\"bad\"/><text x=\"328.0\" y=\"198\" class=\"mid xs b\">Cytokine: IFN-α TNF-α IL-6</text><text x=\"328.0\" y=\"214\" class=\"mid xs\">ไข้ ผื่น เจ็บคอ แผลในปาก</text><text x=\"328.0\" y=\"230\" class=\"mid xs\">ต่อมโต · ปวดศีรษะ</text><text x=\"328.0\" y=\"246\" class=\"mid xs b tbad\">2–4 สัปดาห์ · คล้าย mono</text></g><g data-s=\"5\"><circle cx=\"60\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"300\" cy=\"154\" r=\"3\" class=\"badf\"/><circle cx=\"400\" cy=\"130\" r=\"3\" class=\"badf\"/><circle cx=\"24\" cy=\"142\" r=\"5\" class=\"okf\"/><circle cx=\"412\" cy=\"142\" r=\"5\" class=\"okf\"/><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M16,128 L424,128\"/></circle><circle r=\"3\" class=\"badf\"><animateMotion dur=\"3.4s\" begin=\"-1.7s\" repeatCount=\"indefinite\" path=\"M16,156 L424,156\"/></circle><circle r=\"5\" class=\"okf\"><animateMotion dur=\"4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M424,142 L16,142\"/></circle><circle r=\"5\" class=\"okf\"><animateMotion dur=\"4s\" begin=\"-2s\" repeatCount=\"indefinite\" path=\"M424,142 L16,142\"/></circle><rect x=\"8\" y=\"268\" width=\"424\" height=\"50\" rx=\"8\" class=\"ok\"/><text x=\"220.0\" y=\"286\" class=\"mid xs b tok\">CD8 T cell + แอนติบอดี คุมไวรัส → VL ลงสู่ set point</text><text x=\"220.0\" y=\"302\" class=\"mid xs\">อาการหายเอง → clinical latency 7–10 ปี (CD4 ยังค่อย ๆ ลด)</text></g><g data-s=\"6\"><text x=\"8\" y=\"344\" class=\"xs b\">ตรวจในช่วง acute:</text><rect x=\"8\" y=\"352\" width=\"130\" height=\"34\" rx=\"8\" class=\"ok\"/><text x=\"73\" y=\"374\" class=\"sm b mid tok\">HIV RNA +</text><rect x=\"150\" y=\"352\" width=\"130\" height=\"34\" rx=\"8\" class=\"ok\"/><text x=\"215\" y=\"374\" class=\"sm b mid tok\">p24 antigen +</text><rect x=\"292\" y=\"352\" width=\"140\" height=\"34\" rx=\"8\" class=\"bad\"/><text x=\"362\" y=\"374\" class=\"sm b mid tbad\">Antibody ยังลบ</text><text x=\"220\" y=\"408\" class=\"xs mid b tac\">→ ส่ง 4th generation (มี p24) หรือ HIV RNA · เป็น STI ใด ๆ → ตรวจ HIV</text></g></svg>",
+    "steps": [
+     {
+      "t": "เข้าทางเยื่อบุ → ต่อมน้ำเหลือง",
+      "cap": "HIV ผ่านเยื่อบุ → **dendritic cell** จับแล้วพาไปส่ง CD4 ใน **ต่อมน้ำเหลือง** · ช่วงราว 10 วันแรก (**eclipse**) ไวรัสยังน้อย ไม่มีการตรวจใดเจอ"
+     },
+     {
+      "t": "ไวรัสพุ่งสูงสุด",
+      "cap": "CD4 ในต่อมน้ำเหลืองติดเชื้อและผลิตไวรัสแบบระเบิด → **VL หลายล้าน copies/mL** · ยังไม่มีภูมิเฉพาะมาคุม → **ช่วงนี้แพร่เชื้อง่ายที่สุด**"
+     },
+     {
+      "t": "CD4 ในลำไส้หาย",
+      "cap": "CD4 จำนวนมากที่สุดของร่างกายอยู่ใน **เยื่อบุลำไส้ (GALT)** และถูกทำลายไปมากในช่วงนี้ → **CD4 ลดฮวบชั่วคราว** จึงเห็น **เชื้อราในปากได้แม้เพิ่งติดเชื้อ**"
+     },
+     {
+      "t": "Acute retroviral syndrome",
+      "cap": "**IFN-α, TNF-α, IL-6** หลั่งทั่วตัว → ไข้ อ่อนเพลีย **ผื่น maculopapular** เจ็บคอ **แผลในปากที่เจ็บ** ต่อมโต ปวดศีรษะ ใน **2–4 สัปดาห์** หลังสัมผัส · คล้าย mononucleosis · **ราว 30% ไม่มีอาการ**"
+     },
+     {
+      "t": "ภูมิคุมได้ → set point",
+      "cap": "**CD8 T cell** และแอนติบอดีขึ้น → VL ลดลงจนคงที่ที่ **set point** (ยิ่งสูงโรคยิ่งเร็ว) อาการหายเอง → **clinical latency 7–10 ปี** ที่ CD4 ยังลดลงช้า ๆ ตลอด"
+     },
+     {
+      "t": "กับดักการตรวจ",
+      "cap": "ช่วง acute **HIV RNA และ p24 บวก แต่แอนติบอดียังลบ** → ต้องส่ง **4th generation (Ag/Ab) หรือ HIV RNA** · ข้อสอบชอบถาม: วินิจฉัย **STI ใด ๆ ต้องตรวจ HIV** และคิดถึง acute HIV ร่วม (แยก secondary syphilis)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-hiv-08",
+   "after": "ยาตีกันที่ต้องรู้",
+   "anim": {
+    "key": "hiv-rif-dtg",
+    "title": "Rifampicin ลดระดับ dolutegravir — ทำไมต้องให้ 50 มก. วันละ 2 ครั้ง",
+    "svg": "<svg viewBox=\"0 0 440 412\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: rifampicin กระตุ้น PXR ในเซลล์ตับให้สร้างเอนไซม์ CYP3A4 และ UGT1A1 มากขึ้น dolutegravir ถูกกำจัดเร็ว ระดับยาต่ำสุดตกใต้ระดับที่ต้องการ เพิ่มเป็นวันละสองครั้งจึงกลับมาเหนือเส้น พร้อมตารางยาต้านที่ใช้คู่ rifampicin\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"14\" width=\"206\" height=\"172\" rx=\"16\" class=\"sk\"/><text x=\"111\" y=\"34\" class=\"sm b mid\">เซลล์ตับ</text><circle cx=\"56\" cy=\"92\" r=\"26\" class=\"bx\"/><text x=\"56\" y=\"89\" class=\"xs mid mu\">nucleus</text><text x=\"56\" y=\"103\" class=\"xs mid b\">PXR</text><rect x=\"112\" y=\"52\" width=\"92\" height=\"22\" rx=\"11\" class=\"wa\"/><text x=\"158\" y=\"67\" class=\"xs mid b\">CYP3A4</text><rect x=\"112\" y=\"80\" width=\"92\" height=\"22\" rx=\"11\" class=\"wa\"/><text x=\"158\" y=\"95\" class=\"xs mid b\">UGT1A1</text><g data-s=\"2\"><rect x=\"112\" y=\"108\" width=\"92\" height=\"22\" rx=\"11\" class=\"wa\"/><text x=\"158\" y=\"123\" class=\"xs mid b\">CYP3A4</text><rect x=\"112\" y=\"136\" width=\"92\" height=\"22\" rx=\"11\" class=\"wa\"/><text x=\"158\" y=\"151\" class=\"xs mid b\">UGT1A1</text><rect x=\"112\" y=\"160\" width=\"92\" height=\"22\" rx=\"11\" class=\"wa\"/><text x=\"158\" y=\"175\" class=\"xs mid b\">CYP3A4</text><circle cx=\"34\" cy=\"150\" r=\"9\" class=\"badf\"/><text x=\"62\" y=\"172\" class=\"xs mid b tbad\">Rifampicin</text><path d=\"M40,142 L50,122\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M82,100 L106,116\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"3\"><circle r=\"4\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M226,60 L160,110\"/></circle><circle r=\"4\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-0.8s\" repeatCount=\"indefinite\" path=\"M226,90 L160,140\"/></circle><text x=\"111\" y=\"204\" class=\"xs mid b tbad\">DTG ถูกกำจัดเร็วขึ้น</text></g><path d=\"M242,180 L428,180 M242,180 L242,22\" class=\"ln w2\"/><text x=\"248\" y=\"14\" class=\"xs mu\">ระดับ DTG ในเลือด</text><text x=\"335\" y=\"196\" class=\"xs mid mu\">เวลา 0 → 48 ชม.</text><path d=\"M242,152.6 L428,152.6\" class=\"lmu da\"/><path d=\"M300,26 L322,26\" class=\"lmu da\"/><text x=\"428\" y=\"30\" class=\"xs end mu\">ระดับที่ต้องการ</text><path d=\"M242.0,135.5 L243.0,103.2 L243.9,82.2 L244.9,68.7 L245.8,60.2 L246.8,55.0 L247.8,52.2 L248.7,50.8 L249.7,50.4 L250.7,50.7 L251.6,51.4 L252.6,52.4 L253.6,53.5 L254.5,54.8 L255.5,56.2 L256.4,57.6 L257.4,59.1 L258.4,60.5 L259.3,62.0 L260.3,63.4 L261.2,64.8 L262.2,66.3 L263.2,67.7 L264.1,69.1 L265.1,70.4 L266.1,71.8 L267.0,73.1 L268.0,74.5 L268.9,75.8 L269.9,77.1 L270.9,78.3 L271.8,79.6 L272.8,80.9 L273.8,82.1 L274.7,83.3 L275.7,84.5 L276.6,85.7 L277.6,86.9 L278.6,88.0 L279.5,89.2 L280.5,90.3 L281.5,91.4 L282.4,92.5 L283.4,93.6 L284.4,94.7 L285.3,95.7 L286.3,96.8 L287.2,97.8 L288.2,98.8 L289.2,99.8 L290.1,100.8 L291.1,101.8 L292.1,102.8 L293.0,103.7 L294.0,104.7 L294.9,105.6 L295.9,106.5 L296.9,107.5 L297.8,108.4 L298.8,109.3 L299.8,110.1 L300.7,111.0 L301.7,111.9 L302.6,112.7 L303.6,113.5 L304.6,114.4 L305.5,115.2 L306.5,116.0 L307.4,116.8 L308.4,117.6 L309.4,118.3 L310.3,119.1 L311.3,119.9 L312.3,120.6 L313.2,121.3 L314.2,122.1 L315.1,122.8 L316.1,123.5 L317.1,124.2 L318.0,124.9 L319.0,125.6 L320.0,126.3 L320.9,126.9 L321.9,127.6 L322.9,128.2 L323.8,128.9 L324.8,129.5 L325.7,130.1 L326.7,130.8 L327.7,131.4 L328.6,132.0 L329.6,132.6 L330.6,133.2 L331.5,133.7 L332.5,134.3 L333.4,134.9 L334.4,135.4 L335.4,103.2 L336.3,82.2 L337.3,68.7 L338.2,60.2 L339.2,55.0 L340.2,52.1 L341.1,50.8 L342.1,50.4 L343.1,50.6 L344.0,51.4 L345.0,52.4 L345.9,53.5 L346.9,54.8 L347.9,56.2 L348.8,57.6 L349.8,59.1 L350.8,60.5 L351.7,62.0 L352.7,63.4 L353.6,64.8 L354.6,66.3 L355.6,67.7 L356.5,69.1 L357.5,70.4 L358.5,71.8 L359.4,73.1 L360.4,74.5 L361.4,75.8 L362.3,77.1 L363.3,78.3 L364.2,79.6 L365.2,80.8 L366.2,82.1 L367.1,83.3 L368.1,84.5 L369.1,85.7 L370.0,86.9 L371.0,88.0 L371.9,89.2 L372.9,90.3 L373.9,91.4 L374.8,92.5 L375.8,93.6 L376.8,94.7 L377.7,95.7 L378.7,96.8 L379.6,97.8 L380.6,98.8 L381.6,99.8 L382.5,100.8 L383.5,101.8 L384.5,102.8 L385.4,103.7 L386.4,104.7 L387.3,105.6 L388.3,106.5 L389.3,107.5 L390.2,108.4 L391.2,109.2 L392.1,110.1 L393.1,111.0 L394.1,111.9 L395.0,112.7 L396.0,113.5 L397.0,114.4 L397.9,115.2 L398.9,116.0 L399.9,116.8 L400.8,117.6 L401.8,118.3 L402.7,119.1 L403.7,119.9 L404.7,120.6 L405.6,121.3 L406.6,122.1 L407.6,122.8 L408.5,123.5 L409.5,124.2 L410.4,124.9 L411.4,125.6 L412.4,126.3 L413.3,126.9 L414.3,127.6 L415.2,128.2 L416.2,128.9 L417.2,129.5 L418.1,130.1 L419.1,130.8 L420.1,131.4 L421.0,132.0 L422.0,132.6 L423.0,133.2 L423.9,133.7 L424.9,134.3 L425.8,134.9 L426.8,135.4\" class=\"lok w3\" data-x=\"3\"/><path d=\"M242.0,169.7 L243.0,138.4 L243.9,118.3 L244.9,105.7 L245.8,98.0 L246.8,93.7 L247.8,91.5 L248.7,90.9 L249.7,91.1 L250.7,92.0 L251.6,93.4 L252.6,94.9 L253.6,96.6 L254.5,98.4 L255.5,100.3 L256.4,102.1 L257.4,104.0 L258.4,105.8 L259.3,107.6 L260.3,109.4 L261.2,111.1 L262.2,112.8 L263.2,114.4 L264.1,116.0 L265.1,117.6 L266.1,119.2 L267.0,120.7 L268.0,122.1 L268.9,123.5 L269.9,124.9 L270.9,126.3 L271.8,127.6 L272.8,128.9 L273.8,130.2 L274.7,131.4 L275.7,132.6 L276.6,133.8 L277.6,134.9 L278.6,136.0 L279.5,137.1 L280.5,138.2 L281.5,139.2 L282.4,140.2 L283.4,141.2 L284.4,142.2 L285.3,143.1 L286.3,144.0 L287.2,144.9 L288.2,145.8 L289.2,146.6 L290.1,147.4 L291.1,148.2 L292.1,149.0 L293.0,149.8 L294.0,150.5 L294.9,151.3 L295.9,152.0 L296.9,152.7 L297.8,153.3 L298.8,154.0 L299.8,154.6 L300.7,155.3 L301.7,155.9 L302.6,156.5 L303.6,157.0 L304.6,157.6 L305.5,158.2 L306.5,158.7 L307.4,159.2 L308.4,159.7 L309.4,160.2 L310.3,160.7 L311.3,161.2 L312.3,161.7 L313.2,162.1 L314.2,162.6 L315.1,163.0 L316.1,163.4 L317.1,163.8 L318.0,164.2 L319.0,164.6 L320.0,165.0 L320.9,165.4 L321.9,165.7 L322.9,166.1 L323.8,166.4 L324.8,166.8 L325.7,167.1 L326.7,167.4 L327.7,167.7 L328.6,168.0 L329.6,168.3 L330.6,168.6 L331.5,168.9 L332.5,169.2 L333.4,169.4 L334.4,169.7 L335.4,138.4 L336.3,118.3 L337.3,105.7 L338.2,98.0 L339.2,93.7 L340.2,91.5 L341.1,90.9 L342.1,91.1 L343.1,92.0 L344.0,93.4 L345.0,94.9 L345.9,96.6 L346.9,98.4 L347.9,100.3 L348.8,102.1 L349.8,104.0 L350.8,105.8 L351.7,107.6 L352.7,109.4 L353.6,111.1 L354.6,112.8 L355.6,114.4 L356.5,116.0 L357.5,117.6 L358.5,119.2 L359.4,120.7 L360.4,122.1 L361.4,123.5 L362.3,124.9 L363.3,126.3 L364.2,127.6 L365.2,128.9 L366.2,130.2 L367.1,131.4 L368.1,132.6 L369.1,133.8 L370.0,134.9 L371.0,136.0 L371.9,137.1 L372.9,138.2 L373.9,139.2 L374.8,140.2 L375.8,141.2 L376.8,142.2 L377.7,143.1 L378.7,144.0 L379.6,144.9 L380.6,145.8 L381.6,146.6 L382.5,147.4 L383.5,148.2 L384.5,149.0 L385.4,149.8 L386.4,150.5 L387.3,151.3 L388.3,152.0 L389.3,152.7 L390.2,153.3 L391.2,154.0 L392.1,154.6 L393.1,155.3 L394.1,155.9 L395.0,156.5 L396.0,157.0 L397.0,157.6 L397.9,158.2 L398.9,158.7 L399.9,159.2 L400.8,159.7 L401.8,160.2 L402.7,160.7 L403.7,161.2 L404.7,161.7 L405.6,162.1 L406.6,162.6 L407.6,163.0 L408.5,163.4 L409.5,163.8 L410.4,164.2 L411.4,164.6 L412.4,165.0 L413.3,165.4 L414.3,165.7 L415.2,166.1 L416.2,166.4 L417.2,166.8 L418.1,167.1 L419.1,167.4 L420.1,167.7 L421.0,168.0 L422.0,168.3 L423.0,168.6 L423.9,168.9 L424.9,169.2 L425.8,169.4 L426.8,169.7\" class=\"lbad w3\" data-s=\"3\" data-x=\"4\"/><path d=\"M242.0,135.4 L243.0,105.0 L243.9,85.7 L244.9,73.9 L245.8,67.0 L246.8,63.4 L247.8,62.1 L248.7,62.1 L249.7,63.1 L250.7,64.7 L251.6,66.7 L252.6,68.9 L253.6,71.3 L254.5,73.7 L255.5,76.1 L256.4,78.6 L257.4,81.0 L258.4,83.4 L259.3,85.8 L260.3,88.1 L261.2,90.3 L262.2,92.5 L263.2,94.7 L264.1,96.8 L265.1,98.8 L266.1,100.8 L267.0,102.8 L268.0,104.7 L268.9,106.5 L269.9,108.4 L270.9,110.1 L271.8,111.9 L272.8,113.5 L273.8,115.2 L274.7,116.8 L275.7,118.3 L276.6,119.9 L277.6,121.3 L278.6,122.8 L279.5,124.2 L280.5,125.6 L281.5,126.9 L282.4,128.2 L283.4,129.5 L284.4,130.8 L285.3,132.0 L286.3,133.2 L287.2,134.3 L288.2,135.4 L289.2,105.0 L290.1,85.7 L291.1,73.9 L292.1,67.0 L293.0,63.4 L294.0,62.1 L294.9,62.1 L295.9,63.1 L296.9,64.7 L297.8,66.7 L298.8,68.9 L299.8,71.3 L300.7,73.7 L301.7,76.1 L302.6,78.6 L303.6,81.0 L304.6,83.4 L305.5,85.8 L306.5,88.1 L307.4,90.3 L308.4,92.5 L309.4,94.7 L310.3,96.8 L311.3,98.8 L312.3,100.8 L313.2,102.8 L314.2,104.7 L315.1,106.5 L316.1,108.4 L317.1,110.1 L318.0,111.9 L319.0,113.5 L320.0,115.2 L320.9,116.8 L321.9,118.3 L322.9,119.9 L323.8,121.3 L324.8,122.8 L325.7,124.2 L326.7,125.6 L327.7,126.9 L328.6,128.2 L329.6,129.5 L330.6,130.8 L331.5,132.0 L332.5,133.2 L333.4,134.3 L334.4,135.4 L335.4,105.0 L336.3,85.7 L337.3,73.9 L338.2,67.0 L339.2,63.4 L340.2,62.1 L341.1,62.1 L342.1,63.1 L343.1,64.7 L344.0,66.7 L345.0,68.9 L345.9,71.3 L346.9,73.7 L347.9,76.1 L348.8,78.6 L349.8,81.0 L350.8,83.4 L351.7,85.8 L352.7,88.1 L353.6,90.3 L354.6,92.5 L355.6,94.7 L356.5,96.8 L357.5,98.8 L358.5,100.8 L359.4,102.8 L360.4,104.7 L361.4,106.5 L362.3,108.4 L363.3,110.1 L364.2,111.9 L365.2,113.5 L366.2,115.2 L367.1,116.8 L368.1,118.3 L369.1,119.9 L370.0,121.3 L371.0,122.8 L371.9,124.2 L372.9,125.6 L373.9,126.9 L374.8,128.2 L375.8,129.5 L376.8,130.8 L377.7,132.0 L378.7,133.2 L379.6,134.3 L380.6,135.4 L381.6,105.0 L382.5,85.7 L383.5,73.9 L384.5,67.0 L385.4,63.4 L386.4,62.1 L387.3,62.1 L388.3,63.1 L389.3,64.7 L390.2,66.7 L391.2,68.9 L392.1,71.3 L393.1,73.7 L394.1,76.1 L395.0,78.6 L396.0,81.0 L397.0,83.4 L397.9,85.8 L398.9,88.1 L399.9,90.3 L400.8,92.5 L401.8,94.7 L402.7,96.8 L403.7,98.8 L404.7,100.8 L405.6,102.8 L406.6,104.7 L407.6,106.5 L408.5,108.4 L409.5,110.1 L410.4,111.9 L411.4,113.5 L412.4,115.2 L413.3,116.8 L414.3,118.3 L415.2,119.9 L416.2,121.3 L417.2,122.8 L418.1,124.2 L419.1,125.6 L420.1,126.9 L421.0,128.2 L422.0,129.5 L423.0,130.8 L423.9,132.0 L424.9,133.2 L425.8,134.3 L426.8,135.4\" class=\"lok w3\" data-s=\"4\"/><text x=\"335\" y=\"216\" class=\"xs mid b tok\" data-x=\"3\">50 มก. วันละครั้ง: trough เหนือเส้น</text><text x=\"335\" y=\"216\" class=\"xs mid b tbad\" data-s=\"3\" data-x=\"4\">+ rifampicin: trough ตกใต้เส้น</text><text x=\"335\" y=\"216\" class=\"xs mid b tok\" data-s=\"4\">+ rif: 50 มก. วันละ 2 ครั้ง → กลับเหนือเส้น</text><g data-s=\"5\"><rect x=\"8\" y=\"232\" width=\"424\" height=\"172\" rx=\"8\" class=\"bx\"/><text x=\"220\" y=\"254\" class=\"sm b mid\">ยาต้าน HIV ที่ใช้คู่ rifampicin</text><text x=\"22\" y=\"282\" class=\"sm b\">Dolutegravir</text><text x=\"160\" y=\"282\" class=\"sm b tok\">50 มก. วันละ 2 ครั้ง</text><text x=\"22\" y=\"310\" class=\"sm b\">Efavirenz 600</text><text x=\"160\" y=\"310\" class=\"sm tok\">ใช้ร่วมได้ ไม่ต้องปรับ</text><text x=\"22\" y=\"338\" class=\"sm b\">Boosted PI</text><text x=\"160\" y=\"338\" class=\"sm b tbad\">ห้ามใช้ร่วม — ระดับยาลดมาก</text><text x=\"22\" y=\"366\" class=\"sm b\">TAF</text><text x=\"160\" y=\"366\" class=\"sm tms\">ไม่แนะนำร่วม</text><text x=\"220\" y=\"394\" class=\"xs mid mu\">เอนไซม์ที่ถูกเหนี่ยวนำค้างราว 2 สัปดาห์หลังหยุด rifampicin</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: DTG วันละครั้งพอ",
+      "cap": "Dolutegravir ถูกกำจัดที่ตับด้วย **UGT1A1** (หลัก) และ **CYP3A4** · ครึ่งชีวิตยาวพอให้ **ระดับต่ำสุด (trough) อยู่เหนือระดับที่ต้องการ** เมื่อกินวันละครั้ง"
+     },
+     {
+      "t": "Rifampicin เหนี่ยวนำเอนไซม์",
+      "cap": "Rifampicin จับ **PXR** ในนิวเคลียส → เพิ่มการสร้าง **CYP3A4 และ UGT1A1** หลายเท่า (ใช้เวลาเป็นวัน ๆ กว่าจะเต็มที่) — เป็นเหตุของยาตีกันส่วนใหญ่ในผู้ป่วย HIV ที่เป็นวัณโรค"
+     },
+     {
+      "t": "Trough ตก → ไวรัสดื้อยา",
+      "cap": "DTG ถูกกำจัดเร็วขึ้น ระดับยา **ตกใต้เส้นช่วงท้ายของแต่ละวัน** → ไวรัสแบ่งตัวได้และเสี่ยง **ดื้อ INSTI**"
+     },
+     {
+      "t": "แก้: 50 มก. วันละ 2 ครั้ง",
+      "cap": "ให้ **DTG 50 มก. ทุก 12 ชม.** ระหว่างได้ rifampicin → trough กลับเหนือเส้น · เอนไซม์ยังค้างหลังหยุด rifampicin ราว 2 สัปดาห์ จึงให้วันละ 2 ครั้ง **ต่ออีก 2 สัปดาห์** ก่อนกลับเป็นวันละครั้ง"
+     },
+     {
+      "t": "สรุปยาคู่ rifampicin",
+      "cap": "**DTG → 50 มก. วันละ 2 ครั้ง** · **EFV 600 ใช้ร่วมได้** ไม่ต้องปรับ · **boosted PI ห้ามใช้ร่วม** (ระดับลดมาก) · **TAF ไม่แนะนำ** · สูตรวัณโรค 4 เดือน (rifapentine) ใช้ได้เฉพาะคู่ EFV"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-hiv-11",
+   "after": "การรักษา",
+   "anim": {
+    "key": "hiv-pcp-steroid",
+    "title": "PCP — ทำไมให้ยาแล้วแย่ลงวันที่ 3–5 และ steroid ช่วยตรงไหน",
+    "svg": "<svg viewBox=\"0 0 440 412\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ถุงลมเต็มไปด้วย exudate เป็นฟองและเชื้อ Pneumocystis ผนังหนาทำให้ออกซิเจนแพร่ช้า หลังได้ TMP-SMX เชื้อตายปล่อยแอนติเจน neutrophil เข้ามาอักเสบมากขึ้นออกซิเจนแย่ลง steroid กดการอักเสบ และตารางลดขนาด prednisone 21 วัน\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"118\" y=\"30\" class=\"sm b mid\">ถุงลม (alveolus)</text><circle cx=\"118\" cy=\"140\" r=\"96\" class=\"bx\"/><circle cx=\"118\" cy=\"140\" r=\"96\" class=\"lms w5\" fill=\"none\"/><g><circle cx=\"80\" cy=\"110\" r=\"9\" class=\"ms\"/><circle cx=\"104\" cy=\"96\" r=\"7\" class=\"ms\"/><circle cx=\"130\" cy=\"108\" r=\"8\" class=\"ms\"/><circle cx=\"150\" cy=\"130\" r=\"7\" class=\"ms\"/><circle cx=\"92\" cy=\"140\" r=\"8\" class=\"ms\"/><circle cx=\"120\" cy=\"150\" r=\"9\" class=\"ms\"/><circle cx=\"150\" cy=\"170\" r=\"8\" class=\"ms\"/><circle cx=\"84\" cy=\"178\" r=\"7\" class=\"ms\"/><circle cx=\"110\" cy=\"190\" r=\"8\" class=\"ms\"/><circle cx=\"60\" cy=\"150\" r=\"7\" class=\"ms\"/><circle cx=\"140\" cy=\"84\" r=\"6\" class=\"ms\"/><circle cx=\"70\" cy=\"124\" r=\"6\" class=\"ms\"/></g><g><g data-x=\"2\"><circle cx=\"96\" cy=\"122\" r=\"5\" class=\"paf pl\"/><circle cx=\"136\" cy=\"140\" r=\"5\" class=\"paf pl\"/><circle cx=\"112\" cy=\"172\" r=\"5\" class=\"paf pl\"/><circle cx=\"70\" cy=\"164\" r=\"5\" class=\"paf pl\"/><circle cx=\"160\" cy=\"110\" r=\"5\" class=\"paf pl\"/></g></g><g data-s=\"2\"><path d=\"M92,118 L100,126 M100,118 L92,126\" class=\"lbad w2\"/><path d=\"M132,136 L140,144 M140,136 L132,144\" class=\"lbad w2\"/><path d=\"M108,168 L116,176 M116,168 L108,176\" class=\"lbad w2\"/><path d=\"M66,160 L74,168 M74,160 L66,168\" class=\"lbad w2\"/><path d=\"M156,106 L164,114 M164,106 L156,114\" class=\"lbad w2\"/></g><rect x=\"232\" y=\"40\" width=\"30\" height=\"210\" rx=\"14\" class=\"bad\"/><circle r=\"5\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M247,48 L247,244\"/></circle><circle r=\"5\" class=\"badf\"><animateMotion dur=\"3s\" begin=\"-1.5s\" repeatCount=\"indefinite\" path=\"M247,48 L247,244\"/></circle><text x=\"247\" y=\"30\" class=\"xs mid tbad\">หลอดเลือดฝอย</text><path d=\"M204,110 L228,110\" class=\"lwa w2 fl sl\" marker-end=\"url(#ah-wa)\"/><text x=\"214\" y=\"100\" class=\"xs mid twa b\">O₂</text><text x=\"110\" y=\"254\" class=\"xs mid\">ผนังหนา + exudate เป็นฟอง</text><g data-s=\"3\" data-x=\"4\"><circle cx=\"118\" cy=\"140\" r=\"96\" class=\"lbad w5\" fill=\"none\"/><circle r=\"6\" class=\"waf\"><animateMotion dur=\"2s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M232,180 L150,170\"/></circle><circle r=\"6\" class=\"waf\"><animateMotion dur=\"2.4s\" begin=\"-1s\" repeatCount=\"indefinite\" path=\"M232,200 L120,120\"/></circle><circle r=\"6\" class=\"waf\"><animateMotion dur=\"2.2s\" begin=\"-0.6s\" repeatCount=\"indefinite\" path=\"M232,90 L100,150\"/></circle><circle cx=\"172\" cy=\"150\" r=\"6\" class=\"waf\"/><circle cx=\"146\" cy=\"206\" r=\"6\" class=\"waf\"/><circle cx=\"88\" cy=\"92\" r=\"6\" class=\"waf\"/><circle cx=\"66\" cy=\"196\" r=\"6\" class=\"waf\"/></g><rect x=\"276\" y=\"40\" width=\"156\" height=\"56\" rx=\"8\" class=\"sk\"/><text x=\"354.0\" y=\"58\" class=\"mid xs b\">ก่อนรักษา</text><text x=\"354.0\" y=\"74\" class=\"mid xs\">O₂ แพร่ช้า · PaO₂ ↓</text><text x=\"354.0\" y=\"90\" class=\"mid xs\">A–a gradient กว้าง</text><g data-s=\"2\"><rect x=\"276\" y=\"104\" width=\"156\" height=\"42\" rx=\"8\" class=\"ok\"/><text x=\"354.0\" y=\"122\" class=\"mid xs b tok\">TMP-SMX → เชื้อตาย</text><text x=\"354.0\" y=\"138\" class=\"mid xs\">ให้ 21 วัน</text></g><g data-s=\"3\"><rect x=\"276\" y=\"154\" width=\"156\" height=\"56\" rx=\"8\" class=\"bad\"/><text x=\"354.0\" y=\"172\" class=\"mid xs b\">วัน 3–5: แอนติเจนหลุด</text><text x=\"354.0\" y=\"188\" class=\"mid xs\">neutrophil เข้าถุงลม</text><text x=\"354.0\" y=\"204\" class=\"mid xs b tbad\">PaO₂ แย่ลง!</text></g><g data-s=\"4\"><rect x=\"276\" y=\"218\" width=\"156\" height=\"56\" rx=\"8\" class=\"ac\"/><text x=\"354.0\" y=\"236\" class=\"mid xs b tac\">Steroid กดการอักเสบ</text><text x=\"354.0\" y=\"252\" class=\"mid xs\">PaO₂ &lt;70 หรือ A–a ≥35</text><text x=\"354.0\" y=\"268\" class=\"mid xs\">เริ่มภายใน 72 ชม.</text></g><g data-s=\"5\"><text x=\"20\" y=\"300\" class=\"sm b\">Prednisone รวม 21 วัน</text><rect x=\"20\" y=\"332\" width=\"95\" height=\"56\" rx=\"3\" class=\"ac\"/><text x=\"67\" y=\"326\" class=\"xs mid b\">40 มก. ×2</text><rect x=\"115\" y=\"360\" width=\"95\" height=\"28\" rx=\"3\" class=\"ac\"/><text x=\"162\" y=\"354\" class=\"xs mid b\">40 มก. ×1</text><rect x=\"210\" y=\"374\" width=\"209\" height=\"14\" rx=\"3\" class=\"ac\"/><text x=\"314\" y=\"368\" class=\"xs mid b\">20 มก. ×1</text><path d=\"M20,388 L420,388\" class=\"ln w2\"/><text x=\"67\" y=\"404\" class=\"xs mid\">วัน 1–5</text><text x=\"162\" y=\"404\" class=\"xs mid\">วัน 6–10</text><text x=\"314\" y=\"404\" class=\"xs mid\">วัน 11–21</text></g></svg>",
+    "steps": [
+     {
+      "t": "ถุงลมเต็มฟอง ผนังหนา",
+      "cap": "*Pneumocystis* เกาะ type I pneumocyte ถุงลมค่อย ๆ เต็มไปด้วย **exudate เป็นฟอง** ผนังหนา → O₂ แพร่ช้า **PaO₂ ต่ำ A–a gradient กว้าง** และ SpO₂ ตกเมื่อออกแรง"
+     },
+     {
+      "t": "TMP-SMX ฆ่าเชื้อ",
+      "cap": "**TMP-SMX** เป็นยาหลัก ให้ **21 วัน** → เชื้อในถุงลมถูกฆ่า (จุดม่วงกลายเป็นกากบาท)"
+     },
+     {
+      "t": "วัน 3–5: แย่ลงทั้งที่ยาได้ผล",
+      "cap": "เชื้อที่ตาย **ปล่อยแอนติเจนกระตุ้นการอักเสบ** → neutrophil และ cytokine เข้าถุงลม ผนังบวมขึ้น → **ออกซิเจนแย่ลงใน 3–5 วันแรก** — ไม่ได้แปลว่ายาล้มเหลว"
+     },
+     {
+      "t": "Steroid กดการอักเสบช่วงนี้",
+      "cap": "ถ้า **PaO₂ < 70 mmHg (room air) หรือ A–a gradient ≥ 35** → เพิ่ม corticosteroid **เริ่มให้เร็วที่สุดภายใน 72 ชม.** ของการรักษา → ลดการใส่ท่อช่วยหายใจและการตาย"
+     },
+     {
+      "t": "ตาราง prednisone 21 วัน",
+      "cap": "**40 มก. วันละ 2 ครั้ง วัน 1–5 → 40 มก. วันละครั้ง วัน 6–10 → 20 มก. วันละครั้ง วัน 11–21** · ข้อสอบชอบถามเกณฑ์ **70/35** และเหตุผลที่ steroid ช่วย"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "id-hiv-13",
+   "after": "ทำไมถึงมีอาการนี้ — cryptococcal meningitis",
+   "anim": {
+    "key": "hiv-crypto-course",
+    "title": "Cryptococcus จากปอดถึงสมอง — ตัดวงจรได้ตรงไหน",
+    "svg": "<svg viewBox=\"0 0 440 392\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: Cryptococcus เข้าทางปอด แอนติเจนของ capsule หลุดเข้าเลือดก่อนมีอาการจึงคัดกรอง CrAg ได้ เชื้อเข้าเยื่อหุ้มสมองโดยมีการอักเสบน้อย อุด arachnoid granulation ทำให้ความดันในกะโหลกสูงต้องเจาะระบายซ้ำ และรักษาด้วย amphotericin B กับ flucytosine โดยเลื่อน ART\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"10\" width=\"204\" height=\"62\" rx=\"8\" class=\"sk\"/><text x=\"110.0\" y=\"28\" class=\"mid sm b\">① ปอด</text><text x=\"110.0\" y=\"44\" class=\"mid xs\">สูดสปอร์ (มูลนกพิราบ)</text><text x=\"110.0\" y=\"60\" class=\"mid xs\">มักไม่มีอาการ · CD4 &lt; 100</text><rect x=\"224\" y=\"10\" width=\"208\" height=\"62\" rx=\"8\" class=\"wa\"/><text x=\"328.0\" y=\"28\" class=\"mid xs b twa\">Capsule polysaccharide หนา</text><text x=\"328.0\" y=\"44\" class=\"mid xs\">กันการจับกิน + กดการอักเสบ</text><text x=\"328.0\" y=\"60\" class=\"mid xs\">ไม่มี CD4 → ฆ่าเชื้อไม่ได้</text><g data-s=\"2\"><path d=\"M110,74 L110,90\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><circle r=\"4\" class=\"paf\"><animateMotion dur=\"1.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M110,74 L110,92\"/></circle><rect x=\"8\" y=\"94\" width=\"204\" height=\"60\" rx=\"8\" class=\"ms\"/><text x=\"110.0\" y=\"112\" class=\"mid sm b\">② กระแสเลือด</text><text x=\"110.0\" y=\"128\" class=\"mid xs\">แอนติเจน capsule (CrAg) หลุด</text><text x=\"110.0\" y=\"144\" class=\"mid xs b tbad\">CrAg บวกก่อนมีอาการหลายสัปดาห์</text><rect x=\"224\" y=\"94\" width=\"208\" height=\"60\" rx=\"8\" class=\"ok\"/><text x=\"328.0\" y=\"112\" class=\"mid xs b tok\">จุดตัดวงจร: คัดกรอง</text><text x=\"328.0\" y=\"128\" class=\"mid xs\">CD4 &lt; 100 → serum CrAg</text><text x=\"328.0\" y=\"144\" class=\"mid xs\">บวก → เจาะหลัง + fluconazole</text></g><g data-s=\"3\"><path d=\"M110,156 L110,172\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><circle r=\"4\" class=\"paf\"><animateMotion dur=\"1.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M110,156 L110,174\"/></circle><rect x=\"8\" y=\"176\" width=\"204\" height=\"60\" rx=\"8\" class=\"bad\"/><text x=\"110.0\" y=\"194\" class=\"mid sm b\">③ เยื่อหุ้มสมอง</text><text x=\"110.0\" y=\"210\" class=\"mid xs\">capsule กดการอักเสบ → CSF เซลล์น้อย</text><text x=\"110.0\" y=\"226\" class=\"mid xs b tbad\">คอแข็งเพียง 1/4–1/3 ราย</text><rect x=\"224\" y=\"176\" width=\"208\" height=\"60\" rx=\"8\" class=\"ac\"/><text x=\"328.0\" y=\"194\" class=\"mid xs b tac\">ปวดศีรษะเรื้อรังใน PLWH</text><text x=\"328.0\" y=\"210\" class=\"mid xs\">→ เจาะหลังแม้คอไม่แข็ง</text><text x=\"328.0\" y=\"226\" class=\"mid xs\">India ink · CSF CrAg · culture</text></g><g data-s=\"4\"><path d=\"M110,238 L110,254\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><circle r=\"4\" class=\"paf\"><animateMotion dur=\"1.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M110,238 L110,256\"/></circle><rect x=\"8\" y=\"258\" width=\"204\" height=\"60\" rx=\"8\" class=\"bad\"/><text x=\"110.0\" y=\"276\" class=\"mid sm b\">④ อุด arachnoid granulation</text><text x=\"110.0\" y=\"292\" class=\"mid xs\">CSF ซึมกลับหลอดเลือดดำไม่ได้</text><text x=\"110.0\" y=\"308\" class=\"mid xs b tbad\">ICP ≥ 25 cmH₂O: ซึม ตามัว CN VI</text><rect x=\"224\" y=\"258\" width=\"208\" height=\"60\" rx=\"8\" class=\"bad\"/><text x=\"328.0\" y=\"276\" class=\"mid xs b tbad\">วัด opening pressure ทุกครั้ง</text><text x=\"328.0\" y=\"292\" class=\"mid xs b\">→ therapeutic LP ซ้ำ</text><text x=\"328.0\" y=\"308\" class=\"mid xs\">steroid/mannitol ไม่ช่วย</text></g><g data-s=\"5\"><rect x=\"8\" y=\"336\" width=\"424\" height=\"46\" rx=\"8\" class=\"ok\"/><text x=\"220.0\" y=\"354\" class=\"mid xs b tok\">Induction: amphotericin B + flucytosine → fluconazole</text><text x=\"220.0\" y=\"370\" class=\"mid xs\">เลื่อน ART ราว 4–6 สัปดาห์ — กัน IRIS ในสมอง</text></g></svg>",
+    "steps": [
+     {
+      "t": "เข้าทางปอด",
+      "cap": "สูดสปอร์ *C. neoformans* (มูลนกพิราบ) เข้าปอด มักไม่มีอาการ · **capsule polysaccharide** กันการจับกินและกดการอักเสบ เมื่อ **CD4 < 100** macrophage จึงฆ่าเชื้อไม่ได้"
+     },
+     {
+      "t": "CrAg ในเลือดมาก่อน",
+      "cap": "แอนติเจนของ capsule (**CrAg**) หลุดเข้าเลือด **หลายสัปดาห์ก่อนเชื้อขึ้นสมอง** → **คัดกรอง serum CrAg ใน CD4 < 100** · บวกแต่ไม่มีอาการ → เจาะหลัง + **fluconazole แบบ pre-emptive**"
+     },
+     {
+      "t": "Meningitis ที่อักเสบน้อย",
+      "cap": "Capsule + CD4 ต่ำ → เยื่อหุ้มสมองอักเสบน้อย CSF เซลล์น้อย **คอแข็งเพียง 1/4–1/3** → **ปวดศีรษะเรื้อรังในผู้ติด HIV ต้องเจาะหลังแม้คอไม่แข็ง** · ส่ง India ink, CSF CrAg, culture"
+     },
+     {
+      "t": "ICP สูงเพราะทางออกตัน",
+      "cap": "เชื้อและ polysaccharide **อุด arachnoid granulation** → CSF ซึมกลับหลอดเลือดดำไม่ได้ → **ICP ≥ 25 cmH₂O** ซึม ตามัว CN VI · แก้ด้วย **therapeutic LP ซ้ำ** — steroid, mannitol, acetazolamide **ไม่ช่วย**"
+     },
+     {
+      "t": "รักษาและจังหวะ ART",
+      "cap": "**Amphotericin B + flucytosine** (induction) → fluconazole consolidation/maintenance · **เลื่อน ART ราว 4–6 สัปดาห์** เพราะ IRIS ในสมองอันตรายถึงชีวิต — ข้อยกเว้นสำคัญของ rapid ART"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "id-sep-01",
+   "name": "qSOFA = HAT",
+   "what": "เกณฑ์ quick SOFA ข้างเตียง (≥ 2 ข้อ = เสี่ยงตายสูง)",
+   "lines": [
+    [
+     "H",
+     "**H**ypotension — SBP ≤ 100 mmHg"
+    ],
+    [
+     "A",
+     "**A**ltered mentation — สับสน (GCS < 15)"
+    ],
+    [
+     "T",
+     "**T**achypnea — RR ≥ 22/min"
+    ]
+   ],
+   "note": "SSC 2026 **ไม่ใช้ qSOFA เป็นตะแกรงคัดกรอง** (ไวไม่พอ) — ใช้ NEWS/MEWS/SIRS คัดกรอง ส่วน qSOFA ใช้บอกความเสี่ยงตาย · วินิจฉัย sepsis ใช้ SOFA เพิ่ม ≥ 2",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำรา emergency/การพยาบาล (เกณฑ์จาก Sepsis-3, 2016)"
+  },
+  {
+   "sec": "id-sep-04",
+   "name": "Sepsis Six = BUFALO",
+   "what": "สิ่งที่ต้องทำในชั่วโมงแรก — 'เอา 3 ให้ 3'",
+   "lines": [
+    [
+     "B",
+     "**B**lood cultures ≥ 2 ชุดก่อนยา (ถ้าไม่ทำให้ยาช้า)"
+    ],
+    [
+     "U",
+     "**U**rine output — ติดตาม ≥ 0.5 mL/kg/h"
+    ],
+    [
+     "F",
+     "**F**luids — crystalloid ≥ 30 mL/kg ใน 3 ชม. ถ้า hypoperfusion"
+    ],
+    [
+     "A",
+     "**A**ntibiotics — ตามนาฬิกา 1 · 1 · 3 · รอ"
+    ],
+    [
+     "L",
+     "**L**actate — วัดและวัดซ้ำดูแนวโน้ม"
+    ],
+    [
+     "O",
+     "**O**xygen — ให้ตามเป้า SpO₂"
+    ]
+   ],
+   "note": "Sepsis Six เป็น bundle ของอังกฤษ (ให้ทุกอย่างภายใน 1 ชม.) · ในคาบใช้ SSC 2026: เวลาให้ยาขึ้นกับระดับความมั่นใจ × ช็อก (possible ไม่ช็อก → ภายใน 3 ชม.) และขนาดสารน้ำ 30 mL/kg ใน 3 ชม.",
+   "src": "Sepsis Six (UK Sepsis Trust) — BUFALO เป็นหลักจำที่ใช้กันแพร่หลายในสหราชอาณาจักร"
+  },
+  {
+   "sec": "id-sep-07",
+   "name": "We're ECSTaTiC about bacteriostatics",
+   "what": "ยาปฏิชีวนะกลุ่ม bacteriostatic",
+   "lines": [
+    [
+     "E",
+     "**E**rythromycin (macrolide)"
+    ],
+    [
+     "C",
+     "**C**lindamycin"
+    ],
+    [
+     "S",
+     "**S**ulfamethoxazole"
+    ],
+    [
+     "T",
+     "**T**rimethoprim"
+    ],
+    [
+     "T",
+     "**T**etracyclines (doxycycline)"
+    ],
+    [
+     "C",
+     "**C**hloramphenicol"
+    ]
+   ],
+   "note": "ในคาบนับ **linezolid** เป็น bacteriostatic ด้วย · TMP + SMX ใช้คู่กันเป็น bactericidal ได้ · endocarditis, meningitis, neutropenia ต้องใช้ bactericidal",
+   "src": "First Aid for the USMLE Step 1 / หลักจำที่ใช้กันทั่วไป"
+  },
+  {
+   "sec": "id-sep-07",
+   "name": "Very Finely Proficient At Cell Murder",
+   "what": "ยาปฏิชีวนะกลุ่ม bactericidal",
+   "lines": [
+    [
+     "V",
+     "**V**ancomycin"
+    ],
+    [
+     "F",
+     "**F**luoroquinolones"
+    ],
+    [
+     "P",
+     "**P**enicillins (beta-lactam)"
+    ],
+    [
+     "A",
+     "**A**minoglycosides"
+    ],
+    [
+     "C",
+     "**C**ephalosporins"
+    ],
+    [
+     "M",
+     "**M**etronidazole"
+    ]
+   ],
+   "note": "Carbapenem ก็เป็น beta-lactam ที่ bactericidal · ใช้คู่กับ ECSTaTiC (bacteriostatic)",
+   "src": "หลักจำที่ใช้กันแพร่หลายในหมู่นักศึกษาแพทย์ (USMLE) คู่กับ ECSTaTiC"
+  },
+  {
+   "sec": "id-sep-08",
+   "name": "Mean GNATS caNNOT kill anaerobes",
+   "what": "ยากลุ่ม aminoglycoside พิษ และข้อจำกัด",
+   "lines": [
+    [
+     "GNATS",
+     "**G**entamicin · **N**eomycin · **A**mikacin · **T**obramycin · **S**treptomycin"
+    ],
+    [
+     "N",
+     "**N**ephrotoxicity — ไต (สัมพันธ์กับ trough ที่ค้างนาน)"
+    ],
+    [
+     "N",
+     "**N**euromuscular blockade"
+    ],
+    [
+     "O",
+     "**O**totoxicity — หู"
+    ],
+    [
+     "T",
+     "**T**eratogen"
+    ],
+    [
+     "kill",
+     "caNNOT **kill anaerobes** — ต้องใช้ O₂ ในการนำยาเข้าเซลล์เชื้อ"
+    ]
+   ],
+   "note": "เข้ากับคาบ: ให้ **ขนาดสูงวันละครั้ง** (concentration-dependent + post-antibiotic effect, พิษสัมพันธ์กับ trough) · ไม่ทำงานในหนองและสภาพกรด",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "id-sep-09",
+   "name": "4C antibiotics",
+   "what": "ยาปฏิชีวนะเสี่ยงสูงต่อ C. difficile",
+   "lines": [
+    [
+     "C",
+     "**C**lindamycin"
+    ],
+    [
+     "C",
+     "**C**ephalosporins (โดยเฉพาะรุ่น 2–4)"
+    ],
+    [
+     "C",
+     "**C**o-amoxiclav"
+    ],
+    [
+     "C",
+     "**C**iprofloxacin / fluoroquinolones"
+    ]
+   ],
+   "note": "ยาปฏิชีวนะทุกตัวก่อ *C. difficile* ได้ ไม่ใช่เฉพาะ 4C · รักษาด้วย **vancomycin กิน** หรือ fidaxomicin",
+   "src": "แนวทาง antimicrobial stewardship ของ NHS สหราชอาณาจักร ('4C antibiotics')"
+  },
+  {
+   "sec": "id-hiv-01",
+   "name": "Navir tease a protease",
+   "what": "จำกลุ่มยาต้าน HIV จากท้ายชื่อยา",
+   "lines": [
+    [
+     "-navir",
+     "**Protease inhibitor** — darunavir, lopinavir, atazanavir, ritonavir (\"navir tease a protease\")"
+    ],
+    [
+     "-tegravir",
+     "**INSTI** (in**tegr**ase) — dolutegravir, bictegravir, cabotegravir, raltegravir"
+    ]
+   ],
+   "note": "Lenacapavir ลงท้าย -capavir เป็น **capsid inhibitor** ไม่ใช่ PI · NNRTI ส่วนใหญ่ลงท้าย -virine (nevirapine, rilpivirine, doravirine) ยกเว้น efavirenz · NRTI ต้องจำเป็นรายตัว",
+   "src": "First Aid for the USMLE Step 1 (\"Navir tease a protease\") · -tegravir เป็น stem ชื่อยามาตรฐาน (WHO INN)"
+  },
+  {
+   "sec": "id-hiv-05",
+   "name": "5C",
+   "what": "หลักการให้บริการตรวจ HIV",
+   "lines": [
+    [
+     "C",
+     "**C**onsent — ได้รับความยินยอม"
+    ],
+    [
+     "C",
+     "**C**ounseling — ให้คำปรึกษาก่อนและหลังตรวจ"
+    ],
+    [
+     "C",
+     "**C**onfidential — เก็บเป็นความลับ"
+    ],
+    [
+     "C",
+     "**C**orrect test result — ผลถูกต้องชัดเจน"
+    ],
+    [
+     "C",
+     "**C**onnection to care — ผลบวกส่งเข้าระบบยาต้านโดยเร็ว"
+    ]
+   ],
+   "src": "WHO consolidated guidelines on HIV testing services / แนวทางไทย 2025"
+  },
+  {
+   "sec": "id-hiv-08",
+   "name": "Rifampin's 4 R's",
+   "what": "คุณสมบัติของ rifampicin ที่ต้องรู้ (รวมยาตีกัน)",
+   "lines": [
+    [
+     "R",
+     "**R**NA polymerase inhibitor"
+    ],
+    [
+     "R",
+     "**R**amps up microsomal cytochrome P-450 → DTG ต้องเป็น 50 มก. วันละ 2 ครั้ง · boosted PI ห้าม"
+    ],
+    [
+     "R",
+     "**R**ed/orange body fluids — ปัสสาวะ น้ำตาสีส้ม"
+    ],
+    [
+     "R",
+     "**R**apid resistance if used alone — ห้ามใช้เดี่ยว"
+    ]
+   ],
+   "note": "Rifampicin เหนี่ยวนำทั้ง CYP3A4 และ **UGT1A1** (ทางหลักที่กำจัด dolutegravir)",
+   "src": "First Aid for the USMLE Step 1 (antimycobacterials)"
+  },
+  {
+   "sec": "id-hiv-10",
+   "name": "RIPE",
+   "what": "ยาวัณโรคสูตรมาตรฐาน 4 ตัว",
+   "lines": [
+    [
+     "R",
+     "**R**ifampicin (R)"
+    ],
+    [
+     "I",
+     "**I**soniazid (H)"
+    ],
+    [
+     "P",
+     "**P**yrazinamide (Z)"
+    ],
+    [
+     "E",
+     "**E**thambutol (E)"
+    ]
+   ],
+   "note": "ไทยเขียนเป็น **2HRZE/4HR** — ผู้ติด HIV ใช้สูตรเดียวกัน · ระวังยาตีกันของ rifampicin กับยาต้าน (หัวข้อ 8)",
+   "src": "หลักจำที่ใช้กันทั่วไป (USMLE / ตำราอายุรศาสตร์)"
+  },
+  {
+   "sec": "id-hiv-12",
+   "name": "Histo hides",
+   "what": "ลักษณะเด่นของ Histoplasma ในเนื้อเยื่อ",
+   "lines": [
+    [
+     "Histo hides",
+     "yeast เล็ก 2–4 µm **ซ่อนอยู่ใน macrophage** (budding)"
+    ]
+   ],
+   "note": "ต่างจาก Talaromyces ที่แบ่งตัวแบบ fission มีผนังกลาง (central septum) ไม่ budding",
+   "src": "First Aid for the USMLE Step 1 (systemic mycoses)"
+  }
+ ]
+}

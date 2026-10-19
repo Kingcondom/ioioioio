@@ -1,0 +1,1124 @@
+{
+ "set": "cardio",
+ "items": [
+  {
+   "sec": "cardio-04-07",
+   "after": "Pulsus paradoxus — กลไกที่ต้องอธิบายได้",
+   "anim": {
+    "key": "c04-pulsus",
+    "title": "Pulsus paradoxus ใน tamponade — หายใจเข้าแล้วความดันตก",
+    "svg": "<svg viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: น้ำในเยื่อหุ้มหัวใจบีบหัวใจ หายใจเข้าเลือดเข้าหัวใจขวามากขึ้น ผนังกั้นห้องเบียดไปซ้าย LV รับเลือดน้อยลง ความดันซิสโตลิกตกเกิน 10 mmHg\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"22\" y=\"34\" width=\"236\" height=\"212\" rx=\"44\" class=\"wa\" data-s=\"1\"/><text x=\"140\" y=\"27\" class=\"xs mid twa b\" data-s=\"1\">น้ำในเยื่อหุ้มหัวใจ → ความดันในถุงสูง</text><rect x=\"44\" y=\"56\" width=\"192\" height=\"168\" rx=\"30\" class=\"bx\"/><text x=\"95\" y=\"148\" class=\"lg b mid\">RV</text><text x=\"190\" y=\"148\" class=\"lg b mid\">LV</text><line x1=\"142\" y1=\"62\" x2=\"142\" y2=\"218\" class=\"ln w3\" data-x=\"3\"/><path d=\"M142,62 Q178,140 142,218\" class=\"lbad w3\" data-s=\"3\"/><text x=\"196\" y=\"200\" class=\"xs mid tbad b\" data-s=\"3\">septum เบียดซ้าย</text><g data-s=\"2\"><path d=\"M20,282 C40,250 60,240 80,214\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"6\" y=\"296\" class=\"xs twa b\">หายใจเข้า: venous return ↑ เข้าหัวใจขวา</text></g><g data-s=\"4\"><path d=\"M222,120 L270,120\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"246\" y=\"112\" class=\"xs mid tbad\">SV ↓</text></g><g data-s=\"4\"><rect x=\"280\" y=\"60\" width=\"150\" height=\"150\" rx=\"10\" class=\"sk\"/><rect x=\"330\" y=\"64\" width=\"48\" height=\"142\" class=\"wa ns\" opacity=\".55\"/><text x=\"354\" y=\"78\" class=\"xs mid twa b\">หายใจเข้า</text><polyline points=\"288,180 296,110 304,180 312,180 320,110 328,180 336,180 344,138 352,180 360,180 368,140 376,180 384,180 392,110 400,180 408,180 416,110 424,180\" class=\"lac w2\"/><line x1=\"288\" y1=\"110\" x2=\"424\" y2=\"110\" class=\"lmu da\"/><text x=\"355\" y=\"228\" class=\"xs mid tbad b\">SBP ตก &gt;10 mmHg</text><text x=\"355\" y=\"244\" class=\"xs mid\">= pulsus paradoxus</text></g></svg>",
+    "steps": [
+     {
+      "t": "น้ำล้อมหัวใจ",
+      "cap": "น้ำสะสมในถุงเยื่อหุ้มที่ยืดไม่ได้ → ความดันในถุงสูงจนเท่ากับความดันในห้องหัวใจ · **ปริมาตรรวมของหัวใจทั้งสองฝั่งถูกตรึงไว้**"
+     },
+     {
+      "t": "หายใจเข้า",
+      "cap": "ความดันในทรวงอกติดลบมากขึ้น → เลือดดำไหลกลับเข้า **RA/RV มากขึ้น** (เส้นฟ้าไหลเข้า)"
+     },
+     {
+      "t": "Ventricular interdependence",
+      "cap": "RV ขยายออกนอกไม่ได้เพราะถุงตึง จึงดัน **septum เบียดเข้าหา LV** → LV เล็กลงและรับเลือดได้น้อย"
+     },
+     {
+      "t": "Pulsus paradoxus",
+      "cap": "LV filling ↓ → stroke volume ↓ → **SBP ตก >10 mmHg ขณะหายใจเข้า** (เส้นกราฟในแถบฟ้า) · หายใจออกกลับเป็นตรงข้าม"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-04-03",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "c04-ecg",
+    "title": "ECG ของ pericarditis — ทำไม ST ยกทุก lead แต่ aVR กลับทิศ",
+    "svg": "<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เยื่อหุ้มหัวใจอักเสบทั้งดวงทำให้ injury current ชี้ออกทุกทิศ ST ยกแบบเว้าหลาย lead PR กด aVR กลับทิศ เทียบกับ STEMI ที่ ST ยกนูนเฉพาะแนวหลอดเลือดและมี reciprocal change\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"100\" cy=\"132\" rx=\"62\" ry=\"72\" class=\"ac\"/><ellipse cx=\"100\" cy=\"136\" rx=\"42\" ry=\"52\" class=\"bx\"/><text x=\"100\" y=\"132\" class=\"sm b mid\">หัวใจ</text><text x=\"100\" y=\"148\" class=\"xs mid mu\">(มองจากหน้า)</text><ellipse cx=\"100\" cy=\"132\" rx=\"70\" ry=\"80\" class=\"lmu w2\" data-x=\"2\"/><g data-s=\"2\"><ellipse cx=\"100\" cy=\"132\" rx=\"70\" ry=\"80\" class=\"lbad w5 pl\"/></g><g data-s=\"2\"><line x1=\"174\" y1=\"132\" x2=\"190\" y2=\"132\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"152\" y1=\"191\" x2=\"164\" y2=\"203\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"100\" y1=\"216\" x2=\"100\" y2=\"232\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"48\" y1=\"191\" x2=\"36\" y2=\"203\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"26\" y1=\"132\" x2=\"10\" y2=\"132\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"48\" y1=\"73\" x2=\"36\" y2=\"61\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"100\" y1=\"48\" x2=\"100\" y2=\"32\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"152\" y1=\"73\" x2=\"164\" y2=\"61\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><text x=\"100\" y=\"254\" class=\"xs mid tbad b\" data-s=\"2\">injury current ชี้ออกทุกทิศ</text><circle cx=\"24\" cy=\"30\" r=\"14\" class=\"sk\"/><text x=\"24\" y=\"34\" class=\"xs mid b\">aVR</text><circle cx=\"196\" cy=\"214\" r=\"12\" class=\"sk\"/><text x=\"196\" y=\"218\" class=\"xs mid b\">II</text><circle cx=\"198\" cy=\"120\" r=\"12\" class=\"sk\"/><text x=\"198\" y=\"124\" class=\"xs mid b\">V5</text><text x=\"232\" y=\"36\" class=\"sm b\">II</text><line x1=\"232\" y1=\"70\" x2=\"432\" y2=\"70\" class=\"lmu da\"/><text x=\"232\" y=\"111\" class=\"sm b\">V5</text><line x1=\"232\" y1=\"145\" x2=\"432\" y2=\"145\" class=\"lmu da\"/><text x=\"232\" y=\"188\" class=\"sm b\">aVR</text><line x1=\"232\" y1=\"222\" x2=\"432\" y2=\"222\" class=\"lmu da\"/><g data-x=\"2\"><path d=\"M236.0,70.0 L250.4,70.0 Q261.2,62.0 272.0,70.0 L275.6,70.0 L290.0,70.0 L295.4,74.0 L302.6,40.0 L309.8,78.0 L317.0,70.0 Q336.8,70.0 349.4,58.0 Q362.0,56.8 376.4,70.0 L416.0,70.0\" class=\"ln w2\"/><path d=\"M236.0,145.0 L250.4,145.0 Q261.2,137.0 272.0,145.0 L275.6,145.0 L290.0,145.0 L295.4,149.0 L302.6,115.0 L309.8,153.0 L317.0,145.0 Q336.8,145.0 349.4,133.0 Q362.0,131.8 376.4,145.0 L416.0,145.0\" class=\"ln w2\"/></g><g data-x=\"3\"><path d=\"M236.0,222.0 L250.4,222.0 Q261.2,230.0 272.0,222.0 L275.6,222.0 L290.0,222.0 L295.4,218.0 L302.6,252.0 L309.8,214.0 L317.0,222.0 Q336.8,222.0 349.4,234.0 Q362.0,235.2 376.4,222.0 L416.0,222.0\" class=\"ln w2\"/></g><g data-s=\"2\"><path d=\"M236.0,70.0 L250.4,70.0 Q261.2,62.0 272.0,70.0 L275.6,73 L290.0,73 L295.4,74.0 L302.6,40.0 L309.8,78.0 L317.0,62 Q336.8,62 349.4,50.0 Q362.0,48.8 376.4,70.0 L416.0,70.0\" class=\"lac w2\"/><path d=\"M236.0,145.0 L250.4,145.0 Q261.2,137.0 272.0,145.0 L275.6,148 L290.0,148 L295.4,149.0 L302.6,115.0 L309.8,153.0 L317.0,137 Q336.8,137 349.4,125.0 Q362.0,123.8 376.4,145.0 L416.0,145.0\" class=\"lac w2\"/><text x=\"360\" y=\"46\" class=\"xs tbad b\">ST ยกแบบเว้า</text><text x=\"360\" y=\"121\" class=\"xs tbad b\">ST ยกแบบเว้า</text></g><g data-s=\"3\"><path d=\"M236.0,222.0 L250.4,222.0 Q261.2,230.0 272.0,222.0 L275.6,219 L290.0,219 L295.4,218.0 L302.6,252.0 L309.8,214.0 L317.0,228 Q336.8,228 349.4,240.0 Q362.0,241.2 376.4,222.0 L416.0,222.0\" class=\"lac w2\"/><text x=\"330\" y=\"252\" class=\"xs tbad b\">aVR: ST กด · PR ยก</text></g><g data-s=\"3\"><ellipse cx=\"282\" cy=\"74\" rx=\"14\" ry=\"7\" class=\"lms w2\"/><ellipse cx=\"282\" cy=\"149\" rx=\"14\" ry=\"7\" class=\"lms w2\"/><text x=\"282\" y=\"96\" class=\"xs mid tms b\">PR กด</text><text x=\"282\" y=\"171\" class=\"xs mid tms b\">PR กด</text><text x=\"100\" y=\"274\" class=\"xs mid tms b\">ห้องบนอักเสบด้วย → PR depression</text></g><g data-s=\"4\"><rect x=\"8\" y=\"284\" width=\"424\" height=\"72\" rx=\"8\" class=\"ms\"/><text x=\"18\" y=\"302\" class=\"sm b\">STEMI: บาดเจ็บเฉพาะแนวหลอดเลือดเดียว</text><path d=\"M24.0,336.0 L32.0,336.0 Q38.0,331.2 44.0,336.0 L46.0,336.0 L54.0,336.0 L57.0,338.4 L61.0,318.0 L65.0,340.8 L69.0,324 Q79.0,316.8 88.0,321.8 Q94.0,332.0 102.0,336.0 L104.0,336.0\" class=\"lbad w2\"/><text x=\"112\" y=\"330\" class=\"xs tbad b\">ST ยกนูน</text><text x=\"112\" y=\"344\" class=\"xs\">เฉพาะกลุ่ม lead</text><path d=\"M222.0,336.0 L230.0,336.0 Q236.0,331.2 242.0,336.0 L244.0,336.0 L252.0,336.0 L255.0,338.4 L259.0,318.0 L263.0,340.8 L267.0,343 Q278.0,343 285.0,335.8 Q292.0,335.1 300.0,336.0 L302.0,336.0\" class=\"lbad w2\"/><text x=\"308\" y=\"330\" class=\"xs tbad b\">reciprocal ST กด</text><text x=\"308\" y=\"344\" class=\"xs\">ใน lead ฝั่งตรงข้าม</text></g></svg>",
+    "steps": [
+     {
+      "t": "หัวใจและ ECG ปกติ",
+      "cap": "ภาพหัวใจมองจากด้านหน้า กับ lead ตัวอย่าง II, V5 และ aVR · ปกติช่วง PR และ ST อยู่ระดับเดียวกับเส้นฐาน (เส้นประ)"
+     },
+     {
+      "t": "อักเสบทั้งผิวนอก → ST ยกหลาย lead",
+      "cap": "การอักเสบอยู่ที่ **ผิวนอกของหัวใจทั้งดวง** → กล้ามเนื้อใต้ epicardium บาดเจ็บทุกด้าน → **injury current ชี้ออกทุกทิศ** → lead ส่วนใหญ่เห็น **ST ยกแบบเว้า (concave)** ข้ามแนวหลอดเลือด"
+     },
+     {
+      "t": "PR depression และ aVR กลับทิศ",
+      "cap": "ห้องบนมีเยื่อหุ้มคลุมด้วย → atrial injury current → **PR กด** · **aVR มองจากฝั่งตรงข้าม จึงเห็น ST กดและ PR ยก** — เบาะแสยืนยัน pericarditis"
+     },
+     {
+      "t": "เทียบกับ STEMI",
+      "cap": "STEMI บาดเจ็บเฉพาะแนวหลอดเลือดเดียว → **ST ยกนูนเฉพาะกลุ่ม lead + reciprocal ST กด** และมี Q wave ตามเวลา · **ST ยกเฉพาะที่ + reciprocal + troponin สูง = STEMI จนกว่าจะพิสูจน์เป็นอย่างอื่น**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-04-04",
+   "after": "กลไก: ทำไมโรคนี้กลับเป็นซ้ำ และยาแต่ละตัวตัดวงจรตรงไหน",
+   "anim": {
+    "key": "c04-colchicine",
+    "title": "ทำไม pericarditis กลับเป็นซ้ำ — colchicine ตัดวงจร IL-1 ตรงไหน",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: วงจร IL-1 ในเยื่อหุ้มหัวใจอักเสบที่วนกระตุ้นตัวเอง และจุดที่ NSAID colchicine anti-IL-1 และสเตียรอยด์ออกฤทธิ์\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"10\" y=\"30\" class=\"xs mu\">ไวรัส / บาดเจ็บ</text><line x1=\"96\" y1=\"26\" x2=\"126\" y2=\"30\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"130\" y=\"12\" width=\"180\" height=\"40\" rx=\"8\" class=\"bx\"/><text x=\"220\" y=\"37\" class=\"sm mid b\">เซลล์เยื่อหุ้มหัวใจเสียหาย</text><path d=\"M300,52 L326,88\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"250\" y=\"92\" width=\"180\" height=\"44\" rx=\"8\" class=\"wa\"/><text x=\"340\" y=\"111\" class=\"sm mid b\">neutrophil + macrophage</text><text x=\"340\" y=\"127\" class=\"xs mid\">ถูกเรียกมาที่เยื่อ</text><g data-s=\"2\"><path d=\"M340,136 L340,186\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"250\" y=\"190\" width=\"180\" height=\"44\" rx=\"8\" class=\"ms\"/><text x=\"340\" y=\"209\" class=\"sm mid b\">inflammasome</text><text x=\"340\" y=\"225\" class=\"xs mid\">ประกอบตัวในเซลล์</text><path d=\"M250,212 L216,212\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"40\" y=\"190\" width=\"172\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"126\" y=\"218\" class=\"lg mid b\">IL-1β หลั่ง</text><path d=\"M100,188 L100,114 L246,114\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"94\" y=\"132\" class=\"xs end tbad b\">วนกระตุ้นตัวเอง</text><text x=\"94\" y=\"146\" class=\"xs end tbad\">แม้ต้นเหตุหายแล้ว</text></g><g data-s=\"3\"><path d=\"M126,234 L126,268\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"40\" y=\"272\" width=\"172\" height=\"40\" rx=\"8\" class=\"sk\"/><text x=\"126\" y=\"297\" class=\"sm mid\">COX → PG → เจ็บ · ไข้</text></g><g data-s=\"3\"><line x1=\"104\" y1=\"252\" x2=\"148\" y2=\"252\" class=\"lok w5\"/><text x=\"154\" y=\"256\" class=\"sm tok b\">NSAID / aspirin</text></g><g data-s=\"4\"><line x1=\"302\" y1=\"80\" x2=\"324\" y2=\"62\" class=\"lok w5\"/><line x1=\"322\" y1=\"162\" x2=\"358\" y2=\"162\" class=\"lok w5\"/><text x=\"316\" y=\"160\" class=\"sm end tok b\">colchicine</text><text x=\"316\" y=\"176\" class=\"xs end tok\">microtubule ไม่ประกอบ</text></g><g data-s=\"5\"><line x1=\"80\" y1=\"172\" x2=\"120\" y2=\"172\" class=\"lok w5\"/><text x=\"126\" y=\"176\" class=\"sm tok b\">anti-IL-1</text><rect x=\"226\" y=\"262\" width=\"206\" height=\"58\" rx=\"8\" class=\"ms\"/><text x=\"236\" y=\"282\" class=\"xs b\">สเตียรอยด์: กดกว้าง ๆ ได้เร็ว</text><text x=\"236\" y=\"298\" class=\"xs\">แต่ลดยาแล้วอักเสบเด้งกลับ</text><text x=\"236\" y=\"313\" class=\"xs tbad b\">→ กลับเป็นซ้ำมากขึ้น</text></g></svg>",
+    "steps": [
+     {
+      "t": "ต้นเหตุ",
+      "cap": "ไวรัสหรือการบาดเจ็บทำให้เซลล์เยื่อหุ้มหัวใจเสียหาย → ปล่อยสัญญาณอันตราย → **neutrophil และ macrophage ถูกเรียกมาที่เยื่อ**"
+     },
+     {
+      "t": "วงจร IL-1 วนกระตุ้นตัวเอง",
+      "cap": "เซลล์อักเสบประกอบ **inflammasome → หลั่ง IL-1β** → เรียกเซลล์อักเสบมาเพิ่ม · วงจรนี้ **autoinflammatory วนต่อได้แม้ต้นเหตุหายแล้ว** — จึงกลับเป็นซ้ำ 15−30% ถ้าไม่ได้ตัดวงจร"
+     },
+     {
+      "t": "NSAID / aspirin",
+      "cap": "ยับยั้ง COX → prostaglandin ลด → **เจ็บและไข้ลด** แต่ **ไม่ได้หยุดวงจร IL-1 โดยตรง** (ลูกศรวงจรยังไหลอยู่)"
+     },
+     {
+      "t": "Colchicine ตัดต้นทาง",
+      "cap": "จับ tubulin → microtubule ไม่ประกอบตัว → **neutrophil เคลื่อนมาที่เยื่อไม่ได้ และ inflammasome ประกอบตัวไม่ได้** → ลดการกลับเป็นซ้ำราวครึ่งหนึ่ง · ให้ **คู่กับ NSAID เสมอ** 3 เดือน (ซ้ำ 6 เดือน)"
+     },
+     {
+      "t": "Anti-IL-1 และสเตียรอยด์",
+      "cap": "**Anti-IL-1 (anakinra, rilonacept)** จับ IL-1 โดยตรง ใช้ในรายดื้อยา · **สเตียรอยด์เป็นลำดับหลัง** เพราะพอลดยาการอักเสบเด้งกลับ เพิ่มการกลับเป็นซ้ำ และทำให้วัณโรคแย่ลง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-04-09",
+   "after": "กลไกหลักที่ต้องเข้าใจก่อนอย่างอื่น",
+   "anim": {
+    "key": "c04-constrict",
+    "title": "Constrictive pericarditis — กล่องแข็งกั้นความดันจากการหายใจ",
+    "svg": "<svg viewBox=\"0 0 440 304\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เยื่อหุ้มหัวใจหนาแข็งกั้นความดันจากการหายใจ หายใจเข้า LV เติมเลือดลด RV รับเลือดเพิ่ม septum เบน JVP ไม่ลด Kussmaul sign และกราฟ dip-and-plateau\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"20\" width=\"300\" height=\"252\" rx=\"22\" class=\"sk\"/><text x=\"160\" y=\"38\" class=\"xs mid mu\">ช่องอก — ความดันแกว่งตามการหายใจ</text><rect x=\"36\" y=\"72\" width=\"176\" height=\"152\" rx=\"26\" class=\"ms w5\"/><text x=\"124\" y=\"64\" class=\"xs mid tms b\">เยื่อหุ้มหนา แข็ง (หินปูน)</text><rect x=\"48\" y=\"84\" width=\"152\" height=\"128\" rx=\"18\" class=\"bx\"/><text x=\"90\" y=\"150\" class=\"lg b mid\">RV</text><text x=\"166\" y=\"150\" class=\"lg b mid\">LV</text><line x1=\"128\" y1=\"88\" x2=\"128\" y2=\"208\" class=\"ln w3\" data-x=\"3\"/><path d=\"M128,88 Q156,148 128,208\" class=\"lbad w3\" data-s=\"3\"/><rect x=\"226\" y=\"96\" width=\"76\" height=\"60\" rx=\"14\" class=\"wa\"/><text x=\"264\" y=\"122\" class=\"sm mid b\">ปอด</text><text x=\"264\" y=\"138\" class=\"xs mid\">pulmonary vein</text><path d=\"M226,140 L196,140\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\" data-x=\"2\"/><path d=\"M226,140 L196,140\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\" data-s=\"2\"/><text x=\"16\" y=\"294\" class=\"xs twa b\">เลือดดำจากร่างกาย → RV</text><path d=\"M60,282 L74,214\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\" data-x=\"3\"/><path d=\"M60,282 L74,214\" class=\"lwa w5 fl\" marker-end=\"url(#ah-wa)\" data-s=\"3\"/><g data-s=\"2\"><text x=\"264\" y=\"86\" class=\"xs mid twa b\">หายใจเข้า −</text><text x=\"176\" y=\"258\" class=\"xs mid tbad b\">ความดันลบส่งผ่านเข้ากล่องไม่ได้</text><text x=\"166\" y=\"176\" class=\"xs mid tbad b\">LV เติม ↓</text></g><g data-s=\"3\"><text x=\"90\" y=\"176\" class=\"xs mid twa b\">RV รับเลือด ↑</text><text x=\"90\" y=\"196\" class=\"xs mid tbad b\">septum เบนเข้า LV</text></g><g data-s=\"4\"><rect x=\"318\" y=\"20\" width=\"116\" height=\"120\" rx=\"8\" class=\"bx\"/><text x=\"376\" y=\"38\" class=\"xs mid b\">Kussmaul's sign</text><line x1=\"330\" y1=\"70\" x2=\"422\" y2=\"70\" class=\"lmu da\"/><text x=\"334\" y=\"64\" class=\"xs mu\">JVP</text><path d=\"M352,74 L352,104\" class=\"lok w2 da\" marker-end=\"url(#ah-ok)\"/><text x=\"350\" y=\"120\" class=\"xs mid tok\">ปกติ ↓</text><path d=\"M398,100 L398,62\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><text x=\"402\" y=\"120\" class=\"xs mid tbad b\">ไม่ลด</text><text x=\"376\" y=\"134\" class=\"xs mid mu\">ขณะหายใจเข้า</text></g><g data-s=\"5\"><rect x=\"318\" y=\"150\" width=\"116\" height=\"142\" rx=\"8\" class=\"bx\"/><text x=\"376\" y=\"168\" class=\"xs mid b\">ความดัน RV/LV</text><path d=\"M326,252 L332,190 L342,190 L350,258 Q354,214 362,214 L400,214 L406,190 L416,190 L422,252\" class=\"lac w2\"/><circle cx=\"362\" cy=\"214\" r=\"4\" class=\"badf\"/><text x=\"350\" y=\"274\" class=\"xs mid tbad b\">dip</text><text x=\"381\" y=\"206\" class=\"xs mid tbad b\">plateau</text><text x=\"376\" y=\"288\" class=\"xs mid b\">หยุดกึก = knock</text></g></svg>",
+    "steps": [
+     {
+      "t": "กล่องแข็งหุ้มหัวใจ",
+      "cap": "เยื่อหุ้มหนา มีพังผืดและหินปูน กลายเป็นกล่องแข็ง → **ปริมาตรรวมของหัวใจถูกตรึง** และ **ความดันจากการหายใจในช่องอกส่งผ่านเข้าห้องหัวใจไม่ได้** — ประโยคกลไกเดียวที่ต้องจำ"
+     },
+     {
+      "t": "หายใจเข้า: LV เติมน้อยลง",
+      "cap": "หายใจเข้า ความดันลบในช่องอกถึง **pulmonary vein** (นอกกล่อง) แต่ไม่ถึง LV (ในกล่อง) → แรงดันที่ดันเลือด PV → LV ลดลง → **LV เติมเลือดน้อยลง**"
+     },
+     {
+      "t": "RV ได้เพิ่ม → แย่งที่กัน (discordance)",
+      "cap": "เลือดดำจากร่างกายยังไหลเข้า RV เพิ่มตามปกติ · กล่องขยายไม่ได้ → **septum เบนเข้า LV** · RV ↑ LV ↓ ตอนหายใจเข้า = **enhanced ventricular interdependence / discordance** ที่ใช้แยกจาก restriction"
+     },
+     {
+      "t": "Kussmaul's sign",
+      "cap": "ห้องขวาในกล่องแข็งรับเลือดที่เพิ่มขึ้นไม่ได้ และความดันลบส่งไม่ถึง RA → **JVP ไม่ลด (หรือสูงขึ้น) ตอนหายใจเข้า** · พบใน constriction, RV infarction, restrictive CM แต่ **ไม่พบใน tamponade**"
+     },
+     {
+      "t": "Dip-and-plateau และ knock",
+      "cap": "ต้น diastole ห้องยังเล็กกว่ากล่อง เลือดพุ่งเข้าเร็ว (**y descent ลึกชัน**) แล้ว **หยุดกึกเมื่อชนผนังกล่อง** → กราฟ **dip-and-plateau (square root)** และเสียง **pericardial knock** ที่มาเร็วกว่า S3"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-10-02",
+   "after": "ทำไมถึงมีอาการนี้ — แต่ละชนิดของช็อก",
+   "anim": {
+    "key": "c10-types",
+    "title": "ช็อกสี่ชนิดในวงจรเดียว — ตัวไหนเสีย JVP ปอด มือเท้าเป็นอย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 398\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: วงจรไหลเวียน หลอดเลือดดำ หัวใจ ปอด และ arteriole แสดงจุดที่เสียในช็อกแต่ละชนิด พร้อม JVP ปอด และอุณหภูมิปลายมือเท้า\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"110\" width=\"64\" height=\"160\" rx=\"14\" class=\"wa\"/><text x=\"52\" y=\"102\" class=\"xs mid b twa\">หลอดเลือดดำ</text><text x=\"52\" y=\"196\" class=\"sm mid b\">JVP</text><rect x=\"150\" y=\"40\" width=\"100\" height=\"44\" rx=\"16\" class=\"sk\"/><text x=\"200\" y=\"67\" class=\"sm mid b\">ปอด</text><circle cx=\"200\" cy=\"200\" r=\"46\" class=\"ac\"/><text x=\"200\" y=\"197\" class=\"sm mid b\">หัวใจ</text><text x=\"200\" y=\"213\" class=\"xs mid\">CO = HR×SV</text><rect x=\"330\" y=\"110\" width=\"96\" height=\"160\" rx=\"14\" class=\"bx\"/><text x=\"378\" y=\"102\" class=\"xs mid b\">arteriole · ผิว</text><text x=\"378\" y=\"188\" class=\"sm mid b\">SVR</text><path d=\"M86,214 L150,208\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M188,154 L188,88\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M212,88 L212,152\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M248,200 L326,200\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M378,272 L378,318 L52,318 L52,276\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><g data-s=\"2\" data-x=\"3\"><text x=\"220\" y=\"24\" class=\"sm mid b tbad\">Hypovolemic — preload ↓</text><rect x=\"22\" y=\"112\" width=\"60\" height=\"104\" rx=\"12\" class=\"bx ns\"/><text x=\"52\" y=\"254\" class=\"xs mid b tbad\">JVP แฟบ</text><text x=\"378\" y=\"254\" class=\"xs mid b twa\">หด → เย็น</text><text x=\"200\" y=\"266\" class=\"xs mid tbad b\">SV ↓</text></g><g data-s=\"3\" data-x=\"4\"><text x=\"220\" y=\"24\" class=\"sm mid b tbad\">Cardiogenic — ปั๊มเสีย</text><circle cx=\"200\" cy=\"200\" r=\"46\" class=\"bad\"/><text x=\"200\" y=\"197\" class=\"sm mid b\">ปั๊มเสีย</text><text x=\"200\" y=\"213\" class=\"xs mid b\">CO ↓</text><rect x=\"150\" y=\"40\" width=\"100\" height=\"44\" rx=\"16\" class=\"bad\"/><text x=\"200\" y=\"67\" class=\"sm mid b\">ปอดเปียก</text><text x=\"52\" y=\"254\" class=\"xs mid b tbad\">JVP สูง</text><text x=\"258\" y=\"60\" class=\"xs b tbad\">crackles น้ำท่วมปอด</text><text x=\"378\" y=\"254\" class=\"xs mid b twa\">หด → เย็น</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"220\" y=\"24\" class=\"sm mid b tbad\">Obstructive — มีสิ่งขวาง</text><circle cx=\"200\" cy=\"200\" r=\"56\" class=\"lbad w3 da\"/><line x1=\"176\" y1=\"120\" x2=\"224\" y2=\"120\" class=\"lbad w5\"/><text x=\"262\" y=\"136\" class=\"xs b tbad\">PE</text><text x=\"262\" y=\"252\" class=\"xs b tbad\">tamponade</text><text x=\"110\" y=\"148\" class=\"xs mid b tbad\">tension PTX</text><text x=\"52\" y=\"254\" class=\"xs mid b tbad\">JVP สูง</text><text x=\"258\" y=\"60\" class=\"xs b tok\">ปอดโล่ง</text><text x=\"378\" y=\"254\" class=\"xs mid b twa\">หด → เย็น</text></g><g data-s=\"5\" data-x=\"6\"><text x=\"220\" y=\"24\" class=\"sm mid b tbad\">Distributive — SVR ↓↓↓</text><rect x=\"330\" y=\"110\" width=\"96\" height=\"160\" rx=\"14\" class=\"ok\"/><text x=\"378\" y=\"182\" class=\"sm mid b\">ขยาย</text><text x=\"378\" y=\"200\" class=\"xs mid b tbad\">SVR ↓↓↓</text><rect x=\"22\" y=\"112\" width=\"60\" height=\"66\" rx=\"12\" class=\"bx ns\"/><text x=\"52\" y=\"254\" class=\"xs mid b tbad\">JVP แฟบ</text><text x=\"378\" y=\"254\" class=\"xs mid b tok\">อุ่น ชีพจรแรง</text><text x=\"200\" y=\"266\" class=\"xs mid tok b\">CO ↑ ชดเชย</text></g><g data-s=\"6\"><rect x=\"8\" y=\"328\" width=\"424\" height=\"64\" rx=\"8\" class=\"ms\"/><text x=\"18\" y=\"346\" class=\"xs b\">① มือเท้าอุ่น → distributive</text><text x=\"18\" y=\"364\" class=\"xs b\">② เย็น + JVP แฟบ → hypovolemic</text><text x=\"18\" y=\"382\" class=\"xs b\">③ เย็น + JVP สูง → cardiogenic (ปอดเปียก) / obstructive (ปอดโล่ง)</text></g></svg>",
+    "steps": [
+     {
+      "t": "วงจรปกติ",
+      "cap": "เลือดจากหลอดเลือดดำ (JVP) → หัวใจ → ปอด → หัวใจ → arteriole (SVR) → กลับหลอดเลือดดำ · **DO₂ = CO × CaO₂** และ **CO = HR × SV** — ช็อกแต่ละชนิดคือการที่ตัวแปรหนึ่งในวงจรนี้เสีย"
+     },
+     {
+      "t": "Hypovolemic",
+      "cap": "เลือดในหลอดเลือดดำน้อย → **JVP แฟบ** → preload ต่ำ SV ลด → baroreflex บีบ arteriole (**SVR ↑**) → **มือเท้าเย็น** · รักษา: เติมน้ำ/เลือดเร็ว"
+     },
+     {
+      "t": "Cardiogenic",
+      "cap": "ปั๊มบีบไม่ออก → เลือดคั่งย้อนเข้าปอด (**PCWP ↑ crackles**) และย้อนต่อถึงห้องขวา (**JVP สูง**) · CO ต่ำ SVR สูง **มือเท้าเย็น** · ให้น้ำมากทำให้แย่ลง"
+     },
+     {
+      "t": "Obstructive",
+      "cap": "สิ่งขวางเชิงกล — **PE, tamponade, tension pneumothorax** → เลือดคั่งก่อนจุดกั้น (**JVP สูง**) แต่หลังจุดกั้นเลือดไปน้อย (**ปอดโล่ง**) · ต้องแก้ที่สิ่งขวาง"
+     },
+     {
+      "t": "Distributive",
+      "cap": "ตัวกลางอักเสบ (NO, histamine) ทำให้ arteriole ขยาย **SVR ↓↓↓** → **อุ่น ชีพจรแรง pulse pressure กว้าง** CO สูงชดเชย · หลอดเลือดดำขยาย + รั่ว → **JVP แฟบ** (ปริมาตรพร่องสัมพัทธ์)"
+     },
+     {
+      "t": "ทางลัดข้างเตียง",
+      "cap": "**อุ่นหรือเย็น** ก่อน → อุ่น = distributive · ถ้าเย็น **ดู JVP** → แฟบ = hypovolemic · สูง = cardiogenic หรือ obstructive แล้วแยกด้วย **ปอดเปียกหรือโล่ง** · ระวัง cold septic shock ระยะแรกที่ยังขาดน้ำ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-10-03",
+   "after": "ทำไมถึงมีอาการนี้ — สัญญาณของ compensated shock",
+   "anim": {
+    "key": "c10-compensate",
+    "title": "Compensated shock — ร่างกายชดเชยอย่างไรก่อนความดันตก",
+    "svg": "<svg viewBox=\"0 0 440 316\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เมื่อ SV ลด baroreceptor กระตุ้น sympathetic ทำให้หัวใจเต้นเร็ว pulse pressure แคบ ผิวเย็น ปัสสาวะน้อย lactate สูงหายใจเร็ว ก่อนความดันตกและสับสน\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"14\" width=\"150\" height=\"40\" rx=\"8\" class=\"bad\"/><text x=\"85\" y=\"39\" class=\"sm mid b\">SV ↓ → BP เริ่มตก</text><path d=\"M162,34 L196,34\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"200\" y=\"14\" width=\"230\" height=\"40\" rx=\"8\" class=\"bx\"/><text x=\"315\" y=\"32\" class=\"sm mid b\">baroreceptor ยืดน้อยลง</text><text x=\"315\" y=\"47\" class=\"xs mid mu\">carotid sinus · aortic arch</text><g data-s=\"2\"><path d=\"M315,54 L260,80\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"110\" y=\"82\" width=\"220\" height=\"40\" rx=\"8\" class=\"ms\"/><text x=\"220\" y=\"100\" class=\"sm mid b\">ก้านสมอง: sympathetic ↑</text><text x=\"220\" y=\"115\" class=\"xs mid\">vagal ↓ · RAAS · ADH</text><path d=\"M140,122 L62,148\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><path d=\"M190,122 L168,148\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><path d=\"M250,122 L272,148\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><path d=\"M300,122 L378,148\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/></g><g data-s=\"3\"><rect x=\"10\" y=\"152\" width=\"102\" height=\"74\" rx=\"8\" class=\"wa\"/><text x=\"61\" y=\"172\" class=\"xs mid b\">หัวใจ β1</text><text x=\"61\" y=\"192\" class=\"xs mid\">HR ↑ เต้นเร็ว</text><text x=\"61\" y=\"208\" class=\"xs mid\">แรงบีบ ↑</text></g><g data-s=\"3\"><rect x=\"116\" y=\"152\" width=\"102\" height=\"74\" rx=\"8\" class=\"wa\"/><text x=\"167\" y=\"172\" class=\"xs mid b\">หลอดเลือด α1</text><text x=\"167\" y=\"192\" class=\"xs mid\">SVR ↑ ประคอง DBP</text><text x=\"167\" y=\"208\" class=\"xs mid\">→ PP แคบลง</text></g><g data-s=\"4\"><rect x=\"222\" y=\"152\" width=\"102\" height=\"74\" rx=\"8\" class=\"sk\"/><text x=\"273\" y=\"172\" class=\"xs mid b\">ผิวหนัง α1</text><text x=\"273\" y=\"192\" class=\"xs mid\">เย็น · mottling</text><text x=\"273\" y=\"208\" class=\"xs mid\">CRT ช้า</text></g><g data-s=\"4\"><rect x=\"328\" y=\"152\" width=\"102\" height=\"74\" rx=\"8\" class=\"sk\"/><text x=\"379\" y=\"172\" class=\"xs mid b\">ไต α1+AngII+ADH</text><text x=\"379\" y=\"192\" class=\"xs mid\">ปัสสาวะน้อย</text><text x=\"379\" y=\"208\" class=\"xs mid\">&lt; 0.5 mL/kg/ชม.</text></g><g data-s=\"5\"><rect x=\"10\" y=\"244\" width=\"206\" height=\"64\" rx=\"8\" class=\"ms\"/><text x=\"113\" y=\"264\" class=\"xs mid b\">เซลล์ O₂ ไม่พอ → lactate ↑</text><text x=\"113\" y=\"282\" class=\"xs mid\">→ หายใจเร็ว ชดเชยกรด</text><text x=\"113\" y=\"298\" class=\"xs mid mu\">(ยังความดันปกติ = compensated)</text></g><g data-s=\"5\"><rect x=\"224\" y=\"244\" width=\"206\" height=\"64\" rx=\"8\" class=\"bad\"/><text x=\"327\" y=\"264\" class=\"xs mid b\">ชดเชยไม่ไหว → BP ตก</text><text x=\"327\" y=\"282\" class=\"xs mid\">MAP &lt; 50−60 สมองขาดเลือด</text><text x=\"327\" y=\"298\" class=\"xs mid b\">→ ซึม สับสน = decompensated</text></g></svg>",
+    "steps": [
+     {
+      "t": "SV ลด — baroreceptor รับรู้",
+      "cap": "เลือดพร่องหรือปั๊มเสีย → SV ลด → **baroreceptor ที่ carotid sinus และ aortic arch ถูกยืดน้อยลง** — เกิดขึ้น **ก่อน** ความดันตกจริง"
+     },
+     {
+      "t": "ก้านสมองสั่ง sympathetic",
+      "cap": "ก้านสมอง **เพิ่ม sympathetic ลด vagal** ร่วมกับ RAAS และ ADH — ทั้งหมดนี้คือ **compensated shock (preshock)** ที่ความดันยังปกติ"
+     },
+     {
+      "t": "หัวใจเต้นเร็ว + pulse pressure แคบ",
+      "cap": "β1 → **HR ↑** (สัญญาณแรกที่พบบ่อยที่สุด) · α1 → SVR ↑ ประคองความดันไดแอสโตลิกไว้ขณะซิสโตลิกลดตาม SV → **pulse pressure แคบ** · คนกิน beta-blocker/ผู้สูงอายุ อาจไม่เต้นเร็ว"
+     },
+     {
+      "t": "หน้าต่างผิวหนังและไต",
+      "cap": "ร่างกายยอมตัดเลือดผิวหนังก่อน → **เย็น mottling CRT ช้า** · ไตหดหลอดเลือด + angiotensin II + ADH → **ปัสสาวะ < 0.5 mL/kg/ชม.** — จับได้ก่อนความดันตก"
+     },
+     {
+      "t": "Lactate และจุดที่ชดเชยไม่ไหว",
+      "cap": "เซลล์ได้ O₂ ไม่พอ → **lactate ↑ → หายใจเร็ว** · เมื่อชดเชยไม่ไหว BP ตก MAP ต่ำกว่า autoregulation ของสมอง (~50−60) → **ซึม สับสน** = decompensated · **หน้าต่างรักษาที่ดีที่สุดคือก่อนถึงจุดนี้**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-10-08",
+   "after": "ทำไมถึงมีอาการนี้ — anaphylaxis",
+   "anim": {
+    "key": "c10-anaphylaxis",
+    "title": "Anaphylaxis — จาก mast cell ถึงช็อก และ adrenaline แก้ตรงไหน",
+    "svg": "<svg viewBox=\"0 0 440 332\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: allergen จับ IgE บน mast cell ปล่อย histamine ทำให้หลอดเลือดขยายรั่ว ความดันตก หลอดลมหดเกร็ง กล่องเสียงบวม ผื่น และ adrenaline ออกฤทธิ์ alpha1 beta1 beta2 แก้ทุกจุด\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"84\" cy=\"128\" r=\"52\" class=\"ms\"/><text x=\"84\" y=\"132\" class=\"sm mid b\">mast cell</text><g><path d=\"M56,78 L56,66 M56,66 L49,58 M56,66 L63,58\" class=\"lac w2\"/><path d=\"M84,78 L84,66 M84,66 L77,58 M84,66 L91,58\" class=\"lac w2\"/><path d=\"M112,78 L112,66 M112,66 L105,58 M112,66 L119,58\" class=\"lac w2\"/></g><text x=\"124\" y=\"66\" class=\"xs tac\">IgE บนผิว</text><g><circle cx=\"61.1\" cy=\"45.4\" r=\"5\" class=\"badf\"><animateMotion dur=\"2.0s\" begin=\"-1.50s\" repeatCount=\"indefinite\" path=\"M-51.1,-25.4 Q-21.1,-15.4 15.9,10.6\"/></circle><circle cx=\"117.5\" cy=\"39.6\" r=\"5\" class=\"badf\"><animateMotion dur=\"2.0s\" begin=\"-1.20s\" repeatCount=\"indefinite\" path=\"M42.5,-19.6 Q12.5,-9.6 -26.5,16.4\"/></circle><text x=\"12\" y=\"22\" class=\"xs tbad b\">allergen</text></g><g data-s=\"2\"><circle cx=\"24.5\" cy=\"162.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M59.5,-34.0 L-10.5,6.0\"/></circle><circle cx=\"143.5\" cy=\"153.5\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M-59.5,-25.5 L10.5,4.5\"/></circle><circle cx=\"135.0\" cy=\"187.5\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M-51.0,-59.5 L9.0,10.5\"/></circle><circle cx=\"41.5\" cy=\"196.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M42.5,-68.0 L-7.5,12.0\"/></circle><circle cx=\"84.0\" cy=\"204.5\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M0.0,-76.5 L0.0,13.5\"/></circle><circle cx=\"147.8\" cy=\"119.5\" r=\"3\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.36s\" repeatCount=\"indefinite\" path=\"M-63.8,8.5 L11.2,-1.5\"/></circle><text x=\"84\" y=\"200\" class=\"xs mid b tac\">histamine</text><text x=\"84\" y=\"214\" class=\"xs mid tac\">leukotriene</text></g><g data-s=\"3\"><rect x=\"196\" y=\"20\" width=\"236\" height=\"50\" rx=\"8\" class=\"bad\"/><text x=\"204\" y=\"41\" class=\"xs b\">หลอดเลือดขยาย + รั่ว</text><text x=\"204\" y=\"59\" class=\"xs\">SVR ↓ + preload ↓ → BP ตก</text><path d=\"M138,128 L192,45\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/></g><g data-s=\"5\"><circle cx=\"418\" cy=\"45\" r=\"11\" class=\"okf\"/><text x=\"418\" y=\"49\" class=\"xs mid b\">α1</text></g><g data-s=\"4\"><rect x=\"196\" y=\"78\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"204\" y=\"99\" class=\"xs b\">หลอดลมหดเกร็ง มีมูก</text><text x=\"204\" y=\"117\" class=\"xs\">→ wheeze แน่นหน้าอก</text><path d=\"M138,132 L192,103\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/></g><g data-s=\"5\"><circle cx=\"418\" cy=\"103\" r=\"11\" class=\"okf\"/><text x=\"418\" y=\"107\" class=\"xs mid b\">β2</text></g><g data-s=\"4\"><rect x=\"196\" y=\"136\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"204\" y=\"157\" class=\"xs b\">กล่องเสียง ลิ้นบวม</text><text x=\"204\" y=\"175\" class=\"xs\">angioedema → stridor</text><path d=\"M138,132 L192,161\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/></g><g data-s=\"5\"><circle cx=\"418\" cy=\"161\" r=\"11\" class=\"okf\"/><text x=\"418\" y=\"165\" class=\"xs mid b\">α1</text></g><g data-s=\"4\"><rect x=\"196\" y=\"194\" width=\"236\" height=\"50\" rx=\"8\" class=\"sk\"/><text x=\"204\" y=\"215\" class=\"xs b\">ผิวหนัง ทางเดินอาหาร</text><text x=\"204\" y=\"233\" class=\"xs\">ลมพิษ คัน · ปวดท้อง อาเจียน</text><path d=\"M138,132 L192,219\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/></g><g data-s=\"5\"><rect x=\"8\" y=\"256\" width=\"424\" height=\"70\" rx=\"8\" class=\"ok\"/><text x=\"18\" y=\"276\" class=\"xs b\">Adrenaline 0.5 mg IM ต้นขาด้านหน้าข้าง (1:1000) — ซ้ำทุก 5−15 นาที</text><text x=\"18\" y=\"294\" class=\"xs\">α1 บีบหลอดเลือด ลดรั่ว · β1 หัวใจบีบแรงขึ้น · β2 ขยายหลอดลม ยับยั้ง mast cell</text><text x=\"18\" y=\"312\" class=\"xs tbad b\">ยาแก้แพ้/สเตียรอยด์ = ยาเสริม ออกฤทธิ์ช้า ใช้แทนไม่ได้</text></g></svg>",
+    "steps": [
+     {
+      "t": "Allergen จับ IgE",
+      "cap": "ผู้ป่วยเคยถูก sensitize แล้ว มี **IgE เกาะบน mast cell** · สัมผัส allergen ซ้ำ (ยา อาหาร แมลงต่อย) → allergen จับ IgE ข้ามกัน = **hypersensitivity type I**"
+     },
+     {
+      "t": "Mast cell แตกตัว",
+      "cap": "mast cell หลั่ง **histamine, leukotriene** และตัวกลางอื่นออกทั่วร่างกายภายในไม่กี่นาที"
+     },
+     {
+      "t": "หลอดเลือดขยายและรั่ว → ช็อก",
+      "cap": "หลอดเลือดขยายทั่วตัว (**SVR ↓**) และรั่วจนปริมาตรในหลอดเลือดหายไปมาก (**preload ↓**) พร้อมกัน → **distributive shock** หัวใจเต้นเร็ว (ต่างจาก vasovagal ที่เต้นช้า)"
+     },
+     {
+      "t": "ทางเดินหายใจ ผิวหนัง ลำไส้",
+      "cap": "หลอดลมหดเกร็ง → **wheeze** · angioedema ของกล่องเสียง → **stridor** (เตรียมเปิดทางเดินหายใจ) · ลมพิษ คัน ปวดท้อง อาเจียน — **ไม่มีผื่นก็เป็น anaphylaxis ได้**"
+     },
+     {
+      "t": "Adrenaline IM แก้ทุกจุด",
+      "cap": "**adrenaline 0.5 mg (1:1000) IM ที่ต้นขาด้านหน้าข้าง** ซ้ำได้ทุก 5−15 นาที · **α1** บีบหลอดเลือดลดรั่ว · **β1** เพิ่มแรงบีบ · **β2** ขยายหลอดลมและยับยั้ง mast cell · ยาแก้แพ้/สเตียรอยด์เป็นเพียงยาเสริม"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ihd-01",
+   "after": "จุดเปลี่ยนที่สำคัญที่สุด — plaque rupture",
+   "anim": {
+    "key": "c13-rupture",
+    "title": "Plaque rupture — จากคราบไขมันสู่ NSTE-ACS และ STEMI",
+    "svg": "<svg viewBox=\"0 0 440 324\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เทียบคราบไขมันตีบคงที่กับ vulnerable plaque ที่ cap แตก เกิด white thrombus ใน NSTE-ACS และ red thrombus อุดสนิทใน STEMI\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"12\" y=\"22\" class=\"xs b\">CCS — คราบตีบคงที่ fibrous cap หนา</text><rect x=\"8\" y=\"30\" width=\"424\" height=\"12\" rx=\"4\" class=\"ac\"/><rect x=\"8\" y=\"94\" width=\"424\" height=\"12\" rx=\"4\" class=\"ac\"/><path d=\"M140,94 Q210,40 280,94 Z\" class=\"sk\"/><ellipse cx=\"210\" cy=\"84\" rx=\"26\" ry=\"7\" class=\"ms\"/><g><circle cx=\"52.1\" cy=\"68.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-0.30s\" repeatCount=\"indefinite\" path=\"M-42.1,0.0 L77.9,0.0 Q157.9,-16.0 237.9,0.0 L377.9,0.0\"/></circle><circle cx=\"136.2\" cy=\"66.8\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-0.90s\" repeatCount=\"indefinite\" path=\"M-126.2,1.2 L-6.2,1.2 Q73.8,-14.8 153.8,1.2 L293.8,1.2\"/></circle><circle cx=\"220.0\" cy=\"60.1\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-1.50s\" repeatCount=\"indefinite\" path=\"M-210.0,7.9 L-90.0,7.9 Q-10.0,-8.1 70.0,7.9 L210.0,7.9\"/></circle><circle cx=\"303.7\" cy=\"68.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-2.10s\" repeatCount=\"indefinite\" path=\"M-293.7,0.0 L-173.7,0.0 Q-93.7,-16.0 -13.7,0.0 L126.3,0.0\"/></circle><circle cx=\"387.9\" cy=\"68.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-2.70s\" repeatCount=\"indefinite\" path=\"M-377.9,0.0 L-257.9,0.0 Q-177.9,-16.0 -97.9,0.0 L42.1,0.0\"/></circle></g><text x=\"220\" y=\"124\" class=\"xs mid mu\">ตีบมากแต่เสถียร → เจ็บเมื่อออกแรง พักแล้วหาย</text><g data-s=\"2\"><text x=\"12\" y=\"146\" class=\"xs b tbad\">Vulnerable plaque — ตีบน้อย ไขมันมาก cap บาง อักเสบ</text></g><rect x=\"8\" y=\"156\" width=\"424\" height=\"12\" rx=\"4\" class=\"ac\"/><rect x=\"8\" y=\"220\" width=\"424\" height=\"12\" rx=\"4\" class=\"ac\"/><path d=\"M140,220 Q210,178 280,220 Z\" class=\"ms\"/><g data-s=\"2\"><path d=\"M146,214 Q210,176 274,214\" class=\"lmu w2 pl\"/></g><g data-x=\"4\"><circle cx=\"52.0\" cy=\"192.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-0.26s\" repeatCount=\"indefinite\" path=\"M-42.0,0.0 L88.0,0.0 Q158.0,-10.0 228.0,0.0 L378.0,0.0\"/></circle><circle cx=\"136.1\" cy=\"192.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-0.78s\" repeatCount=\"indefinite\" path=\"M-126.1,0.0 L3.9,0.0 Q73.9,-10.0 143.9,0.0 L293.9,0.0\"/></circle><circle cx=\"220.0\" cy=\"187.1\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-1.30s\" repeatCount=\"indefinite\" path=\"M-210.0,4.9 L-80.0,4.9 Q-10.0,-5.1 60.0,4.9 L210.0,4.9\"/></circle><circle cx=\"303.9\" cy=\"192.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-1.82s\" repeatCount=\"indefinite\" path=\"M-293.9,0.0 L-163.9,0.0 Q-93.9,-10.0 -23.9,0.0 L126.1,0.0\"/></circle><circle cx=\"388.0\" cy=\"192.0\" r=\"3.5\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-2.34s\" repeatCount=\"indefinite\" path=\"M-378.0,0.0 L-248.0,0.0 Q-178.0,-10.0 -108.0,0.0 L42.0,0.0\"/></circle></g><g data-s=\"3\"><path d=\"M204,196 L210,206 L216,195\" class=\"lbad w3\"/><path d=\"M184,200 Q206,170 232,198 Z\" class=\"bx\"/><circle cx=\"196\" cy=\"192\" r=\"2.5\" class=\"muf\"/><circle cx=\"206\" cy=\"186\" r=\"2.5\" class=\"muf\"/><circle cx=\"216\" cy=\"190\" r=\"2.5\" class=\"muf\"/><circle cx=\"224\" cy=\"195\" r=\"2.5\" class=\"muf\"/><text x=\"220\" y=\"248\" class=\"xs mid b\">cap แตก → เกล็ดเลือดเกาะ = white thrombus อุดบางส่วน → NSTE-ACS</text></g><g data-s=\"4\"><path d=\"M172,218 Q174,178 194,169 L240,169 Q256,182 262,216 Q216,200 172,218 Z\" class=\"bad\"/><g><circle cx=\"40\" cy=\"192\" r=\"2.5\" class=\"badf\"/><circle cx=\"70\" cy=\"186\" r=\"2.5\" class=\"badf\"/><circle cx=\"100\" cy=\"196\" r=\"2.5\" class=\"badf\"/><circle cx=\"130\" cy=\"190\" r=\"2.5\" class=\"badf\"/><circle cx=\"155\" cy=\"192\" r=\"2.5\" class=\"badf\"/></g><text x=\"360\" y=\"196\" class=\"xs mid tbad b\">ไม่มีเลือดไปเลี้ยง</text><text x=\"220\" y=\"266\" class=\"xs mid b tbad\">fibrin + เม็ดเลือดแดง = red thrombus อุดสนิท → STEMI</text><rect x=\"8\" y=\"278\" width=\"424\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"296\" class=\"xs mid b\">ยาละลายลิ่มเลือดสลาย fibrin → ช่วย STEMI</text><text x=\"220\" y=\"311\" class=\"xs mid\">NSTE-ACS (ลิ่มขาว เกล็ดเลือดเด่น) ไม่ช่วย แต่เลือดออกในสมองเท่าเดิม</text></g></svg>",
+    "steps": [
+     {
+      "t": "คราบตีบคงที่ (CCS)",
+      "cap": "คราบที่มี **fibrous cap หนา** ตีบมากแต่เสถียร → เลือดพอตอนพัก ไม่พอตอนออกแรง = **stable angina** เจ็บเมื่อออกแรง พักแล้วหาย"
+     },
+     {
+      "t": "Vulnerable plaque",
+      "cap": "คราบที่ **ไขมันมาก cap บาง อักเสบสูง** อาจตีบไม่มาก (เลือดยังไหลดี ไม่มีอาการ) แต่ **แตกง่าย** — คราบที่ตีบมากที่สุดจึงไม่ใช่คราบที่อันตรายที่สุดเสมอไป"
+     },
+     {
+      "t": "Cap แตก → white thrombus",
+      "cap": "cap แตก เนื้อไขมันสัมผัสเลือด → **เกล็ดเลือดเกาะเป็นลิ่มขาว** อุดไม่สนิท เลือดยังผ่านได้บ้าง → ขาดเลือดชั้นใน = **NSTE-ACS** (NSTEMI ถ้า troponin ขึ้น)"
+     },
+     {
+      "t": "Red thrombus อุดสนิท → STEMI",
+      "cap": "ลิ่มโตต่อด้วย **fibrin + เม็ดเลือดแดง** อุดสนิท → ขาดเลือดทั้งความหนาผนัง = **STEMI** ต้องเปิดหลอดเลือดทันที · **ยาละลายลิ่มเลือดสลาย fibrin จึงช่วย STEMI แต่ห้ามใช้ใน NSTE-ACS**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ihd-02",
+   "after": "ทำไมถึงมีอาการนี้ — stable angina",
+   "anim": {
+    "key": "c13-supply",
+    "title": "Stable angina — ความต้องการ O₂ เกินที่หลอดเลือดตีบส่งได้",
+    "svg": "<svg viewBox=\"0 0 440 318\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: หลอดเลือดหัวใจตีบคงที่ ส่งออกซิเจนได้เท่าเดิม เมื่อออกแรงความต้องการเกินจน subendocardium ขาดเลือด ST กด พักหรือไนเตรตลดความต้องการ\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"12\" y=\"22\" class=\"xs b\">ตีบคงที่ · arteriole ปลายทางขยายสุดแล้วตั้งแต่พัก</text><rect x=\"12\" y=\"32\" width=\"250\" height=\"8\" rx=\"3\" class=\"ac\"/><rect x=\"12\" y=\"72\" width=\"250\" height=\"8\" rx=\"3\" class=\"ac\"/><path d=\"M100,40 Q130,56 160,40 Z\" class=\"sk\"/><path d=\"M100,72 Q130,58 160,72 Z\" class=\"sk\"/><g><circle cx=\"45.0\" cy=\"56.0\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"-0.30s\" repeatCount=\"indefinite\" path=\"M-31.0,0.0 L217.0,0.0\"/></circle><circle cx=\"107.0\" cy=\"56.0\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"-0.90s\" repeatCount=\"indefinite\" path=\"M-93.0,0.0 L155.0,0.0\"/></circle><circle cx=\"169.0\" cy=\"56.0\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"-1.50s\" repeatCount=\"indefinite\" path=\"M-155.0,0.0 L93.0,0.0\"/></circle><circle cx=\"231.0\" cy=\"56.0\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"-2.10s\" repeatCount=\"indefinite\" path=\"M-217.0,0.0 L31.0,0.0\"/></circle></g><path d=\"M200,80 L200,110 M160,80 Q150,96 120,110 M236,80 Q246,96 252,110\" class=\"lac w2\"/><rect x=\"40\" y=\"110\" width=\"220\" height=\"120\" rx=\"6\" class=\"ac\"/><text x=\"150\" y=\"128\" class=\"xs mid\">epicardium</text><text x=\"150\" y=\"168\" class=\"sm mid b\">กล้ามเนื้อ LV</text><rect x=\"40\" y=\"200\" width=\"220\" height=\"30\" rx=\"4\" class=\"bx\" data-x=\"3\"/><g data-s=\"3\"><rect x=\"40\" y=\"200\" width=\"220\" height=\"30\" rx=\"4\" class=\"bad pl\"/></g><text x=\"150\" y=\"220\" class=\"xs mid\">subendocardium</text><line x1=\"282\" y1=\"230\" x2=\"432\" y2=\"230\" class=\"ln w2\"/><rect x=\"298\" y=\"140\" width=\"44\" height=\"90\" rx=\"4\" class=\"wa\"/><text x=\"320\" y=\"248\" class=\"xs mid b\">ส่ง O₂</text><rect x=\"370\" y=\"150\" width=\"44\" height=\"80\" rx=\"4\" class=\"ms\" data-x=\"2\"/><g data-s=\"2\" data-x=\"4\"><rect x=\"370\" y=\"80\" width=\"44\" height=\"150\" rx=\"4\" class=\"bad\"/></g><g data-s=\"4\"><rect x=\"370\" y=\"160\" width=\"44\" height=\"70\" rx=\"4\" class=\"ok\"/></g><text x=\"392\" y=\"248\" class=\"xs mid b\">ต้องการ O₂</text><g data-s=\"2\" data-x=\"4\"><text x=\"357\" y=\"66\" class=\"xs mid tbad b\">ออกแรง: HR · BP · แรงบีบ ↑</text><text x=\"320\" y=\"130\" class=\"xs mid mu\">เพิ่มไม่ได้</text></g><g data-s=\"3\"><text x=\"150\" y=\"248\" class=\"xs mid tbad b\">ขาดเลือดชั้นในก่อน → เจ็บ ร้าวแขน คอ กราม</text><line x1=\"28\" y1=\"290\" x2=\"228\" y2=\"290\" class=\"lmu da\"/><path d=\"M30.0,290.0 L39.6,290.0 Q46.8,283.6 54.0,290.0 L56.4,290.0 L66.0,290.0 L69.6,293.2 L74.4,266.0 L79.2,296.4 L84.0,297 Q97.2,297 105.6,287.4 Q114.0,286.4 123.6,290.0 L126.0,290.0\" class=\"lbad w2\"/><text x=\"236\" y=\"288\" class=\"xs tbad b\">ST depression</text><text x=\"236\" y=\"302\" class=\"xs\">ขณะออกแรง</text></g><g data-s=\"4\"><text x=\"357\" y=\"66\" class=\"xs mid tok b\">พัก / nitrate → ต้องการ ↓</text><rect x=\"282\" y=\"262\" width=\"150\" height=\"50\" rx=\"8\" class=\"ok\"/><text x=\"357\" y=\"281\" class=\"xs mid b\">nitrate: venodilate</text><text x=\"357\" y=\"298\" class=\"xs mid\">preload ↓ แรงตึงผนัง ↓</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตอนพัก: ยังพอ",
+      "cap": "หลอดเลือดหัวใจตีบคงที่ แต่ **arteriole ปลายทางขยายชดเชยจนสุดตั้งแต่ตอนพัก** → เลือดที่ส่งได้ (ฟ้า) ยังพอกับความต้องการ (เหลือง)"
+     },
+     {
+      "t": "ออกแรง: ต้องการเพิ่ม แต่ส่งเพิ่มไม่ได้",
+      "cap": "ออกแรงหรืออารมณ์ → **HR, BP, แรงบีบ ↑** → ใช้ O₂ มากขึ้น · หลอดเลือดที่ตีบและ arteriole ที่ขยายสุดแล้ว **เพิ่มเลือดไม่ได้** → demand > supply"
+     },
+     {
+      "t": "Subendocardium ขาดเลือดก่อน",
+      "cap": "ชั้นใต้เยื่อบุด้านในมีแรงตึงผนังสูงสุดและได้เลือดเฉพาะช่วง diastole (ซึ่งสั้นลงเมื่อเต้นเร็ว) → **ขาดเลือดก่อน → ST depression** · สารจากเซลล์ขาดเลือดกระตุ้นใยประสาท C7−T4 → **แน่นกลางอก ร้าวแขน คอ กราม**"
+     },
+     {
+      "t": "พักหรืออมไนเตรต → หายในไม่กี่นาที",
+      "cap": "พักลดความต้องการ O₂ · **ไนเตรตขยายหลอดเลือดดำ → preload ↓ แรงตึงผนัง ↓** และขยายหลอดเลือดหัวใจ → อาการหายในไม่กี่นาที · **เจ็บขณะพักนานเกิน 20 นาที = คิดถึง ACS**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ihd-05",
+   "after": "กลไก: ทำไม RV infarction ห้ามให้ไนเตรต",
+   "anim": {
+    "key": "c13-rvmi",
+    "title": "RV infarction — ทำไม BP ต่ำ JVP สูง ปอดใส และห้ามไนเตรต",
+    "svg": "<svg viewBox=\"0 0 440 316\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: RCA ส่วนต้นอุดทำให้ RV บีบไม่ได้ เลือดคั่งหลอดเลือดดำ JVP สูง ปอดใส LV preload ต่ำ BP ต่ำ ไนเตรตทำให้ BP ดิ่ง ต้องให้สารน้ำ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"100\" width=\"84\" height=\"64\" rx=\"12\" class=\"wa\"/><text x=\"50.0\" y=\"128\" class=\"xs mid b\">หลอดเลือดดำ</text><text x=\"50.0\" y=\"148\" class=\"sm mid b\">JVP</text><rect x=\"112\" y=\"100\" width=\"74\" height=\"64\" rx=\"12\" class=\"ac\"/><text x=\"149.0\" y=\"137\" class=\"sm mid b\">RV</text><rect x=\"206\" y=\"100\" width=\"74\" height=\"64\" rx=\"12\" class=\"sk\"/><text x=\"243.0\" y=\"137\" class=\"sm mid b\">ปอด</text><rect x=\"300\" y=\"100\" width=\"70\" height=\"64\" rx=\"12\" class=\"ac\"/><text x=\"335.0\" y=\"137\" class=\"sm mid b\">LV</text><rect x=\"388\" y=\"100\" width=\"46\" height=\"64\" rx=\"12\" class=\"bx\"/><text x=\"411.0\" y=\"137\" class=\"sm mid b\">BP</text><path d=\"M92,132 L110,132\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M186,132 L204,132\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M280,132 L298,132\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M370,132 L386,132\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><g data-x=\"2\"><circle cx=\"70.8\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-0.25s\" repeatCount=\"indefinite\" path=\"M-20.8,10.0 L-20.8,0.0 L78.2,0.0 L172.2,0.0 L264.2,0.0 L339.2,0.0\"/></circle><circle cx=\"132.5\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-0.75s\" repeatCount=\"indefinite\" path=\"M-82.5,10.0 L-82.5,0.0 L16.5,0.0 L110.5,0.0 L202.5,0.0 L277.5,0.0\"/></circle><circle cx=\"194.2\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-1.25s\" repeatCount=\"indefinite\" path=\"M-144.2,10.0 L-144.2,0.0 L-45.2,0.0 L48.8,0.0 L140.8,0.0 L215.8,0.0\"/></circle><circle cx=\"255.8\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-1.75s\" repeatCount=\"indefinite\" path=\"M-205.8,10.0 L-205.8,0.0 L-106.8,0.0 L-12.8,0.0 L79.2,0.0 L154.2,0.0\"/></circle><circle cx=\"317.5\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-2.25s\" repeatCount=\"indefinite\" path=\"M-267.5,10.0 L-267.5,0.0 L-168.5,0.0 L-74.5,0.0 L17.5,0.0 L92.5,0.0\"/></circle><circle cx=\"379.2\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-2.75s\" repeatCount=\"indefinite\" path=\"M-329.2,10.0 L-329.2,0.0 L-230.2,0.0 L-136.2,0.0 L-44.2,0.0 L30.8,0.0\"/></circle></g><g data-s=\"2\"><path d=\"M80,62 Q120,40 160,60 L170,96\" class=\"lac w3\"/><text x=\"30\" y=\"40\" class=\"xs b tbad\">RCA ส่วนต้นอุด</text><circle cx=\"122\" cy=\"47\" r=\"7\" class=\"badf\"/><rect x=\"112\" y=\"100\" width=\"74\" height=\"64\" rx=\"12\" class=\"bad\"/><text x=\"149\" y=\"128\" class=\"sm mid b\">RV</text><text x=\"149\" y=\"148\" class=\"xs mid b\">บีบไม่ได้</text></g><g data-s=\"2\" data-x=\"4\"><circle cx=\"58.2\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-0.50s\" repeatCount=\"indefinite\" path=\"M-8.2,10.0 L-8.2,0.0 L90.8,0.0\"/></circle><circle cx=\"94.5\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-1.50s\" repeatCount=\"indefinite\" path=\"M-44.5,10.0 L-44.5,0.0 L54.5,0.0\"/></circle><circle cx=\"130.8\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"3.0s\" begin=\"-2.50s\" repeatCount=\"indefinite\" path=\"M-80.8,10.0 L-80.8,0.0 L18.2,0.0\"/></circle><circle cx=\"214.2\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"4.0s\" begin=\"-1.00s\" repeatCount=\"indefinite\" path=\"M-65.2,0.0 L28.8,0.0 L120.8,0.0 L195.8,0.0\"/></circle><circle cx=\"344.8\" cy=\"180.0\" r=\"3\" class=\"acf\"><animateMotion dur=\"4.0s\" begin=\"-3.00s\" repeatCount=\"indefinite\" path=\"M-195.8,0.0 L-101.8,0.0 L-9.8,0.0 L65.2,0.0\"/></circle></g><g data-s=\"3\"><rect x=\"10\" y=\"102\" width=\"80\" height=\"60\" rx=\"10\" class=\"bad\"/><text x=\"50\" y=\"128\" class=\"xs mid b\">เลือดคั่ง</text><text x=\"50\" y=\"148\" class=\"sm mid b\">JVP สูง</text><text x=\"243\" y=\"188\" class=\"xs mid tok b\">ปอดใส</text><text x=\"335\" y=\"188\" class=\"xs mid tbad b\">preload ↓</text><text x=\"411\" y=\"188\" class=\"xs mid tbad b\">ต่ำ</text><text x=\"220\" y=\"214\" class=\"sm mid b tbad\">triad: BP ต่ำ + JVP สูง + ปอดใส</text></g><g data-s=\"4\"><rect x=\"8\" y=\"228\" width=\"424\" height=\"42\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"246\" class=\"xs mid b\">ไนเตรต / ยาขับปัสสาวะ → เลือดค้างหลอดเลือดดำส่วนปลาย</text><text x=\"220\" y=\"262\" class=\"xs mid\">preload ที่เหลือน้อยหายไปอีก → BP ดิ่ง</text><rect x=\"8\" y=\"276\" width=\"424\" height=\"34\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"298\" class=\"xs mid b\">รักษา: ให้สารน้ำ IV รักษา preload + เปิดหลอดเลือด RCA</text></g></svg>",
+    "steps": [
+     {
+      "t": "วงจรต่ออนุกรม",
+      "cap": "เลือดดำ → **RV ต้องบีบส่งผ่านปอด** → LV → BP · LV จะบีบได้แค่ไหนขึ้นกับเลือดที่ RV ส่งมาให้ (preload ของ LV)"
+     },
+     {
+      "t": "RCA ส่วนต้นอุด → RV infarction",
+      "cap": "inferior STEMI จาก **RCA ส่วนต้น** → RV ขาดเลือด บีบไม่ได้ · ต้องเพิ่ม lead **V3R, V4R** เพื่อหา RV infarction เสมอใน inferior MI"
+     },
+     {
+      "t": "Triad: BP ต่ำ JVP สูง ปอดใส",
+      "cap": "เลือดค้างอยู่ **หน้า RV → JVP สูง** · ผ่านปอดได้น้อย **→ ปอดใส** · LV ได้เลือดน้อย **→ preload ต่ำ BP ต่ำ** = triad ของ RV infarction"
+     },
+     {
+      "t": "ห้ามไนเตรต — ให้สารน้ำ",
+      "cap": "ไนเตรตและยาขับปัสสาวะทำให้เลือดไปค้างในหลอดเลือดดำส่วนปลาย → **preload ที่เหลือน้อยหายไปอีก → BP ดิ่ง** · การรักษากลับกันคือ **ให้สารน้ำ** รักษา preload ร่วมกับเปิดหลอดเลือด"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-af-01",
+   "after": "กลไกที่ทำให้เกิด stroke",
+   "anim": {
+    "key": "c24-laa",
+    "title": "AF → ลิ่มเลือดใน LAA → stroke",
+    "svg": "<svg viewBox=\"0 0 440 352\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: AF ทำให้ห้องบนซ้ายไม่บีบ เลือดค้างใน left atrial appendage เกิดลิ่มเลือด หลุดไปอุดหลอดเลือดสมอง และการป้องกันด้วยยาต้านการแข็งตัวของเลือด\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"380\" cy=\"64\" rx=\"52\" ry=\"40\" class=\"sk\"/><text x=\"380\" y=\"52\" class=\"sm mid b\">สมอง</text><path d=\"M150,250 Q230,268 252,196 L300,112 Q318,80 350,76\" class=\"lac w5\"/><text x=\"266\" y=\"236\" class=\"xs b tac\">aorta → carotid</text><ellipse cx=\"130\" cy=\"246\" rx=\"62\" ry=\"40\" class=\"ac\"/><text x=\"116\" y=\"252\" class=\"sm mid b\">LV</text><path d=\"M186,92 Q206,62 232,50 Q244,48 240,62 Q226,82 204,110 Z\" class=\"ac\"/><ellipse cx=\"124\" cy=\"124\" rx=\"74\" ry=\"54\" class=\"ac\"/><text x=\"104\" y=\"128\" class=\"lg mid b\">LA</text><text x=\"250\" y=\"70\" class=\"sm b\">LAA</text><line x1=\"124\" y1=\"178\" x2=\"124\" y2=\"204\" class=\"lmu w2\"/><text x=\"132\" y=\"196\" class=\"xs mu\">mitral</text><g data-x=\"2\"><ellipse cx=\"124\" cy=\"124\" rx=\"74\" ry=\"54\" class=\"lok w2\"><animate attributeName=\"ry\" values=\"54;46;54\" dur=\"1s\" repeatCount=\"indefinite\"/></ellipse><circle cx=\"209.4\" cy=\"74.3\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-0.16s\" repeatCount=\"indefinite\" path=\"M16.6,-14.3 Q-29.4,25.7 -69.4,55.7 L-85.4,125.7 L-85.4,161.7\"/></circle><circle cx=\"175.7\" cy=\"102.2\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-0.48s\" repeatCount=\"indefinite\" path=\"M50.3,-42.2 Q4.3,-2.2 -35.7,27.8 L-51.7,97.8 L-51.7,133.8\"/></circle><circle cx=\"141.2\" cy=\"129.1\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-0.80s\" repeatCount=\"indefinite\" path=\"M84.8,-69.1 Q38.8,-29.1 -1.2,0.9 L-17.2,70.9 L-17.2,106.9\"/></circle><circle cx=\"130.6\" cy=\"171.1\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.12s\" repeatCount=\"indefinite\" path=\"M95.4,-111.1 Q49.4,-71.1 9.4,-41.1 L-6.6,28.9 L-6.6,64.9\"/></circle><circle cx=\"124.0\" cy=\"214.1\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"1.6s\" begin=\"-1.44s\" repeatCount=\"indefinite\" path=\"M102.0,-154.1 Q56.0,-114.1 16.0,-84.1 L0.0,-14.1 L0.0,21.9\"/></circle><text x=\"12\" y=\"40\" class=\"xs tok b\">ปกติ: ห้องบนบีบ → ไล่เลือดผ่าน LAA</text></g><g data-s=\"2\"><path d=\"M70,112 L80,100 L90,120 L100,98 L110,122 L120,100 L130,118 L140,102 L150,124 L160,104 L170,118\" class=\"lbad w2 pl\"/><text x=\"12\" y=\"40\" class=\"xs tbad b\">AF: ห้องบนสั่น ไม่บีบ → เลือดค้างใน LAA (stasis)</text><circle cx=\"225.6\" cy=\"65.6\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"6.0s\" begin=\"-1.00s\" repeatCount=\"indefinite\" path=\"M6.4,-7.6 Q-5.6,6.4 -13.6,18.4 Q-19.6,8.4 -3.6,-3.6\"/></circle><circle cx=\"213.7\" cy=\"81.5\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"6.0s\" begin=\"-3.00s\" repeatCount=\"indefinite\" path=\"M18.3,-23.5 Q6.3,-9.5 -1.7,2.5 Q-7.7,-7.5 8.3,-19.5\"/></circle><circle cx=\"214.7\" cy=\"68.7\" r=\"3.5\" class=\"acf\"><animateMotion dur=\"6.0s\" begin=\"-5.00s\" repeatCount=\"indefinite\" path=\"M17.3,-10.7 Q5.3,3.3 -2.7,15.3 Q-8.7,5.3 7.3,-6.7\"/></circle></g><g data-s=\"3\"><path d=\"M214,72 Q226,56 236,56 Q238,66 222,86 Z\" class=\"bad\"/><text x=\"12\" y=\"58\" class=\"xs b tbad\">→ ลิ่มเลือดก่อตัวใน LAA</text></g><g data-s=\"4\"><circle cx=\"310.9\" cy=\"96.6\" r=\"6\" class=\"badf\"><animateMotion dur=\"3.6s\" begin=\"-3.24s\" repeatCount=\"indefinite\" path=\"M-84.9,-26.6 Q-150.9,13.4 -180.9,103.4 Q-150.9,165.4 -70.9,115.4 L-12.9,17.4 Q7.1,-16.6 41.1,-22.6\"/></circle><ellipse cx=\"372\" cy=\"76\" rx=\"14\" ry=\"10\" class=\"bad\"/><text x=\"384\" y=\"122\" class=\"xs mid b tbad\">MCA อุด → stroke</text></g><g data-s=\"5\"><rect x=\"10\" y=\"300\" width=\"420\" height=\"46\" rx=\"8\" class=\"ok\"/><text x=\"20\" y=\"318\" class=\"xs b\">ป้องกัน: warfarin (INR 2−3) / NOAC ตาม CHA₂DS₂-VASc</text><text x=\"20\" y=\"336\" class=\"xs\">ใช้ยาระยะยาวไม่ได้ → ปิด LAA (LAA occluder) · aspirin ไม่ใช่ยาป้องกัน stroke ใน AF</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: ห้องบนบีบไล่เลือด",
+      "cap": "จังหวะปกติ ห้องบนซ้ายบีบตัวทุกจังหวะ ไล่เลือดออกจาก **left atrial appendage (LAA)** ซึ่งเป็นกระเปาะปลายตัน ลงสู่ LV"
+     },
+     {
+      "t": "AF: ห้องบนสั่น ไม่บีบ",
+      "cap": "ห้องบนสั่นพลิ้ว 350−600 ครั้ง/นาทีแต่ **ไม่บีบตัวจริง** → เลือดไหลช้าและค้าง โดยเฉพาะใน **LAA** (stasis — ขาหนึ่งของ Virchow's triad)"
+     },
+     {
+      "t": "ลิ่มเลือดก่อตัวใน LAA",
+      "cap": "เลือดค้าง + ผนังห้องบนที่เสื่อม → **ลิ่มเลือดก่อตัวที่ LAA มากที่สุด** · ระยะของ AF (paroxysmal/persistent) **ไม่ได้เปลี่ยนความเสี่ยงนี้**"
+     },
+     {
+      "t": "หลุดไปอุดสมอง",
+      "cap": "ลิ่มหลุด → LV → aorta → carotid → อุด **หลอดเลือดสมองใหญ่ (เช่น MCA)** · stroke จาก AF จึง **รุนแรงและเป็นก้อนใหญ่** — AF เป็นสาเหตุ 20−30% ของ ischemic stroke เสี่ยงเพิ่ม 5 เท่า"
+     },
+     {
+      "t": "ป้องกันตรงจุด",
+      "cap": "ให้ **warfarin หรือ NOAC** ตาม CHA₂DS₂-VASc (หรือ CHA₂DS₂-VA ของ ESC 2024) · ใช้ยาระยะยาวไม่ได้ → **ปิด LAA** · **aspirin ไม่ใช่ยาป้องกัน stroke ใน AF**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-af-03",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "c24-kick",
+    "title": "ทำไม AF ทำให้เหนื่อย — เสีย atrial kick, diastole สั้น, pulse deficit",
+    "svg": "<svg viewBox=\"0 0 440 336\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: กราฟปริมาตร LV ในช่วง diastole ปกติมี atrial kick AF เสีย kick หัวใจเต้นเร็วทำให้ diastole สั้น SV ลด และ pulse deficit ที่ชีพจรข้อมือน้อยกว่าที่ฟังได้\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"160\" class=\"ln w2\"/><line x1=\"40\" y1=\"160\" x2=\"270\" y2=\"160\" class=\"ln w2\"/><text x=\"44\" y=\"24\" class=\"xs mu b\">ปริมาตร LV</text><text x=\"150\" y=\"178\" class=\"xs mid mu\">เวลาใน diastole →</text><path d=\"M40,155 Q70,92 140,90 L205,88 Q228,88 245,60\" class=\"lok w3\" data-x=\"2\"/><g data-x=\"2\"><circle cx=\"245\" cy=\"60\" r=\"4\" class=\"okf\"/><text x=\"252\" y=\"62\" class=\"xs tok b\">A (kick)</text></g><g data-s=\"2\"><path d=\"M40,155 Q70,92 140,90 L245,88\" class=\"lbad w3\"/><text x=\"245\" y=\"106\" class=\"xs mid tbad b\">ไม่มี kick</text><path d=\"M245,60 L245,84\" class=\"lok w2 da\"/><text x=\"240\" y=\"74\" class=\"xs end tok\">−20−30%</text></g><g data-s=\"3\"><line x1=\"130\" y1=\"40\" x2=\"130\" y2=\"160\" class=\"lbad w2 da\"/><text x=\"136\" y=\"50\" class=\"xs tbad b\">HR เร็ว: diastole สั้น</text><circle cx=\"130\" cy=\"91\" r=\"5\" class=\"badf\"/><text x=\"96\" y=\"112\" class=\"xs mid tbad b\">SV ↓</text></g><g data-s=\"5\"><text x=\"306\" y=\"44\" class=\"sm b tbad\">หัวใจแข็ง</text><text x=\"306\" y=\"62\" class=\"xs\">(LVH · HFpEF · MS)</text><text x=\"306\" y=\"80\" class=\"xs\">พึ่ง kick และ diastole</text><text x=\"306\" y=\"98\" class=\"xs\">ยาวมาก → ทรุดเร็ว</text><text x=\"306\" y=\"116\" class=\"xs tbad b\">→ น้ำท่วมปอด</text></g><g data-s=\"4\"><rect x=\"10\" y=\"196\" width=\"420\" height=\"132\" rx=\"8\" class=\"sk\"/><text x=\"20\" y=\"236\" class=\"xs b\">ฟังที่หัวใจ</text><text x=\"20\" y=\"292\" class=\"xs b\">ชีพจรข้อมือ</text><path d=\"M114,248 L120,216 L125,254 L128,248\" class=\"lac w2\"/><path d=\"M111,300 Q120,270 129,300\" class=\"lok w2\"/><path d=\"M144,248 L150,216 L155,254 L158,248\" class=\"lac w2\"/><path d=\"M141,300 Q150,270 159,300\" class=\"lok w2\"/><path d=\"M199,248 L205,216 L210,254 L213,248\" class=\"lac w2\"/><path d=\"M196,300 Q205,270 214,300\" class=\"lok w2\"/><path d=\"M219,248 L225,216 L230,254 L233,248\" class=\"lac w2\"/><text x=\"225\" y=\"296\" class=\"sm mid tbad b\">✕</text><path d=\"M284,248 L290,216 L295,254 L298,248\" class=\"lac w2\"/><path d=\"M281,300 Q290,270 299,300\" class=\"lok w2\"/><path d=\"M324,248 L330,216 L335,254 L338,248\" class=\"lac w2\"/><path d=\"M321,300 Q330,270 339,300\" class=\"lok w2\"/><path d=\"M339,248 L345,216 L350,254 L353,248\" class=\"lac w2\"/><text x=\"345\" y=\"296\" class=\"sm mid tbad b\">✕</text><path d=\"M394,248 L400,216 L405,254 L408,248\" class=\"lac w2\"/><path d=\"M391,300 Q400,270 409,300\" class=\"lok w2\"/><line x1=\"100\" y1=\"248\" x2=\"424\" y2=\"248\" class=\"lmu\"/><line x1=\"100\" y1=\"300\" x2=\"424\" y2=\"300\" class=\"lmu\"/><text x=\"220\" y=\"320\" class=\"xs mid tbad b\">ฟังได้ 8 ครั้ง · คลำได้ 6 ครั้ง = pulse deficit</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: เติมเร็ว + atrial kick",
+      "cap": "LV เติมเลือดส่วนใหญ่ช่วงต้น diastole แล้วปิดท้ายด้วย **ห้องบนบีบ (atrial kick) เติมอีกราว 20−30%** (จุดสีเขียว)"
+     },
+     {
+      "t": "AF: เสีย atrial kick",
+      "cap": "ห้องบนสั่นพลิ้วไม่บีบ → **ปริมาตรส่วนท้ายหายไป** · ไม่มี a wave ใน JVP ด้วยเหตุผลเดียวกัน"
+     },
+     {
+      "t": "AF เร็ว: diastole สั้น",
+      "cap": "อัตราเร็วทำให้ **diastole สั้นจน LV เติมไม่ทัน** → SV ↓ → CO ↓ → เหนื่อย ทนออกแรงไม่ได้ · R-R ไม่เท่ากัน SV จึงต่างกันทุกจังหวะ (S1 ดังไม่เท่ากัน)"
+     },
+     {
+      "t": "Pulse deficit",
+      "cap": "จังหวะที่ตามหลัง R-R สั้น SV น้อยจน **แรงดันไม่ถึงข้อมือ** → อัตราที่ฟังหัวใจ **มากกว่า** ชีพจรที่คลำได้ · ต้องนับอัตราจากการฟังหรือ ECG"
+     },
+     {
+      "t": "ใครทรุดเร็วที่สุด",
+      "cap": "หัวใจแข็ง — **LVH, HFpEF, mitral stenosis** — พึ่ง atrial kick และ diastole ที่ยาวมาก → AF เร็วทำให้ความดัน LA พุ่ง **น้ำท่วมปอด** · ถ้า unstable → **synchronized cardioversion ทันที**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-af-09",
+   "after": "ยาคุมอัตรา (สไลด์)",
+   "anim": {
+    "key": "c24-avnode",
+    "title": "AV node กรองสัญญาณ AF — rate control ทำงานอย่างไร และทำไม WPW ห้ามใช้",
+    "svg": "<svg viewBox=\"0 0 440 352\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ห้องบนส่งสัญญาณ AF แบบสุ่ม AV node กรองให้ผ่านบางส่วนจนห้องล่างเต้นไม่สม่ำเสมอ ยาคุมอัตรายืดระยะดื้อ AV node และ WPW ที่มีทางลัดห้ามใช้ยากด AV node\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"40\" y=\"16\" width=\"360\" height=\"94\" rx=\"20\" class=\"wa\"/><text x=\"220\" y=\"36\" class=\"sm mid b\">ห้องบน: AF 350−600 ครั้ง/นาที แบบสุ่ม</text><path d=\"M90,70 Q106,56 112,74 Q96,86 90,70\" class=\"lwa w2\"/><circle cx=\"105.2\" cy=\"64.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"0.6s\" begin=\"-0.18s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><path d=\"M150,84 Q166,70 172,88 Q156,100 150,84\" class=\"lwa w2\"/><circle cx=\"165.2\" cy=\"78.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"0.73s\" begin=\"-0.22s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><path d=\"M210,62 Q226,48 232,66 Q216,78 210,62\" class=\"lwa w2\"/><circle cx=\"225.2\" cy=\"56.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"0.86s\" begin=\"-0.26s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><path d=\"M270,86 Q286,72 292,90 Q276,102 270,86\" class=\"lwa w2\"/><circle cx=\"285.2\" cy=\"80.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"0.99s\" begin=\"-0.30s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><path d=\"M330,66 Q346,52 352,70 Q336,82 330,66\" class=\"lwa w2\"/><circle cx=\"345.2\" cy=\"60.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"1.12s\" begin=\"-0.34s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><path d=\"M370,90 Q386,76 392,94 Q376,106 370,90\" class=\"lwa w2\"/><circle cx=\"385.2\" cy=\"84.5\" r=\"3.5\" class=\"waf\"><animateMotion dur=\"1.25s\" begin=\"-0.38s\" repeatCount=\"indefinite\" path=\"M-15.2,5.5 Q0.8,-8.5 6.8,9.5 Q-9.2,21.5 -15.2,5.5\"/></circle><circle cx=\"220.0\" cy=\"115.0\" r=\"3\" class=\"waf\"><animateMotion dur=\"0.5s\" begin=\"-0.08s\" repeatCount=\"indefinite\" path=\"M0.0,-5.0 L0.0,25.0\"/></circle><circle cx=\"220.0\" cy=\"125.0\" r=\"3\" class=\"waf\"><animateMotion dur=\"0.5s\" begin=\"-0.25s\" repeatCount=\"indefinite\" path=\"M0.0,-15.0 L0.0,15.0\"/></circle><circle cx=\"220.0\" cy=\"135.0\" r=\"3\" class=\"waf\"><animateMotion dur=\"0.5s\" begin=\"-0.42s\" repeatCount=\"indefinite\" path=\"M0.0,-25.0 L0.0,5.0\"/></circle><circle cx=\"220\" cy=\"162\" r=\"22\" class=\"ms\"/><text x=\"220\" y=\"167\" class=\"sm mid b\">AV</text><path d=\"M220,184 L220,214\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><rect x=\"40\" y=\"218\" width=\"360\" height=\"84\" rx=\"20\" class=\"ac\"/><line x1=\"60\" y1=\"284\" x2=\"380\" y2=\"284\" class=\"lmu\"/><g data-x=\"3\"><path d=\"M76,284 L80,252 L84,290 L87,284\" class=\"lac w2\"/><path d=\"M104,284 L108,252 L112,290 L115,284\" class=\"lac w2\"/><path d=\"M146,284 L150,252 L154,290 L157,284\" class=\"lac w2\"/><path d=\"M166,284 L170,252 L174,290 L177,284\" class=\"lac w2\"/><path d=\"M210,284 L214,252 L218,290 L221,284\" class=\"lac w2\"/><path d=\"M238,284 L242,252 L246,290 L249,284\" class=\"lac w2\"/><path d=\"M288,284 L292,252 L296,290 L299,284\" class=\"lac w2\"/><path d=\"M308,284 L312,252 L316,290 L319,284\" class=\"lac w2\"/><path d=\"M346,284 L350,252 L354,290 L357,284\" class=\"lac w2\"/><text x=\"220\" y=\"238\" class=\"xs mid b\">ห้องล่าง: R-R ไม่สม่ำเสมอ ~150/นาที</text></g><g data-s=\"3\"><path d=\"M88,284 L92,252 L96,290 L99,284\" class=\"lac w2\"/><path d=\"M156,284 L160,252 L164,290 L167,284\" class=\"lac w2\"/><path d=\"M228,284 L232,252 L236,290 L239,284\" class=\"lac w2\"/><path d=\"M294,284 L298,252 L302,290 L305,284\" class=\"lac w2\"/><path d=\"M356,284 L360,252 L364,290 L367,284\" class=\"lac w2\"/><text x=\"220\" y=\"238\" class=\"xs mid b tok\">ห้องล่าง: ~90/นาที (เป้า &lt; 110)</text></g><g data-s=\"2\"><text x=\"258\" y=\"150\" class=\"sm tbad b\">✕</text><text x=\"176\" y=\"150\" class=\"sm end tbad b\">✕</text><text x=\"272\" y=\"166\" class=\"xs tbad\">ผ่านเฉพาะที่พ้น</text><text x=\"272\" y=\"180\" class=\"xs tbad\">ระยะดื้อ</text></g><g data-s=\"3\"><rect x=\"8\" y=\"132\" width=\"150\" height=\"50\" rx=\"8\" class=\"ok\"/><text x=\"83\" y=\"152\" class=\"xs mid b\">β-blocker · NDCC · digoxin</text><text x=\"83\" y=\"170\" class=\"xs mid\">ยืดระยะดื้อ AV node</text><path d=\"M158,160 L194,162\" class=\"lok w3\" marker-end=\"url(#ah-ok)\"/></g><g data-s=\"4\"><path d=\"M404,96 Q436,164 404,232\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"398\" y=\"130\" class=\"xs end tbad b\">ทางลัด</text><text x=\"398\" y=\"144\" class=\"xs end tbad b\">(WPW)</text><rect x=\"8\" y=\"308\" width=\"424\" height=\"40\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"326\" class=\"xs mid b\">WPW + AF: ห้ามยากด AV node (A·B·C·D) → สัญญาณลงทางลัดหมด</text><text x=\"220\" y=\"342\" class=\"xs mid\">→ เต้นเร็วมาก กลายเป็น VF · รักษาด้วย ablation (unstable → cardioversion)</text></g></svg>",
+    "steps": [
+     {
+      "t": "ห้องบนยิงไฟฟ้าแบบสุ่ม",
+      "cap": "AF มีวงไฟฟ้าเล็ก ๆ หลายวงในห้องบน → สัญญาณ **350−600 ครั้ง/นาที** มาถึง AV node แบบสุ่ม (ECG เห็นเป็น f wave ไม่มี P wave)"
+     },
+     {
+      "t": "AV node เป็นตัวกรอง",
+      "cap": "AV node ปล่อยผ่านเฉพาะสัญญาณที่มาถึงตอน **พ้นระยะดื้อ** → ห้องล่างเต้น **irregularly irregular** มักเร็ว 100−180 ครั้ง/นาที"
+     },
+     {
+      "t": "Rate control ยืดระยะดื้อ",
+      "cap": "**β-blocker, non-DHP CCB (diltiazem, verapamil), digoxin** ชะลอการนำผ่าน AV node → ห้องบนยังสั่นเหมือนเดิม แต่ผ่านลงน้อยลง → เป้า **< 110 ครั้ง/นาที** · HFrEF ห้าม NDCC"
+     },
+     {
+      "t": "WPW: ทางลัดที่ไม่มีตัวกรอง",
+      "cap": "accessory pathway ไม่มีคุณสมบัติชะลอแบบ AV node · ถ้ากด AV node (**Adenosine, β-Blocker, CCB, Digoxin**) สัญญาณจะลงทางลัดหมด → **เต้นเร็วมากจนเป็น VF** · รักษาด้วย **ablation**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-vhd-03",
+   "after": "กลไก — ความดันไล่ย้อนทีละขั้น",
+   "anim": {
+    "key": "c27-ms",
+    "title": "Mitral stenosis — ความดันไล่ย้อนจาก LA ถึง RV",
+    "svg": "<svg viewBox=\"0 0 440 358\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ลิ้นไมทรัลตีบทำให้ความดันไล่ย้อนจาก LA ไปหลอดเลือดดำปอด เกิด pulmonary hypertension และ RV ล้ม ขณะที่ LV เติมเลือดน้อย\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"140\" y=\"22\" width=\"160\" height=\"48\" rx=\"20\" class=\"wa\"/><text x=\"220\" y=\"51\" class=\"sm mid b\">ปอด</text><g data-s=\"3\"><rect x=\"140\" y=\"22\" width=\"160\" height=\"48\" rx=\"20\" class=\"bad\"/><text x=\"220\" y=\"51\" class=\"sm mid b\">ปอดคั่ง</text></g><path d=\"M186,206 Q206,190 206,74\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M262,72 L278,106\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><g data-s=\"2\"><rect x=\"230\" y=\"92\" width=\"112\" height=\"92\" rx=\"24\" class=\"ac\"/></g><rect x=\"90\" y=\"110\" width=\"90\" height=\"70\" rx=\"18\" class=\"bx\"/><text x=\"135\" y=\"150\" class=\"sm mid b\">RA</text><rect x=\"240\" y=\"110\" width=\"90\" height=\"70\" rx=\"18\" class=\"bx\"/><text x=\"285\" y=\"150\" class=\"sm mid b\">LA</text><rect x=\"80\" y=\"196\" width=\"110\" height=\"100\" rx=\"24\" class=\"bx\"/><text x=\"135\" y=\"250\" class=\"sm mid b\">RV</text><rect x=\"230\" y=\"196\" width=\"110\" height=\"100\" rx=\"24\" class=\"bx\"/><text x=\"285\" y=\"250\" class=\"sm mid b\">LV</text><line x1=\"250\" y1=\"182\" x2=\"280\" y2=\"196\" class=\"lms w5\"/><line x1=\"320\" y1=\"182\" x2=\"290\" y2=\"196\" class=\"lms w5\"/><path d=\"M285,166 L285,226\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"344\" y=\"196\" class=\"xs tms b\">ลิ้นตีบ</text><text x=\"285\" y=\"316\" class=\"xs mid b tbad\">LV เติมน้อย → CO ↓</text><g data-s=\"2\"><path d=\"M252,124 L258,116 L264,130 L270,118 L276,128\" class=\"lbad w2 pl\"/><ellipse cx=\"316\" cy=\"128\" rx=\"7\" ry=\"5\" class=\"bad\"/><text x=\"346\" y=\"120\" class=\"xs b tbad\">LA ดันสูง โต</text><text x=\"346\" y=\"136\" class=\"xs tbad\">→ AF ลิ่มเลือด</text></g><g data-s=\"3\"><text x=\"306\" y=\"38\" class=\"xs b tbad\">ความดัน PV ↑</text><text x=\"306\" y=\"54\" class=\"xs tbad\">เหนื่อย ไอเป็นเลือด</text></g><g data-s=\"4\"><rect x=\"80\" y=\"196\" width=\"110\" height=\"100\" rx=\"24\" class=\"lbad w5\"/><path d=\"M186,206 Q206,190 206,74\" class=\"lbad w3\"/><text x=\"214\" y=\"100\" class=\"xs b tbad\">PH</text><text x=\"135\" y=\"316\" class=\"xs mid b tbad\">PH → RV โต/ล้ม → JVP สูง บวม</text></g><g data-s=\"5\"><rect x=\"8\" y=\"326\" width=\"424\" height=\"26\" rx=\"8\" class=\"ms\"/><text x=\"220\" y=\"344\" class=\"xs mid b\">HR เร็ว / AF / ตั้งครรภ์ → diastole สั้น → ความดัน LA พุ่ง</text></g></svg>",
+    "steps": [
+     {
+      "t": "ลิ้นตีบ: LV เติมเลือดน้อย",
+      "cap": "ลิ้น mitral หนาแข็งติดกัน (ส่วนใหญ่จาก **ไข้รูมาติก**) เลือดผ่านจาก LA ลง LV ยาก → **LV เติมน้อย cardiac output ต่ำ** · ตัวห้องล่างซ้ายเองปกติ"
+     },
+     {
+      "t": "LA ความดันสูงและโต",
+      "cap": "LA ต้องดันแรงขึ้น → **LA โต** → **AF** และเลือดค้างจน **เกิดลิ่มเลือดง่ายมาก** (stroke) · LA โตกดหลอดอาหาร (กลืนลำบาก) และ recurrent laryngeal nerve (Ortner)"
+     },
+     {
+      "t": "ความดันย้อนถึงปอด",
+      "cap": "ความดันหลอดเลือดดำปอดสูง → **ปอดคั่งน้ำ เหนื่อย นอนราบไม่ได้** · หลอดเลือดดำหลอดลมโป่งแตก → **ไอเป็นเลือด**"
+     },
+     {
+      "t": "Pulmonary hypertension → RV ล้ม",
+      "cap": "ความดันย้อนต่อเป็น **pulmonary hypertension** → **loud P2, RV heave** → RV โตและล้ม → **JVP สูง ตับโต บวม** และ TR (Carvallo's sign)"
+     },
+     {
+      "t": "ทำไมหัวใจเต้นเร็วทำให้ทรุดทันที",
+      "cap": "เลือดต้องใช้เวลาไหลผ่านลิ้นตีบ · **HR เร็ว AF ไข้ ตั้งครรภ์ ออกกำลัง** ทำให้ diastole สั้น → ความดัน LA พุ่ง → น้ำท่วมปอด · จึงคุมอัตราด้วย β-blocker/CCB/digoxin และให้ **warfarin (ห้าม NOAC)** เมื่อมี AF"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-vhd-07",
+   "after": "ทำไมถึงตรวจพบแบบนี้ — AS",
+   "anim": {
+    "key": "c27-as",
+    "title": "Aortic stenosis — จากลิ้นตีบสู่ LVH, murmur ขึ้นคอ และ SAD",
+    "svg": "<svg viewBox=\"0 0 440 340\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ลิ้นเอออร์ติกตีบทำให้ความดัน LV สูง LV หนาแบบ concentric เลือดพุ่งผ่านรูแคบเกิด ejection murmur กระจายขึ้นคอ ชีพจร parvus et tardus และอาการ syncope angina dyspnea\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M126,150 L126,74 Q126,44 156,44 L220,44 Q250,44 250,74 L250,128\" class=\"lmu w5\"/><line x1=\"166\" y1=\"44\" x2=\"166\" y2=\"12\" class=\"lmu w3\"/><line x1=\"196\" y1=\"44\" x2=\"196\" y2=\"12\" class=\"lmu w3\"/><text x=\"204\" y=\"18\" class=\"xs mu\">carotid</text><ellipse cx=\"110\" cy=\"236\" rx=\"70\" ry=\"78\" class=\"ac\"/><ellipse cx=\"110\" cy=\"240\" rx=\"52\" ry=\"60\" class=\"bx\" data-x=\"2\"/><g data-s=\"2\"><ellipse cx=\"110\" cy=\"240\" rx=\"34\" ry=\"44\" class=\"bx\"/></g><text x=\"110\" y=\"236\" class=\"sm mid b\">LV</text><text x=\"110\" y=\"252\" class=\"xs mid tbad b\">ความดัน ↑</text><line x1=\"108\" y1=\"158\" x2=\"122\" y2=\"150\" class=\"lms w5\"/><line x1=\"144\" y1=\"158\" x2=\"130\" y2=\"150\" class=\"lms w5\"/><text x=\"100\" y=\"150\" class=\"xs end tms b\">ลิ้นหินปูนตีบ</text><g data-s=\"2\"><text x=\"110\" y=\"330\" class=\"xs mid b tbad\">LV หนา: O₂ ต้องการ ↑ → angina · แข็ง → S4</text></g><g data-s=\"3\"><path d=\"M126,160 L126,70 Q130,44 166,36 L166,8\" class=\"lbad w2 fl\"/><text x=\"262\" y=\"150\" class=\"xs b tbad\">ejection murmur</text><text x=\"262\" y=\"164\" class=\"xs tbad\">RUSB กระจายขึ้นคอ</text></g><g data-s=\"4\"><rect x=\"266\" y=\"178\" width=\"166\" height=\"120\" rx=\"8\" class=\"sk\"/><line x1=\"276\" y1=\"280\" x2=\"424\" y2=\"280\" class=\"lmu\"/><path d=\"M278,280 Q284,206 300,206 Q316,214 330,250 L340,240 Q350,250 360,280\" class=\"lok w2 da\"/><path d=\"M278,280 Q320,232 352,232 Q372,236 384,262 L392,258 Q400,268 412,280\" class=\"lbad w3\"/><text x=\"300\" y=\"198\" class=\"xs mid tok\">ปกติ</text><text x=\"428\" y=\"222\" class=\"xs end tbad b\">parvus et tardus</text><text x=\"349\" y=\"294\" class=\"xs mid\">ชีพจรเบา ขึ้นช้า PP แคบ</text></g><g data-s=\"5\"><rect x=\"270\" y=\"8\" width=\"162\" height=\"116\" rx=\"8\" class=\"ms\"/><text x=\"280\" y=\"28\" class=\"xs b\">SAD — อาการ = ต้องเปลี่ยนลิ้น</text><text x=\"280\" y=\"48\" class=\"xs\">Syncope: ออกแรงหลอดเลือด</text><text x=\"280\" y=\"63\" class=\"xs\">ขยาย แต่ CO ตรึงผ่านลิ้น</text><text x=\"280\" y=\"82\" class=\"xs\">Angina: LV หนา O₂ ไม่พอ</text><text x=\"280\" y=\"101\" class=\"xs\">Dyspnea: LV แข็งแล้วล้ม</text><text x=\"280\" y=\"118\" class=\"xs mu\">(HF)</text></g></svg>",
+    "steps": [
+     {
+      "t": "ลิ้นตีบ: LV ต้องบีบแรง",
+      "cap": "ลิ้น aortic หินปูนเสื่อม (ผู้สูงอายุ) หรือลิ้นสองแฉก (อายุน้อยกว่า) → รูแคบ → **LV ต้องสร้างความดันสูงมาก** เพื่อดันเลือดผ่าน (pressure overload)"
+     },
+     {
+      "t": "LV หนาแบบ concentric",
+      "cap": "ผนัง LV หนาขึ้นเข้าด้านใน ห้องเล็กลง → **ต้องการ O₂ มากขึ้น** และความดันในผนังบีบหลอดเลือดใต้เยื่อบุ → **angina** แม้หลอดเลือดหัวใจปกติ · LV แข็ง → พึ่ง atrial kick → **S4**, ECG LVH with strain"
+     },
+     {
+      "t": "Ejection murmur ขึ้นคอ",
+      "cap": "เลือดพุ่งผ่านรูแคบเป็นกระแสวนไปตามทิศ aorta → **crescendo-decrescendo ที่ RUSB กระจายไป carotid** · ยิ่งตีบ **ยอดเสียงยิ่งช้า (late-peaking)** · ความดังบอกความรุนแรงไม่ได้"
+     },
+     {
+      "t": "Pulsus parvus et tardus",
+      "cap": "เลือดออกได้น้อยและช้า → **ชีพจรเบาและขึ้นช้า pulse pressure แคบ** · S2 เบาหรือเดี่ยว (A2 หาย) — ตรงข้ามกับ AR ที่ชีพจรกระแทก"
+     },
+     {
+      "t": "SAD — มีอาการแล้วพยากรณ์แย่ทันที",
+      "cap": "**Syncope** ตอนออกแรง (กล้ามเนื้อหลอดเลือดขยาย แต่ CO เพิ่มผ่านลิ้นไม่ได้) · **Angina** · **Dyspnea/HF** เมื่อ LV ล้ม · AS รุนแรง (**Vmax ≥ 4 · MG ≥ 40 · AVA ≤ 1.0**) ที่มีอาการ = **เปลี่ยนลิ้น (Class I)**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-vhd-08",
+   "after": "ตรวจร่างกาย",
+   "anim": {
+    "key": "c27-ar",
+    "title": "Aortic regurgitation — ทำไมชีพจรกระแทกและ pulse pressure กว้าง",
+    "svg": "<svg viewBox=\"0 0 440 372\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ลิ้นเอออร์ติกรั่ว เลือดไหลกลับเข้า LV ช่วง diastole LV ขยายรับปริมาตร SV ใหญ่ ความดันซิสโตลิกสูงไดแอสโตลิกต่ำ pulse pressure กว้าง และสัญญาณชีพจรกระแทก\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M126,150 L126,74 Q126,44 156,44 L220,44 Q250,44 250,74 L250,150\" class=\"lmu w5\"/><ellipse cx=\"110\" cy=\"236\" rx=\"66\" ry=\"74\" class=\"ac\" data-x=\"2\"/><g data-s=\"2\"><ellipse cx=\"110\" cy=\"240\" rx=\"84\" ry=\"84\" class=\"ac\"/></g><ellipse cx=\"110\" cy=\"240\" rx=\"50\" ry=\"58\" class=\"bx\" data-x=\"2\"/><g data-s=\"2\"><ellipse cx=\"110\" cy=\"244\" rx=\"68\" ry=\"66\" class=\"bx\"/></g><text x=\"110\" y=\"236\" class=\"sm mid b\">LV</text><line x1=\"110\" y1=\"156\" x2=\"124\" y2=\"150\" class=\"lms w3\"/><line x1=\"142\" y1=\"156\" x2=\"128\" y2=\"150\" class=\"lms w3\"/><g data-s=\"1\"><path d=\"M126,80 L126,186\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"134\" y=\"104\" class=\"xs b tbad\">diastole:</text><text x=\"134\" y=\"118\" class=\"xs tbad\">เลือดรั่วกลับ</text></g><g data-s=\"2\"><text x=\"110\" y=\"256\" class=\"xs mid tbad b\">ปริมาตรเกิน</text><text x=\"110\" y=\"270\" class=\"xs mid tbad b\">SV ใหญ่มาก</text></g><g data-s=\"3\"><rect x=\"262\" y=\"10\" width=\"170\" height=\"150\" rx=\"8\" class=\"sk\"/><text x=\"272\" y=\"28\" class=\"xs b\">ความดันใน aorta</text><line x1=\"272\" y1=\"74\" x2=\"426\" y2=\"74\" class=\"lmu da\"/><line x1=\"272\" y1=\"104\" x2=\"426\" y2=\"104\" class=\"lmu da\"/><text x=\"274\" y=\"68\" class=\"xs mu\">120</text><text x=\"274\" y=\"118\" class=\"xs mu\">80</text><path d=\"M276,104 Q288,70 300,74 Q320,90 340,104\" class=\"lok w2 da\"/><path d=\"M336,104 Q348,46 360,44 Q382,92 400,136 L408,136\" class=\"lbad w3\"/><line x1=\"420\" y1=\"44\" x2=\"420\" y2=\"136\" class=\"lbad w2\"/><line x1=\"414\" y1=\"44\" x2=\"426\" y2=\"44\" class=\"lbad w2\"/><line x1=\"414\" y1=\"136\" x2=\"426\" y2=\"136\" class=\"lbad w2\"/><text x=\"360\" y=\"40\" class=\"xs mid tbad b\">SBP ↑</text><text x=\"352\" y=\"154\" class=\"xs mid tbad b\">DBP ↓ → PP กว้าง</text></g><g data-s=\"4\"><rect x=\"262\" y=\"168\" width=\"170\" height=\"150\" rx=\"8\" class=\"ms\"/><text x=\"272\" y=\"188\" class=\"xs b\">ชีพจรกระแทก (PP กว้าง)</text><text x=\"272\" y=\"208\" class=\"xs\">Corrigan: water-hammer</text><text x=\"272\" y=\"226\" class=\"xs\">de Musset: ศีรษะผงก</text><text x=\"272\" y=\"244\" class=\"xs\">Quincke: เล็บเต้น</text><text x=\"272\" y=\"262\" class=\"xs\">Traube: pistol shot</text><text x=\"272\" y=\"280\" class=\"xs\">Duroziez: femoral สองจังหวะ</text><text x=\"272\" y=\"300\" class=\"xs tbad b\">murmur: diastolic blowing</text></g><g data-s=\"5\"><rect x=\"8\" y=\"326\" width=\"424\" height=\"40\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"343\" class=\"xs mid b\">Acute AR (IE, dissection): LV ยังไม่ขยาย รับปริมาตรไม่ได้</text><text x=\"220\" y=\"359\" class=\"xs mid\">→ LVEDP พุ่ง น้ำท่วมปอด ช็อก · PP ไม่กว้าง → ผ่าตัดด่วน ห้าม IABP</text></g></svg>",
+    "steps": [
+     {
+      "t": "เลือดรั่วกลับใน diastole",
+      "cap": "ลิ้น aortic ปิดไม่สนิท (รูมาติก ลิ้นสองแฉก IE) หรือรากเอออร์ตาขยาย (Marfan, dissection) → **ช่วง diastole เลือดไหลกลับเข้า LV** → เสียง **diastolic blowing decrescendo** ฟังท่านั่งโน้มหน้าหายใจออกสุด"
+     },
+     {
+      "t": "LV ขยายรับปริมาตร",
+      "cap": "LV ได้ทั้งเลือดจาก LA และเลือดที่รั่วกลับ → **volume overload → LV ขยายแบบ eccentric** apex ย้ายลงล่างออกด้านข้าง · **SV รวมใหญ่มาก**"
+     },
+     {
+      "t": "Pulse pressure กว้าง",
+      "cap": "SV ใหญ่ดันความดัน **ซิสโตลิกสูง** แล้วเลือดไหลกลับเข้า LV ทำให้ **ไดแอสโตลิกตกต่ำ** → **pulse pressure กว้าง** (เส้นประ = ปกติ)"
+     },
+     {
+      "t": "สัญญาณชีพจรกระแทก",
+      "cap": "PP กว้างทำให้เกิดชุดสัญญาณใน **chronic severe AR** — **Corrigan (water-hammer), de Musset, Quincke, Müller, Traube, Duroziez** · ดังสุด ICS 3 ซ้าย = ลิ้น · ICS 2 ขวา = รากเอออร์ตา"
+     },
+     {
+      "t": "Acute AR ต่างออกไป",
+      "cap": "IE หรือ aortic dissection → LV ยังไม่ทันขยาย → รับปริมาตรไม่ได้ **LVEDP พุ่ง น้ำท่วมปอด ช็อก** โดย PP ไม่กว้าง → **ผ่าตัดด่วน ห้ามใส่ IABP** (เพิ่มเลือดไหลย้อน)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-vhd-10",
+   "after": "กลไก (สไลด์)",
+   "anim": {
+    "key": "c27-arf",
+    "title": "Acute rheumatic fever — molecular mimicry จากคอสู่ลิ้นหัวใจ",
+    "svg": "<svg viewBox=\"0 0 440 356\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อ group A streptococcus ที่คอกระตุ้นแอนติบอดีต่อ M protein ซึ่งจับข้ามกับหัวใจ ข้อ basal ganglia และผิวหนัง เป็นซ้ำจนเกิด rheumatic heart disease และการป้องกันด้วย penicillin\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"16\" width=\"132\" height=\"86\" rx=\"16\" class=\"sk\"/><text x=\"74\" y=\"36\" class=\"sm mid b\">คออักเสบ GAS</text><text x=\"74\" y=\"92\" class=\"xs mid tbad b\">รักษาไม่พอ</text><circle cx=\"36\" cy=\"62\" r=\"6\" class=\"acf\"/><path d=\"M36,56 L36,50\" class=\"lbad w2\"/><circle cx=\"52\" cy=\"62\" r=\"6\" class=\"acf\"/><path d=\"M52,56 L52,50\" class=\"lbad w2\"/><circle cx=\"68\" cy=\"62\" r=\"6\" class=\"acf\"/><path d=\"M68,56 L68,50\" class=\"lbad w2\"/><circle cx=\"84\" cy=\"62\" r=\"6\" class=\"acf\"/><path d=\"M84,56 L84,50\" class=\"lbad w2\"/><circle cx=\"100\" cy=\"62\" r=\"6\" class=\"acf\"/><path d=\"M100,56 L100,50\" class=\"lbad w2\"/><text x=\"124\" y=\"54\" class=\"xs b tbad\">M</text><g data-s=\"2\"><text x=\"74\" y=\"128\" class=\"xs mid b tac\">แอนติบอดี + T cell</text><text x=\"74\" y=\"142\" class=\"xs mid tac\">ต่อ M protein</text><path d=\"M74,104 L74,114\" class=\"lmu w2\"/><path d=\"M40,170 L40,180 M40,170 L34,163 M40,170 L46,163\" class=\"lac w2\"/><path d=\"M74,162 L74,172 M74,162 L68,155 M74,162 L80,155\" class=\"lac w2\"/><path d=\"M108,172 L108,182 M108,172 L102,165 M108,172 L114,165\" class=\"lac w2\"/></g><g data-s=\"3\"><rect x=\"196\" y=\"16\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"206\" y=\"37\" class=\"xs b\">หัวใจ/ลิ้น (myosin, laminin)</text><text x=\"206\" y=\"55\" class=\"xs\">carditis 40−60% — MR, AR · Carey Coombs</text><path d=\"M120,170 L192,41\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><rect x=\"196\" y=\"74\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"206\" y=\"95\" class=\"xs b\">ข้อใหญ่ (synovium)</text><text x=\"206\" y=\"113\" class=\"xs\">polyarthritis ย้ายที่ ไม่พิการ</text><path d=\"M120,170 L192,99\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><rect x=\"196\" y=\"132\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"206\" y=\"153\" class=\"xs b\">basal ganglia</text><text x=\"206\" y=\"171\" class=\"xs\">Sydenham's chorea (มาช้าเป็นเดือน)</text><path d=\"M120,170 L192,157\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><rect x=\"196\" y=\"190\" width=\"236\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"206\" y=\"211\" class=\"xs b\">ผิวหนัง เนื้อเยื่อเกี่ยวพัน</text><text x=\"206\" y=\"229\" class=\"xs\">erythema marginatum · nodules</text><path d=\"M120,170 L192,215\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><circle cx=\"159.4\" cy=\"79.7\" r=\"4\" class=\"acf\"><animateMotion dur=\"2.2s\" begin=\"-1.54s\" repeatCount=\"indefinite\" path=\"M-85.4,90.3 L36.6,-38.7\"/></circle><circle cx=\"147.2\" cy=\"197.0\" r=\"4\" class=\"acf\"><animateMotion dur=\"2.6s\" begin=\"-1.56s\" repeatCount=\"indefinite\" path=\"M-73.2,-27.0 L48.8,18.0\"/></circle><text x=\"98\" y=\"214\" class=\"xs mid b tac\">molecular mimicry</text><text x=\"98\" y=\"228\" class=\"xs mid\">2−4 สัปดาห์หลังคออักเสบ</text></g><g data-s=\"4\"><rect x=\"8\" y=\"252\" width=\"424\" height=\"46\" rx=\"8\" class=\"bad\"/><text x=\"220\" y=\"270\" class=\"xs mid b\">เป็นซ้ำแต่ละครั้งทำลายลิ้นเพิ่ม → ลิ้นหนา commissure ติด</text><text x=\"220\" y=\"288\" class=\"xs mid\">→ rheumatic heart disease (mitral บ่อยสุด · ในไทย MS)</text></g><g data-s=\"5\"><rect x=\"8\" y=\"304\" width=\"424\" height=\"46\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"322\" class=\"xs mid b\">Primary: รักษาคอ GAS ให้ครบ 10 วัน (หรือ BPG เข็มเดียว)</text><text x=\"220\" y=\"340\" class=\"xs mid\">Secondary: BPG 1.2 ล้านยูนิต IM ทุก 3−4 สัปดาห์ ตามระยะเวลาที่กำหนด</text></g></svg>",
+    "steps": [
+     {
+      "t": "คออักเสบจาก GAS ที่รักษาไม่พอ",
+      "cap": "**Group A Streptococcus** ที่คอ (หรือ scarlet fever) ที่ **ไม่ได้รักษาหรือรักษาไม่ครบ** · พบมากอายุ 5−15 ปี · เชื้อมี **M protein** บนผิว"
+     },
+     {
+      "t": "ภูมิต่อ M protein",
+      "cap": "ร่างกายสร้าง **แอนติบอดีและ T cell ต่อ M protein** — ไม่ใช่การติดเชื้อที่หัวใจโดยตรง แต่เป็น **ภูมิคุ้มกันทำลายตัวเองหลังติดเชื้อ**"
+     },
+     {
+      "t": "Molecular mimicry → JONES",
+      "cap": "M protein คล้ายโปรตีนของร่างกาย → ภูมิ **จับข้าม** กับ myosin/laminin ของหัวใจและลิ้น · ข้อ · basal ganglia · ผิวหนัง → **carditis, polyarthritis, chorea, erythema marginatum, nodules** ราว 2−4 สัปดาห์หลังคออักเสบ"
+     },
+     {
+      "t": "เป็นซ้ำ → RHD",
+      "cap": "ติดเชื้อ GAS ซ้ำแต่ละครั้ง → valvulitis ซ้ำ → ลิ้นหนา commissure ติดกัน → **rheumatic heart disease** · ลิ้น mitral เสียบ่อยที่สุด **ในไทย MS เป็นผลระยะยาวที่พบบ่อยที่สุด**"
+     },
+     {
+      "t": "ตัดวงจรด้วย penicillin",
+      "cap": "**Primary:** รักษาคอ GAS ให้ครบ **10 วัน** หรือ **BPG 1.2 ล้านยูนิต IM ครั้งเดียว** · **Secondary:** **BPG ทุก 3−4 สัปดาห์** (WHO 2024: ทุก 4 สัปดาห์) นานตามว่ามี carditis/โรคลิ้นหลงเหลือหรือไม่ — มาตรการที่ป้องกัน RHD ได้ดีที่สุด"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "cardio-04-07",
+   "name": "Beck's triad = 3D",
+   "what": "อาการแสดงคลาสสิกของ cardiac tamponade",
+   "lines": [
+    [
+     "D",
+     "**D**istant (muffled) heart sounds — เสียงหัวใจเบา"
+    ],
+    [
+     "D",
+     "**D**istended neck veins — JVP สูง"
+    ],
+    [
+     "D",
+     "**D**ecreased BP — ความดันต่ำ"
+    ]
+   ],
+   "note": "พบครบสามข้อไม่บ่อย โดยเฉพาะ tamponade ที่ค่อย ๆ เกิด — ไม่ครบไม่ได้แปลว่าไม่ใช่",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำรา emergency medicine / USMLE"
+  },
+  {
+   "sec": "cardio-04-05",
+   "name": "CARDIAC RIND",
+   "what": "สาเหตุของเยื่อหุ้มหัวใจอักเสบ (pericarditis)",
+   "lines": [
+    [
+     "C",
+     "**C**ollagen vascular disease — SLE, รูมาตอยด์"
+    ],
+    [
+     "A",
+     "**A**ortic dissection/aneurysm — เลือดเซาะเข้าถุงเยื่อหุ้ม"
+    ],
+    [
+     "R",
+     "**R**adiation — ฉายรังสีทรวงอก (constriction ตามมาได้ 2−20 ปี)"
+    ],
+    [
+     "D",
+     "**D**rugs — drug-induced lupus เช่น hydralazine, procainamide"
+    ],
+    [
+     "I",
+     "**I**nfection — ไวรัส (Coxsackie) แบคทีเรีย **วัณโรค** เชื้อรา"
+    ],
+    [
+     "A",
+     "**A**cute/chronic renal failure — uremic / dialysis pericarditis"
+    ],
+    [
+     "C",
+     "**C**ardiac infarction — early post-MI pericarditis (1−3 วัน)"
+    ],
+    [
+     "R",
+     "**R**heumatic fever"
+    ],
+    [
+     "I",
+     "**I**njury — อุบัติเหตุ หลังผ่าตัดหัวใจ (postcardiotomy)"
+    ],
+    [
+     "N",
+     "**N**eoplasm — แพร่กระจายจากปอด เต้านม lymphoma · mesothelioma"
+    ],
+    [
+     "D",
+     "**D**ressler syndrome — ภูมิต้านตนเอง 1 สัปดาห์ถึงไม่กี่เดือนหลัง MI"
+    ]
+   ],
+   "note": "คำนี้ไม่มี idiopathic (พบบ่อยที่สุดในประเทศพัฒนาแล้ว) และไทรอยด์ต่ำ (น้ำ gold paint) · ในบริบทไทยอาจารย์ให้นึกถึงวัณโรคก่อนเสมอ · บางแหล่งให้ A = aortic aneurysm แทน dissection",
+   "src": "หลักจำที่ใช้กันแพร่หลายในหนังสือ/คลัง mnemonic สำหรับ USMLE (เช่น Knowmedge, Picmonic)"
+  },
+  {
+   "sec": "cardio-04-05",
+   "name": "SHIPP-E",
+   "what": "ยาที่ทำให้เกิด drug-induced lupus (สาเหตุหนึ่งของ pericarditis กลุ่มภูมิต้านตนเอง)",
+   "lines": [
+    [
+     "S",
+     "**S**ulfonamides"
+    ],
+    [
+     "H",
+     "**H**ydralazine"
+    ],
+    [
+     "I",
+     "**I**soniazid"
+    ],
+    [
+     "P",
+     "**P**rocainamide"
+    ],
+    [
+     "P",
+     "**P**henytoin"
+    ],
+    [
+     "E",
+     "**E**tanercept"
+    ]
+   ],
+   "note": "สไลด์ยกตัวอย่างเฉพาะ hydralazine และ procainamide · drug-induced lupus มัก anti-histone บวก และดีขึ้นเมื่อหยุดยา",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "cardio-10-04",
+   "name": "Three windows (หน้าต่างสามบาน)",
+   "what": "อวัยวะที่ใช้ดูข้างเตียงว่าเนื้อเยื่อเริ่มขาดเลือดจากช็อกแล้ว",
+   "lines": [
+    [
+     "สมอง",
+     "ซึม สับสน encephalopathy"
+    ],
+    [
+     "ไต",
+     "ปัสสาวะ **< 0.5 mL/kg/ชม.**"
+    ],
+    [
+     "ผิวหนัง",
+     "เย็นชื้น → **mottling** → CRT นานขึ้น"
+    ]
+   ],
+   "note": "ใช้ได้แม้ความดันยังปกติ (compensated shock) · ผิวเย็นเพราะหนาวหรือห้องเย็นได้ ต้องดูร่วมกับสัญญาณอื่น",
+   "src": "Vincent JL, De Backer D. Circulatory shock. N Engl J Med 2013 (ที่สไลด์อ้างอิง)"
+  },
+  {
+   "sec": "cardio-10-07",
+   "name": "VIP",
+   "what": "สามองค์ประกอบของการกู้ชีพผู้ป่วยช็อก",
+   "lines": [
+    [
+     "V",
+     "**V**entilate — ให้ออกซิเจน SpO₂ 92−95% ใส่ท่อเมื่อจำเป็น"
+    ],
+    [
+     "I",
+     "**I**nfuse — เติมสารน้ำ (ประเมิน fluid responsiveness)"
+    ],
+    [
+     "P",
+     "**P**ump — ยาที่ออกฤทธิ์ต่อหลอดเลือดและหัวใจ (norepinephrine, dobutamine)"
+    ]
+   ],
+   "note": "ทำพร้อมกันกับการหาสาเหตุ ไม่ต้องรอรู้ชนิดของช็อกก่อน",
+   "src": "Weil & Shubin VIP rule · Vincent & De Backer, N Engl J Med 2013 (สไลด์อ้างอิง)"
+  },
+  {
+   "sec": "cardio-10-08",
+   "name": "SOSD",
+   "what": "สี่ระยะของการรักษาช็อก",
+   "lines": [
+    [
+     "S",
+     "**S**alvage — ดันความดันถึงระดับต่ำสุดที่ยอมรับได้ ทำหัตถการช่วยชีวิต"
+    ],
+    [
+     "O",
+     "**O**ptimization — ปรับ CO, SvO₂, lactate ให้ดีที่สุด"
+    ],
+    [
+     "S",
+     "**S**tabilization — ประคองอวัยวะ ลดภาวะแทรกซ้อน"
+    ],
+    [
+     "D",
+     "**D**e-escalation — ถอนยากระตุ้นหลอดเลือด ทำสมดุลน้ำติดลบ"
+    ]
+   ],
+   "note": "ระยะที่มักลืมคือ de-escalation",
+   "src": "Vincent JL, De Backer D. N Engl J Med 2013 — อาจารย์ใช้ในสไลด์"
+  },
+  {
+   "sec": "cardio-ihd-03",
+   "name": "ABCDE ของการดูแล angina",
+   "what": "รายการสิ่งที่ต้องทำให้ครบในผู้ป่วยโรคหลอดเลือดหัวใจเรื้อรัง",
+   "lines": [
+    [
+     "A",
+     "**A**spirin · **A**nti-anginal (ไนเตรต)"
+    ],
+    [
+     "B",
+     "**B**eta-blocker · **B**lood pressure"
+    ],
+    [
+     "C",
+     "**C**igarette (เลิกบุหรี่) · **C**holesterol (statin)"
+    ],
+    [
+     "D",
+     "**D**iet · **D**iabetes"
+    ],
+    [
+     "E",
+     "**E**ducation · **E**xercise"
+    ]
+   ],
+   "note": "ESC 2019 ที่อาจารย์สอนแยกเป็นสองเป้าหมาย: ยาลดอาการ (β-blocker/CCB/ไนเตรต) กับยาลดเหตุการณ์ (antiplatelet, statin, ACEI/ARB ในกลุ่มที่มีข้อบ่งชี้) — ABCDE เป็น checklist ไม่ได้บอกว่าตัวไหนลดตาย",
+   "src": "ACC/AHA guideline for chronic stable angina (Gibbons et al.) — ใช้กันทั่วไป"
+  },
+  {
+   "sec": "cardio-ihd-05",
+   "name": "Triad ของ RV infarction",
+   "what": "สิ่งตรวจพบข้างเตียงของ RV infarction ใน inferior MI",
+   "lines": [
+    [
+     "1",
+     "**Hypotension** — LV preload ต่ำ"
+    ],
+    [
+     "2",
+     "**JVP สูง** — เลือดค้างหน้า RV (อาจมี Kussmaul's sign)"
+    ],
+    [
+     "3",
+     "**ปอดใส (clear lungs)** — เลือดไปปอดน้อย"
+    ]
+   ],
+   "note": "เห็น triad นี้ใน inferior MI → ทำ V3R/V4R · **ห้ามไนเตรตและยาขับปัสสาวะ ให้สารน้ำแทน**",
+   "src": "triad คลาสสิกในตำรามาตรฐาน (Harrison's, Braunwald's Heart Disease)"
+  },
+  {
+   "sec": "cardio-ihd-06",
+   "name": "หยุดยาก่อน CABG: 3-5-7",
+   "what": "จำนวนวันที่หยุด P2Y12 inhibitor ก่อน CABG ที่ไม่ฉุกเฉิน",
+   "lines": [
+    [
+     "3",
+     "**T**icagrelor — 3 วัน"
+    ],
+    [
+     "5",
+     "**C**lopidogrel — 5 วัน"
+    ],
+    [
+     "7",
+     "**P**rasugrel — 7 วัน"
+    ]
+   ],
+   "note": "ไล่ตามตัวอักษร T-C-P เพิ่มทีละ 2 วัน · ให้แอสไพรินต่อ · รายที่ทรุดหรือเสี่ยงสูงผ่าได้เลยไม่ต้องรอ",
+   "src": "ย่อเพิ่มเพื่อช่วยจำ — ไม่ใช่หลักจำมาตรฐาน (ตัวเลขตาม ESC ในสไลด์)"
+  },
+  {
+   "sec": "cardio-ihd-11",
+   "name": "5A's ช่วยเลิกบุหรี่",
+   "what": "ขั้นตอนช่วยผู้ป่วยเลิกบุหรี่ในทุกครั้งที่พบ",
+   "lines": [
+    [
+     "A",
+     "**A**sk — ถามการสูบบุหรี่ทุกครั้ง"
+    ],
+    [
+     "A",
+     "**A**dvise — แนะนำให้เลิกชัดเจน"
+    ],
+    [
+     "A",
+     "**A**ssess — ประเมินความพร้อม"
+    ],
+    [
+     "A",
+     "**A**ssist — ช่วยด้วย behavioral support + ยา (NRT, bupropion, varenicline)"
+    ],
+    [
+     "A",
+     "**A**rrange — นัดติดตาม"
+    ]
+   ],
+   "note": "อาจารย์ย้ำให้เริ่มตั้งแต่นอนโรงพยาบาลและทำต่อหลังจำหน่าย · ผู้ที่เลิกได้อัตราตายลด 36%",
+   "src": "US Public Health Service Clinical Practice Guideline: Treating Tobacco Use and Dependence"
+  },
+  {
+   "sec": "cardio-af-01",
+   "name": "ABC pathway (ESC 2020) → AF-CARE (ESC 2024)",
+   "what": "กรอบการรักษา AF ทั้งคาบ",
+   "lines": [
+    [
+     "A",
+     "**A**void stroke — ยาต้านการแข็งตัวตามคะแนน"
+    ],
+    [
+     "B",
+     "**B**etter symptom control — rate หรือ rhythm control"
+    ],
+    [
+     "C",
+     "**C**omorbidity / cardiovascular risk — รักษาโรคร่วมและวิถีชีวิต"
+    ]
+   ],
+   "note": "ESC 2024 เปลี่ยนเป็น **AF-CARE**: **C**omorbidity · **A**void stroke · **R**educe symptoms · **E**valuation ต่อเนื่อง (ย้ายโรคร่วมขึ้นเป็นข้อแรก)",
+   "src": "ESC Guidelines for AF 2020 และ 2024 (ที่สไลด์ใช้)"
+  },
+  {
+   "sec": "cardio-af-02",
+   "name": "PIRATES",
+   "what": "สาเหตุ/ตัวกระตุ้นของ AF ที่ต้องมองหา",
+   "lines": [
+    [
+     "P",
+     "**P**ulmonary — COPD, PE, ปอดอักเสบ, sleep apnea"
+    ],
+    [
+     "I",
+     "**I**schemic heart disease"
+    ],
+    [
+     "R",
+     "**R**heumatic heart disease — โดยเฉพาะ mitral stenosis"
+    ],
+    [
+     "A",
+     "**A**nemia · **A**trial myxoma"
+    ],
+    [
+     "T",
+     "**T**hyrotoxicosis"
+    ],
+    [
+     "E",
+     "**E**thanol — holiday heart"
+    ],
+    [
+     "S",
+     "**S**epsis · หลังผ่าตัด"
+    ]
+   ],
+   "note": "ตัวอักษรต่างกันเล็กน้อยตามแหล่ง · ไม่มี **hypertension ซึ่งพบบ่อยที่สุดตามสไลด์** และ heart failure — บางตำราเติม H เป็น **H-PIRATES** · ส่ง TSH ในผู้ป่วย AF ใหม่ทุกราย",
+   "src": "หลักจำที่ใช้กันแพร่หลาย (เช่น Radiopaedia, CanadiEM, Healio cardiology mnemonics)"
+  },
+  {
+   "sec": "cardio-af-06",
+   "name": "CHA₂DS₂-VASc",
+   "what": "คะแนนความเสี่ยง stroke ใน AF",
+   "lines": [
+    [
+     "C",
+     "**C**ongestive heart failure — 1"
+    ],
+    [
+     "H",
+     "**H**ypertension — 1"
+    ],
+    [
+     "A₂",
+     "**A**ge ≥ 75 — **2**"
+    ],
+    [
+     "D",
+     "**D**iabetes — 1"
+    ],
+    [
+     "S₂",
+     "**S**troke / TIA / thromboembolism — **2**"
+    ],
+    [
+     "V",
+     "**V**ascular disease (MI, PAD, aortic plaque) — 1"
+    ],
+    [
+     "A",
+     "**A**ge 65−74 — 1"
+    ],
+    [
+     "Sc",
+     "**S**ex **c**ategory หญิง — 1"
+    ]
+   ],
+   "note": "ให้ยาเมื่อ ≥ 1 ในชาย / ≥ 2 ในหญิง (ESC 2020) · **ESC 2024 ใช้ CHA₂DS₂-VA ตัดคะแนนเพศ**: ≥ 2 แนะนำ · = 1 ควรพิจารณา · ตัวห้อย 2 = ได้ 2 คะแนน",
+   "src": "Lip et al. Chest 2010 · ESC AF guidelines"
+  },
+  {
+   "sec": "cardio-af-06",
+   "name": "HAS-BLED",
+   "what": "ปัจจัยเสี่ยงเลือดออกที่ต้องมองหาและแก้ ก่อน/ระหว่างให้ยาต้านการแข็งตัว",
+   "lines": [
+    [
+     "H",
+     "**H**ypertension ที่คุมไม่ได้ (SBP > 160)"
+    ],
+    [
+     "A",
+     "**A**bnormal renal / liver function"
+    ],
+    [
+     "S",
+     "**S**troke"
+    ],
+    [
+     "B",
+     "**B**leeding history หรือแนวโน้มเลือดออก"
+    ],
+    [
+     "L",
+     "**L**abile INR (TTR ต่ำ)"
+    ],
+    [
+     "E",
+     "**E**lderly > 65 ปี"
+    ],
+    [
+     "D",
+     "**D**rugs (antiplatelet, NSAID) / alcohol"
+    ]
+   ],
+   "note": "สไลด์ไม่ได้ให้คะแนนนี้ตรง ๆ แต่ย้ำ **\"ประเมินความเสี่ยงเลือดออกและแก้ปัจจัยที่แก้ได้\"** · คะแนนสูง **ไม่ใช่เหตุผลให้งดยา** แต่ให้แก้ปัจจัยและติดตามใกล้ชิด",
+   "src": "Pisters et al. Chest 2010 · ESC AF guideline 2020"
+  },
+  {
+   "sec": "cardio-af-07",
+   "name": "1972",
+   "what": "factor ที่ warfarin ลดการสร้าง (vitamin K-dependent)",
+   "lines": [
+    [
+     "10",
+     "factor **X**"
+    ],
+    [
+     "9",
+     "factor **IX**"
+    ],
+    [
+     "7",
+     "factor **VII**"
+    ],
+    [
+     "2",
+     "factor **II** (prothrombin)"
+    ]
+   ],
+   "note": "นอกจากนี้ยังลด protein C และ S (เป็นเหตุของภาวะ hypercoagulable ช่วงแรกที่เริ่ม warfarin) · factor VII ครึ่งชีวิตสั้นสุด INR จึงขึ้นก่อน",
+   "src": "หลักจำที่ใช้กันทั่วไปในหมู่นักศึกษาแพทย์ (เลข 10-9-7-2 อ่านเป็นปี 1972)"
+  },
+  {
+   "sec": "cardio-af-09",
+   "name": "WPW + AF: ห้าม ABCD",
+   "what": "ยากด AV node ที่ห้ามใช้ใน pre-excited AF",
+   "lines": [
+    [
+     "A",
+     "**A**denosine"
+    ],
+    [
+     "B",
+     "**B**eta-blocker"
+    ],
+    [
+     "C",
+     "**C**alcium channel blocker (non-DHP)"
+    ],
+    [
+     "D",
+     "**D**igoxin"
+    ]
+   ],
+   "note": "ตามสไลด์รักษาด้วย ablation · unstable → cardioversion · บางแหล่งให้ A = amiodarone ด้วย",
+   "src": "หลักจำที่ใช้กันทั่วไปใน USMLE/PANCE review"
+  },
+  {
+   "sec": "cardio-vhd-01",
+   "name": "All Physicians Take Money",
+   "what": "ลำดับตำแหน่งฟังเสียงหัวใจสี่ลิ้น",
+   "lines": [
+    [
+     "A",
+     "**A**ortic — ICS 2 ขวา ข้างกระดูกอก"
+    ],
+    [
+     "P",
+     "**P**ulmonic — ICS 2 ซ้าย ข้างกระดูกอก"
+    ],
+    [
+     "T",
+     "**T**ricuspid — ICS 4−5 ซ้าย ข้างกระดูกอก (LLSB)"
+    ],
+    [
+     "M",
+     "**M**itral — ยอดหัวใจ ICS 5 ซ้าย แนว midclavicular"
+    ]
+   ],
+   "note": "บางแหล่งเพิ่ม Erb's point (ICS 3 ซ้าย) เป็น \"APE To Man\" · AR จากตัวลิ้นดังสุดที่ ICS 3 ซ้าย",
+   "src": "หลักจำที่ใช้กันทั่วไปในการสอนตรวจร่างกาย"
+  },
+  {
+   "sec": "cardio-vhd-02",
+   "name": "MR ASS / MS ARD",
+   "what": "แยกว่า murmur ของลิ้นซ้ายเกิดใน systole หรือ diastole",
+   "lines": [
+    [
+     "MR ASS",
+     "**M**itral **R**egurgitation · **A**ortic **S**tenosis = **S**ystolic"
+    ],
+    [
+     "MS ARD",
+     "**M**itral **S**tenosis · **A**ortic **R**egurgitation = **D**iastolic"
+    ]
+   ],
+   "note": "ลิ้นขวาเหมือนกัน: TR/PS = systolic · TS/PR = diastolic · VSD เป็น pansystolic เหมือน MR · บางแหล่งเขียน \"MR PASS\" (เติม physiologic/flow murmur)",
+   "src": "หลักจำที่ใช้กันแพร่หลายใน USMLE/NP review"
+  },
+  {
+   "sec": "cardio-vhd-02",
+   "name": "RILE",
+   "what": "ผลของการหายใจต่อความดังของ murmur",
+   "lines": [
+    [
+     "RI",
+     "**R**ight-sided murmur ดังขึ้นเมื่อ **I**nspiration (TR — Carvallo's sign)"
+    ],
+    [
+     "LE",
+     "**L**eft-sided murmur ดังขึ้นเมื่อ **E**xpiration (MR, AS, AR, MS)"
+    ]
+   ],
+   "note": "สไลด์เน้นฝั่งขวา: หายใจเข้าเลือดกลับหัวใจขวามากขึ้น · ข้อยกเว้นเรื่อง maneuver อื่นคือ HOCM และ MVP ที่ดังหรือยาวขึ้นเมื่อยืน/Valsalva",
+   "src": "หลักจำที่ใช้กันทั่วไปใน USMLE/PA review"
+  },
+  {
+   "sec": "cardio-vhd-07",
+   "name": "SAD",
+   "what": "อาการสามอย่างของ aortic stenosis",
+   "lines": [
+    [
+     "S",
+     "**S**yncope (เมื่อออกแรง)"
+    ],
+    [
+     "A",
+     "**A**ngina"
+    ],
+    [
+     "D",
+     "**D**yspnea — หัวใจล้มเหลว"
+    ]
+   ],
+   "note": "ตัวเลขคลาสสิกถ้าไม่ผ่าตัด: angina ~5 ปี · syncope ~3 ปี · HF ~2 ปี (Ross & Braunwald) · อาจารย์ย้ำว่ามีอาการแล้วพยากรณ์แย่ทันที = ข้อบ่งชี้เปลี่ยนลิ้น",
+   "src": "First Aid for the USMLE Step 1 / ใช้กันทั่วไป"
+  },
+  {
+   "sec": "cardio-vhd-10",
+   "name": "J♥NES",
+   "what": "major criteria ของ Jones สำหรับ acute rheumatic fever",
+   "lines": [
+    [
+     "J",
+     "**J**oints — polyarthritis ข้อใหญ่ ย้ายที่"
+    ],
+    [
+     "♥",
+     "Carditis (ตัว O เป็นรูปหัวใจ)"
+    ],
+    [
+     "N",
+     "**N**odules — subcutaneous ไม่เจ็บ บนปุ่มกระดูก"
+    ],
+    [
+     "E",
+     "**E**rythema marginatum"
+    ],
+    [
+     "S",
+     "**S**ydenham's chorea"
+    ]
+   ],
+   "note": "สไลด์ของอาจารย์ใช้คำจำภาษาไทย \"ขอบ-ข้อ-คอ-คำ-คว\" สำหรับ major ห้าข้อเดียวกันนี้ · minor = ไข้ ปวดข้อ PR ยาว ESR/CRP สูง · Jones 2015 ประชากรเสี่ยงปานกลาง–สูง นับ monoarthritis/polyarthralgia และ subclinical carditis จาก echo เป็น major",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "cardio-vhd-12",
+   "name": "FROM JANE",
+   "what": "อาการแสดงของ infective endocarditis",
+   "lines": [
+    [
+     "F",
+     "**F**ever"
+    ],
+    [
+     "R",
+     "**R**oth spots — เลือดออกจอตามีจุดซีดกลาง"
+    ],
+    [
+     "O",
+     "**O**sler nodes — เจ็บ ปลายนิ้ว (immune complex)"
+    ],
+    [
+     "M",
+     "**M**urmur ใหม่"
+    ],
+    [
+     "J",
+     "**J**aneway lesions — ไม่เจ็บ ฝ่ามือฝ่าเท้า (emboli)"
+    ],
+    [
+     "A",
+     "**A**nemia"
+    ],
+    [
+     "N",
+     "**N**ail-bed (splinter) hemorrhage"
+    ],
+    [
+     "E",
+     "**E**mboli — stroke ไต ม้าม"
+    ]
+   ],
+   "note": "จำคู่ Osler = **O**uch (เจ็บ) · Janeway ไม่เจ็บ · ใน Duke-ISCVID 2023 Roth/Osler/GN เป็น immunologic minor ส่วน Janeway/emboli เป็น vascular minor",
+   "src": "First Aid for the USMLE Step 1"
+  }
+ ]
+}
