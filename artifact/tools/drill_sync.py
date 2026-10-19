@@ -37,6 +37,7 @@ JOBS = [
      {'date': 'ไม่ระบุวัน — handout Lec19 (อ.ธนิศร)', 'week': '', 'al': 0}),
     ('hemonc.json', '12/10', 'heme', 'H04', 'HON-WBC-', 'wbc', {'date': 'จ. 12 ต.ค.', 'week': 5, 'al': 0}),
     ('endo.json', '14/10', 'endo', 'E05', 'END-DM-', 'dm', {'date': 'พ. 14 ต.ค.', 'week': 5, 'al': 0}),
+    ('cardio.json', '36', 'cardio', '36', 'CAR-ECG-', 'ecg', None),
 ]
 # ตำแหน่งคาบใหม่ใน lecture_order: แทรกหลังคาบนี้ (None = ขึ้นก่อน)
 AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04'}

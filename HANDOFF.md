@@ -207,6 +207,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 **ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
 - ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
 - แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
+- ✅ **Drill Version 14** (19 ต.ค.) — เพิ่ม cardio 36 (CAR-ECG-MCQ 28 ข้อ + MEQ/OSCE 2) ผ่าน `drill_sync.py` (JOBS แถว cardio 36) · ข้อเดิมไม่เปลี่ยน
 - ✅ **Drill Version 13** (17 ต.ค.) — บันทึกคำตอบในบัญชี `data/users/<id>/drill` (capabilities `{db:{}, user:{}}` · ใช้งานจริงแล้ว) + แท็บ "สุ่มทำข้อสอบ" (ระบบนี้/ทุกระบบ · 10–100 ข้อ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด) + แก้ป้ายยาวล้นจอมือถือ — ทั้งหมดอยู่ใน `drill_sync.py` · **publish drill ครั้งต่อไปต้องไม่ส่ง capabilities ว่าง** (ละไว้ = คงเดิม)
 - ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
 
