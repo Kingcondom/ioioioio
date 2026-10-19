@@ -1,4 +1,4 @@
-# Basic and advance electrocardiography — นพ.สุรชาติ จรูญพิพัฒน์กุล (Surachat Jaroonpipatkul, MD · Division of Cardiology, รพ.ราชวิถี · ม.รังสิต)
+# Basic and advance electrocardiography — อ.สุรชาติ (Surachat Jaroonpipatkul, MD · Division of Cardiology, รพ.ราชวิถี · ม.รังสิต)
 
 ไฟล์ Drive: `13UUiw9BU7zag_JNHWBmidA5gPoVhjTiu` "Basic  electrocardiography outline.pdf" (37.8 MB · 113 หน้า · อัปโหลด 19 ต.ค. 2569)
 - คลัง Ward Drill: **cardio คาบ 36** "Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ)" · จ. 19 ต.ค. · สัปดาห์ 6 · active learning
