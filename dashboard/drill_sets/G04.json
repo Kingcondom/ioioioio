@@ -1,0 +1,894 @@
+{
+ "set": "gi",
+ "lec": "G04",
+ "d": "จ. 12 ต.ค.",
+ "w": 5,
+ "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+ "mcq": [
+  {
+   "id": "GI-HEP-MCQ-01",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Acute hepatitis – cholangitis trap",
+   "stem": "A 62-year-old woman is referred with a label of 'acute viral hepatitis'. For 3 days she has had fever of 39.4 °C with shaking chills, severe right upper quadrant pain and jaundice; the fever has continued after the jaundice appeared. BP 100/60 mmHg, pulse 112/min. ALT 310 U/L, AST 280 U/L, total bilirubin 6.2 mg/dL. What is the most appropriate next step?",
+   "choices": [
+    "Send anti-HAV IgM and HBsAg and review as an outpatient in 1 week",
+    "Blood cultures, intravenous antibiotics and urgent abdominal ultrasound to look for biliary obstruction",
+    "Start tenofovir empirically for presumed acute hepatitis B",
+    "Arrange percutaneous liver biopsy",
+    "Start prednisolone for presumed autoimmune hepatitis"
+   ],
+   "answer": 1,
+   "explain": "**กับดักที่อาจารย์เน้นในห้อง**: **ไข้สูงหนาวสั่น + ปวดชายโครงขวามาก + เหลือง → คิด cholangitis ก่อน** ไม่ใช่ไวรัสตับอักเสบ\n- ใน acute viral hepatitis ไข้ต่ำ ๆ อยู่ในช่วง prodrome และ **ไข้หายเมื่อเริ่มเหลือง** (ช่วงที่ T cell ทำลายเซลล์ตับ ไวรัสในเลือดลดแล้ว) · ถ้า **เหลืองแล้วยังไข้สูงหนาวสั่น** ต้องคิดโรคอื่น\n- รายนี้มี Charcot triad + ความดันต่ำ ชีพจรเร็ว = อาจเป็น **severe cholangitis** → ต้อง **เพาะเชื้อในเลือด ให้ยาปฏิชีวนะ และอัลตราซาวนด์หาท่อน้ำดีอุดตัน** เพื่อวางแผนระบายท่อน้ำดี\n- ALT 310 สูงพอเข้ากับนิ่วอุดท่อน้ำดีระยะแรกได้ ไม่ใช่ระดับ 1,000–4,000 แบบไวรัส\n\n**ข้ออื่นผิด**\n- ส่งผลไวรัสแล้วนัด 1 สัปดาห์: ช้าเกินไปสำหรับ cholangitis ที่ความดันเริ่มต่ำ\n- Tenofovir: ยังไม่มีหลักฐาน HBV และ acute HBV ส่วนใหญ่ไม่ต้องให้ยา\n- เจาะตับ: ไม่มีบทบาทและเสี่ยงถ้าท่อน้ำดีอุดตัน\n- Prednisolone: AIH ไม่มาด้วยไข้หนาวสั่น และการให้ steroid ในภาวะติดเชื้อเป็นอันตราย",
+   "pearl": "เหลืองแล้วยังไข้สูงหนาวสั่น + RUQ pain มาก → cholangitis ไม่ใช่ viral hepatitis",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Approach to acute hepatitis (โน้ตในห้อง)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.1",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-02",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Acute liver failure – recognition and referral",
+   "stem": "A 36-year-old man with no previous liver disease has acute hepatitis A and is on day 6 of jaundice. Over 48 hours his INR has risen from 1.4 to 2.1 and he is now disoriented, with asterixis. Capillary glucose is 52 mg/dL. What is the most appropriate management?",
+   "choices": [
+    "Start tenofovir to suppress viral replication",
+    "Start prednisolone 40 mg/day to reduce hepatic inflammation",
+    "Give vitamin K, continue ward care and recheck INR in 1 week",
+    "Correct the hypoglycaemia and arrange urgent ICU care with transfer to a liver transplant centre",
+    "Give lorazepam for agitation and observe, because hepatitis A almost always resolves"
+   ],
+   "answer": 3,
+   "explain": "**INR ≥ 1.5 + hepatic encephalopathy ในคนที่ไม่มีโรคตับเดิม = acute liver failure (ALF)** → สไลด์/โน้ตในห้อง: แยก severe acute liver injury (bilirubin + PT สูง แต่รู้สึกตัวดี) จาก ALF ด้วย **encephalopathy**\n- ALF ต้อง **ส่งต่อศูนย์ปลูกถ่ายตับทันที** และดูแลใน ICU · HAV ตายรวมเพียง 0.3% แต่เมื่อเป็น ALF แล้วอาจต้องปลูกถ่ายตับ\n- **น้ำตาลต่ำ** เพราะตับสร้างและปล่อยน้ำตาลไม่ได้ → ซ้ำเติมอาการซึม ต้องแก้และเจาะน้ำตาลบ่อย\n- INR บอกความรุนแรงได้ไว เพราะ factor VII ครึ่งชีวิต ~6 ชม.\n\n**ข้ออื่นผิด**\n- Tenofovir: ไม่มีบทบาทใน hepatitis A (สไลด์: no role)\n- Prednisolone: ไม่ใช่การรักษา viral ALF\n- Vitamin K แล้วรอ 1 สัปดาห์: INR ยาวจากตับสร้าง factor ไม่ได้ ไม่ใช่ขาด vitamin K · รอไม่ได้\n- Lorazepam: **ห้ามยานอนหลับ** — ตับขับยาไม่ได้ กดสมองเพิ่ม และบดบังการประเมิน encephalopathy",
+   "pearl": "Acute liver failure = INR ≥ 1.5 + encephalopathy → ICU + ส่งศูนย์ปลูกถ่ายตับ",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Approach to acute hepatitis; Management of acute viral hepatitis"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1",
+    "2.2.17"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-03",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Acute hepatitis from systemic infection – leptospirosis",
+   "stem": "A 32-year-old rice farmer from north-eastern Thailand presents 6 days after wading through floodwater with high fever, severe calf pain, conjunctival suffusion and jaundice. The fever has not settled since the jaundice appeared. There is no eschar. Creatinine 3.1 mg/dL, platelets 62,000/mm³, CK 1,800 U/L, ALT 140 U/L, AST 165 U/L, total bilirubin 12 mg/dL. What is the most likely diagnosis?",
+   "choices": [
+    "Acute hepatitis A",
+    "Leptospirosis",
+    "Scrub typhus",
+    "Dengue haemorrhagic fever",
+    "Acute hepatitis E"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ให้จำว่า acute hepatitis อาจมาจาก **การติดเชื้อทั้งระบบ** (DHF, typhus, typhoid, **leptospirosis**, HSV/CMV/EBV, COVID-19) ไม่ใช่เฉพาะ hepatotropic virus\n- รายนี้ครบภาพ **Weil's disease**: ลุยน้ำท่วม (ปัสสาวะหนู) · ไข้สูง **ปวดน่อง** CK สูง · **conjunctival suffusion** · **ไตวาย** · เกล็ดเลือดต่ำ · **bilirubin สูงมากแต่ ALT แค่หลักร้อย** (เหลืองจาก cholestasis/vasculitis มากกว่าเซลล์ตับตาย)\n- เบาะแสสำคัญจากคาบนี้: **เหลืองแล้วยังไข้สูง** → ไม่เข้ากับ viral hepatitis\n\n**ข้ออื่นผิด**\n- Hepatitis A/E: ALT ควรสูงหลักพัน และไข้หายเมื่อเหลือง · ไม่ทำให้ปวดน่อง CK สูง ไตวาย\n- Scrub typhus: ไข้ ตับอักเสบได้ แต่มักพบ **eschar** ต่อมน้ำเหลืองโต และไม่เด่นเรื่องปวดน่อง/ตาแดงแบบนี้\n- DHF: ไข้ลดลงเข้าระยะวิกฤต เลือดข้น AST > ALT แต่ไม่เหลืองเข้ม bilirubin 12 และไตวายแบบนี้ในระยะแรก",
+   "pearl": "เหลืองแล้วยังไข้ + ปวดน่อง ตาแดง ไตวาย หลังลุยน้ำ = leptospirosis (ALT ไม่สูงมาก)",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Less common causes of acute hepatitis — systemic infection"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.1.1"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-04",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Hepatitis E – raw pork in Thailand",
+   "stem": "A 50-year-old Thai man has 1 week of malaise, nausea, dark urine and jaundice. He often eats 'larb moo dib' (raw pork salad), most recently about 6 weeks ago. He rarely drinks alcohol and takes no medicines or herbs. ALT 1,650 U/L. Anti-HAV IgM negative, HBsAg negative, anti-HBc IgM negative, anti-HCV negative. Which test is most likely to establish the diagnosis?",
+   "choices": [
+    "Anti-HAV IgG",
+    "Anti-HDV antibody",
+    "Anti-HEV IgM",
+    "HBeAg",
+    "Anti-HBs titre"
+   ],
+   "answer": 2,
+   "explain": "โน้ตในห้อง: **HEV ในไทยมาจากเนื้อหมูที่ไม่สุก** (ทางปาก fecal–oral/zoonotic) · ระยะฟักตัว **2–10 สัปดาห์** เข้ากับ 6 สัปดาห์หลังกินลาบหมูดิบ\n- ภาพ acute viral hepatitis (prodrome → เหลือง · ALT > 1,000) แต่ HAV และ HBV ลบ → สไลด์ให้ส่ง **anti-HEV IgM** ในรายที่สงสัย\n- HEV ไม่เรื้อรังในคนภูมิปกติ แต่อาจรุนแรงในหญิงตั้งครรภ์และผู้มีโรคตับเดิม\n\n**ข้ออื่นผิด**\n- Anti-HAV IgG: บอกแค่เคยติดหรือเคยฉีดวัคซีน (คนไทยวัยนี้บวกเป็นส่วนใหญ่) ไม่บอก acute\n- Anti-HDV: HDV **ติดได้เฉพาะคนที่มี HBsAg** — รายนี้ HBsAg ลบ\n- HBeAg: ใช้ประเมินการแบ่งตัวของ HBV เมื่อ HBsAg บวกแล้ว\n- Anti-HBs: บอกภูมิคุ้มกันต่อ HBV ไม่ช่วยหาสาเหตุ",
+   "pearl": "ลาบหมูดิบ + acute hepatitis ที่ HAV/HBV ลบ → anti-HEV IgM",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Viral hepatitis A to E; Acute viral hepatitis — serology"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-05",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis E in immunosuppression",
+   "stem": "A 48-year-old kidney-transplant recipient taking tacrolimus and mycophenolate has had ALT between 120 and 180 U/L for 7 months. HBsAg, anti-HBc and anti-HCV are negative and ultrasound is unremarkable. HEV RNA is detected in both serum and stool. Which statement is correct?",
+   "choices": [
+    "Hepatitis E can become chronic in immunosuppressed patients, although it does not in immunocompetent hosts",
+    "HEV is a DNA virus that persists as cccDNA in hepatocyte nuclei",
+    "This must be a false-positive result because hepatitis E never becomes chronic",
+    "HEV can only infect patients who are HBsAg-positive",
+    "His infection was most likely acquired through sexual contact, the main route of HEV"
+   ],
+   "answer": 0,
+   "explain": "ตารางไวรัส A–E ในคาบ: HEV **ไม่เรื้อรัง — ยกเว้นผู้ที่ภูมิคุ้มกันบกพร่อง** (เช่น ผู้ปลูกถ่ายอวัยวะที่ได้ยากดภูมิ)\n- คนปกติ T cell กำจัด HEV ได้หมดเพราะไม่มีแหล่งซ่อนในนิวเคลียส · เมื่อ T cell ถูกกด (tacrolimus) ไวรัสแบ่งตัวต่อได้ → **HEV RNA ค้าง > 3–6 เดือน = chronic HEV** ซึ่งดำเนินเป็นพังผืดได้เร็ว\n- แนวทางทั่วไป (ไม่อยู่ในสไลด์): ลดยากดภูมิก่อน ถ้าไม่หายพิจารณา ribavirin\n\n**ข้ออื่นผิด**\n- HEV เป็น **RNA virus** · **HBV เป็น DNA virus ตัวเดียว** ที่มี cccDNA\n- \"ไม่เคยเรื้อรัง\" ใช้ได้กับคนภูมิปกติเท่านั้น\n- ต้องมี HBsAg คือ **HDV** ไม่ใช่ HEV\n- HEV ติด **ทางปาก** (หมูไม่สุก น้ำปนเปื้อน) ไม่ใช่ทางเพศเป็นหลัก",
+   "pearl": "HEV ไม่เรื้อรัง ยกเว้นคนภูมิคุ้มกันบกพร่อง (ผู้ปลูกถ่ายอวัยวะ)",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Viral hepatitis A to E"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-06",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Hepatitis D superinfection",
+   "stem": "A 38-year-old man who injects drugs has been known to be HBsAg-positive with normal ALT for 5 years. He now presents with severe acute hepatitis: ALT 1,900 U/L, INR 1.6, alert. HBsAg positive, anti-HBc IgM negative, anti-HAV IgM negative, anti-HCV negative, HBV DNA 300 IU/mL. He takes no medicines and does not drink. Which test is most appropriate next?",
+   "choices": [
+    "Anti-HBs titre",
+    "HBV genotype",
+    "Serum ceruloplasmin",
+    "Anti-smooth muscle antibody",
+    "Anti-HDV antibody (followed by HDV RNA if positive)"
+   ],
+   "answer": 4,
+   "explain": "**HDV ติดได้เฉพาะคนที่มี HBsAg** (ใช้ HBsAg เป็นเปลือก) และติดทาง **เลือด** — ผู้ใช้ยาเสพติดฉีดเป็นกลุ่มเสี่ยงหลัก\n- รายนี้เป็นพาหะ HBV เดิม แล้วเกิดตับอักเสบรุนแรงเฉียบพลัน = แบบ **superinfection**\n- เบาะแส: **anti-HBc IgM ลบ** (ไม่ใช่ HBV ใหม่) และ **HBV DNA ต่ำ** — HDV มักกดการแบ่งตัวของ HBV จึงไม่ใช่ HBV flare ที่มักมี DNA สูงมาก\n- Superinfection มักกลายเป็น HDV เรื้อรัง ซึ่งพาไปตับแข็งเร็ว · WHO 2024 ให้ HDV co-infection เป็นข้อบ่งชี้ให้ยา HBV\n\n**ข้ออื่นผิด**\n- Anti-HBs: บอกภูมิคุ้มกัน คนที่ HBsAg บวกมักไม่มี\n- HBV genotype: ไม่ช่วยหาสาเหตุ flare\n- Ceruloplasmin: Wilson มักอายุ 20–40 ปีและมี hemolysis/อาการทางสมอง ไม่ใช่สาเหตุแรกที่คิดในพาหะ HBV ที่ฉีดยา\n- ASMA: AIH พบในหญิงเป็นส่วนใหญ่ ไม่มีเบาะแสอื่น",
+   "pearl": "พาหะ HBV + flare รุนแรง + IgM ลบ + HBV DNA ต่ำ → คิด HDV superinfection",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Viral hepatitis A to E"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-07",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Anti-HBc IgM in a chronic hepatitis B flare",
+   "stem": "A 52-year-old man was found to be HBsAg-positive at a blood donation 12 years ago but never attended follow-up. He now has fatigue and jaundice. ALT 980 U/L. HBsAg positive, anti-HBc IgM positive (low titre), HBeAg positive, HBV DNA 8.2 × 10⁷ IU/mL. Ultrasound shows a coarse, nodular liver with splenomegaly. What is the best interpretation?",
+   "choices": [
+    "New acute hepatitis B that will resolve spontaneously in more than 95% of adults",
+    "Resolved past HBV infection with a false-positive HBsAg",
+    "Hepatitis D co-infection acquired at the same time as HBV",
+    "Acute exacerbation (flare) of chronic hepatitis B on a background of cirrhosis",
+    "Immunity from previous hepatitis B vaccination"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ serological markers: **anti-HBc IgM = acute/recent infection** แต่มีเชิงอรรถว่า **บวกได้ถึง 50% ใน chronic hepatitis B ที่กำเริบ (flare)**\n- รายนี้ **HBsAg บวกมาแล้ว 12 ปี** (> 6 เดือน = เรื้อรัง) และมี **ตับหยาบเป็นปุ่ม ม้ามโต** = ตับแข็งแล้ว — ไม่ใช่การติดเชื้อใหม่\n- HBeAg บวก + HBV DNA สูงมาก = ไวรัสแบ่งตัวมาก → ภูมิคุ้มกันไล่ทำลายเซลล์ตับ = flare\n- การดูแล: **ตับแข็ง + HBV DNA ตรวจพบ → ให้ยา (TAF) ทุกราย** และเฝ้าระวังตับวาย/มะเร็งตับ\n\n**ข้ออื่นผิด**\n- Acute HBV หายเอง > 95%: ใช้กับการติดเชื้อใหม่ในผู้ใหญ่ ไม่ใช่ HBsAg บวก 12 ปี\n- Resolved infection: ต้อง HBsAg ลบ anti-HBs บวก\n- HDV co-infection: คือการติดพร้อม HBV ครั้งแรก ไม่ใช่ในพาหะเดิม และ HBV DNA ในรายนี้สูงมากซึ่งไม่เข้ากับ HDV\n- ภูมิจากวัคซีน: anti-HBs บวกเดี่ยว ๆ ไม่มี HBsAg",
+   "pearl": "anti-HBc IgM บวกได้ถึง 50% ใน chronic HBV flare — ดูประวัติ HBsAg > 6 เดือน",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Serological markers for HBV"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-08",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Isolated anti-HBc before rituximab",
+   "stem": "A 64-year-old woman with diffuse large B-cell lymphoma is about to start R-CHOP (rituximab-containing) chemotherapy. HBV screening: HBsAg negative, anti-HBc (total) positive, anti-HBs negative, HBV DNA undetectable, ALT normal. What is the most appropriate management?",
+   "choices": [
+    "No action is needed because HBV reactivation occurs only in HBsAg-positive patients",
+    "Give hepatitis B vaccine and proceed only after anti-HBs becomes positive",
+    "Start a nucleos(t)ide analogue (e.g., entecavir or TAF) as prophylaxis before rituximab and continue for 12–18 months after chemotherapy ends",
+    "Delay chemotherapy until anti-HBc becomes negative",
+    "Start peginterferon alfa during chemotherapy"
+   ],
+   "answer": 2,
+   "explain": "**HBsAg ลบ + anti-HBc บวก = เคยติดเชื้อ** (anti-HBs อาจลดลงจนตรวจไม่พบ = isolated anti-HBc) — แต่ **cccDNA ยังค้างในนิวเคลียสเซลล์ตับ** (เหตุผลที่ HBV หายขาดจริงได้ยาก)\n- **Rituximab** กำจัด B cell อย่างรุนแรง → ภูมิที่คุมไวรัสหายไป → **HBV reactivation** ซึ่งอาจเป็นตับวายถึงตายได้ (Learn: ระวัง HBV กำเริบถ้าได้ rituximab/เคมีบำบัด)\n- แนวทาง AASLD/EASL (ไม่อยู่ในสไลด์): anti-CD20 จัดเป็น **ความเสี่ยงสูง** → ให้ **entecavir หรือ tenofovir เป็น prophylaxis** เริ่มก่อนหรือพร้อมเคมีบำบัด และต่ออย่างน้อย 12–18 เดือนหลังหยุด\n\n**ข้ออื่นผิด**\n- \"เกิดเฉพาะ HBsAg บวก\": ผิด — anti-HBc บวกก็กำเริบได้ (seroreversion)\n- วัคซีน: ไม่ช่วยคุม cccDNA ที่มีอยู่แล้ว และไม่ควรเลื่อนเคมีบำบัด\n- รอ anti-HBc ลบ: anti-HBc มักบวกตลอดชีวิต\n- Interferon: กดไขกระดูก ใช้ร่วมเคมีบำบัดไม่ได้ และไม่ใช่ยาป้องกัน",
+   "pearl": "anti-HBc บวก (แม้ HBsAg ลบ) + rituximab → ให้ entecavir/TAF ป้องกัน HBV reactivation",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Serological markers for HBV",
+    "AASLD HBV guidance / EASL HBV CPG — HBV reactivation prophylaxis"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-09",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "HBeAg-negative chronic hepatitis B – precore mutant",
+   "stem": "A 55-year-old Thai man has been HBsAg-positive for more than 10 years. Current results: HBeAg negative, anti-HBe positive, HBV DNA 3.6 × 10⁶ IU/mL, ALT 118 U/L on two occasions 3 months apart. A colleague says, 'He is anti-HBe positive, so replication is low and he is an inactive carrier.' Which statement is correct?",
+   "choices": [
+    "This is HBeAg-negative chronic hepatitis B (likely a precore/core-promoter mutant) with high replication, and he meets criteria for antiviral therapy",
+    "He is an inactive carrier and needs only yearly ALT",
+    "The pattern indicates resolved infection and HBsAg will soon disappear",
+    "The HBV DNA result must be a laboratory error, because anti-HBe excludes viraemia",
+    "This is new acute hepatitis B and should be observed for spontaneous recovery"
+   ],
+   "answer": 0,
+   "explain": "สไลด์: **anti-HBe = low replication** แต่มีเชิงอรรถว่า **อาจใช้ไม่ได้ใน precore mutant ซึ่งพบมากในอายุ > 45 ปี**\n- Precore/core-promoter mutation ทำให้ไวรัส **สร้าง HBeAg ไม่ได้** แต่ยังแบ่งตัวมาก → HBeAg ลบ anti-HBe บวก ทั้งที่ HBV DNA หลักล้าน\n- จึงต้องดู **HBV DNA + ALT** ไม่ใช่ดูแค่ HBeAg\n- เกณฑ์ให้ยาตามสไลด์: **HBV DNA > 2,000 IU/mL + ALT > 1.5 × ULN (35 ในชาย → > 52) นาน ≥ 3 เดือน** → เข้าเกณฑ์ (WHO 2024/EASL 2025 ก็เข้า) → **TAF วันละครั้ง** · HBeAg ลบมักต้องกิน **ตลอดชีวิต**\n\n**ข้ออื่นผิด**\n- Inactive carrier: ต้อง HBV DNA < 2,000 และ ALT ปกติ\n- Resolved infection: ต้อง HBsAg ลบ\n- Lab error: anti-HBe ไม่ได้ตัดการแบ่งตัวของไวรัส\n- Acute HBV: HBsAg บวกเกิน 10 ปี = เรื้อรัง",
+   "pearl": "anti-HBe บวกไม่ได้แปลว่าไวรัสน้อยเสมอ — precore mutant (อายุ > 45) ต้องดู HBV DNA",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Serological markers for HBV; CHB treatment indications"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-10",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Supportive care in acute viral hepatitis",
+   "stem": "A 24-year-old woman has uncomplicated acute hepatitis B (INR 1.1, fully alert, eating small meals). She cannot sleep and asks for a sleeping pill. Her mother wants her to stay in bed until the jaundice has gone and to take an herbal 'liver tonic'. What is the best advice?",
+   "choices": [
+    "Strict bed rest until ALT returns to normal",
+    "A short course of lorazepam at night is safe because she has no liver failure",
+    "Start tenofovir now to shorten the illness",
+    "Take the herbal liver tonic because it will speed hepatocyte regeneration",
+    "Stay active as tolerated, drink plenty of fluids, and avoid alcohol, potentially hepatotoxic drugs or herbs, and sedatives"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Management of acute viral hepatitis — **supportive treatment**\n- **ทำกิจวัตรได้ตามที่ไหว** (remain active, adjust activity according to well-being) — ไม่จำเป็นต้องนอนพักตลอด\n- **ดื่มน้ำมาก ๆ**\n- **หลีกเลี่ยงเหล้า ยาที่อาจเป็นพิษต่อตับ ยานอนหลับ และ narcotic** — ตับที่อักเสบขับยาได้น้อย ยาค้างกดสมอง และ **บดบังอาการ encephalopathy** ซึ่งเป็นสัญญาณแรกของตับวาย\n- ยาต้านไวรัส: พิจารณาเฉพาะ **acute severe hepatitis B (INR > 1.5, bilirubin > 3–10 มก./ดล.)** · รายนี้ INR 1.1 ไม่ต้อง (ผู้ใหญ่หายเอง > 95%)\n\n**ข้ออื่นผิด**\n- นอนพักเคร่งครัด: ไม่มีประโยชน์ สไลด์ให้ทำกิจวัตรตามไหว\n- Lorazepam: ยานอนหลับเป็นสิ่งที่สไลด์ให้ **เลี่ยง**\n- Tenofovir: ไม่ใช่ข้อบ่งชี้ในรายไม่รุนแรง\n- สมุนไพรบำรุงตับ: เป็นสาเหตุ DILI ได้เอง (ต้องถามสมุนไพรเสมอ)",
+   "pearl": "Acute hepatitis: ทำกิจวัตรตามไหว ดื่มน้ำ งดเหล้า ยาพิษตับ สมุนไพร ยานอนหลับ",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Management of acute viral hepatitis"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-11",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Acute liver failure – mechanism of cerebral oedema",
+   "stem": "A 30-year-old woman with acute liver failure from hepatitis B becomes increasingly drowsy, and CT shows diffuse cerebral oedema. Which mechanism best explains the brain swelling?",
+   "choices": [
+    "Unconjugated bilirubin deposits in the basal ganglia (kernicterus)",
+    "Ammonia that escapes the failing urea cycle is converted to glutamine in astrocytes, which draws water into the cells",
+    "Hepatitis B virus directly infects neurons",
+    "Low serum albumin reduces plasma oncotic pressure in the brain",
+    "Copper released from necrotic hepatocytes damages the blood–brain barrier"
+   ],
+   "answer": 1,
+   "explain": "กลไกในคาบ: เซลล์ตับตายจำนวนมาก → **urea cycle ล้ม** → ammonia จากลำไส้ไม่ถูกเปลี่ยนเป็น urea → ผ่านเข้าสมอง → **astrocyte กำจัด ammonia โดยสร้าง glutamine** (glutamine synthetase) → glutamine เป็นสารออสโมติกที่ **ดึงน้ำเข้าเซลล์** → astrocyte บวม = **cytotoxic brain oedema** → ซึม สับสน จนถึง herniation\n- ALF เกิดเร็ว สมองไม่มีเวลาปรับ (ต่างจากตับแข็งเรื้อรัง) จึงบวมได้มาก\n- ร่วมกับ hypoglycemia และยาที่ค้าง ทำให้ซึมมากขึ้น\n\n**ข้ออื่นผิด**\n- Kernicterus: เกิดในทารกแรกเกิดที่ unconjugated bilirubin สูงมาก ไม่ใช่กลไกในผู้ใหญ่\n- HBV ไม่ติดเซลล์ประสาท\n- Albumin ต่ำ: ลดลงช้า (ครึ่งชีวิต ~3 สัปดาห์) และ blood–brain barrier ไม่ขึ้นกับ oncotic pressure เป็นหลัก\n- ทองแดงอิสระ: เกี่ยวกับ hemolysis ใน Wilson ไม่ใช่กลไกสมองบวมใน HBV",
+   "pearl": "ALF สมองบวม: NH₃ → glutamine ใน astrocyte → ดึงน้ำเข้าเซลล์",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Management of acute viral hepatitis (ALF)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-12",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Alcohol – standard drinks and binge drinking",
+   "stem": "A 46-year-old woman with abnormal liver tests says she drinks 'only wine': two 150-mL glasses of 12% wine every evening, and about five glasses at a party every Saturday night. How should her alcohol use be classified?",
+   "choices": [
+    "Low-risk drinking because she drinks less than 30 g/day",
+    "Excessive regular drinking only; five glasses is below the binge threshold",
+    "Binge drinking only; her daily intake is within the safe limit",
+    "Both excessive regular drinking (> 20 g/day for a woman) and binge drinking (≥ 4 drinks on one occasion)",
+    "Low-risk drinking because wine is less hepatotoxic than spirits"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Alcohol contents: **1 standard drink ≈ 14 ก. แอลกอฮอล์** = **ไวน์ 150 มล. (10–15%)** · เบียร์ 360 มล. · เหล้า 45 มล.\n- คำนวณ: 150 มล. × 0.12 × 0.79 ≈ **14 ก. ต่อแก้ว** → วันละ 2 แก้ว ≈ **28 ก./วัน**\n- เกณฑ์ **ดื่มประจำมากเกิน: > 20 ก./วัน ในหญิง** (> 30 ก./วัน ในชาย) หรือ > 14 drinks/สัปดาห์ในหญิง → เธอดื่ม ≈ 2×6 + 5 = 17 drinks/สัปดาห์ → **เข้าเกณฑ์**\n- **Binge: ≥ 4 drinks ต่อครั้งในหญิง** (≥ 5 ในชาย) → 5 แก้วคืนวันเสาร์ → **เข้าเกณฑ์ด้วย**\n- โน้ตในห้อง: ต้องซักให้ละเอียดว่าดื่มอะไร ปริมาณ ความถี่ — เพราะผู้ป่วยมักคิดว่า \"แค่ไวน์\" ไม่นับ\n\n**ข้ออื่นผิด**\n- < 30 ก./วัน: เป็นเกณฑ์ของ **ชาย** ไม่ใช่หญิง\n- \"excessive อย่างเดียว\" หรือ \"binge อย่างเดียว\": เข้าทั้งสองเกณฑ์\n- ไวน์ไม่ได้ปลอดภัยกว่า — ความเสี่ยงขึ้นกับ **ปริมาณแอลกอฮอล์ (กรัม)**",
+   "pearl": "1 drink ≈ 14 ก. · หญิง > 20 ก./วัน หรือ ≥ 4 drinks/ครั้ง = ดื่มเกิน",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Alcohol contents of various beverages"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-13",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Alcoholic hepatitis – mechanism of AST/ALT > 2",
+   "stem": "A 50-year-old man with alcoholic hepatitis has AST 240 U/L and ALT 85 U/L. Which mechanism best explains the AST/ALT ratio greater than 2?",
+   "choices": [
+    "Alcohol releases mitochondrial AST, and pyridoxine (vitamin B6) deficiency lowers ALT activity",
+    "Alcohol accelerates renal clearance of ALT",
+    "AST in alcoholic hepatitis comes mainly from bone",
+    "Alcohol stimulates hepatocytes to synthesise extra AST without cell injury",
+    "Haemolysis from alcohol is the main source of AST"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ Alcoholic hepatitis — **Clues: AST > ALT (AST/ALT ratio > 2)** โดยมีกลไกสองข้อ\n1. **แอลกอฮอล์ทำให้ mitochondrial AST รั่วออกมา** — AST มีทั้งใน cytoplasm และ mitochondria (ALT อยู่ใน cytoplasm เป็นหลัก) แอลกอฮอล์ทำลาย mitochondria โดยตรง\n2. **ขาด pyridoxine (B6)** ซึ่งเป็น cofactor ของ aminotransferase โดย ALT ไวต่อการขาด B6 มากกว่า → ALT ต่ำกว่าที่ควร\n- เบาะแสอื่น: **AST มักไม่เกิน ~400 U/L** · **GGT สูง · MCV สูง**\n\n**ข้ออื่นผิด**\n- ไตไม่ได้ขับ ALT เร็วขึ้นจากแอลกอฮอล์\n- AST ไม่ได้มาจากกระดูก (ALP ต่างหากที่มีในกระดูก)\n- เอนไซม์ในเลือดสูงจาก **การรั่วจากเซลล์ที่บาดเจ็บ** ไม่ใช่การสร้างเพิ่ม\n- เม็ดเลือดแดงแตกทำให้ AST สูงได้ แต่ไม่ใช่กลไกหลักของ ratio > 2 ใน alcoholic hepatitis",
+   "pearl": "AST/ALT > 2 ในเหล้า = mitochondrial AST รั่ว + ขาด B6",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Alcoholic hepatitis — clues"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-14",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Severe alcoholic hepatitis – corticosteroids",
+   "stem": "A 44-year-old man who drank about 120 g of alcohol daily until 1 week ago presents with jaundice, low-grade fever and tender hepatomegaly. Total bilirubin 18 mg/dL, AST 210 U/L, ALT 80 U/L, WBC 15,000/mm³ (neutrophils), prolonged PT; Maddrey discriminant function 52, MELD 26. Blood, urine and ascitic fluid cultures and chest radiograph are negative; there is no GI bleeding and creatinine is normal. Besides abstinence and nutritional support, what is the most appropriate treatment?",
+   "choices": [
+    "Pentoxifylline 400 mg three times daily as the preferred therapy",
+    "Ursodeoxycholic acid",
+    "Prednisolone 40 mg/day for 28 days, assessing response with the Lille score on day 7",
+    "Empirical meropenem alone, because fever and leukocytosis indicate sepsis",
+    "Transjugular intrahepatic portosystemic shunt (TIPS)"
+   ],
+   "answer": 2,
+   "explain": "**Severe alcoholic hepatitis** = **Maddrey DF ≥ 32 หรือ MELD > 20** (รายนี้ 52/26) → **ACG 2024 (ไม่อยู่ในสไลด์)**: ถ้าไม่มีข้อห้าม ให้ **prednisolone 40 มก./วัน 28 วัน** และประเมิน **Lille score วันที่ 7** — ถ้า > 0.45 = ไม่ตอบสนอง หยุดยา\n- ไข้ต่ำ WBC สูงใน alcoholic hepatitis เกิดจาก **endotoxin → Kupffer cell หลั่ง TNF-α/IL-8 → neutrophil แทรกในตับ** ไม่จำเป็นต้องติดเชื้อ แต่ **ต้องหาการติดเชื้อก่อนให้ steroid เสมอ** — รายนี้เพาะเชื้อและ CXR ลบ ไม่มีเลือดออกหรือไตวาย\n- **หยุดดื่ม** สำคัญที่สุด + โภชนาการ + ป้องกัน withdrawal\n- สไลด์: ราวครึ่งหนึ่งมีตับแข็งร่วม\n\n**ข้ออื่นผิด**\n- Pentoxifylline: การศึกษา STOPAH ไม่ลดอัตราตาย ACG ไม่แนะนำแล้ว\n- UDCA: ไม่มีบทบาท\n- Meropenem อย่างเดียว: ผลเพาะเชื้อลบ ไข้/WBC อธิบายได้ด้วยตัวโรค\n- TIPS: ใช้กับ portal hypertension (variceal bleed, ascites ดื้อยา) ไม่ใช่รักษา alcoholic hepatitis",
+   "pearl": "Severe AH (DF ≥ 32 / MELD > 20) ไม่มีติดเชื้อ → prednisolone 40 มก. 28 วัน · Lille วันที่ 7",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Alcoholic hepatitis",
+    "ACG Clinical Guideline: Alcohol-associated liver disease (2024)"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-15",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "DILI – anti-tuberculosis drugs",
+   "stem": "A 35-year-old man started isoniazid, rifampicin, pyrazinamide and ethambutol for pulmonary tuberculosis 4 weeks ago. He now has nausea, anorexia and jaundice. ALT 480 U/L (baseline 30 U/L), total bilirubin 4.1 mg/dL. Viral hepatitis markers are negative and he does not drink alcohol. What is the most appropriate next step?",
+   "choices": [
+    "Continue all four drugs and recheck ALT in 2 weeks, because adaptation is common",
+    "Stop ethambutol only",
+    "Stop pyrazinamide only and continue isoniazid and rifampicin",
+    "Add N-acetylcysteine and continue all four drugs",
+    "Stop isoniazid, rifampicin and pyrazinamide, monitor liver tests, and reintroduce drugs one at a time after ALT falls below 2 × ULN (using a non-hepatotoxic interim regimen if needed)"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ DILI: **ยาวัณโรค** เป็นตัวอย่างของ **idiosyncratic DILI** — ไม่ขึ้นกับขนาด คาดเดาไม่ได้ · **ระยะแฝงมัก 4 วันถึง 8 สัปดาห์** (รายนี้ 4 สัปดาห์) · วินิจฉัยด้วยประวัติ แยกสาเหตุอื่น และ **ดีขึ้นหลังหยุดยา**\n- กลไก: สารตัวกลาง (เช่น acetylhydrazine จาก isoniazid ใน slow acetylator) จับโปรตีนในเซลล์ → ภูมิคุ้มกันโจมตีเซลล์ตับเฉพาะบางคน\n- เกณฑ์หยุดยา (ATS/แนวทางวัณโรค): **ALT > 3 × ULN ร่วมกับมีอาการหรือเหลือง** หรือ > 5 × ULN แม้ไม่มีอาการ → รายนี้เข้าเกณฑ์\n- หยุด **ยาพิษตับทั้งสาม (H, R, Z)** แล้วให้ยาที่ไม่พิษต่อตับชั่วคราวถ้าวัณโรครุนแรง · เมื่อ ALT < 2 × ULN ค่อยเริ่มทีละตัว\n\n**ข้ออื่นผิด**\n- ให้ต่อ: adaptation ใช้ได้เฉพาะ ALT สูงเล็กน้อยไม่มีอาการ — รายนี้เหลือง\n- Ethambutol ไม่พิษต่อตับ\n- หยุด Z ตัวเดียว: H และ R ก็เป็นสาเหตุได้ ยังไม่รู้ว่าตัวไหน\n- NAC เป็นยาแก้พิษ paracetamol ไม่ทำให้ให้ยาต่อได้อย่างปลอดภัย",
+   "pearl": "Anti-TB DILI + เหลือง → หยุด H R Z ทั้งหมด แล้วเริ่มใหม่ทีละตัวเมื่อ ALT < 2×ULN",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Drug-induced liver injury (DILI)",
+    "ATS/CDC/IDSA TB treatment guideline — drug-induced hepatitis"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)",
+    "2.3.1(20)"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-16",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "DILI – herbal products and diagnosis",
+   "stem": "A 57-year-old woman develops jaundice with ALT 860 U/L, 5 weeks after starting an herbal 'detox' capsule bought online. She takes no other medicines and does not drink alcohol. Anti-HAV IgM, HBsAg, anti-HBc IgM, anti-HCV and anti-HEV IgM are negative; ANA and ASMA are negative with normal globulin; ultrasound is normal. Which approach best establishes the diagnosis?",
+   "choices": [
+    "Rechallenge with the capsule for 1 week to confirm causality",
+    "Stop the product and document improvement of liver tests after withdrawal, having excluded other causes",
+    "Perform a liver biopsy, which is required before DILI can be diagnosed",
+    "Measure serum levels of the herbal compound",
+    "Continue the capsule, because natural herbal products are not hepatotoxic"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ DILI\n- **ทั้งยาแผนปัจจุบันและสมุนไพร** เป็นสาเหตุได้ → ต้องถามทุกราย รวมผลิตภัณฑ์เสริมอาหาร/ซื้อออนไลน์\n- **ระยะแฝงมัก 4 วัน–8 สัปดาห์** (รายนี้ 5 สัปดาห์)\n- **วินิจฉัยโดยประวัติละเอียด + แยกสาเหตุอื่น + ดีขึ้นหลังหยุดยา (dechallenge)** — ไม่มีการตรวจเลือดเฉพาะ\n- รายนี้ตัดไวรัส A–E และ AIH แล้ว (ANA/ASMA ลบ globulin ปกติ) · ข้อมูลยาแต่ละชนิดดูที่ **LiverTox**\n\n**ข้ออื่นผิด**\n- Rechallenge: อาจทำให้ตับอักเสบรุนแรงกว่าเดิม (ภูมิคุ้มกันจำได้) — ไม่ทำเพื่อวินิจฉัย\n- Biopsy: ไม่จำเป็นในทุกราย ใช้เมื่อวินิจฉัยไม่ชัดหรือไม่ดีขึ้นหลังหยุด\n- ระดับสารสมุนไพร: ไม่มีการตรวจที่ใช้ได้จริงและผลิตภัณฑ์มักมีหลายสาร/ปนเปื้อน\n- \"ธรรมชาติปลอดภัย\": ผิด สมุนไพรเป็นสาเหตุ DILI ที่พบบ่อย",
+   "pearl": "DILI วินิจฉัยด้วยประวัติ + แยกโรคอื่น + ดีขึ้นหลังหยุด — ถามสมุนไพรเสมอ",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Drug-induced liver injury (DILI)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-17",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "DILI prevention – HLA-B*58:01 before allopurinol",
+   "stem": "A 55-year-old Thai man with recurrent gouty arthritis and tophi is to start urate-lowering therapy with allopurinol. His physician wants to reduce the risk of a severe hypersensitivity reaction with fever, rash, eosinophilia and hepatitis. Which test should be done before starting the drug?",
+   "choices": [
+    "HLA-B*15:02",
+    "HLA-B*57:01",
+    "TPMT genotype",
+    "HLA-B*58:01",
+    "G6PD activity"
+   ],
+   "answer": 3,
+   "explain": "โน้ตในห้อง: DILI บางชนิด **ป้องกันได้** — **allopurinol ตรวจ HLA-B5801 ก่อนให้**\n- Allopurinol เป็นตัวอย่าง **immunoallergic DILI** ในสไลด์ (ผื่น eosinophil สูง ไข้) · กลไก: ยา/oxypurinol จับกับโมเลกุล HLA-B*58:01 แล้วกระตุ้น T cell โดยตรง → **DRESS/SJS/TEN** ร่วมกับตับอักเสบ\n- คนไทยและเอเชียมีความถี่ของอัลลีลนี้สูง → ถ้าบวกให้เลี่ยง allopurinol (ใช้ febuxostat แทน)\n\n**ข้ออื่นผิด**\n- HLA-B*15:02: ตรวจก่อน **carbamazepine** (SJS/TEN)\n- HLA-B*57:01: ตรวจก่อน **abacavir**\n- TPMT: ตรวจก่อน **azathioprine/6-MP** (กดไขกระดูก)\n- G6PD: ตรวจก่อน **rasburicase, dapsone, primaquine** (เม็ดเลือดแดงแตก)",
+   "pearl": "Allopurinol → ตรวจ HLA-B*58:01 ก่อน (ป้องกัน DRESS/SJS ที่มีตับอักเสบ)",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — DILI (โน้ตในห้อง)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-18",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Autoimmune hepatitis – clues and autoantibodies",
+   "stem": "A 40-year-old woman with Hashimoto thyroiditis has 4 weeks of fatigue, arthralgia and jaundice. ALT 720 U/L, total bilirubin 5.4 mg/dL, albumin 3.2 g/dL, globulin 5.6 g/dL (ULN 3.5). She has spider naevi and a palpable spleen. Anti-HAV IgM, HBsAg, anti-HBc IgM, anti-HCV and anti-HEV IgM are negative. She takes levothyroxine only and does not drink. Which tests are most likely to confirm the diagnosis?",
+   "choices": [
+    "Antinuclear antibody (ANA) and anti-smooth muscle antibody (ASMA), with serum IgG",
+    "Serum ceruloplasmin and 24-hour urine copper",
+    "Antimitochondrial antibody (AMA)",
+    "Transferrin saturation and ferritin",
+    "HCV RNA"
+   ],
+   "answer": 0,
+   "explain": "เบาะแส **AIH** ในสไลด์ครบเกือบทุกข้อ\n- **หญิงวัยกลางคน** (หรือวัยรุ่น) · อ่อนเพลีย **ปวดข้อ** เหลือง\n- **โรคภูมิคุ้มกันอื่นร่วม (ถึง 40%)** เช่น **thyroiditis**, RA\n- **ตับอักเสบเฉียบพลันแต่มีอาการแสดงโรคตับเรื้อรัง** (spider naevi ม้ามโต albumin ต่ำ) — อักเสบเงียบมานานจนมีพังผืดก่อนมีอาการ\n- **globulin สูง > 1.5 × ULN** (5.6 > 5.25) จาก plasma cell รอบ portal tract สร้าง IgG\n→ ส่ง **ANA, ASMA** (seronegative < 10%) ± IgG และตัดชิ้นเนื้อยืนยัน · รักษา **prednisolone ± azathioprine**\n\n**ข้ออื่นผิด**\n- Ceruloplasmin/urine Cu: Wilson อายุ 20–40 มักมี hemolysis, KF ring, อาการทางสมอง ALP ต่ำ — ไม่มีเบาะแสและไม่อธิบาย globulin สูง\n- AMA: ใช้กับ PBC ซึ่งเป็น cholestatic (ALP สูง คัน) ไม่ใช่ ALT 720\n- Iron study: hemochromatosis เป็นโรคเรื้อรังค่อยเป็นค่อยไป ไม่ทำ globulin สูง\n- HCV RNA: anti-HCV ลบและไม่มีปัจจัยเสี่ยง",
+   "pearl": "AIH: หญิง + โรคภูมิคุ้มกันร่วม + globulin > 1.5×ULN + อาการโรคตับเรื้อรัง → ANA, ASMA",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Autoimmune hepatitis (AIH)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-19",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Ischaemic hepatitis – zone 3 injury",
+   "stem": "A 70-year-old man with severe heart failure has an episode of cardiogenic shock. Twenty-four hours later his ALT is 6,800 U/L, AST 9,200 U/L and LDH is markedly raised; total bilirubin is 1.8 mg/dL. Which part of the liver lobule is most affected, and why?",
+   "choices": [
+    "Zone 1 (periportal) hepatocytes, because they are closest to the hepatic artery",
+    "Bile duct epithelium, because it is supplied only by the hepatic artery",
+    "Zone 3 (centrilobular) hepatocytes, because they receive the least oxygenated blood at the end of sinusoidal flow",
+    "Kupffer cells, because they are the most metabolically active cells",
+    "Zone 2 hepatocytes, because they store the most iron"
+   ],
+   "answer": 2,
+   "explain": "**Ischemic hepatitis** (สไลด์): ประวัติช็อก/ความดันต่ำ · ผู้สูงอายุ โรคหัวใจ ICU · **ALT/AST สูงมาก (> 10,000 ได้)** · **AST > ALT ช่วงแรก** · **bilirubin ปกติหรือสูงเล็กน้อย** · **ลดลงเร็วภายใน 72 ชม.** (ไม่มีการอักเสบต่อเนื่อง)\n- กลไก: เลือดไหลจาก portal triad (zone 1) ผ่าน sinusoid ไปยัง central vein (zone 3) — ออกซิเจนถูกใช้ไปตลอดทาง **zone 3 จึงได้ O₂ ต่ำสุด** และตายก่อนเมื่อ perfusion ลด\n- ขาด O₂ ทำลาย mitochondria (มี AST) → AST > ALT ช่วงแรก · **LDH สูงมาก** ช่วยแยกจากไวรัส · เซลล์ zone 1–2 ที่รอดยังขับ bilirubin ได้ จึงไม่ค่อยเหลือง\n- zone 3 ยังเป็นที่อยู่ของ CYP2E1 → paracetamol ทำลายบริเวณเดียวกัน\n\n**ข้ออื่นผิด**\n- Zone 1 ได้เลือดออกซิเจนสูงสุด จึงทนที่สุด\n- ท่อน้ำดีเสียหายจะทำให้ ALP/bilirubin สูง ไม่ใช่ ALT หลักพัน\n- Kupffer cell ไม่ใช่แหล่ง ALT/AST หลัก\n- Zone 2 ไม่ได้เก็บเหล็กเป็นพิเศษ",
+   "pearl": "Ischemic hepatitis = zone 3 ตาย · ALT/AST > 10,000 · LDH สูง · ไม่ค่อยเหลือง · ลดเร็วใน 72 ชม.",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Ischemic hepatitis"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.2.7"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-20",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Wilson disease presenting as acute liver failure",
+   "stem": "A 19-year-old woman presents with jaundice and confusion. Haemoglobin 7.9 g/dL with Coombs-negative haemolysis; Kayser–Fleischer rings are seen on slit-lamp examination. AST 690 U/L, ALT 380 U/L, ALP 30 U/L, total bilirubin 28 mg/dL, INR 3.4, with grade 2 hepatic encephalopathy. What is the definitive treatment?",
+   "choices": [
+    "Oral D-penicillamine as an outpatient",
+    "Oral zinc acetate",
+    "Prednisolone 40 mg/day",
+    "Intravenous N-acetylcysteine as the main therapy",
+    "Urgent liver transplantation"
+   ],
+   "answer": 4,
+   "explain": "**Wilson's disease** (สไลด์): อายุ 20–40 (เริ่มได้ตั้งแต่วัยรุ่น) · **KF ring (~50%)** · **acute severe hepatitis ร่วมกับ intravascular hemolysis** · **AST > ALT (มัก < 1,000) · ALP ต่ำ · ALP/TB < 2** (30/28 ≈ 1.1)\n- กลไก: ATP7B เสีย → ทองแดงสะสมในตับ · เซลล์ตับตาย → **ทองแดงอิสระทะลักเข้าเลือด** → ทำลายเม็ดเลือดแดงแบบ oxidative (Coombs ลบ) → bilirubin สูงมาก\n- รายนี้เป็น **acute liver failure** (INR ≥ 1.5 + encephalopathy) → Learn: **Wilson เฉียบพลันรุนแรงมักต้องปลูกถ่ายตับ** ซึ่งรักษาความผิดปกติของยีนในตับได้ด้วย\n- ระวัง: ในตับวายเฉียบพลัน ceruloplasmin/ทองแดงในเลือดอาจหลอก — ใช้ภาพรวมทางคลินิก\n\n**ข้ออื่นผิด**\n- D-penicillamine/zinc: ใช้ใน Wilson เรื้อรังที่ตับยังทำงาน ออกฤทธิ์ช้าหลายสัปดาห์ ไม่ช่วยตับวายเฉียบพลัน และห้ามเป็นผู้ป่วยนอก\n- Prednisolone: ใช้ใน AIH ไม่ใช่ Wilson\n- NAC: เป็นยาแก้พิษ paracetamol ไม่ใช่การรักษาหลักของ Wilson",
+   "pearl": "ตับวาย + hemolysis Coombs ลบ + ALP ต่ำ (ALP/TB < 2) ในคนอายุน้อย = Wilson → ปลูกถ่ายตับ",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Wilson's disease"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4",
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-21",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis – excluding causes, MASLD",
+   "stem": "A 44-year-old man has had ALT 70–95 U/L for 9 months. He drinks one can of beer a week and takes no medicines or herbs. BMI 27 kg/m², waist 96 cm, fasting glucose 112 mg/dL, triglycerides 210 mg/dL. HBsAg and anti-HCV are negative; ANA and ASMA are negative; ceruloplasmin 27 mg/dL, 24-hour urine copper 22 µg, no Kayser–Fleischer rings; transferrin saturation 31% with normal ferritin. Ultrasound shows a diffusely bright liver. What is the most likely cause?",
+   "choices": [
+    "Seronegative autoimmune hepatitis",
+    "Wilson's disease",
+    "Hereditary haemochromatosis",
+    "Metabolic dysfunction-associated steatotic liver disease (MASLD)",
+    "Alcohol-related liver disease"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Approach to chronic hepatitis: **ALT สูง ≥ 3–6 เดือน** → ประวัติยา สมุนไพร เหล้า → ตรวจชุดแรกพร้อมเกณฑ์ตัดโรค\n| ตรวจ | ผลรายนี้ | สรุป |\n|---|---|---|\n| HBsAg, anti-HCV | ลบ | ตัดไวรัส B, C |\n| ANA, ASMA | ลบ | **ตัด AIH ได้ ~90%** |\n| Ceruloplasmin ≥ 20 + urine Cu ≤ 40 µg + ไม่มี KF | 27 / 22 / ไม่มี | **ตัด Wilson** |\n| TSAT < 45% + ferritin ปกติ | 31% | **ตัด hemochromatosis** |\n| US + BMI รอบเอว FBS ไขมัน | ไขมันพอก + BMI ≥ 23, รอบเอว > 90, FBS ≥ 100, TG ≥ 150 | **MASLD** |\n- MASLD = ไขมันพอกตับ + ปัจจัยเมตาบอลิก ≥ 1 ข้อ (รายนี้มี 4 ข้อ) โดยไม่มีสาเหตุอื่น\n\n**ข้ออื่นผิด**\n- Seronegative AIH: พบ < 10% และไม่มี globulin สูง/โรคภูมิคุ้มกันร่วม\n- Wilson และ hemochromatosis: ตัดได้ตามเกณฑ์ในตาราง\n- ALD: ดื่ม 1 กระป๋อง/สัปดาห์ ≈ 13 ก. ห่างจาก 210 ก./สัปดาห์มาก",
+   "pearl": "ANA/ASMA ลบ · Cp ≥ 20 + urine Cu ≤ 40 · TSAT < 45 → ตัด AIH, Wilson, HH",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Approach to chronic hepatitis"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-22",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Transient elastography – false elevation",
+   "stem": "A 39-year-old man with chronic hepatitis B is seen during an acute flare with ALT 860 U/L. A Fibroscan performed that morning, 30 minutes after breakfast, shows liver stiffness 14.5 kPa (IQR/median 18%). Ultrasound shows a smooth liver surface and normal spleen size; platelets 230,000/mm³. What is the best interpretation?",
+   "choices": [
+    "The result confirms cirrhosis; start variceal screening and 6-monthly HCC surveillance",
+    "Stiffness is probably overestimated by active inflammation and the recent meal; repeat after fasting once ALT has settled",
+    "The result is invalid because the IQR/median exceeds 30%",
+    "The result proves F3 fibrosis, so biopsy is unnecessary for any future decision",
+    "A value above 12 kPa means steatosis rather than fibrosis"
+   ],
+   "answer": 1,
+   "explain": "**Fibroscan** วัดความเร็ว **shear wave** — คลื่นวิ่งเร็วขึ้นในเนื้อตับที่ **แข็ง** แล้วแปลงเป็น kPa · แต่ตับ **แข็งชั่วคราว** ได้จาก **อักเสบมาก ตับคั่งเลือด ท่อน้ำดีอุดตัน หรือเพิ่งกินอาหาร** (เลือดไหลเข้าตับเพิ่ม) → kPa **สูงเกินจริง**\n- รายนี้ ALT 860 + กินข้าวมา 30 นาที → ค่า 14.5 อาจไม่ใช่พังผืดจริง · ภาพอื่นไม่เข้ากับตับแข็ง (ผิวเรียบ ม้ามปกติ เกล็ดเลือดปกติ)\n- ควรวัดซ้ำ **หลังงดอาหาร ≥ 2–3 ชม.** และเมื่อ ALT ลดลง\n\n**ข้ออื่นผิด**\n- \"ยืนยันตับแข็ง\": แม้ ≥ 12–15 kPa ปกติจะบ่งชี้ ≥ F3/F4 แต่ต้องแปลผลเมื่อไม่มีปัจจัยรบกวน\n- Invalid: เกณฑ์ low accuracy คือ **IQR/median > 30%** — รายนี้ 18% วัดได้แม่นในทางเทคนิค\n- พิสูจน์ F3: เป็นค่าประมาณ ไม่ใช่ผลชิ้นเนื้อ และมีปัจจัยรบกวน\n- ไขมันวัดด้วย **CAP (dB/m)** ไม่ใช่ kPa",
+   "pearl": "Fibroscan สูงเกินจริงเมื่อ ALT สูงมาก ตับคั่ง ท่อน้ำดีอุดตัน หรือเพิ่งกินอาหาร",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Transient elastography: interpretation"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-23",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis B with cirrhosis – treat regardless of ALT",
+   "stem": "A 58-year-old man who has been HBsAg-positive for more than 20 years has compensated cirrhosis (nodular liver, splenomegaly, Fibroscan 19 kPa, platelets 98,000/mm³). HBeAg is negative, HBV DNA 650 IU/mL and ALT 28 U/L. What is the most appropriate management?",
+   "choices": [
+    "Start tenofovir alafenamide (TAF) and continue HCC surveillance with ultrasound and AFP every 6 months",
+    "No antiviral therapy, because HBV DNA is below 2,000 IU/mL and ALT is normal",
+    "Peginterferon alfa for 48 weeks",
+    "Repeat HBV DNA in 1 year and treat only if it exceeds 20,000 IU/mL",
+    "Start TAF only if ALT rises above 2 × ULN"
+   ],
+   "answer": 0,
+   "explain": "**ตับแข็ง + HBV DNA ตรวจพบ (ระดับใดก็ได้) → ให้ยาทุกราย ไม่ต้องดู ALT** — ตาม WHO 2024, EASL 2025 และ AASLD (เป็นข้อที่แนวทางสากลตรงกันมานาน)\n- เหตุผล: ตับแข็งมีเนื้อตับสำรองน้อย flare เพียงครั้งเดียวอาจทำให้ **decompensation/ตับวาย** · ยากดไวรัสช่วย **ชะลอ/ย้อนพังผืด ลดมะเร็งตับ** (สไลด์ Benefits of long-term antiviral treatment)\n- ตารางในสไลด์ (HBV DNA > 2,000 + ALT/พังผืด) ใช้กับ **ผู้ที่ยังไม่มีตับแข็ง**\n- ยา: **TAF 1 เม็ดวันละครั้ง** (บัญชียาหลัก first-line) · ตับแข็ง → **US + AFP ทุก 6 เดือน**\n\n**ข้ออื่นผิด**\n- ไม่ให้ยาเพราะ DNA < 2,000: ใช้กับ inactive carrier ที่ **ไม่มีตับแข็ง**\n- Peginterferon: ห้ามหรือระวังมากในตับแข็ง (อาจกระตุ้น flare/decompensation)\n- 20,000 IU/mL: เกณฑ์เก่าของ WHO ก่อน 2024 และไม่ใช้กับตับแข็ง\n- รอ ALT > 2 × ULN: ALT ไม่ใช่เงื่อนไขในตับแข็ง",
+   "pearl": "HBV + ตับแข็ง + DNA ตรวจพบ → TAF ทุกราย ไม่ดู ALT · US + AFP ทุก 6 เดือน",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Chronic hepatitis B: treatment indications",
+    "WHO chronic hepatitis B guidelines (2024); EASL HBV CPG (2025)"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-24",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis B – fibrosis as treatment indication",
+   "stem": "A 42-year-old man is HBsAg-positive and HBeAg-negative. Over 6 months, HBV DNA has been 45,000 IU/mL and ALT 30–34 U/L (ULN 35 U/L). Fibroscan shows liver stiffness 9.6 kPa with a valid measurement and normal ALT on the day; ultrasound shows no cirrhosis. What is the most appropriate management?",
+   "choices": [
+    "Monitor only, because ALT is within normal limits",
+    "Perform liver biopsy, which is mandatory before any antiviral therapy",
+    "Treat only if HBeAg becomes positive",
+    "Start TAF, because HBV DNA > 2,000 IU/mL with significant fibrosis (liver stiffness > 7 kPa) is an indication for treatment",
+    "Peginterferon plus ribavirin for 24 weeks"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ CHB treatment indications: **HBV DNA > 2,000 IU/mL** ร่วมกับ **significant inflammation และ/หรือ fibrosis** อย่างใดอย่างหนึ่ง\n- ALT > 1.5 × ULN ≥ 3 เดือน **หรือ**\n- Biopsy HAI ≥ 4 หรือ Metavir ≥ F2 **หรือ**\n- **Fibroscan > 7.0 kPa** ← รายนี้ 9.6 kPa (วัดตอน ALT ปกติ จึงไม่ถูกรบกวนจากการอักเสบ)\n→ **active disease → เริ่มยา** · WHO 2024 ก็ให้ยาเมื่อ **≥ F2 โดยไม่ต้องดู HBV DNA หรือ ALT**\n- **ALT ปกติไม่ได้แปลว่าตับไม่เสีย** — อายุ > 35 ปีเสี่ยงพังผืดมากขึ้น\n\n**ข้ออื่นผิด**\n- ติดตามอย่างเดียว: มองข้ามพังผืดซึ่งเป็นเกณฑ์ให้ยาด้วยตัวเอง\n- Biopsy บังคับ: Fibroscan ใช้แทนได้ตามสไลด์\n- รอ HBeAg บวก: HBeAg-negative ก็เป็น active disease ได้\n- Peginterferon + ribavirin: เป็นสูตร HCV ยุคเก่า ribavirin ไม่มีบทบาทใน HBV",
+   "pearl": "HBV DNA > 2,000 + Fibroscan > 7 kPa (≥ F2) → ให้ยา แม้ ALT ปกติ",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Chronic hepatitis B: treatment indications"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-25",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis B – do not stop nucleos(t)ide analogue",
+   "stem": "A 47-year-old woman with HBeAg-negative chronic hepatitis B has taken TAF for 3 years. HBV DNA has been undetectable and ALT normal for 2 years, but HBsAg remains positive. She feels well and wants to stop the drug because she believes she is cured. What is the best response?",
+   "choices": [
+    "She may stop now, because HBV DNA has been undetectable for more than 1 year",
+    "Switch to peginterferon for 6 months to complete the cure",
+    "Reduce TAF to alternate days to limit side effects",
+    "Stop TAF and recheck HBsAg after 1 year",
+    "She is controlled but not cured; HBeAg-negative disease usually needs lifelong therapy, and stopping can cause a severe hepatitis flare"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ HBV: General advice\n- **คุมได้ทุกราย แต่หายขาดเพียง 1–3%** — \"หายขาด\" (functional cure) = **HBsAg หาย** ± anti-HBs · รายนี้ HBsAg ยังบวก\n- **ต้องกินยานาน: HBeAg ลบ มักตลอดชีวิต** · HBeAg บวกหลายปี\n- เน้น **กินยาสม่ำเสมอและมาตามนัด** · ยาลดความเสี่ยงมะเร็งตับแต่ไม่ได้ป้องกันทั้งหมด\n- กลไก: ยา NA ยับยั้ง reverse transcriptase จึงหยุดการสร้างไวรัสใหม่ แต่ **cccDNA ในนิวเคลียสยังอยู่** → หยุดยา ไวรัสกลับมาแบ่งตัว → ภูมิคุ้มกันไล่ทำลายเซลล์ตับ = **flare ที่อาจรุนแรงถึงตับวาย**\n\n**ข้ออื่นผิด**\n- HBV DNA ตรวจไม่พบ ≠ หายขาด (cccDNA ยังอยู่)\n- Peginterferon ไม่ได้ \"ปิดงาน\" ให้หายขาด และอัตรา HBsAg loss ต่ำ\n- ลดเป็นวันเว้นวัน: เสี่ยงดื้อยาและ flare · TAF ผลข้างเคียงน้อยอยู่แล้ว (ติดตามไต/กระดูกในกลุ่มเสี่ยง)\n- หยุดแล้วรอตรวจ 1 ปี: flare มักเกิดในไม่กี่สัปดาห์–เดือน",
+   "pearl": "HBV: TAF คุมได้ หายขาด 1–3% · HBeAg ลบกินตลอดชีวิต · ห้ามหยุดยาเอง",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — HBV: general advice"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-26",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis B – inactive carrier follow-up and HCC surveillance",
+   "stem": "A 46-year-old man is found to be HBsAg-positive during a pre-employment check. HBeAg negative, anti-HBe positive, HBV DNA 600 IU/mL and ALT 22 U/L on three tests over 12 months; Fibroscan 4.9 kPa; ultrasound normal; no family history of liver cancer or cirrhosis, and no HIV, HCV or HDV co-infection. What is the most appropriate plan?",
+   "choices": [
+    "No follow-up is needed because he is an inactive carrier",
+    "CT of the abdomen every 3 months",
+    "No antiviral therapy now; monitor ALT and HBV DNA, and perform ultrasound with AFP every 6–12 months",
+    "Serum AFP alone once a year",
+    "Start TAF now, because all HBsAg-positive patients need treatment"
+   ],
+   "answer": 2,
+   "explain": "รายนี้ไม่เข้าเกณฑ์ให้ยา: **HBV DNA < 2,000 · ALT ปกติ (< 35) · Fibroscan < 7 kPa · ไม่มีตับแข็ง** และไม่มีข้อบ่งชี้เพิ่มเติมของ WHO 2024 (co-infection, ประวัติครอบครัว HCC/ตับแข็ง, ภูมิคุ้มกันต่ำ, อาการนอกตับ) → **\"NO (inactive) → continue monitor\"**\n- แต่สไลด์ให้ **เฝ้าระวังมะเร็งตับด้วย US + AFP ทุก 6–12 เดือน** ใน **ชาย > 40 ปี** · หญิง > 50 ปี · ประวัติครอบครัว HCC · พังผืดมาก → รายนี้ **ชายอายุ 46** เข้าเกณฑ์\n- เหตุผล: HBV DNA แทรกใน genome ของเซลล์ตับ → **มะเร็งตับเกิดได้แม้ไม่มีตับแข็ง**\n\n**ข้ออื่นผิด**\n- ไม่ต้องติดตาม: inactive อาจกลับเป็น active และยังเสี่ยงมะเร็งตับ\n- CT ทุก 3 เดือน: ไม่ใช่วิธีคัดกรองมาตรฐาน รังสีและค่าใช้จ่ายสูง\n- AFP อย่างเดียว: ไวต่ำ ต้องใช้คู่กับอัลตราซาวนด์\n- ให้ยาทุกคนที่ HBsAg บวก: ไม่ใช่เกณฑ์ของสไลด์หรือแนวทางปัจจุบัน",
+   "pearl": "HBV ไม่เข้าเกณฑ์ยา ก็ยังต้อง US + AFP ทุก 6–12 เดือน ถ้าชาย > 40 / หญิง > 50 / FHx / พังผืดมาก",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Chronic hepatitis B: treatment indications; HCC surveillance"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-27",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis C – DAA therapy and PPI interaction",
+   "stem": "A 49-year-old man has chronic hepatitis C (HCV RNA 2.1 × 10⁶ IU/mL, genotype 3a) with liver stiffness 8.8 kPa and no cirrhosis. He takes omeprazole 40 mg daily for mild reflux symptoms. HBsAg is negative and renal function is normal. What is the most appropriate plan?",
+   "choices": [
+    "Peginterferon plus ribavirin for 48 weeks because genotype 3 does not respond to DAAs",
+    "Sofosbuvir/velpatasvir 400/100 mg once daily for 12 weeks, stopping or minimising the PPI if possible",
+    "Sofosbuvir/velpatasvir for 4 weeks",
+    "Defer treatment until cirrhosis develops",
+    "Continue omeprazole 40 mg and add an H2 blocker to protect the stomach during therapy"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ HCV: Direct-acting antiviral therapy\n- **Sofosbuvir + velpatasvir (400/100 มก.) วันละเม็ด 12 สัปดาห์** — ในบัญชียาหลักแห่งชาติ · **pangenotypic** ใช้ได้ทุก genotype รวม 3\n- **หาย > 95%** · ผลข้างเคียงน้อย · เน้นกินยาสม่ำเสมอ\n- **ตรวจยาตีกัน เลี่ยง PPI ถ้าทำได้** — velpatasvir ละลายได้ดีในกรด กรดน้อยลงทำให้ **ดูดซึมลด** → เสี่ยงไม่หาย (ถ้าจำเป็นจริง แนวทางให้ใช้ omeprazole ขนาดต่ำพร้อมอาหารหลังกิน SOF/VEL)\n- ก่อนเริ่มยาตรวจ HBsAg (เสี่ยง HBV reactivation) — รายนี้ลบ\n\n**ข้ออื่นผิด**\n- Peginterferon + ribavirin: สูตรเก่า ผลข้างเคียงมาก ปัจจุบัน DAA ใช้ได้ทุก genotype\n- 4 สัปดาห์: สั้นเกิน สไลด์กำหนด 12 สัปดาห์\n- รอตับแข็ง: HCV รักษาได้ทุกระยะ ยิ่งรักษาเร็วยิ่งป้องกันพังผืดและมะเร็งตับ\n- เพิ่ม H2 blocker: ลดกรดเพิ่ม ยิ่งลดการดูดซึม velpatasvir",
+   "pearl": "SOF/VEL 12 สัปดาห์ ทุก genotype หาย > 95% · เลี่ยง PPI",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — HCV: direct-acting antiviral (DAA) therapy",
+    "AASLD–IDSA HCV Guidance"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-28",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis C – SVR12 and HCC surveillance after cure",
+   "stem": "A 61-year-old man with HCV-related compensated cirrhosis has completed 12 weeks of sofosbuvir/velpatasvir. HCV RNA was undetectable at the end of treatment and again 12 weeks after stopping. Anti-HCV remains positive. He asks whether he still needs liver follow-up. What is the best answer?",
+   "choices": [
+    "He is not cured until anti-HCV becomes negative",
+    "He is cured and can be discharged from all liver follow-up",
+    "He should continue sofosbuvir/velpatasvir indefinitely to prevent relapse",
+    "He is cured (SVR12), but because he had cirrhosis he needs lifelong HCC surveillance with ultrasound and AFP every 6 months",
+    "Cure can be declared only if HCV RNA stays undetectable for 5 years"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ HCV\n- **SVR = ตรวจไม่พบ HCV RNA 12 สัปดาห์หลังหยุดยา = หายขาด** → ป้องกัน/ย้อนโรค ลดมะเร็งตับ อยู่รอดนานขึ้น\n- HCV หายขาดได้เพราะ **RNA แบ่งตัวใน cytoplasm ไม่มีแหล่งซ่อน** (ต่างจาก cccDNA ของ HBV และ proviral DNA ของ HIV)\n- แต่ **มีพังผืดมาก/ตับแข็งก่อนรักษา → เฝ้าระวังมะเร็งตับตลอดชีวิตแม้หายแล้ว** — เซลล์ที่ผ่านการอักเสบและพังผืดมาหลายสิบปียังสะสมการกลายพันธุ์อยู่ · ตับแข็ง → **US + AFP ทุก 6 เดือน**\n\n**ข้ออื่นผิด**\n- **anti-HCV บวกตลอดไป** แม้หายแล้ว — ไม่ใช้ติดตามการรักษา (ใช้ HCV RNA)\n- ปล่อยกลับไม่ติดตาม: ความเสี่ยงมะเร็งตับลดแต่ไม่หมด\n- กินยาต่อไม่มีประโยชน์ — ไวรัสหมดไปแล้ว\n- 5 ปี: ไม่ใช่นิยาม · SVR12 เพียงพอ (relapse หลังจากนั้นพบน้อยมาก ถ้ามักเป็นการติดเชื้อซ้ำ)",
+   "pearl": "SVR12 = หายขาด · anti-HCV บวกตลอด · ตับแข็งก่อนรักษา → US + AFP ทุก 6 เดือนตลอดชีวิต",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — HCV: DAA therapy"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-29",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "HCV extrahepatic manifestation – mixed cryoglobulinaemia",
+   "stem": "A 54-year-old woman has palpable purpura on both legs, arthralgia and a painful peripheral neuropathy. Urine protein is 2.4 g/day with microscopic haematuria; C4 is very low, rheumatoid factor is positive and serum cryoglobulins are detected. ALT is 68 U/L. She received a blood transfusion after childbirth in 1989. Which investigation is most relevant to the underlying cause?",
+   "choices": [
+    "Anti-HCV followed by HCV RNA",
+    "Anti-HAV IgM",
+    "Anti-HEV IgM",
+    "Antistreptolysin O titre",
+    "Anti-HDV antibody"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ Natural history of HCV: **อาการนอกตับ** — ดื้ออินซูลิน/เบาหวาน โปรตีนรั่ว CKD **lymphoma และโรคภูมิคุ้มกัน (cryoglobulinemia, MPGN, PCT, ITP)** · และให้ตรวจ HCV ในผู้ที่มี extrahepatic disorders เหล่านี้\n- กลไก: HCV กระตุ้น **B cell เรื้อรัง** → โคลนเดียวสร้าง **IgM ที่เป็น rheumatoid factor** จับ IgG + อนุภาคไวรัส → **cryoglobulin** ติดผนังหลอดเลือดเล็ก → **ผื่นจ้ำนูน ปวดข้อ ปลายประสาทอักเสบ** · ติด glomerulus → **MPGN** · complement ถูกใช้ → **C4 ต่ำ**\n- ปัจจัยเสี่ยง: **รับเลือดก่อน พ.ศ. 2535** → ส่ง **anti-HCV แล้วยืนยันด้วย HCV RNA** · รักษาด้วย DAA ช่วยให้ vasculitis ดีขึ้น\n\n**ข้ออื่นผิด**\n- HAV, HEV: ติดทางปาก หายเอง ไม่ทำ cryoglobulinemia เรื้อรัง\n- ASO: post-streptococcal GN ไม่มี cryoglobulin และ RF บวกแบบนี้\n- Anti-HDV: ต้องมี HBsAg ก่อน และไม่ใช่สาเหตุของ mixed cryoglobulinemia",
+   "pearl": "Cryoglobulinemia / MPGN / C4 ต่ำ + รับเลือดก่อน 2535 → ตรวจ HCV",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Natural history of hepatitis C; HCV initial evaluation"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.3",
+    "2.1.50"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-30",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Steatotic liver disease – MetALD",
+   "stem": "A 50-year-old man has hepatic steatosis on ultrasound. He has type 2 diabetes and a BMI of 28 kg/m². He drinks four 330-mL cans of 5% beer every day. Viral, autoimmune and metabolic screens for other liver diseases are negative. How should his liver disease be classified under the 2023 nomenclature?",
+   "choices": [
+    "MASLD, because alcohol intake is irrelevant once metabolic risk factors are present",
+    "MASH",
+    "Cryptogenic steatotic liver disease",
+    "Non-alcoholic fatty liver disease (NAFLD)",
+    "MetALD (MASLD with increased alcohol intake)"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Nomenclature consensus (multi-society Delphi, Hepatology 2023)\n- **MASLD = ไขมันพอกตับ + ปัจจัยเมตาบอลิก ≥ 1 ข้อ** (รายนี้ BMI ≥ 23 และเบาหวาน)\n- แต่ต้องถาม **alcohol consumption: ≥ 210 / 140 ก./สัปดาห์ (ชาย/หญิง)** → ถ้าดื่มถึงระดับนี้ร่วมด้วย = **MetALD** (หรือ ALD ถ้าดื่มมากเป็นหลัก — เกณฑ์ Delphi: MetALD ชาย 210–420 ก./สัปดาห์)\n- คำนวณ: 330 มล. × 4 × 0.05 × 0.79 ≈ **52 ก./วัน ≈ 365 ก./สัปดาห์** → อยู่ในช่วง MetALD\n- ต้องดูแลทั้งสองด้าน: ลดเหล้าและแก้ปัจจัยเมตาบอลิก\n\n**ข้ออื่นผิด**\n- MASLD เฉย ๆ: ใช้ได้เมื่อดื่มน้อยกว่า 210 ก./สัปดาห์ในชาย\n- MASH: ต้องมีการอักเสบ/ballooning จากชิ้นเนื้อ ไม่ใช่วินิจฉัยจากอัลตราซาวนด์\n- Cryptogenic: ใช้เมื่อไม่มีปัจจัยเมตาบอลิกและไม่มีสาเหตุอื่น\n- NAFLD: ชื่อเดิมที่ถูกแทนแล้ว และ \"non-alcoholic\" ไม่เข้ากับคนดื่ม 52 ก./วัน",
+   "pearl": "ไขมันพอก + metabolic + ดื่ม ≥ 210 (ชาย) / 140 (หญิง) ก./สัปดาห์ = MetALD",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Steatotic liver disease: nomenclature consensus; Diagnosis of MASLD"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-31",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "MASLD/MASH with type 2 diabetes – drug choice",
+   "stem": "A 54-year-old man with type 2 diabetes on metformin (HbA1c 8.1%), BMI 33 kg/m² and hypertension has biopsy-proven MASH with F2 fibrosis. He has tried diet and exercise. Which additional drug best addresses his glycaemia, weight, liver disease and cardiovascular risk together?",
+   "choices": [
+    "Pioglitazone",
+    "Vitamin E 800 IU/day",
+    "Semaglutide",
+    "Glipizide",
+    "Insulin glargine"
+   ],
+   "answer": 2,
+   "explain": "สไลด์/EASL–EASD–EASO 2024: ยาที่กล่าวถึงใน MASLD/MASH คือ **semaglutide · pioglitazone · vitamin E (natural) 400–800 IU/วัน** และ **semaglutide ได้รับ FDA (ส.ค. 2025) สำหรับ MASH F2–F3** (resmetirom ก็ได้ใน มี.ค. 2024)\n- **Semaglutide (GLP-1 RA)** ลดน้ำหนักได้มาก → FFA เข้าตับลด → ไขมัน การอักเสบ และพังผืดถอย · คุมน้ำตาลดี · **ลด cardiovascular events** ซึ่งสำคัญมากเพราะ **สาเหตุตายอันดับหนึ่งของ MASLD คือโรคหัวใจและหลอดเลือด**\n- เป้าลดน้ำหนัก: ≥ 7% MASH หาย · ≥ 10% พังผืดถอย\n\n**ข้ออื่นผิด**\n- Pioglitazone: ช่วยทั้ง MASH และน้ำตาล แต่ **น้ำหนักเพิ่ม** บวมน้ำ — ไม่ครบทุกเป้าหมายในคนอ้วน BMI 33\n- Vitamin E: ใช้ใน **ผู้ไม่เป็นเบาหวาน** ไม่ช่วยน้ำตาลหรือน้ำหนัก\n- Glipizide/insulin: คุมน้ำตาลได้แต่ **น้ำหนักเพิ่ม** และไม่ช่วยตับหรือหัวใจ",
+   "pearl": "MASH + DM + อ้วน → semaglutide (น้ำตาล น้ำหนัก ตับ หัวใจ) · vitamin E ใช้ในคนไม่เป็น DM",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Treatment recommendations for MASLD/MASH",
+    "EASL–EASD–EASO CPG on MASLD (2024); FDA approvals 2024–2025"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4"
+   ]
+  },
+  {
+   "id": "GI-HEP-MCQ-32",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "MASLD – non-invasive tests suggesting cirrhosis",
+   "stem": "A 63-year-old woman with MASLD and type 2 diabetes has AST 52 U/L, ALT 40 U/L and platelets 140,000/mm³, giving a FIB-4 of 3.7. Fibroscan shows liver stiffness 17 kPa with a valid measurement, CAP 305 dB/m. She feels well. What is the most appropriate next step in her liver care?",
+   "choices": [
+    "Reassure her and repeat FIB-4 in 3 years",
+    "Manage as probable cirrhosis, including HCC surveillance with ultrasound and AFP every 6 months",
+    "Start resmetirom, which is approved for MASH with cirrhosis",
+    "Ignore the result because FIB-4 is inaccurate in patients older than 60",
+    "No further action, because CAP shows only steatosis"
+   ],
+   "answer": 1,
+   "explain": "แปลผลตามสไลด์ Common non-invasive tests\n| | ≥ F2 | ตับแข็ง (F4) | รายนี้ |\n|---|---|---|---|\n| **FIB-4** | 1.3–1.45 | **2.67–3.25** | **3.7** |\n| **Fibroscan** | 7–8 kPa | **12–15 kPa** | **17** |\n→ ทั้งสองค่าเกินจุดตัดของตับแข็ง (อายุ 63 ยังอยู่ในช่วงที่ FIB-4 แม่น 35–65 ปี) → **ถือเป็น probable cirrhosis**\n- สไลด์ MASLD: **ตับแข็ง → เฝ้าระวังมะเร็งตับด้วย US + AFP ทุก 6 เดือน** (ร่วมกับประเมิน portal hypertension) และยังต้องแก้ปัจจัยเมตาบอลิก\n\n**ข้ออื่นผิด**\n- ติดตาม 3 ปี: ใช้กับ FIB-4 < 1.3 (ความเสี่ยงต่ำ)\n- Resmetirom: ได้รับอนุมัติสำหรับ **MASH F2–F3 ที่ยังไม่มีตับแข็ง**\n- FIB-4 แม่นน้อยลงเมื่อ **อายุ < 35 หรือ > 65 ปี** — 63 ปียังใช้ได้ และ Fibroscan ยืนยันแล้ว\n- CAP 305 บอกไขมัน แต่ **liver stiffness** เป็นตัวบอกพังผืด ซึ่งสูงมาก",
+   "pearl": "FIB-4 > 2.67–3.25 หรือ Fibroscan ≥ 12–15 kPa → คิดตับแข็ง → US + AFP ทุก 6 เดือน",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Common non-invasive tests for liver fibrosis; MASLD treatment"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4",
+    "2.3.2"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "GI-HEP-MEQ-01",
+   "part": "MEQ",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic ALT elevation – work-up, chronic hepatitis C with steatosis, DAA therapy",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 51 ปี ครูประถม ส่งตัวมาเพราะ ALT สูงจากการตรวจสุขภาพประจำปี 2 ครั้งห่างกัน 8 เดือน\nPI: ไม่มีอาการ ไม่เคยตาเหลือง อ่อนเพลียเล็กน้อย\nประวัติ: ตกเลือดหลังคลอดและได้รับเลือด 3 ยูนิตเมื่อ พ.ศ. 2530 · ดื่มเบียร์ 1–2 กระป๋องเฉพาะงานเลี้ยงเดือนละครั้ง · ไม่ได้กินสมุนไพร · กิน omeprazole 20 มก. วันละครั้งมา 2 ปีเพราะแสบท้องเป็นครั้งคราว · ไม่มีประวัติโรคตับในครอบครัว\nPE: BMI 26.4 กก./ตร.ม. รอบเอว 86 ซม. BP 128/80 · ไม่เหลือง ไม่มี spider naevi ไม่มี palmar erythema · ตับม้ามคลำไม่ได้ ไม่มีท้องมาน\nLab: AST 66 · ALT 78 U/L · ALP 92 · TB 0.8 mg/dL · albumin 4.1 · INR 1.0 · platelets 160,000/mm³\nFBS 104 mg/dL · TG 168 · HDL 52\nHBsAg negative · anti-HCV positive",
+   "questions": [
+    {
+     "q": "1. ผู้ป่วยมี ALT สูงเรื้อรัง จงบอกขั้นตอนการหาสาเหตุ และการตรวจชุดแรกที่ควรส่งพร้อมเกณฑ์ที่ใช้ตัดโรค (3 คะแนน)",
+     "a": "- นิยาม: **ALT สูง ≥ 3–6 เดือน** (รายนี้ 8 เดือน) → ซักประวัติ **ยา สมุนไพร เหล้า ประวัติครอบครัว โรคร่วม** + ตรวจร่างกาย\n- ตรวจชุดแรก (สไลด์)\n| ตรวจ | ตัดโรคเมื่อ |\n|---|---|\n| **HBsAg, anti-HCV** | หาไวรัส B, C |\n| **US + BMI รอบเอว FBS ไขมัน** | หา MASLD |\n| **ANA, ASMA** | ลบทั้งคู่ → ตัด AIH ได้ ~90% |\n| **Ceruloplasmin, urine Cu 24 ชม., KF ring** | ≥ 20 มก./ดล. + ≤ 40 µg + ไม่มี KF → ตัด Wilson |\n| **Iron study** (บางราย) | TSAT < 45% + ferritin ปกติ → ตัด hemochromatosis |\n- ยังไม่พบสาเหตุ → โรคหายาก, CT/MRI-MRCP, ตัดชิ้นเนื้อตับ"
+    },
+    {
+     "q": "2. anti-HCV บวก แปลผลอย่างไร และต้องตรวจอะไรต่อ ถ้าผลเป็นลบจะทำอย่างไร (2 คะแนน)",
+     "a": "- **anti-HCV บอกเพียงว่าเคยติดเชื้อ** (< 20% หายเอง แต่แอนติบอดียังอยู่ หรืออาจเป็นผลบวกลวง)\n- ต้องตรวจ **HCV RNA (sensitive < 15 IU/mL) หรือ HCV core antigen**\n  - **บวก** → ติดเชื้ออยู่: วัดปริมาณ HCV RNA, genotype, ประเมินระยะพังผืด และโรคร่วม\n  - **ลบ** → หายเองแล้วหรือผลบวกลวง → **ตรวจ HCV RNA ซ้ำใน 3–6 เดือน**\n- ปัจจัยเสี่ยงรายนี้: **รับเลือดก่อน พ.ศ. 2535**"
+    },
+    {
+     "q": "3. ผล HCV RNA 1.8 × 10⁶ IU/mL genotype 6 · Fibroscan liver stiffness 10.8 kPa (IQR/median 14%) · CAP 292 dB/m · จงคำนวณ FIB-4 และแปลผลการประเมินพังผืดและไขมันทั้งหมด (3 คะแนน)",
+     "a": "- **FIB-4 = (อายุ × AST) / (เกล็ดเลือด [10⁹/L] × √ALT) = (51 × 66) / (160 × √78) = 3,366 / (160 × 8.83) ≈ 2.4**\n  → สูงกว่าจุดตัด ≥ F2 (1.3–1.45) แต่ต่ำกว่าจุดตัดตับแข็ง (2.67–3.25)\n- **Liver stiffness 10.8 kPa**: ≥ 8 → **significant fibrosis (≥ F2) น่าจะมี** · < 12 → ยังไม่น่าจะถึง F3 · ไม่ถึงช่วงตับแข็ง (12–15) · IQR/median 14% (< 30%) ผลเชื่อถือได้\n- **CAP 292 dB/m** (≥ 250–288) → **มีไขมันพอกตับ** · ยังไม่ถึง ≥ 340 (S3)\n- สรุป: **chronic hepatitis C ที่มีพังผืดระดับ ≥ F2 ร่วมกับไขมันพอกตับ** (มีปัจจัยเมตาบอลิก BMI ≥ 23, FBS ≥ 100, TG ≥ 150 → MASLD ร่วม)"
+    },
+    {
+     "q": "4. จงวางแผนการรักษา HCV ระบุยา ขนาด ระยะเวลา ข้อควรระวังเฉพาะในผู้ป่วยรายนี้ และนิยามของการหายขาด (4 คะแนน)",
+     "a": "- **Sofosbuvir + velpatasvir 400/100 มก. วันละ 1 เม็ด นาน 12 สัปดาห์** — pangenotypic (ใช้ได้กับ genotype 6 ซึ่งพบบ่อยในไทย) อยู่ในบัญชียาหลักแห่งชาติ · หาย > 95%\n- **ข้อควรระวังเฉพาะราย**: กิน **omeprazole** → velpatasvir ต้องอาศัยกรดในการดูดซึม → **หยุด PPI ถ้าทำได้** (อาการแสบท้องเป็นครั้งคราวใช้ antacid ห่างจากยา หรือถ้าจำเป็นต้องใช้ PPI ให้ปรับตามแนวทาง) · ตรวจยาตีกันอื่น\n- ตรวจ **HBsAg ก่อนเริ่มยา** (ลบแล้ว) เพราะ DAA อาจทำให้ HBV กำเริบ\n- เน้น **กินยาสม่ำเสมอ** ผลข้างเคียงน้อย\n- **หายขาด = SVR12 = ตรวจไม่พบ HCV RNA ที่ 12 สัปดาห์หลังหยุดยา** · anti-HCV จะบวกตลอดไป ไม่ใช้ติดตาม"
+    },
+    {
+     "q": "5. ผู้ป่วยถามว่า \"เพื่อนเป็นไวรัสบีต้องกินยาตลอดชีวิต ทำไมไวรัสซีกินยาแค่ 3 เดือนแล้วหาย\" จงอธิบาย (2 คะแนน)",
+     "a": "- **HCV เป็น RNA virus แบ่งตัวใน cytoplasm ไม่มีแหล่งซ่อน (no reservoir)** → เมื่อยาหยุดการแบ่งตัวได้หมด เซลล์ที่ติดเชื้อถูกกำจัด ไวรัสก็หมดไปจริง\n- **HBV เก็บ cccDNA ในนิวเคลียส** (และบางส่วนแทรกใน genome) — ยา NA หยุดการสร้างไวรัสใหม่ได้ แต่ไม่กำจัด cccDNA จึงหายขาดเพียง 1–3%\n- (HIV มี proviral DNA แทรกใน host genome จึงไม่หายขาดเช่นกัน)"
+    },
+    {
+     "q": "6. หลังได้ SVR12 แล้ว จะติดตามและแนะนำผู้ป่วยรายนี้อย่างไรต่อ (3 คะแนน)",
+     "a": "- **ไขมันพอกตับ/MASLD ยังอยู่** → ปรับวิถีชีวิตทุกราย: อาหารแบบ Mediterranean ออกกำลังกาย **ลดน้ำหนัก ≥ 7–10%** (≥ 7% MASH หาย · ≥ 10% พังผืดถอย) · ดูแลน้ำตาล ไขมัน ความดัน (สาเหตุตายอันดับหนึ่งของ MASLD คือโรคหัวใจและหลอดเลือด)\n- ลดหรืองดเหล้า\n- **ประเมินพังผืดซ้ำ** (Fibroscan) หลังหาย · สไลด์: **ถ้ามีพังผืดมาก (advanced fibrosis) ก่อนรักษา → เฝ้าระวังมะเร็งตับตลอดชีวิตด้วย US + AFP** — รายนี้น่าจะ F2 ยังไม่ advanced จึงไม่จำเป็นต้องเฝ้าระวัง HCC แบบตับแข็ง แต่ต้องประเมินซ้ำ\n- การติดเชื้อซ้ำเกิดได้ (ไม่มีภูมิคุ้มกันถาวร) → เลี่ยงการใช้ของมีคมร่วม"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Approach to chronic hepatitis; Transient elastography; Chronic hepatitis C; MASLD",
+    "AASLD–IDSA HCV Guidance"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.4"
+   ]
+  },
+  {
+   "id": "GI-HEP-MEQ-02",
+   "part": "MEQ",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "Chronic hepatitis B – treatment indication, counselling, HCC surveillance and family screening",
+   "vignette": "ผู้ป่วยชายไทยอายุ 44 ปี พนักงานบริษัท พบ HBsAg บวกจากการบริจาคเลือด จึงมาตรวจต่อ\nPI: ไม่มีอาการ ไม่เคยตาเหลือง\nประวัติ: มารดาเป็นพาหะไวรัสตับอักเสบบี · **พี่ชายเสียชีวิตจากมะเร็งตับเมื่ออายุ 50 ปี** · ดื่มเหล้าสังสรรค์เดือนละ 1–2 ครั้ง · ไม่สูบบุหรี่ · แต่งงานแล้ว ภรรยาอายุ 40 ปี มีบุตร 2 คนอายุ 12 และ 9 ปี\nPE: BMI 22.5 · ไม่เหลือง ไม่มี stigmata of chronic liver disease · ตับม้ามคลำไม่ได้\nLab (ตรวจ 2 ครั้งห่างกัน 3 เดือน): ALT 58 และ 62 U/L · AST 44 · TB 0.9 · albumin 4.3 · INR 1.0 · platelets 190,000/mm³ · Cr 0.9\nHBsAg positive · HBeAg negative · anti-HBe positive · HBV DNA 15,600 IU/mL · anti-HCV negative · anti-HIV negative\nUS: เนื้อตับหยาบเล็กน้อย ผิวเรียบ ไม่มีก้อน ม้ามขนาดปกติ · AFP 4 ng/mL · Fibroscan 7.8 kPa (valid)",
+   "questions": [
+    {
+     "q": "1. จงบอกการวินิจฉัย พร้อมเหตุผลจากผลเลือด (2 คะแนน)",
+     "a": "**HBeAg-negative chronic hepatitis B (active)**\n- **HBsAg บวกนานกว่า 6 เดือน** (มารดาเป็นพาหะ → น่าจะติดตั้งแต่แรกคลอด ซึ่งเรื้อรัง > 90%)\n- HBeAg ลบ anti-HBe บวก แต่ **HBV DNA > 2,000** และ **ALT สูงต่อเนื่อง** → ไม่ใช่ inactive carrier · anti-HBe บวกไม่ได้แปลว่าไวรัสแบ่งตัวน้อยเสมอ (precore/core-promoter mutant)"
+    },
+    {
+     "q": "2. ผู้ป่วยเข้าเกณฑ์ให้ยาต้านไวรัสหรือไม่ จงอธิบายตามเกณฑ์ในสไลด์และแนวทาง WHO 2024 (4 คะแนน)",
+     "a": "**เข้าเกณฑ์ให้ยา**\n- สไลด์: **HBV DNA > 2,000 IU/mL** (15,600) **ร่วมกับ** อย่างใดอย่างหนึ่ง\n  - **ALT > 1.5 × ULN นาน ≥ 3 เดือน** — ULN ใหม่ชาย 35 → 1.5 × 35 = 52.5 · ALT 58, 62 ห่างกัน 3 เดือน → **เข้า**\n  - **Fibroscan > 7.0 kPa** → 7.8 → **เข้า**\n- **WHO 2024**: HBV DNA ≥ 2,000 + ALT > ULN → เข้า · และ **ประวัติครอบครัวมะเร็งตับ** เป็นข้อบ่งชี้เพิ่มเติม\n- อายุ > 35 ปี เสี่ยงตับเสียมากขึ้น"
+    },
+    {
+     "q": "3. จงเลือกยา บอกวิธีใช้ และให้คำแนะนำสำคัญแก่ผู้ป่วยเกี่ยวกับเป้าหมายและระยะเวลาการรักษา (4 คะแนน)",
+     "a": "- **Tenofovir alafenamide (TAF) 25 มก. 1 เม็ดหลังอาหาร วันละครั้ง** — first-line ในบัญชียาหลักแห่งชาติ ผลข้างเคียงน้อย · ติดตามการทำงานของไตและมวลกระดูกในกลุ่มเสี่ยง\n- คำแนะนำ (สไลด์ HBV: general advice)\n  - **คุมไวรัสได้ทุกราย แต่หายขาดเพียง 1–3%** เพราะ cccDNA ยังอยู่ในนิวเคลียส\n  - **HBeAg ลบ → มักต้องกินยาตลอดชีวิต**\n  - **กินยาสม่ำเสมอ มาตามนัด ห้ามหยุดยาเอง** — หยุดยาอาจเกิด flare รุนแรงถึงตับวาย\n  - ยา **ลดความเสี่ยงมะเร็งตับแต่ไม่ได้ป้องกันทั้งหมด** → ยังต้องเฝ้าระวัง\n  - งดเหล้า เลี่ยงยา/สมุนไพรพิษตับ"
+    },
+    {
+     "q": "4. จะเฝ้าระวังมะเร็งตับในผู้ป่วยรายนี้อย่างไร และทำไมผู้ป่วย HBV จึงเป็นมะเร็งตับได้แม้ยังไม่มีตับแข็ง (3 คะแนน)",
+     "a": "- **อัลตราซาวนด์ + AFP ทุก 6–12 เดือน** (สไลด์) — รายนี้มีทั้ง **ชาย > 40 ปี** และ **ประวัติครอบครัวมะเร็งตับ** → ควรทำทุก 6 เดือน\n- กลไก: **HBV DNA แทรกเข้าไปใน genome ของเซลล์ตับ** → กระตุ้น oncogene/ทำให้โครโมโซมไม่เสถียร · โปรตีน HBx รบกวน p53 · ร่วมกับการอักเสบซ้ำหลายสิบปี → **มะเร็งตับเกิดได้แม้ไม่มีตับแข็ง** (ต่างจากสาเหตุอื่นที่มักเกิดบนตับแข็ง)"
+    },
+    {
+     "q": "5. จะให้คำแนะนำภรรยาและบุตรอย่างไร (3 คะแนน)",
+     "a": "- **ภรรยา**: ตรวจ **HBsAg, anti-HBs, anti-HBc** · ถ้าไม่มีภูมิ (ทั้งหมดลบ) → **ฉีดวัคซีนตับอักเสบบี** · ใช้ถุงยางจนกว่าจะมีภูมิ (anti-HBs ≥ 10 IU/L)\n- **บุตร 12 และ 9 ปี**: เกิดหลัง พ.ศ. 2535 จึงควรได้วัคซีนตั้งแต่แรกเกิด แต่ยังควรตรวจ **HBsAg และ anti-HBs** — ถ้าไม่มีภูมิให้วัคซีนกระตุ้น\n- **พี่น้องคนอื่นของผู้ป่วย** (มารดาเป็นพาหะ, พี่ชายเป็นมะเร็งตับ) ควรตรวจ HBsAg ทุกคน\n- ในบ้าน: **ไม่ใช้มีดโกน แปรงสีฟัน กรรไกรตัดเล็บร่วมกัน** · ปิดแผล — ไวรัสอยู่นอกร่างกายได้ 5–7 วัน และมีมากใน **เลือด น้ำเหลือง แผล** · การกินข้าวร่วมกัน กอด จูบแก้ม ไม่ติด"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Chronic hepatitis B — epidemiology, transmission, treatment indications, general advice"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-HEP-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "G04",
+   "lecture": "Acute and chronic hepatitis (อ.เฉลิมรัฐ)",
+   "topic": "History taking in a patient with acute hepatitis",
+   "station": "OSCE ซักประวัติ (ผู้ป่วยจำลอง) 7 นาที + ตอบคำถามผู้สอบ 1 นาที",
+   "instruction": "ผู้ป่วยชายไทยอายุ 35 ปี มาด้วยตาเหลือง ปัสสาวะสีชาเข้ม 4 วัน ผลเลือดเบื้องต้น ALT 1,850 U/L, AST 1,320 U/L, total bilirubin 7.5 mg/dL\n**งานของนักศึกษา**: จงซักประวัติเพื่อ (1) หาสาเหตุของตับอักเสบเฉียบพลัน (2) ประเมินความรุนแรง และ (3) แยกภาวะที่ไม่ใช่ตับอักเสบ จากนั้นบอกผู้สอบว่าจะส่งตรวจอะไรต่อ\n\n**บทผู้ป่วยจำลอง (สำหรับผู้สอบ)** — ตอบเฉพาะเมื่อถูกถาม: 2 สัปดาห์ก่อนเป็นไข้ต่ำ ปวดเมื่อย เบื่ออาหาร คลื่นไส้ · ไข้หายไปพอตาเริ่มเหลือง · ปวดตื้อใต้ชายโครงขวา ไม่หนาวสั่น · อุจจาระสีปกติ ไม่คัน · กินพาราเซตามอล 500 มก. ครั้งละ 1 เม็ดวันละ 3 ครั้ง 3 วันช่วงมีไข้ · ไม่ได้กินสมุนไพร · ดื่มเบียร์วันเสาร์ 2–3 กระป๋อง · 6 สัปดาห์ก่อนไปเที่ยวทะเลกินหอยนางรมดิบ · มีคู่นอนใหม่เมื่อ 2 เดือนก่อน ใช้ถุงยางบ้างไม่ใช้บ้าง · ไม่เคยฉีดยาเสพติด ไม่มีรอยสัก · ไม่ทราบว่าเคยฉีดวัคซีนตับอักเสบหรือไม่ · ไม่สับสน นอนหลับปกติ ไม่มีเลือดออกผิดปกติ · ไม่มีโรคประจำตัว ไม่มีประวัติโรคตับหรือโรคทางระบบประสาทในครอบครัว",
+   "answer": "| หมวด | สิ่งที่ต้องถาม (ได้คะแนนเมื่อถามครบ) | คะแนน |\n|---|---|---|\n| **ลำดับอาการ** | อาการนำคล้ายไข้หวัด (ไข้ต่ำ อ่อนเพลีย เบื่ออาหาร คลื่นไส้) **ก่อนเหลือง** · ไข้หายเมื่อเหลืองหรือไม่ | 2 |\n| **แยก cholangitis/ทางเดินน้ำดีอุดตัน** | **ไข้สูงหนาวสั่น** · ปวดชายโครงขวามาก/ปวดบิด · อุจจาระซีด คัน | 2 |\n| **ปัจจัยเสี่ยงไวรัส A, E** | อาหาร/น้ำ เที่ยว **อาหารทะเลดิบ** · **เนื้อหมูไม่สุก** (HEV) · คนรอบตัวเป็นเหมือนกัน · MSM | 2 |\n| **ปัจจัยเสี่ยงไวรัส B, C, D** | **เพศสัมพันธ์/คู่นอนใหม่ ถุงยาง** · ยาเสพติดฉีด/สูด · สัก เจาะ · **รับเลือดก่อน 2535** · ฟอกไต · ถูกเข็มตำ · **ประวัติวัคซีนตับอักเสบบี** · มารดา/ครอบครัวเป็น HBV | 3 |\n| **ยาและสมุนไพร** | ยาทุกชนิดที่ใช้ใน **4 วัน–8 สัปดาห์** · **พาราเซตามอล: ขนาดต่อครั้ง ต่อวัน จำนวนวัน** · สมุนไพร อาหารเสริม ยาลดน้ำหนัก ยาวัณโรค ยากันชัก | 3 |\n| **แอลกอฮอล์** | ชนิด ปริมาณ ความถี่ → **คำนวณเป็นกรัม/วัน หรือ standard drinks/สัปดาห์** · binge | 2 |\n| **สาเหตุที่พบน้อย** | ช็อก/ความดันต่ำ/โรคหัวใจ (ischemic) · โรคภูมิคุ้มกันอื่น (AIH) · อาการทางสมอง/จิตเวช ประวัติครอบครัวโรคตับ (Wilson) · ไข้ ปวดน่อง ลุยน้ำ (leptospirosis) | 2 |\n| **ความรุนแรง/ตับวาย** | **สับสน ง่วงซึม นอนกลับวันกลับคืน** (encephalopathy) · เลือดออกง่าย · ท้องโต บวม | 2 |\n| **สรุปและแผนตรวจ** (บอกผู้สอบ) | สงสัย acute viral hepatitis — เป็นไปได้ทั้ง **HAV** (หอยดิบ ~4 สัปดาห์ก่อนเริ่มอาการนำ เข้ากับระยะฟักตัว 2–4 สัปดาห์) และ **HBV** (คู่นอนใหม่ ~6 สัปดาห์ก่อนเริ่มอาการ ระยะฟักตัว 4–24 สัปดาห์) → ส่ง **anti-HAV IgM, HBsAg + anti-HBc IgM**, anti-HCV (± HCV RNA), anti-HEV IgM ถ้าลบ · **PT/INR** · glucose · anti-HIV/STI · พาราเซตามอลขนาดนี้ (1.5 ก./วัน) ไม่ใช่สาเหตุ | 2 |\n| **ทักษะการสื่อสาร** | แนะนำตัว ใช้คำถามปลายเปิด ถามเรื่องเพศ/ยาเสพติดอย่างไม่ตัดสิน สรุปให้ผู้ป่วยฟัง | 2 |\n| | **รวม** | **22** |\n\n**ผ่าน ≥ 14/22** · ข้อบังคับ (critical items) ถ้าพลาดข้อใดข้อหนึ่งถือว่าไม่ผ่าน: **ถามยา/พาราเซตามอลและสมุนไพร** · **ถามปัจจัยเสี่ยงทางเพศ/เลือด** · **ถามอาการซึมสับสน (encephalopathy)**\n\n**คำถามผู้สอบ**: \"ถ้า INR 1.8 แต่ผู้ป่วยรู้สึกตัวดี ถือว่าเป็น acute liver failure หรือไม่\" → **ยังไม่ใช่** = severe acute liver injury · ALF ต้องมี **encephalopathy + INR ≥ 1.5** · ถ้าเป็น acute HBV ที่ INR > 1.5 ควรพิจารณายาต้านไวรัส และเฝ้าระวังความรู้สึกตัวใกล้ชิด",
+   "ref": [
+    "สไลด์ อ.เฉลิมรัฐ — Approach to acute hepatitis; Viral hepatitis A to E; Alcohol contents; DILI"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.3.11",
+    "2.3.19(2)",
+    "2.1.1"
+   ]
+  }
+ ]
+}

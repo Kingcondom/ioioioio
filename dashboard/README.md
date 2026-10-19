@@ -98,16 +98,19 @@ engine เดียวกับ learn จึงใช้แพตช์ชุด
 
 ## กลไกโรคแบบภาพเคลื่อนไหว + หลักจำ (MED421 learn)
 
-ทุกคาบใน learn มีภาพเคลื่อนไหวกลไก 2–4 ภาพและหลักจำ 3–7 อัน (รวม 107 ภาพ · 140 หลักจำ · 19 ต.ค.)
+ทุกคาบใน learn มีภาพเคลื่อนไหวกลไก 2–4 ภาพและหลักจำ 3–7 อัน (รวม 111 ภาพ · 145 หลักจำ · 19 ต.ค. รวมคาบ 36 ECG ใน `learn_anim/cardio-ecg.json`)
 - ต้นฉบับอยู่ใน `learn_anim/<ชุด>.json` · ข้อกำหนดรูปแบบ/กติกา SVG ใน `learn_anim/SPEC.md`
 - section ใน data มี `anims` (+ `[[anim:key]]` ใน md) และ `mnem` · ตัวเล่นเล่นเองเมื่อเลื่อนมาเห็น มีปุ่มทีละขั้น ไม่เล่นเองถ้าเครื่องตั้งลดการเคลื่อนไหว
 - ตรวจ/ดูตัวอย่าง: `python3 anim_tool.py check <data> learn_anim/<ชุด>.json` · `python3 anim_tool.py preview <data> <learn index.html> learn_anim/<ชุด>.json <out> [port]`
 - ใส่ลงหน้า learn (ทำหลังแพตช์อื่น): `python3 patch_learn_anim.py page <index.html> <out.html>` และ `python3 patch_learn_anim.py data <data dir> learn_anim <data ออก>`
   (ถ้า data ใน learn ถูกสร้างใหม่ ให้รัน data ซ้ำจากไฟล์ใน learn_anim — section id และหัวข้อ `after` ต้องยังมีอยู่ check จะบอก)
 
-## MED421 Ward Drill บันทึกคำตอบในบัญชี (รอผู้ใช้อนุมัติ publish)
+## MED421 Ward Drill: ชุดข้อสอบรายคาบ
 
-`patch_drill_sync.py <drill index.html> <out>` แล้ว publish พร้อม capabilities `{db:{}, user:{}}` · เอกสาร `data/users/<id>/drill` = {answers, shown} · กติการวมเหมือน learn
+- บันทึกคำตอบในบัญชี: อีก session ใส่ไว้แล้ว (19 ต.ค.) · `patch_drill_sync.py` เก็บไว้เป็นทางสำรอง
+- ชุดรายคาบจากสไลด์ (19 ต.ค.): `drill_sets/<lec>.json` — E06 Thyroid · I04 Sepsis · N03 Epilepsy · 17 Resp failure/Pleura (ต่อท้าย) · G04 Hepatitis · G05 Abdominal pain · G06 LFT · O02 General oncology (~30 MCQ + MEQ/OSCE ต่อคาบ · ข้อกำหนดใน `drill_sets/SPEC.md`)
+- ตรวจ: `python3 drill_tool.py check <drill index.html> drill_sets/<lec>.json` · รวม: `python3 drill_tool.py merge <drill index.html> drill_sets <out.html>` (เพิ่มเข้า BANK + LEC)
+- ปุ่ม Drill ใน dashboard (`drill:[hash, MCQ, MEQ+OSCE, คลังเก่า, 1=ชุดรวม]`) ชี้ชุดรายคาบแล้ว · คลังเก่าที่ใช้ร่วมหลายคาบหารเฉลี่ยไว้ให้น้ำหนักเท่าเดิม
 
 ## แก้ข้อมูล
 

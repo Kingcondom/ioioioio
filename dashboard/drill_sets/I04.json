@@ -1,0 +1,920 @@
+{
+ "set": "infect",
+ "lec": "I04",
+ "d": "ศ. 25 ก.ย.",
+ "w": 2,
+ "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+ "mcq": [
+  {
+   "id": "ID-SEP-MCQ-01",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Sepsis-3 definitions",
+   "stem": "A 66-year-old woman with pyelonephritis remains hypotensive after 30 mL/kg of balanced crystalloid and requires norepinephrine to keep MAP at 65 mmHg. Lactate is 3.8 mmol/L. How should this be classified?",
+   "choices": [
+    "Sepsis without shock",
+    "Bacteraemia without sepsis",
+    "SIRS only",
+    "Severe sepsis",
+    "Septic shock"
+   ],
+   "answer": 4,
+   "explain": "**Septic shock (Sepsis-3)** ต้องครบ 3 ข้อ: เป็น sepsis + **ต้องใช้ vasopressor เพื่อให้ MAP ≥ 65 mmHg** + **lactate > 2 mmol/L** **ทั้งที่ให้สารน้ำเพียงพอแล้ว** — ผู้ป่วยได้ 30 mL/kg แล้วยังต้องใช้ norepinephrine และ lactate 3.8 จึงเข้าครบ อัตราตายเกิน 40%\n\nกลไก: NO ทำหลอดเลือดขยาย (ท่อขยาย) + glycocalyx หลุด (ท่อรั่ว) จนน้ำอย่างเดียวพยุงความดันไม่ได้ ร่วมกับเซลล์ใช้ O₂ ไม่ได้ (lactate สูง)\n\n- **Sepsis without shock** — ผิด เพราะต้องใช้ vasopressor และ lactate > 2 แล้ว\n- **Bacteraemia without sepsis** — bacteremia คือมีเชื้อในเลือด ไม่ได้บอกอวัยวะล้มเหลว รายนี้ความดันล้มเหลวชัด\n- **SIRS only** — SIRS เป็นตะแกรงคัดกรอง ไม่ใช่นิยามโรค\n- **Severe sepsis** — คำนี้ **ถูกยกเลิก** ตั้งแต่ Sepsis-3 (2016)",
+   "pearl": "Septic shock = vasopressor ให้ MAP ≥ 65 + lactate > 2 หลังให้น้ำพอ",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — นิยาม Sepsis-3 (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Singer M et al. Sepsis-3. JAMA 2016;315:801",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026)"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.2.7",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-02",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Sepsis screening",
+   "stem": "A hospital wants a bedside tool for nurses to screen ward patients for possible sepsis. According to the Surviving Sepsis Campaign 2026, which approach is recommended?",
+   "choices": [
+    "Serum procalcitonin on every febrile patient",
+    "qSOFA alone",
+    "NEWS/NEWS2, MEWS or SIRS rather than qSOFA",
+    "Lactate on every patient with a fever",
+    "Blood cultures before any screening"
+   ],
+   "answer": 2,
+   "explain": "SSC 2026 แนะนำคัดกรองผู้ป่วยที่อาจเป็น sepsis ด้วย **NEWS/NEWS2, MEWS หรือ SIRS** และ **ไม่ใช้ qSOFA เป็นเครื่องมือคัดกรองเดี่ยว** เพราะ qSOFA (RR ≥ 22, สับสน, SBP ≤ 100) **ไวต่ำ** — ผู้ป่วย sepsis จำนวนมากมี qSOFA < 2 ในช่วงแรก qSOFA เหมาะกับการบอกความเสี่ยงตายมากกว่าเป็นตะแกรง · คัดกรองบวกแล้วให้แพทย์ประเมินทันที (sepsis huddle)\n\n- **qSOFA alone** — ไวไม่พอ หลุดผู้ป่วยระยะแรก\n- **Procalcitonin ทุกรายที่มีไข้** — ไม่มี biomarker ตัวเดียวยืนยันหรือตัด sepsis ได้ และ PCT ขึ้นช้าหลายชั่วโมง\n- **Lactate ทุกรายที่มีไข้** — lactate เป็นส่วนของการประเมินความรุนแรงหลังสงสัย ไม่ใช่เครื่องมือคัดกรองข้างเตียงของพยาบาล\n- **Blood culture ก่อนคัดกรอง** — ผลออก 24–72 ชม. ใช้คัดกรองไม่ได้ และเพาะเชื้อทุกคนสิ้นเปลือง",
+   "pearl": "คัดกรอง sepsis = NEWS/MEWS/SIRS · qSOFA ไม่ใช่ตะแกรง",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — คัดกรอง sepsis (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – screening"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.1.1"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-03",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Pathophysiology of septic shock",
+   "stem": "In early septic shock, a patient has warm extremities, bounding pulses and a wide pulse pressure despite hypotension. Which mediator is chiefly responsible for the vasodilation?",
+   "choices": [
+    "Antidiuretic hormone excess",
+    "Nitric oxide produced by inducible nitric oxide synthase",
+    "Thromboxane A2",
+    "Angiotensin II",
+    "Endothelin-1 from damaged endothelium"
+   ],
+   "answer": 1,
+   "explain": "ใน septic shock ระยะแรก cytokine (TNF-α, IL-1) กระตุ้น **inducible nitric oxide synthase (iNOS)** ใน endothelium กล้ามเนื้อเรียบหลอดเลือด และ macrophage → สร้าง **NO ปริมาณมาก** → เพิ่ม cGMP กล้ามเนื้อเรียบคลาย และเปิด K-ATP channel ทำให้หลอดเลือดตอบสนองต่อ catecholamine น้อยลง → **SVR ต่ำมาก** = distributive (warm) shock: มือเท้าอุ่น ชีพจรแรง pulse pressure กว้าง หัวใจชดเชยด้วย CO สูง\n\n- **ADH excess** — ตรงข้าม: septic shock มี **vasopressin ต่ำเกินสัมพัทธ์** (จึงเติม vasopressin เป็นยาตัวที่สอง) และ ADH หดหลอดเลือด\n- **Thromboxane A2** — หดหลอดเลือดและกระตุ้นเกล็ดเลือด\n- **Angiotensin II** — หดหลอดเลือด เป็นกลไกชดเชย\n- **Endothelin-1** — หดหลอดเลือด ไม่ได้ทำให้ขยาย",
+   "pearl": "Septic vasodilation = iNOS → NO → SVR ต่ำ (warm shock)",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — กลไก: ท่อขยาย (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Harrison's 21e – Sepsis and septic shock"
+   ],
+   "nl": [
+    "2.2.48",
+    "B7.2.5(4)",
+    "2.2.7"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-04",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Lactate in sepsis",
+   "stem": "A septic patient on norepinephrine has a normal cardiac output and adequate oxygen saturation, yet lactate remains 4 mmol/L. Which statement about lactate in sepsis is correct?",
+   "choices": [
+    "Lactate should be measured once only",
+    "Lactate is raised only in liver failure",
+    "Lactate can be raised by β2-adrenergic stimulation of glycolysis and mitochondrial dysfunction; follow its trend rather than chasing a normal value",
+    "Raised lactate always proves tissue hypoxia, so more fluid must be given until it normalises",
+    "Lactate has no prognostic value in sepsis"
+   ],
+   "answer": 2,
+   "explain": "Lactate ใน sepsis สูงได้ **หลายกลไก** ไม่ใช่แค่ขาด O₂: ① hypoperfusion จริง ② **mitochondria เสียหาย** ใช้ O₂ ไม่ได้แม้ส่งถึง ③ **adrenaline/NE กระตุ้น β2 เร่ง glycolysis** จน pyruvate ล้น ④ ตับได้เลือดน้อยจึงกำจัด lactate ช้า — รายนี้ CO และ SpO₂ ดี แต่ lactate ยังสูงจึงอธิบายด้วยกลไก ②–④\n\nดังนั้นใช้ **แนวโน้มที่ลดลง** ร่วมกับ CRT, ปัสสาวะ และ dynamic measures · SSC แนะนำ **วัดซ้ำ** เพื่อนำการกู้ชีพ\n\n- **วัดครั้งเดียว** — ต้องวัดซ้ำดูแนวโน้ม\n- **สูงเฉพาะตับวาย** — ตับวายทำให้กำจัดช้าเป็นเพียงกลไกหนึ่ง\n- **สูง = ขาด O₂ เสมอ ให้น้ำจนปกติ** — เสี่ยงน้ำเกิน ปอดบวมน้ำ โดยไม่แก้กลไกที่ไม่ใช่การขาด O₂\n- **ไม่มีค่าพยากรณ์** — ผิด lactate > 2 อยู่ในนิยาม septic shock และสัมพันธ์กับการตาย",
+   "pearl": "Lactate สูง ≠ ขาด O₂ เสมอ — ดูแนวโน้ม อย่าให้น้ำไล่",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — กลไก: โรงงานดับ และ lactate (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – serial lactate"
+   ],
+   "nl": [
+    "2.2.48",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-05",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Antimicrobial timing by sepsis certainty",
+   "stem": "An 84-year-old nursing-home resident has 1 day of new confusion and a temperature of 37.9 °C. There is no obvious source. BP 124/66 mmHg, lactate 2.3 mmol/L. Dehydration, stroke and hyponatraemia are also being considered. According to SSC 2026, what is the most appropriate antimicrobial strategy?",
+   "choices": [
+    "Withhold antibiotics for 48 hours",
+    "Give broad-spectrum antibiotics within 1 hour",
+    "Start antifungal therapy",
+    "Wait for procalcitonin before deciding",
+    "Take blood cultures and perform rapid, time-limited investigations; if infection is still suspected, start antimicrobials within 3 hours"
+   ],
+   "answer": 4,
+   "explain": "ผู้ป่วยสูงอายุสับสนเฉียบพลัน ไข้ต่ำ ๆ ไม่มีแหล่งชัด และมีโรคอื่นที่เป็นไปได้พอกัน (ขาดน้ำ stroke Na ต่ำ) = **possible sepsis** · BP ปกติ = **ไม่มีช็อก**\n\nตามนาฬิกา **1 · 1 · 3 · รอ** ของ SSC 2026: possible ไม่ช็อก → **เพาะเชื้อ + สืบค้นเร็วแบบจำกัดเวลา** (UA, CXR, electrolyte, glucose, CT สมองถ้าจำเป็น) → **ถ้ายังสงสัยติดเชื้อ ให้ยาภายใน 3 ชม.** นับจากเริ่มสงสัย · ถ้าความดันตกระหว่างนั้น ย้ายไปแถวช็อก ให้ยาภายใน 1 ชม. · เหตุผล: ยากว้างกับทุกคนทันทีทำให้คนที่ไม่ได้ติดเชื้อได้ผลเสีย (C. difficile เชื้อดื้อยา แพ้ยา)\n\n- **ให้ยากว้างภายใน 1 ชม.** — สำหรับ probable/definite หรือมีช็อก\n- **งดยา 48 ชม.** — ช้าเกินถ้ายังสงสัยติดเชื้อ\n- **antifungal** — ไม่มีข้อบ่งชี้\n- **รอ PCT** — PCT ไม่ใช้ตัดสินใจเริ่มยา",
+   "pearl": "Possible + ไม่ช็อก → สืบค้นเร็ว → ยาภายใน 3 ชม.",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — สี่ระดับความมั่นใจและนาฬิกายาปฏิชีวนะ (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – timing of antimicrobials"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.1.1"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-06",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Sepsis mimics",
+   "stem": "A 45-year-old man with heavy alcohol use has severe epigastric pain radiating to the back after a party. Lipase is 12 times the upper limit, temperature 37.8 °C, WBC 14,500/µL, blood pressure normal. Which approach is most appropriate?",
+   "choices": [
+    "Give prophylactic antibiotics to prevent infected necrosis",
+    "Classify as unlikely sepsis (inflammation from acute pancreatitis); give fluids and analgesia, defer antibiotics and monitor closely",
+    "Give antibiotics within 3 hours as possible sepsis",
+    "Start empirical fluconazole",
+    "Start meropenem within 1 hour for probable sepsis"
+   ],
+   "answer": 1,
+   "explain": "ปวดลิ้นปี่ร้าวหลังหลังดื่มหนัก + **lipase > 3 เท่า** = **acute pancreatitis** · ไข้ต่ำ ๆ และ WBC สูงอธิบายได้ด้วย **SIRS จากการอักเสบที่ไม่ใช่การติดเชื้อ** (enzyme ทำลายเนื้อเยื่อ → DAMPs → cytokine) ไม่มีแหล่งติดเชื้อ = **unlikely sepsis** และ **ไม่มีช็อก** → SSC 2026 แนะนำ **ชะลอยาปฏิชีวนะ เฝ้าดูใกล้ชิด** รักษาโรคที่เป็นจริง (สารน้ำ ยาแก้ปวด)\n\n- **ยาป้องกัน infected necrosis** — ไม่แนะนำในตับอ่อนอักเสบ ไม่ลดการตาย เพิ่มเชื้อดื้อยาและเชื้อรา\n- **ยาภายใน 3 ชม. แบบ possible** — มีคำอธิบายอื่นชัดเจนกว่า จึงไม่ใช่ possible\n- **fluconazole** — ไม่มีข้อบ่งชี้\n- **meropenem ภายใน 1 ชม.** — ไม่ใช่ probable และไม่ช็อก\n\nถ้าต่อมาไข้สูงขึ้น อาการแย่ลงหลังสัปดาห์แรก หรือมีแก๊สใน necrosis → เลื่อนระดับเป็น probable",
+   "pearl": "Pancreatitis + SIRS ไม่ช็อก = unlikely sepsis → ชะลอยา",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — โรคเลียนแบบ sepsis (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – unlikely sepsis"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-07",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Blood cultures and antibiotic timing",
+   "stem": "A 60-year-old man with community-acquired pneumonia is hypotensive (BP 82/50 mmHg). The phlebotomist cannot obtain blood cultures after two attempts over 30 minutes. What should be done?",
+   "choices": [
+    "Wait for an arterial line to be placed",
+    "Give only fluids until cultures are obtained",
+    "Give the first dose of antibiotics now and continue attempts to obtain cultures",
+    "Send procalcitonin and decide after the result",
+    "Keep trying until two sets of blood cultures are obtained before giving antibiotics"
+   ],
+   "answer": 2,
+   "explain": "SSC: เก็บ blood culture อย่างน้อย 2 ชุด **ก่อนยา เมื่อทำได้โดยไม่ทำให้ยาช้าอย่างมีนัยสำคัญ** · ผู้ป่วยรายนี้ **ช็อก** (BP 82/50) → นาฬิกา **≤ 1 ชม.** และทุกชั่วโมงที่ช้าในช็อกเพิ่มการตายชัดเจน — 30 นาทีที่เสียไปแล้วจึง **ให้ยาเลย** แล้วพยายามเก็บเพาะเชื้อต่อ (เลือดอีกตำแหน่ง เสมหะ ปัสสาวะ) · ยาเพียงโดสเดียวลดโอกาสเพาะขึ้นบ้าง แต่ไม่คุ้มกับความเสี่ยงตาย\n\n- **รอจนได้เลือด 2 ชุด** — ทำให้ยาช้าเกิน 1 ชม.\n- **ให้แต่น้ำ** — น้ำไม่กำจัดเชื้อ\n- **รอใส่ arterial line** — ไม่จำเป็นต่อการให้ยา ยิ่งทำให้ช้า\n- **รอ PCT** — ไม่ใช้ตัดสินใจเริ่มยา และผลช้า",
+   "pearl": "ช็อก: อย่าให้การเก็บเพาะเชื้อทำให้ยาช้า",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ชั่วโมงแรก — เพาะเชื้อ (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – cultures before antimicrobials"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.2.7",
+    "3.3.9"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-08",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Interpreting blood cultures",
+   "stem": "A patient admitted for urinary sepsis grows coagulase-negative staphylococci in 1 of 2 blood culture sets after 48 hours. He has no intravascular catheter or prosthetic device and is improving on ceftriaxone. What is the most likely interpretation?",
+   "choices": [
+    "Probable skin contaminant; no anti-staphylococcal therapy is needed",
+    "Indication for transoesophageal echocardiography",
+    "Methicillin-resistant S. aureus bacteraemia",
+    "Treatment failure; switch to meropenem",
+    "Staphylococcal endocarditis; start vancomycin for 6 weeks"
+   ],
+   "answer": 0,
+   "explain": "**Coagulase-negative staphylococci (CoNS)** เป็นเชื้อประจำถิ่นผิวหนัง ขึ้น **เพียง 1 ใน 2 ชุด** ในผู้ป่วยที่ **ไม่มีสายสวนหลอดเลือดหรืออุปกรณ์เทียม** และอาการดีขึ้นกับยาที่รักษาแหล่งจริง (E. coli ทางเดินปัสสาวะ) = **ปนเปื้อนจากผิวหนังขณะเจาะ** มากที่สุด — นี่คือเหตุผลที่ต้องเก็บ **≥ 2 ชุดจากคนละตำแหน่ง**\n\nตรงข้าม: *S. aureus*, pneumococcus, gram-negative, *Candida* ขึ้นขวดเดียวก็ถือเป็นเชื้อจริงเสมอ\n\n- **TEE** — ใช้ใน S. aureus bacteremia หรือสงสัย endocarditis ไม่ใช่ CoNS ขวดเดียว\n- **MRSA bacteremia** — CoNS ไม่ใช่ S. aureus (coagulase บวก)\n- **รักษาล้มเหลว เปลี่ยน meropenem** — ผู้ป่วยดีขึ้น ไม่มีเหตุ escalate\n- **endocarditis ให้ vancomycin 6 สัปดาห์** — ไม่มีลิ้นเทียม ไม่มีหลักฐาน และให้ยาเกินจำเป็น",
+   "pearl": "CoNS 1 ใน 2 ชุด ไม่มีอุปกรณ์ = ปนเปื้อน · S. aureus ขวดเดียว = ของจริง",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — อ่านผลเพาะเชื้อเลือด (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "IDSA – blood culture interpretation",
+    "Harrison's 21e"
+   ],
+   "nl": [
+    "3.3.9",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-09",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Initial fluid resuscitation",
+   "stem": "A 70-kg woman with septic shock from cholangitis has received 1 L of 0.9% saline. Which fluid plan best follows SSC 2026?",
+   "choices": [
+    "Continue to a total of at least about 2.1 L of crystalloid in the first 3 hours, preferring a balanced crystalloid such as Ringer's lactate, with frequent reassessment",
+    "Give 20% albumin as the first-line fluid",
+    "Hydroxyethyl starch 1 L to restore volume faster",
+    "Give fluid boluses until lactate is completely normal",
+    "Stop fluids and start dopamine"
+   ],
+   "answer": 0,
+   "explain": "Hypoperfusion/ช็อก → **crystalloid อย่างน้อย 30 mL/kg ใน 3 ชม. แรก** → 70 kg × 30 = **2,100 mL** (ได้แล้ว 1 L ต้องให้ต่ออีกราว 1.1 L) และ SSC 2026 แนะนำ **balanced crystalloid (Ringer's lactate/acetate) มากกว่า 0.9% saline** เพราะ NSS มี Cl 154 mmol/L ให้มากเกิด hyperchloremic acidosis และ Cl ที่ macula densa ทำ afferent arteriole หด → AKI · ประเมินซ้ำบ่อยด้วย BP, CRT, PLR, ปัสสาวะ และสัญญาณน้ำเกิน\n\n- **20% albumin เป็นตัวแรก** — albumin สงวนไว้เมื่อได้ crystalloid ไปมากแล้วหรือมีตับแข็ง\n- **Hydroxyethyl starch** — **ห้าม** เพิ่มไตวายและการตาย\n- **ให้น้ำจน lactate ปกติ** — lactate สูงจากหลายกลไก ไล่ด้วยน้ำทำให้น้ำเกิน\n- **หยุดน้ำ เริ่ม dopamine** — ยังให้น้ำไม่ครบ และ dopamine ไม่ใช่ยาตัวแรก (arrhythmia)",
+   "pearl": "30 mL/kg × น้ำหนัก ใน 3 ชม. · balanced crystalloid > NSS",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — สารน้ำ — 30 mL/kg และชนิด (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – fluids"
+   ],
+   "nl": [
+    "2.2.7",
+    "2.2.48",
+    "B9.4(2)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-10",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Vasopressors in septic shock",
+   "stem": "A 72-year-old woman with septic shock remains hypotensive (MAP 55 mmHg) after 30 mL/kg of crystalloid. Central venous access is not yet available. What is the most appropriate next step?",
+   "choices": [
+    "Start norepinephrine through a large proximal peripheral cannula, targeting MAP about 60–65 mmHg",
+    "Wait for central line insertion before starting any vasopressor",
+    "Start terlipressin",
+    "Give another 3 L of crystalloid before any vasopressor",
+    "Start dopamine through a peripheral cannula"
+   ],
+   "answer": 0,
+   "explain": "ให้น้ำครบแล้ว MAP ยัง 55 = ท่อขยายจาก NO ต้องแก้ด้วยยาหดหลอดเลือด · **Norepinephrine** (α1 > β1) เป็นตัวแรก หด arteriole เพิ่ม SVR โดยหัวใจไม่เร็วมาก · SSC 2026 แนะนำ **เริ่มทางหลอดเลือดส่วนปลายได้เลย** (เส้นใหญ่ใกล้ข้อศอก ตรวจการรั่วบ่อย) ไม่ต้องรอ central line เพราะการรอทำให้ช่วงความดันต่ำยาวขึ้น · เป้า MAP 65 แต่ **อายุ ≥ 65 ปี ใช้ 60–65** (ตามที่สรุปในคาบ)\n\n- **รอ central line** — ทำให้ช็อกนานขึ้นโดยไม่จำเป็น\n- **terlipressin** — SSC แนะนำไม่ให้ (ischemia)\n- **ให้น้ำอีก 3 L ก่อน** — ไม่ประเมิน fluid responsiveness เสี่ยงน้ำเกิน\n- **dopamine** — arrhythmia มากกว่า NE ไม่ใช่ตัวแรก",
+   "pearl": "Septic shock + MAP ต่ำหลังให้น้ำ → NE ทางส่วนปลายได้เลย",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ยากระตุ้นความดัน (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – vasopressors"
+   ],
+   "nl": [
+    "2.2.7",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-11",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Second-line vasopressor",
+   "stem": "A patient with septic shock requires norepinephrine at a steadily escalating dose to maintain MAP 65 mmHg. What does SSC 2026 suggest adding next?",
+   "choices": [
+    "Phenylephrine",
+    "Vitamin C",
+    "Vasopressin",
+    "Dopamine",
+    "Esmolol"
+   ],
+   "answer": 2,
+   "explain": "เมื่อ **NE ขนาดสูงขึ้นเรื่อย ๆ** SSC แนะนำ **เติม vasopressin** แทนการเพิ่ม NE ต่อ เพราะ ① septic shock มี **vasopressin ในเลือดต่ำเกินสัมพัทธ์** (คลังใน posterior pituitary หมด) ② α1 receptor ถูก down-regulate ตอบสนอง NE น้อยลง — **V1 receptor** เป็นอีกทางที่ไม่ผ่าน adrenergic จึงช่วยลดขนาด NE · ถ้ายังไม่ถึงเป้า → เติม **epinephrine** ร่วมกับ IV hydrocortisone\n\n- **Phenylephrine** — α1 ล้วน ใช้ทางเดียวกับ NE ที่ตอบสนองลดลงแล้ว ไม่ใช่ตัวเลือกที่แนะนำ\n- **Vitamin C** — SSC แนะนำไม่ให้\n- **Dopamine** — arrhythmia มาก ไม่แนะนำ\n- **Esmolol** — β-blocker SSC แนะนำไม่ให้ ลดแรงบีบในผู้ป่วยที่ยังช็อก",
+   "pearl": "NE ขึ้นเรื่อย ๆ → เติม vasopressin (V1) → ยังไม่ถึง → epinephrine",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ยากระตุ้นความดัน (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – vasopressin"
+   ],
+   "nl": [
+    "2.2.7",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-12",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Empirical therapy by Gram stain",
+   "stem": "Blood cultures from a septic patient with a cellulitis-associated abscess grow Gram-positive cocci in clusters at 18 hours. The patient has had multiple hospital admissions and haemodialysis via a catheter. Pending identification, which empirical agent should be included?",
+   "choices": [
+    "Metronidazole",
+    "Gentamicin alone",
+    "Vancomycin",
+    "Doxycycline",
+    "Ceftriaxone"
+   ],
+   "answer": 2,
+   "explain": "**Gram-positive cocci in clusters = *Staphylococcus*** (ขึ้นจากเลือดในผู้ป่วยมีฝีผิวหนัง น่าจะเป็น *S. aureus*) · ผู้ป่วยมี **ปัจจัยเสี่ยง MRSA** (นอนโรงพยาบาลบ่อย ฟอกเลือดผ่านสายสวน) → ระหว่างรอผล empirical ต้องมี **vancomycin**\n\nเมื่อผลเป็น **MSSA** ให้ **de-escalate เป็น cloxacillin หรือ cefazolin** ซึ่งฆ่า MSSA ได้เร็วและดีกว่า vancomycin · S. aureus bacteremia ต้องหา source, echocardiography และยาฉีด ≥ 14 วัน\n\n- **Metronidazole** — ครอบคลุม anaerobe เท่านั้น\n- **Gentamicin เดี่ยว** — เน้นแกรมลบ ไม่ทำงานในหนอง ไม่ใช่ยาหลักสำหรับ staph\n- **Doxycycline** — bacteriostatic ไม่ใช้รักษา bacteremia\n- **Ceftriaxone** — ไม่ครอบคลุม MRSA และไม่ใช่ยาที่ดีที่สุดแม้เป็น MSSA",
+   "pearl": "GPC clusters + เสี่ยง MRSA → vancomycin → MSSA ค่อยเปลี่ยน cloxacillin/cefazolin",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Gram stain ช่วยเลือกยา (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Harrison's 21e – Staphylococcal infections",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – MRSA coverage"
+   ],
+   "nl": [
+    "B1.7.2",
+    "B1.5.2(5)",
+    "3.1.9"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-13",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Antimicrobial stewardship",
+   "stem": "Which statement about empirical versus definitive antimicrobial therapy is correct?",
+   "choices": [
+    "De-escalation increases mortality and should be avoided",
+    "Empirical therapy should be narrowed (de-escalated) once the pathogen and susceptibilities are known",
+    "Definitive therapy is chosen before cultures are taken",
+    "Once started, broad-spectrum antibiotics should be continued for 14 days to prevent resistance",
+    "Empirical therapy should be given at reduced doses until cultures return"
+   ],
+   "answer": 1,
+   "explain": "**Empirical therapy** ให้ **เร็ว ขนาดเต็ม** คลุมเชื้อที่น่าจะเป็นจากแหล่งติดเชื้อและความเสี่ยงเชื้อดื้อยา · เมื่อผลเพาะเชื้อและความไวยาออก (48–72 ชม.) → **de-escalate** ให้แคบที่สุดที่ยังได้ผล = **definitive therapy** · การ de-escalate ไม่เพิ่มการตาย แต่ลดแรงคัดเลือกเชื้อดื้อยา ลด *C. difficile* และพิษจากยา · SSC แนะนำประเมินทุกวัน\n\n- **De-escalation เพิ่มการตาย** — ไม่จริง ข้อมูลไม่สนับสนุน\n- **Definitive ก่อนเก็บเพาะเชื้อ** — definitive ต้องรู้เชื้อก่อน ตามนิยาม\n- **ยากว้างต่อ 14 วันเพื่อกันดื้อยา** — ยานานยิ่งคัดเลือกเชื้อดื้อ ระยะเวลาขึ้นกับโรคและการคุมแหล่ง\n- **ขนาดลดจนผลเพาะเชื้อออก** — ผิดบ่อย: ใน sepsis Vd เพิ่ม dose แรกต้องเต็มหรือ loading",
+   "pearl": "Empirical เต็มขนาด → de-escalate เมื่อรู้เชื้อ",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — หลักการใช้ยาปฏิชีวนะ 1 — empirical → definitive (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – de-escalation"
+   ],
+   "nl": [
+    "B1.7.2",
+    "3.3.9"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-14",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "PK/PD of beta-lactams",
+   "stem": "Why does SSC 2026 recommend administering beta-lactam antibiotics as a prolonged infusion (after a loading dose) rather than as intermittent boluses?",
+   "choices": [
+    "Prolonged infusion reduces the total daily dose needed by half",
+    "Prolonged infusion prevents allergic reactions",
+    "Bolus dosing causes nephrotoxicity",
+    "Beta-lactam killing depends on the time that free drug concentration remains above the MIC",
+    "Beta-lactams kill bacteria in proportion to peak concentration"
+   ],
+   "answer": 3,
+   "explain": "Beta-lactam ฆ่าเชื้อแบบ **time-dependent** — ยาจับ penicillin-binding protein ขณะแบคทีเรียสร้างผนัง ผลขึ้นกับ **%fT > MIC** (สัดส่วนเวลาที่ระดับยาอิสระอยู่เหนือ MIC) ระดับสูงสุดที่เกิน MIC มาก ๆ ไม่ได้ฆ่าเพิ่ม · การให้ **หยดนาน (prolonged/extended infusion)** หลัง **loading dose** ทำให้ระดับยาอยู่เหนือ MIC เกือบตลอดช่วงห่าง ด้วยขนาดรวมเท่าเดิม SSC 2026 จึงแนะนำแทน bolus\n\n- **ลดขนาดรวมลงครึ่งหนึ่ง** — ไม่ใช่เป้าหมาย ใช้ขนาดรวมเท่าเดิม\n- **ป้องกันแพ้ยา** — วิธีให้ไม่เปลี่ยนการแพ้\n- **bolus ทำพิษไต** — ไม่ใช่เหตุผล\n- **ฆ่าตามระดับสูงสุด** — นั่นคือ aminoglycoside (concentration-dependent) ซึ่งให้ขนาดสูงวันละครั้ง",
+   "pearl": "Beta-lactam: %fT > MIC → loading + หยดนาน",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — หลักการใช้ยาปฏิชีวนะ 2 — PK/PD (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – prolonged infusion of beta-lactams"
+   ],
+   "nl": [
+    "B1.7.2",
+    "B1.7.1(1)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-15",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Antibiotic dosing in AKI",
+   "stem": "A 68-year-old man with septic shock from pneumonia has creatinine 3.2 mg/dL (baseline 1.0). Meropenem is to be started. How should the first dose be chosen?",
+   "choices": [
+    "Use oral amoxicillin instead",
+    "Withhold meropenem until creatinine improves",
+    "Give half the dose by bolus only",
+    "Give a full (loading) first dose, then adjust subsequent doses to renal function",
+    "Give a reduced first dose adjusted to his current creatinine clearance"
+   ],
+   "answer": 3,
+   "explain": "ใน sepsis **volume of distribution (Vd) เพิ่ม** จาก capillary leak และสารน้ำปริมาณมาก ระดับยาวันแรกจึงมักต่ำเกิน · **loading dose ขึ้นกับ Vd ไม่ใช่การทำงานของไต** → **dose แรกต้องเต็มเสมอแม้ไตวาย** · ส่วน **maintenance** ขึ้นกับ clearance จึงปรับตาม CrCl หลัง 24–48 ชม. — AKI จาก sepsis มักฟื้นเร็ว การลดยาเร็วเกินเสี่ยงระดับยาต่ำและรักษาไม่หาย\n\n- **amoxicillin กิน** — ไม่พอสำหรับ septic shock จาก pneumonia การดูดซึมในช็อกไม่แน่นอน\n- **งด meropenem จน Cr ดีขึ้น** — ยาช้าในช็อกเพิ่มการตาย\n- **ครึ่งขนาด bolus** — ระดับต่ำเกินทั้งยอดและเวลาเหนือ MIC\n- **ลด dose แรกตาม CrCl** — ความผิดพลาดที่พบบ่อยที่สุด (dose แรกไม่ขึ้นกับไต)",
+   "pearl": "ไตวายใน sepsis: dose แรกเต็ม ปรับ maintenance ทีหลัง",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ขนาดยาใน sepsis และการปรับตามไต (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Sanford Guide – renal dose adjustment",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026)"
+   ],
+   "nl": [
+    "B1.7.2",
+    "B1.7.1(1)",
+    "2.3.14(3)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-16",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Anaerobic coverage in sepsis",
+   "stem": "A 55-year-old man with septic shock from community-acquired pneumonia has no recent hospitalisation or antibiotic exposure. Which addition to ceftriaxone plus azithromycin is NOT recommended by SSC 2026?",
+   "choices": [
+    "Blood cultures before antibiotics",
+    "Hydrocortisone for septic shock",
+    "Norepinephrine for persistent hypotension",
+    "Serial lactate measurement",
+    "Routine metronidazole for anaerobic coverage"
+   ],
+   "answer": 4,
+   "explain": "SSC 2026 **แนะนำไม่ให้คลุม anaerobe** เมื่อไม่มีข้อบ่งชี้ · คลุมเฉพาะแหล่งที่ anaerobe มีบทบาท: **ในช่องท้อง · อุ้งเชิงกราน/สูติกรรมลึก · necrotizing soft-tissue · หัวและคอ · CNS (ฝีในสมอง)** · CAP ทั่วไปเกิดจาก pneumococcus, H. influenzae, atypical ซึ่ง ceftriaxone + azithromycin ครอบคลุมแล้ว (ยกเว้นปอดเป็นฝีหรือ empyema จากสำลัก) — metronidazole เพิ่มแต่ผลเสียต่อจุลชีพลำไส้\n\nตัวเลือกอื่น **แนะนำให้ทำทั้งหมด**:\n- **Blood culture ก่อนยา** — ถ้าไม่ทำให้ยาช้า\n- **Hydrocortisone** — septic shock ที่ยังต้องใช้ vasopressor\n- **Norepinephrine** — ความดันยังต่ำหลังให้น้ำ\n- **วัด lactate ซ้ำ** — ใช้แนวโน้มนำการกู้ชีพ",
+   "pearl": "Pneumonia/UTI ไม่ต้องคลุม anaerobe",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Stewardship — anaerobe (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – anaerobic coverage"
+   ],
+   "nl": [
+    "B1.7.2",
+    "2.3.10(5)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-17",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "De-escalation and IV-to-oral switch",
+   "stem": "A woman with pyelonephritis-related sepsis improves on ceftriaxone. On day 3, blood and urine cultures grow E. coli susceptible to ceftriaxone, ciprofloxacin and co-trimoxazole. She is afebrile, eating, and haemodynamically stable. What is the best plan?",
+   "choices": [
+    "Escalate to meropenem for 14 days",
+    "Switch to an appropriate oral agent (e.g. ciprofloxacin or co-trimoxazole) to complete about 7 days in total",
+    "Continue IV ceftriaxone for 6 weeks",
+    "Add vancomycin",
+    "Stop all antibiotics today"
+   ],
+   "answer": 1,
+   "explain": "อาการคงที่ ไม่มีไข้ กินได้ รู้เชื้อและความไวยาแล้ว = เข้าเกณฑ์ **de-escalate และเปลี่ยนเป็นยากิน** (IV-to-oral switch) · เลือกยากินที่เชื้อไวและ **เข้าเนื้อไตได้ดี** เช่น ciprofloxacin หรือ co-trimoxazole · ระยะเวลารวมราว **7 วัน** เมื่อตอบสนองเร็ว (ตามที่สรุปในคาบ; แนวทางเดิมให้ co-trimoxazole 14 วัน ส่วน IDSA 2025 สำหรับ complicated UTI ที่ตอบสนองดีแนะนำ 7 วันได้)\n\n- **escalate เป็น meropenem 14 วัน** — ไม่มีเหตุ เพิ่มแรงคัดเลือก carbapenem-resistant\n- **ceftriaxone IV 6 สัปดาห์** — ระยะนั้นใช้กับ osteomyelitis/endocarditis\n- **เติม vancomycin** — ไม่มี gram-positive\n- **หยุดยาวันนี้ (วันที่ 3)** — สั้นเกินสำหรับ pyelonephritis ที่มี bacteremia",
+   "pearl": "รู้เชื้อ + อาการคงที่ → แคบลง + ยากิน + ระยะสั้น",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Stewardship — ระยะเวลาและการหยุด (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – de-escalation, duration",
+    "IDSA 2025 Complicated UTI guideline"
+   ],
+   "nl": [
+    "B1.7.2",
+    "2.3.14(14)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-18",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Melioidosis",
+   "stem": "A 52-year-old rice farmer from north-eastern Thailand with poorly controlled diabetes presents in the rainy season with fever, cough and hypotension. CT shows multiple small hypodense lesions in the liver and spleen. Gram stain of blood culture shows Gram-negative bacilli with bipolar ('safety-pin') staining. Which empirical regimen is most appropriate?",
+   "choices": [
+    "Vancomycin plus metronidazole",
+    "Doxycycline alone",
+    "Meropenem (or ceftazidime), followed later by oral co-trimoxazole eradication therapy",
+    "Amoxicillin-clavulanate",
+    "Ceftriaxone plus gentamicin"
+   ],
+   "answer": 2,
+   "explain": "ชาวนาอีสาน + **เบาหวาน** + ฤดูฝน + ปอดอักเสบ + ช็อก + **ฝีเล็กหลายแห่งในตับและม้าม** + gram-negative bacilli ติดสีสองปลาย (**safety pin**) = **melioidosis** (*Burkholderia pseudomallei*) · เชื้ออยู่รอดใน macrophage จึงลอยไปตั้งรกรากเป็นฝีหลายอวัยวะ และเบาหวานทำให้ neutrophil ทำงานบกพร่อง\n\n**Intensive phase**: **ceftazidime** หรือ **meropenem** (เลือก meropenem ในช็อก/รุนแรง) ≥ 10–14 วัน → **eradication: co-trimoxazole 3–6 เดือน** ป้องกันกลับเป็นซ้ำ\n\n- **ceftriaxone + gentamicin** — *B. pseudomallei* **ดื้อ aminoglycoside โดยธรรมชาติ** และ ceftriaxone ได้ผลแย่\n- **vancomycin + metronidazole** — ไม่ครอบคลุมแกรมลบ aerobe\n- **doxycycline เดี่ยว** — เคยใช้ใน eradication แต่ไม่พอสำหรับ intensive phase\n- **amoxicillin-clavulanate** — เป็นทางเลือกสำรองใน eradication ไม่ใช่สำหรับช็อก",
+   "pearl": "ชาวนาเบาหวาน + ฝีตับม้าม → melioidosis → ceftazidime/meropenem → co-trimoxazole",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Sepsis เขตร้อน — melioidosis (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "แนวทางการวินิจฉัยและรักษาโรคเมลิออยโดสิส (กรมควบคุมโรค)",
+    "Wiersinga WJ et al. Melioidosis. Nat Rev Dis Primers 2018"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.2.48",
+    "B1.7.2"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-19",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Severe leptospirosis",
+   "stem": "A 35-year-old man cleaned his flooded house 10 days ago. He now has high fever, severe calf pain, conjunctival suffusion, jaundice, oliguria and haemoptysis. BP 88/50 mmHg. Which antimicrobial is most appropriate for this severe illness?",
+   "choices": [
+    "Oral amoxicillin",
+    "Oral doxycycline only",
+    "Intravenous penicillin G or ceftriaxone",
+    "Fluconazole",
+    "Metronidazole"
+   ],
+   "answer": 2,
+   "explain": "ลุยน้ำท่วม (ปัสสาวะหนู) + ไข้สูง **ปวดน่องมาก** (myositis) + **conjunctival suffusion** (หลอดเลือดเยื่อบุตาขยาย ไม่มีขี้ตา) + **ตัวเหลือง + ไตวาย** (Weil disease) + **ไอเป็นเลือด** (endothelium ปอดเสียหาย เลือดออกในถุงลม) + ความดันต่ำ = **severe leptospirosis**\n\nรุนแรง → **IV penicillin G หรือ ceftriaxone** ร่วมกับประคับประคองไต (มักต้องฟอกไต) และการหายใจ · ถ้ายังแยกจาก scrub typhus ไม่ได้ → เติม doxycycline คลุมทั้งคู่\n\n- **amoxicillin กิน** — ใช้ในรายไม่รุนแรง\n- **doxycycline กินอย่างเดียว** — สำหรับรายไม่รุนแรง ผู้ป่วยช็อกและไตวาย การดูดซึมไม่แน่นอน\n- **fluconazole** — เป็นยาต้านเชื้อรา\n- **metronidazole** — ครอบคลุม anaerobe/protozoa ไม่ใช่ spirochete",
+   "pearl": "Lepto รุนแรง (เหลือง ไตวาย ปอดเลือดออก) → PGS/ceftriaxone IV",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Sepsis เขตร้อน — leptospirosis (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "แนวทางเวชปฏิบัติโรคเลปโตสไปโรสิส (กรมควบคุมโรค)",
+    "Harrison's 21e – Leptospirosis"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.2.48",
+    "2.1.33"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-20",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Supportive care in sepsis",
+   "stem": "On day 2 of septic shock, a patient's blood glucose readings are 190–230 mg/dL. Haemoglobin is 8.2 g/dL without bleeding or ischaemia. Which combination of management follows SSC 2026?",
+   "choices": [
+    "No insulin until glucose exceeds 300 mg/dL; transfuse 2 units",
+    "Give dextrose-free fluids only and transfuse to Hb 9",
+    "Give oral hypoglycaemics and erythropoietin",
+    "Start insulin when glucose is ≥ 180 mg/dL (target about 144–180) and avoid transfusion at this haemoglobin",
+    "Start insulin infusion targeting 80–110 mg/dL and transfuse to Hb 10"
+   ],
+   "answer": 3,
+   "explain": "**น้ำตาล**: SSC แนะนำ **เริ่ม insulin เมื่อ glucose ≥ 180 mg/dL** เป้าราว **144–180** — stress hyperglycemia จาก cortisol, catecholamine และ cytokine ทำให้ดื้อ insulin · การคุมเข้ม 80–110 (NICE-SUGAR) เพิ่ม hypoglycemia และการตาย\n\n**ให้เลือด**: แบบ **restrictive** — ให้เมื่อ Hb < 7 g/dL ในผู้ป่วยส่วนใหญ่ (ไม่มีเลือดออกรุนแรง หัวใจขาดเลือด) · Hb 8.2 จึง **ไม่ต้องให้** (TRISS: เกณฑ์ 7 กับ 9 ผลไม่ต่าง)\n\n- **รอ glucose > 300 + ให้เลือด 2 ยูนิต** — สูงเกินไปก่อนเริ่ม insulin และให้เลือดไม่จำเป็น\n- **งด dextrose + ให้เลือดถึง Hb 9** — ไม่ได้แก้น้ำตาลและเกณฑ์เลือดสูงเกิน\n- **ยาเบาหวานกิน + erythropoietin** — ICU ใช้ insulin ปรับได้แม่นกว่า EPO ไม่แนะนำ\n- **insulin เป้า 80–110 + Hb 10** — การคุมเข้มและเกณฑ์เลือดสูงเป็นอันตราย",
+   "pearl": "Sepsis: insulin เมื่อ ≥ 180 (เป้า 144–180) · ให้เลือดเมื่อ Hb < 7",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ดูแลต่อใน ICU (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – glucose, transfusion"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.2.7"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-21",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Applying SOFA to diagnose sepsis",
+   "stem": "A 48-year-old previously healthy man has 3 days of spreading cellulitis of the left leg. Temperature 38.9 °C, BP 118/72 mmHg (MAP 87), HR 108/min, RR 20/min, GCS 15, SpO2 97% on room air. Platelets 88,000/µL (normal 2 months ago), creatinine 2.2 mg/dL (baseline 0.9), bilirubin 0.8 mg/dL, lactate 1.7 mmol/L. How is his condition best classified?",
+   "choices": [
+    "Sepsis without septic shock (infection with an acute SOFA increase of at least 2 points)",
+    "Septic shock",
+    "Uncomplicated cellulitis, because blood pressure and lactate are normal",
+    "Severe sepsis",
+    "Sepsis cannot be diagnosed until blood cultures are positive"
+   ],
+   "answer": 0,
+   "explain": "Sepsis-3: **sepsis = ติดเชื้อ + อวัยวะล้มเหลวเฉียบพลัน** วัดด้วย **SOFA เพิ่ม ≥ 2 จากเดิม** (คิดเดิม = 0 ถ้าไม่มีโรคเดิม)\n\n| ระบบ | ค่า | SOFA |\n|---|---|---|\n| เกล็ดเลือด | 88,000 (< 100k) | 2 |\n| ไต | Cr 2.2 (2.0–3.4) | 2 |\n| หัวใจหลอดเลือด | MAP 87 ไม่ใช้ยา | 0 |\n| สมอง ปอด ตับ | ปกติ | 0 |\n\nSOFA เพิ่ม **4** → **sepsis** · กลไก: microthrombi ใช้เกล็ดเลือด (ท่อตัน) และเลือดไปไตลดร่วมกับการอักเสบที่ท่อไต\n\n- **Septic shock** — ไม่ใช้ vasopressor และ lactate ไม่เกิน 2\n- **cellulitis ธรรมดา** — ความดันปกติไม่ได้ตัด sepsis อวัยวะอื่นล้มเหลวแล้ว\n- **Severe sepsis** — ยกเลิกแล้ว\n- **ต้องรอ hemoculture** — sepsis เป็นการวินิจฉัยทางคลินิก ผลเพาะเชื้อลบก็เป็น sepsis ได้",
+   "pearl": "BP ปกติไม่ตัด sepsis — นับ SOFA ทุกระบบ (เกล็ดเลือด ไต ตับ สมอง ปอด หัวใจ)",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — SOFA หกระบบ (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Singer M et al. Sepsis-3. JAMA 2016;315:801",
+    "Vincent JL et al. SOFA score. Intensive Care Med 1996"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.3.12"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-22",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Haemodynamic profile of septic shock",
+   "stem": "A 58-year-old man with pneumonia has BP 84/40 mmHg and HR 122/min. His hands and feet are warm with bounding pulses. Which haemodynamic profile is most consistent with his condition before resuscitation?",
+   "choices": [
+    "Cardiac output ↓, systemic vascular resistance ↑, pulmonary capillary wedge pressure ↑",
+    "Cardiac output ↓, systemic vascular resistance ↑, pulmonary capillary wedge pressure ↓",
+    "Cardiac output ↓, systemic vascular resistance ↓, heart rate ↓, wedge pressure ↓",
+    "Cardiac output ↑, systemic vascular resistance ↓, pulmonary capillary wedge pressure ↓",
+    "Cardiac output ↓, systemic vascular resistance ↑, equalised diastolic pressures"
+   ],
+   "answer": 3,
+   "explain": "ปอดอักเสบ + ความดันต่ำ + **มือเท้าอุ่น ชีพจรแรง pulse pressure กว้าง** = **distributive (warm) septic shock**\n\nกลไก: **iNOS → NO** ทำ arteriole ขยาย → **SVR ↓↓** · **glycocalyx หลุด** → capillary leak + หลอดเลือดดำขยายเก็บเลือด → venous return ลด → **CVP/PCWP ↓** · baroreflex → HR ↑ **CO ↑** ชดเชย (ระยะท้าย septic cardiomyopathy ทำให้ CO ลดได้ = cold shock)\n\n- **CO ↓ SVR ↑ PCWP ↑** — cardiogenic shock (มือเท้าเย็น ปอดบวมน้ำ)\n- **CO ↓ SVR ↑ PCWP ↓** — hypovolemic shock (เสียเลือด ขาดน้ำ มือเท้าเย็น)\n- **CO ↓ SVR ↓ HR ช้า** — neurogenic shock (บาดเจ็บไขสันหลัง ขาด sympathetic)\n- **equalised diastolic pressures** — obstructive shock จาก cardiac tamponade",
+   "pearl": "Septic (warm) shock = CO สูง SVR ต่ำ PCWP ต่ำ",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — กลไก — ท่อรั่ว ท่อขยาย (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Harrison's 21e – Approach to the patient with shock"
+   ],
+   "nl": [
+    "2.2.7",
+    "B7.2.5(4)",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-23",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Procalcitonin to guide stopping antibiotics",
+   "stem": "A 64-year-old woman was admitted to the ICU with septic shock from community-acquired pneumonia and treated with ceftriaxone plus azithromycin. On day 5 she has been afebrile for 48 hours, is off norepinephrine and is eating. Blood and sputum cultures are negative. Procalcitonin was 14 ng/mL on day 1 and is now 1.9 ng/mL. What is the most appropriate antibiotic decision?",
+   "choices": [
+    "Continue antibiotics until procalcitonin is below 0.1 ng/mL",
+    "Stop antibiotics now, as she has improved clinically and procalcitonin has fallen by more than 80% from its peak",
+    "Escalate to meropenem because procalcitonin remains above 0.5 ng/mL",
+    "Continue intravenous antibiotics for a fixed 14 days",
+    "Repeat chest CT and decide after the result"
+   ],
+   "answer": 1,
+   "explain": "SSC 2026: **PCT ไม่ใช้ตัดสินใจเริ่มยา** (ขึ้นช้าหลายชั่วโมง และสูงจากเหตุอื่นได้) แต่ **ใช้ร่วมกับการประเมินทางคลินิกเพื่อตัดสินใจหยุดยาได้** · PCT สร้างจากเนื้อเยื่อทั่วตัวเมื่อถูก cytokine ของแบคทีเรียกระตุ้น และลดราวครึ่งหนึ่งต่อวันเมื่อเชื้อถูกควบคุม · เกณฑ์ที่ใช้ทั่วไป: **< 0.5 ng/mL หรือลด ≥ 80% จากยอด** + อาการดีขึ้น → หยุด\n\nรายนี้ลดจาก 14 → 1.9 = **ลด 86%** ไข้หาย พ้นช็อก กินได้ และได้ยาครบ **5 วัน** ซึ่งพอสำหรับ CAP ที่ดีขึ้น → **หยุดยา**\n\n- **รอจน < 0.1** — ไม่ใช่เกณฑ์ ทำให้ยานานเกิน\n- **escalate เพราะยัง > 0.5** — ใช้เกณฑ์ลด ≥ 80% ได้ และผู้ป่วยดีขึ้นชัด\n- **14 วันตายตัว** — CAP ไม่ต้องนานขนาดนั้น\n- **CT ซ้ำ** — ภาพรังสีปอดหายช้ากว่าอาการหลายสัปดาห์ ไม่ช่วยตัดสินใจ",
+   "pearl": "PCT: ไม่ใช้เริ่มยา · < 0.5 หรือลด ≥ 80% + อาการดี → หยุดยา",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Procalcitonin — ใช้ให้ถูกจังหวะ (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – procalcitonin",
+    "IDSA/ATS CAP guideline 2019 – duration"
+   ],
+   "nl": [
+    "2.2.48",
+    "B1.7.2",
+    "2.3.10(5)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-24",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "When to stop fluid boluses",
+   "stem": "A 52-year-old man (75 kg) with septic shock from pneumonia has received 2.3 L of Ringer's lactate over 3 hours. MAP is 58 mmHg. New bilateral basal crackles have appeared, SpO2 has fallen from 95% to 89% on 6 L/min oxygen, and lung ultrasound shows diffuse B-lines. A passive leg raise increases stroke volume by only 3%. What is the most appropriate next step?",
+   "choices": [
+    "Give another 1 L crystalloid bolus over 30 minutes",
+    "Give 500 mL of hydroxyethyl starch",
+    "Give 1 L of 4% albumin as a bolus",
+    "Give furosemide 80 mg IV now to remove fluid",
+    "Stop further boluses and start (or up-titrate) norepinephrine to a MAP of 65 mmHg"
+   ],
+   "answer": 4,
+   "explain": "ได้ครบ ~30 mL/kg แล้ว (75 × 30 = 2,250 mL) · **PLR เพิ่ม SV เพียง 3%** (< 10%) = หัวใจอยู่ **ส่วนราบของ Frank–Starling** ไม่ตอบสนองต่อน้ำ · มี **สัญญาณน้ำเกิน** (crackles, SpO₂ ตก, B-lines) — น้ำเพิ่มจะไม่เพิ่ม CO แต่ดันน้ำออกผ่านหลอดเลือดฝอยที่รั่วเข้าปอด\n\nความดันที่ยังต่ำเกิดจาก **ท่อขยาย (NO → SVR ต่ำ)** → แก้ด้วย **norepinephrine** เป้า **MAP 65** (อายุ < 65 ปี)\n\n- **crystalloid อีก 1 L** — ไม่ตอบสนองต่อน้ำแล้ว เสี่ยงหายใจล้มเหลว\n- **HES** — ห้ามใช้ใน sepsis (AKI ตายเพิ่ม)\n- **albumin 1 L** — albumin ใช้แทนเมื่อยังต้องการน้ำปริมาณมาก ไม่ใช่เมื่อไม่ตอบสนองและน้ำเกิน\n- **furosemide ตอนนี้** — ยังช็อก MAP 58 การดึงน้ำ (de-resuscitation) ทำหลังพ้นช่วงกู้ชีพ",
+   "pearl": "PLR ไม่ตอบสนอง + น้ำเกิน → หยุดน้ำ ใช้ NE",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — สารน้ำ — ประเมินว่าให้ต่อหรือพอ (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – dynamic measures, vasopressors"
+   ],
+   "nl": [
+    "2.2.7",
+    "B9.4(2)",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-25",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Corticosteroid in septic shock",
+   "stem": "A 60-year-old woman with septic shock from cholangitis has had biliary drainage. Six hours after adequate fluid resuscitation she still requires norepinephrine 0.3 µg/kg/min to keep MAP at 66 mmHg. Which additional treatment is most appropriate?",
+   "choices": [
+    "Perform an ACTH stimulation test and give steroid only if the cortisol increment is below 9 µg/dL",
+    "Methylprednisolone 1 g IV daily for 3 days",
+    "Dexamethasone 6 mg daily for 10 days",
+    "IV hydrocortisone 200 mg/day in divided doses (e.g. 50 mg every 6 hours)",
+    "No steroid unless norepinephrine exceeds 1 µg/kg/min"
+   ],
+   "answer": 3,
+   "explain": "SSC: **septic shock ที่ยังต้องใช้ vasopressor** (ราว NE ≥ 0.25 µg/kg/min นาน ≥ 4 ชม. หลังเริ่ม) → **IV hydrocortisone 200 mg/วัน** แบ่งให้ (50 mg q6h หรือหยดต่อเนื่อง)\n\nกลไก: sepsis ทำให้ **ต่อมหมวกไตตอบสนองไม่พอ** (critical illness–related corticosteroid insufficiency) และ steroid **เพิ่มการแสดง adrenergic receptor และลด iNOS** หลอดเลือดจึงไวต่อ catecholamine ขึ้น → **หลุดจาก vasopressor เร็วขึ้น** และอยู่ ICU สั้นลง\n\n- **ACTH test ก่อน** — ไม่แนะนำ ผลไม่ช่วยเลือกผู้ได้ประโยชน์ และทำให้ช้า\n- **methylprednisolone 1 g** — ขนาดสูงไม่ช่วยและเพิ่มติดเชื้อซ้ำ\n- **dexamethasone 6 mg** — เป็นขนาดสำหรับ COVID-19 ที่ต้องใช้ O₂ ไม่มีฤทธิ์ mineralocorticoid\n- **รอ NE > 1** — ช้าเกิน รายนี้เข้าเกณฑ์แล้ว",
+   "pearl": "Septic shock ยังต้องใช้ NE → hydrocortisone 200 mg/วัน ไม่ต้องตรวจ ACTH",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Corticosteroid (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – corticosteroids"
+   ],
+   "nl": [
+    "2.2.7",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-26",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Septic cardiomyopathy – adding an inotrope",
+   "stem": "A 66-year-old man with septic shock is on norepinephrine 0.4 µg/kg/min plus vasopressin; MAP is now 67 mmHg. Despite this his extremities are cold and mottled, capillary refill is 5 seconds, urine output is 10 mL/h and lactate has risen from 3 to 5 mmol/L. Echocardiography shows a new global LV ejection fraction of 25%; a passive leg raise does not increase stroke volume. What is the most appropriate next step?",
+   "choices": [
+    "Add dobutamine to norepinephrine",
+    "Give a further 2 L crystalloid bolus",
+    "Replace norepinephrine with phenylephrine",
+    "Start esmolol to slow the heart rate",
+    "Start levosimendan instead of any catecholamine"
+   ],
+   "answer": 0,
+   "explain": "MAP ถึงเป้าแล้ว แต่ยังมี **hypoperfusion** (ผิวลาย CRT 5 วินาที ปัสสาวะน้อย lactate ขึ้น) + **LVEF 25% ใหม่** = **septic cardiomyopathy** (cytokine, NO และ mitochondria เสียหายกดการบีบตัวของหัวใจ) → ระยะ **cold shock** CO ต่ำ · ไม่ตอบสนองต่อน้ำ (PLR ลบ)\n\nSSC: **หัวใจบีบตัวอ่อน + ยัง hypoperfusion ทั้งที่ปริมาตรและ MAP พอ** → **เติม dobutamine (β1 inotrope) กับ NE** หรือเปลี่ยนเป็น epinephrine เดี่ยว · NE ช่วยกันไม่ให้ β2 ของ dobutamine ทำความดันตก\n\n- **น้ำอีก 2 L** — PLR ลบ หัวใจล้า จะเกิดปอดบวมน้ำ\n- **phenylephrine** — α1 ล้วน เพิ่ม afterload ทำให้ CO ยิ่งลด\n- **esmolol** — SSC แนะนำไม่ให้ β-blocker ลดแรงบีบในหัวใจที่อ่อนอยู่\n- **levosimendan** — SSC แนะนำไม่ให้ (ไม่ลดการตาย arrhythmia มากกว่า)",
+   "pearl": "MAP ถึงเป้าแต่ยังลาย + EF ต่ำ → เติม dobutamine",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ยากระตุ้นความดัน — หัวใจบีบตัวอ่อน (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – inotropes"
+   ],
+   "nl": [
+    "2.2.7",
+    "B7.2.5(4)",
+    "2.3.9(5)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-27",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Aminoglycoside pharmacodynamics – once-daily dosing",
+   "stem": "A 40-year-old woman with sepsis from pyelonephritis and normal renal function is prescribed gentamicin 5–7 mg/kg once daily together with a beta-lactam. Which statement best explains why once-daily dosing is preferred over the same daily dose divided every 8 hours?",
+   "choices": [
+    "Gentamicin is time-dependent, so once-daily dosing keeps levels above the MIC all day",
+    "Once-daily dosing enables gentamicin to work in acidic pus and abscess cavities",
+    "Once-daily dosing removes the need to adjust the dose for renal function",
+    "Once-daily dosing makes gentamicin active against anaerobic bacteria",
+    "High peaks maximise concentration-dependent killing with a post-antibiotic effect, and a long low trough limits renal and ototoxicity"
+   ],
+   "answer": 4,
+   "explain": "Aminoglycoside เป็นยา **concentration-dependent** — ฆ่าเชื้อแรงขึ้นตาม **Cmax/MIC** (เป้า ≥ 8–10) และมี **post-antibiotic effect** ยาวหลายชั่วโมง เชื้อจึงไม่โตกลับแม้ระดับยาต่ำกว่า MIC · ส่วน **พิษต่อไตและหูชั้นใน** เกิดจาก **การสะสมยาในเซลล์ท่อไต/hair cell ซึ่งอิ่มตัวได้** — การให้วันละครั้งมีช่วง trough ต่ำนาน อวัยวะได้ขับยาออก พิษจึงน้อยกว่าแบ่งให้ที่ระดับค้างทั้งวัน\n\n- **time-dependent** — นั่นคือ beta-lactam (หยดนาน)\n- **ทำงานในหนองกรด** — ตรงข้าม aminoglycoside **ไม่ทำงานในสภาพกรด** และถูกเศษ DNA ในหนองจับ จึงต้อง source control\n- **ไม่ต้องปรับตามไต** — ต้องปรับช่วงห่างตามไตและติดตามระดับยา\n- **ครอบคลุม anaerobe** — การนำยาเข้าเซลล์เชื้อต้องอาศัย O₂ จึง **ไม่ฆ่า anaerobe** (Mean GNATS caNNOT kill anaerobes)",
+   "pearl": "Aminoglycoside: ยอดสูงวันละครั้ง + PAE · ไม่ทำงานในหนอง ไม่ฆ่า anaerobe",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Aminoglycoside — ทำไมวันละครั้ง (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Goodman & Gilman's 14e – Aminoglycosides"
+   ],
+   "nl": [
+    "B1.7.2",
+    "B1.7.1(1)"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-28",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Scrub typhus in pregnancy",
+   "stem": "A 26-year-old woman at 24 weeks of gestation works on a corn farm in northern Thailand. She has 7 days of fever and severe headache. Examination shows a painless 8-mm black-crusted ulcer under the left breast with tender left axillary lymphadenopathy. BP 112/70 mmHg, platelets 105,000/µL, ALT 96 U/L. Which treatment is most appropriate?",
+   "choices": [
+    "Doxycycline 100 mg twice daily for 7 days",
+    "Azithromycin",
+    "Ceftriaxone 2 g IV daily",
+    "Ciprofloxacin",
+    "Amoxicillin"
+   ],
+   "answer": 1,
+   "explain": "ไข้ ปวดศีรษะ ทำไร่ + **eschar** (แผลสะเก็ดดำไม่เจ็บในที่ลับ เช่น ใต้ราวนม) + ต่อมน้ำเหลืองที่ระบายบริเวณนั้นโต = **scrub typhus** (*Orientia tsutsugamushi*) — ไรอ่อนกัด เชื้อแบ่งตัวใน **endothelium** ตรงรอยกัด เกิด vasculitis เนื้อตายเป็นสะเก็ด แล้วกระจายทั่วตัว (ตับอักเสบ เกล็ดเลือดต่ำ)\n\nยาหลักคือ doxycycline แต่ **ตั้งครรภ์ (และเด็ก) → azithromycin** ตามที่สรุปในคาบ · azithromycin เข้าเซลล์ได้ดี ฆ่าเชื้อที่อยู่ในเซลล์ได้\n\n- **doxycycline** — ยาตัวแรกในคนทั่วไป แต่ tetracycline จับแคลเซียมในฟันและกระดูกทารกจึงเลี่ยงในครรภ์ (บางแนวทางยอมให้ระยะสั้นในรายรุนแรง)\n- **ceftriaxone** — beta-lactam **ไม่ได้ผลกับ Orientia** (เชื้ออยู่ในเซลล์ ผนังไม่มี peptidoglycan ตามปกติ)\n- **ciprofloxacin** — ผลรักษา scrub typhus แย่ และเลี่ยงในครรภ์\n- **amoxicillin** — beta-lactam ไม่ได้ผลเช่นกัน",
+   "pearl": "Scrub typhus: doxycycline · ตั้งครรภ์/เด็ก → azithromycin · beta-lactam ไม่ได้ผล",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Sepsis เขตร้อน — scrub typhus (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "WHO/SEARO Guidelines for rickettsial diseases",
+    "Harrison's 21e – Rickettsial diseases"
+   ],
+   "nl": [
+    "2.3.1",
+    "2.1.1",
+    "2.1.57"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-29",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Source control – obstructed infected kidney",
+   "stem": "A 63-year-old woman with diabetes presents with fever, right flank pain and BP 84/50 mmHg that persists after 30 mL/kg of crystalloid; norepinephrine is started. Meropenem was given within 1 hour. CT shows a 9-mm right proximal ureteric stone with hydronephrosis and perinephric stranding. What is the most important next step?",
+   "choices": [
+    "Add amikacin and reassess in 72 hours",
+    "Extracorporeal shock-wave lithotripsy today",
+    "Tamsulosin for medical expulsive therapy",
+    "Urgent decompression with percutaneous nephrostomy or a retrograde ureteric stent, ideally within 6 hours",
+    "Definitive ureteroscopic stone removal once she has been afebrile for 48 hours, without earlier drainage"
+   ],
+   "answer": 3,
+   "explain": "**Obstructive pyelonephritis + septic shock** = ฝีแบบปิด: ปัสสาวะติดเชื้อค้างใต้ความดัน เชื้อไหลเข้ากระแสเลือดตลอด ยาเข้าโพรงที่อุดตันได้น้อย → **ยาอย่างเดียวไม่หาย** ต้อง **source control ภายใน 6 ชม.** — **ระบายไตด่วน** ด้วย **percutaneous nephrostomy หรือ ureteric (DJ) stent** (สองวิธีได้ผลพอกัน เลือกตามความพร้อม)\n\nรักษานิ่วจริงทีหลังเมื่อหายติดเชื้อแล้ว\n\n- **เติม amikacin รอ 72 ชม.** — ปัญหาคือการอุดตัน ไม่ใช่ยาไม่พอ และ aminoglycoside ทำงานแย่ในหนอง/กรด\n- **ESWL ตอนนี้** — ห้ามในการติดเชื้อที่ยังไม่ระบาย บีบเชื้อเข้ากระแสเลือด\n- **tamsulosin** — ใช้ในนิ่วไม่ติดเชื้อ ไม่ใช่ทางเลือกในช็อก\n- **ureteroscopy เมื่อไข้ลง โดยไม่ระบายก่อน** — ช้าเกิน ช็อกจากแหล่งที่ยังอุดตัน",
+   "pearl": "ไตอุดตัน + ติดเชื้อ + ช็อก → ระบาย (PCN/DJ stent) ภายใน 6 ชม.",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Source control (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – source control",
+    "EAU Urolithiasis guideline – decompression of obstructed infected kidney"
+   ],
+   "nl": [
+    "2.3.14-3(9)",
+    "2.3.14(14)",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-30",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Clostridioides difficile infection after antibiotics",
+   "stem": "A 74-year-old man is on day 8 of piperacillin-tazobactam for a perforated appendix that was operated on day 1. He develops 6 watery stools per day, mild abdominal distension and fever 38.2 °C. WBC 18,000/µL, creatinine 1.3 mg/dL (baseline 0.9). Stool C. difficile GDH and toxin tests are positive. Which management is most appropriate?",
+   "choices": [
+    "Oral vancomycin 125 mg four times daily for 10 days, and stop or narrow the inciting antibiotic if possible",
+    "Intravenous vancomycin 1 g every 12 hours",
+    "Loperamide and continue piperacillin-tazobactam",
+    "Oral metronidazole 500 mg three times daily as the preferred first-line agent",
+    "No treatment; repeat stool testing in 1 week"
+   ],
+   "answer": 0,
+   "explain": "ยาปฏิชีวนะกว้างทำลาย **colonization resistance** ของจุลชีพลำไส้ → spore ของ *C. difficile* งอก ปล่อย **toxin A/B** ทำลาย cytoskeleton ของเยื่อบุลำไส้ใหญ่ → ท้องเสีย ไข้ pseudomembrane · ท้องเสีย ≥ 3 ครั้ง/วัน + GDH และ toxin บวก = **C. difficile infection** · WBC ≥ 15,000 = **ระดับรุนแรง (severe)**\n\nรักษา: **vancomycin กิน 125 mg วันละ 4 ครั้ง 10 วัน** (หรือ fidaxomicin) + **หยุดหรือลดยาที่เป็นตัวกระตุ้น** — รายนี้ผ่าตัดแล้วและได้ยามา 8 วัน (intra-abdominal ที่คุมแหล่งได้ใช้ราว 4 วันหลัง source control) จึงหยุด pip-tazo ได้\n\n- **vancomycin IV** — **ไม่ขับออกสู่ลำไส้** ไม่ถึงเชื้อในลำไส้ใหญ่\n- **loperamide + ยาเดิม** — ยาหยุดถ่ายทำให้ toxin ค้าง เสี่ยง toxic megacolon\n- **metronidazole กินเป็นตัวแรก** — ด้อยกว่า ใช้เฉพาะรายไม่รุนแรงเมื่อไม่มี vancomycin/fidaxomicin\n- **ไม่รักษา ตรวจซ้ำ** — ไม่ควรตรวจซ้ำเพื่อยืนยัน และรายนี้รุนแรงแล้ว",
+   "pearl": "C. diff: vancomycin กิน (ไม่ใช่ IV) + หยุดยาต้นเหตุ",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Stewardship — ผลเสียของยาเกินจำเป็น (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "IDSA/SHEA C. difficile guideline 2017, focused update 2021"
+   ],
+   "nl": [
+    "B1.7.2",
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "ID-SEP-MCQ-31",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Sodium bicarbonate in septic shock",
+   "stem": "Five patients with septic shock are receiving norepinephrine. Arterial blood gases show metabolic acidosis with raised lactate in all of them. In which patient does the Surviving Sepsis Campaign suggest giving intravenous sodium bicarbonate?",
+   "choices": [
+    "pH 7.28, normal creatinine",
+    "pH 7.18, lactate 6 mmol/L, normal creatinine",
+    "pH 7.25, creatinine tripled from baseline",
+    "pH 7.31, potassium 5.4 mmol/L, normal creatinine",
+    "pH 7.15, creatinine tripled from baseline (AKI stage 3)"
+   ],
+   "answer": 4,
+   "explain": "SSC: **ไม่ให้ NaHCO₃** เพื่อหวังแก้ความดันหรือลด vasopressor ใน lactic acidosis จาก hypoperfusion — ไม่ช่วย hemodynamics และมีผลเสีย (Na/น้ำเกิน ionized Ca ลด CO₂ เพิ่มภายในเซลล์) · **ยกเว้น** กรณี **กรดรุนแรง pH ≤ 7.2 ร่วมกับ AKI ระยะ 2–3** แนะนำให้ (BICAR-ICU: ลดการตายและความต้องการ RRT ในกลุ่มนี้)\n\nรายที่ pH 7.15 และ Cr เพิ่ม 3 เท่า (AKI ระยะ 3) **เข้าทั้งสองเงื่อนไข**\n\n- **pH 7.28 Cr ปกติ** — pH ไม่ถึง 7.2 และไม่มี AKI\n- **pH 7.18 Cr ปกติ** — กรดรุนแรงแต่ไม่มี AKI ระยะ 2–3 → รักษาที่สาเหตุ (กู้ชีพ ยา source control)\n- **pH 7.25 มี AKI ระยะ 3** — มี AKI แต่ pH ยังไม่ ≤ 7.2\n- **pH 7.31 K 5.4** — ไม่เข้าเกณฑ์ และ K 5.4 ไม่ใช่ภาวะฉุกเฉินที่ต้องใช้ bicarbonate",
+   "pearl": "NaHCO₃ ใน septic shock เฉพาะ pH ≤ 7.2 + AKI ระยะ 2–3",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ดูแลต่อใน ICU (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – bicarbonate",
+    "Jaber S et al. BICAR-ICU. Lancet 2018"
+   ],
+   "nl": [
+    "2.2.48",
+    "B9.4(2)",
+    "2.3.14(3)"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "ID-SEP-MEQ-01",
+   "part": "MEQ",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Septic shock from melioidosis in a diabetic rice farmer – first hour, empirical therapy, PK/PD and source control",
+   "vignette": "ผู้ป่วยชายไทยอายุ 55 ปี อาชีพทำนา ภูมิลำเนา จ.อุบลราชธานี น้ำหนัก 58 กก. มาด้วยไข้สูง หนาวสั่น 5 วัน หอบเหนื่อย 1 วัน (เดือนสิงหาคม)\nPI: 5 วันก่อน ไข้สูงหนาวสั่น ปวดเมื่อยตัว ไอมีเสมหะเล็กน้อย ซื้อยาลดไข้กินไม่ดีขึ้น 1 วันก่อน หอบเหนื่อย ปัสสาวะออกน้อย วันนี้ญาติสังเกตว่าซึมลง ถามตอบช้า\nPH: เบาหวานชนิดที่ 2 มา 8 ปี กิน metformin ไม่สม่ำเสมอ (HbA1c ครั้งล่าสุด 10.2%) ดื่มสุราเป็นประจำ ไม่เคยนอนโรงพยาบาล ไม่ได้ยาปฏิชีวนะใน 3 เดือน\nPE: BT 39.6 °C, PR 128/min, RR 30/min, BP 78/42 mmHg (MAP 54), SpO₂ 90% (room air), GCS E3V4M6\nปลายมือเท้าอุ่น CRT 3 วินาที · ปอดขวาบน crepitation และ bronchial breath sound · ตับโต 2 ซม. ใต้ชายโครง กดเจ็บ ม้ามคลำไม่ได้ · ไม่มีแผลหรือฝีที่ผิวหนัง\nLab: CBC — WBC 21,500/µL (N 88%), Hb 11.8 g/dL, platelet 82,000/µL\nBUN 48, Cr 2.4 mg/dL (6 เดือนก่อน 0.9) · glucose 386 mg/dL · total bilirubin 2.6 mg/dL · venous lactate 5.1 mmol/L\nCXR: consolidation ปอดขวาบน",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยตามนิยาม Sepsis-3 ระบุอวัยวะที่ล้มเหลว และบอกว่าตามนาฬิกาของ SSC 2026 ต้องให้ยาปฏิชีวนะภายในเวลาเท่าไร เพราะอะไร (3 คะแนน)",
+     "a": "- **Sepsis จาก community-acquired pneumonia** ที่ **น่าจะเป็น septic shock** (ความดันต่ำ lactate 5.1 > 2) — ยืนยัน septic shock เมื่อให้สารน้ำพอแล้วยังต้องใช้ vasopressor ให้ MAP ≥ 65\n- **SOFA เพิ่ม ≥ 2** ได้จากหลายระบบ: หัวใจหลอดเลือด (MAP 54) · ไต (Cr 2.4, ปัสสาวะน้อย) · เกล็ดเลือด (82,000) · ตับ (bilirubin 2.6) · สมอง (GCS 13) · ปอด (SpO₂ 90% หายใจ 30)\n- ระดับความมั่นใจ **probable** (sepsis เป็นคำวินิจฉัยอันดับหนึ่ง) + **มีช็อก** → **ยาปฏิชีวนะภายใน 1 ชั่วโมง** นับจากเริ่มสงสัย เพราะในช็อกการตายเพิ่มขึ้นทุกชั่วโมงที่ให้ยาช้า"
+    },
+    {
+     "q": "2. จงเขียนการรักษาในชั่วโมงแรก (bundle) ให้ครบ พร้อมคำนวณปริมาณสารน้ำ ชนิดสารน้ำ และเป้าหมายของ vasopressor (4 คะแนน)",
+     "a": "- **ABCDE** · O₂ ให้ SpO₂ 92–96% (เตรียม HFNC ถ้าไม่ดีขึ้น) · IV ใหญ่ 2 เส้น\n- **Hemoculture ≥ 2 ชุด (คนละตำแหน่ง) ก่อนยา** + เสมหะ ปัสสาวะ — **ไม่ให้การเก็บทำให้ยาช้า**\n- **Lactate** แล้ววัดซ้ำใน 2–4 ชม. · CBC, BUN/Cr, electrolyte, LFT, coagulation, ABG\n- **Balanced crystalloid (Ringer's lactate/acetate) ≥ 30 mL/kg ใน 3 ชม. = 58 × 30 ≈ 1,740 mL** ให้เป็น bolus ทีละ 250–500 mL และ **ประเมินซ้ำ** (BP, CRT, ปัสสาวะ, crackles, SpO₂, PLR) — ระวังน้ำเกินเพราะปอดอักเสบ\n- **Norepinephrine** เริ่ม **ทางหลอดเลือดส่วนปลายได้เลย** ถ้า MAP ยัง < 65 ระหว่าง/หลังให้น้ำ ไม่ต้องรอ central line · เป้า **MAP 65 mmHg** (อายุ 55 ปี)\n- **Insulin** เมื่อ glucose ≥ 180 (เป้า 144–180) · ใส่สายสวนปัสสาวะ เป้า ≥ 0.5 mL/kg/h\n- หาแหล่งติดเชื้อเพิ่ม: **อัลตราซาวนด์ช่องท้องหาฝีตับ/ม้าม**"
+    },
+    {
+     "q": "3. เชื้อก่อโรคที่น่าจะเป็นที่สุดคืออะไร จงเลือกยาปฏิชีวนะ empirical พร้อมขนาดและวิธีให้ตามหลัก PK/PD โดยคำนึงถึง Cr 2.4 (4 คะแนน)",
+     "a": "- ชาวนาอีสาน + เบาหวานคุมไม่ดี + ดื่มสุรา + ฤดูฝน + ปอดอักเสบ + ตับโตกดเจ็บ + ช็อก → **melioidosis (*Burkholderia pseudomallei*)** มากที่สุด (pneumococcus เป็นอีกตัวที่ต้องคลุม)\n- **Meropenem 1 g IV ทุก 8 ชม.** (ช็อก/รุนแรงเลือก meropenem มากกว่า ceftazidime) — ครอบคลุมทั้ง *B. pseudomallei* และ pneumococcus/แกรมลบชุมชน · พิจารณาเติม azithromycin คลุม atypical\n- **Dose แรกเต็มขนาด (loading) แม้ Cr 2.4** — sepsis ทำให้ Vd เพิ่มจาก capillary leak และสารน้ำ · loading ขึ้นกับ Vd ไม่ใช่ไต\n- **Beta-lactam เป็น time-dependent (%fT > MIC)** → หลัง loading ให้แบบ **prolonged infusion** (หยด 3 ชม.) เพื่อให้ระดับยาเหนือ MIC นานที่สุด\n- **ปรับ maintenance dose ตาม CrCl หลัง 24–48 ชม.** (AKI จาก sepsis มักฟื้นเร็ว ลดเร็วเกินเสี่ยงรักษาไม่หาย)"
+    },
+    {
+     "q": "4. ผล Gram stain จาก hemoculture ขวดแรกเป็น gram-negative bacilli ติดสีเข้มสองปลาย แพทย์อีกคนเสนอให้เปลี่ยนเป็น ceftriaxone ร่วมกับ gentamicin เพราะราคาถูกกว่า ท่านเห็นด้วยหรือไม่ เพราะอะไร (2 คะแนน)",
+     "a": "- **ไม่เห็นด้วย** — gram-negative bacilli แบบ **safety pin (bipolar staining)** สนับสนุน *B. pseudomallei*\n- เชื้อนี้ **ดื้อ aminoglycoside โดยธรรมชาติ** และ **ceftriaxone ได้ผลแย่/อัตราตายสูงกว่า** · ยาที่ใช้ใน intensive phase คือ **ceftazidime หรือ meropenem** เท่านั้น → ให้ meropenem ต่อ"
+    },
+    {
+     "q": "5. อัลตราซาวนด์พบฝีตับหลายช่องขนาด 6 ซม. 1 ก้อน และฝีเล็กในม้ามหลายก้อน ผ่านไป 6 ชม. ได้สารน้ำครบแล้ว ยังต้องใช้ norepinephrine 0.3 µg/kg/min จะจัดการอะไรเพิ่ม (3 คะแนน)",
+     "a": "- **Source control ภายใน 6 ชม.** — **เจาะระบายฝีตับขนาดใหญ่ (percutaneous drainage ภายใต้ US/CT)** เพราะในโพรงหนองไม่มีหลอดเลือด ยาซึมเข้าได้น้อย เชื้อจำนวนมากแบ่งตัวช้า · ฝีเล็กในม้ามมักหายด้วยยา ติดตามด้วย US\n- **IV hydrocortisone 200 mg/วัน** (50 mg ทุก 6 ชม.) — septic shock ที่ยังต้องใช้ NE ≥ 0.25 µg/kg/min ช่วยให้หลุดจาก vasopressor เร็วขึ้น\n- ถ้า NE ขึ้นเรื่อย ๆ → **เติม vasopressin** · ถ้าหัวใจบีบตัวอ่อนและยัง hypoperfusion → dobutamine\n- ส่งหนองเพาะเชื้อ · วัด lactate ซ้ำ · ประเมินน้ำเกิน"
+    },
+    {
+     "q": "6. ผู้ป่วยดีขึ้น จงวางแผนการให้ยาจนครบ และสิ่งที่ต้องแนะนำก่อนกลับบ้าน (2 คะแนน)",
+     "a": "- **Intensive phase**: meropenem (หรือเปลี่ยนเป็น ceftazidime เมื่อพ้นช็อก) **อย่างน้อย 10–14 วัน** — ฝีในอวัยวะลึก/ฝีตับมักต้องนานขึ้น (≥ 4 สัปดาห์ตามแนวทางสากล)\n- **Eradication phase**: **co-trimoxazole กิน 3–6 เดือน** ขนาดตามน้ำหนัก (40–60 กก. ≈ TMP/SMX 240/1200 mg วันละ 2 ครั้ง) + folic acid · ติดตาม K, Cr, CBC, ผื่น\n- อธิบายว่า **หยุดยาเร็ว = กลับเป็นซ้ำสูง** · คุมเบาหวาน ลดสุรา · สวมรองเท้าบูทถุงมือเมื่อทำนา · กลับมาทันทีถ้าไข้ซ้ำ"
+    }
+   ],
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — Sepsis เขตร้อน · ชั่วโมงแรก · PK/PD · source control (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026)",
+    "แนวทางการวินิจฉัยและรักษาโรคเมลิออยโดสิส (กรมควบคุมโรค)",
+    "Wiersinga WJ et al. Melioidosis. Nat Rev Dis Primers 2018"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.2.7",
+    "2.3.1",
+    "B1.7.2",
+    "3.3.9"
+   ]
+  },
+  {
+   "id": "ID-SEP-MEQ-02",
+   "part": "MEQ",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "Hospital-acquired intra-abdominal sepsis – MDR risk, anaerobic coverage, source control, de-escalation and duration",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 70 ปี น้ำหนัก 55 กก. นอนโรงพยาบาลวันที่ 6 หลังผ่าตัด sigmoid colectomy จากมะเร็งลำไส้ใหญ่ (primary anastomosis)\nPI: ก่อนผ่าตัด 3 สัปดาห์ เคยนอนโรงพยาบาลด้วยกรวยไตอักเสบ ได้ ceftriaxone 7 วัน หลังผ่าตัดวันที่ 4 เริ่มมีไข้ ปวดท้องมากขึ้น ท้องอืด วันนี้ (วันที่ 6) สับสน ปัสสาวะออกน้อย\nPH: ความดันโลหิตสูง ไม่มีโรคหัวใจ ไม่แพ้ยา\nPE: BT 38.9 °C, PR 120/min, RR 26/min, BP 86/48 mmHg (MAP 61), SpO₂ 95% (O₂ cannula 3 L/min) · สับสนเล็กน้อย\nท้องอืด กดเจ็บทั่วท้อง guarding · สายระบายข้างแผลมีน้ำสีน้ำตาลขุ่นกลิ่นเหม็นคล้ายอุจจาระ\nLab: WBC 19,800/µL · platelet 140,000/µL · Cr 1.9 mg/dL (ก่อนผ่าตัด 0.8) · lactate 3.6 mmol/L\nCT ช่องท้อง: มีลมและน้ำรอบรอยต่อลำไส้ (anastomotic leak) และ collection ในอุ้งเชิงกราน 7 ซม.",
+   "questions": [
+    {
+     "q": "1. จงบอกระดับความมั่นใจของ sepsis และกำหนดเวลาเริ่มยาปฏิชีวนะ พร้อมเหตุผล (2 คะแนน)",
+     "a": "- **Definite/probable sepsis** — มีแหล่งติดเชื้อชัด (anastomotic leak + collection) + อวัยวะล้มเหลว (ความดัน ไต สมอง lactate)\n- ความดันต่ำ MAP 61 + lactate 3.6 → สงสัย **ช็อก** → **ยาปฏิชีวนะภายใน 1 ชม.** เพาะเชื้อเลือด 2 ชุดและน้ำจากสายระบายก่อนยาถ้าไม่ทำให้ช้า · ให้ balanced crystalloid 30 mL/kg (≈ 1,650 mL) ใน 3 ชม. และ NE ถ้า MAP ยัง < 65 (อายุ ≥ 65 เป้า 60–65)"
+    },
+    {
+     "q": "2. จงเลือกยาปฏิชีวนะ empirical โดยตอบ \"สามคำถาม\" ก่อนเลือกยา และบอกว่าต้องคลุม anaerobe, MRSA และเชื้อราหรือไม่ (4 คะแนน)",
+     "a": "- **ติดที่ไหน**: ช่องท้อง (ลำไส้ใหญ่รั่ว) → Enterobacterales, *Bacteroides fragilis* และ anaerobe อื่น, Enterococcus\n- **ติดจากที่ไหน**: **ติดเชื้อในโรงพยาบาล** + **ได้ ceftriaxone ใน 90 วัน** → **เสี่ยง ESBL และ Pseudomonas**\n- **ผู้ป่วยเป็นใคร**: สูงอายุ AKI (Cr 1.9) ไม่แพ้ยา\n- เลือก **meropenem 1 g IV** (dose แรกเต็ม แล้วหยดนาน ปรับตามไตทีหลัง) — คลุม ESBL, Pseudomonas และ anaerobe ในตัวเดียว (หรือ pip-tazo ถ้าความเสี่ยง ESBL ต่ำ)\n- **Anaerobe: ต้องคลุม** — ช่องท้องเป็นหนึ่งในห้าแหล่งที่ SSC ให้คลุม (meropenem ครอบคลุมแล้ว ไม่ต้องเติม metronidazole)\n- **MRSA**: ไม่ต้องคลุมเป็นกิจวัตร (ไม่มีประวัติ MRSA ไม่ใช่แหล่งที่ staph เด่น)\n- **Antifungal**: ไม่ให้เป็นกิจวัตร — พิจารณาเฉพาะเสี่ยงสูง (ผ่าตัดช่องท้องซ้ำหลายครั้ง ลำไส้ทะลุซ้ำ Candida หลายตำแหน่ง TPN neutropenia)"
+    },
+    {
+     "q": "3. นอกจากยาปฏิชีวนะ สิ่งที่สำคัญที่สุดคืออะไร ต้องทำภายในเวลาเท่าไร และเพราะอะไรยาอย่างเดียวจึงไม่พอ (2 คะแนน)",
+     "a": "- **Source control ภายใน 6 ชม.** — ผ่าตัดซ้ำ (relaparotomy ล้างช่องท้อง แก้รอยรั่ว/ทำ stoma) หรือเจาะระบาย collection ทางผิวหนังถ้าเหมาะสม\n- ในโพรงหนองไม่มีหลอดเลือด ยาเข้าได้น้อย · หนองเป็นกรดและมีเศษ DNA ทำให้ aminoglycoside ไม่ทำงาน · เชื้อจำนวนมากแบ่งตัวช้า beta-lactam ฆ่าได้น้อย · ลำไส้ที่ยังรั่วจะปล่อยเชื้อเข้าช่องท้องต่อเนื่อง"
+    },
+    {
+     "q": "4. วันที่ 3 หลังผ่าตัดซ้ำ ไข้ลง หยุด NE ได้ ผลเพาะเชื้อน้ำในช่องท้อง: *E. coli* ESBL-producing (ไวต่อ meropenem, ertapenem, amikacin; ดื้อ ceftriaxone, ciprofloxacin) และ *Bacteroides fragilis* · hemoculture ไม่ขึ้น จะปรับยาอย่างไร (3 คะแนน)",
+     "a": "- **De-escalate เป็น ertapenem 1 g IV วันละครั้ง** (ลดเป็น 500 mg/วันถ้า CrCl ≤ 30) — carbapenem ที่แคบกว่า (**ไม่คลุม Pseudomonas/Acinetobacter**) แต่ครอบคลุม ESBL *E. coli* และ *B. fragilis* ในตัวเดียว · ลดแรงคัดเลือกเชื้อดื้อ carbapenem ต่อ Pseudomonas\n- ไม่เปลี่ยนเป็น ceftriaxone หรือ ciprofloxacin เพราะเชื้อดื้อ · ไม่ใช้ amikacin เดี่ยวเพราะไม่คลุม anaerobe และไม่ทำงานในหนอง\n- ประเมินทุกวันว่ายังต้องใช้ยาหรือไม่"
+    },
+    {
+     "q": "5. ควรให้ยาปฏิชีวนะนานเท่าไร และผลเสียของการให้ยานานเกินจำเป็นมีอะไรบ้าง (3 คะแนน)",
+     "a": "- คุมแหล่งได้ดีและอาการดีขึ้น → **ระยะสั้นราว 4 วันหลัง source control** (STOP-IT) ไม่ต้องรอจนเม็ดเลือดขาวปกติ · ถ้าอาการไม่ดีขึ้นให้หาแหล่งที่ยังไม่ได้ระบายมากกว่าการยืดยา · PCT ช่วยตัดสินใจหยุดได้เมื่อระยะเวลาไม่ชัด\n- ผลเสีย: ***C. difficile* colitis** (รักษาด้วย vancomycin กิน/fidaxomicin) · **คัดเลือกเชื้อดื้อยา** (เช่น carbapenem-resistant Enterobacterales) · เชื้อราแทรก · พิษไต (เช่น vancomycin + pip-tazo) · แพ้ยา · ค่าใช้จ่ายและนอนโรงพยาบาลนาน"
+    }
+   ],
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — หลักการใช้ยาปฏิชีวนะ 1 · Stewardship · Source control (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – MDR, anaerobic, antifungal coverage, source control",
+    "Sawyer RG et al. STOP-IT. N Engl J Med 2015"
+   ],
+   "nl": [
+    "2.2.48",
+    "B1.7.2",
+    "2.3.11",
+    "3.3.9"
+   ]
+  },
+  {
+   "id": "ID-SEP-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "I04",
+   "lecture": "Septicemia and antibiotic usage (อ.พจน์)",
+   "topic": "OSCE – สื่อสารกับญาติผู้ป่วย septic shock: อธิบายภาวะ แผนการรักษา และเริ่มคุย goals of care",
+   "station": "OSCE (สื่อสาร/ให้ข้อมูลญาติ) 8 นาที",
+   "instruction": "หญิงไทยอายุ 78 ปี เป็นเบาหวานและไตเสื่อมเรื้อรัง มาด้วยไข้ ไอ หอบ 2 วัน วินิจฉัย **septic shock จากปอดอักเสบ** ได้เพาะเชื้อเลือด ยาปฏิชีวนะในชั่วโมงแรก สารน้ำ 30 mL/kg และ norepinephrine ทางหลอดเลือดส่วนปลายแล้ว ความดันยังต่ำกว่าเป้า ปัสสาวะออกน้อย กำลังจะย้าย ICU และอาจต้องใส่ท่อช่วยหายใจ\n\nบุตรสาว (ผู้ป่วยมาตรฐาน) เพิ่งมาถึง กังวลมาก ถามว่า *\"แม่เป็นอะไร ทำไมไม่ให้ยาที่แรงที่สุดตั้งแต่แรก แล้วแม่จะหายไหม\"*\n\n**จงอธิบายภาวะของผู้ป่วย สิ่งที่กำลังทำ ตอบคำถาม และเริ่มพูดคุยเรื่องเป้าหมายการรักษา ภายใน 8 นาที**",
+   "answer": "**เกณฑ์ให้คะแนน (16 คะแนน)**\n\n| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n| 1 | แนะนำตัว ยืนยันตัวตนและความสัมพันธ์ของญาติ หาที่เป็นส่วนตัว นั่งลงสบตา | 1 |\n| 2 | ถามสิ่งที่ญาติรู้อยู่แล้วและความกังวล ก่อนให้ข้อมูล | 1 |\n| 3 | อธิบาย **sepsis/septic shock เป็นภาษาง่าย**: \"ติดเชื้อที่ปอด และร่างกายตอบสนองต่อเชื้อรุนแรงจนความดันตก ไตทำงานลดลง\" — เลี่ยงศัพท์แพทย์ หรืออธิบายเมื่อใช้ | 2 |\n| 4 | บอกสิ่งที่ทำไปแล้ว: เพาะเชื้อ **ยาฆ่าเชื้อในชั่วโมงแรก** น้ำเกลือ **ยาพยุงความดัน** และแผนย้าย ICU | 2 |\n| 5 | ตอบเรื่อง \"ยาแรงที่สุด\": เลือกยาตามแหล่งติดเชื้อและความเสี่ยงเชื้อดื้อยาซึ่งครอบคลุมเชื้อที่น่าจะเป็นแล้ว **ขนาดเต็มตั้งแต่โดสแรก** · เมื่อรู้เชื้อจะปรับให้ตรงเชื้อ (de-escalate) · ยากว้างเกินจำเป็นเพิ่มเชื้อดื้อยา ท้องเสียจากยา และพิษต่อไต | 2 |\n| 6 | บอก **พยากรณ์อย่างตรงไปตรงมา**: ภาวะรุนแรง เสี่ยงเสียชีวิตสูง 24–72 ชม. แรกเปลี่ยนแปลงเร็ว อาจต้องใส่ท่อช่วยหายใจหรือฟอกไต — ไม่ให้ความหวังเกินจริงและไม่ตัดความหวัง | 2 |\n| 7 | **เริ่มคุย goals of care**: ถามค่านิยมและสิ่งที่ผู้ป่วยเคยบอกไว้ (เคยพูดถึงการใส่ท่อ ปั๊มหัวใจ หรือไม่) ใครเป็นผู้ตัดสินใจแทน · บอกว่าจะคุยต่อเนื่องร่วมกับทีม ICU (SSC แนะนำภายใน 72 ชม.) | 2 |\n| 8 | รับรู้และตอบสนองอารมณ์ (empathy, ให้เวลาเงียบ) เปิดโอกาสให้ถาม ตรวจความเข้าใจ (teach-back) | 2 |\n| 9 | สรุป บอกช่องทางติดต่อและเวลาที่จะแจ้งความคืบหน้าครั้งถัดไป เสนอให้ญาติคนอื่นร่วมฟัง | 1 |\n| 10 | ภาพรวม: ลำดับดี ไม่รีบ ไม่ใช้ศัพท์แพทย์ ข้อมูลถูกต้อง | 1 |\n\n**ข้อผิดพลาดที่ตัดคะแนน**: รับปากว่าจะหายแน่นอน · โทษญาติที่พามาช้า · บอกว่า \"ให้ยาแรงสุดแล้ว\" โดยไม่อธิบายหลักการ · ตัดสินใจเรื่องการกู้ชีพแทนญาติโดยไม่ถามค่านิยมของผู้ป่วย",
+   "ref": [
+    "คาบ อ.พจน์ (Sepsis / Principle ATB) — ดูแลต่อใน ICU และการสื่อสาร (คุยกับญาติ NL3) (สรุปใน Learn; สไลด์เป็นภาพ)",
+    "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (CCM/ICM 2026) – goals of care"
+   ],
+   "nl": [
+    "2.2.48",
+    "2.2.7",
+    "B1.7.2"
+   ]
+  }
+ ]
+}

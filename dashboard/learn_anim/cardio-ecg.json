@@ -1,0 +1,272 @@
+{
+ "set": "cardio",
+ "items": [
+  {
+   "sec": "cardio-ecg-06",
+   "after": "Re-entry — กลไกร่วมของ tachycardia ส่วนใหญ่",
+   "anim": {
+    "key": "c36-flutter",
+    "title": "Atrial flutter — วงไฟฟ้ารอบ tricuspid annulus สร้างฟันเลื่อย 300 แล้ว AV node ส่งลง 2:1 = 150",
+    "svg": "<svg viewBox=\"0 0 440 404\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: คลื่นไฟฟ้าวนรอบลิ้น tricuspid ใน atrium ขวาราว 300 รอบต่อนาที เกิดคลื่น F ฟันเลื่อยใน lead II AV node ส่งลงได้หนึ่งในสอง ventricle เต้น 150 ครั้งต่อนาที เมื่อให้ adenosine QRS หายชั่วคราวเผยคลื่นฟันเลื่อย\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"138\" y=\"24\" class=\"xs b mid tac\">macro re-entry วนรอบ tricuspid annulus</text><rect x=\"16\" y=\"34\" width=\"244\" height=\"206\" rx=\"36\" class=\"sk\"/><text x=\"30\" y=\"56\" class=\"xs b mu\">Right atrium</text><circle cx=\"150\" cy=\"132\" r=\"40\" class=\"bx\"/><text x=\"150\" y=\"130\" class=\"b mid\">TV</text><text x=\"150\" y=\"146\" class=\"xs mid mu\">tricuspid</text><circle cx=\"52\" cy=\"210\" r=\"14\" class=\"bx\"/><text x=\"52\" y=\"214\" class=\"xs mid\">IVC</text><path d=\"M150,70 A68,62 0 0,0 150,194 A68,62 0 0,0 150,70\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><circle cx=\"150\" cy=\"70\" r=\"6\" class=\"waf\"><animateMotion dur=\"2s\" repeatCount=\"indefinite\" path=\"M150,70 A68,62 0 0,0 150,194 A68,62 0 0,0 150,70\"/></circle><text x=\"150\" y=\"212\" class=\"xs b mid twa\">CTI (isthmus)</text><path d=\"M262,96 L308,84\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><circle cx=\"330\" cy=\"80\" r=\"18\" class=\"ms\"/><text x=\"330\" y=\"85\" class=\"sm b mid\">AV</text><path d=\"M330,100 L330,146\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><rect x=\"284\" y=\"150\" width=\"140\" height=\"76\" rx=\"16\" class=\"bx\"/><text x=\"354\" y=\"178\" class=\"b mid\">Ventricle</text><g data-s=\"2\"><text x=\"312\" y=\"116\" class=\"xs b end twa\">300/นาที</text><text x=\"312\" y=\"130\" class=\"xs end mu\">(คลื่น F)</text></g><rect x=\"16\" y=\"252\" width=\"408\" height=\"96\" rx=\"8\" class=\"sk\"/><text x=\"24\" y=\"270\" class=\"xs b\">lead II</text><polyline points=\"30,312 43,326 46,329 50,312 63,326 66,329 70,312 83,326 86,329 90,312 103,326 106,329 110,312 123,326 126,329 130,312 143,326 146,329 150,312 163,326 166,329 170,312 183,326 186,329 190,312 203,326 206,329 210,312 223,326 226,329 230,312 243,326 246,329 250,312 263,326 266,329 270,312 283,326 286,329 290,312 303,326 306,329 310,312 323,326 326,329 330,312 343,326 346,329 350,312 363,326 366,329 370,312 383,326 386,329 390,312 403,326 406,329 410,312\" class=\"lwa w2\" data-s=\"2\"/><text x=\"416\" y=\"342\" class=\"xs end twa b\" data-s=\"2\">คลื่น F ฟันเลื่อย ~300/นาที (II, III, aVF)</text><g data-s=\"3\"><text x=\"354\" y=\"74\" class=\"xs b tac\">ผ่าน 1 ใน 2</text><text x=\"354\" y=\"90\" class=\"xs mu\">(ระยะดื้อ)</text></g><text x=\"354\" y=\"208\" class=\"xs b mid tac\" data-s=\"3\">150/นาที สม่ำเสมอ</text><text x=\"72\" y=\"270\" class=\"xs b tac\" data-s=\"3\">QRS ทุก 2 คลื่น F → 150</text><polyline points=\"32,313 34,316 37,280 40,321 42,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"72,313 74,316 77,280 80,321 82,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"112,313 114,316 117,280 120,321 122,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"152,313 154,316 157,280 160,321 162,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"192,313 194,316 197,280 200,321 202,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"232,313 234,316 237,280 240,321 242,313\" class=\"lac w2\" data-s=\"3\"/><polyline points=\"272,313 274,316 277,280 280,321 282,313\" class=\"lac w2\" data-s=\"3\" data-x=\"4\"/><polyline points=\"312,313 314,316 317,280 320,321 322,313\" class=\"lac w2\" data-s=\"3\" data-x=\"4\"/><polyline points=\"352,313 354,316 357,280 360,321 362,313\" class=\"lac w2\" data-s=\"3\" data-x=\"4\"/><polyline points=\"392,313 394,316 397,280 400,321 402,313\" class=\"lac w2\" data-s=\"3\" data-x=\"4\"/><g data-s=\"4\"><text x=\"330\" y=\"54\" class=\"xs b mid tbad\">adenosine / vagal</text><g class=\"pl\"><line x1=\"318\" y1=\"126\" x2=\"342\" y2=\"126\" class=\"lbad w5\"/></g></g><text x=\"414\" y=\"270\" class=\"xs b end tbad\" data-s=\"4\">adenosine → QRS หาย เห็น F ชัด</text><line x1=\"266\" y1=\"278\" x2=\"414\" y2=\"278\" class=\"lbad w2 da\" data-s=\"4\"/><g data-s=\"5\"><text x=\"150\" y=\"228\" class=\"xs mid mu\">จุดที่ ablation ตัดวง</text><g class=\"pl\"><line x1=\"150\" y1=\"186\" x2=\"150\" y2=\"202\" class=\"lbad w5\"/></g></g><g data-s=\"5\"><text x=\"220\" y=\"372\" class=\"sm b mid tac\">HR 150 สม่ำเสมอ QRS แคบ → นึกถึง flutter 2:1</text><text x=\"220\" y=\"392\" class=\"xs mid\">วงอยู่ใน atrium: adenosine ไม่หยุด flutter (ต่างจาก AVNRT)</text></g></svg>",
+    "steps": [
+     {
+      "t": "วงจรใหญ่ใน right atrium",
+      "cap": "Typical flutter = **macro re-entry วนรอบ tricuspid annulus** โดยต้องผ่านช่องแคบระหว่างลิ้นกับ IVC (**cavotricuspid isthmus, CTI**) · วงยาวพอให้เนื้อเยื่อข้างหน้าฟื้นทันทุกรอบ จึงวนต่อเนื่องได้"
+     },
+     {
+      "t": "1 รอบ = 1 คลื่น F (~300/นาที)",
+      "cap": "ไฟฟ้าวนครบรอบประมาณ **300 ครั้ง/นาที** → atrium depolarize ต่อเนื่องไม่มีเส้นฐานพัก → **คลื่น F ฟันเลื่อย** เห็นชัดใน **II, III, aVF** (inferior leads)"
+     },
+     {
+      "t": "AV node กรอง 2:1 → HR 150",
+      "cap": "AV node มีระยะดื้อ ส่ง 300 ครั้งลงไม่ไหว → ผ่านได้ **1 ใน 2** → ventricle **150/นาที สม่ำเสมอ QRS แคบ** · คลื่น F อีกตัวมักซ่อนใน QRS/T จึงพลาดเป็น sinus tachy ได้ง่าย"
+     },
+     {
+      "t": "Adenosine/vagal เผยฟันเลื่อย",
+      "cap": "adenosine ทำให้ **AV node ไม่นำไฟฟ้าชั่วขณะ** → QRS หายไปไม่กี่วินาที เห็นคลื่น F เรียงชัด · แต่ **วงอยู่ใน atrium ไม่ผ่าน AV node** → flutter ไม่หยุด (ต่างจาก AVNRT ที่วงต้องผ่าน AV node)"
+     },
+     {
+      "t": "สรุป: HR 150 = นึกถึง flutter 2:1",
+      "cap": "**HR ~150 สม่ำเสมอ QRS แคบ → นึกถึง flutter 2:1 เสมอ** หาคลื่น F ใน II, III, aVF (หรือ Lewis lead) · วงต้องผ่าน CTI จึงเป็นจุดที่ **ablation ตัดวงให้หายขาด** (แนวทาง)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ecg-11",
+   "after": "ทำไม Mobitz I PR ยาวขึ้นทีละน้อย แต่ Mobitz II ไม่เตือน (สไลด์)",
+   "anim": {
+    "key": "c36-wenckebach",
+    "title": "Wenckebach ทีละจังหวะ — AV node ล้าจน PR ยาวขึ้นแล้วหลุด เทียบ Mobitz II",
+    "svg": "<svg viewBox=\"0 0 440 450\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ladder diagram ของ Mobitz I แสดง PR ยาวขึ้น 0.20 0.30 0.34 วินาที จน P ตัวที่สี่ไม่ลง แล้ว PR กลับเป็น 0.20 เทียบกับ Mobitz II ที่ PR คงที่แล้วหลุดทันที\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"22\" class=\"sm b mid\">Mobitz I (Wenckebach) — ladder diagram</text><rect x=\"30\" y=\"32\" width=\"404\" height=\"102\" rx=\"8\" class=\"sk\"/><text x=\"36\" y=\"48\" class=\"xs b\">lead II</text><line x1=\"34\" y1=\"100\" x2=\"430\" y2=\"100\" class=\"ln w2\"/><rect x=\"34\" y=\"164\" width=\"400\" height=\"72\" rx=\"0\" class=\"sk\"/><line x1=\"34\" y1=\"140\" x2=\"434\" y2=\"140\" class=\"lmu\"/><line x1=\"34\" y1=\"164\" x2=\"434\" y2=\"164\" class=\"lmu\"/><line x1=\"34\" y1=\"236\" x2=\"434\" y2=\"236\" class=\"lmu\"/><line x1=\"34\" y1=\"260\" x2=\"434\" y2=\"260\" class=\"lmu\"/><text x=\"20\" y=\"156\" class=\"xs b mid\">A</text><text x=\"20\" y=\"204\" class=\"xs b mid\">AV</text><text x=\"20\" y=\"252\" class=\"xs b mid\">V</text><path d=\"M36,100 Q42,86 48,100\" class=\"lwa w2\"/><path d=\"M36,140 L44,164\" class=\"lwa w3\"/><g><path d=\"M64,100 L66,103 L69,60 L72,106 L74,100\" class=\"ln w2\"/><path d=\"M80,100 Q88,86 96,100\" class=\"ln w2\"/><path d=\"M44,164 L64,236 L70,260\" class=\"lac w3\"/><line x1=\"36\" y1=\"116\" x2=\"64\" y2=\"116\" class=\"lac w2\"/><text x=\"50.0\" y=\"129\" class=\"xs b mid tac\">0.20</text></g><path d=\"M118,100 Q124,86 130,100\" class=\"lwa w2\"/><path d=\"M118,140 L126,164\" class=\"lwa w3\"/><g data-s=\"2\"><path d=\"M160,100 L162,103 L165,60 L168,106 L170,100\" class=\"ln w2\"/><path d=\"M176,100 Q184,86 192,100\" class=\"ln w2\"/><path d=\"M126,164 L160,236 L166,260\" class=\"lac w3\"/><line x1=\"118\" y1=\"116\" x2=\"160\" y2=\"116\" class=\"lac w2\"/><text x=\"139.0\" y=\"129\" class=\"xs b mid tac\">0.30</text></g><path d=\"M200,100 Q206,86 212,100\" class=\"lwa w2\"/><path d=\"M200,140 L208,164\" class=\"lwa w3\"/><g data-s=\"3\"><path d=\"M248,100 L250,103 L253,60 L256,106 L258,100\" class=\"ln w2\"/><path d=\"M264,100 Q272,86 280,100\" class=\"ln w2\"/><path d=\"M208,164 L248,236 L254,260\" class=\"lac w3\"/><line x1=\"200\" y1=\"116\" x2=\"248\" y2=\"116\" class=\"lac w2\"/><text x=\"224.0\" y=\"129\" class=\"xs b mid tac\">0.34</text></g><path d=\"M282,100 Q288,86 294,100\" class=\"lwa w2\"/><path d=\"M282,140 L290,164\" class=\"lwa w3\"/><path d=\"M364,100 Q370,86 376,100\" class=\"lwa w2\"/><path d=\"M364,140 L372,164\" class=\"lwa w3\"/><g data-s=\"5\"><path d=\"M392,100 L394,103 L397,60 L400,106 L402,100\" class=\"ln w2\"/><path d=\"M408,100 Q416,86 424,100\" class=\"ln w2\"/><path d=\"M372,164 L392,236 L398,260\" class=\"lac w3\"/><line x1=\"364\" y1=\"116\" x2=\"392\" y2=\"116\" class=\"lac w2\"/><text x=\"378.0\" y=\"129\" class=\"xs b mid tac\">0.20</text></g><g data-s=\"4\"><path d=\"M290,164 L308,200\" class=\"lbad w3\"/><line x1=\"300\" y1=\"206\" x2=\"316\" y2=\"196\" class=\"lbad w3\"/><text x=\"322\" y=\"206\" class=\"xs b tbad\">ไม่ลง</text><text x=\"288\" y=\"129\" class=\"xs b mid tbad\">หลุด</text></g><text x=\"34\" y=\"282\" class=\"xs\" data-s=\"2\">AV node นำด้วย Ca channel ฟื้นช้า → ยิ่งมาติดกันยิ่งนำช้า</text><text x=\"34\" y=\"300\" class=\"xs\" data-s=\"3\">PR ยาวขึ้น แต่เพิ่มทีละน้อยลง (+0.10 → +0.04 s)</text><text x=\"34\" y=\"318\" class=\"xs tbad\" data-s=\"4\">P ตัวที่ 4 ไม่ลง = AV node ได้พัก (dropped QRS)</text><text x=\"34\" y=\"336\" class=\"xs tok\" data-s=\"5\">ฟื้นแล้ว PR กลับสั้นสุด → วนรอบใหม่ (4:3)</text><g data-s=\"6\"><rect x=\"30\" y=\"348\" width=\"404\" height=\"96\" rx=\"8\" class=\"sk\"/><text x=\"36\" y=\"364\" class=\"xs b tbad\">เทียบ Mobitz II: PR คงที่ แล้วหลุดทันที (His–Purkinje)</text><line x1=\"34\" y1=\"422\" x2=\"430\" y2=\"422\" class=\"ln w2\"/><path d=\"M56,422 Q62,408 68,422\" class=\"lwa w2\"/><path d=\"M78,422 L81,426 L85,388 L91,428 L94,422\" class=\"ln w2\"/><path d=\"M102,422 Q110,410 118,422\" class=\"ln w2\"/><text x=\"67\" y=\"440\" class=\"xs mid tac\">0.16</text><path d=\"M138,422 Q144,408 150,422\" class=\"lwa w2\"/><path d=\"M160,422 L163,426 L167,388 L173,428 L176,422\" class=\"ln w2\"/><path d=\"M184,422 Q192,410 200,422\" class=\"ln w2\"/><text x=\"149\" y=\"440\" class=\"xs mid tac\">0.16</text><path d=\"M220,422 Q226,408 232,422\" class=\"lwa w2\"/><path d=\"M242,422 L245,426 L249,388 L255,428 L258,422\" class=\"ln w2\"/><path d=\"M266,422 Q274,410 282,422\" class=\"ln w2\"/><text x=\"231\" y=\"440\" class=\"xs mid tac\">0.16</text><path d=\"M302,422 Q308,408 314,422\" class=\"lwa w2\"/><text x=\"308\" y=\"440\" class=\"xs b mid tbad\">ไม่ลง</text><path d=\"M384,422 Q390,408 396,422\" class=\"lwa w2\"/><path d=\"M406,422 L409,426 L413,388 L419,428 L422,422\" class=\"ln w2\"/></g></svg>",
+    "steps": [
+     {
+      "t": "จังหวะแรก: PR 0.20 s",
+      "cap": "แถวบนคือ ECG แถวล่างคือ **ladder diagram**: A = atrium · AV = เวลาที่ไฟฟ้าใช้ผ่าน AV node (เส้นยิ่งเอียง = ยิ่งช้า) · V = ventricle · P มาตรงเวลาสม่ำเสมอ (sinus) จังหวะแรกผ่านด้วย PR 0.20 s"
+     },
+     {
+      "t": "AV node ยังไม่หายเหนื่อย → PR 0.30",
+      "cap": "AV node นำไฟฟ้าด้วย **Ca channel ที่ฟื้นตัวช้า** → P ตัวถัดไปมาเจอเซลล์ที่ยังฟื้นไม่เต็ม → นำช้าลง (**decremental conduction**) → PR ยาวขึ้น"
+     },
+     {
+      "t": "ช้าลงอีก → PR 0.34",
+      "cap": "PR ยาวขึ้นต่อแต่ **เพิ่มทีละน้อยลง** (+0.10 แล้ว +0.04 s) · ยังไม่มี P หลุด — นี่คือ \"สัญญาณเตือน\" ที่ Mobitz II ไม่มี"
+     },
+     {
+      "t": "P ตัวที่ 4 ไม่ลง (dropped QRS)",
+      "cap": "เซลล์ AV node ยังดื้ออยู่ → P ส่งลงไม่ได้ 1 ตัว → **มี P แต่ไม่มี QRS** · ช่วงนี้ AV node ได้พักเต็มที่"
+     },
+     {
+      "t": "ฟื้นแล้ว PR กลับสั้นสุด",
+      "cap": "P ถัดไปลงด้วย **PR สั้นสุด (0.20 s)** แล้ววนรอบใหม่ (4 P : 3 QRS) · จำ: **PR ยาวสุดก่อนหลุด สั้นสุดหลังหลุด** · สาเหตุมักกลับคืนได้ (vagal สูง ยา β-blocker/non-DHP CCB/digoxin, ischemia)"
+     },
+     {
+      "t": "เทียบ Mobitz II — ไม่มีสัญญาณเตือน",
+      "cap": "Mobitz II block ที่ **His–Purkinje** (Na channel แบบ all-or-none) → **PR คงที่ทุกตัว แล้ว P หลุดทันที** มัก QRS กว้าง เสี่ยง CHB ฉับพลัน · **Mobitz I → conservative · Mobitz II → pacemaker**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ecg-12",
+   "after": "กลไก (สไลด์)",
+   "anim": {
+    "key": "c36-rbbb",
+    "title": "RBBB ทีละขั้น — septum → LV → RV มาทีหลัง จึงได้ rsR' (M) ใน V1",
+    "svg": "<svg viewBox=\"0 0 440 444\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: right bundle ขาด ไฟฟ้า depolarize septum จากซ้ายไปขวา แล้ว LV ผ่านทางด่วน แล้ว RV มาทีหลังแบบเซลล์ต่อเซลล์ สร้าง rsR' รูป M ใน V1 และ S กว้างรูป W ใน V6\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"22\" class=\"sm b mid\">RBBB — ลำดับการ depolarize สร้างรูป QRS</text><rect x=\"120\" y=\"56\" width=\"200\" height=\"180\" rx=\"60\" class=\"bx\"/><line x1=\"220\" y1=\"72\" x2=\"220\" y2=\"226\" class=\"ln w3\"/><text x=\"152\" y=\"104\" class=\"lg b mid\">RV</text><text x=\"282\" y=\"150\" class=\"lg b mid\">LV</text><path d=\"M216,52 L212,196 Q206,218 168,214\" class=\"lok w3\"/><path d=\"M224,52 L228,196 Q234,218 272,214\" class=\"lok w3\"/><circle cx=\"220\" cy=\"46\" r=\"9\" class=\"ms\"/><text x=\"236\" y=\"44\" class=\"xs mu\">His</text><line x1=\"205\" y1=\"112\" x2=\"221\" y2=\"128\" class=\"lbad w3\"/><line x1=\"221\" y1=\"112\" x2=\"205\" y2=\"128\" class=\"lbad w3\"/><text x=\"200\" y=\"124\" class=\"xs b end tbad\">RB ขาด</text><circle cx=\"66\" cy=\"96\" r=\"14\" class=\"wa\"/><text x=\"66\" y=\"100\" class=\"xs b mid\">V1</text><text x=\"66\" y=\"128\" class=\"xs mid mu\">มองจากขวา</text><circle cx=\"380\" cy=\"140\" r=\"14\" class=\"wa\"/><text x=\"380\" y=\"144\" class=\"xs b mid\">V6</text><text x=\"380\" y=\"172\" class=\"xs mid mu\">มองจากซ้าย</text><rect x=\"16\" y=\"280\" width=\"200\" height=\"112\" rx=\"10\" class=\"sk\"/><text x=\"28\" y=\"298\" class=\"b\">V1</text><rect x=\"224\" y=\"280\" width=\"200\" height=\"112\" rx=\"10\" class=\"sk\"/><text x=\"236\" y=\"298\" class=\"b\">V6</text><line x1=\"28\" y1=\"350\" x2=\"52\" y2=\"350\" class=\"ln w2\"/><line x1=\"236\" y1=\"350\" x2=\"260\" y2=\"350\" class=\"ln w2\"/><g data-s=\"2\"><path d=\"M246,96 L200,96\" class=\"lac w3\" marker-end=\"url(#ah-ac)\"/><text x=\"250\" y=\"90\" class=\"xs b tac\">1 septum ซ้าย→ขวา</text><polyline points=\"52,350 58,338 64,350\" class=\"lac w3\"/><text x=\"58\" y=\"332\" class=\"xs b mid tac\">r</text><polyline points=\"260,350 264,357 268,350\" class=\"lac w3\"/><text x=\"264\" y=\"370\" class=\"xs b mid tac\">q</text></g><g data-s=\"3\"><path d=\"M240,190 L334,158\" class=\"lac w5\" marker-end=\"url(#ah-ac)\"/><text x=\"290\" y=\"204\" class=\"xs b mid tac\">2 LV (ทางด่วนซ้าย)</text><polyline points=\"64,350 70,366 76,350\" class=\"lac w3\"/><text x=\"70\" y=\"380\" class=\"xs b mid tac\">S</text><polyline points=\"268,350 278,310 288,350\" class=\"lac w3\"/><text x=\"278\" y=\"304\" class=\"xs b mid tac\">R</text></g><g data-s=\"4\"><path d=\"M208,206 Q170,196 132,146\" class=\"lbad w3 fl sl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"208\" cy=\"206\" r=\"5\" class=\"badf\"><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M208,206 Q170,196 132,146\"/></circle><text x=\"170\" y=\"256\" class=\"xs b mid tbad\">3 RV มาทีหลัง — เซลล์ต่อเซลล์ (ช้า)</text><polyline points=\"76,350 86,310 98,350\" class=\"lbad w3\"/><text x=\"86\" y=\"304\" class=\"xs b mid tbad\">R'</text><line x1=\"52\" y1=\"384\" x2=\"98\" y2=\"384\" class=\"lbad w2\"/><text x=\"104\" y=\"388\" class=\"xs b tbad\">≥ 0.12 s</text><polyline points=\"288,350 294,364 314,353 320,350\" class=\"lbad w3\"/><text x=\"312\" y=\"376\" class=\"xs b mid tbad\">S กว้าง</text></g><g data-s=\"5\"><path d=\"M98,350 L104,352 Q118,370 134,350 L204,350\" class=\"ln w2\"/><path d=\"M320,350 Q336,332 352,350 L412,350\" class=\"ln w2\"/><text x=\"186\" y=\"330\" class=\"lg b mid tac\">M</text><text x=\"400\" y=\"330\" class=\"lg b mid tac\">W</text><text x=\"220\" y=\"414\" class=\"sm b mid tac\">RBBB: M ใน V1 · W ใน V6 = MaRRoW</text><text x=\"220\" y=\"434\" class=\"xs mid\">LBBB: septum ขวา→ซ้าย + LV ทีหลัง → W ใน V1 · M ใน V6 = WiLLiaM</text></g></svg>",
+    "steps": [
+     {
+      "t": "Right bundle ขาด",
+      "cap": "ทางด่วนข้างขวาขาด → RV ไม่ได้ไฟฟ้าจากทางด่วน ต้องรอไฟฟ้า **ซึมผ่านกล้ามเนื้อจากฝั่งซ้าย (เซลล์ต่อเซลล์)** · หลักอ่าน: ไฟฟ้าวิ่ง **เข้าหา** lead = คลื่นตั้ง · **หนี** = คลื่นคว่ำ"
+     },
+     {
+      "t": "1) Septum depolarize ซ้าย→ขวา (ปกติ)",
+      "cap": "septum ได้ไฟฟ้าจาก **left bundle** ซึ่งยังดี → วิ่งจากซ้ายไปขวา **เข้าหา V1 = r เล็ก** และหนี V6 = **q เล็ก (septal q)** — ส่วนนี้เหมือนคนปกติ"
+     },
+     {
+      "t": "2) LV depolarize ผ่านทางด่วนซ้าย",
+      "cap": "LV มวลมากได้ไฟฟ้าเร็วตามปกติ → แรงก้อนใหญ่ชี้ไปซ้าย **หนี V1 = S** · **เข้าหา V6 = R สูง**"
+     },
+     {
+      "t": "3) RV มาทีหลังแบบช้า → R' กว้าง",
+      "cap": "RV depolarize **ทีหลังและช้า** แรงช่วงท้ายชี้ไปขวาหน้า → **เข้าหา V1 = R' (rsR')** · หนี V6 = **S กว้าง** · ช่วงที่ต่อท้ายนี้ทำให้ **QRS ≥ 0.12 s**"
+     },
+     {
+      "t": "สรุป: MaRRoW vs WiLLiaM",
+      "cap": "ST–T ชี้ **สวนทางส่วนท้ายของ QRS** (secondary change: T กลับใน V1) · **RBBB = M ใน V1 · W ใน V6** · LBBB กลับกัน: septum ขวา→ซ้าย + LV มาทีหลัง → **W ใน V1 · M ใน V6** · RBBB พบในคนปกติได้ ส่วน LBBB มักมีโรคหัวใจ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "cardio-ecg-13",
+   "after": "ทำไมถึงมีอาการนี้ (hyperK)",
+   "anim": {
+    "key": "c36-hyperk",
+    "title": "HyperK ที่เยื่อหุ้มเซลล์ — ศักย์พักบวกขึ้นจน ECG เปลี่ยน และ calcium ช่วยอย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 452\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: K นอกเซลล์สูงทำให้ศักย์พักของเซลล์หัวใจบวกขึ้นเข้าใกล้ threshold ECG เปลี่ยนจาก T สูงแหลม เป็น P แบน QRS กว้าง จนเป็น sine wave และ calcium gluconate เลื่อน threshold ขึ้นให้ช่องห่างกลับมา\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"22\" class=\"sm b mid\">K⁺ นอกเซลล์สูง → ศักย์พักบวกขึ้น → Na⁺ channel ใช้ไม่ได้</text><text x=\"110\" y=\"52\" class=\"xs b mid\">ศักย์เยื่อหุ้มเซลล์ (mV)</text><text x=\"326\" y=\"52\" class=\"xs b mid\">ECG</text><line x1=\"62\" y1=\"80\" x2=\"62\" y2=\"262\" class=\"ln w2\"/><line x1=\"58\" y1=\"97\" x2=\"62\" y2=\"97\" class=\"ln w2\"/><text x=\"54\" y=\"101\" class=\"xs end mu\">−60</text><line x1=\"58\" y1=\"147\" x2=\"62\" y2=\"147\" class=\"ln w2\"/><text x=\"54\" y=\"151\" class=\"xs end mu\">−70</text><line x1=\"58\" y1=\"197\" x2=\"62\" y2=\"197\" class=\"ln w2\"/><text x=\"54\" y=\"201\" class=\"xs end mu\">−80</text><line x1=\"58\" y1=\"247\" x2=\"62\" y2=\"247\" class=\"ln w2\"/><text x=\"54\" y=\"251\" class=\"xs end mu\">−90</text><line x1=\"62\" y1=\"172\" x2=\"204\" y2=\"172\" class=\"lms w2 da\" data-x=\"5\"/><text x=\"204\" y=\"166\" class=\"xs end tms\" data-x=\"5\">threshold ≈ −75</text><line x1=\"62\" y1=\"247\" x2=\"204\" y2=\"247\" class=\"lok w3\" data-x=\"2\"/><text x=\"204\" y=\"261\" class=\"xs end tok\" data-x=\"2\">resting −90 (ปกติ)</text><g data-x=\"2\"><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"180\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><text x=\"96\" y=\"216\" class=\"xs b tok\">ห่าง ~15 mV</text></g><g data-s=\"2\"><line x1=\"62\" y1=\"197\" x2=\"204\" y2=\"197\" class=\"lbad w3\"/><text x=\"204\" y=\"211\" class=\"xs end tbad\">resting ≈ −80 (K สูง)</text></g><g data-s=\"2\" data-x=\"5\"><line x1=\"90\" y1=\"194\" x2=\"90\" y2=\"178\" class=\"lbad w2\"/><text x=\"96\" y=\"189\" class=\"xs b tbad\">ห่างแค่ ~5</text></g><text x=\"226\" y=\"72\" class=\"xs b\">ปกติ</text><path d=\"M224,110 L232,110 Q238,102 244,110 L256,110 L259,113 L263,82 L267,116 L270,110 L288,110 Q302,96 316,110 L326,110\" class=\"lac w2\"/><path d=\"M326,110 L334,110 Q340,102 346,110 L358,110 L361,113 L365,82 L369,116 L372,110 L390,110 Q404,96 418,110 L428,110\" class=\"lac w2\"/><g data-s=\"2\"><text x=\"226\" y=\"142\" class=\"xs b tbad\">K ~5.5–6.5: T สูงแหลมฐานแคบ</text><path d=\"M224,180 L232,180 Q238,172 244,180 L256,180 L259,183 L263,152 L267,186 L270,180 L292,180 L301,150 L310,180 L326,180\" class=\"lbad w2\"/><path d=\"M326,180 L334,180 Q340,172 346,180 L358,180 L361,183 L365,152 L369,186 L372,180 L394,180 L403,150 L412,180 L428,180\" class=\"lbad w2\"/></g><g data-s=\"3\"><text x=\"226\" y=\"212\" class=\"xs b tbad\">~6.5–8: P แบน PR ยาว QRS กว้าง</text><path d=\"M224,250 L232,250 Q238,247 244,250 L264,250 L274,228 L286,258 L294,250 Q306,228 318,250 L326,250\" class=\"lbad w2\"/><path d=\"M326,250 L334,250 Q340,247 346,250 L366,250 L376,228 L388,258 L396,250 Q408,228 420,250 L428,250\" class=\"lbad w2\"/></g><g data-s=\"4\"><text x=\"226\" y=\"282\" class=\"xs b tbad\">&gt; 8: sine wave → VF / asystole</text><path d=\"M224,320 Q237,264 250,320 T276,320 T302,320 T328,320 T354,320 T380,320 T406,320\" class=\"lbad w3\"/></g><g data-s=\"3\"><rect x=\"16\" y=\"270\" width=\"192\" height=\"62\" rx=\"8\" class=\"bad\"/><text x=\"112\" y=\"288\" class=\"xs b mid tbad\">depolarize ค้าง</text><text x=\"112\" y=\"304\" class=\"xs mid\">→ Na⁺ channel ถูก inactivate</text><text x=\"112\" y=\"320\" class=\"xs mid\">→ phase 0 ช้า → นำไฟฟ้าช้า</text></g><text x=\"112\" y=\"350\" class=\"xs mid tbad\" data-s=\"4\">กล้ามเนื้อลายอ่อนแรง (กลไกเดียวกัน)</text><g data-s=\"5\"><line x1=\"62\" y1=\"97\" x2=\"204\" y2=\"97\" class=\"lok w2 da\"/><text x=\"204\" y=\"91\" class=\"xs b end tok\">threshold ≈ −60 (Ca²⁺)</text><line x1=\"130\" y1=\"194\" x2=\"130\" y2=\"105\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><text x=\"136\" y=\"150\" class=\"xs b tok\">ห่างกลับมา</text><rect x=\"16\" y=\"360\" width=\"414\" height=\"84\" rx=\"10\" class=\"ok\"/><text x=\"223\" y=\"382\" class=\"sm b mid tok\">Calcium gluconate IV — เสถียร membrane ในไม่กี่นาที</text><text x=\"223\" y=\"402\" class=\"xs mid\">ไม่ได้ลด K → ย้ายเข้าเซลล์: insulin + glucose · salbutamol</text><text x=\"223\" y=\"420\" class=\"xs mid\">แล้วขับออก: loop diuretic · K binder · hemodialysis</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: ศักย์พัก −90 ห่าง threshold",
+      "cap": "ศักย์พัก (resting) ของเซลล์หัวใจกำหนดโดย **สัดส่วน K ในเซลล์/นอกเซลล์** · ปกติ ≈ −90 mV ห่าง threshold พอสมควร → Na⁺ channel พร้อมเปิดเต็มที่ upstroke ชัน นำไฟฟ้าเร็ว (ตัวเลขเป็นค่าโดยประมาณเพื่อเข้าใจกลไก)"
+     },
+     {
+      "t": "K สูง → T สูงแหลม",
+      "cap": "K นอกเซลล์สูง → gradient ลด → **ศักย์พักบวกขึ้น (≈ −80)** · และ K channel (IKr) นำมากขึ้น → **repolarize เร็ว = T สูงแหลมฐานแคบ** (K ~5.5–6.5)"
+     },
+     {
+      "t": "K สูงขึ้นอีก → นำไฟฟ้าช้า",
+      "cap": "เยื่อหุ้มถูก depolarize ค้าง → **Na⁺ channel ถูก inactivate** บางส่วน → phase 0 ช้า → นำไฟฟ้าช้าทั้ง atrium และ ventricle → **P แบน/หาย · PR ยาว · QRS กว้าง** (~6.5–8)"
+     },
+     {
+      "t": "> 8: sine wave → VF/asystole",
+      "cap": "นำช้ามากจน QRS รวมกับ T เป็น **sine wave** → re-entry (VF) หรือหยุดนำ (asystole) · กลไกเดียวกันทำให้ **กล้ามเนื้อลายอ่อนแรง** · ตัวเลข K เป็นค่าประมาณ — **ECG ปกติไม่ได้ตัด hyperK อันตราย**"
+     },
+     {
+      "t": "Calcium gluconate: ดึงช่องห่างกลับ",
+      "cap": "**Ca gluconate 10% 10 mL IV** ทำให้ **threshold ขยับขึ้น** ห่างจากศักย์พักอีกครั้ง → หัวใจเสถียรในไม่กี่นาที แต่ **ไม่ได้ลด K** (อยู่ 30–60 นาที) → ต้องตามด้วยย้าย K เข้าเซลล์และขับ K ออก"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "cardio-ecg-03",
+   "name": "300 – 150 – 100 – 75 – 60 – 50",
+   "what": "นับ rate เร็วจากจำนวนช่องใหญ่ระหว่าง R–R (จังหวะสม่ำเสมอ)",
+   "lines": [
+    [
+     "1 ช่องใหญ่",
+     "**300**/นาที"
+    ],
+    [
+     "2 ช่อง",
+     "**150**"
+    ],
+    [
+     "3 ช่อง",
+     "**100**"
+    ],
+    [
+     "4 ช่อง",
+     "**75**"
+    ],
+    [
+     "5 ช่อง",
+     "**60**"
+    ],
+    [
+     "6 ช่อง",
+     "**50**"
+    ]
+   ],
+   "note": "= 300 ÷ จำนวนช่องใหญ่ (อาจารย์เรียก \"golden number\") · หา R ที่ตกเส้นใหญ่แล้วไล่นับไปตัวถัดไป · ใช้ได้เฉพาะจังหวะสม่ำเสมอ — ถ้าไม่สม่ำเสมอ (AF) ให้นับ QRS ใน 6 วินาที × 10",
+   "src": "Sequence method — Dubin, Rapid Interpretation of EKG's · ใช้กันทั่วไปในตำราอ่าน ECG"
+  },
+  {
+   "sec": "cardio-ecg-08",
+   "name": "Left = Leaving · Right = Reaching",
+   "what": "อ่าน axis จากทิศ QRS ใน lead I กับ aVF (หรือ 'วิธีนิ้วโป้ง')",
+   "lines": [
+    [
+     "I ↑ · aVF ↑",
+     "**ปกติ** — two thumbs up"
+    ],
+    [
+     "I ↑ · aVF ↓",
+     "**L**eft = **L**eaving — QRS สอง lead ชี้ออกจากกัน → แกนซ้าย"
+    ],
+    [
+     "I ↓ · aVF ↑",
+     "**R**ight = **R**eaching — QRS ชี้เข้าหากัน → **RAD**"
+    ],
+    [
+     "I ↓ · aVF ↓",
+     "**Extreme** axis (no man's land)"
+    ]
+   ],
+   "note": "ตามที่อาจารย์สอน: I บวก + aVF ลบ ต้องดู **lead II** ต่อ — II บวก = ยังปกติ (−30° ถึง 0°) · II ลบ จึงเป็น **LAD** จริง (< −30°)",
+   "src": "หลักจำที่ใช้กันทั่วไปในการสอนอ่าน ECG"
+  },
+  {
+   "sec": "cardio-ecg-11",
+   "name": "The Heart Block Poem",
+   "what": "แยก AV block 4 ชนิดจากความสัมพันธ์ P กับ QRS",
+   "lines": [
+    [
+     "1st",
+     "\"If the R is far from P, then you have a **First Degree**\" — PR > 200 ms ทุกตัว"
+    ],
+    [
+     "Mobitz I",
+     "\"Longer, longer, longer, drop! Then you have a **Wenckebach**\""
+    ],
+    [
+     "Mobitz II",
+     "\"If some Ps don't get through, then you have a **Mobitz II**\" — PR คงที่แล้วหลุด"
+    ],
+    [
+     "3rd",
+     "\"If Ps and Qs don't agree, then you have a **Third Degree**\" — AV dissociation"
+    ]
+   ],
+   "note": "กลอนท่อน Mobitz II ไม่ได้บอกว่า PR คงที่ — ต้องจำเพิ่มว่าตัวที่ลงมี PR เท่ากันทุกตัว · high-grade (P:QRS ≥ 3:1) ไม่อยู่ในกลอน · บางฉบับเขียนท่อนสุดท้ายว่า \"Rs and Ps\"",
+   "src": "กลอนช่วยจำที่ใช้กันแพร่หลายในการสอน ECG (ไม่ทราบผู้แต่ง)"
+  },
+  {
+   "sec": "cardio-ecg-12",
+   "name": "WiLLiaM MaRRoW",
+   "what": "แยก LBBB กับ RBBB จากรูป QRS ใน V1 และ V6 (เมื่อ QRS ≥ 0.12 s)",
+   "lines": [
+    [
+     "W·L·M",
+     "**L**BBB: **W** ใน V1 (QS/rS ลึกกว้าง) · **M** ใน V6 (R กว้างหยัก)"
+    ],
+    [
+     "M·R·W",
+     "**R**BBB: **M** ใน V1 (rsR') · **W** ใน V6 (S กว้าง)"
+    ]
+   ],
+   "note": "ใช้ได้หลังยืนยันว่า QRS ≥ 0.12 s · รูปจริงไม่ได้เป็นตัว W/M ชัดทุกราย (LBBB ใน V6 มักเป็น R กว้างหยักหรือยอดแบน)",
+   "src": "ลายมืออาจารย์ในสไลด์ · หลักจำมาตรฐานที่ใช้กันทั่วไป"
+  },
+  {
+   "sec": "cardio-ecg-13",
+   "name": "C BIG K DROP",
+   "what": "การรักษา hyperkalemia ที่มี ECG เปลี่ยน ตามลำดับ",
+   "lines": [
+    [
+     "C",
+     "**C**alcium gluconate — เสถียร membrane (ทำก่อน ไม่ลด K)"
+    ],
+    [
+     "B",
+     "**B**eta-2 agonist (salbutamol) · **B**icarbonate ถ้ามี acidosis"
+    ],
+    [
+     "I",
+     "**I**nsulin (regular 10 U)"
+    ],
+    [
+     "G",
+     "**G**lucose (25 g) กันน้ำตาลต่ำ"
+    ],
+    [
+     "K",
+     "**K** binder (resin จับ K)"
+    ],
+    [
+     "D",
+     "**D**iuretic (loop)"
+    ],
+    [
+     "R",
+     "**R**enal replacement = hemodialysis (ไตวาย/ดื้อการรักษา)"
+    ]
+   ],
+   "note": "ลำดับตามอาจารย์: calcium ก่อน → ย้าย K เข้าเซลล์ (B, I, G) → ขับออก (K, D, R) · \"OP\" ท้ายคำไม่มีความหมายเฉพาะ · bicarbonate ใช้เฉพาะมี metabolic acidosis",
+   "src": "C BIG K DROP — BoringEM/CanadiEM · ใช้กันทั่วไปใน emergency medicine"
+  }
+ ]
+}

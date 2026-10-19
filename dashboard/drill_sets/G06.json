@@ -1,0 +1,897 @@
+{
+ "set": "gi",
+ "lec": "G06",
+ "d": "พฤ. 29 ต.ค.",
+ "w": 7,
+ "lecture": "Liver function tests (นพ.กิตติ)",
+ "mcq": [
+  {
+   "id": "GI-LFT-MCQ-01",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "R ratio – classifying drug-induced liver injury",
+   "stem": "A 55-year-old man develops jaundice and dark urine 3 weeks after completing a 10-day course of amoxicillin–clavulanate for sinusitis. He drinks no alcohol. Labs: ALT 320 U/L (ULN 40), ALP 420 U/L (ULN 120), total bilirubin 6.2 mg/dL (direct 4.8). Ultrasound shows no biliary dilatation. Which pattern of liver injury does he have?",
+   "choices": [
+    "Hepatocellular pattern (R > 5)",
+    "Cholestatic pattern (R < 2)",
+    "Mixed pattern (R 2–5)",
+    "Isolated alkaline phosphatase elevation",
+    "Pattern cannot be classified without a liver biopsy"
+   ],
+   "answer": 2,
+   "explain": "**R ratio = (ALT/ULN ของ ALT) ÷ (ALP/ULN ของ ALP)** (ACG 2017 ที่อาจารย์อ้างในสไลด์)\n- ALT 320/40 = **8 เท่า** · ALP 420/120 = **3.5 เท่า**\n- R = 8 ÷ 3.5 ≈ **2.3** → อยู่ในช่วง **2–5 = mixed pattern**\nเข้ากับนิยาม mixed ในสไลด์ด้วย (transaminase > 2 เท่า + ALP > 3 เท่า) · **amoxicillin–clavulanate** เป็นสาเหตุ DILI ที่พบบ่อยที่สุดตัวหนึ่ง มักเป็นแบบ cholestatic/mixed และเกิดได้หลังหยุดยาแล้วหลายสัปดาห์\n\n- **Hepatocellular** ต้อง R > 5 — ALT ต้องนำ ALP มากกว่านี้\n- **Cholestatic** ต้อง R < 2\n- **Isolated ALP** ต้องมี transaminase และ bilirubin ปกติ\n- R ratio คำนวณจากเลือดได้ทันที ไม่ต้องเจาะชิ้นเนื้อเพื่อจัดรูปแบบ",
+   "pearl": "R = (ALT/ULN) ÷ (ALP/ULN): > 5 hepatocellular · 2–5 mixed · < 2 cholestatic",
+   "ref": [
+    "สไลด์ นพ.กิตติ — The R ratio · Mixed pattern",
+    "ACG Clinical Guideline: Evaluation of abnormal liver chemistries (2017)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-02",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Synthetic function – INR versus aminotransferase as a marker of severity",
+   "stem": "A 24-year-old man with serologically confirmed acute hepatitis A is followed as an outpatient. On day 5 of jaundice: ALT 3,200 U/L, total bilirubin 9 mg/dL, INR 1.3. On day 8 he is drowsy: ALT 1,100 U/L, total bilirubin 12 mg/dL, INR 2.4, albumin 3.6 g/dL, ALP 180 U/L. Which finding best reflects loss of hepatic function and worsening prognosis?",
+   "choices": [
+    "Rise in INR from 1.3 to 2.4",
+    "Fall in ALT from 3,200 to 1,100 U/L",
+    "ALT still more than 25 times the upper limit of normal",
+    "Serum albumin of 3.6 g/dL",
+    "Rise in ALP to 180 U/L"
+   ],
+   "answer": 0,
+   "explain": "AST/ALT/ALP เป็น **liver biochemistry** ที่บอก \"การบาดเจ็บ\" — ในสไลด์มีเพียง **PT/INR และ albumin** ที่บอก **การทำงานสร้าง (synthetic function)**\n- PT สะท้อนความรุนแรงได้เร็ว เพราะ **factor VII มีครึ่งชีวิต ~6 ชม.** → **INR ขึ้นจาก 1.3 เป็น 2.4 + ซึม** = เข้าเกณฑ์ **acute liver failure** (INR ≥ 1.5 + encephalopathy) ต้องส่งต่อศูนย์ปลูกถ่ายตับ\n\n- **ALT ลดลง** ไม่ได้แปลว่าดีขึ้นเสมอ — ถ้า INR/bilirubin แย่ลงพร้อมกัน อาจหมายถึงเซลล์ตับเหลือน้อยจนไม่มีเอนไซม์ให้รั่ว\n- **ระดับ ALT ไม่สัมพันธ์กับพยากรณ์โรค**\n- **Albumin** ครึ่งชีวิต ~20 วัน จึงยังปกติในโรคเฉียบพลัน\n- **ALP** สูงเล็กน้อยพบได้ทั่วไปใน acute hepatitis ไม่บอกความรุนแรง",
+   "pearl": "ความรุนแรงของตับอักเสบดูที่ INR (และสติ) ไม่ใช่ระดับ ALT",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Liver synthetic function: prothrombin time"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-03",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Mixed pattern – passing common bile duct stone",
+   "stem": "A 42-year-old obese woman has 6 hours of severe colicky epigastric and right upper quadrant pain that has now eased. She is afebrile. Labs drawn in the emergency department: AST 480 U/L, ALT 520 U/L (ULN 40), ALP 390 U/L (ULN 120), total bilirubin 3.1 mg/dL (direct 2.2), lipase normal. She has no alcohol use and no recent medications. What is the most likely explanation?",
+   "choices": [
+    "Acute hepatitis A",
+    "Ischemic hepatitis",
+    "Alcoholic hepatitis",
+    "Passage of a common bile duct stone",
+    "Primary biliary cholangitis"
+   ],
+   "answer": 3,
+   "explain": "LFT รายนี้ = **transaminase > 2 เท่า (~13 เท่า) + ALP > 3 เท่า** → **mixed pattern** ตามสไลด์ · DDx ในสไลด์: **passing stone** · drug-induced hepatitis · overlap syndrome · infiltrative · congested liver · SIRS\n- ปวดแบบ biliary colic แล้วหาย + เป็นผู้หญิงอ้วน → **นิ่วหลุดผ่านท่อน้ำดีร่วม** · แรงดันในท่อที่ขึ้นเฉียบพลันทำให้ **transaminase พุ่งสูงได้หลายร้อยถึง > 1,000 ในไม่กี่ชั่วโมง** แล้วลงเร็ว (ALP อาจขึ้นตามหลัง) → ตรวจ **US** ดูนิ่ว/ท่อขยาย\n\n- **HAV** มีอาการนำ (เบื่ออาหาร ไม่สบาย) หลายวัน ไม่ใช่ปวด colic ไม่กี่ชั่วโมง และ ALP มักสูงไม่ถึง 3 เท่า\n- **Ischemic hepatitis** ต้องมีความดันต่ำ และ transaminase มักเป็นพัน ๆ\n- **Alcoholic** AST/ALT > 2 และไม่ดื่มเหล้า\n- **PBC** ALP สูงเรื้อรัง transaminase ปกติ ไม่ปวด",
+   "pearl": "Transaminase > 2× + ALP > 3× + ปวด colic → นิ่วกำลังเคลื่อนผ่าน",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Mixed pattern"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.11"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-04",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "AST/ALT ratio > 2 in alcohol – mechanism",
+   "stem": "A 50-year-old man who drinks 10 standard drinks daily has AST 186 U/L, ALT 72 U/L, GGT 410 U/L and MCV 104 fL. Which mechanism best explains why AST exceeds ALT by more than twofold in alcohol-associated liver disease?",
+   "choices": [
+    "Alcohol induces CYP2E1, which directly synthesizes AST",
+    "Deficiency of pyridoxal 5'-phosphate lowers hepatic ALT activity, while alcohol injures mitochondria that contain AST",
+    "AST has a much longer plasma half-life than ALT",
+    "Alcoholic myopathy is the main source of the raised AST",
+    "Spur-cell haemolysis releases AST from red cells"
+   ],
+   "answer": 1,
+   "explain": "สไลด์: **AST/ALT > 2 → alcoholic liver disease**\nกลไก:\n- ALT (และ AST) ต้องใช้ **pyridoxal 5'-phosphate (วิตามิน B6)** เป็น cofactor · คนดื่มเหล้าเรื้อรัง **ขาด B6** → การทำงานของ **ALT ลดลงมากกว่า** AST\n- เหล้าทำลาย **mitochondria** ซึ่งมี **mitochondrial AST** อยู่ → AST รั่วออกมามากกว่า\n- จึงได้ AST/ALT > 2 และ **AST มักไม่เกิน 300–400**\n\n- **CYP2E1** ถูกกระตุ้นโดยเหล้าจริง แต่เป็นเอนไซม์ metabolize ยา (เช่น paracetamol → NAPQI) ไม่ได้สร้าง AST\n- **ครึ่งชีวิต AST สั้นกว่า ALT** (~17 vs ~47 ชม.) — กลับกัน\n- กล้ามเนื้อเป็นแหล่ง AST นอกตับได้ แต่ GGT/MCV สูงบอกว่ามาจากตับเป็นหลัก ถ้าสงสัยให้ดู CK\n- Hemolysis ทำ AST/LDH สูงเล็กน้อย ไม่ใช่สาเหตุหลัก",
+   "pearl": "AST/ALT > 2 + GGT สูง + MCV โต = เหล้า (ขาด B6 + mitochondrial AST)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — AST/ALT ratio"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-05",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Very high AST in a drinker – think paracetamol, not alcoholic hepatitis",
+   "stem": "A 48-year-old man who drinks heavily has had a toothache for 4 days and has barely eaten. He has been taking paracetamol 1 g every 4 hours (about 5–6 g/day). He presents with vomiting and jaundice. AST 6,200 U/L, ALT 4,100 U/L, total bilirubin 3.4 mg/dL, INR 2.8, creatinine 1.4 mg/dL. Which is the best interpretation and action?",
+   "choices": [
+    "Severe alcoholic hepatitis; calculate the Maddrey discriminant function and start prednisolone",
+    "Acute hepatitis A; supportive care only",
+    "Ischemic hepatitis from dehydration; give intravenous fluids and recheck in 48 hours",
+    "Alcohol withdrawal; give thiamine and benzodiazepines, then repeat LFTs",
+    "Paracetamol hepatotoxicity potentiated by alcohol and fasting; start intravenous N-acetylcysteine now without waiting for a drug level"
+   ],
+   "answer": 4,
+   "explain": "**AST/ALT หลายพัน = marked (40–100 เท่า)** → สไลด์: **ischemic hepatitis หรือ acetaminophen**\n- **ตับอักเสบจากเหล้า AST แทบไม่เกิน 300–400** — ถ้าสูงเป็นพันต้องหาสาเหตุอื่นร่วม\n- คนดื่มเหล้าเรื้อรัง + อดอาหาร: **CYP2E1 ถูกกระตุ้น** สร้าง **NAPQI** มากขึ้น และ **glutathione ต่ำ** → เกิดพิษได้แม้ขนาดยาไม่สูงมาก (therapeutic misadventure)\n- กินซ้ำหลายครั้ง/ไม่รู้เวลา → **ใช้ Rumack–Matthew nomogram ไม่ได้** → **ให้ IV NAC ทันที** (ได้ประโยชน์แม้มาช้า) แล้วติดตาม INR, glucose, pH, Cr\n\n- **Prednisolone** ใช้ใน alcoholic hepatitis รุนแรงที่ AST ไม่สูงขนาดนี้ และไม่ช่วยพิษยา\n- **HAV** ต้องตรวจ แต่ประวัติยาชัด ไม่ควรรอ\n- **ขาดน้ำ** ไม่ทำให้ช็อกตับถ้าไม่มีความดันต่ำนาน\n- Withdrawal ไม่ทำให้ AST หลายพัน",
+   "pearl": "คนดื่มเหล้า AST > 500–1,000 → ไม่ใช่ alcoholic hepatitis คิด paracetamol ให้ NAC",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Level of aminotransferase",
+    "การรักษาพิษ paracetamol — IV NAC"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-06",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "AST much greater than ALT – extrahepatic (muscle) source",
+   "stem": "A 24-year-old man has a pre-employment health check 2 days after an intense weight-training session. He feels well apart from sore thighs. AST 520 U/L, ALT 110 U/L (ULN 40), ALP 70 U/L, total bilirubin 0.6 mg/dL. He takes no medications and drinks rarely. What is the most appropriate next step?",
+   "choices": [
+    "Hepatitis B and C serology",
+    "Liver ultrasound for fatty liver",
+    "Serum creatine kinase",
+    "Serum ceruloplasmin",
+    "Antinuclear and anti-smooth muscle antibodies"
+   ],
+   "answer": 2,
+   "explain": "สไลด์: **AST >>>> ALT → extrahepatic cause** — AST มีมากใน **กล้ามเนื้อลาย หัวใจ เม็ดเลือดแดง** ขณะที่ ALT ค่อนข้างจำเพาะต่อตับ\n- ออกกำลังหนัก (โดยเฉพาะ eccentric/weight training) → กล้ามเนื้อสลาย AST สูงนำ ALT (ALT ก็ขึ้นได้บ้างจากกล้ามเนื้อ) · ALP และ bilirubin ปกติ\n- → **ตรวจ CK** ก่อนสืบค้นโรคตับ · ถ้า CK สูง ให้งดออกกำลังหนักแล้วเจาะซ้ำ 1–2 สัปดาห์\n\n- **HBV/HCV, US, ceruloplasmin, ANA/ASMA** เป็นขั้นตอนของ \"LFT สูงเล็กน้อยจากตับ\" — ทำเมื่อยืนยันแล้วว่ามาจากตับ\n- การไล่หาโรคตับก่อนตรวจ CK ทำให้สืบค้นเกินจำเป็น และพลาด rhabdomyolysis ที่ต้องดูไตร่วม",
+   "pearl": "AST สูงกว่า ALT มาก ๆ (โดยเฉพาะหลังออกกำลัง) → ดู CK ก่อน",
+   "ref": [
+    "สไลด์ นพ.กิตติ — AST/ALT: AST >>> ALT extrahepatic cause"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.13-3(7)",
+    "2.1.26"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-07",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Mild chronic aminotransferase elevation – metabolic dysfunction–associated steatotic liver disease",
+   "stem": "A 52-year-old woman with type 2 diabetes, hypertension and a BMI of 31 kg/m² has ALT 85 U/L and AST 58 U/L (ULN 40) on two occasions 6 months apart. ALP and bilirubin are normal. She drinks less than one drink a week and takes metformin, amlodipine and atorvastatin (started 3 years ago). HBsAg and anti-HCV are negative. What is the most likely cause?",
+   "choices": [
+    "Metabolic dysfunction–associated steatotic liver disease (MASLD)",
+    "Autoimmune hepatitis",
+    "Wilson disease",
+    "Alcohol-associated liver disease",
+    "Statin-induced hepatitis"
+   ],
+   "answer": 0,
+   "explain": "ALT/AST สูง **2–5 เท่า (mild) แบบเรื้อรัง** → สไลด์: ไม่จำเพาะ สาเหตุที่พบบ่อยสุด **เหล้า · NASH/NAFLD (ปัจจุบันเรียก MASLD) · infiltrative**\nขั้นตอนตามสไลด์ (mild diffused LFT abnormalities): ประวัติเหล้า/ยา → HBV/HCV → **metabolic syndrome (อ้วน เบาหวาน ความดัน ไขมัน) → consider NAFLD** → autoimmune → hemochromatosis/Wilson → biopsy\n- รายนี้มี metabolic syndrome ครบ · **AST/ALT < 1** เข้ากับ MASLD (ยังไม่เป็นตับแข็ง) → US ตับ + ประเมินพังผืด (FIB-4/FibroScan) + ลดน้ำหนัก\n\n- **AIH** มักหญิง มี globulin/IgG สูง ANA/ASMA บวก ALT มักสูงกว่านี้ (5–40 เท่า)\n- **Wilson** อายุน้อย (มักก่อน 40) มีอาการทางประสาท\n- **เหล้า** ดื่มน้อยมาก และ AST/ALT จะ > 2\n- **Statin** ที่ใช้มา 3 ปีไม่ค่อยทำให้ ALT สูงถาวร และไม่ต้องหยุดยาใน MASLD",
+   "pearl": "ALT สูงเล็กน้อย + อ้วน เบาหวาน ความดัน ไขมัน = MASLD (AST/ALT < 1)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Mild diffused LFT abnormalities · Level of aminotransferase"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4(6)",
+    "2.3.4(7)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-08",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Reversal of the AST/ALT ratio with cirrhosis",
+   "stem": "A 58-year-old man has had untreated chronic hepatitis C for 20 years. Ten years ago his ALT was 120 U/L and AST 70 U/L. Now ALT is 60 U/L and AST 95 U/L, platelets 85,000/mm³, albumin 3.1 g/dL and he has spider naevi. He does not drink alcohol. What is the best interpretation of the change in his AST/ALT ratio?",
+   "choices": [
+    "Spontaneous clearance of hepatitis C",
+    "New alcohol-associated liver disease",
+    "Superimposed muscle injury",
+    "Progression to cirrhosis",
+    "Development of acute hepatitis A"
+   ],
+   "answer": 3,
+   "explain": "สไลด์: **AST/ALT < 1 = viral hepatitis, NAFLD (excepted in combination with cirrhosis)**\n- ในไวรัสตับอักเสบเรื้อรังตอนแรก ALT > AST · เมื่อดำเนินเป็น **ตับแข็ง อัตราส่วนกลับเป็น > 1** (การกำจัด AST ที่ sinusoid ลดลง + เซลล์ตับเสียหายลึกถึง mitochondria)\n- หลักฐานตับแข็งร่วม: **เกล็ดเลือดต่ำ (hypersplenism) · albumin ต่ำ (สร้างลดในโรคเรื้อรัง) · spider naevi** — สูตร APRI/FIB-4 ก็ใช้ AST และเกล็ดเลือดด้วยเหตุนี้\n\n- **Clearance ของ HCV** จะทำให้ทั้ง AST และ ALT กลับปกติ ไม่ใช่กลับข้าง และไม่ทำให้เกล็ดเลือดต่ำ\n- **เหล้า** ไม่ดื่ม และมักได้ AST/ALT > 2\n- **กล้ามเนื้อ** ไม่อธิบายเกล็ดเลือดต่ำ albumin ต่ำ\n- **HAV เฉียบพลัน** ALT จะขึ้นเป็นพัน",
+   "pearl": "ไวรัส/MASLD: AST/ALT < 1 — ถ้ากลับเป็น > 1 ให้คิดว่าเป็นตับแข็งแล้ว",
+   "ref": [
+    "สไลด์ นพ.กิตติ — AST/ALT"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-09",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Ischemic hepatitis – ALT/LDH ratio",
+   "stem": "A 70-year-old man is admitted with anterior STEMI complicated by cardiogenic shock (BP 75/40 mmHg for about 6 hours before stabilization). He has received no hepatotoxic drugs. On day 2: AST 5,400 U/L, ALT 3,800 U/L, LDH 7,200 U/L, total bilirubin 1.8 mg/dL, creatinine 2.4 mg/dL. On day 5: AST 600 U/L, ALT 1,100 U/L. What is the most likely diagnosis?",
+   "choices": [
+    "Acute hepatitis E",
+    "Ischemic hepatitis",
+    "Congestive hepatopathy",
+    "Budd–Chiari syndrome",
+    "Acute autoimmune hepatitis"
+   ],
+   "answer": 1,
+   "explain": "**Transaminase 40–100 เท่า** → สไลด์: ischemic hepatitis · acetaminophen\nลักษณะ **ischemic hepatitis (shock liver)**:\n- มีช่วง **ความดันต่ำ** → เซลล์ **zone 3** ตายพร้อมกัน → AST/ALT **ขึ้นเป็นพันใน 1–3 วัน และลงเร็ว** (ลด > 50% ในไม่กี่วัน) เพราะไม่มีการทำลายต่อเนื่อง\n- **LDH สูงมาก** → **ALT/LDH = 3,800/7,200 ≈ 0.5 (< 1.5) typical for ischemic hepatitis** (สไลด์)\n- bilirubin ขึ้นน้อยและช้า · **Cr สูง** จากไตขาดเลือดร่วม\n\n- **ไวรัส (HEV)** ALT ลงช้ากว่าเป็นสัปดาห์ และ ALT/LDH มัก > 1.5\n- **Congestive hepatopathy** (หัวใจขวาล้มเหลวเรื้อรัง) transaminase สูงเล็กน้อย bilirubin เด่น\n- **Budd–Chiari** มีท้องมาน ตับโตเจ็บ ไม่สัมพันธ์กับช็อก\n- **AIH** ไม่ลงเร็วเองโดยไม่รักษา",
+   "pearl": "Ischemic hepatitis: หลังช็อก ขึ้นเป็นพันแล้วลงเร็ว · ALT/LDH < 1.5",
+   "ref": [
+    "สไลด์ นพ.กิตติ — ALT/LDH < 1.5 typical for ischemic hepatitis (Sleisenger & Fordtran)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.2.7",
+    "B7.2.5(4)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-10",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Acute hepatitis with negative viral serology – next evaluation",
+   "stem": "A 19-year-old man has 2 weeks of fatigue and jaundice. ALT 1,100 U/L, AST 900 U/L, total bilirubin 7 mg/dL, INR 1.2. He denies alcohol, prescription drugs and herbal products. IgM anti-HAV, HBsAg, IgM anti-HBc, anti-HCV and IgM anti-HEV are all negative. Ultrasound shows a normal liver. According to the stepwise approach to acute hepatitis, what should be done next?",
+   "choices": [
+    "Liver biopsy immediately, before any further blood tests",
+    "Repeat viral serology in 6 months",
+    "Empirical prednisolone",
+    "ERCP to exclude choledocholithiasis",
+    "Serum ceruloplasmin, ANA/anti-smooth muscle antibody with IgG, and EBV/CMV serology"
+   ],
+   "answer": 4,
+   "explain": "ขั้นตอน acute hepatitis ในสไลด์:\n1. ประวัติ + ตรวจร่างกาย (**เหล้า ยา ไวรัส**)\n2. **IgM anti-HAV · HBsAg + IgM anti-HBc · anti-HCV** (± anti-HDV, HEV)\n3. **Above negative → consider Wilson disease, EBV, CMV, AIH, congestive heart failure**\n4. ยังไม่ทราบ → **liver biopsy**\n- ชายอายุ 19 ปี ต้องคิด **Wilson** (ceruloplasmin, slit lamp หา KF ring) · **AIH** (ANA, ASMA, IgG) · **EBV/CMV** (มักมีไข้ ต่อมน้ำเหลือง atypical lymphocyte)\n\n- **Biopsy** เป็นขั้นสุดท้ายหลังตรวจเลือดที่ไม่รุกล้ำแล้ว\n- **รอ 6 เดือน** พลาดโรคที่รักษาได้ (Wilson, AIH อาจเป็นตับวายได้)\n- **Steroid โดยไม่มีการวินิจฉัย** อันตราย (ถ้าเป็นไวรัส/Wilson)\n- **ERCP** ใช้กับ cholestasis ท่อขยาย ไม่ใช่ hepatocellular pattern ที่ US ปกติ",
+   "pearl": "Acute hepatitis ไวรัสลบ → Wilson · EBV/CMV · AIH · หัวใจล้มเหลว → biopsy",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Acute hepatitis algorithm"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-11",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Paracetamol poisoning – mechanism of N-acetylcysteine",
+   "stem": "A 20-year-old woman presents 10 hours after ingesting 15 g of paracetamol. Her 10-hour paracetamol level lies above the treatment line on the Rumack–Matthew nomogram. AST is 85 U/L. Intravenous N-acetylcysteine is started. By which mechanism does N-acetylcysteine protect the liver?",
+   "choices": [
+    "It provides cysteine to replenish glutathione, which conjugates and detoxifies NAPQI",
+    "It inhibits CYP2E1 so that no NAPQI is formed",
+    "It increases renal excretion of unchanged paracetamol",
+    "It binds paracetamol in the gut and prevents absorption",
+    "It is a competitive antagonist of paracetamol at the hepatocyte receptor"
+   ],
+   "answer": 0,
+   "explain": "กลไกพิษ (ไม่ได้มาจากสไลด์ — เสริมเคส paracetamol ของอาจารย์):\n- ขนาดปกติ paracetamol ถูก **glucuronidation/sulfation** เป็นสารไม่พิษ · ส่วนน้อยถูก **CYP2E1** เปลี่ยนเป็น **NAPQI** แล้วถูก **glutathione** จับทิ้ง\n- ขนาดสูง → NAPQI มากจน **glutathione หมด** → NAPQI จับโปรตีนในเซลล์ → เซลล์ **zone 3** ตาย (transaminase เป็นพัน)\n- **NAC ให้ cysteine เป็นสารตั้งต้นสร้าง glutathione** (และเป็น glutathione substitute/antioxidant) → ได้ผลดีที่สุดภายใน **8 ชม.** แต่ยังให้ประโยชน์แม้มาช้า\n\n- NAC **ไม่ยับยั้ง CYP2E1** (ยาที่ยับยั้งไม่ได้ใช้รักษามาตรฐาน)\n- ไม่เพิ่มการขับทางไต\n- การจับยาในลำไส้คือ **activated charcoal** (ภายใน 1–2 ชม.)\n- paracetamol ไม่มี receptor ที่ตับให้แย่งจับ",
+   "pearl": "Paracetamol → NAPQI → glutathione หมด → NAC เติม glutathione",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Case: หญิง 23 ปี กินยาแก้ปวด 1 กำมือ",
+    "การรักษาพิษ paracetamol — Rumack–Matthew nomogram · IV NAC"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-12",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Paracetamol-induced acute liver failure – King's College criteria",
+   "stem": "A 26-year-old woman is on day 3 after a paracetamol overdose and is receiving intravenous N-acetylcysteine. Which single finding meets the King's College criteria for referral for liver transplantation?",
+   "choices": [
+    "ALT 9,800 U/L",
+    "INR 4.0 with grade 1 encephalopathy",
+    "Arterial pH 7.24 after adequate fluid resuscitation",
+    "Creatinine 2.0 mg/dL",
+    "Total bilirubin 6 mg/dL"
+   ],
+   "answer": 2,
+   "explain": "**King's College criteria (paracetamol)** — ไม่ได้มาจากสไลด์ (เสริมเคสกินยาเกินขนาด):\n- **arterial pH < 7.30** หลังให้สารน้ำเพียงพอ — **ข้อเดียวพอ** หรือ\n- ครบทั้ง 3 ข้อภายใน 24 ชม.: **INR > 6.5 + creatinine > 3.4 mg/dL + encephalopathy ระดับ 3–4**\n(lactate สูงหลังให้สารน้ำช่วยเพิ่มความไว)\n- รายนี้ pH 7.24 → เข้าเกณฑ์ → ส่งศูนย์ปลูกถ่ายตับ\n\n- **ระดับ ALT ไม่บอกพยากรณ์** (ตามหลัก LFT: ALT = การบาดเจ็บ ไม่ใช่การทำงาน)\n- **INR 4.0 + encephalopathy ระดับ 1** ยังไม่ถึง INR > 6.5 และระดับ 3–4\n- **Cr 2.0** ต่ำกว่า 3.4 และต้องครบ 3 ข้อ\n- **Bilirubin** ไม่อยู่ในเกณฑ์ของ paracetamol (อยู่ในเกณฑ์ non-paracetamol)",
+   "pearl": "King's (paracetamol): pH < 7.30 หรือ INR > 6.5 + Cr > 3.4 + HE 3–4",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Case: paracetamol hepatotoxicity",
+    "King's College criteria"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-13",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Autoimmune hepatitis type 1 – diagnosis",
+   "stem": "A 34-year-old woman with Hashimoto thyroiditis on levothyroxine has 3 months of fatigue and arthralgia. ALT 420 U/L, AST 350 U/L, ALP 140 U/L, total bilirubin 2.1 mg/dL, albumin 3.6 g/dL, globulin 5.4 g/dL, IgG 2,600 mg/dL (ULN 1,600). ANA 1:320 and anti-smooth muscle antibody are positive; HBsAg and anti-HCV are negative. She takes no other drugs or herbs. Ultrasound is normal. What is the most likely diagnosis?",
+   "choices": [
+    "Primary biliary cholangitis",
+    "Wilson disease",
+    "Levothyroxine-induced liver injury",
+    "Autoimmune hepatitis type 1",
+    "Lupus hepatitis"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ **Autoimmune hepatitis**:\n- **หญิงอายุน้อยเด่น** · อ่อนเพลีย ปวดข้อ เหลือง หรือไม่มีอาการ · ตับวายเฉียบพลัน 2–5%\n- มีโรคภูมิต้านตนเองร่วม — **thyroiditis 10–23%** · UC · celiac · T1DM · RA · SLE\n- **Type 1: ANA, ASMA** (ผู้ใหญ่) · Type 2: anti-LKM1, anti-LC1 (เด็ก)\n- **globulin/IgG สูง** จาก plasma cell · ชิ้นเนื้อ **interface hepatitis, lymphoplasmacytic infiltration**\n- Simplified criteria: autoantibody + IgG + histology + ไม่มีไวรัส → **≥ 6 probable · ≥ 7 definite** → ยืนยันด้วย biopsy แล้วรักษา prednisolone ± azathioprine (EASL)\n\n- **PBC** ALP เด่น transaminase ปกติ AMA บวก\n- **Wilson** IgG ไม่สูง ceruloplasmin ต่ำ\n- **Levothyroxine** แทบไม่ทำให้ตับอักเสบ\n- **Lupus hepatitis** มักไม่ ASMA บวก/IgG สูงขนาดนี้ และต้องมีเกณฑ์ SLE",
+   "pearl": "หญิงสาว + ไทรอยด์อักเสบ + IgG สูง + ANA/ASMA = AIH type 1",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Autoimmune hepatitis · Simplified diagnostic criteria",
+    "EASL Clinical Practice Guidelines on autoimmune hepatitis (2025)"
+   ],
+   "nl": [
+    "2.3.11",
+    "B5.3(5)",
+    "2.1.27"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-14",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Wilson disease presenting as acute liver failure – LFT ratios",
+   "stem": "A 17-year-old girl has 5 days of jaundice and is now confused. Hb 7.9 g/dL, reticulocytes 9%, direct antiglobulin test negative. Total bilirubin 32 mg/dL (direct 14), AST 210 U/L, ALT 60 U/L, ALP 25 U/L (ULN 120), INR 3.4. Viral hepatitis serology and paracetamol level are negative. What is the most likely diagnosis?",
+   "choices": [
+    "Acute hepatitis A",
+    "Wilson disease",
+    "Paracetamol hepatotoxicity",
+    "Autoimmune hepatitis",
+    "G6PD deficiency with haemolysis"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ **Wilson disease**: liver = chronic หรือ **fulminant** · **LFT: AST/ALT > 2.2 AND ALP/TB < 4** (helpful)\n- รายนี้ AST/ALT = 210/60 = **3.5** · ALP/TB = 25/32 = **0.8**\n- **ALP ต่ำผิดคาด** แม้เหลืองมาก · **Coombs-negative hemolysis** (ทองแดงอิสระจากเซลล์ตับที่ตายทำลายเม็ดเลือดแดงโดยตรง) ดัน bilirubin สูงมาก\n- อายุน้อย ตับวาย (INR 3.4 + สับสน) → ceruloplasmin, urine copper, slit lamp และ **ส่งปลูกถ่ายตับ** (Wilson ตับวายเฉียบพลันมักต้องปลูกถ่าย)\n\n- **HAV/paracetamol** transaminase จะขึ้นเป็นพัน และ serology/ระดับยาลบ\n- **AIH** ไม่มี hemolysis และ ALP ไม่ต่ำผิดปกติ\n- **G6PD hemolysis** ให้ indirect bilirubin สูง แต่ไม่ทำให้ INR 3.4 และสับสน",
+   "pearl": "Wilson ตับวาย: AST/ALT > 2.2 + ALP/TB < 4 + hemolysis Coombs ลบ",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Wilson disease (Sleisenger & Fordtran ch.76)",
+    "AASLD Practice Guidance: Wilson disease (2022)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4",
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-15",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Wilson disease – initial diagnostic tests",
+   "stem": "A 23-year-old man has 6 months of hand tremor, slurred speech, drooling and personality change. ALT 95 U/L, AST 120 U/L, ALP and bilirubin normal. HBsAg and anti-HCV are negative. Which is the most appropriate initial diagnostic evaluation?",
+   "choices": [
+    "MRI brain alone",
+    "Antinuclear antibody and IgG",
+    "Serum ferritin and transferrin saturation",
+    "Dopamine transporter (DaT) scan",
+    "Serum ceruloplasmin and slit-lamp examination for Kayser–Fleischer rings"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ **Wilson disease**: โรคพันธุกรรม (ATP7B) อาการทาง **ตับและ/หรือระบบประสาท** · neuro = **extrapyramidal signs** (สั่น dystonia พูดไม่ชัด น้ำลายไหล) และจิตเวช · ตา = **Kayser–Fleischer ring**, sunflower cataract\n- **Diagnosis: serum ceruloplasmin < 200 mg/L (< 20 mg/dL)** + ตรวจ **slit lamp** หา KF ring (พบเกือบทุกรายที่มีอาการทางประสาท) ± **ทองแดงในปัสสาวะ 24 ชม. > 100 µg**\n- ATP7B เสีย → ใส่ทองแดงลง apo-ceruloplasmin ไม่ได้ → ceruloplasmin ต่ำ ทองแดงล้นไปเกาะ basal ganglia และ Descemet membrane\n\n- **MRI** เห็นรอยโรค basal ganglia ได้ แต่ไม่ยืนยันโรค\n- **ANA/IgG** หา AIH ไม่อธิบายอาการทางประสาท\n- **Ferritin/TSAT** หา hemochromatosis — ไม่มี extrapyramidal\n- **DaT scan** ใช้กับ Parkinsonism เสื่อม ไม่ใช่คนหนุ่มที่ LFT ผิดปกติ",
+   "pearl": "คนหนุ่ม + extrapyramidal + LFT ผิดปกติ → ceruloplasmin + slit lamp (KF ring)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Wilson disease",
+    "AASLD Practice Guidance: Wilson disease (2022)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-16",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Mild chronic transaminase elevation – hereditary haemochromatosis",
+   "stem": "A 52-year-old man with type 2 diabetes for 2 years has reduced libido, darkening of the skin and painful swelling of the second and third metacarpophalangeal joints. ALT 92 U/L, AST 70 U/L, ALP and bilirubin normal. HBsAg and anti-HCV are negative and he drinks minimally. Which test should be done next?",
+   "choices": [
+    "Fasting transferrin saturation and serum ferritin",
+    "Serum ceruloplasmin",
+    "Antimitochondrial antibody",
+    "HFE genotyping without iron studies",
+    "Endoscopic retrograde cholangiopancreatography"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ \"mild diffused LFT abnormalities\": ประวัติเหล้า/ยา → HBV/HCV → MASLD → autoimmune → **miscellaneous: tests for hemochromatosis, Wilson's disease** → biopsy\n- ภาพนี้ = **hereditary hemochromatosis**: เหล็กสะสมใน ตับ (ALT สูงเล็กน้อย) · ตับอ่อน (เบาหวาน) · ต่อมใต้สมอง (hypogonadism) · ผิว (\"bronze\") · ข้อ **MCP 2–3**\n- ขั้นแรก: **fasting transferrin saturation (> 45%) + ferritin** → ถ้าสูงจึงตรวจ **HFE (C282Y)** · รักษาด้วย phlebotomy\n\n- **Ceruloplasmin** สำหรับ Wilson (มักอายุ < 40 มีอาการทางประสาท)\n- **AMA** สำหรับ PBC (ALP เด่น)\n- **HFE ก่อนตรวจเหล็ก** ผิดลำดับ — ต้องพิสูจน์ว่ามี iron overload ก่อน\n- **ERCP** ไม่มีข้อบ่งชี้ใน hepatocellular pattern",
+   "pearl": "ALT สูงเล็กน้อย + เบาหวาน + ผิวคล้ำ + ข้อ MCP 2–3 → transferrin saturation + ferritin",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Mild diffused LFT abnormalities: tests for hemochromatosis"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.4",
+    "2.3.4(1)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-17",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Obstructive jaundice – Courvoisier sign",
+   "stem": "A 66-year-old man has 6 weeks of painless, progressive jaundice with generalized itching, 7 kg weight loss, persistently pale stools and dark urine. He is afebrile. A smooth, non-tender gallbladder is palpable. Total bilirubin 18 mg/dL (direct 14), ALP 720 U/L, AST 110 U/L, ALT 140 U/L. What is the most likely diagnosis?",
+   "choices": [
+    "Common bile duct stone with chronic cholecystitis",
+    "Primary biliary cholangitis",
+    "Periampullary carcinoma such as carcinoma of the head of the pancreas",
+    "Sepsis-induced cholestasis",
+    "Acute viral hepatitis"
+   ],
+   "answer": 2,
+   "explain": "LFT = **cholestasis** (direct bilirubin สูง + ALP 6 เท่า) · clinical clues of obstructive jaundice ในสไลด์: **RUQ pain + fever · acholic stool · palpable GB (Courvoisier sign) · pruritus**\n- **Courvoisier sign** (คลำถุงน้ำดีได้ ไม่เจ็บ + เหลือง): มะเร็งรอบ ampulla อุดท่อช้า ๆ ถุงน้ำดีที่ยังปกติ **ยืดโตได้** · นิ่วทำให้ถุงน้ำดีอักเสบซ้ำจนเป็นพังผืด หดเล็ก\n- ไม่ปวด น้ำหนักลด อุจจาระซีด **ตลอด** (อุดสมบูรณ์) → **periampullary CA** (หัวตับอ่อน distal CBD ampulla duodenum) → US → CT\n\n- **นิ่ว** มักปวด colic อุจจาระซีดเป็นพัก ๆ ถุงน้ำดีมักคลำไม่ได้\n- **PBC** หญิงวัยกลางคน bilirubin ไม่สูงขนาดนี้ระยะแรก ไม่มีถุงน้ำดีโต\n- **Sepsis cholestasis** ต้องมีการติดเชื้อ ท่อไม่ขยาย\n- **Viral hepatitis** transaminase จะนำ ไม่ใช่ ALP",
+   "pearl": "เหลืองไม่ปวด + น้ำหนักลด + คลำถุงน้ำดีได้ไม่เจ็บ = มะเร็งรอบ ampulla",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Cholestasis · Clinical clues of obstructive jaundice"
+   ],
+   "nl": [
+    "2.3.11",
+    "B8.2.4-3(1)",
+    "2.1.51"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-18",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Sepsis-induced cholestasis – mechanism",
+   "stem": "A 63-year-old man is in the ICU with Escherichia coli bacteraemia from acute pyelonephritis and remains febrile and hypotensive on day 2. On day 3 he becomes jaundiced: total bilirubin 6 mg/dL (direct 4.5), ALP 420 U/L (ULN 120), AST 60 U/L, ALT 55 U/L. No new drugs other than meropenem have been given. Ultrasound shows a normal gallbladder and no biliary dilatation. What is the most likely mechanism of his jaundice?",
+   "choices": [
+    "Microscopic common bile duct stones",
+    "Extravascular haemolysis",
+    "Centrilobular (zone 3) hepatocyte necrosis from hypotension",
+    "Inflammatory cytokines (e.g., TNF-α, IL-6) down-regulating hepatocyte bile acid and bilirubin transporters",
+    "Immune-mediated destruction of small intrahepatic bile ducts"
+   ],
+   "answer": 3,
+   "explain": "LFT = **cholestasis** (DB เด่น + ALP > 3 เท่า transaminase ใกล้ปกติ) + **US ท่อไม่ขยาย** → **medical cholestasis** · สไลด์: drug-induced · **cholestasis due to sepsis** · PBC · PSC · AIDS cholangiopathy\n- กำลัง sepsis ไม่คุม → **cytokine (TNF-α, IL-6, endotoxin)** กดการทำงานของตัวขนส่งที่เยื่อหุ้ม canaliculus (เช่น BSEP, MRP2) → ขับกรดน้ำดีและ conjugated bilirubin ไม่ได้ ทั้งที่ท่อปกติ → ดีขึ้นเมื่อคุมการติดเชื้อได้ (ทบทวนยาร่วมด้วยเสมอ)\n\n- **นิ่วเล็ก** มักทำให้ท่อขยายหรือปวด และ transaminase ขึ้นชั่วคราว\n- **Hemolysis** ให้ indirect เด่น และไม่ทำให้ ALP สูง\n- **Ischemic necrosis** ทำให้ transaminase ขึ้นเป็นพัน\n- **ทำลายท่อน้ำดีเล็กจากภูมิ** = PBC ซึ่งเป็นโรคเรื้อรัง ไม่ได้เกิดใน 3 วัน",
+   "pearl": "เหลืองใน sepsis + cholestatic + ท่อไม่ขยาย = sepsis-induced cholestasis (cytokine กดตัวขนส่ง)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Cholestasis: medical cholestasis · case หญิง 74 ปี pneumonia"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.2.48"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-19",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Primary biliary cholangitis – diagnostic antibody",
+   "stem": "A 51-year-old woman has 8 months of generalized itching that is worse at night, and fatigue. She has xanthelasma. ALP 460 U/L (ULN 120), GGT 390 U/L, AST 38 U/L, ALT 42 U/L, total bilirubin 0.9 mg/dL. Ultrasound shows no biliary dilatation and no liver mass. Which test is most useful next?",
+   "choices": [
+    "Endoscopic retrograde cholangiopancreatography",
+    "Antimitochondrial antibody",
+    "Serum ceruloplasmin",
+    "Hepatitis B surface antigen",
+    "Contrast CT of the abdomen"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ **Primary biliary cholangitis**:\n- Clinical: **pruritus, jaundice, fatigue** · หญิงวัยกลางคน\n- Lab: **ALP และ GGT สูง · transaminase ปกติ · bilirubin แล้วแต่ระยะ** (ระยะแรกปกติ = small duct disease ที่ bilirubin ปกติได้)\n- Immune: **AMA (> 90%)** · ASMA ถึง 67% · ANA ถึง 50%\n- คันจากกรดน้ำดีค้าง · xanthelasma จากไขมันสูงใน cholestasis\n→ ALP สูงจากตับ (GGT สูงยืนยัน) + US ไม่มีท่อขยาย = medical cholestasis → **AMA** · ถ้าบวกร่วมกับ ALP สูงวินิจฉัยได้โดยไม่ต้อง biopsy → รักษา **UDCA 13–15 มก./กก./วัน** (EASL 2024)\n\n- **ERCP** ใช้เมื่อท่อขยาย/ต้องระบาย — รุกล้ำและไม่จำเป็น\n- **Ceruloplasmin** สำหรับ Wilson (hepatocellular)\n- **HBsAg** ไม่เข้ากับ cholestatic pattern ที่ transaminase ปกติ\n- **CT** ไม่เพิ่มข้อมูลเมื่อ US ไม่พบท่อขยายหรือก้อน",
+   "pearl": "หญิงวัยกลางคน คัน ALP/GGT สูง transaminase ปกติ US ปกติ → AMA (PBC)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Primary biliary cholangitis",
+    "EASL Clinical Practice Guidelines on PBC (2024)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.51",
+    "2.1.2"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-20",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Persistent jaundice after biliary decompression – delta bilirubin",
+   "stem": "A 70-year-old man with distal cholangiocarcinoma had 6 weeks of jaundice (total bilirubin 22 mg/dL) before a metal biliary stent was placed at ERCP. Two weeks later he feels better and is afebrile: total bilirubin 9 mg/dL (direct 7), ALP has fallen from 900 to 350 U/L, and ultrasound shows decompressed bile ducts with a patent stent. His family asks why he is still yellow. What is the best explanation?",
+   "choices": [
+    "The stent is occluded",
+    "Superimposed haemolysis",
+    "New liver metastases",
+    "Unmasked Gilbert syndrome",
+    "Bilirubin covalently bound to albumin (delta bilirubin) clears with the half-life of albumin, about 3 weeks"
+   ],
+   "answer": 4,
+   "explain": "สไลด์: **Chronic biliary obstruction: delta bilirubin = bilirubin + albumin; T½ = albumin**\n- ท่อน้ำดีอุดนาน conjugated bilirubin ในเลือดจับ **albumin แบบ covalent** = **delta bilirubin** (วัดออกมาเป็นส่วนหนึ่งของ direct bilirubin)\n- ไตกรองไม่ได้ และตับดึงกลับไปขับไม่ได้ → ลดลงตาม **ครึ่งชีวิตของ albumin ~20 วัน** → **เหลืองค้างหลายสัปดาห์แม้แก้การอุดตันแล้ว**\n- หลักฐานว่าระบายดี: bilirubin ลดจาก 22 → 9 · ALP ลด · ท่อยุบ · ไม่มีไข้\n\n- **Stent ตัน** จะมีท่อขยายอีก ALP/bilirubin ขึ้น หรือ cholangitis\n- **Hemolysis** ให้ indirect เด่น — รายนี้ direct เด่น\n- **Metastases** ทำให้ ALP สูงขึ้น ไม่ใช่ลดลง\n- **Gilbert** ให้ indirect สูงเล็กน้อยเท่านั้น",
+   "pearl": "เหลืองค้างหลังใส่ stent ระบายดี = delta bilirubin (ครึ่งชีวิต ~20 วัน เท่า albumin)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Alkaline phosphatase: delta bilirubin"
+   ],
+   "nl": [
+    "2.3.11",
+    "B8.2.4-3(1)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-21",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Isolated ALP elevation – obstruction of one main hepatic duct",
+   "stem": "A 60-year-old man has lost 5 kg. ALP 520 U/L (ULN 120), GGT 610 U/L, AST 45 U/L, ALT 50 U/L, total bilirubin 0.9 mg/dL. CT shows a hilar mass obstructing the left hepatic duct, with dilated left intrahepatic ducts and normal right-sided ducts. Why is his bilirubin normal despite biliary obstruction?",
+   "choices": [
+    "The unobstructed right lobe still excretes bilirubin, while the obstructed segment induces ALP synthesis",
+    "Bilirubin is excreted mainly in urine rather than bile",
+    "The tumour itself secretes ALP and GGT into the blood",
+    "Bilirubin has been converted to delta bilirubin, which is not measured",
+    "The obstruction is too recent for bilirubin to rise"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ **Isolated elevation of AP**: **one main duct obstruction** · infiltrative diseases · mass lesion · early small duct cholestasis (PBC, drug)\n- ALP และ GGT อยู่ที่เยื่อหุ้มด้าน canaliculus และเยื่อบุท่อน้ำดี · ตรงที่ **น้ำดีค้าง กรดน้ำดีเหนี่ยวนำการสร้าง ALP** และละลายให้หลุดเข้าเลือด → **ALP/GGT สูง**\n- ตับส่วนที่ยังระบายได้ (ที่นี่คือ **กลีบขวา**) มีกำลังสำรองมาก ขับ bilirubin ได้ทั้งหมด → **bilirubin ปกติ** (ตารางในสไลด์: partial obstruction เช่น hilar CA bilirubin 1–5 เท่าเท่านั้น)\n\n- bilirubin ขับทาง **น้ำดี** เป็นหลัก ไม่ใช่ปัสสาวะ\n- เนื้องอกบางชนิดสร้าง ALP ได้ (Regan isoenzyme) แต่ไม่ใช่กลไกหลัก และไม่อธิบาย GGT\n- **Delta bilirubin** ถูกวัดรวมใน direct bilirubin และเกิดเมื่ออุดนาน\n- น้ำหนักลดและท่อขยายบ่งว่าอุดมานานพอแล้ว",
+   "pearl": "ALP สูงอย่างเดียว: ท่อตันข้างเดียว · แทรกซึม · ก้อน · PBC ระยะแรก",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Isolated elevation of AP · Patterns of LFTs (partial obstruction)"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-22",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Isolated ALP with fever – infiltrative liver disease",
+   "stem": "A 40-year-old man has 2 months of evening fever, night sweats and 6 kg weight loss. He has tender hepatomegaly. ALP 900 U/L (ULN 120), GGT 700 U/L, AST 60 U/L, ALT 55 U/L, total bilirubin 1.0 mg/dL. Ultrasound shows an enlarged liver without biliary dilatation or focal mass. What is the most likely cause of his liver test abnormality?",
+   "choices": [
+    "Acute viral hepatitis",
+    "Primary biliary cholangitis",
+    "Infiltrative liver disease such as hepatic tuberculosis or lymphoma",
+    "Common bile duct stone",
+    "Alcohol-associated hepatitis"
+   ],
+   "answer": 2,
+   "explain": "LFT = **ALP สูงมาก (7.5 เท่า) + GGT สูง (มาจากตับ) + bilirubin ปกติ + transaminase ใกล้ปกติ** → **isolated ALP จากตับ**\nตารางในสไลด์ **hepatic infiltration** (TB, infiltrative CA): AST/ALT 1–3× · **ALP 1–20×** · **bilirubin มักปกติ** · PT ปกติ\n- ไข้เรื้อรัง เหงื่อออกกลางคืน น้ำหนักลด → **วัณโรคตับ (granulomatous hepatitis) หรือ lymphoma** — สไลด์จัด TB เป็นสาเหตุของ fever + cholestasis ด้วย → CT/ **liver biopsy** (ย้อม AFB, culture, histology)\n\n- **Acute viral** transaminase นำเป็นร้อย–พัน\n- **PBC** หญิงวัยกลางคน ไม่มีไข้ น้ำหนักลด\n- **CBD stone** ทำให้ท่อขยาย bilirubin สูง ปวด\n- **Alcoholic hepatitis** AST/ALT > 2 bilirubin มักสูง",
+   "pearl": "ไข้เรื้อรัง + ALP สูงมาก + bilirubin ปกติ = infiltrative (TB, lymphoma) → biopsy",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Patterns of LFTs: hepatic infiltration · Fever with jaundice"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.1",
+    "2.3.1(20)",
+    "2.1.9"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-23",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Isolated ALP with normal GGT – bone source",
+   "stem": "A 74-year-old man has 3 months of low back pain. PSA is 85 ng/mL. ALP 410 U/L (ULN 120), GGT 30 U/L (ULN 50), AST, ALT and bilirubin are normal. What is the best interpretation of the raised ALP?",
+   "choices": [
+    "Early primary biliary cholangitis",
+    "Infiltrative liver disease",
+    "Obstruction of one main hepatic duct",
+    "ALP of bone origin, for example from osteoblastic metastases",
+    "Liver metastases from prostate cancer"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ **ALP**: แหล่งนอกตับ = **กระดูก · รก · ลำไส้** · เม็ดเลือดขาว · ไต — ต้องยืนยันว่ามาจากตับด้วย **1) GGT 2) 5'-nucleotidase 3) ALP isoenzyme**\nสไลด์ **GGT**: **NOT FOUND IN BONE DISEASE**\n- **ALP สูง + GGT ปกติ = ALP มาจากกระดูก** · osteoblast ที่สร้างกระดูกใหม่สร้าง ALP ของตัวเอง\n- PSA สูง + ปวดหลัง → **มะเร็งต่อมลูกหมากแพร่ไปกระดูกแบบ osteoblastic** → bone scan · (สาเหตุกระดูกอื่น: Paget, กระดูกหักกำลังติด, osteomalacia, hyperparathyroidism)\n\n- **PBC, infiltrative, ท่อตันข้างเดียว, liver metastases** ล้วนเป็น ALP จาก **ตับ** → GGT จะสูงตาม\n- มะเร็งต่อมลูกหมากแพร่ไปตับได้น้อย และจะมี GGT สูง",
+   "pearl": "ALP สูง + GGT ปกติ = กระดูก (GGT ไม่มีในกระดูก)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Alkaline phosphatase · Gamma glutamyl transpeptidase"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.13",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-24",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Isolated GGT elevation – enzyme induction by anticonvulsants",
+   "stem": "A 30-year-old man with epilepsy has taken carbamazepine for 5 years. A routine check shows GGT 180 U/L (ULN 50); AST, ALT, ALP, bilirubin, albumin and INR are normal. He does not drink alcohol and liver ultrasound is normal. What is the most appropriate interpretation?",
+   "choices": [
+    "Early drug-induced cholestasis; stop carbamazepine immediately",
+    "Microsomal enzyme induction by carbamazepine; no further liver work-up is needed",
+    "Early primary biliary cholangitis; check antimitochondrial antibody and start ursodeoxycholic acid",
+    "Occult common bile duct stone; arrange MRCP",
+    "Infiltrative liver disease; arrange liver biopsy"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ **GGT**: sensitive ต่อโรคตับและทางเดินน้ำดี แต่ **ไม่จำเพาะ** · **drugs and alcohol: stimulate** · สูงได้ใน DM โรคไต MI รูมาติก ตับอ่อนอักเสบ\nสไลด์ **Isolated elevation of GGT: alcohol · drugs · anticonvulsants · warfarin**\n- carbamazepine/phenytoin **เหนี่ยวนำเอนไซม์ microsome ในเซลล์ตับ** → สร้าง GGT เพิ่ม ทั้งที่ไม่มี cholestasis หรือเซลล์ตับบาดเจ็บ · LFT อื่นและ US ปกติ → **ไม่ต้องสืบค้นเพิ่ม ไม่ต้องหยุดยา**\n\n- **DILI แบบ cholestatic** ต้องมี ALP/bilirubin สูง\n- **PBC** ต้องมี ALP สูง — GGT อย่างเดียวไม่ใช่ข้อบ่งชี้ตรวจ AMA/ให้ UDCA\n- **นิ่ว/แทรกซึม** ต้องมี ALP สูงด้วย และ US ปกติ\n- การส่ง MRCP/biopsy จาก GGT สูงอย่างเดียวคือการสืบค้นเกินจำเป็น",
+   "pearl": "GGT สูงอย่างเดียว: เหล้า · ยากันชัก · warfarin — ไม่ใช่ cholestasis",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Isolated elevation of GGT"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-25",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Confirming hepatic origin of ALP when GGT is enzyme-induced – 5'-nucleotidase",
+   "stem": "A 45-year-old woman taking phenytoin for epilepsy has ALP 290 U/L (ULN 120) and GGT 160 U/L (ULN 50). AST, ALT and bilirubin are normal. She has no bone pain and is not pregnant. Which test would best confirm whether the raised ALP comes from the liver?",
+   "choices": [
+    "Repeat GGT in 2 weeks",
+    "Serum albumin",
+    "Serum lactate dehydrogenase",
+    "Fractionated bilirubin",
+    "Serum 5'-nucleotidase"
+   ],
+   "answer": 4,
+   "explain": "สไลด์: isolated ALP ยืนยันว่ามาจากตับด้วย **1) GGT 2) 5'-nucleotidase 3) ALP isoenzyme**\n- ปกติใช้ **GGT** ก่อน แต่รายนี้กิน **phenytoin ซึ่งเหนี่ยวนำ GGT** (isolated GGT จาก anticonvulsants) → GGT สูงอาจเป็นจากยา **ไม่ได้ยืนยันว่า ALP มาจากตับ**\n- **5'-nucleotidase** พบในเยื่อหุ้มด้าน canaliculus ของตับ สูงใน cholestasis แต่ **ไม่สูงในโรคกระดูก และไม่ถูกเหนี่ยวนำด้วยยากันชัก** → ถ้าสูง = ALP มาจากตับ · ถ้าปกติ คิดกระดูก (phenytoin ทำให้ขาดวิตามินดี/osteomalacia ได้ด้วย)\n\n- **GGT ซ้ำ** ก็ยังถูกยาเหนี่ยวนำเหมือนเดิม\n- **Albumin** บอก synthetic function ไม่บอกแหล่ง ALP\n- **LDH** ไม่จำเพาะ\n- **Bilirubin** ปกติอยู่แล้ว ไม่ช่วยแยก",
+   "pearl": "ยืนยัน ALP จากตับ: GGT → 5'-NT → isoenzyme (ถ้ากินยากันชัก GGT เชื่อไม่ได้)",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Alkaline phosphatase · 5'-nucleotidase · Isolated elevation of GGT"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-26",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Prolonged PT – vitamin K deficiency versus impaired synthesis",
+   "stem": "A 58-year-old man with alcohol-related cirrhosis has INR 2.2. After vitamin K 10 mg intravenously daily for 3 days the INR is 2.1. Factor V activity is 25% of normal. Which is the best interpretation?",
+   "choices": [
+    "Impaired hepatic synthetic function, because the vitamin K–independent factor V is low and the INR does not correct",
+    "Vitamin K deficiency from fat malabsorption",
+    "Disseminated intravascular coagulation",
+    "Surreptitious warfarin ingestion",
+    "Lupus anticoagulant"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ **Liver synthetic function — Prothrombin time**: ปัจจัยการแข็งตัว **สร้างที่ตับทั้งหมดยกเว้น factor VIII** · **Factor V + vitamin K subcutaneously: differentiate hepatic dysfunction from vitamin K deficiency**\n- **ขาดวิตามิน K** (ท่อน้ำดีอุดตัน ดูดซึมไขมันไม่ได้ ยาปฏิชีวนะ ขาดอาหาร): ให้ vitamin K แล้ว **INR ดีขึ้นใน 24–48 ชม.** · **factor V ปกติ** (ไม่ขึ้นกับวิตามิน K)\n- **ตับสร้างไม่ได้** (ตับแข็ง/ตับวาย): INR **ไม่ตอบสนอง** + **factor V ต่ำ** ← รายนี้\n\n- **Fat malabsorption** INR จะแก้ได้ด้วยวิตามิน K ทางหลอดเลือด\n- **DIC** มี factor VIII ต่ำ เกล็ดเลือดต่ำ fibrinogen ต่ำ D-dimer สูง ร่วมกับภาวะกระตุ้น\n- **Warfarin** กด factor II VII IX X ไม่ใช่ V และแก้ได้ด้วยวิตามิน K\n- **Lupus anticoagulant** มักยืด aPTT ไม่ใช่ PT และไม่ลด factor V",
+   "pearl": "INR ไม่ดีขึ้นหลังวิตามิน K + factor V ต่ำ = ตับสร้างไม่ได้",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Liver synthetic function: prothrombin time"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-27",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Coagulopathy of liver failure versus DIC – factor VIII",
+   "stem": "A 30-year-old woman with acute liver failure from hepatitis B has oozing from cannula sites. INR 3.5, platelets 90,000/mm³, fibrinogen 120 mg/dL, D-dimer mildly raised. Which finding most strongly favours the coagulopathy of liver failure rather than disseminated intravascular coagulation?",
+   "choices": [
+    "Prolonged prothrombin time",
+    "Low fibrinogen",
+    "Normal or raised factor VIII level",
+    "Thrombocytopenia",
+    "Raised D-dimer"
+   ],
+   "answer": 2,
+   "explain": "สไลด์: **All factors except factor VIII are synthesized by hepatocytes (F VIII: vascular endothelial cell)**\n- ตับวาย: factor ที่ตับสร้าง (II, V, VII, IX, X, fibrinogen) ลดลง แต่ **factor VIII สร้างจาก endothelium จึงปกติหรือสูง** (ตับวายยังเก็บกวาด FVIII/vWF ได้น้อยลง)\n- **DIC**: ปัจจัยทุกตัวถูกใช้หมด รวมทั้ง **factor VIII ต่ำ**\n→ factor VIII เป็นตัวแยกที่ดีที่สุด\n\n- **PT ยาว, fibrinogen ต่ำ, เกล็ดเลือดต่ำ (hypersplenism/การใช้), D-dimer สูง** พบได้ทั้งสองภาวะ จึงแยกกันไม่ได้\n- ในทางปฏิบัติ INR ในตับวายยังเป็นตัวบอกความรุนแรง/พยากรณ์ ไม่ได้บอกความเสี่ยงเลือดออกตรง ๆ",
+   "pearl": "ตับวาย: factor VIII ปกติ/สูง · DIC: factor VIII ต่ำ",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Liver synthetic function: factor VIII"
+   ],
+   "nl": [
+    "2.3.11",
+    "B2.2.2(8)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-28",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Albumin in acute versus chronic liver disease – half-life",
+   "stem": "A 27-year-old man has acute hepatitis A diagnosed 7 days ago. INR is 1.7 but serum albumin is 4.0 g/dL. Which statement best explains why his albumin remains normal?",
+   "choices": [
+    "Acute hepatitis stimulates albumin synthesis",
+    "Haemoconcentration from vomiting falsely raises the albumin",
+    "Albumin is mainly produced outside the liver",
+    "Albumin has a half-life of about 20 days, much longer than that of factor VII (about 6 hours)",
+    "His prolonged INR is due to vitamin K deficiency, not hepatic dysfunction"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ **Albumin: half-life ~20 days**\n- ตับสร้างได้น้อยลงตั้งแต่วันแรก แต่ albumin ที่มีอยู่ในเลือดค่อย ๆ ลดลงตามครึ่งชีวิต ~3 สัปดาห์ → **ไม่ลดในตับอักเสบเฉียบพลัน** · ลดใน **โรคกึ่งเฉียบพลัน/เรื้อรัง** (ตารางในสไลด์)\n- ส่วน **factor VII ครึ่งชีวิต ~6 ชม.** → PT/INR ยาวขึ้นภายในวัน → **INR เป็นตัวบอก synthetic function ในโรคเฉียบพลัน**\n- ตับแข็ง: albumin ลด globulin เพิ่ม — แต่ไม่จำเพาะ (ไตรั่ว ขาดอาหาร ก็ทำ albumin ต่ำ)\n\n- ตับอักเสบ **ไม่กระตุ้น** การสร้าง albumin (albumin เป็น negative acute-phase protein)\n- Hemoconcentration มีผลเล็กน้อย ไม่ใช่เหตุผลหลัก\n- Albumin สร้างที่ **ตับ** เท่านั้น\n- ใน acute hepatitis INR ยาวจาก **ตับสร้างไม่ได้** เป็นหลัก",
+   "pearl": "Albumin ครึ่งชีวิต 20 วัน → ปกติในโรคเฉียบพลัน · ดู INR แทน",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Liver synthetic function: albumin"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.1"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-29",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Unconjugated hyperbilirubinaemia – Gilbert syndrome",
+   "stem": "A 20-year-old medical student notices yellow eyes during an examination week in which he skipped meals and had a viral cold. Total bilirubin 3.0 mg/dL, direct 0.3 mg/dL. AST, ALT and ALP are normal. Hb 14.8 g/dL, reticulocytes 1%, LDH normal, peripheral smear normal. What is the most likely diagnosis and management?",
+   "choices": [
+    "Crigler–Najjar syndrome type 1; refer for phototherapy",
+    "Gilbert syndrome; reassure, no treatment needed",
+    "Haemolytic anaemia; start prednisolone",
+    "Dubin–Johnson syndrome; check urinary coproporphyrins",
+    "Early acute viral hepatitis; check IgM anti-HAV"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ **Predominant bilirubin elevations**: **IB/TB > 0.8** = unconjugated เด่น · **DB/TB > 0.5** = โรคตับ\n- รายนี้ IB/TB = 2.7/3.0 = **0.9** → unconjugated · CBC, reticulocyte, LDH, smear ปกติ → **ไม่ใช่ hemolysis** · LFT อื่นปกติ\n- **Gilbert syndrome** (เพิ่มเติม — ไม่ได้มาจากสไลด์): UGT1A1 ทำงานลดเหลือ ~30% → bilirubin สูงเล็กน้อย (มัก < 4) **เวลาอดอาหาร ป่วย เครียด** → **ไม่ต้องรักษา** ไม่ต้อง biopsy\n\n- **Crigler–Najjar type 1** ขาด UGT1A1 เกือบสมบูรณ์ bilirubin > 20 ตั้งแต่แรกเกิด\n- **Hemolysis** ต้องมีซีด retic/LDH สูง haptoglobin ต่ำ\n- **Dubin–Johnson** เป็น **direct (conjugated)** hyperbilirubinemia\n- **Viral hepatitis** transaminase จะสูง และ bilirubin เป็น direct เด่น",
+   "pearl": "Indirect เด่น (IB/TB > 0.8) + CBC/retic ปกติ + เป็นตอนอดอาหาร = Gilbert ไม่ต้องรักษา",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Predominant bilirubin elevations"
+   ],
+   "nl": [
+    "2.3.11"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-30",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Haemolytic (unconjugated) jaundice – urine findings",
+   "stem": "A 25-year-old woman with hereditary spherocytosis has jaundice and splenomegaly. Hb 8.8 g/dL, reticulocytes 10%, LDH 640 U/L, haptoglobin low, direct antiglobulin test negative. Total bilirubin 4.2 mg/dL, direct 0.4 mg/dL; AST, ALT and ALP are normal. Which urine dipstick result is expected?",
+   "choices": [
+    "Bilirubin positive, urobilinogen absent",
+    "Bilirubin positive, urobilinogen increased",
+    "Bilirubin negative, urobilinogen absent",
+    "Bilirubin positive with pale stools",
+    "Bilirubin negative, urobilinogen increased"
+   ],
+   "answer": 4,
+   "explain": "IB/TB = 3.8/4.2 = **0.9 (> 0.8) = unconjugated เด่น** → สไลด์: hemolysis · Gilbert · ineffective erythropoiesis\n- **Unconjugated bilirubin ไม่ละลายน้ำ เกาะ albumin** → ไตกรองไม่ได้ → **urine bilirubin ลบ** (\"acholuric jaundice\" ปัสสาวะสีปกติ)\n- heme ถูกสลายมาก → ตับจับคู่และขับลงน้ำดีมาก → ลำไส้เปลี่ยนเป็น urobilinogen มาก ดูดซึมกลับ → **urobilinogen ในปัสสาวะเพิ่ม** · อุจจาระสีเข้ม\n- ตับปกติรับภาระได้มาก bilirubin จาก hemolysis อย่างเดียวจึงมักไม่เกิน ~4\n\n- **Bilirubin บวก** = conjugated (โรคตับ/ท่อน้ำดี)\n- **Urobilinogen หายไป + อุจจาระซีด** = ท่อน้ำดีอุดสมบูรณ์ ไม่มี bilirubin ลงลำไส้\n- **Bilirubin บวก + urobilinogen เพิ่ม** = hepatocellular jaundice\n- **ลบทั้งคู่** ไม่เข้ากับ bilirubin turnover ที่เพิ่ม",
+   "pearl": "Hemolysis: urine bilirubin ลบ · urobilinogen เพิ่ม · ปัสสาวะสีปกติ",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Predominant bilirubin elevations: IB/TB > 0.8"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.3",
+    "3.1.6"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-31",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Fever with jaundice in Thailand – leptospirosis",
+   "stem": "A 45-year-old rice farmer presents 5 days after working in flooded fields with high fever, severe calf pain and red eyes without discharge. He is jaundiced with marked calf tenderness and no eschar. Total bilirubin 16 mg/dL (direct 11), AST 120 U/L, ALT 85 U/L, ALP 180 U/L, creatinine 3.6 mg/dL, platelets 60,000/mm³. Thick and thin blood films are negative for malaria. What is the most likely diagnosis?",
+   "choices": [
+    "Leptospirosis (Weil disease)",
+    "Acute hepatitis A",
+    "Ascending cholangitis",
+    "Typhoidal hepatitis",
+    "Sepsis-induced cholestasis from pneumonia"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ **Fever with jaundice** — แบบ hepatitis: AIH, ยา, fulminant, alcoholic, **typhoidal hepatitis, icteric leptospirosis, malaria**, hemolysis · แบบ cholestasis: **ascending cholangitis**, liver abscess, melioidosis, TB, sepsis-induced\n- **Leptospirosis ชนิดเหลือง (Weil)** (เพิ่มเติม): ลุยน้ำ/ทำนา · ไข้สูง **ปวดน่องมาก · ตาแดง (conjunctival suffusion)** · **bilirubin สูงมากแต่ transaminase ขึ้นเพียงเล็กน้อย** (เชื้อทำให้ขับ bilirubin ไม่ได้มากกว่าทำให้เซลล์ตาย) · **ไตวาย** เกล็ดเลือดต่ำ → รักษา **penicillin G/ceftriaxone** หรือ doxycycline\n\n- **HAV** ALT เป็นพัน ไม่มีไตวาย/ปวดน่อง\n- **Cholangitis** ALP เด่น ปวด RUQ ท่อขยาย\n- **Typhoid** มักไข้ค่อย ๆ สูง ปวดท้อง ไม่ค่อยไตวาย bilirubin ไม่สูงขนาดนี้\n- **Sepsis cholestasis** ต้องมีแหล่งติดเชื้อ และไม่อธิบายปวดน่อง/ตาแดง",
+   "pearl": "ไข้ + ลุยน้ำ + ปวดน่อง ตาแดง + bilirubin สูงมาก transaminase ต่ำ + AKI = leptospirosis",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Fever with jaundice"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.1",
+    "2.3.1",
+    "B9.2.7(1)"
+   ]
+  },
+  {
+   "id": "GI-LFT-MCQ-32",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Approach to cholestatic jaundice – dilated ducts without cholangitis",
+   "stem": "A 68-year-old woman has 3 weeks of painless jaundice. She is afebrile with stable vital signs. Total bilirubin 9 mg/dL (direct 7), ALP 540 U/L, AST 90 U/L, ALT 110 U/L. Ultrasound shows a dilated common bile duct (13 mm) and dilated intrahepatic ducts; the distal duct and pancreas are obscured by bowel gas. What is the most appropriate next step?",
+   "choices": [
+    "Urgent ERCP with biliary stenting within 24 hours",
+    "Percutaneous liver biopsy",
+    "Contrast-enhanced CT of the abdomen (pancreatic protocol) or MRCP",
+    "Antimitochondrial antibody",
+    "Repeat ultrasound in 3 months"
+   ],
+   "answer": 2,
+   "explain": "ขั้นตอน **Jaundice** ในสไลด์: ประวัติ + PE + LFT → **cholestasis → ultrasound**\n- **Dilated CBD = obstructive jaundice** → มี **S/S ของ ascending cholangitis → ERCP** · **asymptomatic → CT** (± MRCP/EUS) เพื่อหา **ตำแหน่งและสาเหตุ** (มะเร็งตับอ่อน distal CBD ampulla นิ่ว) และประเมินว่าผ่าตัดได้หรือไม่ ก่อนทำหัตถการ\n- **No dilated CBD = medical cholestasis** → serum markers (AMA) ทบทวนยา → liver biopsy\n- รายนี้ไม่มีไข้/ปวด = ไม่มี cholangitis → **CT pancreatic protocol หรือ MRCP**\n\n- **ERCP ด่วน** สำหรับ cholangitis · การใส่ stent ก่อนรู้ระยะโรคอาจรบกวนการประเมิน/ผ่าตัด\n- **Biopsy** และ **AMA** ใช้ในท่อไม่ขยาย\n- **รอ 3 เดือน** อันตรายเมื่อสงสัยมะเร็ง",
+   "pearl": "Cholestasis → US: ขยาย + cholangitis → ERCP · ขยายไม่มีอาการ → CT/MRCP · ไม่ขยาย → markers/biopsy",
+   "ref": [
+    "สไลด์ นพ.กิตติ — Jaundice algorithm"
+   ],
+   "nl": [
+    "2.3.11",
+    "B8.2.4-3(1)",
+    "3.3.20"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "GI-LFT-MEQ-01",
+   "part": "MEQ",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Jaundice after analgesic overdose — LFT interpretation, paracetamol hepatotoxicity and acute liver failure",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 23 ปี นักศึกษา มาด้วยตาเหลือง อ่อนเพลีย ไข้ต่ำ 3 วัน\nPI: 1 สัปดาห์ก่อนทะเลาะกับแฟน กินยาแก้ปวดที่บ้าน \"ประมาณ 1 กำมือ\" ไม่ทราบชื่อยาแน่ชัด หลังกินคลื่นไส้อาเจียน 1 วันแล้วดีขึ้น 3 วันก่อนเริ่มเหลือง\nPE: BT 37.6 C · BP 112/70 · HR 96 · ตาเหลือง ไม่ซีด · ตับโต 3 ซม. ใต้ชายโครงขวา กดเจ็บ · ม้ามโตเล็กน้อย · ไม่มี asterixis\nLab: albumin/globulin 3.4/3.5 g/dL · TB/DB 8/5 mg/dL · AST 3,580 U/L · ALT 2,500 U/L · ALP 230 U/L · INR 1.8 · Cr 0.8 · glucose 82",
+   "questions": [
+    {
+     "q": "1. จงแปลผล LFT ของผู้ป่วยรายนี้ (3 คะแนน)",
+     "a": "- **Hepatocellular pattern รุนแรง** — AST/ALT สูง **> 40–100 เท่า (marked)** · R ratio สูงมาก (> 5)\n- **Bilirubin สูง direct เด่น** (DB/TB > 0.5 = โรคตับ) · ALP สูงเล็กน้อย (< 3 เท่า)\n- **การสร้างของตับลดลง: INR 1.8** · albumin 3.4 ยังเกือบปกติเพราะครึ่งชีวิต ~20 วัน (โรคเฉียบพลัน) · globulin 3.5"
+    },
+    {
+     "q": "2. จงให้การวินิจฉัยแยกโรคที่สำคัญ 3 ข้อ และการวินิจฉัยที่น่าจะเป็นที่สุด (3 คะแนน)",
+     "a": "- ระดับ **40–100 เท่า** นึกถึง: **ตับอักเสบจาก paracetamol** · **ตับขาดเลือด** (ไม่มีประวัติช็อก) · **ไวรัสตับอักเสบเฉียบพลันรุนแรง** (HAV, HBV, HEV) · อื่น: Wilson (หญิงอายุน้อย), AIH, สมุนไพร\n- **น่าจะเป็นที่สุด: ตับอักเสบจาก paracetamol ขนาดสูง** — ประวัติกินยาแก้ปวดจำนวนมาก (ยาสามัญที่หาได้ในบ้าน) · อาการระยะแรกคลื่นไส้ แล้วดีขึ้น ก่อนตับอักเสบวันที่ 2–4 · AST > ALT ในช่วงแรก\n- ต้องตรวจ **IgM anti-HAV, HBsAg/IgM anti-HBc, anti-HCV** และ **ระดับ paracetamol** (บอกว่าเคยได้รับ แม้มาช้า) · ceruloplasmin ถ้ายังไม่ชัด"
+    },
+    {
+     "q": "3. จงบอกการรักษาและการเฝ้าระวัง (4 คะแนน)",
+     "a": "- **ให้ N-acetylcysteine ทางหลอดเลือดทันที** แม้มาช้ากว่า 24 ชม. และไม่รู้เวลากินแน่ — ยังลดอัตราตายในตับวาย · **ไม่ใช้ Rumack–Matthew nomogram** เพราะไม่รู้เวลาและเกิน 24 ชม.\n- เฝ้าระวัง **INR, glucose (น้ำตาลต่ำ), ระดับความรู้สึกตัว (encephalopathy), Cr, pH/lactate, phosphate** ทุก 6–12 ชม.\n- หลีกเลี่ยงยากล่อมประสาท · ให้ dextrose ป้องกันน้ำตาลต่ำ\n- **ประเมินจิตเวช/ความเสี่ยงฆ่าตัวตาย** เพราะเป็นการกินยาเกินขนาดโดยตั้งใจ"
+    },
+    {
+     "q": "4. เมื่อใดต้องส่งต่อศูนย์ปลูกถ่ายตับ (2 คะแนน)",
+     "a": "- **Acute liver failure** = INR ≥ 1.5 + **encephalopathy** ในผู้ที่ไม่มีโรคตับเดิม → ปรึกษาศูนย์ปลูกถ่ายตับตั้งแต่เนิ่น\n- **King's College criteria (paracetamol)**: **arterial pH < 7.30** หลังให้สารน้ำ **หรือ** ครบทั้ง 3 ข้อ — **INR > 6.5 · Cr > 3.4 mg/dL · encephalopathy ระดับ 3–4** (lactate สูงช่วยเพิ่มความไว)"
+    }
+   ],
+   "ref": [
+    "สไลด์ นพ.กิตติ — LFT case หญิง 23 ปี กินยาแก้ปวด 1 กำมือ",
+    "King's College criteria · acetaminophen toxicity management"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.3.19(2)",
+    "2.2.17"
+   ]
+  },
+  {
+   "id": "GI-LFT-MEQ-02",
+   "part": "MEQ",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "Painless obstructive jaundice — LFT interpretation, work-up, vitamin K–responsive coagulopathy and delta bilirubin",
+   "vignette": "ผู้ป่วยชายไทยอายุ 64 ปี อาชีพค้าขาย มาด้วยตัวเหลือง ตาเหลือง และคันทั้งตัว 1 เดือน\nPI: 1 เดือนก่อนสังเกตว่าตาเหลืองมากขึ้นเรื่อย ๆ ไม่ปวดท้อง ไม่มีไข้ คันมากจนนอนไม่หลับ ปัสสาวะสีชาเข้ม อุจจาระสีซีดเหมือนดินน้ำมันตลอด น้ำหนักลด 6 กก. ใน 2 เดือน เบื่ออาหาร\nPH: เพิ่งได้รับการวินิจฉัยเบาหวานเมื่อ 6 เดือนก่อน กิน metformin · สูบบุหรี่ 30 pack-year · ดื่มเหล้านาน ๆ ครั้ง ไม่กินยาหรือสมุนไพรอื่น\nPE: BT 37.0 C · BP 128/76 · HR 82 · ตัวเหลืองตาเหลืองชัด ไม่ซีด มีรอยเกา · ไม่มี spider naevi · ตับโต 2 ซม. ใต้ชายโครงขวา ไม่เจ็บ · **คลำได้ก้อนรูปลูกแพร์ผิวเรียบ ไม่เจ็บ ใต้ชายโครงขวา เคลื่อนตามการหายใจ** · ไม่มีท้องมาน\nLab: TB/DB 16/12 mg/dL · AST 98 U/L · ALT 130 U/L (ULN 40) · ALP 680 U/L (ULN 120) · GGT 820 U/L · albumin 3.8 g/dL · globulin 3.2 g/dL · **INR 1.9** · CBC ปกติ · Cr 0.9 mg/dL · UA: bilirubin 3+, urobilinogen negative",
+   "questions": [
+    {
+     "q": "1. จงแปลผล LFT ของผู้ป่วยรายนี้ พร้อมคำนวณ R ratio (3 คะแนน)",
+     "a": "- **Cholestatic pattern**: **direct bilirubin เด่น** (DB/TB = 12/16 = 0.75 > 0.5 → โรคตับ/ท่อน้ำดี) + **ALP สูงกว่า 3 เท่า** (680/120 ≈ 5.7 เท่า) ตรงนิยาม cholestasis ในสไลด์\n- **R ratio** = (130/40) ÷ (680/120) = 3.25 ÷ 5.7 ≈ **0.6 (< 2) = cholestatic**\n- **GGT สูง** ยืนยันว่า ALP มาจากตับ · transaminase สูงเล็กน้อย (2–3 เท่า) เข้ากับการอุดตัน\n- **Albumin ปกติ** (ไม่มีโรคตับเรื้อรัง) แต่ **INR ยาว** — ต้องแยกว่าขาดวิตามินเคหรือตับสร้างไม่ได้ (ข้อ 4)\n- **UA: bilirubin บวก (conjugated) · urobilinogen ลบ** = bilirubin ลงลำไส้ไม่ได้ → อุดตันสมบูรณ์"
+    },
+    {
+     "q": "2. จงบอกเบาะแสทางคลินิกที่บ่งว่าเป็น obstructive jaundice และให้การวินิจฉัยที่น่าจะเป็นที่สุด พร้อมการวินิจฉัยแยกโรค (3 คะแนน)",
+     "a": "- เบาะแสตามสไลด์: **อุจจาระสีซีด (acholic stool)** · **คัน (pruritus)** · **คลำถุงน้ำดีได้ไม่เจ็บ (Courvoisier sign)** · (ไม่มี RUQ pain + fever)\n- **น่าจะเป็นที่สุด: มะเร็งรอบ ampulla (periampullary carcinoma) โดยเฉพาะมะเร็งหัวตับอ่อน** — เหลืองไม่ปวดแบบค่อยเป็นค่อยไป อุจจาระซีดตลอด น้ำหนักลด **เบาหวานเกิดใหม่ในผู้สูงอายุ** สูบบุหรี่ และ Courvoisier sign (อุดช้า ๆ ถุงน้ำดีปกติจึงยืดโต)\n- แยกโรค: **มะเร็งท่อน้ำดีส่วนปลาย (distal cholangiocarcinoma)** · **มะเร็ง ampulla of Vater / duodenum** · นิ่วในท่อน้ำดีร่วม (โอกาสน้อย — มักปวด ถุงน้ำดีหดเล็ก) · ท่อน้ำดีตีบชนิดไม่ร้าย · choledochal cyst"
+    },
+    {
+     "q": "3. จงวางแผนการสืบค้นตามลำดับ (3 คะแนน)",
+     "a": "- **Ultrasound ช่องท้อง** เป็นการตรวจแรกในทุกราย cholestasis → คาดว่าเห็น **CBD และท่อในตับขยาย** ± ถุงน้ำดีโต (dilated CBD = obstructive jaundice)\n- **ไม่มีอาการ cholangitis → CT ช่องท้องแบบ pancreatic protocol (± MRCP)** หาตำแหน่ง สาเหตุ การลุกลามหลอดเลือด และการแพร่กระจาย เพื่อประเมินว่าผ่าตัดได้หรือไม่ (Whipple)\n- **EUS ± FNA** ได้ชิ้นเนื้อถ้าก้อนเล็กหรือก่อนให้เคมีบำบัด · **CA 19-9** เป็นตัวเสริม (สูงได้ใน cholestasis เอง)\n- **ERCP** ใช้เพื่อ **ระบายน้ำดี (stent)** เมื่อมี cholangitis, คันมาก, ต้องรอผ่าตัดนาน/ให้เคมีบำบัดก่อน หรือผ่าตัดไม่ได้ — ไม่ใช่การตรวจวินิจฉัยแรก"
+    },
+    {
+     "q": "4. ผู้ป่วยมี INR 1.9 จงอธิบายกลไกที่เป็นไปได้ วิธีแยกสาเหตุ และการเตรียมก่อนทำหัตถการ (3 คะแนน)",
+     "a": "- **ขาดวิตามินเคจากท่อน้ำดีอุดตัน**: ไม่มีน้ำดีในลำไส้ → ดูดซึมไขมันและวิตามินที่ละลายในไขมันไม่ได้ → factor II VII IX X ทำงานไม่ได้ (factor VII ครึ่งชีวิตสั้น ~6 ชม. จึง INR ยาวก่อน)\n- **แยกกับตับสร้างไม่ได้** (สไลด์): **ให้ vitamin K 10 มก. ทางหลอดเลือด (หรือใต้ผิวหนัง)** แล้วตรวจ INR ซ้ำ **24–48 ชม.** → ดีขึ้น = ขาดวิตามินเค · ไม่ดีขึ้น = ตับเสีย · ตรวจ **factor V** (ไม่ขึ้นกับวิตามินเค): ปกติ = ขาดวิตามินเค · ต่ำ = ตับสร้างไม่ได้\n- รายนี้ albumin ปกติ ไม่มีลักษณะตับแข็ง → คาดว่าเป็นขาดวิตามินเค (ตารางสไลด์: biliary obstruction — PT ยาวแต่ **ตอบสนองต่อวิตามินเค**)\n- ให้วิตามินเคก่อน ERCP/EUS-FNA/ผ่าตัด · ถ้าเลือดออกหรือต้องทำหัตถการด่วนก่อน INR แก้ → FFP"
+    },
+    {
+     "q": "5. จงอธิบายกลไกของอาการคันและการรักษาเบื้องต้น (2 คะแนน)",
+     "a": "- น้ำดีขับไม่ได้ → **กรดน้ำดีและสารกระตุ้นการคันอื่น ๆ (เช่น lysophosphatidic acid จาก autotaxin) ค้างในเลือด** กระตุ้นปลายประสาทรับความรู้สึกที่ผิวหนัง\n- **การรักษาที่ได้ผลที่สุดคือระบายน้ำดี** (ERCP stent หรือผ่าตัด)\n- ระหว่างรอ: **cholestyramine** (จับกรดน้ำดีในลำไส้ — กินห่างจากยาอื่น 4 ชม.) · ทางเลือกถัดไป rifampicin, naltrexone, sertraline · ทาครีมเย็น ตัดเล็บ · antihistamine ช่วยได้น้อย (ช่วยให้นอนหลับ)\n*(ไม่ได้มาจากสไลด์)*"
+    },
+    {
+     "q": "6. ผู้ป่วยได้รับการใส่ metal stent ผ่าน ERCP · 2 สัปดาห์ต่อมาคันหายและไม่มีไข้ TB 8 mg/dL (DB 6) ALP ลดลงเหลือ 300 US: ท่อยุบ stent อยู่ดี ญาติถามว่าทำไมยังเหลือง — จงอธิบาย และถ้า 2 เดือนต่อมาผู้ป่วยมีไข้หนาวสั่น ปวดชายโครงขวา เหลืองมากขึ้น จะคิดถึงอะไรและจัดการอย่างไร (2 คะแนน)",
+     "a": "- **Delta bilirubin** (สไลด์): ท่อน้ำดีอุดนาน bilirubin **จับ albumin แบบโควาเลนต์** → ไตกรองไม่ได้ และลดตาม **ครึ่งชีวิตของ albumin (~20 วัน)** → เหลืองค้างหลายสัปดาห์ แม้ระบายได้ดีแล้ว (bilirubin ลดลง ALP ลด ท่อยุบ = stent ทำงาน) → ไม่ต้องทำหัตถการซ้ำ ติดตาม LFT\n- 2 เดือนต่อมา ไข้หนาวสั่น + ปวด RUQ + เหลือง (Charcot triad) = **ascending cholangitis จาก stent อุดตัน** (tumor ingrowth/sludge) → hemoculture · **ยาปฏิชีวนะทางหลอดเลือด** ครอบคลุมเชื้อในลำไส้ (เช่น ceftriaxone + metronidazole หรือ piperacillin–tazobactam) · สารน้ำ · **ERCP เปลี่ยน/เพิ่ม stent ด่วน** (ตามสไลด์: dilated CBD + S/S cholangitis → ERCP)"
+    }
+   ],
+   "ref": [
+    "สไลด์ นพ.กิตติ — Cholestasis · Clinical clues of obstructive jaundice · Liver synthetic function · delta bilirubin · Jaundice algorithm",
+    "ACG Clinical Guideline: Evaluation of abnormal liver chemistries (2017)"
+   ],
+   "nl": [
+    "2.3.11",
+    "B8.2.4-3(1)",
+    "2.1.51",
+    "2.1.9"
+   ]
+  },
+  {
+   "id": "GI-LFT-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "G06",
+   "lecture": "Liver function tests (นพ.กิตติ)",
+   "topic": "SAQ – Interpreting liver function test patterns",
+   "station": "SAQ (เขียนตอบ) 6 นาที",
+   "instruction": "จงบอกรูปแบบความผิดปกติของ LFT และสาเหตุที่น่าจะเป็นที่สุด พร้อมการตรวจเพิ่มเติม 1 อย่าง ของผู้ป่วย 5 รายต่อไปนี้ (ค่าปกติ: AST/ALT < 40 · ALP < 120 · TB < 1.2 U/L หรือ mg/dL)\n\n| ราย | ข้อมูล | TB/DB | AST/ALT | ALP | อื่น ๆ |\n|---|---|---|---|---|---|\n| A | ชาย 29 ปี กินหอยดิบ เบื่ออาหาร แล้วเหลือง | 15/11 | 1,350/1,525 | 160 | PT 14 วินาที |\n| B | ชาย 57 ปี ไข้ 39 °C เหลือง ปวดท้อง 2 วัน | 5/3 | 55/60 | 380 | — |\n| C | หญิง 74 ปี ปอดอักเสบได้ยาปฏิชีวนะ แล้วเหลือง | 5/3 | ปกติ | 540 | US ปกติ |\n| D | หญิง 30 ปี ตรวจสุขภาพ ไม่มีอาการ | ปกติ | ปกติ | 580 | — |\n| E | ชาย 50 ปี ดื่มเหล้าทุกวัน | 2.0/1.2 | 180/70 | 140 | GGT 450 · MCV 105 |",
+   "answer": "| ราย | รูปแบบ | สาเหตุที่น่าจะเป็น | ตรวจต่อ | คะแนน |\n|---|---|---|---|---|\n| **A** | **Hepatocellular** ALT > AST เป็นพัน | **Acute hepatitis A** | **IgM anti-HAV** (± HBsAg, IgM anti-HBc) | 2 |\n| **B** | **Cholestatic** DB เด่น ALP > 3× + ไข้ | **Ascending cholangitis** / ฝีในตับ | **US ช่องท้อง** + hemoculture | 2 |\n| **C** | **Cholestatic** ท่อไม่ขยาย | **Sepsis-induced cholestasis** หรือยาปฏิชีวนะ | ทบทวนยา · ติดตาม LFT เมื่อติดเชื้อดีขึ้น | 2 |\n| **D** | **Isolated ALP** | ตั้งครรภ์ · กระดูก · PBC ระยะแรก · แทรกซึม | **GGT หรือ 5'-NT** (± urine hCG) | 2 |\n| **E** | **AST/ALT > 2** AST < 300 · GGT สูง | **Alcohol-associated liver disease** | US ตับ ประเมินพังผืด · AUDIT | 2 |\n\n**หลักที่ต้องแสดง**: แยก hepatocellular vs cholestatic ก่อน · ระดับ transaminase บอกกลุ่มสาเหตุ · cholestasis → US ดูท่อ · isolated ALP → GGT",
+   "ref": [
+    "สไลด์ นพ.กิตติ — LFT cases"
+   ],
+   "nl": [
+    "2.3.11",
+    "2.1.1",
+    "2.2.48"
+   ]
+  }
+ ]
+}

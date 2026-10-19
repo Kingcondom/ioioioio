@@ -1,0 +1,906 @@
+{
+ "set": "onco",
+ "lec": "O02",
+ "d": "จ. 2 พ.ย.",
+ "w": 8,
+ "lecture": "General oncology (พญ.ปิยวรรณ)",
+ "mcq": [
+  {
+   "id": "ONC-GEN-MCQ-01",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Cancer epidemiology in Thailand",
+   "stem": "A provincial health officer is planning a cancer-control programme for Thai men and asks which cancer has the highest incidence among Thai men in the national cancer registry. Which cancer is it?",
+   "choices": [
+    "Lung cancer",
+    "Colorectal cancer",
+    "Liver and intrahepatic bile duct cancer",
+    "Prostate cancer",
+    "Stomach cancer"
+   ],
+   "answer": 2,
+   "explain": "ทะเบียนมะเร็งไทย: ใน **ผู้ชาย มะเร็งตับและท่อน้ำดีในตับ** พบบ่อยที่สุด (ตามด้วยปอด ลำไส้ใหญ่ ต่อมลูกหมาก) · ในผู้หญิง **มะเร็งเต้านม** นำ\n\nเหตุผลที่ไทยต่างจากทั่วโลก: **HBV เรื้อรัง** (สาเหตุนำของ HCC) และ **พยาธิใบไม้ตับ Opisthorchis viverrini** จากการกินปลาน้ำจืดดิบ (ก้อยปลา ปลาร้า) ทำให้ **cholangiocarcinoma ในภาคอีสานสูงที่สุดในโลก** — จึงป้องกันได้ด้วยวัคซีน HBV แรกเกิด รักษา HBV/HCV และงดปลาดิบ\n\nทำไมข้ออื่นผิด\n- **ปอด**: ทั่วโลก (GLOBOCAN 2022) พบบ่อยที่สุดและตายมากที่สุด แต่ในชายไทยเป็นอันดับรอง\n- **ลำไส้ใหญ่**: เพิ่มขึ้นต่อเนื่อง (สไลด์แสดงแนวโน้ม) แต่ยังไม่ใช่อันดับ 1 ในชาย\n- **ต่อมลูกหมาก**: อันดับต้นในชาติตะวันตก ในไทยต่ำกว่า\n- **กระเพาะ**: สูงในเอเชียตะวันออก (ญี่ปุ่น เกาหลี) ไม่ใช่ไทย\n\n*(ตัวเลขล่าสุดไม่ได้มาจากสไลด์ — สไลด์ใช้ข้อมูลไทยปี 2544–2546)*",
+   "pearl": "ชายไทย: มะเร็งตับ/ท่อน้ำดีอันดับ 1 · หญิงไทย: เต้านม",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Leading cancer in Thailand (2001–2003)",
+    "Thai Cancer Registry · GLOBOCAN 2022"
+   ],
+   "nl": [
+    "2.3.2",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-02",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Neoadjuvant therapy",
+   "stem": "A 46-year-old woman has a 6-cm HER2-positive invasive ductal carcinoma of the right breast with a palpable mobile axillary node and no distant metastases. She wishes to keep her breast. The team recommends chemotherapy plus HER2-targeted therapy before surgery. What is the main purpose of giving systemic therapy at this point?",
+   "choices": [
+    "To treat proven distant metastases",
+    "To replace surgery as the definitive curative treatment",
+    "To palliate symptoms only",
+    "To downsize the tumour so that definitive (possibly breast-conserving) surgery becomes feasible",
+    "To avoid the need for any further treatment after surgery"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Aims of treatment (ระยะแรก): เป้าหมายคือ **หายขาด** · การรักษาหลักคือ **ผ่าตัด (definitive)** · **Neoadjuvant = ให้ก่อนผ่าตัดเพื่อ downsizing tumour** · **Adjuvant = ให้หลังผ่าตัดเพื่อยืด DFS/OS**\n\nก้อน 6 ซม. ถ้าผ่าตัดเลยต้องตัดเต้า — ให้ยาก่อนเพื่อให้ก้อนเล็กลงจนผ่าตัดสงวนเต้าได้ · ประโยชน์เสริม: เห็นการตอบสนองของก้อนจริง (ถ้ายังเหลือก้อน HER2+ หลังยา เปลี่ยนเป็น T-DM1 — แนวทางปัจจุบัน ไม่ได้มาจากสไลด์)\n\nทำไมข้ออื่นผิด\n- **ไม่มีการแพร่กระจาย** — ยังเป็นเจตนาหายขาด ไม่ใช่รักษา metastasis หรือประคับประคอง\n- **ไม่ได้แทนการผ่าตัด** — ยังต้องผ่าตัดและฉายแสงตามมา\n- **ไม่ได้ทำให้ไม่ต้องรักษาต่อ** — HER2+ ต้องได้ trastuzumab ครบ 1 ปีหลังผ่าตัด",
+   "pearl": "Neoadjuvant = ยาก่อนผ่าตัด → ลดขนาดก้อน · Adjuvant = หลังผ่าตัด → ยืด DFS/OS",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Aims of treatment (early stage)",
+    "NCCN Breast cancer guideline"
+   ],
+   "nl": [
+    "2.3.2",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-03",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Aims of treatment in advanced cancer",
+   "stem": "A 62-year-old man has newly diagnosed sigmoid adenocarcinoma with multiple bilobar liver metastases and lung nodules that are judged unresectable. His ECOG performance status is 1. Which statement best describes the goal of the systemic therapy he is about to receive?",
+   "choices": [
+    "Prolong survival while maintaining a good quality of life, choosing regimens with acceptable toxicity",
+    "Cure, using the most intensive regimen available regardless of toxicity",
+    "Adjuvant therapy to eradicate micrometastases after resection of the primary",
+    "Maximise tumour response rate as the single most important outcome",
+    "No systemic therapy is indicated; best supportive care only"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ Aims of treatment (ระยะลุกลาม): **เป้าหมายสูงสุด = ยืดชีวิตพร้อมคุณภาพชีวิตที่ดี** · palliative chemotherapy/RT · **ควบคุมอาการ** · ยืด PFS/OS · **เลือกยาที่ผลข้างเคียงยอมรับได้ (favorable toxicity)**\n\nตัวอย่างในสไลด์: มะเร็งลำไส้ใหญ่ระยะแพร่กระจาย ยาเคมีและยามุ่งเป้าหลายสายต่อกันยืดการรอดเฉลี่ยได้ราว 2–3 ปี แต่ส่วนใหญ่ไม่หายขาด *(ยกเว้นแพร่ไปตับ/ปอดจำนวนน้อยที่ผ่าตัดออกได้)*\n\nทำไมข้ออื่นผิด\n- **Cure ด้วยยาแรงที่สุด**: ไม่ใช่เป้าหมายในระยะนี้ และพิษมากทำลายคุณภาพชีวิต\n- **Adjuvant**: ใช้หลังผ่าตัดในระยะแรก ไม่ใช่โรคที่ผ่าตัดไม่ได้\n- **Response rate**: ก้อนยุบไม่ได้แปลว่าอยู่นานขึ้นเสมอ — OS และคุณภาพชีวิตสำคัญกว่า\n- **Supportive care อย่างเดียว**: ECOG 1 ยังได้ประโยชน์จากยามาก (การดูแลประคับประคองควรให้ควบคู่ ไม่ใช่แทน)",
+   "pearl": "ระยะลุกลาม: ยืดชีวิต + คุณภาพชีวิต + พิษยอมรับได้",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Aims of treatment (advanced stage) · Example: advanced stage colon cancer"
+   ],
+   "nl": [
+    "2.3.2",
+    "B8.2.4-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-04",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Interpreting trial endpoints",
+   "stem": "A randomised trial in metastatic non-small cell lung cancer compares a new three-drug regimen (A) with a standard two-drug regimen (B). Results: objective response rate 48% vs 31%; median progression-free survival 5.8 vs 5.2 months; median overall survival 11.0 vs 11.1 months (not significant); grade 3–4 toxicity 62% vs 35%. Which conclusion is most appropriate?",
+   "choices": [
+    "Regimen A should become standard because the response rate is higher",
+    "Regimen A is superior because PFS is longer",
+    "The trial is uninterpretable because response rate and survival disagree",
+    "Regimen A doubles survival in responders and should be offered to all fit patients",
+    "Regimen A shrinks tumours more often but gives no overall survival benefit at the cost of more toxicity, so regimen B remains preferable"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Chemotherapy factor — **combination chemotherapy**: ฆ่าเซลล์ได้มากขึ้นภายใต้พิษที่ทนได้ **มักเพิ่ม response rate แต่ไม่แปลเป็นประโยชน์ทางคลินิก (OS) เสมอ**\n\nในการรักษาแบบประคับประคอง เป้าหมายคือ **ยืดชีวิตพร้อมคุณภาพชีวิต** — A ไม่เพิ่ม OS แต่พิษรุนแรงเกือบสองเท่า จึง **B ยังเหมาะกว่า**\n\nทำไมข้ออื่นผิด\n- **Response rate สูงกว่า**: เป็น surrogate endpoint ก้อนยุบไม่ได้แปลว่าอยู่นานขึ้น\n- **PFS ต่างกัน 0.6 เดือน**: ทางคลินิกน้อยมากเมื่อแลกกับพิษที่เพิ่ม\n- **แปลผลไม่ได้**: แปลได้ — endpoint ที่สำคัญที่สุดคือ OS (และคุณภาพชีวิต)\n- **เปรียบเทียบเฉพาะคนที่ตอบสนอง**: เป็น bias (responders เป็นกลุ่มที่โรคดีอยู่แล้ว) และข้อมูลไม่ได้แสดงเช่นนั้น\n\nคำศัพท์: **DFS** (หลังผ่าตัดหมด) · **PFS** (โรคยังไม่ลุกลาม) · **OS** (มาตรฐานสูงสุด)",
+   "pearl": "Response rate ↑ ≠ OS ↑ — ระยะลุกลามดู OS คุณภาพชีวิต และพิษ",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Chemotherapy factor — combination chemotherapy"
+   ],
+   "nl": [
+    "2.3.2",
+    "B6.2.4-3(2)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-05",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Karnofsky performance status",
+   "stem": "A 67-year-old man with metastatic gastric cancer can no longer work. He lives at home and manages most of his personal needs, but his wife occasionally has to help him bathe. Which Karnofsky Performance Status (KPS) score best fits him?",
+   "choices": [
+    "KPS 90",
+    "KPS 70",
+    "KPS 60",
+    "KPS 50",
+    "KPS 30"
+   ],
+   "answer": 2,
+   "explain": "สไลด์ Karnofsky Performance Status — แบ่ง 3 กลุ่มใหญ่\n| KPS | ความหมาย |\n|---|---|\n| **100–80** | ทำกิจวัตรและทำงานได้ ไม่ต้องดูแลพิเศษ |\n| **70–50** | ทำงานไม่ได้ อยู่บ้าน ดูแลตัวเองได้เป็นส่วนใหญ่ ต้องช่วยมากน้อยต่างกัน |\n| **40–0** | ดูแลตัวเองไม่ได้ ต้องดูแลแบบโรงพยาบาล |\n\nภายในกลุ่มกลาง: **70 = ดูแลตัวเองได้ ทำงานไม่ได้ (ไม่ต้องมีคนช่วย)** · **60 = ต้องมีคนช่วยบางครั้ง แต่ดูแลความต้องการส่วนใหญ่เองได้** · **50 = ต้องมีคนช่วยมาก พบแพทย์บ่อย** → รายนี้ = **KPS 60** (≈ ECOG 2)\n\nทำไมข้ออื่นผิด\n- **90**: ยังทำกิจวัตรปกติได้ อาการเล็กน้อย\n- **70**: ไม่ต้องมีคนช่วยเลย\n- **50**: ต้องช่วยมาก ไม่ใช่แค่บางครั้ง\n- **30**: พิการรุนแรง ควรนอนโรงพยาบาล\n\nPerformance status เป็นตัวทำนายสำคัญที่สุดว่าทนยาเคมีและได้ประโยชน์หรือไม่",
+   "pearl": "KPS 70 ไม่ต้องช่วย · 60 ช่วยบางครั้ง · 50 ช่วยมาก",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Patient’s factors: Karnofsky Performance Status scale"
+   ],
+   "nl": [
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-06",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Patient factors — functional versus chronological age",
+   "stem": "An 81-year-old woman has had a curative resection of stage III colon cancer (2 of 16 nodes positive). She lives alone, drives, plays golf twice a week, has well-controlled hypertension only, and her ECOG performance status is 0. Her son says she is 'too old for chemotherapy'. Which is the most appropriate approach?",
+   "choices": [
+    "Withhold chemotherapy because age over 75 is a contraindication",
+    "Offer adjuvant fluoropyrimidine-based chemotherapy, because fitness and functional age rather than chronological age determine eligibility",
+    "Refer for best supportive care only",
+    "Give adjuvant radiotherapy to the abdomen instead of chemotherapy",
+    "Observe and give chemotherapy only if the cancer recurs"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ Patient’s factors: performance status · โรคร่วม · สภาพทั่วไป · **chronological age vs functioning age** · เศรษฐานะ · ความตั้งใจของผู้ป่วยและผู้ดูแล · สภาพจิตใจ · ระบบช่วยเหลือ\n\nรายนี้ **ECOG 0 โรคร่วมน้อย ใช้ชีวิตอิสระ** = อายุตามการทำงานดีมาก และ **stage III มีต่อมน้ำเหลืองบวก** ผ่าตัดอย่างเดียวรอด 5 ปีเพียง 30–50% · ยากลุ่ม **5-FU/capecitabine เพิ่มการรอด 10–20%** (สไลด์) → ควรเสนอ adjuvant และตัดสินใจร่วมกับผู้ป่วยเอง *(ในผู้สูงอายุ > 70 ปี ประโยชน์ที่เพิ่มจาก oxaliplatin ไม่ชัด จึงมักใช้ fluoropyrimidine เดี่ยว — แนวทางปัจจุบัน)*\n\nทำไมข้ออื่นผิด\n- **อายุไม่ใช่ข้อห้าม** — ใช้ functional age ประเมิน (อาจใช้ geriatric assessment)\n- **Supportive care อย่างเดียว**: เสียโอกาสหายขาด\n- **ฉายแสง**: ไม่ใช่การรักษาเสริมมาตรฐานของ colon (ใช้ใน rectum)\n- **รอจนกลับเป็นซ้ำ**: เมื่อกลับเป็นซ้ำมักรักษาไม่หายขาดแล้ว",
+   "pearl": "ตัดสินด้วย functional age + PS ไม่ใช่อายุตามปฏิทิน",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Patient’s factors · Example: early stage colon cancer"
+   ],
+   "nl": [
+    "2.3.2",
+    "B8.2.4-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-07",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Prognostic versus predictive markers",
+   "stem": "The pathology report of a 50-year-old woman's breast cancer lists: tumour size 2.8 cm, 3 of 12 axillary nodes positive, histological grade 3, Ki-67 40%, and HER2 gene amplification by FISH. Which item is primarily a predictive marker, telling you whether a specific targeted drug will work?",
+   "choices": [
+    "Tumour size 2.8 cm",
+    "Three positive axillary nodes",
+    "HER2 gene amplification by FISH",
+    "Histological grade 3",
+    "Ki-67 40%"
+   ],
+   "answer": 2,
+   "explain": "**Prognostic** = บอกพยากรณ์โรคไม่ว่าจะรักษาด้วยอะไร · **Predictive** = บอกว่า **ยาตัวใดจะได้ผล**\n\nสไลด์ Cancer’s factors: **predictive marker for targeted therapy = HER2, KRAS, EGFR mutation** — HER2 amplification (FISH+ หรือ IHC 3+) ทำนายว่า **trastuzumab/pertuzumab ได้ผล** เพราะเซลล์มะเร็งพึ่งสัญญาณจาก HER2 ที่มีจำนวนมากเกิน · ถ้า HER2 ลบ ยาไม่ได้ประโยชน์\n\nทำไมข้ออื่นผิด\n- **ต่อมน้ำเหลือง 3 ต่อม**: **ตัวพยากรณ์ที่สำคัญที่สุด** ของมะเร็งเต้านม (สไลด์) แต่ไม่บอกว่ายาตัวไหนได้ผล\n- **ขนาดก้อน**: prognostic (ส่วน T ของ TNM)\n- **Grade 3 · Ki-67 สูง**: บอกความดุ และ (สไลด์) ทำนายกว้าง ๆ ว่าตอบสนองยาเคมี แต่ไม่ได้ชี้ยามุ่งเป้าตัวใด\n\n*HER2 ยังเป็น prognostic ด้วย (ก่อนยุค trastuzumab พยากรณ์แย่) แต่บทบาทหลักปัจจุบันคือ predictive*",
+   "pearl": "Predictive = เลือกยา (HER2, RAS, EGFR) · prognostic = พยากรณ์ (ต่อมน้ำเหลือง)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Cancer’s factors"
+   ],
+   "nl": [
+    "B1.6.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-08",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Cell-cycle checkpoints — Rb and CDK4/6",
+   "stem": "A 59-year-old woman with hormone receptor-positive, HER2-negative metastatic breast cancer starts letrozole plus palbociclib. Palbociclib prevents phosphorylation of the retinoblastoma (Rb) protein. At which point of the cell cycle does it act?",
+   "choices": [
+    "G2 to M transition by inhibiting CHK1",
+    "Spindle assembly (metaphase) checkpoint",
+    "Inhibition of DNA synthesis during S phase",
+    "G1 to S transition (restriction point)",
+    "Topoisomerase II during DNA replication"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Cell cycle check point: **G1 (restriction) checkpoint ก่อนเข้า S** · G2 checkpoint ก่อนเข้า M · metaphase checkpoint · เซลล์ส่วนใหญ่อยู่ **G0** ต้องได้สัญญาณการเติบโตจึงเข้า G1\n\nกลไก: สัญญาณการเติบโต (รวมถึง estrogen ใน ER+) → **cyclin D–CDK4/6** → ฟอสโฟรีเลต **Rb** → Rb ปล่อย **E2F** → ยีนสำหรับ S phase ทำงาน · **Palbociclib/ribociclib/abemaciclib ยับยั้ง CDK4/6** → Rb ยังจับ E2F → **เซลล์หยุดที่ G1** (cytostatic)\n\nทำไมข้ออื่นผิด\n- **G2→M / CHK1**: checkpoint ตรวจ DNA เสียหายก่อนแบ่งตัว — ยาไม่ได้ออกฤทธิ์ที่นี่\n- **Spindle checkpoint**: เกี่ยวกับยา M phase (taxane, vinca)\n- **ยับยั้งการสร้าง DNA**: antimetabolite เช่น 5-FU methotrexate\n- **Topoisomerase II**: anthracycline etoposide\n\n*(CDK4/6 inhibitor ไม่ได้มาจากสไลด์ — สไลด์ใช้ endocrine therapy เดี่ยวในระยะแพร่กระจาย)*",
+   "pearl": "CDK4/6 inhibitor → Rb ไม่ถูกฟอสโฟรีเลต → หยุดที่ G1",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Cell cycle check point",
+    "NCCN Breast cancer — CDK4/6 inhibitors"
+   ],
+   "nl": [
+    "B1.6.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-09",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Mechanisms of carcinogenesis",
+   "stem": "Breast cancer cells from a 44-year-old woman show HER2 protein overexpression (IHC 3+) caused by many extra copies of the ERBB2 gene, while the HER2 protein sequence itself is normal. According to the major mechanisms of carcinogenesis in growth pathways, this is an example of which mechanism?",
+   "choices": [
+    "Autocrine secretion of the growth ligand by the tumour",
+    "Increased number of growth-factor receptors",
+    "Mutated receptor that signals without ligand binding",
+    "Constitutively active downstream pathway protein",
+    "Loss of a tumour-suppressor gene"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ Major carcinogenesis — ทางการเติบโต 4 แบบ\n1. **หลั่งสัญญาณการเติบโตเอง** (autocrine)\n2. **เพิ่มจำนวน receptor** — เช่น **HER2 gene amplification** → receptor ล้นผิวเซลล์ จับคู่กันเองและส่งสัญญาณต่อเนื่อง\n3. **receptor กลายพันธุ์ ทำงานเองไม่ต้องมี ligand** — เช่น EGFR exon 19 deletion/L858R ในมะเร็งปอด\n4. **downstream ทำงานเอง** — เช่น KRAS, BRAF V600E\n\nรายนี้ยีนมีหลายสำเนาแต่โปรตีนปกติ = **ข้อ 2** · ยาที่ใช้ได้: trastuzumab/pertuzumab (antibody จับ HER2 นอกเซลล์) · lapatinib (TKI)\n\nทำไมข้ออื่นผิด\n- **Autocrine**: เซลล์สร้าง ligand เอง ไม่ใช่ receptor มากขึ้น\n- **Receptor กลายพันธุ์**: โปรตีน HER2 ในรายนี้ปกติ\n- **Downstream ทำงานเอง**: เช่น RAS กลายพันธุ์ — เป็นเหตุที่ anti-EGFR antibody ไม่ได้ผล\n- **Tumour suppressor**: เช่น p53, Rb — เป็นการสูญเสียเบรก ไม่ใช่เพิ่มคันเร่ง",
+   "pearl": "HER2 amplification = เพิ่มจำนวน receptor · EGFR mutation = receptor ทำงานเอง · KRAS = downstream",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Major carcinogenesis — cell growth & proliferation pathways"
+   ],
+   "nl": [
+    "B1.6.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-10",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Multistep carcinogenesis — intraepithelial neoplasia",
+   "stem": "A 34-year-old woman with an abnormal HPV test has a colposcopic cervical biopsy. Histology shows atypical squamous cells replacing the full thickness of the epithelium, with an intact basement membrane and no stromal invasion. What is the diagnosis and its implication?",
+   "choices": [
+    "CIN 1 (low-grade lesion) — usually regresses; repeat testing",
+    "Reactive inflammatory atypia — treat infection and repeat",
+    "Microinvasive squamous cell carcinoma — radical hysterectomy",
+    "Invasive squamous cell carcinoma — chemoradiation with cisplatin",
+    "CIN 3 / carcinoma in situ (high-grade intraepithelial neoplasia) — precancerous lesion treated by local excision"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Carcinogenesis — **multistep carcinogenesis**: ปกติ → initiated → **dysplasia (= intraepithelial neoplasia) mild → moderate → severe → carcinoma in situ → มะเร็งรุกราน** · ตัวอย่างในสไลด์คือ **low-grade CIN → high-grade CIN → cancer** ของปากมดลูก\n\nเซลล์ผิดปกติ **เต็มความหนาของเยื่อบุแต่ยังไม่ทะลุ basement membrane** = **CIN 3/CIS (HSIL)** — ยังเป็น **รอยโรคก่อนมะเร็ง** ไม่มีโอกาสแพร่กระจาย (ยังไม่ถึงหลอดเลือด/ท่อน้ำเหลืองใน stroma) → **ตัดออกเฉพาะที่ (LEEP/conization)** ป้องกันการเป็นมะเร็งรุกราน\n\nทำไมข้ออื่นผิด\n- **CIN 1**: ผิดปกติเฉพาะ 1/3 ล่างของเยื่อบุ มักหายเอง\n- **Reactive atypia**: ไม่มีความผิดปกติเต็มความหนา\n- **Microinvasive / invasive**: ต้องมีการทะลุ basement membrane เข้า stroma ซึ่งรายนี้ไม่มี",
+   "pearl": "Dysplasia → CIS (ยังไม่ทะลุ basement membrane) → invasive · CIN 3 ตัดเฉพาะที่",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Carcinogenesis — multistep carcinogenesis, cervical CIN"
+   ],
+   "nl": [
+    "B1.6.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-11",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Chemotherapy factors — duration of exposure",
+   "stem": "A 57-year-old man starts FOLFOX for colorectal cancer. In this regimen 5-fluorouracil is given as a 46-hour continuous infusion rather than only as a single rapid bolus. What is the pharmacological rationale?",
+   "choices": [
+    "5-FU is S-phase specific and has a very short half-life, so prolonged exposure reaches more cells as they enter S phase",
+    "Continuous infusion prevents oxaliplatin-induced neuropathy",
+    "Bolus 5-FU cannot cross into tumour tissue",
+    "Infusion bypasses hepatic dihydropyrimidine dehydrogenase entirely",
+    "5-FU acts only in G0 cells, which require long exposure to be killed"
+   ],
+   "answer": 0,
+   "explain": "สไลด์ Chemotherapy factor — **time exposure to cytotoxic drug: 5-FU infusion ดีกว่า 5-FU push ในมะเร็งลำไส้ใหญ่**\n\nเหตุผล (สไลด์ Cytotoxic chemotherapy): ยาเคมีออกฤทธิ์ **เฉพาะเซลล์ที่กำลังแบ่งตัว** · เซลล์มะเร็งผลัดเปลี่ยนเป็นวันถึงสัปดาห์ แต่ **ยาอยู่ในร่างกายเป็นชั่วโมง** · 5-FU เป็น **antimetabolite จำเพาะ S phase** และครึ่งชีวิตสั้นมาก (ราว 10–20 นาที) → ฉีดครั้งเดียวฆ่าได้เฉพาะเซลล์ที่อยู่ใน S phase ขณะนั้น · หยดต่อเนื่องจึงทันเซลล์ที่ทยอยเข้า S phase มากกว่า\n\nทำไมข้ออื่นผิด\n- **ไม่ได้ป้องกันพิษ oxaliplatin** (ชาปลายมือเท้าเมื่อโดนความเย็น)\n- **Bolus ก็เข้าเนื้อก้อนได้** — ปัญหาคือช่วงเวลาสัมผัสสั้น\n- **ไม่ได้เลี่ยง DPD** — DPD ยังกำจัด 5-FU ส่วนใหญ่ จึงยังเป็นพิษรุนแรงในผู้ขาด DPD\n- **G0 ไม่ตอบสนองต่อยาเคมี** — เป็นเหตุผลที่ต้องให้ยาเป็นรอบ",
+   "pearl": "ยาจำเพาะระยะ (5-FU) → ต้องสัมผัสนาน · ยาเคมีฆ่าเฉพาะเซลล์ที่แบ่งตัว",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Chemotherapy factor — time exposure to cytotoxic drug"
+   ],
+   "nl": [
+    "B1.7.1(1)",
+    "B8.2.4-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-12",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Chemosensitive tumours",
+   "stem": "Which of the following patients with metastatic disease has the best chance of being cured by systemic chemotherapy?",
+   "choices": [
+    "A 60-year-old man with metastatic clear-cell renal cell carcinoma",
+    "A 66-year-old woman with metastatic pancreatic adenocarcinoma",
+    "A 24-year-old man with non-seminomatous testicular germ cell tumour and lung metastases",
+    "A 55-year-old man with metastatic hepatocellular carcinoma",
+    "A 70-year-old woman with metastatic gastric adenocarcinoma"
+   ],
+   "answer": 2,
+   "explain": "สไลด์ Cancer cell factor: **เซลล์โตเร็วตอบสนองยาเคมีดี** — poorly differentiated · proliferation สูง · mitosis มาก · **S-phase (growth) fraction สูง** · Ki-67 สูง · **ตัวอย่าง: germ cell tumour, small cell lung cancer**\n\n**Germ cell tumour ของอัณฑะ** ไวยาเคมีมากจน **หายขาดได้แม้แพร่กระจาย** ด้วยสูตร **BEP (bleomycin etoposide cisplatin)** — ระยะแพร่กระจายกลุ่มพยากรณ์ดีหายขาดราว 90% · (SCLC ก็ไวยามากแต่ระยะแพร่กระจาย **กลับเป็นซ้ำเร็ว** ไม่หายขาด)\n\nทำไมข้ออื่นผิด\n- **RCC**: **ดื้อยาเคมีและรังสี** — ใช้ immunotherapy + VEGFR-TKI ยืดชีวิต\n- **ตับอ่อน**: ตอบสนองต่ำ พยากรณ์แย่ที่สุดกลุ่มหนึ่ง\n- **HCC**: ยาเคมีแบบเดิมแทบไม่ได้ผล ใช้ atezolizumab + bevacizumab แบบประคับประคอง\n- **กระเพาะ**: ระยะแพร่กระจายยาเคมียืดชีวิตแต่ไม่หายขาด",
+   "pearl": "Germ cell tumour = หายขาดได้แม้แพร่กระจาย (BEP)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Cancer cell factor"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-13",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Cell-cycle specificity of cytotoxic drugs",
+   "stem": "A 52-year-old woman receives a chemotherapy regimen for lymphoma. Which of the following drugs is cell-cycle dependent but NOT phase-specific (it damages DNA in any phase of the cycle)?",
+   "choices": [
+    "Methotrexate",
+    "Paclitaxel",
+    "Bleomycin",
+    "Gemcitabine",
+    "Cyclophosphamide"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Classic cytotoxic drug\n| กลุ่ม | ยา |\n|---|---|\n| ไม่ขึ้นกับวงจรเซลล์ | steroid |\n| **ขึ้นกับวงจรเซลล์ ไม่จำเพาะระยะ** | **platinum** (cisplatin carboplatin oxaliplatin) · **alkylating** (**cyclophosphamide** ifosfamide) |\n| S phase | antimetabolite (5-FU **methotrexate gemcitabine**) · topoisomerase inhibitor (anthracycline) |\n| G2 phase | **bleomycin** |\n| M phase | **taxane (paclitaxel)** · vinca alkaloid |\n\nCyclophosphamide ถูกตับเปลี่ยนเป็นสารออกฤทธิ์ที่ **เติมหมู่ alkyl เชื่อมสาย DNA (cross-link)** ได้ทุกระยะ แต่เซลล์จะตายเมื่อพยายามแบ่งตัว — จึง cell-cycle dependent แต่ไม่จำเพาะระยะ · ยากลุ่มนี้ฆ่าเซลล์ตามขนาดยา (dose-dependent)\n\nทำไมข้ออื่นผิด\n- **Methotrexate, gemcitabine**: antimetabolite จำเพาะ S phase\n- **Paclitaxel**: ทำให้ microtubule เสถียร หยุดที่ M phase\n- **Bleomycin**: จำเพาะ G2 phase",
+   "pearl": "Non-phase specific = platinum + alkylating · S = antimetabolite · G2 = bleomycin · M = taxane/vinca",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Classic cytotoxic drug"
+   ],
+   "nl": [
+    "B1.7.1(1)",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-14",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Cisplatin toxicity and prevention",
+   "stem": "A 45-year-old woman with locally advanced cervical cancer is receiving weekly cisplatin with radiotherapy. After four doses she has tinnitus, serum creatinine has risen from 0.7 to 1.3 mg/dL and serum magnesium is 1.2 mg/dL. Which measure is most important in preventing this drug's renal toxicity?",
+   "choices": [
+    "Mesna given with each dose",
+    "Leucovorin rescue 24 hours after each dose",
+    "Vigorous intravenous saline hydration before and after each dose, with magnesium supplementation",
+    "Dexrazoxane before each dose",
+    "Allopurinol throughout treatment"
+   ],
+   "answer": 2,
+   "explain": "**Cisplatin** ถูกดึงเข้าเซลล์ **ท่อไตส่วนต้น** และสะสมจนเซลล์ตาย → **AKI** และ **ดูด Mg กลับไม่ได้ (Mg ต่ำ)** · ทำลาย **เซลล์ขนในหูชั้นใน** → เสียงในหู หูตึงความถี่สูง · ปลายประสาท · คลื่นไส้อาเจียนรุนแรง (ต้องใช้ 5-HT3 + NK1 antagonist + dexamethasone)\n\nการป้องกันพิษไตที่สำคัญที่สุด: **ให้สารน้ำ NSS ทางหลอดเลือดก่อนและหลังให้ยา** (ให้ปัสสาวะมาก ลดความเข้มข้นของยาในท่อไต) + **เสริม Mg/K** · ปรับหรือเปลี่ยนเป็น carboplatin เมื่อไตเสื่อม · ตรวจการได้ยินถ้ามีอาการ\n\nทำไมข้ออื่นผิด — แต่ละตัวคู่กับยาอื่น\n- **Mesna**: จับ acrolein ป้องกัน hemorrhagic cystitis จาก **cyclophosphamide/ifosfamide**\n- **Leucovorin**: กู้เซลล์ปกติจาก **methotrexate**\n- **Dexrazoxane**: ลดพิษหัวใจของ **anthracycline**\n- **Allopurinol**: ป้องกัน **tumour lysis syndrome** ไม่ป้องกันพิษ cisplatin\n\n*(พิษเฉพาะยาไม่ได้มาจากสไลด์ — สไลด์จัด cisplatin เป็น platinum ไม่จำเพาะระยะ)*",
+   "pearl": "Cisplatin: ไต Mg ต่ำ หู อาเจียน → สารน้ำ + Mg",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Classic cytotoxic drug — platinum",
+    "Learn — พิษเฉพาะยา (ตำรามาตรฐาน)"
+   ],
+   "nl": [
+    "2.3.19(2)",
+    "B9.2.7(1)",
+    "B9.2.5(2)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-15",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Pharmacogenomics — fluoropyrimidine toxicity",
+   "stem": "A 58-year-old woman with resected stage III colon cancer starts adjuvant capecitabine. On day 10 of the first cycle she is admitted with severe oral mucositis, profuse diarrhoea, hand–foot erythema, ANC 150/µL and platelets 22,000/µL. Her renal function is normal and she has taken the correct dose. Which inherited abnormality most likely explains this toxicity?",
+   "choices": [
+    "Dihydropyrimidine dehydrogenase (DPD) deficiency",
+    "Thiopurine methyltransferase (TPMT) deficiency",
+    "UGT1A1*28 homozygosity",
+    "CYP2D6 poor-metaboliser status",
+    "Glucose-6-phosphate dehydrogenase (G6PD) deficiency"
+   ],
+   "answer": 0,
+   "explain": "**Capecitabine** เป็น prodrug ของ **5-FU** (antimetabolite จำเพาะ S phase) · ร่างกายกำจัด 5-FU ส่วนใหญ่ (> 80%) ด้วยเอนไซม์ **DPD** ในตับ → ผู้มี **DPYD variant ขาด DPD** ยาสะสม → **เยื่อบุอักเสบ ท้องเสีย hand–foot syndrome และกดไขกระดูกรุนแรง** ตั้งแต่รอบแรก อาจถึงตาย · รักษา: หยุดยา ประคับประคอง และยาต้านพิษ **uridine triacetate** (ถ้ามี) · หลายประเทศแนะนำตรวจ DPYD ก่อนเริ่มยา\n\nทำไมข้ออื่นผิด\n- **TPMT**: พิษกดไขกระดูกจาก **6-mercaptopurine/azathioprine**\n- **UGT1A1*28**: พิษท้องเสียและ neutropenia จาก **irinotecan** (SN-38 ถูก glucuronidate ช้า)\n- **CYP2D6**: เปลี่ยน **tamoxifen** เป็น endoxifen — poor metaboliser ยาได้ผลน้อยลง ไม่ใช่พิษมากขึ้น\n- **G6PD**: เม็ดเลือดแดงแตกจาก **rasburicase** dapsone primaquine\n\n*(ไม่ได้มาจากสไลด์ — สไลด์กล่าวถึง 5-FU ในหัวข้อ chemotherapy factor)*",
+   "pearl": "5-FU/capecitabine พิษรุนแรงตั้งแต่รอบแรก → คิดถึง DPD deficiency",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Classic cytotoxic drug — antimetabolite",
+    "CPIC guideline for fluoropyrimidines and DPYD"
+   ],
+   "nl": [
+    "B1.7.1(1)",
+    "2.3.19(2)",
+    "2.3.3(2)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-16",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Trastuzumab cardiotoxicity",
+   "stem": "A 49-year-old woman with HER2-positive early breast cancer completed four cycles of doxorubicin–cyclophosphamide and is now 3 months into adjuvant trastuzumab. She has no symptoms. Routine echocardiography shows LVEF 45%, down from 62% at baseline. Which statement about management is most appropriate?",
+   "choices": [
+    "This is irreversible cumulative-dose myocyte necrosis; trastuzumab must be stopped permanently",
+    "Withhold trastuzumab, start heart-failure therapy and repeat LVEF in about 4 weeks; trastuzumab can usually be resumed if LVEF recovers",
+    "No action is needed because she is asymptomatic",
+    "Replace trastuzumab with further doxorubicin to complete the HER2-directed therapy",
+    "Continue trastuzumab and stop echocardiographic monitoring"
+   ],
+   "answer": 1,
+   "explain": "สัญญาณ **HER2 ในเซลล์กล้ามเนื้อหัวใจ** ช่วยให้ทนความเครียด → trastuzumab ปิดสัญญาณ → **หัวใจบีบตัวลดลงแต่เซลล์ไม่ตาย** → **มักผันกลับได้** และไม่ขึ้นกับขนาดสะสม (type II) · เสี่ยงมากขึ้นเมื่อเคยได้ **anthracycline**\n\nLVEF ลด **17 จุด และต่ำกว่า 50%** → **พักยา** · ให้ ACEI/ARB + beta-blocker · **ตรวจ LVEF ซ้ำใน ~4 สัปดาห์** → ถ้ากลับมาเกณฑ์ปลอดภัย ให้ trastuzumab ต่อจนครบ **1 ปี** (สไลด์: adjuvant trastuzumab 1 ปี) · จึงต้อง **ตรวจ echo ก่อนเริ่มและทุก 3 เดือน**\n\nทำไมข้ออื่นผิด\n- **เซลล์ตายถาวรตามขนาดสะสม**: เป็นลักษณะของ **anthracycline** (type I) ไม่ใช่ trastuzumab\n- **ไม่ต้องทำอะไร**: แม้ไม่มีอาการ LVEF ลดขนาดนี้ต้องพักยา\n- **ให้ doxorubicin เพิ่ม**: ไม่ใช่ยามุ่งเป้า HER2 และทำลายหัวใจถาวร\n- **ให้ต่อและหยุดตรวจ**: เสี่ยงหัวใจล้มเหลว",
+   "pearl": "Trastuzumab = หัวใจบีบตัวลดแบบผันกลับได้ · anthracycline = เซลล์ตายถาวร",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — adjuvant trastuzumab (1 yr)",
+    "ASCO/ESC cardio-oncology guideline 2022"
+   ],
+   "nl": [
+    "2.3.19(2)",
+    "3.3.23",
+    "2.3.9(5)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-17",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Monoclonal antibodies versus tyrosine kinase inhibitors",
+   "stem": "Two drugs both target the epidermal growth factor receptor (EGFR): cetuximab, used for metastatic colorectal cancer, and erlotinib, used for EGFR-mutant lung adenocarcinoma. Which statement correctly contrasts them?",
+   "choices": [
+    "Both are oral drugs that inhibit the intracellular kinase domain",
+    "Cetuximab is a small molecule that enters the nucleus; erlotinib is an antibody that binds the ligand",
+    "Both require KRAS mutation to be effective",
+    "Cetuximab is an intravenous monoclonal antibody against the extracellular domain of EGFR; erlotinib is an oral small molecule that blocks the intracellular tyrosine kinase",
+    "Erlotinib works by antibody-dependent cytotoxicity, whereas cetuximab blocks ATP binding"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Categories of targeted therapy\n| | **Monoclonal antibody (-mab)** | **Small molecule (-nib)** |\n|---|---|---|\n| ตำแหน่ง | **นอกเซลล์** จับ ligand หรือ receptor (**block upstream**) | **ในเซลล์** แย่งที่ ATP ของ **tyrosine kinase** (**block downstream**) |\n| การให้ | **ทางหลอดเลือด** (โมเลกุลใหญ่) | **กิน** |\n| ตัวอย่างใน HER family | cetuximab panitumumab trastuzumab pertuzumab | erlotinib gefitinib lapatinib (imatinib = BCR-ABL) |\n\nantibody ยังกระตุ้น **ADCC** ได้ด้วย (เป็นของ cetuximab ไม่ใช่ erlotinib)\n\nทำไมข้ออื่นผิด\n- **กินทั้งคู่ / ยับยั้ง kinase ทั้งคู่**: cetuximab เป็น antibody ให้ทางหลอดเลือด\n- **สลับชนิดกัน**: ผิดทั้งสองส่วน\n- **ต้องมี KRAS mutation**: กลับกัน — anti-EGFR antibody ใช้ได้เฉพาะ **RAS wild-type** · EGFR-TKI ใช้ใน **EGFR mutation** (exon 19 del/L858R)\n- **ข้อสุดท้าย**: สลับกลไกของสองยา",
+   "pearl": "-mab นอกเซลล์ IV · -nib ในเซลล์ กิน",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Categories of targeted therapy · HER family"
+   ],
+   "nl": [
+    "B1.7.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-18",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Anti-EGFR antibody skin toxicity",
+   "stem": "A 61-year-old man with RAS wild-type, left-sided metastatic colon cancer starts FOLFOX plus panitumumab. Two weeks later he has an itchy papulopustular eruption on the face, scalp and upper chest, without mucosal involvement or fever. Which interpretation and plan is most appropriate?",
+   "choices": [
+    "Expected on-target effect of EGFR blockade in keratinocytes and hair follicles; manage with topical therapy and oral doxycycline and continue treatment",
+    "IgE-mediated drug allergy; stop panitumumab permanently",
+    "Stevens–Johnson syndrome; admit to a burns unit",
+    "Immune-related dermatitis; start methylprednisolone 1–2 mg/kg",
+    "Disseminated bacterial folliculitis; start intravenous vancomycin"
+   ],
+   "answer": 0,
+   "explain": "**EGFR จำเป็นต่อการเจริญของ keratinocyte และรูขุมขน** → ยา anti-EGFR (cetuximab panitumumab และ EGFR-TKI) ทำให้ผิวเจริญผิดปกติ รูขุมขนอักเสบ → **ผื่นแบบสิว (acneiform/papulopustular)** ที่หน้า หนังศีรษะ อก หลัง ใน 1–3 สัปดาห์แรก = **on-target effect ไม่ใช่การแพ้** · ผื่นมาก **สัมพันธ์กับการตอบสนองดี** · ดูแล: ครีมกันแดด มอยส์เจอร์ไรเซอร์ steroid/antibiotic ทาเฉพาะที่ ± **doxycycline/minocycline กิน** · รุนแรงมาก (grade 3) จึงพัก/ลดยา · พบ Mg ต่ำได้ด้วย\n\nทำไมข้ออื่นผิด\n- **แพ้ยา IgE**: มาด้วยลมพิษ/anaphylaxis ระหว่างหยดยา ไม่ใช่ตุ่มหนองที่รูขุมขนหลัง 2 สัปดาห์\n- **SJS**: มีไข้ ผื่นเป้าธนู ผิวหลุดลอก และเยื่อบุถูกทำลาย\n- **irAE**: เกิดกับ **immune checkpoint inhibitor** ไม่ใช่ anti-EGFR\n- **ติดเชื้อแบคทีเรีย**: ตุ่มเป็นการอักเสบแบบปลอดเชื้อเป็นหลัก ไม่จำเป็นต้องให้ยาทางหลอดเลือด",
+   "pearl": "ผื่นแบบสิวจาก anti-EGFR = ยาจับเป้า ไม่ใช่แพ้ → รักษาผื่นและให้ยาต่อ",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — EGFR antagonist in cancer treatment",
+    "MASCC EGFR-inhibitor skin toxicity guideline"
+   ],
+   "nl": [
+    "2.3.19(2)",
+    "2.1.50",
+    "B8.2.4-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-19",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Interpreting HER2 testing",
+   "stem": "A 52-year-old woman's core biopsy of a 2.5-cm invasive ductal carcinoma is ER-positive with HER2 immunohistochemistry reported as 2+ (equivocal). What is the most appropriate next step before deciding on adjuvant trastuzumab?",
+   "choices": [
+    "Give trastuzumab, because any HER2 staining above 1+ is positive",
+    "Treat as HER2-negative without further testing",
+    "Measure serum HER2 extracellular domain",
+    "Perform in situ hybridisation (FISH/ISH) for HER2 gene amplification on the tumour",
+    "Repeat immunohistochemistry on the surgical specimen in 6 months"
+   ],
+   "answer": 3,
+   "explain": "สไลด์: **HER2 positive = HER2 3+ หรือ FISH +** → ให้ **trastuzumab 1 ปี**\n\nการแปลผล IHC (ASCO/CAP)\n| IHC | แปลผล |\n|---|---|\n| 0, 1+ | ลบ |\n| **2+** | **ก้ำกึ่ง → ต้องตรวจ ISH/FISH** |\n| 3+ | บวก |\n\n**FISH** วัดจำนวนสำเนายีน **ERBB2** (อัตราส่วน HER2/CEP17 ≥ 2.0 ร่วมกับจำนวนสำเนา) — trastuzumab ได้ผลเฉพาะเมื่อมี **gene amplification** เพราะเซลล์พึ่งสัญญาณ HER2 ที่ล้นเกิน\n\nทำไมข้ออื่นผิด\n- **2+ = บวก**: ผิด ให้ยาโดยไม่ยืนยันอาจได้พิษหัวใจโดยไม่ได้ประโยชน์\n- **ถือว่าลบเลย**: อาจพลาดผู้ป่วย HER2+ ราว 10–20% ของกลุ่ม 2+\n- **Serum HER2**: ไม่ใช้เลือกการรักษา\n- **รอ 6 เดือน**: ทำให้การรักษาเสริมล่าช้า (ตรวจซ้ำในชิ้นผ่าตัดได้ แต่ไม่ใช่รอ)\n\n*(ปัจจุบันกลุ่ม IHC 1+/2+ ที่ ISH ลบเรียก **HER2-low** ใช้ trastuzumab deruxtecan ได้ในระยะแพร่กระจายเท่านั้น)*",
+   "pearl": "HER2 IHC 2+ → FISH · trastuzumab เมื่อ 3+ หรือ FISH+",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — 3 broad subtypes",
+    "ASCO/CAP HER2 testing guideline 2023"
+   ],
+   "nl": [
+    "B1.6.1(1)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-20",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Angiogenesis and renal cell carcinoma",
+   "stem": "A 58-year-old man has metastatic clear-cell renal cell carcinoma and is started on an immune checkpoint inhibitor plus a VEGFR tyrosine kinase inhibitor. Which molecular feature of this tumour best explains why anti-angiogenic therapy is effective?",
+   "choices": [
+    "Activating EGFR exon 19 deletion",
+    "Loss of VHL function leading to HIF accumulation and VEGF overexpression",
+    "BCR-ABL fusion driving kinase activity",
+    "HER2 gene amplification",
+    "Germline BRCA2 mutation impairing homologous recombination"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ Angiogenesis: ก้อน **< 1–2 มม.** ไม่มีหลอดเลือด อยู่นิ่ง → **angiogenic switch: VEGF เพิ่ม** → ก้อนโตและแพร่กระจาย · หลอดเลือดของก้อน **รั่ว ขาดเซลล์ค้ำจุน** · ยา: bevacizumab · VEGF-trap · **VEGFR-TKI เช่น sorafenib pazopanib**\n\n**Clear-cell RCC**: ยีน **VHL เสีย** (sporadic หรือ VHL syndrome) → **HIF ไม่ถูกทำลาย** ค้างในเซลล์ทั้งที่มีออกซิเจน → เปิดยีน **VEGF PDGF และ EPO** → ก้อนมีหลอดเลือดมาก (hypervascular บน CT) และเกิด **polycythemia** ได้ · จึงตอบสนองต่อ **VEGFR-TKI** (axitinib cabozantinib lenvatinib) ร่วมกับ IO ขณะที่ **ดื้อยาเคมีและรังสี**\n\nทำไมข้ออื่นผิด\n- **EGFR exon 19**: NSCLC adenocarcinoma → EGFR-TKI\n- **BCR-ABL**: CML → imatinib\n- **HER2 amplification**: เต้านม/กระเพาะ → trastuzumab\n- **BRCA2**: เต้านม รังไข่ ต่อมลูกหมาก ตับอ่อน → PARP inhibitor",
+   "pearl": "ccRCC: VHL เสีย → HIF → VEGF/EPO → ใช้ VEGFR-TKI (+ IO)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Angiogenesis pathways · VEGF antagonist in cancer treatment"
+   ],
+   "nl": [
+    "B9.2.4-3(2)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-21",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Immune checkpoint inhibitor hypophysitis",
+   "stem": "A 54-year-old man is receiving ipilimumab plus nivolumab for metastatic melanoma. At week 9 he has headache, profound fatigue and dizziness. BP 92/58 mmHg, Na 128 mmol/L, K 4.2 mmol/L, morning cortisol 1.8 µg/dL with low ACTH, free T4 low and TSH low-normal. MRI shows an enlarged pituitary. Which is the most appropriate first step in hormone management?",
+   "choices": [
+    "Start levothyroxine first, then add hydrocortisone after one week",
+    "Give hypertonic 3% saline and fluid restriction",
+    "Start fludrocortisone alone",
+    "Permanently discontinue immunotherapy and start infliximab",
+    "Start glucocorticoid replacement (hydrocortisone) before levothyroxine"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ irAEs: เกิดได้ทุกอวัยวะ · **CTLA-4 (ipilimumab) และการให้ร่วม** เกิดเร็วกว่าและรุนแรงกว่า · **hypophysitis พบมากกับ anti-CTLA-4**\n\nกลไก: ปลดเบรก T cell → อักเสบต่อมใต้สมอง → **ACTH ต่ำ → cortisol ต่ำ** (secondary adrenal insufficiency) + **TSH ต่ำ → FT4 ต่ำ** (central hypothyroidism) · ความดันต่ำ Na ต่ำ ปวดศีรษะ\n\n**ให้ hydrocortisone ก่อน levothyroxine เสมอ** — thyroxine เร่งเมตาบอลิซึมและการทำลาย cortisol → ถ้าให้ก่อนจะกระตุ้น **adrenal crisis** · ความดันต่ำมาก ให้ hydrocortisone ขนาด stress dose + NSS · มักต้องทดแทนฮอร์โมนตลอดชีวิต แต่ **มักให้ ICI ต่อได้** เมื่ออาการคงที่\n\nทำไมข้ออื่นผิด\n- **levothyroxine ก่อน**: เสี่ยง adrenal crisis\n- **3% saline + จำกัดน้ำ**: Na ต่ำจากขาด cortisol แก้ด้วย cortisol ไม่ใช่รักษาแบบ SIADH\n- **Fludrocortisone**: ใน secondary AI ระบบ renin–aldosterone ปกติ (K ปกติ) ไม่จำเป็น\n- **Infliximab/หยุดถาวร**: irAE ต่อมไร้ท่อรักษาด้วย **ฮอร์โมนทดแทน** ไม่ใช่ยากดภูมิแรง\n\n*(การจัดการ irAE ไม่ได้มาจากสไลด์ — ASCO 2021/ESMO 2022)*",
+   "pearl": "Hypophysitis จาก ICI: hydrocortisone ก่อน levothyroxine",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Immune related adverse events · Kinetic of main irAEs",
+    "ASCO irAE guideline 2021"
+   ],
+   "nl": [
+    "2.3.4-3(4)",
+    "B11.4(3)",
+    "3.3.12",
+    "B1.4.3"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-22",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Immune checkpoint inhibitor thyroiditis",
+   "stem": "Six weeks after starting pembrolizumab for non-small cell lung cancer, a 63-year-old woman has palpitations and mild tremor. HR 108/min, no goitre or eye signs. TSH <0.01 mIU/L, free T4 elevated, TSH-receptor antibody negative and technetium uptake scan shows low uptake. Which management is most appropriate?",
+   "choices": [
+    "Beta-blocker for symptoms with close thyroid-function monitoring, anticipating later hypothyroidism; antithyroid drugs are not indicated",
+    "Start methimazole",
+    "Radioactive iodine ablation",
+    "High-dose methylprednisolone 2 mg/kg",
+    "Permanently discontinue pembrolizumab"
+   ],
+   "answer": 0,
+   "explain": "**ICI thyroiditis** = T cell อักเสบต่อมไทรอยด์แบบ **ทำลาย (destructive)** → ฮอร์โมนที่เก็บไว้ **รั่วออก** → **thyrotoxicosis ชั่วคราว** (uptake ต่ำ TRAb ลบ) → เมื่อต่อมถูกทำลายหมด → **hypothyroidism ถาวร** ใน 4–8 สัปดาห์ · พบบ่อยกับ **anti-PD-1** (สไลด์: irAE ต่อมไร้ท่อ)\n\nจัดการ: **beta-blocker** (propranolol/atenolol) คุมอาการ · ตรวจ TFT ทุก 2–6 สัปดาห์ · เมื่อเข้าสู่ hypothyroid ให้ **levothyroxine** · **มักให้ ICI ต่อได้** (พักชั่วคราวเฉพาะถ้าอาการมาก)\n\nทำไมข้ออื่นผิด\n- **Methimazole**: ยับยั้งการ **สร้าง** ฮอร์โมน แต่ปัญหาคือฮอร์โมน **รั่ว** — ไม่ได้ผล (ต่างจาก Graves)\n- **Radioiodine**: uptake ต่ำ ต่อมไม่จับ และโรคหายเอง\n- **Steroid ขนาดสูง**: ไม่จำเป็นใน irAE ต่อมไร้ท่อ ส่วนใหญ่รักษาด้วยการทดแทนฮอร์โมน\n- **หยุดถาวร**: ไม่จำเป็น irAE ต่อมไร้ท่อมักให้ยาต่อได้\n\n*(ไม่ได้มาจากสไลด์ — ASCO 2021/ESMO 2022)*",
+   "pearl": "ICI thyroiditis: ไทรอยด์เป็นพิษชั่วคราว → beta-blocker → hypothyroid → levothyroxine",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Immune related adverse events",
+    "ASCO irAE guideline 2021 · ESMO 2022"
+   ],
+   "nl": [
+    "2.3.4-3(4)",
+    "3.3.12",
+    "B1.4.3"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-23",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Hereditary breast–ovarian cancer — who to test",
+   "stem": "Which of the following patients most clearly meets criteria for referral for BRCA1/BRCA2 germline testing?",
+   "choices": [
+    "A 66-year-old woman with ER-positive breast cancer whose sister had colon cancer at 70",
+    "A 50-year-old woman with a fibroadenoma whose mother had breast cancer at 74",
+    "A 60-year-old woman whose paternal aunt had breast cancer at 68",
+    "A 58-year-old man with invasive breast cancer",
+    "A 55-year-old woman with unilateral ductal carcinoma in situ and no family history"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ **Hereditary breast–ovarian cancer (autosomal dominant)** — สงสัยเมื่อ\n- มะเร็งเต้านม **อายุ < 45 ปี**\n- **เป็นทั้งสองข้าง**\n- **มะเร็งเต้านมในผู้ชาย**\n- **ร่วมกับมะเร็งรังไข่ อายุใดก็ได้**\n→ ตรวจ **BRCA1/BRCA2** · ผู้มียีน: คัดกรอง **mammogram/MRI เต้านมตั้งแต่อายุ 30 ปี** (สไลด์)\n\n**มะเร็งเต้านมในผู้ชาย** สัมพันธ์กับ **BRCA2** มาก (พบ BRCA2 ราว 5–10% ของผู้ป่วยชาย) → ส่งตรวจยีนทุกราย และตรวจคัดกรองญาติ (มะเร็งต่อมลูกหมาก ตับอ่อน ด้วย)\n\nทำไมข้ออื่นผิด\n- **66 ปี + พี่สาวเป็นมะเร็งลำไส้อายุ 70**: อายุมาก ไม่มีมะเร็งรังไข่ (มะเร็งลำไส้ชวนนึกถึง Lynch มากกว่า แต่อายุก็มาก)\n- **Fibroadenoma**: ไม่ใช่มะเร็ง และมารดาเป็นตอนอายุมาก\n- **ป้าเป็นตอน 68**: ญาติลำดับสอง อายุมาก — ความเสี่ยงใกล้ประชากรทั่วไป\n- **DCIS ข้างเดียว 55 ปี ไม่มีประวัติครอบครัว**: ไม่เข้าเกณฑ์ใดในสไลด์\n\n*(บางสมาคม เช่น ASBrS แนะนำตรวจยีนผู้ป่วยมะเร็งเต้านมทุกราย แต่ตามเกณฑ์ในสไลด์และ NCCN มะเร็งเต้านมในผู้ชายเป็นข้อบ่งชี้ที่ชัดที่สุด)*",
+   "pearl": "HBOC: < 45 ปี · สองข้าง · ผู้ชาย · + มะเร็งรังไข่ → ตรวจ BRCA",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — hereditary breast–ovarian cancer",
+    "NCCN Genetic/Familial High-Risk Assessment"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "B1.6.1(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-24",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Adjuvant endocrine therapy — premenopausal",
+   "stem": "A 41-year-old premenopausal woman has had breast-conserving surgery and radiotherapy for a 1.5-cm grade 1 invasive ductal carcinoma, ER 40%, PgR 20%, HER2-negative, sentinel nodes negative. Which adjuvant systemic therapy is most appropriate?",
+   "choices": [
+    "Anastrozole alone for 5 years",
+    "Tamoxifen for 5 years",
+    "No endocrine therapy because ER is below 50%",
+    "Trastuzumab for 1 year",
+    "Anthracycline-based chemotherapy alone without endocrine therapy"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ Adjuvant endocrine (5 ปี): **ER/PgR บวกทุกราย ไม่ว่ากี่ %** · **ก่อนหมดประจำเดือน: tamoxifen** · หลังหมดประจำเดือน: AI ± tamoxifen\n\nกลไก: **tamoxifen = SERM** แย่ง estrogen จับ ER ที่เต้านม (เป็น antagonist) — ใช้ได้ไม่ว่าแหล่ง estrogen มาจากรังไข่หรือไม่\n\nทำไมข้ออื่นผิด\n- **AI เดี่ยว**: AI ยับยั้ง aromatase ในไขมัน แต่ **รังไข่ยังสร้าง estrogen** และ estrogen ที่ลดลงจะกระตุ้น FSH/LH ให้รังไข่สร้างมากขึ้น → **ห้ามใช้ AI เดี่ยวในหญิงยังมีประจำเดือน** (ต้องกดรังไข่ร่วม — ใช้ในรายเสี่ยงสูง แนวทางปัจจุบัน)\n- **ER < 50% ไม่ให้**: ผิด — ER บวกทุก % ได้ยา (สไลด์)\n- **Trastuzumab**: ใช้เฉพาะ HER2 3+ หรือ FISH+\n- **ยาเคมีเดี่ยว**: ก้อนเล็ก grade 1 ต่อมน้ำเหลืองลบ — ประโยชน์จากยาเคมีน้อย (ปัจจุบันใช้ genomic assay ช่วยตัดสิน) และไม่ว่าอย่างไรต้องให้ยาต้านฮอร์โมน\n\nผลข้างเคียง tamoxifen: **ลิ่มเลือดดำ · มะเร็งเยื่อบุโพรงมดลูก** · ร้อนวูบวาบ",
+   "pearl": "ER+ ทุก % → ยาต้านฮอร์โมน 5 ปี · ก่อนหมดประจำเดือน = tamoxifen (ห้าม AI เดี่ยว)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — early stage adjuvant endocrine"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "2.3.19(2)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-25",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Post-mastectomy radiotherapy",
+   "stem": "Five women have had a modified radical mastectomy for invasive breast cancer, all with clear margins. Which pathology result is the clearest indication for adjuvant post-mastectomy radiotherapy?",
+   "choices": [
+    "1.5-cm tumour, sentinel node biopsy negative",
+    "Ductal carcinoma in situ 1 cm, no invasion",
+    "2.2-cm tumour, a single 0.4-mm micrometastasis in 1 of 3 sentinel nodes",
+    "2.5-cm tumour, 0 of 12 axillary nodes positive",
+    "4.0-cm tumour, 7 of 18 axillary nodes positive"
+   ],
+   "answer": 4,
+   "explain": "สไลด์ Breast cancer early stage — **adjuvant RT หลัง MRM** เมื่อ\n- **ต่อมน้ำเหลืองบวก > 4 ต่อม** (≥ 4)\n- **ก้อน > 5 ซม.**\n- **ขอบชิด (close margin)**\n*(ส่วน **ผ่าตัดสงวนเต้า ต้องฉายแสงเสมอ**)*\n\nเหตุผล: ต่อมน้ำเหลืองบวกมาก = เซลล์มะเร็งหลุดออกจากก้อนไปแล้วมาก → เสี่ยง **กลับเป็นซ้ำที่ผนังอกและต่อมน้ำเหลืองบริเวณ** สูง · RT ลดการกลับเป็นซ้ำเฉพาะที่และเพิ่มการรอดชีวิต · **7 ต่อมบวก** เข้าเกณฑ์ชัดเจนที่สุด\n\nทำไมข้ออื่นผิด\n- **ก้อน ≤ 2.5 ซม. ต่อมน้ำเหลืองลบ หรือมีเพียง micrometastasis** (สามตัวเลือก): ไม่เข้าเกณฑ์ใด ความเสี่ยงกลับเป็นซ้ำที่ผนังอกต่ำ\n- **DCIS ตัดเต้าหมด**: ไม่ต้องฉายแสง\n\n*(ปัจจุบันพิจารณา RT ในต่อมน้ำเหลืองบวก 1–3 ต่อมด้วย แต่ ≥ 4 ต่อมเป็นข้อบ่งชี้มาตรฐาน)*",
+   "pearl": "RT หลัง MRM: LN ≥ 4 · ก้อน > 5 ซม. · ขอบชิด · BCS ฉายแสงทุกราย",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — early stage: adjuvant RT"
+   ],
+   "nl": [
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-26",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Metastatic HR-positive breast cancer with visceral crisis",
+   "stem": "A 56-year-old postmenopausal woman had ER-positive, HER2-negative breast cancer treated 4 years ago with mastectomy, adjuvant doxorubicin–cyclophosphamide and an aromatase inhibitor. She now has rapidly enlarging multiple liver metastases with bilirubin rising to 3.2 mg/dL, and dyspnoea from lymphangitic lung involvement. ECOG 2. Which systemic therapy is most appropriate now?",
+   "choices": [
+    "Switch to tamoxifen",
+    "Re-treat with doxorubicin–cyclophosphamide",
+    "Trastuzumab plus pertuzumab",
+    "Palliative taxane-based chemotherapy",
+    "Best supportive care only, as chemotherapy is contraindicated"
+   ],
+   "answer": 3,
+   "explain": "สไลด์ Metastatic breast cancer — Hormone positive\n| การกระจาย | การรักษา |\n|---|---|\n| กระดูก เนื้อเยื่ออ่อน อวัยวะภายในเล็กน้อยไม่มีอาการ | palliative endocrine (pre TAM · post AI หรือ TAM) |\n| **อวัยวะภายในมาก มีอาการ (visceral crisis)** | **palliative chemotherapy — ยังไม่เคยได้ anthracycline → anthracycline · เคยได้แล้ว → taxane ± trastuzumab (HER2+)** |\n\nรายนี้ตับทำงานแย่ลงเร็ว + ปอดลุกลาม = **visceral crisis** ต้องการยาที่ออกฤทธิ์ **เร็ว** (ยาต้านฮอร์โมนใช้เวลาหลายเดือน) · **เคยได้ doxorubicin แล้ว** → **taxane** (ปรับขนาดตาม bilirubin)\n\nทำไมข้ออื่นผิด\n- **Tamoxifen** (หรือ AI + CDK4/6 inhibitor ซึ่งเป็นมาตรฐานแรกปัจจุบันของ HR+ ที่ **ไม่มี** visceral crisis): ออกฤทธิ์ช้าเกินไปสำหรับรายนี้\n- **AC ซ้ำ**: anthracycline พิษหัวใจตาม **ขนาดสะสม** และเคยได้แล้ว\n- **Trastuzumab/pertuzumab**: HER2 ลบ\n- **Supportive care อย่างเดียว**: ECOG 2 จากตัวโรค ยาเคมียังช่วยได้ (ต้องให้การดูแลประคับประคองควบคู่)",
+   "pearl": "HR+ แพร่กระจาย: ไม่มี visceral crisis → endocrine · visceral crisis → chemo (เคยได้ A → taxane)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — metastatic, hormone positive",
+    "ESO-ESMO ABC guideline"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-27",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Inflammatory breast cancer",
+   "stem": "A 45-year-old woman has a 4-week history of a red, warm, swollen left breast with peau d'orange skin over more than one-third of the breast. There is no fever, and two courses of antibiotics have not helped. Punch biopsy of the skin and core biopsy show invasive ductal carcinoma with dermal lymphatic invasion. Staging CT and bone scan show no distant metastases. What is the most appropriate treatment sequence?",
+   "choices": [
+    "Anthracycline-based chemotherapy first, then modified radical mastectomy, then radiotherapy",
+    "Breast-conserving surgery and sentinel node biopsy, then radiotherapy",
+    "A further 2-week course of intravenous antibiotics",
+    "Endocrine therapy alone",
+    "Palliative radiotherapy only"
+   ],
+   "answer": 0,
+   "explain": "**Inflammatory breast cancer**: ก้อนมะเร็งอุด **ท่อน้ำเหลืองในชั้นหนังแท้ (dermal lymphatics)** → น้ำเหลืองคั่ง ผิวบวม แดงร้อน และรูขุมขนถูกยึดไว้จึงเป็น **peau d’orange** · คล้ายเต้านมอักเสบแต่ **ไม่หายด้วยยาปฏิชีวนะ** · ลุกลามเร็ว (T4d อย่างน้อย stage IIIB)\n\nสไลด์ **Locally advanced/inflammatory: chemotherapy (anthracycline-based) ก่อน → MRM → radiation** — เป้าหมายยังหายขาดได้ (trimodality) · HER2+ เพิ่ม trastuzumab ± pertuzumab\n\nทำไมข้ออื่นผิด\n- **ผ่าตัดสงวนเต้า + SLNB**: **ห้ามใน inflammatory** — ผิวหนังทั้งบริเวณมีมะเร็ง และท่อน้ำเหลืองอุดทำให้ SLNB ไม่น่าเชื่อถือ (ต้อง ALND)\n- **ยาปฏิชีวนะต่อ**: ชิ้นเนื้อยืนยันมะเร็งแล้ว ทำให้ล่าช้า\n- **ยาต้านฮอร์โมนเดี่ยว**: ออกฤทธิ์ช้าเกินไปสำหรับโรคที่ลุกลามเร็ว\n- **ประคับประคองอย่างเดียว**: ยังไม่มีการแพร่กระจาย ยังหวังหายขาดได้",
+   "pearl": "Inflammatory BC: ยาเคมีก่อน → MRM → ฉายแสง (ห้าม BCS)",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — locally advanced/inflammatory"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "2.1.50"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-28",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Tumour markers — CA 19-9",
+   "stem": "A 69-year-old man has painless jaundice, pruritus and weight loss. CT shows a 3-cm mass in the head of the pancreas with a dilated common bile duct. Bilirubin is 14 mg/dL and CA 19-9 is 1,250 U/mL. Which statement about the CA 19-9 result is most accurate?",
+   "choices": [
+    "It establishes the diagnosis of pancreatic cancer, so biopsy is unnecessary",
+    "A level above 1,000 U/mL proves that the tumour is unresectable",
+    "It is the recommended screening test for pancreatic cancer in adults over 50",
+    "A normal CA 19-9 would exclude pancreatic cancer",
+    "It can be markedly raised by biliary obstruction itself, so it should be rechecked after biliary drainage and tissue diagnosis is still required"
+   ],
+   "answer": 4,
+   "explain": "**CA 19-9** สร้างจากเยื่อบุท่อน้ำดีและตับอ่อน และ **ถูกขับทางน้ำดี** → เมื่อ **ท่อน้ำดีอุดตันหรืออักเสบ** ระดับจะสูงมากแม้ไม่ใช่มะเร็ง และ **ลดลงหลังระบายน้ำดี** · ค่าพื้นฐานที่ใช้พยากรณ์/ติดตามควรวัด **หลังระบายและ bilirubin ลดลง**\n\nหลักการใช้ tumour marker\n1. **ไม่ใช้วินิจฉัยแทนชิ้นเนื้อ** — ต้องได้ชิ้นเนื้อ (เช่น **EUS-FNA**) ก่อนยาเคมี (ผ่าตัดได้เลยในบางรายที่ภาพชัด)\n2. **ไม่ใช้คัดกรองประชากรทั่วไป**\n3. **ใช้ดีที่สุดในการติดตามการตอบสนองและการกลับเป็นซ้ำ** เมื่อสูงก่อนรักษา\n\nทำไมข้ออื่นผิด\n- **วินิจฉัยได้เลย**: ความจำเพาะไม่พอ\n- **> 1,000 = ผ่าตัดไม่ได้**: สัมพันธ์กับโรคลุกลามแต่ไม่ใช่เกณฑ์ตัดสิน โดยเฉพาะเมื่อมี jaundice — ใช้ CT ประเมินหลอดเลือด\n- **คัดกรอง**: ไม่แนะนำ\n- **ค่าปกติตัดโรคออกได้**: คนที่ไม่มี **Lewis antigen** (~5–10%) สร้าง CA 19-9 ไม่ได้\n\n*(ไม่ได้มาจากสไลด์)*",
+   "pearl": "CA 19-9 สูงเท็จจากท่อน้ำดีอุดตัน → วัดซ้ำหลังระบาย · วินิจฉัยต้องได้ชิ้นเนื้อ",
+   "ref": [
+    "NCCN Pancreatic adenocarcinoma",
+    "Learn — Staging, grading และ tumour markers"
+   ],
+   "nl": [
+    "B8.2.4-3(1)",
+    "B1.6.1(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-29",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Tumour markers in testicular germ cell tumours",
+   "stem": "A 27-year-old man undergoes radical inguinal orchiectomy for a testicular mass. Histology reports pure classic seminoma. Preoperative serum AFP was 850 ng/mL (normal <10) and β-hCG was mildly raised. How should this result be interpreted?",
+   "choices": [
+    "Pure seminoma typically secretes high AFP, so the histology is confirmed",
+    "The raised AFP indicates an unrecognised non-seminomatous (e.g. yolk sac) component, and he should be managed as a non-seminomatous germ cell tumour",
+    "The AFP is from a laboratory error and should be ignored",
+    "AFP elevation in seminoma indicates hepatocellular carcinoma metastatic to the testis",
+    "The β-hCG proves choriocarcinoma, and AFP is irrelevant"
+   ],
+   "answer": 1,
+   "explain": "แต่ละชนิดเซลล์สร้างโปรตีนของตัวเอง\n- **Yolk sac → AFP**\n- **Syncytiotrophoblast → β-hCG** (seminoma บริสุทธิ์สร้าง β-hCG ได้เล็กน้อย)\n- **Seminoma บริสุทธิ์ไม่สร้าง AFP**\n\nดังนั้น **AFP สูงชัดเจน = มีส่วน non-seminoma** ที่ชิ้นเนื้ออาจตัดไม่ผ่าน → **ต้องรักษาแบบ NSGCT** (ซึ่งมีพฤติกรรมและการรักษาต่างจาก seminoma ที่ไวรังสี)\n\nAFP β-hCG LDH ใช้ทั้งวินิจฉัยร่วม จัดระยะ (**S stage**) และติดตาม — วัดซ้ำหลังผ่าตัดตามครึ่งชีวิต (AFP ~5–7 วัน · β-hCG ~1–3 วัน) ถ้าไม่ลดตามคาดแปลว่ายังมีโรคเหลือ\n\nทำไมข้ออื่นผิด\n- **Seminoma สร้าง AFP สูง**: ผิด\n- **Lab error**: ต้องตรวจซ้ำแต่ไม่ละเลย\n- **HCC แพร่ไปอัณฑะ**: แทบไม่เกิด และชายหนุ่มก้อนอัณฑะ = germ cell tumour\n- **β-hCG สูงเล็กน้อย ≠ choriocarcinoma** และ AFP คือข้อมูลสำคัญที่สุด",
+   "pearl": "Pure seminoma ไม่สร้าง AFP → AFP สูง = รักษาแบบ non-seminoma",
+   "ref": [
+    "EAU Testicular cancer guideline",
+    "Learn — Staging, grading และ tumour markers"
+   ],
+   "nl": [
+    "2.3.2-3(1)",
+    "B1.6.1(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-30",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Screening bias — lead time",
+   "stem": "In a non-randomised comparison, cancers in a screened population were diagnosed on average 2 years earlier than in an unscreened population. Five-year survival measured from diagnosis was higher in the screened group, yet the age at death from the cancer and the cancer-specific mortality rate were the same in both groups. Which explanation best accounts for this?",
+   "choices": [
+    "Overdiagnosis of indolent cancers",
+    "Length-time bias",
+    "Selection of healthier volunteers",
+    "Lead-time bias",
+    "Effective early treatment"
+   ],
+   "answer": 3,
+   "explain": "**Lead-time bias** = การคัดกรองทำให้ **รู้การวินิจฉัยเร็วขึ้น** (ช่วง lead time) → นับเวลารอดจากวันวินิจฉัย **ดูเหมือนอยู่นานขึ้น** ทั้งที่ **ตายในเวลาเดิม** · ในโจทย์ วินิจฉัยเร็วขึ้น 2 ปี แต่ **อายุที่ตายและอัตราตายจากมะเร็งเท่าเดิม** = ไม่มีประโยชน์จริง\n\nจึงต้องตัดสินโปรแกรมคัดกรองด้วย **อัตราตายจากมะเร็งใน RCT** ไม่ใช่ 5-year survival — เกณฑ์ของโปรแกรมที่ดี: โรคพบบ่อยและรุนแรง · มีระยะก่อนอาการที่ตรวจพบได้ · การตรวจแม่นและยอมรับได้ · **รักษาเร็วแล้วลดการตายได้จริง**\n\nทำไมข้ออื่นผิด\n- **Overdiagnosis**: พบมะเร็งที่ไม่เคยทำอันตราย (ต่อมลูกหมาก ไทรอยด์ขนาดเล็ก) — โจทย์เน้นวินิจฉัยเร็วขึ้นแต่ตายเท่าเดิม\n- **Length-time bias**: การคัดกรองพบก้อนที่ **โตช้า** มากกว่า จึงดูพยากรณ์ดี — โจทย์ไม่ได้กล่าวถึงความต่างของชนิดก้อน\n- **Healthy-volunteer bias**: ผู้มาคัดกรองสุขภาพดีกว่า มักทำให้อัตราตายรวมต่างกัน\n- **รักษาได้ผลจริง**: จะต้องเห็น **อัตราตายลดลง**\n\n*(ไม่ได้มาจากสไลด์)*",
+   "pearl": "วินิจฉัยเร็วขึ้นแต่ตายเท่าเดิม = lead-time bias → ดูอัตราตาย ไม่ใช่ 5-year survival",
+   "ref": [
+    "Learn — คัดกรองและป้องกันมะเร็ง",
+    "USPSTF methods"
+   ],
+   "nl": [
+    "2.3.2"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-31",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Lung cancer paraneoplastic syndromes — Lambert–Eaton",
+   "stem": "A 64-year-old smoker has 2 months of difficulty climbing stairs and rising from a chair, dry mouth and erectile dysfunction. Proximal leg strength improves transiently after a few seconds of sustained effort, and reflexes are reduced but increase after brief exercise. Chest CT shows a central hilar mass with bulky mediastinal nodes. Which mechanism underlies his weakness?",
+   "choices": [
+    "Antibodies against postsynaptic acetylcholine receptors",
+    "Ectopic ACTH causing steroid myopathy",
+    "Antibodies against presynaptic voltage-gated calcium channels, reducing acetylcholine release",
+    "Hypercalcaemia from PTH-related peptide",
+    "Direct tumour invasion of the brachial plexus"
+   ],
+   "answer": 2,
+   "explain": "**Lambert–Eaton myasthenic syndrome (LEMS)** — paraneoplastic ที่พบคู่กับ **small cell lung cancer** (ก้อนกลางปอด สูบบุหรี่ ต่อมน้ำเหลืองโต)\n\nกลไก: แอนติบอดีต่อ **voltage-gated Ca channel (P/Q type) ที่ปลายประสาทก่อน synapse** → Ca เข้าน้อย → **ปล่อย ACh น้อย** → อ่อนแรงต้นแขนขา reflex ลด · **ออกแรงซ้ำ Ca สะสมในปลายประสาท** → ปล่อย ACh ได้มากขึ้น แรงและ reflex ดีขึ้นชั่วคราว (facilitation) · ประสาทอัตโนมัติเสีย: **ปากแห้ง หย่อนสมรรถภาพทางเพศ** · EMG: CMAP เพิ่ม > 100% หลังออกแรง/กระตุ้นถี่\n\nทำไมข้ออื่นผิด\n- **Anti-AChR (myasthenia gravis)**: **ยิ่งใช้ยิ่งล้า** เด่นที่ตา (หนังตาตก เห็นภาพซ้อน) reflex ปกติ · สัมพันธ์กับ thymoma\n- **Ectopic ACTH** (SCLC ได้เช่นกัน): K ต่ำ น้ำตาลสูง ไม่มี facilitation\n- **PTHrP**: พบใน **squamous** — ซึม สับสน ไม่ใช่ facilitation\n- **Pancoast**: ยอดปอด ปวดไหล่แขน + Horner\n\n*(ไม่ได้มาจากสไลด์)*",
+   "pearl": "LEMS: anti-VGCC presynaptic → ออกแรงซ้ำดีขึ้น → หา SCLC",
+   "ref": [
+    "Learn — มะเร็งที่พบบ่อย 1: มะเร็งปอด"
+   ],
+   "nl": [
+    "B6.2.4-3(2)",
+    "2.3.5-3(1)",
+    "2.1.22"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MCQ-32",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Tumour lysis syndrome — rasburicase and G6PD",
+   "stem": "A 22-year-old man with bulky Burkitt lymphoma and uric acid 13 mg/dL is about to start chemotherapy. Screening shows G6PD deficiency. Why is rasburicase contraindicated in him?",
+   "choices": [
+    "It inhibits xanthine oxidase, causing xanthine nephropathy",
+    "It precipitates calcium phosphate in the kidney",
+    "It causes hyperkalaemia by releasing intracellular potassium",
+    "It is renally excreted and accumulates in G6PD deficiency",
+    "It converts uric acid to allantoin with generation of hydrogen peroxide, which causes haemolysis and methaemoglobinaemia in G6PD deficiency"
+   ],
+   "answer": 4,
+   "explain": "**Rasburicase = recombinant urate oxidase** → เปลี่ยน **uric acid → allantoin** (ละลายน้ำดีกว่า ~5–10 เท่า) + **H₂O₂** · คนปกติกำจัด H₂O₂ ด้วย glutathione ซึ่งต้องอาศัย **NADPH จาก G6PD** → ผู้ขาด G6PD เม็ดเลือดแดงทนภาวะออกซิไดซ์ไม่ได้ → **เม็ดเลือดแดงแตกรุนแรง และ methaemoglobinaemia** → **ห้ามใช้** (ควรตรวจ G6PD ก่อนในผู้เสี่ยง — พบบ่อยในไทย)\n\nทางเลือก: **สารน้ำมาก (ปัสสาวะ 80–100 มล./ชม.) + allopurinol** · เฝ้าเกลือแร่ทุก 6–8 ชม. · **ฟอกไตเร็ว** ถ้า K/phosphate/uric acid ไม่ลงหรือไตวาย\n\nทำไมข้ออื่นผิด\n- **ยับยั้ง xanthine oxidase**: คือ **allopurinol/febuxostat** — ป้องกันการสร้างใหม่ แต่ไม่ลด uric acid ที่มีอยู่และอาจทำให้ xanthine สะสม\n- **ตะกอน calcium phosphate**: เกิดจาก phosphate สูงใน TLS (และ alkalinisation) ไม่ใช่จาก rasburicase\n- **K สูง**: เกิดจากเซลล์มะเร็งแตก ไม่ใช่ยา\n- **สะสมจากไต**: rasburicase เป็นโปรตีน ไม่เกี่ยวกับ G6PD\n\n*(ไม่ได้มาจากสไลด์ — BSH/ASCO TLS)*",
+   "pearl": "Rasburicase สร้าง H₂O₂ → ห้ามใน G6PD deficiency → ใช้สารน้ำ + allopurinol",
+   "ref": [
+    "Learn — ภาวะฉุกเฉินทางมะเร็ง",
+    "Cairo–Bishop · BSH TLS guideline"
+   ],
+   "nl": [
+    "2.3.4(2)",
+    "2.3.3(3)",
+    "2.3.19(2)"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "ONC-GEN-MEQ-01",
+   "part": "MEQ",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Recurrent HR-positive breast cancer with bone metastases — hypercalcaemia, spinal risk and palliative endocrine therapy",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 61 ปี หมดประจำเดือนแล้ว 10 ปี\nPH: 7 ปีก่อน ผ่าตัด MRM เต้านมซ้าย — invasive ductal carcinoma 3.2 ซม. ต่อมน้ำเหลือง 2/14 · ER 90% PgR 70% HER2 IHC 1+ · ได้ยาเคมี AC 4 รอบ + paclitaxel แล้วกิน letrozole ครบ 5 ปี หยุดยาเมื่อ 18 เดือนก่อน\nCC: ซึม สับสน 3 วัน\nPI: 2 เดือนก่อนปวดหลังช่วงอกและสะโพก ปวดมากตอนกลางคืน 1 สัปดาห์ก่อน กระหายน้ำ ปัสสาวะบ่อย ท้องผูก คลื่นไส้ กินได้น้อย\nPE: BT 36.9 C · BP 104/66 · HR 106 · ซึมแต่ปลุกตื่น ตอบช้า · ปากแห้ง · กดเจ็บกระดูกสันหลัง T10 · กำลังขา grade 5 ทั้งสองข้าง sensation ปกติ ไม่มี sensory level · ปัสสาวะได้เอง\nLab: Ca 13.8 mg/dL (albumin 3.8 g/dL) · phosphate 3.0 · ALP 380 U/L · BUN 38 · Cr 1.6 (เดิม 0.8) · intact PTH 8 pg/mL (ต่ำ)\nBone scan: รอยโรคหลายตำแหน่งที่กระดูกสันหลังอก (รวม T10) เชิงกราน ซี่โครง · CT chest/abdomen: ไม่พบการแพร่กระจายไปอวัยวะภายใน\nก่อนป่วยครั้งนี้ทำงานบ้านได้เอง (ECOG 1) ตอนนี้ ECOG 3",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยภาวะเร่งด่วน กลไก และเหตุผลที่ไตเสื่อม (3 คะแนน)",
+     "a": "- **Hypercalcemia of malignancy ระดับรุนแรง** (corrected Ca ≈ 13.8 + 0.8 × (4 − 3.8) ≈ **14.0 mg/dL**) จาก **มะเร็งเต้านมกลับเป็นซ้ำแพร่กระจายไปกระดูก**\n- กลไกหลัก: **local osteolytic** — เซลล์มะเร็งในกระดูกหลั่งสาร (รวมถึง PTHrP เฉพาะที่) กระตุ้น **RANKL → osteoclast สลายกระดูก** · **PTH ต่ำ** ตัด primary hyperparathyroidism ออก\n- ไตเสื่อม (prerenal AKI): Ca สูงทำให้ **nephrogenic DI** (ปัสสาวะมาก ขาดน้ำ) + **หลอดเลือดไตหดตัว** + กินได้น้อยและคลื่นไส้ → ขาดน้ำยิ่งทำให้ Ca สูงขึ้น (วงจร)"
+    },
+    {
+     "q": "2. จงเขียนการรักษาใน 24–48 ชั่วโมงแรก (4 คะแนน)",
+     "a": "- **0.9% NaCl ทางหลอดเลือด** เริ่ม 200–300 มล./ชม. ปรับให้ปัสสาวะ ~100–150 มล./ชม. (ระวังน้ำเกิน)\n- **Zoledronic acid 4 มก. IV หยดอย่างน้อย 15 นาที** — ออกฤทธิ์ใน 2–4 วัน · ไตเสื่อมจากขาดน้ำยังให้ได้หลังให้สารน้ำ (ถ้าไตเสื่อมรุนแรง/ CrCl < 30 พิจารณา **denosumab**)\n- **Calcitonin 4 IU/กก. SC/IM ทุก 12 ชม.** 24–48 ชม. — ลด Ca เร็วระหว่างรอ bisphosphonate (ดื้อยาเร็ว)\n- หยุด Ca วิตามิน D thiazide ยาที่ทำให้ซึม · **ไม่ใช้ furosemide เป็นหลัก** (ใช้เฉพาะเมื่อน้ำเกิน)\n- ติดตาม Ca Cr เกลือแร่ทุก 12–24 ชม. · ฟอกไตถ้า Ca สูงมากร่วมไตวาย/น้ำเกิน\n- ให้ยาแก้ปวด (opioid ตามเวลา + ยาระบาย)"
+    },
+    {
+     "q": "3. อาการปวดหลังที่ T10 มีความสำคัญอย่างไร จะตรวจอะไร และต้องสอนอาการเตือนอะไร (3 คะแนน)",
+     "a": "- ปวดหลังที่ **แย่ลงตอนกลางคืน/นอนราบ** ในผู้ป่วยมะเร็งที่มีรอยโรคกระดูกสันหลัง = เสี่ยง **malignant spinal cord compression (MSCC)** — ตอนนี้ยัง **ไม่มีอาการทางระบบประสาท**\n- **MRI ทั้งกระดูกสันหลัง** โดยเร็ว (ไม่มีอาการทางประสาท: ภายใน 1 สัปดาห์ · **ถ้ามีอาการทางประสาท: ทันทีภายใน 24 ชม.** — NICE NG234) · ประเมินความมั่นคงของกระดูกสันหลัง (SINS)\n- สอนอาการเตือน: **ขาอ่อนแรง ชาเป็นระดับ ปัสสาวะ/อุจจาระผิดปกติ ปวดร้าวรอบลำตัว** → มาโรงพยาบาลทันที → **dexamethasone 16 มก. + MRI ภายใน 24 ชม.** → ฉายแสง/ผ่าตัด (ผลลัพธ์ขึ้นกับการเดินได้ก่อนรักษา)\n- ปวดกระดูกเฉพาะที่ไม่มีการกดไขสันหลัง: **ฉายแสงประคับประคอง (เช่น 8 Gy ครั้งเดียว)** ได้ผลดี"
+    },
+    {
+     "q": "4. จงบอกเป้าหมายการรักษาและการรักษาทั้งระบบของมะเร็ง พร้อมเหตุผล (4 คะแนน)",
+     "a": "- **ยืนยันด้วยชิ้นเนื้อจากรอยโรคที่เจาะได้** (ถ้าทำได้) และตรวจ **ER/PgR/HER2 ซ้ำ** — การแสดงออกเปลี่ยนได้\n- **เป้าหมาย: ประคับประคอง — ยืดชีวิตพร้อมคุณภาพชีวิตที่ดี** (สไลด์ aims of treatment ระยะลุกลาม)\n- **HR บวก แพร่ไปกระดูกเท่านั้น ไม่มี visceral crisis** → สไลด์: **palliative endocrine therapy — หลังหมดประจำเดือน AI หรือ tamoxifen** (ไม่ใช่ยาเคมี)\n  - กลับเป็นซ้ำ **หลังหยุด AI > 12 เดือน** = ยังไวต่อฮอร์โมน → ใช้ AI ได้อีก\n  - *ปัจจุบัน (ไม่ได้มาจากสไลด์)*: **AI + CDK4/6 inhibitor (palbociclib ribociclib abemaciclib)** เป็นทางเลือกแรก — เฝ้าระวัง **neutropenia** (palbo/ribo) **QT ยาว และตับ** (ribociclib) **ท้องเสีย** (abemaciclib)\n- **ยาป้องกันกระดูก**: **zoledronic acid ทุก 3–4 สัปดาห์ (หรือทุก 12 สัปดาห์) หรือ denosumab** — ลด skeletal-related events · **ตรวจฟันก่อนเริ่ม** (osteonecrosis of jaw) · เสริม Ca/วิตามิน D เมื่อ Ca กลับปกติแล้ว"
+    },
+    {
+     "q": "5. ตอนนี้ผู้ป่วย ECOG 3 แพทย์ประจำบ้านกล่าวว่า 'ECOG 3 ไม่ควรให้การรักษามะเร็ง' ท่านเห็นด้วยหรือไม่ เพราะอะไร (2 คะแนน)",
+     "a": "- **ไม่เห็นด้วยทั้งหมด** — performance status เป็นตัวทำนายการทนยาที่สำคัญที่สุด แต่ **ECOG 3 ครั้งนี้เกิดจากสาเหตุที่แก้ได้** (Ca สูง ขาดน้ำ ปวด) → **ประเมินซ้ำหลังแก้ Ca และคุมปวด** ซึ่งมักกลับมาใกล้ ECOG 1 เดิม\n- การรักษาที่เลือกคือ **ยาต้านฮอร์โมน** พิษน้อย เหมาะแม้ PS ไม่ดีนัก · ใช้ **อายุตามการทำงาน** และความต้องการของผู้ป่วยร่วมตัดสินใจ\n- **ให้การดูแลแบบประคับประคองควบคู่ตั้งแต่ต้น** (ปวด ท้องผูก จิตใจ การวางแผนล่วงหน้า)"
+    }
+   ],
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Breast cancer — metastatic, hormone positive · Aims of treatment · Patient’s factors",
+    "Endocrine Society hypercalcemia of malignancy 2022",
+    "NICE NG234 (2023)",
+    "ESO-ESMO ABC guideline"
+   ],
+   "nl": [
+    "2.3.4(2)",
+    "B9.2.5(2)",
+    "2.3.2-3(1)",
+    "3.3.12",
+    "B9.2.7(1)"
+   ]
+  },
+  {
+   "id": "ONC-GEN-MEQ-02",
+   "part": "MEQ",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "Metastatic lung adenocarcinoma — biomarker-driven first-line therapy and immune-related adverse events",
+   "vignette": "ผู้ป่วยชายไทยอายุ 64 ปี อาชีพค้าขาย สูบบุหรี่ 40 pack-year เลิกได้ 2 ปี\nCC: ไอเรื้อรัง 3 เดือน\nPI: ไอแห้ง เหนื่อยง่ายขึ้น น้ำหนักลด 6 กก. ใน 3 เดือน ยังทำงานเบา ๆ ได้ ไม่มีไอเป็นเลือด ไม่มีปวดศีรษะ\nPE: ต่อมน้ำเหลืองเหนือไหปลาร้าขวาโต 1.5 ซม. · เสียงหายใจลดลงที่ปอดขวาบน · ตับคลำได้ 3 ซม. ใต้ชายโครง\nCT chest/abdomen: ก้อน 5 ซม. ปอดขวาบน · ต่อมน้ำเหลือง mediastinum โต · ก้อนในตับหลายก้อน · ต่อมหมวกไตซ้าย 2 ซม.\nชิ้นเนื้อจากตับ: adenocarcinoma, TTF-1 บวก\nECOG 1 · CBC LFT Cr ปกติ",
+   "questions": [
+    {
+     "q": "1. จงบอกระยะของโรค เป้าหมายการรักษา และการตรวจเพิ่มเติมเพื่อจัดระยะ (2 คะแนน)",
+     "a": "- **Stage IV (M1c — แพร่ไปหลายอวัยวะ: ตับ ต่อมหมวกไต)**\n- **เป้าหมาย: ประคับประคอง — ยืดชีวิตพร้อมคุณภาพชีวิตที่ดี** ด้วยยาที่พิษยอมรับได้ (สไลด์ aims of treatment ระยะลุกลาม) · ECOG 1 = เหมาะกับการรักษาทั้งระบบ\n- **MRI สมอง** (มะเร็งปอดชอบไปสมอง แม้ไม่มีอาการ) ± bone scan/PET-CT ตามอาการ · ส่ง **palliative care** ควบคู่ตั้งแต่ต้น"
+    },
+    {
+     "q": "2. ก่อนเลือกยาสายแรก ต้องส่งตรวจอะไรในชิ้นเนื้อ และเพราะเหตุใด (3 คะแนน)",
+     "a": "- **Predictive biomarkers** (สไลด์ cancer’s factors: HER2, KRAS, **EGFR mutation**) — ส่ง **NGS** หา driver: **EGFR** (exon 19 del/L858R) · **ALK** · **ROS1** · **BRAF V600E** · **KRAS G12C** · MET exon 14 · RET · NTRK · HER2\n- **PD-L1 IHC (tumour proportion score)** — ทำนายประโยชน์ของ anti-PD-1/PD-L1\n- เหตุผล: ถ้ามี driver เช่น EGFR → **EGFR-TKI (osimertinib)** ได้ผลดีกว่าและพิษน้อยกว่ายาเคมี และ **immunotherapy ได้ผลน้อยและพิษมาก** (โดยเฉพาะต่อปอดและตับเมื่อให้ร่วม/ก่อน TKI) · ถ้า **ชิ้นเนื้อไม่พอ** ใช้ **liquid biopsy (ctDNA)** เสริม"
+    },
+    {
+     "q": "3. ผลตรวจ: ไม่พบ driver mutation · PD-L1 TPS 80% จงบอกการรักษาสายแรกและกลไกของยา (2 คะแนน)",
+     "a": "- **Pembrolizumab เดี่ยว** (PD-L1 ≥ 50% ไม่มี driver) — หรือ pembrolizumab + platinum doublet ถ้าต้องการให้ก้อนยุบเร็ว\n- กลไก (สไลด์ immuno-oncology): เซลล์มะเร็งแสดง **PD-L1** จับ **PD-1 บน T cell** → T cell หมดแรงในช่วง **effector phase** · **anti-PD-1 ปลดเบรก** ให้ T cell ที่จดจำ neoantigen ทำลายเซลล์มะเร็งต่อได้ (ต่างจาก **CTLA-4** ที่คุมช่วง **priming** ในต่อมน้ำเหลือง)"
+    },
+    {
+     "q": "4. 3 เดือนต่อมา ผู้ป่วยอ่อนเพลีย ขี้หนาว ท้องผูก น้ำหนักขึ้น 2 กก. TSH 28 mIU/L · FT4 ต่ำ (6 สัปดาห์ก่อนมีใจสั่น TSH ต่ำ) จงวินิจฉัยและจัดการ (2 คะแนน)",
+     "a": "- **Immune-related thyroiditis → primary hypothyroidism** (ผ่านระยะ thyrotoxicosis ชั่วคราวจากต่อมถูกทำลายแล้ว) — irAE ต่อมไร้ท่อที่พบบ่อยที่สุดของ anti-PD-1\n- **ให้ levothyroxine** (เริ่ม ~1.6 µg/กก./วัน หรือขนาดต่ำในผู้สูงอายุ/โรคหัวใจ) ปรับตาม TSH ทุก 6–8 สัปดาห์ · มักเป็นถาวร\n- **ให้ pembrolizumab ต่อได้** · ไม่ต้องให้ steroid · ตรวจ **cortisol** ด้วยถ้าอ่อนเพลียมาก (ถ้าต่ำต้องให้ hydrocortisone ก่อน levothyroxine)"
+    },
+    {
+     "q": "5. รอบต่อมา ALT 410 U/L (ULN 40) AST 360 · bilirubin ปกติ ไม่มีอาการ จงบอกระดับความรุนแรง สิ่งที่ต้องแยก และการรักษา (4 คะแนน)",
+     "a": "- **Immune-mediated hepatitis grade 3** (ALT > 5–20 เท่าของ ULN — ~10 เท่า)\n- แยกสาเหตุอื่นก่อน: **มะเร็งในตับลุกลาม** (US/CT) · **ไวรัสตับอักเสบ** (HBsAg anti-HBc HCV — HBV reactivation) · **ยาและสมุนไพร** แอลกอฮอล์ · ตรวจ INR bilirubin\n- รักษา: **หยุด pembrolizumab** · **methylprednisolone/prednisolone 1–2 มก./กก./วัน** · ตรวจ LFT ทุก 1–3 วัน\n- ไม่ดีขึ้นใน 48–72 ชม.: **mycophenolate mofetil** — **ห้าม infliximab (พิษต่อตับ)**\n- ลด steroid ช้า ๆ ใน **4–6 สัปดาห์** · ให้ยาป้องกัน **PJP** ถ้า prednisolone ≥ 20 มก. นาน > 4 สัปดาห์ · การให้ ICI ซ้ำหลัง grade 3 ตัดสินเป็นรายไป (grade 4 หยุดถาวร)"
+    }
+   ],
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Cancer’s factors · Immuno oncology · Immune related adverse events",
+    "NCCN NSCLC guideline",
+    "ASCO irAE guideline 2021 · ESMO irAE guideline 2022"
+   ],
+   "nl": [
+    "B6.2.4-3(2)",
+    "2.3.5-3(1)",
+    "2.3.4-3(4)",
+    "B11.4(3)",
+    "B1.4.3"
+   ]
+  },
+  {
+   "id": "ONC-GEN-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "O02",
+   "lecture": "General oncology (พญ.ปิยวรรณ)",
+   "topic": "OSCE – Communicating a diagnosis of metastatic colorectal cancer and the aims of palliative systemic therapy",
+   "station": "OSCE (สื่อสาร/ให้ข้อมูล) 8 นาที",
+   "instruction": "ผู้ป่วยมาตรฐาน: ชายอายุ 58 ปี ข้าราชการ มาฟังผลการตรวจพร้อมภรรยา\nข้อมูลสำหรับผู้สอบ: ส่องกล้องพบก้อนที่ sigmoid colon ชิ้นเนื้อ **adenocarcinoma** · CT พบก้อนในตับ **ทั้งสองกลีบหลายก้อน ศัลยแพทย์ประเมินว่าผ่าตัดไม่ได้** · ผลตรวจชิ้นเนื้อ **RAS/BRAF wild-type · MSS (pMMR)** · ECOG 1\nผู้ป่วยยังไม่ทราบผล และจะถามว่า **\"หมอครับ ผมจะหายไหม ต้องผ่าตัดเลยหรือเปล่า\"**\n\n**จงแจ้งผลการวินิจฉัย อธิบายเป้าหมายและทางเลือกการรักษา และตอบคำถามของผู้ป่วย ภายใน 8 นาที**",
+   "answer": "**เกณฑ์ให้คะแนน (20 คะแนน)** — ใช้กรอบ **SPIKES**\n\n| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n| 1 | **S – Setting**: แนะนำตัว ยืนยันชื่อผู้ป่วย ห้องเป็นส่วนตัว นั่งระดับเดียวกัน ถามว่าต้องการให้ภรรยาอยู่ด้วยหรือไม่ ปิดโทรศัพท์ | 2 |\n| 2 | **P – Perception**: ถามว่าผู้ป่วยทราบอะไรแล้ว/คิดว่าเป็นอะไร | 2 |\n| 3 | **I – Invitation**: ถามว่าต้องการทราบรายละเอียดมากน้อยเพียงใด | 1 |\n| 4 | **K – Knowledge**: เกริ่นก่อน (warning shot) แล้วแจ้งชัดเจน ภาษาง่าย **\"เป็นมะเร็งลำไส้ใหญ่ที่กระจายไปตับแล้ว\"** หยุดให้ผู้ป่วยตั้งตัว ไม่ใช้ศัพท์แพทย์ | 3 |\n| 5 | **E – Emotion**: สังเกตและตอบสนองอารมณ์ (เงียบ ส่งทิชชู่ สะท้อนความรู้สึก \"เป็นข่าวที่หนักมาก\") ให้เวลา | 2 |\n| 6 | **ตอบคำถาม \"จะหายไหม\" อย่างซื่อสัตย์และให้ความหวังที่เป็นจริง**: ระยะนี้ **ส่วนใหญ่รักษาไม่หายขาด** แต่ **ยาช่วยคุมโรคและยืดชีวิตได้** (มัธยฐานราว 2–3 ปีด้วยยาหลายสาย) · **ถ้าก้อนในตับยุบจนผ่าตัดได้ ยังมีโอกาสหายขาดบางราย** · ไม่ให้ตัวเลขเฉพาะตัวเกินจริง | 3 |\n| 7 | **เป้าหมายการรักษา** (สไลด์ aims ระยะลุกลาม): **ยืดชีวิตพร้อมคุณภาพชีวิต คุมอาการ เลือกยาที่ผลข้างเคียงรับได้** · ไม่ผ่าตัดก้อนลำไส้ทันทีถ้าไม่มีลำไส้อุดตัน/เลือดออก | 2 |\n| 8 | **ทางเลือกยา**: ยาเคมี **FOLFOX หรือ FOLFIRI** ร่วมกับยามุ่งเป้า — **RAS wild-type ก้อนข้างซ้าย → anti-EGFR (cetuximab/panitumumab)** หรือ bevacizumab · อธิบายการให้ยาเป็นรอบ ผลข้างเคียงสำคัญ (**ไข้ช่วงเม็ดเลือดขาวต่ำ = มาโรงพยาบาลทันที**, ผื่นแบบสิว, ชาปลายมือเท้าเมื่อโดนความเย็น) | 2 |\n| 9 | **S – Strategy/Summary**: สรุป ตรวจความเข้าใจ (teach-back) เสนอการดูแลแบบประคับประคองควบคู่ นัดครั้งถัดไป ให้ช่องทางติดต่อ ถามคำถามเพิ่มเติม | 2 |\n| 10 | ภาพรวม: เห็นอกเห็นใจ ไม่รีบ ไม่ให้ความหวังเท็จ ไม่ปิดบัง ให้ผู้ป่วยมีส่วนตัดสินใจ | 1 |\n\n**ข้อผิดพลาดที่ทำให้ตก**: บอกว่า \"หายขาดแน่นอน\" หรือ \"ไม่มีทางรักษาแล้ว\" · แจ้งข่าวโดยไม่ประเมินความเข้าใจ · ใช้ศัพท์แพทย์ล้วน",
+   "ref": [
+    "สไลด์ พญ.ปิยวรรณ — Aims of treatment (advanced stage) · Example: advanced stage colon cancer · Predictive marker (KRAS)",
+    "Baile WF et al. SPIKES (Oncologist 2000)",
+    "ESMO mCRC guideline 2023"
+   ],
+   "nl": [
+    "B8.2.4-3(1)",
+    "2.3.2-3(1)",
+    "2.3.2"
+   ]
+  }
+ ]
+}
