@@ -390,7 +390,20 @@ main{min-width:0}
 .pi{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--card);border:1.5px solid var(--line);
   border-left:6px solid var(--bk);border-radius:18px;padding:12px 14px;transition:background .2s var(--e),border-color .2s var(--e)}
 @media (max-width:700px){.pi{grid-template-columns:32px minmax(0,1fr);align-items:start}.pi .pa{grid-column:1/-1;justify-content:flex-start}}
+/* ปุ่มเยอะ (สไลด์ Learn Drill Salmon เปลี่ยน ทวนจบ) อย่าให้เบียดชื่อคาบจนกว้าง 0 · รายการแคบกว่า 820px ให้ปุ่มลงไปแถวล่าง */
+.pi{grid-template-columns:36px minmax(0,1fr) fit-content(48%)}
+.plan{container-type:inline-size}
+@container (max-width:820px){.pi{grid-template-columns:32px minmax(0,1fr);align-items:start}.pi .pa{grid-column:1/-1;justify-content:flex-start}}
 .pi.done{background:var(--ok-soft);border-color:var(--ok)}
+/* ลากจัดลำดับ (ที่จับ ⠿ ด้านซ้ายของรายการที่ยังไม่ทวน) */
+.pi.dragme{position:relative;padding-left:32px}
+.grip{position:absolute;left:5px;top:50%;transform:translateY(-50%);width:22px;height:40px;border:0;border-radius:9px;padding:0;background:transparent;
+  color:var(--ink-3);cursor:grab;touch-action:none;display:grid;place-items:center;-webkit-user-select:none;user-select:none}
+.grip::before{content:"";width:9px;height:15px;background:radial-gradient(circle,currentColor 1.5px,transparent 1.8px) 0 0/4.5px 5px}
+.grip:hover,.grip:focus-visible{color:var(--ink);background:var(--sunk)}
+.pi.dragging{z-index:5;border-color:var(--accent);box-shadow:0 18px 36px -16px rgba(0,0,0,.45);cursor:grabbing;transition:none}
+.pi.dragging .grip{cursor:grabbing;color:var(--accent)}
+body.sorting{-webkit-user-select:none;user-select:none;cursor:grabbing}
 .pi.done .ttl{color:var(--ink-2)}
 .no{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:15px;background:var(--sunk);color:var(--ink-2)}
 .pi:not(.done):first-child .no{background:var(--accent);color:var(--accent-ink)}
@@ -851,14 +864,15 @@ function clean(obj){var o={};if(!obj||typeof obj!=="object")return o;
     ds=ds.filter(function(x,i){return ds.indexOf(x)===i;}).sort().slice(-40);
     if(ds.length)o[id]=ds;});return o;}
 /* ปรับรายการทวนของวันนี้เอง (ใช้ได้เฉพาะวันนี้ · วันใหม่เริ่มจากแผนอัตโนมัติ)
-   skip = เลื่อนไปวันอื่น · pin = เรื่องที่เลือกมาแทน (นับในโควตา) · add = เรื่องที่เพิ่มเกินโควตา */
+   skip = เลื่อนไปวันอื่น · pin = เรื่องที่เลือกมาแทน (นับในโควตา) · add = เรื่องที่เพิ่มเกินโควตา
+   ord = ลำดับที่ลากจัดเอง (เรื่องที่ไม่อยู่ใน ord ต่อท้ายตามลำดับเดิม) */
 var OV=null;
 function cleanOv(o){
   if(!o||typeof o!=="object"||o.d!==TODAY)return null;
   var ids=function(a){return (Array.isArray(a)?a:[]).filter(function(id,i,arr){return typeof id==="string"&&BYID[id]&&arr.indexOf(id)===i;}).slice(0,40);};
-  var r={d:TODAY,skip:ids(o.skip),pin:ids(o.pin),add:ids(o.add)};
+  var r={d:TODAY,skip:ids(o.skip),pin:ids(o.pin),add:ids(o.add),ord:ids(o.ord)};
   r.pin=r.pin.filter(function(id){return r.add.indexOf(id)<0;});
-  return r.skip.length||r.pin.length||r.add.length?r:null;
+  return r.skip.length||r.pin.length||r.add.length||r.ord.length?r:null;
 }
 try{var raw=localStorage.getItem(LKEY);if(raw){R=clean(JSON.parse(raw).reviews);OV=cleanOv(JSON.parse(raw).today);}
   var old=localStorage.getItem("med421-lectures-v1");
@@ -978,6 +992,8 @@ function plan(){
   var want=q+ov.add.length,base=done.length+mine.length;
   var qt=Math.max(Math.min(want,base+auto.length),base);
   var todo=mine.concat(auto.slice(0,Math.max(0,qt-base)));
+  if(ov.ord&&ov.ord.length){var t0=todo.slice(),oi=function(x){var k=ov.ord.indexOf(x.l.id);return k<0?1000+t0.indexOf(x):k;};
+    todo.sort(function(a,b){return oi(a)-oi(b);});}
   var v={K:K,q:q,qt:qt,rem:rem,xs:xs,done:done,queue:queue,todo:todo,rest:auto.filter(function(x){return todo.indexOf(x)<0;}),
     sim:simulate(K,q,done.concat(todo).map(function(x){return x.l.id;})),
     backlog:xs.filter(function(x){return x.f===0&&x.n===0&&!x.today;}).length,capped:xs.filter(function(x){return x.t<K;})};
@@ -1180,7 +1196,10 @@ function reasonOf(x){
 function ownTag(id){if(!OV)return "";return OV.add.indexOf(id)>=0?"add":OV.pin.indexOf(id)>=0?"pin":"";}
 function planItem(x,no,swap){
   var l=x.l,t=x.today,rs=reasonOf(x),own=ownTag(l.id);
-  return "<li class='pi"+(t?" done":"")+(own?" own":"")+"' style='--bk:"+l.bk+"'><span class='no num' aria-hidden='true'>"+(t?ICON.check:no)+"</span>"+
+  var dr=swap&&!t;
+  return "<li class='pi"+(t?" done":"")+(own?" own":"")+(dr?" dragme":"")+"' data-pid='"+l.id+"' style='--bk:"+l.bk+"'>"+
+    (dr?"<button type='button' class='grip' data-grip='"+l.id+"' aria-label='ลำดับที่ "+no+" "+esc(l.title)+" · ลากเพื่อเลื่อนลำดับ หรือกดลูกศรขึ้น/ลง' title='ลากเพื่อเลื่อนลำดับ'></button>":"")+
+    "<span class='no num' aria-hidden='true'>"+(t?ICON.check:no)+"</span>"+
     "<div class='pb'><div class='pkick'><i></i>"+esc(SYS[l.s].label)+" · "+esc(dshort(l.d))+" · "+esc(l.by)+
       (own?"<span class='owntag'>"+(own==="add"?"เพิ่มเอง":"เลือกเอง")+"</span>":"")+"</div>"+
       "<button type='button' class='ttl' data-open='"+l.id+"'>"+esc(l.title)+"</button>"+
@@ -1207,16 +1226,16 @@ function renderToday(){
     "</div><div class='seg' role='group' aria-label='เป้าการทวนต่อคาบ'><span>เป้าทวนต่อคาบ</span><div>"+
       [1,2,3].map(function(k){return "<button type='button' data-k='"+k+"' aria-pressed='"+(K===k)+"'>"+k+" รอบ</button>";}).join("")+"</div></div></section>";
   /* today's list */
-  h+="<section class='td-sec'><h2>ทวนวันนี้ <small>เรียงจากสำคัญก่อน · อยากทวนเรื่องอื่นก่อน กด เปลี่ยน · กดชื่อคาบเพื่อดูประวัติและสไลด์ทุกไฟล์</small></h2>";
+  h+="<section class='td-sec'><h2>ทวนวันนี้ <small>เรียงจากสำคัญก่อน · ลากที่จุด ⠿ ด้านซ้ายเพื่อสลับลำดับ · อยากทวนเรื่องอื่นก่อน กด เปลี่ยน · กดชื่อคาบเพื่อดูประวัติและสไลด์ทุกไฟล์</small></h2>";
   if(p.todo.length||nd)h+="<ol class='plan'>"+p.todo.map(function(x,i){return planItem(x,i+1,1);}).join("")+p.done.map(function(x){return planItem(x,"");}).join("")+"</ol>";
   if(q&&nd>=q){
     h+="<div class='yay'>ครบโควตาวันนี้แล้ว"+(p.rest.length?" · ถ้ายังมีแรง ทวนต่อได้อีก":"")+"</div>";
     if(p.rest.length)h+="<ol class='plan more'>"+p.rest.slice(0,3).map(function(x){return planItem(x,"+");}).join("")+"</ol>";
   }
-  var ovn=OV?{s:OV.skip.length,p:OV.pin.length,a:OV.add.length}:null;
+  var ovn=OV?{s:OV.skip.length,p:OV.pin.length,a:OV.add.length,o:OV.ord.length}:null;
   if(p.rem||nd)h+="<div class='td-acts'><button type='button' class='ghostbtn' data-addpick>+ ทวนเรื่องอื่นเพิ่ม</button>"+
     (ovn?"<button type='button' class='ghostbtn undo' data-ovreset>กลับเป็นแผนอัตโนมัติ</button><span class='ovnote'>ปรับแล้ววันนี้: "+
-      [ovn.p?"เลือกเอง "+ovn.p:"",ovn.a?"เพิ่มเอง "+ovn.a:"",ovn.s?"เลื่อน "+ovn.s:""].filter(Boolean).join(" · ")+" · ใช้แค่วันนี้ เรื่องที่เลื่อนจะกลับมาในแผนวันถัดไป</span>":"")+"</div>";
+      [ovn.p?"เลือกเอง "+ovn.p:"",ovn.a?"เพิ่มเอง "+ovn.a:"",ovn.s?"เลื่อน "+ovn.s:"",ovn.o?"จัดลำดับเอง":""].filter(Boolean).join(" · ")+" · ใช้แค่วันนี้ เรื่องที่เลื่อนจะกลับมาในแผนวันถัดไป</span>":"")+"</div>";
   if(!q&&!nd)h+="<div class='rest'>"+(p.rem?"คาบที่ทวนแล้วยังไม่ครบ "+DUE_DAYS+" วัน และไม่มีคาบค้าง วันนี้ทำ Drill หรือ Mock NL แทนได้":"ไม่มีคาบต้องทวนแล้ว")+"</div>";
   h+="</section>";
   /* upcoming classes */
@@ -1630,6 +1649,7 @@ function closeSheet(){st.open=null;st.pick=null;renderSheet();if(lastFocus&&docu
 /* ---------- render ---------- */
 function mainHtml(){return st.tab==="today"?renderToday():st.tab==="shelf"?renderShelf():st.tab==="nl"?renderNL():st.tab==="plan"?renderPlan():renderSchedule();}
 function render(){
+  if(DRAG){DRAG.later=true;return;}
   document.getElementById("t-today").setAttribute("aria-pressed",String(st.tab==="today"));
   document.getElementById("t-shelf").setAttribute("aria-pressed",String(st.tab==="shelf"));
   document.getElementById("t-schedule").setAttribute("aria-pressed",String(st.tab==="schedule"));
@@ -1677,6 +1697,51 @@ document.addEventListener("click",function(e){
     if(b.classList.contains("tile")){var fb=document.querySelector(".fbar");if(fb)fb.scrollIntoView({block:"start"});}return;}
 });
 document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(st.open||st.pick))closeSheet();});
+
+/* ---------- ลากจัดลำดับรายการทวนวันนี้ (pointer events: เมาส์ นิ้ว ปากกา) ---------- */
+var DRAG=null;
+function todoIds(ol){return [].map.call(ol.querySelectorAll("li.dragme"),function(li){return li.dataset.pid;});}
+function saveOrder(ids){
+  var o=OV?JSON.parse(JSON.stringify(OV)):{d:TODAY,skip:[],pin:[],add:[]};
+  o.ord=ids;setOv(o);
+}
+document.addEventListener("pointerdown",function(e){
+  var g=e.target.closest&&e.target.closest(".grip");if(!g||e.button>0)return;
+  var li=g.closest("li"),ol=li.parentNode;e.preventDefault();
+  DRAG={li:li,ol:ol,id:li.dataset.pid,grab:e.clientY-li.getBoundingClientRect().top,start:todoIds(ol).join("|"),y:e.clientY,pid:e.pointerId,later:false};
+  try{g.setPointerCapture(e.pointerId);}catch(err){}
+  li.classList.add("dragging");document.body.classList.add("sorting");
+});
+function dragMove(y){
+  var D=DRAG,li=D.li,ol=D.ol,rel=function(el){return el.offsetTop-ol.offsetTop;};
+  var top=y-D.grab-ol.getBoundingClientRect().top,prev=li.previousElementSibling,next=li.nextElementSibling;
+  if(prev&&prev.classList.contains("dragme")&&top<rel(prev)+prev.offsetHeight/2)ol.insertBefore(li,prev);
+  else if(next&&next.classList.contains("dragme")&&top+li.offsetHeight>rel(next)+next.offsetHeight/2)ol.insertBefore(next,li);
+  li.style.transform="translateY("+(top-rel(li))+"px)";
+}
+document.addEventListener("pointermove",function(e){
+  if(!DRAG||e.pointerId!==DRAG.pid)return;e.preventDefault();DRAG.y=e.clientY;dragMove(e.clientY);
+  var edge=70,vh=window.innerHeight;
+  if(!DRAG.scr&&(e.clientY<edge||e.clientY>vh-edge))DRAG.scr=setInterval(function(){
+    if(!DRAG){return;}var dy=DRAG.y<edge?-12:DRAG.y>window.innerHeight-edge?12:0;
+    if(!dy){clearInterval(DRAG.scr);DRAG.scr=null;return;}window.scrollBy(0,dy);dragMove(DRAG.y);},16);
+},{passive:false});
+function dragEnd(e){
+  if(!DRAG||(e&&e.pointerId!==DRAG.pid))return;
+  var D=DRAG;DRAG=null;clearInterval(D.scr);
+  D.li.classList.remove("dragging");D.li.style.transform="";document.body.classList.remove("sorting");
+  var ids=todoIds(D.ol);
+  if(ids.join("|")!==D.start)saveOrder(ids);else if(D.later)render();
+}
+document.addEventListener("pointerup",dragEnd);document.addEventListener("pointercancel",dragEnd);
+document.addEventListener("keydown",function(e){
+  var g=e.target.closest&&e.target.closest(".grip");if(!g||(e.key!=="ArrowUp"&&e.key!=="ArrowDown"))return;
+  e.preventDefault();
+  var ids=todoIds(g.closest("ol")),i=ids.indexOf(g.dataset.grip),j=i+(e.key==="ArrowUp"?-1:1);
+  if(i<0||j<0||j>=ids.length)return;
+  ids.splice(j,0,ids.splice(i,1)[0]);saveOrder(ids);
+  var ng=document.querySelector(".grip[data-grip='"+g.dataset.grip+"']");if(ng)ng.focus();
+});
 document.addEventListener("input",function(e){if(e.target&&e.target.id==="pkq"){st.pq=e.target.value;var pl=document.getElementById("pklist");if(pl)pl.innerHTML=pickRows();}});
 document.getElementById("q").addEventListener("input",function(e){st.q=e.target.value.trim();document.getElementById("main").innerHTML=mainHtml();});
 document.getElementById("sform").addEventListener("submit",function(e){e.preventDefault();var m=document.getElementById("main");if(m)m.scrollIntoView({block:"start"});});
