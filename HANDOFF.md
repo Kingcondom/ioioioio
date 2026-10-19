@@ -68,7 +68,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 27** · มี **9 ชุดวิชา** · 31 คาบ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 31** · มี **9 ชุดวิชา** · 32 คาบ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
@@ -82,6 +82,8 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 > - เนื้อหาในภาพ/ตารางกลไกที่ **ไม่ได้มาจากสไลด์** เป็นสรีรวิทยาระดับตำรา (Harrison/Guyton) · กราฟเชิงแนวคิดระบุใน cap ว่า "ภาพแนวคิด/ค่าประมาณ"
 > - จุดที่ควรให้ผู้ใช้ตรวจ: ค่า Wilson ALP/TB ในคาบ GI 12/10 (< 2) ไม่ตรงกับคาบ 29/10 (< 4) — เป็นของเดิมในบทเรียน ไม่ได้แก้ · คาบ cardio 27 ภาพ BPG ระบุว่าบางแนวทางให้ทุก 3 สัปดาห์ในผู้เสี่ยงสูง (สไลด์: ทุก 3–4 สัปดาห์ · WHO 2024: ทุก 4 สัปดาห์)
 > - **Version 28** (16 ต.ค.): หน้าเว็บแสดง ` · ` เป็นการขึ้นบรรทัดใหม่ (`splitDots()` ใน index.html · ตารางแยกเป็นบรรทัดละรายการ) — ผู้ใช้บอกว่าอ่านยาก · ข้อมูลไม่ได้แก้
+> - **Version 30** (ก่อน 19 ต.ค. · session อื่น **publish โดยไม่ push**): เพิ่ม `section.anims` (ภาพเคลื่อนไหวกลไก `[[anim:key]]` เล่นทีละขั้น) และ `section.mnem` (กล่อง "หลักจำ") ให้คาบเดิมเกือบทุกคาบ + โค้ดใน index.html · **19 ต.ค. ดึงไฟล์จากเว็บเข้า repo แล้ว** (commit "Sync artifact with live learn") — สคริปต์ที่ใช้สร้าง anims/mnem ไม่อยู่ใน repo ถ้าต้องแก้ ให้แก้ข้อมูลใน data/*.json ตรง ๆ หรือหา branch ของ session นั้น
+> - **Version 31** (19 ต.ค.): cardio 36 Basic ECG (คาบใหม่) · ทับบน Version 30 โดยไม่แตะคาบอื่น
 > - **Version 29** (16 ต.ค.): ปุ่ม **"ซ่อนเนื้อหา (โหมดทวน)"** ต่อคาบ (หน้าคาบ + หน้าหัวข้อ) → เหลือแค่หัวข้อ ### / #### เป็นปุ่มกดเปิดทีละส่วน + "จำไปสอบ" พับไว้ · ซ่อน summary · ข้อสอบยังอยู่ · จำค่าใน `state.hide` (localStorage ต่อเครื่อง ไม่ซิงก์บัญชี)
 > - `index.html` บนเว็บ v26 มีแพตช์ CSS ปุ่มซ่อนเมนู (จาก `claude/internal-med-learning-web-j9ca6l`) — รวมเข้า repo แล้ว (commit 0ab309b)
 >
@@ -174,6 +176,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | cardio | 13 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ · พฤ. 24 ก.ย. (เดิมใช้เลข 24/9 — เปลี่ยนเป็นเลขคาบจริงจากคลัง Ward Drill แล้ว · ผูกคลังคาบ 13 ครบ 32 ข้อ ด้วย `tools/link_ihd_bank.py`) |
 | cardio | 24 | Atrial fibrillation ← อ.อภิชัย · จ. 5 ต.ค. (11 หัวข้อ · 20 MCQ ใหม่ + คลังคาบ 24 ครบ 21 ข้อ · MEQ AF RVR + warfarin · OSCE counselling warfarin) |
 | cardio | 27 | Valvular heart disease + Acute rheumatic fever ← พ.ญ.ชนัญญา · อ. 6 ต.ค. (13 หัวข้อ · 18 MCQ ใหม่ + คลังคาบ 27 ครบ 31 ข้อ · MEQ ARF ใหม่ + C-MEQ-02 · OSCE C-OSCE-04) — **ผู้ใช้ขอให้อัปเดตตามแนวทางล่าสุด**: ESC/EACTS 2025 (VHD) · WHO 2024 + Jones 2015 (ARF) · ESC 2023 + Duke-ISCVID 2023 (IE — ไม่อยู่ในสไลด์ แต่มีในคลัง 7 ข้อ) · ลายมือบนสไลด์อ่านไม่ได้ |
+| cardio | 36 | Basic ECG และ arrhythmia ที่พบบ่อย ← อ.สุรชาติ · จ. 19 ต.ค. (14 หัวข้อ · 28 MCQ ใหม่ + คลังคาบ 36 ครบ 23 ข้อ · MEQ inferior STEMI + CHB · OSCE บันทึก 12-lead + Brugada leads + C-OSCE-02/03 · **28 ภาพ ECG วาดจริงบนกระดาษกราฟ** จาก `figs_ecg.py`) — PDF 37.8 MB อ่านได้เฉพาะข้อความ (ภาพ ECG ในสไลด์มองไม่เห็น · ลายมือ OCR เป็นเศษคำ ใช้เฉพาะที่ตีความได้) · **หัวข้อ 7 (ACLS) และการรักษา AV block/hyperK ไม่อยู่ในสไลด์** → AHA ACLS 2020 + 2023 · ESC SVT 2019 · ACC/AHA/HRS 2018 · 4th UDMI · ESC ACS 2023 |
 | chest | 03 | Pulmonary tuberculosis |
 | chest | 26 | Arterial blood gas analysis |
 | chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
@@ -207,8 +210,8 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 - ✅ **Drill Version 13** (17 ต.ค.) — บันทึกคำตอบในบัญชี `data/users/<id>/drill` (capabilities `{db:{}, user:{}}` · ใช้งานจริงแล้ว) + แท็บ "สุ่มทำข้อสอบ" (ระบบนี้/ทุกระบบ · 10–100 ข้อ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด) + แก้ป้ายยาวล้นจอมือถือ — ทั้งหมดอยู่ใน `drill_sync.py` · **publish drill ครั้งต่อไปต้องไม่ส่ง capabilities ว่าง** (ละไว้ = คงเดิม)
 - ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
 
-**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **392/570 ข้อ = 69% (13 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 42 ข้อ) ·
-คาบในคลังที่ยังไม่มีบทเรียน: Cardio 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
+**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **415/570 ข้อ = 73% (19 ต.ค.)**: AIR 110/110 · Cardio 151/180 · Chest 64/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 42 ข้อ) ·
+คาบในคลังที่ยังไม่มีบทเรียน: Cardio 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
 คาบ 28 (UA) เหลือ 4 ข้อ: N-MCQ-25, N-OLD-072, N-OLD-073 (cast/AKI) และ N-OLD-077 (Fanconi) — เก็บไว้ให้คาบ AKI/UA
 
 ---
@@ -270,6 +273,7 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - Lec11 Approach to glomerular disease (พญ.ฉันทิศา) `1R5f1MtTJIlwCUeomxvcBD10MKpDzYob4` → nephro 14 · โน้ต `slides/glomerular_notes.md` · ข้อความครบ ภาพอ่านไม่ได้
 - Lec5 UTI_4thRSU2026 (อ.กรทิพย์) `1OeevfDxn_c6H3iLUw6nXIjPOv6DPHawD` → nephro 30 · โน้ต `slides/uti_notes.md`
 - Lec19 Essential Renal Imaging handout (อ.ธนิศร) `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` → nephro Imaging · โน้ต `slides/renalimg_notes.md`
+- Basic electrocardiography outline (อ.สุรชาติ) `13UUiw9BU7zag_JNHWBmidA5gPoVhjTiu` (37.8 MB · 113 หน้า) → cardio 36 · โน้ต `slides/ecg_notes.md`
 - Lec22 Approach to WBC disorder and lymphadenopathy (อ.เบญจมาภรณ์) `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` → hemonc 12/10 · โน้ต `slides/wbc_notes.md` (ไฟล์นี้ดาวน์โหลดผ่าน public link ได้ → เรนเดอร์อ่านได้ครบ 66 หน้า)
 
 **รอบ 6 ต.ค. (โฟลเดอร์ Drive `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj`)** — ✅ v18 · ทั้ง 4 ไฟล์ดึงข้อความด้วย `read_file_content` ได้
