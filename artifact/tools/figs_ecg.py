@@ -142,25 +142,26 @@ def _ticks(X, y, t1, t2, s, c="lmu", tc="xs mid i2", above=True):
 # ───────────────────────────── 1. คลื่นพื้นฐาน
 def beat_anatomy():
     k = 9
-    comps = beat(0.42, pr=0.16)
-    s, X, yb = strip(20, 30, 0.88, comps, h_mm=26, k=k, base_at=0.66, grid=True)
+    k = 8.5
+    comps = beat(0.36, pr=0.16)
+    s, X, yb = strip(10, 30, 0.8, comps, h_mm=26, k=k, base_at=0.66, grid=True)
     y = 30 + 26 * k
     out = [s,
-           t(X(0.255), yb - 40, "P", "b tac mid"), t(X(0.42), 50, "R", "b mid"), t(X(0.395), yb + 26, "Q", "sm mid i2"),
-           t(X(0.452), yb + 34, "S", "sm mid i2"), t(X(0.68), yb - 45, "T", "b tac mid"),
-           _ticks(X, y + 18, 0.215, 0.38, "PR 0.12–0.20 s", above=False),
-           _ticks(X, y + 40, 0.38, 0.47, "QRS < 0.12 s", above=False),
-           _ticks(X, y + 62, 0.38, 0.79, "QT (แก้ตาม HR = QTc)", above=False),
-           path("M%s %s L%s %s" % (X(0.47), yb - 2, X(0.58), yb - 2), "lac w2"),
-           t(X(0.52), yb + 18, "ST", "xs b tac mid"),
-           box(560, 34, 156, 92, "sk", None), t(572, 54, "กระดาษ ECG", "sm b"),
-           t(572, 74, "1 ช่องเล็ก = 0.04 s · 0.1 mV", "xs i2"), t(572, 92, "1 ช่องใหญ่ = 0.20 s · 0.5 mV", "xs i2"),
-           t(572, 110, "25 mm/s · 10 mm = 1 mV", "xs i2")]
+           t(X(0.195), yb - 40, "P", "b tac mid"), t(X(0.36), 50, "R", "b mid"), t(X(0.335), yb + 26, "Q", "sm mid i2"),
+           t(X(0.392), yb + 34, "S", "sm mid i2"), t(X(0.62), yb - 45, "T", "b tac mid"),
+           _ticks(X, y + 18, 0.155, 0.32, "PR 0.12–0.20 s", above=False),
+           _ticks(X, y + 40, 0.32, 0.41, "QRS < 0.12 s", above=False),
+           _ticks(X, y + 62, 0.32, 0.73, "QT (แก้ตาม HR = QTc)", above=False),
+           path("M%s %s L%s %s" % (X(0.41), yb - 2, X(0.52), yb - 2), "lac w2"),
+           t(X(0.46), yb + 18, "ST", "xs b tac mid"),
+           box(10, 30 + 26 * k + 84, 400, 52, "sk", None),
+           t(20, 30 + 26 * k + 104, "1 ช่องเล็ก = 1 mm = 0.04 s · 0.1 mV", "xs i2"),
+           t(20, 30 + 26 * k + 124, "1 ช่องใหญ่ = 5 mm = 0.20 s · 0.5 mV · 25 mm/s · 10 mm = 1 mV", "xs i2")]
     return fig("หนึ่งจังหวะบนกระดาษ ECG — แต่ละคลื่นคือไฟฟ้าผ่านส่วนไหน",
                "**P** = ไฟฟ้ากระจายผ่าน atrium · **PR** = เวลาตั้งแต่ atrium เริ่มจนถึง ventricle เริ่ม (ส่วนใหญ่คือการหน่วงใน AV node) · "
                "**QRS** = ventricle depolarize ผ่าน His–Purkinje · **ST** = ventricle depolarize ครบแล้ว ทุกเซลล์ศักย์เท่ากัน จึงควรแบนอยู่ระดับเดียวกับ PR · "
                "**T** = ventricle repolarize · ค่าปกติตามสไลด์: P < 2.5 ช่องเล็ก · PR < 1 ช่องใหญ่ · QRS < 3 ช่องเล็ก",
-               svg(730, 30 + 26 * k + 80, "ECG หนึ่งจังหวะพร้อมชื่อคลื่นและช่วงเวลา PR QRS QT บนกระดาษกราฟ", *out))
+               svg(420, 30 + 26 * k + 142, "ECG หนึ่งจังหวะพร้อมชื่อคลื่นและช่วงเวลา PR QRS QT บนกระดาษกราฟ", *out))
 
 
 def conduction():
@@ -190,24 +191,23 @@ def chest_leads():
     ics = {2: 70, 3: 115, 4: 160, 5: 205}
     for n, y in ics.items():
         out += [path("M120 %d Q 210 %d 300 %d" % (y, y - 8, y), "lmu da"), t(104, y + 4, "ICS%d" % n, "xs end mu")]
-    std = [("V1", cx + 26, 160, "ok"), ("V2", cx - 26, 160, "ok")]
-    hi = [("V1-1", cx + 26, 115), ("V2-1", cx - 26, 115), ("V1-2", cx + 26, 70), ("V2-2", cx - 26, 70)]
-    oth = [("V3", cx - 52, 182), ("V4", cx - 74, 205), ("V5", cx - 100, 207), ("V6", cx - 120, 209)]
+    std = [("V1", cx - 26, 160, "ok"), ("V2", cx + 26, 160, "ok")]
+    hi = [("V1-1", cx - 26, 115), ("V2-1", cx + 26, 115), ("V1-2", cx - 26, 70), ("V2-2", cx + 26, 70)]
+    oth = [("V3", cx + 52, 182), ("V4", cx + 74, 205), ("V5", cx + 94, 208), ("V6", cx + 112, 211)]
     for nm, x, y, c in std:
         out += [circ(x, y, 9, c), t(x, y + 4, nm, "xs b mid")]
     for nm, x, y in hi:
         out += [circ(x, y, 11, "ac"), t(x, y + 4, nm, "xs b mid tac")]
     for nm, x, y in oth:
         out += [circ(x, y, 9, "bx"), t(x, y + 4, nm, "xs mid")]
-    out += [t(cx + 60, 300, "ขวาของผู้ป่วย", "xs mid mu"), t(cx - 70, 300, "ซ้ายของผู้ป่วย", "xs mid mu"),
-            box(330, 40, 86, 110, "ac", None), t(373, 62, "Brugada leads", "xs b mid tac"),
-            t(373, 82, "ย้าย V1/V2", "xs mid i2"), t(373, 98, "ขึ้นไป ICS3, ICS2", "xs mid i2"),
-            t(373, 118, "ใช้ขั้ว V3–V6", "xs mid i2"), t(373, 134, "มาติดแทน", "xs mid i2")]
+    out += [t(cx - 70, 300, "ขวาของผู้ป่วย", "xs mid mu"), t(cx + 70, 300, "ซ้ายของผู้ป่วย", "xs mid mu"),
+            box(10, 350, 400, 50, "ac", None), t(20, 370, "Brugada leads (สีเข้ม): ย้าย V1/V2 ขึ้นไป ICS3 และ ICS2", "xs b tac"),
+            t(20, 388, "โดยใช้ขั้ว V3–V6 มาติดแทน · มองตามภาพหันหน้าเข้าหาผู้ป่วย", "xs i2")]
     return fig("ตำแหน่ง chest lead มาตรฐาน และ Brugada leads (สไลด์)",
                "V1 = ขวา sternum ICS4 · V2 = ซ้าย ICS4 · **Brugada leads**: V1-1/V2-1 ที่ ICS3 และ V1-2/V2-2 ที่ ICS2 (ย้ายขั้ว V3–V6 มาใช้) — "
                "เพราะ RVOT อยู่สูงกว่าตำแหน่ง V1–V2 ปกติ ลักษณะ coved ST elevation ของ Brugada จึงเห็นชัดขึ้นเมื่อขยับ lead ขึ้น · "
                "สไลด์ย้ำว่าติดผิด ICS ไป 1 ช่องหรือให้นั่งแทนนอน ทำให้ QRST เปลี่ยนได้มาก",
-               svg(420, 345, "ภาพหน้าอกแสดงตำแหน่ง V1 ถึง V6 และ Brugada leads ที่ ICS3 และ ICS2", *out))
+               svg(420, 406, "ภาพหน้าอกแสดงตำแหน่ง V1 ถึง V6 และ Brugada leads ที่ ICS3 และ ICS2", *out))
 
 
 def lewis():
@@ -275,8 +275,8 @@ def pacemaker_ladder():
         out += [box(20, y, 150, 48, c, a + "\n" + r_ + "/นาที", "b", fs=12), t(186, y + 28, d, "sm i2")]
         if i < 3:
             out.append(ar(95, y + 48, 95, y + 64, "lmu", "ah-mu"))
-    out += [path("M300 40 C 360 40, 360 220, 300 220", "lok w2", "ah-ok"), t(366, 120, "overdrive", "xs b tok"),
-            t(366, 136, "suppression", "xs b tok"),
+    out += [path("M282 40 C 330 40, 330 220, 282 220", "lok w2", "ah-ok"), t(326, 120, "overdrive", "xs b tok"),
+            t(326, 136, "suppression", "xs b tok"),
             path("M290 228 C 250 250, 250 250, 210 244", "lbad da", "ah-bad"), t(250, 270, "ตัวบนหยุด → ตัวล่าง escape", "xs mid tbad")]
     return fig("ลำดับชั้นของจุดกำเนิดไฟฟ้า — ใครเร็วกว่าคุม",
                "ทุกจุดยิงไฟฟ้าเองได้ (automaticity) แต่จุดที่เร็วที่สุด (SA node) ไปถึงก่อนและ **รีเซ็ตจุดล่างทุกจังหวะ (overdrive suppression)** · "
@@ -329,12 +329,12 @@ def premature():
                "**PVC**: เซลล์ใน ventricle ยิงเองก่อนกำหนด → QRS กว้าง ไม่มี P นำ T สวนทาง · SA node **ไม่ถูกรีเซ็ต** (ไฟฟ้าย้อนไม่ถึง) "
                "แต่ P ถัดไปตกช่วงที่ ventricle ยังดื้ออยู่ → ช่วงห่างรวมเท่ากับ 2 RR พอดี (full compensatory pause) · "
                "**PAC** มี P แปลกรูปมาก่อนเวลาและรีเซ็ต SA node → pause ไม่ครบ · PVC ทุกจังหวะสลับ = **bigeminy** (ตัวอย่างในสไลด์)",
-               svg(420, 26 + 80 + 52, "แถบ ECG มี PVC ตามด้วย compensatory pause ที่ยาวเท่าสองช่วง RR", *out))
+               svg(420, 26 + 80 + 66, "แถบ ECG มี PVC ตามด้วย compensatory pause ที่ยาวเท่าสองช่วง RR", *out))
 
 
 def escape():
-    comps = rhythm([0.3, 1.1]) + beat(3.0, p=False) + rhythm([3.85])
-    s, X, yb = strip(10, 26, 4.2, comps, h_mm=20)
+    comps = rhythm([0.3, 1.1]) + beat(3.0, p=False) + rhythm([3.8])
+    s, X, yb = strip(10, 26, 4.0, comps, h_mm=20)
     out = [s, _ticks(X, 22, 1.1, 3.0, "sinus หยุด (sinus pause / SSS)", c="lbad", tc="xs mid tbad"),
            t(X(3.0), 26 + 80 + 16, "junctional escape", "xs b mid tms"), t(X(3.0), 26 + 80 + 30, "(ไม่มี P · QRS แคบ)", "xs mid i2")]
     return fig("Escape beat — มาหลัง pause ยาว เพื่อกันหัวใจหยุด",
@@ -344,8 +344,8 @@ def escape():
 
 
 def aivr():
-    comps = rhythm([0.3, 1.25], pr=0.16) + rhythm([2.15, 3.0, 3.85], kind="v", p=False)
-    s, X, yb = strip(10, 26, 4.3, comps, h_mm=20)
+    comps = rhythm([0.3, 1.25], pr=0.16) + rhythm([2.1, 2.95, 3.8], kind="v", p=False)
+    s, X, yb = strip(10, 26, 4.0, comps, h_mm=20)
     out = [s, t(X(0.75), 22, "sinus ~63", "xs b mid tok"), t(X(3.0), 22, "AIVR ~70 · QRS กว้าง", "xs b mid tms")]
     return fig("Accelerated idioventricular rhythm (AIVR) — reperfusion arrhythmia",
                "ventricle ยิงเองเร็วกว่าปกติของมัน (20–40) จนขึ้นมาราว **50–110** ใกล้ sinus จึงแย่งคุมจังหวะกันได้ · พบบ่อยหลัง **เปิดหลอดเลือดใน STEMI** "
@@ -373,16 +373,16 @@ def tachy():
 
 
 def reentry():
-    out = [path("M110 60 C 40 60, 40 220, 110 220", "lms w3", "ah-ms"), t(26, 140, "ทางช้า", "sm b end tms"),
-           t(26, 158, "(ฟื้นตัวเร็ว)", "xs end i2"),
-           path("M110 220 C 180 220, 180 60, 110 60", "lwa w3"), t(196, 140, "ทางเร็ว", "sm b twa"), t(196, 158, "(ฟื้นตัวช้า)", "xs i2"),
-           path("M110 20 L110 60", "ln w2", "ah"), t(118, 34, "PAC มาก่อนเวลา", "xs i2"),
-           path("M147 128 L 163 140", "lbad w3"), path("M147 140 L 163 128", "lbad w3"),
-           t(200, 100, "ทางเร็วยังดื้อ → ติด", "xs tbad b"),
-           path("M110 220 L110 262", "ln w2", "ah"), t(118, 252, "ลง ventricle", "xs i2"),
-           box(240, 190, 176, 82, "ac", None), t(328, 212, "ไฟฟ้าย้อนขึ้นทางเร็ว", "xs b mid tac"),
-           t(328, 230, "ที่ฟื้นแล้ว → วนไม่รู้จบ", "xs mid i2"), t(328, 250, "adenosine บล็อก AV node", "xs mid b tok"),
-           t(328, 266, "ชั่วขณะ → ตัดวง", "xs mid tok")]
+    out = [path("M150 60 C 80 60, 80 220, 150 220", "lms w3", "ah-ms"), t(76, 140, "ทางช้า", "sm b end tms"),
+           t(76, 158, "(ฟื้นตัวเร็ว)", "xs end i2"),
+           path("M150 220 C 220 220, 220 60, 150 60", "lwa w3"), t(222, 140, "ทางเร็ว", "sm b twa"), t(222, 158, "(ฟื้นตัวช้า)", "xs i2"),
+           path("M150 20 L150 60", "ln w2", "ah"), t(158, 34, "PAC มาก่อนเวลา", "xs i2"),
+           path("M196 128 L 212 140", "lbad w3"), path("M196 140 L 212 128", "lbad w3"),
+           t(222, 100, "ทางเร็วยังดื้อ → ติด", "xs tbad b"),
+           path("M150 220 L150 262", "ln w2", "ah"), t(158, 252, "ลง ventricle", "xs i2"),
+           box(252, 176, 164, 82, "ac", None), t(334, 198, "ไฟฟ้าย้อนขึ้นทางเร็ว", "xs b mid tac"),
+           t(334, 216, "ที่ฟื้นแล้ว → วนไม่รู้จบ", "xs mid i2"), t(334, 236, "adenosine บล็อก AV node", "xs mid b tok"),
+           t(334, 252, "ชั่วขณะ → ตัดวง", "xs mid tok")]
     return fig("Re-entry — กลไกของ AVNRT (และ flutter, VT)",
                "ต้องมี **2 ทาง** ที่ความเร็วและระยะดื้อต่างกัน + **block ทางเดียว** + ทางช้าพอให้อีกทางฟื้น · PAC ที่มาก่อนเวลาเจอทางเร็วยังดื้อ "
                "จึงลงทางช้า แล้วย้อนขึ้นทางเร็ว → วนต่อเนื่อง ~150–250/นาที · **วงของ AVNRT อยู่ใน AV node** → vagal maneuver/adenosine ที่ทำให้ AV node ดื้อชั่วขณะ จึงตัดวงได้",
@@ -416,32 +416,32 @@ def acls():
 
 # ───────────────────────────── 8. axis
 def hexaxial():
-    cx, cy, R = 150, 150, 112
+    cx, cy, R = 162, 150, 100
     leads = [("I", 0), ("II", 60), ("III", 120), ("aVF", 90), ("aVL", -30), ("aVR", -150)]
     out = [path("M%s %s L%s %s A%s %s 0 0 1 %s %s Z" % (cx, cy, cx + R * math.cos(math.radians(-30)), cy + R * math.sin(math.radians(-30)),
                                                        R, R, cx, cy + R), "ok"),
            path("M%s %s L%s %s A%s %s 0 0 1 %s %s Z" % (cx, cy, cx, cy + R, R, R, cx - R, cy), "ms"),
            path("M%s %s L%s %s A%s %s 0 0 0 %s %s Z" % (cx, cy, cx + R * math.cos(math.radians(-30)), cy + R * math.sin(math.radians(-30)),
                                                        R, R, cx, cy - R), "ac"),
-           path("M%s %s L%s %s A%s %s 0 0 0 %s %s Z" % (cx, cy, cx - R, cy, R, R, cx, cy - R), "bad")]
+           path("M%s %s L%s %s A%s %s 0 0 1 %s %s Z" % (cx, cy, cx - R, cy, R, R, cx, cy - R), "bad")]
     for nm, a in leads:
         x = cx + (R + 10) * math.cos(math.radians(a)); y = cy + (R + 10) * math.sin(math.radians(a))
         out += [line(cx, cy, cx + R * math.cos(math.radians(a)), cy + R * math.sin(math.radians(a)), "ln"),
                 t(x + (6 if math.cos(math.radians(a)) > 0.2 else -6 if math.cos(math.radians(a)) < -0.2 else 0), y + 4,
-                  "%s %+d°" % (nm, a), "xs b " + ("" if abs(math.cos(math.radians(a))) <= 0.2 else "end" if math.cos(math.radians(a)) < 0 else ""))]
+                  "%s %s°" % (nm, ("+%d" % a) if a > 0 else str(a)), "xs b " + ("" if abs(math.cos(math.radians(a))) <= 0.2 else "end" if math.cos(math.radians(a)) < 0 else ""))]
     out += [t(cx + 46, cy + 46, "ปกติ", "sm b tok"), t(cx + 46, cy + 62, "−30 ถึง +90", "xs tok"),
             t(cx - 60, cy + 46, "RAD", "sm b tms mid"), t(cx + 54, cy - 40, "LAD", "sm b tac"),
             t(cx - 60, cy - 40, "extreme", "sm b tbad mid")]
     tb = [("lead I", "aVF", "แปลผล"), ("+", "+", "ปกติ"), ("+", "−", "LAD*"), ("−", "+", "RAD"), ("−", "−", "extreme")]
     for i, row in enumerate(tb):
         y = 40 + i * 26
-        out += [t(306, y, row[0], "xs mid" + (" b" if i == 0 else "")), t(346, y, row[1], "xs mid" + (" b" if i == 0 else "")),
-                t(392, y, row[2], "xs mid" + (" b" if i == 0 else ""))]
-    out += [t(300, 182, "*ดู lead II ต่อ:", "xs i2"), t(300, 198, "II บวก = ยังปกติ", "xs i2"), t(300, 214, "(−30 ถึง 0)", "xs i2")]
+        out += [t(334, y, row[0], "xs mid" + (" b" if i == 0 else "")), t(368, y, row[1], "xs mid" + (" b" if i == 0 else "")),
+                t(404, y, row[2], "xs mid" + (" b" if i == 0 else ""))]
+    out += [t(316, 182, "*ดู lead II ต่อ:", "xs i2"), t(316, 198, "II บวก = ยังปกติ", "xs i2"), t(316, 214, "(−30 ถึง 0)", "xs i2")]
     return fig("Axis — ดู lead I กับ aVF แล้ววางลงวงกลม hexaxial",
                "QRS **ตั้ง** ใน lead ใด = ไฟฟ้าเฉลี่ยของ ventricle วิ่ง **เข้าหา** lead นั้น · lead I (0°) บอกซ้าย/ขวา aVF (+90°) บอกบน/ล่าง · "
                "ไฟฟ้าเอียง **เข้าหาด้านที่กล้ามเนื้อหนา (hypertrophy)** และ **หนีด้านที่ตาย (infarct)** — นี่คือสาเหตุ axis เบี่ยงที่จดในสไลด์",
-               svg(420, 300, "วงกลม hexaxial แสดง lead I II III aVF aVL aVR และช่วง axis ปกติ LAD RAD และตารางแปลผลจาก lead I กับ aVF", *out))
+               svg(436, 300, "วงกลม hexaxial แสดง lead I II III aVF aVL aVR และช่วง axis ปกติ LAD RAD และตารางแปลผลจาก lead I กับ aVF", *out))
 
 
 # ───────────────────────────── 9. infarction
@@ -544,7 +544,7 @@ def av_strips():
              [[_g(0.12 + 0.667 * i, 0.13, 0.021)] for i in range(6)] + [beat(0.55 + 1.58 * i, kind="v", p=False) for i in range(3)])]
     out = []
     for i, (lab, c, parts) in enumerate(rows):
-        y = 6 + i * 90
+        y = 6 + i * 104
         comps = [x for p_ in parts for x in p_]
         s, X, yb = strip(10, y + 16, 4.0, comps, h_mm=16)
         out += [t(12, y + 11, lab, "xs b t" + c), s]
@@ -557,20 +557,20 @@ def av_strips():
                "**1st**: PR > 0.20 s ทุกตัว ไม่มี P หลุด · **Mobitz I (Wenckebach)**: PR ยาวขึ้นทีละน้อยจน P ไม่ลง — PR ยาวสุดก่อนหลุด สั้นสุดหลังหลุด · "
                "**Mobitz II**: PR คงที่ (ปกติหรือยาวก็ได้) แล้ว P หลุดโดยไม่มีสัญญาณเตือน มักคู่กับ QRS กว้าง · "
                "**3rd (complete)**: P กับ QRS ไม่สัมพันธ์กันเลย (AV dissociation) QRS มาจาก escape ด้านล่าง",
-               svg(420, 6 + 4 * 90, "แถบ ECG first degree AV block Mobitz I Mobitz II และ complete heart block", *out))
+               svg(420, 6 + 4 * 104 - 10, "แถบ ECG first degree AV block Mobitz I Mobitz II และ complete heart block", *out))
 
 
 def block_level():
-    out = [box(10, 10, 196, 34, "ms", "ระดับ AV node", "b"), box(214, 10, 196, 34, "bad", "ใต้ AV node (His–Purkinje)", "b", fs=12)]
-    rows = [("ตัวอย่าง", "1st · Mobitz I · CHB ใน inferior MI", "Mobitz II · CHB ใน anterior MI/พังผืด"),
+    out = [box(62, 10, 146, 34, "ms", "ที่ AV node", "b"), box(214, 10, 196, 34, "bad", "ใต้ AV node (His–Purkinje)", "b", fs=12)]
+    rows = [("ตัวอย่าง", "1st · Mobitz I\nCHB ใน inferior MI", "Mobitz II\nCHB ใน anterior MI / พังผืด"),
             ("กลไก", "เซลล์ AV node ล้าทีละน้อย\n(decremental)", "His–Purkinje ส่งได้หรือไม่ได้เลย\n(all-or-none)"),
-            ("สาเหตุ", "vagal สูง ยา (β-blocker, CCB,\ndigoxin) ischemia กลับคืนได้", "โครงสร้างเสีย: infarct\nfibrosis necrosis"),
-            ("escape", "junctional 40–60 · QRS แคบ", "ventricular 20–40 · QRS กว้าง"),
-            ("atropine", "ได้ผล (ลด vagal ที่ AV node)", "มักไม่ได้ผล"),
-            ("รักษา", "สังเกต/ตัดยา (conservative)", "pacemaker (ลายมือในสไลด์)")]
+            ("สาเหตุ", "vagal สูง · ยา β-blocker\nCCB digoxin · ischemia", "โครงสร้างเสีย: infarct\nfibrosis necrosis"),
+            ("escape", "junctional 40–60\nQRS แคบ", "ventricular 20–40\nQRS กว้าง"),
+            ("atropine", "ได้ผล\n(ลด vagal ที่ AV node)", "มักไม่ได้ผล"),
+            ("รักษา", "สังเกต / ตัดยา\n(conservative)", "pacemaker (ลายมือในสไลด์)")]
     for i, (h, a, b) in enumerate(rows):
         y = 54 + i * 48
-        out += [t(4, y + 22, h, "xs b mu"), box(54, y, 152, 42, "bx", a, "", fs=10.5), box(214, y, 196, 42, "bx", b, "", fs=10.5)]
+        out += [t(4, y + 25, h, "xs b mu"), box(62, y, 146, 42, "bx", a, "", fs=10.5), box(214, y, 196, 42, "bx", b, "", fs=10.5)]
     return fig("Block ที่ AV node เทียบกับใต้ AV node — ทำไมพยากรณ์ต่างกัน",
                "สไลด์: Mobitz I มักเป็น block **ที่ AV node** จากเซลล์ \"ล้า\" ทีละน้อยแบบกลับคืนได้ · Mobitz II มักเป็น **His–Purkinje** ที่ล้มเหลวทันทีจาก **โครงสร้างเสียหาย** · "
                "complete block จาก AV node (เช่น vagal สูงช่วง **inferior MI**) **ตอบ atropine และพยากรณ์ดีกว่า**",
@@ -657,10 +657,10 @@ def read_flow():
 def bigeminy():
     comps = []
     for i in range(3):
-        comps += beat(0.3 + 1.4 * i, pr=0.16) + beat(0.3 + 1.4 * i + 0.6, kind="v", p=False)
-    s, X, yb = strip(10, 24, 4.3, comps, h_mm=20)
-    out = [s, t(X(0.3), 20, "N", "xs b mid tok"), t(X(0.9), 20, "V", "xs b mid tbad"), t(X(1.7), 20, "N", "xs b mid tok"),
-           t(X(2.3), 20, "V", "xs b mid tbad"), t(10, 24 + 80 + 18, "Dx: NSR with ventricular bigeminy (ตัวอย่างสไลด์ p78)", "xs b")]
+        comps += beat(0.3 + 1.3 * i, pr=0.16) + beat(0.3 + 1.3 * i + 0.56, kind="v", p=False)
+    s, X, yb = strip(10, 24, 4.0, comps, h_mm=20)
+    out = [s, t(X(0.3), 20, "N", "xs b mid tok"), t(X(0.86), 20, "V", "xs b mid tbad"), t(X(1.6), 20, "N", "xs b mid tok"),
+           t(X(2.16), 20, "V", "xs b mid tbad"), t(10, 24 + 80 + 18, "Dx: NSR with ventricular bigeminy (ตัวอย่างสไลด์ p78)", "xs b")]
     return fig("Ventricular bigeminy — PVC สลับทุกจังหวะ",
                "N = sinus beat (มี P QRS แคบ) · V = PVC (QRS กว้าง ไม่มี P T สวนทาง) · นับ rate ให้นับทุก QRS · "
                "ชีพจรที่ข้อมืออาจได้ครึ่งเดียวเพราะ PVC มาเร็วจน ventricle ยังไม่เต็ม (stroke volume ต่ำ)",
