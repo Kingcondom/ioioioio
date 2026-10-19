@@ -1536,9 +1536,9 @@ NL: B6.1.2(4) Gas diffusion and gas exchange · B6.3(2) Arterial blood gas analy
 Which statement correctly describes a physiological shunt?
 
 A. A right-to-left communication at the level of the great vessels only
-B. Alveolar units with both high ventilation and high perfusion
+B. Alveolar units that are ventilated but not perfused, causing an increase in dead space
 C. An area of lung with reduced diffusion capacity but normal ventilation and perfusion
-D. Alveolar units that are ventilated but not perfused, causing an increase in dead space
+D. Alveolar units with both high ventilation and high perfusion
 E. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
 
 ANSWER: E. Alveolar units that are perfused but not ventilated, causing hypoxaemia that does not correct with supplemental oxygen
@@ -1561,13 +1561,13 @@ NL: B6.1.2(4) Gas diffusion and gas exchange · B6.1.2(2) Respiratory mechanics,
 
 Which of the following causes hypoxaemia with a NORMAL alveolar-arterial oxygen gradient?
 
-A. Hypoventilation from an opioid overdose
+A. Pneumonia with lobar consolidation
 B. Acute respiratory distress syndrome
 C. Interstitial lung disease
-D. Pulmonary embolism
-E. Pneumonia with lobar consolidation
+D. Hypoventilation from an opioid overdose
+E. Pulmonary embolism
 
-ANSWER: A. Hypoventilation from an opioid overdose
+ANSWER: D. Hypoventilation from an opioid overdose
 
 EXPLAIN:
 **A-a gradient = PAO2 − PaO2** โดย **PAO2 = FiO2 × (Patm − PH2O) − PaCO2/R** ≈ **150 − PaCO2/0.8** เมื่อหายใจอากาศห้องที่ระดับน้ำทะเล
@@ -1587,13 +1587,13 @@ NL: B6.1.2(4) Gas diffusion and gas exchange · B6.2.5(1) Respiratory failure (h
 
 A patient has severe hypoxaemia with a markedly increased alveolar-arterial oxygen gradient that does not improve despite a high fraction of inspired oxygen. Bilateral infiltrates are present on chest radiograph and there is no evidence of cardiac failure. Which condition best explains this?
 
-A. High altitude exposure
-B. Neuromuscular weakness causing hypoventilation
-C. Acute respiratory distress syndrome
-D. Opioid overdose causing hypoventilation
-E. Pure carbon monoxide poisoning
+A. Acute respiratory distress syndrome
+B. High altitude exposure
+C. Pure carbon monoxide poisoning
+D. Neuromuscular weakness causing hypoventilation
+E. Opioid overdose causing hypoventilation
 
-ANSWER: C. Acute respiratory distress syndrome
+ANSWER: A. Acute respiratory distress syndrome
 
 EXPLAIN:
 **ARDS = shunt รุนแรง** จาก alveoli ที่เต็มไปด้วยของเหลวและ atelectasis → **A-a gradient กว้างมากและ refractory ต่อการให้ออกซิเจน**
@@ -1613,13 +1613,13 @@ NL: B6.1.2(4) Gas diffusion and gas exchange · B6.2.5(1) Respiratory failure (h
 
 A 36-year-old woman with HIV infection presents with 2 weeks of progressive exertional dyspnoea, low-grade fever and dry cough. Examination: BT 38 C, PR 130/min, RR 30/min, mild pallor, oral hairy leukoplakia, normal breath sounds with no adventitious sounds. ABG on room air: pH 7.45, PaO2 55 mmHg, PaCO2 30 mmHg, O2 saturation 80 percent. Apart from oxygen therapy, which treatment is most appropriate?
 
-A. Ceftriaxone plus ciprofloxacin
-B. Furosemide with fluid restriction
-C. Broad-spectrum antifungal therapy
-D. Cotrimoxazole plus systemic corticosteroid
+A. Cotrimoxazole plus systemic corticosteroid
+B. Broad-spectrum antifungal therapy
+C. Furosemide with fluid restriction
+D. Ceftriaxone plus ciprofloxacin
 E. Anti-tuberculous drugs
 
-ANSWER: D. Cotrimoxazole plus systemic corticosteroid
+ANSWER: A. Cotrimoxazole plus systemic corticosteroid
 
 EXPLAIN:
 ภาพคือ **PCP ที่รุนแรง**: ผู้ป่วย HIV (oral hairy leukoplakia บ่งภูมิคุ้มกันต่ำ), ไอแห้ง เหนื่อยเพิ่มขึ้นเป็นสัปดาห์, **ฟังปอดปกติแต่ hypoxaemia รุนแรง** (PaO2 55) ซึ่งเป็นลักษณะที่ "อาการกับการตรวจร่างกายไม่เข้ากัน"
@@ -1720,12 +1720,12 @@ NL: B6.2.5(1) Respiratory failure (hypoventilation, hyperventilation, disorders 
 A 45-year-old man is brought to the emergency department confused and drowsy. Arterial blood gas: PaO2 170 mmHg (on supplemental oxygen), PaCO2 56 mmHg, pH 7.28. He has a 15 pack-year smoking history and pulmonary function testing 3 months ago showed severe airway obstruction. What is the most likely cause of his hypercapnic respiratory failure?
 
 A. Cardiogenic pulmonary oedema
-B. Acute pneumonia
-C. Right-to-left intracardiac shunt
-D. Acute pulmonary embolism
-E. Chronic obstructive pulmonary disease with excessive oxygen administration
+B. Chronic obstructive pulmonary disease with excessive oxygen administration
+C. Acute pneumonia
+D. Right-to-left intracardiac shunt
+E. Acute pulmonary embolism
 
-ANSWER: E. Chronic obstructive pulmonary disease with excessive oxygen administration
+ANSWER: B. Chronic obstructive pulmonary disease with excessive oxygen administration
 
 EXPLAIN:
 เบาะแสสำคัญคือ **PaO2 สูงถึง 170 mmHg** ซึ่ง **สูงเกินความจำเป็น** ในผู้ป่วยที่มี severe airway obstruction — บ่งว่าได้รับออกซิเจนมากเกินไป
@@ -1746,10 +1746,10 @@ NL: 3.3.17 Arterial blood gas analysis · 2.2.9 Acute respiratory failure · B6.
 
 A patient becomes dyspnoeic 6 hours ago. Arterial blood gas on room air: pH 7.26, PaCO2 60 mmHg, HCO3 26 mEq/L, O2 saturation 80 percent. Which interpretation is correct?
 
-A. Acute metabolic acidosis without compensation
-B. Acute metabolic acidosis with respiratory compensation
-C. Chronic respiratory acidosis with full metabolic compensation
-D. Chronic metabolic acidosis with respiratory compensation
+A. Acute metabolic acidosis with respiratory compensation
+B. Acute metabolic acidosis without compensation
+C. Chronic metabolic acidosis with respiratory compensation
+D. Chronic respiratory acidosis with full metabolic compensation
 E. Acute respiratory acidosis with minimal metabolic compensation
 
 ANSWER: E. Acute respiratory acidosis with minimal metabolic compensation
@@ -1878,13 +1878,13 @@ NL: B6.1.2(3) Respiratory control: neural regulation, chemical regulation, and r
 
 An arterial blood gas shows pH 7.15, PaCO2 30 mmHg and HCO3 10 mEq/L. Which acid-base disorder is present?
 
-A. Mixed respiratory alkalosis and metabolic alkalosis
-B. Metabolic alkalosis with respiratory compensation
-C. Respiratory alkalosis with metabolic compensation
-D. Mixed metabolic acidosis and respiratory acidosis
-E. Metabolic acidosis with appropriate respiratory compensation
+A. Mixed metabolic acidosis and respiratory acidosis
+B. Respiratory alkalosis with metabolic compensation
+C. Metabolic alkalosis with respiratory compensation
+D. Metabolic acidosis with appropriate respiratory compensation
+E. Mixed respiratory alkalosis and metabolic alkalosis
 
-ANSWER: D. Mixed metabolic acidosis and respiratory acidosis
+ANSWER: A. Mixed metabolic acidosis and respiratory acidosis
 
 EXPLAIN:
 ไล่เป็นขั้น: **pH 7.15 → acidaemia รุนแรง**; **HCO3 10 ต่ำมาก → primary metabolic acidosis**; PaCO2 30 ต่ำกว่าปกติ จึงไม่ใช่ต้นเหตุของกรด
@@ -1910,13 +1910,13 @@ NL: 3.3.17 Arterial blood gas analysis · B6.3(2) Arterial blood gas analysis ·
 
 A 60-year-old man with chronic obstructive pulmonary disease presents with worsening dyspnoea. Arterial blood gas: pH 7.30, PaCO2 80 mmHg, HCO3 38 mEq/L. Which interpretation is correct?
 
-A. Acute-on-chronic respiratory acidosis with partial metabolic compensation
+A. Primary metabolic alkalosis with respiratory compensation
 B. Fully compensated chronic respiratory acidosis
-C. Primary metabolic alkalosis with respiratory compensation
+C. Mixed respiratory acidosis and metabolic acidosis
 D. Pure acute respiratory acidosis
-E. Mixed respiratory acidosis and metabolic acidosis
+E. Acute-on-chronic respiratory acidosis with partial metabolic compensation
 
-ANSWER: A. Acute-on-chronic respiratory acidosis with partial metabolic compensation
+ANSWER: E. Acute-on-chronic respiratory acidosis with partial metabolic compensation
 
 EXPLAIN:
 **HCO3 38 บ่งว่าไตชดเชยมานานแล้ว (chronic)** — PaCO2 ขึ้น 40 จากปกติ ถ้าเป็น chronic เต็มที่ HCO3 ควรอยู่ราว 24 + (4 × 4) = **~40** ซึ่งใกล้เคียงกับ 38
@@ -2009,13 +2009,13 @@ NL: B6.1.2(3) Respiratory control: neural regulation, chemical regulation, and r
 
 A 56-year-old diabetic man presents with fever, productive cough and vomiting for 3 days. Vital signs: BT 38.5 C, PR 110/min, RR 28/min, BP 95/55 mmHg, moderate dehydration, crepitations at the lower lung. Laboratory results: blood sugar 128 mg/dL, BUN 14, creatinine 1.0 mg/dL, Na 140, K 4.1, Cl 78, HCO3 15 mEq/L, albumin 4.0 g/dL. ABG: pH 7.50, PaO2 70 mmHg, PaCO2 20 mmHg. What best describes the acid-base abnormality?
 
-A. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and normal anion gap metabolic acidosis from vomiting
-B. High anion gap metabolic acidosis from lactic acidosis alone
-C. Respiratory acidosis from pneumonia
+A. Respiratory acidosis from pneumonia
+B. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and normal anion gap metabolic acidosis from vomiting
+C. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and high anion gap metabolic acidosis from lactic acidosis
 D. Respiratory alkalosis from pneumonia and high anion gap metabolic acidosis from lactic acidosis
-E. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and high anion gap metabolic acidosis from lactic acidosis
+E. High anion gap metabolic acidosis from lactic acidosis alone
 
-ANSWER: E. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and high anion gap metabolic acidosis from lactic acidosis
+ANSWER: C. Respiratory alkalosis from pneumonia, metabolic alkalosis from vomiting and high anion gap metabolic acidosis from lactic acidosis
 
 EXPLAIN:
 **กับดักที่ใหญ่ที่สุดของข้อนี้: pH 7.50 เป็นด่าง แต่ผู้ป่วยมี metabolic acidosis รุนแรงซ่อนอยู่** — ถ้าหยุดอ่านที่ pH จะพลาดทั้งหมด
@@ -2136,12 +2136,12 @@ NL: 3.3.17 Arterial blood gas analysis · B6.3(2) Arterial blood gas analysis ·
 A patient with diabetic ketoacidosis has an arterial blood gas showing pH 7.26, PaCO2 23 mmHg and HCO3 10 mEq/L, with Na 140, Cl 100 mEq/L. Which interpretation is correct?
 
 A. Primary respiratory alkalosis with metabolic compensation
-B. High anion gap metabolic acidosis with appropriate respiratory compensation
-C. High anion gap metabolic acidosis with superimposed respiratory acidosis
+B. High anion gap metabolic acidosis with superimposed respiratory acidosis
+C. Normal anion gap metabolic acidosis with respiratory compensation
 D. Mixed metabolic acidosis and metabolic alkalosis
-E. Normal anion gap metabolic acidosis with respiratory compensation
+E. High anion gap metabolic acidosis with appropriate respiratory compensation
 
-ANSWER: B. High anion gap metabolic acidosis with appropriate respiratory compensation
+ANSWER: E. High anion gap metabolic acidosis with appropriate respiratory compensation
 
 EXPLAIN:
 **AG** = 140 − (100 + 10) = **30** → high anion gap metabolic acidosis (จาก ketoacid)

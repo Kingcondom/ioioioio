@@ -1,0 +1,201 @@
+[
+ {
+  "id": "ID-MCQ-01",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Septic shock – definition by Sepsis-3",
+  "stem": "A 68-year-old man with fever and dysuria is brought to the emergency department. After 30 mL/kg of balanced crystalloid his blood pressure remains 78/44 mmHg, and norepinephrine is started to keep the mean arterial pressure at 65 mmHg. Serum lactate is 4.2 mmol/L. Urine culture later grows Escherichia coli. Which term most accurately describes his condition?",
+  "choices": [
+   "Septic shock, because vasopressor is required to maintain mean arterial pressure at least 65 mmHg and lactate remains above 2 mmol/L after adequate fluid resuscitation",
+   "Severe sepsis, because there is organ dysfunction but the blood pressure responded to treatment",
+   "Sepsis without shock, because the mean arterial pressure is now 65 mmHg on treatment",
+   "Systemic inflammatory response syndrome secondary to urinary tract infection",
+   "Refractory septic shock, because lactate is above 4 mmol/L"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — การติดเชื้อกระตุ้นให้ร่างกายหลั่งสารก่อการอักเสบจำนวนมาก ทำให้ **หลอดเลือดขยายตัวทั่วร่างกายและผนังหลอดเลือดรั่ว** ความดันจึงตก และ **เลือดไปเลี้ยงเนื้อเยื่อไม่พอ เซลล์จึงหันไปใช้การหายใจแบบไม่ใช้ออกซิเจน เกิดแลคเตทคั่ง** แลคเตทที่สูงจึงเป็นตัวบอกว่า *เนื้อเยื่อขาดออกซิเจนจริง* ไม่ใช่แค่ความดันตก\n\n**นิยาม Sepsis-3 (ใช้ตั้งแต่ปี 2016 และเป็นนิยามที่ออกสอบ)**\n\n| คำ | นิยาม |\n|---|---|\n| **Sepsis** | การติดเชื้อ + **อวัยวะทำงานผิดปกติ** (SOFA เพิ่มตั้งแต่ 2 คะแนน) |\n| **Septic shock** | Sepsis ที่ **ต้องใช้ยากระตุ้นความดันเพื่อคง MAP ตั้งแต่ 65 mmHg** *และ* **แลคเตทมากกว่า 2 mmol/L** ทั้งที่ **ให้สารน้ำเพียงพอแล้ว** |\n\nผู้ป่วยรายนี้เข้าครบทั้งสามเงื่อนไข — ให้สารน้ำ 30 mL/kg แล้ว · ยังต้องใช้ norepinephrine · แลคเตท 4.2 — จึงเป็น **septic shock** ซึ่งสำคัญเพราะอัตราตายต่างกันมาก (sepsis ราว 10% แต่ septic shock เกิน 40%)\n\n**ทำไมตัวลวงจึงผิด**\n- *Severe sepsis* — **ถูกยกเลิกไปแล้วใน Sepsis-3** เพราะคำว่า sepsis ในนิยามใหม่แปลว่ามีอวัยวะล้มเหลวอยู่ในตัวแล้ว การเติมคำว่า severe จึงซ้ำซ้อน\n- *Sepsis ที่ยังไม่ช็อก* — **ความดันที่ 65 นั้นได้มาด้วยยา ไม่ใช่ได้เอง** การที่ต้องพึ่งยาคือหัวใจของนิยาม septic shock\n- *SIRS* — เกณฑ์ SIRS (ไข้ ชีพจรเร็ว หายใจเร็ว เม็ดเลือดขาวผิดปกติ) **ถูกถอดออกจากนิยามแล้ว** เพราะไวเกินไป ผู้ป่วยที่ไม่ได้ติดเชื้อจำนวนมากก็เข้าเกณฑ์\n- *Refractory septic shock* — หมายถึงช็อกที่ **ไม่ตอบสนองต่อยากระตุ้นความดันขนาดสูง** ไม่ได้นิยามด้วยระดับแลคเตท",
+  "pearl": "Septic shock = ต้องใช้ vasopressor คง MAP 65 + lactate มากกว่า 2 ทั้งที่ให้สารน้ำพอแล้ว — คำว่า severe sepsis ถูกยกเลิกไปแล้ว",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.7",
+   "2.3.1",
+   "2.1.1"
+  ]
+ },
+ {
+  "id": "ID-MCQ-02",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Sepsis – blood culture before antibiotics and time to first dose",
+  "stem": "A 55-year-old woman arrives at 02.00 with fever, confusion and blood pressure 86/50 mmHg. The nurse has secured two large-bore intravenous lines. Blood culture bottles are available at the bedside and the pharmacy can deliver meropenem in about 10 minutes. What is the most appropriate sequence of care?",
+  "choices": [
+   "Draw two sets of blood cultures now and give the antibiotic as soon as it arrives, aiming for administration within 1 hour of recognition",
+   "Give the antibiotic immediately and omit blood cultures, because cultures rarely change management in septic shock",
+   "Wait for the fever to spike again before drawing blood cultures, since yield is highest at the peak of fever",
+   "Delay the antibiotic until computed tomography has identified the source of infection",
+   "Draw blood cultures and wait for the Gram stain result before choosing an antibiotic"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — ในภาวะพิษเหตุติดเชื้อ **ทุกชั่วโมงที่ยาต้านจุลชีพช้าลง อัตราตายเพิ่มขึ้นอย่างมีนัยสำคัญ** เพราะเชื้อในกระแสเลือดยังเพิ่มจำนวนและปล่อยสารกระตุ้นการอักเสบต่อเนื่อง ขณะเดียวกัน **ยาต้านจุลชีพเพียงโดสเดียวสามารถทำให้เพาะเชื้อไม่ขึ้นได้ภายในไม่กี่ชั่วโมง** ผลเพาะเชื้อจึงต้องเก็บ *ก่อน* ให้ยา\n\nสองอย่างนี้ไม่ได้ขัดกัน เพราะ **การเจาะเลือดเพาะเชื้อใช้เวลาไม่กี่นาที** แนวทางจึงกำหนดว่า\n- **เก็บ hemoculture 2 ชุดจากคนละตำแหน่ง ก่อนให้ยา** — ตราบใดที่ **ไม่ทำให้การให้ยาช้าเกิน 45 นาที**\n- **ให้ยาต้านจุลชีพภายใน 1 ชั่วโมง** นับจากที่รู้ว่าเป็น septic shock\n\nกรณีนี้ทั้งเส้นเลือดและขวดเพาะเชื้อพร้อมอยู่ข้างเตียง ยามาถึงใน 10 นาที จึงทำได้ทั้งคู่โดยไม่เสียเวลา\n\n**ทำไมตัวลวงจึงผิด**\n- *ให้ยาเลยโดยไม่เพาะเชื้อ* — เสียโอกาสรู้เชื้อและความไวต่อยาอย่างถาวร ซึ่งจำเป็นต่อการ **ลดระดับยา (de-escalation)** ในวันถัดไป\n- *รอให้ไข้ขึ้นก่อนเจาะ* — เป็นความเชื่อเก่า ปัจจุบันถือว่า **ในผู้ป่วยที่มีเชื้อในกระแสเลือดต่อเนื่อง ผลเพาะเชื้อขึ้นได้โดยไม่ขึ้นกับจังหวะไข้** และการรอคือการผัดยาออกไปโดยเปล่าประโยชน์\n- *รอผล CT ก่อนให้ยา* — การหาตำแหน่งต้นเหตุสำคัญมาก แต่ **ทำคู่ขนานไปกับการให้ยา ไม่ใช่ทำก่อนให้ยา**\n- *รอผล Gram stain* — ย้อมเชื้อจากเลือดไม่ได้ผลทันที ต้องรอให้ขวดเพาะเชื้อขึ้นก่อน ซึ่งใช้เวลาเป็นชั่วโมงถึงวัน",
+  "pearl": "เจาะ hemoculture 2 ชุดก่อนให้ยาได้ ถ้าไม่ทำให้ยาช้าเกิน 45 นาที — และยาต้องเข้าภายใน 1 ชั่วโมงใน septic shock",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.7",
+   "2.3.1"
+  ]
+ },
+ {
+  "id": "ID-MCQ-03",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Sepsis – initial fluid resuscitation and choice of fluid",
+  "stem": "A 60-kg man with septic shock from pneumonia has blood pressure 80/48 mmHg, heart rate 124/min and lactate 5 mmol/L. He has no history of heart failure. Which fluid strategy is most appropriate in the first 3 hours?",
+  "choices": [
+   "Balanced crystalloid about 1,800 mL given rapidly, then reassess perfusion before giving more",
+   "Hydroxyethyl starch 1,000 mL, because colloid stays in the intravascular space longer",
+   "Packed red cells 2 units, to raise oxygen delivery regardless of the haemoglobin level",
+   "5% dextrose in water 2,000 mL, to correct the intracellular deficit of shock",
+   "Restrict fluid to 500 mL and start norepinephrine immediately as the sole treatment"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — ใน septic shock หลอดเลือดขยายตัวและรั่ว ทำให้ **ปริมาตรเลือดที่ไหลเวียนได้จริงลดลง (relative hypovolaemia)** การเติมสารน้ำจึงเพิ่ม preload และ cardiac output ได้ในระยะแรก แนวทางกำหนดขนาดเริ่มต้นไว้ที่ **30 mL/kg ของ crystalloid ภายใน 3 ชั่วโมง** ผู้ป่วยหนัก 60 กก. จึงได้ 60 × 30 = **1,800 mL**\n\nคำสำคัญคือ **แล้วประเมินซ้ำ** — หลังโดสแรกต้องดูว่าผู้ป่วยยัง *ตอบสนองต่อสารน้ำ* หรือไม่ (ชีพจร ความดัน ปัสสาวะ แลคเตท การเปลี่ยนแปลงของ pulse pressure ตามการหายใจ หรืออัลตราซาวด์ IVC) เพราะ **การให้สารน้ำเกินในภาวะที่ผนังหลอดเลือดรั่ว ทำให้เกิดน้ำท่วมปอดและบวมทั่วตัว ซึ่งเพิ่มอัตราตาย**\n\n**เลือกชนิดไหน** — ใช้ **balanced crystalloid** (Ringer's lactate, Acetar) เป็นตัวเลือกแรก เพราะ **0.9% NaCl ปริมาณมากทำให้เกิด hyperchloraemic metabolic acidosis และสัมพันธ์กับการบาดเจ็บของไต**\n\n**ทำไมตัวลวงจึงผิด**\n- *Hydroxyethyl starch* — **ห้ามใช้ใน sepsis** เพราะเพิ่มการบาดเจ็บของไตจนต้องฟอกเลือด และเพิ่มอัตราตาย\n- *ให้เลือดโดยไม่ดูฮีโมโกลบิน* — เกณฑ์ปัจจุบันคือ **ให้เมื่อ Hb ต่ำกว่า 7 g/dL** ในผู้ป่วยส่วนใหญ่ การให้เลือดพร่ำเพรื่อไม่ได้ช่วยและมีความเสี่ยงของมันเอง\n- *5% D/W* — เป็นน้ำเปล่าหลังกลูโคสถูกใช้หมด **กระจายเข้าเซลล์เกือบทั้งหมด เหลืออยู่ในหลอดเลือดน้อยมาก** จึงแก้ช็อกไม่ได้\n- *จำกัดสารน้ำแล้วใช้ยาบีบหลอดเลือดอย่างเดียว* — การบีบหลอดเลือดในคนที่ปริมาตรไม่พอ ยิ่งทำให้เลือดไปเลี้ยงอวัยวะน้อยลง",
+  "pearl": "30 mL/kg balanced crystalloid ใน 3 ชั่วโมงแรก แล้วประเมินซ้ำ — ห้ามใช้ starch ใน sepsis",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.7",
+   "2.3.1"
+  ]
+ },
+ {
+  "id": "ID-MCQ-04",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Septic shock – first-line vasopressor and target",
+  "stem": "A patient with septic shock remains hypotensive with a mean arterial pressure of 52 mmHg after adequate crystalloid. Which vasoactive agent and target is most appropriate first?",
+  "choices": [
+   "Norepinephrine titrated to a mean arterial pressure of 65 mmHg",
+   "Dopamine titrated to a mean arterial pressure of 65 mmHg, because it also protects the kidney",
+   "Dobutamine titrated to a systolic blood pressure of 90 mmHg",
+   "Phenylephrine titrated to a mean arterial pressure of 85 mmHg",
+   "Vasopressin as a single agent titrated to a mean arterial pressure of 65 mmHg"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — ปัญหาหลักของ septic shock คือ **หลอดเลือดขยายตัวจนความต้านทานส่วนปลายต่ำ (vasodilatory shock)** ยาที่ต้องการจึงเป็นตัวที่ **บีบหลอดเลือดได้แรง** โดยไม่ทำให้หัวใจเต้นเร็วเกินไป\n\n**Norepinephrine** ออกฤทธิ์เด่นที่ **α₁ ซึ่งบีบหลอดเลือด** และมีฤทธิ์ **β₁ เล็กน้อย** ช่วยพยุงการบีบตัวของหัวใจไว้บ้าง จึงเป็น **ยาตัวแรกของ septic shock** และ **MAP 65 mmHg** คือเป้าหมายมาตรฐาน เพราะเป็นระดับที่พอให้เลือดไหลเวียนอวัยวะสำคัญ ขณะที่การดันให้สูงกว่านี้ **ไม่ได้ลดอัตราตาย แต่เพิ่มภาวะหัวใจเต้นผิดจังหวะ**\n\n**ทำไมตัวลวงจึงผิด**\n- *Dopamine* — ทำให้ **หัวใจเต้นผิดจังหวะมากกว่า norepinephrine อย่างชัดเจน** และแนวคิดที่ว่า renal dose dopamine ป้องกันไต **ถูกพิสูจน์แล้วว่าไม่จริง**\n- *Dobutamine* — เป็น β₁ agonist เด่น **เพิ่มแรงบีบตัวแต่ขยายหลอดเลือดส่วนปลาย** จึงอาจทำให้ความดันยิ่งตก ใช้เมื่อสงสัย **sepsis-induced cardiomyopathy คือเติมสารน้ำและให้ norepinephrine แล้วยังมี cardiac output ต่ำ** ไม่ใช่ยาตัวแรก\n- *Phenylephrine เป้าหมาย MAP 85* — เป็น α₁ ล้วน ทำให้ **หัวใจเต้นช้าลงแบบสะท้อนกลับและ cardiac output ลด** และ **เป้าหมาย 85 สูงเกินความจำเป็น** (พิจารณาเป้าสูงขึ้นเฉพาะผู้ป่วยความดันสูงเรื้อรังบางราย)\n- *Vasopressin เดี่ยว ๆ* — ใช้เป็น **ยาเสริมตัวที่สอง** เพื่อลดขนาด norepinephrine ไม่ใช้เป็นยาเดี่ยวเริ่มต้น",
+  "pearl": "Norepinephrine คือยาตัวแรกของ septic shock เป้า MAP 65 — dopamine ทำให้ arrhythmia มากกว่า และ renal dose dopamine ไม่มีจริง",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.7"
+  ]
+ },
+ {
+  "id": "ID-MCQ-05",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Source control in sepsis",
+  "stem": "A 58-year-old diabetic man has septic shock. Computed tomography shows a 9-cm liver abscess. He has received appropriate intravenous antibiotics, fluid and norepinephrine, but 12 hours later he still has fever and a rising lactate. What is the most important next step?",
+  "choices": [
+   "Percutaneous drainage of the abscess as soon as possible",
+   "Broaden the antibiotic to include vancomycin and continue medical therapy alone",
+   "Add intravenous immunoglobulin",
+   "Increase norepinephrine to target a mean arterial pressure of 80 mmHg",
+   "Repeat computed tomography in 72 hours before deciding on any procedure"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — ยาต้านจุลชีพต้องอาศัย **เลือดพาไปถึงเชื้อ** แต่ในโพรงหนอง **ไม่มีหลอดเลือด** ยาจึงเข้าไปได้น้อยมาก ยิ่งกว่านั้น **ภายในหนองมีค่า pH ต่ำ ออกซิเจนต่ำ และเชื้อหนาแน่นจนอยู่ในระยะเจริญช้า** ซึ่งเป็นสภาวะที่ทำให้ยาหลายกลุ่มเสียฤทธิ์ (โดยเฉพาะ aminoglycoside) **ตราบใดที่ยังไม่ระบายหนอง การให้ยาแรงขึ้นก็ไม่ชนะ**\n\nหลักการนี้เรียกว่า **source control** — การกำจัดต้นตอทางกายภาพ ได้แก่ **ระบายหนอง · ตัดเนื้อตาย · เอาสายสวนที่ติดเชื้อออก · แก้ทางเดินน้ำดีหรือปัสสาวะที่อุดตัน** แนวทางกำหนดให้ทำ **โดยเร็วที่สุดเท่าที่ทำได้ โดยทั่วไปภายใน 6 ถึง 12 ชั่วโมงหลังวินิจฉัย**\n\n**สัญญาณในโจทย์ที่ชี้ว่าต้องทำ source control** คือ **ให้ยาเหมาะสมแล้วแต่ยังมีไข้และแลคเตทสูงขึ้น** ซึ่งเป็นภาพคลาสสิกของต้นตอที่ยังอยู่\n\n**ทำไมตัวลวงจึงผิด**\n- *ขยายยาไปคลุม MRSA แล้วรักษาด้วยยาอย่างเดียว* — ฝีตับในผู้ป่วยเบาหวานไทยมักเป็น *Klebsiella pneumoniae* ไม่ใช่ MRSA และที่สำคัญกว่าคือ **ยาเข้าโพรงหนองไม่ได้อยู่ดี**\n- *IVIG* — ไม่ใช่การรักษามาตรฐานของ septic shock ทั่วไป\n- *ดัน MAP ถึง 80* — ไม่ได้แก้ต้นเหตุ และเป้าหมายที่สูงขึ้นไม่ลดอัตราตาย\n- *รอ CT ซ้ำอีก 72 ชั่วโมง* — เป็นการปล่อยให้ผู้ป่วยอยู่ในภาวะช็อกต่ออีกสามวันทั้งที่รู้ต้นตอแล้ว",
+  "pearl": "ให้ยาเหมาะสมแล้วยังไข้และแลคเตทไม่ลง ให้คิดถึง source control ก่อนคิดเปลี่ยนยา — ยาเข้าโพรงหนองไม่ได้",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.7",
+   "2.3.1"
+  ]
+ },
+ {
+  "id": "ID-MCQ-06",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Empirical therapy and de-escalation – predicting an ESBL producer",
+  "stem": "A 72-year-old woman develops fever and hypotension on day 10 of hospitalisation for a fractured hip. She has an indwelling urinary catheter and received ceftriaxone for a urinary tract infection 3 weeks ago. Urine Gram stain shows Gram-negative bacilli. Which empirical regimen is most appropriate while awaiting culture?",
+  "choices": [
+   "A carbapenem, because recent third-generation cephalosporin use, a urinary catheter and hospital onset all predict an extended-spectrum beta-lactamase producer",
+   "Ceftriaxone again, because it worked for her urinary infection 3 weeks ago",
+   "Oral ciprofloxacin, because it concentrates well in urine",
+   "Vancomycin alone, to cover resistant organisms",
+   "Amoxicillin-clavulanate, because it covers beta-lactamase producing organisms"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — **Extended-spectrum beta-lactamase (ESBL)** คือเอนไซม์ที่แบคทีเรียแกรมลบสร้างขึ้นเพื่อ **ทำลายวงแหวนเบต้าแลคแทมของเพนิซิลลินและเซฟาโลสปอรินทุกรุ่น รวมทั้ง ceftriaxone และ ceftazidime** แต่ **ไม่ทำลายคาร์บาพีเนม** ยากลุ่มคาร์บาพีเนมจึงเป็นทางเลือกเมื่อสงสัย ESBL ในผู้ป่วยที่กำลังช็อก\n\n**ปัจจัยเสี่ยงของ ESBL ที่ปรากฏครบในโจทย์**\n- **เพิ่งได้เซฟาโลสปอรินรุ่นที่ 3 ภายใน 90 วัน** — แรงกดดันการคัดเลือกเชื้อโดยตรง\n- **คาสายสวนปัสสาวะ** — สร้าง biofilm และเป็นทางเข้าของเชื้อประจำโรงพยาบาล\n- **เริ่มมีอาการหลังนอนโรงพยาบาลเกิน 48 ชั่วโมง (วันที่ 10)** — จัดเป็นการติดเชื้อในโรงพยาบาล\n- **อายุมากและนอนโรงพยาบาลนาน**\n\nหลักที่ต้องจำคู่กันคือ **เริ่มกว้างเมื่อผู้ป่วยกำลังช็อก แล้วลดให้แคบที่สุดเมื่อผลเพาะเชื้อและความไวออก (de-escalation)** — การเริ่มแคบเกินไปในคนช็อกเพิ่มอัตราตาย แต่การไม่ยอมลดยาลงเลยสร้างเชื้อดื้อยารุ่นถัดไป\n\n**ทำไมตัวลวงจึงผิด**\n- *ให้ ceftriaxone ซ้ำ* — **ยาตัวเดิมที่เพิ่งใช้คือเหตุผลที่ต้องสงสัยเชื้อดื้อ ไม่ใช่เหตุผลที่จะใช้ซ้ำ**\n- *Ciprofloxacin ชนิดกิน* — ผู้ป่วยกำลังช็อก **การดูดซึมทางเดินอาหารเชื่อถือไม่ได้** และ E. coli ที่สร้าง ESBL **ดื้อ fluoroquinolone ร่วมด้วยเป็นส่วนใหญ่**\n- *Vancomycin เดี่ยว* — คลุมเฉพาะแกรมบวก แต่ย้อมสีพบ **แกรมลบ** จึงไม่คลุมเชื้อก่อโรคเลย\n- *Amoxicillin-clavulanate* — clavulanate ยับยั้งเบต้าแลคทาเมสธรรมดาได้ แต่ **ไม่น่าเชื่อถือในการติดเชื้อรุนแรงจาก ESBL** และฤทธิ์ไม่พอสำหรับผู้ป่วยช็อก",
+  "pearl": "เพิ่งได้ ceftriaxone + คาสายสวน + ติดเชื้อในโรงพยาบาล = สงสัย ESBL ให้เริ่มคาร์บาพีเนม แล้ว de-escalate เมื่อผลความไวออก",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1",
+   "2.1.40"
+  ]
+ },
+ {
+  "id": "ID-MCQ-07",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Staphylococcus aureus bacteraemia – mandatory work-up and duration",
+  "stem": "Two sets of blood cultures from a 46-year-old haemodialysis patient grow methicillin-sensitive Staphylococcus aureus. He is afebrile after 2 days of cloxacillin and asks to go home on oral antibiotics. Which management is most appropriate?",
+  "choices": [
+   "Continue intravenous therapy, remove or exchange the infected catheter, repeat blood cultures to document clearance, and perform echocardiography to look for endocarditis",
+   "Switch to oral cloxacillin for 7 days since he has defervesced",
+   "Stop antibiotics once two consecutive cultures are negative, as the source was transient",
+   "Keep the same catheter and give vancomycin instead, because he is on dialysis",
+   "Treat with a single dose of daptomycin and discharge"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — *Staphylococcus aureus* **ไม่เคยเป็นเชื้อปนเปื้อนเมื่อขึ้นในกระแสเลือด** เชื้อนี้ **เกาะติดลิ้นหัวใจ กระดูก ข้อ และวัสดุเทียมได้ดีมาก** ผ่านโปรตีนยึดเกาะบนผิวเชื้อ ทำให้เกิด **จุดติดเชื้อแฝง (metastatic foci)** ที่แม้ไข้ลงแล้วก็ยังอยู่ ผู้ป่วยจึงกลับมาเป็นซ้ำรุนแรงถ้ารักษาสั้นเกินไป\n\n**สิ่งที่ต้องทำครบทุกครั้งเมื่อ hemoculture ขึ้น S. aureus**\n1. **เอาสิ่งแปลกปลอมที่น่าจะเป็นต้นตอออก** เช่น สายฟอกเลือด หรือสายสวนหลอดเลือดดำส่วนกลาง\n2. **เพาะเลือดซ้ำทุก 48 ถึง 72 ชั่วโมงจนได้ผลลบ** เพื่อกำหนดวันเริ่มนับการรักษา และจับกรณีที่เชื้อไม่หายจากกระแสเลือด\n3. **ทำ echocardiography** เพื่อหาการติดเชื้อที่ลิ้นหัวใจ (นิยม transoesophageal ในผู้ป่วยฟอกไต เพราะความเสี่ยงสูงและภาพ transthoracic มักไม่ชัดพอ)\n4. **ให้ยาทางหลอดเลือดดำ** อย่างน้อย **2 สัปดาห์** ในกรณีไม่ซับซ้อน และ **4 ถึง 6 สัปดาห์** ถ้ามีเยื่อบุหัวใจอักเสบ กระดูกอักเสบ หรือเลือดยังขึ้นเชื้อ\n5. **ถ้าเป็น MSSA ให้ใช้ cloxacillin หรือ cefazolin** ซึ่ง **ได้ผลดีกว่า vancomycin อย่างชัดเจน**\n\n**ทำไมตัวลวงจึงผิด**\n- *เปลี่ยนเป็นยากิน 7 วัน* — สั้นเกินไปมาก และ **ไข้ลงไม่ได้แปลว่าไม่มีจุดติดเชื้อแฝง**\n- *หยุดยาเมื่อเพาะเลือดไม่ขึ้น* — ผลลบบอกเพียงว่ากระแสเลือดสะอาด **ไม่ได้บอกว่าลิ้นหัวใจหรือกระดูกสะอาด**\n- *คาสายเดิมไว้แล้วเปลี่ยนเป็น vancomycin* — ผิดสองชั้น คือ **ไม่เอาต้นตอออก** และ **ใช้ยาที่ด้อยกว่าสำหรับ MSSA**\n- *Daptomycin โดสเดียว* — ไม่มีการรักษาแบบโดสเดียวสำหรับภาวะนี้",
+  "pearl": "S. aureus ขึ้นในเลือด = เอาสายออก · เพาะเลือดซ้ำจนลบ · ทำ echo · ให้ยา IV อย่างน้อย 2 สัปดาห์ และ MSSA ใช้ cloxacillin ไม่ใช่ vancomycin",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1",
+   "3.3.23"
+  ]
+ },
+ {
+  "id": "ID-MCQ-08",
+  "lec": "I01",
+  "lecture": "โรคติดเชื้อ: ภาวะพิษเหตุติดเชื้อและหลักการใช้ยาต้านจุลชีพ (ยังไม่ระบุคาบ)",
+  "topic": "Antimicrobial pharmacodynamics – time-dependent versus concentration-dependent killing",
+  "stem": "A patient with Pseudomonas aeruginosa pneumonia is receiving meropenem. The team wants to improve the probability of bacteriological cure without increasing the total daily dose. Which change is most rational?",
+  "choices": [
+   "Give each dose as an extended 3-hour infusion, because beta-lactam killing depends on the time the free drug concentration stays above the minimum inhibitory concentration",
+   "Give the whole daily dose once a day as a rapid bolus, because beta-lactams kill better at high peak concentrations",
+   "Add rifampicin to the beta-lactam routinely to exploit synergy",
+   "Change to a once-daily aminoglycoside as monotherapy, since aminoglycosides are concentration dependent",
+   "Shorten the course to 3 days, because shorter courses always reduce resistance"
+  ],
+  "answer": 0,
+  "explain": "**ไล่กลไก** — ยาต้านจุลชีพฆ่าเชื้อด้วยรูปแบบทางเภสัชพลศาสตร์ที่ต่างกัน และรูปแบบนี้เป็นตัวกำหนดว่าควรให้ยาถี่ ๆ หรือให้ครั้งเดียวขนาดสูง\n\n| รูปแบบ | ตัวอย่างยา | ตัวชี้วัด | วิธีให้ยาที่เหมาะ |\n|---|---|---|---|\n| **ขึ้นกับเวลา** | เบต้าแลคแทมทั้งหมด (เพนิซิลลิน เซฟาโลสปอริน คาร์บาพีเนม) | **%T มากกว่า MIC** | **ให้ถี่ขึ้น หรือยืดเวลาหยดยา** |\n| **ขึ้นกับความเข้มข้น** | aminoglycoside · fluoroquinolone | **Cmax/MIC และ AUC/MIC** | **ให้ครั้งเดียวขนาดสูงต่อวัน** |\n| **ขึ้นกับปริมาณยารวม** | vancomycin · azithromycin | **AUC/MIC** | คุมพื้นที่ใต้กราฟรวมทั้งวัน |\n\nเบต้าแลคแทมจับกับ **penicillin-binding protein เพื่อขัดขวางการสร้างผนังเซลล์** และการฆ่าจะเกิดต่อเนื่องเฉพาะ **ตอนที่ยังมียาอิสระอยู่เหนือ MIC** การเพิ่มยอดสูงสุดจึงไม่ช่วยอะไร แต่ **การยืดเวลาหยดยาเป็น 3 ชั่วโมง ทำให้ช่วงเวลาที่ยาอยู่เหนือ MIC ยาวขึ้นโดยใช้ยาเท่าเดิม** ซึ่งเห็นประโยชน์ชัดที่สุดในเชื้อที่ MIC สูงอย่าง *Pseudomonas*\n\n**ทำไมตัวลวงจึงผิด**\n- *รวมเป็นโดสเดียวฉีดเร็ว* — ได้ยอดสูงแต่ **ช่วงท้ายของวันยาต่ำกว่า MIC นานมาก** ซึ่งตรงข้ามกับหลักของเบต้าแลคแทม\n- *เติม rifampicin เป็นกิจวัตร* — rifampicin มีที่ใช้เฉพาะบางกรณี เช่น การติดเชื้อที่วัสดุเทียม **ไม่ใช่ยาเสริมประจำของเบต้าแลคแทม** และเป็นตัวเหนี่ยวนำเอนไซม์ตับที่ทำให้ระดับยาอื่นตก\n- *ใช้ aminoglycoside เดี่ยว* — จริงที่เป็นยาแบบขึ้นกับความเข้มข้น แต่ **ระดับยาในเนื้อปอดต่ำ และเป็นพิษต่อไตและหู** จึงไม่ใช้เดี่ยวรักษาปอดอักเสบ\n- *ลดเหลือ 3 วัน* — การรักษาสั้นลงมีหลักฐานรองรับในบางโรค แต่ **ไม่ใช่กฎสากล** และสั้นเกินไปสำหรับปอดอักเสบจาก Pseudomonas",
+  "pearl": "เบต้าแลคแทมฆ่าเชื้อตาม %T มากกว่า MIC จึงยืดเวลาหยดยาช่วยได้โดยไม่ต้องเพิ่มขนาด ส่วน aminoglycoside และ quinolone ขึ้นกับ Cmax/MIC จึงให้วันละครั้ง",
+  "ref": [
+   "เขียนใหม่ตามขอบเขต NL ขั้นตอนที่ 1 และแนวทาง Surviving Sepsis Campaign 2021 — ยังไม่มีสไลด์บรรยายของคาบนี้ในชุด"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1"
+  ]
+ }
+]
