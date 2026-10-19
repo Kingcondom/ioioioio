@@ -15,7 +15,7 @@
   บางส่วน = แตะเรื่องนั้น: คำโปรย/สรุปหัวข้อใน learn, ข้อสอบใน learn/drill (ชื่อข้อหรือรหัส nl)
            หรือคำบรรยายของบทในห้องสมุด
 """
-import json, os, re, sys
+import datetime, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -217,7 +217,9 @@ def main(learn_dir, bank_path, lib_path, salmon_dir=None):
     keyed(strong, ("L", "S", "B"))
     keyed(weak, ("D",))
     src = {k: {i: sorted(v, key=key) for i, v in sorted(d.items())} for k, d in src.items()}
-    out = {"asof": "13 ต.ค. 2569", "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows,
+    _t = datetime.date.today()
+    _m = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."][_t.month - 1]
+    out = {"asof": "%d %s %d" % (_t.day, _m, _t.year + 543), "groups": [[g, n] for g, n, _ in GROUPS], "rows": rows,
            "qtotal": len(Q), "qsrc": {k: [nsrc[k], len(per[k])] for k in per}, "src": src,
            "names": {k: {i: n for i, n in sorted(d.items()) if i in src[k]} for k, d in names.items()}}
     path = os.path.join(HERE, "nl_data.json")
