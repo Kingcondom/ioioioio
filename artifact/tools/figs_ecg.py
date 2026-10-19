@@ -228,25 +228,25 @@ def lewis():
 
 # ───────────────────────────── 3. rate
 def rate_count():
-    times = [0.2 + 0.8 * i for i in range(5)]
-    s, X, yb = strip(10, 30, 4.0, rhythm(times), h_mm=18)
+    times = [0.2 + 0.8 * i for i in range(4)]
+    s, X, yb = strip(10, 34, 3.2, rhythm(times), h_mm=18, k=5)
     out = [s]
     labs = ["R", "300", "150", "100", "75", "60", "50"]
     for i, lab in enumerate(labs):
         x = X(0.2 + 0.2 * i)
-        out += [line(x, 22, x, 30, "lac"), t(x, 18, lab, "xs b mid " + ("tbad" if lab == "75" else "tac"))]
-    out += [t(10, 130, "R ตัวถัดไปตกที่เส้นใหญ่เส้นที่ 4 → 75/นาที  (= 300 ÷ 4 ช่องใหญ่ = 1500 ÷ 20 ช่องเล็ก)", "xs i2"),
-            t(10, 150, "จังหวะไม่สม่ำเสมอ: นับ QRS ในแถบ 6 วินาที (30 ช่องใหญ่) × 10", "xs i2")]
+        out += [line(x, 24, x, 34, "lac"), t(x, 19, lab, "xs b mid " + ("tbad" if lab == "75" else "tac"))]
+    out += [t(10, 146, "R ตัวถัดไปตกที่เส้นใหญ่เส้นที่ 4 → 75/นาที  (= 300 ÷ 4 ช่องใหญ่ = 1500 ÷ 20 ช่องเล็ก)", "xs i2"),
+            t(10, 166, "จังหวะไม่สม่ำเสมอ: นับ QRS ในแถบ 6 วินาที (30 ช่องใหญ่) × 10", "xs i2")]
     return fig("นับ rate: 300 / ช่องใหญ่ · 1500 / ช่องเล็ก",
                "กระดาษวิ่ง 25 mm/s → 1 ช่องใหญ่ = 0.2 s → ใน 1 นาทีมี **300 ช่องใหญ่** · ถ้า R ห่างกัน n ช่องใหญ่ HR = 300/n · "
                "เลขจำ (golden number ที่จดในสไลด์) **300 – 150 – 100 – 75 – 60 – 50** · ต้องการละเอียดใช้ 1500/ช่องเล็ก · "
                "จังหวะไม่สม่ำเสมอ (AF) ใช้ 6 วินาที × 10 (ตัวอย่างในสไลด์ 13 × 6 = 78 ใช้แถบ 10 วินาที)",
-               svg(420, 160, "แถบ ECG 75 ครั้งต่อนาทีพร้อมเลข 300 150 100 75 60 50 บนเส้นช่องใหญ่", *out))
+               svg(420, 176, "แถบ ECG 75 ครั้งต่อนาทีพร้อมเลข 300 150 100 75 60 50 บนเส้นช่องใหญ่", *out))
 
 
 def rate_bands():
     X = lambda v: 20 + v * 1.0
-    segs = [(0, 60, "bad", "brady\n< 60"), (60, 100, "ok", "ปกติ\n60–100"), (100, 250, "ms", "tachycardia\n101–250"),
+    segs = [(0, 60, "bad", "brady\n< 60"), (60, 100, "ok", "ปกติ"), (100, 250, "ms", "tachycardia\n101–250"),
             (250, 350, "ac", "flutter\n250–350"), (350, 400, "bad", "fib\n> 350")]
     out = []
     for a, b, c, s in segs:
@@ -401,12 +401,12 @@ def acls():
            ar(240, 114, 150, 150, "lok", "ah-ok"), t(178, 132, "ไม่", "xs tok"),
            box(20, 150, 180, 40, "bx", "stable → ดู QRS", "b", fs=12),
            ar(70, 190, 60, 212, "ln", "ah"), ar(150, 190, 230, 212, "ln", "ah"),
-           box(6, 212, 150, 82, "ok", None), t(81, 232, "แคบ + สม่ำเสมอ", "xs b mid tok"),
-           t(81, 250, "1 vagal maneuver", "xs mid"), t(81, 266, "2 adenosine 6 → 12 mg", "xs mid"),
-           t(81, 282, "IV push เร็ว + flush", "xs mid i2"),
+           box(6, 212, 150, 82, "ok", None), t(81, 230, "QRS แคบ", "xs b mid tok"),
+           t(81, 248, "สม่ำเสมอ: vagal →", "xs mid"), t(81, 264, "adenosine 6 → 12 mg", "xs mid"),
+           t(81, 284, "ไม่สม่ำเสมอ (AF): คุม rate", "xs mid i2"),
            box(176, 212, 238, 82, "ms", None), t(295, 232, "กว้าง (คิดว่า VT จนกว่าจะพิสูจน์)", "xs b mid tms"),
            t(295, 252, "amiodarone / procainamide", "xs mid"), t(295, 270, "พร้อม cardioversion · ปรึกษา", "xs mid i2"),
-           t(295, 286, "AF/flutter แคบ: คุม rate", "xs mid i2")]
+           t(295, 286, "(amiodarone 150 mg/10 นาที)", "xs mid i2")]
     return fig("Tachycardia ที่มีชีพจร vs ไม่มีชีพจร (AHA ACLS — ไม่อยู่ในสไลด์)",
                "คำถามแรกเสมอคือ **มีชีพจรไหม** · ไม่มี = cardiac arrest → CPR + **defibrillation แบบไม่ sync** · มีชีพจรแต่ไม่เสถียร "
                "(hypotension, สับสน, ischemic chest pain, acute HF) → **synchronized cardioversion** (sync ให้ช็อกตรง R ไม่ตกช่วง T ที่จะเหนี่ยวนำ VF) · "
@@ -599,7 +599,7 @@ def bbb():
 # ───────────────────────────── 13. pericarditis / electrolytes
 def peri_vs_stemi():
     s1, X1, yb1 = strip(10, 30, 0.72, beat(0.32, pr=0.16, st=0.16, t_amp=0.3, pr_dep=0.09), h_mm=26, k=3.8, base_at=0.62)
-    s2, X2, yb2 = strip(222, 30, 0.72, beat(0.32, pr=0.16, st=0.34, t_amp=0.35), h_mm=26, k=3.8, base_at=0.62)
+    s2, X2, yb2 = strip(222, 30, 0.72, beat(0.32, pr=0.16, st=0.5, t_amp=0.5), h_mm=26, k=3.8, base_at=0.66)
     out = [s1, s2, t(78, 22, "Pericarditis", "sm b mid tac"), t(290, 22, "STEMI", "sm b mid tbad"),
            t(X1(0.2), yb1 + 22, "PR กดลง", "xs mid b tac"), ar(X1(0.2), yb1 + 12, X1(0.24), yb1 + 3, "lac", "ah-ac")]
     rows = [("ST ยก", "ทั่วทุก lead · เว้าหงาย", "เฉพาะผนัง · โค้งคว่ำ"), ("reciprocal", "ไม่มี (ยกเว้น aVR)", "มี ฝั่งตรงข้าม"),
