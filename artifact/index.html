@@ -252,6 +252,44 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig .lok{fill:none;stroke:var(--ok)}.fig .lbad{fill:none;stroke:var(--bad)}.fig .lms{fill:none;stroke:var(--miss)}
 .fig .lwa{fill:none;stroke:var(--focus)}.fig .lru{fill:none;stroke:var(--rule-strong)}
 .fig .w2{stroke-width:2.2}.fig .w3{stroke-width:3.4}.fig .w5{stroke-width:5}.fig .da{stroke-dasharray:5 4}.fig .dt{stroke-dasharray:1.5 3.5;stroke-linecap:round}.fig .ns{stroke:none}
+/* ---------- กลไกแบบภาพเคลื่อนไหว ([[anim:key]] + section.anims) ---------- */
+.fig.anim{border-color:color-mix(in srgb,var(--accent) 30%,var(--rule))}
+.fig.anim .figt span{color:var(--accent);}
+.anim svg [data-s],.anim svg [data-x]{transition:opacity .55s var(--e)}
+.anim svg .aoff{opacity:0}
+.anim svg .anow{animation:anow 1.1s var(--e) both}
+@keyframes anow{0%{opacity:0}35%{opacity:1}100%{opacity:1}}
+.anim svg .fl{stroke-dasharray:7 7;animation:afl 1.1s linear infinite}
+.anim svg .fl.rv{animation-direction:reverse}
+.anim svg .fl.sl{animation-duration:2.6s}
+.anim svg .pl{animation:apl 1.3s ease-in-out infinite}
+@keyframes afl{to{stroke-dashoffset:-14}}
+@keyframes apl{0%,100%{opacity:1}50%{opacity:.35}}
+.anim.paused svg .fl,.anim.paused svg .pl{animation-play-state:paused}
+.actl{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+.actl .ab{font:inherit;font-size:14px;font-weight:700;min-width:38px;height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.actl .ab:hover{border-color:var(--accent);color:var(--accent-ink)}
+.actl .ab.pp{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.actl .dots{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.actl .dot{width:22px;height:22px;border-radius:50%;border:1px solid var(--rule-strong);background:var(--surface);font:600 11px/20px var(--mono);color:var(--ink-3);cursor:pointer;padding:0;text-align:center}
+.actl .dot.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.actl .dot.cur{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.acap{margin-top:10px;padding-top:9px;border-top:1px dashed var(--rule);font-size:13.6px;line-height:1.6;color:var(--ink-2);min-height:4.2em}
+.acap b.st{display:block;color:var(--accent-ink);font-size:13px;margin-bottom:2px}
+.acap strong{color:var(--ink)}
+/* ---------- หลักจำ (section.mnem) ---------- */
+.mnem{margin:18px 0 0;padding:15px 17px;border:1px solid color-mix(in srgb,var(--miss) 45%,var(--rule));border-radius:var(--r-md);background:var(--miss-soft)}
+.mnem>h4{margin:0 0 4px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--miss);font-family:var(--sans)}
+.mnem .mn+.mn{margin-top:14px;padding-top:13px;border-top:1px dashed color-mix(in srgb,var(--miss) 40%,var(--rule))}
+.mnem .mnh{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.mnem .mnh b{font:700 17px/1.3 var(--mono);color:var(--ink);letter-spacing:.04em}
+.mnem .mnh span{font-size:13.4px;color:var(--ink-2)}
+.mnem ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px}
+.mnem li{display:grid;grid-template-columns:minmax(2.2em,max-content) 1fr;gap:10px;font-size:14.2px;line-height:1.5}
+.mnem li b{font-family:var(--mono);color:var(--miss);font-weight:700}
+.mnem .mnn{font-size:13px;color:var(--ink-2);margin:7px 0 0}
+.mnem .mns{font-size:11.8px;color:var(--ink-3);margin:5px 0 0}
+.chip.anc{border-color:var(--accent);color:var(--accent-ink)}
 .mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}
 </style>
 
@@ -446,6 +484,83 @@ function renderSync(){
 })();
 
 
+/* ---------- กลไกแบบภาพเคลื่อนไหว + หลักจำ ---------- */
+var ANIMS={},ANIMN=0,RMOTION=false;
+try{RMOTION=window.matchMedia("(prefers-reduced-motion: reduce)").matches;}catch(e){}
+function animHtml(k){
+  var a=ANIMS[k];if(!a||!a.svg||!a.steps||!a.steps.length)return "";
+  var m=/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"/.exec(a.svg),w=m?+m[1]:560;
+  var wide=w>440,sty="max-width:"+Math.round(w*1.25)+"px"+(wide?";min-width:"+Math.round(w*0.74)+"px":"");
+  ANIMN++;
+  var dots="";for(var i=1;i<=a.steps.length;i++)dots+="<button class='dot' data-astep='"+i+"' aria-label='ขั้นที่ "+i+"'>"+i+"</button>";
+  return "<figure class='fig anim' data-ak='"+esc(k)+"' data-n='"+a.steps.length+"'>"+
+    "<div class='figt'><span>▶ กลไก "+ANIMN+"</span>"+inline(a.title||"")+"</div>"+
+    "<div class='figsv'><div class='figin' style='"+sty+"'>"+a.svg+"</div></div>"+
+    (wide?"<div class='figscroll on'>← เลื่อนภาพไปทางขวาเพื่อดูส่วนที่เหลือ →</div>":"")+
+    "<div class='actl'><button class='ab' data-aprev='1' aria-label='ขั้นก่อนหน้า'>‹</button>"+
+    "<button class='ab pp' data-aplay='1' aria-label='เล่น/หยุด'>"+(RMOTION?"▶":"⏸")+"</button>"+
+    "<button class='ab' data-anext='1' aria-label='ขั้นถัดไป'>›</button><span class='dots'>"+dots+"</span></div>"+
+    "<div class='acap' aria-live='polite'></div>"+
+    "<script type='application/json' class='asteps'>"+JSON.stringify(a.steps).replace(/</g,"\\u003c")+"<\/script></figure>";
+}
+function animShow(f,i){
+  var A=f._a;A.i=i;
+  var svg=f.querySelector("svg");
+  if(svg){
+    svg.querySelectorAll("[data-s]").forEach(function(el){var k=+el.getAttribute("data-s");
+      el.classList.toggle("aoff",k>i);el.classList.toggle("anow",k===i);});
+    svg.querySelectorAll("[data-x]").forEach(function(el){if(+el.getAttribute("data-x")<=i)el.classList.add("aoff");
+      else if(!el.hasAttribute("data-s")||+el.getAttribute("data-s")<=i)el.classList.remove("aoff");});
+  }
+  f.querySelectorAll(".dot").forEach(function(d){var k=+d.getAttribute("data-astep");d.classList.toggle("on",k<i);d.classList.toggle("cur",k===i);});
+  var s=A.steps[i-1]||{};
+  f.querySelector(".acap").innerHTML="<b class='st'>ขั้น "+i+"/"+A.n+(s.t?" · "+inline(s.t):"")+"</b>"+(s.cap?inline(s.cap):"");
+}
+function animTick(f){
+  var A=f._a;clearTimeout(A.tm);A.tm=null;
+  if(!A.play||!A.vis)return;
+  var s=A.steps[A.i-1]||{},ms=+s.ms||Math.max(3200,Math.min(9000,1800+String(s.cap||"").length*38));
+  if(A.i>=A.n)ms+=2200;
+  A.tm=setTimeout(function(){animShow(f,A.i>=A.n?1:A.i+1);animTick(f);},ms);
+}
+function animSetPlay(f,on){
+  var A=f._a;A.play=on;f.classList.toggle("paused",!on);
+  var b=f.querySelector("[data-aplay]");if(b)b.textContent=on?"⏸":"▶";
+  var svg=f.querySelector("svg");
+  try{if(svg&&svg.pauseAnimations){if(on&&A.vis&&!RMOTION)svg.unpauseAnimations();else svg.pauseAnimations();}}catch(e){}
+  animTick(f);
+}
+var ANIM_IO=("IntersectionObserver" in window)?new IntersectionObserver(function(es){
+  es.forEach(function(e){var f=e.target;if(!f._a)return;f._a.vis=e.isIntersecting&&e.intersectionRatio>0.35;animSetPlay(f,f._a.play);});
+},{threshold:[0,0.35,0.6]}):null;
+function animInit(root){
+  (root||document).querySelectorAll("figure.anim").forEach(function(f){
+    if(f._a)return;
+    var steps=[];try{steps=JSON.parse(f.querySelector(".asteps").textContent);}catch(e){}
+    f._a={i:1,n:+f.getAttribute("data-n")||steps.length,steps:steps,play:!RMOTION,vis:!ANIM_IO,tm:null};
+    animShow(f,1);animSetPlay(f,f._a.play);
+    if(ANIM_IO)ANIM_IO.observe(f);
+  });
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest("figure.anim button");if(!b)return;
+  var f=b.closest("figure.anim"),A=f._a;if(!A)return;
+  if(b.hasAttribute("data-aplay")){if(!A.play&&A.i>=A.n)animShow(f,1);animSetPlay(f,!A.play);return;}
+  var to=b.hasAttribute("data-aprev")?Math.max(1,A.i-1):b.hasAttribute("data-anext")?Math.min(A.n,A.i+1):+b.getAttribute("data-astep");
+  animShow(f,to);animSetPlay(f,false);
+});
+(function(){var m=document.getElementById("main");if(!m||!("MutationObserver" in window))return;
+  new MutationObserver(function(){animInit(m);}).observe(m,{childList:true,subtree:true});})();
+function mnemBody(list){
+  return list.map(function(x){
+    return "<div class='mn'><div class='mnh'><b>"+esc(x.name)+"</b>"+(x.what?"<span>"+inline(x.what)+"</span>":"")+"</div>"+
+      (x.lines&&x.lines.length?"<ul>"+x.lines.map(function(r){return "<li><b>"+esc(r[0])+"</b><span>"+inline(r[1]||"")+"</span></li>";}).join("")+"</ul>":"")+
+      (x.note?"<p class='mnn'>"+inline(x.note)+"</p>":"")+(x.src?"<p class='mns'>ที่มา: "+inline(x.src)+"</p>":"")+"</div>";
+  }).join("");
+}
+function mnemHtml(s){return s.mnem&&s.mnem.length?"<div class='mnem'><h4>หลักจำ</h4>"+mnemBody(s.mnem)+"</div>":"";}
+function animCount(s){return Object.keys(s.anims||{}).length;}
+
 /* ---------- tiny markdown (เหมือน drill.html) ---------- */
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 function inline(t){return esc(t)
@@ -505,6 +620,8 @@ function md(src){
   while(i<lines.length){
     var L=lines[i],fm=/^\s*\[\[fig:([\w-]+)\]\]\s*$/.exec(L);
     if(fm){flushPara();out.push(figHtml(fm[1]));i++;continue;}
+    var am=/^\s*\[\[anim:([\w-]+)\]\]\s*$/.exec(L);
+    if(am){flushPara();out.push(animHtml(am[1]));i++;continue;}
     if(/^\s*>\s?/.test(L)){var q=[];while(i<lines.length&&/^\s*>\s?/.test(lines[i])){q.push(lines[i].replace(/^\s*>\s?/,""));i++;}
       flushPara();out.push("<div class='callout'>"+md(q.join("\n"))+"</div>");continue;}
     if(/^\s*####\s+/.test(L)){flushPara();out.push("<h4>"+inline(L.replace(/^\s*####\s+/,""))+"</h4>");i++;continue;}
@@ -671,6 +788,7 @@ function recallHtml(s){
   });
   if(s.pearls&&s.pearls.length)
     h+=rvBlock(s.id+"-p","จำไปสอบ",3,"<ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul>");
+  if(s.mnem&&s.mnem.length)h+=rvBlock(s.id+"-m","หลักจำ",3,"<div class='mnem'>"+mnemBody(s.mnem)+"</div>");
   return h;
 }
 
@@ -691,6 +809,8 @@ function lecCard(l){
     var st=secStat(s);
     return "<button class='tile' data-sec='"+s.id+"' data-slec='"+l.lec+"'><b>"+esc(s.title)+"</b>"+
       (hid?"":"<span>"+esc(s.summary||"")+"</span>")+
+      (animCount(s)||(s.mnem&&s.mnem.length)?"<span class='chip anc' style='align-self:flex-start'>"+
+        (animCount(s)?"▶ กลไก "+animCount(s):"")+(animCount(s)&&s.mnem&&s.mnem.length?" · ":"")+(s.mnem&&s.mnem.length?"หลักจำ "+s.mnem.length:"")+"</span>":"")+
       "<span class='chip"+(st.complete?" acc":"")+"' style='align-self:flex-start;margin-top:4px'>"+
       (st.complete?"ผ่านแล้ว "+st.correct+"/"+st.n:(st.answered? "ทำไป "+st.answered+"/"+st.n+" ข้อ":"ยังไม่ได้เรียน"))+"</span></button>";
   }).join("")+"</div></section>";
@@ -740,10 +860,11 @@ function viewSection(){
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
     (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"</div>"+
-    (FIGS=s.figs||{},FIGN=0,"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
-  FIGS={};
+    (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
+  FIGS={};ANIMS={};
   if(!hid&&s.pearls&&s.pearls.length)
     h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
+  if(!hid)h+=mnemHtml(s);
 
   h+="<div class='quiz'><div class='qhead'><h3>เช็คความเข้าใจ</h3>"+
      "<span class='chip'>"+s.items.length+" ข้อ</span>"+
