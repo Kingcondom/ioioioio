@@ -124,3 +124,53 @@
 - nutrition: BMI ต่ำ/fat-free mass ต่ำ = พยากรณ์แย่ · supplementation ในคนขาดสารอาหารเพิ่มน้ำหนัก กำลังกล้ามเนื้อหายใจ QoL
 - anxiety/depression: rehab, CBT, mind-body · fatigue
 - end-of-life: advance care planning (admission เป็นจุดเริ่มคุย) · hospice
+
+### Interventional & surgical (หน้า 85–91)
+- Giant bullectomy: bulla > 1/3 hemithorax กด lung ดี
+- **LVRS**: ตัดส่วน emphysema มากสุด → ลด hyperinflation เพิ่ม elastic recoil · NETT: bilateral LVRS **ยืดชีวิตใน upper-lobe emphysema + exercise capacity ต่ำหลัง rehab** · ตายมากขึ้นถ้า FEV1 ≤ 20% + (homogeneous emphysema หรือ DLco ≤ 20%)
+- Bronchoscopic LVR: **endobronchial one-way valve (EBV)** ต้องมี intact fissure/ไม่มี collateral ventilation · เพิ่ม FEV1 6MWD QoL · **pneumothorax 26.6%** (ส่วนใหญ่ใน 72 ชม.) · lobar atelectasis หลังทำ ↔ รอดชีวิตดีขึ้น · coils, vapor ablation (ไม่ต้องการ fissure), airway bypass (ไม่ durable), sealant (หยุดเพราะ morbidity)
+- Airway: excessive dynamic airway collapse (5%) · nitrogen cryospray, rheoplasty (phase III) · targeted lung denervation (ไม่ลด exacerbation)
+- **Lung transplant**: refer เมื่อ progressive แม้รักษาเต็มที่, ไม่เหมาะ LVRS, BODE 5–6, PaCO2 > 50 และ/หรือ PaO2 < 60, FEV1 < 25% · list เมื่อ BODE ≥ 7, FEV1 < 15–20%, severe exacerbation ≥ 3 ครั้ง/ปี, 1 ครั้งที่มี hypercapnic RF, PH ปานกลาง–รุนแรง · median survival 5.9 ปี · bilateral ดีกว่าใน < 60 ปี
+
+## บท 4 Exacerbations (หน้า 92–111) — เขียนใหม่ทั้งบทใน 2026
+- **Definition**: acute event, symptoms แย่ลงภายใน ≤ 14 วัน, dyspnea และ/หรือ cough+sputum เพิ่ม ± tachypnea/tachycardia, มักมี local+systemic inflammation จาก infection, pollution หรือ insult อื่น
+- สาเหตุ: infection (viral > bacterial) หรือ pollutant · ต้องแยก **pneumonia, PE, acute HF, pneumothorax** (Fig 4.3 อ่านไม่ได้ — ใช้ GOLD 2023–2025: pneumonia [CXR, CRP/PCT], PE [D-dimer, CTPA, DVT], HF [CXR, NT-proBNP, echo], MI/arrhythmia [ECG, troponin], pneumothorax/pleural effusion [CXR, US])
+- **Rome classification** (Fig 4.2):
+  - Mild: dyspnea VAS < 5 · RR < 24 · HR < 95 · SaO2 ≥ 92% (หรือเปลี่ยน ≤ 3%) · CRP < 10
+  - Moderate (≥ 3 ใน 5): VAS ≥ 5 · RR ≥ 24 · HR ≥ 95 · SaO2 < 92% และ/หรือลด > 3% · CRP ≥ 10 · (ABG อาจ PaO2 70–80 — ตามที่เขียน)
+  - Severe: เหมือน moderate + ABG PaO2 ≤ 60 และ/หรือ **PaCO2 > 45 + pH < 7.35**
+- ในโรงพยาบาล: no respiratory failure (RR ≤ 24, HR ≤ 95, ไม่ใช้ accessory, สติปกติ, O2 Venturi 24–35% ดีขึ้น, PaCO2 ไม่เพิ่ม) · respiratory failure (RR > 24, HR > 95, accessory, สติปกติ, ต้อง Venturi > 35%, PaCO2 เพิ่ม/50–60) · ventilatory failure (สติเปลี่ยนเฉียบพลัน, ต้อง FiO2 > 40% หรือไม่ดีขึ้น, PaCO2 > 60 + pH ≤ 7.25)
+- Rome: 15–30% ของผู้ป่วย admit เป็น mild · ~50% moderate · ~10% severe
+- > 80% รักษา outpatient · admission indications (Fig 4.4 อ่านไม่ได้ — ใช้ GOLD 2025: เหนื่อยขณะพักแย่ลงเฉียบพลัน RR สูง SpO2 ลด สับสน ง่วงซึม · acute respiratory failure · อาการแสดงใหม่ เช่น cyanosis, peripheral edema · ไม่ตอบสนองการรักษาเริ่มต้น · comorbidity รุนแรง (HF, arrhythmia ใหม่) · การดูแลที่บ้านไม่พอ)
+- ED: hypoxemic → controlled O2 · ABG ตัดสินว่าต้อง ventilatory support · VBG ใช้ได้ในรายไม่รุนแรง · SpO2 แม่นน้อยในผิวสีเข้ม
+- Triggers: **viral (rhinovirus มากสุด, influenza, parainfluenza, metapneumovirus, RSV 8.7%)** · bacterial · air pollution, heat/cold, wildfire · Aspergillus (invasive 1.3–3.9%)
+- อาการ 7–10 วัน · 8 สัปดาห์ยังไม่กลับเป็นเดิม 20% · recovery 4–6 สัปดาห์ · exacerbation cluster
+- Predictor ดีสุด = จำนวน exacerbation ปีก่อน (แม้ 1 ครั้ง) · PA:Ao > 1, emphysema, chronic bronchitis, GERD
+- ตาย 5 ปีหลัง admit ~50% · CV risk สูงสุด 30 วันแรก ยาวถึง 1–2 ปี · vitamin D < 10 ng/mL ใน admit → supplement · ไม่แนะนำใช้ score (DECAF ฯลฯ) routine
+- **Bronchodilators**: **SABA ± SAMA** เป็นตัวแรก · pMDI±spacer = nebulizer · **nebulizer ใช้ air-driven ไม่ใช่ O2-driven** (เลี่ยง PaCO2 สูง) · ไม่ให้ SABA ขนาดสูง · nebulize ทุก 1 ชม. 2–3 ครั้ง หรือ pMDI 1–2 puff ทุก 1 ชม. 2–3 ครั้ง แล้วทุก 2–4 ชม. · ให้ LABD ต่อ/เริ่มก่อน discharge · **IV methylxanthine ไม่แนะนำ**
+- **Glucocorticoids**: ลด recovery time, เพิ่ม FEV1, oxygenation, ลด relapse/treatment failure/LOS · **prednisone 40 mg/วัน 5 วัน** · oral = IV · nebulized budesonide เป็นทางเลือก · course ยาวเพิ่ม pneumonia/ตาย · ได้ผลมากขึ้นถ้า eos สูง (STARR2)
+- **Antibiotics** ให้เมื่อ: (1) มี ≥ 2 ใน 4 อาการ (dyspnea เพิ่ม, **ไข้**, sputum volume เพิ่ม, sputum purulence) โดยหนึ่งในนั้นต้องเป็น purulence · (2) เคยเพาะเชื้อเสมหะขึ้นใน exacerbation ก่อน · (3) ต้องใช้ mechanical ventilation (invasive หรือ NIV) · purulence sensitivity 94.4% specificity 52% · CRP point-of-care ลดการใช้ยา · **procalcitonin ไม่แนะนำ**
+  - empirical: **amoxicillin-clavulanate, macrolide, tetracycline, (quinolone ในบางราย)** · exacerbation บ่อย/obstruction รุนแรง/ต้อง ventilate → เพาะเชื้อ (Pseudomonas) · **5–7 วัน; outpatient ≤ 5 วัน**
+- NAC ช่วยขับเสมหะ · adjunct: fluid, diuretic, **VTE prophylaxis (PE 5.9%)**, nutrition, smoking cessation
+- **HFNT**: 10–60 L/min · ~30% ต้องเปลี่ยนเป็น NIV · **ERS แนะนำ NIV มากกว่า HFNT ใน hypercapnic RF และหลัง extubation เสี่ยงสูง**
+- **NIV = mode แรกของ acute RF** · success 80–85% · เพิ่ม pH ลด PaCO2 RR WOB ลด VAP, LOS, **ลดตายและ intubation** · หยุดได้เลยเมื่อหายใจเองได้ ≥ 4 ชม. · respiratory stimulants ไม่แนะนำ · indications (Fig 4.8 อ่านไม่ได้ — ใช้ GOLD 2025: ≥ 1 ข้อ: **PaCO2 ≥ 45 mmHg และ pH ≤ 7.35** · dyspnea รุนแรงมี respiratory muscle fatigue/WOB เพิ่ม (accessory muscle, paradoxical abdomen, intercostal retraction) · hypoxemia ต่อเนื่องแม้ให้ O2)
+- **Invasive MV** (Fig 4.9 อ่านไม่ได้ — GOLD 2025): ทน NIV ไม่ได้/NIV ล้มเหลว · หลัง respiratory/cardiac arrest · ความรู้สึกตัวลด, agitation คุมไม่ได้ · massive aspiration/อาเจียนต่อเนื่อง · ขับเสมหะไม่ได้ · hemodynamic instability รุนแรง · arrhythmia รุนแรง · hypoxemia คุกคามชีวิตในคนที่ทน NIV ไม่ได้ · in-hospital mortality 17–49%
+- Controlled O2 target **SpO2 88–92%** (ในรูปที่อ่านไม่ได้ — อิง GOLD 2023–2025 · ABG 30–60 นาทีหลังเริ่ม O2 · Venturi แม่นกว่า nasal cannula)
+- **Discharge/follow-up**: readmission 30–50% ใน 30 วัน · care bundle · **เริ่ม triple เร็ว (0–30 วัน) ลด exacerbation 20–30%** · แค่ 17.5% ได้ triple ตอน discharge · **early rehab < 4 สัปดาห์** · **follow-up ภายใน 1 เดือน** และ **3 เดือน** (spirometry, BODE, ประเมิน LTOT ตอน stable) · CT ถ้า exacerbation ซ้ำ
+- Prevention: triple, smoking cessation, vaccines, pulmonary rehab (Fig 4.11 อ่านไม่ได้)
+
+## บท 5 COPD and multimorbidity (หน้า 112–127) — ส่วนท้ายถูกตัด
+- ไม่เปลี่ยนการรักษา COPD; รักษาโรคร่วมตามมาตรฐาน · 4Ms · frailty
+- HT ~50% · HF 20–30% (NT-proBNP NPV สูง) · **β1-selective blocker ใช้ได้เมื่อมีข้อบ่งชี้ทางหัวใจ** ไม่ใช้เพื่อป้องกัน exacerbation · CAD 10–20% · AF: ไม่มียาที่ห้าม · LABA/LAMA/ICS ปลอดภัย · **ระวัง SABA และ theophylline** · PH (mPAP > 20; severe 5%) → LTOT ถ้า hypoxemic · PAH drugs ไม่แนะนำใน non-severe
+- Lung cancer: LDCT อายุ 50–80, ≥ 20 pack-year, ยังสูบหรือเลิก < 15 ปี · ไม่แนะนำใน never smoker · ICS ไม่เพิ่มมะเร็ง
+- **TB**: ประวัติ TB → chronic airflow obstruction · COPD เสี่ยง active TB 3 เท่า · **ICS (ขนาดสูง) เพิ่มความเสี่ยง TB** → exclude active TB ก่อนให้ ICS ใน endemic area
+- Bronchiectasis 20–69% · ICS ระวัง (pneumonia, NTM) · macrolide
+- OSA overlap → CPAP ลดตาย · anxiety/depression ~34% · cognitive impairment 32% (ใช้ inhaler ผิด)
+- DM ~20% · ICS ขนาดสูง: DM แย่ลง glaucoma cataract · **BMI < 21 หรือ > 30 พยากรณ์แย่** · GERD เพิ่ม exacerbation
+- MOLT · osteoporosis · CKD (creatinine หลอก) · anemia 7.5–34% · **secondary polycythemia 6–10%** (Hb ≥ 17 ชาย/≥ 15 หญิง)
+- Surgery: แผลใกล้กะบังลมเสี่ยงสุด · regional < GA · (ข้อความถูกตัดตรงนี้)
+
+## ส่วนที่อ่านไม่ได้ (เติมจากความรู้ GOLD 2025/2026 และระบุในบทเรียน)
+- Figures ที่เป็นภาพทั้งหมด: Fig 1.2–1.3, 2.1–2.14 (differential table, mMRC, CAT items, GOLD grade table, ABE figure), 3.1–3.23 (5A, smoking drugs, vaccine table, Fig 3.8/3.9 algorithm, eos & ICS 3.10, biologics 3.11, inhaler choice, O2 algorithm, palliative, interventions), 4.1–4.11
+- ท้ายบท 5 · บท 6 (AI, telehealth) · Appendix 1–4 (ยาเลิกบุหรี่ varenicline/bupropion/NRT, รายละเอียดยาขยายหลอดลม/ICS/PDE4/macrolide/mucolytic/biologics, evidence non-pharm)
+- ข้อมูลยาและ side effects เติมจากความรู้ GOLD 2025 Appendix · ICS against (GOLD 2025 Fig 3.10): pneumonia ซ้ำ, eos < 100, ประวัติ mycobacterial infection
