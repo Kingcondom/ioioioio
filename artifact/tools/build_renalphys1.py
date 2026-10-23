@@ -488,6 +488,190 @@ MAP ต่ำกว่าช่วง autoregulation → afferent ขยาย�
          "Myogenic = ยืด → VGCC → Ca²⁺ → หด (ไม่ต้องใช้เส้นประสาท)", "Myogenic mechanism", R("Autoregulation — Myogenic response"), [GFRH, CIRC])],
     [GFRH, CIRC, SHOCK, OLIG, AKI, DM, HT], {"autoreg": F.autoreg()})
 
+# ═════════════════════════════════════════════ 8
+sec("nephro-phy1-08", "Filtration fraction และ glomerulotubular balance — กรองมากขึ้น ดูดกลับมากขึ้นตาม",
+    "FF = GFR/RPF 0.16–0.20 · ตาราง FF ตามการหด/ขยาย arteriole · peritubular P_c ↓ π_c ↑ → PT ดูดกลับ ↑ · ภาวะขาดน้ำ", 8,
+"""### Filtration fraction (FF)
+**FF = GFR ÷ RPF** = สัดส่วนของพลาสมาที่ไหลเข้าไตแล้วถูกกรองลงท่อไต · ปกติ **0.16–0.20 (16–20%)** — อีก 80% ออกทาง efferent ไปเลี้ยงท่อไต
+| สาเหตุ (สไลด์) | RPF | แรงในกระจุก | GFR | FF |
+|---|---|---|---|---|
+| afferent หด (NE, E) | ↓ | P_GC ↓ | ↓ | ↔ |
+| **efferent หด (angiotensin II)** | ↓ | P_GC ↑ | ↑ | **↑** |
+| afferent + efferent ขยาย (dopamine ขนาดต่ำ) | ↑ | P_GC ↔ | ↔ | ↓ |
+| โปรตีนในพลาสมาลด | ↔ | π_GC ↓ | ↑ | ↑ |
+| นิ่วใน ureter | ↔ | P_BC ↑ | ↓ | ↓ |
+- จำง่าย: FF ขึ้นเมื่อ **กรองได้มากเมื่อเทียบกับเลือดที่เข้า** — สถานการณ์คลาสสิกคือ **efferent หดด้วย AII** ตอนปริมาตรลด
+
+### FF เชื่อมกับการดูดกลับที่ proximal tubule
+[[fig:ff_gtb]]
+เลือดที่ออกจากกระจุกเข้าสู่ **peritubular capillary** ซึ่งพันรอบท่อไต:
+- ถูกกรองน้ำออกไปแล้ว → **โปรตีนเข้มข้น → π_c สูง** (ดึงน้ำเข้า)
+- ผ่าน efferent ที่ต้านไว้แล้ว → **P_c ต่ำ** (ดันน้ำออกน้อย)
+- ⇒ **แรงดูดกลับสุทธิ** ดึงน้ำและ Na⁺ ที่ PT ขนออกมาไว้ใน interstitium กลับเข้าเลือด
+- **FF ↑ → P_c ↓ และ π_c ↑ → ดูดกลับที่ PT ↑**
+
+### Glomerulotubular balance (GTB)
+PT ดูดกลับ **ตามสัดส่วน** ของที่กรองมา (~65%) ไม่ว่า GFR จะขึ้นหรือลด → ป้องกันไม่ให้ GFR ที่แกว่งเล็กน้อยกลายเป็นการเสีย Na/น้ำมหาศาล
+- ตัวอย่างในสไลด์ — **ปริมาตรเลือดลด**: sympathetic ↑ (หด afferent + efferent) และ RAAS/AII ↑ (หด efferent) → **RPF ลดมาก แต่ GFR เกือบเดิม** → **FF ↑** → P_c ↓ π_c ↑ → **PT ดูดกลับ ↑** → เก็บ Na และน้ำ
+- (ตำรา) อีกส่วนของ GTB มาจากท่อไตเอง: GFR ↑ → glucose/amino acid ที่มากับ filtrate ↑ → Na⁺ ถูกดูดร่วมมากขึ้น
+
+#### ทำไมถึงมีอาการนี้ — BUN/Cr สูงในภาวะขาดน้ำ (pre-renal)
+FF ↑ → PT ดูดน้ำกลับมาก → **urea ถูกดูดกลับตามน้ำ** (urea ซึมผ่านได้ที่ PT ~50%) + ADH ↑ เพิ่มการดูด urea ที่ inner medullary CD (หัวข้อ 14) · creatinine ไม่ถูกดูดกลับ → **BUN ขึ้นมากกว่า Cr → BUN/Cr > 20:1** (สไลด์ใช้แยก pre-renal จาก ATN)
+""",
+    ["FF = GFR/RPF ≈ 0.16–0.20",
+     "AII หด efferent → RPF ↓ GFR ↑/คง → FF ↑",
+     "FF ↑ → peritubular π_c ↑ P_c ↓ → PT ดูดกลับ ↑",
+     "Glomerulotubular balance: PT ดูดกลับ ~65% ของที่กรองเสมอ",
+     "ขาดน้ำ: FF ↑ + ADH ↑ → urea ถูกดูดกลับ → BUN/Cr > 20"],
+    [mcq(N(15), "A healthy volunteer receives an intravenous infusion of angiotensin II at a dose that does not change mean arterial pressure. Which combination of changes is expected?",
+         ["RPF ↑, GFR ↑, filtration fraction ↔", "RPF ↓, GFR ↓, filtration fraction ↔", "RPF ↓, GFR ↑ or unchanged, filtration fraction ↑",
+          "RPF ↑, GFR ↓, filtration fraction ↓", "RPF ↔, GFR ↓, filtration fraction ↓"], 2,
+         "AII หด **efferent** เป็นหลัก (สไลด์: efferent ไวกว่า afferent) → ความต้านทานรวม ↑ → **RPF ↓** · เลือดค้างในกระจุก → P_GC ↑ → **GFR ↑ หรือคงที่** → **FF = GFR/RPF ↑** — ตรงกับแถว efferent arteriole vasoconstriction ในตาราง FF\n\n"
+         "- **RPF ↑ GFR ↑ FF ↔** — ไม่ใช่ผลของสารหดหลอดเลือด\n- **RPF ↓ GFR ↓ FF ↔** — คือ afferent หด (NE)\n"
+         "- **RPF ↑ GFR ↓ FF ↓** — คือ efferent ขยาย (ACEi/ARB)\n- **RPF ↔ GFR ↓ FF ↓** — คือ P_BC ↑ (นิ่ว)",
+         "AII → RPF ↓ GFR คง → FF ↑", "Filtration fraction", R("Filtration fraction table"), [GFRH, HORM, RAASD]),
+     mcq(N(16), "A 70-year-old woman has 4 days of diarrhoea and poor intake. BP is 92/58 mmHg. BUN is 68 mg/dL and creatinine 2.0 mg/dL (baseline 0.9); urine is concentrated with bland sediment. Which mechanism best explains why BUN has risen proportionally more than creatinine?",
+         ["Increased hepatic urea synthesis caused by volume depletion", "Increased filtration fraction and ADH enhance tubular reabsorption of urea along with water, whereas creatinine is not reabsorbed",
+          "Tubular secretion of creatinine stops in volume depletion", "Acute tubular necrosis releases urea from injured cells", "Reduced muscle production of creatinine during diarrhoea"], 1,
+         "ขาดน้ำ → AII หด efferent → **FF ↑** → peritubular π_c ↑ P_c ↓ → PT ดูดน้ำกลับมาก → **urea ซึ่งซึมผ่านได้ถูกดูดกลับตามน้ำ** · ADH ↑ เพิ่ม UT-A1 ที่ inner medullary CD → ดูด urea อีก · creatinine ไม่ถูกดูดกลับ → **BUN/Cr > 20:1** (68/2.0 = 34) = pre-renal (สไลด์ใช้ BUN/Cr 20:1 แยก pre-renal จาก ATN)\n\n"
+         "- **ตับสร้าง urea มากขึ้น** — เกิดใน GI bleeding/catabolic state แต่ไม่ใช่กลไกหลักของขาดน้ำ\n- **หยุดหลั่ง creatinine** — จะทำให้ Cr **สูงขึ้น** ไม่ใช่ BUN\n"
+         "- **ATN ปล่อย urea** — ATN มักมี BUN/Cr ~10–15 และตะกอน muddy brown\n- **กล้ามเนื้อสร้าง Cr น้อยลง** — ไม่เปลี่ยนในไม่กี่วัน",
+         "Pre-renal: FF ↑ + ADH → ดูด urea กลับ → BUN/Cr > 20", "Glomerulotubular balance and BUN/creatinine ratio",
+         R("FF and PT reabsorption · Glomerulotubular balance · Urea recycling — BUN/Cr ratio"), [GFRH, TUB, RFT, AKI, AKI_B, HYPOVOL, LYTE])],
+    [GFRH, TUB, RFT, AKI, HYPOVOL, HORM], {"ff_gtb": F.ff_gtb()})
+
+# ═════════════════════════════════════════════ 9
+sec("nephro-phy1-09", "Proximal tubule — ดูดกลับ 65% ด้วยพลังของ Na⁺/K⁺-ATPase (HCO₃⁻, Pi, acetazolamide, Fanconi)",
+    "isosmotic 65% · NHE3 (AII) · HCO₃⁻ 80% (CA, NBC1) · Pi 80% (NaPi-IIa, PTH, FGF-23) · acetazolamide · proximal RTA · Fanconi", 12,
+"""### ภาพรวมการขนส่งในท่อไต (สไลด์ Tubular transport)
+- **ดูดกลับ**: สารอาหาร เกลือแร่ และสารบางอย่าง · **หลั่ง**: ของเสีย เกลือแร่ส่วนเกิน สารที่ไม่ต้องการ ยา
+- เส้นทาง: **ผ่านเซลล์ (transcellular)** ใช้ตัวขนส่ง · **ระหว่างเซลล์ (paracellular)** ตามแรงดึงไฟฟ้า/ความเข้มข้น
+- ส่วนของ nephron: PT → loop (thin descending · thin ascending · **TAL**) → DT (early · late) → CD (cortical · outer medullary · inner medullary — principal cell 2/3 · intercalated cell 1/3)
+- interstitium: cortex **300** → medulla 600 → 900 → papilla **1,200 mOsm/L**
+
+### Proximal tubule — \"workhorse\"
+ซึมผ่านทั้งน้ำและตัวละลายสูง → ดูดกลับ **60–70% ของ filtrate** แบบ **isosmotic** (น้ำตามเกลือทันที ของเหลวในท่อยัง ~300 mOsm)
+[[fig:pt_cell]]
+| สาร | % ที่ PT ดูดกลับ (สไลด์) | ตัวขนส่ง/หมายเหตุ |
+|---|---|---|
+| H₂O, Na⁺, Cl⁻, K⁺, Ca²⁺ | **65%** | Na⁺ เข้าผ่าน NHE3 และ cotransporter ต่าง ๆ · น้ำผ่าน AQP1 + ระหว่างเซลล์ · K⁺ Ca²⁺ Cl⁻ ตามน้ำทางระหว่างเซลล์ |
+| glucose, amino acid | **~100%** | SGLT2 / Na–AA cotransporter (หัวข้อ 10) |
+| **HCO₃⁻** | **80%** | NHE3 + carbonic anhydrase + NBC1 |
+| **phosphate** | **80%** | NaPi-IIa, NaPi-IIc |
+| urea | 50% | ตามน้ำ |
+| Mg²⁺ | 30% | (ส่วนใหญ่ไปดูดที่ TAL) |
+| SO₄²⁻, lactate, urate | — | Na⁺-coupled |
+- **Na⁺/K⁺-ATPase** ด้านเลือดคือแหล่งพลังงาน: กด Na⁺ ในเซลล์เหลือ ~10 mEq/L เทียบกับ 140 ในลูเมน → Na⁺ อยากเข้าเซลล์เสมอ และ \"พา\" สารอื่นเข้ามาด้วย
+- **AII กระตุ้น NHE3** → ภาวะปริมาตรลด PT ดูด Na⁺ มากขึ้น
+
+### HCO₃⁻: ดูดกลับโดยไม่ได้ขน HCO₃⁻ ตัวเดิม
+H⁺ ออกทาง NHE3 → จับ HCO₃⁻ ในลูเมน → H₂CO₃ → **carbonic anhydrase (CA)** ที่ผิวลูเมน → CO₂ + H₂O → CO₂ แพร่เข้าเซลล์ → CA ในเซลล์ → H⁺ + **HCO₃⁻ ตัวใหม่** → ออกเลือดทาง **NBC1** (Na⁺/HCO₃⁻)
+| ยา/โรค | กลไก | ผลตามสไลด์ |
+|---|---|---|
+| **Acetazolamide** (CA inhibitor) | HCO₃⁻ ไม่ถูกดูดกลับ → NaHCO₃ หลุดไปปลายทาง | ① Na⁺ K⁺ ดูดกลับ ↓ → Na ต่ำ K ต่ำ ② flow และ Na⁺ ที่ไปถึง principal cell ↑ → **หลั่ง K⁺ ↑** → K ต่ำ ③ หลั่ง H⁺/ดูด HCO₃⁻ ↓ → **metabolic acidosis** |
+| **Proximal RTA (type II)** | **NBC1 บกพร่อง** | HCO₃⁻ หลุด → acidosis (ปัสสาวะเป็นกรดได้เมื่อ HCO₃⁻ ในเลือดต่ำพอ — ตำรา) |
+
+### Phosphate
+- 80% ดูดกลับที่ PT ผ่าน **NaPi-IIa/IIc** · 10% ที่ DT
+- **PTH และ FGF-23** ทำให้ NaPi-IIa ถูกดึงเข้าเซลล์และทำลาย → ดูดกลับ Pi ↓ → **ขับ Pi ทิ้ง** (รายละเอียดสมดุล Pi ใน Part II และคาบ 05)
+
+#### ทำไมถึงมีอาการนี้ — Fanconi syndrome
+สไลด์: ความบกพร่องของตัวขนส่งหลายตัว โดยเฉพาะ **Na⁺/K⁺-ATPase** → ดูดกลับพร้อมกันไม่ได้ (ตำรา: เป็น **generalized PT dysfunction** จากยา/พิษ/โรคเมตาบอลิกที่ทำให้พลังงานในเซลล์ PT ล้ม)
+| อาการ/ผลตรวจ | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **glucosuria ทั้งที่น้ำตาลปกติ** | SGLT ไม่มีแรงขับจาก Na⁺ gradient | ต่างจากเบาหวาน (น้ำตาลในเลือดสูง) |
+| aminoaciduria | Na–AA cotransporter หยุด | ตรวจ urine amino acids |
+| **Pi ต่ำ → กระดูกอ่อน** (rickets/osteomalacia) | NaPi หยุด → phosphaturia | ALP สูง ปวดกระดูก |
+| **normal anion gap metabolic acidosis** | HCO₃⁻ หลุด = proximal RTA | urine pH ต่ำได้เมื่อ HCO₃⁻ ในเลือดต่ำลงจนถึง threshold ใหม่ |
+| K ต่ำ · ปัสสาวะมาก | Na⁺ และน้ำไปถึงปลายทางมาก → หลั่ง K⁺ | — |
+| proteinuria (low molecular weight) | PT ดูดโปรตีนเล็กไม่ได้ | dipstick อาจไม่เห็น (ตำรา) |
+- สาเหตุที่พบบ่อยในผู้ใหญ่ (ตำรา): **tenofovir**, ifosfamide, **multiple myeloma (light chain)**, โลหะหนัก (ตะกั่ว แคดเมียม), tetracycline หมดอายุ · เด็ก: cystinosis, Wilson disease
+- aminoglycoside (gentamicin) ก็ถูก PT ดูดเข้าเซลล์ทาง endocytosis แล้วสะสมเป็นพิษ → ATN ชนิดปัสสาวะไม่ลด (ตำรา)
+""",
+    ["PT ดูดกลับ 65% แบบ isosmotic โดยใช้ Na⁺ gradient จาก Na⁺/K⁺-ATPase",
+     "HCO₃⁻ 80% · Pi 80% · glucose/AA ~100% · urea 50% · Mg 30% ที่ PT",
+     "Acetazolamide: HCO₃⁻ หลุด → acidosis + K ต่ำ (Na ไปถึง principal cell มาก)",
+     "PTH และ FGF-23 ทำลาย NaPi-IIa → phosphaturia",
+     "Fanconi = glucosuria (น้ำตาลปกติ) + aminoaciduria + phosphaturia + proximal RTA — tenofovir, myeloma"],
+    [mcq(N(17), "A 35-year-old trekker takes acetazolamide 250 mg twice daily to prevent acute mountain sickness. After several days, venous HCO₃⁻ is 18 mmol/L, K⁺ 3.2 mmol/L and urine pH 7.5. Which mechanism explains both the acid–base and the potassium findings?",
+         ["Inhibition of NKCC2 in the thick ascending limb", "Blockade of ENaC in the collecting duct",
+          "Inhibition of carbonic anhydrase in the proximal tubule, causing bicarbonaturia and increased distal Na⁺ delivery that enhances K⁺ secretion",
+          "Stimulation of H⁺-ATPase in type A intercalated cells", "Direct inhibition of Na⁺/K⁺-ATPase in all tubular segments"], 2,
+         "acetazolamide ยับยั้ง **carbonic anhydrase ที่ PT** → H⁺ ที่หลั่งไม่มี CA ช่วยเปลี่ยน HCO₃⁻ → **HCO₃⁻ หลุดลงปัสสาวะ** (urine pH ด่าง 7.5) → เลือดเป็น **metabolic acidosis** · NaHCO₃ และน้ำที่หลุดไปถึง principal cell มาก (flow ↑, Na⁺ ↑) → **หลั่ง K⁺ ↑** → K ต่ำ — ตรงกับรายการฤทธิ์ข้างเคียงในสไลด์\n\n"
+         "- **NKCC2** — loop diuretic ให้ alkalosis ไม่ใช่ acidosis\n- **ENaC blocker** — ทำให้ K **สูง**\n"
+         "- **H⁺-ATPase ถูกกระตุ้น** — จะได้ปัสสาวะเป็นกรด ไม่ใช่ด่าง\n- **ยับยั้ง Na⁺/K⁺-ATPase ทุกส่วน** — ไม่ใช่กลไกของยา",
+         "Acetazolamide: bicarbonaturia → acidosis + K ต่ำ", "Proximal HCO₃⁻ reabsorption and CA inhibitors", R("Reabsorption HCO₃⁻ — side effects of CA inhibitor"), [TUB, ACIDB, DIUR, LYTE, LYTE_B]),
+     mcq(N(18), "A 48-year-old man with HIV on a tenofovir disoproxil–based regimen has bone pain. Plasma glucose is 92 mg/dL, phosphate 1.6 mg/dL, HCO₃⁻ 17 mmol/L with a normal anion gap, and urine shows 2+ glucose and generalized aminoaciduria. Which statement best explains why these abnormalities occur together?",
+         ["Collecting duct H⁺-ATPase failure", "Isolated SGLT2 mutation",
+          "Generalized proximal tubular dysfunction: Na⁺-coupled reabsorption of glucose, amino acids, phosphate and HCO₃⁻ all depends on the Na⁺ gradient generated by basolateral Na⁺/K⁺-ATPase",
+          "Excess PTH secretion causing phosphaturia and glucosuria", "Thick ascending limb NKCC2 dysfunction"], 2,
+         "glucosuria ทั้งที่น้ำตาลปกติ + aminoaciduria + phosphaturia (Pi ต่ำ → ปวดกระดูก/osteomalacia) + normal AG acidosis (HCO₃⁻ หลุด) = **Fanconi syndrome** — ทุกตัวขนส่งเหล่านี้อยู่ที่ **PT** และอาศัย **Na⁺ gradient จาก Na⁺/K⁺-ATPase** (สไลด์) · tenofovir สะสมใน PT ผ่าน OAT แล้วทำให้ mitochondria เสีย (ตำรา)\n\n"
+         "- **CD H⁺-ATPase** — คือ distal RTA ไม่ทำให้ glucosuria/aminoaciduria\n- **SGLT2 กลายพันธุ์อย่างเดียว** — familial renal glucosuria มีแค่ glucosuria\n"
+         "- **PTH สูง** — ทำให้ phosphaturia แต่ไม่ทำให้ glucosuria/aminoaciduria\n- **NKCC2** — Bartter: K ต่ำ alkalosis ไม่ใช่ภาพนี้",
+         "Fanconi = PT ล้มทั้งระบบ → glucose AA Pi HCO₃⁻ หลุดพร้อมกัน", "Fanconi syndrome", R("Proximal tubule transport — Fanconi syndrome", BB), [TUB, HANDL, RTA, ADR, ADRDRUG, LYTE])],
+    [TUB, HANDL, ACIDB, DIUR, RTA, LYTE, ADRDRUG], {"pt_cell": F.pt_cell()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 10
+sec("nephro-phy1-10", "Glucose, amino acid และโปรตีน — Tm, threshold และ glucosuria",
+    "SGLT2/GLUT2 · threshold 180 mg/dL · Tm 375 mg/min · splay · ตั้งครรภ์ · familial renal glucosuria · SGLT2i · โปรตีนในปัสสาวะปกติ 30–150 mg/วัน", 10,
+"""### Glucose — ดูดกลับ 99–100% ที่ PT
+- ด้านลูเมน **SGLT2** (Na⁺/glucose cotransporter) · ด้านเลือด **GLUT2** (facilitated diffusion)
+- ตัวขนส่งมีจำนวนจำกัด → **อิ่มตัว (saturation)** ได้ → มี **transport maximum (Tm)**
+[[fig:titration]]
+| คำ | ความหมาย | ค่า (สไลด์) |
+|---|---|---|
+| **Filtered load** | P_glucose × GFR | 100 mg/dL × 125 mL/min = 125 mg/min (ปกติ) |
+| **Tm** | อัตราดูดกลับสูงสุด | **375 mg/min** |
+| **Renal plasma threshold** | ระดับน้ำตาลในพลาสมาที่เริ่มเห็นในปัสสาวะ | **180 mg/dL** |
+- (ตำรา) **splay**: ถ้าทุก nephron เหมือนกัน น้ำตาลจะเริ่มรั่วที่ ~300 mg/dL (375 ÷ 1.25) แต่ nephron แต่ละตัวมี Tm ไม่เท่ากัน ตัวที่ Tm ต่ำอิ่มก่อน → เริ่มรั่วตั้งแต่ ~180
+
+#### ทำไมถึงมีอาการนี้ — glucosuria 3 แบบตามสไลด์
+| สาเหตุ | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **น้ำตาลในเลือดเกิน threshold** (เบาหวาน) | filtered load เกินที่ดูดได้ | น้ำตาลในเลือด > 180 · glucose ในท่อดึงน้ำออก → **ปัสสาวะมาก (osmotic diuresis) กระหายน้ำ** |
+| **filtered load เกิน Tm** — ตั้งครรภ์ | สไลด์: GFR ↑ (filtered load ↑) และ Tm ↓ (สไลด์เขียน FBS ↑ ร่วมด้วย) | น้ำตาลในเลือดอาจปกติ → ต้องตรวจน้ำตาลในเลือดก่อนสรุปว่าเป็น GDM |
+| **ท่อไตบกพร่อง** | **Fanconi** (Na⁺/K⁺-ATPase) · **familial renal glucosuria (SGLT2 defect)** | น้ำตาลในเลือดปกติ · familial มีแค่ glucosuria ไม่มีผลอื่น |
+| (ตำรา) **ยา SGLT2 inhibitor** | บล็อก SGLT2 (ซึ่งดูดกลับกลูโคสส่วนใหญ่) → threshold ลดเหลือ ~40–80 mg/dL | ขับกลูโคส ~60–80 g/วัน · ข้อเสีย: ติดเชื้อราที่อวัยวะเพศ ขาดน้ำ euglycemic DKA |
+
+### Amino acid, peptide และโปรตีน (ดูดกลับที่ PT เท่านั้น)
+| สาร | วิธี |
+|---|---|
+| amino acid และ peptide สั้น (2–4 AA) — ดูดกลับ ~100% | **Na⁺/AA cotransporter** · peptide สั้นใช้ **PepT1** (H⁺/oligopeptide) |
+| oligopeptide 5–25 AA (angiotensin, glutathione) | เอนไซม์ที่ brush border ย่อยเป็น AA/peptide สั้นก่อน → Na⁺/AA และ PepT2 |
+| โปรตีนและ peptide hormone (albumin, insulin) | **receptor-mediated endocytosis** → endosome → lysosome ย่อยเป็น AA → ส่งกลับเลือด |
+- **กลไกดูดโปรตีนอิ่มตัวง่าย** → ถ้ากรองโปรตีนลงมามาก (ชั้นกรองเสีย) จะล้นเป็น **proteinuria**
+- (ตำรา) insulin ถูกกรองและย่อยที่ PT ส่วนหนึ่ง → ผู้ป่วยเบาหวานที่ไตเสื่อมจึง **hypoglycemia ง่าย** และต้องลดขนาด insulin
+
+### โปรตีนในปัสสาวะปกติ (สไลด์)
+- ปกติ **30–150 mg/วัน** หรือ < 8 mg/dL
+- ~45% มาจากโปรตีนที่กรองแล้วดูดกลับไม่หมด: **albumin** (85% ของส่วนนี้) < 20 mg/วัน · ที่เหลือคือ microglobulin, apoprotein, เอนไซม์, peptide hormone
+- ~55% **ท่อไตสร้างและหลั่งเอง** (TAL และ early DT): **Tamm–Horsfall protein (uromodulin)** 90% (30–50 mg/วัน — เป็นโครงของ cast) · IgA · α1/β2-microglobulin · urokinase
+- dipstick ไวต่อ albumin **15–30 mg/dL** → คนปกติได้ผลลบ · บวกใน nephrotic syndrome, Fanconi syndrome
+- โปรตีนในปัสสาวะสูงชั่วคราวโดยไม่มีโรคไต: **ออกกำลังกายหนัก · orthostatic proteinuria · ขาดน้ำ · UTI · ไข้/เจ็บป่วยเฉียบพลัน** → ตรวจซ้ำก่อนสรุป
+""",
+    ["Glucose: SGLT2 (ลูเมน) + GLUT2 (เลือด) · threshold 180 mg/dL · Tm 375 mg/min",
+     "Splay = nephron มี Tm ไม่เท่ากัน → รั่วก่อนถึง Tm รวม",
+     "Glucosuria ที่น้ำตาลปกติ: ตั้งครรภ์ · Fanconi · familial (SGLT2) · ยา SGLT2i",
+     "โปรตีนปกติ 30–150 mg/วัน · ครึ่งหนึ่งคือ Tamm–Horsfall ที่ท่อไตหลั่ง",
+     "Proteinuria ชั่วคราว: ออกกำลัง orthostatic ไข้ ขาดน้ำ UTI → ตรวจซ้ำ"],
+    [mcq(N(19), "A 29-year-old woman at 26 weeks of gestation has 1+ glucose on routine urine dipstick. Her fasting plasma glucose is 78 mg/dL and a 75-g OGTT is normal. Which mechanism best explains the glucosuria?",
+         ["Gestational diabetes with plasma glucose above the renal threshold", "A rise in GFR that increases the filtered glucose load while the tubular transport maximum falls",
+          "Fanconi syndrome induced by pregnancy hormones", "Secretion of glucose by the collecting duct under the influence of progesterone",
+          "Urinary tract infection producing glucose in the urine"], 1,
+         "สไลด์ยก **ตั้งครรภ์** เป็นตัวอย่างของ \"filtered load (P_glucose × GFR) > Tm\": GFR เพิ่มราว 40–50% (ตำรา) → filtered load ↑ และ Tm ↓ → กลูโคสล้นแม้น้ำตาลในเลือดปกติ · OGTT ปกติ = ไม่ใช่ GDM\n\n"
+         "- **GDM** — OGTT และ FPG ปกติตัดออก\n- **Fanconi** — จะมี aminoaciduria phosphaturia acidosis ร่วม\n"
+         "- **CD หลั่งกลูโคส** — ไม่มีกลไกหลั่งกลูโคส\n- **UTI** — เชื้อ **กิน** กลูโคส ไม่ได้สร้าง",
+         "ตั้งครรภ์: GFR ↑ + Tm ↓ → glucosuria ที่น้ำตาลปกติ", "Glucose Tm and pregnancy", R("Glucose reabsorption — glucosuria"), [TUB, GFRH, UA, UAS]),
+     mcq(N(20), "A 61-year-old man with type 2 diabetes is started on dapagliflozin. One month later, his fasting plasma glucose is 112 mg/dL, yet his urine dipstick shows 3+ glucose. How does the drug alter his glucose titration curve?",
+         ["It raises the transport maximum so that glucose is excreted only at very high plasma levels", "It increases GFR so much that filtered load exceeds a normal Tm",
+          "It lowers the reabsorptive capacity of the proximal tubule, shifting the renal threshold to a much lower plasma glucose", "It stimulates glucose secretion by organic anion transporters",
+          "It blocks GLUT2 in the collecting duct"], 2,
+         "SGLT2 inhibitor บล็อก **SGLT2 ที่ PT** ซึ่งดูดกลับกลูโคสส่วนใหญ่ → **ความสามารถดูดกลับ (Tm) ลด** → เส้น \"ดูดกลับ\" ในกราฟ titration แบนลงต่ำ → **threshold ลดจาก ~180 เหลือ ~40–80 mg/dL** (ตำรา) → glucosuria ที่น้ำตาลปกติ ขับกลูโคสทิ้งวันละหลายสิบกรัม · ผลเดียวกับ familial renal glucosuria ในสไลด์ (SGLT2 defect)\n\n"
+         "- **Tm สูงขึ้น** — ตรงข้าม\n- **GFR สูงมาก** — SGLT2i ทำให้ GFR ลดเล็กน้อยต่างหาก (หัวข้อ 6)\n"
+         "- **OAT หลั่งกลูโคส** — กลูโคสไม่ถูกหลั่ง\n- **GLUT2 ที่ CD** — GLUT2 อยู่ด้านเลือดของ PT และยาไม่ได้บล็อก",
+         "SGLT2i → Tm ↓ → threshold ↓ → glucosuria ที่น้ำตาลปกติ", "Glucose titration curve and SGLT2 inhibition", R("Glucose reabsorption", GH), [TUB, DM, DM_B, DMDRUG])],
+    [TUB, HANDL, DM, DM_B, DMDRUG, UA, UAS, NEPHROTIC], {"titration": F.titration()}, source=SRC_ADD)
+
 # ── END SECTIONS
 
 
