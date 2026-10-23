@@ -68,7 +68,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 31** · มี **9 ชุดวิชา** · 32 คาบ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 33** · มี **9 ชุดวิชา** · 35 คาบ · 655 ภาพ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
@@ -84,6 +84,11 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 > - **Version 28** (16 ต.ค.): หน้าเว็บแสดง ` · ` เป็นการขึ้นบรรทัดใหม่ (`splitDots()` ใน index.html · ตารางแยกเป็นบรรทัดละรายการ) — ผู้ใช้บอกว่าอ่านยาก · ข้อมูลไม่ได้แก้
 > - **Version 30** (ก่อน 19 ต.ค. · session อื่น **publish โดยไม่ push**): เพิ่ม `section.anims` (ภาพเคลื่อนไหวกลไก `[[anim:key]]` เล่นทีละขั้น) และ `section.mnem` (กล่อง "หลักจำ") ให้คาบเดิมเกือบทุกคาบ + โค้ดใน index.html · **19 ต.ค. ดึงไฟล์จากเว็บเข้า repo แล้ว** (commit "Sync artifact with live learn") — สคริปต์ที่ใช้สร้าง anims/mnem ไม่อยู่ใน repo ถ้าต้องแก้ ให้แก้ข้อมูลใน data/*.json ตรง ๆ หรือหา branch ของ session นั้น
 > - **Version 31** (19 ต.ค.): cardio 36 Basic ECG (คาบใหม่) · ทับบน Version 30 โดยไม่แตะคาบอื่น
+> - **Version 33** (23 ต.ค.): คาบใหม่ chest **37 COPD (GOLD 2026)** · chest **Thoracentesis** (AL กลุ่ม 5) · nephro **22/10 Urethral catheterization** + เติมหัวข้อ/ข้อสอบจาก handout ใหม่ให้ neuro **9/10 LP** (+3 หัวข้อ) และ **21/10 ACS** (+4 หัวข้อ รวม delirium quiz) · แก้ตัวหนาที่ถูกตัดบรรทัดในคาบ 21/10 (check_lecture เหลือ 53 รายการ จาก 127) · ทับบน live 1792427940-73a8 (anims/mnem ของ session dashboard อยู่ครบ — ตรวจทุกหัวข้อก่อน publish)
+>   - ผู้ใช้ขอ COPD "ตามความรู้ที่ NL ต้องการก็พอ ที่เหลือเป็นอ่านเพิ่มเติม" → หัวข้อ 1–11 = ระดับ NL · หัวข้อ 12–14 ชื่อขึ้นต้น "อ่านเพิ่มเติม" · ทำด้วย `build_copd.py` + `figs_copd.py` (โน้ต `slides/copd_notes.md`)
+>   - ⚠️ `build_copd.py` เขียน `intro`/`howto` ของชุด chest ทับทั้งก้อน — ข้อความในสคริปต์รวม Thoracentesis ไว้แล้ว ถ้าเพิ่มคาบ chest ใหม่ต้องแก้ INTRO/HOWTO ในสคริปต์นี้ด้วย
+>   - neuro 9/10 และ 21/10 อัปเดตด้วย `update_neuro_handouts.py` (รันซ้ำได้ · คง anims/mnem · ต่อบรรทัดที่ตัวหนาคร่อม) ไม่ต้องรัน build_lp/build_acs ใหม่
+>   - `check_render` แจ้ง "ข้อความทับ" ใน neuro 9/10 และ 21/10 เฉพาะภาพเคลื่อนไหว (anims ของ session dashboard — ข้อความของทุกขั้นซ้อนกันในไฟล์ แต่แสดงทีละขั้น) ไม่ใช่ภาพนิ่ง
 > - **Version 29** (16 ต.ค.): ปุ่ม **"ซ่อนเนื้อหา (โหมดทวน)"** ต่อคาบ (หน้าคาบ + หน้าหัวข้อ) → เหลือแค่หัวข้อ ### / #### เป็นปุ่มกดเปิดทีละส่วน + "จำไปสอบ" พับไว้ · ซ่อน summary · ข้อสอบยังอยู่ · จำค่าใน `state.hide` (localStorage ต่อเครื่อง ไม่ซิงก์บัญชี)
 > - `index.html` บนเว็บ v26 มีแพตช์ CSS ปุ่มซ่อนเมนู (จาก `claude/internal-med-learning-web-j9ca6l`) — รวมเข้า repo แล้ว (commit 0ab309b)
 >
@@ -181,12 +186,14 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | chest | 26 | Arterial blood gas analysis |
 | chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
 | chest | 17 | Respiratory failure + Pleural disease ← อ.สกล (12 หัวข้อ · 36 ข้อ รวมคลังคาบ 17 ครบ · CH-MEQ-03 · CH-OSCE-02/04) |
+| chest | Thoracentesis | Thoracentesis และการแปลผลน้ำ ← Active learning กลุ่ม 5 (12 หัวข้อ · 26 MCQ + MOCK-137/138/142 · MEQ · OSCE หัตถการ · **21 ภาพ**) — BTS 2023 · สไลด์นักศึกษามีจุดผิดบางจุด แก้ตามแนวทางและระบุในบทเรียน |
+| chest | 37 | COPD ← อ. 20 ต.ค. · เรียบเรียงจาก **GOLD 2026** (14 หัวข้อ = NL 11 + อ่านเพิ่มเติม 3 · 30 MCQ + คลังคาบ 37 อีก 8 · MEQ AECOPD + CH-MEQ-02 · OSCE inhaler · **20 ภาพ**) — บางหน้าของ GOLD PDF อ่านไม่ได้ (ภาพ) · ส่วน pneumonia/asthma ของคาบ 37 ในคลังยังไม่มีบทเรียน |
 | nephro | 05 | Fluid electrolyte: Divalent |
 | neuro | 07 | Acute ischemic stroke |
 | neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
 | neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
-| neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
-| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
+| neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ · **+ handout ใหม่ อ.ปองปวีณ์ (23 ต.ค.)** → 9 หัวข้อ · 19 MCQ · 17 ภาพ |
+| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ · **+ handout ACS 2026 อ.เพชรรัตน์ + Delirium quiz (23 ต.ค.)** → 19 หัวข้อ · 45 MCQ · 29 ภาพ (เฉลย quiz ข้อ 1/3 อนุมานจากเนื้อหา — handout ไม่มีเฉลย) |
 | endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
 | endo | 14/10 | Diabetes mellitus (Inc. DKA) ← ศ.นพ.ชัยชาญ · พ. 14 ต.ค. (15 หัวข้อ · 31 MCQ + MOCK-124/188–192 · MEQ DKA รายแรกของ T1 · OSCE ตรวจเท้าเบาหวาน · **22 ภาพ**) — **สไลด์ไม่มี DKA/HHS/hypoglycemia** → หัวข้อ 7–9 อิง ADA 2024 consensus + ADA 2009 + ADA SoC · KDIGO 2022 DM-CKD · IWGDF 2023 · ไม่มีคลัง Ward Drill (ชุด Endo) |
 | endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
@@ -197,6 +204,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | gi | 29/10 | Liver function tests ← นพ.กิตติ · พฤ. 29 ต.ค. (8 หัวข้อ · 15 MCQ + MOCK-035/150 · MEQ paracetamol · SAQ แปล LFT 5 ราย) — ACG 2017 · EASL 2024 PBC · AASLD 2022 Wilson |
 | hemonc | 12/10 | Approach to WBC disorder and lymphadenopathy ← อ.เบญจมาภรณ์ · จ. 12 ต.ค. (13 หัวข้อ · 32 MCQ + MOCK-044/056 · MEQ · SAQ อ่าน CBC · **17 ภาพ**) — สไลด์ 66 หน้าอ่านเป็นภาพรวมลายมือ · หัวข้อ 7 (acute leukemia/APL) แทบทั้งหมดเติมจาก Williams/WHO 2022/ELN 2022 · CML ELN 2020 · CLL iwCLL 2018 · Lugano 2014 |
 | nephro | 14 | Approach to glomerular disease ← พญ.ฉันทิศา · พฤ. 1 ต.ค. (13 หัวข้อ · 24 MCQ + คลังคาบ 14 ครบ 27 + คาบ 28 อีก 8 (proteinuria/lipiduria/LN) + Mock 166–168/172/176/177 · MEQ MN+RVT · SAQ แปล UA 5 ราย · **19 ภาพ**) — ภาพพยาธิ/KDIGO 2021 MN algorithm/LN class ในสไลด์เป็นภาพ → KDIGO 2021 · KDIGO 2025 IgAN · KDIGO 2024 LN/AAV |
+| nephro | 22/10 | Urethral catheterization ← พฤ. 22 ต.ค. (11 หัวข้อ · 24 MCQ · MEQ · OSCE ใส่สาย Foley ในผู้ชาย · **13 ภาพ**) — EAUN 2024 · BAUS-BAUN 2021 · CDC/IDSA 2009 CAUTI · EAU trauma/LUTS · การระบายปัสสาวะคั่งอ้าง Nyman 2010 (ยังไม่ได้ตรวจกับต้นฉบับ) |
 | nephro | 30 | Urinary tract infection ← อ.กรทิพย์ · ศ. 18 ก.ย. (13 หัวข้อ · 31 MCQ + คลังคาบ 30 ครบ 22 + N-OLD-087/N-MCQ-26/N-OLD-074 + MOCK-011/019/020 · MEQ · SAQ · **20 ภาพ**) — สไลด์ภาพล้วนบางหน้าอ่านไม่ได้ · กลไกอาการ/CFU/prostatitis/recurrent/EPN เติมจาก IDSA 2011/2019/2025, EAU 2025, AUA 2019 · CAUTI ≥10² (สไลด์) เทียบ ≥10³ (IDSA) แสดงทั้งคู่ |
 | nephro | Imaging | Essential renal imaging ← อ.ธนิศร (ไม่มีวันในปฏิทิน · ไม่ใช้เลข 19 เพราะคลังคาบ 19 = CKD) (14 หัวข้อ · 33 MCQ + คาบ 28: N-OLD-080–084, N-MCQ-27/28, N-OSCE-03 + MOCK-171/174/175/182 · MEQ · SAQ · **24 ภาพ**) — handout ไม่มีหน้าภาพ → หัวข้อ 5 (contrast/NSF), 7 (nuclear), 14 (ADPKD/mass) เติมทั้งหมดจาก ACR–NKF 2020/2021, ESUR 2018, KDIGO 2025 ADPKD, Bosniak |
 | hemonc | 2/11 | General oncology ← พญ.ปิยวรรณ · จ. 2 พ.ย. (13 หัวข้อ · 29 MCQ + Mock 16 ข้อ (MOCK-021–029, 031–034, 036–038) · MEQ breast cancer + oncologic emergencies · SAQ ยาต้านมะเร็ง + ภาวะฉุกเฉิน) — **หัวข้อ 9–13 (markers คัดกรอง มะเร็งที่พบบ่อย ภาวะฉุกเฉิน) เพิ่มเองตามคำขอผู้ใช้ "ทำไม่ครบ" เพราะไฟล์มี Common cancer แค่เต้านม** · MOCK-030 myeloma เก็บไว้ให้คาบโลหิตวิทยา — GLOBOCAN 2022 · ASCO irAE 2021 · USPSTF 2024 · CDK4/6 · สไลด์ระบาดวิทยาเป็นภาพ |
@@ -207,12 +215,14 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 **ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
 - ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
 - แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
+- ✅ **Drill Version 16** (23 ต.ค.) — เพิ่ม chest **37** (CH-COPD 30 + MEQ/OSCE 2) · chest **THO** Thoracentesis (26 + 2 · แทรกหลังคาบ 17) · nephro **CATH** (24 + 2 · หลัง IMG) · neuro **LP** (19) และ **ACS** (45) (หลังคาบ 07 · MEQ/OSCE ของสองคาบนี้มีใน drill อยู่แล้ว) · ข้อเดิม 1081 ข้อไม่เปลี่ยน (0 removed / 0 changed) · blurb chest/nephro/neuro อัปเดต
+  - **ขั้นตอน publish Drill ตอนนี้มี 3 ขั้น** (เพราะ session dashboard เพิ่มชุดรายคาบใน `dashboard/drill_sets/*.json`): `drill_sync.py /path/drillwt` → `build.py --no-pdf` ในนั้น → `python3 dashboard/drill_tool.py merge <drillwt>/drill.html dashboard/drill_sets <out.html>` → publish `<out.html>` (ไม่ส่ง capabilities) · `LEC_FIX` ใน drill_sync.py คงวันที่ที่ dashboard แก้ไว้
 - ✅ **Drill Version 14** (19 ต.ค.) — เพิ่ม cardio 36 (CAR-ECG-MCQ 28 ข้อ + MEQ/OSCE 2) ผ่าน `drill_sync.py` (JOBS แถว cardio 36) · ข้อเดิมไม่เปลี่ยน
 - ✅ **Drill Version 13** (17 ต.ค.) — บันทึกคำตอบในบัญชี `data/users/<id>/drill` (capabilities `{db:{}, user:{}}` · ใช้งานจริงแล้ว) + แท็บ "สุ่มทำข้อสอบ" (ระบบนี้/ทุกระบบ · 10–100 ข้อ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด) + แก้ป้ายยาวล้นจอมือถือ — ทั้งหมดอยู่ใน `drill_sync.py` · **publish drill ครั้งต่อไปต้องไม่ส่ง capabilities ว่าง** (ละไว้ = คงเดิม)
 - ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
 
-**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **415/570 ข้อ = 73% (19 ต.ค.)**: AIR 110/110 · Cardio 151/180 · Chest 64/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 42 ข้อ) ·
-คาบในคลังที่ยังไม่มีบทเรียน: Cardio 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
+**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **423/570 ข้อ = 74% (23 ต.ค.)**: AIR 110/110 · Cardio 151/180 · Chest 72/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 51 ข้อ) ·
+คาบในคลังที่ยังไม่มีบทเรียน: Cardio 39 HT/HF · Chest 21 CXR/Occupational · 37 ส่วน Pneumonia/Asthma (COPD ทำแล้ว) · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
 คาบ 28 (UA) เหลือ 4 ข้อ: N-MCQ-25, N-OLD-072, N-OLD-073 (cast/AKI) และ N-OLD-077 (Fanconi) — เก็บไว้ให้คาบ AKI/UA
 
 ---

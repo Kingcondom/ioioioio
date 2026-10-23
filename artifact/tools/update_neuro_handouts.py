@@ -918,11 +918,35 @@ def apply(data, lec, new_secs, callouts, guides):
     return n
 
 
+def join_bold_wraps(t):
+    """ต่อบรรทัดที่ถูกตัดกลางตัวหนา (**...\\n...**) — parser ทำตัวหนาทีละบรรทัด จึงเห็นดอกจันดิบ"""
+    if not isinstance(t, str) or "\n" not in t or "**" not in t:
+        return t
+    lines = t.split("\n")
+    out = [lines[0]]
+    for ln in lines[1:]:
+        prev = out[-1]
+        if prev.count("**") % 2 and ln.strip() and not ln.lstrip().startswith(("#", "|", "- ", "* ", "[[")):
+            out[-1] = prev.rstrip() + " " + ln.lstrip()
+        else:
+            out.append(ln)
+    return "\n".join(out)
+
+
+def fix_wraps(o):
+    if isinstance(o, dict):
+        return {k: fix_wraps(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [fix_wraps(v) for v in o]
+    return join_bold_wraps(o)
+
+
 def main():
     data = json.load(open(PATH, encoding="utf-8"))
     before = json.dumps(data, ensure_ascii=False)
     n1 = apply(data, "9/10", LP, LP_CALLOUTS, LP_GUIDE)
     n2 = apply(data, "21/10", ACS, ACS_CALLOUTS, ACS_GUIDE)
+    data = [fix_wraps(L) if L["lec"] in ("9/10", "21/10") else L for L in data]
     # ตรวจ id ซ้ำทั้งไฟล์ + code fence
     seen = set()
     for L in data:

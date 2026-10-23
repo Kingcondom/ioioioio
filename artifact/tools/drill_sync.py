@@ -39,14 +39,25 @@ JOBS = [
     ('hemonc.json', '12/10', 'heme', 'H04', 'HON-WBC-', 'wbc', {'date': 'จ. 12 ต.ค.', 'week': 5, 'al': 0}),
     ('endo.json', '14/10', 'endo', 'E05', 'END-DM-', 'dm', {'date': 'พ. 14 ต.ค.', 'week': 5, 'al': 0}),
     ('cardio.json', '36', 'cardio', '36', 'CAR-ECG-', 'ecg', None),
+    ('chest.json', '37', 'chest', '37', 'CH-COPD-', 'copd', None),
+    ('chest.json', 'Thoracentesis', 'chest', 'THO', 'CH-THOR-', 'thor',
+     {'date': 'Active learning (กลุ่ม 5)', 'week': '', 'al': 1}),
+    ('nephro.json', '22/10', 'nephro', 'CATH', 'NEPH-CATH-', 'cath', {'date': 'พฤ. 22 ต.ค.', 'week': 6, 'al': 0}),
+    ('neuro.json', '9/10', 'neuro', 'LP', 'NEU-LP-', 'lp', {'date': 'ศ. 9 ต.ค.', 'week': 4, 'al': 0}),
+    ('neuro.json', '21/10', 'neuro', 'ACS', 'NEU-ACS-', 'acs', {'date': 'พ. 21 ต.ค.', 'week': 6, 'al': 0}),
 ]
 # วันที่คาบที่ session Lecture Dashboard แก้ใน Drill (19 ต.ค.) — ใส่กลับลง config.lectures ทุกครั้ง
 LEC_FIX = {"07": {"date": "ศ. 18 ก.ย.", "week": 1}, "08": {"date": "ไม่ระบุวัน", "week": 1}, "23": {"date": "อ. 29 ก.ย.", "week": 3}, "33": {"date": "อ. 22 ก.ย.", "week": 2}, "D01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "D02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "N02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": ""}, "O01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}}
 # ตำแหน่งคาบใหม่ใน lecture_order: แทรกหลังคาบนี้ (None = ขึ้นก่อน)
-AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04'}
+AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04', 'THO': '17', 'CATH': 'IMG', 'LP': '07', 'ACS': 'LP'}
 BLURB = {
-    'nephro': '8 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น · '
-              'ข้อจากบทเรียน glomerular disease · UTI · renal imaging',
+    'nephro': '9 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น · '
+              'ข้อจากบทเรียน glomerular disease · UTI · renal imaging · urethral catheterization',
+    'chest': '7 คาบ · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma · วัณโรคนอกปอด (อ.ภานุวัฒน์) · '
+             'Thoracentesis (active learning) · COPD ตาม GOLD 2026',
+    'neuro': 'ชุดระบบประสาท — คาบ acute ischemic stroke (กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด) · '
+             'หัตถการ lumbar puncture และการตรวจตา · acute confusional state ร่วมกับหัวข้ออื่นของระบบประสาทที่ออกสอบบ่อย '
+             '(SAH · เยื่อหุ้มสมองอักเสบ · ชัก · GBS · myasthenia · ไขสันหลังถูกกด · ปวดศีรษะ · เวียนศีรษะ)',
     'heme': '4 คาบบรรยาย · Approach to WBC disorder and lymphadenopathy (อ.เบญจมาภรณ์) · '
             'โลหิตจางและธาลัสซีเมีย · เกล็ดเลือด การแข็งตัวของเลือด และการให้เลือด · มะเร็งเม็ดเลือดและภาวะฉุกเฉินที่เกี่ยวข้อง',
     'endo': '5 หัวข้อ · Diabetes mellitus ตั้งแต่วินิจฉัยถึง DKA (ศ.นพ.ชัยชาญ) · '
