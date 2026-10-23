@@ -672,12 +672,369 @@ sec("nephro-phy1-10", "Glucose, amino acid และโปรตีน — Tm, t
          "SGLT2i → Tm ↓ → threshold ↓ → glucosuria ที่น้ำตาลปกติ", "Glucose titration curve and SGLT2 inhibition", R("Glucose reabsorption", GH), [TUB, DM, DM_B, DMDRUG])],
     [TUB, HANDL, DM, DM_B, DMDRUG, UA, UAS, NEPHROTIC], {"titration": F.titration()}, source=SRC_ADD)
 
+# ═════════════════════════════════════════════ 11
+sec("nephro-phy1-11", "Loop of Henle — ขาลงดูดน้ำ ขาขึ้นดูดเกลือ (furosemide, Bartter)",
+    "thin descending: น้ำ 15% · thin ascending: NaCl ตาม gradient · TAL: NKCC2 ROMK +8 mV · Na 25% Mg 60% · loop diuretic · Bartter · CLDN16/19", 11,
+"""### สามส่วนของ loop — คุณสมบัติตรงข้ามกัน
+| ส่วน | ซึมน้ำ? | ซึมเกลือ? | สิ่งที่เกิด (สไลด์) |
+|---|---|---|---|
+| **Thin descending limb** | ✓ | ✗ | ดูดน้ำ **15%** ออกสู่ medulla ที่เข้มข้น → ของเหลวในท่อเข้มข้นขึ้นเรื่อย ๆ (300 → 1,200 ที่ปลาย loop) |
+| **Thin ascending limb** | ✗ | ✓ (passive) | NaCl ที่เข้มข้นในท่อแพร่ออกตาม concentration gradient |
+| **Thick ascending limb (TAL)** | ✗ | ✓ (active) | ดูด **Na⁺ Cl⁻ K⁺ Ca²⁺ 25%** · **HCO₃⁻ 10%** · **Mg²⁺ 60%** → ของเหลวออกมา **เจือจาง** (hyposmotic) = **diluting segment** |
+
+### TAL — เซลล์ที่ทำให้ยาขับปัสสาวะแรงที่สุด
+[[fig:tal]]
+1. **NKCC2** (Na⁺/K⁺/2Cl⁻) ด้านลูเมนดึงเกลือเข้าเซลล์ — **ADH กระตุ้น** (สไลด์)
+2. K⁺ ที่เข้ามาส่วนใหญ่ **รั่วกลับลูเมนทาง ROMK** (renal outer medullary K⁺ channel) — ให้ NKCC2 มี K⁺ ใช้ต่อ
+3. K⁺ ที่รั่วกลับทำให้ **ลูเมนเป็นบวก ~+8 mV** → ดันไอออนบวก **Ca²⁺ Mg²⁺ (และ Na⁺ K⁺)** ลอดช่องระหว่างเซลล์ที่มี **claudin-16, 19**
+4. ผนัง **ไม่ซึมน้ำ** → ทิ้งเกลือไว้ใน medulla (สร้าง gradient สำหรับทำปัสสาวะเข้มข้น — หัวข้อ 14) และส่งของเหลวเจือจางไปปลายทาง
+5. **CaSR** ด้านเลือดรับรู้ Ca²⁺ สูง → ลดการทำงานของระบบนี้ → ขับ Ca ทิ้งเอง
+
+#### ทำไมถึงมีอาการนี้ — ฤทธิ์ข้างเคียงของ loop diuretic (furosemide, bumetanide, ethacrynic acid)
+| ผล | กลไก (สไลด์) |
+|---|---|
+| **Na ต่ำ · K ต่ำ** | ดูดกลับ Na⁺ K⁺ ที่ TAL ไม่ได้ |
+| **K ต่ำ (เพิ่มอีก)** | flow และ Na⁺ ที่ไปถึง **principal cell** ↑ → หลั่ง K⁺ ↑ |
+| **Ca ต่ำ · Mg ต่ำ** (Ca ในปัสสาวะสูง) | ไม่มี K⁺ รั่วกลับ → **ศักย์บวกในลูเมนหาย** → Ca²⁺ Mg²⁺ ลอดช่องระหว่างเซลล์ไม่ได้ |
+| ทำปัสสาวะเข้มข้นไม่ได้ (ตำรา + หัวข้อ 14) | medulla ไม่ได้เกลือ → gradient หาย |
+| metabolic alkalosis (ตำรา) | ปริมาตรลด → aldosterone → หลั่ง H⁺ ที่ CD + contraction alkalosis (หัวข้อ 12) |
+- ใช้ประโยชน์: furosemide **เพิ่มการขับ Ca** — ใช้ใน hypercalcemia **หลังให้สารน้ำจนปริมาตรพอแล้ว** และเฉพาะเมื่อน้ำเกิน (ตำรา)
+
+### โรคทางพันธุกรรมของ TAL
+| โรค | ความผิดปกติ (สไลด์) | ภาพทางคลินิก |
+|---|---|---|
+| **Bartter syndrome** | autosomal recessive — **NKCC2 บกพร่อง** (ตำรา: ยังมีชนิดที่ ROMK, ClC-Kb, barttin, CaSR) | \"เหมือนกิน furosemide ตลอดชีวิต\": K ต่ำ metabolic alkalosis **ความดันปกติ/ต่ำ** renin/aldosterone สูง **Ca ในปัสสาวะสูง** ปัสสาวะมาก ทำปัสสาวะเข้มข้นไม่ได้ · มักพบในเด็ก |
+| **Familial hypomagnesemia–hypercalciuria** | autosomal recessive — ยีน **CLDN16 หรือ CLDN19** | ช่องระหว่างเซลล์เสีย → **Mg ต่ำ + Ca ในปัสสาวะสูง** → nephrocalcinosis |
+""",
+    ["Thin descending ซึมน้ำ (15%) · TAL ไม่ซึมน้ำ = diluting segment",
+     "TAL ดูด Na 25% · Mg 60% — NKCC2 + ROMK รั่วกลับ → ลูเมน +8 mV → Ca Mg ลอด claudin-16/19",
+     "Loop diuretic: Na ↓ K ↓ Ca ↓ Mg ↓ (Ca ในปัสสาวะสูง)",
+     "Bartter = NKCC2 (หรือ ROMK, ClC-Kb) → เหมือนกิน furosemide: K ต่ำ ด่าง Ca ในปัสสาวะสูง",
+     "CLDN16/19 กลายพันธุ์ → Mg ต่ำ + hypercalciuria"],
+    [mcq(N(21), "A 66-year-old woman with squamous cell lung cancer has calcium 14.2 mg/dL. After 4 L of isotonic saline she is euvolaemic but becomes mildly overloaded, and furosemide is given. By which mechanism does furosemide increase urinary calcium excretion?",
+         ["It stimulates PTH secretion, which increases distal calcium excretion",
+          "It abolishes the lumen-positive voltage created by K⁺ recycling through ROMK, reducing paracellular Ca²⁺ reabsorption in the thick ascending limb",
+          "It enhances basolateral Na⁺/Ca²⁺ exchange in the distal convoluted tubule", "It blocks TRPV5 channels in the collecting duct",
+          "It activates the calcium-sensing receptor in the proximal tubule"], 1,
+         "furosemide บล็อก **NKCC2** → K⁺ ไม่เข้าเซลล์ → ไม่มี K⁺ รั่วกลับทาง ROMK → **ศักย์บวกในลูเมนหาย** → Ca²⁺ (และ Mg²⁺) ลอดช่องระหว่างเซลล์ไม่ได้ → ขับทิ้ง — สไลด์: \"↓K⁺ back leak → ↓Ca²⁺ and Mg²⁺ reabsorption\" · แนวทางปัจจุบันใช้ furosemide ใน hypercalcemia เฉพาะเมื่อให้สารน้ำพอแล้วและมีน้ำเกิน (ตำรา)\n\n"
+         "- **กระตุ้น PTH** — PTH เพิ่มการ **ดูดกลับ** Ca ที่ DT\n- **เพิ่ม NCX ที่ DCT** — คือกลไกของ **thiazide** ซึ่งลดการขับ Ca\n"
+         "- **บล็อก TRPV5 ที่ CD** — TRPV5 อยู่ที่ DT และ furosemide ไม่ได้ออกฤทธิ์ตรงนั้น\n- **กระตุ้น CaSR ที่ PT** — ไม่ใช่กลไกของยา",
+         "Furosemide → ไม่มี K⁺ รั่วกลับ → ลูเมนไม่บวก → Ca หลุด", "TAL transport and loop diuretics", R("Loop of Henle transport — side effects of loop diuretics"), [TUB, HANDL, DIUR, LYTE, LYTE_B]),
+     mcq(N(22), "A 16-year-old boy has muscle cramps, polyuria and nocturia since childhood. BP is 100/60 mmHg. K⁺ is 2.7 mmol/L, HCO₃⁻ 32 mmol/L, Mg²⁺ 2.0 mg/dL, plasma renin and aldosterone are high, and the urine calcium/creatinine ratio is elevated. He cannot concentrate his urine after water deprivation. He takes no medications. Which disorder best fits?",
+         ["Gitelman syndrome", "Liddle syndrome", "Primary hyperaldosteronism", "Bartter syndrome", "Surreptitious vomiting"], 3,
+         "K ต่ำ + metabolic alkalosis + **ความดันต่ำ/ปกติ** + renin/aldosterone สูง = เสีย NaCl จากท่อไต · **Ca ในปัสสาวะสูง** + **ทำปัสสาวะเข้มข้นไม่ได้** + อาการตั้งแต่เด็ก = ความผิดปกติที่ **TAL** → **Bartter syndrome** (NKCC2 บกพร่อง — สไลด์) เหมือนกิน furosemide ตลอดเวลา\n\n"
+         "- **Gitelman** (NCC ที่ DT) — **Ca ในปัสสาวะต่ำ** และ Mg ต่ำชัด เหมือนกิน thiazide · ทำปัสสาวะเข้มข้นได้\n- **Liddle** — **ความดันสูง** renin/aldosterone ต่ำ\n"
+         "- **Primary hyperaldosteronism** — ความดันสูง renin ต่ำ\n- **อาเจียนแอบ** — urine Cl⁻ ต่ำ ไม่มี hypercalciuria และไม่ตรงกับอาการตั้งแต่เด็ก",
+         "Bartter (TAL) = Ca ในปัสสาวะสูง · Gitelman (DT) = Ca ในปัสสาวะต่ำ", "Bartter vs Gitelman", R("Thick ascending limb — Bartter syndrome · Early DT — Gitelman syndrome"), [TUB, HANDL, LYTE, LYTE_B, POLY])],
+    [TUB, HANDL, CONC, DIUR, LYTE, LYTE_B, POLY], {"tal": F.tal()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 12
+sec("nephro-phy1-12", "Distal tubule และ collecting duct — thiazide, aldosterone, K-sparing และทำไม K ต่ำมาคู่กับด่าง",
+    "early DT: NCC ~5% Ca 8% (PTH) · thiazide → Ca ↑ · Gitelman · principal cell ENaC/ROMK (aldosterone) · I-cell A/B · amiloride/spironolactone · Liddle · dRTA · NDI · MCD", 14,
+"""### Early distal tubule (ยังไม่ซึมน้ำ — ส่วนท้ายของ diluting segment)
+[[fig:dct]]
+| สาร | % (สไลด์) | กลไก |
+|---|---|---|
+| NaCl | ~5% | **NCC** (Na⁺/Cl⁻ cotransporter) — AII กระตุ้น |
+| **Ca²⁺** | **8%** | ผ่านเซลล์: ช่อง Ca²⁺ ด้านลูเมน → **calbindin** พาข้ามเซลล์ → NCX/Ca²⁺-ATPase ด้านเลือด · **PTH และ 1,25(OH)₂D₃ เพิ่ม** |
+| Mg²⁺ | 5% | ช่อง Mg²⁺ (TRPM6 — ตำรา) |
+
+#### ทำไมถึงมีอาการนี้ — ฤทธิ์ข้างเคียงของ thiazide (HCTZ, bendroflumethiazide)
+| ผล | กลไก (สไลด์) |
+|---|---|
+| Na ต่ำ · K ต่ำ | ดูดกลับ Na⁺ ที่ DT ไม่ได้ · flow/Na⁺ ไปถึง principal cell ↑ → หลั่ง K⁺ ↑ |
+| **Ca สูง** (Ca ในปัสสาวะต่ำ) | Na⁺ ในเซลล์ต่ำ → **NCX ด้านเลือดทำงานมากขึ้น** → Ca²⁺ ในเซลล์ต่ำ → Ca²⁺ จากลูเมนเข้าเซลล์มากขึ้น |
+| Mg ต่ำ | ลดจำนวนช่อง Mg²⁺ |
+- (ตำรา) **Na ต่ำพบบ่อยกับ thiazide มากกว่า loop**: thiazide ปิด diluting segment ส่วนปลาย แต่ไม่แตะ medulla → CD ยังดูดน้ำได้เต็มที่เมื่อ ADH สูง · loop ทำลาย gradient ของ medulla ไปด้วย น้ำจึงถูกดูดกลับน้อย
+- **Gitelman syndrome** = autosomal recessive — **NCC บกพร่อง** → \"เหมือนกิน thiazide\": K ต่ำ ด่าง Mg ต่ำ **Ca ในปัสสาวะต่ำ** ความดันปกติ มักพบวัยรุ่น–ผู้ใหญ่ อาการน้อยกว่า Bartter
+
+### Late DT และ cortical collecting duct (CCD)
+[[fig:pcell]]
+| เซลล์ | หน้าที่ | ตัวควบคุม (สไลด์) |
+|---|---|---|
+| **Principal cell (2/3)** | ดูด **Na⁺ ทาง ENaC** | aldosterone ⊕ · ANP ⊖ |
+| | หลั่ง **K⁺ ทาง ROMK และ BK** | aldosterone ⊕ · **tubular flow ↑** ⊕ · **Na⁺ ในท่อ ↑** ⊕ |
+| | ดูดน้ำทาง **AQP2** | **ADH** ⊕ · **Ca²⁺ ในท่อสูง → CaSR ยับยั้งการแทรก AQP2 → ปัสสาวะมาก** |
+| **Type A intercalated cell** (สำคัญในภาวะกรด) | หลั่ง H⁺ ทาง **H⁺-ATPase** (aldosterone ⊕) และ **H⁺/K⁺-ATPase** (ดูด K⁺ กลับ) | — |
+| **Type B intercalated cell** (สำคัญในภาวะด่าง) | หลั่ง HCO₃⁻ ทาง Cl⁻/HCO₃⁻ exchanger · หลั่ง K⁺ | — |
+- (ตำรา) ENaC ดูด Na⁺ เข้าโดยไม่มีประจุลบตาม → **ลูเมนเป็นลบ** → ดึง K⁺ ออกทาง ROMK และดึง H⁺ ออก — นี่คือเหตุที่ **Na⁺ ที่ไปถึงมาก + aldosterone สูง = K ต่ำ**
+
+### K-sparing diuretics (สไลด์)
+| กลุ่ม | ยา | ผลข้างเคียง |
+|---|---|---|
+| ENaC blocker | **amiloride, triamterene** | Na ต่ำ · **K สูง** (หลั่ง K⁺ ↓) · **metabolic acidosis** (หลั่ง H⁺ ↓) |
+| aldosterone antagonist | **spironolactone, eplerenone** | เหมือนกัน · (ตำรา) spironolactone เป็นยาหลักของท้องมานในตับแข็ง เพราะปัญหาคือ secondary hyperaldosteronism |
+
+### Medullary collecting duct (MCD)
+- ปกติ **ไม่ซึมน้ำ** → ปล่อยปัสสาวะเจือจาง · มี **ADH** → AQP2 → ดูดน้ำออกสู่ medulla ที่เข้มข้น → **ปัสสาวะเข้มข้น** · Ca²⁺ สูงในท่อยับยั้ง AQP2
+- ดูด Na⁺ (ANP ยับยั้ง) ~4% · หลั่ง K⁺/H⁺ ตามระดับ K และ pH ในเลือด · **ดูด urea ทาง UT-A1 (ADH ⊕)**
+- ปริมาณน้ำที่ดูดกลับขึ้นกับปริมาตร/osmolality ของร่างกายและระดับ ADH (Part II)
+
+### โรคของ distal nephron (สไลด์)
+| โรค | ความผิดปกติ | ภาพ |
+|---|---|---|
+| **Liddle syndrome** | autosomal **dominant** — ENaC **ทำงานเกิน** (gain of function) | ความดันสูงตั้งแต่อายุน้อย K ต่ำ ด่าง แต่ **renin และ aldosterone ต่ำ** · ตอบสนองต่อ **amiloride** ไม่ตอบสนองต่อ spironolactone (ตำรา) |
+| **Distal RTA (type I)** | Cl⁻/HCO₃⁻ exchanger หรือ **H⁺-ATPase** ของ type A I-cell บกพร่อง | หลั่ง H⁺ ไม่ได้ → acidosis · **urine pH > 5.5 เสมอ** · K ต่ำ · นิ่ว/nephrocalcinosis (ตำรา) |
+| **Nephrogenic diabetes insipidus** | ท่อไตไม่ตอบสนองต่อ ADH | ปัสสาวะเจือจางมาก · ให้ desmopressin ไม่ช่วย · สาเหตุ เช่น lithium, Ca สูง, K ต่ำ (ตำรา) |
+
+### แผนที่ยาขับปัสสาวะ — ตำแหน่งทำนายเกลือแร่
+[[fig:diuretic_map]]
+
+#### ทำไมถึงมีอาการนี้ — K ต่ำมาคู่กับ metabolic alkalosis
+[[fig:hypok_alk]]
+| ขั้น | กลไก | ที่มา |
+|---|---|---|
+| 1 | ยาที่ออกฤทธิ์ก่อน CD → Na⁺ และ flow ไปถึง principal cell มาก → ENaC ดูด Na⁺ → ลูเมนลบ → หลั่ง K⁺ | สไลด์ (ทุกยา) + ตำรา |
+| 2 | ปริมาตรลด → aldosterone ↑ → ENaC ↑ (K⁺ ออก) **และ H⁺-ATPase ของ type A ↑** (H⁺ ออก → HCO₃⁻ ใหม่เข้าเลือด) | สไลด์: H⁺-ATPase — aldosterone ⊕ |
+| 3 | K ต่ำ → K⁺ ออกจากเซลล์แลก H⁺ เข้า → เซลล์ท่อไตเป็นกรดภายใน → หลั่ง H⁺/สร้าง NH₄⁺ ↑ · H⁺/K⁺-ATPase ดูด K⁺ แลก H⁺ ทิ้ง → ด่างคงอยู่ | ตำรา |
+- สรุป: **อาเจียน ยาขับปัสสาวะ aldosterone เกิน** ทั้งหมดได้ \"K ต่ำ + ด่าง\" · และแก้ด่างไม่หายถ้าไม่เติม K (และ Cl⁻/ปริมาตร) — รายละเอียดกรด–ด่างใน Part II
+""",
+    ["Thiazide: Na⁺ ในเซลล์ DT ↓ → NCX ดัน Ca²⁺ ออกเลือด → ดูด Ca กลับ ↑ → Ca สูง (loop ตรงข้าม)",
+     "Gitelman = NCC (DT): K ต่ำ Mg ต่ำ Ca ในปัสสาวะต่ำ",
+     "Principal cell: ENaC ดูด Na · ROMK/BK หลั่ง K — aldosterone · flow · Na⁺ ในท่อ เพิ่มการหลั่ง K",
+     "K-sparing (amiloride, spironolactone) → K สูง + acidosis · Liddle = ENaC เกิน (renin/aldo ต่ำ ตอบ amiloride)",
+     "K ต่ำ + ด่าง: Na ไปถึง CD มาก + aldosterone (ENaC + H⁺-ATPase) + K ต่ำทำให้หลั่ง H⁺ ต่อ"],
+    [mcq(N(23), "A 68-year-old woman on hydrochlorothiazide 25 mg daily for hypertension has a calcium of 10.9 mg/dL found on routine testing. PTH is 38 pg/mL (normal) and the 24-hour urine calcium is low. By which tubular mechanism does the thiazide raise her serum calcium?",
+         ["Inhibition of NCC lowers intracellular Na⁺ in the distal convoluted tubule, increasing basolateral Na⁺/Ca²⁺ exchange and apical Ca²⁺ entry",
+          "Inhibition of NKCC2 abolishes the lumen-positive voltage in the thick ascending limb", "Stimulation of PTH secretion from the parathyroid glands",
+          "Blockade of ENaC in the collecting duct", "Increased intestinal calcium absorption due to increased 1α-hydroxylase activity"], 0,
+         "สไลด์: \"Low [Na⁺]i → ↑Na⁺/Ca²⁺ exchanger → ↓[Ca²⁺]i → ↑Ca²⁺ reabsorption → hypercalcemia\" — thiazide ปิด **NCC** → Na⁺ ในเซลล์ DT ต่ำ → NCX ด้านเลือดแลก Na⁺ เข้า/Ca²⁺ ออกได้มากขึ้น → Ca²⁺ ในเซลล์ต่ำ → ดึง Ca²⁺ จากลูเมนเข้าได้มาก → Ca ในปัสสาวะต่ำ Ca ในเลือดสูงเล็กน้อย · (ตำรา) ปริมาตรที่ลดยังเพิ่มการดูด Ca ตามน้ำที่ PT · Ca สูงชัดขณะกิน thiazide ควรนึกถึง primary hyperparathyroidism ที่ซ่อนอยู่\n\n"
+         "- **NKCC2** — คือ loop diuretic ซึ่ง **เพิ่ม** การขับ Ca\n- **กระตุ้น PTH** — PTH ปกติ ไม่ใช่กลไก\n"
+         "- **ENaC** — คือ amiloride ไม่เกี่ยวกับ Ca\n- **1α-hydroxylase ↑** — thiazide ไม่ได้ออกฤทธิ์ที่นี่",
+         "Thiazide: Na⁺i ↓ → NCX ↑ → ดูด Ca กลับ ↑", "Thiazide and distal calcium reabsorption", R("Early distal tubule — side effects of thiazide"), [TUB, HANDL, DIUR, LYTE, LYTE_B, HT, CAPTH]),
+     mcq(N(24), "A 19-year-old man has BP 172/104 mmHg, K⁺ 2.9 mmol/L and HCO₃⁻ 31 mmol/L. Plasma renin and aldosterone are both suppressed. His father developed hypertension in his twenties. His BP falls with amiloride but not with spironolactone. Which disorder is most likely?",
+         ["Primary hyperaldosteronism", "Liddle syndrome", "Gitelman syndrome", "Bartter syndrome", "Renal artery stenosis"], 1,
+         "ความดันสูง + K ต่ำ + ด่าง แต่ **renin และ aldosterone ต่ำ** = มี \"ผลแบบ aldosterone\" โดยไม่มี aldosterone · ถ่ายทอดแบบ autosomal **dominant** · ตอบสนองต่อ **amiloride (บล็อก ENaC ตรง)** แต่ไม่ตอบ spironolactone (ไม่มี aldosterone ให้บล็อก) → **Liddle syndrome = ENaC gain of function** (สไลด์)\n\n"
+         "- **Primary hyperaldosteronism** — aldosterone **สูง** และตอบ spironolactone\n- **Gitelman / Bartter** — ความดัน **ปกติ/ต่ำ** renin/aldosterone สูง\n"
+         "- **Renal artery stenosis** — renin **สูง**",
+         "Liddle: HT + K ต่ำ + renin/aldo ต่ำ → ตอบ amiloride", "ENaC and Liddle syndrome", R("Late DT and CCD transport — Liddle syndrome"), [TUB, HANDL, HT, HT_B, LYTE, DIUR]),
+     mcq(N(25), "A 71-year-old man started on chlorthalidone 25 mg daily is found 3 weeks later to have K⁺ 2.9 mmol/L and HCO₃⁻ 33 mmol/L. He has no vomiting or diarrhoea. Which explanation best links his hypokalaemia and metabolic alkalosis?",
+         ["The drug directly inhibits ROMK and H⁺/K⁺-ATPase", "Increased distal Na⁺ delivery and flow plus volume-induced aldosterone increase both K⁺ secretion by principal cells and H⁺ secretion by type A intercalated cells",
+          "The drug stimulates carbonic anhydrase in the proximal tubule", "Urinary bicarbonate loss causes potassium to shift into cells",
+          "Thiazides increase gastrointestinal potassium loss"], 1,
+         "ยาที่ออกฤทธิ์ก่อน CD → Na⁺ และน้ำไปถึง **principal cell** มาก (สไลด์: ↑tubular flow & ↑tubular [Na⁺] → ↑K⁺ secretion) · ปริมาตรลด → **aldosterone ↑** → ENaC ↑ (K⁺ ออก) และ **H⁺-ATPase ของ type A I-cell ↑** (สไลด์: aldosterone ⊕) → หลั่ง H⁺ = สร้าง HCO₃⁻ ใหม่ → **ด่าง** · K ต่ำเองยิ่งเพิ่มการหลั่ง H⁺/สร้าง NH₄⁺ (ตำรา) → วงจรต่อเนื่อง\n\n"
+         "- **บล็อก ROMK/H⁺K⁺-ATPase ตรง** — ถ้าบล็อก ROMK จะได้ K **สูง**\n- **กระตุ้น CA** — ไม่ใช่กลไก (acetazolamide **ยับยั้ง** CA ได้ acidosis)\n"
+         "- **เสีย HCO₃⁻ ในปัสสาวะ** — จะได้ acidosis ไม่ใช่ alkalosis\n- **เสีย K ทางลำไส้** — thiazide ไม่ทำ",
+         "Diuretic → Na ถึง CD + aldosterone → เสีย K⁺ และ H⁺ พร้อมกัน", "Hypokalaemia and metabolic alkalosis", R("Late DT and CCD transport · Thiazide side effects", GH), [TUB, HANDL, ACIDB, DIUR, LYTE, LYTE_B])],
+    [TUB, HANDL, ACIDB, CONC, DIUR, LYTE, LYTE_B, HT, RTA, DI, DI_B, CIRRH, HYPERK],
+    {"dct": F.dct(), "pcell": F.pcell(), "diuretic_map": F.diuretic_map(), "hypok_alk": F.hypok_alk()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 13
+sec("nephro-phy1-13", "การหลั่งสารอินทรีย์และ fractional excretion — drug interaction, creatinine และ FENa",
+    "OA⁻ (OAT/MRP) · OC⁺ (OCT/MATE) · probenecid–penicillin · NSAID–methotrexate · trimethoprim/cimetidine · FE = (U×P_Cr)/(P×U_Cr) · FENa < 1% vs > 2%", 11,
+"""### Organic substance secretion — late proximal tubule (active)
+สารอินทรีย์จำนวนมาก **จับโปรตีนในเลือด จึงกรองไม่ได้** → ไตกำจัดด้วยการ \"ดึงจากเลือดแล้วหลั่งลงท่อ\" ผ่านเซลล์ PT ส่วนปลาย
+[[fig:oat_oct]]
+| ระบบ | สารจากร่างกาย (สไลด์) | ยา (สไลด์) | ตัวขนส่ง |
+|---|---|---|---|
+| **Organic anion (OA⁻ กรดอ่อน)** | bile salts · fatty acid · hippurates (**PAH**) · hydroxybenzoates · oxalate · **prostaglandin** · **urate** | acetazolamide · chlorothiazide · ethacrynate · **furosemide** · **penicillin** · **probenecid** · salicylates | ด้านเลือด NaDC + **OAT** · ด้านลูเมน **MRP**, BCRP |
+| **Organic cation (OC⁺ ด่างอ่อน)** | acetylcholine · choline · **creatinine** · dopamine · E/NE · guanidine · histamine · serotonin · thiamine | atropine · isoproterenol · **cimetidine** · morphine · procaine · quinine | ด้านเลือด **OCT** · ด้านลูเมน **MATE**, MDR |
+
+#### ทำไมถึงมีอาการนี้ — drug interaction ที่ท่อไต (สไลด์)
+| คู่ที่แย่งตัวขนส่ง | ผล |
+|---|---|
+| **probenecid** ↔ penicillin หรือ cidofovir (OAT) | หลั่ง penicillin ช้าลง → ระดับยาสูงนานขึ้น (เคยใช้เป็นประโยชน์ในการรักษา gonorrhea/ซิฟิลิส · ให้ probenecid กับ cidofovir เพื่อลดยาเข้าเซลล์ PT ซึ่งเป็นพิษ — ตำรา) |
+| **NSAID** ↔ **methotrexate** (OAT) | methotrexate ค้าง → กดไขกระดูก แผลในปาก (ตำรา) |
+| **trimethoprim หรือ cimetidine** ↔ procainamide (OCT) | procainamide ค้าง |
+| **pyrimethamine** ↔ **metformin** (OCT/MATE) | metformin ค้าง → เสี่ยง lactic acidosis (ตำรา) |
+- (ตำรา) **creatinine เป็น OC⁺** และถูกหลั่งราว 10–20% → trimethoprim/cimetidine/dolutegravir บล็อก OCT2/MATE → **sCr ขึ้น 0.2–0.4 mg/dL โดย GFR ไม่เปลี่ยน** (BUN, cystatin C, ปริมาณปัสสาวะเท่าเดิม) · trimethoprim ยังบล็อก ENaC แบบ amiloride → K สูง
+- furosemide/thiazide ต้อง **ถูกหลั่งลงลูเมนก่อน** จึงไปถึงตำแหน่งออกฤทธิ์ด้านลูเมน → ใน CKD สารอินทรีย์ที่คั่งแย่งตัวขนส่ง ต้องใช้ขนาดยาสูงขึ้น (ตำรา)
+
+### Fractional excretion (FE)
+**FE = สัดส่วน (%) ของสารที่ถูกกรองแล้วออกมาในปัสสาวะ** → บอกว่าท่อไตทำอะไรกับสารนั้น
+| สูตร | หมายเหตุ |
+|---|---|
+| FE_A = (U_A × V) ÷ (P_A × GFR) × 100 | ปริมาณที่ขับ ÷ ปริมาณที่กรอง |
+| = (U_A × P_Cr) ÷ (P_A × U_Cr) × 100 | แทน GFR ด้วย CCr → **V ตัดหายไป** ใช้ปัสสาวะครั้งเดียว (spot) ได้ |
+| = C_A ÷ C_Cr × 100 | \"clearance ratio\" |
+[[fig:fe_scale]]
+| FE | ความหมาย | ตัวอย่าง (สไลด์) |
+|---|---|---|
+| = 100% | กรองอย่างเดียว | inulin, creatinine |
+| < 100% | ถูกดูดกลับสุทธิ | Na (1–2%) · K (30–40%) · urea (20–40%) · Pi (15–20%) · Cl |
+| = 0% | ดูดกลับหมด | glucose, amino acid |
+| > 100% | ถูกหลั่งเพิ่ม | PAH, organic acid/base |
+
+#### ทำไมถึงมีอาการนี้ — FENa แยกสาเหตุ AKI (สไลด์)
+| | Pre-renal (ไตขาดเลือด) | ATN (ท่อไตตาย) |
+|---|---|---|
+| ท่อไต | ยังดี + AII/aldosterone/sympathetic สั่งดูด Na⁺ เต็มที่ | เซลล์ตาย ตัวขนส่ง Na⁺ เสีย |
+| **FENa** | **< 1%** | **> 2%** |
+| BUN/Cr | > 20 (หัวข้อ 8) | ~10–15 |
+| Urine osm | สูง (> 500) | ~300 (เท่าพลาสมา — หัวข้อ 14) |
+- ข้อจำกัด (ตำรา): ได้ยาขับปัสสาวะ → FENa สูงหลอก → ใช้ **FEurea < 35%** แทน (urea ถูกดูดที่ PT ซึ่ง loop/thiazide ไม่ได้ยุ่ง) · CKD เดิม, contrast, rhabdomyolysis, sepsis ระยะแรก อาจทำให้ FENa ต่ำได้แม้เป็น ATN
+""",
+    ["OA⁻: OAT (เลือด) → MRP (ลูเมน) — PAH, penicillin, furosemide, urate, methotrexate",
+     "OC⁺: OCT2 (เลือด) → MATE (ลูเมน) — creatinine, metformin, cimetidine",
+     "Probenecid ↔ penicillin · NSAID ↔ methotrexate · trimethoprim/cimetidine ↔ creatinine/procainamide · pyrimethamine ↔ metformin",
+     "FE = (U × P_Cr)/(P × U_Cr) × 100 — ใช้ spot urine ได้",
+     "FENa < 1% pre-renal · > 2% ATN · ได้ diuretic ใช้ FEurea < 35%"],
+    [mcq(N(26), "A 42-year-old man with normal kidney function starts high-dose trimethoprim–sulfamethoxazole for Pneumocystis pneumonia. By day 4, serum creatinine has risen from 0.9 to 1.2 mg/dL and K⁺ from 4.2 to 5.3 mmol/L. Urine output, BUN and cystatin C are unchanged and urinalysis is bland. What is the best explanation for the creatinine rise?",
+         ["Acute interstitial nephritis from sulfamethoxazole", "Sulfonamide crystal nephropathy",
+          "Trimethoprim inhibition of tubular creatinine secretion through organic cation transporters, without a true fall in GFR",
+          "Pre-renal AKI from volume depletion", "Acute tubular necrosis from trimethoprim"], 2,
+         "creatinine เป็น **organic cation** (สไลด์) ถูกหลั่งที่ PT ส่วนหนึ่ง · trimethoprim (เช่นเดียวกับ cimetidine) **แย่ง OCT2/MATE** → หลั่ง creatinine ลดลง → sCr ขึ้น 0.2–0.4 mg/dL **ทั้งที่ GFR เท่าเดิม** — ยืนยันด้วย BUN, cystatin C, ปริมาณปัสสาวะ และตะกอนปกติ · K สูงเพราะ trimethoprim บล็อก ENaC แบบ amiloride (ตำรา) → ไม่ต้องหยุดยาเพราะ Cr อย่างเดียว แต่ติดตาม K\n\n"
+         "- **AIN** — มีไข้ ผื่น WBC cast และ BUN/cystatin C ขึ้นด้วย\n- **crystal** — จะเห็นผลึกในปัสสาวะ และ GFR ลดจริง\n"
+         "- **pre-renal** — BUN ขึ้นมากกว่า Cr ปัสสาวะน้อย\n- **ATN** — ตะกอน muddy brown FENa สูง GFR ลดจริง",
+         "Trimethoprim/cimetidine → sCr ↑ โดย GFR ไม่เปลี่ยน", "Organic cation secretion and creatinine", R("Organic substance secretion — OC⁺, drug interaction at OCT", BB), [TUB, PK, ADR, RFT, HYPERK]),
+     mcq(N(27), "A 67-year-old man with vomiting for 3 days has creatinine 3.0 mg/dL (baseline 1.0). He takes no diuretics. Spot urine: Na⁺ 20 mmol/L, creatinine 120 mg/dL; plasma Na⁺ 135 mmol/L. What is his FENa and its most likely interpretation?",
+         ["0.37% — pre-renal AKI with intact tubular Na⁺ reabsorption", "0.37% — acute tubular necrosis", "2.7% — acute tubular necrosis",
+          "3.7% — pre-renal AKI", "27% — post-renal obstruction"], 0,
+         "**FENa = (U_Na × P_Cr) ÷ (P_Na × U_Cr) × 100** = (20 × 3.0) ÷ (135 × 120) × 100 = 60 ÷ 16,200 × 100 = **0.37%** → **< 1%** = ท่อไตยังดูด Na⁺ ได้เต็มที่ตามที่ AII/aldosterone สั่ง = **pre-renal** (สไลด์) · ไม่ได้ยาขับปัสสาวะ → แปลผลได้ตรง\n\n"
+         "- **0.37% — ATN** — ATN ตัวขนส่งเสีย FENa > 2%\n- **2.7%** — คำนวณผิด (กลับ P_Cr/U_Cr หรือเลื่อนจุด)\n"
+         "- **3.7%** — ตัวเลขผิด และถ้า > 2% จะเข้าได้กับ ATN ไม่ใช่ pre-renal\n- **27%** — ผิดหลักทศนิยม และ FENa ไม่ได้ใช้วินิจฉัย post-renal",
+         "FENa = (U_Na × P_Cr)/(P_Na × U_Cr) × 100 · < 1% pre-renal", "Fractional excretion of sodium", R("Clinical assessment of FE — FENa"), [TUB, RFT, AKI, AKI_B, LYTE_LAB])],
+    [TUB, PK, ADR, RFT, AKI, AKI_B, LYTE_LAB, GOUT, URIC], {"oat_oct": F.oat_oct(), "fe_scale": F.fe_scale()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 14
+sec("nephro-phy1-14", "ทำปัสสาวะเข้มข้นและเจือจาง — countercurrent, urea recycling, C_osm และ C_H₂O",
+    "urine 50–1,200 mOsm · countercurrent multiplier (loop) + exchanger (vasa recta) · urea 40–50% ของ inner medulla · C_osm ~3 · C_H₂O ~ −1 · water vs osmotic diuresis · oliguria/anuria/polyuria", 12,
+"""### ภาพรวม
+- ปัสสาวะมี osmolality ได้ตั้งแต่ **50 ถึง 1,200–1,400 mOsm/kg H₂O** (พลาสมา ~300)
+- **ทำให้เจือจาง**: TAL + early DT ดูดเกลือโดยไม่ดูดน้ำ (diluting segment) → ของเหลว ~100 mOsm
+- **ทำให้เข้มข้น**: late DT + CD ดูดน้ำออก — ขึ้นกับ 2 อย่าง: **① ระดับ ADH** และ **② ความเข้มข้นของ medulla** (สร้างจาก countercurrent + urea recycling)
+- ปริมาตรเกิน หรือ **DI** → ดูดเกลือโดยไม่ดูดน้ำต่อจนสุดทาง → ปัสสาวะเจือจาง · ปริมาตรลด หรือ **SIADH** → late DT/CD ดูดน้ำ → ปัสสาวะเข้มข้น
+
+### Countercurrent mechanism
+[[fig:countercurrent]]
+| กลไก | ที่ไหน | ทำอะไร | ปัจจัยที่เปลี่ยน (สไลด์) |
+|---|---|---|---|
+| **Countercurrent multiplication** | loop of Henle | **สร้าง** gradient: ขาขึ้นดูดเกลือทิ้งไว้ใน medulla ขาลงเสียน้ำให้ medulla → ทวีความเข้มข้นจนถึง 1,200 ที่ papilla | ADH ↑ NaCl reabsorption (TAL) → gradient ↑ · **loop diuretic → gradient ↓** |
+| **Countercurrent exchange** | vasa recta | **รักษา** gradient: เลือดไหลรูปตัว U แลกเกลือ/น้ำไปมา ไม่พาเกลือออก | ปริมาตรเกิน หรือ **osmotic diuretic** → เลือดใน vasa recta ไหลเร็ว → **washout** → gradient ↓ |
+
+### Urea recycling
+- urea คิดเป็น **~40–50% (500–600 mOsm/kg)** ของความเข้มข้นใน inner medulla
+- (ตำรา — ภาพในสไลด์จับคู่ตัวเลขไม่ได้) urea ถูกดูดกลับ ~50% ที่ PT · ถูกหลั่งกลับเข้า thin limb · ส่วน cortex และ outer medullary CD ไม่ซึม urea → ความเข้มข้นในท่อสูงขึ้นเมื่อน้ำถูกดูดออก · ที่ **inner medullary CD** มี **UT-A1** ให้ urea ออกสู่ interstitium
+| ปัจจัย (สไลด์) | ผล |
+|---|---|
+| **อาหารโปรตีนสูง** | urea ในเลือด ↑ → สะสมใน inner medulla ↑ → ความเข้มข้น ↑ |
+| **ขาดน้ำ** | ADH ↑ → ดูดน้ำใน CD ↑ → urea ในท่อเข้มข้น · ADH ↑ → แทรก UT-A1 ↑ → ดูด urea ↑ → BUN สูงขึ้นมากกว่า Cr (**BUN/Cr > 20** ใน pre-renal) |
+- BUN ปกติ 5–25 mg/dL
+
+### สิ่งที่เพิ่มความเข้มข้นของ medulla (สไลด์)
+- NaCl transport ที่ loop ↑ · **ADH ↑** (NaCl ที่ TAL, น้ำที่ late DT/CD, urea ที่ IMCD) · **GFR ↓** (ไหลช้า มีเวลาดูดมากขึ้น) · **เลือดใน vasa recta ↓** (ชะล้างน้อย) · อาหารโปรตีนสูง
+
+### วัดความสามารถเจือจาง/ทำให้เข้มข้น: C_osm และ C_H₂O
+[[fig:ch2o]]
+| ค่า | สูตร | ปกติ | ความหมาย (สไลด์) |
+|---|---|---|---|
+| **Osmolal clearance (C_osm)** | (U_osm × V) ÷ P_osm | ~3 mL/min | น้ำที่ต้องใช้ขนตัวละลายทั้งหมดในปัสสาวะ ถ้าเข้มข้นเท่าพลาสมา · ↑ เมื่อกินโปรตีนมาก ได้ยาขับปัสสาวะ เบาหวาน · ↓ เมื่ออดอาหาร/โปรตีนต่ำ |
+| **Free water clearance (C_H₂O)** | V − C_osm | ~ −1 mL/min | น้ำเปล่าที่ไตขับ (บวก) หรือเก็บไว้ (ลบ) — ขึ้นกับ ADH ที่ late DT/CD |
+| U_osm = P_osm | C_H₂O = 0 | | เจือจาง/เข้มข้นไม่ได้ — **ได้ loop diuretic นาน · ATN** |
+| U_osm > P_osm | C_H₂O ลบ | | เก็บน้ำ — ขาดน้ำ เสียปริมาตร **SIADH** |
+| U_osm < P_osm | C_H₂O บวก | | ทิ้งน้ำ — ดื่มน้ำมาก **DI** |
+
+### ปริมาณปัสสาวะ (สไลด์)
+| คำ | เกณฑ์ |
+|---|---|
+| ปกติ | ~1–1.5 L/วัน |
+| **Oliguria** (antidiuresis) | < 400 mL/วัน |
+| **Anuria** | < 50 mL/วัน (บางตำราใช้ < 100) |
+| Diuresis | > 2 mL/min (> 2.8 L/วัน) |
+| **Polyuria** | > 3 L/วัน |
+- **Water diuresis** (C_H₂O ↑↑↑ C_osm ↔): ดื่มน้ำมาก, DI · **Osmotic diuresis** (C_osm ↑↑↑ C_H₂O ↓): ยาขับปัสสาวะ, เบาหวาน
+- (ตำรา) oliguria < 400 mL/วัน มาจาก **ปริมาณตัวละลายที่ต้องขับต่อวัน (~600 mOsm) ÷ ความเข้มข้นสูงสุด (~1,200)** = 0.5 L → ต่ำกว่านี้ขับของเสียไม่หมดแม้ไตเข้มข้นเต็มที่
+""",
+    ["Urine 50–1,200 mOsm · TAL/early DT ทำให้เจือจาง · late DT/CD + ADH ทำให้เข้มข้น",
+     "Countercurrent multiplier (loop) สร้าง gradient · exchanger (vasa recta) รักษาไว้ · washout เมื่อเลือดไหลเร็ว",
+     "Urea ~40–50% ของ inner medulla · ADH เพิ่ม UT-A1 · โปรตีนสูงเพิ่ม gradient",
+     "C_osm = U_osm·V/P_osm (~3) · C_H₂O = V − C_osm (~ −1) — บวก = DI/ดื่มน้ำ · ลบ = ขาดน้ำ/SIADH · 0 = ATN/loop",
+     "Oliguria < 400 mL/วัน · anuria < 50 · polyuria > 3 L/วัน"],
+    [mcq(N(28), "Two days after transsphenoidal pituitary surgery, a 34-year-old man passes 8.6 L of urine per day. Plasma osmolality is 300 mOsm/kg, urine osmolality 100 mOsm/kg and urine flow 6 mL/min. Which pair of values and interpretation is correct?",
+         ["C_osm 2 mL/min, C_H₂O +4 mL/min — water diuresis", "C_osm 6 mL/min, C_H₂O 0 mL/min — isosmotic urine",
+          "C_osm 18 mL/min, C_H₂O −12 mL/min — osmotic diuresis", "C_osm 2 mL/min, C_H₂O −4 mL/min — antidiuresis",
+          "C_osm 4 mL/min, C_H₂O +2 mL/min — osmotic diuresis"], 0,
+         "**C_osm** = (U_osm × V) ÷ P_osm = (100 × 6) ÷ 300 = **2 mL/min** · **C_H₂O** = V − C_osm = 6 − 2 = **+4 mL/min** → ไตทิ้งน้ำเปล่า 4 mL ทุกนาที โดยตัวละลายไม่เพิ่ม = **water diuresis** — หลังผ่าตัดต่อมใต้สมองนึกถึง **central DI** (ADH ขาด → CD ไม่ซึมน้ำ) · สไลด์: water diuresis = C_H₂O ↑↑↑ C_osm ↔\n\n"
+         "- **C_osm 6, C_H₂O 0** — ใช้ได้เมื่อ U_osm = P_osm เท่านั้น\n- **C_osm 18** — คูณ 300 × 6 ÷ 100 กลับด้าน\n"
+         "- **C_H₂O −4** — เครื่องหมายผิด ปัสสาวะเจือจางกว่าพลาสมา C_H₂O ต้องบวก\n- **C_osm 4** — คำนวณผิด และ osmotic diuresis จะมี U_osm ใกล้/สูงกว่าพลาสมา",
+         "U_osm < P_osm → C_H₂O บวก → water diuresis (DI)", "Osmolal and free-water clearance", R("Clinical assessment — Cosm and CH₂O · Diuresis"), [CONC, OSM, POLY, DI, DI_B]),
+     mcq(N(29), "A 64-year-old man with heart failure has received a continuous high-dose furosemide infusion for 3 days. Even when he becomes volume depleted with high ADH levels, his urine osmolality stays close to 300 mOsm/kg. Which explanation is best?",
+         ["Furosemide blocks the V2 receptor on principal cells", "Blocking NKCC2 in the thick ascending limb abolishes the medullary osmotic gradient, so water cannot be drawn out of the collecting duct even with ADH",
+          "Furosemide inhibits aquaporin-1 in the proximal tubule", "Furosemide increases vasa recta flow by constricting the efferent arteriole",
+          "Furosemide causes central diabetes insipidus"], 1,
+         "การทำปัสสาวะเข้มข้นต้องมี **ADH + medulla ที่เข้มข้น** · TAL คือเครื่องยนต์ของ countercurrent multiplication · furosemide ปิด **NKCC2** → เกลือไม่ถูกทิ้งใน medulla → **gradient หาย** (สไลด์: loop diuretic → ↓ medullary osmotic gradient) → แม้ ADH สูง AQP2 เปิด ก็ไม่มีแรงดึงน้ำออก → ปัสสาวะ isosmotic · สไลด์จัด \"prolonged loop diuretic\" ไว้ในกลุ่ม U_osm = P_osm (C_H₂O = 0) · ภาวะนี้ยังทำให้ ทำปัสสาวะเจือจางไม่ได้ด้วย (TAL คือ diluting segment)\n\n"
+         "- **บล็อก V2** — คือ vaptan ไม่ใช่ furosemide\n- **AQP1 ที่ PT** — ไม่เกี่ยวกับการทำให้เข้มข้นขั้นสุดท้าย\n"
+         "- **หด efferent เพิ่ม vasa recta** — ไม่ใช่กลไกของยา\n- **central DI** — ADH สูงอยู่ ไม่ใช่ขาด",
+         "Loop diuretic → medulla washout → U_osm ≈ 300 แม้ ADH สูง", "Countercurrent multiplication and loop diuretics", R("Countercurrent multiplication · CH₂O = 0 examples"), [CONC, DIUR, OSM, HF])],
+    [CONC, OSM, POLY, OLIG, ANURIA, OLIG_B, DI, DI_B, SIADH, SIADH_B, DIUR, RFT, DM],
+    {"countercurrent": F.countercurrent(), "ch2o": F.ch2o()}, source=SRC_ADD)
+
 # ── END SECTIONS
 
 
 # ═════════════════════════════════════════════ ประกอบคาบ
 LECNAME = "สรีรวิทยาไตพื้นฐาน I (Watchara Chongsa PhD)"
-MEQ, OSCE = [], []
+MEQ = [{"id": "NEPH-PHY1-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Hemodynamic AKI from NSAID + ACEi + thiazide during diarrhoea — Starling/arteriole mechanism, FENa/FEurea, concentrating ability, Na and K",
+ "vignette": """ผู้ป่วยหญิงไทยอายุ 74 ปี มาด้วยอ่อนเพลีย ปัสสาวะออกน้อย 2 วัน
+PI: ถ่ายเหลวเป็นน้ำวันละ 6–8 ครั้งมา 4 วัน กินได้น้อย · ปวดเข่าจึงซื้อ ibuprofen 400 mg วันละ 3 ครั้งมากินเองมา 1 สัปดาห์
+PH: ความดันโลหิตสูงและหัวใจล้มเหลว (LVEF 40%) — enalapril 10 mg วันละ 2 ครั้ง · hydrochlorothiazide 25 mg วันละครั้ง
+PE: BP 94/58 mmHg (ปกติ 130/80) · PR 108/min · ปากแห้ง JVP แบน ไม่บวม ปอดไม่มี crepitation
+Lab: BUN 64 mg/dL · Cr 2.6 mg/dL (3 เดือนก่อน 1.0) · Na 129 · K 5.4 · Cl 102 · HCO₃⁻ 18 mmol/L
+UA: SG 1.025 · protein negative · ไม่พบเซลล์ · hyaline cast เล็กน้อย
+Spot urine: Na 15 mmol/L · Cr 90 mg/dL · urea nitrogen 400 mg/dL · osmolality 560 mOsm/kg""",
+ "questions": [
+  {"q": "1. จงอธิบายกลไกที่ทำให้ GFR ของผู้ป่วยลดลง โดยระบุบทบาทของ afferent/efferent arteriole ยาทั้ง 3 ตัว และความดันโลหิต (4 คะแนน)",
+   "a": """**ภาวะพื้นฐาน**: ท้องเสีย + กินได้น้อย + thiazide → ปริมาตรลด → ไตต้องพยุง GFR ด้วยสองมือ: **PG ขยาย afferent** และ **AII หด efferent** (1)
+**ibuprofen** ยับยั้ง COX → PG ↓ → **afferent หด** → เลือดเข้ากระจุกน้อยลง (1)
+**enalapril** ตัด AII → **efferent คลาย** → P_GC ไม่มีอะไรพยุง → NFP ↓ → GFR ↓ · ร่วมกับ diuretic = **\"triple whammy\"** (1)
+**ความดัน**: MAP = (94 + 2 × 58) ÷ 3 ≈ **70 mmHg** ต่ำกว่าช่วง autoregulation (80–170; สไลด์: autoregulation หายเมื่อ < 75) → RBF/GFR ตกตามความดัน (1)"""},
+  {"q": "2. จงคำนวณ FENa, FEurea และ BUN/Cr ratio และแปลผล — ทำไม FEurea มีประโยชน์ในผู้ป่วยรายนี้ (4 คะแนน)",
+   "a": """**FENa** = (U_Na × P_Cr) ÷ (P_Na × U_Cr) × 100 = (15 × 2.6) ÷ (129 × 90) × 100 ≈ **0.34%** (1)
+**FEurea** = (U_urea × P_Cr) ÷ (BUN × U_Cr) × 100 = (400 × 2.6) ÷ (64 × 90) × 100 ≈ **18%** (1)
+**BUN/Cr** = 64 ÷ 2.6 ≈ **25** (> 20) (0.5)
+แปลผล: ทั้งสามค่าเข้าได้กับ **pre-renal/hemodynamic AKI** — ท่อไตยังดูด Na⁺ และ urea กลับเต็มที่ (0.5)
+**FEurea**: ผู้ป่วยได้ **thiazide** ซึ่งทำให้ FENa สูงหลอก (Na หลุดที่ DT) · urea ถูกดูดกลับที่ PT ซึ่ง thiazide ไม่ได้ยุ่ง → FEurea < 35% ยืนยัน pre-renal ได้แม้ได้ยาขับปัสสาวะ (1)"""},
+  {"q": "3. ปัสสาวะ SG 1.025 และ osmolality 560 mOsm/kg บอกอะไรเกี่ยวกับท่อไต และทำไม BUN จึงขึ้นมากกว่า creatinine (3 คะแนน)",
+   "a": """**ทำปัสสาวะเข้มข้นได้** = medulla ยังมี gradient + CD ตอบสนองต่อ ADH (ปริมาตรลด → ADH ↑) → C_H₂O ติดลบ · ใน ATN ท่อไตเสีย → U_osm ≈ 300 (isosmotic) → ข้อนี้สนับสนุนว่าท่อไตยังดี (1.5)
+**BUN > Cr**: AII หด efferent → **FF ↑** → peritubular π_c ↑ P_c ↓ → PT ดูดน้ำกลับมาก urea ตามน้ำ (glomerulotubular balance) + ADH เพิ่ม **UT-A1** ที่ inner medullary CD → urea ถูกดูดกลับ · creatinine ไม่ถูกดูดกลับ → BUN/Cr > 20 (1.5)"""},
+  {"q": "4. จงอธิบายกลไกที่ทำให้ (ก) Na 129 mmol/L และ (ข) K 5.4 mmol/L ทั้งที่ผู้ป่วยได้ thiazide และท้องเสีย (3 คะแนน)",
+   "a": """(ก) **Na ต่ำ**: thiazide ปิด NCC ที่ **early DT ซึ่งเป็นส่วนหนึ่งของ diluting segment** → สร้างน้ำเปล่า (free water) ได้น้อย · แต่ **medulla ยังเข้มข้น** (thiazide ไม่แตะ TAL) และปริมาตรลดกระตุ้น **ADH** (non-osmotic) → CD ดูดน้ำกลับ → น้ำคั่งมากกว่าเกลือ + เสีย Na ทางอุจจาระ/ปัสสาวะ (1.5)
+(ข) **K สูง**: GFR ↓ และ **Na⁺/flow ที่ไปถึง principal cell ↓** (PT ดูดกลับมาก) → หลั่ง K⁺ ↓ · **enalapril** → aldosterone ↓ → ENaC/ROMK ↓ · **NSAID** → PG ↓ → renin ↓ (ตำรา) · ผลเหล่านี้ชนะฤทธิ์ขับ K ของ thiazide (1.5)"""},
+  {"q": "5. จงวางแผนการดูแลโดยใช้หลักสรีรวิทยาจากข้อ 1–4 และบอกสิ่งที่ต้องระวังระหว่างแก้ไข (3 คะแนน)",
+   "a": """**เอาสาเหตุออก**: หยุด ibuprofen · พัก enalapril และ HCTZ ชั่วคราว (1)
+**คืนปริมาตร**: isotonic saline ทีละน้อยประเมินซ้ำบ่อย (LVEF 40% — ฟังปอด ดู JVP) · ติดตามปัสสาวะ Cr K Na ทุก 6–12 ชม. (1)
+**ระวัง**: เมื่อปริมาตรกลับ ADH ที่กระตุ้นจากปริมาตรจะหาย → ปัสสาวะเจือจางออกมาก (water diuresis) → **Na อาจขึ้นเร็วเกินไป** — คุมไม่ให้เกิน 8–10 mmol/L ใน 24 ชม. (osmotic demyelination; รายละเอียดใน Part II) · K สูงแก้ตามแนวทางถ้า > 6 หรือ ECG เปลี่ยน · เมื่อหายแล้วเริ่ม ACEi ใหม่เมื่อปริมาตรปกติ · หลีกเลี่ยง NSAID · สอน \"sick day rules\" หยุด ACEi/diuretic ชั่วคราวเมื่อท้องเสีย/อาเจียน (ตำรา) (1)"""}],
+ "ref": ["สไลด์ Renal Physiology I — Glomerular hydrostatic pressure (PG/NSAID, AII) · Autoregulation · FF/GTB · FE · Urea recycling · Early DT (thiazide)",
+         GH, "KDIGO 2012 Clinical Practice Guideline for Acute Kidney Injury"],
+ "nl": [AKI, AKI_B, GFRH, TUB, CONC, NSAID, RAASD, DIUR, LYTE, LYTE_B, HYPERK, HF, OLIG],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
+
+OSCE = [{"id": "NEPH-PHY1-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Calculation station — clearance, ERPF/RBF, filtration fraction, FENa, glucose filtered load and C_H₂O",
+ "station": "สถานีคำนวณ 8 นาที (เครื่องคิดเลขได้) — เขียนสูตร แสดงวิธี ตอบพร้อมหน่วย และแปลผล",
+ "instruction": """**สถานการณ์**: ชายอายุ 52 ปี เบาหวานชนิดที่ 2 คุมไม่ดี เข้าร่วมการศึกษาการทำงานของไต เก็บปัสสาวะ 24 ชั่วโมงและหยด PAH ขณะตรวจ
+
+| ค่า | ผล |
+|---|---|
+| ปัสสาวะ 24 ชม. | 2,160 mL |
+| U_Cr / P_Cr | 100 mg/dL / 1.0 mg/dL |
+| U_PAH / P_PAH | 6 mg/mL / 0.015 mg/mL (extraction ratio 0.9) |
+| Hct | 40% |
+| U_Na / P_Na | 120 / 140 mmol/L |
+| plasma glucose | 300 mg/dL (Tm glucose 375 mg/min) |
+| U_osm / P_osm | 600 / 300 mOsm/kg |
+
+**งานของนักศึกษา**: (1) urine flow rate (2) creatinine clearance (3) ERPF, actual RPF และ RBF (4) filtration fraction (5) FENa (6) filtered load ของ glucose และคาดว่าจะมี glucosuria หรือไม่ (7) C_osm และ C_H₂O (8) แปลผลรวมกับผู้ป่วยรายนี้""",
+ "answer": """**เกณฑ์ให้คะแนน (20 คะแนน)**
+
+| ข้อ | คำตอบที่คาดหวัง | คะแนน |
+|---|---|---|
+| 1 | V = 2,160 mL ÷ 1,440 min = **1.5 mL/min** | 1 |
+| 2 | CCr = (U_Cr × V) ÷ P_Cr = (100 × 1.5) ÷ 1.0 = **150 mL/min** | 2 |
+| 3 | ERPF = C_PAH = (6 × 1.5) ÷ 0.015 = **600 mL/min** · RPF = 600 ÷ 0.9 ≈ **667 mL/min** · RBF = 667 ÷ (1 − 0.40) ≈ **1,111 mL/min** | 3 |
+| 4 | FF = GFR ÷ RPF = 150 ÷ 667 ≈ **0.22** (สูงกว่าปกติ 0.16–0.20) — ยอมรับ 150 ÷ 600 = 0.25 ถ้าบอกว่าใช้ ERPF | 2 |
+| 5 | FENa = (120 × 1.0) ÷ (140 × 100) × 100 ≈ **0.86%** | 2 |
+| 6 | filtered load = 3 mg/mL × 150 mL/min = **450 mg/min** > Tm 375 → **มี glucosuria** ~75 mg/min (และพลาสมา 300 > threshold 180 — มีตั้งแต่ก่อนถึง Tm เพราะ splay) | 3 |
+| 7 | C_osm = (600 × 1.5) ÷ 300 = **3.0 mL/min** · C_H₂O = 1.5 − 3.0 = **−1.5 mL/min** (เก็บน้ำเปล่า — ไตยังทำให้เข้มข้นได้) | 3 |
+| 8 | แปลผล: GFR 150 + FF สูง = **glomerular hyperfiltration** ของเบาหวานระยะแรก (SGLT2 ดูด Na⁺ มาก → TGF → afferent ขยาย) · CCr **สูงกว่า GFR จริง** เพราะ creatinine ถูกหลั่ง · glucose ในท่อเพิ่ม C_osm (แนวโน้ม osmotic diuresis) · ยาที่ลด hyperfiltration: ACEi/ARB (ขยาย efferent) และ SGLT2i (หด afferent) | 4 |
+
+**ข้อผิดพลาดสำคัญ (หักคะแนนทั้งข้อ)**: ไม่แปลงหน่วย mg/dL ↔ mg/mL ในข้อ 6 (ได้ 45,000) · ใช้ Hct แทน (1 − Hct) · C_H₂O ผิดเครื่องหมาย
+
+**คำถามต่อจากผู้คุมสอบ (ถ้ามีเวลา)**: "ถ้าให้ captopril แล้ว FF จะเปลี่ยนอย่างไร" → efferent คลาย → RPF ↑ GFR ↓ → FF ↓ · "ทำไม FENa ยังไม่ช่วยแยก AKI ในคนนี้" → ไม่มี AKI · FENa ใช้เมื่อ GFR ลดเฉียบพลัน""",
+ "ref": ["สไลด์ Renal Physiology I — Clearance · PAH · CCr · FF · Glucose Tm · FE · Cosm/CH₂O"],
+ "nl": [GFRH, RFT, OSM, TUB, CONC, DM, DM_B, LYTE_LAB],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
 
 LECTURE = {
  "lec": LEC, "date": "พื้นฐานสรีรวิทยา (ปรีคลินิก)",
@@ -694,8 +1051,14 @@ LECTURE = {
    "อธิบายการหลั่ง organic anion/cation และ drug interaction ที่ท่อไต",
    "คำนวณและแปลผล clearance, FE (FENa), C_osm และ C_H₂O",
    "อธิบาย countercurrent mechanism และ urea recycling ในการทำปัสสาวะเข้มข้นและเจือจาง"],
- "nlGap": "",
- "guidelines": [],
+ "nlGap": "เกณฑ์ฯ ส่วนวิทยาศาสตร์การแพทย์พื้นฐานมีรหัสสรีรวิทยาไตครบ (`B9.1.2(1)`–`B9.1.2(9)` · `B9.3(3)` `B9.3(4)` · `B9.4(1)`) จึงใส่ทุกหัวข้อ · ส่วนความรู้ทางคลินิก (หมวด 2) **ไม่มีรหัสของสรีรวิทยาโดยตรง** จึงใช้รหัสโรคที่เป็นตัวอย่างประกอบ (AKI, electrolyte, DM, HT, RTA, DI/SIADH, polyuria/oliguria) · คาบนี้เป็นคาบปรีคลินิก (MDS215 ม.รังสิต) ไม่ใช่คาบ MED421 และไม่มีในคลัง Ward Drill · อ่านสไลด์ได้เฉพาะข้อความ — **ภาพในสไลด์อ่านไม่ได้** (สมการ eGFR · แผนภาพเซลล์ท่อไต · ภาพ TGF · countercurrent · ตัวเลขใน urea recycling · ตาราง plasma vs filtrate) จึงวาดใหม่จากป้ายในสไลด์และตำรา · เนื้อหาที่เติมจากตำรา/แนวทาง (กลไกโมเลกุลของ TGF, SGLT2i, splay, triple whammy, การหลั่ง creatinine, sCr–GFR hyperbola, CKD-EPI 2021, FEurea, K ต่ำกับด่าง, Bartter ชนิดต่าง ๆ, สาเหตุของ Fanconi) เขียนกำกับ \"(ตำรา)\" ไว้ในแต่ละหัวข้อ",
+ "guidelines": [
+   "**สไลด์ Watchara Chongsa, PhD — Renal and Urinary System (MDS215) Renal Physiology Part I** (Physiology Unit, Faculty of Science, Rangsit University · ภาค 2/2565) — ตารางในสไลด์อ้าง Boron & Boulpaep 2016 และ Comprehensive Clinical Nephrology 5th ed 2015",
+   "**Guyton and Hall Textbook of Medical Physiology 14th ed (2021)** — ch. 26–32: GFR, autoregulation, tubular transport, concentration of urine, diuretics",
+   "**Boron & Boulpaep Medical Physiology 3rd ed (2016)** — transporter ของแต่ละส่วน (NHE3, NBC1, NaPi-IIa, ClC-Kb, TRPV5, TRPM6), OAT/OCT, TGF",
+   "**KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD** — CKD-EPI 2021 (ไม่ใช้เชื้อชาติ) และ cystatin C",
+   "**KDIGO 2022 Clinical Practice Guideline for Diabetes Management in CKD** — SGLT2 inhibitor และ RAS blockade",
+   "**KDIGO 2012 Clinical Practice Guideline for Acute Kidney Injury** — นิยาม AKI/oliguria (ใช้ใน MEQ)"],
  "sections": S, "meq": MEQ, "osce": OSCE,
 }
 
@@ -739,7 +1102,8 @@ json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 # ผูกข้อ Mock (คลัง Ward Drill ชุด mock ที่ยังว่าง) — ลงเป็น kind "old"
 from link_mock import link_mock
-MOCK_MAP = {}
+MOCK_MAP = {"nephro-phy1-01": ["MOCK-179"], "nephro-phy1-06": ["MOCK-169"], "nephro-phy1-09": ["MOCK-181"],
+            "nephro-phy1-12": ["MOCK-147"], "nephro-phy1-13": ["MOCK-165"]}
 added_m = link_mock(SET, LEC, {k: v for k, v in MOCK_MAP.items() if any(s["id"] == k for s in S)})
 
 from collections import Counter
