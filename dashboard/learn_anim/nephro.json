@@ -1,0 +1,876 @@
+{
+ "set": "nephro",
+ "items": [
+  {
+   "sec": "nephro-05-01",
+   "after": "ไล่กลไกทีละตัว",
+   "anim": {
+    "key": "n05-hypoca-axis",
+    "title": "Ca ในเลือดตก — PTH ดึงขึ้นจากกระดูก ไต และลำไส้ แล้วหยุดตัวเอง",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แคลเซียมในเลือดลด ต่อมพาราไทรอยด์รับรู้ผ่าน CaSR หลั่ง PTH ไปที่กระดูกและไต ไตสร้าง calcitriol ไปเพิ่มการดูดซึมที่ลำไส้ แคลเซียมกลับปกติแล้ว PTH ลดลง\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"160\" y=\"12\" width=\"120\" height=\"44\" rx=\"10\" class=\"ac\"/><text x=\"220\" y=\"30\" class=\"sm b mid\">พาราไทรอยด์</text><text x=\"220\" y=\"46\" class=\"xs mid\">CaSR ตรวจจับ iCa²⁺</text><rect x=\"150\" y=\"160\" width=\"140\" height=\"76\" rx=\"30\" class=\"bad\"/><text x=\"220\" y=\"186\" class=\"b mid\">เลือด</text><text x=\"220\" y=\"210\" class=\"lg b mid tbad\" data-x=\"4\">iCa²⁺ ↓</text><text x=\"220\" y=\"210\" class=\"sm b mid tok\" data-s=\"4\" data-x=\"5\">iCa²⁺ กำลังขึ้น</text><text x=\"220\" y=\"210\" class=\"sm b mid tok\" data-s=\"5\">iCa²⁺ กลับปกติ</text><rect x=\"8\" y=\"150\" width=\"120\" height=\"100\" rx=\"10\" class=\"sk\"/><text x=\"68\" y=\"170\" class=\"b mid\">กระดูก</text><rect x=\"312\" y=\"150\" width=\"120\" height=\"100\" rx=\"10\" class=\"sk\"/><text x=\"372\" y=\"170\" class=\"b mid\">ไต</text><rect x=\"160\" y=\"318\" width=\"120\" height=\"60\" rx=\"10\" class=\"sk\"/><text x=\"220\" y=\"338\" class=\"b mid\">ลำไส้</text><g data-s=\"1\" data-x=\"5\"><line x1=\"220\" y1=\"158\" x2=\"220\" y2=\"62\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"228\" y=\"118\" class=\"xs tbad b\">Ca ต่ำ → หลั่ง PTH</text></g><g data-s=\"2\"><path d=\"M160,40 Q68,44 68,146\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><text x=\"100\" y=\"66\" class=\"sm b tac\">PTH</text><path d=\"M280,40 Q372,44 372,146\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><text x=\"318\" y=\"66\" class=\"sm b tac\">PTH</text><text x=\"68\" y=\"192\" class=\"xs mid\">osteoclast สลาย</text><text x=\"68\" y=\"208\" class=\"xs mid mu\">(ผ่าน RANKL)</text><text x=\"68\" y=\"226\" class=\"xs mid b\">ปล่อย Ca + PO₄</text><text x=\"372\" y=\"190\" class=\"xs mid\">DCT ดูด Ca กลับ ↑</text><text x=\"372\" y=\"206\" class=\"xs mid tbad\">PCT ขับ PO₄ ทิ้ง</text></g><g data-s=\"3\"><text x=\"372\" y=\"226\" class=\"xs mid b tms\">1α-hydroxylase ↑</text><path d=\"M372,252 Q372,348 286,348\" class=\"lms w3 fl\" marker-end=\"url(#ah-ms)\"/><text x=\"362\" y=\"292\" class=\"xs b tms end\">calcitriol</text><text x=\"220\" y=\"356\" class=\"xs mid\">ดูดซึม Ca + PO₄ ↑</text><text x=\"220\" y=\"371\" class=\"xs mid mu\">(ทางอ้อม ผ่าน calcitriol)</text></g><g data-s=\"4\"><line x1=\"128\" y1=\"200\" x2=\"146\" y2=\"200\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><line x1=\"312\" y1=\"200\" x2=\"294\" y2=\"200\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><line x1=\"220\" y1=\"316\" x2=\"220\" y2=\"242\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><g transform=\"translate(130,200)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"okf\"/><animateMotion dur=\"1.2s\" repeatCount=\"indefinite\" path=\"M0,0 L20,0\"/></g><g transform=\"translate(220,312)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"okf\"/><animateMotion dur=\"1.8s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-72\"/></g><g transform=\"translate(310,200)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"okf\"/><animateMotion dur=\"1.2s\" repeatCount=\"indefinite\" path=\"M0,0 L-20,0\"/></g><text x=\"10\" y=\"296\" class=\"sm b\">ผลสุทธิ</text><text x=\"10\" y=\"313\" class=\"xs tok b\">Ca ↑ จาก 3 อวัยวะ</text><text x=\"10\" y=\"329\" class=\"xs\">PO₄ ไม่คั่ง —</text><text x=\"10\" y=\"344\" class=\"xs\">ไตขับทิ้งมากกว่า</text><text x=\"10\" y=\"359\" class=\"xs\">ที่กระดูก/ลำไส้ปล่อย</text></g><g data-s=\"5\"><line x1=\"196\" y1=\"158\" x2=\"196\" y2=\"62\" class=\"lok w2 da\" marker-end=\"url(#ah-ok)\"/><text x=\"188\" y=\"118\" class=\"xs tok b end\">Ca ปกติ → PTH ↓</text><text x=\"10\" y=\"380\" class=\"xs b tms\">calcitriol → FGF-23 ↑</text><text x=\"10\" y=\"395\" class=\"xs tms\">กด 1α-OHase และ PTH</text></g></svg>",
+    "steps": [
+     {
+      "t": "ionized Ca ลด",
+      "cap": "พาราไทรอยด์รับรู้ **ionized Ca ที่ลดลง** ผ่าน **CaSR** แล้วหลั่ง PTH ทันที — ร่างกายคุม ionized Ca แบบนาทีต่อนาที"
+     },
+     {
+      "t": "PTH ออกฤทธิ์ที่กระดูกและไต",
+      "cap": "**กระดูก**: กระตุ้น osteoclast ทางอ้อมผ่าน RANKL → ปล่อย **Ca และ PO₄** · **ไต**: ดูดกลับ Ca ที่ **DCT** ↑ และ **ยับยั้งการดูดกลับ PO₄ ที่ PCT** (ดึง NaPi-2a/2c ออก)"
+     },
+     {
+      "t": "ไตสร้าง calcitriol → ลำไส้",
+      "cap": "PTH กระตุ้น **1α-hydroxylase** ที่ PCT → **1,25(OH)₂D** ไปเพิ่มการดูดซึม **ทั้ง Ca และ PO₄** ที่ลำไส้ — PTH ไม่มีฤทธิ์ต่อลำไส้โดยตรง"
+     },
+     {
+      "t": "ผลสุทธิ: Ca ขึ้น PO₄ ไม่คั่ง",
+      "cap": "Ca ไหลเข้าเลือดจากสามทาง · แม้กระดูกและลำไส้ปล่อย PO₄ ด้วย แต่ **ฤทธิ์ขับ PO₄ ทางไตแรงกว่า** ผลสุทธิของ PTH จึงเป็น **Ca ↑ · PO₄ ↓**"
+     },
+     {
+      "t": "วงป้อนกลับตัดวงจร",
+      "cap": "Ca กลับปกติ → CaSR หยุดกระตุ้น **PTH ลด** · calcitriol กด PTH และกระตุ้น osteocyte หลั่ง **FGF-23** ซึ่งกด 1α-hydroxylase ซ้ำ · ข้อสอบ: **PTH สูง + Ca ต่ำ = secondary** (ร่างกายตอบสนองถูกต้อง)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "nephro-05-04",
+   "after": "ลำดับที่ตอบในข้อสอบ",
+   "anim": {
+    "key": "n05-hyperca-rx",
+    "title": "ยาลดแคลเซียมไปตัดตรงไหน — เติมน้ำก่อน แล้วค่อยกดกระดูก",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แคลเซียมเข้าสู่เลือดจากกระดูกและลำไส้มากกว่าที่ไตขับออก ยาแต่ละตัวไปตัดที่จุดต่างกัน น้ำเกลือเพิ่มการขับทางไต furosemide หลังเติมน้ำ ยาลดการสลายกระดูก และสเตียรอยด์สำหรับภาวะที่ผ่าน calcitriol\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"150\" y=\"12\" width=\"140\" height=\"52\" rx=\"10\" class=\"sk\"/><text x=\"220\" y=\"32\" class=\"b mid\">ลำไส้</text><text x=\"220\" y=\"50\" class=\"xs mid\">ดูดซึม Ca (calcitriol)</text><rect x=\"160\" y=\"130\" width=\"120\" height=\"100\" rx=\"16\" class=\"bad\"/><text x=\"220\" y=\"166\" class=\"b mid\">Ca ในเลือด</text><text x=\"220\" y=\"192\" class=\"lg b mid tbad\">สูง</text><rect x=\"6\" y=\"130\" width=\"112\" height=\"100\" rx=\"10\" class=\"sk\"/><text x=\"62\" y=\"150\" class=\"b mid\">กระดูก</text><text x=\"62\" y=\"170\" class=\"xs mid\">osteoclast สลาย</text><text x=\"62\" y=\"186\" class=\"xs mid mu\">PTH · PTHrP</text><text x=\"62\" y=\"201\" class=\"xs mid mu\">· มะเร็ง</text><rect x=\"322\" y=\"130\" width=\"112\" height=\"100\" rx=\"10\" class=\"sk\"/><text x=\"378\" y=\"150\" class=\"b mid\">ไต</text><line x1=\"220\" y1=\"64\" x2=\"220\" y2=\"126\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><line x1=\"118\" y1=\"180\" x2=\"156\" y2=\"180\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><line x1=\"378\" y1=\"230\" x2=\"378\" y2=\"266\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><text x=\"378\" y=\"282\" class=\"xs mid mu\">ปัสสาวะ</text><g data-s=\"1\" data-x=\"2\"><line x1=\"280\" y1=\"180\" x2=\"318\" y2=\"180\" class=\"lmu w2 da\" marker-end=\"url(#ah-mu)\"/><text x=\"378\" y=\"170\" class=\"xs mid\">Ca สูง → DI</text><text x=\"378\" y=\"186\" class=\"xs mid\">+ อาเจียน</text><text x=\"378\" y=\"204\" class=\"xs mid tbad b\">ขาดน้ำ → GFR ↓</text><text x=\"378\" y=\"220\" class=\"xs mid tbad\">ขับ Ca ได้น้อย</text></g><text x=\"10\" y=\"30\" class=\"sm b tbad\">เข้ามากกว่าออก</text><text x=\"10\" y=\"47\" class=\"xs tbad\">→ Ca สะสม</text><text x=\"10\" y=\"62\" class=\"xs tbad\">→ ขาดน้ำซ้ำ</text><g data-s=\"2\"><line x1=\"280\" y1=\"180\" x2=\"318\" y2=\"180\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"378\" y=\"172\" class=\"xs mid tok b\">volume ↑</text><text x=\"378\" y=\"188\" class=\"xs mid tok b\">GFR ↑</text><text x=\"378\" y=\"204\" class=\"xs mid tok\">Na ลาก Ca ออก</text><rect x=\"300\" y=\"296\" width=\"134\" height=\"46\" rx=\"8\" class=\"ok\"/><text x=\"367\" y=\"314\" class=\"sm b mid\">① 0.9% NaCl</text><text x=\"367\" y=\"332\" class=\"xs mid\">200–500 mL/ชม.</text><line x1=\"340\" y1=\"296\" x2=\"350\" y2=\"236\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/></g><g data-s=\"3\"><rect x=\"300\" y=\"350\" width=\"134\" height=\"58\" rx=\"8\" class=\"ms\"/><text x=\"367\" y=\"368\" class=\"sm b mid\">② Furosemide</text><text x=\"367\" y=\"384\" class=\"xs mid\">หลังเติมน้ำพอแล้ว</text><text x=\"367\" y=\"399\" class=\"xs mid tbad b\">ให้ก่อน = Ca ยิ่งสูง</text><text x=\"378\" y=\"220\" class=\"xs mid tms b\">TAL: ขับ Ca ↑</text></g><g data-s=\"4\"><text x=\"137\" y=\"172\" class=\"lg b tbad\">✕</text><rect x=\"6\" y=\"244\" width=\"210\" height=\"104\" rx=\"8\" class=\"wa\"/><line x1=\"62\" y1=\"244\" x2=\"62\" y2=\"234\" class=\"lwa w2\" marker-end=\"url(#ah-wa)\"/><text x=\"12\" y=\"262\" class=\"sm b\">③ ยาลดการสลายกระดูก</text><text x=\"12\" y=\"280\" class=\"xs\">Calcitonin เร็วสุด 4–6 ชม.</text><text x=\"12\" y=\"295\" class=\"xs mu\">แต่ดื้อยาใน 48 ชม.</text><text x=\"12\" y=\"312\" class=\"xs b\">Zoledronate 4 mg: 24–72 ชม.</text><text x=\"12\" y=\"328\" class=\"xs\">Denosumab: ไตเสียก็ใช้ได้</text><text x=\"12\" y=\"342\" class=\"xs mu\">(ระวัง Ca ต่ำรุนแรง)</text></g><g data-s=\"5\"><text x=\"232\" y=\"102\" class=\"lg b tbad\">✕</text><rect x=\"298\" y=\"12\" width=\"136\" height=\"66\" rx=\"8\" class=\"wa\"/><text x=\"366\" y=\"30\" class=\"sm b mid\">④ Prednisolone</text><text x=\"366\" y=\"47\" class=\"xs mid\">lymphoma · granuloma</text><text x=\"366\" y=\"62\" class=\"xs mid\">· vitamin D เกิน</text></g><g data-s=\"6\"><rect x=\"6\" y=\"358\" width=\"288\" height=\"76\" rx=\"8\" class=\"ac\"/><text x=\"14\" y=\"376\" class=\"sm b\">ลำดับที่ตอบในข้อสอบ</text><text x=\"14\" y=\"393\" class=\"xs\">น้ำเกลือ → (calcitonin ถ้าต้องเร็ว)</text><text x=\"14\" y=\"408\" class=\"xs\">→ bisphosphonate IV → รักษาต้นเหตุ</text><text x=\"14\" y=\"424\" class=\"xs b\">+ หยุด thiazide · ลิเทียม · vit D/A · Ca เสริม</text></g></svg>",
+    "steps": [
+     {
+      "t": "Ca เข้ามากกว่าออก",
+      "cap": "กระดูกสลายและ/หรือลำไส้ดูดซึมมาก → Ca สูง → **nephrogenic DI + อาเจียน → ขาดน้ำ → GFR ↓ → ขับ Ca ได้น้อยลง** (ลูกศรออกทางไตบางลง) Ca จึงยิ่งสูง"
+     },
+     {
+      "t": "① น้ำเกลือไอโซโทนิกก่อนเสมอ",
+      "cap": "**0.9% NaCl 200–500 mL/ชม.** ปรับตามหัวใจและไต → volume ↑ **GFR ↑** และ Na ที่ขับออก **ลาก Ca ออก** (solvent drag ที่ PCT) · เฝ้าระวังน้ำเกิน"
+     },
+     {
+      "t": "② Furosemide — หลังเติมน้ำพอแล้วเท่านั้น",
+      "cap": "20–40 mg IV ยับยั้ง **NKCC2 ที่ TAL** ล้างศักย์บวกในลูเมน → ขับ Ca · **ให้ก่อนเติมน้ำ = ขาดน้ำหนักขึ้น GFR ตก Ca สูงขึ้น** — ให้เมื่อมีน้ำเกิน/หัวใจล้มเหลว"
+     },
+     {
+      "t": "③ ปิดก๊อกจากกระดูก",
+      "cap": "**Calcitonin** เร็วสุด (4–6 ชม.) แต่ดื้อยาใน 48 ชม. — ใช้ขัดตาทัพ · **Zoledronate 4 mg IV** ออกฤทธิ์ 24–72 ชม. คือตัวแก้จริง · **Denosumab** ไม่ต้องปรับตาม GFR แต่ Ca/PO₄ ต่ำรุนแรงได้"
+     },
+     {
+      "t": "④ สเตียรอยด์ — เฉพาะกลุ่มที่ผ่าน calcitriol",
+      "cap": "**Prednisolone 60 mg/วัน 10 วัน** ใน **lymphoma, sarcoidosis/วัณโรค, วิตามินดีเกิน** — ลด calcitriol จาก macrophage และลดการดูดซึมที่ลำไส้ · ไม่ได้ผลกับ PTHrP"
+     },
+     {
+      "t": "สรุปลำดับ",
+      "cap": "**น้ำเกลือ → calcitonin (ถ้าต้องการผลภายในวัน) → bisphosphonate IV → รักษาต้นเหตุ** + หยุด thiazide ลิเทียม วิตามินดี/เอ · ฟอกเลือดเมื่อ Ca สูงรุนแรงร่วมกับไตวายจนให้น้ำไม่ได้"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "nephro-05-05",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "n05-ca-threshold",
+    "title": "Ca²⁺ นอกเซลล์คุม threshold — ต่ำแล้วกระตุก สูงแล้วซึม",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แคลเซียมนอกเซลล์เกาะผิวเยื่อหุ้มเซลล์ เมื่อแคลเซียมต่ำ threshold เลื่อนเข้าใกล้ศักย์พัก เส้นประสาทยิงสัญญาณเอง เกิดชาและเกร็ง เมื่อแคลเซียมสูง threshold ห่างออก เซลล์ถูกกระตุ้นยาก อ่อนแรงและซึม และผลต่อช่วง QT\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"170\" y=\"22\" class=\"xs mid b\">Ca²⁺ ที่ผิวนอกเยื่อหุ้มเซลล์</text><g data-x=\"2\"><circle cx=\"60\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"60\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"90\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"90\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"120\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"120\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"150\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"150\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"180\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"180\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"210\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"210\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"240\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"240\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"270\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"270\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"300\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"300\" y=\"70\" class=\"xs mid b tpa\">+</text></g><g data-s=\"2\" data-x=\"4\"><circle cx=\"60\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"60\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"120\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"120\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"180\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"180\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"240\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"240\" y=\"70\" class=\"xs mid b tpa\">+</text><circle cx=\"300\" cy=\"66\" r=\"6\" class=\"acf\"/><text x=\"300\" y=\"70\" class=\"xs mid b tpa\">+</text></g><g data-s=\"4\"><circle cx=\"50\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"50\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"72\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"72\" y=\"74\" class=\"xs mid b tpa\">+</text><circle cx=\"94\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"94\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"116\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"116\" y=\"74\" class=\"xs mid b tpa\">+</text><circle cx=\"138\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"138\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"160\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"160\" y=\"74\" class=\"xs mid b tpa\">+</text><circle cx=\"182\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"182\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"204\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"204\" y=\"74\" class=\"xs mid b tpa\">+</text><circle cx=\"226\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"226\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"248\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"248\" y=\"74\" class=\"xs mid b tpa\">+</text><circle cx=\"270\" cy=\"62\" r=\"6\" class=\"acf\"/><text x=\"270\" y=\"66\" class=\"xs mid b tpa\">+</text><circle cx=\"292\" cy=\"70\" r=\"6\" class=\"acf\"/><text x=\"292\" y=\"74\" class=\"xs mid b tpa\">+</text></g><rect x=\"30\" y=\"80\" width=\"270\" height=\"12\" rx=\"3\" class=\"ms\"/><text x=\"304\" y=\"91\" class=\"xs mu\">เยื่อหุ้ม</text><line x1=\"40\" y1=\"110\" x2=\"40\" y2=\"290\" class=\"ln\"/><text x=\"36\" y=\"300\" class=\"xs end mu\">mV</text><line x1=\"40\" y1=\"250\" x2=\"300\" y2=\"250\" class=\"ln w2\"/><text x=\"46\" y=\"266\" class=\"xs\">ศักย์พัก (−90)</text><g data-x=\"2\"><line x1=\"40\" y1=\"160\" x2=\"300\" y2=\"160\" class=\"lac w2 da\"/><text x=\"80\" y=\"155\" class=\"xs tac b\">threshold ปกติ</text><line x1=\"70\" y1=\"164\" x2=\"70\" y2=\"246\" class=\"lmu w2\"/><text x=\"76\" y=\"210\" class=\"xs mu\">ระยะห่างปกติ</text></g><g data-s=\"2\" data-x=\"4\"><line x1=\"40\" y1=\"220\" x2=\"300\" y2=\"220\" class=\"lbad w2 da\"/><text x=\"80\" y=\"215\" class=\"xs tbad b\">threshold เลื่อนลง</text><line x1=\"70\" y1=\"224\" x2=\"70\" y2=\"246\" class=\"lbad w2\"/><path d=\"M190,250 L200,250 L206,120 L212,262 L224,250 L236,250 L242,120 L248,262 L260,250 L272,250 L278,120 L284,262 L296,250\" class=\"lbad w2 fl sl\"/><text x=\"244\" y=\"112\" class=\"xs mid tbad b\">ยิงสัญญาณเองซ้ำ ๆ</text></g><g data-s=\"3\" data-x=\"4\"><rect x=\"316\" y=\"96\" width=\"118\" height=\"150\" rx=\"8\" class=\"bad\"/><text x=\"375\" y=\"114\" class=\"xs mid b tbad\">Ca ต่ำ = ไวเกิน</text><text x=\"324\" y=\"134\" class=\"xs\">ชารอบปาก</text><text x=\"324\" y=\"152\" class=\"xs\">ปลายมือปลายเท้า</text><text x=\"324\" y=\"170\" class=\"xs\">ตะคริว มือจีบ</text><text x=\"324\" y=\"188\" class=\"xs\">Chvostek · Trousseau</text><text x=\"324\" y=\"206\" class=\"xs\">กล่องเสียงเกร็ง</text><text x=\"324\" y=\"224\" class=\"xs\">ชักเกร็ง</text></g><g data-s=\"4\"><line x1=\"40\" y1=\"118\" x2=\"300\" y2=\"118\" class=\"lwa w2 da\"/><text x=\"80\" y=\"113\" class=\"xs twa b\">threshold สูงขึ้น</text><line x1=\"70\" y1=\"122\" x2=\"70\" y2=\"246\" class=\"lwa w3\"/><text x=\"76\" y=\"190\" class=\"xs twa b\">ห่างมาก → กระตุ้นยาก</text></g><g data-s=\"4\"><rect x=\"316\" y=\"96\" width=\"118\" height=\"150\" rx=\"8\" class=\"wa\"/><text x=\"375\" y=\"114\" class=\"xs mid b twa\">Ca สูง = ถูกกด</text><text x=\"324\" y=\"134\" class=\"xs\">อ่อนแรง</text><text x=\"324\" y=\"152\" class=\"xs\">รีเฟล็กซ์ลด/หาย</text><text x=\"324\" y=\"170\" class=\"xs\">ท้องผูก</text><text x=\"324\" y=\"188\" class=\"xs\">ซึม สับสน</text><text x=\"324\" y=\"206\" class=\"xs\">→ โคม่า</text></g><g data-s=\"5\"><text x=\"10\" y=\"324\" class=\"xs b\">หัวใจ: ช่วง plateau (phase 2) → ST/QT</text><line x1=\"10\" y1=\"384\" x2=\"210\" y2=\"384\" class=\"lmu\"/><path d=\"M14,384 L24,384 Q28,376 32,384 L38,384 L41,388 L44,346 L47,394 L50,384 L120,384 Q130,368 140,384 L206,384\" class=\"lbad w2\"/><line x1=\"41\" y1=\"400\" x2=\"140\" y2=\"400\" class=\"lbad w2\"/><text x=\"90\" y=\"414\" class=\"xs mid tbad b\">Ca ต่ำ: ST ยืด → QT ยาว</text><line x1=\"230\" y1=\"384\" x2=\"430\" y2=\"384\" class=\"lmu\"/><path d=\"M234,384 L244,384 Q248,376 252,384 L258,384 L261,388 L264,346 L267,394 L270,384 Q280,368 290,384 L426,384\" class=\"lwa w2\"/><line x1=\"261\" y1=\"400\" x2=\"290\" y2=\"400\" class=\"lwa w2\"/><text x=\"300\" y=\"414\" class=\"xs mid twa b\">Ca สูง: QT สั้น</text></g></svg>",
+    "steps": [
+     {
+      "t": "ภาวะปกติ",
+      "cap": "ionized Ca²⁺ เกาะผิวนอกเยื่อหุ้มเซลล์ ทำให้ **threshold ของช่อง Na⁺ อยู่ห่างจากศักย์พัก** พอดี เซลล์ประสาทและกล้ามเนื้อจึงยิงสัญญาณเมื่อถูกกระตุ้นจริงเท่านั้น"
+     },
+     {
+      "t": "Ca ต่ำ: threshold เข้าใกล้ศักย์พัก",
+      "cap": "ประจุบวกที่ผิวนอกลดลง → **threshold เลื่อนเข้าใกล้ศักย์พัก** → เส้นประสาทยิงสัญญาณเองซ้ำ ๆ (tetany) · เกิดได้แม้ total Ca ปกติ ถ้า ionized ต่ำ (หายใจเร็ว ด่าง ซิเตรต)"
+     },
+     {
+      "t": "อาการของ Ca ต่ำ",
+      "cap": "เส้นประสาทยาวไวที่สุด → **ชารอบปาก ปลายมือเท้า** ก่อน → ตะคริว มือจีบ · **Trousseau จำเพาะกว่า Chvostek** (Chvostek บวกในคนปกติ ~10%) · กล่องเสียงเกร็ง/ชัก = calcium gluconate IV ทันที"
+     },
+     {
+      "t": "Ca สูง: threshold ห่างออก",
+      "cap": "Ca²⁺ ที่สูง **ยก threshold ให้ห่างจากศักย์พัก** (membrane stabilization) → เซลล์ถูกกระตุ้นยาก → **อ่อนแรง รีเฟล็กซ์ลด ท้องผูก ซึม สับสน** · ขึ้นเร็ว (มะเร็ง) ซึมมากกว่าขึ้นช้า (primary HPT)"
+     },
+     {
+      "t": "ผลต่อหัวใจ — ข้อสอบ ECG",
+      "cap": "**Ca ต่ำ → plateau ยาว → ST ยืด → QT ยาว** (T ปกติ; ต่างจาก K ต่ำที่มี U wave) · **Ca สูง → plateau สั้น → QT สั้น** อาจหัวใจเต้นช้า AV block"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "nephro-05-09",
+   "after": "สาเหตุที่ต้องนึกถึงเป็นรายภาวะ",
+   "anim": {
+    "key": "n05-refeeding",
+    "title": "Refeeding syndrome — อินซูลินดึง PO₄ K Mg เข้าเซลล์พร้อมกัน",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: refeeding syndrome เริ่มให้อาหารในคนอดนาน อินซูลินพุ่ง ดึงฟอสเฟต โพแทสเซียม และแมกนีเซียมเข้าเซลล์พร้อมกัน ระดับในเลือดตก เซลล์ขาด ATP กล้ามเนื้อหายใจอ่อนแรง\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"310\" cy=\"190\" r=\"98\" class=\"wa\"/><text x=\"310\" y=\"118\" class=\"sm b mid\">เซลล์ (กล้ามเนื้อ/ตับ)</text><text x=\"100\" y=\"278\" class=\"xs mid b\">ระดับในเลือด</text><line x1=\"14\" y1=\"370\" x2=\"190\" y2=\"370\" class=\"ln\"/><g data-x=\"3\"><rect x=\"30\" y=\"290\" width=\"34\" height=\"80\" rx=\"3\" class=\"ok\"/><rect x=\"83\" y=\"296\" width=\"34\" height=\"74\" rx=\"3\" class=\"ok\"/><rect x=\"136\" y=\"300\" width=\"34\" height=\"70\" rx=\"3\" class=\"ok\"/></g><g data-s=\"3\"><rect x=\"30\" y=\"346\" width=\"34\" height=\"24\" rx=\"3\" class=\"bad\"/><rect x=\"83\" y=\"340\" width=\"34\" height=\"30\" rx=\"3\" class=\"bad\"/><rect x=\"136\" y=\"348\" width=\"34\" height=\"22\" rx=\"3\" class=\"bad\"/><text x=\"100\" y=\"328\" class=\"sm mid b tbad\">ตกพร้อมกัน</text></g><text x=\"47\" y=\"386\" class=\"xs mid b\">PO₄</text><text x=\"100\" y=\"386\" class=\"xs mid b\">K⁺</text><text x=\"153\" y=\"386\" class=\"xs mid b\">Mg²⁺</text><g data-s=\"1\" data-x=\"3\"><text x=\"310\" y=\"176\" class=\"xs mid b\">อดอาหารนาน</text><text x=\"310\" y=\"192\" class=\"xs mid\">PO₄ สำรองในเซลล์พร่อง</text><text x=\"310\" y=\"208\" class=\"xs mid mu\">แต่ในเลือดยังปกติได้</text></g><g data-s=\"2\"><rect x=\"10\" y=\"18\" width=\"112\" height=\"40\" rx=\"8\" class=\"ms\"/><text x=\"66\" y=\"43\" class=\"xs mid b\">ให้อาหาร/กลูโคส</text><line x1=\"66\" y1=\"58\" x2=\"66\" y2=\"92\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\"/><rect x=\"10\" y=\"96\" width=\"112\" height=\"40\" rx=\"8\" class=\"ac\"/><text x=\"66\" y=\"114\" class=\"xs mid b\">ตับอ่อน</text><text x=\"66\" y=\"129\" class=\"xs mid b tac\">insulin ↑↑</text></g><g data-s=\"3\"><path d=\"M122,116 Q170,120 212,160\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><g transform=\"translate(130,200)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"msf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L170,-10\"/></g><g transform=\"translate(130,200)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"okf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L170,-10\" begin=\"-0.7s\"/></g><g transform=\"translate(130,200)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"waf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L170,-10\" begin=\"-1.4s\"/></g><text x=\"130\" y=\"220\" class=\"xs b\">PO₄ K⁺ Mg²⁺ + กลูโคส</text><text x=\"130\" y=\"235\" class=\"xs b\">เข้าเซลล์</text><text x=\"320\" y=\"172\" class=\"xs mid\">glycolysis</text><text x=\"320\" y=\"188\" class=\"xs mid b\">สร้าง ATP ใช้ PO₄</text></g><g data-s=\"4\"><rect x=\"212\" y=\"296\" width=\"222\" height=\"98\" rx=\"8\" class=\"bad\"/><text x=\"222\" y=\"314\" class=\"xs b tbad\">PO₄ ต่ำรุนแรง → ATP ไม่พอ</text><text x=\"222\" y=\"332\" class=\"xs\">กล้ามเนื้อหายใจอ่อน → ถอดเครื่องไม่ได้</text><text x=\"222\" y=\"347\" class=\"xs\">หัวใจล้มเหลว · rhabdo · RBC แตก</text><text x=\"222\" y=\"362\" class=\"xs\">2,3-DPG ↓ → ปล่อย O₂ ให้เนื้อเยื่อน้อย</text><text x=\"222\" y=\"377\" class=\"xs\">+ K ต่ำ Mg ต่ำ → หัวใจเต้นผิดจังหวะ</text></g><g data-s=\"5\"><rect x=\"140\" y=\"12\" width=\"294\" height=\"62\" rx=\"8\" class=\"ok\"/><text x=\"150\" y=\"32\" class=\"sm b tok\">ป้องกัน</text><text x=\"150\" y=\"49\" class=\"xs\">เริ่มแคลอรีช้า ๆ · ให้ thiamine ก่อน</text><text x=\"150\" y=\"64\" class=\"xs\">เจาะ PO₄ K Mg ทุกวันแล้วเติมทัน</text></g></svg>",
+    "steps": [
+     {
+      "t": "อดอาหารนาน",
+      "cap": "PO₄ ทั้งร่างกายพร่อง แต่ **ระดับในเลือดยังปกติได้** เพราะ ECF มีฟอสเฟตแค่ ~1% — ระดับในเลือดจึงสะท้อนปริมาณรวมได้ไม่ดี"
+     },
+     {
+      "t": "เริ่มให้อาหาร → insulin พุ่ง",
+      "cap": "กลูโคส/แคลอรีที่ได้ทันทีกระตุ้นตับอ่อนหลั่ง **insulin** จำนวนมาก (กลไกเดียวกับการรักษา DKA)"
+     },
+     {
+      "t": "Redistribution — สามตัวตกพร้อมกัน",
+      "cap": "insulin ดันกลูโคสเข้าเซลล์ และ **ดึง PO₄ K⁺ Mg²⁺ ตามเข้าไป** เพื่อใช้ใน glycolysis/สร้าง ATP → ในเลือดตกพร้อมกัน · **FE PO₄ ต่ำ** (ไม่ใช่ไตรั่ว)"
+     },
+     {
+      "t": "ผลจาก ATP และ 2,3-DPG ลด",
+      "cap": "**กล้ามเนื้อหายใจอ่อนแรง → ถอดเครื่องช่วยหายใจไม่สำเร็จ** · หัวใจล้มเหลว · กล้ามเนื้อสลาย · RBC แตก · 2,3-DPG ลด → Hb ปล่อย O₂ น้อย → สับสน ชัก"
+     },
+     {
+      "t": "ป้องกัน",
+      "cap": "**เริ่มแคลอรีช้า ๆ · ให้ไทอามีนก่อน · เจาะแร่ธาตุทุกวัน** และเติมให้ทัน — ข้อสอบชอบถามคนไข้ขาดอาหาร/สุราเรื้อรังที่อ่อนแรงลงหลังเริ่มให้อาหาร"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-gn-01",
+   "after": "พังชั้นไหน ได้อาการอะไร — แกนของทั้งคาบ",
+   "anim": {
+    "key": "gn-barrier-leak",
+    "title": "ตะแกรง 3 ชั้น — podocyte พังให้ albumin รั่ว GBM ฉีกให้ RBC ลอด",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ตะแกรงกรองสามชั้นของ glomerulus น้ำผ่านได้ albumin ถูกผลัก เมื่อ podocyte พัง albumin รั่วเป็น nephrotic เมื่ออักเสบและ GBM ฉีก เม็ดเลือดแดงลอดออกเป็น nephritic\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"36\" width=\"280\" height=\"72\" rx=\"8\" class=\"bad\"/><text x=\"28\" y=\"52\" class=\"xs b\">เลือดในหลอดเลือดฝอย</text><rect x=\"20\" y=\"112\" width=\"54\" height=\"10\" rx=\"3\" class=\"sk\"/><rect x=\"82\" y=\"112\" width=\"52\" height=\"10\" rx=\"3\" class=\"sk\"/><rect x=\"142\" y=\"112\" width=\"52\" height=\"10\" rx=\"3\" class=\"sk\"/><rect x=\"202\" y=\"112\" width=\"50\" height=\"10\" rx=\"3\" class=\"sk\"/><rect x=\"252\" y=\"112\" width=\"10\" height=\"10\" rx=\"2\" class=\"sk\" data-x=\"3\"/><rect x=\"262\" y=\"112\" width=\"38\" height=\"10\" rx=\"3\" class=\"sk\"/><rect x=\"20\" y=\"126\" width=\"230\" height=\"16\" rx=\"3\" class=\"ms\"/><rect x=\"250\" y=\"126\" width=\"16\" height=\"16\" rx=\"0\" class=\"ms\" data-x=\"3\"/><rect x=\"266\" y=\"126\" width=\"34\" height=\"16\" rx=\"3\" class=\"ms\"/><g data-x=\"2\"><rect x=\"22\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"52\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"82\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"112\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"142\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"172\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"202\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"232\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"262\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/></g><g data-s=\"3\"><rect x=\"22\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"52\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"82\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"112\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"142\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"172\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"202\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"232\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/><rect x=\"262\" y=\"146\" width=\"22\" height=\"16\" rx=\"6\" class=\"ac\"/></g><rect x=\"20\" y=\"170\" width=\"280\" height=\"84\" rx=\"8\" class=\"wa\"/><text x=\"28\" y=\"246\" class=\"xs b twa\">Bowman space (น้ำกรอง)</text><text x=\"306\" y=\"120\" class=\"xs b\">① endothelium</text><text x=\"306\" y=\"133\" class=\"xs mu\">รูพรุน + ประจุลบ</text><text x=\"306\" y=\"148\" class=\"xs b\">② GBM</text><text x=\"306\" y=\"161\" class=\"xs mu\">collagen IV</text><text x=\"306\" y=\"176\" class=\"xs b\">③ podocyte</text><text x=\"306\" y=\"189\" class=\"xs mu\">foot process + slit</text><g transform=\"translate(78,62)\"><circle cx=\"0\" cy=\"0\" r=\"3\" class=\"waf\"/><animateMotion dur=\"2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,174\"/></g><g transform=\"translate(138,62)\"><circle cx=\"0\" cy=\"0\" r=\"3\" class=\"waf\"/><animateMotion dur=\"2.3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,174\" begin=\"-0.6s\"/></g><g transform=\"translate(198,62)\"><circle cx=\"0\" cy=\"0\" r=\"3\" class=\"waf\"/><animateMotion dur=\"2.1s\" repeatCount=\"indefinite\" path=\"M0,0 L0,174\" begin=\"-1.1s\"/></g><g transform=\"translate(110,58)\"><circle cx=\"0\" cy=\"0\" r=\"8\" class=\"msf\"/><text x=\"0\" y=\"4\" class=\"sm mid b tpa\">−</text><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,42 L0,0\"/></g><text x=\"122\" y=\"74\" class=\"xs\">albumin (−) ถูกผลัก</text><ellipse cx=\"260\" cy=\"72\" rx=\"13\" ry=\"6\" class=\"badf\"/><text x=\"258\" y=\"96\" class=\"xs mid\">RBC ใหญ่เกิน</text><g data-s=\"2\" data-x=\"3\"><rect x=\"20\" y=\"146\" width=\"280\" height=\"16\" rx=\"4\" class=\"ac\"/><text x=\"160\" y=\"158\" class=\"xs mid b tac\">foot process แผ่แบน · slit หาย</text><g transform=\"translate(170,58)\"><circle cx=\"0\" cy=\"0\" r=\"7\" class=\"msf\"/><text x=\"0\" y=\"4\" class=\"xs mid b tpa\">−</text><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L0,172\"/></g><g transform=\"translate(230,58)\"><circle cx=\"0\" cy=\"0\" r=\"7\" class=\"msf\"/><text x=\"0\" y=\"4\" class=\"xs mid b tpa\">−</text><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L0,172\" begin=\"-1.3s\"/></g><text x=\"200\" y=\"210\" class=\"sm b tbad mid\">albumin รั่ว!</text></g><g data-s=\"2\" data-x=\"3\"><rect x=\"306\" y=\"200\" width=\"128\" height=\"70\" rx=\"8\" class=\"ac\"/><text x=\"312\" y=\"216\" class=\"xs\">podocyte พัง</text><text x=\"312\" y=\"231\" class=\"xs\">albumin รั่วมาก</text><text x=\"312\" y=\"246\" class=\"xs\">ไม่มีการอักเสบ</text><text x=\"312\" y=\"261\" class=\"xs\">→ nephrotic</text></g><g data-s=\"3\" data-x=\"4\"><g class=\"pl\"><circle cx=\"222\" cy=\"60\" r=\"6\" class=\"inkf\"/><circle cx=\"238\" cy=\"84\" r=\"6\" class=\"inkf\"/><circle cx=\"282\" cy=\"56\" r=\"6\" class=\"inkf\"/></g><circle cx=\"258\" cy=\"134\" r=\"9\" class=\"lbad w2\"/><g transform=\"translate(258,70)\"><ellipse cx=\"0\" cy=\"0\" rx=\"4\" ry=\"7\" class=\"badf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,162\"/></g><text x=\"200\" y=\"210\" class=\"sm b tbad mid\">RBC ลอด → เสียรูป</text></g><g data-s=\"3\" data-x=\"4\"><rect x=\"306\" y=\"200\" width=\"128\" height=\"70\" rx=\"8\" class=\"bad\"/><text x=\"312\" y=\"216\" class=\"xs\">อักเสบ + GBM ฉีก</text><text x=\"312\" y=\"231\" class=\"xs\">RBC ลอด (dysmorphic)</text><text x=\"312\" y=\"246\" class=\"xs\">RBC cast · GFR ↓</text><text x=\"312\" y=\"261\" class=\"xs\">→ nephritic</text></g><g data-s=\"4\"><rect x=\"20\" y=\"270\" width=\"200\" height=\"120\" rx=\"8\" class=\"ac\"/><text x=\"120\" y=\"290\" class=\"b mid\">Nephrotic</text><text x=\"30\" y=\"310\" class=\"xs\">podocyte พัง ไม่อักเสบ</text><text x=\"30\" y=\"328\" class=\"xs\">protein &gt; 3.5 g/วัน</text><text x=\"30\" y=\"346\" class=\"xs\">albumin ต่ำ บวมมาก</text><text x=\"30\" y=\"364\" class=\"xs\">ตะกอนใส · MCD FSGS MN</text><rect x=\"228\" y=\"270\" width=\"206\" height=\"120\" rx=\"8\" class=\"bad\"/><text x=\"331\" y=\"290\" class=\"b mid\">Nephritic</text><text x=\"238\" y=\"310\" class=\"xs\">อักเสบ + GBM ฉีก</text><text x=\"238\" y=\"328\" class=\"xs\">hematuria + RBC cast</text><text x=\"238\" y=\"346\" class=\"xs\">GFR ↓ · HT · oliguria</text><text x=\"238\" y=\"364\" class=\"xs\">protein &lt; 3 g/วัน</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตะแกรงปกติ",
+      "cap": "น้ำและสารโมเลกุลเล็ก **ผ่านทั้ง 3 ชั้น** · albumin (66 kDa ประจุลบ) ถูก glycocalyx ประจุลบ **ผลักกลับ** · RBC ใหญ่เกินผ่าน GBM · podocyte + slit diaphragm คือด่านสำคัญที่สุดของ albumin"
+     },
+     {
+      "t": "Podocyte พัง → nephrotic",
+      "cap": "foot process แผ่แบน slit diaphragm หาย → **albumin รั่วจำนวนมากโดยไม่มีการอักเสบ** → nephrotic (MCD · FSGS · MN) · ไม่มีเซลล์อักเสบ จึงตะกอนใส"
+     },
+     {
+      "t": "อักเสบ + GBM ฉีก → nephritic",
+      "cap": "เซลล์อักเสบมาเกาะ (endocapillary) อุดหลอดเลือดฝอย → **GFR ↓** และ **GBM ฉีกเป็นรู → RBC เบียดลอดจนเสียรูป** → dysmorphic RBC · RBC cast (PSGN · IgAN · LN III/IV · ANCA)"
+     },
+     {
+      "t": "สรุป: พังชั้นไหน ได้อาการอะไร",
+      "cap": "**ด่านกันโปรตีนพัง = nephrotic** (รั่วมาก บวม albumin ต่ำ) · **อักเสบ/GBM ฉีก = nephritic** (เลือด + GFR ↓ + HT) — ใช้แยกกลุ่มอาการก่อนนึกชื่อโรค"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-gn-02",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "gn-nephritic-overfill",
+    "title": "Nephritic — กรองได้น้อยแต่ท่อไตยังดูด Na เต็มที่ → overfill",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: nephritic syndrome เซลล์อักเสบอุดหลอดเลือดฝอยใน glomerulus GFR ลด ท่อไตยังดูดโซเดียมกลับเต็มที่ เกลือและน้ำคั่งในหลอดเลือด เกิดความดันสูง บวม ปอดคั่งน้ำ และเม็ดเลือดแดงหลุดลงปัสสาวะเป็นสีโค้ก\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"90\" cy=\"102\" r=\"58\" class=\"bx\"/><circle cx=\"70\" cy=\"82\" r=\"14\" class=\"bad\"/><circle cx=\"108\" cy=\"80\" r=\"14\" class=\"bad\"/><circle cx=\"118\" cy=\"108\" r=\"14\" class=\"bad\"/><circle cx=\"92\" cy=\"124\" r=\"14\" class=\"bad\"/><circle cx=\"64\" cy=\"112\" r=\"14\" class=\"bad\"/><text x=\"90\" y=\"30\" class=\"xs mid b\">glomerulus</text><line x1=\"90\" y1=\"160\" x2=\"90\" y2=\"196\" class=\"ln w2\"/><rect x=\"60\" y=\"196\" width=\"330\" height=\"26\" rx=\"13\" class=\"sk\"/><text x=\"225\" y=\"213\" class=\"xs mid b\">ท่อไต — ยังทำงานปกติ</text><line x1=\"390\" y1=\"209\" x2=\"426\" y2=\"209\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"60\" y=\"258\" width=\"330\" height=\"24\" rx=\"12\" class=\"bad\"/><text x=\"225\" y=\"274\" class=\"xs mid\" data-x=\"3\">หลอดเลือด</text><g data-s=\"1\"><g class=\"pl\"><circle cx=\"65\" cy=\"79\" r=\"3.5\" class=\"inkf\"/><circle cx=\"74\" cy=\"78\" r=\"3.5\" class=\"inkf\"/><circle cx=\"70\" cy=\"87\" r=\"3.5\" class=\"inkf\"/><circle cx=\"103\" cy=\"77\" r=\"3.5\" class=\"inkf\"/><circle cx=\"112\" cy=\"76\" r=\"3.5\" class=\"inkf\"/><circle cx=\"108\" cy=\"85\" r=\"3.5\" class=\"inkf\"/><circle cx=\"113\" cy=\"105\" r=\"3.5\" class=\"inkf\"/><circle cx=\"122\" cy=\"104\" r=\"3.5\" class=\"inkf\"/><circle cx=\"118\" cy=\"113\" r=\"3.5\" class=\"inkf\"/><circle cx=\"87\" cy=\"121\" r=\"3.5\" class=\"inkf\"/><circle cx=\"96\" cy=\"120\" r=\"3.5\" class=\"inkf\"/><circle cx=\"92\" cy=\"129\" r=\"3.5\" class=\"inkf\"/><circle cx=\"59\" cy=\"109\" r=\"3.5\" class=\"inkf\"/><circle cx=\"68\" cy=\"108\" r=\"3.5\" class=\"inkf\"/><circle cx=\"64\" cy=\"117\" r=\"3.5\" class=\"inkf\"/></g><text x=\"160\" y=\"60\" class=\"xs b\">immune complex → complement</text><text x=\"160\" y=\"76\" class=\"xs\">neutrophil + endocapillary</text><text x=\"160\" y=\"91\" class=\"xs\">proliferation อุดหลอดเลือด</text></g><g data-s=\"2\"><line x1=\"150\" y1=\"116\" x2=\"196\" y2=\"116\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"200\" y=\"102\" width=\"232\" height=\"32\" rx=\"8\" class=\"bad\"/><text x=\"316\" y=\"123\" class=\"xs mid b tbad\">GFR ↓ → BUN/Cr ↑ · ปัสสาวะน้อย</text></g><g data-s=\"3\"><line x1=\"140\" y1=\"224\" x2=\"140\" y2=\"254\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><line x1=\"225\" y1=\"224\" x2=\"225\" y2=\"254\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><line x1=\"310\" y1=\"224\" x2=\"310\" y2=\"254\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"146\" y=\"244\" class=\"xs b twa\">Na⁺</text><text x=\"231\" y=\"244\" class=\"xs b twa\">Na⁺</text><text x=\"316\" y=\"244\" class=\"xs b twa\">Na⁺</text><text x=\"225\" y=\"275\" class=\"xs mid b\">Na + น้ำคั่ง (overfill) · renin ถูกกด</text><line x1=\"84\" y1=\"282\" x2=\"84\" y2=\"300\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"220\" y1=\"282\" x2=\"220\" y2=\"300\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><line x1=\"356\" y1=\"282\" x2=\"356\" y2=\"300\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><rect x=\"20\" y=\"304\" width=\"128\" height=\"48\" rx=\"8\" class=\"ms\"/><text x=\"84\" y=\"324\" class=\"sm mid b\">ความดันสูง</text><text x=\"84\" y=\"341\" class=\"xs mid\">ปวดศีรษะ · ชัก</text><rect x=\"156\" y=\"304\" width=\"128\" height=\"48\" rx=\"8\" class=\"ms\"/><text x=\"220\" y=\"324\" class=\"sm mid b\">บวม</text><text x=\"220\" y=\"341\" class=\"xs mid\">รอบตาเช้า → ขาบ่าย</text><rect x=\"292\" y=\"304\" width=\"128\" height=\"48\" rx=\"8\" class=\"ms\"/><text x=\"356\" y=\"324\" class=\"sm mid b\">ปอดคั่งน้ำ</text><text x=\"356\" y=\"341\" class=\"xs mid\">หอบ</text></g><g data-s=\"4\"><text x=\"152\" y=\"160\" class=\"xs b tbad\">GBM ฉีก → RBC ลอดเข้าท่อ</text><g transform=\"translate(90,165)\"><ellipse cx=\"0\" cy=\"0\" rx=\"6\" ry=\"3.5\" class=\"badf\"/><animateMotion dur=\"3.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,44 L298,44\"/></g><g transform=\"translate(90,165)\"><ellipse cx=\"0\" cy=\"0\" rx=\"6\" ry=\"3.5\" class=\"badf\"/><animateMotion dur=\"3.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,44 L298,44\" begin=\"-1.6s\"/></g><text x=\"434\" y=\"192\" class=\"xs end b tbad\">RBC cast</text><text x=\"434\" y=\"236\" class=\"xs end b tbad\">ปัสสาวะสีโค้ก</text></g><g data-s=\"5\"><rect x=\"20\" y=\"364\" width=\"400\" height=\"50\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"383\" class=\"xs mid b\">Nephritic: HT + บวม + hematuria + GFR ↓ · albumin ปกติ/ต่ำเล็กน้อย</text><text x=\"220\" y=\"401\" class=\"xs mid\">ต่างจาก nephrotic: albumin ต่ำมาก บวมมาก ความดันมักไม่สูง</text></g></svg>",
+    "steps": [
+     {
+      "t": "อักเสบอุดหลอดเลือดฝอย",
+      "cap": "immune complex หรือแอนติบอดีกระตุ้น complement → neutrophil/monocyte มาเกาะ และ endothelial/mesangial cell แบ่งตัว (**endocapillary proliferation**) → ช่องหลอดเลือดฝอยตีบ"
+     },
+     {
+      "t": "GFR ↓",
+      "cap": "พื้นที่กรองลด → **GFR ↓ → BUN/Cr ขึ้น (azotemia) และปัสสาวะน้อย** (oliguria < 400 มล./วัน) — เด่นใน nephritic/RPGN ส่วน nephrotic แท้ ๆ มักไม่มี"
+     },
+     {
+      "t": "ท่อไตยังดูด Na กลับเต็มที่",
+      "cap": "ปัญหาอยู่ที่ glomerulus ท่อไตยังดี → **Na และน้ำคั่งในหลอดเลือด (overfill)** renin ถูกกด → **ความดันสูง บวม ปอดคั่งน้ำ** — ความดันสูงมากอาจปวดศีรษะ ชัก (hypertensive encephalopathy)"
+     },
+     {
+      "t": "GBM ฉีก → hematuria",
+      "cap": "RBC ลอดผ่าน GBM ที่ฉีก ผ่านท่อไตยาวจน Hb เปลี่ยนสี → **ปัสสาวะสีโค้ก/น้ำล้างเนื้อ** และถูก Tamm-Horsfall ห่อเป็น **RBC cast**"
+     },
+     {
+      "t": "สรุปเทียบ nephrotic",
+      "cap": "Nephritic = **HT + บวม + glomerular hematuria + GFR ↓** โปรตีน < 3 g/วัน albumin ปกติหรือต่ำเล็กน้อย · nephrotic = บวม ++++ albumin ต่ำ ความดันมักไม่สูง ไม่มี hematuria"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-gn-07",
+   "after": "ทำไม furosemide ต้องใช้ขนาดสูง",
+   "anim": {
+    "key": "gn-furosemide",
+    "title": "ทำไม nephrotic ดื้อ furosemide — ยาไปไม่ถึง และถูกจับไว้ในท่อ",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: furosemide ต้องจับ albumin ไปถึง proximal tubule แล้วถูกหลั่งเข้าท่อไปออกฤทธิ์ที่ NKCC2 ใน nephrotic albumin ในเลือดต่ำยาไปถึงน้อย และ albumin ที่รั่วในท่อจับยาไว้ จึงต้องใช้ขนาดสูง\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"26\" width=\"420\" height=\"60\" rx=\"10\" class=\"bad\"/><text x=\"18\" y=\"42\" class=\"xs b\">เลือด</text><rect x=\"10\" y=\"96\" width=\"200\" height=\"40\" rx=\"6\" class=\"sk\"/><text x=\"110\" y=\"114\" class=\"xs mid b\">เซลล์ proximal tubule</text><text x=\"110\" y=\"128\" class=\"xs mid\">หลั่งยาเข้าท่อ (OAT)</text><rect x=\"10\" y=\"146\" width=\"420\" height=\"46\" rx=\"10\" class=\"wa\"/><text x=\"18\" y=\"162\" class=\"xs b twa\">ท่อไต (น้ำกรอง) →</text><rect x=\"330\" y=\"142\" width=\"100\" height=\"54\" rx=\"8\" class=\"ac\"/><text x=\"380\" y=\"212\" class=\"sm mid b tac\">TAL: NKCC2</text><text x=\"380\" y=\"228\" class=\"xs mid\">จุดออกฤทธิ์ (ด้านลูเมน)</text><circle cx=\"30\" cy=\"280\" r=\"4\" class=\"acf\"/><text x=\"40\" y=\"284\" class=\"xs\">= furosemide</text><circle cx=\"140\" cy=\"280\" r=\"7\" class=\"msf\"/><text x=\"152\" y=\"284\" class=\"xs\">= albumin</text><g data-x=\"2\"><g transform=\"translate(20,56)\"><circle cx=\"0\" cy=\"0\" r=\"7\" class=\"msf\"/><circle cx=\"6\" cy=\"-5\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L100,0\"/></g><g transform=\"translate(20,56)\"><circle cx=\"0\" cy=\"0\" r=\"7\" class=\"msf\"/><circle cx=\"6\" cy=\"-5\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L100,0\" begin=\"-1.1s\"/></g><circle cx=\"60\" cy=\"72\" r=\"7\" class=\"msf\"/><circle cx=\"200\" cy=\"70\" r=\"7\" class=\"msf\"/><circle cx=\"260\" cy=\"50\" r=\"7\" class=\"msf\"/><circle cx=\"320\" cy=\"72\" r=\"7\" class=\"msf\"/><circle cx=\"380\" cy=\"52\" r=\"7\" class=\"msf\"/></g><g data-x=\"3\"><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\"/></g><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\" begin=\"-1s\"/></g><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\" begin=\"-2s\"/></g><line x1=\"120\" y1=\"86\" x2=\"120\" y2=\"150\" class=\"lac w2 fl\"/></g><g data-s=\"1\" data-x=\"2\"><rect x=\"10\" y=\"300\" width=\"420\" height=\"44\" rx=\"8\" class=\"ok\"/><text x=\"20\" y=\"318\" class=\"xs b\">ปกติ: ยาจับ albumin → ส่งถึง PCT → หลั่งเข้าท่อ</text><text x=\"20\" y=\"334\" class=\"xs\">→ ไหลไปถึง NKCC2 ที่ TAL จากด้านลูเมน</text></g><g data-s=\"2\" data-x=\"3\"><circle cx=\"260\" cy=\"50\" r=\"7\" class=\"msf\"/><g transform=\"translate(200,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-54\"/></g><g transform=\"translate(260,64)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L30,-58\" begin=\"-0.8s\"/></g><text x=\"300\" y=\"18\" class=\"xs b tbad\">ยาหลุดออกนอกหลอดเลือด</text><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\"/></g><rect x=\"10\" y=\"300\" width=\"420\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"20\" y=\"318\" class=\"xs b\">albumin ในเลือดต่ำ → ยากระจายออกนอกหลอดเลือด (Vd ↑)</text><text x=\"20\" y=\"334\" class=\"xs\">→ ถึง proximal tubule และถูกหลั่งเข้าท่อน้อยลง</text></g><g data-s=\"3\" data-x=\"4\"><circle cx=\"180\" cy=\"176\" r=\"7\" class=\"msf\"/><circle cx=\"186\" cy=\"171\" r=\"3.5\" class=\"acf\"/><circle cx=\"250\" cy=\"162\" r=\"7\" class=\"msf\"/><circle cx=\"256\" cy=\"157\" r=\"3.5\" class=\"acf\"/><g transform=\"translate(130,170)\"><circle cx=\"0\" cy=\"0\" r=\"7\" class=\"msf\"/><circle cx=\"6\" cy=\"-5\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L300,0\"/></g><text x=\"380\" y=\"174\" class=\"lg mid b tbad\">✕</text><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,90\"/></g><rect x=\"10\" y=\"300\" width=\"420\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"20\" y=\"318\" class=\"xs b\">albumin ที่รั่วอยู่ในท่อจับยาไว้ (ยาที่จับโปรตีนออกฤทธิ์ไม่ได้)</text><text x=\"20\" y=\"334\" class=\"xs\">→ ยาอิสระถึง NKCC2 น้อย → ขับ Na ได้น้อย = ดื้อยาขับปัสสาวะ</text></g><g data-s=\"4\"><circle cx=\"180\" cy=\"176\" r=\"7\" class=\"msf\"/><circle cx=\"250\" cy=\"162\" r=\"7\" class=\"msf\"/><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\"/></g><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\" begin=\"-0.6s\"/></g><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\" begin=\"-1.2s\"/></g><g transform=\"translate(120,60)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"acf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,110 L256,110\" begin=\"-1.8s\"/></g><rect x=\"10\" y=\"300\" width=\"420\" height=\"92\" rx=\"8\" class=\"ok\"/><text x=\"20\" y=\"318\" class=\"sm b tok\">แก้อย่างไร</text><text x=\"20\" y=\"336\" class=\"xs\">เพิ่มขนาด furosemide · ให้วันละ 2 ครั้ง</text><text x=\"20\" y=\"352\" class=\"xs\">จำกัดเกลือ Na &lt; 2 g/วัน</text><text x=\"20\" y=\"368\" class=\"xs\">ร่วมกับ thiazide หรือ amiloride (ปิด ENaC ที่ plasmin เปิด)</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติยาเดินทางอย่างไร",
+      "cap": "furosemide **จับ albumin** ในเลือดไปถึง proximal tubule แล้วถูก **หลั่งเข้าท่อ** (ไม่ได้ถูกกรอง) จึงไปออกฤทธิ์ที่ **NKCC2 ของ TAL จากด้านลูเมน**"
+     },
+     {
+      "t": "albumin ในเลือดต่ำ",
+      "cap": "เมื่อ albumin ต่ำ ยาอิสระ **กระจายออกนอกหลอดเลือด** → ไปถึง proximal tubule และถูกหลั่งเข้าท่อน้อยลง"
+     },
+     {
+      "t": "albumin รั่วจับยาในท่อ",
+      "cap": "albumin ที่รั่วอยู่ในน้ำกรอง **จับยาไว้ในท่อ** → ยาอิสระที่ถึง NKCC2 น้อย ขับ Na ได้น้อย — ร่วมกับ plasmin เปิด ENaC ทำให้ nephrotic **ดื้อยาขับปัสสาวะ**"
+     },
+     {
+      "t": "จึงต้องใช้ขนาดสูง",
+      "cap": "**เพิ่มขนาด · ให้วันละ 2 ครั้ง · จำกัดเกลือ** หรือ **ร่วมกับ thiazide/amiloride** (amiloride ยับยั้ง ENaC) · ลดโปรตีนรั่วระยะยาวด้วย ACEi/ARB"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-gn-08",
+   "after": "RPGN — crescent เกิดอย่างไร",
+   "anim": {
+    "key": "gn-crescent",
+    "title": "Crescent ใน RPGN — จาก GBM ฉีกถึงพังผืดที่ไม่กลับคืน",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: RPGN การอักเสบรุนแรงทำให้ GBM ฉีก fibrin ทะลักเข้า Bowman space parietal epithelial cell แบ่งตัวร่วมกับ macrophage เป็น crescent เบียดกระจุกหลอดเลือด ปิดทางออก GFR ลดเร็ว ถ้าปล่อยไว้กลายเป็นพังผืด\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"170\" cy=\"190\" r=\"132\" class=\"sk\"/><circle cx=\"170\" cy=\"190\" r=\"124\" class=\"wa\"/><g data-x=\"4\"><circle cx=\"170\" cy=\"198\" r=\"84\" class=\"bx\"/><circle cx=\"220.0\" cy=\"198.0\" r=\"24\" class=\"bad\"/><circle cx=\"195.0\" cy=\"241.30127018922192\" r=\"24\" class=\"bad\"/><circle cx=\"145.0\" cy=\"241.30127018922195\" r=\"24\" class=\"bad\"/><circle cx=\"120.0\" cy=\"198.0\" r=\"24\" class=\"bad\"/><circle cx=\"144.99999999999997\" cy=\"154.69872981077808\" r=\"24\" class=\"bad\"/><circle cx=\"195.0\" cy=\"154.69872981077808\" r=\"24\" class=\"bad\"/><circle cx=\"170\" cy=\"198\" r=\"22\" class=\"bad\"/></g><g data-s=\"4\"><circle cx=\"170\" cy=\"214\" r=\"56\" class=\"bx\"/><circle cx=\"202.0\" cy=\"214.0\" r=\"15\" class=\"bad\"/><circle cx=\"186.0\" cy=\"241.71281292110203\" r=\"15\" class=\"bad\"/><circle cx=\"154.0\" cy=\"241.71281292110203\" r=\"15\" class=\"bad\"/><circle cx=\"138.0\" cy=\"214.0\" r=\"15\" class=\"bad\"/><circle cx=\"154.0\" cy=\"186.28718707889797\" r=\"15\" class=\"bad\"/><circle cx=\"186.0\" cy=\"186.28718707889797\" r=\"15\" class=\"bad\"/><circle cx=\"170\" cy=\"214\" r=\"13\" class=\"bad\"/></g><text x=\"170\" y=\"98\" class=\"xs mid b twa\" data-x=\"3\">Bowman space</text><path d=\"M170,316 L170,360 L300,360\" class=\"lwa w3 fl\" data-x=\"4\" marker-end=\"url(#ah-wa)\"/><text x=\"240\" y=\"352\" class=\"xs twa\" data-x=\"4\">น้ำกรอง → ท่อไต</text><path d=\"M170,322 L170,360 L300,360\" class=\"lmu w2 da\" data-s=\"4\"/><text x=\"240\" y=\"352\" class=\"xs tbad b\" data-s=\"4\">ทางออกถูกปิด</text><g data-s=\"2\" data-x=\"4\"><g class=\"pl\"><circle cx=\"112\" cy=\"140\" r=\"10\" class=\"lbad w3\"/></g><circle cx=\"96\" cy=\"120\" r=\"3\" class=\"msf\"/><circle cx=\"108\" cy=\"104\" r=\"3\" class=\"msf\"/><circle cx=\"84\" cy=\"140\" r=\"3\" class=\"msf\"/><circle cx=\"126\" cy=\"92\" r=\"3\" class=\"msf\"/><circle cx=\"92\" cy=\"106\" r=\"3\" class=\"msf\"/><circle cx=\"78\" cy=\"160\" r=\"3\" class=\"msf\"/><path d=\"M112,140 L92,118\" class=\"lms w2\"/><path d=\"M112,140 L120,100\" class=\"lms w2\"/></g><g data-s=\"3\"><path d=\"M60.9,253.0 A126,126 0 1 1 279.1,253.0 L253.1,238.0 A96,96 0 1 0 86.9,238.0 Z\" class=\"ms\"/><circle cx=\"61.671147168657114\" cy=\"209.10129954336233\" r=\"5\" class=\"inkf\"/><circle cx=\"66.63381171355007\" cy=\"152.37778423417643\" r=\"5\" class=\"inkf\"/><circle cx=\"99.29336293448065\" cy=\"105.73511125691243\" r=\"5\" class=\"inkf\"/><circle cx=\"150.89870045663767\" cy=\"81.67114716865711\" r=\"5\" class=\"inkf\"/><circle cx=\"207.6222157658236\" cy=\"86.63381171355009\" r=\"5\" class=\"inkf\"/><circle cx=\"254.26488874308757\" cy=\"119.29336293448064\" r=\"5\" class=\"inkf\"/><circle cx=\"278.3288528313429\" cy=\"170.89870045663767\" r=\"5\" class=\"inkf\"/></g><g data-s=\"4\"><path d=\"M279.1,253.0 A126,126 0 0 1 60.9,253.0 L86.9,238.0 A87.55,87.55 0 0 0 253.1,238.0 Z\" class=\"ms\"/></g><g data-s=\"5\"><path d=\"M60.9,253.0 A126,126 0 1 1 279.1,253.0 L253.1,238.0 A96,96 0 1 0 86.9,238.0 Z\" class=\"sk\"/><path d=\"M279.1,253.0 A126,126 0 0 1 60.9,253.0 L86.9,238.0 A87.55,87.55 0 0 0 253.1,238.0 Z\" class=\"sk\"/><line x1=\"268.0\" y1=\"190.0\" x2=\"292.0\" y2=\"190.0\" class=\"lmu w2\"/><line x1=\"262.1\" y1=\"223.5\" x2=\"284.6\" y2=\"231.7\" class=\"lmu w2\"/><line x1=\"245.1\" y1=\"253.0\" x2=\"263.5\" y2=\"268.4\" class=\"lmu w2\"/><line x1=\"219.0\" y1=\"274.9\" x2=\"231.0\" y2=\"295.7\" class=\"lmu w2\"/><line x1=\"187.0\" y1=\"286.5\" x2=\"191.2\" y2=\"310.1\" class=\"lmu w2\"/><line x1=\"153.0\" y1=\"286.5\" x2=\"148.8\" y2=\"310.1\" class=\"lmu w2\"/><line x1=\"121.0\" y1=\"274.9\" x2=\"109.0\" y2=\"295.7\" class=\"lmu w2\"/><line x1=\"94.9\" y1=\"253.0\" x2=\"76.5\" y2=\"268.4\" class=\"lmu w2\"/><line x1=\"77.9\" y1=\"223.5\" x2=\"55.4\" y2=\"231.7\" class=\"lmu w2\"/><line x1=\"72.0\" y1=\"190.0\" x2=\"48.0\" y2=\"190.0\" class=\"lmu w2\"/><line x1=\"77.9\" y1=\"156.5\" x2=\"55.4\" y2=\"148.3\" class=\"lmu w2\"/><line x1=\"94.9\" y1=\"127.0\" x2=\"76.5\" y2=\"111.6\" class=\"lmu w2\"/><line x1=\"121.0\" y1=\"105.1\" x2=\"109.0\" y2=\"84.3\" class=\"lmu w2\"/><line x1=\"153.0\" y1=\"93.5\" x2=\"148.8\" y2=\"69.9\" class=\"lmu w2\"/><line x1=\"187.0\" y1=\"93.5\" x2=\"191.2\" y2=\"69.9\" class=\"lmu w2\"/><line x1=\"219.0\" y1=\"105.1\" x2=\"231.0\" y2=\"84.3\" class=\"lmu w2\"/><line x1=\"245.1\" y1=\"127.0\" x2=\"263.5\" y2=\"111.6\" class=\"lmu w2\"/><line x1=\"262.1\" y1=\"156.5\" x2=\"284.6\" y2=\"148.3\" class=\"lmu w2\"/></g><g data-x=\"2\"><text x=\"312\" y=\"40\" class=\"xs\">ปกติ: Bowman space</text><text x=\"312\" y=\"56\" class=\"xs\">เปิดโล่ง น้ำกรอง</text><text x=\"312\" y=\"72\" class=\"xs\">ไหลออกสู่ท่อไต</text></g><g data-s=\"2\" data-x=\"3\"><text x=\"312\" y=\"40\" class=\"sm b tbad\">GBM ฉีกเป็นรู</text><text x=\"312\" y=\"58\" class=\"xs\">fibrin + โปรตีนพลาสมา</text><text x=\"312\" y=\"74\" class=\"xs\">ทะลักเข้า Bowman space</text></g><g data-s=\"3\" data-x=\"4\"><text x=\"312\" y=\"40\" class=\"sm b tms\">Cellular crescent</text><text x=\"312\" y=\"58\" class=\"xs\">parietal epithelial cell</text><text x=\"312\" y=\"74\" class=\"xs\">แบ่งตัว + macrophage</text><text x=\"312\" y=\"90\" class=\"xs\">→ รูปพระจันทร์เสี้ยว</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"312\" y=\"40\" class=\"sm b tbad\">เบียด tuft + ปิดทางออก</text><text x=\"312\" y=\"58\" class=\"xs\">GFR ลดเร็ว</text><text x=\"312\" y=\"74\" class=\"xs\">≥ 50% ใน 3 เดือน</text><text x=\"312\" y=\"90\" class=\"xs\">crescent &gt; 30–50%</text></g><g data-s=\"5\"><text x=\"312\" y=\"40\" class=\"sm b\">Fibrous crescent</text><text x=\"312\" y=\"58\" class=\"xs\">cellular → fibrocellular</text><text x=\"312\" y=\"74\" class=\"xs\">→ fibrous = ไม่กลับคืน</text><rect x=\"306\" y=\"100\" width=\"128\" height=\"104\" rx=\"8\" class=\"ac\"/><text x=\"370\" y=\"118\" class=\"xs mid b\">รักษาภายในวัน–สัปดาห์</text><text x=\"314\" y=\"136\" class=\"xs\">pulse MP</text><text x=\"314\" y=\"152\" class=\"xs\">+ CYC หรือ rituximab</text><text x=\"314\" y=\"168\" class=\"xs\">PLEX ใน anti-GBM</text><text x=\"314\" y=\"184\" class=\"xs\">เจาะไตเร็ว ไม่รอผล</text></g></svg>",
+    "steps": [
+     {
+      "t": "Glomerulus ปกติ",
+      "cap": "กระจุกหลอดเลือด (tuft) อยู่ใน Bowman capsule · **Bowman space เปิดโล่ง** น้ำกรองไหลออกทาง urinary pole สู่ท่อไต"
+     },
+     {
+      "t": "GBM ฉีกเป็นรู",
+      "cap": "การอักเสบรุนแรง (anti-GBM · immune complex · ANCA) ทำให้ **GBM ฉีกเป็นรู** → **fibrin และโปรตีนพลาสมาทะลักเข้า Bowman space**"
+     },
+     {
+      "t": "เกิด cellular crescent",
+      "cap": "fibrin กระตุ้น **parietal epithelial cell แบ่งตัว** ร่วมกับ **macrophage/monocyte** เป็นชั้นรูปพระจันทร์เสี้ยวใน Bowman space"
+     },
+     {
+      "t": "เบียด tuft และปิดทางออก",
+      "cap": "crescent **เบียดกระจุกหลอดเลือดให้เล็กลง และปิดทางออกสู่ท่อไต** → GFR ลดเร็ว · นิยาม RPGN: crescent มัก **> 30–50%** + GFR ลด **50% ใน 3 เดือน**"
+     },
+     {
+      "t": "ปล่อยไว้ = พังผืดถาวร",
+      "cap": "**cellular → fibrocellular → fibrous** ซึ่งไม่กลับคืน → ต้อง **วินิจฉัยและรักษาภายในวัน–สัปดาห์**: pulse methylprednisolone + cyclophosphamide/rituximab · plasma exchange ใน anti-GBM · IF: linear / granular / pauci-immune"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-uti-02",
+   "after": "E. coli ก่อโรคได้อย่างไร (รูป pathogenesis ในสไลด์เป็นภาพ — เรียบเรียงจากตำรา)",
+   "anim": {
+    "key": "uti-upec-ascend",
+    "title": "UPEC ไต่ขึ้นทีละด่าน — fimbriae คนละชนิดเกาะคนละที่",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: E. coli จากลำไส้ตั้งถิ่นฐานรอบรูเปิดท่อปัสสาวะ ไต่ขึ้นท่อปัสสาวะสั้นเข้ากระเพาะ ใช้ type 1 fimbriae จับ uroplakin แล้วไต่ขึ้นท่อไต ใช้ P fimbriae จับไต LPS กระตุ้นการอักเสบเกิดไข้และเข้ากระแสเลือด\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"170\" cy=\"62\" rx=\"62\" ry=\"40\" class=\"sk\"/><ellipse cx=\"170\" cy=\"80\" rx=\"20\" ry=\"11\" class=\"wa\"/><text x=\"170\" y=\"50\" class=\"b mid\">ไต</text><line x1=\"170\" y1=\"100\" x2=\"170\" y2=\"212\" class=\"lmu w3\"/><text x=\"160\" y=\"160\" class=\"xs end mu\">ท่อไต</text><ellipse cx=\"170\" cy=\"262\" rx=\"82\" ry=\"50\" class=\"wa\"/><text x=\"170\" y=\"244\" class=\"xs mid b twa\">กระเพาะปัสสาวะ</text><line x1=\"170\" y1=\"312\" x2=\"170\" y2=\"352\" class=\"lmu w3\"/><text x=\"180\" y=\"336\" class=\"xs mu\">สั้น ~4 ซม.</text><ellipse cx=\"170\" cy=\"372\" rx=\"40\" ry=\"10\" class=\"ms\"/><text x=\"124\" y=\"376\" class=\"xs end\">ปากช่องคลอด</text><circle cx=\"170\" cy=\"404\" r=\"8\" class=\"sk\"/><text x=\"156\" y=\"408\" class=\"xs end\">ทวาร</text><g data-s=\"1\"><g class=\"pl\"><ellipse cx=\"150\" cy=\"370\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"162\" cy=\"366\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"186\" cy=\"372\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"176\" cy=\"400\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"194\" cy=\"368\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/></g><text x=\"228\" y=\"384\" class=\"xs b\">E. coli จากลำไส้ตั้งถิ่นฐาน</text><text x=\"228\" y=\"399\" class=\"xs\">รอบรูเปิด (lactobacilli ลด)</text></g><g data-s=\"2\"><g transform=\"translate(170,368)\"><ellipse cx=\"0\" cy=\"0\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-78\"/></g><g transform=\"translate(170,368)\"><ellipse cx=\"0\" cy=\"0\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-78\" begin=\"-1.1s\"/></g><line x1=\"150\" y1=\"306\" x2=\"150\" y2=\"348\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"144\" y=\"324\" class=\"xs end twa\">ปัสสาวะชะ</text><text x=\"262\" y=\"336\" class=\"xs b\">ไต่ขึ้นท่อสั้น</text><text x=\"262\" y=\"351\" class=\"xs\">เพศสัมพันธ์ช่วยดันเข้า</text></g><g data-s=\"3\"><g class=\"pl\"><ellipse cx=\"118\" cy=\"284\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"136\" cy=\"298\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"158\" cy=\"306\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"190\" cy=\"304\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"214\" cy=\"296\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"232\" cy=\"280\" rx=\"5\" ry=\"2.6\" class=\"badf\"/></g><circle cx=\"176\" cy=\"280\" r=\"9\" class=\"bad\"/><text x=\"176\" y=\"284\" class=\"xs mid b tbad\">IBC</text><text x=\"262\" y=\"252\" class=\"xs b tbad\">Type 1 fimbriae (FimH)</text><text x=\"262\" y=\"267\" class=\"xs\">จับ uroplakin (mannose)</text><text x=\"262\" y=\"282\" class=\"xs\">ไม่ถูกชะ → IBC</text><text x=\"262\" y=\"297\" class=\"xs b\">= cystitis</text></g><g data-s=\"4\"><g transform=\"translate(170,214)\"><ellipse cx=\"0\" cy=\"0\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-118\"/></g><g transform=\"translate(170,214)\"><ellipse cx=\"0\" cy=\"0\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L0,-118\" begin=\"-1.3s\"/></g><g class=\"pl\"><ellipse cx=\"146\" cy=\"70\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"196\" cy=\"66\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"184\" cy=\"92\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"150\" cy=\"92\" rx=\"5\" ry=\"2.6\" class=\"badf\"/></g><text x=\"262\" y=\"130\" class=\"xs\">LPS ลดการบีบตัวท่อไต</text><text x=\"262\" y=\"145\" class=\"xs b tbad\">P fimbriae (PapG)</text><text x=\"262\" y=\"160\" class=\"xs\">จับ globoside ที่ไต</text><text x=\"262\" y=\"175\" class=\"xs b\">= pyelonephritis</text></g><g data-s=\"5\"><rect x=\"4\" y=\"16\" width=\"92\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"50\" y=\"34\" class=\"xs mid b tbad\">กระแสเลือด</text><text x=\"50\" y=\"50\" class=\"xs mid\">urosepsis</text><line x1=\"112\" y1=\"54\" x2=\"100\" y2=\"46\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"262\" y=\"30\" class=\"xs b\">LPS → TLR4 → cytokine</text><text x=\"262\" y=\"45\" class=\"xs\">→ ไข้ หนาวสั่น ปวดเอว</text><text x=\"262\" y=\"60\" class=\"xs\">capsule · hemolysin</text><text x=\"262\" y=\"75\" class=\"xs\">→ ลามเข้ากระแสเลือด</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตั้งถิ่นฐานรอบรูเปิด",
+      "cap": "E. coli จากลำไส้ (ทวาร) มาอยู่ที่ปากช่องคลอด/รอบรูเปิดท่อปัสสาวะ — เกิดง่ายเมื่อ **lactobacilli ลด** (spermicide วัยหมดประจำเดือน ยาปฏิชีวนะ)"
+     },
+     {
+      "t": "ไต่ขึ้นท่อปัสสาวะสั้น",
+      "cap": "ท่อปัสสาวะหญิงสั้น **~4 ซม.** · เพศสัมพันธ์ดันเชื้อเข้า · ด่านแรกคือ **การชะล้างด้วยปัสสาวะ** — อะไรที่ทำให้ปัสสาวะค้างจึงเพิ่ม UTI"
+     },
+     {
+      "t": "FimH เกาะ uroplakin → cystitis",
+      "cap": "**Type 1 fimbriae (FimH)** จับ **uroplakin ที่มี mannose** บนเยื่อบุกระเพาะ → ไม่ถูกชะออก แทรกเข้าเซลล์เป็น **IBC** (เป็นซ้ำด้วยเชื้อเดิม) · Tamm-Horsfall protein เป็นตัวล่อจับ fimbriae"
+     },
+     {
+      "t": "P fimbriae เกาะไต → pyelonephritis",
+      "cap": "**LPS ลดการบีบตัวของท่อไต** เชื้อจึงไต่ขึ้นง่าย · **P fimbriae (PapG)** จับ **globoside** บนเซลล์กรวยไต — สายพันธุ์ที่มี P fimbriae พบมากใน **pyelonephritis/urosepsis**"
+     },
+     {
+      "t": "อักเสบทั้งระบบ",
+      "cap": "**LPS → TLR4 → cytokine → ไข้ หนาวสั่น** · capsule ต้าน complement hemolysin ทำลายเซลล์ → ลามเข้ากระแสเลือด · ข้อสอบ: **S. aureus ในปัสสาวะโดยไม่คาสาย = คิดทางกระแสเลือด** ไม่ใช่ ascending"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-uti-04",
+   "after": "ทำไม nitrite ลบทั้งที่ติดเชื้อ",
+   "anim": {
+    "key": "uti-nitrite",
+    "title": "Nitrite บวกต้องครบ 3 อย่าง — nitrate จากอาหาร เชื้อที่มี reductase และเวลาค้าง",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: nitrate จากอาหารถูกขับลงปัสสาวะ เชื้อที่มี nitrate reductase เปลี่ยนเป็น nitrite ต้องค้างในกระเพาะราวสี่ชั่วโมง แล้ว dipstick จึงเป็นบวก\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"90\" y1=\"18\" x2=\"112\" y2=\"100\" class=\"lmu w3\"/><line x1=\"210\" y1=\"18\" x2=\"188\" y2=\"100\" class=\"lmu w3\"/><text x=\"150\" y=\"22\" class=\"xs mid mu\">จากไต</text><ellipse cx=\"150\" cy=\"180\" rx=\"120\" ry=\"86\" class=\"wa\"/><text x=\"150\" y=\"116\" class=\"xs mid b twa\">กระเพาะปัสสาวะ</text><line x1=\"150\" y1=\"266\" x2=\"150\" y2=\"298\" class=\"lmu w3\"/><circle cx=\"296\" cy=\"22\" r=\"5\" class=\"waf\"/><text x=\"306\" y=\"26\" class=\"xs\">NO₃⁻ nitrate (จากผัก/อาหาร)</text><circle cx=\"296\" cy=\"42\" r=\"5\" class=\"badf\"/><text x=\"306\" y=\"46\" class=\"xs\">NO₂⁻ nitrite</text><g transform=\"translate(90,18)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"waf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L22,82 L30,132\"/></g><g transform=\"translate(210,18)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"waf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L-22,82 L-30,132\" begin=\"-1.2s\"/></g><g data-x=\"2\"><circle cx=\"80\" cy=\"160\" r=\"5\" class=\"waf\"/><circle cx=\"120\" cy=\"140\" r=\"5\" class=\"waf\"/><circle cx=\"170\" cy=\"150\" r=\"5\" class=\"waf\"/><circle cx=\"220\" cy=\"170\" r=\"5\" class=\"waf\"/><circle cx=\"100\" cy=\"200\" r=\"5\" class=\"waf\"/></g><circle cx=\"150\" cy=\"190\" r=\"5\" class=\"waf\"/><circle cx=\"200\" cy=\"214\" r=\"5\" class=\"waf\"/><circle cx=\"130\" cy=\"236\" r=\"5\" class=\"waf\"/><circle cx=\"180\" cy=\"240\" r=\"5\" class=\"waf\"/><circle cx=\"240\" cy=\"200\" r=\"5\" class=\"waf\"/><g data-s=\"2\"><circle cx=\"80\" cy=\"160\" r=\"5\" class=\"badf\"/><circle cx=\"120\" cy=\"140\" r=\"5\" class=\"badf\"/><circle cx=\"170\" cy=\"150\" r=\"5\" class=\"badf\"/><circle cx=\"220\" cy=\"170\" r=\"5\" class=\"badf\"/><circle cx=\"100\" cy=\"200\" r=\"5\" class=\"badf\"/><ellipse cx=\"94\" cy=\"152\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"184\" cy=\"142\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"114\" cy=\"192\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"196\" cy=\"132\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"232\" cy=\"186\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><text x=\"296\" y=\"76\" class=\"xs b\">Enterobacterales</text><text x=\"296\" y=\"91\" class=\"xs\">E. coli · Proteus · Klebsiella</text><text x=\"296\" y=\"106\" class=\"xs b tbad\">มี nitrate reductase</text></g><g data-s=\"3\"><circle cx=\"360\" cy=\"186\" r=\"36\" class=\"bx\"/><line x1=\"360\" y1=\"186\" x2=\"360\" y2=\"158\" class=\"ln w3\"/><line x1=\"360\" y1=\"186\" x2=\"382\" y2=\"186\" class=\"lbad w3\"><animateTransform attributeName=\"transform\" type=\"rotate\" from=\"0 360 186\" to=\"360 360 186\" dur=\"4s\" repeatCount=\"indefinite\"/></line><circle cx=\"360\" cy=\"186\" r=\"3\" class=\"inkf\"/><text x=\"360\" y=\"240\" class=\"sm mid b\">ค้าง ≥ ~4 ชม.</text><line x1=\"162\" y1=\"272\" x2=\"162\" y2=\"300\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"170\" y=\"292\" class=\"xs twa\">ถ่ายบ่อย → ชะออกก่อนครบ</text></g><rect x=\"20\" y=\"318\" width=\"300\" height=\"24\" rx=\"4\" class=\"sk\"/><rect x=\"200\" y=\"322\" width=\"26\" height=\"16\" rx=\"3\" class=\"bx\"/><rect x=\"240\" y=\"322\" width=\"26\" height=\"16\" rx=\"3\" class=\"bx\"/><text x=\"213\" y=\"314\" class=\"xs mid b\">LE</text><text x=\"253\" y=\"314\" class=\"xs mid b\">NIT</text><text x=\"30\" y=\"334\" class=\"xs mu\">dipstick</text><g data-s=\"4\"><rect x=\"200\" y=\"322\" width=\"26\" height=\"16\" rx=\"3\" class=\"ac\"/><rect x=\"240\" y=\"322\" width=\"26\" height=\"16\" rx=\"3\" class=\"bad\"/><text x=\"20\" y=\"362\" class=\"xs\">LE + = esterase จาก neutrophil (WBC ≥ 10/HPF) → pyuria</text><text x=\"20\" y=\"378\" class=\"xs b\">NIT + = มีเชื้อจริง (spec สูง) · ปัสสาวะเช้าดีที่สุด</text></g><g data-s=\"5\"><rect x=\"330\" y=\"258\" width=\"104\" height=\"120\" rx=\"8\" class=\"bad\"/><text x=\"382\" y=\"276\" class=\"xs mid b tbad\">NIT ลบไม่ตัด UTI</text><text x=\"338\" y=\"294\" class=\"xs\">Enterococcus</text><text x=\"338\" y=\"310\" class=\"xs\">S. saprophyticus</text><text x=\"338\" y=\"326\" class=\"xs\">Pseudomonas</text><text x=\"338\" y=\"342\" class=\"xs\">Candida</text><text x=\"338\" y=\"358\" class=\"xs\">เจือจาง · vit C</text></g></svg>",
+    "steps": [
+     {
+      "t": "Nitrate จากอาหาร",
+      "cap": "**nitrate (NO₃⁻) มาจากอาหาร** (ผัก) ถูกขับลงปัสสาวะตามปกติ — ไม่กินผัก ดื่มน้ำมาก หรือใช้ยาขับปัสสาวะ ทำให้สารตั้งต้นเจือจาง"
+     },
+     {
+      "t": "เชื้อที่มี nitrate reductase",
+      "cap": "**E. coli, Proteus mirabilis, Klebsiella** มี **nitrate reductase** เปลี่ยน nitrate → **nitrite** · Enterococcus, S. saprophyticus, Candida ไม่มีเอนไซม์ · Pseudomonas เปลี่ยน nitrite ต่อเป็นก๊าซ"
+     },
+     {
+      "t": "ต้องค้างนานพอ (~4 ชม.)",
+      "cap": "ปฏิกิริยาต้องใช้เวลา **ราว 4 ชั่วโมง** — คนเป็น cystitis ปัสสาวะบ่อย (อาการของโรคเอง) จึง **nitrite ลบได้บ่อย** · ใช้ **ปัสสาวะแรกตอนเช้า** ดีที่สุด"
+     },
+     {
+      "t": "อ่าน LE คู่ nitrite",
+      "cap": "**LE** = esterase ของ neutrophil (ตรวจได้เมื่อ WBC ≥ 10/HPF) บอก **pyuria** ไม่ได้บอกเชื้อ · **Nitrite บวก = ดัชนีที่เชื่อถือได้ของ significant bacteriuria** · LE+ NIT+ ในคนมีอาการ = UTI แทบแน่นอน"
+     },
+     {
+      "t": "Nitrite ลบไม่ได้ตัด UTI",
+      "cap": "เชื้อไม่มี reductase · ค้างไม่ถึง 4 ชม. · ปัสสาวะเจือจาง · วิตามินซีขนาดสูง → **ลบลวง** — มีอาการชัดยังต้องส่งเพาะเชื้อ · บวกลวง: ตัวอย่างวางทิ้งนาน phenazopyridine"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-uti-08",
+   "after": "นิ่ว struvite — เชื้อกับนิ่วเลี้ยงกันเอง",
+   "anim": {
+    "key": "uti-struvite",
+    "title": "Struvite — urease ทำปัสสาวะด่าง นิ่วโต และเชื้อหลบอยู่ในนิ่ว",
+    "svg": "<svg viewBox=\"0 0 440 420\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อที่สร้าง urease สลายยูเรียเป็นแอมโมเนีย ปัสสาวะเป็นด่าง struvite ตกผลึกเป็นนิ่ว staghorn เชื้อฝังอยู่ในนิ่วจึงติดเชื้อซ้ำ ต้องเอานิ่วออกหมดร่วมกับยา\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"104\" cy=\"200\" rx=\"92\" ry=\"150\" class=\"sk\"/><path d=\"M150,200 L96,118 M150,200 L72,200 M150,200 L96,284\" class=\"lwa w5\"/><ellipse cx=\"150\" cy=\"200\" rx=\"30\" ry=\"42\" class=\"wa\"/><line x1=\"170\" y1=\"232\" x2=\"196\" y2=\"340\" class=\"lwa w3\"/><text x=\"104\" y=\"66\" class=\"b mid\">ไต</text><text x=\"186\" y=\"352\" class=\"xs mid mu\">ท่อไต</text><g data-s=\"1\"><rect x=\"222\" y=\"14\" width=\"198\" height=\"50\" rx=\"8\" class=\"bad\"/><text x=\"321\" y=\"35\" class=\"xs mid b\">Proteus · Klebsiella</text><text x=\"321\" y=\"52\" class=\"xs mid\">สร้าง urease</text><g class=\"pl\"><ellipse cx=\"140\" cy=\"186\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"156\" cy=\"204\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"146\" cy=\"220\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"98\" cy=\"132\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/></g></g><g data-s=\"2\"><rect x=\"222\" y=\"82\" width=\"198\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"321\" y=\"103\" class=\"xs mid b\">ยูเรีย → NH₃ (ammonia)</text><text x=\"321\" y=\"120\" class=\"xs mid\">จับ H⁺ → ปัสสาวะด่าง pH &gt; 7.2</text><line x1=\"321\" y1=\"66\" x2=\"321\" y2=\"79\" class=\"ln w2\" marker-end=\"url(#ah)\"/><text x=\"150\" y=\"260\" class=\"sm b mid tms\">pH &gt; 7</text></g><g data-s=\"3\"><rect x=\"222\" y=\"150\" width=\"198\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"321\" y=\"171\" class=\"xs mid b\">Mg²⁺ + NH₄⁺ + PO₄³⁻</text><text x=\"321\" y=\"188\" class=\"xs mid\">→ struvite ตกผลึก (coffin-lid)</text><line x1=\"321\" y1=\"134\" x2=\"321\" y2=\"147\" class=\"ln w2\" marker-end=\"url(#ah)\"/><rect x=\"136\" y=\"178\" width=\"7\" height=\"5\" rx=\"1\" class=\"ms\"/><rect x=\"154\" y=\"192\" width=\"7\" height=\"5\" rx=\"1\" class=\"ms\"/><rect x=\"140\" y=\"212\" width=\"7\" height=\"5\" rx=\"1\" class=\"ms\"/><rect x=\"158\" y=\"222\" width=\"7\" height=\"5\" rx=\"1\" class=\"ms\"/><rect x=\"86\" y=\"196\" width=\"7\" height=\"5\" rx=\"1\" class=\"ms\"/></g><g data-s=\"4\" data-x=\"5\"><ellipse cx=\"146\" cy=\"200\" rx=\"18\" ry=\"24\" class=\"msf\"/></g><g data-s=\"4\"><rect x=\"222\" y=\"218\" width=\"198\" height=\"50\" rx=\"8\" class=\"ac\"/><text x=\"321\" y=\"239\" class=\"xs mid b\">นิ่วโตเร็ว แตกกิ่งเต็ม calyx</text><text x=\"321\" y=\"256\" class=\"xs mid\">= staghorn calculus</text><line x1=\"321\" y1=\"202\" x2=\"321\" y2=\"215\" class=\"ln w2\" marker-end=\"url(#ah)\"/></g><g data-s=\"5\"><ellipse cx=\"144\" cy=\"200\" rx=\"30\" ry=\"40\" class=\"msf\"/><ellipse cx=\"126\" cy=\"172\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"110\" cy=\"148\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"98\" cy=\"124\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"122\" cy=\"200\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"98\" cy=\"200\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"78\" cy=\"200\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"124\" cy=\"230\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"108\" cy=\"256\" rx=\"11\" ry=\"9\" class=\"msf\"/><ellipse cx=\"96\" cy=\"280\" rx=\"11\" ry=\"9\" class=\"msf\"/></g><g data-s=\"5\"><rect x=\"222\" y=\"286\" width=\"198\" height=\"50\" rx=\"8\" class=\"bad\"/><text x=\"321\" y=\"307\" class=\"xs mid b\">เชื้อฝังในนิ่ว + biofilm</text><text x=\"321\" y=\"324\" class=\"xs mid\">ยาฆ่าได้แค่เชื้อในปัสสาวะ</text><line x1=\"321\" y1=\"270\" x2=\"321\" y2=\"283\" class=\"ln w2\" marker-end=\"url(#ah)\"/><ellipse cx=\"140\" cy=\"190\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"130\" cy=\"214\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"104\" cy=\"150\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"100\" cy=\"252\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><ellipse cx=\"86\" cy=\"200\" rx=\"5\" ry=\"2.6\" class=\"inkf\"/><path d=\"M420,311 C438,311 438,39 422,39\" class=\"lbad w2 da fl sl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"6\"><rect x=\"6\" y=\"360\" width=\"428\" height=\"54\" rx=\"8\" class=\"ok\"/><text x=\"220\" y=\"381\" class=\"sm mid b\">ตัดวงจร: เอานิ่วออกให้หมด (มักใช้ PCNL) + ยาปฏิชีวนะ</text><text x=\"220\" y=\"400\" class=\"xs mid\">ยาอย่างเดียวไม่พอ — ปล่อยไว้: ไตเสื่อม sepsis XPN</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อสร้าง urease",
+      "cap": "**Proteus mirabilis, Klebsiella** สร้างเอนไซม์ **urease** — พบในคนที่ UTI ซ้ำ สายสวนคานาน neurogenic bladder"
+     },
+     {
+      "t": "ยูเรีย → ammonia → ปัสสาวะด่าง",
+      "cap": "urease สลาย **ยูเรียเป็น NH₃** ซึ่งจับ H⁺ เป็น NH₄⁺ → **ปัสสาวะเป็นด่าง (pH > 7.2)** — ผู้ป่วย UTI ที่ปัสสาวะด่างมากให้นึกถึงเชื้อกลุ่มนี้"
+     },
+     {
+      "t": "Struvite ตกผลึก",
+      "cap": "ในปัสสาวะด่างที่มี NH₄⁺ สูง **magnesium ammonium phosphate (struvite)** ตกผลึก (ผลึกรูป coffin-lid) ร่วมกับ carbonate apatite"
+     },
+     {
+      "t": "Staghorn",
+      "cap": "นิ่วโตเร็วจนแตกกิ่ง **เต็ม renal pelvis และ calyces = staghorn** · KUB ทึบปานกลาง เห็นเงารูปเขากวาง"
+     },
+     {
+      "t": "เชื้อหลบในนิ่ว → วนซ้ำ",
+      "cap": "เชื้อฝังในเนื้อนิ่วและ biofilm **ยาเข้าไม่ถึง** → ฆ่าได้แค่เชื้อในปัสสาวะ หยุดยาก็กลับมา (สไลด์: stones = failure to eradicate) แล้วนิ่วก็โตต่อ"
+     },
+     {
+      "t": "ตัดวงจร",
+      "cap": "**เอานิ่วออกให้หมด (มักใช้ PCNL) ร่วมกับยาปฏิชีวนะ** · ปล่อยไว้ → ไตเสื่อม ติดเชื้อซ้ำ sepsis และเป็นพื้นของ xanthogranulomatous pyelonephritis"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-uti-12",
+   "after": "ทำไมต้องยาละลายไขมัน และนานถึง 4–6 สัปดาห์",
+   "anim": {
+    "key": "uti-cyst-lipophilic",
+    "title": "Cyst infection ใน ADPKD — ถุงปิดที่ยาต้องซึมผ่านผนังเข้าไปเอง",
+    "svg": "<svg viewBox=\"0 0 440 380\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ถุงน้ำใน ADPKD เป็นถุงปิดไม่ต่อกับท่อไต ยาที่ละลายน้ำไปทางการกรองลงปัสสาวะผ่านผนังถุงไม่ได้ ยาที่ละลายในไขมันแพร่ผ่านเยื่อหุ้มเซลล์เข้าถุงได้ จึงต้องใช้ fluoroquinolone หรือ TMP/SMX นาน 4 ถึง 6 สัปดาห์\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"16\" width=\"420\" height=\"40\" rx=\"8\" class=\"bad\"/><text x=\"18\" y=\"32\" class=\"xs b\">เลือด (ยาในพลาสมา)</text><rect x=\"10\" y=\"82\" width=\"180\" height=\"30\" rx=\"15\" class=\"wa\"/><line x1=\"184\" y1=\"97\" x2=\"20\" y2=\"97\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"14\" y=\"128\" class=\"xs twa b\">ท่อไต → ปัสสาวะ (ไปเพาะเชื้อ)</text><circle cx=\"310\" cy=\"220\" r=\"100\" class=\"sk\"/><circle cx=\"310\" cy=\"220\" r=\"86\" class=\"wa\"/><text x=\"310\" y=\"176\" class=\"sm b mid\">ถุงน้ำ — ถุงปิด</text><text x=\"310\" y=\"346\" class=\"xs mid mu\">ผนังเซลล์ tight junction แน่น</text><g data-s=\"1\"><g class=\"pl\"><ellipse cx=\"290\" cy=\"210\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"320\" cy=\"230\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"300\" cy=\"250\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"340\" cy=\"206\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"280\" cy=\"240\" rx=\"5\" ry=\"2.6\" class=\"badf\"/><ellipse cx=\"330\" cy=\"262\" rx=\"5\" ry=\"2.6\" class=\"badf\"/></g></g><text x=\"10\" y=\"160\" class=\"xs\">① ถุงน้ำหลุดจาก nephron</text><text x=\"10\" y=\"175\" class=\"xs\">→ UA/เพาะปัสสาวะอาจปกติ</text><text x=\"10\" y=\"190\" class=\"xs\">→ เพาะก่อนให้ยา · US ไม่ช่วย</text><g data-s=\"2\"><g transform=\"translate(60,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"msf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,41 L-46,41\"/></g><g transform=\"translate(120,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"msf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L0,41 L-106,41\" begin=\"-1.2s\"/></g><g transform=\"translate(300,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"msf\"/><animateMotion dur=\"2s\" repeatCount=\"indefinite\" path=\"M0,0 L0,58 L0,0\"/></g><text x=\"318\" y=\"112\" class=\"lg b tbad\">✕</text><text x=\"10\" y=\"214\" class=\"xs\">② β-lactam · aminoglycoside</text><text x=\"10\" y=\"229\" class=\"xs\">ละลายน้ำ → ไปทางกรองลงปัสสาวะ</text><text x=\"10\" y=\"244\" class=\"xs\">ผ่านผนังถุงไม่ได้</text></g><g data-s=\"3\"><g transform=\"translate(250,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"okf\"/><animateMotion dur=\"2.4s\" repeatCount=\"indefinite\" path=\"M0,0 L30,154\"/></g><g transform=\"translate(370,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"okf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L-40,174\" begin=\"-1.3s\"/></g><g transform=\"translate(220,56)\"><circle cx=\"0\" cy=\"0\" r=\"4.5\" class=\"okf\"/><animateMotion dur=\"2.8s\" repeatCount=\"indefinite\" path=\"M0,0 L80,194\" begin=\"-0.6s\"/></g><text x=\"10\" y=\"268\" class=\"xs\">③ levofloxacin · TMP/SMX</text><text x=\"10\" y=\"283\" class=\"xs\">ละลายไขมัน → ซึมผ่านเยื่อหุ้มเซลล์</text><text x=\"10\" y=\"298\" class=\"xs\">เข้าถุงได้ (levo ดีกว่า cipro)</text></g><g data-s=\"4\"><rect x=\"6\" y=\"304\" width=\"196\" height=\"70\" rx=\"8\" class=\"ac\"/><text x=\"14\" y=\"322\" class=\"xs\">④ เชื้อมาก ไม่มีการชะล้าง</text><text x=\"14\" y=\"338\" class=\"xs\">→ ให้ยา 4–6 สัปดาห์</text><text x=\"14\" y=\"354\" class=\"xs\">ไข้ไม่ลง → เจาะ/ระบายถุง</text></g></svg>",
+    "steps": [
+     {
+      "t": "ถุงปิด ไม่ต่อกับท่อไต",
+      "cap": "ถุงน้ำใน ADPKD ส่วนใหญ่ **หลุดออกจาก nephron** เป็นถุงปิด → **UA และเพาะปัสสาวะอาจปกติ** ทั้งที่ถุงติดเชื้อ · เพาะเชื้อก่อนให้ยา · US แยกไม่ได้ FDG-PET/CT ดีที่สุด"
+     },
+     {
+      "t": "ยาที่ละลายน้ำเข้าไม่ถึง",
+      "cap": "**β-lactam และ aminoglycoside** อาศัยการกรองลงปัสสาวะ → อยู่ในท่อไต แต่ **ผ่านผนังถุงที่มี tight junction แน่นไม่ได้**"
+     },
+     {
+      "t": "ยาละลายไขมันซึมเข้าได้",
+      "cap": "**fluoroquinolone (levofloxacin ดีกว่า ciprofloxacin) และ TMP/SMX** ละลายในไขมัน **แพร่ผ่านเยื่อหุ้มเซลล์** เข้าไปในถุงได้"
+     },
+     {
+      "t": "ทำไมนาน 4–6 สัปดาห์",
+      "cap": "เชื้อในถุงปิดจำนวนมากและ **ไม่มีการชะล้าง** → ให้ยา **4–6 สัปดาห์** · ไข้ไม่ลง → **ระบายผ่านผิวหนังหรือผ่าตัด** บางรายต้องตัดไต"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-img-12",
+   "after": "ทำไมถึงมีอาการนี้ (postrenal AKI)",
+   "anim": {
+    "key": "img-postrenal",
+    "title": "อุดกั้นทางเดินปัสสาวะ → hydronephrosis → postrenal AKI",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: การอุดกั้นทางเดินปัสสาวะ นิ่วอุดข้างเดียวไตอีกข้างชดเชย ต่อมลูกหมากโตอุดทางออกทำให้ไตบวมน้ำทั้งสองข้าง แรงดันใน Bowman space สูง GFR ลด creatinine ขึ้น และปัสสาวะออกมากหลังแก้การอุดกั้น\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"90\" cy=\"80\" rx=\"46\" ry=\"62\" class=\"sk\"/><ellipse cx=\"350\" cy=\"80\" rx=\"46\" ry=\"62\" class=\"sk\"/><ellipse cx=\"104\" cy=\"84\" rx=\"12\" ry=\"16\" class=\"wa\"/><ellipse cx=\"336\" cy=\"84\" rx=\"12\" ry=\"16\" class=\"wa\"/><path d=\"M110,110 Q140,200 196,296\" class=\"lwa w2 fl\"/><path d=\"M330,110 Q300,200 244,296\" class=\"lwa w2 fl\"/><ellipse cx=\"220\" cy=\"316\" rx=\"56\" ry=\"36\" class=\"wa\" data-x=\"3\"/><g data-s=\"5\"><ellipse cx=\"220\" cy=\"316\" rx=\"56\" ry=\"36\" class=\"wa\"/></g><ellipse cx=\"220\" cy=\"368\" rx=\"20\" ry=\"10\" class=\"sk\" data-x=\"3\"/><line x1=\"220\" y1=\"378\" x2=\"220\" y2=\"424\" class=\"lmu w3\"/><text x=\"220\" y=\"320\" class=\"xs mid b twa\">กระเพาะปัสสาวะ</text><g data-x=\"2\"><text x=\"220\" y=\"40\" class=\"xs mid b\">ปกติ: ปัสสาวะไหล</text><text x=\"220\" y=\"55\" class=\"xs mid\">จากไตสองข้างลงกระเพาะ</text></g><g data-s=\"2\" data-x=\"3\"><path d=\"M110,110 Q125,155 146,202\" class=\"lwa w5\"/><ellipse cx=\"100\" cy=\"84\" rx=\"24\" ry=\"30\" class=\"wa\"/><g class=\"pl\"><circle cx=\"147\" cy=\"202\" r=\"8\" class=\"msf\"/></g><text x=\"158\" y=\"214\" class=\"xs b tms\">นิ่ว</text><text x=\"220\" y=\"40\" class=\"xs mid b tms\">นิ่วอุดข้างเดียว</text><text x=\"220\" y=\"55\" class=\"xs mid\">ไตซ้ายบวมน้ำ</text><text x=\"220\" y=\"70\" class=\"xs mid\">ไตขวาชดเชย</text><text x=\"220\" y=\"85\" class=\"xs mid b\">→ Cr แทบไม่ขึ้น</text></g><g data-s=\"3\" data-x=\"5\"><ellipse cx=\"100\" cy=\"84\" rx=\"24\" ry=\"30\" class=\"wa\"/><ellipse cx=\"340\" cy=\"84\" rx=\"24\" ry=\"30\" class=\"wa\"/><path d=\"M110,110 Q140,200 196,296\" class=\"lwa w5\"/><path d=\"M330,110 Q300,200 244,296\" class=\"lwa w5\"/><ellipse cx=\"220\" cy=\"316\" rx=\"78\" ry=\"46\" class=\"wa\"/><text x=\"220\" y=\"320\" class=\"xs mid b twa\">กระเพาะโป่งตึง</text><g class=\"pl\"><ellipse cx=\"220\" cy=\"372\" rx=\"32\" ry=\"15\" class=\"bad\"/></g><text x=\"258\" y=\"396\" class=\"xs b tbad\">ต่อมลูกหมากโต</text><text x=\"220\" y=\"40\" class=\"xs mid b tbad\">อุดทางออก (BPH)</text><text x=\"220\" y=\"55\" class=\"xs mid\">บวมน้ำทั้งสองข้าง</text><text x=\"220\" y=\"70\" class=\"xs mid b tbad\">→ Cr ขึ้นชัด</text><rect x=\"6\" y=\"232\" width=\"136\" height=\"98\" rx=\"8\" class=\"sk\"/><text x=\"14\" y=\"250\" class=\"xs\">แรงดันใน tubule</text><text x=\"14\" y=\"266\" class=\"xs\">และ Bowman space ↑</text><text x=\"14\" y=\"282\" class=\"xs\">→ แรงกรองสุทธิ ↓</text><text x=\"14\" y=\"298\" class=\"xs\">→ GFR ↓ · Cr ↑</text><text x=\"14\" y=\"314\" class=\"xs\">อุดสนิท 2 ข้าง = anuria</text></g><g data-s=\"4\"><rect x=\"298\" y=\"232\" width=\"136\" height=\"112\" rx=\"8\" class=\"bad\"/><text x=\"306\" y=\"250\" class=\"xs\">ต่อมา: Ang II/TXA₂</text><text x=\"306\" y=\"266\" class=\"xs\">หดหลอดเลือดไต</text><text x=\"306\" y=\"282\" class=\"xs\">ท่อส่วนปลายเสีย</text><text x=\"306\" y=\"298\" class=\"xs\">→ K ↑ · เลือดเป็นกรด</text><text x=\"306\" y=\"314\" class=\"xs\">→ ทำปัสสาวะเข้มข้น</text><text x=\"306\" y=\"330\" class=\"xs\">ไม่ได้ (ดื้อ ADH)</text></g><g data-s=\"5\"><ellipse cx=\"220\" cy=\"372\" rx=\"32\" ry=\"15\" class=\"bad\"/><line x1=\"220\" y1=\"430\" x2=\"220\" y2=\"340\" class=\"lok w3\"/><circle cx=\"220\" cy=\"342\" r=\"5\" class=\"okf\"/><text x=\"234\" y=\"412\" class=\"xs b tok\">Foley</text><text x=\"220\" y=\"40\" class=\"xs mid b tok\">ระบายแล้ว</text><text x=\"220\" y=\"55\" class=\"xs mid\">ไตยุบ ปัสสาวะทะลัก</text><rect x=\"6\" y=\"342\" width=\"180\" height=\"90\" rx=\"8\" class=\"ok\"/><text x=\"14\" y=\"360\" class=\"xs\">แก้การอุด: Foley / PCN</text><text x=\"14\" y=\"376\" class=\"xs\">→ post-obstructive diuresis</text><text x=\"14\" y=\"392\" class=\"xs\">ขับยูเรีย เกลือที่คั่ง +</text><text x=\"14\" y=\"408\" class=\"xs\">ท่อยังทำเข้มข้นไม่ได้</text><text x=\"14\" y=\"424\" class=\"xs\">→ ดูน้ำและเกลือแร่ใกล้ชิด</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ",
+      "cap": "ปัสสาวะจากไตทั้งสองข้างไหลตามท่อไตลงกระเพาะและออกทางท่อปัสสาวะ — ultrasound คือการตรวจแรกเมื่อไตวาย (บอก AKI/CKD และ postrenal)"
+     },
+     {
+      "t": "อุดข้างเดียว",
+      "cap": "นิ่วอุดท่อไตข้างเดียว → **pelvis และท่อไตเหนือจุดอุดขยาย** (hydronephrosis) แต่ไตอีกข้างชดเชย **Cr จึงขึ้นไม่ชัด** — ยกเว้นมีไตข้างเดียว"
+     },
+     {
+      "t": "อุดสองข้าง → GFR ↓",
+      "cap": "เช่นต่อมลูกหมากโตอุดทางออก → กระเพาะโป่ง ไตบวมน้ำ **ทั้งสองข้าง** · ความดันใน tubule/Bowman space สูง → **แรงกรองสุทธิลด → GFR ↓ Cr ↑** · อุดสนิท = anuria · อุดบางส่วน ปัสสาวะยังออกได้"
+     },
+     {
+      "t": "ผลระยะต่อมา",
+      "cap": "angiotensin II/thromboxane ทำให้หลอดเลือดไตหดตัว · ท่อส่วนปลายเสียหาย → **K สูง + เลือดเป็นกรด** (คล้าย type 4 RTA) และทำปัสสาวะเข้มข้นไม่ได้ — **ปัสสาวะออกปกติไม่ตัดการอุดกั้น**"
+     },
+     {
+      "t": "แก้การอุด → post-obstructive diuresis",
+      "cap": "HN สองข้าง + กระเพาะโป่ง → **ใส่ Foley ก่อน** (อุดเหนือกระเพาะใช้ PCN/DJ stent) → ปัสสาวะออกมากจาก osmotic diuresis ของยูเรีย/เกลือที่คั่ง + ท่อยังเสีย → ต้องดูน้ำและเกลือแร่ใกล้ชิด"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-img-07",
+   "after": "Captopril renography — ไม่ค่อยใช้แล้ว แต่สอนกลไกได้ดี",
+   "anim": {
+    "key": "img-captopril",
+    "title": "Captopril renogram — ตัด Ang II ที่ efferent แล้ว GFR ข้างที่ตีบหล่น",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ใน renal artery stenosis ไตข้างที่ตีบรักษา GFR ด้วย angiotensin II บีบ efferent arteriole เมื่อให้ captopril efferent คลาย ความดันใน glomerulus ตก GFR ข้างนั้นลด กราฟ renogram ขึ้นช้าและค้าง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"14\" y=\"70\" class=\"xs b\">renal artery</text><rect x=\"10\" y=\"80\" width=\"140\" height=\"22\" rx=\"10\" class=\"bad\"/><line x1=\"150\" y1=\"91\" x2=\"176\" y2=\"91\" class=\"lbad w5\"/><circle cx=\"210\" cy=\"91\" r=\"44\" class=\"lmu w2\"/><circle cx=\"210\" cy=\"91\" r=\"32\" class=\"bad\"/><text x=\"210\" y=\"38\" class=\"xs mid b\">glomerulus</text><text x=\"160\" y=\"124\" class=\"xs mid mu\">afferent</text><text x=\"290\" y=\"124\" class=\"xs mid mu\">efferent</text><line x1=\"330\" y1=\"91\" x2=\"430\" y2=\"91\" class=\"lbad w3\"/><g transform=\"translate(14,91)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"badf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L162,0 L230,0 L414,0\"/></g><g transform=\"translate(14,91)\"><circle cx=\"0\" cy=\"0\" r=\"4\" class=\"badf\"/><animateMotion dur=\"2.6s\" repeatCount=\"indefinite\" path=\"M0,0 L162,0 L230,0 L414,0\" begin=\"-1.3s\"/></g><line x1=\"244\" y1=\"91\" x2=\"330\" y2=\"91\" class=\"lbad w5\" data-x=\"2\"/><line x1=\"210\" y1=\"136\" x2=\"210\" y2=\"166\" class=\"lwa w3 fl\" data-x=\"3\" marker-end=\"url(#ah-wa)\"/><text x=\"210\" y=\"186\" class=\"sm mid b tok\" data-x=\"2\">GFR ปกติ</text><g data-s=\"2\"><path d=\"M56,80 L80,92 L104,80 Z\" class=\"ms\"/><path d=\"M56,102 L80,90 L104,102 Z\" class=\"ms\"/><text x=\"80\" y=\"120\" class=\"xs mid b tms\">ตีบ</text><text x=\"14\" y=\"146\" class=\"xs\">แรงดันเข้าไตลด</text><text x=\"14\" y=\"161\" class=\"xs b tbad\">→ renin → Ang II</text></g><g data-s=\"2\" data-x=\"3\"><line x1=\"244\" y1=\"91\" x2=\"330\" y2=\"91\" class=\"lbad w2\"/><line x1=\"270\" y1=\"80\" x2=\"270\" y2=\"102\" class=\"ln w3\"/><line x1=\"304\" y1=\"80\" x2=\"304\" y2=\"102\" class=\"ln w3\"/><text x=\"300\" y=\"70\" class=\"xs mid b tbad\">Ang II บีบ</text><text x=\"210\" y=\"186\" class=\"sm mid b tms\">GFR คงไว้ได้ (พึ่ง Ang II)</text></g><g data-s=\"3\"><line x1=\"244\" y1=\"91\" x2=\"330\" y2=\"91\" class=\"lbad w5\"/><text x=\"306\" y=\"70\" class=\"xs mid b tok\">captopril: คลาย</text><line x1=\"210\" y1=\"136\" x2=\"210\" y2=\"158\" class=\"lwa w2 da\"/><text x=\"210\" y=\"186\" class=\"sm mid b tbad\">ความดันใน glomerulus ตก → GFR ↓</text></g><g data-s=\"4\"><text x=\"40\" y=\"222\" class=\"sm b\">Renogram หลังให้ captopril</text><line x1=\"40\" y1=\"236\" x2=\"40\" y2=\"392\" class=\"ln\"/><line x1=\"40\" y1=\"392\" x2=\"420\" y2=\"392\" class=\"ln\"/><text x=\"420\" y=\"408\" class=\"xs end mu\">เวลา (นาที)</text><text x=\"44\" y=\"244\" class=\"xs mu\">นับรังสีที่ไต</text><path d=\"M42,390 C70,300 90,262 112,262 C150,262 200,340 414,372\" class=\"lok w3\"/><text x=\"122\" y=\"256\" class=\"xs b tok\">ข้างปกติ: peak 3–5 นาที แล้วลด</text><path d=\"M42,390 C100,370 160,312 230,302 C300,296 360,298 414,300\" class=\"lbad w3\"/><text x=\"238\" y=\"292\" class=\"xs b tbad\">ข้างที่ตีบ: ขึ้นช้า ค้างใน cortex</text><text x=\"220\" y=\"432\" class=\"xs mid mu\">ปัจจุบันนิยม duplex US · CTA · MRA มากกว่า</text></g></svg>",
+    "steps": [
+     {
+      "t": "ไตปกติ",
+      "cap": "เลือดเข้า afferent → glomerulus → ออก efferent · ความดันใน glomerulus ขับการกรอง → **GFR ปกติ**"
+     },
+     {
+      "t": "Renal artery stenosis",
+      "cap": "แรงดันที่เข้าไตข้างที่ตีบลด → **renin → angiotensin II บีบ efferent arteriole** → ความดันใน glomerulus จึงยังพอ **GFR คงไว้ได้ แต่ต้องพึ่ง Ang II**"
+     },
+     {
+      "t": "ให้ captopril (ACEi)",
+      "cap": "captopril ตัด Ang II → **efferent คลาย** → ความดันใน glomerulus ตก → **GFR ของข้างที่ตีบลดลง** (เหตุผลเดียวกับที่ ACEi ทำให้ Cr ขึ้นใน RAS สองข้าง)"
+     },
+     {
+      "t": "อ่านกราฟ renogram",
+      "cap": "ข้างปกติ peak ที่ 3–5 นาทีแล้วลด · ข้างที่ตีบหลังได้ captopril **ยาเข้าไตช้า peak ช้า และค้างใน cortex** · ปัจจุบันใช้ **duplex US, CTA, MRA** มากกว่า (scan ไวน้อยลงเมื่อไตเสื่อมแล้ว)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-img-05",
+   "after": "ทำไมไตถึงเสียหาย",
+   "anim": {
+    "key": "img-ci-aki",
+    "title": "CI-AKI — medulla ขาด O₂ + พิษต่อท่อไต และทำไมให้น้ำเกลือ ไม่ใช่ furosemide",
+    "svg": "<svg viewBox=\"0 0 440 400\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: สารทึบรังสีถูกกรองและเข้มข้นขึ้นในท่อไต หลอดเลือดหดตัว vasa recta ไหลช้า outer medulla ขาดออกซิเจน ร่วมกับพิษตรงต่อเซลล์ท่อไต การให้น้ำเกลือช่วย แต่ furosemide ไม่ช่วย\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"56\" y=\"20\" width=\"214\" height=\"120\" rx=\"0\" class=\"bx\"/><rect x=\"56\" y=\"140\" width=\"214\" height=\"110\" rx=\"0\" class=\"sk\"/><rect x=\"56\" y=\"250\" width=\"214\" height=\"110\" rx=\"0\" class=\"bx\"/><text x=\"62\" y=\"134\" class=\"xs mu\">cortex</text><text x=\"62\" y=\"244\" class=\"xs mu b\">outer medulla</text><text x=\"62\" y=\"354\" class=\"xs mu\">inner medulla</text><circle cx=\"100\" cy=\"48\" r=\"14\" class=\"bad\"/><path d=\"M114,48 C160,36 196,48 196,80 L196,326 Q208,344 220,326 L220,96 Q224,74 244,74 L252,74 L252,356\" class=\"lwa w5\"/><path d=\"M140,140 L140,330 Q152,348 164,330 L164,140\" class=\"lbad w3 fl sl\" data-x=\"2\"/><g transform=\"translate(114,48)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"inkf\"/><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 C46,-12 82,0 82,32 L82,278 Q94,296 106,278 L106,48 Q110,26 130,26 L138,26 L138,308\"/></g><g transform=\"translate(114,48)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"inkf\"/><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 C46,-12 82,0 82,32 L82,278 Q94,296 106,278 L106,48 Q110,26 130,26 L138,26 L138,308\" begin=\"-1.2s\"/></g><g transform=\"translate(114,48)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"inkf\"/><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 C46,-12 82,0 82,32 L82,278 Q94,296 106,278 L106,48 Q110,26 130,26 L138,26 L138,308\" begin=\"-2.5s\"/></g><g transform=\"translate(114,48)\"><circle cx=\"0\" cy=\"0\" r=\"3.5\" class=\"inkf\"/><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 C46,-12 82,0 82,32 L82,278 Q94,296 106,278 L106,48 Q110,26 130,26 L138,26 L138,308\" begin=\"-3.7s\"/></g><text x=\"100\" y=\"82\" class=\"xs mid b\">contrast</text><text x=\"278\" y=\"30\" class=\"xs\">① กรองลงท่อ แล้วท่อดูดน้ำกลับ</text><text x=\"278\" y=\"45\" class=\"xs\">→ contrast ยิ่งเข้มข้น</text><g data-s=\"2\"><g class=\"pl\"><rect x=\"56\" y=\"140\" width=\"214\" height=\"110\" rx=\"0\" class=\"badf\" opacity=\".16\"/></g><path d=\"M140,140 L140,330 Q152,348 164,330 L164,140\" class=\"lbad w2 da\"/><text x=\"278\" y=\"82\" class=\"xs b tbad\">② หลอดเลือดหดตัว</text><text x=\"278\" y=\"97\" class=\"xs\">adenosine/endothelin ↑ NO ↓</text><text x=\"278\" y=\"112\" class=\"xs\">+ หนืด → vasa recta ไหลช้า</text><text x=\"278\" y=\"127\" class=\"xs\">outer medulla (mTAL ใช้ O₂</text><text x=\"278\" y=\"142\" class=\"xs\">มาก) จึงขาด O₂ ก่อน</text></g><g data-s=\"3\"><g class=\"pl\"><circle cx=\"208\" cy=\"196\" r=\"11\" class=\"lbad w2\"/><circle cx=\"208\" cy=\"236\" r=\"11\" class=\"lbad w2\"/><circle cx=\"208\" cy=\"286\" r=\"11\" class=\"lbad w2\"/></g><text x=\"278\" y=\"172\" class=\"xs b tbad\">③ พิษตรงต่อเซลล์ท่อไต</text><text x=\"278\" y=\"187\" class=\"xs\">vacuolization · ROS</text><text x=\"278\" y=\"202\" class=\"xs\">→ apoptosis</text></g><g data-s=\"4\"><text x=\"118\" y=\"14\" class=\"xs b tok\">+ NSS → volume ↑</text><text x=\"278\" y=\"232\" class=\"xs b\">④ ขาดน้ำ = เข้มข้น + ไหลช้า</text><text x=\"278\" y=\"247\" class=\"xs\">NSS: ปัสสาวะไหลเร็ว เจือจาง</text><text x=\"278\" y=\"262\" class=\"xs\">ลด renin/vasoconstriction</text><text x=\"278\" y=\"279\" class=\"xs b tbad\">furosemide ✕ (ยิ่งขาดน้ำ)</text></g><g data-s=\"5\"><rect x=\"274\" y=\"294\" width=\"160\" height=\"100\" rx=\"8\" class=\"ac\"/><text x=\"282\" y=\"311\" class=\"xs b\">ใครให้ NSS (ACR–NKF)</text><text x=\"282\" y=\"327\" class=\"xs\">eGFR &lt; 30 ที่ยังไม่ฟอกไต</text><text x=\"282\" y=\"343\" class=\"xs\">หรือมี AKI · ≥ 45 ไม่ต้อง</text><text x=\"282\" y=\"359\" class=\"xs\">ไม่ใช้ NAC/bicarb/ฟอกป้องกัน</text><text x=\"282\" y=\"375\" class=\"xs\">metformin: หยุดถ้า &lt; 30/AKI</text></g></svg>",
+    "steps": [
+     {
+      "t": "Contrast เข้มข้นในท่อ",
+      "cap": "iodinated contrast ถูกกรองที่ glomerulus แล้ว **เข้มข้นขึ้นเรื่อย ๆ ขณะท่อดูดน้ำกลับ** — ยิ่งเข้มข้นและไหลช้า ยิ่งสัมผัสเซลล์นาน"
+     },
+     {
+      "t": "Medullary hypoxia",
+      "cap": "contrast → **adenosine/endothelin ↑ NO ↓** หลอดเลือดหดตัว + เลือดหนืด → **vasa recta ไหลช้า** · outer medulla ขาด O₂ อยู่แล้วเพราะ **mTAL ใช้ O₂ มาก** → ไตที่ nephron เหลือน้อย (CKD) ทนได้น้อย"
+     },
+     {
+      "t": "พิษตรงต่อเซลล์ท่อไต",
+      "cap": "contrast เข้มข้น → **vacuolization · ROS · apoptosis** ของเซลล์ท่อไต · (contrast รุ่นเก่า high-osmolar เพิ่ม osmotic load — ปัจจุบันใช้ low-/iso-osmolar)"
+     },
+     {
+      "t": "ทำไมน้ำเกลือช่วย แต่ furosemide ไม่",
+      "cap": "**IV isotonic fluid** เพิ่ม volume → กด renin/vasoconstriction และปัสสาวะไหลเร็ว contrast เจือจาง สัมผัสเซลล์สั้นลง · **furosemide ทำให้ขาดน้ำ contrast ยิ่งเข้มข้น → ห้ามใช้ป้องกัน**"
+     },
+     {
+      "t": "ใช้กับใคร",
+      "cap": "ACR–NKF 2020: ให้ NSS เมื่อ **eGFR < 30 ที่ยังไม่ฟอกไต หรือมี AKI** · eGFR ≥ 45 ไม่ต้อง · ไม่ใช้ NAC/bicarbonate/ฟอกเลือดป้องกัน · metformin หยุดเมื่อ eGFR < 30 หรือ AKI แล้วเริ่มใหม่หลัง 48 ชม. · อย่างดตรวจที่จำเป็นเพราะกลัว contrast"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neph-img-09",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "img-renal-colic",
+    "title": "Renal colic — นิ่วติดท่อไต ความดันขึ้น ปวดร้าวตามเส้นประสาท",
+    "svg": "<svg viewBox=\"0 0 440 460\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: นิ่วติดที่จุดแคบของท่อไต ท่อไตบีบไล่ชนนิ่วความดันใน pelvis สูง ปวดบิด ใยประสาทเข้าไขสันหลังระดับ T11 ถึง L2 จึงปวดร้าวลงขาหนีบ celiac ganglion ใช้ร่วมกับลำไส้จึงคลื่นไส้อาเจียน\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"120\" cy=\"72\" rx=\"44\" ry=\"58\" class=\"sk\"/><ellipse cx=\"134\" cy=\"82\" rx=\"14\" ry=\"18\" class=\"wa\"/><path d=\"M140,100 C150,160 150,220 160,260 C168,300 176,330 184,360\" class=\"lmu w3\"/><path d=\"M96,270 Q160,244 232,268\" class=\"lbad w3\"/><text x=\"236\" y=\"272\" class=\"xs mu\">iliac vessels</text><ellipse cx=\"196\" cy=\"394\" rx=\"56\" ry=\"32\" class=\"wa\"/><text x=\"196\" y=\"400\" class=\"xs mid twa\">กระเพาะปัสสาวะ</text><g data-s=\"1\"><circle cx=\"144\" cy=\"120\" r=\"6\" class=\"lmu w2\"/><text x=\"134\" y=\"128\" class=\"xs end b\">UPJ</text><circle cx=\"186\" cy=\"362\" r=\"7\" class=\"lmu w2\"/><text x=\"200\" y=\"352\" class=\"xs b\">VUJ (แคบสุด)</text><text x=\"142\" y=\"256\" class=\"xs end b\">pelvic brim</text><g class=\"pl\"><circle cx=\"159\" cy=\"256\" r=\"8\" class=\"msf\"/></g></g><g data-s=\"2\"><path d=\"M140,100 C150,160 150,220 158,250\" class=\"lwa w5\"/><ellipse cx=\"134\" cy=\"82\" rx=\"24\" ry=\"28\" class=\"wa\"/><g transform=\"translate(140,100)\"><circle cx=\"0\" cy=\"0\" r=\"5\" class=\"acf\"/><animateMotion dur=\"1.4s\" repeatCount=\"indefinite\" path=\"M0,0 C10,60 10,120 16,146\"/></g><text x=\"176\" y=\"150\" class=\"xs b\">บีบไล่ + spasm ชนนิ่ว</text><text x=\"176\" y=\"166\" class=\"xs b tbad\">ความดันใน pelvis ↑</text><text x=\"176\" y=\"182\" class=\"xs\">→ ปวดบิดเป็นพัก ๆ</text></g><g data-s=\"3\"><rect x=\"300\" y=\"30\" width=\"30\" height=\"260\" rx=\"14\" class=\"sk\"/><text x=\"315\" y=\"22\" class=\"xs mid b\">ไขสันหลัง</text><g class=\"pl\"><rect x=\"300\" y=\"158\" width=\"30\" height=\"94\" rx=\"8\" class=\"ac\"/></g><text x=\"336\" y=\"174\" class=\"xs b tac\">T11</text><text x=\"336\" y=\"198\" class=\"xs b tac\">T12</text><text x=\"336\" y=\"222\" class=\"xs b tac\">L1</text><text x=\"336\" y=\"246\" class=\"xs b tac\">L2</text><path d=\"M172,240 Q240,214 296,204\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><path d=\"M318,294 Q330,312 372,316\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><text x=\"434\" y=\"334\" class=\"xs end b tac\">ร้าวสีข้าง → ขาหนีบ</text><text x=\"434\" y=\"350\" class=\"xs end\">อัณฑะ/แคม (genitofemoral)</text></g><g data-s=\"4\"><text x=\"340\" y=\"50\" class=\"xs b\">celiac/splanchnic</text><text x=\"340\" y=\"65\" class=\"xs\">ใช้ร่วมกับลำไส้</text><text x=\"340\" y=\"80\" class=\"xs\">→ คลื่นไส้ อาเจียน</text><text x=\"340\" y=\"95\" class=\"xs\">bowel sound ↓</text><text x=\"340\" y=\"118\" class=\"xs b\">ปวด → HR ↑ BP ↑</text><text x=\"176\" y=\"300\" class=\"xs b tbad\">ครูดเยื่อบุ → hematuria</text></g><g data-s=\"5\"><rect x=\"262\" y=\"372\" width=\"172\" height=\"82\" rx=\"8\" class=\"bad\"/><text x=\"270\" y=\"390\" class=\"xs\">ไข้ + นิ่วอุด → ระบายด่วน</text><text x=\"270\" y=\"406\" class=\"xs\">(PCN / DJ stent)</text><text x=\"270\" y=\"422\" class=\"xs\">สูงอายุ BP ต่ำ → คิด AAA</text><text x=\"270\" y=\"438\" class=\"xs\">ตรวจแรก: CT KUB ไม่ฉีดสี</text></g></svg>",
+    "steps": [
+     {
+      "t": "นิ่วติดจุดแคบ",
+      "cap": "ท่อไตมี **จุดแคบ 3 ตำแหน่ง** — UPJ · pelvic brim (ข้าม iliac vessels) · **VUJ (แคบสุด)** — นิ่วมักติดที่จุดเหล่านี้"
+     },
+     {
+      "t": "บีบไล่ชนนิ่ว → ปวดบิด",
+      "cap": "ท่อไตเหนือนิ่ว **บีบตัวเป็นระลอก + spasm** ชนนิ่ว → ความดันในท่อและ pelvis สูงทันที → **ปวดบิดเป็นพัก ๆ ดิ้นไปมา** (ต่างจาก peritonitis ที่นอนนิ่ง) · ท่อเหนือจุดอุดขยาย"
+     },
+     {
+      "t": "ปวดร้าว T11–L2",
+      "cap": "ใยประสาทของไต/ท่อไตเข้าไขสันหลัง **T11–L2** ระดับเดียวกับผิวหนังสีข้างและขาหนีบ (**genitofemoral nerve**) → **ปวดร้าวลงขาหนีบ อัณฑะ/แคม** · ปวดเลื่อนลงตามนิ่ว · นิ่วที่ VUJ → ปัสสาวะบ่อย ปวดเบ่ง"
+     },
+     {
+      "t": "คลื่นไส้ · hematuria · ชีพจรเร็ว",
+      "cap": "ไตกับลำไส้ใช้ **celiac/splanchnic ganglion** ร่วมกัน → คลื่นไส้ อาเจียน bowel sound ลด · นิ่วครูดเยื่อบุ → **hematuria** (ไม่มีก็ไม่ตัดนิ่ว) · ปวด → sympathetic → HR ↑ BP ↑"
+     },
+     {
+      "t": "ห้ามพลาด + เลือกภาพ",
+      "cap": "**ไข้ + นิ่วอุด = obstructed infected kidney → ระบายด่วน** (PCN/DJ stent) · สูงอายุ ปวดครั้งแรก BP ต่ำ → **AAA แตก** · ACR: **CT KUB ไม่ฉีดสี** usually appropriate (sens 97% spec 95%)"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "nephro-05-01",
+   "name": "PTH = Phosphate Trashing Hormone",
+   "what": "ฤทธิ์ของ PTH ต่อฟอสเฟต",
+   "lines": [
+    [
+     "P",
+     "**P**hosphate"
+    ],
+    [
+     "T",
+     "**T**rashing — ดึง NaPi-2a/2c ออกจากผิว PCT → ขับ PO₄ ทิ้ง"
+    ],
+    [
+     "H",
+     "**H**ormone — และดัน Ca ขึ้นด้วย"
+    ]
+   ],
+   "note": "FGF-23 ก็ \"trash\" ฟอสเฟตเหมือนกัน แต่ไม่ดัน Ca — ไตรั่ว PO₄ + Ca สูง = PTH เกิน · + Ca ปกติ = FGF-23 เกิน",
+   "src": "ชื่อเล่นที่ใช้กันแพร่หลายในสื่อทบทวน USMLE (flashcard/Anki)"
+  },
+  {
+   "sec": "nephro-05-03",
+   "name": "Stones, bones, groans, psychic moans",
+   "what": "อาการของภาวะแคลเซียมสูง",
+   "lines": [
+    [
+     "Stones",
+     "นิ่วไต · nephrocalcinosis · ปัสสาวะมาก (nephrogenic DI)"
+    ],
+    [
+     "Bones",
+     "ปวดกระดูก กระดูกบาง หักง่าย"
+    ],
+    [
+     "Groans",
+     "ท้องผูก คลื่นไส้ เบื่ออาหาร แผลในกระเพาะ **ตับอ่อนอักเสบ**"
+    ],
+    [
+     "Psychic moans",
+     "สมาธิลด ซึม สับสน → โคม่า"
+    ]
+   ],
+   "note": "บางตำราต่อท้ายว่า \"thrones\" (ปัสสาวะบ่อย) และ \"psychiatric overtones\" · หลักจำนี้ไม่ครอบคลุม **QT สั้น** และอ่อนแรง/รีเฟล็กซ์ลด ที่อาจารย์ใส่ไว้ด้วย",
+   "src": "หลักจำคลาสสิกในตำราอายุรศาสตร์และ First Aid USMLE Step 1"
+  },
+  {
+   "sec": "nephro-05-03",
+   "name": "CHIMPANZEES",
+   "what": "สาเหตุของภาวะแคลเซียมสูง",
+   "lines": [
+    [
+     "C",
+     "**C**alcium supplementation (milk-alkali)"
+    ],
+    [
+     "H",
+     "**H**yperparathyroidism (primary/tertiary) · FHH"
+    ],
+    [
+     "I",
+     "**I**atrogenic (thiazide, ลิเทียม) / **I**mmobilization"
+    ],
+    [
+     "M",
+     "**M**ultiple myeloma · **M**ilk-alkali"
+    ],
+    [
+     "P",
+     "**P**aget disease of bone"
+    ],
+    [
+     "A",
+     "**A**drenal insufficiency · **A**cromegaly"
+    ],
+    [
+     "N",
+     "**N**eoplasm (PTHrP, osteolysis, lymphoma)"
+    ],
+    [
+     "Z",
+     "**Z**ollinger-Ellison (คิด MEN1)"
+    ],
+    [
+     "E",
+     "**E**xcess vitamin A"
+    ],
+    [
+     "E",
+     "**E**xcess vitamin D"
+    ],
+    [
+     "S",
+     "**S**arcoidosis / granuloma (TB)"
+    ]
+   ],
+   "note": "ตัวอักษรแต่ละตำราสลับกันได้ · ใช้เป็นรายการสาเหตุเท่านั้น — การไล่จริงตามที่อาจารย์สอนคือ **ตรวจ intact PTH ก่อน** แล้วดู PO₄ และ calcitriol · Paget ไม่ได้อยู่ในสไลด์",
+   "src": "หลักจำที่ใช้กันทั่วไปในสื่อทบทวน USMLE (Knowmedge, Picmonic) — มีหลายรูปแบบ"
+  },
+  {
+   "sec": "nephro-05-05",
+   "name": "CATs go numb",
+   "what": "อาการของภาวะแคลเซียมต่ำ",
+   "lines": [
+    [
+     "C",
+     "**C**onvulsions — ชัก"
+    ],
+    [
+     "A",
+     "**A**rrhythmias — QTc ยาว หัวใจเต้นผิดจังหวะ"
+    ],
+    [
+     "T",
+     "**T**etany — มือจีบ Chvostek Trousseau กล่องเสียงเกร็ง"
+    ],
+    [
+     "numb",
+     "ชารอบปากและปลายมือปลายเท้า (มักเป็นอาการแรก)"
+    ]
+   ],
+   "note": "เพิ่มเติมจากสไลด์: หัวใจล้มเหลว ความดันต่ำ หินปูนใน basal ganglia ต้อกระจก (hypopara เรื้อรัง) · Trousseau จำเพาะกว่า Chvostek",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำราการพยาบาล/การแพทย์ และสื่อทบทวน"
+  },
+  {
+   "sec": "neph-gn-06",
+   "name": "NephrOtic = prOteinuria · NephrItic = Inflammation",
+   "what": "แยกแก่นของสองกลุ่มอาการด้วยสระตัวเดียว",
+   "lines": [
+    [
+     "O",
+     "nephr**O**tic → massive pr**O**teinuria (> 3.5 g/วัน) — podocyte พัง ไม่อักเสบ"
+    ],
+    [
+     "I",
+     "nephr**I**tic → **I**nflammation — glomerulus อักเสบ → hematuria + GFR ↓ + HT"
+    ]
+   ],
+   "note": "ใช้แยกแก่น — โรคจริงอยู่บนสเปกตรัม (เช่น LN class IV, MPGN, IgAN มีได้ทั้งสองแบบ)",
+   "src": "หลักจำที่ใช้กันแพร่หลายในสื่อ USMLE Step 1 (pathology review)"
+  },
+  {
+   "sec": "neph-gn-07",
+   "name": "PALE",
+   "what": "องค์ประกอบของ nephrotic syndrome",
+   "lines": [
+    [
+     "P",
+     "**P**roteinuria > 3.5 g/วัน (UPCR > 3–3.5 g/g)"
+    ],
+    [
+     "A",
+     "hypo**A**lbuminemia < 3–3.5 g/dL"
+    ],
+    [
+     "L",
+     "hyper**L**ipidemia (cholesterol > 200) + **L**ipiduria (oval fat body, Maltese cross)"
+    ],
+    [
+     "E",
+     "**E**dema — รอบตาเช้า ขาบ่าย → anasarca"
+    ]
+   ],
+   "note": "ใช้ตัวเลขตามเกณฑ์ในสไลด์ของอาจารย์ · ภาวะแทรกซ้อน (ลิ่มเลือด ติดเชื้อ) ไม่อยู่ในหลักจำนี้",
+   "src": "หลักจำที่ใช้ทั่วไปใน flashcard/สื่อทบทวน USMLE"
+  },
+  {
+   "sec": "neph-gn-08",
+   "name": "PHAROH",
+   "what": "องค์ประกอบของ nephritic syndrome",
+   "lines": [
+    [
+     "P",
+     "**P**roteinuria — ไม่มาก (< 3 g/วัน)"
+    ],
+    [
+     "H",
+     "**H**ematuria — glomerular (dysmorphic RBC)"
+    ],
+    [
+     "A",
+     "**A**zotemia — BUN/Cr ขึ้น"
+    ],
+    [
+     "R",
+     "**R**BC casts"
+    ],
+    [
+     "O",
+     "**O**liguria (< 400 มล./วัน)"
+    ],
+    [
+     "H",
+     "**H**ypertension — Na คั่ง (overfill)"
+    ]
+   ],
+   "note": "สไลด์ของอาจารย์ใส่ **edema** ด้วย · บางฉบับสะกด PHARAOH (เติม anti-strep titer)",
+   "src": "หลักจำที่ใช้กันทั่วไปในสื่อทบทวน USMLE/flashcard"
+  },
+  {
+   "sec": "neph-uti-02",
+   "name": "SEEKS PP",
+   "what": "เชื้อก่อ UTI ที่พบบ่อย",
+   "lines": [
+    [
+     "S",
+     "**S**erratia marcescens"
+    ],
+    [
+     "E",
+     "**E**. coli — อันดับหนึ่ง 75–90%"
+    ],
+    [
+     "E",
+     "**E**nterobacter"
+    ],
+    [
+     "K",
+     "**K**lebsiella pneumoniae"
+    ],
+    [
+     "S",
+     "**S**. saprophyticus — หญิงวัยเจริญพันธุ์ (nitrite ลบ)"
+    ],
+    [
+     "P",
+     "**P**roteus mirabilis — urease → struvite"
+    ],
+    [
+     "P",
+     "**P**seudomonas aeruginosa — โรงพยาบาล/หัตถการ"
+    ]
+   ],
+   "note": "หลักจำนี้ **ไม่มี Enterococcus** ซึ่งอาจารย์ใส่ไว้ (สายสวน ผู้สูงอายุ ดื้อ cephalosporin โดยธรรมชาติ) และ Candida · Serratia ไม่ได้อยู่ในสไลด์",
+   "src": "หลักจำที่ใช้กันทั่วไปในสื่อทบทวน USMLE (Knowmedge, flashcard)"
+  },
+  {
+   "sec": "neph-uti-08",
+   "name": "Pee CHUNKSS",
+   "what": "เชื้อที่สร้าง urease (เสี่ยงนิ่ว struvite)",
+   "lines": [
+    [
+     "P",
+     "**P**roteus"
+    ],
+    [
+     "C",
+     "**C**ryptococcus"
+    ],
+    [
+     "H",
+     "**H**. pylori"
+    ],
+    [
+     "U",
+     "**U**reaplasma"
+    ],
+    [
+     "N",
+     "**N**ocardia"
+    ],
+    [
+     "K",
+     "**K**lebsiella"
+    ],
+    [
+     "S",
+     "**S**. epidermidis"
+    ],
+    [
+     "S",
+     "**S**. saprophyticus"
+    ]
+   ],
+   "note": "ที่เกี่ยวกับ UTI/นิ่วจริงคือ **Proteus และ Klebsiella** (ตามสไลด์) · ฉบับเก่าใช้ PUNCH หรือ \"CHuck Norris hates PUNKSS\"",
+   "src": "หลักจำ USMLE ที่ใช้แพร่หลาย (flashcard/Anki อิง First Aid) — มีหลายรูปแบบ"
+  },
+  {
+   "sec": "neph-uti-11",
+   "name": "ABCDE ป้องกัน CAUTI",
+   "what": "แนวทางลดการติดเชื้อจากสายสวนปัสสาวะ",
+   "lines": [
+    [
+     "A",
+     "**A**dherence — หลักควบคุมการติดเชื้อ ล้างมือ ใส่สายปลอดเชื้อ ระบบปิด"
+    ],
+    [
+     "B",
+     "**B**ladder ultrasound — ประเมินปัสสาวะค้างแทนการใส่สาย"
+    ],
+    [
+     "C",
+     "**C**ondom catheter / ทางเลือกอื่น เช่น intermittent catheterization"
+    ],
+    [
+     "D",
+     "**D**o not use — ไม่ใส่สายคาถ้าไม่มีข้อบ่งชี้"
+    ],
+    [
+     "E",
+     "**E**arly removal — ถอดสายให้เร็วที่สุด"
+    ]
+   ],
+   "note": "ตรงกับที่อาจารย์เน้น: **ถอดสายเร็ว → CIC** · สไลด์เพิ่ม: เปลี่ยนสายทุก 4 สัปดาห์ ถุงต่ำกว่ากระเพาะ ไม่ให้ยาปฏิชีวนะป้องกันเป็นประจำ",
+   "src": "Saint S. และคณะ (University of Michigan) — ABCDE bundle for CAUTI prevention (2009)"
+  },
+  {
+   "sec": "neph-img-10",
+   "name": "COLA",
+   "what": "กรดอะมิโนที่ท่อไตดูดกลับไม่ได้ใน cystinuria (นิ่ว cystine)",
+   "lines": [
+    [
+     "C",
+     "**C**ystine — ละลายน้อยในปัสสาวะกรด → ตกผลึก **หกเหลี่ยม**"
+    ],
+    [
+     "O",
+     "**O**rnithine"
+    ],
+    [
+     "L",
+     "**L**ysine"
+    ],
+    [
+     "A",
+     "**A**rginine"
+    ]
+   ],
+   "note": "นิ่ว cystine บน KUB จาง (ground glass — สไลด์จัดเป็นโปร่งรังสี) แต่ CT เห็นทึบปานกลาง · นิ่วตั้งแต่อายุน้อย",
+   "src": "First Aid for the USMLE Step 1 (cystinuria)"
+  },
+  {
+   "sec": "neph-img-13",
+   "name": "HAM HOP",
+   "what": "สาเหตุของ medullary nephrocalcinosis",
+   "lines": [
+    [
+     "H",
+     "**H**yperparathyroidism — สาเหตุที่พบบ่อยที่สุดในผู้ใหญ่"
+    ],
+    [
+     "A",
+     "(renal tubular) **A**cidosis — **distal RTA** (Case 04)"
+    ],
+    [
+     "M",
+     "**M**edullary sponge kidney / **M**ilk-alkali"
+    ],
+    [
+     "H",
+     "**H**ypercalcemia / hypercalciuria (เช่น sarcoidosis, vit D เกิน)"
+    ],
+    [
+     "O",
+     "**O**xalosis — hyperoxaluria (มักเป็นทั้ง medullary และ cortical)"
+    ],
+    [
+     "P",
+     "**P**apillary necrosis"
+    ]
+   ],
+   "note": "สไลด์ของอาจารย์มี **Dent disease และ Bartter syndrome** เพิ่ม (กลุ่ม hypercalciuria) · milk-alkali และ papillary necrosis ไม่ได้อยู่ในสไลด์",
+   "src": "Radiopaedia — medullary nephrocalcinosis mnemonic"
+  },
+  {
+   "sec": "neph-img-14",
+   "name": "\"polycystic kidney\" = 16 ตัวอักษร",
+   "what": "ยีนของ ADPKD อยู่บนโครโมโซมไหน",
+   "lines": [
+    [
+     "16",
+     "\"polycystic kidney\" มี 16 ตัวอักษร → **PKD1** บน **โครโมโซม 16** (~85% ของผู้ป่วย โรครุนแรงกว่า)"
+    ],
+    [
+     "4",
+     "**PKD2** บนโครโมโซม 4 — โรคอ่อนกว่า ไตวายช้ากว่า"
+    ]
+   ],
+   "note": "ไม่เกี่ยวกับการอ่านภาพโดยตรง แต่ข้อสอบถามคู่กับเกณฑ์ ultrasound (Pei–Ravine)",
+   "src": "First Aid for the USMLE Step 1 (ADPKD)"
+  }
+ ]
+}

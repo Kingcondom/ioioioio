@@ -1,0 +1,830 @@
+{
+ "set": "chest",
+ "items": [
+  {
+   "sec": "chest-03-03",
+   "after": "กลไก: ทำไม LTBI ไม่มีอาการและไม่แพร่เชื้อ",
+   "anim": {
+    "key": "tb03-ltbi",
+    "title": "LTBI กับ reactivation — กำแพง granuloma คุมเชื้อ จนภูมิคุ้มกันตก",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: granuloma ที่ CD4 T cell และ TNF-α ค้ำไว้คุมเชื้อวัณโรคแฝง เมื่อภูมิคุ้มกันตกกำแพงคลาย เชื้อแบ่งตัว caseum เหลวแตกเข้าหลอดลมกลายเป็นวัณโรคที่แพร่เชื้อ จึงต้องรักษา LTBI หลังตัดวัณโรคระยะแสดงอาการ\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M98,10 L98,74 M126,10 L126,74\" class=\"lru w3\"/><text x=\"132\" y=\"22\" class=\"xs mu\">หลอดลม</text><circle cx=\"200.0\" cy=\"168.0\" r=\"4.6\" class=\"waf\"/><circle cx=\"196.4\" cy=\"192.8\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"186.0\" cy=\"215.6\" r=\"4.6\" class=\"waf\"/><circle cx=\"169.6\" cy=\"234.5\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"148.6\" cy=\"248.0\" r=\"4.6\" class=\"waf\"/><circle cx=\"124.5\" cy=\"255.1\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"99.5\" cy=\"255.1\" r=\"4.6\" class=\"waf\"/><circle cx=\"75.4\" cy=\"248.0\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"54.4\" cy=\"234.5\" r=\"4.6\" class=\"waf\"/><circle cx=\"38.0\" cy=\"215.6\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"27.6\" cy=\"192.8\" r=\"4.6\" class=\"waf\"/><circle cx=\"24.0\" cy=\"168.0\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"27.6\" cy=\"143.2\" r=\"4.6\" class=\"waf\"/><circle cx=\"38.0\" cy=\"120.4\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"54.4\" cy=\"101.5\" r=\"4.6\" class=\"waf\"/><circle cx=\"75.4\" cy=\"88.0\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"99.5\" cy=\"80.9\" r=\"4.6\" class=\"waf\"/><circle cx=\"124.5\" cy=\"80.9\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"148.6\" cy=\"88.0\" r=\"4.6\" class=\"waf\"/><circle cx=\"169.6\" cy=\"101.5\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"186.0\" cy=\"120.4\" r=\"4.6\" class=\"waf\"/><circle cx=\"196.4\" cy=\"143.2\" r=\"4.6\" class=\"waf\" data-x=\"2\"/><circle cx=\"112\" cy=\"168\" r=\"72\" class=\"lok w3\" data-x=\"2\"/><circle cx=\"112\" cy=\"168\" r=\"72\" class=\"lbad w2 da\" data-s=\"2\" data-x=\"3\"/><circle cx=\"165.2\" cy=\"182.1\" r=\"9.5\" class=\"bx\"/><circle cx=\"151.0\" cy=\"206.8\" r=\"9.5\" class=\"bx\"/><circle cx=\"126.3\" cy=\"221.1\" r=\"9.5\" class=\"bx\"/><circle cx=\"97.9\" cy=\"221.2\" r=\"9.5\" class=\"bx\"/><circle cx=\"73.2\" cy=\"207.0\" r=\"9.5\" class=\"bx\"/><circle cx=\"58.9\" cy=\"182.3\" r=\"9.5\" class=\"bx\"/><circle cx=\"58.8\" cy=\"153.9\" r=\"9.5\" class=\"bx\"/><circle cx=\"73.0\" cy=\"129.2\" r=\"9.5\" class=\"bx\"/><circle cx=\"97.7\" cy=\"114.9\" r=\"9.5\" class=\"bx\"/><circle cx=\"126.1\" cy=\"114.8\" r=\"9.5\" class=\"bx\"/><circle cx=\"150.8\" cy=\"129.0\" r=\"9.5\" class=\"bx\"/><circle cx=\"165.1\" cy=\"153.7\" r=\"9.5\" class=\"bx\"/><circle cx=\"112\" cy=\"168\" r=\"36\" class=\"ms\"/><text x=\"112\" y=\"194\" class=\"xs mid tms\" data-x=\"3\">caseum</text><line x1=\"100\" y1=\"158\" x2=\"108\" y2=\"154\" class=\"lbad w3\" data-x=\"3\"/><line x1=\"122\" y1=\"170\" x2=\"130\" y2=\"166\" class=\"lbad w3\" data-x=\"3\"/><line x1=\"108\" y1=\"180\" x2=\"116\" y2=\"176\" class=\"lbad w3\" data-x=\"3\"/><g data-s=\"3\"><circle cx=\"112\" cy=\"168\" r=\"40\" class=\"bad\"/><line x1=\"124.0\" y1=\"168.0\" x2=\"131.0\" y2=\"164.0\" class=\"lbad w3\"/><line x1=\"130.0\" y1=\"176.7\" x2=\"137.0\" y2=\"172.7\" class=\"lbad w3\"/><line x1=\"129.5\" y1=\"189.9\" x2=\"136.5\" y2=\"185.9\" class=\"lbad w3\"/><line x1=\"114.7\" y1=\"179.7\" x2=\"121.7\" y2=\"175.7\" class=\"lbad w3\"/><line x1=\"107.5\" y1=\"187.5\" x2=\"114.5\" y2=\"183.5\" class=\"lbad w3\"/><line x1=\"94.5\" y1=\"189.9\" x2=\"101.5\" y2=\"185.9\" class=\"lbad w3\"/><line x1=\"101.2\" y1=\"173.2\" x2=\"108.2\" y2=\"169.2\" class=\"lbad w3\"/><line x1=\"92.0\" y1=\"168.0\" x2=\"99.0\" y2=\"164.0\" class=\"lbad w3\"/><line x1=\"86.8\" y1=\"155.9\" x2=\"93.8\" y2=\"151.9\" class=\"lbad w3\"/><line x1=\"104.5\" y1=\"158.6\" x2=\"111.5\" y2=\"154.6\" class=\"lbad w3\"/><line x1=\"107.5\" y1=\"148.5\" x2=\"114.5\" y2=\"144.5\" class=\"lbad w3\"/><line x1=\"118.2\" y1=\"140.7\" x2=\"125.2\" y2=\"136.7\" class=\"lbad w3\"/><line x1=\"119.5\" y1=\"158.6\" x2=\"126.5\" y2=\"154.6\" class=\"lbad w3\"/><line x1=\"130.0\" y1=\"159.3\" x2=\"137.0\" y2=\"155.3\" class=\"lbad w3\"/><path d=\"M112,128 L112,40\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"112\" cy=\"140\" r=\"3\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 -132\"/></circle><circle cx=\"112\" cy=\"140\" r=\"3\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"-0.60s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 -132\"/></circle><circle cx=\"112\" cy=\"140\" r=\"3\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"-1.20s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 -132\"/></circle></g><text x=\"112\" y=\"300\" class=\"xs mid twa b\" data-x=\"2\">CD4 T cell + TNF-α ค้ำกำแพง</text><text x=\"112\" y=\"300\" class=\"xs mid tbad b\" data-s=\"2\">lymphocyte น้อยลง กำแพงคลาย</text><g data-x=\"3\"><rect x=\"222\" y=\"40\" width=\"212\" height=\"108\" rx=\"10\" class=\"ok\"/><text x=\"234\" y=\"62\" class=\"sm b tok\">LTBI — คุมเชื้อได้</text><text x=\"234\" y=\"84\" class=\"xs\">เชื้อน้อย แทบไม่แบ่งตัว</text><text x=\"234\" y=\"102\" class=\"xs\">ไม่มีอาการ · CXR ปกติ/หินปูน</text><text x=\"234\" y=\"120\" class=\"xs\">เสมหะไม่พบเชื้อ → ไม่แพร่</text><text x=\"234\" y=\"138\" class=\"xs mu\">TST/IGRA บวกได้</text></g><g data-s=\"3\"><rect x=\"222\" y=\"40\" width=\"212\" height=\"108\" rx=\"10\" class=\"bad\"/><text x=\"234\" y=\"62\" class=\"sm b tbad\">Reactivation TB</text><text x=\"234\" y=\"84\" class=\"xs\">เชื้อแบ่งตัว caseum เหลว</text><text x=\"234\" y=\"102\" class=\"xs\">แตกเข้าหลอดลม → เสมหะบวก</text><text x=\"234\" y=\"120\" class=\"xs\">แพร่เชื้อได้ · มักอยู่ยอดปอด</text><text x=\"234\" y=\"138\" class=\"xs\">ไข้ เหงื่อออกกลางคืน ผอม</text></g><g data-s=\"2\"><rect x=\"222\" y=\"162\" width=\"212\" height=\"62\" rx=\"10\" class=\"ms\"/><text x=\"234\" y=\"184\" class=\"sm b tms\">ภูมิคุ้มกันตก</text><text x=\"234\" y=\"202\" class=\"xs\">HIV (CD4 ↓) · steroid</text><text x=\"234\" y=\"217\" class=\"xs\">anti-TNF · เบาหวาน · ไตวาย</text></g><g data-s=\"4\"><rect x=\"222\" y=\"236\" width=\"212\" height=\"84\" rx=\"10\" class=\"ac\"/><text x=\"234\" y=\"257\" class=\"sm b tac\">จึงรักษา LTBI (3HP, 4R)</text><text x=\"234\" y=\"276\" class=\"xs\">เชื้อน้อย → ยา 1–2 ตัวพอ</text><text x=\"234\" y=\"294\" class=\"xs b tbad\">แต่ต้องตัด active TB ก่อน</text><text x=\"234\" y=\"311\" class=\"xs\">(อาการ + CXR) กันเชื้อดื้อยา</text></g></svg>",
+    "steps": [
+     {
+      "t": "LTBI: กำแพง granuloma คุมเชื้อไว้",
+      "cap": "**CD4 T cell และ TNF-α** ค้ำกำแพง granuloma ไว้ เชื้อในแกน caseum มีน้อยและแทบไม่แบ่งตัว → cytokine ไม่พอให้ไข้/ผอม = **ไม่มีอาการ** · ไม่มีอะไรแตกเข้าหลอดลม → **เสมหะไม่พบเชื้อ ไม่แพร่** · CXR ปกติหรือเห็นแค่หินปูน"
+     },
+     {
+      "t": "ภูมิคุ้มกันตก — กำแพงคลาย",
+      "cap": "**HIV (CD4 ลด) · steroid · anti-TNF** ทำให้ lymphocyte ที่ล้อมอยู่ลดลงและ granuloma คงรูปไม่ได้ (เส้นประแดง) — เชื้อในรอยโรคยังมีชีวิต จึงได้โอกาสกลับมาแบ่งตัว"
+     },
+     {
+      "t": "Reactivation → caseum แตกเข้าหลอดลม",
+      "cap": "เชื้อแบ่งตัวมาก caseum เหลวตัวแล้ว **แตกเข้าหลอดลม** → ไอมีเสมหะ **เสมหะพบเชื้อและแพร่เชื้อ** พร้อมไข้ เหงื่อออกกลางคืน น้ำหนักลด · ตำแหน่งคลาสสิกคือยอดปอดที่ออกซิเจนสูง"
+     },
+     {
+      "t": "ทำไมรักษา LTBI ได้ด้วยยาน้อยตัว — แต่ต้องตัด active ก่อน",
+      "cap": "ผู้สัมผัสร่วมบ้าน ผู้ติดเชื้อเอชไอวี หรือก่อนให้ anti-TNF → คัดกรองแล้วรักษา LTBI (**3HP, 4R**) เพื่อกำจัดเชื้อที่หลับอยู่ · เชื้อน้อยจึงใช้ 1–2 ตัวพอ แต่ **ต้องตัด active TB ด้วยอาการ + CXR ก่อนเสมอ** มิฉะนั้นยาเดี่ยวสร้างเชื้อดื้อยา"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-03-04",
+   "after": "รูปแบบภาพรังสีที่ต้องแยก",
+   "anim": {
+    "key": "tb03-miliary",
+    "title": "Miliary TB — granuloma แตกเข้าหลอดเลือด แล้วกระจายทั่วตัวพร้อมกัน",
+    "svg": "<svg viewBox=\"0 0 440 366\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: granuloma วัณโรคที่ติดหลอดเลือดแตกเข้ากระแสเลือด เชื้อกระจายพร้อมกันเกิดตุ่มขนาดเท่ากันราว 1 มิลลิเมตรทั่วปอดสองข้าง และไปตับ ม้าม ไขกระดูก จอตา และเยื่อหุ้มสมอง\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M104,52 C72,44 30,84 26,150 C22,200 30,226 58,230 C84,234 102,222 104,200 Z\" class=\"sk\"/><path d=\"M126,52 C158,44 200,84 204,150 C208,200 200,226 172,230 C146,234 128,222 126,200 Z\" class=\"sk\"/><text x=\"115\" y=\"34\" class=\"xs mid mu\">ปอด 2 ข้าง</text><path d=\"M48,96 C70,110 88,140 100,170\" class=\"lru w3\"/><circle cx=\"58\" cy=\"112\" r=\"11\" class=\"ms\" data-x=\"2\"/><text x=\"14\" y=\"20\" class=\"xs tms b\" data-x=\"2\">granuloma ติดหลอดเลือด</text><g data-s=\"2\"><g class=\"pl\"><circle cx=\"58\" cy=\"112\" r=\"12\" class=\"bad\"/></g></g><text x=\"14\" y=\"20\" class=\"xs tbad b\" data-s=\"2\">caseum กัดทะลุผนังหลอดเลือด</text><ellipse cx=\"115\" cy=\"252\" rx=\"24\" ry=\"18\" class=\"ac\"/><text x=\"115\" y=\"256\" class=\"xs mid tac b\">หัวใจ</text><path d=\"M139,252 L232,252 L232,52\" class=\"lac w2\"/><text x=\"186\" y=\"270\" class=\"xs mid tac\">กระแสเลือด</text><g data-s=\"2\"><circle cx=\"58\" cy=\"112\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.2s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 18 12 34 38 44 68 L 54 124 L 81 140 L 174 140 L 174 -52\"/></circle><circle cx=\"58\" cy=\"112\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.2s\" begin=\"-0.80s\" repeatCount=\"indefinite\" path=\"M 0 0 C 18 12 34 38 44 68 L 54 124 L 81 140 L 174 140 L 174 -52\"/></circle><circle cx=\"58\" cy=\"112\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.2s\" begin=\"-1.60s\" repeatCount=\"indefinite\" path=\"M 0 0 C 18 12 34 38 44 68 L 54 124 L 81 140 L 174 140 L 174 -52\"/></circle><circle cx=\"58\" cy=\"112\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.2s\" begin=\"-2.40s\" repeatCount=\"indefinite\" path=\"M 0 0 C 18 12 34 38 44 68 L 54 124 L 81 140 L 174 140 L 174 -52\"/></circle></g><g data-s=\"3\"><circle cx=\"56.4\" cy=\"82.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"70.2\" cy=\"82.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"45.8\" cy=\"92.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"55.1\" cy=\"97.0\" r=\"2.4\" class=\"badf\"/><circle cx=\"69.6\" cy=\"93.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"87.0\" cy=\"94.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"47.0\" cy=\"107.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"58.8\" cy=\"105.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"71.8\" cy=\"110.2\" r=\"2.4\" class=\"badf\"/><circle cx=\"84.1\" cy=\"109.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"46.0\" cy=\"118.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"59.5\" cy=\"121.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"69.8\" cy=\"118.2\" r=\"2.4\" class=\"badf\"/><circle cx=\"86.2\" cy=\"120.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"46.3\" cy=\"136.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"59.3\" cy=\"136.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"70.4\" cy=\"135.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"83.7\" cy=\"136.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"99.3\" cy=\"131.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"42.8\" cy=\"145.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"60.8\" cy=\"146.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"71.8\" cy=\"145.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"84.0\" cy=\"146.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"96.1\" cy=\"147.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"45.5\" cy=\"162.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"59.1\" cy=\"162.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"73.1\" cy=\"162.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"85.0\" cy=\"158.0\" r=\"2.4\" class=\"badf\"/><circle cx=\"47.2\" cy=\"175.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"60.4\" cy=\"173.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"72.3\" cy=\"171.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"86.0\" cy=\"173.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"43.7\" cy=\"183.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"60.1\" cy=\"188.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"68.5\" cy=\"187.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"83.5\" cy=\"183.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"56.8\" cy=\"200.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"73.2\" cy=\"196.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"84.7\" cy=\"196.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"59.3\" cy=\"211.0\" r=\"2.4\" class=\"badf\"/><circle cx=\"73.3\" cy=\"214.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"156.7\" cy=\"83.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"170.8\" cy=\"84.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"144.4\" cy=\"97.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"153.2\" cy=\"94.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"171.7\" cy=\"95.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"184.4\" cy=\"92.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"142.8\" cy=\"106.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"156.3\" cy=\"108.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"166.1\" cy=\"106.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"180.7\" cy=\"110.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"144.6\" cy=\"119.0\" r=\"2.4\" class=\"badf\"/><circle cx=\"157.8\" cy=\"118.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"169.7\" cy=\"118.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"179.0\" cy=\"123.2\" r=\"2.4\" class=\"badf\"/><circle cx=\"141.3\" cy=\"132.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"158.9\" cy=\"136.2\" r=\"2.4\" class=\"badf\"/><circle cx=\"167.7\" cy=\"136.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"182.2\" cy=\"135.1\" r=\"2.4\" class=\"badf\"/><circle cx=\"193.2\" cy=\"136.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"144.1\" cy=\"149.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"158.4\" cy=\"145.8\" r=\"2.4\" class=\"badf\"/><circle cx=\"168.2\" cy=\"145.0\" r=\"2.4\" class=\"badf\"/><circle cx=\"179.9\" cy=\"144.4\" r=\"2.4\" class=\"badf\"/><circle cx=\"193.8\" cy=\"147.6\" r=\"2.4\" class=\"badf\"/><circle cx=\"140.0\" cy=\"161.1\" r=\"2.4\" class=\"badf\"/><circle cx=\"155.0\" cy=\"158.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"170.9\" cy=\"159.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"180.9\" cy=\"159.9\" r=\"2.4\" class=\"badf\"/><circle cx=\"144.2\" cy=\"170.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"158.9\" cy=\"170.1\" r=\"2.4\" class=\"badf\"/><circle cx=\"170.5\" cy=\"175.1\" r=\"2.4\" class=\"badf\"/><circle cx=\"179.1\" cy=\"174.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"142.2\" cy=\"186.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"153.1\" cy=\"183.3\" r=\"2.4\" class=\"badf\"/><circle cx=\"167.1\" cy=\"188.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"180.2\" cy=\"187.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"158.6\" cy=\"201.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"168.1\" cy=\"198.1\" r=\"2.4\" class=\"badf\"/><circle cx=\"182.1\" cy=\"200.7\" r=\"2.4\" class=\"badf\"/><circle cx=\"153.6\" cy=\"213.5\" r=\"2.4\" class=\"badf\"/><circle cx=\"170.8\" cy=\"214.2\" r=\"2.4\" class=\"badf\"/></g><g data-s=\"3\"><rect x=\"26\" y=\"286\" width=\"180\" height=\"22\" rx=\"6\" class=\"bad\"/><text x=\"116\" y=\"301\" class=\"xs mid b tbad\">ตุ่ม ~1 mm ขนาดเท่ากัน ทั่วปอด</text></g><g data-s=\"4\"><line x1=\"232\" y1=\"64\" x2=\"248\" y2=\"64\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"252\" y=\"44\" width=\"182\" height=\"44\" rx=\"8\" class=\"bx\"/><circle cx=\"424\" cy=\"54\" r=\"2.6\" class=\"badf\"/><circle cx=\"416\" cy=\"60\" r=\"2.6\" class=\"badf\"/><text x=\"262\" y=\"62\" class=\"sm b\">ตับ · ม้าม</text><text x=\"262\" y=\"79\" class=\"xs i2\">ตับม้ามโต</text><line x1=\"232\" y1=\"122\" x2=\"248\" y2=\"122\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"252\" y=\"102\" width=\"182\" height=\"44\" rx=\"8\" class=\"bx\"/><circle cx=\"424\" cy=\"112\" r=\"2.6\" class=\"badf\"/><circle cx=\"416\" cy=\"118\" r=\"2.6\" class=\"badf\"/><text x=\"262\" y=\"120\" class=\"sm b\">ไขกระดูก</text><text x=\"262\" y=\"137\" class=\"xs i2\">เม็ดเลือดต่ำ · biopsy ได้</text><line x1=\"232\" y1=\"180\" x2=\"248\" y2=\"180\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"252\" y=\"160\" width=\"182\" height=\"44\" rx=\"8\" class=\"bx\"/><circle cx=\"424\" cy=\"170\" r=\"2.6\" class=\"badf\"/><circle cx=\"416\" cy=\"176\" r=\"2.6\" class=\"badf\"/><text x=\"262\" y=\"178\" class=\"sm b\">จอตา</text><text x=\"262\" y=\"195\" class=\"xs i2\">choroidal tubercle</text><line x1=\"232\" y1=\"238\" x2=\"248\" y2=\"238\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"252\" y=\"218\" width=\"182\" height=\"44\" rx=\"8\" class=\"bx\"/><circle cx=\"424\" cy=\"228\" r=\"2.6\" class=\"badf\"/><circle cx=\"416\" cy=\"234\" r=\"2.6\" class=\"badf\"/><text x=\"262\" y=\"236\" class=\"sm b\">เยื่อหุ้มสมอง</text><text x=\"262\" y=\"253\" class=\"xs tbad\">มักเป็นร่วม → เจาะ CSF</text></g><g data-s=\"5\"><rect x=\"14\" y=\"318\" width=\"420\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"224\" y=\"335\" class=\"xs mid b tok\">CXR ระยะแรกอาจยังปกติ · รักษาแล้วจางเร็ว</text><text x=\"224\" y=\"350\" class=\"xs mid tok\">และไม่ทิ้งหินปูน</text></g></svg>",
+    "steps": [
+     {
+      "t": "รอยโรค caseous ชิดหลอดเลือด",
+      "cap": "รอยโรควัณโรค (จาก primary หรือต่อมน้ำเหลืองที่โต) อยู่ชิดหลอดเลือด — ตามปกติภูมิคุ้มกันขังเชื้อไว้ในจุดเดียว"
+     },
+     {
+      "t": "แตกเข้ากระแสเลือด",
+      "cap": "caseum กัดผนังหลอดเลือด → เชื้อจำนวนมาก **เข้ากระแสเลือดพร้อมกันในคราวเดียว** แล้วกระจายทั่วร่างกาย · พบบ่อยใน **เด็กเล็กและผู้ติดเชื้อเอชไอวีที่ CD4 ต่ำ** ที่สร้าง granuloma ขังเชื้อไม่ได้"
+     },
+     {
+      "t": "ตุ่มเท่าเม็ดข้าวฟ่างทั่วปอด",
+      "cap": "เชื้อฝังทุกจุดพร้อมกัน → granuloma เล็ก **ขนาดเท่ากัน ราว 1 mm กระจายทั่วปอดสองข้าง** (โตได้ถึง 2–3 mm ถ้าไม่รักษา) · ช่วงแรก CXR อาจยังปกติ"
+     },
+     {
+      "t": "อวัยวะที่เลือดผ่านมากและมี macrophage มาก",
+      "cap": "**ตับ ม้าม ไขกระดูก จอตา** → ตับม้ามโต ไขกระดูกถูกกด และ **choroidal tubercle** (ตรวจตาช่วยวินิจฉัยเร็ว) · **มักมีเยื่อหุ้มสมองอักเสบร่วม** — มีอาการทางระบบประสาทต้องเจาะ CSF"
+     },
+     {
+      "t": "สรุปที่ออกสอบ",
+      "cap": "ไข้เรื้อรัง ผอม ตับม้ามโต + ตุ่ม 1 mm ทั่วปอด = **miliary TB** · ยืนยันด้วยชิ้นเนื้อตับ/ไขกระดูก · **รักษาแล้วจางหายเร็วและไม่ทิ้งหินปูน** (ต่างจาก Ghon focus เก่า)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-03-09",
+   "after": "กลไก: เชื้อดื้อยาเกิดอย่างไร",
+   "anim": {
+    "key": "tb03-resist",
+    "title": "เชื้อดื้อยาเกิดอย่างไร — ยาตัวเดียวคัดเลือกตัวดื้อ ยาหลายตัวปิดทางรอด",
+    "svg": "<svg viewBox=\"0 0 440 356\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: โพรงวัณโรคมีเชื้อจำนวนมากที่มีตัวกลายพันธุ์ดื้อยาอยู่แล้ว ให้ยาตัวเดียวเหลือแต่ตัวดื้อที่แบ่งตัวแทน ส่วนให้ยาหลายตัวพร้อมกัน ตัวดื้อแต่ละยาถูกยาอีกตัวฆ่าจนหมด\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"110\" cy=\"150\" r=\"82\" class=\"sk\"/><circle cx=\"330\" cy=\"150\" r=\"82\" class=\"sk\"/><text x=\"220\" y=\"22\" class=\"xs mid b\">โพรงวัณโรค: เชื้อ ~10⁸ ตัว — ตัวดื้อมีอยู่แล้วก่อนเริ่มยา</text><circle cx=\"83.9\" cy=\"92.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"100.9\" cy=\"92.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"115.2\" cy=\"94.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"127.3\" cy=\"95.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"67.2\" cy=\"109.6\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"82.4\" cy=\"107.5\" r=\"5\" class=\"msf\"/><circle cx=\"99.5\" cy=\"112.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"112.7\" cy=\"108.3\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"130.8\" cy=\"112.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"145.5\" cy=\"109.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"162.9\" cy=\"107.3\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"57.2\" cy=\"123.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"67.9\" cy=\"122.7\" r=\"5\" class=\"waf\" data-x=\"2\"/><circle cx=\"83.9\" cy=\"126.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"98.1\" cy=\"125.5\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"115.8\" cy=\"124.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"130.3\" cy=\"122.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"142.4\" cy=\"123.2\" r=\"5\" class=\"msf\"/><circle cx=\"161.1\" cy=\"124.6\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"53.9\" cy=\"140.5\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"69.7\" cy=\"138.8\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"86.8\" cy=\"141.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"98.5\" cy=\"140.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"115.2\" cy=\"142.3\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"131.4\" cy=\"138.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"147.9\" cy=\"137.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"159.5\" cy=\"141.5\" r=\"5\" class=\"msf\"/><circle cx=\"52.9\" cy=\"154.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"67.2\" cy=\"156.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"86.6\" cy=\"155.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"102.3\" cy=\"153.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"116.2\" cy=\"155.6\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"130.5\" cy=\"154.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"147.0\" cy=\"157.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"159.8\" cy=\"156.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"52.4\" cy=\"171.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"70.9\" cy=\"173.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"86.9\" cy=\"168.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"99.3\" cy=\"171.0\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"112.1\" cy=\"169.8\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"128.0\" cy=\"167.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"142.4\" cy=\"171.6\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"157.8\" cy=\"168.5\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"69.3\" cy=\"187.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"82.5\" cy=\"184.7\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"100.3\" cy=\"187.3\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"116.9\" cy=\"187.2\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"128.7\" cy=\"184.5\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"144.2\" cy=\"187.3\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"162.7\" cy=\"182.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"68.1\" cy=\"198.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"83.4\" cy=\"199.9\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"100.5\" cy=\"198.6\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"112.0\" cy=\"199.5\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"129.2\" cy=\"200.4\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"147.7\" cy=\"201.1\" r=\"3.6\" class=\"muf\" data-x=\"2\"/><circle cx=\"303.9\" cy=\"92.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"320.9\" cy=\"92.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"335.2\" cy=\"94.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"347.3\" cy=\"95.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"287.2\" cy=\"109.6\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"302.4\" cy=\"107.5\" r=\"5\" class=\"msf\" data-x=\"4\"/><circle cx=\"319.5\" cy=\"112.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"332.7\" cy=\"108.3\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"350.8\" cy=\"112.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"365.5\" cy=\"109.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"382.9\" cy=\"107.3\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"277.2\" cy=\"123.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"287.9\" cy=\"122.7\" r=\"5\" class=\"waf\" data-x=\"4\"/><circle cx=\"303.9\" cy=\"126.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"318.1\" cy=\"125.5\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"335.8\" cy=\"124.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"350.3\" cy=\"122.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"362.4\" cy=\"123.2\" r=\"5\" class=\"msf\" data-x=\"4\"/><circle cx=\"381.1\" cy=\"124.6\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"273.9\" cy=\"140.5\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"289.7\" cy=\"138.8\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"306.8\" cy=\"141.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"318.5\" cy=\"140.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"335.2\" cy=\"142.3\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"351.4\" cy=\"138.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"367.9\" cy=\"137.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"379.5\" cy=\"141.5\" r=\"5\" class=\"msf\" data-x=\"4\"/><circle cx=\"272.9\" cy=\"154.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"287.2\" cy=\"156.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"306.6\" cy=\"155.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"322.3\" cy=\"153.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"336.2\" cy=\"155.6\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"350.5\" cy=\"154.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"367.0\" cy=\"157.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"379.8\" cy=\"156.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"272.4\" cy=\"171.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"290.9\" cy=\"173.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"306.9\" cy=\"168.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"319.3\" cy=\"171.0\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"332.1\" cy=\"169.8\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"348.0\" cy=\"167.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"362.4\" cy=\"171.6\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"377.8\" cy=\"168.5\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"289.3\" cy=\"187.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"302.5\" cy=\"184.7\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"320.3\" cy=\"187.3\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"336.9\" cy=\"187.2\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"348.7\" cy=\"184.5\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"364.2\" cy=\"187.3\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"382.7\" cy=\"182.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"288.1\" cy=\"198.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"303.4\" cy=\"199.9\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"320.5\" cy=\"198.6\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"332.0\" cy=\"199.5\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"349.2\" cy=\"200.4\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><circle cx=\"367.7\" cy=\"201.1\" r=\"3.6\" class=\"muf\" data-x=\"4\"/><g data-s=\"2\"><text x=\"110\" y=\"52\" class=\"xs mid b tbad\">ให้ H ตัวเดียว / กินไม่ครบ</text><path d=\"M30,60 L52,86\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><text x=\"24\" y=\"56\" class=\"lg b tbad\">H</text></g><g data-s=\"3\"><circle cx=\"77.0\" cy=\"94.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"92.8\" cy=\"92.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"103.3\" cy=\"94.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"119.8\" cy=\"93.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"131.0\" cy=\"91.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"63.0\" cy=\"105.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"79.5\" cy=\"103.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"93.8\" cy=\"104.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"103.4\" cy=\"103.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"121.0\" cy=\"107.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"133.3\" cy=\"106.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"141.2\" cy=\"105.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"157.0\" cy=\"103.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"55.7\" cy=\"118.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"63.9\" cy=\"120.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"76.7\" cy=\"121.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"91.7\" cy=\"119.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"104.1\" cy=\"118.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"116.1\" cy=\"116.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"133.2\" cy=\"117.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"145.7\" cy=\"117.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"159.8\" cy=\"121.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"54.5\" cy=\"133.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"66.5\" cy=\"133.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"76.7\" cy=\"131.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"94.0\" cy=\"130.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"107.5\" cy=\"134.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"117.5\" cy=\"131.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"130.7\" cy=\"131.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"147.0\" cy=\"131.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"154.2\" cy=\"129.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"171.3\" cy=\"135.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"53.0\" cy=\"144.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"66.3\" cy=\"146.5\" r=\"4.2\" class=\"msf\"/><circle cx=\"77.3\" cy=\"145.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"92.3\" cy=\"145.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"103.1\" cy=\"143.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"117.1\" cy=\"147.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"130.1\" cy=\"145.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"142.8\" cy=\"142.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"154.4\" cy=\"146.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"171.7\" cy=\"144.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"54.1\" cy=\"159.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"68.4\" cy=\"160.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"78.4\" cy=\"160.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"94.8\" cy=\"158.5\" r=\"4.2\" class=\"msf\"/><circle cx=\"107.3\" cy=\"157.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"117.3\" cy=\"156.5\" r=\"4.2\" class=\"msf\"/><circle cx=\"133.3\" cy=\"156.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"141.4\" cy=\"159.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"158.6\" cy=\"157.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"172.0\" cy=\"155.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"51.5\" cy=\"169.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"65.5\" cy=\"169.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"76.4\" cy=\"170.0\" r=\"4.2\" class=\"msf\"/><circle cx=\"94.4\" cy=\"173.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"106.5\" cy=\"170.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"116.5\" cy=\"173.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"131.2\" cy=\"172.4\" r=\"4.2\" class=\"msf\"/><circle cx=\"141.2\" cy=\"169.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"159.0\" cy=\"172.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"172.3\" cy=\"171.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"65.6\" cy=\"184.5\" r=\"4.2\" class=\"msf\"/><circle cx=\"81.1\" cy=\"182.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"92.2\" cy=\"182.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"106.6\" cy=\"181.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"119.1\" cy=\"186.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"128.1\" cy=\"184.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"144.9\" cy=\"186.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"157.5\" cy=\"182.5\" r=\"4.2\" class=\"msf\"/><circle cx=\"65.4\" cy=\"199.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"81.4\" cy=\"194.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"89.6\" cy=\"194.6\" r=\"4.2\" class=\"msf\"/><circle cx=\"102.2\" cy=\"196.7\" r=\"4.2\" class=\"msf\"/><circle cx=\"115.8\" cy=\"199.2\" r=\"4.2\" class=\"msf\"/><circle cx=\"131.9\" cy=\"194.8\" r=\"4.2\" class=\"msf\"/><circle cx=\"144.2\" cy=\"195.9\" r=\"4.2\" class=\"msf\"/><circle cx=\"92.0\" cy=\"208.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"103.0\" cy=\"208.1\" r=\"4.2\" class=\"msf\"/><circle cx=\"117.3\" cy=\"211.3\" r=\"4.2\" class=\"msf\"/><circle cx=\"131.3\" cy=\"207.3\" r=\"4.2\" class=\"msf\"/></g><g data-s=\"3\"><rect x=\"30\" y=\"244\" width=\"160\" height=\"24\" rx=\"6\" class=\"bad\"/><text x=\"110\" y=\"260\" class=\"xs mid b tbad\">เหลือแต่ตัวดื้อ H → แบ่งตัวแทน</text></g><g data-s=\"4\"><text x=\"330\" y=\"52\" class=\"xs mid b tok\">ให้ HRZE พร้อมกัน</text><path d=\"M410,60 L388,86\" class=\"lok w3\" marker-end=\"url(#ah-ok)\"/><text x=\"404\" y=\"56\" class=\"sm b tok\">HRZE</text></g><g data-s=\"4\"><circle cx=\"330\" cy=\"150\" r=\"82\" class=\"ok\"/><text x=\"330\" y=\"140\" class=\"xs mid b tok\">ตัวดื้อ H ถูก R ฆ่า</text><text x=\"330\" y=\"158\" class=\"xs mid b tok\">ตัวดื้อ R ถูก H ฆ่า</text><text x=\"330\" y=\"178\" class=\"xs mid tok\">→ เชื้อหมด</text></g><g><circle cx=\"30\" cy=\"290\" r=\"4\" class=\"muf\"/><text x=\"40\" y=\"294\" class=\"xs\">ไวต่อยา</text><circle cx=\"108\" cy=\"290\" r=\"5\" class=\"msf\"/><text x=\"118\" y=\"294\" class=\"xs\">ดื้อ H (~1/10⁶)</text><circle cx=\"230\" cy=\"290\" r=\"5\" class=\"waf\"/><text x=\"240\" y=\"294\" class=\"xs\">ดื้อ R (~1/10⁸)</text></g><g data-s=\"5\"><rect x=\"14\" y=\"306\" width=\"412\" height=\"42\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"323\" class=\"xs mid b tac\">ห้ามเติมยาตัวเดียวเข้าสูตรที่กำลังล้มเหลว · ใช้ DOT</text><text x=\"220\" y=\"340\" class=\"xs mid\">Xpert MTB/RIF จับ mutation ใน rpoB → รู้ว่าดื้อ R ในไม่กี่ชั่วโมง</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตัวดื้อยามีอยู่แล้วก่อนเริ่มยา",
+      "cap": "เชื้อกลายพันธุ์บนโครโมโซมแบบสุ่ม (ไม่ใช่รับ plasmid) — ดื้อ H ราว **1 ใน 10⁶** (katG/inhA) ดื้อ R ราว **1 ใน 10⁸** (rpoB) · โพรงที่มีเชื้อนับร้อยล้านตัวจึง **มีตัวดื้อแต่ละยาอยู่แล้ว**"
+     },
+     {
+      "t": "ยาตัวเดียว (หรือกินไม่ครบ)",
+      "cap": "ให้ H อย่างเดียว → ตัวไวยาและตัวดื้อ R (ซึ่งยังไวต่อ H) ตายหมด **เหลือแต่ตัวดื้อ H**"
+     },
+     {
+      "t": "ตัวดื้อรอดและแบ่งตัวแทนที่",
+      "cap": "ตัวดื้อ H ไม่มีคู่แข่ง จึงแบ่งตัวเต็มโพรง = **acquired resistance** · ถ้ารับเชื้อดื้อจากผู้อื่นมาเลยเรียก **primary (transmitted) resistance** — ต้องถามประวัติสัมผัสเสมอ"
+     },
+     {
+      "t": "ยาหลายตัวพร้อมกันปิดทางรอด",
+      "cap": "HRZE พร้อมกัน → **ตัวดื้อ H ถูก R ฆ่า ตัวดื้อ R ถูก H ฆ่า** โอกาสที่ตัวเดียวดื้อทั้งสองยา (10⁻⁶ × 10⁻⁸) แทบเป็นศูนย์ → เชื้อหมด"
+     },
+     {
+      "t": "สิ่งที่ห้ามทำและเครื่องมือคัดกรอง",
+      "cap": "**ห้ามเติมยาตัวเดียวเข้าสูตรที่กำลังล้มเหลว** (= ยาเดี่ยว) · ใช้ **DOT** · เสมหะยังบวกสิ้นเดือนที่ 2 → สงสัยดื้อยา ส่ง **Xpert MTB/RIF** (rpoB) + culture/DST · RR-TB จัดการเหมือน MDR"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-26-04",
+   "after": "ทำไมถึงมีอาการนี้ — เมื่อ O2 ต่ำและ CO2 คั่ง",
+   "anim": {
+    "key": "abg-co2narc",
+    "title": "CO₂ narcosis — วงจรอุบาทว์ของ type 2 respiratory failure",
+    "svg": "<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: การระบายอากาศถุงลมลดทำให้ PaCO2 สูง CO2 ผ่าน blood brain barrier ทำให้ pH ในน้ำไขสันหลังลด ผู้ป่วยซึมลงและหายใจน้อยลงอีกเป็นวงจรอุบาทว์ ตัดวงจรด้วย NIV หรือใส่ท่อช่วยหายใจ\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"18\" class=\"xs mid b tms\">ตัวจุด: COPD กำเริบ · ยากดการหายใจ · ให้ O₂ เกินเป้า</text><g><rect x=\"120\" y=\"30\" width=\"200\" height=\"46\" rx=\"10\" class=\"ms\"/><text x=\"220\" y=\"50\" class=\"sm mid b\">Alveolar ventilation ↓</text><text x=\"220\" y=\"67\" class=\"xs mid mu\">PaCO₂ = k × VCO₂ ÷ VA</text></g><g data-s=\"2\"><rect x=\"300\" y=\"124\" width=\"132\" height=\"52\" rx=\"10\" class=\"bad\"/><text x=\"366\" y=\"147\" class=\"lg mid b tbad\">PaCO₂ ↑</text><text x=\"366\" y=\"165\" class=\"xs mid\">&gt; 45 mmHg</text><path d=\"M322,62 Q366,68 366,120\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"2\"><text x=\"220\" y=\"112\" class=\"xs mid b\">CO₂ ขยายหลอดเลือด:</text><text x=\"220\" y=\"128\" class=\"xs mid\">ปวดศีรษะ (ตอนเช้า) หน้าแดง</text><text x=\"220\" y=\"143\" class=\"xs mid\">มืออุ่น ชีพจรแรง</text></g><g data-s=\"3\"><rect x=\"110\" y=\"222\" width=\"220\" height=\"50\" rx=\"10\" class=\"ac\"/><text x=\"220\" y=\"243\" class=\"xs mid\">CO₂ ผ่าน blood–brain barrier เร็ว</text><text x=\"220\" y=\"262\" class=\"sm mid b tac\">pH ในน้ำไขสันหลัง ↓</text><path d=\"M366,178 Q366,246 334,246\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"4\"><rect x=\"8\" y=\"124\" width=\"136\" height=\"52\" rx=\"10\" class=\"bad\"/><text x=\"76\" y=\"146\" class=\"sm mid b tbad\">ซึม สับสน</text><text x=\"76\" y=\"164\" class=\"xs mid\">asterixis = CO₂ narcosis</text><path d=\"M106,246 Q76,246 76,180\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><path d=\"M76,120 Q76,56 116,54\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"44\" y=\"92\" class=\"xs mid tbad\">ยิ่งซึม</text><text x=\"44\" y=\"106\" class=\"xs mid tbad\">ยิ่งหายใจน้อย</text></g><g data-s=\"4\"><g class=\"pl\"><text x=\"220\" y=\"190\" class=\"lg mid b tbad\">วงจรอุบาทว์</text></g></g><g data-s=\"5\"><text x=\"92\" y=\"76\" class=\"lg mid b tok\">✕</text><rect x=\"14\" y=\"286\" width=\"412\" height=\"66\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"306\" class=\"sm mid b tok\">ตัดวงจร: เจาะ ABG ทันทีเมื่อซึมลง</text><text x=\"220\" y=\"324\" class=\"xs mid\">NIV ถ้า pH &lt; 7.35 · PaCO₂ &gt; 45 และยังรู้ตัว</text><text x=\"220\" y=\"341\" class=\"xs mid\">ซึมมาก/ปกป้อง airway ไม่ได้ → ใส่ท่อ · เป้า SpO₂ 88–92%</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตัวจุด — ระบายอากาศถุงลมลด",
+      "cap": "**PaCO₂ = k × VCO₂ ÷ alveolar ventilation** — COPD กำเริบ (ล้า + dead space) ยากดการหายใจ หรือให้ O₂ เกินเป้าใน COPD (V/Q แย่ลง + Haldane) ทำให้ VA ลด"
+     },
+     {
+      "t": "PaCO₂ ขึ้น — CO₂ ขยายหลอดเลือด",
+      "cap": "PaCO₂ > 45 = **hypercapnia (type 2)** · CO₂ เป็น vasodilator → หลอดเลือดสมองขยาย **ปวดศีรษะตอนเช้า** · หลอดเลือดส่วนปลายขยาย **มืออุ่น ชีพจรแรง** หน้าแดง"
+     },
+     {
+      "t": "CO₂ เข้าสมองเร็ว — CSF เป็นกรด",
+      "cap": "CO₂ ผ่าน **blood–brain barrier** ได้เร็ว (HCO₃⁻ ผ่านช้า) → **pH ในน้ำไขสันหลังลด** กดการทำงานของเซลล์ประสาท"
+     },
+     {
+      "t": "CO₂ narcosis — วงจรอุบาทว์",
+      "cap": "**ซึม สับสน มือสั่นกระพือ (asterixis)** → ศูนย์หายใจยิ่งทำงานน้อย หายใจช้าตื้นลง → CO₂ ยิ่งคั่ง · อัตราหายใจที่ช้าลงในผู้ป่วยซึม **ไม่ใช่สัญญาณว่าดีขึ้น**"
+     },
+     {
+      "t": "ตัดวงจร",
+      "cap": "ซึมลงในผู้ป่วย COPD ที่ได้ O₂ สูง → **เจาะ ABG ดู PaCO₂ ทันที** · **NIV** เมื่อ pH < 7.35 และ PaCO₂ > 45 ยังรู้ตัว · ปกป้อง airway ไม่ได้ → ใส่ท่อ · ปรับ O₂ ให้ **SpO₂ 88–92%** (อย่าหยุด O₂)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-26-05",
+   "after": "ขั้นที่ 2 — สูตรการชดเชยที่ต้องจำ",
+   "anim": {
+    "key": "abg-winter",
+    "title": "Metabolic acidosis → ปอดชดเชย — ใช้ Winter's formula จับ mixed disorder",
+    "svg": "<svg viewBox=\"0 0 440 326\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: กรดเมแทบอลิกใช้ไบคาร์บอเนตจนลดจาก 24 เหลือ 14 pH ตก ปอดหายใจลึกแบบ Kussmaul เป่า CO2 ทิ้ง PaCO2 ลดเหลือ 30 อยู่ในช่วงที่คาดตาม Winter's formula 27 ถึง 31 ถ้าอยู่นอกช่วงแปลว่ามีความผิดปกติทางการหายใจร่วม\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"128\" height=\"56\" rx=\"10\" class=\"bx\"/><text x=\"78\" y=\"28\" class=\"xs mid mu\">pH</text><text x=\"78\" y=\"54\" class=\"lg b mid\" data-x=\"2\">7.40</text><text x=\"78\" y=\"54\" class=\"lg b mid tbad\" data-s=\"2\" data-x=\"3\">7.17</text><text x=\"78\" y=\"54\" class=\"lg b mid tms\" data-s=\"3\">7.31</text><rect x=\"156\" y=\"10\" width=\"128\" height=\"56\" rx=\"10\" class=\"bx\"/><text x=\"220\" y=\"28\" class=\"xs mid mu\">HCO₃⁻ (mmol/L)</text><text x=\"220\" y=\"54\" class=\"lg b mid\" data-x=\"2\">24</text><text x=\"220\" y=\"54\" class=\"lg b mid tbad\" data-s=\"2\">14</text><rect x=\"298\" y=\"10\" width=\"128\" height=\"56\" rx=\"10\" class=\"bx\"/><text x=\"362\" y=\"28\" class=\"xs mid mu\">PaCO₂ (mmHg)</text><text x=\"362\" y=\"54\" class=\"lg b mid\" data-x=\"3\">40</text><text x=\"362\" y=\"54\" class=\"lg b mid twa\" data-s=\"3\">30</text><path d=\"M90,90 L90,112\" class=\"lru w5\"/><ellipse cx=\"68\" cy=\"146\" rx=\"20\" ry=\"34\" class=\"wa\"/><ellipse cx=\"112\" cy=\"146\" rx=\"20\" ry=\"34\" class=\"wa\"/><text x=\"90\" y=\"198\" class=\"xs mid mu\">ปอด</text><g data-s=\"3\"><ellipse cx=\"68\" cy=\"146\" rx=\"24\" ry=\"38\" class=\"lwa w2\"><animate attributeName=\"ry\" values=\"30;42;30\" dur=\"1.6s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"112\" cy=\"146\" rx=\"24\" ry=\"38\" class=\"lwa w2\"><animate attributeName=\"ry\" values=\"30;42;30\" dur=\"1.6s\" repeatCount=\"indefinite\"/></ellipse><path d=\"M90,98 C90,84 110,78 140,80\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><circle cx=\"90\" cy=\"104\" r=\"3\" class=\"waf\"><animateMotion dur=\"1.4s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 0 -18 22 -24 52 -24\"/></circle><circle cx=\"90\" cy=\"104\" r=\"3\" class=\"waf\"><animateMotion dur=\"1.4s\" begin=\"-0.47s\" repeatCount=\"indefinite\" path=\"M 0 0 C 0 -18 22 -24 52 -24\"/></circle><circle cx=\"90\" cy=\"104\" r=\"3\" class=\"waf\"><animateMotion dur=\"1.4s\" begin=\"-0.93s\" repeatCount=\"indefinite\" path=\"M 0 0 C 0 -18 22 -24 52 -24\"/></circle><text x=\"146\" y=\"84\" class=\"xs b twa\">CO₂ ออก</text><text x=\"90\" y=\"214\" class=\"xs mid b twa\">Kussmaul: หายใจลึก</text></g><text x=\"300\" y=\"104\" class=\"sm mid b\">H⁺ + HCO₃⁻ ⇌ H₂CO₃ ⇌ CO₂ + H₂O</text><text x=\"300\" y=\"120\" class=\"xs mid mu\">บัฟเฟอร์ในเลือด</text><g data-s=\"2\"><text x=\"300\" y=\"142\" class=\"xs mid b tbad\">กรดใหม่ (keto acid, lactate) เติม H⁺</text><text x=\"300\" y=\"158\" class=\"xs mid tbad\">HCO₃⁻ ถูกใช้จับ H⁺: 24 → 14</text></g><g data-s=\"3\"><text x=\"300\" y=\"180\" class=\"xs mid twa\">H⁺ กระตุ้น carotid body + central</text><text x=\"300\" y=\"195\" class=\"xs mid twa\">chemoreceptor → เป่า CO₂ ทิ้ง</text><text x=\"300\" y=\"212\" class=\"xs mid b\">pH ดีขึ้น แต่ไม่กลับปกติ</text></g><text x=\"14\" y=\"262\" class=\"xs b\">PaCO₂ (mmHg)</text><g data-s=\"5\"><rect x=\"40.0\" y=\"272\" width=\"123.4\" height=\"24\" rx=\"2\" class=\"ms ns\"/><text x=\"101.7\" y=\"314\" class=\"xs mid tms b\">&lt; 27: resp. alkalosis ร่วม</text></g><g data-s=\"5\"><rect x=\"204.6\" y=\"272\" width=\"195.4\" height=\"24\" rx=\"2\" class=\"bad ns\"/><text x=\"302.3\" y=\"314\" class=\"xs mid tbad b\">&gt; 31: resp. acidosis ร่วม</text></g><g data-s=\"4\"><rect x=\"163.4\" y=\"272\" width=\"41.19999999999999\" height=\"24\" rx=\"2\" class=\"ok\"/></g><line x1=\"40.0\" y1=\"284\" x2=\"400.0\" y2=\"284\" class=\"ln w2\"/><line x1=\"40.0\" y1=\"279\" x2=\"40.0\" y2=\"289\" class=\"ln\"/><text x=\"40.0\" y=\"302\" class=\"xs mid mu\">15</text><line x1=\"91.4\" y1=\"279\" x2=\"91.4\" y2=\"289\" class=\"ln\"/><text x=\"91.4\" y=\"302\" class=\"xs mid mu\">20</text><line x1=\"142.9\" y1=\"279\" x2=\"142.9\" y2=\"289\" class=\"ln\"/><text x=\"142.9\" y=\"302\" class=\"xs mid mu\">25</text><line x1=\"194.3\" y1=\"279\" x2=\"194.3\" y2=\"289\" class=\"ln\"/><text x=\"194.3\" y=\"302\" class=\"xs mid mu\">30</text><line x1=\"245.7\" y1=\"279\" x2=\"245.7\" y2=\"289\" class=\"ln\"/><text x=\"245.7\" y=\"302\" class=\"xs mid mu\">35</text><line x1=\"297.1\" y1=\"279\" x2=\"297.1\" y2=\"289\" class=\"ln\"/><text x=\"297.1\" y=\"302\" class=\"xs mid mu\">40</text><line x1=\"348.6\" y1=\"279\" x2=\"348.6\" y2=\"289\" class=\"ln\"/><text x=\"348.6\" y=\"302\" class=\"xs mid mu\">45</text><line x1=\"400.0\" y1=\"279\" x2=\"400.0\" y2=\"289\" class=\"ln\"/><text x=\"400.0\" y=\"302\" class=\"xs mid mu\">50</text><g data-x=\"3\"><polygon points=\"297.1,276 291.1,264 303.1,264\" class=\"inkf\"/></g><g data-s=\"3\"><polygon points=\"194.3,278 188.3,264 200.3,264\" class=\"badf\"/></g><g data-s=\"4\"><rect x=\"150\" y=\"222\" width=\"286\" height=\"26\" rx=\"8\" class=\"ok\"/><text x=\"293\" y=\"239\" class=\"xs mid b tok\">Winter's: 1.5 × 14 + 8 ± 2 = 27–31 → วัดได้ 30 ✓</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ — บัฟเฟอร์ไบคาร์บอเนต",
+      "cap": "pH ขึ้นกับ **สัดส่วน HCO₃⁻ ต่อ PaCO₂** · เลือดใช้ HCO₃⁻ จับ H⁺ แล้วเปลี่ยนเป็น CO₂ ที่ปอดเป่าทิ้งได้ (pH 7.40 · HCO₃⁻ 24 · PaCO₂ 40)"
+     },
+     {
+      "t": "กรดเข้า — HCO₃⁻ ถูกใช้ไป",
+      "cap": "keto acid (DKA) หรือ lactate เติม H⁺ → HCO₃⁻ ถูกใช้จับจน **ลดเหลือ 14** · ถ้าปอดยังไม่ชดเชย pH จะตกถึงราว **7.17** = **metabolic acidosis** (HCO₃⁻ กับ pH ลงทางเดียวกัน)"
+     },
+     {
+      "t": "ปอดชดเชยเร็ว — Kussmaul",
+      "cap": "H⁺ กระตุ้น carotid body และ central chemoreceptor → **หายใจลึก (เพิ่ม tidal volume มากกว่าอัตรา)** เป่า CO₂ ทิ้ง → PaCO₂ 30 · pH ขึ้นเป็น **7.31 แต่ไม่กลับปกติ** (การชดเชยไม่เคยเกิน)"
+     },
+     {
+      "t": "เช็คด้วย Winter's formula",
+      "cap": "**PaCO₂ ที่คาด = 1.5 × HCO₃⁻ + 8 ± 2** = 1.5 × 14 + 8 ± 2 = **27–31** · วัดได้ 30 อยู่ในช่วง → ชดเชยเหมาะสม (ตัวอย่างข้อ 4 ท้ายคาบ) — ขั้นต่อไปคำนวณ anion gap"
+     },
+     {
+      "t": "นอกช่วง = มีความผิดปกติที่สองซ่อนอยู่",
+      "cap": "PaCO₂ **สูงกว่า 31** → มี **respiratory acidosis ร่วม** (ล้า ยากดการหายใจ โรคปอด — ใกล้หายใจล้มเหลว) · **ต่ำกว่า 27** → มี **respiratory alkalosis ร่วม** (เช่น salicylate, sepsis)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-26-06",
+   "after": "กลไก: ทำไม AG กว้างในบางโรคแต่ไม่กว้างในบางโรค",
+   "anim": {
+    "key": "abg-ag",
+    "title": "Anion gap — กรดใหม่เข้า กับ เสีย HCO₃⁻ ต่างกันอย่างไรในแผนภูมิประจุ",
+    "svg": "<svg viewBox=\"0 0 440 382\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แผนภูมิประจุ Gamblegram ปกติ Na 140 เท่ากับ Cl 104 บวก HCO3 24 บวก anion gap 12 เมื่อกรดใหม่เข้า HCO3 ลดและ anion gap กว้างเป็น 24 เมื่อเสีย HCO3 จากท้องเสีย Cl เพิ่มเป็น 116 และ anion gap ปกติ\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"75\" y=\"22\" class=\"sm mid b\">ปกติ</text><text x=\"75\" y=\"38\" class=\"xs mid mu\">ประจุบวก = ประจุลบ</text><g><rect x=\"21\" y=\"64\" width=\"50\" height=\"210.0\" rx=\"3\" class=\"wa\"/><text x=\"46\" y=\"174\" class=\"sm mid b twa\">Na⁺</text><text x=\"46\" y=\"190\" class=\"xs mid twa\">140</text><rect x=\"77\" y=\"118.0\" width=\"52\" height=\"156.0\" rx=\"3\" class=\"sk\"/><text x=\"103\" y=\"168.0\" class=\"sm mid b\">Cl⁻</text><text x=\"103\" y=\"184.0\" class=\"xs mid \">104</text><rect x=\"77\" y=\"82.0\" width=\"52\" height=\"36.0\" rx=\"3\" class=\"ok\"/><text x=\"103\" y=\"104.0\" class=\"xs mid b tok\">HCO₃ 24</text><rect x=\"77\" y=\"64.0\" width=\"52\" height=\"18.0\" rx=\"3\" class=\"ms\"/><text x=\"103\" y=\"77.0\" class=\"xs mid b tms\">AG 12</text></g><g data-s=\"2\"><text x=\"220\" y=\"22\" class=\"sm mid b tbad\">กรดใหม่เข้า</text><text x=\"220\" y=\"38\" class=\"xs mid mu\">(lactate, keto, พิษ)</text><g><rect x=\"166\" y=\"64\" width=\"50\" height=\"210.0\" rx=\"3\" class=\"wa\"/><text x=\"191\" y=\"174\" class=\"sm mid b twa\">Na⁺</text><text x=\"191\" y=\"190\" class=\"xs mid twa\">140</text><rect x=\"222\" y=\"118.0\" width=\"52\" height=\"156.0\" rx=\"3\" class=\"sk\"/><text x=\"248\" y=\"168.0\" class=\"sm mid b\">Cl⁻</text><text x=\"248\" y=\"184.0\" class=\"xs mid \">104</text><rect x=\"222\" y=\"100.0\" width=\"52\" height=\"18.0\" rx=\"3\" class=\"ok\"/><text x=\"248\" y=\"113.0\" class=\"xs mid b tok\">HCO₃ 12</text><rect x=\"222\" y=\"64.0\" width=\"52\" height=\"36.0\" rx=\"3\" class=\"bad\"/><text x=\"248\" y=\"86.0\" class=\"xs mid b tbad\">AG 24</text></g></g><g data-s=\"3\"><text x=\"365\" y=\"22\" class=\"sm mid b twa\">เสีย HCO₃⁻</text><text x=\"365\" y=\"38\" class=\"xs mid mu\">(ท้องเสีย, RTA)</text><g><rect x=\"311\" y=\"64\" width=\"50\" height=\"210.0\" rx=\"3\" class=\"wa\"/><text x=\"336\" y=\"174\" class=\"sm mid b twa\">Na⁺</text><text x=\"336\" y=\"190\" class=\"xs mid twa\">140</text><rect x=\"367\" y=\"100.0\" width=\"52\" height=\"174.0\" rx=\"3\" class=\"sk\"/><text x=\"393\" y=\"150.0\" class=\"sm mid b\">Cl⁻</text><text x=\"393\" y=\"166.0\" class=\"xs mid tbad b\">116 ↑</text><rect x=\"367\" y=\"82.0\" width=\"52\" height=\"18.0\" rx=\"3\" class=\"ok\"/><text x=\"393\" y=\"95.0\" class=\"xs mid b tok\">HCO₃ 12</text><rect x=\"367\" y=\"64.0\" width=\"52\" height=\"18.0\" rx=\"3\" class=\"ms\"/><text x=\"393\" y=\"77.0\" class=\"xs mid b tms\">AG 12</text></g></g><text x=\"75\" y=\"300\" class=\"xs mid\">AG = Na − (Cl + HCO₃)</text><text x=\"75\" y=\"315\" class=\"xs mid b\">= 140 − 128 = 12</text><g data-s=\"2\"><text x=\"220\" y=\"300\" class=\"xs mid tbad\">anion ของกรดค้างในเลือด</text><text x=\"220\" y=\"315\" class=\"xs mid b tbad\">Cl เท่าเดิม → AG กว้าง</text></g><g data-s=\"3\"><text x=\"365\" y=\"300\" class=\"xs mid twa\">ไม่มี anion ใหม่ ไตดูด Cl⁻</text><text x=\"365\" y=\"315\" class=\"xs mid b twa\">แทน → AG ปกติ</text></g><g data-s=\"4\"><path d=\"M279,100 L287,100 L287,82 L279,82\" class=\"lbad w2\"/><text x=\"290\" y=\"95\" class=\"xs b tbad\">+12</text><rect x=\"14\" y=\"330\" width=\"412\" height=\"44\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"347\" class=\"xs mid b tac\">Δ ratio = (AG − 12) ÷ (24 − HCO₃) = 12 ÷ 12 = 1 → HAGMA ล้วน</text><text x=\"220\" y=\"364\" class=\"xs mid\">&lt; 1 มี NAGMA ร่วม · 1–2 HAGMA ล้วน · &gt; 2 มี metabolic alkalosis ซ่อน</text></g></svg>",
+    "steps": [
+     {
+      "t": "ประจุบวกต้องเท่าประจุลบเสมอ",
+      "cap": "Na⁺ 140 = Cl⁻ 104 + HCO₃⁻ 24 + **anion ที่ไม่ได้วัด (AG) 12** — ส่วนใหญ่คือ **albumin** จึงต้องแก้ AG ตามอัลบูมิน (+2.5 ต่อทุก 1 g/dL ที่ต่ำกว่า 4)"
+     },
+     {
+      "t": "กรดใหม่เข้า → AG กว้าง",
+      "cap": "keto acid, lactate, formate, oxalate: H⁺ ถูก HCO₃⁻ จับไป (HCO₃⁻ 24 → 12) แต่ **anion ของกรดยังค้างในเลือด** และเครื่องไม่ได้วัด → **AG กว้างเท่ากับ HCO₃⁻ ที่หายไป** (12 → 24) = high AG (MUDPILES)"
+     },
+     {
+      "t": "เสีย HCO₃⁻ ออกไปเลย → Cl⁻ สูง AG ปกติ",
+      "cap": "ท้องเสีย proximal RTA ileal diversion (หรือไตขับ H⁺ ไม่ได้ใน distal RTA, saline มาก) → ไม่มี anion ใหม่ ไตดูด **Cl⁻ กลับแทน** รักษาประจุ → **hyperchloremic, AG ปกติ** (HARDUP) · DKA ช่วงรักษาเปลี่ยนจาก high AG เป็น normal AG ได้"
+     },
+     {
+      "t": "Delta ratio — หา ความผิดปกติที่ซ่อน",
+      "cap": "เทียบ AG ที่เพิ่ม กับ HCO₃⁻ ที่ลด: **< 1** = HCO₃⁻ ตกมากกว่า → มี **normal AG acidosis ร่วม** · **1–2** = high AG ล้วน · **> 2** = มี **metabolic alkalosis** (เช่น DKA + อาเจียน) หรือ chronic resp. acidosis ซ่อนอยู่"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-eptb-05",
+   "after": "กลไก",
+   "anim": {
+    "key": "eptb-pleural",
+    "title": "TB pleuritis — น้ำเกิดจากภูมิคุ้มกัน ไม่ใช่จากเชื้อจำนวนมาก",
+    "svg": "<svg viewBox=\"0 0 440 326\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: จุดวัณโรคใต้เยื่อหุ้มปอดแตกเข้าช่องเยื่อหุ้มปอด ปฏิกิริยาภูมิไวเกินชนิดล่าช้าเรียก lymphocyte เข้ามา หลอดเลือดรั่วและท่อน้ำเหลืองอุดจนเกิด exudate ที่ lymphocyte เด่น ADA สูง แต่เชื้อในน้ำน้อย\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"30\" width=\"100\" height=\"270\" rx=\"4\" class=\"sk\"/><text x=\"58\" y=\"22\" class=\"xs mid mu\">ปอด</text><line x1=\"108\" y1=\"30\" x2=\"108\" y2=\"300\" class=\"ln w2\"/><text x=\"150\" y=\"22\" class=\"xs mid mu\">ช่องเยื่อหุ้มปอด</text><rect x=\"192\" y=\"30\" width=\"40\" height=\"270\" rx=\"4\" class=\"bx\"/><line x1=\"192\" y1=\"30\" x2=\"192\" y2=\"300\" class=\"ln w2\"/><text x=\"212\" y=\"22\" class=\"xs mid mu\">ผนังอก</text><circle cx=\"212\" cy=\"84\" r=\"9\" class=\"ac\"/><text x=\"212\" y=\"68\" class=\"xs mid tac\">เส้นเลือด</text><path d=\"M192,262 L214,262 L214,300\" class=\"lok w3\"/><text x=\"212\" y=\"250\" class=\"xs mid tok\">lymph</text><rect x=\"110\" y=\"286\" width=\"80\" height=\"12\" rx=\"2\" class=\"wa ns\" data-x=\"3\"/><circle cx=\"84\" cy=\"126\" r=\"15\" class=\"ms\"/><text x=\"58\" y=\"160\" class=\"xs mid tms b\">จุดวัณโรค</text><text x=\"58\" y=\"174\" class=\"xs mid tms\">ใต้เยื่อหุ้ม</text><g data-s=\"1\"><path d=\"M98,124 L128,122\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"140\" cy=\"116\" r=\"3\" class=\"badf\"/><circle cx=\"150\" cy=\"132\" r=\"3\" class=\"badf\"/></g><g data-s=\"2\"><circle cx=\"124\" cy=\"62\" r=\"5\" class=\"waf\"/><circle cx=\"150\" cy=\"74\" r=\"5\" class=\"waf\"/><circle cx=\"174\" cy=\"58\" r=\"5\" class=\"waf\"/><circle cx=\"132\" cy=\"94\" r=\"5\" class=\"waf\"/><circle cx=\"166\" cy=\"100\" r=\"5\" class=\"waf\"/><circle cx=\"122\" cy=\"176\" r=\"5\" class=\"waf\"/><circle cx=\"156\" cy=\"168\" r=\"5\" class=\"waf\"/><circle cx=\"178\" cy=\"190\" r=\"5\" class=\"waf\"/><circle cx=\"140\" cy=\"206\" r=\"5\" class=\"waf\"/><circle cx=\"170\" cy=\"226\" r=\"5\" class=\"waf\"/><circle cx=\"206\" cy=\"90\" r=\"4.5\" class=\"waf\"><animateMotion dur=\"2.2s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C -22 20 -42 40 -56 60\"/></circle><circle cx=\"206\" cy=\"90\" r=\"4.5\" class=\"waf\"><animateMotion dur=\"2.2s\" begin=\"-0.73s\" repeatCount=\"indefinite\" path=\"M 0 0 C -22 20 -42 40 -56 60\"/></circle><circle cx=\"206\" cy=\"90\" r=\"4.5\" class=\"waf\"><animateMotion dur=\"2.2s\" begin=\"-1.47s\" repeatCount=\"indefinite\" path=\"M 0 0 C -22 20 -42 40 -56 60\"/></circle></g><g data-s=\"3\"><rect x=\"110\" y=\"120\" width=\"80\" height=\"178\" rx=\"2\" class=\"wa ns\" opacity=\".7\"/><line x1=\"110\" y1=\"120\" x2=\"190\" y2=\"120\" class=\"lwa w2 da\"/><text x=\"150\" y=\"112\" class=\"xs mid b twa\">exudate</text><path d=\"M203,84 L176,84\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><text x=\"210\" y=\"278\" class=\"lg mid b tbad\">✕</text></g><g data-s=\"3\"><circle cx=\"130\" cy=\"140\" r=\"5\" class=\"waf\"/><circle cx=\"160\" cy=\"150\" r=\"5\" class=\"waf\"/><circle cx=\"176\" cy=\"262\" r=\"5\" class=\"waf\"/><circle cx=\"128\" cy=\"250\" r=\"5\" class=\"waf\"/><circle cx=\"150\" cy=\"280\" r=\"5\" class=\"waf\"/></g><g data-s=\"4\"><path d=\"M188,40 L188,296\" class=\"lms w3 dt\"/><path d=\"M112,40 L112,296\" class=\"lms w3 dt\"/><text x=\"150\" y=\"316\" class=\"xs mid tms b\">fibrin คลุมผิว → mesothelial หลุดลงน้อย</text></g><rect x=\"246\" y=\"30\" width=\"188\" height=\"290\" rx=\"10\" class=\"bx\"/><text x=\"258\" y=\"50\" class=\"sm b\">ผลเจาะน้ำ (ค่อย ๆ เติม)</text><text x=\"258\" y=\"72\" class=\"xs i2\">จุดวัณโรคแตกเข้าช่อง</text><text x=\"258\" y=\"86\" class=\"xs i2\">เชื้อน้อยมาก (paucibacillary)</text><g data-s=\"2\"><text x=\"258\" y=\"110\" class=\"xs b twa\">CD4 type IV เรียก lymphocyte</text><text x=\"258\" y=\"125\" class=\"xs\">lymphocyte 50–90%</text><text x=\"258\" y=\"140\" class=\"xs\">ADA &gt; 40 U/L (T cell แบ่งตัว)</text></g><g data-s=\"3\"><text x=\"258\" y=\"164\" class=\"xs b twa\">รั่ว + ทางระบายอุด</text><text x=\"258\" y=\"179\" class=\"xs\">exudate สีฟาง · protein &gt; 2.5</text><text x=\"258\" y=\"194\" class=\"xs\">glucose &lt; serum</text></g><g data-s=\"4\"><text x=\"258\" y=\"218\" class=\"xs b tms\">mesothelial น้อย · eos &lt; 5%</text><text x=\"258\" y=\"233\" class=\"xs\">เจ็บแปลบช่วงแรก แล้วลดลง</text></g><g data-s=\"5\"><rect x=\"252\" y=\"246\" width=\"176\" height=\"66\" rx=\"8\" class=\"bad\"/><text x=\"260\" y=\"264\" class=\"xs b tbad\">smear &lt; 10% · Xpert 0.34</text><text x=\"260\" y=\"280\" class=\"xs\">ลบไม่ตัดโรค → pleural biopsy</text><text x=\"260\" y=\"296\" class=\"xs b\">ยา 2IRZE/4IR ไม่ให้ steroid</text></g></svg>",
+    "steps": [
+     {
+      "t": "จุดวัณโรคใต้เยื่อหุ้มแตกเข้าช่อง",
+      "cap": "จุดวัณโรคเล็ก ๆ ใต้ visceral pleura แตกเข้าช่องเยื่อหุ้มปอด ปล่อย **โปรตีนของเชื้อ** ออกมา — ตัวเชื้อเองมีน้อยมาก"
+     },
+     {
+      "t": "CD4 T cell — ภูมิไวเกินชนิดล่าช้า",
+      "cap": "โปรตีนเชื้อกระตุ้น **type IV (delayed) hypersensitivity** → lymphocyte หลั่งเข้าช่องเยื่อหุ้ม · T cell ที่แบ่งตัวเพิ่ม purine metabolism → **ADA สูง** (จึงพบน้อยในเอชไอวีที่ CD4 ต่ำ)"
+     },
+     {
+      "t": "หลอดเลือดรั่ว + ทางระบายอุด",
+      "cap": "การอักเสบทำให้หลอดเลือด **ซึมผ่านมากขึ้น** (โปรตีนรั่วออก = exudate) และ **อุดรู lymphatic** ของ parietal pleura ที่ปกติระบายน้ำ → น้ำสะสม **ข้างเดียว** ทำให้เหนื่อย"
+     },
+     {
+      "t": "fibrin คลุมผิวเยื่อหุ้ม",
+      "cap": "fibrin และการอักเสบคลุมผิว → **mesothelial cell หลุดลงน้ำน้อย** · eos < 5% (ไม่มีลม/เลือด) · parietal pleura อักเสบ → **เจ็บแปลบตอนหายใจช่วงแรก** แล้วเบาลงเมื่อน้ำแยกเยื่อสองชั้นออกจากกัน"
+     },
+     {
+      "t": "อ่านผลและสิ่งที่ออกสอบ",
+      "cap": "exudate lymphocyte เด่น + **ADA > 40** ในพื้นที่ชุก → วินิจฉัยได้ (DDx หลัก: มะเร็ง) · เชื้อในน้ำน้อย: **smear < 10% · Xpert 0.34** → ลบไม่ตัดโรค **pleural biopsy ไวที่สุด** · รักษา 6 เดือนทุกราย แม้น้ำหายเอง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-eptb-07",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "eptb-pott",
+    "title": "Pott's disease — จากจุดเล็กใกล้ endplate สู่ gibbus, cold abscess และกดไขสันหลัง",
+    "svg": "<svg viewBox=\"0 0 440 362\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: วัณโรคกระดูกสันหลังเริ่มที่ส่วนหน้าของตัวกระดูกใกล้ endplate ลามใต้ anterior longitudinal ligament ไปข้อถัดไปโดยหมอนรองยังอยู่ ตัวกระดูกยุบด้านหน้าเป็นหลังค่อมแหลม เกิดฝีเย็นตาม psoas และกดไขสันหลัง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"70\" y=\"18\" class=\"xs mid mu\">หน้า ←</text><text x=\"232\" y=\"18\" class=\"xs mid mu\">→ หลัง</text><rect x=\"120\" y=\"30\" width=\"70\" height=\"46\" rx=\"5\" class=\"bx\"/><rect x=\"194\" y=\"38\" width=\"18\" height=\"30\" rx=\"3\" class=\"sk\"/><text x=\"155\" y=\"58\" class=\"xs mid mu\">T11</text><rect x=\"120\" y=\"90\" width=\"70\" height=\"46\" rx=\"5\" class=\"bx\" data-x=\"3\"/><rect x=\"194\" y=\"98\" width=\"18\" height=\"30\" rx=\"3\" class=\"sk\"/><text x=\"155\" y=\"118\" class=\"xs mid mu\">T12</text><rect x=\"120\" y=\"150\" width=\"70\" height=\"46\" rx=\"5\" class=\"bx\" data-x=\"3\"/><rect x=\"194\" y=\"158\" width=\"18\" height=\"30\" rx=\"3\" class=\"sk\"/><text x=\"155\" y=\"178\" class=\"xs mid mu\">L1</text><rect x=\"120\" y=\"210\" width=\"70\" height=\"46\" rx=\"5\" class=\"bx\"/><rect x=\"194\" y=\"218\" width=\"18\" height=\"30\" rx=\"3\" class=\"sk\"/><text x=\"155\" y=\"238\" class=\"xs mid mu\">L2</text><rect x=\"124\" y=\"78\" width=\"62\" height=\"10\" rx=\"3\" class=\"ac\"/><rect x=\"124\" y=\"138\" width=\"62\" height=\"10\" rx=\"3\" class=\"ac\" data-x=\"3\"/><rect x=\"124\" y=\"198\" width=\"62\" height=\"10\" rx=\"3\" class=\"ac\"/><rect x=\"220\" y=\"26\" width=\"14\" height=\"240\" rx=\"6\" class=\"ac\"/><text x=\"227\" y=\"280\" class=\"xs mid tac\">ไขสันหลัง</text><line x1=\"117\" y1=\"28\" x2=\"117\" y2=\"258\" class=\"lmu w2\"/><g data-s=\"1\"><g class=\"pl\"><circle cx=\"134\" cy=\"126\" r=\"8\" class=\"badf\"/></g><text x=\"14\" y=\"120\" class=\"xs tbad b\">เชื้อมาทางเลือด</text><text x=\"14\" y=\"134\" class=\"xs tbad\">ฝังส่วนหน้า</text><text x=\"14\" y=\"148\" class=\"xs tbad\">ใกล้ endplate</text></g><g data-s=\"2\" data-x=\"3\"><path d=\"M120,126 L116,140 L116,152 L122,158\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"134\" cy=\"160\" r=\"7\" class=\"badf\"/><text x=\"14\" y=\"186\" class=\"xs b tbad\">ลามใต้ ALL</text><text x=\"14\" y=\"200\" class=\"xs tbad\">ไปข้อถัดไป</text><text x=\"204\" y=\"147\" class=\"xs end tok b\">หมอนรองยังอยู่</text></g><g data-s=\"3\"><polygon points=\"120,90 190,90 190,136 152,136 120,116\" class=\"bad\"/><polygon points=\"120,172 152,150 190,150 190,196 120,196\" class=\"bad\"/><polygon points=\"152,138 186,138 186,148 152,148\" class=\"ac\"/><circle cx=\"130\" cy=\"136\" r=\"3\" class=\"badf\"/><circle cx=\"140\" cy=\"144\" r=\"2.5\" class=\"badf\"/><circle cx=\"128\" cy=\"152\" r=\"3\" class=\"badf\"/><circle cx=\"142\" cy=\"130\" r=\"2.5\" class=\"badf\"/><text x=\"155\" y=\"128\" class=\"xs mid b tbad\">T12</text><text x=\"155\" y=\"180\" class=\"xs mid b tbad\">L1</text><text x=\"14\" y=\"186\" class=\"xs b tbad\">ส่วนหน้ายุบ</text><text x=\"14\" y=\"200\" class=\"xs tbad\">เป็นลิ่ม</text></g><g data-s=\"3\"><rect x=\"270\" y=\"30\" width=\"164\" height=\"146\" rx=\"10\" class=\"bx\"/><text x=\"352\" y=\"46\" class=\"xs mid mu\">มองด้านข้าง</text><circle cx=\"330\" cy=\"62\" r=\"10\" class=\"bx\"/><text x=\"296\" y=\"70\" class=\"xs mid mu\">หน้า</text><text x=\"400\" y=\"70\" class=\"xs mid mu\">หลัง</text><line x1=\"318\" y1=\"76\" x2=\"318\" y2=\"150\" class=\"lmu w2\"/><polyline points=\"342,76 342,98 366,114 344,130 344,150\" class=\"ln w3\"/><polyline points=\"342,98 366,114 344,130\" class=\"lbad w5\"/><text x=\"372\" y=\"112\" class=\"sm b tbad\">gibbus</text><text x=\"352\" y=\"168\" class=\"xs mid tbad\">มุมแหลมยื่นไปข้างหลัง</text></g><g data-s=\"4\"><ellipse cx=\"104\" cy=\"210\" rx=\"18\" ry=\"34\" class=\"ms\"/><path d=\"M100,240 C96,280 80,300 54,320\" class=\"lms w5\"/><ellipse cx=\"48\" cy=\"326\" rx=\"16\" ry=\"10\" class=\"ms\"/><text x=\"14\" y=\"270\" class=\"xs b tms\">psoas</text><text x=\"14\" y=\"284\" class=\"xs tms\">cold abscess</text><text x=\"74\" y=\"350\" class=\"xs b tms\">ก้อนใต้ขาหนีบ สะโพกงอ</text></g><g data-s=\"5\"><ellipse cx=\"214\" cy=\"150\" rx=\"10\" ry=\"20\" class=\"bad\"/><g class=\"pl\"><rect x=\"220\" y=\"130\" width=\"14\" height=\"40\" rx=\"6\" class=\"bad\"/></g></g><g data-s=\"5\"><rect x=\"270\" y=\"186\" width=\"164\" height=\"122\" rx=\"10\" class=\"bx\"/><text x=\"282\" y=\"206\" class=\"xs b tbad\">กดไขสันหลัง → ขาอ่อนแรง</text><text x=\"282\" y=\"221\" class=\"xs b tbad\">ชา ปัสสาวะผิดปกติ</text><text x=\"282\" y=\"244\" class=\"xs\">ผ่าตัดเมื่อ deficit คงอยู่/</text><text x=\"282\" y=\"259\" class=\"xs\">กลับซ้ำแม้ได้ยา หรือ</text><text x=\"282\" y=\"274\" class=\"xs\">spine ไม่มั่นคง</text><text x=\"282\" y=\"296\" class=\"xs b\">ยา 9–12 เดือน · ไม่ให้ steroid</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อฝังส่วนหน้าตัวกระดูกใกล้ endplate",
+      "cap": "เชื้อมาทางกระแสเลือด ฝังที่ **ส่วนหน้าของตัวกระดูกสันหลังใกล้ endplate** มักเป็น **ทรวงอกส่วนล่าง–เอวส่วนบน** · ปวดหลังเฉพาะจุด กดเจ็บ แย่ลงเป็นเดือน"
+     },
+     {
+      "t": "ลามใต้ anterior longitudinal ligament",
+      "cap": "เชื้อลามใต้ ALL ไปตัวกระดูกข้อถัดไป · **หมอนรองกระดูกค่อนข้างคงอยู่ในระยะแรก** (ต่างจาก pyogenic ที่ทำลายหมอนรองเร็ว) — ช้าเป็นเดือน"
+     },
+     {
+      "t": "ส่วนหน้ายุบ → gibbus",
+      "cap": "ส่วนหน้าของตัวกระดูกยุบ แต่ **posterior elements ยังอยู่** → กระดูกพับเป็นลิ่มหลายข้อติดกัน → **หลังค่อมเป็นมุมแหลม (gibbus)** ลักษณะเด่นของ Pott's disease"
+     },
+     {
+      "t": "Cold abscess ไหลตาม psoas",
+      "cap": "ฝีข้างกระดูกสันหลังไหลตามปลอกกล้ามเนื้อ **psoas** ลงมาโผล่ใต้ inguinal ligament → **ก้อนที่ขาหนีบ สะโพกงอ เดินกะเผลก** · ฝีใหญ่แต่ไม่ร้อนแดง = **cold abscess** · ยืนยันด้วย **CT-guided biopsy**"
+     },
+     {
+      "t": "กดไขสันหลัง — ข้อบ่งชี้ผ่าตัด",
+      "cap": "ฝี granulation tissue ชิ้นกระดูก หรือมุมค่อม **กดไขสันหลัง** (ช่องระดับอกแคบ) → ขาอ่อนแรง ชา ปัสสาวะผิดปกติ · **ผ่าตัดเมื่อ deficit คงอยู่/กลับซ้ำแม้ได้ยา หรือ spinal instability** · ยานาน **9–12 เดือน** ไม่ให้ steroid"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-eptb-08",
+   "after": "กลไก: ทำไมน้ำไขสันหลังและอาการเป็นแบบนี้",
+   "anim": {
+    "key": "eptb-tbm",
+    "title": "TB meningitis — exudate ที่ฐานสมองก่อปัญหาทีละชั้น",
+    "svg": "<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: exudate เหนียวที่ฐานสมองในวัณโรคเยื่อหุ้มสมองหุ้มเส้นประสาทสมองคู่ที่ 6 อุดทางไหลของน้ำไขสันหลังจนเกิด hydrocephalus ทำให้หลอดเลือดอักเสบจนสมองขาดเลือด และกระทบ hypothalamus จนเกิด SIADH\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"90\" y=\"14\" class=\"xs mid b mu\">ทางไหลของน้ำไขสันหลัง</text><rect x=\"30\" y=\"24\" width=\"120\" height=\"40\" rx=\"10\" class=\"wa\" data-x=\"3\"/><text x=\"90\" y=\"48\" class=\"xs mid b twa\" data-x=\"3\">Lateral ventricles</text><g data-s=\"3\"><rect x=\"14\" y=\"20\" width=\"152\" height=\"50\" rx=\"12\" class=\"bad\"/><text x=\"90\" y=\"42\" class=\"xs mid b tbad\">ventricles โต</text><text x=\"90\" y=\"58\" class=\"xs mid tbad\">= hydrocephalus</text></g><rect x=\"56\" y=\"80\" width=\"68\" height=\"22\" rx=\"6\" class=\"wa\"/><text x=\"90\" y=\"95\" class=\"xs mid twa\">3rd</text><rect x=\"83\" y=\"106\" width=\"14\" height=\"22\" rx=\"3\" class=\"wa\"/><text x=\"102\" y=\"121\" class=\"xs twa\">aqueduct</text><rect x=\"56\" y=\"132\" width=\"68\" height=\"22\" rx=\"6\" class=\"wa\"/><text x=\"90\" y=\"147\" class=\"xs mid twa\">4th</text><rect x=\"14\" y=\"168\" width=\"152\" height=\"54\" rx=\"10\" class=\"sk\"/><text x=\"22\" y=\"184\" class=\"xs b\">basal cisterns (ฐานสมอง)</text><rect x=\"14\" y=\"238\" width=\"152\" height=\"40\" rx=\"10\" class=\"wa\"/><text x=\"90\" y=\"254\" class=\"xs mid twa\">ผิวสมอง → ดูดกลับที่</text><text x=\"90\" y=\"269\" class=\"xs mid twa\">arachnoid granulation</text><g data-x=\"3\"><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 62 L 0 88 L 0 114 L 0 166 L 0 232\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-0.80s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 62 L 0 88 L 0 114 L 0 166 L 0 232\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-1.60s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 62 L 0 88 L 0 114 L 0 166 L 0 232\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-2.40s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 62 L 0 88 L 0 114 L 0 166 L 0 232\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-3.20s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 62 L 0 88 L 0 114 L 0 166 L 0 232\"/></circle></g><g data-s=\"1\"><ellipse cx=\"60\" cy=\"204\" rx=\"30\" ry=\"12\" class=\"msf\" opacity=\".75\"/><ellipse cx=\"120\" cy=\"202\" rx=\"34\" ry=\"13\" class=\"msf\" opacity=\".75\"/><circle cx=\"156\" cy=\"176\" r=\"6\" class=\"badf\"/></g><g data-s=\"2\"><path d=\"M20,212 L166,212\" class=\"lok w3\"/><text x=\"128\" y=\"236\" class=\"xs b tok\">CN VI</text></g><g data-s=\"3\"><text x=\"90\" y=\"234\" class=\"lg mid b tbad\">✕</text><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 166\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-1.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 166\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-2.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 166\"/></circle><circle cx=\"90\" cy=\"30\" r=\"3.2\" class=\"waf\"><animateMotion dur=\"4.0s\" begin=\"-3.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L 0 166\"/></circle></g><g data-s=\"4\"><path d=\"M150,170 L150,190 Q144,198 150,206 L150,224\" class=\"lbad w3\"/></g><g><text x=\"214\" y=\"40\" class=\"xs b tms\">1 · Rich focus แตก → exudate</text><text x=\"214\" y=\"55\" class=\"xs tms\">เหนียวที่ฐานสมอง (basal meningitis)</text></g><g data-s=\"2\"><text x=\"214\" y=\"82\" class=\"xs b tok\">2 · หุ้มเส้นประสาทสมอง</text><text x=\"214\" y=\"97\" class=\"xs\">CN VI palsy: วิ่งยาวผ่าน exudate</text><text x=\"214\" y=\"112\" class=\"xs\">และถูกยืดเมื่อ ICP สูง</text></g><g data-s=\"3\"><text x=\"214\" y=\"138\" class=\"xs b tbad\">3 · อุดทางไหล CSF</text><text x=\"214\" y=\"153\" class=\"xs\">hydrocephalus → ICP สูง ซึมลง</text></g><g data-s=\"4\"><text x=\"214\" y=\"180\" class=\"xs b tbad\">4 · หลอดเลือดผ่าน exudate อักเสบ</text><text x=\"214\" y=\"195\" class=\"xs\">→ infarct basal ganglia/int. capsule</text><text x=\"214\" y=\"212\" class=\"xs b tms\">hypothalamus → SIADH → Na ↓</text></g><g data-s=\"5\"><rect x=\"208\" y=\"226\" width=\"226\" height=\"128\" rx=\"10\" class=\"ac\"/><text x=\"218\" y=\"244\" class=\"sm b tac\">CSF (★★★)</text><text x=\"218\" y=\"262\" class=\"xs\">ใสระยะแรก → ขุ่น · ใยแมงมุม</text><text x=\"218\" y=\"278\" class=\"xs\">cell 100–500: PMN → mononuclear</text><text x=\"218\" y=\"294\" class=\"xs\">protein 100–500 mg/dL</text><text x=\"218\" y=\"310\" class=\"xs\">glucose 40–50 (≈50% ของเลือด)</text><text x=\"218\" y=\"330\" class=\"xs b tac\">steroid ทุกราย + ยา 12 เดือน</text><text x=\"218\" y=\"346\" class=\"xs\">HIV: รอ ART 4–8 สัปดาห์</text></g></svg>",
+    "steps": [
+     {
+      "t": "Rich focus แตก → exudate ที่ฐานสมอง",
+      "cap": "จุดวัณโรคใกล้ผิวสมอง/เยื่อหุ้มสมอง (**Rich focus**) แตกเข้า subarachnoid → **exudate เหนียวข้นที่ฐานสมอง (basal meningitis)** · อาการกึ่งเฉียบพลันเป็นสัปดาห์: ไข้ต่ำ ปวดศีรษะ อาเจียน คอแข็ง"
+     },
+     {
+      "t": "หุ้มเส้นประสาทสมอง → CN VI palsy",
+      "cap": "exudate หุ้มเส้นประสาทสมองที่วิ่งผ่านฐานสมอง — **CN VI เสียบ่อยที่สุด** เพราะวิ่งยาวผ่านบริเวณ exudate และถูกยืดเมื่อความดันในกะโหลกสูง → ตามองออกด้านข้างไม่ได้"
+     },
+     {
+      "t": "อุด basal cisterns → hydrocephalus",
+      "cap": "exudate อุดทางไหลของน้ำไขสันหลังที่ basal cisterns → น้ำคั่ง **ventricles โต (hydrocephalus)** → ความดันเปิดสูง ซึมลง · ปรึกษาประสาทศัลยแพทย์เพื่อระบาย"
+     },
+     {
+      "t": "Vasculitis → infarct · SIADH",
+      "cap": "หลอดเลือดที่ผ่าน exudate อักเสบ → **สมองขาดเลือด** มักที่ basal ganglia และ internal capsule · การอักเสบรอบ hypothalamus → **SIADH → Na ต่ำ** ซึมหรือชัก"
+     },
+     {
+      "t": "CSF และเหตุผลของ steroid",
+      "cap": "CSF: **lymphocyte/mononuclear เด่น (ระยะแรก PMN) · protein 100–500 · glucose ≈ 50% ของเลือด** · ความเสียหายส่วนใหญ่มาจาก **การอักเสบในกะโหลกที่ปิด** → **steroid ทุกราย** (ลดตายราว 25%) + ยา 12 เดือน"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-eptb-09",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "eptb-pericard",
+    "title": "TB pericarditis — จากน้ำล้อมหัวใจสู่เปลือกแข็ง (Kussmaul sign)",
+    "svg": "<svg viewBox=\"0 0 440 362\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อวัณโรคลามจากต่อมน้ำเหลืองในช่องอกเข้าเยื่อหุ้มหัวใจ น้ำสะสมช้าจนเกิด tamponade แล้วเยื่อหุ้มหนาขึ้นเป็นเปลือกแข็งรัดหัวใจ เกิด Kussmaul sign\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"14\" y=\"18\" class=\"xs b tms\">ต่อมน้ำเหลือง mediastinum (ข้างหลอดลม)</text><circle cx=\"236\" cy=\"34\" r=\"13\" class=\"ms\"/><g data-s=\"1\"><path d=\"M226,44 L212,70\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"232\" cy=\"40\" r=\"2.5\" class=\"badf\"><animateMotion dur=\"1.6s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L -20 32\"/></circle><circle cx=\"232\" cy=\"40\" r=\"2.5\" class=\"badf\"><animateMotion dur=\"1.6s\" begin=\"-0.80s\" repeatCount=\"indefinite\" path=\"M 0 0 L -20 32\"/></circle></g><rect x=\"22\" y=\"56\" width=\"230\" height=\"230\" rx=\"62\" class=\"wa\" data-s=\"2\" data-x=\"4\"/><rect x=\"22\" y=\"56\" width=\"230\" height=\"230\" rx=\"62\" class=\"lms w3\" data-s=\"3\" data-x=\"4\"/><g data-s=\"4\"><rect x=\"46\" y=\"80\" width=\"182\" height=\"182\" rx=\"44\" class=\"lms w5\"/><circle cx=\"60\" cy=\"120\" r=\"3\" class=\"msf\"/><circle cx=\"64\" cy=\"200\" r=\"3\" class=\"msf\"/><circle cx=\"120\" cy=\"82\" r=\"3\" class=\"msf\"/><circle cx=\"190\" cy=\"84\" r=\"3\" class=\"msf\"/><circle cx=\"226\" cy=\"150\" r=\"3\" class=\"msf\"/><circle cx=\"214\" cy=\"236\" r=\"3\" class=\"msf\"/><circle cx=\"110\" cy=\"262\" r=\"3\" class=\"msf\"/></g><rect x=\"46\" y=\"80\" width=\"182\" height=\"182\" rx=\"44\" class=\"ln\" data-x=\"2\"/><rect x=\"56\" y=\"90\" width=\"162\" height=\"162\" rx=\"38\" class=\"bx\"/><line x1=\"137\" y1=\"98\" x2=\"137\" y2=\"244\" class=\"ln w2\"/><text x=\"98\" y=\"176\" class=\"lg b mid\">RV</text><text x=\"178\" y=\"176\" class=\"lg b mid\">LV</text><g data-s=\"2\" data-x=\"4\"><text x=\"137\" y=\"280\" class=\"xs mid b twa\">น้ำสะสมช้า เยื่อยืดตาม</text></g><g data-s=\"4\"><text x=\"137\" y=\"280\" class=\"xs mid b tms\">เปลือกหนา หินปูน รัดหัวใจ</text></g><g data-s=\"2\"><rect x=\"266\" y=\"52\" width=\"168\" height=\"74\" rx=\"10\" class=\"wa\"/><text x=\"276\" y=\"70\" class=\"xs b twa\">Effusive → tamponade</text><text x=\"276\" y=\"86\" class=\"xs\">ความดันในถุง &gt; ห้องหัวใจ</text><text x=\"276\" y=\"101\" class=\"xs\">JVP ↑ · BP ↓ · ชีพจรเร็ว</text><text x=\"276\" y=\"116\" class=\"xs b\">pulsus paradoxus</text></g><g data-s=\"3\"><rect x=\"266\" y=\"132\" width=\"168\" height=\"40\" rx=\"10\" class=\"ms\"/><text x=\"276\" y=\"149\" class=\"xs b tms\">Effusive-constrictive</text><text x=\"276\" y=\"164\" class=\"xs\">น้ำยังอยู่ + เยื่อหนาขึ้น</text></g><g data-s=\"4\"><rect x=\"266\" y=\"178\" width=\"168\" height=\"112\" rx=\"10\" class=\"bad\"/><text x=\"276\" y=\"195\" class=\"xs b tbad\">Constrictive</text><rect x=\"330\" y=\"202\" width=\"34\" height=\"46\" rx=\"2\" class=\"wa ns\" opacity=\".6\"/><text x=\"347\" y=\"213\" class=\"xs mid twa\">เข้า</text><polyline points=\"276,240 330,240 342,218 356,216 364,240 424,240\" class=\"lbad w2\"/><text x=\"276\" y=\"264\" class=\"xs b\">JVP ขึ้นตอนหายใจเข้า</text><text x=\"276\" y=\"280\" class=\"xs\">= Kussmaul · ท้องมาน ตับโต</text></g><g data-s=\"5\"><rect x=\"14\" y=\"298\" width=\"420\" height=\"56\" rx=\"10\" class=\"ok\"/><text x=\"224\" y=\"316\" class=\"xs mid b tok\">ยา 2IRZE/4IR · เจาะระบายเมื่อ tamponade · ADA ≥ 40</text><text x=\"224\" y=\"332\" class=\"xs mid\">steroid = conditional (HIV ลบ) ลดการเกิด constriction</text><text x=\"224\" y=\"347\" class=\"xs mid\">constriction ไม่ดีขึ้นหลังยา → pericardiectomy</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อลามจากต่อมน้ำเหลืองในช่องอก",
+      "cap": "เชื้อมักลามมาจาก **ต่อมน้ำเหลือง mediastinum ข้างหลอดลม** (หรือมาทางกระแสเลือด) เข้าเยื่อหุ้มหัวใจ · พบมากในผู้ป่วย **HIV ลบ** (71.4% เทียบ 7.1%)"
+     },
+     {
+      "t": "Effusive — น้ำสะสมช้า → tamponade",
+      "cap": "น้ำสีฟาง/ปนเลือดสะสม **ช้าเป็นสัปดาห์ เยื่อหุ้มยืดตามได้** จึงมีน้ำมากก่อนเกิดอาการ · เมื่อความดันในถุงสูงกว่าห้องหัวใจขณะคลายตัว → หัวใจรับเลือดไม่ได้ → **JVP สูง BP ต่ำ pulsus paradoxus**"
+     },
+     {
+      "t": "Effusive-constrictive",
+      "cap": "น้ำยังอยู่ แต่ **เยื่อหุ้มเริ่มหนาเป็นพังผืด** — ระบายน้ำแล้วความดันในหัวใจยังไม่ลงปกติ"
+     },
+     {
+      "t": "Constrictive — เปลือกแข็ง → Kussmaul sign",
+      "cap": "เยื่อหุ้มหนาเป็นพังผืดและหินปูน · หายใจเข้าแรงดันลบในช่องอก **ส่งไม่ถึงหัวใจ** → เลือดดำที่ไหลกลับมากขึ้นเข้าไม่ได้ → **JVP กลับสูงขึ้นตอนหายใจเข้า (Kussmaul)** · ความดันดำสูงเรื้อรัง → **ท้องมาน ตับโต** เด่นกว่าขาบวม"
+     },
+     {
+      "t": "รักษาให้ทันก่อนกลายเป็นเปลือก",
+      "cap": "**2IRZE/4IR (6 เดือน)** · pericardiocentesis เมื่อ tamponade/วินิจฉัย (ADA ≥ 40–45) · **steroid แบบมีเงื่อนไข เฉพาะ HIV ลบ** ลด constriction (IMPI: ไม่ลดตายโดยรวม เพิ่มมะเร็งใน HIV) · constriction ที่ไม่ดีขึ้น → **pericardiectomy**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-rp-07",
+   "after": "ทำไมถึงมีอาการนี้ — pneumothorax",
+   "anim": {
+    "key": "rp-tension",
+    "title": "Tension pneumothorax — ลิ้นทางเดียว สู่ obstructive shock",
+    "svg": "<svg viewBox=\"0 0 440 336\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: bleb ที่ยอดปอดแตก ลมเข้าช่องเยื่อหุ้มปอดผ่านลิ้นทางเดียว ปอดแฟบ ความดันสูงดัน mediastinum และ trachea ไปฝั่งตรงข้าม กดหลอดเลือดดำใหญ่จนเลือดกลับหัวใจลด เกิด obstructive shock รักษาด้วยการเจาะระบายด้วยเข็มแล้วใส่ chest drain\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"26\" width=\"256\" height=\"232\" rx=\"36\" class=\"bx\"/><text x=\"64\" y=\"18\" class=\"xs mid mu\">ข้างที่เป็น</text><path d=\"M134,40 C90,34 30,52 24,130 L32,134 C44,80 96,62 132,70 Z\" class=\"wa\" data-x=\"2\"/><path d=\"M132,70 C100,62 48,80 36,132 C28,182 34,226 60,236 L132,236 Z\" class=\"sk\" data-x=\"2\"/><g data-x=\"2\"><g class=\"pl\"><circle cx=\"98\" cy=\"66\" r=\"6\" class=\"bad\"/></g><text x=\"70\" y=\"56\" class=\"xs end tbad b\">bleb แตก</text></g><path d=\"M136,36 C90,30 26,50 22,130 C18,190 26,240 58,250 L136,250 Z\" class=\"wa\" data-s=\"2\"/><path d=\"M134,106 C116,100 94,118 92,150 C90,186 104,206 134,208 Z\" class=\"sk\" data-s=\"2\"/><g data-s=\"2\"><text x=\"56\" y=\"150\" class=\"lg mid b twa\">ลม</text><path d=\"M118,124 L96,110\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"72\" y=\"100\" class=\"xs mid twa b\">เข้า</text><text x=\"104\" y=\"228\" class=\"xs mid tbad b\">ออกไม่ได้ ✕</text></g><path d=\"M156,70 C186,62 236,80 248,130 C258,180 252,226 226,236 L156,236 Z\" class=\"sk\" data-x=\"3\"/><path d=\"M204,76 C228,72 252,96 256,138 C262,186 254,226 234,236 L206,236 Z\" class=\"sk\" data-s=\"3\"/><line x1=\"144\" y1=\"4\" x2=\"144\" y2=\"82\" class=\"lmu w5\" data-x=\"3\"/><path d=\"M144,4 L144,34 Q148,58 176,82\" class=\"lbad w5\" data-s=\"3\"/><ellipse cx=\"150\" cy=\"196\" rx=\"34\" ry=\"30\" class=\"ac\" data-x=\"3\"/><ellipse cx=\"194\" cy=\"200\" rx=\"34\" ry=\"30\" class=\"ac\" data-s=\"3\"/><g data-s=\"3\"><path d=\"M150,176 L176,180\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"4\"><path d=\"M196,258 Q186,246 200,236\" class=\"lbad w3\"/><text x=\"212\" y=\"252\" class=\"sm b tbad\">✕</text><line x1=\"122\" y1=\"2\" x2=\"122\" y2=\"22\" class=\"lwa w5\"/><line x1=\"166\" y1=\"2\" x2=\"166\" y2=\"22\" class=\"lwa w5\"/></g><g data-s=\"5\"><line x1=\"2\" y1=\"160\" x2=\"34\" y2=\"160\" class=\"ln w3\"/><circle cx=\"30\" cy=\"160\" r=\"2.6\" class=\"waf\"><animateMotion dur=\"1.0s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 L -28 0\"/></circle><circle cx=\"30\" cy=\"160\" r=\"2.6\" class=\"waf\"><animateMotion dur=\"1.0s\" begin=\"-0.50s\" repeatCount=\"indefinite\" path=\"M 0 0 L -28 0\"/></circle><text x=\"8\" y=\"178\" class=\"xs b\">เข็ม</text></g><g><text x=\"282\" y=\"40\" class=\"xs b\">1 · bleb แตก ลมเข้าช่องอก</text><text x=\"282\" y=\"55\" class=\"xs\">เจ็บแปลบ เคาะโปร่ง BS ↓</text></g><g data-s=\"2\"><text x=\"282\" y=\"80\" class=\"xs b twa\">2 · ลิ้นทางเดียว</text><text x=\"282\" y=\"95\" class=\"xs\">หายใจเข้าลมเข้า ออกไม่ได้</text><text x=\"282\" y=\"110\" class=\"xs\">ความดันในช่องอกสูงขึ้นทุกครั้ง</text></g><g data-s=\"3\"><text x=\"282\" y=\"135\" class=\"xs b tbad\">3 · mediastinum ถูกดัน</text><text x=\"282\" y=\"150\" class=\"xs\">trachea เบี่ยงไปฝั่งตรงข้าม</text><text x=\"282\" y=\"165\" class=\"xs\">ปอดอีกข้างถูกกด</text></g><g data-s=\"4\"><text x=\"282\" y=\"190\" class=\"xs b tbad\">4 · SVC/IVC ถูกกด/บิด</text><text x=\"282\" y=\"205\" class=\"xs\">เลือดกลับหัวใจ ↓ → CO ↓</text><text x=\"282\" y=\"220\" class=\"xs\">BP ตก คอโป่ง</text><text x=\"282\" y=\"235\" class=\"xs b tbad\">= obstructive shock</text></g><g data-s=\"5\"><rect x=\"14\" y=\"268\" width=\"420\" height=\"60\" rx=\"10\" class=\"ok\"/><text x=\"224\" y=\"287\" class=\"sm mid b tok\">วินิจฉัยทางคลินิก — ห้ามรอเอกซเรย์</text><text x=\"224\" y=\"304\" class=\"xs mid\">needle decompression ช่องซี่โครง 4–5 แนว anterior axillary</text><text x=\"224\" y=\"319\" class=\"xs mid\">(หรือช่อง 2 mid-clavicular) → ใส่ chest drain ทุกราย</text></g></svg>",
+    "steps": [
+     {
+      "t": "Bleb แตก — ลมเข้าช่องเยื่อหุ้มปอด",
+      "cap": "visceral pleura ฉีก (bleb ที่ยอดปอด) → ลมเข้าช่องเยื่อหุ้มปอด → parietal pleura ถูกยืด: **เจ็บแปลบฉับพลันข้างเดียว** · ลมกั้นระหว่างปอดกับผนังอก → **เคาะโปร่ง เสียงหายใจและ fremitus ลด**"
+     },
+     {
+      "t": "ลิ้นทางเดียว — ลมเข้าแต่ไม่ออก",
+      "cap": "รอยฉีกทำหน้าที่เป็น **ลิ้นทางเดียว**: หายใจเข้าลมเข้าช่องอก หายใจออกลมออกไม่ได้ → ความดันในช่องอกสะสมเป็นบวกทุกครั้ง · ปอดแฟบแต่เลือดยังไหลผ่าน → shunt → SpO₂ ลด · บนเครื่องช่วยหายใจเกิดง่ายกว่า"
+     },
+     {
+      "t": "Mediastinal shift",
+      "cap": "ความดันบวกดัน mediastinum → **trachea เบี่ยงไปฝั่งตรงข้าม** และกดปอดอีกข้าง — ข้อแยกจาก cardiac tamponade (ซึ่ง trachea ตรงและเคาะปอดปกติ)"
+     },
+     {
+      "t": "เลือดกลับหัวใจไม่ได้ → obstructive shock",
+      "cap": "mediastinum ที่ถูกดันกด/บิด **SVC และ IVC** → venous return ลด → **CO ตก ความดันต่ำ** · เลือดค้างในหลอดเลือดดำ → **คอโป่ง** = obstructive shock"
+     },
+     {
+      "t": "วินิจฉัยทางคลินิก — ระบายทันที",
+      "cap": "trachea เบี่ยง + BP ตก + คอโป่ง → **ห้ามรอฟิล์ม** · **needle decompression** ช่องซี่โครงที่ 4–5 anterior axillary line (หรือช่องที่ 2 mid-clavicular) แล้ว **ใส่ chest drain เสมอ** ใน safety triangle"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-rp-10",
+   "after": "กลไก: ภาวะแทรกซ้อนหลังเจาะ",
+   "anim": {
+    "key": "rp-reexp",
+    "title": "Re-expansion pulmonary edema — ระบายน้ำเร็วเกินแล้วน้ำกลับท่วมปอด",
+    "svg": "<svg viewBox=\"0 0 440 340\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ปอดที่แฟบนานจากน้ำในเยื่อหุ้มปอด เมื่อระบายเร็วหรือมากปอดพองกลับทันที ความดันในช่องเยื่อหุ้มปอดลบมาก ดึงน้ำออกจากหลอดเลือดที่รั่วเกิดน้ำท่วมถุงลมเฉพาะข้างที่เจาะ ป้องกันโดยหยุดเมื่อแน่นอกหรือไอและไม่เกิน 1.5 ลิตร\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"24\" width=\"200\" height=\"242\" rx=\"30\" class=\"bx\"/><text x=\"114\" y=\"16\" class=\"xs mid mu\">ข้างที่เจาะ</text><path d=\"M24,104 Q114,120 204,104 L204,250 Q114,262 24,250 Z\" class=\"wa\" data-x=\"2\"/><text x=\"114\" y=\"190\" class=\"sm mid b twa\" data-x=\"2\">น้ำมาก (นาน)</text><path d=\"M204,36 C176,36 152,56 152,74 C152,94 176,100 204,98 Z\" class=\"sk\" data-x=\"2\"/><text x=\"146\" y=\"70\" class=\"xs end b\" data-x=\"2\">ปอดแฟบนาน</text><text x=\"146\" y=\"84\" class=\"xs end\" data-x=\"2\">เลือดไปน้อย surfactant ↓</text><path d=\"M24,226 Q114,238 204,226 L204,250 Q114,262 24,250 Z\" class=\"wa\" data-s=\"2\"/><path d=\"M190,32 C120,30 36,58 28,136 C22,186 36,218 66,222 L204,222 L204,52 Q204,34 190,32 Z\" class=\"sk\" data-s=\"2\"/><g data-s=\"2\" data-x=\"3\"><text x=\"110\" y=\"120\" class=\"xs mid b\">ปอดพองกลับทันที</text></g><path d=\"M170,240 L214,240 L258,240 L258,254\" class=\"ln w2\"/><rect x=\"234\" y=\"254\" width=\"50\" height=\"64\" rx=\"6\" class=\"bx\"/><rect x=\"236\" y=\"304\" width=\"46\" height=\"12\" rx=\"3\" class=\"wa ns\" data-x=\"2\"/><g data-s=\"2\"><rect x=\"236\" y=\"266\" width=\"46\" height=\"50\" rx=\"3\" class=\"wa ns\"/><path d=\"M176,240 L258,240 L258,256\" class=\"lwa w2 fl\"/><text x=\"259\" y=\"334\" class=\"xs mid b tbad\">&gt; 1.5 L เร็ว</text></g><text x=\"372\" y=\"30\" class=\"xs mid b\">ความดันในช่อง</text><text x=\"372\" y=\"44\" class=\"xs mid b\">เยื่อหุ้มปอด</text><line x1=\"340\" y1=\"60\" x2=\"340\" y2=\"250\" class=\"ln w2\"/><line x1=\"334\" y1=\"72\" x2=\"346\" y2=\"72\" class=\"ln w2\"/><text x=\"352\" y=\"76\" class=\"xs\">0</text><g data-x=\"2\"><polygon points=\"340,96 328,90 328,102\" class=\"inkf\"/><text x=\"352\" y=\"100\" class=\"xs\">ลบเล็กน้อย</text></g><g data-s=\"2\"><g class=\"pl\"><polygon points=\"340,226 328,220 328,232\" class=\"badf\"/></g><text x=\"352\" y=\"216\" class=\"xs b tbad\">ลบมาก</text><text x=\"352\" y=\"230\" class=\"xs tbad\">แน่นอก ไอ</text><path d=\"M340,104 L340,206\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"3\"><circle cx=\"87.4\" cy=\"106.6\" r=\"2.6\" class=\"waf\"/><circle cx=\"103.4\" cy=\"106.9\" r=\"2.6\" class=\"waf\"/><circle cx=\"116.4\" cy=\"108.4\" r=\"2.6\" class=\"waf\"/><circle cx=\"136.5\" cy=\"110.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"150.6\" cy=\"107.3\" r=\"2.6\" class=\"waf\"/><circle cx=\"59.2\" cy=\"122.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"72.0\" cy=\"121.6\" r=\"2.6\" class=\"waf\"/><circle cx=\"87.3\" cy=\"126.6\" r=\"2.6\" class=\"waf\"/><circle cx=\"106.0\" cy=\"125.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"120.8\" cy=\"122.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"132.9\" cy=\"124.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"150.4\" cy=\"126.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"166.3\" cy=\"121.5\" r=\"2.6\" class=\"waf\"/><circle cx=\"59.6\" cy=\"140.0\" r=\"2.6\" class=\"waf\"/><circle cx=\"74.0\" cy=\"137.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"88.8\" cy=\"136.5\" r=\"2.6\" class=\"waf\"/><circle cx=\"106.6\" cy=\"141.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"119.3\" cy=\"137.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"136.5\" cy=\"139.4\" r=\"2.6\" class=\"waf\"/><circle cx=\"151.3\" cy=\"141.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"164.1\" cy=\"138.5\" r=\"2.6\" class=\"waf\"/><circle cx=\"179.6\" cy=\"138.6\" r=\"2.6\" class=\"waf\"/><circle cx=\"57.0\" cy=\"152.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"75.9\" cy=\"151.3\" r=\"2.6\" class=\"waf\"/><circle cx=\"86.3\" cy=\"154.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"102.7\" cy=\"154.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"118.8\" cy=\"153.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"137.0\" cy=\"152.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"148.5\" cy=\"152.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"164.8\" cy=\"152.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"178.1\" cy=\"155.5\" r=\"2.6\" class=\"waf\"/><circle cx=\"57.9\" cy=\"169.4\" r=\"2.6\" class=\"waf\"/><circle cx=\"76.4\" cy=\"166.6\" r=\"2.6\" class=\"waf\"/><circle cx=\"86.4\" cy=\"167.4\" r=\"2.6\" class=\"waf\"/><circle cx=\"105.6\" cy=\"169.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"117.4\" cy=\"168.0\" r=\"2.6\" class=\"waf\"/><circle cx=\"132.1\" cy=\"168.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"146.3\" cy=\"170.2\" r=\"2.6\" class=\"waf\"/><circle cx=\"166.4\" cy=\"171.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"75.4\" cy=\"186.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"86.1\" cy=\"182.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"106.8\" cy=\"185.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"118.5\" cy=\"186.7\" r=\"2.6\" class=\"waf\"/><circle cx=\"134.7\" cy=\"185.9\" r=\"2.6\" class=\"waf\"/><circle cx=\"147.8\" cy=\"182.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"163.7\" cy=\"181.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"103.3\" cy=\"201.8\" r=\"2.6\" class=\"waf\"/><circle cx=\"118.0\" cy=\"196.1\" r=\"2.6\" class=\"waf\"/><circle cx=\"131.3\" cy=\"197.0\" r=\"2.6\" class=\"waf\"/><text x=\"114\" y=\"214\" class=\"xs mid b twa\">น้ำท่วมถุงลม เฉพาะข้างที่เจาะ</text></g><g data-s=\"3\"><text x=\"394\" y=\"140\" class=\"xs mid b twa\">ดึงน้ำออกจาก</text><text x=\"394\" y=\"154\" class=\"xs mid twa\">หลอดเลือด +</text><text x=\"394\" y=\"168\" class=\"xs mid twa\">reperfusion รั่ว</text></g><g data-s=\"4\"><rect x=\"14\" y=\"280\" width=\"210\" height=\"50\" rx=\"8\" class=\"ok\"/><text x=\"119\" y=\"298\" class=\"xs mid b tok\">หยุดเมื่อแน่นอก ไอ เจ็บ</text><text x=\"119\" y=\"314\" class=\"xs mid b tok\">ไม่เกิน ~1.5 L ต่อครั้ง</text><rect x=\"296\" y=\"270\" width=\"138\" height=\"60\" rx=\"8\" class=\"sk\"/><text x=\"365\" y=\"288\" class=\"xs mid b\">แยก vasovagal:</text><text x=\"365\" y=\"303\" class=\"xs mid\">ชีพจรช้า ความดันต่ำ</text><text x=\"365\" y=\"318\" class=\"xs mid\">ฟังปอดเท่ากัน</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปอดแฟบนานใต้น้ำปริมาณมาก",
+      "cap": "น้ำปริมาณมากกดปอดให้แฟบนาน → เนื้อปอดส่วนนั้น **เลือดไปเลี้ยงน้อย และ surfactant ลดลง** · ความดันในช่องเยื่อหุ้มปอดยังลบเพียงเล็กน้อย"
+     },
+     {
+      "t": "ระบายเร็ว/มาก → ปอดพองกลับทันที",
+      "cap": "ดูดน้ำออกเร็วหรือมากเกิน → ปอดที่แข็งพองตามไม่ทัน **ความดันในช่องอกกลายเป็นลบมาก** · อาการ **แน่นอกหรือไอระหว่างระบาย** คือสัญญาณเตือนของภาวะนี้"
+     },
+     {
+      "t": "Re-expansion pulmonary edema",
+      "cap": "แรงดูดลบดึงน้ำออกจากหลอดเลือด + หลอดเลือดที่เพิ่งได้เลือดกลับ (reperfusion) **รั่ว** → น้ำท่วมถุงลม: ไอ แน่นอก hypoxia และ **ฝ้าใหม่เฉพาะข้างที่เจาะ** → ให้ O₂ ประคับประคอง"
+     },
+     {
+      "t": "ป้องกันและแยกจากภาวะอื่น",
+      "cap": "**หยุดเมื่อแน่นอก ไอ หรือเจ็บ** และไม่ระบายเกิน **~1.5 L ต่อครั้ง** · แยก **vasovagal**: หน้ามืด **ชีพจรช้า** ฟังปอดเท่ากัน (pneumothorax/เลือดออกชีพจรเร็ว) · แทงชิดขอบบนซี่โครงล่างกัน hemothorax"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "chest-rp-11",
+   "after": "กลไก: ทำไมน้ำแต่ละแบบมีลักษณะเฉพาะ",
+   "anim": {
+    "key": "rp-empyema",
+    "title": "ทำไม empyema glucose ต่ำ pH ต่ำ LDH สูง — และเมื่อไรต้องใส่สาย",
+    "svg": "<svg viewBox=\"0 0 440 364\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: น้ำในเยื่อหุ้มปอดข้างปอดอักเสบ เมื่อแบคทีเรียและ neutrophil เข้ามาใช้ glucose แบบไม่ใช้ออกซิเจน glucose ลด pH ต่ำกว่า 7.2 เซลล์ตายปล่อย LDH สูง และ fibrin สร้างผนังกั้น จึงต้องใส่ chest drain\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"30\" width=\"46\" height=\"210\" rx=\"6\" class=\"sk\"/><text x=\"37\" y=\"22\" class=\"xs mid mu\">ปอดอักเสบ</text><g><circle cx=\"28\" cy=\"70\" r=\"3\" class=\"muf\"/><circle cx=\"44\" cy=\"92\" r=\"3\" class=\"muf\"/><circle cx=\"30\" cy=\"120\" r=\"3\" class=\"muf\"/><circle cx=\"46\" cy=\"150\" r=\"3\" class=\"muf\"/><circle cx=\"28\" cy=\"182\" r=\"3\" class=\"muf\"/><circle cx=\"44\" cy=\"210\" r=\"3\" class=\"muf\"/></g><rect x=\"62\" y=\"30\" width=\"160\" height=\"210\" rx=\"8\" class=\"wa\"/><text x=\"142\" y=\"22\" class=\"xs mid mu\">ช่องเยื่อหุ้มปอด</text><rect x=\"80\" y=\"56\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\"/><rect x=\"116\" y=\"50\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"164\" y=\"58\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"196\" y=\"76\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"92\" y=\"96\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"3\"/><rect x=\"146\" y=\"92\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"186\" y=\"116\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"76\" y=\"146\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\"/><rect x=\"120\" y=\"136\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"3\"/><rect x=\"166\" y=\"156\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"96\" y=\"192\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"146\" y=\"196\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><rect x=\"192\" y=\"206\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"3\"/><rect x=\"80\" y=\"222\" width=\"8\" height=\"8\" rx=\"1\" class=\"ok\" data-x=\"2\"/><text x=\"142\" y=\"258\" class=\"xs mid tok\">▪ glucose</text><g data-s=\"2\"><circle cx=\"110\" cy=\"80\" r=\"8\" class=\"bx\"/><circle cx=\"108\" cy=\"79\" r=\"2.4\" class=\"inkf\"/><circle cx=\"113\" cy=\"82\" r=\"2.4\" class=\"inkf\"/><circle cx=\"160\" cy=\"128\" r=\"8\" class=\"bx\"/><circle cx=\"158\" cy=\"127\" r=\"2.4\" class=\"inkf\"/><circle cx=\"163\" cy=\"130\" r=\"2.4\" class=\"inkf\"/><circle cx=\"100\" cy=\"176\" r=\"8\" class=\"bx\"/><circle cx=\"98\" cy=\"175\" r=\"2.4\" class=\"inkf\"/><circle cx=\"103\" cy=\"178\" r=\"2.4\" class=\"inkf\"/><circle cx=\"182\" cy=\"190\" r=\"8\" class=\"bx\"/><circle cx=\"180\" cy=\"189\" r=\"2.4\" class=\"inkf\"/><circle cx=\"185\" cy=\"192\" r=\"2.4\" class=\"inkf\"/><circle cx=\"140\" cy=\"66\" r=\"8\" class=\"bx\"/><circle cx=\"138\" cy=\"65\" r=\"2.4\" class=\"inkf\"/><circle cx=\"143\" cy=\"68\" r=\"2.4\" class=\"inkf\"/><circle cx=\"70\" cy=\"120\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 40 -30 90 -10 140 -30\"/></circle><circle cx=\"70\" cy=\"120\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-0.65s\" repeatCount=\"indefinite\" path=\"M 0 0 C 40 -30 90 -10 140 -30\"/></circle><circle cx=\"70\" cy=\"120\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-1.30s\" repeatCount=\"indefinite\" path=\"M 0 0 C 40 -30 90 -10 140 -30\"/></circle><circle cx=\"70\" cy=\"120\" r=\"3\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"-1.95s\" repeatCount=\"indefinite\" path=\"M 0 0 C 40 -30 90 -10 140 -30\"/></circle><circle cx=\"70\" cy=\"200\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-0.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 50 -30 100 10 144 -40\"/></circle><circle cx=\"70\" cy=\"200\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-1.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 50 -30 100 10 144 -40\"/></circle><circle cx=\"70\" cy=\"200\" r=\"3\" class=\"badf\"><animateMotion dur=\"3.0s\" begin=\"-2.00s\" repeatCount=\"indefinite\" path=\"M 0 0 C 50 -30 100 10 144 -40\"/></circle><circle cx=\"126\" cy=\"110\" r=\"2.5\" class=\"msf\"/><circle cx=\"176\" cy=\"92\" r=\"2.5\" class=\"msf\"/><circle cx=\"92\" cy=\"132\" r=\"2.5\" class=\"msf\"/><circle cx=\"140\" cy=\"172\" r=\"2.5\" class=\"msf\"/><circle cx=\"196\" cy=\"150\" r=\"2.5\" class=\"msf\"/><circle cx=\"116\" cy=\"216\" r=\"2.5\" class=\"msf\"/><text x=\"142\" y=\"274\" class=\"xs mid tms\">● lactate + CO₂ ค้าง</text></g><g data-s=\"3\"><path d=\"M64,112 Q140,126 220,104\" class=\"lmu w2\"/><path d=\"M64,170 Q140,150 220,178\" class=\"lmu w2\"/><path d=\"M142,32 Q130,100 150,238\" class=\"lmu w2 da\"/><text x=\"142\" y=\"290\" class=\"xs mid b\">fibrin → ผนังกั้น (loculation)</text></g><text x=\"240\" y=\"40\" class=\"xs b\">glucose</text><rect x=\"240\" y=\"46\" width=\"180\" height=\"12\" rx=\"3\" class=\"ok\" data-x=\"2\"/><rect x=\"240\" y=\"46\" width=\"40\" height=\"12\" rx=\"3\" class=\"bad\" data-s=\"2\"/><text x=\"426\" y=\"56\" class=\"xs end tok\" data-x=\"2\">ปกติ</text><text x=\"426\" y=\"56\" class=\"xs end b tbad\" data-s=\"2\">&lt; 40–60 mg/dL</text><text x=\"240\" y=\"92\" class=\"xs b\">pH</text><line x1=\"240.0\" y1=\"112\" x2=\"420.0\" y2=\"112\" class=\"ln w2\"/><line x1=\"240.0\" y1=\"107\" x2=\"240.0\" y2=\"117\" class=\"ln\"/><text x=\"240.0\" y=\"130\" class=\"xs mid mu\">7.0</text><line x1=\"276.0\" y1=\"107\" x2=\"276.0\" y2=\"117\" class=\"ln\"/><text x=\"276.0\" y=\"130\" class=\"xs mid mu\">7.1</text><line x1=\"312.0\" y1=\"107\" x2=\"312.0\" y2=\"117\" class=\"ln\"/><text x=\"312.0\" y=\"130\" class=\"xs mid b tbad\">7.2</text><line x1=\"348.0\" y1=\"107\" x2=\"348.0\" y2=\"117\" class=\"ln\"/><text x=\"348.0\" y=\"130\" class=\"xs mid mu\">7.3</text><line x1=\"384.0\" y1=\"107\" x2=\"384.0\" y2=\"117\" class=\"ln\"/><text x=\"384.0\" y=\"130\" class=\"xs mid mu\">7.4</text><line x1=\"420.0\" y1=\"107\" x2=\"420.0\" y2=\"117\" class=\"ln\"/><text x=\"420.0\" y=\"130\" class=\"xs mid mu\">7.5</text><line x1=\"312.0\" y1=\"98\" x2=\"312.0\" y2=\"122\" class=\"lbad w2 da\"/><g data-x=\"2\"><polygon points=\"355.2,106 349.2,94 361.2,94\" class=\"okf\"/><text x=\"355.2\" y=\"90\" class=\"xs mid tok\">&gt; 7.2</text></g><g data-s=\"2\"><polygon points=\"268.8,106 262.8,94 274.8,94\" class=\"badf\"/><text x=\"268.8\" y=\"90\" class=\"xs mid b tbad\">&lt; 7.2</text></g><text x=\"240\" y=\"160\" class=\"xs b\">LDH</text><rect x=\"240\" y=\"166\" width=\"30\" height=\"12\" rx=\"3\" class=\"sk\" data-x=\"3\"/><rect x=\"240\" y=\"166\" width=\"180\" height=\"12\" rx=\"3\" class=\"bad\" data-s=\"3\"/><text x=\"426\" y=\"192\" class=\"xs end b tbad\" data-s=\"3\">&gt; 1,000 IU/L</text><g data-s=\"3\"><text x=\"240\" y=\"212\" class=\"xs i2\">เซลล์ตายแตก ปล่อย LDH</text></g><g data-x=\"2\"><rect x=\"236\" y=\"226\" width=\"198\" height=\"30\" rx=\"8\" class=\"ok\"/><text x=\"335\" y=\"245\" class=\"xs mid b tok\">uncomplicated: ยาปฏิชีวนะพอ</text></g><g data-s=\"4\"><rect x=\"14\" y=\"300\" width=\"420\" height=\"58\" rx=\"10\" class=\"bad\"/><text x=\"224\" y=\"318\" class=\"xs mid b tbad\">ใส่ chest drain: หนอง/ขุ่น · Gram/culture บวก · pH &lt; 7.2</text><text x=\"224\" y=\"334\" class=\"xs mid\">(ไม่มีเครื่องวัด pH ใช้ glucose &lt; 72) · ระบายไม่ออก → tPA + DNase/VATS</text><text x=\"224\" y=\"350\" class=\"xs mid\">ยาคลุม anaerobe · เลี่ยง aminoglycoside (เข้าหนองไม่ดี ไม่ทำงานในกรด)</text></g></svg>",
+    "steps": [
+     {
+      "t": "Uncomplicated — exudate ใส",
+      "cap": "ปอดอักเสบข้างเคียงทำให้เยื่อหุ้มปอดรั่ว → exudate ใส **pH > 7.2 glucose ปกติ ไม่พบเชื้อ** → ยาปฏิชีวนะอย่างเดียวพอ"
+     },
+     {
+      "t": "แบคทีเรีย + neutrophil กิน glucose",
+      "cap": "เชื้อบุกเข้าช่องเยื่อหุ้ม neutrophil ตามมา → ใช้ glucose แบบ anaerobic ปล่อย **lactate และ CO₂ ที่ระบายออกไม่ได้** → **glucose < 40–60 · pH < 7.2** = complicated parapneumonic"
+     },
+     {
+      "t": "เซลล์ตาย + fibrin",
+      "cap": "neutrophil ที่ตายแตกปล่อย **LDH > 1,000** · fibrin สร้าง **ผนังกั้นเป็นช่อง (loculation)** — อัลตราซาวด์เห็น septation · ต่อไปเป็นหนองชัด = empyema"
+     },
+     {
+      "t": "เมื่อไรต้องใส่สาย",
+      "cap": "**หนองหรือขุ่นมาก · Gram/culture บวก · pH < 7.2** (ไม่มี pH ใช้ glucose < 72) → **chest drain** (สายเล็ก 12–14 F ใต้ US ได้) · ระบายไม่ออก → **tPA + DNase** หรือ VATS · ยาคลุม anaerobe นาน 2–6 สัปดาห์ **เลี่ยง aminoglycoside**"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "chest-03-01",
+   "name": "My Chicken Hez TB",
+   "what": "โรคที่ต้องใช้ airborne precautions (ห้องความดันลบ + N95)",
+   "lines": [
+    [
+     "My",
+     "**M**easles — หัด"
+    ],
+    [
+     "Chicken",
+     "**Chicken**pox — อีสุกอีใส (varicella)"
+    ],
+    [
+     "Hez",
+     "**He**rpes **z**oster ชนิดแพร่กระจาย (disseminated)"
+    ],
+    [
+     "TB",
+     "**TB** — วัณโรคปอด/กล่องเสียง"
+    ]
+   ],
+   "note": "บางตำราย่อเป็น MTV (Measles, TB, Varicella) · วัณโรคเป็น airborne ไม่ใช่ droplet — surgical mask ใส่ที่ผู้ป่วย ส่วนบุคลากรต้องใช้ N95",
+   "src": "หลักจำ infection control ที่ใช้แพร่หลายในการสอบพยาบาล/NCLEX และหนังสือทบทวนการพยาบาล"
+  },
+  {
+   "sec": "chest-03-06",
+   "name": "RIPE",
+   "what": "ยาแนวที่หนึ่ง 4 ตัวในระยะเข้มข้น (2HRZE)",
+   "lines": [
+    [
+     "R",
+     "**R**ifampicin (R)"
+    ],
+    [
+     "I",
+     "**I**soniazid (H)"
+    ],
+    [
+     "P",
+     "**P**yrazinamide (Z)"
+    ],
+    [
+     "E",
+     "**E**thambutol (E)"
+    ]
+   ],
+   "note": "แนวทางไทยเขียนเป็น 2HRZE/4HR (H = isoniazid) — ระยะต่อเนื่องเหลือแค่ R กับ H",
+   "src": "First Aid for the USMLE Step 1 (Antimycobacterial drugs) — ใช้กันทั่วไป"
+  },
+  {
+   "sec": "chest-03-07",
+   "name": "INH: Injures Neurons and Hepatocytes",
+   "what": "พิษหลักของ isoniazid",
+   "lines": [
+    [
+     "N",
+     "**N**eurons — ปลายประสาทอักเสบ ชาปลายมือปลายเท้า → ให้ **pyridoxine (B6)**"
+    ],
+    [
+     "H",
+     "**H**epatocytes — ตับอักเสบ (ร่วมกับ R และ Z)"
+    ]
+   ],
+   "note": "ตามคาบ: ป้องกันด้วย B6 10–25 มก./วัน ในผู้เสี่ยง · มีอาการชาแล้วใช้ 50–75 มก./วัน · ตับอักเสบหยุดยาเมื่อ ALT > 3 เท่า + อาการ หรือ > 5 เท่า",
+   "src": "First Aid for the USMLE Step 1 (Isoniazid)"
+  },
+  {
+   "sec": "chest-03-08",
+   "name": "Rifampin's 4 R's",
+   "what": "คุณสมบัติสำคัญของ rifampicin",
+   "lines": [
+    [
+     "R",
+     "**R**NA polymerase inhibitor — กลไกการออกฤทธิ์"
+    ],
+    [
+     "R",
+     "**R**amps up cytochrome P-450 — เร่งทำลาย PI, nevirapine, TAF, dolutegravir (ต้องเพิ่มเป็นวันละ 2 ครั้ง)"
+    ],
+    [
+     "R",
+     "**R**ed/orange body fluids — ปัสสาวะ น้ำตา เหงื่อสีส้ม (คอนแทกต์เลนส์เปื้อน)"
+    ],
+    [
+     "R",
+     "**R**apid resistance ถ้าใช้ตัวเดียว"
+    ]
+   ],
+   "note": "ข้อ Ramps up P-450 คือเหตุผลที่ต้องเปลี่ยนเป็น rifabutin เมื่อจำเป็นต้องใช้ PI",
+   "src": "First Aid for the USMLE Step 1 (Rifamycins)"
+  },
+  {
+   "sec": "chest-26-05",
+   "name": "ROME",
+   "what": "หาความผิดปกติหลักจากทิศทางของ pH เทียบกับ PaCO2 และ HCO3",
+   "lines": [
+    [
+     "RO",
+     "**R**espiratory = **O**pposite — pH กับ PaCO2 ไปคนละทาง (PaCO2 ↑ pH ↓)"
+    ],
+    [
+     "ME",
+     "**M**etabolic = **E**qual — pH กับ HCO3 ไปทางเดียวกัน (HCO3 ↓ pH ↓)"
+    ]
+   ],
+   "note": "ตรงกับหลักในคาบ: ตัวที่เปลี่ยนไปทางเดียวกับ “ภาวะ” ของ pH คือความผิดปกติหลัก · ถ้าทั้งคู่อธิบาย pH ได้ ให้เทียบ % การเปลี่ยนแปลง",
+   "src": "หลักจำที่ใช้กันทั่วไปในการสอนแปลผล ABG (พยาบาลและนักศึกษาแพทย์)"
+  },
+  {
+   "sec": "chest-26-05",
+   "name": "กฎ 1-2-4-5",
+   "what": "การชดเชยของไตต่อ PaCO2 ที่เปลี่ยนทุก 10 mmHg",
+   "lines": [
+    [
+     "1",
+     "Respiratory **acidosis เฉียบพลัน** → HCO3 เพิ่ม 1"
+    ],
+    [
+     "2",
+     "Respiratory **alkalosis เฉียบพลัน** → HCO3 ลด 2"
+    ],
+    [
+     "4",
+     "Respiratory **acidosis เรื้อรัง** → HCO3 เพิ่ม 4 (ตำราส่วนใหญ่ 3.5–4)"
+    ],
+    [
+     "5",
+     "Respiratory **alkalosis เรื้อรัง** → HCO3 ลด 5"
+    ]
+   ],
+   "note": "เพิ่มเรื่อง pH: เฉียบพลันเปลี่ยน 0.08 ต่อ 10 · เรื้อรัง 0.04 (acidosis) / 0.02 (alkalosis)",
+   "src": "วิธีจำที่อาจารย์ใช้ในคาบ — ชุดตัวเลขเดียวกับที่ตำรากรด-ด่างทั่วไปใช้ (rule of 1-2-4-5)"
+  },
+  {
+   "sec": "chest-26-05",
+   "name": "CHAMPS",
+   "what": "สาเหตุของ respiratory alkalosis",
+   "lines": [
+    [
+     "C",
+     "**C**NS disease — stroke, เลือดออกในสมอง"
+    ],
+    [
+     "H",
+     "**H**ypoxia — ต้องตัดออกก่อนเสมอ"
+    ],
+    [
+     "A",
+     "**A**nxiety / pain"
+    ],
+    [
+     "M",
+     "**M**echanical ventilation ที่ตั้งมากเกิน"
+    ],
+    [
+     "P",
+     "**P**rogesterone — ตั้งครรภ์"
+    ],
+    [
+     "S",
+     "**S**alicylate ระยะแรก / **S**epsis ระยะแรก"
+    ]
+   ],
+   "note": "ในคาบยังมี ไข้ ตับวาย และที่สูง ซึ่ง CHAMPS ไม่ครอบคลุม · respiratory alkalosis + high AG acidosis = นึกถึง salicylate/sepsis",
+   "src": "หลักจำที่ใช้ในแหล่งสอน emergency medicine / acid–base (เช่น Emergucate)"
+  },
+  {
+   "sec": "chest-26-06",
+   "name": "MUDPILES",
+   "what": "สาเหตุของ high anion gap metabolic acidosis (ตามที่สอนในคาบ)",
+   "lines": [
+    [
+     "M",
+     "**M**ethanol"
+    ],
+    [
+     "U",
+     "**U**remia"
+    ],
+    [
+     "D",
+     "**D**KA, alcoholic/starvation ketoacidosis"
+    ],
+    [
+     "P",
+     "**P**araldehyde"
+    ],
+    [
+     "I",
+     "**I**NH, iron, rhabdomyolysis"
+    ],
+    [
+     "L",
+     "**L**actic acidosis (type A, B)"
+    ],
+    [
+     "E",
+     "**E**thylene glycol"
+    ],
+    [
+     "S",
+     "**S**alicylates"
+    ]
+   ],
+   "note": "Paraldehyde แทบไม่ใช้แล้ว · ฉบับปรับปรุงบางแห่งใช้ P = Propylene glycol",
+   "src": "หลักจำคลาสสิกในตำราอายุรศาสตร์/USMLE"
+  },
+  {
+   "sec": "chest-26-06",
+   "name": "GOLDMARK",
+   "what": "สาเหตุของ high anion gap metabolic acidosis — ฉบับปรับปรุงแทน MUDPILES",
+   "lines": [
+    [
+     "G",
+     "**G**lycols — ethylene และ propylene glycol"
+    ],
+    [
+     "O",
+     "**O**xoproline (pyroglutamic acid — paracetamol เรื้อรัง)"
+    ],
+    [
+     "L",
+     "**L**-lactate"
+    ],
+    [
+     "D",
+     "**D**-lactate (short bowel)"
+    ],
+    [
+     "M",
+     "**M**ethanol"
+    ],
+    [
+     "A",
+     "**A**spirin"
+    ],
+    [
+     "R",
+     "**R**enal failure"
+    ],
+    [
+     "K",
+     "**K**etoacidosis"
+    ]
+   ],
+   "note": "ตัดสาเหตุที่หายากออก (paraldehyde, iron, INH) และเพิ่มสาเหตุใหม่ — คาบนี้ใช้ MUDPILES เป็นหลัก",
+   "src": "Mehta AN และคณะ, Lancet 2008 — ใช้ในตำราและ First Aid ฉบับหลัง ๆ"
+  },
+  {
+   "sec": "chest-26-06",
+   "name": "HARDUP",
+   "what": "สาเหตุของ normal anion gap (hyperchloremic) metabolic acidosis",
+   "lines": [
+    [
+     "H",
+     "**H**yperalimentation / hyperventilation (เรื้อรัง)"
+    ],
+    [
+     "A",
+     "**A**cetazolamide, **A**ddison disease"
+    ],
+    [
+     "R",
+     "**R**TA ชนิด 1, 2, 4"
+    ],
+    [
+     "D",
+     "**D**iarrhea"
+    ],
+    [
+     "U",
+     "**U**reterosigmoidostomy / ileal diversion"
+    ],
+    [
+     "P",
+     "**P**ancreatic fistula"
+    ]
+   ],
+   "note": "First Aid ใช้ HARDASS (เพิ่ม Spironolactone และ Saline infusion) — saline ปริมาณมากก็อยู่ในคาบนี้ · แยก RTA กับท้องเสียด้วย urine anion gap",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำรา acid–base · ฉบับ HARDASS จาก First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "chest-eptb-09",
+   "name": "Beck's triad = 3D",
+   "what": "อาการแสดงคลาสสิกของ cardiac tamponade",
+   "lines": [
+    [
+     "D",
+     "**D**istant (muffled) heart sounds — เสียงหัวใจเบา"
+    ],
+    [
+     "D",
+     "**D**istended neck veins — JVP สูง"
+    ],
+    [
+     "D",
+     "**D**ecreased BP — ความดันต่ำ"
+    ]
+   ],
+   "note": "น้ำวัณโรคสะสมช้า เยื่อหุ้มยืดตามได้ จึงมีน้ำมากก่อนเกิดอาการและมักพบไม่ครบสามข้อ · ดู pulsus paradoxus ร่วม",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำรา emergency medicine / USMLE"
+  },
+  {
+   "sec": "chest-eptb-11",
+   "name": "Rifampin's 4 R's",
+   "what": "คุณสมบัติของ rifampicin — ข้อ R ที่สองอธิบายว่าทำไม steroid ต้องใช้ขนาดสูงขึ้น",
+   "lines": [
+    [
+     "R",
+     "**R**NA polymerase inhibitor"
+    ],
+    [
+     "R",
+     "**R**amps up cytochrome P-450 — เร่งทำลาย corticosteroid → ระดับ steroid ในเลือดลด"
+    ],
+    [
+     "R",
+     "**R**ed/orange body fluids"
+    ],
+    [
+     "R",
+     "**R**apid resistance ถ้าใช้ตัวเดียว"
+    ]
+   ],
+   "note": "ดังนั้น dexamethasone/prednisolone ที่ให้ใน TB meningitis และ pericarditis ร่วมกับ rifampicin ต้องใช้ขนาดสูงกว่าปกติ",
+   "src": "First Aid for the USMLE Step 1 (Rifamycins)"
+  },
+  {
+   "sec": "chest-eptb-12",
+   "name": "Mean GNATS caNNOT kill anaerobes",
+   "what": "aminoglycoside (รวม streptomycin) — สมาชิกและพิษ",
+   "lines": [
+    [
+     "GNATS",
+     "**G**entamicin **N**eomycin **A**mikacin **T**obramycin **S**treptomycin"
+    ],
+    [
+     "N",
+     "**N**ephrotoxicity — ท่อไตส่วนต้นตาย ปัสสาวะออกน้อย"
+    ],
+    [
+     "N",
+     "**N**euromuscular blockade"
+    ],
+    [
+     "O",
+     "**O**totoxicity — หูหนวก เวียนศีรษะ (CN VIII)"
+    ],
+    [
+     "T",
+     "**T**eratogenicity — ห้ามในหญิงตั้งครรภ์ (ทารกหูหนวก)"
+    ]
+   ],
+   "note": "kill anaerobes ไม่ได้ เพราะการนำยาเข้าเซลล์ต้องใช้ออกซิเจน · ในคาบ streptomycin มีพิษต่อหูและไต",
+   "src": "First Aid for the USMLE Step 1 (Aminoglycosides)"
+  },
+  {
+   "sec": "chest-rp-01",
+   "name": "CADET, face Right!",
+   "what": "ปัจจัยที่ทำให้ O₂ dissociation curve เลื่อนขวา (ปล่อย O₂ ง่าย)",
+   "lines": [
+    [
+     "C",
+     "**C**O₂ ↑"
+    ],
+    [
+     "A",
+     "**A**cid (pH ↓)"
+    ],
+    [
+     "D",
+     "2,3-**D**PG ↑"
+    ],
+    [
+     "E",
+     "**E**xercise"
+    ],
+    [
+     "T",
+     "**T**emperature ↑ (ไข้)"
+    ]
+   ],
+   "note": "เลื่อนซ้ายตรงข้ามกัน + HbF, COHb, MetHb",
+   "src": "First Aid for the USMLE Step 1 (Oxygen–hemoglobin dissociation curve)"
+  },
+  {
+   "sec": "chest-rp-06",
+   "name": "C3, 4, 5 keeps the diaphragm alive",
+   "what": "phrenic nerve มาจากรากประสาท C3–5 → อธิบายอาการปวดร้าวไหล่",
+   "lines": [
+    [
+     "C3–5",
+     "**phrenic nerve** เลี้ยงกะบังลม และรับความเจ็บจาก parietal pleura ส่วน mediastinal และ central diaphragm"
+    ],
+    [
+     "ไหล่",
+     "ความเจ็บจึงร้าวไป **ไหล่ข้างเดียวกัน** (dermatome C3–5)"
+    ]
+   ],
+   "note": "costal parietal pleura ใช้ intercostal nerve → เจ็บตรงจุด · visceral pleura ไม่เจ็บ",
+   "src": "หลักจำกายวิภาคที่ใช้กันทั่วไป (First Aid for the USMLE Step 1 / ตำรากายวิภาค)"
+  },
+  {
+   "sec": "chest-rp-07",
+   "name": "ATOM FC",
+   "what": "ภาวะคุกคามชีวิตในทรวงอกที่ต้องหาใน primary survey",
+   "lines": [
+    [
+     "A",
+     "**A**irway obstruction"
+    ],
+    [
+     "T",
+     "**T**ension pneumothorax — วินิจฉัยทางคลินิก ห้ามรอฟิล์ม"
+    ],
+    [
+     "O",
+     "**O**pen pneumothorax (แผลดูดลม)"
+    ],
+    [
+     "M",
+     "**M**assive hemothorax"
+    ],
+    [
+     "F",
+     "**F**lail chest"
+    ],
+    [
+     "C",
+     "**C**ardiac tamponade"
+    ]
+   ],
+   "note": "แยก tension pneumothorax กับ tamponade: ทั้งคู่คอโป่ง BP ตก แต่ tension มี trachea เบี่ยงและเคาะโปร่ง",
+   "src": "ใช้กันทั่วไปตามแนว ATLS (เช่น LITFL)"
+  }
+ ]
+}

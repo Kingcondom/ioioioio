@@ -1,0 +1,775 @@
+{
+ "set": "air",
+ "items": [
+  {
+   "sec": "air-08-02",
+   "after": "การรักษา — เรียงตามลำดับจริง",
+   "anim": {
+    "key": "a08-anaph-shock",
+    "title": "Anaphylaxis — เลือดหายไปจากหัวใจ: ทำไมต้องนอนราบยกขาและฉีด adrenaline ซ้ำได้",
+    "svg": "<svg viewBox=\"0 0 440 410\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: anaphylaxis ทำให้หลอดเลือดขยายและพลาสมารั่ว เลือดกลับหัวใจน้อย ลุกยืนแล้วหัวใจห้องล่างว่าง นอนราบยกขาและฉีด adrenaline เข้ากล้ามต้นขาช่วยได้ adrenaline หมดฤทธิ์เร็วและอาจมีระลอกสอง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"378\" y=\"30\" class=\"xs mid b\">หัวใจห้องล่าง</text><rect x=\"330\" y=\"40\" width=\"96\" height=\"110\" rx=\"18\" class=\"bx w2\"/><rect x=\"340\" y=\"52\" width=\"76\" height=\"88\" rx=\"8\" class=\"acf\" data-x=\"2\"/><rect x=\"340\" y=\"100\" width=\"76\" height=\"40\" rx=\"8\" class=\"acf\" data-s=\"2\" data-x=\"3\"/><rect x=\"340\" y=\"132\" width=\"76\" height=\"8\" rx=\"3\" class=\"acf\" data-s=\"3\" data-x=\"4\"/><rect x=\"340\" y=\"62\" width=\"76\" height=\"78\" rx=\"8\" class=\"acf\" data-s=\"4\"/><path d=\"M330,70 L152,70\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><text x=\"240\" y=\"62\" class=\"xs mid tac\">หลอดเลือดแดง</text><rect x=\"40\" y=\"52\" width=\"110\" height=\"56\" rx=\"12\" class=\"sk\"/><text x=\"95\" y=\"84\" class=\"xs mid\">หลอดเลือดฝอย</text><path d=\"M95,108 L95,190 L378,190 L378,154\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><ellipse cx=\"200\" cy=\"190\" rx=\"46\" ry=\"13\" class=\"wa\" data-x=\"2\"/><ellipse cx=\"200\" cy=\"190\" rx=\"60\" ry=\"24\" class=\"wa\" data-s=\"2\"/><text x=\"200\" y=\"228\" class=\"xs mid twa\">หลอดเลือดดำที่ขา (แหล่งพักเลือด)</text><text x=\"318\" y=\"182\" class=\"xs mid twa\">venous return</text><g data-x=\"3\"><circle cx=\"330\" cy=\"70\" r=\"3.6\" class=\"acf\"><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 L-235,0 L-235,120 L48,120 L48,10 L0,0\"/></circle><circle cx=\"95\" cy=\"150\" r=\"3.6\" class=\"acf\"><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 L0,40 L283,40 L283,-70 L235,-80 L0,-80 L0,0\"/></circle><circle cx=\"300\" cy=\"190\" r=\"3.6\" class=\"acf\"><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 L78,0 L78,-110 L30,-120 L-205,-120 L-205,0 L0,0\"/></circle></g><g data-s=\"2\"><circle cx=\"44\" cy=\"142\" r=\"13\" class=\"ms\"/><circle cx=\"40\" cy=\"139\" r=\"2.4\" class=\"msf\"/><circle cx=\"48\" cy=\"145\" r=\"2.4\" class=\"msf\"/><circle cx=\"44\" cy=\"136\" r=\"2.4\" class=\"msf\"/><text x=\"44\" y=\"170\" class=\"xs mid tms b\">mast cell</text><text x=\"44\" y=\"183\" class=\"xs mid\">histamine</text><text x=\"44\" y=\"196\" class=\"xs mid\">leukotriene</text><line x1=\"70\" y1=\"50\" x2=\"60\" y2=\"30\" class=\"lwa w2\" marker-end=\"url(#ah-wa)\"/><line x1=\"100\" y1=\"50\" x2=\"100\" y2=\"28\" class=\"lwa w2\" marker-end=\"url(#ah-wa)\"/><line x1=\"130\" y1=\"50\" x2=\"140\" y2=\"30\" class=\"lwa w2\" marker-end=\"url(#ah-wa)\"/><circle cx=\"80\" cy=\"52\" r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" repeatCount=\"indefinite\" path=\"M0,0 L-14,-18\"/></circle><circle cx=\"112\" cy=\"52\" r=\"3\" class=\"waf\"><animateMotion dur=\"1.6s\" repeatCount=\"indefinite\" path=\"M0,0 L2,-20\"/></circle><text x=\"98\" y=\"18\" class=\"xs mid tbad b\">พลาสมารั่วออกนอกหลอดเลือด → บวม</text><text x=\"200\" y=\"243\" class=\"xs mid tbad\">หลอดเลือดขยาย เลือดไปกองในหลอดเลือดดำ</text></g><text x=\"378\" y=\"86\" class=\"xs mid tbad b\" data-s=\"2\" data-x=\"3\">เลือดเข้าน้อย</text><g data-s=\"3\" data-x=\"4\"><g><rect x=\"330\" y=\"40\" width=\"96\" height=\"110\" rx=\"18\" class=\"lbad w3 pl\"/></g><text x=\"378\" y=\"80\" class=\"xs mid tbad b\">ventricle ว่าง</text><text x=\"378\" y=\"95\" class=\"xs mid tbad b\">→ หัวใจหยุดเต้น</text><line x1=\"200\" y1=\"140\" x2=\"200\" y2=\"166\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><text x=\"200\" y=\"132\" class=\"xs mid tbad b\">ลุกยืน → เลือดค้างที่ขาตามแรงโน้มถ่วง</text></g><g data-s=\"4\"><path d=\"M246,178 C282,160 300,142 326,118\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"232\" y=\"106\" class=\"xs mid tok b\">นอนราบ ยกขาสูง</text><text x=\"232\" y=\"121\" class=\"xs mid tok\">+ crystalloid 20 mL/kg</text><circle cx=\"330\" cy=\"70\" r=\"3.6\" class=\"acf\"><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 L-235,0 L-235,120 L48,120 L48,10 L0,0\"/></circle><circle cx=\"300\" cy=\"190\" r=\"3.6\" class=\"acf\"><animateMotion dur=\"5s\" repeatCount=\"indefinite\" path=\"M0,0 L78,0 L78,-110 L30,-120 L-205,-120 L-205,0 L0,0\"/></circle><rect x=\"8\" y=\"254\" width=\"424\" height=\"62\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"274\" class=\"sm mid b\">Adrenaline IM ต้นขาด้านนอก 0.01 mg/kg (สูงสุด 0.5 mg)</text><text x=\"220\" y=\"292\" class=\"xs mid\">α1 หดหลอดเลือด ลดการรั่ว · β1 หัวใจบีบแรงขึ้น</text><text x=\"220\" y=\"307\" class=\"xs mid\">β2 ขยายหลอดลม + ยับยั้งการหลั่ง mediator</text></g><g data-s=\"5\"><line x1=\"30\" y1=\"388\" x2=\"428\" y2=\"388\" class=\"ln\" marker-end=\"url(#ah)\"/><path d=\"M30,388 C48,350 74,350 120,386\" class=\"lok w3\"/><path d=\"M30,388 C40,356 62,354 92,382 L250,385 C276,366 306,358 352,386\" class=\"lbad w2 da\"/><text x=\"30\" y=\"334\" class=\"xs tok b\">ฤทธิ์ adrenaline IM หมดใน ~15–20 นาที</text><text x=\"30\" y=\"348\" class=\"xs tok\">→ ฉีดซ้ำได้ทุก 5–15 นาที</text><text x=\"428\" y=\"334\" class=\"xs end tbad b\">เฝ้าดูต่อ 4–6 ชม.</text><text x=\"306\" y=\"352\" class=\"xs mid tbad\">ระลอกสอง (biphasic)</text><text x=\"30\" y=\"403\" class=\"xs mid mu\">0</text><text x=\"120\" y=\"403\" class=\"xs mid mu\">15–20 นาที</text><text x=\"300\" y=\"403\" class=\"xs mid mu\">หลายชั่วโมงต่อมา</text></g></svg>",
+    "steps": [
+     {
+      "t": "ไหลเวียนปกติ",
+      "cap": "เลือดออกจากหัวใจ → หลอดเลือดแดง → หลอดเลือดฝอย → **หลอดเลือดดำ** แล้วกลับเข้าหัวใจ ห้องล่างจึงมีเลือดเต็มพอจะบีบออกเป็น stroke volume"
+     },
+     {
+      "t": "Mediator ทำให้หลอดเลือดขยายและรั่ว",
+      "cap": "mast cell หลั่ง **histamine, leukotriene** → หลอดเลือดขยายทั่วตัว เลือดไปกองในหลอดเลือดดำ + **พลาสมารั่วออกนอกหลอดเลือดปริมาณมากในไม่กี่นาที** → เลือดกลับหัวใจน้อย ความดันตก ชีพจรเร็ว"
+     },
+     {
+      "t": "ลุกนั่ง/ยืน = empty ventricle",
+      "cap": "เลือดที่เหลือน้อยอยู่แล้วไปค้างที่ขาตามแรงโน้มถ่วง → **หัวใจห้องล่างไม่มีเลือดเข้า (empty ventricle)** → หัวใจหยุดเต้น — มีรายงานเสียชีวิตจริง จึง **ห้ามให้ลุกนั่งหรือยืนทันที**"
+     },
+     {
+      "t": "นอนราบยกขา + adrenaline IM",
+      "cap": "**นอนราบยกขาสูง** ดึงเลือดจากขากลับหัวใจ + crystalloid 20 mL/kg ถ้าความดันยังตก · **adrenaline IM ที่ต้นขาด้านนอก** α1 หดหลอดเลือดลดรั่ว β1 เพิ่ม cardiac output β2 ขยายหลอดลม"
+     },
+     {
+      "t": "ฤทธิ์สั้น + ระลอกสอง",
+      "cap": "adrenaline IM หมดฤทธิ์ใน ~15–20 นาที จึง **ฉีดซ้ำได้ทุก 5–15 นาที** · mast cell อาจหลั่งระลอกสองหลายชั่วโมงต่อมา (biphasic ~1–5% ใน 72 ชม.) → **เฝ้าดู 4–6 ชม.** และกลับบ้านพร้อม auto-injector"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-08-06",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "a08-dhtr",
+    "title": "Delayed hemolytic transfusion reaction — ภูมิที่หลับอยู่ตื่นขึ้นใน 3–14 วัน",
+    "svg": "<svg viewBox=\"0 0 440 430\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เคยสร้าง IgG ต่อแอนติเจนรองของเม็ดเลือดแดงจนระดับตรวจไม่พบ เมื่อได้เลือดใหม่ภูมิความจำสร้าง IgG ขึ้นเร็วใน 3 ถึง 14 วัน ม้ามจับเม็ดเลือดแดงผู้บริจาค Hb ไม่ขึ้นตามคาด ตัวเหลืองเล็กน้อย DAT บวก\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"12\" y=\"22\" class=\"sm b tbad\">IgG ต่อ minor antigen (Kidd, Rh)</text><line x1=\"40\" y1=\"140\" x2=\"428\" y2=\"140\" class=\"ln\"/><line x1=\"40\" y1=\"34\" x2=\"40\" y2=\"140\" class=\"ln\"/><line x1=\"40\" y1=\"118\" x2=\"428\" y2=\"118\" class=\"lmu da\"/><text x=\"428\" y=\"112\" class=\"xs end mu\">ระดับที่ตรวจพบได้</text><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\" class=\"lmu dt\"/><text x=\"156\" y=\"154\" class=\"xs mu\">เดือน–ปี</text><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"250\" class=\"lmu da\"/><text x=\"200\" y=\"268\" class=\"xs mid b\">วันที่ 0</text><text x=\"300\" y=\"268\" class=\"xs mid\">วันที่ 3–14</text><text x=\"80\" y=\"268\" class=\"xs mid\">เคยได้เลือด/ตั้งครรภ์</text><path d=\"M44,138 C62,138 70,64 92,64 C114,64 126,132 148,134\" class=\"lbad w3\"/><text x=\"92\" y=\"56\" class=\"xs mid tbad\">IgG ขึ้นแล้วลด</text><g data-s=\"2\"><path d=\"M150,134 L262,134\" class=\"lbad w3\"/><text x=\"226\" y=\"101\" class=\"xs mid tok b\">antibody screen ลบ</text><text x=\"226\" y=\"86\" class=\"xs mid tok\">crossmatch ผ่าน</text></g><g data-s=\"3\"><path d=\"M262,134 C284,132 292,52 330,50 L426,52\" class=\"lbad w3\"/><text x=\"378\" y=\"42\" class=\"xs mid tbad b\">memory B cell ตื่น</text><g><circle cx=\"300\" cy=\"80\" r=\"6\" class=\"badf pl\"/></g></g><text x=\"12\" y=\"166\" class=\"sm b tac\">Hb</text><line x1=\"40\" y1=\"250\" x2=\"428\" y2=\"250\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"250\" class=\"ln\"/><path d=\"M44,226 L198,226\" class=\"lac w3\"/><text x=\"120\" y=\"218\" class=\"xs mid tac\">ซีด ต้องให้เลือด</text><g data-s=\"2\"><path d=\"M200,226 L204,184 L264,184\" class=\"lac w3\"/><text x=\"232\" y=\"176\" class=\"xs mid tac b\">Hb ขึ้น</text></g><g data-s=\"4\"><path d=\"M264,184 C292,186 320,222 360,224 L426,224\" class=\"lac w3 da\"/><text x=\"392\" y=\"214\" class=\"xs mid tbad b\">Hb กลับลง</text></g><g data-s=\"4\"><rect x=\"10\" y=\"282\" width=\"420\" height=\"58\" rx=\"10\" class=\"sk\"/><circle cx=\"44\" cy=\"311\" r=\"13\" class=\"ac\"/><path d=\"M38,300 L38,294 M38,294 L33,289 M38,294 L43,289\" class=\"lbad w2\"/><path d=\"M52,302 L56,297 M56,297 L56,290 M56,297 L62,296\" class=\"lbad w2\"/><line x1=\"62\" y1=\"311\" x2=\"96\" y2=\"311\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><ellipse cx=\"128\" cy=\"311\" rx=\"28\" ry=\"18\" class=\"ms\"/><text x=\"128\" y=\"315\" class=\"xs mid b\">ม้าม</text><text x=\"166\" y=\"302\" class=\"xs b\">IgG เคลือบ RBC ผู้บริจาค → ม้ามจับกิน</text><text x=\"166\" y=\"317\" class=\"xs\">(นอกหลอดเลือด) → Hb ไม่ขึ้นตามคาด</text><text x=\"166\" y=\"332\" class=\"xs\">ตัวเหลืองเล็กน้อย · DAT บวก</text></g><g data-s=\"5\"><rect x=\"10\" y=\"350\" width=\"206\" height=\"72\" rx=\"10\" class=\"bad\"/><text x=\"113\" y=\"369\" class=\"sm mid b\">AHTR</text><text x=\"113\" y=\"385\" class=\"xs mid\">นาที · IgM anti-A/B · ABO ผิด</text><text x=\"113\" y=\"399\" class=\"xs mid\">แตกในหลอดเลือด</text><text x=\"113\" y=\"413\" class=\"xs mid\">ปัสสาวะสีโคล่า ช็อก DIC</text><rect x=\"224\" y=\"350\" width=\"206\" height=\"72\" rx=\"10\" class=\"ms\"/><text x=\"327\" y=\"369\" class=\"sm mid b\">Delayed (DHTR)</text><text x=\"327\" y=\"385\" class=\"xs mid\">3–14 วัน · IgG ระลอกสอง</text><text x=\"327\" y=\"399\" class=\"xs mid\">ถูกจับที่ม้าม · เบากว่า</text><text x=\"327\" y=\"413\" class=\"xs mid\">ติดตาม ไม่ต้องรักษาจำเพาะ</text></g></svg>",
+    "steps": [
+     {
+      "t": "เคยถูกกระตุ้นมาก่อน",
+      "cap": "การได้เลือดหรือตั้งครรภ์ครั้งก่อนทำให้สร้าง **IgG ต่อ minor antigen** (เช่น Kidd, Rh) แล้วระดับค่อย ๆ ลดจน **ตรวจไม่พบ** แต่ยังเหลือ memory B cell"
+     },
+     {
+      "t": "ให้เลือดใหม่ — ตรวจก่อนให้ผ่าน",
+      "cap": "antibody screen ลบและ crossmatch ผ่านเพราะ antibody ต่ำเกินกว่าจะตรวจเจอ → ให้เลือดได้ **Hb ขึ้นตามคาด** ในช่วงแรก"
+     },
+     {
+      "t": "Anamnestic response",
+      "cap": "แอนติเจนบน RBC ผู้บริจาคปลุก memory B cell → **IgG ขึ้นใหม่อย่างรวดเร็วภายในไม่กี่วัน** (ช่วงวันที่ 3–14)"
+     },
+     {
+      "t": "ม้ามจับกิน → Hb ไม่ขึ้น",
+      "cap": "IgG เคลือบ RBC ผู้บริจาค → macrophage ในม้ามจับกิน (**นอกหลอดเลือด**) → **Hb กลับลง ตัวเหลืองเล็กน้อย DAT บวก** ปัสสาวะมักไม่แดงเหมือน AHTR"
+     },
+     {
+      "t": "เทียบกับ AHTR",
+      "cap": "**AHTR** = นาที, IgM anti-A/B ที่มีอยู่แล้ว (ABO ผิด) แตกในหลอดเลือด ปัสสาวะสีโคล่า ช็อก DIC · **DHTR** = 3–14 วัน, IgG ระลอกสอง ถูกจับที่ม้าม เบากว่า ติดตามโดยไม่ต้องรักษาจำเพาะ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-08-08",
+   "after": "กลไก: ทำไมวัคซีนเชื้อเป็นจึงห้าม",
+   "anim": {
+    "key": "a08-live-vaccine",
+    "title": "วัคซีนเชื้อเป็นกับเชื้อตาย ในคนที่ได้ยากดภูมิคุ้มกัน",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: วัคซีนเชื้อเป็นแบ่งตัวได้ ในคนปกติ T cell และ antibody หยุดเชื้อได้ ในคนที่ได้ยากดภูมิเชื้อแบ่งตัวจนเกิดโรค วัคซีนเชื้อตายไม่แบ่งตัวจึงปลอดภัยแต่สร้างภูมิได้น้อย\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"30\" width=\"206\" height=\"196\" rx=\"12\" class=\"ok\"/><rect x=\"226\" y=\"30\" width=\"206\" height=\"196\" rx=\"12\" class=\"bad\"/><text x=\"111\" y=\"20\" class=\"sm mid b tok\">ภูมิคุ้มกันปกติ</text><text x=\"329\" y=\"20\" class=\"sm mid b tbad\">ได้ยากดภูมิ (T/B cell ถูกกด)</text><text x=\"111\" y=\"50\" class=\"xs mid b\">วัคซีนเชื้อเป็น</text><text x=\"329\" y=\"50\" class=\"xs mid b\">วัคซีนเชื้อเป็น</text><g data-x=\"2\"><circle cx=\"80\" cy=\"100\" r=\"5\" class=\"msf\"/><circle cx=\"110\" cy=\"120\" r=\"5\" class=\"msf\"/><circle cx=\"140\" cy=\"96\" r=\"5\" class=\"msf\"/></g><g data-s=\"2\"><circle cx=\"80\" cy=\"100\" r=\"5\" class=\"muf\"/><circle cx=\"110\" cy=\"120\" r=\"5\" class=\"muf\"/><circle cx=\"140\" cy=\"96\" r=\"5\" class=\"muf\"/></g><circle cx=\"298\" cy=\"100\" r=\"5\" class=\"msf\"/><circle cx=\"328\" cy=\"120\" r=\"5\" class=\"msf\"/><circle cx=\"358\" cy=\"96\" r=\"5\" class=\"msf\"/><g><circle cx=\"110\" cy=\"110\" r=\"40\" class=\"lms da pl\"/></g><g><circle cx=\"328\" cy=\"110\" r=\"40\" class=\"lms da pl\"/></g><text x=\"111\" y=\"168\" class=\"xs mid tms\" data-x=\"2\">อ่อนฤทธิ์ แต่ยังแบ่งตัวได้</text><text x=\"329\" y=\"168\" class=\"xs mid tms\" data-x=\"3\">อ่อนฤทธิ์ แต่ยังแบ่งตัวได้</text><g data-s=\"2\"><circle cx=\"52\" cy=\"72\" r=\"11\" class=\"ok\"/><text x=\"52\" y=\"76\" class=\"xs mid b\">T</text><circle cx=\"168\" cy=\"140\" r=\"11\" class=\"ok\"/><text x=\"168\" y=\"144\" class=\"xs mid b\">T</text><path d=\"M60,128 L60,138 M60,128 L54,122 M60,128 L66,122\" class=\"lok w2\"/><path d=\"M156,78 L156,88 M156,78 L150,72 M156,78 L162,72\" class=\"lok w2\"/><path d=\"M96,146 L96,156 M96,146 L90,140 M96,146 L102,140\" class=\"lok w2\"/><text x=\"111\" y=\"186\" class=\"xs mid tok b\">T cell + antibody หยุดเชื้อ</text><text x=\"111\" y=\"202\" class=\"xs mid tok\">→ ได้ภูมิคุ้มกัน ไม่เกิดโรค</text></g><g data-s=\"3\"><g class=\"pl\"><circle cx=\"272\" cy=\"76\" r=\"5\" class=\"badf\"/><circle cx=\"388\" cy=\"82\" r=\"5\" class=\"badf\"/><circle cx=\"280\" cy=\"140\" r=\"5\" class=\"badf\"/><circle cx=\"380\" cy=\"146\" r=\"5\" class=\"badf\"/><circle cx=\"314\" cy=\"70\" r=\"5\" class=\"badf\"/><circle cx=\"350\" cy=\"150\" r=\"5\" class=\"badf\"/><circle cx=\"262\" cy=\"108\" r=\"5\" class=\"badf\"/><circle cx=\"398\" cy=\"114\" r=\"5\" class=\"badf\"/></g><circle cx=\"250\" cy=\"150\" r=\"10\" class=\"lmu da\"/><text x=\"250\" y=\"154\" class=\"xs mid mu\">T</text><text x=\"329\" y=\"186\" class=\"xs mid tbad b\">เชื้อแบ่งตัวต่อ → โรคจากวัคซีน</text><text x=\"329\" y=\"202\" class=\"xs mid tbad\">varicella กระจาย · BCG ทั่วตัว</text><text x=\"329\" y=\"218\" class=\"xs mid tbad b\">→ ห้ามขณะกดภูมิ</text></g><g data-s=\"4\"><text x=\"220\" y=\"250\" class=\"sm mid b\">วัคซีนเชื้อตาย / subunit — แบ่งตัวไม่ได้</text><rect x=\"8\" y=\"260\" width=\"206\" height=\"96\" rx=\"12\" class=\"sk\"/><rect x=\"226\" y=\"260\" width=\"206\" height=\"96\" rx=\"12\" class=\"sk\"/><circle cx=\"40\" cy=\"290\" r=\"5\" class=\"lms w2\"/><circle cx=\"64\" cy=\"300\" r=\"5\" class=\"lms w2\"/><circle cx=\"258\" cy=\"290\" r=\"5\" class=\"lms w2\"/><circle cx=\"282\" cy=\"300\" r=\"5\" class=\"lms w2\"/><path d=\"M100,300 L100,310 M100,300 L94,294 M100,300 L106,294\" class=\"lok w2\"/><path d=\"M124,292 L124,302 M124,292 L118,286 M124,292 L130,286\" class=\"lok w2\"/><path d=\"M148,302 L148,312 M148,302 L142,296 M148,302 L154,296\" class=\"lok w2\"/><path d=\"M172,290 L172,300 M172,290 L166,284 M172,290 L178,284\" class=\"lok w2\"/><path d=\"M340,300 L340,310 M340,300 L334,294 M340,300 L346,294\" class=\"lmu w2\"/><text x=\"111\" y=\"334\" class=\"xs mid tok b\">ปลอดภัย + ภูมิขึ้นดี</text><text x=\"329\" y=\"326\" class=\"xs mid tms b\">ปลอดภัย แต่ภูมิขึ้นน้อย</text><text x=\"329\" y=\"341\" class=\"xs mid\">→ ให้ก่อนเริ่มยา ≥ 2–4 สัปดาห์</text></g><g data-s=\"5\"><rect x=\"8\" y=\"366\" width=\"424\" height=\"66\" rx=\"10\" class=\"wa\"/><text x=\"220\" y=\"385\" class=\"xs mid b\">ห้ามเชื้อเป็น: MMR · varicella · zoster เชื้อเป็น · yellow fever · BCG · OPV · flu พ่นจมูก</text><text x=\"220\" y=\"402\" class=\"xs mid\">ให้ได้: influenza ฉีด · pneumococcal · HBV · COVID-19 · recombinant zoster</text><text x=\"220\" y=\"419\" class=\"xs mid\">rituximab → ~6 เดือนแทบไม่สร้าง antibody · คนในบ้านฉีดเชื้อเป็นได้ (ยกเว้น OPV)</text></g></svg>",
+    "steps": [
+     {
+      "t": "วัคซีนเชื้อเป็นยังแบ่งตัวได้",
+      "cap": "วัคซีนเชื้อเป็น = เชื้อที่ **อ่อนฤทธิ์แต่ยังแบ่งตัวได้** ฉีดเข้าไปทั้งสองคนเหมือนกัน"
+     },
+     {
+      "t": "คนปกติ: T cell + antibody หยุดเชื้อ",
+      "cap": "ในคนภูมิปกติ T cell และ antibody หยุดเชื้อได้ก่อนเกิดโรค → **ได้ภูมิคุ้มกัน** ซึ่งเป็นจุดประสงค์ของวัคซีน"
+     },
+     {
+      "t": "กดภูมิ: เชื้อแบ่งตัวจนเป็นโรค",
+      "cap": "เมื่อ T cell ถูกกด (เช่น **prednisolone ≥ 20 mg/วัน นานกว่า 14 วัน**, anti-TNF, rituximab) เชื้อแบ่งตัวต่อจน **เป็นโรคจากวัคซีนเอง** เช่น varicella กระจาย BCG แพร่ทั่วตัว → เป็นข้อห้าม"
+     },
+     {
+      "t": "เชื้อตาย/subunit: ปลอดภัยแต่ภูมิขึ้นน้อย",
+      "cap": "วัคซีนเชื้อตายหรือ subunit **แบ่งตัวไม่ได้ จึงก่อโรคไม่ได้** ให้ได้เสมอ แต่ B/T cell ที่ถูกกดสร้างภูมิได้น้อย → **ให้ก่อนเริ่มยากดภูมิอย่างน้อย 2–4 สัปดาห์**"
+     },
+     {
+      "t": "สรุปรายชื่อที่ออกสอบ",
+      "cap": "ห้าม: **MMR, varicella, zoster เชื้อเป็น, yellow fever, BCG, OPV, flu พ่นจมูก** · ให้ได้: influenza ฉีด, pneumococcal, HBV, COVID-19, **recombinant zoster** · rituximab ทำให้ ~6 เดือนแทบไม่สร้าง antibody"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-23-01",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "a23-stiffness",
+    "title": "ฝืดตอนเช้า: ทำไมข้ออักเสบฝืดนาน แต่ข้อเสื่อมปวดเมื่อใช้งาน",
+    "svg": "<svg viewBox=\"0 0 440 436\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ข้ออักเสบมีน้ำและ cytokine คั่งขณะนอนนิ่ง ขยับแล้ว lymphatic ระบายออก ฝืดนานกว่า 30 ถึง 60 นาที ข้อเสื่อมฝืดสั้นกว่า 30 นาทีแต่ปวดมากขึ้นเมื่อใช้งาน\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"110\" y=\"16\" class=\"sm mid b tbad\">ข้ออักเสบ (inflammatory)</text><text x=\"330\" y=\"16\" class=\"sm mid b tms\">ข้อเสื่อม (mechanical)</text><rect x=\"44\" y=\"58\" width=\"132\" height=\"96\" rx=\"36\" class=\"bad\"/><rect x=\"60\" y=\"70\" width=\"100\" height=\"72\" rx=\"26\" class=\"wa\"/><rect x=\"82\" y=\"26\" width=\"56\" height=\"64\" rx=\"14\" class=\"sk\"/><rect x=\"82\" y=\"120\" width=\"56\" height=\"62\" rx=\"14\" class=\"sk\"/><rect x=\"84\" y=\"84\" width=\"52\" height=\"7\" rx=\"3\" class=\"bx\"/><rect x=\"84\" y=\"120\" width=\"52\" height=\"7\" rx=\"3\" class=\"bx\"/><text x=\"110\" y=\"198\" class=\"xs mid\">synovium หนา + น้ำในข้อ</text><rect x=\"268\" y=\"64\" width=\"124\" height=\"84\" rx=\"30\" class=\"lmu w2\"/><rect x=\"302\" y=\"26\" width=\"56\" height=\"68\" rx=\"14\" class=\"sk\"/><rect x=\"302\" y=\"114\" width=\"56\" height=\"68\" rx=\"14\" class=\"sk\"/><rect x=\"330\" y=\"88\" width=\"26\" height=\"6\" rx=\"2\" class=\"bx\"/><rect x=\"330\" y=\"114\" width=\"26\" height=\"6\" rx=\"2\" class=\"bx\"/><path d=\"M303,82 L290,92 L303,94 Z\" class=\"sk\"/><path d=\"M303,116 L290,114 L303,126 Z\" class=\"sk\"/><path d=\"M357,84 L368,92 L357,94 Z\" class=\"sk\"/><text x=\"330\" y=\"198\" class=\"xs mid\">กระดูกอ่อนสึก · osteophyte</text><g data-s=\"2\" data-x=\"3\"><g class=\"pl\"><circle cx=\"72\" cy=\"104\" r=\"4\" class=\"badf\"/><circle cx=\"148\" cy=\"100\" r=\"4\" class=\"badf\"/><circle cx=\"96\" cy=\"108\" r=\"4\" class=\"badf\"/><circle cx=\"126\" cy=\"110\" r=\"4\" class=\"badf\"/><circle cx=\"110\" cy=\"100\" r=\"4\" class=\"badf\"/><circle cx=\"68\" cy=\"128\" r=\"4\" class=\"badf\"/><circle cx=\"152\" cy=\"130\" r=\"4\" class=\"badf\"/></g><text x=\"110\" y=\"216\" class=\"xs mid tbad b\">นอนนิ่ง: น้ำ + cytokine คั่ง</text></g><g data-s=\"3\"><path d=\"M48,96 L10,70\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><path d=\"M172,96 L208,70\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><circle cx=\"60\" cy=\"104\" r=\"3.4\" class=\"badf\"><animateMotion dur=\"1.5s\" repeatCount=\"indefinite\" path=\"M0,0 L-44,-30\"/></circle><circle cx=\"160\" cy=\"104\" r=\"3.4\" class=\"badf\"><animateMotion dur=\"1.5s\" repeatCount=\"indefinite\" path=\"M0,0 L42,-30\"/></circle><circle cx=\"96\" cy=\"108\" r=\"4\" class=\"badf\"/><circle cx=\"126\" cy=\"110\" r=\"4\" class=\"badf\"/><text x=\"110\" y=\"216\" class=\"xs mid tok b\">ขยับ → lymphatic ระบายออก</text></g><g data-s=\"4\"><line x1=\"304\" y1=\"117\" x2=\"328\" y2=\"117\" class=\"lbad w3\"/><text x=\"330\" y=\"216\" class=\"xs mid tbad b\">ใช้งาน → subchondral bone รับแรง → ปวด</text></g><line x1=\"40\" y1=\"236\" x2=\"40\" y2=\"370\" class=\"ln\"/><line x1=\"40\" y1=\"370\" x2=\"428\" y2=\"370\" class=\"ln\" marker-end=\"url(#ah)\"/><text x=\"46\" y=\"240\" class=\"xs mu\">ความฝืด / ปวด</text><line x1=\"135\" y1=\"244\" x2=\"135\" y2=\"370\" class=\"lmu dt\"/><line x1=\"230\" y1=\"244\" x2=\"230\" y2=\"370\" class=\"lmu dt\"/><text x=\"40\" y=\"384\" class=\"xs mid mu\">ตื่นนอน</text><text x=\"135\" y=\"384\" class=\"xs mid mu\">30 นาที</text><text x=\"230\" y=\"384\" class=\"xs mid mu\">60 นาที</text><text x=\"340\" y=\"384\" class=\"xs mid mu\">ใช้งานระหว่างวัน</text><g data-s=\"3\"><path d=\"M42,252 C110,254 170,322 232,368\" class=\"lbad w3\"/><text x=\"150\" y=\"258\" class=\"xs tbad b\">ฝืดนาน &gt; 30–60 นาที ดีขึ้นเมื่อขยับ</text></g><g data-s=\"4\"><path d=\"M42,322 C70,324 96,356 126,368\" class=\"lms w3\"/><text x=\"92\" y=\"314\" class=\"xs mid tms b\">ฝืด &lt; 30 นาที</text><path d=\"M240,366 C300,360 360,322 426,292\" class=\"lms w3 da\"/><text x=\"426\" y=\"282\" class=\"xs end tms b\">ปวดมากขึ้นเมื่อใช้งาน</text></g><g data-s=\"5\"><rect x=\"8\" y=\"392\" width=\"208\" height=\"42\" rx=\"9\" class=\"bad\"/><text x=\"112\" y=\"409\" class=\"xs mid b\">ฝืด &gt; 30–60 นาที · ดีขึ้นเมื่อขยับ</text><text x=\"112\" y=\"424\" class=\"xs mid\">บวมร้อน · ESR/CRP สูง</text><rect x=\"224\" y=\"392\" width=\"208\" height=\"42\" rx=\"9\" class=\"ms\"/><text x=\"328\" y=\"409\" class=\"xs mid b\">ฝืด &lt; 30 นาที · แย่ลงเมื่อใช้งาน</text><text x=\"328\" y=\"424\" class=\"xs mid\">ดีขึ้นเมื่อพัก · ESR/CRP ปกติ</text></g></svg>",
+    "steps": [
+     {
+      "t": "สองข้อ สองกลไก",
+      "cap": "ซ้าย = ข้ออักเสบ: **synovium หนาตัวและมีน้ำในข้อ** · ขวา = ข้อเสื่อม: **กระดูกอ่อนสึกฝั่งที่รับแรง** มี osteophyte แต่ไม่มีน้ำอักเสบคั่งมาก"
+     },
+     {
+      "t": "นอนนิ่งทั้งคืน",
+      "cap": "ระหว่างนอนนิ่ง น้ำอักเสบและ **cytokine (IL-1, IL-6, TNF) คั่งในเนื้อเยื่อรอบข้อ** เพราะ lymphatic ระบายได้น้อยเมื่อไม่มีการขยับ"
+     },
+     {
+      "t": "ตื่นแล้วขยับ — ฝืดคลายช้า",
+      "cap": "การขยับช่วยให้ lymphatic ระบายของคั่งออก → ฝืดค่อย ๆ คลาย ใช้เวลา **นานกว่า 30–60 นาที** (RA มักเกิน 1 ชม.) — ฝืดนานและดีขึ้นเมื่อขยับ = inflammatory"
+     },
+     {
+      "t": "ข้อเสื่อม: ฝืดสั้น ปวดเมื่อใช้งาน",
+      "cap": "OA ฝืดแค่ **< 30 นาที (gelling)** เพราะไม่มีน้ำอักเสบคั่ง · กระดูกอ่อนไม่มีเส้นประสาท ปวดมาจาก **subchondral bone ที่รับแรงตรง** จึงปวดมากขึ้นเมื่อใช้งาน ดีขึ้นเมื่อพัก"
+     },
+     {
+      "t": "สรุปแยก inflammatory vs mechanical",
+      "cap": "**Inflammatory**: ฝืด > 30–60 นาที ดีขึ้นเมื่อขยับ บวมร้อน ESR/CRP สูง มีอาการทั่วกาย · **Mechanical**: ฝืด < 30 นาที แย่ลงเมื่อใช้งาน ดีขึ้นเมื่อพัก ESR/CRP ปกติ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-23-02",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "a23-gout-night",
+    "title": "เกาต์: ทำไมกำเริบที่โคนนิ้วหัวแม่เท้าตอนกลางดึก และ urate อาจปกติ",
+    "svg": "<svg viewBox=\"0 0 440 446\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: urate เกินจุดอิ่มตัวทำให้ผลึกเกาะกระดูกอ่อน ข้อปลายเท้าเย็นกว่าจุดอิ่มตัวจึงต่ำลง กลางคืนผลึกหลุดเข้าช่องข้อ กระตุ้น IL-1 beta และ neutrophil ขณะกำเริบ urate ในเลือดอาจปกติ ยืนยันด้วยผลึกรูปเข็ม\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"130\" y=\"18\" class=\"sm mid b\">ข้อโคนนิ้วหัวแม่เท้า (MTP ที่ 1)</text><rect x=\"104\" y=\"70\" width=\"80\" height=\"96\" rx=\"28\" class=\"lmu w2\"/><rect x=\"14\" y=\"90\" width=\"116\" height=\"56\" rx=\"18\" class=\"sk\"/><rect x=\"158\" y=\"94\" width=\"96\" height=\"48\" rx=\"16\" class=\"sk\"/><rect x=\"124\" y=\"92\" width=\"6\" height=\"52\" rx=\"2\" class=\"bx\"/><rect x=\"158\" y=\"96\" width=\"6\" height=\"44\" rx=\"2\" class=\"bx\"/><text x=\"52\" y=\"122\" class=\"xs mid mu\">metatarsal</text><text x=\"222\" y=\"122\" class=\"xs mid mu\">phalanx</text><line x1=\"118\" y1=\"98\" x2=\"126\" y2=\"104\" class=\"lms w2\"/><line x1=\"117\" y1=\"114\" x2=\"126\" y2=\"118\" class=\"lms w2\"/><line x1=\"118\" y1=\"132\" x2=\"126\" y2=\"137\" class=\"lms w2\"/><line x1=\"166\" y1=\"102\" x2=\"172\" y2=\"108\" class=\"lms w2\"/><line x1=\"166\" y1=\"128\" x2=\"173\" y2=\"132\" class=\"lms w2\"/><text x=\"130\" y=\"40\" class=\"xs mid mu\">ข้อปลายเท้า — อุณหภูมิต่ำกว่าแกนกลาง</text><text x=\"10\" y=\"210\" class=\"xs tms b\">urate &gt; 6.8 นานปี → ผลึก MSU</text><text x=\"10\" y=\"224\" class=\"xs tms\">เกาะผิวกระดูกอ่อนเงียบ ๆ (ยังไม่ปวด)</text><g data-s=\"2\"><line x1=\"138\" y1=\"100\" x2=\"146\" y2=\"108\" class=\"lms w2\"/><line x1=\"140\" y1=\"118\" x2=\"150\" y2=\"121\" class=\"lms w2\"/><line x1=\"136\" y1=\"134\" x2=\"146\" y2=\"140\" class=\"lms w2\"/><line x1=\"147\" y1=\"128\" x2=\"152\" y2=\"136\" class=\"lms w2\"/><text x=\"10\" y=\"246\" class=\"xs twa b\">กลางดึกข้อเย็นลง + น้ำในข้อถูกดูดกลับ</text><text x=\"10\" y=\"260\" class=\"xs twa\">เร็วกว่า urate → เข้มข้น ผลึกหลุดเข้าช่องข้อ</text></g><g data-s=\"3\"><g><rect x=\"90\" y=\"56\" width=\"108\" height=\"124\" rx=\"42\" class=\"lbad w3 da pl\"/></g><circle cx=\"118\" cy=\"194\" r=\"4\" class=\"badf\"><animateMotion dur=\"1.8s\" repeatCount=\"indefinite\" path=\"M0,0 L22,-82\"/></circle><circle cx=\"150\" cy=\"194\" r=\"4\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"-0.6s\" repeatCount=\"indefinite\" path=\"M0,0 L-6,-68\"/></circle><circle cx=\"178\" cy=\"194\" r=\"4\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"-1.2s\" repeatCount=\"indefinite\" path=\"M0,0 L-30,-90\"/></circle><text x=\"10\" y=\"282\" class=\"xs tbad b\">macrophage กลืนผลึก → NLRP3 → IL-1β</text><text x=\"10\" y=\"296\" class=\"xs tbad\">neutrophil ท่วม · ปวดสุดใน 6–12 ชม. · ไข้ได้</text></g><text x=\"362\" y=\"18\" class=\"sm mid b\">urate ในเลือด</text><text x=\"362\" y=\"34\" class=\"xs mid mu\">(mg/dL)</text><line x1=\"286\" y1=\"50\" x2=\"286\" y2=\"300\" class=\"ln\"/><line x1=\"280\" y1=\"300\" x2=\"434\" y2=\"300\" class=\"ln\"/><text x=\"278\" y=\"54\" class=\"xs end mu\">10</text><text x=\"278\" y=\"104\" class=\"xs end mu\">8</text><text x=\"278\" y=\"154\" class=\"xs end mu\">6</text><text x=\"278\" y=\"204\" class=\"xs end mu\">4</text><text x=\"278\" y=\"254\" class=\"xs end mu\">2</text><text x=\"278\" y=\"304\" class=\"xs end mu\">0</text><rect x=\"292\" y=\"100\" width=\"26\" height=\"200\" class=\"ac\" data-x=\"4\"/><rect x=\"292\" y=\"160\" width=\"26\" height=\"140\" class=\"ok\" data-s=\"4\"/><line x1=\"286\" y1=\"130\" x2=\"434\" y2=\"130\" class=\"lbad w2 da\"/><text x=\"326\" y=\"112\" class=\"xs tbad b\">จุดอิ่มตัว 37 °C</text><text x=\"326\" y=\"125\" class=\"xs tbad\">≈ 6.8</text><g data-s=\"2\"><line x1=\"286\" y1=\"150\" x2=\"434\" y2=\"150\" class=\"lms w2 da\"/><text x=\"326\" y=\"164\" class=\"xs tms b\">ข้อเย็น (35 °C)</text><text x=\"326\" y=\"177\" class=\"xs tms\">≈ 6.0 ตกผลึกง่าย</text></g><g data-s=\"4\"><text x=\"326\" y=\"214\" class=\"xs tok b\">ขณะกำเริบ</text><text x=\"326\" y=\"227\" class=\"xs tok\">อาจวัดได้ปกติ</text><rect x=\"8\" y=\"314\" width=\"424\" height=\"58\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"332\" class=\"xs mid b\">ขณะกำเริบ urate ในเลือดปกติหรือต่ำได้ราว 1 ใน 3</text><text x=\"220\" y=\"347\" class=\"xs mid\">อักเสบเพิ่มการขับทางไต + urate ถูกดึงไปเป็นผลึก</text><text x=\"220\" y=\"362\" class=\"xs mid\">→ ตัดเกาต์ไม่ได้ · วัดซ้ำหลังหาย ~2 สัปดาห์</text></g><g data-s=\"5\"><rect x=\"8\" y=\"380\" width=\"424\" height=\"58\" rx=\"10\" class=\"ms\"/><line x1=\"26\" y1=\"396\" x2=\"44\" y2=\"410\" class=\"lms w2\"/><line x1=\"30\" y1=\"412\" x2=\"46\" y2=\"424\" class=\"lms w2\"/><text x=\"234\" y=\"398\" class=\"xs mid b\">เจาะข้อ: ผลึกรูปเข็ม negatively birefringent</text><text x=\"234\" y=\"413\" class=\"xs mid\">เหลืองเมื่อขนานกับแกน compensator · อยู่ในเม็ดเลือดขาว</text><text x=\"234\" y=\"428\" class=\"xs mid\">หายเองใน 3–10 วัน (NET ห่อผลึก) — septic ไม่หายเอง</text></g></svg>",
+    "steps": [
+     {
+      "t": "Urate เกินจุดอิ่มตัวมานาน",
+      "cap": "urate ในเลือดสูงกว่าจุดอิ่มตัว (**ราว 6.8 mg/dL ที่ 37 °C**) เป็นปี → ผลึก **monosodium urate (MSU)** ค่อย ๆ เกาะผิวกระดูกอ่อนโดยยังไม่มีอาการ"
+     },
+     {
+      "t": "ข้อปลายเท้าเย็น + กลางดึก",
+      "cap": "urate ละลายได้น้อยลงเมื่ออุณหภูมิต่ำ ข้อปลายเท้าเย็นกว่าแกนกลาง (จุดอิ่มตัวลดเหลือราว 6 ที่ 35 °C) · ตอนนอนข้อเย็นลงและ **น้ำในข้อถูกดูดกลับเร็วกว่า urate** → ผลึกหลุดเข้าช่องข้อ จึงมักเริ่ม **กลางดึกที่ MTP ที่ 1**"
+     },
+     {
+      "t": "ผลึก → IL-1β → neutrophil",
+      "cap": "macrophage กลืนผลึก กระตุ้น **NLRP3 → IL-1β** ดึง neutrophil เข้ามามหาศาล → ปวดถึงขีดสุดใน **6–12 ชม.** บวมแดงร้อนลามเกินข้อ มีไข้ได้ — คล้าย septic arthritis จึงต้องเจาะข้อ"
+     },
+     {
+      "t": "Urate ขณะกำเริบอาจปกติ",
+      "cap": "การอักเสบ **เพิ่มการขับ urate ทางไต** และ urate ส่วนหนึ่งถูกดึงไปเป็นผลึก → ราว **1 ใน 3 วัดได้ปกติหรือต่ำ** จึงใช้ตัดเกาต์ไม่ได้ ให้วัดซ้ำหลังหายราว 2 สัปดาห์"
+     },
+     {
+      "t": "ยืนยันด้วยผลึก แล้วหายเอง",
+      "cap": "น้ำไขข้อพบ **ผลึกรูปเข็ม negatively birefringent เหลืองเมื่อขนานกับแกน compensator** อยู่ในเม็ดเลือดขาว · neutrophil ที่ตายปล่อย NET ห่อผลึก จึง **หายเองใน 3–10 วัน** ต่างจาก septic arthritis ที่แย่ลงเรื่อย ๆ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-23-05",
+   "after": "ลำดับการจัดการ",
+   "anim": {
+    "key": "a23-septic-clock",
+    "title": "Septic arthritis — กระดูกอ่อนพังเป็นวัน แต่ภาพรังสีเปลี่ยนเป็นสัปดาห์",
+    "svg": "<svg viewBox=\"0 0 440 444\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อจากกระแสเลือดตกที่ synovium neutrophil ท่วมข้อเป็นหนอง เอนไซม์และ toxin ย่อยกระดูกอ่อนในไม่กี่วัน ภาพรังสีเปลี่ยนหลัง 2 ถึง 3 สัปดาห์ ต้องเจาะข้อ ระบายหนองทุกวัน และให้ยาทางหลอดเลือดดำ\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14,16 L14,250\" class=\"lac w3 fl\"/><text x=\"20\" y=\"262\" class=\"xs tac\">หลอดเลือด</text><rect x=\"34\" y=\"92\" width=\"150\" height=\"100\" rx=\"36\" class=\"ac\"/><rect x=\"64\" y=\"18\" width=\"90\" height=\"102\" rx=\"24\" class=\"sk\"/><rect x=\"64\" y=\"164\" width=\"90\" height=\"84\" rx=\"20\" class=\"sk\"/><rect x=\"66\" y=\"110\" width=\"86\" height=\"10\" rx=\"4\" class=\"wa\" data-x=\"3\"/><rect x=\"66\" y=\"164\" width=\"86\" height=\"10\" rx=\"4\" class=\"wa\" data-x=\"3\"/><g data-s=\"3\"><path d=\"M66,116 L80,116 L84,119 L96,116 L110,119 L118,116 L134,119 L152,116 L152,120 L66,120 Z\" class=\"bad\"/><path d=\"M66,168 L84,168 L90,165 L104,168 L120,165 L132,168 L152,167 L152,164 L66,164 Z\" class=\"bad\"/></g><text x=\"109\" y=\"72\" class=\"xs mid mu\">femur</text><text x=\"109\" y=\"214\" class=\"xs mid mu\">tibia</text><text x=\"158\" y=\"232\" class=\"xs tac\">synovium</text><g><rect x=\"88\" y=\"138\" width=\"7\" height=\"3.4\" rx=\"1.5\" class=\"inkf\"/><rect x=\"120\" y=\"148\" width=\"7\" height=\"3.4\" rx=\"1.5\" class=\"inkf\"/><circle cx=\"14\" cy=\"70\" r=\"3\" class=\"inkf\"><animateMotion dur=\"2.2s\" repeatCount=\"indefinite\" path=\"M0,0 L30,48\"/></circle><circle cx=\"14\" cy=\"200\" r=\"3\" class=\"inkf\"><animateMotion dur=\"2.2s\" begin=\"-1.1s\" repeatCount=\"indefinite\" path=\"M0,0 L30,-40\"/></circle></g><text x=\"210\" y=\"34\" class=\"sm b\">① เชื้อจากเลือดตกที่ synovium</text><text x=\"210\" y=\"50\" class=\"xs\">หลอดเลือดฝอยมาก ไม่มี basement</text><text x=\"210\" y=\"63\" class=\"xs\">membrane กั้น · ข้อผิดปกติเดิมติดง่าย</text><g data-s=\"2\"><circle cx=\"80\" cy=\"132\" r=\"5.5\" class=\"bx\"/><circle cx=\"78.5\" cy=\"131\" r=\"1.6\" class=\"inkf\"/><circle cx=\"82\" cy=\"133.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"100\" cy=\"146\" r=\"5.5\" class=\"bx\"/><circle cx=\"98.5\" cy=\"145\" r=\"1.6\" class=\"inkf\"/><circle cx=\"102\" cy=\"147.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"118\" cy=\"132\" r=\"5.5\" class=\"bx\"/><circle cx=\"116.5\" cy=\"131\" r=\"1.6\" class=\"inkf\"/><circle cx=\"120\" cy=\"133.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"138\" cy=\"146\" r=\"5.5\" class=\"bx\"/><circle cx=\"136.5\" cy=\"145\" r=\"1.6\" class=\"inkf\"/><circle cx=\"140\" cy=\"147.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"74\" cy=\"152\" r=\"5.5\" class=\"bx\"/><circle cx=\"72.5\" cy=\"151\" r=\"1.6\" class=\"inkf\"/><circle cx=\"76\" cy=\"153.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"140\" cy=\"128\" r=\"5.5\" class=\"bx\"/><circle cx=\"138.5\" cy=\"127\" r=\"1.6\" class=\"inkf\"/><circle cx=\"142\" cy=\"129.5\" r=\"1.6\" class=\"inkf\"/><circle cx=\"108\" cy=\"156\" r=\"5.5\" class=\"bx\"/><circle cx=\"106.5\" cy=\"155\" r=\"1.6\" class=\"inkf\"/><circle cx=\"110\" cy=\"157.5\" r=\"1.6\" class=\"inkf\"/><text x=\"210\" y=\"96\" class=\"sm b tbad\">② neutrophil ท่วม → หนอง</text><text x=\"210\" y=\"112\" class=\"xs\">WBC &gt; 50,000 · PMN &gt; 90%</text><text x=\"210\" y=\"125\" class=\"xs\">หนองดัน capsule ตึง ขยับนิดเดียวก็เจ็บ</text></g><g data-s=\"3\"><text x=\"210\" y=\"158\" class=\"sm b tbad\">③ กระดูกอ่อนพังในไม่กี่วัน</text><text x=\"210\" y=\"174\" class=\"xs\">protease ของ neutrophil + toxin</text><text x=\"210\" y=\"187\" class=\"xs\">ของ S. aureus · แรงดันหนองลดเลือดเลี้ยง</text></g><g data-s=\"4\"><text x=\"115\" y=\"284\" class=\"xs mid mu\">ชั่วโมง</text><text x=\"200\" y=\"284\" class=\"xs mid mu\">1–3 วัน</text><text x=\"365\" y=\"284\" class=\"xs mid mu\">2–3 สัปดาห์</text><text x=\"10\" y=\"300\" class=\"xs b\">กระดูกอ่อน</text><rect x=\"88\" y=\"291\" width=\"52\" height=\"11\" class=\"okf\"/><rect x=\"140\" y=\"291\" width=\"64\" height=\"11\" class=\"msf\"/><rect x=\"204\" y=\"291\" width=\"226\" height=\"11\" class=\"badf\"/><text x=\"10\" y=\"326\" class=\"xs b\">ภาพรังสี</text><rect x=\"88\" y=\"313\" width=\"212\" height=\"20\" rx=\"4\" class=\"sk\"/><text x=\"194\" y=\"327\" class=\"xs mid\">ปกติ / แค่เนื้อเยื่อบวม</text><rect x=\"300\" y=\"313\" width=\"130\" height=\"20\" rx=\"4\" class=\"bad\"/><text x=\"365\" y=\"327\" class=\"xs mid b\">erosion + ช่องข้อแคบ</text><text x=\"220\" y=\"350\" class=\"xs mid tbad b\">ภาพรังสีตามหลังความเสียหายจริง 2–3 สัปดาห์</text><text x=\"220\" y=\"364\" class=\"xs mid tbad\">→ ใช้เป็น baseline เท่านั้น อย่ารอภาพรังสี</text></g><g data-s=\"5\"><path d=\"M176,184 L212,210\" class=\"lok w3 fl\" marker-end=\"url(#ah-ok)\"/><text x=\"222\" y=\"224\" class=\"xs tok b\">ระบายหนองทุกวัน</text><text x=\"222\" y=\"238\" class=\"xs tok\">หรือส่องกล้องล้างข้อ</text><rect x=\"8\" y=\"374\" width=\"424\" height=\"64\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"392\" class=\"xs mid b\">เจาะข้อ + hemoculture ก่อนให้ยา (ถ้าไม่ช็อก)</text><text x=\"220\" y=\"407\" class=\"xs mid\">→ ระบายหนองทุกวัน + ยา IV ตาม Gram stain</text><text x=\"220\" y=\"422\" class=\"xs mid\">ติดตาม WBC น้ำไขข้อ/ผลเพาะเชื้อ · ยาอย่างเดียวไม่พอ</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อจากเลือดตกที่ synovium",
+      "cap": "เชื้อส่วนใหญ่มาทาง **กระแสเลือด** แล้วตกที่ synovium ซึ่งมีหลอดเลือดฝอยมากและ **ไม่มี basement membrane กั้น** · ข้อที่ผิดปกติเดิม (RA, ข้อเทียม) ติดง่าย · พบที่เข่าบ่อยที่สุด"
+     },
+     {
+      "t": "Neutrophil ท่วมข้อ",
+      "cap": "neutrophil ถูกเรียกมาจำนวนมหาศาล → น้ำไขข้อ **WBC > 50,000 PMN > 90%** · หนองดัน capsule ตึง ขยับ passive นิดเดียวก็เจ็บมาก · hemoculture บวกราวครึ่งหนึ่ง"
+     },
+     {
+      "t": "กระดูกอ่อนพังในไม่กี่วัน",
+      "cap": "**protease ของ neutrophil + toxin ของ S. aureus** ย่อย collagen และ proteoglycan ของกระดูกอ่อน + แรงดันหนองลดเลือดไปเลี้ยง → เสียหายถาวรภายในไม่กี่วัน"
+     },
+     {
+      "t": "ภาพรังสีตามไม่ทัน",
+      "cap": "ระยะแรกภาพรังสีเห็นแค่เนื้อเยื่อบวม/ช่องข้อกว้าง · **erosion และช่องข้อแคบเห็นหลัง 2–3 สัปดาห์** → ใช้เป็น baseline เท่านั้น ห้ามรอภาพรังสีก่อนวินิจฉัย"
+     },
+     {
+      "t": "เจาะ → ระบาย → ยา IV",
+      "cap": "**เจาะข้อ + hemoculture ก่อนให้ยา** (ถ้าไม่ช็อก) → **ระบายหนองทุกวัน** หรือส่องกล้องล้างข้อ + ยา IV ตาม Gram stain · ติดตาม WBC น้ำไขข้อและผลเพาะเชื้อ — ยาปฏิชีวนะอย่างเดียวไม่พอ"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-33-02",
+   "after": "Lupus nephritis",
+   "anim": {
+    "key": "a33-ln-labs",
+    "title": "Lupus nephritis กำเริบ — แล็บห้าตัวขยับไปด้วยกันอย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 444\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: anti-dsDNA จับ dsDNA เป็น immune complex กระตุ้น complement ทำให้ C3 C4 ต่ำ แล้วตกตะกอนใน glomerulus เกิดโปรตีนรั่ว ค่าแล็บห้าตัวเปลี่ยนตามการกำเริบ CRP มักไม่ขึ้น\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"66\" width=\"300\" height=\"52\" rx=\"26\" class=\"sk\"/><text x=\"14\" y=\"60\" class=\"xs b\">กระแสเลือด</text><circle cx=\"370\" cy=\"92\" r=\"58\" class=\"lmu w2\"/><circle cx=\"370\" cy=\"92\" r=\"46\" class=\"bx\"/><circle cx=\"350\" cy=\"76\" r=\"12\" class=\"lac w2\"/><circle cx=\"388\" cy=\"74\" r=\"12\" class=\"lac w2\"/><circle cx=\"346\" cy=\"106\" r=\"12\" class=\"lac w2\"/><circle cx=\"384\" cy=\"108\" r=\"12\" class=\"lac w2\"/><circle cx=\"368\" cy=\"92\" r=\"10\" class=\"lac w2\"/><path d=\"M310,92 L322,92\" class=\"lac w3\"/><text x=\"370\" y=\"22\" class=\"xs mid b\">glomerulus</text><path d=\"M370,150 L370,182\" class=\"lwa w3 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"378\" y=\"176\" class=\"xs twa\">ปัสสาวะ</text><text x=\"160\" y=\"140\" class=\"xs mid tok\" data-x=\"2\">ช่วงสงบ: แล็บใกล้ปกติ</text><g data-s=\"2\"><path d=\"M40,30 q5,-6 10,0 t10,0 t10,0\" class=\"ln w2\"/><text x=\"84\" y=\"34\" class=\"xs\">dsDNA จากเซลล์ที่ตาย</text><path d=\"M70,38 L106,62\" class=\"ln\" marker-end=\"url(#ah)\"/><path d=\"M150,80 L150,88 M150,80 L145,75 M150,80 L155,75\" class=\"lbad w2\"/><path d=\"M206,100 L206,108 M206,100 L201,95 M206,100 L211,95\" class=\"lbad w2\"/><circle cx=\"40\" cy=\"88\" r=\"4.5\" class=\"badf\"><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L260,0\"/></circle><circle cx=\"120\" cy=\"98\" r=\"4.5\" class=\"badf\"><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L180,0 L-80,0\"/></circle><circle cx=\"220\" cy=\"86\" r=\"4.5\" class=\"badf\"><animateMotion dur=\"3s\" repeatCount=\"indefinite\" path=\"M0,0 L80,0 L-180,0\"/></circle><text x=\"160\" y=\"140\" class=\"xs mid tbad b\">anti-dsDNA จับ dsDNA → immune complex</text></g><g data-s=\"3\"><circle cx=\"70\" cy=\"108\" r=\"3.5\" class=\"msf\"/><circle cx=\"250\" cy=\"76\" r=\"3.5\" class=\"msf\"/><g class=\"pl\"><circle cx=\"110\" cy=\"76\" r=\"3.5\" class=\"msf\"/><circle cx=\"190\" cy=\"108\" r=\"3.5\" class=\"msf\"/></g><text x=\"160\" y=\"156\" class=\"xs mid tms b\">กระตุ้น classical pathway → C3/C4 ถูกใช้หมด</text></g><g data-s=\"4\"><g class=\"pl\"><circle cx=\"350\" cy=\"64\" r=\"4\" class=\"badf\"/><circle cx=\"398\" cy=\"78\" r=\"4\" class=\"badf\"/><circle cx=\"338\" cy=\"110\" r=\"4\" class=\"badf\"/><circle cx=\"392\" cy=\"116\" r=\"4\" class=\"badf\"/><circle cx=\"368\" cy=\"82\" r=\"4\" class=\"badf\"/></g><text x=\"370\" y=\"200\" class=\"xs mid tbad b\">โปรตีนรั่ว · RBC cast</text><text x=\"160\" y=\"172\" class=\"xs mid tbad b\">ตกตะกอนใน glomerulus → ไม่มีอาการ</text><text x=\"160\" y=\"187\" class=\"xs mid tbad\">เจอได้จากตรวจปัสสาวะทุกครั้งที่นัดเท่านั้น</text></g><line x1=\"20\" y1=\"340\" x2=\"420\" y2=\"340\" class=\"ln\"/><text x=\"66\" y=\"232\" class=\"xs mid b\">anti-dsDNA</text><text x=\"142\" y=\"232\" class=\"xs mid b\">C3</text><text x=\"218\" y=\"232\" class=\"xs mid b\">C4</text><text x=\"294\" y=\"232\" class=\"xs mid b\">UPCR</text><text x=\"370\" y=\"232\" class=\"xs mid b\">CRP</text><rect x=\"49\" y=\"244\" width=\"34\" height=\"96\" rx=\"3\" class=\"lmu da\"/><rect x=\"125\" y=\"244\" width=\"34\" height=\"96\" rx=\"3\" class=\"lmu da\"/><rect x=\"201\" y=\"244\" width=\"34\" height=\"96\" rx=\"3\" class=\"lmu da\"/><rect x=\"277\" y=\"244\" width=\"34\" height=\"96\" rx=\"3\" class=\"lmu da\"/><rect x=\"353\" y=\"244\" width=\"34\" height=\"96\" rx=\"3\" class=\"lmu da\"/><rect x=\"49\" y=\"326\" width=\"34\" height=\"14\" rx=\"3\" class=\"ok\" data-x=\"2\"/><rect x=\"49\" y=\"256\" width=\"34\" height=\"84\" rx=\"3\" class=\"bad\" data-s=\"2\"/><rect x=\"125\" y=\"280\" width=\"34\" height=\"60\" rx=\"3\" class=\"ok\" data-x=\"3\"/><rect x=\"125\" y=\"318\" width=\"34\" height=\"22\" rx=\"3\" class=\"bad\" data-s=\"3\"/><rect x=\"201\" y=\"286\" width=\"34\" height=\"54\" rx=\"3\" class=\"ok\" data-x=\"3\"/><rect x=\"201\" y=\"322\" width=\"34\" height=\"18\" rx=\"3\" class=\"bad\" data-s=\"3\"/><rect x=\"277\" y=\"332\" width=\"34\" height=\"8\" rx=\"3\" class=\"ok\" data-x=\"4\"/><rect x=\"277\" y=\"262\" width=\"34\" height=\"78\" rx=\"3\" class=\"bad\" data-s=\"4\"/><rect x=\"353\" y=\"328\" width=\"34\" height=\"12\" rx=\"3\" class=\"ok\" /><line x1=\"270\" y1=\"310\" x2=\"318\" y2=\"310\" class=\"lbad w2 da\"/><text x=\"322\" y=\"306\" class=\"xs tbad\" data-s=\"4\">0.5</text><text x=\"66\" y=\"356\" class=\"xs mid tbad b\" data-s=\"2\">↑ สูง</text><text x=\"142\" y=\"356\" class=\"xs mid tbad b\" data-s=\"3\">↓ ต่ำ</text><text x=\"218\" y=\"356\" class=\"xs mid tbad b\" data-s=\"3\">↓ ต่ำ</text><text x=\"294\" y=\"356\" class=\"xs mid tbad b\" data-s=\"4\">≥ 0.5 g/g</text><text x=\"370\" y=\"356\" class=\"xs mid tok b\" data-s=\"5\">มักไม่ขึ้น</text><g data-s=\"5\"><rect x=\"8\" y=\"368\" width=\"424\" height=\"70\" rx=\"10\" class=\"ms\"/><text x=\"220\" y=\"386\" class=\"xs mid b\">active sediment + C3/C4 ต่ำ + anti-dsDNA สูง = nephritis กำเริบ</text><text x=\"220\" y=\"401\" class=\"xs mid\">UPCR ≥ 0.5 g/g · active sediment · Cr ขึ้น → เจาะไต (class กำหนดยา)</text><text x=\"220\" y=\"416\" class=\"xs mid\">ESR ขึ้นแต่ CRP มักไม่ขึ้น (type I IFN กด) → CRP สูงมากคิดติดเชื้อก่อน</text><text x=\"220\" y=\"431\" class=\"xs mid\">HCQ ทุกราย + ACEI/ARB · class III/IV → MMF หรือ CYC + steroid</text></g></svg>",
+    "steps": [
+     {
+      "t": "ช่วงสงบ",
+      "cap": "ช่วงโรคสงบ anti-dsDNA ต่ำ C3/C4 ปกติ ปัสสาวะปกติ — แต่ **lupus nephritis ระยะแรกไม่มีอาการ** จึงต้องตรวจปัสสาวะทุกครั้งที่นัด"
+     },
+     {
+      "t": "anti-dsDNA ↑ → immune complex",
+      "cap": "ซากเซลล์ที่ตายปล่อย dsDNA → **anti-dsDNA จับเป็น immune complex** ลอยในเลือด ระดับ anti-dsDNA จึงขึ้นตามกิจกรรมของโรค"
+     },
+     {
+      "t": "Complement ถูกใช้ — C3/C4 ↓",
+      "cap": "immune complex กระตุ้น **classical pathway** → C3, C4 ถูกใช้เร็วกว่าที่ตับสร้างทัน → **C3/C4 ต่ำ** (ต่างจาก ANCA และ IgA vasculitis ที่ complement ปกติ)"
+     },
+     {
+      "t": "ตกตะกอนใน glomerulus",
+      "cap": "immune complex ตกตะกอนใน glomerulus → complement และเซลล์อักเสบทำลาย → **โปรตีนรั่ว RBC cast** · **UPCR ≥ 0.5 g/g** หรือ active sediment หรือ Cr ขึ้นโดยไม่มีเหตุ = ข้อบ่งชี้เจาะไต"
+     },
+     {
+      "t": "อ่านแล็บคู่กัน + CRP",
+      "cap": "**active sediment + C3/C4 ต่ำ + anti-dsDNA สูง** = nephritis กำเริบ · ESR ขึ้นแต่ **CRP มักไม่ขึ้น** (type I IFN กด) — CRP สูงมากให้คิดติดเชื้อก่อน · class III/IV → MMF หรือ cyclophosphamide + steroid · HCQ ทุกราย"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-33-08",
+   "after": "กลไก: ทำไม PMR ฝืดแต่ไม่อ่อนแรง และ GCA ทำให้ตาบอด",
+   "anim": {
+    "key": "a33-pmr",
+    "title": "PMR — อักเสบที่ bursa ไม่ใช่กล้ามเนื้อ: ปวดฝืดแต่ไม่อ่อนแรง และต้องถามหา GCA",
+    "svg": "<svg viewBox=\"0 0 440 436\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: PMR อักเสบที่ bursa รอบไหล่ไม่ใช่ที่กล้ามเนื้อ CK ปกติ ขยับแล้วเจ็บแต่ไม่อ่อนแรง IL-6 ทำให้ตับสร้าง CRP prednisolone ขนาดต่ำได้ผลใน 2 ถึง 3 วัน และต้องถามหา GCA\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"92\" y=\"150\" width=\"44\" height=\"80\" rx=\"10\" class=\"sk\"/><circle cx=\"114\" cy=\"132\" r=\"42\" class=\"sk\"/><path d=\"M50,62 C14,112 22,192 76,228 L92,214 C58,182 56,122 80,84 Z\" class=\"ok\"/><rect x=\"64\" y=\"52\" width=\"112\" height=\"18\" rx=\"8\" class=\"sk\"/><text x=\"120\" y=\"46\" class=\"xs mid mu\">acromion</text><ellipse cx=\"116\" cy=\"82\" rx=\"54\" ry=\"9\" class=\"bad\" data-x=\"4\"/><ellipse cx=\"116\" cy=\"82\" rx=\"50\" ry=\"7\" class=\"ok\" data-s=\"4\"/><text x=\"30\" y=\"246\" class=\"xs tok b\">deltoid ปกติ</text><text x=\"116\" y=\"106\" class=\"xs mid tbad b\" data-x=\"4\">bursa อักเสบ</text><text x=\"116\" y=\"106\" class=\"xs mid tok b\" data-s=\"4\">bursa สงบ</text><text x=\"114\" y=\"138\" class=\"xs mid mu\">หัวกระดูกต้นแขน</text><g data-x=\"4\"><g class=\"pl\"><ellipse cx=\"116\" cy=\"82\" rx=\"58\" ry=\"12\" class=\"lbad w2\"/></g></g><text x=\"230\" y=\"30\" class=\"sm b tbad\">① อักเสบที่ bursa รอบไหล่/สะโพก</text><text x=\"230\" y=\"46\" class=\"xs\">subacromial/subdeltoid · trochanteric</text><text x=\"230\" y=\"62\" class=\"xs tok b\">ตัวกล้ามเนื้อปกติ → CK ปกติ</text><text x=\"230\" y=\"76\" class=\"xs mu\">อายุ &gt; 50 ปีเสมอ · ฝืดเช้า &gt; 45–60 นาที</text><g data-s=\"2\"><path d=\"M150,206 C196,190 210,140 196,96\" class=\"lbad w3 da\" marker-end=\"url(#ah-bad)\"/><text x=\"230\" y=\"108\" class=\"sm b tbad\">② ขยับแล้วเจ็บ → ยกแขนไม่ขึ้น</text><text x=\"230\" y=\"124\" class=\"xs\">แต่แรงกล้ามเนื้อจริงปกติ (ไม่ใช่อ่อนแรง)</text><text x=\"230\" y=\"138\" class=\"xs mu\">myositis: อ่อนแรงจริง + CK สูง</text></g><g data-s=\"3\"><rect x=\"230\" y=\"156\" width=\"64\" height=\"32\" rx=\"8\" class=\"bad\"/><text x=\"262\" y=\"176\" class=\"xs mid b\">IL-6</text><line x1=\"294\" y1=\"172\" x2=\"316\" y2=\"172\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"318\" y=\"156\" width=\"40\" height=\"32\" rx=\"8\" class=\"ms\"/><text x=\"338\" y=\"176\" class=\"xs mid b\">ตับ</text><line x1=\"358\" y1=\"172\" x2=\"372\" y2=\"172\" class=\"ln\" marker-end=\"url(#ah)\"/><text x=\"374\" y=\"168\" class=\"xs b tbad\">CRP ↑</text><text x=\"374\" y=\"182\" class=\"xs b tbad\">ESR ↑</text><text x=\"230\" y=\"206\" class=\"xs\">ไข้ต่ำ · น้ำหนักลด · อ่อนเพลีย</text></g><g data-s=\"4\"><rect x=\"8\" y=\"262\" width=\"424\" height=\"62\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"281\" class=\"xs mid b\">Prednisolone 12.5–25 mg/วัน → กด IL-6 → ดีขึ้นชัดใน 2–3 วัน</text><text x=\"220\" y=\"297\" class=\"xs mid\">ไม่ดีขึ้น = ทบทวนการวินิจฉัย: RA ผู้สูงอายุ · myositis</text><text x=\"220\" y=\"312\" class=\"xs mid\">ไทรอยด์ต่ำ · มะเร็ง · การติดเชื้อ</text></g><g data-s=\"5\"><rect x=\"8\" y=\"334\" width=\"424\" height=\"94\" rx=\"10\" class=\"bad\"/><text x=\"220\" y=\"353\" class=\"sm mid b\">PMR ~15–20% มี GCA ร่วม — ถามทุกราย</text><text x=\"220\" y=\"371\" class=\"xs mid\">ปวดขมับใหม่ · หนังศีรษะเจ็บ · jaw claudication · ตามัว/มองไม่เห็นชั่วคราว</text><text x=\"220\" y=\"389\" class=\"xs mid b\">สงสัย GCA → prednisolone 40–60 mg ทันที ไม่รอชิ้นเนื้อ</text><text x=\"220\" y=\"405\" class=\"xs mid\">(IV methylprednisolone ถ้ามีอาการตาแล้ว)</text><text x=\"220\" y=\"421\" class=\"xs mid\">posterior ciliary artery ตีบ → AION ตาบอดถาวร</text></g></svg>",
+    "steps": [
+     {
+      "t": "อักเสบที่ bursa ไม่ใช่กล้ามเนื้อ",
+      "cap": "PMR อักเสบที่ **bursa และเยื่อบุข้อรอบไหล่และสะโพก** (subacromial/subdeltoid, trochanteric) ส่วนตัวกล้ามเนื้อปกติ → **CK ปกติ** · อายุ > 50 ปีเสมอ ปวดฝืดสองข้างตอนเช้านานกว่า 45–60 นาที"
+     },
+     {
+      "t": "เจ็บจนยกแขนไม่ขึ้น — แต่ไม่อ่อนแรง",
+      "cap": "ขยับแล้วยืด bursa ที่อักเสบจึงเจ็บจนยกแขนลำบาก แต่ **แรงกล้ามเนื้อจริงปกติ** — ต่างจาก myositis ที่อ่อนแรงจริงและ CK สูง"
+     },
+     {
+      "t": "IL-6 → ตับ → ESR/CRP สูง",
+      "cap": "**IL-6** จากเนื้อเยื่อที่อักเสบสั่งตับสร้าง CRP และ fibrinogen → **ESR/CRP สูงชัด** ร่วมกับไข้ต่ำ น้ำหนักลด"
+     },
+     {
+      "t": "Prednisolone ขนาดต่ำได้ผลใน 2–3 วัน",
+      "cap": "steroid กดการสร้าง IL-6 ทันที → **prednisolone 12.5–25 mg/วัน ดีขึ้นชัดใน 2–3 วัน** · ถ้าไม่ดีขึ้นให้ทบทวนการวินิจฉัย (RA ในผู้สูงอายุ, myositis, ไทรอยด์ต่ำ, มะเร็ง, ติดเชื้อ)"
+     },
+     {
+      "t": "ถามหา GCA ทุกราย",
+      "cap": "PMR เกิดร่วมกับ GCA ได้ราว 15–20% → ถาม **ปวดขมับใหม่ หนังศีรษะเจ็บ jaw claudication ตามัว** · สงสัย GCA ให้ **prednisolone 40–60 mg ทันที** ไม่รอชิ้นเนื้อ เพราะหัวประสาทตาขาดเลือด (AION) ทำให้ตาบอดถาวร"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-33-09",
+   "after": "IgA vasculitis (Henoch–Schönlein purpura)",
+   "anim": {
+    "key": "a33-iga-vasc",
+    "title": "IgA vasculitis — immune complex เดียว กระจายสี่ระบบ",
+    "svg": "<svg viewBox=\"0 0 440 436\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: หลังติดเชื้อทางเดินหายใจส่วนบน immune complex ที่มี IgA ตกที่หลอดเลือดเล็กของผิวหนัง ข้อ ลำไส้ และไต เกิด palpable purpura ปวดข้อ ปวดท้อง และไตอักเสบ complement ปกติ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"10\" width=\"190\" height=\"34\" rx=\"9\" class=\"sk\"/><text x=\"103\" y=\"31\" class=\"xs mid b\">ติดเชื้อทางเดินหายใจส่วนบน</text><line x1=\"198\" y1=\"27\" x2=\"232\" y2=\"27\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"234\" y=\"10\" width=\"198\" height=\"34\" rx=\"9\" class=\"ac\"/><text x=\"333\" y=\"31\" class=\"xs mid b\">immune complex ที่มี IgA ในเลือด</text><path d=\"M14,70 L426,70\" class=\"lac w5 fl\"/><text x=\"220\" y=\"62\" class=\"xs mid tac\">หลอดเลือดเล็กทั่วร่างกาย</text><circle cx=\"20\" cy=\"70\" r=\"4.5\" class=\"acf\"><animateMotion dur=\"4s\" repeatCount=\"indefinite\" path=\"M0,0 L406,0\"/></circle><circle cx=\"150\" cy=\"70\" r=\"4.5\" class=\"acf\"><animateMotion dur=\"4s\" repeatCount=\"indefinite\" path=\"M0,0 L276,0 L-130,0\"/></circle><circle cx=\"300\" cy=\"70\" r=\"4.5\" class=\"acf\"><animateMotion dur=\"4s\" repeatCount=\"indefinite\" path=\"M0,0 L126,0 L-280,0\"/></circle><g data-s=\"2\"><line x1=\"100\" y1=\"74\" x2=\"100\" y2=\"94\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"8\" y=\"96\" width=\"206\" height=\"112\" rx=\"10\" class=\"bad\"/><text x=\"20\" y=\"116\" class=\"sm b\">ผิวหนัง</text><g class=\"pl\"><circle cx=\"176\" cy=\"112\" r=\"4\" class=\"badf\"/><circle cx=\"190\" cy=\"120\" r=\"3.5\" class=\"badf\"/><circle cx=\"170\" cy=\"126\" r=\"3\" class=\"badf\"/><circle cx=\"196\" cy=\"106\" r=\"3\" class=\"badf\"/></g><text x=\"20\" y=\"136\" class=\"xs b\">palpable purpura ที่ขาและก้น</text><text x=\"20\" y=\"152\" class=\"xs\">ผนัง venule อักเสบ → RBC รั่ว</text><text x=\"20\" y=\"167\" class=\"xs\">นูน คลำได้ กดไม่จาง</text><text x=\"20\" y=\"183\" class=\"xs mu\">ขา/ก้นแรงดันสูงเมื่อยืน</text><text x=\"20\" y=\"198\" class=\"xs mu\">(เกล็ดเลือดต่ำ = จุดแบนราบ)</text></g><g data-s=\"3\"><line x1=\"330\" y1=\"74\" x2=\"330\" y2=\"94\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"226\" y=\"96\" width=\"206\" height=\"112\" rx=\"10\" class=\"ms\"/><text x=\"238\" y=\"116\" class=\"sm b\">ข้อ + ลำไส้</text><text x=\"238\" y=\"136\" class=\"xs b\">ปวดข้อ</text><text x=\"238\" y=\"154\" class=\"xs b\">ผนังลำไส้บวม มีเลือดออก</text><text x=\"238\" y=\"169\" class=\"xs\">→ ปวดบิด ถ่ายเป็นเลือด</text><text x=\"238\" y=\"187\" class=\"xs tbad b\">เด็ก: intussusception</text><text x=\"238\" y=\"201\" class=\"xs tbad\">→ ส่งอัลตราซาวด์</text></g><g data-s=\"4\"><path d=\"M220,74 L220,228\" class=\"lac w2\" marker-end=\"url(#ah-ac)\"/><rect x=\"8\" y=\"230\" width=\"424\" height=\"84\" rx=\"10\" class=\"wa\"/><text x=\"20\" y=\"250\" class=\"sm b\">ไต</text><circle cx=\"398\" cy=\"270\" r=\"22\" class=\"bx\"/><g class=\"pl\"><circle cx=\"392\" cy=\"266\" r=\"4\" class=\"acf\"/><circle cx=\"404\" cy=\"276\" r=\"4\" class=\"acf\"/><circle cx=\"398\" cy=\"262\" r=\"3\" class=\"acf\"/></g><text x=\"20\" y=\"270\" class=\"xs b\">IgA ตกที่ mesangium — ภาพเหมือน IgA nephropathy</text><text x=\"20\" y=\"287\" class=\"xs\">เลือด/โปรตีนในปัสสาวะ · ผู้ใหญ่รุนแรงกว่าเด็ก</text><text x=\"20\" y=\"304\" class=\"xs mu\">→ ต้องตามปัสสาวะต่อแม้ผื่นหายแล้ว</text></g><g data-s=\"5\"><rect x=\"8\" y=\"324\" width=\"424\" height=\"104\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"344\" class=\"sm mid b\">complement ปกติ · เกล็ดเลือดปกติ</text><text x=\"220\" y=\"361\" class=\"xs mid\">แยกจาก SLE และ cryoglobulinemia ที่ complement ต่ำ</text><text x=\"220\" y=\"380\" class=\"xs mid b\">ส่วนใหญ่หายเองใน 4–8 สัปดาห์</text><text x=\"220\" y=\"397\" class=\"xs mid\">แต่ต้องตามปัสสาวะและความดันอย่างน้อย 6 เดือน</text><text x=\"220\" y=\"416\" class=\"xs mid\">steroid เมื่อปวดท้องรุนแรงหรือไตอักเสบรุนแรง</text></g></svg>",
+    "steps": [
+     {
+      "t": "IgA immune complex หลังติดเชื้อ",
+      "cap": "มักตามหลัง **การติดเชื้อทางเดินหายใจส่วนบน** → เกิด **immune complex ที่มี IgA** ลอยในเลือด ไปตกที่ผนังหลอดเลือดเล็กหลายระบบพร้อมกัน — พบในเด็กบ่อยกว่าผู้ใหญ่"
+     },
+     {
+      "t": "ผิวหนัง: palpable purpura",
+      "cap": "ตกที่ผนัง **postcapillary venule** → ผนังอักเสบ RBC และน้ำรั่วออก → **palpable purpura นูน คลำได้ กดไม่จาง** ที่ขาและก้นซึ่งแรงดันในหลอดเลือดสูงเมื่อยืน · จุดเลือดออกจากเกล็ดเลือดต่ำจะแบนราบ"
+     },
+     {
+      "t": "ข้อและลำไส้",
+      "cap": "ตกที่ข้อ → **ปวดข้อ** · ตกที่ผนังลำไส้ → บวมและเลือดออก → **ปวดบิด ถ่ายเป็นเลือด** ส่วนที่บวมเป็นจุดนำให้ **ลำไส้กลืนกัน (intussusception) ในเด็ก** → อัลตราซาวด์"
+     },
+     {
+      "t": "ไต: เหมือน IgA nephropathy",
+      "cap": "ตกที่ mesangium ของ glomerulus (ภาพเหมือน **IgA nephropathy**) → เลือดและโปรตีนในปัสสาวะ · **ผู้ใหญ่โรคไตรุนแรงกว่าเด็ก**"
+     },
+     {
+      "t": "Complement ปกติ · หายเองแต่ต้องตามไต",
+      "cap": "**complement ปกติ** (ช่วยแยกจาก SLE และ cryoglobulinemia) เกล็ดเลือดปกติ · ส่วนใหญ่ **หายเองใน 4–8 สัปดาห์** แต่ต้อง **ตามปัสสาวะและความดันอย่างน้อย 6 เดือน** · ให้ steroid เมื่อปวดท้องหรือไตอักเสบรุนแรง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "air-33-10",
+   "after": "หลักการรักษา",
+   "anim": {
+    "key": "a33-ra-window",
+    "title": "RA — window of opportunity: ทำไมต้องเริ่ม DMARD ภายใน 3 เดือน",
+    "svg": "<svg viewBox=\"0 0 440 440\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: RA ระยะแรก synovitis ภาพรังสีปกติ cytokine ทำให้ pannus กัดกระดูกที่ขอบข้อ NSAIDs และ steroid ไม่ชะลอการกร่อน เริ่ม methotrexate ใน 3 เดือนทำให้เส้นความเสียหายราบ และรักษาแบบ treat to target\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"34\" y=\"70\" width=\"132\" height=\"90\" rx=\"30\" class=\"lmu w2\"/><rect x=\"60\" y=\"18\" width=\"80\" height=\"82\" rx=\"26\" class=\"sk\"/><rect x=\"60\" y=\"130\" width=\"80\" height=\"80\" rx=\"22\" class=\"sk\"/><rect x=\"64\" y=\"94\" width=\"72\" height=\"6\" rx=\"2\" class=\"bx\"/><rect x=\"64\" y=\"130\" width=\"72\" height=\"6\" rx=\"2\" class=\"bx\"/><text x=\"100\" y=\"60\" class=\"xs mid mu\">metacarpal</text><text x=\"100\" y=\"178\" class=\"xs mid mu\">phalanx</text><path d=\"M38,96 C44,90 52,92 58,96 L58,134 C52,138 44,138 38,132 Z\" class=\"bad\" data-x=\"2\"/><path d=\"M162,96 C156,90 148,92 142,96 L142,134 C148,138 156,138 162,132 Z\" class=\"bad\" data-x=\"2\"/><g data-s=\"2\"><path d=\"M36,90 C50,80 66,86 72,104 L72,126 C66,144 50,148 36,138 Z\" class=\"bad\"/><path d=\"M164,90 C150,80 134,86 128,104 L128,126 C134,144 150,148 164,138 Z\" class=\"bad\"/><g class=\"pl\"><circle cx=\"62\" cy=\"90\" r=\"6\" class=\"badf\"/><circle cx=\"138\" cy=\"90\" r=\"6\" class=\"badf\"/><circle cx=\"62\" cy=\"140\" r=\"6\" class=\"badf\"/><circle cx=\"138\" cy=\"140\" r=\"6\" class=\"badf\"/></g><text x=\"100\" y=\"228\" class=\"xs mid tbad b\">marginal erosion (bare area)</text></g><text x=\"100\" y=\"246\" class=\"xs mid tbad\" data-x=\"2\">synovium อักเสบ · ภาพรังสียังปกติ</text><line x1=\"226\" y1=\"200\" x2=\"430\" y2=\"200\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"226\" y1=\"30\" x2=\"226\" y2=\"200\" class=\"ln\"/><text x=\"232\" y=\"24\" class=\"xs mu\">ความเสียหายของข้อ (ถาวร)</text><line x1=\"262\" y1=\"100\" x2=\"262\" y2=\"200\" class=\"lmu dt\"/><text x=\"262\" y=\"214\" class=\"xs mid mu\">3 เดือน</text><text x=\"408\" y=\"214\" class=\"xs mid mu\">ปี</text><g data-s=\"2\"><path d=\"M228,198 C280,190 330,120 426,56\" class=\"lbad w3\"/><text x=\"424\" y=\"40\" class=\"xs end tbad b\">ไม่ได้ DMARD</text></g><g data-s=\"3\"><text x=\"234\" y=\"54\" class=\"xs tms b\">NSAIDs/steroid เดี่ยว ๆ:</text><text x=\"234\" y=\"68\" class=\"xs tms\">ปวดลด แต่กร่อนต่อ</text><line x1=\"290\" y1=\"76\" x2=\"334\" y2=\"118\" class=\"lms w2\" marker-end=\"url(#ah-ms)\"/></g><g data-s=\"4\"><path d=\"M228,198 C246,196 256,190 270,188 L426,182\" class=\"lok w3\"/><text x=\"424\" y=\"176\" class=\"xs end tok b\">เริ่ม MTX ใน 3 เดือน</text></g><text x=\"10\" y=\"272\" class=\"xs b\">① synovitis ระยะแรก — US/MRI เห็นได้ อย่ารอ erosion ก่อนรักษา</text><g data-s=\"2\"><text x=\"10\" y=\"292\" class=\"xs b tbad\">② TNF-α, IL-1, IL-6 → MMP ย่อยกระดูกอ่อน</text><text x=\"10\" y=\"307\" class=\"xs tbad\">RANKL → osteoclast กัดกระดูกที่ bare area · periarticular osteopenia</text></g><text x=\"10\" y=\"328\" class=\"xs b tms\" data-s=\"3\">③ NSAIDs/steroid คุมอาการ แต่ไม่ชะลอการกร่อน → ห้ามใช้เดี่ยว ๆ</text><g data-s=\"4\"><rect x=\"8\" y=\"338\" width=\"424\" height=\"48\" rx=\"10\" class=\"ok\"/><text x=\"220\" y=\"356\" class=\"xs mid b\">④ MTX 7.5–15 mg สัปดาห์ละครั้ง (ถึง 20–25) + folic acid 5 mg/สัปดาห์</text><text x=\"220\" y=\"374\" class=\"xs mid\">steroid ขนาดต่ำเป็นสะพานระหว่างรอ DMARD ออกฤทธิ์ 6–12 สัปดาห์</text></g><g data-s=\"5\"><rect x=\"8\" y=\"392\" width=\"424\" height=\"44\" rx=\"10\" class=\"wa\"/><text x=\"220\" y=\"410\" class=\"xs mid b\">⑤ Treat-to-target: DAS28 ทุก 1–3 เดือน</text><text x=\"220\" y=\"427\" class=\"xs mid\">ไม่ถึงเป้า → เพิ่ม csDMARD หรือ biologic/JAK inhibitor</text></g></svg>",
+    "steps": [
+     {
+      "t": "Synovitis ระยะแรก",
+      "cap": "ระยะแรก synovium อักเสบ ข้อบวมนุ่ม MCP squeeze เจ็บ แต่ **ภาพรังสียังปกติ** (US/MRI เห็น synovitis ได้) — **อย่ารอให้เห็น erosion ก่อนเริ่มรักษา**"
+     },
+     {
+      "t": "Pannus กัด bare area",
+      "cap": "**TNF-α, IL-1, IL-6** สั่ง synoviocyte สร้าง **MMP ย่อยกระดูกอ่อน** และกระตุ้น **osteoclast (RANKL)** → pannus กัดกระดูกตรง bare area ที่ขอบข้อ = **marginal erosion** (periarticular osteopenia มาก่อน) — ความเสียหายนี้ถาวร"
+     },
+     {
+      "t": "NSAIDs/steroid ไม่ชะลอการกร่อน",
+      "cap": "NSAIDs และ steroid ลดปวดบวมได้ แต่ **ไม่ชะลอการกร่อนของข้อ** — เส้นความเสียหายยังขึ้นต่อ จึงห้ามใช้เดี่ยว ๆ เป็นการรักษาหลัก"
+     },
+     {
+      "t": "Window of opportunity — MTX ใน 3 เดือน",
+      "cap": "เริ่ม DMARD ภายใน **3 เดือนแรก** ได้ผลระยะยาวดีที่สุด · **methotrexate สัปดาห์ละครั้ง + folic acid** และใช้ steroid ขนาดต่ำเป็นสะพานระหว่างรอ DMARD ออกฤทธิ์ 6–12 สัปดาห์"
+     },
+     {
+      "t": "Treat-to-target",
+      "cap": "ประเมิน **DAS28 ทุก 1–3 เดือน** เป้าคือโรคสงบหรือ low disease activity · ไม่ถึงเป้า → เพิ่ม csDMARD (sulfasalazine, HCQ, leflunomide) หรือ biologic/JAK inhibitor — คัดกรอง TB และ HBV ก่อน anti-TNF"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "air-08-01",
+   "name": "ACID (Gell & Coombs)",
+   "what": "ภูมิไวเกิน 4 ชนิดเรียงตามลำดับ Type I–IV",
+   "lines": [
+    [
+     "A",
+     "**A**llergic / Anaphylactic — Type I: IgE บน mast cell · นาที–2 ชม."
+    ],
+    [
+     "C",
+     "**C**ytotoxic — Type II: IgG/IgM จับผิวเซลล์ · AIHA, ITP, AHTR"
+    ],
+    [
+     "I",
+     "**I**mmune complex — Type III: complex ตกตะกอน + complement · serum sickness, SLE"
+    ],
+    [
+     "D",
+     "**D**elayed — Type IV: T cell · contact dermatitis, SJS/TEN, DRESS"
+    ]
+   ],
+   "note": "Type I–III ผ่าน antibody ส่วน Type IV ผ่าน T cell อย่างเดียว — ผื่นยาที่ขึ้นวันที่ 7–14 จึงเป็น type IV ไม่ใช่ IgE",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "air-08-08",
+   "name": "LIVE! See Small Yellow Rotten Chickens + Sabin & MMR",
+   "what": "วัคซีนเชื้อเป็น (ห้ามให้ขณะกดภูมิคุ้มกัน) — ประโยคเต็ม: “LIVE! One night only! See small yellow rotten chickens get vaccinated with Sabin and MMR”",
+   "lines": [
+    [
+     "Small",
+     "**Small**pox"
+    ],
+    [
+     "Yellow",
+     "**Yellow** fever"
+    ],
+    [
+     "Rotten",
+     "**Rot**avirus"
+    ],
+    [
+     "Chickens",
+     "**Chicken**pox — varicella (VZV)"
+    ],
+    [
+     "Sabin",
+     "**Sabin** polio = OPV"
+    ],
+    [
+     "MMR",
+     "**MMR** — measles, mumps, rubella"
+    ],
+    [
+     "+ flu",
+     "influenza ชนิดพ่นจมูก (LAIV)"
+    ]
+   ],
+   "note": "หลักจำนี้ไม่มี **BCG** และ **zoster ชนิดเชื้อเป็น** ซึ่งอาจารย์ระบุว่าห้ามด้วย · recombinant zoster (subunit) ให้ได้ · คนในบ้านฉีดเชื้อเป็นได้ ยกเว้น OPV",
+   "src": "หลักจำที่ใช้กันแพร่หลายในการเตรียม USMLE Step 1 (บัตรทบทวน เช่น Picmonic)"
+  },
+  {
+   "sec": "air-08-09",
+   "name": "SPUR",
+   "what": "ลักษณะการติดเชื้อที่ควรสืบค้นภาวะภูมิคุ้มกันบกพร่อง",
+   "lines": [
+    [
+     "S",
+     "**S**erious — รุนแรงเกินคาด"
+    ],
+    [
+     "P",
+     "**P**ersistent — ไม่หายด้วยการรักษามาตรฐาน"
+    ],
+    [
+     "U",
+     "**U**nusual — เชื้อหรือตำแหน่งผิดปกติ (เช่น Giardia เรื้อรัง)"
+    ],
+    [
+     "R",
+     "**R**ecurrent — เป็นซ้ำ เช่น ปอดอักเสบ ≥ 2 ครั้ง/ปี ไซนัสอักเสบเรื้อรัง"
+    ]
+   ],
+   "note": "ผู้ใหญ่ที่เข้า SPUR ส่วนใหญ่ยังเป็นสาเหตุทุติยภูมิ — **ตรวจ HIV ก่อนเสมอ** แล้วจึงวัด IgG/IgA/IgM หา CVID",
+   "src": "BMJ 2009 (การประเมินผู้ป่วยติดเชื้อซ้ำ) และแนวทาง NHS ด้านภูมิคุ้มกันบกพร่อง"
+  },
+  {
+   "sec": "air-23-03",
+   "name": "CAN'T LEAP",
+   "what": "ยาที่ทำให้กรดยูริกสูง / กระตุ้นเกาต์",
+   "lines": [
+    [
+     "C",
+     "**C**iclosporin (cyclosporine)"
+    ],
+    [
+     "A",
+     "**A**lcohol"
+    ],
+    [
+     "N",
+     "**N**icotinic acid (niacin)"
+    ],
+    [
+     "T",
+     "**T**hiazide"
+    ],
+    [
+     "L",
+     "**L**oop diuretic"
+    ],
+    [
+     "E",
+     "**E**thambutol"
+    ],
+    [
+     "A",
+     "**A**spirin ขนาดต่ำ"
+    ],
+    [
+     "P",
+     "**P**yrazinamide — ตัวหลักในสูตรยา TB"
+    ]
+   ],
+   "note": "อาจารย์เพิ่ม tacrolimus และ levodopa · ปวดข้อจาก PZA ถ้าไม่รุนแรงไม่ต้องหยุดสูตรยา TB · aspirin ขนาดต่ำที่ให้ป้องกันโรคหัวใจไม่ต้องหยุด · thiazide/loop เปลี่ยนเป็น losartan หรือ CCB ได้",
+   "src": "ใช้กันทั่วไปในบัตรทบทวนของนักศึกษาแพทย์ (ไม่ได้มาจากตำรามาตรฐานเล่มใดเล่มหนึ่ง)"
+  },
+  {
+   "sec": "air-23-04",
+   "name": "4H ของ CPPD ทุติยภูมิ",
+   "what": "โรคเมแทบอลิกที่ต้องหาเมื่อเจอ CPPD ในคนอายุ < 60 ปีหรือเป็นหลายข้อ",
+   "lines": [
+    [
+     "H",
+     "**H**yperparathyroidism — Ca, PTH"
+    ],
+    [
+     "H",
+     "**H**emochromatosis — ferritin, transferrin saturation"
+    ],
+    [
+     "H",
+     "**H**ypomagnesemia — Mg"
+    ],
+    [
+     "H",
+     "**H**ypophosphatasia — ALP ต่ำ"
+    ]
+   ],
+   "note": "รายการของอาจารย์ยาวกว่า: เพิ่ม **hypothyroidism** (บางตำรานับเป็น 5H), acromegaly, Wilson disease และข้อเสื่อม/อายุมาก",
+   "src": "ใช้กันทั่วไปในสื่อการสอนรูมาตอลยี (metabolic causes of CPPD)"
+  },
+  {
+   "sec": "air-23-06",
+   "name": "LOSS",
+   "what": "ภาพรังสีของข้อเสื่อม (OA)",
+   "lines": [
+    [
+     "L",
+     "**L**oss of joint space — แคบไม่สมมาตร (ฝั่งรับน้ำหนัก)"
+    ],
+    [
+     "O",
+     "**O**steophytes — กระดูกงอกขอบข้อ"
+    ],
+    [
+     "S",
+     "**S**ubchondral sclerosis — กระดูกใต้ผิวข้อหนาขาว"
+    ],
+    [
+     "S",
+     "**S**ubchondral cysts"
+    ]
+   ],
+   "note": "RA ตรงข้าม: ช่องข้อแคบสมมาตร + marginal erosion + periarticular osteopenia · อายุ > 45 ปีอาการตรงแบบวินิจฉัย OA ทางคลินิกได้โดยไม่ต้องถ่ายภาพรังสี",
+   "src": "หลักจำมาตรฐานในรังสีวิทยากระดูกและข้อ ใช้กันทั่วไปในการสอบ OSCE/ข้อเขียน"
+  },
+  {
+   "sec": "air-23-07",
+   "name": "Can't see, can't pee, can't bend my knee",
+   "what": "สามอาการคลาสสิกของ reactive arthritis",
+   "lines": [
+    [
+     "Can't see",
+     "conjunctivitis / anterior uveitis"
+    ],
+    [
+     "Can't pee",
+     "urethritis (ไม่มีเชื้อ)"
+    ],
+    [
+     "Can't bend my knee",
+     "ข้ออักเสบข้อใหญ่ขา แบบ asymmetric oligoarthritis"
+    ]
+   ],
+   "note": "ครบสามข้อไม่บ่อย · enthesitis เอ็นร้อยหวายและ dactylitis ช่วยยืนยัน · เกิด 1–4 สัปดาห์หลังติดเชื้อ น้ำไขข้อเพาะไม่ขึ้น (บางฉบับใช้ 'can't climb a tree')",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "air-33-02b",
+   "name": "SOAP BRAIN MD",
+   "what": "อาการรายระบบของ SLE (เกณฑ์ ACR 1997 รุ่นเก่า 11 ข้อ)",
+   "lines": [
+    [
+     "S",
+     "**S**erositis — เยื่อหุ้มปอด/หัวใจ"
+    ],
+    [
+     "O",
+     "**O**ral ulcers — แผลในปาก"
+    ],
+    [
+     "A",
+     "**A**rthritis — ไม่กร่อน"
+    ],
+    [
+     "P",
+     "**P**hotosensitivity"
+    ],
+    [
+     "B",
+     "**B**lood — AIHA, WBC/เกล็ดเลือดต่ำ"
+    ],
+    [
+     "R",
+     "**R**enal — โปรตีนรั่ว, cast"
+    ],
+    [
+     "A",
+     "**A**NA"
+    ],
+    [
+     "I",
+     "**I**mmunologic — anti-dsDNA, anti-Sm, aPL"
+    ],
+    [
+     "N",
+     "**N**eurologic — ชัก, psychosis"
+    ],
+    [
+     "M",
+     "**M**alar rash"
+    ],
+    [
+     "D",
+     "**D**iscoid rash"
+    ]
+   ],
+   "note": "เกณฑ์ที่อาจารย์ใช้คือ **EULAR/ACR 2019** — ANA ≥ 1:80 เป็นประตูทางเข้า แล้วนับคะแนนรวม ≥ 10 (ต้องมีอาการทางคลินิก ≥ 1 ข้อ) · ใช้หลักจำนี้ช่วยนึกรายระบบเท่านั้น อย่านับ '4 ใน 11' แบบเดิม",
+   "src": "ใช้กันแพร่หลายในหมู่นักศึกษาแพทย์ (First Aid ฉบับหลัง ๆ ใช้ RASH OR PAIN สำหรับรายการเดียวกัน)"
+  },
+  {
+   "sec": "air-33-02c",
+   "name": "CUSHINGOID",
+   "what": "ผลข้างเคียงของกลูโคคอร์ติคอยด์",
+   "lines": [
+    [
+     "C",
+     "**C**ataract — posterior subcapsular"
+    ],
+    [
+     "U",
+     "**U**lcer — ผลทางเดินอาหาร"
+    ],
+    [
+     "S",
+     "**S**kin — striae สีม่วง ผิวบาง ช้ำง่าย สิว"
+    ],
+    [
+     "H",
+     "**H**ypertension · **H**irsutism"
+    ],
+    [
+     "I",
+     "**I**nfection"
+    ],
+    [
+     "N",
+     "**N**ecrosis — osteonecrosis หัวกระดูกต้นขา"
+    ],
+    [
+     "G",
+     "**G**lucose สูง / เบาหวาน"
+    ],
+    [
+     "O",
+     "**O**steoporosis · **O**besity ลงพุง (moon face, buffalo hump)"
+    ],
+    [
+     "I",
+     "**I**mpaired wound healing"
+    ],
+    [
+     "D",
+     "**D**epression / อาการทางจิต"
+    ]
+   ],
+   "note": "ที่อาจารย์ให้ท่องแต่ไม่อยู่ในหลักจำ: **กล้ามเนื้อต้นแขนต้นขาอ่อนแรง (steroid myopathy)** · ตัวอักษรแต่ละตัวมีหลายฉบับ ให้ยึดรายการในเนื้อหา",
+   "src": "หลักจำที่ใช้กันทั่วไปในเภสัชวิทยาและบัตรทบทวน (มีหลายฉบับ)"
+  },
+  {
+   "sec": "air-33-03",
+   "name": "SHIPP-E",
+   "what": "ยาที่ทำให้เกิด drug-induced lupus",
+   "lines": [
+    [
+     "S",
+     "**S**ulfa drugs"
+    ],
+    [
+     "H",
+     "**H**ydralazine"
+    ],
+    [
+     "I",
+     "**I**soniazid"
+    ],
+    [
+     "P",
+     "**P**rocainamide"
+    ],
+    [
+     "P",
+     "**P**henytoin"
+    ],
+    [
+     "E",
+     "**E**tanercept (anti-TNF)"
+    ]
+   ],
+   "note": "รายการของอาจารย์มี **minocycline, methyldopa, quinidine, chlorpromazine** เพิ่ม และไม่ได้ระบุ sulfa · hydralazine, procainamide, isoniazid ถูกกำจัดด้วย acetylation (slow acetylator เสี่ยง) · anti-TNF เป็นข้อยกเว้นที่ anti-dsDNA บวกได้",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "air-33-04",
+   "name": "CLOT",
+   "what": "ลักษณะหลักของ antiphospholipid syndrome",
+   "lines": [
+    [
+     "C",
+     "**C**lot — ลิ่มเลือดทั้งหลอดเลือดดำและแดง"
+    ],
+    [
+     "L",
+     "**L**ivedo reticularis"
+    ],
+    [
+     "O",
+     "**O**bstetric — แท้งซ้ำ ครรภ์เป็นพิษ รกเสื่อม"
+    ],
+    [
+     "T",
+     "**T**hrombocytopenia — ต่ำเล็กน้อย ไม่เลือดออก"
+    ]
+   ],
+   "note": "livedo และเกล็ดเลือดต่ำ **ไม่อยู่ในเกณฑ์วินิจฉัย** · ต้องมีทั้งเกณฑ์ทางคลินิกและ aPL (LA / aCL / anti-β2GPI) บวกซ้ำห่างกัน ≥ 12 สัปดาห์",
+   "src": "หลักจำที่ใช้กันทั่วไปในตำราสรุปอายุรศาสตร์และบัตรทบทวน (บางฉบับเขียน CLOTS)"
+  },
+  {
+   "sec": "air-33-06",
+   "name": "CREST",
+   "what": "limited cutaneous systemic sclerosis",
+   "lines": [
+    [
+     "C",
+     "**C**alcinosis"
+    ],
+    [
+     "R",
+     "**R**aynaud phenomenon"
+    ],
+    [
+     "E",
+     "**E**sophageal dysmotility"
+    ],
+    [
+     "S",
+     "**S**clerodactyly"
+    ],
+    [
+     "T",
+     "**T**elangiectasia"
+    ]
+   ],
+   "note": "สัมพันธ์กับ **anti-centromere** และภาวะแทรกซ้อนเด่นคือ **PAH** · diffuse (anti-Scl-70 → ILD, anti-RNA pol III → renal crisis)",
+   "src": "First Aid for the USMLE Step 1 / ตำรามาตรฐาน — อาจารย์ใช้ในสไลด์"
+  },
+  {
+   "sec": "air-33-11",
+   "name": "PAIR",
+   "what": "กลุ่ม seronegative spondyloarthritis",
+   "lines": [
+    [
+     "P",
+     "**P**soriatic arthritis"
+    ],
+    [
+     "A",
+     "**A**nkylosing spondylitis (axial SpA)"
+    ],
+    [
+     "I",
+     "**I**BD-associated arthritis"
+    ],
+    [
+     "R",
+     "**R**eactive arthritis"
+    ]
+   ],
+   "note": "RF ลบ · สัมพันธ์ HLA-B27 · โรคเริ่มที่ enthesis และแกนกลาง — MTX ไม่ช่วยโรคแกนกลาง",
+   "src": "First Aid for the USMLE Step 1"
+  },
+  {
+   "sec": "air-33-11",
+   "name": "SPINEACHE",
+   "what": "ลักษณะของ spondyloarthritis ที่ใช้นับตามเกณฑ์ ASAS axial SpA",
+   "lines": [
+    [
+     "S",
+     "**S**ausage digit — dactylitis"
+    ],
+    [
+     "P",
+     "**P**soriasis / ประวัติครอบครัว SpA"
+    ],
+    [
+     "I",
+     "**I**nflammatory back pain"
+    ],
+    [
+     "N",
+     "**N**SAID ตอบสนองดี"
+    ],
+    [
+     "E",
+     "**E**nthesitis — ส้นเท้า"
+    ],
+    [
+     "A",
+     "**A**rthritis"
+    ],
+    [
+     "C",
+     "**C**rohn / colitis · **C**RP สูง"
+    ],
+    [
+     "H",
+     "**H**LA-B27"
+    ],
+    [
+     "E",
+     "**E**ye — anterior uveitis"
+    ]
+   ],
+   "note": "ASAS: sacroiliitis จากภาพ (MRI หรือภาพรังสี) + ≥ 1 ข้อ หรือ HLA-B27 + ≥ 2 ข้ออื่น · HLA-B27 อย่างเดียวไม่ใช่การวินิจฉัย",
+   "src": "J Rheumatol 2010 — หลักจำเกณฑ์ ASAS axial SpA ที่ใช้สอนกันทั่วไป"
+  }
+ ]
+}

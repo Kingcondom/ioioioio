@@ -1,0 +1,776 @@
+{
+ "set": "chest",
+ "lec": "17",
+ "d": "จ. 28 ก.ย.",
+ "w": 3,
+ "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+ "mcq": [
+  {
+   "id": "CH-RF-MCQ-01",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Oxygen delivery equation — anemia vs supplemental oxygen",
+   "stem": "A 60-year-old woman with a bleeding duodenal ulcer is pale and tachycardic (HR 118/min, BP 104/66 mmHg) after endoscopic haemostasis. She is breathing room air: SpO2 97%, PaO2 90 mmHg. Haemoglobin is 6.0 g/dL and lactate 3.4 mmol/L. Which intervention will produce the greatest increase in her arterial oxygen content (CaO2)?",
+   "choices": [
+    "Non-rebreather mask at 15 L/min to raise PaO2 to about 400 mmHg",
+    "High-flow nasal cannula at FiO2 1.0 and 50 L/min",
+    "Non-invasive ventilation with an EPAP of 8 cmH2O",
+    "Transfusion of packed red cells to raise haemoglobin from 6 to 9 g/dL",
+    "Intravenous sodium bicarbonate to correct the lactic acidosis"
+   ],
+   "answer": 3,
+   "explain": "**CaO₂ = (Hb × SaO₂ × 1.34) + (PaO₂ × 0.003)** — O₂ เกือบทั้งหมดอยู่บน Hb\n\nตอนนี้: 6 × 0.97 × 1.34 ≈ **7.8** + 90 × 0.003 = 0.27 → CaO₂ ≈ **8.1 mL/dL**\n\n| ทางเลือก | CaO₂ ใหม่ | เพิ่มขึ้น |\n|---|---|---|\n| ให้ O₂ จน SaO₂ 100% PaO₂ 400 | 6 × 1.0 × 1.34 + 1.2 ≈ 9.2 | **~1.1** |\n| **ให้เลือด Hb 9 (SaO₂ 97%)** | 9 × 0.97 × 1.34 + 0.27 ≈ 12.0 | **~3.9** |\n\nดังนั้น **การเพิ่ม Hb** ได้ผลมากกว่าการดัน PaO₂ หลายเท่า เพราะ SaO₂ 97% แทบเต็มอยู่แล้ว ส่วนที่ละลายเพิ่มได้แค่ 0.003 ต่อ mmHg — ตรงกับที่ อ.สกล เน้นว่าตัวแปรที่แก้ได้จริงคือ **CO, Hb, SaO₂**\n\n- **NRB / HFNC FiO₂ 1.0** — เพิ่มแค่ส่วนที่ละลาย ~1 mL/dL ไม่แก้ปัญหาตัวขน (anemic hypoxia)\n- **NIV** — เพิ่ม FRC/oxygenation ในปอดที่มีปัญหา แต่ปอดเธอปกติ และ PEEP ยังลด venous return ในผู้ป่วยเสียเลือด\n- **Bicarbonate** — ไม่เพิ่ม CaO₂ และการแก้ acidosis กลับทำให้ ODC **left shift** ปล่อย O₂ ยากขึ้น · lactate สูงต้องแก้ที่การส่ง O₂ (เลือด/สารน้ำ)",
+   "pearl": "DO₂ = CO × CaO₂ · O₂ > 98% อยู่บน Hb → ซีดต้องให้เลือด ไม่ใช่เพิ่ม FiO₂",
+   "ref": [
+    "สไลด์ อ.สกล — Equation of O₂ delivery"
+   ],
+   "nl": [
+    "B6.1.2(5)",
+    "2.2.9"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-02",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Oxygen dissociation curve — 2,3-DPG in chronic anaemia",
+   "stem": "A 34-year-old woman with long-standing menorrhagia is found to have haemoglobin 6.8 g/dL with microcytic indices. She works full time and is only mildly breathless on climbing stairs. Which adaptive mechanism best explains how her tissues remain adequately oxygenated despite such a low haemoglobin?",
+   "choices": [
+    "Increased haemoglobin–oxygen affinity, shifting the dissociation curve to the left",
+    "Increased red-cell 2,3-diphosphoglycerate, shifting the dissociation curve to the right",
+    "Chronic respiratory alkalosis that increases oxygen loading in the lungs",
+    "A marked rise in dissolved oxygen in plasma",
+    "Re-expression of fetal haemoglobin to improve oxygen uptake"
+   ],
+   "answer": 1,
+   "explain": "ในภาวะ **ซีดเรื้อรัง** เม็ดเลือดแดงสร้าง **2,3-DPG มากขึ้น** → 2,3-DPG จับ deoxy-Hb ทำให้ Hb จับ O₂ หลวมลง = **right shift (P50 สูงขึ้น)** → ที่ PO₂ ของเนื้อเยื่อ Hb **ปล่อย O₂ ได้มากขึ้นต่อกรัม** ชดเชยปริมาณ Hb ที่น้อย (ร่วมกับ CO เพิ่ม)\n\nตารางในสไลด์ อ.สกล: 2,3-DPG ↑ พบใน **hyperthyroidism, chronic anemia, chronic hypoxemia** → right shift\n\n- **Left shift / affinity ↑** — ตรงข้าม: Hb จับแน่นปล่อยยาก (HbF, COHb, MetHb, alkalosis, hypothermia) ซึ่งจะทำให้แย่ลง\n- **Respiratory alkalosis** — ทำให้ left shift ไม่ช่วยปล่อย O₂ ที่เนื้อเยื่อ และ SaO₂ ในปอดที่ PaO₂ ปกติเต็มอยู่แล้ว\n- **Dissolved O₂** — 0.003 × PaO₂ ≈ 0.3 mL/dL เท่านั้น ไม่เปลี่ยนตาม Hb\n- **HbF** — ผู้ใหญ่ซีดจากขาดเหล็กไม่สร้าง HbF เพิ่มอย่างมีนัย และ HbF ทำให้ **left shift** (ดีต่อการดึง O₂ ข้ามรก ไม่ใช่การปล่อยให้เนื้อเยื่อ)",
+   "pearl": "2,3-DPG ↑ (ซีดเรื้อรัง hyperthyroid hypoxemia เรื้อรัง) → right shift ปล่อย O₂ ง่าย",
+   "ref": [
+    "สไลด์ อ.สกล — O₂ dissociation curve / O₂ affinity"
+   ],
+   "nl": [
+    "B6.1.2(5)",
+    "2.2.9"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-03",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Methaemoglobinaemia — fixed SpO2 around 85%",
+   "stem": "A 42-year-old man receives benzocaine throat spray before transoesophageal echocardiography. Thirty minutes later he is anxious and cyanotic. SpO2 is 85% and does not change after 15 minutes on a non-rebreather mask. Arterial blood gas on the mask: pH 7.40, PaCO2 38 mmHg, PaO2 410 mmHg; the blood appears chocolate-brown. Chest radiograph is normal. Which is the most appropriate treatment?",
+   "choices": [
+    "Intubation and increase of PEEP to recruit collapsed alveoli",
+    "Hyperbaric oxygen therapy",
+    "Intravenous hydroxocobalamin",
+    "CT pulmonary angiography and anticoagulation",
+    "Intravenous methylene blue 1–2 mg/kg"
+   ],
+   "answer": 4,
+   "explain": "ภาพคลาสสิกของ **methemoglobinemia จากยาชาเฉพาะที่ (benzocaine)**: SpO₂ **ค้างราว 85%** ไม่ตอบสนองต่อ O₂ ทั้งที่ **PaO₂ สูงมาก** → **saturation gap** ใหญ่ (> 5%) + เลือดสีช็อกโกแลต\n\n**กลไก**: ยาออกซิไดซ์ Fe²⁺ ใน Hb เป็น **Fe³⁺** ซึ่งจับ O₂ ไม่ได้ และทำให้ heme ที่เหลือจับ O₂ แน่นขึ้น (**left shift**) → anemic hypoxia · pulse oximeter สองความยาวคลื่นอ่าน MetHb ได้ราว 85% เสมอ → ยืนยันด้วย **co-oximetry**\n\n**รักษา**: หยุดยาที่เป็นสาเหตุ + **methylene blue 1–2 mg/kg IV** (รีดิวซ์ผ่าน NADPH-MetHb reductase) · ระวัง **G6PD deficiency** (ไม่ได้ผลและเกิด hemolysis → ใช้ ascorbic acid/exchange transfusion)\n\n- **PEEP** — แก้ shunt แต่ปอดปกติ PaO₂ 410 ไม่มี shunt\n- **Hyperbaric O₂** — สำหรับ CO poisoning ที่รุนแรง\n- **Hydroxocobalamin** — cyanide (histotoxic) ซึ่ง SpO₂ ไม่ค้าง 85%\n- **CTPA** — PE ทำให้ PaO₂ **ต่ำ** ไม่ใช่ 410",
+   "pearl": "SpO₂ ค้าง ~85% + PaO₂ สูง + เลือดสีช็อกโกแลต = MetHb → methylene blue",
+   "ref": [
+    "สไลด์ อ.สกล — True hypoxemia — saturation gap / abnormal Hb"
+   ],
+   "nl": [
+    "B6.1.2(5)",
+    "2.2.9",
+    "2.1.37"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-04",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Carbon monoxide poisoning — falsely reassuring SpO2",
+   "stem": "A family of four is brought to the emergency department after sleeping in a closed room with a charcoal stove burning for warmth. A 38-year-old woman has a severe headache, nausea and is mildly confused. HR 112/min, BP 128/80 mmHg, RR 24/min. Pulse oximetry on room air reads 99% and her lips are cherry-pink. Which is the most appropriate immediate management?",
+   "choices": [
+    "100% oxygen by non-rebreather mask immediately and measure carboxyhaemoglobin by co-oximetry",
+    "Reassure — the normal SpO2 excludes significant hypoxia — and give analgesia",
+    "Nasal cannula at 2 L/min titrated to SpO2 94–98%",
+    "Intravenous methylene blue",
+    "Non-contrast CT brain before any oxygen therapy"
+   ],
+   "answer": 0,
+   "explain": "**CO poisoning** จากเตาถ่านในห้องปิด — **COHb ดูดแสงคล้าย oxy-Hb** pulse oximeter จึงอ่าน **SpO₂ ปกติหลอกตา** ทั้งที่ O₂ content ลดมาก (anemic hypoxia) — ต้องวัด **COHb ด้วย co-oximetry** (saturation gap)\n\n**กลไกที่ทำให้ขาด O₂**\n1. CO จับ Hb แน่นกว่า O₂ ราว 200–250 เท่า → Hb ที่ขน O₂ ได้ลดลง (PaO₂ ยังปกติ)\n2. **Left shift** — Hb ที่เหลือไม่ยอมปล่อย O₂ ที่เนื้อเยื่อ\n3. CO ยับยั้ง cytochrome oxidase โดยตรงบางส่วน\n\n**รักษาทันที**: **O₂ 100% (NRB)** — ลด half-life ของ COHb จาก ~4–5 ชม. เหลือ ~1 ชม. · พิจารณา **hyperbaric O₂** ถ้าหมดสติ ชัก มี neuro deficit, COHb สูงมาก หรือตั้งครรภ์\n\n- **Reassure** — ผิดร้ายแรง SpO₂ เชื่อไม่ได้ในภาวะนี้ (สับสน = สมองขาด O₂)\n- **Nasal cannula ตามเป้า SpO₂** — เป้า SpO₂ ไม่มีความหมายเพราะค่าอ่านผิด ต้องให้ FiO₂ สูงสุด\n- **Methylene blue** — สำหรับ MetHb\n- **CT ก่อนให้ O₂** — ห้ามเลื่อนการให้ O₂",
+   "pearl": "CO poisoning: SpO₂ ปกติหลอกตา → O₂ 100% ทันที + วัด COHb ด้วย co-oximetry",
+   "ref": [
+    "สไลด์ อ.สกล — True hypoxemia — saturation gap / carboxyhemoglobin",
+    "BTS Guideline for Oxygen Use in Adults 2017"
+   ],
+   "nl": [
+    "B6.1.2(5)",
+    "2.2.9",
+    "2.1.37"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-05",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Types of hypoxia — histotoxic (cyanide)",
+   "stem": "A 45-year-old electroplating worker collapses at work after an accidental chemical exposure. He is obtunded with BP 92/58 mmHg and RR 28/min. On room air: SpO2 98%, PaO2 96 mmHg, PaCO2 26 mmHg, pH 7.12, lactate 13 mmol/L, haemoglobin 14 g/dL. Central venous oxygen saturation (ScvO2) is 89% and venous blood appears bright red. Co-oximetry shows carboxyhaemoglobin 1% and methaemoglobin 1%. Which type of hypoxia best explains these findings?",
+   "choices": [
+    "Hypoxaemic hypoxia from intrapulmonary shunt",
+    "Anaemic hypoxia from an abnormal haemoglobin",
+    "Histotoxic hypoxia from inhibition of mitochondrial cytochrome c oxidase",
+    "Circulatory hypoxia from hypovolaemic shock",
+    "Hypoxia from low inspired oxygen pressure"
+   ],
+   "answer": 2,
+   "explain": "**สี่แบบของ hypoxia** (สไลด์ *Hypoxia in nutshell*): hypoxemic · anemic · circulatory · **histotoxic** — สามแบบหลัง **PaO₂ ปกติ** และ lactate สูงได้\n\nรายนี้ **PaO₂/SpO₂ ปกติ, Hb ปกติ, COHb/MetHb ปกติ** แต่ **lactate 13** และ **ScvO₂ สูงผิดปกติ (89%) เลือดดำสีแดงสด** → เซลล์ **ใช้ O₂ ไม่ได้** ทั้งที่ส่งมาพอ O₂ จึงเหลือกลับไปในเลือดดำ = **histotoxic hypoxia** จาก **cyanide** (งานชุบโลหะใช้เกลือ cyanide) ซึ่งจับ **cytochrome c oxidase** → oxidative phosphorylation หยุด → glycolysis → lactate\nรักษา: **hydroxocobalamin** + O₂ 100% + ประคับประคอง\n\n- **Hypoxemic/shunt** — PaO₂ ต้องต่ำ\n- **Anemic** — Hb 14 และ co-oximetry ปกติ\n- **Circulatory (shock)** — เนื้อเยื่อดึง O₂ มากขึ้น → ScvO₂ **ต่ำ** ไม่ใช่สูง (ความดันต่ำรายนี้เป็นผลตามมา)\n- **Low PiO₂** — PaO₂ จะต่ำ และ A-a ปกติ",
+   "pearl": "PaO₂ ปกติ + lactate สูง + ScvO₂ สูง = histotoxic (cyanide) · ScvO₂ ต่ำ = circulatory",
+   "ref": [
+    "สไลด์ อ.สกล — Type of hypoxia / Hypoxia in nutshell"
+   ],
+   "nl": [
+    "B6.1.2(5)",
+    "2.2.9",
+    "2.1.37"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-06",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "A-a gradient — hypoventilation from opioid overdose",
+   "stem": "A 30-year-old man is found unresponsive with pinpoint pupils and a respiratory rate of 6/min. Chest examination is clear. Arterial blood gas on room air: pH 7.20, PaCO2 72 mmHg, PaO2 52 mmHg, HCO3 27 mmol/L. Which interpretation and initial management are most appropriate?",
+   "choices": [
+    "Widened A-a gradient from aspiration; start antibiotics and give high-flow oxygen",
+    "Normal A-a gradient indicating alveolar hypoventilation; give naloxone and support ventilation with a bag-valve-mask",
+    "Widened A-a gradient from shunt; intubate and apply high PEEP",
+    "Normal A-a gradient; oxygen by nasal cannula alone will fully correct the abnormality",
+    "Metabolic acidosis; give intravenous sodium bicarbonate"
+   ],
+   "answer": 1,
+   "explain": "**คำนวณ** (room air ระดับน้ำทะเล)\n- PAO₂ = 150 − PaCO₂/0.8 = 150 − 72/0.8 = 150 − 90 = **60**\n- A-a = 60 − 52 = **8 mmHg**\n- ค่าปกติตามอายุ ≈ 30/4 + 4 = **11.5** → **A-a ปกติ**\n\n**PaCO₂ สูง + A-a ปกติ = alveolar hypoventilation ล้วน ๆ** — ปอดดี ปัญหาอยู่ที่ **ศูนย์หายใจถูกกดด้วยยา (opioid)** ตามสไลด์ *Normal A-a gradient hypoxemia* · CO₂ ที่คั่งไปแทนที่ O₂ ในถุงลม จึง PaO₂ ต่ำ\nก๊าซเลือด: acute respiratory acidosis (HCO₃ ขึ้นราว 1 ต่อ PaCO₂ 10 → 24 + 3 ≈ 27 ✔)\n\n**การรักษา**: เปิดทางเดินหายใจ **ช่วยหายใจด้วย bag-valve-mask** + **naloxone** แก้สาเหตุ\n\n- **Aspiration / shunt** — จะทำให้ A-a **กว้าง** (ถ้าภายหลัง A-a กว้างขึ้นค่อยคิดถึง)\n- **Nasal cannula อย่างเดียว** — แก้ PaO₂ ได้ (A-a ปกติตอบสนองต่อ O₂ ดี) แต่ **ไม่แก้ CO₂ และ acidosis** ซ้ำยังบังการตรวจพบว่าการหายใจแย่ลง\n- **Bicarbonate** — นี่คือ respiratory acidosis ไม่ใช่ metabolic",
+   "pearl": "PaCO₂ สูง + A-a ปกติ = hypoventilation → แก้ด้วย ventilation ไม่ใช่ O₂ อย่างเดียว",
+   "ref": [
+    "สไลด์ อ.สกล — A-a gradient formula / Normal A-a gradient hypoxemia"
+   ],
+   "nl": [
+    "B6.2.5(1)",
+    "3.3.17",
+    "B6.1.2(3)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-07",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "A-a gradient calculation in pneumonia",
+   "stem": "A 64-year-old woman with community-acquired pneumonia has an arterial blood gas on room air at sea level: pH 7.47, PaCO2 32 mmHg, PaO2 58 mmHg. Which statement best interprets her oxygenation?",
+   "choices": [
+    "A-a gradient about 12 mmHg — normal, indicating hypoventilation",
+    "A-a gradient about 52 mmHg — but this is within the normal range for her age",
+    "The A-a gradient cannot be calculated without knowing her haemoglobin",
+    "A-a gradient about 52 mmHg — widened (expected ≈ 20), indicating a gas-exchange problem within the lung; moderate hypoxaemia",
+    "A-a gradient about 92 mmHg — widened, indicating that pure shunt is the only mechanism"
+   ],
+   "answer": 3,
+   "explain": "**คำนวณทีละขั้น**\n- PAO₂ = 150 − PaCO₂/0.8 = 150 − 32/0.8 = 150 − 40 = **110 mmHg**\n- A-a = 110 − 58 = **52 mmHg**\n- ค่าปกติ ≈ อายุ/4 + 4 = 64/4 + 4 = **20 mmHg** → **กว้าง**\n\n**A-a กว้าง = ปัญหาในเนื้อปอด** — ใน pneumonia คือ **V/Q mismatch และ shunt** · PaCO₂ ต่ำเพราะหายใจเร็วชดเชย (respiratory alkalosis)\nความรุนแรงตามสไลด์: PaO₂ **40–59 = moderate** hypoxemia\n\n- **A-a 12** — คำนวณผิด และ hypoventilation ต้องมี PaCO₂ **สูง** ไม่ใช่ 32\n- **ปกติตามอายุ** — ค่าปกติอายุ 64 คือ ~20 ไม่ใช่ 52\n- **ต้องรู้ Hb** — สูตร A-a ใช้ FiO₂, Pb, PH₂O, PaCO₂, RQ ไม่เกี่ยวกับ Hb\n- **A-a 92 / shunt อย่างเดียว** — คำนวณผิด (ลืมหัก PaCO₂/0.8: 150 − 58 = 92) และ A-a กว้างแยก V/Q, shunt, diffusion ออกจากกันไม่ได้ ต้องดูการตอบสนองต่อ O₂",
+   "pearl": "PAO₂ = 150 − PaCO₂/0.8 · A-a ปกติ ≈ อายุ/4 + 4",
+   "ref": [
+    "สไลด์ อ.สกล — A-a gradient formula",
+    "สไลด์ อ.สกล — Degree of hypoxemia"
+   ],
+   "nl": [
+    "B6.2.5(1)",
+    "3.3.17",
+    "B6.1.2(3)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-08",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Shunt fraction on 100% oxygen and PEEP in ARDS",
+   "stem": "A 50-year-old man with severe pneumonia is intubated for ARDS. On FiO2 1.0 his PaO2 is 250 mmHg and PaCO2 42 mmHg. Chest radiograph shows bilateral dense alveolar opacities. Which of the following best describes the dominant mechanism of his hypoxaemia and the most effective ventilator adjustment?",
+   "choices": [
+    "Shunt of about 20%; increase PEEP to recruit collapsed or flooded alveoli",
+    "Shunt of about 5%; increase the respiratory rate",
+    "Dead-space ventilation; increase the respiratory rate",
+    "Shunt of about 20%; increase tidal volume to 12 mL/kg",
+    "Diffusion limitation; prolong the inspiratory time only"
+   ],
+   "answer": 0,
+   "explain": "ตาราง shunt บน **O₂ 100%** ในสไลด์: PaO₂ **550 = 5% · 450 = 10% · 350 = 15% · 250 = 20%** → รายนี้ shunt ≈ **20%** (ปกติ ≤ 5%)\n\n**ทำไมเพิ่ม O₂ ไม่ช่วย**: เลือดที่ผ่าน alveoli ที่เต็มน้ำ/หนอง (V/Q = 0) **ไม่เคยสัมผัสก๊าซที่ให้** แล้วไปผสมกับเลือดจากส่วนดีที่อิ่มตัวอยู่แล้ว · การแก้ shunt คือ **เปิด alveoli กลับ** — **PEEP / recruitment** ร่วมกับรักษาสาเหตุ (ยาปฏิชีวนะ)\nARDS = ตัวอย่างของ Type I (hypoxic) respiratory failure จาก **shunt**\n\n- **Shunt 5%** — เท่ากับ PaO₂ ~550 บน O₂ 100% ซึ่งคือคนปกติ\n- **Dead space** — ทำให้ **CO₂ คั่ง** เป็นหลัก รายนี้ PaCO₂ 42 และภาพเป็น alveolar filling\n- **VT 12 mL/kg** — ผิดหลัก lung-protective ventilation (VT 6 mL/kg PBW) เพิ่ม volutrauma และ barotrauma\n- **Diffusion limitation** — พบใน ILD และตอบสนองต่อ O₂ ดี ไม่ใช่ภาพนี้",
+   "pearl": "บน O₂ 100%: PaO₂ 550/450/350/250 ≈ shunt 5/10/15/20% · shunt แก้ด้วย PEEP",
+   "ref": [
+    "สไลด์ อ.สกล — Shunt fraction",
+    "สไลด์ อ.สกล — Respiratory failure type I"
+   ],
+   "nl": [
+    "B6.1.2(2)",
+    "B6.1.2(4)",
+    "B6.2.5(1)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-09",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Diffusion limitation in interstitial lung disease",
+   "stem": "A 66-year-old man has 18 months of progressive exertional dyspnoea and dry cough. He has finger clubbing and fine bibasal late-inspiratory 'velcro' crackles. At rest on room air his SpO2 is 96% and arterial PaO2 82 mmHg with PaCO2 36 mmHg. Which statement best explains why his symptoms occur mainly on exertion, and which test is most likely to demonstrate the gas-exchange defect?",
+   "choices": [
+    "Intracardiac right-to-left shunt — contrast echocardiography",
+    "Alveolar hypoventilation — overnight capnography",
+    "Dead-space ventilation — ventilation–perfusion scan",
+    "Bronchospasm with low V/Q units — spirometry with bronchodilator",
+    "Diffusion limitation worsened by shortened capillary transit time — six-minute walk test with oximetry"
+   ],
+   "answer": 4,
+   "explain": "**ILD** (clubbing + velcro crackles) → เยื่อ alveolocapillary **หนาและพังผืด** + พื้นที่แลกเปลี่ยนลดลง = **diffusion limitation**\n\n**ทำไมพักแล้วปกติ แต่ออกแรงแล้ว sat ตก** (ลายมือในสไลด์ — *sat normal at rest, drop on stress*)\n- ปกติเลือดใช้เวลาผ่านหลอดเลือดฝอยปอด ~0.75 วินาที แต่ O₂ สมดุลได้ใน ~0.25 วินาที → มีเวลาเหลือเฟือแม้เยื่อหนา\n- ตอนออกแรง CO สูงขึ้น **transit time สั้นลง** → O₂ ซึมผ่านเยื่อหนาไม่ทัน → **A-a กว้างขึ้นเฉพาะตอนออกแรง**\n- จึงต้อง **6-minute walk test** วัด SpO₂ ระหว่างเดิน (ร่วมกับ DLCO ใน PFT) เพื่อเผยความผิดปกติ\n- diffusion limitation **ตอบสนองต่อ O₂ ดี**\n\n- **Intracardiac shunt** — hypoxemia ตอนพัก ไม่ตอบสนองต่อ O₂ ไม่มี velcro crackles\n- **Hypoventilation** — PaCO₂ ต้องสูง (รายนี้ 36)\n- **Dead space** — นึกถึง PE/emphysema และทำให้ CO₂ คั่ง\n- **Bronchospasm** — มี wheeze ไม่ใช่ velcro crackles และ clubbing",
+   "pearl": "ILD: sat ปกติตอนพัก ตกตอนออกแรง (diffusion + transit time สั้น) → 6MWT",
+   "ref": [
+    "สไลด์ อ.สกล — Diffusion limitation"
+   ],
+   "nl": [
+    "B6.1.2(2)",
+    "B6.1.2(4)",
+    "B6.2.5(1)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-10",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Mechanism of hypoxaemia in pulmonary embolism",
+   "stem": "A 55-year-old woman develops sudden dyspnoea and tachycardia 5 days after hip replacement. Arterial blood gas on room air: pH 7.49, PaCO2 30 mmHg, PaO2 62 mmHg. CT pulmonary angiography shows large bilateral lower-lobe emboli. Which mechanism best explains her hypoxaemia?",
+   "choices": [
+    "The embolised segments act as pure dead space, and dead space alone directly lowers PaO2",
+    "Alveolar hypoventilation from pleuritic pain",
+    "Diversion of pulmonary blood flow to non-embolised lung, creating low V/Q units, while the occluded region becomes dead space",
+    "Diffusion limitation from thickening of the alveolar–capillary membrane",
+    "Reduced inspired oxygen pressure"
+   ],
+   "answer": 2,
+   "explain": "สไลด์ *Pulmonary embolism: dead space or shunt?* — คำตอบคือ **ทั้งสองแบบ**\n- **บริเวณที่ลิ่มเลือดอุด** = มีลม ไม่มีเลือด → **dead space (V/Q = ∞)** — เลือดไม่ผ่าน จึง **ไม่ได้เป็นตัวทำให้ PaO₂ ต่ำโดยตรง**\n- **เลือดถูกเบน** ไปปอดส่วนที่เหลือมากเกิน: V ปกติ แต่ **Q เพิ่ม → V/Q ต่ำ** → เลือดได้ O₂ ไม่เต็ม = **hypoxemia แบบคล้าย shunt** ← สาเหตุหลักของ PaO₂ ต่ำ (ร่วมกับ atelectasis และ ScvO₂ ต่ำจาก CO ลด)\n- ผู้ป่วยหายใจเร็วชดเชย → **PaCO₂ ต่ำ** (A-a = 150 − 37.5 − 62 ≈ 50 กว้าง)\n\n- **Pure dead space ลด PaO₂** — dead space เพิ่ม **PaCO₂** (ระบายอากาศเสียเปล่า) ถ้าหายใจชดเชยไม่ทัน แต่ไม่ได้ทำให้ PaO₂ ต่ำเอง\n- **Hypoventilation** — PaCO₂ ต้องสูง รายนี้ 30\n- **Diffusion limitation** — พบใน ILD/emphysema ไม่ใช่ PE เฉียบพลัน\n- **Low PiO₂** — ที่สูง/เครื่องบิน A-a ปกติ",
+   "pearl": "PE: ส่วนที่อุด = dead space · ส่วนที่เลือดเบนไป = low V/Q → PaO₂ ↓ PaCO₂ ↓",
+   "ref": [
+    "สไลด์ อ.สกล — Pulmonary embolism: dead space or shunt?"
+   ],
+   "nl": [
+    "B6.1.2(2)",
+    "B6.1.2(4)",
+    "B6.2.5(1)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-11",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Oxygen-induced hypercapnia in COPD",
+   "stem": "A 72-year-old man with severe COPD is given oxygen at 15 L/min by non-rebreather mask in the ambulance for 40 minutes. On arrival he is drowsy with warm peripheries and a flapping tremor. SpO2 is 100%. Arterial blood gas on the mask: pH 7.21, PaCO2 86 mmHg, PaO2 240 mmHg, HCO3 33 mmol/L. Which mechanism contributes most to the rise in his PaCO2?",
+   "choices": [
+    "Oxygen toxicity causing acute lung injury",
+    "Release of hypoxic pulmonary vasoconstriction, redirecting blood to poorly ventilated units and worsening V/Q matching, together with the Haldane effect",
+    "Increased metabolic CO2 production caused by high inspired oxygen",
+    "Leftward shift of the oxygen dissociation curve",
+    "Development of an intracardiac right-to-left shunt"
+   ],
+   "answer": 1,
+   "explain": "ลายมือในสไลด์ — **\"O₂: vasodilator\"** · ปอด COPD มีหลายส่วนที่ V/Q ต่ำ ซึ่งร่างกายป้องกันด้วย **hypoxic pulmonary vasoconstriction (HPV)** หดหลอดเลือดส่วนที่ระบายลมไม่ดี เบนเลือดไปส่วนดี\n\nเมื่อให้ O₂ มากเกิน\n1. **ปลด HPV** → เลือดกลับไปเลี้ยงส่วนที่ระบายลมไม่ดี → V/Q แย่ลง → **dead space สัมพัทธ์เพิ่ม CO₂ คั่ง** ← ปัจจัยหลัก\n2. **Haldane effect** — oxy-Hb จับ CO₂ ได้น้อยลง CO₂ ถูกปล่อยเข้าพลาสมา\n3. ศูนย์หายใจถูกกดส่วนหนึ่ง (hypoxic drive)\n→ **CO₂ narcosis**: ซึม มืออุ่น asterixis = type II respiratory failure (acute-on-chronic: HCO₃ 33)\n\n**แก้**: อย่าหยุด O₂ ทันที (rebound hypoxemia) — **ลดลงเป็น Venturi 24–28% เป้า SpO₂ 88–92%** และเริ่ม **NIV** เพราะ pH < 7.35\n\n- **O₂ toxicity** — ต้องใช้ FiO₂ สูงนานหลายวัน\n- **CO₂ production** — O₂ ไม่ได้เพิ่ม VCO₂\n- **Left shift** — ไม่เกี่ยวกับ CO₂ คั่ง\n- **Intracardiac shunt** — ไม่ได้เกิดจากการให้ O₂",
+   "pearl": "COPD ให้ O₂ มากไป → ปลด HPV + Haldane → CO₂ คั่ง → Venturi เป้า 88–92%",
+   "ref": [
+    "สไลด์ อ.สกล — Hypoxic pulmonary vasoconstriction",
+    "BTS Guideline for Oxygen Use in Adults 2017"
+   ],
+   "nl": [
+    "B6.1.2(2)",
+    "B6.1.2(4)",
+    "B6.2.5(1)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-12",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Type III (perioperative) respiratory failure",
+   "stem": "A 58-year-old woman (BMI 36 kg/m2) is on the first day after an open upper abdominal operation. She is reluctant to take deep breaths because of wound pain and has been lying flat. SpO2 is 89% on room air, RR 24/min, temperature 37.6 °C. Breath sounds are reduced at both bases. Arterial PaCO2 is 37 mmHg. Chest radiograph shows bibasal plate-like opacities with slightly elevated hemidiaphragms. Which classification and management are most appropriate?",
+   "choices": [
+    "Type I respiratory failure from hospital-acquired pneumonia; start piperacillin–tazobactam",
+    "Type II respiratory failure from opioid-induced hypoventilation; intubate",
+    "Type IV respiratory failure from septic shock; give fluid resuscitation and vasopressors",
+    "Type III (perioperative) respiratory failure from atelectasis; sit upright, provide good analgesia, incentive spirometry and early mobilisation",
+    "Pulmonary embolism; start therapeutic anticoagulation without imaging"
+   ],
+   "answer": 3,
+   "explain": "ตารางสี่ชนิดของ อ.สกล — **Type III (perioperative)** = กลไก **atelectasis** · ตัวอย่าง **obesity, ascites, bronchospasm, เสมหะ, ยาสลบ/ยาระงับประสาท**\n\n**กลไก**: หลังดมยาสลบและผ่าตัดช่องท้องส่วนบน + อ้วน + นอนราบ + ปวดแผลหายใจตื้น → **FRC ลดลงต่ำกว่า closing volume** → airway ส่วนฐานปอดปิด → **ปอดแฟบฐานปอด** (plate-like atelectasis) → shunt/low V/Q → hypoxemia โดย PaCO₂ ปกติ · ไข้ต่ำ ๆ วันแรกหลังผ่าตัดเข้าได้\n\n**แก้ที่กลไก**: เพิ่ม FRC และเปิดถุงลม — **ลุกนั่ง/ศีรษะสูง, คุมปวดให้หายใจลึกและไอได้, incentive spirometry, กายภาพทรวงอก, ลุกเดินเร็ว** ± CPAP\n\n- **HAP** — วันแรกหลังผ่าตัดยังเร็วเกิน (HAP ≥ 48 ชม.) ไม่มี consolidation/เสมหะ\n- **Type II** — PaCO₂ ปกติ (37) ไม่มีข้อบ่งชี้ใส่ท่อ\n- **Type IV** — ไม่มีภาวะช็อก\n- **PE** — ต้องยืนยันด้วยภาพก่อนให้ยาต้านการแข็งตัวหลังผ่าตัดใหญ่ และภาพฐานปอดแฟบสองข้างอธิบายได้ดีกว่า",
+   "pearl": "Type III = perioperative atelectasis (FRC < closing volume) → ลุกนั่ง คุมปวด incentive spirometry",
+   "ref": [
+    "สไลด์ อ.สกล — Respiratory failure type III / Lung volume in general anesthesia"
+   ],
+   "nl": [
+    "2.2.9",
+    "B6.2.5(1)",
+    "2.2.11"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-13",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Non-invasive ventilation in acute exacerbation of COPD",
+   "stem": "A 68-year-old man with COPD presents with 3 days of increasing breathlessness and purulent sputum. He is alert, cooperative and coughing up sputum; RR 28/min, BP 146/84 mmHg. On a 28% Venturi mask SpO2 is 90%. Arterial blood gas: pH 7.29, PaCO2 66 mmHg, PaO2 60 mmHg, HCO3 31 mmol/L. Chest radiograph shows hyperinflation without pneumothorax. Nebulised bronchodilators, prednisolone and antibiotics have been started. Which is the most appropriate next step?",
+   "choices": [
+    "Start bilevel non-invasive ventilation (BiPAP) and repeat the blood gas in 1–2 hours",
+    "Immediate endotracheal intubation",
+    "Change to a non-rebreather mask at 15 L/min to achieve SpO2 98%",
+    "Intravenous sodium bicarbonate to correct the acidaemia",
+    "Continue the current treatment and repeat the blood gas tomorrow morning"
+   ],
+   "answer": 0,
+   "explain": "**ข้อบ่งชี้ NIV ที่หลักฐานชัดที่สุด** (สไลด์/ERS-ATS 2017): **AECOPD ที่ pH < 7.35 และ PaCO₂ > 45** หลังให้การรักษามาตรฐานแล้ว และผู้ป่วย **ยังรู้สึกตัว ร่วมมือ ไอขับเสมหะได้** — รายนี้ครบ\n\n**กลไก**: AECOPD = **load > capacity** (หลอดลมตีบ + air trapping/auto-PEEP กล้ามเนื้อหายใจเสียเปรียบ) → type II · **IPAP** ช่วยเพิ่ม tidal volume ระบาย CO₂ · **EPAP** ต้าน auto-PEEP ลดงานการหายใจ → ลดอัตราใส่ท่อและเสียชีวิต · ประเมินก๊าซเลือดซ้ำใน 1–2 ชม. ถ้าไม่ดีขึ้นต้องเตรียมใส่ท่อ\n\n- **ใส่ท่อทันที** — ยังไม่มีข้อบ่งชี้ (รู้สึกตัวดี ปกป้องทางเดินหายใจได้ ไม่ช็อก) ควรลอง NIV ก่อน\n- **NRB เป้า 98%** — เพิ่ม CO₂ คั่ง (ปลด HPV) เป้าที่ถูกคือ **88–92%** ซึ่งตอนนี้ได้ 90% แล้ว\n- **Bicarbonate** — acidosis เป็น respiratory ต้องแก้ที่ ventilation และยิ่งเพิ่ม CO₂\n- **รอถึงพรุ่งนี้** — pH 7.29 คือ acute ventilatory failure ต้องลงมือตอนนี้",
+   "pearl": "NIV ได้ผลชัด: AECOPD pH < 7.35 + PaCO₂ > 45 ที่ยังรู้สึกตัว · และ cardiogenic pulmonary edema",
+   "ref": [
+    "สไลด์ อ.สกล — Respiratory failure type II — load > capacity",
+    "ERS/ATS 2017 — NIV for acute respiratory failure"
+   ],
+   "nl": [
+    "2.2.9",
+    "B6.2.5(1)",
+    "2.2.11"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-14",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Failing high-flow nasal cannula — ROX index and intubation",
+   "stem": "A 52-year-old man with severe bilateral pneumonia was started on high-flow nasal cannula (60 L/min). At 2 hours (FiO2 0.5) his SpO2 was 92% and RR 30/min. At 6 hours he needs FiO2 0.9 to maintain SpO2 88%, his RR is 38/min, he is using accessory muscles, and his abdomen moves inward during inspiration. He remains alert. Which is the most appropriate next step?",
+   "choices": [
+    "Continue HFNC unchanged and reassess in another 6 hours",
+    "Give intravenous midazolam to slow his breathing",
+    "Switch to a non-rebreather mask at 15 L/min",
+    "Lower the target SpO2 to 80% and continue HFNC",
+    "Proceed to endotracheal intubation and mechanical ventilation"
+   ],
+   "answer": 4,
+   "explain": "**ROX index = (SpO₂/FiO₂) ÷ RR**\n- 2 ชม.: (92/0.5)/30 = 184/30 ≈ **6.1** (≥ 4.88 = ดี)\n- 6 ชม.: (88/0.9)/38 ≈ 97.8/38 ≈ **2.6** → ต่ำมากและ **ลดลงเรื่อย ๆ** = HFNC ล้มเหลว\n\nร่วมกับ **paradoxical (ท้องยุบตอนหายใจเข้า)** = กะบังลมล้า ถูกดึงขึ้นตามแรงดูดของช่องอก → load > capacity ใกล้หยุดหายใจ\n\n**เกณฑ์ใส่ท่อสี่ข้อ**: oxygenation ล้มเหลว (SpO₂ ไม่ถึงเป้าแม้ HFNC) ✔ · ventilation ล้มเหลว/ล้า ✔ · ปกป้องทางเดินหายใจไม่ได้ · คาดว่าจะแย่ลง ✔ → **ใส่ท่อเลย** — การตัดสินใจเป็นทางคลินิก ไม่ต้องรอก๊าซเลือด และ **การใส่ท่อล่าช้าในผู้ที่ล้มเหลวจาก HFNC เพิ่มอัตราตาย**\n\n- **รออีก 6 ชม.** — ROX ต่ำลงเรื่อย ๆ = อย่ารอ\n- **Midazolam** — กดการหายใจในผู้ที่กำลังล้า อาจหยุดหายใจ\n- **NRB** — FiO₂ ต่ำกว่า HFNC และไม่มี PEEP/ล้าง dead space\n- **เป้า 80%** — ต่ำกว่าเป้าปลอดภัย (94–98%; รับได้ถึง 88–92% บางกรณี) ไม่แก้ภาวะล้า",
+   "pearl": "ROX = (SpO₂/FiO₂)/RR · ≥ 4.88 ดี · ลดลงเรื่อย ๆ + paradoxical breathing = ใส่ท่อเลย",
+   "ref": [
+    "สไลด์ อ.สกล — Respiratory failure",
+    "ERS 2022 — High-flow nasal cannula (ROX index)"
+   ],
+   "nl": [
+    "2.2.9",
+    "B6.2.5(1)",
+    "2.2.11"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-15",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Pleural innervation — referred shoulder-tip pain",
+   "stem": "A 45-year-old man with right lower-lobe pneumonia complains of sharp pain at the tip of his right shoulder that worsens with deep inspiration and coughing. Shoulder movement is painless and examination of the shoulder is normal. Irritation of which structure, and which nerve, best explains this pain?",
+   "choices": [
+    "Visceral pleura of the right lower lobe — vagus nerve",
+    "Costal parietal pleura — intercostal nerves",
+    "Central diaphragmatic parietal pleura — phrenic nerve (C3–C5)",
+    "Peripheral diaphragmatic pleura — lower intercostal nerves",
+    "Brachial plexus — upper trunk"
+   ],
+   "answer": 2,
+   "explain": "สไลด์ *Pleura and nerve supply*\n\n| ส่วน | เส้นประสาท | อาการ |\n|---|---|---|\n| Parietal — costal | **Intercostal** (somatic) | เจ็บตรงจุด ร้าวตามแนวซี่โครง |\n| **Parietal — mediastinal + central diaphragm** | **Phrenic (C3–5)** | **ร้าวไหล่ข้างเดียวกัน** |\n| Visceral | vagus + sympathetic | รับแค่การยืด **ไม่เจ็บ** |\n\n**กลไก referred pain**: ใยประสาทรับความรู้สึกจาก phrenic nerve เข้าไขสันหลังระดับ **C3–5** เดียวกับผิวหนังบริเวณไหล่ (supraclavicular nerves C3–4) สมองจึงแปลว่าเจ็บที่ไหล่ · ปอดอักเสบกลีบล่างที่ลามถึงเยื่อหุ้มปอดบนกะบังลมส่วนกลางจึงปวดไหล่ และเป็น **pleuritic** (หายใจลึก/ไอแล้วเจ็บ)\n\n- **Visceral pleura** — ไม่มีใยรับความเจ็บ ปอดอักเสบจะเจ็บก็ต่อเมื่อลามถึง parietal pleura\n- **Costal parietal** — เจ็บตรงผนังอกที่ชี้ได้ ไม่ร้าวไหล่\n- **Peripheral diaphragm** — เลี้ยงด้วย lower intercostal nerves → ร้าว **ผนังหน้าท้องส่วนบน** ไม่ใช่ไหล่\n- **Brachial plexus** — ไม่สัมพันธ์กับการหายใจและจะมีอาการทางแขน",
+   "pearl": "Central diaphragm pleura → phrenic C3–5 → ปวดไหล่ · visceral pleura ไม่เจ็บ",
+   "ref": [
+    "สไลด์ อ.สกล — Pleura and nerve supply / Respiratory chest pain"
+   ],
+   "nl": [
+    "2.1.35",
+    "2.1.34"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-16",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Physical examination — lung collapse vs effusion vs consolidation",
+   "stem": "A 66-year-old man who smokes 40 pack-years has 2 months of cough with blood-streaked sputum and weight loss. Over the right hemithorax there is reduced expansion, dullness to percussion, absent breath sounds and reduced tactile fremitus. The trachea is deviated to the RIGHT and the apex beat is displaced to the right. Chest radiograph shows a completely opaque right hemithorax. Which is the most likely diagnosis?",
+   "choices": [
+    "Right lung collapse from a central endobronchial tumour obstructing the right main bronchus",
+    "Massive right pleural effusion",
+    "Right lobar pneumonia with consolidation",
+    "Right tension pneumothorax",
+    "Right-sided pulmonary fibrosis"
+   ],
+   "answer": 0,
+   "explain": "ทุกภาวะในตารางตรวจร่างกายของสไลด์ dull ได้หลายแบบ — **ตำแหน่ง trachea/mediastinum** คือจุดแยกเมื่อฝ้าทั้งข้าง\n\n| ภาวะ | Percussion | Fremitus | Breath sound | Trachea |\n|---|---|---|---|---|\n| **Collapse (ปอดแฟบ)** | Dull | ↓ | ↓/หาย | **ดึงเข้าหา** ข้างที่เป็น |\n| Effusion มาก | Stony dull | ↓ | ↓ | **ดันออก** ฝั่งตรงข้าม |\n| Consolidation | Dull | **↑** | **Bronchial** | กลาง |\n| Pneumothorax | **Hyperresonance** | ↓ | ↓ | tension → ดันออก |\n\n**กลไก**: ก้อนอุด main bronchus → อากาศส่วนปลายถูกดูดซึมจนหมด → **ปริมาตรลดลง** ดึง mediastinum เข้าหา · หลอดลมอุดจึงไม่มีเสียงผ่าน → BS และ fremitus หาย (ต่างจาก consolidation ที่หลอดลมเปิด)\nผู้สูบบุหรี่ + ไอเป็นเลือด + น้ำหนักลด → มะเร็งปอดชนิด central (เช่น squamous) → CT + **bronchoscopy**\n\n- **Effusion มาก** — ดัน trachea ไป **ซ้าย**\n- **Consolidation** — fremitus **เพิ่ม** + bronchial BS, trachea กลาง\n- **Tension PTX** — เคาะโปร่ง ดัน trachea ออก\n- **Fibrosis** — velcro crackles ไม่ทำให้ฝ้าทั้งข้างแบบนี้",
+   "pearl": "ฝ้าทั้งข้าง: trachea ดันออก = น้ำ · ดึงเข้า = ปอดแฟบ (ก้อนอุดหลอดลม) · กลาง = consolidation/ทั้งสองอย่าง",
+   "ref": [
+    "สไลด์ อ.สกล — Physical examination",
+    "สไลด์ อ.สกล — Pressure and occupied space in thoracic cavity"
+   ],
+   "nl": [
+    "2.1.35",
+    "2.1.34"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-17",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Tension pneumothorax in a ventilated patient after subclavian line",
+   "stem": "A 60-year-old man is intubated in the ICU for pneumonia. A right subclavian central venous catheter was inserted 1 hour ago. The ventilator suddenly alarms for high peak airway pressure. HR 138/min, BP 72/40 mmHg, SpO2 80% on FiO2 1.0. Breath sounds are absent on the right with hyperresonance, the trachea is deviated to the left and the neck veins are distended. Which is the most appropriate immediate action?",
+   "choices": [
+    "Obtain an urgent portable chest radiograph to confirm the diagnosis",
+    "Perform bedside echocardiography to exclude cardiac tamponade",
+    "Give a 1-litre fluid bolus and start norepinephrine",
+    "Perform immediate right-sided needle decompression, followed by insertion of an intercostal chest drain",
+    "Increase PEEP to improve oxygenation"
+   ],
+   "answer": 3,
+   "explain": "**Iatrogenic tension pneumothorax** — ใส่ subclavian line + **positive-pressure ventilation** (traumatic PTX กลายเป็น tension ~20% และมากกว่านั้นบนเครื่องช่วยหายใจ เพราะเครื่องอัดลมเข้าทุกครั้ง)\n\n**กลไก**: รอยรั่วเป็น **ลิ้นทางเดียว** → ความดันในช่องอกบวกสูง → ดัน mediastinum ไปซ้าย **กด/บิด SVC IVC** → venous return ลด → **obstructive shock** · เลือดค้างในหลอดเลือดดำ → **คอโป่ง** · ปอดแฟบ → peak pressure สูง SpO₂ ตก\n\n**Tension PTX วินิจฉัยทางคลินิก — ห้ามรอเอกซเรย์**\n1. **Needle decompression ทันที** (ช่องซี่โครง 4–5 แนว anterior/mid-axillary ในผู้ใหญ่ หรือช่อง 2 mid-clavicular)\n2. ตามด้วย **intercostal chest drain ต้องใส่เสมอ** (สไลด์: *chest drain ต้องเข้า!*) ใน safety triangle\n\n- **CXR ก่อน** — เสียเวลา ผู้ป่วยอาจหัวใจหยุดเต้น\n- **Echo หา tamponade** — tamponade คอโป่ง BP ตกได้ แต่ **trachea ตรง เสียงหายใจสองข้างเท่ากัน ไม่เคาะโปร่ง**\n- **สารน้ำ + vasopressor** — ไม่แก้การอุดกั้น\n- **เพิ่ม PEEP** — เพิ่มความดันในช่องอก ทำให้ tension แย่ลง",
+   "pearl": "Tension PTX = วินิจฉัยทางคลินิก → needle decompression ทันที → chest drain ต้องใส่เสมอ",
+   "ref": [
+    "สไลด์ อ.สกล — Type of pneumothorax / Traumatic pneumothorax / Management of tension pneumothorax",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "2.3.10(6)",
+    "2.2.14",
+    "B6.2.3(4)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-18",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Lung ultrasound in pneumothorax — lung point",
+   "stem": "During an E-FAST examination of a 28-year-old man after a motorcycle collision, the right anterior chest shows absent lung sliding, and M-mode demonstrates a 'barcode' (stratosphere) pattern. He is haemodynamically stable. Which additional sonographic finding would most specifically confirm a pneumothorax?",
+   "choices": [
+    "Multiple B-lines arising from the pleural line",
+    "A lung point — the boundary where lung sliding reappears",
+    "A 'seashore' pattern on M-mode",
+    "A spine sign above the diaphragm",
+    "A floating 'jellyfish' lung in an anechoic space"
+   ],
+   "answer": 1,
+   "explain": "สไลด์ *Ultrasound* — E-FAST ทำข้างเตียงได้เร็ว\n\n| สัญญาณ | ความหมาย |\n|---|---|\n| **มี lung sliding** | **ตัด PTX ได้ 100%** ณ จุดนั้น |\n| Loss of lung sliding / barcode | เยื่อสองชั้นแยกกัน — **ไม่จำเพาะ** (PTX, effusion, emphysema, pleurodesis, ใส่ท่อลงหลอดลมข้างเดียว) |\n| **Lung point** | จุดเปลี่ยนระหว่างมี/ไม่มี sliding → **จำเพาะ ~100%** |\n\n**กลไก**: ลมในช่องเยื่อหุ้มปอดลอยอยู่ด้านบน (anterior) แยก visceral ออกจาก parietal pleura · ที่ขอบของลม ปอดยังแตะผนังอกเป็นจังหวะตามการหายใจ → เห็น sliding โผล่สลับหายไป = lung point ซึ่งเกิดได้จาก PTX เท่านั้น\n\n- **B-lines** — เกิดจาก visceral pleura ที่แนบผนังอก **การเห็น B-line ตัด PTX ณ จุดนั้น** ไม่ใช่ยืนยัน\n- **Seashore sign** — ภาพ M-mode ของ **ปอดปกติที่ sliding** อยู่\n- **Spine sign / jellyfish sign** — สัญญาณของ **pleural effusion** (น้ำนำเสียงให้เห็นกระดูกสันหลัง ปอดแฟบลอยในน้ำ)",
+   "pearl": "US: มี lung sliding/B-line = ตัด PTX · lung point = ยืนยัน PTX",
+   "ref": [
+    "สไลด์ อ.สกล — Ultrasound — lung sliding / lung point"
+   ],
+   "nl": [
+    "2.3.10(6)",
+    "2.2.14",
+    "B6.2.3(4)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-19",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "BTS 2023 — conservative management of minimally symptomatic primary pneumothorax",
+   "stem": "A 21-year-old man presents 1 day after the onset of mild left-sided pleuritic pain. He has no breathlessness at rest, walks comfortably, and has no known lung disease. HR 84/min, BP 122/76 mmHg, RR 16/min, SpO2 98% on room air. Chest radiograph shows a left pneumothorax with a 2.5 cm rim at the level of the hilum and no mediastinal shift. His pain is controlled with paracetamol, he lives 10 minutes from the hospital and understands when to return. According to the BTS 2023 guideline, which is the most appropriate management?",
+   "choices": [
+    "Insert a large-bore (28 F) intercostal chest drain because the rim exceeds 2 cm",
+    "Needle aspiration is mandatory because of the size of the pneumothorax",
+    "Admit for chest drain insertion with high-pressure suction",
+    "Refer for immediate VATS bullectomy and pleurodesis",
+    "Conservative management with safety-net advice and outpatient follow-up chest radiography"
+   ],
+   "answer": 4,
+   "explain": "หลักใหม่ของ **BTS 2023** ที่ อ.สกล เขียนในสไลด์ — **ประเมินตามอาการ (clinical/subjective) ไม่ใช่ขนาดบนฟิล์ม**\n\n| สถานการณ์ | แนวทาง |\n|---|---|\n| **Primary · อาการน้อย · ไม่มี high-risk** | **Conservative** แม้ขนาดใหญ่ — นัดติดตาม CXR |\n| Primary · มีอาการ | needle aspiration / ambulatory device / small drain |\n| Secondary หรือ high-risk | admit + chest drain |\n\n**High-risk features** ที่ต้องไม่มี: hemodynamic ไม่คงที่, hypoxia รุนแรง, สองข้าง, มีโรคปอด, อายุ ≥ 50 ที่สูบบุหรี่, hemopneumothorax — รายนี้ไม่มีเลย\n**เหตุผล**: ลมถูกดูดซึมเองราว 1.5–2% ของ hemithorax ต่อวัน และการศึกษาพบว่า conservative ได้ผลไม่ด้อยกว่าพร้อมภาวะแทรกซ้อนน้อยกว่า\n\n- **Drain ใหญ่เพราะ > 2 cm** — ยึดขนาดตามแนวทางเดิม และสายใหญ่เจ็บกว่าโดยไม่จำเป็น\n- **Needle aspiration บังคับ** — ใช้เมื่อ **มีอาการ** ไม่ใช่เพราะขนาด\n- **Suction แรงดันสูง** — ไม่ใช้เป็นประจำ เสี่ยง re-expansion edema\n- **VATS ทันที** — ข้อบ่งชี้คือเป็นซ้ำ, สองข้าง, air leak > 3–5 วัน, อาชีพเสี่ยง",
+   "pearl": "BTS 2023: primary PTX อาการน้อย ไม่มี high-risk → สังเกตได้แม้ขนาดใหญ่",
+   "ref": [
+    "สไลด์ อ.สกล — Management of pneumothorax (BTS 2023)",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "2.3.10(6)",
+    "2.2.14"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-20",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "When not to tap — bilateral effusions in heart failure",
+   "stem": "A 74-year-old woman with heart failure (LVEF 30%) has 1 week of worsening orthopnoea and leg oedema. JVP is raised 6 cm and there are bibasal crackles. She is afebrile and has no pleuritic pain. Chest radiograph shows cardiomegaly with bilateral pleural effusions, the right slightly larger than the left. Which is the most appropriate management of the effusions?",
+   "choices": [
+    "Bilateral diagnostic thoracentesis with Light's criteria",
+    "Contrast-enhanced CT thorax to exclude malignancy",
+    "Intravenous loop diuretic and observe; aspirate only if the effusions are atypical or fail to respond",
+    "Insert a right intercostal chest drain",
+    "Medical thoracoscopy with pleural biopsy"
+   ],
+   "answer": 2,
+   "explain": "**ข้อบ่งชี้ของ thoracentesis** (สไลด์ *When to perform thoracentesis?*): น้ำ **ข้างเดียว โดยเฉพาะข้างซ้าย** · **สองข้างไม่เท่ากัน (discordant)** · ไม่รู้สาเหตุ · ไม่ตอบสนองต่อการรักษา · มีไข้/เจ็บแบบ pleuritic · เพื่อลดอาการ — และต้องปลอดภัยใต้อัลตราซาวด์\n\nรายนี้เป็น **ภาพทั่วไปของหัวใจล้มเหลว**: น้ำ **สองข้าง ขวามากกว่าซ้ายเล็กน้อย** ไม่มีไข้ ไม่เจ็บ + มีหลักฐาน volume overload ชัด → **transudate จาก hydrostatic pressure สูง** → **ให้ยาขับปัสสาวะแล้วดู** ไม่ต้องเจาะ\n(จุดสอบ: น้ำจากหัวใจล้มเหลวมักสองข้างหรือขวาข้างเดียว — **น้ำซ้ายข้างเดียวในผู้ป่วยหัวใจล้มเหลวต้องหาสาเหตุอื่น** และควรเจาะ)\n\n- **เจาะสองข้าง** — เสี่ยง pneumothorax/เลือดออกโดยไม่เปลี่ยนการรักษา และน้ำที่ได้ยาขับปัสสาวะอาจเป็น pseudo-exudate ให้สับสน\n- **CT หามะเร็ง** — ไม่มีเหตุสงสัย\n- **Chest drain** — ไม่ใช้กับ transudate\n- **Thoracoscopy** — สำหรับ exudate ที่ยังไม่ทราบสาเหตุ",
+   "pearl": "CHF: น้ำสองข้าง ขวา ≥ ซ้าย ไม่มีไข้ → ยาขับปัสสาวะก่อน · ซ้ายข้างเดียว/ไม่เท่ากัน/ไข้ → เจาะ",
+   "ref": [
+    "สไลด์ อ.สกล — When to perform thoracentesis?"
+   ],
+   "nl": [
+    "2.3.10(7)",
+    "B6.3(1)",
+    "3.1.7"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-21",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "BTS 2023 work-up — suspected pleural malignancy",
+   "stem": "A 63-year-old man who smokes has 3 months of weight loss and progressive breathlessness. Chest radiograph shows a large left pleural effusion. Thoracic ultrasound shows a large effusion with nodular thickening of the diaphragmatic pleura. He is comfortable at rest. According to the BTS 2023 algorithm, which is the most appropriate next step?",
+   "choices": [
+    "Contrast-enhanced CT of the thorax, abdomen and pelvis before the effusion is drained, then ultrasound-guided aspiration ± biopsy",
+    "Insert a large-bore chest drain to drain the effusion completely, then perform CT",
+    "Start empirical anti-tuberculous treatment",
+    "Perform talc slurry pleurodesis immediately",
+    "Send three separate blind pleural fluid cytology samples before any imaging"
+   ],
+   "answer": 0,
+   "explain": "สรุปของ อ.สกล ตาม BTS 2023: **\"สงสัยมะเร็งไหม → เจาะได้ไหม\"**\n\n**สงสัยมะเร็ง (ใช่)** — สูบบุหรี่ น้ำหนักลด น้ำข้างเดียวมาก **เยื่อหุ้มปอดหนาเป็นปุ่ม** บนอัลตราซาวด์\n1. **CT thorax/abdomen/pelvis ฉีดสี ก่อนระบายน้ำหมด** — มีน้ำอยู่ทำให้เห็นเยื่อหุ้มปอดที่หนา/ปุ่มชัดกว่า และใช้ staging หาก้อนต้นตอ\n2. **เจาะใต้ US** ส่ง cytology, protein, LDH, glucose, pH, MC&S\n3. ถ้าเห็นเป้าชัด (เช่นปุ่มนี้) → **US-guided cutting needle biopsy ในคราวเดียว** · เคยสัมผัส asbestos → ไป thoracoscopy เลย\n\n- **ระบายหมดก่อน CT** — ปอดขยายกลับมาชิดผนัง ทำให้มองรอยโรคเยื่อหุ้มปอดยาก และสายใหญ่ไม่จำเป็นในผู้ที่สบายตอนพัก\n- **ยาวัณโรค** — ยังไม่มีผลน้ำ (lymphocyte, ADA) และภาพชี้ไปทางมะเร็ง\n- **Talc ทันที** — ต้องมีการวินิจฉัยและรู้ว่าปอดขยายได้ก่อน\n- **Cytology สามครั้งก่อนภาพ** — cytology ไวราว 60% ครั้งแรก ไม่ควรถ่วงการทำ CT/biopsy และต้องทำใต้ US",
+   "pearl": "BTS 2023: สงสัยมะเร็ง → CT ฉีดสีก่อนระบายหมด → เจาะใต้ US ± biopsy",
+   "ref": [
+    "สไลด์ อ.สกล — Pleural effusion work-up algorithm (BTS 2023)",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "2.3.10(7)",
+    "B6.3(1)",
+    "3.1.7"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-22",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Light's criteria — exudate by the third criterion",
+   "stem": "A 50-year-old man undergoes diagnostic thoracentesis for a unilateral pleural effusion. Results: pleural protein 2.9 g/dL (serum 7.0 g/dL), pleural LDH 180 U/L (serum LDH 360 U/L; upper limit of normal for serum LDH 240 U/L). How should this effusion be classified?",
+   "choices": [
+    "Transudate, because the protein ratio is < 0.5 and the LDH ratio is < 0.6",
+    "Transudate, because at least two of the three Light's criteria must be met",
+    "Exudate, because the protein ratio exceeds 0.5",
+    "Exudate, because the pleural LDH exceeds two-thirds of the upper limit of normal serum LDH",
+    "Cannot be classified without the pleural fluid glucose"
+   ],
+   "answer": 3,
+   "explain": "**Light's criteria — exudate ถ้าเข้า \"ข้อใดข้อหนึ่ง\"**\n\n| เกณฑ์ | คำนวณ | ผล |\n|---|---|---|\n| Protein ratio > 0.5 | 2.9/7.0 = **0.41** | ✘ |\n| LDH ratio > 0.6 | 180/360 = **0.50** | ✘ |\n| Pleural LDH > 2/3 ULN | 2/3 × 240 = **160**; 180 > 160 | **✔** |\n\n→ **Exudate** (เข้าข้อ 3 ข้อเดียวก็พอ) — ข้อสอบชอบให้ **เขียนตัวเลขทุกข้อ** แล้วสรุป\n\n**กลไก**: exudate = เยื่อหุ้มปอดเองผิดปกติ (permeability ↑ หรือ lymphatic อุด) โปรตีนและ LDH จากเซลล์อักเสบ/ตายจึงผ่านออกมา · LDH ในน้ำที่สูงเกินค่าปกติของเลือดสะท้อนการอักเสบเฉพาะที่ แม้อัตราส่วนกับเลือดจะไม่สูงเพราะ LDH ในเลือดรายนี้สูงด้วย\n\n- **ดูแค่สองอัตราส่วน** — ลืมข้อ 3 พลาดบ่อยที่สุด\n- **ต้องเข้าสองข้อ** — ผิด ข้อเดียวพอ (จึงไวมากแต่จำเพาะต่ำ)\n- **Protein ratio > 0.5** — คำนวณผิด ได้ 0.41\n- **ต้องใช้ glucose** — glucose ช่วยหาสาเหตุ (empyema, RA, TB, มะเร็ง) แต่ไม่ใช่เกณฑ์แยก transudate/exudate",
+   "pearl": "Light: protein > 0.5 · LDH ratio > 0.6 · LDH > 2/3 ULN — ข้อเดียวก็ exudate",
+   "ref": [
+    "สไลด์ อ.สกล — Work up pleural effusion",
+    "Light RW et al. Ann Intern Med 1972",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "B6.3(1)",
+    "3.1.7",
+    "2.3.10(7)",
+    "B6.2.2(10)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-23",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Pseudo-exudate in diuresed heart failure — albumin gradient",
+   "stem": "A 78-year-old man with heart failure has received intravenous furosemide for 5 days but a right pleural effusion persists, so it is aspirated. Pleural protein 3.4 g/dL (serum 6.0 g/dL), pleural LDH 140 U/L (serum 260 U/L; ULN 250 U/L), pleural albumin 1.9 g/dL (serum albumin 3.4 g/dL), cytology negative, Gram stain negative. Serum NT-proBNP is 6,800 pg/mL. Which is the most appropriate interpretation?",
+   "choices": [
+    "Exudate from a parapneumonic effusion requiring a chest drain",
+    "Transudate from heart failure misclassified as an exudate after diuresis — the serum–pleural albumin gradient is > 1.2 g/dL",
+    "Malignant exudate requiring CT and pleural biopsy",
+    "Tuberculous pleuritis — send pleural ADA and start anti-tuberculous therapy",
+    "Exudate confirmed, because diuretic therapy does not affect Light's criteria"
+   ],
+   "answer": 1,
+   "explain": "**Light's**: protein ratio 3.4/6.0 = **0.57 (> 0.5 ✔)** · LDH ratio 140/260 = 0.54 ✘ · LDH 140 < 2/3 × 250 = 167 ✘ → จัดเป็น exudate **เพียงเพราะโปรตีน ratio เกินเล็กน้อย**\n\n**จุดอ่อนของ Light's** — ไวมากจึงเรียก transudate เป็น exudate ได้ราว **25%** โดยเฉพาะ **หัวใจล้มเหลวที่ได้ยาขับปัสสาวะ**: ยาขับน้ำออกจากช่องเยื่อหุ้มปอดเร็วกว่าโปรตีน → **โปรตีนและ LDH ในน้ำเข้มข้นขึ้น** (pseudo-exudate)\n\n**ตัวช่วย**\n- **Serum − pleural albumin gradient** = 3.4 − 1.9 = **1.5 g/dL > 1.2 → transudate** ✔\n- Serum − pleural protein gradient = 6.0 − 3.4 = 2.6 (เกณฑ์ > 3.1 ไม่เข้า แต่ albumin gradient แม่นกว่า)\n- **NT-proBNP สูงมาก** สนับสนุนหัวใจล้มเหลว\n→ รักษาหัวใจล้มเหลวต่อ ปรับยาขับปัสสาวะ\n\n- **Parapneumonic** — ไม่มีไข้ Gram ลบ LDH ต่ำ\n- **มะเร็ง / TB** — ไม่มีหลักฐานและ LDH ต่ำมากสำหรับ exudate จากการอักเสบ\n- **ยาขับปัสสาวะไม่มีผล** — ผิด นี่คือกับดักหลัก",
+   "pearl": "ได้ยาขับปัสสาวะแล้วเป็น exudate ก้ำกึ่ง → albumin gradient > 1.2 = transudate จริง",
+   "ref": [
+    "สไลด์ อ.สกล — Work up pleural effusion",
+    "Light RW et al. Ann Intern Med 1972",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "B6.3(1)",
+    "3.1.7",
+    "2.3.10(7)",
+    "B6.2.2(10)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-24",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Imaging of pleural effusion — ultrasound volume estimate and septations",
+   "stem": "A 36-year-old woman has 10 days of fever and right-sided pleuritic chest pain. An upright PA chest radiograph shows only blunting of the right costophrenic angle with a meniscus. Thoracic ultrasound shows an echogenic collection containing multiple fibrin strands and septations; the maximal distance between the parietal and visceral pleura at the base is 30 mm. Which interpretation is most appropriate?",
+   "choices": [
+    "Volume about 150 mL; septations indicate a transudate",
+    "Volume about 600 mL; the appearance is typical of a heart-failure transudate",
+    "Volume about 600 mL; septations indicate an exudate (such as parapneumonic or tuberculous effusion) with possible loculation",
+    "Volume about 3 L; a lateral decubitus film is still required to confirm that fluid is present",
+    "Septations indicate a haemothorax, confirmed by the hematocrit sign"
+   ],
+   "answer": 2,
+   "explain": "**ประมาณปริมาตรจากอัลตราซาวด์** (สไลด์ *Pleural volume*): **ปริมาตร (mL) ≈ ระยะห่างสูงสุดของเยื่อสองชั้น (mm) × 20** = 30 × 20 ≈ **600 mL** — สอดคล้องกับ PA film ที่ต้องมีน้ำ **150–500 mL** ขึ้นไปจึงเห็น costophrenic angle ทื่อ\n\n**ลักษณะบน US**\n| สัญญาณ | ความหมาย |\n|---|---|\n| **Septation / loculation** | **exudate** (parapneumonic, TB) |\n| Plankton/swirling | มีเศษลอย — exudate, เลือด, หนอง |\n| Hematocrit sign | ชั้นตะกอนแยก = เลือด |\n| Spine sign, jellyfish, sinusoid, quad sign | ยืนยันว่ามีน้ำ |\n\n**กลไกของ septation**: การอักเสบกระตุ้น coagulation และ **ลด fibrinolysis** ในช่องเยื่อหุ้มปอด → fibrin ตกเป็นผนังกั้น → น้ำ loculated ไม่ไหลตามท่า → มักต้องระบายด้วยสาย ± ยาละลายลิ่ม · ไข้ + pleuritic pain → นึกถึง **parapneumonic** ก่อน แล้วเจาะใต้ US\n\n- **150 mL / transudate** — คำนวณผิด และ septation ไม่พบใน transudate\n- **Transudate หัวใจล้มเหลว** — มักใส ไม่มี septation สองข้าง ไม่มีไข้\n- **3 L / ต้อง decubitus** — คำนวณผิด และ US ไวกว่า decubitus film (ซึ่งเห็นได้ 2–10 mL) อยู่แล้ว\n- **Hemothorax** — ใช้ hematocrit sign ไม่ใช่ septation",
+   "pearl": "US: ปริมาตร ≈ ระยะ (mm) × 20 · septation = exudate · lateral decubitus เห็น 2–10 mL",
+   "ref": [
+    "สไลด์ อ.สกล — Imaging of pleural effusion / Ultrasound: exudate / Pleural volume"
+   ],
+   "nl": [
+    "2.3.10(7)",
+    "B6.2.2(10)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-25",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Milky pleural fluid — chylothorax",
+   "stem": "Five days after an oesophagectomy, a 61-year-old man's right chest drain output increases to 1.2 L/day and becomes milky white soon after enteral feeding is started. Pleural fluid triglyceride is 380 mg/dL and cholesterol 85 mg/dL; the fluid stays milky after centrifugation. Which is the most likely diagnosis?",
+   "choices": [
+    "Empyema",
+    "Pseudochylothorax",
+    "Haemothorax",
+    "Tuberculous pleuritis",
+    "Chylothorax from thoracic duct injury"
+   ],
+   "answer": 4,
+   "explain": "**Chylothorax** — **thoracic duct** วิ่งใกล้หลอดอาหารในช่องอกขวาล่าง จึงบาดเจ็บได้จากการผ่าตัดหลอดอาหาร (สาเหตุอื่น: lymphoma/มะเร็งอุด, บาดเจ็บ)\n\n**กลไก**: thoracic duct ขนไขมันจากลำไส้ในรูป **chylomicron** · เมื่อเริ่มให้อาหารทางสาย ไขมันที่ดูดซึมไหลผ่านรูรั่วเข้าช่องอก → น้ำ **ขุ่นขาวเหมือนนม** ปริมาณมาก · **TG > 110 mg/dL** ยืนยัน (cholesterol ต่ำ, ตรวจพบ chylomicron)\nรักษา: ระบาย, งดอาหารมัน/ใช้ **MCT** หรือ TPN (MCT ดูดซึมทาง portal vein ไม่ผ่าน thoracic duct) ± octreotide ถ้าไม่หยุด → ผูก/อุด thoracic duct\n\n| | Chylothorax | Pseudochylothorax | Empyema |\n|---|---|---|---|\n| TG | **> 110** | ต่ำ | — |\n| Cholesterol | ต่ำ | **> 200 + ผลึก** | — |\n| หลังปั่น | **ยังขุ่น** | ยังขุ่น | **ส่วนบนใส** (ขุ่นเพราะเซลล์) |\n| บริบท | duct ฉีก/อุด เฉียบพลัน | น้ำค้างนาน (RA, TB เก่า) | ติดเชื้อ |\n\n- **Pseudochylothorax** — cholesterol สูง TG ต่ำ ต้องค้างนานเป็นปี\n- **Empyema** — ขุ่นจากเซลล์ ปั่นแล้วใส\n- **Hemothorax** — Hct ในน้ำ ≥ 50% ของเลือด สีแดง\n- **TB** — น้ำเหลืองใส lymphocyte เด่น",
+   "pearl": "ขุ่นขาว + TG > 110 = chylothorax · cholesterol > 200 TG ต่ำ = pseudochylothorax",
+   "ref": [
+    "สไลด์ อ.สกล — Box 1: additional pleural fluid tests (BTS 2023)",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "B6.3(1)",
+    "3.1.7",
+    "2.3.10(7)",
+    "B6.2.2(10)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-26",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Complicated parapneumonic effusion — indication for chest drain",
+   "stem": "A 48-year-old man with diabetes has community-acquired pneumonia and remains febrile after 4 days of intravenous ceftriaxone and azithromycin. Ultrasound shows a moderate left pleural effusion without septations. Diagnostic aspiration yields turbid (not frankly purulent) fluid: pH 7.08, glucose 38 mg/dL, LDH 1,450 U/L; Gram stain shows no organisms. Which is the most appropriate next step?",
+   "choices": [
+    "Continue the same antibiotics alone and repeat a chest radiograph in 1 week",
+    "Repeat diagnostic thoracentesis in 48 hours",
+    "Insert a small-bore (12–14 F) ultrasound-guided chest drain and continue antibiotics with anaerobic cover",
+    "Immediate open thoracotomy and decortication",
+    "Start four-drug anti-tuberculous therapy"
+   ],
+   "answer": 2,
+   "explain": "**Parapneumonic effusion สามระยะ**\n| ระยะ | น้ำ | รักษา |\n|---|---|---|\n| Uncomplicated | ใส pH > 7.2 glucose ปกติ | ยาปฏิชีวนะอย่างเดียว |\n| **Complicated** | **pH < 7.2**, glucose < 40–60, LDH > 1,000, Gram/culture บวก | **ยาปฏิชีวนะ + chest drain** |\n| Empyema | หนองชัด | drain ± ยาละลาย ± ผ่าตัด |\n\nรายนี้ **pH 7.08 (< 7.2)** + glucose 38 + LDH 1,450 = **complicated parapneumonic effusion** → **ใส่ chest drain** แม้ Gram stain ลบและยังไม่มี septation\n\n**กลไก**: neutrophil และแบคทีเรียใช้ glucose แบบ anaerobic ปล่อย lactate และ CO₂ ที่ระบายออกไม่ได้ → pH และ glucose ต่ำ · เซลล์แตกปล่อย LDH → บ่งชี้ว่าน้ำจะจับตัวเป็นพังผืดและกลายเป็นหนองถ้าไม่ระบาย · ยาปฏิชีวนะเข้าช่องนี้ได้ไม่ดี\n\n**สาย 12–14 F ใต้ US** ได้ผลไม่ด้อยกว่าสายใหญ่และเจ็บน้อยกว่า · ยาต้องคลุม **anaerobe** (เช่น เพิ่ม metronidazole หรือเปลี่ยนเป็น amoxicillin–clavulanate) ไม่ใช้ aminoglycoside\n\n- **ยาอย่างเดียว** — เหมาะกับ uncomplicated เท่านั้น\n- **เจาะซ้ำใน 48 ชม.** — ถ่วงการระบาย\n- **Thoracotomy ทันที** — เก็บไว้เมื่อระบาย + ยาละลายล้มเหลว (VATS ก่อน)\n- **ยาวัณโรค** — น้ำ neutrophilic pH ต่ำมากในบริบท pneumonia",
+   "pearl": "ใส่ chest drain เมื่อ: หนอง/ขุ่นมาก · Gram/culture บวก · pH < 7.2",
+   "ref": [
+    "สไลด์ อ.สกล — Pleural infections",
+    "BTS Guideline for Pleural Disease 2023",
+    "MIST-2 (NEJM 2011)"
+   ],
+   "nl": [
+    "2.3.10-3(2)",
+    "2.3.10(7)",
+    "B6.3(1)",
+    "B6.2.4-3(2)"
+   ]
+  },
+  {
+   "id": "CH-RF-MCQ-27",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "Malignant pleural effusion with non-expandable (trapped) lung",
+   "stem": "A 67-year-old woman with metastatic lung adenocarcinoma has a recurrent symptomatic right pleural effusion. Therapeutic aspiration of 1.2 L relieves her breathlessness, but the post-procedure chest radiograph shows that the right lung has not re-expanded, with a persistent basal air–fluid space and thickened visceral pleura. The fluid reaccumulates within 2 weeks. Which is the most appropriate definitive management?",
+   "choices": [
+    "Talc slurry pleurodesis through a chest drain",
+    "Repeated therapeutic thoracentesis every 2 weeks indefinitely",
+    "Intercostal chest drain on high suction to force the lung to re-expand",
+    "Indwelling pleural catheter",
+    "Open pleurectomy and decortication"
+   ],
+   "answer": 3,
+   "explain": "**Malignant pleural effusion ที่กลับมาซ้ำและมีอาการ** → เลือกการรักษาตาม **ปอดขยายได้หรือไม่**\n- ปอดขยายได้ → **talc pleurodesis หรือ IPC**\n- **ปอดขยายไม่ได้ (trapped / non-expandable lung)** → **IPC**\n\n**กลไก**: เนื้องอกหุ้ม visceral pleura (หรืออุดหลอดลม) → ปอดพองกลับไม่ได้ → เยื่อสองชั้นไม่แนบกัน **talc จึงไม่ติด** · ช่องว่างที่เหลือมีความดันลบมาก ดึงน้ำมาเติมตลอด (ภาพ air–fluid ที่ฐานปอดหลังเจาะ = *pneumothorax ex vacuo*) · **IPC** ให้ผู้ป่วยระบายเองที่บ้านตามอาการ ลดการนอนโรงพยาบาล และบางรายเกิด pleurodesis เองภายหลัง\n\n- **Talc** — ล้มเหลวเมื่อปอดไม่ขยาย (เยื่อไม่แนบ)\n- **เจาะซ้ำเรื่อย ๆ** — ทุกครั้งเสี่ยง PTX/เลือดออก/ติดเชื้อ และน้ำกลับมาใน 1–2 สัปดาห์\n- **Suction แรง** — ไม่ทำให้ปอดที่ถูกหุ้มขยาย และเสี่ยง re-expansion edema/air leak\n- **Pleurectomy/decortication แบบเปิด** — ผ่าตัดใหญ่ ไม่เหมาะในมะเร็งระยะแพร่กระจาย",
+   "pearl": "MPE ซ้ำ: ปอดขยายได้ → talc หรือ IPC · trapped lung → IPC",
+   "ref": [
+    "สไลด์ อ.สกล — Malignant pleural effusion",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "2.3.10-3(2)",
+    "2.3.10(7)",
+    "B6.3(1)",
+    "B6.2.4-3(2)"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "CH-RF-MEQ-01",
+   "part": "MEQ",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "AECOPD with acute-on-chronic hypercapnic (type II) respiratory failure after excess oxygen → NIV failure → intubation → barotrauma tension pneumothorax",
+   "vignette": "ผู้ป่วยชายไทยอายุ 70 ปี มาด้วยเหนื่อยมากขึ้นและซึมลง 3 ชั่วโมงก่อนมาโรงพยาบาล\nPI: 3 วันก่อน ไอมากขึ้น เสมหะเปลี่ยนเป็นสีเขียวข้น เหนื่อยมากขึ้นจนพูดได้ทีละประโยคสั้น ๆ พ่นยาที่บ้านไม่ดีขึ้น วันนี้ญาติเรียกรถพยาบาล เจ้าหน้าที่ให้ออกซิเจน non-rebreather mask 15 L/min ระหว่างนำส่ง 40 นาที ระหว่างทางผู้ป่วยเริ่มง่วงซึม ปลุกตื่นแต่หลับต่อ\nPH: COPD มา 10 ปี (FEV1 35% predicted) ใช้ tiotropium + budesonide/formoterol · นอนโรงพยาบาลด้วย exacerbation 2 ครั้งในปีที่ผ่านมา · เคยสูบบุหรี่ 50 pack-years เลิกได้ 3 ปี\nPE: drowsy, GCS E3V4M6, ใช้กล้ามเนื้อช่วยหายใจ หายใจแบบ pursed-lip, มืออุ่น, flapping tremor ทั้งสองข้าง\nV/S: BT 37.9 C, PR 116/min, RR 26/min, BP 152/88 mmHg, SpO2 100% on NRB 15 L/min\nLung: barrel chest, hyperresonance ทั้งสองข้าง, breath sound ลดลงทั้งสองข้าง, prolonged expiration, expiratory wheeze ทั่วไป\nABG (on NRB): pH 7.19, PaCO2 92 mmHg, PaO2 210 mmHg, HCO3 34 mmol/L\nCBC: Hb 15.8 g/dL, WBC 13,200 (N 82%) · CXR: hyperinflation, flattened diaphragm, ไม่พบ consolidation หรือ pneumothorax",
+   "questions": [
+    {
+     "q": "1. จงแปลผล ABG และจำแนกชนิดของ respiratory failure พร้อมอธิบายกลไก (3 คะแนน)",
+     "a": "**แปลผล ABG ทีละขั้น**\n1. pH **7.19** → **acidemia**\n2. PaCO₂ **92** สูง และเปลี่ยนไปทางเดียวกับภาวะกรด → **primary respiratory acidosis**\n3. ประเมิน compensation (PaCO₂ เพิ่ม 52)\n\n| ถ้าเป็น | HCO₃ ที่คาด |\n|---|---|\n| Acute (+1 ต่อ PaCO₂ 10) | 24 + 5 ≈ **29** |\n| Chronic (+3.5 ต่อ PaCO₂ 10) | 24 + 18 ≈ **42** |\n\nHCO₃ จริง **34** อยู่ระหว่างกลาง → **acute-on-chronic respiratory acidosis** (มี CO₂ คั่งเรื้อรังเดิมจาก COPD แล้วแย่ลงเฉียบพลัน)\n4. PaO₂ 210 บน NRB = **ได้ออกซิเจนมากเกินจำเป็น** · ไม่ใช้ A-a gradient เพราะไม่ใช่ room air (FiO₂ ไม่แน่นอน)\n\n**การจำแนก: Type II (ventilatory/hypercapnic) respiratory failure** — PaCO₂ > 45–50 ร่วมกับ pH < 7.35\n\n**กลไก (ตารางของ อ.สกล): load > capacity**\n- **Load ↑**: หลอดลมตีบและอักเสบจากการติดเชื้อ → แรงต้านทางเดินหายใจสูง · **air trapping/auto-PEEP** ทำให้ต้องออกแรงมากขึ้นก่อนเริ่มหายใจเข้าแต่ละครั้ง\n- **Capacity ↓**: ปอดพองเกิน กะบังลมแบน → กล้ามเนื้อทำงานเสียเปรียบเชิงกล ล้าเร็ว\n- ผู้ป่วยจึงหายใจ **เร็วและตื้น** → สัดส่วน dead space ต่อ tidal volume สูงขึ้น (PaCO₂ = 0.863 × VCO₂ / [(VT − VD) × RR]) → ระบายอากาศจริงลดลง CO₂ คั่ง\n- ซ้ำเติมด้วย **ออกซิเจนมากเกิน** (ข้อ 2)"
+    },
+    {
+     "q": "2. เหตุใดผู้ป่วยจึงซึมลงระหว่างนำส่ง และจะปรับการให้ออกซิเจนอย่างไร (3 คะแนน)",
+     "a": "**ผู้ป่วยซึมจาก CO₂ narcosis** — ซึม มืออุ่น ชีพจรแรง flapping tremor เป็นอาการของ CO₂ คั่ง: CO₂ ผ่าน blood–brain barrier เร็ว → pH ในน้ำไขสันหลังลด กดการทำงานของสมอง · CO₂ ขยายหลอดเลือดสมอง (ปวดศีรษะ ความดันในกะโหลกขึ้น) และส่วนปลาย (มืออุ่น)\n\n**กลไกที่ออกซิเจนปริมาณมากทำให้ CO₂ คั่งใน COPD**\n1. **ปลด hypoxic pulmonary vasoconstriction (HPV)** — ลายมือในสไลด์ *\"O₂: vasodilator\"* · ปกติหลอดเลือดในส่วนที่ระบายลมไม่ดีหดตัวเบนเลือดไปส่วนดี เมื่อ O₂ สูง หลอดเลือดขยาย เลือดกลับไปเลี้ยงส่วนที่ไม่มีลม → **V/Q แย่ลง** dead space สัมพัทธ์เพิ่ม ← **ปัจจัยหลัก**\n2. **Haldane effect** — oxy-Hb จับ CO₂ น้อยลง ปล่อย CO₂ เข้าพลาสมา\n3. ลด hypoxic drive ต่อศูนย์หายใจบางส่วน\n\n**การปรับออกซิเจน**\n- **ห้ามหยุดออกซิเจนทันที** — PaO₂ จะร่วงต่ำกว่าเดิม (rebound hypoxemia) เพราะ CO₂ ที่คั่งในถุงลมไปแทนที่ O₂ (PAO₂ = 150 − PaCO₂/0.8 ≈ 150 − 115 = 35 ถ้ากลับไป room air)\n- **ลดลงเป็น Venturi mask 24–28%** (ให้ FiO₂ **คงที่** ไม่ขึ้นกับการหายใจของผู้ป่วย) หรือ nasal cannula 1–2 L/min\n- **เป้า SpO₂ 88–92%** (กลุ่มเสี่ยง CO₂ คั่ง) — แทนที่เป้าทั่วไป 94–98%\n- เจาะ ABG ซ้ำใน 30–60 นาที\n\n> บทเรียนเชิงระบบ: ผู้ป่วย COPD ควรมี **oxygen alert card** และผู้นำส่งควรเริ่มที่เป้า 88–92%"
+    },
+    {
+     "q": "3. ผู้ป่วยมีข้อบ่งชี้ของ NIV หรือไม่ ระบุข้อห้าม และการตั้งค่าและติดตามเบื้องต้น (3 คะแนน)",
+     "a": "**มีข้อบ่งชี้** — **AECOPD ที่ pH < 7.35 และ PaCO₂ > 45** หลังให้การรักษามาตรฐาน (หนึ่งในสองกลุ่มที่ NIV ได้ผลชัด ร่วมกับ cardiogenic pulmonary edema) — NIV ลดอัตราใส่ท่อและเสียชีวิต\n\n**ข้อห้ามที่ต้องประเมิน**\n| ข้อห้าม | ผู้ป่วยรายนี้ |\n|---|---|\n| ซึมมาก ปกป้องทางเดินหายใจไม่ได้ | GCS 13 จาก CO₂ narcosis — **ไม่ใช่ข้อห้ามเด็ดขาด** ลองได้ในที่เฝ้าระวังใกล้ชิดพร้อมใส่ท่อ เพราะการลด CO₂ มักทำให้ตื่นขึ้น |\n| อาเจียน / เลือดออกทางเดินอาหารส่วนบน | ไม่มี |\n| ช็อก hemodynamic ไม่คงที่ | ไม่มี (BP 152/88) |\n| ใบหน้าบาดเจ็บ/ผิดรูป ใส่หน้ากากไม่ได้ | ไม่มี |\n| ไม่ร่วมมือ เสมหะมากไอไม่ออก | ต้องเฝ้าดู |\n| **Pneumothorax ที่ไม่ได้ระบาย** | CXR ไม่พบ ✔ |\n\n**การตั้งค่าเริ่มต้น (BiPAP)** — ตามแนวทาง BTS/ICS 2016\n- **EPAP 4–5 cmH₂O** — ต้าน auto-PEEP ลดงานการหายใจ\n- **IPAP เริ่มราว 15 cmH₂O แล้วเพิ่มจนถึง 20–30 ภายใน 10–30 นาที** ตามที่ผู้ป่วยทนได้ — ส่วนต่าง IPAP−EPAP คือแรงช่วยเพิ่ม tidal volume ระบาย CO₂\n- FiO₂ ปรับตามเป้า **SpO₂ 88–92%**\n- ใช้ full-face mask ระยะแรก\n\n**การติดตาม**\n- อยู่ในหอผู้ป่วยที่เฝ้าระวังได้ใกล้ชิด (ICU/HDU) · วัด RR, SpO₂, ความรู้สึกตัว, การประสานกับเครื่อง\n- **ABG ซ้ำที่ 1–2 ชั่วโมง** (และ 4 ชั่วโมง) — ถ้า pH และ PaCO₂ ไม่ดีขึ้นหรือแย่ลง = NIV ล้มเหลว\n- รักษาร่วม: nebulized SABA + ipratropium, **prednisolone 40 mg 5 วัน**, ยาปฏิชีวนะ (เสมหะเปลี่ยนเป็นหนอง)\n- **ตัดสินใจล่วงหน้า** ว่าถ้า NIV ล้มเหลวจะใส่ท่อหรือไม่ (เป้าหมายการรักษา)"
+    },
+    {
+     "q": "4. 2 ชั่วโมงหลัง NIV: GCS 9 ไม่ไอ เสมหะคั่งในปาก ABG pH 7.15, PaCO2 98 mmHg — จะทำอย่างไรต่อ เพราะเหตุใด (2 คะแนน)",
+     "a": "**NIV ล้มเหลว → ใส่ท่อช่วยหายใจ (endotracheal intubation) ทันที**\n\n**เหตุผลตามเกณฑ์ใส่ท่อสี่ข้อของคาบ**\n| ข้อบ่งชี้ | ผู้ป่วยรายนี้ |\n|---|---|\n| **Ventilation ล้มเหลว** | pH ลดลง 7.19 → **7.15**, PaCO₂ เพิ่ม 92 → **98** ทั้งที่ใช้ NIV |\n| **ปกป้องทางเดินหายใจไม่ได้** | **GCS 9** (ใกล้ ≤ 8) ไม่ไอ เสมหะคั่ง → เสี่ยงสำลัก และเป็นข้อห้ามของ NIV แล้ว |\n| Oxygenation ล้มเหลว | — |\n| คาดว่าจะแย่ลง | ซึมลงเรื่อย ๆ |\n\n> การตัดสินใจเป็น **ทางคลินิก** · **การใส่ท่อล่าช้าหลัง NIV ล้มเหลวเพิ่มอัตราตาย**\n\n**ข้อควรระวังการตั้งเครื่องใน COPD**\n- **Tidal volume ต่ำ (6–8 mL/kg PBW), RR ไม่สูง, I:E ยาว (1:3–1:4), inspiratory flow สูง** → ให้เวลาหายใจออกนาน ลด **dynamic hyperinflation/auto-PEEP**\n- **ไม่ต้องรีบลด PaCO₂ กลับเป็น 40** — เป้าคือ pH ~7.30–7.35 และ PaCO₂ ใกล้ค่าเดิมของผู้ป่วย มิฉะนั้น HCO₃ ที่ไตเก็บไว้จะทำให้เกิด **post-hypercapnic metabolic alkalosis**\n- ระวังความดันตกหลังใส่ท่อ (ยานำสลบ + positive pressure ลด venous return ในผู้ที่มี auto-PEEP)"
+    },
+    {
+     "q": "5. วันที่ 3 บนเครื่องช่วยหายใจ เครื่องเตือน peak airway pressure สูง SpO2 ลดเหลือ 78% BP 76/40 mmHg PR 140/min เสียงหายใจซ้ายหายไป เคาะโปร่งซ้าย trachea เบี่ยงไปขวา คอโป่ง — จงให้การวินิจฉัยและการรักษา (3 คะแนน)",
+     "a": "**การวินิจฉัย: Left tension pneumothorax จาก barotrauma** (positive-pressure ventilation บนปอด emphysema ที่มี bullae = **secondary + iatrogenic**)\n\n**กลไก**: แรงดันบวกจากเครื่องอัดลมผ่านรอยรั่วเข้าช่องเยื่อหุ้มปอดทุกครั้งที่หายใจเข้า รอยรั่วทำหน้าที่เป็น **ลิ้นทางเดียว** → ความดันในช่องอกบวกสูง → ดัน mediastinum ไปขวา **กด/บิด SVC และ IVC** → venous return ลด → **obstructive shock** + คอโป่ง · ปอดแฟบ → peak pressure สูง SpO₂ ตก · traumatic PTX บนเครื่องช่วยหายใจกลายเป็น tension ได้บ่อย\n\n**ทบทวนเร็วด้วย DOPE** สำหรับผู้ป่วยใส่ท่อที่แย่ลงทันที: **D**isplacement ของท่อ · **O**bstruction (เสมหะอุด) · **P**neumothorax · **E**quipment failure — รายนี้ **เคาะโปร่ง + เสียงหายใจหายข้างเดียว + trachea เบี่ยง + คอโป่ง + BP ตก** ชี้ชัดว่า P\n\n**การรักษา — วินิจฉัยทางคลินิก ห้ามรอเอกซเรย์**\n1. **FiO₂ 1.0** · ถอดเครื่องมาบีบ bag ด้วยมือชั่วคราวได้ (ช่วยแยกปัญหาเครื่อง)\n2. **Needle decompression ทันที** ข้างซ้าย — เข็มขนาดใหญ่ที่ **ช่องซี่โครง 4–5 แนว anterior axillary line** (หรือช่องที่ 2 mid-clavicular line) แทงชิด **ขอบบนของซี่โครงล่าง** หลบ neurovascular bundle\n3. **ตามด้วย intercostal chest drain ต้องใส่เสมอ** (สไลด์: *chest drain ต้องเข้า!*) ใน **safety triangle** (ขอบ pectoralis major · ขอบ latissimus dorsi · แนวช่องซี่โครงที่ 5) ต่อ underwater seal\n4. **Suction ไม่จำเป็นทุกราย**\n5. CXR หลังใส่สาย · ปรับเครื่องลดความดัน (VT ต่ำ, ลด PEEP, ยืดเวลาหายใจออก)"
+    },
+    {
+     "q": "6. หลังใส่สายระบาย 5 วัน ยังมีฟองอากาศออกในขวดทุกครั้งที่หายใจ (persistent air leak) จะวางแผนอย่างไร (2 คะแนน)",
+     "a": "**Persistent air leak > 3–5 วัน = ข้อบ่งชี้ปรึกษาศัลยแพทย์ทรวงอก** (เกณฑ์ผ่าตัดในคาบ: เป็นซ้ำ · สองข้าง · **air leak > 3–5 วัน** · อาชีพเสี่ยง/เคยเป็น tension)\n\n**ทางเลือก**\n| ผู้ป่วย | การรักษา |\n|---|---|\n| **ทนการผ่าตัดได้** | **VATS bullectomy + pleurodesis/pleurectomy** |\n| ปอดสำรองน้อยเกินผ่าตัด (FEV1 35% ที่เพิ่งหย่าเครื่อง) | **Autologous blood patch pleurodesis** ทางสาย · **endobronchial valve** ทาง bronchoscopy ปิดหลอดลมส่วนที่รั่ว · chemical pleurodesis (talc) · ambulatory/Heimlich valve ให้กลับบ้านได้ |\n\n**ดูแลระหว่างรอ**\n- ตรวจสายว่าไม่หลุด/ไม่รั่วที่ข้อต่อ (air leak จากอุปกรณ์) · ห้ามหนีบสายที่มีฟองออก\n- ลดแรงดันในทางเดินหายใจ — **หย่าเครื่องช่วยหายใจให้เร็วที่สุด**\n\n**ป้องกันการเป็นซ้ำ**: secondary pneumothorax ใน COPD **เป็นซ้ำบ่อยและแต่ละครั้งอันตรายถึงชีวิต** จึงควรพิจารณาการป้องกันถาวรตั้งแต่ครั้งแรก (BTS 2023) · คงการเลิกบุหรี่ · ขึ้นเครื่องบินได้เมื่อยืนยันว่าหายสนิทแล้ว · ห้ามดำน้ำ scuba · มาโรงพยาบาลทันทีถ้าเจ็บอก/เหนื่อยเฉียบพลัน"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.สกล — Respiratory failure (type II, load > capacity) / Hypoxic pulmonary vasoconstriction / PaCO₂ equation",
+    "สไลด์ อ.สกล — Traumatic pneumothorax / Management of tension pneumothorax",
+    "BTS Guideline for Oxygen Use in Adults 2017",
+    "BTS/ICS Guideline for acute hypercapnic respiratory failure 2016",
+    "ERS/ATS 2017 — NIV for acute respiratory failure",
+    "BTS Guideline for Pleural Disease 2023"
+   ],
+   "nl": [
+    "2.2.9",
+    "B6.2.5(1)",
+    "2.2.11",
+    "3.3.17",
+    "2.3.10(6)",
+    "2.2.14"
+   ]
+  },
+  {
+   "id": "CH-RF-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "17",
+   "lecture": "Pleural disease / Respiratory failure (อ.สกล)",
+   "topic": "SAQ – Pleural fluid analysis in pneumonia: complicated parapneumonic effusion and pleural infection management",
+   "station": "SAQ (เขียนตอบ) 6 นาที",
+   "instruction": "ผู้ป่วยชายไทยอายุ 55 ปี เป็นเบาหวาน ดื่มสุราทุกวัน ฟันผุหลายซี่ มาด้วยไข้ ไอมีเสมหะ 7 วัน และเจ็บหน้าอกขวาเวลาหายใจเข้า 3 วัน ได้รับการวินิจฉัย community-acquired pneumonia และได้ ceftriaxone + azithromycin มา 3 วัน แต่ยังมีไข้ 38.8 C\nPE: RR 26/min, SpO2 93% room air · ปอดขวาล่าง dullness on percussion, decreased breath sound, decreased tactile fremitus\nThoracic ultrasound: right pleural effusion ปริมาณปานกลาง echogenic มี septation หลายเส้นลักษณะเป็นร่างแห\nผลการเจาะน้ำเจาะปอดใต้อัลตราซาวด์: น้ำสีเหลืองขุ่น กลิ่นเหม็น ไม่ใช่หนองข้น\n- Pleural protein 4.8 g/dL (serum 7.0 g/dL)\n- Pleural LDH 2,100 U/L (serum 300 U/L; ULN 250 U/L)\n- Pleural glucose 25 mg/dL (blood glucose 180 mg/dL), pH 6.98\n- WBC 25,000/µL, neutrophil 90%\n- Gram stain: gram-positive cocci in chains และ gram-negative rods\n\nจงตอบคำถามต่อไปนี้\n1. จงจำแนกน้ำตาม Light's criteria พร้อมแสดงการคำนวณ (2 คะแนน)\n2. ภาวะนี้อยู่ในระยะใดของ parapneumonic effusion ให้เหตุผลจากผลน้ำ และอธิบายกลไกที่ทำให้ pH และ glucose ต่ำ (2 คะแนน)\n3. จงบอกข้อบ่งชี้ในการใส่สายระบายและชนิดของสายที่เหมาะสม (2 คะแนน)\n4. จงเลือกยาปฏิชีวนะพร้อมเหตุผล และระยะเวลาการให้ยา (2 คะแนน)\n5. หลังใส่สาย 48 ชั่วโมง น้ำออกเพียง 80 mL ยังมีไข้ อัลตราซาวด์ยังพบน้ำเป็นช่อง ๆ จะทำอย่างไรต่อ (2 คะแนน)",
+   "answer": "**เกณฑ์ให้คะแนน (10 คะแนน)**\n\n**1. Light's criteria (2 คะแนน)**\n| เกณฑ์ | คำนวณ | ผล |\n|---|---|---|\n| Protein ratio > 0.5 | 4.8/7.0 = **0.69** | ✔ |\n| LDH ratio > 0.6 | 2,100/300 = **7.0** | ✔ |\n| Pleural LDH > 2/3 ULN | 2/3 × 250 = 167; 2,100 > 167 | ✔ |\n→ **Exudate** (ครบสามข้อ) — *1 คะแนนสำหรับการคำนวณครบ · 1 คะแนนสำหรับการสรุป*\n\n**2. ระยะและกลไก (2 คะแนน)**\n**Complicated parapneumonic effusion (fibrinopurulent stage) — กำลังเข้าสู่ pleural infection/empyema** *(1 คะแนน)* เหตุผล:\n- **pH 6.98 < 7.2** · **glucose 25 < 40–60** · **LDH 2,100 > 1,000**\n- **Gram stain บวก** = มีเชื้อในช่องเยื่อหุ้มปอด\n- **มี septation** บน US = fibrin ตกตะกอน\n- *(ถ้าดูดได้หนองข้นชัดเจน = empyema — รายนี้ขุ่นแต่ยังไม่ใช่หนองข้น)*\n\n**กลไก** *(1 คะแนน)*: neutrophil และแบคทีเรียในช่องปิดใช้ **glucose แบบ anaerobic** → ปล่อย **lactate และ CO₂** ที่ระบายออกไม่ได้ → **pH ลด glucose ลด** · เซลล์ตายแตกปล่อย **LDH** · การอักเสบกระตุ้น coagulation และ **กด fibrinolysis** → fibrin เป็นผนังกั้น (septation/loculation)\n\n**3. ข้อบ่งชี้และชนิดสาย (2 คะแนน)**\n**ข้อบ่งชี้ใส่ chest drain** (ข้อใดข้อหนึ่ง) *(1 คะแนน)*: **น้ำเป็นหนองหรือขุ่นมาก** · **Gram stain/culture บวก** · **pH < 7.2** (ถ้าไม่มีเครื่องวัด pH ใช้ **glucose < 72 mg/dL**) — รายนี้เข้าทุกข้อ\n**ชนิดสาย** *(1 คะแนน)*: **สายขนาดเล็ก 12–14 F ใส่ใต้อัลตราซาวด์** (Seldinger) ได้ผลไม่ด้อยกว่าสายใหญ่และเจ็บน้อยกว่า · flush ด้วย NSS เป็นระยะกันอุดตัน · ใส่ใน safety triangle หรือตำแหน่งที่ US ชี้ช่องใหญ่สุด\n\n**4. ยาปฏิชีวนะ (2 คะแนน)**\n- ต้อง **ครอบคลุม anaerobe** เสมอใน pleural infection — รายนี้มีปัจจัยเสี่ยงสำลัก (สุรา ฟันผุ) น้ำ **กลิ่นเหม็น** และ Gram stain เป็น mixed flora (*Streptococcus anginosus/milleri group* + anaerobe/gram-negative) *(1 คะแนน)*\n- สูตรที่เหมาะสม: **amoxicillin–clavulanate (IV 1.2 g ทุก 8 ชม.)** หรือ **ceftriaxone + metronidazole** หรือ piperacillin–tazobactam ถ้าเสี่ยงเชื้อดื้อยา/ติดเชื้อในโรงพยาบาล · ปรับตามผลเพาะเชื้อ *(0.5 คะแนน)*\n- **หลีกเลี่ยง aminoglycoside** — ซึมเข้าช่องเยื่อหุ้มปอดได้ไม่ดีและ **ไม่ทำงานในภาวะกรด** · ไม่จำเป็นต้องให้ macrolide ต่อถ้าไม่มีหลักฐาน atypical\n- **ระยะเวลา ~2–6 สัปดาห์** (มัก 3–4 สัปดาห์) เปลี่ยนเป็นยากินเมื่อไข้ลดและระบายได้ดี ติดตามด้วย CRP และภาพรังสี *(0.5 คะแนน)*\n\n**5. ระบายไม่ออก (2 คะแนน)**\n- ตรวจก่อนว่า **สายอยู่ในตำแหน่งและไม่อุดตัน** (flush, CXR/CT) · ทำ **CT chest with contrast** ดูช่องที่ไม่ได้ระบาย *(0.5 คะแนน)*\n- **ปรึกษาศัลยแพทย์ทรวงอกตั้งแต่ระยะนี้** *(0.5 คะแนน)*\n- **Intrapleural tPA 10 mg + DNase 5 mg วันละ 2 ครั้ง นาน 3 วัน** ทางสาย (MIST-2) — tPA สลาย fibrin ที่กั้นเป็นช่อง DNase ลดความหนืดของหนองจาก DNA ของ neutrophil · **ใช้ร่วมกันจึงได้ผล** (ใช้เดี่ยว ๆ ไม่ดีกว่ายาหลอก) *(0.5 คะแนน)*\n- ถ้าล้มเหลวหรือผ่าตัดได้ → **VATS debridement/decortication** *(0.5 คะแนน)*\n- ประเมินความเสี่ยงด้วย **RAPID score** (Renal, Age, Purulence, Infection source, Dietary albumin) · ดูแลภาวะโภชนาการและคุมน้ำตาล\n\n**ข้อที่ทำให้เสียคะแนน**: คำนวณ Light's ไม่ครบสามข้อ · ให้ยาปฏิชีวนะอย่างเดียวโดยไม่ระบาย · เลือก aminoglycoside หรือยาที่ไม่คลุม anaerobe · ใช้ tPA เดี่ยว ๆ โดยไม่มี DNase",
+   "ref": [
+    "สไลด์ อ.สกล — Pleural infections / Ultrasound: exudate / Work up pleural effusion",
+    "BTS Guideline for Pleural Disease 2023",
+    "MIST-2 (NEJM 2011)",
+    "Light RW et al. Ann Intern Med 1972"
+   ],
+   "nl": [
+    "2.3.10-3(2)",
+    "2.3.10(7)",
+    "B6.3(1)",
+    "3.1.7",
+    "B6.2.4-3(2)"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,983 @@
+{
+ "set": "neuro",
+ "items": [
+  {
+   "sec": "neuro-07-01",
+   "after": "กลไก: ทำไม TIA หายเองได้ แต่ยังอันตราย",
+   "anim": {
+    "key": "n07-tia",
+    "title": "TIA — ลิ่มเล็กสลายทัน แต่ต้นตอยังอยู่",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ลิ่มเลือดชิ้นเล็กจากคราบไขมันที่แตกหลุดไปอุดแขนงปลายทาง อาการเกิดทันทีแล้วหายเมื่อลิ่มสลาย แต่ต้นตอยังสร้างลิ่มชิ้นใหม่ที่ใหญ่กว่าจนเป็น stroke จริง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"220\" y=\"16\" class=\"xs mid mu\">แหล่งลิ่ม → หลอดเลือดแดง → เนื้อสมองปลายทาง</text><line x1=\"20\" y1=\"96\" x2=\"300\" y2=\"96\" class=\"ln w2\"/><line x1=\"20\" y1=\"124\" x2=\"300\" y2=\"124\" class=\"ln w2\"/><path d=\"M20,110 L300,110\" class=\"lac w2 fl\"/><path d=\"M55,124 Q85,100 115,124 Z\" class=\"ms\"/><circle cx=\"85\" cy=\"112\" r=\"4\" class=\"badf\"/><text x=\"85\" y=\"142\" class=\"xs mid tms b\">คราบไขมันแตก = ต้นตอ</text><path d=\"M300,110 Q322,110 344,82\" class=\"ln w2\"/><path d=\"M300,110 L344,110\" class=\"ln w2\"/><path d=\"M300,110 Q322,110 344,138\" class=\"ln w2\"/><circle cx=\"388\" cy=\"110\" r=\"44\" class=\"sk\"/><text x=\"388\" y=\"114\" class=\"xs mid\" data-x=\"2\">สมองปลายทาง</text><text x=\"388\" y=\"170\" class=\"xs mid mu\">เขตที่หลอดเลือดเลี้ยง</text><g data-s=\"2\" data-x=\"3\"><circle r=\"4\" class=\"badf\"><animateMotion dur=\"2.2s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M90,110 L300,110 Q322,110 344,82\"/></circle><circle cx=\"343\" cy=\"84\" r=\"5\" class=\"badf\"/><circle cx=\"388\" cy=\"110\" r=\"44\" class=\"ms\"/><text x=\"388\" y=\"106\" class=\"xs mid b\">neuron เงียบ</text><text x=\"388\" y=\"121\" class=\"xs mid\">ยังไม่ตาย</text></g><g data-s=\"3\" data-x=\"4\"><circle cx=\"388\" cy=\"110\" r=\"44\" class=\"ok\"/><path d=\"M335,84 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0\" class=\"lok da\"/><text x=\"388\" y=\"106\" class=\"xs mid b tok\">เลือดกลับทัน</text><text x=\"388\" y=\"121\" class=\"xs mid\">ทำงานต่อ</text><text x=\"318\" y=\"62\" class=\"xs mid tok b\">ลิ่มสลายเอง / collateral</text></g><g data-s=\"4\"><circle r=\"7\" class=\"badf\"><animateMotion dur=\"2.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M90,110 L296,110\"/></circle><circle cx=\"300\" cy=\"110\" r=\"10\" class=\"badf\"/><circle cx=\"388\" cy=\"110\" r=\"44\" class=\"bad\"/><text x=\"388\" y=\"106\" class=\"xs mid b tbad\">infarct</text><text x=\"388\" y=\"121\" class=\"xs mid\">ตายถาวร</text><text x=\"200\" y=\"84\" class=\"xs mid tbad b\">ลิ่มชิ้นใหม่ใหญ่กว่า ไม่สลาย</text></g><line x1=\"40\" y1=\"290\" x2=\"425\" y2=\"290\" class=\"ln w2\"/><line x1=\"40\" y1=\"200\" x2=\"40\" y2=\"290\" class=\"ln w2\"/><text x=\"40\" y=\"192\" class=\"xs mu\">ความบกพร่องทางประสาท ↑</text><text x=\"425\" y=\"306\" class=\"xs end mu\">เวลา →</text><path d=\"M42,288 L80,288\" class=\"lmu w3\"/><g data-s=\"2\"><path d=\"M80,288 L86,222 L132,222\" class=\"lbad w3\"/><text x=\"108\" y=\"214\" class=\"xs mid tbad b\">อาการทันที</text></g><g data-s=\"3\"><path d=\"M132,222 Q140,288 165,288 L270,288\" class=\"lok w3\"/><text x=\"212\" y=\"278\" class=\"xs mid tok b\">หายใน 24 ชม. = TIA</text></g><g data-s=\"4\"><path d=\"M270,288 L276,214 L425,214\" class=\"lbad w3\"/><text x=\"340\" y=\"206\" class=\"xs mid tbad b\">stroke จริงตามมา (ไม่กี่วันแรก)</text></g><g data-s=\"5\"><g class=\"pl\"><path d=\"M70,114 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0\" class=\"lac w2 da\"/></g><text x=\"220\" y=\"324\" class=\"xs mid b tac\">TIA = สัญญาณเตือน → หาต้นตอ (TOAST) + เริ่มป้องกันทันที</text></g></svg>",
+    "steps": [
+     {
+      "t": "ต้นตอ: คราบไขมันที่แตก (หรือหัวใจที่เป็น AF)",
+      "cap": "ลิ่มเลือดเริ่มก่อตัวบน **คราบไขมันที่แตกเป็นแผล** ที่ carotid (หรือในห้องบนของหัวใจที่เป็น AF) ขณะนี้เลือดยังไหลไปเลี้ยงสมองตามปกติ"
+     },
+     {
+      "t": "ลิ่มเล็กหลุดไปอุด → อาการทันที",
+      "cap": "ลิ่มชิ้นเล็กหลุดไปอุดแขนงปลายทาง → neuron ในเขตนั้น **หยุดทำงานทันทีแต่ยังไม่ตาย** → อาการเฉพาะที่เกิดทันทีทันใดเหมือน stroke ทุกอย่าง"
+     },
+     {
+      "t": "ลิ่มสลาย / collateral มาทัน → หายสนิท = TIA",
+      "cap": "fibrinolysis ของร่างกายสลายลิ่มเอง หรือ **collateral เข้ามาเลี้ยงทัน** → เลือดกลับก่อนเนื้อสมองตาย → neuron กลับมาทำงาน **อาการหายสนิทภายใน 24 ชั่วโมง** = TIA"
+     },
+     {
+      "t": "ต้นตอยังอยู่ → ลิ่มชิ้นใหม่ใหญ่กว่า",
+      "cap": "คราบไขมันที่แตก (หรือ AF) **ยังสร้างลิ่มชิ้นใหม่ได้** ชิ้นถัดไปอาจใหญ่และไม่สลาย → เนื้อสมองตายถาวร = **stroke จริง** ซึ่งเสี่ยงที่สุดใน **ไม่กี่วันแรก** หลัง TIA"
+     },
+     {
+      "t": "สรุป: TIA ไม่ใช่เรื่องเล็ก",
+      "cap": "อาการหายแล้วก็ต้องรีบมา (ตัว **T ของ BEFAST**) → สืบหาต้นตอตาม **TOAST** และ **เริ่มการป้องกันทันที** ไม่ปล่อยกลับบ้านเพราะ “หายแล้ว”"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-07-10",
+   "after": "Mechanical thrombectomy — การลากลิ่มเลือดออกด้วยสายสวน",
+   "anim": {
+    "key": "n07-thrombectomy",
+    "title": "ลิ่มใหญ่อุด M1 — ทำไมต้องลากออก และกู้ penumbra ได้อย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ลิ่มเลือดก้อนใหญ่อุดหลอดเลือด M1 ยาละลายลิ่มเลือดย่อยได้แค่ผิว สายสวนกาง stent retriever ในลิ่มแล้วลากออก เลือดไหลกลับ penumbra รอด ส่วน core ที่ตายแล้วไม่ฟื้น\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"338\" cy=\"150\" rx=\"92\" ry=\"88\" class=\"bx\"/><text x=\"338\" y=\"52\" class=\"xs mid mu\">เขต MCA</text><line x1=\"20\" y1=\"138\" x2=\"236\" y2=\"138\" class=\"ln w2\"/><line x1=\"20\" y1=\"162\" x2=\"236\" y2=\"162\" class=\"ln w2\"/><text x=\"24\" y=\"180\" class=\"xs b\">ICA → M1</text><path d=\"M236,150 Q262,150 290,118\" class=\"ln w2\"/><path d=\"M236,150 L292,150\" class=\"ln w2\"/><path d=\"M236,150 Q262,150 290,182\" class=\"ln w2\"/><circle cx=\"345\" cy=\"150\" r=\"58\" class=\"ms\" data-x=\"4\"/><circle cx=\"345\" cy=\"150\" r=\"22\" class=\"bad\"/><text x=\"345\" y=\"154\" class=\"xs mid b\">core</text><text x=\"345\" y=\"116\" class=\"xs mid b tms\" data-x=\"4\">penumbra</text><text x=\"345\" y=\"194\" class=\"xs mid tms\" data-x=\"4\">ยังกู้ได้</text><path d=\"M20,150 L146,150\" class=\"lac w2 fl\"/><rect x=\"150\" y=\"141\" width=\"62\" height=\"18\" rx=\"8\" class=\"bad\" data-x=\"4\"/><text x=\"220\" y=\"248\" class=\"xs mid\">ลิ่มใหญ่อุด M1 → ตาเบน · เรียกชื่อไม่ได้ · neglect (LVO)</text><g data-s=\"2\" data-x=\"3\"><g class=\"pl\"><circle cx=\"150\" cy=\"150\" r=\"3\" class=\"waf\"/><circle cx=\"212\" cy=\"150\" r=\"3\" class=\"waf\"/><circle cx=\"166\" cy=\"141\" r=\"3\" class=\"waf\"/><circle cx=\"196\" cy=\"141\" r=\"3\" class=\"waf\"/><circle cx=\"166\" cy=\"159\" r=\"3\" class=\"waf\"/><circle cx=\"196\" cy=\"159\" r=\"3\" class=\"waf\"/></g><text x=\"160\" y=\"190\" class=\"xs mid twa b\">rtPA ย่อยได้แค่ผิวลิ่ม</text><text x=\"160\" y=\"205\" class=\"xs mid\">ลิ่มใหญ่/ยาว → เปิดได้ไม่ดี</text></g><g data-s=\"3\" data-x=\"4\"><path d=\"M20,154 L150,154\" class=\"lmu w3\"/><polyline points=\"150,142 156,158 162,142 168,158 174,142 180,158 186,142 192,158 198,142 204,158 210,142\" class=\"lwa w2\"/><text x=\"160\" y=\"190\" class=\"xs mid twa b\">stent retriever กางในลิ่ม</text><text x=\"160\" y=\"205\" class=\"xs mid\">(สายสวนจากขาหนีบ)</text></g><g data-s=\"4\"><rect x=\"40\" y=\"141\" width=\"50\" height=\"18\" rx=\"8\" class=\"bad\"/><polyline points=\"40,142 45,158 50,142 55,158 60,142 65,158 70,142 75,158 80,142 85,158 90,142\" class=\"lwa w2\"/><path d=\"M160,126 L80,126\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><text x=\"120\" y=\"118\" class=\"xs mid b\">ลากออก</text><path d=\"M96,150 L236,150\" class=\"lac w2 fl\"/><path d=\"M236,150 Q262,150 290,118\" class=\"lac w2 fl\"/><path d=\"M236,150 L292,150\" class=\"lac w2 fl\"/><path d=\"M236,150 Q262,150 290,182\" class=\"lac w2 fl\"/><circle cx=\"345\" cy=\"150\" r=\"58\" class=\"ok\"/><circle cx=\"345\" cy=\"150\" r=\"22\" class=\"bad\"/><text x=\"345\" y=\"154\" class=\"xs mid b\">core</text><text x=\"345\" y=\"116\" class=\"xs mid b tok\">penumbra รอด</text><text x=\"345\" y=\"194\" class=\"xs mid tok\">อาการดีขึ้น</text></g><g data-s=\"5\"><line x1=\"30\" y1=\"296\" x2=\"420\" y2=\"296\" class=\"ln w2\"/><rect x=\"30\" y=\"284\" width=\"90\" height=\"10\" rx=\"3\" class=\"ok\"/><text x=\"75\" y=\"278\" class=\"xs mid tok b\">rtPA ≤ 4.5 ชม.</text><text x=\"290\" y=\"278\" class=\"xs mid b\">ได้ rtPA แล้วส่งลากต่อได้</text><rect x=\"30\" y=\"300\" width=\"390\" height=\"10\" rx=\"3\" class=\"wa\"/><text x=\"225\" y=\"326\" class=\"xs mid twa b\">ลากลิ่มเลือดถึง 24 ชม. (คัดด้วย CTA + ASPECTS)</text></g></svg>",
+    "steps": [
+     {
+      "t": "LVO: ลิ่มก้อนใหญ่อุด M1",
+      "cap": "ลิ่มขนาดใหญ่อุด **ICA/M1** → เปลือกสมองเขต MCA ขาดเลือดทั้งผืน: **core** ตรงกลางตายแล้ว ล้อมด้วย **penumbra** ที่ collateral ยังพอเลี้ยง → ตาเบน เรียกชื่อไม่ได้ neglect (TACI)"
+     },
+     {
+      "t": "rtPA เปิดลิ่มก้อนใหญ่ได้ไม่ดี",
+      "cap": "plasmin จาก rtPA ย่อย fibrin ได้ที่ **ผิวลิ่ม** ลิ่มก้อนใหญ่และยาวในหลอดเลือดใหญ่จึงมักเปิดไม่สำเร็จ — เหตุผลที่ต้องมีการลากลิ่มเลือด"
+     },
+     {
+      "t": "Stent retriever กางเข้าไปในลิ่ม",
+      "cap": "สอดสายสวนจาก **หลอดเลือดแดงที่ขาหนีบ** ขึ้นไปถึงจุดอุด แล้วกาง **stent retriever** ให้ตาข่ายฝังเข้าไปในเนื้อลิ่ม"
+     },
+     {
+      "t": "ลากออก → เลือดกลับ → penumbra รอด",
+      "cap": "ดึงลิ่มออกทั้งก้อน → เลือดไหลกลับทันที → **penumbra รอด** อาการส่วนที่มาจากชั้นนี้ดีขึ้น · **core ที่ตายแล้วกู้ไม่ได้** และยิ่งช้า core ยิ่งกินพื้นที่ penumbra"
+     },
+     {
+      "t": "ทำได้ถึง 24 ชม. และไม่ตัดสิทธิ์ rtPA",
+      "cap": "ผู้ที่เข้าเกณฑ์ให้ **rtPA ก่อนแล้วส่งลากลิ่มเลือดต่อ** · การลากลิ่มเลือดทำได้ **ถึง 24 ชั่วโมง** ในผู้ที่คัดด้วยภาพ — **CTA** หาตำแหน่งที่อุด **ASPECTS** ดูขนาดเนื้อตาย"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-07-09",
+   "after": "กลไก: ทำไมอาการเหล่านี้ชี้ว่าเลือดออกในสมอง",
+   "anim": {
+    "key": "n07-ich-tpa",
+    "title": "เลือดออกในสมองระหว่างหยด rtPA — ทุกอาการมาจาก ICP",
+    "svg": "<svg viewBox=\"0 0 440 310\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ระหว่างให้ยาละลายลิ่มเลือดเกิดเลือดออกในสมอง ก้อนเลือดโตในกะโหลกที่ขยายไม่ได้ ความดันในกะโหลกสูง ทำให้ปวดศีรษะ อาเจียน ซึมลง ความดันพุ่ง จึงต้องหยุดยาแล้วส่ง CT\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"135\" y=\"20\" class=\"xs mid b mu\">ระหว่าง/หลังหยด rtPA</text><rect x=\"20\" y=\"30\" width=\"230\" height=\"210\" rx=\"95\" class=\"sk\"/><rect x=\"34\" y=\"44\" width=\"202\" height=\"182\" rx=\"82\" class=\"bx\"/><rect x=\"121\" y=\"200\" width=\"28\" height=\"92\" rx=\"12\" class=\"bx\"/><text x=\"116\" y=\"282\" class=\"xs end\">ก้านสมอง</text><g class=\"pl\"><ellipse cx=\"90\" cy=\"112\" rx=\"13\" ry=\"9\" class=\"bad\"/></g><text x=\"90\" y=\"94\" class=\"xs mid tbad\" data-x=\"2\">จุดรั่ว</text><g data-s=\"2\"><ellipse cx=\"92\" cy=\"118\" rx=\"42\" ry=\"32\" class=\"bad\"/><text x=\"92\" y=\"122\" class=\"xs mid b\">ก้อนเลือด</text><path d=\"M150,74 L172,54\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M196,124 L224,124\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M184,178 L206,198\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"170\" y=\"160\" class=\"lg mid b tbad\">ICP ↑</text></g><g data-s=\"2\"><rect x=\"272\" y=\"40\" width=\"160\" height=\"34\" rx=\"8\" class=\"bad\"/><text x=\"352.0\" y=\"62\" class=\"xs mid b\">ปวดศีรษะรุนแรง</text></g><g data-s=\"3\"><path d=\"M112,152 L130,198\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/><g class=\"pl\"><rect x=\"121\" y=\"200\" width=\"28\" height=\"92\" rx=\"12\" class=\"bad\"/></g></g><g data-s=\"3\"><rect x=\"272\" y=\"84\" width=\"160\" height=\"34\" rx=\"8\" class=\"ms\"/><text x=\"352.0\" y=\"106\" class=\"xs mid b\">คลื่นไส้ อาเจียน</text></g><g data-s=\"3\"><rect x=\"272\" y=\"126\" width=\"160\" height=\"34\" rx=\"8\" class=\"ms\"/><text x=\"352.0\" y=\"148\" class=\"xs mid b\">NIHSS ↑ · ซึมลง</text></g><g data-s=\"4\"><rect x=\"272\" y=\"170\" width=\"160\" height=\"34\" rx=\"8\" class=\"bad\"/><text x=\"352\" y=\"192\" class=\"xs mid b\">BP พุ่ง (Cushing)</text><text x=\"352\" y=\"222\" class=\"xs mid\">CPP ↓ → ดันความดันขึ้น</text></g><g data-s=\"5\"><rect x=\"176\" y=\"246\" width=\"256\" height=\"52\" rx=\"10\" class=\"ac\"/><text x=\"304\" y=\"268\" class=\"sm mid b\">หยุดหยดยาทันที → CT ฉุกเฉิน</text><text x=\"304\" y=\"288\" class=\"xs mid\">ไม่ต้องรอ CT ก่อนหยุดยา</text></g></svg>",
+    "steps": [
+     {
+      "t": "หลอดเลือดเปราะ + plasmin ย่อยทุกที่",
+      "cap": "หลอดเลือดในเนื้อที่ขาดเลือดเปราะอยู่แล้ว และ **plasmin ไม่เลือกว่า fibrin ไหน** — ลิ่มเล็ก ๆ ที่กำลังอุดรอยรั่วก็ถูกย่อยด้วย → เลือดเริ่มซึมออก"
+     },
+     {
+      "t": "ก้อนเลือดโต → ICP สูง → ปวดศีรษะ",
+      "cap": "ก้อนเลือดเพิ่มปริมาตรใน **กะโหลกที่ขยายไม่ได้** → **ICP สูง** → เยื่อหุ้มสมองและหลอดเลือดถูกยืด → **ปวดศีรษะรุนแรง**"
+     },
+     {
+      "t": "กดก้านสมองและเนื้อสมองรอบ ๆ",
+      "cap": "ICP สูงและก้านสมองถูกกด กระตุ้นศูนย์อาเจียน → **คลื่นไส้ อาเจียน** · ก้อนเลือดทำลายและกดเนื้อสมองรอบ ๆ → **NIHSS เพิ่ม ซึมลง**"
+     },
+     {
+      "t": "Cushing reflex → ความดันพุ่ง",
+      "cap": "ICP สูงจนเลือดเข้าสมองไม่พอ (CPP = MAP − ICP ลดลง) → ร่างกายเร่งความดันเพื่อดันเลือดเข้าสมอง → **ความดันพุ่งขึ้นเฉียบพลัน**"
+     },
+     {
+      "t": "หยุดยาก่อน แล้วค่อยยืนยันด้วย CT",
+      "cap": "ปวดศีรษะรุนแรง อาเจียน ความดันพุ่ง หรือตรวจทางประสาทแย่ลงระหว่างหยดยา = **หยุดหยดยาทันทีแล้วส่ง CT ฉุกเฉิน** · ยิ่งหยดต่อ plasmin ยิ่งย่อย fibrin ที่พยายามอุดรอยรั่ว ก้อนเลือดยิ่งโต"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-ep-01",
+   "after": "กลไก: เกิดอะไรขึ้นในสมองขณะชัก",
+   "anim": {
+    "key": "nep-seizure",
+    "title": "จากยิงคนละจังหวะสู่ spike — ชักเริ่ม ลาม และหยุดอย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 320\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: neuron ปกติยิงคนละจังหวะโดยมี GABA คอยเบรก เมื่อแรงเร่งชนะ กลุ่มเซลล์ยิงพร้อมกันเกิด spike บน EEG ลามไปทั้งเครือข่าย แล้วหยุดเมื่อการยับยั้งกลับมา ตามด้วยช่วง post-ictal\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"124\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"188\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"252\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"316\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"380\" cy=\"66\" r=\"11\" class=\"sk\"/><circle cx=\"60\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"124\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"188\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"252\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"316\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"380\" cy=\"114\" r=\"11\" class=\"sk\"/><circle cx=\"60\" cy=\"162\" r=\"11\" class=\"sk\"/><circle cx=\"124\" cy=\"162\" r=\"11\" class=\"sk\"/><circle cx=\"188\" cy=\"162\" r=\"11\" class=\"sk\"/><circle cx=\"252\" cy=\"162\" r=\"11\" class=\"sk\"/><circle cx=\"316\" cy=\"162\" r=\"11\" class=\"sk\"/><circle cx=\"380\" cy=\"162\" r=\"11\" class=\"sk\"/><line x1=\"92\" y1=\"90\" x2=\"72.16\" y2=\"75.12\" class=\"lwa w2\"/><line x1=\"92\" y1=\"90\" x2=\"111.84\" y2=\"75.12\" class=\"lwa w2\"/><line x1=\"92\" y1=\"90\" x2=\"72.16\" y2=\"104.88\" class=\"lwa w2\"/><line x1=\"92\" y1=\"90\" x2=\"111.84\" y2=\"104.88\" class=\"lwa w2\"/><circle cx=\"92\" cy=\"90\" r=\"6\" class=\"waf\"/><line x1=\"220\" y1=\"138\" x2=\"200.16\" y2=\"123.12\" class=\"lwa w2\"/><line x1=\"220\" y1=\"138\" x2=\"239.84\" y2=\"123.12\" class=\"lwa w2\"/><line x1=\"220\" y1=\"138\" x2=\"200.16\" y2=\"152.88\" class=\"lwa w2\"/><line x1=\"220\" y1=\"138\" x2=\"239.84\" y2=\"152.88\" class=\"lwa w2\"/><circle cx=\"220\" cy=\"138\" r=\"6\" class=\"waf\"/><line x1=\"348\" y1=\"90\" x2=\"328.16\" y2=\"75.12\" class=\"lwa w2\"/><line x1=\"348\" y1=\"90\" x2=\"367.84\" y2=\"75.12\" class=\"lwa w2\"/><line x1=\"348\" y1=\"90\" x2=\"328.16\" y2=\"104.88\" class=\"lwa w2\"/><line x1=\"348\" y1=\"90\" x2=\"367.84\" y2=\"104.88\" class=\"lwa w2\"/><circle cx=\"348\" cy=\"90\" r=\"6\" class=\"waf\"/><g data-x=\"3\"><circle cx=\"60\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.3s\" begin=\"-0.00s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"1\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.9s\" begin=\"-0.53s\" repeatCount=\"indefinite\"/></circle><circle cx=\"188\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.6s\" begin=\"-1.06s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"2.2s\" begin=\"-1.59s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.45s\" begin=\"-0.67s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"66\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.75s\" begin=\"-0.90s\" repeatCount=\"indefinite\"/></circle><circle cx=\"60\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"2.05s\" begin=\"-1.13s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.35s\" begin=\"-1.01s\" repeatCount=\"indefinite\"/></circle><circle cx=\"188\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"1\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.85s\" begin=\"-0.54s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.55s\" begin=\"-0.12s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"1\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"2.3s\" begin=\"-0.70s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"114\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.7s\" begin=\"-0.73s\" repeatCount=\"indefinite\"/></circle><circle cx=\"60\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.4s\" begin=\"-0.76s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"2.0s\" begin=\"-0.89s\" repeatCount=\"indefinite\"/></circle><circle cx=\"188\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.65s\" begin=\"-0.82s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"1\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.95s\" begin=\"-0.15s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"1.5s\" begin=\"-0.98s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"162\" r=\"11\" class=\"acf\" opacity=\"0\"><animate attributeName=\"opacity\" values=\"0;0;1;0\" keyTimes=\"0;0.7;0.8;1\" dur=\"2.15s\" begin=\"-0.41s\" repeatCount=\"indefinite\"/></circle></g><g data-s=\"2\" data-x=\"4\"><circle cx=\"60\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"60\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><rect x=\"40\" y=\"46\" width=\"104\" height=\"88\" rx=\"14\" class=\"lbad w2 da\"/><text x=\"92\" y=\"152\" class=\"xs mid b tbad\">focus</text></g><g data-s=\"3\" data-x=\"4\"><circle cx=\"188\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"66\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"188\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"114\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"60\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"124\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"188\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"252\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"380\" cy=\"162\" r=\"11\" class=\"badf\" opacity=\".9\"><animate attributeName=\"opacity\" values=\"0.9;0.15;0.9\" dur=\"0.6s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><path d=\"M146,90 L178,90\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M146,138 L178,150\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"4\"><circle cx=\"60\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"124\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"188\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"252\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"316\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"380\" cy=\"66\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"60\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"124\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"188\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"252\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"316\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"380\" cy=\"114\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"60\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"124\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"188\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"252\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"316\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/><circle cx=\"380\" cy=\"162\" r=\"11\" class=\"muf\" opacity=\".75\"/></g><text x=\"220\" y=\"22\" class=\"xs mid\" data-x=\"2\">ปกติ: ยิงคนละจังหวะ · interneuron GABA (ฟ้า) คอยเบรก</text><text x=\"220\" y=\"22\" class=\"xs mid b tbad\" data-s=\"2\" data-x=\"3\">แรงเร่ง (glutamate) &gt; เบรก (GABA) → focus ยิงรัวพร้อมกัน</text><text x=\"220\" y=\"22\" class=\"xs mid b tbad\" data-s=\"3\" data-x=\"4\">ดึงเซลล์ข้างเคียงยิงตาม → ทั้งเครือข่ายยิงพร้อมกัน</text><text x=\"220\" y=\"22\" class=\"xs mid b\" data-s=\"4\">การยับยั้งกลับมา + เซลล์หมดพลังงาน → หยุด</text><text x=\"220\" y=\"200\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">motor cortex → กระตุก · temporal → déjà vu · ลามสองซีก → หมดสติ</text><text x=\"220\" y=\"200\" class=\"xs mid b mu\" data-s=\"4\">post-ictal: สับสน ง่วง หรือ Todd's paralysis</text><rect x=\"20\" y=\"214\" width=\"400\" height=\"100\" rx=\"8\" class=\"sk\"/><text x=\"30\" y=\"230\" class=\"xs b\">EEG</text><polyline points=\"60,267 67,264 74,264.3 81,267.9 88,270.9 95,262 102,270.8 109,270.7 116,263.4 123,264.3 130,264.4 137,268.7 144,270 151,268.9 158,261.2 165,261.1 172,265.3 179,268.2 186,266.8 193,263.3 200,261.1 207,266.6 214,262.6 221,270.1 228,266.5 235,265.5 242,270.7 249,266.6 256,269.1 263,265.6 270,265.3 277,264.9 284,269.2 291,262.4 298,269.3 305,268.3 312,267.3 319,262 326,264.1 333,270.1 340,267.1 347,265.2 354,261.3 361,269.8 368,262.5 375,265.8 382,265.1 389,263.2 396,262.7 403,262.1 410,263.7\" class=\"lmu w2\" data-x=\"2\"/><polyline points=\"60,267.5 67,264.8 74,264.5 81,262.3 88,264.6 95,268.2 102,269.3 109,265.7 116,268.4 123,269.1 130,262.8 137,261.3 144,264.2 151,261.7 158,264.8 165,270.9 172,266.4 179,262.1 186,269 193,262.9 200,269 207,262.7 214,269.4 221,264 228,238 231,294 234,266 235,269 242,263.6 249,264.3 256,263.8 263,270.1 270,261.9 277,268.4 284,262.2 291,265.5 298,269.9 305,269.4 312,238 315,294 318,266 319,270.4 326,264.8 333,267.4 340,265.1 347,261.5 354,261.6 361,261.5 368,265.4 375,265.9 382,269.6 389,265.2 396,261.9 403,264.4 410,265.9\" class=\"lbad w2\" data-s=\"2\" data-x=\"3\"/><polyline points=\"60,266 64,238 68,298 72,266 80,270 84,266 88,238 92,298 96,266 104,270 108,266 112,238 116,298 120,266 128,270 132,266 136,238 140,298 144,266 152,270 156,266 160,238 164,298 168,266 176,270 180,266 184,238 188,298 192,266 200,270 204,266 208,238 212,298 216,266 224,270 228,266 232,238 236,298 240,266 248,270 252,266 256,238 260,298 264,266 272,270 276,266 280,238 284,298 288,266 296,270 300,266 304,238 308,298 312,266 320,270 324,266 328,238 332,298 336,266 344,270 348,266 352,238 356,298 360,266 368,270 372,266 376,238 380,298 384,266 392,270 396,266 400,238 404,298 408,266 416,270\" class=\"lbad w2\" data-s=\"3\" data-x=\"4\"/><g data-s=\"4\"><polyline points=\"60,266 65,268.3 70,270.2 75,271.5 80,272 85,271.6 90,270.4 95,268.6 100,266.4 105,264.1 110,262.1 115,260.7 120,260 125,260.2 130,261.3 135,263.1 140,265.2 145,267.5 150,269.6 155,271.1 160,271.9 165,271.9 170,270.9 175,269.3 180,267.2 185,264.9 190,262.7 195,261.1 200,260.2 205,260.1 210,260.9 215,262.4 220,264.5 225,266.8 230,268.9 235,270.7 240,271.7 245,272 250,271.3 255,269.9 260,267.9 265,265.6 270,263.4 275,261.6 280,260.4 285,260 290,260.5 295,261.8 300,263.7 305,266 310,268.2 315,270.2 320,271.5 325,272 330,271.6 335,270.5 340,268.6 345,266.4 350,264.1 355,262.1 360,260.7 365,260 370,260.2 375,261.3 380,263 385,265.2 390,267.5 395,269.6 400,271.1 405,271.9 410,271.9\" class=\"lmu w2\"/><text x=\"410\" y=\"306\" class=\"xs end mu\">หลังชัก: คลื่นช้า/ถูกกด</text></g><text x=\"410\" y=\"230\" class=\"xs end b tbad\" data-s=\"2\" data-x=\"4\">spike = เซลล์จำนวนมากยิงพร้อมกัน</text></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: ยิงคนละจังหวะ มี GABA เป็นเบรก",
+      "cap": "neuron แต่ละตัวยิง **ไม่พร้อมกัน** เพราะ interneuron หลั่ง **GABA** คอยเบรกรอบข้าง สมดุลกับแรงเร่งจาก **glutamate** — ผลรวมบน EEG จึงเป็นคลื่นเล็ก ๆ"
+     },
+     {
+      "t": "แรงเร่งชนะเบรก → focus ยิงรัวพร้อมกัน",
+      "cap": "ยีน ion channel ผิดปกติ · แผลเป็นที่วงจรต่อผิด · น้ำตาลหรือเกลือแร่ผิดปกติ → neuron กลุ่มหนึ่ง **depolarize นานและยิงรัวพร้อมกัน** → สัญญาณรวมกันเห็นเป็น **spike** บน EEG"
+     },
+     {
+      "t": "ลามตามเครือข่าย → อาการตามตำแหน่ง",
+      "cap": "เซลล์ที่ยิงดึงเซลล์ข้างเคียงให้ยิงตาม → อาการขึ้นกับว่าไฟฟ้าไปถึงไหน: motor cortex → **กระตุก** · temporal → **déjà vu, automatism** · ลามถึงเครือข่ายความรู้ตัวหรือสองซีก → **หมดสติ**"
+     },
+     {
+      "t": "หยุดเอง → post-ictal",
+      "cap": "การยับยั้งกลับมาและเซลล์ **หมดพลังงาน** → ชักหยุด แต่สมองยังถูกกดชั่วคราว = **post-ictal** สับสน ง่วง หรือ **Todd's paralysis** · ยากันชักทุกตัวคือการดันสมดุลกลับ (ลดแรงเร่ง หรือเพิ่มเบรก)"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-ep-04",
+   "after": "การลามเป็นสองซีก (focal to bilateral tonic-clonic)",
+   "anim": {
+    "key": "nep-focal-bilat",
+    "title": "Focal → bilateral tonic-clonic — สิ่งที่ญาติเห็นคือแค่ตอนจบ",
+    "svg": "<svg viewBox=\"0 0 440 334\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ไฟฟ้าเริ่มที่ focus ในสมองซีกซ้าย เป็น aura แล้วลามใน motor cortex ทำให้มือขวากระตุกและตาหันขวา ข้าม corpus callosum เป็นชักทั้งตัว หลังชักแขนขาขวาอ่อนแรงชั่วคราว ญาติมักเห็นแค่ช่วงชักทั้งตัว\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"170\" y=\"14\" class=\"xs mid mu\">มองจากด้านบน (จมูกชี้ขึ้น)</text><path d=\"M162,34 L170,22 L178,34 Z\" class=\"sk\"/><ellipse cx=\"105\" cy=\"128\" rx=\"60\" ry=\"88\" class=\"bx\"/><ellipse cx=\"235\" cy=\"128\" rx=\"60\" ry=\"88\" class=\"bx\"/><rect x=\"160\" y=\"108\" width=\"20\" height=\"40\" rx=\"4\" class=\"sk\"/><text x=\"170\" y=\"132\" class=\"xs mid\">CC</text><text x=\"105\" y=\"232\" class=\"xs mid b\">ซีกซ้าย</text><text x=\"235\" y=\"232\" class=\"xs mid b\">ซีกขวา</text><g class=\"pl\"><circle cx=\"118\" cy=\"76\" r=\"7\" class=\"bad\"/></g><text x=\"118\" y=\"62\" class=\"xs mid b tbad\" data-x=\"2\">focus</text><g data-s=\"2\" data-x=\"3\"><ellipse cx=\"112\" cy=\"100\" rx=\"40\" ry=\"48\" class=\"bad\" opacity=\".45\"/><text x=\"105\" y=\"170\" class=\"xs mid tbad b\">ลามใน motor cortex</text></g><g data-s=\"3\" data-x=\"4\"><ellipse cx=\"105\" cy=\"128\" rx=\"58\" ry=\"86\" class=\"bad\" opacity=\".45\"/><ellipse cx=\"235\" cy=\"128\" rx=\"58\" ry=\"86\" class=\"bad\" opacity=\".45\"/><path d=\"M136,120 L204,120\" class=\"lbad w3 fl\" marker-end=\"url(#ah-bad)\"/></g><g data-s=\"4\"><ellipse cx=\"105\" cy=\"128\" rx=\"58\" ry=\"86\" class=\"muf\" opacity=\".55\"/><text x=\"105\" y=\"170\" class=\"xs mid b\">ถูกกดหลังชัก</text></g><g><rect x=\"305\" y=\"30\" width=\"128\" height=\"46\" rx=\"8\" class=\"ms\"/><text x=\"369.0\" y=\"48\" class=\"xs mid b\">Aura · ยังรู้ตัว</text><text x=\"369.0\" y=\"64\" class=\"xs mid\">(focal aware)</text></g><g data-s=\"2\"><rect x=\"305\" y=\"84\" width=\"128\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"369.0\" y=\"102\" class=\"xs mid b\">มือขวากระตุก</text><text x=\"369.0\" y=\"118\" class=\"xs mid\">ลามแขน → หน้า</text><text x=\"369.0\" y=\"134\" class=\"xs mid\">ตา/หน้าหันขวา</text></g><g data-s=\"3\"><rect x=\"305\" y=\"154\" width=\"128\" height=\"46\" rx=\"8\" class=\"bad\"/><text x=\"369.0\" y=\"172\" class=\"xs mid b\">เกร็งกระตุกทั้งตัว</text><text x=\"369.0\" y=\"188\" class=\"xs mid\">หมดสติ</text></g><g data-s=\"4\"><rect x=\"305\" y=\"208\" width=\"128\" height=\"46\" rx=\"8\" class=\"sk\"/><text x=\"369.0\" y=\"226\" class=\"xs mid b\">แขนขาขวาอ่อนแรง</text><text x=\"369.0\" y=\"242\" class=\"xs mid\">Todd's · ชั่วคราว</text></g><rect x=\"20\" y=\"278\" width=\"60\" height=\"14\" rx=\"3\" class=\"ms\"/><text x=\"50\" y=\"306\" class=\"xs mid\">aura</text><g data-s=\"2\"><rect x=\"80\" y=\"278\" width=\"80\" height=\"14\" rx=\"3\" class=\"ms\"/><text x=\"120\" y=\"306\" class=\"xs mid\">focal</text></g><g data-s=\"3\"><rect x=\"160\" y=\"278\" width=\"170\" height=\"14\" rx=\"3\" class=\"bad\"/><text x=\"245\" y=\"306\" class=\"xs mid\">bilateral tonic-clonic</text></g><g data-s=\"4\"><rect x=\"330\" y=\"278\" width=\"100\" height=\"14\" rx=\"3\" class=\"sk\"/><text x=\"380\" y=\"306\" class=\"xs mid\">post-ictal</text></g><g data-s=\"5\"><path d=\"M160,272 L160,264 L330,264 L330,272\" class=\"lbad w2\"/><text x=\"245\" y=\"258\" class=\"xs mid b tbad\">ญาติมักเห็นแค่ช่วงนี้</text><text x=\"220\" y=\"326\" class=\"xs mid b\">ไม่ถาม aura/การหันหน้า → จัดเป็น generalized ผิด → เลือกยาผิด</text></g></svg>",
+    "steps": [
+     {
+      "t": "Focus เล็กในซีกซ้าย → aura",
+      "cap": "ไฟฟ้าเริ่มที่ **จุดเดียวในซีกซ้าย** อาการแรกคือหน้าที่ของจุดนั้น ผู้ป่วยยังรู้ตัว = **aura ซึ่งก็คือ focal aware seizure** ไม่ใช่สัญญาณเตือนที่อยู่นอกการชัก"
+     },
+     {
+      "t": "ลามใน motor cortex → อาการซีกขวา",
+      "cap": "ไฟฟ้าลามตาม homunculus → มือขวากระตุกแล้วลามขึ้นแขนและหน้า (**Jacksonian march**) · frontal eye field ซ้ายถูกกระตุ้น → **ตาและหน้าหันไปขวา หนีจาก focus**"
+     },
+     {
+      "t": "ข้าม corpus callosum → ทั้งสองซีก",
+      "cap": "ไฟฟ้าข้าม **corpus callosum (CC)** ไปซีกขวา → เกร็งกระตุกทั้งตัว หมดสติ = **focal to bilateral tonic-clonic** (ศัพท์เดิม secondary generalization)"
+     },
+     {
+      "t": "หลังชัก: Todd's paralysis",
+      "cap": "cortex ซีกซ้ายที่ยิงหนักหมดแรงและถูกกด → **แขนขาขวาอ่อนแรงชั่วคราว** เป็นนาทีถึงชั่วโมง = หลักฐานว่าการชัก **เริ่มจากซีกเดียว**"
+     },
+     {
+      "t": "ญาติเห็นแค่ตอนจบ",
+      "cap": "ญาติมักเล่าแค่ช่วงชักทั้งตัว ถ้าไม่ถามย้อนเรื่อง **aura · การหันหน้า · แขนขาข้างไหนเริ่มก่อน · Todd's** จะจัดเป็น generalized onset ผิด และ **เลือกยาผิด** ตามไปด้วย"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-ep-05",
+   "after": "ทำไมถึงมีอาการนี้ — ชักแต่ละชนิดมาจากวงจรต่างกัน",
+   "anim": {
+    "key": "nep-absence",
+    "title": "Absence — วงจร thalamus–cortex ที่แกว่ง 3 ครั้งต่อวินาที",
+    "svg": "<svg viewBox=\"0 0 440 344\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: reticular nucleus หลั่ง GABA กด thalamus จนเปิด T-type calcium channel วงจร thalamus กับ cortex แกว่ง 3 ครั้งต่อวินาที เห็นเป็น 3 Hz spike and wave และอาการเหม่อค้าง ethosuximide ปิด T-type แล้ววงจรหยุด\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30,92 Q220,-4 410,92 L410,114 Q220,18 30,114 Z\" class=\"sk\"/><text x=\"220\" y=\"60\" class=\"xs mid b\">cortex ทั้งสองซีก</text><ellipse cx=\"220\" cy=\"175\" rx=\"62\" ry=\"30\" class=\"bx\"/><text x=\"220\" y=\"179\" class=\"sm mid b\">thalamus (relay)</text><path d=\"M150,143 Q130,175 150,207\" class=\"lwa w5\"/><text x=\"128\" y=\"168\" class=\"xs end b twa\">RTN</text><text x=\"128\" y=\"182\" class=\"xs end twa\">(GABA)</text><path d=\"M246,148 L284,104\" class=\"lac w2 fl\" marker-end=\"url(#ah-ac)\"/><path d=\"M176,98 L162,138\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\"/><path d=\"M150,192 Q162,198 168,190\" class=\"lwa w2\" marker-end=\"url(#ah-wa)\"/><text x=\"220\" y=\"228\" class=\"xs mid\" data-x=\"2\">ตื่น: ส่งข้อมูลขึ้น cortex ต่อเนื่อง (tonic mode)</text><g data-s=\"2\"><g class=\"pl\"><path d=\"M150,143 Q130,175 150,207\" class=\"lwa w5\"/></g><circle cx=\"294\" cy=\"175\" r=\"13\" class=\"ms\"/><text x=\"294\" y=\"179\" class=\"sm mid b\">T</text><text x=\"312\" y=\"179\" class=\"xs b tms\">T-type Ca²⁺</text></g><text x=\"220\" y=\"228\" class=\"xs mid b\" data-s=\"2\" data-x=\"3\">RTN กด → hyperpolarize → เปิด T-type → ยิงเป็นชุด</text><g data-s=\"3\" data-x=\"4\"><circle r=\"6\" class=\"badf\"><animateMotion dur=\"0.34s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M246,148 L284,104 Q220,62 156,104 L150,146 Q160,178 196,176 Z\"/></circle><circle r=\"4\" class=\"badf\"><animateMotion dur=\"0.34s\" begin=\"0.17s\" repeatCount=\"indefinite\" path=\"M246,148 L284,104 Q220,62 156,104 L150,146 Q160,178 196,176 Z\"/></circle><text x=\"220\" y=\"136\" class=\"xs mid b tbad\">≈ 3 รอบ/วินาที</text></g><text x=\"220\" y=\"228\" class=\"xs mid b tbad\" data-s=\"3\" data-x=\"4\">แกว่ง 3 Hz ทั้งสองซีก → cortex รับข้อมูลไม่ได้ = เหม่อค้าง</text><g data-s=\"4\"><line x1=\"283\" y1=\"164\" x2=\"305\" y2=\"186\" class=\"lok w3\"/><line x1=\"305\" y1=\"164\" x2=\"283\" y2=\"186\" class=\"lok w3\"/></g><text x=\"220\" y=\"228\" class=\"xs mid b tok\" data-s=\"4\">ethosuximide / VPA ปิด T-type → วงจรหยุดแกว่ง</text><rect x=\"20\" y=\"240\" width=\"400\" height=\"78\" rx=\"8\" class=\"sk\"/><text x=\"30\" y=\"256\" class=\"xs b\">EEG</text><polyline points=\"60,290.6 67,288.1 74,288.6 81,293.8 88,288.5 95,292.3 102,290.4 109,291.8 116,294 123,290.8 130,293.4 137,291.2 144,291.6 151,291.2 158,288.7 165,290.1 172,293 179,286.2 186,293.8 193,292 200,290.9 207,292.1 214,288.5 221,291.7 228,292.5 235,288.2 242,292.5 249,287.4 256,286.6 263,287.9 270,290.8 277,287.8 284,287.3 291,293.9 298,292.5 305,291.5 312,293.1 319,287.5 326,288.2 333,290.4 340,287.7 347,286.8 354,286.1 361,288.4 368,290 375,293.8 382,287.5 389,290.9 396,291.6 403,293.9 410,287.3\" class=\"lmu w2\" data-x=\"3\"/><g data-s=\"3\" data-x=\"4\"><polyline points=\"60,290 63,264 66,308 69,290 74,282 80,276 87,276 93,282 100,290 100,290 103,264 106,308 109,290 114,282 120,276 127,276 133,282 140,290 140,290 143,264 146,308 149,290 154,282 160,276 167,276 173,282 180,290 180,290 183,264 186,308 189,290 194,282 200,276 207,276 213,282 220,290 220,290 223,264 226,308 229,290 234,282 240,276 247,276 253,282 260,290 260,290 263,264 266,308 269,290 274,282 280,276 287,276 293,282 300,290 300,290 303,264 306,308 309,290 314,282 320,276 327,276 333,282 340,290 340,290 343,264 346,308 349,290 354,282 360,276 367,276 373,282 380,290\" class=\"lbad w2\"/><text x=\"410\" y=\"256\" class=\"xs end b tbad\">3 Hz spike-and-wave</text><path d=\"M246,148 L284,104 Q220,62 156,104 L150,146 Q156,168 166,172\" class=\"lbad w2 da\"/></g><polyline points=\"60,291 67,288.7 74,288.7 81,289.3 88,291.4 95,289.3 102,289.2 109,287.7 116,289.9 123,286.6 130,292.1 137,293.2 144,286.9 151,293.4 158,291.6 165,290 172,293.9 179,289.3 186,287.5 193,291.7 200,289.2 207,288.9 214,294 221,286.8 228,288.3 235,291 242,286.9 249,293.5 256,290.3 263,291.5 270,288.1 277,290.5 284,289.8 291,288.3 298,292.9 305,292.3 312,289.1 319,286.2 326,288.7 333,288.2 340,286.1 347,291.9 354,286.3 361,289.7 368,292.3 375,293.9 382,291.1 389,292.6 396,291 403,287.8 410,289\" class=\"lmu w2\" data-s=\"4\"/><text x=\"220\" y=\"334\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">5–15 วินาที · ฟื้นทันที ไม่มี post-ictal · หายใจเร็วกระตุ้นได้</text><text x=\"220\" y=\"334\" class=\"xs mid b tbad\" data-s=\"4\">CBZ/PHT/OXC (Na⁺ blocker) ไม่ถึงวงจรนี้ — อาจแย่ลง</text></svg>",
+    "steps": [
+     {
+      "t": "ตื่น: thalamus ส่งข้อมูลขึ้น cortex",
+      "cap": "ขณะตื่น relay neuron ใน **thalamus** ส่งข้อมูลประสาทสัมผัสขึ้น **cortex ทั้งสองซีก** อย่างต่อเนื่อง โดยมี reticular nucleus (RTN) คอยปรับด้วย GABA"
+     },
+     {
+      "t": "RTN กด → T-type Ca²⁺ เปิด → ยิงเป็นชุด",
+      "cap": "RTN หลั่ง **GABA** กด relay neuron จน **hyperpolarize** ซึ่งไปเปิด **T-type Ca²⁺ channel** → relay neuron ยิงเป็นชุด (burst) แทนการส่งข้อมูลต่อเนื่อง"
+     },
+     {
+      "t": "วงจรแกว่ง 3 Hz → absence",
+      "cap": "ชุดไฟฟ้าวิ่งขึ้น cortex แล้ววนกลับลง RTN–thalamus → แกว่ง **≈ 3 ครั้ง/วินาที** = **3 Hz spike-and-wave ทั้งสองซีก** · cortex รับข้อมูลไม่ได้ชั่วขณะ → **เหม่อค้าง 5–15 วินาทีแล้วฟื้นทันที** · หายใจเร็ว (CO₂ ต่ำ) กระตุ้นได้"
+     },
+     {
+      "t": "ยาที่ตัดวงจรนี้",
+      "cap": "**ethosuximide และ VPA ปิด T-type** → วงจรหยุดแกว่ง · ส่วน **sodium channel blocker (CBZ, PHT, OXC)** ไม่ได้ทำงานที่วงจรนี้ และอาจทำให้ absence หรือ myoclonic แย่ลง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-cns-02",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "ncns-meningitis",
+    "title": "Bacterial meningitis — จากโพรงจมูกถึงไข้ ปวดหัว คอแข็ง",
+    "svg": "<svg viewBox=\"0 0 440 334\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อตั้งรกรากที่โพรงจมูก เข้ากระแสเลือด ข้าม BBB แบ่งตัวใน CSF แล้วการอักเสบทำให้เกิดไข้ ปวดศีรษะ คอแข็ง และซึม ผู้ที่อักเสบน้อยมีอาการไม่ครบ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"40\" width=\"92\" height=\"54\" rx=\"10\" class=\"sk\"/><text x=\"56\" y=\"62\" class=\"xs mid b\">โพรงจมูก</text><text x=\"56\" y=\"80\" class=\"xs mid\">ตั้งรกราก</text><circle cx=\"28\" cy=\"50\" r=\"3.5\" class=\"badf\"/><circle cx=\"84\" cy=\"50\" r=\"3.5\" class=\"badf\"/><path d=\"M104,67 L120,67\" class=\"lmu w2\" marker-end=\"url(#ah-mu)\"/><rect x=\"124\" y=\"40\" width=\"94\" height=\"54\" rx=\"10\" class=\"ac\"/><text x=\"171\" y=\"62\" class=\"xs mid b\">กระแสเลือด</text><text x=\"171\" y=\"80\" class=\"xs mid\">capsule ช่วยหลบ</text><line x1=\"236\" y1=\"32\" x2=\"236\" y2=\"100\" class=\"ln w3\"/><line x1=\"243\" y1=\"32\" x2=\"243\" y2=\"100\" class=\"ln w3\"/><text x=\"240\" y=\"26\" class=\"xs mid b\">BBB</text><rect x=\"256\" y=\"34\" width=\"176\" height=\"66\" rx=\"10\" class=\"wa\"/><text x=\"344\" y=\"52\" class=\"xs mid b\">CSF / ช่อง subarachnoid</text><g data-s=\"2\"><circle r=\"4\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M56,50 Q110,24 171,50 Q214,72 300,74\"/></circle><circle r=\"4\" class=\"badf\"><animateMotion dur=\"2.6s\" begin=\"1.3s\" repeatCount=\"indefinite\" path=\"M56,50 Q110,24 171,50 Q214,72 300,74\"/></circle><path d=\"M220,70 L252,70\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><circle cx=\"150\" cy=\"86\" r=\"3.5\" class=\"badf\"/><circle cx=\"196\" cy=\"86\" r=\"3.5\" class=\"badf\"/></g><g data-s=\"3\"><circle cx=\"272\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.2s\" repeatCount=\"indefinite\"/></circle><circle cx=\"272\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.4s\" repeatCount=\"indefinite\"/></circle><circle cx=\"294\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"294\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.2s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-1.0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"316\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"338\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.8s\" repeatCount=\"indefinite\"/></circle><circle cx=\"338\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-1.0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"360\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.6s\" repeatCount=\"indefinite\"/></circle><circle cx=\"360\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.8s\" repeatCount=\"indefinite\"/></circle><circle cx=\"382\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.4s\" repeatCount=\"indefinite\"/></circle><circle cx=\"382\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.6s\" repeatCount=\"indefinite\"/></circle><circle cx=\"404\" cy=\"66\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.2s\" repeatCount=\"indefinite\"/></circle><circle cx=\"404\" cy=\"80\" r=\"3.5\" class=\"badf\"><animate attributeName=\"r\" values=\"2.5;4.5;2.5\" dur=\"1.2s\" begin=\"-0.4s\" repeatCount=\"indefinite\"/></circle><text x=\"328\" y=\"116\" class=\"xs mid tbad b\">ไร้ complement/antibody → แบ่งตัวเร็ว</text></g><g data-s=\"4\"><path d=\"M430,102 L430,128\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\"/><text x=\"424\" y=\"142\" class=\"xs end b tbad\">cytokine</text></g><g data-s=\"4\"><rect x=\"10\" y=\"148\" width=\"204\" height=\"54\" rx=\"8\" class=\"ms\"/><text x=\"112.0\" y=\"166\" class=\"xs mid b\">ไข้</text><text x=\"112.0\" y=\"182\" class=\"xs mid\">IL-1/TNF → PGE₂ ที่ hypothalamus</text></g><g data-s=\"4\"><rect x=\"226\" y=\"148\" width=\"204\" height=\"54\" rx=\"8\" class=\"ms\"/><text x=\"328.0\" y=\"166\" class=\"xs mid b\">ปวดศีรษะ</text><text x=\"328.0\" y=\"182\" class=\"xs mid\">ใยรับปวดที่ดูรา (CN V, รากคอ)</text></g><g data-s=\"4\"><rect x=\"10\" y=\"210\" width=\"204\" height=\"54\" rx=\"8\" class=\"ms\"/><text x=\"112.0\" y=\"228\" class=\"xs mid b\">คอแข็ง · Kernig · Brudzinski</text><text x=\"112.0\" y=\"244\" class=\"xs mid\">ยืดเยื่อหุ้มที่อักเสบ → เกร็งกัน</text></g><g data-s=\"4\"><rect x=\"226\" y=\"210\" width=\"204\" height=\"54\" rx=\"8\" class=\"bad\"/><text x=\"328.0\" y=\"228\" class=\"xs mid b\">ซึม สับสน (~40%)</text><text x=\"328.0\" y=\"244\" class=\"xs mid\">สมองบวม + CSF คั่ง → ICP ↑</text></g><g data-s=\"5\"><rect x=\"10\" y=\"274\" width=\"420\" height=\"52\" rx=\"10\" class=\"bx\"/><text x=\"220\" y=\"294\" class=\"xs mid b\">ผู้สูงอายุ/ภูมิต่ำ/ได้ยามาก่อน → อักเสบน้อย → อาการไม่ครบ triad</text><text x=\"220\" y=\"314\" class=\"xs mid b tac\">อย่ารอ: hemoculture → dexamethasone → ยาปฏิชีวนะ → CT → เจาะหลัง</text></g></svg>",
+    "steps": [
+     {
+      "t": "ตั้งรกรากที่โพรงจมูก",
+      "cap": "**S. pneumoniae** หรือ **N. meningitidis** ตั้งรกรากที่โพรงจมูก — ขั้นแรกของกรอบสี่ขั้นในสไลด์ (เข้าร่างกาย → เข้า CNS → เพิ่มจำนวน → ก่อการอักเสบ)"
+     },
+     {
+      "t": "เข้ากระแสเลือด → ข้าม BBB",
+      "cap": "เชื้อหลุดเข้ากระแสเลือด (hematogenous) โดยมี **capsule** ช่วยหลบ complement → **ข้าม BBB** เข้าสู่ช่อง subarachnoid"
+     },
+     {
+      "t": "ใน CSF เชื้อแบ่งตัวเร็ว",
+      "cap": "ใน CSF **แทบไม่มี complement และ antibody** เชื้อจึง **แบ่งตัวได้เร็ว** โดยแทบไม่มีอะไรต้าน"
+     },
+     {
+      "t": "การอักเสบ → สี่อาการ",
+      "cap": "ผนังเชื้อ (LPS, teichoic acid) กระตุ้น cytokine → **ไข้** · ใยรับปวดที่ดูรา → **ปวดศีรษะ** · เยื่อหุ้มอักเสบถูกยืด → **คอแข็ง** · สมองบวมและ CSF คั่ง → **ICP สูงจนซึม** — การอักเสบทำร้ายสมองมากกว่าตัวเชื้อ"
+     },
+     {
+      "t": "อักเสบน้อย ≠ ไม่เป็นโรค",
+      "cap": "ผู้สูงอายุ ภูมิคุ้มกันบกพร่อง หรือได้ยาปฏิชีวนะมาก่อน **อักเสบได้น้อย อาการจึงไม่ครบ triad** ทั้งที่เป็นโรค · ห้ามรอ — เจาะ hemoculture → dexamethasone → ยาปฏิชีวนะ แล้วจึง CT และเจาะหลัง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-cns-03",
+   "after": "ตารางแยกสี่กลุ่ม — หัวใจของคาบนี้",
+   "anim": {
+    "key": "ncns-csf",
+    "title": "อ่าน CSF เป็นภาพ — ปกติ แบคทีเรีย ไวรัส TB เชื้อรา",
+    "svg": "<svg viewBox=\"0 0 440 340\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: แท่งเปรียบเทียบ opening pressure เม็ดเลือดขาว โปรตีน และอัตราส่วนน้ำตาลใน CSF ปกติ แบคทีเรีย ไวรัส วัณโรค และ cryptococcus พร้อมลักษณะน้ำและชนิดเซลล์\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"22\" y=\"58\" width=\"40\" height=\"150\" rx=\"18\" class=\"bx\"/><text x=\"42\" y=\"48\" class=\"xs mid b\">ลักษณะ</text><rect x=\"318\" y=\"34\" width=\"12\" height=\"10\" class=\"okf\" opacity=\".5\"/><text x=\"334\" y=\"43\" class=\"xs\">แถบเขียว = ช่วงปกติ</text><rect x=\"107\" y=\"178\" width=\"56\" height=\"32\" class=\"okf\" opacity=\".28\"/><rect x=\"187\" y=\"220\" width=\"56\" height=\"10\" class=\"okf\" opacity=\".28\"/><rect x=\"267\" y=\"196\" width=\"56\" height=\"16\" class=\"okf\" opacity=\".28\"/><rect x=\"347\" y=\"100\" width=\"56\" height=\"36\" class=\"okf\" opacity=\".28\"/><line x1=\"105\" y1=\"230\" x2=\"420\" y2=\"230\" class=\"ln w2\"/><text x=\"135\" y=\"246\" class=\"xs mid b\">Opening</text><text x=\"135\" y=\"260\" class=\"xs mid mu\">pressure</text><text x=\"215\" y=\"246\" class=\"xs mid b\">WBC</text><text x=\"215\" y=\"260\" class=\"xs mid mu\">/mm³</text><text x=\"295\" y=\"246\" class=\"xs mid b\">Protein</text><text x=\"295\" y=\"260\" class=\"xs mid mu\">mg/dL</text><text x=\"375\" y=\"246\" class=\"xs mid b\">Glucose</text><text x=\"375\" y=\"260\" class=\"xs mid mu\">CSF/เลือด</text><text x=\"220\" y=\"330\" class=\"xs mid mu\">ความสูงของแท่งเป็นเชิงเปรียบเทียบ ไม่ใช่สเกลจริง</text><g data-x=\"2\"><text x=\"220\" y=\"22\" class=\"sm mid b tok\">ปกติ</text><rect x=\"113\" y=\"190\" width=\"44\" height=\"40\" rx=\"3\" class=\"ok\"/><text x=\"135\" y=\"184\" class=\"xs mid b\">6–20</text><rect x=\"193\" y=\"225\" width=\"44\" height=\"5\" rx=\"3\" class=\"ok\"/><text x=\"215\" y=\"219\" class=\"xs mid b\">0–5</text><rect x=\"273\" y=\"200\" width=\"44\" height=\"30\" rx=\"3\" class=\"ok\"/><text x=\"295\" y=\"194\" class=\"xs mid b\">15–45</text><rect x=\"353\" y=\"120\" width=\"44\" height=\"110\" rx=\"3\" class=\"ok\"/><text x=\"375\" y=\"114\" class=\"xs mid b\">≥ 0.6</text><rect x=\"26\" y=\"110\" width=\"32\" height=\"94\" rx=\"14\" class=\"waf\" opacity=\".25\"/><text x=\"42\" y=\"222\" class=\"xs mid b\">ใส</text><circle cx=\"42\" cy=\"248\" r=\"10\" class=\"wa\"/><circle cx=\"42\" cy=\"248\" r=\"6\" class=\"waf\"/><text x=\"42\" y=\"274\" class=\"xs mid b\">lymph</text><text x=\"220\" y=\"304\" class=\"xs mid b\">เจาะน้ำตาลในเลือดพร้อมกันเสมอ — ใช้อัตราส่วน CSF/เลือด</text></g><g data-s=\"2\" data-x=\"3\"><text x=\"220\" y=\"22\" class=\"sm mid b tbad\">Bacterial — Gram stain, culture</text><rect x=\"113\" y=\"120\" width=\"44\" height=\"110\" rx=\"3\" class=\"bad\"/><text x=\"135\" y=\"114\" class=\"xs mid b\">สูง</text><rect x=\"193\" y=\"74\" width=\"44\" height=\"156\" rx=\"3\" class=\"bad\"/><text x=\"215\" y=\"68\" class=\"xs mid b\">1,000–5,000</text><rect x=\"273\" y=\"92\" width=\"44\" height=\"138\" rx=\"3\" class=\"bad\"/><text x=\"295\" y=\"86\" class=\"xs mid b\">&gt; 100</text><rect x=\"353\" y=\"192\" width=\"44\" height=\"38\" rx=\"3\" class=\"wa\"/><text x=\"375\" y=\"186\" class=\"xs mid b\">&lt; 0.4</text><rect x=\"26\" y=\"110\" width=\"32\" height=\"94\" rx=\"14\" class=\"msf\" opacity=\".85\"/><text x=\"42\" y=\"222\" class=\"xs mid b\">ขุ่น</text><circle cx=\"42\" cy=\"248\" r=\"10\" class=\"ms\"/><circle cx=\"37\" cy=\"245\" r=\"3\" class=\"badf\"/><circle cx=\"46\" cy=\"244\" r=\"3\" class=\"badf\"/><circle cx=\"42\" cy=\"252\" r=\"3\" class=\"badf\"/><text x=\"42\" y=\"274\" class=\"xs mid b\">PMN</text><text x=\"220\" y=\"304\" class=\"xs mid b\">PMN + น้ำตาลต่ำมาก + โปรตีนสูงมาก = แบคทีเรีย</text></g><g data-s=\"3\" data-x=\"4\"><text x=\"220\" y=\"22\" class=\"sm mid b twa\">Viral — PCR viral panel</text><rect x=\"113\" y=\"176\" width=\"44\" height=\"54\" rx=\"3\" class=\"ms\"/><text x=\"135\" y=\"170\" class=\"xs mid b\">ปกติ/↑น้อย</text><rect x=\"193\" y=\"150\" width=\"44\" height=\"80\" rx=\"3\" class=\"ms\"/><text x=\"215\" y=\"144\" class=\"xs mid b\">10–500</text><rect x=\"273\" y=\"186\" width=\"44\" height=\"44\" rx=\"3\" class=\"ms\"/><text x=\"295\" y=\"180\" class=\"xs mid b\">ปกติ/↑น้อย</text><rect x=\"353\" y=\"120\" width=\"44\" height=\"110\" rx=\"3\" class=\"ok\"/><text x=\"375\" y=\"114\" class=\"xs mid b\">ปกติ</text><rect x=\"26\" y=\"110\" width=\"32\" height=\"94\" rx=\"14\" class=\"waf\" opacity=\".25\"/><text x=\"42\" y=\"222\" class=\"xs mid b\">ใส</text><circle cx=\"42\" cy=\"248\" r=\"10\" class=\"wa\"/><circle cx=\"42\" cy=\"248\" r=\"6\" class=\"waf\"/><text x=\"42\" y=\"274\" class=\"xs mid b\">lymph</text><text x=\"220\" y=\"304\" class=\"xs mid b\">lymphocyte + น้ำตาลปกติ = ไวรัส</text></g><g data-s=\"4\" data-x=\"5\"><text x=\"220\" y=\"22\" class=\"sm mid b tms\">TB — AFB, TB-PCR, culture</text><rect x=\"113\" y=\"120\" width=\"44\" height=\"110\" rx=\"3\" class=\"bad\"/><text x=\"135\" y=\"114\" class=\"xs mid b\">สูง</text><rect x=\"193\" y=\"142\" width=\"44\" height=\"88\" rx=\"3\" class=\"ms\"/><text x=\"215\" y=\"136\" class=\"xs mid b\">50–500</text><rect x=\"273\" y=\"74\" width=\"44\" height=\"156\" rx=\"3\" class=\"bad\"/><text x=\"295\" y=\"68\" class=\"xs mid b\">สูงมาก</text><rect x=\"353\" y=\"176\" width=\"44\" height=\"54\" rx=\"3\" class=\"wa\"/><text x=\"375\" y=\"170\" class=\"xs mid b\">ต่ำ</text><rect x=\"26\" y=\"110\" width=\"32\" height=\"94\" rx=\"14\" class=\"msf\" opacity=\".35\"/><text x=\"42\" y=\"222\" class=\"xs mid b\">ใส/ขุ่นน้อย</text><circle cx=\"42\" cy=\"248\" r=\"10\" class=\"wa\"/><circle cx=\"42\" cy=\"248\" r=\"6\" class=\"waf\"/><text x=\"42\" y=\"274\" class=\"xs mid b\">lymph</text><text x=\"220\" y=\"304\" class=\"xs mid b\">lymphocyte + น้ำตาลต่ำ + โปรตีนสูงมาก · อาจมี fibrin web</text></g><g data-s=\"5\" data-x=\"6\"><text x=\"220\" y=\"22\" class=\"sm mid b tpa\">Cryptococcal — India ink, CrAg</text><rect x=\"113\" y=\"72\" width=\"44\" height=\"158\" rx=\"3\" class=\"bad\"/><text x=\"135\" y=\"66\" class=\"xs mid b\">สูงมาก</text><rect x=\"193\" y=\"158\" width=\"44\" height=\"72\" rx=\"3\" class=\"ms\"/><text x=\"215\" y=\"152\" class=\"xs mid b\">20–200</text><rect x=\"273\" y=\"124\" width=\"44\" height=\"106\" rx=\"3\" class=\"bad\"/><text x=\"295\" y=\"118\" class=\"xs mid b\">สูง</text><rect x=\"353\" y=\"168\" width=\"44\" height=\"62\" rx=\"3\" class=\"wa\"/><text x=\"375\" y=\"162\" class=\"xs mid b\">ต่ำ</text><rect x=\"26\" y=\"110\" width=\"32\" height=\"94\" rx=\"14\" class=\"waf\" opacity=\".25\"/><text x=\"42\" y=\"222\" class=\"xs mid b\">ใส</text><circle cx=\"42\" cy=\"248\" r=\"10\" class=\"wa\"/><circle cx=\"42\" cy=\"248\" r=\"6\" class=\"waf\"/><text x=\"42\" y=\"274\" class=\"xs mid b\">lymph</text><text x=\"220\" y=\"304\" class=\"xs mid b\">opening pressure สูงมาก → ต้องเจาะระบายซ้ำ</text></g><g data-s=\"6\"><text x=\"220\" y=\"22\" class=\"sm mid b\">สรุปวิธีอ่าน</text><rect x=\"96\" y=\"34\" width=\"336\" height=\"200\" rx=\"10\" class=\"bx\"/><text x=\"264\" y=\"60\" class=\"sm mid b\">อ่านน้ำตาลก่อน แล้วดูชนิดเซลล์</text><text x=\"264\" y=\"92\" class=\"sm mid b tbad\">น้ำตาลต่ำ + PMN → แบคทีเรีย</text><text x=\"264\" y=\"122\" class=\"sm mid b tms\">น้ำตาลต่ำ + lymph → TB หรือ cryptococcus</text><text x=\"264\" y=\"140\" class=\"xs mid\">(แยกด้วยโปรตีน ระยะเวลา opening pressure)</text><text x=\"264\" y=\"172\" class=\"sm mid b twa\">น้ำตาลปกติ + lymph → ไวรัส</text><text x=\"264\" y=\"206\" class=\"xs mid mu\">ระยะแรกชนิดเซลล์สลับกันได้ — ดูทั้งชุด</text></g></svg>",
+    "steps": [
+     {
+      "t": "CSF ปกติ",
+      "cap": "**ใส** · opening pressure **6–20 cmH₂O** · WBC **0–5** (lymphocyte) · protein **15–45 mg/dL** · glucose **≥ 60% ของเลือด** — ต้องเจาะน้ำตาลในเลือดพร้อมกันเสมอ"
+     },
+     {
+      "t": "Bacterial",
+      "cap": "**ขุ่น** · pressure สูง · WBC **1,000–5,000 เด่น neutrophil** · protein **> 100** · glucose ratio **< 0.4** — เชื้อและ PMN ใช้น้ำตาล การขนส่งผ่าน GLUT1 ลดลง และ BBB ที่รั่วปล่อยโปรตีน"
+     },
+     {
+      "t": "Viral",
+      "cap": "**ใส** · pressure ปกติหรือสูงเล็กน้อย · WBC **10–500 เด่น lymphocyte** · protein ปกติหรือสูงเล็กน้อย · **glucose ปกติ** เพราะไวรัสไม่กินน้ำตาลและอักเสบน้อย"
+     },
+     {
+      "t": "TB",
+      "cap": "ใสหรือขุ่นเล็กน้อย (อาจมี fibrin web) · pressure สูง · WBC **50–500 lymphocyte** · **protein สูงมาก** จาก exudate หนา · **glucose ต่ำ**"
+     },
+     {
+      "t": "Cryptococcal",
+      "cap": "ใส · **opening pressure สูงมาก** (แคปซูลอุด arachnoid villi) · WBC 20–200 lymphocyte · protein สูง · glucose ต่ำ · ยืนยันด้วย **India ink / CrAg** และต้องเจาะระบายความดันซ้ำ"
+     },
+     {
+      "t": "สรุปวิธีอ่าน",
+      "cap": "เริ่มที่ **อัตราส่วนน้ำตาล** → ถ้าต่ำดูชนิดเซลล์: **PMN = แบคทีเรีย** · **lymphocyte = TB/cryptococcus** · น้ำตาลปกติ + lymphocyte = **ไวรัส** · ระยะแรกชนิดเซลล์อาจสลับกัน จึงต้องดูทั้งชุด"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-cns-09",
+   "after": "ทำไมถึงมีอาการนี้",
+   "anim": {
+    "key": "ncns-sea",
+    "title": "Spinal epidural abscess — ปวดหลัง → ปวดร้าว → อ่อนแรง → อัมพาต",
+    "svg": "<svg viewBox=\"0 0 440 364\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เชื้อ S. aureus ในเลือดตกที่หมอนรองกระดูก ลามเป็นหนองในช่อง epidural กดรากประสาท แล้วกดไขสันหลังจนขาดเลือด อาการไล่จากปวดหลัง ปวดร้าว อ่อนแรง จนอัมพาต\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"20\" y=\"22\" class=\"xs mu\">หน้า</text><text x=\"236\" y=\"22\" class=\"xs end mu\">หลัง</text><rect x=\"30\" y=\"40\" width=\"90\" height=\"56\" rx=\"6\" class=\"sk\"/><rect x=\"30\" y=\"122\" width=\"90\" height=\"56\" rx=\"6\" class=\"sk\"/><rect x=\"30\" y=\"204\" width=\"90\" height=\"56\" rx=\"6\" class=\"sk\"/><rect x=\"36\" y=\"98\" width=\"78\" height=\"22\" rx=\"6\" class=\"wa\"/><rect x=\"36\" y=\"180\" width=\"78\" height=\"22\" rx=\"6\" class=\"wa\"/><line x1=\"148\" y1=\"30\" x2=\"148\" y2=\"290\" class=\"lmu w2\"/><line x1=\"208\" y1=\"30\" x2=\"208\" y2=\"290\" class=\"lmu w2\"/><rect x=\"158\" y=\"30\" width=\"40\" height=\"260\" rx=\"18\" class=\"bx\"/><text x=\"178\" y=\"306\" class=\"xs mid\">ไขสันหลัง</text><text x=\"75\" y=\"306\" class=\"xs mid\">กระดูก/หมอนรอง</text><path d=\"M198,176 Q222,182 236,206\" class=\"lms w3\"/><text x=\"238\" y=\"222\" class=\"xs end tms\">ราก</text><g><circle r=\"3.5\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M10,300 Q22,250 64,200\"/></circle><circle r=\"3.5\" class=\"badf\"><animateMotion dur=\"1.8s\" begin=\"0.9s\" repeatCount=\"indefinite\" path=\"M10,300 Q22,250 64,200\"/></circle><path d=\"M10,300 Q22,250 64,200\" class=\"lac w2 da\"/></g><g class=\"pl\"><rect x=\"36\" y=\"180\" width=\"78\" height=\"22\" rx=\"6\" class=\"bad\"/></g><text x=\"75\" y=\"291\" class=\"xs mid tbad b\">S. aureus → หมอนรอง</text><g data-s=\"2\"><ellipse cx=\"136\" cy=\"191\" rx=\"12\" ry=\"30\" class=\"bad\"/><g class=\"pl\"><path d=\"M198,176 Q222,182 236,206\" class=\"lbad w3\"/></g></g><g data-s=\"3\"><rect x=\"158\" y=\"148\" width=\"40\" height=\"86\" rx=\"10\" class=\"ms\"/><ellipse cx=\"148\" cy=\"191\" rx=\"22\" ry=\"46\" class=\"bad\"/></g><g data-s=\"4\"><rect x=\"170\" y=\"150\" width=\"28\" height=\"82\" rx=\"10\" class=\"bad\"/><text x=\"184\" y=\"195\" class=\"xs mid b\">ตาย</text></g><g><rect x=\"252\" y=\"34\" width=\"180\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"342.0\" y=\"52\" class=\"xs mid b\">① ปวดหลัง เคาะเจ็บ + ไข้</text><text x=\"342.0\" y=\"68\" class=\"xs mid\">กระดูก/หมอนรองอักเสบ</text></g><g data-s=\"2\"><rect x=\"252\" y=\"92\" width=\"180\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"342.0\" y=\"110\" class=\"xs mid b\">② ปวดร้าวตามแนวราก</text><text x=\"342.0\" y=\"126\" class=\"xs mid\">หนองเข้า epidural กดราก</text></g><g data-s=\"3\"><rect x=\"252\" y=\"150\" width=\"180\" height=\"64\" rx=\"8\" class=\"bad\"/><text x=\"342.0\" y=\"168\" class=\"xs mid b\">③ อ่อนแรง · ชา · sensory level</text><text x=\"342.0\" y=\"184\" class=\"xs mid\">ปัสสาวะ/อุจจาระผิดปกติ</text><text x=\"342.0\" y=\"200\" class=\"xs mid\">กดไขสันหลัง + หลอดเลือดดำอุด</text></g><g data-s=\"4\"><rect x=\"252\" y=\"222\" width=\"180\" height=\"50\" rx=\"8\" class=\"bad\"/><text x=\"342.0\" y=\"240\" class=\"xs mid b\">④ อัมพาต</text><text x=\"342.0\" y=\"256\" class=\"xs mid\">ส่วนที่ขาดเลือดไม่ฟื้นแม้ระบาย</text></g><g data-s=\"5\"><rect x=\"10\" y=\"318\" width=\"420\" height=\"40\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"335\" class=\"xs mid b\">ปวดหลัง + ไข้ + อาการประสาท → MRI spine with contrast ทันที</text><text x=\"220\" y=\"351\" class=\"xs mid\">ผ่าตัดระบายฉุกเฉิน · vancomycin + cephalosporin รุ่น 3 นาน 6–8 สัปดาห์</text></g></svg>",
+    "steps": [
+     {
+      "t": "เชื้อในเลือดตกที่ endplate → ปวดหลัง",
+      "cap": "**S. aureus** ในเลือดไปตกที่ **endplate** ซึ่งมีหลอดเลือดปลายตัน → ทำลายหมอนรอง (ไม่มีหลอดเลือดเลี้ยง ต้านเชื้อได้น้อย) = **spondylodiscitis** → **ปวดหลัง เคาะกระดูกสันหลังเจ็บ** + ไข้"
+     },
+     {
+      "t": "หนองทะลุเข้าช่อง epidural → ปวดร้าว",
+      "cap": "หนองลามไปด้านหลังเข้า **ช่อง epidural** กดรากประสาทที่ออกจากระดับนั้น → **ปวดร้าวตามแนวราก** — ยังแก้ได้ทันถ้าจับได้ตอนนี้"
+     },
+     {
+      "t": "กดไขสันหลัง + ขาดเลือด",
+      "cap": "หนองกดไขสันหลังโดยตรง ร่วมกับ **หลอดเลือดดำอักเสบอุดตัน** → ไขสันหลังขาดเลือด → **อ่อนแรง ชา มี sensory level** · กด conus/cauda equina → **ปัสสาวะ อุจจาระผิดปกติ saddle anesthesia**"
+     },
+     {
+      "t": "อัมพาตถาวร",
+      "cap": "ส่วนที่ขาดเลือดจากหลอดเลือดอุดตัน **ไม่ฟื้นแม้ระบายหนองแล้ว** — ผลลัพธ์ขึ้นกับกำลังขาตอนผ่าตัด จึงเป็นภาวะฉุกเฉิน"
+     },
+     {
+      "t": "สรุป: ห้ามรอ",
+      "cap": "**ปวดหลัง + ไข้ + อาการทางระบบประสาท** = คิดถึง spinal epidural abscess → **MRI spine with contrast ทันที** · ผ่าตัดระบายและคลายกดแบบ EMERGENCY · ยา **vancomycin + cephalosporin รุ่นที่ 3** นาน 6–8 สัปดาห์"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-lp-03",
+   "after": "ทำไมถึงมีอาการนี้ — post-LP headache",
+   "anim": {
+    "key": "nlp-pdph",
+    "title": "Post-LP headache — ทำไมลุกแล้วปวด นอนแล้วหาย",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: CSF รั่วออกทางรูที่เยื่อดูรา สมองเสียแรงพยุงและทรุดลงเมื่อลุก ดึงโครงสร้างที่ไวต่อปวด หลอดเลือดดำขยายแทน นอนราบแล้วดีขึ้น และ epidural blood patch อุดรู\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"99\" y=\"140\" width=\"22\" height=\"160\" rx=\"10\" class=\"wa\"/><circle cx=\"110\" cy=\"86\" r=\"64\" class=\"sk\"/><ellipse cx=\"110\" cy=\"82\" rx=\"50\" ry=\"44\" class=\"bx\" data-x=\"2\"/><text x=\"110\" y=\"86\" class=\"xs mid b\" data-x=\"2\">สมอง</text><line x1=\"121\" y1=\"256\" x2=\"121\" y2=\"268\" class=\"lbad w3\"/><text x=\"94\" y=\"265\" class=\"xs end tbad b\">รูที่ดูรา</text><g data-x=\"5\"><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.4s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M123,262 Q140,272 150,300\"/></circle><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1.4s\" begin=\"0.7s\" repeatCount=\"indefinite\" path=\"M123,262 Q140,272 150,300\"/></circle><circle cx=\"134\" cy=\"270\" r=\"3\" class=\"waf\"/><text x=\"156\" y=\"288\" class=\"xs twa b\">CSF รั่ว</text></g><g data-s=\"2\" data-x=\"4\"><ellipse cx=\"110\" cy=\"104\" rx=\"50\" ry=\"44\" class=\"bx\"/><text x=\"110\" y=\"108\" class=\"xs mid b\">สมอง</text><line x1=\"88\" y1=\"30\" x2=\"92\" y2=\"64\" class=\"lbad w2 da\"/><line x1=\"110\" y1=\"24\" x2=\"110\" y2=\"60\" class=\"lbad w2 da\"/><line x1=\"132\" y1=\"30\" x2=\"128\" y2=\"64\" class=\"lbad w2 da\"/><path d=\"M186,56 L186,100\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"192\" y=\"84\" class=\"xs tbad b\">ทรุด</text></g><g data-s=\"3\"><path d=\"M60,62 A56,56 0 0 1 160,62\" class=\"lbad w3\"/></g><g data-s=\"4\"><ellipse cx=\"110\" cy=\"82\" rx=\"50\" ry=\"44\" class=\"bx\"/><text x=\"110\" y=\"86\" class=\"xs mid b\">สมอง</text><rect x=\"38\" y=\"306\" width=\"110\" height=\"14\" rx=\"7\" class=\"sk\"/><circle cx=\"28\" cy=\"313\" r=\"9\" class=\"bx\"/><text x=\"156\" y=\"317\" class=\"xs b tok\">นอนราบ</text></g><g data-s=\"5\"><ellipse cx=\"134\" cy=\"262\" rx=\"9\" ry=\"16\" class=\"bad\"/><text x=\"156\" y=\"300\" class=\"xs b tbad\">blood patch</text></g><g><rect x=\"236\" y=\"26\" width=\"196\" height=\"50\" rx=\"8\" class=\"wa\"/><text x=\"334.0\" y=\"44\" class=\"xs mid b\">① รูดูรา → CSF รั่ว</text><text x=\"334.0\" y=\"60\" class=\"xs mid\">เร็วกว่าที่สร้างทดแทน</text></g><g data-s=\"2\"><rect x=\"236\" y=\"84\" width=\"196\" height=\"64\" rx=\"8\" class=\"bad\"/><text x=\"334.0\" y=\"102\" class=\"xs mid b\">② ลุกนั่ง/ยืน → สมองทรุด</text><text x=\"334.0\" y=\"118\" class=\"xs mid\">ดึงเยื่อหุ้ม หลอดเลือด → ปวด</text><text x=\"334.0\" y=\"134\" class=\"xs mid\">ยืด CN VI → ภาพซ้อน · คอแข็ง</text></g><g data-s=\"3\"><rect x=\"236\" y=\"156\" width=\"196\" height=\"50\" rx=\"8\" class=\"ms\"/><text x=\"334.0\" y=\"174\" class=\"xs mid b\">③ Monro–Kellie</text><text x=\"334.0\" y=\"190\" class=\"xs mid\">หลอดเลือดดำในกะโหลกขยายแทน</text></g><g data-s=\"4\"><rect x=\"236\" y=\"214\" width=\"196\" height=\"50\" rx=\"8\" class=\"ok\"/><text x=\"334.0\" y=\"232\" class=\"xs mid b\">④ นอนราบ → แรงดึงหาย</text><text x=\"334.0\" y=\"248\" class=\"xs mid\">ปวดดีขึ้นชัด (postural)</text></g><g data-s=\"5\"><rect x=\"236\" y=\"272\" width=\"196\" height=\"50\" rx=\"8\" class=\"ac\"/><text x=\"334.0\" y=\"290\" class=\"xs mid b\">⑤ Epidural blood patch</text><text x=\"334.0\" y=\"306\" class=\"xs mid\">อุดรู + คืนความดันทันที</text></g></svg>",
+    "steps": [
+     {
+      "t": "รูที่ดูรา → CSF รั่ว",
+      "cap": "เข็มทิ้ง **รูที่เยื่อดูรา** ไว้ CSF จึงรั่วออกต่อเนื่อง **เร็วกว่าที่สร้างทดแทน** — เข็มใหญ่ (22G) และการไม่ใส่ stylet กลับก่อนถอนทำให้รูใหญ่และปิดยาก"
+     },
+     {
+      "t": "ลุกขึ้น → สมองทรุด → ปวด",
+      "cap": "CSF น้อยลง สมองเสียแรงพยุงของน้ำ → **ท่าตั้งสมองทรุดลงตามแรงโน้มถ่วง** ดึงเยื่อหุ้มสมอง หลอดเลือด และเส้นประสาทที่ไวต่อปวด → **ปวดศีรษะ** · ดึง posterior fossa → คอแข็ง · **CN VI** ถูกยืด → ภาพซ้อน"
+     },
+     {
+      "t": "Monro–Kellie: หลอดเลือดดำขยายแทน",
+      "cap": "ปริมาตรในกะโหลกต้องคงที่ CSF ที่หายไปจึงถูกแทนด้วย **หลอดเลือดดำในกะโหลกที่ขยายตัว** ซึ่งก็ก่อความปวดเช่นกัน"
+     },
+     {
+      "t": "นอนราบ → ดีขึ้นชัด",
+      "cap": "เมื่อ **นอนราบ** แรงโน้มถ่วงไม่ดึงสมองลง แรงดึงหายไป อาการจึง **ดีขึ้นชัดเจน** = postural headache มักเริ่มใน 24–48 ชม. · ถ้าปวดไม่ขึ้นกับท่า มีไข้ ซึมลง ต้องคิดถึง meningitis หรือเลือดออกแทน"
+     },
+     {
+      "t": "รักษา: epidural blood patch",
+      "cap": "เริ่มด้วยนอนพัก ดื่มน้ำ ยาแก้ปวด คาเฟอีน · ไม่ดีขึ้นให้ **epidural blood patch** — เลือดที่ฉีดเข้า epidural **กดคืนความดันทันทีและแข็งตัวอุดรูรั่ว**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-lp-04",
+   "after": "กลไก: ทำไมต้องเก็บและแปลผลแบบนี้",
+   "anim": {
+    "key": "nlp-opening",
+    "title": "Opening pressure — ทำไมต้องวัดท่านอนตะแคง",
+    "svg": "<svg viewBox=\"0 0 440 326\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ท่านอนตะแคงเข็มกับศีรษะอยู่ระดับเดียวกัน CSF ใน manometer สะท้อนความดันในกะโหลก ท่านั่งความดันรวมน้ำหนักลำน้ำ CSF เหนือเข็มจึงสูงเกินจริง ต้องวัดก่อนปล่อยน้ำ\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"110\" y=\"22\" class=\"sm mid b\">นอนตะแคงเหยียดขา</text><line x1=\"14\" y1=\"170\" x2=\"214\" y2=\"170\" class=\"lmu da\"/><circle cx=\"40\" cy=\"170\" r=\"20\" class=\"sk\"/><rect x=\"60\" y=\"164\" width=\"116\" height=\"12\" rx=\"6\" class=\"wa\"/><line x1=\"170\" y1=\"176\" x2=\"170\" y2=\"186\" class=\"ln w2\"/><line x1=\"170\" y1=\"186\" x2=\"190\" y2=\"186\" class=\"ln w2\"/><rect x=\"184\" y=\"40\" width=\"12\" height=\"146\" rx=\"4\" class=\"bx\"/><rect x=\"186\" y=\"110\" width=\"8\" height=\"76\" class=\"waf\" data-x=\"3\"/><text x=\"178\" y=\"108\" class=\"xs end b tok\" data-x=\"3\">ค่าจริง</text><text x=\"178\" y=\"122\" class=\"xs end tok\" data-x=\"3\">≈ ICP</text><text x=\"110\" y=\"200\" class=\"xs mid\">เข็มกับศีรษะระดับเดียวกัน</text><g data-s=\"2\"><text x=\"330\" y=\"22\" class=\"sm mid b\">ท่านั่ง</text><line x1=\"250\" y1=\"60\" x2=\"432\" y2=\"60\" class=\"lmu da\"/><text x=\"432\" y=\"54\" class=\"xs end mu\">ระดับศีรษะ</text><circle cx=\"280\" cy=\"60\" r=\"20\" class=\"sk\"/><rect x=\"274\" y=\"80\" width=\"12\" height=\"180\" rx=\"6\" class=\"wa\"/><line x1=\"286\" y1=\"250\" x2=\"330\" y2=\"250\" class=\"ln w2\"/><rect x=\"330\" y=\"22\" width=\"12\" height=\"236\" rx=\"4\" class=\"bx\"/><rect x=\"332\" y=\"30\" width=\"8\" height=\"228\" class=\"waf\"/><path d=\"M302,66 L302,244\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"350\" y=\"150\" class=\"xs b tbad\">+ น้ำหนักลำน้ำ</text><text x=\"350\" y=\"166\" class=\"xs tbad\">ศีรษะ → เข็ม</text><text x=\"350\" y=\"40\" class=\"xs b tbad\">สูงเกินจริง</text></g><g data-s=\"3\"><rect x=\"186\" y=\"150\" width=\"8\" height=\"36\" class=\"okf\"/><text x=\"178\" y=\"150\" class=\"xs end b tok\">closing</text><text x=\"110\" y=\"216\" class=\"xs mid b\">ปล่อย CSF ตามแรงโน้มถ่วง (≤ 40 mL) ห้ามดูด</text><text x=\"110\" y=\"232\" class=\"xs mid b tac\">→ ต้องวัด opening ก่อนปล่อย</text></g><g data-s=\"4\"><rect x=\"10\" y=\"270\" width=\"420\" height=\"50\" rx=\"8\" class=\"bx\"/><text x=\"220\" y=\"290\" class=\"xs mid b\">สูงมาก → cryptococcus (ต้องระบายซ้ำ) · IIH</text><text x=\"220\" y=\"308\" class=\"xs mid\">ปกติ 6–20 cmH₂O · ต่ำ → intracranial hypotension</text></g></svg>",
+    "steps": [
+     {
+      "t": "นอนตะแคง: เข็มกับศีรษะระดับเดียวกัน",
+      "cap": "ท่า **นอนตะแคงเหยียดขา** เข็มที่หลังกับศีรษะอยู่ระดับเดียวกัน CSF ที่ขึ้นใน manometer จึงสะท้อน **ความดันในกะโหลกจริง** (ปกติ 6–20 cmH₂O)"
+     },
+     {
+      "t": "ท่านั่ง: บวกน้ำหนักลำน้ำเข้าไป",
+      "cap": "ท่านั่ง จุดที่เข็มอยู่ **ต่ำกว่าศีรษะหลายสิบเซนติเมตร** ความดันที่อ่านได้รวม **น้ำหนักของลำน้ำ CSF เหนือเข็ม** เข้าไปด้วย → **สูงเกินจริง** แปลผลไม่ได้"
+     },
+     {
+      "t": "วัด opening ก่อนปล่อยน้ำ",
+      "cap": "ต้องวัด **opening pressure ก่อนปล่อย CSF** เพราะเมื่อปล่อยออกแล้วความดันจะลดลง (closing pressure) · ปล่อยตามแรงโน้มถ่วงได้ปลอดภัยถึง 40 mL และ **ห้ามดูด** เพราะเพิ่มความเสี่ยงเลือดออก"
+     },
+     {
+      "t": "แปลผลค่าที่วัดถูกท่า",
+      "cap": "ค่าท่านอนตะแคง **สูงมาก** → cryptococcal meningitis (ต้องเจาะระบายซ้ำ) หรือ IIH · **ต่ำ** → intracranial hypotension"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-lp-06",
+   "after": "ทำไมถึงมีอาการนี้ — papilledema และภาพผิดปกติของจอตา",
+   "anim": {
+    "key": "nlp-papilledema",
+    "title": "Papilledema — ICP เดินทางมาถึงขั้วประสาทตาอย่างไร",
+    "svg": "<svg viewBox=\"0 0 440 362\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ความดันในกะโหลกส่งตามปลอกหุ้มเส้นประสาทตาที่ต่อกับช่อง subarachnoid กดตรง lamina cribrosa ทำให้ axoplasmic flow คั่ง ขั้วประสาทตาบวม หลอดเลือดดำโป่ง และจุดบอดกว้างขึ้น\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"100\" y=\"80\" width=\"180\" height=\"60\" rx=\"12\" class=\"wa\" data-s=\"2\"/><rect x=\"14\" y=\"58\" width=\"92\" height=\"104\" rx=\"12\" class=\"wa\"/><text x=\"60\" y=\"100\" class=\"xs mid b\">ช่อง sub-</text><text x=\"60\" y=\"114\" class=\"xs mid b\">arachnoid</text><text x=\"60\" y=\"128\" class=\"xs mid b\">ในกะโหลก</text><rect x=\"100\" y=\"88\" width=\"180\" height=\"44\" rx=\"10\" class=\"wa\"/><rect x=\"100\" y=\"100\" width=\"180\" height=\"20\" rx=\"6\" class=\"sk\"/><text x=\"150\" y=\"114\" class=\"xs mid\">optic nerve</text><line x1=\"279\" y1=\"113\" x2=\"214\" y2=\"113\" class=\"lbad w2\"/><circle cx=\"340\" cy=\"110\" r=\"62\" class=\"bx\"/><line x1=\"279\" y1=\"96\" x2=\"279\" y2=\"124\" class=\"ln w3\"/><text x=\"252\" y=\"156\" class=\"xs end\">lamina cribrosa</text><text x=\"340\" y=\"114\" class=\"xs mid mu\">ลูกตา</text><text x=\"190\" y=\"76\" class=\"xs mid twa b\" data-x=\"2\">ปลอกหุ้ม = ช่อง subarachnoid</text><g data-x=\"3\"><circle r=\"2.5\" class=\"muf\"><animateMotion dur=\"3s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M106,106 L276,106\"/></circle><circle r=\"2.5\" class=\"muf\"><animateMotion dur=\"3s\" begin=\"1s\" repeatCount=\"indefinite\" path=\"M106,106 L276,106\"/></circle><circle r=\"2.5\" class=\"muf\"><animateMotion dur=\"3s\" begin=\"2s\" repeatCount=\"indefinite\" path=\"M106,106 L276,106\"/></circle><circle cx=\"200\" cy=\"106\" r=\"2.5\" class=\"muf\"/></g><g data-s=\"2\"><path d=\"M108,92 L270,92\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><path d=\"M108,128 L270,128\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\"/><text x=\"60\" y=\"44\" class=\"lg mid b tbad\">ICP ↑</text></g><g data-s=\"3\"><path d=\"M279,98 Q302,110 279,122 Z\" class=\"bad\"/><circle cx=\"262\" cy=\"106\" r=\"3\" class=\"msf\"/><circle cx=\"268\" cy=\"103\" r=\"3\" class=\"msf\"/><circle cx=\"270\" cy=\"110\" r=\"3\" class=\"msf\"/><circle cx=\"262\" cy=\"113\" r=\"3\" class=\"msf\"/><text x=\"340\" y=\"190\" class=\"xs mid b tbad\">axoplasmic flow คั่ง → disc นูน</text></g><g data-s=\"4\"><path d=\"M262,66 L262,84\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><path d=\"M262,154 L262,136\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/></g><text x=\"110\" y=\"214\" class=\"xs mid b\">ภาพจอตา (fundus)</text><circle cx=\"110\" cy=\"282\" r=\"60\" class=\"ms\"/><path d=\"M110,270 Q100,244 70,236\" class=\"lac w2\"/><path d=\"M110,270 Q124,244 152,234\" class=\"lac w2\"/><path d=\"M110,294 Q100,320 72,330\" class=\"lac w2\"/><path d=\"M110,294 Q122,322 150,332\" class=\"lac w2\"/><path d=\"M104,272 Q86,252 62,252\" class=\"lbad w2\" data-x=\"4\"/><path d=\"M116,272 Q136,252 160,254\" class=\"lbad w2\" data-x=\"4\"/><path d=\"M104,292 Q88,312 62,314\" class=\"lbad w2\" data-x=\"4\"/><path d=\"M116,292 Q134,312 160,312\" class=\"lbad w2\" data-x=\"4\"/><circle cx=\"110\" cy=\"282\" r=\"13\" class=\"bx\"/><text x=\"110\" y=\"286\" class=\"xs mid\" data-x=\"3\">disc</text><g data-s=\"3\"><circle cx=\"110\" cy=\"282\" r=\"26\" class=\"lac w2 da\"/><circle cx=\"110\" cy=\"282\" r=\"21\" class=\"ac\"/><text x=\"110\" y=\"286\" class=\"xs mid b\">บวม</text></g><g data-s=\"4\"><path d=\"M104,272 Q96,262 86,258 Q76,252 62,252\" class=\"lbad w3\"/><path d=\"M116,272 Q128,260 140,258 Q150,254 160,254\" class=\"lbad w3\"/><path d=\"M104,292 Q94,304 86,306 Q74,314 62,314\" class=\"lbad w3\"/><path d=\"M116,292 Q126,306 138,306 Q150,312 160,312\" class=\"lbad w3\"/><ellipse cx=\"80\" cy=\"266\" rx=\"7\" ry=\"2.5\" class=\"badf\" transform=\"rotate(-30 80 266)\"/><ellipse cx=\"142\" cy=\"266\" rx=\"7\" ry=\"2.5\" class=\"badf\" transform=\"rotate(30 142 266)\"/><ellipse cx=\"84\" cy=\"302\" rx=\"7\" ry=\"2.5\" class=\"badf\" transform=\"rotate(30 84 302)\"/></g><text x=\"330\" y=\"256\" class=\"xs mid b tok\" data-x=\"3\">ปกติ: ขอบ disc ชัด</text><text x=\"330\" y=\"274\" class=\"xs mid\" data-x=\"3\">เห็น venous pulsation</text><text x=\"330\" y=\"256\" class=\"xs mid b tbad\" data-s=\"3\" data-x=\"4\">disc นูน ขอบเบลอ</text><text x=\"330\" y=\"274\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">สองข้าง (ความดันส่งเท่ากัน)</text><text x=\"330\" y=\"256\" class=\"xs mid b tbad\" data-s=\"4\" data-x=\"5\">หลอดเลือดดำโป่ง คด</text><text x=\"330\" y=\"274\" class=\"xs mid\" data-s=\"4\" data-x=\"5\">venous pulsation หาย</text><text x=\"330\" y=\"292\" class=\"xs mid\" data-s=\"4\" data-x=\"5\">เลือดออกรูปเปลวไฟรอบขั้ว</text><g data-s=\"5\"><text x=\"330\" y=\"214\" class=\"xs mid b\">ลานสายตา (ตาขวา)</text><circle cx=\"330\" cy=\"282\" r=\"55\" class=\"bx\"/><circle cx=\"330\" cy=\"282\" r=\"2.5\" class=\"inkf\"/><ellipse cx=\"354\" cy=\"284\" rx=\"16\" ry=\"20\" class=\"muf\"/><ellipse cx=\"354\" cy=\"284\" rx=\"6\" ry=\"8\" class=\"lmu da\"/><text x=\"330\" y=\"354\" class=\"xs mid b\">จุดบอดกว้าง · สายตาช่วงแรกยังดี</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปลอกหุ้มเส้นประสาทตาต่อกับช่อง subarachnoid",
+      "cap": "ช่อง subarachnoid ในกะโหลก **ต่อเนื่องเป็นปลอกหุ้มเส้นประสาทตา** ไปถึงหลังลูกตา · ในใยประสาทมี **axoplasmic transport** ไหลผ่าน lamina cribrosa ตลอดเวลา · จอตาปกติขอบ disc ชัด"
+     },
+     {
+      "t": "ICP สูง → ส่งตามปลอกมาถึงตา",
+      "cap": "ก้อนในสมอง IIH หรือ venous sinus thrombosis → **ICP สูง** → ความดันส่งไปตามปลอกหุ้ม ปลอกโป่ง และกดเส้นประสาทตาตรงหลังลูกตา"
+     },
+     {
+      "t": "Axoplasmic flow คั่ง → disc บวม",
+      "cap": "แรงกดตรง **lamina cribrosa** ทำให้การขนส่งในแอกซอน **คั่ง** ใยประสาทบวม → **ขั้วประสาทตานูน ขอบเบลอ** · ความดันส่งไปเท่ากัน จึง **บวมสองข้าง** (ข้างเดียวให้คิดถึง optic neuritis/ischemic optic neuropathy)"
+     },
+     {
+      "t": "Central retinal vein ถูกกด",
+      "cap": "central retinal vein ออกจากลูกตาผ่านปลอกที่ความดันสูง → เลือดดำไหลออกไม่สะดวก → **หลอดเลือดดำโป่ง คด · spontaneous venous pulsation หาย** · แตกเป็น **เลือดออกรูปเปลวไฟ** รอบขั้ว"
+     },
+     {
+      "t": "สายตายังดี แต่จุดบอดกว้าง",
+      "cap": "macula ยังทำงาน **สายตาช่วงแรกจึงมักดี** แต่ disc ที่บวมเบียดจอตารอบขั้ว → **blind spot กว้างขึ้น** · ปล่อยนานใยประสาทตาย → ตาบอดถาวร · เจอ papilledema = หาสาเหตุ และ **ระวังก่อนเจาะหลัง**"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-acs-01",
+   "after": "กลไก: herniation ทำให้เกิดอาการอย่างไร",
+   "anim": {
+    "key": "nacs-uncal",
+    "title": "Uncal herniation — ทำไมรูม่านตาข้างเดียวขยายก่อน",
+    "svg": "<svg viewBox=\"0 0 440 342\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: ก้อนในสมองซีกขวาดัน uncus ลงผ่านขอบ tentorium กดเส้นประสาทสมองคู่ที่ 3 รูม่านตาขวาขยาย กด cerebral peduncle ทำให้อ่อนแรง แล้วบีบ midbrain จนโคม่า\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"150\" y=\"10\" class=\"xs mid mu\">ภาพตัดด้านหน้า (coronal)</text><ellipse cx=\"150\" cy=\"140\" rx=\"138\" ry=\"124\" class=\"sk\"/><ellipse cx=\"96\" cy=\"108\" rx=\"56\" ry=\"78\" class=\"bx\"/><ellipse cx=\"204\" cy=\"108\" rx=\"56\" ry=\"78\" class=\"bx\"/><path d=\"M150,30 Q172,90 153,150\" class=\"ln w2\"/><line x1=\"36\" y1=\"198\" x2=\"128\" y2=\"184\" class=\"ln w3\"/><line x1=\"172\" y1=\"184\" x2=\"264\" y2=\"198\" class=\"ln w3\"/><text x=\"252\" y=\"214\" class=\"xs mid mu\">tentorium</text><rect x=\"138\" y=\"216\" width=\"24\" height=\"54\" rx=\"8\" class=\"bx\"/><rect x=\"132\" y=\"176\" width=\"36\" height=\"46\" rx=\"10\" class=\"bx\"/><text x=\"150\" y=\"203\" class=\"xs mid b\" data-x=\"4\">MB</text><path d=\"M134,198 Q100,208 60,212\" class=\"lms w3\"/><text x=\"56\" y=\"228\" class=\"xs b tms\">CN III</text><circle cx=\"78\" cy=\"96\" r=\"28\" class=\"bad\"/><text x=\"78\" y=\"100\" class=\"xs mid b\">ก้อน</text><path d=\"M108,72 L140,72\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"96\" y=\"286\" class=\"xs mid b\">ซีกขวา (มีก้อน)</text><text x=\"204\" y=\"286\" class=\"xs mid b\">ซีกซ้าย</text><g data-s=\"2\"><path d=\"M108,176 Q126,206 142,200 Q132,186 124,170 Z\" class=\"bad\"/><g class=\"pl\"><circle cx=\"116\" cy=\"208\" r=\"9\" class=\"lbad w2\"/></g><text x=\"56\" y=\"244\" class=\"xs b tbad\">ถูกกด</text><text x=\"104\" y=\"166\" class=\"xs end b tbad\">uncus</text></g><g data-s=\"3\"><path d=\"M112,226 L130,212\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><circle cx=\"170\" cy=\"190\" r=\"7\" class=\"lms w2 da\"/></g><g data-s=\"4\"><g class=\"pl\"><rect x=\"132\" y=\"176\" width=\"36\" height=\"46\" rx=\"10\" class=\"bad\"/></g><text x=\"150\" y=\"203\" class=\"xs mid b\">ARAS</text></g><text x=\"369\" y=\"24\" class=\"xs mid b\">รูม่านตา</text><ellipse cx=\"338\" cy=\"50\" rx=\"24\" ry=\"13\" class=\"bx\"/><circle cx=\"338\" cy=\"50\" r=\"9\" class=\"sk\"/><circle cx=\"338\" cy=\"50\" r=\"3\" class=\"inkf\"/><ellipse cx=\"400\" cy=\"50\" rx=\"24\" ry=\"13\" class=\"bx\"/><circle cx=\"400\" cy=\"50\" r=\"9\" class=\"sk\"/><circle cx=\"400\" cy=\"50\" r=\"3\" class=\"inkf\"/><text x=\"338\" y=\"76\" class=\"xs mid\">ขวา</text><text x=\"400\" y=\"76\" class=\"xs mid\">ซ้าย</text><g data-s=\"2\"><circle cx=\"338\" cy=\"50\" r=\"8\" class=\"inkf\"/><text x=\"369\" y=\"96\" class=\"xs mid b tbad\">ขวาขยาย ไม่ตอบสนองแสง</text></g><g data-s=\"3\"><rect x=\"300\" y=\"108\" width=\"134\" height=\"64\" rx=\"8\" class=\"ms\"/><text x=\"367.0\" y=\"126\" class=\"xs mid b\">อ่อนแรงซีกซ้าย</text><text x=\"367.0\" y=\"142\" class=\"xs mid\">(cerebral peduncle)</text><text x=\"367.0\" y=\"158\" class=\"xs mid\">Kernohan: อ่อนแรงขวา</text></g><g data-s=\"4\"><rect x=\"300\" y=\"180\" width=\"134\" height=\"64\" rx=\"8\" class=\"bad\"/><text x=\"367.0\" y=\"198\" class=\"xs mid b\">ซึมลง → โคม่า</text><text x=\"367.0\" y=\"214\" class=\"xs mid\">ระยะท้าย Cushing:</text><text x=\"367.0\" y=\"230\" class=\"xs mid\">BP↑ HR↓ หายใจผิด</text></g><g data-s=\"5\"><rect x=\"10\" y=\"298\" width=\"420\" height=\"40\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"314\" class=\"xs mid b\">ม่านตาขยายข้างเดียว + ซึม ในผู้ป่วยที่มีก้อน = herniation</text><text x=\"220\" y=\"330\" class=\"xs mid\">ลด ICP + ปรึกษาประสาทศัลยแพทย์ทันที · อย่ารอ Cushing ครบ</text></g></svg>",
+    "steps": [
+     {
+      "t": "ก้อนในซีกขวา → mass effect",
+      "cap": "เลือดออก ก้อน หรือสมองบวมใน **ซีกขวา** เพิ่มปริมาตรจนดันเนื้อสมองข้ามเส้นกลาง — รอยโรคซีกเดียวทำให้โคม่าได้ก็ต่อเมื่อมี **mass effect จนกดก้านสมอง**"
+     },
+     {
+      "t": "Uncus กด CN III → ม่านตาขวาขยาย",
+      "cap": "uncus ของ temporal lobe เคลื่อนลงผ่านขอบ tentorium กด **CN III ข้างเดียวกัน** — ใย parasympathetic ที่ทำให้ม่านตาหด **วิ่งอยู่ผิวนอกของเส้นประสาท** จึงเสียก่อน → **ม่านตาขวาขยาย ไม่ตอบสนองแสง** ก่อนที่ตาจะกลอกผิดปกติ"
+     },
+     {
+      "t": "กด cerebral peduncle → อ่อนแรง",
+      "cap": "cerebral peduncle ข้างเดียวกันถูกกด → **อ่อนแรงซีกซ้าย** (ตรงข้าม) · ถ้าก้านสมองถูกดันไปชนขอบ tentorium อีกด้าน (**Kernohan notch**) จะอ่อนแรง **ข้างเดียวกับรอยโรค** — หลอกตำแหน่งได้"
+     },
+     {
+      "t": "Midbrain/ARAS ถูกบีบ → โคม่า",
+      "cap": "midbrain ที่มี **ARAS** ถูกบีบและขาดเลือด → **ซึมลงจนโคม่า** · ระยะท้ายก้านสมองขาดเลือด → **Cushing**: ความดันสูง ชีพจรช้า หายใจผิดปกติ"
+     },
+     {
+      "t": "สรุป: สัญญาณที่ต้องลงมือทันที",
+      "cap": "ม่านตาข้างเดียวขยายค้าง (FOUR score **B3**) + ซึมลงในผู้ป่วยที่มีก้อน = herniation จนกว่าจะพิสูจน์เป็นอื่น → **ลด ICP และปรึกษาศัลยแพทย์ทันที** อย่ารอให้ Cushing ครบสามอย่าง"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-acs-07",
+   "after": "4) Vestibulo-ocular reflex — \"Caloric testing\"",
+   "anim": {
+    "key": "nacs-caloric",
+    "title": "Cold caloric — หยอดน้ำเย็นหูขวา แล้วตาไปทางไหน",
+    "svg": "<svg viewBox=\"0 0 440 340\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: หยอดน้ำเย็นหูขวา endolymph ไหลวน สัญญาณผ่าน vestibular nucleus MLF ไปนิวเคลียส CN VI และ III ตาเบนช้าไปทางหูเย็น คนรู้สึกตัวมี fast phase ไปฝั่งตรงข้าม คนโคม่าที่ก้านสมองดีตาเบนค้าง\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"110\" y=\"12\" class=\"xs mid mu\">มองจากด้านบน</text><ellipse cx=\"30\" cy=\"124\" rx=\"7\" ry=\"15\" class=\"sk\"/><ellipse cx=\"190\" cy=\"124\" rx=\"7\" ry=\"15\" class=\"sk\"/><circle cx=\"110\" cy=\"124\" r=\"76\" class=\"bx\"/><path d=\"M100,52 L110,32 L120,52 Z\" class=\"bx\"/><ellipse cx=\"84\" cy=\"74\" rx=\"15\" ry=\"9\" class=\"bx\"/><ellipse cx=\"136\" cy=\"74\" rx=\"15\" ry=\"9\" class=\"bx\"/><text x=\"26\" y=\"154\" class=\"xs mid\">ซ้าย</text><text x=\"194\" y=\"154\" class=\"xs mid b\">ขวา</text><path d=\"M156,128 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0\" class=\"lwa w2\"/><text x=\"150\" y=\"166\" class=\"xs mid twa\">lateral canal</text><path d=\"M252,66 L200,110\" class=\"lwa w5\"/><g><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1s\" begin=\"0s\" repeatCount=\"indefinite\" path=\"M248,70 L202,108\"/></circle><circle r=\"3\" class=\"waf\"><animateMotion dur=\"1s\" begin=\"0.5s\" repeatCount=\"indefinite\" path=\"M248,70 L202,108\"/></circle></g><text x=\"236\" y=\"54\" class=\"xs mid b twa\">น้ำเย็น</text><g data-x=\"3\"><circle cx=\"84\" cy=\"74\" r=\"4.5\" class=\"inkf\"/><circle cx=\"136\" cy=\"74\" r=\"4.5\" class=\"inkf\"/></g><g data-s=\"3\" data-x=\"4\"><circle cx=\"91\" cy=\"74\" r=\"4.5\" class=\"inkf\"/><circle cx=\"143\" cy=\"74\" r=\"4.5\" class=\"inkf\"/><path d=\"M98,96 L128,96\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\"/><text x=\"112\" y=\"110\" class=\"xs mid tbad b\">slow →</text></g><g data-s=\"4\" data-x=\"5\"><circle cx=\"91\" cy=\"74\" r=\"4.5\" class=\"inkf\"><animate attributeName=\"cx\" values=\"91;84;91\" keyTimes=\"0;0.15;1\" dur=\"1.1s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><circle cx=\"143\" cy=\"74\" r=\"4.5\" class=\"inkf\"><animate attributeName=\"cx\" values=\"143;136;143\" keyTimes=\"0;0.15;1\" dur=\"1.1s\" begin=\"0s\" repeatCount=\"indefinite\"/></circle><path d=\"M128,96 L98,96\" class=\"lok w2\" marker-end=\"url(#ah-ok)\"/><text x=\"112\" y=\"110\" class=\"xs mid tok b\">← fast</text></g><g data-s=\"5\"><circle cx=\"91\" cy=\"74\" r=\"4.5\" class=\"inkf\"/><circle cx=\"143\" cy=\"74\" r=\"4.5\" class=\"inkf\"/><text x=\"112\" y=\"110\" class=\"xs mid tbad b\">เบนค้าง →</text></g><g data-s=\"2\"><path d=\"M156,128 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0\" class=\"lwa w3 fl\"/></g><text x=\"352\" y=\"50\" class=\"xs mid\" data-x=\"2\">ตรวจหู: แก้วหูต้องไม่ทะลุ</text><text x=\"352\" y=\"68\" class=\"xs mid\" data-x=\"2\">ยกศีรษะ 30° → canal ตั้ง</text><text x=\"352\" y=\"86\" class=\"xs mid\" data-x=\"2\">หยอดน้ำเย็นจัด 10 mL</text><text x=\"352\" y=\"50\" class=\"xs mid\" data-s=\"2\" data-x=\"3\">endolymph ไหลวน (convection)</text><text x=\"352\" y=\"68\" class=\"xs mid\" data-s=\"2\" data-x=\"3\">vestibular ขวายิงลดลง</text><text x=\"352\" y=\"86\" class=\"xs mid\" data-s=\"2\" data-x=\"3\">→ ฝั่งซ้ายเด่นกว่า</text><text x=\"352\" y=\"50\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">ตาสองข้างเบนช้า ๆ</text><text x=\"352\" y=\"68\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">ไปทางหูที่หยอด</text><text x=\"352\" y=\"86\" class=\"xs mid\" data-s=\"3\" data-x=\"4\">(slow phase จากก้านสมอง)</text><text x=\"352\" y=\"50\" class=\"xs mid\" data-s=\"4\" data-x=\"5\">รู้สึกตัว: cortex ดึงกลับเร็ว</text><text x=\"352\" y=\"68\" class=\"xs mid\" data-s=\"4\" data-x=\"5\">fast phase → ฝั่งตรงข้าม</text><text x=\"352\" y=\"86\" class=\"xs mid\" data-s=\"4\" data-x=\"5\">= nystagmus · COWS</text><text x=\"352\" y=\"50\" class=\"xs mid\" data-s=\"5\">โคม่า ก้านสมองดี:</text><text x=\"352\" y=\"68\" class=\"xs mid\" data-s=\"5\">ตาเบนค้างไปหูเย็น</text><text x=\"352\" y=\"86\" class=\"xs mid\" data-s=\"5\">ไม่มี fast phase</text><text x=\"220\" y=\"214\" class=\"xs mid mu\">ทางเดิน VOR — ตรวจก้านสมองตั้งแต่ medulla ถึง midbrain</text><rect x=\"8\" y=\"224\" width=\"80\" height=\"32\" rx=\"6\" class=\"wa\"/><text x=\"48.0\" y=\"244\" class=\"xs mid b\">หูขวา</text><rect x=\"98\" y=\"224\" width=\"92\" height=\"32\" rx=\"6\" class=\"sk\"/><text x=\"144.0\" y=\"244\" class=\"xs mid b\">VN (medulla)</text><rect x=\"200\" y=\"224\" width=\"60\" height=\"32\" rx=\"6\" class=\"sk\"/><text x=\"230.0\" y=\"244\" class=\"xs mid b\">MLF</text><rect x=\"270\" y=\"224\" width=\"92\" height=\"32\" rx=\"6\" class=\"sk\"/><text x=\"316.0\" y=\"244\" class=\"xs mid b\">CN VI / III</text><rect x=\"372\" y=\"224\" width=\"60\" height=\"32\" rx=\"6\" class=\"bx\"/><text x=\"402.0\" y=\"244\" class=\"xs mid b\">ตา</text><line x1=\"88\" y1=\"240\" x2=\"98\" y2=\"240\" class=\"lmu w2\"/><line x1=\"190\" y1=\"240\" x2=\"200\" y2=\"240\" class=\"lmu w2\"/><line x1=\"260\" y1=\"240\" x2=\"270\" y2=\"240\" class=\"lmu w2\"/><line x1=\"362\" y1=\"240\" x2=\"372\" y2=\"240\" class=\"lmu w2\"/><g data-s=\"3\"><path d=\"M86,240 L98,240\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><path d=\"M188,240 L200,240\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><path d=\"M258,240 L270,240\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/><path d=\"M360,240 L372,240\" class=\"lac w3 fl\" marker-end=\"url(#ah-ac)\"/></g><g data-s=\"5\"><g><rect x=\"8\" y=\"270\" width=\"138\" height=\"62\" rx=\"8\" class=\"ok\"/><text x=\"77.0\" y=\"288\" class=\"xs mid b\">รู้สึกตัว</text><text x=\"77.0\" y=\"304\" class=\"xs mid\">nystagmus</text><text x=\"77.0\" y=\"320\" class=\"xs mid\">fast → ฝั่งตรงข้าม</text></g><g><rect x=\"151\" y=\"270\" width=\"138\" height=\"62\" rx=\"8\" class=\"ms\"/><text x=\"220.0\" y=\"288\" class=\"xs mid b\">โคม่า ก้านสมองดี</text><text x=\"220.0\" y=\"304\" class=\"xs mid\">เบนค้างไปหูเย็น</text><text x=\"220.0\" y=\"320\" class=\"xs mid\">ไม่มี fast phase</text></g><g><rect x=\"294\" y=\"270\" width=\"138\" height=\"62\" rx=\"8\" class=\"bad\"/><text x=\"363.0\" y=\"288\" class=\"xs mid b\">ไม่ขยับเลย</text><text x=\"363.0\" y=\"304\" class=\"xs mid\">ก้านสมองเสีย</text><text x=\"363.0\" y=\"320\" class=\"xs mid\">หรือยากดลึก</text></g></g></svg>",
+    "steps": [
+     {
+      "t": "เตรียม: ตรวจหู ยกศีรษะ 30°",
+      "cap": "ตรวจให้แน่ใจว่า **รูหูโล่งและแก้วหูไม่ทะลุ** · ยกศีรษะ **30°** ให้ lateral semicircular canal อยู่ในแนวตั้ง (กระตุ้นได้แรงที่สุด) · หยอด **น้ำเย็นจัด 10 mL** ช้า ๆ เข้าหูขวา"
+     },
+     {
+      "t": "น้ำเย็น → endolymph ไหลวน",
+      "cap": "ความเย็นทำให้ endolymph ใน canal ไหลวนแบบ convection → **vestibular ฝั่งขวายิงลดลง** สมองจึงรับรู้เหมือนฝั่งซ้ายเด่นกว่า"
+     },
+     {
+      "t": "VOR → ตาเบนช้าไปทางหูเย็น",
+      "cap": "สัญญาณผ่าน **vestibular nuclei (medulla) → MLF → นิวเคลียส CN VI และ III (pons–midbrain)** → ตาสองข้าง **เบนช้า ๆ ไปทางหูที่หยอด** (slow phase) — ต้องอาศัยก้านสมองที่ต่อกันครบ"
+     },
+     {
+      "t": "รู้สึกตัว: fast phase = COWS",
+      "cap": "ถ้าผู้ป่วย **รู้สึกตัว** เปลือกสมองดึงตากลับเร็วไปฝั่งตรงข้าม (fast phase) เกิด **nystagmus ตีไปทางซ้าย** — **COWS: Cold Opposite, Warm Same** หมายถึงทิศของ fast phase"
+     },
+     {
+      "t": "โคม่า: แปลผลสามแบบ",
+      "cap": "**โคม่าแต่ก้านสมองดี** → ตาเบนค้างไปทางหูเย็น **ไม่มี fast phase** (ต้องใช้ cortex) · **ไม่ขยับเลยทั้งสองข้าง** → ก้านสมองเสียหน้าที่หรือถูกยากดลึก · ตาไม่ประสานกัน → รอยโรค MLF หรือ CN III/VI"
+     }
+    ]
+   }
+  },
+  {
+   "sec": "neuro-acs-14",
+   "after": "กลไก: โรคทางกายทำให้สมองสับสนได้อย่างไร",
+   "anim": {
+    "key": "nacs-delirium",
+    "title": "Delirium — หลายเหตุ ไปบรรจบที่เครือข่ายสมาธิเดียวกัน",
+    "svg": "<svg viewBox=\"0 0 440 330\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: การติดเชื้อ ขาดออกซิเจนหรือน้ำตาล ยา anticholinergic และภาวะถอนสุรา ต่างไปกระทบเครือข่ายสมาธิที่ใช้ acetylcholine ทำให้ ACh ลดลง dopamine เด่น เกิด delirium แบบซึมหรือกระสับกระส่าย\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"220\" cy=\"150\" r=\"64\" class=\"bx\"/><text x=\"220\" y=\"118\" class=\"sm mid b\">เครือข่ายสมาธิ</text><text x=\"220\" y=\"134\" class=\"xs mid\">PFC–thalamus–ARAS</text><line x1=\"190\" y1=\"194\" x2=\"250\" y2=\"194\" class=\"ln w2\"/><rect x=\"196\" y=\"158\" width=\"18\" height=\"36\" class=\"okf\" data-x=\"3\"/><rect x=\"226\" y=\"180\" width=\"18\" height=\"14\" class=\"msf\" data-x=\"3\"/><g data-s=\"3\"><rect x=\"196\" y=\"184\" width=\"18\" height=\"10\" class=\"okf\"/><rect x=\"226\" y=\"154\" width=\"18\" height=\"40\" class=\"badf\"/></g><text x=\"205\" y=\"206\" class=\"xs mid b\">ACh</text><text x=\"235\" y=\"206\" class=\"xs mid b\">DA</text><text x=\"220\" y=\"236\" class=\"xs mid b tok\" data-x=\"2\">ปกติ: ACh เด่น สมดุลกับ dopamine</text><g data-s=\"2\"><rect x=\"8\" y=\"34\" width=\"122\" height=\"46\" rx=\"8\" class=\"ms\"/><text x=\"69.0\" y=\"52\" class=\"xs mid b\">ติดเชื้อ (UTI, ปอด)</text><text x=\"69.0\" y=\"68\" class=\"xs mid\">cytokine → microglia</text></g><path d=\"M130,64 L166,112\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\" data-s=\"2\"/><g data-s=\"3\"><rect x=\"8\" y=\"92\" width=\"122\" height=\"46\" rx=\"8\" class=\"ms\"/><text x=\"69.0\" y=\"110\" class=\"xs mid b\">ขาด O₂ / น้ำตาล</text><text x=\"69.0\" y=\"126\" class=\"xs mid\">acetyl-CoA ↓ → ACh ↓</text></g><path d=\"M130,118 L156,134\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\" data-s=\"3\"/><g data-s=\"3\"><rect x=\"8\" y=\"150\" width=\"122\" height=\"46\" rx=\"8\" class=\"ms\"/><text x=\"69.0\" y=\"168\" class=\"xs mid b\">ยา anticholinergic</text><text x=\"69.0\" y=\"184\" class=\"xs mid\">diphenhydramine, TCA</text></g><path d=\"M130,170 L156,162\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\" data-s=\"3\"/><g data-s=\"4\"><rect x=\"8\" y=\"208\" width=\"122\" height=\"46\" rx=\"8\" class=\"ms\"/><text x=\"69.0\" y=\"226\" class=\"xs mid b\">ถอนสุรา / benzo</text><text x=\"69.0\" y=\"242\" class=\"xs mid\">GABA ↓ ฉับพลัน</text></g><path d=\"M130,222 L166,190\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\" data-s=\"4\"/><g data-s=\"2\"><rect x=\"310\" y=\"40\" width=\"122\" height=\"46\" rx=\"8\" class=\"wa\"/><text x=\"371.0\" y=\"58\" class=\"xs mid b\">Hypoactive</text><text x=\"371.0\" y=\"74\" class=\"xs mid\">ซึม เฉื่อย พูดน้อย</text></g><path d=\"M274,116 L308,74\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\" data-s=\"2\"/><g data-s=\"3\"><rect x=\"310\" y=\"128\" width=\"122\" height=\"46\" rx=\"8\" class=\"bad\"/><text x=\"371.0\" y=\"146\" class=\"xs mid b\">Hyperactive</text><text x=\"371.0\" y=\"162\" class=\"xs mid\">กระสับกระส่าย หลอน</text></g><path d=\"M284,150 L308,150\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\" data-s=\"3\"/><g data-s=\"5\"><rect x=\"310\" y=\"208\" width=\"122\" height=\"46\" rx=\"8\" class=\"sk\"/><text x=\"371.0\" y=\"226\" class=\"xs mid b\">สมาธิเสีย · ผันผวน</text><text x=\"371.0\" y=\"242\" class=\"xs mid\">อาการคล้ายกันทุกเหตุ</text></g><path d=\"M270,186 L308,222\" class=\"lmu w2 fl\" marker-end=\"url(#ah-mu)\" data-s=\"5\"/><g data-s=\"5\"><rect x=\"8\" y=\"270\" width=\"424\" height=\"52\" rx=\"8\" class=\"ac\"/><text x=\"220\" y=\"290\" class=\"sm mid b\">ต้องหาเหตุเสมอ — I WATCH DEATH · ทบทวนรายการยา</text><text x=\"220\" y=\"310\" class=\"xs mid\">ยาต้าน dopamine ลดอาการแต่ไม่แก้เหตุ · ผู้สูงอายุ/สมองเสื่อม = reserve ต่ำ</text></g></svg>",
+    "steps": [
+     {
+      "t": "ปกติ: เครือข่ายสมาธิใช้ ACh",
+      "cap": "สมาธิและการตื่นรู้อาศัยเครือข่าย **prefrontal · thalamus · ARAS** ที่ใช้ **acetylcholine (ACh)** เป็นหลัก สมดุลกับ dopamine"
+     },
+     {
+      "t": "ติดเชื้อ → cytokine → hypoactive",
+      "cap": "cytokine (**IL-1, IL-6, TNF**) จากการติดเชื้อส่งสัญญาณผ่าน BBB กระตุ้น **microglia** ให้อักเสบ กดการทำงานของเซลล์ประสาท → **ซึม เฉื่อย (hypoactive)** — ผู้สูงอายุที่ติดเชื้อมักเป็นแบบนี้จึงถูกมองข้าม"
+     },
+     {
+      "t": "ACh ↓ + dopamine เด่น → hyperactive",
+      "cap": "ขาด O₂ หรือน้ำตาล (การสร้าง ACh ต้องใช้ **acetyl-CoA** จากการเผาผลาญกลูโคส) และ **ยา anticholinergic** ล้วนลด ACh → **dopamine เด่นเกิน** → สมาธิเสีย กระสับกระส่าย ประสาทหลอน **(hyperactive)**"
+     },
+     {
+      "t": "ถอนสุรา/benzo → GABA ลดฉับพลัน",
+      "cap": "ภาวะถอนสุราหรือ benzodiazepine ทำให้ **GABA ลดฉับพลัน** สมองถูกกระตุ้นเกิน — กรณีนี้ benzodiazepine คือการรักษา แต่ใน delirium ทั่วไปมันทำให้แย่ลง"
+     },
+     {
+      "t": "ทางสุดท้ายร่วมกัน → ต้องหาเหตุ",
+      "cap": "สาเหตุต่างกันแต่ไปบรรจบที่เครือข่ายเดียวกัน อาการจึง **หน้าตาคล้ายกันและผันผวน** → ต้องไล่หาเหตุด้วย **I WATCH DEATH** และทบทวนยาเสมอ · ยาต้าน dopamine ลดอาการแต่ **ไม่ได้แก้เหตุ**"
+     }
+    ]
+   }
+  }
+ ],
+ "mnem": [
+  {
+   "sec": "neuro-07-05",
+   "name": "BE FAST",
+   "what": "อาการเตือน stroke สำหรับประชาชนและบุคลากร (FAST เดิม + B, E เพื่อจับ posterior circulation)",
+   "lines": [
+    [
+     "B",
+     "**B**alance — เดินเซ ทรงตัวไม่ได้ บ้านหมุน"
+    ],
+    [
+     "E",
+     "**E**yes — ตามองไม่เห็นข้างหนึ่ง ภาพขาดครึ่งซีก ภาพซ้อน"
+    ],
+    [
+     "F",
+     "**F**ace — หน้าเบี้ยว ยิ้มแล้วสองข้างไม่เท่ากัน"
+    ],
+    [
+     "A",
+     "**A**rm — แขนหรือขาข้างหนึ่งอ่อนแรง"
+    ],
+    [
+     "S",
+     "**S**peech — พูดไม่ชัด พูดไม่ออก ไม่เข้าใจภาษา"
+    ],
+    [
+     "T",
+     "**T**ime — จดเวลาเริ่มอาการและเรียกรถพยาบาลทันที **แม้อาการหายแล้ว** (อาจเป็น TIA)"
+    ]
+   ],
+   "note": "เวลาเริ่มอาการที่ใช้ตัดสินใจรักษาคือ last seen well เสมอ ไม่ใช่เวลาที่พบว่าผิดปกติ",
+   "src": "Aroor S, et al. Stroke 2017 (BE-FAST) · ใช้ในแคมเปญ stroke awareness ทั่วไปและตรงกับสไลด์"
+  },
+  {
+   "sec": "neuro-07-03",
+   "name": "5 D's ของ posterior circulation stroke",
+   "what": "อาการที่ชี้ว่าเป็น stroke ของก้านสมอง/สมองน้อย ไม่ใช่โรคหูชั้นใน",
+   "lines": [
+    [
+     "D",
+     "**D**izziness — เวียนศีรษะบ้านหมุน"
+    ],
+    [
+     "D",
+     "**D**iplopia — เห็นภาพซ้อน"
+    ],
+    [
+     "D",
+     "**D**ysarthria — พูดไม่ชัด"
+    ],
+    [
+     "D",
+     "**D**ysphagia — กลืนลำบาก"
+    ],
+    [
+     "D",
+     "**D**ystaxia — เดินเซ ทำงานประสานกันไม่ได้"
+    ]
+   ],
+   "note": "รายการ D ต่างกันเล็กน้อยในแต่ละแหล่ง · สไลด์เพิ่ม ระดับความรู้สึกตัวลดลง และ nystagmus ด้วย · เวียนศีรษะ + อาการ D อื่นร่วม = คิดถึง stroke ก่อนโรคหูชั้นใน",
+   "src": "หลักจำที่ใช้ทั่วไปในแหล่งเรียน emergency medicine/neurology (เช่น WikEM — Cerebellar stroke)"
+  },
+  {
+   "sec": "neuro-07-03",
+   "name": "Rule of 4 of the brainstem",
+   "what": "ระบุตำแหน่งรอยโรคก้านสมองและอธิบายอาการไขว้ (CN ข้างเดียวกัน + แขนขาตรงข้าม)",
+   "lines": [
+    [
+     "4 M (ตรงกลาง)",
+     "**M**otor pathway (corticospinal) · **M**edial lemniscus · **M**LF · **M**otor nucleus ของ CN III, IV, VI, XII"
+    ],
+    [
+     "4 S (ด้านข้าง)",
+     "**S**pinocerebellar · **S**pinothalamic · **S**ensory nucleus ของ CN V · **S**ympathetic"
+    ],
+    [
+     "4 / 4 / 4",
+     "CN IX–XII อยู่ medulla · CN V–VIII อยู่ pons · CN III–IV อยู่ midbrain (I–II อยู่เหนือก้านสมอง)"
+    ],
+    [
+     "÷ 12",
+     "motor nucleus ที่อยู่แนวกลางคือ CN ที่หาร 12 ลงตัว: **III, IV, VI, XII**"
+    ]
+   ],
+   "note": "ใช้คร่าว ๆ เพื่อแปลอาการไขว้ตามสไลด์ (เช่น medial = อ่อนแรง/CN XII · lateral = ชาหน้าข้างเดียวกัน + ปวด-ร้อนตัวด้านตรงข้าม + Horner) ไม่ใช่กายวิภาคละเอียด",
+   "src": "Gates P. The rule of 4 of the brainstem. Practical Neurology 2005"
+  },
+  {
+   "sec": "neuro-ep-02",
+   "name": "3 P's ของ syncope",
+   "what": "ประวัติที่ชี้ว่าเป็นเป็นลมธรรมดา (vasovagal) ไม่ใช่ชัก",
+   "lines": [
+    [
+     "P",
+     "**P**osture — ยืนนาน/ลุกเร็ว และดีขึ้นเมื่อนอนราบ"
+    ],
+    [
+     "P",
+     "**P**rovoking factors — ร้อน เจ็บ เห็นเลือด หัตถการ"
+    ],
+    [
+     "P",
+     "**P**rodrome — หน้ามืด ตาลาย หูอื้อ เหงื่อแตก คลื่นไส้ ก่อนล้ม"
+    ]
+   ],
+   "note": "ครบ 3 P + กระตุกสั้น < 15 วินาที + รู้ตัวเร็วไม่มี post-ictal = convulsive syncope · หมดสติขณะออกแรง/นอนราบหรือมีเจ็บอก ต้องคิดถึง cardiac syncope · ปัสสาวะราดแยกอะไรไม่ได้",
+   "src": "แนวทาง TLoC ของสหราชอาณาจักร (NICE CG109 / DVLA) และตำราอายุรศาสตร์ทั่วไป"
+  },
+  {
+   "sec": "neuro-ep-04",
+   "name": "Stroke มองหา · Seizure มองหนี",
+   "what": "ทิศที่ตาเบนบอกตำแหน่งรอยโรคในซีกสมอง",
+   "lines": [
+    [
+     "Destructive (stroke)",
+     "ตา**มองไปทางรอยโรค** = หนีจากแขนขาที่อ่อนแรง"
+    ],
+    [
+     "Irritative (ชัก)",
+     "ตา**มองหนี focus** = ไปทางแขนขาที่กระตุก"
+    ],
+    [
+     "ยกเว้น pons",
+     "รอยโรคที่ pons ตา**มองไปทางด้านที่อ่อนแรง**"
+    ]
+   ],
+   "note": "กลไก: frontal eye field แต่ละซีกดันตาไปด้านตรงข้าม — เสีย = อีกซีกดันตามาหารอยโรค · ชัก = ซีกนั้นถูกกระตุ้นจึงดันตาหนี",
+   "src": "หลักคลาสสิกในตำราประสาทวิทยา (Adams & Victor's Principles of Neurology)"
+  },
+  {
+   "sec": "neuro-ep-05",
+   "name": "Sucks to have Silent Seizures",
+   "what": "ethosuximide (etho**sux**imide) คือยาสำหรับ absence seizure",
+   "lines": [
+    [
+     "Sux",
+     "Etho**sux**imide — ปิด **T-type Ca²⁺** ใน thalamus"
+    ],
+    [
+     "Silent Seizures",
+     "**absence** — เหม่อค้างเงียบ ๆ 3 Hz spike-and-wave"
+    ]
+   ],
+   "note": "VPA ก็คุม absence ได้และครอบคลุม GTC ด้วย · ethosuximide ไม่คุม GTC · CBZ/PHT/OXC ทำให้ absence และ myoclonic แย่ลง",
+   "src": "First Aid for the USMLE Step 1 (Pharmacology — Epilepsy drugs)"
+  },
+  {
+   "sec": "neuro-cns-02",
+   "name": "Classic triad + กฎ 2 ใน 4",
+   "what": "อาการของ bacterial meningitis และเหตุผลที่ triad ไม่ครบไม่ตัดโรค",
+   "lines": [
+    [
+     "Triad",
+     "**ไข้ + คอแข็ง + ระดับการรู้ตัวเปลี่ยน** — ครบทั้งสามพบเพียงราวครึ่งหนึ่ง (~44%)"
+    ],
+    [
+     "2 ใน 4",
+     "ไข้ · ปวดศีรษะ · คอแข็ง · รู้ตัวเปลี่ยน — **~95% มีอย่างน้อย 2 ข้อ**"
+    ]
+   ],
+   "note": "สไลด์ใช้สามอาการหลักเป็น ไข้ ปวดศีรษะ คอแข็ง และระบุว่ารู้ตัวเปลี่ยนพบราว 40% · ผู้สูงอายุ ภูมิต่ำ หรือได้ยามาก่อน อาการไม่ครบได้",
+   "src": "van de Beek D, et al. NEJM 2004 (Clinical features and prognostic factors in adults with bacterial meningitis)"
+  },
+  {
+   "sec": "neuro-cns-05",
+   "name": "RIPE",
+   "what": "ยาต้านวัณโรคสี่ตัวในระยะเข้มข้น (IRZE ในสไลด์)",
+   "lines": [
+    [
+     "R",
+     "**R**ifampin"
+    ],
+    [
+     "I",
+     "**I**soniazid"
+    ],
+    [
+     "P",
+     "**P**yrazinamide"
+    ],
+    [
+     "E",
+     "**E**thambutol"
+    ]
+   ],
+   "note": "TB meningitis ใช้ 2 IRZE / 10 IR รวม 12 เดือน (ยาวกว่าวัณโรคปอด) + dexamethasone ลดขนาดใน 6–8 สัปดาห์",
+   "src": "First Aid for the USMLE Step 1 (Antimycobacterial therapy) · ใช้กันทั่วไป"
+  },
+  {
+   "sec": "neuro-cns-07",
+   "name": "MAGIC DR",
+   "what": "differential ของรอยโรค ring-enhancing ในสมอง",
+   "lines": [
+    [
+     "M",
+     "**M**etastasis"
+    ],
+    [
+     "A",
+     "**A**bscess"
+    ],
+    [
+     "G",
+     "**G**lioblastoma"
+    ],
+    [
+     "I",
+     "**I**nfarct (subacute)"
+    ],
+    [
+     "C",
+     "**C**ontusion"
+    ],
+    [
+     "D",
+     "**D**emyelinating disease (tumefactive)"
+    ],
+    [
+     "R",
+     "**R**adiation necrosis / **R**esolving hematoma"
+    ]
+   ],
+   "note": "ฝีแยกจากเนื้องอกด้วย **ขอบบางเรียบ + ตรงกลาง restrict diffusion** · toxoplasmosis มักหลายก้อนที่ basal ganglia",
+   "src": "หลักจำทางรังสีวิทยาที่ใช้ทั่วไป (Radiopaedia)"
+  },
+  {
+   "sec": "neuro-cns-09",
+   "name": "Triad ของ spinal epidural abscess",
+   "what": "สามอาการที่ต้องคิดถึง spinal epidural abscess",
+   "lines": [
+    [
+     "ปวด",
+     "**ปวดหลัง** เคาะกระดูกสันหลังเจ็บ (พบบ่อยที่สุด)"
+    ],
+    [
+     "ไข้",
+     "**ไข้**"
+    ],
+    [
+     "ประสาท",
+     "**อาการทางระบบประสาท** — ปวดร้าว อ่อนแรง ชา ปัสสาวะ/อุจจาระผิดปกติ"
+    ]
+   ],
+   "note": "ครบสามข้อพบเพียงส่วนน้อย อย่ารอให้ครบ · ปวดหลัง + ไข้ ในผู้มีปัจจัยเสี่ยง ส่ง MRI spine with contrast",
+   "src": "Darouiche RO. NEJM 2006 (Spinal epidural abscess) · ตำรามาตรฐาน"
+  },
+  {
+   "sec": "neuro-lp-02",
+   "name": "Tuffier's line = L4",
+   "what": "หาระดับที่เจาะหลังข้างเตียง",
+   "lines": [
+    [
+     "Iliac crest",
+     "เส้นเชื่อมยอด iliac crest สองข้าง ผ่าน **L4 หรือช่อง L4–L5**"
+    ],
+    [
+     "L1–L2",
+     "ไขสันหลังผู้ใหญ่สิ้นสุดที่ระดับนี้ ต่ำกว่านั้นมีแต่ cauda equina"
+    ],
+    [
+     "L3–L4 / L4–L5",
+     "ช่องที่เจาะ — เข็มเบียดรากประสาทออกได้โดยไม่โดนไขสันหลัง"
+    ]
+   ],
+   "src": "landmark มาตรฐานในตำรากายวิภาคและหัตถการเจาะหลัง · ตรงกับเนื้อหาคาบ"
+  },
+  {
+   "sec": "neuro-lp-05",
+   "name": "Neither the patient nor the doctor sees anything",
+   "what": "แยก retrobulbar optic neuritis จาก papilledema",
+   "lines": [
+    [
+     "Retrobulbar neuritis",
+     "ผู้ป่วย**มองไม่เห็น** (ตามัว) และแพทย์**ไม่เห็นอะไร** (disc ปกติ) · มี RAPD"
+    ],
+    [
+     "Papilledema",
+     "แพทย์**เห็น disc บวม** แต่ผู้ป่วย**ยังมองเห็นดี**ในระยะแรก (แค่จุดบอดกว้าง)"
+    ]
+   ],
+   "note": "ใช้กับ optic neuritis ชนิด retrobulbar (พบบ่อยในผู้ใหญ่) · ชนิด papillitis เห็น disc บวมได้ แต่ตามัวตั้งแต่แรกและมักเป็นข้างเดียว",
+   "src": "วลีคลาสสิกทางจักษุวิทยา (Duke-Elder) · ใช้ทั่วไปในตำรา neuro-ophthalmology"
+  },
+  {
+   "sec": "neuro-lp-06",
+   "name": "ขวา–ขวา–ขวา",
+   "what": "ท่าใช้ direct ophthalmoscope",
+   "lines": [
+    [
+     "ขวา",
+     "มือ**ขวา**ถือ ophthalmoscope"
+    ],
+    [
+     "ขวา",
+     "ใช้ตา**ขวา**ของผู้ตรวจ"
+    ],
+    [
+     "ขวา",
+     "ส่องตา**ขวา**ของผู้ป่วย — ตาซ้ายกลับเป็นซ้ายทั้งหมด"
+    ]
+   ],
+   "note": "ทำในห้องมืด ให้ผู้ป่วยมองจุดไกล หา red reflex ก่อนแล้วเดินตามหลอดเลือดไปหา disc",
+   "src": "แนวการตรวจ fundoscopy มาตรฐานใน OSCE guide / Bates' Guide to Physical Examination"
+  },
+  {
+   "sec": "neuro-acs-02",
+   "name": "AVPU",
+   "what": "ประเมินระดับความรู้สึกตัวเร็วที่สุดในนาทีแรก",
+   "lines": [
+    [
+     "A",
+     "**A**lert — ตื่นรู้ตัวดี (≈ GCS 15)"
+    ],
+    [
+     "V",
+     "**V**oice — ตอบสนองต่อเสียงเรียก (≈ GCS 12–13)"
+    ],
+    [
+     "P",
+     "**P**ain — ตอบสนองเฉพาะต่อความเจ็บ (≈ GCS 8)"
+    ],
+    [
+     "U",
+     "**U**nresponsive — ไม่ตอบสนองเลย (≈ GCS 3)"
+    ]
+   ],
+   "note": "P หรือแย่กว่า = พิจารณาป้องกันทางเดินหายใจ",
+   "src": "เครื่องมือมาตรฐานใน ATLS/ตำรา emergency medicine · ตรงกับสไลด์"
+  },
+  {
+   "sec": "neuro-acs-05",
+   "name": "DON'T (coma cocktail)",
+   "what": "สิ่งที่ต้องคิดถึงทันทีในผู้ป่วยซึม/โคม่าที่ยังไม่ทราบสาเหตุ",
+   "lines": [
+    [
+     "D",
+     "**D**extrose — เมื่อน้ำตาลต่ำ (< 70 mg/dL ให้ 50% dextrose 50 mL)"
+    ],
+    [
+     "O",
+     "**O**xygen — เป้า SpO₂ 94–98%"
+    ],
+    [
+     "N",
+     "**N**aloxone — เมื่อสงสัย opioid"
+    ],
+    [
+     "T",
+     "**T**hiamine — ในผู้ดื่มสุรา/ขาดอาหาร"
+    ]
+   ],
+   "note": "ตัวอักษรไม่ใช่ลำดับการให้ — ให้ thiamine **ก่อนหรือพร้อม** กลูโคส เพื่อไม่กระตุ้น Wernicke และเจาะน้ำตาลก่อนให้ dextrose เสมอ",
+   "src": "หลักจำที่ใช้ทั่วไปในตำรา emergency medicine"
+  },
+  {
+   "sec": "neuro-acs-07",
+   "name": "COWS",
+   "what": "ทิศของ fast phase ใน caloric test (ผู้ป่วยรู้สึกตัว)",
+   "lines": [
+    [
+     "CO",
+     "**C**old → fast phase ไปฝั่ง **O**pposite"
+    ],
+    [
+     "WS",
+     "**W**arm → fast phase ไปฝั่ง **S**ame"
+    ]
+   ],
+   "note": "ผู้ป่วยโคม่าที่ก้านสมองดี **ไม่มี fast phase** — เห็นแต่ตาเบนช้าไปทางหูน้ำเย็น · ไม่ขยับเลย = ก้านสมองเสียหรือยากดลึก",
+   "src": "หลักจำมาตรฐานทางประสาทวิทยา/ENT (First Aid USMLE Step 1)"
+  },
+  {
+   "sec": "neuro-acs-08",
+   "name": "deCORticate = เข้าหา cor",
+   "what": "แยก decorticate กับ decerebrate posturing",
+   "lines": [
+    [
+     "Decorticate",
+     "แขน**งอเข้าหาแกนกลาง/หัวใจ (cor)** ขาเหยียด → รอยโรคเหนือ red nucleus · GCS M3"
+    ],
+    [
+     "Decerebrate",
+     "แขนขา**เหยียดทั้งหมด** ไหล่หมุนเข้า → midbrain–pons · GCS M2 (แย่กว่า)"
+    ]
+   ],
+   "note": "เปลี่ยนจาก decorticate เป็น decerebrate = rostro-caudal deterioration ต้องรายงานทันที · ใน FOUR score decorticate = M2, decerebrate = M1",
+   "src": "หลักจำที่ใช้ทั่วไปในหมู่นักศึกษาแพทย์ · ตรงกับที่สไลด์ใช้ (core)"
+  },
+  {
+   "sec": "neuro-acs-09",
+   "name": "AEIOU TIPS",
+   "what": "สาเหตุของระดับความรู้สึกตัวเปลี่ยน — ใช้ไล่ไม่ให้ลืม",
+   "lines": [
+    [
+     "A",
+     "**A**lcohol"
+    ],
+    [
+     "E",
+     "**E**pilepsy · **E**lectrolytes · **E**ncephalopathy"
+    ],
+    [
+     "I",
+     "**I**nsulin — น้ำตาลต่ำ/สูง"
+    ],
+    [
+     "O",
+     "**O**piates/Overdose · **O**xygen (hypoxia)"
+    ],
+    [
+     "U",
+     "**U**remia"
+    ],
+    [
+     "T",
+     "**T**rauma · **T**emperature"
+    ],
+    [
+     "I",
+     "**I**nfection"
+    ],
+    [
+     "P",
+     "**P**sychiatric · **P**oisoning"
+    ],
+    [
+     "S",
+     "**S**troke · **S**hock · **S**ubarachnoid hemorrhage"
+    ]
+   ],
+   "note": "ตัวขยายของแต่ละอักษรต่างกันเล็กน้อยตามแหล่ง · สไลด์จัดเป็น 6 กลุ่ม (structural, metabolic, toxic, infection, cardiovascular, neurological) พร้อมการตรวจของแต่ละกลุ่ม — ใช้ AEIOU TIPS ช่วยไล่แล้วจัดลงกรอบของสไลด์",
+   "src": "หลักจำที่ใช้ทั่วไปในตำรา emergency medicine"
+  },
+  {
+   "sec": "neuro-acs-14",
+   "name": "I WATCH DEATH",
+   "what": "สาเหตุของ delirium",
+   "lines": [
+    [
+     "I",
+     "**I**nfection"
+    ],
+    [
+     "W",
+     "**W**ithdrawal"
+    ],
+    [
+     "A",
+     "**A**cute metabolic"
+    ],
+    [
+     "T",
+     "**T**rauma (รวมกระดูกสะโพกหัก)"
+    ],
+    [
+     "C",
+     "**C**NS pathology"
+    ],
+    [
+     "H",
+     "**H**ypoxia / hypercarbia"
+    ],
+    [
+     "D",
+     "**D**eficiencies (thiamine, B₁₂)"
+    ],
+    [
+     "E",
+     "**E**ndocrine / environmental"
+    ],
+    [
+     "A",
+     "**A**cute vascular"
+    ],
+    [
+     "T",
+     "**T**oxins / drugs"
+    ],
+    [
+     "H",
+     "**H**eavy metals"
+    ]
+   ],
+   "note": "ความเจ็บที่คุมไม่พอเป็นเหตุที่ถูกลืมบ่อย · ทบทวนรายการยาทุกครั้ง (polypharmacy เป็นปัจจัยเสี่ยงอิสระ)",
+   "src": "Wise MG (ตำราจิตเวชศาสตร์/consultation-liaison psychiatry) · ตรงกับสไลด์"
+  },
+  {
+   "sec": "neuro-acs-14",
+   "name": "Anticholinergic toxidrome",
+   "what": "อาการพิษ anticholinergic — ยาที่ก่อ delirium บ่อยที่สุดกลุ่มหนึ่ง",
+   "lines": [
+    [
+     "Mad as a hatter",
+     "สับสน ประสาทหลอน (delirium)"
+    ],
+    [
+     "Hot as a hare",
+     "ตัวร้อน (ไม่มีเหงื่อระบายความร้อน)"
+    ],
+    [
+     "Dry as a bone",
+     "ผิวแห้ง ปากแห้ง"
+    ],
+    [
+     "Red as a beet",
+     "หน้าแดง (หลอดเลือดผิวขยาย)"
+    ],
+    [
+     "Blind as a bat",
+     "ม่านตาขยาย ตาพร่า"
+    ],
+    [
+     "Full as a flask",
+     "ปัสสาวะคั่ง"
+    ]
+   ],
+   "note": "ยาที่สไลด์ยกตัวอย่าง: atropine, amitriptyline, diphenhydramine (ในยาแก้แพ้/ยานอนหลับที่ซื้อเองได้) · ฤทธิ์สะสมจากหลายตัวรวมกัน (anticholinergic burden)",
+   "src": "หลักจำคลาสสิกทาง toxicology (Goldfrank's Toxicologic Emergencies)"
+  }
+ ]
+}

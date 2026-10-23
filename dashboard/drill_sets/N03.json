@@ -1,0 +1,785 @@
+{
+ "set": "neuro",
+ "lec": "N03",
+ "d": "พ. 23 ก.ย.",
+ "w": 2,
+ "lecture": "Epilepsy (อ.พิมลพรรณ)",
+ "mcq": [
+  {
+   "id": "NEU-EPI-MCQ-01",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Definition of epilepsy — remote symptomatic seizure",
+   "stem": "Which of the following patients fulfils the ILAE practical clinical definition of epilepsy?",
+   "choices": [
+    "A 70-year-old man who has a focal seizure on day 2 of an acute middle cerebral artery infarct",
+    "A 45-year-old woman who has a generalized tonic-clonic seizure with a serum sodium of 114 mEq/L",
+    "A 2-year-old child who has a brief generalized seizure during a febrile illness",
+    "A 50-year-old man who has a generalized seizure 30 hours after stopping heavy daily alcohol intake",
+    "A 66-year-old woman who has a single unprovoked seizure 2 years after a middle cerebral artery infarct, with epileptiform discharges over the infarcted hemisphere on EEG"
+   ],
+   "answer": 4,
+   "explain": "**ชักครั้งเดียว 2 ปีหลัง stroke + EEG มี epileptiform discharge = เข้าเกณฑ์ ILAE ข้อ 2** (ชัก unprovoked 1 ครั้ง + โอกาสชักซ้ำใน 10 ปี ≥ 60%)\n\nชักที่เกิด **หลัง stroke เป็นเดือนถึงปี** เรียก **remote symptomatic seizure** — สมองมีแผลเป็นที่วงจรต่อกันผิดแบบถาวร จึงนับเป็น **unprovoked** และความเสี่ยงชักซ้ำสูงพอ ๆ กับคนที่ชักไปแล้ว 2 ครั้ง ยิ่งมี **epileptiform discharge ซีกเดียวกัน** ก็ยิ่งสนับสนุน → วินิจฉัยโรคลมชักและเริ่มยาได้ตั้งแต่ครั้งแรก\n\n**ทำไมข้ออื่นผิด** — ทั้งหมดเป็น **acute symptomatic (provoked) seizure** ที่มีตัวกระตุ้นเฉียบพลัน ไม่นับเข้าเกณฑ์\n- **ชักวันที่ 2 ของ stroke** — อยู่ในช่วง **7 วันแรก** ที่สมองบาดเจ็บเฉียบพลัน (ต่างจากข้อถูกตรง *ระยะเวลา*)\n- **Na 114** — ความผิดปกติทางเมตาบอลิกเฉียบพลัน แก้ Na แล้วมักไม่ชักอีก\n- **ชักจากไข้ในเด็ก** — provoked\n- **Alcohol withdrawal seizure** — มักเกิด 6–48 ชม. หลังหยุดดื่ม เป็น provoked\n\n> สไลด์เปิดด้วย *\"Not everyone who has a seizure has epilepsy\"* — ราว 10% ของคนทั่วโลกเคยชักอย่างน้อยหนึ่งครั้ง",
+   "pearl": "ชักหลัง stroke ภายใน 7 วัน = provoked · ชักหลังจากนั้นเป็นเดือน/ปี = remote symptomatic = unprovoked → นับเข้าเกณฑ์",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — What is Epilepsy? (ILAE definition)",
+    "Fisher RS, et al. ILAE practical clinical definition of epilepsy. Epilepsia 2014;55:475-482"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-02",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Seizure cluster within 24 hours",
+   "stem": "A 30-year-old woman had two generalized tonic-clonic seizures 4 hours apart yesterday. She has no fever, takes no medication or alcohol, and her glucose, electrolytes, brain MRI and EEG are normal. No epilepsy syndrome is identified. Which statement best describes her status according to the ILAE definition?",
+   "choices": [
+    "She has epilepsy because she has had two unprovoked seizures",
+    "The two seizures count as a single unprovoked event, so the criteria for epilepsy are not yet met",
+    "She has epilepsy because any seizure cluster implies a recurrence risk of at least 60%",
+    "These are provoked seizures because they occurred on the same day",
+    "She had status epilepticus and needs long-term antiseizure medication"
+   ],
+   "answer": 1,
+   "explain": "**เกณฑ์ ILAE ข้อ 1 ต้องการชัก unprovoked ≥ 2 ครั้ง ที่ห่างกัน > 24 ชั่วโมง**\n\nชักหลายครั้งภายใน 24 ชั่วโมง (seizure cluster) **นับเป็นเหตุการณ์เดียว** เพราะสะท้อนช่วงที่สมองไวต่อการชักช่วงเดียวกัน ไม่ได้บอกการกลับเป็นซ้ำระยะยาว ผู้ป่วยรายนี้จึงมี **unprovoked seizure 1 เหตุการณ์** และยัง **ไม่เข้าเกณฑ์ข้อ 2** เพราะ MRI และ EEG ปกติ ไม่มีหลักฐานว่าความเสี่ยงซ้ำ ≥ 60% และไม่เข้าข้อ 3 เพราะไม่มี syndrome\n\n**ทำไมข้ออื่นผิด**\n- **\"ชัก 2 ครั้งจึงเป็นโรคลมชัก\"** — ลืมเงื่อนไข *ห่างกันเกิน 24 ชั่วโมง*\n- **\"cluster แปลว่าเสี่ยงซ้ำ ≥ 60%\"** — เกณฑ์ข้อ 2 ต้องมีหลักฐาน เช่น รอยโรคบน MRI, epileptiform discharge บน EEG, ชักขณะหลับ หรือรอยโรคเก่า (remote symptomatic)\n- **\"provoked เพราะเกิดวันเดียวกัน\"** — provoked หมายถึงมีตัวกระตุ้นเฉียบพลัน (น้ำตาล เกลือแร่ แอลกอฮอล์ ไข้ ยา) ซึ่งรายนี้ไม่มี\n- **Status epilepticus** — คือชักต่อเนื่องนานหรือชักซ้ำโดยไม่ฟื้นระหว่างครั้ง ไม่ใช่สองครั้งที่ฟื้นดีระหว่างกัน\n\n**ทำต่อ** — ให้คำแนะนำความปลอดภัย นัดติดตาม พิจารณา sleep-deprived EEG และตัดสินใจเรื่องยาร่วมกับผู้ป่วย",
+   "pearl": "ชักกี่ครั้งก็ตามภายใน 24 ชม. = 1 เหตุการณ์ — เกณฑ์ข้อ 1 ต้องห่างกันเกิน 24 ชม.",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — What is Epilepsy?",
+    "Fisher RS, et al. Epilepsia 2014;55:475-482"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-03",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Hypoglycaemic (provoked) seizure — immediate management",
+   "stem": "A 63-year-old man with type 2 diabetes on insulin is brought in after a 3-minute generalized convulsion at home. The convulsion has stopped, but he remains drowsy and sweaty. Capillary glucose is 32 mg/dL and blood pressure is 150/90 mmHg. Which of the following is the most appropriate next step?",
+   "choices": [
+    "Give intravenous 50% glucose and recheck glucose and consciousness",
+    "Give an intravenous loading dose of phenytoin",
+    "Start long-term levetiracetam because he has had a generalized tonic-clonic seizure",
+    "Request an urgent EEG before correcting the glucose",
+    "Give intravenous diazepam to prevent a further seizure"
+   ],
+   "answer": 0,
+   "explain": "**ชักจาก hypoglycemia = acute symptomatic (provoked) seizure** — การรักษาคือแก้ตัวกระตุ้น ไม่ใช่ยากันชัก\n\n**กลไก** — สมองใช้ glucose เป็นพลังงานหลัก เมื่อน้ำตาลต่ำมาก neuron มี ATP ไม่พอรักษา membrane potential และปั๊มไอออน สมดุลการกระตุ้น–ยับยั้งเสียจึงชักได้ ถ้าปล่อยนานจะเกิดสมองบาดเจ็บถาวร\n\n**การจัดการ** — **50% glucose IV (เช่น 50 mL)** ทันที → **เจาะน้ำตาลซ้ำ** และให้ dextrose ต่อเนื่อง เพราะ insulin (และ sulfonylurea) ทำให้ต่ำซ้ำได้ → หาสาเหตุ (กินน้อย ไตเสื่อม ขนาดยาเกิน) และปรับยาเบาหวาน\n\n**ทำไมข้ออื่นผิด**\n- **Phenytoin loading / diazepam** — การชักหยุดแล้ว และยาไม่แก้สาเหตุ ถ้าน้ำตาลยังต่ำก็ชักซ้ำได้ (ถ้ายังชักอยู่จึงให้ benzodiazepine ร่วมกับ glucose)\n- **Levetiracetam ระยะยาว** — provoked seizure **ไม่ใช่โรคลมชัก** แก้เหตุแล้วไม่ต้องกินยากันชัก\n- **EEG ก่อนแก้น้ำตาล** — ล่าช้าโดยไม่เปลี่ยนการรักษา\n\n> **เจาะ capillary glucose ทุกรายที่มาด้วยชักหรือซึม** — เร็วและคุ้มที่สุด",
+   "pearl": "ชัก + น้ำตาลต่ำ → 50% glucose IV ก่อนเสมอ — provoked seizure ไม่ต้องให้ยากันชักระยะยาว",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Not everyone who has a seizure has epilepsy",
+    "ADA Standards of Care — management of hypoglycemia"
+   ],
+   "nl": [
+    "2.2.17",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-04",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Lateral tongue bite — specificity for epileptic seizure",
+   "stem": "A 27-year-old man had a witnessed episode of loss of consciousness with limb jerking. Which of the following findings, if present, most strongly supports an epileptic generalized tonic-clonic seizure rather than syncope or psychogenic non-epileptic spells?",
+   "choices": [
+    "Urinary incontinence",
+    "Eyes tightly closed during the event",
+    "A bite on the lateral border of the tongue",
+    "Side-to-side head movements and pelvic thrusting",
+    "Full orientation within 30 seconds of the event"
+   ],
+   "answer": 2,
+   "explain": "**กัดด้านข้างลิ้น (lateral tongue bite) มี specificity สูงสำหรับ epileptic GTC**\n\n**กลไก** — ช่วง **tonic phase** กล้ามเนื้อเคี้ยวเกร็งแรงขณะลิ้นถูกดันไปด้านข้างเข้าระหว่างฟัน จึงเป็นแผลที่ *ขอบข้าง* ลิ้น ส่วน syncope/PNES ถ้ากัดมักเป็น *ปลายลิ้น*\n\n| สิ่งตรวจพบ | ชี้ไปทาง |\n|---|---|\n| **กัดด้านข้างลิ้น** | **Epileptic seizure** |\n| ปัสสาวะราด | แยกไม่ได้ |\n| หลับตาแน่น ต้านการเปิดตา | **PNES** |\n| ส่ายหัวซ้ายขวา ขยับเชิงกราน เป็นพัก ๆ | **PNES** |\n| รู้ตัวเต็มที่ภายในวินาที | **Syncope** (หรือ PNES) |\n\n**ทำไมข้ออื่นผิด**\n- **ปัสสาวะราด** — ตัวลวงคลาสสิก หมดสติจากสาเหตุใดก็ทำให้หูรูดคลายได้\n- **หลับตาแน่น** — ชักจริงมัก *ลืมตาค้าง* การต้านการเปิดตาแปลว่ายังสั่งกล้ามเนื้อได้\n- **ส่ายหัว ขยับเชิงกราน** — ลักษณะ PNES (frontal lobe seizure ก็ hyperkinetic ได้ แต่สั้นและเหมือนกันทุกครั้ง)\n- **รู้ตัวเร็ว** — ขัดกับ post-ictal confusion ที่ต้องมีหลัง GTC",
+   "pearl": "กัดด้านข้างลิ้น = ชักจริง · ปัสสาวะราดแยกอะไรไม่ได้",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Seizure mimic / Differential diagnosis"
+   ],
+   "nl": [
+    "2.1.5",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-05",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Exertional syncope — cardiac red flag",
+   "stem": "A 16-year-old boy collapsed suddenly while sprinting during a football match, without any warning symptoms. Teammates saw about 5 seconds of irregular limb jerking, and he was fully alert within 30 seconds. His uncle died suddenly at the age of 32. Neurological examination is normal. Which of the following is the most appropriate next step?",
+   "choices": [
+    "Start levetiracetam for a probable first generalized seizure",
+    "Reassure him that this was vasovagal syncope",
+    "Arrange an outpatient sleep-deprived EEG as the main investigation",
+    "Obtain a 12-lead ECG and arrange cardiac evaluation including echocardiography",
+    "Arrange a head-up tilt-table test as the first investigation"
+   ],
+   "answer": 3,
+   "explain": "**หมดสติขณะออกแรง + ไม่มีอาการนำ + ญาติเสียชีวิตกะทันหันอายุน้อย = cardiac syncope จนกว่าจะพิสูจน์ได้ว่าไม่ใช่**\n\nกระตุกสั้น < 15 วินาทีและรู้ตัวเร็วโดยไม่มี post-ictal confusion = **convulsive syncope** ไม่ใช่การชัก — สมองขาดเลือดชั่วครู่ ก้านสมองหลุดการควบคุมจาก cortex จึงกระตุกไม่กี่ครั้ง แต่ *สาเหตุ* ของการขาดเลือดคือสิ่งอันตราย: arrhythmia หรือโรคหัวใจโครงสร้าง เช่น **hypertrophic cardiomyopathy, long QT, WPW, Brugada, ARVC**\n\n**ต้องทำ** — **ECG 12 leads** (QT, pre-excitation, Brugada pattern, LVH) + **echocardiography** + ส่งแพทย์โรคหัวใจ และงดกีฬาหนักจนประเมินเสร็จ\n\n**ทำไมข้ออื่นผิด**\n- **Levetiracetam** — ไม่มีลักษณะของชักจริง การเรียกผิดเป็นโรคลมชักทำให้พลาดโรคหัวใจที่ทำให้ตายได้\n- **Vasovagal** — ไม่มี 3P (posture, provoking factor, prodrome) และเกิดขณะออกแรงซึ่งเป็น red flag\n- **EEG** — ไม่ใช่การตรวจหลักเมื่อภาพชี้ไปทางหัวใจ\n- **Tilt-table** — ใช้ยืนยัน reflex syncope ไม่ใช่การตรวจแรกเมื่อสงสัย cardiac syncope",
+   "pearl": "วูบขณะออกแรงหรือไม่มีอาการนำ = คิดถึงหัวใจก่อน → ECG ทุกราย",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Seizure mimic: convulsive syncope",
+    "ESC Guidelines for the diagnosis and management of syncope 2018"
+   ],
+   "nl": [
+    "2.1.5",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-06",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Apparent drug resistance due to PNES",
+   "stem": "A 32-year-old woman is referred with 'drug-resistant epilepsy'. She has tried levetiracetam, lamotrigine and valproate at adequate doses without benefit. Her events last 10–20 minutes, with side-to-side head shaking, pelvic thrusting and eyes tightly closed, and she is fully oriented immediately afterwards. She has never been injured. Two routine EEGs and a brain MRI are normal. Which of the following is the most appropriate next step?",
+   "choices": [
+    "Admit for video-EEG monitoring to capture her typical events",
+    "Add a fourth antiseizure medication",
+    "Refer for resective epilepsy surgery",
+    "Implant a vagus nerve stimulator",
+    "Stop all antiseizure medications abruptly and discharge her from follow-up"
+   ],
+   "answer": 0,
+   "explain": "**ก่อนเรียกว่าดื้อยา ต้องคัดกรอง pseudoresistance** — หนึ่งในหกข้อที่สไลด์ระบุคือ **nonepileptic events / วินิจฉัยผิด**\n\nเหตุการณ์มีลักษณะ **PNES** ครบ: นาน 10–20 นาที, ส่ายหัวซ้ายขวา, ขยับเชิงกราน, **หลับตาแน่น**, รู้ตัวทันที, ไม่เคยบาดเจ็บ ร่วมกับ **ไม่ตอบสนองต่อยาที่เหมาะสมหลายตัว**\n\n**Video-EEG monitoring คือมาตรฐานการยืนยัน** — บันทึกเหตุการณ์จริงที่ไม่มี ictal discharge (และช่วยแยกรายที่มีทั้ง PNES และโรคลมชักร่วมกัน)\n\n**ทำไมข้ออื่นผิด**\n- **เพิ่มยาตัวที่ 4** — ถ้าไม่ใช่ชักจริง ยาไม่ช่วยและเพิ่มผลข้างเคียง\n- **ผ่าตัด / VNS** — สำหรับ drug-resistant epilepsy ที่ *ยืนยันแล้ว* และต้องมีข้อมูล video-EEG ก่อนเสมอ\n- **หยุดยาทันทีและไม่นัดต่อ** — ยังไม่ได้ยืนยันการวินิจฉัย และ PNES เป็น functional neurological disorder ที่ต้องรักษา ไม่ใช่การแกล้ง เมื่อยืนยันแล้วจึง **ค่อย ๆ ลดยา** และส่งจิตแพทย์/นักจิตวิทยา",
+   "pearl": "\"ดื้อยา\" แต่เหตุการณ์นาน หลับตาแน่น รู้ตัวทันที = คิดถึง PNES → video-EEG ก่อนเพิ่มยา",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Rule Out Pseudoresistance First / Seizure mimic"
+   ],
+   "nl": [
+    "2.1.5",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-07",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Unknown-onset seizure",
+   "stem": "A 41-year-old man who lives alone is found by a colleague on his bedroom floor in the morning, confused, with a bitten lateral tongue, urinary incontinence and diffuse muscle aches. Nobody witnessed the event and he remembers nothing about it. Glucose and electrolytes are normal. How should this event be classified at this stage?",
+   "choices": [
+    "Generalized onset tonic-clonic seizure",
+    "Focal to bilateral tonic-clonic seizure",
+    "Unknown onset bilateral tonic-clonic seizure",
+    "Focal impaired awareness seizure",
+    "Absence seizure"
+   ],
+   "answer": 2,
+   "explain": "**ILAE จำแนกตามจุดเริ่มของไฟฟ้า — ถ้าไม่มีข้อมูลพอระบุจุดเริ่ม ให้ใช้ unknown onset**\n\nหลักฐานว่าเป็นการชักเกร็งกระตุกทั้งตัวชัดเจน: **กัดด้านข้างลิ้น, สับสนหลังเหตุการณ์, ปวดเมื่อยกล้ามเนื้อทั่วตัว** (CK มักสูง) แต่ **ไม่มีผู้เห็นตอนเริ่ม** และผู้ป่วยจำไม่ได้ว่ามี aura หรือไม่ จึงยังบอกไม่ได้ว่าเริ่มจากซีกเดียวหรือสองซีก\n\n**ทำไมต้องระวัง** — ถ้าด่วนสรุปเป็น generalized อาจพลาด focal onset ที่ลามเป็นสองซีก ซึ่งเป็นจุดที่วินิจฉัยพลาดบ่อยที่สุดและ **ทำให้เลือกยาผิด** จึงจัดเป็น unknown onset ชั่วคราว แล้ว **หาข้อมูลเพิ่ม** — ถามหา aura ในครั้งก่อน ๆ, myoclonic jerk ตอนเช้า, ทำ **MRI และ EEG** แล้วจึงจัดกลุ่มใหม่\n\n**ทำไมข้ออื่นผิด**\n- **Generalized onset / focal to bilateral** — ทั้งคู่ต้องมีข้อมูลจุดเริ่ม ซึ่งรายนี้ไม่มี\n- **Focal impaired awareness** — ไม่ทำให้กัดลิ้นและปวดเมื่อยทั้งตัวแบบนี้\n- **Absence** — ไม่กี่วินาที ไม่มี post-ictal ไม่กัดลิ้น",
+   "pearl": "ไม่มีคนเห็นตอนเริ่ม = unknown onset — อย่าเดาว่า generalized แล้วเลือกยาผิด",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Epilepsy Classification (ILAE 2025)",
+    "Beniczky S, et al. Updated classification of epileptic seizures. Epilepsia 2025"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-08",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Jacksonian march — localization",
+   "stem": "A 52-year-old man has episodes in which rhythmic jerking begins in the fingers of his right hand and over 30 seconds spreads to the wrist, forearm and then the right side of his face. He remains fully aware and can describe each episode. Afterwards his right hand is weak for about an hour. Where are these seizures most likely to arise?",
+   "choices": [
+    "Right precentral gyrus",
+    "Left precentral gyrus (primary motor cortex)",
+    "Left postcentral gyrus (primary somatosensory cortex)",
+    "Left occipital lobe",
+    "Bilateral thalamocortical networks"
+   ],
+   "answer": 1,
+   "explain": "**Focal aware motor (clonic) seizure ที่ลามแบบ Jacksonian march จาก primary motor cortex ซีกซ้าย**\n\n- **กระตุกเป็นจังหวะ** = elementary *motor* → **precentral gyrus** ไม่ใช่ postcentral\n- **ร่างกายด้านขวา** → cortex **ซีกซ้าย**\n- **ลามนิ้ว → ข้อมือ → แขน → หน้า** — ไฟฟ้าลามไปตาม **motor homunculus** ซึ่งมือกับหน้าอยู่ติดกัน\n- **รู้ตัวตลอด** = focal **aware**\n- **มือขวาอ่อนแรงหลังชัก** = **Todd's paralysis** ยืนยันว่าเริ่มจากจุดเดียว\n\n**ต้องทำ** — focal onset ที่เพิ่งเริ่มในผู้ใหญ่อายุ 52 ปี ต้อง **MRI สมอง** หารอยโรค (เนื้องอก แผลเป็นจาก stroke)\n\n**ทำไมข้ออื่นผิด**\n- **Right precentral** — จะกระตุกด้านซ้าย\n- **Left postcentral** — ให้อาการ *ชา เสียว* (sensory march) ไม่ใช่กระตุก\n- **Occipital** — อาการทางการมองเห็น\n- **Thalamocortical สองซีก** — กลไกของ generalized seizure ซึ่งเสียการรู้ตัวเสมอ ไม่ลามเป็นลำดับข้างเดียว",
+   "pearl": "กระตุกลามจากมือไปหน้าข้างเดียว รู้ตัวตลอด = Jacksonian march จาก motor cortex ซีกตรงข้าม → MRI",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Focal Onset: One Hemisphere Affected / Semiology"
+   ],
+   "nl": [
+    "2.1.22",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-09",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Occipital lobe seizure vs migraine aura",
+   "stem": "A 22-year-old woman has stereotyped episodes of brightly coloured, circular flashing lights in her left visual field lasting 1–2 minutes. Twice an episode was followed by forced head turning to the left and a bilateral tonic-clonic seizure. Between attacks she is well. What is the most likely origin of her episodes?",
+   "choices": [
+    "Migraine with visual aura",
+    "Left occipital lobe",
+    "Right mesial temporal lobe",
+    "Right occipital lobe",
+    "Left parietal lobe"
+   ],
+   "answer": 3,
+   "explain": "**Focal aware visual seizure จาก occipital lobe ซีกขวา** ที่บางครั้งลามเป็น bilateral tonic-clonic\n\n- **เห็นแสงวาบ สีสัน** = **occipital lobe** ตามที่สไลด์สรุปอาการตามกลีบสมอง\n- อยู่ใน **ลานสายตาซ้าย** → visual cortex **ซีกขวา**\n- **หันศีรษะไปซ้าย** ก่อนชักทั้งตัว — การชักลามถึง frontal eye field ซีกขวาซึ่งดันตาและศีรษะไปด้านตรงข้าม สนับสนุนซีกขวา\n\n| | Occipital seizure | Migraine aura |\n|---|---|---|\n| ภาพ | **วงกลมสีสด** | เส้นซิกแซกขาวดำ ขยายออก |\n| ระยะเวลา | **1–3 นาที** | **5–60 นาที** ค่อย ๆ ลาม |\n| ตามด้วย | หันศีรษะ ชักทั้งตัว | ปวดศีรษะ |\n\n**ทำไมข้ออื่นผิด**\n- **Migraine with aura** — aura สั้นเกินไป และไม่ทำให้เกิด bilateral tonic-clonic\n- **Left occipital** — จะเห็นในลานสายตาขวา\n- **Mesial temporal** — aura จุกแน่นลิ้นปี่ déjà vu กลัว\n- **Parietal** — ชา เสียว",
+   "pearl": "เห็นแสงสีวงกลมสั้น ๆ ในลานสายตาข้างหนึ่ง = occipital seizure ซีกตรงข้าม ไม่ใช่ migraine aura",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Focal Onset: One Hemisphere Affected (occipital lobe: visual disturbances)"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-10",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Gaze deviation during a seizure",
+   "stem": "A 68-year-old woman is seen on the ward during an episode in which her head and eyes are forcibly deviated to the LEFT and her left face and left arm jerk rhythmically. Which of the following is the most likely location of the responsible lesion?",
+   "choices": [
+    "Right frontal lobe, acting as an irritative seizure focus",
+    "Left frontal lobe, acting as an irritative seizure focus",
+    "Left frontal lobe infarct causing a destructive gaze palsy",
+    "Right pontine infarct",
+    "Bilateral generalized onset with no lateralizing value"
+   ],
+   "answer": 0,
+   "explain": "**ชัก = รอยโรคแบบ irritative → ตามองหนีจาก focus ไปทางด้านที่กระตุก** → focus อยู่ที่ **frontal lobe ซีกขวา**\n\n**กลไก** — **frontal eye field** แต่ละซีกดันตาไปด้านตรงข้าม เมื่อซีกขวาถูกกระตุ้นจากไฟฟ้าชัก จึงดันตาและศีรษะ **ไปซ้าย** พร้อมกับ motor cortex ซีกขวาทำให้ **หน้าและแขนซ้ายกระตุก** — ทิศตาและด้านที่กระตุกจึงไปทางเดียวกัน\n\n| ชนิดรอยโรค | ทิศตา |\n|---|---|\n| **ชัก (irritative)** | **มองหนีจาก focus** = ไปทางแขนขาที่กระตุก |\n| **Frontal stroke (destructive)** | **มองไปทางรอยโรค** = หนีจากแขนขาที่อ่อนแรง |\n| **Pons** | มองไปทางด้านที่อ่อนแรง |\n\n**ทำไมข้ออื่นผิด**\n- **Left frontal focus** — จะดันตาไปขวาและกระตุกด้านขวา\n- **Left frontal infarct** — ตามองซ้ายได้จริง แต่แขนขวาจะ *อ่อนแรง* ไม่ใช่แขนซ้ายกระตุก\n- **Right pontine infarct** — ตามองซ้ายได้ แต่ให้อ่อนแรงซีกซ้าย ไม่มีการกระตุกเป็นจังหวะ\n- **Generalized onset** — forced version + กระตุกข้างเดียวคือเบาะแสของ **focal onset** ต้อง MRI",
+   "pearl": "Stroke มองหา · Seizure มองหนี — ตามองไปทางแขนที่กระตุก focus อยู่ซีกตรงข้าม",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Focal Onset: One Hemisphere Affected",
+    "Adams & Victor's Principles of Neurology"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-11",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Todd's paralysis — mechanism",
+   "stem": "A 45-year-old man with known focal epilepsy has a witnessed focal to bilateral tonic-clonic seizure. Afterwards he has weakness of the left arm and leg (power grade 3/5). Capillary glucose is 104 mg/dL. Non-contrast CT of the brain shows only an old right frontal scar, and the weakness resolves completely over 6 hours. Which of the following best explains the transient weakness?",
+   "choices": [
+    "A new small lacunar infarct in the right internal capsule",
+    "Hypoglycaemia after the seizure",
+    "Functional (conversion) weakness",
+    "Haemorrhage into the old scar",
+    "Post-ictal depression of the cortex that generated the seizure (Todd's paralysis)"
+   ],
+   "answer": 4,
+   "explain": "**Todd's paralysis** — อ่อนแรงชั่วคราวของแขนขาด้านตรงข้ามกับ focus หลังชัก อยู่ได้เป็นนาทีถึงหลายชั่วโมง (มักไม่เกิน 36–48 ชม.) แล้วหายสนิท\n\n**กลไก** — การชักหยุดเมื่อ **กลไกยับยั้งกลับมาและ neuron ที่ยิงรัวหมดพลังงาน** บริเวณต้นกำเนิดการชักจึงถูก **กดการทำงานต่อชั่วคราว (post-ictal depression)** ถ้าเป็น motor cortex จะเห็นอ่อนแรงครึ่งซีก — focus **frontal ขวา** → อ่อนแรงซีก **ซ้าย**\n\n**ความสำคัญ** — Todd's paralysis เป็น **หลักฐานว่าการชักเริ่มจากซีกเดียว** แม้ญาติจะเล่าว่าชักทั้งตัว\n\n**ทำไมข้ออื่นผิด**\n- **Lacunar infarct / haemorrhage** — มักไม่หายสนิทใน 6 ชั่วโมง และ CT ไม่พบเลือด (ถ้าอ่อนแรงไม่ดีขึ้นตามเวลา ต้องคิดถึง stroke และทำภาพซ้ำ)\n- **Hypoglycaemia** — ทำให้อ่อนแรงครึ่งซีกได้ แต่น้ำตาล 104 mg/dL ปกติ\n- **Functional weakness** — อ่อนแรงข้างเดียวตามหลังชักที่มีผู้เห็น อธิบายได้ด้วยกลไกทางสรีรวิทยาชัดเจน",
+   "pearl": "อ่อนแรงข้างเดียวหลังชักที่หายเองในไม่กี่ชั่วโมง = Todd's paralysis = หลักฐานของ focal onset",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Focal Onset / Secondary Generalization"
+   ],
+   "nl": [
+    "2.1.22",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-12",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Absence vs focal impaired awareness seizure",
+   "stem": "A 24-year-old woman was told by a general practitioner that she has 'absence seizures'. Her partner describes episodes of staring with unresponsiveness. Which additional feature would most strongly indicate that these are focal impaired awareness seizures rather than absence seizures?",
+   "choices": [
+    "Brief eyelid fluttering during the episode",
+    "Episodes provoked by hyperventilation",
+    "Episodes lasting about 90 seconds, followed by several minutes of confusion",
+    "Episodes occurring dozens of times a day",
+    "Unresponsiveness during the episode"
+   ],
+   "answer": 2,
+   "explain": "**ระยะเวลานาน + post-ictal confusion = focal impaired awareness** — absence จะ *กลับมาปกติทันที*\n\n| | **Absence** | **Focal impaired awareness** |\n|---|---|---|\n| ระยะเวลา | **5–15 วินาที** | **30 วินาที – 2 นาที** |\n| Aura | ไม่มี | มักมี |\n| Automatism | เล็กน้อย (กะพริบตา) | เด่น (เคี้ยว คลำ) |\n| หลังหยุด | **ทำต่อได้ทันที** | **สับสน** |\n| ความถี่ | วันละหลายสิบถึงร้อยครั้ง | น้อยกว่า |\n| Hyperventilation | **กระตุ้นได้ดี** | ไม่ |\n| EEG | 3 Hz generalized spike-wave | focal discharge |\n\n**กลไกต่างกัน** — absence มาจากวงจร **thalamus–cortex แกว่ง 3 ครั้ง/วินาที** cortex รับข้อมูลไม่ได้ชั่วขณะแต่ไม่ได้ยิงรัวจนหมดแรง จึงไม่มี post-ictal ส่วน focal seizure ทำให้เซลล์ใน focus ยิงรัวแล้วถูกกดตามมา\n\n**ทำไมข้ออื่นผิด** — **กะพริบตา**, **hyperventilation กระตุ้นได้** และ **เกิดวันละหลายสิบครั้ง** ชี้ไป *absence* · **ไม่ตอบสนอง** เกิดได้ทั้งสองแบบ\n\n**ทำไมต้องแยก** — focal ต้องทำ **MRI** และเลือกยาแบบ focal ส่วน absence ยา sodium channel blocker ทำให้แย่ลง",
+   "pearl": "เหม่อแล้วสับสนต่อหลายนาที ≠ absence — absence ฟื้นทันทีเสมอ",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Subcategories of Generalized Seizures (absence)"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-13",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Ethosuximide — mechanism in absence epilepsy",
+   "stem": "A 7-year-old girl has typical absence seizures many times a day with generalized 3 Hz spike-and-wave discharges on EEG. She has never had a generalized tonic-clonic seizure. Ethosuximide is chosen as first-line therapy. What is its principal mechanism of action?",
+   "choices": [
+    "Prolonging inactivation of voltage-gated sodium channels in cortical neurons",
+    "Blocking T-type calcium channels in thalamic neurons",
+    "Binding synaptic vesicle protein 2A",
+    "Increasing the frequency of GABA-A chloride channel opening",
+    "Irreversibly inhibiting GABA transaminase"
+   ],
+   "answer": 1,
+   "explain": "**Ethosuximide ปิด T-type Ca²⁺ channel ใน thalamic neuron** — ตรงกับกลไกของ absence\n\n**กลไกของ absence** — neuron ใน thalamus มี **T-type (low-threshold) Ca²⁺ current** ที่ทำให้ยิงเป็นชุดแบบจังหวะ วงจร **thalamus–cortex** จึงแกว่งพร้อมกัน **3 ครั้งต่อวินาที** = **3 Hz spike-and-wave** การปิดช่องนี้ตัดวงจรแกว่งโดยตรง\n\n**การเลือกยาใน CAE** (ยาไม่ได้อยู่ในสไลด์ — ความรู้มาตรฐาน) — **ethosuximide** หรือ **valproate** ethosuximide เหมาะเมื่อมี *absence อย่างเดียว* เพราะ **ไม่คุม GTC** ถ้ามี GTC ร่วมเลือก valproate\n\n**ทำไมข้ออื่นผิด**\n| กลไก | ยา | หมายเหตุ |\n|---|---|---|\n| Sodium channel inactivation | CBZ, PHT, OXC | **ทำให้ absence แย่ลง** |\n| SV2A | Levetiracetam | |\n| เพิ่มความถี่การเปิด GABA-A | Benzodiazepine | |\n| ยับยั้ง GABA transaminase | **Vigabatrin** | อาจกระตุ้น absence status |",
+   "pearl": "Ethosuximide = T-type Ca²⁺ ใน thalamus = ยาของ absence (ไม่คุม GTC)",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Childhood Absence Epilepsy",
+    "Glauser TA, et al. N Engl J Med 2010;362:790-799"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-14",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "SeLECTS — management",
+   "stem": "A 9-year-old boy with normal development has had two episodes in 6 months, both shortly after falling asleep. He woke with tingling of the left side of his tongue and cheek, twitching of the left face, drooling and inability to speak, while remaining aware. Neurological examination is normal. EEG shows right centrotemporal spikes that increase markedly during sleep. Which of the following is the most appropriate management?",
+   "choices": [
+    "Start lifelong valproate",
+    "Arrange referral for epilepsy surgery",
+    "Start a ketogenic diet",
+    "Explain the excellent prognosis and decide jointly with the family whether antiseizure medication is needed",
+    "Exclude him from school until he has been seizure-free for 2 years"
+   ],
+   "answer": 3,
+   "explain": "**SeLECTS (Self-Limited Epilepsy with Centrotemporal Spikes)** — ชื่อเดิม Benign Rolandic Epilepsy\n\n**ลักษณะครบ** — อายุ 3–13 ปี, พัฒนาการปกติ, **ชักที่ใบหน้า ชาปาก น้ำลายไหล พูดไม่ได้แต่รู้ตัว**, **เกิดขณะหลับหรือตอนตื่น**, EEG **centrotemporal spikes เพิ่มขึ้นตอนหลับ** (พบราว 15% ของเด็กที่เป็นโรคลมชัก)\n\n**กลไก** — focus อยู่ที่ cortex ส่วนล่างของ homunculus ซึ่งคุม **ใบหน้า ลิ้น คอหอย กล่องเสียง** จึงรู้ตัวแต่พูดไม่ออก และ focus ผูกกับช่วงพัฒนาการของสมอง จึง **หายเองเกือบทั้งหมดเมื่ออายุ 16 ปี**\n\n**การรักษาตามสไลด์** — พยากรณ์โรคดีเยี่ยม **ASM ไม่จำเป็นทุกราย** การตัดสินใจ **ทำร่วมกับครอบครัว** (ชักไม่บ่อยและตอนหลับอาจไม่ให้ยา ถ้าชักบ่อยหรือมี GTC หรือครอบครัวกังวลมากอาจให้ยา)\n\n**ทำไมข้ออื่นผิด**\n- **Valproate ตลอดชีวิต** — โรคหายเองก่อนวัยผู้ใหญ่\n- **ผ่าตัด** — ไม่มีรอยโรคและไม่ดื้อยา\n- **Ketogenic diet** — สำหรับ drug-resistant epilepsy\n- **ห้ามไปโรงเรียน** — ไม่จำเป็น ให้คำแนะนำความปลอดภัยทั่วไปแทน",
+   "pearl": "SeLECTS: ชักใบหน้าตอนหลับ + centrotemporal spikes → หายเองก่อน 16 ปี ยาไม่จำเป็นทุกราย",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — SeLECTS (Benign Rolandic Epilepsy)",
+    "Specchio N, et al. Epilepsia 2022;63:1398-1442"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-15",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "JME — EEG findings",
+   "stem": "A 15-year-old girl had her first generalized tonic-clonic seizure at a concert with strobe lighting. Her mother reports that she often drops her toothbrush or spills drinks in the first hour after waking. Development and examination are normal. Which EEG finding is most expected?",
+   "choices": [
+    "Generalized 3 Hz spike-and-wave discharges provoked mainly by hyperventilation",
+    "Generalized slow spike-and-wave discharges at less than 2.5 Hz",
+    "Centrotemporal spikes activated by sleep",
+    "Right temporal sharp waves",
+    "Generalized fast (about 4–6 Hz) polyspike-and-wave discharges with a photoparoxysmal response"
+   ],
+   "answer": 4,
+   "explain": "**Juvenile myoclonic epilepsy (JME)** — วัยรุ่น, **myoclonic jerk ตอนเช้าหลังตื่น** (แปรงสีฟันหล่น), แล้ว GTC ครั้งแรกจาก **แสงกะพริบ**\n\nEEG ของ JME คือ **generalized polyspike-and-wave ที่เร็วกว่า 3 Hz (มักราว 4–6 Hz)** และมัก **ไวต่อ photic stimulation (photoparoxysmal response)** — สไลด์ระบุว่า **30–40% ของผู้ป่วย JME มี photosensitivity**\n\n**กลไกของแสงกะพริบ** — แสงกะพริบเป็นจังหวะทำให้ visual cortex ยิงพร้อมกันเป็นจังหวะ แล้วลามเข้าเครือข่ายสองซีกที่ไวอยู่แล้ว\n\n**ทำไมข้ออื่นผิด — จับคู่ EEG กับกลุ่มอาการ**\n| EEG | กลุ่มอาการ |\n|---|---|\n| 3 Hz spike-wave + hyperventilation | **CAE** (เหม่อ อายุ 4–10 ปี) |\n| Slow spike-wave < 2.5 Hz | **Lennox-Gastaut** |\n| Centrotemporal spikes ตอนหลับ | **SeLECTS** |\n| Temporal sharp waves | **Temporal lobe epilepsy** |\n\n**นัยต่อการรักษา** — JME เป็น generalized epilepsy **ห้าม CBZ/PHT/OXC** และต้องคุมตัวกระตุ้น (นอนให้พอ เลี่ยงแอลกอฮอล์ ระวังแสงกะพริบ)",
+   "pearl": "JME: polyspike-wave เร็ว + photosensitivity 30–40% · CAE 3 Hz · LGS < 2.5 Hz",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Juvenile Myoclonic Epilepsy / Common Seizure Triggers",
+    "Riney K, et al. Epilepsia 2022;63:1443-1474"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-16",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "JME in a woman of childbearing potential — drug choice",
+   "stem": "A 19-year-old woman has newly diagnosed juvenile myoclonic epilepsy with frequent morning myoclonic jerks and two generalized tonic-clonic seizures. She is sexually active and does not plan pregnancy in the next few years. Which is the most appropriate initial antiseizure medication?",
+   "choices": [
+    "Levetiracetam",
+    "Valproate",
+    "Carbamazepine",
+    "Phenytoin",
+    "Gabapentin"
+   ],
+   "answer": 0,
+   "explain": "**Levetiracetam** — ได้ผลกับทั้ง **myoclonic และ GTC** ไม่ทำให้ generalized seizure แย่ลง และเสี่ยงต่อทารกต่ำกว่า valproate มาก — เป็นตัวเลือกแรกของ JME ในหญิงที่ตั้งครรภ์ได้ (NICE NG217)\n\n**หลักของสไลด์** — เลือกยาตาม **ชนิดการชัก/กลุ่มอาการ + อายุและเพศ + โรคร่วม + ความต้องการของผู้ป่วย** รายนี้ต้องคิดสองข้อพร้อมกัน\n1. **JME = generalized epilepsy** → ยา broad spectrum\n2. **หญิงวัยเจริญพันธุ์** → เลี่ยง valproate\n\n**ทำไมข้ออื่นผิด**\n- **Valproate** — ได้ผลดีที่สุดใน JME แต่เป็น **teratogen ชัดเจน** (neural tube defect, ความพิการแต่กำเนิด, พัฒนาการทางสติปัญญาของเด็กลดลง) ไม่ควรเริ่มในหญิงที่ตั้งครรภ์ได้ เว้นไม่มีทางเลือกอื่นและอยู่ในโปรแกรมป้องกันการตั้งครรภ์\n- **Carbamazepine, phenytoin** — sodium channel blocker **ทำให้ myoclonic และ absence แย่ลง**\n- **Gabapentin** — ทำให้ myoclonic แย่ลงได้ และไม่คุม generalized seizure\n\n**อย่าลืม** — ให้ **folic acid** และวางแผนคุมกำเนิดในหญิงวัยเจริญพันธุ์ที่กินยากันชัก",
+   "pearl": "JME ในผู้หญิงวัยเจริญพันธุ์ → levetiracetam · ผู้ชาย → valproate ได้ · ห้าม CBZ/PHT ทุกราย",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — The choice of ASM is carefully determined by…",
+    "NICE NG217 (2022) Epilepsies in children, young people and adults"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-17",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "JME — long-term prognosis",
+   "stem": "A 23-year-old man with juvenile myoclonic epilepsy has been seizure-free for 3 years on valproate and sleeps regularly. He asks whether he can now stop his medication because he has 'outgrown it'. Which of the following is the most accurate counselling?",
+   "choices": [
+    "Yes — like most childhood syndromes, JME remits by the age of 16",
+    "Yes, provided a routine EEG is normal, because relapse is then unlikely",
+    "JME is usually lifelong; relapse after withdrawal is common, so long-term treatment is generally advised",
+    "He should switch to carbamazepine, which has fewer adverse effects",
+    "He can stop valproate abruptly because he is seizure-free"
+   ],
+   "answer": 2,
+   "explain": "**JME มักเป็นตลอดชีวิต แต่คุมได้ดีด้วยยา** — สไลด์จัดกลุ่มอาการวัยรุ่น (JME, juvenile absence) ไว้ว่า *\"often lifelong but well-controlled with medication\"*\n\nแม้ปลอดการชักนาน **ความไวต่อการชักของเครือข่ายสองซีกยังอยู่** เมื่อหยุดยาจึง **ชักซ้ำได้บ่อยมาก** โดยเฉพาะเมื่อเจอตัวกระตุ้น (อดนอน แอลกอฮอล์ ความเครียด แสงกะพริบ) จึงมักแนะนำให้ใช้ยาระยะยาว ถ้าผู้ป่วยยืนยันจะลองลดยา ต้องตัดสินใจร่วมกันและลดช้า ๆ ภายใต้การดูแล\n\n**ทำไมข้ออื่นผิด**\n- **\"หายเองเมื่ออายุ 16\"** — เป็นลักษณะของ **SeLECTS** ไม่ใช่ JME\n- **\"EEG ปกติก็หยุดได้\"** — EEG ปกติไม่รับประกันว่าจะไม่ชักซ้ำ EEG เป็นเพียงตัวสนับสนุน\n- **เปลี่ยนเป็น carbamazepine** — ทำให้ myoclonic และ absence **แย่ลง**\n- **หยุดยาทันที** — เสี่ยงชักซ้ำรุนแรงและ status epilepticus\n\n> ผู้ป่วยเป็นชาย การใช้ valproate ระยะยาวจึงไม่ติดข้อจำกัดเรื่อง teratogenicity",
+   "pearl": "SeLECTS หายเอง แต่ JME มักต้องกินยาตลอดชีวิต — สองกลุ่มอาการนี้ห้ามสลับกัน",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Syndromes by Age of Onset (Adolescence: often lifelong)"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-18",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Dravet syndrome vs simple febrile seizures",
+   "stem": "Which of the following presentations in a young child with seizures during fever is most suggestive of Dravet syndrome rather than simple febrile seizures?",
+   "choices": [
+    "A single generalized seizure lasting 2 minutes at age 2 years during a high fever, with normal development",
+    "A brief generalized seizure in the first 24 hours of a viral illness, with a sibling who had febrile seizures",
+    "A generalized seizure lasting 3 minutes at 18 months, followed by full recovery within 30 minutes",
+    "Recurrent prolonged, sometimes unilateral clonic seizures beginning at 6 months with fever or after warm baths, followed by slowing of development",
+    "Two brief febrile seizures at ages 2 and 3 years, with a normal EEG"
+   ],
+   "answer": 3,
+   "explain": "**Dravet syndrome** — DEE ที่รุนแรง เริ่มในขวบปีแรกในทารกที่แข็งแรงมาก่อน\n\n| | **Dravet** | **Simple febrile seizure** |\n|---|---|---|\n| อายุเริ่ม | **ขวบปีแรก** (มักราว 6 เดือน) | 6 เดือน – 5 ปี |\n| ระยะเวลา | **นานผิดปกติ** (มัก > 15 นาที ถึง status) | **< 15 นาที** |\n| ลักษณะ | **บางครั้งข้างเดียว (unilateral clonic)** | generalized |\n| ตัวกระตุ้น | **ไข้หรืออุณหภูมิกายสูง เช่น อาบน้ำอุ่น** | ไข้ |\n| พัฒนาการ | **ช้าลง/ถดถอยตามมา** | ปกติ |\n| พันธุกรรม | **SCN1A** ส่วนใหญ่ | — |\n\nตัวเลือกอื่นทั้งหมดเป็นภาพของ **simple febrile seizure** — ชักทั่วตัว สั้น ไม่บ่อย พัฒนาการปกติ ประวัติพี่น้องชักจากไข้พบบ่อยและไม่บ่งชี้ Dravet\n\n**ทำไมต้องจับให้ได้เร็ว** — แนวคิด DEE คือ **การชักเองทำให้พัฒนาการแย่ลง** Dravet มี **ความเสี่ยง SUDEP สูง** และ **ห้ามใช้ sodium channel blocker (carbamazepine, oxcarbazepine, phenytoin, lamotrigine)** เพราะทำให้ชักแย่ลง",
+   "pearl": "ชักจากไข้ที่นาน เป็นข้างเดียว เริ่มก่อน 1 ขวบ ชักเมื่ออาบน้ำอุ่น = คิดถึง Dravet (SCN1A)",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Dravet Syndrome",
+    "Zuberi SM, et al. Epilepsia 2022;63:1349-1397"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-19",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "DEE — essential investigations",
+   "stem": "An 11-month-old infant has had daily seizures since 4 months of age despite two appropriate antiseizure medications and has lost previously acquired motor and social skills. Brain MRI is normal. Which of the following is the most important next step in establishing the cause?",
+   "choices": [
+    "Wait until 2 years of age because development usually recovers spontaneously",
+    "Genetic testing (epilepsy gene panel or exome) together with a metabolic workup",
+    "Repeat a routine 20-minute EEG every month",
+    "Lumbar puncture for bacterial culture only",
+    "Serum prolactin level after the next seizure"
+   ],
+   "answer": 1,
+   "explain": "**ภาพนี้คือ Developmental and Epileptic Encephalopathy (DEE)** — เริ่มอายุน้อย ชักถี่และดื้อยา ร่วมกับพัฒนาการถดถอย\n\nสไลด์ระบุว่า *\"Genetic testing, advanced neuroimaging, and metabolic workup are essential in DEEs evaluation to uncover targetable etiologies\"* — MRI ปกติแล้ว ขั้นต่อไปคือ **ตรวจพันธุกรรม** (เช่น SCN1A, KCNQ2, CDKL5, STXBP1) และ **metabolic workup** เพราะบางสาเหตุ **รักษาได้ตรงจุด** เช่น pyridoxine-dependent epilepsy (ให้ pyridoxine), GLUT1 deficiency (ketogenic diet), SCN1A (เลี่ยง sodium channel blocker)\n\n**แนวคิดสำคัญ** — *\"The epileptic activity itself worsens neurodevelopmental outcomes\"* จึงต้อง **หาสาเหตุและคุมการชักให้เร็วที่สุด**\n\n**ทำไมข้ออื่นผิด**\n- **รอจนอายุ 2 ปี** — ขัดกับแนวคิด DEE ยิ่งรอยิ่งเสียพัฒนาการ\n- **EEG ซ้ำทุกเดือน** — ช่วยติดตามแต่ไม่บอกสาเหตุ\n- **เจาะหลังเพาะเชื้ออย่างเดียว** — การติดเชื้อไม่ทำให้ชักเรื้อรังเป็นเดือนโดยไม่มีไข้หรืออาการอื่น\n- **Prolactin** — ใช้ช่วยแยก GTC จาก PNES บางกรณี ไม่ใช่การหาสาเหตุ",
+   "pearl": "DEE + MRI ปกติ → ตรวจพันธุกรรมและเมตาบอลิกทันที เพราะบางสาเหตุรักษาได้ตรงจุด",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Developmental and Epileptic Encephalopathies (DEEs)",
+    "Continuum (Minneap Minn) 2025;31(1):14-37"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-20",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "First seizure in the ED — emergency CT",
+   "stem": "A 64-year-old man taking warfarin for atrial fibrillation is brought to the emergency department after a first-ever generalized seizure. He is now awake but complains of a persistent headache. Capillary glucose is 118 mg/dL and INR is 3.4. Which of the following is the most appropriate next step?",
+   "choices": [
+    "Discharge with an outpatient EEG appointment",
+    "Arrange an outpatient MRI of the brain in 3 months",
+    "Perform a lumbar puncture before any imaging",
+    "Start levetiracetam and discharge without imaging",
+    "Perform an urgent non-contrast CT scan of the brain"
+   ],
+   "answer": 4,
+   "explain": "**ชักครั้งแรกในผู้ที่ได้ยาต้านการแข็งตัวของเลือด + ปวดศีรษะไม่หาย = non-contrast CT ด่วน** เพื่อหา **intracranial haemorrhage** หรือรอยโรคเฉียบพลันที่ทำให้ชัก (acute symptomatic)\n\n**ข้อบ่งชี้ CT ฉุกเฉินในชักครั้งแรก** — focal deficit ใหม่, ซึม/สับสนไม่ดีขึ้น, ไข้, ปวดศีรษะไม่หาย, อุบัติเหตุที่ศีรษะ, ยาต้านการแข็งตัวของเลือด, มะเร็ง, ภูมิคุ้มกันบกพร่อง, อายุมาก\n\n**CT vs MRI** — CT หา **เลือดออก ก้อน mass effect** ได้เร็วในห้องฉุกเฉิน ส่วน **MRI** ตามที่สไลด์สอน คือเครื่องมือหลักหา **สาเหตุเชิงโครงสร้างของ focal epilepsy** (hippocampal sclerosis, cortical dysplasia, เนื้องอก) ที่ CT มองไม่เห็น — จึงทำ MRI ตามมาถ้า CT ไม่พบสาเหตุ\n\n**ทำไมข้ออื่นผิด**\n- **กลับบ้านแล้วนัด EEG / MRI อีก 3 เดือน** — อาจพลาดเลือดออกในสมองที่ต้องแก้ INR และปรึกษาศัลยแพทย์ทันที\n- **เจาะหลังก่อนทำภาพ** — ถ้ามีก้อนเลือดและ mass effect เสี่ยงสมองเคลื่อน และ INR 3.4 เสี่ยงเลือดออกจากการเจาะ\n- **ให้ยาแล้วกลับบ้าน** — ไม่ได้หาสาเหตุที่อาจอันตรายถึงชีวิต",
+   "pearl": "ชักครั้งแรก + ยาต้านการแข็งตัวของเลือด/ปวดศีรษะ/focal deficit → non-contrast CT ด่วน แล้ว MRI ภายหลัง",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Tools for Diagnosis: EEG & MRI",
+    "ACEP Clinical Policy: Critical issues in the evaluation of adult patients presenting with seizures (2014)"
+   ],
+   "nl": [
+    "3.3.20",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-21",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "MRI — hippocampal sclerosis",
+   "stem": "A 31-year-old woman has focal impaired awareness seizures preceded by a rising epigastric sensation. Coronal FLAIR MRI of the brain shows a small left hippocampus with increased signal and loss of its internal architecture; there is no mass effect or contrast enhancement. She has had no fever or acute illness. What is the most likely interpretation?",
+   "choices": [
+    "Left hippocampal (mesial temporal) sclerosis concordant with left mesial temporal lobe epilepsy",
+    "Acute herpes simplex encephalitis of the left temporal lobe",
+    "Low-grade glioma of the left temporal lobe",
+    "A normal anatomical variant without clinical significance",
+    "Changes consistent with genetic generalized epilepsy"
+   ],
+   "answer": 0,
+   "explain": "**Hippocampal sclerosis** — ภาพ MRI จำเพาะ: **hippocampus ฝ่อเล็กลง + T2/FLAIR signal สูง + โครงสร้างภายในหายไป** ไม่มี mass effect\n\nสไลด์ระบุว่า **MRI ใช้หาสาเหตุเชิงโครงสร้างของ focal epilepsy** เช่น *hippocampal sclerosis, cortical dysplasia, tumours* — และภาพ **ตรงกับอาการ (concordant)**: aura จุกแน่นลิ้นปี่ลอยขึ้น + focal impaired awareness = **mesial temporal lobe epilepsy** ซีกเดียวกัน\n\n**นัยสำคัญ** — เป็นสาเหตุที่พบบ่อยที่สุดของ **drug-resistant focal epilepsy ในผู้ใหญ่** และถ้าดื้อยา เป็นกลุ่มที่ **ผ่าตัด (anterior temporal lobectomy) ได้ผลดีมาก** เพราะ focus ชัดเจนและตัดออกได้ปลอดภัย\n\n**ทำไมข้ออื่นผิด**\n- **HSV encephalitis** — เฉียบพลัน มีไข้ สับสน temporal lobe *บวม* ไม่ใช่ *ฝ่อ*\n- **Glioma** — เป็นก้อน มี mass effect\n- **Normal variant** — hippocampus ข้างเดียวที่ฝ่อและ signal สูงไม่ใช่ภาพปกติ\n- **Genetic generalized epilepsy** — มัก **MRI ปกติ** ไม่มีรอยโรคข้างเดียว",
+   "pearl": "Hippocampus ฝ่อ + FLAIR สูงข้างเดียว = hippocampal sclerosis → mesial TLE ที่ผ่าตัดได้ผลดีเมื่อดื้อยา",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Investigation for Established Epilepsy (MRI)"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-22",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Increasing the yield of EEG",
+   "stem": "A 19-year-old man has had two unprovoked generalized tonic-clonic seizures 5 months apart and admits to occasional morning jerks. A routine 30-minute awake EEG is normal. Which of the following is the most appropriate way to increase the diagnostic yield of EEG?",
+   "choices": [
+    "Conclude that he does not have epilepsy",
+    "Repeat the same routine awake EEG the next day",
+    "Perform a sleep-deprived EEG that includes sleep, hyperventilation and photic stimulation",
+    "Perform a contrast-enhanced CT scan of the brain",
+    "Measure serum prolactin at the next clinic visit"
+   ],
+   "answer": 2,
+   "explain": "**Sleep-deprived EEG** พร้อม activation procedures เพิ่มโอกาสจับ epileptiform discharge มากที่สุดในขั้นนี้\n\n**ทำไมได้ผล** — การอดนอนและช่วง **non-REM sleep** ทำให้ cortex ซิงโครไนซ์กันมากขึ้น ดึง discharge ที่ซ่อนอยู่ออกมา (โดยเฉพาะ **JME ที่อดนอนเป็นตัวกระตุ้นแรงที่สุด**) ส่วน **hyperventilation** และ **photic stimulation** กระตุ้น generalized discharge ได้ดี (JME ไวต่อแสง 30–40%)\n\n**วิธีเพิ่ม yield เมื่อ EEG แรกปกติ** — sleep-deprived/บันทึกขณะหลับ · activation (HV, photic) · บันทึกซ้ำ · prolonged หรือ video-EEG\n\n**ทำไมข้ออื่นผิด**\n- **สรุปว่าไม่เป็นโรคลมชัก** — **EEG ปกติไม่ตัดโรคลมชัก** และรายนี้มี unprovoked seizure 2 ครั้งห่าง > 24 ชม. เข้าเกณฑ์ ILAE ข้อ 1 แล้ว (การวินิจฉัยเป็นทางคลินิก EEG ช่วยจำแนกชนิด)\n- **Routine EEG แบบเดิมซ้ำ** — ได้เพิ่มน้อยกว่าการทำหลังอดนอนและให้มีช่วงหลับ\n- **CT with contrast** — ไม่จับคลื่นไฟฟ้า และ MRI ดีกว่าสำหรับรอยโรคของโรคลมชัก\n- **Prolactin** — มีประโยชน์เฉพาะเมื่อเจาะภายในราว 10–20 นาทีหลังชัก ไม่ใช่วันนัด",
+   "pearl": "EEG ครั้งแรกปกติ → sleep-deprived EEG + HV + photic — และ EEG ปกติไม่ตัดโรคลมชัก",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Investigation for Established Epilepsy (EEG)"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-23",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Focal epilepsy in the elderly — drug choice",
+   "stem": "A 78-year-old woman develops recurrent focal impaired awareness seizures 1 year after a left middle cerebral artery infarct. She takes warfarin for atrial fibrillation and has mild cognitive impairment. According to the ILAE 2013 evidence presented in the lecture, which drug has Level A evidence as initial monotherapy for focal seizures in elderly adults and is the most appropriate choice?",
+   "choices": [
+    "Phenytoin",
+    "Carbamazepine",
+    "Valproate",
+    "Lamotrigine",
+    "Phenobarbital"
+   ],
+   "answer": 3,
+   "explain": "**Lamotrigine** — ตาราง ILAE 2013 ในสไลด์: **elderly adults with partial-onset seizures — Level A: GBP, LTG** (Level C: CBZ · Level D: TPM, VPA)\n\n**ทำไมเหมาะกับรายนี้**\n- ไม่ใช่ **enzyme inducer** จึงไม่รบกวน **warfarin**\n- ผลต่อการรู้คิดน้อย ทนยาได้ดี (ต้องไต่ขนาดช้า ๆ ลดความเสี่ยงผื่น/SJS)\n\n**ทำไมข้ออื่นผิด**\n| ยา | ปัญหา |\n|---|---|\n| **Phenytoin** | enzyme inducer + จับโปรตีนสูง → **interaction กับ warfarin** · non-linear kinetics · ซึม เดินเซ กระดูกบาง |\n| **Carbamazepine** | **Level C** ในผู้สูงอายุ · enzyme inducer ลดฤทธิ์ warfarin · **hyponatremia** |\n| **Valproate** | **Level D** · interaction กับ warfarin และผลต่อเกล็ดเลือด · อาการสั่น |\n| **Phenobarbital** | ง่วงซึม การรู้คิดแย่ลง enzyme inducer |\n\n> หลักของสไลด์: เลือกยาตาม **ชนิดการชัก + อายุและเพศ + โรคร่วมและยาที่ใช้อยู่ + ความต้องการของผู้ป่วย**",
+   "pearl": "Focal seizure ในผู้สูงอายุ: ILAE Level A = gabapentin, lamotrigine — เลี่ยง enzyme inducer เมื่อกิน warfarin",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — ASM choice is directed by evidence-based guidelines (ILAE 2013)",
+    "Glauser T, et al. Epilepsia 2013;54:551-563"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-24",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Valproate and pregnancy planning",
+   "stem": "A 26-year-old woman with idiopathic generalized epilepsy has been seizure-free on valproate for 4 years. She would like to become pregnant within the next year. Which of the following is the most appropriate counselling?",
+   "choices": [
+    "Valproate is safe in pregnancy provided high-dose folic acid is taken",
+    "Valproate carries the highest risk among commonly used ASMs of major malformations, including neural tube defects, and of impaired neurodevelopment; a planned switch before conception should be discussed",
+    "All antiseizure medications carry the same risk, so she should continue valproate unchanged",
+    "She should stop valproate abruptly as soon as she becomes pregnant",
+    "The main risk of valproate is Ebstein anomaly, which can be screened for by fetal echocardiography"
+   ],
+   "answer": 1,
+   "explain": "**Valproate เป็น teratogen ที่ชัดเจนที่สุดในกลุ่มยากันชักที่ใช้บ่อย**\n- **ความพิการแต่กำเนิดรุนแรง** ราว 10% — โดยเฉพาะ **neural tube defect** หัวใจ ปากแหว่ง hypospadias\n- **พัฒนาการทางระบบประสาทของเด็กแย่ลง** — IQ ต่ำลง เสี่ยง autism/ADHD สูงขึ้น (เกิดได้แม้ไม่มีความพิการทางโครงสร้าง)\n- ความเสี่ยง **ขึ้นกับขนาดยา**\n\nสไลด์ย้ำว่าการเลือกยาต้องดู **อายุและเพศ** และในหญิงวัยเจริญพันธุ์ให้เลือก **replacement monotherapy** เมื่อต้องเปลี่ยนยา\n\n**แผนที่ควรทำ** — วางแผน **ก่อนตั้งครรภ์** เปลี่ยนเป็นยาที่ปลอดภัยกว่า (**lamotrigine หรือ levetiracetam**) โดยมีช่วงทับซ้อนระหว่างเปลี่ยน ให้ **folic acid** ตั้งแต่ก่อนตั้งครรภ์ และคุมกำเนิดที่ได้ผลจนเปลี่ยนยาเสร็จและอาการคงที่\n\n**ทำไมข้ออื่นผิด**\n- **Folic acid ทำให้ปลอดภัย** — ลดความเสี่ยง NTD ได้บางส่วน แต่ไม่ทำให้ valproate ปลอดภัย และไม่ป้องกันผลต่อพัฒนาการ\n- **ทุกยาเสี่ยงเท่ากัน** — lamotrigine และ levetiracetam เสี่ยงต่ำกว่ามาก\n- **หยุดยาทันทีเมื่อตั้งครรภ์** — เสี่ยงชักรุนแรงต่อแม่และทารก และช่วงสร้างอวัยวะผ่านไปมากแล้วเมื่อรู้ว่าตั้งครรภ์\n- **Ebstein anomaly** — สัมพันธ์กับ **lithium**",
+   "pearl": "Valproate ในผู้หญิงวัยเจริญพันธุ์ = NTD + IQ ลด → วางแผนเปลี่ยนยาก่อนตั้งครรภ์ ห้ามหยุดยาเองกะทันหัน",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — The choice of ASM is carefully determined by (patient age and sex)",
+    "NICE NG217 (2022); MHRA valproate safety guidance"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-25",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Choosing an add-on ASM",
+   "stem": "A 34-year-old man with focal epilepsy takes carbamazepine at the maximum dose he tolerates well, and good adherence is confirmed by serum levels. His seizure frequency has fallen by about 60%, but he still has monthly focal impaired awareness seizures. Which of the following is the most appropriate next step?",
+   "choices": [
+    "Add phenytoin",
+    "Add oxcarbazepine",
+    "Replace carbamazepine with oxcarbazepine",
+    "Add lacosamide",
+    "Add levetiracetam"
+   ],
+   "answer": 4,
+   "explain": "**ยาตัวแรกทนได้ดีและได้ผลบางส่วน → add-on** โดยเลือกยา **คนละกลไก** และ **เภสัชจลนศาสตร์เข้ากันได้**\n\nสไลด์ระบุว่า add-on เหมาะเมื่อ *\"first ASM well-tolerated and partially effective\"* และเน้นว่า **\"Avoid: two sodium channel blockers together (increased adverse effects, reduced efficacy)\"**\n\n**Levetiracetam** จับ **synaptic vesicle protein 2A (SV2A)** ลดการปล่อยสารสื่อประสาท — กลไกต่างจาก carbamazepine และ **ไม่ผ่าน CYP450** จึงไม่มีปัญหา interaction กับ carbamazepine ที่เป็น enzyme inducer\n\n**ทำไมข้ออื่นผิด**\n- **Phenytoin, oxcarbazepine, lacosamide** — ล้วนเป็น **sodium channel blocker** เหมือน carbamazepine → ผลข้างเคียงด้านเดียวกันสะสม (มึน เห็นภาพซ้อน เดินเซ) โดยไม่ได้ประสิทธิผลเพิ่มตามสัดส่วน\n- **เปลี่ยนเป็น oxcarbazepine** — replacement เหมาะเมื่อยาตัวแรก *ทนไม่ได้หรือไม่ได้ผลเลย* ไม่ใช่เมื่อได้ผลบางส่วนและทนได้ และยังเป็นกลไกเดียวกัน\n\n**ก่อนเพิ่มยาทุกครั้ง** — ยืนยันว่าไม่ใช่ pseudoresistance (รายนี้ adherence ยืนยันแล้ว และถึงขนาดสูงสุดที่ทนได้แล้ว)",
+   "pearl": "ได้ผลบางส่วน + ทนได้ดี → add-on คนละกลไก · ห้ามจับคู่ sodium channel blocker สองตัว",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Replacement vs Add-On Therapy"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-26",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Breakthrough seizures — serum drug level",
+   "stem": "A 45-year-old man with focal epilepsy had been seizure-free for 2 years on phenytoin 300 mg/day. He has had two seizures this month. He has no new neurological symptoms, his examination is normal, and he says he takes his medicine 'most days'. Which of the following is the most appropriate first step?",
+   "choices": [
+    "Measure the serum phenytoin concentration and explore adherence non-judgementally",
+    "Add levetiracetam immediately",
+    "Switch to carbamazepine",
+    "Refer for epilepsy surgery evaluation",
+    "Label his epilepsy as drug-resistant"
+   ],
+   "answer": 0,
+   "explain": "**คัดกรอง pseudoresistance ก่อนเสมอ** — สาเหตุที่พบบ่อยที่สุดของการชักกลับมาในผู้ที่เคยคุมได้ดีคือ **กินยาไม่สม่ำเสมอ** และคำว่า *\"กินเกือบทุกวัน\"* คือเบาะแส\n\nสไลด์ระบุว่า *\"Serum concentrations help assess whether therapeutic dosing achieved\"* — ระดับยาต่ำหรือแกว่งชี้ไปที่ adherence ถ้าระดับอยู่ในช่วงรักษา (phenytoin รวม ~10–20 mg/L) แต่ยังชัก จึงคิดถึงปัจจัยอื่น\n\n**Phenytoin เป็นยาที่การวัดระดับมีประโยชน์เป็นพิเศษ** — kinetics แบบ **non-linear (saturable)** ขนาดเปลี่ยนเล็กน้อยระดับเปลี่ยนมาก และมี drug interaction มาก\n\n**ถามต่อ** — ลืมยาบ่อยไหม ยาหมดไหม ค่าใช้จ่าย **การนอน แอลกอฮอล์** ยาใหม่ที่เริ่มใช้\n\n**ทำไมข้ออื่นผิด**\n- **เพิ่ม levetiracetam / เปลี่ยนเป็น carbamazepine** — ถ้าปัญหาคือกินยาไม่ครบ การเพิ่มหรือเปลี่ยนยาไม่แก้และเพิ่มภาระยา\n- **ส่งผ่าตัด / เรียกว่าดื้อยา** — drug-resistant ต้องล้มเหลวจาก **ยาที่เหมาะสม 2 สูตรในขนาดเพียงพอ** และต้องตัด pseudoresistance ออกก่อน",
+   "pearl": "ชักกลับมาหลังคุมได้ดี → วัดระดับยา + ถาม adherence/การนอน/แอลกอฮอล์ ก่อนปรับยา",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — After First ASM Fails: Decision Framework"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-27",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Definition of drug-resistant epilepsy",
+   "stem": "Which of the following patients meets the definition of drug-resistant epilepsy?",
+   "choices": [
+    "A man with juvenile myoclonic epilepsy who continues to have seizures on carbamazepine and then on phenytoin",
+    "A woman whose seizures persist on levetiracetam 250 mg twice daily, her only medication so far",
+    "A man with uncontrolled seizures on two ASMs whose serum drug levels are repeatedly undetectable",
+    "A woman with focal epilepsy who still has seizures after adequate trials of levetiracetam and then lamotrigine, each taken reliably at the maximum tolerated dose",
+    "A woman whose lamotrigine was stopped because of a rash in week 2, and who has had one seizure after 1 month on a second drug"
+   ],
+   "answer": 3,
+   "explain": "**Drug-resistant epilepsy (ILAE)** = ล้มเหลวจากยากันชัก **2 สูตร** ที่ **เลือกเหมาะกับชนิดการชัก**, **ทนได้**, และ **ใช้ในขนาดเพียงพอ** (monotherapy หรือ combination ก็ได้) แล้วยังไม่ปลอดการชัก\n\nสไลด์ระบุว่า **ราว 1 ใน 3** ของผู้ป่วยคุมไม่ได้ด้วยยา — กลุ่มนี้ควร **ส่งศูนย์โรคลมชัก** ประเมินผ่าตัด VNS หรือ ketogenic diet\n\n**ทำไมข้ออื่นยังไม่ใช่ (ทั้งหมดคือ pseudoresistance)**\n| ผู้ป่วย | ข้อบกพร่อง |\n|---|---|\n| JME ที่ได้ CBZ แล้ว PHT | **ยาผิดชนิดการชัก** — sodium channel blocker ทำให้ JME แย่ลง |\n| LEV 250 mg bid ตัวเดียว | **ขนาดยาไม่พอ** และเพิ่งลองยาตัวเดียว |\n| ระดับยาวัดไม่ได้ | **กินยาไม่สม่ำเสมอ** |\n| LTG หยุดเพราะผื่นในสัปดาห์ที่ 2 | ยาตัวแรก **ไม่ได้ลองถึงขนาดที่ได้ผล** และยาตัวที่สองเพิ่งใช้ 1 เดือน |\n\n> หกข้อของ pseudoresistance: adherence · nonepileptic events · วินิจฉัยผิด · **ยาผิดชนิด** · **ขนาดไม่พอ** · วิถีชีวิต (อดนอน แอลกอฮอล์)",
+   "pearl": "ดื้อยา = ยาที่ถูกชนิด ทนได้ ขนาดพอ 2 สูตรแล้วยังชัก — อย่างอื่นคือ pseudoresistance",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Treatment Strategies / Rule Out Pseudoresistance",
+    "Kwan P, et al. Epilepsia 2010;51:1069-1077"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-28",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Vagus nerve stimulation — counselling",
+   "stem": "A 30-year-old man has drug-resistant epilepsy with seizures arising independently from both temporal lobes on video-EEG, so he is not a candidate for resective surgery. Vagus nerve stimulation (VNS) is proposed. Which of the following statements is correct when counselling him?",
+   "choices": [
+    "VNS cures epilepsy, so his antiseizure medications can be stopped after implantation",
+    "VNS requires removal of part of the temporal lobe",
+    "VNS is an implanted device that may reduce seizure frequency by up to about 50% in some patients, but rarely produces seizure freedom",
+    "VNS is used only in children under 12 years of age",
+    "VNS is preferred over surgery even when a single resectable focus is present"
+   ],
+   "answer": 2,
+   "explain": "**VNS** — อุปกรณ์ฝังใต้ผิวหนังคล้าย **เครื่องกระตุ้นหัวใจ** ส่งกระแสไฟฟ้าอ่อน ๆ เป็นระยะไปยังสมองผ่าน **เส้นประสาทเวกัส (ข้างซ้าย)** ที่คอ\n\nสไลด์สรุปไว้\n- **AAN guidelines รับรอง** ในผู้ป่วยที่เหมาะสม\n- **ลดความถี่การชักได้ถึง 50% ในบางราย**\n- **ไม่ได้ทำให้หายขาด** แต่เพิ่มคุณภาพชีวิตอย่างมีนัยสำคัญ\n- เป็นทางเลือกสำหรับผู้ที่ **ผ่าตัดไม่ได้** (*\"for patients who are not surgical candidates\"*)\n\nผู้ป่วยรายนี้มี **focus สองข้างแยกกัน (bitemporal)** ตัดออกไม่ได้อย่างปลอดภัยเพราะเสี่ยงความจำเสียรุนแรง → VNS เหมาะ\n\n**ทำไมข้ออื่นผิด**\n- **รักษาหายและหยุดยาได้** — VNS เป็น *adjunctive* ต้องกินยาต่อ\n- **ต้องตัดสมอง** — สับสนกับ resective surgery\n- **ใช้เฉพาะเด็ก** — ใช้ได้ทั้งเด็กและผู้ใหญ่\n- **ดีกว่าผ่าตัดเมื่อมี focus เดียวที่ตัดได้** — ผิด การผ่าตัดให้โอกาส **ปลอดการชัก** สูงสุดในผู้ที่เหมาะสม",
+   "pearl": "VNS = adjunct ลดชักได้ถึง ~50% ในบางราย ไม่หายขาด — สำหรับคนที่ผ่าตัดไม่ได้",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Vagus Nerve Stimulation (VNS) / Non-Pharmacological Treatments"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-29",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Ketogenic diet",
+   "stem": "The parents of a 5-year-old girl with Lennox-Gastaut syndrome, whose seizures persist despite three appropriate antiseizure medications, ask about the ketogenic diet. Which statement is correct?",
+   "choices": [
+    "It is a high-protein, low-fat diet that works by lowering blood glucose",
+    "It is effective only in adults and should not be used in children",
+    "It should replace antiseizure medication as first-line therapy for newly diagnosed epilepsy",
+    "Families can start it safely at home without specialist supervision",
+    "It is a high-fat, very-low-carbohydrate diet that induces ketosis, is particularly effective in children and requires specialist dietetic supervision"
+   ],
+   "answer": 4,
+   "explain": "**Ketogenic diet** ตามสไลด์\n- อาหาร **ไขมันสูง คาร์โบไฮเดรตต่ำมาก** → ร่างกายเผาไขมันเป็น ketone → **ketosis**\n- **มีหลักฐานใน NICE guidelines** ว่าลดความถี่การชักใน **drug-resistant epilepsy**\n- **ได้ผลดีเป็นพิเศษในเด็ก** แต่ผู้ใหญ่ก็ได้ประโยชน์\n- **ต้องมีนักกำหนดอาหารเฉพาะทางดูแลและติดตาม**\n\n**กลไกโดยสรุป** — สมองเปลี่ยนไปใช้ ketone เป็นพลังงาน ส่งผลเพิ่มการยับยั้ง ลดความตื่นตัวและการยิงพร้อมกันของ neuron — ดันสมดุล excitation/inhibition กลับเช่นเดียวกับยา\n\n**เด็กรายนี้เหมาะ** — LGS เป็น DEE ที่ **ดื้อยาในผู้ป่วยส่วนใหญ่** และไม่มี focus เดียวที่ตัดออกได้\n\n**ทำไมข้ออื่นผิด**\n- **โปรตีนสูงไขมันต่ำ** — กลับด้าน เป้าหมายคือ ketosis\n- **ใช้แค่ผู้ใหญ่** — ตรงข้าม ได้ผลดีเป็นพิเศษในเด็ก\n- **แทนยาตั้งแต่ต้น** — เป็นการรักษาสำหรับ drug-resistant epilepsy ไม่ใช่ first-line\n- **ทำเองที่บ้าน** — เสี่ยง hypoglycaemia ภาวะกรด นิ่วไต ขาดสารอาหาร การเจริญเติบโตช้า ต้องมีทีมดูแล",
+   "pearl": "Ketogenic diet = ไขมันสูง คาร์บต่ำมาก ได้ผลดีในเด็กดื้อยา ต้องมีนักกำหนดอาหารดูแล",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Ketogenic Diets for Drug-Resistant Epilepsy"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-MCQ-30",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "SUDEP — definition",
+   "stem": "Which of the following deaths in a person with epilepsy best fits the definition of sudden unexpected death in epilepsy (SUDEP)?",
+   "choices": [
+    "A woman who drowned in the bath during a seizure",
+    "A man found dead in bed in the morning, with no trauma, no drowning and no other cause found at autopsy",
+    "A man who died after 2 hours of convulsive status epilepticus",
+    "A woman who died of a head injury after falling during an atonic seizure",
+    "A man who died of aspiration pneumonia 5 days after a seizure"
+   ],
+   "answer": 1,
+   "explain": "**นิยาม SUDEP (ตามสไลด์)** — การเสียชีวิต **ฉับพลัน ไม่คาดคิด ไม่ได้เกิดจากอุบัติเหตุ (non-traumatic) และไม่ใช่จมน้ำ (non-drowning)** ในผู้ป่วยโรคลมชัก **จะมีหรือไม่มีหลักฐานว่าเกิดการชักก็ได้ และไม่รวม status epilepticus** — ผ่าศพแล้วไม่พบสาเหตุอื่น\n\nภาพที่พบบ่อยที่สุดคือ **พบเสียชีวิตบนเตียงตอนเช้า มักนอนคว่ำ** มักตามหลัง GTC ตอนกลางคืน — เชื่อว่าเกิดจากการกดการหายใจและหัวใจหลังชัก\n\n**ทำไมข้ออื่นไม่ใช่ SUDEP**\n- **จมน้ำ** — ถูกตัดออกจากนิยามโดยตรง\n- **Status epilepticus** — ถูกยกเว้นในนิยาม\n- **บาดเจ็บศีรษะ** — traumatic death\n- **Aspiration pneumonia** — มีสาเหตุชัดเจนและไม่ฉับพลัน\n\n**ความสำคัญ** — SUDEP เป็น **สาเหตุการตายที่เกี่ยวกับโรคลมชักที่พบบ่อยที่สุด** ปัจจัยเสี่ยงที่แก้ไขได้: **ชักตอนกลางคืน คุมการชักไม่ดี นอนคนเดียว** — แพทย์ควร **พูดเรื่องนี้กับผู้ป่วยและผู้ดูแลอย่างเปิดเผย**",
+   "pearl": "SUDEP: ตายฉับพลัน ไม่ใช่อุบัติเหตุ ไม่ใช่จมน้ำ ไม่ใช่ status — ภาพคลาสสิกคือพบเสียชีวิตบนเตียงตอนเช้า",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — Reducing Risk of Mortality, Including SUDEP"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "NEU-EPI-MEQ-01",
+   "part": "MEQ",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "Mesial temporal lobe epilepsy — classification, drug choice in a woman planning pregnancy, pseudoresistance and surgery",
+   "vignette": "หญิงไทยอายุ 28 ปี อาชีพพนักงานบัญชี\nCC: มีอาการ \"เหม่อ ทำปากขมุบขมิบ\" เป็นพัก ๆ มา 2 ปี และชักเกร็งกระตุกทั้งตัว 1 ครั้งเมื่อวาน\nPI: 2 ปีก่อน เริ่มมีอาการจุกแน่นลิ้นปี่แล้วรู้สึกลอยขึ้นมาที่คอ ร่วมกับรู้สึกคุ้นเคยเหมือนเคยอยู่ในเหตุการณ์นี้มาก่อน ประมาณ 10 วินาที หลังจากนั้นเพื่อนร่วมงานเห็นผู้ป่วยนั่งเหม่อ เรียกไม่ตอบ ทำปากขมุบขมิบ มือคลำเสื้อ นานราว 1 นาที แล้วสับสน พูดไม่ค่อยรู้เรื่องอีกประมาณ 10 นาที ผู้ป่วยจำช่วงที่เหม่อไม่ได้ เป็นเดือนละ 2–3 ครั้ง อาการเหมือนเดิมทุกครั้ง ยังไม่เคยไปพบแพทย์\nเมื่อวานขณะนั่งดูโทรทัศน์ เริ่มด้วยอาการแบบเดิม แล้วสามีเห็นหน้าและตาหันไปทางขวาค้างไว้ไม่กี่วินาที ตามด้วยเกร็งและกระตุกทั้งตัวประมาณ 2 นาที หลังชักซึมสับสนประมาณ 30 นาที และแขนขวาอ่อนแรงอยู่ราว 1 ชั่วโมงแล้วหายเป็นปกติ\nPH: ตอนอายุ 1 ปี เคยชักจากไข้นานประมาณ 40 นาที ต้องนอนโรงพยาบาล หลังจากนั้นพัฒนาการปกติ เรียนจบปริญญาตรี\nปฏิเสธโรคประจำตัวอื่น ไม่ดื่มสุรา ไม่ใช้สารเสพติด นอนวันละ 7 ชั่วโมง\nยา: ยาเม็ดคุมกำเนิดชนิดฮอร์โมนรวม (combined oral contraceptive) วางแผนจะมีบุตรภายใน 1–2 ปี\nFHx: ไม่มีประวัติโรคลมชักในครอบครัว\nPE: V/S: BT 36.8 C, PR 80/min, BP 118/72 mmHg, RR 16/min\nHEENT: มีแผลกัดที่ขอบด้านข้างของลิ้นซ้าย\nNeuro: รู้สึกตัวดี orientation ปกติ, cranial nerves ปกติ, motor power grade V ทุกแขนขา, DTR 2+ เท่ากัน, Babinski negative, ไม่มี focal deficit\nLab: capillary glucose 96 mg/dL, Na 139, K 4.0, Ca 9.2 mg/dL, CBC ปกติ, urine β-hCG negative",
+   "questions": [
+    {
+     "q": "1. จงจำแนกชนิดการชักทั้งสองแบบตาม ILAE ระบุตำแหน่งที่น่าจะเป็นต้นกำเนิด และบอกว่าผู้ป่วยเข้าเกณฑ์โรคลมชักหรือไม่ พร้อมเหตุผล (4 คะแนน)",
+     "a": "**การจำแนก**\n- อาการเป็นประจำ: **focal onset** เริ่มเป็น **focal aware** (autonomic aura = จุกแน่นลิ้นปี่ลอยขึ้น + cognitive aura = déjà vu) แล้วดำเนินเป็น **focal impaired awareness seizure** ร่วมกับ **automatism** (oroalimentary — ทำปากขมุบขมิบ, manual — คลำเสื้อ) และ post-ictal confusion\n- เมื่อวาน: **focal to bilateral tonic-clonic seizure** (เดิมเรียก secondary generalization)\n\n**ตำแหน่ง — left mesial temporal lobe**\n| เบาะแส | ความหมาย |\n|---|---|\n| Epigastric rising + déjà vu | aura แบบฉบับของ **mesial temporal** |\n| Automatism นาน ~1 นาที + สับสนหลังชัก | **temporal lobe** (ต่างจาก frontal ที่สั้น ถี่ ขณะหลับ สับสนน้อย) |\n| พูดไม่รู้เรื่องหลังชัก | เกี่ยวกับซีกที่คุมภาษา (มักซีก **ซ้าย**) |\n| **หน้าและตาหันไปทางขวา** ก่อนชักทั้งตัว | การชักแบบ irritative ดันตาหนี focus → focus ซีก **ซ้าย** |\n| **แขนขวาอ่อนแรง 1 ชม. (Todd's paralysis)** | ยืนยัน focal onset ซีก **ซ้าย** |\n| ชักจากไข้นาน 40 นาทีตอน 1 ขวบ | ปัจจัยเสี่ยงของ **hippocampal sclerosis** |\n\n**เข้าเกณฑ์โรคลมชัก** — ใช่ ตาม **ILAE ข้อ 1**: มี **unprovoked seizure ≥ 2 ครั้งห่างกัน > 24 ชม.** (focal impaired awareness เดือนละ 2–3 ครั้งมา 2 ปี ก็คือการชัก) ไม่มีตัวกระตุ้นเฉียบพลัน — น้ำตาล เกลือแร่ปกติ ไม่ดื่มสุรา ไม่ได้อดนอน\n\n**จุดที่ต้องระวัง** — ถ้าซักประวัติเฉพาะเหตุการณ์เมื่อวานจะจัดผิดเป็น generalized onset และเลือกยาผิด สไลด์ย้ำว่าต้องถามหา aura และทิศการหันหน้าเสมอ"
+    },
+    {
+     "q": "2. จงระบุการสืบค้นที่ควรทำ ผลที่คาดว่าจะพบ และการแปลผลหาก EEG ครั้งแรกปกติ (3 คะแนน)",
+     "a": "**1) MRI สมอง (epilepsy protocol)** — coronal T2/FLAIR บาง ๆ ตั้งฉากกับ hippocampus\n- คาดว่าพบ **left hippocampal sclerosis**: hippocampus ซ้ายฝ่อ, T2/FLAIR signal สูง, โครงสร้างภายในหายไป\n- สไลด์: MRI ใช้หา **structural causes of focal epilepsy** (hippocampal sclerosis, cortical dysplasia, tumour)\n\n**2) EEG**\n- คาดว่าพบ **left anterior/mid temporal spikes หรือ sharp waves** (focal discharge)\n- ถ้าครั้งแรกปกติ → **sleep-deprived EEG**, บันทึกขณะหลับ, ทำซ้ำ หรือ prolonged/video-EEG\n\n**3) Lab พื้นฐาน** — glucose, electrolytes (ทำแล้วปกติ — ตัด provoked seizure), CBC, LFT, creatinine เป็น baseline ก่อนเริ่มยา, β-hCG (negative)\n\n**การแปลผล** — **EEG และ MRI เป็นตัวสนับสนุน ไม่ใช่ตัววินิจฉัย** *\"a normal EEG does not exclude epilepsy, and an abnormal EEG alone is not sufficient to diagnose it\"* — ถ้า EEG ปกติก็ **ยังวินิจฉัยและเริ่มยาได้** จากประวัติที่ชัดเจน"
+    },
+    {
+     "q": "3. จงเลือกยากันชักตัวแรกที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ พร้อมเหตุผล และระบุยาที่ควรหลีกเลี่ยง รวมถึงประเด็นยาคุมกำเนิด (4 คะแนน)",
+     "a": "**หลักการ** — เลือกยาตาม **ชนิดการชัก (focal)** + **อายุและเพศ (หญิงวัยเจริญพันธุ์ วางแผนมีบุตร)** + **ยาที่ใช้อยู่ (COC)** + ความต้องการของผู้ป่วย\n\n**ยาที่ใช้ได้สำหรับ focal onset ในผู้ใหญ่ (ตามสไลด์)**\n- ILAE 2013 Level A: **CBZ, PHT, LEV, ZNS**\n- NICE: first line **CBZ, LTG** · second line **LEV, OXC, VPA**\n\n**ยาที่เลือก — lamotrigine หรือ levetiracetam**\n- **Lamotrigine** — first line ของ NICE สำหรับ focal และเป็นยาที่ความเสี่ยงต่อทารกต่ำที่สุดตัวหนึ่ง · ต้อง **ไต่ขนาดช้า ๆ** เพื่อลดความเสี่ยงผื่น/SJS · **estrogen ใน COC และการตั้งครรภ์ทำให้ระดับ lamotrigine ลดลง** ต้องติดตามอาการ/ระดับยาและปรับขนาด\n- **Levetiracetam** — Level A สำหรับ focal ความเสี่ยงต่อทารกต่ำ ไม่มี interaction กับฮอร์โมน · ระวังอารมณ์หงุดหงิด ซึมเศร้า\n\n**ยาที่ควรหลีกเลี่ยง**\n- **Valproate** — teratogen ชัดเจน (NTD, ความพิการแต่กำเนิด, IQ ของเด็กลดลง) ห้ามในหญิงที่วางแผนตั้งครรภ์\n- **Enzyme inducer: carbamazepine, phenytoin** (รวมถึง oxcarbazepine และ topiramate ขนาด > 200 mg/วัน) — **ลดประสิทธิภาพยาคุมกำเนิดฮอร์โมน** เสี่ยงตั้งครรภ์โดยไม่ตั้งใจ และ phenytoin/carbamazepine มีความเสี่ยงต่อทารกสูงกว่า LTG/LEV\n\n**ประเด็นอื่นที่ต้องทำ**\n- ให้ **folic acid** ทุกวันตั้งแต่ก่อนตั้งครรภ์\n- พิจารณาคุมกำเนิดที่ไม่ขึ้นกับ interaction เช่น **ห่วงอนามัย (copper IUD หรือ LNG-IUS)** จนกว่าจะพร้อมตั้งครรภ์\n- เริ่มด้วย **monotherapy** และวางแผนการตั้งครรภ์ร่วมกับสูติแพทย์"
+    },
+    {
+     "q": "4. หนึ่งปีต่อมา ผู้ป่วยได้ lamotrigine 100 mg/วัน ยังมี focal impaired awareness seizure เดือนละ 1–2 ครั้ง ไม่มีผลข้างเคียง ท่านจะประเมินและจัดการอย่างไร (4 คะแนน)",
+     "a": "**ขั้นแรก — Rule out pseudoresistance ก่อนเสมอ** (สไลด์: *\"Rule Out Pseudoresistance First !!\"*)\n| สาเหตุ | สิ่งที่ทำในรายนี้ |\n|---|---|\n| **กินยาไม่สม่ำเสมอ** | ถามแบบไม่ตัดสิน ตรวจ **serum lamotrigine level** |\n| **เหตุการณ์ไม่ใช่การชักจริง** | อาการ stereotyped เข้ากับ mesial TLE แต่ทบทวนกับผู้เห็นเหตุการณ์ |\n| **วินิจฉัยผิด** | ทบทวน semiology, EEG, MRI |\n| **ยาผิดชนิดการชัก** | lamotrigine เหมาะกับ focal — ไม่ใช่ปัญหา |\n| **ขนาดยาไม่พอ** | **100 mg/วันยังต่ำ** ร่วมกับ **COC ที่ลดระดับ lamotrigine** → น่าจะเป็นสาเหตุหลัก |\n| **วิถีชีวิต** | อดนอน แอลกอฮอล์ ความเครียด |\n\n**การจัดการ**\n- **ไต่ขนาด lamotrigine ขึ้น** จนคุมได้หรือถึง **ขนาดสูงสุดที่ทนได้** (ใช้ระดับยาช่วยดู)\n- ถ้าถึงขนาดสูงสุดที่ทนได้แล้วยังชัก ตาม decision framework\n  - **ไม่ได้ผลเลย** → replace หรือ add-on\n  - **ทนไม่ได้** → **replacement**\n  - ผู้ป่วยเป็น **หญิงวัยเจริญพันธุ์ที่วางแผนมีบุตร** → สไลด์ระบุว่า **replacement monotherapy** เหมาะกว่า (เช่นเปลี่ยนเป็น levetiracetam โดยมีช่วงทับซ้อน)\n  - ถ้าเลือก add-on ต้องเป็นยา **คนละกลไก** — **ห้ามจับคู่ sodium channel blocker สองตัว** (เช่น LTG + CBZ/OXC) เพราะผลข้างเคียงเพิ่มแต่ประสิทธิผลลด"
+    },
+    {
+     "q": "5. สามปีต่อมา ผู้ป่วยยังชักเดือนละครั้งแม้ได้ lamotrigine และ levetiracetam ในขนาดสูงสุดที่ทนได้ กินยาสม่ำเสมอ MRI พบ left hippocampal sclerosis ท่านจะวินิจฉัยภาวะนี้ว่าอะไร และให้การดูแลต่ออย่างไร (3 คะแนน)",
+     "a": "**Drug-resistant (pharmacoresistant) epilepsy** — ล้มเหลวจากยา **2 สูตรที่เหมาะสม ทนได้ และขนาดเพียงพอ** (ราว **1 ใน 3** ของผู้ป่วยตามสไลด์) โอกาสปลอดการชักจากการเพิ่มยาตัวถัดไปต่ำมาก\n\n**ส่งศูนย์โรคลมชักเพื่อประเมินผ่าตัด (presurgical evaluation)**\n- **Video-EEG monitoring** ยืนยันว่าการชักทุกครั้งมาจาก left mesial temporal\n- MRI epilepsy protocol (มีแล้ว), **neuropsychological testing** (ความจำ ภาษา), ± fMRI/Wada, PET\n- ถ้าข้อมูลสอดคล้องกัน → **anterior temporal lobectomy / selective amygdalohippocampectomy**\n\n**เหตุผล** — สไลด์: ผู้ที่ได้ประโยชน์คือ *\"a clearly identifiable seizure focus that can be safely removed without affecting critical neurological function\"* — mesial TLE จาก hippocampal sclerosis คือกลุ่มที่ผ่าตัดได้ผลดีที่สุด (RCT ของ Wiebe 2001: ปลอดการชักที่ 1 ปี **58% เทียบกับ 8%** ในกลุ่มรักษาด้วยยา)\n\n**ทางเลือกถ้าผ่าตัดไม่ได้** — **VNS** (ลดชักได้ถึง 50% ในบางราย ไม่หายขาด), ketogenic diet (หลักฐานดีในเด็กมากกว่า), ยาใหม่\n\n> ไม่ควรรอเพิ่มยาไปเรื่อย ๆ — การส่งประเมินผ่าตัดมักช้าเกินไปหลายปี"
+    },
+    {
+     "q": "6. จงให้คำแนะนำเรื่องความปลอดภัย SUDEP และการตั้งครรภ์แก่ผู้ป่วยรายนี้ (2 คะแนน)",
+     "a": "**SUDEP** — พูดอย่างเปิดเผยตามที่สไลด์แนะนำ\n- นิยาม: เสียชีวิตฉับพลัน ไม่คาดคิด ไม่ใช่อุบัติเหตุหรือจมน้ำ ไม่รวม status epilepticus — **สาเหตุการตายที่เกี่ยวกับโรคลมชักที่พบบ่อยที่สุด**\n- ปัจจัยเสี่ยงที่แก้ได้: **ชักกลางคืน · คุมชักไม่ดี · นอนคนเดียว** → กินยาสม่ำเสมอ ไม่หยุดยาเอง ให้สามีรู้วิธีช่วย พิจารณา seizure alarm\n\n**ความปลอดภัยในชีวิตประจำวัน**\n- **งดขับรถ** จนกว่าจะปลอดการชักตามระยะที่กฎหมาย/แพทย์กำหนด\n- **ไม่ว่ายน้ำคนเดียว อาบน้ำฝักบัวแทนแช่อ่าง** เลี่ยงที่สูง เครื่องจักร ไฟ\n- สอนครอบครัว **ปฐมพยาบาล**: จับนอนตะแคง ป้องกันศีรษะ **ไม่ใส่อะไรเข้าปาก** จับเวลา โทร 1669 ถ้าชักนานเกิน 5 นาทีหรือชักซ้ำไม่ฟื้น\n- ใช้ **seizure diary** และคัดกรอง **ซึมเศร้า วิตกกังวล**\n\n**การตั้งครรภ์**\n- **วางแผนก่อนตั้งครรภ์** ร่วมกับประสาทแพทย์และสูติแพทย์ ใช้ **monotherapy ขนาดต่ำสุดที่คุมได้**\n- **folic acid** ทุกวันตั้งแต่ก่อนตั้งครรภ์ · **ห้ามหยุดยาเองเมื่อรู้ว่าตั้งครรภ์**\n- ระดับ **lamotrigine ลดลงมากระหว่างตั้งครรภ์** ต้องติดตามระดับยา/อาการและปรับขนาด\n- ให้นมบุตรได้โดยทั่วไป"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ เลี่ยนเครือ — Epilepsy: Understanding and Navigating a Complex Neurological Condition",
+    "NICE NG217 (2022) Epilepsies in children, young people and adults",
+    "Wiebe S, et al. A randomized, controlled trial of surgery for temporal-lobe epilepsy. N Engl J Med 2001;345:311-318"
+   ],
+   "nl": [
+    "2.1.22",
+    "2.3.6"
+   ]
+  },
+  {
+   "id": "NEU-EPI-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "N03",
+   "lecture": "Epilepsy (อ.พิมลพรรณ)",
+   "topic": "SAQ – เลือกยากันชักให้ตรงชนิดการชักและกลุ่มอาการ",
+   "station": "SAQ เขียนตอบ 10 นาที (6 สถานการณ์)",
+   "instruction": "สไลด์ย้ำว่า \"ASM choice should be matched to the seizure type, epilepsy type or epileptic syndrome\"\nสำหรับแต่ละสถานการณ์ จงระบุ (ก) ชนิดการชัก/กลุ่มอาการ (ข) ยากันชักที่เลือก 1 ตัวพร้อมเหตุผลสั้น ๆ (ค) ยาที่ต้องหลีกเลี่ยงอย่างน้อย 1 ตัวพร้อมเหตุผล\n\n1. เด็กหญิงอายุ 7 ปี เหม่อค้างวันละหลายสิบครั้ง ครั้งละ 5–10 วินาที ฟื้นทันที hyperventilation กระตุ้นได้ EEG 3 Hz generalized spike-and-wave ไม่เคยชักทั้งตัว\n2. ชายอายุ 18 ปี สะดุ้งแขนสองข้างตอนเช้าหลังตื่นมา 2 ปี และชักทั้งตัวหลังอดนอน 1 ครั้ง\n3. หญิงอายุ 22 ปี อาการเหมือนข้อ 2 ทุกประการ ยังไม่วางแผนมีบุตรในตอนนี้\n4. ชายอายุ 40 ปี ชักแบบ focal impaired awareness จากรอยแผลเป็นเก่าที่ temporal lobe ขวา ไม่มีโรคร่วม\n5. หญิงอายุ 80 ปี ชัก focal หลัง stroke เก่า กิน warfarin และมี hyponatremia ง่าย\n6. เด็กอายุ 14 เดือน ชักจากไข้ที่นานผิดปกติหลายครั้ง บางครั้งเป็นข้างเดียว ตรวจพบ SCN1A mutation",
+   "answer": "**เกณฑ์ให้คะแนน (18 คะแนน — ข้อละ 3: ชนิด 1 · ยาที่เลือก 1 · ยาที่หลีกเลี่ยง 1)**\n\n| ข้อ | (ก) ชนิดการชัก/กลุ่มอาการ | (ข) ยาที่เลือก | (ค) ยาที่หลีกเลี่ยง |\n|---|---|---|---|\n| 1 | **Childhood absence epilepsy** (generalized) | **Ethosuximide** (ปิด T-type Ca²⁺ ใน thalamus — absence อย่างเดียว) หรือ valproate | **Carbamazepine, oxcarbazepine, phenytoin** — ทำให้ absence แย่ลง · vigabatrin/tiagabine อาจกระตุ้น absence status |\n| 2 | **Juvenile myoclonic epilepsy** (myoclonic + GTC) | **Valproate** — ครอบคลุม myoclonic, GTC, absence (ผู้ชายไม่ติดข้อจำกัด teratogenicity) | **CBZ, OXC, PHT, gabapentin, pregabalin** — ทำให้ myoclonic/absence แย่ลง |\n| 3 | **JME ในหญิงวัยเจริญพันธุ์** | **Levetiracetam** (ทางเลือก: lamotrigine ระวัง myoclonic แย่ลงในบางราย) + folic acid + คุมกำเนิด | **Valproate** — teratogen (NTD, IQ ของเด็กลดลง) · และ CBZ/PHT เหมือนข้อ 2 |\n| 4 | **Focal onset (focal impaired awareness) จากรอยโรคโครงสร้าง** | **Carbamazepine หรือ lamotrigine** (NICE first line) หรือ levetiracetam (ILAE Level A: CBZ, PHT, LEV, ZNS) | ไม่มีข้อห้ามเด็ดขาด — ถ้าต้องใช้สองตัว **ห้ามจับคู่ sodium channel blocker สองตัว** · เลี่ยง ethosuximide (ไม่คุม focal) |\n| 5 | **Focal epilepsy ในผู้สูงอายุ (remote symptomatic)** | **Lamotrigine** (ILAE Level A ในผู้สูงอายุ: GBP, LTG) หรือ levetiracetam | **Carbamazepine/oxcarbazepine** (hyponatremia, enzyme induction ลดฤทธิ์ warfarin) · **phenytoin** (interaction กับ warfarin, ซึม เดินเซ) |\n| 6 | **Dravet syndrome** (DEE, SCN1A) | **Valproate** หรือ **clobazam** (+ stiripentol, fenfluramine, cannabidiol ในผู้เชี่ยวชาญ) | **Sodium channel blocker ทุกตัว — carbamazepine, oxcarbazepine, phenytoin, lamotrigine** — ทำให้ชักแย่ลง (SCN1A ทำให้ inhibitory interneuron ทำงานบกพร่องอยู่แล้ว) |\n\n**หลักการที่ผู้สอบควรเขียนได้ (ให้คะแนนรวมในแต่ละข้อ)**\n- ยา **sodium channel blocker** (CBZ, OXC, PHT, LTG) เหมาะกับ **focal** แต่ **ทำให้ generalized (myoclonic, absence) และ Dravet แย่ลง**\n- **Valproate** ดีที่สุดสำหรับ generalized/GTC (NICE first line) แต่ **เลี่ยงในหญิงวัยเจริญพันธุ์**\n- เลือกยาตาม **ชนิดการชัก + อายุ + เพศ + โรคร่วมและยาที่ใช้อยู่ + ความต้องการของผู้ป่วย**\n\n**หักคะแนน** — ให้ carbamazepine ในข้อ 1, 2, 3 หรือ 6 (ข้อละ −2) · ให้ valproate ในข้อ 3 โดยไม่ระบุข้อจำกัด · ตอบยาโดยไม่ระบุชนิดการชัก",
+   "ref": [
+    "สไลด์ อ.พิมลพรรณ — ASM choice should be matched to the seizure type, epilepsy type or epileptic syndrome; ILAE 2013 / NICE 2020 tables; Dravet Syndrome",
+    "NICE NG217 (2022)",
+    "Glauser T, et al. Epilepsia 2013;54:551-563"
+   ],
+   "nl": [
+    "2.3.6"
+   ]
+  }
+ ]
+}
