@@ -279,7 +279,7 @@ angiotensinogen (ตับ) → **renin** → Ang I → **ACE** (endothelium โ
 ↑ blood volume → atrial myocyte ถูกยืด → ANP →
 - CVS center: ↓ sympathetic → ↓ BP · hypothalamus: **↓ ADH** · adrenal: **↓ aldosterone**
 - ไต: **↓ renin** (→ ↓ Ang II) · **afferent arteriole ขยาย** → ↑ RBF · **mesangial (GMC) คลาย** → ↑ GFR · **↓ ดูด Na ที่ P cell**
-- ผลรวม **↑ ขับ NaCl และน้ำ** (✍️ ANP เป็นตัวเดียวในกลุ่มที่ "ขับ" Na)
+- ผลรวม **↑ ขับ NaCl และน้ำ** (✍️ ลายมือ: ANP เป็นตัวเดียวที่ตอบสนองต่อภาวะน้ำเกิน)
 
 #### ทำไมถึงมีอาการนี้
 | ภาวะ | กลไก | ผลที่เห็น |
@@ -343,7 +343,7 @@ osmoreceptor รับรู้การเปลี่ยนแปลงคว�
 
 ### Thirst center (สไลด์ Thirst center)
 กระตุ้นด้วย ↑ osmolality (สำคัญที่สุด) · ↓ ปริมาตร atrium · ↓ BP · **↑ Ang II** · ปากแห้ง
-✍️ **กระเพาะที่ยืดจากการดื่ม ยับยั้งความกระหายก่อนที่น้ำจะถูกดูดซึม** — ป้องกันการดื่มเกิน
+**กระเพาะที่ยืดจากการดื่ม ยับยั้งความกระหายก่อนที่น้ำจะถูกดูดซึม** (สไลด์ Thirst center) — ป้องกันการดื่มเกิน
 
 #### ทำไมถึงมีอาการนี้
 | ภาวะ | กลไก | ผลที่ตรวจพบ |
@@ -390,9 +390,9 @@ sec("nephro-phy2-06", "ร่างกายตอบสนองแบบบู
 - flow ช้า → solute wash-out ลดลง ไตเข้มข้นได้มากขึ้น
 
 ### Hyposmotic volume expansion — ดื่มน้ำมาก
-↓ Posm → **ADH ถูกกด** + ไม่กระหาย · ↑ ANP · ↓ sympathetic → ↓ renin/Ang II/aldo · ↑ GFR · ↓ FF → **water diuresis**: ปัสสาวะมาก จาง **Uosm/Posm < 1** CH2O เป็นบวก · ✍️ ไตขับ Na เพิ่มเล็กน้อยด้วย
+↓ Posm → **ADH ถูกกด** + ไม่กระหาย · ↑ ANP · ↓ sympathetic → ↓ renin/Ang II/aldo · ↑ GFR · ↓ FF → **water diuresis**: ปัสสาวะมาก จาง **Uosm/Posm < 1** CH2O เป็นบวก · สไลด์: osmolar clearance เพิ่มเล็กน้อย (ขับ Na เพิ่มนิดหน่อย)
 ### Hyperosmotic volume expansion — กินเค็ม (สไลด์ Salty diet)
-↑ Posm → ↑ ADH + ดื่มน้ำ → Posm กลับปกติ **อย่างรวดเร็ว** · แต่ BV ที่เพิ่ม → ↑ ANP ↓ RAAS ↓ sympathetic → **ขับ NaCl และน้ำ (ช้า)** จนปริมาตรกลับ — ✍️ หลังกินเค็มจึงคอแห้งก่อน แล้วค่อยปัสสาวะมาก
+↑ Posm → ↑ ADH + ดื่มน้ำ → Posm กลับปกติ **อย่างรวดเร็ว** · แต่ BV ที่เพิ่ม → ↑ ANP ↓ RAAS ↓ sympathetic → **ขับ NaCl และน้ำ (ช้า)** จนปริมาตรกลับ — หลังกินเค็มจึงคอแห้งก่อน แล้วค่อยปัสสาวะมาก
 ### ออกกำลังกาย (สไลด์ Exercise)
 เหงื่อ + หายใจทางปาก (insensible loss เพิ่มเพราะ VT และ RR สูง) → เสียน้ำ > solute → ↑ ADH + กระหาย · sympathetic จาก central command → afferent หด ↓ RBF/GFR · RAAS ↑ → **antidiuresis**
 
@@ -500,6 +500,572 @@ Na ในเลือดต่ำเกือบทุกรายเกิด�
          "- **thiamine (Wernicke)** — สับสน ตากระตุก ataxia ไม่ใช่ quadriparesis + dysphagia หลังแก้ Na\n- **hyponatremia ค้าง** — Na ถูกแก้ไปแล้ว",
          "Na ขึ้นเร็วใน hyponatremia เรื้อรัง → น้ำออกจากเซลล์สมอง → ODS", "Osmotic demyelination", R("Water shift between compartment", "European hyponatraemia guideline 2014", "Verbalis Am J Med 2013"), [LYTE, LYTE_B, CONF, WEAK])],
     [LYTE, LYTE_B, SIADH, SIADH_B, CONF, SEIZ], {"siadh": F.siadh(), "ods": F.ods()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 8
+sec("nephro-phy2-08", "Potassium I — K กำหนด RMP · ผลต่อกล้ามเนื้อและหัวใจ · การย้าย K เข้า-ออกเซลล์",
+    "98% ของ K อยู่ในเซลล์ · K สูง/ต่ำทำให้อ่อนแรงต่างกลไก · ECG · insulin β2 aldosterone acid-base และ osmolality", 9,
+"""### ทำไม K สำคัญ (สไลด์ Potassium)
+[K]ECF และกระแส K ที่รั่วออกทาง **leak K channel** เป็นตัวกำหนด **resting membrane potential (RMP)** ของเซลล์ที่กระตุ้นได้ โดยเฉพาะกล้ามเนื้อลายและหัวใจ · K ในเลือดเปลี่ยน → RMP เปลี่ยน → การทำงานของกล้ามเนื้อและหัวใจเปลี่ยน
+- ค่าปกติ **3.5–5.0 mEq/L** · ECF มี K ทั้งหมดเพียง ~65 mmol ขณะที่กล้ามเนื้อมี ~2,600 mmol (✍️ ส่วนใหญ่อยู่ในเซลล์) · กินวันละ ~100 mmol
+- กลไกคุม K มี 2 ชั้น: **(1) shift เข้า-ออกเซลล์ (นาที)** **(2) ไตดูดกลับ/ขับ (ชั่วโมง)** — หัวข้อ 9
+
+### กล้ามเนื้อ (สไลด์ Neuromuscular function)
+[[fig:k_rmp]]
+| | กลไก | อาการ |
+|---|---|---|
+| **K สูง ระยะแรก** | ↓ K efflux → ประจุบวกค้างในเซลล์ → RMP ดีโพลาไรซ์เข้าใกล้ threshold → ไวขึ้น | กล้ามเนื้อกระตุก ตะคริว |
+| **K สูง ระยะหลัง** | ดีโพลาไรซ์ค้าง → **voltage-gated Na channel ถูก inactivate** | อ่อนแรงปวกเปียก |
+| **K ต่ำ** | ↑ K efflux → RMP hyperpolarize ห่างจาก threshold | อ่อนแรงปวกเปียก (ตะคริว ileus ด้วย) |
+
+### หัวใจ (สไลด์ Cardiac function · ECG)
+| ระดับ K | กลไก | ECG / อาการ |
+|---|---|---|
+| K สูง: mild 5.5–6.5 · moderate 6.5–8 · severe > 8 | ↑ K channel เปิดใน phase 3 → repolarize เร็ว | **T สูงแหลม** → VT/VF |
+| | RMP ดีโพลาไรซ์ → Na channel inactivate → phase 0 ช้า | P กว้างแบน · **PR ยาว · QRS กว้าง · sine wave** → bradycardia, sinus arrest |
+| K ต่ำ | ↓ K channel ใน phase 3 → repolarize ช้า | **T แบน · U เด่น · ST depression** · P สูงเล็กน้อย → arrhythmia |
+ตัวอย่างในสไลด์: K 7.0 → T สูงแหลมสมมาตร · K 9.0 (rhabdomyolysis) → T ใหญ่มาก sine wave · K 1.7 → ST depression T กลับหัว U เด่น QU ยาว
+
+### Shift — ใครดึง K เข้าเซลล์ (สไลด์ K shift · Table 5.4)
+[[fig:k_shift]]
+- **aldosterone, insulin, epinephrine (β2)** → ↑ Na/K-ATPase ในกล้ามเนื้อ กระดูก ตับ RBC → K เข้าเซลล์ → **↓ PK** · หลังกินอาหาร insulin ช่วย "เก็บ" K ไว้ในเซลล์ก่อนที่ไตจะขับทัน
+- **α-adrenergic** → ↓ Na/K-ATPase → ↑ PK
+- **acid-base**: metabolic acidosis → ยับยั้ง Na/K-ATPase + H เข้าเซลล์แลก K ออก → ↑ PK · alkalosis ตรงข้าม
+- ⚠️ **สไลด์ย้ำ**: การแลก H/K **ไม่เกิดใน respiratory acid-base disorder หรือ metabolic acidosis จากกรดอินทรีย์** (lactate ketone เข้าเซลล์ไปพร้อม H) — K สูงใน DKA จึงมาจาก **ขาด insulin + Posm สูง** มากกว่า
+- ออกนอกเซลล์อื่น ๆ: Posm สูง (น้ำออก K ตาม — solvent drag) · digitalis (ยับยั้ง pump) · ออกกำลังกาย (ATP ↓ → ATP-sensitive K channel เปิด) · เซลล์แตก (hemolysis rhabdomyolysis) · β-blocker
+
+#### ทำไมถึงมีอาการนี้ — และทำไมรักษาแบบนั้น
+| สถานการณ์ | กลไก |
+|---|---|
+| ให้ **Ca gluconate** ทันทีเมื่อ ECG เปลี่ยนใน K สูง | Ca ยก threshold ขึ้น (หัวข้อ 10) → คืนระยะห่าง RMP–threshold ให้ Na channel ใช้งานได้ — ไม่ได้ลด K |
+| ให้ **insulin + glucose**, **salbutamol** | ดึง K เข้าเซลล์ภายใน 15–30 นาที (ชั่วคราว) |
+| เจาะเลือดรัดแขนนาน/กำมือ หรือเลือด hemolysis | K หลุดจากเซลล์ในหลอด → **pseudohyperkalemia** ECG ปกติ |
+| ผู้ป่วยหอบหืดพ่นยาถี่ | β2 → K เข้าเซลล์ → K ต่ำ อ่อนแรง |
+> แถวการรักษาเติมจากตำรา (Boron · KDIGO/UK Kidney Association hyperkalaemia guideline) — สไลด์สอนกลไก shift
+""",
+    ["K อยู่ในเซลล์ ~98% — shift เพียงเล็กน้อยเปลี่ยน K เลือดมาก",
+     "K สูง: ไวขึ้นก่อน แล้ว Na channel inactivate → อ่อนแรง · T แหลม → QRS กว้าง → sine wave",
+     "K ต่ำ: hyperpolarize → อ่อนแรง · T แบน U เด่น ST กด",
+     "Insulin β2 aldosterone ดึง K เข้าเซลล์ · acidosis จากกรดแร่ดัน K ออก (กรดอินทรีย์ไม่ค่อย)",
+     "Ca gluconate ใน K สูง = ป้องกันหัวใจ ไม่ได้ลด K"],
+    [mcq(N(15), "A 62-year-old man on hemodialysis misses two sessions. Serum K is 7.8 mEq/L and the ECG shows peaked T waves, a prolonged PR interval and a widened QRS complex. Which mechanism best explains the widened QRS?",
+         ["Sustained depolarization of the resting membrane potential inactivates voltage-gated Na channels, slowing phase 0 and conduction",
+          "Increased K efflux during phase 3 shortens repolarization and widens the QRS",
+          "Hyperpolarization of the resting membrane potential moves it away from threshold",
+          "Increased Ca influx during phase 2 prolongs ventricular depolarization",
+          "Hyperkalemia blocks the Na/K-ATPase, increasing intracellular Na and conduction velocity"], 0,
+         "K สูงมาก → RMP ดีโพลาไรซ์ค้าง → **Na channel ถูก inactivate** → phase 0 ขึ้นช้าและเล็ก → นำไฟฟ้าช้า → **PR ยาว QRS กว้าง** จนเป็น sine wave (สไลด์ Cardiac function)\n\n"
+         "- **K efflux ใน phase 3 เพิ่ม** → อธิบาย **T สูงแหลม** ไม่ใช่ QRS กว้าง\n- **hyperpolarization** = K ต่ำ\n"
+         "- **Ca influx phase 2** = กลไกของ QT ที่เปลี่ยนใน Ca ผิดปกติ\n- **ยับยั้ง Na/K-ATPase แล้วนำไฟฟ้าเร็วขึ้น** — ผิดทั้งสองส่วน",
+         "QRS กว้างใน K สูง = Na channel inactivation", "Hyperkalemia ECG mechanism", R("Cardiac function"), [HYPERK, ECG, ECG_B, HANDLE_B]),
+     mcq(N(16), "A 24-year-old woman with severe asthma receives continuous nebulized salbutamol for 6 hours. Her serum K falls from 4.1 to 2.9 mEq/L; urine K excretion is low. What is the mechanism?",
+         ["β2-adrenergic stimulation increases Na/K-ATPase activity in skeletal muscle, shifting K into cells",
+          "β2 stimulation increases K secretion by principal cells",
+          "Respiratory alkalosis from hyperventilation drives K into cells via H/K exchange",
+          "Salbutamol stimulates aldosterone secretion from the adrenal cortex",
+          "Salbutamol blocks ATP-sensitive K channels, trapping K in muscle"], 0,
+         "β2-agonist → cAMP → **Na/K-ATPase ในกล้ามเนื้อทำงานเพิ่ม** → K ย้ายเข้าเซลล์ (shift) · UK ต่ำยืนยันว่าไม่ได้เสียทางไต (สไลด์ K shift: epinephrine β2 · Table 5.4 salbutamol)\n\n"
+         "- **ขับทางไต** — UK ต่ำ ขัดกัน\n- **respiratory alkalosis + H/K exchange** — สไลด์ย้ำว่าการแลก H/K **ไม่เกิดใน respiratory disorder** (และผลน้อย)\n"
+         "- **aldosterone** — ไม่ใช่ผลของ β2 และจะทำให้ UK สูง\n- **บล็อก KATP** — ไม่ใช่กลไกของ salbutamol",
+         "β2-agonist → K เข้าเซลล์ (ใช้รักษา K สูงได้)", "K shift by β2 agonist", R("K shift into/out cell · Table 5.4"), [HANDLE_B, LYTE, WEAK])],
+    [HANDLE_B, HYPERK, LYTE, LYTE_B, WEAK, ECG], {"k_rmp": F.k_rmp(), "k_shift": F.k_shift()})
+
+# ═════════════════════════════════════════════ 9
+sec("nephro-phy2-09", "Potassium II — ไตขับ K ที่ principal cell และ 6 ปัจจัยที่ทำให้ขับมากขึ้น",
+    "PT 65% · TAL 25% · ส่วนปลายดูดหรือขับตามความต้องการ · aldosterone · flow/Na · anion · Mg · alkalosis · ยาขับปัสสาวะ", 9,
+"""### K ถูกจัดการตลอด nephron (สไลด์ Renal K regulation)
+| ส่วน | การจัดการ |
+|---|---|
+| PT | ดูดกลับ ~65% ตาม Na และน้ำ |
+| TAL | ดูดกลับ ~25% ตาม Na (NKCC2) |
+| DT และ CD | **ดูดกลับหรือขับ ตามระดับ K ในเลือด** ผ่าน **P cell (ขับ)** และ **type A-IC (ดูดกลับด้วย H/K-ATPase)** |
+- **กิน K ปกติ/มาก**: DT ขับ 8–50% · CCD ขับ 5–30% → ขับทิ้ง **15–80%** ของที่กรอง
+- **กิน K น้อย**: DT ดูดกลับ 2% · CCD ดูดกลับ 7% → ขับทิ้งเพียง **~1%**
+→ ไตคุม K ที่ "ส่วนปลาย" เป็นหลัก ส่วนต้นทำงานเกือบคงที่
+
+### Principal cell และปัจจัยที่เพิ่มการขับ K (สไลด์ Factors affecting tubular K secretion)
+[[fig:pcell]]
+| ปัจจัย | กลไก | ตัวอย่างคลินิก |
+|---|---|---|
+| 1 **K ในเลือดสูง** | Na/K-ATPase ดึง K เข้าเซลล์มาก → gradient ออกสู่ lumen สูง · กระตุ้น aldosterone | กินอาหาร K สูง rhabdomyolysis |
+| 2 **Mg ในเลือดต่ำ** | Mg ในเซลล์อุด ROMK จากด้านใน — Mg ต่ำ ROMK เปิดตลอด | K ต่ำที่ "แก้ไม่ขึ้น" |
+| 3 **aldosterone สูง** | ↑ ENaC ROMK และ pump | JG cell tumor, adrenal tumor (Conn) |
+| 4 **Na/flow ส่วนปลายสูง** | Na มาก → ENaC ดูดมาก lumen ลบ · flow มาก → ดัด primary cilia → Ca เข้า → **BK channel** เปิด + K ในท่อถูกพาไปไม่สะสม | **loop/thiazide** อาหารเค็ม volume expansion |
+| 5 **anion ในท่อที่ดูดกลับไม่ได้** | HCO3 SO4 หรือยา (penicillin) ทำให้ lumen ลบยิ่งขึ้น | CA inhibitor · **อาเจียน** (HCO3 กรองเกินกำลังดูด) |
+| 6 **metabolic alkalosis (เฉียบพลัน)** | P cell: ↑ pump ↑ K channel เปิด · B-IC: ↑ H/K-ATPase แลก | ✍️ alkalosis เฉียบพลัน → ขับ K มาก → K ต่ำ · acidosis เฉียบพลัน → ขับ K น้อย → K สูง |
+
+**Table 5.5 (สไลด์)** — เพิ่มการขับ: อาหาร K สูง · hyperaldosteronism · alkalosis · thiazide · loop · luminal anion | ลดการขับ: อาหาร K ต่ำ · hypoaldosteronism · acidosis · **K-sparing diuretic** (✍️ ออกฤทธิ์ที่ late DT/CD ซึ่งเป็นจุดขับ K พอดี จึงไม่เสีย K)
+> สไลด์ Acute vs chronic metabolic acidosis (Berne & Levy fig 36.10): acidosis **เรื้อรัง** กลับเพิ่มการขับ K ได้ เพราะ PT ดูดน้ำและ NaCl น้อยลง → flow ส่วนปลายเพิ่ม + ปริมาตรลด → aldosterone ↑ (✍️ อาจารย์บอกว่าไม่ออกสอบ)
+
+#### ทำไมถึงมีอาการนี้
+| ภาวะ | ห่วงโซ่เหตุ→ผล |
+|---|---|
+| **K ต่ำจาก furosemide/thiazide** | บล็อก NKCC2/NCC → Na และน้ำล้นไปส่วนปลาย (ปัจจัย 4) + ปริมาตรลด → aldosterone (ปัจจัย 3) + contraction alkalosis (ปัจจัย 6) |
+| **K ต่ำแก้ไม่ขึ้นเพราะ Mg ต่ำ** | ให้ KCl แต่ ROMK ไม่ถูก Mg อุด K รั่วทิ้งทางไต → ต้องให้ Mg ก่อน/พร้อมกัน |
+| **K ต่ำหลังอาเจียน** | K ในน้ำย่อยมีน้อย — ที่หายส่วนใหญ่คือ **ทางไต**: HCO3 ในท่อ (anion) + aldosterone + alkalosis (หัวข้อ 13) |
+| **K สูงจาก ACEi + spironolactone ใน CKD** | ตัด aldosterone สองชั้น + nephron เหลือน้อย flow ส่วนปลายต่ำ |
+| **K สูงใน type 4 RTA** | hypoaldosteronism → ขับ K ไม่ได้ · K สูงยังกด ammoniagenesis → acidosis (หัวข้อ 12) |
+""",
+    ["ส่วนปลาย (P cell) คือจุดคุมการขับ K · PT/TAL ดูดกลับคงที่ ~90%",
+     "6 ปัจจัยเพิ่มการขับ: K สูง · Mg ต่ำ · aldosterone · Na/flow ส่วนปลาย · luminal anion · alkalosis",
+     "Loop/thiazide → K ต่ำ · K-sparing ทำงานที่จุดขับ K จึงไม่เสีย K",
+     "Mg ต่ำ → ROMK ไม่ถูกอุด → K ต่ำแก้ไม่ขึ้น",
+     "Acidosis เฉียบพลันลดการขับ K · alkalosis เฉียบพลันเพิ่ม"],
+    [mcq(N(17), "A 70-year-old woman with heart failure starts furosemide 80 mg/day. Two weeks later her K is 2.9 mEq/L and HCO3 is 31 mEq/L. Which mechanism contributes most directly to her hypokalemia?",
+         ["Increased Na delivery and flow to the principal cells, plus volume-contraction–induced aldosterone, enhance K secretion",
+          "Furosemide directly inhibits ROMK in the collecting duct, trapping K inside cells",
+          "Furosemide stimulates H/K-ATPase in type A intercalated cells, increasing K reabsorption",
+          "Furosemide causes K to shift into skeletal muscle via β2 receptors",
+          "Furosemide blocks K secretion in the proximal tubule"], 0,
+         "furosemide บล็อก NKCC2 ที่ TAL → Na และน้ำล้นไปส่วนปลาย → **ENaC ดูด Na มาก (lumen ลบ) + flow สูงเปิด BK และพา K ในท่อออกไป** · ปริมาตรลด → **aldosterone** · HCO3 31 = contraction alkalosis ซึ่งเพิ่มการขับ K อีก (สไลด์ factors 3, 4, 6 · Table 5.5)\n\n"
+         "- **บล็อก ROMK ที่ CD** — ผิด ถ้าบล็อก ROMK จะขับ K น้อยลง\n- **H/K-ATPase ดูด K กลับ** — จะทำให้ K สูงขึ้นไม่ใช่ต่ำ\n"
+         "- **shift ผ่าน β2** — furosemide ไม่มีฤทธิ์นี้\n- **PT ขับ K** — PT ดูด K กลับ ไม่ได้ขับ",
+         "Loop/thiazide → Na/flow ส่วนปลาย + aldosterone → K ต่ำ", "Diuretic-induced hypokalemia", R("Factors affecting tubular K secretion · Table 5.5"), [HANDLE_B, DIUR_B, LYTE]),
+     mcq(N(18), "A 55-year-old man with chronic alcohol use has K 2.6 mEq/L and Mg 1.0 mg/dL. Despite 120 mEq of IV KCl over 24 hours, his K remains 2.8 mEq/L with ongoing urinary K loss. What is the best explanation?",
+         ["Low intracellular Mg removes the normal block of ROMK channels, so principal cells keep secreting K until Mg is replaced",
+          "Hypomagnesemia increases insulin secretion, shifting all infused K into cells",
+          "Hypomagnesemia inhibits aldosterone, causing K wasting",
+          "Magnesium competes with K for reabsorption in the proximal tubule",
+          "Hypomagnesemia causes metabolic acidosis, which increases distal K secretion acutely"], 0,
+         "Mg ในเซลล์อุด **ROMK** จากด้านใน · Mg ต่ำ → ROMK เปิดตลอด → K ถูกขับทิ้งทางไตไม่หยุด แม้ให้ K มาก → **ต้องแก้ Mg ก่อนหรือพร้อม K** (สไลด์ factor 2: ↓ plasma Mg2+)\n\n"
+         "- **insulin ดึง K เข้าเซลล์** — ไม่ใช่ผลของ Mg ต่ำ และไม่อธิบาย UK สูง\n- **Mg ต่ำยับยั้ง aldosterone** — ถ้า aldosterone ต่ำจะเสีย K **น้อยลง**\n"
+         "- **แย่งดูดที่ PT** — ไม่มีกลไกนี้\n- **acidosis เฉียบพลันเพิ่มการขับ K** — ตรงข้าม acidosis เฉียบพลันลดการขับ K",
+         "K ต่ำ + Mg ต่ำ → ให้ Mg ด้วย", "Hypomagnesemia and refractory hypokalemia", R("Factors affecting tubular K secretion"), [HANDLE_B, LYTE, LYTE_B])],
+    [HANDLE_B, TUB_B, DIUR_B, CONN_B, HYPERK, LYTE], {"pcell": F.pcell()})
+
+# ═════════════════════════════════════════════ 10
+sec("nephro-phy2-10", "Ca, Pi และ Mg — รูปแบบในพลาสมา ความไวของเส้นประสาท และการจัดการของไต",
+    "Ionized Ca กำหนด threshold · albumin/pH/phosphate เปลี่ยน ionized Ca · Chvostek/Trousseau · QT · PTH calcitriol FGF-23 · segment ที่ดูดกลับ", 9,
+"""> หัวข้อนี้คือ **ฐานสรีรวิทยา** — สาเหตุ อาการ การวินิจฉัยและการรักษา Ca P Mg ผิดปกติอยู่ใน **คาบ 05 Fluid electrolyte: Divalent** (อ.ใน รพ.ราชวิถี)
+
+### Calcium (สไลด์ Calcium)
+- ร่างกายมี Ca ~1,300 g — **99% ในกระดูกและฟัน** · 1% ในเซลล์ · **0.1% ใน ECF** · ค่าปกติ total **9–10 mg/dL** (< 8.5 ต่ำ · > 10.5 สูง)
+- ในพลาสมา: **ionized 50% (ตัวที่ออกฤทธิ์)** · complexed กับ Pi HCO3 citrate SO4 10% · จับโปรตีน 40% (albumin ~90%)
+| สิ่งที่เปลี่ยน | กลไก | ionized Ca |
+|---|---|---|
+| **phosphate สูง** | Ca จับ phosphate เป็น complex มากขึ้น | ↓ |
+| **albumin ต่ำ** (ตับแข็ง nephrotic) | Ca จับ albumin น้อยลง → total Ca ลด แต่สัดส่วน ionized สูงขึ้น | ionized มักปกติ — **total หลอกว่าต่ำ** |
+| **acidemia** | H แย่งที่บน albumin/anion → Ca หลุดออก | ↑ |
+| **alkalemia** (หายใจเร็ว) | albumin ปล่อย H → จับ Ca มากขึ้น | ↓ → ชา เกร็ง |
+
+### ทำไม Ca ต่ำจึงชาและเกร็ง (สไลด์ Neuromuscular function)
+[[fig:ca_thr]]
+ionized Ca นอกเซลล์คุมการเปิดของ **voltage-gated Na channel** (ปกติเปิดที่ ~−55 mV) — Ca ต่ำ → threshold ต่ำลง → เส้นประสาทยิงง่าย
+- sensory: ชาปลายนิ้ว รอบปาก reflex ไว · motor: ตะคริว **tetany carpopedal spasm** (พบบ่อยหลังผ่าตัดต่อมไทรอยด์)
+- **Chvostek's sign**: เคาะหน้าติ่งหู 2 ซม. ใต้ zygoma 0.5–1 ซม. → กล้ามเนื้อหน้าข้างเดียวกันกระตุก (grade 1 มุมปาก → 4 ครึ่งหน้า) — พบเพียง ~25% ของ Ca ต่ำ
+- **Trousseau's sign**: พันผ้ารัดแขนสูงกว่า SBP 20 mmHg นาน 3 นาที → มือจีบ (ข้อมืองอ MCP งอ IP เหยียด นิ้วโป้งหุบ) — ไวกว่า (94%)
+- **Ca สูง** → threshold สูง → อ่อนแรง
+- หัวใจ: Ca เข้าเซลล์ใน phase 2 · **Ca ต่ำ → ST และ QT ยาว** (ตัวอย่างสไลด์ QT 0.44 s หลังตัดไทรอยด์) · **Ca สูง → ST/QT สั้น** (Ca 12.2 mg/dL QT 0.28 s)
+- สไลด์ Mg: **Mg ต่ำ** ก็ทำให้ tetany และ Chvostek/Trousseau บวกได้
+
+### ฮอร์โมนที่คุม Ca และ Pi (สไลด์ Plasma Ca2+ regulation · Phosphate)
+| ฮอร์โมน | Ca เลือด | Pi เลือด | ทำที่ |
+|---|---|---|---|
+| **PTH** (Ca ต่ำ → CaSR) | ↑ | ↓ | กระดูก (resorption) · ไต ↑ ดูด Ca ที่ DT · ↓ ดูด Pi ที่ PT · ↑ 1α-hydroxylase |
+| **1,25(OH)2D3** | ↑ | ↑ | ลำไส้ดูด Ca และ Pi · กระดูก |
+| **FGF-23** (osteocyte/osteoblast · Pi สูง) | — | ↓ | ดึง NaPi-IIa ออกจาก PT · **กด 1α-hydroxylase** |
+| **Calcitonin** (parafollicular cell) | ↓ | — | ไม่มีบทบาททุกนาทีในคน อาจลด bone resorption เมื่อ Ca สูงมาก |
+Ca balance ต่อวัน (สไลด์): กิน 1,000 mg · ดูดซึมสุทธิ ~100 mg = ขับทางปัสสาวะ ~100 mg · กรอง 9,980 ดูดกลับ 9,880 mg
+
+### ไตดูดกลับที่ไหน
+[[fig:div_segments]]
+| | PT | TAL | DT | ปัจจัยเพิ่มการดูดกลับ / ลด |
+|---|---|---|---|---|
+| **Ca** | 65% (ตาม Na น้ำ) | 25% | **8% (PTH, calcitriol)** · CCD 1% | ↑: PTH calcitriol **thiazide** phosphate/albumin สูง volume contraction alkalemia |
+| **Pi** | **80% NaPi-IIa/IIc** | — | 10% | ↓ ดูด: PTH FGF-23 Pi สูง Ca ต่ำ volume expansion **metabolic acidosis** (Pi เป็น buffer ในปัสสาวะ) |
+| **Mg** | 30% | **60% paracellular** | 5% (TRPM6) | ↑: PTH EGF volume contraction alkalosis · ↓: furosemide thiazide |
+- Pi: body 600 g (85% กระดูก 14% ในเซลล์ — ATP DNA 2,3-DPG) · ในพลาสมา ionized 45% (HPO4:H2PO4 = 80:20) · ค่าปกติ 3–4 mg/dL (< 2.5 ต่ำ > 4.5 สูง) · **Pi ~10% ที่หลุดไปปัสสาวะคือ titratable acid** (หัวข้อ 12)
+- Mg: body 25 g (54% กระดูก 45% ในเซลล์) · ในพลาสมา ionized 60% · ค่าปกติ 1.5–2.3 mg/dL · ลดความไวของประสาท ยับยั้งการหลั่ง ACh NE catecholamine
+
+#### ทำไมถึงมีอาการนี้
+- **thiazide ใช้ป้องกันนิ่ว Ca** — บล็อก NCC → Na ในเซลล์ DT ต่ำ → basolateral Na/Ca exchanger ขน Ca ออกได้มาก → ดูด Ca กลับเพิ่ม (+ ปริมาตรลด → PT ดูดตาม) · ตรงข้ามกับ **loop** ที่ทำลาย lumen-positive voltage ใน TAL → ขับ Ca และ Mg ทิ้ง
+- **หายใจหอบตื่นเต้นแล้วมือจีบ** — respiratory alkalosis → ionized Ca ลดทั้งที่ total Ca ปกติ
+- **CKD: Pi สูง Ca ต่ำ** — GFR ลด ขับ Pi ไม่ได้ → Pi จับ Ca + FGF-23 สูงกด calcitriol → PTH สูง (secondary hyperparathyroidism)
+> กลไก thiazide และ CKD เติมจาก Boron — สไลด์ระบุเพียง "thiazide ↑ Ca reabsorption"
+""",
+    ["Ionized Ca 50% เป็นตัวออกฤทธิ์ · alkalemia และ phosphate สูงลด ionized Ca",
+     "Ca ต่ำ → threshold ของ Na channel ต่ำ → ชา tetany · Trousseau ไว 94% Chvostek ~25%",
+     "Ca ต่ำ QT ยาว · Ca สูง QT สั้น",
+     "DT คือจุดที่ PTH/calcitriol/thiazide เพิ่มดูด Ca · PTH และ FGF-23 ลดดูด Pi ที่ PT",
+     "Mg ดูดมากสุดที่ TAL (60% paracellular) → loop diuretic ทำ Mg ต่ำ"],
+    [mcq(N(19), "A 22-year-old woman becomes anxious during an examination and breathes rapidly. She develops perioral numbness and carpopedal spasm. Total Ca 9.4 mg/dL, albumin 4.2 g/dL. ABG: pH 7.56, PaCO2 24 mmHg, HCO3 21 mEq/L. What explains her tetany?",
+         ["Alkalemia causes albumin to release H+ and bind more Ca, lowering ionized Ca and the threshold for nerve firing",
+          "Hypocapnia directly depolarizes the resting membrane potential of motor neurons",
+          "Alkalemia shifts K into cells, causing hyperpolarization and spasm",
+          "Hyperventilation increases PTH secretion, lowering total Ca",
+          "Low total Ca from hypoalbuminemia reduces nerve excitability"], 0,
+         "respiratory alkalosis (pH 7.56 PaCO2 24) → albumin ปล่อย H+ → ตำแหน่งว่างจับ Ca → **ionized Ca ลด** ทั้งที่ total ปกติ → threshold ของ voltage-gated Na channel ลด → เส้นประสาทไวเกิน → ชาและเกร็ง (สไลด์ Calcium: H+ กับ albumin) · HCO3 21 เข้ากับ acute respiratory alkalosis (คาด 24 − 2×1.6 ≈ 20.8)\n\n"
+         "- **CO2 ต่ำดีโพลาไรซ์ RMP โดยตรง** — ไม่ใช่กลไกหลัก\n- **K เข้าเซลล์ → hyperpolarization** — จะทำให้อ่อนแรง ไม่ใช่เกร็ง (และ H/K exchange ไม่เกิดใน respiratory disorder)\n"
+         "- **PTH เพิ่มแล้ว Ca ลด** — PTH เพิ่ม Ca\n- **albumin ต่ำ** — albumin ปกติ และ Ca ต่ำทำให้ไว **เพิ่ม** ไม่ใช่ลด",
+         "หายใจเร็ว → alkalemia → ionized Ca ↓ → tetany", "Ionized Ca and pH", R("Calcium · Neuromuscular function"), [CAPTH_B, HANDLE_B, HYPERVENT, LYTE]),
+     mcq(N(20), "A 45-year-old man has recurrent calcium oxalate stones with 24-hour urine Ca of 380 mg. Which drug lowers urinary Ca, and by what mechanism?",
+         ["Hydrochlorothiazide, by blocking NaCl entry in the distal convoluted tubule, which enhances Ca reabsorption there (plus proximal reabsorption from mild volume contraction)",
+          "Furosemide, by blocking NKCC2 and increasing paracellular Ca reabsorption in the thick ascending limb",
+          "Acetazolamide, by inhibiting carbonic anhydrase and increasing Ca reabsorption in the proximal tubule",
+          "Mannitol, by raising tubular osmolality and trapping Ca in the lumen",
+          "Spironolactone, by blocking ENaC in the collecting duct where most Ca is reabsorbed"], 0,
+         "**thiazide** บล็อก NCC ที่ DT → Na ในเซลล์ต่ำ → Na/Ca exchanger ด้าน basolateral ขน Ca ออกได้มาก → **ดูด Ca กลับเพิ่ม** + ปริมาตรลดเล็กน้อยทำให้ PT ดูดตาม Na → urine Ca ลด (สไลด์: thiazide ↑ Ca reabsorption · DT 8% เป็นจุดปรับละเอียด)\n\n"
+         "- **furosemide** — ทำลาย lumen-positive voltage ใน TAL → **ลด** การดูด Ca (เพิ่ม urine Ca ใช้แก้ Ca สูง)\n- **acetazolamide** — ทำให้ปัสสาวะด่าง citrate ต่ำ **เพิ่มนิ่ว** Ca phosphate\n"
+         "- **mannitol** — ไม่ใช่ยาลด urine Ca\n- **spironolactone** — CD ดูด Ca เพียง ~1% และ spironolactone ไม่ได้บล็อก ENaC (บล็อก MR)",
+         "Thiazide ลด urine Ca · loop เพิ่ม urine Ca", "Diuretics and renal Ca handling", R("Renal Ca2+ reabsorption", BB), [HANDLE_B, DIUR_B, CAPTH_B])],
+    [HANDLE_B, CAPTH_B, ELYTE_B, LYTE, DIUR_B], {"ca_thr": F.ca_thr(), "div_segments": F.div_segments()})
+
+# ═════════════════════════════════════════════ 11
+sec("nephro-phy2-11", "กรดมาจากไหน และสามแนวป้องกัน pH — buffer · ปอด · ไต",
+    "CO2 15,000 mmol/วัน กับ fixed acid 70 mEq/วัน · buffer ในเลือด เซลล์ กระดูก ปัสสาวะ · H/K exchange · Henderson–Hasselbalch", 8,
+"""### แหล่งกรด–ด่าง (สไลด์ Control of acid-base balance)
+pH ปกติ **7.35–7.45** (ในคลินิกใช้ 7.40)
+| แหล่ง | ปริมาณ/วัน | ใครกำจัด |
+|---|---|---|
+| อาหาร | 20 mEq H+ | ไต |
+| ทางเดินอาหารหลั่ง OH−/HCO3 ทิ้งในอุจจาระ → เหลือ H ในร่างกาย | 10 mEq H+ | ไต |
+| เมตาบอลิซึม: **volatile acid (CO2)** | **~15,000 mmol** | **ปอด** |
+| เมตาบอลิซึม: **fixed (non-volatile) acid** เช่น lactic sulfuric phosphoric keto acid | 40 mEq H+ | ไต |
+| **รวม fixed acid ที่ไตต้องขับ** | **~70 mEq/วัน** | ไต (ไม่มีทางอื่น) |
+**ด่าง**: HCO3 จากการเผาผลาญ organic anion (citrate) · NH3 จากกรดอะมิโน (ตับเปลี่ยนเป็น urea)
+
+### แนวที่ 1 — Buffer (สไลด์ Buffers system)
+ทำงาน **ทันที** แต่แค่ "จับ" H ไว้ **ไม่ได้กำจัดกรดออกจากร่างกาย**
+| ที่ | buffer |
+|---|---|
+| พลาสมา | **HCO3 (80%)** · โปรตีน (15%) · inorganic phosphate (5%) |
+| RBC | **hemoglobin** (สำคัญกับ CO2) · HCO3 · organic phosphate (ATP 2,3-DPG) |
+| ICF | โปรตีน · inorganic/organic phosphate (ATP ADP creatine phosphate) |
+| กระดูก | mineral phosphate และ carbonate — acidosis เรื้อรัง (CKD) จึงสลายกระดูก |
+| ปัสสาวะ | phosphate (HPO4 → H2PO4) · ammonia (NH3 → NH4) |
+**ICF buffer**: H เข้าเซลล์ (จับโปรตีนและ phosphate) แลกกับ K ออก → acidemia ทำให้ PK สูง — ⚠️ **ไม่เกิดใน respiratory disorder และ organic acidosis** (lactate ketone เข้าเซลล์พร้อม H) · โปรตีนเป็น **amphoteric** — มีทั้งหมู่กรด (COOH) และหมู่ด่าง (NH2)
+
+### แนวที่ 2 — ปอด (สไลด์ Respiratory system)
+H+ ↑/PCO2 ↑ → chemoreceptor (carotid/aortic และ central) → ศูนย์หายใจใน medulla → ↑ ventilation → เป่า CO2 ทิ้ง · ตอบสนองใน **นาที–ชั่วโมง เต็มที่ 12–24 ชม.** · แก้ pH ได้ **~50–60%**
+### แนวที่ 3 — ไต (สไลด์ Renal system)
+ตอบสนองใน **ชั่วโมง–หลายวัน** แต่ **แรงที่สุด** — ทำ 3 อย่าง: ดูด HCO3 ที่กรองกลับ · สร้าง HCO3 ใหม่ · ขับ H (หัวข้อ 12)
+
+[[fig:defense]]
+
+### Henderson–Hasselbalch (สไลด์ Acid–base disorder)
+**pH = 6.1 + log ( [HCO3] ÷ 0.03 × PaCO2 )** — ค่าปกติ 24 ÷ (0.03 × 40 = 1.2) = 20 → log 20 = 1.3 → pH 7.4
+- pH ขึ้นกับ **อัตราส่วน** ไม่ใช่ค่าใดค่าหนึ่ง → ไตคุม "ตัวเศษ" ปอดคุม "ตัวส่วน" → เป็นพื้นฐานของการชดเชย (หัวข้อ 13)
+
+#### ทำไม HCO3 เป็น buffer ที่สำคัญที่สุดทั้งที่ pKa 6.1 ห่างจาก 7.4
+buffer ทั่วไปทำงานดีเมื่อ pH ใกล้ pKa แต่ระบบ HCO3/CO2 เป็น **ระบบเปิด** — CO2 ที่เกิดจากการจับ H ถูก **ปอดเป่าทิ้งทันที** (PaCO2 ไม่สะสม) และ **ไตเติม HCO3 ใหม่** ได้ · buffer อื่นเป็นระบบปิด จับ H ได้จนหมดแล้วก็จบ (เติมจาก Boron — ไม่อยู่ในสไลด์)
+""",
+    ["Fixed acid ~70 mEq/วัน ต้องขับทางไตเท่านั้น · CO2 15,000 mmol/วัน ออกทางปอด",
+     "Buffer ทันทีแต่ไม่กำจัดกรด · ปอด นาที–ชม. แก้ ~50–60% · ไต ชม.–วัน แรงสุด",
+     "พลาสมา: HCO3 80% · โปรตีน 15% · Pi 5% · RBC: hemoglobin",
+     "H/K exchange ไม่เกิดใน respiratory disorder และ organic acidosis",
+     "pH = 6.1 + log(HCO3 ÷ 0.03 × PaCO2) — ขึ้นกับอัตราส่วน"],
+    [mcq(N(21), "Use the Henderson–Hasselbalch equation. A patient has PaCO2 40 mmHg and HCO3 12 mEq/L. What is the arterial pH?",
+         ["7.00", "7.10", "7.20", "7.30", "7.40"], 1,
+         "pH = 6.1 + log (12 ÷ (0.03 × 40)) = 6.1 + log (12 ÷ 1.2) = 6.1 + log 10 = 6.1 + 1 = **7.10** · ภาวะนี้ HCO3 ลดครึ่งหนึ่งโดยที่ PaCO2 ยังไม่ชดเชย — ถ้าปอดชดเชยตาม Winter (PaCO2 ~26) pH จะกลับมาเป็น ~7.29 (6.1 + log (12 ÷ 0.78) = 6.1 + 1.19)\n\n"
+         "- **7.40** — ต้องมีอัตราส่วน 20:1 (เช่น 24/1.2)\n- **7.00 / 7.20 / 7.30** — คำนวณ log ผิด (log 10 = 1)",
+         "pH = 6.1 + log(HCO3/0.03PaCO2) — HCO3 ครึ่ง ไม่ชดเชย → pH 7.10", "Henderson–Hasselbalch", R("Henderson–Hasselbalch equation"), [AB_B, BUFFER_B, ABG_B]),
+     mcq(N(22), "The pKa of the bicarbonate buffer system (6.1) is far from normal plasma pH (7.4), yet it is the most important extracellular buffer. Why?",
+         ["It is an open system: CO2 generated by buffering is exhaled by the lungs and HCO3 is regenerated by the kidneys",
+          "Bicarbonate has the highest pKa of all body buffers",
+          "Hemoglobin cannot buffer H+ inside red blood cells",
+          "Bicarbonate buffering removes H+ from the body without any renal involvement",
+          "Phosphate is absent from plasma, so bicarbonate is the only available buffer"], 0,
+         "buffer ที่ pKa ห่างจาก pH ควรทำงานไม่ดี แต่ระบบ HCO3/CO2 **เปิด** — H + HCO3 → CO2 + H2O แล้ว **ปอดเป่า CO2 ทิ้ง** ทำให้ PaCO2 ไม่สะสมและปฏิกิริยาเดินหน้าได้ต่อ · **ไตสร้าง HCO3 ใหม่** มาแทนที่ที่ใช้ไป · ปริมาณ HCO3 ในพลาสมายังสูง (24 mEq/L = 80% ของการ buffer ในพลาสมา ตามสไลด์)\n\n"
+         "- **pKa สูงสุด** — ผิด 6.1 ต่ำกว่า phosphate (6.8)\n- **Hb buffer ไม่ได้** — Hb เป็น buffer สำคัญใน RBC (สไลด์)\n"
+         "- **กำจัด H ได้โดยไม่ต้องใช้ไต** — buffer ใด ๆ ไม่กำจัด fixed acid ต้องอาศัยไตเติม HCO3\n- **ไม่มี phosphate ในพลาสมา** — มี (5%)",
+         "HCO3/CO2 = ระบบเปิด (ปอด + ไต)", "Bicarbonate buffer as an open system", R("Buffers system", BB), [AB_B, BUFFER_B, RESPCTRL_B])],
+    [AB_B, BUFFER_B, RESPCTRL_B, ABG_B], {"defense": F.defense()})
+
+# ═════════════════════════════════════════════ 12
+sec("nephro-phy2-12", "ไตกับกรด — เก็บ HCO3 คืน สร้าง HCO3 ใหม่ และขับ H ด้วย phosphate กับ ammonium",
+    "Reclamation ที่ PT · titratable acid 40% · NH4 60% · NAE · ปัจจัยที่เพิ่มการขับ H · contraction alkalosis · RTA type 1/2/4", 10,
+"""### 3.1 ดูด HCO3 ที่กรองกลับ (reclamation)
+- กรองวันละ ~4,320 mmol (สไลด์) ต้องเก็บคืนเกือบหมด · ภาพในสไลด์: **PT ~80% · TAL ~10% · DT ~6% · CD ~4%**
+- กลไกที่ PT: H ออกทาง **NHE3** → จับ HCO3 ในท่อ → CO2 + H2O (carbonic anhydrase) → แพร่เข้าเซลล์ → H + HCO3 → HCO3 กลับเลือดทาง NBCe1
+- **ไม่มีการขับ H สุทธิ** — แค่ได้ HCO3 ตัวเดิมคืน
+- HCO3 ในพลาสมา **> ~25 mEq/L** → เกินกำลังดูดกลับ → ออกในปัสสาวะ (สไลด์ titration curve) = วิธีที่ไตแก้ alkalosis
+
+[[fig:pt_hco3]]
+
+### 3.2–3.3 ขับ H และสร้าง HCO3 ใหม่
+- ขับ H ได้ทั่วท่อไต แต่ตัวหลักคือ **late DT และ cortical CD (type A-IC)**
+- ปัสสาวะเป็นกรดได้ต่ำสุด **pH 4.5** = H อิสระ 0.03 mEq/L → ถ้าขับ 70 mEq เป็น H อิสระต้องใช้ปัสสาวะ **~2,667 L/วัน** (สไลด์) → จึงต้องผูก H กับ buffer · ปัสสาวะปกติ pH 6–6.5
+| รูปแบบ | สัดส่วน | กลไก |
+|---|---|---|
+| **Titratable acid** (NaH2PO4) | ~40% | Na2HPO4 ที่กรองมาและไม่ถูกดูดกลับ รับ H → H2PO4 · **ปริมาณจำกัด** ตาม phosphate ที่กรอง |
+| **Ammonium** (NH4Cl) | ~60% | **ammoniagenesis** ที่ PT: glutamine → NH4 + HCO3 ใหม่ · NH4 ถูกดูดกลับที่ TAL (แทน K บน NKCC2) สะสมใน medulla → NH3 แพร่เข้า CD → จับ H เป็น NH4 **ติดอยู่ในท่อ** · **เพิ่มได้หลายเท่าเมื่อ acidosis เรื้อรัง และเมื่อ K ต่ำ** |
+**1 H ที่ขับ = 1 HCO3 ใหม่เข้าเลือด**
+**Net acid excretion (NAE) = (TA + NH4) − HCO3 ในปัสสาวะ = [(U_TA × V) + (U_NH4 × V)] − (U_HCO3 × V)** ≈ 70 mEq/วัน = fixed acid ที่สร้าง
+
+[[fig:nae]]
+
+### ปัจจัยที่เพิ่มการดูด HCO3 กลับ/สร้าง HCO3/ขับ H (สไลด์ Factors affecting)
+| ปัจจัย | กลไก |
+|---|---|
+| ↑ PaCO2 (ปัญหาการหายใจ) | CO2 เข้าเซลล์มาก → H ในเซลล์มาก → ขับ H มาก (การชดเชย respiratory acidosis) |
+| ↑ [H] จาก fixed acid | กระตุ้นทุกขั้น + ammoniagenesis |
+| ↑ lumen ลบ (ดูด Na ที่ P cell มาก) | H ถูกดึงออกง่าย |
+| **K ต่ำ** | ↑ ammoniagenesis ที่ PT · ↑ H/K-ATPase ที่ A-IC (แลก K กลับ ขับ H ออก) |
+| **↑ Ang II** | ↑ NHE3 ที่ PT |
+| **↑ aldosterone** | ↑ ดูด Na ที่ P cell (lumen ลบ) + ↑ H+-ATPase ที่ A-IC |
+**↓ ECF volume → ↑ Ang II + aldosterone → ↑ ขับ H ↑ ดูด HCO3 → metabolic alkalosis = contraction alkalosis** (✍️ ลายมือ: เช่น ระบาย ascites ยาขับปัสสาวะ)
+
+### Renal tubular acidosis — เมื่อขั้นใดขั้นหนึ่งเสีย (สไลด์ตาราง metabolic acidosis · รายละเอียดเติมจาก Boron)
+| | Type 1 (distal) | Type 2 (proximal) | Type 4 (hypoaldosteronism) |
+|---|---|---|---|
+| ขั้นที่เสีย | A-IC **ขับ H ไม่ได้** ("acidify urine ไม่ได้") | PT **ดูด HCO3 กลับไม่ได้** (threshold ต่ำ) | ขาด/ดื้อ aldosterone → **ขับ K และ H ไม่ได้** · K สูงกด ammoniagenesis → **NH4 ↓** |
+| urine pH | **> 5.5 เสมอ** | > 5.5 ช่วงแรก · **< 5.5 เมื่อ HCO3 ต่ำกว่า threshold** | **< 5.5** (ขับ H ได้แต่ไม่มี NH3 มารับ) |
+| K | **ต่ำ** | **ต่ำ** (HCO3 ล้นไปส่วนปลาย = anion + aldosterone) | **สูง** |
+| อื่น ๆ | นิ่ว/nephrocalcinosis (ปัสสาวะด่าง citrate ต่ำ) | Fanconi (glucose PO4 กรดอะมิโนรั่ว) · ภาวะกระดูกอ่อน | เบาหวาน CKD · ยา ACEi spironolactone |
+ทั้งสามแบบเป็น **normal anion gap (hyperchloremic)** เพราะไม่มี anion ใหม่
+
+#### ทำไม RTA แต่ละแบบ K ต่างกัน
+- **type 1**: H-ATPase เสีย → การขับ Na ที่ปลายท่ออาศัยแลกกับ K แทน H + ปริมาตรลดเล็กน้อย → aldosterone → **K ต่ำ**
+- **type 2**: HCO3 ที่ PT ดูดไม่ได้ล้นไปส่วนปลาย → anion ในท่อ + Na/flow สูง + aldosterone → **K ต่ำ** (แย่ลงเมื่อให้ NaHCO3)
+- **type 4**: aldosterone ไม่มีผล → P cell ไม่ขับ K → **K สูง** → K สูงยังกด ammoniagenesis → ขับกรดเป็น NH4 ไม่ได้ → acidosis
+""",
+    ["Reclamation: PT ~80% ผ่าน NHE3 + CA — ไม่มีการขับ H สุทธิ",
+     "Titratable acid 40% (phosphate, จำกัด) · NH4 60% (เพิ่มได้มาก) · 1 H ขับ = 1 HCO3 ใหม่",
+     "NAE = TA + NH4 − HCO3 ≈ 70 mEq/วัน · urine pH ต่ำสุด 4.5",
+     "ปริมาตรลด → Ang II + aldosterone → contraction alkalosis · K ต่ำ ↑ ammoniagenesis",
+     "RTA: type 1 urine pH > 5.5 K ต่ำ · type 2 bicarbonaturia K ต่ำ · type 4 K สูง NH4 ต่ำ"],
+    [mcq(N(23), "A 64-year-old man with diabetic nephropathy (eGFR 40 mL/min/1.73 m²) has Na 138, K 6.0, Cl 112, HCO3 18 mEq/L; urine pH 5.2. Plasma renin and aldosterone are low. What is the main reason he cannot excrete his daily acid load normally?",
+         ["Hypoaldosteronism with hyperkalemia suppresses proximal ammoniagenesis, so NH4 excretion falls (type 4 RTA)",
+          "Type A intercalated cells cannot secrete H, so urine pH cannot fall below 5.5 (type 1 RTA)",
+          "The proximal tubule has a low threshold for HCO3 reabsorption (type 2 RTA)",
+          "Accumulation of unmeasured organic anions from reduced GFR (uremic acidosis)",
+          "Gastrointestinal HCO3 loss with an appropriately increased urinary NH4"], 0,
+         "normal AG (138 − 130 = 8) · **K สูง** · urine pH < 5.5 (ยังขับ H ได้) · renin/aldosterone ต่ำ (hyporeninemic hypoaldosteronism พบบ่อยในเบาหวาน) → **type 4 RTA**: ขาด aldosterone → ขับ K/H ลด · **K สูงกด ammoniagenesis** → NH4 ซึ่งเป็นทางขับกรดหลัก (60%) ลด → NAE ลด (สไลด์: type 4 RTA hyperkalemia inhibits NH3 synthesis)\n\n"
+         "- **type 1** — urine pH จะ > 5.5 และ K ต่ำ\n- **type 2** — K ต่ำ และมักมี Fanconi\n"
+         "- **uremic acidosis** — มัก AG กว้างเมื่อ GFR < ~15–20 · ผู้ป่วยนี้ AG ปกติ\n- **GI loss** — NH4 จะ **เพิ่ม** (urine AG ลบ) และ K มักต่ำ",
+         "NAG acidosis + K สูง + urine pH < 5.5 → type 4 RTA", "Type 4 RTA", R("Metabolic acidosis table · Ammonium salt excretion", BB), [RTA, AB_B, HYPERK, CKD]),
+     mcq(N(24), "A healthy volunteer on a typical diet collects 24-hour urine: volume 1.5 L, titratable acid 20 mEq/L, NH4 30 mEq/L, HCO3 2 mEq/L. What is the net acid excretion?",
+         ["45 mEq/day", "48 mEq/day", "72 mEq/day", "75 mEq/day", "78 mEq/day"], 2,
+         "NAE = (U_TA × V) + (U_NH4 × V) − (U_HCO3 × V) = (20 × 1.5) + (30 × 1.5) − (2 × 1.5) = 30 + 45 − 3 = **72 mEq/วัน** — ใกล้ fixed acid ~70 mEq ที่สไลด์ระบุ = สมดุล\n\n"
+         "- **45** = NH4 อย่างเดียว\n- **48** = (20 + 30 − 2) ลืมคูณปริมาตร\n- **75** = ลืมหัก HCO3 · **78** = บวก HCO3 แทนที่จะลบ (HCO3 ที่หลุดในปัสสาวะเท่ากับเสียด่าง)",
+         "NAE = TA + NH4 − HCO3 (คูณปริมาตร)", "Net acid excretion", R("Net acid excretion (NAE)"), [AB_B, TUB_B])],
+    [AB_B, TUB_B, RTA, HYPERK], {"pt_hco3": F.pt_hco3(), "nae": F.nae()})
+
+# ═════════════════════════════════════════════ 13
+sec("nephro-phy2-13", "ความผิดปกติกรด-ด่างและการชดเชย — กลไกเบื้องหลังอาการ",
+    "4 primary disorders · buffer + ปอด + ไต · K และ ionized Ca เปลี่ยนตาม · DKA/Kussmaul · อาเจียน/paradoxical aciduria · mixed", 11,
+"""### แบ่งตามตัวที่ผิดก่อน (สไลด์ Acid–base disorder)
+**simple** = สาเหตุเดียว · **mixed** = ≥ 2 สาเหตุ (✍️ ลายมือ: พบเป็นส่วนมาก)
+| ตัวหลัก | ภาวะ | สาเหตุกลุ่มใหญ่ |
+|---|---|---|
+| ↓ HCO3 → ↓ pH | **metabolic acidosis** | เมตาบอลิซึมหรือไต |
+| ↑ HCO3 → ↑ pH | **metabolic alkalosis** | เมตาบอลิซึมหรือไต |
+| ↑ PaCO2 → ↓ pH | **respiratory acidosis** | ระบบหายใจ |
+| ↓ PaCO2 → ↑ pH | **respiratory alkalosis** | ระบบหายใจ |
+
+[[fig:comp]]
+
+### การชดเชยของแต่ละภาวะ (สไลด์ Compensatory mechanisms)
+| ภาวะ | 1 Buffer | 2 ปอด | 3 ไต |
+|---|---|---|---|
+| **Metabolic acidosis** | HCO3 ถูกใช้ · H ไล่ Ca จาก albumin → **ionized Ca ↑** · H เข้าเซลล์แลก K → **K ↑** | ↑ VT และ RR (**Kussmaul**) → ↓ PaCO2 | ↑ ดูด/สร้าง HCO3 · ↑ ammoniagenesis · ↑ NAE → ปัสสาวะเป็นกรด |
+| **Metabolic alkalosis** | albumin ปล่อย H จับ Ca → **ionized Ca ↓** · H ออกจากเซลล์ K เข้า → **K ↓** | หายใจช้า-ตื้น → ↑ PaCO2 (จำกัดด้วย hypoxemia) | ↓ ดูด HCO3 · ↓ NAE → ปัสสาวะด่าง |
+| **Respiratory acidosis** | **acute**: ICF buffer — CO2 เข้าเซลล์ → H จับโปรตีน/phosphate (HCO3 ขึ้นนิดเดียว) | — | **chronic**: ↑ ดูด/สร้าง HCO3 ↑ ammoniagenesis → HCO3 ↑ ชัด |
+| **Respiratory alkalosis** | **acute**: ICF buffer | — | **chronic**: ↓ ดูด HCO3 ↓ ammoniagenesis → HCO3 ↓ |
+
+### สาเหตุตามสไลด์
+- **Metabolic acidosis** — กรดเกิน: DKA · lactic (hypoxemia หรือ hypoperfusion) · salicylate (ระยะหลัง) · methanol · ethylene glycol | เสีย HCO3: diarrhea · type 2 RTA | ขับ H ไม่ได้: CKD · type 1 RTA · type 4 RTA
+- **Metabolic alkalosis** — เสีย H: **อาเจียน** · hyperaldosteronism | ได้ HCO3: NaHCO3 · milk-alkali | **contraction alkalosis**: loop/thiazide
+- **Respiratory acidosis** — กดศูนย์หายใจ (opiate barbiturate ยาสลบ รอยโรค CNS central sleep apnea · ให้ O2 ในผู้ป่วยกักเก็บ CO2) · กล้ามเนื้อหายใจ (GBS polio ALS MS) · ทางเดินหายใจอุด (สำลัก OSA laryngospasm) · แลกเปลี่ยนก๊าซ (ARDS COPD pneumonia pulmonary edema)
+- **Respiratory alkalosis** — กระตุ้นศูนย์หายใจ (hysterical hyperventilation · gram-negative sepsis · salicylate ระยะแรก · โรค CNS) · hypoxemia (ที่สูง pneumonia PE) · เครื่องช่วยหายใจ
+
+### Mixed disorders (สไลด์ Table 9.12)
+| สถานการณ์ | ความผิดปกติ |
+|---|---|
+| หัวใจหยุดเต้น | respiratory acidosis + lactic acidosis |
+| อาเจียนหลังผ่าตัด + หายใจเร็วจากปวด | metabolic alkalosis + respiratory alkalosis |
+| ✍️ ไตวาย + อาเจียน | metabolic acidosis + metabolic alkalosis |
+| ตับวาย | respiratory alkalosis + metabolic acidosis |
+| DKA + อาเจียน / DKA + lactic | met. acidosis + met. alkalosis / high AG สองชนิด |
+| COPD + ยาขับปัสสาวะ | respiratory acidosis + metabolic alkalosis |
+| septic shock + ARDS | metabolic acidosis + respiratory acidosis |
+| **salicylate** | **respiratory alkalosis + metabolic acidosis** |
+
+#### ทำไมถึงมีอาการนี้ — DKA หายใจหอบลึก (Kussmaul)
+[[fig:dka]]
+#### ทำไมถึงมีอาการนี้ — อาเจียนแล้ว K ต่ำ และปัสสาวะเป็นกรดทั้งที่เลือดด่าง
+[[fig:vomit]]
+- **salicylate ทำไมเป็นสองภาวะ** — ช่วงแรกกระตุ้นศูนย์หายใจโดยตรง (resp. alkalosis) ต่อมาขัดขวาง oxidative phosphorylation → lactic + ketoacid สะสม (met. acidosis)
+- **COPD ได้ O2 สูงแล้วซึม** — สไลด์จัดเป็นสาเหตุ resp. acidosis: hypoxic drive ลด + V/Q แย่ลง (Haldane) → CO2 คั่ง
+> กลไก K ใน DKA, ระยะของการอาเจียน urine Cl และ salicylate/O2 เติมจากตำรา (Boron · Guyton · ADA hyperglycemic crises consensus 2024)
+""",
+    ["ชดเชยไปทางเดียวกับตัวหลักเสมอ ไม่เคยเกิน",
+     "Metabolic acidosis: Kussmaul (VT ↑ มากกว่า RR) · ionized Ca ↑ · K ↑ (กรดแร่)",
+     "Metabolic alkalosis: hypoventilation · ionized Ca ↓ · K ↓",
+     "Respiratory: acute = ICF buffer (HCO3 เปลี่ยนนิด) · chronic = ไตชดเชย 3–5 วัน",
+     "อาเจียน: generation (เสีย HCl) + maintenance (volume/Cl/K ต่ำ + aldosterone) → paradoxical aciduria"],
+    [mcq(N(25), "A 19-year-old woman with type 1 diabetes has had vomiting for 2 days and now seems drowsy. Glucose 480 mg/dL, Na 134, Cl 98, HCO3 8 mEq/L. ABG: pH 7.11, PaCO2 26 mmHg. What is the acid–base diagnosis?",
+         ["High anion gap metabolic acidosis with a concomitant respiratory acidosis",
+          "High anion gap metabolic acidosis with appropriate respiratory compensation",
+          "High anion gap metabolic acidosis with a concomitant respiratory alkalosis",
+          "Normal anion gap metabolic acidosis with appropriate respiratory compensation",
+          "Acute respiratory acidosis with metabolic compensation"], 0,
+         "AG = 134 − (98 + 8) = **28** → high AG (DKA) · Winter: PaCO2 คาด = 1.5 × 8 + 8 = **20 ± 2 (18–22)** · วัดได้ **26 > 22** → ปอดชดเชยไม่พอ = **respiratory acidosis ร่วม** (ง่วงซึม กล้ามเนื้อหายใจล้า ปอดอักเสบ/สำลัก) — เป็นสัญญาณอันตรายว่ากำลังจะหายใจล้มเหลว · ตรวจสอบ pH: 6.1 + log (8 ÷ 0.78) = 6.1 + 1.01 = 7.11 ✓\n\n"
+         "- **ชดเชยเหมาะสม** — ต้อง 18–22\n- **resp. alkalosis ร่วม** — PaCO2 ต้อง < 18\n"
+         "- **normal AG** — AG 28 กว้าง\n- **resp. acidosis ปฐมภูมิ** — PaCO2 26 ต่ำกว่าปกติ ไม่ใช่สูง",
+         "Winter: PaCO2 = 1.5 × HCO3 + 8 ± 2 — สูงกว่าช่วง = resp. acidosis ร่วม", "Winter's formula in DKA", R("Metabolic acidosis · compensatory mechanisms", "Berend NEJM 2014"), [AB_B, DM, ABG, LYTE]),
+     mcq(N(26), "A 46-year-old man with gastric outlet obstruction has vomited for 5 days. Na 132, K 2.8, Cl 82, HCO3 38 mEq/L; ABG pH 7.53, PaCO2 47 mmHg. Urine pH 5.5, urine Na 15 mEq/L, urine Cl 8 mEq/L. Why is his urine acidic despite alkalemia?",
+         ["Volume and Cl depletion, hypokalemia and high aldosterone drive H+ secretion and HCO3 reabsorption, maintaining the alkalosis",
+          "Gastric H+ is absorbed in the small intestine and excreted in urine",
+          "Respiratory compensation raises PaCO2, which is the only stimulus for renal H+ secretion",
+          "Alkalemia directly stimulates H+-ATPase in type B intercalated cells",
+          "He has a coexisting distal renal tubular acidosis"], 0,
+         "**paradoxical aciduria**: ไตต้องเลือกระหว่าง \"รักษาปริมาตร\" กับ \"แก้ pH\" — ปริมาตรลด + Cl ต่ำ → Ang II (↑ NHE3 ดูด HCO3) + aldosterone (↑ H+-ATPase) · **K ต่ำ** → ↑ H/K-ATPase และ ammoniagenesis → ขับ H ออกต่อ ทั้งที่เลือดด่าง (สไลด์ Factors affecting HCO3 reabsorption · contraction alkalosis) · urine Cl 8 = saline-responsive → แก้ด้วย NSS + KCl · PaCO2 คาด 0.7 × 38 + 20 = 46.6 ✓ ชดเชยเหมาะสม\n\n"
+         "- **H จากกระเพาะถูกดูดซึมแล้วขับ** — H ถูกอาเจียนทิ้งไปแล้ว\n- **PaCO2 เป็นตัวกระตุ้นเดียว** — PaCO2 47 มีผลน้อย ตัวหลักคือ volume/Cl/K/aldosterone\n"
+         "- **B-IC** — เซลล์ชนิด B ขับ **HCO3** ไม่ใช่ H (ทำงานเมื่อ alkalosis)\n- **distal RTA** — จะเป็น acidosis ไม่ใช่ alkalosis",
+         "อาเจียน + urine pH ต่ำ + UCl ต่ำ = maintenance ด้วยปริมาตร/K → ให้ NSS + KCl", "Vomiting and paradoxical aciduria", R("Metabolic alkalosis · Factors affecting HCO3 reabsorption"), [AB_B, VOMIT, LYTE, HYPOVOL_B])],
+    [AB_B, LYTE, LYTE_B, DM, VOMIT, COPD, RESPFAIL_B, POISON], {"comp": F.comp(), "dka": F.dka(), "vomit": F.vomit()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 14
+sec("nephro-phy2-14", "แปลผลกรด-ด่างทีละขั้น — ABG, anion gap, delta ratio, osmolal gap และแบบฝึกจากสไลด์",
+    "ค่าปกติ · HCO3 จาก ABG เทียบ TCO2 · สูตรการชดเชย · AG และ albumin · wide vs normal AG · ฝึก 10 ข้อของสไลด์", 12,
+"""### ค่าปกติ (สไลด์ Analysis and clinical evaluation)
+| | ค่าเฉลี่ย | ช่วง |
+|---|---|---|
+| pH | 7.40 | 7.35–7.45 ([H] 40 nmol/L) |
+| PaCO2 | 40 mmHg | 35–45 |
+| HCO3 | 24 mEq/L | 22–26 |
+- HCO3 ใน ABG **คำนวณ** จาก pH และ PaCO2 ด้วย Henderson–Hasselbalch — สไลด์: ใช้วิเคราะห์ได้ดีเมื่อร่างกายอยู่ในสมดุล (chronic) · **ถ้ากำลังเปลี่ยนแปลง หรือจะคำนวณ compensation/AG ให้ใช้ HCO3 จาก electrolyte (TCO2) ที่เจาะเวลาเดียวกัน** · สองค่านี้ควรต่างกันไม่เกิน 10%
+- ตัวอย่างใบผลในสไลด์: pH 7.326 · pCO2 33.4 · HCO3 17.1 · BE −8.9 · TCO2 18.1 → ✍️ **metabolic acidosis** · Winter: 1.5 × 17.1 + 8 = 33.7 ± 2 → PaCO2 33.4 = **ชดเชยเหมาะสม** (การคำนวณนี้เติมโดยบทเรียน)
+
+### ขั้นตอน (สไลด์ Stepwise approach + ส่วนเติม)
+[[fig:steps]]
+| ขั้น | ทำอะไร |
+|---|---|
+| 1 | pH < 7.4 = acidosis · > 7.4 = alkalosis |
+| 2 | ตัวไหนอธิบายทิศ pH — HCO3 < 24 กับ acidosis = metabolic · PaCO2 > 40 กับ acidosis = respiratory (กลับกันสำหรับ alkalosis) |
+| 3 | มีการชดเชยไหม (uncompensated vs compensated) และ **พอดีไหม** |
+| 4 | metabolic acidosis → **anion gap** |
+
+### สูตรการชดเชยที่คาดไว้ (เติมจากตำรา — ชุดเดียวกับคาบ chest 26)
+| ภาวะหลัก | ค่าที่คาด |
+|---|---|
+| Metabolic acidosis | **PaCO2 = 1.5 × HCO3 + 8 ± 2** (Winter) |
+| Metabolic alkalosis | **PaCO2 ≈ 0.7 × HCO3 + 20 ± 2** |
+| Respiratory acidosis | HCO3 ↑ **1** (acute) หรือ **4** (chronic) ต่อ PaCO2 ↑ 10 |
+| Respiratory alkalosis | HCO3 ↓ **2** (acute) หรือ **5** (chronic) ต่อ PaCO2 ↓ 10 |
+นอกช่วง = มีความผิดปกติที่สอง · สไลด์: acute respiratory = HCO3 เปลี่ยนนิดเดียว (buffer) · chronic = เปลี่ยนมาก (ไต)
+
+### Anion gap (สไลด์ Differential diagnosis cause of metabolic acidosis)
+**AG = Na − (Cl + HCO3)** · ปกติ **10 ± 2** · ส่วนใหญ่คือ **albumin** (+ phosphate citrate sulfate)
+- albumin ลดทุก 1 g/dL จาก 4 → AG แคบลง ~2.5 → **corrected AG = AG + 2.5 × (4 − albumin)** (ตับแข็ง ขาดอาหาร nephrotic)
+[[fig:gamble]]
+| AG กว้าง (> 12) · Cl ปกติ — **กรดเติมเข้า** | AG ปกติ · **Cl > 110** — **เสีย HCO3 หรือขับ H ไม่ได้** |
+|---|---|
+| ketoacidosis (DM อดอาหาร สุรา): acetoacetate β-OHB | **diarrhea**: เสีย HCO3 จากน้ำย่อยตับอ่อนและน้ำดี |
+| lactic acidosis: lactate | **carbonic anhydrase inhibitor**: เสีย HCO3 ทางปัสสาวะ |
+| CKD: ขับ anion ไม่ได้ | **spironolactone, hypoaldosteronism**: ขับ H ที่ไตลดลง (+ RTA) |
+| aspirin: salicylate · methanol: formate | |
+| ethylene glycol: glycolate oxalate · toluene: hippurate benzoate | |
+
+### ขั้นต่อ (เติมจาก Berend NEJM 2014 · Boron)
+- **Delta ratio = (AG − 12) ÷ (24 − HCO3)** · < 1 = มี normal AG acidosis ร่วม · 1–2 = high AG อย่างเดียว · **> 2 = มี metabolic alkalosis ร่วม** (เช่น DKA ที่อาเจียน)
+- **Osmolal gap = Posm ที่วัด − (2Na + glucose/18 + BUN/2.8)** · > 10 → มี osmole ที่ไม่ได้วัด: **methanol ethylene glycol** (ethanol ก็เพิ่มแต่ไม่ทำ AG กว้าง)
+- **Urine AG = UNa + UK − UCl** ใน normal AG acidosis · **ลบ** = ไตขับ NH4 (มากับ Cl) ได้ดี → สาเหตุนอกไต (ท้องเสีย) · **บวก** = ไตขับ NH4 ไม่ได้ → RTA type 1/4
+
+### แบบฝึกในสไลด์ — 10 ABG (เฉลยโดยบทเรียน)
+| # | pH | PaCO2 | HCO3 | คำตอบ |
+|---|---|---|---|---|
+| 1 | 7.49 | 44 | 32 | **metabolic alkalosis** ชดเชยพอดี (คาด 0.7 × 32 + 20 = 42.4 ± 2) — ✍️ ตรงกับลายมือ |
+| 2 | 7.30 | 55 | 26 | **acute respiratory acidosis** (คาด HCO3 24 + 1.5 = 25.5) |
+| 3 | 7.29 | 30 | 14 | **metabolic acidosis** ชดเชยพอดี (Winter 29 ± 2) |
+| 4 | 7.68 | 27 | 30 | **mixed: respiratory alkalosis + metabolic alkalosis** (ทั้งสองตัวไปทางด่าง) |
+| 5 | 7.27 | 58 | 26 | **acute respiratory acidosis** (คาด 25.8) |
+| 6 | 7.40 | 25 | 15 | **mixed: metabolic acidosis + respiratory alkalosis** (Winter 30.5 ± 2 แต่ PaCO2 25 · pH ปกติพอดี) — ✍️ ตรงกับลายมือ · เช่น salicylate sepsis ตับวาย |
+| 7 | 7.48 | 25 | 17 | **chronic respiratory alkalosis** (คาด acute 21 · chronic 16.5) · ตาม HH ค่าชุดนี้ให้ pH ~7.46 |
+| 8 | 7.43 | 75 | 48 | **chronic respiratory acidosis + metabolic alkalosis** (คาด HCO3 24 + 4 × 3.5 = 38 แต่วัดได้ 48) — เช่น COPD ที่ได้ยาขับปัสสาวะ/steroid |
+| 9 | 7.31 | 80 | 39 | **chronic respiratory acidosis** ชดเชยพอดี (คาด 24 + 16 = 40) |
+| 10 | 7.52 | 23 | 18 | **respiratory alkalosis** HCO3 อยู่ระหว่าง acute (20.6) กับ chronic (15.5) → กำลังชดเชย หรือมี metabolic acidosis เล็กน้อยร่วม |
+""",
+    ["ใช้ TCO2 จาก electrolyte คำนวณ AG/compensation · ABG HCO3 เป็นค่าคำนวณ",
+     "AG = Na − (Cl + HCO3) ปกติ 10 ± 2 · แก้ albumin +2.5 ต่อ 1 g/dL ที่ลด",
+     "AG กว้าง = กรดเติม · AG ปกติ Cl สูง = เสีย HCO3/ขับ H ไม่ได้",
+     "Delta ratio > 2 → met. alkalosis ร่วม · < 1 → NAG ร่วม",
+     "Osmolal gap > 10 + AG กว้าง → methanol/ethylene glycol"],
+    [mcq(N(27), "A 35-year-old man with type 1 diabetes has vomited repeatedly for 3 days. Na 136, Cl 88, HCO3 16 mEq/L, glucose 520 mg/dL, albumin 4.0 g/dL. ABG: pH 7.34, PaCO2 31 mmHg. What is the most complete acid–base diagnosis?",
+         ["High anion gap metabolic acidosis with a coexisting metabolic alkalosis",
+          "High anion gap metabolic acidosis alone with appropriate respiratory compensation",
+          "Combined high anion gap and normal anion gap metabolic acidosis",
+          "Metabolic alkalosis with respiratory compensation",
+          "Normal anion gap metabolic acidosis with respiratory alkalosis"], 0,
+         "AG = 136 − (88 + 16) = **32** · ΔAG = 32 − 12 = **20** · ΔHCO3 = 24 − 16 = **8** · delta ratio = 20 ÷ 8 = **2.5 (> 2)** → HCO3 ลดน้อยกว่าที่กรดที่เติมเข้ามาควรทำ = มี **metabolic alkalosis จากการอาเจียน** ซ่อนอยู่ (ถ้าไม่มี HCO3 ควรเหลือ ~4) · Winter: 1.5 × 16 + 8 = 32 ± 2 → PaCO2 31 ชดเชยพอดี · pH: 6.1 + log (16 ÷ 0.93) = 7.34 ✓\n\n"
+         "- **HAGMA อย่างเดียว** — delta ratio จะอยู่ราว 1–2\n- **HAGMA + NAGMA** — delta ratio < 1\n"
+         "- **metabolic alkalosis หลัก** — pH 7.34 เป็นกรด\n- **NAGMA** — AG 32 กว้าง",
+         "Delta ratio > 2 ใน DKA = มีอาเจียน/alkalosis ร่วม", "Delta–delta", R("Anion gap measurement", "Berend NEJM 2014"), [AB_B, DM, VOMIT, ABG]),
+     mcq(N(28), "A 40-year-old man is brought in 18 hours after drinking homemade liquor; he now complains of blurred vision. Na 138, Cl 100, HCO3 10 mEq/L, glucose 90 mg/dL, BUN 14 mg/dL, measured serum osmolality 330 mOsm/kg; serum ethanol undetectable. ABG: pH 7.26, PaCO2 23 mmHg. What is the most likely cause?",
+         ["Methanol poisoning (formate accumulation)", "Isolated ethanol intoxication", "Diabetic ketoacidosis",
+          "Lactic acidosis from septic shock", "Diarrhea-induced bicarbonate loss"], 0,
+         "AG = 138 − (100 + 10) = **28** (กว้าง) · Posm คำนวณ = 2(138) + 90/18 + 14/2.8 = 276 + 5 + 5 = **286** · osmolal gap = 330 − 286 = **44 (> 10)** · ไม่มี ethanol → มี osmole แปลกปลอม = **toxic alcohol** · ตามัว = **methanol → formate** ทำลาย optic nerve (สไลด์: methanol → formate · wide AG) · Winter: 1.5 × 10 + 8 = 23 ✓ ชดเชยพอดี\n\n"
+         "- **ethanol อย่างเดียว** — ไม่พบ ethanol และ ethanol ไม่ทำให้ AG กว้างขนาดนี้\n- **DKA** — glucose 90\n"
+         "- **lactic acidosis** — ไม่ทำให้ osmolal gap กว้าง 44 และไม่มี sepsis\n- **diarrhea** — AG ปกติ",
+         "AG กว้าง + osmolal gap กว้าง + ตามัว → methanol", "Osmolal gap", R("Wide AG metabolic acidosis", "Berend NEJM 2014"), [AB_B, POISON, OSM_B, ABG])],
+    [AB_B, ABG, ABG_B, OSM_B, ELYTE_B, RTA, POISON], {"steps": F.steps(), "gamble": F.gamble()}, source=SRC_ADD)
+
+# ═════════════════════════════════════════════ 15
+sec("nephro-phy2-15", "การถ่ายปัสสาวะ — ศูนย์ควบคุม เส้นประสาท micturition reflex และชนิดของการกลั้นไม่ได้",
+    "Cortex · pons (PMC/PSC) · sacral S2–S4 · hypogastric/pelvic/pudendal · β3 α1 M3 nicotinic · reflex ที่ > 150 mL · urge vs overflow vs stress", 9,
+"""### ศูนย์ควบคุม 3 ระดับ (สไลด์ CNS control of micturition)
+| ศูนย์ | หน้าที่ |
+|---|---|
+| **1 Cerebral micturition center** (prefrontal cortex) | ศูนย์บัญชาการ — รับรู้ว่าเต็ม และ **อนุญาตหรือยับยั้ง** voiding reflex |
+| **2 Pontine micturition center (PMC) / pontine storage center (PSC)** | สถานีถ่ายทอดระหว่างสมองกับไขสันหลัง · **สวิตช์สลับช่วงเก็บ/ช่วงขับ** · **ประสานให้หูรูดคลายพร้อม detrusor บีบ** (✍️ ประสานกล้ามเนื้อหลายส่วนพร้อมกัน) |
+| **3 Sacral micturition center** (S2–S4) | ศูนย์ของ **micturition reflex** · ทางเชื่อมก้านสมองกับกระเพาะ |
+
+### เส้นประสาท (สไลด์ Innervation)
+[[fig:mict]]
+| เส้นประสาท | สารสื่อ / receptor | ผล | ช่วง |
+|---|---|---|---|
+| **Hypogastric** (sympathetic T10–L2) | NE · **β3** ที่ detrusor · **α1** ที่คอกระเพาะ หูรูดชั้นใน ท่อปัสสาวะ | detrusor **คลาย** · หูรูดชั้นใน **บีบ** | **เก็บ** |
+| **Pelvic** (parasympathetic S2–S4) | ACh · **M3** | detrusor **บีบ** · หูรูดชั้นในคลาย | **ขับ** |
+| **Pudendal** (somatic S2–S4) | ACh · **nicotinic (N)** | หูรูด **ชั้นนอก** (กล้ามเนื้อลาย) บีบ = กลั้นได้ตามใจ | เก็บ (ตั้งใจ) |
+| **Aδ afferent** ใน pelvic nerve | — | ส่งสัญญาณการยืด/ความเต็ม | ทั้งสองช่วง |
+สไลด์สรุป: ช่วงเก็บ — parasympathetic **ถูกยับยั้ง** · sympathetic และ somatic **ถูกกระตุ้น** | ช่วงขับ — กลับกันทั้งหมด
+
+### Micturition reflex (สไลด์ Bladder at rest · Micturition reflex)
+- **ขณะพัก**: detrusor คลาย หูรูดชั้นในหดแบบ passive หูรูดชั้นนอกหดค้าง (tonic discharge ของ pudendal)
+- **ปัสสาวะ > ~150 mL** → stretch receptor → Aδ afferent → ไขสันหลัง sacral (และขึ้นไป pons/cortex) → **parasympathetic ↑** (detrusor บีบ หูรูดในเปิด) **sympathetic ↓** · **somatic ↓** (หูรูดนอกคลาย) → ปัสสาวะ
+- **cortex** ตัดสินว่าจะปล่อยหรือไม่ — ถ้ายังไม่สะดวก PSC สั่ง ↑ sympathetic ↑ somatic ↓ parasympathetic → reflex ถูกกด แล้วจะกลับมาใหม่เมื่อเต็มขึ้นอีก
+- ถ้าไม่ปล่อย ความรู้สึกปวดจะมาเป็นระลอกตามรอบของ reflex
+
+### สะพานสู่คลินิก — ทำนายอาการจากตำแหน่งรอยโรค (เติมจากตำรา · ICS terminology)
+[[fig:lesion]]
+| ชนิด | กลไก | ตัวอย่าง |
+|---|---|---|
+| **Urge** (overactive) | detrusor บีบเองโดย cortex ห้ามไม่ได้ (รอยโรคเหนือ pons หรือ detrusor ไวเอง) · หูรูดยังประสานดี → ถ่ายหมด | stroke dementia NPH (wet wobbly wacky) · OAB |
+| **Reflex + DSD** | ไขสันหลังเหนือ S2 ขาด → reflex ที่ sacral ยังอยู่แต่ไม่มี pons ประสาน → detrusor บีบขณะหูรูดบีบสวน | spinal cord injury หลัง spinal shock · MS |
+| **Overflow** | detrusor ไม่บีบ (sacral/peripheral ขาด) หรือทางออกอุด → ค้างจนล้น | cauda equina · DM neuropathy · **BPH** · ยา anticholinergic |
+| **Stress** | แรงปิดของหูรูด/อุ้งเชิงกราน < แรงดันช่องท้อง | หลังคลอด · หลังผ่าตัด prostate |
+
+#### ทำไมถึงมีอาการนี้
+- **ยาแก้หวัด (pseudoephedrine + chlorpheniramine) แล้วปัสสาวะไม่ออกในชายสูงอายุ** — α1-agonist บีบคอกระเพาะ/prostate + anticholinergic ปิด M3 ของ detrusor → overflow (ดูคาบ 22/10 Urethral catheterization)
+- **ยารักษา OAB สอดคล้องกับวงจร** — oxybutynin/solifenacin (บล็อก M3) · **mirabegron (β3-agonist เลียนแบบ sympathetic ช่วงเก็บ)** · tamsulosin (บล็อก α1A ช่วยผู้ชาย BPH ถ่ายง่ายขึ้น)
+- **SCI: ความดันในกระเพาะสูงทำลายไต** — DSD ทำให้ detrusor บีบกับทางออกที่ปิด → ความดันสูง → vesicoureteral reflux hydronephrosis ติดเชื้อซ้ำ
+""",
+    ["Cortex อนุญาต/ห้าม · pons สลับเก็บ/ขับและประสานหูรูด · S2–S4 = ศูนย์ reflex",
+     "Hypogastric (T10–L2, NE): β3 คลาย detrusor · α1 บีบหูรูดใน → เก็บ",
+     "Pelvic (S2–S4, ACh M3): detrusor บีบ → ขับ · Pudendal (ACh N): หูรูดนอก",
+     "Reflex เริ่มที่ ~150 mL ผ่าน Aδ afferent",
+     "เหนือ pons → urge · ไขสันหลัง → DSD · sacral/ทางออกอุด → overflow"],
+    [mcq(N(29), "A 30-year-old man had a complete T6 spinal cord injury 4 months ago. Urodynamics show involuntary detrusor contractions while the external urethral sphincter contracts simultaneously; he has recurrent UTIs and bilateral hydronephrosis. Which best explains this pattern?",
+         ["Interruption of pathways to the pontine micturition center leaves the sacral reflex intact but uncoordinated, causing detrusor–sphincter dyssynergia",
+          "Destruction of the sacral micturition center produces an atonic, areflexic bladder",
+          "Loss of cortical inhibition with intact pontine coordination produces urge incontinence with complete emptying",
+          "Weakness of the pelvic floor allows urine leakage when abdominal pressure rises",
+          "Prostatic enlargement obstructs outflow and causes overflow incontinence"], 0,
+         "รอยโรคไขสันหลัง **เหนือ S2 แต่ใต้ pons** (หลังพ้น spinal shock): **sacral reflex ยังอยู่** → detrusor บีบเองเมื่อกระเพาะยืด แต่ **ขาดสวิตช์และการประสานจาก pons** → หูรูดนอกไม่คลายตาม (บีบสวน) = **detrusor–sphincter dyssynergia** → ความดันในกระเพาะสูง ปัสสาวะค้าง reflux hydronephrosis UTI (สไลด์: pons = coordinating center ของหูรูดและกระเพาะ)\n\n"
+         "- **sacral ถูกทำลาย** → atonic overflow ไม่มี detrusor contraction\n- **เหนือ pons** → urge แต่ถ่ายหมด หูรูดประสานดี\n"
+         "- **อุ้งเชิงกรานหย่อน** = stress incontinence\n- **BPH** — ไม่มี involuntary detrusor contraction ร่วมกับหูรูดบีบแบบนี้",
+         "SCI เหนือ sacral → reflex bladder + DSD", "Neurogenic bladder by lesion level", R("CNS control of micturition · Micturition reflex"), [MICT_B, INCONT, SCI, SCI_B, RET]),
+     mcq(N(30), "Which receptor–effect pairing correctly describes bladder physiology?",
+         ["Sympathetic hypogastric fibers relax the detrusor via β3 receptors and contract the internal sphincter via α1 receptors during filling",
+          "Parasympathetic pelvic fibers contract the detrusor via nicotinic receptors during voiding",
+          "Somatic pudendal fibers contract the internal (smooth muscle) urethral sphincter via M3 receptors",
+          "M3 receptor stimulation relaxes the detrusor during the storage phase",
+          "Aδ afferent fibers in the pudendal nerve carry bladder-stretch signals to T10–L2"], 0,
+         "ช่วง **เก็บ**: hypogastric (T10–L2) ปล่อย NE → **β3 คลาย detrusor** + **α1 บีบคอกระเพาะ/หูรูดใน** (สไลด์ Innervation)\n\n"
+         "- **pelvic → nicotinic** — ผิด pelvic (parasympathetic) ใช้ **M3** บีบ detrusor · nicotinic อยู่ที่หูรูดนอก (pudendal)\n- **pudendal → หูรูดใน M3** — pudendal คุม **หูรูดนอก (กล้ามเนื้อลาย)** ผ่าน nicotinic\n"
+         "- **M3 คลาย detrusor** — M3 ทำให้ **บีบ**\n- **Aδ ใน pudendal ไป T10–L2** — Aδ afferent อยู่ใน **pelvic nerve** เข้า **S2–S4**",
+         "β3 คลาย · α1 บีบหูรูดใน · M3 บีบ detrusor · N หูรูดนอก", "Bladder innervation", R("Innervation of the urinary bladder and urethral sphincter"), [MICT_B, INNV, OAB_D])],
+    [MICT_B, INNV, INCONT, STRESS, STRESS_B, AUR, AUR_B, OAB_D, BPH, SCI_B], {"mict": F.mict(), "lesion": F.lesion()})
 
 # ── END SECTIONS
 
