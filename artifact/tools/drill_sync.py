@@ -9,6 +9,7 @@ Ward Drill (artifact Fdi5gcNXKqFLAXg4fQBV7X) build จาก branch `claude/ador
     git worktree add ../drillwt origin/claude/adoring-babbage-zkg8ih
     python3 artifact/tools/drill_sync.py ../drillwt
     cd ../drillwt && python3 build.py --no-pdf
+    python3 dashboard/drill_tool.py merge ../drillwt/drill.html dashboard/drill_sets <out.html>   # ชุดรายคาบของ session Dashboard
 
 สิ่งที่ทำ
   1. ดึงข้อ MCQ ที่เขียนใหม่ในบทเรียน (เฉพาะ id ขึ้นต้นตาม PREFIX — ข้อ N-MCQ/MOCK มีในคลังอยู่แล้ว)
@@ -39,6 +40,8 @@ JOBS = [
     ('endo.json', '14/10', 'endo', 'E05', 'END-DM-', 'dm', {'date': 'พ. 14 ต.ค.', 'week': 5, 'al': 0}),
     ('cardio.json', '36', 'cardio', '36', 'CAR-ECG-', 'ecg', None),
 ]
+# วันที่คาบที่ session Lecture Dashboard แก้ใน Drill (19 ต.ค.) — ใส่กลับลง config.lectures ทุกครั้ง
+LEC_FIX = {"07": {"date": "ศ. 18 ก.ย.", "week": 1}, "08": {"date": "ไม่ระบุวัน", "week": 1}, "23": {"date": "อ. 29 ก.ย.", "week": 3}, "33": {"date": "อ. 22 ก.ย.", "week": 2}, "D01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "D02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "N02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": ""}, "O01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}}
 # ตำแหน่งคาบใหม่ใน lecture_order: แทรกหลังคาบนี้ (None = ขึ้นก่อน)
 AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04'}
 BLURB = {
@@ -109,6 +112,9 @@ def convert(drill):
         report.append(f'{setk:7s} {dlec:4s} MCQ {len(mcq):2d} · MEQ/OSCE {len(meq)} ← learn {fn} {lec}')
     for k, b in BLURB.items():
         sets[k]['blurb'] = b
+    for k, v in LEC_FIX.items():
+        if k in cfg['lectures']:
+            cfg['lectures'][k].update(v)
     dump(cfg_p, cfg)
     return nl_codes, report
 
