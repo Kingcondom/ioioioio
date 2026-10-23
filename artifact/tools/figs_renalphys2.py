@@ -655,12 +655,12 @@ def mict():
            line(256, 268, 256, 330, "lmu w2"),
            path("M58 150 C120 150 150 150 192 156", "lms w3", "ah-ms"),
            t(96, 140, "hypogastric · NE", "xs b tms"), t(70, 176, "β3 คลาย · α1 บีบ", "xs tms"),
-           path("M58 262 C120 262 160 240 196 220", "lac w3", "ah-ac"),
+           path("M58 262 C120 262 170 246 210 236", "lac w3", "ah-ac"),
            t(70, 288, "pelvic · ACh (M3)", "xs b tac"),
            path("M58 300 C130 300 190 296 232 296", "lok w3", "ah-ok"),
            t(120, 318, "pudendal · ACh (N)", "xs b tok"),
-           path("M190 200 C150 212 100 234 62 248", "lwa w2 da", "ah-wa"),
-           t(112, 212, "Aδ afferent: ยืด", "xs b twa")]
+           path("M194 214 C150 222 100 238 62 248", "lwa w2 da", "ah-wa"),
+           t(84, 212, "Aδ afferent: ยืด", "xs b twa")]
     return fig("เส้นประสาทของกระเพาะปัสสาวะ — sympathetic เก็บ · parasympathetic ปล่อย · somatic กลั้น",
                "**Hypogastric (sympathetic T10–L2, NE)**: β3 → detrusor คลาย · α1 → คอกระเพาะ/หูรูดชั้นในบีบ → **ช่วงเก็บ** · **Pelvic (parasympathetic S2–S4, ACh)**: M3 → detrusor บีบ หูรูดชั้นในคลาย → **ช่วงขับ** · **Pudendal (somatic S2–S4, ACh)**: nicotinic → หูรูดชั้นนอก (กล้ามเนื้อลาย) บีบ = กลั้นได้ตามใจ · **Aδ afferent** ใน pelvic nerve ส่งสัญญาณการยืด · pons คือสวิตช์สลับเก็บ/ขับและประสานให้ detrusor บีบพร้อมหูรูดคลาย (สไลด์ CNS control · Innervation)",
                svg(420, 336, "แผนผังเส้นประสาท hypogastric pelvic pudendal และ afferent ของกระเพาะปัสสาวะกับศูนย์ควบคุมในสมอง", *out))
