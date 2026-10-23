@@ -391,8 +391,492 @@ LP_GUIDE = [
 ]
 
 # ═════════════════════════════════════════════════════════════════════ ACS 21/10
-ACS, ACS_CALLOUTS, ACS_GUIDE = [], {}, []  # @@STUB@@
-#@@ACS@@
+ACSSRC = "handout 2026 อ.เพชรรัตน์ (Petcharat Dusitanond, MD, Neurologist) — Acute confusional state and Alteration of consciousness · คาบ 21 ต.ค. 2569"
+RA = lambda p: ["สไลด์ อ.เพชรรัตน์ — " + p]
+RQ = ["สไลด์ อ.เพชรรัตน์ — Delirium Quiz ในคาบ 21 ต.ค. 2026"]
+ACS = []
+
+ACS.append(sec("neuro-acs-16", "ที่อาจารย์เน้นในคาบ 21 ต.ค. 2026 (handout + Delirium quiz)",
+    "เฉลย Delirium quiz หกข้อที่ทำในห้อง · สิ่งที่อาจารย์เขียนเน้น · จุดที่ต่างจากหัวข้อ 1–15", 12,
+    ACSSRC, ["2.1.78", "B3.2.9(2)", "2.2.36", "B3.2.5(4)"],
+"""หัวข้อ 16–19 มาจาก **handout ปี 2026 ของ อ.เพชรรัตน์ ดุสิตานนท์** (Petcharat Dusitanond, MD, Neurologist) ที่บรรยายวันที่ 21 ต.ค. 2569 · handout ฉบับนี้มี **ภาพหน้าจอ Delirium Quiz (Google Form) ที่ทำในห้อง** และลายมือของผู้ใช้ — คำถามในควิซคือสิ่งที่อาจารย์ต้องการให้รู้แน่ ๆ
+
+### Delirium Quiz — เฉลยและเหตุผลสั้น
+| ข้อ | คำถาม (ย่อ) | คำตอบ | เหตุผลหนึ่งบรรทัด |
+|---|---|---|---|
+| 1 | สารสื่อประสาทใดมีบทบาทสำคัญใน delirium | **Acetylcholine** | **ACh ขาด** เป็นกลไกหลักของสมาธิเสีย · ยา anticholinergic ทำให้เกิด delirium ได้เอง |
+| 2 | Delirium ชนิดใดพบบ่อยที่สุด | **Hypoactive** | ✍️ "Mostly" บนสไลด์ · เงียบจึงถูกมองข้าม |
+| 3 | อายุเท่าใดขึ้นไปเพิ่มความเสี่ยง | **65 ปี** | ปัจจัยเสี่ยงตาม NICE CG103 |
+| 4 | หญิง 78 ปีมีผู้ดูแลประจำ ควรซักประวัติจากใคร | **ผู้ดูแลประจำ** | เห็น baseline และการเปลี่ยนแปลงทุกวัน |
+| 5 | Digit span ปกติในผู้ใหญ่ | **5–7 ตัว** | ทวนตัวเลขไปข้างหน้าได้ไม่ถึง 5 = สมาธิเสีย |
+| 6 | ชาย 40 ปี หยุดสุรา 3 วัน สับสน สั่น ภาพหลอน ไข้ ชีพจรเร็ว | **Alcohol withdrawal (delirium tremens)** | ช่วงเวลา 48–96 ชม. + autonomic hyperactivity |
+
+> **ที่มาของควิซ** — อ่านได้จากข้อความ OCR ของภาพหน้าจอเท่านั้น (ไฟล์ 25 MB ใหญ่เกินกว่าจะเปิดดูภาพได้) จึงอาจมีข้อที่ OCR ไม่ติด · ข้อ 1 มีเครื่องหมาย × กำกับ และ OCR พบตัวเลือก Substance P ถูกทำเครื่องหมาย จึงน่าจะเป็นข้อที่ตอบพลาด — ดูเหตุผลในข้อ NEU-ACS-MCQ-31
+
+[[fig:acs2_dts]]
+
+### สิ่งที่อาจารย์เน้น (ไฮไลต์และลายมือบน handout)
+- **Hypoactive = mostly** — ชนิดที่พบบ่อยที่สุด (สอดคล้องกับหัวข้อ 13)
+- **ตรวจหา localizing sign เสมอ** — ✍️ เขียนต่อท้ายว่า **structural brain: stroke, tumor** → มี localizing sign ต้องทำภาพสมอง
+- **Haloperidol** — ✍️ **EPS** และ **QT prolong → torsades de pointes** (ใช้ขนาดต่ำเมื่อจำเป็นเท่านั้น)
+- **Trazodone** ที่ใช้ช่วยนอน — ✍️ **serotonin syndrome**
+- **Reduced sensory input** ใน DELIRIUM — ✍️ "loss sensory" → คืนแว่นและเครื่องช่วยฟัง
+- **Asterixis และ multifocal myoclonus** — ✍️ **metabolic** encephalopathy
+- **Pupillary light reflex ทนต่อภาวะเมแทบอลิกมาก** — ผู้ป่วยซึมที่รูม่านตายังตอบสนองดี ให้คิดถึงเมแทบอลิกก่อน · **CN III palsy** ✍️ มี **ptosis** ร่วม
+- **RAS เป็น "สวิตช์ไฟหลัก"** — handout มีภาพแบบกดดูนิวเคลียส (หัวข้อ 18)
+
+### จุดที่ handout 2026 ต่างจากหัวข้อ 1–15
+| เรื่อง | หัวข้อเดิม | handout 2026 | ใช้อย่างไร |
+|---|---|---|---|
+| **ระดับความรู้สึกตัว** | สี่ระดับ: alert · lethargy · stupor · coma | **ห้าระดับ: drowsiness · lethargy · obtundation · stupor · coma** | ทั้งสองแหล่งย้ำว่า **บรรยายสิ่งที่เห็นจริง** (หัวข้อ 19) |
+| **Caloric test** | น้ำเย็นจัด 10 มล. | **น้ำเย็น 50 mL (≤ 30 °C) ใน 30 วินาที · รอ 1 นาที · เว้น 5 นาทีระหว่างหู** | ตอบตามอาจารย์ในคาบ · ปริมาณต่างกันตามตำรา หลักการเหมือนกัน |
+| **นิยาม delirium** | DSM-5 ห้าข้อ | **Alexander & Needham 2023** — fluctuating · inattention เด่น · awareness เปลี่ยน + visual hallucination · สัมพันธ์กับตัวกระตุ้น | ใช้คู่กัน (หัวข้อ 17) |
+| **การดูแล** | ห้าหัวข้อของสไลด์เดิม | **Marcantonio NEJM 2017 สี่ขั้น + DELIRIUM** | หัวข้อ 17 |
+| **ยาที่ทำให้สับสน** | Usual suspects | **เพิ่มยาปฏิชีวนะ** (cefepime, quinolone, carbapenem, metronidazole ฯลฯ) | หัวข้อ 17 |
+| **การนอน** | สามอาการของ circadian disruption | **two-process model · GABA/orexin · melatonin, ramelteon, DORA, dexmedetomidine** | หัวข้อ 18 |
+| **Ocular bobbing** | ลงเร็ว ค้าง แล้วกลับช้า | ลงเร็วกลับช้า **และไม่มีการกลอกตาแนวนอน** · เพิ่ม sustained up/down gaze | หัวข้อ 19 |""",
+    ["Delirium quiz: ACh · hypoactive · อายุ ≥ 65 · ซักประวัติจากผู้ดูแลประจำ · digit span 5–7 · delirium tremens",
+     "Localizing sign ใน delirium → คิดถึงรอยโรคโครงสร้าง ทำภาพสมอง",
+     "Haloperidol: EPS + QT ยาว (torsades) · trazodone: serotonin syndrome",
+     "Light reflex ทนต่อเมแทบอลิก → ซึมแต่รูม่านตาตอบสนองดี = คิดถึงเมแทบอลิก",
+     "Handout 2026: ระดับความรู้สึกตัว 5 ระดับ · caloric น้ำเย็น 50 mL"],
+    [mcq("NEU-ACS-MCQ-31",
+         "สาร neurotransmitter ใดต่อไปนี้ มีบทบาทสำคัญที่สุดในการเกิด delirium",
+         "Acetylcholine",
+         ["Dopamine", "Glutamate", "Substance P", "Oxytocin"],
+         0,
+         "**ตอบ: Acetylcholine** — กลไกหลักที่ได้รับการยอมรับมากที่สุดของ delirium คือ **cholinergic deficiency** (สไลด์: ARAS dysfunction สัมพันธ์กับ **ACh ขาด และ dopamine เกิน**)\n\n"
+         "**กลไก** — เครือข่ายสมาธิและความตื่นตัว (pedunculopontine/basal forebrain → thalamus → cortex) ใช้ ACh เป็นหลัก · ภาวะที่ทำให้เกิด delirium แทบทุกชนิดไปลด ACh: **ขาดออกซิเจนหรือน้ำตาล** (การสร้าง ACh ต้องใช้ acetyl-CoA จากการเผาผลาญกลูโคส) · **cytokine** · **ยา anticholinergic** · หลักฐานสนับสนุนคือ **ยา anticholinergic ทำให้เกิด delirium ได้เอง** และ **anticholinergic burden สูงสัมพันธ์กับ delirium**\n\n"
+         "**ทำไมตัวเลือกอื่นไม่ใช่คำตอบที่ดีที่สุด** — **Dopamine** เกินเป็นอีกด้านของความไม่สมดุล (จึงใช้ haloperidol ลดอาการกระวนกระวาย) แต่เป็นผลที่ตามมาเมื่อเทียบกับ ACh ที่ขาด · **Glutamate** เกี่ยวกับ excitotoxicity และภาวะถอนสุรา แต่ไม่ใช่กลไกร่วมหลัก · **Substance P** เป็น neuropeptide ของทางเดินความเจ็บปวดและการคลื่นไส้ (ตัวรับ NK1) **ไม่มีบทบาทที่ยอมรับใน delirium** — ภาพหน้าจอควิซดูเหมือนเลือกข้อนี้และมีเครื่องหมายผิด · **Oxytocin** ไม่เกี่ยวข้อง",
+         "Delirium = ACh ขาด + dopamine เกิน · ยา anticholinergic จึงเป็นตัวการบ่อย",
+         "Delirium pathophysiology (quiz)", RQ, ["2.1.78", "B3.2.9(2)", "B3.1.2(4)"]),
+     mcq("NEU-ACS-MCQ-32",
+         "Delirium type ใดพบบ่อยที่สุด",
+         "Hypoactive",
+         ["Hyperactive", "Mixed", "พบพอ ๆ กันทุกชนิด", "Catatonic"],
+         2,
+         "**ตอบ: Hypoactive** — handout แบ่งสามชนิด และมีลายมือ **\"Mostly\"** กำกับที่ hypoactive\n\n"
+         "**ทำไมพบบ่อยแต่ถูกมองข้าม** — ผู้ป่วย **ซึม เฉื่อย เฉยเมย (motor retardation, apathy)** ไม่รบกวนใคร จึงถูกบันทึกว่า \"หลับดี\" หรือ \"ซึมเศร้า\" · กลไกที่ทำให้เป็นชนิดนี้มักเป็น **cytokine จากการติดเชื้อ ยากดประสาท และภาวะเมแทบอลิก** ซึ่งกดการทำงานของสมองมากกว่ากระตุ้น · ผู้สูงอายุที่ apathy lethargy หรืออารมณ์ซึม **ต้องประเมิน delirium** (handout)\n\n"
+         "**ทำไมข้ออื่นผิด** — **hyperactive** เด่นชัดจึงถูกจดจำ แต่เป็นส่วนน้อย (พบมากในภาวะถอนสุราและผู้ป่วยอายุน้อย) · **mixed** พบรองลงมา · สัดส่วน **ไม่เท่ากัน** · **catatonic ไม่ใช่ชนิดย่อยมาตรฐานของ delirium**",
+         "Hypoactive พบบ่อยที่สุด — ต้องคัดกรองเชิงรุก ไม่รอให้ผู้ป่วยโวยวาย",
+         "Delirium subtypes (quiz)", RQ, ["2.1.78", "B3.2.9(2)"]),
+     mcq_fixed("NEU-ACS-MCQ-33",
+         "จากข้อมูลงานวิจัย อายุตั้งแต่เท่าใดขึ้นไป เพิ่มความเสี่ยงต่อการเกิด delirium",
+         ["40 ปี", "50 ปี", "55 ปี", "60 ปี", "65 ปี"], 4,
+         "**ตอบ: 65 ปีขึ้นไป** — แนวทาง **NICE CG103** ระบุปัจจัยเสี่ยงสำคัญของ delirium ในผู้ป่วยในโรงพยาบาลคือ **อายุ ≥ 65 ปี · มีภาวะสมองเสื่อมหรือการรู้คิดบกพร่องเดิม · กระดูกสะโพกหัก · เจ็บป่วยรุนแรง** และให้คัดกรองทุกรายที่มีปัจจัยเหล่านี้\n\n"
+         "**กลไก** — handout: ความน่าจะเป็นของ delirium = **ความเปราะบางของสมองเดิม (predisposing) × ความรุนแรงของสิ่งกระตุ้น (precipitating)** · อายุมากทำให้ **ACh สำรองลดลง BBB รั่วขึ้น microglia ไวต่อการอักเสบ** สิ่งกระตุ้นเล็กน้อยก็ข้ามเกณฑ์ได้\n\n"
+         "**ทำไมตัวเลขอื่นผิด** — 40–60 ปีไม่ใช่จุดตัดที่ใช้ในแนวทางหรือแบบประเมินความเสี่ยงหลัก · ความเสี่ยงเพิ่มต่อเนื่องตามอายุ แต่จุดตัดที่ใช้คัดกรองคือ **65 ปี**",
+         "อายุ ≥ 65 ปี + สมองเสื่อมเดิม + สะโพกหัก + ป่วยหนัก = กลุ่มเสี่ยง delirium ต้องคัดกรอง",
+         "Delirium risk factors (quiz)", RQ, ["2.1.78", "B3.2.9(2)"]),
+     mcq("NEU-ACS-MCQ-34",
+         "ผู้ป่วยหญิง 78 ปี ลูกสาวพามาโรงพยาบาลเนื่องจากมีอาการสับสนมา 2 วัน เดิมผู้ป่วยช่วยเหลือตนเองได้น้อย มีโรคประจำตัว DM, HT, DLP และ old ischemic stroke มีผู้ดูแลประจำ ลูกสาวอยู่บ้านติดกันและแวะมาเยี่ยมเป็นครั้งคราว ท่านเป็นแพทย์ที่ดูแล ควรซักประวัติจากใครเหมาะสมที่สุด",
+         "ผู้ดูแลประจำ",
+         ["ผู้ป่วย", "ลูกสาวที่พามาโรงพยาบาล", "แพทย์ที่เคยดูแลผู้ป่วย", "เพื่อนบ้าน"],
+         3,
+         "**ตอบ: ผู้ดูแลประจำ** — การวินิจฉัย delirium ต้องอาศัย **CAM feature 1: การเปลี่ยนแปลงเฉียบพลันจาก baseline และอาการขึ้นลง** ข้อมูลนี้ได้จาก **คนที่อยู่กับผู้ป่วยทุกวัน** เท่านั้น\n\n"
+         "**เหตุผล** — handout: delirium เป็น **clinical diagnosis** ที่ประวัติและการตรวจช่วยมากกว่าการตรวจใด ๆ และให้เก็บข้อมูลจาก **เพื่อน ครอบครัว เพื่อนบ้าน และบันทึกของผู้ดูแล** · ผู้ดูแลประจำบอกได้ว่า **เดิมทำอะไรได้แค่ไหน เริ่มเปลี่ยนเมื่อไร เปลี่ยนเร็วแค่ไหน ขึ้นลงช่วงไหนของวัน กินยาอะไร หกล้มหรือไม่ กินดื่มขับถ่ายอย่างไร** ซึ่งเป็นกุญแจแยก delirium จาก dementia เดิม\n\n"
+         "**ทำไมข้ออื่นด้อยกว่า** — **ผู้ป่วย** กำลังสับสนและสมาธิเสีย ข้อมูลเชื่อถือไม่ได้ (แต่ยังต้องตรวจสภาพจิตของผู้ป่วยเอง) · **ลูกสาว** เห็นเป็นครั้งคราว อาจไม่รู้ baseline ล่าสุดหรือช่วงที่อาการขึ้นลง · **แพทย์เดิม** และเวชระเบียนให้ข้อมูลโรคและยาที่มีค่า แต่ไม่เห็นการเปลี่ยนแปลงสองวันที่ผ่านมา · **เพื่อนบ้าน** ห่างกว่าผู้ดูแล",
+         "Delirium: ซักประวัติจากคนที่เห็นผู้ป่วยทุกวัน — baseline · onset · fluctuation · ยา",
+         "Delirium — history taking (quiz)", RQ, ["2.1.78", "B3.2.9(2)"]),
+     mcq_fixed("NEU-ACS-MCQ-35",
+         "การตรวจ digit span (ทวนตัวเลขไปข้างหน้า) ในผู้ใหญ่ที่สุขภาพและสมองปกติ จะพูดตามผู้ตรวจได้กี่ตัวเลข",
+         ["3–4 ตัว", "5–7 ตัว", "8–10 ตัว", "11–13 ตัว", "14 ตัวขึ้นไป"], 1,
+         "**ตอบ: 5–7 ตัว** — ผู้ใหญ่ปกติทวนตัวเลขไปข้างหน้าได้ราว **7 ± 2** และ **ได้อย่างน้อย 5 ตัว** · ถ้าได้น้อยกว่า 5 ตัว (ไม่มีปัญหาภาษาหรือการได้ยิน) แปลว่า **สมาธิเสีย**\n\n"
+         "**กลไก** — digit span ทดสอบ **working memory ระยะสั้นมาก** ที่ต้องอาศัยการจดจ่อต่อเนื่องไม่กี่วินาที ไม่ได้ทดสอบความจำระยะยาว จึงใช้เป็น **การทดสอบสมาธิ** ซึ่งเป็น feature 2 ของ CAM · วิธีทำ: พูดตัวเลขสุ่มทีละ 1 ตัวต่อวินาที เริ่มจาก 3 ตัว เพิ่มทีละตัวจนผิดสองครั้ง · การทวนถอยหลังมักได้น้อยกว่าไปข้างหน้า 1–2 ตัว\n\n"
+         "**ทำไมข้ออื่นผิด** — **3–4 ตัว** ผิดปกติ (สมาธิเสีย) · **8–10** อยู่ปลายบนของคนเพียงบางส่วน ไม่ใช่ช่วงปกติทั่วไป · **11–13 และ 14 ขึ้นไป** เกินความจุของ working memory โดยไม่ใช้เทคนิคช่วยจำ",
+         "Digit span ไปข้างหน้า < 5 = inattention · ปกติ 7 ± 2",
+         "Attention testing — digit span (quiz)", RQ, ["2.1.78", "B3.2.9(2)"]),
+     mcq("NEU-ACS-MCQ-36",
+         "ผู้ป่วยชาย 40 ปี ถูกนำส่งโรงพยาบาลเนื่องจากมีอาการสับสนเฉียบพลัน พูดจาไม่รู้เรื่อง มือสั่นทั้งสองข้าง เห็นภาพหลอน กระสับกระส่าย เหงื่อออกมาก มีประวัติหยุดดื่มสุรามาได้ 3 วัน ปฏิเสธโรคประจำตัวเนื่องจากไม่เคยตรวจร่างกาย ตรวจร่างกาย T 40 °C, PR 110/min, RR 25/min, BP 160/100 mmHg, disorientation to time, place, person, inattention, cannot follow simple command, normal extraocular movement, coarse tremor of both hands สาเหตุใดเป็นไปได้มากที่สุด",
+         "Alcohol withdrawal (delirium tremens)",
+         ["Meningoencephalitis", "Hepatic encephalopathy", "Neuroleptic malignant syndrome", "Wernicke encephalopathy"],
+         1,
+         "**ตอบ: alcohol withdrawal — delirium tremens** — หยุดดื่ม **72 ชั่วโมง** (ช่วง DT 48–96 ชั่วโมง) + **delirium** (สับสน สมาธิเสีย ภาพหลอน) + **autonomic hyperactivity** (ไข้ ชีพจรเร็ว หายใจเร็ว BP สูง เหงื่อท่วม) + **coarse tremor**\n\n"
+         "**กลไก** — สุราเสริม GABA-A และกด NMDA อยู่นาน สมองปรับตัวโดย **ลดตัวรับ GABA เพิ่มตัวรับ NMDA** · เมื่อหยุดดื่ม แรงยับยั้งหายทันทีแต่ระบบกระตุ้นยังสูง → **glutamate และ norepinephrine พุ่ง** → สั่น ชัก ภาพหลอน sympathetic ทำงานเกิน ไข้\n\n"
+         "**ทำไมข้ออื่นผิด** — **meningoencephalitis** ต้องคิดเสมอเพราะไข้ 40 °C (ถ้ามีคอแข็ง อาการไม่ดีขึ้นด้วย benzodiazepine หรือไม่มีประวัติถอนสุราชัด ต้องเจาะหลัง) แต่ภาพทั้งหมดอธิบายด้วยการถอนสุราได้ดีกว่า · **hepatic encephalopathy** มักซึม มี asterixis ดีซ่าน ไม่มี sympathetic เกินแบบนี้ · **NMS** ต้องมีประวัติได้ยาต้านโรคจิต และเด่นที่ **กล้ามเนื้อแข็งแบบ lead pipe** ไม่ใช่สั่น · **Wernicke** มี ophthalmoplegia/nystagmus และเดินเซ แต่ผู้ป่วยรายนี้ **กลอกตาปกติ** — ถึงอย่างนั้นทุกรายต้องได้ **thiamine ก่อนกลูโคส** · การรักษา DT คือ **benzodiazepine** (เป็นข้อยกเว้นที่ BZD รักษา delirium ได้)",
+         "หยุดสุรา 48–96 ชม. + delirium + ไข้ ชีพจรเร็ว BP สูง เหงื่อ = delirium tremens → BZD + thiamine",
+         "Delirium — alcohol withdrawal (quiz)", RQ, ["2.1.78", "B3.2.5(4)", "2.3.5(1)"]),
+     ],
+    ["acs2_dts"]))
+
+ACS.append(sec("neuro-acs-17", "Delirium ตาม handout 2026: นิยาม 3D-CAM สี่ขั้นการดูแล DELIRIUM ยาและยาปฏิชีวนะ",
+    "Alexander & Needham 2023 · 3D-CAM · delirium/dementia/depression · Marcantonio สี่ขั้น · DELIRIUM · ยาและยาปฏิชีวนะที่ทำให้สับสน · การส่งตรวจตามไข้และ focal sign", 14,
+    ACSSRC, ["2.1.78", "B3.2.9(2)", "2.3.5-3(5)", "B3.4(4)", "2.3.19(1)"],
+"""### นิยามที่ใช้ในคาบนี้ (Alexander SK, Needham E. Pract Neurol 2023)
+**Delirium** = ความผิดปกติเฉียบพลันของ **สมาธิและความตื่นรู้ที่ขึ้นลง** มีลักษณะเฉพาะที่ทำให้ **วินิจฉัยเชิงบวกได้** แยกจากสาเหตุอื่นของการสับสนเฉียบพลัน
+- **Fluctuating course** — อาการขึ้นลงในวันเดียวกัน
+- **Inattention เด่น** ร่วมกับการรู้คิดด้านอื่นเสีย
+- **Awareness เปลี่ยน และ visual hallucination**
+- **สัมพันธ์ทางเวลากับตัวกระตุ้น** และดีขึ้นเมื่อแก้หรือเอาตัวกระตุ้นออก
+
+**สามชนิด** — hyperactive (กระวนกระวาย) · **hypoactive (เคลื่อนไหวช้า เฉยเมย) — พบบ่อยที่สุด** · mixed
+
+**Delirium เป็น clinical diagnosis** — ประวัติและการตรวจร่างกายอย่างละเอียดช่วยได้มากกว่าการตรวจใด ๆ · ความน่าจะเป็น = **ความเปราะบางของสมอง (predisposing) × ความรุนแรงของภาวะทางกาย (precipitating)** (ภาพ threshold ในหัวข้อ 11)
+
+### ประเมินผู้ป่วยตาม handout
+- **ประวัติ** — จาก **เพื่อน ครอบครัว เพื่อนบ้าน** · บันทึกจากคลินิกเดิม รถพยาบาล และพยาบาล · ระยะเวลาและสถานที่ที่ได้รับการดูแล
+- **ตรวจร่างกายทั่วไป** — สัญญาณชีพรวม **O₂ saturation** · หัวใจ ปอด ท้อง
+- **ตรวจระบบประสาท** — มองหา **ลักษณะเฉพาะของ delirium** (การรู้คิดและพฤติกรรมขึ้นลง) และ **localizing sign** ✍️ ซึ่งชี้ไปที่ **รอยโรคโครงสร้าง เช่น stroke หรือ tumor** มากกว่าสมองทำงานผิดปกติทั่วไป
+
+### CAM และ 3D-CAM (Marcantonio NEJM 2017)
+- **CAM** — ต้องมี **feature 1 (เฉียบพลัน + ขึ้นลง) และ 2 (inattention)** ร่วมกับ **3 (disorganized thinking) หรือ 4 (ระดับความรู้สึกตัวเปลี่ยน)** (หัวข้อ 13)
+- **3D-CAM** — สัมภาษณ์ที่มีโครงสร้าง **ใช้เวลาราว 3 นาที** ถามคำถามทดสอบสมาธิและการรับรู้ (เช่น บอกวัน ทวนตัวเลขถอยหลัง บอกวันในสัปดาห์ถอยหลัง) แล้วให้ผู้ตรวจสังเกต · **ครั้งแรก**: ข้อมูลการเปลี่ยนแปลงจากเวชระเบียนหรือญาติถือว่ามี feature 1 · **ครั้งต่อมา**: ตอบผิดใหม่หรือมีอาการใหม่เมื่อเทียบครั้งก่อน = feature 1 · ผู้ป่วยต้อง **หลับจริงระหว่างสัมภาษณ์** จึงนับว่าง่วงผิดปกติ
+
+### Delirium · dementia · depression — ต้องแยกก่อนรักษา
+| | Delirium | Dementia | Depression |
+|---|---|---|---|
+| **เริ่ม** | เฉียบพลัน ชั่วโมงถึงวัน | ค่อยเป็นค่อยไป เดือนถึงปี | สัปดาห์ถึงเดือน มักมีเหตุการณ์นำ |
+| **ขึ้นลงในวัน** | **ขึ้นลงชัด** แย่ตอนกลางคืน | ค่อนข้างคงที่ | แย่ตอนเช้าได้ |
+| **สมาธิ** | **เสียตั้งแต่แรก** | ปกติจนระยะท้าย | ลดลงจากแรงจูงใจ แต่ทดสอบได้ |
+| **ระดับความรู้สึกตัว** | **เปลี่ยน** (ซึมหรือตื่นเกิน) | ปกติ | ปกติ |
+| **การตอบคำถาม** | สับสน ไม่ตรงประเด็น | พยายามตอบ ปิดบังด้วยการเลี่ยง | **\"ไม่รู้\"** ไม่พยายาม |
+| **การกลับคืน** | **กลับได้ถ้าแก้เหตุ** | ไม่กลับ | ดีขึ้นด้วยการรักษา |
+
+(ตารางในสไลด์เป็นภาพที่อ่านไม่ได้ — ตารางนี้เรียบเรียงตามมาตรฐานของแหล่งที่สไลด์อ้าง health.vic.gov.au)
+- **ผู้สูงอายุที่ apathy, lethargy หรืออารมณ์ซึม ต้องประเมิน delirium** — hypoactive delirium มักถูกเรียกว่าซึมเศร้า
+- **ผู้สูงอายุที่ความจำเสีย ต้องคัดกรองซึมเศร้า** — ซึมเศร้าทำให้ดูเหมือนสมองเสื่อมได้ (pseudodementia)
+- **Dementia อาจมาพร้อมหรือนำด้วยช่วงที่มีอาการซึมเศร้า**
+
+### การดูแล delirium สี่ขั้น (Marcantonio NEJM 2017)
+**1) ประเมินและแก้ปัจจัยที่แก้ได้ — DELIRIUM**
+| อักษร | สาเหตุ | ตัวอย่างที่ต้องดู |
+|---|---|---|
+| **D** | **Drugs** | ยาใหม่ ยาเพิ่มขนาด ยาที่มีฤทธิ์ต่อสมอง (ตารางด้านล่าง) |
+| **E** | **Electrolyte disturbances** | Na · Ca · glucose · ภาวะขาดน้ำ · ไต/ตับ/ไทรอยด์ |
+| **L** | **Lack of drugs** | ภาวะถอนสุราหรือยานอนหลับ · **ความเจ็บที่ควบคุมไม่พอ** |
+| **I** | **Infection** | ทางเดินปัสสาวะ ปอด ผิวหนัง |
+| **R** | **Reduced sensory input** ✍️ | ไม่ได้ใส่แว่นหรือเครื่องช่วยฟัง |
+| **I** | **Intracranial disorders** | stroke เลือดออก การติดเชื้อ ชัก (มองหา focal sign) |
+| **U** | **Urinary and fecal disorders** | **ปัสสาวะคั่ง** · **อุจจาระอัดแน่น** |
+| **M** | **Myocardial and pulmonary disorders** | MI · หัวใจล้มเหลว · ขาดออกซิเจน · CO₂ คั่ง |
+
+**ยาที่เพิ่มความเสี่ยงหรือทำให้ delirium แย่ลง (handout)**
+| กลุ่ม | ตัวอย่าง |
+|---|---|
+| **Benzodiazepines** | midazolam · lorazepam |
+| **Non-BZD hypnotics** | zolpidem |
+| **Anticonvulsants** | phenobarbital · phenytoin |
+| **Antiparkinsonian** | levodopa · amantadine |
+| **Antipsychotics โดยเฉพาะ low-potency typical** | chlorpromazine · thioridazine |
+| **Alcohol** | |
+| **Anticholinergics** | oxybutynin · benztropine · trihexyphenidyl |
+| **TCA** | amitriptyline · imipramine · doxepin |
+| **Antihistamines** | doxylamine · diphenhydramine · chlorpheniramine |
+| **H2 blockers** | cimetidine · ranitidine · famotidine |
+| **Opioids** | **meperidine** |
+
+**ยาปฏิชีวนะที่สัมพันธ์กับ delirium (Teng & Frei 2021)**
+| กลุ่ม | ตัวอย่าง | กลไกที่เสนอ |
+|---|---|---|
+| **Cephalosporins** | **cefepime** · ceftazidime · cefuroxime · cefaclor | ต้าน **GABA-A** · cefepime สะสมเมื่อไตเสื่อมแล้วไม่ปรับขนาด → สับสน myoclonus non-convulsive status |
+| **Carbapenems** | imipenem · ertapenem | ต้าน GABA-A · ชักง่าย |
+| **Fluoroquinolones** | ciprofloxacin · levofloxacin · ofloxacin · moxifloxacin | ต้าน GABA-A และกระตุ้น NMDA |
+| **Macrolides** | clarithromycin · azithromycin | กลไกไม่ชัด · clarithromycin ยับยั้ง CYP3A4 ทำให้ยาอื่นสะสม |
+| **Metronidazole** | | พิษต่อสมองน้อยและ white matter เมื่อใช้นาน |
+| **Linezolid** | | ยับยั้ง MAO → **serotonin syndrome** เมื่อใช้คู่ SSRI |
+| **TMP-SMX** | | สับสนและประสาทหลอนในผู้สูงอายุ/HIV |
+| **Penicillin + BLI** | ampicillin-sulbactam · piperacillin-tazobactam | ต้าน GABA-A เมื่อขนาดสูงหรือไตเสื่อม |
+
+**2) ป้องกันและดูแลภาวะแทรกซ้อน** — ปัสสาวะราด · **นอนนิ่งและหกล้ม** · แผลกดทับ · การนอนผิดปกติ · การกินผิดปกติ (สำลัก ขาดอาหาร)
+
+**3) ความสบายและความปลอดภัย**
+- **พฤติกรรม** — สอนทีมให้ใช้เทคนิค **de-escalation** กับผู้ป่วย hyperactive · ให้ครอบครัวมาเยี่ยม · **หลีกเลี่ยงการผูกยึด**
+- **ยา** — **high-potency antipsychotic ขนาดต่ำ (haloperidol) เฉพาะเมื่อจำเป็น** · ✍️ ระวัง **EPS** และ **QT ยาว → torsades de pointes**
+
+**4) ฟื้นฟูการทำงาน**
+- **สิ่งแวดล้อม** — ลดของเกะกะและเสียง · แสงสว่างพอ · ให้ญาตินำของคุ้นเคยจากบ้านมา
+- **Cognitive reconditioning** — **บอกเวลา สถานที่ บุคคลซ้ำอย่างน้อยวันละสามครั้ง**
+- **ADL** — กายภาพบำบัดและกิจกรรมบำบัด · เมื่อ delirium ดีขึ้นให้ทำเองตามความสามารถ
+- **ครอบครัว** — อธิบายสาเหตุ การกลับคืนได้ วิธีสื่อสาร และบทบาทของครอบครัว
+- **วางแผนจำหน่าย** — เพิ่มการช่วยกิจวัตรประจำวันตามจำเป็น · **สอนญาติใช้สภาพจิตเป็น \"barometer\" ของการฟื้นตัว**
+
+### ส่งตรวจอะไร (algorithm ใน handout)
+[[fig:acs2_labalgo]]
+
+#### ทำไมถึงมีอาการนี้ — ยาที่ไม่ใช่ยาจิตเวชทำให้สับสนได้อย่างไร
+| สิ่งที่พบ | กลไก | ใช้อย่างไร |
+|---|---|---|
+| **สับสนหลังได้ antihistamine, oxybutynin, TCA** | ปิดตัวรับ muscarinic ในเครือข่ายสมาธิ → ACh ใช้งานไม่ได้ · ร่วมกับปากแห้ง ปัสสาวะคั่ง ท้องผูก รูม่านตาขยาย | นับ **anticholinergic burden** รวมทุกตัว |
+| **สับสน กระตุก หลังได้ cefepime ในไตเสื่อม** | ยาสะสม ผ่าน BBB ไปจับ GABA-A แบบต้าน → สมองถูกกระตุ้นเกิน · myoclonus หรือชักแบบไม่ชักกระตุก | ปรับขนาดตาม CrCl · หยุดยาแล้วดีขึ้นใน 1–3 วัน · EEG ถ้ายังซึม |
+| **ภาวะถอนยา (Lack of drugs)** | ระบบที่ถูกกดนาน (GABA) ปรับตัวไว้ เมื่อขาดยาฉับพลันระบบกระตุ้นเด่น | ถามยานอนหลับและสุราที่ใช้ก่อนนอนโรงพยาบาล |
+| **ปัสสาวะคั่ง อุจจาระอัด ทำให้สับสน** | ความเจ็บและแรงดันในกระเพาะปัสสาวะ/ลำไส้กระตุ้น sympathetic และขัดการนอน · ผู้ป่วยบอกไม่ได้ | ตรวจคลำท้อง bladder scan ตรวจทวาร — แก้ได้ทันที |""",
+    ["นิยาม 2023: fluctuating · inattention เด่น · awareness เปลี่ยน + visual hallucination · สัมพันธ์กับตัวกระตุ้น",
+     "3D-CAM = สัมภาษณ์มีโครงสร้าง 3 นาที ใช้อัลกอริทึม CAM เดิม",
+     "สี่ขั้น: แก้ DELIRIUM → ป้องกันภาวะแทรกซ้อน → ปลอดภัย (ไม่ผูกยึด haloperidol ขนาดต่ำ) → ฟื้นฟู",
+     "ยาปฏิชีวนะก็ทำให้สับสนได้: cefepime (ไตเสื่อม) · quinolone · carbapenem · metronidazole · linezolid",
+     "ไม่มีไข้/คอแข็ง/focal → ชุดเมแทบอลิก + EKG + tox + หาการติดเชื้อ · ไข้หรือคอแข็ง → CSF · focal หรือชัก → ภาพสมอง + EEG"],
+    [mcq("NEU-ACS-MCQ-37",
+         "An 82-year-old woman with CKD (creatinine clearance 20 mL/min) is treated for hospital-acquired pneumonia. On day 3 she becomes confused, inattentive and has multifocal myoclonic jerks. Glucose, sodium and calcium are normal; CT brain is unremarkable. Which current medication is the most likely cause?",
+         "Cefepime 2 g IV every 8 hours",
+         ["Amlodipine 5 mg daily", "Paracetamol 500 mg every 6 hours", "Atorvastatin 20 mg nightly", "Omeprazole 20 mg daily"],
+         4,
+         "**ตอบ: cefepime ที่ไม่ได้ปรับขนาดตามไต** — handout จัด cephalosporins (โดยเฉพาะ **cefepime**) อยู่ในยาปฏิชีวนะที่สัมพันธ์กับ delirium (Teng & Frei 2021)\n\n"
+         "**กลไก** — cefepime ขับทางไต ใน CrCl 20 ยาสะสมสูง ผ่าน BBB และ **จับ GABA-A แบบต้าน** → สมองขาดแรงยับยั้ง → **สับสน myoclonus และอาจเป็น non-convulsive status epilepticus** · ขนาด 2 g ทุก 8 ชั่วโมงเป็นขนาดของไตปกติ\n\n"
+         "**สิ่งที่ควรทำ** — ลดขนาดหรือเปลี่ยนยา · ส่ง **EEG** ถ้ายังซึม (หา NCSE) · อาการมักดีขึ้นใน 1–3 วันหลังหยุด (รายรุนแรงอาจต้องฟอกเลือด)\n\n"
+         "**ทำไมข้ออื่นผิด** — **amlodipine, paracetamol ขนาดปกติ, atorvastatin** ไม่ใช่ยาที่ทำให้เกิด delirium ร่วมกับ myoclonus · **omeprazole** เกี่ยวกับ hypomagnesemia ได้บ้าง แต่ไม่ใช่ตัวการที่น่าจะเป็นที่สุดเมื่อเทียบกับ cefepime ที่สะสม",
+         "Delirium + myoclonus ในไตเสื่อมที่ได้ cefepime → นึกถึง cefepime neurotoxicity",
+         "Delirium — antibiotic-associated", RA("Antibiotics linked to Delirium"), ["2.1.78", "B3.2.9(2)"]),
+     mcq("NEU-ACS-MCQ-38",
+         "A 70-year-old man becomes acutely confused on a medical ward. Temperature is 38.6 °C and there is marked neck stiffness; there is no focal neurological sign. According to the laboratory evaluation algorithm in the handout, which investigation must be added to the basic metabolic, ECG, toxicology and infection work-up?",
+         "Cerebrospinal fluid examination by lumbar puncture (after CT if indicated)",
+         ["EEG as the first test", "Serum ammonia only", "Thyroid function tests only", "No further tests until the confusion has lasted 7 days"],
+         0,
+         "**ตอบ: ตรวจ CSF** — algorithm ใน handout: **มีไข้หรือ meningeal sign → CSF (meningitis/encephalitis)** · **focal sign หรือชัก → CT/MRI และ EEG** · ไม่มีทั้งสองอย่าง → ชุดพื้นฐาน\n\n"
+         "**เหตุผล** — meningitis ในผู้สูงอายุอาจมาด้วย **สับสนเป็นอาการเด่น** และเป็นสาเหตุที่ถึงตายแต่รักษาได้ · ผู้ป่วยอายุ > 60 ปีและระดับความรู้สึกตัวเปลี่ยน **ควรทำ CT ก่อนเจาะ** (หัวข้อ 2 ของคาบ LP) แต่ **ห้ามชะลอยาปฏิชีวนะ**\n\n"
+         "**ทำไมข้ออื่นผิด** — **EEG** เป็นการตรวจเพิ่มเมื่อมีชักหรือสงสัย NCSE ไม่ใช่ข้อแรกเมื่อมีคอแข็ง · **ammonia หรือ thyroid อย่างเดียว** อยู่ในชุดเมแทบอลิกที่ต้องทำอยู่แล้ว แต่ไม่ตอบคำถามเรื่อง meningitis · **การรอ 7 วัน** ผิดหลัก delirium ที่ต้องหาเหตุทันที",
+         "Delirium + ไข้/คอแข็ง → CSF · + focal/ชัก → ภาพสมอง + EEG",
+         "Delirium — laboratory evaluation", RA("Laboratory evaluation of delirium patient"), ["2.1.78", "B3.3(2)", "2.3.6(5)"]),
+     mcq("NEU-ACS-MCQ-39",
+         "A 76-year-old man with hyperactive delirium from urosepsis is pulling at his intravenous line and has struck a nurse despite de-escalation and family presence. His QTc is 440 ms and he has no history of Parkinson's disease. Which pharmacological option best follows the handout?",
+         "Low-dose haloperidol, with ECG monitoring for QT prolongation and observation for extrapyramidal signs",
+         ["Chlorpromazine 50 mg IM", "Lorazepam 2 mg IV", "Diphenhydramine 50 mg IV", "Bilateral wrist restraints without medication for the next 24 hours"],
+         2,
+         "**ตอบ: haloperidol ขนาดต่ำ** — handout (Marcantonio 2017): **ใช้ high-potency antipsychotic ขนาดต่ำเฉพาะเมื่อจำเป็น** · ลายมือในคาบ: ระวัง **EPS** และ **QT ยาว → torsades de pointes** จึงต้องติดตาม ECG\n\n"
+         "**กลไก** — haloperidol ต้าน **D2** แรงโดยแทบไม่มีฤทธิ์ anticholinergic จึงลดอาการจาก **dopamine ที่เด่นเกิน** โดยไม่ซ้ำเติม ACh ที่ขาด · ใช้เพื่อ **ความปลอดภัย** ระหว่างแก้เหตุ (urosepsis) ไม่ได้รักษา delirium เอง\n\n"
+         "**ทำไมข้ออื่นผิด** — **chlorpromazine** เป็น low-potency typical ที่มีฤทธิ์ anticholinergic และ alpha-blockade สูง — **อยู่ในรายการยาที่ทำให้ delirium แย่ลง** และทำให้ความดันตก · **lorazepam** ทำให้ delirium ทั่วไปแย่ลงและยาวขึ้น (ใช้เฉพาะถอนสุรา/ยานอนหลับ) · **diphenhydramine** เป็น anticholinergic ตัวการสำคัญ · **การผูกยึด** handout ให้หลีกเลี่ยง เพิ่มความกระวนกระวาย บาดเจ็บ และยืดระยะ delirium",
+         "จำเป็นต้องใช้ยา → haloperidol ขนาดต่ำ · ห้าม low-potency typical, BZD, antihistamine",
+         "Delirium — pharmacological management", RA("Maintain patient comfort and safety"), ["2.1.78", "B3.4(4)", "2.2.25"]),
+     mcq("NEU-ACS-MCQ-40",
+         "An 84-year-old woman admitted with a hip fracture is described by nurses as 'quiet and depressed'. She lies still, speaks little, falls asleep during the interview and cannot name the days of the week backwards; her daughter says she was independent and chatty until 3 days ago. What is the most appropriate interpretation?",
+         "Hypoactive delirium, which should prompt a search for precipitating causes",
+         ["Major depressive disorder requiring an SSRI", "Progression of an undiagnosed dementia",
+          "Normal response to hospitalisation in the elderly", "Hyperactive delirium requiring haloperidol"],
+         3,
+         "**ตอบ: hypoactive delirium** — เข้า CAM ครบ: **feature 1** เปลี่ยนเฉียบพลันจาก baseline ภายใน 3 วัน (จากลูกสาว) · **feature 2** บอกวันถอยหลังไม่ได้ (inattention) · **feature 4** หลับระหว่างสัมภาษณ์ (ใน 3D-CAM ต้องหลับจริงจึงนับ)\n\n"
+         "**หลักจาก handout** — **ผู้สูงอายุที่ apathy, lethargy หรืออารมณ์ซึม ต้องประเมิน delirium** · กระดูกสะโพกหักเป็นทั้งปัจจัยเสี่ยงและตัวกระตุ้น (ความเจ็บ ยาแก้ปวด เลือดออก ปัสสาวะคั่ง) → หาเหตุด้วย **DELIRIUM**\n\n"
+         "**ทำไมข้ออื่นผิด** — **ซึมเศร้า** ไม่ทำให้ระดับความรู้สึกตัวลดและไม่เกิดใน 3 วัน · **สมองเสื่อม** ค่อยเป็นค่อยไป สมาธิดีในระยะแรก · **ไม่ใช่เรื่องปกติของผู้สูงอายุ** — delirium เพิ่มอัตราตาย · **ไม่ใช่ hyperactive** และ hypoactive ไม่มีข้อบ่งชี้ให้ยาต้านโรคจิต",
+         "เงียบ ซึม หลับง่าย + สมาธิเสีย + เปลี่ยนเร็ว = hypoactive delirium ไม่ใช่ซึมเศร้า",
+         "Delirium vs depression vs dementia", RA("Features differentiate among delirium, dementia, depression"), ["2.1.78", "B3.2.9(2)", "2.3.5-3(5)"]),
+     ],
+    ["acs2_labalgo"]))
+
+ACS.append(sec("neuro-acs-18", "การนอนพังใน delirium และสารสื่อประสาทของ RAS",
+    "Circadian inversion · two-process model · GABA กับ orexin · RAS สี่นิวเคลียส · melatonin ramelteon DORA dexmedetomidine · trazodone", 10,
+    ACSSRC, ["B3.1.2(11)", "B3.1.3(2)", "B3.1.2(4)", "2.1.78", "2.1.79", "B3.4(4)"],
+"""### Sleep–wake disturbance เป็นลักษณะหลักของ delirium (Levinsohn EA et al. J Clin Pharmacol 2025)
+- **Circadian rhythm กลับขั้ว** — ง่วงกลางวัน ตื่นกลางคืน
+- **การนอนแตกเป็นช่วง (fragmentation)**
+- **REM และ slow-wave sleep ลดลง**
+- การดูแลเน้น **(1) แก้ภาวะทางกายที่เป็นเหตุ** และ **(2) ฟื้นจังหวะกลางวัน–กลางคืนด้วยวิธีที่ไม่ใช้ยา**
+
+### พยาธิสรีรวิทยาสามชั้นตาม handout
+1. **Two-process model ถูกรบกวน** — การหลับเกิดเมื่อ **process C (circadian)** และ **process S (homeostatic sleep pressure)** สอดประสานกัน
+2. **สมดุลสารสื่อประสาทเสีย** — **GABA ส่งเสริมการหลับ** · **orexin คงความตื่น**
+3. **ARAS ทำงานผิดปกติ** — **ACh ขาด และ dopamine เกิน** (กลไกเดียวกับ delirium) · ✍️ melatonin
+
+[[fig:acs2_twoprocess]]
+
+### RAS — "สวิตช์ไฟหลัก" ของความตื่น
+- ทอดยาวจาก **medulla ผ่าน pons ถึง midbrain** รับข้อมูลจากไขสันหลัง ทางรับความรู้สึก thalamus และ cortex แล้วส่งสัญญาณปลุก cortex ทั้งสองซีก
+- **สี่นิวเคลียสหลัก** — locus coeruleus → **norepinephrine** · raphe nuclei → **serotonin** · tuberomammillary nucleus → **histamine** · pedunculopontine tegmentum → **acetylcholine**
+- **ทุกกลุ่มถูกกระตุ้นด้วย orexin (hypocretin) จาก lateral hypothalamus** · **ขาด orexin = narcolepsy**
+- **หน้าที่สี่ข้อ (Toy, Case Files Neuroscience)** — ปลุกและจดจ่อ · คงโทนของ cortex · **กรองข้อมูล** ว่าอะไรควรส่งขึ้นไป · คุมวงจรหลับตื่น (ตอนหลับสร้าง REM ตอนตื่นคงความตื่นตัว)
+
+[[fig:acs2_ras]]
+
+#### ทำไมถึงมีอาการนี้ — การนอนใน delirium
+| อาการ | กลไก | ใช้อย่างไร |
+|---|---|---|
+| **ง่วงกลางวัน ตื่นกระวนกระวายกลางคืน** | ในหอผู้ป่วย/ICU แสงสว่างตลอด ไม่มีแสงแดด ถูกปลุกบ่อย → **SCN ไม่ได้สัญญาณตั้งเวลา melatonin กลางคืนลดและเลื่อน** → process C แบน | เปิดม่านกลางวัน มืดและเงียบกลางคืน รวมการวัดสัญญาณชีพ |
+| **หลับเป็นช่วงสั้น ๆ ไม่ลึก** | ถูกปลุกก่อน process S สะสมพอ · ความเจ็บ ปัสสาวะคั่ง เสียงเตือน | eye mask และ earplug เพิ่มเวลานอน (handout) |
+| **REM และ slow-wave sleep ลด** | benzodiazepine, opioid และ sedative กด slow-wave/REM · การอักเสบรบกวนการนอนลึก | ยานอนหลับบางชนิด "ทำให้หลับ" แต่ไม่ใช่การนอนที่ฟื้นฟูสมอง |
+| **ง่วงหลังยาแก้แพ้รุ่นเก่า** | ปิดตัวรับ H1 ของ tuberomammillary + ฤทธิ์ anticholinergic → ทั้งง่วงและสับสน | เลี่ยงใช้เป็นยานอนหลับในผู้สูงอายุ |
+
+### การดูแลการนอน
+**ไม่ใช้ยา (ทำก่อนเสมอ)** — สร้างสิ่งแวดล้อมที่ช่วย **reorientation · ให้เคลื่อนไหว · สิ่งเร้าพอดีไม่มากเกิน · มีปฏิสัมพันธ์กับคน** · **eye mask และ earplug**
+
+**ยาที่มีหลักฐานค่อนข้างดี (handout)**
+| ยา | กลไก | เหตุผลที่เหมาะกับ delirium |
+|---|---|---|
+| **Melatonin** | ตัวรับ MT1/MT2 ที่ SCN → ตั้งนาฬิกาและส่งสัญญาณกลางคืน | ซ่อม process C โดยตรง ผลข้างเคียงน้อย |
+| **Ramelteon** | agonist ของตัวรับ melatonin | เหมือนข้างบน ออกฤทธิ์แรงกว่า |
+| **DORA — suvorexant, lemborexant** | **ต้านตัวรับ orexin** → ปิดสัญญาณตื่นแทนการกดสมองทั้งหมด | ไม่กด GABA ทั่วสมอง จึงไม่ทำให้สับสนแบบ BZD |
+| **Dexmedetomidine** | alpha-2 agonist ที่ locus coeruleus → ลด NE คล้ายการนอนธรรมชาติ | ใช้ใน ICU · ปลุกได้ ไม่กดการหายใจ |
+
+**ยาที่ใช้บ่อยในทางปฏิบัติแต่ต้องระวัง** — **trazodone** (✍️ **serotonin syndrome** เมื่อใช้ร่วมยา serotonergic) · **antipsychotics** (EPS, QT) · **benzodiazepines** (ทำให้ delirium แย่ลง ยกเว้นภาวะถอนสุรา/ยานอนหลับ)""",
+    ["Delirium: circadian กลับขั้ว · นอนแตกเป็นช่วง · REM และ slow-wave ลด",
+     "Two-process: S (แรงดันง่วง) × C (นาฬิกา) · GABA ส่งเสริมหลับ · orexin คงความตื่น",
+     "RAS: LC-NE · raphe-5HT · TMN-histamine · PPT-ACh · orexin กระตุ้นทุกตัว",
+     "ยานอนหลับใน delirium ที่มีหลักฐาน: melatonin · ramelteon · DORA · dexmedetomidine",
+     "Eye mask + earplug + แสงกลางวัน = แก้ที่นาฬิกา ไม่ใช่กดสมอง"],
+    [mcq("NEU-ACS-MCQ-41",
+         "Suvorexant and lemborexant are used to treat insomnia, including sleep disturbance in delirium. Which mechanism explains how they promote sleep without the global CNS depression typical of benzodiazepines?",
+         "They block orexin receptors, removing the hypothalamic drive that activates the arousal nuclei of the reticular activating system",
+         ["They enhance GABA-A receptor chloride conductance throughout the cortex", "They block central histamine H1 receptors in the tuberomammillary nucleus",
+          "They block muscarinic acetylcholine receptors in the pedunculopontine tegmentum", "They act as agonists at melatonin MT1/MT2 receptors in the suprachiasmatic nucleus"],
+         1,
+         "**ตอบ: ต้านตัวรับ orexin (DORA)** — handout: **orexin จาก lateral hypothalamus กระตุ้นทุกนิวเคลียสของ RAS** และ **ยา DORA (ต้าน orexin) ใช้เป็นยานอนหลับ** · ขาด orexin ถาวร = narcolepsy\n\n"
+         "**ทำไมกดสมองน้อยกว่า** — DORA **ปิดสวิตช์ตื่นที่ต้นทาง** ให้กลไกการนอนตามธรรมชาติทำงาน ไม่ได้เพิ่มการยับยั้งทั่วทั้งสมองเหมือน BZD จึงคงสมาธิและการหายใจได้ดีกว่า\n\n"
+         "**ทำไมข้ออื่นผิด** — **เสริม GABA-A** คือกลไกของ benzodiazepine และ Z-drug ซึ่งกดสมองทั่วไปและทำให้ delirium แย่ลง · **ต้าน H1** คือยาแก้แพ้รุ่นเก่า ง่วงแต่มีฤทธิ์ anticholinergic ทำให้สับสน · **ต้าน muscarinic** ทำให้เกิด delirium · **agonist ของ melatonin** คือกลไกของ melatonin และ ramelteon ไม่ใช่ DORA",
+         "DORA = ต้าน orexin · melatonin/ramelteon = ตั้งนาฬิกา · BZD = กด GABA ทั้งสมอง",
+         "Sleep in delirium — DORA", RA("Reticular activating system · Pharmacologic management of sleep-wake disturbances"),
+         ["B3.1.2(11)", "B3.1.2(4)", "B3.4(4)"]),
+     mcq("NEU-ACS-MCQ-42",
+         "A 79-year-old man on day 4 of treatment for pneumonia has delirium that is worse at night; he sleeps most of the day. Lights and monitor alarms are on all night. After optimising the environment (daylight, eye mask, earplugs, clustered care), sleep remains poor. Which medication has the strongest support in the handout for delirium-related sleep disturbance?",
+         "Melatonin or ramelteon in the evening",
+         ["Lorazepam at bedtime", "Diphenhydramine at bedtime", "Zolpidem at bedtime", "Amitriptyline at bedtime"],
+         4,
+         "**ตอบ: melatonin หรือ ramelteon ตอนหัวค่ำ** — handout จัดไว้ในกลุ่มยาที่มีหลักฐานค่อนข้างดี (ร่วมกับ DORA และ dexmedetomidine)\n\n"
+         "**กลไก** — ปัญหาของผู้ป่วยคือ **process C แบนและกลับขั้ว** จากแสงตลอดคืนและการอักเสบ · melatonin/ramelteon ไปที่ **SCN** ตั้งนาฬิกาใหม่และส่งสัญญาณกลางคืน แก้ที่ต้นเหตุโดยไม่กดสมอง\n\n"
+         "**ทำไมข้ออื่นผิด** — ทุกตัวอยู่ใน **รายการยาที่เพิ่มความเสี่ยงหรือทำให้ delirium แย่ลง** ของ handout: **lorazepam** (benzodiazepine) · **zolpidem** (non-BZD hypnotic) · **diphenhydramine** (antihistamine + anticholinergic) · **amitriptyline** (TCA anticholinergic)",
+         "Delirium นอนไม่หลับ: แก้สิ่งแวดล้อมก่อน → melatonin/ramelteon · เลี่ยง BZD Z-drug antihistamine TCA",
+         "Sleep in delirium — pharmacological", RA("Pharmacologic management of sleep-wake disturbances in delirium"),
+         ["B3.1.3(2)", "2.1.78", "B3.4(4)"]),
+     ],
+    ["acs2_twoprocess", "acs2_ras"]))
+
+ACS.append(sec("neuro-acs-19", "ส่วนเติมจาก handout 2026: ระดับความรู้สึกตัว 5 ขั้น เบาะแสจากร่างกาย ตาแนวดิ่ง caloric และ algorithm",
+    "Drowsiness → obtundation → coma · cherry-red · myxedema · asterixis · light reflex ทนเมแทบอลิก · sustained gaze · bobbing กับ dipping · caloric 50 mL · Cheyne-Stokes/Kussmaul · algorithm คอแข็ง", 12,
+    ACSSRC, ["2.2.36", "2.1.78", "B3.1.1(5)", "2.2.35"],
+"""### ระดับความรู้สึกตัวห้าขั้น (handout)
+| ระดับ | ลักษณะ | ปลุกได้ด้วย |
+|---|---|---|
+| **Drowsiness (somnolence)** | อยากหลับ เผลอหลับถ้าไม่กระตุ้น · **ตื่นแล้วการรู้คิดปกติ** | สิ่งเร้าเล็กน้อย เช่น เรียกชื่อ แตะไหล่ |
+| **Lethargy** | ง่วงมาก เฉื่อย ความตื่นตัวลดเล็กน้อย | เสียงพูดปกติหรือสะกิดเบา ๆ |
+| **Obtundation** | ความตื่นตัวลดมากขึ้น สนใจสิ่งแวดล้อมน้อย ตอบสนองช้า | ต้องกระตุ้นซ้ำระดับปานกลาง เช่น เขย่าเบา ๆ ตะโกน |
+| **Stupor** | แทบไม่โต้ตอบเอง พูดเป็นเสียงคราง | ต้องกระตุ้นแรง ซ้ำ หรือเจ็บ · **หยุดกระตุ้นแล้วกลับไม่ตอบสนองทันที** |
+| **Coma** | ไม่ตอบสนองเลย | ปลุกไม่ได้แม้เจ็บลึก |
+
+> **"It is best practice to write down the exact clinical observation."** — เขียนว่ากระตุ้นอย่างไรแล้วได้อะไร ดีกว่าเขียนคำว่า obtunded ลอย ๆ (ตรงกับหัวข้อ 2)
+
+### ลำดับการเข้าหาผู้ป่วยระดับความรู้สึกตัวเปลี่ยน
+1. **Airway · Breathing · Circulation**
+2. **ประวัติจากญาติ** — สภาพเดิม อาการนำทั้งทางกายและระบบประสาท โรคประจำตัว **ยา สารเสพติด สุรา**
+3. **ตรวจร่างกายทั่วไป แล้วตรวจระบบประสาทเจ็ดข้อ** — ระดับความรู้สึกตัว (GCS) · การเคลื่อนไหวผิดปกติและท่า · รูม่านตา · การกลอกตาที่เกิดเอง · การกลอกตาจากรีเฟล็กซ์ · จอประสาทตา · รูปแบบการหายใจ
+
+### เบาะแสจากการตรวจร่างกายทั่วไป
+| สิ่งที่เห็น | นึกถึง | กลไก |
+|---|---|---|
+| ริมฝีปากและเล็บเขียว | ออกซิเจนไม่พอ | deoxyhemoglobin > 5 g/dL ในเลือดฝอย |
+| **ผิวสีแดงเชอร์รี** | **carbon monoxide** | carboxyhemoglobin สีแดงสด · ผิวแดงแม้เนื้อเยื่อขาดออกซิเจน (พบไม่บ่อย อย่ารอสีนี้) |
+| เส้นเลือดฝอยขยายและหน้า/ตาแดง | สุราเรื้อรัง | vasodilation เรื้อรังจากแอลกอฮอล์ · ตับแข็ง |
+| **หน้าบวมฉุ** | **myxedema** | glycosaminoglycan สะสมในชั้นหนังแท้ ดึงน้ำ |
+
+### การเคลื่อนไหวและท่า
+- **กระสับกระส่าย กระตุก multifocal myoclonus และ asterixis** → ✍️ **metabolic encephalopathy** (ไต ตับ CO₂ คั่ง ยา)
+- **Decorticate** = รอยโรค **เหนือ red nucleus** (cerebral hemisphere, internal capsule, thalamus) · **Decerebrate** = **ใต้ red nucleus** (midbrain หรือ pons) — เหมือนหัวข้อ 8
+
+### รูม่านตา — "light reflex ทนต่อภาวะเมแทบอลิกมาก"
+| ลักษณะ | แปลผล |
+|---|---|
+| **เล็ก ตอบสนองต่อแสง** | รอยโรคที่ diencephalon · **ภาวะเมแทบอลิก** |
+| **ขนาดกลาง ไม่ตอบสนอง** | รอยโรคที่ **midbrain** |
+| **ใหญ่ ไม่ตอบสนอง** | รอยโรคก้านสมองกว้าง · **anoxia** · **anticholinergic poisoning หรือยาขยายม่านตา** |
+| **เล็กเท่ารูเข็ม** | **pons** · **opiates** |
+| **ข้างเดียว ขยาย ไม่ตอบสนอง** | **CN III palsy** ✍️ ร่วมกับ **ptosis** |
+(OCR พบคำว่า sedative overdose อยู่ในตารางนี้ด้วยแต่ระบุแถวไม่ได้ — barbiturate ขนาดสูงมากทำให้รูม่านตาไม่ตอบสนองได้)
+
+**ใช้อย่างไร** — ผู้ป่วยโคม่าที่ **รูม่านตายังตอบสนองดี** แต่ไม่มีรีเฟล็กซ์อื่น ให้คิดถึง **เมแทบอลิกหรือยา** ก่อนรอยโรคโครงสร้าง เพราะทางเดินของ light reflex (midbrain) ทนต่อภาวะเมแทบอลิกได้นานกว่าส่วนอื่น
+
+### การกลอกตาที่เกิดเอง — เจ็ดแบบ
+| แบบ | ลักษณะ | สาเหตุที่ handout ระบุ |
+|---|---|---|
+| **Conjugate deviation** | ตาเบนไปข้างเดียวกัน | ซีกสมอง/pons/ชัก (หัวข้อ 7) |
+| **Skew deviation** | ตาสองข้างอยู่คนละระดับ | **posterior fossa** — ก้านสมองหรือสมองน้อย |
+| **Sustained downward gaze** | ตาจ้องลงล่างค้าง | **ICP สูง/hydrocephalus จาก aqueduct ตีบหรือ shunt ตัน** · **Parinaud (dorsal midbrain)** จากก้อนหรือ stroke · **thalamus** เลือดออก/ขาดเลือด · **hepatic encephalopathy** |
+| **Sustained upward gaze** | ตาจ้องขึ้นค้าง | **ชัก** · **HIE** · **oculogyric crisis** (ผู้ป่วยยังรู้ตัว — จากยาต้าน dopamine) |
+| **Roving** | ช้า ไปมาแนวนอนสองข้างพร้อมกัน | ปกติใน NREM ระยะ 1 และ REM · **toxic-metabolic** (น้ำตาลต่ำ ตับ Wernicke opioid) · **แปลว่าก้านสมองยังดี** |
+| **Ocular bobbing** | **กระตุกลงเร็ว แล้วกลับช้า** · **ไม่มีการกลอกตาแนวนอนทั้งที่เกิดเองและจากรีเฟล็กซ์** | **pons** ขาดเลือดหรือเลือดออก · HIE |
+| **Ocular dipping** | **ลงช้า แล้วกลับเร็ว** | เปลือกสมองเสียทั่ว: **HIE · status epilepticus นาน · CJD · บาดเจ็บศีรษะรุนแรง** |
+
+[[fig:acs2_bobbing]]
+
+### Doll's eye ตาม handout — ห้าขั้น และรูปแบบที่บอกตำแหน่ง
+1. **ตัดการบาดเจ็บกระดูกคอก่อน**
+2. ถ่างหนังตาไว้
+3. **หันศีรษะเร็ว ๆ ซ้าย–ขวา และค้างไว้สั้น ๆ ที่ปลายแต่ละข้าง**
+4. **ผลบวก = ตาหมุนสวนทิศกับศีรษะ**
+5. ก้มและเงยศีรษะ — **เงยแล้วตามองลง ก้มแล้วตามองขึ้น** = ปกติในแนวดิ่ง
+
+| รูปแบบ (Plum & Posner) | ตำแหน่ง |
+|---|---|
+| ตาสวนทิศครบทุกทาง | **ก้านสมองดี** (เช่น metabolic encephalopathy) |
+| มองไปข้างหนึ่งไม่ได้ทั้งสองตา | **pons ด้านข้าง (PPRF/นิวเคลียส VI)** — gaze paralysis |
+| ตาข้างที่ต้องหุบเข้าไม่หุบ | **MLF** — internuclear ophthalmoplegia |
+| ข้างหนึ่งไม่ไปเลย อีกข้างไปได้แค่ด้านนอก | **paramedian pons** — one-and-a-half syndrome |
+| แนวดิ่งเสีย | **midbrain สองข้าง** |
+
+### Caloric test ตาม handout
+1. **ยกศีรษะ 30 องศา**
+2. **ตรวจว่าเยื่อแก้วหูไม่ทะลุและช่องหูโล่ง**
+3. **หยอดน้ำเย็น 50 mL (≤ 30 °C) ช้า ๆ ใน 30 วินาที**
+4. **รอดู 1 นาทีหลังหยอด และเว้น 5 นาทีก่อนทำอีกข้าง** (ให้ระบบ vestibular กลับสู่สมดุล)
+5. **หยอดสองหูพร้อมกัน** เพื่อประเมิน vestibulo-ocular reflex แนวดิ่ง (น้ำเย็นสองข้าง → ตาเบนลง)
+> หัวข้อ 7 (สไลด์เดิม) ใช้น้ำเย็นจัด 10 มล. — ปริมาณต่างตามตำรา หลักการแปลผลเหมือนเดิม
+
+### จอประสาทตาและการหายใจ
+- **Papilledema** — ICP สูง · **subhyaloid hemorrhage** — เลือดออกหน้าจอตาขอบบนตรงเป็นแนวน้ำ พบใน **SAH** (ความดันในกะโหลกพุ่งจนเลือดดำในจอตาแตก — Terson syndrome)
+- **รูปแบบหายใจจากเหตุนอกระบบประสาท** — **Cheyne-Stokes**: หัวใจล้มเหลว ขาดออกซิเจน CO (ระบบควบคุมการหายใจตอบสนองช้าเพราะเลือดไหลเวียนช้า → แกว่งเกินเป้า) · **Kussmaul**: **DKA ไตวาย sepsis methanol ethylene glycol** (metabolic acidosis → หายใจลึกเร็วเพื่อขับ CO₂)
+
+### สาเหตุและ algorithm ปิดท้าย
+**รอยโรคที่ทำให้ระดับความรู้สึกตัวเปลี่ยน** — รอยโรคซีกเดียวที่มี herniation · รอยโรคทั่วสมอง · รอยโรคสองซีก · รอยโรคที่ก้านสมอง (หัวข้อ 1)
+
+| มี localizing sign? | ต่อไป | นึกถึง |
+|---|---|---|
+| **มี** | supratentorial หรือ infratentorial | **structural lesion** → CT/MRI |
+| **ไม่มี + ไม่มีคอแข็ง** | | **toxic-metabolic encephalopathy** |
+| **ไม่มี + คอแข็ง** | | **SAH หรือ meningitis** → CT แล้ว LP |""",
+    ["ห้าระดับ: drowsiness → lethargy → obtundation → stupor → coma · เขียนสิ่งที่เห็นจริง",
+     "Asterixis/multifocal myoclonus = metabolic · light reflex ทนเมแทบอลิก",
+     "Bobbing: ลงเร็วกลับช้า = pons · Dipping: ลงช้ากลับเร็ว = HIE/เปลือกสมองทั่ว",
+     "Sustained downward gaze: hydrocephalus/shunt · Parinaud · thalamus · hepatic",
+     "Caloric (handout): น้ำเย็น 50 mL ≤ 30 °C ใน 30 วินาที รอ 1 นาที เว้น 5 นาที",
+     "ไม่มี localizing + คอแข็ง → SAH หรือ meningitis"],
+    [mcq("NEU-ACS-MCQ-43",
+         "A 58-year-old man is comatose after a cardiac arrest. Every few seconds both eyes drift slowly downward and then return rapidly to the midline. Horizontal doll's eye responses are present. Which pattern is this and what does it most likely indicate?",
+         "Ocular dipping, indicating diffuse cortical injury such as hypoxic–ischaemic encephalopathy",
+         ["Ocular bobbing, indicating an acute pontine lesion", "Roving eye movements, indicating intact brainstem function in light sleep",
+          "Sustained downward gaze, indicating dorsal midbrain compression", "Skew deviation, indicating a posterior fossa lesion"],
+         0,
+         "**ตอบ: ocular dipping** — **ลงช้าแล้วกลับเร็ว** และ **ยังมีการกลอกตาแนวนอนจากรีเฟล็กซ์** (ก้านสมองยังดี) หลังหัวใจหยุดเต้น = **diffuse cortical dysfunction จาก HIE** (handout: HIE · status epilepticus นาน · CJD · บาดเจ็บศีรษะรุนแรง)\n\n"
+         "**กลไก** — เปลือกสมองที่เสียทั่วปล่อยให้วงจรแนวดิ่งในก้านสมองทำงานผิดจังหวะ ตาจึงไหลลงช้า ๆ แล้วระบบ saccade ของก้านสมองดึงกลับเร็ว\n\n"
+         "**ทำไมข้ออื่นผิด** — **bobbing** ตรงกันข้าม: **กระตุกลงเร็วกลับช้า** และ **ไม่มีตาแนวนอน** เพราะ pons ที่คุมแนวนอนเสีย · **roving** เป็นการเคลื่อนช้า **แนวนอน** · **sustained downward gaze** ตาจ้องลงค้าง ไม่ขึ้นลงเป็นจังหวะ · **skew deviation** ตาสองข้างอยู่คนละระดับแบบคงที่",
+         "Bobbing ลงเร็ว = pons · Dipping ลงช้า = HIE/เปลือกสมองทั่ว",
+         "Coma — spontaneous vertical eye movements", RA("Spontaneous eye movement: ocular bobbing and dipping"),
+         ["2.2.36", "B3.1.1(5)"]),
+     mcq("NEU-ACS-MCQ-44",
+         "When performing caloric testing (oculovestibular reflex) on a comatose patient, which procedure follows the handout?",
+         "Elevate the head 30°, confirm intact tympanic membranes, instil 50 mL of cold water (≤ 30 °C) over 30 seconds, observe for 1 minute and wait 5 minutes before testing the other ear",
+         ["Keep the head flat, instil 5 mL of warm water rapidly and test both ears within 1 minute",
+          "Proceed even with a perforated tympanic membrane because the test is urgent",
+          "Instil cold water into both ears simultaneously to assess horizontal gaze",
+          "Rotate the head briskly first in every patient, even if a cervical spine injury has not been excluded"],
+         2,
+         "**ตอบ: ศีรษะ 30° · เยื่อแก้วหูปกติ · น้ำเย็น 50 mL ≤ 30 °C ใน 30 วินาที · ดู 1 นาที · เว้น 5 นาที** ตามขั้นตอนใน handout\n\n"
+         "**เหตุผลของแต่ละขั้น** — **ศีรษะ 30°** ทำให้ **lateral semicircular canal อยู่แนวดิ่ง** การพาความร้อนของ endolymph จึงแรงที่สุด · **ตรวจเยื่อแก้วหู** เพราะน้ำเข้าหูชั้นกลางทำให้ติดเชื้อและผลเพี้ยน · **หยอดช้า** ให้ความเย็นส่งผ่านสม่ำเสมอ · **เว้น 5 นาที** ให้ระบบ vestibular ข้างแรกกลับสู่สมดุลก่อน ไม่ให้ผลสองข้างปนกัน\n\n"
+         "**ทำไมข้ออื่นผิด** — **ศีรษะราบ น้ำอุ่นน้อยและเร็ว** กระตุ้นไม่พอ ผลลบลวงได้ · **เยื่อแก้วหูทะลุ** เป็นข้อห้าม · **หยอดสองหูพร้อมกัน** ใช้ประเมิน **แนวดิ่ง** ไม่ใช่แนวนอน · **doll's eye** ห้ามทำก่อนตัด C-spine injury (เป็นเหตุผลที่ต้องใช้ caloric แทน)\n\n"
+         "**หมายเหตุ** — สไลด์ชุดเดิม (หัวข้อ 7) ใช้น้ำเย็นจัด 10 มล. ปริมาณต่างตามตำรา ในข้อสอบของคาบนี้ให้ตอบตาม handout",
+         "Caloric: 30° · TM intact · cold 50 mL/30 s · ดู 1 นาที · เว้น 5 นาที · สองหูพร้อมกัน = แนวดิ่ง",
+         "Coma — caloric test technique", RA("Reflex eye movements: Caloric test"), ["2.2.36", "B3.1.1(5)"]),
+     mcq("NEU-ACS-MCQ-45",
+         "A 45-year-old woman is brought in stuporous after a sudden severe headache. Pupils are equal and reactive, there is no hemiparesis and plantar responses are flexor, but she has marked neck stiffness. Fundoscopy shows a large haemorrhage in front of the retina with a flat upper border. Following the handout's algorithm, which group of causes should be considered first?",
+         "Subarachnoid haemorrhage or meningitis",
+         ["Supratentorial structural lesion with uncal herniation", "Infratentorial structural lesion compressing the brainstem",
+          "Toxic–metabolic encephalopathy", "Psychogenic unresponsiveness"],
+         3,
+         "**ตอบ: SAH หรือ meningitis** — algorithm ปิดท้ายของ handout: **ไม่มี localizing sign + คอแข็ง → SAH หรือ meningitis** · ไม่มี localizing sign + ไม่มีคอแข็ง → toxic-metabolic · มี localizing sign → structural\n\n"
+         "**เบาะแสเพิ่ม** — **ปวดศีรษะทันทีรุนแรง** + **subhyaloid hemorrhage** (handout แสดงภาพนี้ในหัวข้อ fundi) ชี้ไปที่ **SAH** อย่างมาก · กลไก: ความดันในกะโหลกพุ่งทันทีขณะหลอดเลือดโป่งแตก ส่งผ่านปลอกหุ้มเส้นประสาทตา → หลอดเลือดดำในจอตาคั่งและแตก เลือดอยู่หน้าจอตาจึงมีขอบบนเป็นแนวราบตามแรงโน้มถ่วง · คอแข็งเกิดจากเลือดระคายเยื่อหุ้มสมอง\n\n"
+         "**ทำไมข้ออื่นผิด** — **supra/infratentorial structural lesion** ต้องมี localizing sign (รูม่านตาไม่เท่ากัน แขนขาอ่อนแรง สัญญาณก้านสมอง) · **toxic-metabolic** ไม่ทำให้คอแข็งหรือเลือดออกในจอตา · **psychogenic** ไม่มีคอแข็งหรือเลือดออกในจอตา · ขั้นต่อไปคือ **CT brain** ถ้าลบให้เจาะหลัง",
+         "ซึม + ไม่มี localizing sign + คอแข็ง = SAH หรือ meningitis · subhyaloid hemorrhage ชี้ SAH",
+         "Coma — diagnostic algorithm", RA("Pathologic causes of alteration of consciousness (algorithm)"),
+         ["2.2.36", "2.3.6(3)", "2.3.6(5)"]),
+     ],
+    ["acs2_bobbing"]))
+
+ACS_CALLOUTS = {
+    "neuro-acs-02": "> **handout 2026 (อ.เพชรรัตน์) แบ่งเป็นห้าระดับ** — **drowsiness → lethargy → obtundation → stupor → coma** (เพิ่ม drowsiness และ obtundation จากสี่ระดับข้างบน) · หลักเดียวกันคือ **เขียนสิ่งที่เห็นจริง** · ดูหัวข้อ 19",
+    "neuro-acs-07": "> **Caloric test ใน handout 2026 ใช้ปริมาณต่างจากข้างบน** — **น้ำเย็น 50 mL (≤ 30 °C) หยอดช้า ๆ ใน 30 วินาที รอดู 1 นาที และเว้น 5 นาทีก่อนทำอีกข้าง** · หยอดสองหูพร้อมกันเพื่อดูแนวดิ่ง · ocular bobbing ใน handout ระบุเพิ่มว่า **ไม่มีการกลอกตาแนวนอนทั้งที่เกิดเองและจากรีเฟล็กซ์** · ดูหัวข้อ 19",
+    "neuro-acs-13": "> **handout 2026 เพิ่ม 3D-CAM** — สัมภาษณ์ที่มีโครงสร้าง 3 นาทีที่ใช้อัลกอริทึม CAM เดิม และนิยาม delirium ของ Alexander & Needham 2023 ที่รวม **visual hallucination** และ **ความสัมพันธ์กับตัวกระตุ้น** · ดูหัวข้อ 17",
+    "neuro-acs-15": "> **handout 2026 (Marcantonio NEJM 2017)** — ถ้าจำเป็นต้องใช้ยา ให้ **high-potency antipsychotic ขนาดต่ำ (haloperidol)** ระวัง **EPS และ QT ยาว (torsades)** · **low-potency typical เช่น chlorpromazine และ thioridazine อยู่ในรายการยาที่ทำให้ delirium แย่ลง** · การดูแลสี่ขั้นและ DELIRIUM อยู่ในหัวข้อ 17",
+}
+ACS_GUIDE = [
+    "**Handout 2026 อ.เพชรรัตน์ (Petcharat Dusitanond) — Acute confusional state and Alteration of consciousness** (หัวข้อ 16–19) รวมภาพหน้าจอ Delirium Quiz ในคาบ 21 ต.ค. 2569",
+    "**Marcantonio ER. Delirium in Hospitalized Older Adults. N Engl J Med 2017;377:1456-66** — CAM/3D-CAM · การดูแลสี่ขั้น · DELIRIUM · ยาที่ก่อ delirium",
+    "**Alexander SK, Needham E. Diagnosis of delirium: a practical approach. Pract Neurol 2023;23:192-199**",
+    "**Levinsohn EA et al. J Clin Pharmacol 2025;65:285-302** — sleep–wake disturbance ใน delirium และยา (melatonin, ramelteon, DORA, dexmedetomidine)",
+    "**Teng C, Frei CR. Drugs Real World Outcomes 2021;9:23-29** — ยาปฏิชีวนะที่สัมพันธ์กับ delirium",
+    "**Allen C et al. Neurohospitalist 2025;15:402-406** — spontaneous abnormal vertical eye movements of coma",
+]
 
 
 # ═════════════════════════════════════════════════════════════════════ apply

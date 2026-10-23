@@ -340,3 +340,5 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
 | Lec19 Essential Renal Imaging (handout).pdf (อ.ธนิศร) | `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` | ⚠️ อ่านได้แต่คำบรรยายภาพ | nephro คาบ Imaging · โน้ต `renalimg_notes.md` |
 | Lec22 Approach to WBC disorder and lymphadenopathy.pdf (อ.เบญจมาภรณ์) | `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` | ✅ เรนเดอร์ครบ 66 หน้า + ลายมือ | hemonc คาบ 12/10 · โน้ต `wbc_notes.md` |
 | 2026 Diabetes lecture Student.pdf (ศ.นพ.ชัยชาญ · 14 ต.ค.) | `1FB1Oe9v_DWc46H1Y37gi7Gu1ZbPcWdtH` | ✅ ข้อความครบ · ไม่มีสไลด์ DKA/HHS | endo คาบ 14/10 · โน้ต `diabetes_notes.md` |
+| Lumbar puncture.pdf (อ.ปองปวีณ์ · Pongpawee Ekudomsuphan) | `1T2c5cjNesc6YtK84iFFBNwZiA26GzOEv` | ✅ ข้อความ + เรนเดอร์ครบ 23 หน้า + ลายมือเล็กน้อย | neuro คาบ 9/10 (หัวข้อเติม 7–9) · โน้ต `lp2_notes.md` |
+| Lec26 Acute confusional state and alteration of consciousness 2026 Handout.pdf (อ.เพชรรัตน์ · 21 ต.ค.) | `1lF_thS9viRjU-TrxF1JWbhBWiv1YT8z3` | ⚠️ 25 MB ดาวน์โหลดไม่ได้ — อ่านเฉพาะข้อความ/OCR (ภาพหน้าจอ Delirium quiz ลายมือเป็นเศษคำ) | neuro คาบ 21/10 (หัวข้อเติม 16–19) · โน้ต `acs2026_notes.md` |

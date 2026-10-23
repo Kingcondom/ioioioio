@@ -142,7 +142,7 @@ def lp2_crypto():
 def _tube3(x, y, fill, sup, clot=False):
     o = [rect(x, y, 22, 92, "bx", 10), rect(x + 2, y + 28, 18, 62, fill + " ns", 8), rect(x + 2, y + 12, 18, 16, sup + " ns", 2)]
     if clot:
-        o.append(circ(x + 11, y + 78, 5, "badf"))
+        o.append(circ(x + 11, y + 76, 6, "inkf"))
     return o
 
 
