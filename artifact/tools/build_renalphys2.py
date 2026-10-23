@@ -189,14 +189,14 @@ sec("nephro-phy2-03", "ไตคุมปริมาตรด้วยการ
 Na เป็นตัวถูกละลายหลักของ ECF และน้ำตาม Na เสมอ (ผ่าน ADH/thirst) — **ไตคุมปริมาตรด้วยการคุมการขับ Na** (✍️ ลายมือ: สมดุล Na = สมดุลน้ำ) · ทำได้สองทาง (สไลด์ Renal regulates body fluid volume)
 
 ### 1) ทางการกรอง
-- **ภาวะปกติ**: autoregulation ตรึง GFR ไว้เมื่อ MAP อยู่ราว **80–170 mmHg** → filtered load ของ Na และน้ำแทบไม่เปลี่ยน (รายละเอียดกลไก myogenic/TGF ใน Part I)
+- **ภาวะปกติ**: autoregulation ตรึง GFR ไว้เมื่อ MAP อยู่ราว **80–170 mmHg** → filtered load ของ Na และน้ำแทบไม่เปลี่ยน (กลไก myogenic/TGF, Starling ที่ glomerulus และ clearance/FENa สอนละเอียดในคาบ **Physio1**)
 - **เมื่อร่างกายขาดน้ำมาก**: sympathetic + Ang II → renal arteriole หดตัว → RBF ↓ → GFR ↓ → filtered load ↓
 
 ### 2) ทางการดูดกลับ — ตัวคุมหลัก
 | ดูด Na กลับ | ดูดน้ำกลับ |
 |---|---|
 | glomerulotubular balance | glomerulotubular balance |
-| sympathetic: ↑ ดูด Na ที่ PT, TAL, DT, CD | gradient ใน medulla (ทบทวน countercurrent ใน Part I) |
+| sympathetic: ↑ ดูด Na ที่ PT, TAL, DT, CD | gradient ใน medulla (countercurrent และ CH2O ดูคาบ Physio1) |
 | ฮอร์โมน: Ang II, epinephrine, aldosterone, ADH (↑) · ANP (↓) | ADH |
 
 [[fig:na_segments]]
@@ -589,7 +589,7 @@ sec("nephro-phy2-09", "Potassium II — ไตขับ K ที่ principal ce
 | 1 **K ในเลือดสูง** | Na/K-ATPase ดึง K เข้าเซลล์มาก → gradient ออกสู่ lumen สูง · กระตุ้น aldosterone | กินอาหาร K สูง rhabdomyolysis |
 | 2 **Mg ในเลือดต่ำ** | Mg ในเซลล์อุด ROMK จากด้านใน — Mg ต่ำ ROMK เปิดตลอด | K ต่ำที่ "แก้ไม่ขึ้น" |
 | 3 **aldosterone สูง** | ↑ ENaC ROMK และ pump | JG cell tumor, adrenal tumor (Conn) |
-| 4 **Na/flow ส่วนปลายสูง** | Na มาก → ENaC ดูดมาก lumen ลบ · flow มาก → ดัด primary cilia → Ca เข้า → **BK channel** เปิด + K ในท่อถูกพาไปไม่สะสม | **loop/thiazide** อาหารเค็ม volume expansion |
+| 4 **Na/flow ส่วนปลายสูง** (ตำแหน่งออกฤทธิ์ของยาขับปัสสาวะ/Bartter/Gitelman/Liddle ดู Physio1) | Na มาก → ENaC ดูดมาก lumen ลบ · flow มาก → ดัด primary cilia → Ca เข้า → **BK channel** เปิด + K ในท่อถูกพาไปไม่สะสม | **loop/thiazide** อาหารเค็ม volume expansion |
 | 5 **anion ในท่อที่ดูดกลับไม่ได้** | HCO3 SO4 หรือยา (penicillin) ทำให้ lumen ลบยิ่งขึ้น | CA inhibitor · **อาเจียน** (HCO3 กรองเกินกำลังดูด) |
 | 6 **metabolic alkalosis (เฉียบพลัน)** | P cell: ↑ pump ↑ K channel เปิด · B-IC: ↑ H/K-ATPase แลก | ✍️ alkalosis เฉียบพลัน → ขับ K มาก → K ต่ำ · acidosis เฉียบพลัน → ขับ K น้อย → K สูง |
 
@@ -811,7 +811,7 @@ sec("nephro-phy2-12", "ไตกับกรด — เก็บ HCO3 คืน 
 | urine pH | **> 5.5 เสมอ** | > 5.5 ช่วงแรก · **< 5.5 เมื่อ HCO3 ต่ำกว่า threshold** | **< 5.5** (ขับ H ได้แต่ไม่มี NH3 มารับ) |
 | K | **ต่ำ** | **ต่ำ** (HCO3 ล้นไปส่วนปลาย = anion + aldosterone) | **สูง** |
 | อื่น ๆ | นิ่ว/nephrocalcinosis (ปัสสาวะด่าง citrate ต่ำ) | Fanconi (glucose PO4 กรดอะมิโนรั่ว) · ภาวะกระดูกอ่อน | เบาหวาน CKD · ยา ACEi spironolactone |
-ทั้งสามแบบเป็น **normal anion gap (hyperchloremic)** เพราะไม่มี anion ใหม่
+ทั้งสามแบบเป็น **normal anion gap (hyperchloremic)** เพราะไม่มี anion ใหม่ · ตัวขนส่งที่เสียในแต่ละแบบ (และ Fanconi) ทบทวนในคาบ **Physio1** — ที่นี่เน้นว่า "ทำไม K ต่างกัน"
 
 #### ทำไม RTA แต่ละแบบ K ต่างกัน
 - **type 1**: H-ATPase เสีย → การขับ Na ที่ปลายท่ออาศัยแลกกับ K แทน H + ปริมาตรลดเล็กน้อย → aldosterone → **K ต่ำ**
@@ -1072,13 +1072,101 @@ sec("nephro-phy2-15", "การถ่ายปัสสาวะ — ศูน�
 
 # ═════════════════════════════════════════════ ประกอบคาบ
 LECNAME = "สรีรวิทยาไตพื้นฐาน II (Watchara Chongsa, PhD)"
-MEQ = []
-OSCE = []
+MEQ = [{"id": "NEPH-PHY2-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Vomiting — hyposmotic volume contraction, metabolic alkalosis, hypokalemia, paradoxical aciduria and safe correction",
+ "vignette": """ผู้ป่วยชายไทยอายุ 58 ปี อาเจียนทุกครั้งหลังกินอาหารมา 7 วัน (ส่องกล้องภายหลังพบ gastric outlet obstruction จากแผลเรื้อรังที่ pylorus) ช่วงนี้ดื่มได้แต่น้ำเปล่าเล็กน้อย
+PE: น้ำหนัก 58 kg (เดิม 62 kg) · BP นอน 92/58 mmHg ลุกนั่ง 76/50 mmHg · PR 118/min · ปากแห้ง skin turgor ไม่ดี · JVP แฟบ · ได้ยิน succussion splash
+Lab: Na 128 · K 2.6 · Cl 76 · TCO2 40 mEq/L · BUN 48 · Cr 1.6 mg/dL · glucose 110 mg/dL · albumin 4.0 g/dL
+ABG: pH 7.54 · PaCO2 48 mmHg
+Urine: pH 5.5 · Na 12 · K 35 · Cl 6 mEq/L · osmolality 640 mOsm/kg""",
+ "questions": [
+  {"q": "1. จงแปลผลกรด-ด่างทีละขั้น (ตัวหลัก การชดเชย anion gap) และบอกกลไก generation กับ maintenance (4 คะแนน)",
+   "a": """**pH 7.54 = alkalemia** · HCO3 40 สูง → **metabolic alkalosis** เป็นตัวหลัก
+**การชดเชย**: PaCO2 คาด = 0.7 × 40 + 20 = **48 ± 2** → วัดได้ 48 = ชดเชยทางการหายใจเหมาะสม (ตรวจ HH: 6.1 + log (40 ÷ 1.44) = 7.54)
+**AG** = 128 − (76 + 40) = **12** → ปกติ ไม่มี high AG acidosis ซ่อน
+**Generation**: อาเจียนเสีย HCl — parietal cell สร้าง H ออกไป HCO3 จึงเข้าเลือด
+**Maintenance**: ไตไม่ยอมขับ HCO3 ส่วนเกินเพราะ (1) ปริมาตรลด → Ang II ↑ NHE3 · aldosterone ↑ H+-ATPase (2) **Cl ต่ำ** (3) **K ต่ำ** → ↑ H/K-ATPase และ ammoniagenesis (สไลด์ Factors affecting HCO3 reabsorption · contraction alkalosis)"""},
+  {"q": "2. จัดภาวะสารน้ำตาม Darrow–Yannet และอธิบายกลไกของ postural hypotension, skin turgor ไม่ดี, BUN/Cr ≈ 30, UNa 12 และ Uosm 640 (4 คะแนน)",
+   "a": """น้ำหนักลด 4/62 = **~6.5%** (ปานกลางถึงรุนแรง) · tonicity = 2(128) + 110/18 ≈ **262 mOsm/L** (ต่ำ) → **ECF ลด + จางลง = hyposmotic volume contraction** (เสียน้ำย่อยที่มีเกลือ แล้วดื่มน้ำเปล่าทดแทนขณะที่ ADH สูงจากปริมาตรลด → เก็บน้ำเปล่า) · น้ำบางส่วนย้ายเข้าเซลล์ ECF จึงหดมากขึ้นอีก
+- **postural hypotension/ชีพจรเร็ว**: preload ต่ำ baroreflex ชดเชยไม่พอเมื่อลุกนั่ง
+- **skin turgor ไม่ดี ปากแห้ง**: interstitial fluid ลด
+- **BUN/Cr 30**: ADH สูง + flow ช้า → urea ถูกดูดกลับมาก (prerenal)
+- **UNa 12**: sympathetic + Ang II + aldosterone + FF สูง → ดูด Na กลับเต็มที่
+- **Uosm 640 ทั้งที่ Na 128**: ADH ถูกกระตุ้นแบบ **non-osmotic** จากปริมาตรลด (volume receptor/baroreceptor ชนะ osmoreceptor) — นี่คือสาเหตุของ hyponatremia"""},
+  {"q": "3. ทำไม K ต่ำ ทั้งที่อาเจียนน้ำย่อยซึ่งมี K น้อย · ทำไมปัสสาวะ pH 5.5 ทั้งที่เลือดด่าง · ทำไม UCl ต่ำกว่า UNa (4 คะแนน)",
+   "a": """**K ต่ำส่วนใหญ่หายทางไต** (UK 35 > 20 ทั้งที่ K 2.6): ช่วงแรก HCO3 ที่กรองเกินกำลังดูดกลับเป็น **luminal anion** ที่ทำให้ lumen ลบ + **aldosterone สูง** จากปริมาตรลด + **alkalosis** เพิ่มการเปิด ROMK/pump → P cell ขับ K มาก (สไลด์ factors 3, 5, 6) · alkalosis ยังดัน K เข้าเซลล์
+**Paradoxical aciduria**: ปริมาตรลด + K ต่ำ + aldosterone → A-IC และ PT ขับ H/ดูด HCO3 เต็มที่ — ไตเลือกรักษาปริมาตรก่อน pH
+**UCl 6 < UNa 12**: ร่างกายขาด Cl มาก ดูด Cl กลับเกือบหมด · Na บางส่วนถูกขับไปพร้อม HCO3 ที่ล้น → **urine Cl** จึงบอกภาวะปริมาตรได้ตรงกว่า UNa ใน metabolic alkalosis (UCl < 20 = saline-responsive)"""},
+  {"q": "4. วางแผนการรักษาพร้อมเหตุผลทางสรีรวิทยา และบอกสิ่งที่ต้องเฝ้าระวังเรื่อง Na (4 คะแนน)",
+   "a": """**0.9% NaCl** คืนปริมาตรและ Cl → Ang II/aldosterone ลด และมี Cl ให้ดูดกลับแทน HCO3 → ไตขับ HCO3 ออกเอง (ปัสสาวะกลายเป็นด่าง) · **KCl** ทดแทน (K ต่ำทำให้ alkalosis คงอยู่) · ใส่ NG decompress + **PPI** ลดการเสีย H · หาและแก้สาเหตุอุดตัน
+**ระวัง Na ขึ้นเร็วเกิน**: เมื่อปริมาตรกลับ ADH ที่ถูกกระตุ้นจากปริมาตรจะ **ดับทันที** → ปัสสาวะจางจำนวนมาก (water diuresis) → Na พุ่ง · KCl ที่ให้ก็เพิ่ม Na (K เข้าเซลล์แลก Na ออก) · ผู้ป่วยมี K ต่ำ ขาดอาหาร = **เสี่ยง ODS สูง** → เป้าเพิ่ม Na ≤ 8 (ไม่เกิน 10) mmol/L ใน 24 ชม. (European 2014 / US 2013) · ตรวจ Na ทุก 4–6 ชม. วัดปัสสาวะทุกชั่วโมง ถ้าปัสสาวะจางออกมากและ Na ขึ้นเร็ว → ให้ D5W ทดแทน ± desmopressin"""},
+  {"q": "5. ระหว่างให้สารน้ำวันที่ 2 ผู้ป่วยชารอบปาก มือจีบเมื่อวัดความดัน · total Ca 8.9 mg/dL · albumin 4.0 · Mg 1.1 mg/dL · K 2.9 แม้ได้ KCl ไปมาก — อธิบายกลไกทั้งหมด (4 คะแนน)",
+   "a": """**Trousseau sign บวก** = เส้นประสาทไวเกิน
+- **alkalemia** → albumin ปล่อย H แล้วจับ Ca มากขึ้น → **ionized Ca ลด** ทั้งที่ total Ca เกือบปกติ → threshold ของ voltage-gated Na channel ต่ำลง → tetany (สไลด์ Calcium)
+- **Mg ต่ำ** (ขาดอาหาร อาเจียน) → ทำให้ tetany ได้เอง และกดการหลั่ง/ฤทธิ์ PTH
+- **K ไม่ขึ้นเพราะ Mg ต่ำ**: Mg ในเซลล์ปกติอุด ROMK — Mg ต่ำ ROMK เปิดตลอด → K รั่วทางไตต่อเนื่อง (สไลด์ factor 2)
+→ ให้ **MgSO4** ก่อน/พร้อม KCl · แก้ alkalosis · ถ้า ionized Ca ต่ำจริงและมีอาการ ให้ Ca gluconate"""}],
+ "ref": ["สไลด์ Renal Physiology II — Types of volume deficit · ADH · Factors affecting tubular K secretion · Factors affecting HCO3 reabsorption · Metabolic alkalosis · Calcium",
+         "European hyponatraemia guideline 2014 · Verbalis Am J Med 2013 · Guyton & Hall 14th ed · Boron & Boulpaep 3rd ed"],
+ "nl": [AB_B, LYTE, LYTE_B, VOMIT, HANDLE_B, FLUID_B, HYPOVOL_B, FLUIDDRUG_B],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
+
+OSCE = [{"id": "NEPH-PHY2-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Data interpretation station – Stepwise acid–base interpretation (3 cases)",
+ "station": "สถานีแปลผล 8 นาที (ผู้คุมสอบให้ผลทีละชุด นักศึกษาอธิบายด้วยวาจา)",
+ "instruction": """**งานของนักศึกษา**: แปลผลกรด-ด่างทีละขั้นทั้ง 3 ชุด — บอก primary disorder · คำนวณการชดเชยที่คาดและบอกว่าเหมาะสมหรือไม่ · คำนวณ anion gap (และค่าอื่นที่จำเป็น) · บอกสาเหตุที่เข้ากับข้อมูลและกลไก 1 ประโยค
+
+**ชุด A** — หญิง 20 ปี เบาหวานชนิดที่ 1 หายใจหอบลึก: pH 7.23 · PaCO2 22 mmHg · HCO3 9 · Na 134 · Cl 98 mEq/L · albumin 4.0 g/dL · glucose 450 mg/dL
+**ชุด B** — ชาย 45 ปี ท้องเสียเป็นน้ำ 5 วัน: pH 7.29 · PaCO2 30 mmHg · HCO3 14 · Na 138 · Cl 114 mEq/L · albumin 4.0 g/dL · ปัสสาวะ Na 30 · K 25 · Cl 80 mEq/L
+**ชุด C** — ชาย 70 ปี COPD ใช้ O2 ที่บ้าน อาการคงที่: pH 7.34 · PaCO2 62 mmHg · HCO3 32 · Na 140 · Cl 96 mEq/L""",
+ "answer": """**เกณฑ์ให้คะแนน (20 คะแนน)**
+
+| ชุด | สิ่งที่ต้องพูด/คำนวณ | คะแนน |
+|---|---|---|
+| ทุกชุด | เริ่มจาก pH → ตัวหลัก → การชดเชย → AG อย่างเป็นระบบ (บอกค่าปกติ pH 7.40 · PaCO2 40 · HCO3 24) | 2 |
+| A | acidemia + HCO3 ต่ำ = **metabolic acidosis** | 1 |
+| A | Winter: 1.5 × 9 + 8 = **21.5 ± 2** → PaCO2 22 = ชดเชยเหมาะสม | 2 |
+| A | AG = 134 − (98 + 9) = **27** → high AG · delta ratio = (27 − 12) ÷ (24 − 9) = **1.0** → HAGMA อย่างเดียว | 2 |
+| A | สาเหตุ **DKA** · หายใจหอบลึก = Kussmaul (H กระตุ้น chemoreceptor → VT ↑) | 1 |
+| B | **metabolic acidosis** · Winter 1.5 × 14 + 8 = **29 ± 2** → PaCO2 30 เหมาะสม | 2 |
+| B | AG = 138 − (114 + 14) = **10** → normal AG (hyperchloremic) | 2 |
+| B | urine AG = 30 + 25 − 80 = **−25 (ลบ)** → ไตขับ NH4 ได้ดี = เสีย HCO3 ทางลำไส้ ไม่ใช่ RTA | 2 |
+| C | acidemia + PaCO2 สูง = **respiratory acidosis** | 1 |
+| C | ΔPaCO2 22 → HCO3 คาด acute ~26 · chronic 24 + 4 × 2.2 = **~33** → 32 = **chronic ชดเชยโดยไต** | 2 |
+| C | AG = 140 − (96 + 32) = 12 ปกติ · ไม่ต้องให้ bicarbonate | 1 |
+| สื่อสาร | ใช้ HCO3 จาก electrolyte (TCO2) · สรุปเป็นประโยคเดียวต่อชุด · เป็นระบบ ไม่เดา | 2 |
+
+**Critical errors**: ใช้สูตรการชดเชยผิดภาวะ · สรุปว่าชุด C เป็น "acute respiratory failure ต้องใส่ท่อทันที" โดยไม่ประเมินว่าเรื้อรัง · บอกว่าชุด B เป็น RTA ทั้งที่ urine AG ลบ
+
+**คำถามต่อจากผู้คุมสอบ**: "ถ้าชุด B มี albumin 2.0 g/dL" → corrected AG = 10 + 2.5 × 2 = **15** → มี high AG acidosis ซ่อน (เช่น lactic จากขาดน้ำ) · "ชุด A ถ้า PaCO2 เป็น 30" → สูงกว่า 23.5 = **respiratory acidosis ร่วม** (เหนื่อยล้า/ปอดอักเสบ) อันตราย · "ทำไมชุด C ห้ามให้ O2 ความเข้มข้นสูงเกิน" → hypoxic drive และ V/Q แย่ลง → CO2 คั่ง (สไลด์: O2 therapy เป็นสาเหตุ respiratory acidosis)""",
+ "ref": ["สไลด์ Renal Physiology II — Stepwise approach · Anion gap · Wide/Normal AG metabolic acidosis · Primary disturbance and compensatory response",
+         "Berend K et al. NEJM 2014;371:1434–45 · ชุดสูตรเดียวกับคาบ chest 26 ABG"],
+ "nl": [AB_B, ABG, ABG_B, DM, DIARR, COPD, RTA],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
 LECTURE = {
  "lec": LEC, "date": "พื้นฐานสรีรวิทยา (ปรีคลินิก)",
  "title": "สรีรวิทยาไตพื้นฐาน II — สมดุลน้ำ อิเล็กโทรไลต์ กรด-ด่าง และการถ่ายปัสสาวะ",
  "subtitle": "Darrow–Yannet · glomerulotubular balance · RAAS/ADH/ANP · K shift และการขับ K · Ca Pi Mg · buffer ปอด ไต · HCO3 reclamation, TA, NH4 · การชดเชย · anion gap · micturition reflex — พร้อมสะพานสู่คลินิก (SIADH, ODS, DKA, อาเจียน, RTA, incontinence)",
- "objectives": [],
+ "objectives": [
+   "อธิบายการเคลื่อนของน้ำระหว่าง ICF/ECF ด้วย tonicity และแยก plasma osmolality กับ effective osmolality",
+   "จัดภาวะปริมาตรผิดปกติ 6 แบบด้วย Darrow–Yannet และเลือกสารน้ำที่สอดคล้อง",
+   "อธิบายว่าไตคุมการขับ Na ด้วย glomerulotubular balance, sympathetic, RAAS และ ANP อย่างไร",
+   "อธิบายการหลั่งและกลไกของ ADH (V2R–AQP2) การกระหายน้ำ และใช้อธิบาย DI, SIADH และ osmotic demyelination",
+   "อธิบายการคุม K ทั้ง shift และการขับที่ principal cell พร้อมผลต่อกล้ามเนื้อและ ECG",
+   "อธิบายรูปแบบของ Ca Pi Mg ในพลาสมา ผลต่อ threshold ของเส้นประสาท และการดูดกลับในแต่ละส่วนของ nephron",
+   "อธิบายแหล่งกรด buffer การชดเชยทางปอด และการเก็บ/สร้าง HCO3 การขับ titratable acid และ NH4 ของไต",
+   "แปลผลกรด-ด่างทีละขั้น (การชดเชย anion gap delta ratio osmolal gap urine AG) และอธิบายกลไกของ Kussmaul, paradoxical aciduria และ RTA",
+   "อธิบายวงจรควบคุมการถ่ายปัสสาวะ และทำนายชนิดของ incontinence จากตำแหน่งรอยโรค"],
+ "nlGap": "เกณฑ์ฯ มีรหัสสรีรวิทยาไตครบ (`B9.1.2(1)` body fluid · `B9.1.2(4)` renal handling of Na K Ca Mg Pi · `B9.1.2(6)` acid-base · `B9.1.2(7)` micturition) และรหัสโรค (`2.3.4(2)` fluid/electrolyte/acid-base · SIADH `2.3.4-3(5)` · RTA `2.3.14-3(12)` · hyperkalemia `2.2.15` · incontinence `2.1.46`) แต่ **ไม่มีรหัสเฉพาะของ osmotic demyelination, contraction alkalosis, toxic alcohol/osmolal gap และ detrusor–sphincter dyssynergia** → ใช้รหัสกลุ่มที่ใกล้ที่สุด และอิงตำรา/แนวทางในรายการด้านล่าง",
+ "guidelines": [
+   "**สไลด์ Lec 8–12 Renal Physiology Part II (Watchara Chongsa, PhD · MDS215)** — เนื้อหาหลักทุกหัวข้อ (สไลด์อ้าง Berne & Levy Physiology 7th ed 2018 · Boron & Boulpaep Medical Physiology 3rd ed · Costanzo Table 6.2 · Sherwood)",
+   "**Guyton & Hall Textbook of Medical Physiology 14th ed (2021)** — urine volume กับ solute load, การตอบสนองแบบบูรณาการ, aldosterone escape (เติมในหัวข้อ 3–6)",
+   "**Boron & Boulpaep Medical Physiology 3rd ed** — ระบบ HCO3 แบบเปิด, ammoniagenesis, RTA, thiazide กับ Ca (หัวข้อ 10–12)",
+   "**Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1–G47** — ขีดจำกัดการแก้ Na และ 3% NaCl 150 mL (หัวข้อ 7, MEQ)",
+   "**Verbalis JG et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1–S42** — กลุ่มเสี่ยง ODS สูง",
+   "**Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid–base disturbances. N Engl J Med 2014;371:1434–45** — สูตรการชดเชย delta ratio osmolal gap urine AG (หัวข้อ 14, OSCE)",
+   "**ADA consensus report: Hyperglycemic crises in adults with diabetes (Diabetes Care 2024)** — K ใน DKA (หัวข้อ 13)",
+   "**International Continence Society (ICS) standardisation of terminology** — ชนิดของ incontinence (หัวข้อ 15)"],
  "sections": S, "meq": MEQ, "osce": OSCE,
 }
 
@@ -1123,7 +1211,7 @@ json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 # ผูกข้อ Mock exam (ไม่ผูกคาบ) ที่ตรงเรื่อง
 from link_mock import link_mock
-MOCK_MAP = {}
+MOCK_MAP = {"nephro-phy2-07": ["MOCK-170"], "nephro-phy2-08": ["MOCK-173"], "nephro-phy2-10": ["MOCK-198"], "nephro-phy2-12": ["MOCK-180"], "nephro-phy2-13": ["MOCK-135"]}
 nmock = link_mock(SET, LEC, MOCK_MAP) if MOCK_MAP else 0
 
 from collections import Counter
