@@ -68,3 +68,59 @@
 - CT: emphysema (LAA ≤ −950 HU) · ใช้วางแผน LVRS/endobronchial valve (FEV1 15–45% + hyperinflation) · bronchiectasis ~30% ของ COPD · mucus plug · ข้อบ่งชี้ CT (Fig 2.14): exacerbation ต่อเนื่อง, อาการไม่สมกับ PFT, FEV1 15–45% + hyperinflation, เข้าเกณฑ์ lung cancer screening · ILA 4–9%
 - **AATD: GOLD แนะนำตรวจทุกคนที่วินิจฉัย COPD** · classic < 45 ปี panlobular basal emphysema · ระดับ < 20% ของปกติ = homozygous
 - BODE · biomarkers: eos เท่านั้นที่ใช้จริง · treatable traits (persistent dyspnea + exacerbation ใน follow-up algorithm)
+
+## บท 3 Prevention & management (หน้า 50–91)
+### Key points
+- เลิกบุหรี่: NRT + pharmacotherapy เพิ่ม long-term abstinence · smoking ban + counseling โดยบุคลากรช่วย · **ไม่มีหลักฐานว่า e-cigarette ได้ผล/ปลอดภัยสำหรับเลิกบุหรี่**
+- วัคซีน: ตาม local guideline · COVID-19 · influenza, pneumococcal, RSV ลด LRTI · Tdap ถ้าไม่เคยได้ตอนวัยรุ่น · shingles routine
+- Initial pharmacotherapy individualized (อาการ, exacerbation risk, side effects, comorbidity, ราคา, ความสามารถใช้ device) · ตรวจ inhaler technique + adherence สม่ำเสมอ
+- Pulmonary rehab ดีขึ้นทุกระดับความรุนแรง · **LTOT ไม่ให้ routine ในคน desaturation ปานกลาง** แต่ยืดชีวิตใน severe resting hypoxemia (PaO2 ≤ 55 หรือ < 60 ถ้ามี cor pulmonale/secondary polycythemia) · long-term NIV ในบางคน (daytime hypercapnia + เพิ่ง admit)
+- advanced emphysema ที่ดื้อต่อยา → surgical/bronchoscopic · palliative ช่วยคุมอาการ
+### Disease activity (ใหม่ 2026)
+- เป้าหมาย low disease activity: **ไม่มี exacerbation · อาการไม่แย่ลง · FEV1 ไม่ลดเร็วกว่าปกติ** · disease stability vs disease control (control = stability + อาการต่ำกว่าเกณฑ์)
+### Risk reduction
+- ~40% ของผู้ป่วย COPD ยังสูบอยู่ · เลิกบุหรี่ = มีผลต่อ natural history มากที่สุด ลดอาการ ลด exacerbation · quit rate ระยะยาว 14–27% ถ้าลงแรงพอ
+- counseling + pharmacotherapy ดีที่สุด · nicotine dependence สูง: สูบภายใน 30 นาทีหลังตื่น, สูบกลางคืน, ≥ 20 มวน/วัน, Fagerström 7–10, HSI 5–6
+- **5 steps (Fig 3.4 — 5A: Ask, Advise, Assess, Assist, Arrange)** · Fig 3.5 recommendations (อ่านไม่ได้ เป็นรูป) · relapse พบบ่อย ไม่ใช่ความล้มเหลว
+- brief counseling 3 นาทีก็ช่วย · abstinence 1 ปี: usual 1.4% · minimal counseling 2.6% · intensive 6% · intensive + drug 12.3%
+- biomass: ventilation ดี เตาไม่มีควัน · occupational: เลี่ยง exposure · climate: ห้องนอน > 18°C ช่วงหนาว · heatwave: ดื่มน้ำ ห้องนั่งเล่น < 32°C ห้องนอน < 24°C · inhaler carbon footprint
+### Vaccines (Fig 3.6 เป็นตาราง — ใช้ text)
+- influenza ทุกปี (ลด LRTI ที่ต้อง admit, stroke, ตาย, exacerbation) · HD-IIV3/aIIV3 ในผู้สูงอายุ
+- pneumococcal: ทุกคน ≥ 50 ปี และ 19–49 ปีที่มีโรคปอดเรื้อรัง · PCV13/15 → PPSV23 หรือ PCV20 หรือ PCV21 · **GOLD แนะนำ PCV20 หรือ PCV21**
+- RSV: ≥ 75 ปีทุกคน · 50–74 ปีที่มีโรคหัวใจ/ปอดเรื้อรัง · RSV = 8.7% ของ outpatient exacerbation
+- Tdap (pertussis) ถ้าไม่ได้ตอนวัยรุ่น · zoster · COVID-19
+### Education & self-management
+- education อย่างเดียวไม่เปลี่ยนพฤติกรรม · self-management coaching · written action plan · integrated care
+### Pharmacological maintenance (Fig 3.7–3.12 เป็นรูป — ใช้ text)
+- เพิ่ม ICS ลด exacerbation ใน **ผู้ที่มี moderate/severe exacerbation 1 ครั้งในปีก่อน** (RCT)
+- Fig 3.7 management cycle (review–assess–adjust) · Fig 3.8 INITIAL ตามกลุ่ม · Fig 3.9 FOLLOW-UP ตาม treatable trait
+- **ไม่ใช้คำ asthma–COPD overlap แล้ว** · ถ้ามี asthma ร่วม → รักษาตาม asthma guideline (ICS จำเป็น)
+- **Initial**: Group A = bronchodilator (short หรือ long; long-acting ดีกว่าถ้ามี/จ่ายได้ ยกเว้นเหนื่อยนาน ๆ ครั้ง) · Group B = **LABA+LAMA** (ถ้าไม่เหมาะ ใช้ LABA หรือ LAMA ตัวเดียว ไม่มีตัวไหนดีกว่า) + หา comorbidity · Group E = **LABA+LAMA** · **LABA+ICS ไม่แนะนำ** · ถ้ามีข้อบ่งชี้ ICS ใช้ LABA+LAMA+ICS · **พิจารณา triple ตั้งแต่เริ่มถ้า eos ≥ 300** · rescue SABA ให้ทุกคน
+- **Follow-up**: review (dyspnea, exacerbation, eos) → assess (technique, adherence, non-pharm) → adjust (escalate/de-escalate/switch device) · ใช้ได้ไม่ว่าเริ่มที่กลุ่มไหน · ถ้ามีทั้ง 2 ปัญหา ใช้ exacerbation pathway
+  - Dyspnea: mono → LABA+LAMA · ยังเหนื่อย → เปลี่ยน device/molecule, pulmonary rehab, **ensifentrine** (ถ้ามี) · หาสาเหตุอื่นของเหนื่อย
+  - Exacerbation: mono → LABA+LAMA · LABA+LAMA แล้วยังมี moderate/severe exacerbation → **LABA+LAMA+ICS** (ตอบสนองถ้า eos ≥ 100 มากขึ้นตาม eos) · LABA+LAMA + eos < 100 → **azithromycin** (ไม่สูบบุหรี่, ระวังเชื้อดื้อ) หรือ **roflumilast** (FEV1 < 50% + chronic bronchitis + เคย admit)
+  - Triple แล้วยัง exacerbate → eos ≥ 300: **dupilumab** (ถ้ามี chronic bronchitis) หรือ **mepolizumab** (มีหรือไม่มี chronic bronchitis) (Fig 3.11) · azithromycin · roflumilast
+  - ไม่ถอน ICS จาก triple ยกเว้นเริ่มไม่เหมาะ ไม่ตอบสนอง side effect หรือ pneumonia รุนแรง/ซ้ำ · eos ≥ 300 ถอนแล้วเสี่ยง exacerbation
+  - On LABA+ICS (ไม่มี asthma): คุมได้ดี → ใช้ต่อได้ · exacerbate → triple ถ้า eos ≥ 100 / เปลี่ยนเป็น LABA+LAMA ถ้า < 100 · อาการเด่น → LABA+LAMA หรือ triple
+- (ตัวเลข eos สำหรับ ICS ใน Fig 3.10 เป็นรูป — ใช้ค่าที่รู้: ≥ 300 = strongly favour · 100–300 = favour · < 100 = against; ICS ไม่ใช้ถ้า pneumonia ซ้ำ, mycobacterial infection — อิงความรู้ GOLD 2023–2025)
+### Inhaler
+- > 30 ยา > 20 devices: nebulizer, pMDI ± VHC/spacer, BAI, SMI, DPI · particle > 5 µm ติด oropharynx · 2–5 µm fine · < 2 µm extra-fine (ลงลึก)
+- **pMDI/SMI ต้องหายใจเข้าช้าและลึก · DPI ต้องหายใจเข้าแรงเร็ว** (สร้าง turbulent energy ให้ผงแตกตัว) · ถ้าดูดแรงไม่พอ → pMDI+spacer หรือ SMI
+- nebulizer ไม่ดีกว่า hand-held ถ้าใช้เป็น · single-inhaler triple ดีกว่าหลาย device
+- > 2/3 ใช้ผิดอย่างน้อย 1 ขั้น · ผิดบ่อย: inspiratory flow, ระยะเวลาสูด, coordination, เตรียม dose, ไม่หายใจออกก่อน, ไม่กลั้นหายใจ
+- spacer/VHC: ช่วย coordination, เพิ่ม lung deposition, ลด oropharyngeal → ลด candidiasis จาก ICS · VHC 150–250 mL พอ
+- **teach-back ได้ผลดี** · ไม่เปลี่ยน device โดยไม่สอนใหม่ (mass switching → ใช้ prednisolone มากขึ้น) · ตรวจทุก visit · ให้ผู้ป่วยนำ inhaler มาเอง
+### Non-pharmacological
+- ทุกคน: smoke-free, physical activity, vaccines · B/E → formal pulmonary rehab
+- **Pulmonary rehab**: exercise training + education + self-management · **6–8 สัปดาห์** (12 สัปดาห์ไม่ดีกว่า) · supervised ≥ 2 ครั้ง/สัปดาห์ · endurance, interval, resistance, upper+lower limb, walking, inspiratory muscle training, NMES · ประเมิน 6MWD, health status
+- **LTOT (> 15 ชม./วัน)**: PaO2 ≤ 55 mmHg (7.3 kPa) หรือ SaO2 ≤ 88% ± hypercapnia ยืนยัน 2 ครั้งในช่วง 3 สัปดาห์ · หรือ PaO2 55–60 mmHg (SaO2 88%) + pulmonary hypertension / peripheral edema (CHF) / polycythemia (Hct > 55%) · 24 ชม. ไม่ดีกว่า 15 ชม. · moderate desaturation ไม่ได้ประโยชน์ (LOTT) · ประเมินซ้ำ 60–90 วัน
+- air travel: in-flight PaO2 ≥ 50 mmHg · O2 3 L/min NC หรือ Venturi 31% · SpO2 พัก > 95% และ 6MWD > 84% เดินทางได้
+- Chronic NIV: daytime hypercapnia + เพิ่ง admit · RCT: PaCO2 > 53 mmHg 2–4 สัปดาห์หลัง discharge → home NIV + O2 ยืดเวลา readmission/death · COPD+OSA → CPAP ชัดเจน (ลดตาย ลด admit) · HFNT long-term อาจลด exacerbation
+### Interventions that reduce mortality (Fig 3.19)
+- non-pharm: **smoking cessation** (Lung Health Study) · **pulmonary rehab ที่เริ่มใน admission หรือภายใน 4 สัปดาห์หลัง discharge** · **LTOT** (NOTT, MRC) · **NPPV** ในคน hypercapnia มาก (IPAP สูง) · lung transplant · **LVRS** (upper lobe + exercise capacity ต่ำ)
+- pharm: **triple fixed-dose (IMPACT, ETHOS)** ลด all-cause mortality vs LABA+LAMA ในคนมีอาการ + exacerbation บ่อย/รุนแรง · TORCH, SUMMIT (LABA+ICS), UPLIFT (LAMA) ไม่ลดตาย
+### Palliative
+- ยาขยายหลอดลม, self-management (breathing techniques), rehab · **opiates, NMES, chest wall vibration, พัดลมเป่าหน้า** ช่วยเหนื่อย · morphine บางการศึกษาช่วย บางการศึกษาไม่ช่วย · **benzodiazepine ไม่มีประโยชน์** · oxygen อาจช่วยแม้ไม่ hypoxemic
+- nutrition: BMI ต่ำ/fat-free mass ต่ำ = พยากรณ์แย่ · supplementation ในคนขาดสารอาหารเพิ่มน้ำหนัก กำลังกล้ามเนื้อหายใจ QoL
+- anxiety/depression: rehab, CBT, mind-body · fatigue
+- end-of-life: advance care planning (admission เป็นจุดเริ่มคุย) · hospice
