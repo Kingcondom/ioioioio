@@ -187,8 +187,8 @@ def starling():
         rect(70, 34, 280, 46, "bad", 20), t(210, 62, "glomerular capillary", "sm b mid tbad"),
         rect(40, 140, 340, 46, "wa", 10), t(210, 168, "Bowman's space", "sm b mid twa"),
         line(120, 82, 120, 136, "lok w3", "ah-ok"), t(132, 106, "P_GC 60", "sm b tok"), t(132, 120, "ดันออก", "xs tok"),
-        line(225, 138, 225, 84, "lwa w3", "ah-wa"), t(233, 106, "P_BC 18", "sm b twa"), t(233, 120, "ดันกลับ", "xs twa"),
-        line(320, 138, 320, 84, "lms w3", "ah-ms"), t(328, 106, "π_GC 32", "sm b tms"), t(328, 120, "ดึงกลับ", "xs tms"),
+        line(225, 138, 225, 84, "lwa w3", "ah-wa"), t(238, 106, "P_BC 18", "sm b twa"), t(238, 120, "ดันกลับ", "xs twa"),
+        line(320, 138, 320, 84, "lms w3", "ah-ms"), t(333, 106, "π_GC 32", "sm b tms"), t(333, 120, "ดึงกลับ", "xs tms"),
         box(10, 198, 400, 36, "ac", "NFP = P_GC − (P_BC + π_GC) = 60 − (18 + 32) = 10 mmHg", "b", fs=12.5),
         box(10, 240, 400, 36, "ok", "GFR = Kf × NFP = 12.5 × 10 = 125 mL/min ≈ 180 L/วัน", "b", fs=12.5),
         box(10, 284, 196, 52, "sk", "Kf = พื้นที่ × การซึมผ่าน\nmesangial หด · GBM หนา ↓", fs=11),
@@ -294,7 +294,7 @@ def ff_gtb():
         ar(250, 120, 250, 58, "lok w2", "ah-ok"), ar(320, 120, 320, 58, "lok w2", "ah-ok"), ar(380, 120, 380, 58, "lok w2", "ah-ok"),
         t(352, 82, "ดูดกลับ", "xs mid b tok"),
         t(170, 74, "π_c สูง (โปรตีนเข้มข้น)", "xs b mid tms"), t(170, 88, "P_c ต่ำ (ผ่าน efferent)", "xs b mid tms"),
-        box(10, 158, 400, 34, "ac", "FF = GFR / RPF ≈ 125 / 625 = 0.16–0.20", "b", fs=12.5),
+        box(10, 158, 400, 34, "ac", "FF = GFR / RPF = 125 / 625 = 0.20 (ปกติ 0.16–0.20)", "b", fs=12.5),
         t(10, 214, "Glomerulotubular balance เมื่อปริมาตรเลือดลด", "sm b"),
         box(10, 222, 400, 30, "ms", "ปริมาตรลด → sympathetic ↑ (หด aff.+eff.) · AII ↑ (หด efferent)", fs=11),
         ar(210, 252, 210, 266, "lms", "ah-ms"),
@@ -326,7 +326,7 @@ def pt_cell():
             t(136, 258, "CO₂ + H₂O", "xs b"), t(136, 272, "→ CA → H⁺ + HCO₃⁻", "xs"),
             t(136, 294, "✕ acetazolamide (CA)", "xs b tbad"),
             circ(304, 266, 8, "ok"), t(290, 250, "NBC1", "xs b end")] + _bl(266, "HCO₃⁻ Na⁺")
-    out += [line(18, 318, 402, 318, "lwa w2", "ah-wa"), t(210, 346, "ช่องระหว่างเซลล์: น้ำ (+AQP1) Cl⁻ K⁺ Ca²⁺", "xs mid b twa")]
+    out += [line(18, 318, 402, 318, "lwa w2", "ah-wa"), t(210, 346, "ระหว่างเซลล์: น้ำ Cl⁻ K⁺ Ca²⁺", "xs mid b twa")]
     out += [box(10, 368, 400, 50, "bad", "Na⁺/K⁺-ATPase คือแบตเตอรี่ของทุกตัวขนส่ง (Na⁺ ในเซลล์ 10 vs ลูเมน 140)\nFanconi: ระบบนี้ล้ม → glucose AA Pi HCO₃⁻ หลุดพร้อมกัน", fs=11)]
     return fig("ท่อไตส่วนต้น — ดูดกลับ 65% ของที่กรอง โดยใช้ Na⁺ เป็นตัวพา",
                "**Na⁺/K⁺-ATPase ด้านเลือด** สูบ Na⁺ ออกจนในเซลล์เหลือ ~10 mEq/L (ลูเมน 140) → Na⁺ ไหลเข้าเซลล์จากลูเมนเองและ **พาสารอื่นเข้ามาด้วย**: glucose (SGLT2 ~100%) กรดอะมิโน (~100%) phosphate (NaPi-IIa 80% — PTH และ FGF-23 ดึงตัวขนส่งเข้าไปทำลาย) และแลก H⁺ ออก (NHE3 — AII กระตุ้น) · H⁺ ที่ออกไปจับ HCO₃⁻ กลายเป็น CO₂ เข้าเซลล์ แล้วสร้าง HCO₃⁻ ใหม่ส่งออกทาง NBC1 (ดูดกลับ HCO₃⁻ 80%) — **carbonic anhydrase** คือจุดที่ acetazolamide บล็อก · น้ำตามออสโมซิส (AQP1) ของเหลวจึงยัง isosmotic · ภาพวาดตามป้ายในสไลด์ ชื่อ NHE3/NBC1/NaPi-IIa ตามสไลด์และ Boron & Boulpaep",
@@ -437,7 +437,7 @@ def diuretic_map():
     rows = [("PT", "65%", "acetazolamide", "Na K ↓ · HCO₃⁻ หลุด → กรดคั่ง", "SGLT2i: glucosuria", "sk"),
             ("TAL", "25%", "furosemide · bumetanide", "K ↓ · Ca ↓ · Mg ↓ · ด่าง", "แรงสุด (ตัดกลไกเข้มข้น)", "bad"),
             ("Early DT", "5%", "HCTZ · bendroflumethiazide", "K ↓ · Na ↓ · Ca ↑ · Mg ↓ · ด่าง", "Na ต่ำบ่อยกว่า loop", "ms"),
-            ("Late DT/CD", "2–4%", "amiloride · spironolactone", "K ↑ · Na ↓ · กรดคั่ง", "\"K-sparing\"", "ok")]
+            ("Late DT/CD", "~4%", "amiloride · spironolactone", "K ↑ · Na ↓ · กรดคั่ง", "\"K-sparing\"", "ok")]
     out = [t(14, 20, "ส่วน · Na⁺ ที่ดูดกลับ", "xs b mu"), t(150, 20, "ยา → รูปแบบเกลือแร่", "xs b mu")]
     y = 28
     for seg, pct, drug, pat, note, cl in rows:
@@ -446,7 +446,7 @@ def diuretic_map():
         y += 72
     out += [t(14, y + 10, "Na⁺ ที่ไม่ถูกดูดต้นทาง → ไปถึงปลายทาง → แลกเป็น K⁺ ที่ CD", "xs b i2")]
     return fig("แผนที่ยาขับปัสสาวะ — ตำแหน่งที่ออกฤทธิ์ทำนายเกลือแร่ที่ผิดปกติ",
-               "สัดส่วน Na⁺ ที่แต่ละส่วนดูดกลับจากสไลด์ (PT 65% · TAL 25% · early DT 5% · CD ~2–4%) · ยาที่ออกฤทธิ์ **ก่อน** collecting duct ทุกตัวทำให้ **K ต่ำ** เพราะส่ง Na⁺ และน้ำไปถึง principal cell มากขึ้น (สไลด์เขียนซ้ำในทุกยา: \"↑tubular flow rate & ↑tubular [Na⁺] → ↑K⁺ secretion at P cell\") · loop vs thiazide ต่างกันที่ **Ca** (กลไกในภาพ TAL และ DT) · ยาที่ CD ทำตรงข้าม: K สูง · ด่าง/กรดและ Na ต่ำเพิ่มเติมจาก Guyton & Hall · SGLT2i ไม่อยู่ในสไลด์",
+               "สัดส่วน Na⁺ ที่แต่ละส่วนดูดกลับจากสไลด์ (PT 65% · TAL 25% · early DT 5% · MCD ~4%) · ยาที่ออกฤทธิ์ **ก่อน** collecting duct ทุกตัวทำให้ **K ต่ำ** เพราะส่ง Na⁺ และน้ำไปถึง principal cell มากขึ้น (สไลด์เขียนซ้ำในทุกยา: \"↑tubular flow rate & ↑tubular [Na⁺] → ↑K⁺ secretion at P cell\") · loop vs thiazide ต่างกันที่ **Ca** (กลไกในภาพ TAL และ DT) · ยาที่ CD ทำตรงข้าม: K สูง · ด่าง/กรดและ Na ต่ำเพิ่มเติมจาก Guyton & Hall · SGLT2i ไม่อยู่ในสไลด์",
                svg(420, y + 18, "ตารางตำแหน่งออกฤทธิ์ของยาขับปัสสาวะในแต่ละส่วนของ nephron และความผิดปกติของเกลือแร่ที่เกิด", *out))
 
 
