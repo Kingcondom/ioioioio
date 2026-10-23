@@ -401,4 +401,453 @@ sec("nephro-cath-06", "เลือกสาย — ขนาด วัสดุ
          "แพ้ latex/ใช้นาน → silicone", "Catheter material", R("Material of catheter selection"), [DEVICE, HARM])],
     [DEVICE, HEMAT, BPH, HARM], {"foley": F.foley()}, source=SRC + " + CDC/HICPAC 2009")
 
+# ═════════════════════════════════════════════ 7
+sec("nephro-cath-07", "ขั้นตอนการใส่สายค้าง — ทุกขั้นมีเหตุผล",
+    "ยินยอม → aseptic → lidocaine gel รอ 3–5 นาที → ดันถึง bifurcation → เห็นปัสสาวะ → sterile water → รูดหนังหุ้มกลับ → ยึดสาย → ถุงต่ำ", 10,
+"""(handout ส่วน "How to do?" มีเฉพาะการเลือกขนาด/วัสดุ/การยึด/การดูแล — ขั้นตอนทีละขั้นด้านล่างอิง CDC/HICPAC 2009, EAUN 2024 และแนวปฏิบัติมาตรฐาน)
+
+### ก่อนเริ่ม
+| ขั้น | ทำอะไร | ทำไม |
+|---|---|---|
+| 1 | ทบทวน **ข้อบ่งชี้** และ **ข้อห้าม** (blood at meatus? pelvic fracture? เคยผ่าตัด prostate/stricture?) · ถ้าสงสัยคั่ง → **bladder scan ก่อน** | ไม่ใส่สายที่ไม่จำเป็น และไม่ดันสายในท่อที่ฉีก |
+| 2 | แนะนำตัว อธิบาย ขอ **ความยินยอม** · ถามประวัติ **แพ้ latex/lidocaine/น้ำยา** · ความเป็นส่วนตัว + ผู้ช่วย/chaperone | ผู้ป่วยร่วมมือ = หูรูดคลาย |
+| 3 | เตรียมของ: ชุดสวนปลอดเชื้อ สาย (ผู้ใหญ่ 12–14 Fr) **ต่อกับถุงระบบปิดไว้ก่อน** · ถุงมือปลอดเชื้อ · 2% lidocaine gel แบบใช้ครั้งเดียว · syringe + **sterile water** · อุปกรณ์ยึดสาย | ต่อถุงก่อนไม่ต้องเปิดระบบภายหลัง |
+| 4 | **ล้างมือ** · ท่านอนหงาย (หญิง: frog-leg) | CDC 1b |
+
+### ผู้ชาย
+| ขั้น | ทำอะไร | ทำไม |
+|---|---|---|
+| 5 | ใส่ถุงมือปลอดเชื้อ ปูผ้า · มือที่ไม่ถนัดจับองคชาต (มือนี้ "ไม่ปลอดเชื้อ" แล้ว) | แยกมือสะอาด/มือปลอดเชื้อ |
+| 6 | **รูดหนังหุ้มลง** ทำความสะอาด meatus วนจากรูออกด้านนอก | ไม่ลากเชื้อเข้าหารู |
+| 7 | ฉีด **lidocaine gel ~10 mL เข้าท่อช้า ๆ** บีบปลายไว้ **รอ 3–5 นาที** | ต้องใช้เวลาให้ยาชาออกฤทธิ์ · gel หล่อลื่นและขยายท่อทั้งความยาว → เจ็บน้อย หูรูดไม่เกร็ง เยื่อบุไม่ถลอก |
+| 8 | จับองคชาต **ตั้งฉาก 90°** ดึงขึ้นเบา ๆ ดันสายด้วยแรงสม่ำเสมอ ผ่านจุดต้านให้หายใจลึก/เบ่งเหมือนปัสสาวะ | ลบโค้ง prepubic · หูรูดนอกคลาย |
+| 9 | ดัน **จนสุดถึง bifurcation** → รอเห็นปัสสาวะไหล | บอลลูนต้องพ้น prostatic urethra (ดูภาพด้านล่าง) |
+| 10 | เติม **sterile water ตามปริมาตรที่ระบุบนสาย (มักเป็น 10 mL)** ช้า ๆ — ถ้าผู้ป่วยปวดมาก **หยุด ดูดออก** ดันเข้าอีก | ปวดตอนเติม = บอลลูนอยู่ในท่อ |
+| 11 | ดึงกลับเบา ๆ จนรู้สึกติด | บอลลูนพักที่คอกระเพาะ ระบายได้หมด |
+| 12 | **รูดหนังหุ้มกลับคลุม glans** | ป้องกัน **paraphimosis** (หัวข้อ 10) |
+| 13 | ยึดสายที่ **หน้าท้อง** · ถุง **ต่ำกว่ากระเพาะ ไม่แตะพื้น** · ล้างมือ | ป้องกันแรงดึง/แผล และปัสสาวะไหลย้อน |
+| 14 | บันทึก: วันเวลา ข้อบ่งชี้ ขนาด/ชนิดสาย ปริมาตรน้ำในบอลลูน **ปริมาณปัสสาวะที่ระบายครั้งแรก** ลักษณะปัสสาวะ ปัญหา และ **วันที่วางแผนถอด** | ใช้ประเมิน post-obstructive diuresis และเตือนให้ถอดเร็ว |
+
+[[fig:balloon]]
+
+### ผู้หญิง — ที่ต่างจากผู้ชาย
+- แยก labia ด้วยมือที่ไม่ถนัดค้างไว้ตลอดจนสายเข้า · ทำความสะอาด **จากหน้าไปหลัง** (จากรูเปิดไปทางทวารหนัก) — ไม่ลากเชื้อลำไส้มาที่รู
+- ท่อสั้น: ใส่จนปัสสาวะไหล แล้ว **ดันต่ออีกราว 2–3 ซม.** ก่อนเติมบอลลูน
+- **สายเข้าช่องคลอด** → ทิ้งไว้เป็นจุดสังเกต ใช้สายปลอดเชื้อเส้นใหม่ใส่ด้านบน (หัวข้อ 9)
+- ยึดสายที่ **ต้นขาด้านใน**
+
+### ทำไมใช้ sterile water ไม่ใช่ NSS เติมบอลลูน
+NaCl ตกผลึกในทางเติมบอลลูนเล็ก ๆ ได้เมื่อค้างนาน → **อุดทาง → ดูดน้ำออกไม่ได้ = บอลลูนแฟบไม่ลง** (หัวข้อ 10) · ใช้ปริมาตร **ตามที่ผู้ผลิตกำหนด** (BAUS-BAUN: no more, no less) — น้อยไปบอลลูนเบี้ยว ปลายสายเอียงชนผนัง / มากไประคายคอกระเพาะ ปวดเกร็ง
+
+### การยึดสาย (สไลด์ Fixation of Catheter)
+[[fig:fixation]]
+""",
+    ["Lidocaine gel ต้องรอ 3–5 นาที — ทั้งชาและหล่อลื่น",
+     "ผู้ชาย: ดันถึง bifurcation ก่อนเติมบอลลูน · ปัสสาวะไหลอย่างเดียวไม่พอ",
+     "ปวดตอนเติมบอลลูน → หยุด ดูดออก ดันลึกขึ้น",
+     "Sterile water ตามปริมาตรบนสาย (มัก 10 mL) — NSS ตกผลึกจนบอลลูนแฟบไม่ลง",
+     "จบทุกครั้ง: รูดหนังหุ้มกลับ · ยึดสายที่หน้าท้อง (ชาย)/ต้นขา (หญิง) · ถุงต่ำกว่ากระเพาะ"],
+    [mcq(N(15), "An intern inserts a 16 Fr Foley catheter in a 74-year-old man with a large prostate. After about 14 cm, urine appears in the tubing, so he inflates the balloon with 10 mL. The patient cries out in severe pain and blood appears at the meatus. What is the most likely explanation?",
+         ["The balloon was inflated in the prostatic urethra because the catheter had not been advanced to the bifurcation",
+          "Sterile water instead of saline caused osmotic rupture of the balloon", "The catheter entered a urethral diverticulum in the penile urethra",
+          "Lidocaine gel caused a chemical urethritis", "The balloon was overfilled; 10 mL exceeds the recommended volume"], 0,
+         "รูรับปัสสาวะอยู่ปลายสุด ห่างจากบอลลูนไม่กี่เซนติเมตร และ prostatic urethra ใน BPH ยาวมาก → **ปัสสาวะไหลได้ตั้งแต่ปลายสายพ้น bladder neck ทั้งที่บอลลูนยังอยู่ในท่อ** · การเติมน้ำตอนนั้นทำให้บอลลูนพองในท่อที่แคบ → ปวดรุนแรง ท่อฉีก เลือดออก และเป็น stricture ภายหลัง · ป้องกันโดย **ดันสายจนสุดถึง bifurcation ก่อนเติมเสมอ** (ผู้ชาย)\n\n"
+         "- **Sterile water** — คือของที่ถูกต้อง ไม่ทำให้บอลลูนแตก\n- **Diverticulum** — พบน้อย และจะไม่มีปัสสาวะไหล\n"
+         "- **Lidocaine gel** — ไม่ทำให้ปวดเฉียบพลันขณะเติมบอลลูน\n- **10 mL** — เป็นปริมาตรมาตรฐานของบอลลูนทั่วไป",
+         "ผู้ชาย: เห็นปัสสาวะยังไม่พอ ต้องดันถึง bifurcation", "Balloon inflation in the urethra", ["หลักปฏิบัติมาตรฐาน / EAUN 2024 (ไม่อยู่ในสไลด์)"], [HARM, DEVICE, ANAT, BPH]),
+     mcq(N(16), "Why is sterile water, rather than 0.9% saline, recommended for inflating the balloon of a standard Foley catheter?",
+         ["Saline can crystallise in the narrow inflation channel, so the balloon may fail to deflate",
+          "Saline is hypotonic and leaks out of the balloon",
+          "Water is radiolucent whereas saline is radio-opaque",
+          "Saline irritates the trigone if the balloon leaks and causes bladder spasm",
+          "Water is cheaper; there is no clinical difference"], 0,
+         "ทางเติมบอลลูนเป็นช่องเล็กมาก · NaCl ที่ค้างนาน **ตกผลึกอุดช่อง** → ดูดน้ำออกไม่ได้ = **balloon ไม่แฟบ** ถอดสายไม่ได้ (ปัญหาในตาราง BAUS-BAUN ของสไลด์) · จึงใช้ **sterile water** (หรือสายที่บรรจุน้ำมาแล้ว) ในปริมาตรที่ผู้ผลิตกำหนด\n\n"
+         "- **Saline hypotonic** — ผิด NSS เป็น isotonic\n- **ความทึบรังสี** — ทั้งสองโปร่งรังสีเท่ากัน\n"
+         "- **ระคาย trigone** — ไม่ใช่เหตุผลหลัก\n- **ไม่มีความต่าง** — มีความต่างทางคลินิก",
+         "Sterile water เติมบอลลูน — NSS ตกผลึกจนแฟบไม่ลง", "Balloon inflation fluid", ["EAUN 2024 · หลักปฏิบัติมาตรฐาน (ไม่อยู่ในสไลด์)"], [DEVICE, HARM])],
+    [DEVICE, HARM, ANAT, PARA], {"balloon": F.balloon(), "fixation": F.fixation()},
+    source="CDC/HICPAC 2009 · EAUN 2024 · หลักปฏิบัติมาตรฐาน (ขั้นตอนทีละขั้นไม่อยู่ในสไลด์) + สไลด์ Fixation of catheter")
+
+# ═════════════════════════════════════════════ 8
+sec("nephro-cath-08", "ดูแลสายและ CAUTI — biofilm กับ “ถอดให้เร็วที่สุด”",
+    "เส้นทางเชื้อ 2 ทาง · biofilm · นิยาม CAUTI (IDSA 2009) · รักษา · bundle ป้องกัน (CDC 2009, EAUN 2024)", 10,
+"""### การดูแลสายในสไลด์ (EAUN 2024)
+| คำแนะนำ | LE | GR |
+|---|---|---|
+| **ล้างมือทันทีก่อนและหลัง** จับสายหรือระบบทุกครั้ง · ใส่ถุงมือใช้แล้วทิ้งเมื่อจับระบบ | 1b | B |
+| ให้ปัสสาวะไหลสะดวก ไม่ให้สายและท่อพับ | 1b | B |
+| **ถุงต่ำกว่าระดับกระเพาะตลอดเวลา ไม่วางบนพื้น** | 1b | B |
+
+[[fig:bag]]
+
+### เชื้อเข้าทางไหน — และทำไมรักษาด้วยยาอย่างเดียวไม่พอ
+[[fig:cauti]]
+- **Extraluminal (ผิวนอก)** ~2 ใน 3 — เชื้อจากฝีเย็บ/ลำไส้ไต่ขึ้นในชั้นเมือกระหว่างสายกับเยื่อบุ · เกิดตั้งแต่ตอนใส่ (เทคนิคไม่ปลอดเชื้อ) หรือช่วงแรก · พบมากในผู้หญิง
+- **Intraluminal (ในท่อ)** — ระบบปิดถูกเปิด/ถอดข้อต่อ · ก๊อกถุงปนเปื้อน · **ถุงถูกยกสูงจนปัสสาวะไหลย้อน**
+- **Biofilm**: เชื้อเกาะผิวสาย สร้างเมือก polysaccharide · ยาและเม็ดเลือดขาวเข้าไม่ถึง เชื้อในนั้นโตช้าจึงดื้อยา → bacteriuria เพิ่ม **3–7% ต่อวัน** · BAUS-BAUN (สไลด์): **ค้างเกิน 4 สัปดาห์ แทบทุกรายมีเชื้อ** · Proteus/Providencia สร้าง urease → ปัสสาวะด่าง → struvite เกาะ (encrustation) → **สายอุด**
+
+### CAUTI — นิยาม (IDSA 2009 — ไม่อยู่ในสไลด์)
+อาการ/อาการแสดงที่เข้าได้กับ UTI **โดยไม่มีแหล่งติดเชื้ออื่น** + เพาะเชื้อ **≥ 10³ CFU/mL** จากปัสสาวะในสาย (หรือ midstream ภายใน 48 ชม.หลังถอดสาย)
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก | หมายเหตุ |
+|---|---|---|
+| **ไข้ หนาวสั่น** | เชื้อจาก biofilm ขึ้นไปไต/prostate หรือเข้ากระแสเลือด → cytokine | อาการที่พบบ่อยที่สุด — มักไม่มีอาการเฉพาะที่ |
+| **ไม่มีแสบขัด/ปัสสาวะบ่อย** | สายระบายตลอด กระเพาะไม่เคยเต็ม และไม่มีปัสสาวะผ่านท่อ | ทำให้วินิจฉัยยาก ต้องตัดแหล่งอื่นก่อน |
+| **ปวดสีข้าง/เคาะเจ็บ CVA** | pyelonephritis — เชื้อขึ้นตามท่อไต | complicated UTI |
+| **สับสน ซึม** ในผู้สูงอายุ | ตอบสนองต่อการติดเชื้อทั้งระบบ | ต้องไม่มีสาเหตุอื่น |
+| **ปวดท้องน้อย/ปวดเกร็ง ปัสสาวะรั่วรอบสาย** | กระเพาะอักเสบ → detrusor บีบ | แยกจาก CRBD/สายอุด |
+| ปัสสาวะขุ่น มีกลิ่น | ตะกอน/เมือก/เชื้อ | **อย่างเดียวไม่ใช่ข้อบ่งชี้ส่งเพาะเชื้อหรือให้ยา** · pyuria ก็ใช้วินิจฉัยไม่ได้ |
+
+### รักษา CAUTI (IDSA 2009)
+1. เก็บปัสสาวะเพาะเชื้อ **ก่อน** ให้ยา — จาก **sampling port** ด้วยเทคนิคปลอดเชื้อ **ไม่ใช่จากถุง**
+2. สายค้าง **> 2 สัปดาห์** และยังจำเป็น → **เปลี่ยนสายใหม่ และเก็บเพาะเชื้อจากสายใหม่** (สายเก่ามี biofilm — ผลเพาะเชื้อปนเชื้อที่เกาะสาย และยาเข้าไม่ถึง) · ไม่จำเป็นแล้ว → ถอด
+3. ระยะเวลา: **7 วัน** ถ้าตอบสนองเร็ว · **10–14 วัน** ถ้าตอบสนองช้า
+4. **Bacteriuria ที่ไม่มีอาการ (CA-ASB)** — **ไม่ตรวจคัดกรองและไม่รักษา** (ยกเว้นหญิงตั้งครรภ์ และก่อนหัตถการทางเดินปัสสาวะที่มีเลือดออก) — เชื้อกลับมาเสมอตราบที่สายยังอยู่ ให้ยาก็ได้แต่เชื้อดื้อยา
+
+### Bundle ป้องกัน CAUTI (CDC/HICPAC 2009 + EAUN 2024)
+| ป้องกันอะไร | ทำ | ไม่ทำ |
+|---|---|---|
+| ไม่ใส่โดยไม่จำเป็น | ใส่เฉพาะข้อบ่งชี้ · ใช้ external/IC/bladder scan แทน | ใส่เพื่อความสะดวก |
+| ใส่อย่างปลอดเชื้อ | ล้างมือ ถุงมือ/ผ้าปลอดเชื้อ gel ใช้ครั้งเดียว สายเล็กที่สุดที่ระบายได้ | – |
+| รักษาระบบปิด | ไม่ถอดข้อต่อ · ถ้าระบบเปิด/รั่ว → **เปลี่ยนทั้งสายและถุง** | ล้างกระเพาะ (irrigation) เป็นประจำ |
+| ระบายทางเดียว | ถุงต่ำกว่ากระเพาะ ไม่แตะพื้น ไม่พับ · เทถุงด้วยภาชนะแยกรายคน | ยกถุงขึ้นตอนย้ายเตียงโดยไม่หนีบสาย |
+| ทำความสะอาด | ทำความสะอาด meatus ตามปกติตอนอาบน้ำ | ทา antiseptic รอบ meatus ทุกวัน |
+| **ถอดเร็ว** | **ทบทวนทุกวัน** · nurse-driven removal protocol · ระบบเตือน · หลังผ่าตัดถอดใน 24 ชม. | เปลี่ยนสาย/ถุงตามรอบเวลาที่กำหนดตายตัว · ยาปฏิชีวนะป้องกัน · clamp ก่อนถอด |
+
+> การป้องกันที่ได้ผลที่สุดคือ **ไม่ใส่** และ **ถอดเร็ว** — ทุกวันที่สายอยู่เพิ่มความเสี่ยง
+""",
+    ["Extraluminal (ผิวนอก) ~2/3 · intraluminal เมื่อระบบเปิด/ถุงไหลย้อน",
+     "Biofilm → ยาเข้าไม่ถึง → สายค้าง > 2 สัปดาห์ที่เป็น CAUTI ให้เปลี่ยนสายและเพาะเชื้อจากสายใหม่",
+     "CAUTI: อาการ + ≥ 10³ CFU/mL · ปัสสาวะขุ่น/มีกลิ่น หรือ pyuria อย่างเดียวไม่พอ",
+     "รักษา 7 วัน (ตอบสนองเร็ว) · 10–14 วัน (ตอบสนองช้า)",
+     "ไม่คัดกรอง/ไม่รักษา CA-ASB · ไม่ให้ยาป้องกัน · ไม่เปลี่ยนสายตามรอบ"],
+    [mcq(N(17), "In women with a short-term indwelling urethral catheter, by which route do most bacteria that cause catheter-associated bacteriuria reach the bladder?",
+         ["Extraluminally, ascending from the perineum along the outside of the catheter in the mucous film between catheter and urethra",
+          "Intraluminally, by reflux from the drainage bag", "Haematogenous seeding of the bladder wall", "Lymphatic spread from the rectum", "Descending infection from the kidney"], 0,
+         "เชื้อส่วนใหญ่ (~2 ใน 3) ขึ้น **ทางผิวนอกของสาย (extraluminal)** — เชื้อจากลำไส้ที่อยู่บริเวณฝีเย็บ/รูเปิด ไต่ขึ้นในชั้นเมือกระหว่างสายกับเยื่อบุ ซึ่งผู้หญิงท่อสั้นและใกล้ทวารหนักจึงเกิดง่าย · ป้องกันด้วยเทคนิคปลอดเชื้อตอนใส่ ยึดสายไม่ให้ขยับเข้า–ออก และถอดเร็ว\n\n"
+         "- **Intraluminal** — เกิดได้ (ระบบเปิด ถุงไหลย้อน) แต่เป็นส่วนน้อย\n- **Haematogenous / lymphatic / descending** — ไม่ใช่กลไกหลักของ CAUTI",
+         "CAUTI ส่วนใหญ่มาทางผิวนอกสาย", "Pathogenesis of CAUTI", ["CDC/HICPAC CAUTI 2009 · IDSA 2009 (ไม่อยู่ในสไลด์)", "สไลด์ อ.ธนิศร — Miscellaneous problems (1)"], [CYST, BIOFILM, PATHO]),
+     mcq(N(18), "An 81-year-old man with BPH has had an indwelling urethral catheter for 3 weeks. He develops fever 38.8 °C, rigors and right costovertebral-angle tenderness. Chest X-ray and other examination show no alternative source. The catheter is still needed. What is the best management?",
+         ["Send urine from the drainage bag for culture and start antibiotics through the existing catheter",
+          "Replace the catheter, send urine for culture from the newly placed catheter, then start empirical antibiotics",
+          "Start antibiotics without culture and continue for 21 days", "Perform antibiotic bladder irrigation through the existing catheter",
+          "Observe; fever with a catheter is usually colonisation"], 1,
+         "นี่คือ **CAUTI (น่าจะ pyelonephritis)** — ไข้ หนาวสั่น CVA tenderness ไม่มีแหล่งอื่น · IDSA 2009: สายค้าง **> 2 สัปดาห์** และยังจำเป็น → **เปลี่ยนสายใหม่ แล้วเก็บเพาะเชื้อจากสายใหม่** ก่อนให้ยา — สายเก่ามี **biofilm** ซึ่งทำให้ผลเพาะเชื้อปนเชื้อที่เกาะสาย และยาเข้าไม่ถึงเชื้อในเมือก · ให้ยา **7 วัน** ถ้าตอบสนองเร็ว (10–14 วันถ้าช้า)\n\n"
+         "- **เพาะเชื้อจากถุง** — เชื้อในถุงโตเพิ่มและปนเปื้อน ไม่สะท้อนเชื้อในกระเพาะ\n- **ไม่เพาะเชื้อ + 21 วัน** — ต้องมีผลเพาะเชื้อเพื่อปรับยา และนานเกิน\n"
+         "- **Antibiotic irrigation** — ไม่แนะนำ ไม่ได้ผลและเปิดระบบปิด\n- **สังเกตอาการ** — มีอาการทั้งระบบ = ต้องรักษา (ต่างจาก ASB)",
+         "CAUTI + สาย > 2 สัปดาห์ → เปลี่ยนสาย เพาะเชื้อจากสายใหม่", "Management of CAUTI", ["IDSA CA-UTI Guideline 2009 (ไม่อยู่ในสไลด์)", "สไลด์ อ.ธนิศร — Miscellaneous problems (1)"], [PYELO, PYELO_B, FEVER, CULT, BIOFILM]),
+     mcq(N(19), "A hospital infection-control team wants to reduce catheter-associated UTI on its medical wards. Which intervention is supported by CDC/HICPAC 2009 guidance?",
+         ["Routine catheter and bag changes every 2 weeks", "Daily cleaning of the meatus with povidone-iodine",
+          "Weekly screening urine cultures with treatment of bacteriuria", "A daily review of catheter necessity with a nurse-driven removal protocol",
+          "Prophylactic oral antibiotics while the catheter is in place"], 3,
+         "หัวใจของ bundle ป้องกัน CAUTI คือ **ลดจำนวนวันที่มีสาย** — ทบทวนทุกวันว่ายังจำเป็นไหม และให้พยาบาลถอดได้ตามเกณฑ์ (**nurse-driven removal protocol**/ระบบเตือน) · CDC/HICPAC 2009 แนะนำ\n\n"
+         "- **เปลี่ยนสาย/ถุงตามรอบ** — CDC ไม่แนะนำ (เปลี่ยนตามข้อบ่งชี้ เช่น อุดตัน ติดเชื้อ ระบบรั่ว)\n- **ทา antiseptic รอบ meatus ทุกวัน** — ไม่ลด CAUTI ทำความสะอาดตามปกติพอ\n"
+         "- **คัดกรอง + รักษา bacteriuria** — ไม่ลดการติดเชื้อที่มีอาการ แต่เพิ่มเชื้อดื้อยา\n- **ยาปฏิชีวนะป้องกัน** — ไม่แนะนำด้วยเหตุผลเดียวกัน (BAUS-BAUN ในสไลด์: usually ineffective)",
+         "ป้องกัน CAUTI = ไม่ใส่ + ถอดเร็ว", "CAUTI prevention bundle", ["CDC/HICPAC CAUTI 2009 (ไม่อยู่ในสไลด์)", "สไลด์ อ.ธนิศร — Catheter care · Miscellaneous problems (1)"], [CYST, DEVICE, RESIST])],
+    [CYST, CYST_B, PYELO, PYELO_B, FEVER, BIOFILM, PATHO, RESIST, UA, CULT, SPEC, DEVICE, HARM], {"cauti": F.cauti(), "bag": F.bag()},
+    source=SRC + " (Catheter care · BAUS-BAUN) + CDC/HICPAC 2009 + IDSA 2009")
+
+# ═════════════════════════════════════════════ 9
+sec("nephro-cath-09", "Troubleshooting 1 — ใส่ไม่เข้า และใส่แล้วไม่มีปัสสาวะ",
+    "4 ขั้นในสไลด์ (gel · 90° + เบ่ง · เปลี่ยนขนาด · Tiemann) · flowchart Campbell · หญิง: นิ้วนำ · ไม่มีปัสสาวะออก", 9,
+"""### ใส่ไม่เข้า — ผู้ชาย (สไลด์ Difficult to Insert!!)
+1. **ฉีด sterile lubricant (lidocaine gel) เข้าท่อปัสสาวะโดยตรง** — ไม่ใช่แค่ทาที่สาย
+2. **จับองคชาตตั้ง 90° และให้ผู้ป่วยเบ่ง** (เหมือนจะปัสสาวะ) — ลบโค้ง prepubic และให้ external sphincter คลาย
+3. **เปลี่ยนขนาด — เล็กลงถ้าเป็น stricture · ใหญ่ขึ้นถ้าเป็น BPH**
+4. **ใช้ปลาย Tiemann (coudé)** — ปลายงอชี้ 12 นาฬิกาเลี้ยวข้าม prostate/bladder neck ที่ยกสูง
+
+#### ทำไม BPH ต้อง "ใหญ่ขึ้น" แต่ stricture ต้อง "เล็กลง"
+| ปัญหา | สิ่งที่ขวาง | สายแบบไหนผ่าน |
+|---|---|---|
+| **BPH** | ท่อไม่ได้แคบเป็นวง แต่ **ยาวและคดเคี้ยว** prostate สองข้างเบียดและคอกระเพาะยกสูง | สาย **ใหญ่/แข็ง** ไม่งอขดในท่อ · ปลาย **coudé** เลี้ยวขึ้นข้ามติ่ง |
+| **Stricture** | **วงแผลเป็นที่แคบ** (มักที่ bulbar — เคย UTI/STI ใส่สาย/ส่องกล้อง/อุบัติเหตุ) | สาย **เล็ก** ลอดผ่านช่องแคบ · ติดตั้งแต่ส่วนต้น (penile/bulbar) |
+
+[[fig:trouble]]
+
+**ห้ามดันแรง** — แรงที่ใช้ต้องเท่ากับที่ใช้ตอนผ่านปกติ · สัญญาณว่าเข้าผิดทาง: เลือดออกจาก meatus · ผู้ป่วยปวดมาก · สายเข้าไปลึกแต่ไม่มีปัสสาวะ → หยุด **ห้ามเติมบอลลูน** ปรึกษา urology · ถ้ากระเพาะโป่งและระบายด่วน = **suprapubic catheter**
+
+### ใส่ไม่เข้า — ผู้หญิง
+หารูไม่เจอในผู้สูงอายุ/อ้วน (สไลด์มีภาพหญิงอ้วนมาก): **สอดนิ้วเข้าช่องคลอด แล้วใส่สายเหนือนิ้ว** · จัดท่า/ให้ผู้ช่วยแยกขา ใช้ไฟส่องให้ดี
+
+### ใส่แล้ว "ไม่มีปัสสาวะ"
+| สาเหตุ | ตรวจ/แก้ |
+|---|---|
+| **หญิง: สายเข้าช่องคลอด** | ทิ้งสายไว้เป็นจุดสังเกต ใช้สายปลอดเชื้อเส้นใหม่ใส่ด้านบน (สายเดิมปนเปื้อน ห้ามดึงมาใส่ท่อปัสสาวะ) |
+| **ชาย: ยังไม่ถึงกระเพาะ** — สายขดใน bulbar/ติด prostate | ดันต่อจนถึง bifurcation · ถ้าดันไม่ได้ ห้ามเติมบอลลูน |
+| **gel อุดรูรับปัสสาวะ** | กดท้องน้อยเบา ๆ · ฉีด sterile saline 20–30 mL ผ่านสายแล้วดูว่าไหลกลับ |
+| **กระเพาะว่างจริง** (เพิ่งปัสสาวะ หรือไตไม่สร้างปัสสาวะ) | **bladder scan ก่อนใส่** ช่วยตัดได้ · ถ้า oliguria → คิดถึง pre-renal/AKI ไม่ใช่ปัญหาสาย |
+| **สาย/ท่อพับ** | ตรวจตลอดแนวจนถึงถุง |
+""",
+    ["ใส่ไม่เข้า: gel เข้าท่อ → 90° + เบ่ง → เปลี่ยนขนาด → Tiemann",
+     "Stricture → สายเล็ก · BPH → สายใหญ่/coudé (สายนิ่มเล็กจะขด)",
+     "เลือดออก ปวดมาก ไม่มีปัสสาวะ = เข้าผิดทาง → หยุด ห้ามเติมบอลลูน",
+     "หญิงหารูไม่เจอ → นิ้วในช่องคลอด สายเหนือนิ้ว · สายเข้าช่องคลอด → ทิ้งไว้ ใช้สายใหม่",
+     "ไม่มีปัสสาวะ: ตำแหน่งสาย · gel อุด · กระเพาะว่าง · สายพับ"],
+    [mcq(N(20), "A 79-year-old man with BPH (prostate ~80 mL) is in acute urinary retention. A 14 Fr straight Foley catheter passes 16 cm and then stops; a second attempt with more lidocaine gel and the penis held at 90° also fails. There is no blood at the meatus. What is the most appropriate next step?",
+         ["Try a 10 Fr straight catheter because it is easier to pass", "Push more firmly with the 14 Fr catheter while rotating it",
+          "Use a 16–18 Fr coudé (Tiemann) catheter with the tip pointing at 12 o'clock", "Inflate the balloon where it stops to anchor it and drain",
+          "Make repeated attempts with the same catheter until it passes"], 2,
+         "ติดที่ระดับ prostate ใน BPH → สไลด์: **ใช้สายใหญ่ขึ้นใน BPH** และ **ปลาย Tiemann** · Campbell: สงสัย prostate อุด → **18 Fr coudé** — สายใหญ่แข็งไม่ขด ปลายงอ **ชี้ 12 นาฬิกา** เลี้ยวขึ้นข้ามติ่ง prostate/คอกระเพาะที่ยกสูง\n\n"
+         "- **สาย 10 Fr** — นิ่มกว่า ยิ่งขดในท่อที่คด (สายเล็กใช้กับ stricture)\n- **ดันแรง/หมุน** — สาเหตุของ false passage\n"
+         "- **เติมบอลลูนตรงที่ติด** — บอลลูนพองใน prostatic urethra → ฉีก เลือดออก\n- **ลองซ้ำ ๆ แบบเดิม** — เพิ่มการบาดเจ็บ ถ้าไม่สำเร็จต้องปรึกษา urology",
+         "BPH ใส่ไม่เข้า → 16–18 Fr coudé ชี้ 12 นาฬิกา", "Difficult catheterization in BPH", R("Difficult to insert · Tiemann/Coudé catheter", "Campbell-Walsh-Wein Urology 12th ed"), [BPH, AUR, DEVICE]),
+     mcq(N(21), "While catheterizing an obese 72-year-old woman, you cannot see the urethral meatus clearly. The catheter enters the vagina and no urine drains. What should you do?",
+         ["Withdraw the catheter, wipe it with antiseptic and reinsert it higher", "Inflate the balloon in the vagina to keep the catheter in place as a drain",
+          "Leave the catheter in the vagina as a landmark and insert a new sterile catheter just above it, using a finger in the vagina to guide if needed",
+          "Abandon the procedure and insert a suprapubic catheter immediately", "Insert the same catheter into the anus to check the anatomy"], 2,
+         "สายที่เข้าช่องคลอด **ปนเปื้อนแล้ว** ใช้ต่อไม่ได้ · ทิ้งไว้เป็น **จุดสังเกต** (ปิดช่องคลอดไว้ด้วย) แล้วใส่ **สายปลอดเชื้อเส้นใหม่ด้านบน** · สไลด์: ผู้หญิงหารูไม่เจอ → **สอดนิ้วเข้าช่องคลอด แล้วใส่สายเหนือนิ้ว** — รูเปิดในผู้สูงอายุ/อ้วนมักหลบที่ผนังบนของช่องคลอด\n\n"
+         "- **เช็ดแล้วใส่ใหม่** — นำเชื้อช่องคลอดเข้ากระเพาะ\n- **เติมบอลลูนในช่องคลอด** — ไม่ได้ระบายกระเพาะ\n"
+         "- **Suprapubic ทันที** — รุกล้ำเกินจำเป็น ยังมีเทคนิคให้ลอง\n- **ใส่ทวารหนัก** — ไม่มีเหตุผล",
+         "สายเข้าช่องคลอด → ทิ้งไว้เป็นจุดสังเกต ใช้สายใหม่ใส่ด้านบน", "Difficult female catheterization", R("Difficult to insert (female)"), [ANAT, DEVICE])],
+    [BPH, AUR, ANAT, DEVICE, HARM, OLIG], {"trouble": F.trouble()},
+    source=SRC + " (Difficult to insert · Campbell-Walsh-Wein flowchart)")
+
+# ═════════════════════════════════════════════ 10
+sec("nephro-cath-10", "Troubleshooting 2 — ปัญหาหลังใส่สาย",
+    "CRBD 25% · hematuria (ห้าม antifibrinolytic) · รั่วรอบสาย · บอลลูนไม่แฟบ · สายหลุด · paraphimosis · urethral trauma/stricture (BAUS-BAUN 2021)", 10,
+"""### ปวดหลังใส่สาย — Catheter-related bladder discomfort (CRBD) (สไลด์: ~25%)
+**กลไก**: ปลายสายและบอลลูนระคาย **trigone/คอกระเพาะ** → กระตุ้น muscarinic receptor → detrusor บีบตัวเองเป็นพัก ๆ → ปวดแสบท้องน้อย ปวดอยากปัสสาวะทั้งที่มีสาย ปัสสาวะรั่วรอบสาย · เสี่ยงมากขึ้นเมื่อ **สายใหญ่ บอลลูนเติมเกิน** และผู้ชาย
+| ขั้นตอนในสไลด์ | เหตุผล |
+|---|---|
+| **ตัดสาเหตุร้ายแรงก่อน** — CA-UTI, บาดเจ็บ, นิ่ว, ตะกอน | อาการเดียวกันแต่รักษาต่างกัน |
+| **แก้ท้องผูก** | อุจจาระอัดกดกระเพาะ/สาย → spasm และระบายไม่ดี |
+| **ถอดสายถ้าไม่จำเป็น** | สาเหตุคือสาย — ถอดแล้วหาย |
+| ยา **anticholinergic** (oxybutynin, tolterodine) · **intravesical botulinum toxin** | ยับยั้ง muscarinic/การหลั่ง acetylcholine → detrusor ไม่บีบ |
+
+### เลือดออกหลังใส่สาย (สไลด์ Hematuria after Catheterization!!)
+- **ส่วนใหญ่หายเอง** (เยื่อบุถลอก หรือ decompression hematuria — หัวข้อ 11)
+- เริ่มด้วย **ล้างกระเพาะผ่าน 3-way catheter** · ถ้าไม่หยุดหรือรุนแรง → **ปรึกษา urology**
+- ❗ **ห้ามใช้ยา antifibrinolytic** (เช่น tranexamic acid) — ✍️ "เกิด clot ก้อนใหญ่ → อุดตัน!!" ปกติปัสสาวะมี urokinase ที่ละลายลิ่มเลือด · ยาต้านการละลายลิ่มทำให้ลิ่มแข็งเป็นก้อนใหญ่ → **clot retention** อุดสาย/คอกระเพาะ (และอุดท่อไตได้ถ้าเลือดมาจากไต)
+
+### ปัญหาอื่น (สไลด์ Miscellaneous Problems — BAUS-BAUN 2021)
+| ปัญหา | สาเหตุ (กลไก) | ทำอย่างไร |
+|---|---|---|
+| **ปัสสาวะรั่วรอบสาย (bypassing)** ✍️ วงไว้ | ทางระบายอุด (ตะกอน encrustation รูรับปัสสาวะถูกเยื่อบุดูดปิด) · เยื่อบุบวม · **bladder spasm/detrusor overactivity** | ตรวจสายพับ/อุด · ถุงต่ำกว่ากระเพาะ · anticholinergic/mirabegron/botox · **บอลลูนเติมตามที่กำหนด (no more, no less)** — **อย่าเปลี่ยนเป็นสายหรือบอลลูนที่ใหญ่ขึ้น** (ยิ่งระคาย ยิ่งบีบ ยิ่งรั่ว) |
+| **ระบายไม่ดี** | ท่อพับ · ลิ่มเลือด/ตะกอนอุด · สายผิดตำแหน่ง · เยื่อบุถูกดูดปิดรู | ให้ไหลสะดวก · ล้าง · **ยกถุงสูงกว่ากระเพาะชั่วครู่ (หนีบสายก่อน) ช่วยปลดแรงดูด** · ดื่มน้ำ แก้ท้องผูก |
+| **สายหลุด (expulsion)** | เติมบอลลูนไม่ถูก · บอลลูนแฟบ · คอกระเพาะหลวม (หญิง/โรคประสาท) | ตรวจปริมาตรน้ำในบอลลูน · **สายหรือบอลลูนใหญ่ขึ้นไม่แนะนำ** · หลุดบ่อย → พิจารณา SPC |
+| **บอลลูนไม่แฟบ** | วาล์วเสีย · ทางเติมอุด (เช่น ผลึกจาก NSS) | ต่อ syringe แล้ว **รอให้ไหลออกเอง** (ไม่ดูดแรง — ทางเติมแฟบปิด) · ลองฉีด sterile water/อากาศ **2 mL** เข้าไปดันสิ่งอุด · ใช้เข็มดูดจากแขนเติมบอลลูน · ให้ผู้ป่วยเดิน · สุดท้าย urology เจาะบอลลูนนำด้วย ultrasound |
+| **UTI ระหว่างใส่ / ผ่านระบบระบาย** | เทคนิคไม่ปลอดเชื้อ · ถอดข้อต่อ · ล้างมือไม่พอ | เทคนิค/ถุง/ล้างมือ (หัวข้อ 8) |
+| **CAUTI ซ้ำ** | เชื้อเกาะสายหลัง 4 สัปดาห์แทบทุกราย · นิ่ว/ตะกอน | **ไม่ dipstick ปัสสาวะจากสาย** · ยาป้องกันมักไม่ได้ผล · US/cystoscopy หานิ่ว ล้างตะกอน |
+| **Urethral mucosa trauma / false passage** | ขนาดหรือตำแหน่งผิด เทคนิคไม่ดี | ใส่ใหม่ด้วยขนาดที่ถูก · ไม่ระบาย → ถอดสาย อาจต้อง cystoscopy · ระยะยาว → **stricture** |
+| **Urethral erosion (catheter hypospadias)** | แรงกดเรื้อรัง | ยึดสายถูกทิศ ดูแลความสะอาด · พิจารณา **SPC** |
+| **Paraphimosis** | **ไม่รูดหนังหุ้มกลับ** | รูดหนังหุ้มกลับทุกครั้ง + ทำความสะอาดประจำวัน |
+| เปลี่ยนสายยาก | ปวด encrustation stricture false passage | SPC · Tiemann สำหรับ prostate โต · เปลี่ยนผ่าน guidewire |
+
+### Paraphimosis — ทำไมถึงเป็นภาวะฉุกเฉิน
+[[fig:paraphimosis]]
+""",
+    ["CRBD (~25%): ตัดสาเหตุร้าย → แก้ท้องผูก → ถอดสาย → anticholinergic/botox",
+     "Hematuria หลังใส่: ส่วนใหญ่หายเอง · ล้างผ่าน 3-way · ห้าม tranexamic acid (clot retention)",
+     "รั่วรอบสาย/สายหลุด: อย่าเปลี่ยนเป็นสายหรือบอลลูนที่ใหญ่ขึ้น",
+     "บอลลูนไม่แฟบ: ต่อ syringe รอให้ไหลออกเอง → เติม 2 mL ดันสิ่งอุด → เข็มดูดจากแขน → urology",
+     "Paraphimosis = ลืมรูดหนังหุ้มกลับ → วงรัด → บวม → ขาดเลือด"],
+    [mcq(N(22), "A 66-year-old man has persistent blood-stained urine with small clots 6 hours after a traumatic catheterization. He is haemodynamically stable and the catheter is draining. Which management should be avoided?",
+         ["Exchange to a 3-way catheter and start bladder irrigation", "Ensure free drainage and encourage oral fluids",
+          "Give systemic tranexamic acid to stop the bleeding", "Monitor haemoglobin and clot passage", "Consult urology if bleeding persists or is severe"], 2,
+         "สไลด์: hematuria หลังใส่สายมักหายเอง → ล้างกระเพาะผ่าน **3-way** · ปรึกษา urology ถ้าไม่หยุด · ❗ **NOT USE ANTIFIBRINOLYTIC THERAPY** — ✍️ \"เกิด clot ก้อนใหญ่ → อุดตัน!!\" ปัสสาวะปกติมี urokinase ละลายลิ่มเลือดอยู่ · tranexamic acid ยับยั้งการละลาย → ลิ่มเลือดแข็งเป็นก้อนใหญ่ในกระเพาะ → **clot retention** อุดสายและคอกระเพาะ\n\n"
+         "- **3-way irrigation · ระบายสะดวก/ดื่มน้ำ · ติดตาม Hb · ปรึกษาเมื่อไม่หยุด** — ทั้งหมดเป็นการดูแลที่ถูกต้อง",
+         "เลือดออกจากทางเดินปัสสาวะล่าง: ห้าม antifibrinolytic", "Haematuria after catheterization", R("Hematuria after catheterization"), [HEMAT, HARM]),
+     mcq(N(23), "An 80-year-old uncircumcised man with delirium had a urinary catheter inserted in the emergency department. The next morning the glans is swollen, purple and tender, with a tight band of oedematous foreskin proximal to it. What caused this and what is the immediate management?",
+         ["Latex allergy; remove the catheter and give antihistamines",
+          "Retracted foreskin left behind the glans formed a constricting ring that obstructed venous and lymphatic return; reduce it manually after analgesia and compression, with urology help if this fails",
+          "Fournier's gangrene; start broad-spectrum antibiotics and plan surgical debridement",
+          "Balloon inflated in the penile urethra; deflate the balloon",
+          "Contact dermatitis from povidone-iodine; apply topical steroid"], 1,
+         "ภาพคือ **paraphimosis** — ผู้ใส่ลืม **รูดหนังหุ้มกลับ** หลังใส่สาย หนังหุ้มที่ร่นค้างเป็น **วงรัดหลัง glans** → เลือดดำและน้ำเหลืองไหลกลับไม่ได้ → glans บวม → วงยิ่งรัด → สุดท้ายเลือดแดงเข้าไม่ได้ → **เนื้อตาย** (BAUS-BAUN ในสไลด์: failure to replace foreskin) · รักษาทันที: ยาชา/บีบไล่บวม (ประคบเย็น พันบีบ) แล้วดันกลับ · ไม่สำเร็จ → urology (dorsal slit) · ป้องกัน: รูดกลับทุกครั้ง\n\n"
+         "- **แพ้ latex / ผื่นจาก povidone-iodine** — ไม่ทำให้เกิดวงรัดที่ชัดเจนแบบนี้\n- **Fournier's gangrene** — เนื้อตายเน่าที่ฝีเย็บ/ถุงอัณฑะ ไข้ ผิวดำ crepitus\n"
+         "- **บอลลูนพองใน penile urethra** — จะปวดตอนเติมทันที ไม่ใช่วงรัดที่หนังหุ้ม",
+         "ใส่สายในชายไม่ขลิบ → รูดหนังหุ้มกลับเสมอ", "Paraphimosis after catheterization", R("Miscellaneous problems (1)", "BAUS-BAUN 2021"), [PARA, HARM])],
+    [HEMAT, HARM, PARA, OAB_D, CONST, DEVICE, BIOFILM], {"paraphimosis": F.paraphimosis()},
+    source=SRC + " (Painful · Hematuria · Miscellaneous problems — BAUS-BAUN 2021)")
+
+# ═════════════════════════════════════════════ 11
+sec("nephro-cath-11", "หลังระบายกระเพาะที่คั่งมาก — post-obstructive diuresis และเลือดออก",
+    "นิยาม · กลไก physiologic vs pathologic · ใครเสี่ยง · การดูแลน้ำและเกลือแร่ · decompression hematuria · ไม่ต้อง clamp", 8,
+"""(หัวข้อนี้ไม่อยู่ในสไลด์ — สไลด์ระบุ "bladder decompression" เป็นข้อบ่งชี้ และ hematuria หลังใส่สาย · กลไกและการดูแลอิงตำรา urology/nephrology)
+
+### Post-obstructive diuresis (POD)
+**นิยามที่ใช้บ่อย**: ปัสสาวะ **> 200 mL/ชม. ติดต่อกัน 2 ชม.** หรือ **> 3 L ใน 24 ชม.** หลังปลดการอุดกั้น
+[[fig:pod]]
+#### ทำไมถึงมีอาการนี้
+| สิ่งที่เห็น | กลไก | ความหมาย |
+|---|---|---|
+| **ปัสสาวะมากหลังใส่สาย** (ช่วงแรก) | ขับ urea เกลือ และน้ำที่คั่งระหว่างอุด → **osmotic/solute diuresis** | **physiologic** — เหมาะสม หยุดเองเมื่อของที่คั่งหมด (มัก 24–48 ชม.) |
+| **ปัสสาวะยังมากแม้ร่างกายเริ่มขาดน้ำ** | ท่อไตเสียจากแรงดัน: medulla ถูกชะล้าง · **aquaporin-2 ↓** (ไตตอบ ADH ไม่ได้ = nephrogenic DI ชั่วคราว) · ตัวขนส่ง Na ↓ | **pathologic** — อันตราย |
+| **ความดันต่ำ ชีพจรเร็ว** | เสียน้ำเกินที่รับเข้า | hypovolemia |
+| **Na ต่ำหรือสูง · K ต่ำ · Mg ต่ำ** | เสีย Na และ K ในปัสสาวะ · ถ้าชดเชยด้วยน้ำเปล่า/สารน้ำผิดชนิด → Na เพี้ยน | ตรวจ electrolytes บ่อย |
+
+**ใครเสี่ยง**: chronic retention (คั่งนาน ปริมาณมาก) · **Cr สูง/AKI** · บวมหรือน้ำเกิน หัวใจวาย · สับสน (ดื่มน้ำเองไม่ได้) · bicarbonate สูง/ BUN สูง
+
+### การดูแล
+| ทำ | เหตุผล |
+|---|---|
+| วัดปัสสาวะ **ทุกชั่วโมง** · สัญญาณชีพ · น้ำหนัก | จับ pathologic POD ได้เร็ว |
+| electrolytes (Na K Mg) และ Cr **ทุก 6–12 ชม.** ในรายเสี่ยง | เกลือแร่เปลี่ยนเร็ว |
+| ผู้ป่วยรู้ตัวดี สัญญาณชีพคงที่ → **ให้ดื่มตามกระหาย** | ร่างกายควบคุมเองได้ |
+| มีอาการขาดน้ำ → IV ทดแทน **บางส่วน (~½–¾ ของปัสสาวะชั่วโมงก่อน)** มักใช้ 0.45% NaCl ปรับตาม Na | ทดแทน **มิลลิลิตรต่อมิลลิลิตร** จะไล่ตามจน physiologic diuresis ไม่หยุด |
+
+### เลือดออกและความดันต่ำหลังระบาย — ต้อง clamp ไหม
+- **Decompression hematuria**: กระเพาะที่ยืดมาก หลอดเลือดในผนังถูกยืดและกด → เมื่อแฟบลงทันที ความดันรอบหลอดเลือดลด หลอดเลือดเปราะแตก → ปัสสาวะมีเลือด — **พบบ่อยแต่ส่วนใหญ่น้อยและหายเอง**
+- **ความดันต่ำชั่วคราว**: vasovagal + การกดหลอดเลือดดำในเชิงกรานหายไป
+- ความเชื่อเดิมให้ **ระบายทีละ 500 mL แล้ว clamp** — การทบทวนวรรณกรรม (Nyman et al., Mayo Clin Proc 2010) **ไม่พบว่าการระบายช้า ๆ ลดภาวะแทรกซ้อน** → ระบายให้หมดได้ แล้วเฝ้าระวัง (CDC 2009 ก็ระบุว่าไม่ต้อง clamp ก่อนถอด)
+""",
+    ["POD: > 200 mL/ชม. 2 ชม.ติด หรือ > 3 L/24 ชม.",
+     "Physiologic (ขับของที่คั่ง หยุดเอง) vs pathologic (AQP2 ↓ medulla ถูกชะล้าง ท่อไตเก็บ Na ไม่ได้)",
+     "เสี่ยง: chronic retention + Cr สูง + น้ำเกิน/สับสน",
+     "ทดแทน ~½–¾ ของปัสสาวะเมื่อขาดน้ำ — ไม่ใช่มิลลิลิตรต่อมิลลิลิตร",
+     "ระบายหมดได้ ไม่ต้อง clamp · decompression hematuria มักหายเอง"],
+    [mcq(N(24), "A 72-year-old man with chronic urinary retention from BPH has 2.4 L drained after catheterization. Creatinine is 3.4 mg/dL (baseline 1.1). Over the next 4 hours his urine output is 450–500 mL/h; BP falls from 150/90 to 104/62 mmHg and serum sodium rises from 138 to 147 mmol/L. Which statement best explains and manages this?",
+         ["Physiologic diuresis only; restrict fluids because the kidneys are excreting excess volume",
+          "Pathologic post-obstructive diuresis from impaired tubular concentrating ability (reduced aquaporin-2, medullary washout); replace part of the hourly output (about one-half to three-quarters) with hypotonic saline and monitor electrolytes closely",
+          "Central diabetes insipidus; give desmopressin",
+          "Bladder rupture; obtain a cystogram",
+          "Diuresis caused by the lidocaine gel; observe only"], 1,
+         "หลังปลดการอุดเรื้อรัง (Cr สูง) ปัสสาวะ 450–500 mL/ชม. = **post-obstructive diuresis** · ความดันลดและ Na สูงขึ้น = เสียน้ำมากกว่าเกลือ ร่างกายเริ่มขาดน้ำแต่ยังปัสสาวะต่อ → **pathologic** จากท่อไตเสีย: medulla ถูกชะล้าง **aquaporin-2 ลดลง** (ตอบ ADH ไม่ได้ ~ nephrogenic DI) และเก็บ Na ไม่ได้ · ดูแล: ทดแทนด้วยสารน้ำ hypotonic (เช่น 0.45% NaCl) **บางส่วน ~½–¾ ของปัสสาวะ** วัดทุกชั่วโมง ตรวจ Na K Mg บ่อย\n\n"
+         "- **จำกัดน้ำ** — ผู้ป่วยกำลังขาดน้ำ (BP ↓ Na ↑) จะยิ่ง shock\n- **Central DI / desmopressin** — ปัญหาอยู่ที่ไตตอบ ADH ไม่ได้ desmopressin ไม่ช่วย\n"
+         "- **กระเพาะแตก** — จะไม่มีปัสสาวะออกมาก\n- **lidocaine gel** — ไม่ทำให้ปัสสาวะมาก",
+         "POD pathologic: ทดแทนบางส่วน + เฝ้า electrolytes", "Post-obstructive diuresis", ["ตำรา urology/nephrology (ไม่อยู่ในสไลด์)"], [POLY, LYTE, LYTE_B, OBST, AKI, OLIG_B])],
+    [POLY, LYTE, LYTE_B, OBST, AKI, AKI_B, OLIG_B, HEMAT, RET], {"pod": F.pod()},
+    source="ตำรา urology/nephrology · Nyman et al. Mayo Clin Proc 2010 (ไม่อยู่ในสไลด์)")
+
 # ── END SECTIONS
+
+
+# ═════════════════════════════════════════════ ประกอบคาบ
+LECNAME = "Urethral catheterization (อ.ธนิศร)"
+MEQ = [{"id": "NEPH-CATH-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Acute urinary retention in BPH — catheter choice, difficult insertion, post-obstructive diuresis and CAUTI",
+ "vignette": """ผู้ป่วยชายไทยอายุ 78 ปี มาห้องฉุกเฉินด้วยปัสสาวะไม่ออก 14 ชั่วโมง
+PI: 3 วันก่อนเป็นหวัด ซื้อยาแก้หวัดที่มี pseudoephedrine + chlorpheniramine มากิน · 1 ปีที่ผ่านมาปัสสาวะลำบาก ต้องเบ่ง ลำปัสสาวะอ่อน ตื่นมาปัสสาวะกลางคืน 3–4 ครั้ง · วันนี้ปวดท้องน้อยมาก กระสับกระส่าย มีปัสสาวะเล็ดเป็นหยดตลอด
+PH: ความดันโลหิตสูง · ไม่เคยผ่าตัดทางเดินปัสสาวะ · ไม่มีประวัติอุบัติเหตุ
+PE: BT 37.2 °C, BP 178/98 mmHg, PR 112/min · ก้อนเคาะทึบเหนือหัวหน่าวถึงกึ่งกลางสะดือ กดเจ็บ · ไม่มีเลือดที่ meatus · DRE: prostate โต เรียบ ยืดหยุ่น ไม่กดเจ็บ
+Lab: Cr 2.9 mg/dL (6 เดือนก่อน 1.2) · Na 137 · K 5.1 mmol/L · bladder scan > 999 mL""",
+ "questions": [
+  {"q": "1. จงให้การวินิจฉัย บอกปัจจัยกระตุ้น และอธิบายกลไกของ (ก) ความดัน/ชีพจรสูงและกระสับกระส่าย (ข) ปัสสาวะเล็ดเป็นหยด (ค) Cr สูง (4 คะแนน)",
+   "a": """**การวินิจฉัย**: acute (on chronic) urinary retention จาก **BPH** + **post-renal AKI** · **ตัวกระตุ้น** = ยาแก้หวัด: pseudoephedrine (**α1-agonist** → กล้ามเนื้อเรียบที่คอกระเพาะ/prostate หดตัว) + chlorpheniramine (**anticholinergic** → detrusor บีบอ่อน)
+(ก) กระเพาะยืด → ปวด (S2–4) → **sympathetic** → BP/HR สูง กระสับกระส่าย — ระบายแล้วลงเอง ไม่ต้องรีบให้ยาลดความดัน
+(ข) **overflow incontinence** — ความดันในกระเพาะที่ยืดเต็มที่ชนะแรงต้านทางออก ล้นออกทีละน้อย ไม่ได้แปลว่าปัสสาวะได้
+(ค) ความดันย้อนขึ้นท่อไตทั้งสองข้าง → ความดันใน Bowman's space สูง → GFR ↓ = **post-renal AKI**"""},
+  {"q": "2. ก่อนใส่สาย ต้องตรวจ/ถามอะไรเพื่อดูข้อห้าม และจะเลือกสายชนิด ขนาด วัสดุอะไร พร้อมเหตุผล (3 คะแนน)",
+   "a": """**ข้อห้าม/ข้อควรระวัง**: เลือดที่ meatus · อุบัติเหตุ/pelvic fracture · prostate ยกสูงหรือกดเจ็บมาก (prostatitis) · ประวัติ stricture/ผ่าตัด/ส่องกล้อง · **แพ้ latex/lidocaine** — ผู้ป่วยรายนี้ไม่มีข้อห้าม
+**สาย**: Foley **2-way** (ต้องค้างไว้ระบายและวัดปัสสาวะเพราะมี AKI และเสี่ยง POD) · ขนาด **14–16 Fr** (ปัสสาวะใส; สไลด์: BPH อาจใช้ใหญ่ขึ้นเพราะแข็งไม่ขด) · วัสดุ: latex ได้ถ้าใช้ < 14 วันและไม่แพ้ ถ้าคาดว่าค้างนานหรือแพ้ → **silicone**
+**ระบบปิด**: ต่อถุงไว้ก่อน · lidocaine gel · sterile water สำหรับบอลลูน"""},
+  {"q": "3. สาย 14 Fr ผ่านไปราว 17 ซม. แล้วติด ลองซ้ำพร้อมฉีด gel เพิ่มและจับองคชาต 90° ยังไม่ผ่าน จะทำอย่างไรต่อ และสิ่งใดที่ห้ามทำ (3 คะแนน)",
+   "a": """**ทำต่อ**: ระดับ prostate ใน BPH → **16–18 Fr coudé/Tiemann ปลายชี้ 12 นาฬิกา** (Campbell: prostatic obstruction suspected → 18 Fr coudé) · ไม่สำเร็จ → **ปรึกษา urology** (cystoscopy/guidewire/Council-tip) · กระเพาะโป่งต้องระบายด่วนแต่ใส่ไม่ได้ → **suprapubic catheter**
+**ห้าม**: ดันแรง (false passage) · **เติมบอลลูนตรงที่ติด** (บอลลูนพองใน prostatic urethra) · ลดเป็นสายเล็กนิ่ม (ขดใน prostate — สายเล็กใช้กับ stricture) · ลองซ้ำหลายครั้งโดยไม่เปลี่ยนวิธี"""},
+  {"q": "4. ใส่ coudé 18 Fr สำเร็จ ระบายได้ 1,600 mL · 4 ชั่วโมงต่อมา ปัสสาวะ 400–450 mL/ชม. BP 108/64 mmHg ชีพจร 104/min Na 146 K 3.2 mmol/L — เกิดอะไรขึ้น อธิบายกลไกและการดูแล (4 คะแนน)",
+   "a": """**Post-obstructive diuresis** (> 200 mL/ชม. 2 ชม.ติด) ชนิด **pathologic** — BP ลด ชีพจรเร็ว Na สูง K ต่ำ = เสียน้ำและ K เกิน
+**กลไก**: ระหว่างอุด urea/เกลือ/น้ำคั่ง (ส่วน physiologic) + ท่อไตเสียจากแรงดัน: medulla ถูกชะล้าง **aquaporin-2 ↓** (ตอบ ADH ไม่ได้) ตัวขนส่ง Na ↓ → ปัสสาวะออกต่อแม้ร่างกายขาดน้ำ
+**ดูแล**: วัดปัสสาวะทุกชั่วโมง สัญญาณชีพ · Na K Mg Cr ทุก 6–12 ชม. · ทดแทน IV **บางส่วน (~½–¾ ของปัสสาวะชั่วโมงก่อน)** ด้วยสารน้ำ hypotonic เช่น 0.45% NaCl + KCl · ให้ดื่มเองถ้ารู้ตัวดี · ไม่ทดแทนมิลลิลิตรต่อมิลลิลิตร (ไล่ตามจนไม่หยุด) · ปัสสาวะมีเลือดเล็กน้อยหลังระบาย = decompression hematuria มักหายเอง (ไม่จำเป็นต้อง clamp)"""},
+  {"q": "5. วันที่ 9 ของการค้างสาย ผู้ป่วยมีไข้ 38.7 °C หนาวสั่น สับสน ปัสสาวะในถุงขุ่น ไม่พบแหล่งติดเชื้ออื่น — จงให้การวินิจฉัย บอกการเก็บสิ่งส่งตรวจ การรักษา และแผนป้องกัน/ถอดสาย (4 คะแนน)",
+   "a": """**CAUTI** (IDSA 2009: อาการเข้าได้ ไม่มีแหล่งอื่น + เพาะเชื้อ ≥ 10³ CFU/mL) — ไข้/สับสนเป็นอาการเด่นเพราะสายระบายตลอดจึงไม่มีแสบขัด
+**สิ่งส่งตรวจ**: urine culture จาก **sampling port** ด้วยเทคนิคปลอดเชื้อ (ไม่ใช่จากถุง) **ก่อนให้ยา** + hemoculture · สายค้างยังไม่ถึง 2 สัปดาห์ (9 วัน) — ถ้าสายอุด/มีตะกอนก็เปลี่ยนและเก็บจากสายใหม่ (สายเก่ามี **biofilm**)
+**รักษา**: ยาปฏิชีวนะครอบคลุม gram-negative ตามข้อมูลเชื้อดื้อยาของโรงพยาบาล แล้วปรับตามผลเพาะเชื้อ · **7 วัน** ถ้าตอบสนองเร็ว **10–14 วัน** ถ้าช้า
+**ป้องกัน/ถอด**: ทบทวนความจำเป็นทุกวัน · alpha-blocker (tamsulosin) แล้วทำ **TWOC** · ไม่ผ่าน → IC หรือส่งผ่าตัด prostate แทนการค้างสายยาว · ระบบปิด ถุงต่ำกว่ากระเพาะ ไม่แตะพื้น · ไม่เปลี่ยนสายตามรอบ ไม่ให้ยาป้องกัน ไม่คัดกรอง ASB"""}],
+ "ref": ["สไลด์ อ.ธนิศร — Indication · Size · Difficult to insert · Tiemann · Campbell flowchart · Miscellaneous problems",
+         "CDC/HICPAC CAUTI 2009 · IDSA CA-UTI 2009 · EAU Non-neurogenic male LUTS"],
+ "nl": [AUR, AUR_B, BPH, BPH_D, AKI, POLY, LYTE, CYST, PYELO, DEVICE],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
+
+OSCE = [{"id": "NEPH-CATH-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Procedure station – Male urethral catheterization on a manikin",
+ "station": "หัตถการบนหุ่น 8 นาที (ผู้ป่วยสมมุติพูดแทนหุ่น)",
+ "instruction": """**สถานการณ์**: ชายอายุ 70 ปี มี acute urinary retention จาก BPH (bladder scan 900 mL) ไม่มีประวัติอุบัติเหตุ ไม่มีเลือดที่ meatus แพทย์ให้ใส่สายสวนปัสสาวะค้างไว้
+
+**งานของนักศึกษา**: (1) ขอความยินยอมจากผู้ป่วย (2) ใส่สายสวนปัสสาวะชนิดค้างไว้ในหุ่นผู้ชายด้วยเทคนิคปลอดเชื้อ (3) ยึดสายและจัดถุงให้ถูกต้อง (4) บอกผู้คุมสอบว่าจะบันทึกอะไรลงในเวชระเบียน
+
+อุปกรณ์บนโต๊ะ: ชุดสวนปลอดเชื้อ · Foley 2-way latex และ silicone ขนาด 12 14 16 Fr · coudé 18 Fr · 2% lidocaine gel · syringe 10 mL · sterile water และ NSS · ถุงปัสสาวะระบบปิด · ถุงมือปลอดเชื้อ · พลาสเตอร์/อุปกรณ์ยึดสาย""",
+ "answer": """**เกณฑ์ให้คะแนน (20 คะแนน)**
+
+| หมวด | สิ่งที่ต้องทำ | คะแนน |
+|---|---|---|
+| เตรียม | ยืนยันตัวผู้ป่วย ข้อบ่งชี้ และถามข้อห้าม (อุบัติเหตุ เลือดที่ meatus ผ่าตัด/stricture) | 1 |
+| เตรียม | อธิบายเหตุผล ขั้นตอน ความรู้สึกที่จะเกิด ความเสี่ยง (เจ็บ เลือดออก ติดเชื้อ) และขอความยินยอม · ถามแพ้ latex/lidocaine | 2 |
+| เตรียม | ความเป็นส่วนตัว/chaperone · ล้างมือ · จัดท่านอนหงาย | 1 |
+| เตรียม | เลือก **14–16 Fr 2-way** ที่ไม่แพ้ · **ต่อถุงระบบปิดไว้ก่อน** · เตรียม **sterile water** (ไม่ใช่ NSS) | 2 |
+| ปลอดเชื้อ | ใส่ถุงมือปลอดเชื้อโดยไม่ปนเปื้อน · ปูผ้า · แยกมือสะอาด/มือปลอดเชื้อ | 2 |
+| ปลอดเชื้อ | รูดหนังหุ้มลง ทำความสะอาด meatus จากรูออกด้านนอก | 1 |
+| ใส่สาย | ฉีด lidocaine gel เข้าท่อช้า ๆ บีบปลายไว้ **รอ 3–5 นาที** (บอกเหตุผล) | 2 |
+| ใส่สาย | จับองคชาต **ตั้งฉาก 90°** ดันด้วยแรงสม่ำเสมอ บอกผู้ป่วยหายใจลึก/เบ่งเมื่อผ่านหูรูด · ไม่ดันแรง | 2 |
+| ใส่สาย | ดัน **ถึง bifurcation** → เห็นปัสสาวะ → เติม sterile water ตามปริมาตรบนสาย สังเกตอาการปวด → ดึงกลับเบา ๆ จนติด | 2 |
+| จบ | **รูดหนังหุ้มกลับ** | 1 |
+| จบ | ยึดสายที่ **หน้าท้อง** · ถุง **ต่ำกว่ากระเพาะ ไม่แตะพื้น** · สายไม่พับ | 2 |
+| จบ | ทิ้งของ ล้างมือ · บอกการบันทึก: วันเวลา ข้อบ่งชี้ ขนาด/ชนิด ปริมาตรบอลลูน **ปริมาณปัสสาวะที่ระบาย** ลักษณะปัสสาวะ แผนถอดสาย/เฝ้าระวัง post-obstructive diuresis | 2 |
+
+**Critical errors (ไม่ผ่านสถานีทันที)**: ปลอดเชื้อหลุดแล้วไม่เปลี่ยนอุปกรณ์ · **เติมบอลลูนก่อนดันถึง bifurcation/ก่อนเห็นปัสสาวะ** · ดันฝืนเมื่อมีแรงต้านมาก · **ลืมรูดหนังหุ้มกลับ** · เติมบอลลูนด้วย NSS
+
+**คำถามต่อจากผู้คุมสอบ (ถ้ามีเวลา)**: "ถ้าใส่ 14 Fr ไม่ผ่านที่ระดับ prostate จะทำอย่างไร" → 16–18 Fr coudé ปลายชี้ 12 นาฬิกา ไม่ผ่าน → urology/suprapubic · "ถ้ามีเลือดที่ meatus" → ไม่ใส่ ทำ retrograde urethrogram""",
+ "ref": ["สไลด์ อ.ธนิศร — Size · Material · Fixation · Catheter care · Difficult to insert", "CDC/HICPAC CAUTI 2009 · EAUN 2024"],
+ "nl": [AUR, BPH, DEVICE, ANAT, PARA],
+ "years": [], "_kind": "meq", "_set": "nephro"}]
+
+LECTURE = {
+ "lec": LEC, "date": "พฤ. 22 ต.ค.",
+ "title": "Urethral catheterization",
+ "subtitle": "ชนิดของการสวน · ข้อบ่งชี้/ไม่บ่งชี้ (EAUN 2024 · CDC 2009) · acute urinary retention · กายวิภาคชาย vs หญิง · ข้อห้าม (urethral injury) · ขนาด/วัสดุ/coudé · ขั้นตอนพร้อมเหตุผล · CAUTI และ bundle ป้องกัน · ใส่ไม่เข้า · CRBD hematuria paraphimosis บอลลูนไม่แฟบ · post-obstructive diuresis",
+ "objectives": [
+   "เลือกวิธีระบายปัสสาวะที่รุกล้ำน้อยที่สุด (external · intermittent · indwelling · suprapubic) และบอกข้อบ่งชี้ที่เหมาะสม/ไม่เหมาะสมของสายค้าง",
+   "อธิบายกลไกของอาการใน acute urinary retention และสาเหตุจากยา",
+   "อธิบายกายวิภาคท่อปัสสาวะชายและหญิงที่ทำให้เทคนิคการใส่ต่างกัน และจุดที่สายมักติด",
+   "ตรวจหาสัญญาณของ urethral injury ก่อนใส่สาย และเลือกทางเลือก (retrograde urethrogram, suprapubic)",
+   "เลือกขนาด วัสดุ และชนิดของสายตามลักษณะปัสสาวะและปัญหาของผู้ป่วย",
+   "ใส่สายค้างในผู้ชายและผู้หญิงด้วยเทคนิคปลอดเชื้อ พร้อมบอกเหตุผลของทุกขั้นตอน",
+   "อธิบายกลไกการเกิด CAUTI และ biofilm วินิจฉัย/รักษาตาม IDSA 2009 และใช้ bundle ป้องกันตาม CDC 2009",
+   "แก้ปัญหาใส่ไม่เข้า ไม่มีปัสสาวะ ปวด เลือดออก รั่ว บอลลูนไม่แฟบ และป้องกัน paraphimosis",
+   "อธิบายและดูแล post-obstructive diuresis หลังระบายกระเพาะที่คั่งมาก"],
+ "nlGap": "เกณฑ์ฯ มีรหัสปัสสาวะคั่ง (`2.1.45` `2.2.29` `B9.2.3(1)`) BPH (`2.3.14(8)`) phimosis/paraphimosis (`2.3.14-3(11)`) cystitis/pyelonephritis (`2.3.14(7)` `2.3.14(14)`) biofilm (`B1.5.2(3)`) และอันตรายจากอุปกรณ์การแพทย์ (`2.3.19(5)`) แต่ **ไม่มีรหัสของหัตถการใส่สายสวนปัสสาวะ ไม่มี CAUTI และไม่มี post-obstructive diuresis โดยตรง** · handout ไม่มีหน้าขั้นตอนการใส่ทีละขั้น กายวิภาค urethral injury CAUTI และ post-obstructive diuresis — เนื้อหาส่วนนั้นอิงแนวทางด้านล่างและบอกไว้ในแต่ละหัวข้อ · สไลด์ไม่มีเฉลย 4 เคส (คำตอบในหัวข้อ 2 เป็นของผู้เขียนบทเรียน)",
+ "guidelines": [
+   "**2024 EAUN Guidelines for Urethral Intermittent Catheterisation in Adults** และ **2024 EAUN Guidelines for Indwelling Catheterisation in Adults** — ข้อบ่งชี้ ข้อห้าม ขนาด วัสดุ การยึด การดูแล (อาจารย์อ้างในสไลด์)",
+   "**2021 BAUS-BAUN Consensus on Management of the Complications of Long-term Indwelling Catheters** — ตาราง miscellaneous problems (อาจารย์อ้างในสไลด์)",
+   "**Campbell-Walsh-Wein Urology 12th ed (2021)** — flowchart ใส่สายไม่ผ่าน (อาจารย์อ้างในสไลด์)",
+   "**CDC/HICPAC Guideline for Prevention of Catheter-Associated Urinary Tract Infections 2009** — ข้อบ่งชี้ที่เหมาะสม/ไม่เหมาะสม และ bundle ป้องกัน",
+   "**IDSA International Clinical Practice Guidelines for Catheter-Associated UTI in Adults 2009** — นิยาม CAUTI การเก็บสิ่งส่งตรวจ การเปลี่ยนสาย ระยะเวลารักษา",
+   "**EAU Guidelines on Urological Trauma** และ **ATLS 10th ed** — urethral injury",
+   "**EAU Guidelines on Management of Non-neurogenic Male LUTS** — alpha-blocker ก่อน trial without catheter",
+   "**Nyman MA et al. Mayo Clin Proc 2010** — การระบายเร็ว vs ช้าในภาวะปัสสาวะคั่ง"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+# กระจายตำแหน่งคำตอบของข้อใหม่ (ทำก่อน publish ครั้งแรกเท่านั้น)
+ORDERED = set()
+_slot = 0
+for s in S:
+    for it in s["items"]:
+        if it["id"] in ORDERED or not it["id"].startswith("NEPH-CATH-MCQ"):
+            continue
+        tgt = [0, 2, 4, 1, 3][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+path = os.path.join(BUILD, "data", "nephro.json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LEC]
+data.append(LECTURE)
+
+seen = set()
+for l in data:
+    for x in [i for s in l["sections"] for i in s["items"]] + l["meq"] + l["osce"] + [{"id": s["id"]} for s in l["sections"]]:
+        assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+        seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+L = LECTURE
+codes = {c for s in L["sections"] for c in s["nl"]} | {c for s in L["sections"] for i in s["items"] for c in i["nl"]} | {c for m in L["meq"] + L["osce"] for c in m.get("nl", [])}
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+for s in L["sections"]:
+    assert "```" not in s["md"], s["id"]
+    for k in (s.get("figs") or {}):
+        assert "[[fig:%s]]" % k in s["md"], (s["id"], k)
+
+data.sort(key=lambda l: (0, int(l["lec"])) if l["lec"].isdigit() else (1, l["lec"]))
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == "nephro": m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+from collections import Counter
+newi = [i for s in L["sections"] for i in s["items"] if i["id"].startswith("NEPH-CATH")]
+print("sections %d | ข้อใหม่ %d | meq %d | osce %d | figs %d | nl %d" % (
+    len(S), len(newi), len(L["meq"]), len(L["osce"]), sum(len(s.get("figs") or {}) for s in S), len(codes)))
+print("answer positions (ข้อใหม่):", dict(sorted(Counter(i["answer"] for i in newi).items())))
+print("nephro.json มี %d คาบ: %s" % (len(data), [l["lec"] for l in data]))
