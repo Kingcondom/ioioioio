@@ -45,14 +45,16 @@ JOBS = [
     ('nephro.json', '22/10', 'nephro', 'CATH', 'NEPH-CATH-', 'cath', {'date': 'พฤ. 22 ต.ค.', 'week': 6, 'al': 0}),
     ('neuro.json', '9/10', 'neuro', 'LP', 'NEU-LP-', 'lp', {'date': 'ศ. 9 ต.ค.', 'week': 4, 'al': 0}),
     ('neuro.json', '21/10', 'neuro', 'ACS', 'NEU-ACS-', 'acs', {'date': 'พ. 21 ต.ค.', 'week': 6, 'al': 0}),
+    ('nephro.json', 'Physio1', 'nephro', 'PHY1', 'NEPH-PHY1-', 'phy1', {'date': 'พื้นฐานสรีรวิทยา I (ปรีคลินิก)', 'week': 0, 'al': 0}),
+    ('nephro.json', 'Physio2', 'nephro', 'PHY2', 'NEPH-PHY2-', 'phy2', {'date': 'พื้นฐานสรีรวิทยา II (ปรีคลินิก)', 'week': 0, 'al': 0}),
 ]
 # วันที่คาบที่ session Lecture Dashboard แก้ใน Drill (19 ต.ค.) — ใส่กลับลง config.lectures ทุกครั้ง
 LEC_FIX = {"07": {"date": "ศ. 18 ก.ย.", "week": 1}, "08": {"date": "ไม่ระบุวัน", "week": 1}, "23": {"date": "อ. 29 ก.ย.", "week": 3}, "33": {"date": "อ. 22 ก.ย.", "week": 2}, "D01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "D02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "E03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "G03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "H03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "I03": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}, "N02": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": ""}, "O01": {"date": "ข้อทั่วไปของระบบ · ไม่ผูกคาบ", "week": 0}}
 # ตำแหน่งคาบใหม่ใน lecture_order: แทรกหลังคาบนี้ (None = ขึ้นก่อน)
-AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04', 'THO': '17', 'CATH': 'IMG', 'LP': '07', 'ACS': 'LP'}
+AFTER = {'IMG': '28', 'H04': None, 'E05': 'E04', 'THO': '17', 'CATH': 'IMG', 'LP': '07', 'ACS': 'LP', 'PHY1': None, 'PHY2': 'PHY1'}
 BLURB = {
-    'nephro': '9 คาบบรรยาย · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น · '
-              'ข้อจากบทเรียน glomerular disease · UTI · renal imaging · urethral catheterization',
+    'nephro': '9 คาบบรรยาย + สรีรวิทยาไตพื้นฐาน 2 ชุด · 15.9% ของ lecture ทั้งหมด · ออกสอบหนักทุกรุ่น · '
+              'ข้อจากบทเรียน สรีรวิทยาไต I–II · glomerular disease · UTI · renal imaging · urethral catheterization',
     'chest': '7 คาบ · วัณโรค ABG เยื่อหุ้มปอด CXR/โรคจากการทำงาน และ pneumonia/asthma · วัณโรคนอกปอด (อ.ภานุวัฒน์) · '
              'Thoracentesis (active learning) · COPD ตาม GOLD 2026',
     'neuro': 'ชุดระบบประสาท — คาบ acute ischemic stroke (กลุ่มอาการตามหลอดเลือด · OCSP และ TOAST · หน้าต่างเวลาและยาละลายลิ่มเลือด) · '

@@ -68,7 +68,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 33** · มี **9 ชุดวิชา** · 35 คาบ · 655 ภาพ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 34** · มี **9 ชุดวิชา** · 37 คาบ · 703 ภาพ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
@@ -85,6 +85,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 > - **Version 30** (ก่อน 19 ต.ค. · session อื่น **publish โดยไม่ push**): เพิ่ม `section.anims` (ภาพเคลื่อนไหวกลไก `[[anim:key]]` เล่นทีละขั้น) และ `section.mnem` (กล่อง "หลักจำ") ให้คาบเดิมเกือบทุกคาบ + โค้ดใน index.html · **19 ต.ค. ดึงไฟล์จากเว็บเข้า repo แล้ว** (commit "Sync artifact with live learn") — สคริปต์ที่ใช้สร้าง anims/mnem ไม่อยู่ใน repo ถ้าต้องแก้ ให้แก้ข้อมูลใน data/*.json ตรง ๆ หรือหา branch ของ session นั้น
 > - **Version 31** (19 ต.ค.): cardio 36 Basic ECG (คาบใหม่) · ทับบน Version 30 โดยไม่แตะคาบอื่น
 > - **Version 33** (23 ต.ค.): คาบใหม่ chest **37 COPD (GOLD 2026)** · chest **Thoracentesis** (AL กลุ่ม 5) · nephro **22/10 Urethral catheterization** + เติมหัวข้อ/ข้อสอบจาก handout ใหม่ให้ neuro **9/10 LP** (+3 หัวข้อ) และ **21/10 ACS** (+4 หัวข้อ รวม delirium quiz) · แก้ตัวหนาที่ถูกตัดบรรทัดในคาบ 21/10 (check_lecture เหลือ 53 รายการ จาก 127) · ทับบน live 1792427940-73a8 (anims/mnem ของ session dashboard อยู่ครบ — ตรวจทุกหัวข้อก่อน publish)
+>   - **Version 34** (23 ต.ค.): nephro **Physio1 / Physio2** สรีรวิทยาไตพื้นฐาน (ผู้ใช้ส่ง "basic physio of nephro" — สไลด์ MDS215 ม.รังสิต Part I/II, Drive `1IHnFaFvZeNbKXeE_RRpnwHLTP6zEEYwO` และ `1-i_hPZrlM-oGSyas0WZCslQRWyJyVtGw`) วางไว้ต้นชุดก่อนคาบ 05 · สคริปต์ `build_renalphys1.py`/`build_renalphys2.py` (แทรกตำแหน่งเอง ไม่ sort — **ต้องรัน Physio1 ก่อน Physio2**) · ⚠️ build_catheter.py และสคริปต์ nephro เก่าบางตัว sort คาบ → รันแล้ว Physio1/2 จะไปอยู่ท้าย ให้รัน build_renalphys1 → 2 ต่อท้าย
 >   - ผู้ใช้ขอ COPD "ตามความรู้ที่ NL ต้องการก็พอ ที่เหลือเป็นอ่านเพิ่มเติม" → หัวข้อ 1–11 = ระดับ NL · หัวข้อ 12–14 ชื่อขึ้นต้น "อ่านเพิ่มเติม" · ทำด้วย `build_copd.py` + `figs_copd.py` (โน้ต `slides/copd_notes.md`)
 >   - ⚠️ `build_copd.py` เขียน `intro`/`howto` ของชุด chest ทับทั้งก้อน — ข้อความในสคริปต์รวม Thoracentesis ไว้แล้ว ถ้าเพิ่มคาบ chest ใหม่ต้องแก้ INTRO/HOWTO ในสคริปต์นี้ด้วย
 >   - neuro 9/10 และ 21/10 อัปเดตด้วย `update_neuro_handouts.py` (รันซ้ำได้ · คง anims/mnem · ต่อบรรทัดที่ตัวหนาคร่อม) ไม่ต้องรัน build_lp/build_acs ใหม่
@@ -188,6 +189,8 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 | chest | 17 | Respiratory failure + Pleural disease ← อ.สกล (12 หัวข้อ · 36 ข้อ รวมคลังคาบ 17 ครบ · CH-MEQ-03 · CH-OSCE-02/04) |
 | chest | Thoracentesis | Thoracentesis และการแปลผลน้ำ ← Active learning กลุ่ม 5 (12 หัวข้อ · 26 MCQ + MOCK-137/138/142 · MEQ · OSCE หัตถการ · **21 ภาพ**) — BTS 2023 · สไลด์นักศึกษามีจุดผิดบางจุด แก้ตามแนวทางและระบุในบทเรียน |
 | chest | 37 | COPD ← อ. 20 ต.ค. · เรียบเรียงจาก **GOLD 2026** (14 หัวข้อ = NL 11 + อ่านเพิ่มเติม 3 · 30 MCQ + คลังคาบ 37 อีก 8 · MEQ AECOPD + CH-MEQ-02 · OSCE inhaler · **20 ภาพ**) — บางหน้าของ GOLD PDF อ่านไม่ได้ (ภาพ) · ส่วน pneumonia/asthma ของคาบ 37 ในคลังยังไม่มีบทเรียน |
+| nephro | Physio1 | สรีรวิทยาไตพื้นฐาน I — การทำงานของไต RBF/GFR clearance การขนส่งในท่อไต concentrating (14 หัวข้อ · 29 MCQ + MOCK-147/165/169/179/181 · MEQ NSAID+ACEi+thiazide · OSCE คำนวณ clearance/FENa/CH2O · **23 ภาพ**) — PDF อ่านได้แค่ข้อความ ภาพในสไลด์ (สมการ eGFR, แผนภาพเซลล์ท่อไต, countercurrent) วาดใหม่จาก Guyton/Boron · ส่วนจากตำราติด "(ตำรา)" ในเนื้อหา · จุดที่สไลด์ดูคลาดเคลื่อนมีหมายเหตุแก้ |
+| nephro | Physio2 | สรีรวิทยาไตพื้นฐาน II — tonicity, Darrow–Yannet, Na/ADH/RAAS/ANP, SIADH, K, Ca/Pi/Mg, กรด-ด่าง + วิเคราะห์ ABG, micturition (15 หัวข้อ · 30 MCQ + MOCK-135/170/173/180/198 · MEQ อาเจียน/gastric outlet · OSCE วิเคราะห์ ABG 3 ราย · **25 ภาพ**) — หัวข้อ 7 (SIADH/ODS, European 2014) และสูตร compensation/delta/osmolal gap เติมเอง · เฉลยแบบฝึก ABG 10 ข้อในสไลด์เขียนเอง (ข้อ 7 ค่าไม่เข้า H–H พอดี) |
 | nephro | 05 | Fluid electrolyte: Divalent |
 | neuro | 07 | Acute ischemic stroke |
 | neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
@@ -215,6 +218,7 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 **ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
 - ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
 - แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
+- ✅ **Drill Version 17** (23 ต.ค.) — เพิ่ม nephro **PHY1** (29 + MEQ/OSCE 2) และ **PHY2** (30 + 2) ไว้ต้นชุด Nephro · ข้อเดิม 1231 ข้อไม่เปลี่ยน
 - ✅ **Drill Version 16** (23 ต.ค.) — เพิ่ม chest **37** (CH-COPD 30 + MEQ/OSCE 2) · chest **THO** Thoracentesis (26 + 2 · แทรกหลังคาบ 17) · nephro **CATH** (24 + 2 · หลัง IMG) · neuro **LP** (19) และ **ACS** (45) (หลังคาบ 07 · MEQ/OSCE ของสองคาบนี้มีใน drill อยู่แล้ว) · ข้อเดิม 1081 ข้อไม่เปลี่ยน (0 removed / 0 changed) · blurb chest/nephro/neuro อัปเดต
   - **ขั้นตอน publish Drill ตอนนี้มี 3 ขั้น** (เพราะ session dashboard เพิ่มชุดรายคาบใน `dashboard/drill_sets/*.json`): `drill_sync.py /path/drillwt` → `build.py --no-pdf` ในนั้น → `python3 dashboard/drill_tool.py merge <drillwt>/drill.html dashboard/drill_sets <out.html>` → publish `<out.html>` (ไม่ส่ง capabilities) · `LEC_FIX` ใน drill_sync.py คงวันที่ที่ dashboard แก้ไว้
 - ✅ **Drill Version 14** (19 ต.ค.) — เพิ่ม cardio 36 (CAR-ECG-MCQ 28 ข้อ + MEQ/OSCE 2) ผ่าน `drill_sync.py` (JOBS แถว cardio 36) · ข้อเดิมไม่เปลี่ยน
