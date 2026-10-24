@@ -125,3 +125,31 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - ค้างจากสัปดาห์ก่อน: `I03` / `H02` → จ. 5 ต.ค. · `30` UTI → ศ. 18 ก.ย. · `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย. · `10` Shock → พ. 21 ต.ค.
 
 สัปดาห์ที่ 2–4: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 6 · 19–23 ต.ค. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 19 | Common cardiac arrhythmia and basic EKG (AL) (อ.สุรชาติ) | cardio `36` (6 / 2 / 15) | ✅ |
+| อ. 20 | Pneumonia / Asthma / COPD (AL) (อ.เกรียงศักดิ์) | chest `37` (9 / 4 / 14) | ✅ |
+| พ. 21 | Acute confusional state and alteration of consciousness (อ.เพชรรัตน์) | ไม่มีกลุ่มคาบ — กระจายใน neuro `N02` (4 / 1 / 20) และระบบอื่นอีกเล็กน้อย | 🟡 ยังไม่มีกลุ่มของตัวเอง ข้อ delirium/coma/GCS ใหม่มีไม่ถึง 5 ข้อในกลุ่มเดียว |
+| พ. 21 | Shock (AL) (อ.เจตวรงค์) — ย้ายมาจาก อ. 22 ก.ย. | cardio `10` (5 / 1 / 15) | ✅ |
+| พฤ. 22 | Urethral catheterization (อ.ธนิศร) | กระจาย ~2 ข้อใหม่ (cardio, infect) + ข้อเก่า nephro 2 | ❌ ไม่มีกลุ่ม และเป็นเนื้อหาหัตถการ (เหมาะกับ OSCE มากกว่า MCQ) |
+
+ไม่นับ: หัตถการอ่าน organisms/parasite จาก specimen (อ. 20) · "📚 เรียน: Delirium" (อ. 20) เป็นบันทึกการทบทวน
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: arrhythmia/EKG ~69 · delirium/coma ~41 · pneumonia/asthma/COPD ~36 · shock ~24 · catheterization ~1
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. Acute confusional state: เปิดกลุ่มคาบใหม่ใน neuro (delirium vs dementia, CAM, GCS, สาเหตุ metabolic/toxic, approach to coma) — ข้อเก่าพักไว้ ~41 ข้อ
+2. Urethral catheterization: OSCE station (ข้อบ่งชี้ ข้อห้าม ขั้นตอน sterile technique ภาวะแทรกซ้อน)
+3. ค้างจากสัปดาห์ก่อน: STDs (❌) · CNS infection/CSF · Hepatitis · WBC disorder/LAD · Bleeding disorder · Blood transfusion · Epilepsy · Derm infection · Empyema/resp failure · SAQ อ่าน CXR · MEQ ของ AF
+
+**config ต้องแก้**
+- คาบ `10` Shock → "พ. 21 ต.ค." (ยืนยันจากปฏิทินแล้ว, week 6)
+- ต้องสร้างรหัสคาบใหม่ให้ Acute confusional state (พ. 21 ต.ค.) และ Urethral catheterization (พฤ. 22 ต.ค.)
+- ค้างจากสัปดาห์ก่อน: `G02` → จ. 12 ต.ค. · `E01` → พ. 14 ต.ค. · รหัสใหม่ CNS infection / WBC disorder · `I03` / `H02` → จ. 5 ต.ค. · `30` UTI → ศ. 18 ก.ย. · `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย.
+
+สัปดาห์ที่ 2–5: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
