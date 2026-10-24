@@ -1,4 +1,4 @@
-# Dermatology lecture for 4th year medical student Part 1 — Purit Pureesrisak, MD (อ.ภูริต ภูรีศรีศักดิ์) · derm "Derm1"
+# Dermatology lecture for 4th year medical student Part 1 — Purit Pureesrisak, MD (อ.ภูริต) · derm "Derm1"
 Division of Dermatology, Department of Medicine, Rajavithi Hospital
 Source: Drive 1PWIdpHHF6dsoLSsPoJhJgsdE9mJWTzH8 "Lec นศพ ปี 4 (66).pdf" — 140 pages, iPhone scan of the deck (slide year 2566), text layer ~14k chars.
 Rendered with pymupdf (80 dpi, 2×2 montages; handwriting zoomed at 200–250 dpi) → nl/img_derm/ (gitignored).

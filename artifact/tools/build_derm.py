@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Common skin diseases for internists (อ.ภูริต ภูรีศรีศักดิ์ · Purit Pureesrisak, MD · Division of Dermatology รพ.ราชวิถี) → data/derm.json (ชุดใหม่ Derm)
+"""Common skin diseases for internists (อ.ภูริต · Purit Pureesrisak, MD · Division of Dermatology รพ.ราชวิถี) → data/derm.json (ชุดใหม่ Derm)
 ต้นฉบับ: Drive 1PWIdpHHF6dsoLSsPoJhJgsdE9mJWTzH8 "Lec นศพ ปี 4 (66).pdf" (140 หน้า ภาพสแกนจาก iPhone — ข้อความดึงได้น้อย อ่านจากภาพทุกหน้า)
 โน้ตสไลด์: slides/derm66_notes.md · ภาพประกอบ: figs_derm.py (31 ภาพ)
 lec = "Derm1" (ไม่มีคาบนี้ในคลัง Ward Drill · ไม่พบวันบรรยาย) · date "สไลด์ปี 2566 (อ.ภูริต)"
@@ -815,3 +815,648 @@ sec("derm-d1-12", "รักษาลมพิษ — antihistamine เป็น
          "Anaphylaxis = adrenaline 0.5 mg IM ต้นขา", "Angioedema/anaphylaxis — adrenaline", R("Urticaria: treatment (angioedema)", "WAO Anaphylaxis Guidance 2020"), [URT, SHOCK, ANAPH_B])],
     [URT, URT_B, AH, ANAPH_B, SHOCK, CS], {"ladder": F.urt_ladder()},
     source="สไลด์ อ.ภูริต — Urticaria: treatment · Chronic urticaria: treatment (หน้า 74–75) + EAACI/GA²LEN/EuroGuiDerm/APAAACI 2022 · WAO anaphylaxis 2020")
+
+# ═════════════════════════════════════════════ 13
+sec("derm-d1-13", "STD ทางผิวหนัง และ syphilis (1): ระยะของโรคและอาการทางผิว",
+    "4 กลุ่มอาการ STD · chancre ไม่เจ็บ · secondary: papulosquamous ฝ่ามือฝ่าเท้า (✍️) · latent · tertiary · ทำไมถึงเป็นแบบนั้น", 11,
+"""### กลุ่มอาการ STD (สไลด์ Sexually transmitted disease)
+| กลุ่มอาการ | โรค |
+|---|---|
+| **Discharge syndromes** | gonorrhea และ chlamydia · bacterial vaginosis/candidiasis · Mycoplasma genitalium |
+| **Genital ulcer syndromes** | herpes simplex · **primary syphilis** · chancroid · LGV · granuloma inguinale |
+| **Pelvic inflammatory disease** | |
+| **Dermatologic syndromes** | HPV · **secondary syphilis** · **disseminated gonococcal infection** · pediculosis pubis |
+
+ภาพในสไลด์ (หน้า 78–80): ผื่นตุ่มนูนสีแดงน้ำตาลกระจายที่ลำตัว ✍️ “**papule < 1 cm นูน มีขุย**” · ✍️ “**papulosquamous**” · ✍️ “**2nd syphilis**” · ฝ่ามือมี papule แดงน้ำตาลกระจาย · ภาพ “Diagnosis?” ฝ่าเท้าด้านข้างมี papule วงกลมที่มีขุยเป็นวงรอบขอบ (collarette)
+
+### Syphilis — ระยะของโรค (สไลด์)
+เชื้อ **Treponema pallidum subsp. pallidum** (spirochete)
+1. **Primary**: chancre
+2. **Secondary**: ผื่นผิวหนัง ± ต่อมน้ำเหลืองโต และอวัยวะอื่น
+3. **Latent**: ไม่มีอาการ มีแค่ serology บวก
+4. **Tertiary**: ผิวหนัง ระบบประสาท หัวใจและหลอดเลือด
+
+[[fig:timeline]]
+
+### อาการแต่ละระยะ
+**Primary** — chancre (✍️ “Chancres” ในภาพ): แผล **แข็งเมื่อคลำ** (firm) บางครั้งหลายแผล ที่องคชาต รอบทวาร หรือริมฝีปาก · พื้นแผลสะอาด **ไม่เจ็บ** · ต่อมน้ำเหลืองขาหนีบโต แข็ง ไม่เจ็บ · หายเองใน 3–6 สัปดาห์ · darkfield เห็นเชื้อเกลียวสว่างเคลื่อนไหวไป-กลับและหมุนรอบแกน (ภาพสไลด์)
+
+**Secondary** (สไลด์):
+- อาการนำ (ไข้ต่ำ ปวดเมื่อย เจ็บคอ) · **ต่อมน้ำเหลืองโตทั่วตัว 50–85%**
+- ผิวหนัง: **ระยะต้น (10%)** ผื่น macule แบบ roseola กระจาย **ไม่คัน** · **ระยะหลัง (70%)** maculopapular และ **papulosquamous** (✍️ ขีดเน้น) ทั่วตัว
+- **ฝ่ามือฝ่าเท้า**: papule/plaque สมมาตรมี **ขุยวงรอบ (Biett’s collarette)** — อาจหนาเป็น “syphilitic corn”
+- **บริเวณทวารอวัยวะเพศ: condyloma lata** (ตุ่มแบนชื้นสีขาวเทา)
+- **บริเวณไรผม: corona veneris**
+- เยื่อบุ **30%**: **mucous patches** · **ผมร่วงหย่อม ๆ แบบแมลงกัดกิน (moth-eaten) 7%** ที่ท้ายทอย คิ้ว เครา
+
+**Latent** → **Tertiary**: ภาพสไลด์ **cutaneous gumma** = plaque แดงโค้งเป็นวง (arciform) มีแผลถลอกและแผลเป็นตรงกลาง
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก | ใช้แยกโรค |
+|---|---|---|
+| Chancre ไม่เจ็บ แข็งเหมือนกระดุม | เชื้อกระตุ้น lymphocyte/plasma cell หนาแน่นรอบหลอดเลือด + **endarteritis obliterans** · ไม่มี neutrophil/หนองมาก จึงไม่ปวดและพื้นแผลสะอาด | ต่างจาก chancroid (เจ็บ นุ่ม หนอง) และ herpes (แสบ หลายแผลตื้น) |
+| แผลหายเองแม้ไม่รักษา | ภูมิคุ้มกันเฉพาะที่ฆ่าเชื้อในแผลได้ แต่เชื้อแพร่ไปทางเลือดแล้ว | “แผลหายแล้ว” ไม่ได้แปลว่าหายจากโรค |
+| ผื่นทั่วตัว **รวมฝ่ามือฝ่าเท้า** | ระยะ secondary = เชื้อกระจายทางเลือดไปผิวหนังทุกที่ → ผื่นขึ้นได้ทุกตำแหน่ง | ผื่นที่ฝ่ามือฝ่าเท้า: syphilis, HFMD, EM, Rocky Mountain spotted fever, drug, endocarditis |
+| ผื่นไม่คัน มีขุย (papulosquamous) | การอักเสบแบบ lymphocyte/plasma cell ใน dermis + epidermis หนาเล็กน้อย ไม่มี histamine มาก | ✍️ “papulosquamous 2nd syphilis” — คิดถึงเสมอเมื่อเห็นผื่น pityriasis rosea/psoriasis-like ในวัยเจริญพันธุ์ |
+| Condyloma lata / mucous patch ติดต่อสูง | ผิวชื้นเปิด มีเชื้อมาก | ระยะ early ติดต่อทางเพศได้ |
+| ผมร่วงแบบ moth-eaten | อักเสบรอบรูขุมขนเป็นหย่อม | ไม่เป็นแผลเป็น ขึ้นใหม่ได้หลังรักษา |
+| Latent ยาวเป็นปี | เชื้อแบ่งตัวช้ามาก (~30 ชม.) และมีโปรตีนผิวน้อย ภูมิจึงจับได้ยาก (“stealth pathogen”) | ต้องตรวจ serology ในกลุ่มเสี่ยง/หญิงตั้งครรภ์ |
+| Gumma · aortitis | ภูมิแบบ delayed hypersensitivity สร้าง granuloma (gumma) · endarteritis ของ vasa vasorum → ผนังเอออร์ตาส่วนต้นอ่อนแอ โป่ง **AR** | tertiary — ข้อมูลเสริม |
+
+> ✍️ ข้าง natural history: “No recurrence (cure) **หายไปเลย**” และ tertiary “→ **neuro/cardio syphilis**” · **neurosyphilis/ocular/otic syphilis เกิดได้ทุกระยะ** — ผู้ป่วยระยะไหนก็ตามที่มีอาการทางตา หู หรือระบบประสาท ต้องตรวจน้ำไขสันหลังและรักษาแบบ neurosyphilis (CDC 2021)
+""",
+    ["Chancre = ไม่เจ็บ แข็ง พื้นสะอาด + LN แข็งไม่เจ็บ · หายเองใน 3–6 สัปดาห์",
+     "Secondary = ผื่น papulosquamous ไม่คัน ทั่วตัวรวมฝ่ามือฝ่าเท้า (Biett’s collarette) + LN ทั่วตัว (✍️ 2nd syphilis)",
+     "Condyloma lata · mucous patch · moth-eaten alopecia · corona veneris",
+     "Latent = มีแต่ serology · tertiary 2–20 ปี: gumma, aortitis, neurosyphilis (✍️ neuro/cardio)",
+     "Neuro/ocular/otic syphilis เกิดได้ทุกระยะ"],
+    [mcq(N(30), "A 24-year-old man presents with a 2-week history of a non-itchy rash. Examination shows scattered, symmetric, reddish-brown papules with fine scale on the trunk, and similar papules with a peripheral collarette of scale on both palms and soles. He has generalized, non-tender lymphadenopathy and recalls a painless penile sore 2 months ago that healed spontaneously. Which pair of tests is most appropriate to confirm the diagnosis?",
+         ["A non-treponemal test (RPR/VDRL) and a treponemal test (TPHA/TPPA)", "KOH preparation and fungal culture", "Skin biopsy for psoriasis and ASO titre",
+          "HSV PCR from the palm lesions", "Patch testing and serum IgE"], 0,
+         "ผื่น papulosquamous **ไม่คัน** ทั่วตัว **รวมฝ่ามือฝ่าเท้ามีขุยวงรอบ (Biett’s collarette)** + ต่อมน้ำเหลืองโตทั่วตัว + ประวัติแผลอวัยวะเพศไม่เจ็บที่หายเอง = **secondary syphilis** (✍️ “papulosquamous · 2nd syphilis”) · ยืนยันด้วย serology **สองชนิด**: non-treponemal (RPR/VDRL — sensitivity 100% ในระยะ secondary) + treponemal (TPHA/TPPA) · และควรตรวจ HIV ร่วม\n\n"
+         "- **KOH** — tinea ไม่ขึ้นสมมาตรที่ฝ่ามือฝ่าเท้าพร้อม LN ทั่วตัว\n- **Biopsy psoriasis/ASO** — guttate psoriasis ไม่ขึ้นฝ่ามือฝ่าเท้าแบบนี้และไม่มีประวัติ chancre\n"
+         "- **HSV PCR** — ไม่มีตุ่มน้ำ\n- **Patch test/IgE** — ไม่ใช่โรคภูมิแพ้",
+         "ผื่นฝ่ามือฝ่าเท้า + LN ทั่วตัว + แผลไม่เจ็บมาก่อน = secondary syphilis → RPR + TPHA", "Secondary syphilis", R("Secondary syphilis · ภาพหน้า 78–80"), [STI, STI_B, RASH, SERO, SERO_B]),
+     mcq(N(31), "A 28-year-old man has a single, painless, clean-based, 1-cm penile ulcer with a firm, indurated (button-like) edge that appeared 10 days ago. He has bilateral, firm, non-tender inguinal lymph nodes. RPR is non-reactive. Which statement is correct?",
+         ["A non-reactive RPR does not exclude primary syphilis; darkfield microscopy/T. pallidum PCR of the ulcer can confirm it, and presumptive treatment with benzathine penicillin is appropriate",
+          "The negative RPR excludes syphilis; reassure", "The ulcer is chancroid; treat with azithromycin only", "The ulcer is herpes simplex; give valacyclovir only",
+          "Biopsy the ulcer to exclude squamous cell carcinoma before any treatment"], 0,
+         "แผลเดี่ยว **ไม่เจ็บ ขอบแข็ง (indurated) พื้นสะอาด** + LN แข็งไม่เจ็บสองข้าง = **chancre ของ primary syphilis** · สไลด์ (Table 200-3): sensitivity ของ RPR ในระยะ primary แค่ **86%** (VDRL 78%) เพราะ antibody ยังขึ้นไม่ทัน → **RPR ลบไม่ตัดโรค** · ยืนยันด้วย **darkfield** (ภาพในสไลด์) หรือ PCR และควรให้ BPG แบบ presumptive พร้อมตรวจ serology ซ้ำ\n\n"
+         "- **Reassure** — พลาดการรักษาและการแพร่เชื้อ\n- **Chancroid** — เจ็บ นุ่ม ขอบขรุขระเซาะใต้ มีหนอง (✍️ แผลริมอ่อน กดเจ็บ)\n"
+         "- **Herpes** — ตุ่มน้ำเป็นกลุ่มแตกเป็นแผลตื้นหลายแผล แสบ\n- **Biopsy ก่อนรักษา** — ไม่จำเป็นในแผลที่เข้ากับ chancre ชัดในคนหนุ่ม",
+         "Chancre + RPR ลบ ≠ ไม่เป็นโรค (primary sens ~86%)", "Primary syphilis — serology limits", R("Syphillis (darkfield · Table 200-3)", "CDC STI Treatment Guidelines 2021"), [STI, STI_B, GU, SERO, SEROP])],
+    [STI, STI_B, GU, RASH, LAD, SERO], {"timeline": F.syph_timeline()},
+    source="สไลด์ อ.ภูริต — Sexually transmitted disease · Syphillis (หน้า 76–90) + CDC STI 2021 (neurosyphilis ทุกระยะ — ไม่อยู่ในสไลด์)")
+
+# ═════════════════════════════════════════════ 14
+sec("derm-d1-14", "Syphilis (2): serology การรักษา Jarisch–Herxheimer และการแจ้งคู่นอน",
+    "Non-treponemal ขึ้นลงตามโรค · treponemal บวกตลอดชีวิต · prozone/serofast · BPG 2.4 MU · ตั้งครรภ์ห้าม doxycycline · ติดตาม 4 เท่า", 11,
+"""### Serologic tests (สไลด์ Table 200-3)
+| Test | Primary | Secondary | Latent | Tertiary | Specificity |
+|---|---|---|---|---|---|
+| **RPR** (non-treponemal) | 86% | 100% | 98% | 73% | 98% |
+| **VDRL** (non-treponemal) | 78% | 100% | 95% | 71% | 99% |
+| **TPPA** (treponemal) | 88% | 100% | 100% | — | 96% |
+| **TPHA** (treponemal) | 77% | 100% | 99% | 100% | 96–99% |
+| **FTA-ABS** (treponemal) | 84% | 100% | 100% | 96% | 97% |
+| **EIA** (treponemal) | 85–97% | 97–100% | 100% (early) · 75–100% (late) | — | 99–100% |
+
+[[fig:sero]]
+
+#### ทำไมต้องใช้สองชนิด
+| | Non-treponemal (RPR, VDRL) | Treponemal (TPHA, TPPA, FTA-ABS, EIA) |
+|---|---|---|
+| วัดอะไร | antibody ต่อ **cardiolipin–lecithin** ที่หลุดจากเซลล์ถูกทำลาย | antibody ต่อ **โปรตีนของตัวเชื้อ** |
+| ผลตามเวลา | **ขึ้นลงตามความรุนแรง** · ลดลงหลังรักษา | **บวกตลอดชีวิต** แม้หายแล้ว |
+| ใช้ทำอะไร | คัดกรอง + **ติดตามผลการรักษา (titre)** | **ยืนยัน** ว่าเคยติดเชื้อ |
+| ผลบวกปลอม | **biologic false positive**: ตั้งครรภ์ SLE/APS HIV ฉีดยาเสพติด ผู้สูงอายุ ไวรัสเฉียบพลัน (titre มักต่ำ) | น้อย (yaws/pinta, Lyme บางชนิด) |
+| ผลลบปลอม | ระยะ primary ตอนต้น · **prozone** (secondary — antibody มากเกินไปจนไม่จับกลุ่ม → ต้องเจือจาง) · late latent/tertiary | ระยะ primary ตอนต้น |
+
+- **Reverse algorithm** (โรงพยาบาลจำนวนมากใช้ EIA/CLIA อัตโนมัติก่อน — ข้อมูลเสริม): EIA บวก → RPR → ถ้า RPR ลบ ใช้ TPPA ตัดสิน · TPPA บวก = เคยติดเชื้อ (รักษาแล้วหรือ late latent ที่ไม่เคยรักษา → ถ้าไม่มีประวัติรักษา ให้รักษาแบบ late latent)
+- **Serofast**: รักษาถูกต้องแล้ว RPR ลดลงแต่ค้างที่ titre ต่ำ (≤ 1:4) คงที่ — ไม่ต้องรักษาซ้ำถ้าไม่มีอาการและ titre ไม่เพิ่ม
+
+### การรักษา (สไลด์ Table 200-2 — CDC; ✍️ ขีดเน้น primary/secondary)
+| ระยะ | ยาที่แนะนำ | แพ้ penicillin (ไม่ตั้งครรภ์) | ติดตาม (HIV ลบ / HIV บวก) | คาดว่า titre ลด 4 เท่าภายใน |
+|---|---|---|---|---|
+| **Primary/secondary** | **Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว** | **Doxycycline 100 mg bid 14 วัน** | 6, 12 เดือน / 3, 6, 9, 12, 24 เดือน | **6–12 เดือน** |
+| **Early latent** | BPG 2.4 ล้านยูนิต IM ครั้งเดียว | Doxycycline 100 mg bid 14 วัน | 6, 12, 24 / 6, 12, 18, 24 เดือน | **12–24 เดือน** |
+
+สไลด์ (✍️ ขีดเน้น footnote): **หญิงตั้งครรภ์ห้ามใช้ doxycycline — ถ้าแพ้ penicillin ต้อง desensitize แล้วให้ BPG** · **ถ้า titre ไม่ลด 4 เท่าตามเวลา → คิดถึงติดเชื้อซ้ำ รักษาล้มเหลว หรือ neurosyphilis** · การรักษาเริ่มต้นเหมือนกันทั้งผู้ติดและไม่ติด HIV
+
+ข้อมูลเสริมจาก **CDC STI Treatment Guidelines 2021** (ไม่อยู่ในสไลด์):
+[[fig:tx]]
+- **Late latent / ไม่ทราบระยะ / tertiary (ไม่ใช่ neuro)**: BPG 2.4 MU IM **สัปดาห์ละครั้ง × 3**
+- **Neurosyphilis, ocular, otic**: aqueous crystalline penicillin G 18–24 MU/วัน IV 10–14 วัน
+- **ตั้งครรภ์**: penicillin ตามระยะเท่านั้น (ป้องกัน congenital syphilis) · ตรวจคัดกรองตอนฝากครรภ์
+- ตรวจ **HIV** และ STI อื่นทุกราย
+
+#### ทำไมยาและอาการหลังฉีดเป็นแบบนี้
+| เรื่อง | กลไก | ใช้อย่างไร |
+|---|---|---|
+| BPG ฉีดครั้งเดียวได้ผล | เป็นเกลือที่ละลายช้า ปล่อย penicillin ระดับต่ำนาน ~3 สัปดาห์ — เชื้อแบ่งตัวช้ามาก (~30 ชม.) ต้องการยาที่อยู่นาน · ไม่มีเชื้อดื้อ penicillin | ห้ามฉีดเข้าหลอดเลือด (Hoigné/embolic) |
+| ไข้ หนาวสั่นใน 24 ชม. หลังฉีด | **Jarisch–Herxheimer reaction**: เชื้อตายพร้อมกัน ปล่อย lipoprotein กระตุ้น TNF-α, IL-6, IL-8 | พบบ่อยในระยะ secondary · ให้ยาลดไข้ **ไม่ใช่แพ้ยา** ไม่ต้องหยุดการรักษา · ในหญิงตั้งครรภ์อาจกระตุ้นการคลอด |
+| ต้องรักษาคู่นอน | คู่นอนอาจอยู่ในระยะฟักตัว (RPR ยังลบ) | **คู่นอนใน 90 วันก่อนวินิจฉัย** (primary/secondary/early latent) → ให้ BPG ทันทีแม้ผลเลือดลบ · นานกว่า 90 วัน → ตรวจก่อนแล้วรักษาตามผล |
+""",
+    ["Non-treponemal (RPR/VDRL) = คัดกรอง + ติดตาม titre · treponemal (TPHA/TPPA) = ยืนยัน บวกตลอดชีวิต",
+     "RPR ลบปลอม: primary ตอนต้น · prozone (secondary) · late latent — บวกปลอม: ตั้งครรภ์ SLE/APS HIV",
+     "Primary/secondary/early latent = BPG 2.4 MU IM ครั้งเดียว · แพ้ (ไม่ตั้งครรภ์) = doxycycline 14 วัน",
+     "ตั้งครรภ์ห้าม doxycycline — desensitize แล้วให้ BPG (สไลด์)",
+     "Titre ไม่ลด 4 เท่าใน 6–12 เดือน → ติดใหม่/ล้มเหลว/neurosyphilis · คู่นอน 90 วัน → รักษาทันที"],
+    [mcq(N(32), "Four hours after receiving benzathine penicillin G 2.4 million units IM for secondary syphilis, a 26-year-old woman (not pregnant) develops fever of 38.9 °C, chills, myalgia and a transient worsening of her rash. Blood pressure is 118/70 mmHg and there is no wheeze or urticaria. What is the most appropriate management?",
+         ["Reassure, give antipyretics, and continue follow-up — this is the Jarisch–Herxheimer reaction", "Label her as penicillin-allergic and switch to doxycycline",
+          "Give intramuscular adrenaline for anaphylaxis", "Admit for intravenous broad-spectrum antibiotics for sepsis", "Start oral prednisolone for 2 weeks"], 0,
+         "ไข้ หนาวสั่น ปวดเมื่อย ผื่นชัดขึ้น **ภายใน 24 ชม. หลังรักษา syphilis ระยะ secondary** โดยไม่มีลมพิษ หอบ หรือความดันตก = **Jarisch–Herxheimer reaction** — cytokine จาก lipoprotein ของเชื้อที่ตายพร้อมกัน · หายเองใน 24 ชม. → ยาลดไข้ (ข้อมูลเสริม — CDC 2021)\n\n"
+         "- **ระบุว่าแพ้ penicillin** — ไม่ใช่แพ้ยา การติดฉลากผิดทำให้ต้องใช้ยาที่ด้อยกว่าในอนาคต\n- **Adrenaline** — ไม่มีลักษณะ anaphylaxis\n"
+         "- **IV antibiotics** — ไม่ใช่ sepsis อาการหายเอง\n- **Prednisolone** — ไม่จำเป็น",
+         "ไข้หลังฉีด BPG ใน 24 ชม. = Jarisch–Herxheimer → ยาลดไข้ ไม่ใช่แพ้ยา", "Syphilis — Jarisch–Herxheimer reaction", ["CDC STI Treatment Guidelines 2021 (ไม่อยู่ในสไลด์)"], [STI, STI_B, ADR]),
+     mcq(N(33), "A 32-year-old HIV-negative man was treated with a single dose of benzathine penicillin G for secondary syphilis when his RPR titre was 1:64. At 12 months his RPR is 1:32 and TPHA remains reactive. He has no neurological or ocular symptoms. What is the correct interpretation?",
+         ["Inadequate serologic response — evaluate for reinfection, treatment failure or neurosyphilis (including CSF examination as indicated) and retreat",
+          "Adequate response because the titre has fallen", "Cure confirmed because TPHA is still reactive", "Serofast state — no further action ever needed",
+          "Biologic false-positive RPR — stop follow-up"], 0,
+         "สไลด์: primary/secondary ควรมี **titre ลด ≥ 4 เท่าภายใน 6–12 เดือน** (1:64 → ≤ 1:16) · ลดแค่ 2 เท่า (1:32) = **ตอบสนองไม่พอ** → สไลด์ footnote: คิดถึง **ติดเชื้อซ้ำ รักษาล้มเหลว หรือ neurosyphilis** → ซักประวัติคู่นอน ตรวจ HIV พิจารณาเจาะน้ำไขสันหลัง และรักษาซ้ำ\n\n"
+         "- **ลดลงแล้วพอ** — ต้องลด 4 เท่า ลด 2 เท่าอยู่ในช่วงความคลาดเคลื่อนของการตรวจ\n- **TPHA บวก = หาย** — treponemal บวกตลอดชีวิต ไม่ใช้ติดตาม\n"
+         "- **Serofast** — หมายถึง titre ลดลงมากแล้วค้างที่ต่ำคงที่ ไม่ใช่ 1:32 ที่ลดไม่ถึง 4 เท่า\n- **BFP** — TPHA บวกยืนยันว่าเป็นการติดเชื้อจริง",
+         "ติดตาม RPR: ต้องลด ≥ 4 เท่าใน 6–12 เดือน", "Syphilis — follow-up serology", R("Table 200-2 footnote c", "CDC STI Treatment Guidelines 2021"), [STI, STI_B, SERO, SEROP]),
+     mcq(N(34), "A 25-year-old woman at 16 weeks of pregnancy is diagnosed with secondary syphilis. She reports a history of generalized urticaria and wheeze after amoxicillin. What is the most appropriate treatment?",
+         ["Penicillin desensitization followed by benzathine penicillin G 2.4 million units IM", "Doxycycline 100 mg twice daily for 14 days",
+          "Azithromycin 2 g orally once", "Ceftriaxone 1 g daily for 10 days instead of penicillin", "Defer treatment until after delivery"], 0,
+         "สไลด์ (✍️ ขีดเน้น): **หญิงตั้งครรภ์ห้ามใช้ doxycycline — ถ้าแพ้ penicillin ต้อง desensitize แล้วรักษาด้วย benzathine penicillin G** · เพราะ penicillin เป็นยาเดียวที่พิสูจน์ว่าป้องกัน congenital syphilis ได้\n\n"
+         "- **Doxycycline** — ห้ามในครรภ์ (กระดูก/ฟันทารก) และไม่ป้องกัน congenital syphilis\n- **Azithromycin** — เชื้อดื้อ (macrolide resistance) แพร่หลาย ไม่แนะนำ\n"
+         "- **Ceftriaxone** — ข้อมูลในครรภ์ไม่พอและอาจ cross-react ในผู้แพ้รุนแรง\n- **รอหลังคลอด** — ทารกเสี่ยงติดเชื้อแต่กำเนิดหรือตายในครรภ์",
+         "ตั้งครรภ์ + แพ้ penicillin → desensitize แล้วให้ BPG", "Syphilis in pregnancy", R("Table 200-2 footnote a"), [STI, STI_B, PERINAT])],
+    [STI, STI_B, SERO, SERO_B, SEROP, ANTIMIC, PERINAT], {"sero": F.serology(), "tx": F.syph_tx()},
+    source="สไลด์ อ.ภูริต — Table 200-3 serology · Table 200-2 CDC treatment (หน้า 91–92) + CDC STI Treatment Guidelines 2021")
+
+# ═════════════════════════════════════════════ 15
+sec("derm-d1-15", "Chancroid · gonorrhoea/DGI · LGV — และการแยกแผลอวัยวะเพศ",
+    "✍️ แผลริมอ่อน กดเจ็บ · Gram-negative diplococci ใน neutrophil · DGI triad · groove sign · ขนาดยาในสไลด์ที่เปลี่ยนแล้ว", 11,
+"""### แยกแผลอวัยวะเพศด้วยกลไก
+[[fig:ulcer]]
+
+### Chancroid (สไลด์ Chancroid at a glance)
+- ✍️ “**แผลริมอ่อน กดเจ็บ**”
+- STD แผลเฉียบพลันที่อวัยวะเพศ/ทวาร มัก **ต่อมน้ำเหลืองขาหนีบอักเสบหรือเป็น bubo**
+- เชื้อ **Haemophilus ducreyi** — Gram-negative facultative anaerobic coccobacillus · Gram stain จากหนองเรียงเป็นสาย (“school of fish” — ภาพสไลด์)
+- ลดลงทั่วโลกแต่ยังพบในประเทศกำลังพัฒนา (แอฟริกา แคริบเบียน เอเชียตะวันตกเฉียงใต้)
+- **แผลนุ่ม เจ็บ ขอบขรุขระเซาะใต้ (undermined)** เกิด 1–2 สัปดาห์หลังรับเชื้อ (หนังหุ้มปลาย frenulum ในชาย · vulva ปากมดลูก รอบทวารในหญิง)
+- **ช่วยให้ติด HIV ง่ายขึ้น** · เพาะเชื้อยาก (PCR ไวกว่าแต่ยังไม่แพร่หลาย)
+- **รักษา: azithromycin หรือ ceftriaxone ครั้งเดียว** (CDC 2021: azithromycin 1 g PO ครั้งเดียว หรือ ceftriaxone 250 mg IM ครั้งเดียว · ทางเลือก ciprofloxacin 500 mg bid 3 วัน) · bubo ที่ fluctuant → เจาะดูดหรือผ่าระบาย
+
+### Gonorrhea (สไลด์)
+- STI ที่รายงานมากที่สุดในประเทศรายได้สูง · **Neisseria gonorrhoeae** ติดเยื่อบุทางเดินปัสสาวะ-สืบพันธุ์ ทวารหนัก ปาก จากการสัมผัสทางเพศ
+- ภาพ: หนองข้นสีครีมจากท่อปัสสาวะ · Gram stain: **Gram-negative diplococci ภายใน neutrophil**
+- **เชื้อดื้อยาเพิ่มขึ้นเรื่อย ๆ**
+
+| อาการตามสไลด์ (Table 82.12) | |
+|---|---|
+| **Disseminated** | arthritis · fever · tenosynovitis · **pustule ที่ปลายมือเท้า** · ฝีที่หนังศีรษะทารก · endocarditis · meningitis |
+| **เยื่อบุโดยตรง** | urethritis · cervicitis · proctitis · pharyngitis · vulvovaginitis (เด็ก) · ophthalmia neonatorum |
+| **ลามเฉพาะที่** | prostatitis · epididymitis · salpingitis · oophoritis · PID |
+
+### DGI (สไลด์ — ✍️ “GC · หนองใน → Disseminated gonococcal infection”)
+[[fig:gono]]
+- เกิดใน **0.5–3%** ของผู้ติดเชื้อ ร่วมกับ bacteremia · **classic triad: dermatitis, migratory polyarthritis, tenosynovitis** (ขีดเน้น)
+- **Septic arthritis จริงจาก gonorrhea มักเป็นข้อเดียวหรือสองสามข้อ (mono/pauciarticular)** (ขีดเน้น)
+- ผื่น: macule หรือ **hemorrhagic vesicopustule** บนฐานแดงที่ฝ่ามือฝ่าเท้า/แขนขา **ศูนย์กลางตาย สีเทา (“gun metal gray”)** อาจกดเจ็บ · พบผื่นใน 40–70% · ✍️ “**ผื่นป้อนหนองตาม distal organ**”
+- พยาธิสภาพ: neutrophil รอบหลอดเลือด **dermal vasculitis** และ neutrophil ใน epidermis (ขีดเน้น)
+
+### LGV (สไลด์)
+- STI พบน้อย จาก **Chlamydia trachomatis serovar L1–L3** · ประจำถิ่นบางส่วนของแอฟริกา เอเชีย อเมริกาใต้
+- **3 ระยะ**: (1) ติดเชื้อที่เยื่อบุอวัยวะเพศ — แผล/ตุ่มเล็ก **ไม่เจ็บ** หายเร็ว · (2) **ต่อมน้ำเหลืองขาหนีบโต มักข้างเดียว** · (3) ก้อนแข็งและ **bubo ที่แตกระบายเอง** มัก **proctocolitis** และท่อน้ำเหลืองรอบทวารอักเสบ
+- ภาพ: ต่อมน้ำเหลืองโตแข็งเหนือ Poupart’s ligament (และใต้ = **groove sign**) · bubo ที่แตกระบาย
+- **รักษา: doxycycline 100 mg bid** · ทางเลือกและในครรภ์: erythromycin base 500 mg qid · **อย่างน้อย 3 สัปดาห์**
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก | ใช้อย่างไร |
+|---|---|---|
+| Chancroid เจ็บ ขอบเซาะ หนอง | H. ducreyi สร้าง cytotoxin + ดึง neutrophil จำนวนมาก → เนื้อตายลามใต้ขอบ | ✍️ “แผลริมอ่อน กดเจ็บ” — ต่างจาก chancre แข็งไม่เจ็บ |
+| หนองข้นจากท่อปัสสาวะ (GC) | pili ยึดเยื่อบุ · lipooligosaccharide กระตุ้น neutrophil อย่างแรง | Gram stain หนองชาย: GNDC ใน PMN ไวและจำเพาะสูง |
+| DGI ในหญิงช่วงมีประจำเดือน/ตั้งครรภ์ หรือติดซ้ำ ๆ | สภาพเยื่อบุเปลี่ยน · **ขาด complement C5–C9** ฆ่า Neisseria ไม่ได้ (ข้อมูลเสริม) | Neisseria ซ้ำ ๆ → ตรวจ complement (CH50) |
+| ผื่น DGI น้อยเม็ดที่ปลายมือเท้า | เชื้อในเลือดติดหลอดเลือดเล็กปลายมือเท้า + immune complex → vasculitis + neutrophil | pustule มีเลือดออกน้อยเม็ด = นึกถึง DGI (ต่างจาก acne/folliculitis) |
+| LGV ทำต่อมน้ำเหลืองโต แตก | serovar L ชอบเข้าเซลล์ macrophage และท่อน้ำเหลือง → lymphadenitis เป็นหนอง | groove sign · MSM: proctocolitis คล้าย IBD |
+
+### ขนาดยาในสไลด์ที่เปลี่ยนไปแล้ว (สำคัญสำหรับสอบ)
+| | สไลด์ (ตำราเดิม) | ปัจจุบัน — CDC STI 2021 (2020 update) |
+|---|---|---|
+| Gonorrhea ไม่ซับซ้อน | ceftriaxone **125 mg** IM หรือ cefixime 400 mg ครั้งเดียว + azithromycin 1 g หรือ doxycycline 7 วัน (รักษา chlamydia ร่วม) | **ceftriaxone 500 mg IM ครั้งเดียว** (≥ 150 kg ใช้ 1 g) · ถ้ายังไม่ตัด chlamydia เพิ่ม **doxycycline 100 mg bid 7 วัน** · ไม่ใช้ azithromycin ร่วมเป็นประจำแล้ว (ดื้อยา) |
+| แพ้ cephalosporin | spectinomycin 2 g IM (ขีดเน้น) | gentamicin 240 mg IM + azithromycin 2 g PO |
+| DGI | ceftriaxone 1 g IV/IM q24h (ทางเลือก cefotaxime, ceftizoxime, spectinomycin) → ดีขึ้นแล้วเปลี่ยนเป็น cefixime/cefpodoxime รวม 7 วัน | ceftriaxone 1 g IV/IM q24h · รวม **อย่างน้อย 7 วัน** (septic arthritis ใช้ยาฉีดนานกว่า) · ตรวจ chlamydia/HIV/syphilis |
+""",
+    ["Chancroid = แผลนุ่ม เจ็บ ขอบเซาะ หนอง + bubo เจ็บ (✍️ แผลริมอ่อน กดเจ็บ) → azithromycin 1 g หรือ ceftriaxone 250 mg ครั้งเดียว",
+     "Gonorrhea: Gram-negative diplococci ใน neutrophil · ปัจจุบัน ceftriaxone 500 mg IM (สไลด์ยัง 125 mg)",
+     "DGI triad: dermatitis (pustule มีเลือดออกน้อยเม็ดปลายมือเท้า) + tenosynovitis + migratory polyarthritis",
+     "Septic arthritis จาก GC จริงมักข้อเดียว/สองสามข้อ",
+     "LGV: แผลแรกไม่เจ็บ → LN ขาหนีบข้างเดียว/groove sign → bubo แตก ± proctocolitis · doxycycline ≥ 3 สัปดาห์"],
+    [mcq(N(35), "A 30-year-old man returning from abroad has two painful, soft, 1.5-cm genital ulcers with ragged, undermined edges and a purulent grey base. He also has a unilateral, tender, fluctuant inguinal lymph node. Gram stain of the exudate shows Gram-negative coccobacilli in parallel chains. What is the most appropriate treatment?",
+         ["Azithromycin 1 g orally once (or ceftriaxone 250 mg IM once) and needle aspiration of the fluctuant node", "Benzathine penicillin G 2.4 million units IM once",
+          "Valacyclovir for 10 days", "Doxycycline 100 mg twice daily for 21 days only", "Surgical excision of the ulcers"], 0,
+         "แผล **นุ่ม เจ็บ ขอบขรุขระเซาะใต้ มีหนอง** + bubo เจ็บ fluctuant + Gram stain coccobacilli เรียงเป็นสาย (“school of fish”) = **chancroid** (H. ducreyi — ✍️ “แผลริมอ่อน กดเจ็บ”) · สไลด์: **azithromycin และ ceftriaxone ครั้งเดียว** (CDC 2021: azithromycin 1 g หรือ ceftriaxone 250 mg) + เจาะดูด bubo ที่ fluctuant · ตรวจ syphilis และ HIV ร่วม\n\n"
+         "- **BPG** — syphilis (แผลไม่เจ็บ แข็ง)\n- **Valacyclovir** — herpes (ตุ่มน้ำเป็นกลุ่ม แผลตื้นหลายแผล)\n"
+         "- **Doxycycline 21 วัน** — LGV (แผลแรกไม่เจ็บ หายเร็ว)\n- **ผ่าตัดแผล** — ไม่ใช่การรักษาการติดเชื้อ",
+         "แผลเจ็บ นุ่ม เซาะใต้ + bubo เจ็บ = chancroid → azithro/ceftriaxone ครั้งเดียว", "Chancroid", R("Chancroid at a glance", "CDC STI Treatment Guidelines 2021"), [STI, STI_B, GU, GRAM]),
+     mcq(N(36), "A 23-year-old man has a 3-day history of dysuria and profuse creamy purulent urethral discharge. Gram stain shows Gram-negative intracellular diplococci within neutrophils. Chlamydia testing is pending. According to current CDC (2021) recommendations, what is the most appropriate treatment?",
+         ["Ceftriaxone 500 mg IM once plus doxycycline 100 mg twice daily for 7 days", "Ceftriaxone 125 mg IM once plus azithromycin 1 g orally once",
+          "Ciprofloxacin 500 mg orally once", "Benzathine penicillin G 2.4 million units IM once", "Spectinomycin 2 g IM once as first-line therapy"], 0,
+         "Gram-negative diplococci ใน neutrophil จากหนองท่อปัสสาวะชาย = **gonococcal urethritis** · CDC 2020/2021: **ceftriaxone 500 mg IM ครั้งเดียว** (เพิ่มจาก 125–250 mg เพราะ MIC สูงขึ้น) และ **ถ้ายังไม่ตัด chlamydia ให้ doxycycline 100 mg bid 7 วัน** · ขนาดในสไลด์ (125 mg + azithromycin) เป็นแนวทางเดิม\n\n"
+         "- **Ceftriaxone 125 mg + azithromycin** — แนวทางเดิมในสไลด์ ไม่แนะนำแล้ว (ขนาดต่ำ ดื้อ macrolide)\n- **Ciprofloxacin** — ดื้อสูงมาก (รวมถึงในประเทศไทย)\n"
+         "- **BPG** — ไม่ครอบคลุม gonorrhea\n- **Spectinomycin** — สไลด์ใช้ในผู้แพ้ cephalosporin เท่านั้น และไม่ครอบคลุมคอหอย",
+         "GC ปัจจุบัน = ceftriaxone 500 mg IM ± doxycycline 7 วัน", "Gonorrhea — current treatment", R("Gonorrhea Box 205-2 (old regimen)", "CDC STI Treatment Guidelines 2021"), [STI, STI_B, URETH, URETH_B, GRAM, GRAM_B]),
+     mcq(N(37), "A 27-year-old man has a 2-week history of a painful, unilateral swelling in the left groin. He recalls a small painless genital papule 4 weeks earlier that healed within days. Examination shows matted inguinal and femoral lymph nodes separated by the inguinal ligament, with overlying violaceous skin. Which organism and treatment are most appropriate?",
+         ["Chlamydia trachomatis serovars L1–L3; doxycycline 100 mg twice daily for at least 3 weeks", "Haemophilus ducreyi; azithromycin 1 g once",
+          "Treponema pallidum; benzathine penicillin G once", "Klebsiella granulomatis; observation", "Herpes simplex virus; acyclovir for 7 days"], 0,
+         "แผล/ตุ่มเล็ก **ไม่เจ็บ หายเร็ว** → ตามด้วยต่อมน้ำเหลืองขาหนีบโต **ข้างเดียว** และต่อมเหนือ–ใต้ inguinal ligament แยกเป็นร่อง (**groove sign**) = **LGV** (C. trachomatis L1–L3 — สไลด์) → **doxycycline 100 mg bid อย่างน้อย 3 สัปดาห์** (สไลด์: duration at least 3 weeks)\n\n"
+         "- **H. ducreyi** — แผลเจ็บนุ่มเซาะใต้ที่ยังอยู่พร้อม bubo\n- **T. pallidum** — LN แข็งไม่เจ็บสองข้าง ไม่เป็นหนอง\n"
+         "- **K. granulomatis (donovanosis)** — แผลแดงสดเลือดออกง่าย ไม่มี LN โตจริง และต้องรักษา\n- **HSV** — ตุ่มน้ำเจ็บหลายเม็ด LN เจ็บสองข้าง",
+         "Groove sign + แผลแรกไม่เจ็บ = LGV → doxycycline ≥ 21 วัน", "Lymphogranuloma venereum", R("Lymphogranuloma venereum"), [STI, STI_B, GU, LAD])],
+    [STI, STI_B, GU, URETH, URETH_B, GRAM, GRAM_B, INFARTH, INFARTH_B, LAD], {"ulcer": F.ulcer_cmp(), "gono": F.gono()},
+    source="สไลด์ อ.ภูริต — Chancroid · Gonorrhea · DGI · LGV (หน้า 93–101) + CDC STI Treatment Guidelines 2021 (ขนาดยาปัจจุบัน)")
+
+# ═════════════════════════════════════════════ 16
+sec("derm-d1-16", "Leprosy (Hansen’s disease) — ผื่นชา เส้นประสาทโต และ spectrum ตามภูมิคุ้มกัน",
+    "M. leprae ใน Schwann cell · TT ↔ LL (Th1 ↔ Th2) · PB/MB · คลำเส้นประสาท · reaction type 1/2 · MDT (สไลด์เดิม vs WHO 2018)", 12,
+"""> สไลด์ส่วนนี้ (หน้า 102–112) เป็นภาพล้วน — เนื้อหาด้านล่างอ่านจากภาพตาราง/แผนภาพในสไลด์ และเสริมด้วย **WHO Guidelines for the diagnosis, treatment and prevention of leprosy (2018)** ตามที่ระบุ
+
+### Key features (สไลด์)
+- โรคติดเชื้อเรื้อรังจาก **Mycobacterium leprae** — ปรสิตในเซลล์ **macrophage และ Schwann cell**
+- ดำเนินช้า มี **granuloma** และ **ชอบเส้นประสาท (neurotropism)** — ชอบผิวหนังและเส้นประสาทส่วนปลาย
+- รอยโรคปฐมภูมิ **แดงหรือซีด (hypopigmented) และมักชา (anesthetic)**
+- แบ่งตามภูมิคุ้มกันเป็นสองขั้ว: **lepromatous (Th2 เด่น)** และ **tuberculoid (Th1 เด่น)** · lepromatous มีเชื้อมากใน dermis (และน้ำมูก) · tuberculoid มีเชื้อน้อย
+- แผนที่ WHO 2011: ความชุก < 1/10,000 ในเกือบทุกประเทศ (ประเทศไทยยังพบผู้ป่วยใหม่ทุกปี)
+
+[[fig:spec]]
+
+### การแบ่งชนิด (สไลด์ Table 75.2 — WHO Guide to Leprosy Control)
+| | LL | BL | BB | BT | TT | I (indeterminate) |
+|---|---|---|---|---|---|---|
+| ชนิดผื่น | macule papule nodule infiltration ทั่ว | macule papule plaque | plaque และ **dome-shaped “punched-out”** | infiltrated plaque | infiltrated plaque มักซีด | macule มักซีด |
+| จำนวน | มากมาย | มาก | มาก | 1 + ดาวบริวาร ถึง > 5 | 1–5 | 1–2 |
+| การกระจาย | **สมมาตร** | ค่อนข้างสมมาตร | ไม่สมมาตรชัด | ไม่สมมาตร | เฉพาะที่ | ไม่แน่นอน |
+| ขอบ | **เลือน แยกจากผิวปกติยาก** | ไม่ชัด | ไม่ชัด | ชัด | **ชัดคม** | ไม่ชัดเสมอ |
+| ความรู้สึก | **ไม่เสีย** (ระยะแรก) | ลดลง | ลดลง | หาย | **หาย (ชา)** | ลดลง |
+| เชื้อในผื่น | **มาก (globi)** | มาก | มาก | น้อย (1+) | ไม่พบ | มักไม่พบ |
+
+ภาพในสไลด์: TT (ขอบนูน กลางซีด) · BL (plaque แดงหลายแผ่น กลางจาง) · BB บนหลัง (plaque วงแหวนรูป dome ตรงกลางเว้า “punched-out”) · LL (หน้าแบบ **leonine facies** คิ้วร่วง nodule ที่แขน)
+
+### ทำไมผื่น “ชา” และเส้นประสาท “โต”
+[[fig:nerve]]
+| อาการ | กลไก | ใช้ตรวจอย่างไร |
+|---|---|---|
+| ผื่นชา | เชื้อเข้า Schwann cell ของปลายประสาทเล็กในผื่น → granuloma ทำลาย → **ร้อน–เย็นหายก่อน แล้วเจ็บ แล้วสัมผัส** | ใช้สำลีปลายแหลม/หลอดร้อน-เย็นทดสอบในผื่นเทียบผิวปกติ |
+| ผื่นแห้ง ขนร่วง ไม่มีเหงื่อ | เส้นประสาท autonomic ของต่อมเหงื่อและรูขุมขนถูกทำลาย | ผื่นซีดที่แห้งและขนหาย = ระวังเรื้อน |
+| เส้นประสาทโตคลำได้ | granuloma/เชื้อในเส้นประสาท + บวม + พังผืด (✍️ “**มี nerve trunk enlargement**”) | คลำ (สไลด์ Fig 75.3): **great auricular · ulnar (ข้อศอก) · radial cutaneous (ข้อมือ) · median · common peroneal (คอกระดูก fibula) · posterior tibial** · กิ่งของ facial nerve |
+| อยู่ที่ใบหู จมูก มือเท้า | เชื้อเติบโตดีที่ **27–30 °C** (เย็นกว่าแกนกาย) | ติ่งหูหนา ยาวนิ่ม · จมูกยุบ (saddle nose) |
+| LL ผื่นไม่ชาในระยะแรก | ภูมิต่ำ เชื้อกระจายทั่วแต่ทำลายประสาทช้า → ชาแบบถุงมือถุงเท้าระยะหลัง | อย่าตัด LL เพราะ “ไม่ชา” — ดู infiltration หน้า ใบหู คิ้วร่วง |
+| มือเท้าผิดรูป | motor: ulnar → **มือ papal/claw** · median + ulnar → claw hand · peroneal → **foot drop** · facial → **lagophthalmos** · ชา → แผลฝ่าเท้า กระดูกถูกดูดซึม นิ้วสั้น | ป้องกันความพิการ = เป้าหมายสำคัญของการรักษา |
+
+**Sequelae (สไลด์ Fig 75.6)**: leonine facies (✍️ “**หน้าเป็นสิงโต**”) · madarosis (คิ้วร่วง) · ติ่งหูยาวนิ่ม · lagophthalmos กระจกตาชา keratitis ตาบอด · saddle nose · gynecomastia (อัณฑะอักเสบ) · มือ papal/claw · นิ้วสั้น · acquired ichthyosis · foot drop · hammer toes · แผลฝ่าเท้า · ภาพสไลด์ Fig 75.5: ตาบอด และผิวสีเทาอมฟ้าจาก **clofazimine**
+
+### วินิจฉัย (WHO — ข้อมูลเสริม)
+Cardinal signs อย่างน้อย 1 ข้อ: (1) **ผื่นซีดหรือแดงที่ชาชัดเจน** (2) **เส้นประสาทส่วนปลายโต** ร่วมกับชา/อ่อนแรงในบริเวณที่เลี้ยง (3) **slit-skin smear พบ acid-fast bacilli** · การแบ่งเพื่อรักษา: **PB = ผื่น ≤ 5 และ smear ลบ** · **MB = ผื่น > 5 หรือมีเส้นประสาทเกี่ยวข้อง หรือ smear บวก**
+
+### การรักษา — สไลด์ (Table 75.4) vs WHO 2018
+| | สไลด์ (สูตร WHO เดิม) | **WHO 2018 (ปัจจุบัน)** |
+|---|---|---|
+| MB | rifampicin 600 mg เดือนละครั้ง + clofazimine 300 mg เดือนละครั้งและ 50 mg ทุกวัน + dapsone 100 mg ทุกวัน · **12 เดือน** | เหมือนเดิม · **12 เดือน** |
+| PB | rifampicin + dapsone (2 ยา) **6 เดือน** | **3 ยาเหมือน MB (R + D + C) 6 เดือน** |
+| ผื่นเดียว | ROM (rifampicin 600 + ofloxacin 400 + minocycline 100) ครั้งเดียว | **ไม่ใช้แล้ว** — รักษาแบบ PB |
+| ผู้สัมผัสร่วมบ้าน | — | **single-dose rifampicin (SDR-PEP)** หลังตรวจว่าไม่เป็นโรค |
+
+### Leprosy reactions (ข้อมูลเสริม — สไลด์แสดงในแผนภาพ spectrum)
+| | Type 1 (reversal) | Type 2 (ENL) |
+|---|---|---|
+| ใคร | borderline (BT–BL) — ภูมิไม่คงที่ | BL–LL — เชื้อมาก |
+| กลไก | Th1 เพิ่มเร็ว (มักหลังเริ่ม MDT) → อักเสบที่ผื่นและเส้นประสาทเดิม | immune complex + neutrophil |
+| อาการ | ผื่นเดิมแดงบวม + **เส้นประสาทอักเสบเจ็บ อ่อนแรงใหม่** | **nodule แดงเจ็บจำนวนมาก (erythema nodosum leprosum)** + ไข้ ปวดข้อ ม่านตาอักเสบ อัณฑะอักเสบ |
+| รักษา | **prednisolone** (ป้องกันเส้นประสาทเสีย) · **ให้ MDT ต่อ** | prednisolone · thalidomide · clofazimine ขนาดสูง · **ให้ MDT ต่อ** |
+""",
+    ["Leprosy = ผื่นซีด/แดงที่ชา + เส้นประสาทโต (✍️ nerve trunk enlargement) ± smear บวก",
+     "TT (Th1): ผื่นน้อย ขอบชัด ชา ไม่พบเชื้อ · LL (Th2): ผื่นมาก สมมาตร ขอบเลือน เชื้อมาก leonine facies (✍️ หน้าเป็นสิงโต)",
+     "PB ≤ 5 ผื่น smear ลบ · MB > 5 หรือ smear บวก · WHO 2018: R + D + C ทุกราย (PB 6 เดือน · MB 12 เดือน)",
+     "คลำ ulnar · common peroneal · great auricular · radial cutaneous · posterior tibial",
+     "Reaction type 1 (ผื่นเดิมบวม + neuritis) / type 2 ENL (nodule เจ็บ + ไข้) → prednisolone และให้ MDT ต่อ"],
+    [mcq(N(38), "A 35-year-old Thai farmer has three hypopigmented, dry, hairless patches with well-defined raised edges on the forearm and thigh. Sensation to light touch and temperature is absent within the patches, and the right ulnar nerve at the elbow is thickened. Slit-skin smear is negative. According to the WHO 2018 guideline, what is the treatment?",
+         ["Rifampicin, dapsone and clofazimine for 6 months", "Rifampicin and dapsone for 6 months", "Single-dose rifampicin, ofloxacin and minocycline",
+          "Rifampicin, dapsone and clofazimine for 24 months", "Isoniazid, rifampicin, pyrazinamide and ethambutol for 6 months"], 0,
+         "ผื่นซีดที่ **ชา** แห้ง ขนร่วง ขอบชัด + **ulnar nerve โต** = **leprosy** (cardinal signs) · ผื่น 3 แผ่น (≤ 5) smear ลบ = **paucibacillary** (WHO บางกรณีจัดผู้ที่มีเส้นประสาทเกี่ยวข้องเป็น MB — ในการสอบให้ยึด ≤ 5 + smear ลบ = PB) → **WHO 2018: 3 ยา (rifampicin + dapsone + clofazimine) 6 เดือน**\n\n"
+         "- **R + D 6 เดือน** — สูตร PB เดิมในสไลด์ เปลี่ยนแล้วในปี 2018\n- **ROM ครั้งเดียว** — สูตรผื่นเดียวเดิมในสไลด์ เลิกใช้แล้ว\n"
+         "- **R + D + C 24 เดือน** — MB ใช้ 12 เดือน\n- **HRZE** — วัณโรค ไม่ใช่เรื้อน",
+         "WHO 2018: PB = R + D + C 6 เดือน · MB = 12 เดือน", "Leprosy — classification and MDT", R("Leprosy Table 75.2 · Table 75.4", "WHO Guidelines for leprosy 2018"), [LEP, LEP_B, ANTIMIC, PNEURO]),
+     mcq(N(39), "A 40-year-old man with borderline tuberculoid leprosy started multidrug therapy 2 months ago. He now has redness and swelling of his existing skin patches, new pain along the ulnar nerve, and new weakness of the small muscles of the hand. He is afebrile. What is the most appropriate management?",
+         ["Start oral prednisolone and continue multidrug therapy", "Stop multidrug therapy because of drug allergy", "Add thalidomide and stop prednisolone",
+          "Switch to single-dose rifampicin", "Surgical decompression of the ulnar nerve as first-line therapy"], 0,
+         "หลังเริ่ม MDT ใน borderline: **ผื่นเดิมแดงบวม + เส้นประสาทอักเสบเจ็บ อ่อนแรงใหม่** = **type 1 (reversal) reaction** — Th1 ฟื้นเร็วจนอักเสบที่ผื่นและเส้นประสาท · ต้องให้ **prednisolone** เร็วเพื่อกันความพิการถาวร และ **ให้ MDT ต่อ** (ข้อมูลเสริม — WHO)\n\n"
+         "- **หยุด MDT** — reaction ไม่ใช่แพ้ยา และเชื้อยังต้องรักษา\n- **Thalidomide** — ใช้ใน type 2 (ENL) ไม่ใช่ type 1\n"
+         "- **SDR** — สำหรับป้องกันในผู้สัมผัส\n- **ผ่าตัดก่อน** — ใช้เมื่อ steroid ไม่ได้ผลหรือมีฝี",
+         "Type 1 reaction = ผื่นเดิมบวม + neuritis → prednisolone + ให้ MDT ต่อ", "Leprosy reactions", ["WHO Guidelines for leprosy 2018 (ไม่อยู่ในสไลด์)", "สไลด์ อ.ภูริต — Fig 75.2 (leprosy reactions)"], [LEP, LEP_B, CS, PNEURO]),
+     mcq(N(40), "A 45-year-old man presents with diffuse infiltration and thickening of the face and ear lobes, loss of the lateral eyebrows, and numerous symmetric, ill-defined papules and nodules on the trunk and limbs. Sensation over the lesions is largely preserved. Which finding is expected?",
+         ["Slit-skin smear showing numerous acid-fast bacilli in clumps (globi)", "Negative slit-skin smear with well-formed epithelioid granulomas",
+          "Single sharply demarcated anaesthetic plaque", "A strongly positive lepromin (Mitsuda) reaction", "Spontaneous healing without treatment"], 0,
+         "หน้าและติ่งหูหนา (leonine facies — ✍️ “หน้าเป็นสิงโต”) คิ้วร่วง (madarosis) ผื่น/nodule จำนวนมาก **สมมาตร ขอบเลือน ความรู้สึกยังดี** = **lepromatous leprosy** (Th2 ภูมิต่อเชื้อต่ำ) → เชื้อเต็มผิวหนัง: **smear พบ AFB จำนวนมากเป็นกลุ่ม (globi)** (สไลด์ Table 75.2)\n\n"
+         "- **Smear ลบ + granuloma ชัด** — tuberculoid\n- **ผื่นเดียวขอบชัดชา** — TT\n"
+         "- **Lepromin test บวกแรง** — สะท้อน CMI ดี (TT) · LL ให้ผลลบ\n- **หายเอง** — LL ไม่หายเอง (indeterminate บางรายหายเองได้)",
+         "LL = หน้าสิงโต คิ้วร่วง ผื่นสมมาตรมาก ไม่ชาระยะแรก · smear globi", "Leprosy — lepromatous", R("Leprosy Fig 75.4 · Table 75.2 · Fig 75.6"), [LEP, LEP_B, GRAM])],
+    [LEP, LEP_B, PNEURO, ENTRAP, ANTIMIC, CS, RASH], {"spec": F.lepro_spectrum(), "nerve": F.lepro_nerve()},
+    source="สไลด์ อ.ภูริต — Leprosy (หน้า 102–112 ภาพล้วน) + WHO Guidelines for the diagnosis, treatment and prevention of leprosy 2018")
+
+# ═════════════════════════════════════════════ 17
+sec("derm-d1-17", "Erythema multiforme vs SJS/TEN — target lesion, ยาต้นเหตุ, HLA, SCORTEN และการดูแล",
+    "EM ตามหลัง HSV ไม่ลามเป็น TEN · SJS/TEN จากยา 4–28 วัน · granulysin → keratinocyte ตายทั้งชั้น · < 10 / 10–30 / > 30% · SCORTEN", 13,
+"""### Erythema multiforme (สไลด์ Key features)
+- **หายเองได้แต่กลับเป็นซ้ำได้** · **target ชนิด papule ขึ้นทันที ส่วนใหญ่ภายใน 24 ชม.**
+- target 2 แบบ: (1) **typical** — อย่างน้อย 3 วง (2) **atypical papular** — มีแค่ 2 วง และ/หรือขอบไม่ชัด · ชอบ **ปลายมือเท้าและหน้า (acrofacial)**
+- **EM minor**: target ± atypical papular · เยื่อบุไม่มีหรือน้อย · ไม่มีอาการทางระบบ
+- **EM major**: เหมือนกันแต่ **เยื่อบุเป็นรุนแรง** + อาการทางระบบ
+- **HSV ที่นำมาก่อน = สาเหตุที่พบบ่อยที่สุด** · บางครั้งติดเชื้ออื่น · ยาพบน้อย
+- วินิจฉัยด้วย clinicopathologic correlation · **EM ไม่ลุกลามเป็น TEN**
+- สาเหตุ (Table 20.2): **ติดเชื้อ ~90%** — **HSV-1/2**, VZV, EBV, CMV, hepatitis, parvovirus B19, HIV · **Mycoplasma pneumoniae** · Histoplasma · ยา (ไม่บ่อย): NSAID, sulfonamide, anticonvulsant, aminopenicillin, allopurinol · โรคทางระบบ: IBD, lupus (Rowell), Behçet
+- ภาพ: urticarial → crusted center → polycyclic → typical bull’s-eye ที่ฝ่ามือ/หลังมือ (มีตุ่มน้ำกลาง) · Koebner · ลำตัว (ศูนย์กลางคล้ำ/สะเก็ด ช่วยแยกจาก morbilliform drug eruption) · ริมฝีปาก EM major มีสะเก็ดเลือด
+
+### SJS/TEN (สไลด์ — Lancet 2017; Harr & French 2010)
+- **อัตราตาย SJS 1–5% · TEN 25–35%** · เป็นสเปกตรัมเดียวกันของ epidermal necrolysis
+- เกิด **4–28 วันหลังได้ยา** · Mycoplasma และ HSV พบในบางราย (โดยเฉพาะเด็ก)
+- ปัจจัยเสี่ยง: **พันธุกรรม (HLA, เอนไซม์ย่อยยา)** · มะเร็ง · ฉายรังสีร่วม · ติดเชื้อบางชนิด (**HIV**)
+- **ระยะแรก**: ไข้ อาการคล้ายไข้หวัด **อาการทางตา** หู คอ จมูก
+- **ผื่นแรก**: macule **สีแดงคล้ำ (dusky red) รูปร่างไม่สม่ำเสมอ** · **atypical target** (สไลด์เทียบภาพ atypical targets ใน SJS กับ typical targets ใน EM)
+- **เนื้อตายรวมกัน → แดงกว้าง ตุ่มน้ำหย่อน (flaccid) หนังกำพร้าลอกเป็นแผ่น · Nikolsky sign**
+- **80%**: แดง ตุ่มน้ำ แผลที่ **โพรงจมูก คอ ตา อวัยวะเพศ ทวาร**
+- ภาพ: ตาแดงและแผลเยื่อบุตา · แผลอวัยวะเพศ · SJS ในเด็กจาก TMP-SMX (สะเก็ดเลือดที่ริมฝีปาก) · ผิวลอกเหมือน “**wet cigarette paper**” · TEN ลอก > 30%
+
+[[fig:emsjs]]
+
+| (สไลด์ Table 20.1/20.4) | EM minor | EM major | SJS | SJS–TEN overlap | TEN |
+|---|---|---|---|---|---|
+| ผื่น | typical ± atypical papular | typical ± atypical papular ± ตุ่มน้ำ | dusky macule ± ลอก · atypical **แบน** | dusky macule · atypical แบน | ผื่นแดงขอบไม่ชัด ลอกเองหรือเมื่อถู |
+| ตำแหน่ง | ปลายมือเท้า หน้า | ปลายมือเท้า หน้า | **ลำตัว หน้า** | ลำตัว หน้า (รวมกัน ++) | ทั่วตัว (+++) |
+| เยื่อบุ | ไม่มี/น้อย | **รุนแรง** | รุนแรง | มี | มี |
+| อาการทางระบบ | ไม่มี | มี | มักมี | มีเสมอ | มีเสมอ |
+| ผิวลอก (% BSA) | — | — | **< 10** | **10–30** | **> 30** |
+| สาเหตุ | HSV | HSV, Mycoplasma | **ยา** (Mycoplasma บ้าง) | ยา | ยา |
+
+### ทำไมหนังกำพร้าหลุดทั้งแผ่น
+[[fig:mech]]
+| อาการ | กลไก | ใช้อย่างไร |
+|---|---|---|
+| ผื่นขึ้นหลังได้ยา 4–28 วัน | ต้องใช้เวลาให้ CD8 T cell ที่จำเพาะต่อยา (ผ่าน HLA) แบ่งตัว · ได้ยาซ้ำจะเป็นเร็วภายในวัน | **ไล่ยาทุกตัวที่เริ่มใน 4–28 วันก่อนผื่น** — ยาที่ใช้มานานหลายเดือนไม่น่าใช่ (หลักของ ALDEN — ข้อมูลเสริม) |
+| ผิวคล้ำ ตุ่มน้ำหย่อน ลอกเป็นแผ่น | **granulysin** (ตัวหลัก) FasL perforin/granzyme ทำให้ keratinocyte ตายแบบ apoptosis **ทั้งความหนา** → หลุดที่รอยต่อ dermis | Nikolsky บวก · หลังคาตุ่มบางเพราะเป็นหนังกำพร้าที่ตายแล้ว |
+| เยื่อบุตา ปาก อวัยวะเพศเป็น | เยื่อบุเป็นเยื่อบุผิวชนิดเดียวกันที่ถูกโจมตี | **ตาเป็นเรื่องเร่งด่วน** — แผลเป็นเยื่อบุตาติดกัน ตาแห้ง ตาบอด |
+| เสียน้ำ ติดเชื้อ อุณหภูมิตก | เสีย barrier เหมือนแผลไฟไหม้ | ดูแลแบบ burn unit |
+| EM ไม่ลอกทั้งแผ่น | การทำลายเป็นจุดตามเป้า (interface) ไม่ทั่วทั้งชั้น · กลไกจาก HSV antigen ในผิว | EM ไม่ลุกลามเป็น TEN (สไลด์) |
+
+### ยาที่เป็นสาเหตุบ่อย (สไลด์ Table 20.6)
+**allopurinol · aminopenicillin · thioacetazone · ARV โดยเฉพาะ NNRTI (nevirapine, efavirenz, etravirine) · barbiturate · carbamazepine · chlormezanone · phenytoin · lamotrigine · phenylbutazone · piroxicam · sulfadiazine · sulfadoxine · sulfasalazine · TMP-SMX** (amifostine อาจเพิ่ม)
+
+> **คนไทยและ HLA** (ข้อมูลเสริม): **HLA-B1502** สัมพันธ์กับ SJS/TEN จาก **carbamazepine** (และ oxcarbazepine, phenytoin) — ประเทศไทยแนะนำตรวจก่อนเริ่ม carbamazepine · **HLA-B5801** สัมพันธ์กับ SJS/TEN/DRESS จาก **allopurinol** — ตรวจก่อนเริ่มยาในผู้ป่วยไทย โดยเฉพาะ CKD
+
+### SCORTEN และการดูแล (สไลด์)
+[[fig:scorten]]
+**Approach (สไลด์ Fig 20.15)**: **หยุดยาที่อาจเป็นสาเหตุทุกตัวทันที** → **ICU/หอผู้ป่วยไฟไหม้** · ให้สารน้ำและเกลือแร่ · อาหาร · ป้องกันติดเชื้อด้วย antibiotic ointment ทาเฉพาะที่ · **ปรึกษาจักษุแพทย์** และดูแลตา · ปรึกษา urologist ถ้าท่อปัสสาวะอักเสบ · ดูแลช่องปาก · pulmonary toilet · **เพาะเชื้อจากปาก ตา ผิว เสมหะเป็นระยะ** · กายภาพป้องกันข้อติด · biological dressing · **IVIG (> 2 g/kg รวมใน 3–4 วัน) และยาอื่นระยะสั้น** — หลักฐานจากการศึกษาไม่มีกลุ่มควบคุม
+- ข้อมูลเสริม: ไม่ให้ยาปฏิชีวนะป้องกันแบบทั้งร่างกาย (ให้เมื่อมีหลักฐานติดเชื้อ) · cyclosporine และ etanercept มีข้อมูลสนับสนุนมากขึ้น แต่ยังไม่มีข้อสรุป · **ห้ามให้ยากลุ่มที่สงสัยอีกตลอดชีวิต** และให้บัตรแพ้ยา
+""",
+    ["EM: typical target 3 วง ที่ปลายมือเท้า หลัง HSV · ไม่ลุกลามเป็น TEN (สไลด์)",
+     "SJS/TEN: atypical flat dusky macule ที่ลำตัว + เยื่อบุ + ไข้ · ยา 4–28 วัน · ตาย SJS 1–5% · TEN 25–35%",
+     "SJS < 10% · overlap 10–30% · TEN > 30% BSA ที่ลอก",
+     "Granulysin/FasL → keratinocyte ตายทั้งชั้น → Nikolsky · HLA-B1502 (carbamazepine) · HLA-B5801 (allopurinol)",
+     "หยุดยาทุกตัวที่สงสัย → burn unit/ICU · จักษุแพทย์ · SCORTEN 7 ข้อ"],
+    [mcq(N(41), "A 22-year-old woman develops, over 24 hours, multiple round, raised lesions on the palms, backs of the hands and forearms, each with a dusky central blister, a pale oedematous ring and an outer red ring. She had a cold sore on the lip 10 days ago. There is mild lip erosion only, and she takes no medications. Which statement is correct?",
+         ["This is erythema multiforme triggered by HSV; it does not progress to TEN, and recurrent cases can be prevented with antiviral prophylaxis",
+          "This is early SJS and will likely progress to TEN; admit to a burn unit", "This is a fixed drug eruption; search for a culprit drug",
+          "This is urticaria; each lesion will resolve within 24 hours", "This is bullous pemphigoid; perform direct immunofluorescence"], 0,
+         "**typical target 3 วง** ขึ้นภายใน 24 ชม. ที่ **ปลายมือเท้า (acral)** ตามหลัง **เริมที่ริมฝีปาก** ไม่ใช้ยา เยื่อบุน้อย = **erythema multiforme (minor)** · สไลด์: HSV เป็นสาเหตุที่พบบ่อยที่สุด และ **EM ไม่ลุกลามเป็น TEN** · รายที่เป็นซ้ำบ่อยให้ acyclovir/valacyclovir ป้องกัน (ข้อมูลเสริม)\n\n"
+         "- **SJS** — atypical flat dusky macule ที่ลำตัว หลังได้ยา เยื่อบุรุนแรง\n- **Fixed drug eruption** — วงม่วงคล้ำไม่กี่วงขึ้นที่เดิมเมื่อได้ยาซ้ำ\n"
+         "- **Urticaria** — ไม่มีตุ่มน้ำกลาง แต่ละวงหายใน < 24 ชม.\n- **Bullous pemphigoid** — ผู้สูงอายุ ตุ่มน้ำตึงบนผื่นลมพิษ ไม่ใช่ target",
+         "Typical target ปลายมือเท้า หลัง HSV = EM ไม่กลายเป็น TEN", "Erythema multiforme", R("Erythema multiforme key features · Table 20.1"), [EMEN, EMEN_B, HSV_B]),
+     mcq(N(42), "A 30-year-old Thai man started carbamazepine for trigeminal neuralgia 16 days ago. He presents with fever, sore throat, burning eyes, painful oral and genital erosions, and dusky red, irregular macules with flat atypical targets on the trunk that are coalescing. Epidermal detachment involves about 20% of the body surface area and Nikolsky sign is positive. Which statement is most accurate?",
+         ["This is SJS–TEN overlap; stop carbamazepine immediately, admit to an ICU/burn unit with ophthalmology input — HLA-B1502 screening before starting the drug could have prevented it",
+          "This is erythema multiforme major from HSV; continue carbamazepine and start acyclovir", "This is TEN; detachment is greater than 30%",
+          "This is staphylococcal scalded skin syndrome; start cloxacillin and continue carbamazepine",
+          "This is DRESS; the key test is HLA-B5801"], 0,
+         "ผื่นแบน dusky + atypical target ที่ลำตัว + เยื่อบุหลายที่ + ไข้ + Nikolsky บวก **16 วันหลังเริ่ม carbamazepine** (อยู่ในช่วง 4–28 วัน) และลอก **20% (10–30%) = SJS–TEN overlap** (สไลด์ Table 20.4) → **หยุดยาทันที** ดูแลแบบ burn unit ปรึกษาจักษุแพทย์ (สไลด์ Fig 20.15) · ผู้ป่วยไทย/เอเชียควรตรวจ **HLA-B1502** ก่อนเริ่ม carbamazepine\n\n"
+         "- **EM major** — typical target ที่ปลายมือเท้า หลัง HSV ไม่ใช่ผื่นแบนที่ลำตัวหลังเริ่มยา และห้ามให้ยาต่อ\n- **TEN** — ต้องลอก > 30%\n"
+         "- **SSSS** — แยกตื้นใต้ชั้นขี้ไคล ไม่มีแผลเยื่อบุ พบในเด็ก/ไตวาย\n- **DRESS** — ไข้ ผื่นบวม ตับอักเสบ eosinophil 2–8 สัปดาห์ · HLA-B5801 คู่กับ allopurinol",
+         "ยาใหม่ 4–28 วัน + dusky macule + เยื่อบุ + ลอก 10–30% = SJS–TEN overlap → หยุดยา", "SJS/TEN — culprit drug and HLA", R("SJS/TEN clinical presentation · Table 20.4 · Table 20.6 · Fig 20.15", "Thai FDA/HLA-B1502 screening (ไม่อยู่ในสไลด์)"), [SJS, SJS_B, ADR, PKSP]),
+     mcq(N(43), "A 52-year-old man with TEN has, on day 1: heart rate 128/min, BSA detached 35%, serum urea 12 mmol/L, glucose 16 mmol/L, bicarbonate 22 mmol/L, and no history of cancer. What is his SCORTEN score?",
+         ["3", "4", "5", "6", "7"], 2,
+         "SCORTEN (สไลด์ Table 20.7) ให้ 1 คะแนนต่อข้อ: **อายุ > 40** (52 ✓) · **HR > 120** (128 ✓) · มะเร็ง (✗) · **BSA ลอกวันแรก > 10%** (35% ✓) · **urea > 10 mmol/L** (12 ✓) · bicarbonate < 20 (22 ✗) · **glucose > 14 mmol/L** (16 ✓) = **5 คะแนน** → อัตราตายตามสไลด์ **~90%**\n\n"
+         "- **3 หรือ 4** — นับไม่ครบ (ลืม urea หรือ glucose)\n- **6** — นับ bicarbonate 22 ผิด (เกณฑ์คือ < 20)\n- **7** — ต้องมีมะเร็งและ HCO3 < 20 ด้วย",
+         "SCORTEN: อายุ HR มะเร็ง BSA urea HCO3 glucose — ≥ 5 ตาย ~90%", "SCORTEN", R("TEN — SCORTEN (Table 20.7)"), [SJS, SJS_B])],
+    [EMEN, EMEN_B, SJS, SJS_B, ADR, PKSP, HSV_B, BULL, SHOCK], {"emsjs": F.em_sjs(), "mech": F.sjs_mech(), "scorten": F.scorten()},
+    source="สไลด์ อ.ภูริต — Erythema multiforme · SJS/TEN · SCORTEN · Approach (หน้า 113–131) + กลไก/HLA (ไม่อยู่ในสไลด์)")
+
+# ═════════════════════════════════════════════ 18
+sec("derm-d1-18", "Panniculitis และ erythema nodosum — nodule กดเจ็บที่หน้าแข้งที่ “ไม่แตก”",
+    "Septal panniculitis ไม่มี vasculitis · สมมาตร หน้าแข้ง 3–6 สัปดาห์ · strep/TB/sarcoid/IBD/ยา/ตั้งครรภ์ · NSAID + หาสาเหตุ", 8,
+"""### Panniculitis (สไลด์)
+สไลด์วงชั้น **“fat”** ในภาพตัดขวางผิวหนัง — panniculitis = การอักเสบของไขมันใต้ผิว จึงเห็นเป็น **nodule** (คลำได้มากกว่าเห็น) · ผิวด้านบนแค่แดง
+
+### Erythema nodosum — Clinical (สไลด์)
+- **nodule และ plaque แดง กดเจ็บ สมมาตร ที่หน้าแข้ง (ด้านหน้าของขา)**
+- เริ่มเฉียบพลัน · **ไม่แตกเป็นแผล ไม่เป็นแผลเป็น**
+- มักมีไข้ อ่อนเพลีย ปวดข้อ ข้ออักเสบ ปวดศีรษะ · **หญิงมากกว่าชาย**
+- อยู่ **3–6 สัปดาห์** ผื่นใหม่ขึ้นได้ถึง 6 สัปดาห์
+- ภาพ: nodule แดงที่หน้าแข้ง · ระยะหลังเป็นรอยม่วงคล้ำคล้ายรอยช้ำ
+
+### Etiology (สไลด์)
+- **ติดเชื้อ ยา มะเร็ง โรคภูมิต้านตนเอง โรคอักเสบ** ล้วนกระตุ้น EN ได้
+- ติดเชื้อทั้งแบคทีเรีย ไวรัส เชื้อรา โปรโตซัว — **strep ทางเดินหายใจเป็นสาเหตุที่พบบ่อยที่สุดในเด็ก**
+- **ไม่ทราบสาเหตุ 37–60%**
+
+### Histology (สไลด์ Fig 70-3)
+**septa ของไขมันหนาขึ้น** มีเซลล์อักเสบรวม multinucleated giant cell · **Miescher’s radial granuloma** (histiocyte เล็กเรียงรอบช่องรูปดาว)
+
+[[fig:en]]
+
+#### ทำไมถึงมีอาการนี้
+| อาการ | กลไก | ใช้แยกโรค |
+|---|---|---|
+| ก้อนแดง **กดเจ็บมาก** | อักเสบที่ **septa** ซึ่งเป็นที่อยู่ของหลอดเลือดและเส้นประสาท บวมดึงรั้ง | กดเจ็บชัดกว่า cellulitis ที่แดงลามแผ่นใหญ่ |
+| **ไม่แตก ไม่เป็นแผลเป็น** | ไม่มี vasculitis และก้อนไขมันไม่ตาย · epidermis/dermis ปกติ | ก้อนที่แตกเป็นแผล → คิดถึง **erythema induratum (TB)**, ENL, pancreatic panniculitis, vasculitis |
+| สีเปลี่ยนเหมือนรอยช้ำ | เม็ดเลือดแดงรั่วออก hemoglobin สลาย แดง → ม่วง → เขียวเหลือง (erythema contusiformis) | ไม่ใช่ purpura จากเกล็ดเลือด |
+| สมมาตร หน้าแข้ง | เป็น **ปฏิกิริยาภูมิไวเกินต่อ antigen ที่อยู่ไกล** (delayed hypersensitivity) ไม่ใช่เชื้อในผิว · หน้าแข้งไหลเวียนช้าและเย็น | **หาสาเหตุทางระบบ** ไม่ใช่เพาะเชื้อจากก้อน |
+| ไข้ ปวดข้อ | cytokine จากการตอบสนองต่อตัวกระตุ้นเดียวกัน | EN + hilar LN + ข้อเท้าอักเสบ + ไข้ = **Löfgren syndrome (sarcoidosis)** พยากรณ์ดี |
+
+### สาเหตุที่ต้องหา (ข้อมูลเสริม — จัดตามความถี่ในบริบทไทย)
+| กลุ่ม | ตัวอย่าง | ตรวจ |
+|---|---|---|
+| ติดเชื้อ | **strep throat** · **วัณโรค (primary)** · Yersinia/Salmonella/Campylobacter (ท้องเสีย) · Mycoplasma · เชื้อรา (histoplasmosis) · leprosy (ENL — กลไกต่าง) | ASO/throat culture · **CXR** · tuberculin/IGRA · เพาะเชื้ออุจจาระ |
+| ยา | **ยาคุมกำเนิด (estrogen)** · sulfonamide · amoxicillin | ประวัติยา 2–3 สัปดาห์ก่อน |
+| อักเสบ | **sarcoidosis** · **IBD** (คู่กับการกำเริบของลำไส้) · Behçet | CXR (bilateral hilar LN) · ประวัติท้องเสีย |
+| อื่น ๆ | **ตั้งครรภ์** · มะเร็งเม็ดเลือด (พบน้อย) | pregnancy test · CBC |
+
+### การรักษา (สไลด์)
+- **รักษาโรคที่เกี่ยวข้อง** · **นอนพัก** (ยกขา ใส่ถุงน่องช่วย) · **aspirin หรือ NSAID**
+- ข้อมูลเสริม: potassium iodide ในรายดื้อ · steroid ทั้งร่างกายเฉพาะเมื่อ **ตัดการติดเชื้อ (โดยเฉพาะ TB) ได้แล้ว** · หยุดยาคุมที่สงสัย
+""",
+    ["EN = septal panniculitis ไม่มี vasculitis → nodule แดง กดเจ็บ สมมาตรที่หน้าแข้ง ไม่แตก ไม่เป็นแผลเป็น",
+     "อยู่ 3–6 สัปดาห์ หญิง > ชาย มีไข้ ปวดข้อ · สีเปลี่ยนเหมือนรอยช้ำ",
+     "สาเหตุ: strep (เด็ก) · TB · sarcoid (Löfgren) · IBD · ยาคุม/sulfa · ตั้งครรภ์ · idiopathic 37–60%",
+     "ตรวจพื้นฐาน: CBC ESR ASO/throat culture CXR (± tuberculin/IGRA) pregnancy test",
+     "รักษา: หาสาเหตุ + นอนพักยกขา + aspirin/NSAID (สไลด์) · steroid หลังตัด TB เท่านั้น"],
+    [mcq(N(44), "A 32-year-old woman has a 1-week history of fever, bilateral ankle arthritis, and several tender, warm, red nodules 2–4 cm on both shins. Chest radiograph shows bilateral hilar lymphadenopathy. Which statement is correct?",
+         ["This is Löfgren syndrome (acute sarcoidosis) with erythema nodosum and usually has a good prognosis; NSAIDs and rest are the mainstay", "The nodules will ulcerate and leave scars",
+          "This is cutaneous polyarteritis nodosa requiring cyclophosphamide", "This is erythema induratum and requires immediate anti-TB therapy without further evaluation",
+          "Excisional biopsy of each nodule is required before any treatment"], 0,
+         "EN (nodule แดงกดเจ็บสมมาตรที่หน้าแข้ง) + ข้อเท้าอักเสบ + ไข้ + **bilateral hilar lymphadenopathy** = **Löfgren syndrome** (sarcoidosis เฉียบพลัน) — พยากรณ์ดี หายเองส่วนใหญ่ · รักษาตามสไลด์: **นอนพัก + NSAID/aspirin** (ข้อมูล Löfgren เป็นข้อมูลเสริม)\n\n"
+         "- **แตกเป็นแผล** — EN เป็น septal panniculitis ไม่มี vasculitis จึงไม่แตก ไม่เป็นแผลเป็น (สไลด์)\n- **Cutaneous PAN** — nodule ตามแนวหลอดเลือด livedo แผล\n"
+         "- **Erythema induratum** — ที่น่อง (ด้านหลัง) แตกเป็นแผล lobular panniculitis + vasculitis · ก่อนรักษา TB ต้องหาหลักฐาน\n- **ตัดทุกก้อน** — ไม่จำเป็น ถ้าจะ biopsy ใช้ deep incisional biopsy ก้อนเดียวในรายไม่ชัด",
+         "EN + bilateral hilar LN + ข้อเท้าอักเสบ = Löfgren — NSAID", "Erythema nodosum — Löfgren syndrome", R("Erythema nodosum Clinical · Etiology · Treatment"), [EMEN, EMEN_B, SUBQ, NSAID]),
+     mcq(N(45), "Why do erythema nodosum lesions typically resolve without ulceration or scarring, unlike erythema induratum?",
+         ["Inflammation is confined to the fibrous septa of the subcutaneous fat without vasculitis or fat necrosis", "The epidermis is destroyed but regenerates from the basal layer",
+          "The lesions contain no inflammatory cells", "Immune complexes deposit only in the epidermis", "The nodules are composed of oedema fluid that is reabsorbed within 24 hours"], 0,
+         "EN = **septal panniculitis without vasculitis** (สไลด์ histology: septa หนาขึ้น มี giant cell และ Miescher’s granuloma) — ก้อนไขมันไม่ตาย หลอดเลือดไม่ถูกทำลาย epidermis และ dermis ปกติ จึง **ไม่แตก ไม่เป็นแผลเป็น** · erythema induratum เป็น **lobular** panniculitis + vasculitis → ไขมันตาย → แตกเป็นแผล\n\n"
+         "- **epidermis ถูกทำลาย** — ผิวด้านบน EN ปกติ\n- **ไม่มีเซลล์อักเสบ** — มี neutrophil/histiocyte/giant cell ใน septa\n"
+         "- **immune complex ใน epidermis** — ไม่ใช่กลไก\n- **บวมน้ำหายใน 24 ชม.** — นั่นคือ wheal; EN อยู่ 3–6 สัปดาห์",
+         "EN = septal ไม่มี vasculitis → ไม่แตก", "Erythema nodosum — histopathology", R("Erythema nodosum Fig 70-3"), [EMEN, EMEN_B, BX])],
+    [EMEN, EMEN_B, SUBQ, NSAID, FEVER], {"en": F.en()},
+    source="สไลด์ อ.ภูริต — Panniculitis · Erythema nodosum (หน้า 132–139)")
+
+# ── END SECTIONS
+
+
+# ═════════════════════════════════════════════ ประกอบคาบ
+LECNAME = "Common skin diseases for internists (อ.ภูริต)"
+MEQ = [{"id": "DERM-D1-MEQ-01", "part": "MEQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Drug-induced SJS/TEN — classification, culprit drug, HLA, SCORTEN and management",
+ "vignette": """ผู้ป่วยหญิงไทยอายุ 58 ปี มาห้องฉุกเฉินด้วยไข้ 3 วัน เจ็บคอ แสบตา แล้วมีผื่นแดงคล้ำขึ้นที่หน้าอกและหลังลามเร็วภายใน 24 ชั่วโมง กลืนเจ็บ ปัสสาวะแสบ
+ประวัติยา: เป็นโรคเกาต์ เริ่ม **allopurinol 300 mg/วัน เมื่อ 3 สัปดาห์ก่อน** · 4 วันก่อนซื้อ amoxicillin กินเองเพราะเจ็บคอ (เคยกินหลายครั้งในอดีตไม่มีปัญหา) · paracetamol เมื่อปวด · omeprazole ทุกวันมา 2 ปี
+PH: CKD stage 3 (Cr 1.8 mg/dL) · ไม่มีประวัติมะเร็ง
+PE: BT 38.9 °C, BP 104/62 mmHg, PR 124/min, RR 22/min · ตาแดงทั้งสองข้างมีขี้ตาเป็นแผ่น · ริมฝีปากมีแผลถลอกและสะเก็ดเลือด แผลในปากหลายแห่ง · แผลที่อวัยวะเพศ · ผื่นเป็น macule สีแดงคล้ำรูปร่างไม่สม่ำเสมอ บางวงมีตุ่มน้ำตรงกลาง รวมกันเป็นแผ่นที่ลำตัว · ตุ่มน้ำหย่อนและหนังกำพร้าลอกที่หลังและหน้าอก ประมาณ **15% ของพื้นที่ผิวกาย** · Nikolsky sign บวก
+Lab: urea 14 mmol/L (BUN 39 mg/dL) · glucose 9 mmol/L · HCO3 21 mmol/L · WBC 11,800/µL ไม่มี eosinophilia · AST/ALT ปกติ""",
+ "questions": [
+  {"q": "1. จงให้การวินิจฉัยพร้อมเกณฑ์ที่ใช้แบ่งชนิด และบอกโรคที่ต้องแยกอย่างน้อย 3 โรคพร้อมเหตุผลที่ไม่น่าใช่ (4 คะแนน)",
+   "a": """**การวินิจฉัย**: **SJS–TEN overlap** — ผื่น dusky macule/atypical flat target ที่ลำตัว + เยื่อบุ ≥ 2 แห่ง (ตา ปาก อวัยวะเพศ) + ไข้ + Nikolsky บวก · แบ่งตาม **% BSA ที่ลอก** (สไลด์ Table 20.4): SJS < 10% · **overlap 10–30%** · TEN > 30% (นับเฉพาะผิวที่ลอก/ลอกได้ ไม่นับผื่นแดง)
+**โรคที่ต้องแยก**: EM major (typical target ที่ปลายมือเท้า หลัง HSV ไม่ลอกเป็นแผ่น — ไม่เข้า) · SSSS (แยกตื้นใต้ขี้ไคล ไม่มีแผลเยื่อบุ พบในเด็ก/ไตวาย — ผู้ป่วยมีเยื่อบุหลายแห่ง) · DRESS (หน้าบวม ตับอักเสบ eosinophil เกิด 2–8 สัปดาห์ ผิวไม่ลอกเป็นแผ่น) · AGEP (ตุ่มหนองเล็กปลอดเชื้อจำนวนมากบนผื่นแดง เกิดใน 1–2 วัน) · generalized bullous FDE (วงคล้ำไม่กี่วง เยื่อบุน้อย ไม่มีไข้สูง)"""},
+  {"q": "2. ยาตัวใดน่าจะเป็นสาเหตุมากที่สุด จงให้เหตุผลตามเวลาและชนิดของยา และอธิบายกลไกที่ทำให้หนังกำพร้าลอกทั้งแผ่น (4 คะแนน)",
+   "a": """**Allopurinol** เป็นตัวการมากที่สุด: เริ่มยา **21 วันก่อนผื่น — อยู่ในช่วง 4–28 วัน** (สไลด์) · อยู่ในรายการยาเสี่ยงสูง (สไลด์ Table 20.6) · **CKD ทำให้ oxypurinol คั่ง** และขนาด 300 mg สูงเกินสำหรับไต · คนไทยที่มี **HLA-B5801** เสี่ยงสูงมาก
+- Amoxicillin: กินมา 4 วัน ถ้าเป็นการได้ยาครั้งแรกเร็วเกินไป แต่เคยกินหลายครั้งไม่มีปัญหา → โอกาสต่ำกว่า (ควรหยุดด้วยเพราะไม่จำเป็น)
+- Omeprazole 2 ปี: ใช้มานานก่อนผื่น ไม่น่าเป็น · paracetamol: เสี่ยงต่ำ
+**กลไก**: ยา/เมแทบอไลต์จับ HLA → CD8 T cell และ NK cell เฉพาะยาแบ่งตัว (จึงใช้เวลา 4–28 วัน) → หลั่ง **granulysin** (ตัวหลัก) FasL perforin/granzyme → **keratinocyte ตายแบบ apoptosis ทั้งความหนา** → หลุดที่รอยต่อกับ dermis → ตุ่มน้ำหย่อน Nikolsky บวก เยื่อบุเป็นแผล"""},
+  {"q": "3. จงคำนวณ SCORTEN ของผู้ป่วยรายนี้ แสดงทีละข้อ และบอกความหมาย (3 คะแนน)",
+   "a": """อายุ > 40 ✓ (1) · HR > 120 ✓ (124) (1) · มะเร็ง ✗ (0) · BSA ลอกวันแรก > 10% ✓ (15%) (1) · urea > 10 mmol/L ✓ (14) (1) · HCO3 < 20 ✗ (21) (0) · glucose > 14 mmol/L ✗ (9) (0)
+**SCORTEN = 4** → อัตราตายตามสไลด์ **~58%** · ใช้บอกความรุนแรง สื่อสารกับญาติ และตัดสินใจรับไว้ใน ICU/burn unit · คำนวณซ้ำวันที่ 3"""},
+  {"q": "4. จงบอกแผนการดูแลในโรงพยาบาลอย่างเป็นระบบ (4 คะแนน)",
+   "a": """- **หยุด allopurinol ทันที** และยาที่ไม่จำเป็นทุกตัว (amoxicillin) — การหยุดเร็วลดอัตราตาย
+- **รับไว้ ICU/burn unit** (สไลด์ Fig 20.15) ห้องอุ่น · สารน้ำและเกลือแร่ (น้อยกว่าสูตรไฟไหม้) ติดตามปัสสาวะ · อาหารทางสายถ้ากลืนไม่ได้ · ยาแก้ปวด · ป้องกันลิ่มเลือด
+- **ผิวหนัง**: ไม่ลอกหลังคาตุ่มที่ยังติด ใช้ผ้าปิดแผลไม่ติดผิว/biological dressing · antibiotic ointment เฉพาะที่ · **เพาะเชื้อผิว ปาก ตา เสมหะเป็นระยะ** — ไม่ให้ยาปฏิชีวนะป้องกันทั้งร่างกาย ให้เมื่อมีหลักฐานติดเชื้อ
+- **ตา**: **ปรึกษาจักษุแพทย์ทันทีและทุกวัน** น้ำตาเทียม steroid/antibiotic หยอด เลาะพังผืด ± amniotic membrane · **ปาก**: น้ำยาบ้วนปาก ยาชาเฉพาะที่ · **อวัยวะเพศ/ท่อปัสสาวะ**: ปรึกษา urology/gynecology ป้องกันพังผืดตีบ
+- **ยาทั้งร่างกาย**: IVIG (> 2 g/kg ใน 3–4 วัน — สไลด์) หรือ cyclosporine ระยะสั้น พิจารณาได้ แต่หลักฐานยังไม่แน่นอน · กายภาพป้องกันข้อติด"""},
+  {"q": "5. ก่อนจำหน่าย จะให้คำแนะนำและวางแผนป้องกันอย่างไร และการเกิดครั้งนี้ป้องกันได้หรือไม่ (2 คะแนน)",
+   "a": """- **บัตรแพ้ยา allopurinol** ห้ามได้รับซ้ำตลอดชีวิต · รายงาน ADR (ศูนย์เฝ้าระวังความปลอดภัยด้านผลิตภัณฑ์สุขภาพ) · บอกญาติสายตรงว่าอาจมี HLA เสี่ยงเหมือนกัน
+- เกาต์: เลือกยาลดกรดยูริกตัวอื่นภายใต้การดูแล (เช่น febuxostat เริ่มขนาดต่ำ เฝ้าระวัง) · ติดตามภาวะแทรกซ้อนระยะยาว: ตาแห้ง แผลเป็นเยื่อบุตา ท่อน้ำตาตัน เล็บ ผิวสีเปลี่ยน พังผืดอวัยวะเพศ
+- **ป้องกันได้**: ตรวจ **HLA-B5801 ก่อนเริ่ม allopurinol** ในคนไทย โดยเฉพาะผู้ที่มี CKD · เริ่มขนาดต่ำตามการทำงานของไต (≤ 100 mg/วัน แล้วค่อยเพิ่ม)"""}],
+ "ref": ["สไลด์ อ.ภูริต — SJS/TEN clinical presentation · Table 20.4 · Table 20.6 · SCORTEN · Fig 20.15",
+         "Lancet 2017;390 (SJS/TEN review) · Harr & French, Orphanet J Rare Dis 2010;5:39 · UK (BAD) SJS/TEN guideline 2016 · HLA-B5801/allopurinol pharmacogenomics"],
+ "nl": [SJS, SJS_B, ADR, PKSP, SHOCK],
+ "years": [], "_kind": "meq", "_set": "derm"}]
+
+OSCE = [{"id": "DERM-D1-OSCE-01", "part": "OSCE/SAQ", "lec": LEC, "lecture": LECNAME,
+ "topic": "Describe a skin lesion and counsel a patient with secondary syphilis",
+ "station": "ผู้ป่วยมาตรฐาน 8 นาที (บรรยายภาพ 2 นาที + ให้คำปรึกษา 6 นาที)",
+ "instruction": """**สถานการณ์**: ชายไทยอายุ 24 ปี มาด้วยผื่นไม่คันทั่วตัว 2 สัปดาห์ ผู้คุมสอบยื่นภาพถ่ายผื่นให้ดู:
+ภาพ 1 ลำตัว — ตุ่มนูนสีแดงน้ำตาลขนาด 3–8 มม. จำนวนมาก กระจายสมมาตร ผิวด้านบนมีขุยบาง · ภาพ 2 ฝ่ามือและฝ่าเท้าทั้งสองข้าง — ตุ่มนูนแดงน้ำตาลกลม ขอบมีขุยเป็นวงแหวนรอบขอบ ไม่มีตุ่มน้ำ
+ผลตรวจ: RPR reactive **1:64** · TPHA reactive · anti-HIV negative · ผู้ป่วยบอกว่า 2 เดือนก่อนมีแผลที่องคชาตไม่เจ็บแล้วหายเอง มีคู่นอนประจำ 1 คน และคู่นอนชั่วคราวอีก 1 คนเมื่อ 6 สัปดาห์ก่อน ไม่เคยแพ้ยา
+
+**งานของนักศึกษา**: (1) **บรรยายรอยโรคในภาพ** ให้ครบตามหลักการบรรยาย และบอกการวินิจฉัย (2) **แจ้งผลการวินิจฉัยและให้คำปรึกษา** ผู้ป่วยมาตรฐานเรื่องโรค การรักษา ปฏิกิริยาหลังฉีดยา การติดตามผล และการแจ้งคู่นอน""",
+ "answer": """**ตัวอย่างการบรรยายที่ได้คะแนนเต็ม**: “Multiple, discrete, symmetrically distributed, 3–8 mm reddish-brown papules with fine scale on the trunk, and scaly papules with a peripheral collarette of scale (Biett’s collarette) on both palms and soles; no vesicles or pustules” → **papulosquamous eruption = secondary syphilis** (✍️ “papule < 1 cm นูน มีขุย · papulosquamous · 2nd syphilis”)
+
+**เกณฑ์ให้คะแนน (20 คะแนน)**
+
+| หมวด | สิ่งที่ต้องทำ | คะแนน |
+|---|---|---|
+| บรรยาย | การกระจาย (ลำตัว ฝ่ามือฝ่าเท้า สมมาตร) และการเรียงตัว (discrete) | 1 |
+| บรรยาย | ชนิด (papule) ขนาด (< 1 cm) สี (แดงน้ำตาล) | 1 |
+| บรรยาย | secondary change: fine scale · **collarette ที่ฝ่ามือฝ่าเท้า** · บอกสิ่งที่ “ไม่มี” (ตุ่มน้ำ หนอง) | 1 |
+| บรรยาย | การวินิจฉัย secondary syphilis + โรคแยก 1–2 โรค (pityriasis rosea, guttate psoriasis, drug eruption) | 1 |
+| เริ่มต้น | แนะนำตัว ยืนยันตัวผู้ป่วย ความเป็นส่วนตัว ถามความเข้าใจเดิมก่อน | 1 |
+| แจ้งผล | บอกการวินิจฉัยด้วยภาษาง่าย ไม่ตัดสิน: ซิฟิลิสระยะที่ 2 ติดทางเพศสัมพันธ์ รักษาหายได้ · เชื่อมกับแผลไม่เจ็บเมื่อ 2 เดือนก่อน | 2 |
+| แจ้งผล | อธิบายผลเลือดสองชนิด: RPR ใช้ติดตามการรักษา · TPHA จะบวกตลอดชีวิต ไม่ใช่ว่ายังไม่หาย | 1 |
+| รักษา | **Benzathine penicillin G 2.4 ล้านยูนิต ฉีดเข้ากล้ามครั้งเดียว** (แบ่งฉีดสะโพกสองข้าง) · ถามประวัติแพ้ยาก่อน · สังเกตอาการ 15–30 นาที | 2 |
+| รักษา | **Jarisch–Herxheimer**: อาจมีไข้ หนาวสั่น ปวดเมื่อย ผื่นชัดขึ้นภายใน 24 ชม. หายเอง กินยาลดไข้ได้ **ไม่ใช่แพ้ยา** | 2 |
+| ติดตาม | นัดตรวจ RPR ที่ 6 และ 12 เดือน — ต้องลดลงอย่างน้อย 4 เท่า (1:64 → ≤ 1:16) · ถ้ามีอาการตา หู ระบบประสาทให้มาทันที | 2 |
+| คู่นอน | **แจ้งคู่นอนทั้งสองคน** (ในช่วงย้อนหลังตามระยะโรค ≥ 90 วัน) ให้มาตรวจ · คู่นอนใน 90 วันควรได้รับยาทันทีแม้ผลเลือดลบ · ช่วยวางแผนวิธีแจ้ง (ผู้ป่วยแจ้งเอง/ให้บัตรแจ้ง/ให้แพทย์ช่วย) | 2 |
+| ป้องกัน | งดมีเพศสัมพันธ์จนครบ 7 วันหลังรักษาและแผล/ผื่นหาย · ถุงยางอนามัย · ตรวจ STI อื่น (gonorrhea, chlamydia) และตรวจ HIV ซ้ำที่ 3 เดือน (window period) · เสนอ PrEP ถ้ามีความเสี่ยงต่อเนื่อง | 2 |
+| ปิดท้าย | ทวนความเข้าใจ (teach-back) เปิดโอกาสถาม สรุปนัด รักษาความลับ | 1 |
+
+**Critical errors (ไม่ผ่านสถานี)**: บอกว่า “ไม่ต้องรักษาเพราะผื่นจะหายเอง” · ให้ doxycycline เป็นยาแรกโดยไม่มีเหตุผล (ไม่แพ้ penicillin) · ไม่พูดถึงการแจ้ง/รักษาคู่นอน · บอกว่า TPHA ต้องกลับเป็นลบจึงหาย · ใช้คำตำหนิ/ตีตราผู้ป่วย
+
+**คำถามต่อจากผู้คุมสอบ (ถ้ามีเวลา)**: “ถ้าผู้ป่วยแพ้ penicillin” → doxycycline 100 mg bid 14 วัน (ถ้าไม่ตั้งครรภ์ — สไลด์) · “ถ้าเป็นหญิงตั้งครรภ์แพ้ penicillin” → desensitize แล้วให้ BPG · “1 ปีต่อมา RPR 1:32” → ตอบสนองไม่พอ → หาติดเชื้อซ้ำ/neurosyphilis/HIV แล้วรักษาซ้ำ""",
+ "ref": ["สไลด์ อ.ภูริต — Primary/secondary lesion · Secondary syphilis · Table 200-2 · Table 200-3", "CDC STI Treatment Guidelines 2021"],
+ "nl": [STI, STI_B, RASH, SERO, SERO_B],
+ "years": [], "_kind": "meq", "_set": "derm"}]
+
+LECTURE = {
+ "lec": LEC, "date": "สไลด์ปี 2566 (อ.ภูริต)",
+ "title": "Common skin diseases for internists — eczema, urticaria, STD, leprosy, EM/SJS/TEN, erythema nodosum",
+ "subtitle": "อ.ภูริต (Purit Pureesrisak, MD) · Division of Dermatology, Department of Medicine รพ.ราชวิถี · Dermatology lecture for 4th year medical student Part 1 · ภาษาของผิวหนัง (primary/secondary lesion) · eczema ทุกชนิด · miliaria · urticaria/angioedema · syphilis · chancroid · gonorrhoea/DGI · LGV · leprosy · EM/SJS/TEN · erythema nodosum",
+ "objectives": [
+   "บรรยายรอยโรคผิวหนังเป็นประโยคเดียวได้ครบ (การกระจาย การเรียงตัว primary lesion และ secondary change) และอธิบายว่าความลึกของรอยโรคกำหนดหน้าตาอย่างไร",
+   "อธิบายกลไกของอาการคัน ซึม และ lichenification ใน eczema 3 ระยะ แบ่ง eczema เป็น endogenous/exogenous และเลือกยาพื้นและความแรงของ steroid ตามระยะและตำแหน่ง",
+   "วินิจฉัยและรักษา atopic dermatitis, pityriasis alba, seborrheic, stasis, xerotic, nummular, prurigo nodularis, LSC, dyshidrosis และ miliaria",
+   "แยก irritant กับ allergic contact dermatitis ด้วยกลไก เวลา และตำแหน่ง และบอกข้อบ่งชี้ของ patch test",
+   "อธิบายกลไก wheal–flare ความต่างของ urticaria กับ angioedema แบ่ง acute/chronic และใช้บันไดการรักษาลมพิษเรื้อรัง รวมทั้งรักษา angioedema ที่ทางเดินหายใจ",
+   "อธิบายระยะของ syphilis ทำไม chancre ไม่เจ็บ แปลผล non-treponemal/treponemal test รักษาตามระยะ และให้คำปรึกษาเรื่อง Jarisch–Herxheimer การติดตาม และการแจ้งคู่นอน",
+   "แยกแผลอวัยวะเพศ (syphilis, chancroid, HSV, LGV) และรักษา gonorrhoea/DGI ตามแนวทางปัจจุบัน",
+   "อธิบายว่าทำไมผื่นเรื้อนชาและเส้นประสาทโต แบ่ง spectrum/PB–MB รักษาด้วย MDT ตาม WHO 2018 และจัดการ leprosy reaction",
+   "แยก EM จาก SJS/TEN หายาที่เป็นสาเหตุ อธิบายกลไกการลอกของหนังกำพร้าและบทบาท HLA-B1502/HLA-B5801 คำนวณ SCORTEN และวางแผนการดูแล",
+   "อธิบายว่าทำไม erythema nodosum กดเจ็บแต่ไม่แตก และหาสาเหตุที่พบบ่อย"],
+ "nlGap": "เกณฑ์ฯ มีรหัสของ dermatitis/eczema (`2.3.12(7)` `B4.2.2(11)`) urticaria (`2.3.12(14)`) dyshidrosis/miliaria (`2.3.12(8)`) EM/EN (`2.3.12-3(5)`) leprosy (`2.3.12-3(9)`) SJS/TEN (`2.2.49`) และ STI (`2.3.1(19)` `B10.2.2(1)`) ครบ · **ไม่มีรหัสเฉพาะ** ของ pityriasis alba, prurigo nodularis, lichen simplex chronicus (จัดไว้ใต้ eczema), angioedema จาก bradykinin, leprosy reaction, pharmacogenomics (HLA-B1502/B5801) และ Löfgren syndrome — เนื้อหาส่วนนี้อิงแนวทางในรายการด้านล่าง · สไลด์ปี 2566 บางส่วนเป็นแนวทางเดิม: ขนาด ceftriaxone ใน gonorrhoea (125 mg → 500 mg), สูตร MDT ของ PB และผื่นเดียว (WHO 2018 ใช้ 3 ยาทุกราย), ขั้น H2 blocker/first-gen antihistamine ในลมพิษเรื้อรัง และ adrenaline แบบ SC — บทเรียนระบุทั้งสองแบบไว้ในหัวข้อนั้น ๆ",
+ "guidelines": [
+   "**CDC Sexually Transmitted Infections Treatment Guidelines 2021** (รวม gonorrhoea update 2020) — syphilis ทุกระยะ, neurosyphilis, partner notification, ceftriaxone 500 mg, chancroid, LGV",
+   "**WHO Guidelines for the diagnosis, treatment and prevention of leprosy (2018)** และ WHO MDT — R + D + C ทุกราย (PB 6 เดือน · MB 12 เดือน), SDR-PEP สำหรับผู้สัมผัส",
+   "**EAACI/GA²LEN/EuroGuiDerm/APAAACI guideline for urticaria (2022)** — บันได sgAH → ×4 → omalizumab → cyclosporine · ไม่แนะนำ H2 blocker/first-gen AH เป็นขั้นมาตรฐาน",
+   "**World Allergy Organization Anaphylaxis Guidance 2020** — adrenaline 0.01 mg/kg (สูงสุด 0.5 mg) IM ต้นขาด้านนอก",
+   "**SCORTEN** (Bastuji-Garin et al. J Invest Dermatol 2000) — อยู่ในสไลด์ · **UK (BAD) guidelines for SJS/TEN in adults 2016** และ Lancet 2017;390 (อาจารย์อ้าง) — การดูแลแบบประคับประคอง",
+   "**AAD Guidelines of care for atopic dermatitis (2023)** และ **EuroGuiDerm atopic eczema guideline (2022)** — emollient, ความแรง steroid, TCI, systemic therapy",
+   "**Feldmann RJ, Maibach HI. J Invest Dermatol 1967** — การดูดซึม hydrocortisone ผ่านผิวตามตำแหน่ง (ภาพประกอบ)",
+   "**แนวทางเภสัชพันธุศาสตร์ในประเทศไทย** — ตรวจ HLA-B1502 ก่อน carbamazepine และ HLA-B5801 ก่อน allopurinol",
+   "ตำราที่อาจารย์ใช้ภาพในสไลด์: Fitzpatrick’s Dermatology · Bolognia Dermatology · Rook’s Textbook of Dermatology · Beck LA et al. Acta Derm Venereol 2017 (แผนภาพลมพิษเรื้อรัง)"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+DERM_META = {"set": "derm", "title": "Derm · ผิวหนัง",
+ "intro": "ชุดใหม่ของโรคผิวหนังสำหรับอายุรแพทย์ เริ่มจากคาบ **Dermatology lecture for 4th year medical student Part 1 ของ อ.ภูริต (Purit Pureesrisak, MD · สไลด์ปี 2566)** — ภาษาของผิวหนังและการบรรยายรอยโรค · eczema ทุกชนิด (atopic, seborrheic, stasis, xerotic, dyshidrosis, nummular, prurigo nodularis, LSC, contact) · miliaria · urticaria/angioedema · STD (syphilis, chancroid, gonorrhoea/DGI, LGV) · leprosy · EM/SJS/TEN และ erythema nodosum · ทุกโรคมีตาราง **ทำไมถึงมีอาการนี้** และภาพตัดขวางผิวหนังแบบแผนผัง 31 ภาพ (ไม่มีภาพถ่าย — รอยโรคบรรยายเป็นคำแบบที่ใช้ในข้อสอบ) พร้อมลายมือที่จดในสไลด์ (✍️)",
+ "howto": "**วิธีใช้** — อ่านเนื้อหาให้จบแล้วตอบข้อสอบท้ายหัวข้อ ระบบเฉลยพร้อมคำอธิบายทันที · ข้อที่ตอบผิดรวมอยู่ในแท็บ **ทบทวนข้อที่ผิด** · จบคาบแล้วฝึก **MEQ** (SJS/TEN จากยา) และ **OSCE/SAQ** (บรรยายผื่นและให้คำปรึกษา syphilis)\n\n**ลำดับที่แนะนำ** — เริ่มหัวข้อ 1–2 (ภาษาของผิวหนัง) ก่อนเสมอ เพราะโจทย์ผิวหนังทุกข้อ “บรรยายผื่นเป็นคำ” · แกนที่ออกสอบบ่อย: หัวข้อ 3–4 (eczema 3 ระยะ + ยาพื้น/ความแรง steroid) · 11–12 (ลมพิษ angioedema และบันไดการรักษา) · 13–15 (syphilis serology/การรักษา และ gonorrhoea) · 16 (เรื้อน: ผื่นชา + เส้นประสาทโต) · 17 (EM vs SJS/TEN และ SCORTEN)\n\n**หมายเหตุ** — สไลด์ปี 2566 บางเรื่องเป็นแนวทางเดิม (ceftriaxone 125 mg · MDT 2 ยาใน PB · H2 blocker ในลมพิษ · adrenaline SC) บทเรียนบอกทั้งสิ่งที่อยู่ในสไลด์และแนวทางปัจจุบันไว้คู่กัน · ชุดนี้ยังไม่มีคลังข้อสอบเก่ารายคาบใน Ward Drill จึงผูกข้อจาก Mock exam หมวด Infectious/Dermatology ที่ตรงเรื่องแทน · ส่วนที่ไม่ได้มาจากสไลด์มีระบุไว้ทุกจุด",
+ "label": "Derm", "thai": "ผิวหนัง",
+ "accent": {"light": "#0369a1", "soft": "#d9eefb", "ink": "#025680", "dark": "#5fc8f0", "darkSoft": "#0d2029", "darkInk": "#9fdef7"},
+ "file": "data/derm.json", "lectureCount": 1}
+
+# กระจายตำแหน่งคำตอบของข้อใหม่ (ก่อนขึ้นเว็บครั้งแรกเท่านั้น) · ข้อ 43 (SCORTEN ตัวเลขเรียง) คงไว้
+ORDERED = {N(43)}
+_slot = 0
+for s_ in S:
+    for it in s_["items"]:
+        if it["id"] in ORDERED or not it["id"].startswith("DERM-D1-MCQ"):
+            continue
+        tgt = [0, 2, 4, 1, 3][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+path = os.path.join(BUILD, "data", SET + ".json")
+data = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else []
+data = [l for l in data if l.get("lec") != LEC] + [LECTURE]
+
+seen = set()
+for f in os.listdir(os.path.join(BUILD, "data")):
+    if f.endswith(".json") and f not in ("nl.json", "index.json", SET + ".json"):
+        for l in json.load(open(os.path.join(BUILD, "data", f), encoding="utf-8")):
+            seen |= {i["id"] for s_ in l["sections"] for i in s_["items"]} | {m["id"] for m in l["meq"] + l["osce"]} | {s_["id"] for s_ in l["sections"]}
+for l in data:
+    for x in [i for s_ in l["sections"] for i in s_["items"]] + l["meq"] + l["osce"] + [{"id": s_["id"]} for s_ in l["sections"]]:
+        assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+        seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+L = LECTURE
+codes = {c for s_ in L["sections"] for c in s_["nl"]} | {c for s_ in L["sections"] for i in s_["items"] for c in i["nl"]} | {c for m in L["meq"] + L["osce"] for c in m.get("nl", [])}
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+for s_ in L["sections"]:
+    assert "```" not in s_["md"], s_["id"]
+    for k in (s_.get("figs") or {}):
+        assert "[[fig:%s]]" % k in s_["md"], (s_["id"], k)
+    for k in __import__("re").findall(r"\[\[fig:(\w+)\]\]", s_["md"]):
+        assert k in (s_.get("figs") or {}), (s_["id"], k)
+
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+if not any(m["set"] == SET for m in idx):
+    idx.append(DERM_META)
+for m in idx:
+    if m["set"] == SET:
+        m.update({k: DERM_META[k] for k in ("title", "intro", "howto", "label", "thai", "accent", "file")})
+        m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+# ผูกข้อ Mock exam ที่ตรงเรื่อง (ไม่มีคาบผิวหนังในคลัง Ward Drill)
+added = link_mock(SET, LEC, {"derm-d1-09": ["MOCK-060"], "derm-d1-10": ["MOCK-059"], "derm-d1-14": ["MOCK-008"],
+                             "derm-d1-15": ["MOCK-016"], "derm-d1-18": ["MOCK-058"]})
+
+from collections import Counter
+d = json.load(open(path, encoding="utf-8"))
+L = [l for l in d if l["lec"] == LEC][0]
+newi = [i for s_ in L["sections"] for i in s_["items"] if i["id"].startswith("DERM-D1")]
+mock = [i for s_ in L["sections"] for i in s_["items"] if i["id"].startswith("MOCK")]
+print("sections %d | ข้อใหม่ %d | mock %d (เพิ่ม %d) | meq %d | osce %d | figs %d | nl %d" % (
+    len(L["sections"]), len(newi), len(mock), added, len(L["meq"]), len(L["osce"]), sum(len(s_.get("figs") or {}) for s_ in L["sections"]), len(codes)))
+print("answer positions (ข้อใหม่):", dict(sorted(Counter(i["answer"] for i in newi).items())))
+print("derm.json มี %d คาบ: %s" % (len(d), [l["lec"] for l in d]))

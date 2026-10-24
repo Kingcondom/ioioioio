@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""ภาพประกอบคาบ derm "Derm1" — Common skin diseases for internists (อ.ภูริต ภูรีศรีศักดิ์) — ใช้ใน build_derm.py
+"""ภาพประกอบคาบ derm "Derm1" — Common skin diseases for internists (อ.ภูริต · Purit Pureesrisak, MD) — ใช้ใน build_derm.py
 
 ทุกฟังก์ชันคืน fig(title, cap, svg) · ภาพตัดขวางผิวหนังเป็น "แผนผัง" ไม่ใช่สัดส่วนจริง
 สีที่ใช้: ชั้นขี้ไคล (stratum corneum) = sk · หนังกำพร้า (epidermis) = ms · หนังแท้ (dermis) = bx · ไขมัน = sk + วงกลม bx
