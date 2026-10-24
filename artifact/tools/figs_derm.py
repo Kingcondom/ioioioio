@@ -986,11 +986,11 @@ def lepro_spectrum():
     out.append(t(404, y + 2 + 10, "*LL: ชาตามปลายมือเท้าในระยะหลัง", "xs end i2"))
     y += 12
     out += [rect(30, y + 8, 150, 26, "ok", 6), t(105, y + 25, "PB: ≤ 5 ผื่น · smear ลบ", "xs b mid"),
-            rect(186, y + 8, 224, 26, "bad", 6), t(298, y + 25, "MB: > 5 ผื่น หรือ smear บวก", "xs b mid"),
+            rect(186, y + 8, 224, 26, "bad", 6), t(298, y + 25, "MB: > 5 ผื่น · เส้นประสาท · smear +", "xs b mid"),
             rect(110, y + 40, 220, 22, "ms", 6), t(220, y + 55, "Type 1 reaction (borderline: BT–BL)", "xs mid b"),
             rect(270, y + 66, 140, 22, "bad", 6), t(340, y + 81, "Type 2 (ENL): BL–LL", "xs mid b")]
     return fig("Leprosy spectrum — ภูมิคุ้มกันยิ่งดี ผื่นยิ่งน้อยและชัด แต่ทำลายเส้นประสาทเร็ว",
-               "สไลด์: M. leprae เป็นปรสิตในเซลล์ macrophage และ **Schwann cell** · แบ่งตามภูมิคุ้มกัน: **tuberculoid (Th1)** — granuloma คุมเชื้อได้ จึงมีผื่นน้อย ขอบชัด **ชา** และแทบไม่พบเชื้อ · **lepromatous (Th2)** — คุมเชื้อไม่ได้ เชื้อเต็มผิวหนังและน้ำมูก ผื่นมาก สมมาตร ขอบไม่ชัด ความรู้สึกยังปกติในระยะแรก (เส้นประสาทถูกทำลายช้าแต่กว้าง) · กลุ่ม borderline ไม่คงที่ จึงเกิด **type 1 reaction** (ภูมิเปลี่ยนเร็ว เส้นประสาทอักเสบเฉียบพลัน) ส่วน **type 2 (erythema nodosum leprosum)** เป็น immune complex ใน BL–LL · การแบ่ง PB/MB ของ WHO ใช้เลือกสูตรยา (ภาพสไลด์ใช้ > 5 ผื่น = MB)",
+               "สไลด์: M. leprae เป็นปรสิตในเซลล์ macrophage และ **Schwann cell** · แบ่งตามภูมิคุ้มกัน: **tuberculoid (Th1)** — granuloma คุมเชื้อได้ จึงมีผื่นน้อย ขอบชัด **ชา** และแทบไม่พบเชื้อ · **lepromatous (Th2)** — คุมเชื้อไม่ได้ เชื้อเต็มผิวหนังและน้ำมูก ผื่นมาก สมมาตร ขอบไม่ชัด ความรู้สึกยังปกติในระยะแรก (เส้นประสาทถูกทำลายช้าแต่กว้าง) · กลุ่ม borderline ไม่คงที่ จึงเกิด **type 1 reaction** (ภูมิเปลี่ยนเร็ว เส้นประสาทอักเสบเฉียบพลัน) ส่วน **type 2 (erythema nodosum leprosum)** เป็น immune complex ใน BL–LL · การแบ่ง PB/MB ของ WHO ใช้เลือกสูตรยา (ภาพสไลด์ใช้ > 5 ผื่น = MB · WHO 2018 นับเส้นประสาทที่เกี่ยวข้องหรือ smear บวกเป็น MB ด้วย)",
                svg(420, y + 94, "สเปกตรัมของโรคเรื้อนจาก tuberculoid ถึง lepromatous เทียบภูมิคุ้มกัน จำนวนผื่น ความรู้สึก และเชื้อ", *out))
 
 
@@ -1147,12 +1147,12 @@ def en():
         return o
     out += block(10, True)
     out += block(222, False)
-    out += [rect(10, 252, 402, 98, "bx", 8),
-            t(20, 270, "ทำไมกดเจ็บ: septa มีหลอดเลือดและเส้นประสาท อักเสบบวมดึงรั้ง", "xs"),
-            t(20, 286, "ทำไมไม่แตก/ไม่เป็นแผลเป็น: อักเสบที่ septa · ไม่มี vasculitis · ไขมันไม่ตาย", "xs"),
-            t(20, 302, "ทำไมเหมือนรอยช้ำ: RBC รั่ว → hemoglobin สลาย แดง → ม่วง → เขียวเหลือง", "xs"),
-            t(20, 320, "erythema induratum (TB) / ENL (เรื้อน) = lobular ± vasculitis → อาจแตก", "xs i2"),
-            t(20, 338, "สาเหตุ: strep · TB · sarcoid · IBD · ยา (OCP, sulfa) · ตั้งครรภ์ · idiopathic 37–60%", "xs b")]
+    out += [rect(10, 190, 402, 98, "bx", 8),
+            t(20, 208, "ทำไมกดเจ็บ: septa มีหลอดเลือดและเส้นประสาท อักเสบบวมดึงรั้ง", "xs"),
+            t(20, 224, "ทำไมไม่แตก/ไม่เป็นแผลเป็น: อักเสบที่ septa · ไม่มี vasculitis · ไขมันไม่ตาย", "xs"),
+            t(20, 240, "ทำไมเหมือนรอยช้ำ: RBC รั่ว → hemoglobin สลาย แดง → ม่วง → เขียวเหลือง", "xs"),
+            t(20, 258, "erythema induratum (TB) / ENL (เรื้อน) = lobular ± vasculitis → อาจแตก", "xs i2"),
+            t(20, 276, "สาเหตุ: strep · TB · sarcoid · IBD · ยา (OCP, sulfa) · ตั้งครรภ์ · idiopathic 37–60%", "xs b")]
     return fig("Erythema nodosum — อักเสบที่ “ผนังกั้น” ของไขมัน จึงเจ็บแต่ไม่แตก",
                "สไลด์ (Panniculitis) วงชั้น “fat” ในภาพผิวหนังเพื่อบอกว่าโรคอยู่ที่ชั้นไขมัน · **EN** = **septal panniculitis** ไม่มี vasculitis (ภาพ histology ในสไลด์: septa หนาขึ้น มี multinucleated giant cell และ **Miescher’s radial granuloma**) → nodule แดง **กดเจ็บ** สมมาตรที่หน้าแข้ง **ไม่แตก ไม่เป็นแผลเป็น** อยู่ 3–6 สัปดาห์ ผื่นใหม่ขึ้นได้ถึง 6 สัปดาห์ พบในหญิงมากกว่า มีไข้ ปวดข้อร่วม · เทียบกับ panniculitis แบบ lobular ± vasculitis (erythema induratum จาก TB, ENL ในเรื้อน) ที่ไขมันตายจึงแตกเป็นแผลได้ · รักษา: หาสาเหตุ + นอนพัก ยกขา aspirin/NSAID",
-               svg(420, 356, "ภาพตัดขวางชั้นไขมันเปรียบเทียบการอักเสบที่ผนังกั้นใน erythema nodosum กับการอักเสบในก้อนไขมัน", *out))
+               svg(420, 294, "ภาพตัดขวางชั้นไขมันเปรียบเทียบการอักเสบที่ผนังกั้นใน erythema nodosum กับการอักเสบในก้อนไขมัน", *out))

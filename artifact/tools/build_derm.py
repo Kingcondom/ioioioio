@@ -878,7 +878,7 @@ sec("derm-d1-13", "STD ทางผิวหนัง และ syphilis (1): �
          "- **HSV PCR** — ไม่มีตุ่มน้ำ\n- **Patch test/IgE** — ไม่ใช่โรคภูมิแพ้",
          "ผื่นฝ่ามือฝ่าเท้า + LN ทั่วตัว + แผลไม่เจ็บมาก่อน = secondary syphilis → RPR + TPHA", "Secondary syphilis", R("Secondary syphilis · ภาพหน้า 78–80"), [STI, STI_B, RASH, SERO, SERO_B]),
      mcq(N(31), "A 28-year-old man has a single, painless, clean-based, 1-cm penile ulcer with a firm, indurated (button-like) edge that appeared 10 days ago. He has bilateral, firm, non-tender inguinal lymph nodes. RPR is non-reactive. Which statement is correct?",
-         ["A non-reactive RPR does not exclude primary syphilis; darkfield microscopy/T. pallidum PCR of the ulcer can confirm it, and presumptive treatment with benzathine penicillin is appropriate",
+         ["RPR may be negative in early primary syphilis; confirm by darkfield/PCR and treat presumptively with benzathine penicillin",
           "The negative RPR excludes syphilis; reassure", "The ulcer is chancroid; treat with azithromycin only", "The ulcer is herpes simplex; give valacyclovir only",
           "Biopsy the ulcer to exclude squamous cell carcinoma before any treatment"], 0,
          "แผลเดี่ยว **ไม่เจ็บ ขอบแข็ง (indurated) พื้นสะอาด** + LN แข็งไม่เจ็บสองข้าง = **chancre ของ primary syphilis** · สไลด์ (Table 200-3): sensitivity ของ RPR ในระยะ primary แค่ **86%** (VDRL 78%) เพราะ antibody ยังขึ้นไม่ทัน → **RPR ลบไม่ตัดโรค** · ยืนยันด้วย **darkfield** (ภาพในสไลด์) หรือ PCR และควรให้ BPG แบบ presumptive พร้อมตรวจ serology ซ้ำ\n\n"
@@ -1091,7 +1091,7 @@ sec("derm-d1-16", "Leprosy (Hansen’s disease) — ผื่นชา เส้
 **Sequelae (สไลด์ Fig 75.6)**: leonine facies (✍️ “**หน้าเป็นสิงโต**”) · madarosis (คิ้วร่วง) · ติ่งหูยาวนิ่ม · lagophthalmos กระจกตาชา keratitis ตาบอด · saddle nose · gynecomastia (อัณฑะอักเสบ) · มือ papal/claw · นิ้วสั้น · acquired ichthyosis · foot drop · hammer toes · แผลฝ่าเท้า · ภาพสไลด์ Fig 75.5: ตาบอด และผิวสีเทาอมฟ้าจาก **clofazimine**
 
 ### วินิจฉัย (WHO — ข้อมูลเสริม)
-Cardinal signs อย่างน้อย 1 ข้อ: (1) **ผื่นซีดหรือแดงที่ชาชัดเจน** (2) **เส้นประสาทส่วนปลายโต** ร่วมกับชา/อ่อนแรงในบริเวณที่เลี้ยง (3) **slit-skin smear พบ acid-fast bacilli** · การแบ่งเพื่อรักษา: **PB = ผื่น ≤ 5 และ smear ลบ** · **MB = ผื่น > 5 หรือมีเส้นประสาทเกี่ยวข้อง หรือ smear บวก**
+Cardinal signs อย่างน้อย 1 ข้อ: (1) **ผื่นซีดหรือแดงที่ชาชัดเจน** (2) **เส้นประสาทส่วนปลายโต** ร่วมกับชา/อ่อนแรงในบริเวณที่เลี้ยง (3) **slit-skin smear พบ acid-fast bacilli** · การแบ่งเพื่อรักษา: **PB = ผื่น ≤ 5 ไม่มีเส้นประสาทเกี่ยวข้อง และ smear ลบ** · **MB = ผื่น > 5 หรือมีเส้นประสาทเกี่ยวข้อง (โต/อักเสบ/ชาตามเส้นประสาท) หรือ smear บวก**
 
 ### การรักษา — สไลด์ (Table 75.4) vs WHO 2018
 | | สไลด์ (สูตร WHO เดิม) | **WHO 2018 (ปัจจุบัน)** |
@@ -1111,13 +1111,13 @@ Cardinal signs อย่างน้อย 1 ข้อ: (1) **ผื่นซี
 """,
     ["Leprosy = ผื่นซีด/แดงที่ชา + เส้นประสาทโต (✍️ nerve trunk enlargement) ± smear บวก",
      "TT (Th1): ผื่นน้อย ขอบชัด ชา ไม่พบเชื้อ · LL (Th2): ผื่นมาก สมมาตร ขอบเลือน เชื้อมาก leonine facies (✍️ หน้าเป็นสิงโต)",
-     "PB ≤ 5 ผื่น smear ลบ · MB > 5 หรือ smear บวก · WHO 2018: R + D + C ทุกราย (PB 6 เดือน · MB 12 เดือน)",
+     "PB ≤ 5 ผื่น ไม่มีเส้นประสาทเกี่ยวข้อง smear ลบ · MB > 5 ผื่น หรือเส้นประสาทเกี่ยวข้อง หรือ smear บวก · WHO 2018: R + D + C ทุกราย (PB 6 เดือน · MB 12 เดือน)",
      "คลำ ulnar · common peroneal · great auricular · radial cutaneous · posterior tibial",
      "Reaction type 1 (ผื่นเดิมบวม + neuritis) / type 2 ENL (nodule เจ็บ + ไข้) → prednisolone และให้ MDT ต่อ"],
-    [mcq(N(38), "A 35-year-old Thai farmer has three hypopigmented, dry, hairless patches with well-defined raised edges on the forearm and thigh. Sensation to light touch and temperature is absent within the patches, and the right ulnar nerve at the elbow is thickened. Slit-skin smear is negative. According to the WHO 2018 guideline, what is the treatment?",
+    [mcq(N(38), "A 35-year-old Thai farmer has three hypopigmented, dry, hairless patches with well-defined raised edges on the forearm and thigh. Sensation to light touch and temperature is absent within the patches. No peripheral nerve is enlarged or tender, and there is no motor or sensory deficit outside the patches. Slit-skin smear is negative. According to the WHO 2018 guideline, what is the treatment?",
          ["Rifampicin, dapsone and clofazimine for 6 months", "Rifampicin and dapsone for 6 months", "Single-dose rifampicin, ofloxacin and minocycline",
           "Rifampicin, dapsone and clofazimine for 24 months", "Isoniazid, rifampicin, pyrazinamide and ethambutol for 6 months"], 0,
-         "ผื่นซีดที่ **ชา** แห้ง ขนร่วง ขอบชัด + **ulnar nerve โต** = **leprosy** (cardinal signs) · ผื่น 3 แผ่น (≤ 5) smear ลบ = **paucibacillary** (WHO บางกรณีจัดผู้ที่มีเส้นประสาทเกี่ยวข้องเป็น MB — ในการสอบให้ยึด ≤ 5 + smear ลบ = PB) → **WHO 2018: 3 ยา (rifampicin + dapsone + clofazimine) 6 เดือน**\n\n"
+         "ผื่นซีดที่ **ชาชัดเจน** แห้ง ขนร่วง ขอบชัด = **leprosy** (cardinal sign ข้อแรกของ WHO) · ผื่น 3 แผ่น (≤ 5) ไม่มีเส้นประสาทเกี่ยวข้อง smear ลบ = **paucibacillary** (ถ้ามีเส้นประสาทโต/อักเสบร่วม WHO 2018 จัดเป็น MB) → **WHO 2018: 3 ยา (rifampicin + dapsone + clofazimine) 6 เดือน**\n\n"
          "- **R + D 6 เดือน** — สูตร PB เดิมในสไลด์ เปลี่ยนแล้วในปี 2018\n- **ROM ครั้งเดียว** — สูตรผื่นเดียวเดิมในสไลด์ เลิกใช้แล้ว\n"
          "- **R + D + C 24 เดือน** — MB ใช้ 12 เดือน\n- **HRZE** — วัณโรค ไม่ใช่เรื้อน",
          "WHO 2018: PB = R + D + C 6 เดือน · MB = 12 เดือน", "Leprosy — classification and MDT", R("Leprosy Table 75.2 · Table 75.4", "WHO Guidelines for leprosy 2018"), [LEP, LEP_B, ANTIMIC, PNEURO]),
@@ -1272,7 +1272,7 @@ sec("derm-d1-18", "Panniculitis และ erythema nodosum — nodule กดเ�
      "ตรวจพื้นฐาน: CBC ESR ASO/throat culture CXR (± tuberculin/IGRA) pregnancy test",
      "รักษา: หาสาเหตุ + นอนพักยกขา + aspirin/NSAID (สไลด์) · steroid หลังตัด TB เท่านั้น"],
     [mcq(N(44), "A 32-year-old woman has a 1-week history of fever, bilateral ankle arthritis, and several tender, warm, red nodules 2–4 cm on both shins. Chest radiograph shows bilateral hilar lymphadenopathy. Which statement is correct?",
-         ["This is Löfgren syndrome (acute sarcoidosis) with erythema nodosum and usually has a good prognosis; NSAIDs and rest are the mainstay", "The nodules will ulcerate and leave scars",
+         ["Löfgren syndrome (acute sarcoidosis); usually self-limited — rest and NSAIDs", "The nodules will ulcerate and leave scars",
           "This is cutaneous polyarteritis nodosa requiring cyclophosphamide", "This is erythema induratum and requires immediate anti-TB therapy without further evaluation",
           "Excisional biopsy of each nodule is required before any treatment"], 0,
          "EN (nodule แดงกดเจ็บสมมาตรที่หน้าแข้ง) + ข้อเท้าอักเสบ + ไข้ + **bilateral hilar lymphadenopathy** = **Löfgren syndrome** (sarcoidosis เฉียบพลัน) — พยากรณ์ดี หายเองส่วนใหญ่ · รักษาตามสไลด์: **นอนพัก + NSAID/aspirin** (ข้อมูล Löfgren เป็นข้อมูลเสริม)\n\n"
