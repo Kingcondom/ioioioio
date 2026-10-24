@@ -112,6 +112,12 @@ engine เดียวกับ learn จึงใช้แพตช์ชุด
 - ตรวจ: `python3 drill_tool.py check <drill index.html> drill_sets/<lec>.json` · รวม: `python3 drill_tool.py merge <drill index.html> drill_sets <out.html>` (เพิ่มเข้า BANK + LEC)
 - ปุ่ม Drill ใน dashboard (`drill:[hash, MCQ, MEQ+OSCE, คลังเก่า, 1=ชุดรวม]`) ชี้ชุดรายคาบแล้ว · คลังเก่าที่ใช้ร่วมหลายคาบหารเฉลี่ยไว้ให้น้ำหนักเท่าเดิม
 
+## คาบ Anemia (Learn hemonc "9/11") — approach + 21 ภาวะ (24 ต.ค.)
+
+- ผู้ใช้ขอ: บทจากโพสต์สรุป pathophysiology ภาวะซีด 21 ภาวะ (Nakorn - Core Physiology) + ทริคจำสากล + pathophysiology แบบลึก + approach to anemia ตามแนวทางของ อ.Chaicharoen Tantanate (`learn_anemia/APPROACH_SOURCE.md`)
+- 23 หัวข้อ (00 approach · 01 พื้นฐาน · 02–22 ทีละภาวะ) · 72 MCQ · ภาพเคลื่อนไหว 36 · หลักจำ 34 · เนื้อหาเขียนใหม่ทั้งหมด ไม่คัดลอกโพสต์
+- ประกอบใหม่: `python3 learn_lesson_tool.py assemble <learn data> learn_anemia/header.json <out> learn_anemia/sections/sec_*.json` แล้ว `python3 patch_learn_anim.py data <out ที่มีแค่ hemonc.json> learn_anemia/anims <data ออก>`
+
 ## แก้ข้อมูล
 
 ข้อมูลทั้งหมดอยู่ในอาร์เรย์ `LECS` / `EXTRAS` ในสคริปต์ของ `index.html`

@@ -1,0 +1,536 @@
+[
+ {
+  "id": "hon-anm-07",
+  "title": "Vitamin B12 deficiency / pernicious anemia — folate trap, MMA และไขสันหลังเสื่อม",
+  "minutes": 15,
+  "summary": "B12 เป็น cofactor ของ 2 เอนไซม์ · methionine synthase เสีย → folate trap → dTMP ↓ → megaloblast ตายในไขกระดูก (LDH สูงมาก) · methylmalonyl-CoA mutase เสีย → MMA ↑ → SCD · PA = anti-IF/parietal cell · รักษาแล้วระวัง K⁺ ต่ำ",
+  "source": "Williams Hematology 10th ed. · Hoffbrand's Essential Haematology 8th ed. · Harrison's 21st ed. — Megaloblastic anemias · BSH cobalamin & folate guideline 2014 · NEJM review Stabler 2013 (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3(7)",
+   "B2.2.5(1)",
+   "2.1.56",
+   "B2.4(2)",
+   "3.1.2",
+   "B2.3(2)",
+   "2.3.6-3(9)",
+   "B1.1.5(2)"
+  ],
+  "md": "### ภาพรวม — B12 ขาดแล้วเสียทั้งเลือดและเส้นประสาท\n**Vitamin B12 (cobalamin)** มีเฉพาะใน **อาหารจากสัตว์** · ต้องการ ~2–3 µg/วัน แต่ตับสำรองไว้ **2–5 mg** → หยุดดูดซึมแล้วกว่าจะขาดต้องใช้ **3–5 ปี**\nสาเหตุอันดับหนึ่งในผู้ใหญ่ = **pernicious anemia (PA)** = autoimmune atrophic gastritis · พบมากอายุ > 60 ปี มักมี autoimmune thyroiditis, T1DM, vitiligo ร่วม\nสาเหตุอื่น: **vegan**, gastrectomy/bariatric, โรคหรือตัด **terminal ileum** (Crohn), **metformin**, PPI ระยะยาว, **N₂O** (ออกซิไดซ์ cobalt), bacterial overgrowth, พยาธิตืดปลา, pancreatic insufficiency\n\n### ไล่กลไก 1 — เส้นทางดูดซึมและจุดที่ PA ตัด\n1. กระเพาะ: **กรด + pepsin** ปลด B12 จากโปรตีนอาหาร → จับ **haptocorrin (R-binder)** จากน้ำลาย\n2. Duodenum: **pancreatic protease** ย่อย haptocorrin → B12 ย้ายไปจับ **intrinsic factor (IF)** ซึ่งหลั่งจาก **parietal cell** ที่ body/fundus\n3. **Terminal ileum**: B12–IF เข้าเซลล์ผ่าน **cubilin–amnionless** → เข้าเลือดจับ **transcobalamin II** (holoTC = B12 ที่เซลล์ใช้ได้)\n4. PA: **CD4⁺ T cell** โจมตี **H⁺/K⁺-ATPase** → body/fundus ฝ่อ (antrum ปกติ) → **achlorhydria + IF หาย** · **anti-IF Ab** ชนิด blocking กัน B12 จับ IF · กรดหาย → **gastrin สูง** → ECL hyperplasia → เสี่ยง **gastric carcinoid type 1**/adenocarcinoma · กรดหายยังทำให้ **ดูดซึมเหล็กลด** → ขาดเหล็กร่วมได้\n5. ทางสำรอง: B12 ~**1%** ซึมผ่านเยื่อบุได้เองโดยไม่ใช้ IF → **oral B12 ขนาดสูง** จึงใช้ได้แม้เป็น PA\n\n### ไล่กลไก 2 — สองเอนไซม์ สองผลลัพธ์\n**(ก) Methionine synthase (methylcobalamin)**: homocysteine + **5-methyl-THF** → methionine + **THF**\n- ขาด B12 → 5-methyl-THF ค้าง ย้อนกลับไม่ได้เพราะ MTHFR ทำทางเดียว = **folate trap** → **5,10-methylene-THF ↓** → **thymidylate synthase** สร้าง dTMP จาก dUMP ไม่ได้ → ใส่ **dUTP แทน dTTP** → excision repair วนซ้ำ → DNA แตก → ค้างใน S phase → apoptosis\n- **Homocysteine ↑** · **SAM ↓** (methyl donor ของ myelin)\n\n**(ข) Methylmalonyl-CoA mutase (adenosylcobalamin)**: methylmalonyl-CoA → succinyl-CoA\n- ขาด → **MMA ↑** + propionyl-CoA ↑ → **กรดไขมันสายคี่/กิ่งผิดปกติ** แทรกใน myelin\n\n**ลูกโซ่ถึงไขกระดูก**: DNA สร้างช้า แต่ RNA/Hb สร้างปกติ → **nuclear–cytoplasmic asynchrony** → **megaloblast** · ไขกระดูก **hypercellular** แต่เซลล์ตายในไขกระดูกจำนวนมาก = **ineffective erythropoiesis (intramedullary hemolysis)** · ทุกเซลล์ที่แบ่งเร็วเสีย → **pancytopenia**, hypersegmented neutrophil, ลิ้นอักเสบ\n**ลูกโซ่ถึงระบบประสาท**: SAM ↓ + myelin ผิดปกติ → demyelination ของ **dorsal column + lateral corticospinal + spinocerebellar tract** = **subacute combined degeneration (SCD)** เริ่มที่ cervical/upper thoracic cord\n\n### ทำไมถึงมีอาการนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด + **เหลืองอ่อน (lemon-yellow)** | RBC ต่ำ + indirect bilirubin จาก intramedullary hemolysis |\n| **ลิ้นเลี่ยนแดง (atrophic glossitis)** มุมปากเปื่อย | epithelium แบ่งตัวเร็วสร้าง DNA ไม่ทัน |\n| ชา, **vibration/proprioception เสีย**, Romberg + | dorsal column + peripheral neuropathy |\n| อ่อนแรงเกร็ง **Babinski +** แต่ ankle jerk อาจหาย | corticospinal (UMN) ร่วมกับ peripheral neuropathy |\n| หลงลืม ซึมเศร้า โรคจิต (\"megaloblastic madness\") | demyelination ในสมอง |\n| จ้ำเลือด ติดเชื้อในรายรุนแรง | pancytopenia |\nอาการทางประสาท **เกิดได้แม้ไม่ซีดหรือ MCV ปกติ** และอาจถาวรถ้าปล่อยนานเกิน 6–12 เดือน\n\n### ทำไมผลแล็บถึงออกมาแบบนี้\n- **MCV > 100** (มัก > 110–115), **RDW สูง** — นิวเคลียสค้าง แบ่งตัวน้อยรอบ เซลล์จึงใหญ่ · smear: **macro-ovalocyte**, **hypersegmented neutrophil** (≥ 6 lobes หรือ 5 lobes > 3–5%) มักเห็นก่อน · Howell-Jolly body, basophilic stippling\n- **Retic ต่ำ** ทั้งที่ไขกระดูก hypercellular = ตายก่อนได้ออก\n- **LDH สูงมาก** (หลักพัน U/L) + **indirect bilirubin ↑ + haptoglobin ↓** — megaloblast ใหญ่และตายจำนวนมากในไขกระดูก\n- **Serum B12** < 200 pg/mL ชัด · 200–300 กำกวม → **MMA** (จำเพาะต่อ B12) และ **homocysteine** (สูงทั้ง B12 และ folate)\n- **Serum folate ปกติ/สูง** (methyl-THF รั่วออก) แต่ **RBC folate ต่ำ** (เก็บในเซลล์ไม่ได้)\n- PA: **anti-IF Ab** จำเพาะ > 95% แต่ไว ~50% · **anti-parietal cell Ab** ไว ~90% แต่ไม่จำเพาะ · gastrin สูง\n- มี **iron deficiency/thalassemia ร่วม** (พบบ่อยในไทย) → MCV อาจปกติ ดู RDW สูงและ smear แบบ dimorphic\n\n### วินิจฉัย — กับดัก\n- B12 ปกติไม่ตัดโรคถ้าคลินิกเข้า → ตรวจ MMA · MMA สูงปลอมใน **ไตวาย**\n- B12 สูงปลอมในโรคตับและ myeloproliferative neoplasm\n- LDH หลักพัน + bilirubin สูง + pancytopenia + schistocyte บางตัว → อย่าสับสนกับ **TTP** (B12 ขาด: MCV สูง retic ต่ำ)\n- PA ส่องกล้องกระเพาะ 1 ครั้งตอนวินิจฉัยหา neoplasia\n\n### รักษาตามกลไก\n- **Hydroxocobalamin 1 mg IM 3 ครั้ง/สัปดาห์ × 2 สัปดาห์** แล้วทุก 3 เดือนตลอดชีวิต (BSH) · มีอาการทางประสาท: 1 mg วันเว้นวันจนไม่ดีขึ้นอีก แล้วทุก 2 เดือน · แบบสหรัฐฯ: cyanocobalamin 1,000 µg IM ทุกวัน 1 สัปดาห์ → ทุกสัปดาห์ 4 ครั้ง → ทุกเดือน\n- **Oral 1,000–2,000 µg/วัน** อาศัย passive diffusion ~1% ได้ผลแม้ใน PA (อาการประสาทรุนแรงควรเริ่มด้วยยาฉีด)\n- ตอบสนอง: ไขกระดูกเป็น normoblastic ใน 1–2 วัน · **retic ขึ้นวันที่ 3–5 สูงสุด ~วันที่ 7–10** · Hb ขึ้น ~1 g/dL/สัปดาห์\n- **Hypokalemia ใน 48–72 ชม.แรก**: เซลล์ตั้งต้นใหม่จำนวนมากดึง K⁺ เข้าเซลล์ → ติดตาม K⁺ ในรายซีดมาก · **ขาดเหล็กโผล่ตามมา** เพราะสร้างเม็ดเลือดเร่งขึ้น\n- ซีดมาก + หัวใจล้มเหลว: ให้เลือดช้า ๆ ปริมาณน้อย\n- **ห้ามให้ folic acid อย่างเดียว** ก่อนตัด B12 → เลือดดีขึ้นแต่ SCD แย่ลง\n\n### กับดักข้อสอบ\n- **MMA ↑ = B12** · MMA ปกติ + Hcy ↑ = folate\n- LDH หลักพัน + retic ต่ำ = ineffective erythropoiesis\n- Babinski + ankle jerk หายในผู้สูงอายุ → นึกถึง B12\n- N₂O ทำให้ SCD เฉียบพลันได้แม้ B12 ในเลือดปกติ (MMA/Hcy สูง)\n",
+  "pearls": [
+   "B12 = cofactor 2 เอนไซม์: methionine synthase (Hcy ↑) + methylmalonyl-CoA mutase (MMA ↑) — MMA ↑ แยก B12 จาก folate",
+   "Folate trap: 5-methyl-THF ย้อนไม่ได้ → dTMP ↓ → dUTP ใน DNA → megaloblast ตายในไขกระดูก → LDH หลักพัน แต่ retic ต่ำ",
+   "SCD = dorsal column + lateral corticospinal (+ spinocerebellar) · เกิดได้โดยไม่ซีด · Babinski + ankle jerk หาย",
+   "PA: anti-IF จำเพาะแต่ไม่ไว · anti-parietal cell ไวแต่ไม่จำเพาะ · gastrin สูง เสี่ยง carcinoid",
+   "Oral B12 1–2 mg/วันใช้ได้แม้ PA (passive diffusion 1%) · retic ขึ้นวันที่ 3–5",
+   "เริ่ม B12 แล้วระวัง hypokalemia 48–72 ชม.แรก และขาดเหล็กโผล่ · ห้ามให้ folate เดี่ยว"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-20",
+    "kind": "mcq",
+    "topic": "Ineffective erythropoiesis in B12 deficiency",
+    "stem": "A 68-year-old woman with vitiligo and treated Hashimoto thyroiditis presents with 4 months of fatigue, tingling feet and unsteadiness that is worse in the dark. Romberg sign is positive. Hb 7.8 g/dL, MCV 118 fL, WBC 3,200/µL, platelets 98,000/µL, reticulocytes 0.5%. LDH 2,450 U/L, indirect bilirubin 2.4 mg/dL, haptoglobin < 10 mg/dL. The smear shows macro-ovalocytes and neutrophils with 6–7 nuclear lobes. Which mechanism best explains the markedly elevated LDH?",
+    "choices": [
+     "Complement-mediated intravascular lysis of circulating mature red cells",
+     "Splenic removal of spherocytes coated with IgG",
+     "Apoptosis of megaloblastic erythroid precursors within the bone marrow",
+     "Fragmentation of red cells by platelet-rich microthrombi",
+     "Hepatocellular injury from congestive hepatopathy"
+    ],
+    "answer": 2,
+    "explain": "ภาพนี้คือ **pernicious anemia** (autoimmune ร่วม, macro-ovalocyte, hypersegmented neutrophil, dorsal column เสีย) · ขาด B12 → **folate trap** → 5,10-methylene-THF ไม่พอ → dTMP ไม่พอ → dUTP แทรกใน DNA → DNA แตก → **megaloblast ค้างใน S phase แล้ว apoptosis ในไขกระดูก** = **ineffective erythropoiesis (intramedullary hemolysis)** · เซลล์ใหญ่และตายจำนวนมากจึงปล่อย **LDH หลักพัน** พร้อม indirect bilirubin สูงและ haptoglobin ต่ำ ขณะที่ **retic ต่ำ** เพราะเซลล์ตายก่อนออกสู่เลือด\n\n- **Complement intravascular lysis** (เช่น PNH) retic จะสูง ไม่มี hypersegmented neutrophil\n- **IgG-coated spherocyte** = warm AIHA: retic สูง DAT บวก smear มี spherocyte ไม่ใช่ macro-ovalocyte\n- **Microthrombi (TTP)**: มี schistocyte เด่น MCV ไม่ถึง 118 retic สูง — เป็นกับดักที่พบบ่อยเพราะ B12 ขาดก็มี LDH สูงและเกล็ดเลือดต่ำได้\n- **Congestive hepatopathy** ไม่อธิบาย pancytopenia และ megaloblastic picture",
+    "pearl": "LDH หลักพัน + retic ต่ำ + MCV สูง = intramedullary hemolysis ของ megaloblast ไม่ใช่ TTP",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Folate, cobalamin and megaloblastic anemias",
+     "Stabler SP. NEJM 2013;368:149–60"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.2.5(1)",
+     "3.1.2"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-21",
+    "kind": "mcq",
+    "topic": "MMA and homocysteine",
+    "stem": "A 55-year-old man who has taken metformin for 9 years has macrocytic anemia (Hb 10.9 g/dL, MCV 109 fL) and reduced vibration sense in both toes. Serum vitamin B12 is 240 pg/mL (reference > 200) and serum folate is normal. Which pair of results would best confirm tissue vitamin B12 deficiency?",
+    "choices": [
+     "Elevated methylmalonic acid and elevated homocysteine",
+     "Normal methylmalonic acid and elevated homocysteine",
+     "Low red-cell folate and normal homocysteine",
+     "Elevated serum gastrin and normal methylmalonic acid",
+     "Low holotranscobalamin and normal homocysteine"
+    ],
+    "answer": 0,
+    "explain": "B12 ระดับ 200–300 pg/mL เป็น **ช่วงกำกวม** · ต้องดูผลของ B12 ต่อ **เอนไซม์สองตัว**: methylmalonyl-CoA mutase เสีย → **MMA ↑** และ methionine synthase เสีย → **homocysteine ↑** · การพบ **ทั้งสองค่าสูง** จึงยืนยันการขาด B12 ระดับเนื้อเยื่อ (เมื่อไตปกติ) · metformin ลดการดูดซึม B12–IF ที่ ileum (calcium-dependent) เป็นสาเหตุที่พบบ่อย\n\n- **MMA ปกติ + Hcy สูง** = pattern ของ **folate deficiency** เพราะ mutase ไม่ใช้ folate\n- **RBC folate ต่ำ** พบได้ทั้ง B12 และ folate (B12 ขาดทำให้ folate ติด polyglutamate ไม่ได้) ไม่ใช่ตัวยืนยัน และ Hcy ควรสูง\n- **Gastrin สูง** สนับสนุน atrophic gastritis แต่ไม่ยืนยันการขาดระดับเนื้อเยื่อ และ MMA ปกติขัดแย้งกัน\n- holoTC ต่ำบ่งชี้ B12 ต่ำได้ แต่ Hcy ปกติไม่เข้ากับการขาดระดับเนื้อเยื่อ",
+    "pearl": "B12 ขาด: MMA ↑ + Hcy ↑ · folate ขาด: Hcy ↑ อย่างเดียว · MMA สูงปลอมในไตวาย",
+    "src": "",
+    "ref": [
+     "BSH guideline for cobalamin and folate disorders 2014",
+     "First Aid for the USMLE Step 1 — Vitamin B12 vs folate deficiency"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.2.5(1)",
+     "B1.1.5(2)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-22",
+    "kind": "mcq",
+    "topic": "Hypokalemia after B12 repletion",
+    "stem": "A 74-year-old man with pernicious anemia (Hb 5.9 g/dL, MCV 121 fL, serum potassium 4.0 mmol/L) is started on intramuscular hydroxocobalamin 1 mg. Forty-eight hours later he reports leg weakness and palpitations; ECG shows flattened T waves and prominent U waves. Which mechanism best explains this complication?",
+    "choices": [
+     "Worsening of the folate trap by the first cobalamin dose",
+     "IgE-mediated reaction to hydroxocobalamin",
+     "Release of potassium from lysed megaloblasts",
+     "Iron overload from rapid hemoglobin synthesis",
+     "Uptake of potassium into rapidly proliferating new erythroid precursors"
+    ],
+    "answer": 4,
+    "explain": "หลังได้ B12 ไขกระดูกเปลี่ยนจาก megaloblastic เป็น normoblastic ภายใน 1–2 วัน และ **erythroid precursor ใหม่แบ่งตัวพร้อมกันจำนวนมหาศาล** · เซลล์ใหม่ต้องการ K⁺ ภายในเซลล์สูง (Na⁺/K⁺-ATPase) → **K⁺ ถูกดึงจากพลาสมาเข้าเซลล์** → **hypokalemia** ใน 48–72 ชั่วโมงแรก โดยเฉพาะผู้ที่ซีดมาก · อาการอ่อนแรง ใจสั่น T wave แบน และ U wave เด่น · จึงต้องเจาะ K⁺ ติดตามและเสริมเมื่อจำเป็น\n\n- B12 **แก้** folate trap ไม่ได้ทำให้แย่ลง\n- แพ้ยาแบบ IgE จะมีผื่น/หลอดลมตีบ ไม่ใช่ U wave\n- เซลล์แตกจะทำให้ K⁺ **สูง** ไม่ใช่ต่ำ (ตรงข้ามกับคำตอบ)\n- การสร้าง Hb เร็วทำให้ **ขาดเหล็ก** โผล่ตามมา ไม่ใช่เหล็กเกิน",
+    "pearl": "เริ่ม B12 ในรายซีดมาก → ตรวจ K⁺ วันที่ 1–3 และระวังขาดเหล็กตามมา",
+    "src": "",
+    "ref": [
+     "Hoffbrand's Essential Haematology 8th ed. — Megaloblastic anaemias",
+     "Harrison's 21st ed. — Megaloblastic anemias"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.4(2)",
+     "B2.2.5(1)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-08",
+  "title": "Folate deficiency — วงจร THF, dUMP → dTMP และทำไมต้องให้ B12 ก่อน",
+  "minutes": 12,
+  "summary": "Folate คลังเล็ก ขาดใน 3–4 เดือน · 5,10-methylene-THF ↓ → thymidylate synthase สร้าง dTMP ไม่ได้ → megaloblast เหมือน B12 แต่ MMA ปกติ ไม่มี SCD · สุรา ตั้งครรภ์ hemolysis เรื้อรัง MTX/phenytoin · MTX ใช้ leucovorin · folate เดี่ยวบัง B12",
+  "source": "Williams Hematology 10th ed. · Hoffbrand's Essential Haematology 8th ed. · Harrison's 21st ed. — Megaloblastic anemias · BSH cobalamin & folate guideline 2014 · USPSTF folic acid for NTD prevention 2023 (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3(7)",
+   "B2.2.5(1)",
+   "B2.4(2)",
+   "B1.1.5(1)",
+   "2.3.15-3(11)",
+   "B3.4(3)"
+  ],
+  "md": "### ภาพรวม — ขาดเร็วเพราะคลังเล็ก\n**Folate (B9)** อยู่ใน **ผักใบเขียว** ตับ ถั่ว · **ถูกทำลายด้วยความร้อน** (ต้มนาน) · ต้องการ ~400 µg/วัน (ตั้งครรภ์ 600 µg)\nคลังในตับเพียง ~10–20 mg → **ขาดได้ใน 3–4 เดือน** (B12 ใช้หลายปี) · ดูดซึมที่ **duodenum/jejunum ส่วนต้น** (B12 ที่ terminal ileum)\nในไทยพบบ่อยใน **ผู้ดื่มสุรา**, **หญิงตั้งครรภ์** (โดยเฉพาะครรภ์แฝด), **thalassemia/hemolysis เรื้อรัง**, ผู้สูงอายุกินน้อย, ผู้ป่วยฟอกเลือด\n\n### ไล่กลไก — วงจร THF และ dUMP → dTMP\n1. ลำไส้: polyglutamate ในอาหาร → ตัดเป็น **monoglutamate** ที่ brush border → ดูดซึมทาง **PCFT** (proton-coupled folate transporter)\n2. เลือด: อยู่ในรูป **5-methyl-THF** → เข้าเซลล์แล้วต้องผ่าน **methionine synthase (ใช้ B12)** เป็น THF ก่อน → ติด **polyglutamate** จึงเก็บในเซลล์ได้\n3. THF + serine → **5,10-methylene-THF** → **thymidylate synthase**: **dUMP → dTMP** (folate ถูกออกซิไดซ์เป็น DHF) → **DHFR** (ใช้ NADPH) เปลี่ยน DHF → THF วนต่อ · **10-formyl-THF** ใช้สร้าง purine\n4. ขาด folate → 5,10-methylene-THF ↓ → dTMP ↓ → **dUTP แทรกใน DNA** → uracil-DNA glycosylase ตัดออกซ้ำ ๆ → DNA แตก → **S-phase arrest** → nuclear–cytoplasmic asynchrony → megaloblast ตายในไขกระดูก → **ภาพเลือดเหมือน B12 ทุกอย่าง**\n5. **ทำไมไม่มี SCD**: methylmalonyl-CoA mutase **ไม่ใช้ folate** → **MMA ปกติ** ไม่มีกรดไขมันผิดปกติใน myelin (อาจมีซึมเศร้า/หลงลืมเล็กน้อย แต่ไม่มี dorsal column หรือ UMN signs)\n6. **Homocysteine ↑** → เสี่ยงลิ่มเลือด · ตั้งครรภ์ระยะแรก folate ต่ำ → **neural tube defect** (neural tube ปิด ~วันที่ 28 หลังปฏิสนธิ ก่อนหลายคนรู้ว่าตั้งครรภ์)\n\n### สาเหตุตามกลไก\n| กลไก | ตัวอย่าง |\n|---|---|\n| กินน้อย | **สุรา**, ผู้สูงอายุ, อาหารต้มนาน |\n| ใช้มากขึ้น | **ตั้งครรภ์/ให้นม**, **hemolysis เรื้อรัง**, ผื่นลอกทั้งตัว, มะเร็ง, หลุดทาง dialysate |\n| ดูดซึมเสีย | celiac, tropical sprue, ตัดลำไส้ส่วนต้น, **sulfasalazine** |\n| ยาต้าน DHFR | **methotrexate**, **trimethoprim**, **pyrimethamine** — DHF ค้าง ไม่กลับเป็น THF |\n| ยากันชัก | **phenytoin**, phenobarbital, primidone — ลดการดูดซึม เร่งเมแทบอลิซึม |\n| สุรา | กินน้อย + ดูดซึมลด + ตับเก็บน้อย + ขับทางไตมาก + พิษตรงต่อไขกระดูก |\n\n### ทำไมถึงมีอาการนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด เหนื่อย เหลืองอ่อน | megaloblast ตายในไขกระดูก → indirect bilirubin ↑ |\n| ลิ้นอักเสบ แผลในปาก ท้องเสีย | เยื่อบุแบ่งตัวเร็ว สร้าง DNA ไม่ได้ |\n| **ไม่มี** SCD/neuropathy | MMA pathway ไม่เกี่ยวกับ folate |\n| ทารก neural tube defect | การปิด neural tube ต้องการ DNA synthesis สูง |\n| เกิดภายในเดือน ไม่ใช่ปี | คลังเล็ก |\n\n### ทำไมผลแล็บถึงออกมาแบบนี้\n- **MCV > 100**, macro-ovalocyte, hypersegmented neutrophil, retic ต่ำ, LDH/indirect bilirubin สูง — **เหมือน B12**\n- **Serum folate ต่ำ** (< 3–4 ng/mL) แต่สะท้อนอาหาร **ไม่กี่วัน** → กินดี 1 มื้อหรือได้เลือดก็ปกติปลอมได้\n- **RBC folate** สะท้อน ~3 เดือน แต่ **ต่ำได้ใน B12 ขาด** ด้วย (folate trap ทำให้ติด polyglutamate ไม่ได้)\n- **Homocysteine ↑ แต่ MMA ปกติ** = ตัวแยกจาก B12\n- Thalassemia + folate ขาด: MCV อาจดู \"ปกติ\" เพราะสองแรงหักล้าง → ดู retic ที่ตกลงและ hypersegmented neutrophil\n\n### วินิจฉัยและกับดัก\n- ตรวจ **B12 และ folate พร้อมกันเสมอ** · folate ต่ำแต่ B12 กำกวม → ตรวจ MMA\n- ได้ methotrexate แล้วแผลในปาก + pancytopenia + MCV สูง = folate antagonism → **leucovorin**\n- Hemolysis เรื้อรังที่ Hb ตกพร้อม retic ต่ำ: นึกถึง folate ขาด หรือ **parvovirus B19 aplastic crisis**\n\n### รักษาตามกลไก\n- **Folic acid 5 mg/วัน รับประทาน × 4 เดือน** (BSH) — ขนาดนี้ดูดซึมได้แม้มี malabsorption · hemolysis เรื้อรังให้ระยะยาว\n- **ป้องกัน NTD**: folic acid **400 µg/วัน เริ่มก่อนตั้งครรภ์ ≥ 1 เดือน** ถึง 12 สัปดาห์ · เคยมีบุตร NTD หรือกินยากันชัก: **4–5 mg/วัน**\n- **Methotrexate**: folic acid ช่วยไม่ได้เมื่อ DHFR ถูกบล็อก → ใช้ **leucovorin (folinic acid, 5-formyl-THF)** ที่เข้าวงจรโดย **ไม่ผ่าน DHFR** · MTX ขนาดต่ำใน RA ให้ folic acid ป้องกันผลข้างเคียง\n- **ทำไมต้องให้ B12 ก่อนหรือพร้อม folate**: folic acid ขนาดสูงถูก DHFR เปลี่ยนเป็น THF **ข้าม methionine synthase** → DNA synthesis กลับมา ซีดดีขึ้น → **บดบัง B12 deficiency** ขณะที่ MMA pathway ยังเสีย → **SCD ลุกลามต่อ**\n- ตอบสนอง: retic ขึ้นวันที่ 3–5 เช่นเดียวกับ B12\n\n### กับดักข้อสอบ\n- มีอาการทางประสาท → B12 ไม่ใช่ folate\n- คนดื่มสุรา MCV สูง: alcohol toxicity (round macrocyte ไม่มี hypersegmentation) vs folate ขาด (oval + hypersegmented)\n- Trimethoprim ขนาดปกติจับ DHFR แบคทีเรียมากกว่าของคนมาก → มีปัญหาเฉพาะคนที่ folate ต่ำอยู่แล้วหรือได้ร่วมกับ MTX\n",
+  "pearls": [
+   "Folate คลังเล็ก ขาดใน 3–4 เดือน · ดูดซึม jejunum ส่วนต้น · ร้อนแล้วสลาย",
+   "5,10-methylene-THF → dUMP → dTMP โดย thymidylate synthase · DHFR วน DHF → THF",
+   "Hcy ↑ + MMA ปกติ = folate · ไม่มี SCD เพราะ mutase ไม่ใช้ folate",
+   "Serum folate สะท้อนไม่กี่วัน (ปกติปลอมหลังกินมื้อเดียว) · RBC folate ต่ำได้ใน B12 ขาด",
+   "MTX/pyrimethamine บล็อก DHFR → ใช้ leucovorin ไม่ใช่ folic acid",
+   "Folic acid 5 mg/วัน × 4 เดือน · NTD 400 µg ก่อนตั้งครรภ์ (เสี่ยงสูง 4–5 mg) · ต้องตัด B12 ก่อน"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-23",
+    "kind": "mcq",
+    "topic": "Methotrexate and leucovorin",
+    "stem": "A 63-year-old woman with rheumatoid arthritis has been taking methotrexate 20 mg weekly without any folate supplement. She was recently given trimethoprim–sulfamethoxazole for a urinary tract infection. She now has painful oral ulcers, Hb 8.4 g/dL, MCV 108 fL, WBC 1,900/µL and platelets 62,000/µL. Methotrexate is stopped. Which agent most directly restores her cells' thymidylate synthesis?",
+    "choices": [
+     "Folic acid 5 mg orally daily",
+     "Leucovorin (folinic acid)",
+     "Cyanocobalamin 1,000 µg intramuscularly",
+     "Filgrastim alone",
+     "Pyridoxine"
+    ],
+    "answer": 1,
+    "explain": "Methotrexate (และ trimethoprim ที่ได้ร่วม) **ยับยั้ง DHFR** → DHF ที่เกิดจากปฏิกิริยา thymidylate synthase เปลี่ยนกลับเป็น THF ไม่ได้ → 5,10-methylene-THF หมด → dTMP ไม่พอ → megaloblastic pancytopenia + mucositis · **Leucovorin = 5-formyl-THF** ซึ่งเป็น reduced folate อยู่แล้ว เปลี่ยนเป็น 5,10-methylene-THF ได้โดย **ไม่ต้องผ่าน DHFR** จึงกู้วงจรได้ทันที (หลักเดียวกับ leucovorin rescue หลัง high-dose MTX)\n\n- **Folic acid** ต้องถูก DHFR reduce ก่อน (folic acid → DHF → THF) ขณะ DHFR ถูกบล็อกจึงได้ผลน้อย — ใช้เพื่อ **ป้องกัน** ผลข้างเคียงของ MTX ขนาดต่ำ ไม่ใช่แก้พิษ\n- **B12** ไม่ได้ขาด ไม่แก้การบล็อก DHFR\n- **Filgrastim** อาจช่วย neutrophil แต่ไม่แก้ต้นเหตุคือ DNA synthesis ของทุกสาย\n- **Pyridoxine** เกี่ยวกับ heme synthesis/sideroblastic anemia",
+    "pearl": "DHFR ถูกบล็อก (MTX, pyrimethamine) → ให้ leucovorin ที่ข้าม DHFR",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Drug-induced megaloblastic anemia",
+     "Goodman & Gilman's 14th ed. — Methotrexate"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.4(2)",
+     "B2.2.5(1)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-24",
+    "kind": "mcq",
+    "topic": "Why folate deficiency spares the nervous system",
+    "stem": "A 29-year-old woman at 30 weeks of a twin pregnancy has fatigue and a sore tongue. Hb 8.6 g/dL, MCV 112 fL, reticulocytes 0.6%, hypersegmented neutrophils on smear. Neurological examination including vibration and position sense is normal. Serum folate is low, homocysteine is elevated and methylmalonic acid is normal. Which statement best explains why she has no subacute combined degeneration?",
+    "choices": [
+     "Thymidylate synthesis is preserved in folate deficiency",
+     "Neurons do not require folate for any reaction",
+     "Folate deficiency develops too slowly to injure myelin during pregnancy",
+     "Methylmalonyl-CoA mutase does not require folate, so methylmalonyl-CoA is still converted to succinyl-CoA",
+     "Elevated homocysteine protects myelin from oxidative injury"
+    ],
+    "answer": 3,
+    "explain": "ครรภ์แฝดใช้ folate มาก + คลังเล็ก → ขาดภายในไม่กี่เดือน · ขาด folate → 5,10-methylene-THF ↓ → dTMP ↓ → megaloblastic anemia เหมือน B12 · แต่ **methylmalonyl-CoA mutase ใช้ adenosylcobalamin ไม่ใช้ folate** → methylmalonyl-CoA ยังเปลี่ยนเป็น succinyl-CoA ได้ → **MMA ปกติ** ไม่มีการสะสมกรดไขมันสายคี่/กิ่งผิดปกติใน myelin → **ไม่เกิด SCD** · ส่วน homocysteine สูงเพราะ methionine synthase ขาด 5-methyl-THF เป็นสารตั้งต้น\n\n- thymidylate synthesis **เสีย** จริงในการขาด folate — นั่นคือเหตุของ megaloblast\n- เซลล์ประสาทใช้ folate (เช่น ใน one-carbon metabolism) การขาดอาจทำให้ซึมเศร้า/หลงลืมได้ แต่ไม่เกิด SCD\n- การขาด folate เกิด **เร็ว** (3–4 เดือน) ไม่ใช่ช้า\n- homocysteine สูงเป็นพิษต่อหลอดเลือด ไม่ได้ปกป้อง myelin",
+    "pearl": "Mutase ใช้ B12 อย่างเดียว → MMA ปกติใน folate ขาด → ไม่มี SCD",
+    "src": "",
+    "ref": [
+     "First Aid for the USMLE Step 1 — Folate vs B12 deficiency",
+     "Hoffbrand's Essential Haematology 8th ed. — Megaloblastic anaemias"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.2.5(1)",
+     "2.3.15-3(11)",
+     "B1.1.5(1)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-25",
+    "kind": "mcq",
+    "topic": "Folic acid masking B12 deficiency",
+    "stem": "A 71-year-old man with macrocytic anemia (Hb 8.1 g/dL, MCV 117 fL) and mild numbness of the feet is started on folic acid 5 mg daily while vitamin B12 results are pending. Six weeks later his hemoglobin is 11.8 g/dL, but he now has a broad-based gait, a positive Romberg sign and extensor plantar responses. Serum B12 returns at 90 pg/mL. Which mechanism best explains this course?",
+    "choices": [
+     "Folic acid is reduced by DHFR to tetrahydrofolate, bypassing the B12-dependent methionine synthase step and restoring DNA synthesis, while the methylmalonyl-CoA mutase defect persists",
+     "Folic acid is directly toxic to the dorsal columns at doses above 1 mg",
+     "Folic acid inhibits secretion of intrinsic factor by parietal cells",
+     "Folic acid causes hypokalemia that produces the gait disorder",
+     "Folic acid competes with cobalamin for the ileal cubilin receptor"
+    ],
+    "answer": 0,
+    "explain": "ใน B12 ขาด folate ติดอยู่ในรูป 5-methyl-THF (**folate trap**) · การให้ **folic acid ขนาดสูง** เข้าวงจรอีกทาง: DHFR เปลี่ยน folic acid → DHF → **THF โดยไม่ต้องผ่าน methionine synthase** → 5,10-methylene-THF กลับมา → dTMP กลับมา → **ไขกระดูกและ Hb ดีขึ้น** · แต่ B12 ยังขาด → **methylmalonyl-CoA mutase และ SAM ยังเสีย** → demyelination ของ dorsal column/corticospinal ลุกลามต่อ (Romberg +, Babinski) · ภาวะนี้คือเหตุผลที่ต้อง **ตรวจและให้ B12 ก่อนหรือพร้อม folate** ในทุก megaloblastic anemia ที่ยังไม่รู้สาเหตุ\n\n- folic acid ไม่ได้เป็นพิษต่อ dorsal column โดยตรง ปัญหาคือการ **บดบัง** การวินิจฉัย\n- ไม่ยับยั้ง IF และไม่แย่งตัวรับ cubilin (folate ดูดซึมที่ jejunum ผ่าน PCFT)\n- hypokalemia เป็นภาวะช่วงต้นของการเริ่มรักษาและไม่ทำให้เกิด UMN signs",
+    "pearl": "Folate เดี่ยวแก้เลือดแต่ไม่แก้ myelin → ตัด B12 ก่อนเสมอ",
+    "src": "",
+    "ref": [
+     "BSH guideline for cobalamin and folate disorders 2014",
+     "Harrison's 21st ed. — Megaloblastic anemias"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "B2.2.5(1)",
+     "B2.4(2)",
+     "2.3.6-3(9)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-09",
+  "title": "Aplastic anemia — T cell ทำลาย stem cell ไขกระดูกกลายเป็นไขมัน",
+  "minutes": 14,
+  "summary": "CD8⁺ T cell + IFN-γ/TNF-α → Fas apoptosis ของ HSC → pancytopenia + ไขกระดูก hypocellular โดยไม่มีม้ามโต · PNH clone หลบภูมิ · Camitta: ANC < 0.5, plt < 20, retic < 20 (+ cellularity < 25%) · HSCT จากพี่น้องในคนอายุน้อย vs hATG + CsA + eltrombopag",
+  "source": "Williams Hematology 10th ed. · Hoffbrand's Essential Haematology 8th ed. · BSH aplastic anaemia guideline 2024 (Kulasekararaj et al.) · Young NS, NEJM 2018 · Townsley DM, NEJM 2017 · Issaragrisil S et al. Blood 2006 (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3-3(1)",
+   "B2.2.2-3(1)",
+   "2.1.56",
+   "3.3.1",
+   "B2.1.1(1)",
+   "B2.4(1)",
+   "B2.4(4)"
+  ],
+  "md": "### ภาพรวม\n**Aplastic anemia (AA)** = **pancytopenia + ไขกระดูก hypocellular** (cellularity < 25%) โดย **ไม่มี** เซลล์ผิดปกติแทรกและไม่มี fibrosis — ไขกระดูกถูกแทนที่ด้วย **ไขมัน**\nอุบัติการณ์ในเอเชียสูงกว่าตะวันตก 2–3 เท่า (ไทย ~4 ต่อล้านคนต่อปี) · อายุสองยอด **15–25 ปี** และ **> 60 ปี**\nส่วนใหญ่ (~70–80%) เป็น **idiopathic ที่กลไกเป็น immune** · ในคนอายุน้อยต้องแยก **inherited bone marrow failure** (Fanconi anemia, telomeropathy/dyskeratosis congenita) เสมอ\n\n### ไล่กลไก — T cell ทำลาย hematopoietic stem cell\n1. ตัวกระตุ้น (ยา ไวรัสตับอักเสบ สารเคมี หรือไม่ทราบ) → เผย/เปลี่ยน antigen บน **CD34⁺ HSC** · พันธุกรรมเอื้อ (HLA-DR15)\n2. **Oligoclonal CD8⁺ cytotoxic T cell** และ Th1 ขยายตัว · **Treg ลดลง**\n3. T cell หลั่ง **IFN-γ และ TNF-α** → HSC แสดง **Fas** มากขึ้น → **apoptosis** + หยุด cell cycle\n4. HSC เหลือ < 1% ของปกติ → ไขกระดูกว่าง แทนที่ด้วยไขมัน (**hypocellular, fatty marrow**)\n5. ทุกสายลดพร้อมกัน แต่โผล่ตามอายุขัยเซลล์: **neutrophil (~1 วัน) และเกล็ดเลือด (~7–10 วัน) ลดก่อน** → RBC (120 วัน) ลดช้าที่สุด\n6. ร่างกายชดเชย: **EPO และ TPO สูงมาก** แต่ไม่มีเซลล์ตอบสนอง\n7. **Clonal escape**: HSC ที่กลายพันธุ์ **PIGA** (ไม่มี GPI anchor) หรือเสีย HLA class I **หลบ T cell** → รอดและขยาย → **PNH clone พบ ~40–50%** · ระยะยาว **clonal evolution** เป็น PNH หรือ **MDS/AML (~10–15%)**\nหลักฐานว่าเป็น immune: **~2/3 ตอบสนองต่อ immunosuppression**\n- **Telomeropathy** (TERT/TERC): HSC สำรองน้อย · **Fanconi anemia**: ซ่อม DNA crosslink ไม่ได้\n\n### สาเหตุ\n| กลุ่ม | ตัวอย่าง |\n|---|---|\n| ขึ้นกับขนาด | **เคมีบำบัด, รังสี, benzene** |\n| Idiosyncratic | **chloramphenicol**, sulfonamide, carbamazepine, felbamate, gold, NSAIDs, antithyroid drug |\n| ไวรัส | **hepatitis-associated AA** (ตับอักเสบ seronegative non-A–E ในชายอายุน้อย ตามมา 1–3 เดือน), EBV, HIV |\n| ภูมิคุ้มกัน | SLE, eosinophilic fasciitis, **transfusion-associated GVHD**, ตั้งครรภ์ |\n| PNH | AA–PNH overlap |\n| พันธุกรรม | Fanconi, dyskeratosis congenita, Shwachman–Diamond |\n| บริบทไทย | สัมผัส **ยาฆ่าแมลง**/ตัวทำละลาย |\n- **Parvovirus B19** มักทำให้ **pure red cell aplasia** (เฉพาะสายแดง) ไม่ใช่ AA\n\n### ทำไมถึงมีอาการนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด เหนื่อย | RBC ไม่ถูกสร้างใหม่ |\n| จุดจ้ำเลือด เหงือกออก ประจำเดือนมาก | เกล็ดเลือดต่ำ |\n| ติดเชื้อแบคทีเรีย/**เชื้อรา** รุนแรง | ANC < 0.5 × 10⁹/L |\n| **ไม่มีม้าม/ตับ/ต่อมน้ำเหลืองโต ไม่ปวดกระดูก** | ไม่มีเซลล์ผิดปกติแทรก — ถ้ามี ให้คิด leukemia, lymphoma, myelofibrosis, hypersplenism |\n| ตัวเตี้ย นิ้วโป้ง/radius ผิดรูป café-au-lait | Fanconi anemia |\n| เล็บผิดรูป leukoplakia ผิวลายร่างแห | dyskeratosis congenita |\n\n### ทำไมผลแล็บถึงออกมาแบบนี้\n- **Pancytopenia** + **absolute retic ต่ำมาก** = hypoproliferative\n- **MCV ปกติหรือสูงเล็กน้อย** (stress erythropoiesis, HbF ↑) · ไม่มี hypersegmented neutrophil\n- Smear: **ไม่มี blast, teardrop หรือ leukoerythroblastic picture**\n- **Trephine biopsy** จำเป็น (aspirate อาจ dry/เจือเลือด) → **ไขมันแทนที่ > 75%** เหลือ lymphocyte/plasma cell/mast cell\n- **Ferritin/TSAT สูง** — เหล็กไม่ถูกใช้ + ได้เลือดบ่อย · EPO สูงมาก\n- **Flow cytometry หา PNH clone** (FLAER/CD59) · LDH สูง + hemoglobinuria = AA/PNH\n- **Chromosome breakage test (DEB/MMC)** ในคนอายุน้อยหรือมีลักษณะ Fanconi · วัด telomere length\n- Cytogenetics/NGS แยก **hypoplastic MDS** (dysplasia, blast, monosomy 7)\n\n### Severity (Camitta)\n- **Severe AA**: cellularity < 25% (หรือ 25–50% ที่ hematopoietic cell < 30%) **+ ≥ 2 ใน 3**: **ANC < 0.5 × 10⁹/L**, **platelet < 20 × 10⁹/L**, **retic < 20 × 10⁹/L** (นับมือ; เครื่องอัตโนมัติใช้ < 60 × 10⁹/L)\n- **Very severe AA**: เกณฑ์ severe + **ANC < 0.2 × 10⁹/L**\n- **Non-severe**: ไม่ถึงเกณฑ์\n\n### รักษาตามกลไก\n- **Supportive**: เลือด/เกล็ดเลือด **leukodepleted** (irradiated ช่วง ATG/HSCT) · เลี่ยงเลือดจากญาติถ้าจะทำ HSCT · prophylactic platelet เมื่อ < 10 × 10⁹/L · รักษา febrile neutropenia ทันที + antifungal prophylaxis · iron chelation เมื่อเหล็กเกิน\n- **HSCT จาก HLA-matched sibling** = แทนที่ HSC และระบบภูมิที่ทำลาย → **หายขาด** · first-line ใน **severe AA อายุน้อย** (ราว < 35–40 ปี) ที่มีพี่น้อง HLA ตรง · รอดระยะยาว ~80–90%\n- **IST**: **horse ATG** (40 mg/kg/วัน × 4 วัน) + **cyclosporine** (~5 mg/kg/วัน ปรับตามระดับยา) → กำจัด/กด T cell · ATG ม้าดีกว่า ATG กระต่ายในการศึกษาสุ่ม · เพิ่ม **eltrombopag** (TPO-receptor agonist กระตุ้น c-MPL บน HSC ที่เหลือ) → ตอบสนองรวมราว 80% เร็วขึ้น · steroid ช่วงสั้นเพียงกัน **serum sickness** จาก ATG\n- IST เหมาะกับผู้สูงอายุหรือไม่มี donor · ข้อเสีย: relapse ~30%, **clonal evolution** 10–15%\n- **Androgen** (danazol/oxymetholone): telomeropathy และในที่ทรัพยากรจำกัด\n- **G-CSF เดี่ยวหรือ steroid เดี่ยวไม่ใช่การรักษาหลัก**\n\n### กับดักข้อสอบ\n- Pancytopenia + **ม้ามโต** → ไม่ใช่ AA\n- Pancytopenia + **MCV สูงมาก + LDH สูง** → B12/folate\n- Hypocellular + dysplasia/monosomy 7 → hypoplastic MDS\n- ตับอักเสบเฉียบพลันแล้ว 2 เดือนต่อมามีเลือดออก → hepatitis-associated AA\n",
+  "pearls": [
+   "AA = pancytopenia + hypocellular fatty marrow โดยไม่มีเซลล์ผิดปกติ · ไม่มีม้ามโต",
+   "CD8⁺ T cell → IFN-γ/TNF-α → Fas apoptosis ของ HSC · 2/3 ตอบสนองต่อ IST",
+   "PNH clone (PIGA) หลบ T cell ได้ พบ ~40–50% · clonal evolution เป็น MDS/AML 10–15%",
+   "Camitta severe: cellularity < 25% + 2 ใน 3 (ANC < 0.5, plt < 20, retic < 20) · very severe: ANC < 0.2",
+   "อายุน้อย + พี่น้อง HLA ตรง → HSCT · อื่น ๆ → horse ATG + CsA + eltrombopag",
+   "Chloramphenicol, benzene, hepatitis seronegative · parvovirus B19 → PRCA ไม่ใช่ AA"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-26",
+    "kind": "mcq",
+    "topic": "Severity and first-line treatment",
+    "stem": "A 22-year-old man developed acute hepatitis 10 weeks ago; tests for hepatitis A, B, C and E were negative and his liver enzymes normalised. He now has gum bleeding and fever. There is no lymphadenopathy or splenomegaly. ANC 0.15 × 10⁹/L, platelets 8 × 10⁹/L, absolute reticulocytes 10 × 10⁹/L, MCV 96 fL. Trephine biopsy shows 5% cellularity with fat replacement and no abnormal cells. Chromosome breakage testing is normal. His brother is a full HLA match. What is the best classification and definitive treatment?",
+    "choices": [
+     "Non-severe aplastic anemia; cyclosporine alone",
+     "Severe aplastic anemia; G-CSF plus prednisolone",
+     "Hypoplastic myelodysplastic syndrome; azacitidine",
+     "Pure red cell aplasia; intravenous immunoglobulin",
+     "Very severe aplastic anemia; allogeneic stem cell transplantation from the HLA-matched sibling"
+    ],
+    "answer": 4,
+    "explain": "นี่คือ **hepatitis-associated aplastic anemia** (ตับอักเสบ seronegative ในชายอายุน้อย ตามด้วย marrow failure ภายใน 1–3 เดือน) · Camitta: cellularity 5% (< 25%) + ANC < 0.5, plt < 20, retic < 20 ครบทั้ง 3 ข้อ และ **ANC < 0.2 × 10⁹/L** → **very severe AA** · คนอายุน้อยที่มี **พี่น้อง HLA ตรง** → **HSCT** เป็น first-line เพราะแทนที่ทั้ง HSC และระบบภูมิที่ทำลาย ให้โอกาสหายขาดสูงและลด relapse/clonal evolution เมื่อเทียบกับ IST\n\n- **Non-severe** ผิดเพราะเกินเกณฑ์ severe ชัดเจน และ CsA เดี่ยวไม่พอ\n- **G-CSF + steroid** ไม่แก้กลไกที่ T cell ทำลาย HSC และ steroid เดี่ยวไม่ได้ผล\n- **Hypoplastic MDS** ต้องมี dysplasia/cytogenetics ผิดปกติ ซึ่งไม่มี\n- **PRCA** กระทบเฉพาะสายแดง ไม่ใช่ pancytopenia",
+    "pearl": "Very severe AA = ANC < 0.2 · อายุน้อย + sibling donor → HSCT",
+    "src": "",
+    "ref": [
+     "BSH guideline for aplastic anaemia 2024",
+     "Young NS. NEJM 2018;379:1643–56"
+    ],
+    "nl": [
+     "2.3.3-3(1)",
+     "B2.2.2-3(1)",
+     "3.3.1"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-27",
+    "kind": "mcq",
+    "topic": "Immune pathogenesis and PNH clone",
+    "stem": "A 35-year-old woman is diagnosed with severe aplastic anemia. Flow cytometry shows a 6% granulocyte population lacking CD59 and FLAER binding. She responds to horse antithymocyte globulin plus cyclosporine. Which mechanism best explains both her marrow failure and the presence of the CD59-negative population?",
+    "choices": [
+     "A malignant stem cell clone that replaces normal hematopoiesis and later acquires GPI deficiency",
+     "Complement-mediated lysis of GPI-deficient stem cells in the marrow",
+     "Cytotoxic T cells secreting IFN-γ and TNF-α induce Fas-mediated apoptosis of stem cells, while GPI-deficient stem cells escape the immune attack and expand",
+     "Fibrosis of the marrow driven by megakaryocyte-derived TGF-β",
+     "Neutralising antibodies against erythropoietin and thrombopoietin"
+    ],
+    "answer": 2,
+    "explain": "AA ส่วนใหญ่เป็นโรค **immune**: **oligoclonal CD8⁺ T cell** หลั่ง **IFN-γ/TNF-α** → HSC แสดง Fas มากขึ้น → apoptosis → ไขกระดูกว่างเป็นไขมัน · หลักฐานคือ **ตอบสนองต่อ ATG + cyclosporine** (~2/3) · HSC ที่มี **PIGA mutation** ไม่มีโปรตีนที่ยึดด้วย GPI (CD55/CD59 และอาจเป็นเป้าของ T cell) จึง **หลบการโจมตีได้** → ได้เปรียบเชิงคัดเลือกและขยายเป็น **PNH clone** ที่พบใน ~40–50% ของ AA\n\n- **Malignant clone** ที่แทนที่ไขกระดูกจะทำให้ไขกระดูก hypercellular/มี blast ไม่ใช่ fatty marrow\n- **Complement** ทำลาย RBC ที่ไม่มี CD59 ในเลือด ไม่ใช่กลไกที่ทำให้ HSC หาย และ clone นี้ยิ่ง **รอด**\n- **Fibrosis** = myelofibrosis มีม้ามโตและ teardrop cell\n- EPO/TPO ใน AA **สูงมาก** ไม่ได้ถูกยับยั้ง",
+    "pearl": "PNH clone ใน AA = ร่องรอยของ immune escape ไม่ใช่สาเหตุของ aplasia",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Aplastic anemia",
+     "Young NS. NEJM 2018;379:1643–56"
+    ],
+    "nl": [
+     "2.3.3-3(1)",
+     "B2.2.2-3(1)",
+     "B2.1.1(1)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-28",
+    "kind": "mcq",
+    "topic": "Clues against aplastic anemia",
+    "stem": "A 62-year-old farmer is referred for pancytopenia: Hb 7.9 g/dL, WBC 2,100/µL, platelets 41,000/µL. Which additional finding most strongly argues against a diagnosis of aplastic anemia?",
+    "choices": [
+     "MCV of 101 fL",
+     "Spleen palpable 6 cm below the costal margin",
+     "Transferrin saturation of 78%",
+     "Absolute reticulocyte count of 15 × 10⁹/L",
+     "A 3% PNH clone on flow cytometry"
+    ],
+    "answer": 1,
+    "explain": "AA คือ HSC ถูกทำลายจน **ไขกระดูกว่าง** · ไม่มีเซลล์ผิดปกติไปแทรกอวัยวะ และไม่มี extramedullary hematopoiesis ที่ใหญ่พอ → **ไม่มีม้ามโต ตับโต หรือต่อมน้ำเหลืองโต** · ม้ามโต 6 cm กับ pancytopenia ต้องคิดถึง **hypersplenism (portal HT), leukemia/lymphoma, myelofibrosis, hairy cell leukemia, visceral leishmaniasis** ก่อน\n\nตัวเลือกอื่น **เข้ากับ AA** ได้:\n- **MCV 101** — macrocytosis เล็กน้อยพบบ่อยจาก stress erythropoiesis/HbF\n- **TSAT 78%** — เหล็กไม่ถูกใช้ในการสร้างเม็ดเลือด + ได้เลือดบ่อย\n- **Retic 15 × 10⁹/L** — hypoproliferative ชัด และเป็นหนึ่งในเกณฑ์ severity\n- **PNH clone เล็ก** พบได้ ~40–50% ของ AA",
+    "pearl": "Pancytopenia + ม้ามโต = มองหาโรคอื่นก่อน AA",
+    "src": "",
+    "ref": [
+     "Hoffbrand's Essential Haematology 8th ed. — Aplastic anaemia and bone marrow failure",
+     "BSH guideline for aplastic anaemia 2024"
+    ],
+    "nl": [
+     "2.3.3-3(1)",
+     "B2.2.2-3(1)",
+     "2.1.56"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-10",
+  "title": "Anemia of CKD — เซ็นเซอร์ O₂ ในไตเสีย, hepcidin ขังเหล็ก",
+  "minutes": 12,
+  "summary": "REP cell รอบ tubule กลายเป็น myofibroblast → EPO ต่ำเกินระดับซีด · hepcidin ↑ (IL-6 + ไตขับน้อย) → functional iron deficiency · uremic toxins + RBC อายุสั้น + เสียเลือด · normocytic hypoproliferative · เติมเหล็กก่อน · ESA เมื่อ Hb < 10 ไม่เกิน 11.5 · HIF-PH inhibitors",
+  "source": "KDIGO Clinical Practice Guideline for Anemia in CKD 2012 · Williams Hematology 10th ed. · Harrison's 21st ed. · Babitt JL, Lin HY. JASN 2012 · PIVOTAL (NEJM 2019) · TREAT (NEJM 2009) · ASCEND-D/ND (NEJM 2021) (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.14(3)",
+   "B9.2.7(2)",
+   "B9.1.2(8)",
+   "B2.4(2)",
+   "B2.4(4)",
+   "2.1.56"
+  ],
+  "md": "### ภาพรวม\nCKD ทำให้ซีดแบบ **normocytic normochromic, hypoproliferative** · เริ่มพบเมื่อ **eGFR < 60** และพบมากใน **stage 4–5**\nผู้ป่วย **เบาหวาน** ซีดเร็วและรุนแรงกว่าที่ eGFR เดียวกัน · **ADPKD ซีดน้อยกว่า** เพราะเนื้อเยื่อรอบ cyst ยังสร้าง EPO ได้\nนิยาม KDIGO: **Hb < 13 g/dL (ชาย), < 12 g/dL (หญิง)**\n\n### ไล่กลไก 1 — เซ็นเซอร์ออกซิเจนในไตเสีย\n1. **EPO สร้างจาก peritubular interstitial fibroblast-like cell (REP cell)** ใน cortex/outer medulla\n2. O₂ ปกติ: **prolyl hydroxylase (PHD2)** ใช้ O₂ + Fe²⁺ + 2-oxoglutarate เติม OH ที่ **HIF-2α** → **VHL** จับ → ubiquitin → proteasome ทำลาย\n3. ขาด O₂: PHD ทำงานไม่ได้ → HIF-2α เสถียร → จับ HIF-β → เข้านิวเคลียส จับ HRE → **EPO gene ↑** (เพิ่มได้หลายร้อยเท่า)\n4. EPO จับ EPO-R บน **CFU-E/proerythroblast** → JAK2/STAT5 → กัน apoptosis → RBC ↑\n5. **CKD**: REP cell **เปลี่ยนเป็น myofibroblast** ระหว่าง fibrosis → **หยุดสร้าง EPO** · GFR ลด → Na⁺ ที่ต้อง reabsorb ลด → ไตใช้ O₂ น้อยลง → **pO₂ ในเนื้อไตไม่ต่ำ** แม้ซีด → เซ็นเซอร์ไม่รู้ว่าขาด O₂\n6. ผล: **EPO ในเลือดอยู่ในช่วงปกติ แต่ต่ำเกินไปเมื่อเทียบกับระดับซีด** = **relative EPO deficiency**\n\n### ไล่กลไก 2 — เหล็กถูกขัง RBC อายุสั้น เสียเลือด\n- **Hepcidin ↑**: uremic inflammation (**IL-6 → JAK/STAT3**) + **ไตกรอง hepcidin ออกได้น้อยลง** → hepcidin จับ **ferroportin** → ferroportin ถูกดึงเข้าเซลล์และทำลาย → ลำไส้ส่งเหล็กเข้าเลือดไม่ได้ + macrophage ขังเหล็ก → **functional iron deficiency**\n- **Absolute iron deficiency**: เลือดค้างในวงจรฟอกเลือด เจาะเลือดบ่อย **เลือดออกทางเดินอาหาร** (uremic platelet dysfunction, angiodysplasia) phosphate binder/PPI ลดการดูดซึม\n- **Uremic toxins** (เช่น indoxyl sulfate) กด HIF/EPO และยับยั้ง erythroid progenitor\n- **RBC อายุสั้นลง** (~70–80 วัน) จาก oxidative stress ใน uremic milieu\n- **Secondary hyperparathyroidism** → marrow fibrosis · folate หลุดทาง dialysate · ACEi/ARB ลด Hb เล็กน้อย\n\n### ทำไมถึงมีอาการนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| อ่อนเพลีย ทนออกแรงไม่ได้ สมาธิลด | O₂ delivery ลด |\n| **LVH**, angina, หัวใจล้มเหลวกำเริบ | ซีดเรื้อรัง → high cardiac output → LV ทำงานหนัก |\n| ซีดแต่ **ไม่เหลือง ไม่มีม้ามโต** | hypoproliferative ไม่ใช่ hemolysis |\n| เลือดออกง่ายร่วม | uremic platelet dysfunction |\n\n### ทำไมผลแล็บถึงออกมาแบบนี้\n- **MCV/MCHC ปกติ** — สร้างน้อยลงแต่เซลล์ที่ออกมาปกติ (MCV ต่ำ → หาขาดเหล็กจริงหรือ thalassemia)\n- **Retic ต่ำ** (retic index < 2) — ขาด EPO\n- Smear: **burr cell (echinocyte)** ใน uremia\n- Iron study: **TSAT < 20% + ferritin ปกติ/สูง** = functional iron deficiency (hepcidin) · **ferritin < 100 ng/mL** (CKD ไม่ฟอก) หรือ **< 200 ng/mL** (HD) = absolute iron deficiency\n- **ไม่ต้องตรวจ EPO level เป็นประจำ** (ตีความยาก)\n- LDH/bilirubin/haptoglobin ปกติ\n\n### วินิจฉัย — ต้องตัดสาเหตุอื่นก่อน\nตรวจ CBC, retic, iron study, **B12/folate**, หาเลือดออกทางเดินอาหาร · ถ้าซีดเกินระดับ CKD, retic สูง หรือมี cytopenia สายอื่น → หาสาเหตุอื่น (**myeloma** ในผู้สูงอายุ, hemolysis, MDS)\n\n### รักษาตามกลไก\n- **เติมเหล็กก่อน ESA**: ถ้า **TSAT ≤ 30% และ ferritin ≤ 500 ng/mL** ลองให้เหล็ก (KDIGO 2012) · CKD ไม่ฟอก: oral 1–3 เดือน หรือ IV · **HD: IV iron** (ข้ามลำไส้ที่ hepcidin บล็อก) · **PIVOTAL**: IV iron เชิงรุกใน HD ลดขนาด ESA และเหตุการณ์หัวใจ\n- **ESA** (epoetin, darbepoetin, CERA) แทน EPO ที่ขาด · พิจารณาเริ่มเมื่อ **Hb < 10 g/dL** · **เป้าไม่เกิน 11.5 g/dL และไม่ตั้งใจให้ > 13 g/dL** · **CHOIR, CREATE, TREAT**: เป้าสูง → **stroke, thrombosis, CV events เพิ่ม**\n- ผลข้างเคียง ESA: **ความดันสูง**, AV access thrombosis, ชัก, **anti-EPO antibody PRCA** (พบน้อย)\n- **ESA hyporesponsiveness**: **ขาดเหล็ก** (บ่อยสุด), อักเสบ/ติดเชื้อ, hyperparathyroidism, dialysis ไม่พอ, เลือดออกซ่อนเร้น, PRCA\n- **HIF-PH inhibitors** (roxadustat, daprodustat, vadadustat) รับประทาน: ยับยั้ง PHD → HIF เสถียรเหมือนขาด O₂ → **EPO ของร่างกายขึ้นในระดับ physiologic** + **hepcidin ลด** และ DMT1/ferroportin/transferrin ↑ → ใช้เหล็กดีขึ้น · ข้อกังวล: thrombosis, MACE (โดยเฉพาะ CKD ไม่ฟอก), VEGF/มะเร็ง/retinopathy · ในสหรัฐฯ อนุมัติเฉพาะผู้ป่วย **dialysis**\n- **ให้เลือด** เฉพาะจำเป็น โดยเฉพาะผู้รอปลูกถ่ายไต (allosensitization)\n\n### กับดักข้อสอบ\n- CKD + **microcytic** → ไม่ใช่ anemia of CKD ล้วน หาขาดเหล็ก/thalassemia\n- ADPKD ซีดน้อย · เบาหวานซีดมาก\n- ESA ไม่ตอบสนอง → **ขาดเหล็ก** คิดก่อน\n- ไม่ต้องดัน Hb ให้ปกติ — Hb ≥ 13 เพิ่มความเสี่ยง\n",
+  "pearls": [
+   "EPO มาจาก peritubular fibroblast (REP cell) → CKD กลายเป็น myofibroblast · EPO ปกติแต่ต่ำเกินระดับซีด",
+   "PHD + O₂ → HIF-α ถูก VHL ทำลาย · ขาด O₂ → HIF เสถียร → EPO ↑ · HIF-PH inhibitor เลียนแบบภาวะขาด O₂",
+   "Hepcidin ↑ (IL-6 + ไตขับน้อย) → ferroportin ถูกทำลาย → TSAT ต่ำ ferritin ปกติ/สูง",
+   "เติมเหล็กเมื่อ TSAT ≤ 30% และ ferritin ≤ 500 · HD ใช้ IV iron",
+   "ESA เมื่อ Hb < 10 · เป้า ≤ 11.5 ไม่เกิน 13 (TREAT/CHOIR: stroke, thrombosis)",
+   "ESA ดื้อ → ขาดเหล็กก่อน · ADPKD ซีดน้อย เบาหวานซีดมาก"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-29",
+    "kind": "mcq",
+    "topic": "Iron before ESA",
+    "stem": "A 58-year-old man with diabetic nephropathy (eGFR 22 mL/min/1.73 m², not on dialysis) has fatigue. Hb 8.9 g/dL, MCV 88 fL, reticulocytes 0.6%, ferritin 320 ng/mL, transferrin saturation 14%, CRP 12 mg/L. B12 and folate are normal and stool occult blood is negative. What is the most appropriate next step?",
+    "choices": [
+     "Start an erythropoiesis-stimulating agent targeting Hb 13–14 g/dL",
+     "Transfuse red cells to a target Hb of 10 g/dL",
+     "Bone marrow biopsy to exclude myelodysplasia",
+     "Give iron (oral trial or intravenous) before or together with starting an ESA",
+     "Measure serum erythropoietin to confirm the diagnosis"
+    ],
+    "answer": 3,
+    "explain": "Normocytic hypoproliferative anemia ใน CKD stage 4 · ferritin 320 แต่ **TSAT 14%** = **functional iron deficiency** จาก **hepcidin ↑** (IL-6 จาก uremic inflammation + ไตกรอง hepcidin ได้น้อย) → ferroportin ถูกทำลาย เหล็กถูกขังใน macrophage · KDIGO แนะนำ **ลองให้เหล็กเมื่อ TSAT ≤ 30% และ ferritin ≤ 500 ng/mL** และควรแก้เหล็กก่อนหรือพร้อมเริ่ม ESA เพราะ ESA จะไม่ได้ผลถ้าไม่มีเหล็กพอให้ใช้ (IV iron ข้ามการบล็อกที่ลำไส้ได้ดีกว่า)\n\n- **ESA เป้า 13–14** อันตราย: TREAT/CHOIR พบ stroke, thrombosis, CV events เพิ่ม · เป้า ≤ 11.5 g/dL\n- **ให้เลือด** ไม่จำเป็นในรายไม่มีอาการรุนแรง และเพิ่ม allosensitization\n- **Bone marrow** ไม่จำเป็นเมื่อภาพเข้ากับ CKD และไม่มี cytopenia สายอื่น\n- **EPO level** ไม่ช่วยตัดสินใจ (มักปกติแต่ต่ำเกินระดับซีด)",
+    "pearl": "CKD: เติมเหล็กก่อน ESA เมื่อ TSAT ≤ 30% และ ferritin ≤ 500",
+    "src": "",
+    "ref": [
+     "KDIGO Anemia in CKD Guideline 2012",
+     "Pfeffer MA et al. TREAT. NEJM 2009;361:2019–32"
+    ],
+    "nl": [
+     "2.3.14(3)",
+     "B9.2.7(2)",
+     "B2.4(2)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-30",
+    "kind": "mcq",
+    "topic": "HIF-PH inhibitor mechanism",
+    "stem": "A 66-year-old woman on maintenance hemodialysis is switched from injectable epoetin to oral daprodustat. Which mechanism explains how this drug raises her hemoglobin?",
+    "choices": [
+     "It inhibits prolyl hydroxylase so that HIF-α escapes VHL-mediated degradation, increasing endogenous EPO and lowering hepcidin",
+     "It binds and activates the erythropoietin receptor on erythroid progenitors",
+     "It is a monoclonal antibody that blocks hepcidin from binding ferroportin",
+     "It activates the von Hippel–Lindau protein to stabilise EPO mRNA",
+     "It stimulates the thrombopoietin receptor (c-MPL) on hematopoietic stem cells"
+    ],
+    "answer": 0,
+    "explain": "ใน O₂ ปกติ **prolyl hydroxylase (PHD)** ใช้ O₂ + Fe²⁺ + 2-oxoglutarate เติม OH ที่ HIF-α → **VHL** จับแล้วส่งไป proteasome · **HIF-PH inhibitor** (daprodustat, roxadustat, vadadustat) เลียนแบบภาวะขาด O₂ โดยยับยั้ง PHD → **HIF-α เสถียร** → จับ HIF-β และ HRE → **EPO ของร่างกายเองเพิ่ม** (ทั้งจากไตที่เหลือและตับ) ในระดับใกล้ physiologic + HIF ยังเพิ่ม DMT1/Dcytb/ferroportin/transferrin และ EPO→erythroferrone ทำให้ **hepcidin ลด** → ใช้เหล็กได้ดีขึ้น\n\n- **EPO-R agonist** คือ ESA (epoetin/darbepoetin) ไม่ใช่ยากลุ่มนี้\n- ยาต้าน hepcidin แบบ antibody ยังอยู่ในการวิจัย ไม่ใช่ daprodustat\n- VHL **ทำลาย** HIF การกระตุ้น VHL จะลด EPO\n- c-MPL agonist คือ eltrombopag/romiplostim ใช้ใน ITP/AA",
+    "pearl": "HIF-PH inhibitor = หลอกไตว่าขาด O₂ → EPO ตัวเอง ↑ + hepcidin ↓",
+    "src": "",
+    "ref": [
+     "Singh AK et al. ASCEND-D. NEJM 2021;385:2325–35",
+     "Haase VH. Kidney Int Suppl 2021 — HIF-prolyl hydroxylase inhibitors"
+    ],
+    "nl": [
+     "B9.1.2(8)",
+     "B2.4(4)",
+     "B9.2.7(2)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-31",
+    "kind": "mcq",
+    "topic": "ESA hyporesponsiveness",
+    "stem": "A 49-year-old man on hemodialysis for 3 years had a stable Hb of 10.8 g/dL on epoetin. Over 2 months his Hb fell to 8.7 g/dL despite doubling the epoetin dose. Reticulocytes 1.0%, MCV 82 fL, ferritin 90 ng/mL, transferrin saturation 12%, CRP normal, PTH mildly elevated and stable, Kt/V adequate. What is the most likely cause of his ESA hyporesponsiveness?",
+    "choices": [
+     "Anti-erythropoietin antibody–mediated pure red cell aplasia",
+     "Aluminium toxicity from phosphate binders",
+     "Absolute iron deficiency from blood loss",
+     "Worsening secondary hyperparathyroidism",
+     "Inadequate dialysis dose"
+    ],
+    "answer": 2,
+    "explain": "ESA กระตุ้นให้สร้าง RBC มากขึ้น → ใช้เหล็กเร็วขึ้น · ผู้ป่วย HD เสียเลือดต่อเนื่อง (วงจรฟอกเลือด เจาะเลือด เลือดออกทางเดินอาหารจาก uremic platelet dysfunction) · **ferritin 90 (< 200 ใน HD) + TSAT 12% + MCV ลดลงเป็น 82** = **absolute iron deficiency** ซึ่งเป็น **สาเหตุอันดับหนึ่ง** ของ ESA hyporesponsiveness → ให้ IV iron และหาจุดเสียเลือด (ส่องกล้องทางเดินอาหาร)\n\n- **Anti-EPO PRCA**: Hb ตกเร็ว (~0.5–1 g/dL/สัปดาห์) **retic เกือบเป็นศูนย์** (< 10 × 10⁹/L) และ ferritin สูง เพราะเหล็กไม่ถูกใช้ — ไม่เข้ากับภาพนี้\n- **Aluminium** ทำ microcytosis ได้แต่พบน้อยมากในปัจจุบันและ ferritin มักไม่ต่ำ\n- PTH คงที่และสูงเล็กน้อย ไม่อธิบายการตกเร็ว\n- Kt/V เพียงพอแล้ว",
+    "pearl": "ESA ดื้อ → ดู ferritin/TSAT ก่อน · PRCA = retic เกือบศูนย์ + ferritin สูง",
+    "src": "",
+    "ref": [
+     "KDIGO Anemia in CKD Guideline 2012 — ESA hyporesponsiveness",
+     "Macdougall IC et al. PIVOTAL. NEJM 2019;380:447–58"
+    ],
+    "nl": [
+     "2.3.14(3)",
+     "B9.2.7(2)",
+     "B2.4(2)",
+     "B2.4(4)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-11",
+  "title": "ซีดในโรคตับ สุรา และ hypothyroidism — macrocytosis ที่ไม่ใช่ megaloblastic",
+  "minutes": 13,
+  "summary": "เยื่อหุ้ม RBC ดูด cholesterol + phospholipid จากพลาสมา → target cell/round macrocyte (MCV 100–110) · cholesterol เกินสัดส่วน + ม้ามโต → spur cell hemolysis ในตับแข็งระยะท้าย · ethanol พิษตรงต่อ erythroid precursor · hypothyroid O₂ demand ลด → EPO ลด",
+  "source": "Williams Hematology 10th ed. — Hematologic manifestations of liver disease, alcoholism and endocrine disorders · Hoffbrand's Essential Haematology 8th ed. · Harrison's 21st ed. · Kaferle J, Strzoda CE. Evaluation of macrocytosis. Am Fam Physician 2009 (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.11(4)",
+   "B8.2.5(4)",
+   "2.3.11(2)",
+   "B8.2.5(3)",
+   "2.3.4(4)",
+   "B11.2.5(3)",
+   "3.1.2",
+   "2.3.19(6)"
+  ],
+  "md": "### ภาพรวม — MCV สูงโดยไม่ใช่ megaloblastic\n**Non-megaloblastic macrocytosis**: MCV มัก **100–110** (ถ้า > 115 นึกถึง B12/folate) · เซลล์ **กลม (round macrocyte)** ไม่ใช่รูปไข่ · **ไม่มี hypersegmented neutrophil** · ไขกระดูก normoblastic\n- **โรคตับเรื้อรัง/ตับแข็ง**: ซีดพบบ่อย (~75%) กลไกผสม — เสียเลือด, hypersplenism, ACD, ขาด folate, plasma volume ขยาย และเยื่อหุ้ม RBC เปลี่ยน\n- **สุรา**: MCV สูงได้แม้ไม่ซีด ใช้เป็น **marker ของการดื่มหนัก** ร่วมกับ GGT\n- **Hypothyroidism**: ซีดเล็กน้อย ส่วนใหญ่ normocytic\n\n### ไล่กลไก 1 — เยื่อหุ้ม RBC ดูดไขมันจากพลาสมา\n1. RBC สร้างไขมันเองไม่ได้ แต่ **แลกเปลี่ยน cholesterol/phospholipid กับ lipoprotein ในพลาสมา** ตลอดเวลา\n2. โรคตับ โดยเฉพาะ **cholestasis** → **LCAT ลดลง** (ตับสร้างน้อย + bile acid ยับยั้ง) → free cholesterol และ phospholipid ใน lipoprotein สูง\n3. RBC รับ **cholesterol และ phospholipid เพิ่มพอ ๆ กัน** → **พื้นที่ผิวเพิ่ม ปริมาตรเท่าเดิม**\n4. บน smear เซลล์แผ่บาง กลางนูน = **target cell (codocyte)** และ **thin macrocyte** · osmotic fragility **ลดลง** (ผิวเผื่อไว้มาก) · **ไม่แตก ไม่มี hemolysis**\n\n### ไล่กลไก 2 — Spur cell anemia (ตับแข็งระยะท้าย)\n1. ตับแข็งรุนแรง (มักจากสุรา Child–Pugh C) → lipoprotein ผิดปกติ **อัดแน่นด้วย free cholesterol**\n2. RBC รับ **cholesterol มากกว่า phospholipid** (cholesterol:phospholipid ratio ↑) → เยื่อหุ้ม **แข็ง** ยืดหยุ่นลด\n3. ผ่าน **ม้ามโตจาก portal hypertension** → ถูกขัดเกลา (splenic conditioning) เป็น **acanthocyte/spur cell** หนามไม่สม่ำเสมอ\n4. ม้ามจับทำลาย → **hemolysis รุนแรง ซีดเร็ว** · บ่งชี้ **พยากรณ์โรคเลวมาก** · หายด้วย **ปลูกถ่ายตับ**\n- **Zieve syndrome** = alcoholic fatty liver/hepatitis + hemolysis + hypertriglyceridemia + jaundice (ดีขึ้นเมื่อหยุดสุรา)\n\n### ไล่กลไก 3 — สุราและไทรอยด์ต่ำ\n**Ethanol/acetaldehyde**: พิษตรงต่อ erythroid precursor (vacuolization ของ pronormoblast, เยื่อหุ้มผิดปกติ) → **macrocytosis โดยไม่ต้องขาด folate** · กด megakaryocyte → **เกล็ดเลือดต่ำ** (rebound thrombocytosis หลังหยุดดื่ม) · รบกวน pyridoxal phosphate → **ringed sideroblast** · ขาด folate · เลือดออกจาก varices · **หยุดดื่ม MCV กลับปกติใน 2–4 เดือน** (ตามอายุ RBC 120 วัน)\n**Hypothyroidism**: thyroid hormone ต่ำ → **metabolic rate และ O₂ consumption ลด** → ไตรับรู้ว่า O₂ พอ → **EPO ลด** = ซีดแบบ \"ปรับตามความต้องการ\" + ขาดการกระตุ้น erythroid progenitor โดยตรงจาก T3/T4 → normocytic hypoproliferative · MCV สูงได้จากไขมันในเยื่อหุ้มหรือ **PA ร่วม** (autoimmune thyroiditis) · MCV ต่ำได้จาก **ประจำเดือนมาก**\n\n### ทำไมถึงมีอาการนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ตัวเหลือง + ม้ามโต + ซีดเร็วในตับแข็ง | spur cell ถูกทำลายในม้ามโตจาก portal HT |\n| ซีดเล็กน้อย + เกล็ดเลือด/WBC ต่ำ | hypersplenism (pooling) + พิษสุรา |\n| ถ่ายดำ ซีด MCV ปกติ/ต่ำในคนดื่ม | varices/portal gastropathy → ขาดเหล็ก หักล้าง macrocytosis |\n| บวม เฉื่อย ขี้หนาว ซีดเล็กน้อย | hypothyroid: O₂ demand ลด → EPO ลด |\n\n### ทำไมผลแล็บถึงออกมาแบบนี้\n- **MCV 100–110, round macrocyte, target cell** (ตับ) · **stomatocyte** (สุรา) · **acanthocyte** (spur cell)\n- **Retic**: ต่ำในสุรา/ไทรอยด์ (hypoproliferative) · **สูง** ใน spur cell hemolysis\n- **Haptoglobin ต่ำได้เพราะตับสร้างไม่ได้** → ใช้ยืนยัน hemolysis ในตับแข็งไม่ได้ (ดู retic, LDH, smear)\n- **Ferritin สูง** จาก acute phase/hepatocyte เสียหาย → บดบังการขาดเหล็ก\n- **Serum B12 สูงปลอม** ในโรคตับ (ปล่อยจาก hepatocyte)\n- **DAT ลบ** ใน spur cell · **GGT สูง** + MCV สูง = ดื่มหนัก · **TSH สูง** ใน hypothyroid\n- RDW สูง + MCV ปกติในคนดื่ม = **ขาดเหล็ก + folate ร่วม** (dimorphic)\n\n### วินิจฉัย\nMCV สูง → ดู retic และ smear: oval + hypersegmented → B12/folate · round + target → ตับ/สุรา · ตรวจ **B12, folate, LFT, GGT, TSH** ทุกราย · MCV สูง + cytopenia อธิบายไม่ได้ในผู้สูงอายุ → bone marrow หา **MDS**\n\n### รักษาตามกลไก\n- **สุรา**: หยุดดื่ม (MCV ลดใน 2–4 เดือน) + **folic acid** + **thiamine** + รักษาเลือดออก/ให้เหล็ก\n- **Spur cell anemia**: **ปลูกถ่ายตับ** เป็นการรักษาหลัก · ให้เลือดชั่วคราว · splenectomy เสี่ยงสูงในตับแข็ง\n- **Target cell/macrocytosis จากโรคตับ**: ไม่ต้องรักษาเฉพาะ รักษาโรคตับ\n- **Hypothyroid**: **levothyroxine** → Hb กลับปกติช้า **หลายเดือน** (ต้องสร้าง RBC ใหม่) · ไม่ดีขึ้น → หา PA/ขาดเหล็กร่วม\n\n### กับดักข้อสอบ\n- MCV สูงที่ไม่ใช่ megaloblastic → นึกถึงตับ สุรา ไทรอยด์ retic สูง (ดูหลักจำ FAT RBC)\n- Haptoglobin ต่ำในตับแข็ง ≠ hemolysis เสมอไป\n- Target cell ไม่ได้มีแค่ thalassemia/HbE ที่พบบ่อยในไทย — โรคตับก็เป็น\n- Spur cell ในตับแข็ง = พยากรณ์เลว\n",
+  "pearls": [
+   "Non-megaloblastic macrocytosis: MCV 100–110 round macrocyte ไม่มี hypersegmented neutrophil",
+   "โรคตับ: LCAT ↓ → cholesterol + phospholipid เข้าเยื่อหุ้มเท่ากัน → target cell ไม่แตก",
+   "Spur cell: cholesterol เกิน phospholipid + ม้ามโต → acanthocyte hemolysis · พยากรณ์เลว · ปลูกถ่ายตับ",
+   "สุรา: พิษตรงต่อ erythroid precursor · MCV กลับปกติ 2–4 เดือนหลังหยุดดื่ม · GGT ร่วม",
+   "Hypothyroid: O₂ demand ↓ → EPO ↓ → normocytic · ถ้า MCV สูงมาก หา PA ร่วม",
+   "ตับแข็ง: haptoglobin ต่ำ ferritin สูง B12 สูง — หลอกได้ทั้งสามค่า"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-32",
+    "kind": "mcq",
+    "topic": "Spur cell anemia",
+    "stem": "A 52-year-old man with alcohol-related cirrhosis (Child–Pugh C, MELD 27) has deepening jaundice. His spleen is palpable 5 cm below the costal margin. Hb has fallen from 10.0 to 6.8 g/dL over 3 weeks without bleeding. Reticulocytes 9%, LDH 520 U/L, direct antiglobulin test negative. The smear shows many dense red cells with irregular, unevenly spaced spiky projections. Which mechanism best explains his anemia?",
+    "choices": [
+     "Inherited deficiency of spectrin causing loss of membrane surface area",
+     "Free-cholesterol-rich lipoproteins load the red cell membrane with cholesterol in excess of phospholipid, producing rigid acanthocytes that are destroyed in the enlarged spleen",
+     "Warm IgG autoantibodies opsonising red cells for splenic macrophages",
+     "Oxidative denaturation of hemoglobin forming Heinz bodies",
+     "Megaloblastic erythropoiesis due to dietary folate deficiency"
+    ],
+    "answer": 1,
+    "explain": "นี่คือ **spur cell anemia** ของตับแข็งระยะท้าย · lipoprotein ผิดปกติอัดแน่นด้วย **free cholesterol** → RBC รับ cholesterol เข้าเยื่อหุ้ม **มากกว่า phospholipid** (cholesterol:phospholipid ratio ↑) → เยื่อหุ้มแข็ง ยืดหยุ่นลด → ผ่าน **ม้ามโตจาก portal hypertension** ถูกขัดเกลาเป็น **acanthocyte** (หนามไม่สม่ำเสมอ) แล้วถูกจับทำลาย → **extravascular hemolysis** (retic สูง LDH สูง DAT ลบ) · บ่งชี้พยากรณ์เลว การรักษาที่ได้ผลคือ **ปลูกถ่ายตับ**\n\n- **Spectrin deficiency** = hereditary spherocytosis: spherocyte ไม่ใช่เซลล์มีหนาม และไม่ได้เริ่มในวัยกลางคนพร้อมตับแข็ง\n- **Warm AIHA** ต้อง DAT บวก และเห็น spherocyte\n- **Heinz body** = G6PD/oxidant: เห็น bite/blister cell\n- **Folate deficiency** ทำ retic ต่ำ ไม่ใช่ 9%\n- ระวัง: haptoglobin ในตับแข็งต่ำได้อยู่แล้วจากการสร้างลด จึงอาศัย retic/smear เป็นหลัก",
+    "pearl": "Cholesterol > phospholipid + ม้ามโต = spur cell · cholesterol = phospholipid = target cell",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Hemolytic anemia due to liver disease (spur cell anemia)",
+     "Hoffbrand's Essential Haematology 8th ed. — Systemic disease"
+    ],
+    "nl": [
+     "2.3.11(4)",
+     "B8.2.5(4)",
+     "3.1.2"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-33",
+    "kind": "mcq",
+    "topic": "Alcohol-related macrocytosis",
+    "stem": "A 47-year-old man drinks about 10 standard drinks daily. He is asymptomatic. Hb 12.6 g/dL, MCV 106 fL, WBC 6,400/µL, platelets 110,000/µL, reticulocytes 1.1%. GGT 210 U/L. Serum B12 and red-cell folate are normal and TSH is normal. The smear shows round macrocytes without hypersegmented neutrophils. Which is the most likely explanation and expected course?",
+    "choices": [
+     "Occult pernicious anemia; MCV will fall only after intramuscular B12",
+     "Hemolysis with reticulocytosis; MCV will normalise when the reticulocyte count falls",
+     "Myelodysplastic syndrome; bone marrow biopsy is required now",
+     "Subclinical hypothyroidism; MCV will normalise after levothyroxine",
+     "Direct toxicity of ethanol on erythroid precursors and their membranes; MCV normalises over about 2–4 months of abstinence"
+    ],
+    "answer": 4,
+    "explain": "MCV สูงเล็กน้อย (100–110) + **round macrocyte ไม่มี hypersegmented neutrophil** + B12/folate/TSH ปกติ + GGT สูง + เกล็ดเลือดต่ำเล็กน้อย = **alcohol-related macrocytosis** · ethanol/acetaldehyde เป็นพิษต่อ erythroid precursor โดยตรง (vacuolization, เยื่อหุ้มผิดปกติ) จึงทำให้ MCV สูงได้ **โดยไม่ต้องขาด folate และไม่ต้องมีโรคตับ** · กด megakaryocyte ทำให้เกล็ดเลือดต่ำ · หยุดดื่มแล้ว RBC ชุดใหม่แทนที่ชุดเก่าตามอายุ 120 วัน → **MCV กลับปกติใน 2–4 เดือน**\n\n- **PA** จะมี oval macrocyte, hypersegmented neutrophil และ B12 ต่ำ/MMA สูง\n- **Hemolysis** ต้องมี retic สูง (ที่นี่ 1.1%)\n- **MDS** คิดเมื่อ cytopenia อธิบายไม่ได้หรือไม่ดีขึ้นหลังหยุดดื่ม — ยังไม่จำเป็นตอนนี้\n- TSH ปกติ ตัด hypothyroid",
+    "pearl": "MCV 100–110 + GGT สูง + round macrocyte = สุรา · หยุดดื่ม 2–4 เดือนกลับปกติ",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Alcohol and the blood",
+     "Kaferle J, Strzoda CE. Am Fam Physician 2009;79:203–8"
+    ],
+    "nl": [
+     "2.3.11(2)",
+     "B8.2.5(3)",
+     "2.3.19(6)",
+     "3.1.2"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-34",
+    "kind": "mcq",
+    "topic": "Anemia of hypothyroidism",
+    "stem": "A 44-year-old woman has fatigue, cold intolerance, constipation and weight gain. Hb 10.6 g/dL, MCV 96 fL, reticulocytes 0.5%, ferritin 85 ng/mL, B12 and folate normal, LDH and bilirubin normal. TSH is 48 mU/L with low free T4. Which mechanism best explains her anemia?",
+    "choices": [
+     "Hemolysis caused by hyperlipidemia-induced acanthocytes",
+     "Hepcidin-mediated sequestration of iron in macrophages",
+     "Folate trapping from impaired methionine synthase activity",
+     "Reduced tissue oxygen demand lowering erythropoietin production, together with loss of the direct stimulatory effect of thyroid hormone on erythroid progenitors",
+     "Pooling of red cells in an enlarged spleen"
+    ],
+    "answer": 3,
+    "explain": "Thyroid hormone ควบคุม **metabolic rate** · เมื่อขาด → เนื้อเยื่อใช้ O₂ น้อยลง → เซ็นเซอร์ O₂ ในไตรับรู้ว่า O₂ พอ → **EPO ลดลง** = ร่างกาย \"ปรับ\" มวล RBC ให้น้อยลงตามความต้องการ (physiologic adaptation) · และ T3/T4 ยังกระตุ้น erythroid progenitor และเสริมฤทธิ์ EPO โดยตรง → ขาดแล้วสร้างเม็ดเลือดน้อยลง → **normocytic, hypoproliferative (retic ต่ำ)** · รักษาด้วย levothyroxine แล้ว Hb กลับช้าเป็นเดือน\n\n- ไม่มี hemolysis (LDH/bilirubin ปกติ retic ต่ำ) → acanthocyte hemolysis ผิด\n- **Hepcidin** เป็นกลไกของ ACD/CKD ferritin 85 และไม่มีการอักเสบ ไม่ใช่ตัวหลัก\n- **Folate trap** เกิดจาก B12 ขาด ซึ่ง B12 ปกติ และ MCV ไม่สูง\n- Hypothyroid ไม่ทำให้ม้ามโต\n- ถ้า MCV สูงมากใน autoimmune thyroiditis ให้คิดถึง **PA ร่วม**",
+    "pearl": "Hypothyroid = ซีดแบบ demand ลด → EPO ลด · normocytic retic ต่ำ",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Anemia of endocrine disorders",
+     "Harrison's 21st ed. — Hypothyroidism"
+    ],
+    "nl": [
+     "2.3.4(4)",
+     "B11.2.5(3)",
+     "2.1.56"
+    ]
+   }
+  ],
+  "figs": {}
+ }
+]
