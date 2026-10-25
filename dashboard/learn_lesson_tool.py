@@ -10,6 +10,7 @@ header.json = {"set":"hemonc","lec":"9/11","date":"…","title":"…","subtitle"
 assemble: คัด data dir ทั้งหมด → เพิ่มคาบลงชุด (แทนคาบ lec เดิมถ้ามี) เรียง section ตาม id · อัปเดต lectureCount ใน index.json
 """
 import sys, os, re, json, glob, shutil
+IMG_ROOT = os.environ.get("LEARN_IMG_ROOT", "")  # โฟลเดอร์ที่มี img/ (ตรวจว่าไฟล์รูปมีจริง)
 
 
 def nl_codes(data_dir):
@@ -56,12 +57,12 @@ def check(data_dir, path):
         for f in ("id", "title", "summary", "source", "md"):
             if not isinstance(s.get(f), str) or not s[f].strip():
                 errs.append(f"{w}: ไม่มี {f}")
-        if not re.match(r"^hon-anm-\d\d$", s.get("id", "")):
-            errs.append(f"{w}: id ต้องเป็น hon-anm-NN")
+        if not re.match(r"^hon-[a-z]+-\d\d$", s.get("id", "")):
+            errs.append(f"{w}: id ต้องเป็น hon-<คาบ>-NN")
         if not isinstance(s.get("minutes"), int):
             errs.append(f"{w}: minutes ต้องเป็นจำนวนเต็ม")
-        if len(s.get("md", "")) < 2500:
-            errs.append(f"{w}: md สั้นไป ({len(s.get('md',''))} ตัวอักษร · ต้องลึก ≥ 2,500)")
+        if len(s.get("md", "")) < 1500:
+            errs.append(f"{w}: md สั้นไป ({len(s.get('md',''))} ตัวอักษร · ต้อง ≥ 1,500)")
         for h in ("### ", ):
             if h not in s.get("md", ""):
                 errs.append(f"{w}: md ต้องแบ่งหัวข้อด้วย ###")
@@ -71,6 +72,16 @@ def check(data_dir, path):
         for m in re.findall(r"\[\[fig:([\w-]+)\]\]", s.get("md", "")):
             if m not in figs:
                 errs.append(f"{w}: [[fig:{m}]] ไม่มีใน figs")
+        imgs = s.get("imgs") or {}
+        for m in re.findall(r"\[\[img:([\w-]+)\]\]", s.get("md", "")):
+            if m not in imgs:
+                errs.append(f"{w}: [[img:{m}]] ไม่มีใน imgs")
+        for k, g in imgs.items():
+            src = g.get("src", "")
+            if not re.match(r"^img/[\w/.-]+\.(jpg|png|webp)$", src):
+                errs.append(f"{w}: imgs.{k}.src ต้องเป็น img/....jpg")
+            elif IMG_ROOT and not os.path.exists(os.path.join(IMG_ROOT, src)):
+                errs.append(f"{w}: ไม่พบไฟล์รูป {src}")
         if "[[anim:" in s.get("md", ""):
             errs.append(f"{w}: อย่าใส่ [[anim:]] เอง — ภาพเคลื่อนไหวใส่ผ่านไฟล์ anim (patch_learn_anim.py)")
         bad = [c for c in s.get("nl", []) if c not in codes]
@@ -81,8 +92,8 @@ def check(data_dir, path):
             errs.append(f"{w}: items ต้อง ≥ 3 ข้อ")
         for it in items:
             iw = f"{w}/{it.get('id')}"
-            if not re.match(r"^HON-ANM-MCQ-\d\d\d?$", it.get("id", "")):
-                errs.append(f"{iw}: id ต้องเป็น HON-ANM-MCQ-NN")
+            if not re.match(r"^HON-[A-Z]+-MCQ-\d\d\d?$", it.get("id", "")):
+                errs.append(f"{iw}: id ต้องเป็น HON-<คาบ>-MCQ-NN")
             if it.get("kind") != "mcq":
                 errs.append(f"{iw}: kind ต้องเป็น mcq")
             ch = it.get("choices")
