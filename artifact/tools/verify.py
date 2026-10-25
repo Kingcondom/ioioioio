@@ -2,6 +2,9 @@
 """เปิด build/index.html ด้วย Chromium จริง ตรวจว่า loader ทำงานและสลับ set ได้"""
 import subprocess, sys, time, os, json as _json
 from playwright.sync_api import sync_playwright
+import glob
+# หา chromium ที่ติดมากับ container (เลขเวอร์ชันและชื่อโฟลเดอร์เปลี่ยนตามอิมเมจ)
+CHROME=sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome"))[-1]
 
 BUILD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # โฟลเดอร์ artifact/
 PORT = 8931
@@ -12,7 +15,7 @@ time.sleep(1.5)
 fail = []
 try:
     with sync_playwright() as p:
-        b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome", args=["--no-sandbox"])
+        b = p.chromium.launch(executable_path=CHROME, args=["--no-sandbox"])
         pg = b.new_page(viewport={"width": 390, "height": 844})  # ขนาดมือถือ
         errs, bad = [], []
         def on_resp(r):
