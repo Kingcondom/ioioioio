@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 14 ต.ค. 2569)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 25 ต.ค. 2569)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -52,7 +52,7 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 26**)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 40**)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -118,30 +118,29 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. ความคืบหน้า — 31 คาบ · 355 หัวข้อ · ข้อสอบ 984 ข้อ
+## 4. ความคืบหน้า — 10 ชุดวิชา · 40 คาบ · 500 หัวข้อ · ข้อสอบ 1,401 ข้อ (25 ต.ค.)
 
-| set | ชุดวิชา | คาบ | หัวข้อ | ข้อสอบ |
-|---|---|---|---|---|
-| air | AIR | 3 | 36 | 115 |
-| cardio | Cardio | 5 | 55 | 184 |
-| chest | Chest | 4 | 39 | 108 |
-| nephro | Nephro | 4 | 52 | 193 |
-| neuro | Neuro | 5 | 52 | 104 |
-| endo | Endo | 3 | 41 | 98 |
-| id | ID | 2 | 24 | 47 |
-| gi | GI | 3 | 30 | 56 |
-| hemonc | Heme/Onc | 2 | 26 | 79 |
+**ตัวเลขนี้ล้าสมัยเร็วมาก** เพราะมีหลาย session ทำงานพร้อมกัน — ให้นับจากไฟล์จริงทุกครั้งที่กลับมาทำงาน
 
-ชุด **endo · id · gi · hemonc** เพิ่มเข้ามาหลัง 20 ก.ย. · ดูรายชื่อคาบจริงได้จาก
-`python3 -c "import json;[print(m['set'],[l['lec'] for l in json.load(open(m['file']))]) for m in json.load(open('artifact/data/index.json'))]"`
-(รันในโฟลเดอร์ `artifact/`)
+```bash
+cd /home/user/ioioioio/artifact && python3 -c "
+import json
+idx=json.load(open('data/index.json'))
+for m in idx:
+    d=json.load(open(m['file']))
+    print('%-8s %-10s คาบ %2d · หัวข้อ %3d'%(m['set'],m['label'],len(d),
+          sum(len(l['sections']) for l in d)), [l['lec'] for l in d])
+"
+```
+
+ชุดวิชาที่มี: air · cardio · chest · nephro · neuro · endo · id · gi · hemonc · **derm** (เพิ่ม 25 ต.ค.)
 
 > ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
 > ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
 
 ---
 
-## 4b. ⚠️ บทเรียนจากรอบ 14 ต.ค. — repo ตามหลัง artifact ไป 1 เดือน
+## 4b. ⚠️ ปัญหาที่เจอซ้ำ — repo ตามหลัง artifact · และหลาย session ชนกัน
 
 ระหว่าง 20 ก.ย. ถึง 14 ต.ค. มี session อื่นทำงานเพิ่มอีก 17 คาบและเพิ่มความสามารถ
 **sync ความคืบหน้าขึ้นบัญชี (capabilities `db` + `user`)** แต่ **ไม่ได้ commit ลง repo เลย**
@@ -153,9 +152,22 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 `Artifact action:list scope:files` เทียบขนาดไฟล์กับใน `artifact/` แล้วถ้าไม่ตรง
 ดึงกลับด้วย `Artifact action:read` + `paths:[...]` + `out_dir:/home/user/ioioioio/artifact`
 
-**มีหลาย session ทำงานบน artifact เดียวกันพร้อมกันได้** — รอบนี้ publish ชนกันหนึ่งครั้ง
-ทางแก้คือ **อย่า publish ทับด้วยไฟล์ที่ไม่ได้สร้างจากเวอร์ชันล่าสุด** ถ้าถูกปฏิเสธ ระบบจะส่งไฟล์
-เวอร์ชันสดมาให้ ให้แก้ทับบนไฟล์นั้นแล้ว publish ใหม่
+**มีหลาย session ทำงานบน artifact เดียวกันพร้อมกัน** — รอบ 14 ต.ค. ชนกัน 1 ครั้ง
+รอบ 25 ต.ค. ชนกัน **3 ครั้งติดใน 15 นาที** และงานถูกทำซ้ำ/ถูกทับจริง
+
+| รอบ | เกิดอะไร |
+|---|---|
+| 14 ต.ค. | ปุ่มซ่อนแถบ — อีก session ใส่ก่อน 2 นาที งานที่เขียนไว้ต้องทิ้ง |
+| 25 ต.ค. | ปิดตารางเพื่อทวน — อีก session ใส่ก่อน 4 นาที งานที่เขียนไว้ต้องทิ้งอีก |
+| 25 ต.ค. | แพตช์ที่แก้เพิ่มถูกทับหาย เพราะอีก session publish จากเวอร์ชันที่ยังไม่มีแพตช์นั้น |
+
+**วิธีทำงานที่ลดการชน**
+1. **ก่อนลงมือเขียนฟีเจอร์ ให้ดูก่อนว่ามีอยู่แล้วหรือยัง** — `grep` หาคำที่เกี่ยวข้องใน `index.html`
+   เวอร์ชันสด (เช่น `tq`, `cz`, `mastBtn`) ไม่ใช่ในไฟล์ repo ที่อาจเก่า
+2. **ถ้าฟีเจอร์มีอยู่แล้ว ห้ามเขียนทับด้วยของตัวเอง** ให้ทดสอบของเดิมก่อน แล้วแก้เฉพาะจุดที่พิสูจน์ได้ว่าพลาด
+3. **publish ให้เร็วที่สุดหลังแก้เสร็จ** ยิ่งถือไฟล์ไว้นานยิ่งชน
+4. ถ้าถูกปฏิเสธ ระบบจะเซฟไฟล์เวอร์ชันสดไว้ให้ที่ `/root/.claude/projects/.../tool-results/`
+   **ให้ copy ไฟล์นั้นมาแก้ทับ แล้ว publish ใหม่** ห้ามส่งไฟล์เดิมซ้ำ และห้ามประกอบจากความจำ
 
 
 **ฟีเจอร์ที่ session อื่นเพิ่มไว้ และยังไม่มีสคริปต์ build ใน repo**
@@ -275,9 +287,12 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - **ค่าที่ผู้ใช้เลือกเองระดับเครื่อง** (ธีม · ซ่อนแถบเมนู) เก็บแยกใน localStorage คนละคีย์
   ไม่ปนกับ state ที่ซิงก์ขึ้นบัญชี — คีย์ปุ่มซ่อนแถบคือ `med421-learn-mast`
 
-- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
-  ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
-  และ `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
+- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง **`python3 -m pip install playwright`** ก่อน
+  (ใช้ `python3 -m pip` เพราะ `pip` เฉย ๆ อาจติดตั้งลงคนละเวอร์ชันของ Python) · เบราว์เซอร์มีอยู่แล้ว
+  **ห้ามรัน `playwright install`**
+- **เลข build ของ Chromium เปลี่ยนไปตาม container** (เคย 1194 ตอนนี้ 1243 และโฟลเดอร์ย่อยเปลี่ยนจาก
+  `chrome-linux` เป็น `chrome-linux64`) — **ห้ามฝัง path ไว้** `verify.py` หาเองด้วย
+  `glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")` แล้ว · ต้องส่ง `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
   เป็นเรื่องปกติของ container ไม่ใช่บั๊ก
 - **อย่าใช้ `pgrep -f <script>` ในลูปรอ** — มันแมตช์ตัว bash command เองแล้วค้างตลอดกาล
 - แถบความคืบหน้านับเฉพาะ set ที่เปิดอยู่ (AIR = 34 ไม่ใช่ 91) — เคยเข้าใจผิดว่าเป็นบั๊ก
