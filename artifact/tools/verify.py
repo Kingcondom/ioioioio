@@ -62,7 +62,7 @@ try:
         if "/%d" % _fsec not in ring:   # แถบนี้นับเฉพาะชุดที่เปิดอยู่
             fail.append("ความคืบหน้าของ %s ควรเป็น %d หัวข้อ ได้: %r" % (_first["label"], _fsec, ring))
 
-        # ปิดคำตอบในตาราง: หาหัวข้อแรกของชุดแรกที่มีตารางอย่างน้อย 2 แถว แล้วลองปิด/เฉลย
+        # ปิดตารางเพื่อทวน: หาหัวข้อแรกของชุดแรกที่มีตารางอย่างน้อย 2 แถวข้อมูล แล้วลองปิด/เปิด
         _target = None
         for _l in _flec:
             for _s in _l["sections"]:
@@ -74,43 +74,64 @@ try:
             if _target:
                 break
         if not _target:
-            fail.append("ไม่พบหัวข้อที่มีตารางในชุดแรก — ตรวจปิดคำตอบไม่ได้")
+            fail.append("ไม่พบหัวข้อที่มีตารางในชุดแรก — ตรวจโหมดปิดตารางไม่ได้")
         else:
             _lec, _sid = _target
             pg.click('[data-lec="%s"]' % _lec)
             pg.wait_for_selector('[data-sec="%s"]' % _sid, state="visible", timeout=5000)
             pg.click('[data-sec="%s"]' % _sid)
             pg.wait_for_selector("main .card h2", timeout=5000)
-            if not pg.query_selector("main .czbar"):
-                fail.append("หัวข้อ %s มีตารางแต่ไม่มีแถบปิดคำตอบ" % _sid)
+            if not pg.query_selector("main .tqbar"):
+                fail.append("หัวข้อ %s มีตารางแต่ไม่มีแถบปิดเพื่อทวน" % _sid)
             else:
-                _t0 = pg.eval_on_selector_all("main .tablewrap tbody tr",
-                    "rs=>rs.map(r=>[].map.call(r.children,c=>c.textContent.trim()))")
-                pg.eval_on_selector_all("main .czbar button[data-czall='0']", "e=>e[0].click()")
-                pg.wait_for_selector("main button.cz", timeout=5000)
-                _n = pg.eval_on_selector_all("main button.cz", "e=>e.length")
-                _col0 = pg.eval_on_selector_all("main .tablewrap tbody tr", "rs=>rs.map(r=>r.children[0].textContent.trim())")
-                _hints = pg.eval_on_selector_all("main button.cz", "e=>e.map(x=>x.textContent)")
-                print("ปิดคำตอบในตาราง (%s): %d ช่อง · เงื่อนงำตัวอย่าง %r" % (_sid, _n, _hints[:4]))
+                # ยึดตารางจากแถบของมันเอง — ตอบข้อสอบแล้วจะมีตารางในคำอธิบายเพิ่มเข้ามา
+                _tbl = "()=>{var b=document.querySelector('main .tqbar');if(!b)return null;return [].map.call(b.nextElementSibling.querySelectorAll('tbody tr'),function(r){return [].map.call(r.children,function(c){return c.textContent.trim();});});}"
+                _t0 = pg.evaluate(_tbl)
+                pg.eval_on_selector_all("main .tqbar button[data-tq='on']", "e=>e[0].click()")
+                pg.wait_for_selector("main table.tq td.cv", timeout=5000)
+                _n = pg.eval_on_selector_all("main table.tq td.cv", "e=>e.length")
+                _hints = pg.eval_on_selector_all("main table.tq td.cv", "e=>e.map(x=>x.getAttribute('data-hint'))")
+                print("ปิดตารางเพื่อทวน (%s): %d ช่อง · คำใบ้ %r" % (_sid, _n, _hints[:4]))
                 if _n < 1:
-                    fail.append("กดปิดคำตอบแล้วไม่มีช่องถูกปิด")
-                if _col0 != [r[0] for r in _t0]:
+                    fail.append("กดปิดเพื่อทวนแล้วไม่มีช่องถูกปิด")
+                # คอลัมน์แรกคือคำถาม ต้องไม่ถูกปิด
+                if pg.eval_on_selector_all("main table.tq tbody tr", "rs=>rs.filter(r=>r.children[0].classList.contains('cv')).length"):
                     fail.append("คอลัมน์แรกถูกปิดด้วย ควรเปิดไว้เป็นคำถาม")
-                if any(len(x) > 6 for x in _hints):
-                    fail.append("เงื่อนงำยาวเกินไป: %r" % [x for x in _hints if len(x) > 6][:3])
+                # ข้อความต้องมองไม่เห็นจริง
+                if "rgba(0, 0, 0, 0)" not in pg.eval_on_selector("main table.tq td.cv:not(.op)", "e=>getComputedStyle(e).color"):
+                    fail.append("ข้อความของช่องที่ปิดยังมองเห็นได้")
+                # คำใบ้ต้องสั้นและไม่ขึ้นต้นด้วยสระหรือวรรณยุกต์ลอย
+                if any(x and len(x) > 10 for x in _hints):
+                    fail.append("คำใบ้ยาวเกินไป: %r" % [x for x in _hints if x and len(x) > 10][:3])
                 if any(x and x[0] in "ิีึืุูั่้๊๋็์ํ" for x in _hints):
-                    fail.append("เงื่อนงำขึ้นต้นด้วยสระหรือวรรณยุกต์ลอย")
-                pg.eval_on_selector_all("main button.cz", "e=>e[0].click()")
-                if pg.eval_on_selector_all("main button.cz", "e=>e.length") != _n - 1:
-                    fail.append("กดเฉลยทีละช่องแล้วจำนวนช่องที่ปิดไม่ลดลงทีละ 1")
-                pg.eval_on_selector_all("main .czbar button[data-czall='1']", "e=>e[0].click()")
-                pg.wait_for_function("!document.querySelector('main button.cz')", timeout=5000)
-                _t1 = pg.eval_on_selector_all("main .tablewrap tbody tr",
-                    "rs=>rs.map(r=>[].map.call(r.children,c=>c.textContent.trim()))")
+                    fail.append("คำใบ้ขึ้นต้นด้วยสระหรือวรรณยุกต์ลอย")
+                # เข้าถึงด้วยคีย์บอร์ดได้
+                _kb = pg.eval_on_selector_all("main table.tq td.cv", "e=>e.filter(x=>x.getAttribute('tabindex')!==null).length")
+                if _kb != _n:
+                    fail.append("ช่องที่ปิดเข้าถึงด้วยคีย์บอร์ดไม่ได้ (%d/%d)" % (_kb, _n))
+                # แตะทีละช่อง แล้วสถานะต้องรอด render ใหม่
+                pg.eval_on_selector_all("main table.tq td.cv", "e=>e[0].click()")
+                if pg.eval_on_selector_all("main table.tq td.cv.op", "e=>e.length") != 1:
+                    fail.append("แตะช่องเดียวแต่เปิดไม่ใช่ 1 ช่อง")
+                if pg.query_selector("main .ch"):
+                    pg.eval_on_selector_all("main .ch", "e=>e[0].click()")
+                    pg.wait_for_selector(".verdict", timeout=5000)
+                    pg.wait_for_timeout(400)
+                    _n2 = pg.eval_on_selector_all("main table.tq td.cv", "e=>e.length")
+                    _op2 = pg.eval_on_selector_all("main table.tq td.cv.op", "e=>e.length")
+                    print("หลัง render ใหม่: ยังปิด %d ช่อง · ช่องที่เปิดไว้คงอยู่ %d" % (_n2, _op2))
+                    if _n2 != _n:
+                        fail.append("render ใหม่แล้วสถานะปิดตารางหาย (%d → %d)" % (_n, _n2))
+                    if _op2 != 1:
+                        fail.append("render ใหม่แล้วช่องที่เปิดไว้ถูกปิดกลับ")
+                # เลิกทวน → ตารางกลับเป็นปกติ
+                pg.eval_on_selector_all("main .tqbar button[data-tq='off']", "e=>e[0].click()")
+                pg.wait_for_function("!document.querySelector('main table.tq td.cv')", timeout=5000)
+                _t1 = pg.evaluate(_tbl)
                 if _t1 != _t0:
-                    fail.append("ตารางไม่กลับมาเหมือนเดิมหลังกดเฉลยทั้งหมด")
+                    fail.append("ตารางไม่กลับมาเหมือนเดิมหลังเลิกทวน")
                 else:
-                    print("เฉลยทั้งหมด → ตารางกลับมาเหมือนเดิม ✓")
+                    print("เลิกทวน → ตารางกลับมาเหมือนเดิม ✓")
 
         # สลับไป Cardio → ต้องโหลดไฟล์ใหม่แล้วแสดงคาบครบตามไฟล์ data
         import json as _j
