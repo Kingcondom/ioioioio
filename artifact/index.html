@@ -297,20 +297,17 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig.pimg .pq{margin-top:9px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .fig.pimg .pq b{font-size:13.5px;color:var(--accent-ink)}
 .fig.pimg .pans{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:13.6px;line-height:1.6}
+/* ---------- ปิดตารางเพื่อทวน ---------- */
+.tqbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:14px 0 -6px}
+.tqbar .btn{padding:4px 11px;font-size:12.5px}
+.tqbar .tqn{font-size:12px;color:var(--ink-3)}
+table.tq td.cv{cursor:pointer;position:relative;background:var(--surface-sunk)}
+table.tq td.cv:not(.op),table.tq td.cv:not(.op) *{color:transparent!important;text-shadow:none!important}
+table.tq td.cv:not(.op)::after{content:attr(data-hint);position:absolute;inset:4px;display:flex;align-items:center;justify-content:center;
+  border:1px dashed var(--rule-strong);border-radius:8px;color:var(--ink-3);font-size:12.5px;font-weight:600;background:var(--surface);text-align:center;padding:0 4px}
+table.tq td.cv.op{background:var(--ok-soft)}
 .chip.anc{border-color:var(--accent);color:var(--accent-ink)}
 .mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}
-/* ---------- ปิดป้ายเพื่อทวน (ผู้ใช้ขอ 25 ต.ค.: "กล่องปิดพวกนี้ไว้ แต่ยังคงเหลืออะไรไว้ให้เดา") ----------
-   ปุ่มบนทุกภาพ/ภาพเคลื่อนไหว/ตาราง → ป้ายถูกปิดด้วยกล่องที่เหลือตัวอักษรต้นคำไว้เป็นใบ้ · แตะกล่องเพื่อเฉลยทีละอัน */
-.clzb{float:right;font:inherit;font-size:11.5px;font-weight:700;letter-spacing:0;color:var(--miss);background:var(--miss-soft);border:1px solid color-mix(in srgb,var(--miss) 45%,var(--rule));border-radius:999px;padding:2px 10px;margin:-2px 0 4px 8px;cursor:pointer}
-.clzb.on{background:var(--miss);color:var(--surface);border-color:var(--miss)}
-.clzbar{display:flex;justify-content:flex-end;margin:12px 0 -8px}
-.fig svg .clzh{fill-opacity:0}
-.fig svg g.clz{cursor:pointer}
-.fig svg rect.clzr{fill:var(--miss-soft);stroke:var(--miss);stroke-width:1;stroke-dasharray:3 2}
-.fig svg text.clzt{fill:var(--miss);font-weight:700}
-td.clzc{position:relative;color:transparent;cursor:pointer}
-td.clzc *{color:transparent!important}
-td.clzc::after{content:attr(data-h);position:absolute;inset:4px 5px;display:flex;align-items:center;padding:0 8px;border:1px dashed var(--miss);border-radius:7px;background:var(--miss-soft);color:var(--miss);font-weight:700;font-size:12.5px;overflow:hidden}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk"/></marker><marker id="ah-ac" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ac"/></marker><marker id="ah-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ok"/></marker><marker id="ah-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-bad"/></marker><marker id="ah-ms" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ms"/></marker><marker id="ah-wa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-wa"/></marker><marker id="ah-mu" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-mu"/></marker></defs></svg>
@@ -600,6 +597,55 @@ document.addEventListener("click",function(e){
   var a=b.closest("figure").querySelector(".pans");if(!a)return;
   var hid=a.classList.toggle("hide");b.textContent=hid?"ดูเฉลย":"ซ่อนเฉลย";
 });
+
+/* ---------- ปิดตารางเพื่อทวน ---------- */
+var TQSEG=(window.Intl&&Intl.Segmenter)?new Intl.Segmenter("th",{granularity:"grapheme"}):null;
+function tqHint(t){
+  t=String(t||"");
+  var segs=t.split(/\s·\s|\n/).filter(function(x){return x.trim();}).length;
+  t=t.replace(/\s+/g," ").trim();
+  if(!t)return "";
+  var core=t.replace(/[↑↓↔≈=<>≥≤+\-–—()*.,:;\/\s]/g,"");
+  if(core.length<=2)return "?";
+  var g=TQSEG?Array.from(TQSEG.segment(t),function(x){return x.segment;}):Array.from(t);
+  var head=g.slice(0,2).join("").trim();
+  return head+"…"+(segs>1?" ("+segs+")":"");
+}
+function tqSet(tw,on){
+  var tb=tw.querySelector("table");if(!tb)return;
+  tb.classList.toggle("tq",on);
+  tb.querySelectorAll("tbody tr").forEach(function(tr){
+    Array.prototype.forEach.call(tr.children,function(td,i){
+      if(i===0||td.tagName!=="TD")return;
+      if(on){if(!td.hasAttribute("data-hint"))td.setAttribute("data-hint",tqHint(td.innerText));td.classList.add("cv");td.classList.remove("op");}
+      else td.classList.remove("cv","op");
+    });
+  });
+  var bar=tw.previousElementSibling;if(bar&&bar.classList.contains("tqbar"))tqBar(bar,on);
+}
+function tqBar(bar,on){
+  bar.innerHTML=on?"<button class='btn' data-tq='all'>เปิดทั้งหมด</button><button class='btn' data-tq='re'>ปิดใหม่</button><button class='btn' data-tq='off'>เลิกทวน</button><span class='tqn'>แตะช่องเพื่อเปิดทีละช่อง · คำใบ้ = ตัวแรก ๆ (จำนวนข้อ)</span>"
+    :"<button class='btn' data-tq='on'>ปิดเพื่อทวน</button>";
+}
+function tqInit(root){
+  (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw){
+    if(tw._tq)return;tw._tq=1;
+    var tb=tw.querySelector("table");if(!tb||!tb.querySelector("tbody tr td:nth-child(2)"))return;
+    var bar=document.createElement("div");bar.className="tqbar";tqBar(bar,false);tw.parentNode.insertBefore(bar,tw);
+  });
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest("[data-tq]");
+  if(b){var bar=b.closest(".tqbar"),tw=bar.nextElementSibling,act=b.getAttribute("data-tq");
+    if(act==="on"||act==="re")tqSet(tw,true);
+    else if(act==="off")tqSet(tw,false);
+    else if(act==="all")tw.querySelectorAll("td.cv").forEach(function(td){td.classList.add("op");});
+    return;}
+  var td=e.target.closest&&e.target.closest("table.tq td.cv");
+  if(td)td.classList.toggle("op");
+});
+(function(){var m=document.getElementById("main");if(!m||!("MutationObserver" in window))return;
+  new MutationObserver(function(){tqInit(m);}).observe(m,{childList:true,subtree:true});})();
 
 /* ---------- tiny markdown (เหมือน drill.html) ---------- */
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -1166,110 +1212,6 @@ function startTimer(mins){
 }
 renderSync();
 boot();
-})();
-</script>
-
-<script>
-/* ---------- ปิดป้ายเพื่อทวน — ทำงานแยกจากโค้ดหลัก (เติมปุ่มหลัง render ทุกครั้ง) ---------- */
-(function(){
-"use strict";
-var NS="http://www.w3.org/2000/svg",MARK=/[ัิ-ฺ็-๎]/;
-var ON={},SEEN={};   /* จำไว้ระหว่าง render ใหม่ (เช่น ตอบข้อสอบแล้วหน้า render ซ้ำ) */
-function hint(s){
-  s=String(s||"").replace(/\s+/g," ").trim();
-  var n=Math.max(1,Math.min(4,Math.round(s.length*0.22))),i=0,c=0;
-  while(i<s.length&&c<n){i++;c++;while(i<s.length&&MARK.test(s.charAt(i)))i++;}
-  return s.slice(0,i)+"…";
-}
-function boring(s){s=(s||"").trim();return s.length<2||/^[\d.,\s%°+\-–−×\/:()<>≤≥=]+$/.test(s);}
-function figKey(f){if(!f._k){var t=f.querySelector(".figt");f._k="f|"+(t?t.textContent:"")+"|"+(f.getAttribute("data-ak")||"");}return f._k;}  /* คำนวณก่อนใส่ปุ่ม */
-function tabKey(w){var h=w.querySelector("thead");return "t|"+(h?h.textContent:"")+"|"+w.querySelectorAll("tbody tr").length;}
-function units(svg){
-  var out=[];
-  svg.querySelectorAll("text").forEach(function(t){
-    if(t.classList.contains("clzt"))return;
-    var ts=t.querySelectorAll("tspan");
-    if(ts.length>1){for(var i=1;i<ts.length;i++)out.push(ts[i]);}   /* บรรทัดแรก (ชื่อกล่อง) เหลือไว้เป็นหลักให้เดา */
-    else out.push(t);
-  });
-  return out.filter(function(e){return !boring(e.textContent);});
-}
-function coverFig(f){
-  var svg=f.querySelector(".figsv svg");if(!svg)return;
-  var k=figKey(f),seen=SEEN[k]||(SEEN[k]={});
-  units(svg).forEach(function(el,idx){
-    if(seen[idx])return;
-    var bb;try{bb=el.getBBox();}catch(e){return;}
-    if(!bb||bb.width<2)return;
-    var host=el.tagName.toLowerCase()==="tspan"?el.parentNode:el;
-    var g=document.createElementNS(NS,"g");g.setAttribute("class","clz");
-    ["data-s","data-x","transform"].forEach(function(a){if(host.hasAttribute(a))g.setAttribute(a,host.getAttribute(a));});
-    if(host.classList.contains("aoff"))g.classList.add("aoff");
-    var r=document.createElementNS(NS,"rect");
-    r.setAttribute("x",bb.x-3);r.setAttribute("y",bb.y-1.5);r.setAttribute("width",bb.width+6);r.setAttribute("height",bb.height+3);r.setAttribute("rx",4);r.setAttribute("class","clzr");
-    var fs=parseFloat(getComputedStyle(el).fontSize)||12;
-    var t=document.createElementNS(NS,"text");
-    t.setAttribute("x",bb.x+bb.width/2);t.setAttribute("y",bb.y+bb.height/2+fs*0.36);t.setAttribute("text-anchor","middle");
-    t.setAttribute("class","clzt");t.style.fontSize=Math.min(fs,bb.height*0.95)+"px";t.textContent=hint(el.textContent);
-    g.appendChild(r);g.appendChild(t);
-    g._el=el;g._i=idx;el.classList.add("clzh");
-    host.parentNode.insertBefore(g,host.nextSibling);
-  });
-}
-function uncoverFig(f){
-  f.querySelectorAll("g.clz").forEach(function(g){if(g._el)g._el.classList.remove("clzh");g.remove();});
-  f.querySelectorAll(".clzh").forEach(function(e){e.classList.remove("clzh");});
-}
-function coverTab(w){
-  var k=tabKey(w),seen=SEEN[k]||(SEEN[k]={});
-  w.querySelectorAll("tbody tr").forEach(function(tr,ri){
-    Array.prototype.forEach.call(tr.children,function(td,ci){
-      var tx=td.textContent.replace(/\s+/g," ").trim();
-      if(ci===0||seen[ri+":"+ci]||!tx)return;
-      var segs=td.querySelectorAll(".seg").length;
-      td.setAttribute("data-h",(tx.length<=2?"?":hint(tx))+(segs>1?"  ("+segs+" ท่อน)":""));
-      td.setAttribute("data-clz",ri+":"+ci);td.classList.add("clzc");
-    });
-  });
-}
-function uncoverTab(w){w.querySelectorAll("td.clzc").forEach(function(td){td.classList.remove("clzc");});}
-function setBtn(b,on,tab){b.classList.toggle("on",on);b.textContent=on?(tab?"เปิดทั้งตาราง":"เปิดป้าย"):(tab?"ปิดคำตอบในตาราง":"ปิดป้าย");
-  b.title=on?"แสดงทั้งหมด":"ปิดป้ายไว้ เหลือตัวอักษรต้นคำให้เดา · แตะกล่องเพื่อเฉลยทีละอัน";}
-function decorate(root){
-  root.querySelectorAll("figure.fig").forEach(function(f){
-    if(f.classList.contains("pimg")||f._clz||!f.querySelector(".figsv svg"))return;
-    var t=f.querySelector(".figt");if(!t)return;
-    f._clz=1;figKey(f);
-    var b=document.createElement("button");b.type="button";b.className="clzb";t.insertBefore(b,t.firstChild);
-    var k=figKey(f);setBtn(b,!!ON[k],false);
-    if(ON[k])requestAnimationFrame(function(){coverFig(f);});
-  });
-  root.querySelectorAll(".prose .tablewrap,.vignette .tablewrap").forEach(function(w){
-    if(w._clz)return;w._clz=1;
-    var rows=w.querySelectorAll("tbody tr"),cols=w.querySelectorAll("thead th").length;
-    if(rows.length<2||cols<2)return;
-    var bar=document.createElement("div");bar.className="clzbar";
-    var b=document.createElement("button");b.type="button";b.className="clzb";bar.appendChild(b);
-    w.parentNode.insertBefore(bar,w);b._w=w;
-    var k=tabKey(w);setBtn(b,!!ON[k],true);if(ON[k])coverTab(w);
-  });
-}
-document.addEventListener("click",function(e){
-  var b=e.target.closest&&e.target.closest("button.clzb");
-  if(b){
-    e.preventDefault();e.stopPropagation();   /* ปุ่มนี้อยู่ใน figure.anim ด้วย — กันไม่ให้ตัวเล่นภาพเคลื่อนไหวนับเป็นปุ่มเลือกขั้น */
-    if(b._w){var w=b._w,kt=tabKey(w);ON[kt]=!ON[kt];
-      if(ON[kt]){SEEN[kt]={};coverTab(w);}else uncoverTab(w);setBtn(b,ON[kt],true);return;}
-    var f=b.closest("figure.fig"),k=figKey(f);ON[k]=!ON[k];
-    if(ON[k]){SEEN[k]={};coverFig(f);}else uncoverFig(f);setBtn(b,ON[k],false);return;
-  }
-  var g=e.target.closest&&e.target.closest("g.clz");
-  if(g){var fg=g.closest("figure.fig");(SEEN[figKey(fg)]||{})[g._i]=1;if(g._el)g._el.classList.remove("clzh");g.remove();return;}
-  var td=e.target.closest&&e.target.closest("td.clzc");
-  if(td){var tw=td.closest(".tablewrap");(SEEN[tabKey(tw)]||{})[td.getAttribute("data-clz")]=1;td.classList.remove("clzc");}
-},true);
-var m=document.getElementById("main");
-if(m&&"MutationObserver" in window)new MutationObserver(function(){decorate(m);}).observe(m,{childList:true,subtree:true});
 })();
 </script>
 
