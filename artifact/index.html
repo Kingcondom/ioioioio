@@ -306,6 +306,15 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig.pimg .pq{margin-top:9px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .fig.pimg .pq b{font-size:13.5px;color:var(--accent-ink)}
 .fig.pimg .pans{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:13.6px;line-height:1.6}
+/* ---------- ปิดตารางเพื่อทวน ---------- */
+.tqbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:14px 0 -6px}
+.tqbar .btn{padding:4px 11px;font-size:12.5px}
+.tqbar .tqn{font-size:12px;color:var(--ink-3)}
+table.tq td.cv{cursor:pointer;position:relative;background:var(--surface-sunk)}
+table.tq td.cv:not(.op),table.tq td.cv:not(.op) *{color:transparent!important;text-shadow:none!important}
+table.tq td.cv:not(.op)::after{content:attr(data-hint);position:absolute;inset:4px;display:flex;align-items:center;justify-content:center;
+  border:1px dashed var(--rule-strong);border-radius:8px;color:var(--ink-3);font-size:12.5px;font-weight:600;background:var(--surface);text-align:center;padding:0 4px}
+table.tq td.cv.op{background:var(--ok-soft)}
 .chip.anc{border-color:var(--accent);color:var(--accent-ink)}
 .mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}
 </style>
@@ -597,6 +606,55 @@ document.addEventListener("click",function(e){
   var a=b.closest("figure").querySelector(".pans");if(!a)return;
   var hid=a.classList.toggle("hide");b.textContent=hid?"ดูเฉลย":"ซ่อนเฉลย";
 });
+
+/* ---------- ปิดตารางเพื่อทวน ---------- */
+var TQSEG=(window.Intl&&Intl.Segmenter)?new Intl.Segmenter("th",{granularity:"grapheme"}):null;
+function tqHint(t){
+  t=String(t||"");
+  var segs=t.split(/\s·\s|\n/).filter(function(x){return x.trim();}).length;
+  t=t.replace(/\s+/g," ").trim();
+  if(!t)return "";
+  var core=t.replace(/[↑↓↔≈=<>≥≤+\-–—()*.,:;\/\s]/g,"");
+  if(core.length<=2)return "?";
+  var g=TQSEG?Array.from(TQSEG.segment(t),function(x){return x.segment;}):Array.from(t);
+  var head=g.slice(0,2).join("").trim();
+  return head+"…"+(segs>1?" ("+segs+")":"");
+}
+function tqSet(tw,on){
+  var tb=tw.querySelector("table");if(!tb)return;
+  tb.classList.toggle("tq",on);
+  tb.querySelectorAll("tbody tr").forEach(function(tr){
+    Array.prototype.forEach.call(tr.children,function(td,i){
+      if(i===0||td.tagName!=="TD")return;
+      if(on){if(!td.hasAttribute("data-hint"))td.setAttribute("data-hint",tqHint(td.innerText));td.classList.add("cv");td.classList.remove("op");}
+      else td.classList.remove("cv","op");
+    });
+  });
+  var bar=tw.previousElementSibling;if(bar&&bar.classList.contains("tqbar"))tqBar(bar,on);
+}
+function tqBar(bar,on){
+  bar.innerHTML=on?"<button class='btn' data-tq='all'>เปิดทั้งหมด</button><button class='btn' data-tq='re'>ปิดใหม่</button><button class='btn' data-tq='off'>เลิกทวน</button><span class='tqn'>แตะช่องเพื่อเปิดทีละช่อง · คำใบ้ = ตัวแรก ๆ (จำนวนข้อ)</span>"
+    :"<button class='btn' data-tq='on'>ปิดเพื่อทวน</button>";
+}
+function tqInit(root){
+  (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw){
+    if(tw._tq)return;tw._tq=1;
+    var tb=tw.querySelector("table");if(!tb||!tb.querySelector("tbody tr td:nth-child(2)"))return;
+    var bar=document.createElement("div");bar.className="tqbar";tqBar(bar,false);tw.parentNode.insertBefore(bar,tw);
+  });
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest("[data-tq]");
+  if(b){var bar=b.closest(".tqbar"),tw=bar.nextElementSibling,act=b.getAttribute("data-tq");
+    if(act==="on"||act==="re")tqSet(tw,true);
+    else if(act==="off")tqSet(tw,false);
+    else if(act==="all")tw.querySelectorAll("td.cv").forEach(function(td){td.classList.add("op");});
+    return;}
+  var td=e.target.closest&&e.target.closest("table.tq td.cv");
+  if(td)td.classList.toggle("op");
+});
+(function(){var m=document.getElementById("main");if(!m||!("MutationObserver" in window))return;
+  new MutationObserver(function(){tqInit(m);}).observe(m,{childList:true,subtree:true});})();
 
 /* ---------- tiny markdown (เหมือน drill.html) ---------- */
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
