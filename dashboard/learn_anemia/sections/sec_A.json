@@ -1,0 +1,665 @@
+[
+ {
+  "id": "hon-anm-01",
+  "title": "ภาพรวม: จำแนกภาวะซีดด้วย MCV + reticulocyte — kinetic vs morphologic",
+  "minutes": 14,
+  "summary": "RBC อายุ 120 วัน · ไตรับรู้ O2 ผ่าน HIF → EPO · RPI ≥ 2–3 = โรงงานดี ปัญหาปลายทาง · RPI < 2 = โรงงานเสีย · micro = สร้าง Hb ไม่ได้ · macro = DNA ช้า · แผนที่ 21 ภาวะตามกลไก",
+  "source": "Williams Hematology 10th ed. · Hoffbrand's Essential Haematology 8th ed. · Harrison's 21st ed. (Anemia and polycythemia) · Haase VH, Kidney Int Suppl 2021 (HIF–EPO) (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.1.56",
+   "3.3.1",
+   "3.3.3",
+   "B2.1.2(2)",
+   "B2.3(2)",
+   "B2.3(3)"
+  ],
+  "md": "### ภาพรวม — ซีดคือสมดุลระหว่าง \"โรงงาน\" กับ \"ท่อรั่ว\"\n**Anemia** (WHO) = Hb **< 13 g/dL ในชาย**, **< 12 ในหญิง**, **< 11 ในหญิงตั้งครรภ์** · ทุกภาวะซีดเขียนได้เป็นสมการเดียว: **มวล RBC = อัตราสร้าง − (อัตราทำลาย + อัตราสูญเสีย)**\nไขกระดูกผู้ใหญ่สร้าง RBC วันละ ~**2 × 10¹¹ เซลล์** (~**1%** ของทั้งหมด) เพื่อแทนเซลล์อายุครบ **~120 วัน** · บทนี้ไล่ทุกภาวะด้วยสองคำถามเชิงกลไก: **(1) โรงงานตอบสนองพอไหม** (reticulocyte) และ **(2) ถ้าสร้าง สร้างผิดที่ชั้นไหน** (MCV)\n\n### วงจรชีวิตเม็ดเลือดแดงและ EPO feedback loop\n1. **ตัวรับรู้ O2 อยู่ที่ไต** — peritubular interstitial fibroblast ใน cortex ส่วนลึก\n   - O2 ปกติ → **PHD (prolyl hydroxylase)** ใช้ O2 + Fe²⁺ + 2-oxoglutarate เติม OH ให้ **HIF-α** → **VHL** จับ → ubiquitin → proteasome ทำลาย\n   - O2 ต่ำ → PHD ทำงานไม่ได้ → **HIF-2α เสถียร** → จับ HIF-1β → เปิดยีน **EPO** (ระดับในเลือดเพิ่มได้ **100–1,000 เท่า**) · HIF ยังลด hepcidin และเพิ่ม DMT1/transferrin receptor = เตรียมเหล็กให้โรงงาน\n2. **EPO → EPO-R บน CFU-E/proerythroblast → JAK2–STAT5 → ยับยั้ง apoptosis** → progenitor รอดมากขึ้น → erythroid hyperplasia\n3. Proerythroblast → แบ่งตัว ~**3–5 รอบ** ใน 5–7 วัน (Hb สะสม นิวเคลียสเล็กลง) → ไล่นิวเคลียสออก → **reticulocyte** (ยังมี ribosomal RNA) อยู่ในไขกระดูก ~3 วัน + ในเลือด **~1 วัน** → RBC\n4. RBC 120 วัน → membrane เสื่อม เสีย deformability → ติดใน **splenic cord** → macrophage กิน → heme → **Fe กลับ transferrin** (20–25 mg/วัน = แหล่งเหล็กหลักของโรงงาน) + biliverdin → **unconjugated bilirubin**\n- เวลา: EPO ↑ ในชั่วโมง · retic เริ่ม ↑ **3–5 วัน** · peak **7–10 วัน** · ไขกระดูกเพิ่มการสร้างได้ **2–3 เท่า** ในระยะสั้น และ **6–8 เท่า** ใน hemolysis เรื้อรัง — ถ้า **Fe, B12, folate พอ**\n\n### Reticulocyte — ดัชนีของโรงงาน และวิธีแก้ค่าที่หลอกตา\n- ปกติ retic **0.5–2.5%** · absolute **25,000–75,000/µL** · **> 100,000/µL** = ตอบสนองดี (absolute = retic% × RBC)\n- **หลอกที่ 1 — ตัวหารลด**: RBC น้อยลง retic% ดูสูงเอง → **corrected retic = retic% × (Hct ผู้ป่วย / 45)**\n- **หลอกที่ 2 — shift reticulocyte**: EPO สูงไล่ retic อายุน้อยออกมาก่อน (เห็นเป็น **polychromasia**) อยู่ในเลือดนานขึ้นจึงถูกนับซ้ำ → หารด้วย **maturation time**: Hct 45 → 1 วัน · 35 → 1.5 · 25 → 2 · 15 → 2.5\n- **RPI = corrected retic ÷ maturation time** · **RPI ≥ 2–3** = โรงงานดี ปัญหาอยู่ **ปลายทาง** (hemolysis/เสียเลือด) · **RPI < 2** = โรงงานผลิตไม่พอ (hypoproliferative หรือ maturation defect)\n- ตัวอย่าง: retic 9%, Hct 25% → 9 × 25/45 = **5%** → ÷ 2 = **RPI 2.5** = เหมาะสม\n\n### MCV, MCH, MCHC, RDW — อ่านเชิงกลไก\n- **MCV** = Hct/RBC (ปกติ **80–100 fL**) · **MCH** = Hb/RBC (27–33 pg) · **MCHC** = Hb/Hct (32–36 g/dL) · **RDW** = ความต่างของขนาด (CV ~11.5–14.5%)\n- **Microcytic = สร้าง Hb ไม่ได้ (cytoplasmic maturation defect)** — erythroblast หยุดแบ่งเมื่อ Hb ในไซโทพลาสซึมถึงระดับหนึ่ง · Hb สะสมช้า → **แบ่งเกินอีกรอบ** → เซลล์เล็ก สีจาง (MCH ↓) · Hb = heme (Fe + protoporphyrin) + globin → ขาด Fe (**IDA**), Fe ถูกขัง (**ACD**), ประกอบ heme ไม่ได้ (**sideroblastic, lead**), globin น้อย (**thalassemia**)\n- **Macrocytic megaloblastic = DNA สังเคราะห์ช้า (nuclear maturation defect)** — B12/folate ขาด → **dTMP ↓** → S-phase ยืด → ไซโทพลาสซึมโตตามเวลาแต่นิวเคลียสแบ่งไม่ทัน → **แบ่งน้อยรอบ** → เซลล์ใหญ่ + **nuclear–cytoplasmic asynchrony** + ตายในไขกระดูก (ineffective erythropoiesis)\n- **Macrocytic non-megaloblastic** — ไขมันเกาะ membrane เพิ่ม (**โรคตับ**), พิษตรงของ **แอลกอฮอล์** ต่อ erythroblast, **hypothyroid**, **reticulocytosis** (retic ใหญ่กว่า RBC), MDS, ยา (hydroxyurea, zidovudine)\n- **MCHC > 36** = ผิวหายแต่ปริมาตรคงเดิม → **spherocyte** (HS, warm AIHA) · ค่าหลอก: **cold agglutinin** (RBC จับกลุ่ม นับได้น้อย → MCV/MCHC สูงเทียม)\n- **RDW สูง** = มีเซลล์สองกลุ่มปนกัน: IDA (เซลล์เก่าปกติ + ใหม่เล็ก), ขาด Fe + folate พร้อมกัน (**MCV ปกติแต่ RDW สูง**), หลังให้เลือด\n\n### แผนที่ 21 ภาวะ — จัดตามกลไก (production vs destruction vs loss)\n| กลไก | ชั้นที่เสีย | ภาวะ | MCV · RPI |\n|---|---|---|---|\n| **สร้าง Hb ไม่ได้** | heme / globin | IDA · ACD (ระยะหลัง) · sideroblastic (+ lead) · α-thal · β-thal/HbE | micro · ต่ำ (thal มีแตกร่วม) |\n| **DNA ช้า** | นิวเคลียส | B12 deficiency · folate deficiency | macro · ต่ำ |\n| **โรงงาน/สัญญาณเสีย** | stem cell · EPO · cytokine | aplastic · CKD · ACD · ตับ/สุรา · hypothyroid | normo (ตับ/สุรา/ไทรอยด์ มัก macro) · ต่ำ |\n| **แตก — เซลล์ผิดเอง** | membrane · enzyme · Hb | HS · PNH · G6PD · PK · sickle cell | normo · สูง |\n| **แตก — แรงจากนอกเซลล์** | antibody · complement · fibrin/VWF | warm AIHA · cold AIHA · DIC · TTP/HUS | normo · สูง |\n| **สูญเสีย** | หลอดเลือด | acute blood loss | normo · ขึ้นหลัง 3–5 วัน |\n- **Intravascular** (PNH, G6PD ช่วงวิกฤต, cold AIHA บางส่วน, MAHA) → Hb อิสระ → **haptoglobin หมด, hemoglobinuria, hemosiderinuria** · **Extravascular** (HS, warm AIHA, sickle, PK, thal) → macrophage ม้าม/ตับ → **bilirubin ↑, ม้ามโต**\n- หลายภาวะใช้ **หลายกลไกพร้อมกัน**: thal (ineffective + แตก), ACD (เหล็กถูกขัง + EPO ทื่อ + อายุสั้น), megaloblastic (ตายในไขกระดูก → LDH/bilirubin ↑ เหมือน hemolysis)\n\n### ทำไมคนซีดถึงมีอาการแบบนี้ (กลไกชดเชย)\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| เหนื่อยง่าย อ่อนเพลีย | O2 content ≈ 1.34 × Hb × SaO2 → Hb ลดครึ่ง O2 ที่ขนได้ลดครึ่ง |\n| ใจสั่น ชีพจรเร็ว **flow murmur** | cardiac output ↑ + ความหนืดเลือด ↓ → การไหลปั่นป่วน (high-output state) |\n| ซีดเรื้อรังทนได้ดีเกินคาด | **2,3-BPG ↑** → O2 curve shift right → ปล่อย O2 ให้เนื้อเยื่อมากขึ้น + plasma volume ขยาย |\n| เจ็บหน้าอก/หัวใจล้มเหลวกำเริบ | demand ↑ แต่ supply ↓ ในคนมี CAD/โรคหัวใจ |\n| เสียเลือดเฉียบพลัน: หน้ามืด ช็อก แต่ Hb แรกยังปกติ | เสีย plasma + cell เท่ากัน · Hb ลดเมื่อน้ำเข้าหลอดเลือดใน **24–72 ชม.** |\n| ดีซ่าน ม้ามโต ปัสสาวะสีเข้ม | ชี้ไปทาง **destruction** (heme → bilirubin) |\n\n### กับดักข้อสอบ\n- **Retic% สูงยังไม่พอ** ต้องแก้เป็น RPI · ช่วงแรกของเสียเลือด/hemolysis RPI ยังต่ำได้\n- Hemolysis เรื้อรัง + **parvovirus B19** หรือขาด folate → **aplastic crisis** retic ตกฮวบ\n- **MCV ปกติ ≠ ไม่มีปัญหาขนาด** — micro + macro ผสมกัน ดู RDW และ smear\n- CKD = normocytic hypoproliferative ที่ **EPO ไม่เพิ่มตาม Hb** — ไม่ใช่ EPO ต่ำกว่าค่าปกติเสมอ",
+  "pearls": [
+   "มวล RBC = สร้าง − (ทำลาย + สูญเสีย) · RBC อายุ 120 วัน ไขกระดูกแทนวันละ ~1%",
+   "O2 ต่ำ → PHD ทำงานไม่ได้ → HIF-2α เสถียร → EPO จาก peritubular fibroblast ของไต",
+   "RPI = retic% × (Hct/45) ÷ maturation time · ≥ 2–3 = ปัญหาปลายทาง (แตก/เสียเลือด) · < 2 = โรงงานเสีย",
+   "Micro = สร้าง Hb ไม่ได้ (Fe, heme, globin) → แบ่งเกิน · macro megaloblastic = DNA ช้า → แบ่งน้อย",
+   "MCHC > 36 = spherocyte (HS, warm AIHA) · RDW สูง = เซลล์สองกลุ่มปนกัน",
+   "Retic เริ่มขึ้น 3–5 วัน peak 7–10 วัน · เสียเลือดเฉียบพลัน Hb แรกยังปกติ"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-01",
+    "kind": "mcq",
+    "topic": "Reticulocyte production index",
+    "stem": "A 30-year-old woman presents with 3 weeks of fatigue. Hb 8.0 g/dL, Hct 25%, MCV 86 fL, reticulocyte count 6%. There is no recent bleeding. Which interpretation of her reticulocyte response is most accurate?",
+    "choices": [
+     "Reticulocyte response is appropriate (index about 6), consistent with hemolysis",
+     "Reticulocyte production index about 3.3, indicating an adequate marrow response",
+     "Reticulocyte production index about 1.7, indicating an inadequate marrow response for this degree of anemia",
+     "The reticulocyte count cannot be interpreted without a bone marrow aspirate",
+     "Reticulocyte production index about 0.5, diagnostic of aplastic anemia"
+    ],
+    "answer": 2,
+    "explain": "ต้องแก้ retic% สองชั้น\n\n1) **Corrected retic** = 6% × (25/45) = **3.3%** — เพราะ RBC น้อยลง ตัวหารลด เปอร์เซ็นต์จึงดูสูงเกินจริง\n2) ที่ Hct 25% EPO สูงไล่ **shift reticulocyte** ออกมาก่อนเวลา อยู่ในเลือดนาน **~2 วัน** แทน 1 วัน จึงถูกนับซ้ำ → **RPI = 3.3 ÷ 2 ≈ 1.7**\n\n**RPI < 2** = ไขกระดูกตอบสนอง **ไม่สมกับ** ความซีด → คิดถึงโรงงานเสีย (ขาดวัตถุดิบ, EPO ไม่พอ, ไขกระดูกถูกกด) หรือภาวะผสม เช่น hemolysis ที่ขาด folate ร่วม\n\n- ใช้ 6% ตรง ๆ = ลืมแก้ทั้งสองชั้น\n- 3.3 = แก้แค่ Hct ลืม maturation time\n- ไม่ต้องเจาะไขกระดูกเพื่อแปลผล retic\n- 0.5 คำนวณผิด และ RPI ต่ำอย่างเดียวไม่ได้วินิจฉัย aplastic anemia (ต้องมี pancytopenia + ไขกระดูก hypocellular)",
+    "pearl": "Retic% → × Hct/45 → ÷ maturation time (Hct 25 = 2 วัน) · RPI < 2 = โรงงานตอบสนองไม่พอ",
+    "src": "",
+    "ref": [
+     "Harrison's 21st ed. — Anemia and polycythemia (reticulocyte production index)",
+     "Hoffbrand's Essential Haematology 8th ed. ch. 2"
+    ],
+    "nl": [
+     "3.3.3",
+     "B2.3(3)",
+     "3.3.1"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-02",
+    "kind": "mcq",
+    "topic": "Mechanism of microcytosis",
+    "stem": "A 4-year-old girl has Hb 9.5 g/dL, MCV 64 fL and MCH 19 pg. Her erythroblasts have normal DNA synthesis. Which mechanism best explains why her circulating red cells are small?",
+    "choices": [
+     "Impaired thymidylate synthesis delays nuclear division while the cytoplasm keeps growing",
+     "Increased cholesterol and phospholipid in the red-cell membrane",
+     "Progressive loss of membrane surface as cells pass through the splenic cords",
+     "Slow accumulation of cytoplasmic hemoglobin lets erythroblasts undergo extra divisions before reaching the hemoglobin level that stops division",
+     "Activation of the Gardos channel causing potassium and water loss from mature red cells"
+    ],
+    "answer": 3,
+    "explain": "คำอธิบายคลาสสิกของ **microcytosis** คือ **cytoplasmic maturation defect**: erythroblast จะหยุดแบ่งตัวเมื่อ Hb ในไซโทพลาสซึมถึงระดับหนึ่ง ถ้าสร้าง Hb ได้ช้า (ขาด Fe, เหล็กถูกขังใน ACD, ประกอบ heme ไม่ได้ใน sideroblastic/lead, globin น้อยใน thalassemia) เซลล์จะ **แบ่งเพิ่มอีกรอบ** ก่อนถึงเกณฑ์ → ได้เซลล์ลูกที่ **เล็กและสีจาง** (MCV ↓ MCH ↓)\n\n- **Thymidylate synthesis บกพร่อง** = B12/folate → nuclear maturation defect → แบ่ง **น้อย** รอบ เซลล์ **ใหญ่** (megaloblastic) ตรงข้ามกับโจทย์\n- **ไขมันที่ membrane เพิ่ม** = โรคตับ → target cell/macrocyte ไม่ใช่ micro\n- **เสียผิวในม้าม** = spherocyte (HS, warm AIHA) → MCV มักปกติแต่ **MCHC สูง** ไม่ใช่ MCH 19 pg\n- **Gardos channel** = เซลล์ขาดน้ำใน sickle cell → MCHC สูง ไม่ใช่กลไกหลักของ microcytosis ทั่วไป",
+    "pearl": "Micro = Hb มาช้า แบ่งเกิน · macro megaloblastic = DNA มาช้า แบ่งน้อย",
+    "src": "",
+    "ref": [
+     "Hoffbrand's Essential Haematology 8th ed. — Hypochromic anaemias",
+     "Williams Hematology 10th ed. — Erythropoiesis"
+    ],
+    "nl": [
+     "B2.1.2(2)",
+     "B2.3(2)",
+     "3.3.1"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-03",
+    "kind": "mcq",
+    "topic": "HIF–EPO oxygen sensing",
+    "stem": "A 61-year-old man with stage 4 chronic kidney disease has Hb 8.6 g/dL, MCV 88 fL, reticulocyte production index 0.5, ferritin 320 ng/mL and transferrin saturation 31%. He is started on an oral drug that raises his Hb over 8 weeks without being an erythropoietin analog. By which mechanism does this drug work?",
+    "choices": [
+     "It binds and activates the erythropoietin receptor on CFU-E cells",
+     "It inhibits prolyl hydroxylase so HIF-α escapes VHL-mediated degradation, increasing endogenous EPO and iron availability",
+     "It blocks hepcidin from binding ferroportin in the duodenum",
+     "It stimulates the thrombopoietin receptor, which also drives erythroid progenitors",
+     "It raises red-cell 2,3-BPG, shifting the oxygen dissociation curve to the right"
+    ],
+    "answer": 1,
+    "explain": "ไตรับรู้ O2 ผ่าน **PHD (prolyl hydroxylase)** ซึ่งใช้ O2 เป็นสารตั้งต้นเติม OH ให้ **HIF-α** → **VHL** จับและส่งไปทำลาย · O2 ต่ำ → HIF-2α ค้าง → เปิดยีน **EPO** ใน peritubular interstitial fibroblast\n\nยากลุ่ม **HIF-PH inhibitor** (เช่น roxadustat, daprodustat) **เลียนสภาวะขาด O2** → HIF-α เสถียร → EPO จากร่างกายเพิ่ม + hepcidin ลด DMT1/transferrin receptor เพิ่ม → เหล็กพร้อมใช้ขึ้น · ใน CKD fibroblast เปลี่ยนเป็น myofibroblast จึงสร้าง EPO ไม่พอกับระดับ Hb (RPI 0.5 + iron พอ = ขาด EPO)\n\n- **กระตุ้น EPO-R ตรง** = ESA (epoetin, darbepoetin) ซึ่งโจทย์บอกว่าไม่ใช่\n- **กัน hepcidin จับ ferroportin** = ยังเป็นยาวิจัย ไม่ใช่กลไกหลักที่เพิ่ม EPO\n- **TPO receptor agonist** ใช้ใน ITP/aplastic ไม่ใช่ CKD anemia\n- **2,3-BPG** ช่วยปล่อย O2 แต่ไม่เพิ่ม Hb",
+    "pearl": "O2 → PHD → HIF-α ถูกทำลาย · ขาด O2 (หรือยา HIF-PHI) → HIF-2α → EPO",
+    "src": "",
+    "ref": [
+     "Haase VH. Kidney Int Suppl 2021 — HIF-prolyl hydroxylase inhibitors in renal anemia",
+     "KDIGO Clinical Practice Guideline for Anemia in CKD (2012)"
+    ],
+    "nl": [
+     "B2.1.2(2)",
+     "B2.4(4)",
+     "2.3.14(3)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-02",
+  "title": "Iron deficiency anemia — hepcidin–ferroportin และสามระยะของการพร่องเหล็ก",
+  "minutes": 14,
+  "summary": "เสียเหล็กมากกว่าดูดซึม → ferritin ↓ ก่อน → TSAT ↓ → Hb/MCV ↓ · hepcidin ↓ เปิด ferroportin แต่ดูดซึมได้ไม่กี่ mg/วัน · ferritin < 30 · หาแหล่งเลือดออกเสมอ · ธาตุเหล็กวันเว้นวันเพราะ hepcidin",
+  "source": "Williams Hematology 10th ed. · Hoffbrand 8th ed. · BSG guidelines for IDA in adults (Snook et al., Gut 2021) · Pasricha SR et al., Lancet 2021 · Stoffel NU et al., Lancet Haematol 2017 (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3(7)",
+   "B2.2.5(1)",
+   "3.3.26",
+   "B2.4(2)",
+   "2.1.56",
+   "2.1.20"
+  ],
+  "md": "### ภาพรวม — ภาวะซีดที่พบบ่อยที่สุดในโลก\nIDA เป็นสาเหตุซีดอันดับหนึ่งทั่วโลก · ในไทยพบมากใน **หญิงวัยเจริญพันธุ์ หญิงตั้งครรภ์ เด็กเล็ก** · ใน **ชายและหญิงหมดประจำเดือน** ให้ถือว่า **เลือดออกทางเดินอาหาร** (รวมมะเร็งลำไส้) จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ · ชนบทมี **พยาธิปากขอ** · คนไทยมี thalassemia trait ร่วมบ่อย ทำให้ภาพ microcytic ซ้อนกันได้\nร่างกายมีเหล็ก ~**3–4 g** (2/3 อยู่ใน Hb) · ดูดซึมและเสียวันละแค่ **1–2 mg** · โรงงานใช้วันละ **20–25 mg** ซึ่งเกือบทั้งหมดมาจาก **macrophage รีไซเคิล RBC แก่** · **เลือด 1 mL มีเหล็ก ~0.5 mg** → เสียเลือดเรื้อรังเพียงวันละไม่กี่ mL ก็เกินความสามารถดูดซึม\n\n### ไล่กลไก: จากสมดุลเหล็กถึงเซลล์เล็กสีจาง\n1. **ดูดซึมที่ duodenum**: Fe³⁺ → **Dcytb** รีดิวซ์เป็น Fe²⁺ → **DMT1** เข้า enterocyte (heme iron ดูดซึมดีกว่าและไม่ขึ้นกับกรด) → เก็บเป็น ferritin หรือส่งออกทาง **ferroportin** → **hephaestin** ออกซิไดซ์เป็น Fe³⁺ → จับ **transferrin**\n2. **Hepcidin** (ตับ) = ฮอร์โมนคุมประตู — จับ ferroportin → internalize และทำลาย → ปิดทั้งลำไส้และ macrophage · เหล็กพอ/อักเสบ → hepcidin ↑ · **ขาดเหล็ก ขาด O2 erythropoiesis เร่ง (erythroferrone)** → hepcidin ↓\n3. **เสียเลือดเรื้อรัง/ต้องการเพิ่ม** (ประจำเดือนมาก, GI bleed, ตั้งครรภ์ต้องการ ~1 g, โตเร็ว) หรือ **ดูดซึมไม่ได้** (celiac, atrophic gastritis, H. pylori, หลังผ่าตัดกระเพาะ/bariatric, PPI) → hepcidin ↓ ประตูเปิดสุด แต่ดูดซึมเพิ่มได้เพียงไม่กี่ mg/วัน\n4. คลังหมด → transferrin ที่วิ่งไปส่งเหล็กว่าง → erythroblast เพิ่ม **transferrin receptor** แต่ได้เหล็กไม่พอ → **ferrochelatase ใส่ zinc แทน** (ZPP ↑) → heme ↓\n5. Heme ต่ำ → **HRI (heme-regulated eIF2α kinase)** หยุดแปลรหัส globin ให้สมดุล → Hb สะสมช้า → **แบ่งเกินรอบ → microcytic, hypochromic**\n6. นอก RBC: เอนไซม์ที่ใช้เหล็ก (cytochrome, **tyrosine hydroxylase**, ribonucleotide reductase) ในเยื่อบุ เล็บ สมอง ก็พร่อง → อาการที่ไม่ใช่ซีด\n\n### ระยะของการขาดเหล็ก (stages of depletion)\n| ระยะ | สิ่งที่หมด | Ferritin | TSAT/serum Fe | TIBC | Hb · MCV |\n|---|---|---|---|---|---|\n| 1. **Iron depletion** | คลัง (ferritin/hemosiderin) | **↓** | ปกติ | ปกติ/↑ เล็กน้อย | ปกติ |\n| 2. **Iron-deficient erythropoiesis** | เหล็กส่งโรงงาน | ↓↓ | **↓ (TSAT < 16–20%)** | ↑ | Hb ปกติ/ต่ำนิด · **ZPP ↑ sTfR ↑** |\n| 3. **IDA** | เหล็กในเซลล์ | ↓↓↓ | ↓↓ | ↑↑ | **Hb ↓ → MCV ↓ MCH ↓** |\n- Ferritin ตกก่อนทุกค่า · Hb ลดก่อน MCV เพราะเซลล์เก่าขนาดปกติยังอยู่ 120 วัน → **RDW สูงเป็นสัญญาณแรก ๆ**\n\n### ทำไมถึงมีอาการแบบนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด เหนื่อย ใจสั่น | O2 carrying capacity ↓ + high-output state |\n| **Koilonychia** (เล็บช้อน) ผมร่วง | เยื่อบุ/เมทริกซ์เล็บแบ่งตัวเร็ว ต้องใช้เอนไซม์ที่มีเหล็ก → เล็บบางแอ่น |\n| **Atrophic glossitis, angular cheilitis** | เยื่อบุผิวในปากฝ่อจากการแบ่งตัวบกพร่อง |\n| **Pica / pagophagia** (อยากกินน้ำแข็ง ดิน) | กลไกไม่ชัด — เชื่อว่าเกี่ยวกับเหล็กในสมอง (dopamine) · หายเร็วหลังได้เหล็ก ก่อน Hb ขึ้น |\n| **Restless legs** | tyrosine hydroxylase ต้องใช้ Fe → dopamine ใน basal ganglia ↓ |\n| **Plummer–Vinson**: กลืนลำบาก + esophageal web + IDA | เยื่อบุหลอดอาหารส่วนบนฝ่อเป็นแผ่นพังผืด · เสี่ยง SCC |\n| เด็ก: พัฒนาการ/สมาธิ ↓ | myelination และ neurotransmitter ใช้เหล็ก |\n| เกล็ดเลือดสูง | reactive thrombocytosis (กลไกยังไม่ชัด) |\n\n### ทำไมผลแล็บออกมาแบบนี้\n- **MCV ↓ MCH ↓ RDW ↑** — แบ่งเกิน + เซลล์สองรุ่นปนกัน · smear: microcytic hypochromic, **pencil cell**, anisocytosis\n- **Retic ต่ำ (RPI < 2)** — EPO สูงแต่ไม่มีเหล็กให้สร้าง\n- **Ferritin ↓** — สะท้อนคลังตรงที่สุด · **< 15 ng/mL** แทบยืนยัน · **< 30** ใช้เป็นเกณฑ์ทั่วไป (BSG)\n- **Serum iron ↓ · TIBC ↑** — ตับสร้าง **transferrin เพิ่ม** เมื่อเหล็กพร่อง → **TSAT ↓ (< 16–20%)**\n- **sTfR ↑** — erythroblast เพิ่ม receptor เพื่อจับเหล็ก (ไม่ขึ้นกับการอักเสบ) · **ZPP ↑**\n- ไขกระดูก Prussian blue: **ไม่มีเหล็กสะสม** (gold standard แต่แทบไม่ต้องทำ)\n\n### วินิจฉัยและกับดัก\n- **Ferritin เป็น acute phase reactant** — อักเสบ/โรคตับ/มะเร็งทำให้ปกติเทียม → ถ้ามีการอักเสบ ferritin **< 100** + TSAT < 20% ยังเป็นขาดเหล็กได้\n- Serum iron ขึ้นลงตามมื้อและเวลา อย่าใช้ค่าเดียว\n- **วินิจฉัย IDA แล้วต้องหาสาเหตุ**: ชาย/หญิงหมดประจำเดือน → **gastroscopy + colonoscopy** · **celiac serology** · urinalysis หา hematuria · ตรวจอุจจาระหาพยาธิ · ซักประจำเดือน/ยา NSAID\n- ขาดเหล็กกด **HbA2** ลง → อาจบัง β-thal trait · คนไทยตรวจ Hb typing ซ้ำหลังเติมเหล็ก\n\n### รักษาตามกลไก\n- **แก้ต้นเหตุ** (หยุดเลือดออก, ถ่ายพยาธิ, gluten-free) — ไม่งั้นเติมเท่าไรก็รั่ว\n- **Oral iron**: ferrous sulfate 200 mg (Fe ธาตุ **65 mg**) **วันละครั้งหรือวันเว้นวัน** · เหตุผล: ธาตุเหล็กหนึ่งมื้อกระตุ้น **hepcidin สูงอยู่ ~24 ชม.** → มื้อถัดไปดูดซึมน้อย · กินตอนท้องว่าง + vitamin C · เลี่ยงชา นม แคลเซียม ยาลดกรด\n- คาดหวัง: retic peak **7–10 วัน** · Hb ขึ้น ~**2 g/dL ใน 3–4 สัปดาห์** · ให้ต่อ **~3 เดือนหลัง Hb ปกติ** เพื่อเติมคลัง (ferritin)\n- **IV iron** (ferric carboxymaltose, ferric derisomaltose, iron sucrose) เมื่อ: ทนยากินไม่ได้/ไม่ตอบสนอง, ดูดซึมไม่ได้ (IBD active, celiac, หลัง bariatric), เสียต่อเนื่องมากกว่าที่กินทดแทนได้, CKD ที่ใช้ ESA, **ไตรมาส 2–3** ที่ต้องการเร็ว, heart failure · คำนวณ **Ganzoni**: น้ำหนัก (kg) × (Hb เป้า − Hb จริง, g/dL) × 2.4 + 500 mg · ferric carboxymaltose ทำ **hypophosphatemia** (FGF23 ↑)\n- ให้เลือดเฉพาะซีดมากร่วมกับอาการไม่คงที่ — ไม่ได้แก้คลังเหล็กระยะยาว\n\n### กับดักข้อสอบ / แยกโรค\n- **IDA vs thal trait**: thal มี RBC สูง RDW ไม่สูงมาก ferritin ปกติ (Mentzer < 13 = ชี้ thal — คร่าว ๆ)\n- **IDA vs ACD**: TIBC **สูง** ใน IDA แต่ **ต่ำ** ใน ACD · ferritin ต่ำ vs ปกติ/สูง\n- ไม่ตอบสนองต่อ oral iron: กินไม่สม่ำเสมอ, ยังเลือดออก, celiac/H. pylori/autoimmune gastritis, วินิจฉัยผิด (thal, ACD), ขาดหลายอย่าง",
+  "pearls": [
+   "Ferritin ตกก่อน → TSAT ตก → Hb ตก → MCV ตก · RDW สูงเป็นสัญญาณแรก ๆ",
+   "Ferritin < 30 = ขาดเหล็ก · ถ้าอักเสบอยู่ ferritin < 100 + TSAT < 20% ยังขาดได้",
+   "IDA: TIBC ↑ (ตับสร้าง transferrin เพิ่ม) · ACD: TIBC ↓",
+   "ชาย/หญิงหมดประจำเดือนที่ IDA = ส่องกล้องบนและล่าง + celiac serology",
+   "ธาตุเหล็กวันละครั้งหรือวันเว้นวัน — hepcidin ขึ้นหลังกิน ~24 ชม. · ให้ต่อ 3 เดือนหลัง Hb ปกติ",
+   "Koilonychia · glossitis · pica · restless legs · Plummer–Vinson = เหล็กในเนื้อเยื่ออื่นพร่อง"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-04",
+    "kind": "mcq",
+    "topic": "IDA work-up in older men",
+    "stem": "A 63-year-old man reports 2 months of exertional fatigue. He has no visible bleeding and takes no medication. Hb 9.1 g/dL, MCV 71 fL, RDW 18.5%, platelets 480,000/µL, ferritin 7 ng/mL, transferrin saturation 6%. Abdominal examination is normal. What is the most appropriate next step?",
+    "choices": [
+     "Hemoglobin typing to exclude thalassemia trait before any further tests",
+     "Bone marrow aspiration with Prussian blue staining",
+     "Start oral iron and recheck the CBC in 6 months; investigate only if there is no response",
+     "Give intravenous iron alone because oral iron is ineffective in older adults",
+     "Arrange bidirectional endoscopy (gastroscopy and colonoscopy) and start iron replacement"
+    ],
+    "answer": 4,
+    "explain": "Ferritin **7 ng/mL** + TSAT 6% + MCV ต่ำ + RDW สูง = **iron deficiency anemia ชัดเจน** ไม่ต้องพิสูจน์เพิ่ม\n\nคำถามสำคัญคือ **เหล็กหายไปไหน** — ชายที่ไม่มีประจำเดือนดูดซึมเหล็กได้เกินที่เสียตามปกติ IDA จึงแปลว่า **เสียเลือดเรื้อรัง (มักทางเดินอาหาร) หรือดูดซึมไม่ได้** · BSG 2021 แนะนำ **gastroscopy + colonoscopy** ในชายทุกคนและหญิงหมดประจำเดือน ร่วมกับ celiac serology และตรวจปัสสาวะ — เพราะมะเร็งลำไส้ใหญ่ซีกขวามักมาด้วยซีดอย่างเดียว · ให้เหล็กไปพร้อมกันได้\n\n- **Hb typing** ไม่จำเป็นก่อน — ferritin ต่ำยืนยันขาดเหล็กแล้ว (thal trait ไม่ทำ ferritin ต่ำ)\n- **เจาะไขกระดูก** ไม่จำเป็นเมื่อ ferritin ต่ำชัด\n- **รอ 6 เดือน** = พลาดมะเร็ง\n- **IV iron** ไม่จำเป็นทุกรายในผู้สูงอายุ และไม่ตอบคำถามเรื่องสาเหตุ",
+    "pearl": "IDA ในชาย/หญิงหมดประจำเดือน = เลือดออกทางเดินอาหารจนกว่าจะพิสูจน์ว่าไม่ใช่",
+    "src": "",
+    "ref": [
+     "Snook J et al. BSG guidelines for the management of iron deficiency anaemia in adults. Gut 2021"
+    ],
+    "nl": [
+     "2.3.3(7)",
+     "3.3.26",
+     "2.1.20",
+     "2.1.56"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-05",
+    "kind": "mcq",
+    "topic": "Hepcidin and oral iron dosing",
+    "stem": "A 25-year-old woman with heavy menstrual bleeding and IDA (Hb 9.8 g/dL, ferritin 6 ng/mL) was prescribed ferrous sulfate 200 mg three times daily. She stopped after 1 week because of nausea and constipation. She is switched to a single 200 mg tablet every other morning. What is the physiological rationale for this regimen?",
+    "choices": [
+     "A dose of oral iron raises serum hepcidin for about 24 hours, which degrades ferroportin and reduces absorption of the next dose; spacing doses improves fractional absorption",
+     "Every-other-day dosing allows DMT1 to be synthesized de novo in the stomach",
+     "Iron is absorbed mainly in the terminal ileum, which needs 48 hours to recover",
+     "Alternate-day dosing lowers transferrin so that more iron remains unbound in plasma",
+     "Fewer doses suppress erythroferrone, which otherwise blocks duodenal iron uptake"
+    ],
+    "answer": 0,
+    "explain": "การกินธาตุเหล็กหนึ่งมื้อทำให้เหล็กในเลือดขึ้น → ตับตอบสนองด้วยการสร้าง **hepcidin เพิ่มนาน ~24 ชม.** → hepcidin จับ **ferroportin** บน enterocyte → ถูกดึงเข้าเซลล์และทำลาย → **มื้อถัดไปภายใน 24 ชม. ดูดซึมได้น้อยลง** (Stoffel 2017) · การให้ **วันละครั้งหรือวันเว้นวัน** จึงได้ fractional absorption สูงกว่า ผลข้างเคียงทางเดินอาหารน้อยกว่า และการกินต่อเนื่องดีกว่า (BSG 2021 แนะนำวันละครั้ง และวันเว้นวันถ้าทนไม่ได้)\n\n- **DMT1** อยู่ที่ apical membrane ของ **duodenum** ไม่ใช่กระเพาะ\n- เหล็กดูดซึมที่ **duodenum/jejunum ต้น** ไม่ใช่ terminal ileum (นั่นคือ B12)\n- การให้วันเว้นวันไม่ได้ลด transferrin และเหล็กอิสระในเลือดไม่ใช่เป้าหมาย (เป็นพิษ)\n- **Erythroferrone** มาจาก erythroblast และ **กด** hepcidin (ช่วยดูดซึม) ไม่ได้บล็อก",
+    "pearl": "เหล็กมื้อเดียว → hepcidin สูง ~24 ชม. → วันละครั้ง/วันเว้นวันดูดซึมดีกว่าวันละหลายมื้อ",
+    "src": "",
+    "ref": [
+     "Stoffel NU et al. Lancet Haematol 2017;4:e524",
+     "Snook J et al. Gut 2021 (BSG IDA guideline)"
+    ],
+    "nl": [
+     "B2.4(2)",
+     "B2.2.5(1)",
+     "2.3.3(7)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-06",
+    "kind": "mcq",
+    "topic": "Stages of iron depletion",
+    "stem": "A 19-year-old female regular blood donor feels well. Hb 12.9 g/dL, MCV 87 fL, RDW 13.2%, serum ferritin 10 ng/mL, transferrin saturation 24%, CRP normal. Which stage of iron deficiency best describes her?",
+    "choices": [
+     "Iron depletion: storage iron is exhausted while iron supply to erythropoiesis is still adequate",
+     "Iron-deficient erythropoiesis with reduced transferrin saturation and raised zinc protoporphyrin",
+     "Established iron deficiency anemia",
+     "Anemia of inflammation with iron sequestration",
+     "Normal iron status, because ferritin below 15 ng/mL is common in young women"
+    ],
+    "answer": 0,
+    "explain": "การขาดเหล็กเกิดเป็นลำดับ: **(1) iron depletion** — คลังเหล็ก (ferritin/hemosiderin) หมดก่อน แต่เหล็กที่ transferrin ส่งไปโรงงานยังพอ → **ferritin ต่ำ, TSAT ปกติ, Hb/MCV ปกติ** · **(2) iron-deficient erythropoiesis** — TSAT ตก < 16–20% sTfR และ ZPP ขึ้น Hb ยังปกติหรือต่ำนิด · **(3) IDA** — Hb และ MCV ลด\n\nผู้ป่วยรายนี้ ferritin **10** (คลังหมด) แต่ **TSAT 24%** และ Hb/MCV/RDW ปกติ = **ระยะที่ 1** · บริจาคเลือดหนึ่งยูนิตเสียเหล็ก ~200–250 mg จึงพบบ่อยในผู้บริจาคประจำ\n\n- ระยะ 2 ต้องมี **TSAT ต่ำ**\n- ระยะ 3 ต้องมี **Hb ต่ำ**\n- **ACD** ferritin ปกติหรือสูง และ CRP ปกติไม่สนับสนุน\n- ferritin < 15 **ไม่ใช่เรื่องปกติ** — แปลว่าคลังหมดจริง ควรเว้นการบริจาค/เสริมเหล็ก",
+    "pearl": "Ferritin ตกก่อน (ระยะคลังหมด) → TSAT ตก → Hb ตก → MCV ตก",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Iron deficiency and overload",
+     "Pasricha SR et al. Lancet 2021;397:233"
+    ],
+    "nl": [
+     "3.3.26",
+     "2.3.3(7)",
+     "B2.2.5(1)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-03",
+  "title": "Anemia of chronic disease/inflammation — IL-6 → hepcidin → เหล็กติดคุก",
+  "minutes": 12,
+  "summary": "IL-6 → hepcidin ↑ → ferroportin ถูกทำลาย → เหล็กค้างใน macrophage (ferritin ↑) แต่ในเลือดต่ำ · EPO ทื่อ + cytokine กด progenitor + RBC อายุสั้น · TIBC ต่ำ · sTfR ปกติ · sTfR/log ferritin > 2 = มีขาดเหล็กร่วม",
+  "source": "Weiss G, Ganz T, Goodnough LT. Blood 2019 (Anemia of inflammation) · Ganz T. NEJM 2019 · Williams Hematology 10th ed. · Hoffbrand 8th ed. (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "3.3.26",
+   "2.1.56",
+   "B2.3(2)",
+   "B2.4(4)",
+   "B2.4(2)"
+  ],
+  "md": "### ภาพรวม — ซีดจากการอักเสบ\n**Anemia of inflammation** (ชื่อเดิม anemia of chronic disease, ACD) พบบ่อยเป็นอันดับสองรองจาก IDA และ **อันดับหนึ่งในผู้ป่วยใน** · พบใน **ติดเชื้อเรื้อรัง** (TB, HIV, osteomyelitis, abscess), **autoimmune** (RA, SLE, IBD), **มะเร็ง**, heart failure, CKD และผู้สูงอายุ · เกิดได้เร็วภายในวัน–สัปดาห์ในผู้ป่วยวิกฤต\nซีดระดับ **ปานกลาง (Hb มัก 8–11 g/dL)** · normocytic normochromic (**microcytic ได้ ~20–30%** แต่ MCV แทบไม่ต่ำกว่า 70) · retic ต่ำ — มองในเชิงวิวัฒนาการคือ **\"กักเหล็กไม่ให้เชื้อโรคใช้\" (nutritional immunity)** ที่แลกมาด้วยความซีด\n\n### ไล่กลไก: IL-6 → hepcidin → เหล็กติดคุก\n1. การอักเสบ → macrophage/T cell หลั่ง **IL-6** (และ IL-1β, activin B) → hepatocyte: **IL-6R → JAK–STAT3** → เปิดยีน **HAMP → hepcidin ↑**\n2. Hepcidin จับ **ferroportin** (ช่องส่งเหล็กออกเพียงช่องเดียวของเซลล์) → ferroportin ถูกดึงเข้าเซลล์ + ubiquitinate → ทำลาย\n3. ประตูปิดสองจุด:\n   - **Macrophage** ในม้าม/ตับ/ไขกระดูกที่รีไซเคิล RBC (แหล่งเหล็ก **20–25 mg/วัน**) → เหล็กค้างในเซลล์ → เก็บเป็น **ferritin ↑**\n   - **Enterocyte** → ดูดซึมจากอาหารลดลง → **oral iron ได้ผลน้อย**\n4. Serum iron ตกภายใน **ไม่กี่ชั่วโมง** (hypoferremia) → transferrin ส่งเหล็กให้ erythroblast ไม่พอ = **iron-restricted erythropoiesis (functional iron deficiency)** — มีเหล็กในร่างกายแต่ใช้ไม่ได้\n5. ผลซ้ำ: IFN-γ/LPS เพิ่ม DMT1 ใน macrophage (เก็บเหล็กเพิ่ม) · IL-10 เพิ่มการแปลรหัส ferritin → คุกยิ่งแน่น\n\n### อีกสองแขนของกลไก: EPO ทื่อ และ RBC อายุสั้น\n- **EPO ไม่ขึ้นตามความซีด** — IL-1, TNF-α กดการแสดงออกของยีน EPO ในไต → ระดับ EPO ต่ำกว่าที่ควรเมื่อเทียบกับ Hb เดียวกันใน IDA\n- **ไขกระดูกตอบสนอง EPO น้อยลง** — **IFN-γ** (แรงสุด), TNF-α, IL-1 กด **CFU-E/BFU-E** + เพิ่ม apoptosis + ลด EPO receptor\n- **RBC อายุสั้นลง** — macrophage ที่ถูกกระตุ้น (cytokine, complement, ไข้) จับกิน RBC เร็วขึ้น (erythrophagocytosis) → อายุเหลือ ~80–90 วัน\n- ผลรวม: ทำลายเพิ่มเล็กน้อย + โรงงานขาดเหล็กและขาดสัญญาณ → **RPI < 2**\n\n### ทำไมถึงมีอาการแบบนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีดเล็กน้อย–ปานกลาง ไม่ค่อยมีอาการจากซีด | Hb มักไม่ต่ำกว่า 8 · ค่อย ๆ เป็น ร่างกายชดเชยด้วย 2,3-BPG |\n| อาการของโรคต้นเหตุเด่น (ข้ออักเสบ ไข้ น้ำหนักลด) | การอักเสบเป็นตัวขับ ซีดเป็นผลพลอยได้ |\n| อ่อนเพลียมากกว่าที่ Hb อธิบาย | cytokine (IL-6, TNF) มีผลต่อสมองและกล้ามเนื้อเอง |\n| ไม่มี koilonychia/pica แบบ IDA | เหล็กในร่างกายไม่ได้หมด แค่ถูกขังใน macrophage |\n| Hb ดีขึ้นเมื่อโรคสงบ | hepcidin/cytokine ลด → ประตูเปิด EPO กลับมา |\n\n### ทำไมผลแล็บออกมาแบบนี้ — IDA vs ACD\n| ค่า | IDA | ACD | เหตุผลเชิงกลไกใน ACD |\n|---|---|---|---|\n| Serum iron | ↓ | ↓ | ferroportin ปิด เหล็กไม่ออกจาก macrophage |\n| **TIBC (transferrin)** | **↑** | **↓/ปกติ** | transferrin เป็น **negative acute phase reactant** + ไม่มีสัญญาณขาดเหล็กจริง |\n| TSAT | ↓↓ (< 16%) | ↓ (มัก 10–20%) | serum iron ต่ำแต่ TIBC ต่ำด้วย สัดส่วนจึงลดไม่มาก |\n| **Ferritin** | **↓** | **ปกติ/↑ (> 100)** | เหล็กในคลังเพิ่ม + ferritin เป็น acute phase reactant |\n| **sTfR** | **↑** | **ปกติ** | IDA erythroblast หิวเหล็กเพิ่ม receptor · ACD cytokine กดโรงงาน receptor จึงไม่เพิ่ม |\n| sTfR/log ferritin | **> 2** | **< 1** | รวมสองสัญญาณให้แยกได้ดีขึ้น |\n| Hepcidin | ↓ | ↑ | ตัวขับหลัก (ยังไม่ใช่แล็บประจำ) |\n| ไขกระดูก Prussian blue | ไม่มีเหล็ก | **เหล็กใน macrophage มาก** แต่ sideroblast น้อย | ภาพ \"เหล็กติดคุก\" |\n- CRP/ESR สูง · MCV ปกติหรือต่ำเล็กน้อย · retic ต่ำ\n\n### วินิจฉัย — soluble transferrin receptor และกับดัก ferritin\n- ACD เป็น **การวินิจฉัยหลังแยกโรคอื่น** ต้องมีโรคอักเสบที่อธิบายได้ + iron profile เข้ากัน\n- **กับดักใหญ่: ACD + IDA ร่วมกัน** (เช่น RA ที่กิน NSAID เลือดออกทางเดินอาหาร, IBD, มะเร็งลำไส้) — ferritin ถูกดันขึ้นโดยการอักเสบ\n  - ferritin **< 30** = ขาดเหล็กแน่ · **30–100** + TSAT < 20% = น่าจะมีขาดเหล็กร่วม · **> 100** = ACD เป็นหลัก\n  - **sTfR/log ferritin > 2** = มีขาดเหล็กร่วม\n  - ทดลองให้เหล็กแล้ว Hb ขึ้น = มีขาดเหล็กจริง\n- แยก **CKD** (EPO ต่ำเป็นหลัก มัก overlap), **hypothyroid**, **marrow infiltration**, ยากดไขกระดูก\n\n### รักษาตามกลไก\n- **รักษาโรคต้นเหตุ** = ลด IL-6 → hepcidin ลง → ประตูเปิด · เช่น RA ที่ได้ **tocilizumab (anti-IL-6R)** Hb ขึ้นชัดภายในไม่กี่สัปดาห์\n- **IV iron** เมื่อมีขาดเหล็กแท้ร่วม (oral ถูก hepcidin บล็อกที่ duodenum) — ระวังให้ในระหว่างติดเชื้อรุนแรง\n- **ESA** (epoetin, darbepoetin) ใน CKD และซีดจากเคมีบำบัด — ชดเชย EPO ที่ทื่อ · เป้า Hb **ไม่เกิน ~11–12 g/dL** เพราะ Hb สูงเกินเพิ่ม stroke, thrombosis, ความดันสูง และอาจเร่งมะเร็งบางชนิด · ต้องเติมเหล็กให้พอก่อนไม่งั้นดื้อ ESA\n- **ให้เลือด** เมื่อมีอาการหรือ Hb ต่ำมาก (มัก < 7–8) ในผู้ป่วยวิกฤต\n- อนาคต: ยาต้าน hepcidin/BMP6–HJV pathway (ยังเป็นงานวิจัย)\n\n### กับดักข้อสอบ\n- **Ferritin สูงไม่ได้แปลว่าเหล็กเกิน** ในคนที่อักเสบ\n- จำคู่ **IDA = TIBC สูง · ACD = TIBC ต่ำ** แทนการจำ serum iron (ต่ำทั้งคู่)\n- ACD ที่ MCV < 70 → หาสาเหตุอื่น (IDA/thal ร่วม)\n- **Sideroblastic** ก็ ferritin สูงแต่ **TSAT สูง** ต่างจาก ACD",
+  "pearls": [
+   "IL-6 → JAK–STAT3 → hepcidin ↑ → ferroportin ถูกทำลาย → เหล็กติดใน macrophage",
+   "ACD: serum iron ↓ · TIBC ↓ · TSAT ↓ เล็กน้อย · ferritin ปกติ/↑ · sTfR ปกติ",
+   "sTfR/log ferritin > 2 หรือ ferritin 30–100 + TSAT < 20% = มีขาดเหล็กร่วม",
+   "สามแขน: เหล็กถูกขัง + EPO ทื่อ/ไขกระดูกไม่ตอบสนอง (IFN-γ) + RBC อายุสั้น",
+   "รักษาโรคต้นเหตุก่อน · oral iron ได้ผลน้อยเพราะ hepcidin ปิดลำไส้ · ESA เป้า Hb ≤ 11–12"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-07",
+    "kind": "mcq",
+    "topic": "Hepcidin in anemia of inflammation",
+    "stem": "A 47-year-old woman with active rheumatoid arthritis has Hb 9.8 g/dL, MCV 83 fL, reticulocyte production index 0.8, serum iron 35 µg/dL, TIBC 220 µg/dL (low), transferrin saturation 16%, ferritin 280 ng/mL, soluble transferrin receptor normal, CRP 45 mg/L. Which mechanism is mainly responsible for her low serum iron?",
+    "choices": [
+     "Chronic gastrointestinal blood loss exhausting body iron stores",
+     "Antibody-mediated destruction of erythroblasts in the marrow",
+     "IL-6–induced hepcidin causing internalization and degradation of ferroportin on macrophages and enterocytes",
+     "Mutation of ALAS2 preventing incorporation of iron into protoporphyrin",
+     "Increased hepatic transferrin synthesis diluting circulating iron"
+    ],
+    "answer": 2,
+    "explain": "ภาพแล็บ = **serum iron ต่ำ + TIBC ต่ำ + ferritin สูง + sTfR ปกติ + CRP สูง** = **anemia of inflammation**\n\nกลไก: การอักเสบ → **IL-6 → IL-6R → JAK–STAT3 ใน hepatocyte → hepcidin ↑** → hepcidin จับ **ferroportin** (ช่องส่งเหล็กออกเพียงช่องเดียว) → ถูก internalize และทำลาย → เหล็กที่ macrophage รีไซเคิลจาก RBC แก่ (20–25 mg/วัน) **ค้างในเซลล์เป็น ferritin** และ enterocyte ส่งเหล็กจากอาหารออกไม่ได้ → serum iron ตก → erythroblast ขาดเหล็ก (functional iron deficiency)\n\n- **เสียเลือดเรื้อรัง** ทำ ferritin ต่ำ TIBC สูง sTfR สูง — ตรงข้าม\n- **ทำลาย erythroblast ด้วยภูมิ** = pure red cell aplasia ไม่ได้ทำ ferritin สูง TIBC ต่ำ\n- **ALAS2 mutation** = sideroblastic → TSAT **สูง** ไม่ใช่ 16%\n- ใน ACD ตับสร้าง transferrin **ลดลง** (TIBC ต่ำ) ไม่ใช่เพิ่ม",
+    "pearl": "ACD = hepcidin ปิด ferroportin → ferritin สูงแต่ serum iron ต่ำ · TIBC ต่ำ",
+    "src": "",
+    "ref": [
+     "Weiss G, Ganz T, Goodnough LT. Blood 2019;133:40",
+     "Ganz T. N Engl J Med 2019;381:1148"
+    ],
+    "nl": [
+     "3.3.26",
+     "B2.3(2)",
+     "2.1.56"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-08",
+    "kind": "mcq",
+    "topic": "Combined IDA and ACD",
+    "stem": "A 58-year-old man with rheumatoid arthritis has taken naproxen daily for years. Hb 8.9 g/dL, MCV 74 fL, RDW 17%, serum iron 22 µg/dL, TIBC 310 µg/dL, transferrin saturation 7%, ferritin 72 ng/mL, CRP 30 mg/L, soluble transferrin receptor raised (sTfR/log ferritin index 3.2). Which interpretation is most appropriate?",
+    "choices": [
+     "Pure anemia of inflammation; iron therapy is contraindicated because ferritin is above 30 ng/mL",
+     "Iron overload from chronic inflammation; start phlebotomy",
+     "β-thalassemia trait; iron studies are irrelevant",
+     "Sideroblastic anemia from NSAID toxicity",
+     "Anemia of inflammation with coexisting absolute iron deficiency; replace iron and look for a gastrointestinal bleeding source"
+    ],
+    "answer": 4,
+    "explain": "ในคนที่อักเสบ ferritin ถูกดันขึ้นเพราะเป็น **acute phase reactant** — ferritin **72** จึงไม่ได้แปลว่าเหล็กพอ\n\nหลักฐานว่ามี **ขาดเหล็กแท้ร่วม**: ferritin อยู่ช่วง **30–100** ร่วมกับ **TSAT 7%**, **TIBC ไม่ต่ำ** (ACD ล้วนมัก TIBC ต่ำ), **MCV 74 + RDW สูง** และ **sTfR สูง / index 3.2 (> 2)** — sTfR ขึ้นเมื่อ erythroblast หิวเหล็กจริงและไม่ค่อยถูกการอักเสบรบกวน\n\nผู้ป่วยกิน NSAID ระยะยาว → เสี่ยงเลือดออกทางเดินอาหาร → ต้องให้เหล็ก (มักเลือก **IV** เพราะ hepcidin สูงบล็อกการดูดซึม) และ **ส่องกล้องหาแหล่งเลือดออก**\n\n- ACD ล้วน sTfR **ปกติ** และ index < 1\n- ไม่มีภาวะเหล็กเกิน (TSAT 7%)\n- thal trait ไม่ทำ TSAT 7% และ sTfR index นี้ร่วมกับ ferritin ต่ำ-กลาง\n- NSAID ไม่ใช่สาเหตุของ sideroblastic anemia",
+    "pearl": "อักเสบอยู่: ferritin 30–100 + TSAT < 20% หรือ sTfR/log ferritin > 2 = มี IDA ร่วม",
+    "src": "",
+    "ref": [
+     "Weiss G et al. Blood 2019;133:40",
+     "Snook J et al. Gut 2021 (BSG IDA guideline)"
+    ],
+    "nl": [
+     "3.3.26",
+     "2.3.3(7)",
+     "B2.3(2)",
+     "2.1.20"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-09",
+    "kind": "mcq",
+    "topic": "Mechanism-based therapy in ACD",
+    "stem": "A 52-year-old woman with long-standing active rheumatoid arthritis has anemia of inflammation (Hb 9.6 g/dL, ferritin 310 ng/mL, transferrin saturation 14%). Three months of oral ferrous sulfate produced no change. After she starts tocilizumab, her Hb rises to 12.1 g/dL within 8 weeks without iron. Which explanation is best?",
+    "choices": [
+     "Tocilizumab directly stimulates the erythropoietin receptor",
+     "Blocking the IL-6 receptor reduces STAT3-driven hepcidin transcription, restoring ferroportin so iron is released from macrophages and absorbed from the gut",
+     "Tocilizumab increases hepatic transferrin synthesis, which carries more dietary iron",
+     "IL-6 blockade suppresses erythroferrone, which was preventing erythroblast maturation",
+     "The oral iron finally saturated the stores, and tocilizumab played no role"
+    ],
+    "answer": 1,
+    "explain": "ใน ACD **IL-6 เป็นตัวกระตุ้น hepcidin ที่สำคัญที่สุด** ผ่าน **IL-6R → JAK–STAT3** ที่ hepatocyte · hepcidin สูง → ferroportin ถูกทำลาย → (1) duodenum ส่งเหล็กเข้าเลือดไม่ได้ จึง **oral iron ไม่ได้ผล** และ (2) macrophage ปล่อยเหล็กที่รีไซเคิลจาก RBC ไม่ได้\n\n**Tocilizumab (anti-IL-6R)** ตัดสัญญาณนี้ → hepcidin ลดลงภายในวัน → ferroportin กลับมา → เหล็กจากคลังใน macrophage (ferritin สูงอยู่แล้ว) ถูกปล่อยให้ transferrin → erythroblast ได้เหล็ก → Hb ขึ้นโดยไม่ต้องให้เหล็กเพิ่ม · การคุมการอักเสบยังลด TNF/IFN-γ ที่กดไขกระดูก\n\n- tocilizumab ไม่ใช่ ESA\n- ไม่ได้เพิ่ม transferrin เป็นกลไกหลัก (TIBC จะขยับขึ้นตามเมื่อการอักเสบลดแต่ไม่ใช่เหตุที่ Hb ขึ้น)\n- **erythroferrone** มาจาก erythroblast และ **กด** hepcidin — การลดมันจะทำให้ hepcidin สูงขึ้น ไม่ใช่ลด\n- oral iron 3 เดือนไม่ได้ผลเพราะถูก hepcidin บล็อก",
+    "pearl": "รักษา ACD = ลดการอักเสบ → ลด hepcidin · oral iron มักไม่ได้ผลเพราะ hepcidin ปิดลำไส้",
+    "src": "",
+    "ref": [
+     "Weiss G et al. Blood 2019;133:40",
+     "Ganz T. N Engl J Med 2019;381:1148"
+    ],
+    "nl": [
+     "B2.4(2)",
+     "3.3.26",
+     "2.3.13-3(12)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-04",
+  "title": "Sideroblastic anemia และพิษตะกั่ว — เหล็กมีแต่ใส่เข้า heme ไม่ได้",
+  "minutes": 14,
+  "summary": "ALAS2 (ต้องใช้ B6) หรือขั้นปลายของการสร้าง heme เสีย → เหล็กค้างใน mitochondria รอบนิวเคลียส = ringed sideroblast · iron ↑ ferritin ↑ TSAT ↑ · alcohol, isoniazid, copper deficiency, lead, MDS-RS · ตะกั่วล็อก ALAD + ferrochelatase + pyrimidine 5'-nucleotidase → basophilic stippling",
+  "source": "Williams Hematology 10th ed. (Sideroblastic anemias) · Hoffbrand 8th ed. · Bottomley SS, Fleming MD. Hematol Oncol Clin N Am 2014 · CDC lead guidance 2021 · AAP/CDC chelation recommendations (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "B1.6.5(2)",
+   "B1.7.6",
+   "2.3.18(7)",
+   "3.1.2",
+   "3.3.26",
+   "B2.3(2)"
+  ],
+  "md": "### ภาพรวม — เหล็กมี แต่ใส่เข้า heme ไม่ได้\nSideroblastic anemia = กลุ่มโรคที่ **สร้าง heme (หรือใช้เหล็กใน mitochondria) ไม่ได้** → เหล็กที่ส่งเข้า mitochondria ของ erythroblast **ไม่มีที่ไป** → สะสมเป็นวงรอบนิวเคลียส = **ringed sideroblast** · ต่างจาก IDA ตรงที่ **เหล็กในร่างกายเกิน** · แบ่งเป็น **hereditary** (พบน้อย, X-linked ALAS2 บ่อยสุด) และ **acquired** (พบบ่อยกว่า: **alcohol**, ยา, **copper deficiency**, **พิษตะกั่ว**, และ clonal = **MDS with ring sideroblasts/SF3B1**)\n\n### ไล่กลไก: เส้นทางสร้าง heme และจุดที่ขาด\n1. **Mitochondria**: glycine + succinyl-CoA → **ALA** โดย **ALAS2** (erythroid, rate-limiting) ซึ่งต้องใช้ **pyridoxal 5'-phosphate (vitamin B6)**\n2. **Cytosol**: ALA 2 โมเลกุล → **PBG** โดย **ALA dehydratase (ALAD, ต้องใช้ zinc)** → ... → coproporphyrinogen III\n3. **กลับเข้า mitochondria** → protoporphyrin IX → **ferrochelatase** ใส่ **Fe²⁺** → **heme**\n4. Heme + globin → Hb · heme ยังเป็นสัญญาณกด transferrin receptor และเปิดการแปลรหัส globin\n- จุดที่ขาดในแต่ละโรค:\n  - **ALAS2 mutation** (X-linked) / **ขาด B6** / **isoniazid** (จับ pyridoxal เป็น hydrazone) / **alcohol** (รบกวนการสร้าง PLP + พิษต่อ mitochondria) → ALA ไม่เกิด\n  - **Lead** → ALAD + ferrochelatase\n  - **Copper deficiency** → cytochrome c oxidase/การลำเลียงเหล็กใน mitochondria เสีย (มักพร้อม neutropenia)\n  - **Linezolid, chloramphenicol** → ยับยั้งการสร้างโปรตีนของ mitochondria\n  - **SF3B1** (MDS-RS) → splicing ของ ABCB7 (ตัวส่ง Fe–S ออกจาก mitochondria) ผิด\n\n### Ringed sideroblast และ iron overload — ทำไมเหล็กล้นทั้งที่ซีด\n- ไม่มี protoporphyrin รับ → เหล็กสะสมเป็น **mitochondrial ferritin** ใน mitochondria ที่ล้อมนิวเคลียส → ย้อม **Prussian blue** เห็น **≥ 5 เม็ด ล้อม ≥ 1/3 ของนิวเคลียส**\n- Erythroblast ที่บรรจุเหล็กเกิน → **ตายในไขกระดูก (ineffective erythropoiesis)** → EPO ↑ → **erythroferrone ↑ → hepcidin ↓** → ดูดซึมเหล็กเพิ่มทั้งที่เกินอยู่แล้ว → **iron overload แม้ไม่ได้ให้เลือด** → ตับ หัวใจ ต่อมไร้ท่อ\n- Heme น้อย → Hb สะสมช้า → แบ่งเกิน → **microcytic** (hereditary) · ใน MDS-RS/alcohol มักเป็น **normo/macrocytic** และเห็น **dimorphic** (เซลล์สองกลุ่ม)\n\n### พิษตะกั่ว — สามเอนไซม์ที่ถูกล็อก\n- แหล่ง: **โรงงานรีไซเคิลแบตเตอรี่**, ทาสี/ลอกสีเก่า, ตะกั่วในกระสุน/งานหลอม, ภาชนะเคลือบตะกั่ว, ยาแผนโบราณบางชนิด · **เด็กเล็กที่มี pica** ดูดซึมตะกั่วได้มากกว่าผู้ใหญ่หลายเท่า · ตะกั่วจับหมู่ **–SH** ของเอนไซม์\n1. **ALAD** ถูกยับยั้ง (ไวที่สุด) → **ALA สะสม** ในเลือด/ปัสสาวะ → ALA เป็นพิษต่อประสาท (คล้าย GABA) → ปวดท้อง (colic) และอาการทางระบบประสาท\n2. **Ferrochelatase** ถูกยับยั้ง → protoporphyrin IX ใส่ **zinc แทนเหล็ก** → **ZPP/FEP ↑** + เหล็กค้างใน mitochondria\n3. **Pyrimidine 5'-nucleotidase** ถูกยับยั้ง → ย่อย ribosomal RNA ใน reticulocyte ไม่ได้ → RNA จับกลุ่ม = **coarse basophilic stippling**\n- นอกเลือด: สมองบวม (**encephalopathy** ในเด็ก), **peripheral motor neuropathy** (**wrist/foot drop** ในผู้ใหญ่), **Burton line** (lead sulfide ที่เหงือก), **lead line** ที่ metaphysis, ไต (Fanconi, interstitial nephritis), **saturnine gout**, ความดันสูง\n\n### ทำไมถึงมีอาการแบบนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด อ่อนเพลีย | heme ↓ + ineffective erythropoiesis |\n| ตับโต หัวใจล้มเหลว เบาหวาน | iron overload จาก hepcidin ต่ำ (± ให้เลือด) |\n| Myeloneuropathy + neutropenia | copper deficiency (คล้าย B12 — แยกให้ได้) |\n| ปวดท้องบิด ท้องผูก | ALA สะสม + กล้ามเนื้อเรียบหดเกร็ง |\n| Wrist/foot drop | ตะกั่วทำลาย motor axon/myelin |\n| ซึม ชัก (เด็ก) | blood–brain barrier เสีย → สมองบวม |\n\n### ทำไมผลแล็บออกมาแบบนี้\n- **Serum iron ↑ · TSAT ↑ · ferritin ↑ · TIBC ปกติ/↓** — ตรงข้ามกับ IDA\n- MCV ต่ำ (hereditary, lead) หรือปกติ/สูง (MDS-RS, alcohol) · **RDW สูง, dimorphic**\n- Smear: **Pappenheimer bodies** (เม็ดเหล็กใน RBC) · lead → **coarse basophilic stippling**\n- Retic ต่ำ · ไขกระดูก: erythroid hyperplasia + **ringed sideroblast** (MDS-RS ≥ 15% หรือ ≥ 5% ถ้ามี SF3B1)\n- Lead: **venous blood lead level (BLL)** · ZPP ↑ · urine ALA ↑ · ฟิล์ม: lead line\n\n### วินิจฉัย\n- เห็น microcytic + **TSAT/ferritin สูง** → นึกถึง sideroblastic และ thalassemia (แยกด้วย Hb typing)\n- ซักเหล้า ยา (INH ไม่มี B6, linezolid), สังกะสีเสริม/ผ่าตัดกระเพาะ (**zinc ↑ → copper ↓**), อาชีพ, บ้านเก่า, เด็กกินดิน\n- ตรวจ copper/ceruloplasmin, BLL, ไขกระดูก + cytogenetics/SF3B1 ในผู้สูงอายุ, ALAS2 ในชายอายุน้อย\n- CDC ใช้ **blood lead reference value 3.5 µg/dL** ในเด็ก (ไม่มีระดับที่ปลอดภัย)\n\n### รักษาตามกลไก\n- **Pyridoxine 50–200 mg/วัน** — ALAS2 mutant บางชนิดจับ PLP ได้ไม่ดี เติมมากจึงทำงาน · INH-induced หายเมื่อเติม B6 (ป้องกันด้วย B6 10–50 mg/วันขณะใช้ INH)\n- หยุดเหล้า/ยา · **ให้ copper** (หยุดสังกะสี)\n- Iron overload: **phlebotomy** ถ้า Hb พอ · ไม่พอใช้ **deferasirox/deferoxamine** · ห้ามให้ธาตุเหล็ก\n- MDS-RS: ESA, **luspatercept** (ligand trap ของ TGF-β superfamily → erythroid เจริญระยะท้ายดีขึ้น), ให้เลือด\n- Lead: **เอาออกจากแหล่ง** เป็นอันดับแรก · เด็ก BLL **≥ 45 µg/dL** → **succimer (DMSA) กิน** · **≥ 70 หรือ encephalopathy** → **dimercaprol (BAL) + CaNa₂EDTA** (ให้ BAL ก่อน 4 ชม. เพื่อไม่ให้ EDTA ดึงตะกั่วเข้าสมอง) · ผู้ใหญ่พิจารณาตามอาการและ BLL\n\n### กับดักข้อสอบ\n- **Basophilic stippling** ไม่จำเพาะต่อ lead — พบใน thalassemia, alcohol ได้\n- Sideroblastic เป็น **microcytic ที่ iron สูง** · ACD ferritin สูงแต่ TSAT ต่ำ\n- Copper deficiency เลียนแบบ **MDS** และ **B12 deficiency**\n- INH ขาด B6 ทำทั้ง sideroblastic anemia และ peripheral neuropathy",
+  "pearls": [
+   "ALAS2 ต้องใช้ B6 · INH/alcohol/ALAS2 mutation ตัดขั้นแรก → ringed sideroblast",
+   "Sideroblastic = microcytic ที่ serum iron ↑ ferritin ↑ TSAT ↑ (ตรงข้าม IDA)",
+   "Ineffective erythropoiesis → erythroferrone ↑ → hepcidin ↓ → iron overload แม้ไม่ได้ให้เลือด",
+   "Lead ล็อก ALAD (ALA ↑) + ferrochelatase (ZPP ↑) + 5'-nucleotidase (basophilic stippling)",
+   "Zinc เสริมมาก/หลัง bariatric → copper ↓ → ซีด + neutropenia + myeloneuropathy คล้าย MDS",
+   "เด็ก BLL ≥ 45 → succimer · ≥ 70/encephalopathy → BAL + CaNa₂EDTA"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-10",
+    "kind": "mcq",
+    "topic": "Isoniazid-induced sideroblastic anemia",
+    "stem": "A 41-year-old man has been taking isoniazid for latent tuberculosis for 5 months without any vitamin supplement. He reports fatigue and tingling in his feet. Hb 9.0 g/dL, MCV 74 fL, RDW 19%, serum iron 210 µg/dL, transferrin saturation 68%, ferritin 640 ng/mL. Hb typing is normal. Bone marrow shows many ringed sideroblasts. Which enzyme step is primarily impaired?",
+    "choices": [
+     "Ferrochelatase insertion of iron into protoporphyrin IX",
+     "Thymidylate synthase conversion of dUMP to dTMP",
+     "Porphobilinogen deaminase in the cytosol",
+     "ALA synthase (ALAS2), which requires pyridoxal 5'-phosphate",
+     "Hepcidin-mediated release of iron through ferroportin"
+    ],
+    "answer": 3,
+    "explain": "**Isoniazid** จับ pyridoxal เกิดเป็น hydrazone และยับยั้ง pyridoxine kinase → **pyridoxal 5'-phosphate (PLP, vitamin B6 ที่ใช้งาน) ↓** · PLP เป็น cofactor ของ **ALAS2** ซึ่งเป็นขั้นแรกและ rate-limiting ของการสร้าง heme ใน mitochondria (glycine + succinyl-CoA → ALA)\n\nไม่มี ALA → ไม่มี protoporphyrin → เหล็กที่ transferrin ส่งเข้า mitochondria **ไม่มีที่ไป** → สะสมรอบนิวเคลียส = **ringed sideroblast** · heme น้อย → microcytic · ineffective erythropoiesis → hepcidin ↓ → **iron/ferritin/TSAT สูง** · ขาด B6 ยังทำ **peripheral neuropathy** (อาการชาเท้า) — รักษาด้วย pyridoxine และป้องกันด้วย B6 ระหว่างใช้ INH\n\n- **Ferrochelatase** ถูกยับยั้งในพิษตะกั่ว ไม่ใช่ INH\n- **Thymidylate synthase** = megaloblastic (macrocytic)\n- **PBG deaminase** = acute intermittent porphyria ไม่ทำซีดแบบนี้\n- **Hepcidin/ferroportin** ผิดใน ACD ซึ่ง TSAT ต่ำ",
+    "pearl": "INH → B6 ↓ → ALAS2 ทำงานไม่ได้ → sideroblastic anemia + neuropathy · ป้องกันด้วย B6",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Sideroblastic anemias",
+     "Bottomley SS, Fleming MD. Hematol Oncol Clin N Am 2014;28:653"
+    ],
+    "nl": [
+     "B1.7.1(4)",
+     "3.3.26",
+     "B2.3(2)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-11",
+    "kind": "mcq",
+    "topic": "Copper deficiency",
+    "stem": "A 54-year-old woman had Roux-en-Y gastric bypass 6 years ago and takes high-dose zinc supplements for hair loss. She has progressive gait unsteadiness and numb feet. Hb 8.7 g/dL, MCV 99 fL, ANC 900/µL, platelets 160,000/µL. Serum B12 and folate are normal. Bone marrow shows ringed sideroblasts and cytoplasmic vacuoles in myeloid and erythroid precursors. Which test is most likely to confirm the diagnosis?",
+    "choices": [
+     "Blood lead level",
+     "SF3B1 mutation analysis for myelodysplastic syndrome",
+     "Serum copper and ceruloplasmin",
+     "Methylmalonic acid level",
+     "Flow cytometry for CD55/CD59"
+    ],
+    "answer": 2,
+    "explain": "ภาพ **ซีด + neutropenia + myeloneuropathy (เดินเซ ชาเท้า) + ringed sideroblast + vacuole ใน precursor** หลังผ่าตัด bypass และกิน **zinc ขนาดสูง** = **copper deficiency**\n\nกลไก: zinc กระตุ้น **metallothionein** ใน enterocyte ซึ่งจับ copper ไว้และหลุดทิ้งไปกับเซลล์ → copper ดูดซึมไม่ได้ (bypass ตัด duodenum ซึ่งเป็นที่ดูดซึมด้วย) · copper จำเป็นต่อ **cytochrome c oxidase** ใน mitochondria และ **ceruloplasmin/hephaestin** (ferroxidase ที่ทำให้เหล็กออกจากเซลล์ได้) → เหล็กใช้ไม่ได้ ค้างใน mitochondria = ringed sideroblast · เส้นประสาทไขสันหลัง (dorsal column) เสื่อมคล้าย B12\n\n- **Lead** ทำ basophilic stippling ปวดท้อง wrist drop ไม่ทำ neutropenia + vacuole\n- **SF3B1/MDS** เป็นสิ่งที่ภาพนี้ **เลียนแบบ** — ต้องตัด copper deficiency ก่อนวินิจฉัย MDS เพราะรักษาหายได้\n- **MMA** ใช้ยืนยัน B12 ซึ่ง B12 ปกติแล้ว\n- **CD55/59** = PNH ไม่มี ringed sideroblast",
+    "pearl": "Zinc เกิน/หลัง bypass → copper ↓ → ซีด + neutropenia + myeloneuropathy + ringed sideroblast เลียนแบบ MDS",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — Sideroblastic anemias (acquired: copper deficiency)",
+     "Hoffbrand 8th ed. — Sideroblastic anaemia"
+    ],
+    "nl": [
+     "3.3.26",
+     "B2.3(2)",
+     "2.3.3(7)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-12",
+    "kind": "mcq",
+    "topic": "X-linked sideroblastic anemia",
+    "stem": "A 22-year-old man has lifelong mild anemia that never improved with oral iron. His maternal uncle had a similar problem and died of heart failure. Hb 9.4 g/dL, MCV 66 fL, RDW 21%, ferritin 910 ng/mL, transferrin saturation 78%, HbA2 2.6% and no abnormal hemoglobin on HPLC. Smear shows dimorphic red cells with Pappenheimer bodies. What is the most likely diagnosis and the first mechanism-directed treatment?",
+    "choices": [
+     "β-thalassemia trait; folic acid",
+     "Iron deficiency anemia; switch to intravenous iron",
+     "Hereditary hemochromatosis (HFE); regular phlebotomy alone",
+     "Anemia of inflammation; treat the underlying infection",
+     "X-linked sideroblastic anemia from ALAS2 mutation; a trial of pyridoxine plus management of iron overload"
+    ],
+    "answer": 4,
+    "explain": "Microcytic ตั้งแต่เด็ก + **ferritin และ TSAT สูงมาก** + Hb typing ปกติ + **dimorphic smear กับ Pappenheimer bodies** + ถ่ายทอดทางฝั่งแม่สู่ผู้ชาย (**X-linked**) = **X-linked sideroblastic anemia (ALAS2 mutation)** — สาเหตุ hereditary ที่พบบ่อยที่สุด\n\nALAS2 กลายพันธุ์หลายชนิด **จับ PLP ได้ไม่ดี** → ให้ **pyridoxine ขนาดสูง (50–200 mg/วัน)** ทำให้เอนไซม์ทำงานได้มากขึ้น Hb ขึ้นในผู้ป่วยส่วนหนึ่ง · ineffective erythropoiesis → hepcidin ต่ำ → **iron overload** (ญาติเสียชีวิตจากหัวใจล้มเหลวน่าจะจากเหล็กเกิน) → phlebotomy ถ้า Hb พอ หรือ iron chelation · **ห้ามให้ธาตุเหล็ก**\n\n- **β-thal trait** HbA2 สูง (> 3.5%) และไม่มี iron overload ระดับนี้\n- **IDA** ferritin ต่ำ\n- **HFE hemochromatosis** ไม่ทำ microcytic anemia\n- **ACD** TSAT ต่ำ",
+    "pearl": "Microcytic + TSAT สูง + ชายที่มีญาติฝั่งแม่ = นึกถึง ALAS2 → ลอง pyridoxine",
+    "src": "",
+    "ref": [
+     "Bottomley SS, Fleming MD. Hematol Oncol Clin N Am 2014;28:653",
+     "Williams Hematology 10th ed. — Sideroblastic anemias"
+    ],
+    "nl": [
+     "3.3.26",
+     "B1.3.4(2)",
+     "3.1.2"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-19",
+    "kind": "mcq",
+    "topic": "Lead poisoning in a child",
+    "stem": "A 3-year-old boy lives beside a small car-battery recycling shop. He has 2 weeks of abdominal pain, constipation and irritability but is alert with a normal neurologic examination. Hb 9.6 g/dL, MCV 70 fL; smear shows coarse basophilic stippling. Venous blood lead level is 52 µg/dL. Which management is most appropriate?",
+    "choices": [
+     "Intramuscular dimercaprol followed 4 hours later by CaNa₂EDTA in the intensive care unit",
+     "Remove him from the exposure source and start oral succimer",
+     "Intravenous deferoxamine for iron chelation",
+     "High-dose pyridoxine only",
+     "No treatment; repeat blood lead level in 3 months"
+    ],
+    "answer": 1,
+    "explain": "ตะกั่วจับหมู่ –SH ของเอนไซม์: ยับยั้ง **ALAD** (ALA สะสม → ปวดท้องบิด ท้องผูก พิษต่อประสาท), **ferrochelatase** (ZPP ↑, heme ↓ → microcytic) และ **pyrimidine 5'-nucleotidase** (ribosomal RNA จับกลุ่ม → **coarse basophilic stippling**)\n\nแนวทางในเด็ก (CDC/AAP): ขั้นแรกเสมอคือ **เอาเด็กออกจากแหล่งตะกั่ว** · **BLL 45–69 µg/dL โดยไม่มี encephalopathy → succimer (DMSA) ทางปาก** · **BLL ≥ 70 หรือมี encephalopathy → dimercaprol (BAL) + CaNa₂EDTA** ในโรงพยาบาล (BAL ก่อน ~4 ชม. เพื่อไม่ให้ EDTA ดึงตะกั่วเข้าสมอง) — First Aid: \"It sucks to be a kid who eats lead\"\n\n- BAL + EDTA เกินความจำเป็นในเด็กที่ BLL 52 และระบบประสาทปกติ\n- **Deferoxamine** ใช้จับเหล็ก ไม่ใช่ตะกั่ว\n- Pyridoxine ใช้ใน ALAS2/INH ไม่ได้รักษาพิษตะกั่ว\n- BLL 52 สูงเกินกว่าจะเฝ้าดู — และต้องหยุดการสัมผัสทันที",
+    "pearl": "เด็ก BLL ≥ 45 → succimer · ≥ 70 หรือ encephalopathy → BAL + CaNa₂EDTA · เอาออกจากแหล่งก่อนเสมอ",
+    "src": "",
+    "ref": [
+     "CDC Childhood Lead Poisoning Prevention — Recommended actions based on blood lead level (2021)",
+     "First Aid for the USMLE Step 1 — Lead poisoning"
+    ],
+    "nl": [
+     "B1.6.5(2)",
+     "B1.7.6",
+     "2.3.18(7)",
+     "3.1.2"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-05",
+  "title": "α-thalassemia — ยีนหายทีละตัว จาก silent carrier ถึง Hb Bart's hydrops",
+  "minutes": 13,
+  "summary": "ยีน α 4 ตัวบนโครโมโซม 16 · ขาด 1 = silent · 2 = trait · 3 = HbH (β4 ตกตะกอน → แตกในม้าม) · 4 = Hb Bart's (γ4 ปล่อย O2 ไม่ได้ → hydrops) · --SEA เป็น cis จึงเกิด Bart's ได้ · Hb Constant Spring = mRNA ไม่เสถียร",
+  "source": "Williams Hematology 10th ed. · Hoffbrand 8th ed. · Thalassaemia International Federation — Guidelines for NTDT (2nd ed., 2017) · Fucharoen S, Winichagoon P. Hemoglobin 2011 (thalassemia ในประเทศไทย) · แนวทางคัดกรองคู่เสี่ยงธาลัสซีเมียของกรมอนามัย (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3(8)",
+   "B2.2.1(1)",
+   "3.3.5",
+   "B2.3(4)",
+   "B1.3.4(1)",
+   "B1.3.4(2)"
+  ],
+  "md": "### ภาพรวม — ยีน α สี่ตัวและบริบทไทย\nยีน **HBA1 และ HBA2** อยู่บน **โครโมโซม 16** ข้างละ 2 ตัว รวม **4 ตัว (αα/αα)** · α-globin ใช้ทั้งในทารกในครรภ์ (**HbF = α2γ2**) และผู้ใหญ่ (**HbA = α2β2**, HbA2 = α2δ2) → α-thal จึง **มีผลตั้งแต่ในครรภ์** ต่างจาก β-thal\nกลไกส่วนใหญ่เป็น **การขาดหายของยีน (deletion)** ไม่ใช่ point mutation\n- **α⁰ (α-thal 1)**: ยีนสองตัวบนโครโมโซมเดียวกันหาย (**--/** แบบ **cis**) เช่น **--SEA, --THAI** — พบมากในเอเชียตะวันออกเฉียงใต้\n- **α⁺ (α-thal 2)**: หายหนึ่งตัว (**-α**) เช่น -α3.7, -α4.2\n- **Non-deletional**: **Hb Constant Spring (αCSα)**, Hb Paksé\n- ในไทย: พาหะ α-thal 1 ~5–10% (ภาคเหนือสูงกว่า), α-thal 2 ~10–20%, HbCS ~1–8% · Hb Bart's hydrops เป็นหนึ่งในสามโรคเป้าหมายของโครงการป้องกันธาลัสซีเมียรุนแรงในไทย\n\n### ไล่กลไก: ยิ่งขาด α ยิ่งเหลือ β/γ จับกันเองเป็นสี่ตัว\n| จีโนไทป์ | ยีนที่เหลือ | ชื่อ | ภาพทางคลินิก |\n|---|---|---|---|\n| -α/αα | 3 | silent carrier (α-thal 2 trait) | ปกติ · MCV ปกติ/ต่ำนิด |\n| --/αα (cis) หรือ -α/-α (trans) | 2 | α-thal trait | ซีดน้อยหรือไม่ซีด · MCV/MCH ต่ำ |\n| --/-α หรือ --/αCSα | 1 (หรือ CS) | **HbH disease** (HbH-CS รุนแรงกว่า) | hemolytic anemia ปานกลาง ม้ามโต |\n| --/-- | 0 | **Hb Bart's hydrops fetalis** | เสียชีวิตในครรภ์/หลังคลอดไม่นาน |\n1. α ขาด → **β (หรือ γ ในทารก) ไม่มีคู่** → ต่างจาก α อิสระใน β-thal ตรงที่ β/γ **จับกันเองเป็น tetramer ที่ละลายได้**: **γ4 = Hb Bart's**, **β4 = HbH**\n2. Tetramer เหล่านี้ **ไม่มี heme–heme interaction และไม่มี Bohr effect** → **O2 affinity สูงมาก** (จับแน่นแต่ไม่ปล่อย) = Hb ที่ใช้ขนส่ง O2 ไม่ได้\n3. **HbH ไม่เสถียร** → เมื่อ RBC แก่หรือเจอ oxidant (ไข้ ยา) → **ตกตะกอนเป็น inclusion** เกาะ membrane → เซลล์แข็ง → **ม้ามเก็บกิน (extravascular hemolysis)** ± แตกเฉียบพลัน · ineffective erythropoiesis มีน้อยกว่า β-thal (เพราะ β4 ไม่ตกตะกอนในไขกระดูกมากเท่า α อิสระ)\n4. **Hb Bart's (--/--)**: ไม่มี α เลย → ไม่มีทั้ง HbF และ HbA → มีแต่ γ4 + embryonic **Hb Portland (ζ2γ2)** ที่พยุงชีวิตได้ถึงกลางการตั้งครรภ์ → **เนื้อเยื่อขาด O2 รุนแรง → high-output heart failure → hydrops** (บวมน้ำทั้งตัว ท้องมาน รกหนา ตับม้ามโตจาก extramedullary hematopoiesis)\n5. **ทำไม cis สำคัญ**: พ่อแม่ที่เป็น --/αα ทั้งคู่ ส่ง \"--\" ให้ลูกได้ → **ลูก 25% เป็น --/--** · ส่วน -α/-α (trans) ส่งได้แค่ -α → ไม่เกิด Bart's\n\n### Hb Constant Spring — ไม่ได้ขาดยีนแต่ mRNA ไม่เสถียร\n- จุดกลายที่ **stop codon ของ α2 (UAA → CAA)** → ribosome อ่านเลยต่อไปใน 3'UTR → α-chain **ยาวขึ้น 31 กรดอะมิโน**\n- ribosome วิ่งเข้า 3'UTR → รบกวน complex ที่ทำให้ mRNA เสถียร → mRNA ถูกทำลายเร็ว → ได้ α^CS เพียง **~1–2%** ของปกติ = ทำตัวเหมือน **α⁺ ที่รุนแรง** · โปรตีนที่ยาวยังไม่เสถียร เกาะ membrane → RBC บวมน้ำ MCV ไม่ต่ำเท่า\n- **HbH-CS (--/αCSα)** จึง **ซีดมากกว่า HbH แบบ deletion** (Hb ต่ำกว่า ม้ามโตกว่า แตกเฉียบพลันบ่อยกว่า บางรายต้องให้เลือดประจำ)\n\n### ทำไมถึงมีอาการแบบนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| Trait: ไม่มีอาการ แต่ MCV ต่ำ | α น้อยลง → Hb สะสมช้า → แบ่งเกิน |\n| HbH: ซีดปานกลาง ดีซ่าน **ม้ามโต** นิ่ว | β4 ตกตะกอน → ม้ามเก็บ → bilirubin ↑ |\n| HbH: ซีดลงเฉียบพลันเวลามีไข้/ได้ยา oxidant | oxidant ทำ HbH ตกตะกอนเร็ว + hemolysis แบบ intravascular ร่วม |\n| HbH: เหล็กเกินได้แม้ไม่ค่อยให้เลือด | erythropoiesis เร่ง → hepcidin ↓ → ดูดซึมเพิ่ม |\n| Bart's: hydrops, ตับม้ามโต, รกใหญ่ | γ4 ปล่อย O2 ไม่ได้ → ขาด O2 → หัวใจล้มเหลว + EMH |\n| แม่ที่ตั้งครรภ์ Bart's: ความดันสูง บวม (**mirror syndrome**) ตกเลือดหลังคลอด | รกใหญ่ผิดปกติ + ภาวะแทรกซ้อนทางสูติกรรม |\n\n### ทำไมผลแล็บออกมาแบบนี้\n- **Trait**: MCV < 80, MCH < 27 · RBC ปกติ/สูง · RDW ไม่สูงมาก · ferritin ปกติ · **Hb typing ปกติ** (HbA2 ปกติ/ต่ำ) → **ยืนยันด้วย DNA (PCR หา --SEA/--THAI)**\n- **HbH**: Hb 7–10 g/dL · retic ↑ (~5–10%) · smear: microcytic hypochromic, target, poikilocyte · **brilliant cresyl blue (supravital) เห็น HbH inclusion แบบ \"golf ball\"** · Hb typing: **HbH (fast-moving band) ~5–30%** ± HbCS band เล็ก ๆ\n- **แรกเกิด**: Hb Bart's ในเลือดสายสะดือสะท้อนจำนวนยีนที่หาย (ยิ่งมากยิ่งหายมาก) · **Bart's hydrops**: Hb Bart's เด่น ไม่มี HbA/HbF\n- Hemolysis: indirect bilirubin ↑, LDH ↑, haptoglobin ↓ (ใน HbH)\n\n### วินิจฉัยและการคัดกรองคู่สมรสในไทย\n- คัดกรองหญิงตั้งครรภ์และสามี: **MCV < 80 fL หรือ MCH < 27 pg** (หรือ **OF test** บวก) → คัดกรอง α⁰/β-thal · **DCIP** → คัดกรอง HbE\n- ผลบวกทั้งคู่ → **Hb typing + PCR α-thal 1** → ถ้าเป็นคู่เสี่ยง --/αα × --/αα → ให้คำปรึกษา **prenatal diagnosis** (CVS, amniocentesis, cordocentesis) ± อัลตราซาวด์ (cardiothoracic ratio โต, รกหนา, MCA-PSV สูง)\n- กับดัก: **IDA ร่วม** ทำ MCV ต่ำเหมือนกัน · Hb typing ปกติ **ไม่ได้ตัด α-thal trait** · HbCS แถบเล็ก อาจหลุดถ้าไม่ตั้งใจหา\n\n### รักษาตามกลไก\n- **Silent/trait**: ไม่ต้องรักษา · **อย่าให้ธาตุเหล็กโดยไม่มีหลักฐานขาด** · ให้คำปรึกษาทางพันธุกรรม\n- **HbH/HbH-CS**: **folic acid** (โรงงานทำงานเร่ง) · เลี่ยงยา oxidant · รักษาไข้/ติดเชื้อเร็ว · **ให้เลือดช่วงวิกฤต** (HbH-CS บางรายต้องประจำ) · ตรวจ ferritin/iron overload → **chelation** ถ้าเกิน · **splenectomy** ในรายที่ม้ามโตมาก/hypersplenism (เสี่ยง thrombosis และติดเชื้อ)\n- **Hb Bart's**: เน้น **ป้องกัน** ด้วยการคัดกรองและวินิจฉัยก่อนคลอด · ทางเลือกยุติการตั้งครรภ์ · การให้เลือดในครรภ์แล้วตามด้วยให้เลือดตลอดชีวิต/HSCT ทำได้ในบางศูนย์\n- **Hb Bart's เป็นอันตรายต่อแม่ด้วย** → ส่งต่อดูแลครรภ์เสี่ยงสูง\n\n### กับดักข้อสอบ\n- **γ4 = Bart's (ทารก) · β4 = HbH (ผู้ใหญ่)** — อย่าสลับ\n- **cis (--/αα) เท่านั้นที่ทำให้ลูกเป็น Bart's** · -α/-α ไม่มีความเสี่ยงนี้\n- α-thal trait: **Hb typing ปกติ** ต้องใช้ DNA · β-thal trait: HbA2 สูง\n- HbH ใน **ผู้ใหญ่** ที่ซีดลงเฉียบพลันตอนมีไข้ = hemolytic crisis ไม่ใช่ขาดเหล็ก",
+  "pearls": [
+   "ยีน α 4 ตัว (โครโมโซม 16): ขาด 1 silent · 2 trait · 3 HbH · 4 Hb Bart's hydrops",
+   "γ4 = Hb Bart's · β4 = HbH — O2 affinity สูงมาก ไม่มี Bohr effect ใช้ขนส่ง O2 ไม่ได้",
+   "HbH ตกตะกอน (golf ball ใน supravital stain) → ม้ามเก็บ → hemolysis เด่นกว่า ineffective erythropoiesis",
+   "--SEA (cis α⁰) พบมากในไทย → คู่ --/αα × --/αα มีโอกาสลูก Bart's 25%",
+   "Hb Constant Spring = stop codon α2 กลาย → mRNA ไม่เสถียร → HbH-CS รุนแรงกว่า HbH",
+   "α-thal trait Hb typing ปกติ → ยืนยันด้วย PCR"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-13",
+    "kind": "mcq",
+    "topic": "Genetic risk of Hb Bart's",
+    "stem": "A Thai couple attends their first antenatal visit at 9 weeks. Both have MCV about 68 fL and normal ferritin. Hemoglobin typing in both is A2A with HbA2 2.4%. PCR shows that each partner is heterozygous for the --SEA deletion (--SEA/αα). Which statement about this pregnancy is correct?",
+    "choices": [
+     "There is no risk to the fetus because both parents have normal hemoglobin typing",
+     "The fetus has a 50% risk of HbH disease",
+     "The fetus can at most inherit α-thalassemia trait, because each parent has two functioning α genes",
+     "The fetus has a 25% risk of Hb Bart's hydrops fetalis, so prenatal diagnosis should be offered",
+     "The fetus has a 25% risk of β-thalassemia major"
+    ],
+    "answer": 3,
+    "explain": "--SEA เป็น **α⁰ แบบ cis** — ยีน α ทั้งสองตัวบนโครโมโซม 16 ข้างเดียวกันหายไป · พ่อแม่ --/αα แต่ละคนส่งโครโมโซม \"--\" ให้ลูกได้ 50% → ลูก **25% เป็น --/--** = **Hb Bart's hydrops fetalis** (ไม่มี α → มีแต่ γ4 ที่จับ O2 แน่นจนปล่อยไม่ได้ → ขาด O2 → หัวใจล้มเหลว → hydrops) · 50% เป็นพาหะ (--/αα) · 25% ปกติ\n\nคู่นี้เป็น **คู่เสี่ยง** ตามโครงการป้องกันธาลัสซีเมียรุนแรงของไทย → ให้คำปรึกษาและเสนอ **prenatal diagnosis** (CVS/amniocentesis) และติดตามอัลตราซาวด์\n\n- **Hb typing ปกติไม่ได้ตัด α-thal trait** — HbA2 ปกติหรือต่ำ ต้องใช้ DNA\n- HbH (--/-α) ต้องมีพ่อหรือแม่ส่ง -α ซึ่งคู่นี้ไม่มี\n- ทั้งคู่มี α ทำงาน 2 ตัว แต่ **อยู่บนโครโมโซมเดียวกัน** ลูกจึงได้ 0 ตัวได้\n- ไม่มีข้อมูลว่าใครเป็นพาหะ β-thal (HbA2 ปกติ)",
+    "pearl": "α⁰ แบบ cis (--SEA) × α⁰ แบบ cis = ลูก 25% Hb Bart's · Hb typing ปกติไม่ตัด α-thal",
+    "src": "",
+    "ref": [
+     "Fucharoen S, Winichagoon P. Hemoglobin 2011;35:419",
+     "Williams Hematology 10th ed. — The thalassemias"
+    ],
+    "nl": [
+     "2.3.3(8)",
+     "B1.3.4(2)",
+     "B1.3.4(1)",
+     "2.3.15-3(11)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-14",
+    "kind": "mcq",
+    "topic": "HbH disease pathophysiology",
+    "stem": "A 26-year-old Thai woman with known HbH-Constant Spring disease presents with fever from pyelonephritis. Her usual Hb is 8.0 g/dL; now it is 5.4 g/dL with dark urine, jaundice and reticulocytes 12%. A brilliant cresyl blue preparation shows many cells with evenly distributed 'golf-ball' inclusions. What is the main mechanism of her anemia?",
+    "choices": [
+     "Unstable β4 tetramers precipitate under oxidant stress, damaging the membrane and causing splenic removal plus some intravascular hemolysis",
+     "Excess free α chains precipitate inside erythroblasts, causing mainly intramedullary apoptosis",
+     "Autoantibody-coated red cells are removed by splenic macrophages",
+     "Parvovirus B19 infection has stopped red cell production",
+     "γ4 tetramers bind oxygen so tightly that tissue hypoxia develops"
+    ],
+    "answer": 0,
+    "explain": "HbH-CS (--/αCSα) มี α น้อยมาก → **β เกินจับกันเองเป็น β4 = HbH** ซึ่ง **ไม่เสถียร** · ไข้/การติดเชื้อสร้าง **oxidant stress** → HbH ตกตะกอนเป็น inclusion เกาะ membrane → เซลล์แข็ง เสีย deformability → **ม้ามเก็บกิน** และบางส่วน **แตกในหลอดเลือด** (ปัสสาวะสีเข้ม) = **acute hemolytic crisis** · retic 12% แสดงว่าไขกระดูกยังตอบสนอง · inclusion ที่ย้อม **supravital (brilliant cresyl blue)** กระจายทั่วเซลล์แบบ \"golf ball\" เป็นลักษณะเฉพาะของ HbH\n\n- **α อิสระตกตะกอนในไขกระดูก** = กลไกของ **β-thalassemia** (ineffective erythropoiesis เด่น)\n- **Autoantibody** = AIHA ต้องมี DAT บวก ไม่ใช่ inclusion\n- **Parvovirus B19** ทำ retic **ต่ำมาก** ไม่ใช่ 12%\n- **γ4 (Hb Bart's)** เป็นปัญหาในทารกในครรภ์",
+    "pearl": "HbH = β4 ไม่เสถียร → ตกตะกอนเมื่อเจอ oxidant → hemolytic crisis ตอนมีไข้",
+    "src": "",
+    "ref": [
+     "Thalassaemia International Federation. Guidelines for the management of NTDT, 2nd ed. 2017",
+     "Hoffbrand 8th ed. — Genetic disorders of haemoglobin"
+    ],
+    "nl": [
+     "2.3.3(8)",
+     "B2.2.1(1)",
+     "2.2.18",
+     "3.1.2"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-15",
+    "kind": "mcq",
+    "topic": "Hb Bart's hydrops fetalis",
+    "stem": "At 28 weeks of gestation, ultrasound of a fetus of a Thai couple who both carry α⁰-thalassemia shows cardiomegaly, ascites, skin edema and a thick placenta. Cordocentesis shows Hb 5 g/dL composed mainly of Hb Bart's with no HbA or HbF. Which mechanism best explains the fetal hydrops?",
+    "choices": [
+     "Free α chains precipitate in erythroblasts, causing ineffective erythropoiesis",
+     "Maternal anti-D antibodies cross the placenta and destroy fetal red cells",
+     "γ4 tetramers lack cooperativity and the Bohr effect, so they have a very high oxygen affinity and do not release oxygen to tissues, causing hypoxic high-output cardiac failure",
+     "Hb Bart's polymerizes when deoxygenated and occludes placental vessels",
+     "Absent β-chain synthesis prevents the switch from fetal to adult hemoglobin"
+    ],
+    "answer": 2,
+    "explain": "ทารก --/-- **ไม่มี α-globin เลย** → สร้าง HbF (α2γ2) และ HbA (α2β2) ไม่ได้ · γ ที่เหลือจับกันเองเป็น **γ4 = Hb Bart's** ซึ่ง **ไม่มี heme–heme interaction (cooperativity) และไม่มี Bohr effect** → O2 dissociation curve เป็นรูป hyperbola ที่เลื่อนไปซ้ายมาก → **จับ O2 แน่นแต่ไม่ปล่อยให้เนื้อเยื่อ** · ทารกรอดได้ถึงกลางการตั้งครรภ์ด้วย embryonic **Hb Portland (ζ2γ2)** แต่เมื่อ ζ หยุดสร้าง → **ขาด O2 รุนแรง + ซีด** → cardiac output เพิ่มชดเชยจนหัวใจโตและล้มเหลว → **hydrops** · ตับม้ามโตจาก extramedullary hematopoiesis และรกหนา\n\n- **α อิสระตกตะกอน** = β-thalassemia (ทารกนี้ไม่มี α เลย)\n- **Anti-D** = hemolytic disease of the newborn (Rh) ไม่ใช่ Hb Bart's\n- **Polymerization** เป็นคุณสมบัติของ HbS ไม่ใช่ γ4\n- การขาด β ไม่มีผลในครรภ์ เพราะทารกใช้ γ เป็นหลัก — β-thal major จึงแสดงอาการหลัง 6 เดือน",
+    "pearl": "Hb Bart's (γ4) ปล่อย O2 ไม่ได้ → ขาด O2 → high-output heart failure → hydrops",
+    "src": "",
+    "ref": [
+     "Williams Hematology 10th ed. — The thalassemias",
+     "Hoffbrand 8th ed. — Genetic disorders of haemoglobin"
+    ],
+    "nl": [
+     "2.3.3(8)",
+     "B2.2.1(1)",
+     "2.3.15-3(11)",
+     "B1.3.4(1)"
+    ]
+   }
+  ],
+  "figs": {}
+ },
+ {
+  "id": "hon-anm-06",
+  "title": "β-thalassemia และ HbE — α-chain ที่ไม่มีคู่ ไขกระดูกขยาย และเหล็กเกินจาก hepcidin ต่ำ",
+  "minutes": 15,
+  "summary": "β⁰/β⁺ → α อิสระตกตะกอนใน erythroblast → ineffective erythropoiesis → EPO ↑ ไขกระดูกขยาย + EMH → erythroferrone ↑ hepcidin ↓ → เหล็กเกินแม้ไม่ให้เลือด · HbE = codon 26 สร้าง cryptic splice site (β⁺ อ่อน) · HbE/β⁰ พบมากในไทย · Mentzer ใช้คร่าว ๆ เท่านั้น",
+  "source": "Thalassaemia International Federation — Guidelines for the management of TDT (4th ed., 2021) และ NTDT (2nd ed., 2017) · Taher AT, Musallam KM, Cappellini MD. NEJM 2021 · Fucharoen S, Weatherall DJ. Cold Spring Harb Perspect Med 2012 (HbE/β-thal) · Williams Hematology 10th ed. (ไม่มีสไลด์อาจารย์ — คาบ 9 พ.ย. ยังไม่ถึง)",
+  "nl": [
+   "2.3.3(8)",
+   "B2.2.1(1)",
+   "B2.2.1(2)",
+   "3.3.5",
+   "B2.3(4)",
+   "B2.4(2)",
+   "B2.4(1)"
+  ],
+  "md": "### ภาพรวม — β-thalassemia และ HbE ในประเทศไทย\nยีน **HBB** อยู่บน **โครโมโซม 11** ข้างละ 1 ตัว · กลไกส่วนใหญ่เป็น **point mutation (> 300 ชนิด)** → **β⁰** (ไม่สร้างเลย) หรือ **β⁺** (สร้างน้อย) · ในไทยพบบ่อย: codon 41/42 (−TTCT), codon 17 (A→T), IVS-I-1, −28 (A→G)\n**HbE** (β^E, codon 26 GAG→AAG, Glu→Lys) พบสูงสุดในโลกที่ **ภาคอีสาน (ถึง ~50% ในบางพื้นที่)** · **HbE/β⁰-thalassemia** เป็นธาลัสซีเมียรุนแรงที่พบบ่อยที่สุดในไทย และเป็นเป้าหมายการคัดกรองคู่สมรสร่วมกับ β-thal major และ Hb Bart's\n- **β-thal trait** (β/β⁰, β/β⁺) — ไม่ค่อยซีด microcytic · **β-thal major** (β⁰/β⁰) — ซีดรุนแรงหลังอายุ **6 เดือน–2 ปี** เมื่อ γ → β switch · ต้องให้เลือดประจำ (**TDT**) · **NTDT** (β-thal intermedia, HbE/β ส่วนใหญ่, HbH) — ไม่ต้องให้เลือดประจำ แต่มีภาวะแทรกซ้อนสะสม\n\n### ไล่กลไก: α-chain ที่ไม่มีคู่คือตัวร้าย\n1. β ↓ → **α-chain เกินและไม่มีคู่** — α อิสระ **ไม่ละลาย** (ต่างจาก β4/γ4 ใน α-thal)\n2. α อิสระ → **ตกตะกอนใน erythroblast** + heme/เหล็กที่หลุดสร้าง **ROS (hemichrome)** → ทำลาย membrane และโปรตีน → **apoptosis ในไขกระดูก** = **ineffective erythropoiesis** (60–80% ของ erythroblast ตายก่อนออกมา) — กลไกหลัก\n3. เซลล์ที่รอดมี inclusion → **ม้ามเก็บกิน** (extravascular hemolysis) → ม้ามโต → hypersplenism ยิ่งซีด\n4. ซีด + ขาด O2 → **EPO ↑↑** → ไขกระดูกขยาย 5–10 เท่า → **กระดูกหน้า/กะโหลกผิดรูป** (frontal bossing, กระดูกขากรรไกรบนนูน = thalassemic facies, ฟิล์มกะโหลก \"hair-on-end\"), กระดูกบาง หักง่าย\n5. **Extramedullary hematopoiesis** → **ตับม้ามโต**, ก้อนข้างกระดูกสันหลัง (กดไขสันหลังได้)\n6. Erythroblast จำนวนมหาศาล → หลั่ง **erythroferrone (ERFE)** → **hepcidin ↓** → ferroportin เปิด → **ดูดซึมเหล็กเพิ่ม 3–5 เท่า** → **iron overload แม้ไม่ได้ให้เลือด (NTDT)** + เลือดแต่ละยูนิตมีเหล็ก ~200–250 mg (TDT)\n7. Transferrin อิ่ม → **non-transferrin-bound iron (NTBI)** เข้าเซลล์หัวใจ ตับ ต่อมไร้ท่อผ่าน calcium channel → ROS → **cardiomyopathy (สาเหตุตายหลัก)**, ตับแข็ง, hypogonadism, เบาหวาน, hypothyroid, ตัวเตี้ย\n- ตัวปรับความรุนแรง: **α-thal ร่วม** (α เกินน้อยลง → อาการเบาลง) · ยีนที่ทำให้ **HbF สูง** (XmnI-Gγ, BCL11A) → γ มาจับ α อิสระ\n\n### HbE — mutation เดียวที่ทั้ง \"ผิดรูป\" และ \"สร้างน้อย\"\n- GAG→AAG ที่ codon 26 **สร้าง cryptic splice site** ใน exon 1 → mRNA ส่วนหนึ่งถูกตัดต่อผิดและใช้ไม่ได้ → β^E ที่สร้างได้ **น้อยลง = β⁺ ชนิดอ่อน**\n- โปรตีน β^E (Glu→Lys) **ไม่เสถียรเล็กน้อย** เมื่อเจอ oxidant\n- **HbE trait (AE)**: HbE ~25–30% ไม่ซีด MCV ต่ำเล็กน้อย · **HbE homozygous (EE)**: HbE ~85–95% ซีดน้อยหรือไม่ซีด target cell มาก\n- **HbE/β⁰**: β^E ที่สร้างได้น้อยไม่พอจับ α → ภาพเหมือน β-thal: **Hb 3–9 g/dL** ความรุนแรงกว้างมาก (บางรายเหมือน major บางรายแทบไม่ต้องให้เลือด)\n\n### ทำไมถึงมีอาการแบบนี้\n| อาการ/สิ่งตรวจพบ | กลไก |\n|---|---|\n| ซีด ดีซ่าน นิ่วในถุงน้ำดี | ineffective erythropoiesis + hemolysis → bilirubin ↑ |\n| ตับม้ามโต | EMH + ม้ามเก็บเซลล์มี inclusion |\n| Thalassemic facies, กระดูกหักง่าย | ไขกระดูกขยายจาก EPO สูง |\n| ตัวเตี้ย ไม่มีประจำเดือน เบาหวาน | iron overload ที่ต่อมใต้สมอง/ตับอ่อน + ซีดเรื้อรัง |\n| หัวใจล้มเหลว หัวใจเต้นผิดจังหวะ | เหล็กสะสมในกล้ามเนื้อหัวใจ (T2* ต่ำ) |\n| ลิ่มเลือด, pulmonary hypertension (หลังตัดม้าม) | RBC ผิดปกติแสดง phosphatidylserine + เกล็ดเลือดสูง |\n| ขาบวมแผล, ก้อนข้างกระดูกสันหลัง | ขาด O2 เรื้อรัง · EMH |\n\n### ทำไมผลแล็บออกมาแบบนี้\n- **MCV/MCH ต่ำมาก** · RBC ปกติ/สูง (trait) · smear: **target cell**, microcytic hypochromic, **basophilic stippling**, **nucleated RBC** (มากหลังตัดม้าม), teardrop\n- **Retic สูงไม่สมกับความซีด** เพราะเซลล์ตายในไขกระดูกก่อนออก\n- **Hb typing (HPLC/capillary electrophoresis)**:\n  - **β-thal trait: HbA2 > 3.5%** (δ จับ α ที่เหลือ) ± HbF สูงเล็กน้อย\n  - **β-thal major (β⁰/β⁰)**: **ไม่มี HbA**, HbF สูงมาก (> 90%), HbA2 ปกติ/สูง\n  - **HbE/β⁰**: HbE + **HbF 30–60%** ไม่มี HbA · บน HPLC **HbE ออกที่ช่องเดียวกับ HbA2** (รายงาน \"A2/E\")\n- Ferritin ↑ TSAT ↑ · indirect bilirubin ↑ LDH ↑ · MRI **T2*** (หัวใจ < 20 ms = มีเหล็ก) และ **LIC**\n\n### วินิจฉัย — Hb typing, DNA และ Mentzer index\n- **Mentzer index = MCV ÷ RBC (ล้าน/µL)** · **< 13 ชี้ thal trait** (สร้างเซลล์เล็กจำนวนมาก) · **> 13 ชี้ IDA** (สร้างน้อยและเล็ก)\n  - **ข้อจำกัด**: ความไว/ความจำเพาะไม่สูง · ใช้ไม่ได้ดีใน **เด็ก หญิงตั้งครรภ์ ภาวะผสม** · ในไทยที่มี **α-thal + HbE + IDA ซ้อนกัน** → **ใช้คัดกรองคร่าว ๆ ห้ามแทน Hb typing/DNA**\n- **IDA กด HbA2 ลง** → β-thal trait อาจดู HbA2 ปกติ → เติมเหล็กก่อนแล้วตรวจซ้ำ หรือส่ง DNA\n- ให้เลือดมาก่อน → Hb typing มี HbA จากผู้บริจาค → ใช้ DNA\n- คัดกรองคู่สมรส: MCV/MCH หรือ OF test + **DCIP** (HbE) → Hb typing → DNA → prenatal diagnosis\n\n### รักษาตามกลไก\n- **TDT**: ให้เลือดทุก 2–5 สัปดาห์ **คง Hb ก่อนให้ 9.5–10.5 g/dL** (11–12 ถ้ามีโรคหัวใจ) → กด EPO ไขกระดูกหยุดขยาย EMH หด ดูดซึมเหล็กลด · ให้ต่ำกว่านี้ = ไขกระดูกขยายต่อ\n- **Iron chelation**: เริ่มเมื่อ **ferritin > 1,000 ng/mL หรือให้เลือด ~10–20 ยูนิต** หรือ LIC ≥ 3 mg/g\n  - **Deferoxamine** SC 8–12 ชม. 5–7 คืน/สัปดาห์ (ระวังการได้ยิน ตา Yersinia)\n  - **Deferiprone** กิน 75–100 mg/kg/วัน แบ่ง 3 (เข้าหัวใจดี · **agranulocytosis** → CBC ทุกสัปดาห์) — ผลิตในไทย\n  - **Deferasirox** กินวันละครั้ง (ระวังไต ตับ)\n- **Folic acid** · **Splenectomy** เมื่อ hypersplenism/ต้องให้เลือดมากผิดปกติ (วัคซีน + ระวังลิ่มเลือด)\n- **HSCT** (HLA-matched) = รักษาหายขาด · **Gene therapy** (betibeglogene, exagamglogene ที่แก้ BCL11A enhancer → HbF ↑)\n- **Luspatercept** (activin receptor ligand trap → เซลล์ระยะท้ายเจริญดีขึ้น) ลดความต้องการเลือด · **Hydroxyurea** เพิ่ม HbF ใน HbE/β บางราย\n- NTDT: ตรวจ iron overload แม้ไม่ค่อยให้เลือด (ferritin ≥ 800 → chelation) · **อย่าให้ธาตุเหล็กโดยไม่มีหลักฐานขาด**\n\n### กับดักข้อสอบ\n- β-thal major **ไม่มีอาการแรกเกิด** (ยังใช้ HbF) · Bart's มีอาการในครรภ์\n- **NTDT ไม่ให้เลือดก็ iron overload ได้** (hepcidin ต่ำ)\n- HbE ปน HbA2 บน HPLC — ค่า \"A2\" 25–30% = HbE ไม่ใช่ β-thal trait\n- Mentzer < 13 ไม่ได้วินิจฉัย thal · ferritin ต่ำร่วมได้",
+  "pearls": [
+   "β ↓ → α อิสระไม่ละลาย ตกตะกอนใน erythroblast → ineffective erythropoiesis คือกลไกหลัก",
+   "EPO ↑ → ไขกระดูกขยาย (facies, hair-on-end) + EMH (ตับม้ามโต, paravertebral mass)",
+   "ERFE ↑ → hepcidin ↓ → NTDT เหล็กเกินได้แม้ไม่ให้เลือด · หัวใจเหล็กเกิน = สาเหตุตายหลัก",
+   "β-thal trait: HbA2 > 3.5% · IDA กด HbA2 → ตรวจซ้ำหลังเติมเหล็ก",
+   "HbE codon 26 → cryptic splice site = β⁺ อ่อน · HbE/β⁰ รุนแรงหลากหลาย พบมากในไทย",
+   "TDT: Hb ก่อนให้ 9.5–10.5 · chelation เมื่อ ferritin > 1,000 หรือ 10–20 ยูนิต"
+  ],
+  "items": [
+   {
+    "id": "HON-ANM-MCQ-16",
+    "kind": "mcq",
+    "topic": "Iron overload in NTDT",
+    "stem": "A 15-year-old boy from northeastern Thailand has HbE/β⁰-thalassemia. His Hb has stayed at 7.5–8.0 g/dL and he has received only 3 transfusions in his life. He has hepatosplenomegaly. Ferritin 1,450 ng/mL, transferrin saturation 85%, liver iron concentration 9 mg Fe/g dry weight. What is the main mechanism of his iron overload?",
+    "choices": [
+     "Iron contained in the few transfused red-cell units",
+     "Ineffective erythropoiesis releases erythroferrone, which suppresses hepatic hepcidin and increases intestinal iron absorption",
+     "A coexisting HFE C282Y mutation",
+     "Inflammation-induced ferritin synthesis without a true increase in body iron",
+     "Increased iron losses through intravascular hemolysis being reabsorbed by the kidney"
+    ],
+    "answer": 1,
+    "explain": "ผู้ป่วยเป็น **NTDT** ได้เลือดเพียง 3 ยูนิต (~600–750 mg Fe) ไม่พอจะทำ LIC 9 mg/g\n\nกลไกหลัก: α อิสระทำให้ erythroblast ตายในไขกระดูก → ซีด → **EPO สูงมาก** → erythroid precursor ขยายจำนวนมหาศาล → หลั่ง **erythroferrone (ERFE)** ซึ่ง **กดการสร้าง hepcidin** ที่ตับ (ร่วมกับ GDF15 และภาวะขาด O2) → hepcidin ต่ำ → **ferroportin ที่ duodenum เปิดค้าง** → ดูดซึมเหล็กเพิ่มหลายเท่า และ macrophage ปล่อยเหล็กเต็มที่ → **iron overload สะสมช้า ๆ** แม้ไม่ได้ให้เลือด · TIF แนะนำประเมิน LIC/ferritin สม่ำเสมอใน NTDT และเริ่ม chelation เมื่อ **LIC ≥ 5 mg/g หรือ ferritin ≥ 800 ng/mL**\n\n- เลือด 3 ยูนิตไม่พอ\n- HFE C282Y แทบไม่พบในคนไทย และไม่จำเป็นต้องอธิบาย\n- TSAT 85% + LIC สูง = เหล็กเกินจริง ไม่ใช่แค่ ferritin จากการอักเสบ\n- การแตกในหลอดเลือดทำให้ **เสีย** เหล็กทางปัสสาวะ ไม่ใช่สะสม",
+    "pearl": "NTDT: ineffective erythropoiesis → ERFE → hepcidin ↓ → ดูดซึมเหล็กเพิ่ม → ต้องตรวจเหล็กเกินแม้ไม่ค่อยให้เลือด",
+    "src": "",
+    "ref": [
+     "Thalassaemia International Federation. Guidelines for the management of NTDT, 2nd ed. 2017",
+     "Taher AT et al. N Engl J Med 2021;384:727"
+    ],
+    "nl": [
+     "2.3.3(8)",
+     "B2.2.1(2)",
+     "3.3.26",
+     "B2.4(2)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-17",
+    "kind": "mcq",
+    "topic": "Mentzer index and masked β-thal trait",
+    "stem": "A 27-year-old Thai woman at 12 weeks of gestation has Hb 9.9 g/dL, MCV 63 fL, RBC 5.4 × 10⁶/µL, RDW 16%, ferritin 8 ng/mL. Hb typing (HPLC) shows A2A with HbA2 3.3% and no HbE. Her husband is a known β-thalassemia carrier. Which interpretation is most appropriate?",
+    "choices": [
+     "She has pure iron deficiency because the Mentzer index is above 13",
+     "β-thalassemia trait is excluded because HbA2 is below 3.5%",
+     "She has α-thalassemia trait because HbA2 is normal; no further testing is needed",
+     "The Mentzer index is diagnostic of β-thalassemia trait, so iron should be withheld",
+     "Coexisting iron deficiency can lower HbA2 and mask β-thalassemia trait, so she needs iron replacement and β-globin DNA testing promptly given her husband's status"
+    ],
+    "answer": 4,
+    "explain": "**Mentzer = 63 ÷ 5.4 ≈ 11.7 (< 13)** ชี้ไปทาง thal trait แต่ **ferritin 8** บอกว่าขาดเหล็กจริงร่วมด้วย — ในไทยภาวะซ้อนกันพบบ่อย Mentzer จึงใช้คัดกรองคร่าว ๆ เท่านั้น\n\nจุดสำคัญ: **การขาดเหล็กลดการสร้าง δ-globin/HbA2** → HbA2 ของ β-thal trait อาจตกมาอยู่ช่วง **3.0–3.5% (borderline)** → ดูเหมือนปกติ · ค่า 3.3% ร่วมกับ MCV 63 ที่ต่ำเกินกว่าขาดเหล็กระดับนี้จะอธิบาย จึง **ยังตัด β-thal trait ไม่ได้** · สามีเป็นพาหะ β-thal → ถ้าเธอเป็นด้วย ลูก 25% เป็น β-thal major → ต้อง **ตรวจ DNA ของ β-globin (และ α⁰) โดยเร็ว** เพื่อทันเวลา prenatal diagnosis ขณะเดียวกันให้ธาตุเหล็กรักษา IDA\n\n- Mentzer คำนวณได้ < 13 ไม่ใช่ > 13\n- HbA2 < 3.5% ในคนขาดเหล็ก **ตัด β-thal trait ไม่ได้**\n- HbA2 ปกติไม่ได้ยืนยัน α-thal (ต้องใช้ PCR)\n- Mentzer ไม่ใช่การวินิจฉัย และ ferritin 8 = ต้องให้เหล็ก",
+    "pearl": "IDA กด HbA2 → β-thal trait ซ่อนได้ · Mentzer เป็นแค่ตัวชี้ทาง ไม่ใช่การวินิจฉัย",
+    "src": "",
+    "ref": [
+     "Hoffbrand 8th ed. — Genetic disorders of haemoglobin (HbA2 and iron deficiency)",
+     "Fucharoen S, Winichagoon P. Hemoglobin 2011;35:419"
+    ],
+    "nl": [
+     "3.3.5",
+     "B2.3(4)",
+     "2.3.3(8)",
+     "2.3.15-3(11)"
+    ]
+   },
+   {
+    "id": "HON-ANM-MCQ-18",
+    "kind": "mcq",
+    "topic": "Transfusion and chelation in TDT",
+    "stem": "A 2-year-old boy with β⁰/β⁰-thalassemia (no HbA, HbF 97%) has Hb 6.2 g/dL, poor growth, frontal bossing and splenomegaly. He is starting a regular transfusion program. Which plan best reflects the mechanism-based goal of therapy?",
+    "choices": [
+     "Transfuse only when Hb falls below 7 g/dL to minimize iron loading",
+     "Give oral iron supplements because the red cells are microcytic",
+     "Perform splenectomy now instead of starting transfusions",
+     "Keep the pre-transfusion Hb at about 9.5–10.5 g/dL to suppress ineffective erythropoiesis and marrow expansion, and start iron chelation once ferritin exceeds about 1,000 ng/mL or after about 10–20 transfusions",
+     "Start deferiprone immediately before the first transfusion"
+    ],
+    "answer": 3,
+    "explain": "เป้าหมายของการให้เลือดใน **TDT** ไม่ใช่แค่แก้ซีด แต่เพื่อ **กด EPO** → หยุด ineffective erythropoiesis, ไขกระดูกขยาย (กระดูกหน้าผิดรูป), extramedullary hematopoiesis และการดูดซึมเหล็กที่เกิดจาก hepcidin ต่ำ · TIF 2021 แนะนำ **Hb ก่อนให้เลือด 9.5–10.5 g/dL** (11–12 ถ้ามีโรคหัวใจ) ทุก 2–5 สัปดาห์ → เด็กโตได้ปกติ\n\nเลือดแต่ละยูนิตมีเหล็ก ~200–250 mg และร่างกายขับไม่ได้ → เริ่ม **chelation เมื่อ ferritin > 1,000 ng/mL หรือได้เลือด ~10–20 ยูนิต** (หรือ LIC ≥ 3 mg/g) · ในไทยใช้ deferiprone, deferasirox, deferoxamine\n\n- **Hb < 7 ค่อยให้** = ปล่อยให้ไขกระดูกขยายต่อ เด็กโตช้า และดูดซึมเหล็กมากขึ้นอยู่ดี\n- **ธาตุเหล็ก** ห้ามให้ — microcytosis มาจาก globin ไม่ใช่ขาดเหล็ก\n- **Splenectomy** ไม่ทดแทนการให้เลือดและเลี่ยงก่อนอายุ 5 ปี (ติดเชื้อรุนแรง)\n- เริ่ม chelation ก่อนมีเหล็กเกินไม่มีประโยชน์และเพิ่มพิษของยา",
+    "pearl": "TDT: Hb ก่อนให้ 9.5–10.5 เพื่อกดไขกระดูก · chelation เมื่อ ferritin > 1,000 หรือ 10–20 ยูนิต",
+    "src": "",
+    "ref": [
+     "Thalassaemia International Federation. Guidelines for the management of TDT, 4th ed. 2021",
+     "Taher AT et al. N Engl J Med 2021;384:727"
+    ],
+    "nl": [
+     "2.3.3(8)",
+     "B2.2.1(1)",
+     "B2.4(1)",
+     "B2.4(2)"
+    ]
+   }
+  ],
+  "figs": {}
+ }
+]

@@ -112,6 +112,20 @@ engine เดียวกับ learn จึงใช้แพตช์ชุด
 - ตรวจ: `python3 drill_tool.py check <drill index.html> drill_sets/<lec>.json` · รวม: `python3 drill_tool.py merge <drill index.html> drill_sets <out.html>` (เพิ่มเข้า BANK + LEC)
 - ปุ่ม Drill ใน dashboard (`drill:[hash, MCQ, MEQ+OSCE, คลังเก่า, 1=ชุดรวม]`) ชี้ชุดรายคาบแล้ว · คลังเก่าที่ใช้ร่วมหลายคาบหารเฉลี่ยไว้ให้น้ำหนักเท่าเดิม
 
+## คาบ Anemia (Learn hemonc "9/11") — approach + 21 ภาวะ (24 ต.ค.)
+
+- ผู้ใช้ขอ: บทจากโพสต์สรุป pathophysiology ภาวะซีด 21 ภาวะ (Nakorn - Core Physiology) + ทริคจำสากล + pathophysiology แบบลึก + approach to anemia ตามแนวทางของ อ.Chaicharoen Tantanate (`learn_anemia/APPROACH_SOURCE.md`)
+- 23 หัวข้อ (00 approach · 01 พื้นฐาน · 02–22 ทีละภาวะ) · 72 MCQ · ภาพเคลื่อนไหว 36 · หลักจำ 34 · เนื้อหาเขียนใหม่ทั้งหมด ไม่คัดลอกโพสต์
+- ประกอบใหม่: `python3 learn_lesson_tool.py assemble <learn data> learn_anemia/header.json <out> learn_anemia/sections/sec_*.json` แล้ว `python3 patch_learn_anim.py data <out ที่มีแค่ hemonc.json> learn_anemia/anims <data ออก>`
+
+## บท "อ่าน Peripheral Blood Smear" (Learn hemonc "PBS") — 25 ต.ค.
+
+- จาก Atlas of Blood Smears in Common Hematologic Diseases ของ อ.Chaicharoen Tantanate (แจกฟรีเพื่อการศึกษา ห้ามขาย · ภาพ smear ในเล่มผู้เขียนระบุว่าสร้างด้วย AI) — Drive id `1WdfzgnLkPowH1eFtkRJ1xj0uuSkFIfnf`
+- 17 หัวข้อ (00 วิธีทำ/อ่าน/grading · 01–15 รายโรค · 16 ฝึกทายโรค 24 ภาพ) · 63 MCQ · รูป 75 ไฟล์ใน artifact ที่ `img/pbs/` (ไม่เก็บใน repo)
+- สร้างรูปใหม่: `pdftoppm -r 130 -f 8 -l 57 -jpeg -jpegopt quality=80 atlas.pdf img/pbs/p` (+ หน้า 1) · smear ล้วน: `pdfimages -j -p atlas.pdf i` แล้วตั้งชื่อ `s-<หน้า>-<ลำดับ>.jpg`
+- หน้า learn ต้องผ่าน `patch_learn_img.py` (`[[img:key]]` + `section.imgs`, ปุ่ม "ดูเฉลย" สำหรับรูปที่มี quiz)
+- ประกอบ: `python3 learn_lesson_tool.py assemble <learn data> learn_pbs/header.json <out> learn_pbs/sections/sec_P*.json` · ตรวจรูป: ตั้ง `LEARN_IMG_ROOT=<โฟลเดอร์ที่มี img/>`
+
 ## แก้ข้อมูล
 
 ข้อมูลทั้งหมดอยู่ในอาร์เรย์ `LECS` / `EXTRAS` ในสคริปต์ของ `index.html`
