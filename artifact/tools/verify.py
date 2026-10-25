@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """เปิด build/index.html ด้วย Chromium จริง ตรวจว่า loader ทำงานและสลับ set ได้"""
-import subprocess, sys, time, os, re
+import re, subprocess, sys, time, os
 from playwright.sync_api import sync_playwright
 
 def chromium_path():
@@ -266,6 +266,86 @@ try:
         if HH() > was * 1.3:
             fail.append("สลับชุดวิชาแล้วแถบเด้งกลับมากางเอง")
         print("จำสถานะย่อ + ไม่เด้งกลับตอนสลับชุดวิชา ✓")
+
+        # ---- ปิดคำตอบในตารางไว้ให้เดา ----
+        # ตรวจ "พฤติกรรม" ไม่ผูกกับชื่อคลาส เพราะฟีเจอร์นี้ถูกเขียนใหม่มาแล้ว 3 แบบ
+        # ภายในวันเดียว (.tblq/.tqbar/.czbar) เทสต์ที่ผูกคลาสจะพังทุกครั้งที่เปลี่ยน
+        pg.set_viewport_size({"width": 1100, "height": 900})
+        pg.reload(wait_until="networkidle"); pg.wait_for_timeout(500)
+
+        def open_outline():
+            if not pg.locator("aside .osec li button").count() or \
+               not pg.locator("aside .osec li button").first.is_visible():
+                pg.click("aside .olec > button"); pg.wait_for_timeout(300)
+
+        def find_table():
+            open_outline()
+            secs = pg.locator("aside .osec li button")
+            for i in range(min(secs.count(), 14)):
+                secs.nth(i).click(); pg.wait_for_timeout(420)
+                if pg.locator("main .prose table").count():
+                    return True
+            return False
+
+        # เนื้อหาเดิมของช่องตั้งแต่คอลัมน์ที่ 2 เป็นต้นไป (คอลัมน์แรกคือโจทย์)
+        CELLS = """()=>[...document.querySelectorAll('main .prose table tbody tr')]
+            .flatMap(r=>[...r.children].slice(1).filter(c=>c.tagName==='TD'))
+            .map(c=>({t:c.innerText.trim(), c:getComputedStyle(c).color}))"""
+        TBOX = "()=>{const t=document.querySelector('main .prose table').getBoundingClientRect();return [Math.round(t.width),Math.round(t.height)];}"
+
+        if not find_table():
+            fail.append("หาตารางในเนื้อหาไม่เจอ ทดสอบโหมดปิดคำตอบไม่ได้")
+        else:
+            btn = pg.locator("main button").filter(has_text=re.compile(r"ปิด.*(เดา|ทวน|คำตอบ)"))
+            if not btn.count():
+                fail.append("ไม่มีปุ่มเปิดโหมดปิดคำตอบเหนือตาราง")
+            else:
+                before = pg.evaluate(CELLS)
+                box0 = pg.evaluate(TBOX)
+                btn.first.click(); pg.wait_for_timeout(300)
+                after = pg.evaluate(CELLS)
+                if len(before) != len(after):
+                    fail.append("จำนวนช่องเปลี่ยนหลังเปิดโหมด")
+                else:
+                    # ช่องที่มีเนื้อหาต้องอ่านไม่ได้แล้ว — ข้อความเปลี่ยน หรือสีโปร่งใส
+                    filled = [i for i, b in enumerate(before) if b["t"]]
+                    covered = [i for i in filled
+                               if after[i]["t"] != before[i]["t"] or "0)" in after[i]["c"]]
+                    if len(covered) != len(filled):
+                        fail.append("ปิดคำตอบ: ยังอ่านได้ %d จาก %d ช่อง" % (len(filled) - len(covered), len(filled)))
+                    # ต้องเหลือใบ้ ไม่ใช่ช่องว่างเปล่า
+                    nohint = [i for i in covered if not after[i]["t"] and
+                              not pg.evaluate("""i=>{const c=[...document.querySelectorAll('main .prose table tbody tr')]
+                                  .flatMap(r=>[...r.children].slice(1).filter(x=>x.tagName==='TD'))[i];
+                                  return !!(c.getAttribute('data-hint')||'').trim();}""", i)]
+                    if nohint:
+                        fail.append("ปิดคำตอบ: %d ช่องไม่เหลือใบ้ให้เดาเลย" % len(nohint))
+                    # คอลัมน์แรกต้องยังอ่านได้ ไม่งั้นไม่เหลือโจทย์
+                    if not pg.evaluate("""()=>[...document.querySelectorAll('main .prose table tbody tr')]
+                        .every(r=>!r.children[0]||getComputedStyle(r.children[0]).color.indexOf('0)')<0)"""):
+                        fail.append("ปิดคำตอบ: คอลัมน์แรกถูกปิดด้วย ไม่เหลือโจทย์")
+                    # ขนาดตารางต้องนิ่ง ไม่งั้นแตะทีละช่องแล้วแถวหนีนิ้ว
+                    box1 = pg.evaluate(TBOX)
+                    if abs(box1[1] - box0[1]) > 2:
+                        fail.append("ปิดคำตอบ: ตารางสูงเปลี่ยน %dpx → %dpx" % (box0[1], box1[1]))
+                    # แตะช่องเดียวต้องเฉลยช่องเดียว
+                    if covered:
+                        k = covered[0]
+                        pg.evaluate("""i=>{[...document.querySelectorAll('main .prose table tbody tr')]
+                            .flatMap(r=>[...r.children].slice(1).filter(x=>x.tagName==='TD'))[i]
+                            .querySelector('button')?.click()
+                            || [...document.querySelectorAll('main .prose table tbody tr')]
+                            .flatMap(r=>[...r.children].slice(1).filter(x=>x.tagName==='TD'))[i].click();}""", k)
+                        pg.wait_for_timeout(250)
+                        now = pg.evaluate(CELLS)
+                        opened = [i for i in covered
+                                  if now[i]["t"] == before[i]["t"] and "0)" not in now[i]["c"]]
+                        if opened != [k]:
+                            fail.append("ปิดคำตอบ: แตะช่องเดียวแต่เปิด %d ช่อง" % len(opened))
+                        box2 = pg.evaluate(TBOX)
+                        if abs(box2[1] - box1[1]) > 2:
+                            fail.append("ปิดคำตอบ: เฉลยช่องเดียวแล้วตารางขยับ %+dpx" % (box2[1] - box1[1]))
+                    print("ปิดคำตอบในตาราง: ปิด %d ช่อง · เหลือใบ้ครบ · ขนาดนิ่ง · เฉลยทีละช่อง ✓" % len(covered))
         pg.set_viewport_size({"width": 390, "height": 844})
 
         # กรอง Google Fonts / favicon ที่ container บล็อกอยู่แล้ว ไม่เกี่ยวกับ refactor
