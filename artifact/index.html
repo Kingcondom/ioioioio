@@ -289,6 +289,14 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .mnem li b{font-family:var(--mono);color:var(--miss);font-weight:700}
 .mnem .mnn{font-size:13px;color:var(--ink-2);margin:7px 0 0}
 .mnem .mns{font-size:11.8px;color:var(--ink-3);margin:5px 0 0}
+/* ---------- รูปภาพในบทเรียน ([[img:key]] + section.imgs) ---------- */
+.fig.pimg{padding:10px 10px 12px}
+.fig.pimg a.pz{display:block;border-radius:var(--r-sm);overflow:hidden;background:var(--surface-sunk)}
+.fig.pimg img{display:block;width:100%;height:auto;max-width:620px;margin:0 auto}
+.fig.pimg .pcr{font-size:11.5px;color:var(--ink-3);margin-top:6px}
+.fig.pimg .pq{margin-top:9px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fig.pimg .pq b{font-size:13.5px;color:var(--accent-ink)}
+.fig.pimg .pans{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:13.6px;line-height:1.6}
 .chip.anc{border-color:var(--accent);color:var(--accent-ink)}
 .mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}
 </style>
@@ -561,6 +569,26 @@ function mnemBody(list){
 function mnemHtml(s){return s.mnem&&s.mnem.length?"<div class='mnem'><h4>หลักจำ</h4>"+mnemBody(s.mnem)+"</div>":"";}
 function animCount(s){return Object.keys(s.anims||{}).length;}
 
+/* ---------- รูปภาพในบทเรียน ---------- */
+var IMGS={};
+function imgHtml(k){
+  var g=IMGS[k];if(!g||!g.src)return "";
+  FIGN++;
+  var h="<figure class='fig pimg'>"+(g.title?"<div class='figt'><span>ภาพ "+FIGN+"</span>"+inline(g.title)+"</div>":"")+
+    "<a class='pz' href='"+esc(g.src)+"' target='_blank' rel='noopener' title='แตะเพื่อดูภาพเต็ม'><img src='"+esc(g.src)+"' alt='"+esc(g.alt||g.title||"")+"' loading='lazy' decoding='async'></a>";
+  if(g.quiz){
+    h+="<div class='pq'><b>"+inline(g.q||"ลองอ่าน smear นี้ก่อน — คิดว่าเป็นอะไร")+"</b><button class='btn' data-pqa='1'>ดูเฉลย</button></div>"+
+       "<div class='pans hide'>"+inline(g.quiz)+"</div>";
+  }else if(g.cap)h+="<figcaption>"+inline(g.cap)+"</figcaption>";
+  if(g.credit)h+="<div class='pcr'>"+inline(g.credit)+"</div>";
+  return h+"</figure>";
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest("[data-pqa]");if(!b)return;
+  var a=b.closest("figure").querySelector(".pans");if(!a)return;
+  var hid=a.classList.toggle("hide");b.textContent=hid?"ดูเฉลย":"ซ่อนเฉลย";
+});
+
 /* ---------- tiny markdown (เหมือน drill.html) ---------- */
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 function inline(t){return esc(t)
@@ -622,6 +650,8 @@ function md(src){
     if(fm){flushPara();out.push(figHtml(fm[1]));i++;continue;}
     var am=/^\s*\[\[anim:([\w-]+)\]\]\s*$/.exec(L);
     if(am){flushPara();out.push(animHtml(am[1]));i++;continue;}
+    var im=/^\s*\[\[img:([\w-]+)\]\]\s*$/.exec(L);
+    if(im){flushPara();out.push(imgHtml(im[1]));i++;continue;}
     if(/^\s*>\s?/.test(L)){var q=[];while(i<lines.length&&/^\s*>\s?/.test(lines[i])){q.push(lines[i].replace(/^\s*>\s?/,""));i++;}
       flushPara();out.push("<div class='callout'>"+md(q.join("\n"))+"</div>");continue;}
     if(/^\s*####\s+/.test(L)){flushPara();out.push("<h4>"+inline(L.replace(/^\s*####\s+/,""))+"</h4>");i++;continue;}
@@ -860,8 +890,8 @@ function viewSection(){
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
     (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"</div>"+
-    (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
-  FIGS={};ANIMS={};
+    (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,IMGS=s.imgs||{},"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
+  FIGS={};ANIMS={};IMGS={};
   if(!hid&&s.pearls&&s.pearls.length)
     h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
   if(!hid)h+=mnemHtml(s);
