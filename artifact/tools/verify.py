@@ -1,7 +1,18 @@
 #!/usr/bin/env python3
 """เปิด build/index.html ด้วย Chromium จริง ตรวจว่า loader ทำงานและสลับ set ได้"""
-import subprocess, sys, time, os
+import subprocess, sys, time, os, re
 from playwright.sync_api import sync_playwright
+
+def chromium_path():
+    """หา Chromium ใน container — เลข build และชื่อโฟลเดอร์ย่อยเปลี่ยนไปตามรุ่น จึงห้ามฝังไว้"""
+    import glob
+    cands = glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")
+    if not cands:
+        raise SystemExit("ไม่พบ Chromium ใน /opt/pw-browsers — ห้ามรัน playwright install ให้ตรวจ container")
+    def build(p):
+        m = re.search(r"chromium-(\d+)", p)
+        return int(m.group(1)) if m else 0
+    return sorted(cands, key=build)[-1]
 
 BUILD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # โฟลเดอร์ artifact/
 PORT = 8931
@@ -12,7 +23,7 @@ time.sleep(1.5)
 fail = []
 try:
     with sync_playwright() as p:
-        b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome", args=["--no-sandbox"])
+        b = p.chromium.launch(executable_path=chromium_path(), args=["--no-sandbox"])
         pg = b.new_page(viewport={"width": 390, "height": 844})  # ขนาดมือถือ
         errs, bad = [], []
         def on_resp(r):
@@ -50,6 +61,56 @@ try:
         print("แถบความคืบหน้า:", ring.replace("\n", " "))
         if "/%d" % _fsec not in ring:   # แถบนี้นับเฉพาะชุดที่เปิดอยู่
             fail.append("ความคืบหน้าของ %s ควรเป็น %d หัวข้อ ได้: %r" % (_first["label"], _fsec, ring))
+
+        # ปิดคำตอบในตาราง: หาหัวข้อแรกของชุดแรกที่มีตารางอย่างน้อย 2 แถว แล้วลองปิด/เฉลย
+        _target = None
+        for _l in _flec:
+            for _s in _l["sections"]:
+                _rows = [x for x in str(_s.get("md", "")).split("\n") if x.strip().startswith("|")]
+                _body = [x for x in _rows if not set(x.replace("|", "").replace(" ", "")) <= set(":-")]
+                if len(_body) >= 3:          # หัวตาราง + แถวข้อมูล 2 แถว
+                    _target = (_l["lec"], _s["id"])
+                    break
+            if _target:
+                break
+        if not _target:
+            fail.append("ไม่พบหัวข้อที่มีตารางในชุดแรก — ตรวจปิดคำตอบไม่ได้")
+        else:
+            _lec, _sid = _target
+            pg.click('[data-lec="%s"]' % _lec)
+            pg.wait_for_selector('[data-sec="%s"]' % _sid, state="visible", timeout=5000)
+            pg.click('[data-sec="%s"]' % _sid)
+            pg.wait_for_selector("main .card h2", timeout=5000)
+            if not pg.query_selector("main .czbar"):
+                fail.append("หัวข้อ %s มีตารางแต่ไม่มีแถบปิดคำตอบ" % _sid)
+            else:
+                _t0 = pg.eval_on_selector_all("main .tablewrap tbody tr",
+                    "rs=>rs.map(r=>[].map.call(r.children,c=>c.textContent.trim()))")
+                pg.eval_on_selector_all("main .czbar button[data-czall='0']", "e=>e[0].click()")
+                pg.wait_for_selector("main button.cz", timeout=5000)
+                _n = pg.eval_on_selector_all("main button.cz", "e=>e.length")
+                _col0 = pg.eval_on_selector_all("main .tablewrap tbody tr", "rs=>rs.map(r=>r.children[0].textContent.trim())")
+                _hints = pg.eval_on_selector_all("main button.cz", "e=>e.map(x=>x.textContent)")
+                print("ปิดคำตอบในตาราง (%s): %d ช่อง · เงื่อนงำตัวอย่าง %r" % (_sid, _n, _hints[:4]))
+                if _n < 1:
+                    fail.append("กดปิดคำตอบแล้วไม่มีช่องถูกปิด")
+                if _col0 != [r[0] for r in _t0]:
+                    fail.append("คอลัมน์แรกถูกปิดด้วย ควรเปิดไว้เป็นคำถาม")
+                if any(len(x) > 6 for x in _hints):
+                    fail.append("เงื่อนงำยาวเกินไป: %r" % [x for x in _hints if len(x) > 6][:3])
+                if any(x and x[0] in "ิีึืุูั่้๊๋็์ํ" for x in _hints):
+                    fail.append("เงื่อนงำขึ้นต้นด้วยสระหรือวรรณยุกต์ลอย")
+                pg.eval_on_selector_all("main button.cz", "e=>e[0].click()")
+                if pg.eval_on_selector_all("main button.cz", "e=>e.length") != _n - 1:
+                    fail.append("กดเฉลยทีละช่องแล้วจำนวนช่องที่ปิดไม่ลดลงทีละ 1")
+                pg.eval_on_selector_all("main .czbar button[data-czall='1']", "e=>e[0].click()")
+                pg.wait_for_function("!document.querySelector('main button.cz')", timeout=5000)
+                _t1 = pg.eval_on_selector_all("main .tablewrap tbody tr",
+                    "rs=>rs.map(r=>[].map.call(r.children,c=>c.textContent.trim()))")
+                if _t1 != _t0:
+                    fail.append("ตารางไม่กลับมาเหมือนเดิมหลังกดเฉลยทั้งหมด")
+                else:
+                    print("เฉลยทั้งหมด → ตารางกลับมาเหมือนเดิม ✓")
 
         # สลับไป Cardio → ต้องโหลดไฟล์ใหม่แล้วแสดงคาบครบตามไฟล์ data
         import json as _j
