@@ -68,7 +68,7 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 35** · มี **10 ชุดวิชา** · 38 คาบ · 735 ภาพ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 39** · มี **10 ชุดวิชา** · 38 คาบ · 735 ภาพ · capability `db` + `user`)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
@@ -92,6 +92,9 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 >   - neuro 9/10 และ 21/10 อัปเดตด้วย `update_neuro_handouts.py` (รันซ้ำได้ · คง anims/mnem · ต่อบรรทัดที่ตัวหนาคร่อม) ไม่ต้องรัน build_lp/build_acs ใหม่
 >   - `check_render` แจ้ง "ข้อความทับ" ใน neuro 9/10 และ 21/10 เฉพาะภาพเคลื่อนไหว (anims ของ session dashboard — ข้อความของทุกขั้นซ้อนกันในไฟล์ แต่แสดงทีละขั้น) ไม่ใช่ภาพนิ่ง
 > - **Version 29** (16 ต.ค.): ปุ่ม **"ซ่อนเนื้อหา (โหมดทวน)"** ต่อคาบ (หน้าคาบ + หน้าหัวข้อ) → เหลือแค่หัวข้อ ### / #### เป็นปุ่มกดเปิดทีละส่วน + "จำไปสอบ" พับไว้ · ซ่อน summary · ข้อสอบยังอยู่ · จำค่าใน `state.hide` (localStorage ต่อเครื่อง ไม่ซิงก์บัญชี)
+> - **Version 38–39** (25 ต.ค. · ผู้ใช้คอมเมนต์ที่ nephro 05 "กล่องปิดไว้ แต่เหลืออะไรให้เดา"): v38 (อีก session) ปุ่ม **"ปิดเพื่อทวน"** เหนือทุกตาราง (`tqInit`) · v39 ปุ่ม **"ปิดป้าย · ทายเอง"** ทุกภาพ SVG (`coverFig` ใน index.html) — บรรทัดแรกของป้ายขนาดปกติ (ชื่อในกล่อง) ยังเห็น · ป้าย sm/xs + บรรทัดถัดไปถูกปิด ใบ้ 2 ตัวอักษรแรก · ตัวเลขล้วน (แกนกราฟ) ไม่ปิด · cap ซ่อนระหว่างทาย · โหมดทวนปิดให้อัตโนมัติ
+>   ⚠️ **index.html บนเว็บถูกแก้ตรงจากหลาย session** (dashboard `intelligent-brown` แก้ไฟล์บนเว็บโดยไม่ผ่าน repo) → ก่อนแก้หน้าเว็บทุกครั้ง: `Artifact read` index.html → ถอด wrapper → เทียบ/merge 3 ทาง (`git merge-file`) แล้วค่อย publish · `img/pbs/*` มีเฉพาะบนเว็บ ไม่อยู่ใน repo (publish ที่ไม่ส่งไฟล์เหล่านี้จะไม่ลบ)
+>   check_render ของ nephro 05 / cardio 10 / hemonc 2/11 แจ้ง "ข้อความทับ" ในภาพที่ session อื่นแก้ไว้ (มีก่อน v39 · ไม่ได้เกิดจากปุ่มปิดป้าย)
 > - `index.html` บนเว็บ v26 มีแพตช์ CSS ปุ่มซ่อนเมนู (จาก `claude/internal-med-learning-web-j9ca6l`) — รวมเข้า repo แล้ว (commit 0ab309b)
 >
 > 👤 **Version 22–23 มาจาก session dashboard (`claude/intelligent-brown-xj38me`)**: v22 บันทึกความคืบหน้าในบัญชี (`patch_learn_sync.py` · capability `db`+`user` — **ห้าม publish โดยส่ง `capabilities` ที่ไม่มีสองตัวนี้**) · v23 แท็บ "คาบเรียน" (`patch_learn_lectures.py`)
