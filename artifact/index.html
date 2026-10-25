@@ -227,6 +227,15 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig{margin:20px 0;border:1px solid var(--rule);border-radius:var(--r-md);background:var(--surface);padding:12px 14px 12px}
 .fig .figt{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--accent-ink);margin:0 0 8px}
 .fig .figt span{color:var(--ink-3);font-weight:600;margin-right:6px}
+/* ปิดป้ายในภาพให้ทายเอง (ผู้ใช้ขอ 25 ต.ค.) — ชื่อหลักยังเห็น รายละเอียดถูกปิด โชว์ตัวอักษรแรกเป็นใบ้ */
+.fig .figt.q{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.fig .figt.q .tt{flex:1 1 200px;min-width:0}
+.fig .figt.q .tt span{color:var(--ink-3);font-weight:600;margin-right:6px}
+.figq{font:inherit;font-size:11.5px;font-weight:600;letter-spacing:0;color:var(--ink-2);background:var(--surface);border:1px dashed var(--rule-strong);border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.figq:hover{border-color:var(--accent);color:var(--accent-ink)}.fig.czon .figq{border-style:solid;border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+.fig svg .cz{cursor:pointer}.fig svg .cz rect{fill:var(--surface-sunk);stroke:var(--accent);stroke-width:1;stroke-dasharray:3 2}
+.fig svg .cz:hover rect,.fig svg .cz:focus rect{fill:var(--accent-soft)}.fig svg .cz:focus{outline:none}
+.fig svg .cz text{fill:var(--ink-3);font-weight:600}
+.fig.czon figcaption{display:none}  /* คำอธิบายใต้ภาพเฉลยกลไก — ซ่อนจนกว่าจะเฉลยทั้งหมด */
 .fig .figsv{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .fig .figin{margin:0 auto}
 .fig svg{display:block;width:100%;height:auto;color:var(--ink);font-family:var(--sans)}
@@ -601,7 +610,8 @@ function figHtml(k){
   var m=/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"/.exec(f.svg),w=m?+m[1]:560;
   var wide=w>440,sty="max-width:"+Math.round(w*1.25)+"px"+(wide?";min-width:"+Math.round(w*0.74)+"px":"");
   FIGN++;
-  return "<figure class='fig'>"+(f.title?"<div class='figt'><span>ภาพ "+FIGN+"</span>"+inline(f.title)+"</div>":"")+
+  return "<figure class='fig'>"+"<div class='figt q'><div class='tt'><span>ภาพ "+FIGN+"</span>"+inline(f.title||"")+"</div>"+
+    "<button class='figq' data-figq='1' title='ปิดป้ายรายละเอียดในภาพ เหลือชื่อหลักไว้เป็นใบ้ — กดกล่องเพื่อเฉลยทีละอัน'>ปิดป้าย · ทายเอง</button></div>"+
     "<div class='figsv'><div class='figin' style='"+sty+"'>"+f.svg+"</div></div>"+
     (wide?"<div class='figscroll on'>← เลื่อนภาพไปทางขวาเพื่อดูส่วนที่เหลือ →</div>":"")+
     (f.cap?"<figcaption>"+inline(f.cap)+"</figcaption>":"")+"</figure>";
@@ -1029,6 +1039,64 @@ function viewReview(){
 }
 
 /* ---------- render ---------- */
+/* ---------- ปิดป้ายในภาพ (ทายเอง) ----------
+   ปิดรายละเอียดด้วยกล่อง + ใบ้ 2 ตัวอักษรแรก (ชื่อหลักยังเห็น) · กดกล่องเพื่อเฉลยทีละอัน · ต้องทำตอนภาพแสดงอยู่ (getBBox ของที่ซ่อนได้ 0) */
+var SEG=null;try{SEG=new Intl.Segmenter("th",{granularity:"grapheme"});}catch(e){}
+function graphemes(s){return SEG?Array.from(SEG.segment(s),function(x){return x.segment;}):Array.from(s);}
+var SVGNS="http://www.w3.org/2000/svg";
+function czBox(sv,inv,el,fs){
+  /* กรอบของบรรทัด (text หรือ tspan) ในพิกัดของ svg — tspan ไม่มี getBBox จึงแปลงจาก getBoundingClientRect
+     ความสูงตัดให้เท่าขนาดตัวอักษร (กรอบของฟอนต์ไทยสูงเกิน จะทับบรรทัดชื่อข้างบน) */
+  var R=el.getBoundingClientRect();if(R.width<1||R.height<1)return null;
+  var p1=sv.createSVGPoint(),p2=sv.createSVGPoint();p1.x=R.left;p1.y=R.top;p2.x=R.right;p2.y=R.bottom;
+  p1=p1.matrixTransform(inv);p2=p2.matrixTransform(inv);
+  var h=Math.min(p2.y-p1.y,fs*1.05),cy=(p1.y+p2.y)/2+fs*0.04;
+  return {x:p1.x,y:cy-h/2,width:p2.x-p1.x,height:h};
+}
+function czAdd(sv,bb,txt){
+  var g=graphemes(txt),hint=g.length>2?g.slice(0,2).join("")+"…":"?";
+  var cz=document.createElementNS(SVGNS,"g");cz.setAttribute("class","cz");cz.setAttribute("data-cz","1");
+  cz.setAttribute("tabindex","0");cz.setAttribute("role","button");cz.setAttribute("aria-label","เฉลยป้ายนี้");
+  var r=document.createElementNS(SVGNS,"rect"),p=1.5;
+  r.setAttribute("x",bb.x-p);r.setAttribute("y",bb.y-p);r.setAttribute("width",bb.width+2*p);r.setAttribute("height",bb.height+2*p);r.setAttribute("rx",3);
+  var ht=document.createElementNS(SVGNS,"text"),fs=Math.max(7.5,Math.min(10.5,bb.height*0.72));
+  ht.setAttribute("x",bb.x+2);ht.setAttribute("y",bb.y+bb.height/2+fs*0.36);ht.setAttribute("style","font-size:"+fs+"px");
+  ht.textContent=hint;cz.appendChild(r);cz.appendChild(ht);sv.appendChild(cz);
+}
+function coverFig(fg){
+  /* ชื่อหลักให้เห็น: บรรทัดแรกของป้ายขนาดปกติ (มักเป็นชื่อในกล่อง) · ปิด: บรรทัดถัดไป + ป้ายตัวเล็ก (sm/xs — ป้ายบนลูกศร รายละเอียด) */
+  var sv=fg.querySelector(".figsv svg");if(!sv)return;
+  uncoverFig(fg);
+  var ctm=sv.getScreenCTM();if(!ctm)return;var inv=ctm.inverse(),todo=[],all=[];
+  Array.prototype.slice.call(sv.querySelectorAll("text")).forEach(function(tx){
+    var small=tx.classList.contains("sm")||tx.classList.contains("xs");
+    var fs=parseFloat(getComputedStyle(tx).fontSize)||12;
+    var lines=Array.prototype.slice.call(tx.querySelectorAll("tspan"));if(!lines.length)lines=[tx];
+    lines.forEach(function(ln,i){
+      var txt=(ln.textContent||"").replace(/\s+/g," ").trim();if(!txt||/^[\d.,%\s–-]+$/.test(txt))return;  /* ตัวเลขล้วน (แกนกราฟ) ไม่ปิด */
+      var bb=czBox(sv,inv,ln,fs);if(!bb)return;
+      all.push([bb,txt]);if(small||i>0)todo.push([bb,txt]);
+    });
+  });
+  if(!todo.length)todo=all.filter(function(x,i){return i%2;});   /* ภาพที่ป้ายเป็นชื่อล้วน — ปิดสลับกันครึ่งหนึ่ง */
+  todo.forEach(function(x){czAdd(sv,x[0],x[1]);});
+  if(todo.length){fg.classList.add("czon");var b=fg.querySelector(".figq");if(b)b.textContent="เฉลยทั้งหมด";}
+}
+function uncoverFig(fg){
+  Array.prototype.slice.call(fg.querySelectorAll(".cz")).forEach(function(x){x.remove();});
+  fg.classList.remove("czon");var b=fg.querySelector(".figq");if(b)b.textContent="ปิดป้าย · ทายเอง";
+}
+function autoCover(root){
+  if(state.view!=="section")return;var l=lecOf(state.lec);if(!l||!lecHidden(l))return;
+  Array.prototype.slice.call(root.querySelectorAll("figure.fig:not(.pimg)")).forEach(function(fg){
+    if(fg.offsetParent!==null&&!fg.classList.contains("czon"))coverFig(fg);});
+}
+function revealCz(cz){var fg=cz.closest("figure");cz.remove();
+  if(fg&&!fg.querySelector(".cz"))uncoverFig(fg);}
+document.addEventListener("click",function(e){var cz=e.target.closest&&e.target.closest("[data-cz]");if(cz)revealCz(cz);});
+document.addEventListener("keydown",function(e){var cz=e.target.closest&&e.target.closest("[data-cz]");
+  if(cz&&(e.key==="Enter"||e.key===" ")){e.preventDefault();revealCz(cz);}});
+
 function render(){
   renderMast();renderOutline();
   var m=document.getElementById('main'),h;
@@ -1048,6 +1116,7 @@ function render(){
   else if(state.view==="learn"){h=viewHome();}
   else h=viewHome();
   m.innerHTML=h;
+  autoCover(m);
   save();
 }
 
@@ -1109,9 +1178,10 @@ document.addEventListener('click',function(e){
     var hk=state.course+"|"+t.dataset.hlec;state.hide=state.hide||{};
     if(state.hide[hk])delete state.hide[hk];else state.hide[hk]=true;render();return;
   }
+  if(t.dataset.figq){var fg=t.closest("figure");if(fg.classList.contains("czon"))uncoverFig(fg);else coverFig(fg);return;}
   if(t.dataset.rv){
     var rb=document.getElementById("rvb-"+t.dataset.rv);if(!rb)return;
-    var open=rb.classList.contains("hide");rb.classList.toggle("hide",!open);
+    var open=rb.classList.contains("hide");rb.classList.toggle("hide",!open);if(open)autoCover(rb);
     t.setAttribute("aria-expanded",open?"true":"false");t.querySelector(".ar").textContent=open?"▾":"▸";return;
   }
   if(t.dataset.rvall){
@@ -1119,6 +1189,7 @@ document.addEventListener('click',function(e){
     document.querySelectorAll("main .rv").forEach(function(b){
       var x=document.getElementById("rvb-"+b.dataset.rv);if(x)x.classList.toggle("hide",!op);
       b.setAttribute("aria-expanded",op?"true":"false");b.querySelector(".ar").textContent=op?"▾":"▸";});
+    if(op)autoCover(document.getElementById("main"));
     return;
   }
   if(t.dataset.act==="markread"){if(state.done[state.sec])delete state.done[state.sec];else state.done[state.sec]=true;render();return;}
