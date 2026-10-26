@@ -420,3 +420,296 @@ sec("derm-si-05", "Abscess และ infective panniculitis — คลำได�
          "ก้อนลึกไม่ fluctuant + เรื้อรัง = biopsy อย่ากรีดและอย่าให้สเตียรอยด์",
          "Infective panniculitis", R("Infective panniculitis"), NL_ABS)],
     NL_ABS)
+
+# ───────────────────────────── 6
+sec("derm-si-06", "Folliculitis → furuncle → carbuncle — เรื่องเดียวกันที่ลึกขึ้น",
+    "ลึกขึ้นและรวมหลายรูขุมขน = ชื่อเปลี่ยน การรักษาเปลี่ยน", 8,
+"""### Folliculitis
+- **นิยาม** การติดเชื้อ**ตื้น**ของ **รูขุมขน (hair follicle)**
+- **เชื้อ** ***Staphylococcus aureus*** เป็นหลัก · ที่พบไม่บ่อยคือ ***Pseudomonas* spp. — “hot tub folliculitis”** · เชื้อรา · เริม
+- **เกิดที่ไหนก็ได้ที่มีขน**
+- **อาการ** ตุ่มแดงหรือตุ่มหัวขาวเล็ก ๆ **อยู่กลางรูขุมขน** · คัน กดเจ็บ หรือปวดเล็กน้อย
+- **การวินิจฉัย** clinical
+- **การรักษา** สบู่หรือน้ำยาฆ่าเชื้อ · ยาทา **mupirocin** หรือ **clindamycin** · ถ้ารุนแรงหรือเป็นซ้ำจึงให้**ยากิน**
+- **การป้องกัน** โกนให้ถูกวิธี เลี่ยงเสื้อผ้ารัด รักษาสุขอนามัย
+- **ภาวะแทรกซ้อน** ลุกลามเป็น **furuncle** หรือ **carbuncle**
+
+[[fig:follicle]]
+
+### ลำดับที่ต้องจำให้ขึ้นใจ
+
+| ชื่อ | ขอบเขต | สิ่งที่คลำได้ | การรักษาหลัก |
+|---|---|---|---|
+| **Folliculitis** | ปากรูขุมขน **หนึ่ง**รู ตื้น | ตุ่มเล็ก ไม่มีโพรงหนอง | **ยาทา** |
+| **Furuncle (boil)** | รูขุมขนหนึ่งรู **ลงลึกถึงฐาน** เกิดโพรงหนอง | **fluctuant** | **กรีดระบาย** ± ยากิน |
+| **Carbuncle** | **หลายรูขุมขนติดกันเป็นกลุ่ม** หลายโพรง | ก้อนใหญ่ หลายหัว มีหนอง | **กรีดระบาย + ยากิน** |
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **ตุ่มอยู่กลางรูขุมขน** | เชื้อลงไปตามท่อของรูขุมขน การอักเสบจึงวางตัวรอบท่อนั้น | **ตุ่มเรียงตามรูขน = folliculitis** ไม่ใช่ผื่นกระจายทั่ว |
+| **หัวขาวตรงยอด** | neutrophil รวมกันเป็นหนองใต้ชั้นผิวบาง ๆ | เป็น pustule ไม่ใช่ vesicle (ซึ่งเป็นน้ำใสของไวรัส) |
+| **fluctuance ใน furuncle** | การอักเสบลงถึงฐานรูขุมขนและทำลายเนื้อเยื่อรอบ ๆ จนเกิดโพรงหนอง | **เริ่มคลำได้นุ่ม = ต้องกรีด** |
+| **หลายหัวใน carbuncle** | รูขุมขนที่อยู่ติดกันเชื่อมโพรงหนองถึงกันใต้ผิว | จึงกรีดจุดเดียวไม่พอ ต้องเปิดให้ระบายทุกช่อง |
+| **hot tub folliculitis** | *Pseudomonas* เจริญได้ในน้ำอุ่นที่คลอรีนต่ำ แล้วเข้าทางรูขุมขนที่เปิดจากความร้อน | **ประวัติแช่น้ำอุ่น/อ่างน้ำวน → คิด Pseudomonas** ไม่ใช่ S. aureus |
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **follicular papule / pustule** | ตุ่มหรือตุ่มหนองที่อยู่ตรงรูขุมขน | ลายเซ็นของ folliculitis |
+| **furuncle / boil** | ฝีที่รูขุมขนเดียว | เริ่มมี fluctuance |
+| **carbuncle** | กลุ่มฝีที่เชื่อมกันหลายรูขุมขน | ต้องระบายหลายช่อง |
+| **hot tub folliculitis** | folliculitis จาก Pseudomonas หลังแช่น้ำอุ่น | เบาะแสจากประวัติ |
+| **pustule vs vesicle** | ตุ่มหนอง vs ตุ่มน้ำใส | หนอง = แบคทีเรีย · น้ำใส = ไวรัส |
+""",
+    ["folliculitis → furuncle → carbuncle คือเรื่องเดียวกันที่ลึกและกว้างขึ้น",
+     "เชื้อหลัก S. aureus · ประวัติแช่น้ำอุ่น = Pseudomonas (hot tub folliculitis)",
+     "ตุ่มอยู่ตรงรูขุมขนคือสิ่งที่แยกจากผื่นอื่น",
+     "มี fluctuance = เปลี่ยนจากยาทาเป็นกรีดระบาย",
+     "carbuncle เชื่อมหลายโพรงใต้ผิว กรีดจุดเดียวไม่พอ",
+     "pustule = แบคทีเรีย · vesicle น้ำใส = ไวรัส"],
+    [mcq(N(12), "Three days after using a poorly chlorinated hot tub, a woman develops itchy follicular pustules on the trunk and thighs, sparing areas covered tightly by her swimsuit edges. Which organism is most likely?",
+         ["Pseudomonas aeruginosa",
+          "Staphylococcus aureus",
+          "Streptococcus pyogenes",
+          "Candida albicans",
+          "Malassezia furfur"],
+         0,
+         "**ประวัติแช่อ่างน้ำอุ่นที่คลอรีนต่ำ + ตุ่มหนองตามรูขุมขน** = **hot tub folliculitis** จาก ***Pseudomonas aeruginosa*** ซึ่งสไลด์ระบุไว้เป็น uncommon organism ของ folliculitis · เชื้อนี้เจริญได้ดีในน้ำอุ่นที่ฆ่าเชื้อไม่พอ และความร้อนทำให้รูขุมขนเปิด เชื้อจึงเข้าได้ง่าย\n\nทำไมข้ออื่นผิด\n- ***S. aureus*** เป็นเชื้อที่พบบ่อยที่สุดของ folliculitis **โดยทั่วไป** แต่ไม่อธิบายความสัมพันธ์กับอ่างน้ำอุ่นและการกระจายตามบริเวณที่แช่น้ำ\n- ***S. pyogenes*** ก่อ erysipelas และ lymphangitis มากกว่า ไม่ใช่ folliculitis จากน้ำ\n- ***Candida*** ก่อผื่นในซอกพับที่อับชื้น ไม่ใช่รูปแบบหลังแช่น้ำอุ่น\n- ***Malassezia*** ก่อ **Malassezia folliculitis** ได้จริง แต่สัมพันธ์กับความมันและความอับของลำตัวในที่ร้อนชื้น ไม่ใช่เบาะแสอ่างน้ำวน",
+         "แช่อ่างน้ำอุ่น + ตุ่มหนองตามรูขุมขน = Pseudomonas",
+         "Folliculitis — hot tub", R("Folliculitis"), ["2.3.12", "2.1.50"]),
+     mcq(N(13), "A furuncle on the thigh has become a 5 cm mass with several draining points. Which term and which management apply?",
+         ["Carbuncle — drainage of all loculations plus oral antibiotics",
+          "Carbuncle — topical mupirocin alone is sufficient",
+          "Folliculitis — antibacterial wash and improved shaving technique",
+          "Infective panniculitis — biopsy with special stains before any treatment",
+          "Necrotizing fasciitis — immediate theatre for debridement"],
+         0,
+         "**หลายรูขุมขนเชื่อมกันเป็นก้อนใหญ่และมีหลายช่องระบาย** = **carbuncle** · เพราะหนองอยู่ใน**หลายโพรงที่เชื่อมกันใต้ผิว** การกรีดจุดเดียวจึงไม่พอ ต้อง**เปิดระบายให้ครบทุกช่อง** และเนื่องจากกว้างและมีอาการทั่วกายได้ จึง**ให้ยากินร่วม**\n\nทำไมข้ออื่นผิด\n- **ยาทาอย่างเดียว** ซึมไม่ถึงโพรงหนองหลายช่อง\n- **folliculitis** คือระยะตื้นที่ยังไม่มีโพรงหนอง ไม่ใช่ก้อน 5 ซม. ที่มีทางระบาย\n- **infective panniculitis** เป็นก้อนลึกที่ **ไม่ fluctuant** และดำเนินโรคเป็นสัปดาห์ ไม่ใช่ฝีที่ระบายหนองอยู่\n- **necrotizing fasciitis** ต้องมีปวดเกินกว่าที่ตาเห็น ผิวคล้ำ crepitus หรืออาการทรุด — การมีหลายหัวระบายหนองไม่ใช่ข้อบ่งชี้",
+         "หลายหัว = carbuncle = ระบายทุกช่อง + ยากิน",
+         "Carbuncle", R("Folliculitis — complications"), ["2.3.12", "2.3.12(2)"])],
+    ["2.3.12", "2.1.50"], {"follicle": F.follicle()})
+
+# ───────────────────────────── 7
+NL_NF = ["2.2.50", "B5.2.2(1)"]
+sec("derm-si-07", "Necrotizing fasciitis — โรคที่แพ้ที่เวลา ไม่ใช่ที่ยา",
+    "ปวดเกินกว่าที่ตาเห็น · Type I vs II · ผ่าตัดคือการวินิจฉัย", 11,
+"""- **นิยาม** การติดเชื้อของ **fascia และชั้นใต้ผิวหนัง** ที่**ลุกลามเร็วและคุกคามชีวิต** · **ต้องผ่าตัดด่วน**
+- ✍️ อาจารย์เน้นกลุ่มเสี่ยง **เบาหวานและภาวะกดภูมิ**
+
+### สาเหตุแบ่งสองแบบ
+
+| | **Type I** | **Type II** |
+|---|---|---|
+| เชื้อ | **polymicrobial** — แบคทีเรียหลายชนิดร่วมกัน (รวม anaerobe) | ***Streptococcus pyogenes*** · **MRSA** |
+| บริบทที่พบ | ผู้สูงอายุ เบาหวาน โรคเรื้อรัง หลังผ่าตัดช่องท้องหรือบริเวณก้นและอวัยวะเพศ | คนแข็งแรงก็เป็นได้ หลังบาดแผลเล็กน้อย |
+| เบาะแส | มี **แก๊ส** ในเนื้อเยื่อได้มากกว่า (anaerobe) | ลุกลามเร็วมาก อาจมี **toxic shock** ร่วม |
+
+[[fig:nf]]
+
+### อาการ — เรียงตามลำดับที่มันปรากฏ
+1. **ปวดรุนแรงเกินกว่าที่ตรวจพบ (severe pain out of proportion to physical signs)** ← **สัญญาณที่มาก่อนและสำคัญที่สุด**
+2. **บวม แดง ผิวเปลี่ยนสี ลุกลามเร็ว**
+3. **crepitus · ตุ่มน้ำและตุ่มเลือด (bullae) · เนื้อตาย**
+4. **อาการทั่วกาย — ไข้ ความดันต่ำ สับสน**
+
+### การวินิจฉัย
+- **ความสงสัยทางคลินิกสำคัญที่สุด (clinical suspicion is critical)**
+- **CT หรือ MRI** เห็นการอักเสบที่ชั้น fascia
+- **การผ่าตัดสำรวจ (surgical exploration) คือสิ่งที่ยืนยันการวินิจฉัย**
+
+### การรักษา
+- **ผ่าตัดตัดเนื้อตายทันที (immediate surgical debridement)**
+- **ยาฆ่าเชื้อกว้างทางหลอดเลือดดำ** เช่น **vancomycin + piperacillin-tazobactam**
+- **ดูแลในหอผู้ป่วยวิกฤต**
+
+### ภาวะแทรกซ้อนและการป้องกัน
+- **septic shock · multi-organ failure · อัตราตายสูงถ้าไม่รักษา**
+- ป้องกันด้วยการ**ดูแลแผลตั้งแต่ต้น คุมเบาหวาน และจัดการภาวะกดภูมิ**
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **ปวดมากแต่ผิวยังดูไม่แย่** | เชื้อลุกลามไปตาม **fascia** ซึ่งอยู่ใต้ชั้นไขมันและมีเลือดไปเลี้ยงน้อย · เส้นประสาทถูกทำลายก่อนที่ผิวด้านบนจะเปลี่ยนแปลง | **ช่องว่างระหว่าง “ปวดมาก” กับ “ผิวดูเกือบปกติ” คือหน้าต่างทองที่ต้องจับให้ได้** |
+| **ผิวคล้ำและตุ่มเลือด** | หลอดเลือดที่ทะลุจาก fascia ขึ้นมาเลี้ยงผิวถูกอุดตัน (thrombosis) ผิวจึงขาดเลือดตาย | เป็นสัญญาณ**ระยะหลัง** ถ้ารอให้เห็นจะสายแล้ว |
+| **crepitus** | anaerobe สร้างแก๊สในเนื้อเยื่อ | พบใน **Type I** มากกว่า |
+| **ชาบริเวณรอยโรค** | เส้นประสาทผิวหนังถูกทำลาย | ปวดมากแล้วกลับชา = แย่ลง ไม่ใช่ดีขึ้น |
+| **ความดันต่ำและสับสนเร็ว** | exotoxin ของ *S. pyogenes* เป็น superantigen กระตุ้น cytokine มหาศาล | ภาพของ **Type II** ที่มี toxic shock |
+
+> **กับดักที่ทำให้วินิจฉัยช้า** — รอผล CT ก่อนปรึกษาศัลยกรรม · เชื่อว่าผิวที่ยังดูดีแปลว่าไม่รุนแรง · ให้ยาแก้ปวดแล้วนัดดูอาการ · **ทั้งสามข้อทำให้เสียเวลาที่เป็นตัวตัดสินชีวิต**
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **pain out of proportion** | ปวดเกินกว่าสิ่งที่ตรวจพบ | สัญญาณไวที่สุด |
+| **crepitus** | เสียงกรอบแกรบจากแก๊สใต้ผิว | Type I |
+| **hemorrhagic bullae** | ตุ่มน้ำที่มีเลือด | สัญญาณระยะหลัง |
+| **surgical exploration** | การผ่าตัดสำรวจ | เป็นการวินิจฉัยที่ยืนยัน |
+| **debridement** | การตัดเนื้อตายออก | การรักษาหลัก ทำซ้ำได้ |
+| **polymicrobial (Type I)** | หลายเชื้อร่วมกัน | กลุ่มเบาหวาน ผู้สูงอายุ |
+| **monomicrobial (Type II)** | เชื้อเดียว — S. pyogenes หรือ MRSA | คนแข็งแรงก็เป็นได้ |
+| **superantigen** | สารพิษกระตุ้นภูมิคุ้มกันรุนแรง | กลไกของ toxic shock |
+""",
+    ["ปวดเกินกว่าที่ตาเห็น = สัญญาณแรกและไวที่สุดของ necrotizing fasciitis",
+     "Type I = polymicrobial (เบาหวาน ผู้สูงอายุ) · Type II = S. pyogenes หรือ MRSA",
+     "crepitus และตุ่มเลือดเป็นสัญญาณระยะหลัง ถ้ารอให้ครบจะสาย",
+     "การผ่าตัดสำรวจคือการวินิจฉัย ไม่ใช่ CT/MRI",
+     "รักษา: debridement ทันที + vancomycin ร่วมกับ piperacillin-tazobactam + ICU",
+     "ปวดมากแล้วกลับชา = เส้นประสาทถูกทำลาย แปลว่าแย่ลง"],
+    [mcq(N(14), "A 58-year-old man with diabetes has 12 hours of rapidly worsening leg pain. He rates the pain 10/10, yet the overlying skin shows only mild erythema and slight swelling. He is febrile with a blood pressure of 92/54 mmHg. What is the most appropriate immediate action?",
+         ["Urgent surgical consultation for operative exploration",
+          "Contrast-enhanced CT of the leg before any referral",
+          "Admit for intravenous cefazolin and reassess in the morning",
+          "Mark the erythema margin and observe for six hours",
+          "Doppler ultrasound to exclude deep vein thrombosis first"],
+         0,
+         "**ปวด 10/10 ที่ไม่สมดุลกับผิวที่ยังดูเกือบปกติ + ลุกลามเป็นชั่วโมง + ไข้และความดันต่ำ + เบาหวาน** = **necrotizing fasciitis** จนกว่าจะพิสูจน์เป็นอื่น · สไลด์ระบุว่า **clinical suspicion สำคัญที่สุด** และ **surgical exploration เป็นสิ่งที่ยืนยันการวินิจฉัย** จึงต้อง**ปรึกษาศัลยกรรมทันที** พร้อมให้ยา IV กว้างและกู้ชีพไปด้วย\n\nทำไมข้ออื่นผิดและอันตราย\n- **ส่ง CT ก่อนปรึกษา** ทำให้เสียเวลาในโรคที่วัดผลลัพธ์กันเป็นชั่วโมง · CT ช่วยยืนยันได้แต่**ห้ามให้การรอผลทำให้การผ่าตัดช้า**\n- **cefazolin แล้วรอเช้า** คลุมเชื้อไม่ครบ (ไม่คลุม MRSA และ anaerobe) และยาไม่สามารถแทนการตัดเนื้อตายได้\n- **ขีดขอบแล้วสังเกต 6 ชั่วโมง** เป็นวิธีของ cellulitis ที่คนไข้คงที่ ไม่ใช่ของคนที่ความดันตกและปวดผิดปกติ\n- **Doppler ก่อน** ทำให้ช้า และ DVT ไม่อธิบายไข้กับความดันต่ำ",
+         "ปวดไม่สมดุลกับผิว + สัญญาณชีพแย่ = โทรหาศัลยกรรม อย่าโทรหาห้องเอกซเรย์",
+         "Necrotizing fasciitis — immediate action", R("Necrotizing fasciitis"), NL_NF),
+     mcq(N(15), "Which statement about the two types of necrotizing fasciitis is correct?",
+         ["Type I is polymicrobial, whereas Type II is due to Streptococcus pyogenes or MRSA",
+          "Type I is caused by Streptococcus pyogenes alone and Type II by anaerobes",
+          "Type II occurs only in patients with diabetes or immunosuppression",
+          "Type I is managed medically and Type II surgically",
+          "Both types are confirmed by blood culture before surgery"],
+         0,
+         "สไลด์แบ่งไว้ตรงไปตรงมา — **Type I = polymicrobial** และ **Type II = *S. pyogenes* หรือ MRSA**\n\nทำไมข้ออื่นผิด\n- ข้อสองสลับกัน — *S. pyogenes* คือ **Type II** ไม่ใช่ Type I\n- **Type II เกิดในคนแข็งแรงได้** หลังบาดแผลเล็กน้อย จึงไม่จำกัดเฉพาะเบาหวานหรือกดภูมิ (กลุ่มนั้นเด่นใน Type I)\n- **ทั้งสองแบบต้องผ่าตัด** ไม่มีแบบที่รักษาด้วยยาเพียงอย่างเดียว\n- **ไม่รอผลเพาะเชื้อจากเลือดก่อนผ่าตัด** เพราะจะเสียเวลา · การวินิจฉัยยืนยันด้วย **surgical exploration**",
+         "Type I polymicrobial · Type II strep หรือ MRSA · ทั้งคู่ต้องเข้าห้องผ่าตัด",
+         "Necrotizing fasciitis — types", R("Necrotizing fasciitis — causes"), NL_NF)],
+    NL_NF, {"nf": F.nf()})
+
+# ───────────────────────────── 8
+sec("derm-si-08", "Cutaneous anthrax — แผลดำที่ไม่เจ็บ",
+    "painless papule → vesicle → black eschar + บวมมาก", 7,
+"""- **เชื้อ** ***Bacillus anthracis*** — พบในผู้ที่**สัมผัสผลิตภัณฑ์จากสัตว์** (หนัง ขนสัตว์ เนื้อ) · **cutaneous เป็นรูปแบบที่พบบ่อยที่สุด**ของ anthrax
+- **ลำดับของรอยโรค** **ตุ่มเล็กที่ไม่เจ็บ (painless papule)** → **vesicle** → **แผลเนื้อตายที่มีสะเก็ดดำ (necrotic ulcer with black eschar)**
+- **ลักษณะร่วมที่เป็นลายเซ็น** **บวมรอบรอยโรคมากผิดส่วน (significant surrounding edema)** · มีไข้และอ่อนเพลียได้
+- **การวินิจฉัย** ลักษณะทางคลินิก · **Gram stain และเพาะเชื้อจากรอยโรค** · **PCR และ immunohistochemistry** ในห้องปฏิบัติการอ้างอิง
+- **การรักษา** **penicillin G** หรือ **fluoroquinolone ร่วมกับ rifampicin** · ให้ทางหลอดเลือดดำถ้ามีการลุกลามทั่วกาย
+- **ภาวะแทรกซ้อน** **septicaemia และ meningitis**
+- **การป้องกัน** เลี่ยงผลิตภัณฑ์สัตว์ที่ปนเปื้อน · **วัคซีน anthrax** ในกลุ่มเสี่ยงสูง
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **ไม่เจ็บ** | **lethal toxin และ edema toxin** ของเชื้อกดการทำงานของเซลล์ภูมิคุ้มกันและรบกวนสัญญาณความเจ็บเฉพาะที่ | **แผลเนื้อตายที่ “ไม่เจ็บ” เป็นสิ่งที่ผิดปกติมาก** — ของแบคทีเรียทั่วไปจะเจ็บ |
+| **สะเก็ดดำตรงกลาง** | toxin ทำให้หลอดเลือดเล็กตายและเลือดไม่ไปเลี้ยง เนื้อตรงกลางจึงตายเป็น eschar | ลายเซ็นที่ทำให้นึกถึง anthrax |
+| **บวมมากผิดส่วน** | **edema toxin** กระตุ้น adenylate cyclase ทำให้น้ำรั่วออกนอกหลอดเลือดมาก | บวมเกินกว่าขนาดแผล = เบาะแสสำคัญ |
+| **ลุกลามเป็น septicaemia** | เชื้อมี capsule ต้าน phagocytosis จึงเข้ากระแสเลือดได้ | เหตุผลที่ต้องให้ยาทางหลอดเลือดดำเมื่อมีอาการทั่วกาย |
+
+> **DDx ของแผลที่มีสะเก็ดดำ** — **ecthyma gangrenosum** (*Pseudomonas* ในผู้ป่วย neutropenia) · **แผลกัดของแมงมุมบางชนิด** · **mucormycosis** ในผู้ป่วยเบาหวานคุมไม่ได้ · **แผลเนื้อตายจากหลอดเลือดอุดตัน** · ตัวช่วยแยกคือ **ประวัติสัมผัสสัตว์ + ไม่เจ็บ + บวมมาก**
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **eschar** | สะเก็ดแผลเนื้อตายสีดำ | ลายเซ็นของ cutaneous anthrax |
+| **painless ulcer** | แผลที่ไม่เจ็บ | ผิดปกติสำหรับแบคทีเรียทั่วไป |
+| **edema toxin / lethal toxin** | สารพิษสองตัวของ B. anthracis | อธิบายทั้งอาการบวมและไม่เจ็บ |
+| **zoonosis** | โรคติดต่อจากสัตว์สู่คน | หมวดของ anthrax (นล. กลุ่ม 3) |
+| **immunohistochemistry** | การย้อมด้วยแอนติบอดีจำเพาะ | การตรวจยืนยันใน reference lab |
+""",
+    ["cutaneous anthrax: ตุ่มไม่เจ็บ → vesicle → แผลสะเก็ดดำ + บวมมากผิดส่วน",
+     "เบาะแสคือประวัติสัมผัสผลิตภัณฑ์จากสัตว์",
+     "แผลเนื้อตายที่ไม่เจ็บเป็นสิ่งผิดปกติ ต้องนึกถึง anthrax",
+     "edema toxin อธิบายอาการบวม · lethal toxin อธิบายการไม่เจ็บและเนื้อตาย",
+     "รักษาด้วย penicillin G หรือ fluoroquinolone + rifampicin",
+     "ภาวะแทรกซ้อน: septicaemia และ meningitis"],
+    [mcq(N(16), "A man who works in a tannery has a 1 cm ulcer with a black central eschar on the forearm, surrounded by marked oedema. Strikingly, the lesion is not painful. Which organism is most likely?",
+         ["Bacillus anthracis",
+          "Staphylococcus aureus",
+          "Pseudomonas aeruginosa",
+          "Streptococcus pyogenes",
+          "Mycobacterium marinum"],
+         0,
+         "**อาชีพสัมผัสหนังสัตว์ + แผลสะเก็ดดำ + บวมมากผิดส่วน + ไม่เจ็บ** = **cutaneous anthrax** จาก ***Bacillus anthracis*** · จุดที่ชี้ชัดที่สุดคือ **ไม่เจ็บ** ซึ่งอธิบายด้วย **lethal toxin** ที่กดการทำงานของเซลล์ภูมิคุ้มกันในบริเวณนั้น และ **บวมมาก** จาก **edema toxin**\n\nทำไมข้ออื่นผิด\n- ***S. aureus*** ก่อฝีและ furuncle ที่ **เจ็บมาก** และไม่ให้ eschar ดำพร้อมบวมผิดส่วน\n- ***Pseudomonas*** ก่อ **ecthyma gangrenosum** ที่มีสะเก็ดดำได้จริง แต่เกิดใน **ผู้ป่วย neutropenia** ไม่ใช่คนทำงานโรงหนังที่สุขภาพดี และมักเจ็บ\n- ***S. pyogenes*** ก่อ erysipelas และ necrotizing fasciitis ซึ่ง**เจ็บเด่น**\n- ***M. marinum*** สัมพันธ์กับ**การสัมผัสน้ำ** ให้ nodule เรื้อรังที่มือ ไม่ใช่ eschar ดำที่บวมมาก",
+         "แผลสะเก็ดดำที่ไม่เจ็บ + บวมมาก + สัมผัสสัตว์ = anthrax",
+         "Cutaneous anthrax", R("Cutaneous anthrax"), ["2.3.1-3(9)"])],
+    ["2.3.1-3(9)"])
+
+# ───────────────────────────── 9
+sec("derm-si-09", "Pitted keratolysis และ Corynebacterium — เท้าเหม็น ซอกพับ และ Wood lamp",
+    "หลุมที่ฝ่าเท้า · erythrasma coral-red · trichomycosis ที่เส้นขน", 9,
+"""### Pitted keratolysis
+- **ชื่ออื่น** keratoma plantare sulcatum
+- **เชื้อ** ***Micrococcus sedentarius*** — **gram-positive**
+- **กลุ่มที่พบ** **ผู้ชายวัยผู้ใหญ่ที่เท้าเหงื่อออกมาก**
+- **อาการ** **เท้ามีกลิ่นเหม็น** · **หลุมเล็ก ๆ คล้ายปากแอ่ง (crater-like depressions) ในชั้น stratum corneum** บริเวณ**ฝ่าเท้าส่วนที่รับน้ำหนัก** · **ไม่มีผื่นแดงหรือการอักเสบ**
+- **การรักษา** **ทำให้เท้าแห้ง** · รักษาเหงื่อออกมากด้วย **aluminium chloride 20% solution** · **benzoyl peroxide (wash หรือ 5% gel)** · **clindamycin solution** · **erythromycin solution**
+
+### Erythrasma
+- **เชื้อ** ***Corynebacterium minutissimum*** — short gram-positive rod ที่มี **subterminal granules**
+- **ตำแหน่ง**
+  - **ซอกนิ้วเท้า (พบบ่อยที่สุด โดยเฉพาะนิ้วที่ 4–5)** — ปื้นขาวเปียกยุ่ยหนา (hyperkeratotic white macerated plaque)
+  - **บริเวณซอกพับ (intertriginous area)** — **ปื้นสีน้ำตาลแดงขอบชัดมีสะเก็ดละเอียด**
+- **Wood lamp** — **เรืองแสงสีแดงปนส้ม (coral-red fluorescence)** จาก **coproporphyrin III** ← **จุดที่ออกสอบ**
+- **การรักษา** เฉพาะที่: **BP wash 5% gel · clindamycin solution 2% · azole cream** · กระจายกว้าง: **erythromycin กิน 1 กรัม** หรือ **clarithromycin ครั้งเดียว** · ป้องกันการเป็นซ้ำด้วย **BP bar**
+
+[[fig:wood]]
+
+### Trichomycosis axillaris และ pubis
+- **เชื้อ** ***Corynebacterium*** — ติดเชื้อที่ **เส้นขน (hair shaft)** ไม่ใช่ที่ผิวหนัง
+- **อาการ** **ปุ่มหนาเกาะบนเส้นขน** ที่**รักแร้และหัวหน่าว** · เชื้อสร้างเม็ดสีได้หลายสี **น้ำตาลอ่อน แดง เหลือง ดำ** · **ไม่มีอาการแต่มีกลิ่น**
+- **DDx** **pediculosis (เหา) · white piedra · black piedra**
+- **การตรวจ** **Gram stain ของปุ่มที่ขูดออกมา** → เห็น **coryneform morphology**
+- **การรักษา** **โกนขน** · **BP wash หรือ gel**
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **หลุมที่ฝ่าเท้าโดยไม่อักเสบ** | เชื้อสร้าง **protease** ย่อย keratin ของ stratum corneum เฉพาะจุด โดยไม่ลงลึกถึงชั้นที่มีหลอดเลือด | **ไม่แดง ไม่เจ็บ แต่เป็นหลุม** = pitted keratolysis ไม่ใช่เชื้อราหรือหูด |
+| **เท้าเหม็น** | แบคทีเรียย่อย keratin แล้วปล่อย **sulphur compound** | กลิ่นเป็นอาการนำที่คนไข้มาหาหมอ |
+| **coral-red ใต้ Wood lamp** | **coproporphyrin III** ที่เชื้อสร้างเป็น fluorophore เปล่งแสงเมื่อรับ UV ~365 nm | **แยก erythrasma จากเชื้อราในซอกพับ** ซึ่งหน้าตาเหมือนกันมาก |
+| **ปุ่มบนเส้นขนไม่ใช่ที่ผิว** | เชื้อเกาะและสร้าง matrix หุ้มรอบ hair shaft | ถ้ารอยโรคอยู่**บนเส้นขน** ไม่ใช่ที่รูขุมขน → ไม่ใช่ folliculitis |
+| **หลายสีของปุ่ม** | เชื้อแต่ละสายพันธุ์สร้างเม็ดสีต่างกัน | ช่วยแยกจาก white/black piedra ที่เป็นเชื้อรา |
+
+> **ความสำคัญเชิงการรักษา** — ทั้งสามโรคนี้เป็น **แบคทีเรีย** ที่หน้าตาเหมือนเชื้อรา ถ้าวินิจฉัยผิดแล้วให้**ยาฆ่าเชื้อรา จะไม่หาย** · **Wood lamp และ Gram stain จึงเปลี่ยนการรักษาได้จริง**
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **stratum corneum** | ชั้นขี้ไคลนอกสุด | ชั้นที่ถูกย่อยเป็นหลุม |
+| **crater-like depression / pit** | หลุมเล็กคล้ายปากแอ่ง | ลายเซ็นของ pitted keratolysis |
+| **hyperhidrosis** | ภาวะเหงื่อออกมาก | ปัจจัยที่ต้องรักษาร่วม |
+| **intertriginous area** | บริเวณซอกพับ | ตำแหน่งของ erythrasma |
+| **coral-red fluorescence** | เรืองแสงสีแดงปนส้ม | Wood lamp ของ erythrasma |
+| **coproporphyrin III** | สารเรืองแสงที่เชื้อสร้าง | กลไกของ coral-red |
+| **Wood lamp** | ไฟ UV ~365 nm สำหรับส่องผิวหนัง | เครื่องมือข้างเตียง |
+| **hair shaft** | ก้านเส้นขน | ตำแหน่งของ trichomycosis |
+| **coryneform** | รูปร่างแบบ Corynebacterium | ผล Gram stain |
+| **piedra** | โรคเชื้อราที่เกาะเส้นขน | DDx ของ trichomycosis |
+""",
+    ["pitted keratolysis: Micrococcus sedentarius · เท้าเหงื่อมาก · หลุมที่ฝ่าเท้าโดยไม่อักเสบ",
+     "erythrasma: Corynebacterium minutissimum · ซอกนิ้วเท้า 4–5 และซอกพับ",
+     "Wood lamp coral-red = coproporphyrin III = erythrasma (ไม่ใช่เชื้อรา)",
+     "erythrasma กระจายกว้าง: erythromycin 1 กรัม หรือ clarithromycin ครั้งเดียว",
+     "trichomycosis เกาะที่เส้นขน ไม่ใช่รูขุมขน → DDx เหา white/black piedra",
+     "สามโรคนี้เป็นแบคทีเรีย ให้ยาฆ่าเชื้อราจะไม่หาย"],
+    [mcq(N(17), "A 34-year-old man has well-defined reddish-brown patches with fine scale in both groins. Under a Wood lamp the patches fluoresce coral-red. Which treatment is appropriate?",
+         ["Topical clindamycin solution or oral erythromycin if widespread",
+          "Topical terbinafine cream twice daily for four weeks",
+          "Oral griseofulvin for six weeks",
+          "Topical high-potency corticosteroid",
+          "Oral acyclovir for seven days"],
+         0,
+         "**coral-red fluorescence** ใต้ Wood lamp = **erythrasma** จาก ***Corynebacterium minutissimum*** ซึ่งเป็น **แบคทีเรีย** · การรักษาตามสไลด์คือ **clindamycin solution 2%, benzoyl peroxide, azole cream** เฉพาะที่ หรือ **erythromycin กิน 1 กรัม / clarithromycin ครั้งเดียว** เมื่อกระจายกว้าง · การเรืองแสงเกิดจาก **coproporphyrin III** ที่เชื้อสร้าง\n\nทำไมข้ออื่นผิด\n- **terbinafine** และ **griseofulvin** เป็น**ยาฆ่าเชื้อรา** ซึ่งไม่ออกฤทธิ์กับ Corynebacterium · นี่คือกับดักหลักของโจทย์ เพราะผื่นในซอกพับหน้าตาเหมือน tinea cruris มาก และ **Wood lamp คือสิ่งที่แยกออก**\n- **สเตียรอยด์แรงสูง** กดภูมิเฉพาะที่และทำให้การติดเชื้อแย่ลง\n- **acyclovir** ใช้กับไวรัสเริม ไม่เกี่ยวกับรอยโรคนี้",
+         "ซอกพับ + coral-red = แบคทีเรีย ให้ยาต้านแบคทีเรีย อย่าให้ยาฆ่าเชื้อรา",
+         "Erythrasma — Wood lamp", R("Erythrasma"), ["2.3.12", "2.1.50"]),
+     mcq(N(18), "A man complains of malodorous feet. On the weight-bearing areas of both soles there are multiple small crater-like depressions in the stratum corneum, with no erythema or scaling between the toes. Which organism and which first measure?",
+         ["Micrococcus sedentarius — keep the feet dry and treat hyperhidrosis",
+          "Trichophyton rubrum — topical terbinafine",
+          "Candida albicans — topical nystatin",
+          "Corynebacterium minutissimum — oral erythromycin",
+          "Staphylococcus aureus — oral dicloxacillin"],
+         0,
+         "**เท้าเหม็น + หลุมเล็กในชั้น stratum corneum บริเวณรับน้ำหนัก + ไม่มีการอักเสบ** = **pitted keratolysis** จาก ***Micrococcus sedentarius*** · มาตรการแรกตามสไลด์คือ **ทำให้เท้าแห้งและรักษาเหงื่อออกมาก** ด้วย **aluminium chloride 20%** ร่วมกับ benzoyl peroxide หรือ clindamycin/erythromycin solution เพราะความชื้นคือเงื่อนไขที่ทำให้เชื้อย่อย keratin ได้\n\nทำไมข้ออื่นผิด\n- ***Trichophyton rubrum*** ก่อ **tinea pedis** ซึ่งมี**สะเก็ดและผื่นแดง โดยเฉพาะซอกนิ้ว** — โจทย์บอกชัดว่าไม่มี\n- ***Candida*** ก่อผื่นแดงเปียกในซอกพับ ไม่ใช่หลุมบนฝ่าเท้าที่ไม่อักเสบ\n- ***C. minutissimum*** ก่อ **erythrasma** ซึ่งให้**ปื้นน้ำตาลแดงและ coral-red ใต้ Wood lamp** ไม่ใช่หลุม\n- ***S. aureus*** ก่อ folliculitis และฝีที่เจ็บ ไม่ใช่รอยโรคไม่อักเสบแบบนี้",
+         "หลุมที่ฝ่าเท้า + เหม็น + ไม่อักเสบ = pitted keratolysis → ทำให้แห้งก่อน",
+         "Pitted keratolysis", R("Pitted keratolysis"), ["2.3.12", "2.1.50"])],
+    ["2.3.12", "2.1.50"], {"wood": F.wood()})
