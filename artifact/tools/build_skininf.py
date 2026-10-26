@@ -713,3 +713,578 @@ sec("derm-si-09", "Pitted keratolysis และ Corynebacterium — เท้า
          "หลุมที่ฝ่าเท้า + เหม็น + ไม่อักเสบ = pitted keratolysis → ทำให้แห้งก่อน",
          "Pitted keratolysis", R("Pitted keratolysis"), ["2.3.12", "2.1.50"])],
     ["2.3.12", "2.1.50"], {"wood": F.wood()})
+
+# ───────────────────────────── 10
+sec("derm-si-10", "แปลคำบรรยายรอยโรคให้เป็นชื่อโรค",
+    "ตารางสรุปของสไลด์ · ฝึกอ่านโจทย์ที่ให้มาเป็นคำศัพท์", 8,
+"""สไลด์ปิดหมวดแบคทีเรียด้วยตารางนี้ ซึ่งเป็น**เครื่องมือทำข้อสอบโดยตรง** เพราะโจทย์มักให้มาเป็น**คำบรรยายรอยโรค** แล้วให้เลือกชื่อโรค
+
+| Condition | Morphology (skin lesion terms) | Key features |
+|---|---|---|
+| **Impetigo** | **erosions · crusts · bullae** | **superficial · non-scarring** |
+| **Ecthyma** | **ulcer with thick crust** | impetigo ที่ลึกกว่า · **อาจเป็นแผลเป็น** |
+| **Folliculitis** | **follicular papules and pustules** | **อยู่กลางรูขุมขน** |
+| **Erysipelas** | **raised, well-demarcated erythematous plaques** | กินท่อน้ำเหลือง · มีอาการทั่วกาย |
+| **Cellulitis** | **diffuse, erythematous, edematous plaques** | **ขอบไม่ชัด** · ลงถึง deep dermis |
+| **Necrotizing fasciitis** | **hemorrhagic bullae · necrosis · crepitus** | **ภาวะฉุกเฉินทางศัลยกรรม** · ลุกลามเร็ว |
+
+### คำศัพท์บรรยายรอยโรคที่ต้องแปลให้ออก
+เป็นภาษาที่ใช้ทั้งในข้อสอบและใบ consult
+
+| คำ | ความหมาย | ความลึกที่สื่อ |
+|---|---|---|
+| **Macule** | จุดสีที่**ไม่นูน** ขนาดเล็ก | อยู่ในชั้นผิว ไม่มีการบวม |
+| **Patch** | เหมือน macule แต่**ใหญ่กว่า** | เช่น erythrasma |
+| **Papule** | ตุ่มนูนเล็ก (< 1 ซม.) | ผิวหรือ dermis ตื้น |
+| **Plaque** | **ปื้นนูนแบนกว้าง** | dermis — เช่น erysipelas, cellulitis |
+| **Nodule** | **ก้อนลึก** คลำได้ในเนื้อ | dermis ลึกหรือชั้นไขมัน — เช่น panniculitis |
+| **Vesicle** | ตุ่ม**น้ำใส** < 0.5 ซม. | แยกชั้นใน epidermis — ไวรัส |
+| **Bulla** | ตุ่มน้ำ**ใหญ่** > 0.5 ซม. | bullous impetigo, NF ระยะหลัง |
+| **Pustule** | ตุ่มที่มี**หนอง** | แบคทีเรีย |
+| **Erosion** | ผิวหลุด**แค่ epidermis** | **ไม่เป็นแผลเป็น** |
+| **Ulcer** | ผิวหลุด**ถึง dermis หรือลึกกว่า** | **เป็นแผลเป็น** |
+| **Crust** | สะเก็ดจากน้ำเหลือง เลือด หรือหนองที่แห้ง | honey-coloured = impetigo |
+| **Eschar** | สะเก็ด**เนื้อตายสีดำ** | anthrax, เนื้อตายจากขาดเลือด |
+| **Induration** | เนื้อ**แข็ง**ขึ้นเมื่อคลำ | เรื้อรัง — เชื้อรา, mycobacteria |
+| **Fluctuance** | กด**ยวบ**เพราะมีของเหลวในโพรง | abscess → กรีด |
+| **Crepitus** | กรอบแกรบจาก**แก๊ส** | necrotizing infection |
+
+#### วิธีใช้ตารางนี้ทำข้อสอบ
+ไล่สามขั้นเสมอ
+
+1. **คำบรรยายบอกความลึกอะไร** — erosion = ตื้น · ulcer = ลึก · nodule = ชั้นไขมัน
+2. **ขอบเป็นอย่างไร** — well-demarcated/raised = erysipelas · diffuse/ill-defined = cellulitis
+3. **มีคำที่เป็นสัญญาณฉุกเฉินไหม** — **hemorrhagic bullae · necrosis · crepitus · pain out of proportion** → ตอบ **necrotizing fasciitis** และตอบว่าต้องผ่าตัด
+
+> **กับดักที่พบบ่อยในข้อสอบ** — คำว่า **“bullae”** ปรากฏทั้งใน **bullous impetigo** (ตุ่มน้ำใส ไม่เจ็บ เด็ก ตื้น) และใน **necrotizing fasciitis** (**ตุ่มมีเลือด** ปวดรุนแรง ผิวคล้ำ) · **คำเดียวกันแต่บริบทต่างกันสุดขั้ว** ให้อ่านคำขยายข้างหน้าเสมอ
+""",
+    ["โจทย์ให้คำบรรยายรอยโรค → แปลเป็นความลึก → แปลเป็นชื่อโรค",
+     "erosion = ตื้น ไม่เป็นแผลเป็น · ulcer = ลึก เป็นแผลเป็น",
+     "well-demarcated raised plaque = erysipelas · diffuse ill-defined = cellulitis",
+     "hemorrhagic bullae + necrosis + crepitus = necrotizing fasciitis",
+     "คำว่า bullae อยู่ได้ทั้งใน bullous impetigo และ NF — ดูคำขยายและบริบท"],
+    [mcq(N(19), "An examination question describes: “diffuse erythematous oedematous plaques with ill-defined borders on the left shin, warm and tender, with fever.” Which diagnosis do these morphology terms point to?",
+         ["Cellulitis",
+          "Erysipelas",
+          "Impetigo",
+          "Ecthyma",
+          "Folliculitis"],
+         0,
+         "คำสำคัญคือ **diffuse · oedematous plaques · ill-defined borders** ซึ่งตารางของสไลด์จับคู่กับ **cellulitis** โดยตรง เพราะรอยโรคอยู่ใน **deep dermis ถึงชั้นไขมัน** ที่ไม่มีผนังกั้น ขอบจึงเบลอ\n\nทำไมข้ออื่นผิด — แต่ละข้อมีคำบรรยายของตัวเองในตารางเดียวกัน\n- **erysipelas** = **raised, well-demarcated** plaques ซึ่งตรงข้ามกับ ill-defined\n- **impetigo** = **erosions, crusts, bullae** ตื้น ๆ ไม่ใช่ plaque บวมทั้งแผ่น\n- **ecthyma** = **ulcer with thick crust**\n- **folliculitis** = **follicular papules and pustules** ที่อยู่ตรงรูขุมขน",
+         "ill-defined + oedematous plaque = cellulitis แทบทุกครั้ง",
+         "Morphology → diagnosis", R("Summary table"), NL_SKIN),
+     mcq(N(20), "Which description should make you think of a surgical emergency rather than a simple skin infection?",
+         ["Hemorrhagic bullae with skin necrosis and crepitus",
+          "Honey-coloured crusts around the nose and mouth",
+          "Follicular pustules on the thighs after shaving",
+          "A well-demarcated raised erythematous plaque on the cheek",
+          "Reddish-brown patches with fine scale in the groin"],
+         0,
+         "**hemorrhagic bullae + necrosis + crepitus** เป็นชุดคำที่ตารางสไลด์จับคู่กับ **necrotizing fasciitis** และกำกับว่าเป็น **surgical emergency** · กลไกคือหลอดเลือดที่เลี้ยงผิวถูกอุดตันทำให้ผิวตาย และ anaerobe สร้างแก๊สในเนื้อเยื่อ\n\nทำไมข้ออื่นไม่ใช่ภาวะฉุกเฉินทางศัลยกรรม\n- **honey-coloured crust** = impetigo ตื้น ๆ รักษาด้วยยาทา\n- **follicular pustules หลังโกนขน** = folliculitis\n- **well-demarcated raised plaque ที่แก้ม** = erysipelas ให้ penicillin\n- **ปื้นน้ำตาลแดงมีสะเก็ดละเอียดที่ขาหนีบ** = erythrasma ให้ยาต้านแบคทีเรียเฉพาะที่",
+         "เห็นคำว่า necrosis หรือ crepitus = หยุดคิดเรื่องยาแล้วโทรหาศัลยกรรม",
+         "Red-flag morphology", R("Summary table"), NL_NF)],
+    NL_SKIN)
+
+# ───────────────────────────── 11
+NL_WART = ["2.3.12(15)", "B4.2.2(8)"]
+sec("derm-si-11", "HPV และหูด — จำเลข type คู่กับตำแหน่ง",
+    "ชนิดของหูด · koilocytosis · บันไดการรักษา", 11,
+"""- **ไวรัส** **HPV** เป็น **double-stranded DNA virus** วงศ์ **Papillomaviridae** · มีมากกว่า **200 types**
+  - **cutaneous types** (HPV 1, 2, 3, 4, 10) → หูดที่ผิวหนัง
+  - **mucosal types** (HPV 6, 11, 16, 18) → หูดอวัยวะเพศและมะเร็ง
+- **การติดต่อ** สัมผัสผิวโดยตรง · **autoinoculation (แพร่จากที่หนึ่งไปอีกที่ในตัวเอง)** · fomites
+- **พยาธิกำเนิด** เป้าหมายคือ **basal keratinocyte** ผ่านรอยถลอกเล็ก ๆ → ไวรัสกระตุ้น **การแบ่งตัวของเซลล์และชะลอ apoptosis** → เกิดหูด · **แฝงตัวได้เป็นเดือนถึงปี**
+
+[[fig:warts]]
+
+### การวินิจฉัย
+- **clinical** จากรูปร่างและตำแหน่ง
+- **dermatoscopy** — **“red dots”** และ **“mosaic pattern”** ใน plantar wart
+- **biopsy** เมื่อรูปร่างผิดแผก ดื้อการรักษา หรือต้องตัดมะเร็งออกไป
+- **Histopathology** — **koilocytosis เป็น hallmark** · **hypergranulosis** · **papillomatosis**
+- **PCR / DNA hybridization** ระบุ type (ใช้ในงานวิจัยและงานมะเร็งเป็นหลัก)
+
+### การรักษา
+
+| Category | Methods | Notes |
+|---|---|---|
+| **Physical destruction** | **cryotherapy · electrosurgery · curettage** | **ใช้บ่อยที่สุด ประสิทธิภาพสูง** |
+| **Chemical agents** | **salicylic acid · trichloroacetic acid · podophyllin** | **first-line ของ common และ plantar wart** |
+| **Immunotherapy** | **imiquimod · Candida antigen · MMR · PPD · intralesional interferon** | สำหรับรายดื้อหรือหลายตำแหน่ง |
+| **Laser** | **CO₂ · pulsed dye laser** | หูดที่ดื้อ |
+| **Systemic (ใช้น้อย)** | cimetidine · zinc · retinoids | ผลไม่แน่นอน |
+
+### ข้อพิจารณาพิเศษ
+- **เด็ก** หูดมัก**หายเองได้** → **สังเกตอาการได้ถ้าไม่มีอาการรบกวน**
+- **ผู้ป่วยกดภูมิ** ดื้อการรักษาและเป็นซ้ำสูง
+- **ผู้ป่วย epidermodysplasia verruciformis** ต้อง**กันแดดและคัดกรองมะเร็งเป็นประจำ**
+- **สอนผู้ป่วย** อย่าแกะ (ป้องกัน autoinoculation) · ใส่รองเท้าในพื้นที่ส่วนรวม
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **จุดดำเล็ก ๆ ในหูด (black puncta)** | **หลอดเลือดฝอยที่ขึ้นมาเลี้ยงหูดเกิดลิ่มเลือดอุดตัน** จึงเห็นเป็นจุดดำ | **เป็นตัวแยกหูดจากตาปลา (callus)** ซึ่งไม่มีจุดดำ |
+| **plantar wart เจ็บเวลาเดิน** | หูดถูกแรงกดจากน้ำหนักตัวดันลงไปกดปลายประสาทใน dermis | ตาปลาเจ็บเมื่อกดตรง ๆ แต่หูดเจ็บเมื่อ**บีบด้านข้าง** |
+| **mosaic pattern** | หูดหลายอันโตมาเชื่อมกันเป็นแผ่น | ลายเซ็นของ plantar wart |
+| **koilocyte** | ไวรัสทำให้เกิด **perinuclear halo** รอบนิวเคลียสของ keratinocyte | **hallmark ทางพยาธิของ HPV ทุกชนิด** |
+| **EV เสี่ยงมะเร็ง** | HPV 5 และ 8 ใน EV รวมกับ **แสง UV** ก่อการกลายพันธุ์สะสม | จึงต้องกันแดดและคัดกรอง **SCC** |
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **verruca vulgaris / plana / plantaris** | หูดธรรมดา / แบน / ฝ่าเท้า | HPV 2,4 / 3,10 / 1 |
+| **filiform wart** | หูดเป็นติ่งยื่น | ใบหน้า คอ เปลือกตา |
+| **butcher's wart** | หูดจากอาชีพสัมผัสเนื้อสัตว์ | HPV 7 |
+| **epidermodysplasia verruciformis** | โรคพันธุกรรมที่ไวต่อ HPV 5, 8 | เสี่ยง SCC |
+| **autoinoculation** | แพร่เชื้อไปตำแหน่งอื่นในตัวเอง | เหตุผลที่ห้ามแกะ |
+| **koilocytosis** | เซลล์มีวงใสรอบนิวเคลียส | hallmark ทางพยาธิ |
+| **hypergranulosis** | ชั้น granular หนาขึ้น | พบร่วมใน histology |
+| **papillomatosis** | ผิวยื่นเป็นตุ่มหนามคล้ายนิ้วมือ | พบร่วมใน histology |
+| **black puncta** | จุดดำจากหลอดเลือดอุดตัน | แยกหูดจากตาปลา |
+| **mosaic pattern** | ลายโมเสกจากหูดเชื่อมกัน | plantar wart |
+| **cryotherapy** | จี้ด้วยความเย็น | physical destruction |
+""",
+    ["cutaneous HPV 1,2,3,4,10 · mucosal HPV 6,11,16,18",
+     "plantar = HPV 1 · common = HPV 2,4 · flat = HPV 3,10 · butcher's = HPV 7 · EV = HPV 5,8",
+     "koilocytosis คือ hallmark ทางพยาธิ (+ hypergranulosis, papillomatosis)",
+     "black puncta = หลอดเลือดอุดตัน ใช้แยกหูดจากตาปลา",
+     "first-line ของ common/plantar wart คือ salicylic acid · ที่ใช้บ่อยสุดคือ cryotherapy",
+     "เด็กหายเองได้ · EV ต้องกันแดดและคัดกรอง SCC"],
+    [mcq(N(21), "A 10-year-old has a painful keratotic lesion on the sole that hurts more when squeezed from the sides than when pressed directly, and shows tiny black dots on paring. Which HPV type is most characteristic, and what do the black dots represent?",
+         ["HPV 1 — thrombosed capillaries",
+          "HPV 3 — melanin deposition",
+          "HPV 7 — inflammatory infiltrate",
+          "HPV 16 — koilocytes seen macroscopically",
+          "HPV 11 — foreign-body granuloma"],
+         0,
+         "**หูดที่ฝ่าเท้า (verruca plantaris) สัมพันธ์กับ HPV 1** ตามสไลด์ · **จุดดำเล็ก ๆ คือ thrombosed capillaries** — หลอดเลือดฝอยที่ขึ้นมาเลี้ยงหูดเกิดลิ่มเลือดอุดตัน · และ**การเจ็บเมื่อบีบด้านข้างมากกว่ากดตรง ๆ** ช่วยแยกหูดจาก **callus (ตาปลา)** ซึ่งไม่มีจุดดำและเจ็บเมื่อกดตรง\n\nทำไมข้ออื่นผิด\n- **HPV 3** คือ **flat wart** ที่ใบหน้าและหลังมือ · จุดดำไม่ใช่เมลานิน\n- **HPV 7** คือ **butcher's wart** จากอาชีพสัมผัสเนื้อสัตว์\n- **HPV 16** เป็น mucosal type ที่สัมพันธ์กับมะเร็ง · **koilocyte มองด้วยตาเปล่าไม่ได้** ต้องดูด้วยกล้องจุลทรรศน์\n- **HPV 11** เป็น mucosal type ของหูดอวัยวะเพศ และจุดดำไม่ใช่ granuloma",
+         "ฝ่าเท้า = HPV 1 · จุดดำ = หลอดเลือดอุดตัน ไม่ใช่เมลานิน",
+         "Plantar wart — HPV type", R("Human papilloma virus"), NL_WART),
+     mcq(N(22), "Which histopathological finding is the hallmark of HPV infection?",
+         ["Koilocytosis", "Multinucleated giant cells", "Acantholysis with tombstoning",
+          "Caseating granulomas", "Subepidermal blister with eosinophils"],
+         0,
+         "**koilocytosis** — keratinocyte ที่มี **วงใสรอบนิวเคลียส (perinuclear halo)** เป็น **hallmark ของ HPV** · มักพบร่วมกับ **hypergranulosis** และ **papillomatosis**\n\nทำไมข้ออื่นผิด — แต่ละข้อเป็น hallmark ของโรคอื่นที่ควรแยกให้ออก\n- **multinucleated giant cells** คือสิ่งที่เห็นใน **Tzanck smear ของ HSV และ VZV**\n- **acantholysis with tombstoning** คือภาพของ **pemphigus vulgaris**\n- **caseating granuloma** คือภาพของ **วัณโรค**\n- **subepidermal blister with eosinophils** คือภาพของ **bullous pemphigoid**",
+         "koilocyte = HPV · multinucleated giant cell = herpes · อย่าสลับกัน",
+         "HPV — histopathology", R("Human papilloma virus — histopathology"), NL_WART),
+     mcq(N(23), "A healthy 9-year-old has two small common warts on a finger that do not bother him. His mother asks whether treatment is necessary. What does the lecture support?",
+         ["Observation is reasonable because warts in children are often self-limiting",
+          "Immediate cryotherapy to prevent malignant transformation",
+          "Oral retinoids to shorten the course",
+          "Screening for immunodeficiency before any treatment",
+          "Topical high-potency corticosteroid to reduce inflammation"],
+         0,
+         "สไลด์ระบุไว้ตรง ๆ ว่าใน **เด็ก หูดมักหายเองได้ (self-limiting) จึงสังเกตอาการได้ถ้าไม่มีอาการรบกวน** · เหตุผลคือภูมิคุ้มกันระดับเซลล์กำจัดไวรัสได้เองเมื่อเวลาผ่านไป\n\nทำไมข้ออื่นผิด\n- **การกลายเป็นมะเร็ง** ไม่ใช่ความเสี่ยงของ common wart ในเด็กปกติ · ความเสี่ยง SCC สงวนไว้สำหรับ **epidermodysplasia verruciformis (HPV 5, 8)**\n- **retinoids กิน** สไลด์จัดอยู่ในกลุ่ม systemic ที่ **ใช้น้อยและผลไม่แน่นอน** ไม่ใช่ทางเลือกแรกในเด็กที่ไม่มีอาการ\n- **คัดกรองภูมิคุ้มกันบกพร่อง** ทำเมื่อหูด**มากผิดปกติ ดื้อ หรือเป็นซ้ำรุนแรง** ไม่ใช่สองตุ่มในเด็กแข็งแรง\n- **สเตียรอยด์แรงสูง** ไม่ใช่การรักษาหูด และกดภูมิเฉพาะที่จะยิ่งแย่",
+         "เด็ก หูดไม่กวน = สังเกตอาการได้ ไม่ต้องรีบจี้",
+         "Warts — treatment considerations", R("Human papilloma virus — treatment considerations"), NL_WART)],
+    NL_WART, {"warts": F.warts()})
+
+# ───────────────────────────── 12
+NL_HSV = ["2.3.1(8)", "B4.2.2(5)"]
+sec("derm-si-12", "HHV ทั้งแปดชนิด และ HSV-1/HSV-2",
+    "variant ที่ต้องจำ · ขนาดยา · พิษของ acyclovir", 12,
+"""### Human herpesviruses — ต้องจำให้ได้ทั้งแปด
+
+| | ไวรัส | สิ่งที่ก่อ |
+|---|---|---|
+| **HHV-1** | **HSV-1** | herpes labialis · whitlow · gladiatorum · eczema herpeticum |
+| **HHV-2** | **HSV-2** | genital herpes |
+| **HHV-3** | **VZV** | varicella · herpes zoster |
+| **HHV-4** | **EBV** | infectious mononucleosis · oral hairy leukoplakia |
+| **HHV-5** | **CMV** | retinitis · colitis ในผู้ป่วยกดภูมิ |
+| **HHV-6** | **Roseolovirus A/B** | roseola infantum |
+| **HHV-7** | **Roseolovirus** | roseola |
+| **HHV-8** | **KSHV** | **Kaposi sarcoma** |
+
+> **ลักษณะร่วมของทั้งวงศ์** — **แฝงตัว (latency) แล้วกลับมาเป็นซ้ำ (reactivation)** · นี่คือเหตุผลที่โรคกลุ่มนี้ “หายแล้วกลับมาที่เดิม” ไม่ใช่ “ติดใหม่ทุกครั้ง”
+
+[[fig:hsvvzv]]
+
+### HSV-1 และ HSV-2
+- **ตำแหน่งคลาสสิก** **herpes labialis (HSV-1)** · **genital herpes (HSV-2)**
+- **Primary infection** **กลุ่มตุ่มน้ำที่เจ็บมากบนพื้นแดง** หรือ **erosion/ulcer ที่รอยต่อผิวหนังกับเยื่อบุ (mucocutaneous junction)**
+- **Recurrent infection** **รุนแรงน้อยกว่า** และมักกลับมา**ที่ตำแหน่งเดิม**
+
+### Variant ที่ต้องจำ
+
+| ชื่อ | ภาพ | ไวรัส |
+|---|---|---|
+| **Herpetic whitlow** | ตุ่มน้ำเจ็บที่**นิ้วมือ** | HSV-1 หรือ HSV-2 |
+| **Herpetic folliculitis** | ตุ่มน้ำตามรูขุมขน | มัก HSV-1 |
+| **Herpes gladiatorum** | ตุ่มน้ำในนักกีฬาปะทะ (มวยปล้ำ) | มัก HSV-1 |
+| **Eczema herpeticum** | **แพร่กระจายทั่วตัวในผู้ป่วย atopic dermatitis** | HSV |
+| **Chronic herpes infection** | แผลเรื้อรังไม่หายในผู้ป่วยกดภูมิ | HSV |
+
+### การวินิจฉัย
+**Tzanck smear · PCR · viral culture · serology**
+
+### การรักษา — ขนาดยาตามสไลด์
+
+| ยา | Initial outbreak | Recurrent | Suppressive |
+|---|---|---|---|
+| **Acyclovir กิน** | **400 mg TID** หรือ **200 mg วันละ 5 ครั้ง × 7–10 วัน** | **400 mg TID × 5–7 วัน** | **400 mg BID** |
+| **Acyclovir IV** | **5–10 mg/kg ทุก 8 ชม.** สำหรับรายรุนแรงหรือ encephalitis | — | — |
+| **Valacyclovir** | **1 g BID × 7–10 วัน** | **500 mg BID × 3 วัน** หรือ 1 g OD × 5–7 วัน | **500 mg–1 g OD** |
+| **Famciclovir** | **250 mg TID × 7–10 วัน** | **125 mg BID × 5 วัน** | **250 mg BID** |
+
+### ภาวะแทรกซ้อน
+- **ของตัวโรค** การติดเชื้อแบคทีเรียซ้อน · **herpes encephalitis**
+- ✍️ **ของยา — อาจารย์เน้น**
+  - **พิษต่อไต (nephrotoxicity)** โดยเฉพาะ **acyclovir ทางหลอดเลือดดำ** → **ให้สารน้ำให้พอ และหยดช้ากว่า 1 ชั่วโมง**
+  - **พิษต่อระบบประสาท (CNS toxicity)** — **มือสั่น ประสาทหลอน** มักในผู้สูงอายุหรือไตเสื่อม
+  - **GI upset** คลื่นไส้ ท้องเสีย
+  - **การดื้อยา** ในผู้ป่วยกดภูมิ
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **ตุ่มน้ำเป็นกลุ่มบนพื้นแดง** | ไวรัสทำลาย keratinocyte ที่อยู่ติดกันเป็นหย่อม เกิดการแยกชั้นเป็นถุงน้ำหลายใบในพื้นที่เดียว | **“กลุ่ม” คือลายเซ็นของ herpes** ไม่ใช่ตุ่มเดี่ยวกระจาย |
+| **กลับมาที่ตำแหน่งเดิมทุกครั้ง** | ไวรัสหลับใน **ganglion** ที่เลี้ยงผิวบริเวณนั้น พอกลับมาจึงออกที่ผิวแปลงเดิม | ต่างจากการติดเชื้อใหม่ที่ตำแหน่งจะสุ่ม |
+| **เจ็บมากกว่าที่ขนาดรอยโรคบอก** | ไวรัสอยู่ในเส้นประสาทรับความรู้สึกโดยตรง | ช่วยแยกจาก impetigo ที่มักไม่เจ็บ |
+| **ผลึกยาในไตจาก acyclovir IV** | acyclovir **ละลายน้ำได้น้อย** เมื่อเข้มข้นในท่อไตจึงตกผลึกและอุดท่อไต | เหตุผลที่ต้อง**ให้น้ำและหยดช้า** ไม่ใช่ลดขนาดยาอย่างเดียว |
+| **มือสั่นและประสาทหลอนในผู้สูงอายุ** | ยาและ metabolite คั่งเมื่อการทำงานของไตลดลง แล้วผ่านเข้าระบบประสาท | ต้อง**ปรับขนาดยาตามการทำงานของไต** |
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **latency / reactivation** | แฝงตัว / กลับมาเป็นซ้ำ | ลักษณะร่วมของ herpesvirus |
+| **mucocutaneous junction** | รอยต่อผิวหนังกับเยื่อบุ | ตำแหน่งของ HSV |
+| **grouped vesicles on an erythematous base** | กลุ่มตุ่มน้ำบนพื้นแดง | ลายเซ็นของ herpes |
+| **herpetic whitlow** | เริมที่นิ้วมือ | ระวังติดจากการตรวจคนไข้ |
+| **herpes gladiatorum** | เริมในนักกีฬาปะทะ | ติดจากการสัมผัสผิว |
+| **eczema herpeticum** | เริมแพร่กระจายใน atopic dermatitis | ภาวะที่ต้องรักษาเร็ว |
+| **Tzanck smear** | ขูดฐานรอยโรคย้อมดูเซลล์ | เห็น multinucleated giant cells |
+| **suppressive therapy** | กินยาต่อเนื่องเพื่อกันเป็นซ้ำ | acyclovir 400 mg BID |
+| **nephrotoxicity** | พิษต่อไต | acyclovir IV ต้องให้น้ำและหยดช้า |
+""",
+    ["HHV-1 HSV1 · 2 HSV2 · 3 VZV · 4 EBV · 5 CMV · 6/7 roseolovirus · 8 KSHV (Kaposi)",
+     "กลุ่มตุ่มน้ำบนพื้นแดงที่กลับมาที่เดิม = HSV",
+     "variant ที่ต้องจำ: whitlow · folliculitis · gladiatorum · eczema herpeticum · chronic",
+     "acyclovir กิน initial 400 mg TID 7–10 วัน · recurrent 400 mg TID 5–7 วัน · suppressive 400 mg BID",
+     "acyclovir IV 5–10 mg/kg ทุก 8 ชม. ต้องให้สารน้ำพอและหยดช้ากว่า 1 ชั่วโมง",
+     "พิษของยา: ไต · ระบบประสาท (สั่น ประสาทหลอน) ในผู้สูงอายุหรือไตเสื่อม"],
+    [mcq(N(24), "A 70-year-old man with chronic kidney disease receives intravenous acyclovir for severe herpes infection. Two days later he develops tremor and visual hallucinations, and his creatinine has risen. Which two measures directly address the mechanisms involved?",
+         ["Adequate hydration with infusion over more than one hour, and dose adjustment for renal function",
+          "Switching to oral famciclovir at the same total daily dose",
+          "Adding a loop diuretic to increase urine output",
+          "Giving an antipsychotic and continuing the same acyclovir dose",
+          "Changing to topical acyclovir until the creatinine normalises"],
+         0,
+         "สองปัญหานี้มาจากกลไกต่างกันแต่แก้ด้วยหลักเดียวกัน · **พิษต่อไต** เกิดเพราะ **acyclovir ละลายน้ำได้น้อย จึงตกผลึกในท่อไต** → แก้ด้วย **ให้สารน้ำให้พอและหยดยาช้ากว่า 1 ชั่วโมง** ตามที่สไลด์เน้น · **พิษต่อระบบประสาท** (สั่น ประสาทหลอน) เกิดจาก**ยาคั่งเมื่อไตทำงานลดลง** → แก้ด้วย **ปรับขนาดยาตามการทำงานของไต**\n\nทำไมข้ออื่นผิด\n- **เปลี่ยนเป็น famciclovir ขนาดเดิม** ไม่แก้ปัญหา เพราะยากลุ่มนี้ขับทางไตเช่นกันและยังต้องปรับขนาดตามไต\n- **เพิ่มยาขับปัสสาวะ** ทำให้ขาดน้ำมากขึ้น ซึ่ง**เพิ่ม**การตกผลึกในท่อไต ไม่ใช่ลด\n- **ให้ยาต้านโรคจิตแล้วให้ยาเดิมต่อ** รักษาอาการแต่ปล่อยสาเหตุ และยาจะยังคั่งต่อไป\n- **ยาทา** ไม่มีที่ใช้ในการติดเชื้อรุนแรงที่ต้องให้ยาทั้งระบบ",
+         "acyclovir IV: ให้น้ำพอ หยดช้ากว่า 1 ชม. และปรับขนาดตามไต",
+         "Acyclovir toxicity", R("HSV — treatment complications ✍️"), NL_HSV),
+     mcq(N(25), "A 25-year-old nurse develops painful grouped vesicles on the pulp of her index finger about a week after caring for a patient with oral ulcers. What is the diagnosis?",
+         ["Herpetic whitlow", "Bacterial paronychia", "Bullous impetigo",
+          "Contact dermatitis from glove latex", "Pyogenic granuloma"],
+         0,
+         "**กลุ่มตุ่มน้ำที่เจ็บบริเวณปลายนิ้ว** หลังสัมผัสผู้ป่วยที่มีแผลในปาก = **herpetic whitlow** ซึ่งสไลด์ระบุเป็น variant ของ HSV (ได้ทั้ง HSV-1 และ HSV-2) · สำคัญสำหรับบุคลากรทางการแพทย์เพราะ**ติดจากการตรวจคนไข้โดยไม่ใส่ถุงมือ**\n\nทำไมข้ออื่นผิด\n- **bacterial paronychia** บวมแดงรอบเล็บและมี**หนอง** ไม่ใช่กลุ่มตุ่มน้ำใส และมักไม่มีประวัติสัมผัสแผลในปาก\n- **bullous impetigo** พบในเด็กที่ใบหน้าหรือลำตัว ตุ่มน้ำ**ไม่เจ็บ** และมีสะเก็ดสีน้ำผึ้ง\n- **contact dermatitis จากถุงมือ** **คัน** ไม่เจ็บ และกระจายตามบริเวณที่สัมผัสทั้งมือ ไม่ใช่เป็นกลุ่มที่ปลายนิ้วเดียว\n- **pyogenic granuloma** เป็นก้อนเนื้อแดงเลือดออกง่าย ไม่ใช่ตุ่มน้ำเป็นกลุ่ม",
+         "ตุ่มน้ำเป็นกลุ่มที่ปลายนิ้วในบุคลากรการแพทย์ = herpetic whitlow",
+         "Herpetic whitlow", R("HSV — variant cutaneous manifestation"), NL_HSV)],
+    NL_HSV, {"hsvvzv": F.hsvvzv()})
+
+# ───────────────────────────── 13
+NL_VZV = ["2.3.1(22)", "B4.2.2(6)"]
+sec("derm-si-13", "VZV — สุกใส งูสวัด และสามภาวะที่ห้ามพลาด",
+    "varicella · zoster · HZO (Hutchinson) · Ramsay Hunt · disseminated", 14,
+"""**HHV-3 (VZV)** ให้สองโรคจากไวรัสตัวเดียว — **ติดครั้งแรกเป็น varicella (สุกใส)** และ **กลับมาเป็น herpes zoster (งูสวัด)**
+
+[[fig:zoster]]
+
+## Varicella (chickenpox)
+- **การติดต่อ** **airborne droplets** และการสัมผัสโดยตรง · **ระยะฟักตัว ~10–21 วัน**
+- **ระยะแพร่เชื้อ** **1–2 วันก่อนผื่นขึ้น จนกว่าทุกรอยโรคจะตกสะเก็ด**
+- **อาการนำ** (เด่นในผู้ใหญ่) ไข้ อ่อนเพลีย ปวดศีรษะ
+- **ผื่น** คัน · **macule → papule → vesicle → pustule → crust**
+  - ลักษณะ vesicle ที่สไลด์เรียกว่า **“dew drop on a rose petal”** — หยดน้ำบนกลีบกุหลาบ
+  - **ขึ้นเป็นชุด (crops) และอยู่ต่างระยะกันพร้อมกัน** ← **จุดที่ใช้แยกจากโรคอื่น**
+  - **centripetal** — ลำตัวมากกว่าแขนขาและใบหน้า
+- **การวินิจฉัย** clinical · **Tzanck smear (ขูดจากฐานรอยโรค)** → **multinucleated giant cells** · **PCR = gold standard** · **DFA** · serology IgM และ IgG ที่สูงขึ้น
+- **การรักษา**
+  - **supportive** — ยาลดไข้ (**เลี่ยง aspirin**) · ยาแก้แพ้ลดคัน
+  - **ยาต้านไวรัสเมื่อ** **ผู้ใหญ่ · ผู้ป่วยกดภูมิ · ทารกแรกเกิด · หญิงตั้งครรภ์**
+  - **รับไว้ในโรงพยาบาล** เมื่อรุนแรงหรือมีภาวะแทรกซ้อน
+- **ภาวะแทรกซ้อน** การติดเชื้อแบคทีเรียซ้อน (impetigo) · **ปอดอักเสบ (เด่นในผู้ใหญ่)** · **encephalitis และ cerebellar ataxia** · ตับอักเสบในผู้ป่วยกดภูมิ · **congenital varicella syndrome** ถ้าติดช่วงต้นครรภ์
+
+## Herpes zoster (shingles)
+- **กลไก** **reactivation ของ VZV ที่หลับอยู่ใน dorsal root ganglia**
+- **ปัจจัยเสี่ยง** **อายุมากขึ้น · ภาวะกดภูมิ**
+- **อาการ**
+  - **อาการนำ: ปวด แสบ หรือซ่าตาม dermatome — นำมาก่อนผื่นเป็นวัน**
+  - ผื่น: ปื้นแดง → ตุ่มน้ำใส → แตก → ตกสะเก็ด หายใน **2–4 สัปดาห์**
+  - **ข้างเดียว ตาม dermatome เดียว ไม่ข้ามแนวกลางลำตัว**
+- **Variant** **zoster sine herpete = ปวดตาม dermatome โดยไม่มีผื่น**
+- **ตัวอย่างการบรรยายรอยโรคจากสไลด์** *multiple group of vesicles on erythematous and purpuric base with hemorrhagic crust along T9–T10 dermatome*
+- **การวินิจฉัย** clinical · **Tzanck smear** จากฐานรอยโรค → multinucleated giant cells · **PCR ไวที่สุด** · DFA หรือ viral culture
+- **การรักษา**
+  - **ยาต้านไวรัสภายใน 72 ชั่วโมง** — **acyclovir · valacyclovir · famciclovir** → **ลดระยะเวลาและลดภาวะแทรกซ้อน**
+  - **คุมปวด** — **gabapentin · pregabalin · opioid**
+  - **สเตียรอยด์** พิจารณาในรายรุนแรง **ร่วมกับยาต้านไวรัสเสมอ**
+- **ภาวะแทรกซ้อน** **postherpetic neuralgia (PHN) = ปวดนานเกิน 90 วัน** · ติดเชื้อแบคทีเรียซ้อน · **HZO** · **Ramsay Hunt** · **disseminated zoster** · encephalitis และ myelitis
+
+## สามภาวะที่ห้ามพลาด
+
+[[fig:hzo]]
+
+### 1. Herpes zoster ophthalmicus (HZO)
+- **reactivation ที่แขนง ophthalmic (V1) ของ trigeminal nerve**
+- **ครอบคลุม** ตา เปลือกตา หน้าผาก และ **ปลายจมูก**
+- **Hutchinson's sign** = **ตุ่มน้ำที่ปลายจมูก → เสี่ยงสูงมากที่ตาจะถูก involve**
+- **อาการ** ปวด แสบ ซ่าใน V1 · ผื่นตุ่มน้ำข้างเดียวที่หน้าผาก เปลือกตาบน ปลายจมูก · **conjunctivitis · uveitis · keratitis** · การมองเห็นเปลี่ยน กลัวแสง
+- **การตรวจ** **slit-lamp exam โดยจักษุแพทย์** · PCR หรือ DFA จากฐานตุ่มน้ำถ้าไม่แน่ใจ
+- **การรักษา** ยาต้านไวรัส · คุมปวด · **ส่งจักษุแพทย์ด่วน** · สเตียรอยด์หรือยาปฏิชีวนะหยอดตาใต้การดูแลจักษุแพทย์ · **cycloplegic drops** ลดปวดจาก ciliary spasm
+
+### 2. Ramsay Hunt syndrome (herpes zoster oticus)
+- **reactivation ที่ geniculate ganglion ของ facial nerve (CN VII)**
+- **อาการ** ตุ่มน้ำที่เจ็บใน/รอบ **ช่องหู ใบหู หรือเพดานปาก** · **อ่อนแรงใบหน้าข้างเดียวกัน (เหมือน Bell's palsy)** · **การได้ยินลดลง เวียนศีรษะ หูอื้อ** ถ้า **CN VIII** ร่วม · บางครั้งเสียการรับรส ตาและปากแห้ง
+- **การรักษา** ยาต้านไวรัส · คุมปวด · ส่ง ENT หรือประสาทวิทยา · **prednisone 60 mg/วัน × 5–7 วันแล้วลดขนาด** — **ช่วยการฟื้นตัวของ facial nerve เมื่อใช้ร่วมกับยาต้านไวรัส**
+
+### 3. Disseminated herpes zoster (DHZ)
+- **นิยาม** ผื่นตุ่มน้ำ **≥ 20 รอยโรค นอก dermatome เดิมและ dermatome ข้างเคียง**
+- **มักพบใน** ผู้ป่วยกดภูมิ — **มะเร็ง ปลูกถ่ายอวัยวะ HIV**
+
+#### ทำไมถึงมีอาการนี้
+
+| สิ่งที่เห็น | กลไก | ใช้แยกโรคอย่างไร |
+|---|---|---|
+| **สุกใสอยู่ต่างระยะกันพร้อมกัน** | ไวรัสเข้ากระแสเลือดเป็น **ระลอก (crops)** ผื่นแต่ละระลอกจึงแก่ไม่เท่ากัน | **ถ้าทุกรอยโรคอยู่ระยะเดียวกันหมด ให้คิดถึงโรคอื่น** เช่น ฝีดาษลิงหรือผื่นแพ้ยา |
+| **สุกใสขึ้นลำตัวมากกว่าแขนขา (centripetal)** | ไวรัสกระจายทางเลือดไปผิวที่อุณหภูมิเหมาะและเลือดไปเลี้ยงมาก | ตรงข้ามกับผื่นที่กระจายปลายมือปลายเท้า (centrifugal) |
+| **งูสวัดปวดก่อนผื่นเป็นวัน** | ไวรัสแบ่งตัวและทำลาย **ganglion กับ axon** ก่อนจะถึงปลายประสาทที่ผิวหนัง | **ปวดเฉพาะที่ไม่มีสาเหตุในผู้สูงอายุ ให้นึกถึง zoster ที่ยังไม่ออกผื่น** |
+| **งูสวัดไม่ข้ามแนวกลางลำตัว** | ganglion หนึ่งอันเลี้ยงผิวเพียง dermatome เดียวของข้างนั้น | **ข้ามแนวกลาง = ไม่ใช่ zoster ธรรมดา ให้คิด disseminated** |
+| **PHN ปวดเกิน 90 วัน** | เส้นประสาทเสียหายถาวรจนเกิดการส่งสัญญาณปวดผิดปกติ (neuropathic pain) | ยาที่ได้ผลจึงเป็น **gabapentin/pregabalin** ไม่ใช่ NSAID |
+| **Hutchinson's sign ทำนายตาอักเสบ** | แขนง **nasociliary** ของ V1 เลี้ยงทั้งปลายจมูกและ **cornea** | ตุ่มที่ปลายจมูก = แขนงที่เลี้ยงตาถูก involve แล้ว |
+| **Ramsay Hunt มีอ่อนแรงใบหน้า** | **geniculate ganglion** อยู่บนทาง CN VII · การบวมอักเสบกด facial nerve ในช่องกระดูกที่แคบ | **Bell's palsy ที่มีตุ่มน้ำในหู = Ramsay Hunt ไม่ใช่ Bell's palsy** |
+
+> **สองเลขที่ต้องจำ** — **72 ชั่วโมง** คือหน้าต่างของยาต้านไวรัสใน zoster · **90 วัน** คือเกณฑ์เวลาของ PHN
+> **สองสัญญาณที่เปลี่ยนการดูแลทันที** — **Hutchinson's sign → ส่งจักษุแพทย์ด่วน** · **ตุ่มน้ำในหู + หน้าเบี้ยว → Ramsay Hunt ต้องให้ prednisone ร่วมกับยาต้านไวรัส**
+
+#### คำศัพท์สากลที่ต้องจำ
+
+| คำ | ความหมาย | จุดที่ใช้ |
+|---|---|---|
+| **dew drop on a rose petal** | หยดน้ำบนกลีบกุหลาบ | ลักษณะ vesicle ของสุกใส |
+| **lesions in crops / different stages** | ขึ้นเป็นชุด อยู่ต่างระยะกัน | ลายเซ็นของสุกใส |
+| **centripetal** | กระจายเข้าหาลำตัว | รูปแบบผื่นสุกใส |
+| **dermatomal distribution** | กระจายตามแนว dermatome | ลายเซ็นของงูสวัด |
+| **dorsal root ganglion** | ปุ่มประสาทรับความรู้สึก | ที่หลับของ VZV |
+| **prodromal pain** | ปวดนำก่อนผื่น | งูสวัด |
+| **zoster sine herpete** | ปวดตาม dermatome โดยไม่มีผื่น | variant ที่วินิจฉัยยาก |
+| **postherpetic neuralgia (PHN)** | ปวดต่อเนื่องเกิน 90 วัน | รักษาด้วย gabapentin/pregabalin |
+| **Hutchinson's sign** | ตุ่มน้ำที่ปลายจมูก | ทำนายการ involve ของตา |
+| **Ramsay Hunt syndrome** | zoster ที่ geniculate ganglion | หน้าเบี้ยว + ตุ่มในหู |
+| **disseminated zoster** | ≥ 20 รอยโรคนอก dermatome เดิม | ผู้ป่วยกดภูมิ |
+| **congenital varicella syndrome** | ความผิดปกติของทารกจากสุกใสในครรภ์ | เหตุผลที่ต้องให้ยาในหญิงตั้งครรภ์ |
+| **multinucleated giant cells** | เซลล์หลายนิวเคลียส | ผล Tzanck smear ของ HSV และ VZV |
+""",
+    ["สุกใส: ขึ้นเป็นชุด อยู่ต่างระยะกันพร้อมกัน และ centripetal",
+     "แพร่เชื้อตั้งแต่ 1–2 วันก่อนผื่น จนทุกรอยโรคตกสะเก็ด · ฟักตัว 10–21 วัน",
+     "ให้ยาต้านไวรัสในสุกใสเมื่อ: ผู้ใหญ่ กดภูมิ ทารกแรกเกิด ตั้งครรภ์ · เลี่ยง aspirin",
+     "งูสวัด: ปวดนำก่อนผื่น ข้างเดียว ไม่ข้ามแนวกลาง · ให้ยาภายใน 72 ชั่วโมง",
+     "PHN = ปวดเกิน 90 วัน · รักษาด้วย gabapentin หรือ pregabalin",
+     "Hutchinson's sign (ตุ่มที่ปลายจมูก) = ส่งจักษุแพทย์ด่วน",
+     "Bell's palsy + ตุ่มน้ำในหู = Ramsay Hunt → prednisone 60 mg 5–7 วัน + ยาต้านไวรัส",
+     "disseminated zoster = ≥ 20 รอยโรคนอก dermatome เดิม มักกดภูมิ"],
+    [mcq(N(26), "A 68-year-old man has a painful unilateral vesicular rash over the right forehead and upper eyelid. There are also vesicles on the tip of his nose. Besides starting an antiviral, what is the single most important next step?",
+         ["Urgent ophthalmology referral",
+          "Oral prednisone 60 mg daily for one week",
+          "Reassurance, as nasal lesions carry no special significance",
+          "Topical acyclovir cream to the eyelid",
+          "CT of the orbit before any referral"],
+         0,
+         "**ตุ่มน้ำที่ปลายจมูก = Hutchinson's sign** · แขนง **nasociliary** ของ **V1** เลี้ยงทั้ง**ปลายจมูก**และ **cornea** ดังนั้นการมีตุ่มที่ปลายจมูกบ่งชี้ว่า**แขนงที่เลี้ยงตาถูก involve แล้ว** และทำนาย **keratitis/uveitis** ซึ่งอาจทำให้สูญเสียการมองเห็น · สไลด์ระบุการจัดการว่า **urgent ophthalmology referral**\n\nทำไมข้ออื่นผิด\n- **prednisone กิน** ไม่ใช่ขั้นตอนสำคัญที่สุดใน HZO และการใช้สเตียรอยด์ที่ตาต้องอยู่ใต้การดูแลของจักษุแพทย์ · ขนาด 60 mg เป็นของ **Ramsay Hunt**\n- **บอกว่าไม่สำคัญ** ผิดอย่างชัดเจน — นี่คือสัญญาณที่มีชื่อเรียกเฉพาะเพราะมันสำคัญ\n- **ยาทา acyclovir** ไม่เพียงพอสำหรับ zoster และไม่ป้องกันภาวะแทรกซ้อนทางตา\n- **CT orbit** ทำให้ช้าโดยไม่เปลี่ยนการรักษา · สิ่งที่ต้องทำคือ **slit-lamp exam**",
+         "ตุ่มที่ปลายจมูก = Hutchinson's sign = ส่งจักษุแพทย์ด่วน",
+         "Herpes zoster ophthalmicus", R("HZO — Hutchinson's sign"), NL_VZV),
+     mcq(N(27), "A 59-year-old woman has right facial droop that spares no part of the face, plus ear pain, vertigo, and vesicles in the right ear canal. Which treatment combination does the lecture recommend?",
+         ["Antiviral plus prednisone 60 mg daily for 5–7 days then taper",
+          "Prednisone alone, as antivirals do not help facial recovery",
+          "Antiviral alone, as steroids worsen viral replication",
+          "Intravenous immunoglobulin plus physiotherapy",
+          "Observation only, since recovery is nearly always complete"],
+         0,
+         "**ตุ่มน้ำในช่องหู + อ่อนแรงใบหน้าข้างเดียวกัน + เวียนศีรษะ** = **Ramsay Hunt syndrome** จาก VZV ที่ **geniculate ganglion ของ CN VII** · สไลด์ระบุการรักษาว่า **ยาต้านไวรัสร่วมกับ prednisone 60 mg/วัน × 5–7 วันแล้วลดขนาด** ซึ่ง **ช่วยการฟื้นตัวของ facial nerve เมื่อใช้ร่วมกับยาต้านไวรัส**\n\nทำไมข้ออื่นผิด\n- **สเตียรอยด์เดี่ยว** ไม่จัดการตัวไวรัส และในภาวะนี้สไลด์ระบุให้ใช้ร่วมกัน\n- **ยาต้านไวรัสเดี่ยว** พลาดประโยชน์ต่อการฟื้นตัวของเส้นประสาท · ข้ออ้างว่าสเตียรอยด์ทำให้ไวรัสแบ่งตัวมากขึ้นไม่ใช่เหตุผลที่ใช้ในภาวะนี้เมื่อให้คู่กับยาต้านไวรัส\n- **IVIG** ไม่ใช่การรักษามาตรฐานของ Ramsay Hunt\n- **สังเกตอาการเฉย ๆ** ผิด เพราะ **Ramsay Hunt ฟื้นตัวแย่กว่า Bell's palsy** และการรักษาเร็วมีผลต่อผลลัพธ์",
+         "หน้าเบี้ยว + ตุ่มในหู = Ramsay Hunt → ยาต้านไวรัส + prednisone ไม่ใช่อย่างใดอย่างเดียว",
+         "Ramsay Hunt syndrome", R("Ramsay Hunt syndrome"), NL_VZV),
+     mcq(N(28), "Which feature of the varicella rash is most useful for distinguishing it from other vesicular eruptions?",
+         ["Lesions appear in crops and are at different stages at the same time",
+          "All lesions evolve synchronously through each stage",
+          "The rash begins on the palms and soles and moves centrally",
+          "Lesions are confined to a single dermatome",
+          "Vesicles are filled with pus from the outset"],
+         0,
+         "สไลด์เน้นว่า **รอยโรคของสุกใสขึ้นเป็นชุด (crops) และอยู่ต่างระยะกันพร้อมกัน** — macule, papule, vesicle, pustule, crust ปรากฏในเวลาเดียวกันบนตัวคนไข้คนเดียว · กลไกคือไวรัสเข้ากระแสเลือด**เป็นระลอก** ผื่นแต่ละระลอกจึงแก่ไม่เท่ากัน\n\nทำไมข้ออื่นผิด\n- **ทุกรอยโรคไปพร้อมกันเป็นระยะเดียว** เป็นลักษณะที่**ตรงข้าม** และเป็นเบาะแสของโรคอื่น\n- **เริ่มที่ฝ่ามือฝ่าเท้าแล้วเข้าหาลำตัว** ตรงข้ามกับสุกใสที่เป็น **centripetal** (ลำตัวมากกว่าแขนขา)\n- **จำกัดใน dermatome เดียว** คือ **herpes zoster** ไม่ใช่สุกใส\n- **มีหนองตั้งแต่แรก** ไม่ใช่ลำดับของสุกใส ซึ่งเริ่มจาก macule และเป็น vesicle ใสก่อนจะเป็น pustule",
+         "สุกใส = หลายระยะพร้อมกัน · งูสวัด = dermatome เดียว",
+         "Varicella — rash pattern", R("Varicella — clinical manifestations"), NL_VZV)],
+    NL_VZV, {"zoster": F.zoster(), "hzo": F.hzo()})
+
+# ───────────────────────────── MEQ
+MEQ = [{
+ "id": "DE-SI-MEQ-01", "kind": "meq", "topic": "ชายเบาหวานขาบวมแดงและปวดมาก", "nl": NL_NF + NL_CELL,
+ "vignette": """ชายไทยอายุ 58 ปี เป็น**เบาหวานชนิดที่ 2** มา 12 ปี ควบคุมไม่ดี (HbA1c 9.8%)
+
+มาห้องฉุกเฉินด้วย **ปวดขาขวาอย่างรุนแรงมา 14 ชั่วโมง** เริ่มจากปวดบริเวณหน้าแข้งแล้วลามขึ้นน่อง
+สองวันก่อนมีแผลถลอกเล็ก ๆ ที่หลังเท้าขวาจากรองเท้ากัด
+
+**ตรวจร่างกาย** อุณหภูมิ 38.9°C · ชีพจร 118 ครั้ง/นาที · **ความดัน 94/58 มม.ปรอท** · หายใจ 24 ครั้ง/นาที
+รู้สึกตัวดีแต่กระสับกระส่าย · **ขาขวาบวมทั้งขา ผิวแดงคล้ำเป็นหย่อม ขอบไม่ชัด อุ่น**
+**กดเจ็บมากจนทนไม่ได้ ซึ่งดูไม่สมดุลกับลักษณะผิวที่เห็น** · คลำได้ **กรอบแกรบใต้ผิวบริเวณน่อง**
+ชีพจรที่หลังเท้าคลำได้ · ความรู้สึกที่ผิวบริเวณกลางรอยโรค**ลดลง**
+
+**ผลตรวจแรกรับ** WBC 21,400/µL (N 88%) · Cr 1.9 mg/dL · น้ำตาล 312 mg/dL · lactate 3.8 mmol/L · CRP 268 mg/L""",
+ "questions": [
+   {"q": "**1. จากข้อมูลนี้ ท่านคิดถึงภาวะใดมากที่สุด และมีข้อมูลใดในโจทย์ที่สนับสนุน (4 คะแนน)**",
+    "a": """**ภาวะที่คิดถึง: Necrotizing fasciitis (น่าจะเป็น Type I polymicrobial เพราะเป็นเบาหวานและมี crepitus)** — 1 คะแนน
+
+**ข้อมูลที่สนับสนุน** (ข้อละ 0.5 คะแนน เต็ม 3 คะแนน)
+- **ปวดรุนแรงไม่สมดุลกับลักษณะผิวที่เห็น (pain out of proportion)** — สัญญาณที่ไวที่สุด
+- **ลุกลามเร็วภายใน 14 ชั่วโมง**
+- **crepitus คลำได้ใต้ผิว** — บ่งชี้แก๊สจาก anaerobe
+- **ผิวแดงคล้ำเป็นหย่อม** — หลอดเลือดที่เลี้ยงผิวเริ่มอุดตัน
+- **ความรู้สึกที่ผิวลดลง** — เส้นประสาทผิวหนังถูกทำลาย
+- **สัญญาณชีพของ sepsis** — ไข้สูง ชีพจรเร็ว **ความดัน 94/58** lactate 3.8
+- **เบาหวานคุมไม่ได้** — ปัจจัยเสี่ยงของ Type I
+- **มีทางเข้าของเชื้อ** — แผลถลอกที่หลังเท้า (outside in)"""},
+   {"q": "**2. ท่านจะทำอะไรใน 1 ชั่วโมงแรก เรียงลำดับความสำคัญ (5 คะแนน)**",
+    "a": """เรียงตามลำดับ (ข้อละ 1 คะแนน)
+
+1. **ปรึกษาศัลยกรรมทันทีเพื่อ surgical exploration และ debridement** — **การผ่าตัดสำรวจคือทั้งการวินิจฉัยและการรักษา** ห้ามรอผลภาพถ่าย
+2. **กู้ชีพภาวะ sepsis** — เปิดเส้นใหญ่สองเส้น ให้สารน้ำ crystalloid เจาะ **เพาะเชื้อจากเลือดสองชุด** ติดตามปัสสาวะและ lactate
+3. **ให้ยาฆ่าเชื้อกว้างทางหลอดเลือดดำทันทีหลังเพาะเชื้อ** — **vancomycin ร่วมกับ piperacillin-tazobactam** (คลุม MRSA แกรมลบ และ anaerobe) · พิจารณาเพิ่ม **clindamycin** เพื่อลดการสร้าง exotoxin
+4. **คุมน้ำตาลและแก้ความผิดปกติทางเมตาบอลิก** — น้ำตาล 312 และ Cr 1.9 (ปรับขนาดยาตามไต)
+5. **เตรียมผู้ป่วยเข้าห้องผ่าตัดและแจ้ง ICU** — งดน้ำงดอาหาร ตรวจการแข็งตัวของเลือด เซ็นยินยอม อธิบายว่าอาจต้องตัดเนื้อตายซ้ำหลายครั้ง
+
+**หัก 2 คะแนน** ถ้าตอบว่า “ส่ง CT ก่อนแล้วจึงปรึกษาศัลยกรรม” หรือ “ให้ยาแล้วสังเกตอาการ 6 ชั่วโมง”"""},
+   {"q": "**3. ถ้าผู้ป่วยรายนี้มาด้วยภาพเดียวกันแต่ ไม่มี crepitus ไม่มีความดันต่ำ และปวดพอดีกับลักษณะผิว ท่านจะคิดถึงอะไร และต่างกันตรงไหน (3 คะแนน)**",
+    "a": """**คิดถึง cellulitis** (1 คะแนน)
+
+**เหตุผลที่ต่างกัน** (2 คะแนน)
+- **cellulitis** อยู่ใน **deep dermis ถึงชั้นไขมัน** ไม่ลงถึง fascia · ความเจ็บจึง**สมดุลกับสิ่งที่เห็น** · **ไม่มี crepitus** เพราะไม่มี anaerobe สร้างแก๊ส · ไม่มีเนื้อตายและผิวไม่คล้ำ
+- **การรักษาต่างกันโดยสิ้นเชิง** — cellulitis ใช้**ยาฆ่าเชื้อเป็นหลัก** (คลุม streptococci และ staphylococci) ขีดขอบรอยโรคติดตามการตอบสนอง · **ไม่ต้องผ่าตัด** เว้นแต่เกิด abscess ที่คลำได้ fluctuance
+- **แต่ต้องเฝ้าระวังต่อ** — ถ้าปวดมากขึ้นผิดส่วน ผิวเริ่มคล้ำ หรือสัญญาณชีพแย่ลง ต้องกลับมาคิดถึง necrotizing fasciitis ทันที เพราะสองโรคนี้อยู่บนความต่อเนื่องเดียวกัน"""},
+   {"q": "**4. จงบอกการป้องกันที่ควรให้คำแนะนำผู้ป่วยรายนี้ก่อนกลับบ้าน (3 คะแนน)**",
+    "a": """ข้อละ 1 คะแนน (เลือก 3 ข้อ)
+- **ควบคุมระดับน้ำตาลให้ดีขึ้น** — เบาหวานที่คุมไม่ได้ทำให้ทั้งผิวหนังเสียความต่อเนื่องและภูมิคุ้มกันบกพร่อง
+- **ดูแลเท้าทุกวัน** — ตรวจดูแผล ซอกนิ้ว เล็บ และผิวแตก เพราะผู้ป่วยมีความรู้สึกที่เท้าลดลง จึงเกิดแผลโดยไม่รู้ตัว
+- **เลือกรองเท้าที่พอดีและไม่เดินเท้าเปล่า** — ป้องกันแผลถลอกซึ่งเป็นทางเข้าของเชื้อ
+- **รักษาแผลเล็กทันทีและมาพบแพทย์เร็วเมื่อมีผื่นแดง บวม หรือปวด** — สไลด์ระบุว่า early treatment of wounds คือการป้องกันหลัก
+- **รักษาเชื้อราที่ซอกนิ้วเท้าถ้ามี** — เป็นจุดที่ทำให้ผิวแตกและเป็นประตูของแบคทีเรีย"""}],
+}]
+
+# ───────────────────────────── OSCE
+OSCE = [{
+ "id": "DE-SI-OSCE-01", "kind": "osce", "topic": "บรรยายรอยโรคผิวหนังและให้การวินิจฉัยแยกโรค",
+ "station": "สถานีเขียนตอบ · 8 นาที", "nl": NL_SKIN,
+ "instruction": """**คำสั่ง** ท่านเป็นแพทย์เวรห้องฉุกเฉิน มีผู้ป่วยสี่รายมาด้วยรอยโรคที่ผิวหนัง
+จงตอบคำถามทั้งสองส่วนลงในกระดาษคำตอบ ภายใน 8 นาที
+
+**ผู้ป่วย A** หญิง 7 ขวบ มีรอยโรครอบจมูกและมุมปาก **ลักษณะเป็นผิวหลุดตื้นปิดด้วยสะเก็ดสีเหลืองทอง** ไม่เจ็บ ไม่มีไข้
+
+**ผู้ป่วย B** หญิง 64 ปี **ปื้นแดงสดที่แก้มซ้าย ขอบชัดเจนและยกขึ้นคลำได้** มีไข้ 38.8°C หนาวสั่น เริ่มเป็นเมื่อ 8 ชั่วโมงก่อน
+
+**ผู้ป่วย C** ชาย 45 ปี เลี้ยงปลาสวยงาม มี **ก้อนแดงคล้ำหลายก้อนที่หลังมือขวา** เป็นมา 3 สัปดาห์ ไม่มีไข้
+เคยได้ **cephalexin กิน 2 คอร์สแล้วไม่ดีขึ้น**
+
+**ผู้ป่วย D** ชาย 33 ปี **ปื้นสีน้ำตาลแดงขอบชัดมีสะเก็ดละเอียดที่ขาหนีบสองข้าง** คันเล็กน้อย เป็นมา 2 เดือน
+
+**คำถาม**
+**1. จงบรรยายรอยโรคของผู้ป่วย A และ B ด้วยศัพท์มาตรฐาน (skin lesion terms) และให้การวินิจฉัยของทั้งสี่ราย (8 คะแนน)**
+**2. สำหรับผู้ป่วย C และ D จงระบุการตรวจที่จะยืนยันการวินิจฉัย และการรักษาที่เหมาะสม (7 คะแนน)**""",
+ "answer": """## เกณฑ์ให้คะแนน (เต็ม 15 คะแนน)
+
+### ส่วนที่ 1 — บรรยายรอยโรคและวินิจฉัย (8 คะแนน)
+
+| หัวข้อ | คำตอบที่ยอมรับ | คะแนน |
+|---|---|---|
+| **บรรยาย A** | **erosions covered with honey-coloured crusts** บริเวณ perioral และ perinasal | 1 |
+| **วินิจฉัย A** | **Impetigo (non-bullous)** | 1 |
+| **บรรยาย B** | **well-demarcated, raised, erythematous plaque** ที่แก้มซ้าย | 1 |
+| **วินิจฉัย B** | **Erysipelas** (เชื้อ *Streptococcus pyogenes*) | 1 |
+| **วินิจฉัย C** | **NTM cellulitis / infection** — นึกถึง ***Mycobacterium marinum*** | 2 |
+| **วินิจฉัย D** | **Erythrasma** (*Corynebacterium minutissimum*) | 2 |
+
+**หมายเหตุการให้คะแนน** — ถ้าบรรยาย A ว่า “ulcer” **ไม่ได้คะแนน** เพราะ impetigo อยู่แค่ epidermis จึงเป็น **erosion** ไม่ใช่ ulcer · ถ้าบรรยาย B ว่า “ill-defined” **ไม่ได้คะแนน** เพราะขัดกับโจทย์ที่ระบุว่าขอบชัดและยกขึ้น
+
+### ส่วนที่ 2 — การตรวจและการรักษา (7 คะแนน)
+
+| หัวข้อ | คำตอบที่ยอมรับ | คะแนน |
+|---|---|---|
+| **การตรวจของ C** | **skin biopsy** ส่ง **AFB stain · mycobacterial culture** (± PCR) | 2 |
+| **เหตุผลของ C** | เพาะเชื้อธรรมดาและ swab **ไม่ขึ้น mycobacteria** จึงอธิบายการดื้อยาได้ และต้องใช้อาหารเลี้ยงจำเพาะ | 1 |
+| **การรักษาของ C** | **ยาหลายตัวร่วมกัน** เช่น **clarithromycin ร่วมกับ rifampin** (± ethambutol) · **ระยะยาว** · อาจต้อง **surgical debridement** | 1 |
+| **การตรวจของ D** | **Wood lamp** → **coral-red fluorescence** (จาก coproporphyrin III) | 2 |
+| **การรักษาของ D** | เฉพาะที่ **clindamycin solution 2% · benzoyl peroxide · azole cream** · ถ้ากระจายกว้าง **erythromycin กิน 1 กรัม** หรือ **clarithromycin ครั้งเดียว** | 1 |
+
+### คะแนนพิเศษ (ไม่เกินคะแนนเต็ม)
+- ระบุว่าผู้ป่วย D **ต้องแยกจาก tinea cruris** และถ้าให้**ยาฆ่าเชื้อราจะไม่หาย** เพราะเป็นแบคทีเรีย — **+1**
+- ระบุว่าผู้ป่วย C มี**เบาะแสจากประวัติสัมผัสน้ำ/ตู้ปลา** ซึ่งเป็นปัจจัยเสี่ยงของ NTM ตามตารางของสไลด์ — **+1**
+
+### จุดที่ผู้สอบพลาดบ่อย
+- ตอบผู้ป่วย D ว่าเป็น **tinea cruris** แล้วให้ terbinafine — **เป็นกับดักหลักของสถานีนี้** · ตัวแยกคือ **Wood lamp**
+- ตอบผู้ป่วย C ว่าเป็น cellulitis ธรรมดาแล้วเปลี่ยนยาปฏิชีวนะตัวใหม่ โดย**ไม่ทำ biopsy** · คาบนี้เน้นว่า **cellulitis ที่ดื้อยาหรือเป็นสัปดาห์ขึ้นไปต้อง biopsy**
+- ใช้คำบรรยายรอยโรคผิดระดับความลึก (erosion ↔ ulcer) ซึ่งเป็นคำที่สื่อ**การเกิดแผลเป็น**ต่างกัน""",
+}]
+
+LECTURE = {
+ "lec": "26/10", "date": "จ. 26 ต.ค.",
+ "title": "Skin infection — การติดเชื้อที่ผิวหนัง",
+ "subtitle": "อ.วรนิษฐ์ อ่อนประเสริฐ · หมวดแบคทีเรียและไวรัส · เน้นคำศัพท์สากลสำหรับทำข้อสอบ",
+ "lecture": "Skin infection",
+ "objectives": [
+   "แบ่งการติดเชื้อที่ผิวหนังด้วยสามแกน — ชนิดเชื้อ ความลึก และ outside-in vs inside-out",
+   "ใช้ลักษณะขอบรอยโรคและ fluctuance ตัดสินความลึกและวิธีรักษาข้างเตียง",
+   "แยก impetigo ecthyma erysipelas cellulitis folliculitis furuncle และ carbuncle ออกจากกันด้วยศัพท์บรรยายรอยโรค",
+   "จับสัญญาณของ necrotizing fasciitis ให้ได้ตั้งแต่ระยะที่ผิวยังดูเกือบปกติ และเรียงลำดับการรักษา",
+   "รู้ว่าเมื่อไรต้อง biopsy เพราะ cellulitis อาจมาจากเชื้อรา วัณโรค หรือ NTM",
+   "ใช้ Wood lamp และ Gram stain แยกโรคของ Corynebacterium จากเชื้อรา",
+   "จำชนิดของหูดคู่กับ HPV type และเลือกวิธีรักษาตามกลุ่มผู้ป่วย",
+   "วินิจฉัยและรักษา HSV และ VZV รวมถึง HZO Ramsay Hunt และ disseminated zoster พร้อมระวังพิษของ acyclovir"],
+ "nlGap": "เกณฑ์ฯ มีรหัสของ impetigo (`นล. 2.3.12(9)`) cellulitis (`2.3.12(4)`) abscess (`2.3.12(2)`) necrotizing fasciitis (`2.2.50`) herpes simplex (`2.3.1(8)`) VZV (`2.3.1(22)`) และ wart (`2.3.12(15)`) ครบ แต่**ไม่มีรหัสเฉพาะของ erysipelas, ecthyma, lymphangitis, pitted keratolysis, erythrasma หรือ trichomycosis** หัวข้อเหล่านั้นจึงผูกไว้กับรหัสหมวดผิวหนัง (`2.3.12`) และอาการผื่นผิวหนัง (`2.1.50`) · **ขอบเขตของคาบนี้ครอบคลุมเฉพาะหมวดแบคทีเรียและไวรัสของสไลด์** เพราะหมวด **fungal และ parasitic** ของสไลด์ดึงข้อความออกมาไม่ได้ (Drive ตัดข้อความ และไฟล์ 20.8 MB ใหญ่เกินกว่าจะ render เป็นภาพได้) — หมวดเชื้อรา (`2.3.12(11)`) ยังไม่ได้ทำและต้องใช้สไลด์ส่วนที่เหลือ",
+ "guidelines": [
+   "**สไลด์ Skin infection 2025 (Hand out)** — อ.วรนิษฐ์ อ่อนประเสริฐ, Division of Dermatology, Department of Internal Medicine, Rajavithi Hospital (ต้นฉบับของคาบนี้)",
+   "**IDSA Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections** — ใช้ประกอบเรื่องขั้นตอนการรักษาและข้อบ่งชี้ของ incision and drainage",
+   "**Fitzpatrick's Dermatology, 9th ed.** — ใช้ประกอบคำบรรยายรอยโรคและกลไกของอาการในหัวข้อ “ทำไมถึงมีอาการนี้”",
+   "**CDC Clinical Overview of Herpes Zoster (Shingles)** — ใช้ประกอบเรื่องหน้าต่าง 72 ชั่วโมงและนิยามของ postherpetic neuralgia"],
+ "sections": S, "meq": MEQ, "osce": OSCE,
+}
+
+# กระจายตำแหน่งคำตอบ (ข้อที่ตัวเลือกเรียงตามธรรมชาติไม่สลับ)
+ORDERED = set()
+_slot = 0
+for s in S:
+    for it in s["items"]:
+        if it["id"] in ORDERED:
+            continue
+        tgt = [0, 2, 4, 1, 3][_slot % 5]; _slot += 1
+        a = it["answer"]
+        if tgt != a:
+            ch = it["choices"]; ch[a], ch[tgt] = ch[tgt], ch[a]; it["answer"] = tgt
+
+path = os.path.join(BUILD, "data", "derm.json")
+data = [l for l in json.load(open(path, encoding="utf-8")) if l.get("lec") != LECTURE["lec"]]
+data.append(LECTURE)
+seen = set()
+for l in data:
+    for x in [i for s_ in l["sections"] for i in s_["items"]] + l["meq"] + l["osce"] + [{"id": s_["id"]} for s_ in l["sections"]]:
+        assert x["id"] not in seen, "id ซ้ำ: " + x["id"]
+        seen.add(x["id"])
+nl = json.load(open(os.path.join(BUILD, "data", "nl.json"), encoding="utf-8"))
+codes = {c for s_ in S for c in s_["nl"]} | {c for s_ in S for i in s_["items"] for c in i["nl"]} | {c for m in MEQ + OSCE for c in m["nl"]}
+missing = sorted(c for c in codes if c not in nl)
+assert not missing, "รหัส นล. ไม่พบ: %s" % missing
+for s_ in S:
+    assert "```" not in s_["md"], s_["id"]
+    assert s_["md"].count("**") % 2 == 0, "** ไม่ครบคู่: " + s_["id"]
+json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+ipath = os.path.join(BUILD, "data", "index.json")
+idx = json.load(open(ipath, encoding="utf-8"))
+for m in idx:
+    if m["set"] == "derm": m["lectureCount"] = len(data)
+json.dump(idx, open(ipath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+from collections import Counter
+print("sections %d | items %d | meq %d | osce %d | figs %d | nl %d"
+      % (len(S), sum(len(s_["items"]) for s_ in S), len(MEQ), len(OSCE),
+         sum(len(s_["figs"]) for s_ in S), len(codes)))
+print("answer positions:", dict(sorted(Counter(i["answer"] for s_ in S for i in s_["items"]).items())))
+print("derm.json มี %d คาบ: %s" % (len(data), [l["lec"] for l in data]))
