@@ -608,6 +608,24 @@ document.addEventListener("click",function(e){
 });
 
 /* ---------- ปิดตารางเพื่อทวน ---------- */
+/* TQST จำว่าตารางไหนกำลังปิดอยู่และเปิดช่องไหนไปแล้ว เพื่อให้ไม่หายตอน render ใหม่
+   (เช่น ตอบข้อสอบท้ายหัวข้อ) · อยู่ในหน่วยความจำรอบนี้เท่านั้น ไม่ปนกับ state ที่ซิงก์ขึ้นบัญชี */
+var TQST={};
+function tqKey(i){return (state.sec||state.view||"x")+":"+i;}
+function tqCell(td){
+  var tr=td.parentNode,tb=tr.parentNode;
+  return [].indexOf.call(tb.children,tr)+":"+[].indexOf.call(tr.children,td);
+}
+function tqRec(td,open){
+  var tw=td.closest(".tablewrap");if(!tw||!tw._tqk)return;
+  var st=TQST[tw._tqk];if(!st)return;
+  if(open)st.op[tqCell(td)]=1;else delete st.op[tqCell(td)];
+}
+function tqOpen(td,open){                     /* เปิด/ปิดช่องเดียว พร้อมบอก screen reader */
+  td.classList.toggle("op",open);
+  td.setAttribute("aria-expanded",open?"true":"false");
+  tqRec(td,open);
+}
 var TQSEG=(window.Intl&&Intl.Segmenter)?new Intl.Segmenter("th",{granularity:"grapheme"}):null;
 function tqHint(t){
   t=String(t||"");
@@ -626,21 +644,42 @@ function tqSet(tw,on){
   tb.querySelectorAll("tbody tr").forEach(function(tr){
     Array.prototype.forEach.call(tr.children,function(td,i){
       if(i===0||td.tagName!=="TD")return;
-      if(on){if(!td.hasAttribute("data-hint"))td.setAttribute("data-hint",tqHint(td.innerText));td.classList.add("cv");td.classList.remove("op");}
-      else td.classList.remove("cv","op");
+      if(on){
+        if(!td.hasAttribute("data-hint"))td.setAttribute("data-hint",tqHint(td.innerText));
+        td.classList.add("cv");td.classList.remove("op");
+        td.tabIndex=0;td.setAttribute("role","button");
+        td.setAttribute("aria-expanded","false");
+        td.setAttribute("aria-label","ช่องที่ปิดไว้ คำใบ้ "+td.getAttribute("data-hint")+" · กดเพื่อเปิดดูคำตอบ");
+      } else {
+        td.classList.remove("cv","op");
+        td.removeAttribute("tabindex");td.removeAttribute("role");
+        td.removeAttribute("aria-expanded");td.removeAttribute("aria-label");
+      }
     });
   });
   var bar=tw.previousElementSibling;if(bar&&bar.classList.contains("tqbar"))tqBar(bar,on);
+  if(tw._tqk){if(on)TQST[tw._tqk]={on:1,op:{}};else delete TQST[tw._tqk];}
 }
 function tqBar(bar,on){
   bar.innerHTML=on?"<button class='btn' data-tq='all'>เปิดทั้งหมด</button><button class='btn' data-tq='re'>ปิดใหม่</button><button class='btn' data-tq='off'>เลิกทวน</button><span class='tqn'>แตะช่องเพื่อเปิดทีละช่อง · คำใบ้ = ตัวแรก ๆ (จำนวนข้อ)</span>"
     :"<button class='btn' data-tq='on'>ปิดเพื่อทวน</button>";
 }
 function tqInit(root){
-  (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw){
+  (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw,i){
     if(tw._tq)return;tw._tq=1;
     var tb=tw.querySelector("table");if(!tb||!tb.querySelector("tbody tr td:nth-child(2)"))return;
+    tw._tqk=tqKey(i);
     var bar=document.createElement("div");bar.className="tqbar";tqBar(bar,false);tw.parentNode.insertBefore(bar,tw);
+    var st=TQST[tw._tqk];
+    if(st&&st.on){                           /* render ใหม่แล้วให้กลับมาปิดเหมือนเดิม */
+      var op=st.op;tqSet(tw,true);TQST[tw._tqk]={on:1,op:op};
+      tb.querySelectorAll("tbody tr").forEach(function(tr){
+        Array.prototype.forEach.call(tr.children,function(td,ci){
+          if(ci===0||td.tagName!=="TD")return;
+          if(op[tqCell(td)]){td.classList.add("op");td.setAttribute("aria-expanded","true");}
+        });
+      });
+    }
   });
 }
 document.addEventListener("click",function(e){
@@ -648,10 +687,16 @@ document.addEventListener("click",function(e){
   if(b){var bar=b.closest(".tqbar"),tw=bar.nextElementSibling,act=b.getAttribute("data-tq");
     if(act==="on"||act==="re")tqSet(tw,true);
     else if(act==="off")tqSet(tw,false);
-    else if(act==="all")tw.querySelectorAll("td.cv").forEach(function(td){td.classList.add("op");});
+    else if(act==="all")tw.querySelectorAll("td.cv").forEach(function(td){tqOpen(td,true);});
     return;}
   var td=e.target.closest&&e.target.closest("table.tq td.cv");
-  if(td)td.classList.toggle("op");
+  if(td)tqOpen(td,!td.classList.contains("op"));
+});
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Enter"&&e.key!==" ")return;
+  var td=e.target&&e.target.closest&&e.target.closest("table.tq td.cv");
+  if(!td)return;
+  e.preventDefault();tqOpen(td,!td.classList.contains("op"));
 });
 (function(){var m=document.getElementById("main");if(!m||!("MutationObserver" in window))return;
   new MutationObserver(function(){tqInit(m);}).observe(m,{childList:true,subtree:true});})();
