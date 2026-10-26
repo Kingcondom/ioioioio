@@ -169,7 +169,7 @@ sec("derm-si-02", "Impetigo และ ecthyma — ตื้นแล้วไม
           "IgG autoantibodies directed against the basement membrane",
           "Direct invasion of the fascia with secondary skin necrosis"],
          0,
-         "นี่คือ **bullous impetigo** · กลไกคือ ***S. aureus* ปล่อย exotoxin ที่ย่อยรอยต่อ desmosome ระหว่าง keratinocyte** ทำให้ชั้น epidermis **แยกออกเป็นถุงน้ำ** ผนังจึงบางและแตกง่าย เหลือ erosion ขอบสะเก็ดสีน้ำผึ้ง · เป็นกลไกเดียวกับ **staphylococcal scalded skin syndrome** แต่จำกัดเฉพาะที่\n\nทำไมข้ออื่นผิด\n- **strep ตามท่อน้ำเหลืองใน upper dermis** คือกลไกของ **erysipelas** ซึ่งให้ผื่นแดงขอบคม ไม่ใช่ตุ่มน้ำ\n- **การอักเสบของชั้นไขมัน** คือ **panniculitis** ให้ก้อนลึกกดเจ็บ ไม่ใช่ตุ่มน้ำตื้น\n- **autoantibody ต่อ basement membrane** คือ **bullous pemphigoid** ซึ่งเป็นโรคภูมิต้านตนเอง ตุ่มน้ำผนังหนากว่าและไม่มีสะเก็ดน้ำผึ้ง เป็นหนึ่งใน mimic ที่สไลด์เตือน\n- **การลุกลามถึง fascia** คือ necrotizing fasciitis ซึ่งปวดรุนแรงและผิวคล้ำ",
+         "นี่คือ **bullous impetigo** · กลไกคือ **S. aureus ปล่อย exotoxin ที่ย่อยรอยต่อ desmosome ระหว่าง keratinocyte** ทำให้ชั้น epidermis **แยกออกเป็นถุงน้ำ** ผนังจึงบางและแตกง่าย เหลือ erosion ขอบสะเก็ดสีน้ำผึ้ง · เป็นกลไกเดียวกับ **staphylococcal scalded skin syndrome** แต่จำกัดเฉพาะที่\n\nทำไมข้ออื่นผิด\n- **strep ตามท่อน้ำเหลืองใน upper dermis** คือกลไกของ **erysipelas** ซึ่งให้ผื่นแดงขอบคม ไม่ใช่ตุ่มน้ำ\n- **การอักเสบของชั้นไขมัน** คือ **panniculitis** ให้ก้อนลึกกดเจ็บ ไม่ใช่ตุ่มน้ำตื้น\n- **autoantibody ต่อ basement membrane** คือ **bullous pemphigoid** ซึ่งเป็นโรคภูมิต้านตนเอง ตุ่มน้ำผนังหนากว่าและไม่มีสะเก็ดน้ำผึ้ง เป็นหนึ่งใน mimic ที่สไลด์เตือน\n- **การลุกลามถึง fascia** คือ necrotizing fasciitis ซึ่งปวดรุนแรงและผิวคล้ำ",
          "bullous impetigo = exotoxin แยกชั้น epidermis · อย่าสับสนกับ pemphigoid",
          "Impetigo — bullous mechanism", R("Impetigo · Forms"), ["2.3.12(9)", "B4.2.2(4)"]),
      mcq(N(4), "Which feature best distinguishes ecthyma from ordinary impetigo?",
@@ -188,7 +188,7 @@ sec("derm-si-02", "Impetigo และ ecthyma — ตื้นแล้วไม
 NL_CELL = ["2.3.12(4)", "B4.2.2(3)"]
 sec("derm-si-03", "Erysipelas · cellulitis · lymphangitis — ตระกูลเดียวกันที่ต่างความลึก",
     "ขอบคมยกขึ้น vs ขอบเบลอ · เส้นแดงลากไปต่อมน้ำเหลือง", 11,
-"""สามโรคนี้มาจากตระกูลเดียวกัน (**ส่วนใหญ่คือ *Streptococcus pyogenes***) แต่อยู่คนละชั้นและคนละทาง จึงให้ภาพต่างกันชัดเจน
+"""สามโรคนี้มาจากตระกูลเดียวกัน (**ส่วนใหญ่คือ Streptococcus pyogenes**) แต่อยู่คนละชั้นและคนละทาง จึงให้ภาพต่างกันชัดเจน
 
 [[fig:border]]
 
@@ -426,7 +426,7 @@ sec("derm-si-06", "Folliculitis → furuncle → carbuncle — เรื่อ�
     "ลึกขึ้นและรวมหลายรูขุมขน = ชื่อเปลี่ยน การรักษาเปลี่ยน", 8,
 """### Folliculitis
 - **นิยาม** การติดเชื้อ**ตื้น**ของ **รูขุมขน (hair follicle)**
-- **เชื้อ** ***Staphylococcus aureus*** เป็นหลัก · ที่พบไม่บ่อยคือ ***Pseudomonas* spp. — “hot tub folliculitis”** · เชื้อรา · เริม
+- **เชื้อ** ***Staphylococcus aureus*** เป็นหลัก · ที่พบไม่บ่อยคือ **Pseudomonas spp. — “hot tub folliculitis”** · เชื้อรา · เริม
 - **เกิดที่ไหนก็ได้ที่มีขน**
 - **อาการ** ตุ่มแดงหรือตุ่มหัวขาวเล็ก ๆ **อยู่กลางรูขุมขน** · คัน กดเจ็บ หรือปวดเล็กน้อย
 - **การวินิจฉัย** clinical
