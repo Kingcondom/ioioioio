@@ -275,9 +275,16 @@
 
 ---
 
-# C. Fungal และ D. Parasitic — ⚠️ อ่านจากไฟล์ไม่ได้
-สไลด์หน้า classification ระบุว่ามี **fungal (ringworm, candidiasis)** และ **parasitic (scabies, lice)**
-และการค้น fullText ของไฟล์ยืนยันว่า**มีคำ scabies/tinea อยู่ในไฟล์จริง**
-แต่ `read_file_content` ตัดข้อความหลัง Disseminated Herpes Zoster และดึง binary มา render ไม่ได้
+# C. Fungal และ D. Parasitic — ⚠️ อ่านจากไฟล์ไม่ได้ (ยืนยันขอบเขตไม่ได้)
+สไลด์หน้า classification ระบุหมวด **fungal (ringworm, candidiasis)** และ **parasitic (scabies, lice)** ไว้
+แต่ **เนื้อหาของสองหมวดนี้อ่านไม่ได้** เพราะ `read_file_content` ตัดข้อความหลัง Disseminated Herpes Zoster
+และดึง binary มา render เป็นภาพไม่ได้ (base64 ของ 20.8 MB ล้น context)
 
-→ ส่วนนี้ต้อง **probe ขอบเขตจาก fullText** แล้วเขียนเนื้อหาอิง**แนวทางมาตรฐาน** และ**ระบุในบทเรียนว่าไม่ได้ถอดจากสไลด์**
+**การ probe ด้วย fullText เชื่อถือไม่ได้** — ทดสอบแล้วพบว่าคำว่า `candidiasis` ซึ่ง**อยู่ในข้อความที่อ่านได้จริง**
+กลับ probe ไม่เจอ ส่วน `pediculosis` ที่ probe เจอ ก็มาจาก DDx ของ trichomycosis ในหมวดแบคทีเรีย ไม่ใช่หมวดปรสิต
+(`Malassezia` · `onychomycosis` · `griseofulvin` · `permethrin` · `ivermectin` · `larva migrans` ทั้งหมด probe ไม่เจอ
+ซึ่ง**ไม่ได้พิสูจน์ว่าไม่มีในสไลด์** เพราะ index ไม่ครอบคลุมทั้งไฟล์)
+
+→ **สรุป: ยืนยันได้แค่ว่าหมวดเชื้อรา/ปรสิตถูกระบุไว้ในหน้า classification เท่านั้น ไม่รู้ว่าอาจารย์สอนลึกแค่ไหน**
+→ บทเรียนรอบนี้จึงทำ **หมวดแบคทีเรีย + หมวดไวรัส** ซึ่งถอดจากสไลด์ได้ครบถ้วน
+→ ถ้าจะเพิ่มหมวดเชื้อรา/ปรสิต ต้องให้ผู้ใช้แยกไฟล์หรืออัปโหลดเฉพาะหน้าท้ายมา แล้วค่อยถอดจากสไลด์จริง
