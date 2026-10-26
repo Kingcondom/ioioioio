@@ -684,7 +684,7 @@ sec("cardio-ihd-09", "NSTE-ACS — แบ่งความเสี่ยงแ
 - **วินิจฉัยเป็น NSTEMI** ตาม algorithm
 - **ST/T เปลี่ยนแปลงแบบ dynamic หรือน่าจะใหม่ ในลีดที่ต่อเนื่องกัน ซึ่งบ่งชี้การขาดเลือดต่อเนื่อง**
 - **ST elevation ชั่วคราว**
-- **GRACE risk score มากกว่า 140** — ใช้ใน **unstable angina** (NSTEMI เข้าเกณฑ์ข้อแรกอยู่แล้ว)
+- **GRACE risk score มากกว่า 140**
 
 ### Selective invasive strategy (Class I A)
 ผู้ป่วย **ความเสี่ยงต่ำ** — ให้ทำ **การทดสอบภาวะขาดเลือดที่เหมาะสม หรือ CCTA** ก่อน แล้วค่อยตัดสินใจ
@@ -699,13 +699,11 @@ sec("cardio-ihd-09", "NSTE-ACS — แบ่งความเสี่ยงแ
 - **FFR-guided revascularization ของรอยโรคที่ไม่ใช่ culprit ใช้ได้ระหว่าง index PCI (Class IIb B)**
 
 ### GRACE risk score
-> **ใช้ตัดสินเวลาสวนใน unstable angina เท่านั้น** — เพราะ **NSTEMI มี troponin ขึ้น ซึ่งเป็น high-risk criterion อยู่แล้ว** → สวนภายใน 24 ชั่วโมงได้เลยโดยไม่ต้องคำนวณ · **UA troponin ไม่ขึ้น** จึงต้องใช้ GRACE แยก: **> 140 = high risk → early invasive ภายใน 24 ชั่วโมง** · ต่ำกว่านั้น → selective invasive (ตรวจหาภาวะขาดเลือดก่อน)
-
 ใช้ **บอกพยากรณ์โรค (Class IIa B)** โดยคำนวณจาก **อายุ อัตราการเต้นหัวใจ ความดันซิสโตลิก ระดับครีแอตินิน Killip class ภาวะหัวใจหยุดเต้นแรกรับ ST deviation และ troponin ที่สูง**
 """,
     ["Very high risk → สวนภายใน 2 ชั่วโมง · high risk → ภายใน 24 ชั่วโมง · low risk → ตรวจก่อนค่อยตัดสินใจ",
      "ST depression > 1 mm ใน ≥ 6 ลีด + ST elevation ใน aVR = left main จนกว่าจะพิสูจน์เป็นอื่น → สวนภายใน 2 ชั่วโมง",
-     "GRACE ใช้ใน unstable angina: > 140 = high risk ต้องสวนภายใน 24 ชั่วโมง (NSTEMI เข้าเกณฑ์จาก troponin อยู่แล้ว)",
+     "GRACE > 140 = high risk ต้องสวนภายใน 24 ชั่วโมง",
      "หัวใจหยุดเต้นนอกโรงพยาบาลที่เสถียรและไม่มี ST elevation ให้ชะลอการสวน ไม่ใช่รีบ"],
     [
     mcq("CAR-IHD-MCQ-12",
