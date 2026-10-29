@@ -12,9 +12,6 @@
 """
 import io, os, re, sys
 
-import pymupdf
-from PIL import Image
-
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(os.path.dirname(TOOLS), "img", "chest")
 
@@ -140,6 +137,8 @@ def trim_white(im, thr=246, pad=2):
 
 
 def main():
+    import pymupdf
+    from PIL import Image
     args = sys.argv[1:]
     sheet = None
     if "--sheet" in args:
