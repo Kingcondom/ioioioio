@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 16 ต.ค. 2569 · รอบที่ 8)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 26 ต.ค. 2569)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -25,9 +25,9 @@ Claude รันอยู่บนเครื่องชั่วคราว�
 **2. จบงานหนึ่งก้อน → commit เข้า repo ทันที ไม่รอจบ session**
 
 ```bash
-cd /home/claude/ioioioio (หรือ /home/user/ioioioio แล้วแต่ container)
+cd /home/user/ioioioio
 git add -A && git commit -m "<สรุปสั้น ๆ ว่าทำอะไร>"
-git push -u origin <branch ที่ session นั้นได้รับมอบหมาย>
+git push -u origin claude/internal-med-learning-web-j9ca6l
 ```
 
 เกณฑ์ว่า "ก้อนหนึ่ง" คือ — สร้างคาบเรียนเสร็จ 1 คาบ · แกะเอกสารเสร็จ 1 ภาค · เขียนสคริปต์เสร็จ 1 ตัว
@@ -50,25 +50,9 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ---
 
-> **เริ่ม session ใหม่:** ถ้า branch ที่ได้รับมอบหมายยังไม่มีงานล่าสุด ให้ `git fetch origin` แล้ว merge
-> `origin/claude/lecture-artifact-integration-5plhhc` (ล่าสุด 16 ต.ค. · Version 27) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
-> `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
-> (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
-
-> 🧰 **Skill `med421-lecture`** (`.claude/skills/med421-lecture/SKILL.md`) — ขั้นตอนเต็มตั้งแต่รับไฟล์สไลด์จนขึ้นเว็บ ·
-> เครื่องมือ: `check_lecture.py` (ตรวจข้อมูล) · `check_render.py` (ไล่กดทุกหัวข้อบนเบราว์เซอร์) · `coverage.py` (คลัง Ward Drill, `--find`) ·
-> `compare_live.py` (เทียบเว็บกับ repo ก่อน publish) · `link_bank.py` (ผูกข้อคลัง)
->
-> ⚠️ **ปัญหาเก่าที่ `check_lecture.py` พบ (5 ต.ค. · ยังไม่แก้ รอผู้ใช้ตัดสินใจ)**
-> - **`**` ค้างบนจอ 127 จุด** — ตัวหนาคร่อมการขึ้นบรรทัดในย่อหน้า: neuro 21/10 (74 · เห็นบนจอใน 9 หัวข้อ) · air 33 (14) · air 08 (12) · nephro 05 (8) · air 23 (7) · cardio 04 (5) · cardio 10 (3) · neuro 07 (2) · chest 26 (1) · endo 14 (1 — `HLA DQB1*02`)
->   แก้ได้โดยไม่กระทบความคืบหน้าของผู้ใช้ (แก้แค่ข้อความ)
-> - ✅ (13 ต.ค.) MEQ vignette / OSCE instruction เปลี่ยนเป็น render ด้วย `md()` แล้ว — 25 ข้อที่เคยโชว์ `**` และตารางดิบ แสดงถูกแล้ว
-> - **คำตอบกระจุก** — chest 23/9 (B/C เท่านั้น) · neuro 21/10 (A 25/30) · cardio 13 · neuro 23/9, 15/10, 9/10 · air 23
->   การสลับตำแหน่งคำตอบของข้อที่ขึ้นเว็บแล้วจะทำให้คำตอบที่ผู้ใช้เคยทำ (เก็บเป็น index) ผิด → ต้องถามผู้ใช้ก่อน
-
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 42** · มี **10 ชุดวิชา** · 40 คาบ · capability `db` + `user`)
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน — ดูเลขล่าสุดจาก Artifact action:list เสมอ)
 
 > 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
 > ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
@@ -113,23 +97,18 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 ## 2. ที่อยู่ไฟล์
 
 ```
-/home/user/ioioioio/          ← repo · ฉบับล่าสุดอยู่ที่ claude/add-today-blougl = claude/keen-brahmagupta-nqy0my (commit เดียวกัน)
+/home/user/ioioioio/          ← repo · branch claude/internal-med-learning-web-j9ca6l
 ├── artifact/                  ← ต้นฉบับ artifact (publish จากที่นี่)
 │   ├── index.html             ← หน้าเว็บ (43 KB)
 │   ├── README.md              ← วิธีเพิ่มคาบใหม่ + schema ย่อ
 │   ├── data/
 │   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
 │   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
-│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (4)
-│   │   ├── nephro.json (1)    neuro.json (5)
-│   │   ├── endo.json (2)
-│   │   └── id.json (1)        ← ชุดใหม่ 2 ต.ค. (build_sepsis.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
-│   └── tools/                 ← (14 ต.ค.) build_diabetes.py + figs_diabetes.py · (13 ต.ค.) build_glomerular.py + figs_glomerular.py · build_uti.py · build_renalimg.py · build_wbc.py ·
-│                                 svg.py (ตัวช่วยวาดภาพ) · preview_figs.py (ดูภาพก่อนใส่) ·
-│                                 build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
-│                                 build_ihd.py · build_lp.py · build_mets.py · build_rfpleural.py ·
-│                                 build_thyroid.py · build_sepsis.py · map_nl.py · refactor.py ·
-│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish · นับแท็บจาก index.json เอง)
+│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (2)
+│   │   └── nephro.json (1)    neuro.json (5)
+│   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py ·
+│                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
+│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
 ├── nl/                        ← งานแกะเกณฑ์ นล. (เสร็จแล้ว ไม่ต้องทำซ้ำ)
 │   ├── vis/056.txt–074.txt    ← ผลอ่านภาค ข. ด้วยสายตา
 │   ├── visA/010.txt–047.txt   ← ผลอ่านภาค ก. ด้วยสายตา + _scheme.md (โครงรหัส)
@@ -138,8 +117,6 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 │   └── merge_full.py          ← รวมทั้งสองภาคเข้า artifact/data/nl.json + แก้รหัสผิด
 ├── refs/curriculum-topics-2569.md  ← หัวข้อตามหลักสูตรทางการ
 ├── slides/SOURCES.md          ← รายการไฟล์สไลด์ที่ได้รับและ Drive file id
-├── slides/eptb_notes.md       ← โน้ตอ่านสไลด์ Extrapulmonary TB ทีละหน้า (16 หน้า + ลายมือ)
-├── slides/rf_pleural_notes.md · thyroid_notes.md · sepsis_notes.md  ← โน้ตรอบ 2 ต.ค.
 └── (ของเดิมคนละสาย: drill.html · learn.html · build.py · data/ · export/)
 ```
 
@@ -173,66 +150,92 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 26 คาบ
+## 4. ความคืบหน้า — 10 ชุดวิชา · 41 คาบ · 513 หัวข้อ · ข้อสอบ 1,429 ข้อ (26 ต.ค.)
 
-| set | lec | เรื่อง |
-|---|---|---|
-| air | 08 | Allergy and clinical immunology |
-| air | 23 | Approach to arthritis / crystal and infective |
-| air | 33 | Connective tissue disease, vasculitis (18 หัวข้อ — เติมส่วนที่ขาดจากสไลด์ อ.พรรณนิภา ครบแล้ว) |
-| cardio | 04 | Inflammatory MyoPericardial Syndrome (IMPS) |
-| cardio | 10 | Circulatory Shock |
-| cardio | 13 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ · พฤ. 24 ก.ย. (เดิมใช้เลข 24/9 — เปลี่ยนเป็นเลขคาบจริงจากคลัง Ward Drill แล้ว · ผูกคลังคาบ 13 ครบ 32 ข้อ ด้วย `tools/link_ihd_bank.py`) |
-| cardio | 24 | Atrial fibrillation ← อ.อภิชัย · จ. 5 ต.ค. (11 หัวข้อ · 20 MCQ ใหม่ + คลังคาบ 24 ครบ 21 ข้อ · MEQ AF RVR + warfarin · OSCE counselling warfarin) |
-| cardio | 27 | Valvular heart disease + Acute rheumatic fever ← พ.ญ.ชนัญญา · อ. 6 ต.ค. (13 หัวข้อ · 18 MCQ ใหม่ + คลังคาบ 27 ครบ 31 ข้อ · MEQ ARF ใหม่ + C-MEQ-02 · OSCE C-OSCE-04) — **ผู้ใช้ขอให้อัปเดตตามแนวทางล่าสุด**: ESC/EACTS 2025 (VHD) · WHO 2024 + Jones 2015 (ARF) · ESC 2023 + Duke-ISCVID 2023 (IE — ไม่อยู่ในสไลด์ แต่มีในคลัง 7 ข้อ) · ลายมือบนสไลด์อ่านไม่ได้ |
-| cardio | 36 | Basic ECG และ arrhythmia ที่พบบ่อย ← อ.สุรชาติ · จ. 19 ต.ค. (14 หัวข้อ · 28 MCQ ใหม่ + คลังคาบ 36 ครบ 23 ข้อ · MEQ inferior STEMI + CHB · OSCE บันทึก 12-lead + Brugada leads + C-OSCE-02/03 · **28 ภาพ ECG วาดจริงบนกระดาษกราฟ** จาก `figs_ecg.py`) — PDF 37.8 MB อ่านได้เฉพาะข้อความ (ภาพ ECG ในสไลด์มองไม่เห็น · ลายมือ OCR เป็นเศษคำ ใช้เฉพาะที่ตีความได้) · **หัวข้อ 7 (ACLS) และการรักษา AV block/hyperK ไม่อยู่ในสไลด์** → AHA ACLS 2020 + 2023 · ESC SVT 2019 · ACC/AHA/HRS 2018 · 4th UDMI · ESC ACS 2023 |
-| chest | 03 | Pulmonary tuberculosis |
-| chest | 26 | Arterial blood gas analysis |
-| chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
-| chest | 17 | Respiratory failure + Pleural disease ← อ.สกล (12 หัวข้อ · 36 ข้อ รวมคลังคาบ 17 ครบ · CH-MEQ-03 · CH-OSCE-02/04) |
-| chest | Thoracentesis | Thoracentesis และการแปลผลน้ำ ← Active learning กลุ่ม 5 (12 หัวข้อ · 26 MCQ + MOCK-137/138/142 · MEQ · OSCE หัตถการ · **21 ภาพ**) — BTS 2023 · สไลด์นักศึกษามีจุดผิดบางจุด แก้ตามแนวทางและระบุในบทเรียน |
-| chest | 37 | COPD ← อ. 20 ต.ค. · เรียบเรียงจาก **GOLD 2026** (14 หัวข้อ = NL 11 + อ่านเพิ่มเติม 3 · 30 MCQ + คลังคาบ 37 อีก 8 · MEQ AECOPD + CH-MEQ-02 · OSCE inhaler · **20 ภาพ**) — บางหน้าของ GOLD PDF อ่านไม่ได้ (ภาพ) · ส่วน pneumonia/asthma ของคาบ 37 ในคลังยังไม่มีบทเรียน |
-| nephro | Physio1 | สรีรวิทยาไตพื้นฐาน I — การทำงานของไต RBF/GFR clearance การขนส่งในท่อไต concentrating (14 หัวข้อ · 29 MCQ + MOCK-147/165/169/179/181 · MEQ NSAID+ACEi+thiazide · OSCE คำนวณ clearance/FENa/CH2O · **23 ภาพ**) — PDF อ่านได้แค่ข้อความ ภาพในสไลด์ (สมการ eGFR, แผนภาพเซลล์ท่อไต, countercurrent) วาดใหม่จาก Guyton/Boron · ส่วนจากตำราติด "(ตำรา)" ในเนื้อหา · จุดที่สไลด์ดูคลาดเคลื่อนมีหมายเหตุแก้ |
-| nephro | Physio2 | สรีรวิทยาไตพื้นฐาน II — tonicity, Darrow–Yannet, Na/ADH/RAAS/ANP, SIADH, K, Ca/Pi/Mg, กรด-ด่าง + วิเคราะห์ ABG, micturition (15 หัวข้อ · 30 MCQ + MOCK-135/170/173/180/198 · MEQ อาเจียน/gastric outlet · OSCE วิเคราะห์ ABG 3 ราย · **25 ภาพ**) — หัวข้อ 7 (SIADH/ODS, European 2014) และสูตร compensation/delta/osmolal gap เติมเอง · เฉลยแบบฝึก ABG 10 ข้อในสไลด์เขียนเอง (ข้อ 7 ค่าไม่เข้า H–H พอดี) |
-| nephro | 05 | Fluid electrolyte: Divalent |
-| neuro | 07 | Acute ischemic stroke |
-| neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
-| neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
-| neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ · **+ handout ใหม่ อ.ปองปวีณ์ (23 ต.ค.)** → 9 หัวข้อ · 19 MCQ · 17 ภาพ |
-| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ · **+ handout ACS 2026 อ.เพชรรัตน์ + Delirium quiz (23 ต.ค.)** → 19 หัวข้อ · 45 MCQ · 29 ภาพ (เฉลย quiz ข้อ 1/3 อนุมานจากเนื้อหา — handout ไม่มีเฉลย) |
-| derm | Derm1 | Common skin diseases for internists ← อ.ภูริต · สไลด์ปี 2566 (18 หัวข้อ: รอยโรค · eczema ทุกชนิด · contact · miliaria · urticaria · STD/syphilis · chancroid/GC/LGV · leprosy · EM/SJS/TEN · erythema nodosum · 45 MCQ + MOCK-008/016/058/059/060 · MEQ allopurinol SJS-TEN · OSCE บรรยายผื่น secondary syphilis + counselling · **32 ภาพ**) — สไลด์เก่ากว่าแนวทาง: GC ceftriaxone 125 mg → CDC 2021 500 mg · leprosy MDT เก่า → WHO 2018 สามตัวทุกราย · chronic urticaria → EAACI 2022 · แสดงทั้งสองแบบในบทเรียน |
-| endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
-| endo | 14/10 | Diabetes mellitus (Inc. DKA) ← ศ.นพ.ชัยชาญ · พ. 14 ต.ค. (15 หัวข้อ · 31 MCQ + MOCK-124/188–192 · MEQ DKA รายแรกของ T1 · OSCE ตรวจเท้าเบาหวาน · **22 ภาพ**) — **สไลด์ไม่มี DKA/HHS/hypoglycemia** → หัวข้อ 7–9 อิง ADA 2024 consensus + ADA 2009 + ADA SoC · KDIGO 2022 DM-CKD · IWGDF 2023 · ไม่มีคลัง Ward Drill (ชุด Endo) |
-| endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
-| id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
-| id | 5/10 | AIDS and HIV infection ← พ.ญ.มนัสวี · จ. 5 ต.ค. (13 หัวข้อ · 27 MCQ · MEQ PCP/advanced HIV · OSCE pre-test counselling) — สไลด์ส่วนตาราง (WHO staging, สูตรยา, OI prophylaxis, crypto Rx) เป็นภาพ → อิงแนวทางไทย 2025/WHO และระบุในบทเรียน · ไม่มีข้อในคลัง Ward Drill |
-| gi | 12/10 | Acute and chronic hepatitis ← อ.เฉลิมรัฐ · จ. 12 ต.ค. (11 หัวข้อ · 14 MCQ + MOCK-149/153 · MEQ acute HBV · SAQ HBV serology) — WHO 2024/EASL 2025 HBV · AASLD–IDSA HCV · EASL 2024 MASLD |
-| gi | 27/10 | Approach to abdominal pain ← นพ.กิตติ · อ. 27 ต.ค. (11 หัวข้อ · 16 MCQ + MOCK-152/154–157/160/161 · MEQ gallstone pancreatitis · SAQ ปวดท้อง 6 ราย) — ACG 2024 AP · TG18 · ACG/CAG 2017 · Maastricht VI |
-| gi | 29/10 | Liver function tests ← นพ.กิตติ · พฤ. 29 ต.ค. (8 หัวข้อ · 15 MCQ + MOCK-035/150 · MEQ paracetamol · SAQ แปล LFT 5 ราย) — ACG 2017 · EASL 2024 PBC · AASLD 2022 Wilson |
-| hemonc | 12/10 | Approach to WBC disorder and lymphadenopathy ← อ.เบญจมาภรณ์ · จ. 12 ต.ค. (13 หัวข้อ · 32 MCQ + MOCK-044/056 · MEQ · SAQ อ่าน CBC · **17 ภาพ**) — สไลด์ 66 หน้าอ่านเป็นภาพรวมลายมือ · หัวข้อ 7 (acute leukemia/APL) แทบทั้งหมดเติมจาก Williams/WHO 2022/ELN 2022 · CML ELN 2020 · CLL iwCLL 2018 · Lugano 2014 |
-| nephro | 14 | Approach to glomerular disease ← พญ.ฉันทิศา · พฤ. 1 ต.ค. (13 หัวข้อ · 24 MCQ + คลังคาบ 14 ครบ 27 + คาบ 28 อีก 8 (proteinuria/lipiduria/LN) + Mock 166–168/172/176/177 · MEQ MN+RVT · SAQ แปล UA 5 ราย · **19 ภาพ**) — ภาพพยาธิ/KDIGO 2021 MN algorithm/LN class ในสไลด์เป็นภาพ → KDIGO 2021 · KDIGO 2025 IgAN · KDIGO 2024 LN/AAV |
-| nephro | 22/10 | Urethral catheterization ← พฤ. 22 ต.ค. (11 หัวข้อ · 24 MCQ · MEQ · OSCE ใส่สาย Foley ในผู้ชาย · **13 ภาพ**) — EAUN 2024 · BAUS-BAUN 2021 · CDC/IDSA 2009 CAUTI · EAU trauma/LUTS · การระบายปัสสาวะคั่งอ้าง Nyman 2010 (ยังไม่ได้ตรวจกับต้นฉบับ) |
-| nephro | 30 | Urinary tract infection ← อ.กรทิพย์ · ศ. 18 ก.ย. (13 หัวข้อ · 31 MCQ + คลังคาบ 30 ครบ 22 + N-OLD-087/N-MCQ-26/N-OLD-074 + MOCK-011/019/020 · MEQ · SAQ · **20 ภาพ**) — สไลด์ภาพล้วนบางหน้าอ่านไม่ได้ · กลไกอาการ/CFU/prostatitis/recurrent/EPN เติมจาก IDSA 2011/2019/2025, EAU 2025, AUA 2019 · CAUTI ≥10² (สไลด์) เทียบ ≥10³ (IDSA) แสดงทั้งคู่ |
-| nephro | Imaging | Essential renal imaging ← อ.ธนิศร (ไม่มีวันในปฏิทิน · ไม่ใช้เลข 19 เพราะคลังคาบ 19 = CKD) (14 หัวข้อ · 33 MCQ + คาบ 28: N-OLD-080–084, N-MCQ-27/28, N-OSCE-03 + MOCK-171/174/175/182 · MEQ · SAQ · **24 ภาพ**) — handout ไม่มีหน้าภาพ → หัวข้อ 5 (contrast/NSF), 7 (nuclear), 14 (ADPKD/mass) เติมทั้งหมดจาก ACR–NKF 2020/2021, ESUR 2018, KDIGO 2025 ADPKD, Bosniak |
-| hemonc | 2/11 | General oncology ← พญ.ปิยวรรณ · จ. 2 พ.ย. (13 หัวข้อ · 29 MCQ + Mock 16 ข้อ (MOCK-021–029, 031–034, 036–038) · MEQ breast cancer + oncologic emergencies · SAQ ยาต้านมะเร็ง + ภาวะฉุกเฉิน) — **หัวข้อ 9–13 (markers คัดกรอง มะเร็งที่พบบ่อย ภาวะฉุกเฉิน) เพิ่มเองตามคำขอผู้ใช้ "ทำไม่ครบ" เพราะไฟล์มี Common cancer แค่เต้านม** · MOCK-030 myeloma เก็บไว้ให้คาบโลหิตวิทยา — GLOBOCAN 2022 · ASCO irAE 2021 · USPSTF 2024 · CDK4/6 · สไลด์ระบาดวิทยาเป็นภาพ |
+**ตัวเลขนี้ล้าสมัยเร็วมาก** เพราะมีหลาย session ทำงานพร้อมกัน — ให้นับจากไฟล์จริงทุกครั้งที่กลับมาทำงาน
 
-> ⚠️ เลข `lec` แบบวันที่ (เช่น "23/9") เป็นตัวแทนชั่วคราว — **เลขคาบจริงดูได้จากฟิลด์ `lec` ใน `bank_merged.json`** (คลังเดียวกับ Ward Drill)
-> ถ้าคาบนั้นมีข้อในคลัง ให้ใช้เลขนั้นและผูกข้อด้วย `artifact/tools/link_bank.py` (ดูตัวอย่าง `link_ihd_bank.py` และท้าย `build_af.py`)
+```bash
+cd /home/user/ioioioio/artifact && python3 -c "
+import json
+idx=json.load(open('data/index.json'))
+for m in idx:
+    d=json.load(open(m['file']))
+    print('%-8s %-10s คาบ %2d · หัวข้อ %3d'%(m['set'],m['label'],len(d),
+          sum(len(l['sections']) for l in d)), [l['lec'] for l in d])
+"
+```
 
-**ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
-- ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
-- แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
-- ✅ **Drill Version 18** (24 ต.ค.) — เพิ่ม derm **D03** (DERM-D1 45 + MEQ/OSCE 2) ต่อจาก D02 · ข้อเดิม 1294 ข้อไม่เปลี่ยน
-- ✅ **Drill Version 17** (23 ต.ค.) — เพิ่ม nephro **PHY1** (29 + MEQ/OSCE 2) และ **PHY2** (30 + 2) ไว้ต้นชุด Nephro · ข้อเดิม 1231 ข้อไม่เปลี่ยน
-- ✅ **Drill Version 16** (23 ต.ค.) — เพิ่ม chest **37** (CH-COPD 30 + MEQ/OSCE 2) · chest **THO** Thoracentesis (26 + 2 · แทรกหลังคาบ 17) · nephro **CATH** (24 + 2 · หลัง IMG) · neuro **LP** (19) และ **ACS** (45) (หลังคาบ 07 · MEQ/OSCE ของสองคาบนี้มีใน drill อยู่แล้ว) · ข้อเดิม 1081 ข้อไม่เปลี่ยน (0 removed / 0 changed) · blurb chest/nephro/neuro อัปเดต
-  - **ขั้นตอน publish Drill ตอนนี้มี 3 ขั้น** (เพราะ session dashboard เพิ่มชุดรายคาบใน `dashboard/drill_sets/*.json`): `drill_sync.py /path/drillwt` → `build.py --no-pdf` ในนั้น → `python3 dashboard/drill_tool.py merge <drillwt>/drill.html dashboard/drill_sets <out.html>` → publish `<out.html>` (ไม่ส่ง capabilities) · `LEC_FIX` ใน drill_sync.py คงวันที่ที่ dashboard แก้ไว้
-- ✅ **Drill Version 14** (19 ต.ค.) — เพิ่ม cardio 36 (CAR-ECG-MCQ 28 ข้อ + MEQ/OSCE 2) ผ่าน `drill_sync.py` (JOBS แถว cardio 36) · ข้อเดิมไม่เปลี่ยน
-- ✅ **Drill Version 13** (17 ต.ค.) — บันทึกคำตอบในบัญชี `data/users/<id>/drill` (capabilities `{db:{}, user:{}}` · ใช้งานจริงแล้ว) + แท็บ "สุ่มทำข้อสอบ" (ระบบนี้/ทุกระบบ · 10–100 ข้อ · ทุกข้อ/ยังไม่เคยทำ/เคยตอบผิด) + แก้ป้ายยาวล้นจอมือถือ — ทั้งหมดอยู่ใน `drill_sync.py` · **publish drill ครั้งต่อไปต้องไม่ส่ง capabilities ว่าง** (ละไว้ = คงเดิม)
-- ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
+ชุดวิชาที่มี: air · cardio · chest · nephro · neuro · endo · id · gi · hemonc · **derm** (เพิ่ม 25 ต.ค.)
+**คาบล่าสุด: derm `26/10` Skin infection** (อ.วรนิษฐ์ · 26 ต.ค. · artifact Version 43) — 13 หัวข้อ · ข้อใหม่ 28 · MEQ 1 · OSCE 1 · ภาพ 10
 
-**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **423/570 ข้อ = 74% (23 ต.ค.)**: AIR 110/110 · Cardio 151/180 · Chest 72/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 51 ข้อ) ·
-คาบในคลังที่ยังไม่มีบทเรียน: Cardio 39 HT/HF · Chest 21 CXR/Occupational · 37 ส่วน Pneumonia/Asthma (COPD ทำแล้ว) · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
-คาบ 28 (UA) เหลือ 4 ข้อ: N-MCQ-25, N-OLD-072, N-OLD-073 (cast/AKI) และ N-OLD-077 (Fanconi) — เก็บไว้ให้คาบ AKI/UA
+> ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
+> ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
+
+---
+
+## 4b. ⚠️ ปัญหาที่เจอซ้ำ — repo ตามหลัง artifact · และหลาย session ชนกัน
+
+ระหว่าง 20 ก.ย. ถึง 14 ต.ค. มี session อื่นทำงานเพิ่มอีก 17 คาบและเพิ่มความสามารถ
+**sync ความคืบหน้าขึ้นบัญชี (capabilities `db` + `user`)** แต่ **ไม่ได้ commit ลง repo เลย**
+`artifact/index.html` ในคลังจึงเก่าไป 19 KB และไม่มีไฟล์ `endo/id/gi/hemonc` อยู่เลย
+รอบนี้ดึงกลับมาครบแล้ว (commit `6afafc9`) แต่ย้ำกฎข้อ 2 ว่า **จบงานก้อนหนึ่งต้อง commit ทันที**
+ไม่ใช่ publish แล้วจบ เพราะ artifact ไม่ใช่ที่เก็บต้นฉบับ
+
+**ถ้าสงสัยว่า repo ตามหลังอยู่** ให้ตรวจก่อนเริ่มงานทุกครั้ง
+`Artifact action:list scope:files` เทียบขนาดไฟล์กับใน `artifact/` แล้วถ้าไม่ตรง
+ดึงกลับด้วย `Artifact action:read` + `paths:[...]` + `out_dir:/home/user/ioioioio/artifact`
+
+**มีหลาย session ทำงานบน artifact เดียวกันพร้อมกัน** — รอบ 14 ต.ค. ชนกัน 1 ครั้ง
+รอบ 25 ต.ค. ชนกัน **3 ครั้งติดใน 15 นาที** และงานถูกทำซ้ำ/ถูกทับจริง
+
+| รอบ | เกิดอะไร |
+|---|---|
+| 14 ต.ค. | ปุ่มซ่อนแถบ — อีก session ใส่ก่อน 2 นาที งานที่เขียนไว้ต้องทิ้ง |
+| 25 ต.ค. | ปิดตารางเพื่อทวน — อีก session ใส่ก่อน 4 นาที งานที่เขียนไว้ต้องทิ้งอีก |
+| 25 ต.ค. | แพตช์ที่แก้เพิ่มถูกทับหาย เพราะอีก session publish จากเวอร์ชันที่ยังไม่มีแพตช์นั้น |
+
+**วิธีทำงานที่ลดการชน**
+1. **ก่อนลงมือเขียนฟีเจอร์ ให้ดูก่อนว่ามีอยู่แล้วหรือยัง** — `grep` หาคำที่เกี่ยวข้องใน `index.html`
+   เวอร์ชันสด (เช่น `tq`, `cz`, `mastBtn`) ไม่ใช่ในไฟล์ repo ที่อาจเก่า
+2. **ถ้าฟีเจอร์มีอยู่แล้ว ห้ามเขียนทับด้วยของตัวเอง** ให้ทดสอบของเดิมก่อน แล้วแก้เฉพาะจุดที่พิสูจน์ได้ว่าพลาด
+3. **publish ให้เร็วที่สุดหลังแก้เสร็จ** ยิ่งถือไฟล์ไว้นานยิ่งชน
+4. ถ้าถูกปฏิเสธ ระบบจะเซฟไฟล์เวอร์ชันสดไว้ให้ที่ `/root/.claude/projects/.../tool-results/`
+   **ให้ copy ไฟล์นั้นมาแก้ทับ แล้ว publish ใหม่** ห้ามส่งไฟล์เดิมซ้ำ และห้ามประกอบจากความจำ
+
+
+**ฟีเจอร์ที่ session อื่นเพิ่มไว้ และยังไม่มีสคริปต์ build ใน repo**
+- หน้า **"คาบเรียน"** (`viewLectures` / `viewLecture`) + ลิงก์ตรงด้วย hash `#<ชุด>-<คาบ>`
+- **แผนภาพ SVG ในบทเรียน** — `[[fig:key]]` ใน `md` คู่กับ `section.figs`
+- **ปุ่มซ่อนเมนู** `#mastBtn` — จำสถานะใน localStorage คีย์ `med421-learn-mast`
+  (แยกจาก state หลัก `med421-learn-v1`)
+
+---
+
+## 4c. ⚠️ บทเรียนจากรอบ 25 ต.ค. — ชน session อื่นเป็นครั้งที่สอง
+
+09:28 ผู้ใช้คอมเมนต์ขอ "ปิดช่องในตารางให้เหลืออะไรไว้เดา" · **09:32 อีก session publish เสร็จ**
+session นี้ทำช้ากว่า → publish ถูกปฏิเสธ งานที่เขียนไปทิ้งทั้งหมด
+เป็นครั้งที่สองต่อจากปุ่มซ่อนเมนูเมื่อ 14 ต.ค.
+
+**กฎที่ได้** — คอมเมนต์ใหม่เข้ามา ก่อนเขียนโค้ดบรรทัดแรก
+1. `ArtifactComments action:read` ดูว่ามีใครตอบ thread นั้นไปแล้วหรือยัง
+2. ยังไม่มีใครตอบ → **ตอบจองไว้ก่อนว่ากำลังทำ** แล้วค่อยลงมือ
+   (session ที่ได้งานรอบนี้ตอบจอง 09:30 แล้ว publish 09:33)
+3. มีคนตอบแล้ว → **อย่าทำซ้ำ** ไปเขียนเทสต์คุมของเขาแทน ได้ประโยชน์กว่า
+
+### ฟีเจอร์เดียวถูกเขียนใหม่ 3 แบบในวันเดียว
+`.tblq/.tqh` (session นี้ ทิ้งไป) · `.tqbar/.tq/.cv` (ตัวที่ publish อยู่จริง) ·
+`.czbar/button.cz` (ตัวที่ commit ไว้ใน repo) — **สามตัวนี้ไม่ตรงกัน**
+
+ผลคือเทสต์ที่ผูกกับชื่อคลาสล้มทันทีที่อีก session เปลี่ยน implementation
+(เช็ค `main .czbar` ที่ commit ไว้ ล้มกับหน้าเว็บจริงที่ใช้ `.tqbar` ทั้งที่ฟีเจอร์ยังทำงานปกติ)
+**เทสต์ต้องตรวจพฤติกรรม ไม่ใช่ชื่อคลาส** — ตอนนี้รวมเหลือชุดเดียวที่ตรวจว่า
+ปิดแล้วอ่านไม่ได้จริง · ยังเหลือใบ้ · คอลัมน์แรกยังเป็นโจทย์ · ขนาดตารางไม่ขยับ ·
+แตะช่องเดียวเฉลยช่องเดียว — ผ่านทั้ง `.cz` และ `.tq`
+
+### เส้นทาง chromium เปลี่ยนตาม image
+`chromium-1194/chrome-linux` กลายเป็น `chromium-1243/chrome-linux64` → ห้ามฝังเส้นทาง ให้ `glob` หาเอง
+**playwright อยู่บน `python3.13` ไม่ใช่ `python3` (3.11)** → รันด้วย `python3.13 artifact/tools/verify.py`
 
 ---
 
@@ -280,37 +283,20 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - `B11.2.6` พิมพ์เป็น `11.2.6` ขาด B
 - หัวข้อ 2.2 เขียนว่า "49 รายการ" แต่เลขไล่ถึง 2.2.50
 
-ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย · ทุก build_*.py assert รหัสกับ nl.json ก่อนเขียน
-(รอบ 2 ต.ค. พบรหัสผิดในคลัง: `2.3.5-3(1)` = bipolar ถูกใส่ในข้อมะเร็งปอด → build_rfpleural.py ตัดทิ้ง)
+ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย
 
 ---
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
 
-**รอบ 14 ต.ค. (โฟลเดอร์เดิม)** — ✅ v24 · 2026 Diabetes lecture Student (ศ.นพ.ชัยชาญ) `1FB1Oe9v_DWc46H1Y37gi7Gu1ZbPcWdtH` → endo 14/10 · โน้ต `slides/diabetes_notes.md` · ข้อความครบ ภาพ/กราฟอ่านไม่ได้
+**อ.วรนิษฐ์ อ่อนประเสริฐ** (Dermatology)
+- Skin infection 2025 (Hand out) `1PTgRH88P1bd3OYWPtBtgMtJ9KEIdXy0G` ✅ **ทำแล้วบางส่วน** (26 ต.ค.)
+  - โน้ต `slides/skin_infection_notes.md` · สคริปต์ `build_skininf.py` · ภาพ `figs_skininf.py`
+  - ⚠️ **ทำได้เฉพาะหมวด bacterial + viral** — `read_file_content` ของ Drive **ตัดข้อความ**
+    หลังหัวข้อ Disseminated Herpes Zoster และไฟล์ 20.8 MB ใหญ่เกินกว่าจะดึง base64 มา render เป็นภาพได้
+  - **หมวด fungal และ parasitic ยังไม่ได้ทำ** — ต้องให้ผู้ใช้แยกไฟล์หรือส่งเฉพาะหน้าท้ายมา
+    (การ probe ด้วย `fullText` เชื่อถือไม่ได้ — คำที่อยู่ในข้อความที่อ่านได้จริงยัง probe ไม่เจอ)
 
-**รอบ 13 ต.ค. (โฟลเดอร์เดิม `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` · ผู้ใช้เพิ่ม 4 ไฟล์)** — ✅ v21 · ทำพร้อมกันด้วย subagent 3 ตัวใน git worktree แล้ว merge
-- Lec11 Approach to glomerular disease (พญ.ฉันทิศา) `1R5f1MtTJIlwCUeomxvcBD10MKpDzYob4` → nephro 14 · โน้ต `slides/glomerular_notes.md` · ข้อความครบ ภาพอ่านไม่ได้
-- Lec5 UTI_4thRSU2026 (อ.กรทิพย์) `1OeevfDxn_c6H3iLUw6nXIjPOv6DPHawD` → nephro 30 · โน้ต `slides/uti_notes.md`
-- Lec19 Essential Renal Imaging handout (อ.ธนิศร) `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` → nephro Imaging · โน้ต `slides/renalimg_notes.md`
-- Basic electrocardiography outline (อ.สุรชาติ) `13UUiw9BU7zag_JNHWBmidA5gPoVhjTiu` (37.8 MB · 113 หน้า) → cardio 36 · โน้ต `slides/ecg_notes.md`
-- Lec22 Approach to WBC disorder and lymphadenopathy (อ.เบญจมาภรณ์) `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` → hemonc 12/10 · โน้ต `slides/wbc_notes.md` (ไฟล์นี้ดาวน์โหลดผ่าน public link ได้ → เรนเดอร์อ่านได้ครบ 66 หน้า)
-
-**รอบ 6 ต.ค. (โฟลเดอร์ Drive `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj`)** — ✅ v18 · ทั้ง 4 ไฟล์ดึงข้อความด้วย `read_file_content` ได้
-- Acute and chronic hepatitis (อ.เฉลิมรัฐ) `1X6QMVuq2GWT3SLbV9VactnQ11MVtml98` → gi 12/10 · โน้ต `slides/hepatitis_notes.md`
-- Approach to abdominal pain 65 (นพ.กิตติ) `10g5J-s6Zv5JZB3RbHs6dh2QWUR5Xzr5V` → gi 27/10 · โน้ต `slides/abdpain_notes.md`
-- Liver Function Tests 63 (นพ.กิตติ) `1HWt4TMmRmpgSw8lT_NIjt74YQ5LC-zJ3` → gi 29/10 · โน้ต `slides/lft_notes.md`
-- Lec 1 General Oncology (พญ.ปิยวรรณ) `1nzh5iBJ_uJ5uP9_q2zDlAxQ-Opw5xRJg` (19.5 MB) → hemonc 2/11 · โน้ต `slides/oncology_notes.md` · กราฟ GLOBOCAN 2012/มะเร็งไทยเป็นภาพ → ใช้ GLOBOCAN 2022 และระบุไว้
-
-**พ.ญ.ชนัญญา** — VHD + ARF ✅ Drive `1IVsvzRiGSfwCrfi6wcJt49fkwP4Zfzq2` · ข้อความครบ ลายมืออ่านไม่ได้ · โน้ต `slides/vhd_arf_notes.md`
-
-**พ.ญ.มนัสวี** — AIDS and HIV infection ✅ Drive `13PhGovTDoDXERCeB2zfMC1_1nZq2mAlJ` (25 MB) · ข้อความดึงได้เฉพาะสไลด์ตัวอักษร · โน้ต `slides/hiv_notes.md`
-
-**อ.อภิชัย ปกวัฒนา** — Atrial fibrillation (update 16 Nov 2025) ✅ Drive `1zK9eofxHl5ldCi-5IqIjyTStGVHYhlRO` · ดึงข้อความด้วย `read_file_content` ได้ครบ · โน้ต `slides/af_notes.md`
-
-**อ.ภาณุวัฒน์ (Panuwat Wongkulab)** — Extrapulmonary TB: The Hidden Pathogen (Apr 2026) ✅
-- ผู้ใช้อัปโหลดในแชทเป็น PDF ภาพล้วน 16 หน้า (ไม่อยู่ใน Drive) → อ่านด้วยสายตา โน้ตเต็มที่ `slides/eptb_notes.md`
-- ⚠️ ไฟล์ bank `CH-MCQ-20` และ `CH-OSCE-04` (pleural/ADA) ของคาบ 17 อ.สกล ยังว่าง — ตั้งใจไม่ใช้ในคาบ EPTB เพื่อเก็บไว้ให้คาบเยื่อหุ้มปอด
 
 **อ.พิมลพรรณ** (เจ้าของ paranee.k@rsu.ac.th) — ✅ **ใช้ครบทั้ง 4 ไฟล์แล้ว**
 - Epilepsy `1tWDtfQ-ZA-tDDR1_YgGkYgyS-4md6hQ5` ✅
@@ -324,24 +310,6 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - NSTEMI 2020 `17iNJA1PvpedUAz8wyM4CzZBU1MAy1EdI`
 - STEMI2017 `1j-EtRG61awYlCMKRx-q9MKymdhYF2BAA`
 
-**อ.นวพร นภาทิวาอำนวย** (Diabetes & Metabolism) — ✅ ใช้แล้ว (ชุด Endo คาบ 01)
-- Lec 1 2026 MS, obesity, DLP Handout `1ttUNtkD5EXmVXVIhKuScn4Y6wOV9-yQe` (15 MB · อยู่ใน Drive ผู้ใช้เอง)
-  ⚠️ `read_file_content` ได้ข้อความถึงสไลด์ DLCN แล้วหยุด — ส่วนรักษา dyslipidemia ดึงไม่ได้
-  ดาวน์โหลดตรงก็ไม่ได้ (proxy 403) → หัวข้อ 11–13 ของคาบนี้ใช้ ESC/EAS 2019 แทนและระบุไว้ใน `nlGap`
-  ถ้าผู้ใช้ส่งภาพสไลด์ส่วนนั้นมา ให้เทียบแล้วแก้ `build_mets.py`
-
-**รอบ 2 ต.ค. (โฟลเดอร์ Drive "Claude" `1mft-8EhUVLSAXIwVX7zV6JmHoiaBPzsM` ของผู้ใช้)** — ✅ v14
-- Lec12 Respiratory failure, pleural disease `12_uIP-b1TWP-u35yfm90Q9PT5QTNgPvp` → chest คาบ **17** (ใช้เลขคาบตามคลังข้อสอบ ไม่ใช่ "Lec12")
-  ⚠️ ข้อความถูกตัดหลัง work up pleural effusion → Light's/empyema/malignant/การรักษา PTX ไม่ tension ใช้ BTS 2023
-- Lec14 Thyroid disorder_2026 `1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5` → endo คาบ **14**
-  ⚠️ ข้อความถูกตัดหลัง nodule algorithm → hypothyroid/amiodarone/Bethesda เทียบจาก artifact บทเรียน Thyroid ของผู้ใช้
-  (claude.ai/artifact/S9FmtzVewjtqtWxnuNQxRu — ทำจากสไลด์ชุดเดียวกันใน session อื่น) · thyroid storm ใช้ ATA/JTA 2016
-- Sepsis _ Principle ATB `10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc` (175 MB **ภาพล้วน** · read_file_content ว่าง) → id คาบ 25/9
-  ใช้ SSC 2026 (ตรวจกับ sccm.org แล้ว) + artifact Sepsis ของผู้ใช้ (claude.ai/artifact/DB59ZbY5ize8MhxXiHkZJZ) · **ถ้าได้ภาพสไลด์มาให้แก้ build_sepsis.py**
-- Lec7 Epilepsy `1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW` = สไลด์ชุดเดียวกับคาบ Epilepsy ที่ทำแล้ว (มีลายมือ) → ไม่สร้างซ้ำ
-- ผู้ใช้มี artifact บทเรียนแยกต่อหัวข้อใน "ห้องสมุดท่าอาจารย์" (claude.ai/artifact/QebhLmV2eKyzj3mkqstnjR) — ใช้เป็นแหล่งเทียบได้เมื่อสไลด์ดึงไม่ครบ
-- ตำแหน่งเฉลย: build ใหม่ทั้งสามสลับตัวเลือกแบบคงที่ด้วย random.Random(id) — คลังเดิม (CH-MCQ/CH-OLD) เฉลย ก. ทุกข้อ
-
 **เข้าไม่ถึง (น่าจะอยู่บัญชี @rsu.ac.th):**
 - UTI `1GG55VJ6ddTMQ2IETf1IqUpU_tMDizEH7`
 - Tropical disease `1ax8FzPhmAZ4iFSSsXGQcb5TGobcG4nn9` (ผู้ใช้สั่งข้าม Malaria ไปก่อน)
@@ -352,9 +320,41 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
-1. W1: ✅ UTI (v21) · Malaria (ผู้ใช้สั่งพัก)
-2. W2 เหลือ: Skin infections · Nephrotic/Nephritis — ✅ Extrapulmonary TB (v12) · ✅ Dyslipidemia/MetS/Obesity (v13) ·
-   ✅ Septicemia (v14 · อิง SSC 2026 รอภาพสไลด์จริง) · ✅ Pleural/Resp failure (v14) · ✅ Thyroid (v14)
+### ⏳ รอผู้ใช้ตัดสินใจ — class ของ early invasive ใน cardio-ihd-09
+
+หัวข้อ **"NSTE-ACS — แบ่งความเสี่ยงและเวลาที่ต้องสวนหลอดเลือด"** (`cardio.json` คาบ 13)
+เขียนว่า *"Early invasive strategy ภายใน 24 ชั่วโมง (**Class I A**)"*
+
+นั่นคือ **ESC 2020** — **ESC 2023 ลดเหลือ Class IIa A** (เปลี่ยน "is recommended" เป็น
+"should be considered") เกณฑ์ high-risk ทั้งสี่ข้อยังเหมือนเดิม รวม GRACE > 140
+ยืนยันจากบทความเทียบ 2020/2023 ใน J Clin Med — PMC11012418
+
+**ยังไม่แก้** เพราะคาบนี้สร้างจากสไลด์ อ.สุรพันธ์ (CAD complete 2019 · NSTEMI 2020 · STEMI 2017)
+ถ้าข้อสอบลงกองอิงสไลด์อาจารย์ การคงเลขเดิมอาจตรงกว่า — ถามผู้ใช้ไว้ในคอมเมนต์
+thread `0a0d34fd` แล้ว (26 ต.ค.) **รอคำตอบก่อนแก้**
+
+> Class I C ของ immediate invasive < 2 ชม. หาต้นฉบับยืนยันไม่ชัดพอ จึงไม่แตะ
+> ถ้าจะตรวจต่อ ให้ดู European Heart Journal doi:10.1093/eurheartj/ehad191 โดยตรง
+
+### 📌 กฎ "จอง thread ก่อนลงมือ" ยังกันการชนไม่ได้
+
+26 ต.ค. ผู้ใช้คอมเมนต์ 07:33 — session นี้อ่าน thread ก่อนตามกฎข้อ 4c แล้ว ยังไม่มีใครตอบ
+แต่พอไปตรวจแหล่งอ้างอิงเสร็จกลับมา **มี session อื่นจองและตอบจบไปแล้วในนาทีเดียวกัน**
+เป็นการชนครั้งที่สามใน 12 วัน
+
+สิ่งที่ยังได้ผล: **ถ้าชนแล้ว ให้หาประเด็นที่คนอื่นยังไม่แตะแทนการตอบซ้ำ**
+(รอบนี้ประเด็น GRACE ซ้ำกับเขา แต่เรื่อง Class I A ไม่มีใครพูดถึง จึงตอบเสริมด้วย
+`acknowledge_duplicate: true`)
+
+
+> ⚠️ **หัวข้อ 6 และ 7 เป็นสถานะ ณ 20 ก.ย. และอาจไม่ตรงแล้ว** — มี session อื่นเพิ่มอีก 17 คาบ
+> (รวมชุด endo · id · gi · hemonc) ระหว่าง 20 ก.ย. – 14 ต.ค. โดยไม่ได้บันทึกไว้ที่นี่
+> จึงไม่ทราบว่าใช้สไลด์ไฟล์ใดไปแล้ว **ก่อนเริ่มงานใหม่ให้เทียบรายชื่อคาบจริงจาก `artifact/data/` ก่อน**
+> (คำสั่งอยู่ท้ายหัวข้อ 4) แล้วค่อยเลือกว่าจะทำอะไรต่อ
+
+1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
+2. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
+   Dyslipidemia · Septicemia (รอสไลด์)
 3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
@@ -378,12 +378,19 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 9. รายละเอียดทางเทคนิคที่เคยติดปัญหา
 
-- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install --break-system-packages playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
-  ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
-  และ `args=["--no-sandbox"]` · Google Fonts โดน proxy บล็อก (ERR_CERT_AUTHORITY_INVALID หรือ ERR_TUNNEL_CONNECTION_FAILED — verify.py กรองทั้งสองแบบแล้ว)
+- **artifact ตอนนี้ประกาศ capabilities `db` + `user` และ contract 0.2.76** (ความคืบหน้าซิงก์ขึ้นบัญชี
+  ถ้ายังไม่ล็อกอินจะเก็บใน localStorage ก่อน) — เวลา publish **ให้ละฟิลด์ `capabilities` และ `contract` ไว้**
+  ระบบจะคงค่าเดิมให้เอง ถ้าใส่ `capabilities:{}` จะเป็นการล้างทิ้งและทำให้ sync พัง
+- **ค่าที่ผู้ใช้เลือกเองระดับเครื่อง** (ธีม · ซ่อนแถบเมนู) เก็บแยกใน localStorage คนละคีย์
+  ไม่ปนกับ state ที่ซิงก์ขึ้นบัญชี — คีย์ปุ่มซ่อนแถบคือ `med421-learn-mast`
+
+- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง **`python3 -m pip install playwright`** ก่อน
+  (ใช้ `python3 -m pip` เพราะ `pip` เฉย ๆ อาจติดตั้งลงคนละเวอร์ชันของ Python) · เบราว์เซอร์มีอยู่แล้ว
+  **ห้ามรัน `playwright install`**
+- **เลข build ของ Chromium เปลี่ยนไปตาม container** (เคย 1194 ตอนนี้ 1243 และโฟลเดอร์ย่อยเปลี่ยนจาก
+  `chrome-linux` เป็น `chrome-linux64`) — **ห้ามฝัง path ไว้** `verify.py` หาเองด้วย
+  `glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")` แล้ว · ต้องส่ง `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
   เป็นเรื่องปกติของ container ไม่ใช่บั๊ก
-- **`check_render.py` / `verify.py` ใช้พอร์ตตายตัว** (8934 ฯลฯ) — ถ้ารันหลาย agent พร้อมกันจะชนกัน ให้รันทีละตัวหลัง merge
-- **subagent ใน worktree** (`.claude/worktrees/` ใส่ไว้ใน `.git/info/exclude`) — ให้แต่ละตัว commit ใน worktree แล้ว `git checkout <branch> -- build_x.py notes.md` มารันใน tree หลัก ตาม build ทีละตัว
 - **อย่าใช้ `pgrep -f <script>` ในลูปรอ** — มันแมตช์ตัว bash command เองแล้วค้างตลอดกาล
 - แถบความคืบหน้านับเฉพาะ set ที่เปิดอยู่ (AIR = 34 ไม่ใช่ 91) — เคยเข้าใจผิดว่าเป็นบั๊ก
 - `.nav .btn` เคยล้นจอที่ 390px เพราะ `white-space:nowrap` → แก้แล้วด้วย
