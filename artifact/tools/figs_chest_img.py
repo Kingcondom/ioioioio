@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """ภาพประกอบ SVG คาบ chest 21 "Image in chest" (อ.พจนี) — build_chestimg.py เรียก apply_figs กับโมดูลนี้
 ภาพรังสีจริงจากสไลด์อยู่ใน artifact/img/chest/ (extract_chestimg.py) — ภาพในไฟล์นี้เป็นแผนภาพกลไก"""
+import math
 from svg import *
 
 SET, LEC = "chest", "21"
@@ -25,8 +26,8 @@ def ci_rotation():
             p.append(rect(cx - 5, 56 + k * 32, 10, 10, "muf", 2))  # spinous processes
         sp = cx + (0 if c == "ok" else 8)
         # clavicles
-        p.append(path("M%d 64 Q%d 50 %d 54" % (sp - d1, sp - d1 - 50, sp - d1 - 90), "ln w5"))
-        p.append(path("M%d 64 Q%d 50 %d 54" % (sp + d2, sp + d2 + 50, sp + d2 + 90), "ln w5"))
+        p.append(path("M%d 64 Q%d 52 %d 56" % (sp - d1, sp - d1 - 28, sp - d1 - 50), "ln w5"))
+        p.append(path("M%d 64 Q%d 52 %d 56" % (sp + d2, sp + d2 + 28, sp + d2 + 50), "ln w5"))
         p.append(circ(sp - d1, 66, 6, "bx")); p.append(circ(sp + d2, 66, 6, "bx"))
         p.append(rect(sp - 3, 60, 6, 12, "inkf", 2))
         p.append(ar(sp - 4, 88, sp - d1 + 4, 88, c[0] == "o" and "lok w2" or "lbad w2", "ah-ok" if c == "ok" else "ah-bad"))
@@ -50,16 +51,16 @@ def ci_rotation():
 def ci_lobule():
     p = []
     # polygon lobule
-    pts = [(220, 30), (330, 70), (350, 180), (280, 260), (150, 260), (90, 170), (110, 70)]
+    pts = [(190, 30), (300, 70), (320, 180), (250, 260), (120, 260), (60, 170), (80, 70)]
     p.append(poly(pts, "lbad w3", closed=True))
-    p.append(t(360, 120, "interlobular septum", "xs b tbad"))
-    p.append(t(360, 134, "vein + lymphatic", "xs tbad"))
+    p.append(t(326, 120, "interlobular septum", "xs b tbad"))
+    p.append(t(326, 134, "vein + lymphatic", "xs tbad"))
     # center bronchiole + artery
-    p.append(path("M220 10 L220 150 M220 150 L190 200 M220 150 L250 200", "lwa w3"))
-    p.append(path("M230 10 L230 150 M230 150 L262 196", "lac w2"))
-    p.append(t(240, 30, "bronchiole + artery", "xs b"))
-    p.append(t(240, 44, "(กลาง lobule)", "xs"))
-    for x, y in ((160, 110), (280, 120), (200, 220), (300, 200), (130, 190), (250, 90)):
+    p.append(path("M190 10 L190 150 M190 150 L160 200 M190 150 L220 200", "lwa w3"))
+    p.append(path("M200 10 L200 150 M200 150 L232 196", "lac w2"))
+    p.append(t(150, 18, "bronchiole + artery", "xs b end"))
+    p.append(t(150, 32, "(กลาง lobule)", "xs end"))
+    for x, y in ((130, 110), (250, 120), (170, 222), (270, 200), (100, 190), (226, 84)):
         p.append(circ(x, y, 9, "bx"))
     p.append(t(110, 290, "septum หนา → Kerley B, reticular", "sm"))
     p.append(t(110, 310, "รอบหลอดลมกลาง → centrilobular / tree-in-bud", "sm"))
@@ -72,20 +73,52 @@ def ci_lobule():
 
 def ci_ateltypes():
     p = []
-    rows = [("Resorption (obstructive)", "หลอดลมอุด → ลมถูกดูดซึม", "พบบ่อยสุด · volume ลด · ไม่มี air bronchogram", "bad"),
-            ("Relaxation (passive)", "น้ำ/ลม/ก้อนกดปอด", "ปอดหดตาม recoil · ความทึบอาจไม่มาก", "wa"),
-            ("Adhesive", "ขาด surfactant", "ARDS · RDS ทารก · radiation", "ms"),
-            ("Cicatricial", "พังผืดดึงรั้ง", "✍️ TB เก่า · volume ลดมาก", "ac")]
-    for i, (n, mech, res, c) in enumerate(rows):
-        y = 14 + i * 74
-        p.append(rect(10, y, 420, 64, c))
-        p.append(t(22, y + 22, n, "b"))
-        p.append(t(22, y + 42, mech, "sm"))
-        p.append(t(22, y + 58, res, "xs i2"))
+    W, H = 210, 132
+    pan = [(8, 8, "Resorption (obstructive)", "bad"), (222, 8, "Relaxation (passive)", "wa"),
+           (8, 158, "Adhesive", "ms"), (222, 158, "Cicatricial", "ac")]
+    for x0, y0, n, c in pan:
+        p.append(rect(x0, y0, W, H, "bx", 10))
+        p.append(t(x0 + 10, y0 + 18, n, "sm b"))
+    # 1 resorption: หลอดลมอุด → ก๊าซถูกดูดเข้าเลือด
+    x0, y0 = 8, 8
+    p.append(line(x0 + 30, y0 + 30, x0 + 30, y0 + 72, "lwa w5"))
+    p.append(rect(x0 + 22, y0 + 52, 16, 12, "inkf", 3))
+    p.append(t(x0 + 44, y0 + 62, "เสมหะ/ก้อนอุด", "xs"))
+    p.append(circ(x0 + 52, y0 + 92, 18, "lmu da")); p.append(circ(x0 + 52, y0 + 92, 9, "bad"))
+    p.append(rect(x0 + 110, y0 + 81, 80, 22, "bad", 6)); p.append(t(x0 + 150, y0 + 96, "เลือด", "xs mid b"))
+    p.append(ar(x0 + 64, y0 + 92, x0 + 108, y0 + 92, "lbad w2", "ah-bad"))
+    p.append(t(x0 + 86, y0 + 80, "O₂ N₂", "xs mid tbad"))
+    p.append(t(x0 + 10, y0 + 126, "ไม่มีลมเติม → ยุบ (เร็วขึ้นถ้าให้ O₂)", "xs"))
+    # 2 relaxation: น้ำกด ปอดหดตาม recoil
+    x0, y0 = 222, 8
+    p.append(rect(x0 + 14, y0 + 28, 182, 84, "sk", 8))
+    p.append(rect(x0 + 16, y0 + 80, 178, 30, "wa", 6)); p.append(t(x0 + 105, y0 + 100, "น้ำ / ลม / ก้อน", "xs mid b twa"))
+    p.append(ell(x0 + 105, y0 + 56, 50, 18, "bx")); p.append(t(x0 + 105, y0 + 60, "ปอดหด", "xs mid"))
+    p.append(ar(x0 + 40, y0 + 56, x0 + 58, y0 + 56, "lwa", "ah-wa")); p.append(ar(x0 + 170, y0 + 56, x0 + 152, y0 + 56, "lwa", "ah-wa"))
+    p.append(t(x0 + 10, y0 + 126, "ถูกกด/ปอดหดตาม elastic recoil", "xs"))
+    # 3 adhesive: ไม่มี surfactant
+    x0, y0 = 8, 158
+    p.append(circ(x0 + 52, y0 + 66, 26, "bx"))
+    for k in range(10):
+        a = k * math.pi / 5
+        p.append(circ(x0 + 52 + 26 * math.cos(a), y0 + 66 + 26 * math.sin(a), 3, "okf"))
+    p.append(t(x0 + 52, y0 + 108, "มี surfactant", "xs mid tok"))
+    p.append(circ(x0 + 150, y0 + 66, 10, "bad"))
+    p.append(ar(x0 + 150, y0 + 36, x0 + 150, y0 + 52, "lbad", "ah-bad")); p.append(ar(x0 + 180, y0 + 66, x0 + 164, y0 + 66, "lbad", "ah-bad"))
+    p.append(t(x0 + 150, y0 + 108, "ไม่มี → แรงตึงผิวสูง", "xs mid tbad"))
+    p.append(t(x0 + 10, y0 + 126, "ARDS · RDS ทารก · radiation", "xs"))
+    # 4 cicatricial: พังผืดดึงรั้ง
+    x0, y0 = 222, 158
+    p.append(rect(x0 + 14, y0 + 28, 182, 84, "bx", 8))
+    for k in range(4):
+        p.append(path("M%d %d l14 -10 l12 12 l14 -8" % (x0 + 30 + k * 36, y0 + 60 + (k % 2) * 16), "lac w2"))
+    p.append(ar(x0 + 105, y0 + 92, x0 + 105, y0 + 40, "lac w2", "ah-ac"))
+    p.append(t(x0 + 114, y0 + 100, "ดึงขึ้น/เข้าหา", "xs tac"))
+    p.append(t(x0 + 10, y0 + 126, "✍️ TB เก่า · fibrosis → volume ลดมาก", "xs"))
     return fig("ชนิดของ atelectasis ตามกลไก",
                "สไลด์ p101: **resorption** (✍️ common) เกิดภายใน 24 ชม. หลังหลอดลมอุด เร็วขึ้นเมื่อหายใจ O₂ · collateral ventilation อาจกันการยุบ · "
                "**relaxation** จาก effusion/pneumothorax/ก้อน · **adhesive** จากขาด surfactant · **cicatricial** จาก fibrosis (✍️ TB)",
-               svg(440, 310, "ตารางภาพสี่ชนิดของ atelectasis resorption relaxation adhesive และ cicatricial พร้อมกลไกและลักษณะ", *p))
+               svg(440, 298, "แผนภาพสี่กลไกของ atelectasis หลอดลมอุดแล้วก๊าซถูกดูดซึม ปอดถูกน้ำกดจนหด ถุงลมยุบเพราะขาด surfactant และพังผืดดึงรั้ง", *p))
 
 
 def ci_angle():
@@ -97,7 +130,6 @@ def ci_angle():
         p.append(t(x0 + 180, 270, "ผนังอก", "xs mid mu"))
     # intraparenchymal: circle touching wall at acute angle
     p.append(circ(120, 146, 40, "bad"))
-    p.append(path("M148 118 L160 108", "lbad w2")); p.append(path("M148 174 L160 184", "lbad w2"))
     p.append(t(70, 214, "มุมแหลมกับผนัง", "sm b tbad"))
     p.append(t(70, 232, "ขอบรอบก้อนครบ", "xs"))
     # extrapulmonary: lens shape with tapering edges
@@ -119,7 +151,7 @@ def ci_ptxalgo():
     p.append(ar(150, 122, 110, 150, "lbad", "ah-bad", "มี", "xs mid tbad", dx=-12))
     p.append(ar(290, 122, 330, 150, "lok", "ah-ok", "ไม่มี", "xs mid tok", dx=14))
     p.append(box(10, 150, 190, 60, "bad", "chest drain\n(tension → needle ก่อน)", tc="sm"))
-    p.append(box(240, 150, 190, 60, "ok", "หอบมากจนทนไม่ได้?", tc="sm"))
+    p.append(box(240, 150, 190, 60, "ok", "มีอาการรบกวนมาก?", tc="sm"))
     p.append(ar(290, 210, 260, 236, "lok", "ah-ok", "ไม่", "xs mid", dx=-12))
     p.append(ar(380, 210, 400, 236, "lbad", "ah-bad", "ใช่", "xs mid", dx=14))
     p.append(box(180, 236, 160, 64, "ok", "conservative\nนัดติดตาม\n(ไม่ขึ้นกับขนาด)", tc="sm"))

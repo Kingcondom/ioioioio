@@ -68,10 +68,10 @@ def a_paap():
     p.append(rect(234, 70, 10, 180, "inkf", 2)); p.append(t(239, 266, "ฟิล์ม", "xs mid mu"))
     p.append(rect(246, 80, 76, 160, "bx", 30))
     p.append(t(250, 74, "หลัง", "xs mu")); p.append(t(318, 74, "หน้า", "xs mu end"))
-    p.append(ell(290, 160, 18, 30, "bad"))
-    p.append(t(290, 164, "หัวใจ", "xs mid b"))
-    p.append(S(2, line(418, 160, 244, 104, "lms fl"), line(418, 160, 244, 216, "lms fl"),
-               rect(226, 108, 8, 104, "badf", 2), t(330, 290, "เงาโตกว่าจริง", "sm mid tbad b")))
+    p.append(ell(300, 160, 18, 30, "bad"))
+    p.append(t(300, 164, "หัวใจ", "xs mid b"))
+    p.append(S(2, line(418, 160, 244, 116, "lms fl"), line(418, 160, 244, 204, "lms fl"),
+               rect(226, 116, 8, 88, "badf", 2), t(330, 290, "เงาโตกว่าจริง", "sm mid tbad b")))
     p.append(S(3, rect(20, 306, 400, 84, "ac"),
                t(220, 330, "หัวใจอยู่ชิดผนังหน้าอก", "mid b"),
                t(220, 352, "PA: ใกล้ฟิล์ม → ขยายน้อย · AP: ห่างฟิล์ม + หลอดใกล้", "sm mid"),
@@ -105,15 +105,15 @@ def a_atten():
         # รังสีทะลุออก
         for k in range(n):
             p.append(line(240, y + 6 + k * 6, 340, y + 6 + k * 6, "lms fl"))
-        shade = ["inkf", "muf", "ruf", "sk", "bx"][i]
-        p.append(rect(360, y, 30, 32, shade, 2))
-        p.append(t(396, y + 21, ["ดำ", "ดำจาง", "ขาว", "ขาวจ้า", "ขาวสุด"][i], "xs b"))
+        p.append(line(352, y + 2, 352, y + 30, "ln w3"))
+        p.append(t(362, y + 14, ["ดำ", "ดำจาง", "ขาว", "ขาวจ้า", "ขาวสุด"][i], "sm b"))
+        p.append(t(362, y + 28, ["ผ่านมาก", "ผ่านค่อนข้างมาก", "ผ่านน้อยลง", "ผ่านน้อย", "แทบไม่ผ่าน"][i], "xs mu"))
         p.append(t(34, y + 10, th, "xs mu"))
     p.append(S(2, rect(20, 296, 400, 96, "ac"),
-               t(34, 318, "ความหนาก็มีผล", "b"),
-               rect(40, 330, 40, 18, "ms", 3), t(88, 344, "บาง → ผ่านได้มาก → เทากว่า", "sm"),
-               rect(40, 358, 110, 18, "ms", 3), t(158, 372, "หนา → ทึบกว่า", "sm"),
-               t(410, 372, "density เดียวกัน", "xs end tac b")))
+               t(34, 318, "ความหนาก็มีผล (density เดียวกัน)", "b"),
+               rect(40, 330, 30, 18, "ms", 3), line(70, 339, 120, 339, "lms fl"), line(70, 345, 120, 345, "lms fl"),
+               line(70, 333, 120, 333, "lms fl"), t(130, 344, "บาง → รังสีผ่านมาก → เทา", "sm"),
+               rect(40, 358, 110, 18, "ms", 3), line(150, 367, 200, 367, "lms fl"), t(210, 372, "หนา → รังสีผ่านน้อย → ขาวกว่า", "sm")))
     p.append(S(3, rect(20, 400, 400, 40, "ok"),
                t(220, 425, "เห็น \"ขอบ\" ได้เฉพาะรอยต่อของ density ต่างกัน", "sm mid b tok")))
     return SVG(440, 450, "ภาพเคลื่อนไหว: รังสีผ่านลม ไขมัน soft tissue กระดูก และโลหะได้ลดลงตามลำดับ ฟิล์มจึงดำไปจนขาว "
@@ -175,7 +175,7 @@ def a_airbr():
     p.append(t(20, 22, "หลอดลม + ถุงลม (จำลอง)", "sm b mu"))
     # หลอดลมแตกกิ่ง
     br = "M220 40 L220 120 M220 120 L150 200 M220 120 L290 200 M150 200 L110 280 M150 200 L180 290 M290 200 L260 290 M290 200 L340 280"
-    p.append(path(br, "lwa w5"))
+    p.append(X(2, path(br, "lru w5")))
     alv = [(x, y) for y in range(150, 330, 26) for x in range(70, 380, 26)]
     for i, (x, y) in enumerate(alv):
         p.append(X(2, circ(x, y, 10, "bx")))
@@ -208,32 +208,28 @@ def a_whiteout():
     p = []
 
     def mini(x0, kind):
-        out = []
-        out.append(rect(x0, 40, 120, 170, "bx", 10))
-        # trachea ตำแหน่งตาม kind
-        tx = {"col": x0 + 70, "eff": x0 + 50, "con": x0 + 60}[kind]
-        if kind == "eff":
-            out.append(rect(x0 + 4, 44, 52, 162, "ms", 8))
-            out.append(rect(x0 + 64, 60, 50, 140, "sk", 8))
-        elif kind == "col":
-            out.append(rect(x0 + 4, 44, 72, 162, "ms", 8))
-            out.append(rect(x0 + 84, 60, 30, 140, "sk", 8))
-        else:
-            out.append(rect(x0 + 4, 60, 50, 140, "ms", 8))
-            out.append(rect(x0 + 66, 60, 50, 140, "sk", 8))
-        out.append(rect(tx - 5, 30, 10, 60, "wa", 4))
-        return out
-    p.append(t(70, 24, "ปอดยุบทั้งข้าง", "sm mid b"))
-    p += mini(10, "col")
+        """ซีกซ้ายของกรอบ = ข้างที่ขาว · แถบกลาง = mediastinum · ขวา = ปอดดี · เส้นประ = แนวกลางปกติ"""
+        a, m = {"col": (40, 16), "eff": (78, 16), "con": (54, 12)}[kind]  # ความกว้างข้างที่ขาว, ความกว้าง mediastinum
+        out = [rect(x0, 40, 130, 170, "bx", 10)]
+        out.append(rect(x0 + 4, 46, a, 158, "ms", 8))
+        out.append(t(x0 + 4 + a / 2, 130, "ขาว", "xs mid b tms"))
+        out.append(rect(x0 + 4 + a, 56, m, 148, "sk", 4))
+        out.append(rect(x0 + 4 + a + m, 46, 122 - a - m, 158, "bx", 8))
+        tx = x0 + 4 + a + m / 2
+        out.append(rect(tx - 4, 30, 8, 56, "wa", 4))
+        out.append(line(x0 + 65, 34, x0 + 65, 206, "lmu da"))
+        return out, tx
+    p.append(t(75, 24, "ปอดยุบทั้งข้าง", "sm mid b"))
+    g1, t1 = mini(10, "col"); p += g1
     p.append(t(220, 24, "น้ำท่วมทั้งข้าง", "sm mid b"))
-    p += mini(160, "eff")
-    p.append(t(370, 24, "ปอดบวมทั้งข้าง", "sm mid b"))
-    p += mini(310, "con")
-    p.append(S(2, ar(110, 70, 82, 70, "lbad w3", "ah-bad"), t(70, 232, "trachea ถูก \"ดึง\" เข้าหา", "sm mid tbad b"),
-               t(70, 250, "ซี่โครงชิด โดมยก", "xs mid")))
-    p.append(S(3, ar(196, 70, 224, 70, "lwa w3", "ah-wa"), t(220, 232, "trachea ถูก \"ดัน\" ออก", "sm mid twa b"),
-               t(220, 250, "ช่องซี่โครงกว้าง", "xs mid")))
-    p.append(S(4, t(370, 232, "trachea อยู่กลาง", "sm mid tok b"), t(370, 250, "air bronchogram", "xs mid")))
+    g2, t2 = mini(155, "eff"); p += g2
+    p.append(t(365, 24, "ปอดบวมทั้งข้าง", "sm mid b"))
+    g3, t3 = mini(300, "con"); p += g3
+    p.append(S(2, ar(75, 100, t1 + 2, 100, "lbad w3", "ah-bad"), t(75, 232, "trachea ถูก \"ดึง\" เข้าหา", "sm mid tbad b"),
+               t(75, 250, "ข้างนั้นเล็ก ซี่โครงชิด", "xs mid")))
+    p.append(S(3, ar(220, 100, t2 - 2, 100, "lwa w3", "ah-wa"), t(220, 232, "trachea ถูก \"ดัน\" ออก", "sm mid twa b"),
+               t(220, 250, "ข้างนั้นใหญ่ ซี่โครงห่าง", "xs mid")))
+    p.append(S(4, t(365, 232, "trachea อยู่กลาง", "sm mid tok b"), t(365, 250, "air bronchogram", "xs mid")))
     p.append(S(5, rect(10, 266, 420, 100, "ac"),
                t(22, 290, "อ่าน white-out: ดูก่อนว่า mediastinum ไปทางไหน", "sm b"),
                t(22, 312, "ไปหา → volume ลด: collapse (ก้อนอุดหลอดลม) · pneumonectomy", "sm"),
@@ -260,36 +256,43 @@ WO_STEPS = [
 # ───────────────────────── 6 · Lobar collapse vectors
 def a_collapse():
     p = []
-    p.append(t(110, 22, "frontal (ปอดขวา)", "sm mid b"))
-    p.append(t(330, 22, "lateral (ปอดขวา)", "sm mid b"))
-    # frontal right lung
-    p.append(path("M110 40 C70 50 40 150 30 280 L170 280 L172 50 C150 36 128 34 110 40 Z", "bx"))
-    p.append(line(36, 160, 170, 160, "lmu da"))  # minor fissure
-    p.append(t(36, 154, "minor fissure", "xs mu"))
-    # lateral
-    p.append(path("M300 40 C250 50 240 150 236 280 L420 280 C420 160 380 50 330 38 Z", "bx"))
-    p.append(path("M340 60 L262 278", "lmu da"))  # major fissure (oblique)
-    p.append(line(300 - 0, 160, 420, 160, "lmu da"))  # minor fissure from major forward? (approx)
-    p.append(t(244, 300, "หน้า", "xs mu")); p.append(t(420, 300, "หลัง", "xs mu end"))
-    # step 2 RUL
-    p.append(S(2, path("M110 40 C80 48 60 80 54 110 L170 100 L172 50 C150 36 128 34 110 40 Z", "bad"),
-               ar(110, 150, 120, 108, "lbad w2", "ah-bad"), t(60, 136, "RUL: ขึ้นบน+ใน", "xs tbad b"),
-               path("M330 40 C304 46 296 80 300 120 L346 90 Z", "bad"), ar(360, 150, 330, 110, "lbad w2", "ah-bad"), x=3))
-    # step 3 RML
-    p.append(S(3, path("M40 170 L170 176 L170 210 Z", "bad"), ar(100, 150, 100, 176, "lbad w2", "ah-bad"),
-               t(40, 230, "RML: minor fissure ลง", "xs tbad b"),
-               path("M300 168 L268 260 L340 210 Z", "bad"), t(300, 320, "ลิ่มบาง ยอดที่ hilum", "xs mid tbad"), x=4))
-    # step 4 RLL
-    p.append(S(4, path("M150 150 L170 280 L110 280 Z", "bad"), ar(80, 220, 120, 250, "lbad w2", "ah-bad"),
-               t(36, 196, "RLL: ลง หลัง ใน", "xs tbad b"),
-               path("M392 110 L420 120 L420 280 L360 280 Z", "bad"), ar(330, 200, 380, 230, "lbad w2", "ah-bad"),
-               t(330, 320, "major fissure เลื่อนไปหลัง", "xs mid tbad"), x=5))
-    p.append(S(5, rect(10, 300, 420, 110, "ac"),
-               t(22, 322, "ปอดซ้าย (ไม่มี minor fissure)", "sm b"),
-               t(22, 344, "LUL ยุบไป \"หน้า+บน\" → ม่านทึบจาง ๆ ซีกซ้ายบน (veil) · Luftsichel", "sm"),
-               t(22, 366, "LLL ยุบไป \"ลง+หลัง+ใน\" → สามเหลี่ยมหลังหัวใจ · flat waist", "sm"),
-               t(22, 388, "กฎเดียว: กลีบหมุนรอบ hilum ซึ่งเป็นจุดยึด", "sm tac b")))
-    return SVG(440, 420, "ภาพเคลื่อนไหว ทิศทางการยุบของแต่ละกลีบ: RUL ขึ้นบนและเข้าใน minor fissure ยกขึ้น RML ทำให้ minor fissure ลง "
+    p.append(t(105, 22, "frontal (ปอดขวา)", "sm mid b"))
+    p.append(t(335, 22, "lateral (ปอดขวา)", "sm mid b"))
+    # frontal: ผนังด้านนอกซ้ายมือ mediastinum ขวามือ · hilum (160,150)
+    p.append(path("M110 40 C70 50 40 150 30 280 L172 280 L172 50 C150 36 128 34 110 40 Z", "bx"))
+    p.append(X(2, line(44, 150, 160, 150, "lmu da")))
+    p.append(X(2, t(48, 144, "minor fissure", "xs mu")))
+    p.append(circ(162, 150, 5, "muf"))
+    p.append(t(152, 142, "hilum", "xs mu end"))
+    # lateral: หน้าซ้ายมือ หลังขวามือ · major fissure (395,64)→(268,280) · minor (250,160)→(338,160)
+    p.append(path("M300 40 C262 50 250 150 250 270 L270 280 L420 284 C424 160 392 52 330 38 Z", "bx"))
+    p.append(X(4, line(385, 76, 268, 280, "lmu da")))
+    p.append(X(2, line(250, 160, 338, 160, "lmu da")))
+    p.append(circ(330, 160, 5, "muf"))
+    p.append(t(254, 298, "หน้า", "xs mu")); p.append(t(416, 298, "หลัง", "xs mu end"))
+    # ขั้น 2 · RUL
+    p.append(S(2, path("M110 40 C80 48 60 80 52 112 C90 104 130 96 172 92 L172 50 C150 36 128 34 110 40 Z", "bad"),
+               path("M52 112 C90 104 130 96 172 92", "lbad w3"), ar(110, 146, 110, 112, "lbad w2", "ah-bad"),
+               path("M300 40 C276 48 262 70 254 110 C280 104 306 92 330 72 C320 54 312 42 300 40 Z", "bad"),
+               ar(300, 156, 296, 112, "lbad w2", "ah-bad"),
+               t(220, 318, "RUL: minor fissure ยกขึ้น · ยุบขึ้นบน-หน้า-เข้าใน", "sm mid tbad b"), x=3))
+    # ขั้น 3 · RML
+    p.append(S(3, path("M100 172 L172 158 L172 236 Z", "bad"), path("M44 180 L160 154", "lbad w3"),
+               ar(96, 150, 96, 168, "lbad w2", "ah-bad"),
+               path("M330 158 L252 196 L256 232 Z", "bad"),
+               t(220, 318, "RML: minor fissure ลง · lateral เป็นลิ่มบางยอดที่ hilum", "sm mid tbad b"), x=4))
+    # ขั้น 4 · RLL
+    p.append(S(4, path("M162 150 L172 280 L104 280 Z", "bad"), ar(60, 214, 106, 252, "lbad w2", "ah-bad"),
+               t(40, 200, "ลง-หลัง-ใน", "xs tbad b"),
+               path("M336 166 L420 190 L420 284 L362 284 Z", "bad"), line(336, 166, 362, 284, "lbad w2 da"),
+               ar(296, 226, 338, 232, "lbad w2", "ah-bad"),
+               t(220, 318, "RLL: สามเหลี่ยมยอดที่ hilum · major fissure ไปหลัง", "sm mid tbad b"), x=5))
+    p.append(S(5, rect(10, 306, 420, 108, "ac"),
+               t(22, 328, "ปอดซ้าย (ไม่มี minor fissure)", "sm b"),
+               t(22, 350, "LUL ยุบไป \"หน้า+บน\" → ม่านทึบจาง ๆ ซีกซ้ายบน · Luftsichel", "sm"),
+               t(22, 372, "LLL ยุบไป \"ลง+หลัง+ใน\" → สามเหลี่ยมหลังหัวใจ · flat waist", "sm"),
+               t(22, 396, "กฎเดียว: กลีบพับเข้าหา hilum ซึ่งเป็นจุดยึด", "sm tac b")))
+    return SVG(440, 420, "ภาพเคลื่อนไหว ทิศทางการยุบของแต่ละกลีบ: RUL ยุบขึ้นบนและเข้าใน minor fissure ยกขึ้น RML ทำให้ minor fissure ลง "
                "เป็นลิ่มบางยอดที่ hilum RLL ยุบลงล่างไปหลังและเข้าใน LUL ยุบไปหน้าและบน LLL ยุบลงหลังหัวใจ", *p)
 
 
@@ -310,23 +313,26 @@ COL_STEPS = [
 # ───────────────────────── 7 · Golden S sign
 def a_golden():
     p = []
-    p.append(path("M150 40 C100 50 60 160 50 320 L250 320 L252 50 C220 32 180 30 150 40 Z", "bx"))
-    p.append(rect(252, 30, 70, 290, "sk", 6))
+    p.append(path("M150 40 C100 50 60 140 50 250 L250 250 L252 50 C220 32 180 30 150 40 Z", "bx"))
+    p.append(rect(252, 30, 70, 220, "sk", 6))
     p.append(t(286, 60, "mediastinum", "xs mid mu"))
-    p.append(X(2, line(56, 190, 250, 190, "lmu w2 da")))
-    p.append(X(2, t(60, 184, "minor fissure ปกติ (แนวนอน)", "xs mu")))
-    p.append(S(2, path("M150 40 C110 48 82 90 64 150 C120 120 200 118 250 130 L252 50 C220 32 180 30 150 40 Z", "bad"),
-               path("M64 150 C120 120 200 118 250 130", "lbad w3"), ar(100, 186, 104, 146, "lbad w2", "ah-bad"),
-               t(70, 210, "RUL ยุบ → fissure ด้านนอกยกขึ้น", "sm tbad b"), x=3))
-    p.append(S(3, path("M150 40 C110 48 82 90 64 150 C110 118 160 112 190 126 C214 150 236 160 250 150 L252 50 C220 32 180 30 150 40 Z", "bad"),
-               G("pl", ell(220, 150, 34, 28, "ms")), t(220, 154, "ก้อน", "sm mid b tms"),
-               path("M64 150 C110 118 160 112 190 126 C214 150 236 160 250 150", "lbad w3"),
-               t(60, 236, "ด้านในโค้งลงรอบก้อนที่ hilum", "sm tms b"),
-               t(60, 256, "→ เส้นรูปตัว S กลับด้าน", "sm tms")))
-    p.append(S(4, rect(20, 280, 400, 70, "ac"),
-               t(30, 304, "Golden S = RUL collapse + hilar mass", "sm b"),
-               t(30, 326, "ผู้ใหญ่สูบบุหรี่ → มะเร็งปอดอุดหลอดลมจนกว่าจะพิสูจน์ได้ว่าไม่ใช่", "sm tac")))
-    return SVG(440, 360, "ภาพเคลื่อนไหว Golden S sign: minor fissure ปกติแนวนอน เมื่อ RUL ยุบด้านนอกยกขึ้นเว้า "
+    p.append(X(2, line(56, 150, 250, 150, "lmu w2 da")))
+    p.append(X(2, t(60, 144, "minor fissure ปกติ (แนวนอน)", "xs mu")))
+    OP2 = "M150 40 C110 48 82 90 64 150 C120 118 200 116 250 126 L252 50 C220 32 180 30 150 40 Z"
+    p.append(S(2, path(OP2, "bad"), path("M64 150 C120 118 200 116 250 126", "lbad w3"),
+               ar(110, 176, 110, 136, "lbad w2", "ah-bad"),
+               t(60, 200, "RUL ยุบ → fissure ด้านนอกยกขึ้น (เว้า)", "sm tbad b"), x=3))
+    EDGE3 = "M64 150 C110 118 150 112 176 124 C192 148 210 172 232 168 C244 164 250 156 250 150"
+    p.append(S(3, path("M150 40 C110 48 82 90 64 150 C110 118 150 112 176 124 C192 148 210 172 232 168 C244 164 250 156 250 150 "
+                       "L252 50 C220 32 180 30 150 40 Z", "bad"),
+               G("pl", ell(214, 140, 30, 24, "ms")), t(214, 144, "ก้อน", "sm mid b tms"),
+               path(EDGE3, "lbad w3"),
+               t(60, 196, "ด้านในโป่งลงรอบก้อนที่ hilum (นูน)", "sm tms b"),
+               t(60, 216, "→ เส้นรูปตัว S กลับด้าน", "sm tms")))
+    p.append(S(4, rect(20, 262, 400, 70, "ac"),
+               t(30, 286, "Golden S = RUL collapse + hilar mass", "sm b"),
+               t(30, 308, "ผู้ใหญ่สูบบุหรี่ → มะเร็งปอดอุดหลอดลมจนกว่าจะพิสูจน์ได้ว่าไม่ใช่", "sm tac")))
+    return SVG(440, 340, "ภาพเคลื่อนไหว Golden S sign: minor fissure ปกติแนวนอน เมื่อ RUL ยุบด้านนอกยกขึ้นเว้า "
                "ถ้ามีก้อนที่ hilum ด้านในจะโป่งลงรอบก้อน เกิดเส้นรูปตัว S กลับด้าน บ่งมะเร็งปอดอุดหลอดลม", *p)
 
 
@@ -346,23 +352,24 @@ GOLD_STEPS = [
 def a_cavity():
     p = []
     p.append(rect(20, 30, 400, 260, "bx", 12))
-    p.append(path("M220 30 L220 120", "lwa w5"))
+    p.append(path("M220 30 L220 116", "lwa w5"))
     p.append(t(228, 50, "หลอดลม", "xs twa"))
     p.append(X(2, G("pl", circ(220, 180, 70, "bad")), t(220, 184, "ก้อน/ปอดอักเสบทึบ", "sm mid b tbad")))
+    p.append(X(2, t(30, 312, "เริ่มจากก้อนหรือปอดอักเสบที่ทึบทั้งก้อน", "sm")))
     p.append(S(2, circ(220, 180, 70, "bad"), circ(220, 180, 40, "ms"), t(220, 184, "เนื้อตายตรงกลาง", "xs mid b"),
-               t(30, 310, "ขาดเลือด/เอนไซม์จากเชื้อ → necrosis ตรงกลาง", "sm tbad"), x=3))
-    p.append(S(3, circ(220, 180, 70, "bad"), circ(220, 180, 42, "bx"),
-               rect(178, 186, 84, 36, "ms", 0), path("M178 186 L262 186", "lms w3"),
-               path("M220 120 L220 140", "lwa w5"),
-               mover(3, "waf", "2.2s", "M220 60 L220 150"),
-               t(220, 172, "ลม", "xs mid b twa"), t(220, 210, "หนอง", "xs mid b tms"),
-               t(30, 310, "เนื้อตายระบายทางหลอดลม → ลมเข้า → air-fluid level", "sm"), x=4))
-    p.append(S(4, rect(20, 296, 400, 92, "ac"),
-               t(30, 318, "ผนังบาง เรียบ < 3–4 มม. → มักไม่ร้าย (cyst/bulla/pneumatocele)", "sm"),
-               t(30, 340, "ผนังหนา ขรุขระ เป็นปุ่ม → cavity: SCC · TB · abscess", "sm"),
-               t(30, 362, "small cell แทบไม่ cavitate · SCC เป็น ~80% ของมะเร็งที่ cavitate", "sm tac b"),
-               t(30, 382, "air-fluid level เห็นเฉพาะท่ายืน (ลำแสงแนวนอน)", "xs mu")))
-    return SVG(440, 396, "ภาพเคลื่อนไหวการเกิดโพรง: ก้อนหรือปอดอักเสบมีเนื้อตายตรงกลาง เมื่อเนื้อตายระบายออกทางหลอดลมลมจะเข้าแทน "
+               t(30, 312, "ขาดเลือด/เอนไซม์จากเชื้อ → necrosis ตรงกลาง", "sm tbad"), x=3))
+    PUS = "M178.4 186 L261.6 186 A42 42 0 0 1 178.4 186 Z"
+    p.append(S(3, circ(220, 180, 70, "bad"), circ(220, 180, 42, "bx"), path(PUS, "ms"), line(178, 186, 262, 186, "lms w3"),
+               path("M220 110 L220 140", "lwa w5"),
+               mover(3, "waf", "2.2s", "M220 60 L220 160"),
+               t(220, 170, "ลม", "xs mid b twa"), t(220, 206, "หนอง", "xs mid b tms")))
+    p.append(S(3, t(30, 312, "เนื้อตายระบายทางหลอดลม → ลมเข้า → air-fluid level", "sm"), x=4))
+    p.append(S(4, rect(20, 298, 400, 98, "ac"),
+               t(30, 320, "ผนังบาง เรียบ ≤ 3 มม. → cyst/bulla/pneumatocele", "sm"),
+               t(30, 342, "ผนังหนา ขรุขระ เป็นปุ่ม → cavity: SCC · TB · abscess", "sm"),
+               t(30, 364, "small cell แทบไม่ cavitate · SCC ~80% ของมะเร็งที่ cavitate", "sm tac b"),
+               t(30, 386, "air-fluid level เห็นเฉพาะท่ายืน (ลำแสงแนวนอน)", "xs mu")))
+    return SVG(440, 404, "ภาพเคลื่อนไหวการเกิดโพรง: ก้อนหรือปอดอักเสบมีเนื้อตายตรงกลาง เมื่อเนื้อตายระบายออกทางหลอดลมลมจะเข้าแทน "
                "เกิดโพรงที่มีระดับลมและน้ำ ผนังหนาขรุขระบ่งมะเร็งหรือฝี", *p)
 
 
@@ -424,33 +431,47 @@ HYP_STEPS = [
 def a_mediast():
     p = []
     p.append(t(110, 22, "frontal", "sm mid b"))
-    p.append(t(330, 22, "lateral", "sm mid b"))
-    p.append(chest(dy=0))
-    # lateral schematic on right
-    p.append(rect(244, 40, 180, 250, "bx", 14))
-    p.append(path("M256 70 C262 140 262 220 258 286", "lmu w2"))  # sternum line
-    p.append(ell(316, 210, 40, 50, "sk"))  # heart
-    p.append(t(316, 214, "หัวใจ", "xs mid"))
-    p.append(rect(396, 60, 20, 228, "sk", 4))  # spine
-    p.append(t(406, 300, "spine", "xs mid mu"))
-    # anterior mass
-    p.append(S(2, G("pl", ell(205, 150, 46, 34, "bad")), t(205, 154, "ก้อนหน้า", "xs mid b tbad"),
-               path("M192 150 C172 190 160 250 172 284", "lbad w3 da"),
-               G("pl", ell(282, 150, 26, 30, "bad")),
-               t(40, 330, "ก้อนหน้า (anterior) แตะหัวใจ → ขอบหัวใจหาย", "sm tbad b"),
-               t(40, 350, "aorta ส่วนลงยังเห็น", "sm"), x=3))
-    # posterior mass
-    p.append(S(3, G("pl", ell(272, 210, 30, 40, "ms")), t(272, 214, "ก้อนหลัง", "xs mid b tms"),
-               path("M276 160 L276 284", "lms w3 da"),
-               G("pl", ell(384, 180, 20, 34, "ms")),
-               t(40, 330, "ก้อนหลัง (posterior) ขอบหัวใจยังอยู่", "sm tms b"),
-               t(40, 350, "แต่ descending aorta / paraspinal line หาย", "sm"), x=4))
-    p.append(S(4, rect(20, 316, 400, 92, "ac"),
-               t(30, 338, "✍️ \"Obscure heart → Ant · silhouette descending aorta → Post\"", "sm b"),
+    p.append(t(333, 22, "lateral", "sm mid b"))
+    # frontal ย่อ 0.6 วางในกรอบ x 0–220
+    fr = ('<g transform="translate(-22 18) scale(0.6)">' + path(RL, "bx") + path(LL, "bx") + path(HEART, "sk")
+          + rect(192, 26, 56, 126, "sk", 4) + rect(212, 22, 16, 108, "bx", 6) + "</g>")
+    p.append(fr)
+
+    def F(x, y):  # พิกัดเต็ม → พิกัดย่อ
+        return -22 + 0.6 * x, 18 + 0.6 * y
+    hx = [F(192, 150), F(172, 190), F(160, 250), F(172, 284)]
+    RHB = "M%g %g C%g %g %g %g %g %g" % (hx[0] + hx[1] + hx[2] + hx[3])
+    a1, a2 = F(262, 150), F(262, 284)
+    p.append(path(RHB, "lac w3"))
+    p.append(line(a1[0], a1[1], a2[0], a2[1], "lac w3"))
+    p.append(t(F(262, 300)[0], F(262, 300)[1] + 4, "desc. aorta", "xs mid tac"))
+    p.append(t(F(150, 300)[0] - 6, F(150, 300)[1] + 4, "ขอบหัวใจขวา", "xs mid tac"))
+    # lateral กรอบ x 236–430
+    p.append(rect(236, 40, 194, 250, "bx", 14))
+    p.append(path("M252 60 C256 140 256 220 252 286", "lmu w2"))
+    p.append(t(258, 56, "sternum", "xs mu"))
+    p.append(ell(312, 214, 40, 50, "sk")); p.append(t(312, 218, "หัวใจ", "xs mid"))
+    p.append(rect(404, 60, 18, 228, "sk", 4)); p.append(t(413, 302, "spine", "xs mid mu"))
+    p.append(line(392, 110, 392, 286, "lac w3")); p.append(t(388, 104, "aorta", "xs end tac"))
+    # ขั้น 2 ก้อนหน้า
+    c = F(176, 190)
+    p.append(S(2, G("pl", ell(c[0], c[1], 24, 22, "bad")), path(RHB, "lbad w3 da"),
+               G("pl", ell(274, 140, 20, 30, "bad")), t(274, 144, "ก้อน", "xs mid b tbad"),
+               t(20, 330, "ก้อนหน้า (anterior) แตะหัวใจ → ขอบหัวใจหาย", "sm tbad b"),
+               t(20, 350, "ขอบ descending aorta ยังคม · retrosternal space ทึบ", "sm"), x=3))
+    # ขั้น 3 ก้อนหลัง
+    c2 = F(262, 228)
+    p.append(S(3, G("pl", ell(c2[0], c2[1], 20, 24, "ms")), line(a1[0], a1[1] + 30, a2[0], a2[1], "lms w3 da"),
+               G("pl", ell(386, 200, 20, 34, "ms")), t(362, 204, "ก้อน", "xs end b tms"),
+               line(392, 166, 392, 236, "lms w3 da"),
+               t(20, 330, "ก้อนหลัง (posterior): ขอบหัวใจยังคม", "sm tms b"),
+               t(20, 350, "แต่ขอบ descending aorta / paraspinal line หาย", "sm"), x=4))
+    p.append(S(4, rect(20, 316, 400, 96, "ac"),
+               t(30, 338, "✍️ \"Obscure heart → Ant · silhouette desc. aorta → Post\"", "sm b"),
                t(30, 360, "หน้า: 4T (thymoma teratoma thyroid lymphoma)", "sm"),
-               t(30, 380, "กลาง: ต่อมน้ำเหลือง หลอดเลือด · หลัง: neurogenic tumor", "sm"),
-               t(30, 400, "ยืนยันด้วย lateral และ CT", "xs mu")))
-    return SVG(440, 416, "ภาพเคลื่อนไหวการบอกตำแหน่งก้อนในช่องอก: ก้อนด้านหน้าแตะหัวใจทำให้ขอบหัวใจหาย ก้อนด้านหลังขอบหัวใจยังอยู่ "
+               t(30, 382, "กลาง: ต่อมน้ำเหลือง หลอดเลือด · หลัง: neurogenic tumor", "sm"),
+               t(30, 402, "ยืนยันด้วย lateral และ CT", "xs mu")))
+    return SVG(440, 420, "ภาพเคลื่อนไหวการบอกตำแหน่งก้อนในช่องอก: ก้อนด้านหน้าแตะหัวใจทำให้ขอบหัวใจหาย ก้อนด้านหลังขอบหัวใจยังอยู่ "
                "แต่ขอบ descending aorta และ paraspinal line หาย", *p)
 
 
@@ -473,32 +494,36 @@ def a_chf():
     p.append(rect(20, 310, 400, 26, "sk", 6))
     p.append(t(30, 328, "PCWP", "xs b"))
     p.append(X(2, rect(70, 314, 60, 18, "ok", 4), t(100, 327, "< 12", "xs mid b")))
-    # ปกติ: หลอดเลือดล่างใหญ่กว่าบน
-    for x0, s in ((110, -1), (330, 1)):
-        p.append(X(2, line(x0 + s * 50, 200, x0 + s * 20, 260, "lwa w3"), line(x0 + s * 40, 200, x0 + s * 70, 250, "lwa w3"),
-                   line(x0 + s * 50, 140, x0 + s * 30, 90, "lwa"), line(x0 + s * 40, 140, x0 + s * 60, 100, "lwa")))
+
+    def vessels(cls_low, cls_up):
+        out = []
+        for s in (1, -1):  # ขวาของผู้ป่วย (ซ้ายมือ) s=1
+            def X_(x):
+                return x if s == 1 else 440 - x
+            out.append(line(X_(184), 172, X_(140), 250, cls_low)); out.append(line(X_(180), 176, X_(112), 238, cls_low))
+            out.append(line(X_(184), 146, X_(150), 92, cls_up)); out.append(line(X_(180), 148, X_(126), 112, cls_up))
+        return out
+    p.append(X(2, *vessels("lwa w3", "lwa")))
     p.append(X(2, t(220, 362, "ปกติ (ยืน): หลอดเลือดปอดล่าง > บน (แรงโน้มถ่วง)", "sm mid")))
-    # ขั้น 2 cephalization
-    p.append(S(2, *[line(x0 + s * 50, 140, x0 + s * 30, 90, "lwa w3") for x0, s in ((110, -1), (330, 1))],
-               *[line(x0 + s * 40, 140, x0 + s * 60, 100, "lwa w3") for x0, s in ((110, -1), (330, 1))],
-               rect(134, 314, 70, 18, "ms", 4), t(169, 327, "13–18", "xs mid b"),
+    p.append(S(2, *vessels("lwa", "lwa w3")))
+    p.append(S(2, rect(134, 314, 70, 18, "ms", 4), t(169, 327, "13–18", "xs mid b"),
                t(220, 362, "cephalization: หลอดเลือดกลีบบนโตเท่า/มากกว่าล่าง", "sm mid tms b"), x=3))
-    # ขั้น 3 interstitial
-    p.append(S(3, *[line(72, y, 90, y, "lbad w2") for y in (236, 248, 260, 272)],
-               *[line(350, y, 368, y, "lbad w2") for y in (236, 248, 260, 272)],
-               G("pl", ell(160, 140, 18, 30, "ms"), ell(282, 140, 18, 30, "ms")),
+    p.append(S(3, *[line(84, y, 100, y, "lbad w2") for y in (232, 244, 256, 268)],
+               *[line(340, y, 356, y, "lbad w2") for y in (232, 244, 256, 268)],
+               t(92, 222, "Kerley B", "xs mid tbad b"),
+               G("pl", ell(176, 160, 14, 24, "ms"), ell(264, 160, 14, 24, "ms")),
                rect(208, 314, 70, 18, "ms", 4), t(243, 327, "18–25", "xs mid b"),
                t(220, 362, "interstitial edema: Kerley B · peribronchial cuffing", "sm mid tbad b"), x=4))
-    # ขั้น 4 alveolar
-    p.append(S(4, G("pl", path("M192 110 C140 120 120 180 150 230 C170 250 186 230 192 200 Z", "bad"),
-                    path("M250 110 C300 120 320 180 290 230 C270 250 254 230 250 200 Z", "bad")),
-               path("M70 292 C100 270 140 270 172 284 L172 292 Z", "wa"), path("M370 292 C340 270 300 270 270 284 L270 292 Z", "wa"),
-               rect(282, 314, 76, 18, "bad", 4), t(320, 327, "> 25", "xs mid b"),
-               t(220, 362, "alveolar edema: bat-wing รอบขั้วปอด + effusion", "sm mid tbad b")))
-    p.append(S(5, rect(20, 372, 400, 46, "ac"),
-               t(30, 392, "ABCDE: Alveolar edema · kerley B · Cardiomegaly", "sm b"),
-               t(30, 410, "Dilated upper lobe vessels · Effusion", "sm b")))
-    return SVG(440, 424, "ภาพเคลื่อนไหวความดันหลอดเลือดดำปอดที่สูงขึ้น: ปกติหลอดเลือดส่วนล่างใหญ่กว่า เมื่อความดันสูงขึ้นเกิด cephalization "
+    BW = "M190 112 C150 120 126 170 144 214 C158 240 180 236 190 222 Z"
+    BW2 = path(BW, "bad").replace("<path", '<path transform="matrix(-1 0 0 1 440 0)"')
+    p.append(S(4, G("pl", path(BW, "bad"), BW2),
+               path("M72 292 C100 270 140 270 172 284 L172 292 Z", "wa"), path("M368 292 C340 270 300 270 268 284 L268 292 Z", "wa"),
+               rect(282, 314, 76, 18, "bad", 4), t(320, 327, "> 25", "xs mid b")))
+    p.append(S(4, t(220, 362, "alveolar edema: bat-wing รอบขั้วปอด + effusion", "sm mid tbad b"), x=5))
+    p.append(S(5, rect(20, 348, 400, 66, "ac"),
+               t(30, 370, "ABCDE: Alveolar edema · kerley B · Cardiomegaly", "sm b"),
+               t(30, 394, "Dilated upper lobe vessels · Effusion", "sm b")))
+    return SVG(440, 420, "ภาพเคลื่อนไหวความดันหลอดเลือดดำปอดที่สูงขึ้น: ปกติหลอดเลือดส่วนล่างใหญ่กว่า เมื่อความดันสูงขึ้นเกิด cephalization "
                "ต่อด้วย interstitial edema เห็น Kerley B lines และ alveolar edema รูปปีกค้างคาวกับน้ำในช่องเยื่อหุ้มปอด", *p)
 
 
@@ -519,29 +544,31 @@ CHF_STEPS = [
 # ───────────────────────── 12 · Pleural effusion: meniscus, subpulmonic, decubitus
 def a_effusion():
     p = []
-    p.append(path("M150 40 C100 50 60 160 50 300 L250 300 L252 50 C220 32 180 30 150 40 Z", "bx"))
+    LUNG = "M150 40 C100 50 60 160 50 300 L250 300 L252 50 C220 32 180 30 150 40 Z"
+    p.append(path(LUNG, "bx"))
     p.append(rect(252, 30, 60, 270, "sk", 6))
+    p.append(t(282, 50, "mediast.", "xs mid mu"))
+    p.append(t(40, 30, "ผนังด้านข้าง", "xs mu"))
     p.append(X(2, path("M50 300 Q150 250 250 300", "ln w3")))
-    p.append(X(2, t(60, 324, "ปกติ: CP angle แหลม · ไม่มีน้ำ", "sm")))
-    # meniscus
+    p.append(X(2, t(60, 330, "ปกติ: CP angle แหลม · ไม่มีน้ำ", "sm")))
     p.append(S(2, path("M56 220 C90 236 150 262 250 268 L250 300 L50 300 Z", "wa"),
                path("M56 220 C90 236 150 262 250 268", "lwa w3"),
-               t(60, 324, "meniscus: ขอบบนเว้า สูงด้านข้าง (> 200 มล. บน PA)", "sm twa b"),
-               t(60, 344, "แรงดึงยืด (recoil) + น้ำหนักน้ำ → ชั้นน้ำหนาด้านข้าง", "xs"), x=3))
-    # subpulmonic
-    p.append(S(3, path("M50 300 Q200 230 250 300", "lwa w3"), path("M50 300 Q200 230 250 300 L250 300 Z", "wa"),
-               path("M50 300 Q150 280 250 300", "ln da"),
-               ar(200, 210, 186, 248, "lbad w2", "ah-bad"), t(150, 204, "ยอดโดมเลื่อนออกด้านข้าง", "xs tbad b"),
-               t(60, 324, "subpulmonic: น้ำใต้ปอด เลียนแบบโดมยกสูง", "sm twa b"),
-               t(60, 344, "ซ้าย: กระเพาะห่างจากโดม > 2 ซม.", "xs"), x=4))
-    # decubitus
-    p.append(S(4, rect(20, 60, 400, 140, "bx", 14), rect(20, 168, 400, 32, "wa", 6),
-               t(220, 160, "ตะแคงข้างที่มีน้ำลง (lateral decubitus)", "sm mid b"),
-               ar(220, 120, 220, 162, "lwa w2", "ah-wa"),
-               t(220, 192, "น้ำอิสระไหลเป็นชั้นแนวยาวตามผนังด้านล่าง", "xs mid"),
-               t(60, 324, "น้ำไหล = free fluid · ไม่ไหล = loculated", "sm twa b"),
-               t(60, 344, "✍️ loculated มี septa → สงสัย parapneumonic/empyema", "xs")))
-    return SVG(440, 352, "ภาพเคลื่อนไหวน้ำในช่องเยื่อหุ้มปอด: meniscus sign ขอบบนเว้าสูงด้านข้าง subpulmonic effusion "
+               t(60, 330, "meniscus: ขอบบนเว้า สูงด้านข้าง (> 200 มล. บน PA)", "sm twa b"),
+               t(60, 350, "recoil ของปอด + น้ำหนักน้ำ → ชั้นน้ำหนาด้านข้าง", "xs"), x=3))
+    p.append(S(3, path("M50 300 Q60 222 250 300 Z", "wa"), path("M50 300 Q60 222 250 300", "lwa w3"),
+               path("M50 300 Q150 270 250 300", "ln da"), t(246, 292, "โดมจริง", "xs mu end"),
+               ar(140, 214, 108, 252, "lbad w2", "ah-bad"), t(110, 206, "ยอดโดมปลอมเลื่อนออกด้านข้าง", "xs tbad b"),
+               t(60, 330, "subpulmonic: น้ำใต้ปอด เลียนแบบโดมยกสูง", "sm twa b"),
+               t(60, 350, "ซ้าย: gastric bubble ห่างจาก \"โดม\" > 2 ซม.", "xs"), x=4))
+    p.append(S(4, rect(20, 14, 400, 290, "bx", 14),
+               t(220, 56, "ตะแคงข้างที่มีน้ำลง (lateral decubitus)", "sm mid b"),
+               rect(60, 90, 320, 150, "sk", 30), path("M70 112 C150 98 290 98 370 112 L370 190 L70 190 Z", "bx"),
+               t(220, 150, "ปอด", "sm mid"),
+               rect(64, 192, 312, 44, "wa", 18), t(220, 220, "น้ำอิสระไหลเป็นชั้นตามผนังด้านล่าง", "xs mid b twa"),
+               ar(400, 100, 400, 220, "lwa w2", "ah-wa"), t(396, 262, "แรงโน้มถ่วง", "xs end twa"),
+               t(60, 330, "น้ำไหล = free fluid · ไม่ไหล = loculated", "sm twa b"),
+               t(60, 350, "✍️ loculated มี septa → สงสัย parapneumonic/empyema", "xs")))
+    return SVG(440, 360, "ภาพเคลื่อนไหวน้ำในช่องเยื่อหุ้มปอด: meniscus sign ขอบบนเว้าสูงด้านข้าง subpulmonic effusion "
                "ที่ยอดโดมปลอมเลื่อนออกด้านข้าง และท่าตะแคงที่น้ำอิสระไหลเป็นชั้นตามผนังด้านล่าง", *p)
 
 
@@ -560,32 +587,36 @@ EFF_STEPS = [
 # ───────────────────────── 13 · Pneumothorax and tension
 def a_ptx():
     p = []
-    p.append(rect(20, 30, 220, 290, "bx", 30))  # hemithorax right
-    p.append(rect(240, 30, 60, 290, "sk", 6))  # mediastinum
-    p.append(t(270, 50, "mediast.", "xs mid mu"))
-    p.append(rect(300, 30, 120, 290, "bx", 30))
-    p.append(X(2, path("M28 40 L232 40 L232 312 L28 312 Z", "lwa"), t(130, 180, "ปอดเต็มช่อง", "sm mid")))
-    p.append(X(2, t(30, 344, "ปกติ: visceral + parietal pleura แนบกัน (ความดันลบ)", "sm")))
-    # step 2 simple ptx
-    p.append(S(2, path("M80 70 C140 60 200 80 226 120 L228 300 C160 310 90 300 60 270 C40 200 50 110 80 70 Z", "wa"),
-               path("M80 70 C140 60 200 80 226 120", "ln w3"), path("M80 70 C40 110 40 200 60 270", "ln w3"),
-               t(52, 58, "visceral pleural line", "xs b"),
-               t(30, 140, "ไม่มี", "xs mu"), t(30, 154, "lung", "xs mu"), t(30, 168, "marking", "xs mu"),
-               t(30, 344, "ลมเข้าช่องเยื่อหุ้ม → ปอดหดด้วย recoil", "sm twa b"),
-               t(30, 364, "เส้นขาวบาง ๆ + ไม่มีลายปอดนอกเส้น", "sm"), x=3))
-    # step 3 tension
-    p.append(S(3, path("M140 120 C180 110 210 140 214 180 C210 230 180 250 150 240 C120 220 120 150 140 120 Z", "wa"),
-               G("pl", rect(258, 30, 60, 290, "sk", 6)), ar(250, 180, 300, 180, "lbad w3", "ah-bad"),
-               t(270, 50, "mediast.", "xs mid mu"),
-               path("M20 320 Q130 344 240 320", "lbad w3"), ar(130, 300, 130, 330, "lbad w2", "ah-bad"),
-               mover(3, "badf", "1.6s", "M60 60 L110 110"),
-               t(30, 344, "ลิ้นทางเดียว: ลมเข้าได้ออกไม่ได้ → ความดันบวก", "sm tbad b"),
-               t(30, 364, "mediastinum ถูกดันข้าม · โดมกดต่ำ · venous return ↓", "sm tbad"), x=4))
-    p.append(S(4, rect(20, 330, 400, 86, "ac"),
-               t(30, 352, "ขนาด (BTS): ระยะปอด–ผนังที่ระดับ hilum > 2 ซม. ≈ 50%", "sm b"),
-               t(30, 374, "ท่านอนหงาย: ลมขึ้นด้านหน้า-ล่าง → deep sulcus sign", "sm"),
-               t(30, 396, "tension = วินิจฉัยทางคลินิก → needle decompression ก่อนถ่ายฟิล์ม", "sm tbad b")))
-    return SVG(440, 424, "ภาพเคลื่อนไหว pneumothorax: ลมเข้าช่องเยื่อหุ้มปอดทำให้ปอดหดเห็นเส้น visceral pleura และไม่มีลายปอดนอกเส้น "
+    # ซีกขวาของผู้ป่วย (ซ้ายมือ) + mediastinum + ซีกซ้าย
+    p.append(X(3, rect(20, 30, 220, 270, "bx", 30)))
+    p.append(X(3, rect(240, 30, 60, 270, "sk", 6), t(270, 50, "mediast.", "xs mid mu"), rect(300, 30, 120, 270, "bx", 30)))
+    LUNG1 = "M40 50 L220 50 L222 280 L36 280 Z"
+    p.append(X(2, path(LUNG1, "wa"), t(130, 170, "ปอดเต็มช่อง", "sm mid")))
+    for d in ("M222 160 L140 110", "M222 170 L120 190", "M222 180 L150 250", "M140 110 L90 80", "M120 190 L70 210"):
+        p.append(X(2, path(d, "lwa")))
+    p.append(X(2, t(30, 330, "ปกติ: visceral + parietal pleura แนบกัน (ความดันลบ)", "sm")))
+    LUNG2 = "M120 90 C170 78 214 96 226 130 L228 290 C170 298 128 290 108 262 C92 200 96 126 120 90 Z"
+    p.append(S(2, path(LUNG2, "wa"), path("M226 130 C214 96 170 78 120 90 C96 126 92 200 108 262", "ln w3"),
+               path("M226 170 L170 140", "lwa"), path("M226 180 L150 210", "lwa"),
+               t(32, 110, "ไม่มี", "xs mu"), t(32, 124, "ลาย", "xs mu"), t(32, 138, "ปอด", "xs mu"),
+               t(104, 76, "visceral pleural line", "xs b"),
+               t(30, 330, "ลมเข้าช่องเยื่อหุ้ม → ปอดหดด้วย recoil", "sm twa b"),
+               t(30, 350, "เส้นขาวบาง ๆ + ไม่มีลายปอดนอกเส้น", "sm"), x=3))
+    # tension: ซีกขวาขยาย mediastinum ถูกดันไปซ้าย
+    p.append(S(3, rect(20, 30, 250, 284, "bx", 30), G("pl", rect(270, 30, 50, 270, "sk", 6)),
+               t(295, 50, "mediast.", "xs mid mu"), rect(320, 30, 100, 270, "bx", 30),
+               path("M216 130 C246 124 266 146 268 180 C266 220 240 236 216 230 C194 216 194 150 216 130 Z", "wa"),
+               ar(228, 258, 282, 258, "lbad w3", "ah-bad"),
+               path("M24 300 Q130 312 266 300", "lbad w3"), ar(130, 270, 130, 300, "lbad w2", "ah-bad"),
+               t(60, 290, "โดมกดต่ำ", "xs tbad b")))
+    p.append(S(3, t(30, 336, "ลิ้นทางเดียว: ลมเข้าได้ออกไม่ได้ → ความดันบวก", "sm tbad b"),
+               t(30, 356, "mediastinum ถูกดันข้าม · โดมกดต่ำ · venous return ↓", "sm tbad"), x=4))
+    p.append(S(4, rect(20, 322, 400, 92, "ac"),
+               t(30, 344, "ขนาด (BTS): ระยะปอด–ผนังที่ระดับ hilum > 2 ซม. ≈ 50%", "sm b"),
+               t(30, 366, "ท่านอนหงาย: ลมขึ้นด้านหน้า-ล่าง → deep sulcus sign", "sm"),
+               t(30, 388, "tension = วินิจฉัยทางคลินิก → needle decompression", "sm tbad b"),
+               t(30, 406, "ก่อนถ่ายฟิล์ม", "sm tbad b")))
+    return SVG(440, 420, "ภาพเคลื่อนไหว pneumothorax: ลมเข้าช่องเยื่อหุ้มปอดทำให้ปอดหดเห็นเส้น visceral pleura และไม่มีลายปอดนอกเส้น "
                "ใน tension pneumothorax ลมเข้าได้ออกไม่ได้ ความดันดัน mediastinum ไปอีกข้างและกดโดมให้ต่ำลง", *p)
 
 
@@ -604,29 +635,36 @@ PTX_STEPS = [
 # ───────────────────────── 14 · Silica → silicosis
 def a_silica():
     p = []
-    p.append(rect(20, 30, 400, 200, "bx", 14))
-    p.append(t(30, 50, "ถุงลม / interstitium (จำลอง)", "xs mu"))
-    p.append(S(1, mover(3, "inkf", "2s", "M40 40 L150 120"), mover(3, "inkf", "2.4s", "M70 36 L170 110", "-.8s"),
-               t(30, 252, "ฝุ่น crystalline silica < 5 ไมครอน เข้าถึงถุงลม", "sm"), x=2))
-    p.append(S(2, circ(170, 120, 30, "ac"), circ(160, 116, 4, "inkf"), circ(178, 126, 4, "inkf"),
-               t(170, 170, "macrophage กิน", "xs mid b"),
-               t(30, 252, "macrophage กลืนผลึก → lysosome แตก → เซลล์ตาย", "sm"), x=3))
-    p.append(S(3, G("pl", circ(170, 120, 30, "bad")), t(170, 124, "ตาย", "xs mid b tbad"),
-               ar(200, 110, 260, 80, "lbad w2", "ah-bad"), ar(200, 130, 260, 160, "lbad w2", "ah-bad"),
-               t(266, 84, "IL-1 TNF", "xs b tbad"), t(266, 166, "TGF-β", "xs b tbad"),
-               t(30, 252, "ปล่อยผลึกออกมาให้เซลล์ใหม่กินซ้ำ + cytokine", "sm"), x=4))
-    p.append(S(4, *[circ(80 + (k % 5) * 60, 70 + (k // 5) * 50, 10 + (k % 3) * 3, "ms") for k in range(12)],
-               t(30, 252, "fibroblast สร้าง collagen เป็นวง → silicotic nodule", "sm tms b"),
-               t(30, 272, "ปอดบน (ระบายน้ำเหลืองช้ากว่า) + ต่อมน้ำเหลือง hilum", "sm"), x=5))
-    p.append(S(5, rect(20, 236, 400, 140, "ac"),
-               t(30, 258, "บนฟิล์ม: small rounded opacities ปอดบน", "sm b"),
-               t(30, 280, "eggshell calcification ของต่อมน้ำเหลือง hilum", "sm"),
-               t(30, 302, "ก้อนรวมกัน > 1 ซม. = PMF (progressive massive fibrosis)", "sm"),
-               t(30, 324, "macrophage เสีย → เสี่ยง TB สูง → คัดกรอง TB/LTBI", "sm tbad b"),
-               t(30, 346, "ไม่มียารักษาให้หาย → หยุดสัมผัส + ป้องกัน", "sm"),
+    p.append(rect(20, 30, 400, 196, "bx", 14))
+    p.append(circ(96, 128, 70, "sk")); p.append(t(96, 50, "ถุงลม", "xs mid mu"))
+    p.append(mover(3, "inkf", "2s", "M30 40 L80 110"))
+    p.append(mover(3, "inkf", "2.4s", "M40 34 L104 120", "-.8s"))
+    for x, y in ((80, 150), (110, 160), (70, 120)):
+        p.append(X(2, rect(x, y, 6, 6, "inkf", 1)))
+    p.append(S(1, t(30, 248, "ฝุ่น crystalline silica เล็กพอเข้าถึงถุงลม", "sm"), x=2))
+    p.append(S(2, circ(96, 128, 30, "ac"), rect(86, 120, 6, 6, "inkf", 1), rect(100, 130, 6, 6, "inkf", 1),
+               t(96, 176, "macrophage", "xs mid b"), x=3))
+    p.append(S(2, t(30, 248, "macrophage กลืนผลึก → lysosome แตก → เซลล์ตาย", "sm"), x=3))
+    p.append(S(3, G("pl", circ(96, 128, 30, "bad")), rect(86, 120, 6, 6, "inkf", 1), rect(100, 130, 6, 6, "inkf", 1),
+               t(96, 176, "ตาย → ปล่อยผลึกซ้ำ", "xs mid b tbad"),
+               ar(130, 112, 190, 92, "lbad w2", "ah-bad"), ar(130, 140, 190, 152, "lbad w2", "ah-bad"),
+               t(196, 96, "IL-1 · TNF", "xs b tbad"), t(196, 156, "TGF-β", "xs b tbad"),
+               ell(262, 128, 30, 14, "ms"), t(262, 132, "fibroblast", "xs mid b")))
+    p.append(S(3, t(30, 248, "cytokine กระตุ้น fibroblast · ผลึกถูกกินซ้ำเป็นวงจร", "sm"), x=4))
+    nod = []
+    for cx, cy in ((330, 70), (376, 96), (338, 126), (390, 150), (346, 180)):
+        nod += [circ(cx, cy, 14, "ms"), circ(cx, cy, 9, "lms"), circ(cx, cy, 4, "lms")]
+    p.append(S(4, ar(294, 128, 316, 128, "lms w2", "ah-ms"), *nod, t(362, 212, "silicotic nodule", "xs mid b tms")))
+    p.append(S(4, t(30, 248, "collagen เรียงเป็นวงซ้อน → ปุ่มปอดบน + ต่อมน้ำเหลือง hilum", "sm tms b"), x=5))
+    p.append(S(5, rect(20, 234, 400, 142, "ac"),
+               t(30, 256, "บนฟิล์ม: small rounded opacities ปอดบน", "sm b"),
+               t(30, 278, "eggshell calcification ของต่อมน้ำเหลือง hilum", "sm"),
+               t(30, 300, "ก้อนรวมกัน > 1 ซม. = PMF (progressive massive fibrosis)", "sm"),
+               t(30, 322, "macrophage เสีย → เสี่ยง TB สูง → คัดกรอง TB/LTBI", "sm tbad b"),
+               t(30, 344, "ไม่มียารักษาให้หาย → หยุดสัมผัส + ป้องกัน", "sm"),
                t(30, 366, "(ไม่อยู่ในสไลด์ — อิงตำรา/ILO)", "xs mu")))
     return SVG(440, 384, "ภาพเคลื่อนไหว silicosis: ฝุ่นซิลิกาเข้าถุงลม macrophage กลืนแล้วตาย ปล่อยผลึกและ cytokine "
-               "กระตุ้น fibroblast สร้างปุ่มพังผืดในปอดบนและต่อมน้ำเหลือง hilum เป็น eggshell calcification และเสี่ยงวัณโรค", *p)
+               "กระตุ้น fibroblast สร้างปุ่มพังผืดที่มี collagen เป็นวงซ้อนในปอดบนและต่อมน้ำเหลือง hilum และเสี่ยงวัณโรค", *p)
 
 
 SIL_STEPS = [
@@ -646,24 +684,27 @@ SIL_STEPS = [
 # ───────────────────────── 15 · Asbestos → pleural plaque, asbestosis, mesothelioma
 def a_asbestos():
     p = []
+    WALL = "M150 40 C100 50 60 160 50 300"
     p.append(path("M150 40 C100 50 60 160 50 300 L250 300 L252 50 C220 32 180 30 150 40 Z", "bx"))
-    p.append(path("M150 40 C100 50 60 160 50 300", "lmu w2"))
-    p.append(t(270, 50, "ใยหินยาว บาง", "xs b"))
-    p.append(S(1, *[line(140 + k * 14, 70 + k * 6, 156 + k * 14, 96 + k * 6, "ln w2") for k in range(5)],
-               t(270, 70, "ใยหินยาว ไปถึง", "xs"), t(270, 84, "ปอดล่างและเยื่อหุ้ม", "xs"), x=2))
-    p.append(S(2, *[G("pl", rect(58 + k * 4, 150 + k * 44, 10, 28, "ms", 3)) for k in range(3)],
-               path("M60 300 Q150 286 240 300", "lms w5"),
-               t(270, 140, "pleural plaque", "sm b tms"), t(270, 158, "parietal pleura", "xs"),
-               t(270, 174, "บนโดม · ผนังด้านข้าง", "xs"), t(270, 190, "มัก calcify · ไม่ร้าย", "xs"), x=3))
-    p.append(S(3, *[path("M%d %d l14 -8 l10 10 l14 -6" % (80 + k * 30, 240 + (k % 2) * 16), "lbad w2") for k in range(5)],
-               t(270, 220, "asbestosis", "sm b tbad"), t(270, 238, "fibrosis ปอดล่าง", "xs"),
-               t(270, 254, "reticular · subpleural", "xs"), x=4))
-    p.append(S(4, G("pl", path("M54 120 C70 116 76 160 66 220 C62 260 60 280 56 296 C46 260 44 170 54 120 Z", "bad")),
-               t(270, 220, "mesothelioma", "sm b tbad"), t(270, 238, "เยื่อหุ้มหนาเป็นปุ่ม", "xs"),
-               t(270, 254, "+ effusion ข้างเดียว", "xs"), t(270, 270, "ระยะแฝง 20–40 ปี", "xs")))
+    p.append(path(WALL, "ln w3"))
+    p.append(t(40, 30, "ผนังอก + parietal pleura", "xs mu"))
+    p.append(S(1, *[line(150 + k * 16, 64 + k * 34, 166 + k * 16, 86 + k * 34, "ln w2") for k in range(5)],
+               mover(2, "inkf", "2.6s", "M200 50 L230 240"),
+               t(270, 54, "ใยหินยาว บาง", "xs b"), t(270, 70, "ลงถึงปอดล่างและเยื่อหุ้ม", "xs")))
+    p.append(S(2, *[G("pl", rect(x, y, 9, 26, "ms", 3)) for x, y in ((92, 140), (76, 196))],
+               path("M66 296 Q150 286 240 296", "lms w5"),
+               t(270, 120, "pleural plaque", "sm b tms"), t(270, 136, "parietal pleura · บนโดม", "xs"),
+               t(270, 152, "มัก calcify · ไม่ร้าย", "xs")))
+    p.append(S(3, *[path("M%d %d l12 -8 l10 10 l12 -6" % (110 + k * 26, 236 + (k % 2) * 14), "lbad w2") for k in range(5)],
+               t(270, 200, "asbestosis", "sm b tbad"), t(270, 216, "fibrosis ปอดล่าง subpleural", "xs")))
+    MESO = ("M146 46 C126 50 112 60 102 76 C112 86 104 98 92 110 C100 122 92 136 82 150 C92 164 84 180 74 196 "
+            "C84 212 76 230 68 246 C78 262 70 280 62 296 L54 300 C60 160 100 50 150 40 Z")
+    p.append(S(4, G("pl", path(MESO, "bad")), path("M60 300 C70 280 90 272 120 276 C150 280 200 282 240 290 L250 300 Z", "wa"),
+               t(270, 254, "mesothelioma", "sm b tbad"), t(270, 270, "pleura หนาเป็นปุ่มรอบปอด", "xs"),
+               t(270, 286, "+ effusion · ระยะแฝง 30–40 ปี", "xs")))
     p.append(S(5, rect(20, 312, 400, 74, "ac"),
                t(30, 334, "ใยหิน: กระเบื้องลอนหลังคา ท่อซีเมนต์ ผ้าเบรก ฉนวน", "sm b"),
-               t(30, 356, "plaque = ตัวบ่งชี้การสัมผัส · บุหรี่ + ใยหิน → มะเร็งปอดทวีคูณ", "sm"),
+               t(30, 356, "plaque = ตัวบ่งชี้การสัมผัส · บุหรี่ × ใยหิน → มะเร็งปอดทวีคูณ", "sm"),
                t(30, 376, "(ไม่อยู่ในสไลด์ — อิงตำรา)", "xs mu")))
     return SVG(440, 392, "ภาพเคลื่อนไหวโรคจากใยหิน: ใยยาวบางไปถึงปอดล่างและเยื่อหุ้มปอด ทำให้เกิด pleural plaque บนโดมและผนังข้าง "
                "asbestosis เป็นพังผืดปอดล่าง และ mesothelioma เยื่อหุ้มหนาเป็นปุ่มกับน้ำในช่องเยื่อหุ้มปอดหลังระยะแฝงหลายสิบปี", *p)
@@ -699,6 +740,7 @@ def a_occasthma():
     vals = [200, 175, 160, 150, 140, 190, 205, 175]
     pts = [(x0 + 20 + i * 46, 230 - (v - 100) * 1.4) for i, v in enumerate(vals)]
     p.append(S(2, poly(pts, "lbad w3"), *[circ(x, y, 4, "badf") for x, y in pts]))
+    p.append(X(2, t(220, 150, "บันทึก PEF วันละ ≥ 4 ครั้ง ทั้งวันทำงานและวันหยุด", "sm mid mu")))
     p.append(S(2, t(60, 278, "แย่ลงตลอดสัปดาห์ทำงาน ดีขึ้นวันหยุด", "sm tbad b"), x=3))
     p.append(S(3, rect(20, 262, 400, 110, "ac"),
                t(30, 284, "Occupational asthma (เช่น แป้งในเบเกอรี่ isocyanate สี)", "sm b"),
