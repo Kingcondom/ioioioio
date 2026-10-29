@@ -91,3 +91,79 @@
 - p96 **Diffuse nodular infiltration** (CXR) · p97 **Miliary nodules** (เม็ดเล็กไม่กี่มม. ทั่วปอด + CT)
 - p98 **Reticulonodular** = lines + dots · ตัดสินว่าแบบไหนเด่น · แท้จริงพบน้อย: sarcoidosis, lymphangitic spread, amyloidosis · p99 **Diffuse reticulonodular infiltration**
 - p100 Atelectasis ✍️ ★ (วงไว้ เน้น)
+
+## หน้า 100–122 · Atelectasis
+- p100 Atelectasis ✍️ ★ (เน้น)
+- p101 Atelectasis = incomplete stretching = collapse · ชนิด: **Resorption (obstructive)** ✍️ "common" — airway อุดแล้วก๊าซในถุงลมถูกดูดซึม เกิดภายใน 24 ชม. เร็วขึ้นเมื่อหายใจ O₂ · อาจเป็น drowned lung ปริมาตรลดน้อย · collateral ventilation อาจกันไม่ให้ยุบ · **อุดหลอดลมใหญ่มักไม่มี air bronchogram** · **Relaxation (passive)** จาก effusion, pneumothorax, mass · **Adhesive** ขาด surfactant (RDS ทารก, ARDS, radiation pneumonitis) · **Cicatricial** จาก fibrosis ✍️ "TB"
+- p102 **Direct signs (lobar volume loss)**: displacement of fissures · crowding of vessels ✍️ "เส้นเลือดรวม ชิดแคบ ๆ" · **Indirect signs**: diaphragm elevation · mediastinal shift · compensatory overinflation · hilar displacement · reorientation of hilum/bronchi · approximation of ribs · increased opacity · absence of air bronchograms · shifting granuloma sign
+- p103 Indirect signs เฉพาะชนิด: **Golden S** = RUL · **Juxtaphrenic peak** = upper lobe · **Luftsichel** = upper lobe (มักเป็น LUL) · **Flat waist** = LLL · **Comet-tail** = rounded atelectasis · ✍️ "ไม่จำ" (ไม่ต้องท่องชื่อทั้งหมด — ให้เข้าใจกลไก)
+- p104 RUL atelectasis: frontal — ทึบบน, mediastinum ขวาดูกว้าง, silhouette right upper mediastinum, trachea shift ขวา, **minor fissure ยกขึ้นโค้งขึ้น**, Golden S, hilum ยกสูง, hilum/bronchus หมุนออก, juxtaphrenic peak · lateral — minor fissure ขึ้น, upper major fissure เลื่อนมาหน้า
+- p105 CXR RUL atelectasis: upward displacement of minor fissure · elevated Rt hilum ✍️ "ขึ้นมาพอ ๆ กับ Lt" (ปกติ hilum ขวาต่ำกว่า) · outward rotation of descending PA · juxtaphrenic peak · ✍️ "Direct sign"
+- p106 **Golden's S sign** — ส่วนนอกของ minor fissure ยกขึ้น (atelectasis) + ส่วนในโค้งลงจาก **hilar mass** · right upper mediastinal contour หาย · Rt dome ยก · ✍️ "**Cancer**" ✍️ "Reverse S"
+- p107–109 **RML atelectasis**: frontal — minor fissure มองไม่เห็น · ทึบ (จางลงเมื่อยุบมาก) · **silhouette ขอบหัวใจขวา** · lateral — minor fissure ลง, major fissure ส่วนล่างเลื่อนไปหน้า → **ลิ่มบางมียอดที่ hilum** · p108 CXR ✍️ "triangular shade"
+- p110–111 **RLL atelectasis**: major fissure เห็น · ทึบสามเหลี่ยม ยอดที่ hilum ฐานที่ diaphragm · hilum ขวาลง · **interlobar PA หาย** · diaphragm ขวาหาย · หัวใจ/mediastinum เลื่อนและหมุนไปขวา
+- p112 Combined RML–RLL atelectasis (ก่อน–หลัง 1 วัน)
+- p113 **LUL atelectasis**: ทึบซีกซ้ายบนแบบจาง ๆ (veil) · silhouette left upper mediastinum · trachea ไปซ้าย · Luftsichel · apical cap · hilum ยก · juxtaphrenic peak · lateral: major fissure ไปข้างหน้า
+- p114–115 **Luftsichel sign** = air crescent — superior segment ของ LLL ที่พองชดเชยแทรกระหว่าง LUL ที่ยุบกับ mediastinum → แถบโปร่งรูปเสี้ยวรอบ aortic knob · พบน้อยใน RUL · p115 CXR: crescentic lucency ✍️ "เข้ามาแทนที่" · trachea ไปซ้าย · left main bronchus ยก · juxtaphrenic peak · ✍️ "**Lt > Rt (ปกติ Rt > Lt)**" (hemidiaphragm ซ้ายสูงกว่าขวา) · (กล่องในสไลด์เขียน "increased density in RUL" แต่ภาพเป็น LUL — น่าจะพิมพ์ผิด)
+- p116 LUL lateral: major fissure ไปหน้า · LUL ทึบ
+- p117–119 **LLL atelectasis**: เหมือน RLL + **flat waist sign** ✍️ ขีดเส้นใต้ · p118 CXR: หัวใจเลื่อนไปซ้าย · Lt base ทึบ diaphragm ซ้ายหาย · Lt interlobar PA ไม่ชัด · **ขอบหัวใจซ้ายแบน (flat waist)** · ซี่โครงซ้ายชิด · ✍️ major fissure · p119 lateral: major fissure ไปหลัง · ✍️ "**loss of retrocardiac space**"
+- p120 **Platelike/discoid atelectasis**
+- p121 ✍️ "**3 component**" (ของ rounded atelectasis)
+- p122 **Rounded atelectasis**: blunt Rt costophrenic angle · ill-defined opacity ที่ฐานปอดขวา ("ra") · mediastinal shift ไปขวา · ✍️ "Specific"
+
+## หน้า 123–136 · Nodule / mass / cavity / cyst
+- p124 **Nodule < 3 ซม. · Mass ≥ 3 ซม.** ✍️ "complete border"
+- p125 **SPN**: focal opacity · ค่อนข้างขอบชัด · ล้อมด้วยปอดอย่างน้อยบางส่วน · ค่อนข้างกลม · **≤ 3 ซม.**
+- p126 **Intraparenchymal lesion**: ก้อนกลมขอบคม **มุมแหลม (acute angle) กับ pleura** ใน LLL (+ CT)
+- p127 **Extrapulmonary lesion** (PA + lateral; ✍️ วงขอบที่หายไปบางส่วน)
+- p128 Extrapulmonary: **ขอบเรียว (tapering) มุมป้าน (obtuse) กับผนังทรวงอก** ✍️ "มุมป้านกับ chest wall" · **lytic anterior rib**
+- p129 **Cyst** ✍️ "กลม ๆ มีความกลวง" ผนังเรียบ ≤ 3 มม. · **Cavity** ผนังหนา/ไม่เรียบ · ผนังหนา = cavity (ยกเว้น infected cyst)
+- p130 Cavitation ~10% ของมะเร็ง · **SCC 80%** · large cell, adeno · **small cell แทบไม่ cavitate** · malignant ผนังหนาเป็นปุ่ม · benign ผนังบางเรียบ
+- p131 CXR cavity ใหญ่ผนังหนา Lt middle zone ใกล้ hilum · p132 **SCC** cavitary mass + air-fluid level ขอบหนาเป็นปุ่ม (CXR + CT)
+- p133 Cyst ผนัง < 3 มม. ≥ 1 ซม. · **ผนังหนาขึ้น = ติดเชื้อหรือเนื้องอก**
+- p134 Cyst พบใน: bullae · honeycombing · pneumatocele · cystic bronchiectasis · subacute HP · trauma · healing cavities · **parasitic** ✍️ ✓ · CXR cyst ใหญ่มี air-fluid level
+- p135 **PJP** ✍️ วง — GGO + clustered cysts (CT)
+- p136 **Lung abscess** ✍️ "alveolar process" — CT irregular fluid-filled + wall enhancement · CXR ทึบมี cavity
+
+## หน้า 137–163 · Decreased density / airway / emphysema
+- p138 hyperlucency: chest wall (Poland, mastectomy) · general/local excess of air · vasculature
+- p139 emphysema: diaphragm แบน · retrosternal airspace > 2.5 ซม. · avascular/bullae · CT low attenuation
+- p140 local: air trapping (bronchial atresia, congenital lobar emphysema, **endobronchial FB**) · compensatory
+- p141 **Bleb** < 1 ซม. ใน visceral pleura ที่ apex · p142 **Bulla** ≥ 1 ซม. ผนัง < 1 มม. paraseptal · p143 bullous emphysema + air-fluid levels
+- p144 **Pneumatocele**: โตขึ้นในวัน–สัปดาห์ · **S. aureus, Pneumocystis** · หายเอง
+- p145 oligemia: PE · emphysema · TOF · PPH · Swyer-James · p146 **Westermark** ✍️ "Oligemia"
+- p148 bronchiectasis > 2–3 มม. ถาวร ✍️ "**Normal จะเรียวเล็กลงที่ periphery**" · p149 ↑ bronchoarterial ratio · lack of tapering · wall thickening · mucous impaction
+- p151–156 cylindrical (tram tracks, signet ring, finger-in-glove) · varicose (beaded, tree-in-bud) · cystic (> 2 ซม.)
+- p157 ภาพถ่ายจอในห้อง (ไม่ใช้)
+- p158 overinflation: **lung height ≥ 29.9 ซม.** · Rt hemidiaphragm lateral < 2.7 ซม. · PA < 1.5 ซม.
+- p159 ✍️ "**Flat**" diaphragm · p160–161: **Rt hemidiaphragm ต่ำกว่า anterior 7th rib** · lucent lung vessels เล็ก · hila เด่น · retrosternal space ลึก · diaphragm แบน/กลับด้าน
+- p162–163 **Bullous emphysema** (CXR + CT)
+
+## หน้า 164–170 · Mediastinum
+- p165 5 structures: trachea/carina/bronchi · aortic arch · main PA · azygos · heart
+- p166 **Felson's divisions** · p167 contents ant/mid/post
+- p168 (ภาพถ่ายจอ) **Anterior mediastinal mass** — ✍️ "**Obscure heart ด้านขวา → Ant**" · ✍️ "**Post → ดู descending aorta**"
+- p169 (ภาพถ่ายจอ) **Posterior mediastinal mass** — ✍️ "**silhouette descending aorta → Post**"
+- p170 (ภาพถ่ายจอ) PA + lateral
+
+## หน้า 171–177 · Vascular
+- p172 **Pulmonary infarction** wedge-shaped subpleural ✍️ "**Hampton**"
+- p173–174 Acute PE CTPA · **doughnut sign** · p175–176 chronic PE · mosaic attenuation · p177 **PHT** main PA > ascending aorta
+
+## หน้า 178–191 · Pleura
+- p179 **meniscus > 200 มล. (PA)** · **blunt CP sulcus บน lateral > 50 มล.** · subpulmonic: ยอด pseudodiaphragm ไปด้านนอก · CT sickle-shaped 0–20 HU
+- p180 small effusion outlining posterior major fissure · p181 **meniscus sign** ✍️ "moderate amount of PE" · p182 decubitus
+- p183 ✍️ "**Massive PE**" ซีกซ้ายขาว mediastinum ดันไปขวา
+- p184 **Subpulmonic** ✍️ ★ — lateral displacement of apex ✍️ "Lt dome มีน้ำขังอยู่ → (ยอด) จะเปิดไปทาง lateral"
+- p185 **Loculated** ✍️ "**มี septate → สงสัย parapneumonic → empyema**" · "น้ำขังอยู่ ไม่ free fluid"
+- p186 pneumothorax: **white pleural line · no lung markings beyond · deep sulcus · prominent pericardial fat tags**
+- p187 Lt apical pneumothorax · p188 **early tension**: mediastinum → ซ้าย · trachea → ซ้าย · Rt diaphragm กดต่ำ ✍️ "tension pneumothorax"
+- p189 Lt pneumothorax ใหญ่ · p190 Rt pneumothorax
+- p191 **size: Large > 2 ซม. ≈ 50%** · a apex–cupola (American) · **b interpleural distance ที่ระดับ hilum (British)** ✍️ "ดู size ตรงนี้"
+
+## สิ่งที่สไลด์ไม่มี (อิงตำรา/แนวทางในบทเรียน)
+- Heart failure / pulmonary edema (Kerley B, cephalization) — สไลด์มีแค่ CTR
+- Solitary nodule management (Fleischner 2017), hilar lymphadenopathy DDx
+- **Occupational lung disease ทั้งหมด** (silicosis, CWP, asbestos, HP, occupational asthma, ILO)
+- Lung cancer (SVC syndrome, paraneoplastic, EBUS staging)
+- BTS 2023 pneumothorax management
