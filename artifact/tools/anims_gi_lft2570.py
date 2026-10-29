@@ -51,13 +51,12 @@ def a_rratio():
     X_ = lambda r: x0 + (x1 - x0) * (math.log10(r) - lo) / (hi - lo)
     y, h = 92, 24
     p = [t(220, 26, "R = (ALT ÷ ULN) ÷ (ALP ÷ ULN)", "mid b lg"),
-         t(220, 48, "สเกล log · ULN ของแล็บนั้น ๆ (ตัวอย่างใช้ ALT 40 · ALP 120)", "mid xs mu"),
+         t(220, 48, "สเกล log · ซ้าย = ALP นำ · ขวา = ALT นำ · ULN ตัวอย่าง ALT 40 ALP 120", "mid xs mu"),
          rect(x0, y, X_(2) - x0, h, "wa", 4), rect(X_(2), y, X_(5) - X_(2), h, "ms", 0), rect(X_(5), y, x1 - X_(5), h, "bad", 4),
          t((x0 + X_(2)) / 2, 82, "Cholestatic < 2", "mid sm b twa"),
          t((X_(2) + X_(5)) / 2, 82, "Mixed", "mid sm b tms"),
          t((X_(5) + x1) / 2, 82, "Hepatocellular > 5", "mid sm b tbad"),
-         t(X_(2), 132, "2", "mid xs b"), t(X_(5), 132, "5", "mid xs b"),
-         t(x0, 132, "ALP นำ", "xs mu"), t(x1, 132, "ALT นำ", "xs mu end")]
+         t(X_(2) - 4, 132, "2", "end xs b"), t(X_(5) - 4, 132, "5", "end xs b")]
 
     def case(k, r, bx, title, l1, l2, res, cls):
         xr = X_(r)
@@ -94,9 +93,9 @@ RRATIO_STEPS = [
 # ═══════════════════════════════════ 2 · เอนไซม์อยู่ส่วนไหนของเซลล์ตับ (gi-lft-02)
 def a_leak():
     p = [rect(16, 14, 408, 36, "bad", 8), t(220, 37, "เลือด (sinusoid) — สิ่งที่วัดได้ในซีรัม", "mid sm b"),
-         rect(16, 96, 290, 226, "sk", 14), t(30, 116, "เซลล์ตับ (hepatocyte)", "b sm"),
+         rect(16, 96, 290, 226, "sk", 14), t(263, 286, "เซลล์ตับ", "mid b sm"), t(263, 304, "(hepatocyte)", "mid xs i2"),
          # ALT + AST ใน cytosol
-         t(30, 142, "cytosol: ALT + AST 20%", "xs i2"),
+         t(30, 222, "cytosol: ALT + AST 20%", "xs i2"),
          circ(44, 160, 5, "acf"), circ(66, 172, 5, "acf"), circ(90, 158, 5, "acf"), circ(56, 190, 5, "acf"),
          circ(82, 196, 5, "waf"), circ(110, 180, 5, "acf"),
          # mitochondria
@@ -159,7 +158,7 @@ def a_zone3():
          t(134, 90, "Zone 1", "mid sm b"), t(234, 90, "Zone 2", "mid sm b"), t(329, 90, "Zone 3", "mid sm b"),
          t(134, 186, "O₂ สูง", "mid xs tok b"), t(329, 186, "O₂ ต่ำสุด", "mid xs b"),
          t(329, 202, "CYP2E1 มากสุด", "mid xs b"),
-         circ(400, yc, 22, "wa"), t(400, yc + 4, "CV", "mid xs b"), t(400, yc + 42, "central vein", "mid xs b"),
+         circ(400, yc, 22, "wa"), t(400, yc + 4, "CV", "mid xs b"), t(400, 102, "central vein", "mid xs b"),
          line(80, yc, 376, yc, "lwa w2 fl"),
          X(2, mover(3.5, "badf", "2.6s", "M80 132 L376 132"), mover(3.5, "badf", "2.6s", "M80 132 L376 132", "-.9s"),
            mover(3.5, "badf", "2.6s", "M80 132 L376 132", "-1.7s"))]
@@ -206,7 +205,7 @@ def a_aih():
         for r in range(5):
             p.append(rect(128 + c * 38, 56 + r * 30, 34, 26, "ok", 4))
     p.append(t(166, 220, "แผ่นเซลล์ตับ", "mid xs b"))
-    p += [t(340, 30, "ซีรัม (g/dL)", "mid sm b"), line(258, base, 424, base, "ln w2"),
+    p += [t(340, 22, "ซีรัม (g/dL)", "mid sm b"), line(258, base, 424, base, "ln w2"),
           rect(272, base - 4.5 * sc, 56, 4.5 * sc, "wa", 3), t(300, base + 18, "Albumin", "mid xs b"),
           rect(352, base - 3.0 * sc, 56, 3.0 * sc, "ms", 3), t(380, base + 18, "Globulin", "mid xs b"),
           X(4, t(300, base - 4.5 * sc - 6, "4.5", "mid xs")), X(3, t(380, base - 3.0 * sc - 6, "3.0", "mid xs"))]
@@ -214,15 +213,15 @@ def a_aih():
                mover(5, "paf", "2.2s", "M100 120 L140 120"), mover(5, "paf", "2.2s", "M96 90 L140 70", "-1.1s"),
                G("pl", rect(126, 54, 38, 152, "lbad w3", 4)),
                t(16, 252, "lymphocyte + plasma cell ลามข้ามแผ่นแรก", "xs b tbad"),
-               t(16, 268, "= interface hepatitis → AST ALT สูงพอ ๆ กัน", "xs b tbad")))
+               t(16, 268, "= interface hepatitis → AST ≈ ALT", "xs b tbad")))
     p.append(S(3, rect(352, base - 6.0 * sc, 56, 6.0 * sc, "ms", 3), t(380, base - 6.0 * sc - 6, "6.0", "mid xs b tbad"),
-               ar(110, 100, 344, 120, "lms w2 fl", "ah-ms"), t(232, 96, "IgG หลายชนิด", "mid xs b")))
+               path("M96 80 L122 42 L330 42 L366 62", "lms w2 fl", "ah-ms"), t(226, 36, "IgG หลายชนิด", "mid xs b")))
     p.append(S(4, rect(272, base - 4.5 * sc, 56, 4.5 * sc, "sk", 3), rect(272, base - 3.3 * sc, 56, 3.3 * sc, "wa", 3),
                t(300, base - 3.3 * sc - 6, "3.3", "mid xs b tbad"),
-               t(16, 292, "เป็นนาน → เซลล์ตับเหลือน้อย สร้าง albumin ลด", "xs b"),
-               t(16, 308, "+ palmar erythema · spider · ขาดประจำเดือน = chronic", "xs")))
-    p.append(S(5, rect(256, 262, 172, 52, "bad", 8), t(342, 282, "A/G = 3.3/6 = 0.55", "mid sm b"),
-               t(342, 302, "< 1 = reversed A/G", "mid xs b"),
+               t(16, 292, "เป็นนาน → สร้าง albumin ไม่พอ", "xs b"),
+               t(16, 308, "+ palmar erythema spider ขาดประจำเดือน", "xs")))
+    p.append(S(5, rect(270, 264, 158, 50, "bad", 8), t(349, 284, "A/G = 3.3/6 = 0.55", "mid sm b"),
+               t(349, 304, "< 1 = reversed A/G", "mid xs b"),
                rect(10, 324, 418, 54, "sk", 8), t(219, 344, "globulin สูงขนาด 6 → คิด AIH (polyclonal IgG)", "mid xs b"),
                t(219, 364, "✍️ ถ้าเป็นแถบเดียว (monoclonal) → myeloma ไม่ใช่ AIH", "mid xs")))
     return SVG(440, 386, "ภาพเคลื่อนไหว: autoimmune hepatitis lymphocyte และ plasma cell จาก portal tract ลามข้ามแผ่นเซลล์ตับแผ่นแรก "
@@ -255,18 +254,18 @@ def a_masld():
     p.append(S(3, G("pl", rect(196, 30, 228, 150, "lbad w3", 14)),
                ar(400, 30, 400, 8, "lbad w2", "ah-bad"), t(392, 20, "ALT รั่ว", "end xs b tbad"),
                t(16, 150, "lipotoxicity:", "xs b tbad"), t(16, 166, "oxidative stress", "xs"), t(16, 182, "→ เซลล์อักเสบ", "xs")))
-    xs = [16, 120, 224, 328]
+    xs = [12, 118, 224, 330]
     labs = ["ไขมันพอก", "MASH (NASH)", "พังผืด", "ตับแข็ง"]
     cls = ["ms", "bad", "ac", "bad"]
     p.append(t(220, 214, "การดำเนินโรค", "mid sm b"))
     for i, (x, lb, c) in enumerate(zip(xs, labs, cls)):
         k = i + 2
-        p.append(S(k, box(x, 226, 96, 34, c, lb, "sm b")))
+        p.append(S(k, box(x, 226, 92, 34, c, lb, "sm b")))
         if i:
-            p.append(S(k, ar(x - 8, 243, x - 1, 243, "ln w2", "ah")))
-    p.append(S(2, t(64, 282, "ALT ≥ AST", "mid xs b")))
-    p.append(S(3, t(168, 282, "ALT > AST", "mid xs b")))
-    p.append(S(4, t(272, 282, "stellate cell", "mid xs"), t(272, 298, "→ collagen", "mid xs")))
+            p.append(S(k, ar(x - 13, 243, x - 2, 243, "ln w2", "ah")))
+    p.append(S(2, t(58, 282, "ALT ≥ AST", "mid xs b")))
+    p.append(S(3, t(164, 282, "ALT > AST", "mid xs b")))
+    p.append(S(4, t(270, 282, "stellate cell", "mid xs"), t(270, 298, "→ collagen", "mid xs")))
     p.append(S(5, t(376, 282, "AST > ALT", "mid xs b tbad"), t(376, 298, "เกล็ดเลือดต่ำ", "mid xs")))
     p.append(S(5, rect(16, 314, 408, 60, "wa", 8),
                t(220, 334, "เคส 2570: ชาย 55 ปี อ้วน · AST 76 ALT 128 · ALP ปกติ", "mid xs b"),
@@ -303,22 +302,22 @@ def a_wilson():
          ar(234, 120, 234, 212, "lms w2 fl", "ah-ms"),
          box(170, 214, 128, 36, "ms", "น้ำดี → อุจจาระ", "sm b")]
     for i in range(3):
-        p.append(X(2, mover(3, "ruf", "2.4s", "M124 46 L234 70 L234 109 L234 212", "-%.1fs" % (0.8 * i))))
+        p.append(X(2, mover(3, "msf", "2.4s", "M124 46 L234 70 L234 109 L234 212", "-%.1fs" % (0.8 * i))))
     p.append(S(2, line(200, 94, 268, 124, "lbad w3"), line(200, 124, 268, 94, "lbad w3"),
-               t(234, 146, "AR · ยีน ATP7B", "mid xs b tbad"),
-               G("pl", circ(176, 62, 5, "ruf"), circ(196, 76, 5, "ruf"), circ(272, 60, 5, "ruf"), circ(292, 80, 5, "ruf"),
-                 circ(176, 170, 5, "ruf"), circ(200, 178, 5, "ruf"), circ(270, 170, 5, "ruf"), circ(292, 160, 5, "ruf")),
+               t(226, 146, "AR (ATP7B)", "end xs b tbad"),
+               G("pl", circ(176, 62, 5, "msf"), circ(196, 76, 5, "msf"), circ(272, 60, 5, "msf"), circ(292, 80, 5, "msf"),
+                 circ(176, 170, 5, "msf"), circ(200, 178, 5, "msf"), circ(270, 170, 5, "msf"), circ(292, 160, 5, "msf")),
                t(381, 108, "ceruloplasmin ↓", "mid xs b tbad"), t(381, 122, "6.5 mg/dL", "mid xs")))
     p.append(S(3, G("pl", rect(150, 16, 168, 176, "lbad w3", 14)),
                ar(318, 168, 336, 168, "lbad w3", "ah-bad"),
-               mover(4, "ruf", "1.8s", "M300 168 L400 168 L400 240"),
+               mover(4, "msf", "1.8s", "M300 168 L400 168 L400 240"),
                t(381, 150, "Cu อิสระ ↑", "mid xs b tbad"), t(381, 164, "(45 µg/dL)", "mid xs"),
                circ(356, 194, 9, "badf"), circ(380, 202, 9, "badf"), circ(404, 192, 9, "badf"),
                t(381, 230, "เม็ดเลือดแดงแตก", "mid xs b"), t(381, 244, "Coombs ลบ", "mid xs b"),
                t(381, 258, "Hb 6.8", "mid xs")))
     p.append(S(4, ar(381, 288, 381, 306, "lbad w2", "ah-bad"),
                box(312, 308, 112, 44, "wa", "ไต: Cu ปัสสาวะ\n680 µg/วัน", "", fs=11),
-               ar(336, 238, 134, 276, "lbad w2", "ah-bad"),
+               ar(338, 264, 134, 286, "lbad w2", "ah-bad"),
                box(16, 258, 116, 52, "ac", "ตา: KF ring\nสมอง: basal\nganglia", "", fs=11)))
     p.append(S(5, rect(140, 300, 166, 92, "ms", 8), t(223, 320, "ลายเซ็นใน LFT", "mid sm b"),
                t(223, 340, "AST/ALT 520/210 = 2.48 > 2.2", "mid xs b tbad"),
@@ -356,15 +355,16 @@ def a_choltime():
         p.append(X(2, mover(3.5, "msf", "2.4s", "M104 50 L340 50", "-%.1fs" % (0.8 * i))))
     # ขั้น 3 ท่อขยาย (วาดก่อนก้อนนิ่ว)
     p.append(S(3, rect(100, 34, 140, 32, "ms", 6), t(160, 88, "ท่อเหนือนิ่วขยาย", "mid xs b"),
-               t(377, 114, "อุจจาระซีด", "mid xs b tbad", ), t(58, 96, "ย้อนเข้าเลือด", "mid xs b tbad"),
-               ar(58, 74, 58, 82, "lbad w2", "ah-bad")))
+               t(58, 96, "ย้อนเข้าเลือด", "mid xs b tbad"), ar(58, 74, 58, 82, "lbad w2", "ah-bad")))
+    p.append(S(3, t(377, 114, "อุจจาระซีด", "mid xs b tbad"), x=4))
+    p.append(S(4, t(377, 130, "อุจจาระกลับสีเดิม", "mid xs b tok")))
     p.append(S(2, G("pl", circ(252, 50, 11, "muf")), x=4))
     p.append(S(2, t(252, 84, "นิ่วอุด", "mid xs b tbad"), x=4))
     p.append(S(4, t(270, 104, "ERCP เอานิ่วออก", "mid xs b tok"),
                mover(3.5, "msf", "2.4s", "M104 50 L340 50"), mover(3.5, "msf", "2.4s", "M104 50 L340 50", "-1.2s")))
     # กราฟ
-    p += [line(X0, Y0, 424, Y0, "ln w2"), line(X0, Y0, X0, 160, "ln w2"),
-          t(X0 - 4, 152, "ระดับ (สัมพัทธ์)", "xs mu"),
+    p += [line(X0, Y0, 424, Y0, "ln w2"), line(X0, Y0, X0, 170, "ln w2"),
+          t(X0 - 4, 164, "ระดับ (สัมพัทธ์)", "xs mu"),
           t(X0, Y0 + 16, "0", "mid xs"), t(P(3, 0)[0], Y0 + 16, "3", "mid xs"), t(P(7, 0)[0], Y0 + 16, "7", "mid xs"),
           t(P(14, 0)[0], Y0 + 16, "14 วัน", "end xs")]
     alt = [(0, .05), (.5, .5), (1, .85), (1.5, .6), (2, .4), (3, .22), (4, .13), (6, .07), (14, .05)]
@@ -372,10 +372,10 @@ def a_choltime():
     alp_dn = [(3, .6), (6, .42), (9, .3), (12, .21), (14, .17)]
     bil_up = [(0, .05), (1, .3), (2, .6), (3, .8)]
     bil_dn = [(3, .8), (4, .6), (5, .48), (7, .4), (10, .34), (14, .3)]
-    p.append(S(2, path(curve(alt), "lbad w3"), line(250, 136, 268, 136, "lbad w3"), t(272, 140, "ALT", "xs b tbad")))
+    p.append(S(2, path(curve(alt), "lbad w3"), line(250, 148, 268, 148, "lbad w3"), t(272, 152, "ALT", "xs b tbad")))
     p.append(S(3, path(curve(bil_up), "lms w3"), path(curve(alp_up), "lac w3"),
-               line(310, 136, 328, 136, "lms w3"), t(332, 140, "bilirubin", "xs b"),
-               line(150, 136, 168, 136, "lac w3"), t(172, 140, "ALP", "xs b tac")))
+               line(310, 148, 328, 148, "lms w3"), t(332, 152, "bilirubin", "xs b"),
+               line(150, 148, 168, 148, "lac w3"), t(172, 152, "ALP", "xs b tac")))
     p.append(S(4, line(P(3, 0)[0], Y0, P(3, 0)[0], 166, "lok w2 da"), t(P(3, 0)[0] + 4, 178, "ERCP", "xs b tok")))
     p.append(S(5, path(curve(bil_dn), "lms w3"), path(curve(alp_dn), "lac w3"),
                t(420, P(14, .3)[1] - 8, "bilirubin ค้าง (delta)", "end xs b"),
@@ -447,7 +447,7 @@ def a_vitk():
          t(251, 54, "γ-carboxylation", "mid xs"), t(251, 72, "II VII IX X", "mid sm b"), t(251, 90, "(+ V fibrinogen)", "mid xs"),
          box(340, 14, 84, 56, "bad", "endothelium\nสร้าง VIII", "", fs=11),
          X(2, ar(132, 40, 174, 40, "lok w2 fl", "ah-ok")), t(153, 32, "vit K", "mid xs b tok"),
-         ar(176, 96, 134, 70, "lms w2 fl", "ah-ms"), t(146, 98, "น้ำดี", "mid xs b"),
+         ar(176, 96, 134, 70, "lms w2 fl", "ah-ms"), t(118, 98, "น้ำดี", "mid xs b"),
          ar(251, 110, 251, 128, "ln w2", "ah"), pill(214, 130, "PT / INR", "ac", "sm b mid", 74)]
     p.append(S(2, ar(132, 40, 174, 40, "lbad w2 da", "ah-bad"), line(144, 72, 160, 90, "lbad w3"), line(160, 72, 144, 90, "lbad w3"),
                rect(10, 168, 136, 132, "ms", 8), t(78, 188, "ท่อน้ำดีอุดตัน", "mid sm b"),
@@ -491,7 +491,7 @@ def a_congest():
     p = [box(10, 56, 64, 48, "wa", "portal\nvein", "", fs=11),
          rect(80, 62, 182, 36, "sk", 4), t(171, 52, "sinusoid  zone 1 → 3", "mid xs b"),
          circ(284, 80, 18, "wa"), t(284, 84, "CV", "mid xs b"),
-         rect(302, 74, 40, 12, "wa", 2), t(322, 104, "hepatic v.", "mid xs"),
+         rect(302, 74, 40, 12, "wa", 2), t(340, 114, "hepatic v.", "end xs"),
          rect(344, 40, 18, 112, "wa", 4), t(353, 166, "IVC", "mid xs b"),
          box(368, 22, 62, 54, "ok", "หัวใจ\nห้องขวา", "", fs=11)]
     for i in range(3):
@@ -499,7 +499,7 @@ def a_congest():
     p.append(S(2, G("pl", rect(368, 22, 62, 54, "lbad w3", 8)),
                path("M368 60 L353 60 L353 80 L300 80", "lbad w3 fl"), t(399, 94, "CVP ↑", "mid xs b tbad"),
                G("pl", rect(206, 54, 58, 52, "lbad w3", 4)), t(232, 124, "zone 3 คั่ง", "mid xs b tbad")))
-    p.append(S(3, line(314, 72, 330, 88, "lbad w3"), line(330, 72, 314, 88, "lbad w3"), t(322, 124, "BCS", "mid xs b tbad"),
+    p.append(S(3, line(314, 72, 330, 88, "lbad w3"), line(330, 72, 314, 88, "lbad w3"), t(322, 134, "BCS", "mid xs b tbad"),
                line(130, 70, 146, 90, "lbad w3"), line(146, 70, 130, 90, "lbad w3"), t(138, 124, "SOS", "mid xs b tbad")))
     p.append(S(2, rect(10, 180, 136, 124, "bad", 8), t(78, 200, "หัวใจล้มเหลว (HF)", "mid sm b"),
                t(78, 220, "JVP สูง ตับโตกดเจ็บ", "mid xs"), t(78, 238, "hepatojugular reflux", "mid xs"),
@@ -542,10 +542,10 @@ def a_hbv():
     P = lambda m, v: (X0 + DX * m, Y0 - H * v)
     curve = lambda lst: pts([P(m, v) for m, v in lst])
     p = [line(X0, Y0, 420, Y0, "ln w2"), line(X0, Y0, X0, 56, "ln w2"),
-         line(X0, Y0 - H * .1, 420, Y0 - H * .1, "lmu da"), t(418, Y0 - H * .1 - 4, "ระดับที่ตรวจพบ", "end xs mu")]
+         line(X0, Y0 - H * .1, 420, Y0 - H * .1, "lmu da")]
     for m in range(0, 9):
         p.append(t(P(m, 0)[0], Y0 + 15, str(m), "mid xs"))
-    p.append(t(232, Y0 + 30, "เดือนหลังสัมผัสเชื้อ", "mid xs mu"))
+    p.append(t(232, Y0 + 30, "เดือนหลังสัมผัสเชื้อ · เส้นประ = ระดับที่ตรวจพบ", "mid xs mu"))
     p.append(S(3, rect(P(5.2, 0)[0], 56, P(6.0, 0)[0] - P(5.2, 0)[0], Y0 - 56, "ms", 2),
                t((P(5.2, 0)[0] + P(6.0, 0)[0]) / 2, 50, "core window", "mid xs b tms")))
     hbs = [(.8, 0), (1.5, .1), (2.3, .6), (3.3, .8), (4.3, .45), (5, .12), (5.4, 0)]
