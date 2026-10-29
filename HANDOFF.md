@@ -69,6 +69,10 @@ git push -u origin claude/internal-med-learning-web-j9ca6l
 > - **Version 30** (ก่อน 19 ต.ค. · session อื่น **publish โดยไม่ push**): เพิ่ม `section.anims` (ภาพเคลื่อนไหวกลไก `[[anim:key]]` เล่นทีละขั้น) และ `section.mnem` (กล่อง "หลักจำ") ให้คาบเดิมเกือบทุกคาบ + โค้ดใน index.html · **19 ต.ค. ดึงไฟล์จากเว็บเข้า repo แล้ว** (commit "Sync artifact with live learn") — สคริปต์ที่ใช้สร้าง anims/mnem ไม่อยู่ใน repo ถ้าต้องแก้ ให้แก้ข้อมูลใน data/*.json ตรง ๆ หรือหา branch ของ session นั้น
 > - **Version 31** (19 ต.ค.): cardio 36 Basic ECG (คาบใหม่) · ทับบน Version 30 โดยไม่แตะคาบอื่น
 > - **Version 33** (23 ต.ค.): คาบใหม่ chest **37 COPD (GOLD 2026)** · chest **Thoracentesis** (AL กลุ่ม 5) · nephro **22/10 Urethral catheterization** + เติมหัวข้อ/ข้อสอบจาก handout ใหม่ให้ neuro **9/10 LP** (+3 หัวข้อ) และ **21/10 ACS** (+4 หัวข้อ รวม delirium quiz) · แก้ตัวหนาที่ถูกตัดบรรทัดในคาบ 21/10 (check_lecture เหลือ 53 รายการ จาก 127) · ทับบน live 1792427940-73a8 (anims/mnem ของ session dashboard อยู่ครบ — ตรวจทุกหัวข้อก่อน publish)
+>   - **(29 ต.ค.) ผู้ใช้: "อัปเดต drive lecture ที่ยังไม่ได้ทำทั้งหมด · Image of chest ใส่รูปจริงในสไลด์ · เน้น animation, pathophysiology, mnemonic"**
+>     - chest **21 Image in chest** ← อ.พจนี (Potjanee Korrungruang) · พฤ. 1 ต.ค. · Drive `1sEw9AvXGfqwQECc7Znf8GSV_A9v6DtcE` (191 หน้า) — 18 หัวข้อ · 36 MCQ + คลังคาบ 21 ครบ 15 ข้อ · MEQ silicotuberculosis · OSCE นำเสนอ CXR · **ภาพจริงจากสไลด์ 79 ภาพ** (`artifact/img/chest/cxr-*.jpg` 4 MB · 34 เป็น spot quiz) · 16 anims · 8 mnem · `build_chestimg.py` `extract_chestimg.py` (ลบเส้นปากกา iPad ของผู้ใช้ก่อน crop) `figs_chest_img.py` `anims_chest_img.py` · **สไลด์ไม่มีส่วนโรคปอดจากการทำงาน** → หัวข้อ 17–18 จากตำรา/ILO 2022
+>     - gi **29/10 LFT** อัปเดตตามสไลด์ **LFT 2570** (Drive `1D1Bo2hk7n5cdGMQt1QCPRuoM89UpycUw`) ด้วย `update_lft2570.py` (idempotent · ไม่รัน build_lft.py) — +5 หัวข้อ (gi-lft-09..13) · +17 MCQ `GI-LFT7-MCQ-*` (ห้ามใช้ GI-LFT-MCQ-16+ เพราะชน Drill G06 ของ dashboard) · +11 anims `lft7-*` · +8 mnem · ข้อเดิม 90 ข้อไม่เปลี่ยน
+>     - "4th year Gastroenteritis and acute diarrhea (66)" = ไฟล์เดียวกับที่ทำคาบ Diarrhea แล้ว (v44)
 >   - **Version 39–42** (26 ต.ค. · session อื่น): หมายเหตุขอบเขต GRACE ใต้หัวข้อ cardio-ihd-09 + คำอธิบาย CAR-IHD-MCQ-13 (ตอบคอมเมนต์ผู้ใช้ "For only unstable angina") · index.html บนเว็บมีแพตช์เพิ่ม — ดึง index.html, data/cardio.json และ build_ihd.py เข้า repo แล้ว (ฐานงานถัดไป = v42 `1793000238-7fee`) · มี session อื่นกำลังทำคาบผิวหนัง skin infection (branch `claude/lecture-artifact-integration-5plhhc`) — ถ้าจะแตะ derm.json ให้เช็คก่อน
 >   - **Version 36–38** (25 ต.ค. · session Lecture Dashboard `claude/intelligent-brown-xj38me`): hemonc **9/11 Anemia** + **PBS** atlas (รูปจริง `img/pbs/*.jpg` อยู่บนเว็บเท่านั้น ไม่อยู่ใน repo — publish ครั้งต่อไปอย่าส่ง `img/` เป็น null) · `[[img:key]]` + `section.imgs` · ปุ่ม **"ปิดเพื่อทวน"** เหนือทุกตาราง (ตอบคอมเมนต์ผู้ใช้ 25 ต.ค.) — ดึงเข้า repo แล้ว (66fa9d9) · ผมทำโหมดปิดป้ายสำหรับ **ภาพ SVG/ภาพเคลื่อนไหว** ไว้ใน commit 7947979 แต่ไม่ได้ publish (ซ้ำกับของตาราง) — ถ้าผู้ใช้อยากได้กับภาพ ให้ดึงบล็อก `clz*` จาก commit นั้น ตัดส่วนตารางออก
 >   - **Version 35** (24 ต.ค.): **ชุดใหม่ Derm** (`data/derm.json` + entry ใน index.json สีเดียวกับ Drill) คาบ **Derm1** Common skin diseases ← อ.ภูริต (Purit Pureesrisak) สไลด์ปี 2566 — ไฟล์ Drive "Lec นศพ ปี 4 (66).pdf" `1PWIdpHHF6dsoLSsPoJhJgsdE9mJWTzH8` (118 MB สแกนจาก iPhone · อ่านจากภาพทุกหน้า) · `build_derm.py` + `figs_derm.py` · โน้ต `slides/derm66_notes.md` (มีลายมือ ✍️)
@@ -400,3 +404,15 @@ thread `0a0d34fd` แล้ว (26 ต.ค.) **รอคำตอบก่อน
   `white-space:normal;text-align:left;max-width:100%`
 - สีป้ายกลุ่ม 2/3 ใช้ตัวแปร `--ok/--ok-soft` และ `--miss/--miss-soft` ที่มีอยู่แล้ว
   จึงถูกต้องทั้งโหมดสว่างและมืดโดยอัตโนมัติ
+
+---
+
+## Ward Drill — ส่งข้อจากบทเรียนเข้า drill (session bold-euler)
+artifact: https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (capabilities db+user · หน้าเดียว · publish ห้ามส่ง capabilities ว่าง)
+ขั้นตอน (3 ขั้น):
+1. `python3 artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` — JOBS = คาบ learn → lec ของ drill (prefix ของ id ข้อใหม่) · `LEC_FIX` คงวันที่ที่ dashboard แก้ · แพตช์ template (ลิงก์ตรง, บันทึกในบัญชี, สุ่มข้อสอบ)
+2. `python3 build.py --no-pdf` ในโฟลเดอร์นั้น
+3. `python3 dashboard/drill_tool.py merge <drill.html> dashboard/drill_sets <out.html>` (ชุดรายคาบของ session dashboard) → publish `<out.html>` · ตรวจก่อน publish ว่าข้อเดิมไม่เปลี่ยน (โหลดด้วย `drill_tool.load`)
+- lec ที่มีเฉพาะใน drill_sets ของ dashboard (เช่น G06) ต้องใส่ newlec ใน JOB ไม่งั้น build.py ปฏิเสธ
+- เวอร์ชัน: v12 (14 ต.ค.) → v13 บัญชี+สุ่มข้อสอบ → v14 cardio 36 → v16 chest 37/THO, nephro CATH, neuro LP/ACS → v17 nephro PHY1/PHY2 → v18 derm D03 → **v19 (29 ต.ค.) chest 21 CH-IMG + gi G06 GI-LFT7**
+
