@@ -60,8 +60,8 @@ def rifle_kdigo():
 
 # ═══════════════════════════════════════ 3 UA หน้าตาแบบใด — แผนที่ตะกอนปัสสาวะ
 def sediment():
-    rows = [("Bland (ไม่มีอะไร)", "pre-renal · post-renal · vascular", "สไลด์: ทุกกลุ่ม \"typical\"", "sk"),
-            ("Hyaline cast", "ปกติ/ขาดน้ำ (Tamm–Horsfall ล้วน)", "pre-renal", "sk"),
+    rows = [("Bland sediment", "ไม่มี cast/เซลล์", "pre / post / vascular", "sk"),
+            ("Hyaline cast", "THP ล้วน", "pre-renal / ปกติ", "sk"),
             ("Muddy brown granular\n+ RTE cells", "เซลล์ท่อไตหลุดลอก", "ATN", "ms"),
             ("Dysmorphic RBC\n+ RBC cast", "เลือดออกจาก glomerulus", "GN / RPGN", "bad"),
             ("WBC cast · sterile pyuria\n± eosinophiluria", "อักเสบใน interstitium", "AIN (pyelo)", "wa"),
@@ -212,9 +212,9 @@ def fena():
 
 # ═══════════════════════════════════════ 10 Hyperkalemia — ทำ 3 ขั้น
 def hyperk_tx():
-    cols = [("1 ปกป้องหัวใจ", "bad", ["Ca gluconate 10%", "10 mL (1 g) IV 2–3 นาที", "เริ่ม 1–3 นาที อยู่ 30–60 นาที", "ซ้ำได้ถ้า ECG ยังผิด"]),
-            ("2 ดัน K เข้าเซลล์", "ms", ["RI 10 U IV + 50% glucose", "50 mL (✍️ glucose > 250", "→ ให้ RI อย่างเดียว)", "salbutamol พ่น · NaHCO3*"]),
-            ("3 เอา K ออก", "ok", ["loop diuretic (ถ้ายังมีปัสสาวะ)", "Kalimate/Dekales (ช้า)", "Lokelma (~1 ชม.)", "dialysis ถ้าดื้อยา"])]
+    cols = [("1 ปกป้องหัวใจ", "bad", ["Ca gluconate 10%", "10 mL (1 g) IV", "ฉีด 2–3 นาที", "ออกฤทธิ์ 1–3 นาที", "ซ้ำได้ถ้า ECG ยังผิด"]),
+            ("2 ดัน K เข้าเซลล์", "ms", ["RI 10 U IV +", "50% glucose 50 mL", "✍️ glucose > 250", "→ RI อย่างเดียว", "salbutamol · NaHCO3*"]),
+            ("3 เอา K ออก", "ok", ["loop diuretic", "Kalimate/Dekales", "(ช้า หลายชม.)", "Lokelma (~1 ชม.)", "dialysis ถ้าดื้อยา"])]
     out = []
     x = 10
     for h, c, ls in cols:

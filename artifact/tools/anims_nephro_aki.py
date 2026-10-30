@@ -44,22 +44,25 @@ def note(y, s1, s2=None, c="ac", h=None):
 
 # ───────────────────────── 1 · KDIGO: GFR ตกทันที แต่ Cr ค่อย ๆ ขึ้น
 def a_crlag():
-    p = [line(50, 30, 50, 230, "ln w2"), line(50, 230, 430, 230, "ln w2"),
-         t(44, 26, "%", "xs end mu"), t(430, 248, "วัน 0 · 1 · 2 · 3 · 4 · 5", "xs end mu"),
-         t(58, 44, "GFR", "sm b twa"),
-         # GFR line: 100% then drop to 30% at day 0.5
-         path("M52 60 L110 60", "lwa w3")]
-    p.append(S(2, path("M110 60 L112 180 L428 180", "lwa w3"), t(118, 196, "GFR ตกทันที → 30%", "xs b twa")))
-    # creatinine curve: x 110 -> 428, rising to 3.3x
-    p.append(S(3, path("M52 214 L110 214 C170 200 220 150 280 112 C340 80 390 70 428 66", "lbad w3"),
-               t(300, 100, "Cr ค่อย ๆ ขึ้น", "xs b tbad"), t(300, 114, "(สะสมทีละวัน)", "xs tbad")))
-    for y, lab, c in ((172, "×1.5", "tms"), (140, "×2", "tbad"), (106, "×3", "tbad")):
-        p.append(S(4, line(52, y, 428, y, "lmu da"), t(56, y - 3, lab, "xs b " + c)))
-    p.append(S(4, t(214, 168, "วันที่ ~1", "xs mid"), t(240, 136, "วันที่ ~2", "xs mid"), t(318, 102, "~3–4", "xs mid")))
-    p.append(S(5, rect(122, 36, 180, 40, "ac", 7), t(212, 52, "ปัสสาวะลดตั้งแต่ชั่วโมงแรก ๆ", "xs b mid"),
-               t(212, 68, "✍️ biomarker / cystatin C เร็วกว่า Cr", "xs mid")))
-    p.append(note(258, "Cr เป็น \"สัญญาณที่มาช้า\" ของ GFR", "stage ที่เห็นวันแรกอาจต่ำกว่าความจริง → ติดตาม Cr + UO ทุกวัน"))
-    return SVG(440, 306, "ภาพเคลื่อนไหว: GFR ลดลงทันทีเมื่อไตบาดเจ็บ แต่ creatinine ค่อย ๆ สูงขึ้นทีละวัน "
+    import math
+    X = lambda d: 110 + 60 * d           # วันที่ → x
+    Y = lambda r: 230 - 36 * (r - 1)     # Cr (เท่าของ baseline) → y (กราฟล่าง)
+    cr = lambda d: 1 + (10 / 3 - 1) * (1 - math.exp(-0.7 * d))   # GFR เหลือ 30% → steady state ≈ 3.3 เท่า
+    pts = " ".join("L%.1f %.1f" % (X(d / 10), Y(cr(d / 10))) for d in range(0, 53))
+    p = [line(50, 34, 50, 112, "ln w2"), line(50, 112, 430, 112, "lmu"), t(56, 30, "GFR", "sm b twa"),
+         line(50, 128, 50, 240, "ln w2"), line(50, 240, 430, 240, "ln w2"), t(56, 140, "Cr", "sm b tbad")]
+    p += [t(X(d), 255, str(d), "xs mid mu") for d in range(6)] + [t(430, 268, "วันหลังไตบาดเจ็บ", "xs end mu")]
+    p.append(path("M52 50 L110 50", "lwa w3"))
+    p.append(S(2, path("M110 50 L112 92 L428 92", "lwa w3"), t(270, 107, "GFR ตกทันที เหลือ 30%", "xs b mid twa")))
+    p.append(S(3, path("M52 230 L110 230 " + pts, "lbad w3"), t(420, 138, "Cr ค่อย ๆ ขึ้นทีละวัน → ~3.3 เท่า", "xs b end tbad")))
+    for r, lab, c in ((1.5, "×1.5", "tms"), (2, "×2", "tbad"), (3, "×3", "tbad")):
+        d = -math.log(1 - (r - 1) / (10 / 3 - 1)) / 0.7
+        p.append(S(4, line(52, Y(r), 428, Y(r), "lmu da"), t(56, Y(r) - 3, lab, "xs b " + c), circ(X(d), Y(r), 4, "badf")))
+    p.append(S(4, t(426, 218, "stage ข้ามทีละวัน", "xs b end")))
+    p.append(S(5, rect(196, 34, 230, 40, "ac", 7), t(311, 50, "ปัสสาวะลดตั้งแต่ชั่วโมงแรก ๆ", "xs b mid"),
+               t(311, 66, "✍️ biomarker / cystatin C เร็วกว่า Cr", "xs mid")))
+    p.append(note(276, "Cr เป็น \"สัญญาณที่มาช้า\" ของ GFR", "stage ที่เห็นวันแรกอาจต่ำกว่าความจริง → ติดตาม Cr + UO ทุกวัน"))
+    return SVG(440, 324, "ภาพเคลื่อนไหว: GFR ลดลงทันทีเมื่อไตบาดเจ็บ แต่ creatinine ค่อย ๆ สูงขึ้นทีละวัน "
                "จึงข้ามเกณฑ์ KDIGO ช้ากว่าการบาดเจ็บจริง ปัสสาวะและ biomarker เปลี่ยนเร็วกว่า", *p)
 
 
@@ -89,11 +92,11 @@ def a_where():
         path("M220 138 L220 200", "lwa w5 fl"), ell(220, 228, 40, 26, "wa"), t(220, 232, "กระเพาะ", "xs b mid"),
         path("M220 254 L220 288", "lwa w3 fl"), t(232, 284, "ท่อปัสสาวะ", "xs mu"),
     ]
-    p.append(S(2, G("pl", circ(136, 70, 22, "ms")), t(136, 118, "PRE-RENAL", "sm b mid tms"),
+    p.append(S(2, G("pl", circ(136, 70, 22, "lms w3")), t(136, 118, "PRE-RENAL", "sm b mid tms"),
                t(136, 132, "เลือดไปไตไม่พอ", "xs mid")))
-    p.append(S(3, G("pl", circ(220, 80, 30, "bad")), rect(276, 50, 150, 58, "bad", 8),
+    p.append(S(3, G("pl", ell(220, 80, 52, 64, "lbad w3")), rect(276, 50, 150, 58, "bad", 8),
                t(351, 68, "INTRINSIC (4 กลุ่ม)", "xs b mid"), t(351, 84, "vascular · GN", "xs mid"), t(351, 98, "AIN · ATN", "xs mid")))
-    p.append(S(4, G("pl", circ(220, 200, 16, "ms")), rect(276, 196, 150, 58, "wa", 8),
+    p.append(S(4, G("pl", circ(220, 196, 14, "lms w3")), rect(276, 196, 150, 58, "wa", 8),
                t(351, 214, "POST-RENAL", "xs b mid"), t(351, 230, "อุดทั้งสองข้าง", "xs mid"), t(351, 244, "(หรือไตข้างเดียว)", "xs mid")))
     p.append(S(5, note(300, "หาจาก \"ง่ายและแก้ได้เร็ว\" ก่อน", "pre-renal (ให้น้ำ) · post-renal (ระบาย) → แล้วจึงไล่ intrinsic")))
     return SVG(440, 348, "ภาพเคลื่อนไหว: ทางเดินจากหัวใจสู่ไตสู่กระเพาะปัสสาวะ แสดงตำแหน่งของ AKI แบบ pre-renal intrinsic และ post-renal", *p)
@@ -116,23 +119,23 @@ WHERE_STEPS = [
 # ───────────────────────── 3 · Afferent/efferent — NSAID · ACEi · triple whammy
 def a_glom():
     p = [t(220, 20, "glomerulus: แรงดันกรอง (P_GC) กำหนด GFR", "sm b mid"),
-         path("M20 120 L150 120", "lbad w5 fl"), t(60, 108, "afferent", "xs mu"),
+         path("M20 120 L150 120", "lbad w5 fl"), t(60, 110, "afferent", "xs mu"),
          circ(200, 120, 48, "bad"), t(200, 116, "P_GC", "sm b mid"),
-         path("M248 120 L410 120", "lbad w3 fl"), t(330, 108, "efferent", "xs mu"),
+         path("M248 120 L410 120", "lbad w3 fl"), t(330, 110, "efferent", "xs mu"),
          path("M200 168 L200 210", "lwa w5 fl"), t(212, 204, "GFR", "sm b twa")]
     # normal compensation
     p.append(S(2, rect(14, 146, 132, 38, "ok", 7), t(80, 162, "PG ขยาย afferent", "xs b mid"), t(80, 176, "(prostaglandin)", "xs mid"),
                rect(262, 146, 150, 38, "ok", 7), t(337, 162, "AngII หด efferent", "xs b mid"), t(337, 176, "พยุง P_GC", "xs mid"),
                t(220, 240, "เลือดน้อย แต่ GFR ยังพอ (autoregulation)", "xs b mid tok"), x=3))
     # NSAID
-    p.append(S(3, rect(70, 112, 60, 16, "ms", 3), t(100, 100, "NSAID: afferent หด", "xs b mid tbad"),
-               ar(100, 136, 100, 150, "lbad", "ah-bad")))
+    p.append(S(3, rect(70, 112, 60, 16, "ms", 3), t(92, 86, "NSAID: afferent หด", "xs b mid tbad"),
+               ar(100, 92, 100, 108, "lbad", "ah-bad")))
     # ACEi
-    p.append(S(4, rect(290, 104, 90, 32, "wa", 6), t(335, 98, "ACEi/ARB: efferent คลาย", "xs b mid tbad")))
+    p.append(S(4, rect(290, 104, 90, 32, "wa", 6), t(340, 86, "ACEi/ARB: efferent คลาย", "xs b mid tbad")))
     p.append(S(5, rect(14, 226, 412, 56, "bad", 8),
                t(220, 246, "Triple whammy: ขาดน้ำ/diuretic + NSAID + ACEi/ARB", "sm b mid"),
                t(220, 266, "เข้าน้อย (afferent) + ออกง่าย (efferent) → P_GC ตก → GFR ตก", "xs mid")))
-    p.append(S(5, G("pl", circ(200, 120, 20, "ms")), t(200, 124, "↓", "lg b mid")))
+    p.append(S(5, G("pl", circ(200, 120, 54, "lbad w3")), t(200, 138, "ตก", "sm b mid tbad")))
     return SVG(440, 292, "ภาพเคลื่อนไหว: ในภาวะเลือดไปไตน้อย prostaglandin ขยายหลอดเลือดขาเข้า angiotensin II หดหลอดเลือดขาออกเพื่อพยุงแรงดันกรอง "
                "NSAID ทำให้ขาเข้าหด ACE inhibitor ทำให้ขาออกคลาย เมื่อรวมกับการขาดน้ำแรงดันกรองและ GFR จึงตก", *p)
 
@@ -156,9 +159,9 @@ def a_crs():
     p = [t(220, 20, "แรงดันกรองสุทธิ = แรงดันเข้า − แรงดันออก", "sm b mid"),
          ell(90, 120, 54, 48, "bad"), t(90, 116, "หัวใจ", "sm b mid"), t(90, 132, "EF ต่ำ", "xs mid"),
          ell(310, 120, 52, 62, "ac"), t(310, 116, "ไต", "sm b mid"), t(310, 132, "(มีแคปซูล)", "xs mid"),
-         path("M144 104 L258 104", "lbad w3 fl"), t(200, 96, "เลือดแดงออก", "xs mid mu"),
+         path("M144 106 L258 106", "lbad w3 fl"), t(200, 94, "เลือดแดงออก", "xs mid mu"),
          path("M258 140 L144 140", "lwa w3 fl"), t(200, 156, "เลือดดำกลับ", "xs mid mu")]
-    p.append(S(2, rect(140, 98, 120, 12, "msf", 3), t(200, 84, "forward: CO ลด", "xs b mid tms")))
+    p.append(S(2, rect(140, 101, 120, 10, "msf", 3), t(200, 80, "forward: CO ลด", "xs b mid tms")))
     p.append(S(3, rect(140, 134, 120, 14, "waf", 3), t(200, 176, "backward: CVP สูง (JVP 12)", "xs b mid twa"),
                G("pl", ell(310, 120, 60, 70, "lwa w3"))))
     p.append(S(4, rect(16, 196, 408, 54, "bad", 8),
@@ -223,11 +226,11 @@ def a_rbccast():
     p = [t(220, 20, "GBM ที่อักเสบ → RBC หลุดเข้าท่อไต", "sm b mid"),
          circ(100, 110, 60, "bad"), t(100, 64, "glomerulus", "xs mid mu"),
          path("M160 110 L420 110", "lwa w5"), path("M160 150 L420 150", "lwa w5"),
-         t(290, 174, "tubule", "xs mid mu")]
+         t(412, 102, "tubule", "xs end mu")]
     p.append(S(2, path("M140 80 l14 6 l-6 10 z", "ms"), t(100, 186, "ผนังฉีก/crescent", "xs b mid tms"),
                mover(6, "badf", "3s", "M120 100 L160 128 L300 130")))
     p.append(S(3, circ(220, 130, 7, "lbad w2"), circ(244, 128, 7, "lbad w2 da"),
-               t(232, 100, "dysmorphic RBC (acanthocyte)", "xs b mid tbad")))
+               t(232, 172, "dysmorphic RBC (acanthocyte)", "xs b mid tbad")))
     p.append(S(4, rect(300, 116, 112, 28, "ms", 12), circ(320, 130, 6, "badf"), circ(340, 130, 6, "badf"), circ(360, 130, 6, "badf"), circ(380, 130, 6, "badf"),
                t(356, 196, "Tamm–Horsfall หุ้ม = RBC cast", "xs b mid")))
     p.append(S(5, note(214, "RBC cast = เลือดมาจาก glomerulus แน่นอน", "→ GN / RPGN · ส่ง serology + เจาะไตเร็ว")))
@@ -253,12 +256,12 @@ def a_ain():
     p = [t(220, 20, "Acute interstitial nephritis — ปฏิกิริยาภูมิไวเกินต่อยา", "sm b mid"),
          rect(30, 50, 380, 40, "wa", 20), t(220, 75, "tubule", "xs mid mu"),
          rect(30, 160, 380, 40, "wa", 20), t(220, 185, "tubule", "xs mid mu"),
-         t(220, 128, "interstitium", "xs mid mu")]
+         t(404, 104, "interstitium", "xs end mu")]
     p.append(S(2, circ(70, 125, 8, "ms"), t(70, 129, "D", "xs b mid"), t(70, 150, "ยา = hapten", "xs mid tms"),
                t(130, 126, "→ จับโปรตีนท่อไต", "xs")))
-    p.append(S(3, *[circ(180 + 26 * i, 120 + (8 if i % 2 else -6), 9, "ac") for i in range(6)],
-               t(260, 150, "T cell · eosinophil แทรก", "xs b mid tac")))
-    p.append(S(4, G("pl", rect(30, 92, 380, 66, "lms w2 da", 6)), t(400, 108, "บวม", "xs b end tms"),
+    p.append(S(3, *[circ(244 + 26 * i, 120 + (8 if i % 2 else -6), 9, "ac") for i in range(6)],
+               t(310, 150, "T cell · eosinophil แทรก", "xs b mid tac")))
+    p.append(S(4, G("pl", rect(30, 92, 380, 66, "lms w2 da", 6)), t(402, 152, "บวม", "xs b end tms"),
                mover(5, "acf", "2.6s", "M250 96 L250 70 L400 70")))
     p.append(S(5, rect(14, 210, 412, 64, "bad", 8),
                t(220, 228, "ปัสสาวะ: WBC, WBC cast, eosinophiluria", "xs b mid"),
@@ -298,9 +301,9 @@ def a_atn():
                t(260, 168, "เซลล์หลุดลอก (เห็น RTE cell)", "xs b mid tbad")))
     p.append(S(4, rect(290, 100, 70, 34, "ms", 10), t(325, 121, "cast", "xs b mid"),
                t(325, 186, "cast อุดท่อ → แรงดันย้อน", "xs b mid tms")))
-    p.append(S(5, ar(230, 136, 230, 176, "lwa w2", "ah-wa"), ar(200, 96, 200, 62, "lwa w2", "ah-wa"),
-               t(150, 200, "น้ำกรองรั่วกลับ (backleak)", "xs b mid twa")))
-    p.append(S(6, G("pl", rect(20, 100, 46, 18, "ms", 4)), t(120, 230, "Na ถึง macula densa มาก → TGF หด afferent", "xs b mid")))
+    p.append(S(5, ar(160, 148, 160, 186, "lwa w2", "ah-wa"), ar(160, 84, 160, 50, "lwa w2", "ah-wa"),
+               t(160, 202, "น้ำกรองรั่วกลับ (backleak)", "xs b mid twa")))
+    p.append(S(6, G("pl", rect(84, 136, 22, 14, "ms", 4)), t(150, 230, "Na ถึง macula densa (กล่องเหลือง) มาก → TGF หด afferent", "xs b mid")))
     p.append(S(6, rect(14, 244, 412, 50, "bad", 8),
                t(220, 263, "GFR ตก 3 ทาง: อุด · รั่วกลับ · afferent หด", "sm b mid"),
                t(220, 282, "ปัสสาวะ: FENa > 2% · Uosm ~300 · muddy brown granular cast", "xs mid")))
@@ -330,8 +333,8 @@ def a_contrast():
          ell(310, 110, 92, 66, "ac"), t(310, 82, "ไต", "sm b mid"),
          ell(310, 126, 56, 30, "sk"), t(310, 130, "medulla", "xs mid")]
     p.append(S(2, path("M140 60 L218 92", "lwa w3 fl", "ah-wa"), t(170, 106, "หลอดเลือดหด", "xs b mid tbad"),
-               G("pl", ell(310, 126, 56, 30, "lbad w2")), t(310, 172, "medulla ขาด O2", "xs b mid tbad")))
-    p.append(S(3, rect(230, 196, 160, 30, "bad", 8), t(310, 215, "พิษตรงต่อเซลล์ PT", "xs b mid")))
+               G("pl", ell(310, 126, 56, 30, "lbad w2")), t(310, 192, "medulla ขาด O2", "xs b mid tbad")))
+    p.append(S(3, rect(110, 196, 110, 30, "bad", 8), t(165, 215, "พิษตรงต่อเซลล์ PT", "xs b mid")))
     p.append(S(4, rect(14, 236, 200, 66, "ms", 8), t(114, 254, "เสี่ยงเมื่อ", "sm b mid"),
                t(114, 272, "eGFR < 30 (IV) · AKI อยู่แล้ว", "xs mid"), t(114, 288, "ขาดน้ำ · ยา nephrotoxic", "xs mid"),
                rect(226, 236, 200, 66, "ok", 8), t(326, 254, "ป้องกัน", "sm b mid"),
@@ -425,11 +428,12 @@ def a_post():
          t(110, 94, "ไต", "xs b mid"), t(330, 94, "ไต", "xs b mid"),
          path("M110 142 C120 190 190 210 206 226", "lwa w3"), path("M330 142 C320 190 250 210 234 226", "lwa w3"),
          ell(220, 250, 46, 30, "wa"), t(220, 254, "กระเพาะ", "xs b mid"),
-         path("M220 280 L220 306", "lwa w3"), t(234, 302, "urethra", "xs mu")]
+         path("M220 280 L220 306", "lwa w3"), t(202, 304, "urethra", "xs end mu")]
     p.append(S(2, G("pl", rect(206, 286, 28, 14, "bad", 4)), t(290, 296, "BPH/stricture อุด", "xs b tbad")))
     p.append(S(3, ell(220, 250, 62, 40, "lwa w3 da"), t(320, 248, "กระเพาะโป่ง", "xs b twa")))
     p.append(S(4, path("M110 142 C120 190 190 210 206 226", "lwa w5"), path("M330 142 C320 190 250 210 234 226", "lwa w5"),
-               ell(110, 90, 22, 30, "waf"), ell(330, 90, 22, 30, "waf"), t(220, 70, "hydronephrosis", "xs b mid twa"),
+               ell(110, 90, 26, 34, "wa"), ell(330, 90, 26, 34, "wa"), t(110, 94, "ไต", "xs b mid"), t(330, 94, "ไต", "xs b mid"),
+               t(220, 70, "hydronephrosis", "xs b mid twa"),
                t(220, 86, "ทั้งสองข้าง", "xs mid twa")))
     p.append(S(5, rect(10, 316, 420, 44, "bad", 8), t(220, 334, "แรงดันใน Bowman's space ↑ → แรงดันกรองสุทธิ ↓", "xs b mid"),
                t(220, 350, "+ หลอดเลือดไตหด (AngII, TXA2) → GFR ↓", "xs mid")))
@@ -462,8 +466,8 @@ def a_indices():
          path("M30 70 L194 70 L194 110 L30 110", "lwa w3"), path("M246 70 L410 70 L410 110 L246 110", "lwa w3")]
     p.append(S(2, *[rect(40 + 30 * i, 58, 22, 12, "ok", 2) for i in range(5)],
                *[rect(256 + 30 * i, 58, 22, 12, "bad" if i % 2 else "ms", 2) for i in range(5)],
-               t(112, 132, "เซลล์ทำงานครบ", "xs mid"), t(328, 132, "เซลล์ตาย/หลุด", "xs mid")))
-    p.append(S(3, ar(112, 92, 112, 154, "lok w3", "ah-ok"), t(112, 168, "RAAS ดูด Na คืน", "xs b mid tok"),
+               t(90, 132, "เซลล์ทำงานครบ", "xs mid"), t(328, 132, "เซลล์ตาย/หลุด", "xs mid")))
+    p.append(S(3, ar(176, 92, 176, 150, "lok w3", "ah-ok"), t(112, 168, "RAAS ดูด Na คืน", "xs b mid tok"),
                t(112, 184, "U Na < 20 · FENa < 1%", "xs b mid"),
                ar(328, 92, 380, 92, "lbad w3", "ah-bad"), t(328, 168, "Na หลุดออกไป", "xs b mid tbad"),
                t(328, 184, "U Na > 30 · FENa > 1–2%", "xs b mid")))
@@ -495,18 +499,18 @@ IND_STEPS = [
 def a_hyperk():
     p = [t(220, 20, "K นอกเซลล์สูง → ไฟฟ้าหัวใจผิด", "sm b mid"),
          line(30, 60, 30, 170, "ln"), t(36, 64, "0 mV", "xs mu"), t(36, 168, "−90", "xs mu"),
-         line(30, 150, 200, 150, "lok w3"), t(120, 144, "RMP ปกติ −90", "xs b mid tok"),
+         line(30, 150, 200, 150, "lok w3"), t(130, 164, "RMP ปกติ −90", "xs b mid tok"),
          line(30, 110, 200, 110, "lms da"), t(120, 104, "threshold", "xs mid tms")]
-    p.append(S(2, line(30, 126, 200, 126, "lbad w3"), t(120, 140, "RMP ยกขึ้น (−75)", "xs b mid tbad")))
+    p.append(S(2, line(30, 126, 200, 126, "lbad w3"), t(130, 122, "RMP ยกขึ้น (−75)", "xs b mid tbad")))
     # ECG traces x 230..430
     p.append(S(3, path("M230 100 L262 100 L266 96 L270 100 L282 100 L286 70 L290 110 L294 100 L306 100 L318 52 L330 100 L350 100", "lbad w2"),
                t(330, 50, "T สูงแหลม", "xs b tbad")))
     p.append(S(4, path("M230 170 L262 170 L282 170 L290 140 L304 186 L312 170 L326 132 L342 170 L360 170", "lbad w2"),
                t(330, 128, "P หาย · PR ยาว · QRS กว้าง", "xs b mid tbad"),
-               t(120, 196, "Na channel inactivate", "xs b mid"), t(120, 212, "→ นำไฟฟ้าช้า", "xs mid")))
-    p.append(S(5, path("M230 240 C250 200 270 200 290 240 C310 280 330 280 350 240 C370 200 390 200 410 240", "lbad w3"),
-               t(320, 272, "sine wave → VF/asystole", "xs b mid tbad")))
-    p.append(S(6, line(30, 96, 200, 96, "lac w3"), t(120, 90, "Ca ยก threshold", "xs b mid tac"),
+               t(120, 200, "Na channel inactivate", "xs b mid"), t(120, 216, "→ นำไฟฟ้าช้า", "xs mid")))
+    p.append(S(5, path("M230 242 C250 212 270 212 290 242 C310 272 330 272 350 242 C370 212 390 212 410 242", "lbad w3"),
+               t(320, 204, "sine wave → VF/asystole", "xs b mid tbad")))
+    p.append(S(6, line(30, 92, 200, 92, "lac w3"), t(120, 86, "Ca ยก threshold", "xs b mid tac"),
                rect(10, 282, 420, 44, "ok", 8), t(220, 300, "Ca gluconate ทำให้ระยะ threshold–RMP กลับมา", "xs b mid"),
                t(220, 316, "แต่ไม่ลด K → ต้อง shift + remove ต่อ", "xs mid")))
     return SVG(440, 334, "ภาพเคลื่อนไหว: โพแทสเซียมนอกเซลล์สูงทำให้ resting membrane potential สูงขึ้น ECG เปลี่ยนจาก T สูงแหลม เป็น P หาย QRS กว้าง จนเป็น sine wave แคลเซียมยก threshold ปกป้องหัวใจ", *p)
