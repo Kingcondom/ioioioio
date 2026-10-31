@@ -55,7 +55,16 @@ h1,h2,h3,h4{font-family:var(--sans);font-weight:700;margin:0;text-wrap:balance;l
 a{color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:var(--r-sm)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
-.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+/* ซูมทั้งหน้าตามความกว้างจอ (ผู้ใช้ขอ 31 ต.ค. — "มันโล่ง")
+   ขยายทุกอย่างพร้อมกันทั้งเพดานความกว้างและตัวอักษร จำนวนตัวอักษรต่อบรรทัดจึงเท่าเดิม
+   ต่างจากการดึงความกว้างอย่างเดียวซึ่งทำให้บรรทัดยาวจนอ่านยาก */
+:root{--z:1}
+@media (min-width:1500px){:root{--z:1.10}}
+@media (min-width:1750px){:root{--z:1.20}}
+@media (min-width:2100px){:root{--z:1.32}}
+@media (min-width:2500px){:root{--z:1.45}}
+body{zoom:var(--z)}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:16px}
 @media (min-width:640px){.wrap{padding-inline:22px}}
 
 /* ---------- masthead ---------- */
@@ -84,12 +93,16 @@ a{color:var(--accent-ink)}
 /* ---------- layout ---------- */
 .cols{display:grid;grid-template-columns:290px minmax(0,1fr);gap:26px;padding-block:22px 60px;align-items:start}
 @media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
-aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
+aside{position:sticky;top:66px;max-height:calc((100vh - 84px) / var(--z));overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
 /* ปุ่มซ่อนแถบเมนู — พับเหลือแถวเดียว (จำไว้ในเครื่องนี้) */
 .mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
 .mast.min .wrap{padding-block:8px}
 #mastBtn{padding:6px 13px}
+/* ซ่อนแถบสารบัญ "หัวข้อทั้งหมด" แล้วให้เนื้อหาขยายเต็มความกว้างจอ (ผู้ใช้ขอ 31 ต.ค.) — จำไว้ในเครื่องนี้ */
+#asideBtn{padding:6px 13px;order:-1}
+body.noaside .cols{grid-template-columns:minmax(0,1fr)}body.noaside .cols>aside{display:none}
+body.noaside .wrap{max-width:none}
 /* ปุ่มอยู่แถวเดียวกับชื่อเรื่องทุกความกว้าง ไม่ให้กินแถวเพิ่มบนจอกว้าง */
 .brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
@@ -329,6 +342,7 @@ table.tq td.cv.op{background:var(--ok-soft)}
     <div class="ring" id="ring"></div>
     <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
+    <button class="btn" id="asideBtn" aria-controls="outline" aria-expanded="true" title="ซ่อนแถบสารบัญ ให้เนื้อหาเต็มจอ">ซ่อนสารบัญ ◂</button>
     <button class="btn" id="mastBtn" aria-expanded="true" title="ซ่อนแถบเมนู">ซ่อนเมนู ▴</button>
   </div>
 </header>
@@ -1238,8 +1252,20 @@ function setMast(min){
   b.textContent=min?'เมนู ▾':'ซ่อนเมนู ▴';b.title=min?'แสดงแถบเมนู':'ซ่อนแถบเมนู';
 }
 try{setMast(localStorage.getItem('med421-learn-mast')==='min');}catch(e){}
+function setAside(off){
+  document.body.classList.toggle('noaside',off);
+  var b=document.getElementById('asideBtn');if(!b)return;
+  b.setAttribute('aria-expanded',off?'false':'true');
+  b.textContent=off?'สารบัญ ▸':'ซ่อนสารบัญ ◂';b.title=off?'แสดงแถบสารบัญ':'ซ่อนแถบสารบัญ ให้เนื้อหาเต็มจอ';
+}
+try{setAside(localStorage.getItem('med421-learn-aside')==='off');}catch(e){}
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
+  if(t.id==="asideBtn"){
+    var off=!document.body.classList.contains('noaside');setAside(off);
+    try{localStorage.setItem('med421-learn-aside',off?'off':'');}catch(e2){}
+    return;
+  }
   if(t.id==="mastBtn"){
     var min=!document.querySelector('.mast').classList.contains('min');setMast(min);
     try{localStorage.setItem('med421-learn-mast',min?'min':'');}catch(e2){}

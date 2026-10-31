@@ -267,6 +267,43 @@ try:
             fail.append("สลับชุดวิชาแล้วแถบเด้งกลับมากางเอง")
         print("จำสถานะย่อ + ไม่เด้งกลับตอนสลับชุดวิชา ✓")
 
+        # ---- ซูมหน้าตามความกว้างจอ ----
+        # เกณฑ์สำคัญคือ "ความยาวบรรทัดเทียบกับขนาดตัวอักษร" ต้องคงที่เมื่อจอใหญ่ขึ้น
+        # ถ้าค่านี้โตขึ้น แปลว่าแค่ดึงให้กว้าง (บรรทัดยาวขึ้น อ่านยากขึ้น) ไม่ใช่ซูม
+        ZM = """()=>{const m=document.querySelector('main'),w=document.querySelector('.cols');
+          const p=[...document.querySelectorAll('main .prose p,main .lede')]
+                   .find(x=>x.textContent.trim().length>80);
+          const z=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--z'))||1;
+          const fs=p?parseFloat(getComputedStyle(p).fontSize)*z:0;
+          const r=m.getBoundingClientRect();
+          return {z, fs:+fs.toFixed(1), em:p?+(r.width/fs).toFixed(1):0,
+                  use:Math.round(100*w.getBoundingClientRect().width/innerWidth),
+                  ovf:Math.max(0,document.documentElement.scrollWidth-innerWidth)};}"""
+        zrows, zem = [], []
+        for zw, zh in ((390, 844), (1024, 900), (1280, 900), (1600, 1000), (1920, 1080), (2560, 1440)):
+            pg.set_viewport_size({"width": zw, "height": zh})
+            pg.wait_for_timeout(350)
+            d = pg.evaluate(ZM)
+            zrows.append((zw, d))
+            if d["ovf"]:
+                fail.append("ซูม: ที่ %dpx ล้นแนวนอน %dpx" % (zw, d["ovf"]))
+            if zw >= 1280 and d["em"]:
+                zem.append((zw, d["em"]))
+            # จอเล็กต้องไม่ถูกซูม ไม่งั้นมือถือเพี้ยน
+            if zw <= 1280 and abs(d["z"] - 1) > 0.001:
+                fail.append("ซูม: ที่ %dpx ไม่ควรซูม แต่ได้ %.2f" % (zw, d["z"]))
+            # จอกว้างต้องใช้พื้นที่จริง ไม่ปล่อยขอบว่างครึ่งจอ
+            if zw >= 1600 and d["use"] < 72:
+                fail.append("ซูม: ที่ %dpx ใช้พื้นที่จอแค่ %d%%" % (zw, d["use"]))
+        if len(zem) >= 2:
+            lo, hi = min(e for _, e in zem), max(e for _, e in zem)
+            if hi - lo > 6:
+                fail.append("ซูม: ความยาวบรรทัดไม่คงที่ (%.0f–%.0f เท่าของตัวอักษร) — "
+                            "แปลว่าดึงกว้างอย่างเดียว ไม่ได้ซูม" % (lo, hi))
+        print("ซูมตามจอ: " + " · ".join(
+            "%d→%.2fx/%.0f%%จอ/%.1fpx" % (w, d["z"], d["use"], d["fs"]) for w, d in zrows))
+        pg.set_viewport_size({"width": 390, "height": 844})
+
         # ---- ปิดคำตอบในตารางไว้ให้เดา ----
         # ตรวจ "พฤติกรรม" ไม่ผูกกับชื่อคลาส เพราะฟีเจอร์นี้ถูกเขียนใหม่มาแล้ว 3 แบบ
         # ภายในวันเดียว (.tblq/.tqbar/.czbar) เทสต์ที่ผูกคลาสจะพังทุกครั้งที่เปลี่ยน
