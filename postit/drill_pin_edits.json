@@ -1,0 +1,14 @@
+[
+ {
+  "old_text": "function renderMCQ(it,idx,store){store=store||state.answers;",
+  "new_text": "function pinTag(id){return /^[A-Za-z0-9-]+$/.test(String(id||\"\"))?\"<a class='tag' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#q-\"+id+\"' target='_blank' rel='noopener' title='ปักข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>\":\"\";}\nfunction renderMCQ(it,idx,store){store=store||state.answers;"
+ },
+ {
+  "old_text": "var ans=store[it.id];\n  var h=\"<div class='ihead'><span class='qno'>\"+esc(it.id)+\"</span>\"+\n    \"<span class='tag'>Lec \"+esc(it.lec)+\" · \"+esc(meta.d||\"\")+\"</span>\"+\n    (meta.al?",
+  "new_text": "var ans=store[it.id];\n  var h=\"<div class='ihead'><span class='qno'>\"+esc(it.id)+\"</span>\"+pinTag(it.id)+\n    \"<span class='tag'>Lec \"+esc(it.lec)+\" · \"+esc(meta.d||\"\")+\"</span>\"+\n    (meta.al?"
+ },
+ {
+  "old_text": "var h=\"<div class='ihead'><span class='qno'>\"+esc(it.id)+\"</span>\"+\n    \"<span class='tag old'>ข้อสอบเก่า</span>\"+",
+  "new_text": "var h=\"<div class='ihead'><span class='qno'>\"+esc(it.id)+\"</span>\"+pinTag(it.id)+\n    \"<span class='tag old'>ข้อสอบเก่า</span>\"+"
+ }
+]

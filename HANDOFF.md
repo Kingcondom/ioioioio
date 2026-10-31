@@ -355,3 +355,15 @@ thread `0a0d34fd` แล้ว (26 ต.ค.) **รอคำตอบก่อน
   `white-space:normal;text-align:left;max-width:100%`
 - สีป้ายกลุ่ม 2/3 ใช้ตัวแปร `--ok/--ok-soft` และ `--miss/--miss-soft` ที่มีอยู่แล้ว
   จึงถูกต้องทั้งโหมดสว่างและมืดโดยอัตโนมัติ
+
+---
+
+## 10. Post-it ห้ามลืม + ปุ่ม "ปักไว้ใน post-it" (1 พ.ย. 2569)
+
+- artifact ใหม่ **Post-it ห้ามลืม** https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY — ต้นฉบับอยู่ `postit/` (อ่าน `postit/README.md`)
+- ใส่ชิป **ปักไว้ใน post-it** แล้วใน 3 ที่ (แก้บน artifact สดด้วย edit_version):
+  learn (`artifact/index.html` ฟังก์ชันแสดงหัวข้อ, ต่อท้าย `hideBtn(l)`) → learn v `1793471205-d04d` ·
+  Ward Drill (`pinTag()` ใน renderMCQ และข้อสอบเก่า, คู่แก้อยู่ `postit/drill_pin_edits.json`) → drill v `1793471216-009e` ·
+  Salmon NL (ชิปใต้ชื่อหัวข้อ) → v `1793470906-1542`
+- ถ้าเพิ่มคาบใหม่ใน learn: รัน `python3 postit/build_cards.py` แล้ว publish `data/sec.json` `data/q.json` ขึ้น Post-it ไม่งั้นหัวข้อใหม่จะค้นหา/ปักไม่ได้
+- ถ้า build drill ใหม่จาก pipeline ปุ่มจะหาย ต้องใส่ `postit/drill_pin_edits.json` ซ้ำ

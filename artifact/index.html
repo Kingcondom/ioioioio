@@ -56,8 +56,9 @@ a{color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:var(--r-sm)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
 /* ซูมทั้งหน้าตามความกว้างจอ (ผู้ใช้ขอ 31 ต.ค. — "มันโล่ง")
-   ขยายทุกอย่างพร้อมกันทั้งเพดานความกว้างและตัวอักษร จำนวนตัวอักษรต่อบรรทัดจึงเท่าเดิม
-   ต่างจากการดึงความกว้างอย่างเดียวซึ่งทำให้บรรทัดยาวจนอ่านยาก */
+   ขยายเพดานความกว้างและตัวอักษรพร้อมกัน ความยาวบรรทัดเทียบขนาดตัวอักษรจึงคงที่ (66 เท่า)
+   ต่างจากการดึงความกว้างอย่างเดียว ซึ่งทำให้บรรทัดยาวขึ้นเรื่อย ๆ จนอ่านยาก
+   จอ <1500px ไม่ซูม มือถือและแท็บเล็ตจึงไม่เปลี่ยน */
 :root{--z:1}
 @media (min-width:1500px){:root{--z:1.10}}
 @media (min-width:1750px){:root{--z:1.20}}
@@ -93,6 +94,7 @@ body{zoom:var(--z)}
 /* ---------- layout ---------- */
 .cols{display:grid;grid-template-columns:290px minmax(0,1fr);gap:26px;padding-block:22px 60px;align-items:start}
 @media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
+/* vh วัดจากจอจริงซึ่งไม่ถูกซูม ต้องหารกลับ ไม่งั้นสารบัญสูงเกินจอเมื่อซูม */
 aside{position:sticky;top:66px;max-height:calc((100vh - 84px) / var(--z));overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
 /* ปุ่มซ่อนแถบเมนู — พับเหลือแถวเดียว (จำไว้ในเครื่องนี้) */
@@ -1017,7 +1019,7 @@ function viewSection(){
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
-    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"</div>"+
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#l-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
     (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,IMGS=s.imgs||{},"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
   FIGS={};ANIMS={};IMGS={};
   if(!hid&&s.pearls&&s.pearls.length)

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Post-it ห้ามลืม</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#0b0c0e;--panel:#15171a;--panel2:#1d2024;--ink:#f3f1ea;--ink2:#b9b6ad;--ink3:#7d7a73;
+  --rule:#2a2d32;--note:#ffd84d;--note-ink:#2b2306;--ok:#5fe3a1;--warn:#ffb36b;
+  --sans:"IBM Plex Sans Thai",-apple-system,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:transparent;border:1px solid var(--rule);border-radius:10px;padding:8px 14px;cursor:pointer}
+button:hover{background:var(--panel2)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--note);outline-offset:2px}
+a{color:var(--note)}
+.top{display:flex;align-items:center;gap:8px;padding:12px 16px;color:var(--ink3);font-size:14px}
+.top .brand{display:flex;align-items:center;gap:8px;color:var(--ink2);font-weight:500;margin-right:auto}
+.top .brand i{width:14px;height:14px;background:var(--note);border-radius:2px;display:inline-block;transform:rotate(-4deg)}
+.top button{padding:6px 12px;font-size:14px;color:var(--ink2)}
+.stage{min-height:calc(100vh - 120px);display:flex;flex-direction:column;justify-content:center;padding:8px 6vw 24px;cursor:pointer;user-select:none}
+.stage.flip{transform:scaleX(-1)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:15px;color:var(--ink3);margin-bottom:10px}
+.chip{border:1px solid var(--rule);border-radius:999px;padding:2px 10px;color:var(--ink2)}
+.chip.k{background:var(--note);color:var(--note-ink);border-color:var(--note);font-weight:500}
+.ttl{font-size:clamp(17px,2.2vw,24px);color:var(--ink2);margin:0 0 22px;line-height:1.5}
+.front{font-size:clamp(26px,4.6vw,54px);line-height:1.45;font-weight:500;margin:0;max-width:30ch}
+.front.m{font-size:clamp(22px,3.4vw,40px);max-width:38ch}
+.front.s{font-size:clamp(18px,2.5vw,30px);max-width:52ch;font-weight:400}
+.back{margin-top:26px;padding-top:22px;border-top:2px solid var(--note);font-size:clamp(20px,3vw,36px);line-height:1.55;color:var(--ink);max-width:40ch;opacity:0;transition:opacity .6s}
+.back.on{opacity:1}
+.back.s{font-size:clamp(17px,2.2vw,26px);max-width:56ch}
+.back .ln{display:flex;gap:14px;margin:4px 0}
+.back .ln b.l{color:var(--note);min-width:1.2em}
+.back .nt{font-size:.62em;color:var(--ink2);margin-top:12px}
+b{color:#fff;font-weight:600}
+code{font-family:inherit;background:var(--panel2);padding:0 6px;border-radius:6px}
+.hint{color:var(--ink3);font-size:14px;margin-top:22px}
+.bar{height:3px;background:var(--rule);margin:0 16px;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--note)}
+.acts{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px 18px;justify-content:center}
+.acts button{font-size:15px;color:var(--ink2)}
+@media (max-width:600px){.acts{gap:6px}.acts button,.acts a{font-size:13px;padding:6px 9px}.top{font-size:12px}}
+.acts a{font-size:15px;padding:8px 14px;border:1px solid var(--rule);border-radius:10px;text-decoration:none;color:var(--ink2)}
+.empty{max-width:620px;margin:10vh auto;padding:0 20px;font-size:18px;line-height:1.7;color:var(--ink2)}
+.empty h1{font-size:28px;color:var(--ink);font-weight:500;margin:0 0 12px}
+.panel{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;justify-content:flex-end;z-index:5}
+.panel.on{display:flex}
+.sheet{width:min(560px,100%);height:100%;overflow:auto;background:var(--panel);padding:20px 20px 60px;border-left:1px solid var(--rule)}
+.sheet h2{font-size:18px;font-weight:500;margin:26px 0 10px}
+.sheet h2:first-of-type{margin-top:6px}
+.row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.row .tx{flex:1;min-width:0}
+.row .t1{font-size:15px;line-height:1.5}
+.row .t2{font-size:13px;color:var(--ink3);margin-top:2px}
+.row button{padding:5px 10px;font-size:13px;flex-shrink:0}
+.row button.pin{background:var(--note);color:var(--note-ink);border-color:var(--note)}
+input[type=search]{width:100%;font:inherit;font-size:16px;padding:10px 12px;border-radius:10px;border:1px solid var(--rule);background:var(--bg);color:var(--ink)}
+select{font:inherit;background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:6px 8px}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;font-size:15px}
+.note{font-size:14px;color:var(--ink2);line-height:1.7}
+.sync{font-size:13px;color:var(--ink3)}
+.sync.on{color:var(--ok)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--note);color:var(--note-ink);padding:10px 18px;border-radius:12px;font-size:15px;font-weight:500;opacity:0;transition:opacity .3s;pointer-events:none;z-index:9;max-width:90vw}
+.toast.on{opacity:1}
+.closeb{float:right}
+</style>
+</head>
+<body>
+<div class="top">
+  <span class="brand"><i></i>Post-it ห้ามลืม</span>
+  <span id="count"></span>
+  <button id="b-pause" type="button">หยุด</button>
+  <button id="b-manage" type="button">จัดการ</button>
+</div>
+<div id="main"></div>
+<div class="panel" id="panel" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-label="จัดการ post-it">
+    <button class="closeb" id="b-close" type="button">ปิด</button>
+    <h2>ปักหัวข้อเพิ่ม</h2>
+    <input type="search" id="q" placeholder="เช่น septic shock, AKI, hyperkalemia">
+    <div id="res"></div>
+    <h2>หัวข้อที่ปักไว้</h2>
+    <div id="pins"></div>
+    <h2>ตั้งค่า</h2>
+    <div class="opt"><span>เฉลยหลัง</span><select id="o-rev"><option value="5">5 วินาที</option><option value="8">8 วินาที</option><option value="12">12 วินาที</option><option value="20">20 วินาที</option><option value="0">กดเอง</option></select></div>
+    <div class="opt"><span>เปลี่ยนใบหลังเฉลย</span><select id="o-next"><option value="6">6 วินาที</option><option value="10">10 วินาที</option><option value="15">15 วินาที</option><option value="25">25 วินาที</option><option value="0">กดเอง</option></select></div>
+    <div class="opt"><span>ใส่โจทย์ข้อสอบด้วย</span><select id="o-q"><option value="1">ใส่</option><option value="0">ไม่ใส่</option></select></div>
+    <div class="opt"><span>กลับด้านซ้ายขวา (ใช้กับกระจกเทเลพรอมเตอร์)</span><select id="o-flip"><option value="0">ปกติ</option><option value="1">กลับด้าน</option></select></div>
+    <div class="opt"><span>ใบที่กด "จำได้แล้ว"</span><button type="button" id="b-resetall">เอากลับมาทั้งหมด</button></div>
+    <p class="sync" id="sync"></p>
+    <h2>ปักจากเว็บบทเรียน</h2>
+    <p class="note">ในเว็บ MED421 learn, Ward Drill และ Salmon NL กดปุ่ม <b>ปักไว้ใน post-it</b> ที่หัวข้อหรือข้อสอบที่ไม่อยากลืม ระบบจะเปิดหน้านี้และปักให้อัตโนมัติ หรือจะค้นหาหัวข้อแล้วปักจากช่องด้านบนก็ได้</p>
+    <p class="note">ถ้าจะเปิดค้างบน iPad ให้ตั้ง Auto-Lock เป็น Never และเสียบชาร์จไว้</p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(function(){
+"use strict";
+var LINKS={
+  l:{name:"MED421 learn",url:"https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE"},
+  s:{name:"Salmon NL",url:"https://claude.ai/artifact/EL8HrvUJawWYs1rr25qzGK"},
+  d:{name:"Ward Drill",url:"https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X"}
+};
+var LKEY="postit-v1";
+var DATA=null,QS=null;
+var state={pins:{},done:{},opt:{rev:8,next:10,q:1,flip:0}};
+var deck=[],pos=-1,revealed=false,paused=false,timer=null,barT=0,barDur=0,raf=0;
+
+/* ---------- helpers ---------- */
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function md(s){
+  s=esc(s);
+  s=s.replace(/\*\*([^*]+?)\*\*/g,"<b>$1</b>").replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g,"$1<i>$2</i>").replace(/`([^`]+)`/g,"<code>$1</code>");
+  return s.replace(/\*\*/g,"").replace(/\n/g,"<br>");
+}
+function hash(s){var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return (h>>>0).toString(36);}
+function toast(t){var el=$("toast");el.textContent=t;el.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove("on");},2600);}
+function now(){return Date.now();}
+function live(map){var r={};Object.keys(map||{}).forEach(function(k){if(map[k]>0)r[k]=map[k];});return r;}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+
+/* ---------- cards ---------- */
+function cloze(text){
+  var m=text.match(/^(.{3,70}?)\s(=|→|⇒)\s/);
+  if(!m){m=text.match(/^([^:：]{6,45}?)\s?[:：]\s/);if(m&&/\d{4}|^(ref|src|ที่มา)/i.test(m[1]))m=null;}
+  if(!m)return null;
+  var f=m[1];if((f.match(/\*\*/g)||[]).length%2)f+="**";
+  return {f:f+" "+(m[2]&&m[2]!==":"?m[2]:"—")+" ?",b:text};
+}
+function topicOf(pid){
+  if(pid.indexOf("q-")===0){var it=QS&&QS[pid.slice(2)];return it?DATA.secs[it.sec]:null;}
+  return DATA.secs[pid]||null;
+}
+function cardsFor(pid){
+  var out=[];
+  if(pid.indexOf("q-")===0){
+    var id=pid.slice(2),it=QS&&QS[id];
+    if(!it){out.push({pid:pid,k:pid+"|x",kind:"x",f:"ข้อ "+id+" จาก Ward Drill",b:"ข้อนี้ยังไม่มีในคลังบทเรียน เปิดดูใน Ward Drill ได้จากปุ่มด้านล่าง",sec:null});return out;}
+    var back="✓ "+(it.a||"")+(it.p?"\n\n"+it.p:"");
+    out.push({pid:pid,k:pid+"|q",kind:"q",f:it.s,b:back,sec:it.sec});
+    return out;
+  }
+  var s=DATA.secs[pid];if(!s)return out;
+  s.P.concat(s.X).forEach(function(p){
+    var c=cloze(p),k=pid+"|"+hash(p);
+    if(c)out.push({pid:pid,k:k,kind:"c",f:c.f,b:c.b,sec:pid});
+    else out.push({pid:pid,k:k,kind:"p",f:p,b:"",sec:pid});
+  });
+  s.M.forEach(function(m){
+    out.push({pid:pid,k:pid+"|m"+hash(m.n),kind:"m",f:m.n+(m.w?"\n"+m.w:""),lines:m.l,b:m.x||"",sec:pid});
+  });
+  if(state.opt.q){
+    s.Q.forEach(function(id){
+      var it=QS&&QS[id];if(!it||!it.s)return;
+      out.push({pid:pid,k:pid+"|q"+id,kind:"q",f:it.s,b:"✓ "+(it.a||"")+(it.p?"\n\n"+it.p:""),sec:pid});
+    });
+  }
+  if(!out.length&&s.sum)out.push({pid:pid,k:pid+"|sum",kind:"p",f:s.sum,b:"",sec:pid});
+  return out;
+}
+function buildDeck(focus){
+  var pins=live(state.pins),byTopic=[];
+  Object.keys(pins).sort(function(a,b){return pins[b]-pins[a];}).forEach(function(pid){
+    var cs=cardsFor(pid).filter(function(c){return !(state.done[c.k]>0);});
+    if(state.opt.q===0)cs=cs.filter(function(c){return c.kind!=="q"||pid.indexOf("q-")===0;});
+    if(cs.length)byTopic.push({pid:pid,cs:shuffle(cs)});
+  });
+  if(!focus)shuffle(byTopic);
+  else byTopic.sort(function(a,b){return (b.pid===focus)-(a.pid===focus);});
+  var out=[],more=true,i=0;
+  while(more){more=false;byTopic.forEach(function(t){if(t.cs[i]){out.push(t.cs[i]);more=true;}});i++;}
+  if(focus){var f=byTopic.filter(function(t){return t.pid===focus;})[0];if(f){out=out.filter(function(c){return c.pid!==focus;});out=f.cs.concat(out);}}
+  deck=out;pos=-1;
+}
+
+/* ---------- render ---------- */
+function count(){
+  var p=Object.keys(live(state.pins)).length;
+  $("count").textContent=p?(p+" หัวข้อ · "+deck.length+" ใบ"):"";
+}
+function srcLink(c){
+  var pid=c.pid,src=pid.charAt(0);
+  if(c.kind==="x")return LINKS.d.url;
+  var s=c.sec&&DATA.secs[c.sec];if(!s)return LINKS[src]?LINKS[src].url:"";
+  return LINKS[s.src].url+"#"+s.set+(s.ls?"-"+s.ls:"");
+}
+function srcName(c){
+  if(c.kind==="x")return LINKS.d.name;
+  var s=c.sec&&DATA.secs[c.sec];return s?LINKS[s.src].name:"";
+}
+function renderEmpty(){
+  stopTimers();
+  $("main").innerHTML='<div class="empty"><h1>ยังไม่มีหัวข้อที่ปักไว้</h1>'+
+  '<p>กด <b>จัดการ</b> แล้วค้นหาหัวข้อที่ไม่อยากลืม เช่น septic shock หรือ hyperkalemia แล้วกด <b>ปัก</b></p>'+
+  '<p>หรือกดปุ่ม <b>ปักไว้ใน post-it</b> จากเว็บบทเรียน หน้านี้จะวนการ์ดของหัวข้อที่ปักไว้ให้เห็นตลอด</p>'+
+  '<p><button type="button" id="b-start">ค้นหาหัวข้อ</button></p></div>';
+  $("b-start").onclick=openPanel;count();
+}
+function show(){
+  if(!deck.length){
+    var anyPins=Object.keys(live(state.pins)).length;
+    if(!anyPins)return renderEmpty();
+    stopTimers();
+    $("main").innerHTML='<div class="empty"><h1>จำได้ครบทุกใบแล้ว</h1><p>ทุกใบในหัวข้อที่ปักไว้ถูกกด "จำได้แล้ว" ปักหัวข้อใหม่ หรือเอาใบเก่ากลับมาทวนจากหน้าจัดการ</p><p><button type="button" id="b-start">จัดการ</button></p></div>';
+    $("b-start").onclick=openPanel;count();return;
+  }
+  var c=deck[pos],s=c.sec?DATA.secs[c.sec]:null;
+  var set=s&&DATA.sets[s.src]&&DATA.sets[s.src][s.set];
+  var len=(c.f||"").length,cls=c.kind==="q"||len>170?"front s":len>70?"front m":"front";
+  var hasBack=!!(c.b||c.lines);
+  var h='<div class="stage'+(state.opt.flip?" flip":"")+'" id="stage">';
+  h+='<div class="meta"><span class="chip k">'+esc(srcName(c))+'</span>';
+  if(set)h+='<span class="chip">'+esc(set.label)+'</span>';
+  if(s&&s.lec)h+='<span>คาบ '+esc(s.lec)+' · '+esc(s.lt)+'</span>';
+  if(c.kind==="q")h+='<span class="chip">โจทย์</span>';
+  h+='</div>';
+  if(s)h+='<p class="ttl">'+esc(s.t)+'</p>';
+  h+='<p class="'+cls+'">'+md(c.f)+'</p>';
+  if(hasBack){
+    h+='<div class="back'+(c.kind==="q"?" s":"")+(revealed?" on":"")+'" id="back">';
+    if(c.lines)c.lines.forEach(function(l){h+='<div class="ln"><b class="l">'+esc(l[0])+'</b><span>'+md(l[1])+'</span></div>';});
+    if(c.b)h+=c.lines?'<div class="nt">'+md(c.b)+'</div>':md(c.b);
+    h+='</div>';
+    if(!revealed)h+='<p class="hint">ลองนึกก่อน แตะเพื่อดูเฉลย</p>';
+  }
+  h+='</div><div class="bar"><i id="bar"></i></div><div class="acts">'+
+    '<button type="button" id="b-prev">ก่อนหน้า</button>'+
+    '<button type="button" id="b-done">จำได้แล้ว</button>'+
+    '<button type="button" id="b-unpin">ถอดหมุดหัวข้อนี้</button>'+
+    '<a id="b-open" href="'+esc(srcLink(c))+'" target="_blank" rel="noopener">เปิดบทเรียน ↗</a>'+
+    '<button type="button" id="b-next">ถัดไป</button></div>';
+  $("main").innerHTML=h;
+  $("stage").onclick=tap;
+  $("b-prev").onclick=function(){go(-1);};
+  $("b-next").onclick=function(){go(1);};
+  $("b-done").onclick=markDone;
+  $("b-unpin").onclick=function(){unpin(c.pid);};
+  count();schedule(hasBack);
+}
+function stopTimers(){clearTimeout(timer);timer=null;cancelAnimationFrame(raf);}
+function animBar(dur){
+  cancelAnimationFrame(raf);var el=$("bar");if(!el)return;
+  if(!dur){el.style.width="0";return;}
+  var t0=performance.now();
+  (function f(t){var p=Math.min(1,(t-t0)/dur);el.style.width=(p*100)+"%";if(p<1&&!paused)raf=requestAnimationFrame(f);})(t0);
+}
+function schedule(hasBack){
+  stopTimers();if(paused){animBar(0);return;}
+  var o=state.opt;
+  if(hasBack&&!revealed){
+    var r=+o.rev;if(!r){animBar(0);return;}
+    var c=deck[pos],extra=c&&c.kind==="q"?Math.min(20,Math.round((c.f||"").length/40)):0;
+    var ms=(r+extra)*1000;animBar(ms);timer=setTimeout(reveal,ms);
+  }else{
+    var n=+o.next;if(!n){animBar(0);return;}
+    var ms2=(hasBack?n:Math.max(n,8))*1000;animBar(ms2);timer=setTimeout(function(){go(1);},ms2);
+  }
+}
+function reveal(){
+  revealed=true;var b=$("back");if(b)b.classList.add("on");
+  var h=document.querySelector(".hint");if(h)h.remove();
+  schedule(true);
+}
+function tap(){
+  wake();
+  var c=deck[pos];if(!c)return;
+  if((c.b||c.lines)&&!revealed)reveal();else go(1);
+}
+function go(d){
+  if(!deck.length)return show();
+  pos+=d;
+  if(pos>=deck.length){buildDeck();pos=0;}
+  if(pos<0)pos=0;
+  revealed=false;show();
+}
+function markDone(){
+  var c=deck[pos];if(!c)return;
+  state.done[c.k]=now();save();
+  deck.splice(pos,1);pos--;toast("เอาใบนี้ออกจากรอบแล้ว");go(1);
+}
+
+/* ---------- pins ---------- */
+function valid(pid){
+  if(/^[ls]-/.test(pid))return !!DATA.secs[pid];
+  if(/^q-[A-Za-z0-9-]+$/.test(pid))return true;
+  return false;
+}
+function titleOf(pid){
+  var s=topicOf(pid);
+  if(pid.indexOf("q-")===0)return "ข้อ "+pid.slice(2)+(s?" · "+s.t:"");
+  return s?s.t:pid;
+}
+function pin(pid,quiet){
+  if(!valid(pid))return false;
+  state.pins[pid]=now();save();
+  buildDeck(pid);revealed=false;go(1);
+  if(!quiet)toast("ปักแล้ว: "+titleOf(pid));
+  renderPanel();return true;
+}
+function unpin(pid){
+  state.pins[pid]=-now();save();
+  var keep=deck[pos]&&deck[pos].pid!==pid?deck[pos]:null;
+  buildDeck();if(keep){var i=deck.indexOf(keep);pos=i>=0?i-1:-1;}
+  toast("ถอดหมุดแล้ว: "+titleOf(pid));revealed=false;go(1);renderPanel();
+}
+function resetTopic(pid){
+  Object.keys(state.done).forEach(function(k){if(k.indexOf(pid+"|")===0&&state.done[k]>0)state.done[k]=-now();});
+  save();buildDeck();go(1);renderPanel();
+}
+function readHash(){
+  var h=String(location.hash||"").replace(/^#/,"");
+  if(!h)return;
+  var ok=pin(h);
+  if(!ok)toast("ไม่พบหัวข้อนี้ในคลัง ลองค้นหาจากหน้าจัดการ");
+  try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}
+}
+
+/* ---------- panel ---------- */
+function openPanel(){$("panel").classList.add("on");$("panel").setAttribute("aria-hidden","false");renderPanel();setTimeout(function(){$("q").focus();},50);}
+function closePanel(){$("panel").classList.remove("on");$("panel").setAttribute("aria-hidden","true");}
+function label(s){var set=DATA.sets[s.src]&&DATA.sets[s.src][s.set];return LINKS[s.src].name+" · "+(set?set.label:s.set)+(s.lec?" · คาบ "+s.lec:"");}
+function search(){
+  var q=$("q").value.trim().toLowerCase(),res=$("res");
+  if(q.length<2){res.innerHTML="";return;}
+  var words=q.split(/\s+/),hits=[];
+  for(var i=0;i<DATA.order.length&&hits.length<40;i++){
+    var pid=DATA.order[i],s=DATA.secs[pid];
+    var hay=(s.t+" "+s.lt+" "+s.sum+" "+s.set).toLowerCase();
+    if(words.every(function(w){return hay.indexOf(w)>=0;}))hits.push(pid);
+  }
+  if(!hits.length){res.innerHTML='<p class="note">ไม่พบหัวข้อที่ตรงกับคำค้น</p>';return;}
+  var pins=live(state.pins);
+  res.innerHTML=hits.map(function(pid){
+    var s=DATA.secs[pid],on=pins[pid];
+    return '<div class="row"><div class="tx"><div class="t1">'+esc(s.t)+'</div><div class="t2">'+esc(label(s))+' · '+esc(s.lt)+'</div></div>'+
+      (on?'<button type="button" data-un="'+esc(pid)+'">ถอด</button>':'<button type="button" class="pin" data-pin="'+esc(pid)+'">ปัก</button>')+'</div>';
+  }).join("");
+}
+function renderPanel(){
+  if(!$("panel").classList.contains("on"))return;
+  var pins=live(state.pins),ids=Object.keys(pins).sort(function(a,b){return pins[b]-pins[a];});
+  $("pins").innerHTML=ids.length?ids.map(function(pid){
+    var s=topicOf(pid),all=cardsFor(pid),d=all.filter(function(c){return state.done[c.k]>0;}).length;
+    var sub=(s?label(s)+" · ":"")+all.length+" ใบ"+(d?" · จำได้แล้ว "+d:"");
+    return '<div class="row"><div class="tx"><div class="t1">'+esc(titleOf(pid))+'</div><div class="t2">'+esc(sub)+'</div></div>'+
+      '<button type="button" data-go="'+esc(pid)+'">ดู</button>'+(d?'<button type="button" data-rs="'+esc(pid)+'">เอากลับมา</button>':'')+
+      '<button type="button" data-un="'+esc(pid)+'">ถอด</button></div>';
+  }).join(""):'<p class="note">ยังไม่มี</p>';
+  $("o-rev").value=String(state.opt.rev);$("o-next").value=String(state.opt.next);
+  $("o-q").value=String(state.opt.q);$("o-flip").value=String(state.opt.flip);
+  search();renderSync();
+}
+document.addEventListener("click",function(e){
+  var t=e.target.closest&&e.target.closest("button[data-pin],button[data-un],button[data-go],button[data-rs]");if(!t)return;
+  if(t.dataset.pin)pin(t.dataset.pin);
+  else if(t.dataset.un)unpin(t.dataset.un);
+  else if(t.dataset.rs)resetTopic(t.dataset.rs);
+  else if(t.dataset.go){buildDeck(t.dataset.go);revealed=false;closePanel();go(1);}
+});
+function setOpt(k,v){state.opt[k]=v;save();buildDeck();revealed=false;go(1);}
+
+/* ---------- storage + sync ---------- */
+var SYNC={ref:null,on:false,busy:false,timer:null,first:true,err:""};
+function mergeMap(a,b){var r={};[a||{},b||{}].forEach(function(m){Object.keys(m).forEach(function(k){var v=+m[k]||0;if(!r[k]||Math.abs(v)>Math.abs(r[k]))r[k]=v;});});return r;}
+function norm(o){o=o||{};var op=o.opt||{};return {pins:o.pins||{},done:o.done||{},opt:{rev:op.rev!=null?+op.rev:8,next:op.next!=null?+op.next:10,q:op.q!=null?+op.q:1,flip:+op.flip||0}};}
+function keepLocal(){try{localStorage.setItem(LKEY,JSON.stringify(state));}catch(e){}}
+function save(){
+  keepLocal();
+  if(!SYNC.ref)return;
+  clearTimeout(SYNC.timer);SYNC.timer=setTimeout(flush,700);
+}
+function flush(){
+  SYNC.timer=null;if(!SYNC.ref)return;
+  if(SYNC.busy){SYNC.timer=setTimeout(flush,500);return;}
+  SYNC.busy=true;renderSync();
+  var body=JSON.parse(JSON.stringify(state));body.updatedAt=new Date().toISOString();
+  SYNC.ref.set(body).then(function(){SYNC.busy=false;SYNC.err="";renderSync();},function(){SYNC.busy=false;SYNC.err="บันทึกขึ้นบัญชีไม่ได้ ตอนนี้เก็บในเครื่องนี้";renderSync();});
+}
+function renderSync(){
+  var el=$("sync");if(!el)return;
+  el.className="sync"+(SYNC.on&&!SYNC.err?" on":"");
+  el.textContent=SYNC.err||(SYNC.on?(SYNC.busy?"กำลังบันทึก…":"บันทึกในบัญชี เปิดเครื่องไหนก็เห็นหัวข้อเดียวกัน"):"ตอนนี้บันทึกในเครื่องนี้เท่านั้น");
+}
+function onSnap(snap){
+  var data=snap&&snap.exists?(typeof snap.data==="function"?snap.data():snap.data):null;
+  if(SYNC.first){
+    SYNC.first=false;SYNC.on=true;
+    var m=norm(data||{});
+    state.pins=mergeMap(m.pins,state.pins);state.done=mergeMap(m.done,state.done);
+    if(data&&data.opt)state.opt=m.opt;
+    keepLocal();flush();buildDeck();revealed=false;go(1);renderPanel();return;
+  }
+  if(SYNC.busy||SYNC.timer||snap.metadata&&snap.metadata.hasPendingWrites||!data)return;
+  var n=norm(data),before=JSON.stringify(live(state.pins));
+  state.pins=mergeMap(n.pins,state.pins);state.done=mergeMap(n.done,state.done);state.opt=n.opt;keepLocal();
+  if(JSON.stringify(live(state.pins))!==before){var c=deck[pos];buildDeck();if(c){var i=-1;deck.forEach(function(x,j){if(x.k===c.k)i=j;});pos=i>=0?i-1:-1;}revealed=false;go(1);}
+  renderPanel();
+}
+function connect(){
+  if(!window.claude||typeof window.claude.use!=="function")return;
+  Promise.all([window.claude.use("db"),window.claude.use("user")]).then(function(r){
+    var db=r[0],user=r[1];if(!db||!user)return;
+    return user.id().then(function(uid){
+      if(!uid)return;
+      SYNC.ref=db.doc("data/users/"+uid+"/postit");
+      SYNC.ref.onSnapshot(onSnap,function(){SYNC.err="เชื่อมบัญชีไม่ได้ ตอนนี้เก็บในเครื่องนี้";renderSync();});
+    });
+  }).catch(function(){});
+}
+
+/* ---------- misc ---------- */
+var lock=null;
+function wake(){
+  if(lock||!navigator.wakeLock)return;
+  navigator.wakeLock.request("screen").then(function(l){lock=l;l.addEventListener("release",function(){lock=null;});}).catch(function(){});
+}
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible"&&lock===null)wake();});
+document.addEventListener("keydown",function(e){
+  if($("panel").classList.contains("on")){if(e.key==="Escape")closePanel();return;}
+  if(e.key==="ArrowRight"||e.key===" "){e.preventDefault();tap();}
+  else if(e.key==="ArrowLeft")go(-1);
+});
+$("b-manage").onclick=openPanel;$("b-close").onclick=closePanel;
+$("panel").addEventListener("click",function(e){if(e.target===$("panel"))closePanel();});
+$("b-pause").onclick=function(){paused=!paused;this.textContent=paused?"เล่นต่อ":"หยุด";var c=deck[pos];schedule(!!(c&&(c.b||c.lines)));};
+$("q").addEventListener("input",search);
+$("o-rev").onchange=function(){setOpt("rev",+this.value);};
+$("o-next").onchange=function(){setOpt("next",+this.value);};
+$("o-q").onchange=function(){setOpt("q",+this.value);};
+$("o-flip").onchange=function(){state.opt.flip=+this.value;save();var st=$("stage");if(st)st.classList.toggle("flip",!!state.opt.flip);};
+$("b-resetall").onclick=function(){Object.keys(state.done).forEach(function(k){if(state.done[k]>0)state.done[k]=-now();});save();buildDeck();go(1);renderPanel();toast("เอาทุกใบกลับมาในรอบแล้ว");};
+window.addEventListener("hashchange",function(){if(DATA)readHash();});
+
+try{var l=localStorage.getItem(LKEY);if(l)state=norm(JSON.parse(l));}catch(e){}
+$("main").innerHTML='<div class="empty"><p>กำลังโหลด…</p></div>';
+var loadTimer=setTimeout(function(){if(!DATA)$("main").innerHTML='<div class="empty"><h1>โหลดข้อมูลไม่สำเร็จ</h1><p>ลองเปิดหน้านี้ใหม่อีกครั้ง</p></div>';},15000);
+Promise.all([
+  fetch("data/sec.json").then(function(r){if(!r.ok)throw 0;return r.json();}),
+  fetch("data/q.json").then(function(r){if(!r.ok)throw 0;return r.json();}).catch(function(){return {};})
+]).then(function(r){
+  clearTimeout(loadTimer);DATA=r[0];QS=r[1];
+  buildDeck();
+  if(location.hash&&location.hash.length>1)readHash();else go(1);
+  connect();
+}).catch(function(){clearTimeout(loadTimer);$("main").innerHTML='<div class="empty"><h1>โหลดข้อมูลไม่สำเร็จ</h1><p>ลองเปิดหน้านี้ใหม่อีกครั้ง</p></div>';});
+})();
+</script>
+</body>
+</html>
