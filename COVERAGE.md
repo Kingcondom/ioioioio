@@ -153,3 +153,27 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - ค้างจากสัปดาห์ก่อน: `G02` → จ. 12 ต.ค. · `E01` → พ. 14 ต.ค. · รหัสใหม่ CNS infection / WBC disorder · `I03` / `H02` → จ. 5 ต.ค. · `30` UTI → ศ. 18 ก.ย. · `23` → อ. 29 ก.ย. · `E02` → พ. 30 ก.ย. · `33` → อ. 22 ก.ย.
 
 สัปดาห์ที่ 2–5: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 7 · 26–30 ต.ค. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 26 | Hypertension / Heart failure / Pulmonary edema (อ.วิไล) | cardio `39` (6 / 2 / 21) | ✅ |
+| อ. 27 | Abdominal pain (อ.กิตติ) | ไม่มีกลุ่มคาบ — กระจายใน gi (3 / 1 / 15) | 🟡 ยังไม่มีกลุ่มของตัวเอง |
+| ศ. 30 | Acute kidney injury (อ.วรรณิยา) | nephro `42` (6 / 1 / 20) | ✅ |
+
+ไม่นับ: Bedside Acute and chronic diarrhea (AL) (อ. 27) เพราะเป็น bedside — ในคลังมีเรื่อง diarrhea ใน gi `G03` อยู่ 2 / 0 / 8
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: HT/HF ~66 · ปวดท้อง/ท้องเสีย ~33 · AKI ~21
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. Abdominal pain: เปิดกลุ่มคาบใหม่ใน gi (approach ปวดท้องตามตำแหน่ง, pancreatitis, cholecystitis, red flags)
+2. ค้างจากสัปดาห์ก่อน: STDs · Urethral catheterization (❌) · Acute confusional state · CNS infection/CSF · Hepatitis · WBC disorder/LAD · Bleeding disorder · Blood transfusion · Epilepsy · Derm infection · Empyema/resp failure · SAQ อ่าน CXR · MEQ ของ AF (🟡)
+
+**config ต้องแก้**
+- ต้องสร้างรหัสคาบใหม่ให้ Abdominal pain (อ. 27 ต.ค.)
+- รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6)
+
+สัปดาห์ที่ 2–6: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
