@@ -38,3 +38,11 @@
 ## ที่ยังทำต่อได้
 - เทียบเนื้อหากับสไลด์ที่เป็นภาพ (export PDF ของ deck ใหญ่ผ่าน connector ไม่ได้ — ต้องให้ผู้ใช้ส่ง PDF มา) เพื่อยืนยันเฉลยข้อเก่าที่ "ตอบตามหลักฐาน"
 - ผูกข้อจาก exam25 เข้าหัวข้อของแต่ละระบบ (ตอนนี้แยกเป็นชุดของตัวเอง)
+
+## อัปเดต 1 พ.ย. 2569 — ดึงของบนเว็บกลับเข้า repo
+
+repo ตามหลัง artifact อยู่ ดึงเวอร์ชันสด (`1793470906-1542`) กลับมาแล้ว:
+
+- `index.html` — มีของที่ session อื่นใส่บนเว็บโดยไม่ได้ commit: **ภาพกลไกแบบเคลื่อนไหว** (`[[anim:id]]` + `section.anims`) · **ลิงก์ตรงจาก Lecture Dashboard** (`#<ชุด>-<คาบ>`) · `scroll-margin-top` ของการ์ด · และชิป **ปักไว้ใน post-it** (ลิงก์ `https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#s-<section id>` ใต้ชื่อหัวข้อ)
+- `data/hemato.json` — หัวข้อ `hemato-02-01` มีภาพเคลื่อนไหว (`md` + `anims`) ที่**ยังไม่อยู่ใน `parts/hemato/`** ⚠️ ถ้ารัน `tools/assemble.py hemato` ใหม่ ภาพนี้จะหาย ต้องย้ายเข้า parts ก่อน
+- Post-it ห้ามลืม เก็บสำเนาเนื้อหา Salmon ไว้ที่ branch `claude/internal-med-learning-web-j9ca6l` โฟลเดอร์ `postit/` — แก้เนื้อหา Salmon แล้วต้อง build การ์ดของ Post-it ใหม่ด้วย (ดู `postit/README.md`)

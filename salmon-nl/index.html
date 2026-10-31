@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="th">
 <meta charset="utf-8">
@@ -109,6 +110,7 @@ aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
 
 /* ---------- content ---------- */
 main{min-width:0;display:flex;flex-direction:column;gap:18px}
+.card[id]{scroll-margin-top:84px}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-lg);box-shadow:var(--shadow);
   padding:24px 26px;animation:rise .32s var(--e) both}
 @media (max-width:560px){.card{padding:18px 16px;border-radius:var(--r-md)}}
@@ -200,6 +202,28 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig svg{display:block;width:100%;height:auto;min-width:560px;max-width:860px;margin:0 auto;font-family:var(--sans)}
 .fig figcaption{font-size:13px;color:var(--ink-3);padding:8px 14px 11px;border-top:1px dashed var(--rule)}
 .fig figcaption b{color:var(--ink-2)}
+/* ---------- กลไกแบบภาพเคลื่อนไหว ([[anim:id]] + section.anims) ---------- */
+.fig.anim .fbody svg{min-width:0;max-width:620px}
+.fig.anim .ftitle::before{content:"▶ ";color:var(--accent)}
+.anim svg [data-s],.anim svg [data-x]{transition:opacity .55s var(--e)}
+.anim svg .aoff{opacity:0}
+.anim svg .anow{animation:anow 1.1s var(--e) both}
+@keyframes anow{0%{opacity:0}35%{opacity:1}100%{opacity:1}}
+.anim svg .fl{stroke-dasharray:7 7;animation:afl 1.1s linear infinite}
+.anim svg .pl{animation:apl 1.3s ease-in-out infinite}
+@keyframes afl{to{stroke-dashoffset:-14}}
+@keyframes apl{0%,100%{opacity:1}50%{opacity:.35}}
+.anim.paused svg .fl,.anim.paused svg .pl{animation-play-state:paused}
+.actl{display:flex;align-items:center;gap:8px;padding:8px 14px 0;flex-wrap:wrap}
+.actl .ab{font:inherit;font-size:14px;font-weight:700;min-width:38px;height:34px;padding:0 11px;border-radius:999px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.actl .ab.pp{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.actl .dots{display:flex;gap:6px;flex-wrap:wrap}
+.actl .dot{width:22px;height:22px;border-radius:50%;border:1px solid var(--rule-strong);background:var(--surface);font:600 11px/20px var(--mono);color:var(--ink-3);cursor:pointer;padding:0;text-align:center}
+.actl .dot.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.actl .dot.cur{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.acap{font-size:13.6px;line-height:1.6;color:var(--ink-2);padding:8px 14px 12px;min-height:4.4em}
+.acap b.st{display:block;color:var(--accent-ink);font-size:13px;margin-bottom:2px}
+.acap strong{color:var(--ink)}
 .fig .ftitle{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);padding:11px 14px 0}
 .fig svg text{fill:var(--ink);font-size:13px}
 .fig svg .t2{fill:var(--ink-2)} .fig svg .t3{fill:var(--ink-3);font-size:11.5px}
@@ -253,6 +277,36 @@ function ensure(set){
     .catch(function(e){c.lectures=[];c._loaded=true;c._err=String(e);});
   return c._p;
 }
+/* ---------- ลิงก์ตรงจาก Lecture Dashboard: #<ชุด> หรือ #<ชุด>-<คาบ> ----------
+   เลขคาบที่มี / ใช้ . แทน (เช่น #gi-27.10 = คาบ 27/10 ของชุด GI) */
+function slug(x){return String(x==null?"":x).replace(/[^A-Za-z0-9._~-]/g,".");}
+var pendingLec=null;
+function readHash(){
+  var h=String(location.hash||"").replace(/^#/,"");
+  if(!h)return false;
+  var i=h.indexOf("-"),set=i<0?h:h.slice(0,i),lec=i<0?"":h.slice(i+1);
+  if(!COURSES.some(function(c){return c.set===set;}))return false;
+  state.course=set;state.view="home";state.sec=null;state.pid=null;state.lec=null;
+  pendingLec=lec||null;
+  return true;
+}
+function landHash(){
+  if(!pendingLec)return;
+  var want=pendingLec;pendingLec=null;
+  var hit=lectures().filter(function(l){return slug(l.lec)===want;})[0];
+  if(!hit)return;
+  state.lec=hit.lec;render();
+  var el=document.getElementById("lec-"+slug(hit.lec));
+  if(!el)return;
+  el.scrollIntoView({block:"start"});
+  /* ฟอนต์โหลดเสร็จทีหลังทำให้ความสูงด้านบนขยับ เลื่อนซ้ำอีกครั้งเมื่อพร้อม */
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(document.body.contains(el))el.scrollIntoView({block:"start"});});
+}
+window.addEventListener("hashchange",function(){
+  if(!COURSES.length||!readHash())return;
+  render();window.scrollTo({top:0});
+  ensure(state.course).then(function(){render();landHash();});
+});
 function boot(){
   Promise.all([
     fetch("data/index.json",{cache:"no-cache"}).then(function(r){return r.json();}),
@@ -265,8 +319,9 @@ function boot(){
     });
     if(!COURSES.length)throw new Error("ไม่มีชุดวิชาใน data/index.json");
     if(!state.course||!COURSES.some(function(c){return c.set===state.course;}))state.course=COURSES[0].set;
+    readHash();
     return ensure(state.course);
-  }).then(render).catch(function(e){
+  }).then(function(){render();landHash();}).catch(function(e){
     document.getElementById("main").innerHTML=
       "<section class='card'><h2>โหลดเนื้อหาไม่สำเร็จ</h2><p class='lede'>"+
       String(e&&e.message||e)+"</p></section>";
@@ -287,8 +342,65 @@ function inline(t){return esc(t)
   .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
   .replace(/`([^`]+)`/g,"<code>$1</code>")
   .replace(/\*([^*\n]+)\*/g,"<em>$1</em>");}
+/* ---------- กลไกแบบภาพเคลื่อนไหว ---------- */
+var ANIMS={},RMOTION=false;
+try{RMOTION=window.matchMedia("(prefers-reduced-motion: reduce)").matches;}catch(e){}
+function animHtml(k){
+  var a=ANIMS[k];if(!a||!a.svg||!a.steps||!a.steps.length)return "";
+  var dots="";for(var i=1;i<=a.steps.length;i++)dots+="<button class='dot' data-astep='"+i+"' aria-label='ขั้นที่ "+i+"'>"+i+"</button>";
+  return "<figure class='fig anim' data-ak='"+esc(k)+"' data-n='"+a.steps.length+"'>"+(a.title?"<div class='ftitle'>"+esc(a.title)+"</div>":"")+
+    "<div class='fbody'>"+a.svg+"</div>"+
+    "<div class='actl'><button class='ab' data-aprev='1' aria-label='ขั้นก่อนหน้า'>‹</button>"+
+    "<button class='ab pp' data-aplay='1' aria-label='เล่น/หยุด'>"+(RMOTION?"▶":"⏸")+"</button>"+
+    "<button class='ab' data-anext='1' aria-label='ขั้นถัดไป'>›</button><span class='dots'>"+dots+"</span></div>"+
+    "<div class='acap' aria-live='polite'></div>"+
+    "<script type='application/json' class='asteps'>"+JSON.stringify(a.steps).replace(/</g,"\\u003c")+"<\/script></figure>";
+}
+function animShow(f,i){
+  var A=f._a;A.i=i;var svg=f.querySelector("svg");
+  if(svg){
+    svg.querySelectorAll("[data-s]").forEach(function(el){var k=+el.getAttribute("data-s");el.classList.toggle("aoff",k>i);el.classList.toggle("anow",k===i);});
+    svg.querySelectorAll("[data-x]").forEach(function(el){if(+el.getAttribute("data-x")<=i)el.classList.add("aoff");
+      else if(!el.hasAttribute("data-s")||+el.getAttribute("data-s")<=i)el.classList.remove("aoff");});
+  }
+  f.querySelectorAll(".dot").forEach(function(d){var k=+d.getAttribute("data-astep");d.classList.toggle("on",k<i);d.classList.toggle("cur",k===i);});
+  var s=A.steps[i-1]||{};
+  f.querySelector(".acap").innerHTML="<b class='st'>ขั้น "+i+"/"+A.n+(s.t?" · "+inline(s.t):"")+"</b>"+(s.cap?inline(s.cap):"");
+}
+function animTick(f){
+  var A=f._a;clearTimeout(A.tm);A.tm=null;if(!A.play||!A.vis)return;
+  var s=A.steps[A.i-1]||{},ms=+s.ms||Math.max(3200,Math.min(9000,1800+String(s.cap||"").length*38));
+  if(A.i>=A.n)ms+=2200;
+  A.tm=setTimeout(function(){animShow(f,A.i>=A.n?1:A.i+1);animTick(f);},ms);
+}
+function animSetPlay(f,on){
+  var A=f._a;A.play=on;f.classList.toggle("paused",!on);
+  var b=f.querySelector("[data-aplay]");if(b)b.textContent=on?"⏸":"▶";
+  var svg=f.querySelector("svg");
+  try{if(svg&&svg.pauseAnimations){if(on&&A.vis&&!RMOTION)svg.unpauseAnimations();else svg.pauseAnimations();}}catch(e){}
+  animTick(f);
+}
+var ANIM_IO=("IntersectionObserver" in window)?new IntersectionObserver(function(es){
+  es.forEach(function(e){var f=e.target;if(!f._a)return;f._a.vis=e.isIntersecting&&e.intersectionRatio>0.35;animSetPlay(f,f._a.play);});
+},{threshold:[0,0.35,0.6]}):null;
+function animInit(root){
+  (root||document).querySelectorAll("figure.anim").forEach(function(f){
+    if(f._a)return;var steps=[];try{steps=JSON.parse(f.querySelector(".asteps").textContent);}catch(e){}
+    f._a={i:1,n:+f.getAttribute("data-n")||steps.length,steps:steps,play:!RMOTION,vis:!ANIM_IO,tm:null};
+    animShow(f,1);animSetPlay(f,f._a.play);if(ANIM_IO)ANIM_IO.observe(f);
+  });
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest("figure.anim button");if(!b)return;
+  var f=b.closest("figure.anim"),A=f._a;if(!A)return;
+  if(b.hasAttribute("data-aplay")){if(!A.play&&A.i>=A.n)animShow(f,1);animSetPlay(f,!A.play);return;}
+  var to=b.hasAttribute("data-aprev")?Math.max(1,A.i-1):b.hasAttribute("data-anext")?Math.min(A.n,A.i+1):+b.getAttribute("data-astep");
+  animShow(f,to);animSetPlay(f,false);
+});
+(function(){var m=document.getElementById("main");if(!m||!("MutationObserver" in window))return;
+  new MutationObserver(function(){animInit(m);}).observe(m,{childList:true,subtree:true});})();
 function mdFigs(s){
-  md._used={};var h=md(s.md,s.figs||[]);var u=md._used;md._used=null;
+  ANIMS=s.anims||{};md._used={};var h=md(s.md,s.figs||[]);var u=md._used;md._used=null;
   (s.figs||[]).forEach(function(f){if(!u[f.id])h+=figHtml(f);});return h;
 }
 function figHtml(f){
@@ -325,6 +437,8 @@ function md(src,figs){
     var L=lines[i];
     var fm=L.match(/^\s*\[\[fig:([\w-]+)\]\]\s*$/);
     if(fm){flushPara();var f=(figs||[]).filter(function(x){return x.id===fm[1];})[0];if(f){used[f.id]=1;out.push(figHtml(f));}i++;continue;}
+    var am=L.match(/^\s*\[\[anim:([\w-]+)\]\]\s*$/);
+    if(am){flushPara();out.push(animHtml(am[1]));i++;continue;}
     if(/^\s*>\s?/.test(L)){var q=[];while(i<lines.length&&/^\s*>\s?/.test(lines[i])){q.push(lines[i].replace(/^\s*>\s?/,""));i++;}
       flushPara();out.push("<div class='callout'>"+md(q.join("\n"))+"</div>");continue;}
     if(/^\s*####\s+/.test(L)){flushPara();out.push("<h4>"+inline(L.replace(/^\s*####\s+/,""))+"</h4>");i++;continue;}
@@ -463,7 +577,7 @@ function viewHome(){
 
   lectures().forEach(function(l){
     var done=l.sections.filter(function(s){return secStat(s).complete;}).length;
-    h+="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
+    h+="<section class='card' id='lec-"+esc(slug(l.lec))+"'><div class='eyebrow'>คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</div>"+
       "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
     if(l.objectives&&l.objectives.length)
       h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
@@ -489,7 +603,7 @@ function viewSection(){
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
     "<h2>"+esc(s.title)+"</h2>"+(s.summary?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
-    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"</div>"+
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#s-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
     "<div class='prose'>"+mdFigs(s)+"</div>";
   if(s.pearls&&s.pearls.length)
     h+="<div class='pearls'><h4>จำไปสอบ</h4><ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul></div>";
@@ -760,5 +874,7 @@ function startTimer(mins){
 boot();
 })();
 </script>
+
+</body></html>
 
 </body></html>
