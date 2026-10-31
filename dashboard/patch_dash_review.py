@@ -5,9 +5,9 @@ patch_dash_review.py — ปุ่ม "ฝึกข้อสอบคาบท�
     python3 dashboard/patch_dash_review.py <dashboard index.html> <out.html> [--edits edits.json]
 
 ปุ่มอยู่ในแผง "การทวนของฉัน" (ใต้ช่องนับทวนแล้ว/ถึงรอบ) — รวมทุกคาบที่กด ✓ ทวนไว้แล้วอย่างน้อย 1 รอบ
-และมีข้อสอบใน Drill แล้วเปิด Ward Drill ที่ `#review~<hash drill ของคาบ>_<จำนวนรอบที่ทวน>~…`
-(hash drill = `drill[0]` ของคาบใน LECS เช่น chest-03 · neuro-N02 · derm) เรียงจากคาบที่ทวนล่าสุด
-คาบที่ชี้ชุดเดียวกันรวมเป็นอันเดียว · Drill ต้องมีโหมด "คาบที่ทวนแล้ว" (patch_drill_review.py)
+และมีข้อสอบใน Drill แล้วเปิด Ward Drill ที่ `#review~y2026~<MMDDHHMM ของคาบ>.<MMDD วันที่ทวน>…~…`
+Drill จัดกลุ่มตามวันที่ทวนเอง · Drill ต้องมีโหมด "คาบที่ทวนแล้ว" (patch_drill_review.py)
+ปกติ Drill ดึงการทวนจากบัญชีอัตโนมัติ (งานตั้งเวลา) ปุ่มนี้ใช้เมื่ออยากได้ทันที
 
 รันได้กับหน้าที่ยังไม่แพตช์เท่านั้น · --edits เขียนคู่ old/new ไว้ส่งให้ edit_version ของ artifact
 """
@@ -24,25 +24,23 @@ a.practice:hover{background:var(--lav-2);transform:translateY(-1px)}
 """
 
 FN_ANCHOR = "function renderSide(){\n"
-FN = r"""/* ฝึกข้อสอบคาบที่ทวนแล้ว → Ward Drill #review~<hash drill>_<รอบที่ทวน>~… (patch_dash_review.py)
-   รวมคาบที่ทวนแล้วอย่างน้อย 1 รอบและมีข้อสอบใน Drill · คาบที่ชี้ชุดเดียวกันรวมกัน · เรียงจากที่ทวนล่าสุด */
-function practiceKeys(){
-  var by={},out=[];
-  LECS.forEach(function(l){var ds=R[l.id]||[];if(!ds.length||!l.drill)return;
-    var k=l.drill[0],last=ds[ds.length-1];
-    if(!/^[A-Za-z0-9]+(-[A-Za-z0-9.]+)?$/.test(k))return;
-    if(!by[k]){by[k]={k:k,n:0,last:"",s:l.start};out.push(by[k]);}
-    var x=by[k];x.n=Math.max(x.n,ds.length);if(last>x.last)x.last=last;});
-  out.sort(function(a,b){return a.last<b.last?1:a.last>b.last?-1:a.s-b.s;});
-  return out;
+FN = r"""/* ฝึกข้อสอบคาบที่ทวนแล้ว → Ward Drill #review~y2026~<MMDDHHMM>.<MMDD>.<MMDD>~… (patch_dash_review.py)
+   ส่งทุกคาบที่ทวนแล้วและมีข้อสอบใน Drill พร้อมวันที่ทวน · drill จัดกลุ่มตามวันที่ทวนเอง
+   (drill ซิงก์จากบัญชีอัตโนมัติด้วย ปุ่มนี้ใช้เมื่ออยากได้ทันที) */
+function practiceRev(){
+  var out=[];
+  LECS.forEach(function(l){var ds=R[l.id]||[];if(!ds.length||!l.drill||!/^2026-\d\d-\d\d-\d{4}$/.test(l.id))return;
+    out.push(l.id.slice(5,7)+l.id.slice(8,10)+l.id.slice(11)+ds.filter(function(d){return d.slice(0,4)==="2026";})
+      .map(function(d){return "."+d.slice(5,7)+d.slice(8,10);}).join(""));});
+  return out.filter(function(t){return t.length>8;});
 }
 function practiceHtml(){
-  var ks=practiceKeys();
-  if(!ks.length)return "<div class='practice off'>"+ICON.target+"<span><b>ฝึกข้อสอบคาบที่ทวนแล้ว</b>"+
-    "<small>กด ✓ คาบที่ทวนแล้ว ข้อสอบเก่าของคาบนั้นจะรวมให้ฝึกใน Ward Drill แยกปี · MCQ / MEQ / SAQ</small></span></div>";
-  var url=DRILL+"#review~"+ks.map(function(x){return x.k+"_"+x.n;}).join("~");
-  return ext(url,"practice",ICON.target+"<span><b>ฝึกข้อสอบคาบที่ทวนแล้ว</b><small>"+ks.length+" คาบ · แยกปี · MCQ / MEQ / SAQ ใน Ward Drill</small></span>",
-    "ฝึกข้อสอบของ "+ks.length+" คาบที่ทวนแล้ว ใน Ward Drill");
+  var ts=practiceRev();
+  if(!ts.length)return "<div class='practice off'>"+ICON.target+"<span><b>ฝึกข้อสอบคาบที่ทวนแล้ว</b>"+
+    "<small>กด ✓ คาบที่ทวนแล้ว ข้อสอบของคาบนั้นจะรวมให้ฝึกใน Ward Drill แยกตามวันที่ทวน · ปี · MCQ / MEQ / SAQ</small></span></div>";
+  var url=DRILL+"#review~y2026~"+ts.join("~");
+  return ext(url,"practice",ICON.target+"<span><b>ฝึกข้อสอบคาบที่ทวนแล้ว</b><small>"+ts.length+" คาบ · แยกตามวันที่ทวน · MCQ / MEQ / SAQ ใน Ward Drill</small></span>",
+    "ฝึกข้อสอบของ "+ts.length+" คาบที่ทวนแล้ว ใน Ward Drill");
 }
 """
 
