@@ -1,0 +1,501 @@
+<title>SAQ MED421 รายปี</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Zilla+Slab:wght@600;700&display=swap">
+<style>
+/* Layout: framed retro study board — class-year rail | SAQ cards by exam round | topic tracker; folds to one column on phones */
+:root{
+  --stage:#ebe8e2; --app:#fbf4e7; --paper:#fffdf8; --ink:#1d1b18; --fg:#1d1b18; --muted:#6a6356;
+  --yellow:#f5c346; --blue:#aab5f6; --pink:#f6b8cb; --mint:#bde6c6; --peach:#f9d0a4; --lilac:#d8c7f3; --sand:#efe4cf;
+  --on-tint:#1d1b18; --blob:#d9d6cf; --ill:#fffdf8;
+  --warn-bg:#ffe0d3; --warn-fg:#7b2711; --tip-bg:#e2eaff; --tip-fg:#1f306e; --ok-bg:#fff6d6;
+  --display:"Zilla Slab","Chonburi",Georgia,serif;
+  --body:"IBM Plex Sans Thai","Noto Sans Thai",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:16px; --sh:4px 4px 0 var(--ink); --sh-sm:2px 2px 0 var(--ink);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --stage:#121110; --app:#1c1a16; --paper:#27241f; --ink:#e8ddc8; --fg:#f3ead8; --muted:#b2a790;
+  --yellow:#e2ae37; --blue:#8692e4; --pink:#df8ea7; --mint:#84c597; --peach:#e2a671; --lilac:#ab97dc; --sand:#38322a;
+  --on-tint:#1c1a16; --blob:#24221e;
+  --warn-bg:#4a2318; --warn-fg:#ffcdb9; --tip-bg:#1f2949; --tip-fg:#cdd8ff; --ok-bg:#3a3220;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --stage:#121110; --app:#1c1a16; --paper:#27241f; --ink:#e8ddc8; --fg:#f3ead8; --muted:#b2a790;
+  --yellow:#e2ae37; --blue:#8692e4; --pink:#df8ea7; --mint:#84c597; --peach:#e2a671; --lilac:#ab97dc; --sand:#38322a;
+  --on-tint:#1c1a16; --blob:#24221e;
+  --warn-bg:#4a2318; --warn-fg:#ffcdb9; --tip-bg:#1f2949; --tip-fg:#cdd8ff; --ok-bg:#3a3220;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--stage)}
+body{color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.disp{font-family:var(--display);font-weight:700;font-synthesis:none;letter-spacing:-.01em}
+
+/* stage + frame */
+.stage{position:relative;overflow:hidden;min-height:100%;padding-block:28px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.blobs{position:absolute;inset:0;pointer-events:none}
+.blobs svg{position:absolute}
+.app{position:relative;max-width:1340px;margin:0 auto;background:var(--app);border:2.5px solid var(--ink);
+  border-radius:26px;box-shadow:6px 7px 0 var(--ink);display:grid;grid-template-columns:232px minmax(0,1fr) 300px;min-height:720px}
+
+/* sidebar */
+.side{border-right:2.5px solid var(--ink);padding:26px 18px;display:flex;flex-direction:column;gap:22px}
+.logo{font-size:30px;line-height:1}
+.logo small{display:block;font-family:var(--body);font-weight:500;font-size:12px;color:var(--muted);letter-spacing:.02em;margin-top:6px}
+.yrs{display:flex;flex-direction:column;gap:6px}
+.yr{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:2px solid transparent;border-radius:14px;
+  padding:8px 10px;cursor:pointer}
+.yr:hover{border-color:var(--ink)}
+.yr[aria-current="true"]{background:var(--sand);border-color:var(--ink);box-shadow:var(--sh-sm)}
+.yr svg{flex:none;width:18px;height:18px}
+.yr .yl{font-family:var(--display);font-weight:700;font-size:16px;font-synthesis:none;line-height:1.1}
+.yr .ys{display:block;font-size:11.5px;color:var(--muted);font-weight:500}
+.yr .yc{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.yr[disabled]{opacity:.55;cursor:default}
+.yr[disabled]:hover{border-color:transparent}
+.tipcard{margin-top:auto;background:var(--paper);border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);padding:14px 14px 16px;position:relative}
+.tipcard .badge{position:absolute;top:-14px;left:14px}
+.tipcard h3{margin:6px 0 4px;font-size:17px;line-height:1.25}
+.tipcard p{margin:0 0 12px;font-size:13px;color:var(--muted)}
+
+/* buttons, pills */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:2px solid var(--ink);background:var(--paper);border-radius:999px;
+  padding:7px 16px;font-weight:600;font-size:14px;cursor:pointer;box-shadow:var(--sh-sm);transition:transform .12s ease,box-shadow .12s ease}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--ink)}
+.btn.y{background:var(--yellow);color:var(--on-tint)}
+.btn.wide{width:100%}
+.circ{width:40px;height:40px;padding:0;flex:none}
+.badge{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--ink);border-radius:999px;padding:1px 10px;font-size:11.5px;font-weight:600;color:var(--on-tint);background:var(--pink);white-space:nowrap}
+
+/* main */
+.main{padding:24px 26px 32px;min-width:0;border-right:2.5px solid var(--ink);display:flex;flex-direction:column;gap:22px}
+.top{display:flex;gap:12px;align-items:center}
+.search{flex:1;min-width:0;display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);padding:0 8px 0 18px;box-shadow:var(--sh-sm)}
+.search input{flex:1;min-width:0;border:0;background:none;outline:none;color:var(--fg);font:inherit;font-size:14.5px;padding:10px 0}
+.search input::placeholder{color:var(--muted)}
+.search svg{width:20px;height:20px;flex:none}
+.toggle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;user-select:none}
+.toggle input{appearance:none;width:40px;height:22px;border:2px solid var(--ink);border-radius:99px;background:var(--paper);position:relative;cursor:pointer;margin:0;flex:none}
+.toggle input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--ink);transition:left .15s}
+.toggle input:checked{background:var(--yellow)}
+.toggle input:checked::after{left:20px;background:var(--on-tint)}
+.chips{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:7px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);padding:4px 13px 4px 5px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:var(--sh-sm)}
+.chip .dot{width:24px;height:24px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;background:var(--c,var(--sand))}
+.chip .dot svg{width:13px;height:13px}
+.chip[aria-pressed="true"]{background:var(--c);color:var(--on-tint)}
+.chip .n{font-family:var(--mono);font-size:11px;opacity:.7}
+.linkbtn{background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;font-size:13px;font-weight:600;cursor:pointer;color:var(--fg)}
+.hero{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hero h1{margin:0;font-size:34px;line-height:1.05;text-wrap:balance}
+.hero p{margin:6px 0 0;color:var(--muted);font-size:14px;max-width:60ch}
+.stats{display:flex;gap:8px;flex-wrap:wrap}
+.stat{border:2px solid var(--ink);border-radius:12px;background:var(--paper);padding:4px 12px;font-size:12.5px;font-weight:600}
+.stat b{font-family:var(--mono);font-size:15px;margin-right:4px;font-variant-numeric:tabular-nums}
+.sec{display:flex;flex-direction:column;gap:12px}
+.sechead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.sechead h2{margin:0;font-size:21px;line-height:1.2}
+.sechead .sub{font-size:13px;color:var(--muted)}
+.sechead .cnt{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.secnote{margin:0;font-size:12.5px;color:var(--muted);border-left:3px solid var(--yellow);padding-left:10px}
+.yearband{display:flex;align-items:center;gap:12px;margin-top:6px}
+.yearband span{font-family:var(--display);font-weight:700;font-size:26px;font-synthesis:none}
+.yearband::after{content:"";flex:1;border-top:2.5px dashed var(--ink);opacity:.35}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,198px),1fr));gap:16px}
+
+/* card */
+.card{display:flex;flex-direction:column;text-align:left;background:var(--paper);border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);
+  padding:0;overflow:hidden;cursor:pointer;transition:transform .14s ease,box-shadow .14s ease;min-width:0}
+.card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.card:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.thumb{position:relative;aspect-ratio:16/10;max-width:100%;background:var(--c,var(--sand));border-bottom:2.5px solid var(--ink);display:grid;place-items:center;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .ill{width:72%;height:auto;color:var(--on-tint)}
+.thumb .badge{position:absolute;top:8px;left:8px;background:var(--paper);color:var(--fg)}
+.thumb .badge.img{background:var(--pink);color:var(--on-tint)}
+.thumb .nimg{position:absolute;right:8px;bottom:6px;font-size:10.5px;font-weight:600;color:var(--on-tint);opacity:.7}
+.cbody{padding:10px 12px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ctitle{font-weight:600;font-size:14px;line-height:1.35;margin:0}
+.cfoot{margin-top:auto;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.cfoot .ex{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.cfoot b{margin-left:auto;font-family:var(--mono);font-weight:500;color:var(--fg);white-space:nowrap}
+.empty{border:2.5px dashed var(--ink);border-radius:var(--r);padding:28px;text-align:center;color:var(--muted);background:var(--paper)}
+.empty strong{display:block;color:var(--fg);font-size:16px;margin-bottom:4px}
+
+/* right rail */
+.rail{padding:24px 20px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.me{display:flex;gap:12px;align-items:center}
+.ava{width:52px;height:52px;border-radius:50%;border:2.5px solid var(--ink);background:var(--yellow);display:grid;place-items:center;flex:none;color:var(--on-tint)}
+.ava svg{width:28px;height:28px}
+.me h3{margin:0;font-size:19px;line-height:1.15}
+.me p{margin:2px 0 0;font-size:12.5px;color:var(--muted)}
+.rail h4{margin:0;font-size:17px}
+.feat{display:block;width:100%;text-align:left;padding:0;background:var(--paper);border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;cursor:pointer}
+.feat .ph{position:relative;aspect-ratio:16/11;background:var(--blue);border-bottom:2.5px solid var(--ink);overflow:hidden}
+.feat .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.feat .ph .badge{position:absolute;top:10px;left:10px}
+.feat .fb{padding:10px 12px}
+.feat .fb b{display:block;font-size:14.5px;line-height:1.3}
+.feat .fb span{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px}
+.trk{display:flex;flex-direction:column;gap:10px}
+.trow{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;text-align:left;width:100%;background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:8px 10px;cursor:pointer;box-shadow:var(--sh-sm)}
+.trow[aria-pressed="true"]{background:var(--c)}
+.trow[aria-pressed="true"] *{color:var(--on-tint)}
+.trow .ic{width:44px;height:44px;border:2px solid var(--ink);border-radius:10px;background:var(--c);display:grid;place-items:center;color:var(--on-tint)}
+.trow .ic svg{width:26px;height:26px}
+.trow > span:last-child{display:block;min-width:0}
+.trow b{font-size:13.5px;display:block;line-height:1.25}
+.trow small{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums}
+.bar{display:block;height:7px;border:1.5px solid var(--ink);border-radius:99px;background:var(--app);margin-top:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--c);border-right:1.5px solid var(--ink)}
+
+/* modal */
+.ov{position:fixed;inset:0;z-index:30;background:color-mix(in srgb,var(--stage) 55%,transparent);backdrop-filter:blur(3px);display:grid;place-items:center;
+  padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.dlg{width:min(860px,100%);max-height:100%;overflow:auto;background:var(--app);border:2.5px solid var(--ink);border-radius:22px;box-shadow:7px 7px 0 var(--ink);display:flex;flex-direction:column}
+.dhead{position:sticky;top:0;z-index:2;background:var(--app);border-bottom:2.5px solid var(--ink);padding:14px 16px 12px 20px;display:flex;gap:12px;align-items:flex-start}
+.dhead .meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.dhead h2{margin:0;font-size:23px;line-height:1.2;text-wrap:balance}
+.dhead .x{margin-left:auto}
+.dbody{padding:18px 20px 22px;display:flex;flex-direction:column;gap:16px}
+.ctx{background:var(--ok-bg);border:2px solid var(--ink);border-radius:12px;padding:8px 12px;font-size:13.5px}
+.ctx b{margin-right:4px}
+.stem{font-size:16.5px;line-height:1.6;margin:0;max-width:68ch}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.fig{margin:0;background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:var(--sh-sm)}
+.fig button{display:block;width:100%;padding:0;border:0;background:#fff;cursor:zoom-in}
+.fig img{display:block;width:100%;max-height:360px;object-fit:contain;margin:0 auto}
+.fig figcaption{border-top:2px solid var(--ink);padding:7px 10px;font-size:12.5px;display:flex;gap:8px;align-items:flex-start}
+.fig figcaption .badge{flex:none}
+.noimg{display:flex;gap:12px;align-items:center;border:2px dashed var(--ink);border-radius:14px;padding:10px 12px;font-size:13px;color:var(--muted);background:var(--paper)}
+.noimg .ic{width:54px;height:40px;flex:none;border:2px solid var(--ink);border-radius:9px;background:var(--c);display:grid;place-items:center;color:var(--on-tint)}
+.noimg .ic svg{width:44px;height:30px}
+.noimg .linkbtn{font-size:13px}
+.asks h3,.ansbox h3{margin:0 0 8px;font-size:17px}
+.asks ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:4px}
+.asks li{padding-left:2px}
+.reveal{align-self:flex-start}
+.ansbox{display:flex;flex-direction:column;gap:12px}
+.ans{background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px}
+.ans ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:3px}
+.ans .none{margin:0;color:var(--muted)}
+.note{border:2px solid var(--ink);border-radius:12px;padding:9px 12px;font-size:13.5px;display:flex;gap:9px}
+.note b{flex:none}
+.note.warn{background:var(--warn-bg);color:var(--warn-fg)}
+.note.tip{background:var(--tip-bg);color:var(--tip-fg)}
+.dfoot{display:flex;justify-content:space-between;gap:10px;padding:12px 20px 16px;border-top:2.5px solid var(--ink);flex-wrap:wrap}
+.dfoot .pos{align-self:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.lb{position:fixed;inset:0;z-index:40;background:rgba(10,9,8,.86);display:grid;place-items:center;padding:20px;cursor:zoom-out}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;background:#fff}
+
+/* responsive */
+@media (max-width:1180px){
+  .app{grid-template-columns:212px minmax(0,1fr)}
+  .main{border-right:0}
+  .rail{grid-column:1 / -1;border-top:2.5px solid var(--ink);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:18px 24px;align-items:start}
+  .rail .me{grid-column:1 / -1}
+  .trk{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))}
+}
+@media (max-width:780px){
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--app)}
+  .stage{padding-block:12px}
+  .app{grid-template-columns:minmax(0,1fr);border-radius:20px;box-shadow:4px 5px 0 var(--ink)}
+  .side{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--app);border-right:0;border-bottom:2.5px solid var(--ink);border-radius:18px 18px 0 0;padding:12px 14px 10px;gap:10px}
+  .logo small{display:none}
+  .yrs{flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:6px;scrollbar-width:thin}
+  .yr{width:auto;flex:none;padding:5px 11px;gap:6px}
+  .yr .ys,.yr svg{display:none}
+  .yr .yl{font-size:14px;white-space:nowrap}
+  .yr .yc{margin-left:2px}
+  .tipcard{display:none}
+  .main{padding:16px 14px 22px;gap:18px}
+  .top{flex-wrap:wrap}
+  .search{flex-basis:100%}
+  .hero h1{font-size:27px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:12px}
+  .ctitle{font-size:13px}
+  .rail{display:flex;padding:18px 14px}
+  .trk{display:flex}
+  .ov{padding:0;place-items:end stretch}
+  .dlg{border-radius:20px 20px 0 0;max-height:94%;box-shadow:none;border-bottom:0}
+  .dhead h2{font-size:20px}
+  .dbody{padding:14px 16px 18px}
+  .dfoot{padding:10px 16px calc(14px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="stage">
+  <div class="blobs" aria-hidden="true">
+    <svg style="left:-60px;top:120px;width:360px" viewBox="0 0 360 360"><path d="M40 300C10 200 60 40 200 30" fill="none" stroke="var(--yellow)" stroke-width="54" stroke-linecap="round"/></svg>
+    <svg style="right:-40px;bottom:40px;width:300px" viewBox="0 0 300 300"><path d="M60 40C200 40 270 160 230 270" fill="none" stroke="var(--yellow)" stroke-width="46" stroke-linecap="round"/></svg>
+    <svg style="left:38%;top:-30px;width:120px" viewBox="0 0 120 120"><path d="M20 70C10 30 60 0 90 30S100 110 60 100 30 100 20 70Z" fill="var(--blob)"/></svg>
+    <svg style="right:22%;top:60%;width:90px" viewBox="0 0 120 120"><path d="M20 70C10 30 60 0 90 30S100 110 60 100 30 100 20 70Z" fill="var(--blob)"/></svg>
+  </div>
+
+  <div class="app">
+    <aside class="side">
+      <div class="logo disp">SAQ.<small>MED421 · โพยรุ่นพี่</small></div>
+      <nav class="yrs" id="yrs" aria-label="เลือกรุ่น"></nav>
+      <div class="tipcard">
+        <span class="badge" style="background:var(--yellow)">เคล็ดลับ SAQ</span>
+        <h3 class="disp">ชื่อเชื้อต้องเต็ม สะกดถูก</h3>
+        <p>หลายปีโจทย์สั่งชัดว่าห้ามย่อ และตรวจแค่ชื่อแรกที่เขียน</p>
+        <button class="btn y wide" id="rand" type="button">สุ่มข้อมาฝึก</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="top">
+        <button class="btn circ" id="clear" type="button" aria-label="ล้างการค้นหาและตัวกรอง" title="ล้างตัวกรอง">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <label class="search" for="q">
+          <input id="q" type="search" placeholder="ค้นหาโจทย์ เช่น EKG, crypto, staghorn" autocomplete="off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </label>
+        <label class="toggle" for="auto"><input type="checkbox" id="auto"> โชว์เฉลยทันที</label>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="hero">
+        <div><h1 class="disp" id="h1"></h1><p id="lede"></p></div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div id="list" class="sec"></div>
+    </main>
+
+    <aside class="rail">
+      <div class="me">
+        <div class="ava"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 4v8a6 6 0 0012 0V4"/><path d="M14 18v4a6 6 0 0012 0v-3"/><circle cx="26" cy="16" r="3"/></svg></div>
+        <div><h3 class="disp">คลัง SAQ รายปี</h3><p id="tagline"></p></div>
+      </div>
+      <div><h4 class="disp" style="margin-bottom:10px">ข้อเด่นปีล่าสุด</h4><div id="feat"></div></div>
+      <div><h4 class="disp" style="margin-bottom:10px">หัวข้อที่ออกซ้ำ</h4><div class="trk" id="trk"></div></div>
+    </aside>
+  </div>
+</div>
+
+<div class="ov" id="ov" hidden><div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-labelledby="dtitle"></div></div>
+<div class="lb" id="lb" hidden><img id="lbimg" alt=""></div>
+
+<script id="data" type="application/json">{"years":[{"k":"med35","label":"MED35","sub":"ปีล่าสุด · 2569"},{"k":"med34","label":"MED34","sub":"3 รอบสอบ"},{"k":"med33","label":"MED33","sub":"3 รอบสอบ"},{"k":"med32","label":"MED32","sub":"4 ชุด"},{"k":"med31","label":"MED31","sub":"2 ชุด"},{"k":"med30","label":"MED30","sub":"Formative"},{"k":"med29","label":"MED29","sub":"6 ชุด + คอมเมนต์"},{"k":"unk","label":"ไม่ระบุรุ่น","sub":"โพยไม่ได้บอกปี"},{"k":"med28","label":"MED28","sub":"ไม่มี SAQ","empty":"โพย MED28 เป็นภาพถ่ายข้อสอบ MCQ ทั้งหมด ไม่มีส่วน SAQ"}],"topics":{"ekg":"EKG","xray":"CXR / X-ray","pbs":"PBS","csf":"CSF","micro":"ย้อมเชื้อ","skin":"ผิวหนัง","thyroid":"Thyroid","dm":"DM","joint":"น้ำไขข้อ","ua":"Urine","lft":"LFT","abg":"ABG","fluid":"Pleural / Ascites","endo":"Endo อื่นๆ","lab":"Lab อื่นๆ"},"exams":[{"id":"m35-fa","y":"med35","name":"Formative ครั้งที่ 1","sub":"Loop A+B · SAQ ข้อละ 5 นาที ทำไปทีละข้อ"},{"id":"m35-l1","y":"med35","name":"สอบลงกองครั้งที่ 1","sub":"27 พ.ค. 2569 · OSCE + SAQ 10 สถานี ข้อละ 5 นาที"},{"id":"m35-l2","y":"med35","name":"สอบลงกองครั้งที่ 2","sub":"Loop E+F · บางข้อ SAQ ต่อจาก OSCE"},{"id":"m34-1","y":"med34","name":"สอบลงกองครั้งที่ 1","sub":"Loop A+B · SAQ ข้อละ 5 นาที"},{"id":"m34-2","y":"med34","name":"สอบครั้งที่ 2","sub":"ส่วน SAQ ของ OSCE + SAQ"},{"id":"m34-3","y":"med34","name":"สอบครั้งที่ 3","sub":"Loop NB (loop สุดท้าย) · OSCE + SAQ 10 ข้อ เฉพาะข้อที่เป็น SAQ"},{"id":"m33-1","y":"med33","name":"Formative ครั้งที่ 1","sub":"SAQ 3 ข้อ"},{"id":"m33-2","y":"med33","name":"สอบครั้งที่ 2","sub":"รวบรวมจากโน้ต ‘ตัวอย่างการเขียน’"},{"id":"m33-3","y":"med33","name":"สอบครั้งที่ 3","sub":"Loop E+F · OSCE + SAQ จากคอมเมนต์รุ่นพี่ (เฉพาะสถานีที่เขียนตอบ)","note":"คอมเมนต์รอบนี้ยังเล่าข้อ EKG inferoposterior MI, TSH 25, gram stain น้ำไขข้อ, CPPD, muddy brown cast, เกณฑ์ DM และ eosinophilic meningitis ซึ่งตรงกับชุด ‘SAQ Med 29 loop A’ จึงรวมไว้ที่ MED29 ที่เดียว"},{"id":"m32-a","y":"med32","name":"ชุด A","sub":"SAQ 4 ข้อ (โพยลงไว้ 2 รอบ)"},{"id":"m32-b","y":"med32","name":"ชุด B","sub":"SAQ 4 ข้อ"},{"id":"m32-c","y":"med32","name":"Loop 3","sub":"SAQ 7 ข้อ"},{"id":"m32-d","y":"med32","name":"เลิดสิน กลุ่ม 2","sub":"SAQ + ข้อเขียนต่อจาก OSCE"},{"id":"m31-1","y":"med31","name":"ชุดที่ 1","sub":"SAQ 7 ข้อ"},{"id":"m31-2","y":"med31","name":"ชุดที่ 2","sub":"SAQ 4 ข้อ"},{"id":"m30-1","y":"med30","name":"Formative (โพยระบุว่า Y5)","sub":"SAQ จากรูป: 1. บรรยาย 2. Dx","note":"ส่วนอื่นของโพย MED30 ตัวอักษรเสียทั้งหน้า อ่านไม่ได้"},{"id":"m29-c","y":"med29","name":"Loop C (สอบ)","sub":"SAQ 4 ข้อ"},{"id":"m29-cr","y":"med29","name":"Loop C (ซ่อม)","sub":"SAQ 6 ข้อ"},{"id":"m29-a","y":"med29","name":"Loop A (สอบ)","sub":"SAQ 4 ข้อ"},{"id":"m29-ar","y":"med29","name":"Loop A (ซ่อม)","sub":"SAQ 4 ข้อ"},{"id":"m29-b","y":"med29","name":"Loop B","sub":"SAQ 4 ข้อ"},{"id":"m29-f","y":"med29","name":"Formative ป.5 Loop A","sub":"ข้อ 3 โพยจดไว้ไม่ครบ"},{"id":"m29-k","y":"med29","name":"จากคอมเมนต์รุ่นพี่","sub":"รวมจากเธรดคอมเมนต์ในโพย MED29 เฉพาะที่ระบุว่าเป็น SAQ"},{"id":"mu-1","y":"unk","name":"ชุดที่ 1","sub":"โพยเขียนว่า ‘SAQ ของรุ่นพี่ ไม่รู้ปี’"},{"id":"mu-2","y":"unk","name":"ชุดที่ 2","sub":"โพยเขียนว่า ‘SAQ ของรุ่นพี่ ไม่รู้ปี’"}],"items":[{"id":"m35-fa-1","ex":"m35-fa","n":"ข้อ 1","t":"csf","ti":"Cryptococcus ใน CSF ผู้ป่วย HIV","q":"ผู้ป่วยติดเชื้อ HIV เจาะ CSF ตรวจพบดังรูป","ask":["ส่งตรวจทางห้องปฏิบัติการด้วยวิธีอะไร","อธิบายรูป","เชื้อที่เป็นไปได้มากที่สุด 1 ตัว","ใช้ยารักษาอะไร บอกมา 2 ยา"],"ans":["India ink preparation","Encapsulated round yeast มี halo ใสรอบเซลล์ (capsule)","Cryptococcus neoformans"],"tip":"โพยไม่ได้ตอบข้อยา: Amphotericin B + Fluconazole (แบบที่ MED34 ตอบ) หรือ induction ด้วย AmB + flucytosine แล้วต่อด้วย fluconazole","img":[{"f":"35fa-crypto-indiaink.jpg","c":"India ink: yeast กลม มี capsule ใสล้อมรอบ"}]},{"id":"m35-fa-2","ex":"m35-fa","n":"ข้อ 2","t":"skin","ti":"ผื่นที่หลัง + KOH (Tinea versicolor)","q":"ผู้ชาย แผ่นหลังมีลักษณะดังรูป","ask":["อธิบายลักษณะผิว","ส่งตรวจทางห้องแล็บอะไร","อธิบายลักษณะรา","เชื้อราที่เป็นไปได้มากที่สุด 1 ตัว"],"ans":["Multiple hypopigmented macules, irregular border, fine scale ที่หลัง","KOH 7–10%","Short septate hyphae ปนกลุ่ม round budding yeast (spaghetti and meatballs)","Malassezia furfur"],"img":[{"f":"35fa-tv-back.jpg","c":"ผื่น hypopigmented กระจายทั่วหลัง"},{"f":"35fa-tv-koh.jpg","c":"KOH: เส้นใยสั้นปนกลุ่มสปอร์กลม"}]},{"id":"m35-fa-3","ex":"m35-fa","n":"ข้อ 3","t":"thyroid","ti":"Thyroid nodule + TFT (Toxic adenoma)","q":"หญิงมี hypertension ขี้ร้อน เหงื่อออกมาก แต่ไม่มี exophthalmos ไม่มี thyroid bruit คลำได้ก้อนที่ thyroid ขนาด ~3 cm ขยับได้ โจทย์ให้ TSH, FT3, FT4 พร้อมค่าอ้างอิง (TSH ต่ำ FT3 สูง FT4 สูง)","ask":["แปลผลค่าแล็บ","จะส่งตรวจอะไรเพิ่ม","วินิจฉัยโรคที่เป็นไปได้มากที่สุด 1 โรค"],"ans":["Primary hyperthyroidism (TSH ต่ำ, FT3/FT4 สูง)","Thyroid scan (20 คะแนน), radioactive iodine uptake (10 คะแนน)","Toxic (thyroid) adenoma"],"img":[{"f":"35fa-lms-hotnodule.jpg","c":"ข้อ LMS ที่คล้ายกัน: thyroid scan เป็น hot nodule ก้อนเดียว → toxic adenoma","k":"ref"}]},{"id":"m35-fa-4","ex":"m35-fa","n":"ข้อ 4","t":"micro","ti":"Watery diarrhea · Gram-negative รูปจุลภาค","q":"ผู้ป่วยถ่ายเป็นน้ำ (watery diarrhea) 1 วัน ส่งตรวจพบดังรูป","ask":["อธิบายภาพนี้","บอกเชื้อที่เป็นไปได้ 2 ชื่อ (เขียนชื่อเต็ม)"],"ans":["Gram-negative comma-shaped (curved) bacilli","Vibrio cholerae และอีก 1 ชื่อ (โพยจำไม่ได้)"],"tip":"ชื่อที่ 2 ที่เข้ากับแท่งโค้ง เช่น Vibrio parahaemolyticus · เขียนชื่อเต็ม ห้ามย่อ","img":[{"f":"35fa-gram-comma.jpg","c":"Gram-negative curved rods"}]},{"id":"m35-fa-5","ex":"m35-fa","n":"ข้อ 5","t":"ekg","ti":"EKG: tall peaked T","q":"ให้ EKG มา (โพยไม่ได้แนบรูป)","ask":["อ่าน EKG","บอกโรค"],"ans":["Tall peaked T waves","คนจดคิดว่าเป็น hyperkalemia"]},{"id":"m35-fa-6","ex":"m35-fa","n":"ข้อ 6","t":"pbs","ti":"PBS ที่มี thrombocytopenia","q":"โจทย์ให้ค่าเลือดครบ (RBC, WBC, Plt, RDW, PT, aPTT, neutrophil, lymphocyte) แต่ไม่ให้ค่าอ้างอิง พร้อมรูป PBS ที่มี thrombocytopenia","ask":["อธิบาย PBS ให้ครบ 3 series","วินิจฉัยโรคที่เป็นไปได้มากที่สุด 1 โรค"],"ans":["บรรยาย RBC / WBC / platelet ให้ครบทั้ง 3 series (โพยไม่ได้จดคำตอบ diagnosis)"],"tip":"ถ้าเกล็ดเลือดต่ำอย่างเดียว PT/aPTT ปกติ และเห็น giant platelet ให้นึกถึง ITP แบบข้อของ MED34"},{"id":"m35-fa-7","ex":"m35-fa","n":"ข้อ 7","t":"joint","ti":"น้ำไขข้อ: needle-shaped crystal","q":"ผู้ชาย ปวดข้อ ชอบดื่มเหล้า สูบบุหรี่ เจาะน้ำไขข้อพบดังรูป","ask":["อธิบายผล","วินิจฉัยโรคที่เป็นไปได้มากที่สุด 1 โรค"],"ans":["Needle-shaped crystals (monosodium urate)","Gouty arthritis"],"tip":"ใต้ polarized light เป็น strongly negative birefringence","img":[{"f":"35fa-msu-crystal.jpg","c":"ผลึกรูปเข็ม (MSU)"}]},{"id":"m35-l1-p1","ex":"m35-l1","n":"SAQ-P 1","t":"xray","ti":"CXR: CAP + parapneumonic effusion","ctx":"ต่อจาก OSCE-1: หญิง ไข้ ไอ เหนื่อย 3 วัน (ซักประวัติแล้วส่ง CXR)","q":"Given CXR","ask":["Interpret ตามหลัก ABCDE","Diagnosis"],"ans":["AP film, good quality, bone และ soft tissue ปกติ, trachea midline","Sharp CPA ซ้าย, blunt CPA ขวา, เห็น dome of diaphragm ซ้ายแต่ไม่เห็นด้านขวา","Diffuse alveolar infiltration ที่ right lower lung","Community-acquired pneumonia with parapneumonic effusion"],"img":[{"f":"35l1-cxr.jpg","c":"CXR จากโพย (AP erect mobile)"},{"f":"35l1-cxr-note.jpg","c":"โน้ตเฉลยการอ่าน CXR ในโพย","k":"ref"}]},{"id":"m35-l1-p2","ex":"m35-l1","n":"SAQ-P 2","t":"csf","ti":"CSF analysis: bacterial meningitis","ctx":"ต่อจาก OSCE-2: ไข้ ปวดศีรษะ 3 วัน (ตรวจ neuro แล้วส่ง LP)","q":"ให้ผล CSF analysis มา (โพยไม่ได้จดตัวเลข)","ask":["Interpret","Diagnosis"],"ans":["Bacterial meningitis"],"tip":"ลักษณะที่ควรเขียน: turbid, opening pressure สูง, WBC สูง PMN เด่น, protein สูง, glucose ต่ำ (CSF/blood < 0.4)"},{"id":"m35-l1-p3","ex":"m35-l1","n":"SAQ-P 3","t":"pbs","ti":"PBS: iron deficiency anemia","ctx":"ต่อจาก OSCE-3: หญิง 30 ปี อ่อนเพลีย มีคนทักว่าซีด 1 สัปดาห์ ประจำเดือนมามาก","q":"Given PBS from the patient","ask":["อธิบายรูป PBS","Definitive diagnosis"],"ans":["Hypochromic microcytic RBC, anisopoikilocytosis","Iron deficiency anemia (จาก hypermenorrhea)"],"img":[{"f":"35l1-pbs-ida.jpg","c":"PBS: RBC ซีดและเล็ก"}]},{"id":"m35-l1-7","ex":"m35-l1","n":"ข้อ 7","t":"abg","ti":"ABG ใน COPD","q":"ชายไทย 60 ปี เป็น COPD · ABG: pH 7.30, PaCO2 80 mmHg, HCO3 38 mEq/L","ask":["แปลผล ABG"],"ans":["โพยระบุว่าเป็น COPD exacerbation"],"tip":"Acidemia + PaCO2 สูง → respiratory acidosis · HCO3 ที่คาดใน chronic = 24 + 0.35×40 ≈ 38 ตรงพอดี → chronic respiratory acidosis with appropriate metabolic compensation"},{"id":"m35-l1-8","ex":"m35-l1","n":"ข้อ 8","t":"xray","ti":"KUB: staghorn stone","q":"KUB film: staghorn (นิ่วที่ renal pelvis ทั้งสองข้าง)","ask":["Interpret KUB x-ray","ถ้าตรวจ UA จะเจออะไรที่ specific ที่สุด"],"ans":["Staghorn calculi ที่ renal pelvis ทั้งสองข้าง","Triple phosphate (struvite) crystal"],"tip":"Struvite มากับ urease-producing bacteria เช่น Proteus, urine pH เป็นด่าง, ผลึกรูป coffin lid","img":[{"f":"35l1-kub-staghorn.jpg","c":"KUB: staghorn calculi"}]},{"id":"m35-l1-9","ex":"m35-l1","n":"ข้อ 9","t":"joint","ti":"น้ำไขข้อขุ่น + G/S Gram-negative bacilli","q":"ผู้ป่วยปวด บวม แดง ข้อเข่าขวา เจาะ synovial fluid (แนบรูป) และ G/S พบ Gram-negative bacilli","ask":["9.1 แปลผล synovial fluid","9.2 ให้การวินิจฉัย"],"ans":["Turbid fluid ประมาณ 50 mL, พบ Gram-negative bacilli","Non-gonococcal septic arthritis"],"img":[{"f":"35l1-synovial.jpg","c":"น้ำไขข้อขุ่นสีเหลืองในกระบอกฉีดยา"}]},{"id":"m35-l1-10","ex":"m35-l1","n":"ข้อ 10","t":"dm","ti":"FBS 110, HbA1c 6.3%","q":"ผู้ป่วยหญิงมาตรวจน้ำตาล FBS 110 mg/dL, HbA1c 6.3%","ask":["จงให้การวินิจฉัย","จงบอกเกณฑ์การวินิจฉัยโรคเบาหวาน 4 วิธีอย่างละเอียด"],"ans":["โพยตอบ Impaired glucose tolerance หรือ Impaired fasting glucose","เกณฑ์ 4 วิธีดังรูปตาราง"],"warn":"FBS 100–125 คือ impaired fasting glucose · IGT ต้องใช้ OGTT 2 ชม. 140–199 ซึ่งโจทย์ไม่ได้ให้ → ตอบ prediabetes (IFG, HbA1c 5.7–6.4%)","tip":"FPG ≥ 126 (อดอาหาร ≥ 8 ชม.) · 75-g OGTT 2 ชม. ≥ 200 · random PG ≥ 200 ร่วมกับอาการ · HbA1c ≥ 6.5% · ถ้าไม่มีอาการต้องผิดปกติ 2 ครั้ง","img":[{"f":"35l1-dm-criteria.jpg","c":"ตารางเกณฑ์วินิจฉัยจากโพย","k":"ref"}]},{"id":"m35-l2-1","ex":"m35-l2","n":"SAQ 1","t":"ekg","ti":"EKG: inferior wall STEMI","ctx":"ต่อจาก OSCE ซักประวัติ acute chest pain สงสัย ACS → ส่ง 12-lead EKG และ troponin","q":"ให้ 12-lead EKG","ask":["แปลผล EKG","Diagnosis"],"ans":["Regular sinus rhythm, rate 80–100, normal axis, PR/QRS/QT ปกติ","ST elevation ที่ II, III, aVF (± V3, V4), reciprocal change ที่ I, aVL, ไม่มี pathological Q","Acute inferior (± anterior) wall STEMI"]},{"id":"m35-l2-2","ex":"m35-l2","n":"SAQ 2","t":"lft","ti":"LFT ใน chronic liver disease","ctx":"ต่อจาก OSCE ตรวจร่างกาย signs of chronic liver disease","q":"ให้ผล liver function test","ask":["แปลผล","ส่งตรวจอะไรต่อ"],"ans":["No reversed A/G ratio","AST, ALT สูงแบบ mild–moderate โดย AST > ALT ~2 เท่า","Direct hyperbilirubinemia","ส่ง coagulogram, CBC, HBsAg"],"tip":"AST:ALT ≥ 2 เข้าได้กับ alcoholic liver disease"},{"id":"m35-l2-3","ex":"m35-l2","n":"SAQ 3","t":"ua","ti":"UA: lupus nephritis","ctx":"ต่อจาก OSCE ซักประวัติขาบวม 2 ข้าง: บวมรอบตา ฉี่เป็นฟอง ผื่นแพ้แสง ปวดข้อนิ้ว → ส่ง UA","q":"ให้ผล UA และ urine sediment","ask":["เห็นอะไรในปัสสาวะ","Diagnosis"],"ans":["Oval fat bodies","Lupus nephritis"]},{"id":"m35-l2-4","ex":"m35-l2","n":"SAQ 4","t":"thyroid","ti":"TFT: Graves' disease","q":"ให้ thyroid function test","ask":["แปลผล","Diagnosis","Sign ทางการตรวจร่างกายที่ specific กับโรค"],"ans":["Primary hyperthyroidism","Graves' disease","Exophthalmos, pretibial myxedema, thyroid acropachy, lid lag/retraction"],"tip":"ที่ specific กับ Graves จริงคือ ophthalmopathy, pretibial myxedema, acropachy · lid lag พบได้ใน thyrotoxicosis ทุกสาเหตุ"},{"id":"m35-l2-5","ex":"m35-l2","n":"SAQ 5","t":"xray","ti":"CXR: tension pneumothorax ซ้าย","q":"ให้ chest x-ray","ask":["บรรยายฟิล์ม","Diagnosis","Treatment"],"ans":["CXR PA upright, normal exposure","Visible visceral pleural line, left lung collapse","Trachea และ mediastinum shift ไปขวา, left hemidiaphragm depression","No bone fracture, no subcutaneous emphysema","Tension pneumothorax, left","ICD และ O2 support"],"tip":"ถ้าผู้ป่วย unstable ให้ needle decompression ทันทีก่อนใส่ ICD"},{"id":"m35-l2-6","ex":"m35-l2","n":"SAQ 6","t":"csf","ti":"CSF: eosinophilic meningitis","q":"ผู้ป่วยจากภาคอีสาน กินหอยโข่งดิบ ให้ CSF profile มาแปลผล","ask":["Interpret CSF","เชื้อที่เป็นไปได้มากที่สุด (เขียนให้ถูกทั้งหมด)"],"ans":["Eosinophilic meningitis","Angiostrongylus cantonensis"],"tip":"ต้องสะกดถูกทั้ง genus และ species ห้ามย่อ"},{"id":"m35-l2-7","ex":"m35-l2","n":"SAQ 7","t":"skin","ti":"Tinea versicolor","q":"ให้รูปผื่นมา","ask":["บรรยาย lesion","ใช้สารอะไรในการดูเชื้อ","บรรยายที่เห็นในกล้องจุลทรรศน์","Diagnosis"],"ans":["Multiple well-demarcated hypopigmented macules ที่หลัง","10% KOH","Short septate hyphae with multiple round budding yeast cells (ห้ามเขียนแค่ spaghetti and meatballs)","Tinea (pityriasis) versicolor"],"see":"m35-fa-2"},{"id":"m34-1-1","ex":"m34-1","n":"SAQ 1","t":"ekg","ti":"EKG: บรรยาย + Dx","q":"ให้ EKG (โพยไม่ได้บอกว่าเป็นภาวะอะไร)","ask":["บรรยาย","Diagnosis"],"ans":[]},{"id":"m34-1-2","ex":"m34-1","n":"SAQ 2","t":"xray","ti":"CXR: lung abscess","ctx":"ต่อจาก OSCE case 3: ไอแห้ง 2 สัปดาห์ (ซักประวัติ + แปลผล pleural fluid ด้วย Light's criteria)","q":"ให้ CXR","ask":["บรรยาย","Diagnosis","Treatment"],"ans":["Lung abscess"],"tip":"บรรยาย thick-walled cavity with air–fluid level · รักษาด้วย ATB ที่ครอบคลุม anaerobe เช่น ampicillin/sulbactam หรือ clindamycin นานหลายสัปดาห์"},{"id":"m34-1-3","ex":"m34-1","n":"SAQ 3","t":"pbs","ti":"PBS: บรรยาย + DDx + Ix","q":"ให้ PBS (โพยไม่ได้บอกว่าเป็นภาวะอะไร)","ask":["บรรยาย","DDx 2 โรค","Investigation plan 2 อย่าง"],"ans":[]},{"id":"m34-1-4","ex":"m34-1","n":"SAQ 4","t":"dm","ti":"DKA: investigation + criteria","q":"ผู้ป่วย DKA","ask":["Investigation plan 3 อย่าง พร้อมเหตุผล","Diagnostic criteria"],"ans":[],"tip":"ส่ง plasma glucose, serum ketone (β-hydroxybutyrate), VBG/ABG + electrolyte (anion gap, K) และหา precipitating cause · เกณฑ์ (ADA 2024): glucose ≥ 200 หรือเป็น DM อยู่เดิม, ketone (β-OHB ≥ 3.0 mmol/L), pH < 7.3 และ/หรือ HCO3 < 18"},{"id":"m34-2-1","ex":"m34-2","n":"SAQ 1","t":"abg","ti":"ABG: COPD + DM","q":"ผู้ป่วยชาย มีประวัติ COPD, DM · pH 7.1, PO2 55, PCO2 64, HCO3 24","ask":["แปลผล ABG","Diagnosis"],"ans":[],"tip":"PCO2 สูง → respiratory acidosis · HCO3 ที่คาดแบบ acute ≈ 24 + 0.1×24 ≈ 26 แต่ได้ 24 → มี metabolic acidosis ร่วม · PO2 55 = hypoxemia","warn":"ตัวเลขที่จำมาไม่สอดคล้องกันเต็มที่ คำนวณจาก PCO2 และ HCO3 ได้ pH ≈ 7.20"},{"id":"m34-2-2","ex":"m34-2","n":"SAQ 2","t":"micro","ti":"Sputum: beaded branching bacilli","q":"ชาย 30 ปี มีโรค SLE, lupus nephritis on prednisolone มาด้วยไอ ให้รูป sputum gram stain: gram-positive beaded filamentous branching bacilli, extracellular, PMN predominate","ask":["เป็นเชื้ออะไรได้บ้าง (เขียนแค่ genus)","ส่งตรวจอะไรเพิ่ม"],"ans":["Nocardia spp., Actinomyces spp.","Modified AFB stain, sputum culture"],"tip":"Nocardia ติด modified AFB แต่ Actinomyces ไม่ติด"},{"id":"m34-2-3","ex":"m34-2","n":"SAQ 3","t":"pbs","ti":"Blood smear: sepsis + bleeding","q":"ผู้ชาย 50 ปี มาด้วยไข้ ปัสสาวะแสบขัด อยู่ รพ.สักพักมีไข้หนาวสั่น มี melena, platelet ต่ำ","ask":["อ่าน blood smear","คิดว่า diagnosis คืออะไร"],"ans":[],"tip":"Sepsis + bleeding + thrombocytopenia → นึกถึง DIC: PBS มี schistocyte (MAHA) และเกล็ดเลือดต่ำ"},{"id":"m34-2-4","ex":"m34-2","n":"SAQ 4","t":"xray","ti":"อ่าน CXR","q":"ให้ CXR (โพยไม่ได้จดรายละเอียด)","ask":["อ่าน CXR"],"ans":[]},{"id":"m34-3-2","ex":"m34-3","n":"ข้อ 2","t":"pbs","ti":"PBS: ITP","ctx":"ต่อจากข้อ 1: ซักประวัติผู้ป่วยจำลอง มาด้วยช้ำที่แขนขวา 1 สัปดาห์","q":"ให้รูป PBS","ask":["แปลผล","จะส่ง investigation อะไร 2 อย่าง","วินิจฉัยอะไร"],"ans":["RBC: normochromic normocytic, few anisocytosis, no poikilocytosis · WBC: moderate lymphocyte · Platelet: decreased, giant platelets","ANA titer, anti-HIV, anti-HCV","ITP"]},{"id":"m34-3-4","ex":"m34-3","n":"ข้อ 4","t":"micro","ti":"Gram-negative bacilli ใน AGE","ctx":"ต่อจากข้อ 3: ตรวจร่างกาย (v/s, BP นั่ง–นอน, skin turgor, JVP, CRT) วินิจฉัย AGE with mild dehydration","q":"ให้รูปเชื้อ เป็น gram-negative bacilli","ask":["ตอบเชื้อมา 2 ชื่อ (เขียนชื่อเต็ม)"],"ans":["Escherichia coli, Klebsiella, Salmonella, Shigella (เลือก 2)"]},{"id":"m34-3-6","ex":"m34-3","n":"ข้อ 6","t":"csf","ti":"India ink: cryptococcal meningitis","ctx":"ต่อจากข้อ 5: ซักประวัติผู้ป่วยจำลอง ปวดหัว เป็นไข้ → cryptococcal meningitis (ซ้ำกับ MEQ)","q":"ให้รูป India ink","ask":["บรรยายลักษณะในสไลด์","ให้ยารักษาอะไร 2 ตัว"],"ans":["Encapsulated budding yeast cells","Amphotericin B, Fluconazole"],"see":"m35-fa-1"},{"id":"m34-3-7","ex":"m34-3","n":"ข้อ 7","t":"joint","ti":"Uric acid crystal: gout","q":"ชายอายุ 50 ปี มาด้วยปวดข้อ","ask":["บรรยายภาพสไลด์","วินิจฉัย"],"ans":["Needle-shaped uric acid crystals","Gout"],"see":"m35-fa-7"},{"id":"m34-3-8","ex":"m34-3","n":"ข้อ 8","t":"ekg","ti":"EKG: hyperkalemia ใน CKD","q":"ผู้ป่วย CKD ได้ยา nephrotoxic 2 ตัว ให้รูป EKG","ask":["แปลผล","Diagnosis"],"ans":["Rate 120–125 bpm, sinus tachycardia, P wave present, narrow QRS, tall peaked T","Hyperkalemia"]},{"id":"m34-3-9","ex":"m34-3","n":"ข้อ 9","t":"skin","ti":"Tinea versicolor","q":"ให้รูป lesion และสไลด์","ask":["บรรยาย lesion","บรรยายสไลด์","ส่ง investigation อะไร","Diagnosis"],"ans":["Scaly hypo-/hyperpigmented macules","Spaghetti and meatballs","KOH","Tinea versicolor"],"see":"m35-fa-2"},{"id":"m34-3-10","ex":"m34-3","n":"ข้อ 10","t":"thyroid","ti":"ก้อนที่คอ + TFT: toxic adenoma","q":"มีก้อนที่คอโต ไม่มีตาโปน · TSH ต่ำ, FT3 สูง, FT4 สูง","ask":["แปลผล","ส่งตรวจอะไร","Diagnosis"],"ans":["Primary thyrotoxicosis","Thyroid scan","Toxic adenoma"],"see":"m35-fa-3"},{"id":"m33-1-1","ex":"m33-1","n":"ข้อ 1","t":"endo","ti":"หลังผ่าตัด thyroid: Chvostek / Trousseau","q":"ผู้ป่วยผ่าตัด thyroid gland หลังผ่าตัดพบ Chvostek sign และ Trousseau sign positive","ask":["เกิดจากอะไร","ผู้ป่วยมีภาวะอะไร"],"ans":[],"tip":"Hypocalcemia จาก hypoparathyroidism หลังผ่าตัด (parathyroid ถูกตัดหรือขาดเลือด)"},{"id":"m33-1-2","ex":"m33-1","n":"ข้อ 2","t":"lft","ti":"LFT: AST สูงตัวเดียว","q":"ให้ผล LFT มา มี AST สูงตัวเดียว","ask":["แปลผล"],"ans":[],"tip":"AST สูงเดี่ยวๆ นึกถึงแหล่งนอกตับด้วย เช่น hemolysis, กล้ามเนื้อ (rhabdomyolysis), MI"},{"id":"m33-1-3","ex":"m33-1","n":"ข้อ 3","t":"skin","ti":"Lesion สีเหลืองรอบปาก","q":"Skin lesion รอบๆ ปาก มีสีเหลือง","ask":["บรรยาย","เชื้อ / Diagnosis"],"ans":["โพยลังเลระหว่าง S. aureus กับ herpes simplex"],"tip":"Honey-colored crust รอบปาก → impetigo (S. aureus, S. pyogenes) · ถ้าเป็นตุ่มน้ำกลุ่มบนฐานแดง → HSV (แบบข้อ MED32)"},{"id":"m33-2-1","ex":"m33-2","n":"ข้อ 1","t":"ekg","ti":"EKG: anterolateral wall MI","q":"ให้ 12-lead EKG","ask":["บรรยาย","Diagnosis"],"ans":["Rate 70, normal sinus rhythm, normal axis, narrow QRS","ST elevation ที่ I, aVL, V2–V6 · reciprocal ST depression ที่ III, aVF · ไม่มี Q wave · no chamber enlargement","Anterior and lateral wall MI"]},{"id":"m33-2-2","ex":"m33-2","n":"ข้อ 2","t":"thyroid","ti":"Thyroid nodule: thyroid adenoma","q":"Thyroid nodule (soft, nodular) ให้ TFT: T3 สูง T4 สูง TSH ต่ำ","ask":["แปลผล","จะส่งอะไรเพิ่ม","Diagnosis"],"ans":["Primary hyperthyroidism","(โพยไม่ได้จด)","Thyroid adenoma"],"see":"m35-fa-3"},{"id":"m33-2-3","ex":"m33-2","n":"ข้อ 3","t":"csf","ti":"CSF: tuberculous meningitis","q":"Meningitis ในผู้ป่วยที่มีประวัติ unsafe sex (คิดถึง TB หรือ crypto) ให้ CSF profile","ask":["แปลผล CSF","Diagnosis"],"ans":["High opening pressure, normal closing pressure","Abnormal appearance, WBC สูงเด่น lymphocyte","High protein, low sugar","Tuberculous meningitis"]},{"id":"m33-2-4","ex":"m33-2","n":"ข้อ 4","t":"skin","ti":"Tinea versicolor + KOH","q":"ให้รูป hypopigmented skin และ KOH","ask":["บรรยาย lesion","บรรยาย KOH","Diagnosis"],"ans":["Hypopigmented macules with well-defined border and fine white scales","Short septate hyphae with budding yeast (spaghetti and meatball)","Pityriasis (tinea) versicolor จาก Malassezia furfur"],"see":"m35-fa-2"},{"id":"m33-2-5","ex":"m33-2","n":"ข้อ 5","t":"pbs","ti":"PBS + lab: HS / warm AIHA","q":"ให้ PBS และ lab (โพยจดหัวข้อว่า HS/WAIHA)","ask":["บรรยาย PBS","Diagnosis"],"ans":["Spherocytes, polychromasia (hemolytic blood picture)","Hereditary spherocytosis หรือ warm AIHA"],"tip":"แยกสองโรคนี้ด้วย direct Coombs test (warm AIHA ให้ผลบวก)"},{"id":"m33-3-1","ex":"m33-3","n":"สถานี 1","t":"lab","ti":"ผู้ป่วยซึม + electrolyte","q":"ผู้ป่วยซึมลง ให้ค่า electrolyte, BUN, Cr","ask":["ทำไมผู้ป่วยซึม","DDx 3 โรค"],"ans":[]},{"id":"m33-3-2","ex":"m33-3","n":"สถานี 2","t":"ua","ti":"UA: dysmorphic RBC","q":"ให้ผล UA","ask":["บรรยายว่ามีอะไร","DDx 3 โรค"],"ans":["น่าจะเป็น dysmorphic RBC"],"tip":"Dysmorphic RBC = glomerular hematuria เช่น IgA nephropathy, post-infectious GN, lupus nephritis"},{"id":"m33-3-3","ex":"m33-3","n":"สถานี 3","t":"xray","ti":"CXR: หัวใจโต + blunt CPA","q":"ให้ CXR","ask":["บรรยายฟิล์ม","DDx 3 โรค"],"ans":["Cardiomegaly, blunt costophrenic angle, increased pulmonary vasculature"]},{"id":"m33-3-4","ex":"m33-3","n":"สถานี 4","t":"pbs","ti":"PBS: band form, acanthocyte, spherocyte","q":"ให้ PBS","ask":["บรรยายสไลด์","ภาวะอะไรทำให้เกิด PBS แบบนี้","DDx 3 โรค"],"ans":["มี band form, acanthocyte, spherocyte (คนจดทำไม่ทัน)"]},{"id":"m33-3-8","ex":"m33-3","n":"สถานี 8","t":"ekg","ti":"EKG เต้นเร็ว","q":"ให้ EKG (คนจดรู้แค่ว่าเต้นเร็ว อีกคนเห็นเป็น tombstoning)","ask":["อธิบาย EKG","Treatment เบื้องต้น","หลังกลับเป็น NSR แล้วจะทำอะไรต่อ"],"ans":[]},{"id":"m33-3-9","ex":"m33-3","n":"สถานี 9","t":"micro","ti":"Tzanck smear (HSV)","q":"ให้รูปมา คนจดคิดว่าเป็น Tzanck smear ของ HSV","ask":["ชื่อ test และสิ่งที่เห็น","รักษาอย่างไร (ยา 2 ตัว)"],"ans":["Tzanck smear → multinucleated giant cells","Acyclovir"],"tip":"ตัวที่ 2 เช่น valacyclovir"},{"id":"m33-3-10","ex":"m33-3","n":"สถานี 10","t":"micro","ti":"Cryptococcus neoformans","q":"ให้รูป Cryptococcus neoformans","ask":["test นี้คืออะไร และเห็นอะไร","บรรยายลักษณะเชื้อ","Diagnosis"],"ans":["India ink","Encapsulated budding yeast","Cryptococcus neoformans"],"see":"m35-fa-1"},{"id":"m32-a-1","ex":"m32-a","n":"ข้อ 1","t":"xray","ti":"CXR: ผู้ป่วยเหนื่อย","q":"อ่าน CXR ผู้ป่วยเหนื่อย (คนจดคิดว่าเป็น cardiac tamponade)","ask":["อ่าน CXR","การรักษาต่อ"],"ans":["AP supine (portable), diffuse cephalization"],"tip":"CXR บอก tamponade ตรงๆ ไม่ได้ ที่เห็นคือหัวใจโตรูป water-bottle จาก pericardial effusion · ยืนยันด้วย echo และรักษา tamponade ด้วย pericardiocentesis"},{"id":"m32-a-2","ex":"m32-a","n":"ข้อ 2","t":"csf","ti":"CSF + รูปเชื้อ: Cryptococcus","q":"ปวดหัว stiff neck positive ให้ผล CSF และรูปเชื้อ","ask":["แปลผล CSF","ถามชื่อเชื้อ (เขียนให้ถูกต้อง)"],"ans":["Mild turbid, glucose ต่ำ → fungal meningitis","Cryptococcus neoformans"],"warn":"โพยเขียนว่า opening pressure ลดลงและ protein ต่ำ ซึ่งไม่เข้ากับ cryptococcal meningitis ที่มัก opening pressure สูงและ protein สูง","see":"m35-fa-1"},{"id":"m32-a-3","ex":"m32-a","n":"ข้อ 3","t":"micro","ti":"Sputum: Gram-positive diplococci","q":"ไอ มีเสมหะ","ask":["ส่งตรวจอะไร","บรรยายรูปเชื้อ","ให้ยาอะไร บริหารยาอย่างไร"],"ans":["Sputum Gram stain","Gram-positive diplococci","โพยตอบ Ceftriaxone 250 mg + Levofloxacin"],"warn":"Ceftriaxone 250 mg เป็นขนาดของ gonorrhea · CAP ที่ admit ใช้ ceftriaxone 1–2 g IV วันละครั้งร่วมกับ macrolide หรือใช้ respiratory fluoroquinolone ตัวเดียว ไม่ต้องให้คู่กัน"},{"id":"m32-a-4","ex":"m32-a","n":"ข้อ 4","t":"fluid","ti":"Pleural fluid ในผู้ป่วยไอเป็นเลือด","q":"ประวัติไอเป็นเลือด ให้ผล pleural fluid","ask":["แปลผล","เป็นโรคอะไร","ส่งตรวจเพิ่มเติม 1 อันที่สงสัยที่สุด"],"ans":["Exudate"],"tip":"Lymphocytic exudate + ไอเป็นเลือด → TB pleuritis (ส่ง pleural ADA) หรือ malignancy (ส่ง cytology)"},{"id":"m32-b-1","ex":"m32-b","n":"ข้อ 1","t":"dm","ti":"FBS 110, OGTT 180, HbA1c 6.1","q":"หญิงอายุ 30 ปี ไม่มีอาการ มาตรวจร่างกาย · FBS 110, 75-g OGTT 180, HbA1c 6.1","ask":["จงวินิจฉัย","อธิบายวิธีวินิจฉัยเบาหวาน 4 วิธีอย่างละเอียด"],"ans":[],"tip":"FBS 100–125 = IFG · OGTT 2 ชม. 140–199 = IGT · HbA1c 5.7–6.4 → prediabetes (IFG + IGT)","see":"m35-l1-10"},{"id":"m32-b-2","ex":"m32-b","n":"ข้อ 2","t":"ua","ti":"UA: WBC cast","q":"ไข้สูง คลื่นไส้อาเจียน lower abdominal tenderness","ask":["สิ่งที่พบใน UA","วินิจฉัย","ยา"],"ans":["WBC cast","UTI / acute pyelonephritis","Ceftriaxone"]},{"id":"m32-b-3","ex":"m32-b","n":"ข้อ 3","t":"skin","ti":"Scabies ในผู้ป่วยติดเตียง","q":"ผู้ป่วยติดเตียงเป็น DM ให้รูปรอยแผลและ KOH preparation","ask":["Describe lesion","Diagnosis","ยา"],"ans":["(บรรยายรอยโรคตามรูป)","Scabies","Permethrin cream"]},{"id":"m32-b-4","ex":"m32-b","n":"ข้อ 4","t":"pbs","ti":"PBS: iron deficiency anemia","q":"ดู PBS และประวัติสำคัญ","ask":["บรรยาย","Diagnosis","ยา"],"ans":["Hypochromic microcytic, stomatocyte 1+, tear drop cell","Iron deficiency anemia","Ferrous sulfate หรือเหล็กชนิดรับประทานอื่น"],"see":"m35-l1-p3"},{"id":"m32-c-1","ex":"m32-c","n":"ข้อ 1","t":"fluid","ti":"Pleural effusion: Light's criteria","q":"ให้ค่า pleural fluid","ask":["แปลผล","สงสัยโรคอะไร"],"ans":["Light's criteria: exudate","WBC สูง mononuclear เด่น","สงสัย TB, malignancy"]},{"id":"m32-c-2","ex":"m32-c","n":"ข้อ 2","t":"csf","ti":"CSF + India ink","q":"อ่าน CSF profile และรูป Cryptococcus neoformans ใน India ink","ask":["แปลผล CSF","อธิบายลักษณะเชื้อ","บอกชื่อเชื้อ"],"ans":["India ink","Opening pressure สูง, protein สูง, glucose ต่ำ","Encapsulated budding yeast","Cryptococcus neoformans (สะกดให้ถูก)"],"see":"m35-fa-1"},{"id":"m32-c-3","ex":"m32-c","n":"ข้อ 3","t":"xray","ti":"CXR: pericardial effusion","q":"อ่าน CXR ผู้ป่วยนอนราบไม่ได้","ask":["อ่าน CXR","Dx","Mx"],"ans":["PA upright, ดู position และ trachea","Cardiomegaly (globular heart shape)","Pericardial effusion","Pericardiocentesis"]},{"id":"m32-c-4","ex":"m32-c","n":"ข้อ 4","t":"ekg","ti":"EKG: anterolateral STEMI","q":"ให้ EKG","ask":["แปลผล","Diagnosis"],"ans":["Normal sinus rhythm, rate 90, normal axis","ST elevation ที่ I, aVL, V2, V5 และมี ST depression","STEMI anterolateral wall"]},{"id":"m32-c-5","ex":"m32-c","n":"ข้อ 5","t":"lft","ti":"LFT: แปลผล + ส่งแล็บ","q":"ให้ liver function test","ask":["แปลผล","ส่งแล็บอะไรต่อ"],"ans":["AST, ALT elevated, ALP สูง, direct hyperbilirubinemia, reversed A/G ratio","U/S, CT abdomen, lipid profile, AFP"]},{"id":"m32-c-6","ex":"m32-c","n":"ข้อ 6","t":"ua","ti":"UA: lupus nephritis","q":"แปลผลการตรวจ UA","ask":["แปลผล","Diagnosis"],"ans":["WBC สูง, proteinuria / albuminuria, microscopic hematuria, dysmorphic RBC","Lupus nephritis (glomerulonephritis)"]},{"id":"m32-c-7","ex":"m32-c","n":"ข้อ 7","t":"micro","ti":"Sputum gram stain","q":"ให้ sputum","ask":["ตรวจอะไร","ดูอะไร","ให้ยาอะไร"],"ans":["Gram stain","WBC: PMN","Ceftriaxone"]},{"id":"m32-d-1","ex":"m32-d","n":"ข้อ 1","t":"skin","ti":"ตุ่มน้ำใสรอบมุมปาก (HSV)","q":"ผู้ป่วยมีตุ่มน้ำใสที่รอบมุมปาก ให้รูปมา","ask":["บรรยาย lesion","จะส่ง investigation อะไร 1 อย่าง","บรรยายรูปที่ให้เพิ่ม (Tzanck smear)","Diagnosis"],"ans":["Multiple vesicles หลายระยะบน erythematous base ที่ริมฝีปาก","Tzanck smear หรือ PCR for HSV","Multinucleated giant cells","Herpes simplex (HSV-1) infection"]},{"id":"m32-d-2","ex":"m32-d","n":"ข้อ 2","t":"ekg","ti":"EKG: AF with RVR","q":"ให้อ่านผล EKG","ask":["แปลผล","Diagnosis"],"ans":["Rate 126 bpm, irregular rhythm, ไม่มี identical P wave","Normal axis, narrow QRS, no chamber enlargement","No ST / PR change, no QT prolongation","AF with RVR"],"warn":"โพยเขียนปน ‘sinus tachycardia’ ไว้ด้วย แต่ irregular rhythm + ไม่มี P wave ต้องตอบ AF"},{"id":"m32-d-3","ex":"m32-d","n":"ข้อ 3","t":"xray","ti":"CXR: tension pneumothorax","q":"ให้ CXR","ask":["บรรยายรูป","Diagnosis","Management"],"ans":["CXR PA upright, full inspiration, normal rotation, good exposure","Trachea shift to right, visible visceral pleural line และ absent lung marking ที่ปอดซ้าย, left lung collapse","Blunt left CPA, multiple rib fractures, no cardiomegaly","Tension pneumothorax","Needle thoracostomy (ที่คนจดตอบไปคือ ICD)"],"tip":"มี blunt CPA ร่วมกับ rib fracture → นึกถึง hemopneumothorax ด้วย · unstable ให้ needle decompression ก่อนแล้วใส่ ICD"},{"id":"m32-d-4","ex":"m32-d","n":"ข้อ 4","t":"csf","ti":"CSF: TB meningitis","q":"ไข้ 10 วัน ปวดหัว stiff neck positive · CSF: total protein 200, WBC 200 (L 90%, N 10%), RBC 10, sugar 30 (DTX 150), ADA 140","ask":["แปลผล CSF","Diagnosis","จะส่ง CSF ตรวจอะไรเพิ่มเติม"],"ans":["High opening และ closing pressure, straw color","High protein, low sugar, WBC สูงเด่น lymphocyte, มี RBC","TB meningitis","CSF PCR for TB, CSF C/S และ gram stain, India ink"]},{"id":"m32-d-5","ex":"m32-d","n":"ข้อ 5","t":"lft","ti":"LFT ในผู้ป่วยตัวเหลืองฉี่สีโค้ก","ctx":"ต่อจาก OSCE ซักประวัติตัวเหลืองตาเหลือง: ฉี่สีโค้กทั้งวัน เคยรับเลือดตอนอายุ 10 ปี ไม่มีไข้ ไม่ปวดท้อง → intravascular hemolysis","q":"ให้ผล LFT","ask":["แปลผล LFT","ส่ง investigation เพิ่ม 1 อย่าง"],"ans":["Hyperbilirubinemia (โพยจดว่า direct เด่น), no reversed A/G ratio","AST สูงอย่างเดียว, ALP ปกติ (no cholestasis)","G6PD level หรือ peripheral blood smear"],"warn":"Hemolysis ควรได้ indirect hyperbilirubinemia เด่น ให้ดูตัวเลขในโจทย์อีกครั้ง"},{"id":"m32-d-6","ex":"m32-d","n":"ข้อ 6","t":"pbs","ti":"PBS: malaria","ctx":"ต่อจาก OSCE ซักประวัติไข้ 3 วัน ไปเข้าป่ามา","q":"ให้รูป PBS 2 รูป","ask":["บรรยายรูป 1","บรรยายรูป 2","วินิจฉัยโรค","เชื้อที่ทำให้เกิด 1 เชื้อ"],"ans":["Hypochromic microcytic RBC, ring form มี double chromatin, WBC not seen, thrombocytopenia","Multiple infection ใน RBC, gametocyte","Malarial infection","Plasmodium falciparum"]},{"id":"m32-d-7","ex":"m32-d","n":"ข้อ 7","t":"endo","ti":"หลังผ่าตัด Graves: ชารอบปาก","ctx":"ต่อจาก OSCE: ผู้ป่วย Graves หลังผ่าตัด 8 ชม. ชารอบปาก → ตรวจร่างกาย, ส่ง serum PTH, Ca, albumin","q":"ให้ผลเลือด","ask":["จงแปลผลเลือด","Diagnosis + สาเหตุ"],"ans":["Hypocalcemia, PTH ต่ำ","Hypoparathyroidism หลังผ่าตัดไทรอยด์"]},{"id":"m31-1-1","ex":"m31-1","n":"ข้อ 1","t":"xray","ti":"CXR: heart failure","q":"ให้ CXR ผู้ป่วย CHF","ask":["อธิบาย CXR","บอกว่าคือโรคอะไร"],"ans":["CHF"],"tip":"เขียน cardiomegaly, cephalization, Kerley B lines, perihilar (bat-wing) opacity, pleural effusion"},{"id":"m31-1-2","ex":"m31-1","n":"ข้อ 2","t":"micro","ti":"สไลด์ TB","q":"ให้สไลด์ TB","ask":["เป็น test อะไร และเห็นอะไร","ยาที่ใช้รักษา TB"],"ans":[],"tip":"AFB stain (Ziehl–Neelsen): แท่งสีแดง acid-fast bacilli · ยา 2HRZE/4HR"},{"id":"m31-1-3","ex":"m31-1","n":"ข้อ 3","t":"joint","ti":"Synovial fluid: acute gouty arthritis","q":"ให้ภาพเจาะ synovial fluid","ask":["บรรยายว่าเห็นอะไร","บอกว่าเป็นโรคอะไร"],"ans":["Gout"],"see":"m35-fa-7"},{"id":"m31-1-4","ex":"m31-1","n":"ข้อ 4","t":"pbs","ti":"Blood smear: iron deficiency anemia","q":"ภาพ blood smear","ask":["บรรยาย","บอกว่าเป็นอะไร"],"ans":["Hypochromic microcytic","Iron deficiency anemia"],"see":"m35-l1-p3"},{"id":"m31-1-5","ex":"m31-1","n":"ข้อ 5","t":"abg","ti":"ABG + สาเหตุ hypoxemia","q":"ให้ blood gas ผู้ป่วย","ask":["วิเคราะห์ว่าเป็นแบบไหน","บอกโรคที่ทำให้เกิด hypoxemia ในผู้ป่วย 2 อย่าง"],"ans":[]},{"id":"m31-1-6","ex":"m31-1","n":"ข้อ 6","t":"xray","ti":"KUB: staghorn stone","q":"ภาพ KUB x-ray (คนจดคิดว่าเป็น staghorn stone)","ask":["อ่าน KUB","Urine analysis ควรพบอะไร และอธิบาย"],"ans":[],"tip":"Struvite (triple phosphate) crystal, urine pH เป็นด่าง, มาจาก urease-producing bacteria เช่น Proteus","see":"m35-l1-8"},{"id":"m31-1-7","ex":"m31-1","n":"ข้อ 7","t":"csf","ti":"กินหอยโข่ง + stiff neck","q":"กินหอยโข่งแล้วมีอาการ stiff neck ให้วิเคราะห์ CSF","ask":["วิเคราะห์ CSF","เป็นเชื้ออะไร (สะกดให้ถูกทั้ง genus และ species ห้ามย่อ)"],"ans":[],"tip":"Eosinophilic meningitis จาก Angiostrongylus cantonensis"},{"id":"m31-2-1","ex":"m31-2","n":"ข้อ 1","t":"csf","ti":"CSF: Cryptococcus neoformans","q":"แปลผล CSF profile","ask":["บรรยาย","ชื่อเชื้อ"],"ans":["Cryptococcus neoformans"],"see":"m35-fa-1"},{"id":"m31-2-2","ex":"m31-2","n":"ข้อ 2","t":"micro","ti":"S. pneumoniae","q":"ให้ผลย้อมเชื้อ S. pneumoniae","ask":["บรรยายการตรวจ","บรรยายสิ่งที่เจอ","ยาที่ใช้และขนาดยา"],"ans":["Streptococcus pneumoniae (Gram-positive lancet-shaped diplococci)"]},{"id":"m31-2-3","ex":"m31-2","n":"ข้อ 3","t":"xray","ti":"CXR: pericardial effusion","q":"อ่าน CXR","ask":["อ่าน CXR","Treatment"],"ans":["Pericardial effusion"],"tip":"หัวใจโตรูป water-bottle · มี tamponade ให้ pericardiocentesis"},{"id":"m31-2-4","ex":"m31-2","n":"ข้อ 4","t":"fluid","ti":"Pleural fluid: lymphocytic exudate","q":"ไข้ 2 เดือน ไอปนเลือด น้ำหนักลด ให้ผล pleural fluid (lymphocyte เด่น)","ask":["แปลผลด้วย Light's criteria","Diagnosis"],"ans":["Exudate, lymphocyte เด่น"],"tip":"นึกถึง TB pleuritis ส่ง pleural ADA"},{"id":"m30-1-1","ex":"m30-1","n":"ข้อ 1","t":"micro","ti":"Stool: Cryptosporidium","q":"ให้รูปจาก stool ผู้ป่วย HIV","ask":["บรรยาย","Dx / การรักษา"],"ans":["Cryptosporidium (ย้อม modified acid-fast)","โพยเขียน Bactrim และ treat HIV"],"warn":"Bactrim เป็นยาของ Cystoisospora belli · Cryptosporidium ในผู้ป่วย HIV รักษาหลักด้วย ART (± nitazoxanide)"},{"id":"m30-1-2","ex":"m30-1","n":"ข้อ 2","t":"micro","ti":"Sputum: Gram-negative rod","q":"ให้รูป sputum gram stain","ask":["บรรยาย","Dx"],"ans":["Adequate sputum (WBC > 25, epithelial < 10 /LPF), Gram-negative rod","Klebsiella pneumoniae"]},{"id":"m30-1-3","ex":"m30-1","n":"ข้อ 3","t":"pbs","ti":"PBS: microspherocyte (AIHA)","q":"ให้รูป PBS","ask":["บรรยาย","สาเหตุที่เป็นไปได้"],"ans":["Normochromic normocytic RBC, aniso-poikilocytosis, polychromasia 1–2+, microspherocyte 2+, มี NRC, WBC ปกติ no blast, platelet adequate","สาเหตุ: idiopathic, lymphoma, SLE, solid tumor, drug"]},{"id":"m30-1-4","ex":"m30-1","n":"ข้อ 4","t":"pbs","ti":"PBS: iron deficiency anemia","q":"ให้รูป PBS","ask":["บรรยาย","Dx"],"ans":["Hypochromic microcytic anemia, anisopoikilocytosis 1+, WBC ปกติ, thrombocytosis(?)","Iron deficiency anemia"],"see":"m35-l1-p3"},{"id":"m30-1-5","ex":"m30-1","n":"ข้อ 5","t":"xray","ti":"CXR: anterior mediastinal mass","q":"ให้รูป CXR","ask":["บรรยาย","Dx / DDx"],"ans":["Normal lung parenchyma, anterior mediastinal mass, no cardiomegaly","3T 1L: thymoma, teratoma, thyroid, lymphoma"]},{"id":"m30-1-6","ex":"m30-1","n":"ข้อ 6","t":"ua","ti":"Urine: fatty cast","q":"ให้รูป urine sediment","ask":["บรรยาย","Dx"],"ans":["Fatty cast","Nephrotic syndrome"]},{"id":"m30-1-7","ex":"m30-1","n":"ข้อ 7","t":"ekg","ti":"EKG: hyperkalemia","q":"ให้ EKG","ask":["บรรยาย","Dx"],"ans":["Rate 100/min, normal axis, sinus tachycardia, normal QRS, generalized tall peaked T, normal ST, no PR prolongation","Hyperkalemia"]},{"id":"m30-1-8","ex":"m30-1","n":"ข้อ 8","t":"skin","ti":"ผื่นที่ฝ่ามือ: secondary syphilis","q":"ให้รูปผื่นที่ฝ่ามือ","ask":["บรรยาย","Dx และการรักษา"],"ans":["Papulosquamous rash ที่ฝ่ามือทั้งสองข้าง","Secondary syphilis — benzathine penicillin G IM (neurosyphilis ใช้ penicillin G IV)"]},{"id":"m30-1-9","ex":"m30-1","n":"ข้อ 9","t":"fluid","ti":"Ascitic fluid: low SAAG","q":"Serum albumin 2, total protein 5 · ascitic fluid: WBC 200 (PMN 30, L 60), RBC 50, albumin 1.5, total protein 3.5, G/S no organism","ask":["แปลผล","Dx"],"ans":["Ascitic WBC สูงเด่น lymphocyte, low SAAG (< 1.1), high protein (> 2.5)","TB peritonitis, peritoneal carcinomatosis"]},{"id":"m30-1-10","ex":"m30-1","n":"ข้อ 10","t":"abg","ti":"ABG: pH 7.161, PCO2 71.9","q":"pH 7.161, PCO2 71.9, PO2 81.4, HCO3 19, BE(ecf) −4, ctCO2 26.9, O2 sat 95%","ask":["แปลผล acid–base","Oxygenation","Ventilation"],"ans":["Acute respiratory acidosis with metabolic acidosis","Good oxygenation","Hypoventilation"],"warn":"HCO3 ที่จดมา (19) ไม่เข้ากับ pH, PCO2 และ ctCO2 ที่ให้ คำนวณกลับได้ HCO3 ≈ 25 · ข้อสรุปยังเหมือนเดิม (BE −4)"},{"id":"m29-c-1","ex":"m29-c","n":"ข้อ 1","t":"thyroid","ti":"TFT: primary hypothyroidism","q":"ให้ thyroid function test","ask":["แปลผล + diagnosis","ส่ง investigation อะไรเพิ่มเติม","แผนบริหารยา"],"ans":["Primary hypothyroidism (Hashimoto's thyroiditis)","Anti-thyroid peroxidase (anti-TPO)","Levothyroxine"],"tip":"ถ้ามี adrenal insufficiency ร่วม ต้องให้ steroid ก่อน levothyroxine ไม่งั้นเสี่ยง adrenal crisis"},{"id":"m29-c-2","ex":"m29-c","n":"ข้อ 2","t":"ua","ti":"ไข้ BP drop: WBC cast","q":"ผู้ป่วยมาด้วยไข้, BP drop, tachycardia, no edema","ask":["อ่าน cast","รักษาอย่างไร"],"ans":["WBC cast (pyelonephritis)","Antibiotic + fluid resuscitation"]},{"id":"m29-c-3","ex":"m29-c","n":"ข้อ 3","t":"abg","ti":"ABG ใน asthma","q":"ผู้ป่วยไข้ ไอ หอบ มีโรคประจำตัว asthma ให้ ABG","ask":["แปลผล ABG","Management"],"ans":["Respiratory acidosis with metabolic acidosis","O2 supplement"]},{"id":"m29-c-4","ex":"m29-c","n":"ข้อ 4","t":"pbs","ti":"PBS: AML","q":"ให้ประวัติและ PBS","ask":["บรรยาย PBS (RBC, WBC, platelet)","Diagnosis"],"ans":["มี blast เด่น (Auer rod)","AML"]},{"id":"m29-cr-1","ex":"m29-cr","n":"ข้อ 1","t":"lft","ti":"LFT: ischemic hepatitis","q":"ให้ liver function test","ask":["แปลผล","Diagnosis"],"ans":["No reversed A/G ratio, bilirubin ปกติ","AST/ALT สูงเป็นพันโดย AST เด่น, ALP ปกติ","Ischemic hepatitis"],"tip":"AST/ALT เป็นพันโดย ALT เด่น → นึกถึง viral hepatitis"},{"id":"m29-cr-2","ex":"m29-cr","n":"ข้อ 2","t":"xray","ti":"CXR: pneumonia","q":"ให้ CXR","ask":["อ่าน CXR","Diagnosis"],"ans":["Pneumonia"]},{"id":"m29-cr-3","ex":"m29-cr","n":"ข้อ 3","t":"csf","ti":"CSF: Angiostrongylus","q":"ให้ CSF profile","ask":["แปลผล","ชื่อเชื้อ"],"ans":["Elevated opening และ closing pressure (> 20), whitish turbid","WBC สูงเด่น lymphocyte และ eosinophil, low sugar (< 50% ของ blood sugar), high protein","Angiostrongylus cantonensis"]},{"id":"m29-cr-4","ex":"m29-cr","n":"ข้อ 4","t":"ekg","ti":"EKG: inferior wall MI","q":"ให้ EKG","ask":["แปลผล","Diagnosis"],"ans":["ST elevation ที่ II, III, aVF","Inferior wall MI"]},{"id":"m29-cr-5","ex":"m29-cr","n":"ข้อ 5","t":"thyroid","ti":"TFT: แปลผล + ส่งแล็บ + รักษา","q":"ให้ thyroid function test","ask":["แปลผล","ส่ง lab อะไรเพิ่ม","รักษา"],"ans":[]},{"id":"m29-cr-6","ex":"m29-cr","n":"ข้อ 6","t":"pbs","ti":"PBS: iron deficiency anemia","q":"ให้ PBS","ask":["บรรยาย","Diagnosis"],"ans":["RBC: hypochromic microcytic, aniso 2+, poikilo 2+, ovalocyte, target cell, pencil cell 1+, burr cell 2+, few fragmented RBC","WBC ปกติ neutrophil เด่น, platelet 15–20/OF","Iron deficiency anemia"]},{"id":"m29-a-1","ex":"m29-a","n":"ข้อ 1","t":"ua","ti":"Fresh urine: muddy brown cast","q":"ผู้ป่วย chronic cirrhosis มีเลือดออก ให้ดู fresh urine","ask":["เจออะไร","Diagnosis"],"ans":["Muddy brown (granular) cast","Acute tubular necrosis"]},{"id":"m29-a-2","ex":"m29-a","n":"ข้อ 2","t":"dm","ti":"FBS 105, OGTT 160","q":"DM? · FBS 105, 75-g OGTT 160","ask":["เป็นอะไร","บอก criteria DM มา 4 อย่าง"],"ans":["Prediabetes: impaired fasting glucose + impaired glucose tolerance","FPG ≥ 126, OGTT 2 ชม. ≥ 200, random ≥ 200 ร่วมกับอาการ, HbA1c ≥ 6.5%"],"see":"m35-l1-10"},{"id":"m29-a-3","ex":"m29-a","n":"ข้อ 3","t":"joint","ti":"Synovial fluid: gout","q":"Synovial fluid WBC 26,000, RBC 0, culture negative, turbid yellow ให้รูปเห็น needle crystal","ask":["แปลผล synovial fluid และบอกว่าเห็นอะไรจากรูป","Diagnosis"],"ans":["Turbid yellow, low viscosity, WBC สูงเด่น PMN, no RBC, no organism","Needle crystal, negative birefringence","Gout"],"see":"m35-fa-7"},{"id":"m29-a-4","ex":"m29-a","n":"ข้อ 4","t":"csf","ti":"LP: eosinophilic meningitis","q":"LP: opening และ closing pressure 28, CSF glucose 20 (blood glucose 100), protein 96, WBC 100 (PMN 35, lymphocyte 45, eosinophil 25) · ประวัติมาจากอีสาน กินหอยดิบ","ask":["แปลผล LP","เขียนชื่อเชื้อ"],"ans":["Eosinophilic meningitis","Angiostrongylus cantonensis"]},{"id":"m29-ar-1","ex":"m29-ar","n":"ข้อ 1","t":"ekg","ti":"EKG: inferoposterior MI","q":"ผู้ป่วยมาด้วยเหนื่อย ให้อ่าน EKG","ask":["อ่าน EKG","Diagnosis 1 โรค"],"ans":["ST elevation ที่ II, III, aVF, V4–V6","ST depression ที่ aVR, aVL, V1–V3","Acute inferoposterior wall MI"]},{"id":"m29-ar-2","ex":"m29-ar","n":"ข้อ 2","t":"thyroid","ti":"TSH 25: primary hypothyroidism","q":"TSH 25 (0.35–4.94), FT3 2.2 (2.3–6.90), FT4 0.83 (0.8–1.71)","ask":["Diagnosis","ส่ง lab อะไรต่อ","Treatment และสิ่งที่ต้อง F/U"],"ans":["Primary hypothyroidism","Anti-thyroid peroxidase","Levothyroxine, F/U TSH หลัง 4–8 สัปดาห์"]},{"id":"m29-ar-3","ex":"m29-ar","n":"ข้อ 3","t":"joint","ti":"Gram stain น้ำไขข้อ: S. aureus","q":"ให้ gram stain ของ synovial fluid","ask":["เจออะไรบ้าง","เชื้อที่น่าจะเป็น pathogen"],"ans":["Turbid yellow, very low viscosity, poor mucin clot, WBC สูงเด่น PMN","Gram-positive cocci in clusters","Staphylococcus aureus (septic arthritis)"]},{"id":"m29-ar-4","ex":"m29-ar","n":"ข้อ 4","t":"joint","ti":"ปวดเข่าเรื้อรัง: CPPD","q":"ปวดเข่าขวา 5 ปี ครั้งนี้เข้า รพ.ด้วย ACS และปวดเข่ามากขึ้นระหว่างนอน รพ. เจาะข้อดู crystal ใน fresh smear ไม่เจอเชื้อ","ask":["Problem list","Provisional diagnosis","DDx 1 โรค"],"ans":["Chronic knee joint pain for 5 years","Crystal ไม่ใช่รูปเข็ม → CPPD (calcium pyrophosphate dihydrate)","DDx: gout, osteoarthritis"]},{"id":"m29-b-1","ex":"m29-b","n":"ข้อ 1","t":"pbs","ti":"PBS: AML + Auer rod","q":"ให้ PBS ผู้ป่วยสูงอายุ","ask":["บรรยาย","Diagnosis","Treatment"],"ans":["RBC: normochromic normocytic anemia · WBC: myeloblast > 20% มี Auer rod · Platelet ลดลง (pancytopenia)","AML (หรือตอบ leukemia ก็ได้คะแนน)","Palliative care ไม่ให้ chemo เพราะอายุมาก"],"warn":"โน้ตในโพยเขียน all-trans retinoic acid ไว้ด้วย ATRA ใช้เฉพาะ APL (AML-M3)"},{"id":"m29-b-2","ex":"m29-b","n":"ข้อ 2","t":"xray","ti":"CXR: lobar pneumonia","q":"ให้ CXR","ask":["อ่าน","Diagnosis"],"ans":["เขียน PIER / ABCDE ให้ครบ","Lobar pneumonia"]},{"id":"m29-b-3","ex":"m29-b","n":"ข้อ 3","t":"micro","ti":"Sputum: Gram-negative diplococci","q":"Sputum ของผู้ป่วย COPD ที่เป็น pneumonia","ask":["อ่านผล","เขียนชื่อเชื้อ"],"ans":["Adequate sputum (WBC > 25, epithelial < 10 /LPF), Gram-negative diplococci","Moraxella catarrhalis"]},{"id":"m29-b-4","ex":"m29-b","n":"ข้อ 4","t":"abg","ti":"ABG: 3 ด้าน","q":"แปลผล ABG","ask":["เขียน 3 อย่าง: oxygenation, ventilation และ acid–base"],"ans":[],"tip":"PCO2 สูง = hypoventilation · A–a gradient ปกติ ≈ 2.5 + อายุ/4 · anion gap = Na − Cl − HCO3 (ปกติ ~12)"},{"id":"m29-f-1","ex":"m29-f","n":"ข้อ 1","t":"ua","ti":"Urine: RBC cast","q":"ให้ประวัติไข้ เจ็บคอ ให้รูป urine","ask":["เป็น cast อะไร","เจอ cast นี้ในโรคอะไร"],"ans":["RBC cast","Acute GN เช่น post-streptococcal GN, IgA nephropathy, RPGN"]},{"id":"m29-f-2","ex":"m29-f","n":"ข้อ 2","t":"micro","ti":"Sputum: intracellular GNDC","q":"ให้ผลย้อม sputum","ask":["อ่านผล","ชื่อเชื้อ"],"ans":["Intracellular Gram-negative diplococci in sputum (หน้าตาเหมือน Neisseria แต่อยู่ในปอด)","Moraxella catarrhalis"]},{"id":"m29-f-4","ex":"m29-f","n":"ข้อ 4","t":"xray","ti":"CXR: RUL pneumonia","q":"ให้ CXR","ask":["อ่านผล","Diagnosis"],"ans":["Patchy infiltration + air bronchogram ที่ปอดขวา (บอกข้างด้วย)","Loss of ascending aorta silhouette, trachea midline, no effusion","Pneumonia (lobar pneumonia RUL)"]},{"id":"m29-k-1","ex":"m29-k","n":"คอมเมนต์","t":"pbs","ti":"PBS: Auer rod","q":"ให้ PBS มี Auer rod","ask":["บรรยาย","Dx","ส่งตรวจอะไร"],"ans":["Auer rod","AML (คนจดคิดว่า M3)"]},{"id":"m29-k-2","ex":"m29-k","n":"คอมเมนต์","t":"pbs","ti":"PBS: malaria","q":"ให้ PBS","ask":["บรรยาย","เป็นเชื้ออะไร","Complication (เลือก 3 ข้อ)"],"ans":["Plasmodium falciparum","Severe malaria: cerebral malaria/ชัก, renal impairment, noncardiogenic pulmonary edema, liver dysfunction, hypoglycemia, metabolic acidosis"]},{"id":"m29-k-3","ex":"m29-k","n":"คอมเมนต์","t":"micro","ti":"ไข่พยาธิ: Ascaris","q":"ให้รูปไข่พยาธิ","ask":["Identify","ยารักษา 2 ตัว"],"ans":["Ascaris lumbricoides egg","Albendazole, Mebendazole"]},{"id":"m29-k-4","ex":"m29-k","n":"คอมเมนต์","t":"joint","ti":"Gonococcal arthritis","q":"ผู้ป่วยปวดข้อ ให้ gram stain","ask":["บรรยายภาพ","ให้ยาอะไร ขนาดเท่าไร"],"ans":["Ceftriaxone"],"tip":"Gram-negative diplococci ใน PMN · disseminated gonococcal infection ให้ ceftriaxone 1 g IV/IM ทุก 24 ชม."},{"id":"m29-k-5","ex":"m29-k","n":"คอมเมนต์","t":"lab","ti":"ก้อนแถวข้อศอก","q":"ก้อนแถวข้อศอก firm consistency","ask":["DDx","ยา 4 ชนิด"],"ans":[]},{"id":"m29-k-6","ex":"m29-k","n":"คอมเมนต์","t":"xray","ti":"CXR + ยา","q":"ให้ film chest","ask":["บรรยาย + แปลผล","ให้ยาอะไร"],"ans":[]},{"id":"m29-k-7","ex":"m29-k","n":"คอมเมนต์","t":"joint","ti":"ปวดข้อนิ้ว ข้อมือ ข้อเข่า","q":"ผู้ป่วยมาด้วยปวดข้อนิ้ว ข้อมือ ข้อเข่า","ask":["จะถามอะไรเพิ่ม พร้อมเหตุผล"],"ans":[]},{"id":"m29-k-8","ex":"m29-k","n":"คอมเมนต์","t":"lab","ti":"ผู้ป่วยซึม + lab","q":"ผู้ป่วยมาด้วยซึม ให้แล็บมา","ask":["บรรยายผลแล็บ","DDx 3 โรค"],"ans":[]},{"id":"m29-k-9","ex":"m29-k","n":"คอมเมนต์","t":"ekg","ti":"EKG: acute pericarditis","q":"ให้ EKG","ask":["อ่าน EKG","Treatment"],"ans":["Diffuse ST elevation → acute pericarditis","Aspirin / NSAIDs; colchicine ในรายที่เป็นซ้ำ"]},{"id":"m29-k-10","ex":"m29-k","n":"คอมเมนต์","t":"xray","ti":"CXR + lateral film: ผู้ป่วยเหนื่อย","q":"ให้ X-ray (มี lateral film ด้วย) ผู้ป่วยมาด้วยเหนื่อย","ask":["บรรยายฟิล์ม","DDx 3 โรค","จะส่งแล็บอะไรเพิ่ม"],"ans":[]},{"id":"mu-1-1","ex":"mu-1","n":"ข้อ 1","t":"ekg","ti":"EKG 4 แบบ","q":"EKG: acute pericarditis, AV block, hyperkalemia, MI อย่างละอัน","ask":["อ่านและวินิจฉัยแต่ละอัน"],"ans":["MI ต้องมี ST elevation ตาม wall ต่างๆ"]},{"id":"mu-1-2","ex":"mu-1","n":"ข้อ 2","t":"xray","ti":"CXR: pneumonia","q":"CXR เป็น pneumonia","ask":["ให้ DDx 3 อัน"],"ans":[]},{"id":"mu-1-3","ex":"mu-1","n":"ข้อ 3","t":"abg","ti":"ABG","q":"ให้ ABG","ask":["แปลผล"],"ans":[]},{"id":"mu-1-4","ex":"mu-1","n":"ข้อ 4","t":"pbs","ti":"PBS: MAHA","q":"ให้ PBS","ask":["4.1 บรรยาย PBS","4.2 DDx 3 โรค"],"ans":["NCNC, schistocyte 2+, spherocyte 2+, polychromasia, platelet ลดลง (~1/OF) → MAHA","DIC, TTP, HUS"]},{"id":"mu-1-5","ex":"mu-1","n":"ข้อ 5","t":"csf","ti":"CSF มี RBC: herpes","q":"ให้ CSF profile มี RBC","ask":["5.1 แปลผล / เชื้อ","5.2 Treatment"],"ans":["Elevated/normal OP, มี RBC, WBC สูงเด่น lymphocyte, sugar ปกติ, protein สูง → viral","Herpes simplex","Acyclovir"]},{"id":"mu-1-6","ex":"mu-1","n":"ข้อ 6","t":"dm","ti":"Endocrine: DM","q":"ซักประวัติ ตรวจร่างกาย และ lab ของ DM","ask":["Lab และ test ที่ใช้ตรวจ complication"],"ans":["Diabetic nephropathy: urine microalbuminuria","Diabetic neuropathy: 10-g monofilament, 128-Hz tuning fork","ABI เพื่อดู vascular"]},{"id":"mu-2-1","ex":"mu-2","n":"ข้อ 1","t":"endo","ti":"Cushing syndrome","q":"ผู้ป่วย Cushing syndrome","ask":["Lab","Imaging","Treatment"],"ans":["Dexamethasone suppression test → ACTH level","MRI pituitary","Pituitary surgery"]},{"id":"mu-2-2","ex":"mu-2","n":"ข้อ 2","t":"pbs","ti":"PBS: Evans syndrome","q":"ให้ PBS: thrombocytopenia, NCNC, polychromasia","ask":["Diagnosis","Treatment"],"ans":["Evans syndrome (AIHA + ITP)","โพย: dexamethasone 4 mg IV q 6 hr 2–4 สัปดาห์ + omeprazole หรือ IVIG 1 g/kg/day 1–2 วัน"],"tip":"ขนาดที่ใช้บ่อยกว่า: prednisolone 1 mg/kg/day"},{"id":"mu-2-3","ex":"mu-2","n":"ข้อ 3","t":"xray","ti":"CXR: hydropneumothorax หลัง tap","q":"ให้ CXR","ask":["บรรยาย","สาเหตุ","Treatment"],"ans":["Massive pleural effusion / hydropneumothorax","Iatrogenic (tap โดนปอด)","ไม่มี mediastinal shift → observe · V/S เปลี่ยนหรือเหนื่อยขึ้น → ICD"]},{"id":"mu-2-4","ex":"mu-2","n":"ข้อ 4","t":"ekg","ti":"EKG: atrial flutter","q":"ให้ EKG","ask":["อ่าน EKG"],"ans":["Atrial rate ~300 (flutter wave ห่างกัน 1 ช่องใหญ่), variable block","Atrial flutter"]},{"id":"mu-2-5","ex":"mu-2","n":"ข้อ 5","t":"micro","ti":"Stool: Cystoisospora belli","q":"ผู้ป่วย HIV ส่ง stool exam","ask":["Diagnosis","เชื้อ","Treatment"],"ans":["Cystoisosporiasis","Cystoisospora belli","โพยเขียน Clotrimazole"],"warn":"ยาที่ถูกคือ TMP-SMX (co-trimoxazole) · clotrimazole เป็นยาทาเชื้อรา"},{"id":"mu-2-6","ex":"mu-2","n":"ข้อ 6","t":"abg","ti":"ABG","q":"ให้ ABG","ask":["แปลผล"],"ans":["Acute respiratory acidosis with compensation"]},{"id":"mu-2-7","ex":"mu-2","n":"ข้อ 7","t":"micro","ti":"Modified AFB: Nocardia","q":"ให้ผลย้อม modified AFB","ask":["อธิบาย","ชื่อเชื้อ"],"ans":["Gram-positive beaded filamentous branching, modified AFB positive","Nocardia spp."]},{"id":"mu-2-8","ex":"mu-2","n":"ข้อ 8","t":"fluid","ti":"Ascites: high SAAG","q":"Ascitic fluid: high SAAG, low protein, PMN predominate","ask":["Diagnosis","Lab ที่ส่งต่อ"],"ans":["Cirrhosis","HBsAg, anti-HBs, anti-HBc, anti-HCV, LFT"],"tip":"High SAAG + low protein + PMN สูง (≥ 250) ต้องนึกถึง SBP ด้วย"},{"id":"mu-2-9","ex":"mu-2","n":"ข้อ 9","t":"skin","ti":"Generalized umbilicated papules","q":"ผู้ป่วย HIV มี generalized umbilicated papules","ask":["Diagnosis"],"ans":["โพยเขียน Histoplasma capsulatum / condyloma lata"],"tip":"Umbilicated papules ใน HIV ที่ CD4 ต่ำ: Talaromyces marneffei, Cryptococcus, Histoplasma และ molluscum contagiosum"}]}</script>
+<script>
+(function(){
+const D = JSON.parse(document.getElementById('data').textContent);
+const TCOL = {ekg:'pink',xray:'blue',pbs:'peach',csf:'yellow',micro:'mint',skin:'peach',thyroid:'lilac',dm:'yellow',joint:'mint',ua:'yellow',lft:'peach',abg:'blue',fluid:'mint',endo:'lilac',lab:'sand'};
+const col = t => 'var(--' + (TCOL[t]||'sand') + ')';
+const EX = Object.fromEntries(D.exams.map(e=>[e.id,e]));
+const ITEMS = D.items.map(it=>Object.assign({}, it, {y: EX[it.ex].y}));
+const BYID = Object.fromEntries(ITEMS.map(i=>[i.id,i]));
+const YEARS = D.years;
+const YL = Object.fromEntries(YEARS.map(y=>[y.k,y]));
+const COUNTED = YEARS.filter(y=>!y.empty && y.k!=='unk').map(y=>y.k);
+
+/* illustrations (no original picture) */
+const S = 'fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"';
+const ILL = {
+  ekg:`<svg viewBox="0 0 120 70" ${S}><path d="M4 40h18l4-5 4 5h6l4-26 5 46 4-20h10q6-10 12 0h45" /><path d="M4 62h112M4 8h112" stroke-width="1.2" opacity=".35"/></svg>`,
+  xray:`<svg viewBox="0 0 120 80" ${S}><path d="M60 8v24M60 32l-10 8M60 32l10 8"/><path d="M48 18C30 18 20 40 22 64c10 6 22 4 30 0 2-16 0-34-4-46zM72 18c18 0 28 22 26 46-10 6-22 4-30 0-2-16 0-34 4-46z" fill="var(--ill)"/><path d="M28 34q8-4 18 0M26 46q10-4 22 0M92 34q-8-4-18 0M94 46q-10-4-22 0" stroke-width="1.8"/></svg>`,
+  pbs:`<svg viewBox="0 0 120 80" ${S}><g fill="var(--ill)"><circle cx="24" cy="24" r="12"/><circle cx="56" cy="18" r="12"/><circle cx="92" cy="28" r="12"/><circle cx="36" cy="56" r="12"/><circle cx="96" cy="60" r="12"/></g><g stroke-width="1.6"><circle cx="24" cy="24" r="5"/><circle cx="56" cy="18" r="5"/><circle cx="92" cy="28" r="5"/><circle cx="36" cy="56" r="5"/><circle cx="96" cy="60" r="5"/></g><circle cx="66" cy="54" r="11" fill="var(--lilac)"/><path d="M60 52q6-6 12 2" stroke-width="2"/></svg>`,
+  micro:`<svg viewBox="0 0 120 80" ${S}><circle cx="60" cy="40" r="34" fill="var(--ill)"/><path d="M40 30l8 3M66 22l3 8M78 44l8-2M50 52l6 6M70 58l7-3M36 44l5 6M58 38l7 2" stroke-width="4"/></svg>`,
+  csf:`<svg viewBox="0 0 120 80" ${S}><path d="M46 6h28M50 6v58a10 10 0 0020 0V6" fill="var(--ill)"/><path d="M50 36h20v28a10 10 0 01-20 0z" fill="currentColor" opacity=".25"/><path d="M84 20h18M84 32h12M84 44h16" stroke-width="2"/></svg>`,
+  skin:`<svg viewBox="0 0 120 80" ${S}><path d="M30 76V40c0-14 12-24 30-24s30 10 30 24v36" fill="var(--ill)"/><circle cx="60" cy="10" r="8" fill="var(--ill)"/><g stroke-width="1.8" fill="currentColor" fill-opacity=".18"><ellipse cx="46" cy="40" rx="6" ry="4"/><ellipse cx="70" cy="34" rx="5" ry="3.5"/><ellipse cx="62" cy="52" rx="7" ry="4.5"/><ellipse cx="78" cy="56" rx="4" ry="3"/><ellipse cx="44" cy="60" rx="4.5" ry="3"/></g></svg>`,
+  lab:`<svg viewBox="0 0 120 80" ${S}><rect x="30" y="8" width="60" height="66" rx="6" fill="var(--ill)"/><path d="M48 8v-2h24v2"/><path d="M40 26h24M40 40h24M40 54h24" stroke-width="2"/><path d="M76 30v-8l-4 4M76 22l4 4M76 44v8l-4-4M76 52l4-4" stroke-width="2"/></svg>`,
+  crystal:`<svg viewBox="0 0 120 80" ${S}><circle cx="60" cy="40" r="34" fill="var(--ill)"/><path d="M38 28l20 10M62 20l10 26M44 52l26-6M76 30l6 22M50 62l16-8" stroke-width="2.2"/></svg>`,
+  cast:`<svg viewBox="0 0 120 80" ${S}><circle cx="60" cy="40" r="34" fill="var(--ill)"/><rect x="36" y="32" width="48" height="16" rx="8" fill="currentColor" fill-opacity=".15"/><g stroke-width="1.6"><circle cx="46" cy="40" r="3"/><circle cx="56" cy="38" r="3"/><circle cx="66" cy="42" r="3"/><circle cx="75" cy="39" r="3"/></g></svg>`
+};
+const VIS = {ekg:'ekg',xray:'xray',pbs:'pbs',csf:'csf',micro:'micro',skin:'skin',thyroid:'lab',dm:'lab',joint:'crystal',ua:'cast',lft:'lab',abg:'lab',fluid:'csf',endo:'lab',lab:'lab'};
+const ill = t => ILL[VIS[t]||'lab'];
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const firstImg = it => (it.img||[]).find(i=>i.k!=='ref') || null;
+
+/* state */
+let state = {view:'med35', topic:null, q:''};
+let auto = false;
+try { auto = localStorage.getItem('saq-auto')==='1'; } catch(e) {}
+const autoEl = document.getElementById('auto'); autoEl.checked = auto;
+autoEl.addEventListener('change', ()=>{ auto = autoEl.checked; try{localStorage.setItem('saq-auto', auto?'1':'0')}catch(e){} });
+
+function fromHash(){
+  const h = (location.hash||'').slice(1);
+  if (h==='all' || YL[h]) state.view = h;
+}
+
+/* sidebar */
+const yrsEl = document.getElementById('yrs');
+function countFor(k){ return k==='all' ? ITEMS.length : ITEMS.filter(i=>i.y===k).length; }
+function renderYears(){
+  const icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>';
+  const home = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-5h4v5"/></svg>';
+  let h = `<button class="yr" type="button" data-v="all" aria-current="${state.view==='all'}">${home}<span><span class="yl">ทุกรุ่น</span><span class="ys">เรียงจากปีล่าสุด</span></span><span class="yc">${countFor('all')}</span></button>`;
+  for (const y of YEARS){
+    const n = countFor(y.k);
+    h += `<button class="yr" type="button" data-v="${y.k}" aria-current="${state.view===y.k}"${y.empty?' disabled':''}>${icon}<span><span class="yl">${esc(y.label)}</span><span class="ys">${esc(y.sub)}</span></span><span class="yc">${y.empty?'–':n}</span></button>`;
+  }
+  yrsEl.innerHTML = h;
+}
+yrsEl.addEventListener('click', e=>{
+  const b = e.target.closest('.yr'); if(!b || b.disabled) return;
+  state.view = b.dataset.v; state.q=''; qEl.value='';
+  try{ history.replaceState(null,'','#'+state.view);}catch(err){ location.hash = state.view; }
+  render(); document.querySelector('.main').scrollIntoView({block:'start'});
+});
+
+/* chips */
+const chipsEl = document.getElementById('chips');
+function pool(){
+  if (state.q) return ITEMS;
+  return state.view==='all' ? ITEMS : ITEMS.filter(i=>i.y===state.view);
+}
+function renderChips(){
+  const p = pool(); const counts = {};
+  p.forEach(i=>counts[i.t]=(counts[i.t]||0)+1);
+  const keys = Object.keys(D.topics).filter(k=>counts[k]);
+  chipsEl.innerHTML = keys.map(k=>`<button class="chip" type="button" data-t="${k}" aria-pressed="${state.topic===k}" style="--c:${col(k)}"><span class="dot">${ill(k)}</span>${esc(D.topics[k])} <span class="n">${counts[k]}</span></button>`).join('')
+    + (state.topic ? ` <button class="linkbtn" type="button" data-t="">ดูทั้งหมด</button>` : '');
+}
+chipsEl.addEventListener('click', e=>{
+  const b = e.target.closest('[data-t]'); if(!b) return;
+  const t = b.dataset.t; state.topic = (t && state.topic!==t) ? t : null; render();
+});
+
+/* search */
+const qEl = document.getElementById('q');
+qEl.addEventListener('input', ()=>{ state.q = qEl.value.trim(); render(); });
+document.getElementById('clear').addEventListener('click', ()=>{ state.q=''; qEl.value=''; state.topic=null; render(); qEl.focus(); });
+const hay = it => [it.ti,it.q,it.ctx,(it.ask||[]).join(' '),(it.ans||[]).join(' '),it.tip,it.warn,D.topics[it.t],EX[it.ex].name,YL[it.y].label].join(' ').toLowerCase();
+
+/* list */
+let visible = [];
+function card(it){
+  const im = firstImg(it); const nAsk = (it.ask||[]).length;
+  const thumb = im
+    ? `<img src="img/${esc(im.f)}" alt="" loading="lazy"><span class="badge img">มีรูป</span>`
+    : `<span class="ill">${ill(it.t)}</span><span class="badge">${esc(D.topics[it.t])}</span>`;
+  return `<button class="card" type="button" data-id="${it.id}"><div class="thumb" style="--c:${col(it.t)}">${thumb}</div>
+    <div class="cbody"><p class="ctitle">${esc(it.ti)}</p><div class="cfoot"><span class="ex">${esc(it.n)}</span><b>${nAsk} คำถาม</b></div></div></button>`;
+}
+function render(){
+  renderYears(); renderChips();
+  let items = pool();
+  if (state.q){ const q = state.q.toLowerCase(); items = items.filter(i=>hay(i).includes(q)); }
+  if (state.topic) items = items.filter(i=>i.t===state.topic);
+  visible = items;
+  const h1 = document.getElementById('h1'), lede = document.getElementById('lede'), stats = document.getElementById('stats');
+  const yr = YL[state.view];
+  if (state.q){ h1.textContent = 'ผลการค้นหา'; lede.textContent = `“${state.q}” ในทุกรุ่น`; }
+  else if (state.view==='all'){ h1.textContent = 'SAQ ทุกรุ่น'; lede.textContent = 'เรียงจาก MED35 ลงไป แยกตามรอบสอบ กดการ์ดเพื่อดูโจทย์ รูป และเฉลย'; }
+  else { h1.textContent = 'SAQ ' + yr.label; lede.textContent = yr.k==='unk' ? 'ชุดที่โพย MED29 ลงไว้ว่าเป็นของรุ่นพี่ แต่ไม่ได้บอกปี' : 'แยกตามรอบสอบ กดการ์ดเพื่อดูโจทย์ รูป และเฉลยจากโพย'; }
+  if (state.topic) lede.textContent += ' · เฉพาะหัวข้อ ' + D.topics[state.topic];
+  const nImg = items.filter(i=>firstImg(i)).length;
+  stats.innerHTML = `<span class="stat"><b>${items.length}</b>ข้อ</span><span class="stat"><b>${new Set(items.map(i=>i.ex)).size}</b>รอบสอบ</span><span class="stat"><b>${nImg}</b>มีรูป</span>`;
+
+  const list = document.getElementById('list');
+  if (!items.length){
+    list.innerHTML = `<div class="empty"><strong>ไม่พบข้อที่ตรงกัน</strong>ลองคำอื่น หรือกดปุ่มย้อนกลับเพื่อล้างตัวกรอง</div>`; return;
+  }
+  const multiYear = state.q || state.view==='all';
+  let html = ''; let lastY = null;
+  const order = D.exams.map(e=>e.id);
+  for (const exId of order){
+    const its = items.filter(i=>i.ex===exId); if(!its.length) continue;
+    const ex = EX[exId];
+    if (multiYear && ex.y!==lastY){ html += `<div class="yearband"><span>${esc(YL[ex.y].label)}</span></div>`; lastY = ex.y; }
+    html += `<section class="sec"><div class="sechead"><h2 class="disp">${esc(ex.name)}</h2><span class="sub">${esc(ex.sub||'')}</span><span class="cnt">${its.length} ข้อ</span></div>`
+      + (ex.note && !state.topic && !state.q ? `<p class="secnote">${esc(ex.note)}</p>` : '')
+      + `<div class="grid">${its.map(card).join('')}</div></section>`;
+  }
+  list.innerHTML = html;
+}
+document.getElementById('list').addEventListener('click', e=>{ const c = e.target.closest('.card'); if(c) openItem(c.dataset.id, visible); });
+
+/* rail */
+function renderRail(){
+  const yrsN = COUNTED.length;
+  document.getElementById('tagline').textContent = `โพย MED29–MED35 · ${ITEMS.length} ข้อ`;
+  const f = BYID['m35-l1-p1']; const fi = firstImg(f);
+  document.getElementById('feat').innerHTML = `<button class="feat" type="button" data-id="${f.id}"><div class="ph"><img src="img/${fi.f}" alt="CXR จากข้อ ${esc(f.n)}"><span class="badge" style="background:var(--pink)">MED35 · ลงกอง 1</span></div>
+    <div class="fb"><b>${esc(f.ti)}</b><span><span>${esc(f.n)}</span><span>${(f.ask||[]).length} คำถาม</span></span></div></button>`;
+  const rows = Object.keys(D.topics).map(k=>{
+    const its = ITEMS.filter(i=>i.t===k); const ys = new Set(its.filter(i=>COUNTED.includes(i.y)).map(i=>i.y));
+    return {k, n:its.length, ys:ys.size};
+  }).filter(r=>r.n).sort((a,b)=>b.ys-a.ys || b.n-a.n);
+  document.getElementById('trk').innerHTML = rows.map(r=>`<button class="trow" type="button" data-t="${r.k}" aria-pressed="${state.topic===r.k && state.view==='all'}" style="--c:${col(r.k)}"><span class="ic">${ill(r.k)}</span>
+    <span><b>${esc(D.topics[r.k])}</b><small><span>ออก ${r.ys}/${yrsN} รุ่น</span><span>${r.n} ข้อ</span></small><span class="bar"><i style="width:${Math.round(r.ys/yrsN*100)}%"></i></span></span></button>`).join('');
+}
+document.getElementById('feat').addEventListener('click', e=>{ const b=e.target.closest('[data-id]'); if(b) openItem(b.dataset.id, ITEMS.filter(i=>i.y==='med35')); });
+document.getElementById('trk').addEventListener('click', e=>{
+  const b = e.target.closest('.trow'); if(!b) return;
+  const t = b.dataset.t;
+  if (state.view==='all' && state.topic===t){ state.topic=null; } else { state.view='all'; state.topic=t; state.q=''; qEl.value=''; }
+  try{ history.replaceState(null,'','#'+state.view);}catch(err){}
+  render(); renderRail(); document.querySelector('.main').scrollIntoView({block:'start', behavior:'smooth'});
+});
+
+/* modal */
+const ov = document.getElementById('ov'), dlg = document.getElementById('dlg');
+let cur = {list:[], i:0}; let lastFocus = null;
+function openItem(id, list){
+  lastFocus = lastFocus || document.activeElement;
+  const l = (list && list.some(x=>x.id===id)) ? list : ITEMS;
+  cur = {list:l, i:l.findIndex(x=>x.id===id)};
+  draw(); ov.hidden = false; document.documentElement.style.overflow='hidden';
+  dlg.scrollTop = 0; dlg.querySelector('.x').focus();
+}
+function closeItem(){ ov.hidden = true; document.documentElement.style.overflow=''; if(lastFocus) { try{lastFocus.focus();}catch(e){} } lastFocus=null; }
+function draw(){
+  const it = cur.list[cur.i]; const ex = EX[it.ex]; const y = YL[it.y];
+  const imgs = it.img||[];
+  let fig = '';
+  if (imgs.length){
+    fig = `<div class="figs">${imgs.map(m=>`<figure class="fig"><button type="button" data-zoom="img/${esc(m.f)}" aria-label="ขยายรูป: ${esc(m.c)}"><img src="img/${esc(m.f)}" alt="${esc(m.c)}"></button>
+      <figcaption><span class="badge" style="background:${m.k==='ref'?'var(--blue)':'var(--pink)'}">${m.k==='ref'?'ประกอบเฉลย':'รูปในโพย'}</span><span>${esc(m.c)}</span></figcaption></figure>`).join('')}</div>`;
+  } else {
+    const see = it.see && BYID[it.see];
+    fig = `<div class="noimg" style="--c:${col(it.t)}"><span class="ic">${ill(it.t)}</span><span>โพยรุ่นนี้ไม่มีรูปต้นฉบับ${see?` · <button class="linkbtn" type="button" data-go="${see.id}">ดูรูปตัวอย่างแบบเดียวกันจาก ${esc(YL[see.y].label)} ${esc(see.n)}</button>`:''}</span></div>`;
+  }
+  const ans = (it.ans||[]).length ? `<ul>${it.ans.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>` : `<p class="none">โพยไม่ได้จดคำตอบข้อนี้</p>`;
+  const notes = (it.warn?`<div class="note warn"><b>ระวัง</b><span>${esc(it.warn)}</span></div>`:'') + (it.tip?`<div class="note tip"><b>แนวตอบเพิ่ม</b><span>${esc(it.tip)} <em style="opacity:.75">(ไม่ได้มาจากโพย)</em></span></div>`:'');
+  dlg.innerHTML = `<div class="dhead"><div style="min-width:0"><div class="meta"><span class="badge" style="background:var(--yellow)">${esc(y.label)}</span><span class="badge" style="background:var(--paper);color:var(--fg)">${esc(ex.name)} · ${esc(it.n)}</span><span class="badge" style="background:${col(it.t)}">${esc(D.topics[it.t])}</span></div>
+      <h2 class="disp" id="dtitle">${esc(it.ti)}</h2></div><button class="btn circ x" type="button" aria-label="ปิด">✕</button></div>
+    <div class="dbody">
+      ${it.ctx?`<div class="ctx"><b>บริบท</b>${esc(it.ctx)}</div>`:''}
+      <p class="stem">${esc(it.q)}</p>
+      ${fig}
+      <div class="asks"><h3 class="disp">คำถาม</h3><ol>${(it.ask||[]).map(a=>`<li>${esc(a)}</li>`).join('')}</ol></div>
+      <button class="btn y reveal" type="button" aria-expanded="${auto}" ${auto?'hidden':''}>แสดงเฉลย</button>
+      <div class="ansbox" ${auto?'':'hidden'}><h3 class="disp">เฉลยจากโพย</h3><div class="ans">${ans}</div>${notes}</div>
+    </div>
+    <div class="dfoot"><button class="btn" type="button" data-nav="-1" ${cur.i<=0?'disabled':''}>‹ ข้อก่อน</button><span class="pos">${cur.i+1} / ${cur.list.length}</span><button class="btn" type="button" data-nav="1" ${cur.i>=cur.list.length-1?'disabled':''}>ข้อถัดไป ›</button></div>`;
+}
+dlg.addEventListener('click', e=>{
+  if (e.target.closest('.x')) return closeItem();
+  const r = e.target.closest('.reveal'); if (r){ r.hidden = true; dlg.querySelector('.ansbox').hidden = false; return; }
+  const n = e.target.closest('[data-nav]'); if (n && !n.disabled){ cur.i += +n.dataset.nav; draw(); dlg.scrollTop=0; return; }
+  const g = e.target.closest('[data-go]'); if (g){ openItem(g.dataset.go, ITEMS); return; }
+  const z = e.target.closest('[data-zoom]'); if (z){ document.getElementById('lbimg').src = z.dataset.zoom; document.getElementById('lb').hidden = false; }
+});
+ov.addEventListener('click', e=>{ if (e.target===ov) closeItem(); });
+document.getElementById('lb').addEventListener('click', ()=>{ document.getElementById('lb').hidden = true; });
+document.addEventListener('keydown', e=>{
+  if (!document.getElementById('lb').hidden && e.key==='Escape'){ document.getElementById('lb').hidden = true; return; }
+  if (ov.hidden) return;
+  if (e.key==='Escape') closeItem();
+  if (e.key==='ArrowRight' && cur.i<cur.list.length-1){ cur.i++; draw(); }
+  if (e.key==='ArrowLeft' && cur.i>0){ cur.i--; draw(); }
+});
+document.getElementById('rand').addEventListener('click', ()=>{
+  const p = visible.length ? visible : ITEMS; const it = p[Math.floor(Math.random()*p.length)]; openItem(it.id, p);
+});
+window.addEventListener('hashchange', ()=>{ fromHash(); render(); renderRail(); });
+
+fromHash(); render(); renderRail();
+})();
+</script>

@@ -64,6 +64,16 @@ python3 export_text.py            # export/<ระบบ>.md + export/ALL.md
 
 > **ไม่ต้องแนบไฟล์อะไรเพิ่มในแชทใหม่** — โพยเก่าและ NL Syllabus อยู่ในโฟลเดอร์ `sources/` แล้ว
 
+## 5.1 หน้า SAQ แยกตามรุ่น (`saq/`)
+
+หน้าเว็บรวม **SAQ อย่างเดียว** จากโพย MED29–MED35 (144 ข้อ) แยกตามรุ่นและรอบสอบ
+https://claude.ai/artifact/H7x3LS9x8TcQQERfmG9jiM
+
+- ข้อมูลอยู่ที่ `saq/saq_data.json` · หน้าเว็บ `saq/template.html` · รูป `saq/img/`
+- สร้างหน้าใหม่: `python3 saq/build_saq.py` → `saq/index.html` แล้ว publish พร้อมไฟล์ใน `saq/img/` (ส่ง `url` ข้างบนเพื่อคงลิงก์เดิม)
+- รูปมีเฉพาะ MED35 (ดึงจาก Google Doc "MED Y4 | Pastpapers and review from MD35 (RJ)") · MED28–34 มาจาก `sources/MED28-34_poy_text.txt` ซึ่งไม่มีไฟล์รูป
+- ช่อง `tip` / `warn` ในข้อมูลคือแนวตอบเพิ่ม/จุดที่โพยตอบผิด ไม่ได้มาจากโพย
+
 ## 6. งานค้าง
 
 1. **ทำระบบที่เหลือ** ตามลำดับที่แนะนำ: Infectious (5 คาบ ใหญ่สุด) → Neuro → GI → Endocrine → Hemato → Skin → Onco
