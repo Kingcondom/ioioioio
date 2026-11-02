@@ -14,3 +14,8 @@
 
 ข้อที่ไม่ได้ใส่: สไลด์ ABG ข้อ 32 (เป็นข้อความในรูป และตัวเลข pH ไม่สอดคล้องกับ Henderson–Hasselbalch) ·
 EKG hyperK และ PBS thrombocytopenia ใน FA SAQ (ในโพยไม่มีรูป)
+
+## แท็บ "ข้อสอบแยกปี" (Version 26)
+`python3 ward_drill/patch_years.py ward_drill/index.html` — รวมข้อทุกระบบที่มีฟิลด์ `years` ตามปี MED28–MED35 (ไม่เพิ่มข้อใหม่)
+กรองได้ตาม Part และที่มา (คลังข้อสอบเก่า / ข้อใหม่ที่อิงปีนั้น) · แสดงทีละ 60 ข้อ · ลิงก์ตรง `#year-35`
+ถ้า republish จากหน้าเว็บสดใหม่ ให้รัน `pic35/patch_drill.py` ก่อน แล้วค่อย `patch_years.py`
