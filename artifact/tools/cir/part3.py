@@ -165,12 +165,12 @@ FIG_SAAG = {
 <line x1="80" y1="118" x2="60" y2="146" class="ln" marker-end="url(#ah)"/><line x1="140" y1="118" x2="166" y2="146" class="ln" marker-end="url(#ah)"/>
 <rect x="6" y="148" width="116" height="92" rx="8" class="ok"/><text x="64" y="166" class="xs b mid tok">protein &lt; 2.5</text><text x="64" y="186" class="xs mid">sinusoid ไม่รั่ว</text><text x="64" y="204" class="xs b mid">ตับแข็ง</text><text x="64" y="222" class="xs mid">Budd–Chiari ท้าย</text>
 <rect x="128" y="148" width="124" height="92" rx="8" class="bx"/><text x="190" y="166" class="xs b mid">protein ≥ 2.5</text><text x="190" y="186" class="xs mid">sinusoid ปกติรั่ว</text><text x="190" y="204" class="xs b mid">Cardiac ascites</text><text x="190" y="222" class="xs mid">Budd–Chiari แรก · VOD</text>
-<rect x="270" y="148" width="160" height="92" rx="8" class="bad"/><text x="350" y="166" class="xs b mid tbad">protein ≥ 2.5</text><text x="350" y="186" class="xs mid">เยื่อบุช่องท้องรั่ว</text><text x="350" y="204" class="xs b mid">มะเร็ง · TB</text><text x="350" y="222" class="xs mid">pancreatic · nephrotic*</text>
+<rect x="270" y="148" width="160" height="92" rx="8" class="bad"/><text x="350" y="166" class="xs b mid tbad">protein ≥ 2.5</text><text x="350" y="186" class="xs mid">เยื่อบุช่องท้องรั่ว</text><text x="350" y="204" class="xs b mid">มะเร็ง · TB</text><text x="350" y="222" class="xs mid">pancreatic · biliary</text>
 </svg>"""}
 
 ANIM_ASC = {
  "title": "Ascites เกิดอย่างไร — peripheral arterial vasodilation",
- "svg": """<svg viewBox="0 0 440 260" role="img" aria-label="ภาพเคลื่อนไหวการเกิด ascites portal hypertension sinusoid ความดันสูง หลอดเลือดช่องท้องขยาย effective volume ต่ำ RAAS sympathetic ADH กระตุ้นไตเก็บเกลือและน้ำ น้ำรั่วเข้าช่องท้อง albumin ต่ำ" xmlns="http://www.w3.org/2000/svg">
+ "svg": """<svg viewBox="0 0 440 300" role="img" aria-label="ภาพเคลื่อนไหวการเกิด ascites portal hypertension sinusoid ความดันสูง หลอดเลือดช่องท้องขยาย effective volume ต่ำ RAAS sympathetic ADH กระตุ้นไตเก็บเกลือและน้ำ น้ำรั่วเข้าช่องท้อง albumin ต่ำ" xmlns="http://www.w3.org/2000/svg">
 <rect x="10" y="10" width="190" height="44" rx="10" class="wa"/><text x="105" y="30" class="sm b mid">Portal hypertension</text><text x="105" y="46" class="xs mid">ความดัน sinusoid ↑</text>
 <g data-s="2"><rect x="240" y="10" width="190" height="44" rx="10" class="ms"/><text x="335" y="30" class="sm b mid">Splanchnic vasodilation</text><text x="335" y="46" class="xs mid">NO ↑ → เลือดกองในช่องท้อง</text>
 <line x1="200" y1="32" x2="238" y2="32" class="ln" marker-end="url(#ah)"/></g>
@@ -178,11 +178,11 @@ ANIM_ASC = {
 <line x1="335" y1="54" x2="335" y2="82" class="ln" marker-end="url(#ah)"/></g>
 <g data-s="4"><rect x="240" y="158" width="190" height="56" rx="10" class="ac"/><text x="335" y="176" class="sm b mid tac">RAAS · SNS · ADH</text><text x="335" y="192" class="xs mid">ไตเก็บ Na และน้ำ</text><text x="335" y="206" class="xs mid">(Na ต่ำ · ไตหดตัว → HRS)</text>
 <line x1="335" y1="128" x2="335" y2="156" class="ln" marker-end="url(#ah)"/></g>
-<g data-s="5"><path d="M240,186 C150,186 120,160 110,128" class="lac w2 fl" marker-end="url(#ah-ac)"/><text x="160" y="206" class="xs tac">ปริมาตรเลือดเพิ่ม</text></g>
-<rect x="20" y="84" width="170" height="44" rx="22" class="sk"/><text x="105" y="110" class="sm b mid">ช่องท้อง</text>
+<g data-s="5"><path d="M240,186 C150,186 120,165 108,132" class="lac w2 fl" marker-end="url(#ah-ac)"/><text x="150" y="204" class="xs tac">ปริมาตรเลือดเพิ่ม</text></g>
+<g data-x="5"><rect x="20" y="84" width="170" height="44" rx="22" class="sk"/><text x="105" y="110" class="sm b mid">ช่องท้อง</text></g>
 <line x1="105" y1="54" x2="105" y2="82" class="lwa w2 fl" marker-end="url(#ah-wa)"/>
 <g data-s="5"><rect x="20" y="84" width="170" height="44" rx="22" class="wa pl"/><text x="105" y="110" class="sm b mid twa">Ascites ↑</text></g>
-<g data-s="6"><rect x="20" y="150" width="190" height="66" rx="10" class="ok"/><text x="30" y="170" class="xs b tok">จุดรักษา</text><text x="30" y="188" class="xs">จำกัดเกลือ + spironolactone (ต้าน RAAS)</text><text x="30" y="206" class="xs">LVP ต้องคืน albumin</text></g>
+<g data-s="6"><rect x="10" y="230" width="420" height="58" rx="10" class="ok"/><text x="22" y="250" class="xs b tok">จุดรักษา</text><text x="22" y="268" class="xs">จำกัดเกลือ + spironolactone (ต้าน RAAS) · LVP ต้องคืน albumin</text><text x="22" y="282" class="xs mu">(ไม่คืน albumin → effective volume ยิ่งต่ำ → HRS)</text></g>
 </svg>""",
  "steps": [
   {"t": "เริ่มที่ portal hypertension", "cap": "ความดันใน sinusoid สูง → น้ำเหลืองจากตับและลำไส้สร้างมากเกินท่อน้ำเหลืองรับ → **รั่วเข้าช่องท้อง** · สไลด์: increased pressure forcing fluid out of intravascular space"},

@@ -269,3 +269,12 @@ Brenner & Rector, Goldman-Cecil) และ **ระบุที่มาไว�
 ไฟล์ที่ขึ้น ⚠️ เนื้อหาหลักเป็น **ภาพตาราง ESC** ที่ text layer ดึงไม่ออก — ถ้าจะเขียนบทเรียน
 คาบ 13 ให้ครบตามสไลด์จริง ต้องเปิดดูภาพจากสองไฟล์นั้นเพิ่ม (หรือใช้เนื้อหาจากไกด์ไลน์ ESC ต้นทางแทน
 แล้วระบุ `source` ตามสไลด์)
+
+## คาบ 3/11 · Liver cirrhosis and complications — ผศ.สยาม ศิรินธรปัญญา · อ. 3 พ.ย. (GI unit รพ.ราชวิถี)
+
+| ไฟล์ | fileId | ดึงข้อความ |
+|---|---|---|
+| Lec Cirrhosis and complication Rx.pdf (51 หน้า · Drive โฟลเดอร์สไลด์ `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj`) | `146DmuSy-7gIZ_aZaTJNI94ZSdn-DrjDF` | ✅ **ครบ** ด้วย `read_file_content` (สระไทยบางตัวหายแต่อ่านออก) · `download_file_content` ใช้ไม่ได้ ไฟล์ 9.6 MB ทำ MCP หลุด |
+
+**เขียนเป็นบทเรียนแล้วครบ** — `artifact/tools/build_cirrhosis.py` + `tools/cir/part*.py` · 15 หัวข้อ · MCQ 40 + Mock 6 · MEQ 2 · OSCE 1
+ส่วนที่เป็นภาพในสไลด์ (stage ของ HE · ความชุก varices ตาม Child) ใช้ West Haven และข้อความจาก guideline แทน และระบุว่า "เพิ่มเติม"

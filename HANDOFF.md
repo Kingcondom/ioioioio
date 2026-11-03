@@ -367,3 +367,15 @@ thread `0a0d34fd` แล้ว (26 ต.ค.) **รอคำตอบก่อน
   Salmon NL (ชิปใต้ชื่อหัวข้อ) → v `1793470906-1542`
 - ถ้าเพิ่มคาบใหม่ใน learn: รัน `python3 postit/build_cards.py` แล้ว publish `data/sec.json` `data/q.json` ขึ้น Post-it ไม่งั้นหัวข้อใหม่จะค้นหา/ปักไม่ได้
 - ถ้า build drill ใหม่จาก pipeline ปุ่มจะหาย ต้องใส่ `postit/drill_pin_edits.json` ซ้ำ
+
+---
+
+## 11. อัปเดตจาก Drive 3 พ.ย. 2569 — คาบ Cirrhosis
+
+- โฟลเดอร์สไลด์ใน Drive ของผู้ใช้คือ `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` · "update drive" = หาไฟล์ใหม่ในโฟลเดอร์นี้ที่ยังไม่มีคาบใน learn
+  (ณ 3 พ.ย. มี 5 ไฟล์: AKI · Gastroenteritis · Image in chest · LFT 2570 · **Cirrhosis ← ใหม่**)
+- เพิ่ม **GI คาบ `3/11` Liver cirrhosis and complications** (ผศ.สยาม) → learn v51 `1793691439-58c1` · Post-it v4 `1793691502-b930`
+- ต้นฉบับ: `artifact/tools/build_cirrhosis.py` อ่าน `tools/cir/part*.py` (แยกไฟล์เพื่อไม่ให้ไฟล์เดียวใหญ่) · รันซ้ำได้ (แทนคาบเดิมด้วย lec เดียวกัน)
+- ข้อ Mock ที่ผูกแล้ว: MOCK-012 · 096 · 147 (ซ้ำกับคาบอื่นได้) · 148 · 151 · 164
+- `postit/index.html` ใน repo เคยตามหลัง artifact สด (27 KB vs 37 KB) — ดึงของสดมาแล้ว · `artifact/data/hemonc.json` ก็ดึงของสดมาแล้ว
+- ตรวจด้วย Playwright: ทุกหัวข้อเรนเดอร์ ไม่มี `[[fig:]]` ค้าง ไม่ล้นที่ 390 px · ภาพเคลื่อนไหวดูขั้นสุดท้ายแล้วไม่มีข้อความทับกัน

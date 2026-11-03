@@ -142,7 +142,7 @@ ANIM_HE = {
 <path d="M160,240 L248,240" class="ln w2 fl" marker-end="url(#ah)"/><text x="204" y="232" class="xs mid mu">portal vein</text>
 <rect x="250" y="20" width="170" height="80" rx="30" class="wa"/><text x="335" y="44" class="sm b mid twa">สมอง</text>
 <text x="335" y="66" class="xs mid" data-x="2">ปกติ NH₃ ต่ำ</text>
-<g data-s="2"><path d="M160,214 C170,120 210,70 248,60" class="lbad w2 fl" marker-end="url(#ah-bad)"/><text x="150" y="120" class="xs b tbad">shunt อ้อมตับ</text></g>
+<g data-s="2"><path d="M160,214 C170,120 210,70 248,60" class="lbad w2 fl" marker-end="url(#ah-bad)"/><text x="174" y="190" class="xs b tbad">shunt อ้อมตับ</text></g>
 <g data-s="3"><text x="335" y="66" class="xs b mid">astrocyte: NH₃ + glutamate</text><text x="335" y="82" class="xs b mid tbad">→ glutamine → บวม</text>
 <text x="335" y="128" class="xs mid">+ GABA ↑ · false neurotransmitter</text><text x="335" y="144" class="xs mid">(octopamine) · mercaptan · SCFA</text></g>
 <g data-s="4"><rect x="10" y="20" width="200" height="74" rx="10" class="ms"/><text x="22" y="40" class="xs b tms">ตัวเร่ง</text><text x="22" y="58" class="xs">GI bleed · ท้องผูก · โปรตีนมาก · ติดเชื้อ</text><text x="22" y="76" class="xs">K ต่ำ/alkalosis · ยานอนหลับ · ขาดน้ำ</text></g>
