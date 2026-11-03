@@ -31,3 +31,9 @@ python3 postit/build_cards.py      # อ่าน ../artifact/data + salmon/ →
 ## แพตช์ Ward Drill (ใช้ซ้ำถ้า build drill ใหม่จาก pipeline)
 
 `drill_pin_edits.json` = คู่ old/new สำหรับ `edit_version` (เพิ่ม `pinTag()` แล้วต่อท้าย `qno` ใน renderMCQ และข้อสอบเก่า)
+
+## โพสต์อิทที่เขียนเอง (3 พ.ย. 2569 · v5 `1793713925-b6dd`)
+
+ปุ่ม **+ เขียนเอง** แถบบน → ช่องเขียนบนสุดของหน้าจัดการ · เก็บใน `state.own[id] = {f, b, t, u}` (ลบ = `{del:1, u}` tombstone)
+ซิงก์ไปกับเอกสารเดียวกัน `data/users/<id>/postit` · รวมข้ามเครื่องด้วย `mergeOwn` (ใบไหน `u` ใหม่กว่าชนะ)
+การ์ดมี `pid = "o-<id>"` · ไม่มีเฉลย + มี " = " / " → " ใช้ `cloze()` เดียวกับ pearl · ซูมแล้วมีปุ่มแก้/ลบแทนลิงก์บทเรียน
