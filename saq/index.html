@@ -181,6 +181,30 @@ button{font:inherit;color:inherit}
 .asks h3,.ansbox h3{margin:0 0 8px;font-size:17px}
 .asks ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:4px}
 .asks li{padding-left:2px}
+.asks li + li{margin-top:8px}
+.asks label{display:block;font-weight:500}
+.asks textarea{display:block;width:100%;margin-top:6px;min-height:52px;resize:vertical;border:2px solid var(--ink);border-radius:12px;background:var(--paper);color:var(--fg);font:inherit;font-size:14px;line-height:1.5;padding:8px 11px}
+.asks textarea::placeholder{color:var(--muted)}
+.asks textarea:focus{outline:none;box-shadow:var(--sh-sm)}
+.acts{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.acts .hint{font-size:12.5px;color:var(--muted)}
+.grade{background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--sh-sm)}
+.ghead{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.score{font-family:var(--display);font-weight:700;font-size:34px;line-height:1;font-synthesis:none;font-variant-numeric:tabular-nums}
+.score small{font-size:15px;color:var(--muted)}
+.ghead p{margin:0;flex:1;min-width:0;font-size:14px}
+.gparts{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.gparts li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px;align-items:start;font-size:13.5px}
+.gparts .q{display:block;color:var(--muted);font-size:12.5px}
+.badge.v-correct{background:var(--mint)} .badge.v-partial{background:var(--yellow)} .badge.v-wrong{background:var(--pink)} .badge.v-blank{background:var(--paper);color:var(--fg)}
+.gmodel h4{margin:0 0 4px;font-size:15px}
+.gmodel ul{margin:0;padding-left:20px;font-size:13.5px}
+.gnote{font-size:11.5px;color:var(--muted);margin:0}
+.busy{display:flex;align-items:center;gap:12px;font-size:13.5px;flex-wrap:wrap}
+.spin{width:18px;height:18px;border:3px solid var(--ink);border-right-color:transparent;border-radius:50%;animation:spin .8s linear infinite;flex:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cdone + b{margin-left:6px}
+.cdone{margin-left:auto;font-family:var(--mono);font-size:11px;border:1.5px solid var(--ink);border-radius:99px;padding:0 7px;background:var(--mint);color:var(--on-tint)}
 .reveal{align-self:flex-start}
 .ansbox{display:flex;flex-direction:column;gap:12px}
 .ans{background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px}
@@ -391,8 +415,8 @@ function render(){
   const h1 = document.getElementById('h1'), lede = document.getElementById('lede'), stats = document.getElementById('stats');
   const yr = YL[state.view];
   if (state.q){ h1.textContent = 'ผลการค้นหา'; lede.textContent = `“${state.q}” ในทุกรุ่น`; }
-  else if (state.view==='all'){ h1.textContent = 'SAQ ทุกรุ่น'; lede.textContent = 'เรียงจาก MED35 ลงไป แยกตามรอบสอบ กดการ์ดเพื่อดูโจทย์ รูป และเฉลย'; }
-  else { h1.textContent = 'SAQ ' + yr.label; lede.textContent = yr.k==='unk' ? 'ชุดที่โพย MED29 ลงไว้ว่าเป็นของรุ่นพี่ แต่ไม่ได้บอกปี' : 'แยกตามรอบสอบ กดการ์ดเพื่อดูโจทย์ รูป และเฉลยจากโพย'; }
+  else if (state.view==='all'){ h1.textContent = 'SAQ ทุกรุ่น'; lede.textContent = 'เรียงจาก MED35 ลงไป แยกตามรอบสอบ กดการ์ดเพื่อทำโจทย์และให้ AI ตรวจ'; }
+  else { h1.textContent = 'SAQ ' + yr.label; lede.textContent = yr.k==='unk' ? 'ชุดที่โพย MED29 ลงไว้ว่าเป็นของรุ่นพี่ แต่ไม่ได้บอกปี' : 'แยกตามรอบสอบ กดการ์ดเพื่อทำโจทย์ พิมพ์คำตอบ แล้วให้ AI ตรวจเทียบกับเฉลย'; }
   if (state.topic) lede.textContent += ' · เฉพาะหัวข้อ ' + D.topics[state.topic];
   const nImg = items.filter(i=>firstImg(i)).length;
   stats.innerHTML = `<span class="stat"><b>${items.length}</b>ข้อ</span><span class="stat"><b>${new Set(items.map(i=>i.ex)).size}</b>รอบสอบ</span><span class="stat"><b>${nImg}</b>มีรูป</span>`;
@@ -413,6 +437,7 @@ function render(){
       + `<div class="grid">${its.map(card).join('')}</div></section>`;
   }
   list.innerHTML = html;
+  renderCardsDone();
 }
 document.getElementById('list').addEventListener('click', e=>{ const c = e.target.closest('.card'); if(c) openItem(c.dataset.id, visible); });
 
@@ -449,8 +474,9 @@ function openItem(id, list){
   draw(); ov.hidden = false; document.documentElement.style.overflow='hidden';
   dlg.scrollTop = 0; dlg.querySelector('.x').focus();
 }
-function closeItem(){ ov.hidden = true; document.documentElement.style.overflow=''; if(lastFocus) { try{lastFocus.focus();}catch(e){} } lastFocus=null; }
+function closeItem(){ if (gradeCtl) gradeCtl.abort(); ov.hidden = true; document.documentElement.style.overflow=''; if(lastFocus) { try{lastFocus.focus();}catch(e){} } lastFocus=null; }
 function draw(){
+  if (gradeCtl) gradeCtl.abort();
   const it = cur.list[cur.i]; const ex = EX[it.ex]; const y = YL[it.y];
   const imgs = it.img||[];
   let fig = '';
@@ -469,14 +495,138 @@ function draw(){
       ${it.ctx?`<div class="ctx"><b>บริบท</b>${esc(it.ctx)}</div>`:''}
       <p class="stem">${esc(it.q)}</p>
       ${fig}
-      <div class="asks"><h3 class="disp">คำถาม</h3><ol>${(it.ask||[]).map(a=>`<li>${esc(a)}</li>`).join('')}</ol></div>
-      <button class="btn y reveal" type="button" aria-expanded="${auto}" ${auto?'hidden':''}>แสดงเฉลย</button>
+      <div class="asks"><h3 class="disp">คำถาม · ลองตอบเอง</h3><ol>${(it.ask||[]).map((a,k)=>`<li><label for="ans-${k}">${esc(a)}</label><textarea id="ans-${k}" data-k="${k}" rows="2" placeholder="พิมพ์คำตอบข้อนี้"></textarea></li>`).join('')}</ol></div>
+      <div class="acts"><button class="btn y" type="button" data-grade ${aiState==='none'?'hidden':''}>ให้ AI ตรวจ</button><button class="btn reveal" type="button" ${auto?'hidden':''}>แสดงเฉลย</button><span class="hint" id="ghint">${aiState==='none'?esc(AI_OFF):''}</span></div>
+      <div id="gout"></div>
       <div class="ansbox" ${auto?'':'hidden'}><h3 class="disp">เฉลยจากโพย</h3><div class="ans">${ans}</div>${notes}</div>
     </div>
     <div class="dfoot"><button class="btn" type="button" data-nav="-1" ${cur.i<=0?'disabled':''}>‹ ข้อก่อน</button><span class="pos">${cur.i+1} / ${cur.list.length}</span><button class="btn" type="button" data-nav="1" ${cur.i>=cur.list.length-1?'disabled':''}>ข้อถัดไป ›</button></div>`;
+  const draft = load('saq-d-'+it.id) || [];
+  dlg.querySelectorAll('.asks textarea').forEach(t=>{ t.value = draft[+t.dataset.k] || ''; });
+  const prev = load('saq-g-'+it.id);
+  if (prev && prev.result) showGrade(prev.result, true);
+}
+
+/* answer drafts + AI grading */
+const AI_OFF = 'การตรวจด้วย AI ใช้ได้เมื่อเปิดหน้านี้ใน Claude และอนุญาตให้หน้านี้ใช้ Claude · ยังพิมพ์ตอบแล้วเทียบกับเฉลยเองได้';
+let aiState = 'pending', sampleFn = null, gradeCtl = null;
+function load(k){ try{ return JSON.parse(localStorage.getItem(k)||'null'); }catch(e){ return null; } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function setAi(state){
+  aiState = state;
+  const b = dlg.querySelector('[data-grade]'), h = dlg.querySelector('#ghint');
+  if (b) b.hidden = state==='none';
+  if (h && state==='none') h.textContent = AI_OFF;
+}
+(function(){
+  const cl = window.claude;
+  if (!cl || typeof cl.use!=='function'){ aiState='none'; return; }
+  cl.use('sample').then(s=>{ sampleFn = s; setAi(s ? 'ready' : 'none'); }).catch(()=>setAi('none'));
+})();
+dlg.addEventListener('input', e=>{
+  const t = e.target.closest('.asks textarea'); if(!t) return;
+  const it = cur.list[cur.i]; const all = [...dlg.querySelectorAll('.asks textarea')].map(x=>x.value);
+  save('saq-d-'+it.id, all);
+});
+const VERD = {correct:['ถูก','v-correct'], partial:['บางส่วน','v-partial'], wrong:['ผิด','v-wrong'], blank:['ไม่ได้ตอบ','v-blank']};
+function showGrade(r, old){
+  const it = cur.list[cur.i]; const asks = it.ask||[];
+  const out = dlg.querySelector('#gout'); if(!out) return;
+  const score = Math.max(0, Math.min(10, Math.round(Number(r.score)*10)/10 || 0));
+  const parts = Array.isArray(r.parts) ? r.parts : [];
+  const model = Array.isArray(r.model_answer) ? r.model_answer : (r.model_answer ? [r.model_answer] : []);
+  out.innerHTML = `<div class="grade"><div class="ghead"><span class="score">${score}<small> / 10</small></span><p></p></div><ul class="gparts"></ul>
+    <div class="gmodel" ${model.length?'':'hidden'}><h4 class="disp">คำตอบที่ควรเขียน</h4><ul></ul></div>
+    <p class="gnote">${old?'ผลตรวจครั้งก่อน · ':''}ตรวจโดย AI เทียบกับเฉลยโพยและความรู้มาตรฐาน อาจผิดได้ ใช้ประกอบการทบทวน</p></div>`;
+  out.querySelector('.ghead p').textContent = String(r.summary||'');
+  const ul = out.querySelector('.gparts');
+  parts.forEach(p=>{
+    const k = (Number(p.n)||0) - 1; const v = VERD[p.verdict] || VERD.partial;
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="badge ${v[1]}"></span><span><span class="q"></span><span class="f"></span></span>`;
+    li.querySelector('.badge').textContent = (k>=0 ? (k+1)+'. ' : '') + v[0];
+    li.querySelector('.q').textContent = asks[k] || '';
+    li.querySelector('.f').textContent = String(p.feedback||'');
+    ul.appendChild(li);
+  });
+  const mu = out.querySelector('.gmodel ul');
+  model.forEach(m=>{ const li=document.createElement('li'); li.textContent = String(m); mu.appendChild(li); });
+}
+function gradePrompt(it, answers){
+  const ex = EX[it.ex], y = YL[it.y];
+  const caps = (it.img||[]).filter(m=>m.k!=='ref').map(m=>m.c);
+  const L = [];
+  L.push('คุณเป็นอาจารย์แพทย์อายุรศาสตร์ ตรวจข้อสอบ SAQ (short answer) ของนักศึกษาแพทย์ปี 4 ข้อละ 5 นาที');
+  L.push('', '## โจทย์', `ที่มา: ${y.label} · ${ex.name} · ${it.n}`);
+  if (it.ctx) L.push('บริบท: ' + it.ctx);
+  L.push('โจทย์: ' + it.q);
+  if (caps.length) L.push('รูปในโจทย์: ' + caps.join(' / '));
+  L.push('', '## คำถามย่อย'); (it.ask||[]).forEach((a,k)=>L.push(`${k+1}. ${a}`));
+  L.push('', '## เฉลยจากโพยรุ่นพี่ (อาจไม่ครบ หรือผิดบางจุด)');
+  if ((it.ans||[]).length) it.ans.forEach(a=>L.push('- ' + a)); else L.push('- (โพยไม่ได้จดคำตอบ)');
+  if (it.warn) L.push('จุดที่โพยผิด: ' + it.warn);
+  if (it.tip) L.push('แนวตอบเพิ่มเติม: ' + it.tip);
+  L.push('', '## คำตอบของนักศึกษา'); answers.forEach((a,k)=>L.push(`${k+1}. ${a || '(เว้นว่าง)'}`));
+  L.push('', '## วิธีตรวจ',
+    '- ยึดความรู้ทางการแพทย์ที่ถูกต้องเป็นหลัก ถ้าเฉลยโพยผิดหรือไม่มี ให้ใช้แนวทางมาตรฐานปัจจุบัน',
+    '- ให้คะแนนบางส่วนได้ ตอบถูกความหมายแม้ใช้คำต่างกันถือว่าถูก',
+    '- ชื่อเชื้อต้องเขียนเต็ม (genus + species) และสะกดถูก ถ้าย่อหรือสะกดผิดให้ partial และบอกคำที่ถูก',
+    '- โจทย์ที่ขอให้บรรยาย ให้ดูว่าครอบคลุมประเด็นสำคัญหรือไม่ บอกสิ่งที่ขาด',
+    '- feedback แต่ละข้อสั้น 1–2 ประโยค ภาษาไทยปนศัพท์อังกฤษ เขียนถึงนักศึกษาโดยตรง',
+    '', '## รูปแบบคำตอบ',
+    'ตอบเป็น JSON อย่างเดียว ตามรูปแบบนี้:',
+    '{"score": 7.5, "summary": "สรุปภาพรวม 1 ประโยค", "parts": [{"n": 1, "verdict": "correct|partial|wrong|blank", "feedback": "..."}], "model_answer": ["คำตอบที่ควรเขียนของข้อ 1", "ข้อ 2"]}',
+    `score เป็นคะแนนรวม 0–10 · parts ต้องมีครบ ${(it.ask||[]).length} ข้อ เรียงตาม n · model_answer สั้นกระชับ ข้อละ 1 บรรทัด`);
+  return L.join('\n');
+}
+async function grade(btn){
+  const it = cur.list[cur.i]; const hint = dlg.querySelector('#ghint'); const out = dlg.querySelector('#gout');
+  if (aiState==='pending' || !sampleFn){ hint.textContent = aiState==='none' ? AI_OFF : 'กำลังเชื่อมต่อ Claude ลองกดอีกครั้งในไม่กี่วินาที'; return; }
+  const answers = [...dlg.querySelectorAll('.asks textarea')].map(t=>t.value.trim());
+  if (answers.every(a=>!a)){ hint.textContent = 'พิมพ์คำตอบอย่างน้อย 1 ข้อก่อน'; return; }
+  hint.textContent = '';
+  if (gradeCtl) gradeCtl.abort();
+  const ctl = new AbortController(); gradeCtl = ctl;
+  btn.disabled = true;
+  out.innerHTML = `<div class="grade busy"><span class="spin"></span><span>Claude กำลังตรวจ… ปกติใช้เวลาไม่เกิน 1 นาที</span><button class="btn" type="button" data-stop>หยุด</button></div>`;
+  try {
+    const r = await sampleFn.json(gradePrompt(it, answers), {signal: ctl.signal});
+    if (cur.list[cur.i] !== it) return;
+    if (!r || typeof r!=='object' || !('score' in r)) throw {code:'invalid_json'};
+    save('saq-g-'+it.id, {answers, result:r, at:Date.now()});
+    showGrade(r, false);
+    const ab = dlg.querySelector('.ansbox'); if (ab) ab.hidden = false;
+    const rv = dlg.querySelector('.reveal'); if (rv) rv.hidden = true;
+    renderCardsDone();
+  } catch(e){
+    if (cur.list[cur.i] !== it) return;
+    const code = e && e.code;
+    out.innerHTML = '';
+    if (code==='cancelled') return;
+    if (['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(code)){ setAi('none'); return; }
+    hint.textContent = {
+      rate_limited:'ตรวจถี่เกินไปหรือโควตา Claude หมด รอสักพักแล้วลองใหม่',
+      session_expired:'ต้องเข้าสู่ระบบ Claude ใหม่ก่อน',
+      invalid_json:'Claude ตอบกลับมาในรูปแบบที่อ่านไม่ได้ กดตรวจอีกครั้ง',
+      refused:'Claude ไม่ตรวจคำตอบนี้ ลองแก้คำตอบแล้วส่งใหม่',
+      prompt_too_large:'คำตอบยาวเกินไป ลองย่อให้สั้นลง'
+    }[code] || 'ตรวจไม่สำเร็จ ลองกดอีกครั้ง';
+  } finally {
+    if (gradeCtl===ctl) gradeCtl = null;
+    if (btn.isConnected) btn.disabled = false;
+  }
+}
+function renderCardsDone(){
+  document.querySelectorAll('.card').forEach(c=>{
+    const g = load('saq-g-'+c.dataset.id); const foot = c.querySelector('.cfoot');
+    let tag = foot.querySelector('.cdone');
+    if (g && g.result){ if(!tag){ tag=document.createElement('span'); tag.className='cdone'; foot.querySelector('b').before(tag); } tag.textContent = Math.round(Number(g.result.score)*10)/10 + '/10'; }
+  });
 }
 dlg.addEventListener('click', e=>{
   if (e.target.closest('.x')) return closeItem();
+  const gb = e.target.closest('[data-grade]'); if (gb){ grade(gb); return; }
+  if (e.target.closest('[data-stop]')){ if (gradeCtl) gradeCtl.abort(); return; }
   const r = e.target.closest('.reveal'); if (r){ r.hidden = true; dlg.querySelector('.ansbox').hidden = false; return; }
   const n = e.target.closest('[data-nav]'); if (n && !n.disabled){ cur.i += +n.dataset.nav; draw(); dlg.scrollTop=0; return; }
   const g = e.target.closest('[data-go]'); if (g){ openItem(g.dataset.go, ITEMS); return; }
@@ -488,6 +638,7 @@ document.addEventListener('keydown', e=>{
   if (!document.getElementById('lb').hidden && e.key==='Escape'){ document.getElementById('lb').hidden = true; return; }
   if (ov.hidden) return;
   if (e.key==='Escape') closeItem();
+  if (/^(TEXTAREA|INPUT)$/.test((document.activeElement||{}).tagName||'')) return;
   if (e.key==='ArrowRight' && cur.i<cur.list.length-1){ cur.i++; draw(); }
   if (e.key==='ArrowLeft' && cur.i>0){ cur.i--; draw(); }
 });
