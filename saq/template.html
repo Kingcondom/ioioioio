@@ -496,7 +496,7 @@ function draw(){
       <p class="stem">${esc(it.q)}</p>
       ${fig}
       <div class="asks"><h3 class="disp">คำถาม · ลองตอบเอง</h3><ol>${(it.ask||[]).map((a,k)=>`<li><label for="ans-${k}">${esc(a)}</label><textarea id="ans-${k}" data-k="${k}" rows="2" placeholder="พิมพ์คำตอบข้อนี้"></textarea></li>`).join('')}</ol></div>
-      <div class="acts"><button class="btn y" type="button" data-grade ${aiState==='none'?'hidden':''}>ให้ AI ตรวจ</button><button class="btn reveal" type="button" ${auto?'hidden':''}>แสดงเฉลย</button><span class="hint" id="ghint">${aiState==='none'?esc(AI_OFF):''}</span></div>
+      <div class="acts"><button class="btn y" type="button" data-grade ${aiState==='none'?'hidden':''}>ให้ AI ตรวจ</button><button class="btn reveal" type="button" ${auto?'hidden':''}>แสดงเฉลย</button><button class="btn" type="button" data-clear>ล้างคำตอบ</button><span class="hint" id="ghint">${aiState==='none'?esc(AI_OFF):''}</span></div>
       <div id="gout"></div>
       <div class="ansbox" ${auto?'':'hidden'}><h3 class="disp">เฉลยจากโพย</h3><div class="ans">${ans}</div>${notes}</div>
     </div>
@@ -512,6 +512,26 @@ const AI_OFF = 'การตรวจด้วย AI ใช้ได้เมื
 let aiState = 'pending', sampleFn = null, gradeCtl = null;
 function load(k){ try{ return JSON.parse(localStorage.getItem(k)||'null'); }catch(e){ return null; } }
 function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function del(k){ try{ localStorage.removeItem(k); }catch(e){} }
+let clearArm = null;
+function clearAnswers(btn){
+  if (clearArm !== btn){
+    clearArm = btn; btn.textContent = 'กดอีกครั้งเพื่อล้าง';
+    setTimeout(()=>{ if (clearArm===btn){ clearArm=null; if (btn.isConnected) btn.textContent='ล้างคำตอบ'; } }, 3000);
+    return;
+  }
+  clearArm = null;
+  if (gradeCtl) gradeCtl.abort();
+  const it = cur.list[cur.i];
+  del('saq-d-'+it.id); del('saq-g-'+it.id);
+  dlg.querySelectorAll('.asks textarea').forEach(t=>{ t.value=''; });
+  const out = dlg.querySelector('#gout'); if (out) out.innerHTML = '';
+  if (!auto){ const ab = dlg.querySelector('.ansbox'); if (ab) ab.hidden = true; const rv = dlg.querySelector('.reveal'); if (rv) rv.hidden = false; }
+  btn.textContent = 'ล้างคำตอบ';
+  const h = dlg.querySelector('#ghint'); if (h) h.textContent = 'ล้างคำตอบและผลตรวจของข้อนี้แล้ว';
+  renderCardsDone();
+  const t0 = dlg.querySelector('#ans-0'); if (t0) t0.focus();
+}
 function setAi(state){
   aiState = state;
   const b = dlg.querySelector('[data-grade]'), h = dlg.querySelector('#ghint');
@@ -621,12 +641,14 @@ function renderCardsDone(){
     const g = load('saq-g-'+c.dataset.id); const foot = c.querySelector('.cfoot');
     let tag = foot.querySelector('.cdone');
     if (g && g.result){ if(!tag){ tag=document.createElement('span'); tag.className='cdone'; foot.querySelector('b').before(tag); } tag.textContent = Math.round(Number(g.result.score)*10)/10 + '/10'; }
+    else if (tag) tag.remove();
   });
 }
 dlg.addEventListener('click', e=>{
   if (e.target.closest('.x')) return closeItem();
   const gb = e.target.closest('[data-grade]'); if (gb){ grade(gb); return; }
   if (e.target.closest('[data-stop]')){ if (gradeCtl) gradeCtl.abort(); return; }
+  const cb = e.target.closest('[data-clear]'); if (cb){ clearAnswers(cb); return; }
   const r = e.target.closest('.reveal'); if (r){ r.hidden = true; dlg.querySelector('.ansbox').hidden = false; return; }
   const n = e.target.closest('[data-nav]'); if (n && !n.disabled){ cur.i += +n.dataset.nav; draw(); dlg.scrollTop=0; return; }
   const g = e.target.closest('[data-go]'); if (g){ openItem(g.dataset.go, ITEMS); return; }
