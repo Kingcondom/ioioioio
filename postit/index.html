@@ -117,6 +117,23 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
 .cmenu button:hover,.cmenu button:focus-visible{background:rgba(127,127,127,.16)}
 .cmenu button.del{color:var(--pen)}
 .cmenu .mh{font-size:12px;color:var(--panel-ink2);padding:4px 12px 6px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shot{margin:14px 0 4px;padding:12px;border:1.5px dashed var(--rule);border-radius:12px}
+.shot.drag{border-color:var(--pen);background:rgba(184,34,26,.06)}
+.shot .sh{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:15px}
+.shot .sh b{font-weight:600}
+.shot .sub{font-size:13px;color:var(--panel-ink2);margin:6px 0 8px;line-height:1.6}
+.shot .thumbs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.shot .thumbs figure{margin:0;position:relative}
+.shot .thumbs img{display:block;width:84px;height:84px;object-fit:cover;border-radius:8px;border:1px solid var(--rule)}
+.shot .thumbs button{position:absolute;top:-8px;right:-8px;width:24px;height:24px;padding:0;border-radius:50%;background:var(--panel);font-size:13px;line-height:22px}
+.shot input[type=text]{width:100%;font:inherit;font-size:15px;padding:8px 10px;border-radius:10px;border:1px solid var(--rule);background:var(--field);color:var(--panel-ink);margin-bottom:8px}
+.shot .st{font-size:13.5px;color:var(--panel-ink2);margin-top:8px;min-height:1em}
+.shot .st.err{color:var(--pen)}
+.shot .qrow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.shot .qrow input{margin-top:5px;width:18px;height:18px;flex-shrink:0}
+.shot .qrow .q1{font-size:15px;line-height:1.5}
+.shot .qrow .a1{font-size:13.5px;color:var(--panel-ink2);margin-top:2px;line-height:1.5}
+.shot .pin{background:var(--n1);color:#2b2306;border-color:var(--n1);font-weight:500}
 .top #b-add{background:var(--n1);color:#2b2306;border-color:rgba(0,0,0,.18)}
 </style>
 
@@ -148,6 +165,15 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
     <textarea class="own" id="own-f" maxlength="600" rows="2" placeholder="ด้านหน้า — สิ่งที่อยากจำ เช่น SBP = PMN ≥ 250"></textarea>
     <textarea class="own" id="own-b" maxlength="1200" rows="2" placeholder="เฉลยด้านหลัง (ไม่ใส่ก็ได้)"></textarea>
     <div class="ownbar"><button type="button" class="pin" id="own-save">แปะ</button><button type="button" id="own-cancel" hidden>ยกเลิกแก้</button><span class="lim">ใส่ " = " หรือ " → " ในด้านหน้า ระบบจะปิดส่วนหลังให้ทายเอง</span></div>
+    <div class="shot" id="shot" hidden>
+      <div class="sh"><b>📷 จากภาพหน้าจอ</b><button type="button" id="shot-pick">เลือกภาพ</button><input type="file" id="shot-file" accept="image/*" multiple hidden></div>
+      <p class="sub">เลือก วาง (Ctrl/⌘+V) หรือลากภาพหน้าจอเนื้อหามาที่นี่ แล้ว Claude จะอ่านและแปลงเป็นโพสต์อิทคำถาม–เฉลย ใช้โควตา Claude ของบัญชีคุณ</p>
+      <div class="thumbs" id="shot-thumbs"></div>
+      <input type="text" id="shot-hint" maxlength="200" placeholder="อยากเน้นอะไร (ไม่ใส่ก็ได้) เช่น ขนาดยา · เกณฑ์วินิจฉัย">
+      <div class="ownbar"><button type="button" class="pin" id="shot-go" disabled>แปลงเป็นคำถาม</button><button type="button" id="shot-stop" hidden>หยุด</button></div>
+      <div class="st" id="shot-st" role="status"></div>
+      <div id="shot-res"></div>
+    </div>
     <div id="owns"></div>
     <h2>ปักหัวข้อเพิ่ม</h2>
     <input type="search" id="q" placeholder="เช่น septic shock, AKI, hyperkalemia">
@@ -165,6 +191,7 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
     <p class="note-t">แตะโพสต์อิทที่ยังไม่เฉลยเพื่อดูคำตอบ แตะอีกครั้งเพื่อหยิบขึ้นมาอ่านใหญ่ๆ แล้วกด <b>จำได้แล้ว</b> ถ้าไม่ต้องเห็นใบนั้นอีก กด Space หรือลูกศรขวาเพื่อลอกใบถัดไปทันที</p>
     <p class="note-t">ในเว็บ MED421 learn, Ward Drill และ Salmon NL กดปุ่ม <b>ปักไว้ใน post-it</b> ที่หัวข้อหรือข้อสอบที่ไม่อยากลืม ระบบจะเปิดหน้านี้และปักให้อัตโนมัติ</p>
     <p class="note-t">กด <b>+ เขียนเอง</b> เพื่อเขียนโพสต์อิทของตัวเอง ใบที่เขียนเองวนรวมกับใบอื่นบนกำแพง แตะใบนั้นแล้วกด <b>แก้ใบนี้</b> หรือ <b>ลบใบนี้</b> ได้</p>
+    <p class="note-t"><b>📷 จากภาพหน้าจอ</b> (ในส่วนเขียนเอง) วางหรือเลือกภาพเนื้อหา Claude จะแปลงเป็นคำถาม–เฉลยให้เลือกแปะ</p>
     <p class="note-t"><b>คลิกขวา ดับเบิลคลิก หรือกดค้าง</b> ที่ใบไหนก็ได้ เพื่อแก้ไขหรือลบ · ใบจากบทเรียนที่แก้แล้วจะกลายเป็นใบที่เขียนเองแทนใบเดิม · ใบที่ลบ เอากลับมาได้ด้วยปุ่ม <b>เอากลับมา</b> ข้างหัวข้อ</p>
     <p class="note-t">ถ้าจะเปิดค้างบน iPad ให้ตั้ง Auto-Lock เป็น Never และเสียบชาร์จไว้</p>
   </div>
@@ -584,6 +611,112 @@ document.addEventListener("click",function(e){
   else{var c=ownCard(t.dataset.ownback);state.done[c.k]=-now();save();buildDeck();layout();renderPanel();}
 });
 $("b-add").onclick=function(){openPanel();setTimeout(function(){$("own-h").scrollIntoView({block:"start"});$("own-f").focus();},60);};
+
+/* ---------- จากภาพหน้าจอ → คำถาม (ผู้ใช้ขอ 3 พ.ย.) ----------
+   capability sample + images: ส่งภาพให้ Claude บนบัญชีของผู้ดู ได้ JSON [{q,a}] กลับมาให้ติ๊กเลือกก่อนแปะเป็นใบเขียนเอง */
+var SHOT={sample:null,max:4,types:["image/png","image/jpeg","image/webp","image/gif"],maxBytes:20e6,files:[],ctl:null,cards:[],off:false};
+function shotOn(){return !!SHOT.sample&&!SHOT.off;}
+function shotSt(t,err){var el=$("shot-st");el.textContent=t||"";el.classList.toggle("err",!!err);}
+function shotThumbs(){
+  var box=$("shot-thumbs");box.innerHTML="";
+  SHOT.files.forEach(function(f,i){
+    var fig=document.createElement("figure"),img=document.createElement("img"),x=document.createElement("button");
+    img.src=f.url;img.alt="ภาพที่ "+(i+1);x.type="button";x.textContent="×";x.setAttribute("aria-label","เอาภาพที่ "+(i+1)+" ออก");
+    x.onclick=function(){URL.revokeObjectURL(f.url);SHOT.files.splice(i,1);shotThumbs();};
+    fig.appendChild(img);fig.appendChild(x);box.appendChild(fig);
+  });
+  $("shot-go").disabled=!SHOT.files.length||!!SHOT.ctl;
+}
+function shotAdd(list){
+  var added=0,skip=0;
+  Array.prototype.forEach.call(list||[],function(f){
+    if(!f||SHOT.types.indexOf(f.type)<0||f.size>SHOT.maxBytes){skip++;return;}
+    if(SHOT.files.length>=SHOT.max){skip++;return;}
+    SHOT.files.push({blob:f,url:URL.createObjectURL(f)});added++;
+  });
+  shotThumbs();
+  if(skip)shotSt("ใส่ได้สูงสุด "+SHOT.max+" ภาพต่อครั้ง (PNG JPEG WebP GIF) — ข้ามไป "+skip+" ไฟล์",true);else if(added)shotSt("");
+  return added;
+}
+function shotPrompt(){
+  var hint=$("shot-hint").value.trim();
+  return "ภาพที่แนบมาเป็นภาพหน้าจอเนื้อหาเรียนแพทย์ (สไลด์ บทเรียน ตาราง หรือโน้ต) ของนักศึกษาแพทย์ปี 4 ที่จะทำเป็นโพสต์อิทแปะผนังไว้ทบทวน\n\n"+
+    "อ่านเนื้อหาในภาพทั้งหมด แล้วสร้างคำถามสั้นที่ตอบได้จากเนื้อหาในภาพเท่านั้น 4–10 ข้อตามปริมาณเนื้อหา เน้นสิ่งที่ต้องจำ: ตัวเลข ค่าตัด เกณฑ์วินิจฉัย ขนาดยา กลไก และจุดแยกโรค ไม่ถามซ้ำกัน\n"+
+    "- q: คำถามภาษาไทย ใช้ศัพท์แพทย์ภาษาอังกฤษตามที่ใช้จริง ไม่เกิน 200 ตัวอักษร\n"+
+    "- a: คำตอบสั้น กระชับ ไม่เกิน 300 ตัวอักษร ใช้ **ตัวหนา** กับคำสำคัญได้ ขึ้นบรรทัดใหม่ด้วย \\n ได้\n"+
+    "ห้ามเติมข้อมูลที่ไม่มีในภาพ ถ้าอ่านไม่ออกบางส่วนให้ข้ามส่วนนั้น ถ้าภาพไม่มีเนื้อหาสำหรับเรียน ให้ตอบ []\n"+
+    (hint?"ผู้ใช้อยากให้เน้น: "+hint.slice(0,200)+"\n":"")+
+    "\nตอบเป็น JSON array เท่านั้น รูปแบบ [{\"q\":\"...\",\"a\":\"...\"}]";
+}
+var SHOT_ERR={not_granted:"ไม่ได้อนุญาตให้หน้านี้ใช้ Claude",sampling_disabled:"บัญชีนี้ใช้ Claude จากหน้านี้ไม่ได้",not_declared:"หน้านี้ยังไม่ได้เปิดสิทธิ์ใช้ Claude",
+  capability_disabled:"ใช้ Claude ในหน้านี้ไม่ได้ตอนนี้",capability_removed:"แอปที่เปิดอยู่ยังไม่รองรับ",images_unavailable:"แอปที่เปิดอยู่ส่งภาพให้ Claude ไม่ได้",
+  rate_limited:"ใช้ Claude ถี่เกินไปหรือโควตาเต็ม ลองใหม่ภายหลัง",session_expired:"ต้องเข้าสู่ระบบใหม่",image_rejected:"ภาพนี้ใช้ไม่ได้ ลองภาพอื่นหรือภาพเล็กลง",
+  refused:"Claude ไม่ทำภาพนี้ ลองภาพอื่น",empty_completion:"ไม่ได้คำตอบ ลองครอปภาพให้เหลือเฉพาะเนื้อหา",invalid_json:"อ่านคำตอบไม่ได้ กดแปลงอีกครั้ง",prompt_too_large:"เนื้อหายาวเกิน ลองทีละภาพ"};
+function shotGo(){
+  if(!shotOn()||!SHOT.files.length||SHOT.ctl)return;
+  var ctl=new AbortController();SHOT.ctl=ctl;
+  $("shot-go").disabled=true;$("shot-stop").hidden=false;$("shot-res").innerHTML="";SHOT.cards=[];
+  shotSt("กำลังอ่านภาพ… (อาจใช้ 10–60 วินาที)");
+  SHOT.sample.json(shotPrompt(),{images:SHOT.files.map(function(f){return f.blob;}),signal:ctl.signal,
+    onText:function(){shotSt("กำลังเขียนคำถาม…");}}).then(function(v){
+    var list=(Array.isArray(v)?v:[]).map(function(x){return x&&typeof x==="object"?{q:String(x.q||"").trim().slice(0,600),a:String(x.a||"").trim().slice(0,1200)}:null;})
+      .filter(function(x){return x&&x.q;});
+    SHOT.cards=list;
+    if(!list.length){shotSt("ไม่พบเนื้อหาที่ทำเป็นคำถามได้ในภาพนี้",true);return;}
+    shotSt("ได้ "+list.length+" ข้อ — ติ๊กเลือกแล้วกดแปะ (แก้ทีหลังได้ด้วยคลิกขวาที่ใบ)");
+    shotList();
+  },function(e){
+    var c=e&&e.code;
+    if(c==="cancelled"){shotSt("หยุดแล้ว");return;}
+    if(c==="not_granted"||c==="sampling_disabled"||c==="not_declared"||c==="capability_disabled"||c==="capability_removed"||c==="images_unavailable"){
+      SHOT.off=true;$("shot").hidden=true;toast(SHOT_ERR[c]||"ใช้ Claude ไม่ได้");return;}
+    shotSt(SHOT_ERR[c]||"เชื่อมต่อไม่สำเร็จ ลองกดแปลงอีกครั้ง",true);
+  }).then(function(){SHOT.ctl=null;$("shot-stop").hidden=true;shotThumbs();});
+}
+function shotList(){
+  var h=SHOT.cards.map(function(c,i){
+    return '<label class="qrow"><input type="checkbox" data-sq="'+i+'" checked><div><div class="q1">'+md(c.q)+'</div>'+(c.a?'<div class="a1">'+md(c.a)+'</div>':'')+'</div></label>';
+  }).join("");
+  $("shot-res").innerHTML=h+'<div class="ownbar" style="margin-top:10px"><button type="button" class="pin" id="shot-pin">แปะ '+SHOT.cards.length+' ใบที่เลือก</button><button type="button" id="shot-clear">ล้าง</button></div>';
+  $("shot-pin").onclick=shotPin;$("shot-clear").onclick=shotReset;
+}
+$("shot-res").addEventListener("change",function(){var n=$("shot-res").querySelectorAll("input[data-sq]:checked").length,b=$("shot-pin");if(b){b.textContent="แปะ "+n+" ใบที่เลือก";b.disabled=!n;}});
+function shotPin(){
+  var picks=Array.prototype.map.call($("shot-res").querySelectorAll("input[data-sq]:checked"),function(x){return SHOT.cards[+x.getAttribute("data-sq")];});
+  if(!picks.length)return;
+  var t=now(),first=null;
+  picks.forEach(function(c,i){var id=(t+i).toString(36)+Math.random().toString(36).slice(2,6);if(!first)first=id;state.own[id]={f:c.q.slice(0,600),b:c.a.slice(0,1200),t:t+i,u:t+i};});
+  save();buildDeck("o-"+first);layout();shotReset();renderPanel();toast("แปะ "+picks.length+" ใบจากภาพแล้ว");
+}
+function shotReset(){SHOT.files.forEach(function(f){URL.revokeObjectURL(f.url);});SHOT.files=[];SHOT.cards=[];$("shot-res").innerHTML="";$("shot-hint").value="";shotSt("");shotThumbs();}
+$("shot-pick").onclick=function(){$("shot-file").click();};
+$("shot-file").onchange=function(){shotAdd(this.files);this.value="";};
+$("shot-go").onclick=shotGo;
+$("shot-stop").onclick=function(){if(SHOT.ctl)SHOT.ctl.abort();};
+["dragenter","dragover"].forEach(function(t){$("shot").addEventListener(t,function(e){if(!shotOn())return;e.preventDefault();$("shot").classList.add("drag");});});
+["dragleave","drop"].forEach(function(t){$("shot").addEventListener(t,function(){$("shot").classList.remove("drag");});});
+$("shot").addEventListener("drop",function(e){if(!shotOn())return;e.preventDefault();shotAdd(e.dataTransfer&&e.dataTransfer.files);});
+document.addEventListener("paste",function(e){
+  if(!shotOn())return;
+  var items=(e.clipboardData&&e.clipboardData.items)||[],fs=[];
+  Array.prototype.forEach.call(items,function(it){if(it.kind==="file"&&/^image\//.test(it.type)){var f=it.getAsFile();if(f)fs.push(f);}});
+  if(!fs.length)return;
+  e.preventDefault();
+  if(!$("panel").classList.contains("on"))openPanel();
+  if(shotAdd(fs))setTimeout(function(){$("shot").scrollIntoView({block:"start"});},60);
+});
+(function(){
+  if(!window.claude||typeof window.claude.use!=="function")return;
+  window.claude.use("sample").then(function(sample){
+    if(!sample)return;
+    return sample.limits().then(function(l){
+      if(!l||!l.images)return;
+      SHOT.sample=sample;SHOT.max=l.images.maxCount||SHOT.max;SHOT.maxBytes=l.images.maxInputBytes||SHOT.maxBytes;
+      if(l.images.mediaTypes&&l.images.mediaTypes.length){SHOT.types=l.images.mediaTypes;$("shot-file").accept=l.images.mediaTypes.join(",");}
+      $("shot").hidden=false;
+    });
+  }).catch(function(){});
+})();
 
 /* ---------- context menu: แก้ไข / ลบ ---------- */
 var menuSlot=null;

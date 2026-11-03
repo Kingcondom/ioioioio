@@ -43,3 +43,10 @@ python3 postit/build_cards.py      # อ่าน ../artifact/data + salmon/ →
 คลิกขวา · ดับเบิลคลิก · กดค้าง 550 ms (touch/pen) · ปุ่ม ContextMenu/Shift+F10 → `#cmenu` (`openMenu`)
 คลิกเดียวถูกหน่วง 260 ms เพื่อแยกจากดับเบิลคลิก · ใบบทเรียน "แก้ไข" = `editCard` → บันทึกเป็น own note แล้ว `state.done[replaceK]` ซ่อนใบเดิม
 "ลบ" ใบบทเรียน = `removeCard` (เหมือน "จำได้แล้ว") · ข้อจำกัดความยาวใบเขียนเอง 600/1200 ตัวอักษร
+
+## ภาพหน้าจอ → คำถาม (3 พ.ย. 2569 · v7 `1793729619-79d3`)
+
+**capabilities เปลี่ยนเป็น `{db:{}, user:{}, sample:{images:true}}`** — publish ครั้งต่อไปให้ละ `capabilities` (ระบบคงไว้เอง) ห้ามส่ง `{}`
+กล่อง `#shot` ในส่วนเขียนเอง (ซ่อนถ้า `claude.use("sample")` เป็น null หรือ `limits()` ไม่มี `images`) · เลือก/วาง Ctrl+V (ทั้งหน้า)/ลากภาพ
+`sample.json(prompt, {images, signal})` → `[{q,a}]` → ติ๊กเลือก → เป็น `state.own` · ภาพไม่ถูกเก็บ · error ถาวร (not_granted ฯลฯ) ซ่อนกล่อง
+ทดสอบด้วย mock `window.claude` ผ่าน `add_init_script` (สคริปต์ทดสอบอยู่ใน scratchpad ของ session นั้น ไม่ได้ commit)
