@@ -111,6 +111,12 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
 .ownbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .ownbar .pin{background:var(--n1);color:#2b2306;border-color:var(--n1);font-weight:500}
 .ownbar .lim{font-size:13px;color:var(--panel-ink2);margin-left:auto}
+.cmenu{position:fixed;z-index:8;display:none;flex-direction:column;min-width:170px;padding:6px;border-radius:12px;background:var(--panel);color:var(--panel-ink);border:1px solid var(--rule);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.cmenu.on{display:flex}
+.cmenu button{border:0;border-radius:8px;text-align:left;padding:9px 12px;font-size:15px;color:var(--panel-ink)}
+.cmenu button:hover,.cmenu button:focus-visible{background:rgba(127,127,127,.16)}
+.cmenu button.del{color:var(--pen)}
+.cmenu .mh{font-size:12px;color:var(--panel-ink2);padding:4px 12px 6px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .top #b-add{background:var(--n1);color:#2b2306;border-color:rgba(0,0,0,.18)}
 </style>
 
@@ -139,8 +145,8 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
   <div class="sheet" role="dialog" aria-label="จัดการ post-it">
     <button class="closeb" id="b-close" type="button">ปิด</button>
     <h2 id="own-h">เขียน post-it เอง</h2>
-    <textarea class="own" id="own-f" maxlength="300" rows="2" placeholder="ด้านหน้า — สิ่งที่อยากจำ เช่น SBP = PMN ≥ 250"></textarea>
-    <textarea class="own" id="own-b" maxlength="600" rows="2" placeholder="เฉลยด้านหลัง (ไม่ใส่ก็ได้)"></textarea>
+    <textarea class="own" id="own-f" maxlength="600" rows="2" placeholder="ด้านหน้า — สิ่งที่อยากจำ เช่น SBP = PMN ≥ 250"></textarea>
+    <textarea class="own" id="own-b" maxlength="1200" rows="2" placeholder="เฉลยด้านหลัง (ไม่ใส่ก็ได้)"></textarea>
     <div class="ownbar"><button type="button" class="pin" id="own-save">แปะ</button><button type="button" id="own-cancel" hidden>ยกเลิกแก้</button><span class="lim">ใส่ " = " หรือ " → " ในด้านหน้า ระบบจะปิดส่วนหลังให้ทายเอง</span></div>
     <div id="owns"></div>
     <h2>ปักหัวข้อเพิ่ม</h2>
@@ -159,8 +165,16 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
     <p class="note-t">แตะโพสต์อิทที่ยังไม่เฉลยเพื่อดูคำตอบ แตะอีกครั้งเพื่อหยิบขึ้นมาอ่านใหญ่ๆ แล้วกด <b>จำได้แล้ว</b> ถ้าไม่ต้องเห็นใบนั้นอีก กด Space หรือลูกศรขวาเพื่อลอกใบถัดไปทันที</p>
     <p class="note-t">ในเว็บ MED421 learn, Ward Drill และ Salmon NL กดปุ่ม <b>ปักไว้ใน post-it</b> ที่หัวข้อหรือข้อสอบที่ไม่อยากลืม ระบบจะเปิดหน้านี้และปักให้อัตโนมัติ</p>
     <p class="note-t">กด <b>+ เขียนเอง</b> เพื่อเขียนโพสต์อิทของตัวเอง ใบที่เขียนเองวนรวมกับใบอื่นบนกำแพง แตะใบนั้นแล้วกด <b>แก้ใบนี้</b> หรือ <b>ลบใบนี้</b> ได้</p>
+    <p class="note-t"><b>คลิกขวา ดับเบิลคลิก หรือกดค้าง</b> ที่ใบไหนก็ได้ เพื่อแก้ไขหรือลบ · ใบจากบทเรียนที่แก้แล้วจะกลายเป็นใบที่เขียนเองแทนใบเดิม · ใบที่ลบ เอากลับมาได้ด้วยปุ่ม <b>เอากลับมา</b> ข้างหัวข้อ</p>
     <p class="note-t">ถ้าจะเปิดค้างบน iPad ให้ตั้ง Auto-Lock เป็น Never และเสียบชาร์จไว้</p>
   </div>
+</div>
+<div class="cmenu" id="cmenu" role="menu" aria-label="เมนูโพสต์อิท">
+  <div class="mh" id="cm-h"></div>
+  <button type="button" role="menuitem" id="cm-edit">แก้ไข</button>
+  <button type="button" role="menuitem" class="del" id="cm-del">ลบใบนี้</button>
+  <button type="button" role="menuitem" id="cm-unpin">ถอดหมุดทั้งหัวข้อ</button>
+  <button type="button" role="menuitem" id="cm-close">ปิด</button>
 </div>
 <div class="toast" id="toast" role="status"></div>
 
@@ -361,8 +375,26 @@ function layout(){
   lastSwap=t;count();
 }
 function bind(s){
-  s.el.onclick=function(){tapSlot(s);};
-  s.el.onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();tapSlot(s);}};
+  /* แตะครั้งเดียว = เฉลย/ซูม · ดับเบิลคลิก คลิกขวา กดค้าง หรือ Shift+F10 = เมนูแก้ไข/ลบ (ผู้ใช้ขอ 3 พ.ย.) */
+  var tm=null,lp=null,lpFired=false,sx=0,sy=0;
+  s.el.onclick=function(e){
+    if(lpFired){lpFired=false;return;}
+    if(tm){clearTimeout(tm);tm=null;return;}            /* คลิกที่สองตามมาเร็ว → ให้ dblclick จัดการ */
+    tm=setTimeout(function(){tm=null;tapSlot(s);},260);
+  };
+  s.el.ondblclick=function(e){e.preventDefault();clearTimeout(tm);tm=null;openMenu(s,e.clientX,e.clientY);};
+  s.el.oncontextmenu=function(e){e.preventDefault();clearTimeout(tm);tm=null;openMenu(s,e.clientX,e.clientY);};
+  s.el.addEventListener("pointerdown",function(e){
+    if(e.pointerType==="mouse")return;
+    sx=e.clientX;sy=e.clientY;lpFired=false;clearTimeout(lp);
+    lp=setTimeout(function(){lpFired=true;clearTimeout(tm);tm=null;openMenu(s,sx,sy);},550);
+  });
+  s.el.addEventListener("pointermove",function(e){if(lp&&(Math.abs(e.clientX-sx)>10||Math.abs(e.clientY-sy)>10)){clearTimeout(lp);lp=null;}});
+  ["pointerup","pointercancel","pointerleave"].forEach(function(t){s.el.addEventListener(t,function(){clearTimeout(lp);lp=null;});});
+  s.el.onkeydown=function(e){
+    if(e.key==="Enter"){e.preventDefault();tapSlot(s);}
+    else if(e.key==="ContextMenu"||(e.shiftKey&&e.key==="F10")){e.preventDefault();var r=s.el.getBoundingClientRect();openMenu(s,r.left+20,r.top+20);}
+  };
 }
 function reveal(s){
   if(s.revealed||!hasBack(s.c))return;
@@ -394,7 +426,7 @@ function swapOldest(force){
   }
 }
 function tick(){
-  if(paused||zoomSlot||$("panel").classList.contains("on")||document.hidden||!slots.length)return;
+  if(paused||zoomSlot||menuSlot||$("panel").classList.contains("on")||document.hidden||!slots.length)return;
   var t=now();
   slots.forEach(function(s){if(!s.revealed&&s.revealAt&&t>=s.revealAt)reveal(s);});
   var n=+state.opt.next;
@@ -423,6 +455,16 @@ function closeZoom(){zoomSlot=null;$("zoom").classList.remove("on");$("zoom").se
 $("znote").onclick=function(){var s=zoomSlot;if(s&&hasBack(s.c)&&!s.revealed){reveal(s);paint($("znote"),s.c,true,true);}};
 $("zoom").addEventListener("click",function(e){if(e.target===$("zoom"))closeZoom();});
 $("z-close").onclick=closeZoom;
+function removeCard(s,msgText){
+  var k=s.c.k;state.done[k]=now();save();
+  var idx=-1;deck.forEach(function(c,i){if(c.k===k)idx=i;});
+  if(idx>=0){deck.splice(idx,1);if(idx<ptr)ptr--;}
+  toast(msgText);
+  var card=nextCard();
+  if(card)swapSlot(s,card);
+  else{s.el.classList.add("peel");setTimeout(layout,450);}
+  count();
+}
 $("z-done").onclick=function(){
   var s=zoomSlot;if(!s)return;closeZoom();
   var k=s.c.k;state.done[k]=now();save();
@@ -486,13 +528,27 @@ function readHash(){
 
 /* ---------- own notes ---------- */
 var editing=null;
+var replaceK=null;
+function cardText(c){
+  if(c.kind==="c")return {f:c.b,b:""};
+  if(c.kind==="m")return {f:c.f,b:(c.lines||[]).map(function(l){return l[0]+" — "+l[1];}).join("\n")+(c.b?"\n"+c.b:"")};
+  return {f:c.f||"",b:c.b||""};
+}
+function editCard(c){
+  if(c.own){editOwn(c.own);return;}
+  cancelEdit();replaceK=c.k;openPanel();
+  var t=cardText(c);$("own-f").value=t.f;$("own-b").value=t.b;
+  $("own-save").textContent="บันทึกเป็นใบของฉัน";$("own-cancel").hidden=false;
+  setTimeout(function(){$("own-h").scrollIntoView({block:"start"});$("own-f").focus();},60);
+}
 function saveOwn(){
   var f=$("own-f").value.trim(),b=$("own-b").value.trim();
   if(!f){toast("เขียนด้านหน้าก่อน");$("own-f").focus();return;}
   var t=now(),id=editing||(t.toString(36)+Math.random().toString(36).slice(2,6));
   var prev=state.own[id];
-  state.own[id]={f:f.slice(0,300),b:b.slice(0,600),t:prev&&prev.t||t,u:t};
-  var wasEdit=!!editing;editing=null;
+  state.own[id]={f:f.slice(0,600),b:b.slice(0,1200),t:prev&&prev.t||t,u:t};
+  var wasEdit=!!editing||!!replaceK;editing=null;
+  if(replaceK){state.done[replaceK]=now();replaceK=null;}
   $("own-f").value="";$("own-b").value="";$("own-save").textContent="แปะ";$("own-cancel").hidden=true;
   save();buildDeck("o-"+id);layout();renderPanel();
   toast(wasEdit?"แก้แล้ว":"แปะแล้ว");
@@ -503,7 +559,7 @@ function editOwn(id){
   $("own-f").value=o.f;$("own-b").value=o.b||"";$("own-save").textContent="บันทึกที่แก้";$("own-cancel").hidden=false;
   setTimeout(function(){$("own-f").focus();},60);
 }
-function cancelEdit(){editing=null;$("own-f").value="";$("own-b").value="";$("own-save").textContent="แปะ";$("own-cancel").hidden=true;}
+function cancelEdit(){editing=null;replaceK=null;$("own-f").value="";$("own-b").value="";$("own-save").textContent="แปะ";$("own-cancel").hidden=true;}
 function delOwn(id){
   if(!state.own[id])return;
   state.own[id]={del:1,u:now()};if(editing===id)cancelEdit();
@@ -528,6 +584,28 @@ document.addEventListener("click",function(e){
   else{var c=ownCard(t.dataset.ownback);state.done[c.k]=-now();save();buildDeck();layout();renderPanel();}
 });
 $("b-add").onclick=function(){openPanel();setTimeout(function(){$("own-h").scrollIntoView({block:"start"});$("own-f").focus();},60);};
+
+/* ---------- context menu: แก้ไข / ลบ ---------- */
+var menuSlot=null;
+function openMenu(s,x,y){
+  menuSlot=s;var m=$("cmenu"),own=!!s.c.own,les=!own&&s.c.kind!=="x";
+  $("cm-h").textContent=own?"ใบที่เขียนเอง":(titleOf(s.c.pid)||"");
+  $("cm-edit").hidden=!(own||les);
+  $("cm-unpin").hidden=own;
+  $("cm-del").textContent=own?"ลบใบนี้":"ลบใบนี้ (ไม่วนกลับมา)";
+  m.classList.add("on");
+  var w=m.offsetWidth,h=m.offsetHeight;
+  m.style.left=Math.max(8,Math.min(x,innerWidth-w-8))+"px";m.style.top=Math.max(8,Math.min(y,innerHeight-h-8))+"px";
+  var first=m.querySelector("button:not([hidden])");if(first)first.focus();
+}
+function closeMenu(){menuSlot=null;$("cmenu").classList.remove("on");}
+$("cm-close").onclick=closeMenu;
+$("cm-edit").onclick=function(){var s=menuSlot;closeMenu();if(s)editCard(s.c);};
+$("cm-del").onclick=function(){var s=menuSlot;closeMenu();if(!s)return;if(s.c.own)delOwn(s.c.own);else removeCard(s,"ลบแล้ว ใบนี้ไม่วนกลับมา (เอากลับมาได้จากหน้าจัดการ)");};
+$("cm-unpin").onclick=function(){var s=menuSlot;closeMenu();if(s)unpin(s.c.pid);};
+document.addEventListener("pointerdown",function(e){if(menuSlot&&!e.target.closest("#cmenu"))closeMenu();},true);
+document.addEventListener("keydown",function(e){if(menuSlot&&e.key==="Escape"){e.stopPropagation();closeMenu();}},true);
+window.addEventListener("scroll",closeMenu,true);
 
 /* ---------- panel ---------- */
 function openPanel(){$("panel").classList.add("on");$("panel").setAttribute("aria-hidden","false");renderPanel();setTimeout(function(){$("q").focus();},50);}
@@ -576,7 +654,7 @@ document.addEventListener("click",function(e){
 var SYNC={ref:null,on:false,busy:false,timer:null,first:true,err:""};
 function mergeMap(a,b){var r={};[a||{},b||{}].forEach(function(m){Object.keys(m).forEach(function(k){var v=+m[k]||0;if(!r[k]||Math.abs(v)>Math.abs(r[k]))r[k]=v;});});return r;}
 function normOwn(m){var r={};if(m&&typeof m==="object")Object.keys(m).forEach(function(id){var o=m[id];if(!o||typeof o!=="object"||!/^[a-z0-9]{1,24}$/.test(id))return;
-  if(o.del)r[id]={del:1,u:+o.u||0};else if(typeof o.f==="string"&&o.f)r[id]={f:o.f.slice(0,300),b:typeof o.b==="string"?o.b.slice(0,600):"",t:+o.t||0,u:+o.u||0};});return r;}
+  if(o.del)r[id]={del:1,u:+o.u||0};else if(typeof o.f==="string"&&o.f)r[id]={f:o.f.slice(0,600),b:typeof o.b==="string"?o.b.slice(0,1200):"",t:+o.t||0,u:+o.u||0};});return r;}
 function mergeOwn(a,b){var r={};[normOwn(a),normOwn(b)].forEach(function(m){Object.keys(m).forEach(function(id){if(!r[id]||(m[id].u||0)>(r[id].u||0))r[id]=m[id];});});return r;}
 function norm(o){o=o||{};var op=o.opt||{};return {pins:o.pins||{},done:o.done||{},own:normOwn(o.own),opt:{rev:op.rev!=null?+op.rev:8,next:op.next!=null?+op.next:10,q:op.q!=null?+op.q:1,flip:+op.flip||0}};}
 function keepLocal(){try{localStorage.setItem(LKEY,JSON.stringify(state));}catch(e){}}
@@ -639,6 +717,7 @@ document.addEventListener("visibilitychange",function(){if(document.visibilitySt
 document.addEventListener("keydown",function(e){
   if($("panel").classList.contains("on")){if(e.key==="Escape")closePanel();return;}
   if(zoomSlot){if(e.key==="Escape")closeZoom();return;}
+  if(menuSlot)return;
   if(e.target&&e.target.classList&&e.target.classList.contains("note")&&e.key==="Enter")return;
   if(e.key==="ArrowRight"||e.key===" "){e.preventDefault();wake();lastSwap=now();swapOldest(true);}
 });
