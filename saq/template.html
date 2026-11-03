@@ -86,6 +86,11 @@ button{font:inherit;color:inherit}
 .toggle input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--ink);transition:left .15s}
 .toggle input:checked{background:var(--yellow)}
 .toggle input:checked::after{left:20px;background:var(--on-tint)}
+.sync{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;white-space:nowrap;color:var(--muted)}
+.sync::before{content:"";width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ink);background:var(--sand)}
+.sync[data-s="ok"]::before{background:var(--mint)}
+.sync[data-s="wait"]::before{background:var(--yellow)}
+.sync[data-s="bad"]::before{background:var(--pink)}
 .chips{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
 .chip{display:inline-flex;align-items:center;gap:7px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);padding:4px 13px 4px 5px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:var(--sh-sm)}
 .chip .dot{width:24px;height:24px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;background:var(--c,var(--sand))}
@@ -286,6 +291,7 @@ button{font:inherit;color:inherit}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         </label>
         <label class="toggle" for="auto"><input type="checkbox" id="auto"> โชว์เฉลยทันที</label>
+        <span class="sync" id="sync" role="status" data-s="off">บันทึกในเครื่องนี้</span>
       </div>
       <div class="chips" id="chips"></div>
       <div class="hero">
@@ -501,10 +507,9 @@ function draw(){
       <div class="ansbox" ${auto?'':'hidden'}><h3 class="disp">เฉลยจากโพย</h3><div class="ans">${ans}</div>${notes}</div>
     </div>
     <div class="dfoot"><button class="btn" type="button" data-nav="-1" ${cur.i<=0?'disabled':''}>‹ ข้อก่อน</button><span class="pos">${cur.i+1} / ${cur.list.length}</span><button class="btn" type="button" data-nav="1" ${cur.i>=cur.list.length-1?'disabled':''}>ข้อถัดไป ›</button></div>`;
-  const draft = load('saq-d-'+it.id) || [];
+  const rec = recGet(it.id); const draft = (rec && rec.answers) || [];
   dlg.querySelectorAll('.asks textarea').forEach(t=>{ t.value = draft[+t.dataset.k] || ''; });
-  const prev = load('saq-g-'+it.id);
-  if (prev && prev.result) showGrade(prev.result, true);
+  if (rec && rec.result) showGrade(rec.result, true);
 }
 
 /* answer drafts + AI grading */
@@ -513,6 +518,112 @@ let aiState = 'pending', sampleFn = null, gradeCtl = null;
 function load(k){ try{ return JSON.parse(localStorage.getItem(k)||'null'); }catch(e){ return null; } }
 function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 function del(k){ try{ localStorage.removeItem(k); }catch(e){} }
+
+/* per-account records: data/users/<id>/<itemId> in the page's db; browser storage when no account is available */
+let recMode = 'local', recMap = {}, recRef = null, syncState = '';
+const recPending = new Set(), recTimers = {}, recQueue = {};
+const SYNC = {
+  connecting:['กำลังเชื่อมบัญชี…','wait'], loading:['กำลังโหลดบันทึกจากบัญชี…','wait'], saved:['บันทึกในบัญชีแล้ว','ok'],
+  saving:['กำลังบันทึก…','wait'], slow:['ยังโหลดบันทึกจากบัญชีไม่ได้','bad'], error:['บันทึกไม่สำเร็จ ลองพิมพ์อีกครั้ง','bad'],
+  local:['บันทึกในเครื่องนี้','off'], readonly:['สิทธิ์ดูอย่างเดียว · บันทึกในเครื่องนี้','off']
+};
+const SYNC_TITLE = {local:'เปิดหน้านี้ใน Claude และเข้าสู่ระบบ คำตอบจะบันทึกในบัญชีและเห็นได้ทุกเครื่อง', readonly:'ให้เจ้าของหน้าแชร์สิทธิ์ระดับ Contributor ขึ้นไป เพื่อบันทึกในบัญชี'};
+function setSync(st){
+  syncState = st; const el = document.getElementById('sync'); if (!el) return;
+  const v = SYNC[st] || SYNC.local; el.textContent = v[0]; el.dataset.s = v[1]; el.title = SYNC_TITLE[st] || '';
+}
+function recGet(id){
+  if (recMode==='db') return recMap[id] || null;
+  const d = load('saq-d-'+id), g = load('saq-g-'+id);
+  if (!d && !g) return null;
+  return {answers: d || (g && g.answers) || [], result: (g && g.result) || null};
+}
+function recToLocal(){
+  for (const id in recMap){ const r = recMap[id]; save('saq-d-'+id, r.answers||[]); if (r.result) save('saq-g-'+id, {answers:r.answers, result:r.result, at:r.at}); }
+}
+function recWrite(id){
+  const prev = recQueue[id] || Promise.resolve();
+  setSync('saving');
+  const run = prev.then(()=>{ const body = recMap[id]; return body ? recRef.doc(id).set(body) : recRef.doc(id).delete(); })
+    .then(()=>{ if (recQueue[id]===run){ recPending.delete(id); delete recQueue[id]; } if (!Object.keys(recQueue).length) setSync('saved'); })
+    .catch(e=>{
+      recPending.delete(id); delete recQueue[id];
+      if (e && e.code==='invalid_argument'){ recToLocal(); recMode='local'; setSync('readonly'); }
+      else setSync('error');
+    });
+  recQueue[id] = run; return run;
+}
+function recSaveAnswers(id, answers){
+  if (recMode!=='db'){ save('saq-d-'+id, answers); return; }
+  const cur0 = recMap[id] || {};
+  recMap[id] = {answers, result: cur0.result || null, at: Date.now()};
+  recPending.add(id); setSync('saving');
+  clearTimeout(recTimers[id]); recTimers[id] = setTimeout(()=>recWrite(id), 900);
+}
+function recSaveResult(id, answers, result){
+  if (recMode!=='db'){ save('saq-d-'+id, answers); save('saq-g-'+id, {answers, result, at:Date.now()}); return; }
+  clearTimeout(recTimers[id]); recPending.add(id);
+  recMap[id] = {answers, result, at: Date.now()}; recWrite(id);
+}
+function recClear(id){
+  del('saq-d-'+id); del('saq-g-'+id);
+  if (recMode!=='db') return;
+  clearTimeout(recTimers[id]); recPending.add(id); delete recMap[id]; recWrite(id);
+}
+function cleanRec(v){
+  if (!v || !Array.isArray(v.answers)) return null;
+  return {answers: v.answers.slice(0,12).map(a=>String(a).slice(0,4000)), result: (v.result && typeof v.result==='object') ? v.result : null, at: Number(v.at)||0};
+}
+async function migrateLocal(){
+  let keys = [];
+  try { for (let i=0;i<localStorage.length;i++){ const k = localStorage.key(i); if (/^saq-[dg]-/.test(k)) keys.push(k); } } catch(e){ return; }
+  const ids = [...new Set(keys.map(k=>k.slice(6)))];
+  for (const id of ids){
+    if (recMode!=='db') return;
+    if (!recMap[id]){
+      const d = load('saq-d-'+id), g = load('saq-g-'+id);
+      recMap[id] = {answers: d || (g && g.answers) || [], result: (g && g.result) || null, at: (g && g.at) || Date.now()};
+      recPending.add(id); await recWrite(id);
+      if (recMode!=='db') return;
+    }
+    del('saq-d-'+id); del('saq-g-'+id);
+  }
+  renderCardsDone(); fillOpen();
+}
+function fillOpen(){
+  if (ov.hidden || gradeCtl) return;
+  const it = cur.list[cur.i]; const rec = recGet(it.id); if (!rec) return;
+  const tas = [...dlg.querySelectorAll('.asks textarea')];
+  if (tas.some(t=>t===document.activeElement || t.value)) return;
+  tas.forEach(t=>{ t.value = rec.answers[+t.dataset.k] || ''; });
+  const out = dlg.querySelector('#gout'); if (out && !out.innerHTML && rec.result) showGrade(rec.result, true);
+}
+(async function(){
+  const cl = window.claude;
+  if (!cl || typeof cl.use!=='function'){ setSync('local'); return; }
+  setSync('connecting');
+  let db = null, user = null;
+  try { [db, user] = await Promise.all([cl.use('db'), cl.use('user')]); } catch(e){}
+  const uid = user ? await user.id() : null;
+  if (!db || !uid){ setSync('local'); return; }
+  try { recRef = db.collection('data/users/' + uid); } catch(e){ setSync('local'); return; }
+  setSync('loading');
+  let live = false, migrated = false;
+  const timer = setTimeout(()=>{ if (!live) setSync('slow'); }, 10000);
+  recRef.onSnapshot(snap=>{
+    if (syncState==='readonly') return;
+    const m = {};
+    snap.docs.forEach(d=>{ const r = cleanRec(d.data()); if (r) m[d.id] = r; });
+    for (const id of recPending){ if (recMap[id]) m[id] = recMap[id]; else delete m[id]; }
+    recMap = m; recMode = 'db';
+    if (!snap.metadata.fromCache && !live){
+      live = true; clearTimeout(timer);
+      if (!recPending.size) setSync('saved');
+      if (!migrated){ migrated = true; setTimeout(migrateLocal, 0); }
+    }
+    renderCardsDone(); fillOpen();
+  }, ()=>{ clearTimeout(timer); recMode = 'local'; setSync('local'); renderCardsDone(); });
+})();
 let clearArm = null;
 function clearAnswers(btn){
   if (clearArm !== btn){
@@ -523,7 +634,7 @@ function clearAnswers(btn){
   clearArm = null;
   if (gradeCtl) gradeCtl.abort();
   const it = cur.list[cur.i];
-  del('saq-d-'+it.id); del('saq-g-'+it.id);
+  recClear(it.id);
   dlg.querySelectorAll('.asks textarea').forEach(t=>{ t.value=''; });
   const out = dlg.querySelector('#gout'); if (out) out.innerHTML = '';
   if (!auto){ const ab = dlg.querySelector('.ansbox'); if (ab) ab.hidden = true; const rv = dlg.querySelector('.reveal'); if (rv) rv.hidden = false; }
@@ -546,7 +657,7 @@ function setAi(state){
 dlg.addEventListener('input', e=>{
   const t = e.target.closest('.asks textarea'); if(!t) return;
   const it = cur.list[cur.i]; const all = [...dlg.querySelectorAll('.asks textarea')].map(x=>x.value);
-  save('saq-d-'+it.id, all);
+  recSaveAnswers(it.id, all);
 });
 const VERD = {correct:['ถูก','v-correct'], partial:['บางส่วน','v-partial'], wrong:['ผิด','v-wrong'], blank:['ไม่ได้ตอบ','v-blank']};
 function showGrade(r, old){
@@ -613,7 +724,7 @@ async function grade(btn){
     const r = await sampleFn.json(gradePrompt(it, answers), {signal: ctl.signal});
     if (cur.list[cur.i] !== it) return;
     if (!r || typeof r!=='object' || !('score' in r)) throw {code:'invalid_json'};
-    save('saq-g-'+it.id, {answers, result:r, at:Date.now()});
+    recSaveResult(it.id, answers, r);
     showGrade(r, false);
     const ab = dlg.querySelector('.ansbox'); if (ab) ab.hidden = false;
     const rv = dlg.querySelector('.reveal'); if (rv) rv.hidden = true;
@@ -638,7 +749,7 @@ async function grade(btn){
 }
 function renderCardsDone(){
   document.querySelectorAll('.card').forEach(c=>{
-    const g = load('saq-g-'+c.dataset.id); const foot = c.querySelector('.cfoot');
+    const g = recGet(c.dataset.id); const foot = c.querySelector('.cfoot');
     let tag = foot.querySelector('.cdone');
     if (g && g.result){ if(!tag){ tag=document.createElement('span'); tag.className='cdone'; foot.querySelector('b').before(tag); } tag.textContent = Math.round(Number(g.result.score)*10)/10 + '/10'; }
     else if (tag) tag.remove();
