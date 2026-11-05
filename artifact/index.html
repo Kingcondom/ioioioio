@@ -54,7 +54,17 @@ h1,h2,h3,h4{font-family:var(--sans);font-weight:700;margin:0;text-wrap:balance;l
 a{color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:var(--r-sm)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
-.wrap{max-width:1220px;margin:0 auto;padding-inline:16px}
+/* ซูมทั้งหน้าตามความกว้างจอ (ผู้ใช้ขอ 31 ต.ค. — "มันโล่ง")
+   ขยายเพดานความกว้างและตัวอักษรพร้อมกัน ความยาวบรรทัดเทียบขนาดตัวอักษรจึงคงที่ (66 เท่า)
+   ต่างจากการดึงความกว้างอย่างเดียว ซึ่งทำให้บรรทัดยาวขึ้นเรื่อย ๆ จนอ่านยาก
+   จอ <1500px ไม่ซูม มือถือและแท็บเล็ตจึงไม่เปลี่ยน */
+:root{--z:1}
+@media (min-width:1500px){:root{--z:1.10}}
+@media (min-width:1750px){:root{--z:1.20}}
+@media (min-width:2100px){:root{--z:1.32}}
+@media (min-width:2500px){:root{--z:1.45}}
+body{zoom:var(--z)}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:16px}
 @media (min-width:640px){.wrap{padding-inline:22px}}
 
 /* ---------- masthead ---------- */
@@ -83,12 +93,17 @@ a{color:var(--accent-ink)}
 /* ---------- layout ---------- */
 .cols{display:grid;grid-template-columns:290px minmax(0,1fr);gap:26px;padding-block:22px 60px;align-items:start}
 @media (max-width:900px){.cols{grid-template-columns:1fr;gap:14px}}
-aside{position:sticky;top:66px;max-height:calc(100vh - 84px);overflow:auto}
+/* vh วัดจากจอจริงซึ่งไม่ถูกซูม ต้องหารกลับ ไม่งั้นสารบัญสูงเกินจอเมื่อซูม */
+aside{position:sticky;top:66px;max-height:calc((100vh - 84px) / var(--z));overflow:auto}
 @media (max-width:900px){aside{position:static;max-height:none;order:2}main{order:1}}
 /* ปุ่มซ่อนแถบเมนู — พับเหลือแถวเดียว (จำไว้ในเครื่องนี้) */
 .mast.min #courseTabs,.mast.min #tabs,.mast.min #ring,.mast.min #lsync,.mast.min #themeBtn{display:none}
 .mast.min .wrap{padding-block:8px}
 #mastBtn{padding:6px 13px}
+/* ซ่อนแถบสารบัญ "หัวข้อทั้งหมด" แล้วให้เนื้อหาขยายเต็มความกว้างจอ (ผู้ใช้ขอ 31 ต.ค.) — จำไว้ในเครื่องนี้ */
+#asideBtn{padding:6px 13px;order:-1}
+body.noaside .cols{grid-template-columns:minmax(0,1fr)}body.noaside .cols>aside{display:none}
+body.noaside .wrap{max-width:none}
 /* ปุ่มอยู่แถวเดียวกับชื่อเรื่องทุกความกว้าง ไม่ให้กินแถวเพิ่มบนจอกว้าง */
 .brand{order:-2;flex:1 1 0}#mastBtn{order:-1}.brand b{white-space:nowrap}.brand span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:560px){.mast .wrap{gap:8px}.tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:2px}.ring{order:3}.brand b{font-size:16px}}
@@ -308,7 +323,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig.pimg .pans{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:13.6px;line-height:1.6}
 /* ---------- ปิดตารางเพื่อทวน ---------- */
 .tqbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:14px 0 -6px}
-.tqbar .btn{padding:4px 11px;font-size:12.5px}
+.tqbar .btn{padding:4px 11px;font-size:12.5px}.tqbar a.btn{text-decoration:none;margin-left:auto}
 .tqbar .tqn{font-size:12px;color:var(--ink-3)}
 table.tq td.cv{cursor:pointer;position:relative;background:var(--surface-sunk)}
 table.tq td.cv:not(.op),table.tq td.cv:not(.op) *{color:transparent!important;text-shadow:none!important}
@@ -328,6 +343,7 @@ table.tq td.cv.op{background:var(--ok-soft)}
     <div class="ring" id="ring"></div>
     <span class="lsync" id="lsync" role="status"><i></i><span>บันทึกในเครื่องนี้</span></span>
     <button class="btn" id="themeBtn" title="สลับธีม">โหมดสี</button>
+    <button class="btn" id="asideBtn" aria-controls="outline" aria-expanded="true" title="ซ่อนแถบสารบัญ ให้เนื้อหาเต็มจอ">ซ่อนสารบัญ ◂</button>
     <button class="btn" id="mastBtn" aria-expanded="true" title="ซ่อนแถบเมนู">ซ่อนเมนู ▴</button>
   </div>
 </header>
@@ -663,7 +679,37 @@ function tqSet(tw,on){
 function tqBar(bar,on){
   bar.innerHTML=on?"<button class='btn' data-tq='all'>เปิดทั้งหมด</button><button class='btn' data-tq='re'>ปิดใหม่</button><button class='btn' data-tq='off'>เลิกทวน</button><span class='tqn'>แตะช่องเพื่อเปิดทีละช่อง · คำใบ้ = ตัวแรก ๆ (จำนวนข้อ)</span>"
     :"<button class='btn' data-tq='on'>ปิดเพื่อทวน</button>";
+  bar.insertAdjacentHTML("beforeend","<a class='btn' data-tqpin='1' href='"+POSTIT+"' target='_blank' rel='noopener' title='แต่ละแถวของตารางนี้จะเป็น post-it หนึ่งใบ'>ปักตารางใน post-it</a>");
 }
+/* ปักตารางใน post-it (ผู้ใช้ขอ 5 พ.ย.) — แถวละใบ: หน้า = คอลัมน์แรก + คำถามจากหัวคอลัมน์ (ตาราง 2 คอลัมน์) หรือหัวข้อที่ตารางอยู่ · หลัง = คอลัมน์ที่เหลือ
+   ส่งไปทาง #t=<base64url JSON> ตั้ง href ตอนกด (ก่อนเบราว์เซอร์เปิดลิงก์) จึงได้เนื้อหาล่าสุดเสมอ */
+var POSTIT="https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY";
+function cellTxt(td){return String(td.innerText||td.textContent||"").replace(/[ \t]+/g," ").replace(/\s*\n\s*/g,"\n").trim();}
+function tqPinHref(tw){
+  var tb=tw.querySelector("table");if(!tb)return POSTIT;
+  var hd=[].map.call(tb.querySelectorAll("thead th"),cellTxt),ctx="",el=tw.previousElementSibling;
+  while(el&&!/^H[34]$/.test(el.tagName))el=el.previousElementSibling;
+  if(el)ctx=cellTxt(el);
+  var s=secOf(lecOf(state.lec),state.sec),title=s?s.title:"";
+  if(!ctx)ctx=title;
+  var sub=hd.length===2&&hd[1]?hd[1]:"";
+  var cards=[];
+  tb.querySelectorAll("tbody tr").forEach(function(tr){
+    var c=[].map.call(tr.children,cellTxt);if(!c.length||!c.join(""))return;
+    var head=c[0]||hd[0]||"",back=[];
+    for(var i=1;i<c.length;i++){if(!c[i]||c[i]==="—")continue;back.push(hd.length>2&&hd[i]?hd[i]+": "+c[i]:c[i]);}
+    if(!head||!back.length)return;
+    cards.push(["**"+head.replace(/\*/g,"")+"**\n"+(sub?sub.replace(/[?？]\s*$/,"")+" ?":ctx),back.join("\n")]);
+  });
+  var js=JSON.stringify({s:ctx,c:cards});
+  var b64=btoa(unescape(encodeURIComponent(js))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  return POSTIT+"#t="+b64;
+}
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("a[data-tqpin]");if(!a)return;
+  var bar=a.closest(".tqbar"),tw=bar&&bar.nextElementSibling;
+  if(tw)a.href=tqPinHref(tw);
+});
 function tqInit(root){
   (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw,i){
     if(tw._tq)return;tw._tq=1;
@@ -1002,7 +1048,7 @@ function viewSection(){
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
-    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"</div>"+
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+hideBtn(l)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#l-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
     (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,IMGS=s.imgs||{},"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
   FIGS={};ANIMS={};IMGS={};
   if(!hid&&s.pearls&&s.pearls.length)
@@ -1237,8 +1283,20 @@ function setMast(min){
   b.textContent=min?'เมนู ▾':'ซ่อนเมนู ▴';b.title=min?'แสดงแถบเมนู':'ซ่อนแถบเมนู';
 }
 try{setMast(localStorage.getItem('med421-learn-mast')==='min');}catch(e){}
+function setAside(off){
+  document.body.classList.toggle('noaside',off);
+  var b=document.getElementById('asideBtn');if(!b)return;
+  b.setAttribute('aria-expanded',off?'false':'true');
+  b.textContent=off?'สารบัญ ▸':'ซ่อนสารบัญ ◂';b.title=off?'แสดงแถบสารบัญ':'ซ่อนแถบสารบัญ ให้เนื้อหาเต็มจอ';
+}
+try{setAside(localStorage.getItem('med421-learn-aside')==='off');}catch(e){}
 document.addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
+  if(t.id==="asideBtn"){
+    var off=!document.body.classList.contains('noaside');setAside(off);
+    try{localStorage.setItem('med421-learn-aside',off?'off':'');}catch(e2){}
+    return;
+  }
   if(t.id==="mastBtn"){
     var min=!document.querySelector('.mast').classList.contains('min');setMast(min);
     try{localStorage.setItem('med421-learn-mast',min?'min':'');}catch(e2){}
