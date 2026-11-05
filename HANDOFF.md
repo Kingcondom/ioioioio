@@ -416,5 +416,5 @@ artifact: https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (capabilities db+use
 2. `python3 build.py --no-pdf` ในโฟลเดอร์นั้น
 3. `python3 dashboard/drill_tool.py merge <drill.html> dashboard/drill_sets <out.html>` (ชุดรายคาบของ session dashboard) → publish `<out.html>` · ตรวจก่อน publish ว่าข้อเดิมไม่เปลี่ยน (โหลดด้วย `drill_tool.load`)
 - lec ที่มีเฉพาะใน drill_sets ของ dashboard (เช่น G06) ต้องใส่ newlec ใน JOB ไม่งั้น build.py ปฏิเสธ
-- เวอร์ชัน: v12 (14 ต.ค.) → v13 บัญชี+สุ่มข้อสอบ → v14 cardio 36 → v16 chest 37/THO, nephro CATH, neuro LP/ACS → v17 nephro PHY1/PHY2 → v18 derm D03 → v19 (29 ต.ค.) chest 21 CH-IMG + gi G06 GI-LFT7 → **v20 (30 ต.ค.) nephro 42 NEPH-AKI**
+- เวอร์ชัน: v12 (14 ต.ค.) → v13 บัญชี+สุ่มข้อสอบ → v14 cardio 36 → v16 chest 37/THO, nephro CATH, neuro LP/ACS → v17 nephro PHY1/PHY2 → v18 derm D03 → v19 (29 ต.ค.) chest 21 CH-IMG + gi G06 GI-LFT7 → v20 (30 ต.ค.) nephro 42 NEPH-AKI → (หลังจากนั้น session อื่นแพตช์หน้า Drill ตรง: pastel restyle, ข้อสอบมีรูป, ข้อสอบแยกปี, high-yield — **ห้ามสร้าง drill ใหม่จาก template ทับ**) → **5 พ.ย. air 23 +24 ข้อ ด้วย `drill_tool.py merge <live page> <โฟลเดอร์ที่มีแค่ชุดใหม่>` (ต่อท้าย bank อย่างเดียว ส่วนอื่นของหน้าไม่เปลี่ยน)**
 
