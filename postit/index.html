@@ -190,6 +190,7 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
     <h2>ใช้งาน</h2>
     <p class="note-t">แตะโพสต์อิทที่ยังไม่เฉลยเพื่อดูคำตอบ แตะอีกครั้งเพื่อหยิบขึ้นมาอ่านใหญ่ๆ แล้วกด <b>จำได้แล้ว</b> ถ้าไม่ต้องเห็นใบนั้นอีก กด Space หรือลูกศรขวาเพื่อลอกใบถัดไปทันที</p>
     <p class="note-t">ในเว็บ MED421 learn, Ward Drill และ Salmon NL กดปุ่ม <b>ปักไว้ใน post-it</b> ที่หัวข้อหรือข้อสอบที่ไม่อยากลืม ระบบจะเปิดหน้านี้และปักให้อัตโนมัติ</p>
+    <p class="note-t">ในตารางของ MED421 learn กด <b>ปักตารางใน post-it</b> แต่ละแถวของตารางจะกลายเป็นหนึ่งใบ (ด้านหน้า = ชื่อแถว ด้านหลัง = รายละเอียด) แก้หรือลบได้เหมือนใบที่เขียนเอง</p>
     <p class="note-t">กด <b>+ เขียนเอง</b> เพื่อเขียนโพสต์อิทของตัวเอง ใบที่เขียนเองวนรวมกับใบอื่นบนกำแพง แตะใบนั้นแล้วกด <b>แก้ใบนี้</b> หรือ <b>ลบใบนี้</b> ได้</p>
     <p class="note-t"><b>📷 จากภาพหน้าจอ</b> (ในส่วนเขียนเอง) วางหรือเลือกภาพเนื้อหา Claude จะแปลงเป็นคำถาม–เฉลยให้เลือกแปะ</p>
     <p class="note-t"><b>คลิกขวา ดับเบิลคลิก หรือกดค้าง</b> ที่ใบไหนก็ได้ เพื่อแก้ไขหรือลบ · ใบจากบทเรียนที่แก้แล้วจะกลายเป็นใบที่เขียนเองแทนใบเดิม · ใบที่ลบ เอากลับมาได้ด้วยปุ่ม <b>เอากลับมา</b> ข้างหัวข้อ</p>
@@ -548,9 +549,31 @@ function resetTopic(pid){
 function readHash(){
   var h=String(location.hash||"").replace(/^#/,"");
   if(!h)return;
-  var ok=pin(h);
-  if(!ok)toast("ไม่พบหัวข้อนี้ในคลัง ลองค้นหาจากหน้าจัดการ");
+  if(h.indexOf("t=")===0)pinTable(h.slice(2));
+  else{
+    var ok=pin(h);
+    if(!ok)toast("ไม่พบหัวข้อนี้ในคลัง ลองค้นหาจากหน้าจัดการ");
+  }
   try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}
+}
+/* ปักทั้งตารางจาก MED421 learn (ผู้ใช้ขอ 5 พ.ย.) — #t=<base64url ของ JSON {s:ชื่อหัวข้อ,c:[[หน้า,หลัง],…]}>
+   แต่ละแถวเป็นใบเขียนเองหนึ่งใบ · id มาจากเนื้อหา กดปักตารางเดิมซ้ำจึงไม่เกิดใบซ้ำ (ใบที่กดจำได้แล้วจะกลับมา) */
+function pinTable(x){
+  var d=null;
+  try{x=x.replace(/-/g,"+").replace(/_/g,"/");while(x.length%4)x+="=";d=JSON.parse(decodeURIComponent(escape(atob(x))));}catch(e){}
+  if(!d||!Array.isArray(d.c)){toast("อ่านตารางที่ส่งมาไม่ได้");return;}
+  var t=now(),first=null,n=0;
+  d.c.forEach(function(c,i){
+    if(!Array.isArray(c))return;
+    var f=String(c[0]||"").trim().slice(0,600),b=String(c[1]||"").trim().slice(0,1200);if(!f)return;
+    var id="t"+hash(f+"\u0001"+b),prev=state.own[id];
+    if(prev&&!prev.del){var k=ownCard(id).k;if(state.done[k]>0)state.done[k]=-now();}
+    else state.own[id]={f:f,b:b,t:t+i,u:t+i};
+    if(!first)first=id;n++;
+  });
+  if(!n){toast("ตารางนี้ไม่มีแถวให้ปัก");return;}
+  save();buildDeck("o-"+first);layout();renderPanel();
+  toast("ปักแล้ว "+n+" ใบ"+(d.s?": "+String(d.s).slice(0,60):""));
 }
 
 /* ---------- own notes ---------- */

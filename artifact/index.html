@@ -324,7 +324,7 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig.pimg .pans{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:13.6px;line-height:1.6}
 /* ---------- ปิดตารางเพื่อทวน ---------- */
 .tqbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:14px 0 -6px}
-.tqbar .btn{padding:4px 11px;font-size:12.5px}
+.tqbar .btn{padding:4px 11px;font-size:12.5px}.tqbar a.btn{text-decoration:none;margin-left:auto}
 .tqbar .tqn{font-size:12px;color:var(--ink-3)}
 table.tq td.cv{cursor:pointer;position:relative;background:var(--surface-sunk)}
 table.tq td.cv:not(.op),table.tq td.cv:not(.op) *{color:transparent!important;text-shadow:none!important}
@@ -680,7 +680,37 @@ function tqSet(tw,on){
 function tqBar(bar,on){
   bar.innerHTML=on?"<button class='btn' data-tq='all'>เปิดทั้งหมด</button><button class='btn' data-tq='re'>ปิดใหม่</button><button class='btn' data-tq='off'>เลิกทวน</button><span class='tqn'>แตะช่องเพื่อเปิดทีละช่อง · คำใบ้ = ตัวแรก ๆ (จำนวนข้อ)</span>"
     :"<button class='btn' data-tq='on'>ปิดเพื่อทวน</button>";
+  bar.insertAdjacentHTML("beforeend","<a class='btn' data-tqpin='1' href='"+POSTIT+"' target='_blank' rel='noopener' title='แต่ละแถวของตารางนี้จะเป็น post-it หนึ่งใบ'>ปักตารางใน post-it</a>");
 }
+/* ปักตารางใน post-it (ผู้ใช้ขอ 5 พ.ย.) — แถวละใบ: หน้า = คอลัมน์แรก + คำถามจากหัวคอลัมน์ (ตาราง 2 คอลัมน์) หรือหัวข้อที่ตารางอยู่ · หลัง = คอลัมน์ที่เหลือ
+   ส่งไปทาง #t=<base64url JSON> ตั้ง href ตอนกด (ก่อนเบราว์เซอร์เปิดลิงก์) จึงได้เนื้อหาล่าสุดเสมอ */
+var POSTIT="https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY";
+function cellTxt(td){return String(td.innerText||td.textContent||"").replace(/[ \t]+/g," ").replace(/\s*\n\s*/g,"\n").trim();}
+function tqPinHref(tw){
+  var tb=tw.querySelector("table");if(!tb)return POSTIT;
+  var hd=[].map.call(tb.querySelectorAll("thead th"),cellTxt),ctx="",el=tw.previousElementSibling;
+  while(el&&!/^H[34]$/.test(el.tagName))el=el.previousElementSibling;
+  if(el)ctx=cellTxt(el);
+  var s=secOf(lecOf(state.lec),state.sec),title=s?s.title:"";
+  if(!ctx)ctx=title;
+  var sub=hd.length===2&&hd[1]?hd[1]:"";
+  var cards=[];
+  tb.querySelectorAll("tbody tr").forEach(function(tr){
+    var c=[].map.call(tr.children,cellTxt);if(!c.length||!c.join(""))return;
+    var head=c[0]||hd[0]||"",back=[];
+    for(var i=1;i<c.length;i++){if(!c[i]||c[i]==="—")continue;back.push(hd.length>2&&hd[i]?hd[i]+": "+c[i]:c[i]);}
+    if(!head||!back.length)return;
+    cards.push(["**"+head.replace(/\*/g,"")+"**\n"+(sub?sub.replace(/[?？]\s*$/,"")+" ?":ctx),back.join("\n")]);
+  });
+  var js=JSON.stringify({s:ctx,c:cards});
+  var b64=btoa(unescape(encodeURIComponent(js))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  return POSTIT+"#t="+b64;
+}
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("a[data-tqpin]");if(!a)return;
+  var bar=a.closest(".tqbar"),tw=bar&&bar.nextElementSibling;
+  if(tw)a.href=tqPinHref(tw);
+});
 function tqInit(root){
   (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw,i){
     if(tw._tq)return;tw._tq=1;

@@ -1,0 +1,243 @@
+#!/usr/bin/env python3
+"""ตรวจการส่งตารางจาก MED421 learn ไปเป็นใบ post-it (ฟีเจอร์ 5 พ.ย.)
+
+ฟีเจอร์นี้พาดสองหน้าและคั่นด้วย URL hash ที่เข้ารหัส base64 — ถ้าพังจะพังเงียบ
+(ปุ่มกดได้ หน้าเปิดได้ แต่ไม่มีใบขึ้น หรือขึ้นเป็นภาษาต่างดาว) จึงต้องวิ่งจริงทั้งเส้น
+
+    python3.13 artifact/tools/verify_pin.py
+
+ตรวจพฤติกรรม ไม่ตรวจชื่อคลาส: หา "ปุ่มที่พาไปหน้า post-it" จากข้อความบนปุ่ม
+ไม่ใช่จาก data-* เพราะฟีเจอร์นี้เพิ่งเขียนและถูกเขียนใหม่ได้ทุกวัน
+"""
+import base64
+import glob
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+
+from playwright.sync_api import sync_playwright
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+LEARN = os.path.join(ROOT, "artifact")
+POSTIT = os.path.join(ROOT, "postit")
+P_LEARN, P_POSTIT = 8941, 8942
+PIN_LABEL = re.compile(r"ปัก.*ตาราง|ตาราง.*post")
+
+fail = []
+
+LKEY = "postit-v1"   # คีย์ที่หน้า post-it ใช้เก็บของจริง
+
+
+def own_notes(pg):
+    """ใบที่ผู้ใช้เขียนเอง อ่านจาก localStorage — เป็นสิ่งที่คงอยู่จริงหลังรีโหลด"""
+    raw = pg.evaluate("(k)=>localStorage.getItem(k)", LKEY)
+    if not raw:
+        return []
+    own = (json.loads(raw).get("own") or {})
+    return [{"f": v.get("f", ""), "b": v.get("b", "")}
+            for v in own.values() if v and not v.get("del")]
+
+
+
+
+def chromium():
+    c = glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")
+    if not c:
+        raise SystemExit("ไม่พบ Chromium ใน /opt/pw-browsers — ห้ามรัน playwright install")
+    return sorted(c, key=lambda p: int(re.search(r"chromium-(\d+)", p).group(1)))[-1]
+
+
+def serve(d, port):
+    s = subprocess.Popen([sys.executable, "-m", "http.server", str(port), "-d", d],
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    return s
+
+
+def decode(payload):
+    x = payload.replace("-", "+").replace("_", "/")
+    x += "=" * (-len(x) % 4)
+    return json.loads(base64.b64decode(x).decode("utf-8"))
+
+
+# หาคาบ/หัวข้อที่มีตารางหลายคอลัมน์ จากไฟล์ data เอง ไม่ฝัง id ไว้
+def pick_targets(nmax=3):
+    out = []
+    for f in sorted(glob.glob(os.path.join(LEARN, "data", "*.json"))):
+        name = os.path.splitext(os.path.basename(f))[0]
+        if name in ("index", "nl"):
+            continue
+        for lec in json.load(open(f, encoding="utf-8")):
+            for sec in lec.get("sections", []):
+                rows = [r.strip() for r in str(sec.get("md", "")).split("\n")
+                        if r.strip().startswith("|")]
+                body = [r for r in rows
+                        if not set(r.replace("|", "").replace(" ", "")) <= set(":-")]
+                if len(body) < 3:
+                    continue
+                cols = len(body[0].strip("|").split("|"))
+                out.append((name, lec["lec"], sec["id"], cols, len(body) - 1))
+    # เอาตาราง 2 คอลัมน์หนึ่งอัน และ >2 คอลัมน์หนึ่งอัน เพื่อคุมทั้งสองเส้นทางของโค้ด
+    two = next((t for t in out if t[3] == 2), None)
+    many = next((t for t in out if t[3] > 2), None)
+    big = max(out, key=lambda t: t[3] * t[4]) if out else None
+    return [t for t in (two, many, big) if t][:nmax]
+
+
+srv = [serve(LEARN, P_LEARN), serve(POSTIT, P_POSTIT)]
+time.sleep(1.5)
+try:
+    with sync_playwright() as p:
+        b = p.chromium.launch(executable_path=chromium(), args=["--no-sandbox"])
+        ctx = b.new_context(viewport={"width": 1280, "height": 900})
+        learn = ctx.new_page()
+        errs = []
+        learn.on("pageerror", lambda e: errs.append("learn pageerror: %s" % e))
+        learn.on("console", lambda m: errs.append("learn console: " + m.text)
+                 if m.type == "error" else None)
+        learn.on("response", lambda r: errs.append("learn %d %s" % (r.status, r.url))
+                 if r.status >= 400 else None)
+        learn.goto("http://127.0.0.1:%d/index.html" % P_LEARN, wait_until="networkidle")
+
+        # กันเบราว์เซอร์เปิดลิงก์ออกไปข้างนอก แต่ยังให้ handler ของแอปตั้ง href ได้
+        learn.add_init_script("")
+        learn.evaluate("""()=>{document.addEventListener('click',function(e){
+            var a=e.target.closest&&e.target.closest('a[href]');
+            if(a&&/claude\\.ai\\/artifact/.test(a.getAttribute('href')||''))e.preventDefault();
+        },false);}""")
+
+        targets = pick_targets()
+        if not targets:
+            fail.append("ไม่พบตารางในชุดข้อมูลเลย — ตรวจไม่ได้")
+        print("ตารางที่จะตรวจ:", [(t[0], t[2], "%dคอลัมน์ %dแถว" % (t[3], t[4]))
+                                  for t in targets])
+
+        payloads = []
+        for setname, lec, sid, cols, rows in targets:
+            label = next(e["label"] for e in json.load(
+                open(os.path.join(LEARN, "data", "index.json"), encoding="utf-8"))
+                if e["set"] == setname)
+            learn.click('#courseTabs button:has-text("%s")' % label)
+            learn.wait_for_selector('[data-lec="%s"]' % lec, timeout=8000)
+            if not learn.is_visible('[data-sec="%s"]' % sid):
+                learn.click('[data-lec="%s"]' % lec)
+            learn.wait_for_selector('[data-sec="%s"]' % sid, state="visible", timeout=8000)
+            learn.click('[data-sec="%s"]' % sid)
+            learn.wait_for_timeout(300)
+
+            links = learn.locator("main a").filter(has_text=PIN_LABEL)
+            if links.count() == 0:
+                fail.append("%s: ไม่พบปุ่มส่งตารางไป post-it เหนือตาราง" % sid)
+                continue
+            link = links.first
+            link.click()
+            learn.wait_for_timeout(120)
+            href = link.get_attribute("href") or ""
+            if "#t=" not in href:
+                fail.append("%s: กดปุ่มแล้ว href ไม่มี #t= (ได้ %r)" % (sid, href[:90]))
+                continue
+            data = decode(href.split("#t=", 1)[1])
+
+            # เทียบกับตารางที่อยู่บนหน้าจริง ไม่ใช่กับ markdown
+            dom = learn.evaluate("""(sel)=>{
+              var a=[...document.querySelectorAll('main .prose .tablewrap')];
+              var tw=a.find(x=>x.querySelector('table'));
+              var tb=tw.querySelector('table');
+              var hd=[...tb.querySelectorAll('thead th')].map(t=>t.innerText.trim());
+              var rows=[...tb.querySelectorAll('tbody tr')].map(
+                  tr=>[...tr.children].map(td=>td.innerText.trim()));
+              return {hd:hd, rows:rows};
+            }""", None)
+            usable = [r for r in dom["rows"]
+                      if r and r[0] and any(c and c != "—" for c in r[1:])]
+            if len(data.get("c") or []) != len(usable):
+                fail.append("%s: ตารางบนหน้ามีแถวใช้ได้ %d แต่ส่งไป %d ใบ"
+                            % (sid, len(usable), len(data.get("c") or [])))
+            for (front, back), row in zip(data.get("c") or [], usable):
+                key = row[0].replace("*", "")
+                if key.split("\n")[0][:18] not in front:
+                    fail.append("%s: หน้าใบไม่มีคอลัมน์แรกของแถว (%r ไม่อยู่ใน %r)"
+                                % (sid, key[:18], front[:60]))
+                    break
+                for c in row[1:]:
+                    if c and c != "—" and c.split("\n")[0][:18] not in back:
+                        fail.append("%s: หลังใบตกเนื้อหาคอลัมน์ถัดไป (%r)" % (sid, c[:30]))
+                        break
+            nbytes = len(href)
+            print("  %-18s %d ใบ · URL %d ตัวอักษร%s"
+                  % (sid, len(data.get("c") or []), nbytes,
+                     "  ⚠ ยาวเกิน 8000 เสี่ยงเบราว์เซอร์ตัด" if nbytes > 8000 else ""))
+            if nbytes > 8000:
+                fail.append("%s: URL ยาว %d ตัวอักษร — เสี่ยงถูกตัดในเบราว์เซอร์บางตัว"
+                            % (sid, nbytes))
+            payloads.append((sid, href.split("#t=", 1)[1], data))
+
+        # ---- ฝั่ง post-it: เปิดด้วย hash จริงแล้วต้องได้ใบครบ ----
+        pin = ctx.new_page()
+        pin.on("pageerror", lambda e: errs.append("postit pageerror: %s" % e))
+        pin.on("console", lambda m: errs.append("postit console: " + m.text)
+               if m.type == "error" else None)
+        pin.on("response", lambda r: errs.append("postit %d %s" % (r.status, r.url))
+               if r.status >= 400 else None)
+        for round_i, (sid, payload, data) in enumerate(payloads):
+            pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
+                     wait_until="domcontentloaded")
+            pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+            pin.goto("http://127.0.0.1:%d/index.html?r=%d#t=%s"
+                     % (P_POSTIT, round_i, payload), wait_until="networkidle")
+            pin.wait_for_timeout(600)
+            own = own_notes(pin)
+            want = [(f, b) for f, b in data["c"]]
+            if len(own) != len(want):
+                fail.append("%s: ส่งไป %d ใบ แต่หน้า post-it สร้าง %d ใบ"
+                            % (sid, len(want), len(own)))
+            got = {(o["f"], o["b"]) for o in own}
+            missing = [w for w in want if w not in got]
+            if missing:
+                fail.append("%s: %d ใบเนื้อหาไม่ตรงหลังถอดรหัส เช่น %r"
+                            % (sid, len(missing), missing[0][0][:60]))
+            thai = [o for o in own if re.search(r"[฀-๿]", o["f"] + o["b"])]
+            print("  %-18s post-it สร้าง %d ใบ · มีภาษาไทยอ่านออก %d ใบ"
+                  % (sid, len(own), len(thai)))
+            if want and not thai:
+                fail.append("%s: ไม่มีใบไหนมีอักษรไทยเลย — น่าจะเพี้ยนตอนถอด base64" % sid)
+
+            # ปักซ้ำต้องไม่ได้ใบเพิ่ม (pinTable คีย์ด้วย hash ของเนื้อหา)
+            before = len(own)
+            pin.goto("http://127.0.0.1:%d/index.html?r=%db#t=%s"
+                     % (P_POSTIT, round_i, payload), wait_until="networkidle")
+            pin.wait_for_timeout(600)
+            after = len(own_notes(pin))
+            if after != before:
+                fail.append("%s: ปักซ้ำแล้วใบเพิ่มจาก %d เป็น %d — ควรกันซ้ำด้วยเนื้อหา"
+                            % (sid, before, after))
+        pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
+                 wait_until="domcontentloaded")
+        pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+        bad_hash = "t=%s" % base64.urlsafe_b64encode(b"not json").decode().rstrip("=")
+        pin.goto("http://127.0.0.1:%d/index.html#%s" % (P_POSTIT, bad_hash),
+                 wait_until="networkidle")
+        pin.wait_for_timeout(500)
+        n = len(own_notes(pin))
+        if n:
+            fail.append("ส่ง payload เสียไปแล้วยังสร้าง %d ใบ — ควรแจ้งเตือนแล้วไม่สร้าง" % n)
+        print("  payload เสีย → สร้าง %d ใบ (ควรเป็น 0)" % n)
+
+        hard = [e for e in errs
+                if "favicon" not in e and "Failed to load resource" not in e]
+        if hard:
+            fail.append("มี error ในคอนโซล: %s" % hard[:3])
+        b.close()
+finally:
+    for s in srv:
+        s.terminate()
+
+print()
+if fail:
+    print("❌ ไม่ผ่าน")
+    for f in fail:
+        print("  -", f)
+    sys.exit(1)
+print("✅ ผ่านทุกข้อ — ตารางจาก learn ไปขึ้นเป็นใบ post-it ได้ครบและอ่านออก")
