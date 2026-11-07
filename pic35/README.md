@@ -23,3 +23,7 @@ EKG hyperK และ PBS thrombocytopenia ใน FA SAQ (ในโพยไม�
 ## สุ่มทำข้อสอบ "ระบบละ 5 ข้อ" (Version 30)
 `python3 ward_drill/patch_quiz5.py ward_drill/index.html` — เพิ่มขอบเขตในโหมดสุ่ม: สุ่ม 5 ข้อจากทุกระบบ ยกเว้น Mock NL (11 ระบบ = 55 ข้อ) เรียงตามระบบ
 หมายเหตุ: Version 30 แพตช์ต่อจากหน้าเว็บสด 1793895436-5a3e (มีข้อ AIR-ART จาก session อื่น) — `ward_drill/index.html` ใน repo ตรงกับเว็บแล้ว
+
+## สุ่ม: "คลังข้อสอบเก่าก่อน" (Version 31)
+`python3 ward_drill/patch_quiz_prio.py ward_drill/index.html` (รันหลัง patch_quiz5.py) — แถบ "เลือกข้อจาก" ในโหมดสุ่ม:
+คลังข้อสอบเก่าก่อน (ค่าเริ่มต้น) = สุ่มจากข้อสอบเก่าให้ครบก่อน ไม่พอจึงเติมข้อใหม่ · คละเก่ากับใหม่ = แบบเดิม · ข้อใหม่ในชุดสุ่มติดป้าย "ข้อใหม่"
