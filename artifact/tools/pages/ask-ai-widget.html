@@ -1,0 +1,191 @@
+
+<!-- ถาม AI (ผู้ใช้ขอ 7 พ.ย. 2569) — ปุ่มลอยมุมขวาล่าง + ลากคลุมข้อความแล้วถามได้ทันที · ใช้ capability sample (Claude Sonnet)
+     ทั้งชุดอยู่ในบล็อกนี้ ไม่พึ่งโค้ดอื่นของหน้า · แขวนที่ <html> เพื่อไม่โดน zoom/transform ของ body -->
+<style id="aiw-style">
+:root{--aiw-bg:#ffffff;--aiw-sunk:#f1f3f2;--aiw-ink:#18201c;--aiw-ink2:#4a5550;--aiw-ink3:#7a857f;--aiw-rule:#d9dfdb;--aiw-acc:#2457c5;--aiw-acc-soft:#e8eefb;--aiw-on:#ffffff;--aiw-bad:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--aiw-bg:#15191b;--aiw-sunk:#1e2427;--aiw-ink:#e8ecea;--aiw-ink2:#b0bab5;--aiw-ink3:#83908a;--aiw-rule:#2c3438;--aiw-acc:#8fb0ff;--aiw-acc-soft:#1c2740;--aiw-on:#0b1220;--aiw-bad:#f2a49c}}
+:root[data-theme="dark"]{--aiw-bg:#15191b;--aiw-sunk:#1e2427;--aiw-ink:#e8ecea;--aiw-ink2:#b0bab5;--aiw-ink3:#83908a;--aiw-rule:#2c3438;--aiw-acc:#8fb0ff;--aiw-acc-soft:#1c2740;--aiw-on:#0b1220;--aiw-bad:#f2a49c}
+.aiw-fab,.aiw-sel,.aiw-panel,.aiw-panel *{box-sizing:border-box;font-family:"IBM Plex Sans Thai",-apple-system,"Helvetica Neue",Arial,sans-serif;letter-spacing:normal;text-transform:none}
+.aiw-fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:2147483000;font-size:14px;font-weight:700;line-height:1;color:var(--aiw-on);background:var(--aiw-acc);border:0;border-radius:999px;padding:12px 18px;cursor:pointer;box-shadow:0 8px 24px -8px rgba(0,0,0,.45)}
+.aiw-sel{position:fixed;z-index:2147483002;font-size:13px;font-weight:700;line-height:1;color:var(--aiw-on);background:var(--aiw-acc);border:0;border-radius:999px;padding:8px 13px;cursor:pointer;box-shadow:0 6px 18px -6px rgba(0,0,0,.5);white-space:nowrap}
+.aiw-fab[hidden],.aiw-sel[hidden],.aiw-panel[hidden],.aiw-quote[hidden],.aiw-quick[hidden]{display:none!important}
+.aiw-panel{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:2147483001;width:min(420px,calc(100vw - 32px));height:min(600px,calc(100vh - 100px));display:flex;flex-direction:column;background:var(--aiw-bg);color:var(--aiw-ink);border:1px solid var(--aiw-rule);border-radius:20px;box-shadow:0 18px 50px -18px rgba(0,0,0,.55);overflow:hidden;font-size:14.4px;line-height:1.6;text-align:left}
+@media (max-width:560px){.aiw-panel{right:8px;left:8px;width:auto;bottom:8px;height:min(78vh,620px)}}
+.aiw-hd{display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--aiw-rule);background:var(--aiw-sunk)}
+.aiw-hd b{font-size:14.5px;margin-right:auto;min-width:0}
+.aiw-ctx{display:block;font-size:11.5px;font-weight:500;color:var(--aiw-ink3);max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.aiw-hd button{font-size:12.5px;font-weight:600;color:var(--aiw-ink2);background:var(--aiw-bg);border:1px solid var(--aiw-rule);border-radius:999px;padding:4px 10px;cursor:pointer;white-space:nowrap;flex:none}
+.aiw-log{flex:1;min-height:0;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.aiw-m{max-width:92%;padding:9px 12px;border-radius:14px;overflow-wrap:anywhere}
+.aiw-m.u{align-self:flex-end;background:var(--aiw-acc-soft);border-bottom-right-radius:4px}
+.aiw-m.a{align-self:flex-start;background:var(--aiw-sunk);border-bottom-left-radius:4px}
+.aiw-m.err{color:var(--aiw-bad)}
+.aiw-m p{margin:0 0 6px}.aiw-m p:last-child{margin:0}.aiw-m ul{margin:4px 0;padding-left:20px}.aiw-m li{margin:2px 0}
+.aiw-m code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--aiw-bg);padding:0 4px;border-radius:4px}
+.aiw-q{margin:0 0 6px;padding:4px 9px;border-left:3px solid var(--aiw-acc);color:var(--aiw-ink2);font-size:13px;background:var(--aiw-bg);border-radius:0 8px 8px 0;white-space:pre-wrap}
+.aiw-dim{color:var(--aiw-ink3);font-size:13.5px;line-height:1.7}
+.aiw-quote{display:flex;gap:8px;align-items:flex-start;margin:0 14px;padding:7px 9px;border-left:3px solid var(--aiw-acc);background:var(--aiw-acc-soft);border-radius:0 8px 8px 0;font-size:12.8px;color:var(--aiw-ink2)}
+.aiw-quote span{flex:1;max-height:4.6em;overflow:hidden;white-space:pre-wrap}
+.aiw-quote button{border:0;background:transparent;color:var(--aiw-ink3);cursor:pointer;font-size:14px;line-height:1;padding:0 2px}
+.aiw-quick{display:flex;gap:6px;flex-wrap:wrap;padding:8px 14px 0}
+.aiw-quick button{font-size:12.5px;font-weight:600;color:var(--aiw-acc);background:var(--aiw-bg);border:1px solid var(--aiw-acc);border-radius:999px;padding:4px 10px;cursor:pointer}
+.aiw-in{display:flex;gap:8px;padding:10px 14px 12px;align-items:flex-end}
+.aiw-in textarea{flex:1;min-height:42px;max-height:140px;font-size:14.5px;line-height:1.5;color:var(--aiw-ink);background:var(--aiw-bg);border:1px solid var(--aiw-rule);padding:9px 11px;border-radius:12px;resize:none;margin:0}
+.aiw-in button{font-size:14px;font-weight:700;line-height:1;border:0;border-radius:12px;padding:12px 14px;cursor:pointer;background:var(--aiw-acc);color:var(--aiw-on)}
+.aiw-in button.stop{background:var(--aiw-sunk);color:var(--aiw-ink);border:1px solid var(--aiw-rule)}
+.aiw-note{font-size:11.5px;color:var(--aiw-ink3);padding:0 14px 10px}
+@media print{.aiw-fab,.aiw-sel,.aiw-panel{display:none!important}}
+</style>
+<script id="aiw-script">
+(function(){
+  "use strict";
+  if(window.__aiw)return;window.__aiw=1;
+  var MODEL="claude-sonnet-5-5",PAGE=(document.title||"หน้านี้").trim();
+  var AI={sample:null,turns:[],ctl:null,quote:"",open:false},root=document.documentElement,el={};
+  function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function inl(t){return esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<strong>$1</strong>").replace(/`([^`\n]+)`/g,"<code>$1</code>").replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g,"$1<em>$2</em>");}
+  function md(t){
+    var out=[],list=null,para=[];
+    function fp(){if(para.length){out.push("<p>"+para.join("<br>")+"</p>");para=[];}}
+    function fl(){if(list){out.push("<ul>"+list.join("")+"</ul>");list=null;}}
+    String(t||"").replace(/\r/g,"").split("\n").forEach(function(L){
+      var m=/^\s*(?:[-*•]|\d+[.)])\s+(.*)$/.exec(L);
+      if(m){fp();(list=list||[]).push("<li>"+inl(m[1])+"</li>");return;}
+      if(!L.trim()){fp();fl();return;}
+      fl();para.push(inl(L.replace(/^\s*#{1,6}\s+/,"").replace(/^\s*>\s?/,"")));
+    });
+    fp();fl();return out.join("");
+  }
+  function mk(tag,cls,html){var x=document.createElement(tag);if(cls)x.className=cls;if(html!=null)x.innerHTML=html;return x;}
+  el.fab=mk("button","aiw-fab","ถาม AI");el.fab.type="button";el.fab.hidden=true;el.fab.title="ถาม Claude เรื่องที่กำลังอ่าน";
+  el.sel=mk("button","aiw-sel","ถาม AI ↗");el.sel.type="button";el.sel.hidden=true;
+  el.panel=mk("div","aiw-panel");el.panel.hidden=true;el.panel.setAttribute("role","dialog");el.panel.setAttribute("aria-label","ถาม AI");
+  el.panel.innerHTML="<div class='aiw-hd'><b>ถาม AI<span class='aiw-ctx'></span></b><button type='button' data-aiw='clear'>ล้างแชท</button><button type='button' data-aiw='close'>ปิด</button></div>"+
+    "<div class='aiw-log' aria-live='polite'></div><div class='aiw-quote' hidden><span></span><button type='button' data-aiw='unquote' aria-label='เอาข้อความที่เลือกออก'>×</button></div>"+
+    "<div class='aiw-quick' hidden><button type='button' data-aiq='อธิบายตรงนี้ให้เข้าใจง่าย ๆ'>อธิบาย</button><button type='button' data-aiq='ทำไมถึงเป็นแบบนี้ (กลไก)'>ทำไม</button><button type='button' data-aiq='ขอเคสตัวอย่างสั้น ๆ ที่ข้อสอบชอบออก'>เคสข้อสอบ</button><button type='button' data-aiq='มีวิธีจำง่าย ๆ ไหม'>วิธีจำ</button></div>"+
+    "<div class='aiw-in'><textarea rows='1' placeholder='พิมพ์คำถาม… (Enter ส่ง)'></textarea><button type='button' data-aiw='send'>ส่ง</button></div>"+
+    "<div class='aiw-note'>ตอบโดย Claude (Sonnet) จากบัญชีของคุณ · อิงสิ่งที่อยู่บนจอ ตรวจกับตำราก่อนใช้จริง</div>";
+  function mount(){[el.fab,el.sel,el.panel].forEach(function(x){root.appendChild(x);});}
+  mount();
+  var log=el.panel.querySelector(".aiw-log"),ta=el.panel.querySelector("textarea"),sendB=el.panel.querySelector("[data-aiw='send']"),
+      qBox=el.panel.querySelector(".aiw-quote"),quick=el.panel.querySelector(".aiw-quick"),ctxEl=el.panel.querySelector(".aiw-ctx");
+  var ERR={not_granted:"ไม่ได้อนุญาตให้หน้านี้ใช้ Claude",sampling_disabled:"บัญชีนี้ใช้ Claude จากหน้านี้ไม่ได้",not_declared:"หน้านี้ยังไม่ได้เปิดสิทธิ์ใช้ Claude",
+    capability_disabled:"ใช้ Claude ในหน้านี้ไม่ได้ตอนนี้",capability_removed:"แอปที่เปิดอยู่ยังไม่รองรับ",rate_limited:"ถามถี่เกินไปหรือโควตาเต็ม ลองใหม่อีกสักพัก",
+    session_expired:"ต้องเข้าสู่ระบบใหม่",refused:"Claude ไม่ตอบคำถามนี้ ลองถามแบบอื่น",empty_completion:"ไม่ได้คำตอบ ลองถามให้สั้นลง",
+    prompt_too_large:"คำถามหรือข้อความที่เลือกยาวเกินไป",upstream_error:"เชื่อมต่อขัดข้อง กดส่งอีกครั้งได้"};
+  var OFF={not_granted:1,sampling_disabled:1,not_declared:1,capability_disabled:1,capability_removed:1};
+  function mine(n){return n&&(n===el.panel||n===el.sel||n===el.fab||el.panel.contains(n));}
+  /* บริบท = ข้อความที่อยู่บนจอตอนนี้ (บล็อกที่มองเห็น) ไม่เกิน ~6,000 ตัว */
+  function screenText(){
+    var vh=root.clientHeight,seen=[],total=0,
+        nodes=document.body?document.body.querySelectorAll("h1,h2,h3,h4,h5,p,li,td,th,dt,dd,blockquote,figcaption,label,summary,pre,.stem,.q,.choice"):[];
+    for(var i=0;i<nodes.length&&total<6000;i++){
+      var n=nodes[i];if(mine(n))continue;
+      if(n.parentElement&&n.parentElement.closest("li,td,th,p,blockquote,dd,pre")&&n.parentElement.closest("li,td,th,p,blockquote,dd,pre")!==n)continue;
+      var r=n.getBoundingClientRect();if(r.bottom<0||r.top>vh||r.width<1||r.height<1)continue;
+      var t=String(n.innerText||"").replace(/\s+\n/g,"\n").replace(/[ \t]+/g," ").trim();if(!t)continue;
+      if(t.length>1500)t=t.slice(0,1500)+"…";
+      seen.push(t);total+=t.length;
+    }
+    return seen.join("\n");
+  }
+  function heading(){
+    var hs=document.body?document.body.querySelectorAll("h1,h2,h3"):[],best="";
+    for(var i=0;i<hs.length;i++){if(mine(hs[i]))continue;var r=hs[i].getBoundingClientRect();if(r.height<1)continue;if(r.top<root.clientHeight*0.6)best=String(hs[i].innerText||"").trim();}
+    return best.slice(0,120);
+  }
+  function rules(scr,hd){
+    return "คุณเป็นติวเตอร์อายุรศาสตร์ของนักศึกษาแพทย์ปี 4 (MED421/422) ที่กำลังใช้หน้าเว็บ \""+PAGE+"\"\n"+
+      "- ตอบภาษาไทย กระชับ ตรงคำถาม ใช้ศัพท์แพทย์ภาษาอังกฤษตามที่ใช้จริง\n"+
+      "- อิงข้อความบนจอด้านล่างก่อน ถ้าต้องใช้ความรู้นอกจากนั้นให้บอกว่าเป็นความรู้ทั่วไป ห้ามแต่งตัวเลข ขนาดยา หรือเกณฑ์ที่ไม่แน่ใจ\n"+
+      "- จัดรูปแบบง่าย ๆ: **ตัวหนา** กับคำสำคัญ, รายการขึ้นต้นด้วย \"- \", ย่อหน้าสั้น ไม่ใช้หัวเรื่อง # และไม่ใช้ตาราง\n"+
+      "- ถ้าผู้ใช้ยกข้อความมา (บรรทัดที่ขึ้นต้นด้วย >) ให้อธิบายข้อความนั้นในบริบทของหน้า\n\n"+
+      (hd?"หัวข้อที่เปิดอยู่: "+hd+"\n\n":"")+"ข้อความบนจอตอนกดถาม:\n"+(scr||"(ไม่มี)");
+  }
+  function bubble(cls,html){var b=mk("div","aiw-m "+cls,html);log.appendChild(b);log.scrollTop=log.scrollHeight;return b;}
+  function empty(){if(!log.children.length)log.innerHTML="<div class='aiw-dim'>ถามอะไรก็ได้เกี่ยวกับสิ่งที่อยู่บนจอ<br>หรือ <b>ลากคลุมข้อความ</b> แล้วกดปุ่ม <b>ถาม AI ↗</b> ที่ขึ้นมา</div>";}
+  function setQuote(t){AI.quote=String(t||"").replace(/\s+\n/g,"\n").trim().slice(0,1500);qBox.hidden=!AI.quote;quick.hidden=!AI.quote;qBox.querySelector("span").textContent=AI.quote;}
+  var snap="",snapHd="";
+  function openPanel(){
+    snap=screenText();snapHd=heading();          /* จับข้อความบนจอก่อนแผงบังเนื้อหา */
+    AI.open=true;el.panel.hidden=false;el.fab.hidden=true;el.sel.hidden=true;
+    ctxEl.textContent=snapHd||PAGE;empty();setTimeout(function(){try{ta.focus();}catch(e){}},30);
+  }
+  function closePanel(){AI.open=false;el.panel.hidden=true;el.fab.hidden=!AI.sample;}
+  function busy(on){sendB.textContent=on?"หยุด":"ส่ง";sendB.classList.toggle("stop",on);}
+  function send(text){
+    if(AI.ctl){AI.ctl.abort();return;}
+    text=String(text==null?ta.value:text).trim();
+    if(!text&&!AI.quote)return;
+    if(!text)text="อธิบายตรงนี้ให้เข้าใจง่าย ๆ";
+    var q=AI.quote,content=(q?q.split("\n").map(function(x){return "> "+x;}).join("\n")+"\n\n":"")+text;
+    var d=log.querySelector(".aiw-dim");if(d&&d.parentNode===log)d.remove();
+    bubble("u",(q?"<div class='aiw-q'>"+esc(q)+"</div>":"")+esc(text).replace(/\n/g,"<br>"));
+    ta.value="";ta.style.height="";setQuote("");
+    AI.turns.push({role:"user",content:content});
+    while(AI.turns.length>12)AI.turns.splice(0,2);
+    var msgs=[{role:"user",content:rules(snap,snapHd)},{role:"assistant",content:"รับทราบ พร้อมตอบ"}].concat(AI.turns);
+    var out=bubble("a","<span class='aiw-dim'>กำลังคิด…</span>"),ctl=new AbortController();AI.ctl=ctl;busy(true);
+    AI.sample(msgs,{model:MODEL,modelTier:"default",cache:false,signal:ctl.signal,
+      onText:function(u){out.innerHTML=md(u.text);log.scrollTop=log.scrollHeight;}}).then(function(r){
+      out.innerHTML=md(r.text)+(r.truncated?"<p class='aiw-dim'>(คำตอบถูกตัด ลองถามให้แคบลง)</p>":"");
+      AI.turns.push({role:"assistant",content:r.text});
+    },function(e){
+      var c=e&&e.code,keep=e&&e.text;AI.turns.pop();
+      if(c==="cancelled"){out.innerHTML=keep?md(keep)+"<p class='aiw-dim'>(หยุดแล้ว)</p>":"<span class='aiw-dim'>หยุดแล้ว</span>";return;}
+      out.classList.add("err");out.innerHTML=(keep&&c!=="refused"?md(keep):"")+"<p>"+esc(ERR[c]||ERR.upstream_error)+"</p>";
+      if(OFF[c]){AI.sample=null;el.fab.hidden=true;el.sel.hidden=true;}
+    }).then(function(){if(AI.ctl===ctl)AI.ctl=null;busy(false);log.scrollTop=log.scrollHeight;});
+  }
+  /* ลากคลุมข้อความ → ปุ่ม "ถาม AI ↗" */
+  var selT=null;
+  function selText(){
+    var s=window.getSelection&&window.getSelection();if(!s||s.isCollapsed||!s.rangeCount)return null;
+    var r=s.getRangeAt(0),c=r.commonAncestorContainer;if(c&&c.nodeType!==1)c=c.parentNode;
+    if(!c||mine(c)||(c.closest&&c.closest("input,textarea,[contenteditable='true']")))return null;
+    var t=String(s.toString()||"").trim();if(t.length<2)return null;
+    return {t:t,r:r};
+  }
+  function placeSel(){
+    selT=null;if(!AI.sample){el.sel.hidden=true;return;}
+    var x=selText();if(!x){el.sel.hidden=true;return;}
+    var rs=x.r.getClientRects(),b=rs.length?rs[rs.length-1]:x.r.getBoundingClientRect();
+    el.sel.hidden=false;
+    var w=el.sel.offsetWidth,h=el.sel.offsetHeight,vw=root.clientWidth,vh=root.clientHeight;
+    var left=Math.max(8,Math.min(b.right-w/2,vw-w-8)),top=b.bottom+8;
+    if(top+h>vh-8)top=b.top-h-8;
+    top=Math.max(8,Math.min(top,vh-h-8));
+    el.sel.style.left=left+"px";el.sel.style.top=top+"px";
+  }
+  document.addEventListener("selectionchange",function(){clearTimeout(selT);selT=setTimeout(placeSel,220);});
+  window.addEventListener("scroll",function(){if(!el.sel.hidden)placeSel();},{passive:true,capture:true});
+  el.sel.addEventListener("mousedown",function(e){e.preventDefault();});
+  el.sel.addEventListener("click",function(){
+    var x=selText();if(!x)return;
+    setQuote(x.t);openPanel();
+    try{window.getSelection().removeAllRanges();}catch(e){}
+  });
+  el.fab.addEventListener("click",openPanel);
+  el.panel.addEventListener("click",function(e){
+    var b=e.target.closest&&e.target.closest("button");if(!b)return;
+    var a=b.getAttribute("data-aiw");
+    if(a==="close")closePanel();
+    else if(a==="clear"){if(AI.ctl)AI.ctl.abort();AI.turns=[];log.innerHTML="";setQuote("");empty();}
+    else if(a==="unquote")setQuote("");
+    else if(a==="send")send();
+    else if(b.hasAttribute("data-aiq"))send(b.getAttribute("data-aiq"));
+  });
+  /* กันปุ่มลัดของหน้า (เช่น ตัวเลือก A–E หรือ Space) ทำงานตอนพิมพ์ในแชท */
+  ["keydown","keyup","keypress"].forEach(function(t){el.panel.addEventListener(t,function(e){e.stopPropagation();});});
+  ta.addEventListener("keydown",function(e){
+    if(e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!AI.ctl)send();}
+    else if(e.key==="Escape")closePanel();
+  });
+  ta.addEventListener("input",function(){ta.style.height="auto";ta.style.height=Math.min(140,ta.scrollHeight)+"px";});
+  /* ถ้าหน้าเขียน <html> ใหม่ทั้งก้อน ให้แขวนกลับ */
+  if("MutationObserver" in window)new MutationObserver(function(){if(!root.contains(el.panel))mount();}).observe(root,{childList:true});
+  if(window.claude&&typeof window.claude.use==="function"){
+    window.claude.use("sample").then(function(s){if(!s)return;AI.sample=s;if(!AI.open)el.fab.hidden=false;}).catch(function(){});
+  }
+})();
+</script>

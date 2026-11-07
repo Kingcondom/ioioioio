@@ -499,6 +499,19 @@ publish เฉพาะ `data/air.json` กับ `data/nephro.json` โดย *
 - ถ้า `use("sample")` ได้ `null` หรือถูกปฏิเสธ (`not_granted` ฯลฯ) ปุ่มทั้งหมดซ่อน · คำตอบ render ด้วย `md()` ของหน้า (escape แล้ว)
 - ใช้โควตา Claude ของคนที่กดถาม · ครั้งแรกมีหน้าต่างขออนุญาต · ทดสอบด้วย stub `window.claude` เท่านั้น ยังไม่ได้ลองกับ Claude จริง
 
+**แชทถาม AI ใน artifact อื่นอีก 5 อัน (7 พ.ย. · ผู้ใช้ขอ)** — ใช้ widget ตัวเดียวกัน `artifact/tools/pages/ask-ai-widget.html`
+(บล็อก `<style id="aiw-style">` + `<script id="aiw-script">` แทรกท้ายหน้า ไม่พึ่งโค้ดของหน้า · บริบทคือข้อความที่อยู่บนจอตอนกดถาม ≤6,000 ตัว · กัน keydown ไม่ให้ไปโดนปุ่มลัดของหน้า)
+
+| artifact | เวอร์ชัน | capabilities หลังเพิ่ม |
+|---|---|---|
+| ห้องสมุดท่าอาจารย์ `QebhLmV2eKyzj3mkqstnjR` | v176 | `sample` |
+| Symptomatology `UHWS6Q3Wtd4nKTEiu5tYAG` | v13 | `sample` |
+| MED421 Lectures `8ir2xCgMKC7Fn4MiE2a5AV` | v23 | `db` `user` `sample` |
+| ห้องสอบจำลอง MED422 `DWx7iLXsAz5zyBQMcNuW4j` | v15 | เดิม (มี `sample` อยู่แล้วสำหรับผู้ป่วยจำลอง) |
+| MED421 Ward Drill `Fdi5gcNXKqFLAXg4fQBV7X` | v32 | `db` `user` `sample` |
+
+ถ้า session อื่น build หน้าพวกนี้ใหม่จากต้นฉบับ widget จะหาย → แทรกไฟล์นี้ก่อน `</body>` ของหน้า และอย่าลืมประกาศ `sample`
+
 **กฎที่ใช้ได้ผลรอบนี้**
 - จอง thread ด้วยการตอบก่อนเสมอ · ถ้าเห็นว่าอีก session จองแล้ว (เช่น "ปักหลักจำใน post-it" 7 พ.ย.) **ถอยทันที ไม่ทำซ้อน**
 - ถ้า publish ถูกปฏิเสธเพราะมีเวอร์ชันใหม่ ให้ดู diff: ถ้าต่างแค่ส่วนที่เราเพิ่ม publish ซ้ำได้ ถ้ามีบรรทัด `+` ของคนอื่น ต้อง merge ก่อน
