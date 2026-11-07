@@ -39,9 +39,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,.n
 @media (max-width:520px){#count,.brand span{display:none}.top button{padding:5px 9px;font-size:13px}}
 
 /* wall */
-#board{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding-block:10px 18px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#board{flex:1;min-height:0;display:flex;flex-direction:column;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-block:10px 18px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 #board.flip{transform:scaleX(-1)}
-#grid{display:grid;gap:22px 20px;max-width:100%;max-height:100%}
+#grid{display:grid;gap:22px 20px;max-width:100%;margin:auto;flex-shrink:0}
+/* เลื่อนดูใบอื่นได้ (ผู้ใช้ขอ 7 พ.ย.) — ใบมากกว่าหนึ่งจอ กำแพงยาวลงไปและเลื่อนได้ ขนาดใบเท่าเดิม */
+.more{position:sticky;bottom:6px;align-self:center;flex-shrink:0;margin-top:8px;font-size:12.5px;color:var(--ui2);background:var(--ui-bg);backdrop-filter:blur(6px);padding:3px 12px;border-radius:999px;pointer-events:none;transition:opacity .3s}
 @media (max-width:520px){#grid{gap:14px 12px}}
 
 .note{--c:var(--n1);--r:0deg;--dx:0px;--dy:0px;position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;gap:6px;
@@ -188,6 +190,7 @@ textarea.own{width:100%;font:inherit;font-size:16px;line-height:1.5;padding:10px
     <div class="opt"><span>ใบที่กด "จำได้แล้ว"</span><button type="button" id="b-resetall">เอากลับมาทั้งหมด</button></div>
     <p class="sync" id="sync"></p>
     <h2>ใช้งาน</h2>
+    <p class="note-t">ใบเยอะเกินหนึ่งจอ <b>เลื่อนลง</b> (ปัดหรือหมุนล้อเมาส์) เพื่อดูใบอื่น ใบที่เลื่อนผ่านไปจะไม่ถูกเปลี่ยนจนกว่าจะเลื่อนกลับมา</p>
     <p class="note-t">แตะโพสต์อิทที่ยังไม่เฉลยเพื่อดูคำตอบ แตะอีกครั้งเพื่อหยิบขึ้นมาอ่านใหญ่ๆ แล้วกด <b>จำได้แล้ว</b> ถ้าไม่ต้องเห็นใบนั้นอีก กด Space หรือลูกศรขวาเพื่อลอกใบถัดไปทันที</p>
     <p class="note-t">ในเว็บ MED421 learn, Ward Drill และ Salmon NL กดปุ่ม <b>ปักไว้ใน post-it</b> ที่หัวข้อหรือข้อสอบที่ไม่อยากลืม ระบบจะเปิดหน้านี้และปักให้อัตโนมัติ</p>
     <p class="note-t">ในตารางของ MED421 learn กด <b>ปักตารางใน post-it</b> แต่ละแถวของตารางจะกลายเป็นหนึ่งใบ (ด้านหน้า = ชื่อแถว ด้านหลัง = รายละเอียด) แก้หรือลบได้เหมือนใบที่เขียนเอง</p>
@@ -379,6 +382,16 @@ function jitter(el){
   el.style.setProperty("--dx",rnd(-5,5).toFixed(1)+"px");
   el.style.setProperty("--dy",rnd(-5,5).toFixed(1)+"px");
 }
+var WALLMAX=240;
+/* หมุนเปลี่ยนเฉพาะใบที่อยู่ในจอ ไม่ลอกใบที่เลื่อนผ่านไปแล้ว */
+function inView(s){var b=$("board").getBoundingClientRect(),r=s.el.getBoundingClientRect();return r.bottom>b.top+20&&r.top<b.bottom-20;}
+function moreHint(on){
+  var h=$("more");
+  if(!on){if(h)h.remove();return;}
+  if(!h){h=document.createElement("div");h.id="more";h.className="more";$("board").appendChild(h);}
+  h.textContent="เลื่อนลงดูใบอื่น ↓";h.style.opacity="1";
+}
+$("board").addEventListener("scroll",function(){var h=$("more");if(h)h.style.opacity=this.scrollTop>40?"0":"1";},{passive:true});
 function revealDelay(i){var r=+state.opt.rev;return r?r*1000+i*1600:0;}
 function layout(){
   var g=$("grid");slots=[];g.innerHTML="";
@@ -386,12 +399,22 @@ function layout(){
   if(!deck.length){renderEmpty();return;}
   var d=dims(deck.length);
   var gw=Math.min(d.W,d.cols*440),gh=Math.min(d.H,d.rows*400);
-  g.style.width=gw+"px";g.style.height=gh+"px";
+  /* ใบเกินหนึ่งจอ → วางต่อลงไปเป็นแถว ขนาดใบเท่ากับตอนพอดีจอ แล้วเลื่อนดู */
+  var total=Math.min(deck.length,WALLMAX),cnt=d.cnt,rows=d.rows;
+  if(total>d.cnt){
+    var gy=parseFloat(getComputedStyle(g).rowGap)||20,rh=Math.max(150,(gh-(d.rows-1)*gy)/d.rows);
+    cnt=total;rows=Math.ceil(total/d.cols);
+    g.style.width=gw+"px";g.style.height="";
+    g.style.gridTemplateRows="repeat("+rows+","+rh.toFixed(1)+"px)";
+  }else{
+    g.style.width=gw+"px";g.style.height=gh+"px";
+    g.style.gridTemplateRows="repeat("+d.rows+",minmax(0,1fr))";
+  }
   g.style.gridTemplateColumns="repeat("+d.cols+",minmax(0,1fr))";
-  g.style.gridTemplateRows="repeat("+d.rows+",minmax(0,1fr))";
   dimsKey=d.cols+"x"+d.rows+"x"+d.cnt;
-  var t=now(),order=[];
-  for(var i=0;i<d.cnt;i++){
+  $("board").scrollTop=0;moreHint(cnt>d.cnt);
+  var t=now(),order=[],perScreen=d.cnt;
+  for(var i=0;i<cnt;i++){
     var c=nextCard();if(!c)break;
     var el=document.createElement("div");el.tabIndex=0;el.setAttribute("role","button");
     var s={c:c,el:el,stuck:t+i,revealed:false,revealAt:0};
@@ -399,7 +422,7 @@ function layout(){
     g.appendChild(el);slots.push(s);order.push(s);bind(s);
   }
   slots.forEach(function(s){paint(s.el,s.c,false,false);});
-  shuffle(order).forEach(function(s,i){if(hasBack(s.c)&&+state.opt.rev)s.revealAt=t+revealDelay(i);});
+  shuffle(order).forEach(function(s,i){if(hasBack(s.c)&&+state.opt.rev)s.revealAt=t+revealDelay(i%perScreen);});
   lastSwap=t;count();
 }
 function bind(s){
@@ -440,11 +463,12 @@ function swapSlot(s,card){
 }
 function swapOldest(force){
   if(!slots.length)return;
-  var t=now(),cand=slots.filter(function(s){
+  var t=now(),vis=slots.filter(inView);if(!vis.length)vis=slots;
+  var cand=vis.filter(function(s){
     var since=s.revealed?t-s.revealedAt:t-s.stuck;
     return (s.revealed||!hasBack(s.c))&&(force||since>=4000);
   });
-  if(!cand.length&&(force||!+state.opt.rev))cand=slots.slice();
+  if(!cand.length&&(force||!+state.opt.rev))cand=vis.slice();
   if(!cand.length)return;
   cand.sort(function(a,b){return a.stuck-b.stuck;});
   var s=cand[0],card=nextCard();
@@ -509,6 +533,7 @@ $("z-edit").onclick=function(){var s=zoomSlot;if(!s||!s.c.own)return;closeZoom()
 
 /* ---------- empty states ---------- */
 function renderEmpty(){
+  moreHint(false);
   var g=$("grid");g.style.cssText="";slots=[];
   var anyPins=Object.keys(live(state.pins)).length+Object.keys(ownLive()).length;
   var body=anyPins?

@@ -198,6 +198,14 @@ try:
             if missing:
                 fail.append("%s: %d ใบเนื้อหาไม่ตรงหลังถอดรหัส เช่น %r"
                             % (sid, len(missing), missing[0][0][:60]))
+            # ใบที่ปักต้องขึ้นบนกระดานจริง ไม่ใช่แค่ถูกบันทึก — ตั้งแต่ 7 พ.ย.
+            # กระดานเลื่อนได้ ใบเกินหนึ่งจอต้องวางต่อลงไป ไม่ใช่หายไป
+            shown = pin.evaluate("()=>document.querySelectorAll('#grid > *').length")
+            if shown < len(own):
+                fail.append("%s: บันทึก %d ใบ แต่ขึ้นบนกระดานแค่ %d ใบ"
+                            % (sid, len(own), shown))
+            print("  %-18s ขึ้นบนกระดาน %d ใบ" % (sid, shown))
+
             thai = [o for o in own if re.search(r"[฀-๿]", o["f"] + o["b"])]
             print("  %-18s post-it สร้าง %d ใบ · มีภาษาไทยอ่านออก %d ใบ"
                   % (sid, len(own), len(thai)))
@@ -216,6 +224,45 @@ try:
         pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
                  wait_until="domcontentloaded")
         pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+        # กระดานเลื่อนได้ (7 พ.ย.) — ใบเกินหนึ่งจอต้องวางต่อลงไปครบ ไม่ใช่โดนตัด
+        # ตารางจริงในชุดยังสั้นเกินกว่าจะกินเกินหนึ่งจอ จึงสร้าง payload ขึ้นมาทดสอบเอง
+        MANY = 30
+        synth = {"s": "ทดสอบกระดานเลื่อน",
+                 "c": [["**แถวที่ %d**\nคำถามทดสอบ" % i, "คำตอบทดสอบ %d" % i]
+                       for i in range(1, MANY + 1)]}
+        sp = base64.urlsafe_b64encode(
+            json.dumps(synth, ensure_ascii=False).encode("utf-8")).decode().rstrip("=")
+        pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
+                 wait_until="domcontentloaded")
+        pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+        pin.goto("http://127.0.0.1:%d/index.html?many=1#t=%s" % (P_POSTIT, sp),
+                 wait_until="networkidle")
+        pin.wait_for_timeout(800)
+        saved = len(own_notes(pin))
+        shown = pin.evaluate("()=>document.querySelectorAll('#grid > *').length")
+        geo = pin.evaluate("""()=>{var b=document.getElementById('board'),
+            g=document.getElementById('grid');
+            return {scrollable:b.scrollHeight>b.clientHeight+4,
+                    gridH:Math.round(g.getBoundingClientRect().height),
+                    boardH:Math.round(b.getBoundingClientRect().height),
+                    ovfX:Math.max(0,document.documentElement.scrollWidth-innerWidth)};}""")
+        print("  ปัก %d ใบ: บันทึก %d · ขึ้นบนกระดาน %d · เลื่อนได้ %s · ล้นแนวนอน %d px"
+              % (MANY, saved, shown, geo["scrollable"], geo["ovfX"]))
+        if saved != MANY:
+            fail.append("ปัก %d ใบรวดเดียว บันทึกได้ %d" % (MANY, saved))
+        if shown != MANY:
+            fail.append("ปัก %d ใบ แต่ขึ้นบนกระดานแค่ %d — ใบเกินหนึ่งจอหาย"
+                        % (MANY, shown))
+        if not geo["scrollable"]:
+            fail.append("ใบ %d ใบไม่ทำให้กระดานเลื่อนได้ (gridH %d · boardH %d) "
+                        "— ถ้าใบล้นออกนอกจอแล้วเลื่อนไม่ได้ จะมองไม่เห็น"
+                        % (MANY, geo["gridH"], geo["boardH"]))
+        if geo["ovfX"]:
+            fail.append("ใบเยอะแล้วล้นแนวนอน %d px" % geo["ovfX"])
+        pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
+                 wait_until="domcontentloaded")
+        pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+
         bad_hash = "t=%s" % base64.urlsafe_b64encode(b"not json").decode().rstrip("=")
         pin.goto("http://127.0.0.1:%d/index.html#%s" % (P_POSTIT, bad_hash),
                  wait_until="networkidle")
