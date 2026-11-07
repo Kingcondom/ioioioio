@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ห้องสอบจำลอง MED422</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one light glass world after the user's reference: frosted cards floating over soft blue blobs, a blue gradient pill for the main action, orange glow for scores and time pressure. Single theme by choice. */
+:root{
+  --sky:#dfe7f7; --ink:#1b2740; --muted:#6b7a96; --blue:#4f7cff; --blue-2:#2f55e6;
+  --orange:#ff9f43; --red:#e5484d; --green:#1f9d63;
+  --glass:rgba(255,255,255,.42); --glass-2:rgba(255,255,255,.62); --edge:rgba(255,255,255,.78);
+  --f-display:"Prompt","Noto Sans Thai",system-ui,sans-serif; --f-body:"Noto Sans Thai","Prompt",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;min-height:100vh;background:transparent}
+html{background-color:#e6ebf8;background:
+  radial-gradient(60% 50% at 85% 5%,#c9d6ff 0,transparent 70%),
+  radial-gradient(50% 45% at 0% 35%,#d8d0ff 0,transparent 70%),
+  radial-gradient(70% 60% at 30% 100%,#c3d9ff 0,transparent 70%),
+  linear-gradient(160deg,#eef2fb,#dfe6f6 60%,#e8e6f8);background-attachment:fixed}
+body{padding-bottom:120px}
+body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(60px);opacity:.55;pointer-events:none}
+body::before{width:46vmax;height:46vmax;right:-14vmax;top:-12vmax;background:linear-gradient(135deg,#ffffff,#a9c1ff)}
+body::after{width:40vmax;height:40vmax;left:-16vmax;bottom:-10vmax;background:linear-gradient(135deg,#b7c8ff,#ffffff)}
+button,input,textarea{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-wrap:balance;line-height:1.3;margin:0}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 12px 36px rgba(70,100,170,.16);border-radius:28px}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}
+/* top bar */
+header.top{display:flex;align-items:center;gap:12px;padding:14px 18px;position:sticky;top:0;z-index:6}
+header.top .brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:600;font-size:1.05rem}
+.tile{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#7aa2ff,var(--blue-2));box-shadow:0 6px 16px rgba(47,85,230,.35),inset 0 1px 0 rgba(255,255,255,.5);color:#fff;flex:none}
+.tile svg{width:20px;height:20px}
+.tile.soft{background:var(--glass-2);color:var(--blue-2);box-shadow:inset 0 1px 0 #fff,0 4px 12px rgba(70,100,170,.12);border:1px solid var(--edge)}
+header.top .sp{flex:1}
+.where{font-size:.82rem;color:var(--muted);background:var(--glass-2);border:1px solid var(--edge);padding:2px 12px;border-radius:999px;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.clock{font-family:var(--f-display);font-size:1.5rem;font-weight:600;font-variant-numeric:tabular-nums;padding:4px 16px;border-radius:999px;background:var(--glass-2);border:1px solid var(--edge);box-shadow:inset 0 1px 0 #fff}
+.clock.low{color:#c96a00;box-shadow:0 0 0 2px rgba(255,159,67,.5),0 0 22px rgba(255,159,67,.45)}
+.clock.out{color:var(--red);box-shadow:0 0 0 2px rgba(229,72,77,.5),0 0 22px rgba(229,72,77,.35)}
+/* buttons */
+.btn{border:1px solid var(--edge);background:var(--glass-2);border-radius:999px;padding:9px 18px;cursor:pointer;font-weight:500;box-shadow:inset 0 1px 0 #fff,0 4px 12px rgba(70,100,170,.10);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.pri{background:linear-gradient(145deg,#6f95ff,var(--blue-2));color:#fff;border-color:rgba(255,255,255,.4);box-shadow:0 8px 20px rgba(47,85,230,.32),inset 0 1px 0 rgba(255,255,255,.45)}
+.btn.sm{padding:5px 12px;font-size:.88rem}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn:focus-visible,textarea:focus-visible,input:focus-visible,.seg button:focus-visible,.nav button:focus-visible,.iconbtn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.iconbtn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--glass-2);border:1px solid var(--edge);cursor:pointer}
+.chip{display:inline-block;background:var(--glass-2);border:1px solid var(--edge);border-radius:999px;padding:1px 11px;font-size:.8rem;color:var(--muted)}
+.chip.k-hx,.chip.k-pe,.chip.k-counsel,.chip.k-proc{color:var(--blue-2);background:rgba(79,124,255,.12);border-color:rgba(79,124,255,.25)}
+.muted{color:var(--muted)}
+/* home */
+.hello{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;margin:10px 4px 22px}
+.hello .date{color:var(--muted);font-size:.95rem}
+.hello h2{font-size:1.75rem;margin:2px 0}
+.hello p{margin:0;color:var(--muted)}
+.avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:1.9rem;font-weight:600;color:var(--blue-2);background:radial-gradient(circle at 35% 30%,#fff,#dbe5ff);border:4px solid rgba(255,255,255,.8);box-shadow:0 0 0 6px rgba(255,255,255,.35),0 10px 30px rgba(70,100,170,.22)}
+.goal{padding:22px 24px}
+.goal-h{display:flex;align-items:center;gap:12px}
+.goal-h .lbl{color:var(--muted);font-size:1rem}
+.goal-h .sp{flex:1}
+.goal .num{font-family:var(--f-display);font-weight:700;font-size:3.4rem;line-height:1.1;margin:10px 0 14px 4px;font-variant-numeric:tabular-nums}
+.goal .num small{font-size:1.6rem;font-weight:500;margin-left:6px}
+.chartbox{border-radius:22px;background:rgba(255,255,255,.32);border:1px solid rgba(255,255,255,.7);padding:14px 14px 8px;display:grid;grid-template-columns:1fr 170px;gap:12px;align-items:center}
+.chartbox svg{width:100%;height:150px;display:block;overflow:visible}
+.side-stat{font-size:.95rem;color:var(--muted);line-height:1.5}
+.side-stat b{display:block;color:var(--orange);font-family:var(--f-display);font-weight:600;font-size:1.15rem;margin-top:4px}
+.section-h{display:flex;align-items:center;gap:10px;margin:26px 4px 12px}
+.section-h h3{font-size:1.1rem}
+.sets{display:grid;gap:12px}
+.setrow{display:grid;grid-template-columns:70px 1fr auto;gap:16px;align-items:center;padding:14px 18px;border-radius:24px}
+.setrow .d{font-family:var(--f-display);text-align:center;color:var(--muted);font-size:.85rem;line-height:1.2}
+.setrow .d b{display:block;font-size:1.6rem;color:var(--ink);font-weight:600}
+.setrow.today{box-shadow:0 0 0 2px rgba(79,124,255,.55),0 12px 36px rgba(47,85,230,.2)}
+.setrow h3{font-size:1.02rem}
+.meta{font-size:.84rem;color:var(--muted);margin:2px 0 0;padding-left:1.2em}
+.meta li{margin:0}
+.acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.score-pill{font-family:var(--f-display);font-variant-numeric:tabular-nums;font-size:.82rem;border-radius:999px;padding:0 9px;font-weight:600}
+.score-pill.good{color:var(--green);background:rgba(31,157,99,.12)}.score-pill.mid{color:#c96a00;background:rgba(255,159,67,.16)}.score-pill.bad{color:var(--red);background:rgba(229,72,77,.12)}
+.panel{padding:18px 20px}
+.panel h3{font-size:1rem;margin-bottom:10px}
+.bar{height:10px;background:rgba(255,255,255,.55);border-radius:999px;overflow:hidden;border:1px solid rgba(255,255,255,.8)}
+.bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#ffc27a,var(--orange));box-shadow:0 0 10px rgba(255,159,67,.6)}
+.weak{display:grid;grid-template-columns:120px 1fr 48px;gap:10px;align-items:center;font-size:.92rem;margin:7px 0}
+.weak .n{font-family:var(--f-display);text-align:right;font-variant-numeric:tabular-nums}
+.hist{display:grid;grid-template-columns:70px 1fr 48px auto;gap:10px;align-items:center;font-size:.9rem;margin:8px 0}
+.hist .t small{display:block;color:var(--muted)}
+/* หน้าประวัติข้อสอบ (ผู้ใช้ขอ 7 พ.ย.) */
+.hx-sum{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.hx-day{font-family:var(--f-display);font-size:.95rem;font-weight:600;color:var(--muted);margin:18px 4px 8px}
+.hx-row{display:grid;grid-template-columns:52px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:12px 14px;margin:0 0 8px;border-radius:18px}
+.hx-row .tm{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.86rem}
+.hx-row .t{min-width:0}.hx-row .t b{display:block;font-weight:600;overflow-wrap:anywhere}
+.hx-row .t small{display:block;color:var(--muted);font-size:.8rem}
+.hx-row .nog{font-size:.78rem;color:var(--muted);white-space:nowrap}
+.hx-filter{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 6px}
+.hx-filter button{font:inherit;font-size:.85rem;border:1px solid var(--edge);background:var(--glass-2);border-radius:999px;padding:3px 12px;cursor:pointer;color:var(--muted)}
+.hx-filter button.on{color:#fff;background:var(--blue-2);border-color:var(--blue-2)}
+@media (max-width:520px){.hx-row{grid-template-columns:44px minmax(0,1fr) auto;}.hx-row .btn{grid-column:2/-1;justify-self:start}}
+nav#nav.nav{grid-template-columns:repeat(6,1fr)}
+html .aiw-fab{bottom:calc(max(16px,env(safe-area-inset-bottom,0px)) + 104px)}
+.rules{padding-left:1.4em;margin:0}
+.rules li{margin:4px 0}
+.credits{font-size:.8rem;color:var(--muted);padding-left:1.4em;margin:6px 0 0}
+.credits a{color:inherit}
+/* bottom nav */
+.nav{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(560px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding:10px 8px;z-index:8;border-radius:32px}
+.nav button{background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.78rem;color:var(--muted);position:relative;padding:0}
+.nav button .ic{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:var(--glass-2);border:1px solid var(--edge);box-shadow:inset 0 1px 0 #fff;color:#5b6b8c}
+.nav button .ic svg{width:21px;height:21px}
+.nav button.on{color:var(--ink);font-weight:600}
+.nav button.on .ic{background:linear-gradient(145deg,#7aa2ff,var(--blue-2));color:#fff;border-color:rgba(255,255,255,.4);box-shadow:0 8px 18px rgba(47,85,230,.35)}
+.nav button.on::after{content:"";position:absolute;bottom:-8px;width:6px;height:6px;border-radius:50%;background:var(--blue-2)}
+.nav .plus .ic{width:64px;height:64px;border-radius:50%;margin-top:-26px;background:linear-gradient(145deg,#79a0ff,var(--blue-2));color:#fff;box-shadow:0 0 0 8px rgba(255,255,255,.45),0 12px 28px rgba(47,85,230,.45);border:1px solid rgba(255,255,255,.5)}
+.nav .plus .ic svg{width:28px;height:28px}
+body.running .nav{display:none}
+body.running{padding-bottom:30px}
+/* station strip */
+.strip{display:flex;gap:5px;margin:4px 0 14px;flex-wrap:wrap}
+.strip span{min-width:36px;height:30px;padding:0 6px;display:grid;place-items:center;border-radius:999px;background:var(--glass);border:1px solid var(--edge);font-family:var(--f-display);font-size:.78rem;color:var(--muted)}
+.strip span.cur{background:linear-gradient(145deg,#7aa2ff,var(--blue-2));color:#fff;box-shadow:0 6px 14px rgba(47,85,230,.35)}
+.strip span.done{background:rgba(79,124,255,.14);color:var(--blue-2)}
+/* station sheet */
+.sheet{padding:22px}
+.sheet-h{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.sheet-h h2{font-size:1.25rem}
+.stem{white-space:pre-line;font-size:1.03rem;background:rgba(255,255,255,.5);border:1px solid var(--edge);border-radius:18px;padding:12px 16px;margin:6px 0 14px}
+.grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}
+.figs{display:flex;gap:10px;flex-wrap:wrap}
+.figs img{max-width:100%;max-height:420px;border-radius:18px;border:1px solid var(--edge);cursor:zoom-in;background:#000;box-shadow:0 8px 22px rgba(40,60,110,.18)}
+.figs .noimg{border:2px dashed rgba(107,122,150,.4);border-radius:18px;padding:28px;color:var(--muted);text-align:center;width:100%;background:rgba(255,255,255,.3)}
+table.lab{border-collapse:separate;border-spacing:0;width:100%;font-size:.95rem;margin:4px 0 12px;background:rgba(255,255,255,.45);border:1px solid var(--edge);border-radius:16px;overflow:hidden}
+table.lab td{border-bottom:1px solid rgba(255,255,255,.8);padding:6px 12px;font-variant-numeric:tabular-nums}
+table.lab tr:last-child td{border-bottom:0}
+table.lab td:first-child{color:var(--muted);width:42%}
+.task{margin-bottom:14px}
+.task label{display:block;font-weight:600;margin-bottom:5px}
+.task .pts{font-size:.8rem;color:var(--muted);font-weight:500}
+textarea{width:100%;min-height:96px;border:1px solid var(--edge);border-radius:16px;padding:10px 12px;background:rgba(255,255,255,.62);resize:vertical;box-shadow:inset 0 1px 3px rgba(40,60,110,.08)}
+textarea:disabled{opacity:.6}
+.chat{border:1px solid var(--edge);border-radius:22px;display:flex;flex-direction:column;height:390px;margin-top:6px;background:rgba(255,255,255,.35);overflow:hidden}
+.chat .log{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:86%;padding:7px 13px;border-radius:18px;white-space:pre-wrap}
+.msg.me{align-self:flex-end;background:linear-gradient(145deg,#6f95ff,var(--blue-2));color:#fff;border-bottom-right-radius:6px}
+.msg.sp{align-self:flex-start;background:rgba(255,255,255,.8);border:1px solid var(--edge);border-bottom-left-radius:6px}
+.msg.sys{align-self:center;font-size:.82rem;color:var(--muted)}
+.chat form{display:flex;gap:6px;border-top:1px solid var(--edge);padding:8px;background:rgba(255,255,255,.4)}
+.chat input{flex:1;border:1px solid var(--edge);border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.75)}
+.foot{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:16px;flex-wrap:wrap}
+.lockmsg{color:#c96a00;font-weight:600}
+details.prev{margin:4px 0 12px;font-size:.92rem}
+details.prev div{white-space:pre-line;color:var(--muted);margin:4px 0 4px 12px}
+/* results */
+.res-sum{display:flex;gap:18px;flex-wrap:wrap;align-items:center;padding:20px 24px;margin-bottom:14px}
+.big{font-family:var(--f-display);font-size:2.8rem;font-variant-numeric:tabular-nums;font-weight:700;line-height:1.1}
+.ritem{margin-bottom:12px;border-radius:24px}
+.ritem>summary{cursor:pointer;padding:12px 18px;display:flex;gap:10px;align-items:center;list-style:none;flex-wrap:wrap}
+.ritem>summary::-webkit-details-marker{display:none}
+.ritem .body{padding:0 18px 16px}
+.ritem .sc{margin-left:auto}
+.ans{white-space:pre-wrap;background:rgba(255,255,255,.55);border:1px solid var(--edge);border-radius:14px;padding:8px 12px;font-size:.93rem}
+.key{white-space:pre-wrap;border-left:3px solid var(--green);padding:4px 12px;font-size:.93rem;margin:8px 0}
+.rub{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center;font-size:.92rem;margin:8px 0}
+.seg{display:inline-flex;border:1px solid var(--edge);border-radius:999px;overflow:hidden;background:rgba(255,255,255,.55)}
+.seg button{border:0;background:none;padding:3px 11px;cursor:pointer;font-size:.82rem}
+.seg button.on{background:linear-gradient(145deg,#6f95ff,var(--blue-2));color:#fff}
+.fb{font-size:.9rem;color:var(--blue-2);margin:4px 0}
+.transcript{font-size:.86rem;max-height:220px;overflow:auto;border:1px solid var(--edge);border-radius:14px;padding:8px 12px;margin:6px 0;background:rgba(255,255,255,.45)}
+.lightbox{position:fixed;inset:0;background:rgba(20,30,60,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:none;place-items:center;z-index:20;padding:12px}
+.lightbox.on{display:grid}
+.lightbox img{max-width:100%;max-height:100%;border-radius:12px}
+.toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%);background:rgba(27,39,64,.9);color:#fff;padding:9px 18px;border-radius:999px;z-index:30;display:none}
+.toast.on{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.appr{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:10px 0 8px;font-size:.88rem}
+.appr a.chip{text-decoration:none}
+.appr a.chip.ok{color:var(--green);background:rgba(31,157,99,.1);border-color:rgba(31,157,99,.3)}
+.appr a.chip.todo{color:#a5520a;background:rgba(255,159,67,.12);border-color:rgba(255,159,67,.35)}
+.patgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.patcard{text-align:left;cursor:pointer;padding:16px 18px;border-radius:24px;display:flex;flex-direction:column;gap:4px;font:inherit;color:inherit}
+.patcard:hover{transform:translateY(-2px)}
+.patcard .pn{font-family:var(--f-display);font-weight:700;color:var(--blue-2);font-size:1.3rem}
+.patcard .muted{font-size:.85rem;line-height:1.45}
+.patcard .pm{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+h3.sub{font-size:1.02rem;margin:20px 0 8px}
+ol.steps{padding-left:1.4em;margin:6px 0}
+ol.steps li{margin:6px 0}
+ol.steps li b{display:block}
+ol.steps li span{color:var(--muted);font-size:.93rem;white-space:pre-line}
+.bankgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.bankcard{padding:16px 18px;border-radius:24px;display:flex;flex-direction:column;gap:6px}
+.bankcard .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.osce-sys{margin:18px 0 8px;font-size:1rem;color:var(--blue-2)}
+ol.steps.warn li span{color:#a5520a}
+.drill{margin:12px 0 18px}
+.rub input[type=checkbox]{width:20px;height:20px;accent-color:var(--blue-2)}
+/* report */
+.rep-send{background:rgba(255,255,255,.5);border:1px solid var(--edge);border-radius:20px;padding:12px 16px;margin:6px 0 4px}
+.rep-send .acts{margin-top:8px}
+a.btn{text-decoration:none;display:inline-block;color:var(--ink)}
+a.btn.pri{color:#fff}
+.rep-sc{padding-left:1.6em;margin:0}
+.rep-sc li{margin:6px 0}
+.rep-sc li>div{display:grid;grid-template-columns:1fr 110px 56px;gap:10px;align-items:center;font-size:.93rem}
+.rep-sc li b{font-family:var(--f-display);text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.rep-u{background:rgba(255,255,255,.45);border:1px solid var(--edge);border-radius:20px;padding:12px 16px;margin:0 0 12px}
+.rep-uh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+.rep-u .lbl{font-family:var(--f-display);font-weight:600;font-size:.88rem;margin:8px 0 2px;color:var(--muted)}
+.rep-u .lbl.bad{color:var(--red)}
+.rep-u ol{padding-left:1.4em;margin:0;font-size:.93rem}
+.rep-u ol li{margin:2px 0}
+.rep-key{border-left:3px solid var(--green);padding:2px 0 2px 12px;margin-top:8px}
+.rep-key .lbl{color:var(--green)}
+.rep-txt{min-height:220px;font-size:.85rem;margin-top:10px}
+@media (max-width:820px){.grid2,.two{grid-template-columns:1fr}.setrow{grid-template-columns:56px 1fr}.setrow .acts{grid-column:1/-1;justify-content:flex-start}.chartbox{grid-template-columns:1fr}.goal .num{font-size:2.8rem}.hello h2{font-size:1.4rem}.avatar{width:64px;height:64px;font-size:1.5rem}.chat{height:330px}.where{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top glass" style="border-radius:0 0 26px 26px;border-top:0">
+  <div class="brand"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg></span>ห้องสอบ MED422</div>
+  <span class="where" id="where">หน้าแรก</span>
+  <span class="sp"></span>
+  <span class="clock" id="clock" hidden>05:00</span>
+  <button class="btn sm" id="homeBtn" hidden>ออกจากห้องสอบ</button>
+</header>
+<main class="wrap" id="app"><p class="muted">กำลังโหลดชุดข้อสอบ…</p></main>
+<nav class="nav glass" id="nav" aria-label="เมนูหลัก">
+  <button data-tab="home" class="on"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.2 3 10.4V20a1 1 0 0 0 1 1h5v-6h6v6h5a1 1 0 0 0 1-1v-9.6z"/></svg></span>หน้าแรก</button>
+  <button data-tab="analyze"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="m5 15 4-5 4 3 6-7"/><path d="M15 6h4v4"/></svg></span>จุดอ่อน</button>
+  <button data-tab="hist"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></span>ประวัติ</button>
+  <button class="plus" id="plusBtn" aria-label="เริ่มชุดวันนี้แบบวันจริง"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+  <button data-tab="sets"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6M9 18h3"/></svg></span>ชุดสอบ</button>
+  <button data-tab="pat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg></span>แพทเทิร์น</button>
+</nav>
+<div class="lightbox" id="lb" role="dialog" aria-label="ภาพขยาย"><img id="lbimg" alt=""></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const EXAM = new Date("2026-11-17T08:00:00+07:00");
+const ME = "Nutthaphat";
+const KIND = {hx:"OSCE ซักประวัติ", pe:"OSCE ตรวจร่างกาย", counsel:"OSCE ให้คำแนะนำ", proc:"OSCE หัตถการ", saq:"SAQ"};
+const RULES = `กฎการตรวจของอาจารย์ (จากฟีดแบ็ก MED35):
+- ซักประวัติ/ตรวจร่างกาย: ให้คะแนนเฉพาะสิ่งที่นักศึกษาถามหรือตรวจจริงในบทสนทนา/คำตอบ ห้ามเดาแทน
+- คำถามตรวจร่างกาย: ถ้าตอบเป็น lab/investigation แทนการตรวจร่างกาย ได้ 0
+- DDx: ตรวจเฉพาะ 3 ข้อแรกที่เขียน ข้อที่เกินไม่อ่าน; โรคกลุ่มเดียวกัน (UA/NSTEMI/STEMI = ACS) นับเป็นข้อเดียว
+- การวินิจฉัยต้องระบุความรุนแรง/ชนิดให้เจาะจง ถ้ากว้างเกินได้ราว 30% ของข้อนั้น (เช่น ตอบ DF แทน DHF)
+- สั่งสารน้ำต้องระบุชนิดและ rate; ยาควรระบุขนาด/ทางให้เมื่อโจทย์ขอ แต่ตอบกลุ่มยาถูกให้คะแนนบางส่วน
+- แปลผล CBC/PBS ต้องครบ 3 series
+- ชื่อเชื้อเมื่อโจทย์สั่งให้เขียนเต็ม ต้องสะกดถูก
+- รับคำตอบไทยหรืออังกฤษ คำพ้องความหมายได้คะแนน ให้คะแนนครึ่งได้`;
+
+let PATS=[], SETS=[], CREDITS=[], BANK=null, QB=[], db=null, uid=null, sample=null, ATT=[], TAB="home";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function toast(t,ms=2600){const e=$("#toast");e.textContent=t;e.classList.add("on");clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove("on"),ms)}
+function fmt(s){s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function pct(a,b){return b?Math.round(a*100/b):0}
+function pill(p){return `<span class="score-pill ${p>=70?"good":p>=50?"mid":"bad"}">${p}%</span>`}
+const todayStr=()=>new Date().toLocaleDateString("sv-SE",{timeZone:"Asia/Bangkok"});
+
+let AC=null;
+function bell(n=1){try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();for(let i=0;i<n;i++){const o=AC.createOscillator(),g=AC.createGain();o.frequency.value=880;o.connect(g);g.connect(AC.destination);const t=AC.currentTime+i*.35;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.3,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+.3);o.start(t);o.stop(t+.32)}}catch(e){}}
+
+(async function boot(){
+  try{const r=await fetch("data/sets.json"); SETS=(await r.json()).sort((a,b)=>a.order-b.order);}
+  catch(e){$("#app").innerHTML=`<p>โหลดชุดข้อสอบไม่สำเร็จ ลองรีเฟรชหน้า</p>`;return}
+  try{CREDITS=await (await fetch("data/credits.json")).json()}catch(e){CREDITS=[]}
+  try{PATS=await (await fetch("data/patterns.json")).json()}catch(e){PATS=[]}
+  try{BANK=await (await fetch("data/bank.json")).json()}catch(e){BANK=null}
+  try{const qb=await (await fetch("data/saqbank.json")).json();QB=qb.map(c=>({...c,bank:true,meq:[],stations:c.items.map((it,i)=>({...it,n:i+1,kind:"saq"}))}));
+    const all=[];QB.forEach(c=>c.items.forEach(it=>all.push({...it,kind:"saq",title:c.short+" · "+it.title})));all.sort((a,b)=>(b.freq||1)-(a.freq||1));
+    QB.push({id:"q-all",title:"คลัง SAQ: ทุกหมวด",short:"ทุกหมวด",sub:"รวมทุกหมวดจากโพย",bank:true,meq:[],stations:all.map((it,i)=>({...it,n:i+1}))});}catch(e){QB=[]}
+  renderHome();
+  (async()=>{try{
+    const [d,u,s]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("sample")]);
+    sample=s||null;
+    claude.use("downloads").then(x=>{dl=x||null}).catch(()=>{});
+    claude.use("mcp").then(x=>{mcp=x||null;if(mcp&&repCur&&$("#repCopy"))renderReport(repCur,repFrom)}).catch(()=>{});
+    if(d&&u){uid=await u.id(); if(uid){db=d; await loadAttempts();}}
+    if(!run) renderHome(TAB);
+  }catch(e){ if(!run) renderHome(TAB); }})();
+})();
+async function loadAttempts(){
+  if(!db)return;
+  const timer=setTimeout(()=>toast("ยังดึงประวัติการสอบไม่ได้ ลองใหม่ภายหลัง"),10000);
+  try{const q=await db.collection("data/users/"+uid).get();ATT=q.docs.map(d=>({id:d.id,...d.data()})).filter(a=>a.setId);}catch(e){}
+  clearTimeout(timer);
+}
+document.querySelectorAll(".nav [data-tab]").forEach(b=>b.onclick=()=>renderHome(b.dataset.tab));
+$("#plusBtn").onclick=()=>{const s=todaySet(); if(s) startRun(s.id,s.stations.length?"full":"pick")};
+function todaySet(){const t=todayStr(),D=SETS.filter(s=>s.stations.length);return D.find(s=>s.date===t)||D.find(s=>s.date>t)||D[D.length-1]}
+function chrome(running){document.body.classList.toggle("running",running)}
+
+/* ---------- home tabs ---------- */
+function setRow(s,best){
+  const d=new Date(s.date+"T00:00:00+07:00");
+  const dd=d.toLocaleDateString("th-TH",{day:"numeric",timeZone:"Asia/Bangkok"}), mm=d.toLocaleDateString("th-TH",{month:"short",timeZone:"Asia/Bangkok"});
+  return `<div class="setrow glass ${s.date===todayStr()?"today":""}">
+    <div class="d"><b>${dd}</b>${mm}</div>
+    <div><h3>${esc(s.title)} ${best!=null?pill(best):""}</h3>
+      <ol class="meta"><li>${esc(s.sub)}</li>${s.stations.length?`<li>OSCE+SAQ ${s.stations.length} สถานี สถานีละ 5 นาที</li>`:""}<li>MEQ ${s.meq.length} ข้อ${s.stations.length?"":" เลือกทำทีละเคส"}</li></ol></div>
+    <div class="acts">${s.stations.length?`
+      <button class="btn pri" data-go="full" data-s="${s.id}">จำลองวันจริง</button>
+      <button class="btn" data-go="osce" data-s="${s.id}">OSCE+SAQ</button>
+      <button class="btn" data-go="meq" data-s="${s.id}">MEQ</button>
+      <button class="btn" data-go="pick" data-s="${s.id}">เลือกสถานี</button>`:`
+      <button class="btn pri" data-go="pick" data-s="${s.id}">เลือกเคส</button>
+      <button class="btn" data-go="meq" data-s="${s.id}">ทำทุกเคสต่อกัน</button>`}
+      ${lastAtt(s.id)?`<button class="btn" data-rep="${s.id}">ส่ง report</button>`:""}
+    </div></div>`;
+}
+function scoreChart(){
+  const pts=ATT.filter(a=>a.max).sort((a,b)=>(a.finishedAt||"").localeCompare(b.finishedAt||"")).map(a=>pct(a.score,a.max));
+  const W=600,H=150,P=8;
+  const ticks=Array.from({length:40},(_,i)=>`<line x1="${P+i*(W-2*P)/39}" y1="${H-2}" x2="${P+i*(W-2*P)/39}" y2="${H+6}" stroke="#9aa8c4" stroke-width="1.2"/>`).join("");
+  const goalY=H-(70/100)*(H-20);
+  if(!pts.length) return `<svg viewBox="0 0 ${W} ${H+8}" role="img" aria-label="ยังไม่มีกราฟคะแนน"><line x1="${P}" x2="${W-P}" y1="${goalY}" y2="${goalY}" stroke="#ff9f43" stroke-dasharray="6 6" opacity=".7"/><text x="${P}" y="${goalY-8}" fill="#c96a00" font-size="13">เป้า 70%</text><text x="${W/2}" y="${H/2+30}" text-anchor="middle" fill="#6b7a96" font-size="15">ทำชุดแรกแล้วเส้นคะแนนจะขึ้นตรงนี้</text>${ticks}</svg>`;
+  const xs=pts.length===1?[W/2]:pts.map((_,i)=>P+i*(W-2*P)/(pts.length-1));
+  const ys=pts.map(p=>H-(p/100)*(H-20));
+  const line=xs.map((x,i)=>`${i?"L":"M"}${x.toFixed(1)},${ys[i].toFixed(1)}`).join("");
+  const area=line+`L${xs[xs.length-1]},${H}L${xs[0]},${H}Z`;
+  const lx=xs[xs.length-1],ly=ys[ys.length-1];
+  return `<svg viewBox="0 0 ${W} ${H+8}" role="img" aria-label="กราฟคะแนนการซ้อม ${pts.length} ครั้ง ล่าสุด ${pts[pts.length-1]}%">
+    <defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9f43" stop-opacity=".45"/><stop offset="1" stop-color="#ff9f43" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <line x1="${P}" x2="${W-P}" y1="${goalY}" y2="${goalY}" stroke="#ff9f43" stroke-dasharray="6 6" opacity=".5"/>
+    <path d="${area}" fill="url(#gf)"/>
+    <path d="${line}" fill="none" stroke="#ff9f43" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="${lx}" cy="${ly}" r="7" fill="#ffe2bd" stroke="#fff" stroke-width="3" filter="url(#glow)"/>${ticks}</svg>`;
+}
+function bestMap(){const best={};ATT.forEach(a=>{if(a.max){const p=pct(a.score,a.max);best[a.setId]=Math.max(best[a.setId]??0,p)}});return best}
+function renderHome(tab="home"){
+  run=null; stopClock(); chrome(false); $("#clock").hidden=true; $("#homeBtn").hidden=true; TAB=tab;
+  document.querySelectorAll(".nav [data-tab]").forEach(b=>b.classList.toggle("on",b.dataset.tab===tab));
+  const labels={home:"หน้าแรก",analyze:"จุดอ่อน",hist:"ประวัติข้อสอบ",sets:"ชุดสอบ",pat:"แพทเทิร์นคำตอบ"};$("#where").textContent=labels[tab];
+  const best=bestMap(), A=$("#app");
+  if(tab==="home"){
+    const days=Math.max(0,Math.ceil((EXAM-new Date())/864e5));
+    const t=todayStr(); const left=SETS.filter(s=>s.date>=t&&best[s.id]==null).length;
+    const scored=ATT.filter(a=>a.max).sort((a,b)=>(a.finishedAt||"").localeCompare(b.finishedAt||""));
+    const last=scored.length?pct(scored[scored.length-1].score,scored[scored.length-1].max):null;
+    const ts=todaySet(); const next=SETS.filter(s=>s.stations.length&&s.date>(ts?ts.date:t)).slice(0,2); const always=SETS.filter(s=>!s.stations.length);
+    A.innerHTML=`<section class="hello"><div>
+        <div class="date">${new Date().toLocaleDateString("th-TH",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"Asia/Bangkok"})}</div>
+        <h2>สวัสดี ${ME}</h2><p>ทีละสถานี ไปถึงวันสอบ</p></div>
+        <div class="avatar" aria-hidden="true">${ME[0]}</div></section>
+      <section class="goal glass">
+        <div class="goal-h"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></span><span class="lbl">ถึงวันสอบ MEQ + OSCE (17 พ.ย.)</span><span class="sp"></span>
+          <button class="iconbtn" id="goSets" aria-label="ดูชุดสอบทั้งหมด"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+        <div class="num">${days}<small>วัน</small></div>
+        <div class="chartbox">${scoreChart()}
+          <div class="side-stat">เหลือ ${left} ชุดที่ยังไม่ได้ซ้อม<b>${last!=null?"ล่าสุด "+last+"%":"ยังไม่มีคะแนน"}</b></div></div>
+      </section>
+      ${ts?`<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span><h3>${ts.date===t?"ชุดของวันนี้":"ชุดถัดไป"}</h3></div><div class="sets">${setRow(ts,best[ts.id])}</div>`:""}
+      ${always.length?`<div class="section-h"><h3 class="muted" style="font-size:.98rem">ฝึกได้ทุกวัน</h3></div><div class="sets">${always.map(s=>setRow(s,best[s.id])).join("")}</div>`:""}
+      ${QB.length?`<div class="sets" style="margin-top:10px"><div class="setrow glass"><div class="d"><b>SAQ</b>คลัง</div><div><h3>คลัง SAQ จากโพย</h3><ol class="meta"><li>${QB.find(q=>q.id==="q-all").stations.length} ข้อ แยก ${QB.length-1} หมวด เขียนตอบแล้วให้ Claude ตรวจ</li></ol></div><div class="acts"><button class="btn pri" data-qr="q-all">สุ่ม 10 ข้อ</button><button class="btn" id="goBank">เลือกหมวด</button></div></div></div>`:""}
+      ${next.length?`<div class="section-h"><h3 class="muted" style="font-size:.98rem">ต่อจากนั้น</h3></div><div class="sets">${next.map(s=>setRow(s,best[s.id])).join("")}</div>`:""}`;
+    $("#goSets").onclick=()=>renderHome("sets");
+    A.querySelectorAll("[data-qr]").forEach(b=>b.onclick=()=>qbRandom(b.dataset.qr));
+    if($("#goBank"))$("#goBank").onclick=()=>renderHome("sets");
+  } else if(tab==="sets"){
+    A.innerHTML=`${qbPanel(best)}<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 10h6M9 14h6"/></svg></span><h3>ชุดสอบทั้งหมด (เรียงตามวันในปฏิทิน)</h3></div><div class="sets">${SETS.map(s=>setRow(s,best[s.id])).join("")}</div>`;
+    A.querySelectorAll("[data-qr]").forEach(b=>b.onclick=()=>qbRandom(b.dataset.qr));
+  } else if(tab==="analyze"){
+    const tag={};ATT.forEach(a=>Object.entries(a.byTag||{}).forEach(([k,[g,m]])=>{tag[k]=tag[k]||[0,0];tag[k][0]+=g;tag[k][1]+=m}));
+    const weak=Object.entries(tag).filter(([,v])=>v[1]>0).map(([k,[g,m]])=>[k,pct(g,m)]).sort((a,b)=>a[1]-b[1]).slice(0,12);
+    const hist=ATT.slice().sort((a,b)=>(b.finishedAt||"").localeCompare(a.finishedAt||"")).slice(0,10);
+    A.innerHTML=`<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19h16"/><path d="m5 15 4-5 4 3 6-7"/></svg></span><h3>จุดอ่อนและประวัติการซ้อม</h3></div>
+      <div class="two"><div class="panel glass"><h3>หัวข้อที่คะแนนต่ำสุด</h3>
+        ${weak.length?weak.map(([k,p])=>`<div class="weak"><span>${esc(k)}</span><div class="bar"><i style="width:${Math.max(p,3)}%"></i></div><span class="n">${p}%</span></div>`).join(""):`<p class="muted">${db?"ยังไม่มีผลสอบที่บันทึก ทำชุดแรกแล้วกลับมาดูหัวข้อที่ต้องทวน":"ประวัติคะแนนเก็บได้เมื่อเปิดหน้านี้ขณะลงชื่อเข้าใช้ claude.ai"}</p>`}</div>
+      <div class="panel glass"><h3>ซ้อมล่าสุด</h3>
+        ${hist.filter(a=>a.max).length?hist.filter(a=>a.max).map(a=>`<div class="hist"><span class="muted">${new Date(a.finishedAt).toLocaleDateString("th-TH",{day:"numeric",month:"short"})}</span><span class="t">${esc(a.setTitle)}<small>${esc(a.modeLabel||"")}</small></span><span>${pill(pct(a.score,a.max))}</span><button class="btn sm" data-ra="${esc(a.id)}">report</button></div>`).join(""):`<p class="muted">ยังไม่มี</p>`}</div></div>
+      <div class="panel glass" style="margin-top:14px"><h3>ลำดับอ่าน approach จาก Symptomatology (ตามจำนวนข้อสอบที่ใช้)</h3>
+        <ol class="steps">${AP_ORDER.map(([k,why])=>`<li><b>${esc(AP[k][0])} · ${esc(AP[k][1])} <span class="muted" style="font-weight:400">มหิดล บท ${k} น.${AP[k][2]}</span></b><span>${esc(why)}</span></li>`).join("")}</ol>
+        <p class="muted" style="font-size:.88rem;margin:.4em 0 0">บทที่สรุปแล้วและใช้บ่อยที่สุด ทบทวนซ้ำ: ไข้ (11 ข้อ), เหนื่อย (10), เลือดออกผิดปกติ (7)<br><a href="${SYM}" target="_blank" rel="noopener">เปิด Symptomatology</a></p></div>`;
+  } else if(tab==="hist"){
+    /* ประวัติข้อสอบที่เคยทำทั้งหมด ใหม่สุดก่อน · บันทึกเมื่อทำเสร็จหรือกดตรวจ (รอบที่ค้างกลางทางไม่ถูกบันทึก) */
+    const F=renderHome.hxF||"all";
+    const all=ATT.filter(a=>a.setId&&a.setId!=="pat").map(a=>({a,at:a.finishedAt||a.startedAt||""})).sort((x,y)=>y.at.localeCompare(x.at));
+    const isQB=a=>/^q-/.test(a.setId);
+    const list=all.filter(x=>F==="all"||(F==="qb"?isQB(x.a):!isQB(x.a)));
+    const graded=all.filter(x=>x.a.max);
+    const avg=graded.length?Math.round(graded.reduce((s,x)=>s+pct(x.a.score,x.a.max),0)/graded.length):null;
+    const dayOf=s=>{try{return new Date(s).toLocaleDateString("th-TH",{weekday:"short",day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Bangkok"})}catch(e){return ""}};
+    const timeOf=s=>{try{return new Date(s).toLocaleTimeString("th-TH",{hour:"2-digit",minute:"2-digit",timeZone:"Asia/Bangkok"})}catch(e){return ""}};
+    let h=`<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></span><h3>ประวัติข้อสอบที่เคยทำ</h3></div>`;
+    if(!db){h+=`<div class="panel glass"><p class="muted">ประวัติเก็บในบัญชี claude.ai เปิดหน้านี้ขณะลงชื่อเข้าใช้แล้วจะเห็นทุกรอบที่เคยทำ</p></div>`;}
+    else if(!all.length){h+=`<div class="panel glass"><p class="muted">ยังไม่มีรอบที่บันทึกไว้ · รอบหนึ่งจะถูกบันทึกเมื่อทำเสร็จหรือกดให้ Claude ตรวจอย่างน้อย 1 ข้อ</p></div>`;}
+    else{
+      h+=`<div class="hx-sum"><span class="chip">ทั้งหมด ${all.length} รอบ</span><span class="chip">ตรวจแล้ว ${graded.length} รอบ</span>${avg!=null?`<span class="chip">เฉลี่ย ${avg}%</span>`:""}</div>
+        <div class="hx-filter" role="group" aria-label="กรองประวัติ">${[["all","ทั้งหมด"],["set","ชุดสอบ"],["qb","คลัง SAQ"]].map(([k,l])=>`<button type="button" data-hxf="${k}" class="${F===k?"on":""}">${l}</button>`).join("")}</div>`;
+      let last="";
+      list.forEach(({a,at})=>{
+        const d=dayOf(at);if(d!==last){h+=`<div class="hx-day">${esc(d)}</div>`;last=d;}
+        const n=(a.keys||[]).length;
+        h+=`<div class="hx-row glass"><span class="tm">${esc(timeOf(at))}</span><span class="t"><b>${esc(a.setTitle||a.setId)}</b><small>${esc(a.modeLabel||"")}${n?" · "+n+" ข้อ":""}${a.max?" · "+a.score+"/"+a.max+" คะแนน":""}</small></span>${a.max?pill(pct(a.score,a.max)):`<span class="nog">ยังไม่ตรวจ</span>`}<button class="btn sm" data-ra="${esc(a.id)}">ดูคำตอบ</button></div>`;
+      });
+      if(!list.length)h+=`<p class="muted">ไม่มีรอบในหมวดนี้</p>`;
+      h+=`<p class="muted" style="font-size:.85rem;margin-top:12px">รอบหนึ่งถูกบันทึกเมื่อทำเสร็จหรือกดตรวจ · ถ้าหน้ารีโหลดกลางทางก่อนบันทึก รอบนั้นจะไม่อยู่ในรายการ</p>`;
+    }
+    A.innerHTML=h;
+    A.querySelectorAll("[data-hxf]").forEach(b=>b.onclick=()=>{renderHome.hxF=b.dataset.hxf;renderHome("hist")});
+  } else {
+    const pb=patBest();
+    A.innerHTML=`<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg></span><h3>แพทเทิร์นคำตอบ: ท่องโครง แล้วฝึกใช้</h3></div>
+      ${PATS.some(p=>p.group==="osce")?`<p style="margin:-4px 0 10px"><a href="#" id="toOsce">ไปที่แพทเทิร์น OSCE แยกระบบ ↓</a></p>`:""}
+      <div class="patgrid">${PATS.filter(p=>p.group!=="osce").map((p,i)=>patCard(p,i,pb)).join("")}</div>
+      ${osceSection(pb)}
+      ${BANK?bankPanel():""}
+      <div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 15 2 2 4-4"/><rect x="4" y="5" width="16" height="16" rx="3"/></svg></span><h3>กติกาที่ใช้ตรวจ</h3></div>
+      <div class="two"><div class="panel glass"><h3>จากฟีดแบ็กอาจารย์ MED35</h3><ol class="rules">
+        <li>History + PE ราว 50% ของคะแนน MEQ</li><li>DDx ตรวจแค่ 3 ข้อแรก</li><li>Diagnosis ต้องบอกความรุนแรง (DHF ไม่ใช่ DF ซึ่งได้แค่ 3/10)</li><li>สั่งสารน้ำต้องบอกชนิดและ rate</li><li>แปลผล CBC/PBS ให้ครบ 3 series</li><li>ถามตรวจร่างกายแล้วตอบเป็น lab ได้ 0</li><li>MEQ เปิดทีละหน้า ย้อนกลับไม่ได้</li></ol></div>
+      <div class="panel glass"><h3>รูปแบบวันสอบ</h3><ol class="rules">
+        <li>OSCE+SAQ 10 สถานี สถานีละ 5 นาที</li><li>OSCE 3 สถานี แต่ละสถานีมี SAQ ต่อเคสเดียวกัน</li><li>SAQ แยกอีก 4 สถานี</li><li>MEQ 2 เคส เปิดทีละหน้า แต่ละหน้าจับเวลา</li></ol>
+        <p class="muted" style="font-size:.86rem;margin:.6em 0 0">${sample?"Claude พร้อมเป็นผู้ป่วยจำลองและตรวจคำตอบ":"ถ้า Claude ใช้ไม่ได้ในหน้านี้ สถานี OSCE จะให้เขียนคำถามเอง แล้วตรวจเองตามเฉลย"}</p></div></div>
+      ${CREDITS.length?`<div class="panel glass" style="margin-top:14px"><h3>ที่มาของภาพ</h3><ol class="credits">${CREDITS.map(c=>`<li>${esc(c.code)}: <a href="${esc(c.commons_url)}">${esc(c.author)}</a> (${esc(c.license)})</li>`).join("")}</ol></div>`:""}`;
+  }
+  A.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>startRun(b.dataset.s,b.dataset.go));
+  A.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>renderPattern(b.dataset.p));
+  if($("#toOsce"))$("#toOsce").onclick=e=>{e.preventDefault();$("#osceH").scrollIntoView({behavior:"smooth"})};
+  A.querySelectorAll("[data-rep]").forEach(b=>b.onclick=()=>{const a=lastAtt(b.dataset.rep);if(a)renderReport(a,tab)});
+  A.querySelectorAll("[data-ra]").forEach(b=>b.onclick=()=>{const a=ATT.find(x=>x.id===b.dataset.ra);if(a)renderReport(a,tab)});
+  window.scrollTo(0,0);
+}
+
+
+
+
+
+function patCard(p,i,pb){return `<button class="patcard glass" data-p="${p.id}"><span class="pn">${i+1}</span><b>${esc(p.title)}</b><span class="muted">${esc(p.when)}</span><span class="pm"><span class="chip">${p.steps.length} ขั้น</span><span class="chip">ฝึก ${p.drills.length} ข้อ</span>${pb[p.id]!=null?pill(pb[p.id]):""}</span></button>`}
+function osceSection(pb){const O=PATS.filter(p=>p.group==="osce");if(!O.length)return "";const sys=[...new Set(O.map(p=>p.sys))];
+  return `<div class="section-h" id="osceH"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><h3>แพทเทิร์น OSCE แยกระบบ (จาก checklist จริงในโพย)</h3></div>
+  <p class="muted" style="margin:-4px 0 6px;font-size:.9rem">โครงคำถาม/การตรวจ/การแนะนำที่ checklist ของอาจารย์ให้คะแนน พร้อมจุดที่รุ่นพี่พลาด ฝึกเขียนรายการคำถามแล้วให้ Claude ตรวจ</p>
+  ${sys.map(x=>`<h3 class="osce-sys">${esc(x)}</h3><div class="patgrid">${O.filter(p=>p.sys===x).map((p,i)=>patCard(p,i,pb)).join("")}</div>`).join("")}`}
+/* ---------- คลัง SAQ ---------- */
+function qbRandom(id){const s=getSet(id);if(!s)return;const ns=s.stations.map(x=>x.n);for(let i=ns.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ns[i],ns[j]]=[ns[j],ns[i]]}startRun(id,"osce",ns.slice(0,10).sort((a,b)=>a-b))}
+function qbPanel(best){if(!QB.length)return "";const cats=QB.filter(q=>q.id!=="q-all"),all=QB.find(q=>q.id==="q-all");
+  return `<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg></span><h3>คลัง SAQ จากโพย (${all.stations.length} ข้อ)</h3></div>
+  <p class="muted" style="margin:-4px 0 10px;font-size:.9rem">ข้อละ 5 นาที เขียนตอบแล้วให้ Claude ตรวจตาม rubric เฉลยแก้จุดที่โพยเก่าผิดแล้ว ข้อที่ออกบ่อยอยู่ต้นรายการ</p>
+  <div class="bankgrid">
+   <div class="bankcard glass"><b>ทุกหมวด</b><span class="muted" style="font-size:.85rem">สุ่มข้ามหมวดแบบวันสอบจริง</span><span>${best[all.id]!=null?pill(best[all.id]):""}</span><div class="acts"><button class="btn pri" data-qr="q-all">สุ่ม 10 ข้อ</button></div></div>
+   ${cats.map(c=>`<div class="bankcard glass"><b>${esc(c.title.replace("คลัง SAQ: ",""))}</b><span class="muted" style="font-size:.85rem">${c.stations.length} ข้อ${c.sub?"<br>"+esc(c.sub):""}</span><span>${best[c.id]!=null?pill(best[c.id]):""}</span><div class="acts"><button class="btn pri" data-qr="${c.id}">สุ่ม 10 ข้อ</button><button class="btn" data-go="pick" data-s="${c.id}">เลือกข้อ</button></div></div>`).join("")}
+  </div>`}
+/* ---------- คลังโพย ---------- */
+const SETNAME={m35a:"โพย MED35 #1",m35b:"โพย MED35 #2",mc:"เคสแม่",n1:"ชุด 1",n2:"ชุด 2",n3:"ชุด 3",n4:"ชุด 4",n5:"ชุด 5",n6:"ชุด 6",n7:"ชุด 7",n8:"ชุด 8",n9:"ชุด 9"};
+function setNames(t){return String(t).split(/,\s*/).map(x=>SETNAME[x]||x).join(", ")}
+function bankPanel(){const B=BANK;return `<div class="section-h"><span class="tile soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19h16"/><path d="M7 16V9M12 16V5M17 16v-4"/></svg></span><h3>สิ่งที่ออกบ่อยจากโพย</h3></div>
+  <div class="panel glass"><p class="muted" style="margin:0 0 .5em">${esc(B.source)} อัปเดต ${esc(B.updated)}</p>
+    <h3>คู่สถานี OSCE → SAQ ที่ราชวิถีออกซ้ำ</h3>
+    <ol class="rules">${B.pairs.map(p=>`<li><b>${esc(p[0])}</b> → ${esc(p[1])}<br><span class="muted" style="font-size:.86rem">รุ่นที่ออก: ${esc(p[2])}<br>ฝึกใน: ${esc(setNames(p[3]))}</span></li>`).join("")}</ol></div>
+  <div class="panel glass" style="margin-top:14px"><h3>หัวข้อเรียงตามจำนวนรุ่นที่ออก</h3>
+    <div style="overflow-x:auto"><table class="lab"><tr><td><b>หัวข้อ</b></td><td><b>ข้อในโพย</b></td><td><b>รุ่นราชวิถี</b></td><td><b>ฝึกใน</b></td></tr>
+    ${B.rows.map(r=>`<tr><td>${esc(r[0])}${r[3].length?`<br><span class="muted" style="font-size:.8rem">${esc(r[3].join(", "))}</span>`:""}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[4]==="—"?`<span class="muted">ยังไม่มีชุด</span>`:esc(setNames(r[4]))}</td></tr>`).join("")}</table></div></div>
+  <div class="panel glass" style="margin-top:14px"><h3>เคล็ดลับการให้คะแนนที่รุ่นพี่จดไว้</h3><ol class="rules">${B.tips.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></div>`}
+
+/* ---------- symptomatology links ---------- */
+const SYM="https://claude.ai/artifact/UHWS6Q3Wtd4nKTEiu5tYAG";
+const AP={3:["การรู้สึกตัวผิดปกติ","Alteration of consciousness",22],4:["เพ้อ","Delirium",43],5:["เป็นลม","Syncope",53],7:["ไข้","Fever",72,"https://claude.ai/artifact/ABe6tfhZm383pTTxxpfD1P"],8:["ซีด","Anemia",80],9:["ดีซ่าน","Jaundice",94],10:["บวม","Edema",103],12:["เหนื่อย","Dyspnea",124,"https://claude.ai/artifact/UMrH4bS5hECUbqhPff1xBZ"],13:["เจ็บหน้าอก","Chest pain",135],14:["ใจสั่น","Palpitation",146],15:["ไอ","Cough",152],16:["ไอเป็นเลือด","Hemoptysis",159],20:["คลื่นไส้ อาเจียน","Nausea/vomiting",184],21:["ปวดท้อง","Abdominal pain",198],22:["ท้องเดิน","Diarrhea",208],23:["เลือดออกทางเดินอาหาร","GI bleeding",225,"https://claude.ai/artifact/7suUBKHna5ZcgBMRuWo9EQ"],24:["เลือดออกผิดปกติ","Abnormal bleeding",232,"https://claude.ai/artifact/Lp7Tgem9mVzea6P7JzwUw3"],25:["ปัสสาวะออกน้อย","Oliguria",243],26:["ปัสสาวะมาก","Polyuria",252],28:["ปัสสาวะเป็นเลือด","Hematuria",266],29:["ปวดข้อ","Arthritis",279],31:["ปวดศีรษะ","Headache",302,"https://claude.ai/artifact/ErFkkhsDDW8Ws3WWi6Bfgu"],33:["อ่อนแรง","Weakness",323],39:["น้ำหนักลด","Weight loss",393],41:["ผิวหนัง","Skin",407],44:["ช็อก","Shock",428],
+ Na:["โซเดียม","Na",0,"https://claude.ai/artifact/X8PTV6SCCeJoXqxnxVVen8"],K:["โพแทสเซียม","K",0,"https://claude.ai/artifact/GZy1jyURxzA9EWj8bWmUoC"],acid:["กรดเกิน","Metabolic acidosis",0,"https://claude.ai/artifact/Km4QAYtcMCkDvQTsitWYyw"]};
+const APMAP={"m35a": {"s1": [7, 15, 12], "s2": [15, 12], "s3": [31, 7, 3], "s4": [31, 7], "s5": [8], "s6": [8], "s7": [12, "acid"], "s8": [28, 21], "s9": [29], "s10": [26], "m35a-tb": [15, 16, 7], "m35a-hav": [9, 7]}, "m35b": {"s1": [13], "s2": [13], "s3": [9, 10], "s4": [9], "s5": [10, 28], "s6": [10, 28], "s7": [14, 39], "s8": [12, 13], "s9": [31, 7], "s10": [41], "m35b-copd": [12, 15], "m35b-gout": [29]}, "n1": {"s1": [14], "s2": [14], "s3": [12, 14], "s4": [12], "s5": [24], "s6": [24], "s7": [13], "s8": [5, 14], "s9": [12, 10], "s10": [3, "acid"], "n1-hf": [12, 10], "n1-pe": [12, 13, 44]}, "n2": {"s1": [24], "s2": [24], "s3": [8, 9], "s4": [8], "s5": [8], "s6": [8], "s7": [8, 24, 3], "s8": [7, 44], "s9": [25], "s10": [8, 22], "n2-anemia": [8, 24, 7]}, "mc": {"mc3c": [23, 8, 24, 44], "mc5b": [10, 28], "mc5c": [25, 10, "K", "acid"], "mc1b": [3, 7, 26, "Na", 44], "mc1c": [20, 21, "acid", "K"], "mc2b": [7, 9, 25], "mc2c": [7, 15, 39, 44], "mc4b": [33, 3], "mc4c": [3, 4, 9]}, "n3": {"s1": [14, 12, 39], "s2": [14], "s3": [7, 21], "s4": [7], "s7": [12], "s8": [41], "s9": [29], "s10": [15, 12]}, "n4": {"s1": [9, 7], "s2": [9], "s3": [21, 20], "s4": [21], "s5": [15], "s6": [15, 7], "s7": [10, 21], "s8": [9], "s9": [22, 23], "s10": [22, 10]}, "n5": {"s1": [10], "s2": [10], "s3": [39, 14], "s4": [39, 14], "s7": ["acid", 20], "s9": [41]}, "n6": {"s1": [31, 7], "s2": [31, 7], "s3": [33], "s4": [33, 31], "s7": [3, 7], "s8": [31], "s9": [3], "s10": [15, 7]}, "n7": {"s1": [22], "s2": [22], "s3": [15, 12, 7], "s4": [15, 12], "s5": [7, 24], "s6": [7, 24], "s7": [7, 3], "s8": [15, 7], "s9": [7, 44], "s10": [7]}, "n8": {"s1": [13], "s2": [13], "s3": [12, 10], "s4": [12], "s5": [23, 8], "s6": [8, 23], "s7": [14, 5], "s8": [14], "s9": [3, "acid"], "s10": [28, 10]}, "n9": {"s1": [3, 4, "Na"], "s2": ["Na"], "s3": [33], "s4": ["K", 33], "s5": [9], "s6": [9], "s7": [8], "s8": [8], "s9": [41], "s10": [21, 20]}};
+const AP_ORDER=[[8,"ใช้ใน 10 ข้อ: ซีด IDA, hemolysis, G6PD, TTP, AML, hookworm, variceal bleed"],[3,"เคสแม่ 1 และ 4 (4 MEQ) + ชุด 7–9 ทั้ง HHS, DKA, stroke, OP; อ่านคู่บท 4 Delirium"],[10,"เคสแม่ 5 ทั้งสองข้อ + HF, cirrhosis, nephrotic, lupus nephritis"],[9,"HepA, leptospirosis, cirrhosis, hemolysis, OP+HE"],[44,"ซ่อนอยู่ใน 4 MEQ: septic, hypovolemic (UGIB), obstructive (PE, tamponade)"],[13,"เคสแม่ 6 + chest pain OSCE; อ่านคู่บท 14 ใจสั่น (AF, AV block)"],[15,"TB, pneumonia, COPD, melioidosis; อ่านคู่บท 16 ไอเป็นเลือด"],[33,"Stroke, GBS, hypoK ที่จะมาในชุด 7–8"],[25,"AKI ใน leptospirosis, ATN, NSAID+contrast; อ่านคู่บท 28 hematuria"]];
+function apprOf(setId,key){const m=APMAP[setId]||{};return m[key]||[]}
+function apprChips(list){if(!list.length)return "";return `<div class="appr"><span class="muted">ทบทวน approach:</span>${list.map(k=>{const a=AP[k];if(!a)return "";const lbl=a[2]?`${a[0]} (มหิดล บท ${k})`:a[1];return a[3]?`<a class="chip ok" href="${a[3]}" target="_blank" rel="noopener">${esc(lbl)} ✓</a>`:`<a class="chip todo" href="${SYM}" target="_blank" rel="noopener">${esc(lbl)} · ยังไม่สรุป</a>`}).join("")}</div>`}
+
+/* ---------- answer patterns ---------- */
+let PG={}; // pattern drill grades {pid:{di:{s:[],fb}}}
+function patBest(){const o={};ATT.filter(a=>a.setId==="pat").forEach(a=>Object.entries(a.pat||{}).forEach(([k,v])=>{o[k]=v}));return o}
+function renderPattern(pid){
+  const P=PATS.find(p=>p.id===pid);if(!P)return;
+  chrome(true);run=null;$("#homeBtn").hidden=false;$("#clock").hidden=true;$("#where").textContent="แพทเทิร์น · "+P.title;
+  PG[pid]=PG[pid]||{};
+  const stepsHtml=`<ol class="steps">${P.steps.map(s=>`<li><b>${esc(s[0])}</b><span>${esc(s[1])}</span></li>`).join("")}</ol>`;
+  $("#app").innerHTML=`<section class="sheet glass">
+    <div class="sheet-h"><span class="chip k-hx">แพทเทิร์น</span><h2>${esc(P.title)}</h2></div>
+    <ol class="meta" style="padding-left:1.2em"><li>ใช้เมื่อ: ${esc(P.when)}</li><li>${esc(P.weight)}</li></ol>
+    <h3 class="sub">ขั้น 1 ท่องโครงจากความจำ</h3>
+    <div class="task"><label for="recall">พิมพ์หัวข้อที่ต้องมีในคำตอบประเภทนี้ เรียงตามลำดับ (${P.steps.length} หัวข้อ)</label><textarea id="recall" style="min-height:130px"></textarea></div>
+    <button class="btn pri" id="reveal">เทียบกับโครงจริง</button>
+    <div id="skel" hidden>
+      <h3 class="sub">ขั้น 2 โครงคำตอบ <span class="muted" style="font-size:.85rem;font-weight:400">ติ๊กหัวข้อที่คุณเขียนได้</span></h3>
+      <div class="rub">${P.steps.map((s,i)=>`<span><b>${i+1}. ${esc(s[0])}</b> <span class="muted">— ${esc(s[1])}</span></span><input type="checkbox" class="rc" aria-label="เขียนหัวข้อ ${esc(s[0])} ได้">`).join("")}</div>
+      <p class="fb" id="rcnt"></p>
+      <h3 class="sub">จุดที่อาจารย์หักคะแนน</h3><ol class="steps warn">${P.pitfalls.map(x=>`<li><span>${esc(x)}</span></li>`).join("")}</ol>
+    </div>
+    <h3 class="sub">ขั้น 3 ฝึกใช้กับเคสสั้น (ข้อละราว 3 นาที)</h3>
+    ${P.drills.map((d,i)=>`<div class="drill" data-i="${i}"><div class="stem">${esc(d.q)} <span class="pts muted">(${d.pts} คะแนน)</span></div>
+      <textarea id="dr${i}" style="min-height:140px" aria-label="คำตอบข้อฝึก ${i+1}"></textarea>
+      <div class="foot" style="justify-content:flex-start"><button class="btn" data-show="${i}">ดูเฉลยและให้คะแนนเอง</button><button class="btn pri" data-ai="${i}" ${sample?"":"hidden"}>ให้ Claude ตรวจ</button></div>
+      <div class="dres" id="dres${i}"></div></div>`).join("")}
+    <details style="margin-top:14px"><summary class="muted">ดูโครงคำตอบโดยไม่ท่อง</summary>${stepsHtml}</details>
+    <div class="foot"><button class="btn" id="patBack">กลับไปรายการแพทเทิร์น</button></div></section>`;
+  const showSkel=()=>{$("#skel").hidden=false;const upd=()=>{const n=[...document.querySelectorAll(".rc")].filter(c=>c.checked).length;$("#rcnt").textContent=`จำได้ ${n} จาก ${P.steps.length} หัวข้อ`};document.querySelectorAll(".rc").forEach(c=>c.onchange=upd);upd()};
+  $("#reveal").onclick=showSkel;
+  $("#patBack").onclick=()=>renderHome("pat");
+  document.querySelectorAll("[data-show]").forEach(b=>b.onclick=()=>drawDrill(P,+b.dataset.show));
+  document.querySelectorAll("[data-ai]").forEach(b=>b.onclick=async()=>{const i=+b.dataset.ai;b.disabled=true;b.textContent="กำลังตรวจ…";await gradeDrill(P,i);b.disabled=false;b.textContent="ตรวจอีกครั้ง";drawDrill(P,i)});
+  window.scrollTo(0,0);
+}
+function drawDrill(P,i){
+  const d=P.drills[i],g=PG[P.id][i]||{s:[]};let got=0;d.rubric.forEach((r,j)=>got+=g.s[j]||0);
+  const box=$("#dres"+i);
+  box.innerHTML=`${g.fb?`<p class="fb">Claude: ${esc(g.fb)}</p>`:""}<div class="rub">${d.rubric.map((r,j)=>{const v=g.s[j]||0;return `<span>${esc(r[0])} <span class="muted">(${r[1]})</span></span><span class="seg" data-j="${j}">${[0,r[1]/2,r[1]].map((x,z)=>`<button type="button" class="${v===x?"on":""}" data-v="${x}" aria-label="ให้ ${x} คะแนน">${["0","½","เต็ม"][z]}</button>`).join("")}</span>`}).join("")}</div>
+    <p class="muted" style="margin:4px 0 0">ได้ ${+got.toFixed(1)} / ${d.pts}</p>`;
+  box.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{const j=+b.parentElement.dataset.j;PG[P.id][i]=PG[P.id][i]||{s:[]};PG[P.id][i].s[j]=+b.dataset.v;drawDrill(P,i);savePat()});
+}
+async function gradeDrill(P,i){
+  const d=P.drills[i],ans=$("#dr"+i).value.trim()||"(ไม่ได้ตอบ)";
+  const prompt=`คุณเป็นอาจารย์อายุรศาสตร์ตรวจคำตอบฝึกหัดของนักศึกษาแพทย์ปี 4 เรื่อง "${P.title}"
+${RULES}
+โจทย์: ${d.q}
+โครงคำตอบที่ต้องมี: ${P.steps.map(s=>s[0]).join(", ")}
+rubric (JSON): ${JSON.stringify(d.rubric.map((r,j)=>({id:j,หัวข้อ:r[0],คะแนนเต็ม:r[1]})))}
+คำตอบนักศึกษา: ${ans}
+ให้คะแนนแต่ละหัวข้อ 0 ถึงคะแนนเต็ม (ครึ่งได้) และฟีดแบ็กภาษาไทย 1-2 ประโยคว่าขาดหัวข้อไหนของโครง
+ตอบเป็น JSON เท่านั้น: {"s":[คะแนนตาม id],"fb":"..."}`;
+  try{const v=await sample.json(prompt,{modelTier:"default"});PG[P.id][i]={s:(v.s||[]).map((n,j)=>Math.max(0,Math.min(+n||0,d.rubric[j]?d.rubric[j][1]:0))),fb:v.fb||""};savePat()}
+  catch(e){toast(e&&e.code==="rate_limited"?"Claude ตรวจถี่เกินไป รอสักครู่":"ตรวจไม่สำเร็จ ลองใหม่หรือให้คะแนนเอง")}
+}
+let patSaving=false;
+async function savePat(){
+  if(!db||patSaving)return;patSaving=true;
+  const pat={},byTag={};PATS.forEach(P=>{const g=PG[P.id];if(!g)return;let G=0,M=0;P.drills.forEach((d,i)=>{if(!g[i])return;M+=d.pts;d.rubric.forEach((r,j)=>G+=g[i].s[j]||0)});if(M){pat[P.id]=pct(G,M);byTag["แพทเทิร์น: "+P.title]=[G,M]}});
+  const prev=ATT.find(a=>a.id==="pat-latest");const merged={...(prev&&prev.pat||{}),...pat},mt={...(prev&&prev.byTag||{}),...byTag};
+  const body={setId:"pat",setTitle:"แพทเทิร์นคำตอบ",modeLabel:"ฝึกแพทเทิร์น",pat:merged,byTag:mt,finishedAt:new Date().toISOString()};
+  try{await db.collection("data/users/"+uid).doc("pat-latest").set(body);const i=ATT.findIndex(a=>a.id==="pat-latest");const row={id:"pat-latest",...body};i<0?ATT.push(row):ATT[i]=row}catch(e){}
+  patSaving=false;
+}
+
+/* ---------- run model ---------- */
+let run=null, clockT=null;
+function getSet(id){return SETS.find(s=>s.id===id)||QB.find(s=>s.id===id)}
+function buildQueue(set,mode,only){
+  const q=[];
+  if(mode!=="meq") set.stations.forEach(st=>{if(!only||only===st.n||(Array.isArray(only)&&only.includes(st.n)))q.push({t:"st",n:st.n,sec:300})});
+  if(mode==="full"||mode==="meq") set.meq.forEach((c,ci)=>c.pages.forEach((p,pi)=>q.push({t:"mp",ci,pi,sec:(p.min||3)*60})));
+  return q;
+}
+function startRun(sid,mode,only){
+  const set=getSet(sid);
+  if(mode==="pick") return renderPick(set);
+  bell(0);
+  run={set,mode,only,queue:buildQueue(set,mode,only),idx:0,ans:{},chat:{},grade:{},started:new Date().toISOString(),strict:true};
+  $("#homeBtn").hidden=false;
+  openItem();
+}
+function renderPick(set){
+  chrome(true);$("#where").textContent=set.title;$("#homeBtn").hidden=false;
+  $("#app").innerHTML=`<h2 style="margin:6px 0 12px">${set.stations.length?"เลือกสถานี":"เลือกเคส"}จาก ${esc(set.title)}</h2>
+   <div class="sets">${set.stations.map(st=>`<div class="setrow glass"><div class="d"><b>${st.n}</b>${set.bank?"ข้อ":"สถานี"}</div>
+     <div><h3>${esc(st.title)}</h3><span class="chip k-${st.kind}">${KIND[st.kind]}${st.link?" ต่อจากสถานี "+st.link:""}</span>${st.freq>1?` <span class="chip">ออกในโพย ${st.freq} ครั้ง</span>`:""}</div>
+     <div class="acts"><button class="btn" data-n="${st.n}">ทำสถานีนี้</button></div></div>`).join("")}
+   ${set.meq.map((c,i)=>`<div class="setrow glass"><div class="d"><b>M${i+1}</b>MEQ</div><div><h3>${esc(c.title)}</h3><span class="chip">${c.pages.length} หน้า</span> <span class="chip">${c.pages.reduce((t,p)=>t+(p.min||3),0)} นาที</span></div><div class="acts"><button class="btn" data-m="${i}">ทำ MEQ นี้</button></div></div>`).join("")}</div>`;
+  $("#app").querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>startRun(set.id,"osce",+b.dataset.n));
+  $("#app").querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{bell(0);run={set,mode:"meq",queue:set.meq[+b.dataset.m].pages.map((p,pi)=>({t:"mp",ci:+b.dataset.m,pi,sec:(p.min||3)*60})),idx:0,ans:{},chat:{},grade:{},started:new Date().toISOString(),strict:true};openItem()});
+}
+const stOf=n=>run.set.stations.find(s=>s.n===n);
+const keyOf=it=>it.t==="st"?"s"+it.n:"m"+it.ci+"p"+it.pi;
+
+function stopClock(){clearInterval(clockT);clockT=null}
+function startClock(sec,onOut){
+  stopClock();const end=Date.now()+sec*1000;const c=$("#clock");c.hidden=false;let warned=false;
+  const tick=()=>{const left=(end-Date.now())/1000;c.textContent=fmt(left);
+    c.classList.toggle("low",left<=60&&left>0);c.classList.toggle("out",left<=0);
+    if(left<=60&&!warned){warned=true;bell(1)}
+    if(left<=0){stopClock();bell(3);onOut()}};
+  tick();clockT=setInterval(tick,250);
+}
+
+function openItem(){
+  chrome(true);
+  const it=run.queue[run.idx]; if(!it) return finishRun();
+  it.t==="st"?renderStation(it):renderMeqPage(it);
+  window.scrollTo(0,0);
+}
+function stripHtml(){
+  return `<div class="strip">${run.queue.map((q,i)=>`<span class="${i===run.idx?"cur":i<run.idx?"done":""}" title="${q.t==="st"?"สถานี "+q.n:"MEQ"}">${q.t==="st"?q.n:"M"+(q.ci+1)+"."+(q.pi+1)}</span>`).join("")}</div>`;
+}
+function figHtml(src,alt){return src?`<img src="${esc(src)}" alt="${esc(alt||"ภาพประกอบโจทย์")}" onerror="this.outerHTML='<div class=noimg>ภาพนี้ยังไม่มีในชุด (${esc(src.split('/').pop())})</div>'">`:""}
+function labHtml(rows){return rows?`<table class="lab">${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</table>`:""}
+function bindZoom(){document.querySelectorAll(".figs img").forEach(i=>i.onclick=()=>{$("#lbimg").src=i.src;$("#lb").classList.add("on")})}
+$("#lb").onclick=()=>$("#lb").classList.remove("on");
+$("#homeBtn").onclick=()=>{ if(run&&!run.finished&&!confirmLeave())return; renderHome(); };
+function confirmLeave(){ // inline confirm (window.confirm is blocked)
+  const b=$("#homeBtn"); if(b.dataset.arm){delete b.dataset.arm;b.textContent="ออกจากห้องสอบ";return true}
+  b.dataset.arm=1;b.textContent="กดอีกครั้งเพื่อออก (คำตอบชุดนี้จะหาย)";setTimeout(()=>{delete b.dataset.arm;b.textContent="ออกจากห้องสอบ"},4000);return false;
+}
+
+/* ---------- station ---------- */
+function renderStation(it){
+  const st=stOf(it.n), k=keyOf(it); run.ans[k]=run.ans[k]||{}; run.chat[k]=run.chat[k]||[];
+  $("#where").textContent=`${run.set.title} · สถานี ${st.n}`;
+  const hasChat=!!st.sp;
+  const chatUI=hasChat?(sample?`<div class="chat"><div class="log" id="log"></div>
+      <form id="chatf"><input id="chatin" autocomplete="off" placeholder="${st.sp.role==="examiner"?"เช่น ตรวจ neck stiffness":"พิมพ์คำถามถึงผู้ป่วย"}" aria-label="ข้อความถึง${st.sp.role==="examiner"?"ผู้คุมสอบ":"ผู้ป่วย"}"><button class="btn pri" id="chatsend">ส่ง</button></form></div>
+      <p class="muted" style="font-size:.8rem;margin:.3em 0 0">${esc(st.sp.who)} · ${st.sp.role==="examiner"?"ผู้คุมสอบจะบอกผลเฉพาะสิ่งที่คุณระบุว่าตรวจ":"คุยภาษาธรรมดาได้ ผู้ป่วยตอบเฉพาะที่ถูกถาม"}</p>`
+     :`<div class="task"><label for="nochat">เขียนสิ่งที่จะ${st.sp.role==="examiner"?"ตรวจ":"ถาม/แนะนำ"} เรียงตามลำดับ <span class="pts">(Claude ไม่พร้อมในหน้านี้)</span></label><textarea id="nochat" style="min-height:220px"></textarea></div>`):"";
+  let qn=0;const tasks=st.tasks.map((t,i)=>t.chat?"":`<div class="task"><label for="t${i}">${++qn}. ${esc(t.q)} <span class="pts">${t.pts} คะแนน</span></label><textarea id="t${i}" data-i="${i}">${esc(run.ans[k][i]||"")}</textarea></div>`).join("");
+  $("#app").innerHTML=`${stripHtml()}
+   <section class="sheet glass"><div class="sheet-h"><span class="chip k-${st.kind}">${KIND[st.kind]}</span>${st.link?`<span class="chip">ต่อจากสถานี ${st.link}</span>`:""}<h2>${run.set.bank?"ข้อ":"สถานีที่"} ${st.n}</h2><span class="muted">${run.idx+1}/${run.queue.length}</span></div>
+   <div class="grid2"><div>
+     <div class="stem">${esc(st.stem)}</div>
+     <div class="figs">${figHtml(st.img)}${figHtml(st.img2)}</div>${labHtml(st.data)}
+     ${chatUI}
+   </div><div>${tasks||'<p class="muted">สถานีนี้ประเมินจากการซักประวัติ/ตรวจในบทสนทนา</p>'}${hasChat&&st.tasks.some(t=>!t.chat)?"":""}</div></div>
+   <div class="foot"><span class="lockmsg" id="lockmsg"></span><button class="btn pri" id="next">${run.idx+1<run.queue.length?"ส่งและไปสถานีถัดไป":"ส่งและดูผล"}</button></div></section>`;
+  bindZoom();
+  document.querySelectorAll("textarea[data-i]").forEach(ta=>ta.oninput=()=>run.ans[k][ta.dataset.i]=ta.value);
+  const nc=$("#nochat"); if(nc){nc.value=run.ans[k].notes||"";nc.oninput=()=>run.ans[k].notes=nc.value}
+  if(hasChat&&sample) setupChat(st,k);
+  $("#next").onclick=()=>advance();
+  startClock(it.sec,()=>{lockInputs("หมดเวลา — ไปสถานีถัดไปใน 5 วินาที");setTimeout(()=>{if(run&&run.queue[run.idx]===it)advance()},5000)});
+}
+function lockInputs(msg){document.querySelectorAll("#app textarea,#app input,#chatsend").forEach(e=>e.disabled=true);const m=$("#lockmsg");if(m)m.textContent=msg}
+function advance(){stopClock();run.idx++;openItem()}
+
+function setupChat(st,k){
+  const log=$("#log"), f=$("#chatf"), inp=$("#chatin");
+  const draw=()=>{log.innerHTML=run.chat[k].map(m=>`<div class="msg ${m.r}">${esc(m.x)}</div>`).join("");log.scrollTop=log.scrollHeight};
+  if(!run.chat[k].length) run.chat[k].push({r:"sp",x:st.sp.opening});
+  draw();
+  let busy=false;
+  f.onsubmit=async e=>{e.preventDefault();const t=inp.value.trim();if(!t||busy)return;busy=true;inp.value="";
+    run.chat[k].push({r:"me",x:t});const sp={r:"sp",x:"…"};run.chat[k].push(sp);draw();
+    try{
+      const res=await sample(spPrompt(st,run.chat[k].slice(0,-1)),{modelTier:"quick",cache:false,onText:({text})=>{sp.x=text||"…";draw()}});
+      sp.x=(res.text||"").trim()||"(ผู้ป่วยไม่ตอบ ลองถามใหม่)";
+    }catch(err){sp.x=err&&err.code==="rate_limited"?"(Claude ตอบถี่เกินไป รอสักครู่แล้วถามใหม่)":"(เชื่อมต่อผู้ป่วยจำลองไม่ได้ เขียนคำถามต่อในช่องนี้ได้ ระบบจะเก็บเป็นบันทึก)";sp.r="sys"}
+    busy=false;draw();inp.focus()};
+}
+function spPrompt(st,hist){
+  const ex=st.sp.role==="examiner";
+  const conv=hist.map(m=>(m.r==="me"?"นักศึกษา: ":m.r==="sp"?(ex?"ผู้คุมสอบ: ":"ผู้ป่วย: "):"")+m.x).join("\n");
+  return `คุณกำลังแสดงบท${ex?"ผู้คุมสอบ OSCE ที่บอกผลการตรวจร่างกาย":"ผู้ป่วยจำลอง (standardized patient)"} ในการสอบ OSCE อายุรศาสตร์ของนักศึกษาแพทย์ไทยปี 4
+สถานการณ์: ${st.stem}
+ตัวตน: ${st.sp.who}
+ข้อมูลลับของเคส (ใช้ตอบ ห้ามเปิดเผยเองถ้าไม่ถูกถาม): ${st.sp.facts}
+กติกา:
+${ex?`- บอกผลเฉพาะการตรวจที่นักศึกษาระบุชัดเจน ถ้าพูดกว้างเช่น "ตรวจปอด" ให้ถามกลับว่าจะดู คลำ เคาะ หรือฟังอะไร
+- การตรวจที่ไม่มีในข้อมูล ให้ตอบว่า "ปกติ"${st.kind==="proc"?"\n- สถานีนี้เป็นหัตถการ: เมื่อนักศึกษาบอกขั้นตอนที่ทำ ให้ตอบรับสั้นๆ หรือบอกสิ่งที่เกิดขึ้น/ค่าที่วัดได้ตามข้อมูล ห้ามบอกขั้นตอนถัดไปให้":""}
+- ตอบสั้น ภาษาไทยปนศัพท์แพทย์ ห้ามบอกการวินิจฉัย ห้ามแนะนำว่าควรตรวจอะไรต่อ`:`- ตอบเป็นภาษาพูดแบบชาวบ้าน 1-2 ประโยค ตอบเฉพาะสิ่งที่ถูกถาม ห้ามเล่าข้อมูลอื่นเพิ่ม
+- คำถามที่ไม่มีในข้อมูล ให้ตอบว่าไม่มี/ไม่เคย/ไม่ทราบ ตามความเหมาะสม
+- ห้ามใช้ศัพท์แพทย์ ห้ามบอกการวินิจฉัย ห้ามช่วยนักศึกษา
+- ถ้านักศึกษาอธิบายโรคหรือให้คำแนะนำ ให้ตอบสนองแบบผู้ป่วยจริง และถามคำถามที่ข้อมูลลับระบุว่าผู้ป่วยจะถาม เมื่อเหมาะ`}
+บทสนทนาจนถึงตอนนี้:
+${conv}
+ตอบเฉพาะคำพูดถัดไปของ${ex?"ผู้คุมสอบ":"ผู้ป่วย"} โดยไม่ใส่ชื่อผู้พูดนำหน้า`;
+}
+
+/* ---------- MEQ ---------- */
+function renderMeqPage(it){
+  const c=run.set.meq[it.ci], p=c.pages[it.pi], k=keyOf(it); run.ans[k]=run.ans[k]||{};
+  $("#where").textContent=`${run.set.title} · MEQ ${it.ci+1}`;
+  const prev=c.pages.slice(0,it.pi).filter(x=>x.info).map(x=>x.info);
+  $("#app").innerHTML=`${stripHtml()}
+   <section class="sheet glass"><div class="sheet-h"><span class="chip">MEQ ${it.ci+1}</span><h2>หน้า ${it.pi+1} จาก ${c.pages.length}</h2><span class="muted">${p.min} นาที · ${p.pts} คะแนน</span></div>
+   ${prev.length?`<details class="prev"><summary>ข้อมูลจากหน้าก่อน (${prev.length})</summary>${prev.map(x=>`<div>${esc(x)}</div>`).join("")}</details>`:""}
+   ${p.info?`<div class="stem">${esc(p.info)}</div>`:""}
+   <div class="figs">${figHtml(p.img)}</div>${labHtml(p.data)}
+   <div class="task" style="margin-top:10px"><label for="mq">${esc(p.q)}</label><textarea id="mq" style="min-height:200px">${esc(run.ans[k][0]||"")}</textarea></div>
+   <div class="foot"><span class="lockmsg" id="lockmsg">เปิดหน้าถัดไปแล้วย้อนกลับมาแก้ไม่ได้</span><button class="btn pri" id="next">${run.idx+1<run.queue.length?"เปิดหน้าถัดไป":"ส่งและดูผล"}</button></div></section>`;
+  bindZoom();
+  const ta=$("#mq");ta.oninput=()=>run.ans[k][0]=ta.value;ta.focus();
+  $("#next").onclick=()=>advance();
+  startClock(it.sec,()=>{lockInputs("หมดเวลาหน้านี้ — เปิดหน้าถัดไปใน 5 วินาที");setTimeout(()=>{if(run&&run.queue[run.idx]===it)advance()},5000)});
+}
+
+/* ---------- results ---------- */
+function itemsOf(r){ // gradable units
+  return r.queue.map(it=>{
+    if(it.t==="st"){const st=stOf(it.n);return {k:keyOf(it),title:`สถานี ${st.n} · ${st.title}`,kind:KIND[st.kind],tags:st.tags,tasks:st.tasks,st,appr:apprOf(r.set.id,"s"+st.n)}}
+    const c=r.set.meq[it.ci],p=c.pages[it.pi];return {k:keyOf(it),title:`MEQ ${it.ci+1} หน้า ${it.pi+1} · ${c.title}`,kind:"MEQ",tags:c.tags,tasks:[{q:p.q,pts:p.pts,key:p.key,rubric:p.rubric}],info:p.info,meq:true,appr:apprOf(r.set.id,c.id)}
+  });
+}
+function answerText(r,u,i,t){
+  const a=r.ans[u.k]||{};
+  if(t.chat){const c=(r.chat[u.k]||[]).filter(m=>m.r!=="sys");return c.length>1?c.map(m=>(m.r==="me"?"นศพ: ":"ตอบ: ")+m.x).join("\n"):(a.notes||"")}
+  return a[i]||"";
+}
+function scoreOf(u){const g=run.grade[u.k]||{};let got=0,max=0;u.tasks.forEach((t,i)=>t.rubric.forEach((rb,j)=>{max+=rb[1];got+=(g[i]&&g[i].s&&g[i].s[j])||0}));return [got,max]}
+function finishRun(){
+  stopClock();$("#clock").hidden=true;run.finished=new Date().toISOString();
+  renderResults(); saveAttempt();
+}
+function renderResults(){
+  $("#where").textContent=`${run.set.title} · ผลสอบ`;
+  const U=itemsOf(run);let G=0,M=0;U.forEach(u=>{const[g,m]=scoreOf(u);G+=g;M+=m});
+  $("#app").innerHTML=`<div class="res-sum glass"><div><div class="muted">${esc(run.set.title)}</div><div class="big">${G.toFixed(1).replace(/\.0$/,"")}<span class="muted" style="font-size:1.2rem"> / ${M}</span></div></div>
+     <div style="flex:1"></div>
+     <button class="btn pri" id="gradeAll" ${sample?"":"disabled"}>${sample?"ให้ Claude ตรวจทั้งหมด":"Claude ไม่พร้อม: ตรวจเองตามเฉลย"}</button>
+     <button class="btn" id="repBtn">ส่ง report ทางอีเมล</button><button class="btn" id="retry">ทำชุดนี้อีกครั้ง</button><button class="btn" id="back">หน้าแรก</button></div>
+   <p class="muted" style="font-size:.88rem;margin-top:-6px">กดแต่ละข้อเพื่อดูคำตอบ เฉลย และให้คะแนน (0 / ½ / เต็ม ต่อหัวข้อ) คะแนนบันทึกอัตโนมัติ</p>
+   <div id="ritems">${U.map((u,ix)=>ritemHtml(u,ix)).join("")}</div>`;
+  bindRes(U);
+  $("#gradeAll").onclick=()=>gradeAll(U);
+  $("#retry").onclick=()=>startRun(run.set.id,run.mode,run.only);
+  $("#repBtn").onclick=()=>{queueSave();renderReport(runAtt(),"results")};
+  $("#back").onclick=()=>renderHome("home");
+}
+function ritemHtml(u,ix){
+  const[g,m]=scoreOf(u);const gr=run.grade[u.k]||{};
+  return `<details class="ritem glass" data-ix="${ix}"><summary><span class="chip">${esc(u.kind)}</span><b>${esc(u.title)}</b><span class="sc">${pill(pct(g,m))} <span class="muted" style="font-family:var(--f-mono);font-size:.85rem">${+g.toFixed(1)}/${m}</span></span></summary><div class="body">
+   ${u.tasks.map((t,i)=>{const a=answerText(run,u,i,t);return `<div style="margin-top:10px"><b>${i+1}. ${esc(t.q)}</b> <span class="pts muted">${t.pts}</span>
+     ${t.chat?`<div class="transcript">${esc(a||"(ไม่มีบทสนทนา)").replace(/\n/g,"<br>")}</div>`:`<div class="ans">${esc(a||"(ไม่ได้ตอบ)")}</div>`}
+     ${t.key?`<div class="key"><b>เฉลย:</b> ${esc(t.key)}</div>`:""}
+     ${gr[i]&&gr[i].fb?`<div class="fb">Claude: ${esc(gr[i].fb)}</div>`:""}
+     <div class="rub">${t.rubric.map((rb,j)=>{const v=(gr[i]&&gr[i].s&&gr[i].s[j])||0;return `<span>${esc(rb[0])} <span class="muted">(${rb[1]})</span></span><span class="seg" data-i="${i}" data-j="${j}" data-max="${rb[1]}">${[0,rb[1]/2,rb[1]].map((x,z)=>`<button type="button" class="${v===x?"on":""}" data-v="${x}" aria-label="ให้ ${x} คะแนน">${["0","½","เต็ม"][z]}</button>`).join("")}</span>`}).join("")}</div></div>`}).join("")}
+   ${u.st&&u.st.sp?`<details style="margin-top:8px"><summary class="muted">ข้อมูลผู้ป่วยทั้งหมด (สำหรับทบทวน)</summary><p class="muted" style="font-size:.88rem">${esc(u.st.sp.facts)}</p></details>`:""}
+   ${run.grade[u.k]&&run.grade[u.k].sum?`<p class="fb">สรุป: ${esc(run.grade[u.k].sum)}</p>`:""}
+   ${apprChips(u.appr||[])}
+   <button class="btn sm" data-g="${ix}" ${sample?"":"hidden"}>ให้ Claude ตรวจข้อนี้</button></div></details>`;
+}
+function bindRes(U){
+  document.querySelectorAll(".ritem").forEach(d=>{
+    const u=U[+d.dataset.ix];
+    d.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{const s=b.parentElement,i=+s.dataset.i,j=+s.dataset.j;
+      run.grade[u.k]=run.grade[u.k]||{};run.grade[u.k][i]=run.grade[u.k][i]||{s:[]};run.grade[u.k][i].s[j]=+b.dataset.v;
+      refreshItem(U,+d.dataset.ix);queueSave()});
+    const gb=d.querySelector("[data-g]");if(gb)gb.onclick=async()=>{gb.disabled=true;gb.textContent="กำลังตรวจ…";await gradeItem(u);refreshItem(U,+d.dataset.ix,true);queueSave()};
+  });
+}
+function refreshItem(U,ix,open){
+  const old=document.querySelector(`.ritem[data-ix="${ix}"]`);const wasOpen=old.open||open;
+  old.outerHTML=ritemHtml(U[ix],ix);const n=document.querySelector(`.ritem[data-ix="${ix}"]`);n.open=wasOpen;bindRes(U);
+  let G=0,M=0;U.forEach(u=>{const[g,m]=scoreOf(u);G+=g;M+=m});
+  document.querySelector(".big").innerHTML=`${+G.toFixed(1)}<span class="muted" style="font-size:1.2rem"> / ${M}</span>`;
+}
+async function gradeAll(U){
+  const b=$("#gradeAll");b.disabled=true;
+  for(let ix=0;ix<U.length;ix++){b.textContent=`กำลังตรวจ ${ix+1}/${U.length}…`;const ok=await gradeItem(U[ix]);refreshItem(U,ix);if(ok==="stop")break}
+  b.textContent="ตรวจครบแล้ว";queueSave();
+}
+async function gradeItem(u){
+  const tasks=u.tasks.map((t,i)=>({ข้อ:i,คำถาม:t.q,เฉลย:t.key||"",rubric:t.rubric.map((r,j)=>({id:j,หัวข้อ:r[0],คะแนนเต็ม:r[1]})),คำตอบนักศึกษา:answerText(run,u,i,t)||"(ไม่ได้ตอบ)",เป็นบทสนทนา:!!t.chat}));
+  const prompt=`คุณเป็นอาจารย์อายุรศาสตร์ตรวจข้อสอบ ${u.kind} ของนักศึกษาแพทย์ปี 4 อย่างเข้มงวดแต่ยุติธรรม
+${RULES}
+${u.st?`โจทย์: ${u.st.stem}`:`ข้อมูลหน้านี้: ${u.info||"-"}`}
+ข้อที่ต้องตรวจ (JSON): ${JSON.stringify(tasks)}
+ให้คะแนนแต่ละหัวข้อของ rubric เป็นตัวเลข 0 ถึงคะแนนเต็ม (ขั้นละครึ่งของคะแนนเต็มหรือเป็นทศนิยม .5) และฟีดแบ็กสั้นภาษาไทย 1-2 ประโยคต่อข้อ บอกสิ่งที่ขาดที่สำคัญที่สุด
+ตอบเป็น JSON เท่านั้น รูปแบบ {"t":[{"s":[คะแนนตาม id ของ rubric],"fb":"..."}],"sum":"สรุปภาพรวม 1 ประโยค"} โดย t เรียงตามข้อ`;
+  try{
+    const v=await sample.json(prompt,{modelTier:"default"});
+    run.grade[u.k]=run.grade[u.k]||{};
+    (v.t||[]).forEach((x,i)=>{if(!u.tasks[i])return;const s=(x.s||[]).map((n,j)=>Math.max(0,Math.min(+n||0,u.tasks[i].rubric[j]?u.tasks[i].rubric[j][1]:0)));run.grade[u.k][i]={s,fb:x.fb||""}});
+    run.grade[u.k].sum=v.sum||"";return true;
+  }catch(e){
+    if(e&&e.code==="not_granted"){sample=null;toast("ไม่ได้รับอนุญาตให้ใช้ Claude ตรวจเองตามเฉลยได้");return "stop"}
+    if(e&&e.code==="rate_limited"){toast("Claude ตรวจถี่เกินไป หยุดรอสักครู่แล้วกดตรวจข้อที่เหลือ");return "stop"}
+    toast("ตรวจข้อนี้ไม่สำเร็จ ลองกดตรวจข้อนี้อีกครั้ง");return false}
+}
+/* ---------- report (email) ---------- */
+const REPORT_TO="Nutt.spider@gmail.com", REPORT_SUBJ="ทำได้ไอหนุ่ม", MAIL_MAX=32000, GMAIL_MAX=12000;
+let dl=null, mcp=null, repFrom="home", repCur=null;
+const GMAIL_ERR={
+  needs_reauth:"Gmail หลุดการเชื่อมต่อ เชื่อมใหม่ที่ claude.ai Settings → Connectors แล้วกดส่งอีกครั้ง",
+  server_not_connected:"บัญชีนี้ยังไม่ได้เชื่อม Gmail เพิ่มได้ที่ claude.ai Settings → Connectors",
+  selection_required:"มี Gmail เชื่อมไว้มากกว่าหนึ่งบัญชี เลือกบัญชีในหน้าต่างที่ claude.ai ถาม แล้วกดส่งอีกครั้ง",
+  not_in_manifest:"หน้านี้ยังไม่ได้รับอนุญาตให้ใช้ Gmail เปิดสิทธิ์ได้ที่เมนู Permissions ของหน้านี้ แล้วกดส่งอีกครั้ง",
+  approval_required:"ต้องกดอนุญาตให้หน้านี้ใช้ Gmail ก่อน กดส่งอีกครั้งแล้วเลือกอนุญาต",
+  blocked_by_policy:"องค์กรไม่อนุญาตให้ส่งอีเมลจากหน้านี้ ใช้ปุ่มส่งผ่านแอปเมลด้านล่างแทน",
+  server_unavailable:"ไม่แน่ใจว่าส่งออกไปแล้วหรือยัง ดูในกล่อง Sent ของ Gmail ก่อนกดส่งซ้ำ",
+  upstream_error:"ไม่แน่ใจว่าส่งออกไปแล้วหรือยัง ดูในกล่อง Sent ของ Gmail ก่อนกดส่งซ้ำ"};
+function reportEmailHtml(R){
+  const ol=(a,c)=>`<ol style="margin:0;padding-left:22px;color:${c||"#1b2740"}">${a.map(x=>`<li style="margin:2px 0">${esc(x)}</li>`).join("")}</ol>`;
+  const h=(t,c)=>`<div style="font-weight:bold;font-size:13px;color:${c};margin:10px 0 2px">${t}</div>`;
+  const col=p=>p>=70?"#17804f":p>=50?"#c96a00":"#c4363b";
+  const rows=R.units.map((u,i)=>`<tr><td style="padding:4px 6px;border-bottom:1px solid #dbe2f0">${i+1}. ${esc(u.title)}</td><td style="padding:4px 6px;border-bottom:1px solid #dbe2f0;text-align:right;white-space:nowrap;font-weight:bold;color:${col(pct(u.got,u.max))}">${nfmt(u.got)}/${u.max}</td></tr>`).join("");
+  const secs=R.bad.map(u=>`<div style="border:1px solid #dbe2f0;border-radius:10px;padding:10px 14px;margin:0 0 12px">
+    <div style="font-weight:bold;font-size:15px">${esc(u.title)} <span style="color:${col(pct(u.got,u.max))}">${nfmt(u.got)}/${u.max}</span>${u.graded?"":` <span style="color:#5d6b86;font-weight:normal">(ยังไม่ได้ให้คะแนน)</span>`}</div>
+    ${u.said.length?h("ตอบไป","#5d6b86")+ol(u.said,"#5d6b86"):""}${h("ที่พลาด","#c4363b")+ol(u.miss)}
+    ${u.fb.length?h("ความเห็นผู้ตรวจ","#5d6b86")+ol(u.fb):""}
+    ${u.keys.length?`<div style="background:#e8f6ef;border-radius:8px;padding:2px 12px 8px;margin-top:10px">${h("ต้องจำ (เฉลย)","#17804f")+ol(u.keys)}</div>`:""}</div>`).join("");
+  return `<div style="font-family:Tahoma,'Noto Sans Thai',Arial,sans-serif;color:#1b2740;font-size:14px;line-height:1.55;max-width:680px">
+  <div style="font-size:20px;font-weight:bold">${esc(REPORT_SUBJ)} — รายงานผลซ้อม</div>
+  <div style="color:#5d6b86">${esc(R.a.setTitle)} · ${esc(R.a.modeLabel||"")} · ${esc(R.when)}</div>
+  <div style="font-size:30px;font-weight:bold;color:${col(R.p)};margin:8px 0 4px">${nfmt(R.G)} / ${R.M} <span style="font-size:15px;color:#5d6b86;font-weight:normal">(${R.p}%)</span></div>
+  <div style="font-weight:bold;font-size:16px;margin:18px 0 6px;border-left:4px solid #2f55e6;padding-left:8px">คะแนนรายข้อ</div>
+  <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:14px">${rows}</table>
+  <div style="font-weight:bold;font-size:16px;margin:20px 0 8px;border-left:4px solid #2f55e6;padding-left:8px">ข้อผิดและสิ่งที่ต้องจำ (${R.bad.length} ข้อ)</div>
+  ${secs||`<p>ได้เต็มทุกข้อ</p>`}
+  <p style="color:#8a96ad;font-size:12px;margin-top:16px">ส่งจากห้องสอบ MED422</p></div>`;
+}
+const nfmt=n=>String(+(+n||0).toFixed(1));
+const numList=arr=>arr.map((x,i)=>`${i+1}. ${x}`).join("\n");
+const liList=arr=>arr.map(x=>`<li>${esc(x)}</li>`).join("");
+function lastAtt(sid){return ATT.filter(a=>a.setId===sid&&a.max).sort((x,y)=>(y.finishedAt||"").localeCompare(x.finishedAt||""))[0]||null}
+function runAtt(){
+  const U=itemsOf(run);let G=0,M=0;U.forEach(u=>{const[g,m]=scoreOf(u);G+=g;M+=m});
+  return {id:run.docId,setId:run.set.id,setTitle:run.set.title,modeLabel:{full:"วันจริง",osce:"OSCE+SAQ",meq:"MEQ"}[run.mode]||run.mode,
+    startedAt:run.started,finishedAt:run.finished||new Date().toISOString(),score:+G.toFixed(1),max:M,ans:run.ans,chat:run.chat,grade:run.grade,keys:run.queue.map(keyOf)};
+}
+function attUnits(a){
+  const set=getSet(a.setId); if(!set) return [];
+  return (a.keys||[]).map(k=>{
+    let m=/^s(\d+)$/.exec(k);
+    if(m){const st=set.stations.find(s=>s.n===+m[1]);return st?{k,title:`สถานี ${st.n} · ${st.title}`,tasks:st.tasks}:null}
+    m=/^m(\d+)p(\d+)$/.exec(k);
+    if(m){const c=set.meq[+m[1]],p=c&&c.pages[+m[2]];return p?{k,title:`MEQ ${+m[1]+1} หน้า ${+m[2]+1} · ${c.title}`,tasks:[{q:p.q,pts:p.pts,key:p.key,rubric:p.rubric||[]}]}:null}
+    return null}).filter(Boolean);
+}
+function buildReport(a){
+  const src={ans:a.ans||{},chat:a.chat||{}};
+  const units=attUnits(a).map(u=>{
+    const g=(a.grade||{})[u.k]||null;let got=0,max=0;const miss=[],fb=[],keys=[],said=[];
+    u.tasks.forEach((t,i)=>{const gi=(g&&g[i])||{};let lost=false;
+      (t.rubric||[]).forEach((rb,j)=>{const v=+((gi.s||[])[j])||0;got+=v;max+=rb[1];if(v<rb[1]){lost=true;miss.push(`${rb[0]} (ได้ ${nfmt(v)}/${rb[1]})`)}});
+      if(gi.fb)fb.push(gi.fb);
+      if(lost&&t.key)keys.push(t.key);
+      if(!t.chat)said.push(`${t.q} → ${(answerText(src,u,i,t)||"(ไม่ได้ตอบ)").replace(/\s*\n\s*/g," / ")}`);
+    });
+    return {title:u.title,got,max,graded:!!g,miss,fb,keys,said,sum:(g&&g.sum)||""};
+  });
+  let G=0,M=0;units.forEach(u=>{G+=u.got;M+=u.max});
+  const when=new Date(a.finishedAt||a.startedAt||Date.now()).toLocaleDateString("th-TH",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Bangkok"});
+  return {a,units,bad:units.filter(u=>u.got<u.max),G,M,p:pct(G,M),when};
+}
+function reportText(R,short){
+  const L=[`${REPORT_SUBJ} — รายงานผลซ้อม`,`${R.a.setTitle} · ${R.a.modeLabel||""} · ${R.when}`,`คะแนนรวม ${nfmt(R.G)}/${R.M} (${R.p}%)`,"","คะแนนรายข้อ",numList(R.units.map(u=>`${u.title} — ${nfmt(u.got)}/${u.max}`)),"",`ข้อผิดและสิ่งที่ต้องจำ (${R.bad.length} ข้อ)`];
+  R.bad.forEach(u=>{
+    L.push("",`■ ${u.title} — ${nfmt(u.got)}/${u.max}${u.graded?"":" (ยังไม่ได้ให้คะแนน)"}`);
+    if(!short&&u.said.length)L.push("ตอบไป:",numList(u.said));
+    L.push("ที่พลาด:",numList(u.miss));
+    if(!short&&u.fb.length)L.push("ความเห็นผู้ตรวจ:",numList(u.fb));
+    if(u.keys.length)L.push("ต้องจำ (เฉลย):",numList(u.keys));
+  });
+  return L.join("\n");
+}
+function emailBody(R,MAX){
+  const t=reportText(R,true);if(encodeURIComponent(t).length<=MAX)return t;
+  const note="\n\n…(ตัดให้สั้นเพื่อส่งทางอีเมล รายงานเต็มกด “คัดลอกรายงานเต็ม” หรือ “ดาวน์โหลด PDF” ในห้องสอบ MED422)";
+  const lines=t.split("\n");let lo=0,hi=lines.length;
+  while(lo<hi){const mid=(lo+hi+1)>>1;encodeURIComponent(lines.slice(0,mid).join("\n")+note).length<=MAX?lo=mid:hi=mid-1}
+  return lines.slice(0,lo).join("\n")+note;
+}
+function reportDoc(R){
+  const u=R.units.map(x=>`<tr><td>${esc(x.title)}</td><td class="n">${nfmt(x.got)}/${x.max}</td></tr>`).join("");
+  const b=R.bad.map(x=>`<section><h3>${esc(x.title)} <span>${nfmt(x.got)}/${x.max}${x.graded?"":" · ยังไม่ได้ให้คะแนน"}</span></h3>
+    ${x.said.length?`<h4>ตอบไป</h4><ol class="m">${liList(x.said)}</ol>`:""}<h4 class="bad">ที่พลาด</h4><ol>${liList(x.miss)}</ol>
+    ${x.fb.length?`<h4>ความเห็นผู้ตรวจ</h4><ol>${liList(x.fb)}</ol>`:""}${x.keys.length?`<div class="k"><h4>ต้องจำ (เฉลย)</h4><ol>${liList(x.keys)}</ol></div>`:""}</section>`).join("");
+  return `<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(REPORT_SUBJ)} · ${esc(R.a.setTitle)}</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<style>body{font-family:"Noto Sans Thai","Prompt",sans-serif;color:#1b2740;background:#fff;max-width:780px;margin:24px auto;padding:0 16px;line-height:1.55;font-size:15px}
+h1,h2,h3,h4{font-family:"Prompt","Noto Sans Thai",sans-serif;font-weight:600;margin:0}h1{font-size:1.5rem}h2{font-size:1.1rem;margin:22px 0 8px;border-left:4px solid #2f55e6;padding-left:10px}
+.sub{color:#5d6b86;margin:2px 0 0}.score{font-family:Prompt;font-size:2.4rem;font-weight:700;color:#c4363b;margin:8px 0 0}
+table{width:100%;border-collapse:collapse}td{border-bottom:1px solid #dbe2f0;padding:4px 6px}td.n{text-align:right;font-family:Prompt;font-weight:600;white-space:nowrap}
+section{border:1px solid #dbe2f0;border-radius:12px;padding:10px 14px;margin:0 0 12px;break-inside:avoid}h3{font-size:1rem}h3 span{color:#c4363b;margin-left:6px}
+h4{font-size:.85rem;margin:8px 0 2px;color:#5d6b86}h4.bad{color:#c4363b}.k{background:#e8f6ef;border-radius:8px;padding:4px 10px 6px;margin-top:8px}.k h4{color:#17804f}
+ol{margin:0;padding-left:1.4em}ol.m{color:#5d6b86}li{margin:2px 0}@page{size:A4;margin:14mm}</style></head><body>
+<h1>${esc(REPORT_SUBJ)} — รายงานผลซ้อม</h1><p class="sub">${esc(R.a.setTitle)} · ${esc(R.a.modeLabel||"")} · ${esc(R.when)}</p>
+<div class="score">${nfmt(R.G)} / ${R.M} <small style="font-size:1rem;color:#5d6b86">(${R.p}%)</small></div>
+<h2>คะแนนรายข้อ</h2><table>${u}</table><h2>ข้อผิดและสิ่งที่ต้องจำ (${R.bad.length} ข้อ)</h2>${b}</body></html>`;
+}
+/* ---------- PDF: drawn on canvas so Thai shapes natively, then packed as JPEG pages ---------- */
+const PDF_W=794,PDF_H=1123,PDF_S=1.5,PDF_M=52;
+const pdfName=(a,R)=>`${REPORT_SUBJ} - ${a.setTitle} - ${R.when}.pdf`.replace(/[\\/:*?"<>|]/g,"-");
+async function reportPdf(R,S=PDF_S,Q=0.78){
+  try{await Promise.all(['400 16px "Noto Sans Thai"','600 16px "Noto Sans Thai"','600 16px "Prompt"','700 16px "Prompt"'].map(f=>document.fonts.load(f,"กขค abc")))}catch(e){}
+  const C={ink:"#1b2740",mut:"#5d6b86",red:"#c4363b",grn:"#17804f",org:"#c96a00",blue:"#2f55e6",line:"#dbe2f0",gbg:"#e8f6ef",hbg:"#eef2fa"};
+  const col=p=>p>=70?C.grn:p>=50?C.org:C.red;
+  const F=(w,s,d)=>`${w} ${s}px ${d?'"Prompt","Noto Sans Thai"':'"Noto Sans Thai","Prompt"'},Tahoma,sans-serif`;
+  const L=PDF_M,RX=PDF_W-PDF_M,W=RX-L,BOT=PDF_H-PDF_M-16;
+  const pages=[];let ctx,y;
+  const newPage=()=>{const cv=document.createElement("canvas");cv.width=Math.round(PDF_W*S);cv.height=Math.round(PDF_H*S);ctx=cv.getContext("2d");ctx.scale(S,S);ctx.fillStyle="#fff";ctx.fillRect(0,0,PDF_W,PDF_H);pages.push(cv);y=PDF_M};
+  const IS=typeof Intl!=="undefined"&&Intl.Segmenter;
+  const wseg=IS?new Intl.Segmenter("th",{granularity:"word"}):null,gseg=IS?new Intl.Segmenter("th",{granularity:"grapheme"}):null;
+  const pieces=t=>wseg?[...wseg.segment(t)].map(s=>s.segment):t.split(/(\s+)/);
+  const graphemes=t=>gseg?[...gseg.segment(t)].map(s=>s.segment):[...t];
+  const wrap=(t,font,max)=>{ctx.font=font;const out=[];let line="";
+    for(const p of pieces(String(t))){
+      if(ctx.measureText(line+p).width<=max){line+=p;continue}
+      if(line.trim())out.push(line.trimEnd());line=p.trimStart();
+      while(line&&ctx.measureText(line).width>max){let a="";for(const g of graphemes(line)){if(a&&ctx.measureText(a+g).width>max)break;a+=g}out.push(a);line=line.slice(a.length)}
+    }
+    if(line.trim())out.push(line.trimEnd());return out.length?out:[""]};
+  const txt=(t,x,yy,font,color,align)=>{ctx.font=font;ctx.fillStyle=color;ctx.textAlign=align||"left";ctx.fillText(t,x,yy);ctx.textAlign="left"};
+  const ensure=h=>{if(y+h>BOT)newPage()};
+  const band=(h,bg)=>{if(bg){ctx.fillStyle=bg;ctx.fillRect(L-8,y,W+16,h)}};
+  const para=(t,o={})=>{const font=o.font||F(400,12.5),color=o.color||C.ink,lh=o.lh||19,nx=L+(o.indent||0),x=nx+(o.num!=null?22:0);
+    wrap(t,font,RX-x-(o.bg?6:0)).forEach((ln,i)=>{ensure(lh);band(lh,o.bg);if(i===0&&o.num!=null)txt(o.num+".",nx+18,y+lh-5,font,color,"right");txt(ln,x,y+lh-5,font,color);y+=lh})};
+  const pad=(h,bg)=>{ensure(h);band(h,bg);y+=h};
+  const label=(t,color,bg)=>{ensure(46);band(6,bg);y+=6;para(t,{font:F(600,12,true),color,bg,lh:20})};
+  const list=(arr,color,bg)=>arr.forEach((x,i)=>para(x,{num:i+1,color,bg}));
+  const heading=t=>{ensure(60);y+=10;ctx.fillStyle=C.blue;ctx.fillRect(L,y+3,4,19);txt(t,L+12,y+19,F(600,15.5,true),C.ink);y+=34};
+  newPage();
+  txt(`${REPORT_SUBJ} — รายงานผลซ้อม`,L,y+24,F(700,22,true),C.ink);y+=34;
+  para(`${R.a.setTitle} · ${R.a.modeLabel||""} · ${R.when}`,{color:C.mut});
+  y+=4;ctx.font=F(700,34,true);const sw=ctx.measureText(`${nfmt(R.G)} / ${R.M}`).width;
+  txt(`${nfmt(R.G)} / ${R.M}`,L,y+36,F(700,34,true),col(R.p));txt(`(${R.p}%)`,L+sw+10,y+36,F(400,14),C.mut);y+=50;
+  heading("คะแนนรายข้อ");
+  R.units.forEach((u,i)=>{const ls=wrap(`${i+1}. ${u.title}`,F(400,12.5),W-80);const h=ls.length*19+6;ensure(h);
+    ls.forEach((ln,j)=>txt(ln,L,y+15+j*19,F(400,12.5),C.ink));txt(`${nfmt(u.got)}/${u.max}`,RX,y+15,F(600,12.5,true),col(pct(u.got,u.max)),"right");
+    y+=h;ctx.fillStyle=C.line;ctx.fillRect(L,y-3,W,1)});
+  heading(`ข้อผิดและสิ่งที่ต้องจำ (${R.bad.length} ข้อ)`);
+  if(!R.bad.length)para("ได้เต็มทุกข้อ");
+  R.bad.forEach(u=>{
+    const ls=wrap(u.title,F(600,13.5,true),W-110),hh=ls.length*21+10;ensure(hh+70);
+    ctx.fillStyle=C.hbg;ctx.fillRect(L-8,y,W+16,hh);ls.forEach((ln,j)=>txt(ln,L+2,y+20+j*21,F(600,13.5,true),C.ink));
+    txt(`${nfmt(u.got)}/${u.max}${u.graded?"":" ยังไม่ตรวจ"}`,RX,y+20,F(600,13.5,true),col(pct(u.got,u.max)),"right");y+=hh;
+    if(u.said.length){label("ตอบไป",C.mut);list(u.said,C.mut)}
+    label("ที่พลาด",C.red);list(u.miss,C.ink);
+    if(u.fb.length){label("ความเห็นผู้ตรวจ",C.mut);list(u.fb,C.ink)}
+    if(u.keys.length){y+=6;label("ต้องจำ (เฉลย)",C.grn,C.gbg);list(u.keys,C.ink,C.gbg);pad(8,C.gbg)}
+    y+=18;
+  });
+  pages.forEach((cv,i)=>{const c=cv.getContext("2d");c.font=F(400,9.5);c.fillStyle="#8a96ad";c.textAlign="left";c.fillText(`${REPORT_SUBJ} · ${R.a.setTitle}`,L,PDF_H-PDF_M+12);c.textAlign="right";c.fillText(`${i+1} / ${pages.length}`,RX,PDF_H-PDF_M+12);c.textAlign="left"});
+  const imgs=[];for(const cv of pages){const b=await new Promise(r=>cv.toBlob(r,"image/jpeg",Q));if(!b)throw new Error("canvas");imgs.push(new Uint8Array(await b.arrayBuffer()))}
+  return pdfFromJpegs(imgs,pages[0].width,pages[0].height);
+}
+function pdfFromJpegs(imgs,w,h){
+  const enc=new TextEncoder(),parts=[],offs=[];let len=0;
+  const put=x=>{const b=typeof x==="string"?enc.encode(x):x;parts.push(b);len+=b.length};
+  const obj=(id,head,stream)=>{offs[id]=len;put(`${id} 0 obj\n${head}\n`);if(stream){put("stream\n");put(stream);put("\nendstream\n")}put("endobj\n")};
+  put("%PDF-1.4\n");put(new Uint8Array([37,226,227,207,211,10]));
+  const n=imgs.length,kids=imgs.map((_,i)=>`${3+3*i} 0 R`).join(" ");
+  obj(1,"<< /Type /Catalog /Pages 2 0 R >>");obj(2,`<< /Type /Pages /Kids [${kids}] /Count ${n} >>`);
+  imgs.forEach((img,i)=>{const p=3+3*i,c=p+1,im=p+2,cs=enc.encode("q 595.28 0 0 841.89 0 0 cm /Im0 Do Q");
+    obj(p,`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /XObject << /Im0 ${im} 0 R >> >> /Contents ${c} 0 R >>`);
+    obj(c,`<< /Length ${cs.length} >>`,cs);
+    obj(im,`<< /Type /XObject /Subtype /Image /Width ${w} /Height ${h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${img.length} >>`,img)});
+  const N=3+3*n,xref=len;let x=`xref\n0 ${N}\n0000000000 65535 f \n`;for(let i=1;i<N;i++)x+=String(offs[i]).padStart(10,"0")+" 00000 n \n";
+  put(x+`trailer\n<< /Size ${N} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`);
+  return new Blob(parts,{type:"application/pdf"});
+}
+async function blobB64(b){const u=new Uint8Array(await b.arrayBuffer());let s="";for(let i=0;i<u.length;i+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000));return btoa(s)}
+function renderReport(a,from){
+  repFrom=from||"home";repCur=a;stopClock();chrome(true);$("#clock").hidden=true;$("#homeBtn").hidden=true;
+  $("#where").textContent="Report · "+a.setTitle;
+  const R=buildReport(a),full=reportText(R,false),short=reportText(R,true),body=emailBody(R,MAIL_MAX),gbody=emailBody(R,GMAIL_MAX),cut=body!==short,gcut=gbody!==short;
+  const mailto=`mailto:${REPORT_TO}?subject=${encodeURIComponent(REPORT_SUBJ)}&body=${encodeURIComponent(body)}`;
+  const gm=`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(REPORT_TO)}&su=${encodeURIComponent(REPORT_SUBJ)}&body=${encodeURIComponent(gbody)}`;
+  $("#app").innerHTML=`<section class="sheet glass">
+   <div class="sheet-h"><span class="chip k-hx">Report</span><h2>${esc(a.setTitle)}</h2><span class="muted">${esc(a.modeLabel||"")} · ${esc(R.when)}</span></div>
+   <div style="display:flex;align-items:center;gap:12px"><div class="big">${nfmt(R.G)}<span class="muted" style="font-size:1.2rem"> / ${R.M}</span></div>${pill(R.p)}</div>
+   <div class="rep-send"><div class="muted" style="font-size:.9rem">ส่งไปที่ <b style="color:var(--ink)">${esc(REPORT_TO)}</b> · หัวข้อ “${esc(REPORT_SUBJ)}”</div>
+     <div class="acts" style="justify-content:flex-start">
+       ${mcp?`<button class="btn pri" id="repGmail">ส่งเข้า Gmail</button>`:""}
+       <span id="repAlt" style="display:${mcp?"none":"contents"}"><a class="btn ${mcp?"":"pri"}" href="${esc(mailto)}" target="_blank" rel="noopener">ส่งผ่านแอปเมล</a>
+       <a class="btn" href="${esc(gm)}" target="_blank" rel="noopener">เปิดใน Gmail เว็บ</a></span>
+       <button class="btn" id="repCopy">คัดลอกรายงานเต็ม</button>
+       <button class="btn" id="repDl" ${dl?"":"hidden"}>ดาวน์โหลด PDF</button>
+       <button class="btn" id="repBack">กลับ</button></div>
+     <p class="muted" id="repNote" style="font-size:.82rem;margin:.5em 0 0">${mcp?"กดครั้งเดียว ส่งรายงานเต็ม (คำตอบ ที่พลาด ความเห็นผู้ตรวจ และเฉลย) พร้อมไฟล์ PDF แนบ จาก Gmail ของคุณทันที · ครั้งแรก claude.ai จะถามให้อนุญาตหน้านี้ใช้ Gmail":`แอปเมลจะเปิดพร้อมผู้รับ หัวข้อ และเนื้อหา เหลือกดส่ง · รายงานเต็มที่มีคำตอบและความเห็นผู้ตรวจ ใช้ปุ่มคัดลอกหรือดาวน์โหลด${cut?" · ชุดนี้ยาวจึงตัดท้ายอีเมล":gcut?" · ปุ่ม Gmail เว็บส่งฉบับย่อ":""}`}</p>
+     <p class="fb" id="repStatus" role="status" hidden></p>
+     <textarea id="repTxt" class="rep-txt" readonly hidden aria-label="รายงานเต็มสำหรับคัดลอก">${esc(full)}</textarea></div>
+   <h3 class="sub">คะแนนรายข้อ</h3>
+   <ol class="rep-sc">${R.units.map(u=>`<li><div><span>${esc(u.title)}</span><span class="bar"><i style="width:${Math.max(pct(u.got,u.max),2)}%"></i></span><b>${nfmt(u.got)}/${u.max}</b></div></li>`).join("")}</ol>
+   <h3 class="sub">ข้อผิดและสิ่งที่ต้องจำ (${R.bad.length} ข้อ)</h3>
+   ${R.bad.length?R.bad.map(u=>`<div class="rep-u"><div class="rep-uh"><b>${esc(u.title)}</b>${pill(pct(u.got,u.max))}<span class="muted" style="font-size:.85rem">${nfmt(u.got)}/${u.max}${u.graded?"":" · ยังไม่ได้ให้คะแนน"}</span></div>
+     ${u.said.length?`<div class="lbl">ตอบไป</div><ol class="muted">${liList(u.said)}</ol>`:""}
+     <div class="lbl bad">ที่พลาด</div><ol>${liList(u.miss)}</ol>
+     ${u.fb.length?`<div class="lbl">ความเห็นผู้ตรวจ</div><ol>${liList(u.fb)}</ol>`:""}
+     ${u.keys.length?`<div class="rep-key"><div class="lbl">ต้องจำ (เฉลย)</div><ol>${liList(u.keys)}</ol></div>`:""}</div>`).join(""):`<p class="muted">ได้เต็มทุกข้อ</p>`}
+  </section>`;
+  let pdfP=null;const getPdf=()=>pdfP||(pdfP=reportPdf(R).catch(e=>{pdfP=null;throw e}));
+  const gb=$("#repGmail");if(gb)gb.onclick=async()=>{
+    const st=$("#repStatus"),say=(t,ok)=>{st.textContent=t;st.style.color=ok?"var(--green)":"var(--red)";st.hidden=false};
+    gb.disabled=true;st.hidden=true;
+    const fname=pdfName(a,R),INLINE_MAX=700*1024;let blob=null,att=null,pnote="";
+    try{gb.textContent="กำลังสร้าง PDF…";blob=await getPdf();
+      const lt=await mcp.listTools().catch(()=>null);
+      if(lt&&lt.fileArgs)att={filename:fname,mimeType:"application/pdf",content:{$file:{data:blob,name:"report.pdf",type:"application/pdf"}}};
+      else{const small=blob.size<=INLINE_MAX?blob:await reportPdf(R,1,0.6);
+        if(small.size<=INLINE_MAX)att={filename:fname,mimeType:"application/pdf",content:await blobB64(small)};
+        else pnote="PDF ใหญ่เกินจะแนบจากหน้านี้ กดดาวน์โหลด PDF แทน"}
+    }catch(e){pnote="สร้าง PDF ไม่สำเร็จ จึงส่งเฉพาะเนื้อหาอีเมล"}
+    const send=atts=>mcp.callTool("Gmail","send_message",Object.assign({to:[REPORT_TO],subject:REPORT_SUBJ,body:full,htmlBody:reportEmailHtml(R)},atts?{attachments:atts}:{}));
+    gb.textContent="กำลังส่ง…";
+    try{
+      try{await send(att?[att]:null)}
+      catch(e){const c=e&&e.code; // these codes mean the call never reached Gmail, so a resend cannot double-send
+        if(att&&att.content&&att.content.$file&&["bad_request","capability_disabled","transform_error"].includes(c)){
+          const small=blob.size<=INLINE_MAX?blob:await reportPdf(R,1,0.6).catch(()=>blob);
+          if(small.size<=INLINE_MAX){att.content=await blobB64(small);await send([att])}
+          else{att=null;pnote="แนบ PDF จากหน้านี้ไม่ได้ กดดาวน์โหลด PDF แทน";await send(null)}
+        }else throw e}
+      gb.textContent="ส่งอีกครั้ง";gb.classList.remove("pri");
+      say(`ส่งไปที่ ${REPORT_TO} แล้ว${att?" พร้อมไฟล์ PDF":""} เวลา ${new Date().toLocaleTimeString("th-TH",{hour:"2-digit",minute:"2-digit",timeZone:"Asia/Bangkok"})} น.${pnote?" · "+pnote:""}`,true);
+    }catch(e){
+      const c=e&&e.code;gb.textContent="ส่งเข้า Gmail";
+      say(GMAIL_ERR[c]||(c==="tool_error"?"Gmail ตอบว่าส่งไม่สำเร็จ"+(e.message?": "+String(e.message).slice(0,160):""):"ส่งผ่าน Gmail จากหน้านี้ไม่ได้ ใช้ปุ่มส่งผ่านแอปเมลแทน"),false);
+      $("#repAlt").style.display="contents";
+    }
+    gb.disabled=false;
+  };
+  $("#repCopy").onclick=async()=>{try{await navigator.clipboard.writeText(full);toast("คัดลอกแล้ว วางในอีเมลได้เลย")}catch(e){const t=$("#repTxt");t.hidden=false;t.focus();t.select();toast("คัดลอกจากกล่องข้อความด้านล่าง")}};
+  const db2=$("#repDl");db2.onclick=async()=>{if(!dl)return;
+    let blob;db2.disabled=true;db2.textContent="กำลังสร้าง PDF…";
+    try{blob=await getPdf()}catch(e){toast("สร้าง PDF ไม่สำเร็จ ใช้ปุ่มคัดลอกแทน");db2.disabled=false;db2.textContent="ดาวน์โหลด PDF";return}
+    db2.textContent="ดาวน์โหลด PDF";db2.disabled=false;
+    try{await dl.save({filename:pdfName(a,R),data:blob});toast("บันทึก PDF แล้ว")}
+    catch(e){const c=e&&e.code;if(c==="declined")return;if(c==="rate_limited"){toast("มีหน้าต่างบันทึกเปิดอยู่ รอสักครู่");return}toast("บันทึกไฟล์ในหน้านี้ไม่ได้ ใช้ปุ่มคัดลอกแทน");db2.hidden=true}};
+  $("#repBack").onclick=()=>{if(repFrom==="results"&&run){$("#homeBtn").hidden=false;renderResults()}else renderHome(["home","sets","analyze","pat","hist"].includes(repFrom)?repFrom:"home")};
+  window.scrollTo(0,0);
+}
+
+/* ---------- save ---------- */
+let saveT=null,saving=false,pend=false;
+function queueSave(){clearTimeout(saveT);saveT=setTimeout(saveAttempt,1200)}
+async function saveAttempt(){
+  if(!db||!run)return; if(saving){pend=true;return} saving=true;
+  const U=itemsOf(run);let G=0,M=0;const byTag={};
+  U.forEach(u=>{const[g,m]=scoreOf(u);G+=g;M+=m;(u.tags||[]).forEach(t=>{byTag[t]=byTag[t]||[0,0];byTag[t][0]+=g;byTag[t][1]+=m})});
+  run.docId=run.docId||("att-"+run.set.id+"-"+Date.now());
+  const body={setId:run.set.id,setTitle:run.set.title,mode:run.mode,modeLabel:{full:"วันจริง",osce:"OSCE+SAQ",meq:"MEQ"}[run.mode]||run.mode,
+    startedAt:run.started,finishedAt:run.finished||new Date().toISOString(),score:+G.toFixed(1),max:M,byTag,
+    ans:run.ans,chat:run.chat,grade:run.grade,keys:run.queue.map(keyOf)};
+  try{await db.collection("data/users/"+uid).doc(run.docId).set(body);const i=ATT.findIndex(a=>a.id===run.docId);const row={id:run.docId,...body};i<0?ATT.push(row):ATT[i]=row}
+  catch(e){if(e&&e.code==="quota_exceeded")toast("พื้นที่เก็บผลเต็ม ลบผลเก่าบางชุดก่อน");}
+  saving=false;if(pend){pend=false;saveAttempt()}
+}
+</script>
+
+<!-- ถาม AI (ผู้ใช้ขอ 7 พ.ย. 2569) — ปุ่มลอยมุมขวาล่าง + ลากคลุมข้อความแล้วถามได้ทันที · ใช้ capability sample (Claude Sonnet)
+     ทั้งชุดอยู่ในบล็อกนี้ ไม่พึ่งโค้ดอื่นของหน้า · แขวนที่ <html> เพื่อไม่โดน zoom/transform ของ body -->
+<style id="aiw-style">
+:root{--aiw-bg:#ffffff;--aiw-sunk:#f1f3f2;--aiw-ink:#18201c;--aiw-ink2:#4a5550;--aiw-ink3:#7a857f;--aiw-rule:#d9dfdb;--aiw-acc:#2457c5;--aiw-acc-soft:#e8eefb;--aiw-on:#ffffff;--aiw-bad:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--aiw-bg:#15191b;--aiw-sunk:#1e2427;--aiw-ink:#e8ecea;--aiw-ink2:#b0bab5;--aiw-ink3:#83908a;--aiw-rule:#2c3438;--aiw-acc:#8fb0ff;--aiw-acc-soft:#1c2740;--aiw-on:#0b1220;--aiw-bad:#f2a49c}}
+:root[data-theme="dark"]{--aiw-bg:#15191b;--aiw-sunk:#1e2427;--aiw-ink:#e8ecea;--aiw-ink2:#b0bab5;--aiw-ink3:#83908a;--aiw-rule:#2c3438;--aiw-acc:#8fb0ff;--aiw-acc-soft:#1c2740;--aiw-on:#0b1220;--aiw-bad:#f2a49c}
+.aiw-fab,.aiw-sel,.aiw-panel,.aiw-panel *{box-sizing:border-box;font-family:"IBM Plex Sans Thai",-apple-system,"Helvetica Neue",Arial,sans-serif;letter-spacing:normal;text-transform:none}
+.aiw-fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:2147483000;font-size:14px;font-weight:700;line-height:1;color:var(--aiw-on);background:var(--aiw-acc);border:0;border-radius:999px;padding:12px 18px;cursor:pointer;box-shadow:0 8px 24px -8px rgba(0,0,0,.45)}
+.aiw-sel{position:fixed;z-index:2147483002;font-size:13px;font-weight:700;line-height:1;color:var(--aiw-on);background:var(--aiw-acc);border:0;border-radius:999px;padding:8px 13px;cursor:pointer;box-shadow:0 6px 18px -6px rgba(0,0,0,.5);white-space:nowrap}
+.aiw-fab[hidden],.aiw-sel[hidden],.aiw-panel[hidden],.aiw-quote[hidden],.aiw-quick[hidden]{display:none!important}
+.aiw-panel{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:2147483001;width:min(420px,calc(100vw - 32px));height:min(600px,calc(100vh - 100px));display:flex;flex-direction:column;background:var(--aiw-bg);color:var(--aiw-ink);border:1px solid var(--aiw-rule);border-radius:20px;box-shadow:0 18px 50px -18px rgba(0,0,0,.55);overflow:hidden;font-size:14.4px;line-height:1.6;text-align:left}
+@media (max-width:560px){.aiw-panel{right:8px;left:8px;width:auto;bottom:8px;height:min(78vh,620px)}}
+.aiw-hd{display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--aiw-rule);background:var(--aiw-sunk)}
+.aiw-hd b{font-size:14.5px;margin-right:auto;min-width:0}
+.aiw-ctx{display:block;font-size:11.5px;font-weight:500;color:var(--aiw-ink3);max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.aiw-hd button{font-size:12.5px;font-weight:600;color:var(--aiw-ink2);background:var(--aiw-bg);border:1px solid var(--aiw-rule);border-radius:999px;padding:4px 10px;cursor:pointer;white-space:nowrap;flex:none}
+.aiw-log{flex:1;min-height:0;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.aiw-m{max-width:92%;padding:9px 12px;border-radius:14px;overflow-wrap:anywhere}
+.aiw-m.u{align-self:flex-end;background:var(--aiw-acc-soft);border-bottom-right-radius:4px}
+.aiw-m.a{align-self:flex-start;background:var(--aiw-sunk);border-bottom-left-radius:4px}
+.aiw-m.err{color:var(--aiw-bad)}
+.aiw-m p{margin:0 0 6px}.aiw-m p:last-child{margin:0}.aiw-m ul{margin:4px 0;padding-left:20px}.aiw-m li{margin:2px 0}
+.aiw-m code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--aiw-bg);padding:0 4px;border-radius:4px}
+.aiw-q{margin:0 0 6px;padding:4px 9px;border-left:3px solid var(--aiw-acc);color:var(--aiw-ink2);font-size:13px;background:var(--aiw-bg);border-radius:0 8px 8px 0;white-space:pre-wrap}
+.aiw-dim{color:var(--aiw-ink3);font-size:13.5px;line-height:1.7}
+.aiw-quote{display:flex;gap:8px;align-items:flex-start;margin:0 14px;padding:7px 9px;border-left:3px solid var(--aiw-acc);background:var(--aiw-acc-soft);border-radius:0 8px 8px 0;font-size:12.8px;color:var(--aiw-ink2)}
+.aiw-quote span{flex:1;max-height:4.6em;overflow:hidden;white-space:pre-wrap}
+.aiw-quote button{border:0;background:transparent;color:var(--aiw-ink3);cursor:pointer;font-size:14px;line-height:1;padding:0 2px}
+.aiw-quick{display:flex;gap:6px;flex-wrap:wrap;padding:8px 14px 0}
+.aiw-quick button{font-size:12.5px;font-weight:600;color:var(--aiw-acc);background:var(--aiw-bg);border:1px solid var(--aiw-acc);border-radius:999px;padding:4px 10px;cursor:pointer}
+.aiw-in{display:flex;gap:8px;padding:10px 14px 12px;align-items:flex-end}
+.aiw-in textarea{flex:1;min-height:42px;max-height:140px;font-size:14.5px;line-height:1.5;color:var(--aiw-ink);background:var(--aiw-bg);border:1px solid var(--aiw-rule);padding:9px 11px;border-radius:12px;resize:none;margin:0}
+.aiw-in button{font-size:14px;font-weight:700;line-height:1;border:0;border-radius:12px;padding:12px 14px;cursor:pointer;background:var(--aiw-acc);color:var(--aiw-on)}
+.aiw-in button.stop{background:var(--aiw-sunk);color:var(--aiw-ink);border:1px solid var(--aiw-rule)}
+.aiw-note{font-size:11.5px;color:var(--aiw-ink3);padding:0 14px 10px}
+@media print{.aiw-fab,.aiw-sel,.aiw-panel{display:none!important}}
+</style>
+<script id="aiw-script">
+(function(){
+  "use strict";
+  if(window.__aiw)return;window.__aiw=1;
+  var MODEL="claude-sonnet-5-5",PAGE=(document.title||"หน้านี้").trim();
+  var AI={sample:null,turns:[],ctl:null,quote:"",open:false},root=document.documentElement,el={};
+  function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function inl(t){return esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<strong>$1</strong>").replace(/`([^`\n]+)`/g,"<code>$1</code>").replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g,"$1<em>$2</em>");}
+  function md(t){
+    var out=[],list=null,para=[];
+    function fp(){if(para.length){out.push("<p>"+para.join("<br>")+"</p>");para=[];}}
+    function fl(){if(list){out.push("<ul>"+list.join("")+"</ul>");list=null;}}
+    String(t||"").replace(/\r/g,"").split("\n").forEach(function(L){
+      var m=/^\s*(?:[-*•]|\d+[.)])\s+(.*)$/.exec(L);
+      if(m){fp();(list=list||[]).push("<li>"+inl(m[1])+"</li>");return;}
+      if(!L.trim()){fp();fl();return;}
+      fl();para.push(inl(L.replace(/^\s*#{1,6}\s+/,"").replace(/^\s*>\s?/,"")));
+    });
+    fp();fl();return out.join("");
+  }
+  function mk(tag,cls,html){var x=document.createElement(tag);if(cls)x.className=cls;if(html!=null)x.innerHTML=html;return x;}
+  el.fab=mk("button","aiw-fab","ถาม AI");el.fab.type="button";el.fab.hidden=true;el.fab.title="ถาม Claude เรื่องที่กำลังอ่าน";
+  el.sel=mk("button","aiw-sel","ถาม AI ↗");el.sel.type="button";el.sel.hidden=true;
+  el.panel=mk("div","aiw-panel");el.panel.hidden=true;el.panel.setAttribute("role","dialog");el.panel.setAttribute("aria-label","ถาม AI");
+  el.panel.innerHTML="<div class='aiw-hd'><b>ถาม AI<span class='aiw-ctx'></span></b><button type='button' data-aiw='clear'>ล้างแชท</button><button type='button' data-aiw='close'>ปิด</button></div>"+
+    "<div class='aiw-log' aria-live='polite'></div><div class='aiw-quote' hidden><span></span><button type='button' data-aiw='unquote' aria-label='เอาข้อความที่เลือกออก'>×</button></div>"+
+    "<div class='aiw-quick' hidden><button type='button' data-aiq='อธิบายตรงนี้ให้เข้าใจง่าย ๆ'>อธิบาย</button><button type='button' data-aiq='ทำไมถึงเป็นแบบนี้ (กลไก)'>ทำไม</button><button type='button' data-aiq='ขอเคสตัวอย่างสั้น ๆ ที่ข้อสอบชอบออก'>เคสข้อสอบ</button><button type='button' data-aiq='มีวิธีจำง่าย ๆ ไหม'>วิธีจำ</button></div>"+
+    "<div class='aiw-in'><textarea rows='1' placeholder='พิมพ์คำถาม… (Enter ส่ง)'></textarea><button type='button' data-aiw='send'>ส่ง</button></div>"+
+    "<div class='aiw-note'>ตอบโดย Claude (Sonnet) จากบัญชีของคุณ · อิงสิ่งที่อยู่บนจอ ตรวจกับตำราก่อนใช้จริง</div>";
+  function mount(){[el.fab,el.sel,el.panel].forEach(function(x){root.appendChild(x);});}
+  mount();
+  var log=el.panel.querySelector(".aiw-log"),ta=el.panel.querySelector("textarea"),sendB=el.panel.querySelector("[data-aiw='send']"),
+      qBox=el.panel.querySelector(".aiw-quote"),quick=el.panel.querySelector(".aiw-quick"),ctxEl=el.panel.querySelector(".aiw-ctx");
+  var ERR={not_granted:"ไม่ได้อนุญาตให้หน้านี้ใช้ Claude",sampling_disabled:"บัญชีนี้ใช้ Claude จากหน้านี้ไม่ได้",not_declared:"หน้านี้ยังไม่ได้เปิดสิทธิ์ใช้ Claude",
+    capability_disabled:"ใช้ Claude ในหน้านี้ไม่ได้ตอนนี้",capability_removed:"แอปที่เปิดอยู่ยังไม่รองรับ",rate_limited:"ถามถี่เกินไปหรือโควตาเต็ม ลองใหม่อีกสักพัก",
+    session_expired:"ต้องเข้าสู่ระบบใหม่",refused:"Claude ไม่ตอบคำถามนี้ ลองถามแบบอื่น",empty_completion:"ไม่ได้คำตอบ ลองถามให้สั้นลง",
+    prompt_too_large:"คำถามหรือข้อความที่เลือกยาวเกินไป",upstream_error:"เชื่อมต่อขัดข้อง กดส่งอีกครั้งได้"};
+  var OFF={not_granted:1,sampling_disabled:1,not_declared:1,capability_disabled:1,capability_removed:1};
+  function mine(n){return n&&(n===el.panel||n===el.sel||n===el.fab||el.panel.contains(n));}
+  /* บริบท = ข้อความที่อยู่บนจอตอนนี้ (บล็อกที่มองเห็น) ไม่เกิน ~6,000 ตัว */
+  function screenText(){
+    var vh=root.clientHeight,seen=[],total=0,
+        nodes=document.body?document.body.querySelectorAll("h1,h2,h3,h4,h5,p,li,td,th,dt,dd,blockquote,figcaption,label,summary,pre,.stem,.q,.choice"):[];
+    for(var i=0;i<nodes.length&&total<6000;i++){
+      var n=nodes[i];if(mine(n))continue;
+      if(n.parentElement&&n.parentElement.closest("li,td,th,p,blockquote,dd,pre")&&n.parentElement.closest("li,td,th,p,blockquote,dd,pre")!==n)continue;
+      var r=n.getBoundingClientRect();if(r.bottom<0||r.top>vh||r.width<1||r.height<1)continue;
+      var t=String(n.innerText||"").replace(/\s+\n/g,"\n").replace(/[ \t]+/g," ").trim();if(!t)continue;
+      if(t.length>1500)t=t.slice(0,1500)+"…";
+      seen.push(t);total+=t.length;
+    }
+    return seen.join("\n");
+  }
+  function heading(){
+    var hs=document.body?document.body.querySelectorAll("h1,h2,h3"):[],best="";
+    for(var i=0;i<hs.length;i++){if(mine(hs[i]))continue;var r=hs[i].getBoundingClientRect();if(r.height<1)continue;if(r.top<root.clientHeight*0.6)best=String(hs[i].innerText||"").trim();}
+    return best.slice(0,120);
+  }
+  function rules(scr,hd){
+    return "คุณเป็นติวเตอร์อายุรศาสตร์ของนักศึกษาแพทย์ปี 4 (MED421/422) ที่กำลังใช้หน้าเว็บ \""+PAGE+"\"\n"+
+      "- ตอบภาษาไทย กระชับ ตรงคำถาม ใช้ศัพท์แพทย์ภาษาอังกฤษตามที่ใช้จริง\n"+
+      "- อิงข้อความบนจอด้านล่างก่อน ถ้าต้องใช้ความรู้นอกจากนั้นให้บอกว่าเป็นความรู้ทั่วไป ห้ามแต่งตัวเลข ขนาดยา หรือเกณฑ์ที่ไม่แน่ใจ\n"+
+      "- จัดรูปแบบง่าย ๆ: **ตัวหนา** กับคำสำคัญ, รายการขึ้นต้นด้วย \"- \", ย่อหน้าสั้น ไม่ใช้หัวเรื่อง # และไม่ใช้ตาราง\n"+
+      "- ถ้าผู้ใช้ยกข้อความมา (บรรทัดที่ขึ้นต้นด้วย >) ให้อธิบายข้อความนั้นในบริบทของหน้า\n\n"+
+      (hd?"หัวข้อที่เปิดอยู่: "+hd+"\n\n":"")+"ข้อความบนจอตอนกดถาม:\n"+(scr||"(ไม่มี)");
+  }
+  function bubble(cls,html){var b=mk("div","aiw-m "+cls,html);log.appendChild(b);log.scrollTop=log.scrollHeight;return b;}
+  function empty(){if(!log.children.length)log.innerHTML="<div class='aiw-dim'>ถามอะไรก็ได้เกี่ยวกับสิ่งที่อยู่บนจอ<br>หรือ <b>ลากคลุมข้อความ</b> แล้วกดปุ่ม <b>ถาม AI ↗</b> ที่ขึ้นมา</div>";}
+  function setQuote(t){AI.quote=String(t||"").replace(/\s+\n/g,"\n").trim().slice(0,1500);qBox.hidden=!AI.quote;quick.hidden=!AI.quote;qBox.querySelector("span").textContent=AI.quote;}
+  var snap="",snapHd="";
+  function openPanel(){
+    snap=screenText();snapHd=heading();          /* จับข้อความบนจอก่อนแผงบังเนื้อหา */
+    AI.open=true;el.panel.hidden=false;el.fab.hidden=true;el.sel.hidden=true;
+    ctxEl.textContent=snapHd||PAGE;empty();setTimeout(function(){try{ta.focus();}catch(e){}},30);
+  }
+  function closePanel(){AI.open=false;el.panel.hidden=true;el.fab.hidden=!AI.sample;}
+  function busy(on){sendB.textContent=on?"หยุด":"ส่ง";sendB.classList.toggle("stop",on);}
+  function send(text){
+    if(AI.ctl){AI.ctl.abort();return;}
+    text=String(text==null?ta.value:text).trim();
+    if(!text&&!AI.quote)return;
+    if(!text)text="อธิบายตรงนี้ให้เข้าใจง่าย ๆ";
+    var q=AI.quote,content=(q?q.split("\n").map(function(x){return "> "+x;}).join("\n")+"\n\n":"")+text;
+    var d=log.querySelector(".aiw-dim");if(d&&d.parentNode===log)d.remove();
+    bubble("u",(q?"<div class='aiw-q'>"+esc(q)+"</div>":"")+esc(text).replace(/\n/g,"<br>"));
+    ta.value="";ta.style.height="";setQuote("");
+    AI.turns.push({role:"user",content:content});
+    while(AI.turns.length>12)AI.turns.splice(0,2);
+    var msgs=[{role:"user",content:rules(snap,snapHd)},{role:"assistant",content:"รับทราบ พร้อมตอบ"}].concat(AI.turns);
+    var out=bubble("a","<span class='aiw-dim'>กำลังคิด…</span>"),ctl=new AbortController();AI.ctl=ctl;busy(true);
+    AI.sample(msgs,{model:MODEL,modelTier:"default",cache:false,signal:ctl.signal,
+      onText:function(u){out.innerHTML=md(u.text);log.scrollTop=log.scrollHeight;}}).then(function(r){
+      out.innerHTML=md(r.text)+(r.truncated?"<p class='aiw-dim'>(คำตอบถูกตัด ลองถามให้แคบลง)</p>":"");
+      AI.turns.push({role:"assistant",content:r.text});
+    },function(e){
+      var c=e&&e.code,keep=e&&e.text;AI.turns.pop();
+      if(c==="cancelled"){out.innerHTML=keep?md(keep)+"<p class='aiw-dim'>(หยุดแล้ว)</p>":"<span class='aiw-dim'>หยุดแล้ว</span>";return;}
+      out.classList.add("err");out.innerHTML=(keep&&c!=="refused"?md(keep):"")+"<p>"+esc(ERR[c]||ERR.upstream_error)+"</p>";
+      if(OFF[c]){AI.sample=null;el.fab.hidden=true;el.sel.hidden=true;}
+    }).then(function(){if(AI.ctl===ctl)AI.ctl=null;busy(false);log.scrollTop=log.scrollHeight;});
+  }
+  /* ลากคลุมข้อความ → ปุ่ม "ถาม AI ↗" */
+  var selT=null;
+  function selText(){
+    var s=window.getSelection&&window.getSelection();if(!s||s.isCollapsed||!s.rangeCount)return null;
+    var r=s.getRangeAt(0),c=r.commonAncestorContainer;if(c&&c.nodeType!==1)c=c.parentNode;
+    if(!c||mine(c)||(c.closest&&c.closest("input,textarea,[contenteditable='true']")))return null;
+    var t=String(s.toString()||"").trim();if(t.length<2)return null;
+    return {t:t,r:r};
+  }
+  function placeSel(){
+    selT=null;if(!AI.sample){el.sel.hidden=true;return;}
+    var x=selText();if(!x){el.sel.hidden=true;return;}
+    var rs=x.r.getClientRects(),b=rs.length?rs[rs.length-1]:x.r.getBoundingClientRect();
+    el.sel.hidden=false;
+    var w=el.sel.offsetWidth,h=el.sel.offsetHeight,vw=root.clientWidth,vh=root.clientHeight;
+    var left=Math.max(8,Math.min(b.right-w/2,vw-w-8)),top=b.bottom+8;
+    if(top+h>vh-8)top=b.top-h-8;
+    top=Math.max(8,Math.min(top,vh-h-8));
+    el.sel.style.left=left+"px";el.sel.style.top=top+"px";
+  }
+  document.addEventListener("selectionchange",function(){clearTimeout(selT);selT=setTimeout(placeSel,220);});
+  window.addEventListener("scroll",function(){if(!el.sel.hidden)placeSel();},{passive:true,capture:true});
+  el.sel.addEventListener("mousedown",function(e){e.preventDefault();});
+  el.sel.addEventListener("click",function(){
+    var x=selText();if(!x)return;
+    setQuote(x.t);openPanel();
+    try{window.getSelection().removeAllRanges();}catch(e){}
+  });
+  el.fab.addEventListener("click",openPanel);
+  el.panel.addEventListener("click",function(e){
+    var b=e.target.closest&&e.target.closest("button");if(!b)return;
+    var a=b.getAttribute("data-aiw");
+    if(a==="close")closePanel();
+    else if(a==="clear"){if(AI.ctl)AI.ctl.abort();AI.turns=[];log.innerHTML="";setQuote("");empty();}
+    else if(a==="unquote")setQuote("");
+    else if(a==="send")send();
+    else if(b.hasAttribute("data-aiq"))send(b.getAttribute("data-aiq"));
+  });
+  /* กันปุ่มลัดของหน้า (เช่น ตัวเลือก A–E หรือ Space) ทำงานตอนพิมพ์ในแชท */
+  ["keydown","keyup","keypress"].forEach(function(t){el.panel.addEventListener(t,function(e){e.stopPropagation();});});
+  ta.addEventListener("keydown",function(e){
+    if(e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!AI.ctl)send();}
+    else if(e.key==="Escape")closePanel();
+  });
+  ta.addEventListener("input",function(){ta.style.height="auto";ta.style.height=Math.min(140,ta.scrollHeight)+"px";});
+  /* ถ้าหน้าเขียน <html> ใหม่ทั้งก้อน ให้แขวนกลับ */
+  if("MutationObserver" in window)new MutationObserver(function(){if(!root.contains(el.panel))mount();}).observe(root,{childList:true});
+  if(window.claude&&typeof window.claude.use==="function"){
+    window.claude.use("sample").then(function(s){if(!s)return;AI.sample=s;if(!AI.open)el.fab.hidden=false;}).catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>
