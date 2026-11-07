@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 14 ต.ค. 2569 · รอบที่ 7)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 7 พ.ย. 2569 · ล่าสุด learn v60 · Post-it v9)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -25,9 +25,9 @@ Claude รันอยู่บนเครื่องชั่วคราว�
 **2. จบงานหนึ่งก้อน → commit เข้า repo ทันที ไม่รอจบ session**
 
 ```bash
-cd /home/claude/ioioioio (หรือ /home/user/ioioioio แล้วแต่ container)
+cd /home/user/ioioioio
 git add -A && git commit -m "<สรุปสั้น ๆ ว่าทำอะไร>"
-git push -u origin <branch ที่ session นั้นได้รับมอบหมาย>
+git push -u origin claude/internal-med-learning-web-j9ca6l
 ```
 
 เกณฑ์ว่า "ก้อนหนึ่ง" คือ — สร้างคาบเรียนเสร็จ 1 คาบ · แกะเอกสารเสร็จ 1 ภาค · เขียนสคริปต์เสร็จ 1 ตัว
@@ -50,35 +50,9 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 
 ---
 
-> **เริ่ม session ใหม่:** ถ้า branch ที่ได้รับมอบหมายยังไม่มีงานล่าสุด ให้ `git fetch origin` แล้ว merge
-> `origin/claude/bold-euler-ok3iv7` (ล่าสุด 14 ต.ค. · Version 24) เข้ามาก่อนทำอะไร · ก่อน publish ให้ `Artifact list scope=files` เทียบขนาดไฟล์กับ
-> `artifact/data/` เสมอ ถ้าบนเว็บใหม่กว่า **ห้าม publish ทับ** ให้หา branch ที่ตรงกับเว็บแล้ว merge ก่อน
-> (รอบ 25 ก.ย. เกือบทับคาบ Extrapulmonary TB เพราะ branch ที่ใช้อยู่เก่ากว่าเว็บ)
-
-> 🧰 **Skill `med421-lecture`** (`.claude/skills/med421-lecture/SKILL.md`) — ขั้นตอนเต็มตั้งแต่รับไฟล์สไลด์จนขึ้นเว็บ ·
-> เครื่องมือ: `check_lecture.py` (ตรวจข้อมูล) · `check_render.py` (ไล่กดทุกหัวข้อบนเบราว์เซอร์) · `coverage.py` (คลัง Ward Drill, `--find`) ·
-> `compare_live.py` (เทียบเว็บกับ repo ก่อน publish) · `link_bank.py` (ผูกข้อคลัง)
->
-> ⚠️ **ปัญหาเก่าที่ `check_lecture.py` พบ (5 ต.ค. · ยังไม่แก้ รอผู้ใช้ตัดสินใจ)**
-> - **`**` ค้างบนจอ 127 จุด** — ตัวหนาคร่อมการขึ้นบรรทัดในย่อหน้า: neuro 21/10 (74 · เห็นบนจอใน 9 หัวข้อ) · air 33 (14) · air 08 (12) · nephro 05 (8) · air 23 (7) · cardio 04 (5) · cardio 10 (3) · neuro 07 (2) · chest 26 (1) · endo 14 (1 — `HLA DQB1*02`)
->   แก้ได้โดยไม่กระทบความคืบหน้าของผู้ใช้ (แก้แค่ข้อความ)
-> - ✅ (13 ต.ค.) MEQ vignette / OSCE instruction เปลี่ยนเป็น render ด้วย `md()` แล้ว — 25 ข้อที่เคยโชว์ `**` และตารางดิบ แสดงถูกแล้ว
-> - **คำตอบกระจุก** — chest 23/9 (B/C เท่านั้น) · neuro 21/10 (A 25/30) · cardio 13 · neuro 23/9, 15/10, 9/10 · air 23
->   การสลับตำแหน่งคำตอบของข้อที่ขึ้นเว็บแล้วจะทำให้คำตอบที่ผู้ใช้เคยทำ (เก็บเป็น index) ผิด → ต้องถามผู้ใช้ก่อน
-
 ## 1. ตัวงานหลัก
 
-**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน **Version 24** · มี **9 ชุดวิชา** · 31 คาบ · capability `db` + `user`)
-
-> 🖼️ **ภาพประกอบ SVG (เพิ่ม 13 ต.ค. · ผู้ใช้ขอ "อธิบาย pathophysiology ของอาการเฉพาะโรค + เน้นภาพ")** — section มีฟิลด์ `figs` และบรรทัด `[[fig:key]]` ใน `md`
-> ตัวช่วยวาด `artifact/tools/svg.py` · ดูภาพก่อนใส่ `preview_figs.py` · `check_render.py <set> <lec> --shots <dir>` ถ่ายทุกภาพทั้งสองโหมด · กฎอยู่ใน SKILL §3b
-> คาบที่มีภาพแล้ว: nephro 14 (19 ภาพ) · nephro 30 (20) · nephro Imaging (24) · hemonc 12/10 (17) · endo 14/10 (22) — คาบเก่า 26 คาบยังไม่มีภาพ (เติมได้ถ้าผู้ใช้ขอ)
->
-> 👤 **Version 22–23 มาจาก session dashboard (`claude/intelligent-brown-xj38me`)**: v22 บันทึกความคืบหน้าในบัญชี (`patch_learn_sync.py` · capability `db`+`user` — **ห้าม publish โดยส่ง `capabilities` ที่ไม่มีสองตัวนี้**) · v23 แท็บ "คาบเรียน" (`patch_learn_lectures.py`)
-> repo ซิงก์ `artifact/index.html` กับหน้าเว็บ v23 แล้ว (commit 53491e2) — แก้หน้าเว็บต่อจากไฟล์นี้ได้เลย
->
-> 🔗 **index.html บนเว็บมีโค้ด deep link** (`#<ชุด>-<คาบ>` จาก Lecture Dashboard · `patch_deeplinks.py` ใน branch `claude/intelligent-brown-xj38me`) — รวมเข้า repo แล้ว (Version 21)
-> `compare_live.py` เทียบ index.html ด้วยแล้ว (ถอด wrapper ของบริการ) → **ต้อง read `index.html` มาเทียบทุกครั้งก่อน publish index.html**
+**artifact:** `MED421 learn` — https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (ปัจจุบัน — ดูเลขล่าสุดจาก Artifact action:list เสมอ)
 เป็นเว็บเรียนเนื้อหา + คลังข้อสอบ MCQ/MEQ/OSCE สำหรับรอบ Internal Medicine
 (MED421/422 · 14 ก.ย. – 22 พ.ย. 2569 · รพ.ราชวิถี · สอบลงกอง 17–18 พ.ย.)
 
@@ -91,23 +65,18 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 ## 2. ที่อยู่ไฟล์
 
 ```
-/home/user/ioioioio/          ← repo · ฉบับล่าสุดอยู่ที่ claude/add-today-blougl = claude/keen-brahmagupta-nqy0my (commit เดียวกัน)
+/home/user/ioioioio/          ← repo · สายหลัก claude/internal-med-learning-web-j9ca6l · งาน 5–7 พ.ย. ของอีก session อยู่ claude/add-today-blougl (ดูหัวข้อ 12)
 ├── artifact/                  ← ต้นฉบับ artifact (publish จากที่นี่)
 │   ├── index.html             ← หน้าเว็บ (43 KB)
 │   ├── README.md              ← วิธีเพิ่มคาบใหม่ + schema ย่อ
 │   ├── data/
 │   │   ├── index.json         ← รายชื่อชุดวิชา + ชื่อไฟล์ + จำนวนคาบ
 │   │   ├── nl.json            ← พจนานุกรม นล. 1,389 รหัส (472 KB)
-│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (4)
-│   │   ├── nephro.json (1)    neuro.json (5)
-│   │   ├── endo.json (2)
-│   │   └── id.json (1)        ← ชุดใหม่ 2 ต.ค. (build_sepsis.py สร้าง entry ใน index.json ให้เองถ้ายังไม่มี)
-│   └── tools/                 ← (14 ต.ค.) build_diabetes.py + figs_diabetes.py · (13 ต.ค.) build_glomerular.py + figs_glomerular.py · build_uti.py · build_renalimg.py · build_wbc.py ·
-│                                 svg.py (ตัวช่วยวาดภาพ) · preview_figs.py (ดูภาพก่อนใส่) ·
-│                                 build_acs.py · build_cns.py · build_epilepsy.py · build_eptb.py ·
-│                                 build_ihd.py · build_lp.py · build_mets.py · build_rfpleural.py ·
-│                                 build_thyroid.py · build_sepsis.py · map_nl.py · refactor.py ·
-│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish · นับแท็บจาก index.json เอง)
+│   │   ├── air.json (3 คาบ)   cardio.json (3)  chest.json (2)
+│   │   └── nephro.json (1)    neuro.json (5)
+│   └── tools/                 ← build_acs.py · build_cns.py · build_epilepsy.py ·
+│                                 build_ihd.py · build_lp.py · map_nl.py · refactor.py ·
+│                                 verify.py (ทดสอบด้วย Playwright — ต้องผ่านก่อน publish)
 ├── nl/                        ← งานแกะเกณฑ์ นล. (เสร็จแล้ว ไม่ต้องทำซ้ำ)
 │   ├── vis/056.txt–074.txt    ← ผลอ่านภาค ข. ด้วยสายตา
 │   ├── visA/010.txt–047.txt   ← ผลอ่านภาค ก. ด้วยสายตา + _scheme.md (โครงรหัส)
@@ -116,8 +85,6 @@ git push -u origin <branch ที่ session นั้นได้รับม�
 │   └── merge_full.py          ← รวมทั้งสองภาคเข้า artifact/data/nl.json + แก้รหัสผิด
 ├── refs/curriculum-topics-2569.md  ← หัวข้อตามหลักสูตรทางการ
 ├── slides/SOURCES.md          ← รายการไฟล์สไลด์ที่ได้รับและ Drive file id
-├── slides/eptb_notes.md       ← โน้ตอ่านสไลด์ Extrapulmonary TB ทีละหน้า (16 หน้า + ลายมือ)
-├── slides/rf_pleural_notes.md · thyroid_notes.md · sepsis_notes.md  ← โน้ตรอบ 2 ต.ค.
 └── (ของเดิมคนละสาย: drill.html · learn.html · build.py · data/ · export/)
 ```
 
@@ -151,53 +118,91 @@ item:    { id, kind:"mcq"|"old", stem, choices[5], answer(0-4), explain,
 
 ---
 
-## 4. คาบที่ทำเสร็จแล้ว 26 คาบ
+## 4. ความคืบหน้า — 10 ชุดวิชา · 40 คาบ · 500 หัวข้อ · ข้อสอบ 1,401 ข้อ (25 ต.ค.)
 
-| set | lec | เรื่อง |
-|---|---|---|
-| air | 08 | Allergy and clinical immunology |
-| air | 23 | Approach to arthritis / crystal and infective |
-| air | 33 | Connective tissue disease, vasculitis (18 หัวข้อ — เติมส่วนที่ขาดจากสไลด์ อ.พรรณนิภา ครบแล้ว) |
-| cardio | 04 | Inflammatory MyoPericardial Syndrome (IMPS) |
-| cardio | 10 | Circulatory Shock |
-| cardio | 13 | Ischemic heart disease (CCS→STEMI) ← อ.สุรพันธ์ · พฤ. 24 ก.ย. (เดิมใช้เลข 24/9 — เปลี่ยนเป็นเลขคาบจริงจากคลัง Ward Drill แล้ว · ผูกคลังคาบ 13 ครบ 32 ข้อ ด้วย `tools/link_ihd_bank.py`) |
-| cardio | 24 | Atrial fibrillation ← อ.อภิชัย · จ. 5 ต.ค. (11 หัวข้อ · 20 MCQ ใหม่ + คลังคาบ 24 ครบ 21 ข้อ · MEQ AF RVR + warfarin · OSCE counselling warfarin) |
-| cardio | 27 | Valvular heart disease + Acute rheumatic fever ← พ.ญ.ชนัญญา · อ. 6 ต.ค. (13 หัวข้อ · 18 MCQ ใหม่ + คลังคาบ 27 ครบ 31 ข้อ · MEQ ARF ใหม่ + C-MEQ-02 · OSCE C-OSCE-04) — **ผู้ใช้ขอให้อัปเดตตามแนวทางล่าสุด**: ESC/EACTS 2025 (VHD) · WHO 2024 + Jones 2015 (ARF) · ESC 2023 + Duke-ISCVID 2023 (IE — ไม่อยู่ในสไลด์ แต่มีในคลัง 7 ข้อ) · ลายมือบนสไลด์อ่านไม่ได้ |
-| chest | 03 | Pulmonary tuberculosis |
-| chest | 26 | Arterial blood gas analysis |
-| chest | 23/9 | Extrapulmonary TB ← อ.ภาณุวัฒน์ (12 หัวข้อ · 33 MCQ · MEQ TB peritonitis · SAQ body fluid) |
-| chest | 17 | Respiratory failure + Pleural disease ← อ.สกล (12 หัวข้อ · 36 ข้อ รวมคลังคาบ 17 ครบ · CH-MEQ-03 · CH-OSCE-02/04) |
-| nephro | 05 | Fluid electrolyte: Divalent |
-| neuro | 07 | Acute ischemic stroke |
-| neuro | 23/9 | Epilepsy ← อ.พิมลพรรณ |
-| neuro | 15/10 | CNS infection + CSF ← อ.พิมลพรรณ |
-| neuro | 9/10 | หัตถการ LP + eye exam ← อ.พิมลพรรณ |
-| neuro | 21/10 | Acute confusional state + alteration of consciousness ← อ.พิมลพรรณ |
-| endo | 01 | Metabolic syndrome, Obesity, Dyslipidemia ← อ.นวพร (13 หัวข้อ · 35 MCQ · MEQ · OSCE ให้คำปรึกษาลดน้ำหนัก) |
-| endo | 14/10 | Diabetes mellitus (Inc. DKA) ← ศ.นพ.ชัยชาญ · พ. 14 ต.ค. (15 หัวข้อ · 31 MCQ + MOCK-124/188–192 · MEQ DKA รายแรกของ T1 · OSCE ตรวจเท้าเบาหวาน · **22 ภาพ**) — **สไลด์ไม่มี DKA/HHS/hypoglycemia** → หัวข้อ 7–9 อิง ADA 2024 consensus + ADA 2009 + ADA SoC · KDIGO 2022 DM-CKD · IWGDF 2023 · ไม่มีคลัง Ward Drill (ชุด Endo) |
-| endo | 14 | Thyroid disorders ← อ.ศิวกร (13 หัวข้อ · 26 MCQ · MEQ Graves · OSCE ตรวจคอ + counselling MMI) |
-| id | 25/9 | Septicemia and antibiotic usage ← อ.พจน์ (11 หัวข้อ · 20 MCQ · MEQ obstructive pyelonephritis · OSCE ชั่วโมงแรก) — **อิง SSC 2026 เพราะสไลด์เป็นภาพล้วน** |
-| id | 5/10 | AIDS and HIV infection ← พ.ญ.มนัสวี · จ. 5 ต.ค. (13 หัวข้อ · 27 MCQ · MEQ PCP/advanced HIV · OSCE pre-test counselling) — สไลด์ส่วนตาราง (WHO staging, สูตรยา, OI prophylaxis, crypto Rx) เป็นภาพ → อิงแนวทางไทย 2025/WHO และระบุในบทเรียน · ไม่มีข้อในคลัง Ward Drill |
-| gi | 12/10 | Acute and chronic hepatitis ← อ.เฉลิมรัฐ · จ. 12 ต.ค. (11 หัวข้อ · 14 MCQ + MOCK-149/153 · MEQ acute HBV · SAQ HBV serology) — WHO 2024/EASL 2025 HBV · AASLD–IDSA HCV · EASL 2024 MASLD |
-| gi | 27/10 | Approach to abdominal pain ← นพ.กิตติ · อ. 27 ต.ค. (11 หัวข้อ · 16 MCQ + MOCK-152/154–157/160/161 · MEQ gallstone pancreatitis · SAQ ปวดท้อง 6 ราย) — ACG 2024 AP · TG18 · ACG/CAG 2017 · Maastricht VI |
-| gi | 29/10 | Liver function tests ← นพ.กิตติ · พฤ. 29 ต.ค. (8 หัวข้อ · 15 MCQ + MOCK-035/150 · MEQ paracetamol · SAQ แปล LFT 5 ราย) — ACG 2017 · EASL 2024 PBC · AASLD 2022 Wilson |
-| hemonc | 12/10 | Approach to WBC disorder and lymphadenopathy ← อ.เบญจมาภรณ์ · จ. 12 ต.ค. (13 หัวข้อ · 32 MCQ + MOCK-044/056 · MEQ · SAQ อ่าน CBC · **17 ภาพ**) — สไลด์ 66 หน้าอ่านเป็นภาพรวมลายมือ · หัวข้อ 7 (acute leukemia/APL) แทบทั้งหมดเติมจาก Williams/WHO 2022/ELN 2022 · CML ELN 2020 · CLL iwCLL 2018 · Lugano 2014 |
-| nephro | 14 | Approach to glomerular disease ← พญ.ฉันทิศา · พฤ. 1 ต.ค. (13 หัวข้อ · 24 MCQ + คลังคาบ 14 ครบ 27 + คาบ 28 อีก 8 (proteinuria/lipiduria/LN) + Mock 166–168/172/176/177 · MEQ MN+RVT · SAQ แปล UA 5 ราย · **19 ภาพ**) — ภาพพยาธิ/KDIGO 2021 MN algorithm/LN class ในสไลด์เป็นภาพ → KDIGO 2021 · KDIGO 2025 IgAN · KDIGO 2024 LN/AAV |
-| nephro | 30 | Urinary tract infection ← อ.กรทิพย์ · ศ. 18 ก.ย. (13 หัวข้อ · 31 MCQ + คลังคาบ 30 ครบ 22 + N-OLD-087/N-MCQ-26/N-OLD-074 + MOCK-011/019/020 · MEQ · SAQ · **20 ภาพ**) — สไลด์ภาพล้วนบางหน้าอ่านไม่ได้ · กลไกอาการ/CFU/prostatitis/recurrent/EPN เติมจาก IDSA 2011/2019/2025, EAU 2025, AUA 2019 · CAUTI ≥10² (สไลด์) เทียบ ≥10³ (IDSA) แสดงทั้งคู่ |
-| nephro | Imaging | Essential renal imaging ← อ.ธนิศร (ไม่มีวันในปฏิทิน · ไม่ใช้เลข 19 เพราะคลังคาบ 19 = CKD) (14 หัวข้อ · 33 MCQ + คาบ 28: N-OLD-080–084, N-MCQ-27/28, N-OSCE-03 + MOCK-171/174/175/182 · MEQ · SAQ · **24 ภาพ**) — handout ไม่มีหน้าภาพ → หัวข้อ 5 (contrast/NSF), 7 (nuclear), 14 (ADPKD/mass) เติมทั้งหมดจาก ACR–NKF 2020/2021, ESUR 2018, KDIGO 2025 ADPKD, Bosniak |
-| hemonc | 2/11 | General oncology ← พญ.ปิยวรรณ · จ. 2 พ.ย. (13 หัวข้อ · 29 MCQ + Mock 16 ข้อ (MOCK-021–029, 031–034, 036–038) · MEQ breast cancer + oncologic emergencies · SAQ ยาต้านมะเร็ง + ภาวะฉุกเฉิน) — **หัวข้อ 9–13 (markers คัดกรอง มะเร็งที่พบบ่อย ภาวะฉุกเฉิน) เพิ่มเองตามคำขอผู้ใช้ "ทำไม่ครบ" เพราะไฟล์มี Common cancer แค่เต้านม** · MOCK-030 myeloma เก็บไว้ให้คาบโลหิตวิทยา — GLOBOCAN 2022 · ASCO irAE 2021 · USPSTF 2024 · CDK4/6 · สไลด์ระบาดวิทยาเป็นภาพ |
+**ตัวเลขนี้ล้าสมัยเร็วมาก** เพราะมีหลาย session ทำงานพร้อมกัน — ให้นับจากไฟล์จริงทุกครั้งที่กลับมาทำงาน
 
-> ⚠️ เลข `lec` แบบวันที่ (เช่น "23/9") เป็นตัวแทนชั่วคราว — **เลขคาบจริงดูได้จากฟิลด์ `lec` ใน `bank_merged.json`** (คลังเดียวกับ Ward Drill)
-> ถ้าคาบนั้นมีข้อในคลัง ให้ใช้เลขนั้นและผูกข้อด้วย `artifact/tools/link_bank.py` (ดูตัวอย่าง `link_ihd_bank.py` และท้าย `build_af.py`)
+```bash
+cd /home/user/ioioioio/artifact && python3 -c "
+import json
+idx=json.load(open('data/index.json'))
+for m in idx:
+    d=json.load(open(m['file']))
+    print('%-8s %-10s คาบ %2d · หัวข้อ %3d'%(m['set'],m['label'],len(d),
+          sum(len(l['sections']) for l in d)), [l['lec'] for l in d])
+"
+```
 
-**ส่งข้อจากบทเรียนเข้า Ward Drill** (14 ต.ค.) — `artifact/tools/drill_sync.py <checkout ของ claude/adoring-babbage-zkg8ih>` แล้ว `python3 build.py --no-pdf` ในนั้น
-- ข้อใหม่ 151 MCQ + 10 MEQ/OSCE: nephro 14 (24) · 30 (31) · **IMG** (33) · heme **H04** (32) · endo **E05** (31) — คงลำดับตัวเลือกของบทเรียน (`mcq_late` ใน config ไม่สลับ ไม่ดึงเลขสุ่ม → ข้อเดิมทุกข้อในคลังเหมือน live 100%)
-- แพตช์ template: ลิงก์ตรง `applyHash` (ของ live v11 จาก Lecture Dashboard) + โจทย์ MEQ/OSCE ที่มีตารางเรนเดอร์เป็นตาราง · เติม NL 67 รหัสใน refs ของ drill
-- ✅ **publish แล้ว Drill Version 12** (14 ต.ค. ผู้ใช้ยืนยัน) ที่ `Fdi5gcNXKqFLAXg4fQBV7X` · ไฟล์ข้อมูล drill ไม่ได้ commit ใน branch `adoring-babbage` → **ใครจะ build drill ใหม่จาก branch นั้น ต้องรัน `drill_sync.py` ก่อน publish** ไม่งั้นข้อพวกนี้และ applyHash จะหาย
+ชุดวิชาที่มี: air · cardio · chest · nephro · neuro · endo · id · gi · hemonc · **derm** (เพิ่ม 25 ต.ค.)
 
-**ความครอบคลุมคลัง Ward Drill** — ผูกเข้าบทเรียนแล้ว **392/570 ข้อ = 69% (13 ต.ค.)**: AIR 110/110 · Cardio 128/180 · Chest 64/106 · Nephro 90/174 (Mock 200 ข้อไม่ผูกคาบ — ผูกแล้ว 42 ข้อ) ·
-คาบในคลังที่ยังไม่มีบทเรียน: Cardio 36 Arrhythmia/EKG · 39 HT/HF · Chest 21 CXR/Occupational · 37 Pneumonia/Asthma/COPD · Nephro 19 CKD · 22 Dysnatremia/kalemia · 42 AKI ·
-คาบ 28 (UA) เหลือ 4 ข้อ: N-MCQ-25, N-OLD-072, N-OLD-073 (cast/AKI) และ N-OLD-077 (Fanconi) — เก็บไว้ให้คาบ AKI/UA
+> ⚠️ เลข `lec` แบบวันที่ ("24/9") เป็นตัวแทนชั่วคราว — ยังไม่มีไฟล์ "ตารางบรรยาย MED 421 ปี 2569"
+> ถ้าได้ไฟล์นั้นมาให้แก้เป็นเลขคาบจริง
+
+---
+
+## 4b. ⚠️ ปัญหาที่เจอซ้ำ — repo ตามหลัง artifact · และหลาย session ชนกัน
+
+ระหว่าง 20 ก.ย. ถึง 14 ต.ค. มี session อื่นทำงานเพิ่มอีก 17 คาบและเพิ่มความสามารถ
+**sync ความคืบหน้าขึ้นบัญชี (capabilities `db` + `user`)** แต่ **ไม่ได้ commit ลง repo เลย**
+`artifact/index.html` ในคลังจึงเก่าไป 19 KB และไม่มีไฟล์ `endo/id/gi/hemonc` อยู่เลย
+รอบนี้ดึงกลับมาครบแล้ว (commit `6afafc9`) แต่ย้ำกฎข้อ 2 ว่า **จบงานก้อนหนึ่งต้อง commit ทันที**
+ไม่ใช่ publish แล้วจบ เพราะ artifact ไม่ใช่ที่เก็บต้นฉบับ
+
+**ถ้าสงสัยว่า repo ตามหลังอยู่** ให้ตรวจก่อนเริ่มงานทุกครั้ง
+`Artifact action:list scope:files` เทียบขนาดไฟล์กับใน `artifact/` แล้วถ้าไม่ตรง
+ดึงกลับด้วย `Artifact action:read` + `paths:[...]` + `out_dir:/home/user/ioioioio/artifact`
+
+**มีหลาย session ทำงานบน artifact เดียวกันพร้อมกัน** — รอบ 14 ต.ค. ชนกัน 1 ครั้ง
+รอบ 25 ต.ค. ชนกัน **3 ครั้งติดใน 15 นาที** และงานถูกทำซ้ำ/ถูกทับจริง
+
+| รอบ | เกิดอะไร |
+|---|---|
+| 14 ต.ค. | ปุ่มซ่อนแถบ — อีก session ใส่ก่อน 2 นาที งานที่เขียนไว้ต้องทิ้ง |
+| 25 ต.ค. | ปิดตารางเพื่อทวน — อีก session ใส่ก่อน 4 นาที งานที่เขียนไว้ต้องทิ้งอีก |
+| 25 ต.ค. | แพตช์ที่แก้เพิ่มถูกทับหาย เพราะอีก session publish จากเวอร์ชันที่ยังไม่มีแพตช์นั้น |
+
+**วิธีทำงานที่ลดการชน**
+1. **ก่อนลงมือเขียนฟีเจอร์ ให้ดูก่อนว่ามีอยู่แล้วหรือยัง** — `grep` หาคำที่เกี่ยวข้องใน `index.html`
+   เวอร์ชันสด (เช่น `tq`, `cz`, `mastBtn`) ไม่ใช่ในไฟล์ repo ที่อาจเก่า
+2. **ถ้าฟีเจอร์มีอยู่แล้ว ห้ามเขียนทับด้วยของตัวเอง** ให้ทดสอบของเดิมก่อน แล้วแก้เฉพาะจุดที่พิสูจน์ได้ว่าพลาด
+3. **publish ให้เร็วที่สุดหลังแก้เสร็จ** ยิ่งถือไฟล์ไว้นานยิ่งชน
+4. ถ้าถูกปฏิเสธ ระบบจะเซฟไฟล์เวอร์ชันสดไว้ให้ที่ `/root/.claude/projects/.../tool-results/`
+   **ให้ copy ไฟล์นั้นมาแก้ทับ แล้ว publish ใหม่** ห้ามส่งไฟล์เดิมซ้ำ และห้ามประกอบจากความจำ
+
+
+**ฟีเจอร์ที่ session อื่นเพิ่มไว้ และยังไม่มีสคริปต์ build ใน repo**
+- หน้า **"คาบเรียน"** (`viewLectures` / `viewLecture`) + ลิงก์ตรงด้วย hash `#<ชุด>-<คาบ>`
+- **แผนภาพ SVG ในบทเรียน** — `[[fig:key]]` ใน `md` คู่กับ `section.figs`
+- **ปุ่มซ่อนเมนู** `#mastBtn` — จำสถานะใน localStorage คีย์ `med421-learn-mast`
+  (แยกจาก state หลัก `med421-learn-v1`)
+
+---
+
+## 4c. ⚠️ บทเรียนจากรอบ 25 ต.ค. — ชน session อื่นเป็นครั้งที่สอง
+
+09:28 ผู้ใช้คอมเมนต์ขอ "ปิดช่องในตารางให้เหลืออะไรไว้เดา" · **09:32 อีก session publish เสร็จ**
+session นี้ทำช้ากว่า → publish ถูกปฏิเสธ งานที่เขียนไปทิ้งทั้งหมด
+เป็นครั้งที่สองต่อจากปุ่มซ่อนเมนูเมื่อ 14 ต.ค.
+
+**กฎที่ได้** — คอมเมนต์ใหม่เข้ามา ก่อนเขียนโค้ดบรรทัดแรก
+1. `ArtifactComments action:read` ดูว่ามีใครตอบ thread นั้นไปแล้วหรือยัง
+2. ยังไม่มีใครตอบ → **ตอบจองไว้ก่อนว่ากำลังทำ** แล้วค่อยลงมือ
+   (session ที่ได้งานรอบนี้ตอบจอง 09:30 แล้ว publish 09:33)
+3. มีคนตอบแล้ว → **อย่าทำซ้ำ** ไปเขียนเทสต์คุมของเขาแทน ได้ประโยชน์กว่า
+
+### ฟีเจอร์เดียวถูกเขียนใหม่ 3 แบบในวันเดียว
+`.tblq/.tqh` (session นี้ ทิ้งไป) · `.tqbar/.tq/.cv` (ตัวที่ publish อยู่จริง) ·
+`.czbar/button.cz` (ตัวที่ commit ไว้ใน repo) — **สามตัวนี้ไม่ตรงกัน**
+
+ผลคือเทสต์ที่ผูกกับชื่อคลาสล้มทันทีที่อีก session เปลี่ยน implementation
+(เช็ค `main .czbar` ที่ commit ไว้ ล้มกับหน้าเว็บจริงที่ใช้ `.tqbar` ทั้งที่ฟีเจอร์ยังทำงานปกติ)
+**เทสต์ต้องตรวจพฤติกรรม ไม่ใช่ชื่อคลาส** — ตอนนี้รวมเหลือชุดเดียวที่ตรวจว่า
+ปิดแล้วอ่านไม่ได้จริง · ยังเหลือใบ้ · คอลัมน์แรกยังเป็นโจทย์ · ขนาดตารางไม่ขยับ ·
+แตะช่องเดียวเฉลยช่องเดียว — ผ่านทั้ง `.cz` และ `.tq`
+
+### เส้นทาง chromium เปลี่ยนตาม image
+`chromium-1194/chrome-linux` กลายเป็น `chromium-1243/chrome-linux64` → ห้ามฝังเส้นทาง ให้ `glob` หาเอง
+**playwright อยู่บน `python3.13` ไม่ใช่ `python3` (3.11)** → รันด้วย `python3.13 artifact/tools/verify.py`
 
 ---
 
@@ -245,36 +250,11 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - `B11.2.6` พิมพ์เป็น `11.2.6` ขาด B
 - หัวข้อ 2.2 เขียนว่า "49 รายการ" แต่เลขไล่ถึง 2.2.50
 
-ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย · ทุก build_*.py assert รหัสกับ nl.json ก่อนเขียน
-(รอบ 2 ต.ค. พบรหัสผิดในคลัง: `2.3.5-3(1)` = bipolar ถูกใส่ในข้อมะเร็งปอด → build_rfpleural.py ตัดทิ้ง)
+ตรวจแล้ว: รหัสที่ 13 คาบอ้างถึง 136 รหัส → พบในพจนานุกรมครบ 136 ไม่มีรหัสลอย
 
 ---
 
 ## 6. ไฟล์สไลด์ที่ได้รับแล้ว
-
-**รอบ 14 ต.ค. (โฟลเดอร์เดิม)** — ✅ v24 · 2026 Diabetes lecture Student (ศ.นพ.ชัยชาญ) `1FB1Oe9v_DWc46H1Y37gi7Gu1ZbPcWdtH` → endo 14/10 · โน้ต `slides/diabetes_notes.md` · ข้อความครบ ภาพ/กราฟอ่านไม่ได้
-
-**รอบ 13 ต.ค. (โฟลเดอร์เดิม `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` · ผู้ใช้เพิ่ม 4 ไฟล์)** — ✅ v21 · ทำพร้อมกันด้วย subagent 3 ตัวใน git worktree แล้ว merge
-- Lec11 Approach to glomerular disease (พญ.ฉันทิศา) `1R5f1MtTJIlwCUeomxvcBD10MKpDzYob4` → nephro 14 · โน้ต `slides/glomerular_notes.md` · ข้อความครบ ภาพอ่านไม่ได้
-- Lec5 UTI_4thRSU2026 (อ.กรทิพย์) `1OeevfDxn_c6H3iLUw6nXIjPOv6DPHawD` → nephro 30 · โน้ต `slides/uti_notes.md`
-- Lec19 Essential Renal Imaging handout (อ.ธนิศร) `1NHjoGyLcAer6GbmfEp9FEXBw4F_8xmAN` → nephro Imaging · โน้ต `slides/renalimg_notes.md`
-- Lec22 Approach to WBC disorder and lymphadenopathy (อ.เบญจมาภรณ์) `1VtpxDAfvwYkpJPIrqs19s7JoLJU-hA6V` → hemonc 12/10 · โน้ต `slides/wbc_notes.md` (ไฟล์นี้ดาวน์โหลดผ่าน public link ได้ → เรนเดอร์อ่านได้ครบ 66 หน้า)
-
-**รอบ 6 ต.ค. (โฟลเดอร์ Drive `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj`)** — ✅ v18 · ทั้ง 4 ไฟล์ดึงข้อความด้วย `read_file_content` ได้
-- Acute and chronic hepatitis (อ.เฉลิมรัฐ) `1X6QMVuq2GWT3SLbV9VactnQ11MVtml98` → gi 12/10 · โน้ต `slides/hepatitis_notes.md`
-- Approach to abdominal pain 65 (นพ.กิตติ) `10g5J-s6Zv5JZB3RbHs6dh2QWUR5Xzr5V` → gi 27/10 · โน้ต `slides/abdpain_notes.md`
-- Liver Function Tests 63 (นพ.กิตติ) `1HWt4TMmRmpgSw8lT_NIjt74YQ5LC-zJ3` → gi 29/10 · โน้ต `slides/lft_notes.md`
-- Lec 1 General Oncology (พญ.ปิยวรรณ) `1nzh5iBJ_uJ5uP9_q2zDlAxQ-Opw5xRJg` (19.5 MB) → hemonc 2/11 · โน้ต `slides/oncology_notes.md` · กราฟ GLOBOCAN 2012/มะเร็งไทยเป็นภาพ → ใช้ GLOBOCAN 2022 และระบุไว้
-
-**พ.ญ.ชนัญญา** — VHD + ARF ✅ Drive `1IVsvzRiGSfwCrfi6wcJt49fkwP4Zfzq2` · ข้อความครบ ลายมืออ่านไม่ได้ · โน้ต `slides/vhd_arf_notes.md`
-
-**พ.ญ.มนัสวี** — AIDS and HIV infection ✅ Drive `13PhGovTDoDXERCeB2zfMC1_1nZq2mAlJ` (25 MB) · ข้อความดึงได้เฉพาะสไลด์ตัวอักษร · โน้ต `slides/hiv_notes.md`
-
-**อ.อภิชัย ปกวัฒนา** — Atrial fibrillation (update 16 Nov 2025) ✅ Drive `1zK9eofxHl5ldCi-5IqIjyTStGVHYhlRO` · ดึงข้อความด้วย `read_file_content` ได้ครบ · โน้ต `slides/af_notes.md`
-
-**อ.ภาณุวัฒน์ (Panuwat Wongkulab)** — Extrapulmonary TB: The Hidden Pathogen (Apr 2026) ✅
-- ผู้ใช้อัปโหลดในแชทเป็น PDF ภาพล้วน 16 หน้า (ไม่อยู่ใน Drive) → อ่านด้วยสายตา โน้ตเต็มที่ `slides/eptb_notes.md`
-- ⚠️ ไฟล์ bank `CH-MCQ-20` และ `CH-OSCE-04` (pleural/ADA) ของคาบ 17 อ.สกล ยังว่าง — ตั้งใจไม่ใช้ในคาบ EPTB เพื่อเก็บไว้ให้คาบเยื่อหุ้มปอด
 
 **อ.พิมลพรรณ** (เจ้าของ paranee.k@rsu.ac.th) — ✅ **ใช้ครบทั้ง 4 ไฟล์แล้ว**
 - Epilepsy `1tWDtfQ-ZA-tDDR1_YgGkYgyS-4md6hQ5` ✅
@@ -288,24 +268,6 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 - NSTEMI 2020 `17iNJA1PvpedUAz8wyM4CzZBU1MAy1EdI`
 - STEMI2017 `1j-EtRG61awYlCMKRx-q9MKymdhYF2BAA`
 
-**อ.นวพร นภาทิวาอำนวย** (Diabetes & Metabolism) — ✅ ใช้แล้ว (ชุด Endo คาบ 01)
-- Lec 1 2026 MS, obesity, DLP Handout `1ttUNtkD5EXmVXVIhKuScn4Y6wOV9-yQe` (15 MB · อยู่ใน Drive ผู้ใช้เอง)
-  ⚠️ `read_file_content` ได้ข้อความถึงสไลด์ DLCN แล้วหยุด — ส่วนรักษา dyslipidemia ดึงไม่ได้
-  ดาวน์โหลดตรงก็ไม่ได้ (proxy 403) → หัวข้อ 11–13 ของคาบนี้ใช้ ESC/EAS 2019 แทนและระบุไว้ใน `nlGap`
-  ถ้าผู้ใช้ส่งภาพสไลด์ส่วนนั้นมา ให้เทียบแล้วแก้ `build_mets.py`
-
-**รอบ 2 ต.ค. (โฟลเดอร์ Drive "Claude" `1mft-8EhUVLSAXIwVX7zV6JmHoiaBPzsM` ของผู้ใช้)** — ✅ v14
-- Lec12 Respiratory failure, pleural disease `12_uIP-b1TWP-u35yfm90Q9PT5QTNgPvp` → chest คาบ **17** (ใช้เลขคาบตามคลังข้อสอบ ไม่ใช่ "Lec12")
-  ⚠️ ข้อความถูกตัดหลัง work up pleural effusion → Light's/empyema/malignant/การรักษา PTX ไม่ tension ใช้ BTS 2023
-- Lec14 Thyroid disorder_2026 `1iq1YOO-vf-JF3vL40p1ppCmu-1eHnII5` → endo คาบ **14**
-  ⚠️ ข้อความถูกตัดหลัง nodule algorithm → hypothyroid/amiodarone/Bethesda เทียบจาก artifact บทเรียน Thyroid ของผู้ใช้
-  (claude.ai/artifact/S9FmtzVewjtqtWxnuNQxRu — ทำจากสไลด์ชุดเดียวกันใน session อื่น) · thyroid storm ใช้ ATA/JTA 2016
-- Sepsis _ Principle ATB `10qgsfnxQl7wacVkNBSAF5SXe8Bx4vPDc` (175 MB **ภาพล้วน** · read_file_content ว่าง) → id คาบ 25/9
-  ใช้ SSC 2026 (ตรวจกับ sccm.org แล้ว) + artifact Sepsis ของผู้ใช้ (claude.ai/artifact/DB59ZbY5ize8MhxXiHkZJZ) · **ถ้าได้ภาพสไลด์มาให้แก้ build_sepsis.py**
-- Lec7 Epilepsy `1stF_hQlkx8nCxnE07W3lKHCBsT5alFhW` = สไลด์ชุดเดียวกับคาบ Epilepsy ที่ทำแล้ว (มีลายมือ) → ไม่สร้างซ้ำ
-- ผู้ใช้มี artifact บทเรียนแยกต่อหัวข้อใน "ห้องสมุดท่าอาจารย์" (claude.ai/artifact/QebhLmV2eKyzj3mkqstnjR) — ใช้เป็นแหล่งเทียบได้เมื่อสไลด์ดึงไม่ครบ
-- ตำแหน่งเฉลย: build ใหม่ทั้งสามสลับตัวเลือกแบบคงที่ด้วย random.Random(id) — คลังเดิม (CH-MCQ/CH-OLD) เฉลย ก. ทุกข้อ
-
 **เข้าไม่ถึง (น่าจะอยู่บัญชี @rsu.ac.th):**
 - UTI `1GG55VJ6ddTMQ2IETf1IqUpU_tMDizEH7`
 - Tropical disease `1ax8FzPhmAZ4iFSSsXGQcb5TGobcG4nn9` (ผู้ใช้สั่งข้าม Malaria ไปก่อน)
@@ -316,9 +278,137 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 7. งานที่ค้าง (เรียงตามลำดับที่ตกลงกันไว้)
 
-1. W1: ✅ UTI (v21) · Malaria (ผู้ใช้สั่งพัก)
-2. W2 เหลือ: Skin infections · Nephrotic/Nephritis — ✅ Extrapulmonary TB (v12) · ✅ Dyslipidemia/MetS/Obesity (v13) ·
-   ✅ Septicemia (v14 · อิง SSC 2026 รอภาพสไลด์จริง) · ✅ Pleural/Resp failure (v14) · ✅ Thyroid (v14)
+### ⏳ รอผู้ใช้ตัดสินใจ — class ของ early invasive ใน cardio-ihd-09
+
+หัวข้อ **"NSTE-ACS — แบ่งความเสี่ยงและเวลาที่ต้องสวนหลอดเลือด"** (`cardio.json` คาบ 13)
+เขียนว่า *"Early invasive strategy ภายใน 24 ชั่วโมง (**Class I A**)"*
+
+นั่นคือ **ESC 2020** — **ESC 2023 ลดเหลือ Class IIa A** (เปลี่ยน "is recommended" เป็น
+"should be considered") เกณฑ์ high-risk ทั้งสี่ข้อยังเหมือนเดิม รวม GRACE > 140
+ยืนยันจากบทความเทียบ 2020/2023 ใน J Clin Med — PMC11012418
+
+**ยังไม่แก้** เพราะคาบนี้สร้างจากสไลด์ อ.สุรพันธ์ (CAD complete 2019 · NSTEMI 2020 · STEMI 2017)
+ถ้าข้อสอบลงกองอิงสไลด์อาจารย์ การคงเลขเดิมอาจตรงกว่า — ถามผู้ใช้ไว้ในคอมเมนต์
+thread `0a0d34fd` แล้ว (26 ต.ค.) **รอคำตอบก่อนแก้**
+
+> Class I C ของ immediate invasive < 2 ชม. หาต้นฉบับยืนยันไม่ชัดพอ จึงไม่แตะ
+> ถ้าจะตรวจต่อ ให้ดู European Heart Journal doi:10.1093/eurheartj/ehad191 โดยตรง
+
+### 🔧 เครื่องมือใหม่ — `artifact/tools/verify_pin.py` (ตรวจเส้นทาง learn → post-it)
+
+ฟีเจอร์ "ปักตารางใน post-it" (5 พ.ย.) พาดสองหน้า คั่นด้วย URL hash `#t=<base64url JSON>`
+ถ้าพังจะพังเงียบ — ปุ่มกดได้ หน้าเปิดได้ แต่ไม่มีใบขึ้น หรือขึ้นเป็นภาษาต่างดาว
+เทสต์นี้วิ่งจริงทั้งเส้น: กดปุ่มในหน้า learn → ถอด base64 จาก href → เทียบกับตารางบนหน้าจริง
+→ เปิดหน้า post-it ด้วย hash นั้น → นับใบและเทียบเนื้อหาทีละใบ
+
+    python3.13 artifact/tools/verify_pin.py
+
+ตรวจ: จำนวนใบเท่าจำนวนแถวที่ใช้ได้ · หน้าใบมีคอลัมน์แรก · หลังใบมีคอลัมน์ที่เหลือครบ ·
+ภาษาไทยไม่เพี้ยนหลังถอด base64 · ปักซ้ำไม่ได้ใบเพิ่ม (กันซ้ำด้วย hash ของเนื้อหา) ·
+payload เสียต้องไม่สร้างใบ · ความยาว URL (เตือนเกิน 8,000 ตัวอักษร)
+**ผ่านทุกข้อ** — ตารางที่ยาวสุดที่เจอใช้ URL 2,791 ตัวอักษร ยังห่างขีดอันตราย
+
+7 พ.ย. เพิ่มสองข้อให้คุมของใหม่: (1) ใบที่ปักต้อง **ขึ้นบนกระดานจริง** ไม่ใช่แค่ถูกบันทึก
+(2) **กระดานเลื่อนได้** — ปัก 30 ใบรวดเดียวด้วย payload ที่สร้างขึ้นเอง (ตารางจริงในชุด
+ยังสั้นเกินกว่าจะกินเกินหนึ่งจอ) ต้องขึ้นครบ 30 ใบ กระดานต้องเลื่อนได้ และไม่ล้นแนวนอน
+ผ่านทั้งสองข้อ (`WALLMAX` ของหน้า post-it ตั้งไว้ 240 ใบ)
+
+เพิ่มอีกเส้น: **ปุ่ม "ปักหลักจำใน post-it"** (ผู้ใช้ขอ 7 พ.ย. · session อื่นทำ · ขึ้นแล้ว)
+เทสต์เลือกหัวข้อที่มีกล่องหลักจำ **มากกว่าหนึ่งกล่อง** เอง (ได้ `chest-26-05` 3 กล่อง)
+เพื่อคุมว่าปักครบทุกกล่อง ไม่ใช่กล่องแรกกล่องเดียว แล้วเทียบทีละใบว่า หน้าใบมีชื่อหลักจำ ·
+หลังใบมี `note` ของกล่อง · มีบรรทัดแรกและบรรทัดสุดท้ายของตัวย่อ **ผ่านทุกข้อ** (3 กล่อง → 3 ใบ)
+
+อ่านใบจาก `localStorage["postit-v1"]` ไม่ใช่ตัวแปรภายใน เพราะ `state` ของหน้า post-it
+อยู่ใน IIFE อ่านจากข้างนอกไม่ได้ และของที่คงอยู่จริงหลังรีโหลดคือ localStorage อยู่แล้ว
+**ข้อควรรู้ตอนเขียนเทสต์หน้านี้**: เปลี่ยนแค่ hash เบราว์เซอร์ไม่โหลดหน้าใหม่ `state`
+ในหน่วยความจำยังค้าง ใบจะทับกันข้ามรอบ — ต้องเปลี่ยน query (`?r=1`) ด้วยเพื่อบังคับโหลดใหม่
+
+### ✅ ตรวจแล้วไม่ต้องตรวจซ้ำ — หลักจำทั้ง 220 กล่อง ตัวอักษรตรงกับชื่อตัวย่อ
+
+7 พ.ย. ตรวจ `mnem` ทุกกล่องในทุกชุด (**220 กล่อง · 184 หัวข้อ**) ว่าตัวอักษรของ `lines`
+สะกดตรงกับ `name` จริงไหม เพราะถ้าไม่ตรงคือท่องตัวย่อผิดไปเลย **ไม่เจอผิดเลยแม้แต่กล่องเดียว**
+สองกล่องที่ดูเหมือนขาดตัว ตรวจแล้วถูกต้องตามเจตนา:
+- `chest-03-07` INH มีแค่บรรทัด N กับ H — เพราะ "I = Injures" เป็นกริยา ไม่ใช่พิษ
+- `gi-lft-11` ABCD (Wilson) มีบรรทัด `+ H` เกินมา — เป็นของแถมที่ตั้งใจใส่
+- `cardio-ecg-13` C BIG K DROP มี 7 บรรทัด — `note` ของกล่องเขียนไว้แล้วว่า "OP" ไม่มีความหมาย
+
+**ไม่ใส่ข้อนี้ลง `checkdata.py`** เพราะชื่อกล่องส่วนใหญ่มีคำบรรยายไทย/อังกฤษปนอยู่
+(เช่น "4H ของ CPPD ทุติยภูมิ" · "ABCDE ป้องกัน CAUTI") กฎอัตโนมัติจึงเตือนผิด 117/220
+ขณะที่ของพังจริงเป็นศูนย์ — เป็นเทสต์ที่ส่งเสียงดังกว่าประโยชน์ ตรวจมือครั้งนี้พอ
+ถ้าเพิ่มหลักจำใหม่เยอะ ๆ แล้วอยากตรวจซ้ำ ใช้เกณฑ์: เทียบเฉพาะกล่องที่ชื่อเป็นตัวย่อล้วน
+(ตัวละตินพิมพ์ใหญ่ทั้งหมด) และทุก key ของ `lines` ยาวตัวเดียว → เหลือ 78 กล่องที่ตรวจได้จริง
+
+### ⚠️ สำเนา `index.html` ใน repo ตามของสดไม่ทัน — เช็คก่อน publish ทุกครั้ง
+
+5 พ.ย. เจอว่าทั้ง `artifact/index.html` (1364 บรรทัด) และ `postit/index.html` (901)
+เก่ากว่าของสด (1394 · 924) เพราะ session อื่น publish ตรงโดยไม่ได้ push ลง branch นี้
+ถ้า publish จาก repo ตรง ๆ ฟีเจอร์ปักตารางจะหายทั้งสองฝั่ง — **sync แล้วใน commit นี้**
+วิธีเช็คให้ไว (ไม่กิน context เพราะไม่ต้องอ่านไฟล์เข้ามา):
+
+    Artifact action=read path=index.html   # ได้ sha256 + ไฟล์ลงดิสก์
+    sha256sum artifact/index.html          # เทียบกันตรง ๆ
+
+ของสดของสองหน้า: learn `5jjGrfPjyBgP7wzxcu8TcE` · post-it `BRsYSzd35CARo2m6Jw6ANY`
+`postit/data/sec.json` ตรงกับของสด (sha256 เท่ากัน) และมี `l-` ครบ 582 ตัว
+= ทุกหัวข้อใน learn ปักได้ ไม่มีหัวข้อไหนกดแล้วเจอ "ไม่พบหัวข้อนี้ในคลัง"
+
+### 🔧 เครื่องมือใหม่ — `artifact/tools/checkdata.py` (ตรวจข้อมูล ไม่ต้องเปิดเบราว์เซอร์)
+
+`verify.py` ตรวจว่าหน้าเว็บทำงานถูก · `checkdata.py` ตรวจว่า **ข้อมูลที่ป้อนเข้าไปไม่พัง**
+ซึ่งเป็นความพังที่เงียบที่สุด เพราะหน้าไม่ error ผู้ใช้แค่เห็นช่องว่างหรือข้อความดิบ
+
+    python3 artifact/tools/checkdata.py          # ทุกชุด (ใช้ไม่ถึงวินาที)
+    python3 artifact/tools/checkdata.py nephro   # ชุดเดียว
+
+ตรวจ: `[[fig:]]/[[anim:]]/[[img:]]` ที่ไม่มีของจริง · รูปที่ประกาศแล้วไม่ถูกอ้าง ·
+`svg` ที่ parse ไม่ผ่าน · `imgs.src` ที่ชี้ไฟล์หาย · ตารางที่คอลัมน์ไม่เท่าหัวตาราง ·
+`**` ที่ไม่เป็นคู่ · รหัส นล. ที่ไม่มีใน `nl.json` · `answer` ที่ไม่ชี้ choice จริง ·
+`section id`/`item id` ซ้ำ · `index.json` ไม่ตรงกับไฟล์ใน `data/`
+**ให้รันทุกครั้งก่อน publish** — เร็วกว่า verify.py มากและจับคนละชนิดของความพัง
+
+รอบแรกที่รันเจอของพังจริง 2 จุด **แก้และ publish แล้วเป็น Version 55** (5 พ.ย.)
+publish เฉพาะ `data/air.json` กับ `data/nephro.json` โดย **อ่านของสดมาเทียบทีละ leaf ก่อน**
+แล้วเอา `nephro.json` ของสดเป็นฐาน (ของสดมี md ใหม่ของ `neph-uti-06` ที่ session อื่น
+เพิ่งแก้) จึงไม่ทับงานใคร · `verify.py` ผ่านทุกข้อหลัง publish
+
+1. `air.json` คาบ 23 หัวข้อ 2 ข้อแรก — `**"ye**ll**ow" + "**ne**edle"` มี `**` 7 ตัว
+   markdown จับคู่ผิดทั้งหมด ตัวหนาไปลงที่ `"ye` / `ow" + "` / `edle" ไปด้วยกันเมื่อ`
+   และโชว์ `**` ดิบหน้า `rallel` → แก้เป็น `**ye**llow + **ne**edle ... **pa**rallel`
+2. `nephro.json` `nephro-phy1-12` ข้อ 4 ใช้ `item id` = `MOCK-147` ซ้ำกับ `gi-cir-12`
+   ทั้งแอปคีย์คำตอบด้วย `state.ans[it.id]` (index.html:806, 1053, 1147, 1300, 1330)
+   ตอบในชุด GI แล้วชุด nephro ขึ้นว่าตอบแล้วทันที นับเข้า "เรียนจบ" และถ้าตอบผิด
+   จะโผล่ซ้ำสองครั้งในแท็บทบทวนข้อที่ผิด → เปลี่ยนตัวในชุด nephro เป็น `MOCK-147-NEPH`
+   (คำถามเดียวกันอยู่สองชุดได้ แต่ id ต้องไม่ซ้ำ)
+
+### ✅ แก้แล้ว — กล่อง ASB ในแผนผัง neph-uti-01 นับข้อยกเว้นไม่ครบ (ปิดเรื่อง 5 พ.ย.)
+
+เดิมแผนผัง `figs.classify` เขียนข้อยกเว้นของ ASB ไว้ **2 ข้อ** (ตั้งครรภ์ · ก่อนหัตถการ)
+แต่หัวข้อ `neph-uti-13` ตาราง "รักษาเฉพาะใคร" ตามสไลด์มี **3 กลุ่ม** — ขาด **ผู้รับการปลูกถ่ายไต**
+
+**ตรวจซ้ำกับของสดแล้วว่าแก้เรียบร้อย** — ตอนนี้กล่องเขียน *"ยกเว้น ตั้งครรภ์ · ก่อนหัตถการ · ปลูกถ่ายไต"*
+และ session ที่ทำหลักจำของ thread `8e39dc0f` ใส่ `mnem` ให้ `neph-uti-01` แล้วสองชุด
+(**COMP-IR** สำหรับปัจจัย complicated · **"มีไหม → ที่ไหน → ใคร"** สำหรับลำดับคำถามของผัง)
+โดยหลักจำนับข้อยกเว้นครบ 3 ข้อถูกต้อง **ไม่ต้องแก้อะไรอีก**
+
+### 📌 กฎ "จอง thread ก่อนลงมือ" ยังกันการชนไม่ได้
+
+26 ต.ค. ผู้ใช้คอมเมนต์ 07:33 — session นี้อ่าน thread ก่อนตามกฎข้อ 4c แล้ว ยังไม่มีใครตอบ
+แต่พอไปตรวจแหล่งอ้างอิงเสร็จกลับมา **มี session อื่นจองและตอบจบไปแล้วในนาทีเดียวกัน**
+เป็นการชนครั้งที่สามใน 12 วัน
+
+สิ่งที่ยังได้ผล: **ถ้าชนแล้ว ให้หาประเด็นที่คนอื่นยังไม่แตะแทนการตอบซ้ำ**
+(รอบนี้ประเด็น GRACE ซ้ำกับเขา แต่เรื่อง Class I A ไม่มีใครพูดถึง จึงตอบเสริมด้วย
+`acknowledge_duplicate: true`)
+
+
+> ⚠️ **หัวข้อ 6 และ 7 เป็นสถานะ ณ 20 ก.ย. และอาจไม่ตรงแล้ว** — มี session อื่นเพิ่มอีก 17 คาบ
+> (รวมชุด endo · id · gi · hemonc) ระหว่าง 20 ก.ย. – 14 ต.ค. โดยไม่ได้บันทึกไว้ที่นี่
+> จึงไม่ทราบว่าใช้สไลด์ไฟล์ใดไปแล้ว **ก่อนเริ่มงานใหม่ให้เทียบรายชื่อคาบจริงจาก `artifact/data/` ก่อน**
+> (คำสั่งอยู่ท้ายหัวข้อ 4) แล้วค่อยเลือกว่าจะทำอะไรต่อ
+
+1. W1: UTI (รอไฟล์) · Malaria (ผู้ใช้สั่งพัก)
+2. W2 เหลือ 5 คาบ: Skin infections · Extrapulmonary TB · Nephrotic/Nephritis ·
+   Dyslipidemia · Septicemia (รอสไลด์)
 3. W10 แท็บ "ทบทวนก่อนสอบ" (~50k tokens)
 
 > ✅ **งานเกณฑ์ นล. เสร็จสมบูรณ์แล้ว** ไม่ต้องอ่าน PDF ซ้ำอีก
@@ -342,15 +432,76 @@ B1=143 · B2=53 · B3=93 · B4=54 · B5=40 · B6=46 · B7=47 · B8=52 · B9=35 �
 
 ## 9. รายละเอียดทางเทคนิคที่เคยติดปัญหา
 
-- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง `pip install --break-system-packages playwright` ก่อน (เบราว์เซอร์มีอยู่แล้ว
-  ห้ามรัน `playwright install`) · ต้องระบุ `executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome"`
-  และ `args=["--no-sandbox"]` · Google Fonts โดน proxy บล็อก (ERR_CERT_AUTHORITY_INVALID หรือ ERR_TUNNEL_CONNECTION_FAILED — verify.py กรองทั้งสองแบบแล้ว)
+- **artifact ตอนนี้ประกาศ capabilities `db` + `user` + `sample` และ contract 0.2.76** (ตั้งแต่ v60 · 7 พ.ย.)
+  `db`+`user` = ความคืบหน้าซิงก์ขึ้นบัญชี · `sample` = แชท "ถาม AI" (หัวข้อ 12) — เวลา publish **ให้ละฟิลด์ `capabilities` และ `contract` ไว้**
+  ระบบจะคงค่าเดิมให้เอง ถ้าใส่ `capabilities:{}` จะล้างทิ้ง (sync และแชทพัง) · ถ้าจำเป็นต้องส่ง ต้องส่งครบสามตัว `{"db":{},"user":{},"sample":{}}`
+- **ค่าที่ผู้ใช้เลือกเองระดับเครื่อง** (ธีม · ซ่อนแถบเมนู) เก็บแยกใน localStorage คนละคีย์
+  ไม่ปนกับ state ที่ซิงก์ขึ้นบัญชี — คีย์ปุ่มซ่อนแถบคือ `med421-learn-mast`
+
+- **Playwright:** container ใหม่ยังไม่มีโมดูลติดตั้ง — ต้อง **`python3 -m pip install playwright`** ก่อน
+  (ใช้ `python3 -m pip` เพราะ `pip` เฉย ๆ อาจติดตั้งลงคนละเวอร์ชันของ Python) · เบราว์เซอร์มีอยู่แล้ว
+  **ห้ามรัน `playwright install`**
+- **เลข build ของ Chromium เปลี่ยนไปตาม container** (เคย 1194 ตอนนี้ 1243 และโฟลเดอร์ย่อยเปลี่ยนจาก
+  `chrome-linux` เป็น `chrome-linux64`) — **ห้ามฝัง path ไว้** `verify.py` หาเองด้วย
+  `glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")` แล้ว · ต้องส่ง `args=["--no-sandbox"]` · Google Fonts โดน TLS proxy บล็อก (ERR_CERT_AUTHORITY_INVALID)
   เป็นเรื่องปกติของ container ไม่ใช่บั๊ก
-- **`check_render.py` / `verify.py` ใช้พอร์ตตายตัว** (8934 ฯลฯ) — ถ้ารันหลาย agent พร้อมกันจะชนกัน ให้รันทีละตัวหลัง merge
-- **subagent ใน worktree** (`.claude/worktrees/` ใส่ไว้ใน `.git/info/exclude`) — ให้แต่ละตัว commit ใน worktree แล้ว `git checkout <branch> -- build_x.py notes.md` มารันใน tree หลัก ตาม build ทีละตัว
 - **อย่าใช้ `pgrep -f <script>` ในลูปรอ** — มันแมตช์ตัว bash command เองแล้วค้างตลอดกาล
 - แถบความคืบหน้านับเฉพาะ set ที่เปิดอยู่ (AIR = 34 ไม่ใช่ 91) — เคยเข้าใจผิดว่าเป็นบั๊ก
 - `.nav .btn` เคยล้นจอที่ 390px เพราะ `white-space:nowrap` → แก้แล้วด้วย
   `white-space:normal;text-align:left;max-width:100%`
 - สีป้ายกลุ่ม 2/3 ใช้ตัวแปร `--ok/--ok-soft` และ `--miss/--miss-soft` ที่มีอยู่แล้ว
   จึงถูกต้องทั้งโหมดสว่างและมืดโดยอัตโนมัติ
+
+---
+
+## 10. Post-it ห้ามลืม + ปุ่ม "ปักไว้ใน post-it" (1 พ.ย. 2569)
+
+- artifact ใหม่ **Post-it ห้ามลืม** https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY — ต้นฉบับอยู่ `postit/` (อ่าน `postit/README.md`)
+- ใส่ชิป **ปักไว้ใน post-it** แล้วใน 3 ที่ (แก้บน artifact สดด้วย edit_version):
+  learn (`artifact/index.html` ฟังก์ชันแสดงหัวข้อ, ต่อท้าย `hideBtn(l)`) → learn v `1793471205-d04d` ·
+  Ward Drill (`pinTag()` ใน renderMCQ และข้อสอบเก่า, คู่แก้อยู่ `postit/drill_pin_edits.json`) → drill v `1793471216-009e` ·
+  Salmon NL (ชิปใต้ชื่อหัวข้อ) → v `1793470906-1542`
+- ถ้าเพิ่มคาบใหม่ใน learn: รัน `python3 postit/build_cards.py` แล้ว publish `data/sec.json` `data/q.json` ขึ้น Post-it ไม่งั้นหัวข้อใหม่จะค้นหา/ปักไม่ได้
+- ถ้า build drill ใหม่จาก pipeline ปุ่มจะหาย ต้องใส่ `postit/drill_pin_edits.json` ซ้ำ
+
+---
+
+## 11. อัปเดตจาก Drive 3 พ.ย. 2569 — คาบ Cirrhosis
+
+- โฟลเดอร์สไลด์ใน Drive ของผู้ใช้คือ `17s6Doub5Ez41F8q69KQa4lf-pWAzfFDj` · "update drive" = หาไฟล์ใหม่ในโฟลเดอร์นี้ที่ยังไม่มีคาบใน learn
+  (ณ 3 พ.ย. มี 5 ไฟล์: AKI · Gastroenteritis · Image in chest · LFT 2570 · **Cirrhosis ← ใหม่**)
+- เพิ่ม **GI คาบ `3/11` Liver cirrhosis and complications** (ผศ.สยาม) → learn v51 `1793691439-58c1` · Post-it v4 `1793691502-b930`
+- ต้นฉบับ: `artifact/tools/build_cirrhosis.py` อ่าน `tools/cir/part*.py` (แยกไฟล์เพื่อไม่ให้ไฟล์เดียวใหญ่) · รันซ้ำได้ (แทนคาบเดิมด้วย lec เดียวกัน)
+- ข้อ Mock ที่ผูกแล้ว: MOCK-012 · 096 · 147 (ซ้ำกับคาบอื่นได้) · 148 · 151 · 164
+- `postit/index.html` ใน repo เคยตามหลัง artifact สด (27 KB vs 37 KB) — ดึงของสดมาแล้ว · `artifact/data/hemonc.json` ก็ดึงของสดมาแล้ว
+- ตรวจด้วย Playwright: ทุกหัวข้อเรนเดอร์ ไม่มี `[[fig:]]` ค้าง ไม่ล้นที่ 390 px · ภาพเคลื่อนไหวดูขั้นสุดท้ายแล้วไม่มีข้อความทับกัน
+
+---
+
+## 12. งานจากคอมเมนต์ 5–7 พ.ย. 2569 (session `claude/add-today-blougl`)
+
+ทำตามคอมเมนต์ของผู้ใช้บน artifact ทีละเรื่อง · ทุกครั้งดึงของสดมาแก้ (ไม่ build จาก repo) · ทดสอบ Playwright ก่อน publish
+สคริปต์/สำเนาหน้าเว็บอยู่ใน branch `claude/add-today-blougl` (ยังไม่ได้รวมเข้าสายหลัก):
+`artifact/tools/patch_uti_mnem.py` · `patch_cystitis_who.py` · `artifact/tools/pages/` (สำเนาหน้าเว็บที่ถอด wrapper แล้ว: learn v56, v60 · Post-it v8, v9)
+
+| เวอร์ชัน | คอมเมนต์ | สิ่งที่ทำ |
+|---|---|---|
+| learn v52 | "มี trick จำมั้ย" (แผนผัง UTI) | `neph-uti-01.mnem` เพิ่ม **COMP-IR** (Catheter · Obstruction/stOne · Male · Pregnancy · Immunocompromised · Recurrent) + **"มีไหม → ที่ไหน → ใคร"** · ระบุว่าแต่งเอง ไม่ใช่จากสไลด์ |
+| learn v54 | "เน้นให้มันถูกใจความหน่อย" | `neph-uti-06` "ใครคือ acute simple cystitis" → สูตรในกรอบ (คนปกติ + อาการอยู่แค่กระเพาะ + ไม่มีอะไรบอกว่าเป็นอย่างอื่น) และบอกเหตุผลของแต่ละข้อลบ |
+| learn v56 + Post-it v8 | "เพิ่มปัก post it ในแต่ละอันนี้" (ที่แถบ "ปิดเพื่อทวน") | ทุกตารางมีลิงก์ **ปักตารางใน post-it** → แถวละใบ ส่งทาง `#t=<base64url JSON {s,c:[[หน้า,หลัง]]}>` · Post-it มี `pinTable()` สร้างใบ "เขียนเอง" id = `"t"+hash(หน้า+หลัง)` (กดซ้ำไม่เกิดใบซ้ำ) |
+| Post-it v9 | "ทำให้มันเลื่อนได้ เลื่อนไปหา post it อันอื่น" | กำแพงเลื่อนแนวตั้งได้เมื่อใบเกินหนึ่งจอ (สูงสุด `WALLMAX`=240 ใบ ขนาดใบเท่าเดิม) · ป้าย "เลื่อนลงดูใบอื่น ↓" · ลอกเปลี่ยนอัตโนมัติเฉพาะใบที่อยู่ในจอ (`inView`) |
+| learn v60 | "เพิ่มแชท AI ระดับ sonnet ค่อยเลื่อนตาม · อยาก highlight แล้วถามเลย" | ดูด้านล่าง |
+
+**แชท "ถาม AI" (learn v60)** — อยู่ท้ายสคริปต์หลัก (ค้น `ถาม AI (capability sample`) · CSS ค้น `.ai-fab`
+- ปุ่มลอย `.ai-fab` มุมขวาล่าง → กล่องแชท `.ai-panel` · ลากคลุมข้อความใน `#main` → ปุ่ม `.ai-sel` "ถาม AI ↗" ยกข้อความเข้าแชท + ปุ่มลัด อธิบาย/ทำไม/เคสข้อสอบ/วิธีจำ
+- ทั้งสามชิ้น **แขวนที่ `<html>` ไม่ใช่ `<body>`** เพราะ body มี `zoom:var(--z)` บนจอกว้าง ถ้าอยู่ใน body ตำแหน่ง fixed จะเพี้ยน
+- เรียก `sample(turns,{model:"claude-sonnet-5-5",modelTier:"default",cache:false,signal})` (ผู้ใช้ขอ Sonnet) · turn แรกเป็นคำสั่ง + เนื้อหาหัวข้อที่เปิด (md ≤9,000 ตัว + pearls + mnem) · เก็บแชท ≤12 turn ในหน่วยความจำ (รีเฟรชหาย)
+- ถ้า `use("sample")` ได้ `null` หรือถูกปฏิเสธ (`not_granted` ฯลฯ) ปุ่มทั้งหมดซ่อน · คำตอบ render ด้วย `md()` ของหน้า (escape แล้ว)
+- ใช้โควตา Claude ของคนที่กดถาม · ครั้งแรกมีหน้าต่างขออนุญาต · ทดสอบด้วย stub `window.claude` เท่านั้น ยังไม่ได้ลองกับ Claude จริง
+
+**กฎที่ใช้ได้ผลรอบนี้**
+- จอง thread ด้วยการตอบก่อนเสมอ · ถ้าเห็นว่าอีก session จองแล้ว (เช่น "ปักหลักจำใน post-it" 7 พ.ย.) **ถอยทันที ไม่ทำซ้อน**
+- ถ้า publish ถูกปฏิเสธเพราะมีเวอร์ชันใหม่ ให้ดู diff: ถ้าต่างแค่ส่วนที่เราเพิ่ม publish ซ้ำได้ ถ้ามีบรรทัด `+` ของคนอื่น ต้อง merge ก่อน
+- ถอด wrapper: ตัดทุกอย่างถึง `<body>\n` และตัด `\n</body></html>` ท้ายไฟล์ แล้วเทียบ `p in live` ก่อนแก้
+- ทดสอบ Post-it ในเครื่อง: `python3 -m http.server` ไม่ส่ง charset → ตัวอักษรไทยใน JS เพี้ยนเฉพาะตอนทดสอบ (บนเว็บจริง wrapper มี `<meta charset>` อยู่แล้ว)
+
