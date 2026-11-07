@@ -305,6 +305,9 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 /* ---------- หลักจำ (section.mnem) ---------- */
 .mnem{margin:18px 0 0;padding:15px 17px;border:1px solid color-mix(in srgb,var(--miss) 45%,var(--rule));border-radius:var(--r-md);background:var(--miss-soft)}
 .mnem>h4{margin:0 0 4px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--miss);font-family:var(--sans)}
+.mnem .mnhd{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.mnem .mnhd>h4{margin:0}
+.mnem .mnpin{padding:4px 11px;font-size:12.5px;text-decoration:none;flex:none}
 .mnem .mn+.mn{margin-top:14px;padding-top:13px;border-top:1px dashed color-mix(in srgb,var(--miss) 40%,var(--rule))}
 .mnem .mnh{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
 .mnem .mnh b{font:700 17px/1.3 var(--mono);color:var(--ink);letter-spacing:.04em}
@@ -601,7 +604,12 @@ function mnemBody(list){
       (x.note?"<p class='mnn'>"+inline(x.note)+"</p>":"")+(x.src?"<p class='mns'>ที่มา: "+inline(x.src)+"</p>":"")+"</div>";
   }).join("");
 }
-function mnemHtml(s){return s.mnem&&s.mnem.length?"<div class='mnem'><h4>หลักจำ</h4>"+mnemBody(s.mnem)+"</div>":"";}
+function mnPinLink(){
+  return "<a class='btn mnpin' data-mnpin='1' href='"+POSTIT+"' target='_blank' rel='noopener' "+
+    "title='หลักจำแต่ละอันจะเป็น post-it หนึ่งใบ — หน้า = ชื่อหลักจำ · หลัง = ตัวย่อทั้งชุด'>ปักหลักจำใน post-it</a>";
+}
+function mnemHead(){return "<div class='mnhd'><h4>หลักจำ</h4>"+mnPinLink()+"</div>";}
+function mnemHtml(s){return s.mnem&&s.mnem.length?"<div class='mnem'>"+mnemHead()+mnemBody(s.mnem)+"</div>":"";}
 function animCount(s){return Object.keys(s.anims||{}).length;}
 
 /* ---------- รูปภาพในบทเรียน ---------- */
@@ -710,6 +718,40 @@ document.addEventListener("click",function(e){
   var a=e.target.closest&&e.target.closest("a[data-tqpin]");if(!a)return;
   var bar=a.closest(".tqbar"),tw=bar&&bar.nextElementSibling;
   if(tw)a.href=tqPinHref(tw);
+});
+
+/* ปักหลักจำใน post-it (ผู้ใช้ขอ 7 พ.ย.) — หลักจำหนึ่งอัน = ใบหนึ่งใบ
+   หน้า = ชื่อหลักจำ + ใช้ตอนไหน · หลัง = ตัวย่อทีละตัว + หมายเหตุ · ตั้ง href ตอนกดเหมือนปักตาราง */
+function pitHref(o){
+  var js=JSON.stringify(o);
+  return POSTIT+"#t="+btoa(unescape(encodeURIComponent(js))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+}
+function mnPlain(t){return String(t==null?"":t).replace(/\*\*/g,"").replace(/`/g,"").replace(/\s+/g," ").trim();}
+function mnPinHref(){
+  var l=lecOf(state.lec),s=l&&secOf(l,state.sec),list=(s&&s.mnem)||[];
+  if(!list.length)return POSTIT;
+  var ctx=s.title||"หลักจำ",cards=[];
+  list.forEach(function(x){
+    var name=mnPlain(x.name);if(!name)return;
+    var back=[];
+    (x.lines||[]).forEach(function(r){
+      var k=mnPlain(r[0]),v=String(r[1]==null?"":r[1]).replace(/\s+/g," ").trim();
+      if(!k&&!v)return;
+      var plain=mnPlain(v);
+      if(!plain)                      back.push(k);
+      else if(!k)                     back.push(v);
+      else if(plain.toUpperCase().indexOf(k.toUpperCase())===0) back.push(v);
+      else                            back.push(k+" — "+v);
+    });
+    if(x.note)back.push(mnPlain(x.note));
+    if(!back.length)return;
+    cards.push(["**"+name+"**\n"+(mnPlain(x.what)||ctx),back.join("\n")]);
+  });
+  return cards.length?pitHref({s:ctx,c:cards}):POSTIT;
+}
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("a[data-mnpin]");if(!a)return;
+  a.href=mnPinHref();
 });
 function tqInit(root){
   (root||document).querySelectorAll(".prose .tablewrap").forEach(function(tw,i){
@@ -978,7 +1020,7 @@ function recallHtml(s){
   });
   if(s.pearls&&s.pearls.length)
     h+=rvBlock(s.id+"-p","จำไปสอบ",3,"<ul>"+s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ul>");
-  if(s.mnem&&s.mnem.length)h+=rvBlock(s.id+"-m","หลักจำ",3,"<div class='mnem'>"+mnemBody(s.mnem)+"</div>");
+  if(s.mnem&&s.mnem.length)h+=rvBlock(s.id+"-m","หลักจำ",3,"<div class='mnem'>"+mnPinLink()+mnemBody(s.mnem)+"</div>");
   return h;
 }
 

@@ -56,6 +56,12 @@ def serve(d, port):
     return s
 
 
+def plain(t):
+    """ตัด ** และยุบช่องว่าง ให้เทียบข้อความได้โดยไม่ติดมาร์กดาวน์"""
+    return re.sub(r"\s+", " ", str("" if t is None else t)
+                  .replace("**", "").replace("`", "")).strip()
+
+
 def decode(payload):
     x = payload.replace("-", "+").replace("_", "/")
     x += "=" * (-len(x) % 4)
@@ -84,6 +90,27 @@ def pick_targets(nmax=3):
     many = next((t for t in out if t[3] > 2), None)
     big = max(out, key=lambda t: t[3] * t[4]) if out else None
     return [t for t in (two, many, big) if t][:nmax]
+
+
+MNEM_LABEL = re.compile(r"ปัก.*หลักจำ|หลักจำ.*post")
+
+
+def pick_mnem():
+    """หาหัวข้อที่มีกล่องหลักจำมากกว่าหนึ่งกล่อง เพื่อคุมว่าปักครบทุกกล่อง ไม่ใช่กล่องแรก"""
+    best = None
+    for f in sorted(glob.glob(os.path.join(LEARN, "data", "*.json"))):
+        name = os.path.splitext(os.path.basename(f))[0]
+        if name in ("index", "nl"):
+            continue
+        for lec in json.load(open(f, encoding="utf-8")):
+            for sec in lec.get("sections", []):
+                mn = sec.get("mnem") or []
+                if len(mn) < 2:
+                    continue
+                if best is None or len(mn) > len(best[3]):
+                    best = (name, lec["lec"], sec["id"], mn)
+    return best
+
 
 
 srv = [serve(LEARN, P_LEARN), serve(POSTIT, P_POSTIT)]
@@ -224,6 +251,81 @@ try:
         pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
                  wait_until="domcontentloaded")
         pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+        # ---- ปักกล่อง "หลักจำ" (ผู้ใช้ขอ 7 พ.ย.) ----
+        mn = pick_mnem()
+        if not mn:
+            fail.append("ไม่พบหัวข้อที่มีกล่องหลักจำสองกล่องขึ้นไป — ตรวจปุ่มปักหลักจำไม่ได้")
+        else:
+            mset, mlec, msid, boxes = mn
+            label = next(e["label"] for e in json.load(
+                open(os.path.join(LEARN, "data", "index.json"), encoding="utf-8"))
+                if e["set"] == mset)
+            learn.click('#courseTabs button:has-text("%s")' % label)
+            learn.wait_for_selector('[data-lec="%s"]' % mlec, timeout=8000)
+            if not learn.is_visible('[data-sec="%s"]' % msid):
+                learn.click('[data-lec="%s"]' % mlec)
+            learn.wait_for_selector('[data-sec="%s"]' % msid, state="visible", timeout=8000)
+            learn.click('[data-sec="%s"]' % msid)
+            learn.wait_for_timeout(300)
+
+            links = learn.locator("main a").filter(has_text=MNEM_LABEL)
+            if links.count() == 0:
+                fail.append("%s: ไม่พบปุ่มปักหลักจำในกล่องหลักจำ" % msid)
+            else:
+                link = links.first
+                link.click()
+                learn.wait_for_timeout(120)
+                href = link.get_attribute("href") or ""
+                if "#t=" not in href:
+                    fail.append("%s: กดปุ่มปักหลักจำแล้ว href ไม่มี #t= (ได้ %r)"
+                                % (msid, href[:90]))
+                else:
+                    d = decode(href.split("#t=", 1)[1])
+                    cards = d.get("c") or []
+                    want = [b for b in boxes if plain(b.get("name"))]
+                    if len(cards) != len(want):
+                        fail.append("%s: หัวข้อนี้มีหลักจำ %d กล่อง แต่ส่งไป %d ใบ"
+                                    % (msid, len(want), len(cards)))
+                    for box, (front, back) in zip(want, cards):
+                        nm = plain(box.get("name"))
+                        if nm not in plain(front):
+                            fail.append("%s: หน้าใบไม่มีชื่อหลักจำ %r (ได้ %r)"
+                                        % (msid, nm, front[:60]))
+                            continue
+                        if box.get("note") and plain(box["note"])[:25] not in plain(back):
+                            fail.append("%s: ใบของ %s ตก note ของกล่อง" % (msid, nm))
+                        lines = [l for l in (box.get("lines") or [])
+                                 if isinstance(l, (list, tuple)) and len(l) == 2]
+                        for key, val in (lines[:1] + lines[-1:]):
+                            probe = plain(val)[:22] or plain(key)
+                            if probe and probe not in plain(back):
+                                fail.append("%s: ใบของ %s ตกบรรทัด %r"
+                                            % (msid, nm, probe))
+                                break
+                    print("  %-18s หลักจำ %d กล่อง → %d ใบ · URL %d ตัวอักษร"
+                          % (msid, len(want), len(cards), len(href)))
+                    if len(href) > 8000:
+                        fail.append("%s: URL ปักหลักจำยาว %d ตัวอักษร" % (msid, len(href)))
+
+                    pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
+                             wait_until="domcontentloaded")
+                    pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+                    pin.goto("http://127.0.0.1:%d/index.html?mn=1#t=%s"
+                             % (P_POSTIT, href.split("#t=", 1)[1]),
+                             wait_until="networkidle")
+                    pin.wait_for_timeout(700)
+                    got = own_notes(pin)
+                    shown = pin.evaluate(
+                        "()=>document.querySelectorAll('#grid > *').length")
+                    print("  %-18s post-it สร้าง %d ใบ · ขึ้นบนกระดาน %d ใบ"
+                          % (msid, len(got), shown))
+                    if len(got) != len(cards):
+                        fail.append("%s: ส่งหลักจำ %d ใบ แต่หน้า post-it สร้าง %d ใบ"
+                                    % (msid, len(cards), len(got)))
+                    if shown < len(got):
+                        fail.append("%s: หลักจำบันทึก %d ใบ แต่ขึ้นบนกระดานแค่ %d"
+                                    % (msid, len(got), shown))
+
         # กระดานเลื่อนได้ (7 พ.ย.) — ใบเกินหนึ่งจอต้องวางต่อลงไปครบ ไม่ใช่โดนตัด
         # ตารางจริงในชุดยังสั้นเกินกว่าจะกินเกินหนึ่งจอ จึงสร้าง payload ขึ้นมาทดสอบเอง
         MANY = 30
