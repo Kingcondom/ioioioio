@@ -452,7 +452,8 @@ function step(now){
   $("prog").style.width=(Math.min(1,elapsed/dur())*100).toFixed(1)+"%";}
 function postH(){try{if(parent!==window)parent.postMessage({a3dh:document.documentElement.scrollHeight},"*");}catch(e){}}
 window.addEventListener("load",postH);window.addEventListener("resize",postH);setTimeout(postH,900);
-resize();rebuildIfNeeded();go(0);const c0=SC[0].cam;camera.position.set(...c0[0]);controls.target.set(...c0[1]);tween=null;setPlay(playing);requestAnimationFrame(frame);
+const H0={cycle:1,ms:2,mr:3,as:4,ar:5,compare:6}[(location.hash||"").slice(1)];if(H0)playing=false;
+resize();rebuildIfNeeded();go(H0||0);const c0=SC[H0||0].cam;camera.position.set(...c0[0]);controls.target.set(...c0[1]);tween=null;setPlay(playing);requestAnimationFrame(frame);
 })();
 </script>
 </body>

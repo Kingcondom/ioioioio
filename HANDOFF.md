@@ -488,5 +488,7 @@ publish เฉพาะ `data/air.json` กับ `data/nephro.json` โดย *
   + ลิงก์ "เปิดเป็นหน้าเต็ม ↗" · หน้าลูกส่ง `postMessage({a3dh})` ให้ iframe สูงพอดี · คู่แก้เก็บไว้ที่ `artifact/tools/a3d/index_edits.json`
   ถ้ามีคน publish `index.html` จากสำเนาใน repo ที่เก่ากว่าของสด ให้ใส่คู่แก้นี้ซ้ำ
 - ⚠️ `artifact/index.html` ใน repo ยัง**เก่ากว่าของสด** (100.9 KB vs 117.6 KB ก่อนแพตช์) — แพตช์ถูกใส่ในสำเนา repo ด้วยแต่ห้าม publish ทับทั้งไฟล์
-- learn หลังงานนี้: v `1794110567-9d99` · `checkdata.py` 0 error · `verify.py` ผ่าน · ทดสอบการ์ด 3D ใน Chromium (swiftshader) แล้ว iframe โหลดและปรับความสูงได้
+- รอบ 2 (8 พ.ย. สาย): ผู้ใช้หาไม่เจอเพราะเปิดหัวข้อ MS → เพิ่มการ์ดในหัวข้อ vhd-03/05/07/08 ด้วย (`c27-3d-ms/mr/as/ar`)
+  `src` ใส่ hash `#ms #mr #as #ar` (มี `#cycle #compare` ด้วย) หน้า 3D จะเปิดที่ขั้นนั้นและหยุดเล่นอัตโนมัติ · learn v `1794110905-9e99`
+- learn หลังรอบแรก: v `1794110567-9d99` · `checkdata.py` 0 error · `verify.py` ผ่าน · ทดสอบการ์ด 3D ใน Chromium (swiftshader) แล้ว iframe โหลดและปรับความสูงได้
 - เพิ่มเรื่องต่อไป: ทำหน้า `anim/<เรื่อง>-3d.html` ด้วย skill `mechanism-3d-animation` → ใส่ `anims[k].src` ในหัวข้อ → publish_files patch แค่ 2 ไฟล์ (ไม่ต้องแตะ index.html อีก)
