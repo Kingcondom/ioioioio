@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ลิ้นหัวใจแบบ 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: 3D cut-away left heart on top, synced phonocardiogram strip, step controls, caption */
+  --paper:#f3f1ed;
+  --card:#ffffff;
+  --ink:#24212b;
+  --muted:#6c6774;
+  --line:#ddd7cf;
+  --wine:#8a2846;
+  --wine-soft:#fbe8ee;
+  --drug:#1d6b58;
+  --font:"IBM Plex Sans Thai","Sarabun","Noto Sans Thai",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 40px;display:grid;gap:12px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+h1{font-size:clamp(1.2rem,2.4vw,1.6rem);margin:0;font-weight:700;text-wrap:balance}
+h1 small{font-weight:500;color:var(--muted);font-size:.7em;margin-left:6px}
+.hint{color:var(--muted);font-size:.85rem}
+.view{position:relative;aspect-ratio:16/9;max-height:70vh;width:100%;border:1px solid var(--line);border-radius:14px 14px 0 0;overflow:hidden;
+  background:radial-gradient(120% 90% at 50% 35%,#e9ecf2 0%,#d3d8e1 60%,#c3c9d4 100%);touch-action:none}
+.view canvas{display:block;width:100%;height:100%;cursor:grab}
+.view canvas:active{cursor:grabbing}
+#labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.lab{position:absolute;left:0;top:0;transform:translate(-50%,-100%);font-size:12.5px;font-weight:500;line-height:1.3;white-space:nowrap;
+  background:rgba(255,255,255,.92);border:1px solid #cfc8bf;border-radius:6px;padding:2px 7px;color:#3a3540;transition:opacity .35s;opacity:0}
+.lab.on{opacity:1}
+.lab.cy{border-color:var(--wine);color:var(--wine);font-weight:600;background:#fdf1f4}
+.lab.big{font-size:13.5px;font-weight:600}
+.viewbar{position:absolute;right:10px;top:10px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.viewbar button{font-size:.8rem;padding:4px 10px;background:rgba(255,255,255,.94)}
+#sound[aria-pressed="true"]{background:var(--wine);color:#fff;border-color:var(--wine)}
+.phase{position:absolute;left:10px;top:10px;display:flex;gap:6px;pointer-events:none}
+.phase span{font-size:.82rem;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid #cfc8bf;color:#6c6774;transition:all .15s}
+.phase span.on{background:var(--wine);border-color:var(--wine);color:#fff}
+.picker{position:absolute;left:10px;bottom:10px;display:none;gap:6px;flex-wrap:wrap}
+.picker.on{display:flex}
+.picker button{font-size:.85rem;padding:4px 12px;background:rgba(255,255,255,.95);border-radius:999px}
+.picker button[aria-pressed="true"]{background:var(--wine);color:#fff;border-color:var(--wine)}
+.load{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:.95rem;text-align:center;padding:20px}
+.pcgbox{border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;background:#fff;padding:6px 10px 4px;margin-top:-12px}
+.pcgbox canvas{display:block;width:100%;height:180px}
+.controls{display:grid;gap:10px}
+.bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--wine)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+button,select{font:inherit;font-size:.92rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--wine)}
+button:focus-visible,select:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+#play{background:var(--wine);color:#fff;border-color:var(--wine);min-width:96px}
+.dots{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+.dots button{width:34px;height:34px;padding:0;border-radius:50%;font-size:.85rem;font-variant-numeric:tabular-nums}
+.dots button.done{background:var(--wine-soft);border-color:#e7b9c7}
+.dots button.cur{background:var(--wine);color:#fff;border-color:var(--wine)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.eyebrow{font-size:.82rem;color:var(--wine);font-weight:600;letter-spacing:.02em}
+.panel h2{margin:2px 0 6px;font-size:1.3rem;text-wrap:balance}
+.panel p{margin:0 0 8px;color:var(--muted);max-width:70ch}
+.panel ol{margin:0;padding-left:1.4em;display:grid;gap:4px;max-width:78ch}
+.panel ol li::marker{color:var(--wine);font-weight:600}
+#drugs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+#drugs span{background:#e4f2ed;color:var(--drug);border:1px solid #b9dccf;border-radius:999px;padding:2px 10px;font-size:.85rem}
+#drugs span b{font-weight:600}
+table.cmp{border-collapse:collapse;margin-top:10px;font-size:.88rem;width:100%;max-width:820px}
+table.cmp th,table.cmp td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+table.cmp th{color:var(--wine);font-weight:600}
+.tw{overflow-x:auto}
+.foot{font-size:.8rem;color:var(--muted);margin:0}
+@media (max-width:700px){
+  .view{aspect-ratio:4/5}
+  .dots{margin-left:0}
+  .panel{padding:16px}
+  .lab{font-size:11px}
+  .pcgbox canvas{height:160px}
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <h1>ลิ้นหัวใจซีกซ้าย MS · MR · AS · AR <small>3D</small></h1>
+    <span class="hint">ลากเพื่อหมุน · scroll หรือถ่างนิ้วเพื่อซูม · ← → เปลี่ยนขั้น</span>
+  </header>
+
+  <div class="view" id="view">
+    <div class="load" id="load">กำลังโหลดภาพ 3D…</div>
+    <div id="labels"></div>
+    <div class="phase" aria-hidden="true"><span id="ph-sys">Systole</span><span id="ph-dia">Diastole</span></div>
+    <div class="viewbar">
+      <button type="button" id="sound" aria-pressed="false">🔊 เปิดเสียง</button>
+      <button type="button" id="recam">↺ มุมกล้องของขั้นนี้</button>
+    </div>
+    <div class="picker" id="picker" role="group" aria-label="เลือกโรค"></div>
+  </div>
+  <div class="pcgbox"><canvas id="pcg" aria-label="Phonocardiogram และความดันในหลอดเลือดแดงใหญ่ เลื่อนตามรอบหัวใจ"></canvas></div>
+
+  <div class="controls">
+    <div class="bar" aria-hidden="true"><i id="prog"></i></div>
+    <div class="row">
+      <button id="prev" type="button" aria-label="ขั้นก่อนหน้า">◀ ก่อนหน้า</button>
+      <button id="play" type="button">⏸ หยุด</button>
+      <button id="next" type="button" aria-label="ขั้นถัดไป">ถัดไป ▶</button>
+      <label for="speed" class="hint" style="margin-left:4px">ความเร็ว</label>
+      <select id="speed">
+        <option value="1.6">ช้า</option>
+        <option value="1" selected>ปกติ</option>
+        <option value="0.65">เร็ว</option>
+      </select>
+      <div class="dots" id="dots" role="group" aria-label="เลือกขั้น"></div>
+    </div>
+  </div>
+
+  <section class="panel" aria-live="polite">
+    <div class="eyebrow">ขั้นที่ <span id="num">1</span> / <span id="tot">7</span></div>
+    <h2 id="ttl"></h2>
+    <p id="lead"></p>
+    <ol id="pts"></ol>
+    <div id="extra"></div>
+    <div id="drugs"></div>
+  </section>
+  <p class="foot">วาดเป็นแผนภาพ ไม่ใช่สัดส่วนจริง · แสดงเฉพาะหัวใจซีกซ้าย (ผ่าครึ่งด้านหน้าออก) · หัวใจเต้นช้าลงประมาณครึ่งหนึ่งเพื่อให้ดูทัน · เสียงเป็นเสียงสังเคราะห์เพื่อให้จำรูปแบบ ไม่ใช่เสียงจริงจากผู้ป่วย · เกณฑ์ตัวเลขตามบทเรียนคาบ 27 (ESC/EACTS 2025)</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+(function(){
+if(!window.THREE){document.getElementById("load").textContent="โหลดไลบรารี 3D ไม่สำเร็จ ลองรีเฟรชหน้านี้อีกครั้ง";return;}
+const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+const host=document.getElementById("view"),labHost=document.getElementById("labels");
+let renderer;
+try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});}catch(e){document.getElementById("load").textContent="เบราว์เซอร์นี้เปิด WebGL ไม่ได้ จึงแสดงภาพ 3D ไม่ได้";return;}
+document.getElementById("load").remove();
+renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+host.insertBefore(renderer.domElement,labHost);
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(38,1.6,0.1,300);
+const controls=new THREE.OrbitControls(camera,renderer.domElement);
+controls.enableDamping=true;controls.dampingFactor=.08;controls.minDistance=5;controls.maxDistance=60;
+function resize(){const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();sizePcg();}
+window.addEventListener("resize",resize);
+
+scene.add(new THREE.AmbientLight(0xffffff,.45));
+const d1=new THREE.DirectionalLight(0xffffff,.62);d1.position.set(6,14,16);scene.add(d1);
+const d2=new THREE.DirectionalLight(0xfff2ee,.24);d2.position.set(-12,-6,10);scene.add(d2);
+
+const V=(x,y,z)=>new THREE.Vector3(x,y,z);
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+const ss=(a,b,x)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);};
+const lerp=(a,b,t)=>a+(b-a)*t;
+
+/* ---------- textures ---------- */
+function canvasTex(w,h,draw){const c=document.createElement("canvas");c.width=w;c.height=h;draw(c.getContext("2d"),w,h);const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=4;return t;}
+const myoTex=canvasTex(256,256,(g,w,h)=>{g.fillStyle="#b94c4f";g.fillRect(0,0,w,h);const r=rng(3);
+  for(let i=0;i<140;i++){const y=r()*h,x=r()*w;g.strokeStyle=`rgba(${120+r()*40|0},30,40,.45)`;g.lineWidth=1+r()*1.5;g.beginPath();g.moveTo(x,y);g.bezierCurveTo(x+30,y-6,x+60,y+6,x+90,y-2);g.stroke();}
+  for(let i=0;i<60;i++){g.fillStyle="rgba(90,20,30,.5)";g.beginPath();g.ellipse(r()*w,r()*h,4,1.6,r(),0,7);g.fill();}});
+myoTex.repeat.set(.3,.3);
+const endoTex=canvasTex(256,256,(g,w,h)=>{g.fillStyle="#e7a3a2";g.fillRect(0,0,w,h);const r=rng(8);
+  for(let i=0;i<70;i++){g.strokeStyle="rgba(170,70,80,.28)";g.lineWidth=2;g.beginPath();const x=r()*w;g.moveTo(x,0);g.bezierCurveTo(x+10,h*.3,x-10,h*.6,x+5,h);g.stroke();}});
+endoTex.repeat.set(3,2);
+
+/* ---------- lesion parameters ---------- */
+const LES={
+  N :{ra:1.9,rc:2.35,w:.9,ao:.78,mT:.12,aT:.1,mOpen:1.2,aOpen:1.25,mGap:0,aGap:0,pv:.34,dis:0},
+  MS:{ra:2.65,rc:2.2,w:.85,ao:.78,mT:.34,aT:.1,mOpen:.36,aOpen:1.25,mGap:0,aGap:0,pv:.5,dis:1},
+  MR:{ra:2.55,rc:3.0,w:.82,ao:.78,mT:.14,aT:.1,mOpen:1.2,aOpen:1.25,mGap:1,aGap:0,pv:.42,dis:1},
+  AS:{ra:2.05,rc:1.9,w:1.55,ao:.98,mT:.12,aT:.34,mOpen:1.2,aOpen:.36,mGap:0,aGap:0,pv:.36,dis:2},
+  AR:{ra:1.95,rc:3.15,w:.85,ao:1.05,mT:.12,aT:.12,mOpen:1.2,aOpen:1.25,mGap:0,aGap:1,pv:.34,dis:2}};
+const P=Object.assign({},LES.N);let LS="N",LSdisp="N";
+const H=6.0;// LV cavity length (base y=0 → apex y=-H)
+const MV={x:.95,y:0,r:1.05},AV={x:-1.45,y:.25,r:.78};
+
+/* ---------- heart geometry ---------- */
+const heart=new THREE.Group();scene.add(heart);
+const LVg=new THREE.Group();heart.add(LVg);
+const mEndo=new THREE.MeshStandardMaterial({map:endoTex,side:THREE.DoubleSide,roughness:.7});
+const mEpi=new THREE.MeshStandardMaterial({color:0xc4605f,side:THREE.FrontSide,roughness:.75});
+const mCut=new THREE.MeshStandardMaterial({map:myoTex,side:THREE.DoubleSide,roughness:.8});
+let lvParts=[];
+function prof(R,Hh,n){const pts=[];for(let i=0;i<=n;i++){const t=i/n,y=-Hh*(1-t);const x=R*Math.sqrt(Math.max(0,1-(y/Hh)**2));pts.push(new THREE.Vector2(Math.max(x,.001),y));}return pts;}
+function buildLV(){lvParts.forEach(m=>{LVg.remove(m);m.geometry.dispose();});lvParts=[];
+  const Rc=P.rc,Ro=P.rc+P.w,Ho=H+P.w*.85;
+  const inner=prof(Rc,H,28),outer=prof(Ro,Ho,28);
+  const gi=new THREE.LatheGeometry(inner,48,Math.PI/2,Math.PI),go=new THREE.LatheGeometry(outer,48,Math.PI/2,Math.PI);
+  const mi=new THREE.Mesh(gi,mEndo),mo=new THREE.Mesh(go,mEpi);
+  const sh=new THREE.Shape();sh.moveTo(Ro,0);for(let i=outer.length-1;i>=0;i--)sh.lineTo(outer[i].x,outer[i].y);for(let i=0;i<inner.length;i++)sh.lineTo(inner[i].x,inner[i].y);sh.lineTo(Ro,0);
+  const sg=new THREE.ShapeGeometry(sh,2);const c1=new THREE.Mesh(sg,mCut),c2=new THREE.Mesh(sg,mCut);c2.scale.x=-1;c1.position.z=c2.position.z=.002;
+  // base rim (annular plate between valves, back half) so the LV has a roof edge
+  [mi,mo,c1,c2].forEach(m=>{LVg.add(m);lvParts.push(m);});}
+// left atrium: back half sphere + cut ring + funnel to the mitral annulus
+const LAg=new THREE.Group();heart.add(LAg);
+const laMat=new THREE.MeshStandardMaterial({map:endoTex,side:THREE.DoubleSide,roughness:.7,color:0xf3d2d0});
+const laSph=new THREE.Mesh(new THREE.SphereGeometry(1,40,28,Math.PI,Math.PI),laMat);LAg.add(laSph);
+const laRing=new THREE.Mesh(new THREE.RingGeometry(.86,1,48,1),new THREE.MeshStandardMaterial({map:myoTex,side:THREE.DoubleSide}));LAg.add(laRing);
+const funGeo=new THREE.CylinderGeometry(1.3,MV.r,1,40,1,true,Math.PI/2,Math.PI);
+const funnel=new THREE.Mesh(funGeo,laMat);heart.add(funnel);
+function laC(){return V(1.25+P.ra*.18,.55+P.ra*.86,0);}
+// aorta (translucent so the blood can be seen) and pulmonary veins
+const aoMat=new THREE.MeshStandardMaterial({color:0xd9827f,transparent:true,opacity:.32,side:THREE.DoubleSide,depthWrite:false,roughness:.5});
+const pvMat=new THREE.MeshStandardMaterial({color:0xb7707e,transparent:true,opacity:.45,side:THREE.DoubleSide,depthWrite:false,roughness:.5});
+let aorta=null,pvs=[];
+const AOP=[V(-1.45,.25,0),V(-1.55,2.6,0),V(-1.1,4.9,-.3),V(.9,6.2,-1.2),V(2.9,5.6,-2.2),V(3.8,3.2,-2.8),V(3.95,-1.5,-3)];
+function buildVessels(){if(aorta){heart.remove(aorta);aorta.geometry.dispose();}
+  const c=new THREE.CatmullRomCurve3(AOP);aorta=new THREE.Mesh(new THREE.TubeGeometry(c,80,P.ao,24,false),aoMat);heart.add(aorta);
+  pvs.forEach(m=>{heart.remove(m);m.geometry.dispose();});pvs=[];const C=laC();
+  [[.55,-.35],[-.35,-.9]].forEach(o=>{const a=V(C.x+P.ra*.75,C.y+o[0],o[1]),b=V(7,C.y+o[0]*1.6+.2,o[1]);
+    const m=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([a,a.clone().lerp(b,.5).add(V(0,.15,0)),b]),20,P.pv,14,false),pvMat);heart.add(m);pvs.push(m);});}
+// valve leaflets: hinged plates (back half of each annulus)
+function leaflet(hx,hy,dir,len,depth,mat){const piv=new THREE.Group();piv.position.set(hx,hy,0);const m=new THREE.Mesh(new THREE.BoxGeometry(len,1,depth),mat);m.position.set(dir*len/2,0,-depth/2);piv.add(m);piv.userData={m,dir};heart.add(piv);return piv;}
+const mvMat=new THREE.MeshStandardMaterial({color:0xf2d7c9,roughness:.55});
+const avMat=new THREE.MeshStandardMaterial({color:0xf2d7c9,roughness:.55});
+const mvL=leaflet(MV.x-MV.r,MV.y,1,MV.r*1.04,MV.r,mvMat),mvR=leaflet(MV.x+MV.r,MV.y,-1,MV.r*1.04,MV.r,mvMat);
+const avL=leaflet(AV.x-AV.r,AV.y,1,AV.r*1.05,AV.r,avMat),avR=leaflet(AV.x+AV.r,AV.y,-1,AV.r*1.05,AV.r,avMat);
+// annulus rings (thin tori, back half)
+[[MV,0xd9b8a6],[AV,0xd9b8a6]].forEach(([v,c])=>{const t=new THREE.Mesh(new THREE.TorusGeometry(v.r,.07,8,40,Math.PI),new THREE.MeshStandardMaterial({color:c}));t.rotation.x=Math.PI/2;t.position.set(v.x,v.y,0);heart.add(t);});
+
+let built={};
+function rebuildIfNeeded(){const k=["rc","w","ra","ao","pv"];if(k.every(x=>Math.abs((built[x]||0)-P[x])<.012))return;
+  k.forEach(x=>built[x]=P[x]);buildLV();buildVessels();}
+
+/* ---------- cardiac cycle ---------- */
+const T=1.5;// seconds per beat (≈ 40 bpm, slowed)
+const SYS=.38;
+function cyc(p){
+  const ao=ss(.04,.08,p)*(1-ss(.34,.38,p));
+  let mo=ss(.42,.47,p)*(1-ss(.955,.995,p));mo*=1-.3*ss(.62,.7,p)*(1-ss(.82,.88,p));
+  const con=p<SYS?Math.sin(Math.PI/2*Math.min(1,p/.3)):Math.max(0,1-(p-SYS)/.09);
+  const kick=ss(.84,.92,p)*(1-ss(.95,1,p));
+  return{ao,mo,con,kick,sys:p<SYS};}
+
+/* ---------- particles ---------- */
+const pg=new THREE.Group();scene.add(pg);
+const PGEO=new THREE.SphereGeometry(.14,10,8);
+const pmats={};function pm(c){return pmats[c]||(pmats[c]=new THREE.MeshStandardMaterial({color:c,roughness:.4}));}
+let parts=[];
+function jit(a,s){return a.map((p,i)=>i===0||i===a.length-1?p.clone().add(V((Math.random()-.5)*s,(Math.random()-.5)*s,(Math.random()-.5)*s*.6)):p.clone().add(V((Math.random()-.5)*s,(Math.random()-.5)*s*.5,(Math.random()-.5)*s*.6)));}
+function path(kind){const C=laC(),RA=P.ra;
+  if(kind==="pv")return jit([V(6.6,C.y+.3,-.6),V(C.x+RA*.95,C.y+.2,-.6),V(C.x+RA*.3,C.y,-.7)],.6);
+  if(kind==="in"){const narrow=LSdisp==="MS";return jit([V(C.x,C.y-.2,-.6),V(MV.x,.7,-.55),V(MV.x,0,-.5),V(MV.x-.3,-1.6,-.6),V(.2,-3.8,-.7)],narrow?.12:.75);}
+  if(kind==="out"){const narrow=LSdisp==="AS";const a=[V(.1,-3.6,-.7),V(-1.1,-1.5,-.6),V(AV.x,AV.y,-.45),V(-1.55,2.6,-.4),V(-1.1,4.9,-.7),V(.9,6.2,-1.5),V(2.9,5.6,-2.4),V(3.8,3.2,-2.9),V(3.95,-1.5,-3)];
+    const s=narrow?.08:.55;const b=a.map((p,i)=>p.clone().add(V((Math.random()-.5)*s*(i>3&&narrow?6:1),(Math.random()-.5)*s,(Math.random()-.5)*s*.6*(i>3&&narrow?5:1))));return b;}
+  if(kind==="mr")return jit([V(.6,-1.4,-.5),V(MV.x+.25,0,-.45),V(C.x+.2,C.y-RA*.4,-.55),V(C.x+RA*.45,C.y+RA*.45,-.7)],.12);
+  if(kind==="ar")return jit([V(-1.5,2.6,-.4),V(AV.x,AV.y,-.4),V(-1.2,-1.4,-.55),V(-.5,-3.5,-.7)],.12);}
+const FLOWS={
+  N:[{k:"pv",w:[0,1],ev:110,du:1300,c:0xc0394a},{k:"in",w:[.45,.96],ev:45,du:1150,c:0xc0394a},{k:"out",w:[.07,.33],ev:30,du:1500,c:0xc0394a}],
+  MS:[{k:"pv",w:[0,1],ev:170,du:1700,c:0xc0394a},{k:"in",w:[.47,.98],ev:70,du:650,c:0xe0a020},{k:"out",w:[.07,.33],ev:45,du:1500,c:0xc0394a}],
+  MR:[{k:"pv",w:[0,1],ev:120,du:1300,c:0xc0394a},{k:"in",w:[.45,.96],ev:38,du:1150,c:0xc0394a},{k:"out",w:[.07,.33],ev:42,du:1500,c:0xc0394a},{k:"mr",w:[.02,.37],ev:22,du:520,c:0xe0a020}],
+  AS:[{k:"pv",w:[0,1],ev:110,du:1300,c:0xc0394a},{k:"in",w:[.45,.96],ev:50,du:1150,c:0xc0394a},{k:"out",w:[.1,.36],ev:28,du:900,c:0xe0a020}],
+  AR:[{k:"pv",w:[0,1],ev:110,du:1300,c:0xc0394a},{k:"in",w:[.45,.96],ev:45,du:1150,c:0xc0394a},{k:"out",w:[.07,.33],ev:22,du:1400,c:0xc0394a},{k:"ar",w:[.4,.88],ev:30,du:600,c:0xe0a020}]};
+let lastSp={};
+function spawn(f){const pts=path(f.k);const cv=new THREE.CatmullRomCurve3(pts);const m=new THREE.Mesh(PGEO,pm(f.c));pg.add(m);parts.push({m,cv,t0:performance.now(),du:f.du});}
+function clearParts(){parts.forEach(p=>pg.remove(p.m));parts=[];lastSp={};}
+
+/* ---------- labels ---------- */
+const TAGS=[];
+function tag(text,cls,show,pos){const el=document.createElement("div");el.className="lab "+(cls||"");el.textContent=text;labHost.appendChild(el);TAGS.push({el,show,pos});return el;}
+const all=()=>true,les=k=>()=>LSdisp===k&&cur>=2;
+tag("Left atrium (LA)","big",s=>s<=1||cur===6,()=>laC().add(V(0,P.ra*.55,-.3)));
+tag("Left ventricle (LV)","big",s=>s<=1||cur===6,()=>V(-.2,-3.2,-.5));
+tag("Aorta","big",s=>s<=1||cur===6,()=>V(-.6,5.6,-.6));
+tag("Pulmonary veins","",s=>s===0,()=>V(5.6,laC().y+.9,-.5));
+tag("Mitral valve","",s=>s<=3||cur===6,()=>V(MV.x,.5,-.3));
+tag("Aortic valve","",s=>s<=1||s===4||s===5||cur===6,()=>V(AV.x-.9,AV.y+.55,-.3));
+tag("Endocardium","",s=>s===0,()=>V(1.9,-2.8,-.9));
+tag("Myocardium (หน้าตัด)","",s=>s===0,()=>V(-P.rc-P.w*.5,-1.3,.05));
+tag("ลิ้นหนา เปิดแคบ","cy",les("MS"),()=>V(MV.x+.2,-.5,.1));
+tag("LA โต → AF, ลิ่มเลือด","cy",les("MS"),()=>laC().add(V(P.ra*.6,P.ra*.35,0)));
+tag("ปอดคั่ง → PH","cy",les("MS"),()=>V(6,laC().y+1.1,-.5));
+tag("Regurgitant jet เข้า LA","cy",les("MR"),()=>laC().add(V(.3,-.4,0)));
+tag("LV + LA ขยาย (volume overload)","cy",les("MR"),()=>V(-.3,-5.4,-.5));
+tag("Cusp หนา มีแคลเซียม","cy",les("AS"),()=>V(AV.x-.2,AV.y-.5,.1));
+tag("Concentric LVH","cy",les("AS"),()=>V(-P.rc-P.w*.5,-2.4,.05));
+tag("Jet แรง → post-stenotic dilatation","cy",les("AS"),()=>V(-2.4,3.4,-.3));
+tag("Diastolic backflow","cy",les("AR"),()=>V(-2.6,-.9,-.3));
+tag("LV ขยาย (eccentric)","cy",les("AR"),()=>V(.5,-5.4,-.5));
+tag("Aortic root","cy",les("AR"),()=>V(-2.5,1.6,-.2));
+
+/* ---------- phonocardiogram (2D canvas) ---------- */
+const pc=document.getElementById("pcg"),pctx=pc.getContext("2d");let PW=0,PH=0,DPR=1;
+function sizePcg(){DPR=Math.min(window.devicePixelRatio||1,2);PW=pc.clientWidth;PH=pc.clientHeight;pc.width=PW*DPR;pc.height=PH*DPR;}
+const NOISE=(()=>{const r=rng(17),a=[];for(let i=0;i<2000;i++)a.push(r()*2-1);return a;})();
+function murEnv(L,p){ // murmur envelope 0..1 for lesion L at phase p
+  if(L==="MR")return p>.015&&p<.375?1:0;
+  if(L==="AS")return p>.05&&p<.34?Math.pow(Math.sin(Math.PI*Math.pow((p-.05)/.29,1.35)),1.2):0;
+  if(L==="AR")return p>.385&&p<.78?Math.pow(1-(p-.385)/.395,1.3):0;
+  if(L==="MS")return p>.49&&p<.97?Math.max(.45*(1-(p-.49)/.36),0)+.9*ss(.84,.96,p)*(p<.97?1:0)+.25:0;
+  return 0;}
+function aoP(L,p){const dec=(a,b,x)=>a+(b-a)*(1-Math.exp(-x*3));
+  if(L==="AS"){if(p<.07)return 80-p*20;if(p<.38)return 78+22*Math.sin(Math.PI/2*Math.min(1,(p-.07)/.26));const x=(p-.38)/.62;return 100-20*x;}
+  if(L==="AR"){if(p<.06)return 52-p*20;if(p<.38){const x=(p-.06)/.32;return 51+105*Math.sin(Math.PI*Math.min(1,x*.9))*(x<.55?1:1)-(x>.55?(x-.55)*45:0);}const x=(p-.38)/.62;return 105-55*(1-Math.exp(-x*2.6))/(1-Math.exp(-2.6));}
+  if(p<.06)return 80-p*15;if(p<.38){const x=(p-.06)/.32;return 79+41*Math.sin(Math.PI*Math.min(1,x*.82))-(x>.6?(x-.6)*12:0);}
+  const x=(p-.38)/.62;if(x<.04)return 104-60*x;return 104+ (x<.1?(x-.04)*40:2.4)-26*(1-Math.exp(-(x-.04)*2.2))/(1-Math.exp(-2.2));}
+function drawPcg(p){const g=pctx;g.setTransform(DPR,0,0,DPR,0,0);g.clearRect(0,0,PW,PH);
+  const L=LSdisp,x0=70,x1=PW-14,W=x1-x0,X=q=>x0+q*W;
+  const r1=[8,PH*.42-4],r2=[PH*.42+6,PH-16];
+  g.font="600 11px IBM Plex Sans Thai, sans-serif";g.fillStyle="#6c6774";g.textBaseline="middle";
+  g.fillText("เสียงหัวใจ",6,(r1[0]+r1[1])/2);g.fillText("ความดัน Ao",6,(r2[0]+r2[1])/2);
+  // systole shading
+  g.fillStyle="rgba(138,40,70,.06)";g.fillRect(X(0),4,X(SYS)-X(0),PH-14);
+  g.fillStyle="#9a94a0";g.font="10.5px IBM Plex Sans Thai, sans-serif";g.textBaseline="alphabetic";
+  g.fillText("systole",X(.15),PH-3);g.fillText("diastole",X(.64),PH-3);
+  // heart sounds
+  const mid=(r1[0]+r1[1])/2,amp=(r1[1]-r1[0])/2;
+  g.strokeStyle="#ddd7cf";g.beginPath();g.moveTo(x0,mid);g.lineTo(x1,mid);g.stroke();
+  const s1A=L==="MS"?1:L==="MR"?.45:.8,s2A=L==="AS"?.4:.75;
+  function burst(c,wd,a){g.beginPath();for(let i=0;i<=40;i++){const q=c+(i/40-.5)*wd;const e=Math.sin(Math.PI*i/40);g.lineTo(X(q),mid-Math.sin(i*1.9)*amp*a*e);}g.strokeStyle="#24212b";g.lineWidth=1.6;g.stroke();}
+  const mur=L==="N"?null:L;
+  if(mur){g.beginPath();let first=true;for(let i=0;i<=900;i++){const q=i/900,e=murEnv(mur,q);if(e<=0){first=true;continue;}const y=mid-NOISE[i%2000]*amp*.62*e*(mur==="MS"?.8:1);if(first){g.moveTo(X(q),mid);first=false;}g.lineTo(X(q),y);}
+    g.strokeStyle="#c0577b";g.lineWidth=1;g.stroke();}
+  burst(.02,.035,s1A);burst(.385,.025,s2A);
+  if(L==="MS")burst(.455,.012,.5);
+  g.fillStyle="#24212b";g.font="600 11px IBM Plex Sans Thai, sans-serif";g.fillText("S1",X(.02)-7,r1[0]+9);g.fillText("S2",X(.385)-7,r1[0]+9);
+  if(L==="MS")g.fillText("OS",X(.455)-5,r1[0]+9);
+  // aortic pressure
+  const pmin=45,pmax=160,Y=v=>r2[1]-(v-pmin)/(pmax-pmin)*(r2[1]-r2[0]);
+  g.strokeStyle="#ece7e0";g.lineWidth=1;[80,120].forEach(v=>{g.beginPath();g.moveTo(x0,Y(v));g.lineTo(x1,Y(v));g.stroke();g.fillStyle="#b3adb8";g.font="10px IBM Plex Sans Thai, sans-serif";g.fillText(v,x1-18,Y(v)-2);});
+  g.beginPath();for(let i=0;i<=300;i++){const q=i/300;const y=Y(aoP(L,q));i?g.lineTo(X(q),y):g.moveTo(X(q),y);}g.strokeStyle="#8a2846";g.lineWidth=2;g.stroke();
+  // playhead
+  g.strokeStyle="rgba(36,33,43,.55)";g.lineWidth=1.5;g.beginPath();g.moveTo(X(p),4);g.lineTo(X(p),PH-12);g.stroke();
+  g.fillStyle="#24212b";g.beginPath();g.arc(X(p),Y(aoP(L,p)),3.5,0,7);g.fill();}
+
+/* ---------- synthetic sound ---------- */
+let ac=null,master=null,noiseB=null,audioOn=false;
+function initAudio(){if(ac)return;const C=window.AudioContext||window.webkitAudioContext;if(!C)return;ac=new C();master=ac.createGain();master.gain.value=.55;master.connect(ac.destination);
+  noiseB=ac.createBuffer(1,ac.sampleRate*2,ac.sampleRate);const d=noiseB.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
+function thump(t,f,dur,a){[f,f*1.45].forEach((fr,k)=>{const o=ac.createOscillator(),g=ac.createGain();o.type="sine";o.frequency.setValueAtTime(fr,t);o.frequency.exponentialRampToValueAtTime(fr*.7,t+dur);
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(a*(k?.5:1),t+.008);g.gain.exponentialRampToValueAtTime(.0005,t+dur);o.connect(g);g.connect(master);o.start(t);o.stop(t+dur+.02);});}
+function murmurSnd(t0,L){const src=ac.createBufferSource();src.buffer=noiseB;const f=ac.createBiquadFilter(),g=ac.createGain();
+  const cfg={MR:["bandpass",320,.9,.32],AS:["bandpass",260,1.1,.4],AR:["highpass",420,.7,.28],MS:["lowpass",110,1,.9]}[L];
+  f.type=cfg[0];f.frequency.value=cfg[1];f.Q.value=cfg[2];const n=128,curve=new Float32Array(n);for(let i=0;i<n;i++)curve[i]=murEnv(L,i/(n-1))*cfg[3]+.0001;
+  g.gain.setValueAtTime(.0001,t0);g.gain.setValueCurveAtTime(curve,t0+.001,T*.999);src.connect(f);f.connect(g);g.connect(master);src.start(t0);src.stop(t0+T);}
+function scheduleBeat(){if(!audioOn||!ac)return;const t=ac.currentTime+.02,L=LSdisp;
+  thump(t,42,.11,L==="MS"?.95:L==="MR"?.35:.7);thump(t+SYS*T*1.01,58,.08,L==="AS"?.25:.55);
+  if(L==="MS")thump(t+.455*T,95,.04,.3);if(L!=="N")murmurSnd(t,L);}
+const sb=document.getElementById("sound");
+sb.onclick=()=>{initAudio();if(!ac){sb.textContent="เบราว์เซอร์นี้เล่นเสียงไม่ได้";return;}audioOn=!audioOn;if(ac.state==="suspended")ac.resume();sb.setAttribute("aria-pressed",audioOn);sb.textContent=audioOn?"🔊 ปิดเสียง":"🔊 เปิดเสียง";};
+
+/* ---------- steps ---------- */
+const SC=[
+ {t:"หัวใจซีกซ้ายและลิ้นสองตัว",les:"N",lead:"หัวใจซีกซ้ายถูกผ่าครึ่ง ลากหมุนดูได้ เลือดแดงไหลจาก pulmonary veins ผ่านห้องหัวใจออกไปที่ aorta",
+  pts:["เลือดจากปอดเข้า <b>left atrium (LA)</b> ผ่าน pulmonary veins","<b>Mitral valve</b> (2 แผ่น) กั้นระหว่าง LA กับ <b>left ventricle (LV)</b>","<b>Aortic valve</b> (3 cusp ในภาพผ่าครึ่งเห็น 2) กั้นระหว่าง LV กับ <b>aorta</b>","ลิ้นเปิดปิดตามความต่างของความดันสองฝั่งเท่านั้น ลิ้นไม่มีกล้ามเนื้อของตัวเอง"],
+  cam:[[-7,4,19],[.9,.2,-.8]]},
+ {t:"รอบการเต้นของหัวใจ กับ S1 และ S2",les:"N",lead:"ดูลิ้นสองตัวเปิดสลับกัน แล้วเทียบกับเสียงหัวใจและความดันใน aorta ในแถบด้านล่าง",
+  pts:["<b>S1</b> = ลิ้น mitral (และ tricuspid) ปิด ตอนต้น <b>systole</b> เมื่อความดัน LV สูงกว่า LA","Systole: ความดัน LV สูงกว่า aorta → <b>aortic valve เปิด</b> เลือดถูกบีบออก","<b>S2</b> = ลิ้น aortic (และ pulmonic) ปิด ตอนต้น <b>diastole</b>","Diastole: mitral เปิด → rapid filling → ช่วงนิ่ง (diastasis) → atrial kick ตอนท้าย","กฎจำ: ลิ้นที่ <b>ตีบ</b> มีเสียงฟู่ตอนที่มัน <b>ควรเปิด</b> · ลิ้นที่ <b>รั่ว</b> มีเสียงฟู่ตอนที่มัน <b>ควรปิด</b>"],
+  cam:[[.9,.6,21],[.9,.2,-.6]]},
+ {t:"Mitral stenosis (MS)",les:"MS",lead:"ลิ้น mitral หนาและเปิดได้แคบ เลือดต้องพุ่งผ่านรูเล็กตลอด diastole ความดันจึงไล่ย้อนกลับไปที่ LA และปอด",
+  pts:["สาเหตุเกือบทั้งหมดคือ <b>rheumatic heart disease</b> (commissure เชื่อมกัน ลิ้นหนา เปิดเป็นรูปปากปลา)","LA ความดันสูง → <b>LA โต → AF, ลิ่มเลือด</b> → ปอดคั่ง → pulmonary hypertension → RV ล้ม","เสียง: <b>loud S1 · opening snap (OS) · diastolic rumble</b> ที่ apex ฟังด้วย bell ท่านอนตะแคงซ้าย · มี presystolic accentuation ถ้ายังเป็น sinus","ช่วง <b>S2–OS ยิ่งสั้นยิ่งตีบมาก</b> · MVA ≤ 1.5 cm² = มีนัยสำคัญ · ≤ 1.0 = รุนแรงมาก"],
+  drugs:[["PMBC","เมื่อมีอาการและลิ้นเหมาะ"],["Warfarin","Rheumatic MS + AF (ไม่ใช้ NOAC)"]],cam:[[7,3.8,14],[1.3,1.2,-.6]]},
+ {t:"Mitral regurgitation (MR)",les:"MR",lead:"ลิ้น mitral ปิดไม่สนิท ตอน systole เลือดส่วนหนึ่งพุ่งย้อนกลับเข้า LA (jet สีเหลือง)",
+  pts:["เลือดรั่วย้อนตลอด systole → <b>holosystolic murmur</b> ที่ apex กระจายไปรักแร้ · <b>S1 เบา</b>","Volume overload → <b>LA และ LV ขยาย</b> · apex beat เลื่อนออกด้านข้าง","Acute MR (papillary muscle rupture, IE, chordae ขาด) → pulmonary edema ทันทีเพราะ LA ยังไม่ทันขยาย","Primary MR = ลิ้นเสีย → ซ่อมลิ้น · Secondary MR = LV ขยาย → GDMT/CRT ก่อน แล้วค่อย TEER","Severe MR: EROA ≥ 0.4 · RVol ≥ 60 · RF ≥ 50% · ผ่าตัดก่อน LV เสีย: LVEF ≤ 60% หรือ LVESD ≥ 40 mm"],
+  drugs:[["ซ่อมลิ้น mitral","Primary MR รุนแรง"],["GDMT/CRT → TEER","Secondary MR"]],cam:[[7.5,1.4,14.5],[1.1,.5,-.6]]},
+ {t:"Aortic stenosis (AS)",les:"AS",lead:"ลิ้น aortic หนาและเปิดแคบ LV ต้องบีบแรงขึ้นมากเพื่อดันเลือดผ่านรูเล็ก (jet สีเหลือง)",
+  pts:["Pressure overload → <b>concentric LVH</b> (ผนังหนา โพรงเล็ก)","เสียง: <b>ejection systolic murmur (crescendo–decrescendo)</b> ที่ RUSB กระจายขึ้น carotid · ยิ่งตีบยิ่ง peak ช้า · A2 เบา","ชีพจร <b>pulsus parvus et tardus</b> (เล็ก ขึ้นช้า) · pulse pressure แคบ ดูเส้นความดันด้านล่าง","อาการ <b>SAD</b>: syncope · angina · dyspnea (HF) — มีอาการแล้วพยากรณ์แย่ ต้องเปลี่ยนลิ้น","Severe AS: Vmax ≥ 4 m/s · mean gradient ≥ 40 · AVA ≤ 1.0 cm²"],
+  drugs:[["TAVI","อายุ ≥ 70 ปี (ESC/EACTS 2025)"],["SAVR","อายุ < 70 ความเสี่ยงผ่าตัดต่ำ"]],cam:[[-7.2,2.8,14],[-1.1,.8,-.6]]},
+ {t:"Aortic regurgitation (AR)",les:"AR",lead:"ลิ้น aortic ปิดไม่สนิท ตอน diastole เลือดจาก aorta ไหลย้อนกลับเข้า LV (jet สีเหลือง)",
+  pts:["เสียง: <b>early diastolic blowing murmur (decrescendo)</b> ข้าง sternum ซ้าย · ICS 3 ซ้าย = ลิ้น · ICS 2 ขวา = aortic root","Volume overload → <b>LV ขยาย (eccentric)</b> stroke volume ใหญ่","<b>Wide pulse pressure</b> (systolic สูง diastolic ต่ำ) → water-hammer pulse, Quincke, de Musset, Duroziez","Severe AR: VC > 0.6 · RVol ≥ 60 · RF ≥ 50% · EROA ≥ 0.3","ผ่าตัด: มีอาการ · LVEF ≤ 50% · LVESD > 50 mm หรือ LVESDi > 25 mm/m²"],
+  drugs:[["เปลี่ยนลิ้น aortic","ตามเกณฑ์ ESC/EACTS 2025"]],cam:[[-7.5,.6,14.5],[-.9,-.5,-.6]]},
+ {t:"เทียบ 4 โรค และเทคนิคข้างเตียง",les:"pick",lead:"กดเลือกโรคที่มุมซ้ายล่างของภาพ หรือปล่อยให้สลับเอง แล้วเทียบเสียงฟู่กับเส้นความดัน",
+  pts:["<b>ตีบ</b> = เสียงฟู่ตอนลิ้นควรเปิด (AS systole · MS diastole) · <b>รั่ว</b> = เสียงฟู่ตอนลิ้นควรปิด (MR systole · AR diastole)","หายใจเข้า → murmur ของ<b>หัวใจขวา</b>ดังขึ้น (Carvallo's sign ของ TR)","ยืนหรือ Valsalva (preload ลด) → murmur ส่วนใหญ่เบาลง <b>ยกเว้น HOCM และ MVP</b> ที่ดังหรือยาวขึ้น","นั่งยองหรือกำมือ (afterload เพิ่ม) → <b>MR และ AR ดังขึ้น</b> · HOCM เบาลง"],
+  table:true,cam:[[.9,.6,21],[.9,.2,-.6]]}
+];
+const TABLE=`<div class="tw"><table class="cmp"><thead><tr><th>โรค</th><th>จังหวะ</th><th>รูปแบบเสียง</th><th>ตำแหน่ง</th><th>หัวใจปรับตัว</th></tr></thead><tbody>
+<tr><td><b>MS</b></td><td>Diastole</td><td>Loud S1 · OS · rumble</td><td>Apex (bell)</td><td>LA โต → AF, PH</td></tr>
+<tr><td><b>MR</b></td><td>Systole</td><td>Holosystolic · S1 เบา</td><td>Apex → รักแร้</td><td>LA + LV ขยาย</td></tr>
+<tr><td><b>AS</b></td><td>Systole</td><td>Ejection (crescendo–decrescendo)</td><td>RUSB → carotid</td><td>Concentric LVH</td></tr>
+<tr><td><b>AR</b></td><td>Diastole</td><td>Early diastolic blowing</td><td>LSB ICS 3</td><td>LV ขยาย (eccentric)</td></tr></tbody></table></div>`;
+
+/* ---------- UI ---------- */
+const $=id=>document.getElementById(id);
+const dots=$("dots");$("tot").textContent=SC.length;
+SC.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.textContent=i+1;b.title=s.t;b.setAttribute("aria-label",`ขั้นที่ ${i+1}: ${s.t}`);b.onclick=()=>go(i);dots.appendChild(b);});
+const picker=$("picker");let pickAuto=true,pickIdx=0,pickBeats=0;const PICKS=[["N","ปกติ"],["MS","MS"],["MR","MR"],["AS","AS"],["AR","AR"]];
+PICKS.forEach(([k,n],i)=>{const b=document.createElement("button");b.type="button";b.textContent=n;b.dataset.k=k;b.onclick=()=>{pickAuto=false;pickIdx=i;setLesion(k);syncPick();};picker.appendChild(b);});
+function syncPick(){[...picker.children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===LS));}
+let cur=0,playing=!reduce,speed=1,sceneStart=performance.now(),elapsed=0;const BASE=15000;const dur=()=>BASE*speed*(cur===6?2:1);
+let tween=null;
+function flyTo(){const c=SC[cur].cam;tween={p0:camera.position.clone(),t0:controls.target.clone(),p1:V(...c[0]),t1:V(...c[1]),s:performance.now(),d:reduce?1:1800};}
+controls.addEventListener("start",()=>{tween=null;});
+function setLesion(k){LS=k;}
+function renderUI(){const sc=SC[cur];
+  $("num").textContent=cur+1;$("ttl").textContent=sc.t;$("lead").textContent=sc.lead;
+  $("pts").innerHTML=sc.pts.map(p=>`<li>${p}</li>`).join("");$("extra").innerHTML=sc.table?TABLE:"";
+  $("drugs").innerHTML=(sc.drugs||[]).map(d=>`<span>การรักษา: <b>${d[0]}</b> (${d[1]})</span>`).join("");
+  [...dots.children].forEach((b,i)=>{b.classList.toggle("cur",i===cur);b.classList.toggle("done",i<cur);b.setAttribute("aria-current",i===cur?"step":"false");});
+  $("prev").disabled=cur===0;picker.classList.toggle("on",cur===6);}
+function go(i){cur=Math.max(0,Math.min(SC.length-1,i));elapsed=0;sceneStart=performance.now();
+  if(SC[cur].les==="pick"){pickAuto=true;pickIdx=0;pickBeats=0;setLesion("N");syncPick();}else setLesion(SC[cur].les);
+  renderUI();flyTo();}
+function setPlay(p){playing=p;if(p){if(cur===SC.length-1&&elapsed>=dur())go(0);sceneStart=performance.now()-elapsed;}
+  $("play").textContent=p?"⏸ หยุด":(cur===SC.length-1&&elapsed>=dur()?"↻ เล่นใหม่":"▶ เล่น");}
+$("prev").onclick=()=>go(cur-1);$("next").onclick=()=>go(cur+1);$("play").onclick=()=>setPlay(!playing);$("recam").onclick=flyTo;
+$("speed").onchange=e=>{const f=elapsed/dur();speed=+e.target.value;elapsed=f*dur();sceneStart=performance.now()-elapsed;};
+document.addEventListener("keydown",e=>{if(e.target.tagName==="SELECT")return;
+  if(e.key==="ArrowRight"){go(cur+1);e.preventDefault();}else if(e.key==="ArrowLeft"){go(cur-1);e.preventDefault();}
+  else if(e.key===" "&&e.target.tagName!=="BUTTON"){setPlay(!playing);e.preventDefault();}});
+
+/* ---------- helpers ---------- */
+const tmp=new THREE.Vector3();
+function project(p,el){tmp.copy(p).project(camera);if(tmp.z>1||tmp.x<-1.1||tmp.x>1.1||tmp.y<-1.1||tmp.y>1.1){el.classList.remove("on");return;}
+  const w=host.clientWidth,h=host.clientHeight;el.style.transform=`translate(${((tmp.x+1)/2*w).toFixed(1)}px,${((1-tmp.y)/2*h).toFixed(1)}px) translate(-50%,-100%)`;el.classList.add("on");}
+const cN=new THREE.Color(0xf2d7c9),cD=new THREE.Color(0xf4efcf);
+
+/* ---------- frame ---------- */
+const t0=performance.now();let lastBeat=-1;
+function frame(now){try{step(now);}catch(e){console.error(e);}requestAnimationFrame(frame);}
+function step(now){
+  const time=(now-t0)/1000,beat=Math.floor(time/T),p=(time/T)%1,c=cyc(p);
+  if(beat!==lastBeat){lastBeat=beat;
+    if(cur===6&&pickAuto){pickBeats++;if(pickBeats>=3){pickBeats=0;pickIdx=(pickIdx+1)%PICKS.length;setLesion(PICKS[pickIdx][0]);syncPick();}}
+    if(LSdisp!==LS){LSdisp=LS;clearParts();}
+    scheduleBeat();}
+  // lesion params ease toward target
+  const tg=LES[LSdisp];for(const k in tg){P[k]+= (tg[k]-P[k])*.06;}
+  rebuildIfNeeded();
+  // chambers move with the cycle
+  const sx=1-.13*c.con,sy=1-.06*c.con;LVg.scale.set(sx,sy,sx);
+  const C=laC(),ka=1-.07*c.kick+.04*c.con;LAg.position.copy(C);laSph.scale.setScalar(P.ra*ka);laRing.scale.setScalar(P.ra*ka);
+  funnel.position.set((MV.x+C.x)/2,(C.y-P.ra*.9)/2,0);funnel.scale.set(1,Math.max(.2,C.y-P.ra*.9),1);
+  // valves
+  const dis=P.dis;mvMat.color.copy(cN).lerp(cD,Math.min(1,P.mT>.2?1:0)*1);avMat.color.copy(cN).lerp(cD,P.aT>.2?1:0);
+  const mOpen=P.mOpen*c.mo,aOpen=P.aOpen*c.ao;
+  const mGap=P.mGap,aGap=P.aGap;
+  // mitral: closed slightly domed toward LA; MR → posterior leaflet prolapses into LA leaving a gap
+  mvL.rotation.z=.08-mOpen-(mGap?(-.05):0);mvR.rotation.z=-.08+mOpen-(mGap?.55*(1-c.mo):0);
+  mvL.userData.m.scale.y=P.mT;mvR.userData.m.scale.y=P.mT;
+  // aortic: opens upward; AR → cusps sag into LV in diastole leaving a gap
+  avL.rotation.z=aOpen-.05-(aGap?.38*(1-c.ao):0);avR.rotation.z=-aOpen+.05+(aGap?.38*(1-c.ao):0);
+  avL.userData.m.scale.y=P.aT;avR.userData.m.scale.y=P.aT;
+  // phase chips
+  $("ph-sys").classList.toggle("on",c.sys);$("ph-dia").classList.toggle("on",!c.sys);
+  // particles
+  if(!reduce&&!document.hidden)(FLOWS[LSdisp]||[]).forEach((f,i)=>{if(p<f.w[0]||p>f.w[1])return;const k=LSdisp+i;if(!lastSp[k]||now-lastSp[k]>f.ev){lastSp[k]=now;spawn(f);}});
+  parts=parts.filter(q=>{const t=Math.max(0,(now-q.t0)/q.du);if(t>=1){pg.remove(q.m);return false;}q.m.position.copy(q.cv.getPoint(t));return true;});
+  // camera
+  if(tween){const k=Math.min(1,(now-tween.s)/tween.d),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;camera.position.lerpVectors(tween.p0,tween.p1,e);controls.target.lerpVectors(tween.t0,tween.t1,e);if(k>=1)tween=null;}
+  controls.update();renderer.render(scene,camera);
+  TAGS.forEach(t=>{if(t.show(cur))project(t.pos(),t.el);else t.el.classList.remove("on");});
+  drawPcg(p);
+  if(playing){elapsed=now-sceneStart;if(elapsed>=dur()){if(cur<SC.length-1)go(cur+1);else{elapsed=dur();setPlay(false);}}}
+  $("prog").style.width=(Math.min(1,elapsed/dur())*100).toFixed(1)+"%";}
+function postH(){try{if(parent!==window)parent.postMessage({a3dh:document.documentElement.scrollHeight},"*");}catch(e){}}
+window.addEventListener("load",postH);window.addEventListener("resize",postH);setTimeout(postH,900);
+resize();rebuildIfNeeded();go(0);const c0=SC[0].cam;camera.position.set(...c0[0]);controls.target.set(...c0[1]);tween=null;setPlay(playing);requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

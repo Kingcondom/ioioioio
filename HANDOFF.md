@@ -475,3 +475,18 @@ publish เฉพาะ `data/air.json` กับ `data/nephro.json` โดย *
 - ข้อ Mock ที่ผูกแล้ว: MOCK-012 · 096 · 147 (ซ้ำกับคาบอื่นได้) · 148 · 151 · 164
 - `postit/index.html` ใน repo เคยตามหลัง artifact สด (27 KB vs 37 KB) — ดึงของสดมาแล้ว · `artifact/data/hemonc.json` ก็ดึงของสดมาแล้ว
 - ตรวจด้วย Playwright: ทุกหัวข้อเรนเดอร์ ไม่มี `[[fig:]]` ค้าง ไม่ล้นที่ 390 px · ภาพเคลื่อนไหวดูขั้นสุดท้ายแล้วไม่มีข้อความทับกัน
+
+---
+
+## 🧊 8 พ.ย. 2569 — ภาพ 3D แยกไฟล์ใน learn (เรื่องแรก: คาบ 27 ลิ้นหัวใจ)
+
+- **ไฟล์ใหม่** `artifact/anim/valve-3d.html` (≈ 45 KB · three.js 0.128.0 จาก jsDelivr) — หัวใจซีกซ้ายผ่าครึ่ง 7 ขั้น
+  (ปกติ · รอบหัวใจ S1/S2 · MS · MR · AS · AR · เทียบ 4 โรค) + phonocardiogram/ความดัน Ao ซิงก์กับภาพ + เสียงสังเคราะห์
+  ฉบับหน้าเต็มแยก: https://claude.ai/artifact/SH33sKXg6iLJyyiWk6GYgx (owner only)
+- **ข้อมูล** `cardio.json` → `cardio-vhd-02.anims["c27-3d"] = {title, src:"anim/valve-3d.html", url, desc}` และ `[[anim:c27-3d]]` ต่อท้าย `[[fig:vhd_murmurs]]`
+- **index.html (แก้บนของสดด้วย edit_version)** — `animHtml()` ถ้า `a.src` → `anim3dHtml()` การ์ดมีปุ่ม "▶ เล่นภาพ 3D ในหน้านี้" (โหลด iframe เมื่อกดเท่านั้น)
+  + ลิงก์ "เปิดเป็นหน้าเต็ม ↗" · หน้าลูกส่ง `postMessage({a3dh})` ให้ iframe สูงพอดี · คู่แก้เก็บไว้ที่ `artifact/tools/a3d/index_edits.json`
+  ถ้ามีคน publish `index.html` จากสำเนาใน repo ที่เก่ากว่าของสด ให้ใส่คู่แก้นี้ซ้ำ
+- ⚠️ `artifact/index.html` ใน repo ยัง**เก่ากว่าของสด** (100.9 KB vs 117.6 KB ก่อนแพตช์) — แพตช์ถูกใส่ในสำเนา repo ด้วยแต่ห้าม publish ทับทั้งไฟล์
+- learn หลังงานนี้: v `1794110567-9d99` · `checkdata.py` 0 error · `verify.py` ผ่าน · ทดสอบการ์ด 3D ใน Chromium (swiftshader) แล้ว iframe โหลดและปรับความสูงได้
+- เพิ่มเรื่องต่อไป: ทำหน้า `anim/<เรื่อง>-3d.html` ด้วย skill `mechanism-3d-animation` → ใส่ `anims[k].src` ในหัวข้อ → publish_files patch แค่ 2 ไฟล์ (ไม่ต้องแตะ index.html อีก)

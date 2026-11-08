@@ -277,6 +277,16 @@ footer{color:var(--ink-3);font-size:12.4px;padding:26px 0 40px;text-align:center
 .fig .lok{fill:none;stroke:var(--ok)}.fig .lbad{fill:none;stroke:var(--bad)}.fig .lms{fill:none;stroke:var(--miss)}
 .fig .lwa{fill:none;stroke:var(--focus)}.fig .lru{fill:none;stroke:var(--rule-strong)}
 .fig .w2{stroke-width:2.2}.fig .w3{stroke-width:3.4}.fig .w5{stroke-width:5}.fig .da{stroke-dasharray:5 4}.fig .dt{stroke-dasharray:1.5 3.5;stroke-linecap:round}.fig .ns{stroke:none}
+/* ---------- ภาพ 3D แยกไฟล์ (section.anims[k].src → anim/*.html · โหลดเมื่อกด) ---------- */
+.fig.a3d{border-color:color-mix(in srgb,var(--accent) 30%,var(--rule))}
+.fig.a3d .figt span{color:var(--accent);}
+.a3dd{margin:6px 0 10px;font-size:14px;color:var(--ink-2)}
+.a3dbox{border-radius:12px;overflow:hidden;background:radial-gradient(120% 90% at 50% 35%,#e9ecf2 0%,#cfd4de 100%);display:grid;place-items:center;min-height:180px}
+.a3dbox.on{display:block;min-height:0;background:none}
+.a3dbox iframe{display:block;width:100%;height:1420px;border:0}
+@media (max-width:700px){.a3dbox iframe{height:1900px}}
+.a3dgo{font:inherit;font-size:15px;font-weight:700;padding:10px 20px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);cursor:pointer}
+.a3dlink{display:inline-block;margin-top:8px;font-size:13.5px;color:var(--accent-ink)}
 /* ---------- กลไกแบบภาพเคลื่อนไหว ([[anim:key]] + section.anims) ---------- */
 .fig.anim{border-color:color-mix(in srgb,var(--accent) 30%,var(--rule))}
 .fig.anim .figt span{color:var(--accent);}
@@ -533,8 +543,25 @@ function renderSync(){
 /* ---------- กลไกแบบภาพเคลื่อนไหว + หลักจำ ---------- */
 var ANIMS={},ANIMN=0,RMOTION=false;
 try{RMOTION=window.matchMedia("(prefers-reduced-motion: reduce)").matches;}catch(e){}
+function anim3dHtml(a){
+  ANIMN++;
+  return "<figure class='fig a3d'><div class='figt'><span>▶ กลไก "+ANIMN+" · 3D</span>"+inline(a.title||"")+"</div>"+
+    (a.desc?"<p class='a3dd'>"+inline(a.desc)+"</p>":"")+
+    "<div class='a3dbox' data-src='"+esc(a.src)+"'><button type='button' class='a3dgo'>▶ เล่นภาพ 3D ในหน้านี้</button></div>"+
+    (a.url?"<a class='a3dlink' href='"+esc(a.url)+"' target='_blank' rel='noopener'>เปิดเป็นหน้าเต็ม ↗</a>":"")+"</figure>";
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest(".a3dgo");if(!b)return;
+  var box=b.parentNode,f=document.createElement("iframe");
+  f.src=box.getAttribute("data-src");f.title="ภาพ 3D";f.setAttribute("allow","autoplay; fullscreen");
+  box.innerHTML="";box.appendChild(f);box.classList.add("on");
+});
+window.addEventListener("message",function(e){
+  var h=e.data&&e.data.a3dh;if(!h)return;
+  document.querySelectorAll(".a3dbox iframe").forEach(function(f){if(f.contentWindow===e.source)f.style.height=(Math.min(+h,4000)+4)+"px";});
+});
 function animHtml(k){
-  var a=ANIMS[k];if(!a||!a.svg||!a.steps||!a.steps.length)return "";
+  var a=ANIMS[k];if(a&&a.src)return anim3dHtml(a);if(!a||!a.svg||!a.steps||!a.steps.length)return "";
   var m=/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"/.exec(a.svg),w=m?+m[1]:560;
   var wide=w>440,sty="max-width:"+Math.round(w*1.25)+"px"+(wide?";min-width:"+Math.round(w*0.74)+"px":"");
   ANIMN++;
