@@ -59,3 +59,4 @@
 
 - 9 พ.ย. v68: ปุ่มย่อ/ขยายขนาดเนื้อหา (`.tr-fz`, 80–150%, คีย์ - / =, localStorage `med421-learn-fz`) ตามคอมเมนต์ใน artifact · ทดสอบ `tr/test_fz.js`
 - 9 พ.ย. v69: ปุ่มซ่อนแถบซ้าย/ขวาบนคอม (`html.tr-noside/.tr-nodock`, ปุ่มคืนเป็นแถบแคบขอบจอ, คีย์ [ ], localStorage `med421-learn-panes`) · ทดสอบ `tr/test_pane.js`
+- 9 พ.ย. v71: ปุ่ม "กดว่าเรียนจบคาบนี้" (`markLec`, ใช้ state.done เดิม) — สร้างต่อจาก v70 ของอีก session (วงล้อไล่หัวข้อในคาบ) · tr.js/tr.css ในโฟลเดอร์นี้ยังเป็นของ v69 ให้ใช้ index_v71.html เป็นฐาน
