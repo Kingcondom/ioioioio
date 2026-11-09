@@ -82,7 +82,7 @@ function renderDock(){
   pn.appendChild(nb);dock.appendChild(pn);
 
   var k=el("section","dk");k.appendChild(el("div","dk-h","<h3>คีย์ลัด</h3>"));
-  var kl=el("ul","keys");[["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบในการ์ด","1–5"],["เปลี่ยนชุดวิชา","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["โหมดพรีเซนต์","P"]].forEach(function(x){kl.appendChild(el("li",null,"<span>"+x[0]+"</span><span class='kbd'>"+x[1]+"</span>"))});
+  var kl=el("ul","keys");[["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (หลังอ่านจบ)","1–5"],["เปลี่ยนชุดวิชา","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["โหมดพรีเซนต์","P"]].forEach(function(x){kl.appendChild(el("li",null,"<span>"+x[0]+"</span><span class='kbd'>"+x[1]+"</span>"))});
   k.appendChild(kl);dock.appendChild(k);
 }
 function ask(t){
@@ -91,7 +91,7 @@ function ask(t){
   renderDock()}
 
 /* ---------- การ์ด "เรียนต่อ" พร้อมฟังก์ชันของ learn ---------- */
-var ANS={};
+var ANS={},QOPEN=false;
 function studyCard(){
   var P=DATA.pv,c=el("section","study");c.setAttribute("aria-label","เรียนต่อจากที่ค้าง");
   var hd=el("div","st-head");
@@ -110,11 +110,15 @@ function studyCard(){
     mn.appendChild(el("ul",null,(m.lines||[]).map(function(r){return "<li><b>"+esc(r[0])+"</b><span>"+inl(r[1])+"</span></li>"}).join("")));
     if(m.note)mn.appendChild(el("p",null,inl(m.note)));left.appendChild(mn)});
   body.appendChild(left);
-  var qz=el("div","quiz");
+  var n=P.items.length,gate=el("div","gate");gate.innerHTML="<div><b>อ่านจบแล้ว ลองตอบ "+n+" ข้อของหัวข้อนี้</b><span>ข้อสอบจะขึ้นต่อด้านล่าง ตอบแล้วเฉลยพร้อมคำอธิบายทันที</span></div>";
+  var gb=el("button","btn primary press","ทำข้อสอบท้ายหัวข้อ");gb.type="button";gate.appendChild(gb);left.appendChild(gate);
+  var qz=el("div","quiz");qz.hidden=true;qz.appendChild(el("div","q-head","<h4>เช็คความเข้าใจ</h4><small>"+n+" ข้อ · กดเลข 1–5 เพื่อตอบ</small>"));
+  gb.addEventListener("click",function(){gate.hidden=true;qz.hidden=false;QOPEN=true;qz.classList.add("in");
+    setTimeout(function(){try{qz.scrollIntoView({block:"start",behavior:RM?"auto":"smooth"})}catch(_){}},40)});
   P.items.forEach(function(it,qi){var q=el("div","qz");q.dataset.qi=qi;renderQ(q,it,qi);qz.appendChild(q)});
   body.appendChild(qz);c.appendChild(body);
   var ft=el("div","st-foot");ft.appendChild(el("span","hint","ตอบครบทุกข้อแล้วหัวข้อนี้จะนับว่าเรียนจบ"));
-  var nx=el("button","btn primary press","เปิดบทเรียนเต็มหัวข้อนี้");nx.type="button";nx.addEventListener("click",function(){toast("ในเว็บจริง: เปิดหน้าหัวข้อเต็ม")});ft.appendChild(nx);c.appendChild(ft);
+  var nx=el("button","btn press","เปิดบทเรียนเต็มหัวข้อนี้");nx.type="button";nx.addEventListener("click",function(){toast("ในเว็บจริง: เปิดหน้าหัวข้อเต็ม")});ft.appendChild(nx);c.appendChild(ft);
   c.addEventListener("click",function(e){
     var b=e.target.closest&&e.target.closest("button");if(!b)return;
     if(b.hasAttribute("data-tq")){var tw=b.parentNode.nextElementSibling,on=!tw.classList.contains("cov");tw.classList.toggle("cov",on);
@@ -175,6 +179,6 @@ document.addEventListener("keydown",function(e){
   if((e.ctrlKey||e.metaKey)&&(e.key==="k"||e.key==="K")){e.preventDefault();openPal();return}
   if(e.key==="/"&&DESK.matches){e.preventDefault();openPal();return}
   if(PAL||W||M||sh.open)return;
-  if(DESK.matches&&/^[1-5]$/.test(e.key)){var its=DATA.pv.items;for(var q=0;q<its.length;q++){if(ANS[its[q].id]==null){answer(q,+e.key-1);break}}return}
+  if(DESK.matches&&QOPEN&&/^[1-5]$/.test(e.key)){var its=DATA.pv.items;for(var q=0;q<its.length;q++){if(ANS[its[q].id]==null){answer(q,+e.key-1);break}}return}
   if(DESK.matches&&(e.key==="p"||e.key==="P")&&!e.ctrlKey&&!e.metaKey){toast("ในเว็บจริง: เปิดโหมดพรีเซนต์")}
 });

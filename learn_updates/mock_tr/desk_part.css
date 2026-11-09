@@ -89,7 +89,6 @@
   .st-meta{display:flex;flex-wrap:wrap;gap:8px}
   .nl{font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--o-bg);color:var(--o-fg)}
   .st-body{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}
-  @container (min-width:880px){.st-body{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}.quiz{position:sticky;top:24px}}
   .prose{font-size:18px;line-height:1.65}
   .prose h3{font-size:20px;line-height:1.4;margin:24px 0 8px}
   .prose h3:first-child{margin-top:0}
@@ -118,6 +117,19 @@
   .mn li b{color:var(--a-fg)}
   .mn p{margin:0;font-size:14px;color:var(--muted)}
   .quiz{display:grid;gap:16px}
+  .quiz[hidden]{display:none}
+  .quiz.in{animation:qIn .4s cubic-bezier(.2,.9,.25,1.05)}
+  @keyframes qIn{from{opacity:0;transform:translateY(24px)}}
+  .q-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px dashed var(--rule)}
+  .q-head h4{margin:0;font-size:20px;line-height:1.4;font-weight:600}
+  .q-head small{font-size:14px;color:var(--muted)}
+  .gate{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-radius:20px;background:var(--lime);color:var(--on-lime)}
+  .gate[hidden]{display:none}
+  .gate b{display:block;font-size:18px;line-height:1.45}
+  .gate span{font-size:14px;opacity:.85}
+  .gate .btn.primary{width:auto;min-width:240px;background:var(--sheet);border-color:var(--sheet);color:var(--ink)}
+  .gate .btn.primary:hover{background:var(--well)}
+  .st-body .prose{max-width:none}
   .qz{display:grid;gap:12px;padding:16px;border-radius:20px;background:var(--well)}
   .qz small{font-size:12px;font-weight:600;color:var(--muted)}
   .qz .stem{font-size:16px;line-height:1.6}
@@ -132,7 +144,7 @@
   .qz .pearl{font-size:14px;padding:8px 12px;border-radius:12px;background:var(--lime);color:var(--on-lime)}
   .qz .kh{font-size:12px;color:var(--muted)}
   .st-foot{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .st-foot .btn.primary{width:auto;min-width:280px}
+  .st-foot .btn{min-width:240px}
   /* แถบขวา (≥1400) */
   .selask{position:absolute;z-index:40;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:var(--ink);color:var(--sheet);font-size:14px;font-weight:600;box-shadow:var(--shadow)}
   .selask.on{display:inline-flex;align-items:center}
