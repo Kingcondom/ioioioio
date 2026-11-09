@@ -52,3 +52,7 @@
 ⚠️ ยังไม่ได้ทำ (ต้องได้รับอนุญาตก่อน เพราะอยู่คนละ branch/artifact)
 - สำเนา `artifact/` ใน branch `claude/internal-med-learning-web-j9ca6l` ยังเป็นของก่อนวันที่ 9 พ.ย. (ไม่มีคาบ Kunapa, restyle, present, TR shell) — ห้าม publish จากสำเนานั้น
 - Post-it `postit/build_cards.py` ยังไม่ได้รันใหม่ → หัวข้อ `hon-anm-k1..k5` ยังค้นใน Post-it ไม่เจอ
+
+## 9 พ.ย. — ปิดงาน
+- branch หลัก `claude/internal-med-learning-web-j9ca6l` commit 7235b71: สำเนา `artifact/index.html` + data + `postit/` ตรงของสด (learn v67, Post-it v11)
+- `verify.py` / `verify_pin.py` ปรับตาม UI ใหม่ · ผ่านพร้อม `checkdata.py` · รายละเอียดใน HANDOFF.md หัวข้อ 🟢 9 พ.ย.
