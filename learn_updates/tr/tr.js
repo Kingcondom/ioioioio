@@ -15,6 +15,16 @@ var TR=(function(){
   function fzBar(){var g=document.createElement("div");g.className="tr-fz";g.setAttribute("role","group");g.setAttribute("aria-label","ขนาดเนื้อหา");
     g.innerHTML="<span class='tr-fz-l'>ขนาดเนื้อหา</span><button type='button' class='press' data-trfz='-1' aria-label='ย่อเนื้อหา' title='ย่อ (ปุ่ม -)'>ก−</button><output aria-live='polite'>100%</output><button type='button' class='press' data-trfz='1' aria-label='ขยายเนื้อหา' title='ขยาย (ปุ่ม =)'>ก+</button><button type='button' class='press tr-fz-r' data-trfz='0' hidden>คืนค่า</button>";return g}
   fzApply();
+  /* ---------- ซ่อนแถบซ้าย/ขวาบนคอม (ผู้ใช้ขอ 9 พ.ย.) — จำไว้ในเครื่องนี้ ---------- */
+  var PNKEY="med421-learn-panes",PN={s:0,d:0};try{var pn0=JSON.parse(localStorage.getItem(PNKEY)||"{}");PN.s=pn0.s?1:0;PN.d=pn0.d?1:0}catch(e){}
+  var CHL='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>',CHR='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+  var rail={};
+  function paneApply(){var de=document.documentElement;de.classList.toggle("tr-noside",!!PN.s);de.classList.toggle("tr-nodock",!!PN.d);
+    if(!rail.s){rail.s=document.createElement("button");rail.s.type="button";rail.s.className="tr-rail tr-rail-l press";rail.s.dataset.trpane="s";rail.s.innerHTML=CHR+"<span>เมนู</span>";rail.s.setAttribute("aria-label","แสดงแถบซ้าย");rail.s.title="แสดงแถบซ้าย (ปุ่ม [)";
+      rail.d=document.createElement("button");rail.d.type="button";rail.d.className="tr-rail tr-rail-r press";rail.d.dataset.trpane="d";rail.d.innerHTML=CHL+"<span>ข้อที่ผิด</span>";rail.d.setAttribute("aria-label","แสดงแถบขวา");rail.d.title="แสดงแถบขวา (ปุ่ม ])";
+      document.body.appendChild(rail.s);document.body.appendChild(rail.d)}}
+  function paneToggle(k){PN[k]=PN[k]?0:1;try{localStorage.setItem(PNKEY,JSON.stringify(PN))}catch(e){}paneApply();
+    var f=PN[k]?rail[k]:document.querySelector(k==="s"?".tr-side [data-trpane]":".tr-dock [data-trpane]");if(f&&document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.trpane)try{f.focus({preventScroll:true})}catch(e){}}
   var DESK=matchMedia("(min-width:1100px)"),WIDE=matchMedia("(min-width:1400px)");
   var GOAL=5,EXAM="2026-11-17",PINKEY="med421-learn-pins",PROGKEY="med421-learn-prog";
   var GATE={},pendingLog=null;
@@ -177,7 +187,7 @@ var TR=(function(){
   var side=el("aside","tr-side");side.setAttribute("aria-label","เมนูหลัก");document.body.appendChild(side);
   function renderSide(){
     var pg=pageOf(state.view),wc=wrongCount(),pc=ls(PROGKEY)||{};
-    var h="<div class='tr-sd-brand'><b>MED421 learn</b><span>Internal medicine</span></div>"+
+    var h="<div class='tr-sd-top'><div class='tr-sd-brand'><b>MED421 learn</b><span>Internal medicine</span></div><button type='button' class='tr-hide tr-hide-i press' data-trpane='s' aria-label='ซ่อนแถบซ้าย' title='ซ่อนแถบซ้าย (ปุ่ม [)'>"+CHL+"</button></div>"+
       "<button class='tr-sd-plus press' data-trplus='1'>"+I.plus+"ทางลัด</button>"+
       "<button class='tr-sd-search press' data-trpal='1'>"+I.search+"<span>ค้นหา</span><span class='tr-kbd'>Ctrl K</span></button><nav class='tr-sd-nav'>";
     [["home","หน้าแรก","home"],["lectures","คาบเรียน","lec"],["meq","ฝึกเขียน MEQ/OSCE","write"],["review","ทบทวนข้อที่ผิด","review"]].forEach(function(x){
@@ -200,12 +210,13 @@ var TR=(function(){
   function renderDock(){
     if(!WIDE.matches){dock.innerHTML="";return}
     var w=wrongList().slice(0,4),pins=(ls(PINKEY)||[]).slice(-4).reverse();
-    var h="<section class='tr-dk'><div class='tr-dk-h'><h3>ข้อที่ผิดในชุดนี้</h3><small>"+wrongCount()+" ข้อ</small></div>";
+    var h="<div class='tr-dk-top'><button type='button' class='tr-hide press' data-trpane='d' aria-label='ซ่อนแถบขวา' title='ซ่อนแถบขวา (ปุ่ม ])'><span>ซ่อน</span>"+CHR+"</button></div>";
+    h+="<section class='tr-dk'><div class='tr-dk-h'><h3>ข้อที่ผิดในชุดนี้</h3><small>"+wrongCount()+" ข้อ</small></div>";
     h+=w.length?"<ul class='tr-wl'>"+w.map(function(x){return "<li><button class='press' data-trsec='"+esc(x.s.id)+"' data-trsl='"+esc(x.l.lec)+"'><small>ผิด "+x.n+" ข้อ · คาบ "+esc(x.l.lec)+"</small><span>"+esc(x.s.title)+"</span></button></li>"}).join("")+"</ul>":"<p class='tr-empty'>ยังไม่มีข้อที่ตอบผิดในชุดนี้</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>ปักจากหน้านี้ล่าสุด</h3><small>เครื่องนี้</small></div>";
     h+=pins.length?"<div class='tr-pins'>"+pins.map(function(p,i){return "<div class='tr-pn' style='--r:"+(i%2?1.2:-1.5)+"deg'><small>"+esc(p.k)+"</small>"+esc(p.t)+"</div>"}).join("")+"</div>":"<p class='tr-empty'>กดปุ่มปักตาราง หลักจำ หรือหัวข้อใน Post-it แล้วจะขึ้นที่นี่</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>คีย์ลัด</h3></div><ul class='tr-keys'>"+
-      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
+      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="],["ซ่อนแถบซ้าย / ขวา","[ ]"]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
     dock.innerHTML=h;
   }
   document.addEventListener("click",function(e){
@@ -454,6 +465,7 @@ var TR=(function(){
     if(e.key==="/"&&DESK.matches){e.preventDefault();openPal();return}
     if(e.altKey&&(e.key==="ArrowLeft"||e.key==="ArrowRight")){e.preventDefault();shift(e.key==="ArrowLeft"?-1:1);return}
     if(e.key==="+"&&!e.ctrlKey&&!e.metaKey){e.preventDefault();openMenu(null);return}
+    if((e.key==="["||e.key==="]")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&DESK.matches){if(e.key==="]"&&!WIDE.matches)return;e.preventDefault();paneToggle(e.key==="["?"s":"d");return}
     if((e.key==="-"||e.key==="=")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&state.view!=="home"){e.preventDefault();fzStep(e.key==="-"?-1:1);return}
     if(state.view==="section"&&/^[1-5]$/.test(e.key)&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
       var q=[].filter.call(document.querySelectorAll("#main div.q[id^='q-']"),function(x){return x.offsetParent!==null&&!x.querySelector(".ch:disabled")})[0];
@@ -475,6 +487,7 @@ var TR=(function(){
     if(b.dataset.trpin){window.open(POSTIT,"_blank","noopener");return}
     if(b.dataset.trtheme){act("theme");return}
     if(b.dataset.trfz!=null){fzStep(+b.dataset.trfz);return}
+    if(b.dataset.trpane){paneToggle(b.dataset.trpane);return}
     if(b.dataset.trgate){var sid=b.dataset.trgate;GATE[sid]=1;var m=document.getElementById("main"),g=m.querySelector(".tr-gate");if(g)g.remove();
       m.querySelectorAll("[data-trhid]").forEach(function(x){x.hidden=false;x.removeAttribute("data-trhid")});
       var qz=m.querySelector(".quiz");if(qz){qz.classList.add("tr-qin");setTimeout(function(){try{qz.scrollIntoView({block:"start",behavior:RM?"auto":"smooth"})}catch(_){}},40)}return}
@@ -503,7 +516,7 @@ var TR=(function(){
     TR.dir=0;
     if(DESK.matches)renderSide();
     renderDock();
-    fzApply();
+    fzApply();paneApply();
   }
   DESK.addEventListener&&DESK.addEventListener("change",function(){renderSide();renderDock()});
   WIDE.addEventListener&&WIDE.addEventListener("change",renderDock);
