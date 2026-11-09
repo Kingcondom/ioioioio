@@ -577,6 +577,12 @@ body[data-view="home"] .cols{grid-template-columns:minmax(0,1fr)}
 .tr-c-bar i{display:block;height:100%;background:var(--lime-3);border-radius:6px}
 .tr-c-foot{display:flex;flex-wrap:wrap;gap:4px}
 .tr-tag{font-size:12px;font-weight:600;border-radius:999px;padding:2px 8px;background:var(--surface-sunk);color:var(--ink-3);white-space:nowrap}
+/* ปุ่มกดว่าเรียนจบทั้งคาบ (9 พ.ย.) */
+.tr-lw{display:grid;grid-template-rows:1fr auto;gap:4px;min-width:0}
+.tr-lmark{font:inherit;font-size:14px;font-weight:600;min-height:44px;padding:0 16px;border:1px dashed var(--rule-strong);border-radius:999px;background:transparent;color:var(--ink-3);cursor:pointer;white-space:normal;text-align:center}
+.tr-lmark:hover{border-color:var(--lime-3);color:var(--ink)}
+.tr-lmark.on{border-style:solid;border-color:var(--lime-3);background:var(--lime);color:var(--on-lime)}
+.tr-lmark.btn{border-radius:999px}
 .tr-tag.go{background:var(--s-bg);color:var(--s-fg)}.tr-tag.ok{background:var(--o-bg);color:var(--o-fg)}.tr-tag.bad{background:var(--bad-soft);color:var(--bad)}
 .tr-hint{font-size:14px;color:var(--ink-3);text-align:center;margin:0}
 .tr-about{border-radius:20px;background:var(--surface);padding:0 16px}
@@ -713,6 +719,9 @@ body[data-view="home"] .cols{grid-template-columns:minmax(0,1fr)}
 .tr-wh-head{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:16px;right:72px;display:grid}
 .tr-wh-head b{font-size:20px;line-height:1.4;font-weight:600}
 .tr-wh-head span{font-size:14px;color:var(--ink-3)}
+.tr-wh-head:has(.tr-wh-sw){z-index:1;pointer-events:none}
+.tr-wh-sw{pointer-events:auto;justify-self:start;margin-top:8px;min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:500;cursor:pointer;transition:background .15s}
+.tr-wh-sw:hover{background:var(--surface-sunk)}.tr-wh-sw:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .tr-wh-foot{position:absolute;left:16px;right:16px;bottom:calc(20px + env(safe-area-inset-bottom,0px));text-align:center;font-size:14px;color:var(--ink-3)}
 .tr-lp{position:fixed;z-index:59;width:72px;height:72px;margin:-36px 0 0 -36px;pointer-events:none;opacity:0;transform:scale(.6);transition:opacity .15s,transform .2s}
 .tr-lp.go{opacity:1;transform:none}
@@ -2388,6 +2397,17 @@ var TR=(function(){
     if(!id)return;state.log=state.log||{};var k=dkey(),a=state.log[k]||[];
     if(a.indexOf(id)<0){a.push(id);state.log[k]=a.slice(-200);save()}
   }
+  /* ---------- กดว่าเรียนจบทั้งคาบ แม้ยังไม่ทำข้อสอบ (ผู้ใช้ขอ 9 พ.ย.) — ใช้ state.done เดิม ซิงก์ขึ้นบัญชีเหมือนปุ่ม "เรียนแล้ว" รายหัวข้อ ---------- */
+  function lecRead(l){return !!l&&l.sections.length>0&&l.sections.every(function(s){return !!state.done[s.id]})}
+  function lecQ(l){var q=0,a=0;l.sections.forEach(function(s){var st=secStat(s);q+=st.n;a+=st.answered});return {q:q,a:a}}
+  function lecMarkLabel(l){var x=lecQ(l);return lecRead(l)?"✓ เรียนจบแล้ว"+(x.q&&x.a<x.q?" · ข้อสอบ "+x.a+"/"+x.q:""):"กดว่าเรียนจบคาบนี้"}
+  function markLec(l){if(!l)return;var on=!lecRead(l);
+    l.sections.forEach(function(s){var st=secStat(s);
+      if(on){if(!state.done[s.id]){state.done[s.id]=true;logToday(s.id)}}
+      else if(!(st.n>0&&st.answered===st.n)){delete state.done[s.id];var tk=(state.log||{})[dkey()];if(tk&&tk.indexOf(s.id)>=0)tk.splice(tk.indexOf(s.id),1)}});
+    save();render();var x=lecQ(l);
+    toast(on?"บันทึกว่าเรียนคาบ "+l.lec+" จบแล้ว"+(x.q&&x.a<x.q?" · ข้อสอบยังเหลือ "+(x.q-x.a)+" ข้อ":""):"ยกเลิกเครื่องหมายเรียนจบคาบ "+l.lec)}
+  function lecMarkBtn(l,cls){var b=el("button","tr-lmark press"+(cls?" "+cls:"")+(lecRead(l)?" on":""),esc(lecMarkLabel(l)));b.type="button";b.dataset.trlmark=l.lec;b.setAttribute("aria-pressed",lecRead(l)?"true":"false");return b}
   function todayCount(){var a=(state.log||{})[dkey()];return a?a.length:0}
   function dayCount(d){var a=(state.log||{})[dkey(d)];return a?a.length:0}
   function streak(){var n=0,d=new Date();if(!dayCount(d))d.setDate(d.getDate()-1);while(dayCount(d)){n++;d.setDate(d.getDate()-1)}return n}
@@ -2481,7 +2501,7 @@ var TR=(function(){
       h+="<button class='tr-card press"+(s.ok===s.n?" done":"")+"' data-trlec='"+esc(l.lec)+"' aria-label='คาบ "+esc(l.lec)+" "+esc(l.title)+" เรียนแล้ว "+s.ok+" จาก "+s.n+" หัวข้อ'>"+
         "<div class='tr-c-top'><span class='tr-c-no'>"+esc(l.lec)+"</span>"+(l.date&&!/^TBD/.test(l.date)?"<span class='tr-c-day'>"+esc(l.date)+"</span>":"")+"</div>"+
         "<div class='tr-c-t'>"+esc(l.title)+"</div><div class='tr-c-bar'><i style='width:"+Math.round(s.ok*100/Math.max(1,s.n))+"%'></i></div>"+
-        "<div class='tr-c-foot'><span class='tr-tag "+(s.ok===s.n?"ok":s.ok?"go":"")+"'>"+(s.ok===s.n?"✓ จบแล้ว":s.ok?"เรียน "+s.ok+"/"+s.n:"ยังไม่เริ่ม")+"</span>"+
+        "<div class='tr-c-foot'><span class='tr-tag "+(s.ok===s.n?"ok":s.ok||lecRead(l)?"go":"")+"'>"+(s.ok===s.n?"✓ จบแล้ว":lecRead(l)?"✓ อ่านจบ · ข้อสอบ "+lecQ(l).a+"/"+lecQ(l).q:s.ok?"เรียน "+s.ok+"/"+s.n:"ยังไม่เริ่ม")+"</span>"+
         (s.w?"<span class='tr-tag bad'>ผิด "+s.w+"</span>":"")+"<span class='tr-tag'>"+s.q+" ข้อ</span></div></button>";
     });
     h+="</div><p class='tr-hint'>ดับเบิลคลิกพื้นที่ว่าง หรือกดค้าง 2 วินาที เพื่อหมุนเลือกคาบ · ปัดซ้าย-ขวาเพื่อเปลี่ยนชุดวิชา</p>";
@@ -2513,6 +2533,7 @@ var TR=(function(){
      [hid?"เลิกโหมดทวน":"โหมดทวน",function(){state.hide=state.hide||{};var k=hideKey(l);if(state.hide[k])delete state.hide[k];else state.hide[k]=true;save();closeSheet(function(){state.view="lecture";state.lec=l.lec;render();window.scrollTo({top:0})})}],
      ["หน้าคาบ · MEQ "+(l.meq||[]).length+" · OSCE "+(l.osce||[]).length,function(){closeSheet(function(){state.view="lecture";state.lec=l.lec;state.sec=null;render();window.scrollTo({top:0})})}]
     ].forEach(function(a){var b=el("button","btn press",esc(a[0]));b.type="button";b.addEventListener("click",a[1]);ac.appendChild(b)});
+    ac.insertBefore(lecMarkBtn(l,"btn"),ac.firstChild);
     ft.appendChild(ac);sh.appendChild(ft);sh.showModal();
   }
 
@@ -2560,7 +2581,7 @@ var TR=(function(){
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>ปักจากหน้านี้ล่าสุด</h3><small>เครื่องนี้</small></div>";
     h+=pins.length?"<div class='tr-pins'>"+pins.map(function(p,i){return "<div class='tr-pn' style='--r:"+(i%2?1.2:-1.5)+"deg'><small>"+esc(p.k)+"</small>"+esc(p.t)+"</div>"}).join("")+"</div>":"<p class='tr-empty'>กดปุ่มปักตาราง หลักจำ หรือหัวข้อใน Post-it แล้วจะขึ้นที่นี่</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>คีย์ลัด</h3></div><ul class='tr-keys'>"+
-      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="],["ซ่อนแถบซ้าย / ขวา","[ ]"]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
+      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["ไล่หัวข้อในคาบ / หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="],["ซ่อนแถบซ้าย / ขวา","[ ]"]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
     dock.innerHTML=h;
   }
   document.addEventListener("click",function(e){
@@ -2669,20 +2690,34 @@ var TR=(function(){
   mb.addEventListener("pointerdown",function(e){if(e.button>0)return;lastPD=Date.now();e.preventDefault();if(M){M.close();return}openMenu({x:e.clientX,y:e.clientY})});
   mb.addEventListener("click",function(){if(Date.now()-lastPD>800){if(M)M.close();else openMenu(null)}});
 
-  /* ---------- วงล้อสลับคาบ (ดับเบิลคลิก / กดค้าง 2 วิ) ---------- */
+  /* ---------- วงล้อสลับคาบ (ดับเบิลคลิก / กดค้าง 2 วิ) ----------
+     อยู่ในหน้าคาบหรือหน้าหัวข้อ → ดับเบิลคลิกจะไล่หัวข้อทั้งหมดของคาบนั้น (มีปุ่มสลับคาบในวงล้อ) */
   var W=null;
-  function openWheel(){
-    if(W||!loaded())return;var L=lectures();if(!L.length)return;
+  function openWheel(mode){
+    if(W||!loaded())return;
+    var LC=mode==="auto"&&(state.view==="section"||state.view==="lecture")&&lecOf(state.lec)||null;
+    var L=LC?LC.sections:lectures();if(!L.length)return;
     if(sh.open)closeSheet();
-    var curI=Math.max(0,L.indexOf(lecOf(state.lec)));
-    var ov=el("div","tr-wheel");ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");ov.setAttribute("aria-label","สลับคาบ");
-    var head=el("div","tr-wh-head");head.appendChild(el("b",null,"สลับคาบ · "+esc(course().label)));head.appendChild(el("span",null,L.length+" คาบในชุดนี้"));ov.appendChild(head);
+    var curI=Math.max(0,LC?L.indexOf(secOf(LC,state.sec)):L.indexOf(lecOf(state.lec)));
+    var ov=el("div","tr-wheel");ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");ov.setAttribute("aria-label",LC?"หัวข้อในคาบนี้":"สลับคาบ");
+    var head=el("div","tr-wh-head"),sw=null;
+    if(LC){head.appendChild(el("b",null,"หัวข้อในคาบ "+esc(LC.lec)));head.appendChild(el("span",null,esc(LC.title)+" ("+L.length+" หัวข้อ)"));
+      sw=el("button","tr-wh-sw","↺ สลับคาบแทน");sw.type="button";head.appendChild(sw)}
+    else{head.appendChild(el("b",null,"สลับคาบ · "+esc(course().label)));head.appendChild(el("span",null,L.length+" คาบในชุดนี้"))}
+    ov.appendChild(head);
     var cl=el("button","tr-wh-close","✕");cl.type="button";cl.setAttribute("aria-label","ปิด");ov.appendChild(cl);
     var stage=el("div","tr-wh-stage");ov.appendChild(stage);
     var NS="http://www.w3.org/2000/svg",svg=document.createElementNS(NS,"svg");svg.setAttribute("class","tr-wh-arc");var circ=document.createElementNS(NS,"circle");svg.appendChild(circ);stage.appendChild(svg);
     var knob=el("div","tr-wh-knob");stage.appendChild(knob);
-    ov.appendChild(el("div","tr-wh-foot","ลากขึ้นลงหรือหมุนลูกกลิ้งเพื่อเลื่อน แตะคาบเพื่อเปิด"));
-    var nodes=L.map(function(l,i){var s=cardStat(l);
+    ov.appendChild(el("div","tr-wh-foot","ลากขึ้นลงหรือหมุนลูกกลิ้งเพื่อเลื่อน แตะ"+(LC?"หัวข้อ":"คาบ")+"เพื่อเปิด"));
+    var nodes=L.map(function(l,i){
+      if(LC){var ss=secStat(l),n0=el("div","tr-wh-it");if(state.view==="section"&&l.id===state.sec)n0.classList.add("cur");
+        var in0=el("div","tr-wh-in");in0.style.setProperty("--d",(Math.min(6,Math.abs(i-curI))*40)+"ms");
+        var lb0=el("div","tr-wh-lbl");lb0.appendChild(el("b",null,esc(l.title)));lb0.appendChild(el("small",null,(ss.read?"อ่านแล้ว":"ยังไม่อ่าน")+(ss.n?", ข้อสอบ "+ss.answered+"/"+ss.n:"")));
+        var c0=el("button","tr-wh-chip",String(i+1));c0.type="button";c0.setAttribute("aria-label","หัวข้อ "+(i+1)+" "+l.title);
+        c0.appendChild(el("span","dd"+(ss.complete?" ok":""),ss.complete?"✓":ss.read?"อ่าน":ss.n?ss.answered+"/"+ss.n:"–"));
+        in0.appendChild(lb0);in0.appendChild(c0);n0.appendChild(in0);stage.appendChild(n0);return n0}
+      var s=cardStat(l);
       var n=el("div","tr-wh-it");if(state.lec&&l.lec===state.lec)n.classList.add("cur");
       var inr=el("div","tr-wh-in");inr.style.setProperty("--d",(Math.min(6,Math.abs(i-curI))*40)+"ms");
       var lb=el("div","tr-wh-lbl");lb.appendChild(el("b",null,esc(l.title)));lb.appendChild(el("small",null,"เรียนแล้ว "+s.ok+"/"+s.n+" หัวข้อ"+(l.date?" · "+esc(l.date):"")));
@@ -2706,7 +2741,7 @@ var TR=(function(){
       var from=p,t0=performance.now(),dur=Math.min(520,220+Math.abs(t-from)*70);
       (function f(now){if(closing&&!done)return;var u=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-u,3);p=from+(t-from)*e;paint();
         if(u<1)anim=requestAnimationFrame(f);else{anim=null;if(done)done()}})(t0)}
-    function choose(i){if(busy)return;busy=true;goTo(i,function(){nodes[i].classList.add("pick");setTimeout(function(){close(function(){openLecSheet(L[i])})},RM?0:260)})}
+    function choose(i){if(busy)return;busy=true;goTo(i,function(){nodes[i].classList.add("pick");setTimeout(function(){close(function(){if(LC){TR.dir=0;openSection(LC.lec,L[i].id)}else openLecSheet(L[i])})},RM?0:260)})}
     function close(after){if(closing)return;closing=true;busy=true;cancelAnimationFrame(anim);clearTimeout(wt);ov.classList.remove("on");ov.classList.add("out");
       document.removeEventListener("keydown",key,true);window.removeEventListener("resize",rs);
       setTimeout(function(){if(ov.parentNode)ov.remove();W=null;document.body.classList.remove("tr-lock");if(after)after()},RM?0:200)}
@@ -2716,7 +2751,7 @@ var TR=(function(){
       else if(e.key==="Enter"||e.key===" "){if(document.activeElement===cl)return;e.preventDefault();choose(Math.round(p))}}
     function rs(){if(!closing){geo();paint()}}
     var drag=null;
-    ov.addEventListener("pointerdown",function(e){if(e.target===cl)return;cancelAnimationFrame(anim);anim=null;drag={tg:e.target,y:e.clientY,p:p,v:0,moved:0,id:e.pointerId,ly:e.clientY,lt:performance.now()};try{ov.setPointerCapture(e.pointerId)}catch(_){}});
+    ov.addEventListener("pointerdown",function(e){if(e.target===cl||(sw&&e.target===sw))return;cancelAnimationFrame(anim);anim=null;drag={tg:e.target,y:e.clientY,p:p,v:0,moved:0,id:e.pointerId,ly:e.clientY,lt:performance.now()};try{ov.setPointerCapture(e.pointerId)}catch(_){}});
     ov.addEventListener("pointermove",function(e){if(!drag||e.pointerId!==drag.id)return;var dy=e.clientY-drag.y;drag.moved=Math.max(drag.moved,Math.abs(dy));
       var now=performance.now(),dt=Math.max(1,now-drag.lt);drag.v=.8*((drag.ly-e.clientY)/STEP/dt)+.2*drag.v;drag.ly=e.clientY;drag.lt=now;
       var np=drag.p-dy/STEP;if(np<0)np=np*.35;else if(np>L.length-1)np=L.length-1+(np-L.length+1)*.35;p=np;paint()});
@@ -2729,6 +2764,7 @@ var TR=(function(){
     ov.addEventListener("pointerup",up);ov.addEventListener("pointercancel",up);
     ov.addEventListener("wheel",function(e){e.preventDefault();cancelAnimationFrame(anim);anim=null;p=clamp(p+e.deltaY/(e.deltaMode===1?3:120));paint();clearTimeout(wt);wt=setTimeout(function(){goTo(Math.round(p))},120)},{passive:false});
     cl.addEventListener("click",function(){close()});
+    if(sw)sw.addEventListener("click",function(){close(function(){openWheel()})});
     ov.addEventListener("click",function(e){e.stopPropagation()});
     document.addEventListener("keydown",key,true);window.addEventListener("resize",rs);
     geo();paint();
@@ -2742,7 +2778,7 @@ var TR=(function(){
   document.addEventListener("dblclick",function(e){
     if(lastPT!=="mouse"||document.querySelector(".pv"))return;var t=e.target;if(!t||!t.closest||t.closest(SKIP))return;
     try{var sl=window.getSelection();if(sl)sl.removeAllRanges()}catch(_){}
-    openWheel()});
+    openWheel("auto")});
   var hold=null,lring=null;
   function endHold(){if(!hold)return;clearTimeout(hold.t);clearTimeout(hold.rt);hold=null;document.body.classList.remove("tr-arm");if(lring){var r=lring;lring=null;r.classList.remove("go");setTimeout(function(){r.remove()},200)}}
   document.addEventListener("touchstart",function(e){
@@ -2750,7 +2786,7 @@ var TR=(function(){
     var tc=e.touches[0];hold={x:tc.clientX,y:tc.clientY};document.body.classList.add("tr-arm");
     hold.rt=setTimeout(function(){if(!hold)return;lring=el("div","tr-lp",'<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="32"/></svg>');lring.style.left=hold.x+"px";lring.style.top=hold.y+"px";document.documentElement.appendChild(lring);requestAnimationFrame(function(){if(lring)lring.classList.add("go")})},250);
     hold.t=setTimeout(function(){if(!hold)return;endHold();if(navigator.vibrate)try{navigator.vibrate(12)}catch(_){}
-      var until=Date.now()+900;document.addEventListener("click",function sup(ev){document.removeEventListener("click",sup,true);if(Date.now()<until){ev.preventDefault();ev.stopPropagation()}},true);openWheel()},2000);
+      var until=Date.now()+900;document.addEventListener("click",function sup(ev){document.removeEventListener("click",sup,true);if(Date.now()<until){ev.preventDefault();ev.stopPropagation()}},true);openWheel("auto")},2000);
   },{passive:true});
   document.addEventListener("touchmove",function(e){if(!hold)return;var tc=e.touches[0];if(!tc||Math.abs(tc.clientX-hold.x)>10||Math.abs(tc.clientY-hold.y)>10)endHold()},{passive:true});
   document.addEventListener("touchend",endHold,{passive:true});
@@ -2832,6 +2868,7 @@ var TR=(function(){
     if(b.dataset.trtheme){act("theme");return}
     if(b.dataset.trfz!=null){fzStep(+b.dataset.trfz);return}
     if(b.dataset.trpane){paneToggle(b.dataset.trpane);return}
+    if(b.dataset.trlmark){pop(b);var lm=lecOf(b.dataset.trlmark);if(b.closest(".tr-sheet")){closeSheet(function(){markLec(lm)})}else markLec(lm);return}
     if(b.dataset.trgate){var sid=b.dataset.trgate;GATE[sid]=1;var m=document.getElementById("main"),g=m.querySelector(".tr-gate");if(g)g.remove();
       m.querySelectorAll("[data-trhid]").forEach(function(x){x.hidden=false;x.removeAttribute("data-trhid")});
       var qz=m.querySelector(".quiz");if(qz){qz.classList.add("tr-qin");setTimeout(function(){try{qz.scrollIntoView({block:"start",behavior:RM?"auto":"smooth"})}catch(_){}},40)}return}
@@ -2858,6 +2895,10 @@ var TR=(function(){
     if(state.view!=="home"&&m.firstElementChild&&!m.querySelector(":scope>.tr-fz"))m.insertBefore(fzBar(),m.firstElementChild);
     if(state.view==="section"||state.view==="lecture"){if(TR.dir){var c=m.firstElementChild;if(c&&!RM){c.classList.add(TR.dir>0?"tr-slide-l":"tr-slide-r")}}}
     TR.dir=0;
+    if(state.view==="lectures"&&loaded())[].forEach.call(m.querySelectorAll(".lgrid>.ltile[data-openlec]"),function(t){var l=lecOf(t.dataset.openlec);if(!l)return;
+      var w=el("div","tr-lw");t.parentNode.insertBefore(w,t);w.appendChild(t);w.appendChild(lecMarkBtn(l));
+      if(lecRead(l)){var ch=t.querySelector(".lchips");if(ch){var x=lecQ(l),sp=el("span","chip acc","อ่านจบแล้ว"+(x.q&&x.a<x.q?" · ข้อสอบ "+x.a+"/"+x.q:""));ch.insertBefore(sp,ch.firstChild)}}});
+    if(state.view==="lecture"&&loaded()){var lc=lecOf(state.lec),mt=lc&&m.querySelector(".card .meta");if(mt&&!mt.querySelector("[data-trlmark]"))mt.appendChild(lecMarkBtn(lc,"btn"))}
     if(DESK.matches)renderSide();
     renderDock();
     fzApply();paneApply();
