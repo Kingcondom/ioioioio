@@ -11,10 +11,11 @@
 
 ## การซิงก์ (artifact แต่ละตัวมี db ของตัวเอง อ่านข้ามกันไม่ได้)
 1. **งานตั้งเวลา** "MED421 ซิงก์การทวน Dashboard → Ward Drill" (`trig_017kVBLiXnwEKoUvNPaT1gwb`)
-   07:23 09:23 11:23 13:23 15:23 17:23 19:23 23:23 (เวลาไทย) — อ่าน `data/users/<id>/slides` ของ dashboard
-   แล้วเขียนทับบรรทัด `var RV_SEED={u, at, reviews}` ในหน้า drill (edit_version) เฉพาะเมื่อมีการทวนใหม่
-   - เขียน db ของ drill ตรง ๆ ไม่ได้ เพราะ drill เป็น public (เครื่องมือ db_write ปฏิเสธ `public_audience`)
-   - หน้า drill ใช้ RV_SEED เฉพาะเมื่อผู้ดูคือเจ้าของ (`u` ตรงกับ user.id()) แล้วเก็บลง `data/users/<id>/drill-reviewed`
+   07:23 09:23 11:23 13:23 15:23 17:23 19:23 23:23 (เวลาไทย) — ใช้ `ArtifactData`:
+   อ่าน `data/users/me/slides` ของ dashboard แล้ว `set` ลง `data/users/me/drill-reviewed` ของ drill
+   `{reviews, at: เวลาปัจจุบัน, src: "sync"}` เฉพาะเมื่อ reviews ต่างกัน · หน้า drill ที่เปิดอยู่รับผ่าน onSnapshot
+   - 9 พ.ย. 2569: เปลี่ยนจากแก้บรรทัด `RV_SEED` ในหน้า (เครื่องมือ claude-artifacts เดิมหายไป และ db_write เดิมปฏิเสธ public)
+     มาเขียน db ตรงด้วย `ArtifactData` ซึ่งเขียนได้ · บรรทัด `RV_SEED` ในหน้ายังอยู่เป็นทางสำรอง ไม่ต้องอัปเดตแล้ว
    - หลัง 18 พ.ย. 2569 งานจะไม่ทำอะไร ลบได้
 2. **ลิงก์จากปุ่มใน dashboard** `#review~y2026~<MMDDHHMM>.<MMDD>.<MMDD>~…` (id คาบ + วันที่ทวน)
 - ใช้ชุดที่ `at` ใหม่กว่า (seed: at = updatedAt ของ dashboard · ลิงก์: เวลาที่กด)
