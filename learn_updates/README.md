@@ -10,3 +10,8 @@
   - รันซ้ำได้ (ลบ `hon-anm-k*` เดิมก่อนแทรก)
 
 อาร์ติแฟกต์: https://claude.ai/artifact/5jjGrfPjyBgP7wzxcu8TcE (เปลี่ยนเฉพาะ `data/hemonc.json` และ `data/index.json`)
+
+## 2026-11-09 — ปรับหน้าตาตาม study-page-design
+
+- `restyle.py <artifact-read.html> <out.html>` — แปลง CSS ของหน้า: สเกลตัวอักษร 12/14/16/18/20/24 · spacing 4–48 · radius 6/10/16 · น้ำหนักสูงสุด 600 · palette → ชื่อตามหน้าที่ · ปุ่มสูง ≥ 44px พร้อม state disabled/loading · ตัด animation ตอนแสดงการ์ด · ปุ่ม primary หนึ่งปุ่มต่อการ์ด (markread และ MEQ reveal เป็นปุ่มรอง)
+- ไม่แตะขนาดตัวอักษรในแผนภาพ SVG (`.fig svg text`, `.lg/.sm/.xs`) และอนิเมชันกลไกในภาพ
