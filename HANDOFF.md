@@ -1,4 +1,4 @@
-# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 25 ต.ค. 2569)
+# MED421 — สรุปสถานะงานทั้งหมด (อัปเดต 9 พ.ย. 2569 — ดูท้ายไฟล์)
 
 ไฟล์นี้คือ "จุดกลับมาต่อ" ถ้า context เต็มหรือเปิด session ใหม่ อ่านไฟล์นี้ไฟล์เดียวก็ทำงานต่อได้
 
@@ -492,3 +492,20 @@ publish เฉพาะ `data/air.json` กับ `data/nephro.json` โดย *
   `src` ใส่ hash `#ms #mr #as #ar` (มี `#cycle #compare` ด้วย) หน้า 3D จะเปิดที่ขั้นนั้นและหยุดเล่นอัตโนมัติ · learn v `1794110905-9e99`
 - learn หลังรอบแรก: v `1794110567-9d99` · `checkdata.py` 0 error · `verify.py` ผ่าน · ทดสอบการ์ด 3D ใน Chromium (swiftshader) แล้ว iframe โหลดและปรับความสูงได้
 - เพิ่มเรื่องต่อไป: ทำหน้า `anim/<เรื่อง>-3d.html` ด้วย skill `mechanism-3d-animation` → ใส่ `anims[k].src` ในหัวข้อ → publish_files patch แค่ 2 ไฟล์ (ไม่ต้องแตะ index.html อีก)
+
+## 🟢 9 พ.ย. 2569 — learn โฉมใหม่แบบ Teaching Round (v67) + สำเนา repo ตรงกับของสดแล้ว
+
+- **ของสด** learn v `1794200490-ba64` · Post-it v `1794203222-e9db` (v11)
+- **สำเนาใน repo ตรงกับของสดแล้ว** — `artifact/index.html` (233,988 bytes), `artifact/data/hemonc.json`, `artifact/data/index.json`, `postit/index.html`
+  ถูกแทนด้วยไฟล์ที่ publish จริง · คำเตือน "repo ตามหลังของสด" ในข้อ 4b/7/🧊 ใช้ไม่ได้แล้วสำหรับรอบนี้ (ยังต้องเทียบก่อน publish ทุกครั้งตามกฎเดิม)
+- **เปลี่ยนอะไรใน learn** (สคริปต์และร่างอยู่ใน branch `claude/vigilant-mccarthy-kthvqz` โฟลเดอร์ `learn_updates/`)
+  - คาบ Approach to anemia (Kunapa) เข้า hemonc · ปรับหน้าตามกฎ study-page-design · โหมดพรีเซนต์ทั้งคาบ (`[data-act=present]`)
+  - เปลือก Teaching Round (`learn_updates/tr/tr.css` + `tr.js` ใส่ด้วย `apply_tr.py`): ธีม lime + dark · แถบล่าง 5 ปุ่ม + วงล้อทางลัด ·
+    หน้าแรกการ์ดเขียววงแหวน "ทวนวันนี้" (เป้า 5 หัวข้อ/วัน) + กริดการ์ดคาบ · bottom sheet · ปัดซ้าย-ขวา (หน้าแรก = เปลี่ยนวิชา, หน้าหัวข้อ = หัวข้อก่อน/ถัดไป) ·
+    ดับเบิลคลิก/กดค้าง 2 วิ เปิดวงล้อคาบ · คอม ≥1100 มีแถบซ้าย ≥1400 มี dock ขวา (AI panel เข้า dock) · Ctrl K ค้นหา · หน้าหัวข้อโชว์เนื้อหาก่อน กดปุ่มแล้วค่อยขึ้นข้อสอบ (`.tr-gate`)
+  - ฟีเจอร์เดิมอยู่ครบ: quiz · ปุ่มปักไป Post-it · ซ่อนคำ/recall · กล่อง นล. · ประวัติ (`done/ans/rate`) · บันทึกบัญชี
+  - **ข้อมูลใหม่** `state.log = {"yyyy-mm-dd":[secId,…]}` เก็บ 60 วัน · sync ไปเอกสารบัญชี `data/users/<id>/learn` พร้อม done/ans/rate (`normLog/mergeLog` รวมสองเครื่อง)
+- **Post-it v11** — สร้าง `data/sec.json`/`q.json` ใหม่ด้วย `postit/build_cards.py` ให้หัวข้อใหม่ (anemia) ปักได้ · ตัวหน้าไม่เปลี่ยน
+- **เครื่องมือทดสอบปรับตาม UI ใหม่** — `verify.py` เดินผ่าน `.tr-card` → sheet / hash `#<ชุด>-<คาบ>` แล้วกด `main [data-sec]` และกดปุ่ม `.tr-gate` ก่อนตอบ ·
+  `verify_pin.py` ไปหน้าคาบด้วย hash แทน `#courseTabs` (แถบนี้ซ่อนบนจอ ≥1100) · ทั้งสองไฟล์ + `checkdata.py` ผ่าน 0 error (9 พ.ย.)
+- ถ้าแก้ index.html ต่อ: แก้จากสำเนานี้ (ตรงของสด) แล้วรัน 3 สคริปต์ตรวจก่อน publish

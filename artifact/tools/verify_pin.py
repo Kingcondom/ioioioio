@@ -146,12 +146,10 @@ try:
             label = next(e["label"] for e in json.load(
                 open(os.path.join(LEARN, "data", "index.json"), encoding="utf-8"))
                 if e["set"] == setname)
-            learn.click('#courseTabs button:has-text("%s")' % label)
-            learn.wait_for_selector('[data-lec="%s"]' % lec, timeout=8000)
-            if not learn.is_visible('[data-sec="%s"]' % sid):
-                learn.click('[data-lec="%s"]' % lec)
-            learn.wait_for_selector('[data-sec="%s"]' % sid, state="visible", timeout=8000)
-            learn.click('[data-sec="%s"]' % sid)
+            # โครงหน้าใหม่ (9 พ.ย.): ไปหน้าคาบด้วยลิงก์ตรง #<ชุด>-<คาบ> แล้วกดการ์ดหัวข้อ (สารบัญซ่อนบนคอม)
+            learn.evaluate("h=>{location.hash=h}", "#%s-%s" % (setname, re.sub(r"[^A-Za-z0-9._~-]", ".", str(lec))))
+            learn.wait_for_selector('main [data-sec="%s"]' % sid, state="visible", timeout=8000)
+            learn.click('main [data-sec="%s"]' % sid)
             learn.wait_for_timeout(300)
 
             links = learn.locator("main a").filter(has_text=PIN_LABEL)
@@ -260,12 +258,10 @@ try:
             label = next(e["label"] for e in json.load(
                 open(os.path.join(LEARN, "data", "index.json"), encoding="utf-8"))
                 if e["set"] == mset)
-            learn.click('#courseTabs button:has-text("%s")' % label)
-            learn.wait_for_selector('[data-lec="%s"]' % mlec, timeout=8000)
-            if not learn.is_visible('[data-sec="%s"]' % msid):
-                learn.click('[data-lec="%s"]' % mlec)
-            learn.wait_for_selector('[data-sec="%s"]' % msid, state="visible", timeout=8000)
-            learn.click('[data-sec="%s"]' % msid)
+            # โครงหน้าใหม่ (9 พ.ย.): ไปหน้าคาบด้วยลิงก์ตรง #<ชุด>-<คาบ> แล้วกดการ์ดหัวข้อ (สารบัญซ่อนบนคอม)
+            learn.evaluate("h=>{location.hash=h}", "#%s-%s" % (mset, re.sub(r"[^A-Za-z0-9._~-]", ".", str(mlec))))
+            learn.wait_for_selector('main [data-sec="%s"]' % msid, state="visible", timeout=8000)
+            learn.click('main [data-sec="%s"]' % msid)
             learn.wait_for_timeout(300)
 
             links = learn.locator("main a").filter(has_text=MNEM_LABEL)
