@@ -177,3 +177,26 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6)
 
 สัปดาห์ที่ 2–6: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 8 · 2–6 พ.ย. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 2 | General oncology (อ.ปิยวรรณ) | onco `O01` หลักมะเร็งวิทยาและภาวะฉุกเฉินทางมะเร็ง (12 / 2 / 44) | ✅ แต่ `O01` ยังเป็นกลุ่มหัวข้อ "ยังไม่ระบุคาบ" |
+| อ. 3 | Liver cirrhosis and complications (อ.สยาม) | gi `G02` ตับและทางเดินน้ำดี (เรื่องตับแข็ง 3 / 1 / 15 จากทั้งกลุ่ม 7 / 3 / 23) | 🟡 MCQ เรื่องตับแข็งมี 3 ข้อ |
+
+พ.–ศ. 4–6 พ.ย.: ไม่มี event `Lecture:` ในปฏิทิน
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: มะเร็ง ~53 · ตับแข็ง/ภาวะแทรกซ้อน ~46
+
+**ต้องเพิ่ม (เรียงตามลำดับความสำคัญ)**
+1. Cirrhosis: แยกจาก `G02` เป็นกลุ่มคาบ เพิ่ม MCQ + MEQ (SAAG, SBP, varices, hepatic encephalopathy, HRS) — ทำพร้อมงาน Hepatitis ที่ค้างจากสัปดาห์ 5 ได้
+2. ค้างจากสัปดาห์ก่อน: STDs · Urethral catheterization (❌) · Abdominal pain · Acute confusional state · CNS infection/CSF · Hepatitis · WBC disorder/LAD · Bleeding disorder · Blood transfusion · Epilepsy · Derm infection · Empyema/resp failure · SAQ อ่าน CXR · MEQ ของ AF (🟡)
+
+**config ต้องแก้**
+- `O01` → "จ. 2 พ.ย." · สร้างรหัสคาบใหม่ให้ Cirrhosis (อ. 3 พ.ย.)
+- รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6–7)
+
+สัปดาห์ที่ 2–7: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
