@@ -838,6 +838,21 @@ body.tr-lock{overflow:hidden}
   .tr-lp.go circle{animation:none;stroke-dashoffset:0}}
 @media print{.tr-bnav,.tr-side,.tr-dock{display:none!important}body{padding:0}}
 
+/* ---------- ย่อ/ขยายขนาดเนื้อหา (ผู้ใช้ขอ 9 พ.ย.) ---------- */
+body:not([data-view="home"]) #main>*:not(.tr-fz){zoom:var(--fz,1)}
+.tr-fz{display:flex;align-items:center;justify-content:flex-end;gap:4px;min-width:0;font-family:var(--sans)}
+#main>.tr-fz{margin-bottom:-4px}
+.tr-fz-l{font-size:12px;font-weight:600;color:var(--ink-3);margin-right:4px;white-space:nowrap}
+.tr-fz button{font:inherit;font-size:14px;font-weight:600;min-width:44px;min-height:44px;padding:0 12px;border:0;border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer}
+.tr-fz button:hover:not(:disabled){background:var(--lime);color:var(--on-lime)}
+.tr-fz button:disabled{opacity:.4;cursor:default}
+.tr-fz .tr-fz-r{font-size:12px;color:var(--ink-3);padding:0 8px}
+.tr-fz output{min-width:48px;text-align:center;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.tr-side .tr-fz{justify-content:space-between;flex-wrap:wrap;background:var(--surface-sunk);border-radius:16px;padding:4px}
+.tr-side .tr-fz-l{flex:1 0 100%;padding:4px 8px 0}
+.tr-side .tr-fz button{min-width:40px;min-height:40px;background:var(--surface)}
+.tr-side .tr-fz .tr-fz-r{flex:1 0 100%;min-height:32px}
+
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk"/></marker><marker id="ah-ac" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ac"/></marker><marker id="ah-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ok"/></marker><marker id="ah-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-bad"/></marker><marker id="ah-ms" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ms"/></marker><marker id="ah-wa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-wa"/></marker><marker id="ah-mu" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-mu"/></marker></defs></svg>
@@ -2303,6 +2318,17 @@ var Pres=(function(){
    วงล้อสลับคาบ · ปัดซ้าย-ขวา · ค้นหา Ctrl K · แถบขวา · ข้อสอบหลังอ่านจบ · ประวัติการทวนรายวัน (state.log ซิงก์บัญชี) */
 var TR=(function(){
   var RM=false;try{RM=matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}
+  /* ---------- ย่อ/ขยายขนาดเนื้อหา (ผู้ใช้ขอ 9 พ.ย.) — จำไว้ในเครื่องนี้ ---------- */
+  var FZKEY="med421-learn-fz",FZS=[.8,.9,1,1.1,1.2,1.35,1.5],FZ=1;
+  try{var fz0=parseFloat(localStorage.getItem(FZKEY));if(FZS.indexOf(fz0)>=0)FZ=fz0}catch(e){}
+  function fzApply(){document.documentElement.style.setProperty("--fz",String(FZ));
+    [].forEach.call(document.querySelectorAll(".tr-fz"),function(g){var o=g.querySelector("output");if(o)o.textContent=Math.round(FZ*100)+"%";
+      var i=FZS.indexOf(FZ);g.querySelector("[data-trfz='-1']").disabled=i<=0;g.querySelector("[data-trfz='1']").disabled=i>=FZS.length-1;var r=g.querySelector("[data-trfz='0']");if(r)r.hidden=FZ===1})}
+  function fzStep(d){var i=FZS.indexOf(FZ);if(i<0)i=2;FZ=d===0?1:FZS[Math.max(0,Math.min(FZS.length-1,i+d))];
+    try{if(FZ===1)localStorage.removeItem(FZKEY);else localStorage.setItem(FZKEY,String(FZ))}catch(e){}fzApply()}
+  function fzBar(){var g=document.createElement("div");g.className="tr-fz";g.setAttribute("role","group");g.setAttribute("aria-label","ขนาดเนื้อหา");
+    g.innerHTML="<span class='tr-fz-l'>ขนาดเนื้อหา</span><button type='button' class='press' data-trfz='-1' aria-label='ย่อเนื้อหา' title='ย่อ (ปุ่ม -)'>ก−</button><output aria-live='polite'>100%</output><button type='button' class='press' data-trfz='1' aria-label='ขยายเนื้อหา' title='ขยาย (ปุ่ม =)'>ก+</button><button type='button' class='press tr-fz-r' data-trfz='0' hidden>คืนค่า</button>";return g}
+  fzApply();
   var DESK=matchMedia("(min-width:1100px)"),WIDE=matchMedia("(min-width:1400px)");
   var GOAL=5,EXAM="2026-11-17",PINKEY="med421-learn-pins",PROGKEY="med421-learn-prog";
   var GATE={},pendingLog=null;
@@ -2479,6 +2505,7 @@ var TR=(function(){
     h+="</div><div class='tr-sd-foot'><span class='tr-sd-sync"+(ss&&/cloud/.test(ss.className)?" cloud":"")+"'><i></i>"+esc(ss?ss.textContent.trim():"")+"</span>"+
       "<button class='btn press' data-trtheme='1'>โหมดสี</button></div>";
     side.innerHTML=h;
+    var sf=side.querySelector(".tr-sd-foot");if(sf)sf.insertBefore(fzBar(),sf.firstChild);
   }
   (function(){var ss=document.getElementById("lsync");if(ss&&"MutationObserver" in window)new MutationObserver(function(){if(DESK.matches)renderSide()}).observe(ss,{childList:true,subtree:true,characterData:true,attributes:true})})();
 
@@ -2492,7 +2519,7 @@ var TR=(function(){
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>ปักจากหน้านี้ล่าสุด</h3><small>เครื่องนี้</small></div>";
     h+=pins.length?"<div class='tr-pins'>"+pins.map(function(p,i){return "<div class='tr-pn' style='--r:"+(i%2?1.2:-1.5)+"deg'><small>"+esc(p.k)+"</small>"+esc(p.t)+"</div>"}).join("")+"</div>":"<p class='tr-empty'>กดปุ่มปักตาราง หลักจำ หรือหัวข้อใน Post-it แล้วจะขึ้นที่นี่</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>คีย์ลัด</h3></div><ul class='tr-keys'>"+
-      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
+      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
     dock.innerHTML=h;
   }
   document.addEventListener("click",function(e){
@@ -2741,6 +2768,7 @@ var TR=(function(){
     if(e.key==="/"&&DESK.matches){e.preventDefault();openPal();return}
     if(e.altKey&&(e.key==="ArrowLeft"||e.key==="ArrowRight")){e.preventDefault();shift(e.key==="ArrowLeft"?-1:1);return}
     if(e.key==="+"&&!e.ctrlKey&&!e.metaKey){e.preventDefault();openMenu(null);return}
+    if((e.key==="-"||e.key==="=")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&state.view!=="home"){e.preventDefault();fzStep(e.key==="-"?-1:1);return}
     if(state.view==="section"&&/^[1-5]$/.test(e.key)&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
       var q=[].filter.call(document.querySelectorAll("#main div.q[id^='q-']"),function(x){return x.offsetParent!==null&&!x.querySelector(".ch:disabled")})[0];
       if(q){var b=q.querySelectorAll(".ch")[+e.key-1];if(b){e.preventDefault();b.click()}}}
@@ -2760,6 +2788,7 @@ var TR=(function(){
     if(b.dataset.trai){aiOpen();return}
     if(b.dataset.trpin){window.open(POSTIT,"_blank","noopener");return}
     if(b.dataset.trtheme){act("theme");return}
+    if(b.dataset.trfz!=null){fzStep(+b.dataset.trfz);return}
     if(b.dataset.trgate){var sid=b.dataset.trgate;GATE[sid]=1;var m=document.getElementById("main"),g=m.querySelector(".tr-gate");if(g)g.remove();
       m.querySelectorAll("[data-trhid]").forEach(function(x){x.hidden=false;x.removeAttribute("data-trhid")});
       var qz=m.querySelector(".quiz");if(qz){qz.classList.add("tr-qin");setTimeout(function(){try{qz.scrollIntoView({block:"start",behavior:RM?"auto":"smooth"})}catch(_){}},40)}return}
@@ -2783,10 +2812,12 @@ var TR=(function(){
     if((state.view==="meq"||state.view==="osce")&&!state.pid&&m.firstElementChild){var sg=el("div","tr-seg");
       [["meq","MEQ"],["osce","OSCE / SAQ"]].forEach(function(x){var b=el("button",null,x[1]);b.type="button";b.dataset.tab=x[0];b.setAttribute("aria-pressed",state.view===x[0]?"true":"false");sg.appendChild(b)});
       m.insertBefore(sg,m.firstChild)}
+    if(state.view!=="home"&&m.firstElementChild&&!m.querySelector(":scope>.tr-fz"))m.insertBefore(fzBar(),m.firstElementChild);
     if(state.view==="section"||state.view==="lecture"){if(TR.dir){var c=m.firstElementChild;if(c&&!RM){c.classList.add(TR.dir>0?"tr-slide-l":"tr-slide-r")}}}
     TR.dir=0;
     if(DESK.matches)renderSide();
     renderDock();
+    fzApply();
   }
   DESK.addEventListener&&DESK.addEventListener("change",function(){renderSide();renderDock()});
   WIDE.addEventListener&&WIDE.addEventListener("change",renderDock);
