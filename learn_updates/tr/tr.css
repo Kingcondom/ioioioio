@@ -367,3 +367,18 @@ body.tr-lock{overflow:hidden}
   .tr-rm-seg,.tr-rm-it,.tr-rm-hubc,.tr-rm-hub,.tr-rm-seg.pick,.tr-flash,.tr-wh-in,.tr-wheel.out .tr-wh-in,.tr-wh-it.pick .tr-wh-chip,.tr-sheet[open],.tr-sheet.out,.tr-pop,.tr-slide-l,.tr-slide-r,.tr-qin,.tr-pal,.tr-pal-box{animation:none}
   .tr-lp.go circle{animation:none;stroke-dashoffset:0}}
 @media print{.tr-bnav,.tr-side,.tr-dock{display:none!important}body{padding:0}}
+
+/* ---------- ย่อ/ขยายขนาดเนื้อหา (ผู้ใช้ขอ 9 พ.ย.) ---------- */
+body:not([data-view="home"]) #main>*:not(.tr-fz){zoom:var(--fz,1)}
+.tr-fz{display:flex;align-items:center;justify-content:flex-end;gap:4px;min-width:0;font-family:var(--sans)}
+#main>.tr-fz{margin-bottom:-4px}
+.tr-fz-l{font-size:12px;font-weight:600;color:var(--ink-3);margin-right:4px;white-space:nowrap}
+.tr-fz button{font:inherit;font-size:14px;font-weight:600;min-width:44px;min-height:44px;padding:0 12px;border:0;border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer}
+.tr-fz button:hover:not(:disabled){background:var(--lime);color:var(--on-lime)}
+.tr-fz button:disabled{opacity:.4;cursor:default}
+.tr-fz .tr-fz-r{font-size:12px;color:var(--ink-3);padding:0 8px}
+.tr-fz output{min-width:48px;text-align:center;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.tr-side .tr-fz{justify-content:space-between;flex-wrap:wrap;background:var(--surface-sunk);border-radius:16px;padding:4px}
+.tr-side .tr-fz-l{flex:1 0 100%;padding:4px 8px 0}
+.tr-side .tr-fz button{min-width:40px;min-height:40px;background:var(--surface)}
+.tr-side .tr-fz .tr-fz-r{flex:1 0 100%;min-height:32px}

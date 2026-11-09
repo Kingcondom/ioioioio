@@ -56,3 +56,5 @@
 ## 9 พ.ย. — ปิดงาน
 - branch หลัก `claude/internal-med-learning-web-j9ca6l` commit 7235b71: สำเนา `artifact/index.html` + data + `postit/` ตรงของสด (learn v67, Post-it v11)
 - `verify.py` / `verify_pin.py` ปรับตาม UI ใหม่ · ผ่านพร้อม `checkdata.py` · รายละเอียดใน HANDOFF.md หัวข้อ 🟢 9 พ.ย.
+
+- 9 พ.ย. v68: ปุ่มย่อ/ขยายขนาดเนื้อหา (`.tr-fz`, 80–150%, คีย์ - / =, localStorage `med421-learn-fz`) ตามคอมเมนต์ใน artifact · ทดสอบ `tr/test_fz.js`

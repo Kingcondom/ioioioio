@@ -4,6 +4,17 @@
    วงล้อสลับคาบ · ปัดซ้าย-ขวา · ค้นหา Ctrl K · แถบขวา · ข้อสอบหลังอ่านจบ · ประวัติการทวนรายวัน (state.log ซิงก์บัญชี) */
 var TR=(function(){
   var RM=false;try{RM=matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}
+  /* ---------- ย่อ/ขยายขนาดเนื้อหา (ผู้ใช้ขอ 9 พ.ย.) — จำไว้ในเครื่องนี้ ---------- */
+  var FZKEY="med421-learn-fz",FZS=[.8,.9,1,1.1,1.2,1.35,1.5],FZ=1;
+  try{var fz0=parseFloat(localStorage.getItem(FZKEY));if(FZS.indexOf(fz0)>=0)FZ=fz0}catch(e){}
+  function fzApply(){document.documentElement.style.setProperty("--fz",String(FZ));
+    [].forEach.call(document.querySelectorAll(".tr-fz"),function(g){var o=g.querySelector("output");if(o)o.textContent=Math.round(FZ*100)+"%";
+      var i=FZS.indexOf(FZ);g.querySelector("[data-trfz='-1']").disabled=i<=0;g.querySelector("[data-trfz='1']").disabled=i>=FZS.length-1;var r=g.querySelector("[data-trfz='0']");if(r)r.hidden=FZ===1})}
+  function fzStep(d){var i=FZS.indexOf(FZ);if(i<0)i=2;FZ=d===0?1:FZS[Math.max(0,Math.min(FZS.length-1,i+d))];
+    try{if(FZ===1)localStorage.removeItem(FZKEY);else localStorage.setItem(FZKEY,String(FZ))}catch(e){}fzApply()}
+  function fzBar(){var g=document.createElement("div");g.className="tr-fz";g.setAttribute("role","group");g.setAttribute("aria-label","ขนาดเนื้อหา");
+    g.innerHTML="<span class='tr-fz-l'>ขนาดเนื้อหา</span><button type='button' class='press' data-trfz='-1' aria-label='ย่อเนื้อหา' title='ย่อ (ปุ่ม -)'>ก−</button><output aria-live='polite'>100%</output><button type='button' class='press' data-trfz='1' aria-label='ขยายเนื้อหา' title='ขยาย (ปุ่ม =)'>ก+</button><button type='button' class='press tr-fz-r' data-trfz='0' hidden>คืนค่า</button>";return g}
+  fzApply();
   var DESK=matchMedia("(min-width:1100px)"),WIDE=matchMedia("(min-width:1400px)");
   var GOAL=5,EXAM="2026-11-17",PINKEY="med421-learn-pins",PROGKEY="med421-learn-prog";
   var GATE={},pendingLog=null;
@@ -180,6 +191,7 @@ var TR=(function(){
     h+="</div><div class='tr-sd-foot'><span class='tr-sd-sync"+(ss&&/cloud/.test(ss.className)?" cloud":"")+"'><i></i>"+esc(ss?ss.textContent.trim():"")+"</span>"+
       "<button class='btn press' data-trtheme='1'>โหมดสี</button></div>";
     side.innerHTML=h;
+    var sf=side.querySelector(".tr-sd-foot");if(sf)sf.insertBefore(fzBar(),sf.firstChild);
   }
   (function(){var ss=document.getElementById("lsync");if(ss&&"MutationObserver" in window)new MutationObserver(function(){if(DESK.matches)renderSide()}).observe(ss,{childList:true,subtree:true,characterData:true,attributes:true})})();
 
@@ -193,7 +205,7 @@ var TR=(function(){
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>ปักจากหน้านี้ล่าสุด</h3><small>เครื่องนี้</small></div>";
     h+=pins.length?"<div class='tr-pins'>"+pins.map(function(p,i){return "<div class='tr-pn' style='--r:"+(i%2?1.2:-1.5)+"deg'><small>"+esc(p.k)+"</small>"+esc(p.t)+"</div>"}).join("")+"</div>":"<p class='tr-empty'>กดปุ่มปักตาราง หลักจำ หรือหัวข้อใน Post-it แล้วจะขึ้นที่นี่</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>คีย์ลัด</h3></div><ul class='tr-keys'>"+
-      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
+      [["ค้นหาหัวข้อทุกวิชา","Ctrl K"],["ตอบข้อสอบ (เปิดข้อสอบแล้ว)","1–5"],["หัวข้อ/ชุดก่อน-ถัดไป","Alt ← →"],["หมุนเลือกคาบ","ดับเบิลคลิก"],["ทางลัด","+"],["ย่อ/ขยายเนื้อหา","− ="]].map(function(x){return "<li><span>"+x[0]+"</span><span class='tr-kbd'>"+x[1]+"</span></li>"}).join("")+"</ul></section>";
     dock.innerHTML=h;
   }
   document.addEventListener("click",function(e){
@@ -442,6 +454,7 @@ var TR=(function(){
     if(e.key==="/"&&DESK.matches){e.preventDefault();openPal();return}
     if(e.altKey&&(e.key==="ArrowLeft"||e.key==="ArrowRight")){e.preventDefault();shift(e.key==="ArrowLeft"?-1:1);return}
     if(e.key==="+"&&!e.ctrlKey&&!e.metaKey){e.preventDefault();openMenu(null);return}
+    if((e.key==="-"||e.key==="=")&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&state.view!=="home"){e.preventDefault();fzStep(e.key==="-"?-1:1);return}
     if(state.view==="section"&&/^[1-5]$/.test(e.key)&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
       var q=[].filter.call(document.querySelectorAll("#main div.q[id^='q-']"),function(x){return x.offsetParent!==null&&!x.querySelector(".ch:disabled")})[0];
       if(q){var b=q.querySelectorAll(".ch")[+e.key-1];if(b){e.preventDefault();b.click()}}}
@@ -461,6 +474,7 @@ var TR=(function(){
     if(b.dataset.trai){aiOpen();return}
     if(b.dataset.trpin){window.open(POSTIT,"_blank","noopener");return}
     if(b.dataset.trtheme){act("theme");return}
+    if(b.dataset.trfz!=null){fzStep(+b.dataset.trfz);return}
     if(b.dataset.trgate){var sid=b.dataset.trgate;GATE[sid]=1;var m=document.getElementById("main"),g=m.querySelector(".tr-gate");if(g)g.remove();
       m.querySelectorAll("[data-trhid]").forEach(function(x){x.hidden=false;x.removeAttribute("data-trhid")});
       var qz=m.querySelector(".quiz");if(qz){qz.classList.add("tr-qin");setTimeout(function(){try{qz.scrollIntoView({block:"start",behavior:RM?"auto":"smooth"})}catch(_){}},40)}return}
@@ -484,10 +498,12 @@ var TR=(function(){
     if((state.view==="meq"||state.view==="osce")&&!state.pid&&m.firstElementChild){var sg=el("div","tr-seg");
       [["meq","MEQ"],["osce","OSCE / SAQ"]].forEach(function(x){var b=el("button",null,x[1]);b.type="button";b.dataset.tab=x[0];b.setAttribute("aria-pressed",state.view===x[0]?"true":"false");sg.appendChild(b)});
       m.insertBefore(sg,m.firstChild)}
+    if(state.view!=="home"&&m.firstElementChild&&!m.querySelector(":scope>.tr-fz"))m.insertBefore(fzBar(),m.firstElementChild);
     if(state.view==="section"||state.view==="lecture"){if(TR.dir){var c=m.firstElementChild;if(c&&!RM){c.classList.add(TR.dir>0?"tr-slide-l":"tr-slide-r")}}}
     TR.dir=0;
     if(DESK.matches)renderSide();
     renderDock();
+    fzApply();
   }
   DESK.addEventListener&&DESK.addEventListener("change",function(){renderSide();renderDock()});
   WIDE.addEventListener&&WIDE.addEventListener("change",renderDock);
