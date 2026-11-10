@@ -249,6 +249,24 @@ try:
         pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT,
                  wait_until="domcontentloaded")
         pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+        # ---- แท็บ post-it ที่เปิดอยู่แล้ว แล้วเปลี่ยนแค่ hash ----
+        # production อาจส่ง payload มาทางนี้ (แท็บเปิดอยู่ แอปเปลี่ยน hash ให้) ไม่ใช่โหลดหน้าใหม่
+        # เส้นทางนี้วิ่งผ่าน readHash() ของ hashchange ซึ่งไม่มีอะไรคุมมาก่อน
+        if payloads:
+            sid0, payload0, data0 = payloads[0]
+            pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT, wait_until="networkidle")
+            pin.wait_for_timeout(600)
+            pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+            pin.evaluate("(p)=>{location.hash='t='+p;}", payload0)
+            pin.wait_for_timeout(900)
+            got = own_notes(pin)
+            print("  %-18s แท็บเปิดอยู่แล้วเปลี่ยนแค่ hash → %d ใบ" % (sid0, len(got)))
+            if len(got) != len(data0.get("c") or []):
+                fail.append("%s: เปลี่ยนแค่ hash (แท็บเปิดอยู่แล้ว) ได้ %d ใบ ควรได้ %d "
+                            "— เส้นทาง hashchange พัง" % (sid0, len(got), len(data0.get("c") or [])))
+            pin.goto("http://127.0.0.1:%d/index.html" % P_POSTIT, wait_until="domcontentloaded")
+            pin.evaluate("(k)=>localStorage.removeItem(k)", LKEY)
+
         # ---- ปักกล่อง "หลักจำ" (ผู้ใช้ขอ 7 พ.ย.) ----
         mn = pick_mnem()
         if not mn:

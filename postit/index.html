@@ -242,6 +242,7 @@ textarea.own{display:block;width:100%;font:inherit;font-size:16px;line-height:1.
       <h3>การแปะบนกำแพง</h3>
       <label class="opt"><span>เฉลยขึ้นเองหลังแปะ</span><select id="o-rev"><option value="5">5 วินาที</option><option value="8">8 วินาที</option><option value="12">12 วินาที</option><option value="20">20 วินาที</option><option value="0">กดเอง</option></select></label>
       <label class="opt"><span>ลอกใบเก่า แปะใบใหม่ ทุก</span><select id="o-next"><option value="6">6 วินาที</option><option value="10">10 วินาที</option><option value="15">15 วินาที</option><option value="25">25 วินาที</option><option value="0">ไม่เปลี่ยนเอง</option></select></label>
+      <label class="opt"><span>ลำดับใบบนกำแพง</span><select id="o-sort"><option value="1">เรียงตามบท</option><option value="0">สุ่มคละหัวข้อ</option></select></label>
       <label class="opt"><span>ใส่โจทย์ข้อสอบด้วย</span><select id="o-q"><option value="1">ใส่</option><option value="0">ไม่ใส่</option></select></label>
       <label class="opt"><span>กลับด้านซ้ายขวา (ใช้กับกระจกเทเลพรอมเตอร์)</span><select id="o-flip"><option value="0">ปกติ</option><option value="1">กลับด้าน</option></select></label>
       <div class="opt"><span>ใบที่กด "จำได้แล้ว" ทุกหัวข้อ</span><button type="button" id="b-resetall">เอากลับมาทั้งหมด</button></div>
@@ -283,7 +284,7 @@ var LINKS={
 };
 var LKEY="postit-v1";
 var DATA=null,QS=null;
-var state={pins:{},done:{},own:{},opt:{rev:8,next:10,q:1,flip:0}};
+var state={pins:{},done:{},own:{},opt:{rev:8,next:10,q:1,flip:0,sort:1}};
 var deck=[],ptr=0,slots=[],paused=false,lastSwap=0,zoomSlot=null,dimsKey="";
 
 /* ---------- helpers ---------- */
@@ -352,8 +353,31 @@ function ownCard(id){
   if(c)return {pid:pid,k:pid+"|"+hash(o.f),kind:"c",f:c.f,b:c.b,cut:c.cut,sec:null,own:id};
   return {pid:pid,k:pid+"|"+hash(o.f+"\u0001"+(o.b||"")),kind:"p",f:o.f,b:o.b||"",sec:null,own:id};
 }
+/* เรียงตามบท (ผู้ใช้ขอ 10 พ.ย.) — ลำดับหัวข้อตาม DATA.order (ชุดวิชา → คาบ → หัวข้อ) · โจทย์ q- ไปอยู่ต่อท้ายหัวข้อของมัน */
+var ORD=null;
+function ordOf(pid){
+  if(!ORD){ORD={};(DATA&&DATA.order||[]).forEach(function(x,i){ORD[x]=i;});}
+  if(pid.indexOf("q-")===0){var it=QS&&QS[pid.slice(2)];return it&&ORD[it.sec]!=null?ORD[it.sec]+0.5:1e9;}
+  return ORD[pid]!=null?ORD[pid]:1e9;
+}
+function byOrd(a,b){return ordOf(a)-ordOf(b)||(a<b?-1:a>b?1:0);}
 function buildDeck(focus){
   var pins=live(state.pins),byTopic=[];
+  if(+state.opt.sort){
+    /* ใบที่เขียนเอง/ปักจากตารางอยู่บนสุด ชุดใหม่สุดก่อน (ในชุดเดียวกันเรียงตามแถวเดิม) แล้วจึงตามด้วยหัวข้อเรียงตามบท
+       — เดิม (v12) ใบพวกนี้ไปอยู่ท้ายกำแพง กดปักตารางแล้วเลยดูเหมือนปักไม่ไป */
+    Object.keys(ownLive()).sort(function(a,b){var ta=state.own[a].t||0,tb=state.own[b].t||0;return Math.abs(ta-tb)<5000?ta-tb:tb-ta;}).forEach(function(id){
+      var c=ownCard(id);if(!(state.done[c.k]>0))byTopic.push({pid:c.pid,cs:[c]});
+    });
+    Object.keys(pins).sort(byOrd).forEach(function(pid){
+      var cs=cardsFor(pid).filter(function(c){return !(state.done[c.k]>0);});
+      if(state.opt.q===0)cs=cs.filter(function(c){return c.kind!=="q"||pid.indexOf("q-")===0;});
+      if(cs.length)byTopic.push({pid:pid,cs:cs});
+    });
+    var seq=[];byTopic.forEach(function(t){seq=seq.concat(t.cs);});
+    if(focus){var ff=byTopic.filter(function(t){return t.pid===focus;})[0];if(ff){seq=seq.filter(function(c){return c.pid!==focus;});seq=ff.cs.concat(seq);}}
+    deck=seq;ptr=0;return;
+  }
   Object.keys(ownLive()).sort(function(a,b){return (state.own[b].t||0)-(state.own[a].t||0);}).forEach(function(id){
     var c=ownCard(id);if(!(state.done[c.k]>0))byTopic.push({pid:c.pid,cs:[c]});
   });
@@ -657,12 +681,12 @@ function pinTable(x){
     if(!Array.isArray(c))return;
     var f=String(c[0]||"").trim().slice(0,600),b=String(c[1]||"").trim().slice(0,1200);if(!f)return;
     var id="t"+hash(f+"\u0001"+b),prev=state.own[id];
-    if(prev&&!prev.del){var k=ownCard(id).k;if(state.done[k]>0)state.done[k]=-now();}
+    if(prev&&!prev.del){var k=ownCard(id).k;if(state.done[k]>0)state.done[k]=-now();prev.t=t+i;prev.u=t+i;}   /* ปักซ้ำ = ดันขึ้นบนสุดอีกครั้ง */
     else state.own[id]={f:f,b:b,t:t+i,u:t+i};
     if(!first)first=id;n++;
   });
   if(!n){toast("ตารางนี้ไม่มีแถวให้ปัก");return;}
-  save();buildDeck("o-"+first);layout();renderPanel();
+  save();buildDeck("o-"+first);layout();renderPanel();try{$("board").scrollTop=0;}catch(e){}
   toast("ปักแล้ว "+n+" ใบ"+(d.s?": "+String(d.s).slice(0,60):""));
 }
 
@@ -917,15 +941,16 @@ function renderPanel(){
   var pins=live(state.pins),ids=Object.keys(pins).sort(function(a,b){return pins[b]-pins[a];});
   $("tc-pins").textContent=ids.length||"";$("tc-own").textContent=Object.keys(ownLive()).length||"";
   if(!$("panel").classList.contains("on"))return;
-  /* จัดกลุ่มตามเว็บต้นทาง แล้วเรียงใหม่สุดก่อนในแต่ละกลุ่ม */
+  /* จัดกลุ่มตามเว็บต้นทาง แล้วเรียงตามบทในแต่ละกลุ่ม */
   var G=[{k:"l",ids:[]},{k:"s",ids:[]},{k:"d",ids:[]}],other=[];
+  ids=ids.slice().sort(byOrd);   /* ในหน้าจัดการเรียงตามบทเสมอ */
   ids.forEach(function(pid){var src=srcOfPid(pid),g=G.filter(function(x){return x.k===src;})[0];(g?g.ids:other).push(pid);});
   $("pins").innerHTML=ids.length?G.filter(function(g){return g.ids.length;}).map(function(g){
     return '<div class="gh">'+esc(LINKS[g.k].name)+chip(g.ids.length+" หัวข้อ","num")+'</div>'+g.ids.map(pinRow).join("");
   }).join("")+(other.length?'<div class="gh">อื่นๆ'+chip(other.length+" หัวข้อ","num")+'</div>'+other.map(pinRow).join(""):""):
   '<p class="empty">ยังไม่ได้ปักหัวข้อไหน ค้นหาข้างบนแล้วกด <b>+ ปัก</b> หรือกด <b>ปักไว้ใน post-it</b> จากเว็บบทเรียน</p>';
   $("o-rev").value=String(state.opt.rev);$("o-next").value=String(state.opt.next);
-  $("o-q").value=String(state.opt.q);$("o-flip").value=String(state.opt.flip);
+  $("o-q").value=String(state.opt.q);$("o-flip").value=String(state.opt.flip);$("o-sort").value=String(state.opt.sort==null?1:state.opt.sort);
   renderOwn();search();renderSync();
 }
 function pinRow(pid){
@@ -949,7 +974,7 @@ function mergeMap(a,b){var r={};[a||{},b||{}].forEach(function(m){Object.keys(m)
 function normOwn(m){var r={};if(m&&typeof m==="object")Object.keys(m).forEach(function(id){var o=m[id];if(!o||typeof o!=="object"||!/^[a-z0-9]{1,24}$/.test(id))return;
   if(o.del)r[id]={del:1,u:+o.u||0};else if(typeof o.f==="string"&&o.f)r[id]={f:o.f.slice(0,600),b:typeof o.b==="string"?o.b.slice(0,1200):"",t:+o.t||0,u:+o.u||0};});return r;}
 function mergeOwn(a,b){var r={};[normOwn(a),normOwn(b)].forEach(function(m){Object.keys(m).forEach(function(id){if(!r[id]||(m[id].u||0)>(r[id].u||0))r[id]=m[id];});});return r;}
-function norm(o){o=o||{};var op=o.opt||{};return {pins:o.pins||{},done:o.done||{},own:normOwn(o.own),opt:{rev:op.rev!=null?+op.rev:8,next:op.next!=null?+op.next:10,q:op.q!=null?+op.q:1,flip:+op.flip||0}};}
+function norm(o){o=o||{};var op=o.opt||{};return {pins:o.pins||{},done:o.done||{},own:normOwn(o.own),opt:{rev:op.rev!=null?+op.rev:8,next:op.next!=null?+op.next:10,q:op.q!=null?+op.q:1,flip:+op.flip||0,sort:op.sort!=null?+op.sort:1}};}
 function keepLocal(){try{localStorage.setItem(LKEY,JSON.stringify(state));}catch(e){}}
 function save(){
   keepLocal();
@@ -1030,6 +1055,7 @@ $("o-rev").onchange=function(){state.opt.rev=+this.value;save();var t=now();slot
 $("o-next").onchange=function(){state.opt.next=+this.value;save();lastSwap=now();};
 $("o-q").onchange=function(){state.opt.q=+this.value;save();buildDeck();layout();};
 $("o-flip").onchange=function(){state.opt.flip=+this.value;save();applyFlip();};
+$("o-sort").onchange=function(){state.opt.sort=+this.value;save();buildDeck();layout();};
 $("b-resetall").onclick=function(){Object.keys(state.done).forEach(function(k){if(state.done[k]>0)state.done[k]=-now();});save();buildDeck();layout();renderPanel();toast("เอาทุกใบกลับมาแปะแล้ว");};
 window.addEventListener("hashchange",function(){if(DATA)readHash();});
 var rz=null;
