@@ -1,0 +1,1317 @@
+{
+ "lec": "10/11",
+ "date": "อ. 10 พ.ย.",
+ "title": "Genital ulcer และ syphilis",
+ "subtitle": "ประเมินแผลอวัยวะเพศและตารางแยกห้าโรค · chancroid · genital herpes วินิจฉัยและยา · เริมรุนแรงและ encephalitis · donovanosis และ LGV · ระยะของซิฟิลิส · อาการแต่ละระยะ · serology และลำดับการตรวจ · neuro ocular otic syphilis · รักษาตามระยะ แพ้ยา และ JH reaction · ตั้งครรภ์ ติดตาม titre คู่นอน และการป้องกัน",
+ "objectives": [
+  "ซักประวัติและตรวจแผลที่อวัยวะเพศอย่างเป็นระบบ และแยก syphilis chancroid herpes donovanosis และ LGV จากลักษณะแผลและต่อมน้ำเหลือง",
+  "เลือกการตรวจที่เหมาะสมสำหรับแผลอวัยวะเพศ ได้แก่ serology ซิฟิลิส HSV NAAT และการตรวจ HIV และอธิบายข้อจำกัดของ Tzanck smear",
+  "สั่งยาต้านไวรัสสำหรับ genital herpes ครั้งแรก กลับเป็นซ้ำ กดการกำเริบ ผู้ภูมิคุ้มกันบกพร่อง และ HSV encephalitis ได้ถูกขนาด",
+  "รักษา chancroid donovanosis และ LGV ด้วยยาและระยะเวลาที่ถูกต้อง",
+  "จัดระยะซิฟิลิสเป็น early late และ neurosyphilis และอธิบายอาการเด่นของแต่ละระยะ",
+  "แปลผล non-treponemal และ treponemal test ร่วมกัน รวมถึงผลบวกลวง prozone serofast และลำดับการตรวจแบบ traditional และ reverse",
+  "บอกข้อบ่งชี้การเจาะหลังและให้การรักษา neurosyphilis ocular และ otic syphilis",
+  "รักษาซิฟิลิสตามระยะ ในผู้แพ้ penicillin ผู้ติด HIV และหญิงตั้งครรภ์ และอธิบาย Jarisch–Herxheimer reaction",
+  "ติดตาม titre หลังรักษา ตัดสินการรักษาล้มเหลว จัดการคู่นอน และให้คำแนะนำการป้องกันรวมถึง doxy-PEP"
+ ],
+ "guidelines": [
+  "**CDC Sexually Transmitted Infections Treatment Guidelines, 2021** (MMWR Recomm Rep 2021;70(4)) — chancroid, genital herpes, granuloma inguinale, LGV, syphilis ทุกระยะ, neurosyphilis/ocular/otic syphilis, ซิฟิลิสในหญิงตั้งครรภ์, การจัดการคู่นอน",
+  "**CDC Laboratory Recommendations for Syphilis Testing, United States, 2024** (MMWR Recomm Rep 2024;73(1)) — traditional เทียบ reverse algorithm, titre ของ VDRL กับ RPR เทียบกันไม่ได้",
+  "**CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for Bacterial STI Prevention, 2024** (MMWR Recomm Rep 2024;73(2))",
+  "**CDC NCHHSTP Dear Colleague letter — Bicillin L-A shortage (10 มี.ค. 2026)** — สงวน benzathine penicillin G ให้หญิงตั้งครรภ์ ใช้ doxycycline ในผู้ไม่ตั้งครรภ์ และนำเข้า Lentocilin",
+  "**WHO Guidelines for the management of symptomatic sexually transmitted infections (2021)** — genital ulcer syndromic management",
+  "**WHO Updated recommendations for the treatment of Neisseria gonorrhoeae, Chlamydia trachomatis and Treponema pallidum (syphilis), and new recommendations on syphilis testing and partner services (2024)** และ WHO guidelines for the treatment of Treponema pallidum (2016)",
+  "**กรมควบคุมโรค (กลุ่มบางรักโรคติดต่อทางเพศสัมพันธ์ กองโรคเอดส์และโรคติดต่อทางเพศสัมพันธ์) — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)** — สูตรยาตามระยะ, reverse algorithm สำหรับหญิงตั้งครรภ์, prozone, serofast, เกณฑ์รักษาล้มเหลวในหญิงตั้งครรภ์",
+  "**กองโรคเอดส์และโรคติดต่อทางเพศสัมพันธ์ — สถานการณ์โรคซิฟิลิสแต่กำเนิด ประเทศไทย พ.ศ. 2565** — การคัดกรองซ้ำที่อายุครรภ์ 28–32 สัปดาห์"
+ ],
+ "nlGap": "เกณฑ์ฯ มีรหัส STI รวม (`นล. 2.3.1(19)`, `B10.2.2(1)`) herpes simplex (`2.3.1(8)`) และ treponemal serology (`3.3.16`, `B10.3(8)`) แต่ **ไม่มีรหัสแยกของ LGV, granuloma inguinale, neurosyphilis/ocular/otic syphilis และ penicillin desensitization** และบันทึกเสียงไม่มีสไลด์ประกอบ ตารางยาส่วนนั้นจึงอิงแนวทางด้านล่าง",
+ "sections": [
+  {
+   "id": "id-gus-01",
+   "title": "แนวทางประเมินแผลที่อวัยวะเพศ และตารางแยกห้าโรค",
+   "summary": "ดูจำนวน ความเจ็บ ความแข็ง ขอบ พื้นแผล และต่อมน้ำเหลือง แล้วตรวจซิฟิลิส HSV และ HIV ทุกราย เพราะดูด้วยตาอย่างเดียวไม่แม่น",
+   "minutes": 8,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.1.48",
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "2.1.57",
+    "3.3.15"
+   ],
+   "md": "### ขอบเขตของคาบนี้\nกลุ่มโรคที่รอยโรค **จำกัดอยู่ที่อวัยวะเพศ ทวารหนัก หรือรอบทวาร (perianal)** มาได้หลายรูปแบบ — แผล (ulcer) · หูด (wart) · ตุ่มน้ำ (vesicle) · แผลเดียวหรือหลายแผล\n\n### สิ่งที่อาจารย์ให้ดูทุกครั้งที่เจอแผล\n- **จำนวน** แผลเดียวหรือหลายแผล · แยกกันหรือรวมกัน — แต่ **อย่าใช้จำนวนแผลอย่างเดียวแยกโรค** (chancroid มักแผลเดียวแต่หลายแผลได้ · chancre ก็หลายแผลได้)\n- **ความเจ็บ** — ถามว่าเจ็บตุบ ๆ ไหม (บางคนเจ็บ บางคนไม่เจ็บ)\n- **ความแข็งเมื่อคลำ (induration)** · **ขอบแผล** ยกนูน เซาะ หรือขรุขระ · **พื้นแผล** สะอาด มีหนอง หรือแดงสด\n- **ต่อมน้ำเหลืองขาหนีบ** โต เจ็บ แข็ง หรือแตกเป็นหนอง (bubo)\n\n### ตารางแยกโรค\n| โรค | เชื้อ | ลักษณะแผล | เจ็บ | ต่อมน้ำเหลือง | ตรวจที่ช่วย |\n|---|---|---|---|---|---|\n| **Syphilis (chancre)** | Treponema pallidum | แผลเดียว 1–2 ซม. · ขอบนูนแข็ง · พื้นสะอาด | **ไม่เจ็บ** | โต แข็ง ไม่เจ็บ | darkfield หรือ PCR จากแผล · serology |\n| **Chancroid (แผลริมอ่อน)** | Haemophilus ducreyi | นุ่ม ลึก · ขอบขรุขระเซาะ · พื้นหนองดูสกปรก | **เจ็บ** | เจ็บ อาจเป็น bubo แตก | Gram stain แบบฝูงปลา · NAAT |\n| **Genital herpes** | HSV-2 (HSV-1 ได้) | ตุ่มน้ำเป็นกลุ่มบนพื้นแดง → แผลตื้นหลายแผล | **เจ็บ/แสบ** | เจ็บ (ครั้งแรก) | **HSV NAAT (PCR)** · Tzanck |\n| **Granuloma inguinale** | Klebsiella granulomatis | ค่อย ๆ โต · แดงสด เลือดออกง่าย · ขอบขรุขระ | ไม่ค่อยเจ็บ | ไม่โตจริง (pseudobubo) | Donovan bodies จาก crush prep หรือชิ้นเนื้อ |\n| **LGV** | Chlamydia trachomatis L1–L3 | ตุ่มหรือแผลเล็ก หายเร็ว มักไม่ทันเห็น | ไม่เจ็บ | **โตเด่น เจ็บ แตกเป็นหนอง** (ฝีมะม่วง) | C. trachomatis NAAT |\n\n### หลักปฏิบัติ\n- ลักษณะแผล **ทับซ้อนกันมาก** และติดเชื้อร่วมได้ — อาจารย์ย้ำว่าแผลริมอ่อนกับแผลซิฟิลิส **ขนาดใกล้กันมาก แยกยาก** จึงต้อง **differential ซิฟิลิสกับเริมทุกครั้ง**\n- ผู้ป่วยแผลอวัยวะเพศทุกราย: **serology ซิฟิลิส + ตรวจ HSV จากแผล (NAAT) + ตรวจ HIV** (CDC 2021) · ถ้ามี chancroid ระบาดให้ตรวจ H. ducreyi ด้วย\n- **Serology ซิฟิลิสอาจยังลบ** เพราะแผลขึ้นก่อนแอนติบอดี (อาจารย์เน้น) → ตรวจจากแผลโดยตรง หรือเจาะเลือดซ้ำ 2–4 สัปดาห์\n- WHO 2021: ที่ที่ตรวจ molecular ไม่ได้ ให้รักษาแบบ **syndromic** ในวันที่มาตรวจ (ครอบคลุมซิฟิลิส ± chancroid ± HSV ตามระบาดวิทยาท้องถิ่น)\n- แผลทุกชนิด **เพิ่มโอกาสติดและแพร่ HIV**\n",
+   "pearls": [
+    "จำนวนแผลอย่างเดียวแยกโรคไม่ได้ — ดูความเจ็บ ความแข็ง ขอบ พื้นแผล และต่อมน้ำเหลืองร่วมกัน",
+    "ไม่เจ็บ + แข็ง + สะอาด = chancre · เจ็บ + นุ่ม + หนอง = chancroid · ตุ่มน้ำเป็นกลุ่ม = HSV",
+    "LGV: แผลเล็กจนไม่ทันเห็น แต่ต่อมน้ำเหลืองโตเด่น (ฝีมะม่วง)",
+    "แผลอวัยวะเพศทุกราย → ตรวจซิฟิลิส + HSV NAAT + HIV"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-01",
+     "kind": "mcq",
+     "topic": "Initial work-up of genital ulcer disease",
+     "stem": "A 26-year-old man has had a single genital ulcer for 5 days. He had condomless sex with a new partner 3 weeks ago. Which approach to investigation is most appropriate for every patient presenting with a genital ulcer?",
+     "choices": [
+      "Gram stain of the ulcer only, because most ulcers are bacterial",
+      "Clinical diagnosis from the ulcer appearance, with laboratory tests only if treatment fails",
+      "Syphilis serology, HSV nucleic acid amplification test from the lesion, and HIV testing",
+      "Viral culture of the ulcer only",
+      "Excisional biopsy of the ulcer for histology"
+     ],
+     "answer": 2,
+     "explain": "CDC 2021 ระบุว่าการวินิจฉัยแผลอวัยวะเพศจาก **ลักษณะแผลอย่างเดียวไม่แม่น** และพบติดเชื้อร่วมได้ → ทุกรายควรได้ **serology ซิฟิลิส + HSV NAAT จากแผล + ตรวจ HIV**\n\nGram stain อย่างเดียวช่วยเฉพาะ chancroid และไม่ไว · viral culture ไวต่ำกว่า NAAT · การตัดชิ้นเนื้อสงวนไว้สำหรับแผลเรื้อรังหรือสงสัยมะเร็ง/donovanosis · การรอให้รักษาล้มเหลวก่อนตรวจทำให้พลาดซิฟิลิสและ HIV",
+     "pearl": "แผลอวัยวะเพศ = ซิฟิลิส + HSV + HIV ทุกราย",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การประเมินแผลอวัยวะเพศ",
+      "CDC STI Treatment Guidelines 2021 — Diseases characterized by genital, anal, or perianal ulcers"
+     ],
+     "nl": [
+      "2.1.48",
+      "2.3.1(19)",
+      "3.3.15"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-02",
+     "kind": "mcq",
+     "topic": "Unreliable feature in ulcer differentiation",
+     "stem": "When differentiating the cause of a genital ulcer clinically, which single feature is the LEAST reliable for distinguishing chancroid from primary syphilis?",
+     "choices": [
+      "Presence or absence of pain",
+      "Induration of the ulcer on palpation",
+      "Appearance of the ulcer base (clean versus purulent)",
+      "Character of the inguinal lymph nodes",
+      "Number of ulcers (single versus multiple)"
+     ],
+     "answer": 4,
+     "explain": "อาจารย์เน้นว่า **จำนวนแผลไม่ควรใช้เป็นเกณฑ์เดียว** — chancroid มักแผลเดียวแต่หลายแผลได้ และ chancre ก็หลายแผลได้ ขนาดแผลทั้งสองก็ใกล้กัน\n\nสิ่งที่ช่วยแยกได้ดีกว่าคือ **ความเจ็บ** (chancroid เจ็บ · chancre ไม่เจ็บ) **ความแข็ง** (chancre แข็ง · chancroid นุ่ม = แผลริมอ่อน) **พื้นแผล** (chancroid มีหนองดูสกปรก · chancre สะอาด) และ **ต่อมน้ำเหลือง** (chancroid เจ็บ อาจเป็น bubo) — แต่สุดท้ายต้องตรวจทางห้องปฏิบัติการยืนยัน",
+     "pearl": "นับแผลไม่พอ — ต้องคลำความแข็งและถามความเจ็บ",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — ลักษณะแผล chancroid เทียบ chancre"
+     ],
+     "nl": [
+      "2.1.48",
+      "2.3.1(19)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-02",
+   "title": "Chancroid (แผลริมอ่อน) — แยกจาก chancre และรักษาแบบครั้งเดียว",
+   "summary": "H. ducreyi ทำแผลนุ่ม เจ็บ พื้นหนอง ต่างจาก chancre ที่แข็ง ไม่เจ็บ พื้นสะอาด และรักษาด้วย azithromycin หรือ ceftriaxone ครั้งเดียว",
+   "minutes": 7,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "2.1.48",
+    "3.1.9",
+    "B1.5.2(5)",
+    "B1.7.2"
+   ],
+   "md": "### Chancroid\n- เชื้อ **Haemophilus ducreyi** — Gram-negative coccobacillus · ย้อม Gram เรียงเป็นแถวเหมือน **ฝูงปลา (school of fish)** (อาจารย์ให้ดูภาพ)\n- แผล **นุ่ม ลึก เจ็บ** มีสารคัดหลั่งคล้ายหนองซึม ทำให้พื้นแผล **ดูสกปรก** · มักแผลเดียวแต่หลายแผลได้\n- **ต่อมน้ำเหลืองขาหนีบโต** อาจแข็งหรือกลายเป็นหนอง (bubo)\n\n### แผลริมอ่อน เทียบ แผลริมแข็ง — อาจารย์สรุปให้จำ\n| | Chancroid | Syphilis chancre |\n|---|---|---|\n| ภาษาไทย | **แผลริมอ่อน** | **แผลริมแข็ง** |\n| คลำ | นุ่ม | แข็ง (indurated) |\n| เจ็บ | เจ็บ | ไม่เจ็บ |\n| พื้นแผล | หนองซึม สกปรก | สะอาด |\n| ขนาด | ใกล้กันมาก — แยกจากขนาดไม่ได้ | ใกล้กันมาก |\n\n- อาจารย์: ทางคลินิกแยกยาก → ต้องตรวจซิฟิลิสทุกครั้ง · **VDRL อาจยังลบ** เพราะแผลซิฟิลิสระยะแรกขึ้นก่อนที่ serology จะบวก · ถ้าแผลเป็นมาราว **2 สัปดาห์** โอกาสพบหลักฐานซิฟิลิสมากขึ้น\n- ตรวจหาเชื้อซิฟิลิสโดยตรงจากแผล: **darkfield** หรือ **PCR (nucleic acid amplification test)**\n\n### Probable chancroid (CDC 2021) — ต้องครบ 4 ข้อ\n1. แผลเจ็บอย่างน้อย 1 แผล\n2. ลักษณะแผลและต่อมน้ำเหลืองเข้าได้กับ chancroid\n3. **ไม่พบ T. pallidum** จากแผล และ serology ซิฟิลิสลบ (เจาะหลังแผลขึ้นอย่างน้อย 7–14 วัน)\n4. **HSV NAAT หรือ culture จากแผลลบ**\n\n### การรักษา\n| ยา | ขนาด | หมายเหตุจากอาจารย์ |\n|---|---|---|\n| **Azithromycin** | **1 g กินครั้งเดียว** | เม็ด 250 mg = 4 เม็ดพร้อมกัน — **คลื่นไส้มาก** แม้ดูกินง่าย |\n| **Ceftriaxone** | **250 mg IM ครั้งเดียว** | cephalosporin ฉีดครั้งเดียว |\n| **Ciprofloxacin** | 500 mg วันละ 2 ครั้ง **3 วัน** | fluoroquinolone |\n| **Erythromycin base** | 500 mg วันละ 3 ครั้ง **7 วัน** | ใช้เมื่อไม่มี azithromycin |\n\n- นัดดู **3–7 วัน** — อาการดีขึ้นใน 3 วัน แผลดีขึ้นชัดใน 7 วัน · ไม่ดีขึ้น → ทบทวนการวินิจฉัย ติดเชื้ออื่นร่วม HIV ไม่กินยา หรือดื้อยา\n- Bubo เป็นหนอง → **เจาะดูดหรือผ่าระบาย** (แผลต่อมน้ำเหลืองหายช้ากว่าแผล)\n- คู่นอนภายใน **10 วัน** ก่อนเริ่มอาการ → ตรวจและรักษาแม้ไม่มีอาการ · **ตรวจ HIV ทุกราย** (ผู้ติด HIV และชายที่ไม่ได้ขลิบตอบสนองช้ากว่า)\n",
+   "pearls": [
+    "Chancroid = แผลริมอ่อน: นุ่ม เจ็บ พื้นหนอง + ต่อมน้ำเหลืองเจ็บ/bubo",
+    "Gram stain: Gram-negative coccobacilli เรียงแบบฝูงปลา",
+    "Azithromycin 1 g ครั้งเดียว · ceftriaxone 250 mg IM ครั้งเดียว · cipro 500 bid 3 วัน · erythro 500 tid 7 วัน",
+    "นัด 3–7 วัน · คู่นอน 10 วันก่อนอาการ · ตรวจซิฟิลิสและ HIV เสมอ"
+   ],
+   "mnem": [
+    {
+     "name": "You do cry (ducreyi)",
+     "what": "จำว่า chancroid คือแผลที่เจ็บ",
+     "lines": [
+      [
+       "Ducreyi",
+       "Haemophilus **ducreyi** — \"it's so painful, you **do cry**\" → แผลเจ็บ ต่างจาก chancre ของซิฟิลิสที่ไม่เจ็บ"
+      ]
+     ],
+     "note": "ใช้คู่กับคำไทยของอาจารย์: แผลริม**อ่อน** (chancroid) เทียบ แผลริม**แข็ง** (syphilis)",
+     "src": "First Aid for the USMLE Step 1 (Haemophilus ducreyi — \"you do cry\")"
+    }
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-03",
+     "kind": "mcq",
+     "topic": "Treatment of chancroid",
+     "stem": "A 28-year-old man has a painful, soft, 1.5-cm penile ulcer with a ragged edge and a purulent base, and a tender left inguinal node. Gram stain of the exudate shows Gram-negative coccobacilli in parallel chains. Darkfield examination and HSV PCR of the ulcer are negative. What is the most appropriate treatment?",
+     "choices": [
+      "Azithromycin 1 g orally as a single dose",
+      "Benzathine penicillin G 2.4 million units IM once",
+      "Acyclovir 400 mg orally three times daily for 7–10 days",
+      "Doxycycline 100 mg orally twice daily for 21 days",
+      "Metronidazole 2 g orally as a single dose"
+     ],
+     "answer": 0,
+     "explain": "แผลนุ่ม เจ็บ พื้นหนอง + ต่อมน้ำเหลืองเจ็บ + Gram-negative coccobacilli เรียงเป็นแถว (**school of fish**) + ตัดซิฟิลิสและ HSV แล้ว = **chancroid** จาก H. ducreyi → **azithromycin 1 g ครั้งเดียว** (หรือ ceftriaxone 250 mg IM ครั้งเดียว · cipro 500 mg bid 3 วัน · erythromycin base 500 mg tid 7 วัน)\n\nBenzathine penicillin รักษาซิฟิลิส ไม่ครอบคลุม H. ducreyi · acyclovir รักษา HSV · doxycycline 21 วันเป็นสูตรของ LGV · metronidazole ใช้กับ trichomonas",
+     "pearl": "Chancroid → azithromycin 1 g ครั้งเดียว",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การรักษาแผลริมอ่อน",
+      "CDC STI Treatment Guidelines 2021 — Chancroid"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "B1.7.2",
+      "3.1.9"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-04",
+     "kind": "mcq",
+     "topic": "Chancre versus chancroid",
+     "stem": "Which combination of findings most strongly favors primary syphilis over chancroid?",
+     "choices": [
+      "A painful, soft ulcer with a purulent base",
+      "Multiple grouped vesicles on an erythematous base",
+      "A ragged, undermined ulcer edge with a suppurative inguinal bubo",
+      "A painless, indurated ulcer with a clean base and firm, non-tender inguinal nodes",
+      "A beefy-red ulcer that bleeds easily on contact without lymphadenopathy"
+     ],
+     "answer": 3,
+     "explain": "**Chancre = แผลริมแข็ง**: ไม่เจ็บ คลำแข็ง พื้นสะอาด ต่อมน้ำเหลืองโต แข็ง ไม่เจ็บ — เพราะ T. pallidum ทำให้เกิด endarteritis และการอักเสบแบบ lymphocyte/plasma cell ไม่มีหนองมาก\n\nแผลนุ่ม เจ็บ หนอง ขอบเซาะ + bubo = **chancroid (แผลริมอ่อน)** · ตุ่มน้ำเป็นกลุ่ม = **HSV** · แผลแดงสด เลือดออกง่าย ไม่มีต่อมน้ำเหลืองโต = **donovanosis**",
+     "pearl": "แข็ง ไม่เจ็บ สะอาด = chancre",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — แผลริมอ่อน เทียบ แผลริมแข็ง"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "2.1.48"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-03",
+   "title": "Genital herpes — ลักษณะทางคลินิกและการวินิจฉัย",
+   "summary": "ตุ่มน้ำใสเป็นกลุ่มบนพื้นแดงที่กลับเป็นซ้ำ วินิจฉัยด้วย HSV NAAT จากแผล ส่วน Tzanck smear ถูกแต่ไม่ไวและไม่จำเพาะ",
+   "minutes": 7,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(8)",
+    "B4.2.2(5)",
+    "2.3.1(19)",
+    "3.1.10",
+    "2.1.48"
+   ],
+   "md": "### ธรรมชาติของโรค\n- เป็น **ไวรัส ไม่ใช่แบคทีเรีย** · ติดแล้ว **อยู่ตลอดชีวิต** (แฝงใน sensory ganglion) และกลับเป็นซ้ำได้\n- ตำแหน่งที่พบบ่อยคือ **อวัยวะเพศและช่องปาก** แต่พบใกล้เคียงได้ เช่น **ขาหนีบ สะโพก รอบทวาร**\n- โดยทั่วไป **HSV-1 → ปาก · HSV-2 → อวัยวะเพศ** แต่สลับกันได้ (ไม่บ่อย) · อาจารย์: ถ้าพบ HSV-1 ที่อวัยวะเพศ ให้นึกถึงช่องทางการติด เช่น oral sex และกลุ่มชายที่มีเพศสัมพันธ์กับชาย (MSM) ซึ่งเป็นที่ทวารหนักได้\n\n> **อัปเดตแนวทาง ·** CDC 2021 ระบุว่า **HSV-1 เป็นสาเหตุของ genital herpes ครั้งแรกในสัดส่วนที่เพิ่มขึ้น** โดยเฉพาะในวัยรุ่น ผู้หญิง และ MSM (ไม่จำกัดเฉพาะ MSM) และ **genital HSV-1 กลับเป็นซ้ำน้อยกว่า HSV-2** — การรู้ type จึงช่วยบอกพยากรณ์และวางแผน suppressive therapy\n\n### ลักษณะรอยโรค\n- **กลุ่มตุ่มน้ำใส (grouped vesicles)** มี **ขอบแดงเป็นฐาน** → แตกเป็นแผลตื้นหลายแผล เจ็บแสบ\n- ครั้งแรกมักรุนแรงกว่า อาจมีไข้ ต่อมน้ำเหลืองขาหนีบเจ็บ ปัสสาวะแสบ · ครั้งต่อมาเบากว่าและมักกลับมาที่ตำแหน่งเดิม\n\n### การวินิจฉัย\n| วิธี | เห็นอะไร | ข้อดีและข้อจำกัด |\n|---|---|---|\n| **Tzanck smear** (ขูดฐานแผลย้อม) | **multinucleated giant cells** | ถูกมาก — อาจารย์ยกตัวอย่างต้นทุน **ไม่ถึง 50 บาท** · แต่ **ไม่ไวและไม่จำเพาะ** แยก HSV จาก VZV ไม่ได้ |\n| **HSV NAAT (PCR) จากแผล** | DNA ของไวรัส · บอก type ได้ | **ไวที่สุด** · แพงกว่าหลายเท่า (อาจารย์ประมาณหลายร้อยถึงราว 1,000 บาท แล้วแต่สถานที่) |\n| Viral culture | ไวรัสขึ้น | ไวต่ำ โดยเฉพาะแผลที่ตกสะเก็ดหรือแผลที่กลับเป็นซ้ำ |\n| Type-specific serology (IgG ต่อ glycoprotein G) | เคยติด HSV-1 หรือ HSV-2 | ใช้บางสถานการณ์ เช่น แผลหายแล้วหรือคู่นอนของผู้ป่วย · **HSV IgM ไม่แนะนำ** |\n\n> **อัปเดตแนวทาง ·** อาจารย์เล่าว่า Tzanck smear เป็นวิธีดั้งเดิมที่ถูกกว่า PCR ราว 100 เท่า — **CDC 2021 แนะนำ HSV NAAT จากแผลเป็นวิธีที่เลือก** และระบุว่า **Tzanck/cytology ไม่ไวและไม่จำเพาะ ไม่ควรใช้เป็นหลัก** · ไม่แนะนำ HSV IgM และไม่ควรใช้ PCR จากเลือดยกเว้นสงสัย disseminated infection\n",
+   "pearls": [
+    "HSV = ไวรัสแฝงตลอดชีวิต · ตุ่มน้ำใสเป็นกลุ่มบนพื้นแดง แตกเป็นแผลตื้นหลายแผล",
+    "HSV-1 ปาก · HSV-2 อวัยวะเพศ แต่สลับได้ · genital HSV-1 เป็นซ้ำน้อยกว่า",
+    "Tzanck: multinucleated giant cells — ถูกแต่ไม่ไว แยก HSV/VZV ไม่ได้",
+    "วิธีที่เลือกคือ HSV NAAT (PCR) จากแผล"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-05",
+     "kind": "mcq",
+     "topic": "Preferred diagnostic test for genital herpes",
+     "stem": "A 23-year-old woman has painful grouped vesicles and shallow ulcers on the labia for 3 days, with dysuria and tender inguinal nodes. Which test is preferred to confirm the diagnosis?",
+     "choices": [
+      "Tzanck smear of the ulcer base",
+      "HSV nucleic acid amplification test (PCR) of a lesion swab",
+      "Serum HSV IgM",
+      "Blood HSV PCR",
+      "Direct immunofluorescence of a lesion scraping"
+     ],
+     "answer": 1,
+     "explain": "CDC 2021: **HSV NAAT (PCR) จากแผล** ไวที่สุดและบอก type ได้ จึงเป็นวิธีที่เลือก\n\nTzanck smear เห็น multinucleated giant cells แต่ **ไม่ไวและไม่จำเพาะ** · **HSV IgM ไม่แนะนำ** เพราะไม่จำเพาะต่อ type และขึ้นได้ในการกลับเป็นซ้ำ · **PCR จากเลือด** ใช้เมื่อสงสัย disseminated infection เท่านั้น · direct immunofluorescence ไม่แนะนำเพราะไวต่ำ",
+     "pearl": "แผลเริม → swab ส่ง HSV PCR",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การวินิจฉัยเริม",
+      "CDC STI Treatment Guidelines 2021 — Genital herpes"
+     ],
+     "nl": [
+      "2.3.1(8)",
+      "B4.2.2(5)",
+      "3.1.10"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-06",
+     "kind": "mcq",
+     "topic": "Tzanck smear interpretation",
+     "stem": "A Tzanck smear from the base of a genital vesicle shows multinucleated giant cells. Which statement about this result is correct?",
+     "choices": [
+      "It confirms HSV-2 infection",
+      "It excludes varicella-zoster virus infection",
+      "It is more sensitive than PCR for recurrent lesions",
+      "It indicates bacterial superinfection of the ulcer",
+      "It cannot distinguish HSV from VZV and is less sensitive than PCR"
+     ],
+     "answer": 4,
+     "explain": "Multinucleated giant cells เกิดจาก **ไวรัสในกลุ่ม herpes ทำให้ keratinocyte หลอมรวมกัน** — เห็นได้ทั้ง **HSV-1, HSV-2 และ VZV** จึงบอก type และแยก VZV ไม่ได้ และ **ไวต่ำกว่า PCR** มาก (โดยเฉพาะแผลเก่าหรือกลับเป็นซ้ำ)\n\nข้อดีที่อาจารย์ยกมาคือ **ราคาถูกมาก** เทียบกับ PCR · ไม่เกี่ยวกับการติดเชื้อแบคทีเรียซ้ำซ้อน",
+     "pearl": "Giant cells = กลุ่ม herpes แต่ไม่บอกว่าตัวไหน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — Tzanck smear เทียบ PCR"
+     ],
+     "nl": [
+      "2.3.1(8)",
+      "3.1.10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-04",
+   "title": "Genital herpes — ยาต้านไวรัสในคนปกติและผู้ภูมิคุ้มกันบกพร่อง",
+   "summary": "ครั้งแรก acyclovir 400 mg tid 7–10 วัน กดการกำเริบ 400 mg bid และผู้ภูมิคุ้มกันบกพร่องใช้ขนาดใกล้กันแต่ให้นานขึ้นได้",
+   "minutes": 8,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(8)",
+    "B4.2.2(5)",
+    "2.3.1(19)",
+    "B1.7.2",
+    "2.3.1(9)"
+   ],
+   "md": "### คนภูมิคุ้มกันปกติ (normal host)\n| สถานการณ์ | ที่อาจารย์สอน | CDC 2021 |\n|---|---|---|\n| **ครั้งแรก (first episode)** — ทุกรายควรได้ยา | **Acyclovir 400 mg วันละ 3 ครั้ง 7–10 วัน** · หรือ 200 mg วันละ 5 ครั้ง (ยุ่งยาก) · famciclovir/valacyclovir วันละ 1–2 ครั้ง สะดวกกว่าแต่แพงกว่าหลายเท่า 7–10 วัน | Acyclovir 400 mg tid · **valacyclovir 1 g bid** · famciclovir 250 mg tid — ทั้งหมด **7–10 วัน** ขยายได้ถ้าแผลยังไม่หาย |\n| **Suppressive** (กลับเป็นซ้ำบ่อย) | **Acyclovir 400 mg วันละ 2 ครั้ง** ต่อเนื่อง ระยะเวลาแล้วแต่ราย | Acyclovir 400 mg bid · valacyclovir 500 mg–1 g วันละครั้ง · famciclovir 250 mg bid |\n| **Episodic** (รักษาเมื่อกำเริบ) | กลับเป็นใหม่หลังรักษาไม่นาน (เช่นใน 3 เดือน) → เพิ่มขนาดเป็น **800 mg วันละ 2–3 ครั้ง** | **Acyclovir 800 mg bid 5 วัน หรือ 800 mg tid 2 วัน** · valacyclovir 500 mg bid 3 วัน หรือ 1 g วันละครั้ง 5 วัน · famciclovir 1 g bid 1 วัน — เริ่มภายใน 1 วันหลังแผลขึ้นหรือช่วงอาการนำ |\n\n- อาจารย์ชวนสังเกต: ขนาด **\"กินวันละ 5 ครั้ง\" ที่จำกันมักเป็นของ zoster** (acyclovir 800 mg วันละ 5 ครั้ง) ส่วนเริมอวัยวะเพศใช้ 400 mg tid เป็นหลัก\n\n> **อัปเดตแนวทาง ·** อาจารย์ให้ acyclovir 200 mg วันละ 5 ครั้งเป็นทางเลือกของครั้งแรก — **CDC 2021 ระบุว่าได้ผลแต่ไม่แนะนำแล้วเพราะความถี่ในการกินยา** · ส่วนการกำเริบ CDC ใช้ **คอร์สสั้น** (acyclovir 800 mg bid 5 วัน หรือ 800 mg tid 2 วัน) ที่เริ่มให้เร็วที่สุด ไม่ใช่การ \"เพิ่มขนาดแล้วให้นานขึ้น\" (ตัวเลขระยะเวลาในบันทึกเสียงช่วงนี้ฟังไม่ชัด)\n\n### ผู้ภูมิคุ้มกันบกพร่อง\nอาจารย์: \"immunocompromised\" ไม่ได้มีแค่ HIV — ผู้ป่วยปลูกถ่ายอวัยวะหรือกินยากดภูมิก็สถานะเดียวกัน\n| สถานการณ์ | ขนาดยา |\n|---|---|\n| **Episodic** | **Acyclovir 400 mg วันละ 3 ครั้ง 5–10 วัน** (ใกล้เคียง normal host) · **ขยายเกิน 10 วันได้** ถ้าแผลดีขึ้นไม่มาก · ทางเลือก valacyclovir 1 g bid หรือ famciclovir 500 mg bid |\n| **Suppressive** | **Acyclovir 400–800 mg วันละ 2–3 ครั้ง** ต่อเนื่องเป็นเดือน · ทางเลือก valacyclovir 500 mg bid หรือ famciclovir 500 mg bid |\n- ไม่ตอบสนองแม้ให้ยาถูกต้อง → สงสัย **acyclovir-resistant HSV** (พบในผู้กดภูมิ) → ส่งตรวจและปรึกษาผู้เชี่ยวชาญ (foscarnet หรือ cidofovir)\n\n### ข้อควรรู้เพิ่ม\n- หญิงตั้งครรภ์ที่มีประวัติเริมอวัยวะเพศ: CDC แนะนำ suppressive ตั้งแต่ **อายุครรภ์ 36 สัปดาห์** (acyclovir 400 mg tid หรือ valacyclovir 500 mg bid) เพื่อลดแผลขณะคลอด\n- ยารักษาแค่ลดอาการและการแพร่เชื้อ **ไม่กำจัดไวรัสแฝง** → ให้คำปรึกษาเรื่องการแพร่เชื้อแม้ไม่มีแผล (asymptomatic shedding) และใช้ถุงยาง\n",
+   "pearls": [
+    "ครั้งแรก: acyclovir 400 mg tid 7–10 วัน (valacyclovir 1 g bid · famciclovir 250 mg tid)",
+    "Suppressive: acyclovir 400 mg bid · กำเริบ: acyclovir 800 mg bid 5 วัน หรือ tid 2 วัน",
+    "กินวันละ 5 ครั้งที่จำกัน = zoster 800 mg ไม่ใช่เริมอวัยวะเพศ",
+    "Immunocompromised: episodic 400 mg tid 5–10 วัน ขยายได้ · suppressive 400–800 mg 2–3 ครั้ง/วัน"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-07",
+     "kind": "mcq",
+     "topic": "First-episode genital herpes regimen",
+     "stem": "A healthy 22-year-old woman has her first episode of genital herpes confirmed by HSV-2 PCR. Lesions began 2 days ago. Which regimen is most appropriate?",
+     "choices": [
+      "Acyclovir 800 mg orally five times daily for 7 days",
+      "Valacyclovir 500 mg orally once daily for 3 days",
+      "Acyclovir 400 mg orally three times daily for 7–10 days",
+      "Topical acyclovir cream alone",
+      "Famciclovir 1 g orally twice daily for 1 day"
+     ],
+     "answer": 2,
+     "explain": "ครั้งแรกทุกรายควรได้ยากิน: **acyclovir 400 mg tid 7–10 วัน** (หรือ valacyclovir 1 g bid / famciclovir 250 mg tid 7–10 วัน) — ขยายได้ถ้าแผลยังไม่หาย\n\nAcyclovir 800 mg วันละ 5 ครั้งเป็นขนาดของ **herpes zoster** (จุดที่อาจารย์เตือนว่าคนมักสับสน) · valacyclovir 500 mg และ famciclovir 1 g bid 1 วันเป็นคอร์สสั้นสำหรับ **การกำเริบ** ไม่พอสำหรับครั้งแรก · ยาทาไม่มีประโยชน์ทางคลินิก",
+     "pearl": "ครั้งแรก = 400 mg tid 7–10 วัน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การรักษาเริมครั้งแรก",
+      "CDC STI Treatment Guidelines 2021 — Genital herpes"
+     ],
+     "nl": [
+      "2.3.1(8)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-08",
+     "kind": "mcq",
+     "topic": "Suppressive therapy for recurrent genital herpes",
+     "stem": "A 30-year-old man has 8 recurrences of genital herpes per year and wants to reduce their frequency and the risk of transmission to his partner. Which regimen is most appropriate?",
+     "choices": [
+      "Acyclovir 400 mg orally twice daily, taken continuously",
+      "Acyclovir 400 mg orally three times daily for 7–10 days with each recurrence only",
+      "Intravenous acyclovir 5 mg/kg every 8 hours once a month",
+      "Valacyclovir 1 g orally twice daily for 21 days, then stop",
+      "Famciclovir 1 g orally twice daily for 1 day each month"
+     ],
+     "answer": 0,
+     "explain": "กลับเป็นซ้ำบ่อย → **suppressive therapy: acyclovir 400 mg bid ต่อเนื่อง** (หรือ valacyclovir 500 mg–1 g วันละครั้ง · famciclovir 250 mg bid) — ลดความถี่การกำเริบและลดการแพร่เชื้อสู่คู่นอน\n\nการรักษาเฉพาะตอนกำเริบไม่ลดความถี่ · ยาฉีดเป็นระยะไม่มีบทบาท · คอร์สจำกัดแล้วหยุดหรือกินเดือนละวันไม่ใช่การกดการกำเริบ",
+     "pearl": "กลับเป็นบ่อย → acyclovir 400 mg bid ต่อเนื่อง",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — suppressive therapy",
+      "CDC STI Treatment Guidelines 2021 — Genital herpes"
+     ],
+     "nl": [
+      "2.3.1(8)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-09",
+     "kind": "mcq",
+     "topic": "Genital herpes in HIV infection",
+     "stem": "A 35-year-old man with HIV (CD4 180 cells/mm³) has painful perianal herpetic ulcers. Which episodic regimen is recommended?",
+     "choices": [
+      "Acyclovir 200 mg orally five times daily for 3 days",
+      "Acyclovir 800 mg orally three times daily for 2 days",
+      "Intravenous acyclovir 10 mg/kg every 8 hours for 21 days",
+      "Acyclovir 400 mg orally three times daily for 5–10 days, extended if lesions have not healed",
+      "No antiviral until CD4 rises above 200 cells/mm³"
+     ],
+     "answer": 3,
+     "explain": "ผู้ภูมิคุ้มกันบกพร่อง (HIV ปลูกถ่ายอวัยวะ ยากดภูมิ): **acyclovir 400 mg tid 5–10 วัน** — อาจารย์ชี้ว่าใกล้เคียง normal host แต่ **ขยายเกิน 10 วันได้** ถ้า follow up แล้วแผลยังดีขึ้นไม่มาก (CDC: valacyclovir 1 g bid หรือ famciclovir 500 mg bid ก็ได้)\n\nคอร์สสั้น 2–3 วันออกแบบสำหรับคนภูมิปกติ · IV acyclovir สงวนไว้สำหรับโรครุนแรงหรือแพร่กระจาย · ไม่มีเหตุผลให้รอ CD4",
+     "pearl": "HIV + เริม → 400 mg tid 5–10 วัน ขยายได้",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — เริมในผู้ภูมิคุ้มกันบกพร่อง",
+      "CDC STI Treatment Guidelines 2021 — Genital herpes, persons with HIV"
+     ],
+     "nl": [
+      "2.3.1(8)",
+      "2.3.1(9)",
+      "B1.7.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-05",
+   "title": "เริมรุนแรง แพร่กระจาย และภาวะแทรกซ้อนทางระบบประสาท",
+   "summary": "Disseminated HSV ปอดอักเสบ meningitis หรือ encephalitis ต้องใช้ acyclovir ฉีด 5–10 mg/kg ทุก 8 ชั่วโมง และ encephalitis ให้นาน 14–21 วัน",
+   "minutes": 8,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(8)",
+    "2.3.6(1)",
+    "B3.2.2(2)",
+    "2.3.6(5)",
+    "3.1.7",
+    "B3.3(2)",
+    "B1.7.2"
+   ],
+   "md": "### เมื่อไรเรียกว่ารุนแรง\n- **Disseminated** — รอยโรคกระจายหลายตำแหน่ง รอบลำตัว ไม่ใช่แค่ที่อวัยวะเพศ\n- **Systemic** — ต่อมน้ำเหลืองโต **ปอดอักเสบ** ตับอักเสบ หรือ **meningitis / encephalitis**\n- มักพบในผู้ภูมิคุ้มกันบกพร่องและหญิงตั้งครรภ์\n\n### การรักษา\n| ภาวะ | ยาและระยะเวลา |\n|---|---|\n| **Disseminated / systemic** | **Acyclovir IV 5–10 mg/kg ทุก 8 ชั่วโมง** · อาจารย์: อย่างน้อย **10 วัน** และอาจนาน **2–3 สัปดาห์** ถ้ามี CNS · CDC: ให้ IV จนอาการดีขึ้นแล้วเปลี่ยนเป็นยากิน รวมเกิน 10 วัน |\n| **HSV meningitis** (มักเป็น HSV-2) | IV จนดีขึ้น แล้วต่อ valacyclovir 1 g tid ให้ครบ **10–14 วัน** (CDC) |\n| **HSV encephalitis** (ผู้ใหญ่ส่วนใหญ่เป็น HSV-1) | **Acyclovir IV 10 mg/kg ทุก 8 ชั่วโมง** · อาจารย์: อย่างน้อย 7–14 วัน |\n\n> **อัปเดตแนวทาง ·** อาจารย์ให้ HSV encephalitis อย่างน้อย 7–14 วัน — **CDC 2021 ระบุว่า encephalitis ต้องใช้ IV acyclovir นานกว่า คือ 14–21 วัน** (สอดคล้องกับแนวทาง encephalitis ของ IDSA)\n\n- ปรับขนาดตามไต · **ให้สารน้ำพอและหยดช้า** เพราะ acyclovir ตกผลึกในท่อไตได้\n\n### Encephalitis ทางคลินิก\n- อาจารย์: HSV-1 จากช่องปาก \"ใกล้ CNS\" มากกว่า จึงเป็นสาเหตุหลักของ encephalitis แต่ HSV-2 ก็เป็นได้\n- **ไข้ ปวดศีรษะ ซึมลง สับสน ระดับความรู้สึกตัวเปลี่ยน ชัก เกร็ง** — รุนแรง ต้องใช้ยาฉีดแน่นอน\n- เริ่ม acyclovir **ทันทีที่สงสัย** ไม่ต้องรอผล · ยืนยันด้วย **CSF HSV PCR** · MRI มักเห็นรอยโรคที่ temporal lobe\n\n### แยก CSF แบบ aseptic จาก pyogenic\n| | Bacterial (pyogenic) | Viral / aseptic (รวม HSV) |\n|---|---|---|\n| เพาะเชื้อ | ขึ้น | **ไม่ขึ้น** |\n| เซลล์เด่น | neutrophil | lymphocyte |\n| น้ำตาล | **ต่ำ** | **ปกติ** |\n| โปรตีน | สูงมาก | ปกติหรือสูงเล็กน้อย |\n- อาจารย์สรุปลักษณะ aseptic: **culture ไม่ขึ้น น้ำตาลไม่ต่ำ โปรตีนไม่สูงมาก** — ส่วน HSV encephalitis อาจพบเม็ดเลือดแดงใน CSF จากเนื้อสมองตายแบบเลือดออก\n",
+   "pearls": [
+    "Disseminated/systemic HSV → acyclovir IV 5–10 mg/kg q8h รวมเกิน 10 วัน",
+    "HSV encephalitis → acyclovir IV 10 mg/kg q8h 14–21 วัน เริ่มทันทีที่สงสัย",
+    "CSF aseptic: culture ลบ lymphocyte น้ำตาลปกติ โปรตีนไม่สูงมาก · ยืนยันด้วย CSF HSV PCR",
+    "Acyclovir IV: ให้น้ำพอ หยดช้า ปรับตามไต"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-10",
+     "kind": "mcq",
+     "topic": "Treatment of HSV encephalitis",
+     "stem": "A 45-year-old woman has fever, headache, confusion and a focal seizure. MRI shows left temporal lobe hyperintensity, and CSF HSV-1 PCR is positive. Which treatment is most appropriate?",
+     "choices": [
+      "Oral valacyclovir 1 g three times daily for 7 days",
+      "Intravenous acyclovir 10 mg/kg every 8 hours for 14–21 days",
+      "Intravenous acyclovir 5 mg/kg every 8 hours for 3 days, then stop",
+      "Intravenous ganciclovir 5 mg/kg every 12 hours",
+      "Intravenous ceftriaxone and vancomycin alone"
+     ],
+     "answer": 1,
+     "explain": "HSV encephalitis เป็นภาวะรุนแรง ต้องใช้ **acyclovir IV 10 mg/kg ทุก 8 ชั่วโมง นาน 14–21 วัน** (CDC 2021 และแนวทาง encephalitis) — อาจารย์พูดว่าอย่างน้อย 7–14 วัน แต่แนวทางปัจจุบันให้นานกว่า\n\nยากินไม่พอสำหรับ encephalitis · 3 วันสั้นเกินไปจนกลับเป็นซ้ำได้ · ganciclovir ใช้กับ CMV · ceftriaxone + vancomycin ครอบคลุมเฉพาะแบคทีเรีย (เริ่มคู่กันได้ก่อนได้ผล แต่ไม่ใช่การรักษา HSV)",
+     "pearl": "HSV encephalitis = IV acyclovir 10 mg/kg q8h 14–21 วัน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — HSV encephalitis",
+      "CDC STI Treatment Guidelines 2021 — Genital herpes, severe disease"
+     ],
+     "nl": [
+      "2.3.6(1)",
+      "B3.2.2(2)",
+      "2.3.1(8)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-11",
+     "kind": "mcq",
+     "topic": "CSF profile of viral meningitis",
+     "stem": "A 27-year-old woman with recent genital herpes has headache, neck stiffness and photophobia. CSF shows WBC 150 cells/µL (90% lymphocytes), glucose 60 mg/dL (serum 95 mg/dL), protein 70 mg/dL and a negative Gram stain. Which diagnosis best fits?",
+     "choices": [
+      "Acute bacterial meningitis",
+      "Tuberculous meningitis",
+      "Cryptococcal meningitis",
+      "Normal CSF",
+      "Viral (aseptic) meningitis, such as HSV-2 meningitis"
+     ],
+     "answer": 4,
+     "explain": "CSF แบบ **aseptic**: lymphocyte เด่น · **น้ำตาลปกติ** (CSF/serum ≈ 0.6) · โปรตีนสูงเล็กน้อย · Gram stain และ culture ลบ — เข้ากับ **viral meningitis** ซึ่ง HSV-2 เป็นสาเหตุสำคัญหลังเริมอวัยวะเพศ\n\nBacterial: neutrophil เด่น น้ำตาลต่ำ โปรตีนสูงมาก · TB และ cryptococcus: lymphocyte เด่นแต่ **น้ำตาลต่ำ** และโปรตีนสูงกว่า · CSF ปกติไม่ควรมีเม็ดเลือดขาว 150",
+     "pearl": "Lymphocyte + น้ำตาลปกติ = viral",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — CSF profile ของ aseptic meningitis"
+     ],
+     "nl": [
+      "2.3.6(5)",
+      "3.1.7",
+      "B3.3(2)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-06",
+   "title": "Granuloma inguinale (donovanosis) และ Lymphogranuloma venereum",
+   "summary": "Donovanosis เป็นแผลแดงสดไม่เจ็บที่ไม่มีต่อมน้ำเหลืองโตจริง ส่วน LGV แผลเล็กแต่ต่อมน้ำเหลืองโตแตกหรือเป็น proctocolitis และทั้งคู่ใช้ยานานอย่างน้อย 3 สัปดาห์",
+   "minutes": 9,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "2.1.48",
+    "2.1.57",
+    "B1.7.2",
+    "3.1.9"
+   ],
+   "md": "### Granuloma inguinale (donovanosis)\n- เชื้อ **Klebsiella granulomatis** (ชื่อเดิม Calymmatobacterium granulomatis) — ในบันทึกเสียงมีช่วงหนึ่งที่พูดเป็น \"Treponema pallidum\" ซึ่งน่าจะพูดผิด เพราะช่วงหลังอาจารย์เรียกเชื้อได้ถูกต้อง\n- แผลมักเดี่ยว **ค่อนข้างสะอาด** · **ขอบไม่ยกสูง** แบบแผลริมแข็งหรือริมอ่อน แต่ **ขรุขระแหว่งคล้ายรอยแทะ** · พื้นแผล **เงา** (อาจารย์บรรยาย)\n- ลักษณะตามตำรา: แผล **ไม่เจ็บ** ค่อย ๆ ลาม **สีแดงสด (beefy red) หลอดเลือดมาก เลือดออกง่าย** · **ไม่มีต่อมน้ำเหลืองโตจริง** — ก้อนใต้ผิวที่ขาหนีบคือ granuloma (**pseudobubo**)\n- วินิจฉัย: **Donovan bodies** = เชื้อที่อยู่ในไซโตพลาสซึมของ histiocyte/macrophage เห็นจาก **crush preparation หรือชิ้นเนื้อ** ย้อม Giemsa/Wright (อาจารย์เรียก \"granular body\")\n\n| | ยา (CDC 2021) |\n|---|---|\n| **แนะนำ** | **Azithromycin 1 g สัปดาห์ละครั้ง** หรือ 500 mg วันละครั้ง |\n| ทางเลือก | **Doxycycline 100 mg วันละ 2 ครั้ง** · erythromycin base 500 mg วันละ 4 ครั้ง · **TMP-SMX DS วันละ 2 ครั้ง** |\n| ระยะเวลา | **อย่างน้อย 3 สัปดาห์ และจนแผลหายหมด** · กลับเป็นซ้ำได้ 6–18 เดือนหลังดูเหมือนหาย |\n\n- อาจารย์: azithromycin 1 g **สัปดาห์ละครั้ง 3 สัปดาห์** (ต่างจาก chancroid ที่ 1 g ครั้งเดียว) · doxycycline วันละ 2 ครั้ง 3 สัปดาห์ · ยาสำรองอีกตัวที่พูดถึงฟังคล้าย \"Bactrim\" (TMP-SMX) แต่บันทึกไม่ชัด\n\n> **อัปเดตแนวทาง ·** อาจารย์ให้ระยะเวลาเป็น 3 สัปดาห์คงที่ — **CDC 2021 ให้ \"อย่างน้อย 3 สัปดาห์ และจนแผลหายหมด\"** (azithromycin 1 g สัปดาห์ละครั้งหรือ 500 mg ทุกวัน) และให้ติดตามจนแผลหาย เพราะกลับเป็นซ้ำได้\n\n### Lymphogranuloma venereum (LGV)\n- เชื้อ **Chlamydia trachomatis serovar L1, L2, L3** (บุกรุกท่อน้ำเหลืองและต่อมน้ำเหลือง)\n- ดำเนินโรคเป็นขั้น: ตุ่มหรือแผลเล็กไม่เจ็บ หายเร็วจนมักไม่ทันเห็น → **ต่อมน้ำเหลืองขาหนีบโต เจ็บ มักข้างเดียว** → รวมกันเป็นก้อน **แตกเป็นแผลและทางระบายหนอง (bubo)** · อาจเห็น **groove sign** (ต่อมเหนือและใต้ inguinal ligament)\n- อาจารย์: สมัยก่อนพบบ่อย คนไข้ต่อมบวมเจ็บ ใส่กางเกงเดินขาเป๋ จึงถูกล้อว่าเป็น **\"ฝีมะม่วง\"**\n- **Proctocolitis** (โดยเฉพาะ MSM ที่รับทางทวาร) — คล้าย IBD: **ปวดทวาร ถ่ายมีมูกเลือด ปวดเบ่ง (tenesmus) ไข้** และอาการทั่วร่างกาย · ถ้าเรื้อรังเกิดตีบหรือ fistula ได้\n- วินิจฉัย: **C. trachomatis NAAT (PCR)** จากตำแหน่งที่มีอาการ (แผล ต่อมที่ดูด หรือทวาร) · Gram stain เห็น neutrophil · genotyping L serovar ยืนยันแต่หาได้ยาก · การตรวจแบบเดิมหรือชิ้นเนื้อมักเจอเชื้อยาก\n\n| | ยา (CDC 2021) |\n|---|---|\n| **แนะนำ** | **Doxycycline 100 mg วันละ 2 ครั้ง 21 วัน** (ตรงกับที่อาจารย์สอน และอ้างแนวทางกระทรวงสาธารณสุข) |\n| ทางเลือก | Azithromycin 1 g **สัปดาห์ละครั้ง 3 สัปดาห์** · erythromycin base 500 mg วันละ 4 ครั้ง 21 วัน |\n| คู่นอน | สัมผัสภายใน **60 วัน** ก่อนอาการ → ตรวจ และให้ doxycycline 100 mg bid 7 วันแม้ไม่มีอาการ |\n\n> **อัปเดตแนวทาง ·** ในบันทึกเสียงอาจารย์พูดถึง azithromycin 1 g เป็นทางเลือกของ LGV แต่ช่วงวิธีให้ยาฟังไม่ชัด — **CDC 2021 ให้ azithromycin 1 g สัปดาห์ละครั้งนาน 3 สัปดาห์** (ข้อมูลยังจำกัด พิจารณา test of cure ด้วย NAAT ที่ 4 สัปดาห์) ไม่ใช่ครั้งเดียวแบบ chlamydia ทั่วไป\n",
+   "pearls": [
+    "Donovanosis: K. granulomatis · แผลแดงสด ไม่เจ็บ เลือดออกง่าย · ไม่มี LN จริง (pseudobubo) · Donovan bodies",
+    "Donovanosis: azithromycin 1 g สัปดาห์ละครั้ง ≥ 3 สัปดาห์จนแผลหาย",
+    "LGV: C. trachomatis L1–L3 · แผลเล็กหายเร็ว → ต่อมน้ำเหลืองโตแตก (ฝีมะม่วง) · MSM: proctocolitis คล้าย IBD",
+    "LGV: doxycycline 100 mg bid 21 วัน · คู่นอน 60 วัน"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-12",
+     "kind": "mcq",
+     "topic": "Organism of donovanosis",
+     "stem": "A 40-year-old man has a slowly enlarging, painless, beefy-red genital ulcer that bleeds easily on contact. There is no true inguinal lymphadenopathy. A crush preparation of tissue shows intracytoplasmic inclusions within macrophages on Giemsa stain. Which organism is responsible?",
+     "choices": [
+      "Treponema pallidum",
+      "Haemophilus ducreyi",
+      "Chlamydia trachomatis serovar L2",
+      "Klebsiella granulomatis",
+      "Herpes simplex virus type 2"
+     ],
+     "answer": 3,
+     "explain": "แผล **ไม่เจ็บ แดงสด หลอดเลือดมาก เลือดออกง่าย** ค่อย ๆ ลาม และ **ไม่มีต่อมน้ำเหลืองโตจริง** + **Donovan bodies** (เชื้ออยู่ใน macrophage) = **granuloma inguinale (donovanosis)** จาก **Klebsiella granulomatis**\n\nT. pallidum ทำแผลแข็งพื้นสะอาด · H. ducreyi แผลนุ่มเจ็บมีหนอง · C. trachomatis L2 (LGV) แผลเล็กหายเร็วแต่ต่อมน้ำเหลืองโตเด่น · HSV-2 ตุ่มน้ำเป็นกลุ่มที่เจ็บ",
+     "pearl": "แผลแดงสดเลือดออกง่าย + Donovan bodies = K. granulomatis",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — Granuloma inguinale",
+      "CDC STI Treatment Guidelines 2021 — Granuloma inguinale (donovanosis)"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "2.1.48"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-13",
+     "kind": "mcq",
+     "topic": "Treatment duration in donovanosis",
+     "stem": "A patient is diagnosed with granuloma inguinale. Which treatment plan is recommended?",
+     "choices": [
+      "Azithromycin 1 g weekly (or 500 mg daily) for at least 3 weeks and until all lesions have healed",
+      "Azithromycin 1 g orally as a single dose",
+      "Benzathine penicillin G 2.4 million units IM once",
+      "Ceftriaxone 250 mg IM as a single dose",
+      "Oral acyclovir 400 mg three times daily for 10 days"
+     ],
+     "answer": 0,
+     "explain": "Donovanosis ต้องใช้ยานาน: **azithromycin 1 g สัปดาห์ละครั้ง (หรือ 500 mg ทุกวัน) อย่างน้อย 3 สัปดาห์ และจนแผลหายหมด** · ทางเลือก doxycycline 100 mg bid, erythromycin base หรือ TMP-SMX DS bid ระยะเวลาเท่ากัน · กลับเป็นซ้ำได้ 6–18 เดือน\n\nอาจารย์ชี้ความต่าง: chancroid ใช้ azithromycin 1 g **ครั้งเดียว** แต่ donovanosis ใช้ 1 g **สัปดาห์ละครั้งหลายสัปดาห์** · penicillin และ acyclovir ไม่ได้รักษาโรคนี้",
+     "pearl": "Donovanosis = ยานาน ≥ 3 สัปดาห์จนแผลหาย",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การรักษา granuloma inguinale",
+      "CDC STI Treatment Guidelines 2021 — Granuloma inguinale (donovanosis)"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-14",
+     "kind": "mcq",
+     "topic": "LGV proctocolitis treatment",
+     "stem": "A 31-year-old man who has receptive anal sex with men presents with rectal pain, tenesmus, mucopurulent bloody discharge and fever for 2 weeks. Colonoscopy shows proctitis resembling inflammatory bowel disease. Rectal swab NAAT is positive for Chlamydia trachomatis. What is the most appropriate treatment?",
+     "choices": [
+      "Azithromycin 1 g orally as a single dose",
+      "Doxycycline 100 mg orally twice daily for 7 days",
+      "Doxycycline 100 mg orally twice daily for 21 days",
+      "Ceftriaxone 500 mg IM as a single dose",
+      "Mesalamine and oral prednisolone"
+     ],
+     "answer": 2,
+     "explain": "Proctocolitis รุนแรง (ปวดเบ่ง มูกเลือด ไข้) ใน MSM + rectal C. trachomatis NAAT บวก → สงสัย **LGV** (serovar L1–L3) แม้ยังไม่ได้ genotype → รักษาด้วย **doxycycline 100 mg bid 21 วัน**\n\nDoxycycline 7 วันหรือ azithromycin ครั้งเดียวเป็นสูตรของ chlamydia ทั่วไป (non-LGV) ไม่พอสำหรับ LGV · ceftriaxone รักษา gonorrhea · ให้ยา IBD จะพลาดโรคติดเชื้อที่รักษาหายได้",
+     "pearl": "LGV = doxycycline 21 วัน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การรักษา LGV",
+      "CDC STI Treatment Guidelines 2021 — Lymphogranuloma venereum"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "B1.7.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-07",
+   "title": "Syphilis — เชื้อ การแบ่งระยะ และธรรมชาติของโรค",
+   "summary": "T. pallidum แบ่งเป็น early (primary secondary early latent) late และ neurosyphilis ที่เกิดได้ทุกระยะ ซึ่งระยะเป็นตัวกำหนดระยะเวลารักษา",
+   "minutes": 8,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "B1.5.2(1)"
+   ],
+   "md": "### เชื้อ\n- **Treponema pallidum** — spirochete รูปเกลียว\n- อาจารย์ถามว่าเคยดู **darkfield microscope** ไหม — เห็นเชื้อเป็นเกลียวสว่างบนพื้นมืด แต่ **ทำยาก ต้องใช้ความชำนาญ** จึงไม่นิยม ปัจจุบันวินิจฉัยด้วย **serology** เป็นหลัก\n\n### การแบ่งระยะแบบที่อาจารย์ให้จำ — 3 กลุ่ม\n| กลุ่ม | ประกอบด้วย | ความหมายต่อการรักษา |\n|---|---|---|\n| **Early syphilis** | **primary · secondary · early latent** | benzathine penicillin G **ครั้งเดียว** |\n| **Late syphilis** | **late latent · ไม่ทราบระยะ · tertiary** (gumma, cardiovascular) | benzathine penicillin G **สัปดาห์ละครั้ง × 3** |\n| **Neurosyphilis** (รวม ocular และ otic) | เกิดได้ **ทุกระยะ** | aqueous penicillin G ทางหลอดเลือดดำ |\n\n[[fig:course]]\n\n### ช่วงเวลาของแต่ละระยะ\n| ระยะ | เวลา | ที่อาจารย์พูด |\n|---|---|---|\n| ระยะฟักตัว | 10–90 วัน (เฉลี่ยราว 3 สัปดาห์) | **นานได้ถึง 3 เดือน** |\n| Primary | chancre หายเองใน 3–6 สัปดาห์ | แผลหายได้เองใน 3–6 สัปดาห์ |\n| Secondary | ราว **4–10 สัปดาห์** หลังแผล | 4–10 สัปดาห์ (บางช่วงพูด 4–12) · หายเองเงียบ ๆ แล้วเข้า latent |\n| Early latent | ติดเชื้อ **ไม่เกิน 1 ปี** | อยู่เงียบ ๆ พบจากการคัดกรอง RPR |\n| Late latent | เกิน 1 ปี หรือไม่ทราบ | \"เกินปีไปแล้วก็จะไป late\" |\n| Tertiary | หลายปีถึง **10–30 ปีขึ้นไป** | ราว 10–15 ปี |\n\n- เกณฑ์ **early latent** ของ CDC และคู่มือไทยคือ **ภายใน 1 ปี** ต้องมีหลักฐาน เช่น เคยตรวจลบภายใน 1 ปี · titre เพิ่มขึ้น 4 เท่า · เคยมีอาการ primary/secondary ชัดเจนใน 1 ปี · หรือคู่นอนเป็น early syphilis — **WHO ใช้ 2 ปี**\n- ซักประวัติแล้วบอกไม่ได้ว่าเคยมีแผลหรือผื่นเมื่อไร → **ถือเป็นไม่ทราบระยะ รักษาแบบ late latent** (อาจารย์เน้น — เพื่อประโยชน์ของผู้ป่วย)\n\n> **อัปเดตแนวทาง ·** อาจารย์ประมาณว่าเข้าสู่ tertiary ราว 10–15 ปี — **CDC 2021 ระบุอาการทางระบบประสาทระยะท้ายเกิดได้ตั้งแต่ 10 ถึงกว่า 30 ปีหลังติดเชื้อ** ส่วนอาการระบบประสาทระยะแรก (รวม ocular และ otic) มักเกิดในไม่กี่เดือนถึงไม่กี่ปีแรก\n",
+   "pearls": [
+    "Early = primary + secondary + early latent (≤ 1 ปี) → BPG ครั้งเดียว",
+    "Late = late latent + ไม่ทราบระยะ + tertiary → BPG สัปดาห์ละครั้ง × 3",
+    "Neurosyphilis/ocular/otic เกิดได้ทุกระยะ → penicillin G IV",
+    "ไม่ทราบระยะ → รักษาแบบ late latent เสมอ"
+   ],
+   "figs": {
+    "course": {
+     "title": "ธรรมชาติของซิฟิลิสที่ไม่ได้รักษา",
+     "cap": "กล่องสีเขียว = **early syphilis** (รักษาด้วย benzathine penicillin G ครั้งเดียว) · สีเหลือง = **late latent หรือไม่ทราบระยะ** (สัปดาห์ละครั้ง × 3) · tertiary เป็นความเสียหายที่ย้อนคืนไม่ได้ · แถบล่าง: **neurosyphilis ocular และ otic เกิดได้ทุกระยะ** และใช้ยาฉีดเข้าหลอดเลือดดำ (ช่วงเวลาเป็นค่าประมาณตาม CDC 2021 และคู่มือไทย)",
+     "svg": "<svg viewBox=\"0 0 420 328\" role=\"img\" aria-label=\"ธรรมชาติของซิฟิลิส: ระยะฟักตัว primary secondary early latent late latent tertiary และ neurosyphilis ที่เกิดได้ทุกระยะ\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"6\" width=\"404\" height=\"38\" rx=\"8\" class=\"sk\"/><text x=\"210\" y=\"22\" class=\"sm b mid\">สัมผัสเชื้อ → ระยะฟักตัว 10–90 วัน</text><text x=\"210\" y=\"37\" class=\"xs mid mu\">ยังไม่มีอาการ · serology อาจยังลบ</text><line x1=\"210\" y1=\"44\" x2=\"210\" y2=\"56\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"8\" y=\"58\" width=\"404\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"210\" y=\"74\" class=\"sm b mid\">Primary — chancre</text><text x=\"210\" y=\"90\" class=\"xs mid\">แผลเดียว ไม่เจ็บ ขอบแข็ง พื้นสะอาด · หายเองใน 3–6 สัปดาห์</text><line x1=\"210\" y1=\"98\" x2=\"210\" y2=\"114\" class=\"ln\" marker-end=\"url(#ah)\"/><text x=\"218\" y=\"110\" class=\"xs mu\">4–10 สัปดาห์</text><rect x=\"8\" y=\"116\" width=\"404\" height=\"40\" rx=\"8\" class=\"ok\"/><text x=\"210\" y=\"132\" class=\"sm b mid\">Secondary — เชื้อกระจายทางเลือด</text><text x=\"210\" y=\"148\" class=\"xs mid\">ผื่นรวมฝ่ามือฝ่าเท้า · ต่อมน้ำเหลืองโต · mucous patch · หายเอง</text><line x1=\"110\" y1=\"156\" x2=\"110\" y2=\"172\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"310\" y1=\"156\" x2=\"310\" y2=\"172\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"8\" y=\"174\" width=\"198\" height=\"44\" rx=\"8\" class=\"ok\"/><text x=\"107\" y=\"192\" class=\"sm b mid\">Early latent</text><text x=\"107\" y=\"209\" class=\"xs mid\">ติดเชื้อไม่เกิน 1 ปี · ไม่มีอาการ</text><rect x=\"214\" y=\"174\" width=\"198\" height=\"44\" rx=\"8\" class=\"ms\"/><text x=\"313\" y=\"192\" class=\"sm b mid\">Late latent</text><text x=\"313\" y=\"209\" class=\"xs mid\">เกิน 1 ปี หรือไม่ทราบระยะ</text><line x1=\"313\" y1=\"218\" x2=\"313\" y2=\"234\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><text x=\"305\" y=\"230\" class=\"xs end tbad\">หลายปี</text><rect x=\"8\" y=\"236\" width=\"404\" height=\"40\" rx=\"8\" class=\"bad\"/><text x=\"210\" y=\"252\" class=\"sm b mid\">Tertiary — 10 ถึงกว่า 30 ปี</text><text x=\"210\" y=\"268\" class=\"xs mid\">gumma · aortitis และ AR · general paresis · tabes dorsalis</text><rect x=\"8\" y=\"284\" width=\"404\" height=\"40\" rx=\"8\" class=\"wa\"/><text x=\"210\" y=\"300\" class=\"sm b mid\">Neurosyphilis · ocular · otic — เกิดได้ทุกระยะ</text><text x=\"210\" y=\"316\" class=\"xs mid\">ไม่ใช้ benzathine → aqueous penicillin G IV 10–14 วัน</text></svg>"
+    }
+   },
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-15",
+     "kind": "mcq",
+     "topic": "Staging latent syphilis",
+     "stem": "A 29-year-old woman is asymptomatic. Routine testing shows reactive RPR 1:32 and reactive TPPA. A syphilis test 8 months ago was nonreactive, and examination shows no mucocutaneous lesions or neurologic signs. What is the stage?",
+     "choices": [
+      "Primary syphilis",
+      "Secondary syphilis",
+      "Late latent syphilis",
+      "Tertiary syphilis",
+      "Early latent syphilis"
+     ],
+     "answer": 4,
+     "explain": "ไม่มีอาการ + serology บวก = **latent** · มีหลักฐานว่า **ติดเชื้อภายใน 1 ปี** (เคยตรวจลบเมื่อ 8 เดือนก่อน = seroconversion) → **early latent** → รักษาด้วย **benzathine penicillin G 2.4 MU IM ครั้งเดียว**\n\nPrimary/secondary ต้องมีแผลหรือผื่น · late latent คือเกิน 1 ปีหรือไม่มีหลักฐานระยะเวลา · tertiary ต้องมี gumma, cardiovascular หรืออาการระบบประสาทระยะท้าย",
+     "pearl": "ไม่มีอาการ + เคยตรวจลบใน 1 ปี = early latent",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การแบ่งระยะซิฟิลิส",
+      "CDC STI Treatment Guidelines 2021 — Latent syphilis"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "3.3.16"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-16",
+     "kind": "mcq",
+     "topic": "Latent syphilis of unknown duration",
+     "stem": "A 52-year-old man has reactive RPR 1:8 and reactive TPHA on a pre-employment check. He has never been tested before and cannot recall any genital ulcer or rash. Neurologic and eye examinations are normal. What is the most appropriate management?",
+     "choices": [
+      "Treat as early latent syphilis with benzathine penicillin G 2.4 million units IM once",
+      "Treat as latent syphilis of unknown duration with benzathine penicillin G 2.4 million units IM weekly for 3 weeks",
+      "No treatment; the result reflects a past infection",
+      "Aqueous penicillin G 18–24 million units IV daily for 14 days",
+      "Doxycycline 100 mg orally twice daily for 14 days"
+     ],
+     "answer": 1,
+     "explain": "อาจารย์เน้น: ถามประวัติแผลหรือผื่นแล้ว **จำไม่ได้** → **ถือเป็นไม่ทราบระยะ รักษาแบบ late latent** เพื่อประโยชน์ของผู้ป่วย = **BPG 2.4 MU IM สัปดาห์ละครั้ง × 3 (รวม 7.2 MU)**\n\nการให้ครั้งเดียวเสี่ยงรักษาไม่พอถ้าติดมานาน · RPR บวกร่วมกับ TT บวกโดยไม่เคยรักษาต้องรักษา · penicillin G IV สงวนไว้สำหรับ neurosyphilis/ocular/otic · doxycycline (ถ้าแพ้ penicillin) ใน late latent ต้องให้ 28 วัน",
+     "pearl": "จำไม่ได้ว่าติดเมื่อไร = late latent → BPG × 3",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — late latent หรือไม่ทราบระยะ",
+      "CDC STI Treatment Guidelines 2021 — Latent syphilis"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "B1.7.2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-08",
+   "title": "Syphilis — อาการ primary, secondary, latent และ tertiary",
+   "summary": "Chancre ไม่เจ็บพื้นสะอาด ผื่น secondary ที่ฝ่ามือฝ่าเท้าเป็นตัวแยกจากผื่นอื่น ส่วน tertiary เป็นความเสียหายถาวร",
+   "minutes": 9,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "2.1.48",
+    "2.1.57",
+    "2.3.9-3(2)"
+   ],
+   "md": "### Primary — chancre\n- ตำแหน่งที่เชื้อเข้า: ส่วนใหญ่ **อวัยวะเพศ** แต่พบที่ **ปาก ลิ้น ทวารหนัก** ได้\n- **เส้นผ่านศูนย์กลาง 1–2 ซม. · แผลเดียว · ขอบนูนแข็ง · พื้นสะอาด · ไม่เจ็บ** (clean base, indurated, painless) · ต่อมน้ำเหลืองใกล้เคียงโต แข็ง ไม่เจ็บ\n- ใน **MSM** chancre มักอยู่ **รอบทวารหรือในทวารหนัก** จึงไม่ทันสังเกต · ในผู้หญิงแผลที่ช่องคลอดหรือปากมดลูกก็มักไม่เห็น\n- แผล **หายเองใน 3–6 สัปดาห์** แม้ไม่รักษา — แผลหายไม่ได้แปลว่าโรคหาย\n\n### Secondary — ผื่นทั่วตัว\n- **Macule/papule สีชมพูถึงแดง** ขนาดเล็ก (มม. ถึงราว 1 ซม.) กระจายตามลำตัว · นานไปเปลี่ยนเป็น **สีน้ำตาลและลอกเป็นขุย** · ไม่คัน\n- **ดูฝ่ามือฝ่าเท้าก่อนเลย** (อาจารย์เน้น) — ผื่นตามตัวแยกไม่ออกจาก **ผื่นแพ้ยา ยุงกัด rubella** · ถ้าฝ่ามือฝ่าเท้ามี papule หรือรอยลอกเป็นขุยหลังเป็นมาหลายสัปดาห์ → นึกถึง secondary syphilis\n- **ผมร่วงเป็นหย่อม (patchy, moth-eaten alopecia)** · รอยโรคในปากและลิ้น (mucous patch) · **condyloma lata** ที่รอบทวารหรืออวัยวะเพศ (ต่างจากหูดหงอนไก่)\n- **ต่อมน้ำเหลืองโตทั่วตัว กดไม่เจ็บ** — คอ ใบหน้า หน้าและหลังหู · บางรายเห็นต่อมในช่องท้องจาก CT แต่อาจารย์เตือนว่าเป็นภาพไม่ปกติ เจอไม่บ่อย อย่าเพิ่งไปทำ CT\n- บางรายเชื้อ **เข้า CNS ตั้งแต่ระยะนี้** → uveitis, cranial nerve palsy (ดู section neurosyphilis)\n- รอยโรคทั้งหมด **หายเองได้** แล้วเข้าสู่ latent\n\n### Latent\n- **ไม่มีอาการ** มีแต่ serology บวก · พบจากการคัดกรอง (ฝากครรภ์ บริจาคเลือด ตรวจสุขภาพ)\n\n### Tertiary (late)\n- **Gumma** — ก้อน granuloma ทำลายผิว กระดูก อวัยวะ\n- **Cardiovascular** — aortitis ของ ascending aorta → **aortic regurgitation** และ aneurysm (จาก endarteritis ของ vasa vasorum)\n- **Late neurosyphilis** — general paresis (สมองเสื่อม บุคลิกเปลี่ยน) · tabes dorsalis (เสียการรับรู้ตำแหน่ง ปวดแปลบ) · Argyll Robertson pupil\n- อาจารย์ (สไลด์สุดท้าย): **tertiary รักษาได้แค่หยุดโรค** — ความเสียหายที่เกิดแล้ว เช่น peripheral nerve palsy หรือการมองเห็นที่เสียไป **ย้อนคืนไม่ได้**\n",
+   "pearls": [
+    "Chancre: 1–2 ซม. แผลเดียว ขอบแข็ง พื้นสะอาด ไม่เจ็บ · หายเอง 3–6 สัปดาห์",
+    "ผื่นแยกไม่ออก → ดูฝ่ามือฝ่าเท้า (อาจารย์เน้น)",
+    "Secondary: alopecia เป็นหย่อม · mucous patch · condyloma lata · LN โตทั่วตัวไม่เจ็บ",
+    "Tertiary: gumma · aortitis/AR · general paresis · tabes — ความเสียหายถาวร"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-17",
+     "kind": "mcq",
+     "topic": "Distinguishing secondary syphilis rash",
+     "stem": "A 24-year-old man has a 3-week non-pruritic rash on the trunk that began 6 weeks after a painless penile sore healed. Which additional finding most strongly favors secondary syphilis over a drug eruption?",
+     "choices": [
+      "Scaly copper-colored papules on the palms and soles with generalized non-tender lymphadenopathy",
+      "Urticarial wheals that each resolve within 24 hours",
+      "Target lesions with oral erosions shortly after starting a new drug",
+      "Painful vesicles in a single dermatomal distribution",
+      "Erythema limited to sun-exposed areas"
+     ],
+     "answer": 0,
+     "explain": "อาจารย์สอนว่า **ผื่นตามตัวแยกจากผื่นแพ้ยาหรือยุงกัดไม่ได้ → ให้ดูฝ่ามือฝ่าเท้า** · papule สีแดงน้ำตาลที่ฝ่ามือฝ่าเท้าที่เริ่มลอกเป็นขุย + **ต่อมน้ำเหลืองโตทั่วตัวกดไม่เจ็บ** + ประวัติแผลไม่เจ็บที่หายไปเมื่อ 4–10 สัปดาห์ก่อน = **secondary syphilis** (เชื้อกระจายทางเลือดจึงขึ้นได้ทุกตำแหน่ง)\n\nWheals ที่หายใน 24 ชม. = urticaria · target lesion + mucosa หลังยาใหม่ = EM/SJS · ตุ่มน้ำตาม dermatome = zoster · ผื่นเฉพาะที่โดนแดด = photosensitivity",
+     "pearl": "ผื่นแยกไม่ออก → ดูฝ่ามือฝ่าเท้า",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — Secondary syphilis"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "2.1.57"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-18",
+     "kind": "mcq",
+     "topic": "Cardiovascular syphilis",
+     "stem": "A 68-year-old man has a diastolic decrescendo murmur. Imaging shows dilatation of the ascending aorta with linear calcification, and his treponemal test is reactive. What is the underlying mechanism?",
+     "choices": [
+      "Cystic medial degeneration caused by hypertension",
+      "Atherosclerosis predominantly affecting the infrarenal aorta",
+      "Immune-complex vasculitis of the coronary arteries",
+      "Obliterative endarteritis of the vasa vasorum of the ascending aorta",
+      "Rheumatic involvement of the mitral valve"
+     ],
+     "answer": 3,
+     "explain": "**Cardiovascular syphilis (tertiary)** — T. pallidum ทำให้ **endarteritis obliterans ของ vasa vasorum** ของ ascending aorta → ผนังชั้นกลางขาดเลือดและเป็นแผลเป็น → aorta ส่วนต้นโป่ง (aneurysm) และ **aortic regurgitation** (เสียง diastolic decrescendo) · เกิดหลายปีถึงหลายสิบปีหลังติดเชื้อ ความเสียหายแก้คืนไม่ได้แม้รักษาเชื้อ\n\nCystic medial degeneration พบใน Marfan/ความดัน · atherosclerosis มักที่ aorta ส่วนท้อง · ไม่ใช่ vasculitis ของ coronary หรือโรคหัวใจรูมาติก",
+     "pearl": "Syphilitic aortitis = ascending aorta + AR",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — tertiary syphilis"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "2.3.9-3(2)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-09",
+   "title": "Syphilis serology — non-treponemal กับ treponemal และลำดับการตรวจ",
+   "summary": "RPR/VDRL ขึ้นลงตามโรคใช้คัดกรองและติดตาม ส่วน TPHA/TPPA/EIA บวกตลอดชีวิตใช้ยืนยัน และต้องแปลผลร่วมกันเสมอ",
+   "minutes": 11,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "3.3.16",
+    "B10.3(8)",
+    "B1.5.1(8)",
+    "2.3.1(19)",
+    "B1.4.13"
+   ],
+   "md": "### ตรวจหาเชื้อโดยตรง (direct)\n- **Darkfield** จากแผล — เห็นเกลียว แต่ต้องใช้ความชำนาญ\n- **PCR / NAAT** จากแผล — ไวและสะดวกกว่า (ยังไม่แพร่หลายทุกที่)\n\n### ตรวจทางอ้อม (serology) — สองชนิด\n| | **Non-treponemal (NTT)** | **Treponemal (TT)** |\n|---|---|---|\n| ตัวอย่าง | **VDRL, RPR** | **TPHA, TPPA, FTA-ABS, EIA/CLIA, rapid test** |\n| วัดอะไร | antibody ต่อ **lipoidal substance (cardiolipin)** ที่หลุดจากเซลล์ผู้ป่วยที่ถูกทำลาย — **ไม่ได้วัดตัวเชื้อ** | antibody ต่อ **antigen ของตัวเชื้อ** |\n| ผลตามเวลา | **ขึ้นลงตาม activity ของโรค** · ลดลงหลังรักษา | **บวกตลอดชีวิต** (ราว 75–85%) แม้รักษาหายแล้ว |\n| ใช้ทำอะไร | คัดกรอง + **ติดตามผลการรักษาด้วย titre** | **ยืนยันว่าเคยติดเชื้อ** — ไม่บอกว่ายัง active |\n| ผลบวกลวง | **SLE, autoimmune, rheumatoid, malaria, leptospirosis** (อาจารย์ยกตัวอย่าง — **ออกสอบ**) · ตั้งครรภ์ HIV ฉีดยาเสพติด อายุมาก วัคซีน | น้อย (yaws, pinta, Lyme) |\n\n### แปลผลร่วมกัน (อาจารย์ไล่ให้ทั้งห้อง)\n| NTT (RPR/VDRL) | TT (TPHA/TPPA) | แปลผล |\n|---|---|---|\n| บวก | บวก | **ซิฟิลิส** — ยังไม่รักษาหรือเพิ่งรักษา (ดู titre และประวัติ) |\n| บวก | ลบ | **ผลบวกลวงของ NTT (biologic false positive)** · หรือระยะแรกมากที่ TT ยังไม่ขึ้น |\n| ลบ | บวก | **เคยติดและรักษาแล้ว** · primary ระยะแรก · late latent ที่ RPR ลดลงเอง · prozone |\n| ลบ | ลบ | ไม่ติดเชื้อ หรืออยู่ในระยะฟักตัว → ถ้าเพิ่งเสี่ยง **เจาะซ้ำ 2–4 สัปดาห์** |\n\n- **ทำไมระยะแรกผลลบได้** — TT ชนิด IgM ตรวจพบราวสัปดาห์ที่ 2 หลังติดเชื้อ ส่วน RPR/VDRL ราว 3–6 สัปดาห์ (คู่มือไทย) · chancre จึงขึ้นก่อน serology บวก\n- **Prozone** — secondary syphilis ราว 1–2% มี antibody มากเกินจน RPR ไม่จับกลุ่ม ให้ผลลบปลอม → ขอให้ **เจือจาง serum (เช่น 1:16)** ถ้าอาการเข้าได้\n- **Serofast** — รักษาถูกต้องแล้ว titre ลดลงแต่ค้างที่ระดับต่ำคงที่ ไม่ต้องรักษาซ้ำถ้าไม่มีอาการและ titre ไม่เพิ่ม\n- อาจารย์: ส่ง VDRL เพราะอยากรู้ว่า **โรคยัง active และยังไม่ได้รักษาหรือไม่** — ลบก็จบ บวกต้องดู titre และยืนยันด้วย TT ว่าบวกจริงหรือบวกลวง ก่อนตัดสินใจรักษา\n\n> **ข้อควรระวัง ·** ในบันทึกอาจารย์อธิบาย TT ว่าเป็น \"rapid test ที่ดู IgM กับ IgG\" — ที่ถูกคือ TPHA/TPPA/FTA-ABS/EIA ตรวจ **antibody ต่อตัวเชื้อ** (ส่วนใหญ่วัดรวม IgM และ IgG) และ rapid test ส่วนใหญ่ก็เป็น TT ชนิดหนึ่ง จุดสำคัญที่ถูกต้องคือ **TT บวกตลอดชีวิต NTT ขึ้นลงตามโรค**\n\n> **อัปเดตแนวทาง ·** อาจารย์บอกว่าปัจจุบัน \"เป็น RPR หมดแล้ว เขียน VDRL ไปก็ส่ง RPR ให้\" — **คู่มือกรมควบคุมโรค (2564) กำหนดให้ห้องปฏิบัติการรายงานผลด้วยชื่อ RPR ห้ามรายงานเป็น VDRL** และ **CDC 2024 ระบุว่า titre ของ VDRL และ RPR เทียบกันไม่ได้** → ติดตามด้วยวิธีเดิม (และควรเป็นห้องปฏิบัติการเดิม) ทุกครั้ง\n\n### ลำดับการตรวจ: traditional เทียบ reverse\n[[fig:algo]]\n\n- **Reverse algorithm** นิยมขึ้นเพราะ TT ทำด้วยเครื่องอัตโนมัติได้ (EIA/CLIA) · กรณี **TT บวก RPR ลบ** → ตรวจ **TT ตัวที่สอง (TPPA หรือ TPHA)** · ถ้าบวกและ **ไม่เคยรักษา → รักษาแบบ latent ไม่ทราบระยะ** · ถ้าลบ → TT ตัวแรกน่าจะบวกลวง\n- CDC 2024 ยอมรับทั้งสองแบบ · reverse บวกลวงมากกว่าในประชากรความชุกต่ำ · traditional พลาด early primary และ late latent ได้\n\n> **อัปเดตแนวทาง ·** อาจารย์สอนว่าการคัดกรองฝากครรภ์ใช้ VDRL/RPR — **คู่มือกรมควบคุมโรค (2564) ให้ใช้ reverse algorithm (เริ่มด้วย TT) สำหรับหญิงตั้งครรภ์และคู่ \"ไม่ให้ใช้\" แบบดั้งเดิม** เพราะ late latent ราว 25–30% มี RPR ลดลงจนลบเอง · WHO 2024 แนะนำ **dual rapid test (TT + NTT)** เป็นอีกทางเลือก\n",
+   "pearls": [
+    "NTT (RPR/VDRL) = cardiolipin · ขึ้นลงตามโรค · ใช้ติดตาม titre",
+    "TT (TPHA/TPPA/FTA-ABS/EIA) = บวกตลอดชีวิต · ยืนยัน ไม่บอก activity",
+    "RPR บวก TT ลบ = BFP: SLE, RA, malaria, leptospirosis, ตั้งครรภ์, HIV (ออกสอบ)",
+    "Prozone → เจือจาง serum · serofast → titre ต่ำคงที่หลังรักษา ไม่ต้องรักษาซ้ำ",
+    "Reverse: TT บวก RPR ลบ → TPPA · บวกและไม่เคยรักษา → รักษาแบบ late latent"
+   ],
+   "mnem": [
+    {
+     "name": "VDRL",
+     "what": "สาเหตุของ non-treponemal test บวกลวง",
+     "lines": [
+      [
+       "V",
+       "**Viral** infection — mono (EBV), hepatitis"
+      ],
+      [
+       "D",
+       "**Drugs** — ผู้ใช้ยาเสพติดชนิดฉีด"
+      ],
+      [
+       "R",
+       "**Rheumatic** fever และ **rheumatoid** arthritis"
+      ],
+      [
+       "L",
+       "**Lupus** (SLE/antiphospholipid) และ **leprosy**"
+      ]
+     ],
+     "note": "อาจารย์เพิ่ม **malaria และ leptospirosis** · CDC เพิ่ม **การตั้งครรภ์ HIV อายุมาก และหลังฉีดวัคซีน** · หลักคือ titre มักต่ำ และ TT ลบ",
+     "src": "First Aid for the USMLE Step 1 (VDRL false positives: Viral, Drugs, Rheumatic fever, Lupus/leprosy)"
+    }
+   ],
+   "figs": {
+    "algo": {
+     "title": "ลำดับการตรวจซิฟิลิสสองแบบ",
+     "cap": "**ซ้าย: traditional** เริ่มด้วย RPR/VDRL แล้วยืนยันด้วย TPHA/TPPA · **ขวา: reverse** เริ่มด้วย treponemal test อัตโนมัติหรือ rapid test แล้วตามด้วย RPR พร้อม titre · ผลขัดแย้ง (TT บวก RPR ลบ) ตัดสินด้วย TT ตัวที่สอง · คู่มือกรมควบคุมโรค (2564) กำหนดให้ใช้ **reverse** คัดกรองหญิงตั้งครรภ์และคู่",
+     "svg": "<svg viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"เปรียบเทียบลำดับการตรวจซิฟิลิสแบบดั้งเดิมที่เริ่มด้วย RPR กับแบบย้อนทางที่เริ่มด้วย treponemal test\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"106\" y=\"16\" class=\"sm b mid tac\">แบบดั้งเดิม (traditional)</text><text x=\"314\" y=\"16\" class=\"sm b mid tac\">แบบย้อนทาง (reverse)</text><rect x=\"6\" y=\"26\" width=\"200\" height=\"40\" rx=\"8\" class=\"sk\"/><text x=\"106\" y=\"43\" class=\"xs b mid\">1. RPR/VDRL (non-treponemal)</text><text x=\"106\" y=\"58\" class=\"xs mid mu\">ลบ → จบ (ระวังระยะแรกมาก)</text><line x1=\"106\" y1=\"66\" x2=\"106\" y2=\"82\" class=\"ln\" marker-end=\"url(#ah)\"/><text x=\"112\" y=\"78\" class=\"xs mu\">บวก + ทำ titre</text><rect x=\"6\" y=\"84\" width=\"200\" height=\"40\" rx=\"8\" class=\"sk\"/><text x=\"106\" y=\"101\" class=\"xs b mid\">2. TPHA/TPPA (treponemal)</text><text x=\"106\" y=\"116\" class=\"xs mid mu\">ยืนยันว่าบวกจริง</text><line x1=\"80\" y1=\"124\" x2=\"56\" y2=\"140\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"132\" y1=\"124\" x2=\"156\" y2=\"140\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"6\" y=\"142\" width=\"96\" height=\"56\" rx=\"8\" class=\"ok\"/><text x=\"54\" y=\"160\" class=\"xs b mid\">TT บวก</text><text x=\"54\" y=\"175\" class=\"xs mid\">ซิฟิลิส</text><text x=\"54\" y=\"190\" class=\"xs mid\">(ปัจจุบันหรือเคย)</text><rect x=\"110\" y=\"142\" width=\"96\" height=\"56\" rx=\"8\" class=\"bad\"/><text x=\"158\" y=\"160\" class=\"xs b mid\">TT ลบ</text><text x=\"158\" y=\"175\" class=\"xs mid\">ผลบวกลวง</text><text x=\"158\" y=\"190\" class=\"xs mid\">ของ RPR (BFP)</text><rect x=\"6\" y=\"210\" width=\"200\" height=\"84\" rx=\"8\" class=\"bx\"/><text x=\"106\" y=\"228\" class=\"xs b mid tbad\">จุดอ่อน</text><text x=\"106\" y=\"244\" class=\"xs mid\">late latent ราว 25–30%</text><text x=\"106\" y=\"259\" class=\"xs mid\">RPR ลดลงจนลบเอง → หลุด</text><text x=\"106\" y=\"274\" class=\"xs mid\">คู่มือไทย: ห้ามใช้แบบนี้</text><text x=\"106\" y=\"288\" class=\"xs mid\">คัดกรองหญิงตั้งครรภ์</text><rect x=\"214\" y=\"26\" width=\"200\" height=\"40\" rx=\"8\" class=\"sk\"/><text x=\"314\" y=\"43\" class=\"xs b mid\">1. EIA/CLIA/RDT (treponemal)</text><text x=\"314\" y=\"58\" class=\"xs mid mu\">ลบ → จบ</text><line x1=\"314\" y1=\"66\" x2=\"314\" y2=\"82\" class=\"ln\" marker-end=\"url(#ah)\"/><text x=\"320\" y=\"78\" class=\"xs mu\">บวก</text><rect x=\"214\" y=\"84\" width=\"200\" height=\"40\" rx=\"8\" class=\"sk\"/><text x=\"314\" y=\"101\" class=\"xs b mid\">2. RPR พร้อม titre (NTT)</text><text x=\"314\" y=\"116\" class=\"xs mid mu\">บอกความ active และใช้ติดตาม</text><line x1=\"288\" y1=\"124\" x2=\"264\" y2=\"140\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"124\" x2=\"364\" y2=\"140\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"214\" y=\"142\" width=\"96\" height=\"56\" rx=\"8\" class=\"ok\"/><text x=\"262\" y=\"160\" class=\"xs b mid\">RPR บวก</text><text x=\"262\" y=\"175\" class=\"xs mid\">ซิฟิลิส</text><text x=\"262\" y=\"190\" class=\"xs mid\">ประเมินระยะ</text><rect x=\"318\" y=\"142\" width=\"96\" height=\"56\" rx=\"8\" class=\"wa\"/><text x=\"366\" y=\"160\" class=\"xs b mid\">RPR ลบ</text><text x=\"366\" y=\"175\" class=\"xs mid\">ตรวจ TT ตัวที่ 2</text><text x=\"366\" y=\"190\" class=\"xs mid\">(TPPA หรือ TPHA)</text><line x1=\"350\" y1=\"198\" x2=\"270\" y2=\"216\" class=\"ln\" marker-end=\"url(#ah)\"/><line x1=\"372\" y1=\"198\" x2=\"372\" y2=\"216\" class=\"ln\" marker-end=\"url(#ah)\"/><rect x=\"214\" y=\"218\" width=\"110\" height=\"76\" rx=\"8\" class=\"ms\"/><text x=\"269\" y=\"236\" class=\"xs b mid\">TPPA บวก</text><text x=\"269\" y=\"251\" class=\"xs mid\">เคยติดเชื้อ</text><text x=\"269\" y=\"266\" class=\"xs mid\">เคยรักษา → จบ</text><text x=\"269\" y=\"281\" class=\"xs mid\">ไม่เคย → รักษา</text><rect x=\"330\" y=\"218\" width=\"84\" height=\"76\" rx=\"8\" class=\"bad\"/><text x=\"372\" y=\"236\" class=\"xs b mid\">TPPA ลบ</text><text x=\"372\" y=\"251\" class=\"xs mid\">TT ตัวแรก</text><text x=\"372\" y=\"266\" class=\"xs mid\">น่าจะบวกลวง</text></svg>"
+    }
+   },
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-19",
+     "kind": "mcq",
+     "topic": "Biologic false-positive nontreponemal test",
+     "stem": "A 32-year-old woman with systemic lupus erythematosus has a reactive VDRL at a titre of 1:2. TPPA is nonreactive. She has no genital lesions or rash. What is the most likely interpretation?",
+     "choices": [
+      "Latent syphilis requiring benzathine penicillin weekly for 3 weeks",
+      "Prozone phenomenon",
+      "Biologic false-positive nontreponemal test",
+      "Previously treated syphilis",
+      "Neurosyphilis"
+     ],
+     "answer": 2,
+     "explain": "VDRL/RPR วัด antibody ต่อ **cardiolipin** ซึ่งไม่จำเพาะ — โรคที่มีการอักเสบหรือทำลายเนื้อเยื่อทำให้บวกได้ (**SLE, autoimmune, rheumatoid, malaria, leptospirosis** — ที่อาจารย์ถามในห้อง) · **titre ต่ำ + TT ลบ = biologic false positive**\n\nProzone ทำให้ RPR **ลบปลอม** ไม่ใช่บวก · treated syphilis และ neurosyphilis ต้องมี TT บวก",
+     "pearl": "VDRL บวก + TT ลบ = BFP",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — non-treponemal false positive",
+      "CDC STI Treatment Guidelines 2021 — Syphilis, diagnostic considerations"
+     ],
+     "nl": [
+      "3.3.16",
+      "B10.3(8)",
+      "B1.5.1(8)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-20",
+     "kind": "mcq",
+     "topic": "Monitoring response to syphilis treatment",
+     "stem": "A man is treated for secondary syphilis. Which test should be used to monitor his response to treatment?",
+     "choices": [
+      "TPHA titre",
+      "FTA-ABS",
+      "TPPA",
+      "Signal-to-cutoff ratio of the treponemal immunoassay",
+      "Quantitative RPR titre, using the same test method each time"
+     ],
+     "answer": 4,
+     "explain": "อาจารย์ถามห้อง: ติดตามด้วยตัวไหน → **non-treponemal (RPR หรือ VDRL) แบบมี titre** เพราะ **ขึ้นลงตาม activity ของโรค** · ต้องใช้ **วิธีเดิมทุกครั้ง** เพราะ titre ของ VDRL และ RPR เทียบกันไม่ได้\n\nTT ทุกชนิด (TPHA, TPPA, FTA-ABS, EIA) **บวกตลอดชีวิต** และระดับไม่สัมพันธ์กับการตอบสนองต่อการรักษา จึงใช้ติดตามไม่ได้",
+     "pearl": "ติดตาม = RPR titre วิธีเดิม",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — ติดตามด้วย VDRL/RPR",
+      "CDC STI Treatment Guidelines 2021 — Syphilis, diagnostic considerations"
+     ],
+     "nl": [
+      "3.3.16",
+      "B10.3(8)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-21",
+     "kind": "mcq",
+     "topic": "Discordant reverse-sequence result",
+     "stem": "A 45-year-old man is screened with an automated treponemal EIA, which is reactive. Reflex RPR is nonreactive, and a TPPA is reactive. He has never been treated for syphilis and has no symptoms; neurologic examination is normal. What is the most appropriate next step?",
+     "choices": [
+      "No further action; this pattern is always a false positive",
+      "Treat as latent syphilis of unknown duration with benzathine penicillin G weekly for 3 weeks",
+      "Repeat the EIA in 6 months before deciding",
+      "Perform lumbar puncture before any treatment",
+      "Report the EIA as a laboratory error"
+     ],
+     "answer": 1,
+     "explain": "Reverse algorithm: **TT บวก + RPR ลบ** → ตัดสินด้วย **TT ตัวที่สอง (TPPA)** · **TPPA บวก = เคยติดเชื้อจริง** · ถ้า **ไม่เคยได้รับการรักษา** → อาจเป็น late latent ที่ RPR ลดลงเอง → **รักษาแบบ latent ไม่ทราบระยะ (BPG สัปดาห์ละครั้ง × 3)** (CDC 2021 และคู่มือไทย)\n\nถ้าเคยรักษาครบแล้วไม่ต้องทำอะไร · ถ้า TPPA ลบจึงคิดว่า EIA บวกลวง · ไม่มีอาการทางระบบประสาทจึงไม่ต้องเจาะหลัง",
+     "pearl": "EIA+/RPR−/TPPA+ ไม่เคยรักษา → รักษาแบบ late latent",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การแปลผล serology",
+      "CDC STI Treatment Guidelines 2021 — Reverse sequence algorithm",
+      "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)"
+     ],
+     "nl": [
+      "3.3.16",
+      "B10.3(8)",
+      "B1.5.1(8)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-22",
+     "kind": "mcq",
+     "topic": "Prozone phenomenon",
+     "stem": "A 25-year-old woman has a widespread papulosquamous rash including the palms, patchy alopecia and generalized lymphadenopathy. Undiluted RPR is nonreactive, but TPPA is reactive. What is the best next step?",
+     "choices": [
+      "Ask the laboratory to repeat the RPR on diluted serum",
+      "Diagnose seronegative secondary syphilis and stop testing",
+      "Conclude that the TPPA is a false positive",
+      "Perform lumbar puncture",
+      "Start oral acyclovir"
+     ],
+     "answer": 0,
+     "explain": "ภาพทางคลินิกเป็น **secondary syphilis** แต่ RPR ลบ + TT บวก → นึกถึง **prozone phenomenon**: antibody มากเกินจน antigen-antibody ไม่จับกลุ่ม (ราว 1–2% ของ secondary) → **เจือจาง serum (เช่น 1:16) แล้วตรวจใหม่** จะได้ผลบวกพร้อม titre สูง\n\nSecondary syphilis เป็นระยะที่ RPR ไวเกือบ 100% จึงไม่ควรสรุปว่า seronegative · TPPA บวกเข้ากับภาพจึงไม่น่าบวกลวง · ไม่มีข้อบ่งชี้เจาะหลังถ้าไม่มีอาการทางประสาท ตา หรือหู",
+     "pearl": "Secondary แต่ RPR ลบ → เจือจาง serum (prozone)",
+     "src": "",
+     "ref": [
+      "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564) — prozone phenomenon",
+      "CDC STI Treatment Guidelines 2021 — Syphilis"
+     ],
+     "nl": [
+      "3.3.16",
+      "B10.3(8)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-10",
+   "title": "Neurosyphilis, ocular และ otic syphilis — ใครต้องเจาะหลัง และรักษาอย่างไร",
+   "summary": "เชื้อเข้า CNS ได้ทุกระยะ อาการตา หู หรือระบบประสาทร่วมกับ serology บวกต้องรักษาด้วย aqueous penicillin G IV 18–24 MU ต่อวัน 10–14 วัน",
+   "minutes": 10,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "2.3.7-3(8)",
+    "B3.2.10-3(2)",
+    "2.1.72",
+    "2.3.8-3(2)",
+    "3.1.7",
+    "B3.3(2)",
+    "B1.7.2"
+   ],
+   "md": "### เชื้อเข้า CNS ได้ตั้งแต่ระยะแรก\n- อาจารย์: บางคนเชื้อเข้าไปอยู่ใน CNS **เงียบ ๆ ไม่มีอาการ** ถ้าไม่ตรวจเลือดก็ไม่รู้ · CDC: **CNS involvement เกิดได้ทุกระยะ** ocular และ otic syphilis ก็เกิดได้ทุกระยะ แต่มักพบในระยะแรก\n\n### อาการที่อาจารย์ยกตัวอย่าง (ต้องนึกถึงซิฟิลิส)\n| ระบบ | อาการ |\n|---|---|\n| **หู (otosyphilis)** | **หูอื้อ หูมีเสียง (tinnitus) โดยไม่ทราบสาเหตุ** · เวียนศีรษะ · การได้ยินลดลงแบบ sensorineural |\n| **ตา (ocular)** | **ตาแดง ตาบวมไม่ทราบสาเหตุ** · uveitis (มักเป็น posterior หรือ panuveitis) · **papillitis/optic neuritis** · การมองเห็นลดลง |\n| **เส้นประสาทสมอง** | **หน้าเบี้ยวข้างเดียว** · **หนังตาตกข้างเดียว** · Horner syndrome · ชา |\n| **Meningovascular** | ปวดศีรษะ meningitis · stroke ในคนอายุน้อย |\n| **Late** | general paresis · tabes dorsalis (อ่อนแรง เกร็ง เสียการรับรู้ตำแหน่ง) · Argyll Robertson pupil |\n\n### ใครต้องเจาะหลัง (CSF examination) — CDC 2021\n- **มีอาการหรืออาการแสดงทางระบบประสาท** (cranial nerve dysfunction, meningitis, stroke, สับสน)\n- **Ocular syphilis ที่มี cranial nerve ผิดปกติ** หรืออาการทางระบบประสาทอื่น (ถ้าตรวจตาพบรอยโรคชัดและ CN 2–6 ปกติ ไม่จำเป็นต้องเจาะก่อนรักษา)\n- สงสัย **รักษาล้มเหลว** หรือ titre ไม่ลดตามเกณฑ์ ร่วมกับอาการทางระบบประสาท\n- Latent syphilis ที่ **ไม่มีการสัมผัสทางเพศเลยในปีที่ผ่านมา** แล้ว titre ไม่ตอบสนอง (พิจารณา)\n- **Otosyphilis ที่มีแต่อาการหู** และตรวจระบบประสาทปกติ → **ไม่แนะนำให้เจาะ** (CSF มักปกติ) แต่รักษาแบบ neurosyphilis\n\n> **อัปเดตแนวทาง ·** อาจารย์เล่าว่าผู้ที่ VDRL บวกบางรายถูกส่งเจาะหลังตรวจ CSF VDRL เพื่อหา neurosyphilis แม้ไม่มีอาการ — **CDC 2021 ไม่แนะนำการเจาะหลังเป็นประจำในผู้ไม่มีอาการ** (รวมผู้ติด HIV) ให้เจาะตามข้อบ่งชี้ข้างต้นเท่านั้น\n\n### CSF ที่เข้าได้กับ neurosyphilis\n- เม็ดเลือดขาว **มากกว่า 5 cells/µL** (ผู้ติด HIV ใช้มากกว่า 20) · โปรตีนสูง\n- **CSF-VDRL จำเพาะสูงแต่ไวต่ำ** — บวกยืนยันได้ ลบตัดไม่ได้ · **CSF FTA-ABS ไวกว่าแต่จำเพาะน้อยกว่า** — ลบช่วยตัดโรค\n\n### การรักษา (เปลี่ยนจาก benzathine เป็นยาฉีดเข้าหลอดเลือด)\n| | ยา |\n|---|---|\n| **แนะนำ** | **Aqueous crystalline penicillin G (PGS) 18–24 ล้านยูนิต/วัน** = **3–4 ล้านยูนิต IV ทุก 4 ชั่วโมง (วันละ 6 ครั้ง)** หรือหยดต่อเนื่อง นาน **10–14 วัน** (อาจารย์: ราว 14 วัน) |\n| ทางเลือก (ถ้ามั่นใจว่าผู้ป่วยมาฉีดครบ) | **Procaine penicillin G 2.4 MU IM วันละครั้ง + probenecid 500 mg วันละ 4 ครั้ง** 10–14 วัน |\n| แพ้ penicillin | **Ceftriaxone 1–2 g IV/IM วันละครั้ง 10–14 วัน** (ข้อมูลจำกัด) หรือยืนยันการแพ้แล้วทำ desensitization · หญิงตั้งครรภ์ → desensitize เสมอ |\n| หลังครบคอร์ส | พิจารณา BPG 2.4 MU IM สัปดาห์ละครั้ง 1–3 ครั้ง ให้ระยะเวลารวมเท่าการรักษา latent |\n\n- **Ocular และ otic syphilis รักษาแบบ neurosyphilis แม้ CSF ปกติ** · ดูแลร่วมกับจักษุแพทย์หรือแพทย์หู คอ จมูก · steroid เสริมใช้บ่อยแต่ยังไม่พิสูจน์ประโยชน์\n- ติดตาม: RPR ในเลือดกลับปกติทำนายว่า CSF จะกลับปกติ → **ไม่ต้องเจาะซ้ำ** ถ้าตอบสนองทั้งอาการและ serology · ตรวจ HIV ทุกราย\n\n> **อัปเดตแนวทาง ·** ในบันทึกอาจารย์พูดว่า neurosyphilis \"ให้ benzathine ก็ได้ หรือ PGS ก็ได้ แต่ส่วนใหญ่เป็น PGS\" — **CDC 2021 และคู่มือไทยให้ aqueous penicillin G IV เท่านั้นเป็นสูตรหลัก** (ทางเลือกคือ procaine + probenecid) เพราะ **benzathine ไม่ได้ระดับยาฆ่าเชื้อใน CSF** · benzathine มีบทบาทแค่เสริมหลังครบคอร์ส · อาจารย์เองสังเกตว่าแนวทางยุโรปและอเมริการะยะหลังใช้ PGS แทบทั้งหมด\n",
+   "pearls": [
+    "Neuro/ocular/otic syphilis เกิดได้ทุกระยะ · หูอื้อ ตาแดง หน้าเบี้ยว หนังตาตก + VDRL บวก → คิดถึง",
+    "Aqueous penicillin G 18–24 MU/วัน = 3–4 MU IV q4h × 10–14 วัน",
+    "ไม่เจาะหลังเป็นประจำ · เจาะเมื่อมีอาการทางประสาท · otic อย่างเดียวไม่ต้องเจาะ",
+    "CSF-VDRL จำเพาะแต่ไม่ไว · CSF FTA-ABS ลบช่วยตัดโรค",
+    "Benzathine ไม่ถึง CSF → ห้ามใช้เดี่ยวใน neurosyphilis"
+   ],
+   "mnem": [
+    {
+     "name": "Prostitute's pupil (Argyll Robertson)",
+     "what": "รูม่านตาใน neurosyphilis ระยะท้าย",
+     "lines": [
+      [
+       "Accommodates",
+       "หดเมื่อมองใกล้ (accommodation) ได้ — \"accommodates but does not react\""
+      ],
+      [
+       "Doesn't react",
+       "ไม่หดต่อแสง (light reflex เสีย) · รูม่านตาเล็กทั้งสองข้าง"
+      ]
+     ],
+     "note": "เป็นอาการของ **late neurosyphilis** (tabes dorsalis/general paresis) — ต่างจาก ocular syphilis ระยะแรกที่มาด้วย uveitis หรือ optic neuritis",
+     "src": "First Aid for the USMLE Step 1 (Argyll Robertson pupil — \"prostitute's pupil\")"
+    }
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-23",
+     "kind": "mcq",
+     "topic": "Ocular syphilis management",
+     "stem": "A 34-year-old man has 2 weeks of blurred vision and a red right eye. Ophthalmology finds panuveitis. RPR is 1:128 and TPPA is reactive. Cranial nerve and neurologic examinations are otherwise normal. What is the most appropriate treatment?",
+     "choices": [
+      "Benzathine penicillin G 2.4 million units IM once",
+      "Benzathine penicillin G 2.4 million units IM weekly for 3 weeks",
+      "Lumbar puncture first, and treat only if the CSF is abnormal",
+      "Aqueous crystalline penicillin G 18–24 million units/day IV (3–4 million units every 4 hours) for 10–14 days, with ophthalmology co-management",
+      "Doxycycline 100 mg orally twice daily for 28 days"
+     ],
+     "answer": 3,
+     "explain": "**Ocular syphilis รักษาแบบ neurosyphilis** แม้ CSF ปกติ: **aqueous penicillin G 18–24 MU/วัน IV (3–4 MU ทุก 4 ชั่วโมง) 10–14 วัน** ร่วมกับจักษุแพทย์ — อาจารย์เน้นว่าเจอตาแดงหรือหูอื้อไม่ทราบสาเหตุแล้ว VDRL บวก ให้ **เปลี่ยนจาก benzathine เป็น PGS**\n\nBenzathine ไม่ได้ระดับยาใน CSF และน้ำในลูกตา · CDC 2021: ถ้ามีรอยโรคที่ตาชัดและ CN ปกติ **ไม่จำเป็นต้องเจาะหลังก่อน** และไม่ควรรอผล CSF จึงรักษา · doxycycline ไม่ใช่สูตรสำหรับ ocular syphilis",
+     "pearl": "ตา/หู + serology บวก = penicillin G IV",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — neuro/ocular/otic syphilis",
+      "CDC STI Treatment Guidelines 2021 — Neurosyphilis, ocular syphilis, and otosyphilis"
+     ],
+     "nl": [
+      "2.3.7-3(8)",
+      "2.3.1(19)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-24",
+     "kind": "mcq",
+     "topic": "Indication for CSF examination",
+     "stem": "Which patient with reactive syphilis serology most clearly requires lumbar puncture before treatment?",
+     "choices": [
+      "An asymptomatic HIV-negative woman with early latent syphilis",
+      "A man with secondary syphilis whose only findings are rash and lymphadenopathy",
+      "A man with latent syphilis who has new left facial palsy and headache",
+      "A woman with isolated tinnitus and a normal neurologic examination",
+      "A man treated for primary syphilis whose RPR fell fourfold at 6 months"
+     ],
+     "answer": 2,
+     "explain": "CDC 2021: เจาะหลังเมื่อมี **อาการหรืออาการแสดงทางระบบประสาท** — หน้าเบี้ยว (cranial nerve VII) + ปวดศีรษะ = สงสัย **early neurosyphilis (meningitis/cranial neuritis)** → ตรวจ CSF แล้วรักษาด้วย penicillin G IV\n\nไม่มีอาการทางประสาท (early latent, secondary ที่มีแค่ผื่น) **ไม่เจาะเป็นประจำ** · **otosyphilis ที่มีแต่อาการหูและตรวจประสาทปกติ ไม่แนะนำให้เจาะ** แต่รักษาแบบ neurosyphilis · titre ลด 4 เท่าคือตอบสนองดี",
+     "pearl": "อาการทางประสาท = เจาะหลัง · หูอย่างเดียวไม่ต้อง",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การเจาะหลังในซิฟิลิส",
+      "CDC STI Treatment Guidelines 2021 — Neurosyphilis"
+     ],
+     "nl": [
+      "3.1.7",
+      "B3.3(2)",
+      "2.3.1(19)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-25",
+     "kind": "mcq",
+     "topic": "Why benzathine fails in neurosyphilis",
+     "stem": "Why is benzathine penicillin G alone not adequate treatment for neurosyphilis?",
+     "choices": [
+      "It frequently causes the Jarisch-Herxheimer reaction",
+      "The injection is too painful to repeat",
+      "Treponema pallidum has acquired resistance to penicillin",
+      "It is nephrotoxic at the doses required",
+      "It does not reliably achieve treponemicidal concentrations in the cerebrospinal fluid"
+     ],
+     "answer": 4,
+     "explain": "Benzathine penicillin เป็นเกลือที่ละลายช้า ปล่อยยา **ระดับต่ำแต่นาน** (long-acting) — พอสำหรับเชื้อในเนื้อเยื่อทั่วไป แต่ **ระดับใน CSF ไม่ถึงระดับฆ่าเชื้อ** จึงต้องใช้ **aqueous penicillin G (short-acting) ทางหลอดเลือดดำขนาดสูงทุก 4 ชั่วโมง** — ตรงกับที่อาจารย์อธิบายว่า PGS ออกฤทธิ์สั้นจึงต้องให้ถี่\n\nT. pallidum ยังไม่ดื้อ penicillin · JH reaction เกิดได้กับทุกสูตรและไม่ใช่เหตุผลเลี่ยงยา · ไม่ใช่ปัญหาพิษต่อไตหรือความเจ็บ",
+     "pearl": "Benzathine ระดับต่ำนาน แต่ไม่ถึง CSF",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — benzathine เทียบ penicillin G sodium",
+      "CDC STI Treatment Guidelines 2021 — Neurosyphilis"
+     ],
+     "nl": [
+      "B1.7.2",
+      "2.3.1(19)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-11",
+   "title": "รักษาซิฟิลิสตามระยะ แพ้ penicillin และ Jarisch–Herxheimer reaction",
+   "summary": "Early ใช้ benzathine penicillin G 2.4 MU ครั้งเดียว late ใช้สัปดาห์ละครั้ง × 3 แพ้ยาใช้ doxycycline 14 หรือ 28 วัน และไข้หลังฉีดคือ JH ไม่ใช่แพ้ยา",
+   "minutes": 10,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "B1.7.2",
+    "B1.4.11(1)",
+    "2.3.1(9)"
+   ],
+   "md": "### สูตรยาตามระยะ — **อาจารย์เน้น: ข้อสอบถามชื่อยาและขนาด (ออกสอบ) \"พวกนี้จำง่าย\"**\n| ระยะ | สูตรหลัก | แพ้ penicillin (ไม่ตั้งครรภ์) |\n|---|---|---|\n| **Early** — primary · secondary · early latent | **Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว** | **Doxycycline 100 mg bid 14 วัน** · tetracycline 500 mg qid 14 วัน · ceftriaxone (ดูด้านล่าง) |\n| **Late** — late latent · ไม่ทราบระยะ · tertiary ที่ไม่ใช่ neuro | **Benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละครั้ง × 3** (รวม 7.2 MU) | **Doxycycline 100 mg bid 28 วัน** · tetracycline 500 mg qid 28 วัน |\n| **Neurosyphilis · ocular · otic** | **Aqueous penicillin G 18–24 MU/วัน IV 10–14 วัน** | ceftriaxone 1–2 g/วัน 10–14 วัน หรือ desensitize |\n\n- คู่มือไทย: ฉีด BPG **แบ่งสะโพกข้างละ 1.2 ล้านยูนิต** · ลดปวดได้โดยผสม **1% lidocaine ที่ไม่มี epinephrine 0.5–1.0 mL**\n- **ผู้ติด HIV ใช้สูตรเดียวกัน** (ไม่ต้องเพิ่มขนาด) แต่ติดตามถี่กว่า\n- **ทางเลือกอื่นที่อาจารย์พูดถึง**: procaine penicillin + probenecid · **ceftriaxone IM หรือ IV วันละครั้ง 10–14 วัน** (ทางเลือกสำหรับคนกลัวเข็ม IM ที่ปวด — แต่ต้องมาฉีดทุกวัน)\n\n### ทำไม benzathine ฉีดครั้งเดียวพอ แต่ PGS ต้องให้ถี่ (อาจารย์อธิบาย)\n- **Benzathine penicillin = long-acting** ปล่อยยาระดับต่ำนานราว 3 สัปดาห์ เหมาะกับเชื้อที่แบ่งตัวช้ามาก\n- **Penicillin G sodium (PGS) = short-acting** ถ้าให้ IV ต้องให้ **ทุก 4 ชั่วโมง วันละ 6 ครั้ง**\n- **ลืมนัด (late latent)**: ห่างกัน 7 วันดีที่สุด · คนไม่ตั้งครรภ์ห่างได้ถึง 10–14 วัน · เกินกว่านั้นเริ่มชุดใหม่ · **หญิงตั้งครรภ์ห่างเกิน 9 วัน → เริ่มใหม่ทั้งชุด**\n\n> **อัปเดตแนวทาง ·** อาจารย์ไม่แน่ใจว่า ceftriaxone ต้องให้นานเท่าไร — **CDC 2021**: primary/secondary ใช้ **ceftriaxone 1 g IM/IV วันละครั้ง 10 วัน** (ขนาดที่ดีที่สุดยังไม่ชัด) · neurosyphilis 1–2 g/วัน 10–14 วัน · late latent ยังไม่มีขนาดที่ชัดเจน ต้องปรึกษาผู้เชี่ยวชาญ · คู่มือไทย (2564) ใช้ 1–2 g วันละครั้ง 10–14 วัน และเตือนว่า cross-reaction กับผู้แพ้ penicillin ได้ราว 10% · **azithromycin 2 g ครั้งเดียว CDC ไม่แนะนำแล้ว** เพราะ T. pallidum ดื้อยาและรักษาล้มเหลว (คู่มือไทยยังระบุไว้พร้อมคำเตือนเรื่องดื้อยา)\n\n### ผู้ป่วยที่บอกว่าแพ้ penicillin\n- ส่วนใหญ่ไม่ได้แพ้จริง → ประเมินประวัติ · **skin test หรือ oral challenge** ถ้าทำได้\n- **ต้อง desensitize แล้วให้ penicillin** เมื่อ: **ตั้งครรภ์** · neurosyphilis · หรือไม่มั่นใจว่าจะกินยาหรือมาติดตามครบ\n\n### Jarisch–Herxheimer reaction\n- **ไข้ หนาวสั่น ปวดศีรษะ ปวดกล้ามเนื้อ ภายใน 24 ชั่วโมง** หลังเริ่มยาไม่ว่าสูตรใด · พบบ่อยใน **early syphilis**\n- กลไก: เชื้อตายพร้อมกันปล่อย lipoprotein กระตุ้น cytokine — **ไม่ใช่แพ้ยา** ไม่ต้องหยุดยาหรือติดป้ายแพ้\n- ให้ยาลดไข้บรรเทาอาการ (ป้องกันไม่ได้) · **บอกผู้ป่วยล่วงหน้า**\n- ในหญิงตั้งครรภ์ครึ่งหลังอาจกระตุ้น **เจ็บครรภ์คลอดก่อนกำหนดหรือ fetal distress** แต่ **ห้ามเลื่อนการรักษา**\n\n> **อัปเดตแนวทาง ·** ปัญหา **benzathine penicillin G ขาดแคลน** ในสหรัฐฯ ยังต่อเนื่อง (Bicillin L-A ถูกเรียกคืนบางล็อตปี 2025) — **CDC Dear Colleague letter (10 มี.ค. 2026)** ให้ **สงวน BPG สำหรับหญิงตั้งครรภ์และทารก congenital syphilis** และใช้ **doxycycline 100 mg bid 14 วัน (early) หรือ 28 วัน (late)** ในชายและหญิงไม่ตั้งครรภ์ · FDA อนุญาตนำเข้า **Lentocilin** ชั่วคราว (วิธีเตรียมยาต่างจาก Bicillin) — เป็นบริบทของสหรัฐฯ ในไทยให้ใช้ตามยาที่มีและแนวทางกรมควบคุมโรค\n",
+   "pearls": [
+    "Early: BPG 2.4 MU IM ครั้งเดียว · แพ้ → doxycycline 100 mg bid 14 วัน",
+    "Late/ไม่ทราบระยะ: BPG 2.4 MU สัปดาห์ละครั้ง × 3 · แพ้ → doxycycline 28 วัน",
+    "HIV ใช้สูตรเดียวกัน · azithromycin 2 g ไม่แนะนำแล้ว (ดื้อยา)",
+    "JH reaction: ไข้ใน 24 ชม. ไม่ใช่แพ้ยา ให้ยาลดไข้และรักษาต่อ",
+    "ลืมนัด BPG: ไม่ตั้งครรภ์ ≤ 10–14 วัน · ตั้งครรภ์เกิน 9 วัน เริ่มใหม่"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-26",
+     "kind": "mcq",
+     "topic": "Penicillin allergy in secondary syphilis",
+     "stem": "A 27-year-old non-pregnant woman with secondary syphilis reports a history of urticaria after amoxicillin. She is reliable and will attend follow-up. Penicillin skin testing is not available. Which treatment is most appropriate?",
+     "choices": [
+      "Azithromycin 2 g orally as a single dose",
+      "Doxycycline 100 mg orally twice daily for 14 days",
+      "Doxycycline 100 mg orally twice daily for 28 days",
+      "Ciprofloxacin 500 mg orally twice daily for 3 days",
+      "No treatment is possible without penicillin desensitization"
+     ],
+     "answer": 1,
+     "explain": "Early syphilis (primary/secondary/early latent) ในคน **ไม่ตั้งครรภ์ที่แพ้ penicillin** → **doxycycline 100 mg bid 14 วัน** (หรือ tetracycline 500 mg qid 14 วัน · ceftriaxone 1 g/วัน 10 วัน)\n\n28 วันเป็นสูตรของ **late latent/ไม่ทราบระยะ** · **azithromycin 2 g ไม่แนะนำแล้ว** เพราะ T. pallidum ดื้อยา · cipro ใช้กับ chancroid · desensitization จำเป็นใน **หญิงตั้งครรภ์** neurosyphilis หรือเมื่อไม่มั่นใจเรื่องการกินยา",
+     "pearl": "Early + แพ้ (ไม่ตั้งครรภ์) = doxycycline 14 วัน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — แพ้ penicillin",
+      "CDC STI Treatment Guidelines 2021 — Primary and secondary syphilis"
+     ],
+     "nl": [
+      "B1.7.2",
+      "B1.4.11(1)",
+      "2.3.1(19)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-27",
+     "kind": "mcq",
+     "topic": "Syphilis treatment in HIV infection",
+     "stem": "A 30-year-old man with well-controlled HIV on antiretroviral therapy is diagnosed with primary syphilis. He has no neurologic, ocular or otic symptoms. What is the recommended treatment?",
+     "choices": [
+      "Benzathine penicillin G 2.4 million units IM once, the same as for people without HIV",
+      "Benzathine penicillin G 2.4 million units IM weekly for 3 weeks because of HIV",
+      "Aqueous penicillin G IV for 14 days because of HIV",
+      "Benzathine penicillin G plus 10 days of amoxicillin and probenecid",
+      "Lumbar puncture is mandatory before any treatment"
+     ],
+     "answer": 0,
+     "explain": "CDC 2021 และคู่มือไทย: **ผู้ติด HIV รักษาซิฟิลิสด้วยสูตรเดียวกับผู้ไม่ติดเชื้อ** → primary syphilis = **BPG 2.4 MU IM ครั้งเดียว** · การให้ยาเพิ่ม (BPG หลายครั้ง amoxicillin) ไม่เพิ่มประสิทธิภาพ\n\nไม่ต้องเจาะหลังเป็นประจำถ้าไม่มีอาการทางประสาท ตา หรือหู · สิ่งที่ต่างคือ **ติดตาม titre ถี่กว่า** (3, 6, 9, 12 และ 24 เดือน)",
+     "pearl": "HIV ไม่เปลี่ยนสูตร แต่ติดตามถี่ขึ้น",
+     "src": "",
+     "ref": [
+      "CDC STI Treatment Guidelines 2021 — Syphilis among persons with HIV",
+      "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "2.3.1(9)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-28",
+     "kind": "mcq",
+     "topic": "Penicillin allergy in late latent syphilis",
+     "stem": "A 48-year-old non-pregnant woman has latent syphilis of unknown duration and a documented history of penicillin anaphylaxis. Neurologic and eye examinations are normal. Which regimen is acceptable?",
+     "choices": [
+      "Doxycycline 100 mg orally twice daily for 14 days",
+      "Azithromycin 2 g orally as a single dose",
+      "Ceftriaxone 1 g IM as a single dose",
+      "Doxycycline 100 mg orally twice daily for 28 days",
+      "Erythromycin 500 mg orally four times daily for 14 days"
+     ],
+     "answer": 3,
+     "explain": "Late latent หรือไม่ทราบระยะ + แพ้ penicillin (ไม่ตั้งครรภ์) → **doxycycline 100 mg bid 28 วัน** (หรือ tetracycline 500 mg qid 28 วัน) — อาจารย์: ขยายจาก 2 สัปดาห์เป็น **4 สัปดาห์** ให้สอดคล้องกับการฉีด BPG สามสัปดาห์\n\n14 วันพอสำหรับ early เท่านั้น · azithromycin ดื้อยา · ceftriaxone ครั้งเดียวไม่พอ และขนาดใน late latent ยังไม่ชัด · erythromycin ผ่านรกและ CSF ได้ไม่ดี ผลรักษาต่ำ",
+     "pearl": "Late + แพ้ = doxycycline 28 วัน",
+     "src": "",
+     "ref": [
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — late latent แพ้ penicillin",
+      "CDC STI Treatment Guidelines 2021 — Latent syphilis"
+     ],
+     "nl": [
+      "B1.7.2",
+      "B1.4.11(1)",
+      "2.3.1(19)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "id-gus-12",
+   "title": "ซิฟิลิสในหญิงตั้งครรภ์ การติดตาม titre คู่นอน และการป้องกัน",
+   "summary": "หญิงตั้งครรภ์ใช้ penicillin เท่านั้นและต้อง desensitize ถ้าแพ้ ติดตาม RPR ให้ลด 4 เท่า รักษาคู่นอนใน 90 วันทันที และตรวจ HIV ทุกราย",
+   "minutes": 10,
+   "source": "บรรยาย (ไม่ได้ระบุชื่ออาจารย์ในบันทึก) — Genital ulcer และ syphilis (อ. 10 พ.ย. 2569, บันทึกเสียง)",
+   "nl": [
+    "2.3.1(19)",
+    "2.3.16-3(1)",
+    "B10.2.2-3(1)",
+    "2.3.15-3(11)",
+    "3.3.16",
+    "3.3.15",
+    "B1.4.11(1)"
+   ],
+   "md": "### หญิงตั้งครรภ์ — **อาจารย์: ข้อสอบชอบถาม \"หญิงตั้งครรภ์ VDRL บวก ทำอย่างไร\" (ออกสอบ)**\n- RPR/VDRL เป็นหนึ่งในแล็บคัดกรองตอนฝากครรภ์ (คู่กับ anti-HIV, HBsAg) · บวกแล้วรักษาด้วย **penicillin** และอาจารย์สรุปว่า **สูตรตามระยะเหมือนคนไม่ตั้งครรภ์**\n- ไทยคัดกรอง **ตอนฝากครรภ์ครั้งแรกและซ้ำที่อายุครรภ์ 28–32 สัปดาห์** (ตรวจคู่ด้วย) · CDC: ครั้งแรกทุกราย + ซ้ำที่ 28 สัปดาห์และตอนคลอดในพื้นที่ความชุกสูงหรือผู้มีความเสี่ยง · ทารกตายคลอดหลัง 20 สัปดาห์ต้องตรวจแม่\n\n> **อัปเดตแนวทาง ·** อาจารย์บอกว่าทางเลือกการรักษาในหญิงตั้งครรภ์ \"เหมือนไม่ตั้งครรภ์\" — ถูกเฉพาะสูตร **penicillin ตามระยะ** แต่ **ทางเลือกสำหรับคนแพ้ใช้ไม่ได้**: **CDC 2021 คู่มือไทย และ WHO 2024** ระบุว่า **penicillin เป็นยาเดียวที่ป้องกัน congenital syphilis ได้** · **ห้าม doxycycline/tetracycline** · erythromycin และ azithromycin ไม่ผ่านรกพอ · ceftriaxone ข้อมูลไม่พอ → **แพ้ penicillin ต้อง desensitize แล้วให้ penicillin** · early syphilis อาจให้ **BPG เข็มที่สองห่าง 1 สัปดาห์** · late latent ถ้าเลื่อนนัดเกิน 9 วันต้องเริ่มใหม่ทั้งชุด\n\n- **JH reaction** ในครึ่งหลังของการตั้งครรภ์ → เจ็บครรภ์ก่อนกำหนด fetal distress → แนะนำให้มาโรงพยาบาลถ้ามีไข้ มดลูกหดรัดตัว หรือลูกดิ้นน้อย แต่ **ไม่เลื่อนการรักษา**\n- วินิจฉัยหลัง 20 สัปดาห์ → **ultrasound ทารก** (ตับโต ascites hydrops รกหนา = เสี่ยงรักษาล้มเหลว) แต่ไม่เลื่อนการรักษา\n- ติดตาม titre: รักษาที่ ≤ 24 สัปดาห์ → ตรวจซ้ำไม่เร็วกว่า 8 สัปดาห์ และตอนคลอด · **คลอดภายใน 30 วันหลังรักษา = ถือว่ารักษาแม่ไม่เพียงพอ** ต้องประเมินทารกเต็มที่\n- คู่มือไทย — การรักษาในหญิงตั้งครรภ์ **ล้มเหลว**: อาการไม่ดีขึ้นหรือกลับเป็นซ้ำ · titre **เพิ่ม 4 เท่าขึ้นไป** · หรือ titre **ลดน้อยกว่า 4 เท่า หรือยัง ≥ 1:8 หลังรักษาอย่างน้อย 6 เดือน**\n\n### Congenital syphilis (ข้อมูลเสริม)\n- **Early** (ก่อน 2 ขวบ ส่วนใหญ่ใน 5 สัปดาห์แรก): น้ำมูกเรื้อรัง (snuffles) ตับม้ามโต ผื่นลอกที่ฝ่ามือฝ่าเท้า osteochondritis คลอดก่อนกำหนด\n- **Late** (หลัง 2 ขวบ): Hutchinson teeth · จมูกยุบ (saddle nose) · interstitial keratitis · หูหนวกจากเส้นประสาทที่ 8 · saber shin\n- รักษาทารก: **aqueous penicillin G 50,000 ยูนิต/กก./ครั้ง IV ทุก 12 ชม. (อายุ 1–7 วัน) แล้วทุก 8 ชม. (อายุเกิน 7 วัน) รวม 10 วัน** (คู่มือไทย)\n\n### ติดตามหลังรักษา — ใช้ RPR/VDRL แบบมี titre วิธีเดิม\n| กลุ่ม | ตรวจซ้ำ | ตอบสนองพอ |\n|---|---|---|\n| Primary/secondary | **6 และ 12 เดือน** | titre ลด **4 เท่า (2 dilution) ภายใน 12 เดือน** |\n| Latent | **6, 12 และ 24 เดือน** | titre เริ่มต้นสูง (มากกว่า 1:32) ควรลด 4 เท่าภายใน 24 เดือน |\n| ผู้ติด HIV (primary/secondary) | **3, 6, 9, 12 และ 24 เดือน** | เกณฑ์เดียวกัน |\n- **titre เพิ่ม 4 เท่าค้างเกิน 2 สัปดาห์ หรืออาการกลับมา** → ติดซ้ำหรือรักษาล้มเหลว → ตรวจ HIV ประเมินระบบประสาท ± CSF แล้วรักษาซ้ำ\n- **ลดไม่ถึง 4 เท่า** (ราว 10–20% ของผู้รักษา primary/secondary) → ติดตามเพิ่ม ตรวจ HIV · ถ้าติดตามไม่ได้ให้ BPG สัปดาห์ละครั้ง × 3 และพิจารณา CSF\n- **อย่าใช้ TT ที่ยังบวกมาสรุปว่ารักษาไม่หาย** (อาจารย์เน้น)\n\n### คู่นอน (CDC 2021)\n- คู่นอนที่สัมผัส **ภายใน 90 วัน** ก่อนวินิจฉัย primary/secondary/early latent → **รักษาแบบ early syphilis ทันทีแม้ผลเลือดลบ** (อาจอยู่ในระยะฟักตัว)\n- สัมผัส **เกิน 90 วัน** → ตรวจ serology ถ้าได้ผลไม่ทันหรือติดตามยาก ให้รักษาไปเลย\n- ช่วงเวลาที่ต้องตามคู่: primary = **3 เดือน + ระยะที่มีอาการ** · secondary = **6 เดือน + ระยะที่มีอาการ** · early latent = **1 ปี**\n- คู่มือไทย: early syphilis ติดตามและรักษาคู่เพศสัมพันธ์ **แม้ไม่มีอาการและผลเลือดลบ** · late ให้รักษาคู่ถ้าผลเลือดผิดปกติ\n\n### HIV และการป้องกัน\n- **ตรวจ HIV ทุกราย** ที่เป็นซิฟิลิสหรือแผลอวัยวะเพศ · ผลลบในกลุ่มเสี่ยงสูง → เสนอ **PrEP** และตรวจซ้ำที่ 3 เดือน\n\n> **อัปเดตแนวทาง ·** มาตรการป้องกันที่อาจารย์ไม่ได้พูดถึง — **CDC 2024 doxy-PEP**: MSM และหญิงข้ามเพศที่เคยเป็น **ซิฟิลิส หนองใน หรือ chlamydia ใน 12 เดือนที่ผ่านมา** ให้คำปรึกษาและเสนอ **doxycycline 200 mg ครั้งเดียวภายใน 72 ชั่วโมงหลังมีเพศสัมพันธ์ที่ไม่ใช้ถุงยาง** (ไม่เกิน 200 mg ใน 24 ชม.) และตรวจ STI ทุก 3–6 เดือน · ยังไม่แนะนำในหญิงตามเพศกำเนิดเพราะหลักฐานไม่พอ · WHO 2024 แนะนำ **partner services** และ syphilis self-testing เป็นทางเลือกเพิ่ม\n",
+   "pearls": [
+    "ตั้งครรภ์: penicillin เท่านั้น · แพ้ → desensitize · ห้าม doxycycline (ออกสอบ)",
+    "ไทยคัดกรองฝากครรภ์ครั้งแรก + 28–32 สัปดาห์ ด้วย reverse algorithm",
+    "P/S: RPR ที่ 6 และ 12 เดือน ต้องลด 4 เท่าใน 12 เดือน · HIV ตรวจถี่กว่า",
+    "คู่นอนใน 90 วัน → BPG ทันทีแม้ผลลบ",
+    "ตรวจ HIV ทุกราย · doxy-PEP 200 mg ใน 72 ชม. สำหรับ MSM/TGW ที่เคยเป็น STI (CDC 2024)"
+   ],
+   "items": [
+    {
+     "id": "ID-GUS-MCQ-29",
+     "kind": "mcq",
+     "topic": "Missed benzathine dose in pregnancy",
+     "stem": "A 26-year-old woman at 22 weeks of gestation has latent syphilis of unknown duration and is receiving benzathine penicillin G 2.4 million units weekly. She received the first dose, then returns 11 days later for the second dose. What should be done?",
+     "choices": [
+      "Give the second dose now and the third dose 7 days later",
+      "Give the remaining two doses together today",
+      "Restart the full 3-dose series",
+      "Switch to doxycycline 100 mg twice daily for 28 days",
+      "Stop treatment, since one dose is adequate in pregnancy"
+     ],
+     "answer": 2,
+     "explain": "CDC 2021: ในหญิงตั้งครรภ์ **ระยะห่างระหว่างเข็มเกิน 9 วันยอมรับไม่ได้ ต้องเริ่มชุดใหม่ทั้งหมด** (คนไม่ตั้งครรภ์ยืดได้ถึง 10–14 วัน) เพราะต้องคงระดับ penicillin ต่อเนื่องเพื่อป้องกัน congenital syphilis\n\nห้ามรวมเข็ม · **doxycycline ห้ามใช้ในหญิงตั้งครรภ์** · late latent/ไม่ทราบระยะต้องได้ครบสามเข็ม",
+     "pearl": "ตั้งครรภ์ ห่างเกิน 9 วัน = เริ่มใหม่",
+     "src": "",
+     "ref": [
+      "CDC STI Treatment Guidelines 2021 — Syphilis during pregnancy",
+      "CDC STI Treatment Guidelines 2021 — Latent syphilis"
+     ],
+     "nl": [
+      "2.3.16-3(1)",
+      "2.3.15-3(11)",
+      "B1.7.2"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-30",
+     "kind": "mcq",
+     "topic": "Management of sex partners",
+     "stem": "A 35-year-old man is diagnosed with primary syphilis. His female partner, with whom he had sex 4 weeks ago, has no symptoms and a nonreactive RPR and treponemal test today. What is the most appropriate management for her?",
+     "choices": [
+      "Reassure her; no treatment is needed",
+      "Repeat serology in 3 months and treat only if it becomes reactive",
+      "Doxycycline 100 mg orally twice daily for 7 days",
+      "Treat only if she develops a genital ulcer or rash",
+      "Benzathine penicillin G 2.4 million units IM once now"
+     ],
+     "answer": 4,
+     "explain": "คู่นอนที่สัมผัส **ภายใน 90 วัน** ก่อนผู้ป่วยได้รับการวินิจฉัย primary/secondary/early latent → **รักษาแบบ early syphilis ทันที (BPG 2.4 MU IM ครั้งเดียว) แม้ serology ลบ** เพราะอาจอยู่ในระยะฟักตัวที่ยังไม่มี antibody (CDC 2021 · คู่มือไทยก็ให้รักษาคู่แม้ผลเลือดลบ)\n\nการรอดูผลซ้ำหรือรอให้มีอาการเสี่ยงต่อการแพร่เชื้อและ congenital syphilis · doxycycline 7 วันเป็นสูตร chlamydia",
+     "pearl": "คู่นอนใน 90 วัน = BPG ทันทีแม้ผลลบ",
+     "src": "",
+     "ref": [
+      "CDC STI Treatment Guidelines 2021 — Syphilis, management of sex partners",
+      "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)"
+     ],
+     "nl": [
+      "2.3.1(19)",
+      "B10.2.2(1)"
+     ]
+    },
+    {
+     "id": "ID-GUS-MCQ-31",
+     "kind": "mcq",
+     "topic": "Inadequate serologic response",
+     "stem": "A 33-year-old HIV-negative man was treated with benzathine penicillin G 2.4 million units for secondary syphilis. His pretreatment RPR was 1:64. At 12 months the RPR is 1:32. He has no symptoms and denies new exposures. How should this be interpreted and managed?",
+     "choices": [
+      "Adequate response; no further follow-up is needed",
+      "Inadequate serologic response; re-evaluate including HIV testing and a neurologic examination (with CSF evaluation if indicated), and consider retreatment with benzathine penicillin weekly for 3 weeks",
+      "Serofast state that never requires further evaluation",
+      "Reinfection; give a single dose of benzathine penicillin",
+      "Switch monitoring to TPHA titres"
+     ],
+     "answer": 1,
+     "explain": "Primary/secondary ต้องมี titre **ลด 4 เท่า (2 dilution) ภายใน 12 เดือน** · 1:64 → 1:32 ลดแค่ 2 เท่า = **inadequate serologic response / อาจรักษาล้มเหลว** → ประเมินซ้ำ: **ตรวจ HIV ตรวจระบบประสาท (± CSF)** และพิจารณารักษาซ้ำด้วย **BPG สัปดาห์ละครั้ง × 3** โดยเฉพาะถ้าติดตามต่อไม่ได้\n\nSerofast ใช้เมื่อ titre ลดลงตามเกณฑ์แล้วค้างที่ต่ำคงที่ · reinfection ต้องมี titre **เพิ่ม** 4 เท่า · TT ใช้ติดตามไม่ได้",
+     "pearl": "P/S ลดไม่ถึง 4 เท่าใน 12 เดือน = ประเมินใหม่",
+     "src": "",
+     "ref": [
+      "CDC STI Treatment Guidelines 2021 — Primary and secondary syphilis, follow-up",
+      "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — ติดตาม VDRL/RPR"
+     ],
+     "nl": [
+      "3.3.16",
+      "2.3.1(19)"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "ID-GUS-MEQ-01",
+   "part": "MEQ",
+   "lec": "10/11",
+   "lecture": "Genital ulcer และ syphilis (บันทึกเสียง อ. 10 พ.ย. — ไม่ระบุชื่ออาจารย์)",
+   "topic": "Secondary syphilis with ocular involvement in a man who has sex with men — serology, LP decision, treatment, follow-up and partners",
+   "vignette": "ผู้ป่วยชายไทยอายุ 28 ปี อาชีพพนักงานออฟฟิศ มาด้วยผื่นตามตัวและตาขวามัว 2 สัปดาห์\nPI: 2 เดือนก่อนมีแผลที่ขอบทวารหนัก ไม่เจ็บ หายเองใน 3 สัปดาห์ · 3 สัปดาห์ก่อนมีผื่นแดงน้ำตาลไม่คันที่ลำตัว ฝ่ามือ และฝ่าเท้า ผมร่วงเป็นหย่อม · 2 สัปดาห์ก่อนตาขวาแดง มัว เห็นจุดลอย\nPH: มีเพศสัมพันธ์กับชาย คู่นอนหลายคนใน 6 เดือน ใช้ถุงยางไม่สม่ำเสมอ · ไม่เคยตรวจ HIV · ไม่มีประวัติแพ้ยา\nPE: BT 37.6 C · papulosquamous rash ที่ลำตัว ฝ่ามือ ฝ่าเท้า · ต่อมน้ำเหลืองโตทั่วตัว กดไม่เจ็บ · patchy alopecia · ตาขวา visual acuity 20/80 จักษุแพทย์ตรวจพบ panuveitis · cranial nerve และตรวจระบบประสาทอื่นปกติ ไม่มี meningism\nLab: RPR reactive 1:128 · TPPA reactive · anti-HIV (A1) reactive รอ A2/A3",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยที่สมบูรณ์ที่สุด และบอกเหตุผลจากประวัติและตรวจร่างกาย (3 คะแนน)",
+     "a": "**Secondary syphilis ร่วมกับ ocular syphilis (panuveitis)** · สงสัย **HIV ร่วม**\nเหตุผล: แผลไม่เจ็บที่ขอบทวารซึ่งหายเอง = **chancre** (ใน MSM มักอยู่รอบทวารจึงไม่ทันสังเกต) · 4–10 สัปดาห์ต่อมามี **ผื่น papulosquamous ไม่คันรวมฝ่ามือฝ่าเท้า + ต่อมน้ำเหลืองโตทั่วตัวไม่เจ็บ + ผมร่วงเป็นหย่อม** = secondary · ตาแดงมัวจาก panuveitis = **ocular syphilis ซึ่งเกิดได้ทุกระยะ** · RPR titre สูง + TPPA บวก ยืนยัน"
+    },
+    {
+     "q": "2. จงแปลผล RPR และ TPPA ของผู้ป่วยรายนี้ และบอกว่าจะใช้การตรวจใดติดตามผลการรักษา (2 คะแนน)",
+     "a": "- **RPR (non-treponemal)** วัด antibody ต่อ cardiolipin ที่หลุดจากเซลล์ถูกทำลาย → **titre 1:128 บอกว่าโรค active**\n- **TPPA (treponemal)** วัด antibody ต่อตัวเชื้อ → **ยืนยันว่าเป็นซิฟิลิสจริง ไม่ใช่ biologic false positive** แต่จะบวกตลอดชีวิต\n- **ติดตามด้วย RPR แบบ titre วิธีเดิมทุกครั้ง** (VDRL กับ RPR เทียบ titre กันไม่ได้) · TPPA ใช้ติดตามไม่ได้"
+    },
+    {
+     "q": "3. ผู้ป่วยรายนี้จำเป็นต้องเจาะน้ำไขสันหลังก่อนรักษาหรือไม่ เพราะเหตุใด (2 คะแนน)",
+     "a": "**ไม่จำเป็นต้องเจาะก่อนรักษา** (CDC 2021): ocular syphilis ที่จักษุแพทย์พบรอยโรคชัดและ **cranial nerve กับการตรวจระบบประสาทปกติ** ไม่ต้องตรวจ CSF ก่อน และ **ต้องรักษาแบบ neurosyphilis แม้ CSF ปกติ** — ไม่ควรรอผล CSF\nเจาะเมื่อ: มี cranial nerve dysfunction, meningitis, stroke, สับสน หรือรักษาแล้ว titre ไม่ลดร่วมกับอาการทางประสาท · (otosyphilis อย่างเดียวก็ไม่ต้องเจาะ)"
+    },
+    {
+     "q": "4. จงเขียนการรักษาซิฟิลิสของผู้ป่วยรายนี้ พร้อมขนาดยา ระยะเวลา และสิ่งที่ต้องบอกผู้ป่วยหลังเริ่มยา (4 คะแนน)",
+     "a": "- **Aqueous crystalline penicillin G 18–24 ล้านยูนิต/วัน IV** = **3–4 ล้านยูนิตทุก 4 ชั่วโมง** (หรือหยดต่อเนื่อง) **10–14 วัน** — ไม่ใช้ benzathine เดี่ยว เพราะไม่ได้ระดับยาใน CSF/น้ำในลูกตา\n- ทางเลือกถ้ามั่นใจว่ามาฉีดครบ: procaine penicillin 2.4 MU IM วันละครั้ง + probenecid 500 mg qid 10–14 วัน\n- พิจารณา BPG 2.4 MU IM สัปดาห์ละครั้ง 1–3 ครั้งหลังครบคอร์ส\n- ดูแลร่วมกับจักษุแพทย์ (steroid เสริมใช้บ่อยแต่ไม่พิสูจน์)\n- **เตือน Jarisch–Herxheimer reaction**: ไข้ หนาวสั่น ปวดเมื่อยภายใน 24 ชม. พบบ่อยใน secondary — **ไม่ใช่แพ้ยา** ให้ยาลดไข้และรักษาต่อ"
+    },
+    {
+     "q": "5. ถ้าผล anti-HIV ยืนยันว่าติดเชื้อ จะเปลี่ยนแผนการรักษาและติดตามซิฟิลิสอย่างไร (2 คะแนน)",
+     "a": "- **สูตรยาซิฟิลิสเหมือนผู้ไม่ติด HIV** ไม่ต้องเพิ่มขนาด\n- **ติดตามถี่ขึ้น**: RPR ที่ **3, 6, 9, 12 และ 24 เดือน** · หลัง neurosyphilis/ocular syphilis ถ้า RPR ในเลือดกลับปกติไม่ต้องเจาะ CSF ซ้ำ\n- เกณฑ์ CSF ผิดปกติในผู้ติด HIV ใช้เม็ดเลือดขาวมากกว่า 20 · ส่งต่อเริ่ม ART เร็ว"
+    },
+    {
+     "q": "6. จงบอกการจัดการคู่นอนและการป้องกันการติดซ้ำ (2 คะแนน)",
+     "a": "- คู่นอนที่สัมผัส **ภายใน 90 วัน** → ให้ **BPG 2.4 MU IM ครั้งเดียวทันทีแม้ผลเลือดลบ** · เกิน 90 วันตรวจก่อน (ถ้าติดตามยากให้รักษาไปเลย)\n- secondary syphilis ต้องตามคู่ย้อนหลัง **6 เดือน + ระยะที่มีอาการ**\n- ตรวจ STI อื่น (หนองใน chlamydia ทุกตำแหน่งที่สัมผัส) · ถุงยาง\n- **Doxy-PEP (CDC 2024)**: MSM ที่เคยเป็นซิฟิลิสใน 12 เดือน เสนอ doxycycline 200 mg ภายใน 72 ชม. หลังเพศสัมพันธ์ที่ไม่ใช้ถุงยาง"
+    }
+   ],
+   "ref": [
+    "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — ระยะของซิฟิลิส serology และการรักษา neuro/ocular/otic syphilis",
+    "CDC STI Treatment Guidelines 2021 — Syphilis; Neurosyphilis, ocular syphilis, and otosyphilis",
+    "CDC Doxy-PEP guidelines 2024"
+   ],
+   "nl": [
+    "2.3.1(19)",
+    "2.3.7-3(8)",
+    "3.3.16",
+    "3.3.15",
+    "2.3.1(9)"
+   ],
+   "years": [],
+   "_kind": "meq",
+   "_set": "id"
+  },
+  {
+   "id": "ID-GUS-MEQ-02",
+   "part": "MEQ",
+   "lec": "10/11",
+   "lecture": "Genital ulcer และ syphilis (บันทึกเสียง อ. 10 พ.ย. — ไม่ระบุชื่ออาจารย์)",
+   "topic": "Syphilis detected at antenatal screening in a woman reporting penicillin allergy",
+   "vignette": "หญิงไทยอายุ 24 ปี G1P0 อายุครรภ์ 14 สัปดาห์ มาฝากครรภ์ครั้งแรก ไม่มีอาการผิดปกติ\nPH: ไม่เคยตรวจเลือดมาก่อน จำไม่ได้ว่าเคยมีแผลหรือผื่น · ให้ประวัติว่าเด็ก ๆ เคยกิน amoxicillin แล้วมีผื่นลมพิษทั้งตัวและหายใจไม่สะดวก ต้องไปโรงพยาบาล\nPE: ไม่พบแผลที่อวัยวะเพศ ไม่มีผื่น ไม่มีต่อมน้ำเหลืองโต ตรวจระบบประสาทและตาปกติ\nLab (ตรวจคัดกรองฝากครรภ์ตามลำดับขั้นของโรงพยาบาล): treponemal CLIA reactive → RPR reactive 1:16 · anti-HIV negative · HBsAg negative",
+   "questions": [
+    {
+     "q": "1. จงแปลผลการตรวจ และบอกระยะของโรคที่ใช้ในการรักษา พร้อมเหตุผล (3 คะแนน)",
+     "a": "- ลำดับนี้คือ **reverse algorithm** (เริ่มด้วย treponemal test) ซึ่ง **คู่มือกรมควบคุมโรคกำหนดให้ใช้คัดกรองหญิงตั้งครรภ์** · CLIA บวก + RPR บวก 1:16 = **ซิฟิลิส active**\n- ไม่มีอาการ = **latent** · ไม่เคยตรวจมาก่อนและจำแผลหรือผื่นไม่ได้ → **latent syphilis of unknown duration → รักษาแบบ late latent** (อาจารย์เน้น)"
+    },
+    {
+     "q": "2. จงบอกการรักษาที่เหมาะสม เมื่อผู้ป่วยให้ประวัติแพ้ penicillin แบบนี้ (4 คะแนน)",
+     "a": "- **หญิงตั้งครรภ์ใช้ penicillin เท่านั้น** — เป็นยาเดียวที่ป้องกัน congenital syphilis ได้ · **ห้าม doxycycline/tetracycline** · erythromycin/azithromycin ผ่านรกไม่พอ · ceftriaxone ข้อมูลไม่พอ\n- ประวัติลมพิษร่วมกับหายใจไม่สะดวก = เสี่ยง IgE-mediated → ส่งประเมิน (skin test ถ้าทำได้) แล้ว **penicillin desensitization** ในโรงพยาบาลที่พร้อมรับมือ anaphylaxis\n- จากนั้นให้ **benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละครั้ง × 3 ครั้ง** (แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต)\n- (หมายเหตุ: ข้อสอบมักถามว่า \"ทางเลือกเหมือนคนไม่ตั้งครรภ์\" — ถูกเฉพาะสูตร penicillin ไม่ใช่ยาทางเลือก)"
+    },
+    {
+     "q": "3. หลังเข็มแรก ผู้ป่วยกลับมาฉีดเข็มที่สองช้าไป 12 วันนับจากเข็มแรก จะทำอย่างไร (1 คะแนน)",
+     "a": "หญิงตั้งครรภ์ **ระยะห่างเกิน 9 วันยอมรับไม่ได้ → เริ่มชุด 3 เข็มใหม่ทั้งหมด** (CDC 2021) · ควรโทรตามและนัดภายใน 2 วันถ้าพลาดนัดวันที่ 7"
+    },
+    {
+     "q": "4. จงบอกสิ่งที่ต้องเฝ้าระวังหลังฉีดยาและการติดตามระหว่างตั้งครรภ์ (3 คะแนน)",
+     "a": "- **Jarisch–Herxheimer reaction** ภายใน 24 ชม. (ไข้ ปวดเมื่อย) · ในครึ่งหลังของการตั้งครรภ์อาจทำให้ **มดลูกหดรัดตัว เจ็บครรภ์ก่อนกำหนด หรือ fetal distress** → ให้มาโรงพยาบาลถ้ามีไข้ ท้องแข็ง หรือลูกดิ้นน้อย แต่ไม่เลื่อนการรักษา\n- **RPR titre วิธีเดิม**: รักษาที่ ≤ 24 สัปดาห์ → ตรวจซ้ำไม่เร็วกว่า 8 สัปดาห์หลังรักษาและตอนคลอด\n- ล้มเหลว (คู่มือไทย): titre เพิ่ม ≥ 4 เท่า · หรือลดน้อยกว่า 4 เท่า หรือยัง ≥ 1:8 หลัง 6 เดือน · อาการกลับมา\n- **ultrasound ทารก** ถ้าวินิจฉัยหลัง 20 สัปดาห์ · ตรวจคัดกรองซ้ำที่อายุครรภ์ 28–32 สัปดาห์ (ติดซ้ำได้จากคู่)"
+    },
+    {
+     "q": "5. จงบอกการดูแลสามีและการวางแผนสำหรับทารกแรกเกิด (3 คะแนน)",
+     "a": "- **สามี/คู่นอน** ตรวจ serology และรักษาตามผล (ซิฟิลิสไม่ทราบระยะของภรรยา → ประเมินคู่ระยะยาว · ถ้าผลบวกรักษาตามระยะ) · ตรวจ HIV และ STI อื่น — ถ้าไม่รักษาคู่ ภรรยาจะติดซ้ำระหว่างตั้งครรภ์\n- **ทารก**: แจ้งกุมารแพทย์ ตรวจ RPR ทารกเทียบกับแม่ (วิธีเดียวกัน) ตรวจร่างกายหาอาการ congenital syphilis (ตับม้ามโต ผื่นลอก snuffles) · ถ้าแม่รักษาไม่เพียงพอ (เช่น คลอดภายใน 30 วันหลังรักษา) ต้องประเมินเต็มที่และรักษาด้วย **aqueous penicillin G 50,000 ยูนิต/กก. IV ทุก 12 ชม. (อายุ ≤ 7 วัน) แล้วทุก 8 ชม. รวม 10 วัน**"
+    }
+   ],
+   "ref": [
+    "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — ซิฟิลิสในหญิงตั้งครรภ์ (อาจารย์: ข้อสอบชอบถาม)",
+    "CDC STI Treatment Guidelines 2021 — Syphilis during pregnancy; Latent syphilis",
+    "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)"
+   ],
+   "nl": [
+    "2.3.1(19)",
+    "2.3.16-3(1)",
+    "2.3.15-3(11)",
+    "B1.4.11(1)",
+    "3.3.16"
+   ],
+   "years": [],
+   "_kind": "meq",
+   "_set": "id"
+  }
+ ],
+ "osce": [
+  {
+   "id": "ID-GUS-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "10/11",
+   "lecture": "Genital ulcer และ syphilis (บันทึกเสียง อ. 10 พ.ย. — ไม่ระบุชื่ออาจารย์)",
+   "topic": "SAQ – Interpreting syphilis serology in five patients",
+   "station": "SAQ (แปลผลการตรวจทางห้องปฏิบัติการ) 5 นาที",
+   "instruction": "จงแปลผลการตรวจซิฟิลิสของผู้ป่วย 5 รายต่อไปนี้ และบอกสิ่งที่ควรทำต่อ\n\n| ราย | ข้อมูลทางคลินิก | RPR | TPPA |\n|---|---|---|---|\n| A | หญิง 30 ปี เป็น SLE ไม่มีอาการ | reactive 1:2 | nonreactive |\n| B | ชาย 40 ปี รักษาซิฟิลิสครบเมื่อ 5 ปีก่อน มีเอกสาร | nonreactive | reactive |\n| C | ชาย 22 ปี แผลไม่เจ็บที่องคชาต 4 วัน | nonreactive | nonreactive |\n| D | หญิง 25 ปี ผื่นทั่วตัวรวมฝ่ามือ ผมร่วงหย่อม | nonreactive (ไม่เจือจาง) | reactive |\n| E | ชาย 35 ปี ไม่มีอาการ ไม่เคยตรวจและไม่เคยรักษา | reactive 1:8 | reactive |\n\n**เขียนคำตอบเป็นข้อ ๆ ทีละราย**",
+   "answer": "**เกณฑ์ให้คะแนน (10 คะแนน)**\n\n| ราย | คำตอบที่ต้องได้ | คะแนน |\n|---|---|---|\n| A | **Biologic false positive** ของ non-treponemal test (cardiolipin ไม่จำเพาะ — SLE, autoimmune, malaria, leptospirosis, ตั้งครรภ์) · ไม่ต้องรักษาซิฟิลิส | 2 |\n| B | **เคยติดเชื้อและรักษาแล้ว** — treponemal test บวกตลอดชีวิต · ไม่ต้องรักษาซ้ำถ้าไม่มีอาการหรือความเสี่ยงใหม่ | 2 |\n| C | **ยังสรุปว่าไม่เป็นไม่ได้** — chancre ขึ้นก่อน serology บวก · ตรวจจากแผล (darkfield หรือ PCR) ตรวจ HSV NAAT · เจาะซ้ำ 2–4 สัปดาห์ หรือรักษา presumptive ถ้าความเสี่ยงสูง · ตรวจ HIV | 2 |\n| D | **สงสัย prozone phenomenon** ใน secondary syphilis → ขอให้ห้องปฏิบัติการ **เจือจาง serum (เช่น 1:16) แล้วตรวจ RPR ใหม่** · รักษาด้วย BPG 2.4 MU IM ครั้งเดียว | 2 |\n| E | **Latent syphilis ไม่ทราบระยะ** → รักษาแบบ late latent: **BPG 2.4 MU IM สัปดาห์ละครั้ง × 3** · ตรวจ HIV · ประเมินคู่ · ติดตาม RPR ที่ 6, 12, 24 เดือน | 2 |\n\n**ข้อที่ทำให้เสียคะแนน**: ใช้ TPPA ติดตามผลการรักษา · รักษาราย A หรือ B ด้วย penicillin โดยไม่จำเป็น · บอกว่าราย C ไม่เป็นซิฟิลิสแน่นอน · ให้ BPG ครั้งเดียวในราย E",
+   "ref": [
+    "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — non-treponemal กับ treponemal test",
+    "CDC STI Treatment Guidelines 2021 — Syphilis, diagnostic considerations",
+    "กรมควบคุมโรค — คู่มือการตรวจวินิจฉัยและติดตามการรักษาโรคซิฟิลิสทางห้องปฏิบัติการ (2564)"
+   ],
+   "nl": [
+    "3.3.16",
+    "B10.3(8)",
+    "B1.5.1(8)",
+    "2.3.1(19)"
+   ],
+   "years": [],
+   "_kind": "meq",
+   "_set": "id"
+  },
+  {
+   "id": "ID-GUS-OSCE-02",
+   "part": "OSCE/SAQ",
+   "lec": "10/11",
+   "lecture": "Genital ulcer และ syphilis (บันทึกเสียง อ. 10 พ.ย. — ไม่ระบุชื่ออาจารย์)",
+   "topic": "OSCE – Counselling a patient newly diagnosed with primary syphilis",
+   "station": "OSCE (ให้คำปรึกษาผู้ป่วยมาตรฐาน) 5 นาที",
+   "instruction": "ชายอายุ 27 ปี มีแผลไม่เจ็บที่องคชาต 1 สัปดาห์ ผล darkfield พบ spirochete · RPR reactive 1:16 · TPHA reactive · ไม่มีประวัติแพ้ยา\n\nแพทย์วินิจฉัย **primary syphilis** ผู้ป่วยถามว่า \"ต้องกินยานานไหม แฟนต้องรู้ไหม แล้วจะหายขาดหรือเปล่า\"\n\n**จงอธิบายโรค การรักษา และให้คำแนะนำผู้ป่วยภายใน 5 นาที**",
+   "answer": "**เกณฑ์ให้คะแนน (10 คะแนน)**\n\n| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n| 1 | แนะนำตัว ยืนยันตัวผู้ป่วย ใช้ห้องที่เป็นส่วนตัว ไม่ตัดสินพฤติกรรม | 1 |\n| 2 | อธิบายว่าเป็น **ซิฟิลิสระยะแรก** ติดต่อทางเพศสัมพันธ์ · **แผลหายเองได้แต่โรคไม่หาย** ถ้าไม่รักษาจะเข้าระยะที่ 2 และทำลายระบบประสาท ตา หัวใจได้ · **รักษาหายได้** | 2 |\n| 3 | การรักษา: **benzathine penicillin G 2.4 ล้านยูนิต ฉีดเข้ากล้ามครั้งเดียว** (แบ่งสะโพกสองข้าง) ไม่ต้องกินยาต่อ | 1 |\n| 4 | เตือน **Jarisch–Herxheimer reaction** — ไข้ หนาวสั่น ปวดเมื่อยใน 24 ชม. หลังฉีด ไม่ใช่แพ้ยา กินยาลดไข้ได้ ถ้าหายใจลำบากหรือผื่นลมพิษให้กลับมาทันที | 1 |\n| 5 | **คู่นอนต้องรู้และมารักษา** — คู่นอนใน **90 วัน** ได้ยาฉีดทันทีแม้ผลเลือดปกติ · ตามคู่ย้อนหลัง 3 เดือน + ระยะที่มีแผล · เสนอวิธีแจ้งคู่ (แจ้งเอง หรือให้เจ้าหน้าที่ช่วยโดยไม่เปิดเผยชื่อ) | 2 |\n| 6 | **งดเพศสัมพันธ์** จนรักษาครบและแผลหาย และจนคู่ได้รับการรักษา · ใช้ถุงยางทุกครั้ง | 1 |\n| 7 | ตรวจ **HIV** และ STI อื่นวันนี้ · เสนอ PrEP ถ้าผลลบและเสี่ยงสูง | 1 |\n| 8 | นัด **ติดตาม RPR ที่ 6 และ 12 เดือน** — ต้องลด 4 เท่า · TPHA จะบวกตลอดไปไม่ได้แปลว่าไม่หาย · ติดซ้ำได้ ไม่มีภูมิคุ้มกัน · เปิดโอกาสถาม | 1 |\n\n**ข้อที่ทำให้เสียคะแนน**: บอกว่าแผลหายแล้วไม่ต้องรักษา · บอกให้คู่รอดูอาการก่อน · ไม่พูดถึง HIV · ใช้คำตำหนิ · เปิดเผยข้อมูลผู้ป่วยกับคู่โดยไม่ได้รับอนุญาต",
+   "ref": [
+    "บรรยาย 10 พ.ย. 2569 (บันทึกเสียง) — การรักษาซิฟิลิสระยะแรก",
+    "CDC STI Treatment Guidelines 2021 — Syphilis, management of sex partners; Primary and secondary syphilis"
+   ],
+   "nl": [
+    "2.3.1(19)",
+    "B10.2.2(1)",
+    "3.3.15"
+   ],
+   "years": [],
+   "_kind": "meq",
+   "_set": "id"
+  }
+ ]
+}

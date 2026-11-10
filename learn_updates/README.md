@@ -60,3 +60,10 @@
 - 9 พ.ย. v68: ปุ่มย่อ/ขยายขนาดเนื้อหา (`.tr-fz`, 80–150%, คีย์ - / =, localStorage `med421-learn-fz`) ตามคอมเมนต์ใน artifact · ทดสอบ `tr/test_fz.js`
 - 9 พ.ย. v69: ปุ่มซ่อนแถบซ้าย/ขวาบนคอม (`html.tr-noside/.tr-nodock`, ปุ่มคืนเป็นแถบแคบขอบจอ, คีย์ [ ], localStorage `med421-learn-panes`) · ทดสอบ `tr/test_pane.js`
 - 9 พ.ย. v71: ปุ่ม "กดว่าเรียนจบคาบนี้" (`markLec`, ใช้ state.done เดิม) — สร้างต่อจาก v70 ของอีก session (วงล้อไล่หัวข้อในคาบ) · tr.js/tr.css ในโฟลเดอร์นี้ยังเป็นของ v69 ให้ใช้ index_v71.html เป็นฐาน
+
+## 10 พ.ย. — คาบ Heart failure (Cardio · lec "HF") + Genital ulcer/syphilis (ID · lec "10/11") · learn `1794327696-f219`
+- ที่มา: สไลด์ `Intro to HF for MD 4th yr 11_2026.pdf` (Drive, อ.Chatchai Pitakrattanachai) · บันทึกเสียง Plaud 10 พ.ย. (ไม่ได้ระบุชื่ออาจารย์)
+- ตรวจกับแนวทางปัจจุบัน: 2026 ESC HF guideline (28 ส.ค. 2026) · AHA/ACC/HFSA 2022 · HFCT · CDC STI 2021/2024 · WHO 2024 · คู่มือกรมควบคุมโรค — จุดที่ต่างจากสไลด์/คำบรรยายอยู่ในกล่อง "อัปเดตแนวทาง ·"
+- `hf_syphilis/build_hf.py` → `cardio_hf.json` · `gus_a/b/c.py` → `id_gus.json` · `validate.py <set> <json>` · `merge.py <live data dir> <out>` (แทน/เพิ่มคาบ + แก้ intro/howto ใน index.json)
+- publish เฉพาะ `data/cardio.json` `data/id.json` `data/index.json` ทับ live `1794326333-1056` (ข้อมูลรูป imgs ของอีก session ยังอยู่ครบ)
+- ⚠️ สำเนา `artifact/data` ใน branch หลักยังไม่ได้ sync: live มี imgs ที่อีก session เพิ่ม (ไฟล์ img/ ยังไม่อยู่ใน repo) ถ้าคัดลอกแค่ json จะทำให้ checkdata ฟ้องรูปหาย

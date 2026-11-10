@@ -1,0 +1,1021 @@
+#!/usr/bin/env python3
+"""Build cardio_hf.json (lecture HF) — run: python3 build_hf.py"""
+import json, os
+
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cardio_hf.json")
+SRC = "สไลด์ อ.Chatchai Pitakrattanachai — Heart failure (MED421 พ.ย. 2569)"
+SRCG = "แนวทาง ESC 2021/2023/2026 และ AHA/ACC/HFSA 2022 — เสริมจากสไลด์ อ.Chatchai Pitakrattanachai (MED421 พ.ย. 2569)"
+SL = "สไลด์ อ.Chatchai — "
+
+_n = [0]
+
+
+def Q(topic, stem, correct, wrong, pos, explain, pearl, ref, nl):
+    assert len(wrong) == 4
+    _n[0] += 1
+    ch = list(wrong)
+    ch.insert(pos, correct)
+    assert len(set(ch)) == 5
+    return {"id": f"CAR-HF-MCQ-{_n[0]:02d}", "kind": "mcq", "topic": topic, "stem": stem,
+            "choices": ch, "answer": pos, "explain": explain, "pearl": pearl, "src": "",
+            "ref": ref, "nl": nl}
+
+
+def svg(vb, label, body):
+    return (f'<svg viewBox="{vb}" role="img" aria-label="{label}" '
+            f'xmlns="http://www.w3.org/2000/svg">{body}</svg>')
+
+
+def box(x, y, w, h, cls, lines, size=11.5, bold=False):
+    cx = x + w / 2
+    n = len(lines)
+    lh = size * 1.25
+    y0 = y + h / 2 - (n - 1) * lh / 2 + size * 0.35
+    t = "".join(f'<tspan x="{cx:g}" dy="{0 if i == 0 else "1.25em"}">{s}</tspan>' for i, s in enumerate(lines))
+    b = " b" if bold else ""
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" class="{cls}"/>'
+            f'<text x="{cx:g}" y="{y0:.1f}" class="mid{b}" style="font-size:{size}px">{t}</text>')
+
+
+def arrow(x1, y1, x2, y2, cls="ln", mk="ah"):
+    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" class="{cls}" marker-end="url(#{mk})"/>'
+
+
+# ---------------------------------------------------------------- figures
+FIG_EF = svg("0 0 440 250", "เปรียบเทียบการจำแนก HF ตาม LVEF ระหว่าง ESC 2021 และ AHA 2022 กับ ESC 2026 และ Second Universal Definition 2026", "".join([
+    '<text x="277" y="16" class="xs mid mu">40%</text><text x="328" y="16" class="xs mid mu">50%</text>',
+    '<line x1="277" y1="20" x2="277" y2="182" class="lmu da"/><line x1="328" y1="20" x2="328" y2="182" class="lmu da"/>',
+    '<text x="8" y="44" class="sm b">ESC 2021</text><text x="8" y="58" class="xs mu">AHA 2022 · UD 2021</text>',
+    box(124, 28, 153, 38, "bad", ["HFrEF ≤ 40%"], 12, True),
+    box(277, 28, 51, 38, "wa", ["HFmrEF", "41–49%"], 10.5),
+    box(328, 28, 104, 38, "ok", ["HFpEF ≥ 50%"], 12, True),
+    '<text x="8" y="100" class="sm b">ESC 2026</text><text x="8" y="114" class="xs mu">ตัด HFmrEF</text>',
+    box(124, 84, 204, 38, "bad", ["HFrEF: LVEF &lt; 50%"], 12, True),
+    box(328, 84, 104, 38, "ok", ["HFpEF ≥ 50%"], 12, True),
+    '<text x="8" y="156" class="sm b">2nd UD 2026</text><text x="8" y="170" class="xs mu">ไม่ยึดจุดตัดตายตัว</text>',
+    box(124, 140, 153, 38, "bad", ["HFrEF (EF ลดลง)"], 11.5, True),
+    box(328, 140, 104, 38, "ok", ["HFpEF"], 12, True),
+    '<path d="M200 178 C200 222 302 222 302 174" class="lok w2" marker-end="url(#ah-ok)"/>',
+    '<rect x="278" y="148" width="49" height="22" rx="6" class="ac"/><text x="302.5" y="163" class="xs mid b tac">HFimpEF</text>',
+    '<text x="220" y="236" class="xs mid i2">EF ดีขึ้นด้วยการรักษา = HFimpEF · ยังเป็น HF และต้องให้ยาต่อ</text>',
+]))
+
+FIG_CASCADE = svg("0 0 440 330", "ลำดับจากความดันใน LV สูง ไปสู่ความดัน LA และ PCWP สูง จนน้ำซึมออกนอกหลอดเลือดปอดเป็น interstitial และ alveolar edema พร้อมภาพเอกซเรย์ที่สัมพันธ์", "".join([
+    box(8, 8, 200, 36, "sk", ["LV ทำงานผิดปกติ → LVEDP ↑"], 11.5, True),
+    arrow(108, 44, 108, 60),
+    box(8, 62, 200, 36, "sk", ["LAP ↑ → pulmonary vein ↑"], 11.5),
+    arrow(108, 98, 108, 114),
+    box(8, 116, 200, 40, "wa", ["PCWP ↑ (สะท้อน LAP)", "ปกติราว 6–12 mmHg"], 11),
+    arrow(108, 156, 108, 172),
+    box(8, 174, 200, 46, "ms", ["แรงดัน hydrostatic ในหลอดเลือดฝอย", "&gt; oncotic + การระบายของ lymph"], 10.5),
+    arrow(108, 220, 108, 236),
+    box(8, 238, 200, 36, "bad", ["Interstitial edema"], 11.5, True),
+    arrow(108, 274, 108, 290),
+    box(8, 292, 200, 32, "bad", ["Alveolar edema · เสมหะฟองสีชมพู"], 11, True),
+    '<text x="326" y="20" class="sm mid b">ภาพ CXR (ค่าประมาณแบบคลาสสิก)</text>',
+    box(232, 116, 200, 40, "wa", ["Cephalization", "PCWP ราว 13–18 mmHg"], 11),
+    box(232, 238, 200, 36, "bad", ["Kerley B · cuffing ≈ 18–25"], 11),
+    box(232, 292, 200, 32, "bad", ["Batwing ≈ &gt; 25 mmHg"], 11),
+    '<line x1="208" y1="136" x2="232" y2="136" class="lmu da"/><line x1="208" y1="256" x2="232" y2="256" class="lmu da"/><line x1="208" y1="308" x2="232" y2="308" class="lmu da"/>',
+    box(232, 34, 200, 66, "ac", ["ด้านขวา: RAP ↑", "JVP สูง · HJR · ตับโต", "ขาบวม · ascites"], 10.5),
+    '<text x="332" y="186" class="xs mid i2">HF เรื้อรัง: lymph ระบายได้มากขึ้น</text><text x="332" y="200" class="xs mid i2">PCWP สูงแต่ปอดอาจยังใส</text>',
+]))
+
+FIG_NEURO = svg("0 0 440 300", "วงจร neurohormonal ใน HF: การบาดเจ็บของกล้ามเนื้อหัวใจทำให้ SNS และ RAAS ทำงานมากขึ้น เกิดการคั่งเกลือน้ำและ remodeling วนกลับมาทำให้หัวใจแย่ลง และจุดที่ยาแต่ละกลุ่มออกฤทธิ์", "".join([
+    box(110, 8, 220, 36, "bad", ["Index event: MI · HT · ลิ้น · CMP"], 11, True),
+    arrow(220, 44, 220, 60),
+    box(130, 62, 180, 36, "sk", ["CO ↓ · wall stress ↑"], 11.5),
+    arrow(170, 98, 88, 120), arrow(270, 98, 360, 120),
+    box(24, 122, 128, 48, "ms", ["SNS ↑", "HR ↑ · หลอดเลือดหด"], 11),
+    box(288, 122, 144, 48, "ms", ["RAAS ↑ · ADH ↑", "Ang II · aldosterone"], 11),
+    box(158, 122, 124, 48, "ok", ["Natriuretic", "peptides (ถ่วงดุล)"], 10.5),
+    arrow(88, 170, 170, 200), arrow(360, 170, 270, 200),
+    box(110, 202, 220, 44, "bad", ["เกลือ/น้ำคั่ง · afterload ↑", "พังผืด · remodeling · arrhythmia"], 10.5),
+    '<path d="M110 224 H12 V26 H108" class="lbad w2" marker-end="url(#ah-bad)"/>',
+    '<text x="18" y="92" class="xs b tbad">วงจร</text><text x="18" y="106" class="xs b tbad">เลว</text>',
+    '<text x="70" y="190" class="xs mid b tac">β-blocker</text>',
+    '<text x="378" y="190" class="xs mid b tac">ACEi/ARB/ARNI · MRA</text>',
+    '<text x="220" y="112" class="xs mid b tac">ARNI ยับยั้ง neprilysin</text>',
+    '<text x="220" y="266" class="xs mid b tac">SGLT2i: natriuresis + ผลต่อเมตาบอลิซึมและไต</text>',
+    '<text x="220" y="284" class="xs mid i2">loop diuretic แก้ congestion แต่ไม่ได้ตัดวงจร</text>',
+]))
+
+FIG_PROFILE = svg("0 0 440 300", "ตาราง 2 คูณ 2 ของผู้ป่วย HF กำเริบ แบ่งตาม congestion (dry หรือ wet) และ perfusion (warm หรือ cold) พร้อมแนวทางรักษาแต่ละกลุ่ม", "".join([
+    '<text x="250" y="16" class="sm mid b">Congestion ขณะพัก?</text>',
+    '<text x="165" y="34" class="xs mid mu">ไม่มี = Dry</text><text x="335" y="34" class="xs mid mu">มี = Wet</text>',
+    '<text x="40" y="108" class="sm mid b">Warm</text><text x="40" y="122" class="xs mid mu">perfusion ดี</text>',
+    '<text x="40" y="218" class="sm mid b">Cold</text><text x="40" y="232" class="xs mid mu">perfusion ต่ำ</text>',
+    box(82, 42, 166, 112, "ok", ["A · Warm-Dry", "compensated", "ปรับ FMT ต่อ", "หาเหตุอื่นของอาการ"], 11),
+    box(252, 42, 180, 112, "wa", ["B · Warm-Wet", "พบบ่อยที่สุด", "IV loop diuretic", "± vasodilator ถ้า SBP สูง"], 11),
+    box(82, 158, 166, 112, "sk", ["L · Cold-Dry", "พบน้อย", "ประเมิน volume", "ให้สารน้ำอย่างระวัง"], 11),
+    box(252, 158, 180, 112, "bad", ["C · Cold-Wet", "พยากรณ์แย่สุด", "inotrope ± vasopressor", "แล้ว diuretic"], 11),
+    '<text x="220" y="292" class="xs mid i2">ประเมินที่ข้างเตียงในเวลาไม่กี่นาที (Nohria/Stevenson, JAMA 2002)</text>',
+]))
+
+# ---------------------------------------------------------------- sections
+S = []
+
+# 01 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-01",
+    "title": "เหนื่อยเฉียบพลัน — คิดเป็นระบบก่อนบอกว่าเป็น HF",
+    "summary": "ผู้ป่วยเหนื่อยต้องแยกหัวใจ ปอด และนอกหัวใจปอด ส่วนหัวใจคิดเป็นสามส่วน pump · pipe · wire",
+    "minutes": 7,
+    "source": SRC,
+    "nl": ["2.1.34", "2.3.9(5)", "2.3.9(6)", "2.3.9(1)"],
+    "md": (
+        "### เคสเปิดคาบ (สไลด์)\n"
+        "**ชายไทยอายุ 72 ปี เหนื่อยเฉียบพลัน 1 วันก่อนมาโรงพยาบาล** — คำถามแรกยังไม่ใช่ \"เป็น HF หรือไม่\" แต่คือ **เหนื่อยจากระบบไหน** เพราะ HF เป็นเพียงหนึ่งในหลายสาเหตุ และ HF เองก็มักมีตัวกระตุ้นจากระบบอื่นซ้อนอยู่\n\n"
+        "### แยกสาเหตุของอาการเหนื่อยตามระบบ\n"
+        "| ระบบ | ตัวอย่างโรค |\n|---|---|\n"
+        "| **หัวใจ (Heart)** | แยกต่อเป็น pump · pipe · wire (ตารางถัดไป) |\n"
+        "| **ปอด (Lungs)** | ทางเดินหายใจ: asthma, COPD · เนื้อปอด: pneumonia, ILD · เยื่อหุ้มปอด: pneumothorax, effusion · หลอดเลือด: pulmonary embolism |\n"
+        "| **Metabolic** | metabolic acidosis (DKA, sepsis, ไตวาย) · ซีด · ไทรอยด์เป็นพิษ |\n"
+        "| **Neurogenic** | กล้ามเนื้อหายใจอ่อนแรง เช่น Guillain-Barré, myasthenia gravis |\n"
+        "| **Psychogenic** | anxiety, panic attack, hyperventilation syndrome |\n\n"
+        "### หัวใจสามส่วน: The Pump · The Pipe · The Wire (สไลด์)\n"
+        "| ส่วน | หมายถึง | โรคตัวอย่าง |\n|---|---|---|\n"
+        "| **The Pump** | กล้ามเนื้อหัวใจและลิ้น | **Heart failure · valvular heart disease · myocarditis** |\n"
+        "| **The Pipe** | หลอดเลือดโคโรนารี | **CAD: ACS และ CCS** |\n"
+        "| **The Wire** | ระบบไฟฟ้า | **Tachyarrhythmia · bradyarrhythmia** |\n\n"
+        "> **สามส่วนนี้ไม่ได้แยกกันจริง** — ACS ทำให้กล้ามเนื้อตายจน pump เสีย · AF เร็วหรือ complete heart block ทำให้ HF ที่ทรงตัวกำเริบ · ลิ้นรั่วเฉียบพลันจาก papillary muscle rupture ก็คือ pipe ที่ทำให้ pump พัง ดังนั้นเมื่อเจอ HF ใหม่หรือ HF กำเริบ **ต้องหา pipe และ wire เสมอ**\n\n"
+        "### การตรวจเบื้องต้นที่ห้องฉุกเฉิน — แต่ละตัวตอบคำถามอะไร\n"
+        "| การตรวจ | ตอบคำถาม |\n|---|---|\n"
+        "| **12-lead ECG** | wire (AF, block, VT) และ pipe (ST ยก/กด, Q wave) — ทำทันที |\n"
+        "| **Troponin** | pipe: ACS หรือกล้ามเนื้อบาดเจ็บจากสาเหตุอื่น |\n"
+        "| **NT-proBNP / BNP** | pump: ความดันในหัวใจสูงหรือไม่ (ค่าต่ำช่วยตัด HF ออก) |\n"
+        "| **CXR** | pulmonary congestion หรือโรคปอด เช่น pneumonia, pneumothorax |\n"
+        "| **Bedside echo / lung ultrasound** | LVEF, ลิ้น, น้ำในเยื่อหุ้มหัวใจ, B-lines |\n"
+        "| **CBC, electrolytes, Cr, glucose, ABG** | ซีด, ไต, กรด-ด่าง, น้ำตาล — สาเหตุ metabolic และผลต่อการรักษา |\n"
+    ),
+    "pearls": [
+        "เหนื่อย = หัวใจ · ปอด · metabolic · neurogenic · psychogenic",
+        "หัวใจ = pump (HF, ลิ้น, myocarditis) · pipe (ACS, CCS) · wire (tachy/brady)",
+        "HF ใหม่หรือกำเริบ → หา pipe และ wire เสมอ: ECG + troponin",
+        "ECG เป็นการตรวจแรกที่ทำได้ทันทีและตอบได้ทั้ง pipe และ wire",
+    ],
+    "items": [
+        Q("Systematic approach to acute dyspnea",
+          "A 72-year-old man presents with acute dyspnea for 1 day. BP 150/90 mmHg, pulse 140/min and irregular, bibasal crackles. Which single bedside test most rapidly identifies both a 'pipe' (coronary) and a 'wire' (rhythm) cause of his decompensation?",
+          "12-lead electrocardiogram", ["Chest radiograph", "Serum NT-proBNP", "Arterial blood gas", "Transthoracic echocardiography"], 2,
+          "สไลด์ให้คิดหัวใจเป็นสามส่วน — **pipe** (CAD) และ **wire** (arrhythmia) เป็นตัวกระตุ้น HF ที่พบบ่อยและแก้ได้\n\n**12-lead ECG** ทำได้ในไม่กี่นาทีและตอบได้ทั้งสองอย่าง: ชีพจรไม่สม่ำเสมอ 140/min ชวนคิด AF with RVR (wire) และ ECG ยังดู ST-T change หรือ Q wave ของ ACS (pipe)\n\n- **CXR** บอก congestion หรือโรคปอด แต่ไม่บอกจังหวะหรือ ischemia\n- **NT-proBNP** บอกว่าความดันในหัวใจสูง (pump) แต่ไม่บอกสาเหตุ\n- **ABG** ประเมินการหายใจและกรด-ด่าง\n- **Echo** ดู LVEF ลิ้น wall motion ได้ดี แต่ไม่วินิจฉัย AF หรือ STEMI ได้เร็วเท่า ECG",
+          "HF กำเริบ → ECG ทันทีเพื่อหา pipe และ wire",
+          [SL + "The Pump · The Pipe · The Wire"], ["2.1.34", "2.3.9(1)", "2.3.9(6)", "B7.3(3)"]),
+        Q("Non-cardiopulmonary dyspnea",
+          "A 24-year-old woman has sudden breathlessness after an argument, with perioral tingling and carpal spasm. SpO2 99% on room air, lungs clear, JVP not raised, ECG sinus tachycardia. ABG: pH 7.52, PaCO2 25 mmHg, HCO3 22 mmol/L. Which category best explains her dyspnea?",
+          "Psychogenic (hyperventilation syndrome)", ["Pump failure (acute heart failure)", "Pipe (acute coronary syndrome)", "Metabolic acidosis with respiratory compensation", "Neurogenic respiratory muscle weakness"], 4,
+          "สไลด์แบ่งเหนื่อยนอกหัวใจและปอดเป็น **metabolic · neurogenic · psychogenic**\n\nหญิงอายุน้อย เหนื่อยหลังเครียด ชารอบปาก มือจีบ ปอดใส JVP ไม่สูง SpO2 ปกติ ABG เป็น **acute respiratory alkalosis** (pH สูง PaCO2 ต่ำ HCO3 ยังปกติ) → **hyperventilation syndrome** — การหายใจเร็วทำให้ CO2 ต่ำ แคลเซียมอิสระลดลงจึงชาและเกร็ง\n\n- **Pump failure** ต้องมี congestion (JVP สูง crackles) และ hypoxemia\n- **ACS** ไม่อธิบาย alkalosis และอาการชา\n- **Metabolic acidosis** pH ต้องต่ำ HCO3 ต่ำ — ผู้ป่วยรายนี้ pH สูง\n- **Neurogenic weakness** จะหายใจตื้นจน CO2 คั่ง ไม่ใช่ CO2 ต่ำ\n\nอย่างไรก็ตาม วินิจฉัย psychogenic ได้ **หลังตัดสาเหตุอันตราย** (เช่น PE) แล้วเท่านั้น",
+          "Psychogenic เป็นการวินิจฉัยหลังตัดโรคอันตรายแล้ว",
+          [SL + "Heart · Lungs · Metabolic · Neurogenic · Psychogenic"], ["2.1.34", "2.2.22", "3.3.17"]),
+    ],
+})
+
+# 02 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-02",
+    "title": "นิยาม HF การจำแนกตาม LVEF และระยะ A–D",
+    "summary": "HF คือกลุ่มอาการทางคลินิกจากหัวใจผิดปกติที่ยืนยันด้วย NP สูงหรือหลักฐาน congestion จำแนกตาม LVEF และแบ่งระยะ A–D",
+    "minutes": 10,
+    "source": SRC,
+    "nl": ["2.3.9(5)", "B7.2.5(2)", "3.3.23"],
+    "md": (
+        "### HF คือ \"clinical syndrome\" (สไลด์)\n"
+        "สไลด์สรุปนิยามจาก **Universal Definition of HF (Eur J Heart Fail 2021;23:352–380)** ว่า HF เป็นกลุ่มอาการที่\n"
+        "1. **เกิดจากหัวใจทำงานผิดปกติ** — systolic, diastolic หรือผสม (โครงสร้างหรือการทำงาน)\n"
+        "2. **นำไปสู่ neurohormonal activation และ maladaptive remodeling**\n"
+        "3. **ทำให้เกิดอาการและอาการแสดงที่จำเพาะ**\n\n"
+        "### นิยามสามองค์ประกอบ — \"HF is a clinical diagnosis syndrome\"\n"
+        "| องค์ประกอบ | รายละเอียด |\n|---|---|\n"
+        "| **① อาการ และ/หรือ อาการแสดง** (ปัจจุบันหรือเคยมี) | เหนื่อย นอนราบไม่ได้ ขาบวม · JVP สูง crackles |\n"
+        "| **② เกิดจากหัวใจผิดปกติ** | โครงสร้างหรือการทำงาน — ยืนยันด้วย echocardiography |\n"
+        "| **③ ยืนยันด้วยอย่างน้อยหนึ่งข้อ** | **NP (BNP/NT-proBNP) สูงผิดปกติ** · หรือ **หลักฐาน congestion** จาก CXR, echo หรือ right heart catheterization |\n\n"
+        "### จำแนกตาม LVEF\n"
+        "| กลุ่ม | ESC 2021 · AHA 2022 · UD 2021 | ESC 2026 |\n|---|---|---|\n"
+        "| **HFrEF** | LVEF **≤ 40%** | LVEF **< 50%** |\n"
+        "| **HFmrEF** | LVEF **41–49%** | **ตัดออก** (รวมเข้า HFrEF) |\n"
+        "| **HFpEF** | LVEF **≥ 50%** + หลักฐานโครงสร้าง/การทำงานผิดปกติหรือ filling pressure สูง (รวม NP สูง) | LVEF **≥ 50%** |\n"
+        "| **HFimpEF** | เคย LVEF ≤ 40% · ต่อมาเพิ่ม **≥ 10 จุด** และ **> 40%** | ไม่แยกเป็นกลุ่ม แต่ย้ำให้ **ให้ยาต่อ** |\n\n"
+        "[[fig:hf_ef]]\n\n"
+        "> **อัปเดตแนวทาง ·** สไลด์ใช้นิยามจาก Universal Definition 2021 ซึ่งยังถูกต้องเป็นแกน แต่ปี 2026 มีสองเอกสารใหม่: **(1) 2026 ESC Guidelines for the management of HF** ตัด HFmrEF ออก เหลือ **HFrEF = LVEF < 50%** และ **HFpEF = LVEF ≥ 50%** · **(2) AHA/ACC/ESC/WHF Second Universal Definition of HF (2026)** เลิกใช้จุดตัด LVEF ตายตัว แบ่งเป็น **HFrEF · HFimpEF · HFpEF** และแยก improvement / remission / recovery ส่วน **2022 AHA/ACC/HFSA guideline** ยังใช้ ≤ 40 / 41–49 / ≥ 50 จนกว่าฉบับใหม่ (คาดว่าปลายปี 2027) จะออก — ตอบข้อสอบให้ระบุว่าอิงแนวทางใด\n\n"
+        "### ระยะ A–D (ACC/AHA 2022 · Universal Definition 2021)\n"
+        "| ระยะ | นิยาม | ตัวอย่าง |\n|---|---|---|\n"
+        "| **A — At risk** | มีปัจจัยเสี่ยง ยังไม่มีอาการ ไม่มีโครงสร้างผิด NP ปกติ | HT, DM, อ้วน, CAD, ยาที่เป็นพิษต่อหัวใจ, ประวัติครอบครัว cardiomyopathy |\n"
+        "| **B — Pre-HF** | ยังไม่มีอาการ แต่มีโครงสร้าง/การทำงานผิด หรือ filling pressure สูง หรือ NP/troponin สูง | LVH, เคย MI, LVEF ต่ำโดยไม่มีอาการ, ลิ้นผิดปกติ |\n"
+        "| **C — Symptomatic HF** | มีหรือเคยมีอาการ HF | HF ทุก EF ที่เคยมีอาการ |\n"
+        "| **D — Advanced HF** | อาการรุนแรงขณะพัก นอนโรงพยาบาลซ้ำ แม้ได้ยาเต็มที่ | ต้องพิจารณา transplant, LVAD, palliative care |\n\n"
+        "> **อัปเดตแนวทาง ·** **2026 ESC HF guideline รับระยะ A–D มาใช้เป็นครั้งแรก** (เดิม ESC ไม่ใช้ระบบนี้) และเน้นการป้องกันใน A/B เช่น SBP เป้า < 130 mmHg และ SGLT2i/GLP-1 RA ในเบาหวานที่มีความเสี่ยง\n\n"
+        "### NYHA functional class — ขึ้นลงได้\n"
+        "| Class | อาการ |\n|---|---|\n"
+        "| **I** | กิจกรรมปกติไม่เหนื่อย |\n"
+        "| **II** | เหนื่อยเมื่อทำกิจกรรมปกติ (ข้อจำกัดเล็กน้อย) |\n"
+        "| **III** | เหนื่อยเมื่อทำกิจกรรมน้อยกว่าปกติ สบายเฉพาะตอนพัก |\n"
+        "| **IV** | เหนื่อยแม้ขณะพัก |\n\n"
+        "**ระยะ A–D ไปทางเดียว** — คนที่เข้า stage C แล้ว แม้อาการหายก็ยังเป็น stage C (2nd UD 2026 เรียกว่า improvement หรือ remission แต่ยังต้องติดตาม) ส่วน **NYHA ขึ้นลงได้** ตามอาการและการรักษา\n"
+    ),
+    "pearls": [
+        "นิยาม = อาการ/อาการแสดง + หัวใจผิดปกติ + (NP สูง หรือ congestion)",
+        "ESC 2021/AHA 2022: HFrEF ≤ 40 · HFmrEF 41–49 · HFpEF ≥ 50",
+        "ESC 2026: HFrEF < 50 · HFpEF ≥ 50 (ตัด HFmrEF)",
+        "HFimpEF = EF ดีขึ้น แต่ยังเป็น HF → ห้ามหยุดยา",
+        "ระยะ A–D ไปทางเดียว · NYHA ขึ้นลงได้",
+    ],
+    "figs": {"hf_ef": {
+        "title": "การจำแนก HF ตาม LVEF — 2021/2022 เทียบกับ 2026",
+        "cap": "เส้นประคือ LVEF 40% และ 50% · ESC 2021, AHA 2022 และ UD 2021 มีสามกลุ่ม · **ESC 2026 รวม 41–49% เข้ากับ HFrEF** เพราะกลุ่มนี้ตอบสนองต่อยาคล้าย HFrEF · **2nd Universal Definition 2026** ไม่กำหนดจุดตัดตายตัว และเน้นว่า EF ที่ดีขึ้น (HFimpEF) ยังเป็น HF",
+        "svg": FIG_EF}},
+    "items": [
+        Q("HF classification by LVEF",
+          "A 66-year-old woman has exertional dyspnea, ankle edema and NT-proBNP 1,450 pg/mL. Echocardiography shows LVEF 45% with left atrial enlargement. Using the 2021 Universal Definition (as in the 2021 ESC and 2022 AHA/ACC/HFSA guidelines), how is her heart failure classified?",
+          "HF with mildly reduced ejection fraction (HFmrEF)", ["HF with reduced ejection fraction (HFrEF)", "HF with preserved ejection fraction (HFpEF)", "HF with improved ejection fraction (HFimpEF)", "Stage B (pre-heart failure)"], 0,
+          "ตาม **Universal Definition 2021** (และ ESC 2021 / AHA 2022) **LVEF 41–49% + อาการ = HFmrEF**\n\n- **HFrEF** ต้อง LVEF ≤ 40%\n- **HFpEF** ต้อง LVEF ≥ 50%\n- **HFimpEF** ต้องเคยมี LVEF ≤ 40% แล้วดีขึ้น — ผู้ป่วยรายนี้ไม่มีค่าเดิม\n- **Stage B** คือยังไม่มีอาการ แต่ผู้ป่วยมีอาการแล้วจึงเป็น stage C\n\n**อัปเดต:** ตาม **ESC 2026** ผู้ป่วยรายนี้จะถูกจัดเป็น **HFrEF (LVEF < 50%)** และได้ foundational therapy แบบ HFrEF",
+          "LVEF 41–49% = HFmrEF (2021) แต่ = HFrEF ใน ESC 2026",
+          [SL + "Universal Definition of HF (EJHF 2021)", "2026 ESC Guidelines for the management of HF"], ["2.3.9(5)", "3.3.23"]),
+        Q("ACC/AHA stages of HF",
+          "A 58-year-old man had an anterior myocardial infarction 1 year ago. He walks 5 km daily without symptoms and has never had dyspnea or edema. Echocardiography shows LVEF 35% with anterior akinesia. Which ACC/AHA stage best describes him?",
+          "Stage B (pre-heart failure)", ["Stage A (at risk for HF)", "Stage C (symptomatic HF)", "Stage D (advanced HF)", "No heart failure stage applies"], 3,
+          "**Stage B (pre-HF)** = **ยังไม่มีอาการ** แต่มี **โครงสร้างหรือการทำงานของหัวใจผิดปกติ** — เคย MI และ LVEF 35% เข้าเกณฑ์ชัดเจน\n\n- **Stage A** มีแค่ปัจจัยเสี่ยงโดยหัวใจยังปกติ\n- **Stage C** ต้องมีหรือเคยมีอาการ HF\n- **Stage D** อาการรุนแรงขณะพักแม้ได้ยาเต็มที่\n- \"ไม่มีระยะ\" ผิด เพราะระบบ A–D ครอบคลุมตั้งแต่กลุ่มเสี่ยง\n\nความสำคัญ: stage B ที่ LVEF ≤ 40% ได้ประโยชน์จาก **ACEi และ β-blocker** เพื่อป้องกันไม่ให้เกิดอาการ",
+          "ไม่มีอาการ + หัวใจผิดปกติ = stage B",
+          ["2022 AHA/ACC/HFSA Guideline — stages of HF", "2026 ESC Guidelines — staging A–D"], ["2.3.9(5)", "2.3.9(6)"]),
+        Q("HF with improved EF",
+          "A 50-year-old man with dilated cardiomyopathy had LVEF 25% two years ago. On sacubitril/valsartan, bisoprolol, spironolactone and dapagliflozin he is now asymptomatic and LVEF is 52%. He asks to stop all his heart medicines because he feels cured. What is the best advice?",
+          "Continue foundational therapy because withdrawal risks relapse of LV dysfunction", ["Stop all medicines since LVEF is now normal", "Stop the beta-blocker first, then the others over a week", "Switch all drugs to a loop diuretic alone", "Stop medicines and repeat echocardiography in 5 years"], 1,
+          "ผู้ป่วยเป็น **HFimpEF** (เคย LVEF ≤ 40% เพิ่ม ≥ 10 จุด และ > 40%) — **EF ที่ดีขึ้นไม่ได้แปลว่าหายขาด** กล้ามเนื้อยังผิดปกติในระดับเซลล์และยังเสี่ยงต่อ EF ลดลงซ้ำ\n\nการศึกษา TRED-HF ในผู้ป่วย DCM ที่ EF กลับมาปกติ พบว่าการหยุดยาทำให้โรคกลับมาในสัดส่วนสูง แนวทาง **ESC 2026 (Class I)** จึงให้ **คงยา foundational ในขนาดสูงสุดที่ทนได้แม้ EF ดีขึ้น** และพิจารณาลดยาเฉพาะผู้ป่วยที่คัดเลือกอย่างดีมาก\n\n- **หยุดทั้งหมด** หรือ **หยุดแล้วตรวจอีก 5 ปี** เสี่ยงโรคกลับ\n- **หยุด β-blocker ก่อน** ยิ่งเสี่ยง arrhythmia และ rebound\n- **diuretic อย่างเดียว** ไม่มีผลต่อการพยากรณ์โรค",
+          "HFimpEF = ยังเป็น HF → ให้ยาต่อ",
+          ["2026 ESC Guidelines — continue FMT after LVEF improvement", "Second Universal Definition of HF 2026 — HFimpEF"], ["2.3.9(5)", "B7.4(2)"]),
+    ],
+})
+
+# 03 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-03",
+    "title": "พยาธิสรีรวิทยา — neurohormonal activation และ remodeling",
+    "summary": "หัวใจที่บาดเจ็บกระตุ้น SNS RAAS และ ADH ซึ่งช่วยระยะสั้นแต่ทำให้ remodeling และคั่งเกลือน้ำในระยะยาว ยาหลักของ HFrEF คือการตัดวงจรนี้",
+    "minutes": 9,
+    "source": SRC,
+    "nl": ["B7.2.5(2)", "B7.1.2(4)", "B11.1.2(3)c", "B7.1.1(2)", "B7.4(2)"],
+    "md": (
+        "### จาก index event สู่กลุ่มอาการ\n"
+        "เหตุตั้งต้น (**index event**) เช่น MI, ความดันสูงเรื้อรัง, ลิ้นรั่ว/ตีบ, cardiomyopathy จากพันธุกรรมหรือสารพิษ, myocarditis → **cardiac output ลด และ wall stress เพิ่ม** → ร่างกาย \"ชดเชย\" ด้วยระบบประสาทและฮอร์โมน ซึ่ง **ช่วยในระยะสั้นแต่ทำร้ายในระยะยาว**\n\n"
+        "[[fig:hf_neuro]]\n\n"
+        "### ระบบชดเชยหลัก\n"
+        "| ระบบ | ผลระยะสั้น | ผลเสียระยะยาว | ยาที่ตัดวงจร |\n|---|---|---|---|\n"
+        "| **Sympathetic (SNS)** | HR และการบีบตัวเพิ่ม · หลอดเลือดหดรักษาความดัน | myocyte เป็นพิษ ตายแบบ apoptosis · arrhythmia · ใช้ O2 มากขึ้น | **β-blocker** · ivabradine (ลด HR) |\n"
+        "| **RAAS — angiotensin II** | หลอดเลือดหด · กระตุ้นกระหายน้ำและ ADH | afterload สูง · hypertrophy · พังผืด | **ACEi / ARB / ARNI** |\n"
+        "| **RAAS — aldosterone** | ไตดูด Na กลับ เพิ่ม preload | คั่งเกลือน้ำ · พังผืดในหัวใจและหลอดเลือด · K และ Mg ต่ำ | **MRA** (spironolactone, eplerenone, finerenone) |\n"
+        "| **ADH (vasopressin)** | ดูดน้ำกลับ | **hyponatremia** · congestion | (tolvaptan ใช้เฉพาะกรณี) |\n"
+        "| **Natriuretic peptides** | **ตัวถ่วงดุล**: ขับ Na ขยายหลอดเลือด ยับยั้ง RAAS/SNS | ถูกทำลายโดย **neprilysin** และไม่พอสู้ระบบอื่น | **ARNI** (sacubitril ยับยั้ง neprilysin) |\n\n"
+        "### Remodeling (สไลด์: NEJM 1999;341:1276 · Braunwald 12th ed.)\n"
+        "- **Pressure overload** (HT, AS) → sarcomere เพิ่มแบบขนาน → **concentric hypertrophy** ผนังหนา ห้องไม่โต — มักไปทาง HFpEF\n"
+        "- **Volume overload** (MR, AR) หรือกล้ามเนื้อตาย → sarcomere เพิ่มแบบต่อกัน → **eccentric hypertrophy** ห้องโต ผนังบาง — ไปทาง HFrEF\n"
+        "- เมื่อโตถึงจุดหนึ่ง ห้องเปลี่ยนรูปเป็นทรงกลม ลิ้น mitral ปิดไม่สนิท (functional MR) wall stress ยิ่งสูง → **วงจรเลว**\n\n"
+        "### Frank–Starling ในหัวใจล้มเหลว\n"
+        "หัวใจปกติเมื่อ preload เพิ่ม stroke volume เพิ่มชัดเจน แต่ในหัวใจที่ล้มเหลว **เส้นโค้งแบนและต่ำลง** — การเพิ่ม preload (น้ำเกลือ, เกลือ) **ไม่ได้เพิ่ม CO มากแต่เพิ่มความดันเติมเลือดจนเกิด congestion** นี่คือเหตุที่ diuretic ลดอาการได้โดย CO แทบไม่ลด\n\n"
+        "> **ประเด็นสอบ:** ยาที่ลดตายใน HFrEF (β-blocker, ACEi/ARB/ARNI, MRA) ล้วน **ตัดวงจร neurohormonal** ส่วน **loop diuretic แก้ congestion แต่ไม่ได้ลดตาย** — SGLT2i ลดตายผ่านหลายกลไก (natriuresis, ไต, เมตาบอลิซึม) ที่ยังไม่ชัดทั้งหมด\n"
+    ),
+    "pearls": [
+        "SNS + RAAS + ADH: ช่วยระยะสั้น ทำร้ายระยะยาว",
+        "NP คือตัวถ่วงดุล ถูกทำลายโดย neprilysin → ARNI",
+        "Pressure overload → concentric · volume overload/MI → eccentric",
+        "หัวใจล้มเหลว: preload เพิ่ม = congestion ไม่ใช่ CO เพิ่ม",
+        "ยาลดตายตัดวงจร neurohormonal · diuretic แค่ลดอาการ",
+    ],
+    "figs": {"hf_neuro": {
+        "title": "วงจร neurohormonal และจุดที่ยาออกฤทธิ์",
+        "cap": "CO ที่ลดลงกระตุ้น **SNS และ RAAS/ADH** ทำให้คั่งเกลือน้ำ afterload สูง และ **remodeling** ซึ่งวนกลับมาทำให้หัวใจแย่ลง · **natriuretic peptides** เป็นตัวถ่วงดุลที่ถูก neprilysin ทำลาย · ข้อความสีเขียวคือยาที่ตัดวงจรในแต่ละจุด",
+        "svg": FIG_NEURO}},
+    "items": [
+        Q("Mechanism of ARNI",
+          "A 61-year-old man with HFrEF (LVEF 28%) is switched from enalapril to sacubitril/valsartan. Which mechanism explains the additional benefit of the sacubitril component?",
+          "Inhibition of neprilysin, increasing natriuretic peptide activity", ["Direct inhibition of renin release from the kidney", "Blockade of the aldosterone receptor in the collecting duct", "Inhibition of the If current in the sinus node", "Inhibition of SGLT2 in the proximal tubule"], 2,
+          "**Sacubitril** เป็น prodrug ที่ยับยั้ง **neprilysin** ซึ่งเป็นเอนไซม์ทำลาย natriuretic peptides (BNP, ANP) และ bradykinin → NP ทำงานนานขึ้น → **ขับ Na ขยายหลอดเลือด ต้าน RAAS/SNS และลดพังผืด** ส่วน valsartan ปิดกั้น AT1 receptor (ต้องให้ร่วมกันเพราะ neprilysin ก็ทำลาย angiotensin II ด้วย)\n\n- **ยับยั้ง renin** คือ aliskiren\n- **ปิด aldosterone receptor** คือ MRA\n- **ยับยั้ง If current** คือ ivabradine\n- **ยับยั้ง SGLT2** คือ dapagliflozin/empagliflozin",
+          "Sacubitril = neprilysin inhibitor → NP ↑",
+          [SL + "Natriuretic peptide และ neprilysin"], ["B7.4(2)", "B7.1.1(2)", "B7.2.5(2)"]),
+        Q("Hyponatremia in HF",
+          "A 74-year-old woman with advanced HFrEF has edema, ascites and serum sodium 124 mmol/L despite fluid excess. Which mechanism best explains her hyponatremia?",
+          "Non-osmotic vasopressin release triggered by low effective arterial blood volume", ["Primary renal salt wasting", "Excess mineralocorticoid causing sodium loss", "Natriuretic peptide deficiency", "Syndrome of inappropriate ADH from a lung tumor"], 0,
+          "ใน HF **ปริมาณน้ำรวมเกิน** แต่ **effective arterial blood volume ลดลง** (CO ต่ำ) → baroreceptor กระตุ้นการหลั่ง **ADH แบบ non-osmotic** แม้ osmolality ต่ำ → ไตดูดน้ำอิสระกลับ → **dilutional (hypervolemic) hyponatremia** ร่วมกับ RAAS และ SNS ที่ทำงานเกิน\n\nโซเดียมต่ำใน HF เป็น **ตัวบ่งชี้พยากรณ์โรคไม่ดี** และอาการ hypoperfusion\n\n- **Renal salt wasting** เป็นภาวะ hypovolemic ไม่บวม\n- **Aldosterone เกิน** ทำให้ดูด Na กลับ ไม่ใช่สูญเสีย\n- **NP ใน HF สูง** ไม่ใช่ขาด\n- **SIADH** เป็น euvolemic ไม่มีบวมหรือท้องมาน",
+          "HF + Na ต่ำ = ADH แบบ non-osmotic จาก effective volume ต่ำ",
+          [SL + "Pathophysiology of HF (Braunwald 12th ed.)"], ["B7.2.5(2)", "B7.1.2(4)", "B9.1.2(8)"]),
+    ],
+})
+
+# 04 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-04",
+    "title": "จาก LVP สู่ปอดบวมน้ำ — hemodynamics ของ congestion",
+    "summary": "ความดัน LV ที่สูงส่งต่อไป LA และ PCWP เมื่อแรงดันในหลอดเลือดฝอยปอดเกินแรง oncotic และการระบายของ lymph จึงเกิดปอดบวมน้ำ",
+    "minutes": 8,
+    "source": SRC,
+    "nl": ["B7.1.2(2)", "B6.2.6(1)", "2.2.5", "B7.2.5(2)"],
+    "md": (
+        "### ห่วงโซ่ความดัน (สไลด์: LVP → LAP → PCWP → pulmonary capillary)\n"
+        "LV บีบหรือคลายตัวไม่ดี → **LVEDP สูง** → ส่งย้อนไป **LA** (ไม่มีลิ้นกั้นระหว่าง LA กับ pulmonary vein) → **pulmonary venous และ capillary pressure สูง** · **PCWP** วัดจาก catheter ที่ลิ่มใน pulmonary artery สาขาเล็ก ใช้แทน LAP (ปกติราว **6–12 mmHg**)\n\n"
+        "[[fig:hf_cascade]]\n\n"
+        "### Starling forces — ทำไมน้ำซึมออก\n"
+        "| แรง | ทิศทาง | ใน HF |\n|---|---|---|\n"
+        "| **Capillary hydrostatic pressure** | ดันน้ำออก | **สูงขึ้นตาม PCWP** |\n"
+        "| **Plasma oncotic pressure** (albumin) | ดึงน้ำกลับ | ปกติราว 25 mmHg · ต่ำลงถ้า albumin ต่ำ |\n"
+        "| **Lymphatic drainage** | ระบายน้ำส่วนเกิน | เพิ่มได้หลายเท่าใน HF เรื้อรัง |\n\n"
+        "สไลด์สรุปว่า **hydrostatic ↑ และ oncotic ↓ ทำให้เกิด HF แบบ typical** — เมื่อแรงดันออกชนะแรงดึงกลับและ lymph ระบายไม่ทัน น้ำจะเข้า **interstitium ก่อน** (Kerley B, peribronchial cuffing) แล้วจึงท่วม **alveoli** (batwing, เสมหะเป็นฟองสีชมพู, hypoxemia)\n\n"
+        "### ประเด็นทางคลินิกที่ออกสอบ\n"
+        "- **HF เฉียบพลัน** (เช่น MI ใหญ่, hypertensive emergency): PCWP เพิ่มเร็ว lymph ปรับตัวไม่ทัน → ปอดบวมน้ำได้ที่ PCWP ไม่สูงมาก\n"
+        "- **HF เรื้อรัง**: lymph ระบายเพิ่มขึ้น → **PCWP สูงมากแต่ฟังปอดใส CXR ไม่ชัด** — การไม่มี crackles จึง **ไม่ได้ตัด congestion**\n"
+        "- **Albumin ต่ำ** (nephrotic, ตับแข็ง, ขาดอาหาร) ทำให้บวมน้ำที่ PCWP ต่ำกว่าปกติ\n"
+        "- **ปอดบวมน้ำที่ PCWP ปกติ** = **non-cardiogenic** (ARDS) จาก capillary รั่ว ไม่ใช่ HF\n\n"
+        "### ด้านขวาและการคั่งของเกลือน้ำทั้งระบบ\n"
+        "RV ล้มเหลว (มักตามหลัง LV ล้มเหลวผ่าน pulmonary hypertension) → **RAP สูง** → JVP สูง, hepatojugular reflux, ตับโต, ascites, ขาบวม · venous pressure ที่ไตสูงทำให้ GFR ลดและดูด Na กลับเพิ่ม (**cardiorenal**) · ไตที่รับรู้ว่า perfusion ต่ำยิ่งเก็บเกลือน้ำ (สไลด์: **water retention**) → วงจร congestion\n"
+    ),
+    "pearls": [
+        "LVEDP → LAP → PCWP: PCWP ใช้แทน LAP (ปกติ 6–12 mmHg)",
+        "ปอดบวมน้ำ = hydrostatic > oncotic + lymph",
+        "HF เรื้อรัง: PCWP สูงแต่ปอดใสได้ — ไม่มี crackles ไม่ได้ตัด congestion",
+        "ปอดบวมน้ำ + PCWP ปกติ = non-cardiogenic (ARDS)",
+        "RAP สูง → JVP, ตับโต, ขาบวม, cardiorenal",
+    ],
+    "figs": {"hf_cascade": {
+        "title": "ห่วงโซ่ความดันจาก LV สู่ปอดบวมน้ำ",
+        "cap": "ฝั่งซ้ายคือลำดับเหตุการณ์ · ฝั่งขวาคือภาพ CXR ที่สัมพันธ์กับ PCWP แบบคลาสสิก (เป็นค่าประมาณ — ใน HF เรื้อรัง ภาพอาจดีกว่าความดันจริง) · กล่องบนขวาคืออาการแสดงเมื่อด้านขวาล้มเหลว",
+        "svg": FIG_CASCADE}},
+    "items": [
+        Q("Non-cardiogenic pulmonary edema",
+          "A 45-year-old man with severe pneumonia develops bilateral alveolar infiltrates and PaO2/FiO2 of 120. A pulmonary artery catheter shows PCWP 10 mmHg and echocardiography shows normal LV function. What is the main mechanism of his pulmonary edema?",
+          "Increased alveolar-capillary permeability", ["Raised pulmonary capillary hydrostatic pressure", "Reduced plasma oncotic pressure from hypoalbuminemia", "Impaired lymphatic drainage from lymphangitic carcinoma", "Left atrial hypertension from mitral stenosis"], 4,
+          "ปอดบวมน้ำที่ **PCWP ปกติ (≤ 12–18 mmHg) และ LV ปกติ** ไม่ใช่ cardiogenic — ภาพเข้ากับ **ARDS** จาก pneumonia ที่ทำให้ **alveolar-capillary membrane รั่ว** โปรตีนและน้ำซึมออกแม้แรงดันปกติ\n\n- **Hydrostatic สูง** ต้องมี PCWP สูง\n- **Oncotic ต่ำ** อาจซ้ำเติมแต่ไม่อธิบาย PaO2/FiO2 120 และ infiltrates เฉียบพลัน\n- **Lymphatic อุดตัน** เป็นภาวะเรื้อรัง\n- **Mitral stenosis** ทำให้ LAP และ PCWP สูง",
+          "ปอดบวมน้ำ + PCWP ปกติ = รั่ว (ARDS) ไม่ใช่หัวใจ",
+          [SL + "LVP → LAP → PCWP → pulmonary capillary"], ["B6.2.6(1)", "B7.1.2(2)", "2.2.9"]),
+        Q("Chronic HF and clear lungs",
+          "A 68-year-old man with long-standing HFrEF has orthopnea and a JVP of 9 cm above the sternal angle. His lungs are clear on auscultation. Right heart catheterization shows PCWP 30 mmHg. Why are crackles absent?",
+          "Chronically increased lymphatic drainage removes interstitial fluid", ["His PCWP is within the normal range", "Crackles only occur in non-cardiogenic edema", "Plasma oncotic pressure is markedly increased in chronic HF", "Right ventricular failure protects the lungs from any congestion"], 1,
+          "ใน **HF เรื้อรัง** ระบบ **lymphatic ของปอดปรับตัวระบายน้ำได้มากขึ้นหลายเท่า** ผนังหลอดเลือดและ interstitium ก็หนาขึ้น → แม้ PCWP สูงถึง 30 mmHg ก็อาจ **ไม่มี crackles และ CXR ไม่ชัด** (สไลด์อ้าง Stouffer: rales มักไม่พบใน HF เรื้อรัง)\n\nจึงต้องดู **อาการ (orthopnea) และ JVP** ประกอบ — การไม่มี crackles ไม่ได้ตัด congestion\n\n- **PCWP 30** สูงมาก (ปกติ ≤ 12)\n- **crackles** พบได้ใน cardiogenic edema เฉียบพลัน\n- **oncotic pressure** ไม่ได้สูงขึ้นใน HF\n- **RV failure** อาจลดเลือดเข้าปอดบ้าง แต่ไม่ใช่คำอธิบายหลักในผู้ป่วย PCWP 30",
+          "HF เรื้อรัง: lymph ปรับตัว → PCWP สูงแต่ปอดใส",
+          [SL + "HF signs: rales (Stouffer, Cardiovascular Hemodynamics 2025)"], ["B7.1.2(2)", "2.3.9(5)"]),
+    ],
+})
+
+# 05 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-05",
+    "title": "อาการของ HF — typical, less typical และหายใจลำบากตามท่า",
+    "summary": "อาการที่จำเพาะคือ orthopnea PND และ bendopnea ส่วนผู้สูงอายุอาจมาด้วยอาการไม่จำเพาะ และ platypnea ชวนคิดโรคอื่น",
+    "minutes": 8,
+    "source": SRC,
+    "nl": ["2.1.34", "2.1.39", "2.3.9(5)"],
+    "md": (
+        "### อาการ (ESC — สไลด์อ้าง 2026 ESC HF guideline)\n"
+        "| Typical | Less typical |\n|---|---|\n"
+        "| **Breathlessness** | ไอตอนกลางคืน · wheezing (cardiac asthma) |\n"
+        "| **Orthopnea** | รู้สึกท้องอืด แน่นท้อง เบื่ออาหาร |\n"
+        "| **Paroxysmal nocturnal dyspnea (PND)** | สับสน (โดยเฉพาะผู้สูงอายุ) · ซึมเศร้า |\n"
+        "| **ทนการออกแรงลดลง** · อ่อนเพลีย ฟื้นตัวช้าหลังออกแรง | ใจสั่น · เวียนศีรษะ · syncope |\n"
+        "| **ข้อเท้าบวม** | **Bendopnea** |\n\n"
+        "สไลด์อ้าง **ADHERE registry** ว่า ณ วันที่นอนโรงพยาบาล **อาการเหนื่อยเป็นอาการที่พบบ่อยที่สุด** ตามด้วยสัญญาณ congestion เช่น crackles และขาบวม\n\n"
+        "### หายใจลำบากตามท่า (สไลด์)\n"
+        "| อาการ | ลักษณะ | กลไก/ความหมาย |\n|---|---|---|\n"
+        "| **Orthopnea** | เหนื่อยเมื่อนอนราบ ต้องหนุนหมอนหลายใบ ดีขึ้นเมื่อลุกนั่ง | นอนราบ เลือดจากขาและช่องท้องไหลกลับเข้าปอด preload ↑ → PCWP ↑ |\n"
+        "| **PND** | ตื่นกลางดึกหลังหลับ 1–3 ชม. หอบ ต้องลุกนั่ง/ยืน **ใช้เวลานานกว่าจะดีขึ้น** | น้ำจาก interstitium กลับเข้ากระแสเลือดช้า ๆ ขณะนอน · sympathetic และการตอบสนองของศูนย์หายใจลดลงขณะหลับ |\n"
+        "| **Bendopnea** | เหนื่อย **ภายใน 30 วินาที** เมื่อนั่งก้มตัว (เช่นใส่รองเท้า) | ก้มตัวเพิ่มความดันในช่องท้อง preload เข้าหัวใจที่ filling pressure สูงอยู่แล้ว · สไลด์: พบ **18–28% ใน HF คงที่** และ **48% ใน HF กำเริบ** (J Am Coll Cardiol HF 2014) |\n"
+        "| **Trepopnea** | เหนื่อยเมื่อนอนตะแคงด้านหนึ่ง สบายเมื่อตะแคงอีกด้าน | ผู้ป่วย HF ที่หัวใจโตมักสบายกว่าเมื่อตะแคงขวา · โรคปอดข้างเดียว/effusion มักชอบเอาข้างดีลง |\n"
+        "| **Platypnea** | เหนื่อยเมื่อนั่ง/ยืน **ดีขึ้นเมื่อนอนราบ** (ตรงข้าม orthopnea) | **ไม่ใช่ลักษณะของ HF** — คิดถึง shunt ในหัวใจ (PFO, ASD) หรือ hepatopulmonary syndrome · มักมี orthodeoxia (O2 ตกเมื่อลุก) |\n\n"
+        "> **PND แยกจาก asthma กลางคืนอย่างไร** — PND ดีขึ้นช้าหลังลุกนั่งเป็นสิบนาที มักมีหลักฐาน HF อื่นร่วม (JVP, ขาบวม, NP สูง) ส่วน asthma มีประวัติภูมิแพ้ ตอบสนองต่อ bronchodilator และไม่มี congestion · \"cardiac asthma\" (wheeze จาก edema รอบหลอดลม) ทำให้แยกยากในผู้สูงอายุ\n\n"
+        "### อาการที่บอกความรุนแรงหรือ low output\n"
+        "อ่อนเพลียมาก, สับสน ง่วงซึม, ปัสสาวะน้อย, ปลายมือเท้าเย็น, เบื่ออาหาร น้ำหนักลด (cardiac cachexia) — บอกว่า perfusion ไม่พอ ต้องประเมินเร่งด่วน\n"
+    ),
+    "pearls": [
+        "Typical: เหนื่อย · orthopnea · PND · ทนออกแรงลดลง · ขาบวม",
+        "Bendopnea = เหนื่อยภายใน 30 วินาทีเมื่อก้มตัว → filling pressure สูง",
+        "Platypnea (เหนื่อยเมื่อลุก ดีขึ้นเมื่อนอน) → คิด shunt ไม่ใช่ HF",
+        "ผู้สูงอายุอาจมาด้วยสับสน อ่อนเพลีย เบื่ออาหาร",
+    ],
+    "items": [
+        Q("Bendopnea",
+          "A 63-year-old man with HFrEF reports that when he sits and bends forward to tie his shoes, he becomes short of breath within about 20 seconds and must sit up. What is this symptom called and what does it indicate?",
+          "Bendopnea — suggests elevated cardiac filling pressures", ["Platypnea — suggests an intracardiac right-to-left shunt", "Trepopnea — suggests a unilateral pleural effusion", "Orthopnea — suggests diaphragmatic paralysis", "Paroxysmal nocturnal dyspnea — suggests nocturnal asthma"], 3,
+          "**Bendopnea** = หายใจลำบากภายใน **30 วินาที** เมื่อนั่งก้มตัวไปข้างหน้า — การก้มเพิ่มความดันในช่องท้องและดันเลือดเข้าหัวใจที่ **filling pressure สูงอยู่แล้ว** สไลด์ระบุว่าพบ 18–28% ใน HF คงที่ และ 48% ใน HF กำเริบ\n\n- **Platypnea** เหนื่อยเมื่อลุกนั่ง ดีขึ้นเมื่อนอน (shunt)\n- **Trepopnea** เหนื่อยเมื่อตะแคงด้านหนึ่ง\n- **Orthopnea** เหนื่อยเมื่อนอนราบ ไม่ใช่เมื่อก้ม\n- **PND** ตื่นกลางดึกเพราะหอบ",
+          "ก้มตัวแล้วเหนื่อยใน 30 วินาที = bendopnea",
+          [SL + "HF signs — Bendopnea (JACC HF 2014;2:24–31)"], ["2.1.34", "2.3.9(5)"]),
+        Q("Platypnea-orthodeoxia",
+          "A 70-year-old woman becomes breathless and her SpO2 falls from 96% to 86% when she sits up, improving when she lies flat. JVP is normal, lungs are clear and NT-proBNP is normal. Which condition is most likely?",
+          "Right-to-left shunt through a patent foramen ovale", ["Decompensated HFrEF", "Bilateral pleural effusions", "Severe mitral regurgitation", "Diaphragmatic paralysis"], 3,
+          "อาการเหนื่อยเมื่อลุกนั่งและดีขึ้นเมื่อนอน (**platypnea**) ร่วมกับ O2 ตกเมื่อลุก (**orthodeoxia**) เป็นกลุ่มอาการ **platypnea-orthodeoxia** — สาเหตุสำคัญคือ **shunt ผ่าน PFO/ASD** (ท่าตั้งตรงเปลี่ยนทิศของเลือดผ่านรู) หรือ hepatopulmonary syndrome\n\nสไลด์วาง platypnea คู่กับ orthopnea/bendopnea เพื่อให้แยกได้ — **HF ทำให้เหนื่อยเมื่อนอนราบ ไม่ใช่เมื่อลุก**\n\n- **HFrEF กำเริบ** → orthopnea, JVP สูง, NP สูง\n- **Effusion ทั้งสองข้าง** มักเหนื่อยเมื่อนอน\n- **MR รุนแรง** → congestion และ orthopnea\n- **Diaphragm อัมพาตทั้งสองข้าง** → เหนื่อยเมื่อนอนราบ (orthopnea) ชัดมาก",
+          "Platypnea = เหนื่อยเมื่อลุก → shunt ไม่ใช่ HF",
+          [SL + "HF signs: platypnea · orthopnea · bendopnea · trepopnea"], ["2.1.34", "2.1.37"]),
+        Q("Paroxysmal nocturnal dyspnea",
+          "A 69-year-old man with hypertension wakes about 2 hours after falling asleep feeling suffocated and must sit on the edge of the bed for about 20 minutes before breathing eases. He also has ankle swelling. Which feature best distinguishes this from nocturnal asthma?",
+          "Slow relief over many minutes after sitting up, with signs of congestion", ["Prompt relief within seconds of taking one deep breath", "Associated sneezing and itchy eyes", "Symptoms only after exposure to cold air", "Normal JVP and absent edema"], 0,
+          "**PND** เกิดหลังหลับ 1–3 ชม. เมื่อน้ำจาก interstitium กลับเข้ากระแสเลือดและ preload เพิ่ม ร่วมกับ sympathetic ที่ลดลงขณะหลับ — ผู้ป่วยต้องลุกนั่งหรือยืน และ **อาการดีขึ้นช้า (มักเป็นสิบนาที)** ต่างจาก orthopnea ที่ดีขึ้นเร็วเมื่อลุก ร่วมกับ **อาการแสดงของ congestion** เช่น ขาบวม JVP สูง\n\n- **หายเร็วเมื่อหายใจลึก** ไม่ใช่ลักษณะของทั้งสองโรค\n- **จาม คันตา** และ **อากาศเย็น** ชวนคิด asthma/ภูมิแพ้\n- **JVP ปกติ ไม่บวม** ชวนให้คิดสาเหตุอื่นมากกว่า HF",
+          "PND: ตื่นหลังหลับ 1–3 ชม. ลุกนั่งนานจึงดีขึ้น + congestion",
+          [SL + "HF symptoms (2026 ESC Guidelines)"], ["2.1.34", "2.3.9(5)", "2.2.11"]),
+    ],
+})
+
+# 06 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-06",
+    "title": "อาการแสดง — JVP, hepatojugular reflux, edema, crepitation",
+    "summary": "JVP ที่สูงและ hepatojugular reflux จำเพาะต่อ filling pressure สูง ส่วนขาบวมและ crepitation ไวแต่ไม่จำเพาะ",
+    "minutes": 10,
+    "source": SRC,
+    "nl": ["2.3.9(5)", "2.1.39", "B7.1.2(1)", "B7.1.2(2)"],
+    "md": (
+        "### อาการแสดง (ESC)\n"
+        "| จำเพาะกว่า | จำเพาะน้อยกว่า |\n|---|---|\n"
+        "| **JVP สูง** | น้ำหนักขึ้น > 2 กก./สัปดาห์ · น้ำหนักลด/กล้ามเนื้อลีบ (ระยะท้าย) |\n"
+        "| **Hepatojugular reflux** | ขาบวม · crepitations · pleural effusion |\n"
+        "| **S3 (gallop rhythm)** | หัวใจเต้นเร็ว ชีพจรไม่สม่ำเสมอ หายใจเร็ว Cheyne–Stokes |\n"
+        "| **Apex เลื่อนออกด้านข้าง** | ตับโต ascites · ปลายมือเท้าเย็น · ปัสสาวะน้อย · pulse pressure แคบ |\n\n"
+        "### JVP และการประมาณ RAP (สไลด์: JAMA 2002;287:628–640)\n"
+        "1. ผู้ป่วยนอนศีรษะสูง **45°** หันหน้าเล็กน้อยไปทางซ้าย ดู **internal jugular vein ด้านขวา**\n"
+        "2. หาจุดสูงสุดของคลื่น วัด **ระยะแนวดิ่งจาก sternal angle**\n"
+        "3. **RAP (cmH₂O) ≈ ความสูง JVP เหนือ sternal angle + ระยะจาก sternal angle ถึงกลาง RA** — ตำรามาตรฐานใช้ **ประมาณ 5 cm** (ตัวเลขที่บวกในสไลด์ดึงออกมาได้เป็น +3 ไม่ชัด) · แปลงเป็น mmHg โดย **หาร 1.36**\n"
+        "4. JVP **> 3–4 cm เหนือ sternal angle** ถือว่าสูง\n\n"
+        "> **ตัวอย่าง:** JVP สูง 6 cm เหนือ sternal angle → RAP ≈ 6 + 5 = 11 cmH₂O ≈ **8 mmHg** (ปกติ RAP ราว 0–5 mmHg)\n\n"
+        "แยก JVP จาก carotid: JVP **มีสองยอดต่อหนึ่งจังหวะ คลำไม่ได้ กดที่ฐานคอแล้วหาย ระดับเปลี่ยนตามท่าและการหายใจ** · carotid คลำได้ ยอดเดียว ไม่เปลี่ยนตามท่า\n\n"
+        "### Hepatojugular (abdominojugular) reflux (สไลด์: Am J Cardiol 1990;66:1002)\n"
+        "- กดบริเวณกลางท้องหรือใต้ชายโครงขวาอย่างสม่ำเสมอ **ราว 10–15 วินาที** ผู้ป่วยหายใจปกติ ไม่เบ่ง\n"
+        "- **Positive** เมื่อ JVP **สูงขึ้นและค้างอยู่ตลอดการกด** (สไลด์ใช้เกณฑ์ JVP เพิ่ม > 4 cm) แล้วลดลงทันทีเมื่อปล่อย\n"
+        "- สไลด์: สัมพันธ์กับ **RAP > 8 mmHg (sensitivity 73%, specificity 87%)** และ **PCWP > 15 mmHg (sensitivity 55%, specificity 83%)**\n"
+        "- ความหมาย: ระบบหลอดเลือดดำเต็มจนรับเลือดที่ถูกดันจากช่องท้องไม่ได้ และ RV รับ preload เพิ่มไม่ได้\n\n"
+        "### อาการแสดงอื่น\n"
+        "| อาการแสดง | ประเด็นสำคัญ |\n|---|---|\n"
+        "| **Pitting edema** | ที่ขาหรือ sacrum (ผู้ป่วยติดเตียง) · ไม่จำเพาะ — พบใน CCB (amlodipine), venous insufficiency, albumin ต่ำ, ไตวาย |\n"
+        "| **Rales / crepitations** | ที่ฐานปอดทั้งสองข้าง · มักหายไปใน HF เรื้อรัง (lymph ปรับตัว) |\n"
+        "| **Pink frothy sputum** | เสมหะเป็นฟองสีชมพู = **alveolar edema** · ภาวะฉุกเฉิน (สไลด์: JACC HF 2018) |\n"
+        "| **S3** | ช่วง rapid filling ใน LV ที่ขยายและความดันสูง · ฟังด้วย bell ที่ apex ท่าตะแคงซ้าย |\n"
+        "| **Pulse pressure แคบ** | proportional pulse pressure (SBP − DBP)/SBP **< 25%** สัมพันธ์กับ cardiac index ต่ำ → สัญญาณ \"cold\" |\n"
+    ),
+    "pearls": [
+        "RAP (cmH₂O) ≈ JVP เหนือ sternal angle + 5 · หาร 1.36 เป็น mmHg",
+        "JVP > 3–4 cm เหนือ sternal angle = สูง",
+        "HJR positive = JVP สูงค้างตลอดการกดท้อง ~10–15 วินาที",
+        "จำเพาะ: JVP · HJR · S3 · apex เลื่อน — ไม่จำเพาะ: ขาบวม crepitation",
+        "Pink frothy sputum = alveolar edema",
+    ],
+    "items": [
+        Q("Estimating right atrial pressure",
+          "A 70-year-old woman with suspected HF is examined at 45 degrees. The top of the right internal jugular pulsation is 6 cm vertically above the sternal angle. Using the conventional 5-cm sternal-angle-to-right-atrium distance, what is her estimated right atrial pressure?",
+          "About 11 cmH2O (about 8 mmHg) — elevated", ["About 6 cmH2O — normal", "About 1 cmH2O — low", "About 11 mmHg (about 15 cmH2O) — elevated", "Cannot be estimated without central venous catheterization"], 2,
+          "**RAP (cmH₂O) ≈ ความสูง JVP เหนือ sternal angle + 5** = 6 + 5 = **11 cmH₂O** → หาร 1.36 ≈ **8 mmHg** ซึ่ง **สูง** (ปกติราว 0–5 mmHg และ JVP > 3–4 cm เหนือ sternal angle ถือว่าสูง)\n\n- **6 cmH₂O** ลืมบวกระยะถึง RA\n- **1 cmH₂O** คำนวณผิดทาง\n- **11 mmHg** ลืมแปลงหน่วย (cmH₂O ≠ mmHg)\n- การตรวจร่างกายประมาณ RAP ได้ ไม่จำเป็นต้องใส่ CVC ทุกราย",
+          "JVP + 5 = RAP (cmH₂O) · หาร 1.36 = mmHg",
+          [SL + "HF signs — estimated RA pressure (JAMA 2002;287:628–640)"], ["2.3.9(5)", "B7.1.2(2)"]),
+        Q("Hepatojugular reflux",
+          "While examining a 66-year-old man with dyspnea, you apply firm, sustained pressure over the mid-abdomen with the patient breathing normally. Which finding defines a positive hepatojugular (abdominojugular) reflux?",
+          "A rise in JVP that is sustained throughout about 10–15 seconds of pressure and falls on release", ["A transient JVP rise lasting 2–3 seconds that falls during continued pressure", "Pain over the liver during palpation", "A fall in JVP during abdominal pressure", "Visible pulsation of the liver edge"], 4,
+          "การตรวจ **HJR** คือกดท้องสม่ำเสมอ **ราว 10–15 วินาที** โดยผู้ป่วยหายใจปกติ (ไม่เบ่ง ซึ่งจะทำให้ผลบวกลวง) → **positive เมื่อ JVP สูงขึ้นและค้างตลอดการกด** (สไลด์ใช้ > 4 cm) แล้วลดลงเมื่อปล่อย — สไลด์ระบุว่าสัมพันธ์กับ **RAP > 8 mmHg (sens 73%, spec 87%)** และ **PCWP > 15 mmHg (sens 55%, spec 83%)**\n\n- **ขึ้นชั่วคราวแล้วลด** เป็นการตอบสนองปกติ\n- **เจ็บตับ** เป็นอาการของตับคั่งเลือด แต่ไม่ใช่เกณฑ์ HJR\n- **JVP ลดลง** ไม่ใช่ผลบวก\n- **ตับเต้น** (pulsatile liver) ชวนคิด tricuspid regurgitation รุนแรง",
+          "HJR: กด 10–15 วินาที · JVP สูงค้าง = positive",
+          [SL + "HF signs — hepatojugular reflux (Am J Cardiol 1990;66:1002)"], ["2.3.9(5)", "B7.1.2(2)"]),
+        Q("Specificity of HF signs",
+          "In a breathless 75-year-old patient, which physical finding is the most specific for raised cardiac filling pressures due to heart failure?",
+          "Elevated jugular venous pressure", ["Bilateral ankle pitting edema", "Bibasal inspiratory crackles", "Resting tachycardia", "Expiratory wheeze"], 1,
+          "ตามตาราง ESC อาการแสดงที่ **จำเพาะ** ต่อ HF คือ **JVP สูง, hepatojugular reflux, S3, apex เลื่อนออกด้านข้าง** — JVP สะท้อน RAP โดยตรง และใน HF ส่วนใหญ่ RAP สูงไปด้วยกันกับ PCWP\n\n- **ขาบวม** พบในยา CCB, venous insufficiency, albumin ต่ำ, ไต\n- **Crackles** พบใน pneumonia, ILD, atelectasis และมักไม่มีใน HF เรื้อรัง\n- **หัวใจเต้นเร็ว** ไม่จำเพาะ\n- **Wheeze** ชวนคิดโรคทางเดินหายใจ (แม้ cardiac asthma จะมีได้)",
+          "JVP สูง จำเพาะกว่าขาบวมและ crackles",
+          [SL + "HF signs (2026 ESC Guidelines)"], ["2.3.9(5)", "2.1.39"]),
+    ],
+})
+
+# 07 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-07",
+    "title": "Natriuretic peptides — กลไก จุดตัด และกับดัก",
+    "summary": "BNP/NT-proBNP หลั่งจาก ventricle เมื่อผนังถูกยืด ค่าต่ำช่วยตัด HF ออก ต้องแปลผลตามอายุ ไต AF อ้วน และยา ARNI",
+    "minutes": 10,
+    "source": SRC,
+    "nl": ["B7.1.1(2)", "3.3.13", "B7.3(2)", "2.3.9(5)"],
+    "md": (
+        "### NP มาจากไหน (สไลด์)\n"
+        "- **ผนัง ventricle ถูกยืด** (volume/pressure overload, wall stress ↑) → myocyte สร้าง **preproBNP → proBNP** → ถูกตัดเป็น **BNP (32 amino acids, ออกฤทธิ์)** และ **NT-proBNP (76 amino acids, ไม่ออกฤทธิ์)** ในสัดส่วนเท่ากัน\n"
+        "- ฤทธิ์ของ BNP: **ขับ Na และน้ำ ขยายหลอดเลือด ยับยั้ง RAAS และ SNS ลดพังผืด** — ถ่วงดุลระบบที่ทำร้ายหัวใจ\n"
+        "- กำจัด: BNP ถูก **neprilysin** ย่อยและจับกับ receptor (half-life ราว 20 นาที) · NT-proBNP ขับทางไตเป็นหลัก (half-life นานกว่า ราว 1–2 ชม.)\n\n"
+        "> **กับดัก ARNI:** sacubitril ยับยั้ง neprilysin → **BNP สูงขึ้นจากยา** ไม่ได้แปลว่า HF แย่ลง · **NT-proBNP ไม่ใช่ substrate ของ neprilysin** จึงใช้ติดตามผู้ป่วยที่ได้ ARNI ได้\n\n"
+        "### จุดตัดที่ใช้วินิจฉัย\n"
+        "| สถานการณ์ | BNP | NT-proBNP | แหล่ง |\n|---|---|---|---|\n"
+        "| **ผู้ป่วยนอก / อาการค่อยเป็นค่อยไป** | ≥ 35 pg/mL | ≥ 125 pg/mL | HFCT 2019 (สไลด์) · ESC 2021 |\n"
+        "| **ห้องฉุกเฉิน / อาการเฉียบพลัน** | ≥ 100 pg/mL | ≥ 300 pg/mL | HFCT 2019 (สไลด์) · ESC 2021 |\n\n"
+        "ค่าเหล่านี้เป็น **rule-out** (negative predictive value สูง) — ต่ำกว่าเกณฑ์ HF ไม่น่าใช่ · สูงกว่าเกณฑ์ **ยังไม่ใช่การวินิจฉัย** ต้องทำ echocardiography ต่อ\n\n"
+        "> **อัปเดตแนวทาง ·** สไลด์ใช้จุดตัดเดียวสำหรับ OPD/IPD จาก HFCT 2019 (J Med Assoc Thai 2019;102(2):231–9) · **2026 ESC HF guideline** เพิ่มเกณฑ์ **ตามอายุสำหรับผู้ป่วยนอก** ที่บ่งว่า \"HF น่าจะเป็น\": **NT-proBNP ≥ 125 pg/mL ถ้าอายุ < 50 ปี · ≥ 250 pg/mL ถ้า 50–75 ปี · ≥ 500 pg/mL ถ้า > 75 ปี** ส่วนเกณฑ์ตัดออกใน decompensated HF ยังเป็น **NT-proBNP < 300 หรือ BNP < 100 pg/mL** · **2nd Universal Definition 2026** ย้ำว่า **NP ปกติไม่ได้ตัด HFpEF ออก**\n\n"
+        "### ปัจจัยที่ทำให้ค่าเปลี่ยน — แปลผลเสมอ\n"
+        "| NP สูงโดยไม่ใช่ HF (หรือสูงเกินกว่า HF) | NP ต่ำกว่าความเป็นจริง |\n|---|---|\n"
+        "| **อายุมาก** · เพศหญิง | **อ้วน** (BMI สูง) |\n"
+        "| **AF** · tachyarrhythmia | **Flash pulmonary edema** ช่วงแรก (หลั่งไม่ทัน) |\n"
+        "| **ไตวาย (CKD/AKI)** | **Constrictive pericarditis** · tamponade |\n"
+        "| **PE · pulmonary hypertension** · RV strain | **Mitral stenosis** · acute MR (ventricle ยังไม่ถูกยืด) |\n"
+        "| **ACS** · myocarditis · ลิ้นหัวใจ | HFpEF บางราย (โดยเฉพาะคนอ้วน) |\n"
+        "| sepsis · ซีด · ไทรอยด์เป็นพิษ · ยาเคมีบำบัด | |\n"
+        "| **BNP: ได้ ARNI** | |\n\n"
+        "### NP ใช้ทำอะไรได้อีก\n"
+        "- **พยากรณ์โรค** — ยิ่งสูงยิ่งเสี่ยงตายและนอนโรงพยาบาล ค่าที่ลดลงหลังรักษาบอกพยากรณ์ดีขึ้น\n"
+        "- **คัดกรองกลุ่มเสี่ยง (stage A → B)** เช่น เบาหวาน เพื่อเริ่มการป้องกัน\n"
+        "- ค่าก่อนกลับบ้านใช้เป็น \"dry baseline\" ของผู้ป่วยแต่ละคน\n"
+    ),
+    "pearls": [
+        "BNP ออกฤทธิ์ · NT-proBNP ไม่ออกฤทธิ์ — มาจาก proBNP เท่ากัน",
+        "Rule-out: ผู้ป่วยนอก NT-proBNP < 125 · ฉุกเฉิน < 300 (BNP < 35 / < 100)",
+        "ESC 2026 ผู้ป่วยนอก: NT-proBNP 125 / 250 / 500 ตามอายุ < 50 / 50–75 / > 75",
+        "ได้ ARNI → ใช้ NT-proBNP ไม่ใช่ BNP",
+        "อ้วนทำให้ NP ต่ำ · อายุ AF ไตวาย ทำให้ NP สูง",
+    ],
+    "items": [
+        Q("NP monitoring on ARNI",
+          "A 58-year-old man with HFrEF started sacubitril/valsartan 3 months ago and feels much better. His BNP has risen from 420 to 610 pg/mL. Which test is most appropriate to monitor his natriuretic peptide status?",
+          "NT-proBNP", ["BNP measured again in 2 weeks", "Troponin T", "Serum aldosterone", "Plasma renin activity"], 1,
+          "**Sacubitril ยับยั้ง neprilysin** ซึ่งเป็นเอนไซม์หลักที่ทำลาย **BNP** → BNP สูงขึ้นจากยาเอง จึงแปลผลไม่ได้ ขณะที่ **NT-proBNP ไม่ถูก neprilysin ย่อย** จึงสะท้อนภาวะของหัวใจได้ถูกต้อง (และมักลดลงเมื่อการรักษาได้ผล)\n\n- **BNP ซ้ำ** ยังถูกรบกวนจากยาเหมือนเดิม\n- **Troponin** บอกการบาดเจ็บของกล้ามเนื้อ ไม่ใช่ filling pressure\n- **Aldosterone / renin** ไม่ใช้ติดตาม HF ในเวชปฏิบัติ",
+          "ARNI → BNP สูงจากยา → ติดตามด้วย NT-proBNP",
+          [SL + "Natriuretic peptide และ neprilysin"], ["B7.1.1(2)", "3.3.13", "B7.4(2)"]),
+        Q("NP in obesity",
+          "A 52-year-old woman with BMI 41 kg/m2, hypertension and diabetes has progressive exertional dyspnea and ankle edema. NT-proBNP is 110 pg/mL. What is the best interpretation and next step?",
+          "Obesity lowers NP levels, so HF is not excluded; arrange echocardiography", ["HF is excluded; no further cardiac testing is needed", "The result proves HFpEF; start a loop diuretic", "Repeat NT-proBNP in 1 year", "Measure BNP instead because it is unaffected by obesity"], 3,
+          "**ความอ้วนทำให้ NP ต่ำกว่าความเป็นจริง** (adipose tissue มี clearance receptor และสร้างน้อยลง) ผู้ป่วยมีอาการและปัจจัยเสี่ยงของ **HFpEF** ชัดเจน (อ้วน HT DM) — ค่าที่ต่ำกว่า 125 จึง **ตัด HF ออกไม่ได้** ต้องทำ **echocardiography** ดูโครงสร้างและ diastolic function · 2nd Universal Definition 2026 ย้ำว่า **NP ปกติไม่ได้ตัด HFpEF**\n\n- **ตัด HF ทิ้ง** พลาดในคนอ้วน\n- **พิสูจน์ HFpEF แล้ว** ผิด เพราะยังไม่มีหลักฐานโครงสร้างหัวใจ\n- **รอ 1 ปี** ทำให้วินิจฉัยช้า\n- **BNP** ก็ถูกความอ้วนกดเช่นกัน",
+          "อ้วน → NP ต่ำลวง → อาการชวนสงสัยให้ทำ echo",
+          [SL + "NP confounders", "Second Universal Definition of HF 2026"], ["3.3.13", "3.3.23", "2.3.9(5)"]),
+        Q("NP rule-out in the ED",
+          "A 64-year-old man presents to the emergency department with acute dyspnea and fever. Lungs show right basal bronchial breathing. NT-proBNP is 120 pg/mL. What does this result indicate?",
+          "Acute HF is unlikely; look for another cause such as pneumonia", ["Acute HF is confirmed", "HFpEF is likely because NT-proBNP is above 100 pg/mL", "The test is uninterpretable in the emergency setting", "He needs urgent IV furosemide"], 0,
+          "ในสถานการณ์ **เฉียบพลัน** จุดตัดออกคือ **NT-proBNP < 300 pg/mL (BNP < 100 pg/mL)** — ค่า 120 จึงทำให้ **acute HF ไม่น่าเป็น** (NPV สูง) และภาพทางคลินิก (ไข้ bronchial breathing) ชี้ไปทาง **pneumonia**\n\n- **ยืนยัน HF** ผิด เพราะค่าต่ำกว่าเกณฑ์\n- **100 pg/mL** เป็นจุดตัดของ BNP ไม่ใช่ NT-proBNP\n- NP ออกแบบมาเพื่อใช้ใน ER โดยเฉพาะ\n- **ให้ furosemide** ในผู้ป่วยติดเชื้อที่ไม่มี congestion อาจทำให้ขาดน้ำและความดันต่ำ",
+          "ER: NT-proBNP < 300 → acute HF ไม่น่าใช่",
+          [SL + "HF biomarkers (J Med Assoc Thai 2019;102(2):231–9)", "2026 ESC Guidelines — DHF rule-out"], ["3.3.13", "2.1.34"]),
+    ],
+})
+
+# 08 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-08",
+    "title": "หลักฐาน congestion และแผนการวินิจฉัย — CXR, echo, RHC",
+    "summary": "CXR แสดง congestion เป็นขั้นตาม PCWP echo ยืนยันความผิดปกติและจำแนก EF แล้วจึงหาสาเหตุ",
+    "minutes": 9,
+    "source": SRC,
+    "nl": ["3.2.1", "3.3.23", "2.2.5", "2.3.9(5)", "3.3.26"],
+    "md": (
+        "### CXR ใน HF (สไลด์: J Med Assoc Thai 2019 · Braunwald)\n"
+        "| ขั้น | ภาพ | PCWP โดยประมาณ (คลาสสิก) |\n|---|---|---|\n"
+        "| **1. Redistribution** | **Cephalization** — หลอดเลือดปอดกลีบบนใหญ่เท่าหรือมากกว่ากลีบล่าง | ราว 13–18 mmHg |\n"
+        "| **2. Interstitial edema** | **Kerley B lines** (เส้นสั้นแนวนอนที่ชายปอด), peribronchial cuffing, ขอบ hilum ไม่ชัด | ราว 18–25 mmHg |\n"
+        "| **3. Alveolar edema** | **Batwing / butterfly** — ฝ้าขาวรอบ hilum สองข้าง | ราว > 25 mmHg |\n\n"
+        "ตัวเลขในตารางสไลด์ (Braunwald 10th ed.) ดึงออกมาได้ไม่ครบ จึงใช้ค่าประมาณแบบคลาสสิกที่สอนทั่วไป หลักที่ต้องจำคือ **ภาพแย่ลงเป็นขั้นตามความดัน** และ **ภาพตามหลังความดันจริง** — ทั้งช่วงที่ความดันขึ้นเร็วและช่วงที่รักษาแล้ว (ภาพหายช้ากว่า)\n\n"
+        "อื่น ๆ: **cardiomegaly** (CTR > 0.5 ในฟิล์ม PA) · **pleural effusion** (มักสองข้าง หรือขวามากกว่า) · CXR ปกติ **ไม่ได้ตัด HF** โดยเฉพาะ HF เรื้อรัง\n\n"
+        "### Echocardiography — การตรวจหลักที่ต้องทำทุกราย\n"
+        "- **LVEF** และขนาด LV → จำแนก HFrEF / HFpEF\n"
+        "- **Regional wall motion** (ischemic) · **ลิ้นหัวใจ** · **pericardium**\n"
+        "- **Diastolic function / filling pressure**: E/e′, LA volume index, TR velocity\n"
+        "- **RV function** และ **IVC** (ขนาดและการยุบตัว → ประมาณ RAP)\n\n"
+        "**Lung ultrasound** — B-lines หลายเส้นทั้งสองข้างสนับสนุน interstitial edema ทำข้างเตียงได้เร็ว\n\n"
+        "**Right heart catheterization** — มาตรฐานอ้างอิงของ filling pressure (PCWP, RAP, cardiac output) ใช้เมื่อวินิจฉัยไม่ชัด HFpEF ที่ไม่แน่ใจ (PCWP ขณะพัก ≥ 15 หรือขณะออกกำลัง ≥ 25 mmHg) หรือประเมิน advanced HF\n\n"
+        "### แผนการวินิจฉัย (ESC)\n"
+        "1. **สงสัย HF** จากอาการ อาการแสดง ปัจจัยเสี่ยง\n"
+        "2. **ECG + NP** — ECG ปกติและ NP ต่ำกว่าเกณฑ์ทำให้ HF ไม่น่าเป็น\n"
+        "3. ถ้า NP สูง (หรือสงสัยมาก) → **echocardiography**\n"
+        "4. ยืนยัน HF → **จำแนก LVEF** → **หาสาเหตุ** และตัวกระตุ้น\n\n"
+        "### การตรวจหาสาเหตุและโรคร่วมพื้นฐาน\n"
+        "CBC (ซีด) · **ferritin และ TSAT** (ขาดธาตุเหล็ก) · Na K Cr eGFR · glucose/HbA1c · lipid · TFT · LFT · ประเมินหลอดเลือดโคโรนารีเมื่อสงสัย ischemic · **cardiac MRI** เมื่อสงสัย cardiomyopathy เฉพาะ (myocarditis, amyloid, sarcoid)\n"
+    ),
+    "pearls": [
+        "CXR: cephalization → Kerley B/cuffing → batwing ตาม PCWP ที่สูงขึ้น",
+        "CXR ปกติไม่ได้ตัด HF โดยเฉพาะ HF เรื้อรัง",
+        "ทุกรายต้องทำ echo: LVEF, wall motion, ลิ้น, filling pressure",
+        "ECG ปกติ + NP ต่ำ = HF ไม่น่าเป็น",
+        "ตรวจ ferritin และ TSAT ในผู้ป่วย HF ทุกราย",
+    ],
+    "mnem": [{
+        "name": "ABCDE ของ HF ใน CXR",
+        "what": "สิ่งที่ต้องหาใน CXR ผู้ป่วยสงสัย HF",
+        "lines": [
+            ["A", "**A**lveolar edema — batwing"],
+            ["B", "Kerley **B** lines"],
+            ["C", "**C**ardiomegaly — CTR > 0.5"],
+            ["D", "**D**ilated upper lobe vessels — cephalization"],
+            ["E", "pleural **E**ffusion"],
+        ],
+        "note": "ลำดับในชื่อไม่ใช่ลำดับความรุนแรง — ความรุนแรงไล่จาก D (redistribution) → B (interstitial) → A (alveolar)",
+        "src": "mnemonic ที่ใช้สอนการอ่าน CXR แพร่หลาย (เช่น Radiopaedia) — ไม่ได้มาจากแนวทาง",
+    }],
+    "items": [
+        Q("CXR stages of congestion",
+          "A 71-year-old woman with dyspnea has a chest radiograph showing upper lobe venous diversion, short horizontal lines at the lateral lung bases and peribronchial cuffing, with no perihilar airspace opacity. Which stage of congestion and approximate PCWP does this suggest?",
+          "Interstitial edema, PCWP about 18–25 mmHg", ["Normal pulmonary venous pressure, PCWP below 12 mmHg", "Redistribution only, PCWP about 13–18 mmHg", "Alveolar edema, PCWP above 25 mmHg", "Non-cardiogenic edema with normal PCWP"], 4,
+          "ภาพมี **Kerley B lines และ peribronchial cuffing** แต่ยังไม่มีฝ้าขาวรอบ hilum → **interstitial edema** ซึ่งสัมพันธ์กับ PCWP ราว **18–25 mmHg** (ค่าคลาสสิก)\n\n- **ปกติ** ไม่มี cephalization\n- **Redistribution อย่างเดียว** ยังไม่มี Kerley B\n- **Alveolar edema** ต้องมี batwing/airspace opacity\n- **Non-cardiogenic** มักไม่มี cephalization และ Kerley B แต่มี patchy airspace รอบนอก",
+          "Kerley B + cuffing = interstitial edema",
+          [SL + "Correlation of pulmonary vascular pattern and PCWP (Braunwald)"], ["3.2.1", "B6.2.6(1)"]),
+        Q("Diagnostic pathway",
+          "A 67-year-old man has 3 months of exertional dyspnea and ankle swelling. ECG shows left bundle branch block. NT-proBNP is 980 pg/mL. What is the next most appropriate investigation?",
+          "Transthoracic echocardiography", ["Coronary angiography immediately", "Cardiac MRI before any other imaging", "Repeat NT-proBNP in 3 months", "Exercise stress ECG"], 2,
+          "ตามแผน ESC: สงสัย HF → **ECG + NP** → NP สูงกว่าเกณฑ์ผู้ป่วยนอก (NT-proBNP ≥ 125; แม้ใช้เกณฑ์ตามอายุ 50–75 ปี ≥ 250) และ ECG ผิดปกติ → **echocardiography** เพื่อยืนยันและจำแนก LVEF ก่อนหาสาเหตุ\n\n- **Coronary angiography** ใช้หลังยืนยัน HF และสงสัย ischemic\n- **Cardiac MRI** เป็นการตรวจขั้นต่อไปเมื่อ echo ไม่พอหรือสงสัย cardiomyopathy เฉพาะ\n- **รอ 3 เดือน** ทำให้วินิจฉัยช้า\n- **Exercise ECG** ไม่ใช่การตรวจหลักใน HF และแปลผลไม่ได้เมื่อมี LBBB",
+          "NP สูง → echo ก่อนเสมอ",
+          ["2026 ESC Guidelines — diagnostic algorithm"], ["3.3.23", "3.3.13", "2.3.9(5)"]),
+    ],
+})
+
+# 09 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-09",
+    "title": "ทำไม HF จึงสำคัญ — ระบาดวิทยา การดำเนินโรค และตัวกระตุ้น",
+    "summary": "HF ในไทยพบบ่อยและอัตราตายสูง แต่ละครั้งที่กำเริบทำให้โรคแย่ลงเป็นขั้น ช่วงหลังกลับบ้านคือช่วงเสี่ยงที่สุด",
+    "minutes": 7,
+    "source": SRC,
+    "nl": ["2.3.9(5)", "B7.2.5(2)"],
+    "md": (
+        "### ตัวเลขจากสไลด์\n"
+        "| แหล่ง | ข้อมูล |\n|---|---|\n"
+        "| **Thai Heart Failure Registry (THFR) 2026** — Open Heart 2026;13:e004045 | incidence rate **6.8 ต่อ 100 person-years** · อัตราตายรวม **10.5%** · อัตรารอดชีวิต **1 ปี 94.2%** และ **2 ปี 89.1%** |\n"
+        "| **โรงพยาบาลราชวิถี** (ปีในสไลด์อ่านไม่ออก) | ผู้ป่วยใน HF (ICD-10 **I50**) **867 ราย** = **10.26%** ของผู้ป่วยในทั้งหมด → **อันดับ 4** ของโรงพยาบาล |\n"
+        "| ภาพรวมทั่วโลก (ESC 2026) | พบ **1–3%** ของผู้ใหญ่ · **รอดชีวิตที่ 5 ปีน้อยกว่า 60%** |\n\n"
+        "### การดำเนินโรค (สไลด์: Morris et al., Circulation 2021;144:e238)\n"
+        "- อาการและการทำงานของร่างกาย **ลดลงเป็นขั้น** — แต่ละครั้งที่ **กำเริบจนต้องนอนโรงพยาบาล** หลังกลับบ้าน การทำงานของหัวใจมักไม่กลับไปเท่าเดิม\n"
+        "- **Sudden cardiac death** เกิดได้ทุกระยะ แม้ในผู้ป่วยอาการน้อย\n"
+        "- ระยะท้าย (**stage D / advanced HF**) → พิจารณา transplant, LVAD หรือ **palliative care** ควบคู่การรักษา\n\n"
+        "> **ช่วงเปราะบาง (vulnerable phase)** — ช่วงสัปดาห์แรกหลังกลับบ้านมีอัตรานอนโรงพยาบาลซ้ำและตายสูงที่สุด เพราะยังมี congestion หลงเหลือ ยาไม่ครบหรือขนาดยังต่ำ และผู้ป่วยยังไม่เข้าใจการดูแลตัวเอง\n\n"
+        "> **อัปเดตแนวทาง ·** สไลด์แสดงการดำเนินโรคแต่ไม่ได้ระบุกลยุทธ์หลังกลับบ้าน — **ESC 2023 focused update (Class I, จาก STRONG-HF)** แนะนำ **เริ่มและเพิ่มขนาดยาหลักอย่างรวดเร็วก่อนกลับบ้าน และนัดติดตามถี่ในช่วง 6 สัปดาห์แรก** · **ESC 2026** ย้ำให้ติดตามอย่างใกล้ชิดในช่วง 6 สัปดาห์หลังจำหน่าย และเพิ่มขนาดยาทุก 1–2 สัปดาห์\n\n"
+        "### ตัวกระตุ้นให้ HF กำเริบ — ต้องหาทุกครั้ง\n"
+        "| กลุ่ม | ตัวอย่าง |\n|---|---|\n"
+        "| **ผู้ป่วย** | ขาดยา · กินเค็ม/ดื่มน้ำมาก · สุรา |\n"
+        "| **หัวใจ** | ACS/ischemia · AF หรือ arrhythmia อื่น · ความดันสูงไม่คุม · ลิ้นรั่วเฉียบพลัน |\n"
+        "| **นอกหัวใจ** | ติดเชื้อ (pneumonia) · PE · ซีด · ไตแย่ลง · ไทรอยด์ · ตั้งครรภ์ |\n"
+        "| **ยา** | **NSAIDs** · **non-DHP CCB** (diltiazem, verapamil) ใน HFrEF · **thiazolidinediones** (pioglitazone) · steroid · ยาเคมีบำบัดบางตัว |\n"
+    ),
+    "pearls": [
+        "THFR 2026: ตาย 10.5% · รอด 1 ปี 94.2% · 2 ปี 89.1%",
+        "ราชวิถี: HF = 10.26% ของผู้ป่วยใน · อันดับ 4",
+        "กำเริบแต่ละครั้ง = โรคแย่ลงเป็นขั้น",
+        "ช่วงหลังกลับบ้าน = vulnerable phase → นัดเร็ว ปรับยาเร็ว (STRONG-HF)",
+        "ยาที่ทำให้กำเริบ: NSAIDs · non-DHP CCB · pioglitazone",
+    ],
+    "mnem": [{
+        "name": "FAILURE — ตัวกระตุ้น HF กำเริบ",
+        "what": "เช็กลิสต์หาสาเหตุที่ทำให้ HF ที่เคยคงที่กำเริบ",
+        "lines": [
+            ["F", "**F**orgot medication — ขาดยา"],
+            ["A", "**A**rrhythmia (AF) · **A**nemia"],
+            ["I", "**I**schemia/infarction · **I**nfection"],
+            ["L", "**L**ifestyle — กินเค็ม ดื่มน้ำมาก สุรา"],
+            ["U", "**U**pregulation of CO — ตั้งครรภ์ ไทรอยด์เป็นพิษ"],
+            ["R", "**R**enal failure"],
+            ["E", "**E**mbolism (PE) · **E**ndocarditis"],
+        ],
+        "note": "อย่าลืมยา: NSAIDs, non-DHP CCB ใน HFrEF, pioglitazone",
+        "src": "mnemonic ที่ใช้แพร่หลายในตำราและสื่อการสอนอายุรศาสตร์ — ไม่ได้มาจากแนวทาง",
+    }],
+    "items": [
+        Q("Vulnerable post-discharge phase",
+          "A 64-year-old woman is about to be discharged after her first admission for HFrEF (LVEF 30%). She is euvolemic on furosemide, low-dose bisoprolol and enalapril. When is her risk of readmission and death highest, and what strategy is recommended?",
+          "The first weeks after discharge; rapid up-titration of therapy with early, frequent follow-up", ["Five years after discharge; annual echocardiography", "The first weeks after discharge; stop beta-blockers to avoid hypotension", "Only during the hospital stay; no follow-up needed if euvolemic", "One year after discharge; start therapy then"], 0,
+          "ช่วง **สัปดาห์แรกหลังจำหน่าย (vulnerable phase)** มีอัตรานอนซ้ำและตายสูงสุด — **ESC 2023 focused update (Class I, STRONG-HF)** แนะนำ **เริ่มและเพิ่มขนาดยาหลักอย่างรวดเร็ว** ก่อนกลับบ้านและ **นัดติดตามถี่ในช่วง 6 สัปดาห์แรก** (ดูอาการ ความดัน ชีพจร K Cr NP) · ผู้ป่วยรายนี้ยังขาด MRA และ SGLT2i และยาที่มีอยู่ยังขนาดต่ำ\n\n- **5 ปี** หรือ **1 ปี** ไม่ใช่ช่วงเสี่ยงสูงสุดและทำให้เริ่มยาช้า\n- **หยุด β-blocker** เพิ่มความเสี่ยง\n- **ไม่ติดตาม** ผิดหลักการดูแลช่วงเปลี่ยนผ่าน",
+          "หลังจำหน่าย 6 สัปดาห์แรก: ปรับยาเร็ว นัดถี่",
+          [SL + "Clinical course of HF (Circulation 2021;144:e238)", "ESC 2023 Focused Update — STRONG-HF"], ["2.3.9(5)", "B7.4(1)"]),
+        Q("Drug-induced decompensation",
+          "A 70-year-old man with stable HFrEF (LVEF 32%) presents with worsening edema and weight gain of 3 kg over 10 days. He recently bought a medicine for knee osteoarthritis. Which drug is the most likely precipitant?",
+          "Ibuprofen", ["Paracetamol", "Topical capsaicin", "Glucosamine", "Tramadol"], 2,
+          "**NSAIDs** (เช่น ibuprofen) ยับยั้ง prostaglandin ที่ช่วยขยาย afferent arteriole และขับ Na → **ไตเก็บ Na และน้ำ** ลดฤทธิ์ diuretic และ ACEi และเสี่ยง AKI และ K สูง → **HF กำเริบ** เป็นตัวกระตุ้นที่พบบ่อยและป้องกันได้\n\n- **Paracetamol** เป็นยาแก้ปวดที่แนะนำใน HF\n- **Capsaicin ทาภายนอก** ไม่มีผลต่อเกลือน้ำ\n- **Glucosamine** ไม่ทำให้คั่งน้ำอย่างมีนัย\n- **Tramadol** ไม่ทำให้คั่ง Na",
+          "HF + ปวดข้อ → paracetamol ไม่ใช่ NSAIDs",
+          [SL + "Clinical course of HF"], ["2.3.9(5)", "2.1.27"]),
+    ],
+})
+
+# 10 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-10",
+    "title": "HFrEF — foundational medical therapy (สี่เสาหลัก) และขนาดยา",
+    "summary": "ยาลดตายของ HFrEF มีสี่กลุ่ม ACEi/ARNI/ARB · β-blocker · MRA · SGLT2i เริ่มเร็วพร้อมกันในขนาดต่ำแล้วเพิ่มทุก 1–2 สัปดาห์",
+    "minutes": 12,
+    "source": SRCG,
+    "nl": ["B7.4(1)", "B7.4(2)", "B9.4(1)", "B7.4(5)", "2.3.9(5)"],
+    "md": (
+        "### สี่เสาหลัก (foundational medical therapy, FMT)\n"
+        "ทั้งสี่กลุ่ม **ลดการตายและการนอนโรงพยาบาล** และให้ผลเสริมกัน — **loop diuretic** ใช้คุม congestion แต่ไม่ได้ลดตาย\n\n"
+        "| กลุ่ม | ยา | เริ่ม | เป้าหมาย |\n|---|---|---|---|\n"
+        "| **ARNI** (แนะนำก่อน ACEi) | sacubitril/valsartan | 49/51 มก. วันละ 2 ครั้ง (24/26 ถ้าความดันต่ำหรือไม่เคยได้ ACEi/ARB) | 97/103 มก. วันละ 2 ครั้ง |\n"
+        "| **ACEi** | enalapril · ramipril · lisinopril · captopril | 2.5 bid · 2.5 bid · 2.5–5 od · 6.25 tid | 10–20 bid · 5 bid · 20–35 od · 50 tid |\n"
+        "| **ARB** (ทนรับ ACEi/ARNI ไม่ได้) | candesartan · valsartan · losartan | 4–8 od · 40 bid · 50 od | 32 od · 160 bid · 150 od |\n"
+        "| **β-blocker** | bisoprolol · carvedilol · metoprolol succinate · nebivolol | 1.25 od · 3.125 bid · 12.5–25 od · 1.25 od | 10 od · 25 bid · 200 od · 10 od |\n"
+        "| **MRA** | spironolactone · eplerenone | 25 od · 25 od | 50 od · 50 od |\n"
+        "| **SGLT2i** | dapagliflozin · empagliflozin | 10 od | 10 od (ไม่ต้องปรับ) |\n\n"
+        "(ขนาดเป็นมิลลิกรัม ตามตารางของ ESC 2021 · bid = วันละ 2 ครั้ง · od = วันละครั้ง)\n\n"
+        "> **อัปเดตแนวทาง ·** **2026 ESC HF guideline** (1) ใช้สี่เสาหลักกับ **LVEF < 50%** (เดิม ≤ 40%) (2) **MRA เป็น Class I ทุกช่วง LVEF** (3) ปรับขนาดเริ่มต้น: **spironolactone 12.5–25 มก.** และ **ramipril 1.25–2.5 มก. วันละ 2 ครั้ง** และเพิ่มตาราง **finerenone 10–20 → 20–40 มก./วัน** (4) **เพิ่มขนาดยาอย่างน้อยทุก 1–2 สัปดาห์** จนถึงขนาดในงานวิจัยหรือสูงสุดที่ทนได้ และ **คงยาแม้ EF ดีขึ้น** (Class I) · **2024 ACC ECDP for HFrEF** ตั้งเป้าให้ได้ยาครบและขนาดสูงสุดที่ทนได้ **ภายในราว 3 เดือน**\n\n"
+        "### เริ่มยาอย่างไรในทางปฏิบัติ\n"
+        "- **ไม่ต้องรอให้ยาตัวแรกถึงขนาดเป้าหมาย** ก่อนเริ่มตัวถัดไป — เริ่มทั้งสี่กลุ่มให้เร็วในขนาดต่ำ แล้วค่อยเพิ่ม\n"
+        "- **SGLT2i และ MRA** ลดความดันน้อย เริ่มได้ง่าย · **β-blocker** เริ่มเมื่อ **euvolemic** (ไม่เริ่มใน cardiogenic shock หรือ congestion รุนแรง)\n"
+        "- **เปลี่ยน ACEi → ARNI ต้องหยุด ACEi อย่างน้อย 36 ชม.** เพราะ neprilysin และ ACE ต่างย่อย bradykinin — ให้ร่วมกันเสี่ยง **angioedema** · ห้ามใช้ ARNI ในผู้ที่เคย angioedema\n\n"
+        "### ติดตามความปลอดภัย\n"
+        "| ปัญหา | การจัดการ |\n|---|---|\n"
+        "| **Cr ขึ้นเล็กน้อยหลังเริ่ม ACEi/ARNI/SGLT2i** | พบได้ (เปลี่ยนแปลง hemodynamic ในไต) ไม่ต้องหยุดยาถ้าขึ้นไม่มาก · ตรวจซ้ำ 1–2 สัปดาห์ |\n"
+        "| **K 5.5–6.0 ขณะได้ MRA** | **ลดขนาด MRA ครึ่งหนึ่ง** ติดตาม K |\n"
+        "| **K > 6.0** | **หยุด MRA** (และทบทวน ACEi/ARNI) รักษา hyperkalemia |\n"
+        "| **ความดันต่ำไม่มีอาการ** | ไม่ต้องลดยา · ถ้ามีอาการให้ลด diuretic หรือยาลดความดันอื่นที่ไม่ลดตายก่อน |\n"
+        "| **ชีพจรช้า < 50 มีอาการ** | ลด β-blocker · ทบทวน digoxin, amiodarone |\n\n"
+        "### ยาอื่น (additional medical therapy) — ใช้ในกลุ่มเฉพาะ\n"
+        "| ยา | ข้อบ่งใช้หลัก |\n|---|---|\n"
+        "| **Loop diuretic** (furosemide 20–40 → 40–240 มก./วัน) | มี congestion — ใช้ขนาดต่ำสุดที่คง euvolemia |\n"
+        "| **Ivabradine** (5 → 7.5 มก. bid) | sinus rhythm, HR ≥ 70 แม้ได้ β-blocker ขนาดสูงสุดที่ทนได้, LVEF ≤ 35% |\n"
+        "| **Vericiguat** (2.5 → 10 มก. od) | HF แย่ลงแม้ได้ยาครบ |\n"
+        "| **Digoxin** (62.5 → 250 ไมโครกรัม/วัน) | อาการยังมีแม้ได้ยาครบ · AF ที่ต้องคุมอัตรา |\n"
+        "| **Hydralazine + ISDN** | ทน ACEi/ARB/ARNI ไม่ได้ · ผู้ป่วยผิวดำที่ยังมีอาการ |\n\n"
+        "> **อัปเดตแนวทาง ·** **ESC 2026 ยกระดับ digoxin/digitoxin เป็น Class IIa** ใน HFrEF (LVEF ≤ 40%) ที่ยังมีอาการแม้ได้ FMT เพื่อลดการนอนโรงพยาบาล (ขนาดต่ำ และห้ามหยุดกะทันหัน) · จัด ivabradine, vericiguat, cardiac glycoside เป็น **additional medical therapy**\n\n"
+        "### ยาที่ควรเลี่ยงใน HFrEF\n"
+        "**NSAIDs · non-DHP CCB (diltiazem, verapamil) · thiazolidinediones · class I antiarrhythmics · dronedarone** · ไม่ให้ ACEi + ARB + MRA สามตัวพร้อมกัน (K สูง ไตวาย)\n"
+    ),
+    "pearls": [
+        "สี่เสาหลัก: ARNI/ACEi/ARB · β-blocker · MRA · SGLT2i",
+        "เริ่มเร็วทั้งสี่กลุ่มขนาดต่ำ แล้วเพิ่มทุก 1–2 สัปดาห์",
+        "ACEi → ARNI: หยุด ACEi ≥ 36 ชม. (angioedema)",
+        "MRA: K > 5.5 ลดครึ่ง · K > 6.0 หยุด",
+        "เลี่ยง NSAIDs · diltiazem/verapamil · pioglitazone ใน HFrEF",
+    ],
+    "items": [
+        Q("ACEi to ARNI switch",
+          "A 62-year-old man with HFrEF (LVEF 30%, NYHA II) takes enalapril 10 mg twice daily, bisoprolol, spironolactone and dapagliflozin. BP 118/70 mmHg, K 4.6 mmol/L, eGFR 62. You decide to switch to sacubitril/valsartan. How should the switch be done?",
+          "Stop enalapril and start sacubitril/valsartan at least 36 hours after the last enalapril dose", ["Start sacubitril/valsartan today and continue enalapril for 1 week", "Stop enalapril and start sacubitril/valsartan with the next scheduled dose", "Add sacubitril/valsartan and stop spironolactone", "Switch only after stopping bisoprolol for 1 week"], 4,
+          "ทั้ง **ACE และ neprilysin ย่อย bradykinin** — ถ้าให้ ACEi ร่วมกับ sacubitril หรือเปลี่ยนเร็วเกินไป bradykinin จะสะสม → เสี่ยง **angioedema** จึงต้อง **หยุด ACEi อย่างน้อย 36 ชม.** ก่อนเริ่ม ARNI (ส่วนการเปลี่ยนจาก ARB ทำได้ทันที)\n\n- **ให้ร่วมกัน** หรือ **เปลี่ยนในมื้อถัดไป** เสี่ยง angioedema\n- **หยุด spironolactone** ไม่จำเป็น — MRA เป็นหนึ่งในสี่เสาหลัก\n- **หยุด β-blocker** ไม่เกี่ยวกับการเปลี่ยนยาและเพิ่มความเสี่ยง",
+          "ACEi → ARNI: เว้น 36 ชม.",
+          ["2021 ESC HF Guidelines — ARNI", "2022 AHA/ACC/HFSA Guideline — ARNI"], ["B7.4(2)", "2.3.9(5)"]),
+        Q("Drugs to avoid in HFrEF",
+          "A 66-year-old woman with HFrEF (LVEF 25%) and hypertension is on sacubitril/valsartan, carvedilol, spironolactone, empagliflozin, furosemide and diltiazem (started years ago for 'blood pressure'). Which medicine should be stopped?",
+          "Diltiazem", ["Carvedilol", "Empagliflozin", "Spironolactone", "Sacubitril/valsartan"], 3,
+          "**Non-dihydropyridine CCB (diltiazem, verapamil)** มีฤทธิ์ **negative inotrope** ทำให้ HFrEF แย่ลงและเพิ่มการนอนโรงพยาบาล → **ควรหยุด** ใน HFrEF (ถ้าต้องการลดความดันเพิ่ม ใช้ amlodipine ได้)\n\nยาที่เหลือ — **ARNI, carvedilol, spironolactone, empagliflozin** — คือสี่เสาหลักที่ลดตาย ต้องคงไว้และเพิ่มขนาด",
+          "HFrEF: หยุด diltiazem/verapamil",
+          ["2021 ESC HF Guidelines — drugs to avoid", "2022 AHA/ACC/HFSA Guideline"], ["B7.4(3)", "2.3.9(5)"]),
+        Q("Hyperkalemia on MRA",
+          "A 71-year-old man with HFrEF on sacubitril/valsartan, bisoprolol, spironolactone 50 mg daily and dapagliflozin has routine labs: K 5.7 mmol/L, creatinine stable, ECG without peaked T waves. What is the most appropriate action regarding spironolactone?",
+          "Halve the spironolactone dose and recheck potassium", ["Continue the same dose and recheck in 6 months", "Stop spironolactone permanently", "Stop dapagliflozin instead", "Double the furosemide dose and add potassium supplements"], 1,
+          "หลักของ ESC: **K > 5.5 mmol/L → ลดขนาด MRA ครึ่งหนึ่ง** และติดตาม K ใกล้ชิด · **K > 6.0 → หยุด MRA ทันที** · ผู้ป่วยรายนี้ K 5.7 ไม่มีการเปลี่ยนแปลงใน ECG และไตคงที่ จึง **ลดเป็น 25 มก.** แล้วตรวจซ้ำ ทบทวนอาหาร K สูง ยาเสริม K และ NSAIDs\n\n- **คงขนาดเดิม 6 เดือน** เสี่ยง K สูงอันตราย\n- **หยุดถาวร** เสียประโยชน์ลดตายโดยไม่จำเป็น\n- **หยุด dapagliflozin** ไม่ช่วย (SGLT2i อาจลดความเสี่ยง K สูงด้วยซ้ำ)\n- **เสริม K** ผิดทิศ",
+          "MRA: K > 5.5 ลดครึ่ง · > 6.0 หยุด",
+          ["2021 ESC HF Guidelines — practical MRA use"], ["B7.4(4)", "2.2.15", "2.3.9(5)"]),
+    ],
+})
+
+# 11 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-11",
+    "title": "HFpEF/HFmrEF, ภาวะขาดธาตุเหล็ก และอุปกรณ์ (ICD, CRT)",
+    "summary": "HFpEF ใช้ SGLT2i และ MRA เป็นหลักพร้อมคุมโรคร่วม ภาวะขาดเหล็กให้ IV iron และ HFrEF ที่ EF ≤ 35% พิจารณา ICD/CRT",
+    "minutes": 11,
+    "source": SRCG,
+    "nl": ["2.3.9(5)", "2.3.3(7)", "3.3.26", "B2.4(2)", "2.3.9(1)"],
+    "md": (
+        "### HFpEF — โรคของหลายระบบ\n"
+        "มักเป็น **ผู้สูงอายุ ผู้หญิง อ้วน ความดันสูง เบาหวาน CKD AF** — LV แข็ง คลายตัวไม่ดี ความดันเติมเลือดสูงโดยเฉพาะเมื่อออกแรง · วินิจฉัยต้องตัด **mimics** ก่อน (amyloidosis, ลิ้น, pericardial disease, โรคปอด, อ้วน/deconditioning) และอาจใช้คะแนน **H2FPEF** หรือ **HFA-PEFF** ช่วย\n\n"
+        "| การรักษา | หลักฐาน/แนวทาง |\n|---|---|\n"
+        "| **Diuretic** | ลด congestion และอาการ |\n"
+        "| **SGLT2i** (empagliflozin, dapagliflozin) | ลด HF hospitalization หรือ CV death (EMPEROR-Preserved, DELIVER) — **ESC 2023: Class I** ใน HFmrEF และ HFpEF |\n"
+        "| **MRA** | **FINEARTS-HF (2024)**: finerenone ลดเหตุการณ์ HF แย่ลงรวมกับ CV death ใน LVEF ≥ 40% |\n"
+        "| **GLP-1 RA / tirzepatide** | ผู้ป่วยอ้วน: ลดน้ำหนัก เพิ่มสมรรถภาพและคุณภาพชีวิต (STEP-HFpEF, SUMMIT) |\n"
+        "| **ARNI / ARB** | อาจพิจารณาลดการนอนโรงพยาบาล โดยเฉพาะ EF ช่วงล่างของปกติ |\n"
+        "| **คุมโรคร่วม** | ความดัน · AF · ischemia · เบาหวาน · CKD · ลดน้ำหนัก ออกกำลังกาย |\n\n"
+        "> **อัปเดตแนวทาง ·** **ESC 2021** แนะนำใน HFpEF เพียง diuretic และรักษาโรคร่วม · **ESC 2023 focused update** เพิ่ม **SGLT2i Class I** ใน HFmrEF/HFpEF · **ESC 2026** จัด **SGLT2i + MRA เป็น foundational therapy ใน HFpEF** (MRA Class I ทุก LVEF — ใช้ steroidal หรือ non-steroidal), ให้ **semaglutide หรือ tirzepatide Class IIa** เมื่อ LVEF ≥ 45% และ BMI ≥ 30 และให้ **ACEi/ARB/ARNI อาจพิจารณา (IIb)** · **2026 ACC ECDP for HFpEF** แนะนำ **SGLT2i + finerenone** เป็นแกน โดย **เลือก finerenone ก่อน spironolactone** (K สูงน้อยกว่า) และไม่แนะนำ β-blocker เป็นประจำถ้าไม่มีข้อบ่งชี้อื่น\n\n"
+        "### ภาวะขาดธาตุเหล็ก (iron deficiency) — ตรวจทุกราย\n"
+        "- **นิยาม (ESC 2021/2023):** **ferritin < 100 ng/mL** หรือ **ferritin 100–299 ng/mL ร่วมกับ TSAT < 20%** — ใช้ได้แม้ไม่ซีด (ferritin เป็น acute phase reactant จึงสูงลวงใน HF)\n"
+        "- **การรักษา:** **IV iron** (ferric carboxymaltose หรือ ferric derisomaltose) — **ESC 2023: Class I** ใน HFrEF/HFmrEF ที่มีอาการ เพื่อลดอาการและเพิ่มคุณภาพชีวิต และ **Class IIa** เพื่อลดการนอนโรงพยาบาล\n"
+        "- **ธาตุเหล็กชนิดกินได้ผลน้อย** ใน HF (ดูดซึมไม่ดีจาก hepcidin สูงและลำไส้บวม — IRONOUT-HF)\n"
+        "- หาสาเหตุเสียเลือดเสมอ (GI) โดยเฉพาะผู้ได้ยาต้านเกล็ดเลือด/anticoagulant\n\n"
+        "### อุปกรณ์ (guideline-directed interventional therapy)\n"
+        "| อุปกรณ์ | ข้อบ่งชี้หลัก (ESC 2021) |\n|---|---|\n"
+        "| **ICD — secondary prevention** | รอดจาก VF หรือ VT ที่ทำให้ hemodynamic ไม่คงที่ (ไม่มีสาเหตุที่แก้ได้) |\n"
+        "| **ICD — primary prevention** | NYHA II–III · **LVEF ≤ 35% หลังได้ยาเต็มที่ ≥ 3 เดือน** · คาดอายุ > 1 ปี · ischemic = Class I · non-ischemic = Class IIa · **ไม่ใส่ภายใน 40 วันหลัง MI** |\n"
+        "| **CRT** | sinus rhythm · **LVEF ≤ 35%** · **LBBB และ QRS ≥ 150 ms = Class I** · LBBB 130–149 ms = IIa · ไม่ใส่ถ้า QRS < 130 ms (ยกเว้นต้องการ pacing) |\n\n"
+        "**ทำไม CRT ได้ผล** — LBBB ทำให้ผนัง septum กับ lateral บีบไม่พร้อมกัน (dyssynchrony) เสียแรงบีบและเพิ่ม MR · กระตุ้นทั้งสองข้างพร้อมกันทำให้บีบพร้อมกัน EF ดีขึ้น และ reverse remodeling\n\n"
+        "> **อัปเดตแนวทาง ·** **ESC 2026** ให้ **พิจารณาวางแผน CRT ไปพร้อมกับการเริ่ม FMT (IIb)** ในผู้ป่วยมีอาการที่มี **LBBB, QRS ≥ 150 ms และ LVEF ≤ 35%** เพราะกลุ่มนี้ EF มักดีขึ้นด้วยยาเพียงอย่างเดียวได้น้อย (ประเมิน LVEF ซ้ำก่อนใส่) · ผู้ที่ต้องการ ventricular pacing จาก AV block ใน HFrEF ให้ใช้ **CRT แทน RV pacing (Class I)** · ยกระดับ **mitral TEER** และ **durable MCS** ใน advanced HF\n"
+    ),
+    "pearls": [
+        "HFpEF: SGLT2i + MRA เป็นแกน (ESC 2026) · คุมความดัน AF อ้วน",
+        "ACC 2026 HFpEF: เลือก finerenone ก่อน spironolactone",
+        "Iron deficiency = ferritin < 100 หรือ 100–299 + TSAT < 20% → IV iron",
+        "ICD primary: LVEF ≤ 35% หลังยาเต็มที่ ≥ 3 เดือน · ไม่ใส่ใน 40 วันหลัง MI",
+        "CRT: LVEF ≤ 35% + LBBB + QRS ≥ 150 ms = Class I",
+    ],
+    "items": [
+        Q("Therapy for HFpEF",
+          "A 74-year-old woman with hypertension, type 2 diabetes and BMI 28 kg/m2 has NYHA II dyspnea. Echocardiography shows LVEF 60%, LV hypertrophy and raised E/e'. NT-proBNP is 860 pg/mL. She is euvolemic on a low-dose diuretic. Which additional drug class has the strongest guideline recommendation to reduce HF hospitalization or cardiovascular death?",
+          "SGLT2 inhibitor", ["Ivabradine", "Digoxin", "Non-dihydropyridine calcium channel blocker", "Hydralazine plus isosorbide dinitrate"], 4,
+          "ใน **HFpEF** ยาที่มีหลักฐานแข็งแรงที่สุดคือ **SGLT2i** (EMPEROR-Preserved, DELIVER) — **ESC 2023 Class I** เพื่อลด HF hospitalization หรือ CV death และ **ESC 2026** จัดเป็น foundational therapy ร่วมกับ MRA\n\n- **Ivabradine** มีหลักฐานเฉพาะ HFrEF ที่ sinus rhythm HR ≥ 70\n- **Digoxin** ไม่มีบทบาทลดเหตุการณ์ใน HFpEF ที่ sinus rhythm\n- **Non-DHP CCB** ไม่ใช่ยามาตรฐานของ HFpEF (ใช้เฉพาะคุมอัตรา AF บางราย)\n- **H-ISDN** มีหลักฐานใน HFrEF",
+          "HFpEF: SGLT2i Class I (+ MRA ใน ESC 2026)",
+          ["ESC 2023 Focused Update — SGLT2i in HFmrEF/HFpEF", "2026 ESC Guidelines — FMT in HFpEF"], ["2.3.9(5)", "2.3.9(4)"]),
+        Q("Iron deficiency in HF",
+          "A 69-year-old man with HFrEF (LVEF 30%, NYHA III) on optimal therapy has Hb 12.8 g/dL, ferritin 180 ng/mL and transferrin saturation 14%. Colonoscopy and gastroscopy were normal last year. What is the most appropriate management of his iron status?",
+          "Intravenous iron (e.g., ferric carboxymaltose)", ["No treatment because ferritin is above 100 ng/mL and he is not anemic", "Oral ferrous sulfate for 3 months", "Erythropoietin-stimulating agent", "Packed red cell transfusion"], 1,
+          "ตามนิยามใน HF: **ferritin 100–299 ng/mL ร่วมกับ TSAT < 20%** = **iron deficiency** แม้ Hb ยังไม่ต่ำมาก (ferritin สูงลวงจากการอักเสบ) → **IV iron** — **ESC 2023 Class I** ใน HFrEF/HFmrEF ที่มีอาการ เพื่อลดอาการและเพิ่มคุณภาพชีวิต และ Class IIa เพื่อลดการนอนโรงพยาบาล\n\n- **ไม่รักษา** พลาดเพราะดูแค่ ferritin\n- **ธาตุเหล็กชนิดกิน** ไม่ได้ผลใน HF (IRONOUT-HF)\n- **ESA** ไม่ลดเหตุการณ์และเพิ่ม thrombosis\n- **ให้เลือด** ไม่มีข้อบ่งชี้ที่ Hb 12.8",
+          "Ferritin < 100 หรือ 100–299 + TSAT < 20% → IV iron",
+          ["ESC 2023 Focused Update — iron deficiency"], ["2.3.3(7)", "3.3.26", "B2.4(2)"]),
+        Q("CRT indication",
+          "A 65-year-old woman with non-ischemic dilated cardiomyopathy remains NYHA III after 4 months of optimized ARNI, bisoprolol, spironolactone and dapagliflozin. She is in sinus rhythm; ECG shows LBBB with QRS 165 ms. LVEF is 28%. Which device is most appropriate?",
+          "Cardiac resynchronization therapy (CRT, typically with defibrillator)", ["Single-chamber ventricular pacemaker", "Implantable loop recorder", "No device; repeat echocardiography in 1 year", "Dual-chamber pacemaker with right ventricular pacing"], 0,
+          "ผู้ป่วยเข้าเกณฑ์ **CRT Class I**: มีอาการแม้ได้ยาเต็มที่ · **sinus rhythm · LBBB · QRS ≥ 150 ms · LVEF ≤ 35%** — CRT แก้ dyssynchrony ทำให้อาการ EF และการรอดชีวิตดีขึ้น · LVEF ≤ 35% หลังยา ≥ 3 เดือนยังเข้าเกณฑ์ ICD primary prevention (non-ischemic = IIa) จึงมักเลือก **CRT-D**\n\n- **VVI pacemaker** และ **RV pacing** ทำให้ dyssynchrony แย่ลง\n- **Loop recorder** ใช้หาสาเหตุ syncope\n- **รอ 1 ปี** ทำให้เสียโอกาส — ESC 2026 ยังแนะนำให้วางแผน CRT เร็วในกลุ่ม LBBB QRS ≥ 150",
+          "LVEF ≤ 35% + LBBB + QRS ≥ 150 + SR = CRT (Class I)",
+          ["2021 ESC HF Guidelines — CRT", "2026 ESC Guidelines — early CRT planning"], ["2.3.9(5)", "B7.3(3)a"]),
+    ],
+})
+
+# 12 ---------------------------------------------------------------
+S.append({
+    "id": "cardio-hf-12",
+    "title": "Decompensated (acute) HF — หาเหตุ แยกโปรไฟล์ warm/cold wet/dry และรักษา",
+    "summary": "ผู้ป่วย HF กำเริบให้หาเหตุ CHAMPIT ทันที แยกโปรไฟล์ congestion กับ perfusion แล้วรักษาด้วย diuretic vasodilator หรือ inotrope ตามกลุ่ม",
+    "minutes": 12,
+    "source": SRCG,
+    "nl": ["2.2.5", "B6.2.6(1)", "2.2.7", "B9.4(1)", "B7.4(3)", "B7.4(6)", "2.2.9"],
+    "md": (
+        "> **อัปเดตแนวทาง ·** **ESC 2026 เปลี่ยนคำว่า \"acute HF\" เป็น \"decompensated HF (DHF)\"** และแยก worsening HF กับ decompensated HF ให้ชัดขึ้น (สอดคล้องกับ 2nd Universal Definition 2026) — ในข้อสอบที่อิงแนวทางเก่ายังเรียก acute HF / ADHF\n\n"
+        "### ลักษณะทางคลินิก\n"
+        "**ADHF** (HF เรื้อรังกำเริบ พบบ่อยสุด) · **acute pulmonary edema** · **isolated RV failure** · **cardiogenic shock**\n\n"
+        "### ประเมินทันที: ภาวะที่ต้องแก้เร่งด่วน\n"
+        "ผู้ป่วยที่หายใจล้มเหลวหรือช็อก ต้องประคองการหายใจและการไหลเวียนก่อน แล้วหาเหตุเร่งด่วนตาม **CHAMPIT** (mnemonic ด้านล่าง)\n\n"
+        "### โปรไฟล์ hemodynamic ข้างเตียง (สไลด์อ้าง Nohria et al., JAMA 2002)\n"
+        "| ประเมิน | สัญญาณ |\n|---|---|\n"
+        "| **Congestion (wet)** | orthopnea · JVP สูง · HJR · ขาบวม · crepitations · ascites · S3 |\n"
+        "| **Hypoperfusion (cold)** | ปลายมือเท้าเย็น · pulse pressure แคบ (proportional < 25%) · ซึม สับสน · ปัสสาวะน้อย · Cr ขึ้น · ความดันต่ำ |\n\n"
+        "[[fig:hf_profile]]\n\n"
+        "### การรักษาตามกลุ่ม\n"
+        "| กลุ่ม | การรักษาหลัก |\n|---|---|\n"
+        "| **Warm-Wet** (พบบ่อยสุด) | **IV loop diuretic** · ถ้า SBP สูง (> 110 mmHg) หรือ hypertensive pulmonary edema เพิ่ม **IV nitrate** |\n"
+        "| **Cold-Wet** | **inotrope** (dobutamine) ± **vasopressor** (norepinephrine) ถ้าความดันต่ำ/ช็อก → diuretic เมื่อ perfusion ดีขึ้น · หา ACS/mechanical cause · พิจารณา MCS |\n"
+        "| **Cold-Dry** | ประเมิน volume ให้สารน้ำอย่างระวัง · ทบทวนยาที่ลดความดัน |\n"
+        "| **Warm-Dry** | compensated — ปรับ FMT ต่อ หาสาเหตุอื่นของอาการ |\n\n"
+        "### Loop diuretic ใน decompensated HF\n"
+        "1. **ไม่เคยได้ยา:** furosemide **20–40 มก. IV** · **เคยกินยา:** ขนาด IV **1–2 เท่าของขนาดกินต่อวัน** (ESC 2021) / **อย่างน้อยเท่าขนาดที่กิน** (AHA 2022) — ให้แบบ bolus แบ่งวันละ 2–3 ครั้ง หรือหยดต่อเนื่อง\n"
+        "2. **ประเมินการตอบสนองเร็ว** (ESC 2021): **Na ในปัสสาวะที่ 2 ชม. < 50–70 mmol/L** หรือ **ปัสสาวะ < 100–150 mL/ชม. ใน 6 ชม.แรก** = ตอบสนองไม่พอ → **เพิ่มขนาดเป็นสองเท่า**\n"
+        "3. ยังไม่พอ → **sequential nephron blockade**: เพิ่ม **acetazolamide** (proximal tubule — ADVOR) หรือ **thiazide** (distal) · ติดตาม K Na Cr ทุกวัน\n"
+        "4. ชั่งน้ำหนักทุกวัน บันทึก intake/output · เป้าหมาย **decongestion ให้หมด** ก่อนกลับบ้าน\n\n"
+        "> **อัปเดตแนวทาง ·** **ESC 2026:** **Urinary Na-guided diuretic therapy อาจพิจารณาในวันแรก ๆ (IIb)** · **acetazolamide IV ระยะสั้น หรือ hydrochlorothiazide** เสริม loop diuretic เพื่อลด congestion (IIa) · **เริ่ม SGLT2i ในโรงพยาบาลหลังผู้ป่วยคงที่ (Class I)** · ติดตามอย่างใกล้ชิดในช่วง 6 สัปดาห์หลังจำหน่าย\n\n"
+        "### การรักษาประคับประคองอื่น\n"
+        "- **O₂** เมื่อ **SpO₂ < 90%** หรือ PaO₂ < 60 mmHg (ไม่ให้เป็นประจำถ้าไม่ hypoxemia) · **NIV (CPAP/BiPAP)** เมื่อหายใจลำบาก RR > 25 SpO₂ < 90% — ลด preload และ afterload ของ LV และลดการใส่ท่อ\n"
+        "- ท่า **นั่งห้อยขา** ลด venous return\n"
+        "- **ไม่ให้ morphine เป็นประจำ** (ESC 2021 — กดการหายใจ เพิ่มการใส่ท่อ) ยกเว้นปวดหรือกังวลรุนแรง\n"
+        "- **คง β-blocker** ไว้ถ้าไม่ช็อก (อาจลดขนาด) · หยุดใน cardiogenic shock หรือ hypoperfusion\n"
+        "- ป้องกัน VTE ด้วย LMWH ถ้าไม่มีข้อห้าม\n\n"
+        "### ก่อนกลับบ้าน\n"
+        "euvolemic · เริ่ม/ปรับ **สี่เสาหลัก** (SGLT2i เริ่มในโรงพยาบาลได้) · สอน **ชั่งน้ำหนักทุกวัน** (เพิ่ม > 2 กก. ใน 3 วันให้ติดต่อ) จำกัดเกลือ งดยา NSAIDs · **นัดภายใน 1–2 สัปดาห์**\n"
+    ),
+    "pearls": [
+        "ESC 2026: acute HF → decompensated HF",
+        "Wet = JVP, orthopnea, edema · Cold = ปลายเย็น, PPP < 25%, ซึม, ปัสสาวะน้อย",
+        "Warm-wet: IV loop ± nitrate · Cold-wet: inotrope ± vasopressor แล้ว diuretic",
+        "IV furosemide: 20–40 มก. ถ้าไม่เคยได้ · 1–2 เท่าของขนาดกินถ้าเคยได้",
+        "ตอบสนองไม่พอ (UNa < 50–70 ที่ 2 ชม. หรือ UO < 100–150 mL/ชม.) → เพิ่มเป็นสองเท่า",
+    ],
+    "figs": {"hf_profile": {
+        "title": "โปรไฟล์ congestion–perfusion ในผู้ป่วย HF กำเริบ",
+        "cap": "แกนนอนคือ **congestion** (dry/wet) แกนตั้งคือ **perfusion** (warm/cold) · **warm-wet** พบบ่อยที่สุดและรักษาด้วย diuretic ± vasodilator · **cold-wet** พยากรณ์แย่ที่สุด ต้องประคอง perfusion ก่อน · ประเมินได้ข้างเตียงในเวลาไม่กี่นาที",
+        "svg": FIG_PROFILE}},
+    "mnem": [{
+        "name": "CHAMPIT — สาเหตุเร่งด่วนของ HF เฉียบพลัน",
+        "what": "สิ่งที่ต้องหาและแก้ทันทีในผู้ป่วย HF เฉียบพลัน/กำเริบ",
+        "lines": [
+            ["C", "acute **C**oronary syndrome"],
+            ["H", "**H**ypertensive emergency"],
+            ["A", "**A**rrhythmia — tachy หรือ brady"],
+            ["M", "acute **M**echanical cause — papillary muscle/VSD rupture, ลิ้นรั่วเฉียบพลัน, aortic dissection"],
+            ["P", "acute **P**ulmonary embolism"],
+            ["I", "**I**nfection — รวม infective endocarditis"],
+            ["T", "**T**amponade"],
+        ],
+        "note": "ESC 2016 ใช้ CHAMP · ESC 2021 เพิ่ม I และ T เป็น CHAMPIT",
+        "src": "2016 และ 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+    }],
+    "items": [
+        Q("Warm-wet acute pulmonary edema",
+          "A 76-year-old woman presents with acute breathlessness. BP 188/100 mmHg, HR 112/min sinus, RR 30/min, SpO2 86% on room air. JVP elevated, widespread crackles, warm extremities. ECG shows LVH without acute ST elevation. Besides oxygen/non-invasive ventilation, which initial treatment is most appropriate?",
+          "IV furosemide plus IV nitroglycerin", ["IV dobutamine", "IV normal saline bolus 500 mL", "IV metoprolol to slow the heart rate", "IV norepinephrine"], 3,
+          "ผู้ป่วยเป็น **warm-wet** และ **hypertensive acute pulmonary edema** (SBP สูงมาก ปลายอุ่น congestion ชัด) → **IV nitrate** ลด preload/afterload อย่างรวดเร็ว (ใช้เมื่อ SBP > 110) ร่วมกับ **IV loop diuretic** และ **O₂/NIV** เพราะ SpO₂ < 90% และหายใจเร็ว\n\n- **Dobutamine** และ **norepinephrine** ใช้ใน cold profile ที่ความดันต่ำ\n- **ให้น้ำเกลือ** ทำให้ปอดบวมน้ำแย่ลง\n- **IV β-blocker** ในภาวะ pulmonary edema เฉียบพลันทำให้ CO ลดและแย่ลง — tachycardia ที่นี่เป็นการชดเชย",
+          "Warm-wet + SBP สูง → nitrate + loop diuretic",
+          [SL + "Hemodynamic profiles (JAMA 2002;287:628–640)", "2021 ESC HF Guidelines — acute pulmonary edema"], ["2.2.5", "2.2.4", "B7.4(3)", "B9.4(1)"]),
+        Q("Cold-wet profile",
+          "A 59-year-old man with known HFrEF (LVEF 20%) is drowsy with cool, mottled extremities. BP 78/60 mmHg, HR 118/min, JVP to the angle of the jaw, bibasal crackles, urine output 15 mL/h, lactate 4.2 mmol/L. Which is the most appropriate initial approach?",
+          "Inotropic support (± vasopressor) to restore perfusion, then diuresis", ["High-dose IV furosemide alone", "IV nitroglycerin infusion", "Increase bisoprolol to control the heart rate", "Rapid 1-liter crystalloid bolus"], 2,
+          "ผู้ป่วยเป็น **cold-wet** และเข้าเกณฑ์ **cardiogenic shock** (ความดันต่ำ ปลายเย็น ซึม ปัสสาวะน้อย lactate สูง + congestion) → ต้อง **เพิ่ม perfusion ก่อน** ด้วย **inotrope (dobutamine)** และ **vasopressor (norepinephrine)** ถ้าความดันต่ำมาก จากนั้นจึง diuretic เมื่อ perfusion ดีขึ้น · หาเหตุ (ACS, mechanical) และพิจารณา MCS\n\n- **Furosemide อย่างเดียว** ในภาวะ perfusion ต่ำ ไตตอบสนองน้อยและความดันอาจลดลงอีก\n- **Nitrate** ห้ามในความดันต่ำ\n- **เพิ่ม β-blocker** ทำให้ช็อกแย่ลง — ควรหยุดชั่วคราว\n- **สารน้ำ 1 ลิตร** ทำให้ congestion แย่ลง (JVP สูงถึงมุมขากรรไกร)",
+          "Cold-wet: inotrope ± vasopressor ก่อน แล้วจึง diuretic",
+          [SL + "Hemodynamic profiles (JAMA 2002)", "2021 ESC HF Guidelines — cardiogenic shock"], ["2.2.7", "B7.4(6)", "B7.2.5(4)"]),
+        Q("Initial IV loop diuretic dose",
+          "A 72-year-old man with chronic HFrEF who takes oral furosemide 40 mg twice daily (80 mg/day) is admitted with warm-wet decompensation. BP 132/78 mmHg. What is the most appropriate initial IV furosemide regimen?",
+          "IV furosemide totaling about 80–160 mg per day in divided doses or infusion", ["IV furosemide 20 mg once daily", "Continue oral furosemide 40 mg twice daily", "Hold diuretics until creatinine is checked tomorrow", "IV furosemide 1,000 mg as a single bolus"], 1,
+          "ผู้ป่วยที่ **ได้ loop diuretic อยู่แล้ว** ต้องใช้ขนาด IV **1–2 เท่าของขนาดกินต่อวัน** (ESC 2021) หรือ **อย่างน้อยเท่าขนาดที่กิน** (AHA 2022) → 80 × 1–2 = **80–160 มก./วัน IV** แบ่งให้หรือหยดต่อเนื่อง แล้ว **ประเมินภายใน 2–6 ชม.** (UNa < 50–70 mmol/L หรือ UO < 100–150 mL/ชม. → เพิ่มเป็นสองเท่า)\n\n- **20 มก. IV** ต่ำเกินสำหรับผู้ที่ดื้อยาจากการใช้ประจำ\n- **กินต่อ** ดูดซึมไม่ดีเพราะลำไส้บวม\n- **รอผล Cr** ทำให้ congestion ยืดเยื้อ\n- **1,000 มก. bolus** สูงเกินจำเป็นและเสี่ยง ototoxicity",
+          "เคยกิน loop → IV 1–2 เท่าของขนาดกินต่อวัน",
+          ["2021 ESC HF Guidelines — diuretic algorithm", "2022 AHA/ACC/HFSA Guideline — hospitalized HF"], ["B9.4(1)", "2.2.5"]),
+    ],
+})
+
+# fix the two placeholder nl expressions (kept simple)
+for s in S:
+    for it in s["items"]:
+        it["nl"] = [c for c in it["nl"] if c]
+
+MEQ = [{
+    "id": "CAR-HF-MEQ-01",
+    "part": "MEQ",
+    "lec": "HF",
+    "lecture": "Heart failure (อ.Chatchai)",
+    "topic": "Acute dyspnea in an elderly man — diagnosing decompensated HFrEF, initial management and discharge therapy",
+    "vignette": (
+        "ผู้ป่วยชายไทยอายุ 72 ปี มาห้องฉุกเฉินด้วยอาการเหนื่อยเฉียบพลัน 1 วันก่อนมาโรงพยาบาล\n"
+        "PI: 2 สัปดาห์ก่อนเหนื่อยเวลาเดินขึ้นบันได ต้องนอนหนุนหมอน 3 ใบ 3 คืนก่อนตื่นกลางดึกเพราะหอบ ต้องลุกนั่งนานจึงดีขึ้น ขาบวมสองข้าง วันนี้เหนื่อยแม้นั่งพัก ไม่มีเจ็บหน้าอก ไม่มีไข้ 1 เดือนก่อนซื้อยาแก้ปวดเข่ากินเองทุกวัน\n"
+        "U/D: ความดันโลหิตสูง 15 ปี · เบาหวานชนิดที่ 2 · เคย MI เมื่อ 3 ปีก่อน กินยาไม่สม่ำเสมอ\n"
+        "PE: BT 36.9 C, PR 108/min regular, BP 156/94 mmHg, RR 28/min, SpO2 88% room air\n"
+        "JVP 7 cm เหนือ sternal angle (ศีรษะสูง 45°) · hepatojugular reflux positive · Heart: apex เลื่อนไป anterior axillary line, S3 gallop · Lungs: fine crepitations ฐานปอดสองข้าง · pitting edema 2+ ถึงหน้าแข้ง · ปลายมือเท้าอุ่น\n"
+        "Lab: NT-proBNP 5,800 pg/mL · hs-troponin T สูงเล็กน้อยคงที่ใน 2 ครั้ง · Cr 1.3 mg/dL (เดิม 1.1) · Na 133 · K 4.4 mmol/L · Hb 11.2 g/dL\n"
+        "ECG: sinus tachycardia, Q wave V1–V4, ไม่มี ST ยกใหม่ · CXR: cardiomegaly, cephalization, Kerley B lines, pleural effusion เล็กน้อยสองข้าง\n"
+        "Echo: LVEF 30%, anterior wall akinesia, LV dilated, moderate functional MR"
+    ),
+    "questions": [
+        {"q": "1. จงให้การวินิจฉัย พร้อมระบุหลักฐานตามนิยาม HF สามองค์ประกอบ (3 คะแนน)",
+         "a": "**Decompensated (acute on chronic) heart failure with reduced ejection fraction จาก ischemic cardiomyopathy**\n① **อาการ/อาการแสดง**: เหนื่อย orthopnea PND ขาบวม · JVP สูง HJR positive S3 apex เลื่อน crepitations\n② **หัวใจผิดปกติ**: echo LVEF 30%, anterior akinesia, LV โต\n③ **ยืนยัน**: **NT-proBNP 5,800** (> 300 ในภาวะเฉียบพลัน) **และ** หลักฐาน congestion ใน CXR (cephalization, Kerley B, effusion)\nจำแนก: **HFrEF** (LVEF ≤ 40% ตาม ESC 2021/AHA 2022; < 50% ตาม ESC 2026) · **stage C** · NYHA IV ขณะมา"},
+        {"q": "2. จงระบุโปรไฟล์ hemodynamic ของผู้ป่วยรายนี้ พร้อมเหตุผล (2 คะแนน)",
+         "a": "**Warm-Wet**\n**Wet**: orthopnea, JVP สูง, HJR positive, crepitations, ขาบวม\n**Warm**: ปลายมือเท้าอุ่น ความดันสูง รู้สติดี (proportional pulse pressure (156−94)/156 ≈ 40% > 25%)"},
+        {"q": "3. จงบอกตัวกระตุ้นที่ทำให้ HF กำเริบในผู้ป่วยรายนี้ และสิ่งที่ต้องตรวจเพิ่มเพื่อหาสาเหตุเร่งด่วน (3 คะแนน)",
+         "a": "**ตัวกระตุ้นจากประวัติ**: **ยาแก้ปวดเข่าที่ซื้อกินเอง (น่าจะเป็น NSAIDs)** → คั่งเกลือน้ำ Cr ขึ้น · **กินยาไม่สม่ำเสมอ** · ความดันสูงไม่คุม · ซีดเล็กน้อย\n**หาเหตุเร่งด่วน (CHAMPIT)**: ACS — ECG ไม่มี ST ยกใหม่ troponin สูงเล็กน้อยคงที่ (น่าจะเป็น myocardial injury จาก HF มากกว่า ACS แต่ต้องติดตาม) · arrhythmia — ECG sinus · mechanical — echo ไม่มี papillary rupture/VSD · PE, infection, tamponade — ไม่มีลักษณะชี้นำ\n**ตรวจเพิ่ม**: ferritin + TSAT (Hb 11.2), TFT, HbA1c, electrolytes/Cr ซ้ำ, ประเมินหลอดเลือดโคโรนารีเมื่อคงที่"},
+        {"q": "4. จงเขียนการรักษาเบื้องต้นในห้องฉุกเฉินและวันแรก (4 คะแนน)",
+         "a": "1. **ท่านั่ง** · **O₂** เพราะ SpO₂ 88% (เป้า ≥ 90%) · **NIV (CPAP/BiPAP)** เพราะ RR 28 และ SpO₂ < 90%\n2. **IV furosemide** — ผู้ป่วยไม่ได้ diuretic ประจำ → **20–40 มก. IV** แล้วปรับ · **ประเมินที่ 2 ชม. (UNa ≥ 50–70 mmol/L) และ 6 ชม. (UO ≥ 100–150 mL/ชม.)** ถ้าไม่พอเพิ่มเป็นสองเท่า\n3. **IV nitroglycerin** เพราะ SBP > 110 และมี congestion ในปอด\n4. **หยุด NSAIDs** · ไม่ให้ morphine เป็นประจำ\n5. ชั่งน้ำหนัก I/O ทุกวัน · K Na Cr ทุกวัน · LMWH ป้องกัน VTE\n6. หลังคงที่ (ความดันพอ ไม่มี hypoperfusion) **เริ่ม SGLT2i ในโรงพยาบาล** (ESC 2026 Class I)"},
+        {"q": "5. ก่อนจำหน่าย ผู้ป่วย euvolemic BP 118/72 HR 84 K 4.6 eGFR 52 จงสั่งยาที่ลดการตายพร้อมขนาดเริ่มต้น และวางแผนติดตาม (5 คะแนน)",
+         "a": "**สี่เสาหลัก (เริ่มขนาดต่ำทั้งหมด)**\n- **Sacubitril/valsartan 49/51 มก. วันละ 2 ครั้ง** (หรือ 24/26 ถ้ากังวลความดัน) — หรือ ACEi เช่น enalapril 2.5 มก. bid ถ้าเข้าถึง ARNI ไม่ได้\n- **Bisoprolol 1.25 มก. วันละครั้ง** (เริ่มเมื่อ euvolemic)\n- **Spironolactone 12.5–25 มก. วันละครั้ง** (K 4.6, eGFR 52)\n- **Dapagliflozin หรือ empagliflozin 10 มก. วันละครั้ง**\n+ **furosemide ขนาดต่ำสุดที่คง euvolemia** · aspirin + statin ขนาดสูง (ischemic)\n**ติดตาม**: นัด **ภายใน 1–2 สัปดาห์** ตรวจอาการ ความดัน ชีพจร **K และ Cr** แล้ว **เพิ่มขนาดยาทุก 1–2 สัปดาห์** ให้ถึงเป้าหมายภายในราว 3 เดือน (STRONG-HF, ESC 2026)\n**ประเมินซ้ำ LVEF หลังยาเต็มที่ ≥ 3 เดือน** → ถ้ายัง ≤ 35% พิจารณา **ICD** (ischemic, ไม่ใช่ภายใน 40 วันหลัง MI) และ CRT ถ้ามี LBBB QRS ≥ 150"},
+        {"q": "6. จงให้คำแนะนำการดูแลตนเองที่สำคัญ 4 ข้อ (2 คะแนน)",
+         "a": "- **ชั่งน้ำหนักทุกเช้า** — เพิ่ม > 2 กก. ใน 3 วัน หรือเหนื่อย/บวมมากขึ้น ให้ติดต่อแพทย์\n- **จำกัดเกลือ** หลีกเลี่ยงอาหารเค็ม อาหารแปรรูป\n- **ห้ามซื้อยาแก้ปวดกลุ่ม NSAIDs เอง** ใช้ paracetamol แทน\n- **กินยาสม่ำเสมอ** ไม่หยุดเองแม้อาการดีขึ้น · งดบุหรี่ สุรา · ออกกำลังกายตามคำแนะนำ · ฉีดวัคซีนไข้หวัดใหญ่และปอดอักเสบ"},
+    ],
+    "ref": [SL + "case ชายไทย 72 ปี เหนื่อยเฉียบพลัน · Universal Definition · HF signs · NP · CXR",
+            "2021 ESC HF Guidelines + 2023 Focused Update", "2026 ESC Guidelines for the management of HF"],
+    "nl": ["2.3.9(5)", "2.2.5", "2.1.34", "B9.4(1)", "B7.4(2)", "3.3.13"],
+    "years": [],
+}]
+
+OSCE = [{
+    "id": "CAR-HF-OSCE-01",
+    "part": "OSCE/SAQ",
+    "lec": "HF",
+    "lecture": "Heart failure (อ.Chatchai)",
+    "topic": "OSCE – Examination of JVP and hepatojugular reflux in a patient with suspected heart failure",
+    "station": "OSCE (ตรวจร่างกายผู้ป่วยมาตรฐาน) 5 นาที",
+    "instruction": "ผู้ป่วยชายอายุ 68 ปี มาด้วยเหนื่อยเวลานอนราบและขาบวม 2 สัปดาห์ สงสัยภาวะหัวใจล้มเหลว\n\n**จงตรวจ jugular venous pressure และ hepatojugular reflux พร้อมรายงานผลและแปลผลภายใน 5 นาที**\n\n(ผู้คุมสอบจะบอกว่า ยอดคลื่นอยู่สูง 6 cm เหนือ sternal angle และ JVP สูงขึ้นค้างขณะกดท้อง)",
+    "answer": (
+        "**เกณฑ์ให้คะแนน (10 คะแนน)**\n\n"
+        "| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n"
+        "| 1 | แนะนำตัว ยืนยันตัวผู้ป่วย ขออนุญาต ล้างมือ เปิดเผยบริเวณคอและหน้าท้องเหมาะสม | 1 |\n"
+        "| 2 | จัดท่า **ศีรษะสูง 45°** หมอนรองให้กล้ามเนื้อคอผ่อนคลาย **หันหน้าเล็กน้อยไปทางซ้าย** · ใช้แสงส่องเฉียง | 1 |\n"
+        "| 3 | ดู **right internal jugular vein** ระหว่างสองหัวของ sternocleidomastoid | 1 |\n"
+        "| 4 | **แยก JVP จาก carotid**: สองยอดต่อจังหวะ · คลำไม่ได้ · กดฐานคอแล้วหาย · ระดับเปลี่ยนตามท่าและการหายใจ | 2 |\n"
+        "| 5 | วัด **ระยะแนวดิ่งจาก sternal angle** ถึงยอดคลื่น (ใช้ไม้บรรทัดสองอันตั้งฉาก) | 1 |\n"
+        "| 6 | **Hepatojugular reflux**: บอกผู้ป่วยก่อน กดกลางท้องหรือใต้ชายโครงขวาสม่ำเสมอ **ราว 10–15 วินาที** ให้หายใจปกติ **ไม่เบ่ง** · ดูว่า JVP สูงขึ้นค้างตลอดการกดหรือไม่ | 2 |\n"
+        "| 7 | **รายงานและแปลผล**: JVP 6 cm เหนือ sternal angle → **RAP ≈ 6 + 5 = 11 cmH₂O ≈ 8 mmHg = สูง** · HJR positive → สนับสนุน **filling pressure สูง** เข้าได้กับ HF (สัมพันธ์กับ RAP > 8 mmHg และ PCWP > 15 mmHg) | 1 |\n"
+        "| 8 | ขอบคุณ จัดเสื้อผ้า บอกการตรวจที่ทำต่อ (ฟัง S3 ปอด ดูขาบวม · NT-proBNP, CXR, echo) | 1 |\n\n"
+        "**ข้อที่ทำให้เสียคะแนน**: ดู external jugular แทน internal · วัดจากกระดูกไหปลาร้าหรือติ่งหูแทน sternal angle · ลืมบวกระยะถึง RA หรือรายงานหน่วยผิด · ให้ผู้ป่วยเบ่งขณะกดท้อง (ผลบวกลวง) · กดท้องแรงจนเจ็บ"
+    ),
+    "ref": [SL + "JVD, estimated RA pressure (JAMA 2002), hepatojugular reflux (Am J Cardiol 1990)"],
+    "nl": ["2.3.9(5)", "B7.1.2(2)", "2.1.39"],
+    "years": [],
+}, {
+    "id": "CAR-HF-OSCE-02",
+    "part": "OSCE/SAQ",
+    "lec": "HF",
+    "lecture": "Heart failure (อ.Chatchai)",
+    "topic": "OSCE – Discharge counselling for a patient with heart failure",
+    "station": "OSCE (ให้คำแนะนำผู้ป่วยมาตรฐาน) 5 นาที",
+    "instruction": "ผู้ป่วยหญิงอายุ 66 ปี นอนโรงพยาบาลด้วย HF กำเริบ (LVEF 30%) จากการกินยาแก้ปวดข้อที่ซื้อเองและขาดยา ขณะนี้ไม่บวม ไม่เหนื่อย จะกลับบ้านพรุ่งนี้ด้วยยา sacubitril/valsartan, bisoprolol, spironolactone, dapagliflozin และ furosemide\n\nผู้ป่วยถามว่า \"กลับบ้านแล้วต้องดูแลตัวเองอย่างไร ทำไมต้องกินยาหลายตัว\"\n\n**จงให้คำแนะนำผู้ป่วยก่อนกลับบ้านภายใน 5 นาที**",
+    "answer": (
+        "**เกณฑ์ให้คะแนน (10 คะแนน)**\n\n"
+        "| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n"
+        "| 1 | แนะนำตัว ยืนยันตัวผู้ป่วย ถามความเข้าใจเดิมเรื่องโรค | 1 |\n"
+        "| 2 | อธิบายโรคด้วยภาษาง่าย — หัวใจบีบตัวอ่อน น้ำจึงคั่งในปอดและขา · โรคควบคุมได้ด้วยยาและการดูแลตัวเอง | 1 |\n"
+        "| 3 | อธิบาย **ทำไมต้องกินหลายตัว** — ยาสี่ตัวหลักช่วยให้หัวใจฟื้นตัว ลดการนอนโรงพยาบาลและยืดชีวิต · ยาขับปัสสาวะช่วยลดบวมและเหนื่อย · **ห้ามหยุดเองแม้อาการดีขึ้น** | 2 |\n"
+        "| 4 | **ชั่งน้ำหนักทุกเช้า** หลังปัสสาวะ ก่อนอาหาร จดบันทึก · **น้ำหนักเพิ่ม > 2 กก. ใน 3 วัน** หรือเหนื่อยมากขึ้น นอนราบไม่ได้ ขาบวม → ติดต่อแพทย์ | 2 |\n"
+        "| 5 | **จำกัดเกลือ** เลี่ยงอาหารเค็ม อาหารแปรรูป น้ำปลา ผงชูรส · ดื่มน้ำตามที่แพทย์แนะนำ · งดสุราและบุหรี่ | 1 |\n"
+        "| 6 | **ห้ามซื้อยาแก้ปวดกลุ่ม NSAIDs/ยาชุด/สมุนไพรเอง** — ใช้ paracetamol ได้ · แจ้งแพทย์ทุกครั้งว่าเป็นโรคหัวใจ | 1 |\n"
+        "| 7 | อาการข้างเคียงที่ต้องรู้: เวียนศีรษะเมื่อลุกเร็ว (ลุกช้า ๆ) · ปัสสาวะบ่อย · SGLT2i ให้รักษาความสะอาดอวัยวะเพศ งดยาชั่วคราวเมื่อกินไม่ได้หรือเจ็บป่วยเฉียบพลัน · **มาตรวจเลือดดู K และไตตามนัด** | 1 |\n"
+        "| 8 | **นัดติดตามภายใน 1–2 สัปดาห์** เพื่อปรับยา · ทวนความเข้าใจ (teach-back) และเปิดโอกาสถาม | 1 |\n\n"
+        "**ข้อที่ทำให้เสียคะแนน**: ไม่ห้าม NSAIDs (สาเหตุของการนอนโรงพยาบาลครั้งนี้) · ไม่สอนชั่งน้ำหนัก · บอกให้หยุดยาเมื่ออาการดีขึ้น · ใช้ศัพท์แพทย์โดยไม่อธิบาย"
+    ),
+    "ref": [SL + "Clinical course of HF", "ESC 2023 Focused Update — STRONG-HF", "2026 ESC Guidelines"],
+    "nl": ["2.3.9(5)", "B7.4(2)", "B9.4(1)"],
+    "years": [],
+}]
+
+LEC = {
+    "lec": "HF",
+    "date": "สไลด์ พ.ย. 2569",
+    "title": "Heart failure — นิยาม พยาธิสรีรวิทยา การวินิจฉัย และการรักษา",
+    "subtitle": " · ".join([
+        "เหนื่อยเฉียบพลัน: pump pipe wire", "นิยามและการจำแนก LVEF/ระยะ", "neurohormonal และ remodeling",
+        "LVP สู่ปอดบวมน้ำ", "อาการและ dyspnea ตามท่า", "JVP และ HJR", "natriuretic peptides",
+        "CXR echo และแผนวินิจฉัย", "ระบาดวิทยาและตัวกระตุ้น", "สี่เสาหลักของ HFrEF",
+        "HFpEF ธาตุเหล็ก ICD/CRT", "decompensated HF และ warm/cold profile"]),
+    "objectives": [
+        "แยกสาเหตุของอาการเหนื่อยเฉียบพลันอย่างเป็นระบบ และคิดโรคหัวใจเป็น pump · pipe · wire",
+        "ให้นิยาม HF ตาม Universal Definition และจำแนกตาม LVEF ระยะ A–D และ NYHA ได้ พร้อมบอกการเปลี่ยนแปลงใน ESC 2026",
+        "อธิบาย neurohormonal activation, remodeling และ Starling forces ที่นำไปสู่ congestion และปอดบวมน้ำ",
+        "ซักประวัติอาการของ HF และแยก orthopnea, PND, bendopnea, trepopnea และ platypnea ได้",
+        "ตรวจ JVP ประมาณ RAP และทำ hepatojugular reflux พร้อมบอกความจำเพาะของอาการแสดงแต่ละอย่าง",
+        "แปลผล BNP/NT-proBNP ตามจุดตัด อายุ และปัจจัยรบกวน และแปลผล CXR ตามระดับ PCWP",
+        "สั่งยาสี่เสาหลักของ HFrEF พร้อมขนาดเริ่มต้น เป้าหมาย และการติดตามความปลอดภัย",
+        "รักษา HFpEF ภาวะขาดธาตุเหล็ก และบอกข้อบ่งชี้ ICD/CRT ได้",
+        "ประเมินโปรไฟล์ warm/cold wet/dry และรักษา decompensated HF ด้วย diuretic vasodilator หรือ inotrope ได้ถูกต้อง",
+    ],
+    "guidelines": [
+        "**2026 ESC Guidelines for the management of heart failure (Eur Heart J 2026; doi:10.1093/eurheartj/ehag100)** — ตัด HFmrEF (HFrEF < 50%, HFpEF ≥ 50%), ใช้ระยะ A–D, เปลี่ยน acute เป็น decompensated HF, FMT/AMT/GDIT, MRA Class I ทุก LVEF, NT-proBNP ตามอายุ (อาจารย์อ้างในสไลด์)",
+        "**AHA/ACC/ESC/WHF Expert Consensus: Second Universal Definition of Heart Failure (2026)** — HFrEF · HFimpEF · HFpEF โดยไม่ยึดจุดตัด LVEF ตายตัว, improvement/remission/recovery, NP ปกติไม่ตัด HFpEF",
+        "**Bozkurt B, et al. Universal Definition and Classification of Heart Failure. Eur J Heart Fail 2021;23:352–380** — นิยามสามองค์ประกอบ (อาจารย์อ้างในสไลด์)",
+        "**2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure + 2023 Focused Update** — ขนาดยาสี่เสาหลัก, SGLT2i Class I ใน HFmrEF/HFpEF, IV iron, STRONG-HF, อัลกอริทึม diuretic, CHAMPIT",
+        "**2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure** — ระยะ A–D, HFimpEF, ขนาด IV diuretic ในผู้ป่วยนอนโรงพยาบาล",
+        "**2024 ACC Expert Consensus Decision Pathway for Treatment of HFrEF (JACC 2024;83:1444–1488)** — เริ่มสี่เสาหลักเร็วและปรับให้ถึงขนาดสูงสุดภายในราว 3 เดือน (น่าจะตรงกับ \"US 2024\" ในสไลด์)",
+        "**2026 ACC Expert Consensus Decision Pathway for the Management of HFpEF** — SGLT2i + finerenone (เลือกก่อน spironolactone), semaglutide/tirzepatide เมื่อ BMI ≥ 30",
+        "**Heart Failure Council of Thailand (HFCT) 2019 Heart Failure Guideline (J Med Assoc Thai 2019;102(2):231–9) + 2022 Focused Update Part 1 (HFrEF) + 2023 Part 2 (HFmrEF/HFpEF)** — แนวทางไทยฉบับล่าสุดที่พบ (สไลด์อ้าง \"THAI 2022\")",
+        "**Thai Heart Failure Registry — Open Heart 2026;13:e004045** — ข้อมูลระบาดวิทยาในสไลด์",
+        "**Nohria A, Lewis E, Stevenson LW. Medical management of advanced heart failure. JAMA 2002;287:628–640** — JVP และโปรไฟล์ warm/cold (อาจารย์อ้างในสไลด์)",
+    ],
+    "nlGap": "เกณฑ์ฯ มีรหัส HF ใน `นล. 2.3.9(5)` และ `B7.2.5(2)` ยาใน `B7.4` และ diuretic ใน `B9.4(1)` แต่ **ไม่มีรหัสของ ARNI, SGLT2i, finerenone, IV iron, ICD/CRT หรือการจำแนก LVEF แยกเป็นรายการ** เนื้อหาส่วนนั้นอิงแนวทางปัจจุบันที่ระบุด้านล่าง",
+    "sections": S,
+    "meq": MEQ,
+    "osce": OSCE,
+}
+
+json.dump(LEC, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+n = sum(len(s["items"]) for s in S)
+print("wrote", OUT, "sections", len(S), "mcq", n)
