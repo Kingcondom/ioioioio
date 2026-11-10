@@ -363,13 +363,15 @@ function byOrd(a,b){return ordOf(a)-ordOf(b)||(a<b?-1:a>b?1:0);}
 function buildDeck(focus){
   var pins=live(state.pins),byTopic=[];
   if(+state.opt.sort){
+    /* ใบที่เขียนเอง/ปักจากตารางอยู่บนสุด ชุดใหม่สุดก่อน (ในชุดเดียวกันเรียงตามแถวเดิม) แล้วจึงตามด้วยหัวข้อเรียงตามบท
+       — เดิม (v12) ใบพวกนี้ไปอยู่ท้ายกำแพง กดปักตารางแล้วเลยดูเหมือนปักไม่ไป */
+    Object.keys(ownLive()).sort(function(a,b){var ta=state.own[a].t||0,tb=state.own[b].t||0;return Math.abs(ta-tb)<5000?ta-tb:tb-ta;}).forEach(function(id){
+      var c=ownCard(id);if(!(state.done[c.k]>0))byTopic.push({pid:c.pid,cs:[c]});
+    });
     Object.keys(pins).sort(byOrd).forEach(function(pid){
       var cs=cardsFor(pid).filter(function(c){return !(state.done[c.k]>0);});
       if(state.opt.q===0)cs=cs.filter(function(c){return c.kind!=="q"||pid.indexOf("q-")===0;});
       if(cs.length)byTopic.push({pid:pid,cs:cs});
-    });
-    Object.keys(ownLive()).sort(function(a,b){return (state.own[a].t||0)-(state.own[b].t||0);}).forEach(function(id){
-      var c=ownCard(id);if(!(state.done[c.k]>0))byTopic.push({pid:c.pid,cs:[c]});
     });
     var seq=[];byTopic.forEach(function(t){seq=seq.concat(t.cs);});
     if(focus){var ff=byTopic.filter(function(t){return t.pid===focus;})[0];if(ff){seq=seq.filter(function(c){return c.pid!==focus;});seq=ff.cs.concat(seq);}}
@@ -678,12 +680,12 @@ function pinTable(x){
     if(!Array.isArray(c))return;
     var f=String(c[0]||"").trim().slice(0,600),b=String(c[1]||"").trim().slice(0,1200);if(!f)return;
     var id="t"+hash(f+"\u0001"+b),prev=state.own[id];
-    if(prev&&!prev.del){var k=ownCard(id).k;if(state.done[k]>0)state.done[k]=-now();}
+    if(prev&&!prev.del){var k=ownCard(id).k;if(state.done[k]>0)state.done[k]=-now();prev.t=t+i;prev.u=t+i;}   /* ปักซ้ำ = ดันขึ้นบนสุดอีกครั้ง */
     else state.own[id]={f:f,b:b,t:t+i,u:t+i};
     if(!first)first=id;n++;
   });
   if(!n){toast("ตารางนี้ไม่มีแถวให้ปัก");return;}
-  save();buildDeck("o-"+first);layout();renderPanel();
+  save();buildDeck("o-"+first);layout();renderPanel();try{$("board").scrollTop=0;}catch(e){}
   toast("ปักแล้ว "+n+" ใบ"+(d.s?": "+String(d.s).slice(0,60):""));
 }
 
