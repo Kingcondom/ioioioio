@@ -31,3 +31,6 @@ EKG hyperK และ PBS thrombocytopenia ใน FA SAQ (ในโพยไม�
 ## คาบที่ทวนแล้ว: สุ่มข้อสอบของแต่ละวัน (Version 35)
 `python3 ward_drill/patch_rvquiz.py ward_drill/index.html` — ปุ่ม "สุ่มข้อสอบ" ในหัวของแต่ละวัน · ตั้งปีที่ออก (ทุกปี/3/5 ปีล่าสุด/เลือกเอง + ข้อฝึกเพิ่ม), Part, จำนวนข้อต่อคาบ
 ข้อสอบเก่าก่อนข้อฝึกเพิ่ม · ชุดและคำตอบในชุดเก็บใน localStorage `med421-drill-rvquiz` · ฐานคือเว็บสด 1794212683-65c3 (มีปุ่ม "ถาม AI" + capability sample จาก session อื่น)
+
+## ปุ่มโหมดสี (Version 36)
+`python3 ward_drill/patch_theme.py ward_drill/index.html` — อัตโนมัติ / สว่าง / มืด ที่หัวหน้า · ตั้ง `data-theme` บน `<html>` (CSS มีชุดสีมืดอยู่แล้ว) · เก็บใน localStorage `med421-drill-theme`
