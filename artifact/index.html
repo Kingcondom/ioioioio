@@ -1286,7 +1286,9 @@ function tqPinHref(tw){
     var head=c[0]||hd[0]||"",back=[];
     for(var i=1;i<c.length;i++){if(!c[i]||c[i]==="—")continue;back.push(hd.length>2&&hd[i]?hd[i]+": "+c[i]:c[i]);}
     if(!head||!back.length)return;
-    cards.push(["**"+head.replace(/\*/g,"")+"**\n"+(sub?sub.replace(/[?？]\s*$/,"")+" ?":ctx),back.join("\n")]);
+    /* หน้าใบต้องบอกที่มาเสมอ — ตาราง 2 คอลัมน์ที่คอลัมน์แรกเป็นเลขหรือคำสั้น (เช่น WHO stage 1-4)
+       เคยได้ใบหน้าเป็น "1" เฉย ๆ จนผู้ใช้หาไม่เจอบนกำแพง จึงใส่ ctx (ชื่อหัวข้อ) ไว้หน้าคำถามด้วย */
+    cards.push(["**"+head.replace(/\*/g,"")+"**\n"+(sub?(ctx?ctx+" · ":"")+sub.replace(/[?？]\s*$/,"")+" ?":ctx),back.join("\n")]);
   });
   var js=JSON.stringify({s:ctx,c:cards});
   var b64=btoa(unescape(encodeURIComponent(js))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");

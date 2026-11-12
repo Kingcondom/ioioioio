@@ -190,6 +190,27 @@ try:
                     if c and c != "—" and c.split("\n")[0][:18] not in back:
                         fail.append("%s: หลังใบตกเนื้อหาคอลัมน์ถัดไป (%r)" % (sid, c[:30]))
                         break
+            # หน้าใบต้องบอกที่มาได้ด้วยตัวเอง — ถ้าคอลัมน์แรกสั้นหรือเป็นเลขล้วน
+            # (WHO stage 1-4) หน้าใบที่มีแค่ "1" ทำให้หาใบบนกำแพงไม่เจอ
+            # ที่มา = ctx แบบเดียวกับที่หน้า learn คิด: หัวข้อย่อย h3/h4 ที่อยู่เหนือตาราง
+            # ถ้าไม่มีก็ใช้ชื่อหัวข้อ (h2) — ตาราง 2 คอลัมน์เคยทิ้ง ctx ไปทั้งก้อน
+            tctx = learn.evaluate("""()=>{
+              var a=[...document.querySelectorAll('main .prose .tablewrap')];
+              var tw=a.find(x=>x.querySelector('table'));
+              if(!tw)return '';
+              var el=tw.previousElementSibling;
+              while(el&&!/^H[34]$/.test(el.tagName))el=el.previousElementSibling;
+              return (el?el.innerText:document.querySelector('main .card h2').innerText).trim();
+            }""")
+            for (front, back), row in zip(data.get("c") or [], usable):
+                key = row[0].replace("*", "").strip()
+                if len(key) > 6 and not key.isdigit():
+                    continue                      # คอลัมน์แรกบอกตัวเองได้อยู่แล้ว
+                if tctx and tctx[:14] not in front:
+                    fail.append("%s: คอลัมน์แรกเป็น %r สั้นเกินจะรู้ที่มา แต่หน้าใบไม่มีที่มา %r (%r)"
+                                % (sid, key, tctx[:20], front[:70]))
+                    break
+
             nbytes = len(href)
             print("  %-18s %d ใบ · URL %d ตัวอักษร%s"
                   % (sid, len(data.get("c") or []), nbytes,
