@@ -1,0 +1,63 @@
+/* ===================== สีประจำระบบ (ผู้ใช้ขอ 13 พ.ย. 2569) — สร้างจาก make_sys_css.py ===================== */
+:root[data-set="cardio"],.sys-cardio{--lime:hsl(352 70% 89%);--lime-2:hsl(352 62% 62%);--lime-3:hsl(352 55% 47%);--on-lime:hsl(352 60% 16%);--pen:hsl(352 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(352 50% 10%)}
+:root[data-set="nephro"],.sys-nephro{--lime:hsl(178 70% 89%);--lime-2:hsl(178 62% 62%);--lime-3:hsl(178 55% 47%);--on-lime:hsl(178 60% 16%);--pen:hsl(178 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(178 50% 10%)}
+:root[data-set="chest"],.sys-chest{--lime:hsl(218 70% 89%);--lime-2:hsl(218 62% 62%);--lime-3:hsl(218 55% 47%);--on-lime:hsl(218 60% 16%);--pen:hsl(218 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(218 50% 10%)}
+:root[data-set="neuro"],.sys-neuro{--lime:hsl(278 70% 89%);--lime-2:hsl(278 62% 62%);--lime-3:hsl(278 55% 47%);--on-lime:hsl(278 60% 16%);--pen:hsl(278 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(278 50% 10%)}
+:root[data-set="air"],.sys-air{--lime:hsl(40 70% 89%);--lime-2:hsl(40 62% 62%);--lime-3:hsl(40 55% 47%);--on-lime:hsl(40 60% 16%);--pen:hsl(40 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(40 50% 10%)}
+:root[data-set="infect"],.sys-infect{--lime:hsl(150 70% 89%);--lime-2:hsl(150 62% 62%);--lime-3:hsl(150 55% 47%);--on-lime:hsl(150 60% 16%);--pen:hsl(150 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(150 50% 10%)}
+:root[data-set="gi"],.sys-gi{--lime:hsl(22 70% 89%);--lime-2:hsl(22 62% 62%);--lime-3:hsl(22 55% 47%);--on-lime:hsl(22 60% 16%);--pen:hsl(22 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(22 50% 10%)}
+:root[data-set="endo"],.sys-endo{--lime:hsl(88 70% 89%);--lime-2:hsl(88 62% 62%);--lime-3:hsl(88 55% 47%);--on-lime:hsl(88 60% 16%);--pen:hsl(88 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(88 50% 10%)}
+:root[data-set="heme"],.sys-heme{--lime:hsl(322 70% 89%);--lime-2:hsl(322 62% 62%);--lime-3:hsl(322 55% 47%);--on-lime:hsl(322 60% 16%);--pen:hsl(322 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(322 50% 10%)}
+:root[data-set="derm"],.sys-derm{--lime:hsl(196 70% 89%);--lime-2:hsl(196 62% 62%);--lime-3:hsl(196 55% 47%);--on-lime:hsl(196 60% 16%);--pen:hsl(196 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(196 50% 10%)}
+:root[data-set="onco"],.sys-onco{--lime:hsl(30 28% 89%);--lime-2:hsl(30 25% 62%);--lime-3:hsl(30 22% 47%);--on-lime:hsl(30 24% 16%);--pen:hsl(30 26% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(30 20% 10%)}
+:root[data-set="mock"],.sys-mock{--lime:hsl(248 70% 89%);--lime-2:hsl(248 62% 62%);--lime-3:hsl(248 55% 47%);--on-lime:hsl(248 60% 16%);--pen:hsl(248 65% 30%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(248 50% 10%)}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"])[data-set="cardio"],:root:not([data-theme="light"]) .sys-cardio{--lime:hsl(352 32% 20%);--lime-2:hsl(352 55% 60%);--lime-3:hsl(352 60% 70%);--on-lime:hsl(352 70% 90%);--pen:hsl(352 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(352 50% 10%)}
+  :root:not([data-theme="light"])[data-set="nephro"],:root:not([data-theme="light"]) .sys-nephro{--lime:hsl(178 32% 20%);--lime-2:hsl(178 55% 60%);--lime-3:hsl(178 60% 70%);--on-lime:hsl(178 70% 90%);--pen:hsl(178 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(178 50% 10%)}
+  :root:not([data-theme="light"])[data-set="chest"],:root:not([data-theme="light"]) .sys-chest{--lime:hsl(218 32% 20%);--lime-2:hsl(218 55% 60%);--lime-3:hsl(218 60% 70%);--on-lime:hsl(218 70% 90%);--pen:hsl(218 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(218 50% 10%)}
+  :root:not([data-theme="light"])[data-set="neuro"],:root:not([data-theme="light"]) .sys-neuro{--lime:hsl(278 32% 20%);--lime-2:hsl(278 55% 60%);--lime-3:hsl(278 60% 70%);--on-lime:hsl(278 70% 90%);--pen:hsl(278 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(278 50% 10%)}
+  :root:not([data-theme="light"])[data-set="air"],:root:not([data-theme="light"]) .sys-air{--lime:hsl(40 32% 20%);--lime-2:hsl(40 55% 60%);--lime-3:hsl(40 60% 70%);--on-lime:hsl(40 70% 90%);--pen:hsl(40 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(40 50% 10%)}
+  :root:not([data-theme="light"])[data-set="infect"],:root:not([data-theme="light"]) .sys-infect{--lime:hsl(150 32% 20%);--lime-2:hsl(150 55% 60%);--lime-3:hsl(150 60% 70%);--on-lime:hsl(150 70% 90%);--pen:hsl(150 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(150 50% 10%)}
+  :root:not([data-theme="light"])[data-set="gi"],:root:not([data-theme="light"]) .sys-gi{--lime:hsl(22 32% 20%);--lime-2:hsl(22 55% 60%);--lime-3:hsl(22 60% 70%);--on-lime:hsl(22 70% 90%);--pen:hsl(22 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(22 50% 10%)}
+  :root:not([data-theme="light"])[data-set="endo"],:root:not([data-theme="light"]) .sys-endo{--lime:hsl(88 32% 20%);--lime-2:hsl(88 55% 60%);--lime-3:hsl(88 60% 70%);--on-lime:hsl(88 70% 90%);--pen:hsl(88 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(88 50% 10%)}
+  :root:not([data-theme="light"])[data-set="heme"],:root:not([data-theme="light"]) .sys-heme{--lime:hsl(322 32% 20%);--lime-2:hsl(322 55% 60%);--lime-3:hsl(322 60% 70%);--on-lime:hsl(322 70% 90%);--pen:hsl(322 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(322 50% 10%)}
+  :root:not([data-theme="light"])[data-set="derm"],:root:not([data-theme="light"]) .sys-derm{--lime:hsl(196 32% 20%);--lime-2:hsl(196 55% 60%);--lime-3:hsl(196 60% 70%);--on-lime:hsl(196 70% 90%);--pen:hsl(196 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(196 50% 10%)}
+  :root:not([data-theme="light"])[data-set="onco"],:root:not([data-theme="light"]) .sys-onco{--lime:hsl(30 13% 20%);--lime-2:hsl(30 22% 60%);--lime-3:hsl(30 24% 70%);--on-lime:hsl(30 28% 90%);--pen:hsl(30 28% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(30 20% 10%)}
+  :root:not([data-theme="light"])[data-set="mock"],:root:not([data-theme="light"]) .sys-mock{--lime:hsl(248 32% 20%);--lime-2:hsl(248 55% 60%);--lime-3:hsl(248 60% 70%);--on-lime:hsl(248 70% 90%);--pen:hsl(248 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(248 50% 10%)}
+}
+:root[data-theme="dark"][data-set="cardio"],:root[data-theme="dark"] .sys-cardio{--lime:hsl(352 32% 20%);--lime-2:hsl(352 55% 60%);--lime-3:hsl(352 60% 70%);--on-lime:hsl(352 70% 90%);--pen:hsl(352 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(352 50% 10%)}
+:root[data-theme="dark"][data-set="nephro"],:root[data-theme="dark"] .sys-nephro{--lime:hsl(178 32% 20%);--lime-2:hsl(178 55% 60%);--lime-3:hsl(178 60% 70%);--on-lime:hsl(178 70% 90%);--pen:hsl(178 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(178 50% 10%)}
+:root[data-theme="dark"][data-set="chest"],:root[data-theme="dark"] .sys-chest{--lime:hsl(218 32% 20%);--lime-2:hsl(218 55% 60%);--lime-3:hsl(218 60% 70%);--on-lime:hsl(218 70% 90%);--pen:hsl(218 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(218 50% 10%)}
+:root[data-theme="dark"][data-set="neuro"],:root[data-theme="dark"] .sys-neuro{--lime:hsl(278 32% 20%);--lime-2:hsl(278 55% 60%);--lime-3:hsl(278 60% 70%);--on-lime:hsl(278 70% 90%);--pen:hsl(278 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(278 50% 10%)}
+:root[data-theme="dark"][data-set="air"],:root[data-theme="dark"] .sys-air{--lime:hsl(40 32% 20%);--lime-2:hsl(40 55% 60%);--lime-3:hsl(40 60% 70%);--on-lime:hsl(40 70% 90%);--pen:hsl(40 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(40 50% 10%)}
+:root[data-theme="dark"][data-set="infect"],:root[data-theme="dark"] .sys-infect{--lime:hsl(150 32% 20%);--lime-2:hsl(150 55% 60%);--lime-3:hsl(150 60% 70%);--on-lime:hsl(150 70% 90%);--pen:hsl(150 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(150 50% 10%)}
+:root[data-theme="dark"][data-set="gi"],:root[data-theme="dark"] .sys-gi{--lime:hsl(22 32% 20%);--lime-2:hsl(22 55% 60%);--lime-3:hsl(22 60% 70%);--on-lime:hsl(22 70% 90%);--pen:hsl(22 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(22 50% 10%)}
+:root[data-theme="dark"][data-set="endo"],:root[data-theme="dark"] .sys-endo{--lime:hsl(88 32% 20%);--lime-2:hsl(88 55% 60%);--lime-3:hsl(88 60% 70%);--on-lime:hsl(88 70% 90%);--pen:hsl(88 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(88 50% 10%)}
+:root[data-theme="dark"][data-set="heme"],:root[data-theme="dark"] .sys-heme{--lime:hsl(322 32% 20%);--lime-2:hsl(322 55% 60%);--lime-3:hsl(322 60% 70%);--on-lime:hsl(322 70% 90%);--pen:hsl(322 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(322 50% 10%)}
+:root[data-theme="dark"][data-set="derm"],:root[data-theme="dark"] .sys-derm{--lime:hsl(196 32% 20%);--lime-2:hsl(196 55% 60%);--lime-3:hsl(196 60% 70%);--on-lime:hsl(196 70% 90%);--pen:hsl(196 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(196 50% 10%)}
+:root[data-theme="dark"][data-set="onco"],:root[data-theme="dark"] .sys-onco{--lime:hsl(30 13% 20%);--lime-2:hsl(30 22% 60%);--lime-3:hsl(30 24% 70%);--on-lime:hsl(30 28% 90%);--pen:hsl(30 28% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(30 20% 10%)}
+:root[data-theme="dark"][data-set="mock"],:root[data-theme="dark"] .sys-mock{--lime:hsl(248 32% 20%);--lime-2:hsl(248 55% 60%);--lime-3:hsl(248 60% 70%);--on-lime:hsl(248 70% 90%);--pen:hsl(248 70% 74%);--accent:var(--lime-2);--accent-soft:var(--lime);--accent-ink:var(--pen);--on-accent:hsl(248 50% 10%)}
+
+/* ข้อความสีเน้นบนพื้นขาว → ใช้สีเข้ม (--accent ตอนนี้เป็นสีกลาง อ่านไม่ชัดถ้าเป็นตัวหนังสือ) */
+.qno,.tag.yr,.tag.old,.tag.pic,.nlchip,.panel h4,.nllist i,.brand-mark,.rvsub h3,a{color:var(--accent-ink)}
+.qno,.tag.yr,.tag.old,.tag.pic,.nlchip{background:var(--accent-soft)}
+/* การ์ดระบบหน้าแรก: แถบสีด้านบน + ป้ายชื่อสีระบบ + แถบความคืบหน้า */
+.tr-card{box-shadow:inset 0 6px 0 var(--lime-2);padding-top:20px}
+.tr-card.done{box-shadow:inset 0 6px 0 var(--lime-3)}
+.tr-card.cur{box-shadow:inset 0 6px 0 var(--lime-2),0 0 0 2px var(--lime-3)}
+.tr-c-no{align-self:start;justify-self:start;background:var(--lime);color:var(--on-lime);border-radius:999px;padding:2px 12px;font-size:18px;line-height:1.45}
+.tr-c-day{background:var(--surface-sunk);color:var(--pen)}
+.tr-c-bar{background:color-mix(in srgb,var(--lime) 60%,var(--rule))}
+/* แถบเลือกระบบ: จุดสีหน้าชื่อ · ปุ่มที่เลือกเป็นพื้นสีระบบ */
+#setbar .tab::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--lime-2);margin-inline-end:8px;vertical-align:1px}
+#setbar .tab[aria-selected="true"]{background:var(--lime);color:var(--on-lime)}
+#setbar .tab[aria-selected="true"]::before{background:var(--lime-3)}
+/* แถบซ้ายบนคอม: วงความคืบหน้าเป็นสีระบบ */
+.tr-sd-c .mr{background:conic-gradient(var(--lime-3) calc(var(--p)*360deg),color-mix(in srgb,var(--lime-2) 45%,var(--rule)) 0)}
+/* มือถือ 2 คอลัมน์: ชื่อระบบห้ามโดนตัด — ป้าย "กำลังทำ" ขึ้นบรรทัดใหม่แทน */
+.tr-c-top{flex-wrap:wrap}.tr-c-no{flex:none;max-width:100%}
+/* ป้ายระบบในโหมดรวมหลายระบบ (ข้อสอบแยกปี / มีรูป / คาบที่ทวน) */
+.tag.sys[class*="sys-"]{background:var(--lime);color:var(--on-lime)}
+/* หน้าต่างรายคาบของระบบ: หัวสีระบบ */
+.tr-sheet[class*="sys-"] .tr-sh-head{box-shadow:inset 4px 0 0 var(--lime-2);padding-inline-start:12px}
+
