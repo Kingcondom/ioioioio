@@ -418,3 +418,9 @@ artifact: https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (capabilities db+use
 - lec ที่มีเฉพาะใน drill_sets ของ dashboard (เช่น G06) ต้องใส่ newlec ใน JOB ไม่งั้น build.py ปฏิเสธ
 - เวอร์ชัน: v12 (14 ต.ค.) → v13 บัญชี+สุ่มข้อสอบ → v14 cardio 36 → v16 chest 37/THO, nephro CATH, neuro LP/ACS → v17 nephro PHY1/PHY2 → v18 derm D03 → v19 (29 ต.ค.) chest 21 CH-IMG + gi G06 GI-LFT7 → v20 (30 ต.ค.) nephro 42 NEPH-AKI → (หลังจากนั้น session อื่นแพตช์หน้า Drill ตรง: pastel restyle, ข้อสอบมีรูป, ข้อสอบแยกปี, high-yield — **ห้ามสร้าง drill ใหม่จาก template ทับ**) → **5 พ.ย. air 23 +24 ข้อ ด้วย `drill_tool.py merge <live page> <โฟลเดอร์ที่มีแค่ชุดใหม่>` (ต่อท้าย bank อย่างเดียว ส่วนอื่นของหน้าไม่เปลี่ยน)**
 
+
+### 14 พ.ย. — Asthma (chest lec `3/11`) แทนที่ฉบับเดิม
+- ผู้ใช้เลือกฉบับ build_asthma.py (13 หัวข้อ · 25 MCQ `CH-ASTH-MCQ-*` + MEQ/OSCE · 6 anims · 7 mnem · ตัวถูกยาวสุดแค่ 20%) แทนคาบ asthma 11 หัวข้อที่อีก session publish ไว้ (id ข้อเดิม `CH-AST-*` เลิกใช้แล้ว)
+- learn: lec id คงเป็น `3/11` (ลิงก์/ปักเดิมไม่หลุด) · `build_asthma.py` ยังเขียน lec `AST`/`CH-AST-` — ถ้ารันใหม่ต้องแปลงเป็น `3/11`/`CH-ASTH-` แบบที่ทำใน merge (ดู drill_sync JOB)
+- Drill: lec `AST` (อ. 3 พ.ย., w8) ต่อท้ายแบบ append-only บน v1794649554-8eab → 1794663699-9b39 · เพิ่ม NL 4 รหัส (B1.4.5, B6.1.2(1), B6.1.2(6), 2.3.10-3(3))
+- learn: 1794663646-13fa
