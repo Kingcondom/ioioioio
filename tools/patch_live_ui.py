@@ -110,11 +110,40 @@ CSS = """
 </style>"""
 
 
+# ---- v3: แถบล่าง "หน้าแรก | ใหม่ | เก่า | (+) | สุ่มสอบ | ทวนแล้ว" (ผู้ใช้ขอ 14 พ.ย.) ----
+MARK3 = "/* ui-nav-newold v3 */"
+EDITS_V3 = [
+    ('var NAV=[["home","หน้าแรก"],["drill","ข้อสอบ"],["plus","ทางลัด"],["quiz","สุ่มสอบ"],["review","ทวนแล้ว"]]',
+     MARK3 + 'var NAV=[["home","หน้าแรก"],["new","ใหม่"],["old","เก่า"],["plus","ทางลัด"],["quiz","สุ่มสอบ"],["review","ทวนแล้ว"]]'),
+    ('function pageOf(){if(V.view==="home")return "home";if(state.mode==="quiz")return "quiz";if(state.mode==="review")return "review";return "drill";}',
+     'function pageOf(){if(V.view==="home")return "home";if(state.mode==="quiz")return "quiz";if(state.mode==="review")return "review";'
+     'if(state.mode==="new"||state.mode==="old")return state.mode;return "drill";}'),
+    ('[["home","หน้าแรก","home"],["drill","ข้อสอบรายคาบ","drill"],["quiz","สุ่มทำข้อสอบ","quiz"],["review","คาบที่ทวนแล้ว","review"]]',
+     '[["home","หน้าแรก","home"],["new","ข้อแต่ง (ใหม่)","new"],["old","ข้อจากโพย (เก่า)","old"],["quiz","สุ่มทำข้อสอบ","quiz"],["review","คาบที่ทวนแล้ว","review"]]'),
+]
+CSS_V3 = """
+/* แถบล่าง 6 ปุ่ม */
+.tr-bnav{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media (max-width:380px){.tr-bn{font-size:11px}.tr-main .tr-bn-ic{width:54px;height:54px;margin-top:-27px}}
+</style>"""
+
+
+def patch_v3(html):
+    if MARK3 in html:
+        return html
+    for old, new in EDITS_V3:
+        assert html.count(old) == 1, ("v3 anchor", old[:50], html.count(old))
+        html = html.replace(old, new)
+    k = html.index('<style id="tr-style">')
+    e = html.index("</style>", k)
+    return html[:e] + CSS_V3 + html[e + len("</style>"):]
+
+
 def main(src, out):
     html = open(src, encoding="utf-8").read()
     if MARK in html:
-        print("already patched")
-        open(out, "w", encoding="utf-8").write(html)
+        open(out, "w", encoding="utf-8").write(patch_v3(html))
+        print("v1-2 already in; v3 applied")
         return
     for old, new in EDITS:
         assert html.count(old) == 1, ("anchor not unique/missing", old[:60], html.count(old))
@@ -127,7 +156,7 @@ def main(src, out):
     k = html.index('<style id="tr-style">')
     e = html.index("</style>", k)
     html = html[:e] + CSS + html[e + len("</style>"):]
-    open(out, "w", encoding="utf-8").write(html)
+    open(out, "w", encoding="utf-8").write(patch_v3(html))
     print("patched")
 
 
