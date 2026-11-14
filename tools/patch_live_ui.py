@@ -11,7 +11,7 @@
 """
 import sys
 
-MARK = "/* ui-split-poy v1 */"
+MARK = "/* ui-split-poy v2 */"
 
 EDITS = [
     # 1) ชื่อแท็บ
@@ -83,17 +83,26 @@ HOME_FUNC = r'''  /* keyword ของข้อที่ตอบผิด (โ�
     return t.length>70?t.slice(0,68)+"…":t;}
   function trWrongKw(){var L=wrongIn();if(!L.length)return "";
     var by={},n=0;L.forEach(function(e){(by[e.set]=by[e.set]||[]).push(e);});
-    var h="<section class='tr-wk' aria-label='ข้อที่ตอบผิด'><div class='tr-whead'><h3>ข้อที่ตอบผิด</h3><span>"+L.length+" ข้อ · keyword ไว้ทวน</span></div>";
+    var hid=false;try{hid=localStorage.getItem(WK_KEY)==="1";}catch(e){}
+    var h="<details class='tr-wk' aria-label='ข้อที่ตอบผิด'"+(hid?"":" open")+"><summary class='tr-whead'><h3>ข้อที่ตอบผิด</h3><span>"+L.length+" ข้อ · <u class='tr-wk-on'>ซ่อน</u><u class='tr-wk-off'>แสดง</u></span></summary>";
     SETS.forEach(function(s){var a=by[s.k];if(!a)return;
       h+="<div class='tr-wk-set'><b>"+esc(s.label)+"</b><div class='tr-wk-chips'>"+
         a.map(function(e){return "<span class='tr-wk-chip'>"+esc(trKw(e))+"</span>";}).join("")+"</div></div>";});
-    return h+"</section>";}
+    return h+"</details>";}
+  /* ซ่อน/แสดงการ์ดข้อที่ตอบผิด — จำไว้ในเครื่อง */
+  var WK_KEY="med421-drill-wkhide";
+  document.addEventListener("toggle",function(ev){var t=ev.target;
+    if(t&&t.classList&&t.classList.contains("tr-wk")){try{localStorage.setItem(WK_KEY,t.open?"0":"1");}catch(e){}}},true);
 '''
 TILES_END = "<small>คาบที่ทวนแล้ว</small><b>\"+rvUnits().length+\"<em> คาบ</em></b></button></div>\";"
 CSS = """
 /* keyword ข้อที่ตอบผิดบนหน้าแรก */
 .tr-wk{display:grid;gap:12px;background:var(--surface);border-radius:20px;padding:16px}
-.tr-wk .tr-whead{margin:0}
+.tr-wk .tr-whead{margin:0;cursor:pointer;list-style:none;min-height:44px;align-items:center}
+.tr-wk .tr-whead::-webkit-details-marker{display:none}
+.tr-wk:not([open]){padding-block:4px}
+.tr-wk u{text-decoration:none;color:var(--pen);font-weight:600;padding-left:4px}
+.tr-wk[open] .tr-wk-off,.tr-wk:not([open]) .tr-wk-on{display:none}
 .tr-wk-set{display:grid;gap:8px}
 .tr-wk-set>b{font-size:14px;font-weight:600;color:var(--ink-2)}
 .tr-wk-chips{display:flex;flex-wrap:wrap;gap:6px}
