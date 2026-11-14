@@ -165,6 +165,11 @@ def main(sets=None):
             if not L.get("sections"):
                 err(lw, "คาบนี้ไม่มี sections")
                 continue
+            # ตัวเรนเดอร์อ่าน l.meq.length / l.osce.length ตรง ๆ — ขาดคีย์แล้วหน้าพังทั้งคาบ
+            for need in ("meq", "osce"):
+                if not isinstance(L.get(need), list):
+                    err(lw, "คาบนี้ไม่มีคีย์ '%s' เป็น list — index.html อ่าน "
+                            "l.%s.length ตรง ๆ หน้าจะพังทั้งคาบ" % (need, need))
             for sec in L["sections"]:
                 sid = sec.get("id")
                 if not sid:
