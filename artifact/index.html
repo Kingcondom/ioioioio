@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="th">
 <meta charset="utf-8">
@@ -466,6 +465,17 @@ main{gap:var(--s-4)}
 .pv-acts{display:flex;flex-wrap:wrap;gap:var(--s-2);margin-top:var(--s-5)}
 .pv-bot .sp{flex:1;min-width:0;text-align:center;font-size:14px;color:var(--ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pv-top,.pv-bot,.pv-stage,.pv-slide{min-width:0}.pv-slide{overflow-wrap:anywhere}
+/* เลือกเนื้อหาที่จะพรีเซนต์เอง (ผู้ใช้ขอ 14 พ.ย.) */
+.pv-pick{margin-top:var(--s-5);border:1px solid var(--rule);border-radius:var(--r-lg);background:var(--surface);padding:0 var(--s-4)}
+.pv-pick>summary{min-height:52px;display:flex;align-items:center;cursor:pointer;font-weight:600;font-size:16px;line-height:1.5}
+.pv-pl{list-style:none;margin:var(--s-3) 0 0;padding:0;display:grid;gap:var(--s-2)}
+.pv-pl ul{list-style:none;margin:0;padding:0 0 0 var(--s-6);display:grid}
+.pv-ck{display:flex;align-items:center;gap:var(--s-3);min-height:44px;cursor:pointer;font-size:16px;line-height:1.5}
+.pv-ck b{font-weight:600}
+.pv-ck.sub{font-size:14px;color:var(--ink-2)}
+.pv-ck input{width:20px;height:20px;flex:none;margin:0;accent-color:var(--lime-3)}
+.pv-pick .pv-acts{margin:var(--s-3) 0 var(--s-4)}
+.pv-pl>li:has(>label input:not(:checked))>ul{display:none}
 @media (max-width:560px){.pv-h1{font-size:24px;line-height:1.35}.pv-h2{font-size:20px;line-height:1.4}.pv-kw li{font-size:16px;line-height:1.5}
   .pv-slide{padding:var(--s-5) var(--s-4) var(--s-6)}.pv-meta .pv-time{display:none}.pv-top,.pv-bot{padding:var(--s-2)}}
 
@@ -2147,8 +2157,13 @@ function startTimer(mins){
    ลำดับ: ปก → ต่อหัวข้อ (เปิดหัวข้อ → หัวข้อย่อย ### ละสไลด์ → ปิดหัวข้อ) → สรุปจุดที่ติด
    โน้ตเต็มซ่อนไว้ กดดูหลังอธิบายเสร็จ · ประเมินตัวเองเก็บใน state.rate คีย์ pv|ชุด|หัวข้อ#ลำดับ (ซิงก์บัญชี) */
 var Pres=(function(){
-  var P={el:null,S:[],i:0,lec:null,notes:false,t0:0,tick:null,back:null};
-  var PKEY="med421-pres",RATES=[["ok","อธิบายได้"],["part","ติดบางจุด"],["no","ยังไม่ได้"]];
+  var P={el:null,S:[],i:0,lec:null,notes:false,t0:0,tick:null,back:null,off:{},pickOpen:false};
+  var PKEY="med421-pres",PPKEY="med421-pres-pick",RATES=[["ok","อธิบายได้"],["part","ติดบางจุด"],["no","ยังไม่ได้"]];
+  /* เลือกเนื้อหาที่จะพรีเซนต์ (ผู้ใช้ขอ 14 พ.ย.) — P.off = หัวข้อ/หัวข้อย่อยที่ไม่เอา {sectionId:1, "sectionId#ลำดับ":1}
+     จำไว้ในเครื่องนี้แยกตามชุดและคาบ · ค่าเริ่มต้นคือเอาทั้งหมด */
+  function pickAll(){try{return JSON.parse(localStorage.getItem(PPKEY)||"{}")||{};}catch(e){return {};}}
+  function pickGet(){var v=pickAll()[state.course+"|"+P.lec.lec];return v&&typeof v==="object"?v:{};}
+  function pickSet(v){try{var o=pickAll(),k=state.course+"|"+P.lec.lec;if(Object.keys(v).length)o[k]=v;else delete o[k];localStorage.setItem(PPKEY,JSON.stringify(o));}catch(e){}}
   function posGet(){try{return JSON.parse(localStorage.getItem(PKEY)||"{}")||{};}catch(e){return {};}}
   function posSet(v){try{var o=posGet();o[state.course+"|"+P.lec.lec]=v;localStorage.setItem(PKEY,JSON.stringify(o));}catch(e){}}
   function rk(key){return "pv|"+state.course+"|"+key;}
@@ -2181,11 +2196,13 @@ var Pres=(function(){
     return null;
   }
   function build(l){
-    var S=[{type:"cover"}],n=l.sections.length;
-    l.sections.forEach(function(s,si){
+    var off=P.off||{},secs=l.sections.filter(function(s){return !off[s.id];});
+    var S=[{type:"cover"}],n=secs.length;
+    secs.forEach(function(s,si){
       var sum=String(s.summary||"").split(/\s·\s/).map(function(x){return x.trim();}).filter(Boolean);
       S.push({type:"sec",s:s,si:si,n:n,kw:sum.slice(0,10),more:Math.max(0,sum.length-10),key:s.id+"#sec"});
       blocks(s).forEach(function(b,bi){
+        if(off[s.id+"#"+bi])return;
         var kw=keywords(b.lines),vis=visual(b.lines);
         if(!kw.length&&!vis&&!b.title)return;
         S.push({type:"blk",s:s,si:si,n:n,b:b,kw:kw.slice(0,10),more:Math.max(0,kw.length-10),vis:vis,key:s.id+"#"+bi});
@@ -2194,6 +2211,49 @@ var Pres=(function(){
     });
     S.push({type:"fin"});
     return S;
+  }
+  function pickable(b){return keywords(b.lines).length||visual(b.lines)||b.title;}
+  function isWeak(key){var v=state.rate[rk(key)];return v==="part"||v==="no";}
+  function weakMap(){
+    var w={_n:0};
+    P.lec.sections.forEach(function(s){
+      var any=isWeak(s.id+"#sec")||isWeak(s.id+"#end");
+      blocks(s).forEach(function(b,bi){if(isWeak(s.id+"#"+bi)){w[s.id+"#"+bi]=1;any=true;}});
+      if(any){w[s.id]=1;w._n++;}
+    });
+    return w;
+  }
+  function pickHtml(){
+    var l=P.lec,off=P.off||{},ns=l.sections.filter(function(s){return !off[s.id];}).length,w=weakMap();
+    return "<details class='pv-pick'"+(P.pickOpen?" open":"")+"><summary>เลือกเนื้อหาที่จะพรีเซนต์ · "+ns+"/"+l.sections.length+" หัวข้อ</summary>"+
+      "<p class='pv-more'>ติ๊กเฉพาะหัวข้อหรือหัวข้อย่อยที่อยากซ้อม สไลด์จะเหลือแค่ส่วนที่เลือก · จำไว้ในเครื่องนี้แยกตามคาบ</p>"+
+      "<div class='pv-acts'><button class='btn' data-pvpk='all'>เลือกทั้งหมด</button><button class='btn' data-pvpk='none'>ล้างทั้งหมด</button>"+
+      "<button class='btn' data-pvpk='weak'"+(w._n?"":" disabled")+">เฉพาะจุดที่ติด"+(w._n?" ("+w._n+" หัวข้อ)":" (ยังไม่มี)")+"</button></div>"+
+      "<ol class='pv-pl'>"+l.sections.map(function(s,i){
+        var bs=[];blocks(s).forEach(function(b,bi){if(pickable(b))bs.push([b,bi]);});
+        return "<li><label class='pv-ck'><input type='checkbox' data-pvck='"+esc(s.id)+"'"+(off[s.id]?"":" checked")+"><b>"+(i+1)+". "+esc(plain(s.title))+"</b></label>"+
+          (bs.length?"<ul>"+bs.map(function(x){var k=s.id+"#"+x[1];
+            return "<li><label class='pv-ck sub'><input type='checkbox' data-pvck='"+esc(k)+"'"+(off[k]||off[s.id]?"":" checked")+"><span>"+inline(x[0].title||"เปิดเรื่อง")+"</span></label></li>";}).join("")+"</ul>":"")+"</li>";
+      }).join("")+"</ol>"+
+      "<div class='pv-acts'><button class='btn primary' data-pvpk='go'"+(ns?"":" disabled")+">เริ่มพรีเซนต์ "+ns+" หัวข้อที่เลือก</button></div></details>";
+  }
+  function fillSel(){
+    var sel=P.el&&P.el.querySelector(".pv-top select");if(!sel)return;
+    sel.innerHTML="<option value='-1'>ปก / สรุป</option>"+P.S.filter(function(x){return x.type==="sec";}).map(function(x){
+      return "<option value='"+x.si+"'>"+(x.si+1)+". "+esc(plain(x.s.title))+"</option>";}).join("");
+  }
+  function repick(){
+    P.pickOpen=true;pickSet(P.off);P.S=build(P.lec);fillSel();
+    var st=P.el.querySelector(".pv-stage"),y=st.scrollTop;show(0);posSet(0);st.scrollTop=y;
+  }
+  function pickAct(k){
+    var l=P.lec;
+    if(k==="go"){for(var i=0;i<P.S.length;i++)if(P.S[i].type==="sec"){show(i);return;}return;}
+    var off={};
+    if(k==="none")l.sections.forEach(function(s){off[s.id]=1;});
+    else if(k==="weak"){var w=weakMap();l.sections.forEach(function(s){if(!w[s.id]){off[s.id]=1;return;}
+      blocks(s).forEach(function(b,bi){if(!w[s.id+"#"+bi])off[s.id+"#"+bi]=1;});});}
+    P.off=off;repick();
   }
   function chips(kw,more){
     if(!kw.length)return "<p class='pv-more'>หัวข้อนี้ไม่มีคำตัวหนา — อธิบายจากหัวข้อและภาพ</p>";
@@ -2221,7 +2281,7 @@ var Pres=(function(){
       var nb=P.S.filter(function(y){return y.key;}).length,saved=+posGet()[state.course+"|"+l.lec]||0,r=rated();
       h="<p class='pv-eye'>โหมดพรีเซนต์ · คาบ "+esc(l.lec)+(l.date?" · "+esc(l.date):"")+"</p>"+
         "<h1 class='pv-h1'>"+esc(l.title)+"</h1>"+
-        "<p class='pv-ask'>อธิบายทั้งคาบให้คนอื่นฟัง ถ้าอธิบายจนคนฟังเข้าใจได้ แปลว่าเราเข้าใจแล้ว · "+l.sections.length+" หัวข้อ "+nb+" สไลด์</p>"+
+        "<p class='pv-ask'>อธิบายทั้งคาบให้คนอื่นฟัง ถ้าอธิบายจนคนฟังเข้าใจได้ แปลว่าเราเข้าใจแล้ว · "+P.S.filter(function(y){return y.type==="sec";}).length+" หัวข้อ "+nb+" สไลด์</p>"+
         "<h2 class='pv-sub'>วิธีใช้</h2><ol class='pv-list'>"+
         "<li>บนจอมีแค่คีย์เวิร์ด — พูดเชื่อมทุกคำด้วยภาษาของตัวเอง ไม่อ่านตาม</li>"+
         "<li>อธิบายจบแล้วค่อยกด <b>โน้ต</b> เทียบกับบทเรียน</li>"+
@@ -2230,7 +2290,8 @@ var Pres=(function(){
         "<li>คีย์บอร์ด: ลูกศรซ้าย/ขวาเลื่อนสไลด์ ปุ่ม N เปิดโน้ต ปุ่ม Esc ออก · มือถือปัดซ้าย/ขวาได้</li></ol>"+
         (l.objectives&&l.objectives.length?"<h2 class='pv-sub'>จบแล้วคนฟังต้องทำได้</h2><ol class='pv-list'>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ol>":"")+
         (r.c.ok+r.c.part+r.c.no?"<p class='pv-more'>รอบก่อน: อธิบายได้ "+r.c.ok+" · ติดบางจุด "+r.c.part+" · ยังไม่ได้ "+r.c.no+"</p>":"")+
-        (saved>0&&saved<P.S.length-1?"<div class='pv-acts'><button class='btn' data-pvgo='"+saved+"'>ต่อจากที่ค้าง · สไลด์ "+saved+"</button></div>":"");
+        (saved>0&&saved<P.S.length-1?"<div class='pv-acts'><button class='btn' data-pvgo='"+saved+"'>ต่อจากที่ค้าง · สไลด์ "+saved+"</button></div>":"")+
+        pickHtml();
       return h;
     }
     if(x.type==="fin"){
@@ -2301,16 +2362,18 @@ var Pres=(function(){
   }
   function open(lecId,secId,from){
     var l=lecOf(lecId);if(!l||!l.sections.length)return;
-    P.lec=l;P.S=build(l);P.notes=false;P.t0=Date.now();P.back=from||null;
+    P.lec=l;P.off=pickGet();P.pickOpen=false;
+    if(secId&&P.off[secId]){delete P.off[secId];pickSet(P.off);}   /* กดพรีเซนต์จากหัวข้อที่ไม่ได้เลือกไว้ → ใส่หัวข้อนั้นกลับ */
+    P.S=build(l);P.notes=false;P.t0=Date.now();P.back=from||null;
     var el=document.createElement("div");el.className="pv";el.setAttribute("role","dialog");el.setAttribute("aria-modal","true");
     el.setAttribute("aria-label","โหมดพรีเซนต์ คาบ "+l.lec);el.tabIndex=-1;
     el.innerHTML="<div class='pv-top'><button class='btn' data-pv='close' aria-label='ออกจากโหมดพรีเซนต์'>✕ ออก</button>"+
-      "<select aria-label='ไปที่หัวข้อ'><option value='-1'>ปก / สรุป</option>"+l.sections.map(function(s,i){return "<option value='"+i+"'>"+(i+1)+". "+esc(plain(s.title))+"</option>";}).join("")+"</select>"+
+      "<select aria-label='ไปที่หัวข้อ'></select>"+
       "<button class='btn' data-pv='notes' aria-pressed='false'>โน้ต</button>"+
       "<span class='pv-meta'><span class='pv-count'></span><span class='pv-time'>0:00</span></span></div>"+
       "<div class='pv-prog'><i></i></div><div class='pv-stage' aria-live='polite'></div>"+
       "<div class='pv-bot'><button class='btn' data-pv='prev'>← ก่อนหน้า</button><span class='sp'></span><button class='btn primary' data-pv='next'>ถัดไป →</button></div>";
-    document.documentElement.appendChild(el);P.el=el;
+    document.documentElement.appendChild(el);P.el=el;fillSel();
     document.documentElement.style.overflow="hidden";
     el.querySelector("select").addEventListener("change",function(e){
       var v=+e.target.value;
@@ -2318,7 +2381,7 @@ var Pres=(function(){
       for(var i=0;i<P.S.length;i++)if(P.S[i].type==="sec"&&P.S[i].si===v){show(i);return;}
     });
     var tx=0,ty=0,ok=false,stage=el.querySelector(".pv-stage");
-    stage.addEventListener("touchstart",function(e){var t=e.touches[0];ok=!(e.target.closest&&e.target.closest(".figsv,.tablewrap,.pv-notes"));tx=t.clientX;ty=t.clientY;},{passive:true});
+    stage.addEventListener("touchstart",function(e){var t=e.touches[0];ok=!(e.target.closest&&e.target.closest(".figsv,.tablewrap,.pv-notes,.pv-pick"));tx=t.clientX;ty=t.clientY;},{passive:true});
     stage.addEventListener("touchend",function(e){if(!ok)return;var t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty;
       if(Math.abs(dx)>60&&Math.abs(dy)<45)show(P.i+(dx<0?1:-1));},{passive:true});
     P.tick=setInterval(clock,1000);
@@ -2335,12 +2398,23 @@ var Pres=(function(){
     if(a==="next"){show(P.i+1);return;}
     if(a==="notes"){P.notes=!P.notes;var y=P.el.querySelector(".pv-stage").scrollTop;show(P.i);if(P.notes){var n=P.el.querySelector(".pv-notes");if(n)n.scrollIntoView({block:"nearest"});}else P.el.querySelector(".pv-stage").scrollTop=y;return;}
     if(b.hasAttribute("data-pvgo")){show(+b.getAttribute("data-pvgo"));return;}
+    var pk=b.getAttribute("data-pvpk");if(pk){pickAct(pk);return;}
     var r=b.getAttribute("data-pvr");
     if(r){var x=P.S[P.i],k=rk(x.key);
       if(state.rate[k]===r)delete state.rate[k];else state.rate[k]=r;
       save();
       if(state.rate[k]==="ok"&&P.i<P.S.length-1)show(P.i+1);else{var y2=P.el.querySelector(".pv-stage").scrollTop;show(P.i);P.el.querySelector(".pv-stage").scrollTop=y2;}
     }
+  });
+  document.addEventListener("change",function(e){
+    if(!P.el)return;var c=e.target;if(!c||!c.hasAttribute||!c.hasAttribute("data-pvck"))return;
+    var k=c.getAttribute("data-pvck"),on=c.checked,off=P.off||{},h=k.indexOf("#");
+    if(h<0){if(on)delete off[k];else off[k]=1;
+      var s=P.lec.sections.filter(function(x){return x.id===k;})[0];
+      if(s)blocks(s).forEach(function(b,bi){delete off[k+"#"+bi];});}
+    else{if(on){delete off[k];delete off[k.slice(0,h)];}else off[k]=1;}
+    P.off=off;repick();
+    var again=P.el.querySelector("[data-pvck='"+k.replace(/'/g,"")+"']");if(again)try{again.focus({preventScroll:true});}catch(_){}
   });
   document.addEventListener("keydown",function(e){
     if(!P.el)return;
@@ -2917,7 +2991,5 @@ renderSync();
 boot();
 })();
 </script>
-
-</body></html>
 
 </body></html>
