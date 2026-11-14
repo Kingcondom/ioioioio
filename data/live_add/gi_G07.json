@@ -1,0 +1,805 @@
+{
+ "mcq": [
+  {
+   "id": "GI-CIR-MCQ-01",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Child-Pugh calculation",
+   "stem": "A 58-year-old man with hepatitis B–related cirrhosis is reviewed in clinic. He has moderate ascites on diuretics but no confusion or asterixis. Total bilirubin 2.5 mg/dL, albumin 2.6 g/dL, INR 1.9. What is his Child-Pugh score and class?",
+   "choices": [
+    "11 points, class C",
+    "9 points, class B",
+    "13 points, class C",
+    "8 points, class B",
+    "6 points, class A"
+   ],
+   "answer": 0,
+   "explain": "**คำนวณ Child-Pugh (5 องค์ประกอบ × 1–3 คะแนน = 5–15)**\n- Bilirubin 2.5 mg/dL (2–3) → **2**\n- Albumin 2.6 g/dL (<2.8) → **3**\n- INR 1.9 (1.7–2.3) → **2**\n- Ascites ระดับ moderate (หรือ refractory) → **3**\n- ไม่มี HE → **1**\n- รวม **11 = class C** (A 5–6, B 7–9, C 10–15)\n\n**ตัวลวง**\n- 9/B: ให้คะแนน ascites และ albumin ต่ำไป\n- 13/C: นับ HE เป็น grade 1–2 ทั้งที่ไม่มีอาการ\n- 8/B และ 6/A: ลืมว่า albumin <2.8 และ INR >1.7 ได้ 3 และ 2 คะแนน",
+   "pearl": "Child-Pugh = Bili, Albumin, INR, Ascites, HE — A 5–6, B 7–9, C 10–15",
+   "ref": [
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "Pugh RN et al. Br J Surg 1973 (Child-Turcotte-Pugh)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-02",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "MELD and transplant referral",
+   "stem": "A 52-year-old man with alcohol-related cirrhosis has been abstinent for 8 months. He had one admission for ascites, now controlled on diuretics. Bilirubin 3.1 mg/dL, INR 1.8, creatinine 1.3 mg/dL, sodium 131 mmol/L; his MELD-Na score is 21. Which statement about his MELD score is most accurate?",
+   "choices": [
+    "It estimates 90-day mortality from bilirubin, INR and creatinine (with sodium), and a value of 15 or more is an indication to refer for liver transplant evaluation",
+    "It includes ascites and encephalopathy grade, so it should be recalculated whenever his diuretics change",
+    "It is used mainly to decide when to start non-selective beta-blockers",
+    "A score of 21 means transplantation is contraindicated until abstinence reaches 12 months and the score falls below 15",
+    "It is used to grade varices before band ligation"
+   ],
+   "answer": 0,
+   "explain": "**MELD** ใช้ค่าห้องปฏิบัติการที่วัดได้ objective: **bilirubin, INR, creatinine** (MELD-Na เพิ่ม **Na**; MELD 3.0 เพิ่มเพศหญิงและ albumin) → ทำนาย **อัตราตาย 90 วัน** และใช้จัดลำดับการได้รับตับ\n- หลักการส่งต่อ: **MELD ≥15** หรือมี decompensation (ascites, variceal bleeding, HE, HRS) → ส่งประเมิน liver transplant\n- ผู้ป่วยรายนี้ abstinent แล้ว, decompensated, MELD-Na 21 → ควรส่ง\n\n**ตัวลวง**\n- Ascites/HE เป็นส่วนของ **Child-Pugh** ไม่ใช่ MELD (subjective)\n- NSBB ตัดสินจาก CSPH/varices ไม่ใช่ MELD\n- MELD สูง = ป่วยหนัก = ได้ priority **สูงขึ้น** ไม่ใช่ห้ามปลูกถ่าย\n- การ grade varices ทำทาง endoscopy",
+   "pearl": "MELD = Bili + INR + Cr (+Na) → 90-day mortality; ≥15 → ส่งประเมินปลูกถ่ายตับ",
+   "ref": [
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "AASLD Practice Guideline: Evaluation for liver transplantation in adults (2013)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)",
+    "2.3.11(2)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-03",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Compensated vs decompensated cirrhosis",
+   "stem": "A 61-year-old woman with MASLD-related cirrhosis (liver stiffness 32 kPa, platelets 95,000/mm³) is found on screening endoscopy to have small oesophageal varices. She has never had ascites, jaundice, gastrointestinal bleeding or confusion. How is her disease best classified?",
+   "choices": [
+    "Compensated advanced chronic liver disease with clinically significant portal hypertension",
+    "Decompensated cirrhosis, because varices are present",
+    "Decompensated cirrhosis, because platelets are below 100,000/mm³",
+    "Non-cirrhotic portal hypertension, because she has no ascites",
+    "Acute-on-chronic liver failure"
+   ],
+   "answer": 0,
+   "explain": "**Decompensation** = เกิดเหตุการณ์ทางคลินิกที่ชัดเจน: **overt ascites, variceal bleeding, overt HE** (± jaundice) — ไม่ใช่แค่ตรวจพบ varices\n- รายนี้ LSM 32 kPa (>25 kPa) และมี varices → **CSPH (HVPG ≥10 mmHg)** แต่ยังไม่มี decompensating event → **compensated (cACLD) with CSPH**\n- พยากรณ์: compensated median survival >12 ปี; decompensated ~2 ปี\n- Baveno VII: CSPH ใน compensated → ให้ **NSBB (carvedilol)** เพื่อป้องกัน decompensation\n\n**ตัวลวง**\n- Varices / thrombocytopenia เป็นสัญญาณ portal HT แต่ไม่ใช่ decompensation\n- Non-cirrhotic portal HT: ไม่เข้ากับ LSM สูงและ MASLD cirrhosis\n- ACLF ต้องมี acute decompensation + organ failure",
+   "pearl": "Decompensation = ascites, variceal bleed, overt HE — varices อย่างเดียวยังเป็น compensated",
+   "ref": [
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-04",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Thrombocytopenia in cirrhosis",
+   "stem": "A 49-year-old man with alcohol-related cirrhosis, Child-Pugh A, has a palpable spleen 4 cm below the costal margin. Haemoglobin 12.8 g/dL, WBC 3,600/mm³, platelets 62,000/mm³; the peripheral smear shows no blasts or schistocytes. What is the main cause of his thrombocytopenia?",
+   "choices": [
+    "Splenic sequestration (hypersplenism) from portal hypertension",
+    "Immune-mediated platelet destruction triggered by chronic alcohol use, with antiplatelet antibodies coating the platelets",
+    "Disseminated intravascular coagulation",
+    "Folate deficiency causing megaloblastic marrow failure",
+    "Excess thrombopoietin production by the cirrhotic liver"
+   ],
+   "answer": 0,
+   "explain": "**Portal hypertension → congestive splenomegaly → hypersplenism**: เกล็ดเลือด (และ WBC) ถูกกักใน spleen ที่โต\n- ร่วมกับตับสร้าง **thrombopoietin ลดลง** (ไม่ใช่เพิ่ม) และแอลกอฮอล์กดไขกระดูกโดยตรง\n- Pancytopenia เล็กน้อย + splenomegaly ใน cirrhosis = hypersplenism\n\n**ตัวลวง**\n- ITP: ไม่มี splenomegaly เด่น และไม่อธิบาย leukopenia\n- DIC: ต้องมี schistocytes, ไฟบริโนเจนต่ำ, ภาวะกระตุ้น (sepsis)\n- Folate deficiency: เกิดได้ในคนดื่มเหล้า แต่ Hb ปกติ และไม่อธิบาย spleen โต\n- TPO **ลดลง** ในตับแข็ง",
+   "pearl": "Cirrhosis + splenomegaly + เกล็ดเลือดต่ำ = hypersplenism (+ TPO ลดลง)",
+   "ref": [
+    "MED34 poy GI ข้อ 7 (cirrhosis + splenomegaly ถามสาเหตุ thrombocytopenia → hypersplenism)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11(2)"
+   ],
+   "years": [
+    "MED34"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-05",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Hepatic hydrothorax",
+   "stem": "A 57-year-old man with Child-Pugh C cirrhosis has ascites and a large right pleural effusion. He has no cardiac or pulmonary disease and no fever. Thoracentesis shows a transudate with 120 cells/mm³ (PMN 30/mm³), and the pleural/serum albumin gradient is > 1.1 g/dL. What is the mechanism of the effusion?",
+   "choices": [
+    "Ascitic fluid passing into the pleural space through small defects in the right hemidiaphragm, drawn up by negative intrathoracic pressure",
+    "Hypoalbuminaemia alone lowering plasma oncotic pressure in the pleural capillaries, so that fluid leaks into the right pleural space",
+    "Lymphatic obstruction from a mediastinal malignancy",
+    "Increased pleural capillary permeability from spontaneous bacterial empyema",
+    "Pulmonary vascular dilatation from hepatopulmonary syndrome"
+   ],
+   "answer": 0,
+   "explain": "**Hepatic hydrothorax**: น้ำ ascites ไหลผ่าน **รูเล็ก ๆ ที่ diaphragm (มักข้างขวา)** เพราะความดันในช่องอกเป็นลบ → effusion ข้างขวา, transudate คล้าย ascites\n- พบได้แม้ ascites ไม่มาก เพราะน้ำถูกดูดขึ้นไปเรื่อย ๆ\n- รักษา: Na restriction + diuretics; refractory → **TIPS / transplant**; **ห้ามใส่ chest tube ค้าง** (เสียโปรตีน, ติดเชื้อ, AKI)\n- ถ้า PMN ≥250 + culture บวก (หรือ PMN ≥500) = **spontaneous bacterial empyema** → รักษาแบบ SBP\n\n**ตัวลวง**\n- Hypoalbuminemia อย่างเดียวควรให้ effusion ทั้งสองข้าง และไม่อธิบายข้างขวาเด่น\n- Malignancy/lymphatic: ไม่เป็น transudate\n- Empyema: PMN 30 ต่ำ ไม่มีไข้\n- HPS ทำให้ hypoxemia ไม่ใช่ effusion",
+   "pearl": "Cirrhosis + right pleural effusion transudate = hepatic hydrothorax (diaphragmatic defect) — อย่าใส่ ICD",
+   "ref": [
+    "MED34 poy Chest ข้อ 6 (Child-Pugh C มี ascites + pleural effusion → diaphragmatic defect)",
+    "MED33 poy ข้อ 38 (pleural effusion จาก liver disease)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ],
+   "years": [
+    "MED34",
+    "MED33"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-06",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Carvedilol mechanism in portal hypertension",
+   "stem": "A 55-year-old man with compensated cirrhosis has a hepatic venous pressure gradient of 14 mmHg. Carvedilol 6.25 mg daily is started to prevent decompensation. How does carvedilol lower portal pressure?",
+   "choices": [
+    "β1 blockade lowers cardiac output, β2 blockade allows unopposed α-mediated splanchnic vasoconstriction, and α1 blockade lowers intrahepatic vascular resistance",
+    "It dilates the splanchnic arterioles and the intrahepatic sinusoids together, which lowers resistance and increases portal venous inflow",
+    "It blocks the aldosterone receptor, reducing plasma volume",
+    "It constricts the hepatic sinusoids via α1 stimulation",
+    "It selectively blocks β1 receptors only, lowering heart rate"
+   ],
+   "answer": 0,
+   "explain": "**Portal pressure = flow × resistance**\n- **β1 block** → ↓cardiac output → ↓portal inflow\n- **β2 block** → splanchnic arterioles ขาดการขยาย → **α-adrenergic vasoconstriction ไม่มีตัวต้าน** → ↓portal inflow\n- **α1 block (เฉพาะ carvedilol)** → ↓intrahepatic resistance → ลด HVPG ได้มากกว่า propranolol\n- Baveno VII: carvedilol (6.25 → 12.5 mg/d) เป็น NSBB ที่แนะนำใน CSPH\n\n**ตัวลวง**\n- Splanchnic **vasodilatation** คือพยาธิสภาพของโรค ไม่ใช่ผลของยา\n- Aldosterone blockade = spironolactone\n- α1 stimulation ทำตรงข้าม\n- β1-selective (atenolol, metoprolol) **ไม่ได้ผล** เพราะไม่มี β2 block",
+   "pearl": "NSBB: β1 ↓CO + β2 ↓splanchnic inflow; carvedilol + α1 ↓intrahepatic resistance",
+   "ref": [
+    "MED33 poy ข้อ 29 (carvedilol ออกฤทธิ์อย่างไรใน cirrhosis → splanchnic vasoconstriction)",
+    "MED32 poy ข้อ 18 (cryptogenic cirrhosis — splanchnic vasodilatation)",
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ],
+   "years": [
+    "MED33",
+    "MED32"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-07",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Diagnostic paracentesis indication",
+   "stem": "A 60-year-old man with known alcohol-related cirrhosis and ascites is brought to the emergency department because he has been drowsy and disoriented for one day. He has asterixis. Temperature 37.4 °C, BP 110/70 mmHg; there is no haematemesis and stool is brown. Which investigation should be performed first, before antibiotics?",
+   "choices": [
+    "Diagnostic paracentesis with ascitic fluid cell count and differential, and culture in blood-culture bottles at the bedside",
+    "Serum ammonia level to confirm hepatic encephalopathy, followed by lactulose titrated to the ammonia result before any other test",
+    "CT brain to exclude haemorrhage before any other test",
+    "Electroencephalography",
+    "Liver biopsy"
+   ],
+   "answer": 0,
+   "explain": "**ผู้ป่วยตับแข็งที่มี ascites และ admit ด้วยภาวะใดก็ตาม (HE, GI bleed, AKI, ไข้, ปวดท้อง) → ต้องทำ diagnostic paracentesis ทันที** เพื่อหา **SBP** ซึ่งมักไม่มีอาการเด่น และเป็น precipitant ที่พบบ่อยของ HE\n- ส่ง cell count/differential (PMN ≥250 = SBP), ใส่ขวด blood culture ข้างเตียง ≥10 mL, total protein, albumin\n- ทำได้แม้ INR สูง/เกล็ดเลือดต่ำ ไม่ต้องให้ FFP/platelet\n\n**ตัวลวง**\n- Ammonia: ไม่ใช้วินิจฉัยหรือติดตาม HE (ค่าปกติช่วย exclude ได้เท่านั้น)\n- CT brain: ทำเมื่อมี focal sign/ล้ม/ไม่ตอบสนองต่อการรักษา\n- EEG, liver biopsy: ไม่ช่วยในภาวะเฉียบพลัน",
+   "pearl": "Cirrhosis + ascites + admit (โดยเฉพาะ HE) → tap ทุกราย หา SBP",
+   "ref": [
+    "MED35 poy ข้อ 65 (HE + ascites ส่งตรวจอะไร)",
+    "MED31 poy ข้อ 54 (cirrhosis ซึม 1 วัน + asterixis ถาม investigation)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.6(6)"
+   ],
+   "years": [
+    "MED35",
+    "MED31"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-08",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "SBP pathogenesis",
+   "stem": "A 54-year-old woman with Child-Pugh C cirrhosis develops spontaneous bacterial peritonitis; ascitic culture grows Escherichia coli. Her ascitic total protein is 0.8 g/dL. Which mechanism best explains why she developed SBP?",
+   "choices": [
+    "Bacterial translocation from the gut to mesenteric lymph nodes and blood, with low ascitic protein giving poor complement-mediated opsonic activity",
+    "Perforation of a hollow viscus releasing mixed bowel flora into the peritoneum, with high ascitic protein supporting bacterial growth",
+    "Haematogenous spread from infective endocarditis",
+    "Direct invasion of the peritoneum by bacteria through an inflamed gallbladder",
+    "High ascitic protein providing a culture medium for bacteria"
+   ],
+   "answer": 0,
+   "explain": "**กลไก SBP**\n1. **Bacterial translocation**: portal HT + intestinal bacterial overgrowth + เยื่อบุลำไส้รั่ว + ภูมิคุ้มกันลด → แบคทีเรียลำไส้ (มัก **gram-negative เชื้อเดียว** เช่น E. coli, Klebsiella) → mesenteric LN → เลือด → ascites\n2. **Ascites ป้องกันตัวเองไม่ได้**: total protein <1.5 g/dL → complement/opsonin ต่ำ → เสี่ยง SBP สูง (เหตุผลของ primary prophylaxis)\n\n**ตัวลวง**\n- Perforation = **secondary** bacterial peritonitis: polymicrobial, TP >1 g/dL, glucose <50, LDH สูง\n- Endocarditis, cholecystitis: ไม่ใช่กลไกหลัก\n- โปรตีน **ต่ำ** (ไม่ใช่สูง) คือปัจจัยเสี่ยง",
+   "pearl": "SBP = translocation (gram-neg เชื้อเดียว) + ascitic protein <1.5 → opsonin ต่ำ",
+   "ref": [
+    "MED32 poy ข้อ 64 (SBP: peritoneal permeability)",
+    "MED31 poy ข้อ 41 (SBP ถาม mechanism)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)"
+   ],
+   "years": [
+    "MED32",
+    "MED31"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-09",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Secondary bacterial peritonitis",
+   "stem": "A 63-year-old man with cirrhosis and ascites has fever and severe abdominal pain. Ascitic fluid: PMN 6,400/mm³, total protein 2.4 g/dL, glucose 30 mg/dL, LDH 480 U/L (serum upper limit 250 U/L); Gram stain shows mixed gram-positive and gram-negative organisms. What is the most appropriate next step?",
+   "choices": [
+    "Urgent CT of the abdomen to look for a perforation or abscess, with broad-spectrum antibiotics covering anaerobes and a surgical consultation",
+    "Intravenous cefotaxime alone, with a repeat paracentesis at 48 hours to confirm a fall in PMN count as for spontaneous bacterial peritonitis",
+    "Oral norfloxacin and discharge",
+    "Therapeutic large-volume paracentesis with albumin",
+    "Start lactulose and rifaximin"
+   ],
+   "answer": 0,
+   "explain": "**Runyon criteria ของ secondary bacterial peritonitis** (≥2 ข้อ): **TP >1 g/dL, glucose <50 mg/dL, LDH > ULN ของ serum** + Gram stain/culture หลายเชื้อ\n- รายนี้ครบทุกข้อ + PMN สูงมาก → สงสัย **ลำไส้ทะลุ/ฝี** → **CT abdomen ด่วน** + ยาครอบคลุม anaerobe (เช่น cefotaxime + metronidazole หรือ pip-tazo) + ปรึกษาศัลยแพทย์\n- ถ้ารักษาแบบ SBP อย่างเดียว อัตราตายสูงมาก\n\n**ตัวลวง**\n- Cefotaxime อย่างเดียว: ไม่พอสำหรับ polymicrobial/surgical source\n- Norfloxacin/discharge: ผิดชัดเจน\n- LVP: ไม่ใช่การรักษาการติดเชื้อ\n- Lactulose/rifaximin: สำหรับ HE",
+   "pearl": "Ascites: TP>1, glucose<50, LDH สูง, หลายเชื้อ → secondary peritonitis → CT + ศัลย์",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "Akriviadis EA, Runyon BA. Gastroenterology 1990"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-10",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "SBP secondary prophylaxis",
+   "stem": "A 59-year-old man with alcohol-related cirrhosis recovered from culture-positive spontaneous bacterial peritonitis after 5 days of intravenous ceftriaxone and albumin. He continues to drink no alcohol and his ascites is controlled with diuretics. Which prophylaxis should he receive at discharge?",
+   "choices": [
+    "Long-term oral norfloxacin 400 mg once daily (or ciprofloxacin 500 mg daily), continued while ascites persists or until transplantation",
+    "No prophylaxis, because the infection was culture-proven, fully treated and the ascitic PMN count has returned below 250/mm³",
+    "Oral amoxicillin for 7 days only",
+    "Monthly intramuscular benzathine penicillin",
+    "Oral fluconazole once weekly"
+   ],
+   "answer": 0,
+   "explain": "**หลังเกิด SBP 1 ครั้ง** อัตราเกิดซ้ำใน 1 ปี ~70% → **secondary prophylaxis ตลอดไป** (จนกว่า ascites หาย/ปลูกถ่ายตับ)\n- **Norfloxacin 400 mg OD** (ในไทยใช้ได้) หรือ **ciprofloxacin 500 mg OD**; TMP-SMX เป็นทางเลือก\n- กลไก: selective intestinal decontamination ของ gram-negative → ลด translocation\n- **Primary prophylaxis** พิจารณาเมื่อ ascitic TP <1.5 g/dL ร่วมกับ Cr ≥1.2, BUN ≥25, Na ≤130 หรือ Child-Pugh ≥9 + bilirubin ≥3; และในทุกรายที่มี **GI bleed** (ceftriaxone 1 g/d × ≤7 วัน)\n\n**ตัวลวง**\n- ไม่ให้เลย: เสี่ยงเกิดซ้ำสูง\n- Amoxicillin 7 วัน/benzathine penicillin: ไม่ครอบคลุม gram-negative และสั้นเกิน\n- Fluconazole: ไม่ใช่เชื้อหลัก",
+   "pearl": "หลัง SBP → norfloxacin 400 mg/cipro 500 mg OD ระยะยาว",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-11",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "First-line ascites management",
+   "stem": "A 50-year-old man with newly diagnosed alcohol-related cirrhosis has moderate ascites. Diagnostic paracentesis: SAAG 1.8 g/dL, total protein 1.2 g/dL, PMN 40/mm³. Serum sodium 134 mmol/L, potassium 4.1 mmol/L, creatinine 0.9 mg/dL. He has stopped drinking. What is the most appropriate initial regimen?",
+   "choices": [
+    "Dietary sodium restriction to 2 g (88 mmol) per day, with spironolactone 100 mg and furosemide 40 mg once daily",
+    "Fluid restriction to 1 litre per day with furosemide 40 mg once daily alone, increasing furosemide every 3–5 days by weight response",
+    "Strict bed rest and a no-added-salt diet without diuretics",
+    "Spironolactone 400 mg and furosemide 160 mg daily from the start",
+    "Weekly large-volume paracentesis as first-line therapy"
+   ],
+   "answer": 0,
+   "explain": "**First-line สำหรับ ascites จาก portal HT (SAAG ≥1.1)**: หยุดเหล้า + **Na 2 g/วัน** + **spironolactone 100 : furosemide 40** (ปรับขึ้นพร้อมกันทุก 3–5 วัน สูงสุด 400:160)\n- Spironolactone เป็นแกนหลัก (ต้าน secondary hyperaldosteronism); สัดส่วน 100:40 รักษา K ปกติ\n- เป้าหมายน้ำหนักลด ≤0.5 kg/d (ไม่มี edema) หรือ ≤1 kg/d (มี edema)\n\n**ตัวลวง**\n- **Fluid restriction** ใช้เฉพาะเมื่อ Na <125 (ไม่ใช่ทุกราย); furosemide เดี่ยว ๆ ได้ผลน้อยและเสี่ยง hypokalemia/AKI\n- Bed rest ไม่มีประโยชน์\n- เริ่มขนาดสูงสุดเลย เสี่ยง AKI/electrolyte\n- LVP ใช้กับ tense/refractory ascites",
+   "pearl": "Ascites: Na 2 g/วัน + spironolactone 100 : furosemide 40 → titrate ถึง 400:160",
+   "ref": [
+    "MED30 poy ข้อ 36 (ascites treatment)",
+    "MED35 poy ข้อ 9/40 (spironolactone ใน ascites)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11(2)"
+   ],
+   "years": [
+    "MED30",
+    "MED35"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-12",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Large-volume paracentesis and albumin",
+   "stem": "A 62-year-old woman (weight 55 kg) with cirrhosis has tense ascites causing dyspnoea. Large-volume paracentesis removes 8 litres of ascitic fluid. Diagnostic studies show PMN 60/mm³. What should be given with this procedure?",
+   "choices": [
+    "Intravenous 20% albumin about 50 g (6–8 g per litre removed), to prevent post-paracentesis circulatory dysfunction",
+    "No albumin, because albumin replacement is needed only when less than 5 litres is removed and the patient is hypotensive",
+    "Normal saline 3 litres over 6 hours",
+    "Fresh frozen plasma 4 units to correct the INR before the tap",
+    "Intravenous ceftriaxone for 5 days"
+   ],
+   "answer": 0,
+   "explain": "**LVP >5 L → ให้ albumin 6–8 g ต่อลิตรที่เอาออก** (นับทั้งหมด ไม่ใช่เฉพาะส่วนเกิน 5 L) → 8 L × 6–8 = **48–64 g** (~50 g, 20% albumin 250 mL)\n- ป้องกัน **post-paracentesis circulatory dysfunction**: effective volume ลด → RAAS↑ → hyponatremia, HRS-AKI, ascites กลับเร็ว, อัตราตายเพิ่ม\n- Albumin ดีกว่า colloid/crystalloid อื่น\n\n**ตัวลวง**\n- เกณฑ์คือ **>5 L ต้องให้** (≤5 L ไม่จำเป็น)\n- NSS: ด้อยกว่า albumin และเพิ่ม Na load\n- FFP: ไม่จำเป็นก่อน paracentesis (ภาวะเลือดออกรุนแรงพบน้อยมาก)\n- PMN 60 ไม่ใช่ SBP ไม่ต้องให้ยาฆ่าเชื้อ",
+   "pearl": "LVP >5 L → albumin 6–8 g/L ที่เอาออก; ไม่ต้องให้ FFP ก่อน tap",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-13",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Refractory ascites and TIPS",
+   "stem": "A 56-year-old man with cirrhosis (Child-Pugh B8, MELD 14) needs large-volume paracentesis every 2 weeks despite sodium restriction; increasing spironolactone above 200 mg with furosemide 80 mg caused creatinine to rise from 0.9 to 1.7 mg/dL. He has no hepatic encephalopathy, bilirubin 1.8 mg/dL and a normal echocardiogram. Which option is most appropriate?",
+   "choices": [
+    "Transjugular intrahepatic portosystemic shunt (TIPS) with a covered stent, with referral for transplant evaluation",
+    "Increase spironolactone to 400 mg and furosemide to 160 mg daily, accepting the creatinine rise as long as the ascites resolves",
+    "Add intravenous albumin and continue diuretics at maximum dose regardless of creatinine",
+    "Peritoneovenous (LeVeen) shunt as first choice",
+    "Start an ACE inhibitor to reduce renin activity"
+   ],
+   "answer": 0,
+   "explain": "**Refractory ascites** = ไม่ตอบสนองต่อ Na restriction + diuretics ขนาดสูงสุด (diuretic-resistant) หรือ **ใช้ diuretics ไม่ได้เพราะผลข้างเคียง** เช่น AKI, Na <125, K ผิดปกติ, HE (diuretic-intractable) — รายนี้เป็นแบบหลัง\n- ทางเลือก: **serial LVP + albumin** หรือ **TIPS (covered stent)** ซึ่งลด paracentesis และอาจเพิ่ม survival ในผู้ป่วยที่คัดเลือกดี + ส่งประเมิน transplant\n- ข้อห้าม TIPS: HE ที่ควบคุมไม่ได้, HF/pulmonary HT รุนแรง, bilirubin >5, MELD สูงมาก (>18–20) — รายนี้ไม่มี\n- ทบทวน NSBB: ลด/หยุดถ้า SBP <90, Na <130, AKI\n\n**ตัวลวง**\n- เพิ่ม diuretics ทั้งที่ Cr ขึ้น → AKI แย่ลง\n- LeVeen shunt: ล้าสมัย ภาวะแทรกซ้อนสูง\n- **ACEI/ARB ห้ามใช้** ใน ascites (hypotension, AKI)",
+   "pearl": "Refractory ascites → serial LVP + albumin หรือ TIPS; ห้าม ACEI/ARB/NSAIDs",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-14",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Timing of endoscopy in variceal bleeding",
+   "stem": "A 48-year-old man with cirrhosis presents with haematemesis. After two large-bore cannulae, cautious crystalloid, transfusion to haemoglobin 7.6 g/dL, intravenous terlipressin and ceftriaxone, his BP is 104/66 mmHg and pulse 96/min. He is alert and protecting his airway. When should upper endoscopy be performed?",
+   "choices": [
+    "Within 12 hours of presentation, once haemodynamically resuscitated, with band ligation if varices are confirmed",
+    "Only after 72 hours of vasoactive therapy, so that the varices have shrunk and band ligation is technically easier and safer",
+    "Immediately, before any resuscitation, even if he remains hypotensive",
+    "Electively at 4–6 weeks as an outpatient",
+    "Only if bleeding recurs despite vasoactive drugs"
+   ],
+   "answer": 0,
+   "explain": "**Baveno VII**: ทำ **EGD ภายใน 12 ชั่วโมง** หลัง resuscitate จน hemodynamic stable (ทำเร็วกว่านั้นถ้ายัง unstable หลังให้สารน้ำ)\n- ยืนยัน variceal source → **EVL** (ดีกว่า sclerotherapy); gastric varices → cyanoacrylate\n- ก่อน EGD ให้ **erythromycin 250 mg IV 30–120 นาที** (ไม่มีข้อห้าม เช่น QT ยาว) เพื่อให้กระเพาะว่าง; intubate ถ้า HE/เลือดออกมาก\n- ยา vasoactive ต่อ 2–5 วัน\n\n**ตัวลวง**\n- รอ 72 ชม.: เสี่ยง rebleed/ตาย\n- ส่องทันทีโดยยังไม่ resuscitate: อันตราย (aspiration, shock)\n- นัด 4–6 สัปดาห์/ส่องเมื่อ rebleed: ช้าเกิน",
+   "pearl": "Variceal bleed: resuscitate → EGD + EVL ภายใน 12 ชม.",
+   "ref": [
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)",
+    "MED30 poy (ans. variceal bleeding)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ],
+   "years": [
+    "MED30"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-15",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Coagulopathy in cirrhosis — avoid routine FFP",
+   "stem": "A 60-year-old woman with Child-Pugh C cirrhosis is admitted with ascites and confusion. She is not bleeding. INR 2.1, aPTT 46 s (control 30 s), platelets 68,000/mm³, fibrinogen 180 mg/dL. A diagnostic paracentesis is planned. What is the most appropriate management of her coagulation tests?",
+   "choices": [
+    "Do not give fresh frozen plasma or platelets; perform the paracentesis and transfuse only for clinically significant bleeding",
+    "Give fresh frozen plasma 15 mL/kg to bring the INR below 1.5, and platelets to above 50,000/mm³, before the paracentesis",
+    "Give platelet transfusion to raise the count above 100,000/mm³",
+    "Postpone paracentesis until the INR normalises",
+    "Start tranexamic acid infusion"
+   ],
+   "answer": 0,
+   "explain": "**Rebalanced haemostasis**: ตับแข็งขาดทั้ง procoagulant (II, V, VII, IX, X) **และ** anticoagulant (protein C, S, antithrombin) แต่ factor VIII/vWF สูง → **INR/aPTT ไม่สะท้อนความเสี่ยงเลือดออก** (บางรายกลับเสี่ยง thrombosis เช่น PVT)\n- **Paracentesis ทำได้โดยไม่ต้องแก้ INR/platelet**; FFP เพิ่ม volume → portal pressure ↑ → เสี่ยง variceal bleed และ TACO\n- Vitamin K 10 mg IV ให้ได้ถ้าสงสัยขาด (cholestasis, ทุพโภชนาการ)\n- เฉลยโพยเก่า \"ให้ FFP\" ล้าสมัย — ปัจจุบันให้เฉพาะเมื่อมี active bleeding ร่วมกับ coagulopathy หรือหัตถการเสี่ยงสูงตามดุลยพินิจ\n\n**ตัวลวง**\n- FFP/platelet ก่อน tap: ไม่มีประโยชน์ เพิ่มความเสี่ยง\n- เลื่อนหัตถการ: ทำให้วินิจฉัย SBP ล่าช้า\n- TXA: ไม่ลดเลือดออก/ตาย (HALT-IT) และเพิ่ม VTE",
+   "pearl": "ตับแข็ง INR สูง ≠ เลือดออกง่าย → tap ได้เลย ไม่ต้อง FFP",
+   "ref": [
+    "MED32 poy ข้อ 4 (cirrhosis PT & aPTT prolonged → FFP)",
+    "MED31 poy ข้อ 60 (cirrhosis PT/aPTT prolonged ควร manage อย่างไร)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "AGA Clinical Practice Update: Coagulation in cirrhosis (2019)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.3(1)"
+   ],
+   "years": [
+    "MED32",
+    "MED31"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-16",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Pre-emptive TIPS / rescue",
+   "stem": "A 51-year-old man with alcohol-related cirrhosis (Child-Pugh C11) presents with variceal haemorrhage. He receives terlipressin, ceftriaxone and band ligation of an actively spurting oesophageal varix within 10 hours. Bleeding has stopped. He has no prior TIPS contraindication. What additional step improves his survival?",
+   "choices": [
+    "Pre-emptive TIPS with a covered stent within 72 hours (ideally < 24 hours)",
+    "Balloon tamponade for 48 hours as routine prophylaxis against early rebleeding, followed by elective TIPS if bleeding recurs",
+    "Stop terlipressin immediately after ligation",
+    "Start propranolol 80 mg twice daily today while on terlipressin",
+    "Repeat band ligation daily for 5 days"
+   ],
+   "answer": 0,
+   "explain": "**Pre-emptive TIPS** ภายใน 72 ชม. (ยิ่งเร็วยิ่งดี) ในผู้ป่วยเสี่ยงสูง: **Child-Pugh C 10–13** หรือ **Child B >7 ที่มี active bleeding ขณะส่องกล้อง** (หรือ HVPG >20) → ลด rebleed และเพิ่ม survival (Baveno VII)\n- **Balloon tamponade (Sengstaken-Blakemore)** หรือ self-expanding metal stent ใช้เป็น **bridge** เฉพาะเลือดออกไม่หยุด (refractory) ระหว่างรอ **rescue TIPS** ไม่เกิน 24 ชม. ไม่ใช่ routine\n- Vasoactive ต้องให้ต่อ 2–5 วัน\n- NSBB เริ่มหลังหยุด vasoactive (ไม่ให้ซ้อน terlipressin และไม่ใช่ขนาดสูงเช่นนี้)\n- EVL ซ้ำทุก 2–4 สัปดาห์ (ไม่ใช่ทุกวัน) จน eradicate",
+   "pearl": "Child C10–13 หรือ B>7 + active bleed → pre-emptive TIPS ≤72 ชม.; balloon = bridge เท่านั้น",
+   "ref": [
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)",
+    "García-Pagán JC et al. NEJM 2010 (early TIPS)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-17",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "HE precipitant — hypokalaemia",
+   "stem": "A 58-year-old man with cirrhosis had his furosemide increased a week ago. He is now confused with asterixis. Serum potassium 2.7 mmol/L, bicarbonate 32 mmol/L, sodium 133 mmol/L, creatinine 1.0 mg/dL. Stool is brown and diagnostic paracentesis shows PMN 50/mm³. How does the hypokalaemia precipitate encephalopathy?",
+   "choices": [
+    "Hypokalaemia increases renal ammonia production, and the accompanying alkalosis converts NH4+ to NH3, which crosses the blood–brain barrier",
+    "Hypokalaemia directly inhibits hepatic glucuronidation of bilirubin, and the rising unconjugated bilirubin is neurotoxic to astrocytes",
+    "Hypokalaemia causes cerebral haemorrhage",
+    "Low potassium blocks GABA receptors, causing seizures that mimic HE",
+    "Hypokalaemia increases dietary protein absorption"
+   ],
+   "answer": 0,
+   "explain": "**Hypokalemia → ↑ammoniagenesis ที่ proximal tubule** (K ออกจากเซลล์แลก H⁺ เข้าเซลล์ → intracellular acidosis → glutamine → NH4⁺ มากขึ้น)\n- **Metabolic alkalosis** (จาก diuretic) → สมดุลเลื่อนจาก NH4⁺ เป็น **NH3** ซึ่งผ่าน BBB ได้ → astrocyte สร้าง glutamine → บวม/ทำงานผิดปกติ\n- รักษา: หยุด/ลด diuretic, ให้ KCl, lactulose\n- Precipitants อื่น: GI bleed, infection/SBP, constipation, dehydration/AKI, hyponatremia, benzodiazepine/opioid, TIPS\n\n**ตัวลวง**\n- Glucuronidation ไม่เกี่ยวกับ HE\n- Hemorrhage, seizure, protein absorption ไม่ใช่กลไก",
+   "pearl": "HE precipitant: diuretic → hypoK + alkalosis → NH3 ↑ — แก้ K เสมอ",
+   "ref": [
+    "MED35 poy ข้อ 64 (HE patho → accumulation of ammonia)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "AASLD/EASL Practice Guideline: Hepatic encephalopathy in chronic liver disease (2014)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.6(6)"
+   ],
+   "years": [
+    "MED35"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-18",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "West Haven grading",
+   "stem": "A 64-year-old woman with cirrhosis is lethargic but rousable to voice. She is disoriented to time but knows where she is, her speech is slow, and asterixis is present. She is not stuporous or comatose. What is her West Haven grade of hepatic encephalopathy?",
+   "choices": [
+    "Grade 2",
+    "Grade 1",
+    "Grade 3",
+    "Grade 4",
+    "Covert (minimal) hepatic encephalopathy"
+   ],
+   "answer": 0,
+   "explain": "**West Haven**\n- **Minimal/covert**: ตรวจปกติ ผิดเฉพาะ psychometric test\n- **Grade 1**: สมาธิสั้น, euphoria/anxiety, sleep reversal, คำนวณบวกลบผิด (asterixis อาจไม่มี)\n- **Grade 2**: **lethargy, disoriented to time**, พฤติกรรมไม่เหมาะสม, **asterixis ชัด** ← รายนี้\n- **Grade 3**: somnolent–semistupor แต่ปลุกตื่น, **disoriented to place**, สับสนมาก\n- **Grade 4**: **coma**\n- Overt HE = grade ≥2 (grade 2–4); grade ≥3 ควรพิจารณา airway protection\n\n**ตัวลวง** แยกด้วย orientation (time → grade 2, place → grade 3) และระดับความรู้สึกตัว",
+   "pearl": "West Haven: disoriented time + asterixis = 2; place/somnolent = 3; coma = 4",
+   "ref": [
+    "MED32 poy ข้อ 11 (asterixis + u/d cirrhosis)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "AASLD/EASL HE guideline 2014"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.6(6)",
+    "2.3.11(4)"
+   ],
+   "years": [
+    "MED32"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-19",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Recurrent HE — rifaximin and nutrition",
+   "stem": "A 60-year-old man with cirrhosis has had two admissions for overt hepatic encephalopathy in 4 months despite taking lactulose and passing 2–3 soft stools daily. He has reduced his meat intake on a relative's advice. His BMI is 19 kg/m² with muscle wasting. What is the best plan?",
+   "choices": [
+    "Add rifaximin 550 mg twice daily to lactulose, and advise protein 1.2–1.5 g/kg/day with a late-evening snack",
+    "Stop lactulose and use rifaximin alone",
+    "Restrict dietary protein to 0.5 g/kg/day using vegetable protein only, and continue lactulose at the current dose",
+    "Add neomycin long term",
+    "Add metronidazole 500 mg three times daily indefinitely"
+   ],
+   "answer": 0,
+   "explain": "**Secondary prophylaxis HE**: lactulose (titrate 2–3 soft stools/วัน) → **recurrence → เพิ่ม rifaximin 550 mg bid** (ลด recurrence และ admission; ใช้ร่วมกับ lactulose ไม่ใช่แทน)\n- **ไม่จำกัดโปรตีน**: sarcopenia เพิ่ม HE (กล้ามเนื้อช่วยกำจัด ammonia เป็น glutamine) → **พลังงาน 35 kcal/kg, โปรตีน 1.2–1.5 g/kg/วัน**, กินบ่อยมื้อ + **late-evening snack**; โปรตีนจากพืช/นม/BCAA ถ้าทนไม่ได้\n- ส่งประเมิน transplant\n\n**ตัวลวง**\n- Rifaximin เดี่ยว: หลักฐานสนับสนุนการให้ร่วม\n- Protein restriction: แย่ลงจาก sarcopenia\n- Neomycin: ototoxic/nephrotoxic; metronidazole ระยะยาว: neurotoxic",
+   "pearl": "HE ซ้ำทั้งที่ได้ lactulose → + rifaximin; โปรตีน 1.2–1.5 g/kg ห้ามจำกัด",
+   "ref": [
+    "MED31 poy ข้อ 77 (cirrhosis + asterixis management → lactulose)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "EASL CPG on nutrition in chronic liver disease (2019)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.6(6)",
+    "2.3.11(4)"
+   ],
+   "years": [
+    "MED31"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-20",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "HRS-AKI — terlipressin",
+   "stem": "A 57-year-old man with cirrhosis and ascites has creatinine rising from 1.0 to 2.4 mg/dL. Diuretics were stopped and he received intravenous albumin 1 g/kg/day for 2 days; creatinine is now 2.6 mg/dL. BP 98/60 mmHg, no shock, no nephrotoxic drugs, urine protein negative, < 5 RBC/hpf, normal renal ultrasound, SpO₂ 97% on room air. Diagnostic paracentesis is negative for SBP. What is the treatment of choice?",
+   "choices": [
+    "Terlipressin (e.g., 1 mg IV every 4–6 hours or continuous infusion) plus albumin 20–40 g/day",
+    "Furosemide infusion to restore urine output",
+    "Normal saline 3 litres over 24 hours",
+    "Low-dose dopamine 2 µg/kg/min",
+    "Low-dose dopamine 2 µg/kg/min to improve renal blood flow, continued with albumin until urine output exceeds 0.5 mL/kg/h"
+   ],
+   "answer": 0,
+   "explain": "**HRS-AKI (ICA criteria)**: cirrhosis + ascites; AKI ตาม ICA (Cr ↑ ≥0.3 ใน 48 ชม. หรือ ≥50% ใน 7 วัน); **ไม่ตอบสนองหลังหยุด diuretic + albumin 1 g/kg/วัน × 2 วัน**; ไม่มี shock; ไม่ได้รับ nephrotoxin; ไม่มี structural kidney disease (protein <500 mg/d, RBC ≤50/hpf, US ปกติ) — ครบทุกข้อ\n- **Terlipressin + albumin** (V1 agonist → splanchnic vasoconstriction → effective volume ↑ → renal perfusion ↑); ICU ใช้ **norepinephrine** แทนได้; midodrine + octreotide ด้อยกว่า\n- ระวัง: ischemia, **respiratory failure/volume overload** — ห้ามถ้า SpO₂ <90%, ACLF grade 3, Cr ≥5\n- ส่งประเมิน liver (± kidney) transplant\n\n**ตัวลวง** furosemide/NSS ไม่แก้ splanchnic vasodilatation; dopamine ไม่ได้ผล; dialysis ใช้เป็น bridge เมื่อมีข้อบ่งชี้เท่านั้น",
+   "pearl": "HRS-AKI: albumin challenge 2 วันไม่ดี → terlipressin + albumin (ICU: norepinephrine)",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "ICA consensus on AKI in cirrhosis (Angeli et al., J Hepatol 2015/2024 update)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-21",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "HRS — functional kidney failure",
+   "stem": "A 49-year-old man with decompensated cirrhosis dies of hepatorenal syndrome type AKI. At autopsy his kidneys are examined. Which finding is expected?",
+   "choices": [
+    "Essentially normal renal histology, because the failure is functional from severe renal vasoconstriction",
+    "Widespread acute tubular necrosis with muddy-brown granular casts, caused by prolonged renal ischaemia, as the primary lesion",
+    "Crescentic glomerulonephritis",
+    "Bilateral renal vein thrombosis",
+    "Diffuse interstitial nephritis with eosinophils"
+   ],
+   "answer": 0,
+   "explain": "**HRS = functional renal failure**: splanchnic vasodilatation (NO) → effective arterial underfilling → RAAS/SNS/ADH ↑ → **renal arterial vasoconstriction รุนแรง** → GFR ↓ โดยที่ **เนื้อไตปกติ**\n- หลักฐาน: ไตของผู้ป่วย HRS นำไปปลูกถ่ายให้ผู้อื่นแล้ว**ทำงานได้**; หลังปลูกถ่ายตับ ไตฟื้น\n- ลักษณะเหมือน prerenal: urine Na <10, FENa <1%, UA bland\n- ตรงข้ามกับ ATN (muddy-brown cast, FENa >2%), GN (proteinuria/hematuria) และ AIN\n\n**ตัวลวง** ทุกข้อเป็น structural kidney disease ซึ่ง **exclude** HRS ตามนิยาม",
+   "pearl": "HRS = ไตปกติแต่ vasoconstrict — ไม่มี structural lesion",
+   "ref": [
+    "MED31 poy ข้อ 63 (AKI pathology ต่างจาก… hepatorenal syndrome)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)"
+   ],
+   "years": [
+    "MED31"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-22",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Hyponatraemia in cirrhosis",
+   "stem": "A 61-year-old woman with cirrhosis and moderate ascites on spironolactone 200 mg and furosemide 80 mg daily is alert, without headache or confusion beyond her baseline. Serum sodium 121 mmol/L (128 mmol/L one month ago), creatinine 1.0 mg/dL. Which management is most appropriate?",
+   "choices": [
+    "Hold the diuretics and restrict fluid to about 1–1.5 L/day, correcting sodium by no more than 8 mmol/L in 24 hours",
+    "3% hypertonic saline 150 mL bolus over 20 minutes, repeated until the serum sodium returns to the normal range of 135 mmol/L",
+    "Increase furosemide to promote free-water excretion",
+    "Normal saline 2 litres over 24 hours",
+    "Oral salt tablets 6 g/day with liberal fluids"
+   ],
+   "answer": 0,
+   "explain": "**Hypervolemic (dilutional) hyponatremia** ในตับแข็ง: effective underfilling → **ADH ↑** → ขับน้ำอิสระไม่ได้; ร่วมกับ diuretics\n- Na <125 → **หยุด diuretic** + **fluid restriction 1–1.5 L/วัน**; พิจารณา albumin; vaptan ใช้จำกัด (tolvaptan เสี่ยงตับ)\n- **Hypertonic saline** เฉพาะมีอาการรุนแรง (ชัก, โคม่า) หรือ Na <110–120 ก่อนผ่าตัด/ปลูกถ่ายใกล้ ๆ\n- ตับแข็งเสี่ยง **ODS สูง** (ทุพโภชนาการ, hypoK, alcohol) → แก้ **≤8 mmol/L/24 ชม.** (AASLD: 4–6)\n\n**ตัวลวง** hypertonic bolus ซ้ำในผู้ไม่มีอาการรุนแรง → overcorrection; NSS/เกลือเม็ด → ascites/edema มากขึ้น; furosemide เพิ่มทำให้แย่ลง",
+   "pearl": "Na <125 ในตับแข็ง → หยุดขับปัสสาวะ + จำกัดน้ำ; แก้ช้า ≤8/วัน (เสี่ยง ODS)",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-23",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Hepatopulmonary vs portopulmonary",
+   "stem": "A 47-year-old man with cirrhosis has progressive dyspnoea. SpO₂ is 95% lying down and falls to 88% when he sits up. PaO₂ is 62 mmHg on room air with an alveolar–arterial gradient of 32 mmHg. Chest radiograph is clear. Contrast (agitated saline) echocardiography shows microbubbles in the left atrium after 4 cardiac cycles. Estimated pulmonary artery pressure is normal. What is the diagnosis and definitive treatment?",
+   "choices": [
+    "Hepatopulmonary syndrome from intrapulmonary vascular dilatation; liver transplantation",
+    "Portopulmonary hypertension from pulmonary arteriolar remodelling; start a non-selective beta-blocker to lower portal pressure",
+    "Patent foramen ovale; percutaneous closure",
+    "Hepatic hydrothorax; TIPS",
+    "Hepatopulmonary syndrome; long-term terlipressin"
+   ],
+   "answer": 0,
+   "explain": "**HPS** = liver disease/portal HT + **A-a gradient ≥15 mmHg** (≥20 ถ้าอายุ >64) + **intrapulmonary vascular dilatation** (bubbles ใน LA **หลัง ≥3 cardiac cycles**) → shunt ที่ฐานปอด → **platypnea–orthodeoxia** (นั่ง/ยืนแล้ว SpO₂ ลด)\n- รักษา: O₂, **liver transplant** (หายได้; ได้ MELD exception ถ้า PaO₂ <60)\n- **Portopulmonary hypertension** = pulmonary arterial HT (RHC: mPAP >20, PVR >2–3 WU, PAWP ≤15) จาก vasoconstriction/remodeling → รักษาด้วย PAH drugs; **NSBB/TIPS ทำให้แย่ลง**; mPAP ≥35–50 เสี่ยงต่อการปลูกถ่าย\n\n**ตัวลวง**\n- PoPH: PA pressure ปกติในรายนี้; NSBB เป็นข้อห้าม\n- PFO: bubbles เข้า LA **ภายใน 3 cycles**\n- Hydrothorax: CXR ต้องมี effusion\n- Terlipressin ไม่ใช่การรักษา HPS",
+   "pearl": "HPS: platypnea–orthodeoxia + bubble ≥3 beats → transplant; PoPH: mPAP สูง ห้าม NSBB/TIPS",
+   "ref": [
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications",
+    "ILTS Practice Guidelines on HPS and PoPH (Transplantation 2016)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-24",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Health maintenance — HCC surveillance and vaccines",
+   "stem": "A 55-year-old man with compensated hepatitis B–related cirrhosis is on entecavir with undetectable HBV DNA. Anti-HAV IgG is negative. Which health-maintenance plan is most appropriate?",
+   "choices": [
+    "Liver ultrasound with or without serum AFP every 6 months, plus hepatitis A, pneumococcal and annual influenza vaccination",
+    "Serum AFP alone once a year",
+    "Contrast CT of the abdomen every 3 months",
+    "No HCC surveillance while HBV DNA remains suppressed on entecavir, but hepatitis A, pneumococcal and influenza vaccination",
+    "Ultrasound every 2 years and avoid all vaccines because of cirrhosis"
+   ],
+   "answer": 0,
+   "explain": "**HCC surveillance**: ทุกรายที่เป็น cirrhosis (ทุกสาเหตุ) และ HBV บางกลุ่ม → **US ± AFP ทุก 6 เดือน** (tumor doubling time ~4–6 เดือน); antiviral ลดแต่**ไม่ขจัด**ความเสี่ยง\n- CT/MRI ใช้เมื่อ US ไม่ชัด (obese, MASLD) หรือพบก้อน ≥1 cm/AFP ขึ้น\n- **Vaccines**: HAV (ถ้า anti-HAV ลบ — superinfection ทำให้ ALF), HBV (ถ้าไม่มีภูมิ), pneumococcal, influenza ประจำปี, COVID-19; inactivated vaccines ปลอดภัย\n- อื่น ๆ: screening varices (หรือ LSM/plt ตาม Baveno), เลิกเหล้า, โภชนาการ, หลีกเลี่ยง NSAIDs\n\n**ตัวลวง** AFP เดี่ยว sensitivity ต่ำ; CT q3mo เกินจำเป็น/รังสี; หยุด surveillance ผิด; q2y ห่างเกิน และไม่ควรเลี่ยงวัคซีน",
+   "pearl": "Cirrhosis ทุกราย: US ± AFP q6 เดือน + วัคซีน HAV/HBV/pneumococcal/influenza",
+   "ref": [
+    "AASLD Practice Guidance on HCC (2023)",
+    "EASL CPG HCC (2018/2025)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)",
+    "2.3.2-3(1)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MCQ-25",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Drugs to avoid in cirrhosis",
+   "stem": "A 66-year-old man with cirrhosis and diuretic-controlled ascites develops a painful knee after a fall; X-ray shows no fracture. He is also sleeping poorly. Creatinine 1.1 mg/dL. Which prescription is most appropriate?",
+   "choices": [
+    "Paracetamol up to 2 g/day and sleep-hygiene advice, avoiding NSAIDs and benzodiazepines",
+    "Ibuprofen 400 mg three times daily and diazepam 5 mg at night",
+    "Diclofenac gel plus oral naproxen 250 mg twice daily",
+    "Tramadol 100 mg four times daily and lorazepam 1 mg at night",
+    "Celecoxib 200 mg daily, because COX-2 selective drugs spare the kidney, with zolpidem rather than a benzodiazepine for sleep"
+   ],
+   "answer": 0,
+   "explain": "**ยาที่ควรเลี่ยงในตับแข็ง**\n- **NSAIDs (รวม COX-2)**: ยับยั้ง renal prostaglandin ที่ช่วยคง GFR ใน effective underfilling → **AKI, ดื้อ diuretic, hyponatremia, GI bleed**\n- **Benzodiazepine/opioid/sedatives**: กระตุ้น **HE**\n- **Aminoglycosides**: nephrotoxic สูงมากในตับแข็ง\n- **ACEI/ARB** ใน ascites: hypotension/AKI\n- **Paracetamol ≤2 g/วัน** ปลอดภัยที่สุดสำหรับปวด (ไม่ใช่ข้อห้าม)\n\n**ตัวลวง** ทุกข้ออื่นมี NSAID หรือ benzodiazepine; tramadol ขนาดสูงเสี่ยง HE/ชัก; celecoxib ไม่ปลอดภัยต่อไต",
+   "pearl": "ตับแข็ง: ปวด → paracetamol ≤2 g/วัน; เลี่ยง NSAIDs, BZD, aminoglycoside, ACEI/ARB",
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "สไลด์ อ.สยาม — Liver cirrhosis and complications"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.11(4)"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "GI-CIR-MEQ-01",
+   "part": "MEQ",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Acute variceal bleeding in cirrhosis → SBP and hepatic encephalopathy (mother case)",
+   "vignette": "ชายไทยอายุ 55 ปี อาชีพรับจ้าง น้ำหนัก 60 kg\nU/D: HBsAg positive ทราบมา 10 ปี ขาดการติดตาม, ดื่มสุราขาววันละ ½ ขวด 20 ปี\nCC: อาเจียนเป็นเลือดสด 3 ครั้ง 4 ชั่วโมงก่อนมา รพ.\nPI: 4 ชม.ก่อนมา อาเจียนเป็นเลือดสดครั้งละประมาณ 1 แก้ว 3 ครั้ง ถ่ายดำเหลว 1 ครั้ง ใจสั่น หน้ามืดเวลาลุกนั่ง ไม่มีปวดท้อง ไม่ได้กิน NSAIDs; 2 เดือนนี้ท้องโตขึ้น\nV/S: BT 37.0 °C, BP 86/50 mmHg, PR 120/min, RR 22/min, SpO₂ 97% RA\nPE: alert, oriented, ไม่มี asterixis; pale conjunctivae, mild icteric sclerae; spider naevi ที่หน้าอก, palmar erythema, gynecomastia\nAbd: mild distension, shifting dullness positive (mild ascites), spleen palpable 3 cm, ไม่กดเจ็บ\nPR: black tarry stool\nLab: Hb 6.8 g/dL, Hct 21%, WBC 7,800/mm³, plt 70,000/mm³\nINR 1.6, BUN 38 mg/dL, Cr 1.1 mg/dL, Na 132 mmol/L, K 3.8 mmol/L\nTB 2.4 mg/dL, DB 1.3 mg/dL, AST 96 U/L, ALT 48 U/L, ALP 130 U/L, albumin 2.7 g/dL",
+   "questions": [
+    {
+     "q": "1. จงเขียน problem list และการวินิจฉัยที่เป็นไปได้มากที่สุด พร้อมคำนวณ Child-Pugh score",
+     "a": "**Problem list**\n1. Acute upper GI bleeding (hematemesis + melena) with **hypovolemic shock** (BP 86/50, PR 120; shock index 1.4) และ **acute blood loss anemia** (Hb 6.8)\n2. **Liver cirrhosis with portal hypertension** (stigmata, splenomegaly, ascites, plt ต่ำ) — สาเหตุ: **chronic HBV + alcohol**\n3. Mild ascites (ยังไม่ได้ tap)\n4. Mild hyperbilirubinemia, hypoalbuminemia, prolonged INR\n5. Mild hyponatremia\n\n**Diagnosis**: **Acute esophageal variceal bleeding** in decompensated cirrhosis (HBV + alcohol) — DDx: portal hypertensive gastropathy, PUD, Mallory-Weiss tear\n\n**Child-Pugh**: bilirubin 2.4 (2) + albumin 2.7 (3) + INR 1.6 (1) + mild ascites (2) + no HE (1) = **9 → class B**\n\n*Marking*: shock/UGIB 1, cirrhosis + สาเหตุ 1, variceal bleed 1, Child-Pugh ถูก 1"
+    },
+    {
+     "q": "2. จงเขียน order สำหรับการดูแลในชั่วโมงแรก (ระบุชนิด อัตราสารน้ำ/เลือด และขนาดยา)",
+     "a": "**One day / Continuous orders**\n- NPO, on O₂ ถ้า SpO₂ <92%, ประเมิน airway (intubate ถ้า HE grade ≥3 หรือเลือดออกมากเสี่ยง aspiration)\n- **IV catheter เบอร์ใหญ่ (16–18G) 2 เส้น**, G/M PRC\n- **Crystalloid อย่างระวัง**: balanced crystalloid (LRS/acetar) หรือ NSS **500 mL IV bolus** แล้วประเมินซ้ำ titrate เป้าหมาย **MAP ~65 mmHg, SBP ~90**, urine ≥0.5 mL/kg/h — **หลีกเลี่ยง over-resuscitation** (เพิ่ม portal pressure → rebleed)\n- **PRC 1 unit IV drip** (ใน shock ให้เร็วตามการตอบสนอง) — **restrictive transfusion: ให้เมื่อ Hb <7 เป้าหมาย 7–8 g/dL**\n- **ไม่ให้ FFP/platelet เพื่อแก้ INR หรือ plt** แบบ routine (rebalanced hemostasis)\n- **Vasoactive**: **terlipressin 2 mg IV q 4 h** (ลดเป็น 1 mg q 4 h เมื่อเลือดหยุด) **หรือ octreotide 50 µg IV bolus แล้ว 50 µg/h drip** — ให้ **2–5 วัน**\n- **Antibiotic prophylaxis**: **ceftriaxone 1 g IV q 24 h × ≤7 วัน**\n- Pantoprazole 80 mg IV แล้ว 40 mg IV q 12 h จนกว่าส่องกล้องยืนยัน (หยุดเมื่อพบว่าเป็น variceal)\n- **Erythromycin 250 mg IV** 30–120 นาทีก่อน EGD\n- Lactulose (ป้องกัน HE) พิจารณาได้; Diagnostic paracentesis\n- Record V/S q 15 min, I/O, Hct q 4–6 h, ส่ง CBC, BUN/Cr, electrolytes, LFT, INR, blood group, G/M, HBV DNA\n\n*Marking*: IV access/fluid ระวัง 1, transfusion target Hb 7 1, vasoactive + ขนาด 1, ceftriaxone 1 g/d 1, ไม่ให้ FFP routine 0.5"
+    },
+    {
+     "q": "3. ควรทำ EGD เมื่อใด และถ้าส่องพบ large esophageal varices ที่มี active spurting จะทำอย่างไร มีการรักษาเพิ่มเติมใดที่ช่วยเพิ่ม survival ในรายนี้",
+     "a": "- **EGD ภายใน 12 ชม.** หลัง resuscitation (เร็วกว่านั้นถ้ายัง unstable)\n- พบ esophageal varices → **endoscopic variceal ligation (EVL)**\n- ให้ vasoactive ต่อ **2–5 วัน**, ceftriaxone ครบ\n- **Pre-emptive TIPS ภายใน 72 ชม. (ดีที่สุด <24 ชม.)**: รายนี้ **Child-Pugh B9 ร่วมกับ active bleeding ขณะส่องกล้อง** → เข้าเกณฑ์ (B >7 + active bleed หรือ C 10–13) ถ้าไม่มีข้อห้าม\n- ถ้าเลือดไม่หยุด (refractory): **balloon tamponade/SEMS เป็น bridge ≤24 ชม.** → rescue TIPS\n\n*Marking*: ≤12 ชม. 1, EVL 1, pre-emptive TIPS + เกณฑ์ 1, rescue plan 0.5"
+    },
+    {
+     "q": "4. หลังเลือดหยุด จงวางแผน secondary prophylaxis และ long-term care ก่อน discharge",
+     "a": "- **NSBB + EVL ร่วมกัน** (เริ่ม NSBB หลังหยุด vasoactive):\n  - **Propranolol 20–40 mg PO bid** titrate ทุก 2–3 วันจน HR 55–60/min (SBP ≥90) หรือ **carvedilol 6.25 mg OD → 12.5 mg/วัน**\n  - **EVL ซ้ำทุก 2–4 สัปดาห์จน eradication** แล้วส่องตามนัด\n  - ลดขนาด/หยุด NSBB ถ้า SBP <90, Na <130, AKI\n- **Antiviral HBV**: entecavir 0.5 mg (decompensated ใช้ 1 mg) หรือ TAF — **รักษาทุกรายที่เป็น decompensated cirrhosis ไม่ว่า HBV DNA เท่าไร**\n- **หยุดสุราเด็ดขาด** (± counseling, baclofen/acamprosate)\n- Ascites: Na 2 g/วัน + spironolactone 100/furosemide 40\n- **HCC surveillance US ± AFP q 6 mo**, vaccine HAV/pneumococcal/influenza\n- เลี่ยง NSAIDs, BZD; โภชนาการ protein 1.2–1.5 g/kg\n- **ส่งประเมิน liver transplant** (decompensated)\n\n*Marking*: NSBB + ขนาด/เป้าหมาย 1, EVL ซ้ำ 1, antiviral 1, หยุดเหล้า/อื่น ๆ 1"
+    },
+    {
+     "q": "5. Day 3 ของการนอน รพ. ผู้ป่วยมีไข้ 38.4 °C ปวดท้องทั่ว ๆ ซึมลง สับสนวัน เวลา มี asterixis; ascitic fluid: WBC 600/mm³, PMN 70%, TP 0.9 g/dL; serum albumin 2.5, ascitic albumin 0.7 g/dL; Cr 1.5 mg/dL, K 3.0 mmol/L จงวินิจฉัยและให้การรักษา",
+     "a": "**แปลผล**: SAAG = 2.5 − 0.7 = **1.8 (≥1.1 portal HT)**, TP 0.9 (low), **PMN = 600 × 0.7 = 420/mm³ (≥250)** → **Spontaneous bacterial peritonitis (nosocomial, ขณะได้ ceftriaxone)** + **hepatic encephalopathy West Haven grade 2** (precipitants: SBP, GI bleed, hypokalemia, AKI) + AKI\n\n**การรักษา**\n- **Antibiotic**: SBP ทั่วไป (community) ใช้ **cefotaxime 2 g IV q 8 h หรือ ceftriaxone 1–2 g/วัน × 5–7 วัน**; แต่รายนี้เป็น **nosocomial/เกิดระหว่างได้ ceftriaxone → ขยายเป็น piperacillin-tazobactam หรือ carbapenem** (ตาม local antibiogram) ส่ง culture ใน blood culture bottle\n- **IV albumin 1.5 g/kg วันที่ 1 = 90 g และ 1 g/kg วันที่ 3 = 60 g** (Cr >1, BUN >30 หรือ TB >4 → ลด HRS/ตาย)\n- **Repeat paracentesis ที่ 48 ชม.** — PMN ควรลด ≥25%\n- หยุด diuretics, ไม่ให้ nephrotoxins, แก้ **K** (KCl)\n- **HE**: **lactulose 30 mL PO/NG q 1–2 h จนถ่าย แล้วปรับให้ถ่ายนิ่ม 2–3 ครั้ง/วัน** (หรือ lactulose enema ถ้ากินไม่ได้), ป้องกัน aspiration, **ไม่จำกัดโปรตีน**, เลี่ยง sedatives\n- ติดตาม rebleed/HRS-AKI\n- หลังหาย: **norfloxacin 400 mg OD ระยะยาว** (secondary prophylaxis)\n\n*Marking*: SBP + คำนวณ PMN 1, abx + ปรับตาม nosocomial 1, albumin 90/60 g 1, HE grade + lactulose titrate 1, prophylaxis 0.5"
+    }
+   ],
+   "ref": [
+    "Baveno VII – Renewing consensus in portal hypertension (J Hepatol 2022)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)",
+    "MED30 poy (variceal bleeding)",
+    "MED34 poy GI ข้อ 2 (EV ligated → NSBB)"
+   ],
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11(2)",
+    "2.3.6(6)",
+    "2.3.1(1)"
+   ]
+  },
+  {
+   "id": "GI-CIR-MEQ-02",
+   "part": "MEQ",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "Tense ascites with AKI — HRS-AKI work-up and treatment",
+   "vignette": "หญิงไทยอายุ 62 ปี น้ำหนักแห้งโดยประมาณ 70 kg\nU/D: DM type 2, HT, obesity (BMI 33) — ได้รับการวินิจฉัย MASLD-related cirrhosis เมื่อ 2 ปีก่อน; ไม่ดื่มสุรา\nยาเดิม: spironolactone 200 mg/d, furosemide 80 mg/d, metformin, losartan 50 mg/d, propranolol 40 mg bid\nCC: ท้องโตตึงมากขึ้น หายใจอึดอัด 1 สัปดาห์ ปัสสาวะออกน้อยลง 3 วัน\nPI: ไม่มีไข้ ไม่มีอาเจียน/ถ่ายเหลว ไม่มีถ่ายดำ ไม่ได้รับสารทึบรังสี ไม่ได้กิน NSAIDs/สมุนไพร\nV/S: BT 37.2 °C, BP 96/58 mmHg, PR 88/min, RR 24/min, SpO₂ 96% RA\nPE: alert, no asterixis; mild jaundice; tense ascites, umbilical hernia; pitting edema 2+ both legs; ไม่กดเจ็บท้อง\nLab: Cr 2.0 mg/dL (1 เดือนก่อน 0.9), BUN 42 mg/dL, Na 127 mmol/L, K 5.4 mmol/L\nTB 3.2 mg/dL, albumin 2.6 g/dL, INR 1.7, Hb 10.5 g/dL, plt 88,000/mm³\nUA: sp.gr 1.020, protein negative, RBC 0–1/hpf, no casts; urine Na 6 mmol/L (FENa 0.2%)\nUS: kidneys normal size, no hydronephrosis; liver nodular, moderate–massive ascites\nAscitic fluid: WBC 150/mm³ (PMN 30/mm³), TP 1.1 g/dL, albumin 0.6 g/dL",
+   "questions": [
+    {
+     "q": "1. จงเขียน problem list, แปลผล ascitic fluid และบอก stage ของ AKI ตาม ICA พร้อม DDx ของ AKI ในผู้ป่วยรายนี้",
+     "a": "**Problem list**\n1. **AKI (ICA stage 2**: Cr 2.0/0.9 = 2.2 เท่าของ baseline) with oliguria\n2. **Tense ascites** (± refractory/diuretic-intractable) ใน decompensated MASLD cirrhosis\n3. Hypervolemic **hyponatremia** (Na 127), **hyperkalemia** (K 5.4 — spironolactone + losartan + AKI)\n4. ยาที่ไม่เหมาะ: **losartan** (ARB) ใน ascites, NSBB ขณะ BP ต่ำ/AKI, metformin ใน AKI\n5. Thrombocytopenia, coagulopathy, jaundice\n\n**Ascitic fluid**: SAAG = 2.6 − 0.6 = **2.0 (≥1.1) → portal HT**; TP 1.1 (<1.5 → เสี่ยง SBP); PMN 30 → **ไม่ใช่ SBP**\n\n**DDx AKI in cirrhosis**\n- **Prerenal/hypovolemic** (diuretics มากเกิน, ARB)\n- **HRS-AKI** (urine Na <10, FENa <1%, UA bland, US ปกติ — เข้าได้)\n- ATN (ไม่มี muddy-brown casts, FENa ต่ำ — ไม่น่าใช่)\n- Postrenal (US ปกติ); intra-abdominal hypertension จาก tense ascites ร่วมด้วย\n\n*Marking*: AKI stage 1, SAAG/PMN 1, hyperK/hypoNa/ยา 1, DDx 1"
+    },
+    {
+     "q": "2. จงให้การรักษาเบื้องต้นใน 48 ชั่วโมงแรก (ระบุยาที่หยุดและขนาด albumin)",
+     "a": "- **หยุด diuretics (spironolactone, furosemide)**, **หยุด losartan**, **hold propranolol** (BP 96/58 + AKI), หยุด metformin, เลี่ยง nephrotoxins/contrast/NSAIDs\n- **Albumin challenge: 20% albumin 1 g/kg/วัน × 2 วัน = 70 g/วัน** (สูงสุด 100 g/วัน)\n- แก้ hyperkalemia (EKG, ถ้าต้องการ: calcium gluconate, insulin–glucose, K binder)\n- **Therapeutic paracentesis** ได้เพื่อลด intra-abdominal pressure/อาการ (tense ascites) **+ albumin 6–8 g/L** ถ้า >5 L\n- Na 127: fluid restriction ~1–1.5 L/วัน\n- ติดตาม Cr ทุกวัน, urine output, I/O, น้ำหนัก, electrolytes; หา infection (culture เลือด/ปัสสาวะ/ascites)\n\n*Marking*: หยุดยาครบ 1.5, albumin 1 g/kg × 2 วัน = 70 g 1, LVP + albumin 0.5, hyperK 0.5"
+    },
+    {
+     "q": "3. หลังให้การรักษาตามข้อ 2 ครบ 48 ชั่วโมง Cr เป็น 2.3 mg/dL BP 98/60 ไม่มี shock จงวินิจฉัยและบอกเกณฑ์ (ICA) ที่ใช้",
+     "a": "**Diagnosis: HRS-AKI (HRS type 1 เดิม)**\n\n**ICA-ADQI criteria** (ต้องครบ)\n1. Cirrhosis + ascites\n2. AKI ตาม ICA (Cr ↑ ≥0.3 mg/dL ใน 48 ชม. หรือ ≥50% จาก baseline ใน 7 วัน) ± urine output ≤0.5 mL/kg/h ≥6 ชม.\n3. **ไม่ตอบสนองหลังหยุด diuretic 2 วัน + albumin 1 g/kg/วัน**\n4. **ไม่มี shock**\n5. **ไม่ได้รับ nephrotoxic drugs ปัจจุบัน/เร็ว ๆ นี้** (NSAIDs, aminoglycoside, contrast)\n6. **ไม่มี structural kidney injury**: proteinuria <500 mg/d, microhematuria ≤50 RBC/hpf, US ไตปกติ\n(+ FENa <0.2% สนับสนุน)\n\n*Marking*: dx 1, เกณฑ์ ≥5 ข้อ 2"
+    },
+    {
+     "q": "4. จงให้การรักษา HRS-AKI พร้อมขนาดยา การติดตาม และข้อควรระวัง",
+     "a": "- **Terlipressin + albumin** (first-line)\n  - Terlipressin **1 mg IV q 4–6 h** (หรือ **continuous infusion 2 mg/วัน** — ผลข้างเคียงน้อยกว่า) → ถ้า Cr ไม่ลด ≥25% ใน 3 วัน เพิ่มเป็น 2 mg q 4–6 h (สูงสุด 12 mg/วัน)\n  - **Albumin 20–40 g/วัน**\n  - ให้จน Cr <1.5 (หรือกลับใกล้ baseline) สูงสุด ~14 วัน\n- ถ้าอยู่ ICU/ไม่มี terlipressin: **norepinephrine 0.5–3 mg/h** + albumin (เป้า MAP ↑ ≥10 mmHg); **midodrine + octreotide + albumin** ด้อยกว่า ใช้เมื่อไม่มีทางเลือก\n- **ข้อควรระวัง terlipressin**: ischemia (หัวใจ, ลำไส้, นิ้ว), **volume overload/pulmonary edema/respiratory failure** → ห้ามใช้ถ้า **SpO₂ <90%**, ACLF grade 3, Cr ≥5; ระวัง hyponatremia; ฟังปอด, SpO₂ ทุกวัน, ลด albumin ถ้า overload\n- RRT เป็น bridge to transplant เมื่อมีข้อบ่งชี้\n\n*Marking*: terlipressin + ขนาด 1, albumin 0.5, ทางเลือก NE 0.5, ข้อควรระวัง 1"
+    },
+    {
+     "q": "5. Cr กลับเป็น 1.2 mg/dL ในวันที่ 8 จงวางแผนระยะยาวก่อนกลับบ้าน (ascites, ยา, การป้องกัน และการส่งต่อ)",
+     "a": "- **ส่งประเมิน liver transplant** (HRS = poor prognosis, MELD สูง; ติดตาม MELD-Na)\n- **Ascites**: Na 2 g/วัน; เริ่ม diuretic ขนาดต่ำอย่างระวัง หรือ **serial LVP + albumin**; ถ้า refractory → พิจารณา **TIPS** (ประเมิน bilirubin/HE/หัวใจ)\n- **ห้ามใช้ ACEI/ARB, NSAIDs, aminoglycoside**; NSBB: ใช้ขนาดต่ำ/หยุดถ้า SBP <90, Na <130 หรือ AKI ซ้ำ\n- **SBP primary prophylaxis**: ascitic TP 1.1 (<1.5) + Na ≤130/Cr ≥1.2 → **norfloxacin 400 mg OD / ciprofloxacin** (ลด HRS/SBP)\n- DM: หยุด metformin ใน decompensated + AKI → insulin; ควบคุม metabolic risk (MASLD), ลดน้ำหนักอย่างค่อยเป็นค่อยไปโดยไม่ขาดโปรตีน\n- **HCC surveillance US ± AFP q 6 mo**, วัคซีน (HAV/HBV, pneumococcal, influenza)\n- สอนชั่งน้ำหนักทุกวัน, อาการเตือน (ไข้ ปวดท้อง ซึม ปัสสาวะน้อย ถ่ายดำ)\n\n*Marking*: transplant 1, ascites plan 1, ยาที่ต้องเลี่ยง 0.5, SBP prophylaxis 0.5, HCC/วัคซีน 0.5"
+    }
+   ],
+   "ref": [
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)",
+    "ICA-ADQI consensus on AKI/HRS in cirrhosis (J Hepatol 2024)",
+    "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis (2018)",
+    "MED31 poy ข้อ 63 (AKI pathology — hepatorenal syndrome)"
+   ],
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)"
+   ]
+  },
+  {
+   "id": "GI-CIR-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "G07",
+   "lecture": "Liver cirrhosis and complications (อ.สยาม)",
+   "topic": "SAQ – Interpretation of three ascitic fluid analyses (SAAG, protein, PMN)",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "instruction": "ผู้ป่วย 3 รายมาด้วยท้องมาน ได้ทำ diagnostic paracentesis ผลดังตาราง\n\n| | ผู้ป่วย A | ผู้ป่วย B | ผู้ป่วย C |\n|---|---|---|---|\n| ประวัติย่อ | ชาย 50 ปี ดื่มสุรา มี spider naevi ไม่มีไข้ | ชาย 58 ปี ตับแข็งจาก HBV มีไข้ 38.2 °C ปวดท้องทั่ว ๆ | หญิง 32 ปี ไข้ต่ำ ๆ น้ำหนักลด 6 kg ใน 2 เดือน |\n| Serum albumin (g/dL) | 2.8 | 2.5 | 3.4 |\n| Ascitic albumin (g/dL) | 0.9 | 1.1 | 2.8 |\n| Ascitic total protein (g/dL) | 1.0 | 1.2 | 4.5 |\n| WBC (/mm³) | 180 (PMN 20%) | 900 (PMN 70%) | 1,200 (lymphocyte 85%) |\n| Gram stain | ไม่พบเชื้อ | ไม่พบเชื้อ | ไม่พบเชื้อ |\n| อื่น ๆ | – | – | ADA 62 U/L |\n\n1. คำนวณ SAAG และ absolute PMN count ของผู้ป่วยทั้ง 3 ราย (3 คะแนน)\n2. ให้การวินิจฉัยที่เป็นไปได้มากที่สุดของแต่ละราย (3 คะแนน)\n3. ผู้ป่วย B ควรได้รับการรักษาอะไร (ระบุยาและขนาด) (2 คะแนน)\n4. ผู้ป่วย A ค่า total protein 1.0 g/dL มีความหมายทางคลินิกอย่างไร และถ้าผลเป็น SAAG สูงแต่ total protein ≥2.5 g/dL นึกถึงโรคใด (2 คะแนน)",
+   "answer": "**1. คำนวณ (1 คะแนนต่อราย)**\n- A: SAAG = 2.8 − 0.9 = **1.9 g/dL**; PMN = 180 × 0.20 = **36/mm³**\n- B: SAAG = 2.5 − 1.1 = **1.4 g/dL**; PMN = 900 × 0.70 = **630/mm³**\n- C: SAAG = 3.4 − 2.8 = **0.6 g/dL**; PMN ต่ำ (lymphocyte เด่น ~1,020/mm³)\n\n**2. วินิจฉัย (1 คะแนนต่อราย)**\n- A: **High SAAG (≥1.1) + low protein (<2.5) → portal hypertension จาก cirrhosis (alcohol), uncomplicated ascites**\n- B: **High SAAG + PMN ≥250 → spontaneous bacterial peritonitis** ใน HBV cirrhosis (culture-negative neutrocytic ascites ถ้า culture ลบ ก็รักษาเหมือน SBP)\n- C: **Low SAAG (<1.1) + high protein + lymphocyte เด่น + ADA >39 → tuberculous peritonitis** (DDx: peritoneal carcinomatosis — ส่ง cytology; ยืนยัน TB ด้วย culture/Xpert, laparoscopic peritoneal biopsy)\n\n**3. รักษาผู้ป่วย B (2 คะแนน)**\n- **Cefotaxime 2 g IV q 8 h** หรือ **ceftriaxone 1–2 g IV OD × 5–7 วัน** (nosocomial/เพิ่งได้ abx → pip-tazo/carbapenem) (1)\n- **Albumin 1.5 g/kg วันที่ 1 และ 1 g/kg วันที่ 3** (โดยเฉพาะ Cr >1, BUN >30, TB >4) (0.5)\n- หยุด diuretic/NSAIDs, repeat tap ที่ 48 ชม. (PMN ลด ≥25%), หลังหาย → **norfloxacin 400 mg OD** ตลอดไป (0.5)\n\n**4. (2 คะแนน)**\n- TP <1.5 g/dL = opsonic activity ต่ำ → **เสี่ยง SBP สูง** → พิจารณา **primary prophylaxis** ถ้ามี Cr ≥1.2, BUN ≥25, Na ≤130 หรือ Child-Pugh ≥9 + bilirubin ≥3 (1)\n- **High SAAG + high protein (≥2.5)** → sinusoid ปกติ (ไม่มี capillarization) แต่ความดันสูง → **cardiac ascites (right HF, constrictive pericarditis), Budd-Chiari syndrome**, early SOS/VOD (1)\n\n*Pass*: ≥6/10 และต้องวินิจฉัย SBP ใน B ได้ถูกต้อง",
+   "ref": [
+    "MED34 poy GI ข้อ 2 (low SAAG high protein → TB peritonitis)",
+    "MED31 poy (ascites fluid ข้อใดเข้าได้กับ SBP — SAAG 1.3, PMN 300)",
+    "MED33 OSCE (แปลผล ascites high SAAG low protein + SBP)",
+    "AASLD Practice Guidance: Diagnosis, Evaluation and Management of Ascites, SBP and HRS (2021)"
+   ],
+   "nl": [
+    "2.3.11(4)",
+    "2.3.11-3(7)"
+   ],
+   "years": [
+    "MED34",
+    "MED33",
+    "MED31"
+   ]
+  }
+ ]
+}

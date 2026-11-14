@@ -1,0 +1,788 @@
+{
+ "mcq": [
+  {
+   "id": "HE-BL-MCQ-01",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Factor VIII dose calculation in haemophilia A haemarthrosis",
+   "stem": "An 8-year-old boy weighing 20 kg with known severe haemophilia A (baseline factor VIII activity <1%) has a painful, swollen, warm right knee for 2 hours after a fall. He has no inhibitor. The team aims for a factor VIII level of 50% for this joint bleed. What initial dose of recombinant factor VIII concentrate is appropriate?",
+   "choices": [
+    "500 IU IV bolus",
+    "250 IU IV bolus",
+    "1,000 IU IV bolus",
+    "2,000 IU IV bolus",
+    "10 mL/kg fresh frozen plasma (200 mL) instead of concentrate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — FVIII กระจายอยู่ใน plasma เป็นหลัก ให้ **1 IU/kg เพิ่มระดับ FVIII ~2%** (FIX 1 IU/kg เพิ่มแค่ ~1% เพราะ FIX กระจายไปนอกหลอดเลือดด้วย)\nสูตร: **ขนาด FVIII (IU) = น้ำหนัก (kg) × ระดับที่ต้องการเพิ่ม (%) ÷ 2** = 20 × 50 ÷ 2 = **500 IU**\nเป้าหมายตาม WFH 2020 สำหรับ hemarthrosis คือ FVIII 40–60% ให้ทันทีที่สงสัย (ภายใน 2 ชม.) ไม่ต้องรอภาพถ่ายรังสี + RICE (rest, ice, compression, elevation)\n\n**ตัวเลือกอื่น**\n- 250 IU → ได้แค่ ~25% ไม่ถึงเป้า\n- 1,000 IU → ~100% เป็นเป้าของเลือดออกที่คุกคามชีวิต (ICH) ไม่ใช่ข้อ\n- 2,000 IU → เกินมาก สิ้นเปลือง\n- FFP → มี FVIII เพียง ~1 IU/mL ต้องให้ปริมาณมาก เสี่ยง volume overload และติดเชื้อ ใช้เมื่อไม่มี concentrate เท่านั้น\n\n> โพย MED32 เคยถามการรักษาเด็กข้อเข่าบวม aPTT 80 วินาที — คำตอบสมัยใหม่คือ factor replacement ทันที ไม่ใช่เจาะข้อ",
+   "pearl": "FVIII: kg × Δ% ÷ 2 | FIX: kg × Δ% — ข้อ 40–60%, ICH 80–100%",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines for the Management of Hemophilia, 3rd ed (2020)",
+    "MED32 — เด็กชายข้อเข่าบวม aPTT prolong (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.58",
+    "2.3.3"
+   ],
+   "years": [
+    "32"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-02",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Factor IX dose for iliopsoas bleed in haemophilia B",
+   "stem": "A 30-kg, 12-year-old boy with severe haemophilia B (factor IX <1%) presents with right groin pain, a flexed hip that he cannot extend, and numbness over the anterior thigh. Ultrasound confirms an iliopsoas haematoma. Haemoglobin is 9.8 g/dL. Using standard plasma-derived factor IX, which initial dose targets a level of about 80%?",
+   "choices": [
+    "2,400 IU factor IX",
+    "1,200 IU factor IX",
+    "600 IU factor IX",
+    "4,800 IU factor IX",
+    "1,200 IU factor VIII concentrate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — FIX มีปริมาตรการกระจายมากกว่า FVIII (จับกับ collagen IV ของผนังหลอดเลือด) จึง **1 IU/kg เพิ่ม FIX เพียง ~1%**\nขนาด = น้ำหนัก × ระดับที่ต้องการ = 30 × 80 = **2,400 IU**\nIliopsoas bleed เป็นเลือดออกรุนแรง (เสียเลือดมาก, กด femoral nerve → ชาต้นขาด้านหน้า, quadriceps อ่อนแรง) WFH 2020 แนะนำเป้าระดับ factor สูงคล้าย ICH ในช่วงแรก แล้วลดลงต่อเนื่อง ให้นอนพัก และ admit\n\n**ตัวเลือกอื่น**\n- 1,200 IU → คิดแบบ FVIII (÷2) ผิดสูตร ได้แค่ ~40%\n- 600 IU → ต่ำเกินไปมาก\n- 4,800 IU → คูณ 2 ผิดทาง ได้ ~160%\n- FVIII concentrate → hemophilia B ขาด FIX ไม่ใช่ FVIII ไม่ช่วย",
+   "pearl": "Iliopsoas bleed = ชาต้นขาหน้า + สะโพกงอ เหยียดไม่ได้ → factor สูงทันที + admit",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020 — Iliopsoas hemorrhage"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.58",
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-03",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Haemophilia A with high-titre inhibitor — acute bleed",
+   "stem": "A 16-year-old with severe haemophilia A has an acute ankle haemarthrosis. He received 50 IU/kg of factor VIII 6 hours ago but the joint is still enlarging. Post-infusion factor VIII recovery is 0%, and a Bethesda assay shows 18 BU/mL. What is the most appropriate treatment for this bleed?",
+   "choices": [
+    "Recombinant activated factor VII (rFVIIa) 90 µg/kg as a bypassing agent",
+    "Double the factor VIII dose to 100 IU/kg every 8 hours",
+    "Desmopressin 0.3 µg/kg IV",
+    "Cryoprecipitate 10 units",
+    "Start emicizumab loading dose to treat the acute bleed"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — inhibitor คือ alloantibody (IgG) ต่อ FVIII ที่ได้รับจาก concentrate (พบ ~25–30% ของ severe A) ทำลาย FVIII ที่ให้ไป\n- **High-responder (≥5 BU)** → เพิ่ม FVIII ไม่ได้ผล ต้องใช้ **bypassing agent**: rFVIIa (กระตุ้น FX บนผิวเกล็ดเลือดโดยตรง ไม่ต้องใช้ FVIII/IX) หรือ aPCC (FEIBA)\n- ระยะยาว: immune tolerance induction (ITI) และ prophylaxis ด้วย emicizumab\n\n**ตัวเลือกอื่น**\n- เพิ่ม FVIII ขนาดสูง → ใช้ได้เฉพาะ low-titre (<5 BU) เท่านั้น\n- DDAVP → ปล่อย FVIII ภายในร่างกาย ใช้ได้แค่ mild A และถูก inhibitor ทำลายเช่นกัน; severe A ไม่มี FVIII ให้ปล่อย\n- Cryoprecipitate → มี FVIII ซึ่งถูก inhibitor ทำลายเช่นกัน\n- Emicizumab → ใช้ป้องกัน (prophylaxis) ไม่ใช่รักษาเลือดออกเฉียบพลัน; ถ้าผู้ป่วยใช้ emicizumab อยู่แล้วต้องระวัง aPCC ขนาดสูง (TMA/thrombosis)",
+   "pearl": "Inhibitor ≥5 BU → bypassing (rFVIIa/aPCC); ไม่ใช่เพิ่ม FVIII",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020 — Inhibitors to clotting factor"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.58",
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-04",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Mechanism of emicizumab",
+   "stem": "A 6-year-old boy with severe haemophilia A and an inhibitor is started on weekly subcutaneous emicizumab prophylaxis. Joint bleeds fall from 12 per year to none. His aPTT becomes normal even though factor VIII activity remains <1%. What is the mechanism of action of emicizumab?",
+   "choices": [
+    "A bispecific antibody that bridges activated factor IX and factor X, mimicking factor VIII cofactor function",
+    "A recombinant factor VIII with an extended half-life due to Fc fusion",
+    "A monoclonal antibody that neutralises the factor VIII inhibitor",
+    "An antibody that blocks tissue factor pathway inhibitor (TFPI)",
+    "A small interfering RNA that lowers antithrombin production"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — FVIIIa ปกติทำหน้าที่ cofactor จับ FIXa และ FX ให้อยู่ใกล้กันบนผิว phospholipid (tenase complex) **Emicizumab เป็น bispecific monoclonal antibody** แขนหนึ่งจับ FIXa อีกแขนจับ FX จึง **ทดแทนหน้าที่ FVIIIa** ได้ ไม่มีโครงสร้าง FVIII → inhibitor ไม่จับ\n- ให้ SC ทุก 1–4 สัปดาห์ ใช้ได้ทั้งมีและไม่มี inhibitor\n- ข้อควรรู้: aPTT สั้นลงเป็นปกติ (assay ถูกรบกวน) จึง **ใช้ aPTT ติดตามไม่ได้**; ไม่ได้ใช้รักษา acute bleed\n\n**ตัวเลือกอื่น**\n- Fc-fusion FVIII (EHL) → ยังเป็น FVIII ถูก inhibitor ทำลาย\n- Antibody ทำลาย inhibitor → ไม่มีในทางคลินิก; การกำจัด inhibitor ทำด้วย ITI\n- Anti-TFPI (concizumab, marstacimab) และ siRNA ลด antithrombin (fitusiran) → เป็น \"rebalancing agents\" กลไกต่างกัน",
+   "pearl": "Emicizumab = สะพาน FIXa–FX แทน FVIII, ใช้ prophylaxis ไม่ใช่ acute bleed, aPTT ใช้ติดตามไม่ได้",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020; Oldenburg J. NEJM 2017 (HAVEN 1)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-05",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Mild haemophilia A — dental extraction",
+   "stem": "A 25-year-old man has mild haemophilia A (baseline factor VIII 18%). A previous desmopressin trial raised his factor VIII to 62%. He needs a single molar extraction. What is the most appropriate haemostatic plan?",
+   "choices": [
+    "Desmopressin 0.3 µg/kg IV before the procedure plus oral tranexamic acid, with fluid restriction for 24 hours",
+    "Fresh frozen plasma 15 mL/kg before the procedure",
+    "Platelet transfusion 1 unit/10 kg before the procedure",
+    "Prophylactic recombinant factor VIIa",
+    "No preparation is needed because his factor VIII is above 5%"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — DDAVP (analog vasopressin) กระตุ้น **V2 receptor** บน endothelium → ปล่อย **VWF และ FVIII จาก Weibel–Palade bodies** เพิ่ม FVIII 2–6 เท่า ใช้ได้กับ **mild hemophilia A (FVIII >5%) ที่ทดสอบแล้วตอบสนอง** และ vWD type 1\n- เสริมด้วย **tranexamic acid** (antifibrinolytic) ได้ผลดีในเยื่อบุช่องปากที่ fibrinolysis สูง\n- ผลข้างเคียง: hyponatremia/ชัก (antidiuretic) → จำกัดน้ำ 24 ชม.; tachyphylaxis หลังให้ซ้ำ 2–3 ครั้ง\n\n**ตัวเลือกอื่น**\n- FFP → ไม่จำเป็น เสี่ยง volume overload/ติดเชื้อ\n- Platelet → เกล็ดเลือดปกติ ไม่ใช่ปัญหา\n- rFVIIa → สำหรับผู้มี inhibitor\n- ไม่เตรียมเลย → mild A เลือดออกมากหลังหัตถการ/ผ่าตัดได้ ต้องเตรียมเสมอ\n\n> โพย MED31 ถาม \"hemophilia A เตรียมถอนฟัน ให้ blood component อะไร\" (ตอบ cryoprecipitate) — ปัจจุบันใช้ FVIII concentrate (severe) หรือ DDAVP (mild) + TXA; cryo ใช้เฉพาะเมื่อไม่มีทางเลือก",
+   "pearl": "Mild A + ตอบสนอง DDAVP → DDAVP + TXA, จำกัดน้ำ (hyponatremia)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020 — Desmopressin",
+    "MED31 — Hemophilia A dental extraction (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3",
+    "B2.4(3)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-06",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Analgesia and drugs to avoid in haemophilia",
+   "stem": "A 20-year-old with severe haemophilia A on factor VIII prophylaxis has chronic knee pain from haemophilic arthropathy and also needs a tetanus booster. Which advice is most appropriate?",
+   "choices": [
+    "Use paracetamol (or a COX-2 selective agent if needed) for pain, and give the vaccine subcutaneously with firm pressure",
+    "Use aspirin for pain because it is the safest anti-inflammatory drug",
+    "Use ibuprofen regularly and give the vaccine intramuscularly into the deltoid",
+    "Inject intramuscular pethidine for pain flares",
+    "Avoid all vaccines because injections cause muscle haematomas"
+   ],
+   "answer": 0,
+   "explain": "**หลักการ** — ผู้ป่วย hemophilia ต้องหลีกเลี่ยงสิ่งที่เพิ่มการเลือดออก:\n- **Aspirin และ NSAIDs (non-selective)** ยับยั้ง COX-1 → ลด thromboxane A2 → การทำงานของเกล็ดเลือดเสีย = ทั้ง primary และ secondary hemostasis บกพร่อง\n- **IM injection** → muscle hematoma, compartment syndrome\n- ยาแก้ปวดที่ปลอดภัย: **paracetamol**, COX-2 selective (celecoxib) ใช้ได้อย่างระวัง, opioid ชนิดกิน/IV\n- วัคซีน: ให้ **SC** (หรือ IM ด้วยเข็มเล็กสุดหลังได้ factor และกดนาน ≥5 นาที) — ห้ามงดวัคซีน\n\n**ตัวเลือกอื่น**: aspirin, ibuprofen, IM pethidine → เพิ่มเลือดออกตามเหตุผลข้างบน; งดวัคซีน → ผิด ผู้ป่วยควรได้วัคซีนครบ (รวม HBV)",
+   "pearl": "Hemophilia: ห้าม aspirin/NSAID/IM — ใช้ paracetamol, วัคซีน SC",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020 — Comprehensive care"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-07",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Carrier counselling in haemophilia",
+   "stem": "A man with severe haemophilia A marries a woman with no family history of bleeding disorders. They ask about the risk to their future children. Which statement is correct?",
+   "choices": [
+    "All daughters will be obligate carriers and no sons will be affected",
+    "Each son has a 50% chance of being affected and each daughter a 50% chance of being a carrier",
+    "All sons will be affected and all daughters will be carriers",
+    "Each child, regardless of sex, has a 25% chance of being affected",
+    "Each son has a 50% chance of being a carrier and daughters are unaffected"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ยีน F8/F9 อยู่บน **X chromosome** (X-linked recessive)\n- พ่อเป็นโรค (X^h Y) × แม่ปกติ (XX): ลูกสาวได้ X^h จากพ่อเสมอ → **ลูกสาวทุกคนเป็น obligate carrier**; ลูกชายได้ Y จากพ่อ → **ลูกชายปกติทุกคน** (ไม่มีการถ่ายทอดชาย→ชาย)\n- เทียบ: แม่ carrier × พ่อปกติ → ลูกชาย 50% เป็นโรค, ลูกสาว 50% เป็น carrier (ตัวเลือก B)\n- Carrier หญิงบางคนมี FVIII ต่ำ (<40%) มีอาการเลือดออกได้ (lyonization) → ควรตรวจระดับ factor ก่อนคลอด/ผ่าตัด\n- ~30% เป็น new mutation ไม่มีประวัติครอบครัว\n\n**ตัวเลือกอื่น**: C ผิดเพราะลูกชายไม่ได้ X จากพ่อ; D เป็นรูปแบบ autosomal recessive; E ผู้ชายเป็น carrier ไม่ได้ใน X-linked",
+   "pearl": "พ่อ hemophilia → ลูกสาว carrier ทุกคน ลูกชายปกติทุกคน",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020 — Carriers"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-08",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Acquired haemophilia A — recognition",
+   "stem": "A 74-year-old woman with no previous bleeding history develops large spontaneous bruises over her arms and trunk and a thigh haematoma over 2 weeks. Haemoglobin 8.1 g/dL, platelets 260,000/mm3, PT 12 s (normal), aPTT 78 s (control 30 s). A 1:1 mixing study partially corrects the aPTT immediately but it prolongs again after 2 hours' incubation at 37 °C. What is the most likely diagnosis?",
+   "choices": [
+    "Acquired haemophilia A due to an autoantibody against factor VIII",
+    "Late-onset mild congenital haemophilia A",
+    "Lupus anticoagulant",
+    "Von Willebrand disease type 1",
+    "Vitamin K deficiency"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Acquired hemophilia A (AHA)** = autoantibody (IgG) ต่อ FVIII ของตัวเอง พบในผู้สูงอายุ, หลังคลอด, autoimmune, มะเร็ง หรือ idiopathic (~50%)\n- ลักษณะ: **ไม่มีประวัติเลือดออกมาก่อน** + เลือดออกใต้ผิวหนัง/กล้ามเนื้อกว้าง (ต่างจาก congenital ที่เลือดออกในข้อ) + **isolated prolonged aPTT**\n- Mixing study: anti-FVIII เป็น **time- and temperature-dependent inhibitor** → แก้ได้ทันทีบางส่วน แต่ **prolong ซ้ำหลัง incubate 2 ชม.** ยืนยันด้วย FVIII ต่ำ + Bethesda assay\n\n**ตัวเลือกอื่น**\n- Congenital mild A → ต้องมีประวัติตั้งแต่เด็ก/ครอบครัว และ mixing แก้ได้สมบูรณ์\n- Lupus anticoagulant → ทำให้ **thrombosis ไม่ใช่เลือดออก**; มักไม่แก้ทันที (immediate inhibitor)\n- vWD type 1 → mucocutaneous bleeding, มีประวัติมาตลอด, mixing แก้ได้\n- Vitamin K deficiency → PT prolong เด่น",
+   "pearl": "ผู้สูงอายุ/หลังคลอด + จ้ำเลือดกว้าง + isolated aPTT ที่ไม่แก้หลัง incubate → acquired hemophilia A",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "International recommendations on acquired hemophilia A (Tiede A, Haematologica 2020)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.58",
+    "2.3.3(1)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-09",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Acquired haemophilia A — treatment",
+   "stem": "The 74-year-old woman with acquired haemophilia A (factor VIII 2%, inhibitor 24 BU/mL) has an expanding thigh haematoma and falling haemoglobin. Which management combination is most appropriate?",
+   "choices": [
+    "A bypassing agent (rFVIIa or aPCC) to stop bleeding plus immunosuppression with prednisolone (± cyclophosphamide or rituximab) to eradicate the inhibitor",
+    "Desmopressin alone and observe",
+    "Plasma exchange as the sole therapy",
+    "Fresh frozen plasma every 8 hours until the aPTT normalises",
+    "Surgical evacuation of the haematoma without haemostatic cover"
+   ],
+   "answer": 0,
+   "explain": "**หลักการรักษา AHA มี 2 แขน**\n1. **หยุดเลือด**: bypassing agents (rFVIIa, aPCC) หรือ recombinant porcine FVIII (susoctocog alfa) ที่ inhibitor จับได้น้อย; emicizumab ใช้ป้องกันระหว่างรอ remission ได้\n2. **กำจัด autoantibody**: prednisolone 1 mg/kg/day ± cyclophosphamide หรือ ± rituximab\n- หาสาเหตุร่วม: มะเร็ง, autoimmune, ยา, หลังคลอด\n- หลีกเลี่ยงหัตถการรุกล้ำที่ไม่จำเป็น\n\n**ตัวเลือกอื่น**\n- DDAVP → ไม่พอกับ inhibitor titre สูง\n- Plasma exchange เดี่ยว → ลด antibody ชั่วคราว ไม่ใช่การรักษาหลัก\n- FFP → FVIII ในพลาสมาถูก inhibitor ทำลาย; aPTT ใช้ติดตามไม่ได้ผล\n- ผ่าตัดโดยไม่มี hemostatic cover → เลือดออกรุนแรง",
+   "pearl": "AHA = bypassing agent + steroid ± cyclophosphamide/rituximab + หาสาเหตุ",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Tiede A et al. Haematologica 2020 — AHA recommendations"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-10",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Lupus anticoagulant on mixing study",
+   "stem": "A 32-year-old woman with three first-trimester miscarriages has an isolated prolonged aPTT (52 s; control 30 s) found before a laparoscopy. She has never had abnormal bleeding, even after a caesarean section. A 1:1 mixing study does not correct the aPTT immediately, and the dilute Russell viper venom time is prolonged and corrects with excess phospholipid. Which statement is correct?",
+   "choices": [
+    "She has a lupus anticoagulant, which increases thrombotic rather than bleeding risk",
+    "She has acquired haemophilia A and needs a bypassing agent before surgery",
+    "She has factor XII deficiency, which explains her miscarriages",
+    "She has a factor VIII deficiency and needs factor VIII cover for laparoscopy",
+    "Her aPTT will normalise if she is given vitamin K"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — Lupus anticoagulant (LA) เป็น antiphospholipid antibody (จับ β2-glycoprotein I/prothrombin บนผิว phospholipid) ใน **หลอดทดลอง** มันแย่ง phospholipid ใน reagent → aPTT ยาว แต่ใน **ร่างกาย** กระตุ้น endothelium/เกล็ดเลือด/complement → **thrombosis และแท้งซ้ำ** (antiphospholipid syndrome)\n- Mixing: **ไม่แก้ทันที** (immediate inhibitor) ต่างจาก anti-FVIII ที่ time-dependent\n- ยืนยัน: dRVVT/LA-sensitive aPTT ที่ **แก้ด้วย phospholipid ส่วนเกิน**; ตรวจ anticardiolipin, anti-β2GPI ซ้ำห่าง ≥12 สัปดาห์\n- ไม่ต้องให้ factor ก่อนผ่าตัด แต่ควรพิจารณา thromboprophylaxis\n\n**ตัวเลือกอื่น**\n- Acquired hemophilia → มีเลือดออก และ FVIII ต่ำ\n- FXII deficiency → aPTT ยาวโดยไม่มีเลือดออก แต่ mixing **แก้ได้** และไม่ใช่สาเหตุแท้ง\n- FVIII deficiency → mixing แก้ได้ มีประวัติเลือดออก\n- Vitamin K → ไม่มีผลต่อ LA\n\n> โพย MED32: \"อะไรที่สนับสนุนว่าเป็น ITP: multiple abortion\" — จริง ๆ ประวัติแท้งซ้ำ + เกล็ดเลือดต่ำ ชวนนึกถึง **antiphospholipid syndrome** (secondary ITP/APS)",
+   "pearl": "aPTT ยาว ไม่แก้ด้วย mixing + ไม่มีเลือดออก + แท้งซ้ำ → lupus anticoagulant (เสี่ยงลิ่มเลือด)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ISTH SSC guidance on lupus anticoagulant detection (Devreese 2020)",
+    "MED32 — multiple abortion กับ ITP (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(1)"
+   ],
+   "years": [
+    "32"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-11",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Laboratory work-up of von Willebrand disease",
+   "stem": "A 19-year-old woman has heavy menstrual bleeding since menarche, frequent gum bleeding and prolonged bleeding after a tonsillectomy. Her mother has similar symptoms. Platelet count 245,000/mm3, PT normal, aPTT 38 s (control 30 s). Which set of tests is most appropriate to establish the diagnosis?",
+   "choices": [
+    "VWF antigen, VWF platelet-binding activity (ristocetin cofactor or GPIbM) and factor VIII activity",
+    "Factor IX assay and Bethesda inhibitor assay",
+    "Bone marrow aspiration for megakaryocyte assessment",
+    "Platelet aggregation to ADP, collagen and adrenaline only",
+    "Lupus anticoagulant screen and anticardiolipin antibody"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — VWF มี 2 หน้าที่: (1) **ยึดเกล็ดเลือดกับ subendothelial collagen ผ่าน GPIb** (primary hemostasis) → mucocutaneous bleeding; (2) **เป็น carrier ป้องกัน FVIII ถูกทำลาย** → FVIII ต่ำ → aPTT ยาวเล็กน้อย\n- Initial tests (ASH/ISTH/NHF/WFH 2021): **VWF:Ag, VWF activity (VWF:RCo หรือ GPIbM), FVIII:C**\n- Activity/Ag ratio <0.7 → สงสัย type 2 → ต่อด้วย multimer, RIPA\n- ระดับ VWF เปลี่ยนตาม blood group O (ต่ำ), ความเครียด, การตั้งครรภ์, ยาคุม → อาจต้องตรวจซ้ำ\n- PFA-100/bleeding time ไม่แนะนำเป็นการตรวจคัดกรองหลัก\n\n**ตัวเลือกอื่น**\n- FIX/Bethesda → สำหรับ hemophilia B/inhibitor ซึ่งไม่เข้ากับผู้หญิงที่ mucocutaneous bleeding และถ่ายทอดจากแม่ (autosomal)\n- Bone marrow → เกล็ดเลือดปกติ ไม่จำเป็น\n- Aggregation ไม่มี ristocetin → พลาด vWD\n- LA screen → LA ไม่ทำให้เลือดออก\n\n> โพย MED35: \"อาการ vWD aPTT สูง investigate อะไร — vWF and F8\"; MED35 #57 เลือดออกตามไรฟัน เมนมามาก แม่ก็เป็น → vWD",
+   "pearl": "vWD: ส่ง VWF:Ag + VWF activity + FVIII; ratio <0.7 → type 2",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH ISTH NHF WFH 2021 guidelines on the diagnosis of VWD (James PD, Blood Adv 2021)",
+    "MED35 — vWD investigate (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.58",
+    "2.3.3-3(2)"
+   ],
+   "years": [
+    "35"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-12",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Type 3 von Willebrand disease treatment",
+   "stem": "A 10-year-old girl born to consanguineous parents has had recurrent epistaxis and two knee haemarthroses. VWF antigen and activity are undetectable and factor VIII is 3%. Both parents have mildly low VWF levels and no symptoms. She now needs an adenotonsillectomy. Which haemostatic product is most appropriate?",
+   "choices": [
+    "A von Willebrand factor–containing concentrate (VWF/FVIII or recombinant VWF)",
+    "Desmopressin 0.3 µg/kg IV",
+    "Recombinant factor VIII concentrate alone",
+    "Platelet transfusion",
+    "Recombinant factor IX concentrate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **vWD type 3** = แทบไม่มี VWF เลย (autosomal recessive, พ่อแม่เป็น carrier/type 1 อาการน้อย) → ไม่มี carrier ป้องกัน FVIII → **FVIII ต่ำมาก (1–9%)** → มีทั้ง mucocutaneous และ **hemarthrosis คล้าย hemophilia**\n- รักษาด้วย **VWF-containing concentrate** (plasma-derived VWF/FVIII หรือ rVWF + FVIII) เป้า VWF activity และ FVIII ≥50% ก่อนผ่าตัด + tranexamic acid\n\n**ตัวเลือกอื่น**\n- DDAVP → ปล่อย VWF ที่สะสมใน Weibel–Palade bodies ซึ่ง type 3 **ไม่มีให้ปล่อย** → ไม่ได้ผล (ได้ผลใน type 1; type 2B ห้ามใช้เพราะเกล็ดเลือดต่ำลง)\n- FVIII อย่างเดียว → ไม่มี VWF มาจับ FVIII ครึ่งชีวิตสั้นมาก และไม่แก้ primary hemostasis\n- Platelet → เกล็ดเลือดปกติ ช่วยได้น้อย (ใช้ในบางกรณีดื้อ)\n- FIX → ไม่เกี่ยว",
+   "pearl": "vWD type 3 = AR, VWF ~0, FVIII ต่ำ, เลือดออกในข้อได้ → VWF concentrate (DDAVP ไม่ได้ผล)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH ISTH NHF WFH 2021 guidelines on the management of VWD (Connell NT, Blood Adv 2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(2)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-13",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Type 2B vWD — desmopressin hazard",
+   "stem": "A 22-year-old man has lifelong mucosal bleeding and mild thrombocytopenia (platelets 95,000/mm3). VWF activity/antigen ratio is 0.4, large VWF multimers are absent, and platelet aggregation occurs at an abnormally low concentration of ristocetin. Why should desmopressin be avoided before his dental surgery?",
+   "choices": [
+    "It releases gain-of-function VWF that binds platelets spontaneously, causing further thrombocytopenia",
+    "It causes severe hyperkalaemia in type 2 disease",
+    "It is ineffective because he has no stored VWF in endothelial cells",
+    "It induces antibodies against VWF after a single dose",
+    "It stimulates fibrinolysis excessively, causing delayed bleeding in all type 2 variants"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Type 2B** = gain-of-function mutation ที่ A1 domain → VWF จับ **GPIb ของเกล็ดเลือดเองโดยไม่ต้องมีแรงเฉือน** → เกล็ดเลือดและ large multimers ถูกเก็บกิน → **thrombocytopenia + ขาด large multimers**\n- Lab: **RIPA ตอบสนองที่ ristocetin ความเข้มข้นต่ำ** (low-dose RIPA ↑), ratio <0.7\n- **DDAVP ปล่อย VWF ผิดปกติออกมามากขึ้น → เกล็ดเลือดจับกลุ่ม ต่ำลงอีก** จึงมักหลีกเลี่ยง ใช้ **VWF concentrate** + TXA แทน\n- DDAVP มีผล tPA เพิ่มเล็กน้อย แต่ไม่ใช่เหตุผลหลัก\n\n**ตัวเลือกอื่น**: hyperkalemia ไม่ใช่ผลข้างเคียง (ที่พบคือ **hyponatremia**); \"ไม่มี VWF ที่สะสม\" คือ type 3; DDAVP ไม่กระตุ้น antibody; fibrinolysis ไม่ใช่กลไกหลัก",
+   "pearl": "Type 2B: low-dose RIPA ↑ + plt ต่ำ → ห้าม DDAVP ใช้ VWF concentrate",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH ISTH NHF WFH 2021 VWD management guideline"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(2)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-14",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Initial treatment of asymptomatic newly diagnosed ITP",
+   "stem": "A 30-year-old woman attends an annual check-up. Examination is normal with no petechiae. CBC: Hb 13 g/dL, Hct 39%, MCV 85 fL, WBC 7,000/mm3 (N 60%, L 25%), platelets 10,000/mm3. Anti-HIV, HBsAg, anti-HCV and ANA are negative. The smear confirms true thrombocytopenia with large platelets, and bone marrow biopsy is normal. What is the most appropriate management?",
+   "choices": [
+    "Prednisolone 1 mg/kg/day (or a short course of dexamethasone 40 mg/day for 4 days)",
+    "Platelet transfusion",
+    "Helicobacter pylori eradication without testing",
+    "Intravenous immunoglobulin as first choice",
+    "Observation only, because she has no bleeding"
+   ],
+   "answer": 0,
+   "explain": "**หลักการ (ASH 2019)** — newly diagnosed ITP ผู้ใหญ่ที่ **platelet <30,000/mm³** แม้ไม่มีอาการหรือเลือดออกเล็กน้อย → แนะนำให้ **corticosteroid** มากกว่าเฝ้าสังเกต เพราะเสี่ยงเลือดออกรุนแรง\n- ขนาด: prednisolone 0.5–2 mg/kg/day ≤6 สัปดาห์ (แล้วค่อย taper) หรือ dexamethasone 40 mg/day × 4 วัน\n- กลไก: ลดการสร้าง anti-GPIIb/IIIa antibody และลดการจับกินเกล็ดเลือดของ macrophage ในม้าม\n\n**ตัวเลือกอื่น**\n- Platelet transfusion → ถูกทำลายเร็ว ใช้เฉพาะเลือดออกรุนแรง/คุกคามชีวิต\n- H. pylori eradication → ทำเมื่อ **ตรวจแล้วพบ** เชื้อ\n- IVIG → ใช้เมื่อต้องการเพิ่มเกล็ดเลือด **เร็ว** (เลือดออก, ก่อนหัตถการ) หรือ steroid ห้ามใช้\n- Observe → เหมาะเมื่อ plt ≥30,000 ไม่มีเลือดออก\n\n> โพย MED28 ข้อ 7 (ข้อสอบจริง): ตอบ **Prednisolone** — ตรงกับ ASH 2019; โพย MED29/MED34 ถาม \"ITP tx\" ตอบ corticosteroid",
+   "pearl": "ITP ผู้ใหญ่ plt <30k → steroid (pred หรือ dexa 40 mg×4 วัน) แม้ไม่มีอาการ",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 guidelines for immune thrombocytopenia (Neunert C, Blood Adv 2019)",
+    "MED28 ข้อ 7 — annual check-up plt 10,000 (โพย)",
+    "MED30 ข้อ 6 — ITP tx; MED34 ข้อ 32"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)"
+   ],
+   "years": [
+    "28",
+    "30",
+    "34"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-15",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "ITP — IVIG when a rapid platelet rise is needed",
+   "stem": "A 27-year-old woman at 37 weeks of pregnancy has known ITP. Platelets are 18,000/mm3 with scattered petechiae and gum bleeding. Delivery is planned within the next week and the anaesthetist wants platelets above 75,000/mm3 for neuraxial anaesthesia. Which treatment raises the platelet count most rapidly and is safe in pregnancy?",
+   "choices": [
+    "Intravenous immunoglobulin 1 g/kg (repeated once if needed)",
+    "Eltrombopag",
+    "Rituximab",
+    "Splenectomy",
+    "Danazol"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — IVIG **block Fc-γ receptor ของ macrophage ในม้าม** (และเพิ่ม FcγRIIB ยับยั้ง) → เกล็ดเลือดที่เคลือบ antibody ไม่ถูกจับกิน → **plt เพิ่มภายใน 1–3 วัน** (เร็วกว่า steroid ที่ใช้ 4–14 วัน) ผลอยู่ 2–4 สัปดาห์\n- ข้อบ่งชี้: เลือดออกมาก, ต้องการเพิ่มเกล็ดเลือดเร็วก่อนผ่าตัด/คลอด, ใช้ร่วมใน emergency, ตั้งครรภ์ (ร่วมกับ prednisolone ขนาดต่ำ)\n- ผลข้างเคียง: ปวดหัว/aseptic meningitis, ไตวาย, thrombosis, hemolysis\n\n**ตัวเลือกอื่น**\n- Eltrombopag (TPO-RA) → ออกฤทธิ์ 1–2 สัปดาห์ ข้อมูลความปลอดภัยในการตั้งครรภ์จำกัด\n- Rituximab → ใช้ 4–8 สัปดาห์ ข้ามรก ทำให้ทารก B-cell ต่ำ\n- Splenectomy → ไม่ทำช่วงใกล้คลอด\n- Danazol → androgen ทำให้ทารกเพศหญิงมีลักษณะเพศชาย ห้ามในครรภ์\n\n> โพย MED35: \"ITP minor petechiae, no mucosal bleeding ให้อะไร — prednisolone (ถ้า bleed/pregnant ให้ IVIG)\"",
+   "pearl": "ต้องการ plt ขึ้นเร็ว (1–3 วัน) → IVIG; steroid ช้ากว่า (4–14 วัน)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 ITP guideline; ACOG/International consensus on ITP in pregnancy (Provan 2019)",
+    "MED35 ข้อ 6 — ITP minor petechiae (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)"
+   ],
+   "years": [
+    "35"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-16",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Emergency management of ITP with intracranial haemorrhage",
+   "stem": "A 35-year-old man with chronic ITP presents with sudden headache and vomiting. GCS is 13 and CT shows a 3-cm intracerebral haemorrhage. Platelets are 4,000/mm3; PT and aPTT are normal. What is the most appropriate immediate management?",
+   "choices": [
+    "Platelet transfusion together with IVIG 1 g/kg and high-dose intravenous methylprednisolone",
+    "Platelet transfusion alone, because steroids and IVIG act too slowly",
+    "Oral prednisolone 1 mg/kg and repeat platelet count in 3 days",
+    "Start romiplostim and observe in the ward",
+    "Emergency splenectomy before any medical therapy"
+   ],
+   "answer": 0,
+   "explain": "**หลักการ (ASH 2019, International consensus 2019)** — ITP ที่มี **เลือดออกคุกคามชีวิต** (ICH, GI bleed รุนแรง) ให้ **พร้อมกันทุกทาง**:\n1. **Platelet transfusion** (อาจให้ต่อเนื่อง/ซ้ำบ่อย) — แม้จะถูกทำลายเร็ว แต่ช่วยหยุดเลือดชั่วคราว ผลดีขึ้นเมื่อให้ร่วมกับ IVIG\n2. **IVIG 1 g/kg** (ลดการทำลายเกล็ดเลือด)\n3. **High-dose methylprednisolone 1 g/day × 3 วัน**\n- เสริม: tranexamic acid, หยุดยาต้านเกล็ดเลือด, ปรึกษาประสาทศัลย์; กรณีดื้อ: TPO-RA, emergency splenectomy\n\n**ตัวเลือกอื่น**\n- Platelet อย่างเดียว → ถูกทำลายภายในชั่วโมง ไม่พอ\n- Oral pred แล้วรอ → ช้าเกินไปสำหรับ ICH\n- Romiplostim อย่างเดียว → ออกฤทธิ์ ~1 สัปดาห์\n- Emergency splenectomy ก่อน → เป็นทางเลือกสุดท้าย\n\n> โพย MED30: \"ITP emergency: platelet transfusion, IVIG; non-emergency: prednisone; start tx when plt <30,000\"",
+   "pearl": "ITP + ICH → platelet + IVIG + IV methylpred พร้อมกัน",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019; Provan D et al. Blood Adv 2019 International consensus report on ITP",
+    "MED30 — ITP emergency (โพยสรุป)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)"
+   ],
+   "years": [
+    "30"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-17",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Secondary causes to test in suspected ITP",
+   "stem": "A 40-year-old man has petechiae for 1 week. Platelets are 22,000/mm3 with normal haemoglobin, white cell count and differential; the smear shows true thrombocytopenia with some large platelets and no schistocytes. He has no medications or features of connective tissue disease. Besides the blood smear, which tests should be sent in every adult with suspected ITP according to current guidance?",
+   "choices": [
+    "HIV and hepatitis C serology (with H. pylori testing considered in endemic regions such as Thailand)",
+    "Antiplatelet antibody (anti-GPIIb/IIIa) assay to confirm the diagnosis",
+    "Bone marrow aspiration in all adults before starting steroids",
+    "Thrombopoietin level and reticulated platelet fraction",
+    "Serum B12 and folate only"
+   ],
+   "answer": 0,
+   "explain": "**หลักการ** — ITP เป็น **diagnosis of exclusion**: isolated thrombocytopenia (<100,000) ที่หาสาเหตุอื่นไม่ได้ การตรวจหา **secondary ITP** ที่เปลี่ยนการรักษา:\n- **HIV, HCV** (แนะนำในผู้ใหญ่ทุกราย — รักษาไวรัสแล้ว plt ดีขึ้น), HBV ก่อนให้ rituximab\n- **H. pylori** (urea breath test/stool Ag) โดยเฉพาะประเทศที่ชุกสูง → ถ้าบวก eradication\n- อื่น ๆ ตามบริบท: ANA/SLE, antiphospholipid, TSH, DAT (Evans), immunoglobulin, pregnancy test\n- **ต้องดู PBS เอง** แยก pseudothrombocytopenia (EDTA clumping), schistocyte (TTP), blast\n\n**ตัวเลือกอื่น**\n- Antiplatelet antibody → sensitivity ต่ำ ไม่แนะนำ\n- Bone marrow ทุกราย → ไม่จำเป็น ทำเมื่ออายุ >60 ปี, มีความผิดปกติเซลล์อื่น, อาการทั่วไป หรือไม่ตอบสนองต่อการรักษา\n- TPO level → ยังไม่ใช่ standard\n- B12/folate อย่างเดียว → ไม่ครอบคลุม\n\n> โพย MED34 OSCE ข้อ 2: PBS เกล็ดเลือดต่ำ giant platelet → Dx ITP ส่ง ANA, anti-HIV, HCV",
+   "pearl": "ITP ผู้ใหญ่: ส่ง HIV + HCV เสมอ (± H. pylori, HBV) และดู PBS ด้วยตาเอง",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 ITP guideline; Provan D. Blood Adv 2019",
+    "MED34 OSCE ข้อ 2 — PBS giant platelet ส่ง ANA, HIV, HCV (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)",
+    "3.1.2"
+   ],
+   "years": [
+    "34"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-18",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Second-line therapy for steroid-dependent ITP",
+   "stem": "A 45-year-old woman with ITP diagnosed 8 months ago responded to prednisolone but her platelets fall below 20,000/mm3 with bruising each time the dose drops below 15 mg/day. She has developed weight gain and new diabetes. She prefers to avoid surgery. According to ASH 2019, which second-line therapy is preferred?",
+   "choices": [
+    "A thrombopoietin receptor agonist such as eltrombopag or romiplostim",
+    "Continue prednisolone 15 mg/day indefinitely",
+    "Splenectomy now, before 12 months from diagnosis",
+    "Repeated platelet transfusions whenever platelets are below 20,000/mm3",
+    "Monthly IVIG as long-term maintenance"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ITP ไม่ได้มีแค่การทำลายเกล็ดเลือด แต่ยัง **สร้างไม่พอ** (antibody จับ megakaryocyte, TPO ไม่เพิ่มตามสัดส่วน) **TPO-RA** (eltrombopag กิน, romiplostim ฉีด SC) กระตุ้น c-Mpl receptor → megakaryocyte สร้างเกล็ดเลือดเพิ่ม ตอบสนอง ~70–80%\n- ASH 2019: ITP ≥3 เดือนที่ steroid-dependent/ไม่ตอบสนอง → แนะนำ **TPO-RA** (ไม่ผูกมัด) มากกว่า rituximab; **splenectomy ควรเลื่อนไป ≥12 เดือน** เพราะบางรายหายเอง\n- ทางเลือกอื่น: rituximab, fostamatinib, splenectomy (ตอบสนองระยะยาว ~60–70%)\n- Eltrombopag: ติดตาม LFT, กินห่างจากนม/ยาลดกรด\n\n**ตัวเลือกอื่น**\n- Steroid ระยะยาว → ผลข้างเคียงสะสม (เบาหวาน กระดูกพรุน ติดเชื้อ) ไม่แนะนำ\n- Splenectomy ก่อน 12 เดือน → ASH แนะนำเลื่อน และผู้ป่วยไม่ต้องการผ่าตัด\n- Platelet transfusion ซ้ำ ๆ → ไม่ได้ผลระยะยาว เกิด alloimmunization\n- IVIG ประจำ → ผลสั้น ราคาแพง",
+   "pearl": "Steroid-dependent ITP → TPO-RA (eltrombopag/romiplostim); splenectomy รอ ≥12 เดือน",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 ITP guideline (Neunert C, Blood Adv 2019)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)",
+    "B2.4(4)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-19",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "H. pylori–associated ITP",
+   "stem": "A 52-year-old Thai woman has newly diagnosed ITP with platelets 48,000/mm3 and no bleeding. HIV and HCV tests are negative. A urea breath test is positive for Helicobacter pylori. What is the most appropriate management?",
+   "choices": [
+    "Give H. pylori eradication therapy and monitor the platelet count",
+    "Start prednisolone 1 mg/kg/day immediately and ignore the breath test",
+    "Give IVIG 1 g/kg",
+    "Perform splenectomy",
+    "Start eltrombopag as first-line therapy"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — H. pylori (โดยเฉพาะสายพันธุ์ CagA+) ทำให้เกิด **molecular mimicry** — antibody ต่อ CagA cross-react กับ platelet glycoprotein และปรับ Fc-γ receptor ของ monocyte → เป็น **secondary ITP**\n- การกำจัดเชื้อทำให้เกล็ดเลือดเพิ่มขึ้นได้ ~50% ในประเทศที่เชื้อชุก (ญี่ปุ่น, อิตาลี, ไทย)\n- ASH 2019: ผู้ใหญ่ ITP ที่ตรวจพบ H. pylori → แนะนำ eradication\n- plt ≥30,000 ไม่มีเลือดออก → ไม่ต้องรีบให้ steroid\n\n**ตัวเลือกอื่น**\n- Steroid ทันที → ไม่จำเป็นที่ plt 48,000 ไม่มีเลือดออก และควรจัดการสาเหตุ\n- IVIG → สำหรับต้องการ plt ขึ้นเร็ว\n- Splenectomy / eltrombopag → second-line ไม่ใช่ขั้นแรก",
+   "pearl": "ITP + H. pylori บวก → eradicate ก่อน (plt ดีขึ้น ~50% ในประเทศเชื้อชุก)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 ITP guideline; Stasi R. Blood 2009 (H. pylori eradication in ITP)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(5)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-20",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Bernard–Soulier syndrome",
+   "stem": "A 14-year-old boy has lifelong epistaxis and gum bleeding. Platelets are 70,000/mm3 and the smear shows many giant platelets, some as large as red cells. PT and aPTT are normal. Platelet aggregation is normal with ADP, collagen and adrenaline but absent with ristocetin, and the defect is not corrected by adding normal plasma. Which abnormality is most likely?",
+   "choices": [
+    "Deficiency of the platelet glycoprotein Ib–IX–V complex",
+    "Deficiency of platelet glycoprotein IIb/IIIa",
+    "Deficiency of plasma von Willebrand factor",
+    "Autoantibodies against platelet glycoprotein IIb/IIIa",
+    "Deficiency of dense granule ADP storage"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Bernard–Soulier syndrome** (autosomal recessive) = ขาด **GPIb–IX–V** ซึ่งเป็น receptor ของ VWF → เกล็ดเลือด **ยึดเกาะ (adhesion) กับ subendothelium ไม่ได้**\n- ลักษณะ: **giant platelets + thrombocytopenia เล็กน้อย-ปานกลาง** (เสี่ยงวินิจฉัยผิดเป็น ITP)\n- **Ristocetin aggregation ผิดปกติ และไม่แก้ด้วย plasma ปกติ** (เพราะบกพร่องที่เกล็ดเลือด) ต่างจาก vWD ที่ **แก้ด้วย plasma** (เพราะขาด VWF ใน plasma)\n- Flow cytometry: CD42 ต่ำ; รักษา: TXA, platelet transfusion เมื่อเลือดออกมาก, rFVIIa\n\n**ตัวเลือกอื่น**\n- GPIIb/IIIa deficiency → Glanzmann: เกล็ดเลือดขนาด/จำนวนปกติ, aggregation ผิดปกติกับทุก agonist **ยกเว้น ristocetin**\n- VWF deficiency → ristocetin ผิดปกติแต่ **แก้ด้วย plasma** และเกล็ดเลือดขนาดปกติ\n- Anti-GPIIb/IIIa autoantibody → ITP: aggregation ปกติ, ไม่ใช่ตั้งแต่เกิด\n- Storage pool disease → aggregation 2nd wave ผิดปกติ",
+   "pearl": "Bernard–Soulier = giant plt + ristocetin ผิดปกติไม่แก้ด้วย plasma (GPIb); Glanzmann = ristocetin เท่านั้นปกติ (GPIIb/IIIa)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Hoffman Hematology — Inherited platelet disorders"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(2)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-21",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Glanzmann thrombasthenia",
+   "stem": "A 6-year-old girl of consanguineous parents has severe recurrent epistaxis requiring transfusion. Platelet count and size are normal, PT and aPTT are normal, and VWF studies are normal. Platelet aggregation is absent with ADP, collagen, adrenaline and arachidonic acid but normal with ristocetin. Which statement is correct?",
+   "choices": [
+    "She lacks platelet glycoprotein IIb/IIIa (integrin αIIbβ3), so platelets cannot bind fibrinogen to aggregate",
+    "She lacks glycoprotein Ib, so platelets cannot adhere to von Willebrand factor",
+    "She has an aspirin-like cyclo-oxygenase defect that only affects arachidonic acid",
+    "She has type 2B von Willebrand disease",
+    "She has immune thrombocytopenia with a normal platelet count"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Glanzmann thrombasthenia** (autosomal recessive) = ขาด/บกพร่อง **GPIIb/IIIa (αIIbβ3)** ซึ่งเป็นตัวจับ **fibrinogen** เชื่อมเกล็ดเลือดเข้าด้วยกัน (aggregation) → step สุดท้ายร่วมของทุก agonist\n- จึง **aggregation ผิดปกติกับทุก agonist ยกเว้น ristocetin** (ristocetin ทำให้ VWF จับ GPIb → agglutination ไม่ต้องใช้ GPIIb/IIIa)\n- เกล็ดเลือด **จำนวนและขนาดปกติ**; flow cytometry CD41/CD61 ต่ำ\n- รักษา: TXA, platelet transfusion (เสี่ยงสร้าง anti-GPIIb/IIIa), rFVIIa\n\n**ตัวเลือกอื่น**\n- GPIb → Bernard–Soulier (ristocetin ผิดปกติ, giant platelet)\n- COX defect/aspirin → ผิดปกติกับ arachidonic acid และ 2nd wave แต่ ADP primary wave ยังมี\n- Type 2B vWD → RIPA ไวขึ้น, เกล็ดเลือดต่ำ, VWF ผิดปกติ\n- ITP → ต้องมีเกล็ดเลือดต่ำ",
+   "pearl": "Glanzmann = plt ปกติ + aggregation ผิดทุกตัวยกเว้น ristocetin (ขาด GPIIb/IIIa)",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Hoffman Hematology — Inherited platelet disorders"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(2)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-22",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Vitamin K deficiency versus liver disease — factor V",
+   "stem": "A 58-year-old man has been in the ICU for 12 days with poor oral intake and broad-spectrum antibiotics. He develops oozing from line sites. PT INR 2.8, aPTT 44 s (control 30 s), platelets 210,000/mm3, fibrinogen 380 mg/dL. Liver enzymes and albumin are normal. Factor V activity is 95% and factor VII activity is 15%. What is the most appropriate treatment?",
+   "choices": [
+    "Intravenous vitamin K 10 mg",
+    "Fresh frozen plasma alone without vitamin K",
+    "Cryoprecipitate",
+    "Platelet transfusion",
+    "Protamine sulfate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — Vitamin K เป็น cofactor ของ γ-glutamyl carboxylase ที่เติม carboxyl ให้ **FII, VII, IX, X, protein C, S** ICU ที่กินไม่ได้ + ยาปฏิชีวนะ (ฆ่าเชื้อในลำไส้ที่สร้าง K2, บางตัวยับยั้ง vitamin K epoxide reductase) → ขาด vitamin K\n- **FVII** ครึ่งชีวิตสั้นสุด (~6 ชม.) ลดก่อน → PT ยาวเด่น ตามด้วย aPTT\n- **Factor V ไม่ขึ้นกับ vitamin K** แต่สร้างที่ตับ → **FV ปกติ = vitamin K deficiency; FV ต่ำ = liver disease** (หรือ DIC)\n- Fibrinogen ปกติ, plt ปกติ → ไม่ใช่ DIC\n- รักษา: **vitamin K IV** (INR ดีขึ้นใน 6–12 ชม.); เลือดออกรุนแรงให้ PCC/FFP ร่วม\n\n**ตัวเลือกอื่น**\n- FFP อย่างเดียว → แก้ชั่วคราว ไม่แก้ต้นเหตุ\n- Cryo → fibrinogen ปกติ\n- Platelet → ปกติ\n- Protamine → reverse heparin\n\n> โพย MED31 ข้อ 60: cirrhosis PT/aPTT prolonged ตอบ FFP (เมื่อมีเลือดออก/ก่อนหัตถการ); MED31 ข้อ 73 PT+PTT prolong → factor V",
+   "pearl": "PT ยาว + FV ปกติ → vitamin K def; FV ต่ำ → liver disease/DIC",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "MED31 ข้อ 60, 73 — PT/aPTT prolonged (โพย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(1)",
+    "B2.2.5(2)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-23",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Drug-induced immune thrombocytopenia",
+   "stem": "A 66-year-old man develops widespread petechiae and gum bleeding 9 days after starting co-trimoxazole for a urinary tract infection. Platelets are 6,000/mm3 (215,000/mm3 two weeks earlier). Haemoglobin, white cells, PT and aPTT are normal and the smear shows no schistocytes. He has not received heparin. What is the most important step in management?",
+   "choices": [
+    "Stop co-trimoxazole; give IVIG with or without platelet transfusion for significant bleeding, expecting recovery within about 1–2 weeks",
+    "Continue the antibiotic and start long-term eltrombopag",
+    "Start plasma exchange for presumed TTP",
+    "Start argatroban for suspected heparin-induced thrombocytopenia",
+    "Perform bone marrow biopsy before stopping any drug"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Drug-induced immune thrombocytopenia (DITP)**: drug-dependent antibody จับ GPIIb/IIIa หรือ GPIb **เฉพาะเมื่อมียาอยู่** → เกล็ดเลือดถูกทำลายเร็วและรุนแรง (มัก <20,000)\n- เวลา: **5–10 วันหลังเริ่มยาครั้งแรก** (หรือภายในชั่วโมงถ้าเคยได้ยามาก่อน)\n- ยาที่พบบ่อย: **quinine**, sulfonamides (co-trimoxazole), vancomycin, rifampicin, carbamazepine, valproate, GPIIb/IIIa inhibitors\n- รักษา: **หยุดยาที่สงสัย** → plt กลับใน ~1–10 วัน; เลือดออกมาก ให้ IVIG ± platelet transfusion, steroid ใช้ได้; ห้ามใช้ยานั้นอีก\n\n**ตัวเลือกอื่น**\n- ให้ยาต่อ → antibody ทำลายต่อ\n- Plasma exchange → ไม่มี MAHA (schistocyte) จึงไม่ใช่ TTP\n- Argatroban → ไม่ได้รับ heparin และ HIT ไม่ค่อยทำ plt <20,000 และมักทำให้เกิด thrombosis ไม่ใช่เลือดออก\n- Bone marrow ก่อนหยุดยา → ไม่จำเป็น เสียเวลา",
+   "pearl": "เกล็ดเลือดต่ำมาก 5–10 วันหลังเริ่มยาใหม่ (quinine, sulfa, vanco) → หยุดยา",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Arnold DM. Drug-induced immune thrombocytopenia, Blood 2017"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(2)",
+    "2.1.58"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-24",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Heparin contamination of a coagulation sample",
+   "stem": "A blood sample for coagulation screening is drawn from the arterial line of a post-operative ICU patient that is kept patent with a heparin flush. Results: aPTT >150 s, PT 14 s, thrombin time >100 s, reptilase time 18 s (normal), fibrinogen 320 mg/dL. The patient has no bleeding. What is the most likely explanation?",
+   "choices": [
+    "Heparin contamination of the sample",
+    "Severe hypofibrinogenaemia",
+    "Disseminated intravascular coagulation",
+    "Factor XIII deficiency",
+    "Haemophilia A"
+   ],
+   "answer": 0,
+   "explain": "**หลักการอ่านผล**\n- **Thrombin time (TT)** วัดการเปลี่ยน fibrinogen → fibrin โดย thrombin ที่เติม → ยาวเมื่อ: heparin, direct thrombin inhibitor (dabigatran), fibrinogen ต่ำ/ผิดปกติ, FDP สูง\n- **Reptilase time** ใช้พิษงูที่ตัด fibrinogen โดยตรง **ไม่ถูกยับยั้งโดย heparin/antithrombin**\n- **TT ยาว + reptilase ปกติ = heparin** (ถ้าทั้งคู่ยาว → fibrinogen ผิดปกติ)\n- aPTT ไวต่อ heparin มาก ส่วน PT reagent มี heparin neutralizer → PT ปกติ\n- แก้: เจาะใหม่จากหลอดเลือดดำส่วนปลาย หรือทิ้ง dead space 5–10 mL\n\n**ตัวเลือกอื่น**\n- Hypofibrinogenemia → fibrinogen ปกติ และ reptilase จะยาว\n- DIC → plt ต่ำ, PT ยาว, fibrinogen ต่ำ\n- FXIII deficiency → PT/aPTT/TT ปกติทั้งหมด\n- Hemophilia A → TT ปกติ",
+   "pearl": "TT ยาว + reptilase ปกติ = heparin; ทั้งคู่ยาว = fibrinogen ผิดปกติ",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Hoffman Hematology — Laboratory evaluation of hemostasis"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(1)"
+   ]
+  },
+  {
+   "id": "HE-BL-MCQ-25",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Factor XIII deficiency — normal screening tests",
+   "stem": "A 3-year-old boy had prolonged bleeding from the umbilical stump at birth and has had delayed re-bleeding 24–36 hours after minor cuts. Platelet count, PT, aPTT, thrombin time and fibrinogen are all normal. What is the most likely diagnosis?",
+   "choices": [
+    "Factor XIII deficiency",
+    "Mild haemophilia A",
+    "Von Willebrand disease type 1",
+    "Factor VII deficiency",
+    "Glanzmann thrombasthenia"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **FXIII (fibrin-stabilizing factor)** เป็น transglutaminase ที่เชื่อม cross-link fibrin ให้แข็งแรงและต้าน fibrinolysis ขาด → ลิ่มเลือดเกิดได้ (การทดสอบ clotting ทุกตัวปกติ เพราะ endpoint คือการเกิด fibrin ครั้งแรก) แต่ **ลิ่มเลือดเปราะ ละลายง่าย → delayed bleeding**\n- ลักษณะเด่น: **เลือดออกจากสะดือหลังคลอด**, ICH, แผลหายช้า, แท้งซ้ำ\n- ตรวจ: FXIII activity (urea/monochloroacetic acid clot solubility เป็นแบบเก่า); รักษาด้วย FXIII concentrate หรือ cryoprecipitate\n\n**ตัวเลือกอื่น**\n- Hemophilia A → aPTT ยาว\n- vWD type 1 → mucocutaneous bleeding ทันที, อาจ aPTT ยาวเล็กน้อย\n- FVII deficiency → isolated PT ยาว\n- Glanzmann → เลือดออกเยื่อบุทันที ไม่ใช่ delayed",
+   "pearl": "เลือดออกสะดือ + delayed bleeding + PT/aPTT/TT/fibrinogen ปกติ → FXIII deficiency",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "Hoffman Hematology — Rare coagulation factor deficiencies"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3",
+    "2.1.58"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "HE-BL-MEQ-01",
+   "part": "MEQ",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Boy with haemarthrosis — haemophilia A work-up and factor replacement",
+   "vignette": "ผู้ป่วยเด็กชายไทยอายุ 9 ปี น้ำหนัก 25 kg\nCC: เข่าขวาบวม ปวด งอเหยียดไม่ได้ 3 ชั่วโมงก่อนมาโรงพยาบาล\nPI: 3 ชม.ก่อนมา หกล้มขณะเล่นฟุตบอล หลังจากนั้นเข่าขวาค่อย ๆ บวม ร้อน ปวดมาก เดินลงน้ำหนักไม่ได้ ไม่มีแผลเปิด ตั้งแต่เด็กเคยมีจ้ำเลือดใหญ่ที่ขาเมื่อกระแทกเล็กน้อย ตอนขลิบหนังหุ้มปลายเมื่ออายุ 5 ปี เลือดหยุดยากต้องนอนโรงพยาบาล 5 วัน\nFH: น้าชาย (พี่ชายของแม่) เสียชีวิตจากเลือดออกในสมองเมื่ออายุ 20 ปี แม่และพี่สาวไม่มีอาการผิดปกติ\nV/S: BT 37.6 °C, PR 108/min, BP 108/64 mmHg, RR 20/min\nPE: mild pale, no petechiae, no gum bleeding; right knee: swollen, warm, tender, held in 30° flexion, ROM limited by pain; ecchymosis 5 cm at left thigh\nLab: Hb 10.8 g/dL, WBC 9,200/mm³, Plt 286,000/mm³, PT 12.5 s (control 12), aPTT 82 s (control 30), TT 15 s (control 15), fibrinogen 310 mg/dL",
+   "questions": [
+    {
+     "q": "1. จงบอก problem list และ clinical pattern ของเลือดออกในผู้ป่วยรายนี้ว่าเป็นความผิดปกติของ primary หรือ secondary hemostasis พร้อมเหตุผล",
+     "a": "**Problem list**\n1. Acute right knee hemarthrosis หลัง trauma เล็กน้อย\n2. Lifelong bleeding tendency (เลือดออกนานหลังขลิบ, ecchymosis ใหญ่จากแรงกระแทกน้อย)\n3. Isolated prolonged aPTT (PT, TT, fibrinogen, plt ปกติ)\n4. Family history ฝั่งแม่ — ผู้ชายมีเลือดออก (X-linked pattern)\n5. Mild anemia\n\n**Pattern = secondary hemostasis (coagulation factor) defect** เพราะ\n- เลือดออกใน **deep tissue: ข้อ, กล้ามเนื้อ, ecchymosis ใหญ่** ไม่ใช่ petechiae/mucosal\n- **delayed/prolonged bleeding** หลังหัตถการ\n- plt ปกติ\n\n*(เทียบ primary: petechiae, gum bleeding, epistaxis, menorrhagia เลือดออกทันทีหลังบาดแผล)*\n\n**คะแนน**: problem ≥3 ข้อ (1), ระบุ secondary (1), เหตุผล ≥2 ข้อ (1)"
+    },
+    {
+     "q": "2. จงให้การวินิจฉัยแยกโรคของ isolated prolonged aPTT ในผู้ป่วยรายนี้ อย่างน้อย 3 โรค และส่งตรวจอะไรเพิ่มเติมเพื่อยืนยันการวินิจฉัย",
+     "a": "**DDx (intrinsic pathway)**\n1. **Hemophilia A (FVIII deficiency)** — พบบ่อยสุด (~80–85%) X-linked — most likely\n2. **Hemophilia B (FIX deficiency)** — X-linked แยกทางคลินิกไม่ได้\n3. **von Willebrand disease type 3/ type 2N** — FVIII ต่ำจากขาด VWF (autosomal)\n4. FXI deficiency (เลือดออกหลังผ่าตัด ไม่ค่อยมี hemarthrosis)\n5. *(FXII, prekallikrein, HMWK deficiency → aPTT ยาวแต่ไม่มีเลือดออก; LA → thrombosis)*\n\n**ส่งตรวจ**\n- **Mixing study 1:1** (ทันที และหลัง incubate 2 ชม.) → แก้ได้ = factor deficiency; ไม่แก้ = inhibitor\n- **FVIII:C และ FIX:C assay** → ระบุชนิดและความรุนแรง (severe <1%, moderate 1–5%, mild >5–40%)\n- **VWF:Ag, VWF activity** เพื่อแยก vWD\n- Inhibitor screen (Bethesda) ก่อนเริ่มรักษาระยะยาว\n- Genetic testing (F8 intron 22 inversion) และตรวจ carrier ในแม่/พี่สาว\n\n**คะแนน**: DDx 3 โรค (1.5), mixing (0.5), factor assay (1)"
+    },
+    {
+     "q": "3. ผล FVIII:C <1%, FIX:C 92%, VWF ปกติ วินิจฉัยว่าอะไร จงเขียนคำสั่งการรักษาภาวะเลือดออกในข้อครั้งนี้ (ระบุชนิดยา ขนาด และระดับเป้าหมาย) พร้อมการดูแลร่วม",
+     "a": "**Dx: Severe hemophilia A with acute right knee hemarthrosis**\n\n**Order**\n- **Recombinant (หรือ plasma-derived) FVIII concentrate**\n  - เป้า FVIII **40–60%** (WFH 2020 สำหรับ joint bleed)\n  - ขนาด = kg × Δ% ÷ 2 = 25 × 50 ÷ 2 ≈ **625 IU IV** (ปัดตาม vial เช่น 750 IU) ให้ทันที ไม่ต้องรอ imaging\n  - ซ้ำ 20–25 IU/kg ทุก 12–24 ชม. รวม 1–2 วัน (หรือจนอาการดีขึ้น)\n- **RICE**: rest, ice 15–20 นาที ทุก 4–6 ชม., compression, elevation; ใส่ splint ชั่วคราว\n- **Analgesia**: paracetamol ± oral opioid — **ห้าม aspirin/NSAID, ห้ามฉีด IM**\n- **ไม่เจาะข้อ** (arthrocentesis) เป็นประจำ — ทำเฉพาะข้อตึงมาก/สงสัย septic arthritis และต้องมี factor cover\n- Physiotherapy หลังปวดลดลง\n- ถ้าไม่ตอบสนองต่อ factor → ตรวจ inhibitor\n- ถ้าไม่มี concentrate จริง ๆ: cryoprecipitate (มี FVIII ~80–100 IU/ถุง) — FFP ไม่พอ\n\n> โพยเก่าบางปีตอบ \"arthrocentesis\" — ปัจจุบันไม่แนะนำเป็นการรักษาหลัก\n\n**คะแนน**: Dx (0.5), ชนิดยา (0.5), คำนวณขนาด + เป้า (1), RICE/analgesia ที่ถูก (1)"
+    },
+    {
+     "q": "4. จงให้คำแนะนำการดูแลระยะยาวแก่ผู้ป่วยและครอบครัว รวมถึงการป้องกันเลือดออกซ้ำ และการให้คำปรึกษาทางพันธุกรรม",
+     "a": "**Prophylaxis** (มาตรฐาน WFH 2020 สำหรับ severe A)\n- **FVIII prophylaxis** เช่น 25–40 IU/kg 3 ครั้ง/สัปดาห์ (หรือ EHL ห่างขึ้น) เพื่อให้ trough >1–3% ป้องกัน hemophilic arthropathy (target joint, synovitis)\n- หรือ **emicizumab SC** ทุก 1–4 สัปดาห์ (ใช้ได้ทั้งมี/ไม่มี inhibitor)\n- **Home therapy**: สอนผู้ปกครองฉีด factor เองเมื่อเริ่มมีอาการเลือดออก (\"aura\" ข้ออุ่น ตึง)\n\n**การดูแลทั่วไป**\n- หลีกเลี่ยง aspirin/NSAID, IM injection; ใช้ paracetamol\n- ออกกำลังกายเสริมกล้ามเนื้อ (ว่ายน้ำ, จักรยาน) หลีกเลี่ยงกีฬาปะทะ\n- ดูแลฟัน, วัคซีนครบ (ให้ SC), HBV vaccine\n- ใส่ medical alert card; มารพ.ทันทีเมื่อปวดหัว/บาดเจ็บศีรษะ\n- ตรวจ inhibitor เป็นระยะ\n- ติดตามที่ hemophilia treatment center (สปสช.มีโครงการ prophylaxis)\n\n**Genetic counselling**\n- X-linked recessive: **แม่น่าจะเป็น carrier** (มีน้าชายเป็นโรค)\n- แม่ carrier ตั้งครรภ์ใหม่ → ลูกชาย 50% เป็นโรค, ลูกสาว 50% เป็น carrier\n- **พี่สาวมีโอกาสเป็น carrier 50%** → ตรวจ FVIII level/genetic testing; carrier บางรายมี FVIII ต่ำ ต้องเตรียมก่อนคลอด/ผ่าตัด\n- ในอนาคตผู้ป่วยมีลูก: ลูกสาวทุกคน carrier, ลูกชายปกติ\n- Prenatal diagnosis (CVS) ได้\n\n**คะแนน**: prophylaxis (1), ข้อห้าม/home care ≥2 (1), genetic counselling ถูกต้อง (1)"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines for the Management of Hemophilia, 3rd ed (2020)",
+    "MED32 — เด็กชายข้อเข่าบวม aPTT 80 s (โพย)",
+    "MED29 MEQ recall — ผู้ชายเลือดออกในข้อ ถามขาด factor อะไร (โพย)"
+   ],
+   "nl": [
+    "2.1.58",
+    "2.3.3"
+   ],
+   "years": [
+    "29",
+    "32"
+   ]
+  },
+  {
+   "id": "HE-BL-MEQ-02",
+   "part": "MEQ",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "Adult ITP with wet purpura and menorrhagia",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 28 ปี อาชีพพนักงานบริษัท\nCC: มีจุดเลือดออกตามแขนขาและเลือดออกตามไรฟัน 5 วัน\nPI: 2 สัปดาห์ก่อน เป็นไข้หวัด หายเอง 5 วันก่อนมีจุดแดงเล็ก ๆ ขึ้นที่ขา 2 ข้าง ไม่คัน กดไม่จาง ต่อมามีจ้ำเลือดที่แขน แปรงฟันมีเลือดออก ประจำเดือนรอบนี้มามาก ใช้ผ้าอนามัยชุ่ม 8 แผ่น/วัน (ปกติ 3–4 แผ่น) วันนี้มีตุ่มเลือดในปาก ไม่มีไข้ ไม่มีปวดข้อ ผมร่วง หรือผื่นแพ้แดด ไม่มีปวดศีรษะ\nPH: ไม่มีโรคประจำตัว ไม่ได้ใช้ยาหรือสมุนไพร ไม่เคยเลือดออกผิดปกติ ไม่เคยตั้งครรภ์\nV/S: BT 37.0 °C, PR 96/min, BP 112/70 mmHg, RR 18/min\nPE: mild pale, no jaundice; **hemorrhagic bullae ที่กระพุ้งแก้ม 2 ตุ่ม**, gum oozing; petechiae and ecchymoses at both legs and forearms; no lymphadenopathy; **no hepatosplenomegaly**; neuro: normal, no fundal hemorrhage\nLab: Hb 10.6 g/dL, MCV 82 fL, WBC 6,800/mm³ (N 62%, L 30%, M 6%, E 2%), **Plt 8,000/mm³**, PT 12 s, aPTT 29 s, Cr 0.7 mg/dL, UA: RBC 0–1/HPF\nPBS: normochromic normocytic RBC, no schistocytes, no blasts; markedly decreased platelets with occasional giant platelets; no platelet clumping",
+   "questions": [
+    {
+     "q": "1. จงบอก problem list และการวินิจฉัยที่เป็นไปได้มากที่สุด พร้อมการวินิจฉัยแยกโรคอย่างน้อย 4 โรค",
+     "a": "**Problem list**\n1. Acquired primary hemostasis defect: petechiae, ecchymoses, gum bleeding, **wet purpura (hemorrhagic bullae)**, menorrhagia\n2. Severe isolated thrombocytopenia (8,000/mm³) with giant platelets, PT/aPTT ปกติ\n3. Mild anemia (น่าจะจาก blood loss)\n4. Preceding viral infection\n\n**Most likely: Primary immune thrombocytopenia (ITP), newly diagnosed** — isolated thrombocytopenia, giant platelets (marrow ตอบสนอง), ไม่มี splenomegaly, หลังไข้หวัด\n\n**DDx**\n- **Pseudothrombocytopenia** (EDTA clumping) — ตัดออกเพราะ PBS ไม่มี clumping และมีอาการเลือดออกจริง\n- **Secondary ITP**: SLE, HIV, HCV, H. pylori, APS, lymphoproliferative (CLL)\n- **Drug-induced thrombocytopenia** — ซักยา/สมุนไพร/quinine\n- **TTP** — ไม่มี schistocyte/anemia hemolytic/neuro/renal\n- **Bone marrow failure/ leukemia/ aplastic anemia** — WBC/Hb ปกติ ไม่มี blast\n- **DIC** — PT/aPTT ปกติ\n- Dengue/infection-related, hypersplenism (ไม่มีม้ามโต), inherited thrombocytopenia (ไม่มีประวัติเดิม)\n\n**คะแนน**: problem list (1), Dx ITP (1), DDx ≥4 (2)"
+    },
+    {
+     "q": "2. จงส่งตรวจเพิ่มเติมที่จำเป็นพร้อมเหตุผล และระบุว่าจำเป็นต้องทำ bone marrow aspiration หรือไม่",
+     "a": "**Investigations**\n- **PBS ดูด้วยตาเอง** (ทำแล้ว) ยืนยัน true thrombocytopenia ไม่มี schistocyte/blast\n- **Anti-HIV, anti-HCV** (แนะนำในผู้ใหญ่ทุกราย), **HBsAg/anti-HBc** (ก่อนให้ steroid/rituximab — HBV reactivation)\n- **H. pylori**: urea breath test หรือ stool antigen (ไทยเชื้อชุก)\n- **ANA** (หญิงวัยเจริญพันธุ์ → SLE), ± antiphospholipid antibodies\n- **TSH**, **DAT** (Evans syndrome ถ้ามี hemolysis), reticulocyte\n- **Urine pregnancy test** (ผลต่อการเลือกยา)\n- Blood group & G6PD, crossmatch เตรียม platelet\n- Iron studies (menorrhagia)\n\n**Bone marrow**: **ไม่จำเป็น** เพราะอายุ <60 ปี, ความผิดปกติจำกัดที่เกล็ดเลือด, ไม่มี systemic symptoms/organomegaly → ทำเมื่อ: อายุ >60, cytopenia เซลล์อื่น, blast/dysplasia, ไม่ตอบสนองต่อการรักษา, ก่อน splenectomy (บางที่)\n\n**คะแนน**: HIV/HCV (1), H. pylori/ANA/HBV (1), เหตุผล BM (1)"
+    },
+    {
+     "q": "3. จงให้การรักษาในช่วงแรก (ระบุชนิดยา ขนาด และเหตุผล) และบอกข้อบ่งชี้ในการให้ platelet transfusion",
+     "a": "**ผู้ป่วยรายนี้: plt <30,000 + มี mucosal bleeding/wet purpura (เสี่ยงเลือดออกรุนแรง/ICH) → admit, รักษาทันที**\n\n**First-line (ASH 2019)**\n- **Corticosteroid**: dexamethasone **40 mg/day PO/IV × 4 วัน** (ตอบสนองเร็วกว่า) หรือ prednisolone **1 mg/kg/day** (≈60 mg) แล้วค่อย taper ภายใน 6 สัปดาห์\n- **+ IVIG 1 g/kg/day × 1–2 วัน** เพราะมี wet purpura/mucosal bleeding ต้องการเพิ่ม plt เร็ว (1–3 วัน) — กลไก block Fc-γ receptor ของ macrophage\n- ร่วม: PPI ป้องกัน GI, ตรวจน้ำตาล, **tranexamic acid** สำหรับเลือดออกเยื่อบุ/menorrhagia, ฮอร์โมนหยุดประจำเดือน (เช่น norethisterone) ตามที่ปรึกษานรีแพทย์\n- งด aspirin/NSAID, IM injection, กิจกรรมเสี่ยง\n\n**Platelet transfusion** ข้อบ่งชี้ใน ITP:\n- **Life-threatening bleeding** (ICH, GI bleed รุนแรง, เลือดออกจนช็อก) — ให้ร่วมกับ IVIG + IV methylprednisolone 1 g/day × 3 วัน\n- ก่อนหัตถการฉุกเฉินที่เลือดออกต้องหยุด\n- ไม่ให้เป็น routine เพราะถูกทำลายเร็ว\n\n**คะแนน**: steroid ขนาดถูก (1), IVIG + เหตุผล (1), indication platelet (1)"
+    },
+    {
+     "q": "4. หลังรักษา 1 สัปดาห์ Plt ขึ้นเป็น 85,000/mm³ แต่ 3 เดือนต่อมาทุกครั้งที่ลด prednisolone ต่ำกว่า 15 mg/day Plt ลดลงเหลือ 15,000/mm³ จงบอกนิยามระยะของโรค และทางเลือกการรักษาต่อไป",
+     "a": "**ระยะของ ITP (IWG)**: newly diagnosed <3 เดือน, **persistent 3–12 เดือน**, chronic >12 เดือน → ผู้ป่วยนี้เป็น **persistent, steroid-dependent ITP**\n\n**Second-line (ASH 2019)**\n- **TPO receptor agonist** (eltrombopag PO หรือ romiplostim SC) — preferred; กระตุ้น megakaryocyte; ติดตาม LFT (eltrombopag), เสี่ยง thrombosis เล็กน้อย\n- **Rituximab** (anti-CD20) — remission ระยะยาว ~20–30%; ตรวจ HBV ก่อน\n- **Splenectomy** — ตอบสนองระยะยาว ~60–70% แต่ **ควรรอ ≥12 เดือน** หลังวินิจฉัย; ให้วัคซีน pneumococcus, meningococcus, Hib ≥2 สัปดาห์ก่อน; เสี่ยง OPSI/thrombosis\n- อื่น ๆ: fostamatinib, danazol, azathioprine, mycophenolate\n- **ไม่ควรใช้ steroid ระยะยาว** (>6 สัปดาห์) เพราะผลข้างเคียง\n- หากวางแผนตั้งครรภ์: เลี่ยง TPO-RA/rituximab ก่อนปรึกษา\n\n**คะแนน**: นิยาม (1), TPO-RA/rituximab/splenectomy ≥2 (1), เวลา/วัคซีน splenectomy (1)"
+    }
+   ],
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "ASH 2019 guidelines for ITP (Neunert C, Blood Adv 2019)",
+    "Provan D et al. International consensus report on ITP, Blood Adv 2019",
+    "MED33 MEQ — ซีด ประจำเดือนมามาก Dx ITP (โพยหน้า 47)",
+    "MED29 SAQ — PBS thrombocytopenia Evans, dexamethasone/IVIG (โพย)"
+   ],
+   "nl": [
+    "2.3.3(5)",
+    "2.1.58",
+    "3.1.2"
+   ],
+   "years": [
+    "29",
+    "33"
+   ]
+  },
+  {
+   "id": "HE-BL-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "H06",
+   "lecture": "Bleeding disorder, Hemophilia, ITP (AL) (อ.ชัชวาล)",
+   "topic": "SAQ – Interpreting coagulation panels and mixing studies",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "instruction": "จงแปลผลการตรวจทางห้องปฏิบัติการของผู้ป่วย 4 ราย ต่อไปนี้ (ค่าปกติ: Plt 150,000–450,000/mm³, PT 11–13 s, aPTT 25–35 s, TT 14–16 s, fibrinogen 200–400 mg/dL)\n\n| ราย | ประวัติ | Plt | PT | aPTT | TT | Fibrinogen | Mixing study |\n|---|---|---|---|---|---|---|---|\n| A | ชาย 10 ปี เลือดออกในข้อเข่าซ้ำ | 280,000 | 12 | 74 | 15 | 300 | aPTT แก้เป็นปกติทันทีและหลัง incubate 2 ชม. |\n| B | หญิง 76 ปี จ้ำเลือดกว้างที่แขน/ลำตัว 2 สัปดาห์ ไม่เคยเลือดออกมาก่อน | 240,000 | 12 | 70 | 15 | 330 | aPTT แก้ได้บางส่วนทันที แต่ยาวขึ้นอีกหลัง incubate 2 ชม. |\n| C | หญิง 30 ปี แท้งบุตร 3 ครั้ง ไม่มีเลือดออก | 110,000 | 12 | 55 | 15 | 310 | aPTT ไม่แก้ทั้งทันทีและหลัง incubate |\n| D | ชาย 50 ปี ติดสุราเรื้อรัง ตัวเหลือง ท้องมาน มีเลือดออกตามไรฟัน | 70,000 | 22 | 48 | 18 | 120 | — (factor V 30%, factor VIII 180%) |\n\n1. จงให้การวินิจฉัยที่เป็นไปได้มากที่สุดของแต่ละราย (4 คะแนน)\n2. ราย A: จงระบุการตรวจที่ต้องส่งต่อเพื่อยืนยันชนิดของโรค 1 อย่าง (1 คะแนน)\n3. ราย B: จงบอกหลักการรักษา 2 ข้อ (2 คะแนน)\n4. ราย C: ความเสี่ยงหลักของผู้ป่วยรายนี้คือเลือดออกหรือลิ่มเลือด และส่งตรวจยืนยันอะไร (1 คะแนน)\n5. ราย D: ค่าใดช่วยแยกภาวะนี้ออกจาก vitamin K deficiency และ DIC (2 คะแนน)",
+   "answer": "**1. Diagnosis (ข้อละ 1 คะแนน)**\n- **A: Hemophilia (A หรือ B)** — congenital intrinsic factor deficiency; isolated aPTT ยาว, mixing **แก้ได้สมบูรณ์** = factor deficiency\n- **B: Acquired hemophilia A** (autoantibody ต่อ FVIII) — ผู้สูงอายุ ไม่มีประวัติเดิม, mixing แก้ทันทีบางส่วนแต่ **prolong หลัง incubate** (time-dependent inhibitor)\n- **C: Lupus anticoagulant / antiphospholipid syndrome** — aPTT ยาว ไม่แก้ด้วย mixing (immediate inhibitor), ไม่มีเลือดออก, แท้งซ้ำ, plt ต่ำเล็กน้อย\n- **D: Coagulopathy of chronic liver disease (cirrhosis)** — PT ยาวเด่น, fibrinogen ต่ำ, plt ต่ำจาก hypersplenism/TPO ต่ำ\n\n**2. ราย A** — **Factor VIII:C และ factor IX:C assay** (แยก A/B และความรุนแรง) ± VWF studies (0.5 ต่อข้อ สูงสุด 1)\n\n**3. ราย B (1 คะแนนต่อข้อ)**\n- หยุดเลือดด้วย **bypassing agent** (rFVIIa หรือ aPCC) หรือ recombinant porcine FVIII\n- **Immunosuppression** กำจัด inhibitor: prednisolone ± cyclophosphamide หรือ rituximab\n- (คะแนนเสริม: หาสาเหตุร่วม — มะเร็ง, autoimmune, ยา; เลี่ยงหัตถการรุกล้ำ)\n\n**4. ราย C** — ความเสี่ยงหลักคือ **thrombosis** (arterial/venous) และ pregnancy morbidity ไม่ใช่เลือดออก (0.5); ยืนยันด้วย **dRVVT/LA-sensitive aPTT ที่แก้ด้วย phospholipid ส่วนเกิน** + anticardiolipin, anti-β2-glycoprotein I ตรวจซ้ำห่าง ≥12 สัปดาห์ (0.5)\n\n**5. ราย D (1 คะแนนต่อข้อ)**\n- **Factor V ต่ำ** (สร้างที่ตับ ไม่ขึ้นกับ vitamin K) → แยกจาก **vitamin K deficiency** ที่ FV ปกติ\n- **Factor VIII ปกติ/สูง** (สร้างจาก endothelium/sinusoid ไม่ใช่ hepatocyte และเป็น acute-phase) → แยกจาก **DIC** ที่ FVIII ถูกใช้หมดจึงต่ำ\n- *(TT ยาวเล็กน้อยจาก fibrinogen ต่ำ/dysfibrinogenemia ของตับ)*\n\n**รวม 10 คะแนน**",
+   "ref": [
+    "สไลด์ อ.ชัชวาล — Bleeding disorder, Hemophilia, ITP",
+    "WFH Guidelines 2020; Tiede A. Haematologica 2020 (AHA); ISTH SSC LA guidance 2020",
+    "MED28-34 โพย — isolated aPTT/mixing test (สรุปโน้ต MED30)"
+   ],
+   "nl": [
+    "2.3.3(1)",
+    "B2.2.5(2)",
+    "2.1.58"
+   ],
+   "years": [
+    "30"
+   ]
+  }
+ ]
+}
