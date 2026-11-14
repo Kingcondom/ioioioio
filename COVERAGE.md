@@ -200,3 +200,29 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6–7)
 
 สัปดาห์ที่ 2–7: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 9 · 9–13 พ.ย. 2569
+
+| วัน | Lecture (อาจารย์) | อยู่ในคลังที่ไหน | สถานะ |
+|---|---|---|---|
+| จ. 9 | Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา) | heme `H01` โลหิตจางและธาลัสซีเมีย (7 / 2 / 21) | ✅ แต่ `H01` ยังเป็นกลุ่มหัวข้อ "ยังไม่ระบุคาบ" |
+| พ. 11 | Dermatitis / Eczema / Urticaria / STDs / Leprosy (อ.ภูริชญ์) | derm `D01` (7 / 1 / 8) · `D02` (7 / 1 / 40) แต่ตรงเรื่อง: dermatitis 2 · urticaria 0 (มี 5 ใน AIR) · leprosy 1 · STD 1 MCQ ใหม่ | 🟡 มีกลุ่มระบบแต่หัวข้อของคาบนี้บางมาก |
+
+ไม่นับ: หัตถการอ่าน slide blood smear (จ. 9) · "🎯 แผนก่อนสอบ" (อ. 10 – ศ. 13) เป็นแผนทบทวน
+
+⚠️ ปฏิทินบอกว่า **สอบ MEQ + OSCE วันที่ 17 พ.ย.**
+
+ข้อเก่าที่ยังพักอยู่ใน `_held_unverified_papers.json`: anemia/thal/G6PD ~67 · STD ~19 · dermatitis/urticaria/leprosy ~8
+
+**ต้องเพิ่ม (ก่อนสอบ 17 พ.ย. ควรเน้น MEQ/OSCE)**
+1. STDs (คาบ อ.พจน์ 9 ต.ค. + ส่วนหนึ่งของคาบนี้): เปิดกลุ่มใหม่ — ยังเป็น ❌ จากสัปดาห์ 4
+2. Derm: MCQ เรื่อง eczema/contact dermatitis, urticaria (ใน derm), leprosy
+3. ค้างจากสัปดาห์ก่อน: Urethral catheterization (❌) · Cirrhosis · Abdominal pain · Acute confusional state · CNS infection/CSF · Hepatitis · WBC disorder/LAD · Bleeding disorder · Blood transfusion · Epilepsy · Derm infection · Empyema/resp failure · SAQ อ่าน CXR · MEQ ของ AF (🟡)
+
+**config ต้องแก้**
+- `H01` → "จ. 9 พ.ย." · `D01`/`D02` → "พ. 11 พ.ย." (หรือสร้างรหัสคาบ derm ใหม่)
+- รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6–8)
+
+สัปดาห์ที่ 2–8: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
