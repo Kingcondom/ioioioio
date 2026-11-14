@@ -1,0 +1,835 @@
+{
+ "mcq": [
+  {
+   "id": "HE-TF-MCQ-01",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Restrictive red cell threshold in upper GI bleeding",
+   "stem": "A 48-year-old man with a bleeding duodenal ulcer is resuscitated with crystalloid. After endoscopic haemostasis his pulse is 92/min, BP 118/72 mmHg and there is no further melaena. He has no cardiovascular disease. Haemoglobin is 6.6 g/dL. Which transfusion plan is most appropriate?",
+   "choices": [
+    "Transfuse packed red cells one unit at a time, aiming for haemoglobin about 7–9 g/dL",
+    "Withhold red cells until haemoglobin falls below 5 g/dL because he is haemodynamically stable",
+    "Transfuse red cells to keep haemoglobin above 10 g/dL to prevent rebleeding",
+    "Give fresh frozen plasma 15 mL/kg to replace the lost volume",
+    "Give 4 units of whole blood to restore circulating volume quickly"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — การส่งออกซิเจน (DO2) = cardiac output × ปริมาณออกซิเจนในเลือด คนที่หัวใจปกติชดเชย Hb ต่ำได้ด้วย **การเพิ่ม cardiac output และเพิ่มการดึงออกซิเจนที่เนื้อเยื่อ** จึงทน Hb 7 g/dL ได้ ส่วนการให้เลือดมากเกินไปใน UGIB **เพิ่มความดันในระบบหลอดเลือดพอร์ทัลและความหนืด** ทำให้เลือดออกซ้ำมากขึ้น (Villanueva, NEJM 2013: กลุ่ม restrictive Hb < 7 มีอัตราตายและเลือดออกซ้ำต่ำกว่า)\n\n**เกณฑ์ AABB 2023**\n| กลุ่มผู้ป่วย | ให้ PRC เมื่อ Hb ต่ำกว่า |\n|---|---|\n| ผู้ใหญ่ในโรงพยาบาล ความดันคงที่ (รวม ICU, UGIB) | **7 g/dL** |\n| ผ่าตัดกระดูก/หัวใจ หรือมีโรคหัวใจและหลอดเลือดเดิม | **8 g/dL** |\n| เลือดออกรุนแรง/ช็อก | ไม่ดูตัวเลข — ให้ตามสถานการณ์ (massive transfusion) |\n\nให้ **ทีละ 1 ยูนิตแล้วประเมินซ้ำ** (อาการ + Hb) ไม่ใช่สั่ง 2 ยูนิตอัตโนมัติ\n\n**ตัวเลือกอื่น**\n- รอจน Hb < 5 — ต่ำกว่าเกณฑ์ความปลอดภัย เสี่ยงขาดเลือดไปเลี้ยงอวัยวะ\n- เป้า Hb > 10 — liberal strategy เพิ่มเลือดออกซ้ำและ TACO\n- FFP ไม่ใช่ volume expander และไม่มีข้อบ่งชี้ถ้าไม่มี coagulopathy\n- Whole blood ไม่ใช่มาตรฐานในผู้ป่วยที่ความดันคงที่แล้ว และเพิ่ม volume overload",
+   "pearl": "UGIB/ICU ความดันคงที่: ให้ PRC เมื่อ Hb < 7 ทีละยูนิต — โรคหัวใจเดิม/ผ่าตัดกระดูก < 8",
+   "ref": [
+    "MED34 – Ugib > resus แล้วทำอะไรต่อ > PRC",
+    "AABB International Guidelines: Red Blood Cell Transfusion (JAMA 2023)",
+    "Villanueva C et al. NEJM 2013;368:11-21"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)"
+   ],
+   "years": [
+    "34"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-02",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Red cell threshold with cardiovascular disease",
+   "stem": "A 74-year-old woman with known stable coronary artery disease is on day 2 after hip fracture fixation. She feels fatigued but has no chest pain; pulse 98/min, BP 124/70 mmHg. Haemoglobin is 7.6 g/dL with no ongoing bleeding. Which is the most appropriate action?",
+   "choices": [
+    "Transfuse 1 unit of packed red cells and reassess, because the threshold with pre-existing cardiovascular disease is 8 g/dL",
+    "Observe, because transfusion is indicated only when haemoglobin is below 7 g/dL in every inpatient",
+    "Transfuse 3 units of packed red cells to reach haemoglobin 10 g/dL",
+    "Start oral iron and recheck in 4 weeks without transfusion",
+    "Give an erythropoietin injection as the immediate treatment"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — กล้ามเนื้อหัวใจดึงออกซิเจนจากเลือดไปใช้เกือบเต็มที่อยู่แล้วแม้ในภาวะพัก (extraction ~70%) เมื่อมีหลอดเลือดหัวใจตีบ **การชดเชยด้วยการเพิ่มการดึงออกซิเจนทำไม่ได้** ต้องอาศัยการเพิ่มอัตราการเต้นของหัวใจ ซึ่งยิ่งเพิ่มความต้องการออกซิเจน — จึงใช้เกณฑ์สูงกว่า\n\n- AABB 2023: **โรคหัวใจและหลอดเลือดเดิม และผู้ป่วยผ่าตัดกระดูก ใช้เกณฑ์ 8 g/dL** (FOCUS trial: ผู้สูงอายุหลังผ่าตัดสะโพกที่มีโรคหัวใจ)\n- ถ้าเป็น **acute MI** ข้อมูล MINT trial (2023) ชี้ว่าเกณฑ์ที่สูงกว่า (< 10 g/dL) อาจดีกว่า — กรณีนั้นปรึกษาอายุรแพทย์หัวใจ\n- ให้ทีละ 1 ยูนิต แล้วประเมินอาการและ Hb ซ้ำ ระวัง **TACO** ในผู้สูงอายุ\n\n**ตัวเลือกอื่น**\n- เกณฑ์ 7 ใช้กับผู้ป่วยทั่วไปที่ไม่มีโรคหัวใจ\n- 3 ยูนิตเพื่อเป้า 10 — เกินจำเป็นและเสี่ยงน้ำเกิน\n- เหล็กกิน/erythropoietin ใช้เวลาหลายสัปดาห์ ไม่แก้ภาวะที่มีอาการตอนนี้ (แต่ควรให้เหล็กต่อหลังผ่าตัดถ้าขาด)",
+   "pearl": "โรคหัวใจเดิม/ผ่าตัดกระดูก ใช้เกณฑ์ Hb 8 — ให้ 1 ยูนิตแล้วประเมินซ้ำ",
+   "ref": [
+    "AABB International Guidelines: Red Blood Cell Transfusion (JAMA 2023)",
+    "Carson JL et al. FOCUS trial, NEJM 2011",
+    "Carson JL et al. MINT trial, NEJM 2023"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-03",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Expected haemoglobin increment after packed red cells",
+   "stem": "A 60-kg woman with symptomatic anaemia from chronic menorrhagia (no ongoing bleeding, no haemolysis) has haemoglobin 5.8 g/dL. She receives 2 units of leukocyte-reduced packed red cells. Approximately what haemoglobin is expected the next day?",
+   "choices": [
+    "About 7.8 g/dL, because each unit raises haemoglobin by roughly 1 g/dL",
+    "About 6.3 g/dL, because each unit raises haemoglobin by roughly 0.25 g/dL",
+    "About 9.8 g/dL, because each unit raises haemoglobin by roughly 2 g/dL",
+    "About 11.8 g/dL, because each unit raises haemoglobin by roughly 3 g/dL",
+    "Unchanged, because transfused red cells take a week to equilibrate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — PRC 1 ยูนิตมีปริมาตร ~250–300 mL, Hct ~55–65% คือมี Hb ประมาณ 50–60 g กระจายในปริมาตรเลือดผู้ใหญ่ ~5 L (70 mL/kg) → **Hb เพิ่มประมาณ 1 g/dL หรือ Hct เพิ่ม ~3% ต่อยูนิต** ในผู้ใหญ่น้ำหนักทั่วไป\n\n- สูตรเด็ก/ผู้ใหญ่ตัวเล็ก: PRC **10–15 mL/kg เพิ่ม Hb ~2–3 g/dL**\n- เลือดเข้าสมดุลเร็ว ตรวจ Hb ได้ตั้งแต่ ~15 นาทีหลังให้ในคนที่ไม่มีเลือดออก\n- ถ้า Hb **ขึ้นน้อยกว่าคาด** ให้คิดถึง **เลือดยังออกอยู่ หรือมีการแตกของเม็ดเลือดแดง (alloantibody/DHTR, AIHA, hypersplenism)**\n\n**ตัวเลือกอื่น** — 0.25, 2, 3 g/dL ต่อยูนิตไม่ตรงกับปริมาณ Hb ในถุง; \"ต้องรอ 1 สัปดาห์\" ผิด เพราะ equilibrate ภายในชั่วโมง\n\n**หมายเหตุ** — หญิงรายนี้เป็น **iron deficiency** ต้องให้เหล็กทดแทนและหาสาเหตุประจำเดือนมามากต่อ (เช่น vWD, เนื้องอกมดลูก) การให้เลือดเป็นแค่การแก้อาการ",
+   "pearl": "PRC 1 ยูนิต → Hb ↑ ~1 g/dL (Hct ↑ ~3%) ถ้าไม่ขึ้นตามคาด = ยังเสียเลือดหรือแตก",
+   "ref": [
+    "MED32 – Hb เพิ่มขึ้นเท่าไหร่หลังให้ PRC 1 u > 1 g/dL",
+    "Harrison's Principles of Internal Medicine 21e, ch. Transfusion biology and therapy"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "3.3.1"
+   ],
+   "years": [
+    "32"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-04",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Bedside administration of red cells – fluids, rate and time limit",
+   "stem": "A nurse asks how to give a unit of packed red cells to a stable adult with anaemia on a medical ward. Which practice is correct?",
+   "choices": [
+    "Infuse slowly for the first 15 minutes with close observation, and complete the unit within 4 hours of removal from controlled storage",
+    "Co-infuse Ringer's lactate through the same line to improve the flow rate",
+    "Dilute the red cells with 5% dextrose to reduce viscosity",
+    "Warm the bag in a microwave oven to body temperature before infusion",
+    "Add the patient's intravenous antibiotic to the blood bag to save a line"
+   ],
+   "answer": 0,
+   "explain": "**กลไกของแต่ละข้อห้าม**\n| สิ่งที่ห้าม | เหตุผล |\n|---|---|\n| **Ringer's lactate / สารน้ำที่มีแคลเซียม** | แคลเซียมจับ **citrate** (สารกันเลือดแข็งในถุง) → เลือด **จับเป็นก้อนในสาย** |\n| **5% dextrose / สารน้ำ hypotonic** | กลูโคสเข้าเซลล์ น้ำตามเข้าไป → **เม็ดเลือดแดงบวมแตก** |\n| **อุ่นด้วยไมโครเวฟ/น้ำร้อน** | ร้อนไม่สม่ำเสมอ → **hemolysis** — ใช้ blood warmer ที่ได้มาตรฐานเท่านั้น (เช่น massive transfusion) |\n| **ใส่ยาในถุงเลือด** | ยาอาจทำให้เม็ดเลือดแตก และถ้าเกิดปฏิกิริยาจะแยกสาเหตุไม่ได้ |\n\n**สิ่งที่ถูกต้อง**\n- ใช้ **0.9% NaCl** เท่านั้นถ้าต้องผ่านสายเดียวกัน, set ที่มี filter 170–260 µm\n- **15 นาทีแรกให้ช้า** (~1–2 mL/นาที) และอยู่ดูผู้ป่วย เพราะ **ปฏิกิริยารุนแรง (AHTR, anaphylaxis, sepsis) มักเกิดในช่วงนี้**\n- วัด V/S ก่อนเริ่ม, ที่ 15 นาที, และเมื่อสิ้นสุด (และตามระเบียบโรงพยาบาล)\n- **ให้หมดภายใน 4 ชั่วโมง** นับจากเอาออกจากตู้เก็บ เพราะเชื้อแบคทีเรียเพิ่มจำนวนที่อุณหภูมิห้อง; ปกติผู้ใหญ่ที่ไม่เสี่ยงน้ำเกินให้ 1 ยูนิตใน ~1.5–2 ชั่วโมง\n- ถ้าเสี่ยง TACO ให้ช้า ~1 mL/kg/ชม.",
+   "pearl": "เลือดผสมได้กับ NSS เท่านั้น — 15 นาทีแรกช้าและเฝ้าดู — ให้หมดใน 4 ชม.",
+   "ref": [
+    "BSH Guideline on the administration of blood components (2017) / SHOT",
+    "คู่มือการใช้เลือดและส่วนประกอบของเลือด ศูนย์บริการโลหิตแห่งชาติ สภากาชาดไทย"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.3.19(5)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-05",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Platelet transfusion for bleeding in marrow failure",
+   "stem": "A 35-year-old man with severe aplastic anaemia has persistent epistaxis despite anterior nasal packing. Platelets 5,000/mm3, haemoglobin 8.5 g/dL, PT and aPTT normal. Which is the most appropriate immediate treatment?",
+   "choices": [
+    "Platelet transfusion of one adult dose (pooled 4–6 units or one apheresis unit)",
+    "Fresh frozen plasma 15 mL/kg",
+    "Cryoprecipitate 10 units",
+    "Intravenous immunoglobulin 1 g/kg",
+    "Observation, because platelet transfusion is indicated only below 1,000/mm3"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — aplastic anaemia เป็น **การสร้างเกล็ดเลือดลดลง (hypoproliferative)** เกล็ดเลือดที่ให้เข้าไป **ไม่ถูกทำลาย จึงอยู่ได้เกือบปกติ (~3–5 วัน)** การให้จึงได้ผลดี ต่างจาก ITP ที่เกล็ดเลือดถูกแอนติบอดีทำลาย\n\n**เกณฑ์การให้เกล็ดเลือด (AABB)**\n| สถานการณ์ | เกณฑ์ |\n|---|---|\n| ป้องกัน (prophylaxis) ในไขกระดูกไม่ทำงาน/หลังเคมีบำบัด | **< 10,000** |\n| ใส่ central line | < 20,000 |\n| Lumbar puncture, ผ่าตัดใหญ่ทั่วไป, เลือดออกจริง | < 50,000 |\n| ผ่าตัดสมอง/ตา (posterior), เลือดออกในสมอง | < 100,000 |\n\nผู้ป่วยรายนี้ **มีเลือดออกจริงและเกล็ดเลือด 5,000 → ต้องให้ทันที**\n\n**ตัวเลือกอื่น**\n- FFP/cryo — PT, aPTT ปกติ ไม่มีปัญหาโปรตีนการแข็งตัว\n- IVIG — ใช้ใน ITP (ภาวะทำลาย) ไม่ใช่ไขกระดูกไม่สร้าง\n- เกณฑ์ < 1,000 ไม่มีอยู่จริง\n\n**หมายเหตุ aplastic anaemia** — ใช้ **leukocyte-reduced** เพื่อลด HLA alloimmunisation, **หลีกเลี่ยงเลือดจากญาติ** ถ้าอาจปลูกถ่ายไขกระดูก, และพิจารณา irradiated product ถ้าได้ ATG",
+   "pearl": "ไขกระดูกไม่สร้าง + เลือดออก → ให้เกล็ดเลือด; prophylaxis < 10k, CVC < 20k, LP/ผ่าตัด < 50k, สมอง < 100k",
+   "ref": [
+    "MED34 – Epistaxis plt 5,000 management → Plt transfusion",
+    "AABB Clinical Practice Guideline: Platelet Transfusion (Ann Intern Med 2015; update 2025)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.1.58"
+   ],
+   "years": [
+    "34"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-06",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Platelet thresholds before procedures",
+   "stem": "A 55-year-old man with acute myeloid leukaemia during induction chemotherapy has platelets 40,000/mm3 and no bleeding. Before which of the following procedures should the platelet count be raised to at least 100,000/mm3?",
+   "choices": [
+    "Craniotomy for a subdural haematoma",
+    "Ultrasound-guided central venous catheter insertion",
+    "Bone marrow aspiration and trephine biopsy",
+    "Peripheral intravenous cannulation",
+    "Lumbar puncture"
+   ],
+   "answer": 0,
+   "explain": "**หลักคิด** — เกณฑ์เกล็ดเลือดขึ้นกับ **ผลที่ตามมาถ้าเลือดออกในตำแหน่งนั้น** และ **กดห้ามเลือดได้หรือไม่**\n| หัตถการ | เกณฑ์เกล็ดเลือดขั้นต่ำ (โดยประมาณ) |\n|---|---|\n| Bone marrow aspiration/biopsy, peripheral IV | ไม่ต้องมีเกณฑ์ (กดได้) |\n| Central venous catheter | **≥ 20,000** |\n| Lumbar puncture, ผ่าตัดใหญ่ที่ไม่ใช่ระบบประสาท | **≥ 40,000–50,000** |\n| **ผ่าตัดสมอง, ไขสันหลัง, ตาส่วนหลัง** | **≥ 100,000** — เลือดออกเพียงเล็กน้อยในที่ปิดก็ทำลายเนื้อประสาทได้ |\n\nผู้ป่วยรายนี้มีเกล็ดเลือด 40,000 ซึ่ง **พอสำหรับ CVC, BM biopsy, IV** และใกล้เกณฑ์ LP (บางแนวทางใช้ 40k–50k) แต่ **ไม่พอสำหรับ craniotomy**\n\n**วิธีให้** — 1 dose ผู้ใหญ่ (pooled 4–6 ยูนิต หรือ apheresis 1 ถุง) เพิ่ม ~30,000–60,000 จึงอาจต้องหลาย dose และตรวจ platelet count หลังให้ 10–60 นาทีก่อนผ่าตัด",
+   "pearl": "เกล็ดเลือดก่อนหัตถการ: CVC 20k · LP/ผ่าตัด 50k · สมอง/ตา 100k · BM biopsy ไม่ต้อง",
+   "ref": [
+    "AABB Clinical Practice Guideline: Platelet Transfusion (Ann Intern Med 2015; update 2025)",
+    "BSH Guidelines for the use of platelet transfusions (2017)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-07",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Dengue thrombocytopenia – no prophylactic platelets",
+   "stem": "A 22-year-old man has day 5 of fever with headache and myalgia. He has petechiae on his legs but no mucosal or gastrointestinal bleeding. Pulse 104/min, BP 100/80 mmHg. Haemoglobin 15.8 g/dL, haematocrit 49% (baseline 42%), WBC 1,800/mm3, platelets 24,000/mm3. Which is the most appropriate management?",
+   "choices": [
+    "Isotonic intravenous crystalloid titrated to haematocrit, vital signs and urine output, without prophylactic platelet transfusion",
+    "Platelet concentrate transfusion to keep platelets above 50,000/mm3",
+    "Dexamethasone to raise the platelet count",
+    "Granulocyte colony-stimulating factor for the leucopenia",
+    "Fresh frozen plasma to prevent bleeding"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ไข้เลือดออกระยะวิกฤต (critical phase, วันที่ 4–6) มี **plasma leakage** จากเซลล์เยื่อบุหลอดเลือดรั่ว → **Hct สูงขึ้น ≥ 20% จาก baseline + pulse pressure แคบ (100/80 = 20 mmHg)** ซึ่งเป็นภาวะช็อกที่ชดเชยอยู่ สิ่งที่ฆ่าผู้ป่วยคือ **ช็อกจากการรั่ว** ไม่ใช่เกล็ดเลือดต่ำ\n\nเกล็ดเลือดต่ำเกิดจาก **ไขกระดูกถูกกด + ภูมิคุ้มกันทำลาย + การใช้ไป** และจะฟื้นเองในระยะ recovery\n\n**ทำไมไม่ให้เกล็ดเลือดป้องกัน** — การศึกษา ADEPT (Lancet 2017) พบว่าให้เกล็ดเลือดป้องกันใน dengue ที่เกล็ดเลือด < 20,000 **ไม่ลดเลือดออก แต่เพิ่มผลข้างเคียง** (น้ำเกิน ภูมิแพ้) และในระยะ reabsorption ยังเพิ่มโอกาสน้ำท่วมปอด — แนวทางไทยให้เกล็ดเลือดเฉพาะเมื่อ **มีเลือดออกมากอย่างมีนัยสำคัญ**\n\n**ตัวเลือกอื่น** — steroid ไม่ช่วย; G-CSF ไม่มีข้อบ่งชี้ (เม็ดเลือดขาวฟื้นเอง); FFP ไม่ป้องกันเลือดออกและเพิ่มน้ำเกิน",
+   "pearl": "Dengue: เกล็ดเลือดต่ำไม่ใช่ข้อบ่งชี้ให้เกล็ดเลือด — แก้ plasma leakage ด้วย crystalloid ตาม Hct",
+   "ref": [
+    "MED30 – เป็น dengue มี platelet ต่ำ, Hb สูงมาก → IV fluid",
+    "MED33 – High grade fever 7 days, petechiae, BP 100/80, Plt 24,000 → management (Plt concentrate เป็นตัวลวง)",
+    "Lye DC et al. ADEPT trial, Lancet 2017",
+    "แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยไข้เลือดออก กรมการแพทย์ (ฉบับล่าสุด)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "B1.5.3(6)",
+    "2.1.58"
+   ],
+   "years": [
+    "30",
+    "33"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-08",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Platelet increment and refractoriness",
+   "stem": "A 40-year-old woman with three previous pregnancies and acute leukaemia receives one apheresis platelet unit for a count of 6,000/mm3. The 1-hour post-transfusion count is 9,000/mm3, and the same result follows a second fresh ABO-compatible unit. She has no fever, splenomegaly, bleeding or DIC. What is the most likely cause and the next step?",
+   "choices": [
+    "HLA alloimmunisation; test for HLA antibodies and give HLA-matched or crossmatch-compatible platelets",
+    "A normal response, since an apheresis unit is expected to raise the count by only about 3,000/mm3",
+    "Splenic sequestration; arrange splenectomy",
+    "Sepsis-related consumption; stop all further platelet transfusions",
+    "An expired product; simply transfuse two units at once in future"
+   ],
+   "answer": 0,
+   "explain": "**เกล็ดเลือดเพิ่มเท่าไรจึงปกติ**\n- **Apheresis 1 ถุง ≈ pooled 4–6 ยูนิต → เพิ่ม ~30,000–60,000/mm3**\n- Random donor 1 ยูนิต (จากเลือด 1 ถุง) เพิ่ม ~5,000–10,000/mm3 (ประมาณ 1 ยูนิต/10 kg)\n- ประเมินด้วย **corrected count increment (CCI)** = (เพิ่ม × BSA m²) ÷ จำนวนเกล็ดเลือดที่ให้ (× 10¹¹); **CCI 1 ชั่วโมง < 5,000–7,500 สองครั้งติดกัน = refractory**\n\n**แยกกลไก**\n| ชนิด | 1-hour increment | สาเหตุ |\n|---|---|---|\n| **Immune** | **ต่ำตั้งแต่ 1 ชม.** (ถูกทำลายทันที) | **anti-HLA class I** (ตั้งครรภ์, เคยรับเลือด), anti-HPA, ABO |\n| Non-immune | 1 ชม. พอใช้ แต่ **24 ชม. ต่ำ** | ไข้ sepsis DIC ม้ามโต ยา (amphotericin, vancomycin) เลือดออก |\n\nรายนี้ **ตั้งครรภ์ 3 ครั้ง + increment ต่ำตั้งแต่ 1 ชม. + ไม่มีปัจจัย non-immune** → alloimmunisation → ตรวจ HLA antibody และให้ **HLA-matched / crossmatched platelets**\n\n**การป้องกัน** — ใช้ **leukocyte-reduced** products ตั้งแต่ต้น (HLA อยู่บนเม็ดเลือดขาวที่ปนมา)",
+   "pearl": "Apheresis 1 ถุง ↑ 30–60k; 1-hr increment ต่ำซ้ำ = HLA alloimmunisation → HLA-matched platelets",
+   "ref": [
+    "AABB Clinical Practice Guideline: Platelet Transfusion (Ann Intern Med 2015; update 2025)",
+    "Stanworth SJ et al. Platelet refractoriness, Br J Haematol 2015"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "B2.3(10)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-09",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Indications for fresh frozen plasma",
+   "stem": "In which of the following patients is fresh frozen plasma (FFP) clearly indicated?",
+   "choices": [
+    "A septic patient with DIC who is oozing from line sites and bleeding from the gut, INR 2.3 and fibrinogen 170 mg/dL",
+    "A stable patient with INR 1.6 and no bleeding before ultrasound-guided central line insertion",
+    "A hypotensive patient who needs volume expansion after severe diarrhoea",
+    "A patient taking warfarin with INR 4.5 and no bleeding",
+    "A patient with nephrotic syndrome, serum albumin 2.0 g/dL and oedema"
+   ],
+   "answer": 0,
+   "explain": "**FFP คืออะไร** — พลาสมาที่แช่แข็งภายใน 6–8 ชม. หลังเจาะ มี **ปัจจัยการแข็งตัวทุกตัว (~1 IU/mL) รวม fibrinogen (~2–3 mg/mL)** ใช้แก้ **การขาดปัจจัยหลายตัวพร้อมกันในผู้ป่วยที่มีเลือดออก หรือกำลังจะทำหัตถการเสี่ยงสูง**\n\n**ขนาด** — **10–15 mL/kg** (ผู้ใหญ่ 60 kg ≈ 3–4 ยูนิต, ยูนิตละ ~200–250 mL) เพิ่มระดับปัจจัย ~15–20%\n\n**ตัวเลือกอื่น**\n- **INR 1.6 ก่อน CVC** — FFP เองมี INR ~1.1–1.3 แก้ INR ระดับนี้ไม่ได้, และ CVC ภายใต้ ultrasound เสี่ยงต่ำ → ไม่ให้ (AABB/BSH)\n- **ใช้เพิ่มปริมาตร** — ผิด ใช้ crystalloid; FFP เสี่ยง TRALI, TACO, ภูมิแพ้\n- **Warfarin INR 4.5 ไม่มีเลือดออก** — หยุด warfarin 1–2 มื้อ ± vitamin K กิน; ถ้ามีเลือดออกรุนแรงใช้ **PCC + vitamin K IV** ดีกว่า FFP\n- **Hypoalbuminaemia** — FFP ไม่ใช่แหล่งอัลบูมิน\n\n**ส่วน DIC** — ให้ FFP เฉพาะ **มีเลือดออกหรือต้องทำหัตถการ** ไม่ใช่ตามค่าแล็บอย่างเดียว ร่วมกับรักษาสาเหตุ (ถ้า fibrinogen < 150 เพิ่ม cryo)",
+   "pearl": "FFP 10–15 mL/kg ให้เมื่อ 'ขาดหลายปัจจัย + เลือดออก' — ไม่ใช่ volume expander, ไม่แก้ INR < 1.7",
+   "ref": [
+    "AABB / BSH guidelines on plasma transfusion (BSH 2018: Use of FFP, cryoprecipitate and PCC)",
+    "ISTH DIC guidance 2013/2023"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "B2.2.2(8)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-10",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Cryoprecipitate for hypofibrinogenaemia",
+   "stem": "A 38-year-old woman with newly diagnosed acute promyelocytic leukaemia has gum bleeding and haematuria. Platelets 35,000/mm3 (after one platelet dose), INR 1.6, fibrinogen 80 mg/dL. Which blood component best corrects her most dangerous coagulation abnormality?",
+   "choices": [
+    "Cryoprecipitate about 1 unit per 10 kg to raise fibrinogen above 150 mg/dL",
+    "Fresh frozen plasma 2 units",
+    "Intravenous vitamin K 10 mg",
+    "Further platelet transfusion only",
+    "Desmopressin 0.3 µg/kg"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — APL ปล่อย tissue factor และ annexin II → **DIC + hyperfibrinolysis** ทำให้ **fibrinogen ต่ำมาก** ซึ่งเป็นตัวกำหนดเลือดออกในสมองที่ทำให้เสียชีวิตตั้งแต่ช่วงแรก (ร่วมกับเริ่ม ATRA ทันที)\n\n**Cryoprecipitate** — ตะกอนที่ได้จากการละลาย FFP ที่ 1–6 °C ปริมาตรเล็ก (~15–20 mL/ยูนิต) แต่เข้มข้น\n| ใน 1 ยูนิต | ปริมาณ |\n|---|---|\n| **Fibrinogen** | **≥ 150 mg (~250 mg)** |\n| Factor VIII | ≥ 80 IU |\n| vWF, factor XIII, fibronectin | มี |\n\n- ข้อบ่งชี้หลัก: **fibrinogen < 150 mg/dL (< 100 ในบางแนวทาง; < 200 ในสูติกรรม) ร่วมกับเลือดออก**\n- ขนาด **1 ยูนิต/10 kg (ผู้ใหญ่ ~10 ยูนิต) เพิ่ม fibrinogen ~50–100 mg/dL**; ใน APL ตั้งเป้า **fibrinogen > 150, platelets > 30,000–50,000**\n\n**ตัวเลือกอื่น**\n- FFP 2 ยูนิต (~500 mL) ให้ fibrinogen เพียง ~1–1.5 g → เพิ่มไม่ถึง 30 mg/dL และเสี่ยงน้ำเกิน\n- Vitamin K — INR สูงจาก consumption ไม่ใช่ขาดวิตามิน K\n- เกล็ดเลือดอย่างเดียวไม่แก้ fibrinogen; DDAVP ไม่มีบทบาท",
+   "pearl": "Fibrinogen < 150 + เลือดออก → cryo 1 u/10 kg (~10 u ผู้ใหญ่) ↑ ~50–100 mg/dL",
+   "ref": [
+    "MED33 – (ข้อความโพยขาด) 'ภาพ… Management > ยาไม่ได้ ต้อง cryo'",
+    "BSH 2018: Use of FFP, cryoprecipitate and PCC",
+    "Sanz MA et al. ELN APL recommendations, Blood 2019"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "B2.2.2(8)"
+   ],
+   "years": [
+    "33"
+   ],
+   "note_img": "โพย MED33 ระบุว่ามีภาพประกอบในข้อนี้ (ข้อความในโพยขาดหาย อ่านเนื้อหาภาพไม่ได้) และคำตอบที่จดไว้คือ cryoprecipitate"
+  },
+  {
+   "id": "HE-TF-MCQ-11",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "ABO/Rh compatibility of components",
+   "stem": "Which statement about ABO and Rh D compatibility of blood components in adults is correct?",
+   "choices": [
+    "Cryoprecipitate may be given without regard to the recipient's ABO group",
+    "Group O plasma is the universal donor plasma",
+    "Platelets must always be ABO-identical, otherwise transfusion is contraindicated",
+    "An Rh D-negative woman of childbearing age may receive Rh D-positive platelets with no further action",
+    "Red cells for a patient with autoimmune haemolytic anaemia need not be Rh D-compatible"
+   ],
+   "answer": 0,
+   "explain": "**หลักคิด** — ถามเสมอว่า **\"แอนติบอดีของใคร ไปเจอแอนติเจนของใคร\"**\n| ส่วนประกอบ | สิ่งที่ต้องเข้ากัน | ผู้ให้สากล |\n|---|---|---|\n| **PRC** | **พลาสมาผู้รับ (anti-A/B) vs เม็ดเลือดแดงผู้ให้** | **O Rh-negative** |\n| **FFP** | **พลาสมาผู้ให้ vs เม็ดเลือดแดงผู้รับ** (กลับด้านกับ PRC) | **AB** (ไม่มี anti-A/B) |\n| **Platelets** | แนะนำ ABO-identical/compatible แต่ **ให้ต่างหมู่ได้เมื่อจำเป็น**; ระวังพลาสมาหมู่ O ที่มี anti-A titer สูงให้ผู้รับหมู่ A | AB plasma |\n| **Cryoprecipitate** | พลาสมาน้อยมาก (~15 mL/ยูนิต) → **ผู้ใหญ่ให้หมู่ใดก็ได้** (เด็กเล็กควรเข้ากัน) | — |\n\n**Rh D**\n- เกล็ดเลือดมีเม็ดเลือดแดงปนเล็กน้อย → **หญิง Rh D-negative ที่ยังตั้งครรภ์ได้ ถ้าได้ Rh-positive platelets ต้องให้ anti-D immunoglobulin** ป้องกัน HDFN ในอนาคต\n- **AIHA ยังต้องให้ ABO และ Rh D compatible** — แอนติบอดีตัวเองทำให้ crossmatch เข้ากันไม่ได้ทุกถุง แต่ไม่ได้ทำให้ละเลยการจับคู่ Rh\n\n**หมายเหตุโพย** — ตัวเลือกเดิม \"Platelet need not be Rh compatible\" ถูกเพียงบางส่วน (ต้องให้ anti-D ในหญิงวัยเจริญพันธุ์) จึงเขียนตัวเลือกใหม่ให้มีคำตอบเดียว",
+   "pearl": "PRC ผู้ให้สากล O-neg · พลาสมาผู้ให้สากล AB · Cryo ผู้ใหญ่ไม่ต้องดูหมู่ · Rh-neg หญิงได้ Rh+ platelets → anti-D",
+   "ref": [
+    "MED31 – Which of the following statements is True? (Cryo/FFP/Platelet/PRC in AIHA/Platelet Rh compatibility)",
+    "AABB Technical Manual 21e",
+    "คู่มือการใช้เลือด สภากาชาดไทย"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.3(10)",
+    "3.1.4",
+    "B2.4(1)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-12",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Emergency uncrossmatched red cells",
+   "stem": "A 24-year-old woman arrives in haemorrhagic shock after a motorcycle crash. BP 70/40 mmHg despite 1 L of crystalloid. Her blood group is unknown and a sample has just been sent to the blood bank. Red cells are needed immediately. Which product should be issued?",
+   "choices": [
+    "Group O Rh D-negative packed red cells, uncrossmatched",
+    "Group O Rh D-positive whole blood after a full crossmatch is completed",
+    "Group AB Rh D-positive packed red cells",
+    "Type-specific fully crossmatched red cells after waiting about 45 minutes",
+    "Group A Rh D-negative packed red cells, because group A is the commonest group in Thailand"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เม็ดเลือดแดง **หมู่ O ไม่มีแอนติเจน A และ B** จึงไม่ถูก anti-A/anti-B ในพลาสมาผู้รับทำลาย; **Rh D-negative** ป้องกันการสร้าง anti-D ในหญิงวัยเจริญพันธุ์ซึ่งจะทำให้เกิด **hemolytic disease of the fetus and newborn** ในครรภ์ต่อไป\n\n**ลำดับในภาวะฉุกเฉิน**\n1. **เจาะเลือดส่ง group & match ก่อนให้เลือดหมู่ O** (หลังให้แล้วการตรวจหมู่จะสับสน)\n2. ให้ **O (Rh-neg ในหญิง < 50 ปีหากมี; ชาย/หญิงสูงวัยใช้ O Rh-pos ได้เมื่อ O-neg ขาด)** — คนไทย Rh-negative มีเพียง ~0.3% จึงต้องบันทึกและติดตาม\n3. เมื่อรู้หมู่ (~5–10 นาที) เปลี่ยนเป็น **type-specific**; crossmatch เต็มรูปแบบใช้ ~30–45 นาที\n4. ถ้าเลือดออกต่อเนื่อง → เปิด **massive transfusion protocol**\n\n**ตัวเลือกอื่น**\n- รอ crossmatch / whole blood หลัง crossmatch — ช้าเกินไปในช็อก\n- AB เม็ดเลือดแดง — มีทั้ง A และ B antigen จะถูกทำลายถ้าผู้รับไม่ใช่ AB\n- หมู่ A — ไม่รู้หมู่ผู้ป่วย; และหมู่ที่พบบ่อยที่สุดในไทยคือ **O** (รองลงมา B)",
+   "pearl": "ฉุกเฉินไม่รู้หมู่: เจาะ G/M ก่อน แล้วให้ O (Rh-neg ในหญิงวัยเจริญพันธุ์) → เปลี่ยน type-specific เร็วที่สุด",
+   "ref": [
+    "AABB Technical Manual 21e – emergency release",
+    "Advanced Trauma Life Support (ATLS) 10e"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.3(10)",
+    "3.1.4",
+    "2.2.7"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-13",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Type and screen – meaning of a positive antibody screen",
+   "stem": "A 50-year-old woman with two previous pregnancies and a transfusion 5 years ago is scheduled for elective hysterectomy. The blood bank performs a type and screen: group B, Rh D-positive, antibody screen positive, identified as anti-Jka. What is the main implication?",
+   "choices": [
+    "Jk(a)-negative units must be found and crossmatched by the antiglobulin method before surgery, which takes extra time; she is also at risk of a delayed haemolytic reaction",
+    "The antibody screen detects anti-A and anti-B, so she must receive group O red cells",
+    "A positive screen means she has autoimmune haemolytic anaemia and needs steroids before surgery",
+    "There is no implication, because Kidd antibodies are clinically insignificant",
+    "Any group B unit can be issued after an immediate-spin crossmatch alone"
+   ],
+   "answer": 0,
+   "explain": "**แต่ละการตรวจคืออะไร**\n| การตรวจ | ทำอะไร |\n|---|---|\n| **Type** | ABO (forward + reverse grouping) + Rh D |\n| **Screen** | **Indirect antiglobulin test**: พลาสมาผู้ป่วย + reagent red cells หมู่ O ที่มีแอนติเจนสำคัญ → หา **unexpected alloantibodies** (Rh, Kell, **Kidd**, Duffy, MNS) ที่เกิดจาก **การตั้งครรภ์หรือการรับเลือด** |\n| **Crossmatch** | พลาสมาผู้ป่วย + เม็ดเลือดแดงจากถุงที่จะให้จริง |\n\n- **Screen ลบ** → ใช้ immediate-spin หรือ electronic crossmatch ได้ ออกเลือดเร็ว → ผ่าตัดที่ใช้เลือดน้อยจึงสั่งแค่ **type & screen** แทนการจองเลือดหลายถุง (MSBOS)\n- **Screen บวก** → ระบุแอนติบอดี → หา **ถุงที่ไม่มีแอนติเจนนั้น** + **AHG crossmatch** ซึ่ง **ใช้เวลานาน** ต้องสั่งล่วงหน้า\n\n**Anti-Jka (Kidd)** — ระดับมักลดจนตรวจไม่พบในอนาคต แต่กลับขึ้นเร็วเมื่อเจอแอนติเจนอีกครั้ง → **สาเหตุคลาสสิกของ delayed haemolytic transfusion reaction** ต้องบันทึกในบัตรผู้ป่วย\n\n**ตัวเลือกอื่น** — screen ไม่ได้ตรวจ anti-A/B (เป็น reverse grouping); ไม่ใช่ autoantibody; Kidd สำคัญทางคลินิก; immediate-spin ใช้ได้เฉพาะ screen ลบ",
+   "pearl": "Antibody screen = หา alloantibody จากการตั้งครรภ์/รับเลือด — บวกต้องหาถุง antigen-negative + AHG crossmatch (ช้า)",
+   "ref": [
+    "AABB Technical Manual 21e – pretransfusion testing",
+    "Harrison's 21e, Transfusion biology and therapy"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.3(10)",
+    "3.1.4"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-14",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Leukocyte-reduced red cells for chronic transfusion (thalassaemia)",
+   "stem": "A 16-year-old with β-thalassaemia/HbE disease is starting a regular transfusion programme every 4 weeks. Previous transfusions caused fever and chills each time. Which red cell product is most appropriate?",
+   "choices": [
+    "Leukocyte-reduced (leukocyte-poor/depleted) packed red cells",
+    "Whole blood",
+    "Washed red cells as the routine product for every transfusion",
+    "Irradiated red cells without leukoreduction",
+    "Fresh frozen plasma together with packed red cells"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เม็ดเลือดขาวผู้ให้ที่ปนในถุงก่อปัญหา 3 อย่าง\n1. **ปล่อย cytokines (IL-1, IL-6, TNF) ระหว่างเก็บ** และกระตุ้นแอนติบอดีของผู้รับ → **febrile non-haemolytic reaction**\n2. มี **HLA** → ผู้รับสร้าง anti-HLA → **platelet refractoriness**, ปลูกถ่ายไขกระดูกไม่ติด\n3. เป็นแหล่ง **CMV** (อยู่ในเม็ดเลือดขาว)\n\n**Leukoreduction** (filter ก่อนเก็บหรือข้างเตียง; < 5 × 10⁶ เม็ดเลือดขาว/ยูนิต) ลดทั้ง 3 ข้อ — แนวทางธาลัสซีเมียไทยแนะนำ **LPRC/LDPRC สำหรับผู้ป่วยที่ต้องรับเลือดประจำ**\n\n**ตัวเลือกอื่น**\n- **Whole blood** — เพิ่มปริมาตรและเม็ดเลือดขาว ไม่เหมาะกับการให้ประจำ\n- **Washed RBC** — ใช้เฉพาะ **IgA deficiency ที่มี anti-IgA, ภูมิแพ้รุนแรงซ้ำ, ความเสี่ยงโพแทสเซียมสูง** เสียเม็ดเลือดแดง ~10–20% และหมดอายุใน 24 ชม.\n- **Irradiated** — ป้องกัน **TA-GVHD** เท่านั้น ไม่ลดไข้\n- FFP ไม่มีข้อบ่งชี้\n\n**ผลระยะยาวที่ต้องเฝ้า** — **iron overload** (PRC 1 ยูนิตมีเหล็ก ~200–250 mg) → เริ่ม chelation เมื่อ **ferritin > 1,000 ng/mL หรือได้เลือด ~10–20 ยูนิต**; และ alloimmunisation (ควรจับคู่ Rh C/E, Kell ถ้าทำได้)",
+   "pearl": "รับเลือดประจำ (thal) → leukocyte-reduced PRC; washed = IgA def/แพ้รุนแรง; irradiated = กัน TA-GVHD",
+   "ref": [
+    "MED31 – พ่อแม่เป็น thalassemia → Leukocyte depleted RBC",
+    "MED33 – หญิง anemia management มีช้อย Leukocyte poor RBC",
+    "TIF Guidelines for the management of transfusion-dependent thalassaemia, 4th ed. 2021",
+    "แนวทางการวินิจฉัยและรักษาโรคธาลัสซีเมีย (ประเทศไทย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.3.3(8)"
+   ],
+   "years": [
+    "31",
+    "33"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-15",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Irradiated components – directed donation and TA-GVHD",
+   "stem": "A 58-year-old man needs red cell transfusion and his brother volunteers to donate blood directly for him. Which product modification is mandatory for this directed donation?",
+   "choices": [
+    "Gamma or X-ray irradiation of the unit to prevent transfusion-associated graft-versus-host disease",
+    "Washing of the red cells to remove plasma proteins",
+    "Leukoreduction alone, which reliably prevents graft-versus-host disease",
+    "Volume reduction to prevent circulatory overload",
+    "Selection of a CMV-seronegative donor only"
+   ],
+   "answer": 0,
+   "explain": "**กลไก TA-GVHD** — T lymphocyte ของผู้ให้ที่ยังมีชีวิต **เข้าไปฝังตัวและโจมตีเนื้อเยื่อผู้รับ** เกิดได้เมื่อผู้รับ **ไม่สามารถกำจัดลิมโฟไซต์แปลกปลอม**\n1. **ภูมิคุ้มกันบกพร่องรุนแรง** — ปลูกถ่ายไขกระดูก, Hodgkin lymphoma, ยา purine analogue (fludarabine, cladribine), ATG, ภูมิคุ้มกันบกพร่องแต่กำเนิด, ทารกในครรภ์/คลอดก่อนกำหนด\n2. **HLA ใกล้กัน (one-way HLA match)** — ผู้ให้ **เป็นญาติสายตรง** หรือ HLA-matched platelets: ผู้ให้มี HLA haplotype แบบ homozygous ที่ผู้รับมีครึ่งหนึ่ง → ผู้รับมองเซลล์ผู้ให้ว่าเป็น \"ตัวเอง\" แต่ผู้ให้มองผู้รับว่าแปลก\n\n**อาการ** — 4–30 วันหลังรับเลือด: ไข้ ผื่น ท้องเสีย ตับอักเสบ และ **pancytopenia จากไขกระดูกฝ่อ** (ต่างจาก GVHD หลังปลูกถ่ายที่ไขกระดูกเป็นของผู้ให้) **อัตราตาย > 90%**\n\n**การป้องกัน** — **irradiation 25 Gy** ทำให้ลิมโฟไซต์แบ่งตัวไม่ได้; **leukoreduction ไม่เพียงพอ**\n\n**ตัวเลือกอื่น** — washed (IgA deficiency), volume reduction (TACO), CMV-negative (ป้องกัน CMV) ไม่ป้องกัน TA-GVHD",
+   "pearl": "เลือดจากญาติ/ปลูกถ่ายไขกระดูก/Hodgkin/fludarabine → irradiated เสมอ; TA-GVHD ตาย > 90%",
+   "ref": [
+    "BSH Guidelines on the use of irradiated blood components (2020)",
+    "AABB Technical Manual 21e"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-16",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Anaphylaxis with IgA deficiency – choosing future products",
+   "stem": "A 35-year-old man developed hypotension, stridor and wheeze within minutes of starting fresh frozen plasma; he recovered with intramuscular adrenaline. Serum IgA is undetectable and anti-IgA antibodies are present. He now needs red cells for a gastrointestinal bleed. Which product is most appropriate?",
+   "choices": [
+    "Washed packed red cells, or red cells from an IgA-deficient donor",
+    "Standard packed red cells with chlorpheniramine premedication alone",
+    "Irradiated packed red cells",
+    "Fresh whole blood",
+    "Leukocyte-reduced packed red cells"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ผู้ที่ **ขาด IgA อย่างสมบูรณ์** บางรายสร้าง **anti-IgA (class-specific IgG/IgE)** เมื่อได้พลาสมาที่มี IgA จากผู้ให้ → antigen–antibody complex กระตุ้น complement/mast cell → **anaphylaxis ภายในไม่กี่นาที** (ไม่มีไข้ ต่างจาก AHTR)\n\n**การรักษาเฉียบพลัน** — หยุดเลือด, **adrenaline 0.5 mg IM** (0.01 mg/kg) ซ้ำได้ทุก 5–15 นาที, ออกซิเจน, สารน้ำ, antihistamine/steroid เป็นยาเสริม\n\n**ครั้งต่อไป**\n- **PRC/platelets → washed** (ล้างเอาพลาสมาออก > 98%)\n- **พลาสมา → จากผู้บริจาคที่ขาด IgA** (มีทะเบียนผู้บริจาคเฉพาะ)\n\n**ตัวเลือกอื่น**\n- Premedication ด้วย antihistamine **ไม่ป้องกัน anaphylaxis** (ช่วยได้แค่ผื่นลมพิษ)\n- Irradiation (ป้องกัน TA-GVHD), leukoreduction (ลดไข้/HLA) ไม่ลดปริมาณ IgA ในพลาสมา\n- Whole blood มีพลาสมามากที่สุด อันตรายที่สุด",
+   "pearl": "Anaphylaxis จาก anti-IgA → adrenaline IM; ครั้งต่อไปใช้ washed RBC/IgA-deficient plasma",
+   "ref": [
+    "AABB Technical Manual 21e – allergic and anaphylactic reactions",
+    "BSH Guideline on the investigation and management of acute transfusion reactions (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.2.7"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-17",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Mild allergic (urticarial) transfusion reaction",
+   "stem": "Fifteen minutes into a unit of packed red cells, a 45-year-old woman develops itchy urticarial wheals on her chest and arms. Temperature 37.0 °C, BP 126/78 mmHg, pulse 88/min, SpO2 98%; no wheeze, stridor or lip swelling. Which is the most appropriate management?",
+   "choices": [
+    "Pause the transfusion, give an H1 antihistamine, and resume the same unit slowly once the rash resolves",
+    "Stop the transfusion permanently, send a full haemolysis work-up and start forced diuresis",
+    "Give intramuscular adrenaline 0.5 mg immediately",
+    "Give intravenous furosemide",
+    "Continue at the same rate, as this is a delayed reaction that needs no treatment"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **type I hypersensitivity** ต่อโปรตีนในพลาสมาของผู้ให้ (IgE บน mast cell ของผู้รับ) → histamine → ลมพิษ คัน; พบบ่อย 1–3%\n\n**เป็นปฏิกิริยาชนิดเดียวที่ \"ให้ถุงเดิมต่อได้\"** เมื่อ\n- มีเพียง **ผื่นผิวหนัง** ไม่มีไข้ ความดันปกติ ไม่มีอาการทางเดินหายใจ\n- ให้ antihistamine (เช่น chlorpheniramine 10 mg IV) แล้ว **ผื่นหายจึงให้ต่อช้า ๆ** ภายในกรอบ 4 ชม.\n\n**จังหวะเวลา** — ปฏิกิริยา **acute = ภายใน 24 ชม.** (รายนี้ 15 นาที); delayed = หลัง 24 ชม. (DHTR, TA-GVHD, **post-transfusion purpura** ซึ่งเป็นเกล็ดเลือดต่ำ 5–12 วันหลังรับเลือดจาก anti-HPA-1a — ไม่ใช่ผื่นลมพิษ)\n\n**ตัวเลือกอื่น**\n- หยุดถาวร + haemolysis work-up — ทำเมื่อมีไข้ ความดันตก ปวดหลัง ปัสสาวะแดง\n- Adrenaline — สำหรับ anaphylaxis (หายใจลำบาก ความดันตก บวมทางเดินหายใจ)\n- Furosemide — สำหรับ TACO\n- \"Delayed reaction\" — ผิดเรื่องเวลา และต้องหยุดชั่วคราวก่อนเสมอ",
+   "pearl": "ลมพิษอย่างเดียว V/S ปกติ = หยุดชั่วคราว + antihistamine → หายแล้วให้ถุงเดิมต่อได้ (ข้อยกเว้นเดียว)",
+   "ref": [
+    "MED33 – Blood transfusion ทำไป 15 นาทีเกิดผื่นขึ้น (delay, acute, allergy, purpura) → allergic",
+    "BSH Guideline on acute transfusion reactions (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "B2.2.2(4)"
+   ],
+   "years": [
+    "33"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-18",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Fever during transfusion – FNHTR is a diagnosis of exclusion",
+   "stem": "Two hours into a unit of non-leukoreduced packed red cells, a 62-year-old man with myelodysplastic syndrome develops chills and a temperature of 38.4 °C (from 37.0 °C). BP 128/76 mmHg, pulse 98/min; no back pain, no dyspnoea, urine normal in colour. Which statement about management is correct?",
+   "choices": [
+    "Stop the transfusion, recheck identification, send the bag and post-transfusion samples (DAT, haemolysis tests, ± bag culture) and give paracetamol; febrile non-haemolytic reaction is a diagnosis of exclusion",
+    "Slow the rate and continue, because fever without hypotension is always benign",
+    "Give hydrocortisone and continue the same unit at full speed",
+    "Give furosemide, because fever indicates circulatory overload",
+    "Start fresh frozen plasma, because fever indicates a coagulopathy"
+   ],
+   "answer": 0,
+   "explain": "**กลไก FNHTR** — **cytokines ที่สะสมจากเม็ดเลือดขาวผู้ให้ระหว่างเก็บ** หรือ **anti-HLA ของผู้รับจับเม็ดเลือดขาวผู้ให้** → ไข้ ≥ 38 °C และเพิ่ม ≥ 1 °C, หนาวสั่น ภายใน 4 ชม. โดยไม่มีอาการอื่น\n\n**ทำไมต้องหยุดก่อน** — ไข้อาจเป็น **อาการแรกของ AHTR หรือ bacterial contamination** ซึ่งอันตรายถึงชีวิต จึงต้อง\n1. หยุดเลือด เปิดเส้นด้วย NSS\n2. **ตรวจชื่อ–หมู่เลือดที่ป้ายถุงกับข้อมือผู้ป่วย**\n3. ส่ง **ถุงเลือด + เลือดผู้ป่วย** ไปธนาคารเลือด: DAT, ตรวจหมู่ซ้ำ, Hb/LDH/bilirubin, UA; ถ้าไข้สูง/ความดันตก → **culture ถุงและเลือด**\n4. ให้ paracetamol\n5. ถ้าผลไม่พบการแตกหรือการติดเชื้อ → สรุปเป็น FNHTR (ส่วนใหญ่ **ไม่ให้ถุงเดิมต่อ**)\n\n**การป้องกันครั้งต่อไป** — **leukocyte-reduced products**; premedication ด้วย paracetamol ไม่ได้ลดอุบัติการณ์อย่างชัดเจน\n\n**ถ้าไข้ + ปวดหลัง/เอว** (เช่นในโพย MED35) ให้คิด **acute haemolytic reaction** ก่อนเสมอ\n\n**ตัวเลือกอื่น** — ให้ต่อ/ให้เร็วขึ้นอาจพลาด AHTR/sepsis; furosemide สำหรับ TACO; FFP ไม่เกี่ยว",
+   "pearl": "ไข้ระหว่างให้เลือด: หยุด → เช็กชื่อ → DAT/culture → paracetamol; FNHTR วินิจฉัยหลังตัด AHTR/sepsis",
+   "ref": [
+    "MED34 – ให้เลือดแล้วมีไข้ ไม่มี dark urine → Febrile non hemolytic transfusion reaction",
+    "MED35 – ให้เลือดแล้วมีไข้ + ปวดหลัง (FNHTR / febrile hemolytic / TRALI / TACO)",
+    "BSH Guideline on acute transfusion reactions (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "B2.2.2(4)"
+   ],
+   "years": [
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-19",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Suspected acute haemolytic reaction – the first action",
+   "stem": "A 40-year-old woman in the emergency department after a car crash is receiving her first unit of packed red cells. Shortly after it starts she develops chills, high fever, hypotension, muscle cramps and anuria. What is the most appropriate FIRST action?",
+   "choices": [
+    "Stop the transfusion immediately and keep the vein open with 0.9% saline through a new giving set",
+    "Notify the blood bank and wait for its instructions before doing anything else",
+    "Start intravenous broad-spectrum antibiotics",
+    "Recheck the patient's identity against the bag label while the transfusion continues",
+    "Give intravenous chlorpheniramine and continue at a slower rate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ส่วนใหญ่เป็น **ABO incompatibility** จาก **ความผิดพลาดในการระบุตัวผู้ป่วย** (เจาะเลือดผิดคน ติดป้ายผิด ให้เลือดผิดเตียง) → anti-A/anti-B (IgM) จับเม็ดเลือดแดงผู้ให้ → **complement ทำลายในหลอดเลือด** → hemoglobinaemia, cytokine storm (ไข้ ความดันตก), **DIC** และ **ไตวายเฉียบพลัน** — ความรุนแรงแปรตาม **ปริมาณเลือดที่เข้าไป** จึงต้องหยุดเป็นอย่างแรก\n\n**ลำดับที่ถูกต้อง**\n1. **หยุดเลือดทันที** เก็บถุงและสายไว้ (ห้ามทิ้ง)\n2. เปิดเส้นด้วย **NSS ผ่านชุดสายใหม่** ประคองความดัน ให้ **ปัสสาวะ > 1 mL/kg/ชม.** (± furosemide เมื่อสารน้ำพอ)\n3. **ตรวจชื่อ/HN/หมู่เลือด ป้ายถุงเทียบข้อมือ** และ **ค้นหาผู้ป่วยอีกรายที่อาจได้เลือดสลับกัน**\n4. **แจ้งธนาคารเลือด** ส่งถุง + เลือดผู้ป่วย: DAT, ตรวจหมู่ซ้ำ, CBC, LDH, bilirubin, haptoglobin, coagulation (DIC), BUN/Cr, K, UA (hemoglobinuria)\n5. ถ้าแยก **septic reaction** ไม่ได้ → culture และให้ยาปฏิชีวนะ\n\n**การป้องกันที่สำคัญที่สุด** — **bedside check โดยบุคลากร 2 คน ใช้ตัวบ่งชี้ ≥ 2 อย่าง (ชื่อ–สกุล + HN/วันเกิด) เทียบข้อมือ ใบขอเลือด และป้ายถุง ณ ข้างเตียง**\n\n**ตัวเลือกอื่น** — ทุกข้อเป็นขั้นตอนที่ควรทำ แต่ **ทำหลังหยุดเลือด**; การให้ต่อระหว่างตรวจหรือให้ antihistamine แล้วให้ต่อเป็นอันตราย",
+   "pearl": "สงสัย AHTR: 'หยุดเลือดก่อนเสมอ' → NSS สายใหม่ → เช็กชื่อ (หาผู้ป่วยที่สลับ) → แจ้ง blood bank",
+   "ref": [
+    "MED28 – Car accident, PRC 1 unit → chill, high-grade fever, hypotension, anuria, muscle cramp → Stop transfusion",
+    "MED30 – (โพย) ให้เลือด… → stop transfusion",
+    "BSH Guideline on acute transfusion reactions (2023)",
+    "SHOT Annual Report – ABO-incompatible transfusions"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "B2.2.2(4)"
+   ],
+   "years": [
+    "28",
+    "30"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-20",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Transfusion-associated circulatory overload – treatment and prevention",
+   "stem": "An 80-year-old woman with heart failure (LVEF 30%) and chronic anaemia (Hb 6.8 g/dL) receives 2 units of packed red cells over 3 hours. Near the end she becomes breathless: BP 178/96 mmHg, pulse 112/min, raised JVP, bilateral crackles, SpO2 88%; chest X-ray shows cardiomegaly with bilateral perihilar opacities; NT-proBNP is markedly raised. After stopping the transfusion and giving oxygen, what is the most appropriate next treatment?",
+   "choices": [
+    "Intravenous furosemide with the patient sitting upright",
+    "An intravenous 0.9% saline bolus of 500 mL",
+    "Intravenous hydrocortisone and chlorpheniramine",
+    "Restart the transfusion at a faster rate to finish the unit",
+    "Intravenous antibiotics for presumed bacterial contamination"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **น้ำเกินแบบ hydrostatic**: ปริมาตรเลือดที่เข้าเร็วเกินกว่าหัวใจที่อ่อนแรงจะรับได้ → ความดันใน pulmonary capillary สูง → **pulmonary oedema** (เหมือน acute decompensated HF)\n\n**เบาะแส TACO** — ภายใน 12 ชม., **ความดันสูง, JVP สูง, หัวใจโต, BNP สูง, ตอบสนองต่อยาขับปัสสาวะ** (ต่างจาก TRALI ที่ความดันมักต่ำ JVP ไม่สูง ไข้ได้ และยาขับปัสสาวะทำให้แย่ลง)\n\n**การรักษา** — หยุดเลือด, นั่งตัวตรง, ออกซิเจน/NIV, **furosemide IV**\n\n**การป้องกัน (สำคัญในข้อสอบ)** — ผู้สูงอายุ, HF, CKD, hypoalbuminaemia, น้ำหนักตัวน้อย\n- ประเมินความเสี่ยงก่อนให้, **ให้ทีละ 1 ยูนิตแล้วประเมินซ้ำ**\n- อัตรา **~1 mL/kg/ชม.** และพิจารณา **furosemide ก่อน/ระหว่างยูนิต**\n- คำนวณขนาดตามน้ำหนัก (ผู้หญิงตัวเล็ก 1 ยูนิตอาจเพิ่ม Hb > 1 g/dL)\n\n**ตัวเลือกอื่น** — NSS เพิ่มน้ำ; antihistamine/steroid สำหรับภูมิแพ้; ให้เร็วขึ้นทำให้แย่ลง; antibiotics สำหรับ septic reaction (ไข้สูง ความดันตก)",
+   "pearl": "TACO = ความดันสูง JVP สูง BNP สูง → furosemide; ป้องกันด้วย 1 ยูนิต ช้า ~1 mL/kg/ชม.",
+   "ref": [
+    "MED34 – คนไข้ HF and chronic anemia ให้เลือดแล้วเหนื่อย mx? → Diuretics",
+    "MED35 – ให้เลือดแล้ว volume overload, CXR pulmonary edema → TACO",
+    "ISBT 2018 revised surveillance definition of TACO",
+    "BSH Guideline on acute transfusion reactions (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "2.2.5",
+    "B2.2.2(4)"
+   ],
+   "years": [
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-21",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Delayed haemolytic transfusion reaction",
+   "stem": "A 32-year-old woman with three previous pregnancies received 2 units of packed red cells for a postpartum haemorrhage. Eight days later she has fever, jaundice and fatigue. Haemoglobin has fallen from 10.2 to 7.9 g/dL; indirect bilirubin 3.6 mg/dL, LDH raised, spherocytes on the smear. The direct antiglobulin test is now positive (IgG) and a new anti-Jka is identified. Which is the most likely diagnosis?",
+   "choices": [
+    "Delayed haemolytic transfusion reaction due to an anamnestic alloantibody response",
+    "Acute haemolytic transfusion reaction due to ABO incompatibility",
+    "Post-transfusion purpura",
+    "Transfusion-associated graft-versus-host disease",
+    "Warm autoimmune haemolytic anaemia unrelated to the transfusion"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ผู้ป่วยเคยถูกกระตุ้น (ตั้งครรภ์/รับเลือด) จนมี alloantibody แต่ **ระดับต่ำจน antibody screen ตรวจไม่พบ** เมื่อได้เม็ดเลือดแดงที่มีแอนติเจนนั้นอีก → **anamnestic (secondary) IgG response ภายใน 3–14 วัน** → เม็ดเลือดแดงผู้ให้ถูกจับและทำลาย **นอกหลอดเลือดที่ม้าม** → Hb ลด, ดีซ่าน, spherocytes, **DAT บวก + พบแอนติบอดีตัวใหม่** (Kidd, Rh, Kell, Duffy)\n\n**การดูแล** — ส่วนใหญ่ประคับประคอง, ติดตาม Hb/ไต; ถ้าต้องให้เลือดอีกใช้ **ถุงที่ไม่มีแอนติเจน (Jk(a)-negative)**; **ออกบัตรประจำตัวแอนติบอดี** แจ้งทุกโรงพยาบาล\n\n**ตัวเลือกอื่น**\n| ภาวะ | จุดแยก |\n|---|---|\n| AHTR | เกิด **ภายในนาที–ชั่วโมง** มี hemoglobinuria ความดันตก |\n| Post-transfusion purpura | **เกล็ดเลือด** ต่ำรุนแรง 5–12 วัน (anti-HPA-1a) ไม่ใช่ Hb ลด; รักษาด้วย IVIG |\n| TA-GVHD | ผื่น ท้องเสีย ตับอักเสบ **pancytopenia** |\n| Warm AIHA | autoantibody ทำปฏิกิริยากับ **เม็ดเลือดแดงทุกถุง (panreactive)** ไม่ใช่แอนติบอดีจำเพาะตัวใหม่หลังรับเลือด |",
+   "pearl": "Hb ลด + ดีซ่าน + DAT บวก 3–14 วันหลังรับเลือด + alloantibody ใหม่ (Kidd) = DHTR",
+   "ref": [
+    "AABB Technical Manual 21e – delayed hemolytic reactions",
+    "Harrison's 21e, Transfusion biology and therapy"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "B2.2.2(4)"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-22",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Citrate toxicity in massive transfusion",
+   "stem": "During massive transfusion for a ruptured abdominal aortic aneurysm, a patient who has received 14 units of packed red cells and 10 units of plasma within 2 hours develops perioral tingling, a prolonged QT interval and worsening hypotension despite ongoing transfusion. Which electrolyte has most likely fallen because of the citrate in the blood products?",
+   "choices": [
+    "Ionised calcium",
+    "Phosphate",
+    "Sodium",
+    "Potassium",
+    "Chloride"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ถุงเลือดใช้ **citrate (CPD/CPDA-1)** เป็นสารกันเลือดแข็งโดย **จับแคลเซียมและแมกนีเซียม** ปกติตับเผาผลาญ citrate ได้เร็ว แต่เมื่อ **ให้เร็วมาก (> 1 ยูนิตทุก 5 นาที) ร่วมกับช็อก อุณหภูมิต่ำ หรือโรคตับ** citrate จะสะสม → **ionised Ca ต่ำ** (ค่า total Ca อาจปกติ)\n\n**ผล** — ชารอบปาก, ตะคริว, **QT ยาว**, กล้ามเนื้อหัวใจบีบตัวลด → **ความดันตกไม่ตอบสนองต่อการให้เลือด**, และ **การแข็งตัวของเลือดแย่ลง** (Ca คือ factor IV)\n\n**การดูแล** — ตรวจ **iCa ทุก 30–60 นาที** ระหว่าง MTP ตั้งเป้า **> 1.1 mmol/L**; ให้ **10% calcium chloride 10 mL IV** (หรือ 10% calcium gluconate 30 mL) ซ้ำตามค่า\n\n**ตัวเลือกอื่น**\n- **Potassium** — ช่วงแรก **สูง** (K รั่วจากเม็ดเลือดแดงเก่า/ฉายรังสี); ภายหลัง citrate ถูกเปลี่ยนเป็น bicarbonate → metabolic alkalosis → K อาจต่ำ แต่ไม่ใช่ผลตรงของ citrate\n- Phosphate, sodium, chloride ไม่ถูกจับโดย citrate (citrate ถูกเติมในรูป sodium citrate → Na อาจสูงเล็กน้อย)",
+   "pearl": "Massive transfusion → citrate จับ Ca → iCa ต่ำ (QT ยาว ความดันตก) → ให้ CaCl2 เป้า iCa > 1.1",
+   "ref": [
+    "MED31 – What electrolyte may fall in level as a result of citrate toxicity from massive blood transfusion?",
+    "MED31 – ให้เลือด hypoCa เกิดจาก → citrate",
+    "Sihler KC, Napolitano LM. Complications of massive transfusion. Chest 2010"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.2.47"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-23",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Massive transfusion – dilutional coagulopathy and the 1:1:1 approach",
+   "stem": "A 45-year-old man with massive upper gastrointestinal haemorrhage received 10 units of packed red cells plus 4 L of crystalloid over 3 hours, with no plasma or platelets. He now oozes from all puncture sites. Platelets 48,000/mm3, INR 2.1, fibrinogen 95 mg/dL, temperature 34.8 °C. Which is the best explanation and approach?",
+   "choices": [
+    "Dilutional coagulopathy worsened by hypothermia; give plasma, platelets and cryoprecipitate in a balanced (about 1:1:1) ratio with red cells and actively warm the patient",
+    "Heparin-induced thrombocytopenia; stop all heparin and start argatroban",
+    "Immune thrombocytopenia; give IVIG 1 g/kg",
+    "Vitamin K deficiency; give vitamin K 10 mg IV alone",
+    "Acute haemolytic transfusion reaction; give furosemide and more crystalloid"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — PRC ที่เก็บไว้ **แทบไม่มีเกล็ดเลือดและปัจจัยการแข็งตัว** + crystalloid ปริมาณมาก → **dilution** ของ fibrinogen (ตัวแรกที่ลดถึงระดับวิกฤต), ปัจจัยอื่น และเกล็ดเลือด; บวกกับ **lethal triad: hypothermia + acidosis + coagulopathy** (เอนไซม์การแข็งตัวทำงานช้าลง ~10% ต่อ 1 °C ที่ลดลง)\n\n**Massive transfusion** = PRC ≥ 10 ยูนิตใน 24 ชม. หรือ > 4 ยูนิตใน 1 ชม. หรือแทนที่ > 50% blood volume ใน 3 ชม.\n\n**การจัดการ (MTP)**\n| เป้าหมาย | วิธี |\n|---|---|\n| Ratio | **PRC : FFP : platelets ≈ 1:1:1** (PROPPR) แล้วปรับตามแล็บ/viscoelastic test |\n| Fibrinogen > 150 mg/dL | cryo ~10 ยูนิต |\n| Platelets > 50,000 (> 100,000 ถ้าสมอง) | platelet 1 dose |\n| **iCa > 1.1 mmol/L** | calcium (citrate) |\n| **อุณหภูมิ > 35 °C** | blood warmer, ผ้าห่มอุ่น |\n| K | ระวัง **hyperkalaemia** จากเลือดเก่า |\n| หยุดเลือดที่ต้นเหตุ | endoscopy/IR/ผ่าตัด |\n\nTXA: ช่วยใน trauma (CRASH-2, ภายใน 3 ชม.) แต่ **ไม่แนะนำใน GI bleed** (HALT-IT)\n\n**ตัวเลือกอื่น** — ไม่มีประวัติ heparin, ไม่ใช่ ITP, INR สูงจาก dilution ไม่ใช่ขาดวิตามิน K, ไม่มีลักษณะ hemolysis",
+   "pearl": "Massive transfusion: ให้ FFP:Plt:PRC ≈ 1:1:1 + cryo ถ้า fibrinogen < 150 + Ca + อุ่นร่างกาย",
+   "ref": [
+    "MED35 – ให้เลือดผ่าตัดแล้วเลือดออกเยอะ → dilutional coagulopathy จาก massive transfusion",
+    "Holcomb JB et al. PROPPR, JAMA 2015",
+    "HALT-IT Trial Collaborators, Lancet 2020",
+    "European guideline on management of major bleeding and coagulopathy following trauma (6th ed. 2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(1)",
+    "2.2.7",
+    "2.2.47"
+   ],
+   "years": [
+    "35"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-24",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Transfusion in warm autoimmune haemolytic anaemia – least-incompatible blood",
+   "stem": "A 60-year-old woman admitted with acute myocardial infarction has had anaemia and jaundice for 1 week. Hb 4 g/dL, Hct 12%, reticulocytes 20%, direct antiglobulin test 4+ (IgG); spherocytes and polychromasia on the smear. The blood bank reports that every crossmatch is incompatible because of a panreactive autoantibody. What is the most appropriate initial management?",
+   "choices": [
+    "Transfuse ABO/Rh D-matched 'least-incompatible' packed red cells slowly while starting corticosteroids",
+    "Withhold transfusion until a fully compatible unit can be found",
+    "Intravenous immunoglobulin alone as the initial treatment",
+    "Erythropoietin injection",
+    "Azathioprine alone"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — warm AIHA มี **IgG autoantibody ต่อแอนติเจนพื้นฐานบนเม็ดเลือดแดง (มักกลุ่ม Rh)** จึงทำปฏิกิริยากับ **เม็ดเลือดแดงทุกถุง** → crossmatch เข้ากันไม่ได้ทั้งหมด เม็ดเลือดแดงที่ให้จะถูกทำลาย **เร็วพอ ๆ กับของผู้ป่วยเอง** ไม่ใช่ทันทีแบบ ABO\n\n**ทำไมต้องให้** — Hb 4 + **acute MI** = ภาวะขาดออกซิเจนที่คุกคามชีวิต **ห้ามรอ crossmatch ที่เข้ากันได้ (ไม่มีวันได้)**\n\n**ทำอย่างไร**\n- ธนาคารเลือดทำ **adsorption** เพื่อหา **alloantibody ที่ซ่อนอยู่** (อันตรายจริง) แล้วเลือกถุงที่ ABO/Rh ตรงและ **ทำปฏิกิริยาน้อยที่สุด (least incompatible)**\n- ให้ **ช้า** เฝ้าระวังปฏิกิริยา ให้เท่าที่จำเป็นเพื่อแก้อาการ\n- เริ่ม **prednisolone 1 mg/kg/วัน** ทันที (± folic acid, ป้องกัน VTE)\n\n**ตัวเลือกอื่น**\n- IVIG — ได้ผลน้อยใน AIHA (ต่างจาก ITP) ไม่ใช่การรักษาเริ่มต้น\n- Erythropoietin ช้าและไม่แก้ hemolysis (reticulocyte สูงอยู่แล้ว)\n- Azathioprine/rituximab เป็นการรักษาลำดับถัดไป ออกฤทธิ์ช้า",
+   "pearl": "AIHA ซีดรุนแรง/มีอวัยวะขาดเลือด: อย่ารอ crossmatch — ให้ least-incompatible PRC ช้า ๆ + steroid",
+   "ref": [
+    "MED35 – 60 y AIHA + acute MI, Hb 4, DCT 4+ → Packed red cell transfusion",
+    "MED32 – Hb Hct ต่ำจัด direct Coombs 4+ ตอบ PRC หรือ IVIG",
+    "MED33 – Microspherocyte + polychromasia → least incompatible blood transfusion",
+    "Jäger U et al. Diagnosis and treatment of AIHA: First International Consensus Meeting, Blood Rev 2020"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(4)",
+    "B2.2.2(1)",
+    "B2.4(1)"
+   ],
+   "years": [
+    "32",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-TF-MCQ-25",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Septic transfusion reaction from platelets",
+   "stem": "Twenty minutes after starting a unit of pooled platelets stored at 22 °C for 5 days, a 50-year-old neutropenic patient develops rigors, temperature 39.8 °C (from 37.2 °C), BP 78/40 mmHg and pulse 136/min. There is no urticaria or wheeze. Besides stopping the transfusion and supporting the circulation, which action is most important?",
+   "choices": [
+    "Send the bag for Gram stain and culture, take blood cultures from the patient and start broad-spectrum intravenous antibiotics",
+    "Give paracetamol and restart the platelets once the fever settles",
+    "Give intramuscular adrenaline as the principal treatment",
+    "Give intravenous furosemide 40 mg",
+    "Give anti-D immunoglobulin"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เกล็ดเลือดต้อง **เก็บที่ 20–24 °C เขย่าตลอด อายุ 5 วัน** (ถ้าเย็นจะเสียหน้าที่) อุณหภูมินี้ **เหมาะกับแบคทีเรีย** ที่ติดมาจากผิวหนังผู้บริจาค (S. epidermidis, S. aureus) หรือ bacteraemia ชั่วคราว → endotoxin/เชื้อเข้ากระแสเลือดทันที\n\n- PRC เก็บ 1–6 °C จึงพบน้อยกว่า แต่เชื้อที่โตในที่เย็นได้ เช่น **Yersinia enterocolitica** (ชอบเหล็ก), Pseudomonas fluorescens\n\n**เบาะแส** — **ไข้สูงเพิ่ม ≥ 2 °C, หนาวสั่นรุนแรง, ความดันตก** ภายในไม่กี่นาที–ชั่วโมงแรก (FNHTR ไม่มีความดันตก; AHTR มี DAT บวก/hemoglobinuria; anaphylaxis ไม่มีไข้ มี wheeze/stridor)\n\n**การจัดการ** — หยุดเลือด, ประคองช็อก, **culture ถุง + เลือดผู้ป่วย**, **ยาปฏิชีวนะครอบคลุมกว้างทันที** (ผู้ป่วยนี้ neutropenic ยิ่งต้องรีบ), **แจ้งธนาคารเลือดเพื่อเก็บกัก co-components จากผู้บริจาครายเดียวกัน**\n\n**ตัวเลือกอื่น** — ให้ถุงเดิมต่อห้ามเด็ดขาด; adrenaline สำหรับ anaphylaxis; furosemide สำหรับ TACO; anti-D สำหรับหญิง Rh-negative ที่ได้ Rh-positive platelets",
+   "pearl": "ไข้สูง + ความดันตกทันทีหลังให้เกล็ดเลือด (เก็บ 22 °C) = septic reaction → culture ถุง + antibiotics",
+   "ref": [
+    "BSH Guideline on acute transfusion reactions (2023)",
+    "AABB Technical Manual 21e – bacterial contamination of platelets"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.21",
+    "2.2.48",
+    "B2.4(1)"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "HE-TF-MEQ-01",
+   "part": "MEQ",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Massive upper GI haemorrhage – emergency release, massive transfusion and its complications",
+   "vignette": "ผู้ป่วยชายไทยอายุ 58 ปี อาชีพขับรถรับจ้าง มาห้องฉุกเฉินด้วย **อาเจียนเป็นเลือดสด 3 ครั้งและถ่ายดำ 1 วัน** ก่อนมามีหน้ามืดเป็นลมในห้องน้ำ 1 ครั้ง\n\nU/D: ข้อเข่าเสื่อม **ซื้อยาแก้ปวดกลุ่ม NSAIDs กินเองทุกวัน 2 เดือน** · โรคหลอดเลือดหัวใจตีบ ทำ PCI เมื่อ 3 ปีก่อน กิน **aspirin 81 mg/วัน** · ไม่ดื่มสุรา ไม่มีประวัติโรคตับ\n\nPI: ไม่เคยได้รับเลือดมาก่อน ไม่ทราบหมู่เลือดของตนเอง\n\nV/S: BT 35.6 °C, PR 132/min, **BP 76/44 mmHg**, RR 26/min, SpO2 96% (room air)\n\nPE:\n- ซีดมาก มือเท้าเย็น ชื้น capillary refill 4 วินาที ซึมเล็กน้อยแต่ทำตามสั่งได้\n- ไม่มี stigmata of chronic liver disease · ตับม้ามไม่โต · ไม่มีน้ำในช่องท้อง\n- PR: melaena\n\nLab (แรกรับ): Hb 6.2 g/dL, Hct 19%, WBC 12,400/mm3, **platelet 210,000/mm3**, PT 12.5 s (INR 1.1), aPTT 30 s, BUN 58 mg/dL, Cr 1.3 mg/dL, Na 136, K 4.2 mmol/L\n\nหลังให้ crystalloid 2 L ความดันยังเป็น 80/46 mmHg และยังอาเจียนเป็นเลือดต่อเนื่อง",
+   "questions": [
+    {
+     "q": "1. จงเขียน problem list และ provisional diagnosis พร้อมประเมินความรุนแรงของการเสียเลือด",
+     "a": "**Problem list**\n1. **Haemorrhagic (hypovolaemic) shock** — BP 76/44, PR 132, มือเท้าเย็น, CRT 4 วินาที, ซึม\n2. **Acute upper GI bleeding** (hematemesis + melaena, **BUN/Cr สูง ~45** สนับสนุนเลือดออกส่วนบน)\n3. **Acute blood loss anaemia** (Hb 6.2)\n4. ใช้ **NSAIDs + aspirin** (ปัจจัยเสี่ยง peptic ulcer)\n5. **Coronary artery disease หลัง PCI** (เสี่ยงกล้ามเนื้อหัวใจขาดเลือดจากซีด/ช็อก และปัญหาการหยุด aspirin)\n6. Hypothermia 35.6 °C (เสี่ยง coagulopathy)\n\n**Provisional diagnosis** — **Bleeding peptic ulcer (NSAID/aspirin-induced) with haemorrhagic shock** (ATLS class III–IV: เสียเลือด > 30–40%)\n\n**DDx** — variceal bleeding (ไม่มีหลักฐานโรคตับ), Mallory-Weiss tear, gastric cancer, Dieulafoy lesion\n\n**ความรุนแรง** — Glasgow-Blatchford score สูงมาก (BUN สูง Hb ต่ำ ชีพจรเร็ว ความดันต่ำ เป็นลม) → **ต้องนอน ICU ได้ endoscopy ภายใน 24 ชม. (หลัง resuscitation ทันที)**\n\n**ตัวเลขที่ใช้ให้คะแนน** — ระบุช็อก (1), UGIB + สาเหตุ (1), anemia (0.5), ปัจจัยยา (0.5)"
+    },
+    {
+     "q": "2. ผู้ป่วยต้องได้รับเลือดทันทีแต่ยังไม่ทราบหมู่เลือด ท่านจะสั่งเลือดและส่งตรวจอย่างไร และเมื่อใดจึงจะ activate massive transfusion protocol (MTP) — ให้ระบุส่วนประกอบและสัดส่วน",
+     "a": "**ก่อนให้เลือด** — **เจาะเลือดส่ง group & crossmatch ก่อน** (ก่อนเลือดหมู่ O เข้าไปรบกวนการตรวจ) พร้อม CBC, PT/INR, aPTT, fibrinogen, BUN/Cr, electrolytes, **ionised Ca**, VBG/lactate, ติดป้ายหลอดที่ข้างเตียง\n\n**เลือดฉุกเฉิน**\n- ให้ **PRC หมู่ O (uncrossmatched) — ผู้ชายใช้ O Rh-positive ได้** (O-negative สงวนไว้สำหรับหญิงวัยเจริญพันธุ์)\n- เมื่อรู้หมู่ (~5–10 นาที) → **type-specific**; เมื่อ crossmatch เสร็จ → crossmatched blood\n- เปิด IV ขนาดใหญ่ 2 เส้น (16–18G), ใช้ **blood warmer**\n\n**Activate MTP เมื่อ** — ช็อกไม่ตอบสนองต่อ crystalloid + เลือดยังออก, คาดว่าจะใช้ PRC **> 4 ยูนิตใน 1 ชม.** หรือ ≥ 10 ยูนิตใน 24 ชม. (หรือ ABC score/shock index > 1)\n\n**ส่วนประกอบใน MTP (ต่อรอบ)**\n| ส่วนประกอบ | ขนาด |\n|---|---|\n| PRC | 4–6 ยูนิต |\n| FFP | 4–6 ยูนิต (**PRC:FFP ≈ 1:1 ถึง 1:2**) |\n| Platelets | 1 adult dose (pooled 4–6 ยูนิตหรือ apheresis 1 ถุง) ต่อ PRC ~6 ยูนิต |\n| Cryoprecipitate | 10 ยูนิต เมื่อ fibrinogen < 150 mg/dL |\n| Calcium | 10% CaCl2 10 mL ทุก ~4 ยูนิต หรือตาม iCa |\n\n**จำกัด crystalloid** (permissive: เป้า MAP ~65 จนกว่าจะหยุดเลือดได้ ยกเว้นมีปัญหาสมอง) และ **หยุดเลือดที่ต้นเหตุเร็วที่สุด** — IV PPI (pantoprazole 80 mg แล้ว 8 mg/ชม. หรือ 40 mg IV q12h), **endoscopy ทันทีหลัง resuscitation**, เตรียม IR/ผ่าตัดถ้าล้มเหลว\n\n**ไม่ให้ TXA** — HALT-IT trial พบว่าไม่ลดการตายใน GI bleed และเพิ่ม VTE"
+    },
+    {
+     "q": "3. สองชั่วโมงต่อมา ผู้ป่วยได้รับ PRC 12 ยูนิต, FFP 6 ยูนิต ยังไม่ได้รับเกล็ดเลือดหรือ cryo ผลตรวจ: BT 34.9 °C, iCa 0.82 mmol/L, K 6.1 mmol/L, pH 7.21, lactate 6, platelet 62,000/mm3, INR 1.9, fibrinogen 110 mg/dL, มีเลือดซึมจากจุดเจาะทุกจุด — จงระบุภาวะแทรกซ้อนแต่ละข้อ กลไก และการแก้ไข",
+     "a": "| ปัญหา | กลไก | การแก้ไข |\n|---|---|---|\n| **Hypocalcaemia (iCa 0.82)** | **citrate** ในถุงเลือดจับ Ca; ตับเผาผลาญช้าลงจากช็อก/อุณหภูมิต่ำ | **10% CaCl2 10 mL IV** (หรือ Ca gluconate 30 mL) ซ้ำจน **iCa > 1.1** ตรวจทุก 30–60 นาที |\n| **Hyperkalaemia (K 6.1)** | K รั่วจากเม็ดเลือดแดงที่เก็บนาน + acidosis + ไตขาดเลือด | EKG; **Ca gluconate/CaCl2** (ให้อยู่แล้ว), **insulin 10 U + glucose 25 g**, แก้ acidosis/ช็อก, ใช้เลือดที่สดกว่าถ้าได้ |\n| **Hypothermia (34.9 °C)** | เลือดจากตู้เย็น 4 °C + สารน้ำเย็น | **blood/fluid warmer, forced-air warming** เป้า > 35–36 °C |\n| **Acidosis (pH 7.21, lactate 6)** | hypoperfusion | หยุดเลือด + ฟื้นการไหลเวียน (ไม่ให้ bicarbonate เป็นหลัก) |\n| **Dilutional coagulopathy** (plt 62k, INR 1.9, fibrinogen 110) | PRC + crystalloid ไม่มีเกล็ดเลือด/ปัจจัย; ratio FFP ต่ำ | **cryo 10 ยูนิต** (fibrinogen > 150), **platelets 1 dose** (> 50,000), **FFP เพิ่มให้ใกล้ 1:1**, ตรวจซ้ำทุก 30–60 นาที หรือใช้ ROTEM/TEG |\n\n**หลัก** — lethal triad (hypothermia–acidosis–coagulopathy) เสริมกันเป็นวงจร ต้องแก้พร้อมกัน และ **หยุดเลือดที่ต้นเหตุ** (endoscopic therapy)\n\n**ภาวะแทรกซ้อนอื่นที่ต้องเฝ้า** — TACO/TRALI, hypomagnesaemia, ภายหลัง metabolic alkalosis + hypokalaemia (citrate → bicarbonate), transfusion reactions, infection"
+    },
+    {
+     "q": "4. หลังทำ endoscopic haemostasis สำเร็จ (Forrest Ia ulcer ที่ duodenum) ความดันคงที่ Hb 7.4 g/dL ในวันรุ่งขึ้น ท่านจะวางแผนการให้เลือดต่ออย่างไร และจะดูแลเรื่อง aspirin อย่างไร",
+     "a": "**เกณฑ์การให้เลือดหลังหยุดเลือดได้**\n- ผู้ป่วยมี **โรคหัวใจและหลอดเลือดเดิม** → AABB 2023 ใช้เกณฑ์ **Hb < 8 g/dL** (ถ้าไม่มีโรคหัวใจใช้ < 7)\n- Hb 7.4 → **ให้ PRC 1 ยูนิตแล้วประเมินซ้ำ** (อาการเจ็บอก, EKG, troponin, Hb) **ไม่ตั้งเป้าเกิน ~9–10** เพราะ liberal transfusion ในเลือดออกทางเดินอาหารเพิ่มการเลือดออกซ้ำ\n- ให้ **leukocyte-reduced PRC**, ตรวจ V/S ตามมาตรฐาน, ระวัง TACO (ให้ช้า ± furosemide)\n- เริ่ม **เหล็ก** หลังหยุดเลือด (IV iron ถ้าต้องการให้ Hb ขึ้นเร็ว)\n\n**Aspirin** — เป็น **secondary prevention หลัง PCI** การหยุดนานเพิ่มเสี่ยงหลอดเลือดหัวใจอุดตัน → **เริ่ม aspirin กลับภายใน 1–3 วัน (ไม่เกิน 5–7 วัน) เมื่อหยุดเลือดได้แล้ว** ร่วมกับ PPI ระยะยาว\n\n**ต่อเนื่อง** — **หยุด NSAIDs ถาวร** (ใช้ paracetamol/กายภาพบำบัด), ตรวจ **H. pylori** และรักษาถ้าพบ, IV PPI 72 ชม. แล้วเปลี่ยนเป็นยากิน, ส่องกล้องซ้ำตามข้อบ่งชี้"
+    },
+    {
+     "q": "5. ญาติถามว่า \"ทำไมผู้ป่วยต้องได้เลือดหมู่ O ทั้งที่ยังไม่ทราบหมู่เลือด แล้วจะปลอดภัยหรือไม่\" — จงอธิบายแก่ญาติ และบอกความเสี่ยงหลักของการรับเลือดปริมาณมากที่ทีมจะเฝ้าระวัง",
+     "a": "**คำอธิบายแก่ญาติ (ภาษาง่าย)**\n- \"ผู้ป่วยเสียเลือดมากจนความดันต่ำ **ถ้ารอผลเทียบเลือดซึ่งใช้เวลาราว 45 นาทีอาจไม่ทัน** หมอจึงให้เลือด **หมู่ O ซึ่งไม่มีสารที่ทำปฏิกิริยากับเลือดหมู่อื่น** จึงให้ได้กับทุกคนในภาวะฉุกเฉิน\"\n- \"หมอเจาะเลือดผู้ป่วยไปตรวจหมู่ก่อนแล้ว **เมื่อรู้ผลจะเปลี่ยนเป็นเลือดหมู่ตรงกันทันที**\"\n- \"เลือดทุกถุงผ่านการตรวจคัดกรองเชื้อ HIV ไวรัสตับอักเสบบี ซี และซิฟิลิสด้วยเทคนิคตรวจสารพันธุกรรม ความเสี่ยงติดเชื้อต่ำมาก\"\n\n**ความเสี่ยงที่ทีมเฝ้าระวัง**\n1. ปฏิกิริยาเฉียบพลัน — ไข้ หนาวสั่น ผื่น ความดันตก เหนื่อย (หยุดเลือดทันทีถ้ามี)\n2. **น้ำเกิน/น้ำท่วมปอด (TACO)** และปอดอักเสบเฉียบพลันจากเลือด (TRALI)\n3. **เกลือแร่ผิดปกติ** — แคลเซียมต่ำ โพแทสเซียมสูง; **อุณหภูมิกายต่ำ**\n4. **เลือดแข็งตัวผิดปกติจากการเจือจาง** — จึงต้องให้พลาสมา เกล็ดเลือด และ cryo ร่วมด้วย\n5. ระยะยาว — การสร้างแอนติบอดีต่อเม็ดเลือดแดง (DHTR) และการติดเชื้อ (น้อยมาก)\n\n**ขอความยินยอม** — ในภาวะคุกคามชีวิตให้เลือดก่อนได้ (implied consent) แล้วอธิบายและบันทึกภายหลัง"
+    }
+   ],
+   "ref": [
+    "MED34 – Ugib > resus แล้วทำอะไรต่อ > PRC",
+    "MED31 – citrate toxicity → calcium",
+    "MED35 – dilutional coagulopathy จาก massive transfusion",
+    "AABB International Guidelines: Red Blood Cell Transfusion (JAMA 2023)",
+    "Laine L et al. ACG Guideline: Upper GI and ulcer bleeding, Am J Gastroenterol 2021",
+    "HALT-IT Trial, Lancet 2020"
+   ],
+   "nl": [
+    "B2.4(1)",
+    "B2.3(10)",
+    "2.2.7",
+    "2.2.21"
+   ]
+  },
+  {
+   "id": "HE-TF-MEQ-02",
+   "part": "MEQ",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "Transfusion-dependent thalassaemia – transfusion plan, febrile reaction, delayed haemolysis and iron overload",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 19 ปี นักศึกษา มารับเลือดตามนัดที่หน่วยโลหิตวิทยา\n\nU/D: **β-thalassaemia/HbE** วินิจฉัยตั้งแต่อายุ 3 ปี รับเลือดทุก 4 สัปดาห์มาตลอด 8 ปี ครั้งละ 2 ยูนิต · ได้ยา deferiprone แต่ **กินไม่สม่ำเสมอเพราะคลื่นไส้** · ยังไม่ได้ตัดม้าม\n\nPI: 1 สัปดาห์ก่อนมีอาการเหนื่อยง่ายขึ้น ใจสั่น · รับเลือดครั้งก่อน ๆ **มีไข้หนาวสั่นบ่อย** · น้ำหนัก 45 kg สูง 152 cm · ประจำเดือนมาไม่สม่ำเสมอ\n\nV/S: BT 37.0 °C, PR 104/min, BP 108/64 mmHg, RR 20/min\n\nPE:\n- ซีดปานกลาง ตาเหลืองเล็กน้อย ผิวคล้ำ **thalassaemic facies**\n- **ตับโต 3 cm ใต้ชายโครง · ม้ามโต 6 cm ใต้ชายโครง**\n- หัวใจ: systolic ejection murmur grade 2/6 ไม่มีบวม JVP ไม่สูง\n\nLab: **Hb 6.9 g/dL**, MCV 64 fL, WBC 5,800/mm3, platelet 190,000/mm3, reticulocyte 3%\n**Serum ferritin 3,200 ng/mL**, ALT 68 U/L, FBS 112 mg/dL\nAntibody screen (ครั้งนี้): negative · บันทึกเดิม: ไม่เคยมี alloantibody",
+   "questions": [
+    {
+     "q": "1. จงเขียน problem list ของผู้ป่วยรายนี้",
+     "a": "1. **Transfusion-dependent β-thalassaemia/HbE** ที่มี **pre-transfusion Hb ต่ำกว่าเป้า (6.9 g/dL)** และอาการซีด\n2. **Transfusional iron overload** (ferritin 3,200) ร่วมกับ **chelation ไม่สม่ำเสมอ** (adherence/side effect)\n3. **ภาวะแทรกซ้อนจากเหล็กเกินที่ต้องประเมิน** — ตับ (ALT สูง, ตับโต), ต่อมไร้ท่อ (**ประจำเดือนผิดปกติ — hypogonadism**, FBS 112 — impaired fasting glucose), หัวใจ\n4. **Splenomegaly 6 cm** — อาจทำให้ความต้องการเลือดเพิ่ม (hypersplenism)\n5. **Recurrent febrile reactions** ระหว่างรับเลือด\n6. Extramedullary haematopoiesis/thalassaemic facies — สะท้อนการกดการสร้างเม็ดเลือดไม่พอ"
+    },
+    {
+     "q": "2. จงวางแผนการให้เลือดครั้งนี้: เป้าหมาย Hb, ชนิดของเลือด, ปริมาณ (คำนวณตามน้ำหนัก), อัตราการให้ และการตรวจก่อนให้เลือด",
+     "a": "**เป้าหมาย (TIF 2021)** — **pre-transfusion Hb 9.5–10.5 g/dL** (ให้ทุก 2–5 สัปดาห์) และ post-transfusion ไม่เกิน ~14 g/dL → กดการสร้างเม็ดเลือดที่ผิดปกติ ลดม้ามโต กระดูกผิดรูป และการดูดซึมเหล็ก\n\n**ชนิดเลือด** — **leukocyte-reduced PRC** (ป้องกัน FNHTR ที่เป็นซ้ำ, HLA alloimmunisation, CMV) และถ้าทำได้ **จับคู่ Rh (C, c, E, e) และ Kell** เพื่อลดการสร้าง alloantibody\n\n**ปริมาณ** — สูตร TIF: **mL = (Hb เป้า − Hb ปัจจุบัน) × น้ำหนัก (kg) × 3 ÷ Hct ของถุง (~0.6)** หรือหลักง่าย **10–15 mL/kg เพิ่ม Hb ~2–3 g/dL**\n- (10 − 6.9) × 45 × 3 ÷ 0.6 ≈ **700 mL ≈ PRC 2–3 ยูนิต** (เทียบ 15 mL/kg × 45 kg ≈ 675 mL) → ครั้งนี้ให้ **2 ยูนิต (Hb คาด ~9–10)** และปรับรอบนัดให้ถี่ขึ้น (เช่นทุก 3 สัปดาห์) เพื่อให้ pre-transfusion Hb ถึงเป้า\n\n**อัตรา** — 15 นาทีแรกช้าและเฝ้าดู แล้ว ~5 mL/kg/ชม. (ไม่มี HF); **แต่ละยูนิตต้องหมดภายใน 4 ชม.**; ผสมได้กับ NSS เท่านั้น\n\n**ก่อนให้** — type & screen ใหม่ (**ทุกครั้งภายใน 72 ชม. ในผู้ที่รับเลือดประจำ** เพราะอาจเกิด alloantibody ใหม่), crossmatch, ตรวจ ID 2 คนข้างเตียง, V/S baseline, บันทึกน้ำหนัก ปริมาณเลือดสะสมต่อปี"
+    },
+    {
+     "q": "3. ขณะให้ยูนิตที่ 2 ได้ 90 นาที ผู้ป่วยหนาวสั่น BT 38.6 °C, BP 110/66 mmHg, PR 110/min ไม่มีปวดหลัง ไม่มีผื่น SpO2 98% — จงบอกการวินิจฉัยแยกโรคและขั้นตอนที่ท่านจะทำตามลำดับ",
+     "a": "**DDx**\n1. **Febrile non-haemolytic transfusion reaction** (น่าจะเป็นมากที่สุด — ประวัติเดิม, V/S คงที่)\n2. **Acute haemolytic transfusion reaction** (ไข้อาจเป็นอาการแรก)\n3. **Bacterial contamination (septic reaction)**\n4. TRALI (ไข้ได้ แต่ SpO2 ปกติ — ไม่น่าใช่)\n\n**ขั้นตอน**\n1. **หยุดให้เลือดทันที** เปิดเส้นด้วย NSS (สายใหม่)\n2. **ตรวจ ID ผู้ป่วย–ป้ายถุง–ใบขอเลือด** ซ้ำ\n3. ประเมิน V/S, SpO2, ปัสสาวะ (สีแดง?)\n4. **แจ้งธนาคารเลือด ส่งถุงพร้อมชุดสาย + เลือดผู้ป่วย**: **DAT**, ตรวจหมู่ซ้ำ/crossmatch ซ้ำ, CBC, LDH, bilirubin, haptoglobin, UA หา hemoglobinuria; ถ้าไข้ ≥ 39 °C หรือความดันตก → **culture ถุงและเลือด**\n5. **Paracetamol** 500–1,000 mg\n6. ถ้าผลปกติและอาการดีขึ้น → สรุปเป็น **FNHTR**; **ไม่ให้ถุงเดิมต่อ**, รายงานอุบัติการณ์ (haemovigilance)\n\n**ป้องกันครั้งต่อไป** — ตรวจสอบว่าได้ **leukocyte-reduced (prestorage filtered)** จริง; premedication ไม่ได้ป้องกันอย่างชัดเจน"
+    },
+    {
+     "q": "4. 8 วันต่อมาผู้ป่วยกลับมาด้วยตาเหลืองมากขึ้น ปัสสาวะสีชา Hb 7.0 g/dL (หลังรับเลือดวัดได้ 9.8 g/dL), indirect bilirubin 5.2 mg/dL, LDH 780 U/L, DAT positive (IgG), antibody screen positive → anti-E — จงวินิจฉัยและอธิบายกลไก พร้อมการดูแล",
+     "a": "**วินิจฉัย** — **Delayed haemolytic transfusion reaction (DHTR) จาก anti-E alloantibody**\n\n**กลไก** — ผู้ป่วยรับเลือดซ้ำหลายครั้ง → **ถูกกระตุ้นด้วยแอนติเจน E** ที่ตัวเองไม่มี จนเกิด alloantibody แต่ระดับต่ำ ตรวจ screen ไม่พบก่อนให้เลือด → เมื่อได้เลือด E-positive อีก → **anamnestic IgG response ภายใน 3–14 วัน** → เม็ดเลือดแดงผู้ให้ถูกจับด้วย IgG และ **ถูกทำลายนอกหลอดเลือดที่ม้าม** → Hb ลดกลับ ดีซ่าน, DAT บวก\n\n(ในผู้ป่วยธาลัสซีเมียต้องระวัง **hyperhaemolysis** — Hb ลดต่ำกว่าก่อนให้เลือด เพราะเม็ดเลือดแดงของตัวเองถูกทำลายด้วย)\n\n**การดูแล**\n- ประคับประคอง, สารน้ำพอ, ติดตาม Hb, Cr, ปัสสาวะ\n- ถ้าต้องให้เลือด → **E-negative, crossmatch-compatible (AHG)** units\n- ถ้า hyperhaemolysis → หลีกเลี่ยงการให้เลือดถ้าทำได้, **IVIG + methylprednisolone**\n- **บันทึก anti-E ในระบบ + ออกบัตรแอนติบอดีให้ผู้ป่วยพกติดตัว**, ต่อไปใช้ **extended phenotype-matched (Rh C/c/E/e, Kell)** เสมอ"
+    },
+    {
+     "q": "5. จงประเมินและวางแผนจัดการภาวะเหล็กเกิน (ยา ขนาด การติดตามผลข้างเคียง) และให้คำแนะนำผู้ป่วยเรื่องการปฏิบัติตัว รวมทั้งข้อบ่งชี้การตัดม้าม",
+     "a": "**การประเมินเหล็กเกิน**\n- Ferritin ทุก 3 เดือน (ตอนนี้ 3,200 = สูงมาก)\n- **MRI T2\\*** หัวใจ (T2\\* < 20 ms = เหล็กในหัวใจ) และ **liver iron concentration (MRI R2/T2\\*)**\n- ต่อมไร้ท่อ: OGTT/FBS, LH/FSH/estradiol, TFT, Ca/PTH, vitamin D, BMD; echo/EKG\n\n**Chelation**\n| ยา | ขนาด | ผลข้างเคียงสำคัญ / การติดตาม |\n|---|---|---|\n| **Deferiprone** (กิน) | 75–100 mg/kg/วัน แบ่ง 3 ครั้ง | **agranulocytosis → CBC ทุกสัปดาห์**, คลื่นไส้, ปวดข้อ, ALT สูง; ดีต่อเหล็กในหัวใจ |\n| **Deferasirox** (กินวันละครั้ง) | 20–40 mg/kg/วัน (dispersible) / 14–28 mg/kg (film-coated) | **Cr สูง, ALT สูง, GI bleed** → Cr/ALT ทุกเดือน |\n| **Desferrioxamine** (SC/IV) | 20–60 mg/kg ทาง SC 8–12 ชม. 5–7 คืน/สัปดาห์ | ปฏิกิริยาที่ผิว, **การได้ยิน/การมองเห็น**, Yersinia |\n\nผู้ป่วยรายนี้: ferritin สูงและ adherence ไม่ดีเพราะคลื่นไส้ → **เปลี่ยนเป็น deferasirox film-coated วันละครั้ง** หรือ **combination** (deferiprone + desferrioxamine) ถ้า T2\\* หัวใจต่ำ; เป้า ferritin < 1,000\n\n**คำแนะนำ**\n- กินยาขับเหล็กสม่ำเสมอ อธิบายว่า **เหล็กเกินทำให้หัวใจวาย** ซึ่งเป็นสาเหตุตายอันดับหนึ่ง\n- **หลีกเลี่ยงยาบำรุงเลือดที่มีธาตุเหล็ก**, ให้ folic acid ได้, ชาช่วยลดการดูดซึมเหล็ก, หลีกเลี่ยง vitamin C ขนาดสูงนอกการดูแลแพทย์\n- มาตามนัดรับเลือด พกบัตรแอนติบอดี\n- ฉีดวัคซีนไวรัสตับอักเสบบี; คัดกรอง HBV/HCV/HIV ปีละครั้ง\n- **genetic counselling** — คู่สมรสควรตรวจคัดกรองธาลัสซีเมียก่อนมีบุตร\n\n**ข้อบ่งชี้ตัดม้าม** — ความต้องการเลือด **> 200–250 mL/kg/ปี** ของ PRC (หรือเพิ่ม ≥ 1.5 เท่า), hypersplenism (เกล็ดเลือด/เม็ดเลือดขาวต่ำ), ม้ามโตมากมีอาการ — ต้องให้ **วัคซีน pneumococcus, meningococcus, Hib ≥ 2 สัปดาห์ก่อนผ่าตัด** และระวัง thrombosis/infection หลังตัดม้าม (อายุ > 5 ปี)"
+    }
+   ],
+   "ref": [
+    "MED31 – พ่อแม่เป็น thalassemia → Leukocyte depleted RBC",
+    "TIF Guidelines for the management of transfusion-dependent thalassaemia, 4th ed. 2021",
+    "แนวทางการวินิจฉัยและรักษาโรคธาลัสซีเมีย (ประเทศไทย)",
+    "BSH Guideline on acute transfusion reactions (2023)"
+   ],
+   "nl": [
+    "2.3.3(8)",
+    "B2.4(1)",
+    "2.2.21",
+    "B2.3(10)"
+   ]
+  },
+  {
+   "id": "HE-TF-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "H05",
+   "lecture": "หัตถการ Blood transfusion (อ.ชัชวาล)",
+   "topic": "SAQ – การขอความยินยอมและการตรวจสอบข้างเตียงก่อนให้เลือด",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "instruction": "ผู้ป่วยหญิงไทยอายุ 66 ปี น้ำหนัก 52 kg ป่วยเป็น **myelodysplastic syndrome** รู้สึกเหนื่อยเวลาเดิน Hb 6.5 g/dL ไม่มีโรคหัวใจ แพทย์ประจำบ้านสั่ง **leukocyte-reduced PRC 1 ยูนิต** ท่านเป็นแพทย์เพิ่มพูนทักษะที่ต้องขอความยินยอมและเริ่มให้เลือด\n\n**คำถาม** (รวม 10 คะแนน)\n1. จงระบุหัวข้อที่ต้องอธิบายแก่ผู้ป่วยเพื่อขอ **informed consent** สำหรับการให้เลือด อย่างน้อย 5 หัวข้อ (3 คะแนน)\n2. จงระบุสิ่งที่ต้องตรวจสอบ **ข้างเตียงก่อนแทงสายเข้าถุงเลือด** อย่างน้อย 5 รายการ (3 คะแนน)\n3. จงระบุ **อัตราการให้ ระยะเวลาสูงสุด สารน้ำที่ใช้ร่วมได้ และจังหวะการวัดสัญญาณชีพ** (2 คะแนน)\n4. 10 นาทีหลังเริ่ม ผู้ป่วยบอกว่าปวดหลังและหนาวสั่น BP 92/50 mmHg — จงเขียน **3 สิ่งแรก** ที่ท่านต้องทำตามลำดับ (2 คะแนน)",
+   "answer": "**1. Informed consent (3 คะแนน — หัวข้อละ 0.5, สูงสุด 3)**\n- **เหตุผล/ข้อบ่งชี้** — ซีดมีอาการ Hb 6.5 ต่ำกว่าเกณฑ์ 7 g/dL\n- **สิ่งที่จะได้รับ** — เม็ดเลือดแดงเข้มข้นกรองเม็ดเลือดขาว 1 ถุง ใช้เวลา ~2–3 ชม., ประโยชน์ที่คาด (เหนื่อยน้อยลง Hb ขึ้น ~1 g/dL)\n- **ความเสี่ยงที่พบบ่อย** — ไข้ หนาวสั่น ผื่นคัน\n- **ความเสี่ยงที่รุนแรงแต่พบน้อย** — ปฏิกิริยาเม็ดเลือดแดงแตกจากหมู่ไม่เข้ากัน, แพ้รุนแรง, น้ำเกิน/น้ำท่วมปอด, ปอดอักเสบจากเลือด, การติดเชื้อ (ต่ำมาก เพราะคัดกรอง NAT)\n- **ทางเลือก** — ไม่ให้เลือดและติดตามอาการ, ยา (เช่น erythropoietin ตามข้อบ่งชี้) ซึ่งออกฤทธิ์ช้า\n- **ให้แจ้งทันทีถ้ามีอาการผิดปกติ** และ **สิทธิ์ปฏิเสธ** (เช่นความเชื่อทางศาสนา), เปิดโอกาสให้ถาม และลงนามในแบบฟอร์ม\n\n**2. Bedside check (3 คะแนน — ข้อละ 0.5, สูงสุด 3)**\n- ตรวจโดย **บุคลากร 2 คน ณ ข้างเตียง** ทันทีก่อนให้\n- **ถามให้ผู้ป่วยบอกชื่อ–นามสกุลและวันเกิดเอง** และตรวจกับ **ป้ายข้อมือ** (ตัวบ่งชี้ ≥ 2 อย่าง: ชื่อ-สกุล + HN)\n- เทียบ **ป้ายข้อมือ ↔ ใบรายงานผล crossmatch/ป้ายติดถุง ↔ คำสั่งแพทย์** ให้ตรงกันทุกจุด\n- **หมู่ ABO/Rh ของผู้ป่วยและของถุง**, **เลขที่ถุงเลือด** ตรงกับใบ crossmatch\n- **ชนิดเลือดตรงตามคำสั่ง** (LPRC), วันหมดอายุ, ความต้องการพิเศษ (irradiated ฯลฯ)\n- **สภาพถุง** — ไม่รั่ว ไม่มีก้อน ไม่มีฟองหรือสีผิดปกติ (สีม่วงคล้ำ/ฟองอาจบอกการปนเปื้อนเชื้อ)\n- **V/S baseline** (BT, PR, BP, RR, SpO2) ก่อนเริ่ม, ใบยินยอมลงนามแล้ว, IV patent (≥ 20G)\n\n**3. การให้ (2 คะแนน)**\n- **15 นาทีแรกช้า** (~1–2 mL/นาที) อยู่ดูผู้ป่วย แล้วเพิ่มได้; ผู้สูงอายุรายนี้ไม่มี HF ให้ ~1.5–2 ชม.; ถ้าเสี่ยง TACO ~1 mL/kg/ชม. (0.5)\n- **ให้หมดภายใน 4 ชม.** นับจากออกจากตู้เก็บ (0.5)\n- **ใช้ร่วมได้เฉพาะ 0.9% NaCl** — ห้าม RL, D5W, ยา (0.5)\n- **V/S ก่อนเริ่ม, ที่ 15 นาที, เมื่อให้เสร็จ** (และตามระเบียบเช่นทุกชั่วโมง) + เฝ้าระวังต่อ 24 ชม. (0.5)\n\n**4. ปวดหลัง หนาวสั่น ความดันตก — สงสัย AHTR (2 คะแนน)**\n1. **หยุดให้เลือดทันที** (เก็บถุงและสายไว้) (1)\n2. **เปิดเส้นด้วย NSS ผ่านสายใหม่** ประคองความดัน (0.5)\n3. **ตรวจ ID ผู้ป่วย–ถุงเลือดซ้ำ และแจ้งธนาคารเลือด** ส่งถุง + เลือด (DAT, หมู่ซ้ำ, hemolysis labs, coag) + ปัสสาวะ (0.5)\n\n*ไม่ให้คะแนน*: ให้ antihistamine แล้วให้ต่อ, ลดอัตราแล้วให้ต่อ",
+   "ref": [
+    "MED28 – PRC แล้วมีไข้ หนาวสั่น ความดันตก → Stop transfusion",
+    "BSH Guideline on the administration of blood components (2017) / SHOT",
+    "คู่มือการใช้เลือด สภากาชาดไทย",
+    "AABB Standards for Blood Banks and Transfusion Services"
+   ],
+   "nl": [
+    "B2.4(1)",
+    "B2.3(10)",
+    "3.1.4",
+    "2.2.21"
+   ]
+  }
+ ]
+}

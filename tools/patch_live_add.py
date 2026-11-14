@@ -77,6 +77,8 @@ def main(src, out, spec_path):
                 names.setdefault((s, q.get("lec")), q.get("lecture", ""))
         for g in v["old"]:
             names.setdefault((s, g["lec"]), g.get("lecture", ""))
+    for k, v in spec.get("names", {}).items():  # "set:lec" → ชื่อคาบ สำหรับคาบที่ยังไม่มีข้อในหน้าเว็บ
+        names.setdefault(tuple(k.split(":", 1)), v)
     for path in spec.get("old", []):
         for q in json.load(open(path, encoding="utf-8")):
             q = dict(q)

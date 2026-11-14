@@ -1,0 +1,893 @@
+{
+ "mcq": [
+  {
+   "id": "DE-INF-MCQ-01",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Non-bullous impetigo – limited lesions",
+   "stem": "A 6-year-old boy has had several mildly itchy lesions around his nostrils and mouth for 4 days. They began as small vesicles that ruptured quickly and are now covered with golden-yellow, 'honey-coloured' crusts on an erythematous base. There are four lesions, the largest 1.5 cm across. He is afebrile, has no lymphadenopathy and is otherwise well. Which is the most appropriate treatment?",
+   "choices": [
+    "Topical mupirocin 2% ointment twice daily for 5 days",
+    "Oral amoxicillin–clavulanate for 10 days",
+    "Topical aciclovir cream five times daily for 5 days",
+    "Topical clotrimazole cream twice daily for 2 weeks",
+    "Admission for intravenous cefazolin"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — impetigo เป็นการติดเชื้อชั้น **epidermis ตื้น ๆ ใต้ stratum corneum** เชื้อเข้าทางรอยถลอก/ยุงกัด/รอยเกา · ชนิด non-bullous (≈70%) เกิดจาก ***S. aureus*** เป็นหลัก และ ***Streptococcus pyogenes* (GAS)** · ตุ่มน้ำบางมากแตกเร็ว น้ำเหลืองแห้งเป็น **สะเก็ดสีน้ำผึ้ง (honey-crusted)** ที่รอบจมูก-ปาก\n\n**การรักษาตาม IDSA 2014**\n- **รอยโรคจำนวนน้อย/จำกัด → ยาทา mupirocin หรือ retapamulin 5 วัน** (ยาทาเข้าถึงชั้นตื้นได้ดีพอ ไม่ต้องรับผลข้างเคียงจากยากิน)\n- **รอยโรคจำนวนมาก หรือระบาดในบ้าน/โรงเรียน หรือเป็น ecthyma → ยากิน 7 วัน** เช่น cephalexin หรือ dicloxacillin (สงสัย MRSA → doxycycline/clindamycin/TMP-SMX)\n- ทำความสะอาดเอาสะเก็ดออก แยกของใช้ ตัดเล็บ\n\n**ทำไมข้ออื่นผิด**\n- **Amoxicillin–clavulanate กิน 10 วัน**: ได้ผลแต่เกินความจำเป็นสำหรับรอยโรค 4 จุดในเด็กที่ไม่มีไข้\n- **Acyclovir cream**: สำหรับ herpes labialis ซึ่งเป็นตุ่มน้ำเป็นกลุ่มบนฐานแดง ไม่ใช่สะเก็ดเหลือง\n- **Clotrimazole**: ยาเชื้อรา ไม่ครอบคลุมแบคทีเรีย\n- **IV cefazolin**: ใช้กับ cellulitis ที่มีอาการทั่วร่างกาย\n\n**จุดสอบ** — impetigo จาก GAS (nephritogenic strain) ตามด้วย **PSGN ได้ และยาปฏิชีวนะไม่ป้องกัน PSGN** (แต่ลดการแพร่เชื้อ) · impetigo ไม่ทำให้เกิด rheumatic fever",
+   "pearl": "Honey-crusted รอบปาก-จมูก = non-bullous impetigo · น้อยจุดทา mupirocin 5 วัน · หลายจุด/ระบาดใช้ยากิน",
+   "ref": [
+    "MED32 FA MCQ ข้อ 34 – Multiple small vesicle covers with honey-crust → impetigo",
+    "MED33 SAQ ข้อ 3 – Skin lesion รอบ ๆ ปากสีเหลือง (S. aureus?)",
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(9)",
+    "B4.2.2(4)"
+   ],
+   "years": [
+    "32",
+    "33"
+   ],
+   "note_img": "MED33 SAQ ข้อ 3: ให้รูปผื่นรอบปากที่มีสะเก็ดสีเหลือง (โพยไม่ได้บรรยายรายละเอียดเพิ่ม)"
+  },
+  {
+   "id": "DE-INF-MCQ-02",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Bullous impetigo – exfoliative toxin and desmoglein 1",
+   "stem": "A 4-year-old girl has several flaccid, thin-roofed bullae 1–2 cm around her mouth and on her neck. Some have ruptured, leaving shiny erosions rimmed by a thin collarette of scale and light-brown crust. She is afebrile, the surrounding skin is not tender and Nikolsky sign on normal-looking skin is negative. Which mechanism best explains the blisters?",
+   "choices": [
+    "Staphylococcal exfoliative toxin cleaving desmoglein 1 in the granular layer of the epidermis",
+    "IgG autoantibodies against desmoglein 3 causing suprabasal acantholysis",
+    "IgG autoantibodies against BP180 at the dermo-epidermal junction",
+    "Cytotoxic T-cell-mediated keratinocyte apoptosis with full-thickness epidermal necrosis",
+    "Viral cytopathic effect producing multinucleated giant keratinocytes"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ***S. aureus* phage group II** สร้าง **exfoliative toxin A/B (serine protease)** ซึ่งตัด **desmoglein 1** — desmoglein 1 อยู่มากใน **ชั้น granular** ของ epidermis → แยกชั้นตื้นมาก → ตุ่มน้ำ **หลวม (flaccid) ผนังบาง แตกง่าย** เหลือ erosion มีขุยเป็นวง (collarette)\n\n- **Bullous impetigo** = toxin ทำงาน **เฉพาะที่** (เชื้ออยู่ในตุ่มน้ำ → เพาะเชื้อจากน้ำในตุ่มได้)\n- **SSSS** = toxin ตัวเดียวกัน **เข้ากระแสเลือด** (เด็กเล็ก/ไตวาย ขับ toxin ไม่ได้) → ผิวลอกทั่วตัว **Nikolsky บวกบนผิวปกติ** ผิวเจ็บ มีไข้ เพาะเชื้อจากตุ่มมักไม่ขึ้น\n- เยื่อบุไม่เป็น เพราะเยื่อบุมี **desmoglein 3** ชดเชย\n\n**ทำไมข้ออื่นผิด**\n- **Anti-Dsg3** = pemphigus vulgaris (ผู้ใหญ่ มีแผลในปากเด่น)\n- **Anti-BP180** = bullous pemphigoid ตุ่มน้ำ **ตึง (tense)** ในผู้สูงอายุ แยกชั้นใต้ epidermis\n- **T-cell apoptosis เต็มความหนา** = SJS/TEN (มักจากยา มีเยื่อบุร่วม)\n- **Multinucleated giant cell** = HSV/VZV (ตุ่มน้ำเป็นกลุ่มบนฐานแดง)\n\nการรักษา: รอยโรคน้อยใช้ยาทา · มากใช้ **cephalexin/dicloxacillin** · SSSS ต้อง admit ให้ IV anti-staphylococcal",
+   "pearl": "ตุ่มน้ำหลวม + collarette ในเด็ก = bullous impetigo · exfoliative toxin ตัด Dsg1 (granular layer)",
+   "ref": [
+    "MED32 FA MCQ ข้อ 68 – ให้รูปเด็กมีแผลแถวปาก ถาม patho → S. aureus exfoliative toxin",
+    "MED35 สอบลงกองครั้งที่ 2 MCQ ข้อ 83 – ผื่นขึ้นหน้าก่อนตัว คล้าย bullous impetigo",
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(9)",
+    "B4.2.2(4)",
+    "2.3.12-3(12)"
+   ],
+   "years": [
+    "32",
+    "35"
+   ],
+   "note_img": "MED35 ข้อ 83: รูปใบหน้าเด็ก มีตุ่ม/แผลหลายจุด บางจุดมีสะเก็ด (ปิดตา) · MED32 ข้อ 68: รูปเด็กมีแผลรอบปาก (โพยเขียนว่า scabiasis แต่คำตอบคือ exfoliative toxin → น่าจะเป็น bullous impetigo)"
+  },
+  {
+   "id": "DE-INF-MCQ-03",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Scarlet fever – recognising the toxin-mediated exanthem",
+   "stem": "A 12-year-old boy has had fever and sore throat for 2 days. Today a diffuse erythematous rash appeared on his neck and trunk; it feels like fine sandpaper and forms red linear streaks in the antecubital fossae. He has circumoral pallor and a red tongue with prominent papillae. The tonsils are enlarged with exudate and anterior cervical nodes are tender. Which treatment is most appropriate?",
+   "choices": [
+    "Oral amoxicillin or penicillin V for 10 days",
+    "Symptomatic treatment only, since the illness is viral",
+    "Oral aciclovir for 7 days",
+    "Intravenous immunoglobulin with high-dose aspirin",
+    "Topical corticosteroid and oral antihistamine"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ***Streptococcus pyogenes* (GAS)** ในคอหอยที่ติด bacteriophage สร้าง **streptococcal pyrogenic exotoxin (SpeA/B/C)** ซึ่งเป็น **superantigen** → หลอดเลือดฝอยในผิวขยาย → ผื่นแดงเป็นตุ่มเล็กละเอียด **สากเหมือนกระดาษทราย** · เข้มขึ้นตามรอยพับ (**Pastia lines**) · **circumoral pallor** · **strawberry tongue** · ต่อมาลอกเป็นแผ่นที่มือเท้า\n\n**รักษา: penicillin V หรือ amoxicillin 10 วัน** (แพ้ penicillin: cephalexin หรือ azithromycin 5 วัน) — เป้าหมายหลักคือ **ป้องกัน acute rheumatic fever** และลดการแพร่เชื้อ\n\n**ทำไมข้ออื่นผิด**\n- **รักษาตามอาการ**: ผิด เพราะเป็นแบคทีเรีย ไม่รักษาเสี่ยง rheumatic fever/peritonsillar abscess\n- **Acyclovir**: สำหรับ HSV/VZV\n- **IVIG + aspirin**: Kawasaki disease — ไข้ ≥5 วัน ตาแดงไม่มีขี้ตา ปากแดงแตก มือเท้าบวม แต่ **ไม่มี exudative tonsillitis** และพบในเด็กเล็ก <5 ปี\n- **Steroid + antihistamine**: สำหรับ urticaria/drug eruption\n\n**เทียบ exanthem อื่น** — measles มี 3C + Koplik · rubella มีต่อมน้ำเหลืองหลังหู · dengue มีผื่น convalescent 'islands of white in a sea of red'",
+   "pearl": "Sandpaper rash + strawberry tongue + Pastia lines = scarlet fever → penicillin/amoxicillin 10 วัน",
+   "ref": [
+    "MED33 Spot diagnosis ข้อ 14 – Scarlet fever (ให้รูป)",
+    "IDSA GAS pharyngitis guideline 2012"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(23)",
+    "B4.2.2(7)",
+    "2.1.50"
+   ],
+   "years": [
+    "33"
+   ],
+   "note_img": "MED33 spot diagnosis: ให้รูปผื่น scarlet fever (โพยระบุแค่ชื่อโรค ไม่ได้บรรยายภาพ)"
+  },
+  {
+   "id": "DE-INF-MCQ-04",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Ecthyma – deeper (ulcerative) impetigo",
+   "stem": "A 35-year-old rubber-plantation worker has had three painful lesions on his lower legs for 2 weeks that started at scratched insect bites. Each is a 1–2-cm punched-out ulcer covered with a thick, adherent, greenish-brown crust and surrounded by a raised violaceous rim; removing the crust reveals a shallow purulent ulcer. He has no fever, diabetes or neutropenia. Which is the most likely diagnosis?",
+   "choices": [
+    "Ecthyma due to Streptococcus pyogenes with or without Staphylococcus aureus",
+    "Ecthyma gangrenosum due to Pseudomonas aeruginosa",
+    "Non-bullous impetigo",
+    "Cutaneous anthrax",
+    "Pyoderma gangrenosum"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ecthyma คือ impetigo ที่ **ลึกลงไปถึง dermis** → เกิด **แผลลึกขอบชัดเหมือนเจาะ (punched-out)** คลุมด้วย **สะเก็ดหนาแข็งเกาะแน่น** ขอบแดงม่วง · มักที่ **ขา** หลังแมลงกัด/รอยเกา ในคนสุขอนามัยไม่ดี อากาศร้อนชื้น · เชื้อหลักคือ **GAS** ± *S. aureus* · หายแล้ว **เป็นแผลเป็น** (ต่างจาก impetigo ที่ไม่เป็นแผลเป็นเพราะอยู่แค่ epidermis)\n\n**รักษา** — IDSA: ecthyma ใช้ **ยาปฏิชีวนะกิน** (penicillin/cephalexin/dicloxacillin) ไม่ใช้ยาทาอย่างเดียว\n\n**ทำไมข้ออื่นผิด**\n- **Ecthyma gangrenosum**: *Pseudomonas* bacteremia ใน **neutropenia** → macule กลายเป็นแผลเนื้อตายสีดำ ผู้ป่วยไม่สบายมาก\n- **Non-bullous impetigo**: ตื้น สะเก็ดสีน้ำผึ้งหลุดง่าย ไม่มีแผลลึก\n- **Cutaneous anthrax**: eschar สีดำ **ไม่เจ็บ** รอบ ๆ บวมมาก มีประวัติสัมผัสสัตว์/หนังสัตว์\n- **Pyoderma gangrenosum**: แผลเจ็บมาก ขอบม่วง **undermined** ลามเร็ว สัมพันธ์ IBD/RA เพาะเชื้อไม่พบ และ **แย่ลงหลัง debride (pathergy)**",
+   "pearl": "แผล punched-out + สะเก็ดหนาเกาะแน่นที่ขา = ecthyma (GAS) → ยากิน · หายเป็นแผลเป็น",
+   "ref": [
+    "MED33 Spot diagnosis ข้อ 7 – Ecthyma (ให้รูป)",
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(9)",
+    "B4.2.2(4)"
+   ],
+   "years": [
+    "33"
+   ],
+   "note_img": "MED33 spot diagnosis: ให้รูปแผล ecthyma (โพยระบุแค่ชื่อโรค)"
+  },
+  {
+   "id": "DE-INF-MCQ-05",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Carbuncle – drainage first, antibiotics when systemic signs",
+   "stem": "A 52-year-old man with poorly controlled type 2 diabetes has a 4-cm, very painful, red, indurated mass on the back of his neck for 5 days. Several follicular openings on its surface are draining pus and the centre is fluctuant. Temperature 38.4 °C, pulse 104/min, BP 132/80 mmHg. Which is the most appropriate management?",
+   "choices": [
+    "Incision and drainage plus a systemic antibiotic active against Staphylococcus aureus",
+    "Warm compresses alone and review in 1 week",
+    "Oral antibiotic alone without drainage",
+    "Topical mupirocin ointment alone",
+    "Intralesional corticosteroid injection"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **folliculitis** (ติดเชื้อที่รูขุมขนตื้น) → **furuncle** (ฝีที่ลามรอบรูขุมขนลงถึง dermis/subcutis) → **carbuncle** = furuncle หลายอันรวมกัน มี **หลายรูหนองเปิด** มักที่ **ต้นคอด้านหลัง หลัง ต้นขา** ซึ่งผิวหนา · เชื้อเกือบทั้งหมดคือ ***S. aureus*** · เบาหวานเป็นปัจจัยเสี่ยง\n\n**หลักการ (IDSA 2014)** — หนองเป็นโพรงที่ยาเข้าไม่ถึง → **I&D คือการรักษาหลัก**\n- furuncle เล็ก: ประคบอุ่นให้หนองระบายเอง\n- carbuncle/ฝีใหญ่: **I&D**\n- **เพิ่มยาปฏิชีวนะ** เมื่อมี **SIRS (ไข้ >38 °C, HR >90)** ภูมิคุ้มกันต่ำ ฝีหลายจุด หรือ cellulitis รอบ ๆ กว้าง → ผู้ป่วยรายนี้มีทั้ง SIRS และเบาหวาน · เลือกยาครอบคลุม *S. aureus* เช่น dicloxacillin/cloxacillin/cephalexin (มีความเสี่ยง MRSA → TMP-SMX/doxycycline หรือ vancomycin ถ้ารุนแรง) · ส่ง Gram stain และเพาะเชื้อหนอง · คุมน้ำตาล\n\n**ทำไมข้ออื่นผิด**\n- **ประคบอุ่นอย่างเดียว**: ใช้กับ furuncle เล็กไม่มีอาการทั่วร่างกาย\n- **ยากินอย่างเดียว**: ไม่ระบายหนอง → ไม่หาย\n- **Mupirocin**: สำหรับ impetigo หรือ decolonize จมูก\n- **Steroid ฉีด**: ใช้กับ keloid/acne cyst ที่ไม่ติดเชื้อ",
+   "pearl": "ฝี/carbuncle = I&D ก่อน · เพิ่ม anti-staph เมื่อมี SIRS, DM/ภูมิต่ำ, cellulitis รอบกว้าง",
+   "ref": [
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(2)",
+    "B4.2.2(2)",
+    "2.3.12(4)"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-06",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Erysipelas – the sharply demarcated, raised streptococcal plaque",
+   "stem": "A 58-year-old woman develops fever and chills, followed within hours by a bright red, hot, tender, shiny plaque on her right lower leg. The plaque is raised above the surrounding skin and has a sharply demarcated, palpable edge. There is no pus, wound or fluctuance; she has macerated scaling between the fourth and fifth toes. Which organism is most likely, and therefore which treatment?",
+   "choices": [
+    "Streptococcus pyogenes; penicillin",
+    "Methicillin-resistant Staphylococcus aureus; intravenous vancomycin",
+    "Pseudomonas aeruginosa; ceftazidime",
+    "Trichophyton rubrum; oral terbinafine alone",
+    "Vibrio vulnificus; doxycycline plus ceftazidime"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **erysipelas** คือการติดเชื้อ **dermis ชั้นบน + ท่อน้ำเหลืองผิวตื้น** → บวมน้ำในชั้นตื้นทำให้ผื่น **นูนกว่าผิวรอบข้าง ขอบชัดคลำได้ เป็นมัน แดงสด** · เริ่มด้วยไข้หนาวสั่นก่อนผื่น · เชื้อเกือบทั้งหมดคือ **β-hemolytic streptococci (GAS)** → **penicillin** เป็นยาหลัก (เบา: penicillin V/amoxicillin กิน · มีไข้มาก: penicillin G/cefazolin IV)\n\n**แยกจาก cellulitis** — cellulitis อยู่ **dermis ชั้นลึก + ไขมันใต้ผิว** → ผื่น **แบน ขอบไม่ชัด** · non-purulent cellulitis ก็เกิดจาก strep เป็นหลัก · purulent (มีหนอง/ฝี) นึกถึง *S. aureus*\n\n**ประตูเข้าของเชื้อ** — **tinea pedis ระหว่างนิ้วเท้า** ที่เปื่อยแตก ต้องรักษาด้วยเพื่อลดการกลับเป็นซ้ำ แต่ terbinafine อย่างเดียวไม่รักษาการติดเชื้อแบคทีเรีย\n\n**ทำไมข้ออื่นผิด**\n- **MRSA/vancomycin**: ไม่มีหนอง ไม่มีปัจจัยเสี่ยง MRSA (IVDU, penetrating trauma, colonization) และไม่ shock\n- ***Pseudomonas***: แผลน้ำ/ตะปูตำเท้า, ecthyma gangrenosum\n- ***Vibrio vulnificus***: แผลโดนน้ำทะเล/กินอาหารทะเลดิบใน cirrhosis → hemorrhagic bullae, sepsis",
+   "pearl": "แดง นูน ขอบชัดคลำได้ + ไข้นำมาก่อน = erysipelas = GAS → penicillin",
+   "ref": [
+    "MED33 FA MCQ – ผื่นขอบชัด สีแดง เป็นเร็ว มีไข้ → Erysipelas",
+    "MED35 สอบลงกองครั้งที่ 1 ข้อ 85 – แผลแดงร้อนบวม ขอบเขตชัด → Erysipelas",
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(4)",
+    "B4.2.2(3)"
+   ],
+   "years": [
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-07",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Necrotizing fasciitis – clinical red flags in a diabetic leg",
+   "stem": "A 56-year-old man with diabetes cut his left foot 2 days ago. He now has severe pain in the left leg that seems out of proportion to a modest area of dusky erythema on the calf. Examination shows tense, woody oedema extending beyond the erythema, two haemorrhagic bullae and reduced sensation over the area. Temperature 39 °C, BP 88/50 mmHg, pulse 122/min. Which is the most likely diagnosis?",
+   "choices": [
+    "Necrotizing fasciitis",
+    "Erysipelas",
+    "Non-purulent cellulitis",
+    "Deep vein thrombosis",
+    "Stasis dermatitis with secondary infection"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เชื้อลามไปตาม **ชั้น fascia** ซึ่งเลือดน้อย → หลอดเลือดที่เลี้ยงผิวอุดตัน → **ขาดเลือดและเนื้อตายจากข้างใต้** · เส้นประสาทผิวที่ผ่าน fascia ถูกทำลาย → **ชา** · ผิวด้านบนเปลี่ยนแปลงช้ากว่าความเสียหายจริง จึง **ปวดมากเกินกว่าที่เห็น**\n\n**Red flags แยก NF จาก cellulitis**\n- ปวดมากเกินสัดส่วนของผื่น · บวมแข็ง (woody) เลยขอบผื่น\n- **ตุ่มน้ำเลือด (hemorrhagic bullae)** ผิวม่วงคล้ำ/เนื้อตาย\n- **ชาบริเวณผื่น** · crepitus (แก๊ส)\n- ลามเร็วเป็นชั่วโมง แม้ได้ยา · ไข้สูง ความดันต่ำ สับสน\n\n**การจัดการ** — **ปรึกษาศัลยแพทย์ผ่าตัดสำรวจ/debride ด่วน** (การวินิจฉัยยืนยันในห้องผ่าตัด ไม่รอ CT) + **ยาครอบคลุมกว้าง: vancomycin + piperacillin–tazobactam + clindamycin** (clindamycin ยับยั้งการสร้าง toxin) · resuscitate septic shock · เบาหวานมักเป็น **type I (polymicrobial)**\n\n**ทำไมข้ออื่นผิด**\n- **Erysipelas/cellulitis**: ปวดสมกับผื่น ไม่มี bullae เลือด ไม่ชา ไม่ shock เร็วขนาดนี้\n- **DVT**: บวมทั้งขา ไม่มีไข้สูง/ตุ่มน้ำเลือด/shock\n- **Stasis dermatitis**: เรื้อรัง ขาสองข้าง รอบตาตุ่ม สีน้ำตาลจาก hemosiderin",
+   "pearl": "ปวดเกินผื่น + บวมแข็งเลยขอบ + bullae เลือด + ชา + shock = NF → ผ่าตัดด่วน + vanco/pip-tazo/clinda",
+   "ref": [
+    "MED34 FA MCQ หมวด Endo ข้อ 4 – DM ขาแดง: NF / Cellulitis / Erysipelas",
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.50",
+    "2.3.12(4)",
+    "B4.2.2(3)"
+   ],
+   "years": [
+    "34"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-08",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Purulent skin infection with systemic signs – MRSA coverage",
+   "stem": "A 30-year-old man who injects drugs has a 3-cm fluctuant, tender abscess on the forearm with 2 cm of surrounding erythema. Pus is pointing at the centre. Temperature 38.6 °C, pulse 110/min, BP 124/78 mmHg; he is alert and not immunocompromised. In addition to incision and drainage, which empirical antibiotic is most appropriate according to IDSA guidance?",
+   "choices": [
+    "Oral trimethoprim–sulfamethoxazole or doxycycline to cover MRSA",
+    "Oral penicillin V to cover streptococci",
+    "No antibiotic after drainage",
+    "Oral ciprofloxacin",
+    "Oral metronidazole"
+   ],
+   "answer": 0,
+   "explain": "**หลักคิด IDSA 2014 — แยก purulent กับ non-purulent ก่อน**\n- **Purulent** (ฝี furuncle carbuncle มีหนอง) → เชื้อหลัก ***S. aureus*** → **I&D เป็นหลัก** แล้วแบ่งความรุนแรง\n  - mild (ไม่มีอาการทั่วร่างกาย): I&D อย่างเดียว\n  - **moderate (มี SIRS เช่นไข้ >38 °C, HR >90)**: I&D + **ยากินครอบคลุม MRSA = TMP-SMX หรือ doxycycline**\n  - severe (I&D + ยากินล้มเหลว, SIRS + hypotension, ภูมิต่ำ): I&D + **vancomycin**/linezolid/daptomycin IV\n- **Non-purulent** (cellulitis/erysipelas) → **strep** → β-lactam (penicillin/cephalexin/cefazolin) · เพิ่ม MRSA coverage เฉพาะมี penetrating trauma, IVDU, MRSA colonization, หรือ shock\n\nผู้ป่วยรายนี้: **purulent + SIRS + ฉีดยาเสพติด (เสี่ยง MRSA)** = moderate → TMP-SMX/doxycycline · ส่งเพาะเชื้อหนองเพื่อ de-escalate (ถ้าเป็น MSSA เปลี่ยนเป็น dicloxacillin/cephalexin)\n\n**ทำไมข้ออื่นผิด**\n- **Penicillin V**: ไม่ครอบคลุม *S. aureus* (สร้าง β-lactamase)\n- **ไม่ให้ยา**: ใช้กับ mild เท่านั้น รายนี้มี SIRS\n- **Ciprofloxacin**: anti-staph ไม่ดีและดื้อเร็ว\n- **Metronidazole**: anaerobe เท่านั้น",
+   "pearl": "ฝีมีหนอง = S. aureus → I&D · มี SIRS เพิ่ม TMP-SMX/doxy (MRSA) · cellulitis ไม่มีหนอง = strep → β-lactam",
+   "ref": [
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(2)",
+    "2.3.12(4)",
+    "B4.2.2(2)"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-09",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Erythrasma – coral-red fluorescence",
+   "stem": "A 50-year-old obese man with diabetes has asymptomatic, well-defined, reddish-brown, finely scaling patches in both axillae and the groin for 3 months. There is no raised active border, vesicles or satellite pustules. A KOH preparation of the scale is negative. Which finding is most characteristic of this condition?",
+   "choices": [
+    "Coral-red fluorescence under Wood's lamp from porphyrins produced by Corynebacterium minutissimum",
+    "Bright green fluorescence of the hair shafts from Microsporum species",
+    "Budding yeasts with pseudohyphae on KOH preparation",
+    "Multinucleated giant cells on Tzanck smear",
+    "Improvement only with oral ketoconazole"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **erythrasma** เกิดจากแบคทีเรีย **Gram-positive *Corynebacterium minutissimum*** ที่เจริญใน stratum corneum บริเวณ **ซอกพับอับชื้น** (รักแร้ ขาหนีบ ซอกนิ้วเท้า) · เชื้อสร้าง **coproporphyrin III** → ใต้ Wood's lamp (UVA ~365 nm) เรืองแสง **สีแดงปะการัง (coral-red)** · ผื่นแบน สีน้ำตาลแดง ขอบชัด ขุยละเอียด ไม่มีขอบนูน ไม่มีตุ่ม · พบบ่อยในอ้วน เบาหวาน อากาศร้อนชื้น\n\n**รักษา** — ยาทา **erythromycin/clindamycin หรือ fusidic acid** · กว้าง: **clarithromycin/erythromycin กิน** · (azole ทามีฤทธิ์บ้าง แต่ไม่ใช่ ketoconazole กิน)\n\n**ทำไมข้ออื่นผิด**\n- **เขียวสว่างที่เส้นผม** = tinea capitis จาก *Microsporum*\n- **Budding yeast + pseudohyphae** = candidal intertrigo (แดงสด เปียก มี satellite pustules) — KOH ในรายนี้ลบ\n- **Multinucleated giant cells** = HSV/VZV\n- **Ketoconazole กิน**: ไม่ใช่การรักษา และมี hepatotoxicity จนไม่แนะนำสำหรับโรคผิวหนัง\n\n**ซอกพับแดง 3 โรค** — tinea cruris (ขอบนูนมีขุย KOH septate hyphae) · candida (แดงสด satellite, KOH yeast) · erythrasma (น้ำตาลแดง KOH ลบ, Wood's coral-red)",
+   "pearl": "ซอกพับสีน้ำตาลแดง KOH ลบ + Wood's coral-red = erythrasma (C. minutissimum) → erythromycin/clindamycin",
+   "ref": [
+    "MED31 FA MCQ – Erythrasma at axillae has this characteristic (ตัวเลือก Wood's lamp red color / S. aureus / ketoconazole orally)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)",
+    "3.1.10"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-10",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Wood's lamp – fluorescent tinea capitis",
+   "stem": "A 7-year-old girl who plays with a stray kitten has had two round, scaly, partially bald patches on her scalp with broken-off hairs for 3 weeks. Under Wood's lamp examination the affected hairs fluoresce bright blue-green. Which organism is most likely responsible?",
+   "choices": [
+    "Microsporum canis",
+    "Trichophyton tonsurans",
+    "Malassezia furfur",
+    "Candida albicans",
+    "Corynebacterium minutissimum"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — dermatophyte ที่บุกเส้นผมแบบ **ectothrix** (สปอร์เกาะผิวนอกเส้นผม) โดยเฉพาะ ***Microsporum canis/audouinii*** สร้างสาร **pteridine** → เรืองแสง **สีเขียวอมฟ้าสว่าง** ใต้ Wood's lamp · *M. canis* ติดจาก **แมว/สุนัข**\n\n**ตาราง Wood's lamp ที่ออกสอบ**\n| สิ่งที่เห็น | โรค |\n|---|---|\n| เขียวสว่างที่ **เส้นผม** | tinea capitis จาก *Microsporum* |\n| **ไม่เรืองแสง** | tinea capitis จาก ***Trichophyton tonsurans*** (endothrix สปอร์อยู่ในเส้นผม) — ปัจจุบันพบบ่อยกว่า จึง Wood's ลบไม่ตัดโรค |\n| เหลืองอมเขียว/ส้มทองแดง | pityriasis versicolor (*Malassezia*) |\n| แดงปะการัง | erythrasma |\n| ขาวชอล์กชัดขึ้น | vitiligo |\n| เขียว | *Pseudomonas* |\n\nยืนยันการวินิจฉัย tinea ด้วย **KOH ของเส้นผม/ขุย** และเพาะเชื้อ · Wood's lamp **ไม่ใช่การตรวจของ dermatophyte ทุกตัว** ผิวหนัง tinea corporis ไม่เรืองแสง\n\n**ทำไมข้ออื่นผิด** — *T. tonsurans* ไม่เรืองแสง · *Malassezia* ทำ versicolor ที่ลำตัว ไม่ทำผมร่วง · *Candida* ไม่ทำ tinea capitis · *C. minutissimum* = erythrasma ซอกพับ",
+   "pearl": "ผมร่วงเป็นหย่อมมีขุย + Wood's เขียวที่เส้นผม = Microsporum (แมว) · Trichophyton tonsurans ไม่เรืองแสง",
+   "ref": [
+    "MED29 FA MCQ ข้อ 72 – Wood's lamp examination can aid in the diagnosis of → Dermatophytes",
+    "MED29 (คอมเมนต์เธรด) – Wood lamp examination ดูอะไร: psoriasis / dermatophyte / candidiasis",
+    "MED31 FA MCQ ข้อ 60 – Wood lamp → tinea capitis",
+    "MED34 FA Skin ข้อ 1 – Hypopigmented and hyperpigmented scaly patches → Wood lamp"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)"
+   ],
+   "years": [
+    "29",
+    "31",
+    "34"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-11",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Kerion – tinea capitis needs oral antifungal",
+   "stem": "A 9-year-old boy has had a boggy, tender, pustular scalp swelling 4 cm across, with hair loss and occipital lymphadenopathy, for 2 weeks. Plucked hairs on KOH show spores packed within the hair shaft. A bacterial swab is negative. Which is the most appropriate management?",
+   "choices": [
+    "Oral terbinafine or griseofulvin for several weeks, plus an antifungal shampoo",
+    "Incision and drainage followed by oral cloxacillin",
+    "Topical clotrimazole cream alone for 2 weeks",
+    "Intralesional triamcinolone injection",
+    "Oral aciclovir for 7 days"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **kerion** คือ tinea capitis ที่ร่างกายตอบสนองอักเสบรุนแรงต่อ dermatophyte → ก้อนนุ่มหยุ่น มีตุ่มหนอง ผมร่วง ต่อมน้ำเหลืองโต ดูเหมือนฝีแต่ **เป็นการอักเสบจากเชื้อรา ไม่ใช่หนองแบคทีเรีย** · เชื้ออยู่ **ในรูขุมขนและในเส้นผมลึก** ซึ่งยาทาเข้าไม่ถึง → **tinea capitis ทุกชนิดต้องใช้ยากิน**\n\n**เลือกยาตามเชื้อ**\n- **Endothrix (สปอร์ในเส้นผม) = *Trichophyton tonsurans*** → **terbinafine** ได้ผลดีกว่า (2–4 สัปดาห์)\n- ***Microsporum*** → **griseofulvin** (6–8 สัปดาห์ ขนาดสูง กินกับอาหารไขมัน)\n- ร่วมกับ **ketoconazole 2% หรือ selenium sulfide shampoo** ลดการกระจายสปอร์ · ตรวจคนในบ้าน/สัตว์เลี้ยง · kerion รุนแรงอาจให้ prednisolone ระยะสั้นลดแผลเป็น\n\n**ทำไมข้ออื่นผิด**\n- **I&D + antibiotic**: เข้าใจผิดว่าเป็นฝี → ไม่มีหนองให้ระบาย และเพิ่มแผลเป็น/ผมร่วงถาวร\n- **Clotrimazole ทา**: ไม่ถึงรูขุมขน\n- **Steroid ฉีด**: กดภูมิ เชื้อลาม\n- **Acyclovir**: ไวรัส",
+   "pearl": "Tinea capitis/kerion = ต้องยากินเสมอ (terbinafine/griseofulvin) + shampoo · ห้ามผ่าระบายเหมือนฝี",
+   "ref": [
+    "AAD/BAD guidelines for tinea capitis (Fuller et al., Br J Dermatol 2014)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-12",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Tinea faciei/corporis – topical azole, not steroid",
+   "stem": "A 22-year-old woman has had an itchy rash on her left cheek for 2 weeks; her cat has patchy hair loss. Examination shows a 3-cm annular erythematous plaque with a raised, scaly, advancing border and relative central clearing. A KOH preparation of scale scraped from the border shows long, branching septate hyphae. Which is the most appropriate treatment?",
+   "choices": [
+    "Ketoconazole 2% cream applied to the lesion and 2 cm beyond for 2–4 weeks",
+    "0.02% triamcinolone cream twice daily",
+    "Mupirocin ointment three times daily",
+    "2.5% benzoyl peroxide gel",
+    "Metronidazole 0.75% cream"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — dermatophyte (*Trichophyton*, *Microsporum*, *Epidermophyton*) ใช้ **keratinase** ย่อย keratin ใน stratum corneum · เชื้อเจริญออกด้านนอก ส่วนกลางถูกภูมิกำจัดก่อน → **วงแหวนขอบนูนมีขุย ตรงกลางจาง (central clearing)** · ขูดขุยจาก **ขอบ** ทำ KOH เห็น **long branching septate hyphae**\n\n**รักษา** — tinea corporis/faciei/cruris ที่จำกัด → **ยาทา azole (ketoconazole, clotrimazole) หรือ allylamine (terbinafine)** ทาเลยขอบ 2 cm นาน 2–4 สัปดาห์ (หรือ 1–2 สัปดาห์หลังผื่นหาย) · ผื่นกว้าง/ล้มเหลว/ภูมิต่ำ/ติดผมหรือเล็บ → **ยากิน** terbinafine/itraconazole\n\n**ทำไมข้ออื่นผิด**\n- **Triamcinolone**: steroid กดการอักเสบ ขอบหายไป เชื้อลามกว้าง = **tinea incognito** (ผู้ป่วยในโพย 'ซื้อยาทาเองไม่ดีขึ้น' มักเป็นยาผสม steroid)\n- **Mupirocin**: impetigo\n- **Benzoyl peroxide**: acne\n- **Metronidazole cream**: rosacea (หน้าแดง ตุ่มหนอง ไม่มีขอบนูนเป็นวง)",
+   "pearl": "วงขอบนูนมีขุย central clearing + KOH septate hyphae = tinea → azole/terbinafine ทา · ห้าม steroid",
+   "ref": [
+    "MED31 FA MCQ – หญิง 22 ปี scaly annular erythematous patch with elevated border ที่แก้ม ซื้อยาทาเองไม่ดีขึ้น → ketoconazole cream",
+    "MED32 FA MCQ ข้อ 59 – รูป skin แดง ๆ กลม ๆ → KOH"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)",
+    "3.1.10"
+   ],
+   "years": [
+    "31",
+    "32"
+   ],
+   "note_img": "MED32 ข้อ 59: รูปผื่นแดงกลม (annular) — คำตอบคือส่ง KOH"
+  },
+  {
+   "id": "DE-INF-MCQ-13",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Onychomycosis – oral terbinafine",
+   "stem": "A 55-year-old man has had thick, yellow, crumbly great toenails on both feet for 2 years, with subungual hyperkeratosis involving more than two-thirds of each nail including the proximal part. KOH of subungual debris shows septate hyphae. Liver function tests are normal and he takes no interacting drugs. Which is the most appropriate treatment?",
+   "choices": [
+    "Oral terbinafine 250 mg daily for 12 weeks",
+    "Topical clotrimazole cream for 4 weeks",
+    "Oral griseofulvin 500 mg daily for 4 weeks",
+    "Oral fluconazole 150 mg as a single dose",
+    "Topical mupirocin under occlusion"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **tinea unguium** ส่วนใหญ่จาก ***Trichophyton rubrum*** เข้าทางขอบเล็บปลาย (distal lateral subungual) → keratin ใต้เล็บหนา เล็บเหลืองเปราะ · แผ่นเล็บหนาและโตช้า (เล็บเท้า 12–18 เดือน) ยาทาซึมผ่านไม่ได้\n\n**Terbinafine** ยับยั้ง **squalene epoxidase** → squalene สะสมเป็นพิษต่อเชื้อ (**fungicidal**) · ชอบไขมัน **สะสมใน keratin ของเล็บและคงอยู่นานหลังหยุดยา**\n- **เล็บมือ 6 สัปดาห์ · เล็บเท้า 12 สัปดาห์** · ตรวจ LFT ก่อนเริ่ม\n- ทางเลือก: **itraconazole pulse** (200 mg bid 1 สัปดาห์/เดือน: มือ 2 pulses, เท้า 3 pulses) — ระวัง CYP3A4 interaction และ heart failure\n- **ยืนยันเชื้อรา (KOH/เพาะเชื้อ) ก่อนให้ยากินนาน** เพราะ psoriasis, trauma เลียนแบบได้\n- เล็บดูปกติช้ากว่าเชื้อหายมาก (รอเล็บใหม่งอก)\n\n**ทำไมข้ออื่นผิด**\n- **Clotrimazole ทา**: ไม่ซึมผ่านเล็บ (ยาทาเล็บ ciclopirox/amorolfine ใช้ได้เฉพาะ distal <50% ไม่ถึง matrix)\n- **Griseofulvin**: fungistatic ต้องให้นานมาก (เท้า 12–18 เดือน) ผลหายต่ำ — ไม่ใช่ทางเลือกแรก\n- **Fluconazole ครั้งเดียว**: ขนาดสำหรับ vaginal candidiasis\n- **Mupirocin**: แบคทีเรีย",
+   "pearl": "เล็บเท้าเชื้อรา (T. rubrum) = terbinafine 250 mg/วัน 12 สัปดาห์ (มือ 6) · ยืนยัน KOH + LFT ก่อน",
+   "ref": [
+    "MED34 FA ครั้งที่ 4 ข้อ 10 – เล็บเป็นเชื้อรา ใช้ยาอะไรรักษา → terbinafine",
+    "MED32 FA MCQ ข้อ 44 – ติดเชื้อที่เล็บ: tinea unguium",
+    "MED35 สอบลงกองครั้งที่ 2 ข้อ 15 – รูปเล็บเท้าหนาเหลือง ถามเชื้อ → tinea unguium"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)"
+   ],
+   "years": [
+    "32",
+    "34",
+    "35"
+   ],
+   "note_img": "MED35 ข้อ 15: รูปนิ้วเท้า เล็บหนาเหลืองเป็นขุย (ตอนนี้มี PIC35-10 ใช้รูปนี้แล้วเป็น spot dx — ข้อนี้ถามการรักษา)"
+  },
+  {
+   "id": "DE-INF-MCQ-14",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Pityriasis versicolor – treatment and persistent hypopigmentation",
+   "stem": "A 24-year-old man has asymptomatic, well-demarcated hypopigmented macules with fine scale on his upper back and chest that become more extensive each hot season. KOH preparation shows short hyphae mixed with clusters of round yeast cells. He was treated last year and the scale disappeared, but the white spots persisted for months, so he thinks the treatment failed. Which statement is most accurate?",
+   "choices": [
+    "Topical ketoconazole or selenium sulfide is first-line, and pigment may take months to recover after the fungus is cleared",
+    "Oral terbinafine is the most effective systemic option",
+    "The condition is contagious and household members need treatment",
+    "A potent topical corticosteroid is needed to restore pigment",
+    "Persistent white patches after treatment prove treatment failure and require oral ketoconazole"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ***Malassezia furfur/globosa*** เป็น **ยีสต์ประจำถิ่นที่ชอบไขมัน (lipophilic)** · อากาศร้อนชื้น เหงื่อมาก → เปลี่ยนเป็นรูปเส้นใย (KOH: **short septate hyphae + round budding yeast = 'spaghetti and meatballs'**) · สร้าง **azelaic acid ยับยั้ง tyrosinase** → ผิวด่างขาว · **ไม่ใช่โรคติดต่อ** (เชื้ออยู่บนผิวทุกคน)\n\n**การรักษา**\n- **First-line ยาทา**: ketoconazole 2% shampoo/cream, selenium sulfide 2.5%, clotrimazole, terbinafine **ทา**\n- ผื่นกว้าง/กลับเป็นบ่อย: **fluconazole หรือ itraconazole กิน**\n- กลับเป็นซ้ำสูง → ใช้ shampoo ป้องกันเดือนละครั้งช่วงหน้าร้อน\n- **สีผิวกลับมาช้าหลายสัปดาห์–เดือน** หลังเชื้อหายแล้ว · ตัวชี้วัดว่าหายคือ **ขุยหายและ KOH ลบ** ไม่ใช่สีผิว\n\n**ทำไมข้ออื่นผิด**\n- **Terbinafine กิน ไม่ได้ผล** ใน versicolor เพราะยาไม่ออกมากับเหงื่อสู่ stratum corneum ในระดับพอ (ต่างจาก azole กิน)\n- **ไม่ติดต่อ** ไม่ต้องรักษาคนในบ้าน\n- **Steroid**: ไม่ช่วยเม็ดสี อาจทำให้เชื้อเพิ่ม\n- **Ketoconazole กิน**: ไม่แนะนำแล้วเพราะพิษต่อตับ และด่างขาวที่ค้างไม่ใช่ treatment failure",
+   "pearl": "Versicolor = Malassezia ไม่ติดต่อ · ทา ketoconazole/selenium · terbinafine กินไม่ได้ผล · สีกลับช้าหลายเดือน",
+   "ref": [
+    "MED34 SAQ ข้อ 9 – บรรยาย scaly hypo-hyperpigmented macule, KOH spaghetti and meatballs → tinea versicolor",
+    "MED33 SAQ ตัวอย่างการเขียน ข้อ 1 – Tinea versicolor (Hypopigmented skin → KOH → spaghetti & meatball)",
+    "MED33 Spot diagnosis ข้อ 5 – Tinea versicolor",
+    "MED35 SAQ – Tinea versicolor (บรรยาย lesion, 10% KOH, Dx)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)",
+    "3.1.10"
+   ],
+   "years": [
+    "33",
+    "34",
+    "35"
+   ],
+   "note_img": "MED33 หน้า 62: ภาพ KOH mount short hyphae + yeast เขียนกำกับ 'spaghetti & meat balls' · MED35: รูปหลังผู้ชายมีปื้นสีจางกระจาย + รูป KOH (ข้อนี้ไม่ต้องใช้รูป)"
+  },
+  {
+   "id": "DE-INF-MCQ-15",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Candidal intertrigo – satellite lesions and topical azole",
+   "stem": "A 62-year-old obese woman with diabetes has had an itchy, burning rash under both breasts for 2 weeks during hot weather. Examination shows bright red, moist, macerated plaques in the inframammary folds with small satellite papules and pustules beyond the main edge. Which is the most appropriate first-line treatment?",
+   "choices": [
+    "Topical clotrimazole cream with measures to keep the folds dry",
+    "Potent topical corticosteroid alone",
+    "Oral terbinafine for 6 weeks",
+    "Topical mupirocin ointment",
+    "Oral aciclovir for 7 days"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ***Candida albicans*** เป็นเชื้อประจำถิ่นที่เจริญเกินเมื่อ **ซอกพับร้อน อับชื้น เสียดสี** (อ้วน เบาหวาน ยาปฏิชีวนะ steroid) · ผิวเปื่อยแดงสด **beefy red** และเชื้อกระจายออกเป็น **satellite papules/pustules** นอกขอบผื่น — ลักษณะเด่นที่แยกจาก tinea · KOH: **budding yeast + pseudohyphae**\n\n**รักษา**\n- **ยาทา azole (clotrimazole, miconazole, ketoconazole) หรือ nystatin** วันละ 2 ครั้ง 2 สัปดาห์\n- **ทำให้ซอกพับแห้ง** ผ้าคั่น เปลี่ยนผ้าบ่อย ลดน้ำหนัก คุมน้ำตาล\n- เป็นกว้าง/ไม่ตอบสนอง → fluconazole กิน\n\n**ทำไมข้ออื่นผิด**\n- **Steroid อย่างเดียว**: กดภูมิ เชื้อเพิ่มจำนวน\n- **Terbinafine กิน**: ออกฤทธิ์ต่อ *Candida* ไม่ดี (allylamine เด่นที่ dermatophyte) และ 6 สัปดาห์เกินจำเป็น\n- **Mupirocin**: แบคทีเรีย\n- **Acyclovir**: ไวรัส\n\n**ใต้ราวนม ddx** — candida (satellite) · tinea (ขอบนูน central clearing) · erythrasma (น้ำตาลแดง, coral-red) · inverse psoriasis (ขอบชัดมัน ไม่มี satellite)",
+   "pearl": "ซอกพับแดงสดเปื่อย + satellite pustules = candidal intertrigo → azole ทา + ทำให้แห้ง",
+   "ref": [
+    "MED30 FA Skin ข้อ 3 – ผื่นใต้นม tx → Clotrimazole",
+    "MED29 SAQ – ผื่นใต้ราวนม: บรรยายผื่น ส่งอะไร โรคอะไร เชื้ออะไร รักษาอย่างไร"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)"
+   ],
+   "years": [
+    "29",
+    "30"
+   ],
+   "note_img": "MED30 Skin ข้อ 3 และ MED29 SAQ: ให้รูปผื่นใต้ราวนม (โพยไม่ได้บรรยายรายละเอียด)"
+  },
+  {
+   "id": "DE-INF-MCQ-16",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Recurrent candidiasis – look for diabetes",
+   "stem": "A 45-year-old woman has had three episodes of vulvovaginal candidiasis in 6 months; each responded to antifungal treatment but recurred within weeks. She now also has candidal intertrigo in the groin and reports thirst and nocturia. She takes no antibiotics, corticosteroids or hormonal contraception. Which investigation is most appropriate next?",
+   "choices": [
+    "Fasting plasma glucose or HbA1c",
+    "Serum total IgE",
+    "Patch testing",
+    "Skin biopsy of the groin",
+    "Serum antinuclear antibody"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — *Candida* เป็นเชื้อฉวยโอกาส: กลับเป็นซ้ำแปลว่ามี **ปัจจัยของ host** ที่ยังไม่ถูกแก้ · **เบาหวาน** ทำให้กลูโคสในเนื้อเยื่อ/สารคัดหลั่งสูงเป็นอาหารเชื้อ และ **neutrophil ทำงานลดลง (chemotaxis, phagocytosis)** → candidiasis ซ้ำ ๆ เป็นอาการนำของเบาหวานได้ (ผู้ป่วยรายนี้มีกระหายน้ำ ปัสสาวะกลางคืน)\n\n**ปัจจัยที่ต้องหา** — เบาหวาน · **HIV** (โดยเฉพาะ oral/esophageal candidiasis) · ยาปฏิชีวนะ steroid ยากดภูมิ · ตั้งครรภ์/estrogen · อ้วน\n\nใน recurrent VVC ควรเพาะเชื้อหา **non-albicans (*C. glabrata*)** ที่ดื้อ fluconazole ด้วย\n\n**ทำไมข้ออื่นผิด**\n- **IgE**: atopy ไม่ใช่สาเหตุ candidiasis ซ้ำ\n- **Patch test**: allergic contact dermatitis\n- **Skin biopsy**: ไม่จำเป็น วินิจฉัยด้วย KOH ได้\n- **ANA**: SLE ไม่ใช่คำอธิบายหลัก",
+   "pearl": "Candida กลับเป็นซ้ำ → ตรวจน้ำตาล (FPG/HbA1c) ± anti-HIV",
+   "ref": [
+    "MED31 FA MCQ ข้อ 56 – ผญ ติดเชื้อ candida รักษาแล้วกลับมาเป็นอีกใน 1 เดือน ควรทำอะไรต่อ → ตรวจน้ำตาล",
+    "MED31 FA MCQ ข้อ 81 – candida หลังหายตรวจอะไรดี → Fasting blood sugar"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(11)",
+    "2.3.14(17)",
+    "B4.2.2(9)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-17",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Recurrent herpes simplex at the sacrum – Tzanck smear",
+   "stem": "A 48-year-old woman with type 2 diabetes has had a painful cluster of small vesicles on an erythematous base over the coccyx and upper buttock for 3 days. She has had similar episodes at the same site three times in the past 2 years, each preceded by local tingling and healing within about 10 days. Which bedside test would show the expected finding?",
+   "choices": [
+    "Tzanck smear showing multinucleated giant cells with nuclear moulding",
+    "KOH preparation showing long branching septate hyphae",
+    "Gram stain showing Gram-positive cocci in clusters",
+    "Wood's lamp showing coral-red fluorescence",
+    "Dark-field microscopy showing spirochaetes"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — HSV ติดเชื้อครั้งแรกแล้ว **หลบอยู่ใน sensory ganglion (sacral ganglion สำหรับ HSV-2)** · เมื่อถูกกระตุ้น (เครียด ไข้ แสงแดด ประจำเดือน ภูมิลด) ไวรัสเดินตามเส้นประสาทกลับมาที่ **ตำแหน่งเดิม** → มี **prodrome เสียวแปลบ** แล้วเกิด **ตุ่มน้ำเล็กเป็นกลุ่มบนฐานแดง** · **recurrent sacral/buttock HSV** เป็น ddx สำคัญของ zoster ที่ก้น (zoster ไม่ค่อยเป็นซ้ำที่เดิม)\n\n**Tzanck smear** — ขูดก้นตุ่มน้ำใหม่ ย้อม Giemsa/Wright → **multinucleated giant cells** (keratinocyte หลอมรวมกันจาก viral glycoprotein) **nuclear moulding, margination of chromatin** ± Cowdry A inclusion\n- ข้อจำกัด: **แยก HSV จาก VZV ไม่ได้** และ sensitivity ต่ำกว่า\n- การตรวจที่ดีที่สุดปัจจุบัน: **HSV PCR จากน้ำในตุ่ม** (sensitive ที่สุด แยก HSV-1/2 และ VZV ได้)\n\n**ทำไมข้ออื่นผิด** — KOH septate hyphae = dermatophyte · GPC clusters = *S. aureus* (impetigo/folliculitis) · coral-red = erythrasma · dark-field spirochete = primary syphilis (แผลเดี่ยวไม่เจ็บ ไม่ใช่ตุ่มน้ำ)\n\nรักษา: acyclovir 400 mg tid 5 วัน (episodic) · กลับเป็นบ่อย ≥6 ครั้ง/ปี → suppressive",
+   "pearl": "ตุ่มน้ำเป็นกลุ่มบนฐานแดง กลับเป็นซ้ำที่เดิมมี prodrome = HSV · Tzanck = multinucleated giant cells (แยก HSV/VZV ไม่ได้ → PCR)",
+   "ref": [
+    "MED28 FA MCQ ข้อ 1 – A diabetic patient presents with a group of vesicles on erythematous base at coccyx → HSV",
+    "MED34 FA ครั้งที่ 4 ข้อ 61 – Picture herpes at พุง ส่งอะไร → Tzanck",
+    "MED32 FA MCQ ข้อ 20 – Vesicle + pustule บนหลัง ถาม investigation → Tzanck test",
+    "MED29 SAQ – กลุ่มตุ่มน้ำแขนขา: Tzanck multinucleated giant cell, Dx 3 โรค, รักษา"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(8)",
+    "B4.2.2(5)",
+    "3.1.10"
+   ],
+   "years": [
+    "28",
+    "29",
+    "32",
+    "34"
+   ],
+   "note_img": "MED34 ข้อ 61: รูปตุ่มน้ำ herpes ที่หน้าท้อง · MED29 SAQ: รูปกลุ่มตุ่มน้ำที่แขนขา (เบลอ) + รูป Tzanck multinucleated giant cell"
+  },
+  {
+   "id": "DE-INF-MCQ-18",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Recurrent herpes labialis – the history that clinches it",
+   "stem": "A 30-year-old woman has a group of small, painful vesicles on an erythematous base at the vermilion border of her upper lip, as shown in the figure. Which history most strongly supports the most likely diagnosis?",
+   "choices": [
+    "Similar lesions at the same spot several times before, each preceded by a day of tingling and often triggered by fever or strong sunlight",
+    "Lip swelling and wheals 20 minutes after eating shrimp",
+    "Target lesions on the palms with painful oral erosions 2 weeks after starting carbamazepine",
+    "A scaly ring with central clearing after cuddling a new kitten",
+    "Itchy flexural eczema since childhood with a family history of asthma"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — HSV-1 หลบอยู่ใน **trigeminal ganglion** หลังติดเชื้อครั้งแรก (มักในวัยเด็ก) · ตัวกระตุ้น (**ไข้/'ไข้หวัด' (cold sore, fever blister), แสงแดด UV, เครียด, ประจำเดือน**) → reactivation ไปที่ **ตำแหน่งเดิมบนริมฝีปาก** · มี **prodrome เสียว/แสบคัน 6–24 ชม.** ก่อนตุ่มขึ้น · ตุ่มเป็นกลุ่มบนฐานแดง → แตกเป็นแผลตกสะเก็ด หายใน 7–10 วัน\n\n→ ประวัติ **'เป็นซ้ำที่เดิม + prodrome + ตัวกระตุ้น'** สนับสนุน recurrent herpes labialis มากที่สุด\n\n**หมายเหตุโพย** — MED28 ข้อ 99 และ MED30 เฉลย **'unsafe sex'** (เพราะ HSV ติดทาง oral–genital ได้ และ HSV-2 ทำแผลที่ปากได้) ตัวเลือกเดิมอื่นไร้น้ำหนัก (healthy person, antibiotic, antipsychotic, breast cancer) — แต่ **herpes labialis ส่วนใหญ่เป็น HSV-1 ที่ติดตั้งแต่เด็กจากการสัมผัสน้ำลาย ไม่ต้องมีเพศสัมพันธ์** ข้อนี้จึงเขียนใหม่ให้ถามประวัติที่ช่วยวินิจฉัยจริง ถ้าเจอตัวเลือกแบบโพยในห้องสอบ ให้เลือก unsafe sex\n\n**ทำไมข้ออื่นผิด**\n- **กุ้ง + wheal** = urticaria/angioedema\n- **target + เยื่อบุหลังยา** = SJS/EM major (HSV เป็นสาเหตุ EM minor ที่พบบ่อยที่สุด แต่ตุ่มน้ำบนริมฝีปากเป็นกลุ่มไม่ใช่ target)\n- **วงขุย + แมว** = tinea\n- **atopy** = atopic dermatitis (ระวัง eczema herpeticum)\n\nรักษา: ไม่รุนแรงหายเอง · episodic **valacyclovir 2 g bid 1 วัน** เริ่มตอน prodrome · ทาครีมกันแดดที่ริมฝีปาก",
+   "pearl": "ตุ่มน้ำที่ริมฝีปากเป็นซ้ำที่เดิม + prodrome เสียว + ไข้/แดดกระตุ้น = recurrent herpes labialis (HSV-1)",
+   "ref": [
+    "MED28 ข้อสอบพิมพ์ ข้อ 99 – Recurrent group of vesicles on erythematous base at upper lip (as figure): history helpful → Unsafe sex",
+    "MED30 FA Skin ข้อ 2 – รูป herpes ที่ปาก ประวัติอะไร → Unsafe sex"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(8)",
+    "B4.2.2(5)"
+   ],
+   "years": [
+    "28",
+    "30"
+   ],
+   "note_img": "MED28 ข้อ 99: ภาพตุ่มน้ำเป็นกลุ่มที่ริมฝีปากบน · MED30: รูป herpes ที่ปาก"
+  },
+  {
+   "id": "DE-INF-MCQ-19",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Adult varicella – pneumonia demands IV aciclovir and airborne isolation",
+   "stem": "A 32-year-old male smoker had fever for 2 days, followed by an itchy rash that began on the face and trunk. Examination shows papules, vesicles on an erythematous base, pustules and crusts all present together in the same area. On day 4 of the rash he develops cough and dyspnoea; SpO2 is 91% on room air and the chest radiograph shows bilateral diffuse nodular infiltrates. Which is the most appropriate management?",
+   "choices": [
+    "Admit to an airborne-infection isolation room and give intravenous aciclovir 10 mg/kg every 8 hours",
+    "Oral aciclovir 800 mg five times daily at home",
+    "Oral prednisolone and antihistamine at home",
+    "Intravenous ceftriaxone plus azithromycin in a general ward",
+    "Give varicella vaccine now to limit progression"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — VZV ติดทาง **airborne/droplet และสัมผัสน้ำในตุ่ม** → viremia 2 รอบ → ผื่นขึ้นเป็นระลอก จึงเห็น **ผื่นหลายระยะพร้อมกัน (papule, vesicle, pustule, crust) — 'multiple stages'** ต่างจาก smallpox ที่ทุกตุ่มอยู่ระยะเดียวกัน · ตุ่มน้ำใสบนฐานแดง = 'dewdrop on a rose petal' · เริ่มที่ใบหน้า/ลำตัว แล้วลามแขนขา (centripetal)\n\n**ผู้ใหญ่รุนแรงกว่าเด็ก** — **varicella pneumonia** เป็นภาวะแทรกซ้อนสำคัญ (เสี่ยง: สูบบุหรี่ ตั้งครรภ์ ภูมิต่ำ) มักเกิด 1–6 วันหลังผื่น · อื่น ๆ: secondary bacterial infection (GAS/S. aureus), encephalitis/cerebellar ataxia, hepatitis\n\n**การรักษา**\n- ผู้ใหญ่ไม่มีภาวะแทรกซ้อน: **acyclovir 800 mg 5 ครั้ง/วัน 5–7 วัน (หรือ valacyclovir 1 g tid) เริ่มภายใน 24 ชม.หลังผื่นขึ้น**\n- **pneumonia/ภูมิต่ำ/ตั้งครรภ์รุนแรง → IV acyclovir 10 mg/kg q8h** ± O2\n- **แยกห้อง airborne + contact precautions จนตุ่มตกสะเก็ดหมด** (แพร่เชื้อได้ 1–2 วันก่อนผื่นจนตกสะเก็ดหมด)\n\n**ทำไมข้ออื่นผิด** — ยากินที่บ้านไม่พอใน pneumonia hypoxemia · steroid ไม่มีบทบาท · ceftriaxone + azithro เป็น CAP regimen และ **ไม่ควรอยู่ ward รวม** · วัคซีนเป็น live vaccine ใช้ป้องกันหลังสัมผัส (ภายใน 3–5 วัน) ในคนที่ยังไม่ป่วย ไม่ใช่รักษา",
+   "pearl": "อีสุกอีใส = ผื่นหลายระยะพร้อมกัน · ผู้ใหญ่ระวัง pneumonia → IV acyclovir + airborne isolation จนตกสะเก็ดหมด",
+   "ref": [
+    "MED30 FA Skin ข้อ 5 – Varicella → Ans multiple stage",
+    "MED31 FA MCQ – Vesiculo-pustular lesion พบใน: TEN / meningococcemia / staph / VZV / scrub typhus → VZV"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(22)",
+    "B4.2.2(6)"
+   ],
+   "years": [
+    "30",
+    "31"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-20",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Ramsay Hunt syndrome – zoster of the geniculate ganglion",
+   "stem": "A 60-year-old man has had severe pain in the right ear for 3 days, followed by vesicles on an erythematous base in the right external auditory canal and on the auricle, and a few vesicles on the right anterior two-thirds of the tongue. Which additional finding is most likely in this condition?",
+   "choices": [
+    "Ipsilateral lower motor neuron facial palsy with sensorineural hearing loss",
+    "Contralateral hemiparesis with homonymous hemianopia",
+    "Bilateral fatigable ptosis",
+    "Ipsilateral Horner syndrome with facial anhidrosis",
+    "Ipsilateral jaw deviation with loss of facial sensation in all three divisions"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Ramsay Hunt syndrome (herpes zoster oticus)** = VZV reactivation ที่ **geniculate ganglion ของ CN VII**\n- ใยรับความรู้สึกของ CN VII เลี้ยง **ใบหู/ช่องหู** → ตุ่มน้ำที่หู\n- **chorda tympani** → รับรส **2/3 หน้าของลิ้น** → ตุ่มน้ำที่ลิ้น/รสชาติเสีย\n- motor CN VII ถูกทำลาย → **LMN facial palsy ข้างเดียวกัน (ทั้งหน้าผากและปาก)**\n- การอักเสบลามไป **CN VIII** ที่อยู่ใน internal auditory canal เดียวกัน → **sensorineural hearing loss, tinnitus, vertigo**\n\n**รักษา** — **antiviral (valacyclovir/acyclovir) + prednisolone** โดยเร็ว · ปิดตาป้องกัน exposure keratitis · พยากรณ์ฟื้นตัวของหน้าแย่กว่า Bell's palsy\n\n**ทำไมข้ออื่นผิด** — hemiparesis + hemianopia = stroke (UMN) · fatigable ptosis = myasthenia · Horner = sympathetic chain · jaw deviation + ชาทั้ง 3 แขนง = CN V lesion\n\n**หมายเหตุโพย** — MED31 ข้อ 80 (ตุ่มน้ำหน้าหูและลิ้นขวา) เฉลยในโพยว่า **'ตาบอด'** ซึ่งไม่ตรงกับ Ramsay Hunt (ตาบอดสัมพันธ์กับ zoster ophthalmicus แขนง V1/Hutchinson sign) — อาจจำโจทย์ผิด · MED32 ข้อ 64 'ผื่นครึ่งซีกขวา → hearing loss' สอดคล้องกับข้อนี้ · MED35 ข้อ 8 Bell's palsy มีตัวลวง 'most common cause is Ramsay Hunt' ซึ่งผิด (สาเหตุส่วนใหญ่ของ facial palsy คือ idiopathic/Bell)",
+   "pearl": "ตุ่มน้ำที่หู + ลิ้น 2/3 หน้า + หน้าเบี้ยว LMN + หูดับ = Ramsay Hunt (geniculate ganglion) → antiviral + steroid",
+   "ref": [
+    "MED31 FA MCQ ข้อ 80 – ผื่น vesicle on erythematous base ขึ้นหน้าหู tongue ด้านขวา (โพยตอบ ตาบอด)",
+    "MED32 FA MCQ ข้อ 64 – ผื่นครึ่งซีกขวา → hearing loss",
+    "MED35 FA ครั้งที่ 1 ข้อ 8 – Bell palsy (ตัวเลือก Ramsay Hunt syndrome)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(22)",
+    "B4.2.2(6)"
+   ],
+   "years": [
+    "31",
+    "32",
+    "35"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-21",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Disseminated zoster in a transplant recipient",
+   "stem": "A 45-year-old kidney transplant recipient taking tacrolimus, mycophenolate and prednisolone developed a painful vesicular eruption along the left T8 dermatome 3 days ago. Today he has more than 30 scattered vesicles on the face, trunk and limbs well outside the primary and adjacent dermatomes, with fever and rising aminotransferases. Which is the most appropriate management?",
+   "choices": [
+    "Intravenous aciclovir with airborne and contact precautions",
+    "Oral valaciclovir at home with the lesions covered",
+    "Topical aciclovir cream and analgesia",
+    "Live attenuated zoster vaccine",
+    "Oral prednisolone alone to prevent post-herpetic neuralgia"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ภูมิคุ้มกันชนิดเซลล์ (T cell) เป็นตัวคุม VZV · ผู้ป่วยปลูกถ่ายอวัยวะ/HIV/มะเร็งเม็ดเลือด → ไวรัสหลุดจาก dermatome เข้ากระแสเลือด = **disseminated zoster** (≥20 ตุ่มนอก dermatome หลักและข้างเคียง หรือ ≥3 dermatomes) · ลงอวัยวะภายใน: **pneumonitis, hepatitis (transaminase ขึ้น), encephalitis, DIC**\n\n**การจัดการ**\n- **IV acyclovir 10 mg/kg q8h** (ปรับตามไต) จนไม่มีตุ่มใหม่และอาการดีขึ้น แล้วเปลี่ยนเป็นยากิน\n- **airborne + contact precautions** (เหมือนอีสุกอีใส) จนตกสะเก็ดหมด — ต่างจาก localized zoster ในคนปกติที่ใช้ standard precautions + ปิดแผล\n- ลดยากดภูมิเท่าที่ทำได้ร่วมกับทีมปลูกถ่าย\n\n**ป้องกันในอนาคต** — **recombinant zoster vaccine (RZV, ไม่ใช่เชื้อเป็น)** 2 เข็มห่าง 2–6 เดือน ใช้ได้ในอายุ ≥50 ปี และผู้ใหญ่ภูมิต่ำอายุ ≥19 ปี รวมถึงผู้ที่เคยเป็นงูสวัดแล้ว\n\n**ทำไมข้ออื่นผิด** — ยากินที่บ้าน/ยาทาไม่พอสำหรับโรคลงอวัยวะ · **live vaccine ห้ามในผู้ป่วยภูมิต่ำ** และไม่ใช่การรักษา · steroid อย่างเดียวทำให้ไวรัสลุกลาม (และไม่ป้องกัน PHN)",
+   "pearl": "งูสวัดกระจายนอก dermatome ในคนภูมิต่ำ = disseminated → IV acyclovir + airborne/contact precautions",
+   "ref": [
+    "CDC Shingles clinical overview & Infection control (2023)",
+    "ACIP Recombinant Zoster Vaccine recommendations 2022"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(22)",
+    "B4.2.2(6)"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-22",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Herpes zoster – the antiviral dose is higher than for HSV",
+   "stem": "A 68-year-old woman has had burning pain over the left chest for 3 days and, since yesterday, grouped vesicles on an erythematous base in a band from the spine to below the left breast, not crossing the midline. She is immunocompetent with normal renal function. Which antiviral regimen is most appropriate?",
+   "choices": [
+    "Oral aciclovir 800 mg five times daily for 7 days",
+    "Oral aciclovir 400 mg three times daily for 5 days",
+    "Oral aciclovir 200 mg once daily for 7 days",
+    "Topical aciclovir cream five times daily for 7 days",
+    "Oral oseltamivir 75 mg twice daily for 5 days"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — acyclovir เป็น prodrug ที่ต้องถูก **viral thymidine kinase** เติม phosphate ตัวแรก แล้วไปยับยั้ง viral DNA polymerase · **TK ของ VZV จับ acyclovir ได้แย่กว่า HSV** → ค่า IC50 ของ VZV สูงกว่า ~8–10 เท่า → **ต้องใช้ขนาดสูงกว่า**\n- **Zoster/varicella ผู้ใหญ่: acyclovir 800 mg 5 ครั้ง/วัน 7 วัน** หรือ **valacyclovir 1 g tid 7 วัน** (bioavailability ดีกว่า กินง่ายกว่า) หรือ famciclovir 500 mg tid\n- **HSV: 400 mg tid** (หรือ 200 mg 5 ครั้ง/วัน)\n- เริ่ม **ภายใน 72 ชม.หลังผื่นขึ้น** (ยังควรให้ถ้ามีตุ่มใหม่ ลงตา หรือภูมิต่ำ) · ลดความรุนแรง ระยะเวลา และปวดเฉียบพลัน\n- คุมปวดตั้งแต่ต้น · PHN รักษาด้วย **gabapentin/pregabalin, TCA, lidocaine patch**\n\n**ทำไมข้ออื่นผิด** — 400 mg tid เป็นขนาด HSV (ต่ำเกินสำหรับ VZV) · 200 mg วันละครั้งไม่มีที่ใช้ · ยาทาไม่ถึง ganglion · oseltamivir เป็นยาไข้หวัดใหญ่\n\n**จุดสอบจากโพย** — ผื่นตุ่มน้ำเรียงตาม dermatome ข้างเดียวไม่ข้ามกลางตัว = herpes zoster (ออกเป็นรูปแทบทุกรุ่น) · ถ้าลามจากหน้าผากถึงตา/ปลายจมูก = V1 → ส่งจักษุแพทย์ (Hutchinson sign)",
+   "pearl": "Zoster: acyclovir 800 mg ×5/วัน 7 วัน (valacyclovir 1 g tid) ภายใน 72 ชม. · HSV ใช้แค่ 400 mg tid",
+   "ref": [
+    "MED32 FA MCQ ข้อ 69 – รูป vesicle ที่หลังตามแนว dermatome → Herpes zoster ถาม management → Acyclovir",
+    "MED28 FA MCQ ข้อ 35 – Group of vesicles จากหน้าผากมาตา → Herpes zoster",
+    "MED30 FA MCQ ข้อ 62 – ภาพ lesion งูสวัดที่รักแร้ → Tzanck smear",
+    "MED31 FA MCQ ข้อ 47 – รูปผื่นที่หลัง → herpes zoster",
+    "MED33 FA MCQ ข้อ 45 – รอยผื่นขึ้นตาม nerve/dermatome → Herpes zoster",
+    "MED34 FA Skin ข้อ 3 – Multiple vesicle at left upper back and arm → Herpes zoster",
+    "MED35 สอบลงกองครั้งที่ 2 ข้อ 33 – รูปผื่นตามแนว dermatome ข้างหลัง (Shingles)",
+    "MED35 สอบลงกองครั้งที่ 1 ข้อ 72 – Maculopapular at back, erythematous base → Herpes zoster"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(22)",
+    "B4.2.2(6)"
+   ],
+   "years": [
+    "28",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35"
+   ],
+   "note_img": "หลายรุ่นให้รูปงูสวัด: MED35 ข้อ 33 ภาพวาด ADAM ตุ่มน้ำเรียงตาม dermatome ข้างลำตัว (caption 'Shingles') · MED30 ข้อ 62 ภาพงูสวัดที่รักแร้ · MED32 ข้อ 69 / MED31 ข้อ 47 ภาพตุ่มน้ำที่หลัง (ข้อนี้เขียนเป็น vignette ไม่ต้องใช้รูป)"
+  },
+  {
+   "id": "DE-INF-MCQ-23",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Measles – Koplik spots and the main cause of death",
+   "stem": "A 15-year-old unvaccinated migrant girl from Myanmar has had high fever, cough, coryza and red watery eyes for 4 days. Small bluish-white spots on a red base are seen on the buccal mucosa opposite the lower molars. Today a maculopapular rash began at the hairline and behind the ears and is spreading downward to the neck and trunk. Which complication accounts for most measles-related deaths?",
+   "choices": [
+    "Pneumonia",
+    "Subacute sclerosing panencephalitis",
+    "Acute post-infectious encephalomyelitis",
+    "Myocarditis",
+    "Orchitis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — measles virus (paramyxovirus) ติดทาง **airborne** (ติดง่ายที่สุดชนิดหนึ่ง) · เข้าเซลล์ภูมิคุ้มกันผ่าน **SLAM/CD150** → **กดภูมิคุ้มกันรุนแรงนานหลายสัปดาห์–เดือน ('immune amnesia')** แล้วออกเยื่อบุผ่าน nectin-4\n\n**ลำดับอาการ** — prodrome **3C (cough, coryza, conjunctivitis)** + ไข้สูง → **Koplik spots** (จุดขาวอมฟ้าบนฐานแดงที่กระพุ้งแก้มตรงฟันกราม — pathognomonic ขึ้นก่อนผื่น 1–2 วัน) → ผื่น maculopapular เริ่ม **ไรผม/หลังหู → ลงล่าง (cephalocaudal)** รวมเป็นปื้น · หายแล้วเป็นสีน้ำตาลลอกเป็นขุย\n\n**ภาวะแทรกซ้อน** — **pneumonia (viral หรือ bacterial ซ้ำเติม) เป็นสาเหตุการตายส่วนใหญ่** · อื่น ๆ: otitis media (พบบ่อยสุด), diarrhea, croup, acute encephalitis (~1/1000), **SSPE** (หายากมาก 7–10 ปีหลัง), keratitis/ตาบอดในเด็กขาดวิตามิน A\n\n**การจัดการ** — **vitamin A** (ลดตาย) · **แยก airborne 4 วันก่อนถึง 4 วันหลังผื่นขึ้น** · ผู้สัมผัสที่ไม่มีภูมิ: **MMR ภายใน 72 ชม.** หรือ immunoglobulin ภายใน 6 วัน (ตั้งครรภ์/ภูมิต่ำ/ทารก)\n\n**ทำไมข้ออื่นผิด** — SSPE และ encephalitis ร้ายแรงแต่พบน้อย · myocarditis ไม่ใช่ลักษณะเด่น · orchitis = mumps",
+   "pearl": "3C + Koplik + ผื่นเริ่มไรผมลงล่าง = measles · ตายส่วนใหญ่จาก pneumonia · ให้ vitamin A · แยก airborne ±4 วันของผื่น",
+   "ref": [
+    "MED34 FA ครั้งที่ 4 ข้อ 5 – 15 yo Myanmar girl, spot in buccal, ผื่น spread downward to neck and trunk → measles",
+    "MED32 FA MCQ ข้อ 67 – รูปตุ่มสีแดงบนหน้า ขึ้นที่หน้าก่อนค่อยลามไป trunk → pneumonia",
+    "MED33 Spot diagnosis ข้อ 16 – Measles"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(23)",
+    "B4.2.2(7)",
+    "2.1.50"
+   ],
+   "years": [
+    "32",
+    "33",
+    "34"
+   ],
+   "note_img": "MED32 ข้อ 67: รูปผื่นแดงที่ใบหน้าลามลงลำตัว (เฉลย pneumonia = ภาวะแทรกซ้อน) · MED33 spot dx: รูป measles"
+  },
+  {
+   "id": "DE-INF-MCQ-24",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Rubella – postauricular nodes and arthralgia",
+   "stem": "A 20-year-old woman has a low-grade fever and a pink maculopapular rash that began on the face and spread to the trunk and limbs within 24 hours; by day 3 it has faded from the face. She has tender postauricular and suboccipital lymph nodes and pain in the small joints of both hands. There is no cough or conjunctivitis and the buccal mucosa is normal. Which is the most likely diagnosis?",
+   "choices": [
+    "Rubella",
+    "Measles",
+    "Erythema infectiosum",
+    "Roseola infantum",
+    "Hand, foot and mouth disease"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — rubella virus (togavirus) ติดทาง droplet → เพิ่มจำนวนในต่อมน้ำเหลืองบริเวณคอหอย → **postauricular, posterior cervical, suboccipital lymphadenopathy** (มักนำผื่น) → viremia → ผื่นสีชมพูอ่อน เริ่มหน้า ลามเร็วภายใน 24 ชม. และ **หายภายใน 3 วัน ('3-day measles')** · อาการน้อยกว่า measles มาก · **ผู้หญิงวัยผู้ใหญ่มี arthralgia/arthritis ข้อเล็กของมือ** (immune complex) · อาจมี **Forchheimer spots** ที่เพดานอ่อน\n\n**จุดสำคัญ** — **congenital rubella syndrome** ถ้าติดในไตรมาสแรก: **cataract, PDA/pulmonary stenosis, sensorineural deafness** → ผู้หญิงวัยเจริญพันธุ์ต้องมีภูมิ (MMR, เว้นการตั้งครรภ์ 1 เดือนหลังฉีด) · แพร่เชื้อ ~7 วันก่อนถึง 7 วันหลังผื่น\n\n**ทำไมข้ออื่นผิด**\n- **Measles**: ไข้สูง + 3C + Koplik + ผื่นเข้ม ป่วยหนัก\n- **Erythema infectiosum (parvovirus B19)**: **'slapped cheek'** แล้วผื่นลูกไม้ (lacy reticular) ที่แขนขา · ผู้ใหญ่หญิงปวดข้อได้เช่นกัน แต่ไม่มีต่อมน้ำเหลืองหลังหูเด่น\n- **Roseola (HHV-6)**: ทารก 6 เดือน–2 ปี ไข้สูง 3–5 วัน **ผื่นขึ้นเมื่อไข้ลง**\n- **HFMD (enterovirus A71/coxsackie A16)**: แผลในปาก + ตุ่มน้ำรูปรีที่ฝ่ามือฝ่าเท้า ก้น\n\n(ไข้เลือดออก: ผื่นระยะฟื้นตัว 'islands of white in a sea of red' คันที่ฝ่ามือฝ่าเท้า)",
+   "pearl": "ผื่นชมพูอ่อนเริ่มหน้าหายใน 3 วัน + ต่อมน้ำเหลืองหลังหู/ท้ายทอย + ปวดข้อมือในหญิง = rubella",
+   "ref": [
+    "MED31 FA MCQ ข้อ 43 – post auricular lymph node โต → rubella",
+    "MED31 FA MCQ ข้อ 65 – (โจทย์จำไม่ได้) Ans Rubella"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(23)",
+    "B4.2.2(7)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "DE-INF-MCQ-25",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Crusted scabies in a bedridden patient",
+   "stem": "A 78-year-old bedridden man with diabetes in a nursing home has thick, grey-yellow, hyperkeratotic crusts on the hands, elbows and buttocks with fissuring and surprisingly little itch. Several nursing staff now have itchy papules on their wrists and finger webs. A mineral-oil scraping of the crusts shows numerous mites and eggs. Which is the most appropriate management?",
+   "choices": [
+    "Topical permethrin 5% plus repeated doses of oral ivermectin, with contact precautions and treatment of all contacts",
+    "A single application of permethrin 5%, repeated only if itching persists",
+    "Potent topical corticosteroid and an oral antihistamine",
+    "Oral terbinafine for 4 weeks",
+    "Topical mupirocin with oral cloxacillin"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ***Sarcoptes scabiei var. hominis*** ขุดอุโมงค์ใน stratum corneum · อาการคันเกิดจาก **delayed hypersensitivity ต่อตัวไร/ไข่/อุจจาระ** (คันหลังติด 3–6 สัปดาห์) · ใน **crusted (Norwegian) scabies** ผู้ป่วยภูมิต่ำ/ติดเตียง/ขยับเกาไม่ได้/รับรู้ลดลง → ไม่มีการตอบสนองที่คุมจำนวนไร → **ไรนับพันถึงล้านตัว** สร้างสะเก็ดหนา คันน้อย และ **ติดต่อสูงมาก** (บุคลากรติดตาม)\n\n**วินิจฉัย** — ขูดผิวหยด **mineral oil หรือ KOH** ส่องกล้องเห็นตัวไร ไข่ อุจจาระ (scybala) · scabies ธรรมดา: อุโมงค์ที่ง่ามนิ้ว ข้อมือ รักแร้ สะดือ อวัยวะเพศ คันกลางคืน คนในบ้านคัน\n\n**รักษา crusted scabies** — **permethrin 5% ทาทั้งตัว + ivermectin กิน 200 µg/kg หลายครั้ง (เช่น day 1, 2, 8, 9, 15 ± 22, 29)** + keratolytic ลอกสะเก็ด · **contact precautions** · ทำความสะอาดเตียง/ผ้า · **รักษาผู้สัมผัสทุกคนพร้อมกัน**\n\n**ทำไมข้ออื่นผิด** — permethrin ครั้งเดียวไม่พอในไรจำนวนมาก · steroid กดภูมิทำให้แย่ลง · terbinafine เป็นยาเชื้อรา · mupirocin/cloxacillin รักษาเฉพาะติดเชื้อแบคทีเรียแทรกซ้อน",
+   "pearl": "สะเก็ดหนาคันน้อยในผู้ป่วยติดเตียง + บุคลากรคัน = crusted scabies → permethrin + ivermectin ซ้ำ + contact isolation + รักษาผู้สัมผัส",
+   "ref": [
+    "MED32 SAQ ข้อ 3 – รอยแผล + KOH preparation Scabies ใน bedridden ที่เป็น DM: describe lesion, Dx scabiasis, ยา permethrin cream",
+    "MED30 FA Skin ข้อ 1 – รูปผื่น → scabies",
+    "CDC Scabies – Clinical care: crusted scabies (2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.12(10)",
+    "B4.2.2(10)",
+    "3.1.10"
+   ],
+   "years": [
+    "30",
+    "32"
+   ],
+   "note_img": "MED32 SAQ: รูปรอยแผล/สะเก็ดในผู้ป่วยติดเตียง + รูป KOH เห็นตัวไร · MED30: รูปผื่น scabies (โพยไม่บรรยาย)"
+  }
+ ],
+ "meq": [
+  {
+   "id": "DE-INF-MEQ-01",
+   "part": "MEQ",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Adult varicella with pneumonia — diagnosis, treatment, isolation and post-exposure care of a pregnant contact and a child",
+   "vignette": "ผู้ป่วยชายไทยอายุ 30 ปี อาชีพพนักงานบริษัท สูบบุหรี่วันละ 1 ซอง\nCC: ไข้ ผื่นตุ่มน้ำทั่วตัว 4 วัน ไอ เหนื่อย 1 วัน\nPI: 6 วันก่อนมีไข้ ปวดเมื่อย 2 วันต่อมามีผื่นคันขึ้นที่ใบหน้าและลำตัว แล้วลามไปแขนขา เป็นตุ่มแดง ตุ่มน้ำใส ตุ่มหนอง และสะเก็ด · 1 วันก่อนไอแห้ง เหนื่อยเวลาเดิน · 2 สัปดาห์ก่อน หลานชายที่มาพักบ้านเป็น 'ไข้ออกตุ่ม' · ไม่เคยเป็นอีสุกอีใส ไม่ทราบประวัติวัคซีน\nPH: แข็งแรงดี · ภรรยาอายุ 28 ปี ตั้งครรภ์ 12 สัปดาห์ จำไม่ได้ว่าเคยเป็นอีสุกอีใส · ลูกสาวอายุ 3 ปี แข็งแรง ยังไม่ได้รับวัคซีนอีสุกอีใส · ทั้งคู่อยู่บ้านเดียวกับผู้ป่วยตลอด\nV/S: BT 38.8 °C, PR 112/min, RR 28/min, BP 120/70 mmHg, SpO2 90% (room air)\nPE: ตุ่มหลายระยะ (papule, vesicle บนฐานแดง, pustule, crust) กระจายทั่วตัว หนาแน่นที่ลำตัวมากกว่าแขนขา มีที่หนังศีรษะและเพดานปาก · ปอด fine crepitation both lower lungs\nLab: CBC: WBC 5,200/µL, Plt 140,000/µL · CXR: bilateral diffuse nodular infiltrates · AST 85 U/L, ALT 92 U/L",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยที่สมบูรณ์ และบอกลักษณะผื่นที่ช่วยแยกจาก smallpox และ disseminated zoster (3 คะแนน)",
+     "a": "**Varicella (chickenpox) ในผู้ใหญ่ ร่วมกับ varicella pneumonia (มี hypoxemia) ± mild hepatitis**\n\n**ลักษณะผื่นที่ช่วยวินิจฉัย**\n- **ผื่นหลายระยะในบริเวณเดียวกันพร้อมกัน (papule–vesicle–pustule–crust)** เพราะ viremia เป็นระลอก · **smallpox ทุกตุ่มอยู่ระยะเดียวกัน** ตุ่มลึกแข็ง หนาแน่นที่หน้าและแขนขา (centrifugal) รวมถึงฝ่ามือฝ่าเท้า\n- กระจาย **centripetal (ลำตัวมากกว่าแขนขา)** มีที่หนังศีรษะและเยื่อบุปาก\n- **disseminated zoster** จะมีแถบ dermatome ที่เป็นก่อนและหนาแน่นที่สุด แล้วมีตุ่มกระจาย มักในผู้ป่วยภูมิต่ำ — รายนี้ไม่มีแถบนำ ไม่เคยเป็นอีสุกอีใส และมีประวัติสัมผัสเด็กที่มีไข้ออกตุ่ม 2 สัปดาห์ก่อน (ระยะฟักตัว 10–21 วัน)\n\n**ปัจจัยเสี่ยง pneumonia**: ผู้ใหญ่ สูบบุหรี่"
+    },
+    {
+     "q": "2. จงบอกการตรวจยืนยันเชื้อที่เหมาะสม 1 อย่าง และสิ่งที่คาดว่าจะพบจาก Tzanck smear (2 คะแนน)",
+     "a": "- **VZV PCR จากน้ำ/ก้นตุ่มน้ำใหม่** — sensitive และ specific ที่สุด แยก VZV จาก HSV ได้ (ทางเลือก: DFA)\n- **Tzanck smear**: ขูดก้นตุ่มน้ำ ย้อม Giemsa/Wright เห็น **multinucleated giant cells (nuclear moulding, margination of chromatin)** — ยืนยันว่าเป็น herpesvirus กลุ่ม HSV/VZV แต่ **แยก HSV กับ VZV ไม่ได้**\n- clinical diagnosis ก็เพียงพอให้เริ่มยาได้ ไม่ต้องรอผล"
+    },
+    {
+     "q": "3. จงเขียนการรักษาและการป้องกันการแพร่เชื้อในโรงพยาบาลให้ครบถ้วน (4 คะแนน)",
+     "a": "**Admit — ห้องแยกโรค airborne (negative pressure) + contact precautions**\n- บุคลากรที่ดูแลต้องมีภูมิต่อ VZV (เคยเป็น/ได้วัคซีน 2 เข็ม) · ใส่ N95 · แยก **จนตุ่มตกสะเก็ดหมดทุกตุ่ม**\n\n**ยาต้านไวรัส**\n- **IV acyclovir 10 mg/kg (ideal body weight) q 8 hr** (ปรับตามไต) · ให้สารน้ำพอเพื่อป้องกัน crystal nephropathy · รวม 7–10 วัน เปลี่ยนเป็นยากิน (valacyclovir 1 g tid) เมื่อดีขึ้น\n\n**Supportive**\n- O2 keep SpO2 ≥94% · เฝ้าระวัง respiratory failure (อาจต้อง ICU/ventilator)\n- paracetamol ลดไข้ — **ห้ามใช้ aspirin** (Reye syndrome ในเด็ก) และหลีกเลี่ยง NSAIDs (สัมพันธ์กับ invasive GAS skin infection)\n- antihistamine ลดคัน ตัดเล็บ ป้องกัน secondary bacterial infection\n- ติดตาม LFT, CBC, Cr · ให้หยุดสูบบุหรี่"
+    },
+    {
+     "q": "4. ภรรยาตั้งครรภ์ 12 สัปดาห์ จำไม่ได้ว่าเคยเป็นอีสุกอีใส ท่านจะจัดการอย่างไร และบอกความเสี่ยงต่อทารก (3 คะแนน)",
+     "a": "- **ตรวจ VZV IgG ทันที** (ส่วนใหญ่ของผู้ใหญ่ไทยมีภูมิแล้ว)\n  - **IgG บวก** → มีภูมิแล้ว ไม่ต้องทำอะไรเพิ่ม\n  - **IgG ลบ (หรือตรวจไม่ได้ทันเวลา)** → ให้ **VariZIG (varicella-zoster immune globulin) ภายใน 10 วันหลังสัมผัส (ยิ่งเร็วยิ่งดี)**\n- **ห้ามให้ varicella vaccine ในหญิงตั้งครรภ์ (live attenuated)** → ให้หลังคลอด\n- ถ้าเกิดอีสุกอีใส → ให้ **acyclovir กิน** (รุนแรง/pneumonia ให้ IV) · หญิงตั้งครรภ์เสี่ยง varicella pneumonia รุนแรง\n- **ความเสี่ยงทารก**: ติดเชื้อช่วง **<20 สัปดาห์** → **congenital varicella syndrome (~0.4–2%)**: แผลเป็นตาม dermatome, แขนขาลีบ/สั้น, ตา (chorioretinitis, cataract), สมอง · ถ้าแม่ออกผื่น **5 วันก่อน–2 วันหลังคลอด** → neonatal varicella รุนแรง (ทารกต้องได้ VariZIG)"
+    },
+    {
+     "q": "5. ลูกสาวอายุ 3 ปี แข็งแรง ยังไม่ได้รับวัคซีน จะป้องกันอย่างไร (2 คะแนน)",
+     "a": "- **Post-exposure varicella vaccination ภายใน 3 วัน (อย่างช้า 5 วัน) หลังสัมผัส** — ป้องกันหรือลดความรุนแรงได้ดี และถือเป็นเข็มแรกของชุดวัคซีน (เข็ม 2 ตามกำหนด)\n- ไม่ต้องให้ VariZIG ในเด็กที่ภูมิปกติ\n- ถ้าเลยช่วงหรือป่วย → acyclovir กินพิจารณาเป็นราย (เด็กปกติอาการมักไม่รุนแรง) · ระวังภาวะแทรกซ้อน secondary GAS infection\n- แยกจากผู้ป่วยเท่าที่ทำได้จนกว่าผู้ป่วยตกสะเก็ดหมด"
+    }
+   ],
+   "ref": [
+    "CDC Chickenpox (Varicella) for Healthcare Professionals 2024",
+    "ACOG Practice Bulletin: Varicella in pregnancy",
+    "สมาคมโรคติดเชื้อในเด็กแห่งประเทศไทย ตารางวัคซีน 2567"
+   ],
+   "nl": [
+    "2.3.1(22)",
+    "B4.2.2(6)",
+    "3.1.10"
+   ]
+  },
+  {
+   "id": "DE-INF-MEQ-02",
+   "part": "MEQ",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "Lower-leg erysipelas/cellulitis with tinea pedis as the portal of entry — diagnosis, antibiotics, necrotizing infection red flags and preventing recurrence",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 62 ปี อาชีพแม่ค้าขายของในตลาดสด\nU/D: DM type 2 (HbA1c 8.4%), obesity (BMI 32), เคยผ่าตัดเส้นเลือดขอดขาขวา · เคยเป็นขาขวาแดงอักเสบแบบนี้ 3 ครั้งใน 1 ปี\nCC: ขาขวาบวมแดงร้อน 1 วัน\nPI: 1 วันก่อนมีไข้หนาวสั่น 2–3 ชม.ต่อมาสังเกตว่าหน้าแข้งขวาแดง ร้อน เจ็บ ลามขึ้น ไม่มีบาดแผลชัดเจน · เท้าเปียกน้ำทั้งวัน คันซอกนิ้วเท้ามานาน\nV/S: BT 38.9 °C, PR 108/min, RR 20/min, BP 128/78 mmHg\nPE: หน้าแข้งขวามีปื้นแดงสด 12 × 8 cm ร้อน กดเจ็บ **ผิวนูนกว่าผิวรอบข้าง ขอบชัดคลำได้** ผิวตึงเป็นมัน ไม่มี fluctuation ไม่มีหนอง ไม่มีตุ่มน้ำ · inguinal LN ขวาโต กดเจ็บ · ซอกนิ้วเท้าที่ 4–5 ขวามีผิวเปื่อยขาวลอก มีรอยแตก\nLab: WBC 15,600/µL (N 88%), FBS 240 mg/dL, Cr 0.9 mg/dL",
+   "questions": [
+    {
+     "q": "1. จงบรรยายรอยโรคที่ขาด้วยศัพท์ทางผิวหนัง และให้การวินิจฉัยพร้อมเหตุผลที่แยกจาก cellulitis (3 คะแนน)",
+     "a": "**บรรยาย**: single, well-defined, bright red, raised, shiny, warm, tender erythematous plaque 12 × 8 cm at right shin with palpable sharply demarcated border, no pus, no fluctuation, no bullae · ร่วมกับ tender right inguinal lymphadenopathy\n\n**Dx: Erysipelas ของขาขวา (recurrent) ร่วมกับ SIRS** · portal of entry = **interdigital tinea pedis**\n\n**แยกจาก cellulitis**: erysipelas อยู่ **dermis ชั้นบน + lymphatics ผิวตื้น** → ผื่น **นูน ขอบชัดคลำได้** สีแดงสด ไข้หนาวสั่นนำมาก่อนชัด · cellulitis อยู่ **dermis ลึก + subcutaneous fat** → ผื่น **แบน ขอบไม่ชัด** (ในทางปฏิบัติแนวทางรักษาคล้ายกัน)"
+    },
+    {
+     "q": "2. เชื้อก่อโรคที่เป็นไปได้มากที่สุดคืออะไร ท่านจะส่งตรวจอะไรที่ซอกนิ้วเท้า และคาดว่าจะพบอะไร (3 คะแนน)",
+     "a": "- เชื้อหลัก: **β-hemolytic streptococci โดยเฉพาะ *Streptococcus pyogenes* (group A)** (รองลงมา group B/C/G ในเบาหวาน) · ไม่มีหนอง จึงไม่คิดถึง *S. aureus* เป็นหลัก\n- Blood culture มี yield ต่ำ (<5%) ไม่จำเป็นในรายทั่วไป (ส่งเมื่อภูมิต่ำ/รุนแรง)\n- ซอกนิ้วเท้า: ขูดขุย **10–20% KOH preparation** → คาดพบ **long, branching, septate hyphae** (dermatophyte เช่น *T. rubrum*, *T. mentagrophytes*) → ยืนยัน **tinea pedis (interdigital)** ซึ่งทำให้ผิวแตกเป็นประตูให้ strep เข้า"
+    },
+    {
+     "q": "3. จงเขียนแผนการรักษาเริ่มต้นพร้อมขนาดยา และระบุว่าเมื่อใดจึงต้องเพิ่มยาครอบคลุม MRSA (4 คะแนน)",
+     "a": "**Admit** (มี SIRS: ไข้ >38, HR >90, WBC >12,000 + เบาหวานคุมไม่ดี = moderate non-purulent SSTI ตาม IDSA)\n- **Cefazolin 1–2 g IV q 8 hr** (หรือ **penicillin G 2–4 MU IV q 4–6 hr**; แพ้ penicillin รุนแรง → clindamycin) → เปลี่ยนเป็นยากิน (cephalexin 500 mg qid / dicloxacillin) เมื่อไข้ลง ผื่นหยุดลาม · **รวม 5 วัน** (ขยายถ้ายังไม่ดีขึ้น)\n- **ยกขาสูง** ลดบวม (ช่วยหายเร็ว) · วาดขอบผื่นด้วยปากกาเพื่อติดตาม\n- **รักษา tinea pedis**: ยาทา azole/terbinafine ซอกนิ้วเท้า 2–4 สัปดาห์ ให้เท้าแห้ง\n- คุมน้ำตาล (insulin ระหว่าง admit)\n\n**เพิ่ม MRSA coverage (vancomycin) เมื่อ**: penetrating trauma, IVDU, MRSA colonization/เคยติดเชื้อ MRSA, มีหนองที่อื่น, หรือ **SIRS + hypotension/severe** (ร่วมกับ pip-tazo)"
+    },
+    {
+     "q": "4. วันที่ 2 ของการรักษา พบลักษณะใดบ้างที่ทำให้ท่านสงสัย necrotizing fasciitis และต้องทำอะไรทันที (3 คะแนน)",
+     "a": "**Red flags**\n- **ปวดมากเกินสัดส่วน**ของผื่นที่เห็น\n- **บวมแข็ง (woody) เลยขอบผื่นออกไป**\n- **ตุ่มน้ำ โดยเฉพาะตุ่มน้ำเลือด**, ผิวม่วงคล้ำ/ดำ (necrosis)\n- **ชาบริเวณผื่น**, crepitus\n- ลามเร็วเป็นชั่วโมงแม้ได้ยา · ความดันต่ำ สับสน ไตวาย · lab: Na ต่ำ, CRP สูงมาก, Cr สูง, glucose สูง (LRINEC)\n\n**ทำทันที** — **ปรึกษาศัลยแพทย์เพื่อผ่าตัดสำรวจ/debridement ด่วน (ไม่รอ imaging)** · เปลี่ยนยาเป็น **vancomycin + piperacillin–tazobactam + clindamycin** · resuscitate ตาม sepsis bundle · H/C × 2, ส่งเนื้อเยื่อย้อม Gram/เพาะเชื้อ"
+    },
+    {
+     "q": "5. ผู้ป่วยเป็นซ้ำ 4 ครั้งใน 1 ปี จงให้คำแนะนำป้องกันการกลับเป็นซ้ำ (2 คะแนน)",
+     "a": "- **แก้ปัจจัยเสี่ยงเฉพาะที่**: รักษา **tinea pedis** ให้หายและป้องกันซ้ำ (เท้าแห้ง เปลี่ยนรองเท้า/ถุงเท้า ยาทาต่อเนื่อง) · รักษา **venous insufficiency/บวม** ด้วยถุงน่องอัดแรง ยกขา · ลดน้ำหนัก คุมเบาหวาน · ทาครีมป้องกันผิวแห้งแตก\n- **IDSA: เป็นซ้ำ 3–4 ครั้ง/ปีแม้แก้ปัจจัยแล้ว → ยาป้องกัน** เช่น **penicillin V 250 mg bid กิน** หรือ **benzathine penicillin IM ทุก 2–4 สัปดาห์** (หรือ erythromycin ถ้าแพ้)"
+    }
+   ],
+   "ref": [
+    "IDSA Practice Guidelines for SSTI 2014 (Stevens et al., Clin Infect Dis)",
+    "MED33 FA – Erysipelas; MED35 ข้อ 85 – Erysipelas; MED34 Endo ข้อ 4 – DM ขาแดง NF/Cellulitis/Erysipelas"
+   ],
+   "nl": [
+    "2.3.12(4)",
+    "B4.2.2(3)",
+    "2.2.50",
+    "2.3.12(11)",
+    "3.1.10"
+   ]
+  },
+  {
+   "id": "DE-INF-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "D04",
+   "lecture": "Impetigo, Cellulitis, Herpes, Viral exanthem, Superficial mycoses (อ.วรณิสร์)",
+   "topic": "SAQ – ผื่นใต้ราวนม: บรรยายผื่น อ่าน KOH แยกโรคเชื้อราในซอกพับ และรักษา candidal intertrigo",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "instruction": "ผู้ป่วยหญิงอายุ 58 ปี น้ำหนัก 92 กก. เป็นเบาหวาน มาด้วยผื่นคันแสบใต้ราวนมทั้งสองข้าง 3 สัปดาห์ ช่วงอากาศร้อน เหงื่อออกมาก ซื้อครีมทาเองแล้วไม่ดีขึ้น\n\n**ภาพที่ 1 (ภาพถ่ายผื่น)**: บริเวณซอกใต้ราวนมทั้งสองข้าง เห็นปื้นแดงสด (beefy red) ผิวเปียกชื้นและเปื่อยขาวบริเวณก้นซอกที่ผิวสองด้านสัมผัสกัน ขอบไม่นูน มีขุยลอกบาง ๆ ที่ขอบ นอกขอบปื้นมีตุ่มแดงและตุ่มหนองขนาด 1–2 มม. กระจายเป็นจุด ๆ แยกออกมาจากปื้นหลัก\n\n**ภาพที่ 2 (KOH preparation จากขุยที่ขอบผื่น ×400)**: เซลล์ยีสต์รูปไข่ขนาดเล็กจำนวนมาก บางตัวมีหน่อแตกออก ร่วมกับสายยาวที่มีรอยคอดเป็นช่วง ๆ คล้ายไส้กรอกต่อกัน (ไม่มีผนังกั้นจริง)\n\n**คำถาม**\n1. จงบรรยายรอยโรคในภาพที่ 1 ด้วยศัพท์ทางผิวหนัง (3 คะแนน)\n2. จงบรรยายสิ่งที่เห็นในภาพที่ 2 และบอกชื่อเชื้อที่น่าจะเป็นมากที่สุด (3 คะแนน)\n3. จงให้การวินิจฉัย และบอกโรคแยกอีก 2 โรคที่พบในซอกพับ พร้อมลักษณะ/การตรวจที่ใช้แยก (2 คะแนน)\n4. จงเขียนการรักษาและคำแนะนำ (2 คะแนน)",
+   "answer": "**1. บรรยายรอยโรค (3 คะแนน)**\n- **Bilateral, well-defined (ขอบค่อนข้างชัดแต่ไม่นูน), bright red (beefy red), moist, macerated erythematous patches/plaques at both inframammary folds** with fine peripheral scale (1)\n- **multiple discrete satellite erythematous papules and pustules 1–2 mm beyond the main border** (1) — คำสำคัญที่ผู้ตรวจมองหา\n- secondary change: maceration/erosion ที่ก้นซอก (1)\n\n**2. ภาพ KOH (3 คะแนน)**\n- **Numerous oval budding yeast cells (blastoconidia) with pseudohyphae** (เส้นยาวมีรอยคอดเป็นช่วง ไม่มี true septa) (2)\n- เชื้อ: ***Candida albicans*** (1)\n- *ห้ามเขียนว่า septate hyphae (dermatophyte) หรือ short hyphae + yeast clusters (spaghetti and meatballs = Malassezia)*\n\n**3. การวินิจฉัยและโรคแยก (2 คะแนน)**\n- **Candidal intertrigo (cutaneous candidiasis) ที่ inframammary folds** — ปัจจัยเสี่ยง: อ้วน เบาหวาน เหงื่อ อากาศร้อนชื้น (1)\n- โรคแยก (เลือก 2, ข้อละ 0.5):\n  | โรค | ลักษณะ | การตรวจ |\n  |---|---|---|\n  | **Tinea corporis/cruris** | วงแหวน **ขอบนูนมีขุย active border, central clearing** ไม่มี satellite | KOH: **long branching septate hyphae** |\n  | **Erythrasma** | ปื้นแบน **สีน้ำตาลแดง** ขุยละเอียด ไม่มี satellite | KOH ลบ · **Wood's lamp coral-red** |\n  | **Inverse psoriasis** | ปื้นแดงขอบชัดมันวาว ไม่มีขุยหนา ไม่มี satellite มีรอยโรคที่อื่น/เล็บ | KOH ลบ |\n  | **Pityriasis versicolor** | ด่างขาว/น้ำตาลมีขุยละเอียดที่ลำตัว | KOH: spaghetti and meatballs |\n\n**4. การรักษาและคำแนะนำ (2 คะแนน)**\n- **Topical azole: clotrimazole 1% (หรือ miconazole/ketoconazole) cream ทาวันละ 2 ครั้ง 2 สัปดาห์** หรือจนหายแล้วต่ออีก 1 สัปดาห์ (หรือ nystatin) (1)\n- **ทำให้ซอกพับแห้ง**: ซับให้แห้งหลังอาบน้ำ ใช้ผ้าฝ้ายรองใต้ราวนม ใส่เสื้อชั้นในพอดีระบายอากาศ ลดน้ำหนัก **คุมระดับน้ำตาล** (0.5)\n- **หลีกเลี่ยงครีม steroid** (ยาซื้อเองมักผสม steroid ทำให้แย่ลง) · ผื่นกว้าง/ไม่ตอบสนอง → **fluconazole 150 mg สัปดาห์ละครั้ง 2–4 สัปดาห์** · ถ้าเป็นซ้ำบ่อยให้ตรวจ HbA1c และ anti-HIV (0.5)\n\n**ข้อผิดพลาดที่พบบ่อย** — ไม่เขียนคำว่า satellite lesion · เขียน KOH เป็น 'เชื้อรา' เฉย ๆ โดยไม่บอก budding yeast + pseudohyphae · สั่ง terbinafine กิน (ได้ผลต่อ Candida ไม่ดี)",
+   "ref": [
+    "MED29 SAQ – ผื่นใต้ราวนม: บรรยายลักษณะผื่น ส่งอะไร เป็นโรคอะไร เชื้อจากอะไร รักษาอย่างไร",
+    "MED30 FA Skin ข้อ 3 – ผื่นใต้นม tx → Clotrimazole",
+    "MED33 SAQ ตัวอย่าง – Candidiasis: Erythematous plaque with satellite lesion and skin maceration; KOH budding yeast with pseudohyphae"
+   ],
+   "nl": [
+    "2.3.12(11)",
+    "B4.2.2(9)",
+    "3.1.10"
+   ],
+   "years": [
+    "29",
+    "30",
+    "33"
+   ],
+   "note_img": "โพย MED29 ให้รูปผื่นใต้ราวนม (ไม่ได้บรรยายลักษณะ) · MED33 หน้า 63 มีภาพตัวอย่าง KOH 4 ภาพ (spaghetti and meatballs / budding yeast with pseudohyphae / septate hyphae) — ข้อนี้บรรยายภาพเป็นข้อความแทนรูป"
+  }
+ ]
+}

@@ -1,0 +1,913 @@
+{
+ "mcq": [
+  {
+   "id": "NEU-CNS-MCQ-01",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "CSF interpretation – acute bacterial meningitis",
+   "stem": "A 45-year-old man has had fever, severe headache and neck stiffness for 3 days. Lumbar puncture: opening pressure 25 cmH2O, closing pressure 20 cmH2O; slightly turbid CSF; WBC 500 cells/µL (neutrophils 100%); protein 100 mg/dL; CSF glucose 30 mg/dL with a simultaneous blood glucose of 100 mg/dL. Gram stain is pending. Which interpretation is most appropriate?",
+   "choices": [
+    "Acute bacterial meningitis (neutrophilic pleocytosis, CSF:serum glucose ratio 0.3)",
+    "Viral (aseptic) meningitis",
+    "Tuberculous meningitis",
+    "Cryptococcal meningitis",
+    "Traumatic tap with otherwise normal CSF"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** แบคทีเรียใน subarachnoid space กระตุ้น cytokine (TNF-α, IL-1) → neutrophil เข้ามาจำนวนมาก, blood–brain barrier รั่ว (protein สูง), แบคทีเรียและ neutrophil ใช้ glucose รวมทั้งการขนส่ง glucose เข้า CSF ลดลง (glucose ต่ำ) และ CSF outflow ถูกขัดขวาง (OP สูง)\n\n**ตาราง CSF ที่ต้องจำ**\n| | OP (cmH2O) | WBC/µL (ชนิดเด่น) | Protein (mg/dL) | Glucose / ratio |\n|---|---|---|---|---|\n| ปกติ | 6–20 (≤25 ในคนอ้วน) | ≤5 (lymph) | 15–45 | 45–80 / ≥0.6 |\n| Bacterial | ↑↑ 20–50 | 1,000–5,000 (PMN) | 100–500 | <40 / ≤0.4 |\n| Viral | ปกติ–↑เล็กน้อย | 50–1,000 (lymph; ระยะแรกอาจ PMN) | ปกติ–<100 | ปกติ |\n| TB | ↑ | 50–500 (lymph) | ↑↑ 100–500+ | ต่ำ / <0.5 |\n| Cryptococcal (HIV) | ↑↑↑ (>25 พบบ่อย) | ต่ำ <50 (lymph) | ↑ เล็กน้อย | ปกติ–ต่ำ |\n| Eosinophilic | ↑ | ↑ eos ≥10% หรือ ≥10/µL | ↑ | ปกติ–ต่ำเล็กน้อย |\n| Partially treated bacterial | ↑ | ↑ (PMN อาจเปลี่ยนเป็น lymph) | ↑ | ต่ำน้อยลง, gram stain/culture ลบได้ |\n\n**ข้อนี้:** ratio = 30/100 = 0.3 (≤0.4) + PMN เด่น + protein 100 → bacterial\n- **Viral:** glucose ต้องปกติ (ratio ≥0.6) และ lymphocyte เด่น\n- **TB:** lymphocyte เด่น, protein มักสูงกว่า 100 มาก, ประวัติ subacute >1–2 สัปดาห์\n- **Cryptococcal:** WBC มักต่ำ (<50) และ lymphocyte เด่น ในผู้ป่วย HIV\n- **Traumatic tap:** ไม่ทำให้ glucose ต่ำ และไม่ทำให้ PMN 500 ล้วนโดยไม่มี RBC จำนวนมาก",
+   "pearl": "CSF glucose ต้องแปลคู่กับ blood glucose เสมอ: ratio ≤0.4 = ชี้ bacterial (ระวังคนเบาหวานที่ CSF glucose 'ปกติ' แต่ ratio ต่ำ)",
+   "ref": [
+    "MED29 SAQ – คอแข็ง ปวดหัว 3 วัน OP 25/CP 20, WBC 500 (N100%), sugar 30/blood 100, protein 100 → แปลผล + เชื้อ S. pneumoniae",
+    "MED30 MCQ 78 – CSF WBC 500 ย้อมแกรมเจอเชื้อ → ceftriaxone",
+    "MED35 ลงกอง1 SAQ-P2 – ให้ผล CSF ต่อจาก OSCE ไข้ปวดศีรษะ → bacterial meningitis"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)"
+   ],
+   "years": [
+    "29",
+    "30",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-02",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Gram-positive diplococci meningitis – empirical regimen",
+   "stem": "A 38-year-old previously healthy woman presents with fever, headache and confusion for 1 day. She has not received any antibiotic. CT brain is normal. CSF: WBC 2,400 cells/µL (90% neutrophils), protein 220 mg/dL, glucose 20 mg/dL (blood glucose 110 mg/dL). Gram stain shows lancet-shaped gram-positive diplococci. Susceptibility results are pending. Which regimen is most appropriate now?",
+   "choices": [
+    "IV ceftriaxone 2 g every 12 h plus IV vancomycin, with dexamethasone given just before or with the first antibiotic dose",
+    "IV meropenem monotherapy without dexamethasone",
+    "IV piperacillin-tazobactam monotherapy",
+    "IV trimethoprim-sulfamethoxazole monotherapy",
+    "IV penicillin G 4 MU every 4 h alone"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** gram-positive diplococci รูปหอก = *Streptococcus pneumoniae* ซึ่งดื้อ penicillin ได้จากการเปลี่ยน penicillin-binding protein (PBP) และบางสายพันธุ์ลดความไวต่อ ceftriaxone ด้วย จึงให้ **ceftriaxone + vancomycin** จนกว่าจะได้ผลความไว ร่วมกับ **dexamethasone 0.15 mg/kg q6h × 4 วัน** ซึ่งลด mortality และ hearing loss ใน pneumococcal meningitis\n\n- **Meropenem:** ใช้ได้เป็นทางเลือกแต่ไม่ใช่ first-line และผู้ป่วยรายนี้ควรได้ dexamethasone\n- **Piperacillin-tazobactam:** ผ่าน BBB ได้ไม่ดี ไม่ใช้รักษา meningitis\n- **TMP-SMX:** เป็นทางเลือกสำหรับ *Listeria* ในคนแพ้ penicillin ไม่ใช่ pneumococcus\n- **Penicillin G เดี่ยว:** ใช้ได้เฉพาะเมื่อยืนยันว่า MIC ต่อ penicillin ต่ำ (≤0.06 µg/mL) แล้วเท่านั้น",
+   "pearl": "GP diplococci ใน CSF = pneumococcus → ceftriaxone + vancomycin + dexamethasone จนรู้ผลความไว",
+   "ref": [
+    "MED32 MCQ 60 – meningitis ย้อมเจอ gram positive diplococci ให้ยาอะไร (choice: vanco, mero, tazocin, bactrim)",
+    "IDSA bacterial meningitis guideline 2004; ESCMID 2016"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)"
+   ],
+   "years": [
+    "32"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-03",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Streptococcus suis meningitis",
+   "stem": "A 52-year-old man from Phayao who drinks alcohol daily presents with fever, headache and drowsiness for 2 days. Four days earlier he ate 'lu' (raw pig blood mixed with minced raw pork) at a village party. He has neck stiffness and new bilateral hearing loss. CSF shows 1,500 WBC/µL (neutrophils 92%), glucose 25 mg/dL (blood 130 mg/dL), and gram-positive cocci in pairs and short chains. Which antibiotic is most appropriate?",
+   "choices": [
+    "IV ceftriaxone 2 g every 12 hours for about 14 days",
+    "Oral amoxicillin 1 g three times daily for 7 days",
+    "IV metronidazole 500 mg every 8 hours",
+    "IV gentamicin monotherapy",
+    "Oral doxycycline 100 mg twice daily"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Streptococcus suis* (ส่วนใหญ่ serotype 2) เป็น zoonosis จากหมู เข้าสู่ร่างกายทาง GI จากการกินหมูดิบ/เลือดหมูดิบ (ลู่ ลาบดิบ หลู้) หรือทางแผลที่ผิวหนังในคนชำแหละหมู → bacteremia → meningitis เชื้อยังไวต่อ penicillin/ceftriaxone เป็นส่วนใหญ่\n- ลักษณะเด่น: **sensorineural hearing loss** (50–70%, มักถาวร จาก suppurative labyrinthitis), vertigo/ataxia, septic shock + purpura คล้าย meningococcemia, arthritis, endocarditis; ปัจจัยเสี่ยง = ผู้ชาย ดื่มสุรา กินหมูดิบ ภาคเหนือ/อีสาน\n- รักษา: **ceftriaxone 2 g IV q12h ~14 วัน** (หรือ penicillin G 24 MU/day) + dexamethasone (การศึกษาในเวียดนามพบลด hearing loss) ตรวจ audiogram\n\n- **Amoxicillin oral:** ไม่ถึงระดับใน CSF พอสำหรับ meningitis\n- **Metronidazole:** ครอบคลุม anaerobe ใช้ใน brain abscess ไม่ใช่ streptococcus\n- **Gentamicin เดี่ยว:** ผ่าน BBB ไม่ดีและไม่ใช่ยาหลักสำหรับ gram-positive cocci\n- **Doxycycline:** ใช้ใน rickettsia/leptospirosis ไม่ใช่ bacterial meningitis",
+   "pearl": "ไข้ + คอแข็ง + หูหนวก + กินหมูดิบ/ดื่มเหล้า = S. suis → ceftriaxone, ระวังหูดับถาวร",
+   "ref": [
+    "MED32 MCQ 54 (ตรงโพย) – เกี่ยวกับหมู gram +ve cocci stiff neck +ve ให้ยาอะไร → cef-3",
+    "MED31 MCQ 26 – เกี่ยวกับหมู gram positive cocci stiff neck +ve → cef-3"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)"
+   ],
+   "years": [
+    "31",
+    "32"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-04",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Brain abscess",
+   "stem": "A 48-year-old man with severe dental caries has had progressive headache and low-grade fever for 2 weeks and new left-sided weakness for 2 days. GCS 15. Contrast CT brain shows a 3.5-cm ring-enhancing lesion with surrounding edema in the right frontal lobe and mild midline shift. HIV test is negative. Which is the most appropriate management?",
+   "choices": [
+    "Neurosurgical aspiration for Gram stain/culture plus IV ceftriaxone and metronidazole for 6–8 weeks",
+    "Lumbar puncture for CSF culture before starting antibiotics",
+    "IV acyclovir 10 mg/kg every 8 hours",
+    "Oral albendazole plus prednisolone",
+    "Empirical anti-tuberculous therapy alone and repeat CT in 3 months"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** brain abscess เกิดจาก contiguous spread (ฟัน, sinus, หู → frontal/temporal lobe), hematogenous spread (IE, lung abscess, cyanotic heart disease → หลายก้อนที่ gray–white junction) หรือ trauma/neurosurgery เชื้อมักเป็น polymicrobial: viridans/*S. anginosus* group + anaerobes\n- ก้อน >2.5 cm หรือมี mass effect → **aspiration/excision** เพื่อลดขนาดและได้เชื้อ\n- empirical: **ceftriaxone 2 g IV q12h + metronidazole 500 mg IV q8h** (เพิ่ม vancomycin ถ้าหลังผ่าตัด/trauma) นาน 6–8 สัปดาห์ ติดตาม imaging\n\n- **LP:** ห้ามทำเมื่อมี mass effect เสี่ยง herniation และผล CSF มักไม่ช่วยวินิจฉัย\n- **Acyclovir:** สำหรับ HSV encephalitis (temporal lobe, ไม่มี ring-enhancing abscess)\n- **Albendazole + prednisolone:** สำหรับ neurocysticercosis (cyst มี scolex) ไม่ใช่ pyogenic abscess\n- **Anti-TB เดี่ยว:** tuberculoma เป็น differential แต่ประวัติฟันผุ + ring lesion เดี่ยวกับ edema → pyogenic abscess ก่อน",
+   "pearl": "Ring-enhancing lesion + fever: อย่าเจาะหลัง → aspiration + ceftriaxone/metronidazole",
+   "ref": [
+    "IDSA/ESCMID 2023 brain abscess guideline"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.6-3(6)",
+    "B3.2.2-3(1)"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-05",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Listeria meningitis",
+   "stem": "A 60-year-old woman with type 2 diabetes, hypertension and CKD stage 5 presents with fever and progressive alteration of consciousness for 2 days. She has been eating refrigerated frozen ready-to-eat foods and soft cheese for the past week. Neck stiffness is positive. What is the most likely pathogen?",
+   "choices": [
+    "Listeria monocytogenes",
+    "Herpes simplex virus type 1",
+    "Neisseria meningitidis",
+    "Herpes simplex virus type 2",
+    "Mycobacterium tuberculosis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Listeria monocytogenes* เป็น gram-positive rod ที่เติบโตได้ที่อุณหภูมิตู้เย็น (cold enrichment) ปนเปื้อนในอาหารแช่เย็น/ไม่ผ่านความร้อน (deli meat, soft cheese, นมไม่พาสเจอไรซ์) เป็นเชื้อ intracellular จึงก่อโรคในคนที่ **cell-mediated immunity บกพร่อง**: อายุ >50, ตั้งครรภ์, CKD/dialysis, DM, สุรา, steroid, มะเร็ง, transplant อาจมี rhombencephalitis (cranial nerve palsy, ataxia)\n- *Listeria* ดื้อ cephalosporin โดยธรรมชาติ → empirical regimen ในอายุ >50 หรือ immunocompromised ต้อง **เพิ่ม ampicillin 2 g IV q4h** (± gentamicin) ร่วมกับ ceftriaxone + vancomycin; แพ้ penicillin → TMP-SMX\n\n- **HSV-1:** encephalitis (behaviour change, temporal lobe) ไม่สัมพันธ์กับอาหาร\n- **N. meningitidis:** วัยรุ่น/หอพัก/ค่ายทหาร + purpura\n- **HSV-2:** recurrent lymphocytic (Mollaret) meningitis ในคนอายุน้อย\n- **M. tuberculosis:** subacute หลายสัปดาห์ ไม่สัมพันธ์กับอาหารแช่แข็ง",
+   "pearl": "อายุ >50/immunocompromised/ตั้งครรภ์ + อาหารแช่เย็น → คิด Listeria → ต้องเติม ampicillin (cephalosporin ไม่ครอบคลุม)",
+   "ref": [
+    "MED28 MCQ 56 – 60F DM HT CKD5 ไข้ซึม หลังกิน frozen food, neck stiffness → Listeria monocytogenes (ลายมือ: tx ampicillin)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)"
+   ],
+   "years": [
+    "28"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-06",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Adjunctive dexamethasone",
+   "stem": "A 30-year-old man presents to the ER with fever, headache, neck stiffness and GCS 15 without focal deficits. Blood cultures have been drawn; he has not yet received any antibiotic, and LP is about to be performed. Which statement best describes the appropriate use of dexamethasone?",
+   "choices": [
+    "Give dexamethasone 0.15 mg/kg IV every 6 hours for 4 days, starting 10–20 minutes before or with the first antibiotic dose, and stop it if the pathogen is not one with proven benefit (e.g., S. pneumoniae)",
+    "Wait for the CSF culture to confirm S. pneumoniae before giving the first dose of dexamethasone",
+    "Start dexamethasone only 24 hours after antibiotics if the level of consciousness worsens",
+    "Give dexamethasone 10 mg IV once daily for 14 days to all patients with lymphocytic meningitis",
+    "Never give dexamethasone because it eliminates vancomycin penetration into CSF"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** antibiotic ที่ฆ่าแบคทีเรีย → cell wall components หลั่งออกมากระตุ้น inflammation ใน subarachnoid space (TNF-α, IL-1) → cerebral edema, vasculitis, cochlear damage; dexamethasone ต้อง **ให้ก่อนหรือพร้อมยาฆ่าเชื้อเข็มแรก** เพื่อกดการอักเสบระลอกนี้ จึงลด mortality และ hearing loss (ประโยชน์ชัดใน pneumococcal; ในเอเชียมีข้อมูลประโยชน์ต่อ hearing ใน *S. suis*)\n- ขนาด: 0.15 mg/kg (≈10 mg ผู้ใหญ่) IV q6h × 4 วัน\n- ถ้าได้ antibiotic ไปแล้ว: IDSA ไม่แนะนำเริ่ม (ESCMID ยอมให้เริ่มภายใน 4 ชม.)\n- หยุดเมื่อพบเชื้ออื่นที่ไม่มีประโยชน์ เช่น *Listeria* (อาจเพิ่ม mortality) หรือไม่ใช่ bacterial meningitis\n\n- **รอผลเพาะเชื้อ:** ช้าเกินไป เสียประโยชน์\n- **เริ่มหลัง 24 ชม.:** ไม่มีประโยชน์\n- **lymphocytic meningitis ทุกราย:** steroid ใช้ใน TB meningitis (คนละ regimen) ไม่ใช่ทุกราย\n- **ห้ามใช้เพราะ vancomycin:** steroid ลด penetration บ้าง จึงแนะนำให้ vancomycin ขนาดสูง แต่ไม่ใช่ข้อห้าม",
+   "pearl": "Dexamethasone 'before or with' antibiotic เข็มแรก × 4 วัน; หยุดถ้าไม่ใช่ pneumococcus",
+   "ref": [
+    "IDSA 2004; ESCMID 2016 acute bacterial meningitis guideline; Mai NT et al. NEJM 2007 (Vietnam)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-07",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "CT before LP – indications",
+   "stem": "A 68-year-old Myanmar man is suspected of having acute meningitis. Which of the following findings, if it were his ONLY risk factor, would still allow lumbar puncture to be performed without a prior CT scan?",
+   "choices": [
+    "Age 68 years",
+    "Papilledema",
+    "New-onset seizure within the past week",
+    "Focal neurological deficit",
+    "Immunocompromised state (e.g., HIV infection)"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** ข้อกังวลของ LP คือ **brain herniation** เมื่อมี space-occupying lesion หรือ ICP สูงแบบไม่สมดุลระหว่าง compartment การเอา CSF ออกจาก lumbar ทำให้ pressure gradient ดึงสมองลง\n**IDSA 2004: ทำ CT ก่อน LP เมื่อมีข้อใดข้อหนึ่ง**\n1. Immunocompromised (HIV, transplant, immunosuppressant)\n2. ประวัติโรค CNS (mass, stroke, focal infection)\n3. New-onset seizure ภายใน 1 สัปดาห์\n4. Papilledema\n5. Abnormal level of consciousness\n6. Focal neurological deficit\n\nอายุมากอย่างเดียว **ไม่อยู่ใน** IDSA criteria (อายุ ≥60 เป็นตัวแปรใน cohort ของ Hasbun 2001 ซึ่งลายมือในโพยจดไว้ แต่เมื่อเทียบกับอีก 4 ตัวเลือกที่เป็นข้อบ่งชี้ชัดเจน คำตอบที่ดีที่สุดคืออายุ) และ **ห้าม delay antibiotic เพื่อรอ CT**\nข้อห้ามอื่นของ LP: coagulopathy/plt ต่ำมาก, skin infection บริเวณที่เจาะ, spinal cord compression",
+   "pearl": "CT ก่อน LP: immunocompromised, CNS disease, seizure ใหม่, papilledema, ซึม, focal deficit — อายุอย่างเดียวไม่ใช่",
+   "ref": [
+    "MED28 MCQ 20 – A Myanmar male suspected meningitis; LP without CT ได้ในข้อใด → Elderly (B–E เป็นข้อบ่งชี้ CT)",
+    "MED30 Neuro 1 – อะไร LP ได้เลย (choice: new onset seizure, immunocom…)",
+    "IDSA 2004 Table 2"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)"
+   ],
+   "years": [
+    "28",
+    "30"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-08",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Papilledema/focal deficit – sequence of care",
+   "stem": "A 25-year-old man has had fever, severe headache and vomiting for 2 days. T 39.5 °C, BP 120/70 mmHg, GCS 14. He has neck stiffness and bilateral papilledema, without focal weakness. Acute bacterial meningitis is suspected. What is the most appropriate next step?",
+   "choices": [
+    "Draw blood cultures, give dexamethasone and empirical IV antibiotics immediately, then obtain CT brain before deciding on LP",
+    "Perform LP immediately before any antibiotic to maximize culture yield",
+    "Obtain CT and MRI brain first and withhold antibiotics until CSF is obtained",
+    "Give IV mannitol and observe for 24 hours before starting antibiotics",
+    "Give oral amoxicillin and arrange outpatient CT brain"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** papilledema/ซึม/focal deficit บ่งชี้ว่าอาจมี mass lesion หรือ ICP สูง → LP ก่อน CT เสี่ยง herniation แต่ทุกชั่วโมงที่ antibiotic ล่าช้าเพิ่ม mortality ดังนั้นลำดับที่ถูกคือ\n**H/C × 2 → dexamethasone → empirical antibiotic (ภายใน 1 ชม.) → CT brain → LP ถ้าปลอดภัย**\nblood culture ยังให้ผลบวก 50–90% และ CSF Gram stain/antigen/PCR ยังช่วยได้แม้ได้ยาไปแล้วไม่กี่ชั่วโมง\n\n- **LP ทันที:** ข้อห้ามเมื่อมี papilledema\n- **รอ CT/MRI ก่อนให้ยา:** ทำให้ antibiotic ล่าช้า (โพยตอบ 'CT' ถูกในแง่ต้อง CT ก่อน LP แต่ต้องให้ยาก่อน CT)\n- **Mannitol แล้วรอ:** ไม่ใช่การรักษาสาเหตุ\n- **Amoxicillin oral/OPD:** ไม่เหมาะกับ bacterial meningitis",
+   "pearl": "สงสัย bacterial meningitis + ต้อง CT ก่อน → H/C, dexa, antibiotic ก่อน แล้วค่อย CT",
+   "ref": [
+    "MED31 MCQ 8 – มี sign ICP สูง stiff neck papilledema ควรทำอะไรก่อน LP → CT scan",
+    "MED31 MCQ 53 – อาการแบบ meningitis + focal neuro deficit ควรทำอะไร → CT",
+    "MED35 ลงกอง2 MCQ 24 – stiff neck positive ที่มี papilledema → CT scan"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)"
+   ],
+   "years": [
+    "31",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-09",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "HIV with meningism – CT first",
+   "stem": "A 34-year-old man with HIV infection who is not on antiretroviral therapy has had fever and headache for 10 days. He is alert (GCS 15); neck stiffness is positive. There is no focal deficit, and fundi cannot be visualized clearly. Before lumbar puncture, which investigation should be performed first?",
+   "choices": [
+    "CT brain to exclude a space-occupying lesion",
+    "Serum VDRL",
+    "CD4 count",
+    "HIV viral load",
+    "EEG"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** ผู้ป่วย HIV (โดยเฉพาะ CD4 <200) มีโอกาสมี **mass lesion** เช่น cerebral toxoplasmosis (multiple ring-enhancing lesions ที่ basal ganglia/gray-white junction), primary CNS lymphoma, tuberculoma, cryptococcoma ซึ่งเพิ่มความเสี่ยง herniation ถ้าเจาะหลังก่อน → immunocompromised เป็น 1 ในข้อบ่งชี้ทำ CT ก่อน LP ตาม IDSA\n- หลัง CT ไม่มี mass effect → LP วัด opening pressure, CSF India ink/CrAg, AFB/Xpert, VDRL, culture\n- **Serum VDRL / CD4 / viral load:** ช่วยประเมินโรคร่วมและ OI risk แต่ไม่ใช่สิ่งที่ต้องทำ *ก่อน* LP เพื่อความปลอดภัย และไม่ควร delay การเจาะ CSF\n- **EEG:** ไม่มีบทบาทในการตัดสินใจทำ LP\n\nเปรียบเทียบ crypto vs toxo (จากโน้ตโพย MED33): crypto = meningitis, headache เรื้อรัง, high OP, India ink/CrAg; toxo = encephalitis, focal deficit/seizure, ring-enhancing lesions บน CT, IgG ต่อ *Toxoplasma* บวก",
+   "pearl": "HIV + headache/stiff neck → CT ก่อน LP เสมอ แล้วเจาะวัด OP + CrAg",
+   "ref": [
+    "MED32 MCQ 40 – ผู้ป่วย HIV stiff neck +ve investigate อะไร → CT non contrast",
+    "MED31 MCQ 55 – HIV มาด้วย seizure no neurodeficit ทำอะไรต่อ (LP/CT brain/CD4/VL/MRI)",
+    "MED35 ลงกอง1 MCQ 71 – คนไข้ stiff neck HIV ส่งอะไรก่อน (LP vs CT scan)",
+    "MED33 โน้ตหน้า 79 – Cryptococcal meningitis vs Cerebral toxoplasmosis (ตาราง + CT ring-enhancing lesions)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1(9)"
+   ],
+   "years": [
+    "31",
+    "32",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-10",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Meningococcal disease – transmission and isolation",
+   "stem": "A 19-year-old military recruit develops fever, headache and rapidly spreading, non-blanching hemorrhagic purpura over 12 hours. Neck stiffness is present and BP is 86/50 mmHg. Which statement about the most likely pathogen and infection control is correct?",
+   "choices": [
+    "It colonizes the nasopharynx and spreads by respiratory droplets; the patient needs droplet precautions until 24 hours of effective therapy",
+    "It is acquired by eating raw pork; no isolation is required",
+    "It is transmitted by Culex mosquito bites from pigs",
+    "It is acquired by inhaling pigeon droppings; airborne isolation in a negative-pressure room is needed",
+    "It spreads only through contaminated water; contact precautions alone are sufficient"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Neisseria meningitidis* (gram-negative diplococci) อาศัยแบบ carrier ที่ **nasopharynx** ติดต่อผ่าน respiratory droplets/สารคัดหลั่งในช่องปาก ในที่แออัด (ค่ายทหาร หอพัก) → invade mucosa → bacteremia; endotoxin (LOS) ทำให้ septic shock, DIC, purpura fulminans, Waterhouse–Friderichsen syndrome\n- **Droplet precautions** (หน้ากากอนามัย ห้องแยก) จนครบ 24 ชม. หลังได้ยาที่มีประสิทธิภาพ\n- รักษา: ceftriaxone 2 g IV q12h (หรือ penicillin G ถ้าเชื้อไว) 7 วัน; ถ้ารักษาด้วย penicillin ต้องให้ยากำจัด carriage เพิ่มก่อนกลับบ้าน (ceftriaxone กำจัดได้เอง)\n\n- **หมูดิบ:** *S. suis*\n- **Culex + หมู:** Japanese encephalitis\n- **มูลนกพิราบ:** *Cryptococcus* และไม่ต้อง airborne isolation (ไม่ติดคนสู่คน)\n- **น้ำปนเปื้อน:** leptospirosis/enteric pathogens",
+   "pearl": "Fever + purpura + stiff neck = meningococcus → droplet isolation 24 ชม. + prophylaxis ผู้สัมผัสใกล้ชิด",
+   "ref": [
+    "MED32 MCQ 55, 59 – stiff neck +ve, hemorrhagic purpura → N. meningitidis",
+    "MED34 MCQ 15 – N. meningitidis ติดทางไหน → pharynx (droplet)",
+    "MED30 โน้ต – meningococcemia: colonization @ mucous membrane and spread via hematogenous",
+    "MED35 ลงกอง2 MCQ 32 – ผื่นทั้งตัว stiff neck + ให้ยา (คำตอบไม่ปรากฏ)",
+    "MED32 MCQ 73 – meningitis CSF เจอเชื้อ ใช้ยาอะไร → Penicillin G (definitive therapy เมื่อเชื้อไว)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1(17)"
+   ],
+   "years": [
+    "30",
+    "32",
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-11",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Meningococcal chemoprophylaxis",
+   "stem": "A 20-year-old university student is admitted with culture-confirmed Neisseria meningitidis meningitis. His 21-year-old roommate (not pregnant, no drug allergy) has shared the dormitory room with him for the past week and is well. Which is the most appropriate chemoprophylaxis for the roommate?",
+   "choices": [
+    "Ciprofloxacin 500 mg orally as a single dose",
+    "Amoxicillin 500 mg orally three times daily for 7 days",
+    "Meningococcal vaccination alone without antibiotics",
+    "Doxycycline 100 mg orally twice daily for 7 days",
+    "No prophylaxis unless the roommate develops fever"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** ผู้สัมผัสใกล้ชิดมีความเสี่ยงสูงกว่าประชากรทั่วไป 500–800 เท่า และมักเป็น carrier ที่ nasopharynx → ยาที่ใช้ต้อง **ขจัดเชื้อจากเยื่อบุ nasopharynx** ได้ดี\n**ใครควรได้:** household/คนนอนห้องเดียวกัน, daycare, สัมผัสสารคัดหลั่งในช่องปากโดยตรง (จูบ, CPR ปากต่อปาก, intubate โดยไม่ใส่หน้ากาก) ภายใน 7 วันก่อนผู้ป่วยมีอาการ ให้เร็วที่สุด (ภายใน 24 ชม.)\n**ยา (ผู้ใหญ่):**\n- **Ciprofloxacin 500 mg PO single dose** (สะดวก ใช้บ่อยในไทย)\n- Rifampicin 600 mg PO q12h × 2 วัน (ปัสสาวะสีส้ม, drug interaction, ห้ามในตั้งครรภ์)\n- **Ceftriaxone 250 mg IM single dose** (เลือกในหญิงตั้งครรภ์)\n\n- **Amoxicillin/penicillin:** ไม่กำจัด nasopharyngeal carriage\n- **Vaccine อย่างเดียว:** ใช้เสริมใน outbreak แต่ไม่ทันป้องกันระยะสั้น\n- **Doxycycline:** ไม่ใช่ยามาตรฐาน\n- **รอมีไข้:** สายเกินไป",
+   "pearl": "Meningococcal prophylaxis: cipro 500 mg ×1 / rifampicin 600 bid ×2 วัน / ceftriaxone 250 IM ×1 (ตั้งครรภ์)",
+   "ref": [
+    "MED31 MCQ 13 – รูป purpura ติด Neisseria meningitidis ถามยาป้องกันคนอื่น → ciprofloxacin",
+    "MED31 MCQ 56 – prophylaxis N. meningitidis ให้รูป hemorrhagic purpura → ciprofloxacin",
+    "MED30 โน้ต – meningococcemia → ATB prophylaxis ciprofloxacin",
+    "MED35 ลงกอง2 MCQ 72 – ต้องป้องกันคนอยู่ด้วยด้วยยาอะไร (meningococcal prophylaxis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1(17)"
+   ],
+   "years": [
+    "30",
+    "31",
+    "35"
+   ],
+   "note_img": "MED31: โจทย์ให้รูปผื่น hemorrhagic purpura/ecchymosis กระจายที่ขาและลำตัว (purpura fulminans แบบ meningococcemia) แล้วถามยาป้องกันผู้สัมผัส"
+  },
+  {
+   "id": "NEU-CNS-MCQ-12",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Meningism without fever – SAH",
+   "stem": "A 50-year-old woman develops a sudden, explosive 'worst-ever' headache while lifting a heavy box, followed by vomiting. On examination she is alert, afebrile (T 37.0 °C), BP 170/95 mmHg, with neck stiffness but no focal deficits and no signs of systemic illness. What is the most probable diagnosis?",
+   "choices": [
+    "Subarachnoid hemorrhage",
+    "Acute bacterial meningitis",
+    "Intraparenchymal cerebral hemorrhage",
+    "Tension-type headache",
+    "Viral meningitis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** เลือดใน subarachnoid space (ส่วนใหญ่จาก ruptured saccular aneurysm) ระคายเยื่อหุ้มสมอง → **chemical meningitis** เกิดคอแข็งได้โดยไม่มีไข้ (คอแข็งอาจเริ่มหลัง 3–12 ชม.)\n- **CT non-contrast** ภายใน 6 ชม.ไวเกือบ 100% ถ้า CT ลบแต่สงสัย → **LP ≥12 ชม.หลังเริ่มปวด** ดู **xanthochromia** (bilirubin จากการสลาย RBC) และ RBC ไม่ลดลงจาก tube 1 → 4 (ต่างจาก traumatic tap) → CTA หา aneurysm\n\n- **Bacterial/viral meningitis:** ต้องมีไข้/อาการ systemic และไม่ใช่ thunderclap onset\n- **Intraparenchymal hemorrhage:** มักมี focal deficit\n- **Tension-type headache:** ไม่มีคอแข็ง",
+   "pearl": "Thunderclap headache + คอแข็ง + ไม่มีไข้ = SAH → CT; ถ้าลบ → LP หา xanthochromia",
+   "ref": [
+    "MED28 MCQ 63 – stiff neck but no fever, no systemic illness → Subarachnoid hemorrhage",
+    "MED31 MCQ 64 – stiff neck no fever ถามเป็นอะไร → subarachnoid hemorrhage"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.3(2)",
+    "2.3.6(3)"
+   ],
+   "years": [
+    "28",
+    "31"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-13",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Traumatic tap correction",
+   "stem": "A 40-year-old man with fever and headache undergoes LP; the first tube is blood-stained but clears progressively. Results: tube 1 RBC 60,000/µL, tube 4 RBC 20,000/µL; tube 4 WBC 25/µL (ratio of neutrophils/lymphocytes similar to blood); protein 60 mg/dL; CSF glucose 65 mg/dL (blood glucose 100 mg/dL). The supernatant is clear and colorless after centrifugation. Peripheral WBC and hematocrit are normal. Which interpretation is most appropriate?",
+   "choices": [
+    "Traumatic tap; the corrected WBC and protein are essentially normal",
+    "Subarachnoid hemorrhage",
+    "Acute bacterial meningitis",
+    "HSV encephalitis with hemorrhagic CSF",
+    "Viral meningitis with true pleocytosis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** traumatic tap = เข็มโดน epidural venous plexus → เลือดจากร่างกายปนเข้ามาในสัดส่วนเดียวกับเลือด จึงเพิ่ม WBC และ protein ตามสัดส่วน\n**การแก้ค่า (ประมาณ):**\n- WBC ที่มาจากเลือด ≈ **1 ตัวต่อ RBC 500–1,000** (ถ้า CBC ปกติ) → RBC 20,000 จะพา WBC มาได้ ~20–40 → WBC 25 จึง **ไม่เกินที่คาด**\n- Protein เพิ่ม ≈ **1 mg/dL ต่อ RBC 1,000** → 60 − 20 = 40 mg/dL (ปกติ)\n- Glucose ratio 0.65 ปกติ\n- RBC ลดลงจาก tube 1 → 4 และ supernatant ใส (ไม่มี xanthochromia) → traumatic tap\n\n- **SAH:** RBC คงที่ทุก tube และ xanthochromia (หลัง ~12 ชม.)\n- **Bacterial:** WBC สูงกว่าที่คาดมาก, glucose ต่ำ\n- **HSV encephalitis:** มี RBC ได้ แต่ lymphocytic pleocytosis จริงและอาการ encephalitis\n- **Viral meningitis:** ต้องมี WBC เกินค่าที่คาดจากเลือด",
+   "pearl": "Traumatic tap: ลบ WBC 1/500–1,000 RBC, protein 1 mg/dL ต่อ 1,000 RBC; RBC ลดลง tube 1→4, ไม่มี xanthochromia",
+   "ref": [
+    "Harrison's Principles of Internal Medicine 21e – CSF analysis"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.3(2)"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-14",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Ataxia + nystagmus + stiff neck – cerebellar hemorrhage",
+   "stem": "A 60-year-old hypertensive man presents with sudden headache, vertigo and vomiting that began 20 minutes ago. Examination shows truncal ataxia, gaze-evoked nystagmus and positive neck stiffness. He is afebrile, BP 210/110 mmHg. What is the most likely diagnosis?",
+   "choices": [
+    "Cerebellar hemorrhage",
+    "Eosinophilic meningitis",
+    "Acute bacterial meningitis",
+    "Vestibular neuritis",
+    "Wernicke encephalopathy"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** cerebellar hemorrhage (มักจาก hypertensive vasculopathy ที่ dentate nucleus) → ataxia, nystagmus, vertigo, อาเจียน; เลือดแตกเข้า 4th ventricle/subarachnoid space ทำให้ **meningism**; posterior fossa แคบ → กดก้านสมองและ obstructive hydrocephalus ได้เร็ว\n- ทำ **CT brain ทันที**; ก้อน >3 cm หรือมี brainstem compression/hydrocephalus → surgical evacuation; **ห้าม LP** (เสี่ยง tonsillar herniation)\n\n- **Eosinophilic meningitis:** onset เป็นวัน มีประวัติกินหอยโข่ง/ปลาดิบ ไม่ใช่ 20 นาที\n- **Bacterial meningitis:** มีไข้ onset ชั่วโมง–วัน\n- **Vestibular neuritis:** ไม่มีคอแข็ง nystagmus เป็นแบบ unidirectional และยังเดินได้\n- **Wernicke:** ophthalmoplegia + ataxia + confusion ในคนติดสุรา onset ไม่ฉับพลัน และไม่มีคอแข็ง",
+   "pearl": "Sudden ataxia + nystagmus + คอแข็ง ไม่มีไข้ = cerebellar hemorrhage → CT ห้ามเจาะหลัง",
+   "ref": [
+    "MED33 MCQ – 60M headache vertigo vomiting 20 min, truncal ataxia, gaze-evoked nystagmus, positive stiff neck (A. Eosinophil meningitis B. Cerebellar hematoma)",
+    "MED28 MCQ 73 – ataxia, nystagmus, stiff neck → Cerebellar hematoma",
+    "MED32 MCQ 26 (loop) – Ataxia, บ้านหมุน, nystagmus → cerebellar hematoma",
+    "MED29 comment – ataxia, nystagmus, stiff neck ตอบ cerebellar hematoma"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.6(3)",
+    "B3.2.2(1)"
+   ],
+   "years": [
+    "28",
+    "29",
+    "32",
+    "33"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-15",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "HSV encephalitis – confirming the diagnosis",
+   "stem": "A 31-year-old man has had fever for 3 days, followed by a generalized seizure and confusion. Neck stiffness is positive. CSF: opening pressure 18 cmH2O, WBC 120/µL (lymphocytes 85%), RBC 300/µL, protein 80 mg/dL, glucose 65 mg/dL (blood glucose 100 mg/dL). MRI shows T2/FLAIR hyperintensity of the left medial temporal lobe and insula. IV acyclovir has been started. Which investigation best confirms the diagnosis?",
+   "choices": [
+    "CSF PCR for HSV DNA, repeated 3–7 days later if the first early sample is negative while acyclovir is continued",
+    "CSF viral culture for HSV",
+    "Serum HSV IgG antibody",
+    "Brain biopsy as the first-line diagnostic test",
+    "EEG showing periodic lateralized discharges"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** HSV-1 reactivate จาก trigeminal ganglion → ไปที่ orbitofrontal/medial temporal lobe → **hemorrhagic necrotizing encephalitis** จึงพบ RBC/xanthochromia ใน CSF ได้, lymphocytic pleocytosis, glucose ปกติ\n- **CSF HSV PCR**: sensitivity ~96%, specificity ~99% เป็น gold standard แทน brain biopsy; อาจลบลวงใน 72 ชม.แรก → ถ้าสงสัยสูงให้ acyclovir ต่อและ **เจาะซ้ำใน 3–7 วัน**\n- การรักษา acyclovir 10 mg/kg IV q8h 14–21 วัน (ปรับตาม CrCl, ให้น้ำพอ เพราะ crystal nephropathy)\n\n- **Viral culture:** ให้ผลบวกน้อยมาก (<5%) ใน HSE\n- **Serum IgG:** บอกแค่เคยติดเชื้อ (ประชากรส่วนใหญ่บวก)\n- **Brain biopsy:** สงวนไว้กรณี PCR ลบซ้ำและไม่ดีขึ้น\n- **EEG (PLEDs):** สนับสนุนแต่ไม่จำเพาะ",
+   "pearl": "Encephalitis + temporal lobe + CSF มี RBC → HSV PCR; PCR ลบช่วงแรกได้ อย่าหยุด acyclovir",
+   "ref": [
+    "MED31 MCQ 53 – มาด้วย seizure ตรวจเจอ stiff neck → PCR of herpes",
+    "MED31 MEQ 1 – ไข้ชักเกร็ง vesicles at genitalia, CSF lymph เด่น, CT hypodensity right temporal lobe → Herpes meningoencephalitis, acyclovir 10 mg/kg q8h",
+    "MED32 MCQ 51 – ให้ CSF RBC ~300 + รูป CT brain → HSV",
+    "MED29 SAQ 5.1 – CSF profile มี RBC → Herpes, treatment acyclovir",
+    "MED35 ลงกอง1 MCQ 91 – ปวดหัว พฤติกรรมเปลี่ยน CSF เจอ 50 RBCs → Acyclovir",
+    "MED34 MCQ Neuro 1 – sugar 60, OP 18, protein 45, lymph 85% → acyclovir vs amphotericin B",
+    "MED33 MCQ 55 – behavior change, hypodensity frontotemporal, CSF น้ำตาลปกติ → acyclovir"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(2)",
+    "2.3.6(1)",
+    "2.3.1(8)",
+    "B3.3(2)"
+   ],
+   "years": [
+    "29",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35"
+   ],
+   "note_img": "MED32 MCQ 51: โจทย์มีรูป CT brain (น่าจะเป็น hypodensity ที่ temporal lobe) ประกอบผล CSF ที่มี RBC ~300"
+  },
+  {
+   "id": "NEU-CNS-MCQ-16",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "TB meningitis – staging and treatment",
+   "stem": "A 40-year-old HIV-negative woman has had headache and fever for 3 weeks. GCS is 13 (E3V4M6) without focal deficit; she has a right 6th nerve palsy. CSF: WBC 220/µL (lymphocytes 85%), protein 250 mg/dL, glucose 25 mg/dL (blood glucose 110 mg/dL), ADA 18 U/L. CSF Xpert MTB/RIF Ultra detects M. tuberculosis without rifampicin resistance. Which treatment plan is most appropriate?",
+   "choices": [
+    "2 months of HRZE followed by 10 months of HR (total 12 months) plus dexamethasone tapered over 6–8 weeks",
+    "2 months of HRZE followed by 4 months of HR without corticosteroid",
+    "HRZE plus streptomycin for 9 months without corticosteroid",
+    "HRZE for 2 months only, then stop if symptoms resolve",
+    "Withhold treatment until CSF culture becomes positive in 6–8 weeks"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** TB meningitis เกิดจาก Rich focus แตกเข้า subarachnoid space → thick basal exudate → **cranial nerve palsy (CN VI พบบ่อย), vasculitis/infarct, communicating hydrocephalus**; steroid ลดการอักเสบของ exudate → ลด mortality (Thwaites 2004)\n**BMRC staging:** I = GCS 15 ไม่มี focal deficit; **II = GCS 11–14 หรือ GCS 15 + focal deficit**; III = GCS ≤10 → รายนี้ **stage II**\n**รักษา:** **2HRZE/10HR (รวม 12 เดือน)** + **dexamethasone** (0.3–0.4 mg/kg/day IV แล้ว taper 6–8 สัปดาห์ ใน HIV-negative)\nCSF ADA สนับสนุน (cut-off ~10 U/L) และ Xpert Ultra ช่วยยืนยันเร็ว\n\n- **2HRZE/4HR:** เป็นสูตร pulmonary TB, CNS ต้องนานกว่า\n- **เพิ่ม streptomycin:** ไม่จำเป็นเมื่อไม่ดื้อยา และไม่ควรตัด steroid\n- **2 เดือนแล้วหยุด:** relapse/เสียชีวิต\n- **รอ culture:** delay ทำให้ outcome แย่ (mortality สัมพันธ์กับ stage ตอนเริ่มยา)\n\n(การแปลผล CSF และข้อบ่งชี้ steroid ของ TB meningitis มีในชุด chest TB2 แล้ว ข้อนี้เน้น staging/duration)",
+   "pearl": "TB meningitis: BMRC stage จาก GCS + focal deficit; รักษา 2HRZE/10HR + dexamethasone",
+   "ref": [
+    "MED32 SAQ 4 – ไข้ 10 วัน ปวดหัว stiff neck, protein 200, WBC 200 (L90%), sugar 30/DTX 150, ADA 140 → TB meningitis, ส่ง CSF PCR TB",
+    "MED33 OSCE/SAQ N3 – Meningitis (TB/Crypto) lymph เด่น high protein low sugar → TB meningitis",
+    "MED31 MCQ 82 – CSF lymph เด่น protein สูง glucose ต่ำ → TB meningitis",
+    "WHO consolidated TB guidelines 2022; Thwaites GE NEJM 2004"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1(20)"
+   ],
+   "years": [
+    "31",
+    "32",
+    "33"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-17",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Japanese encephalitis",
+   "stem": "A 22-year-old unvaccinated rice farmer from Chiang Rai develops high fever for 4 days followed by confusion, coarse tremor, cogwheel rigidity and bradykinesia. Pig farms surround his village. CSF: WBC 80/µL (lymphocytes 90%), protein 60 mg/dL, glucose 70 mg/dL (blood 110 mg/dL). MRI shows bilateral thalamic T2 hyperintensities. Which test best confirms the diagnosis?",
+   "choices": [
+    "JEV-specific IgM capture ELISA in CSF",
+    "CSF HSV PCR",
+    "CSF India ink stain",
+    "Serum Leptospira microscopic agglutination test",
+    "CSF VDRL"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** Japanese encephalitis virus (flavivirus) มี **หมูและนกน้ำ** เป็น amplifying host ติดสู่คนโดย **ยุง Culex tritaeniorhynchus** ที่เพาะพันธุ์ในนาข้าว คนเป็น dead-end host ไวรัสชอบ **thalamus, basal ganglia, substantia nigra, anterior horn** → parkinsonism, dystonia, acute flaccid paralysis; MRI bilateral thalamic lesions เป็นลักษณะเด่น\n- วินิจฉัย: **IgM capture ELISA ใน CSF** (บวกเกือบทุกรายภายใน 7 วัน) — PCR ไวต่ำเพราะ viremia สั้น\n- รักษา supportive (ควบคุมชัก ICP) ไม่มี antiviral จำเพาะ; ป้องกันด้วยวัคซีน (live attenuated SA14-14-2 / chimeric ใน EPI ไทย)\n\n- **HSV PCR:** HSV ชอบ temporal lobe ไม่ใช่ thalamus + parkinsonism\n- **India ink:** cryptococcus ในผู้ป่วยภูมิคุ้มกันบกพร่อง\n- **Leptospira MAT:** leptospirosis มีไข้ ปวดน่อง ตาแดง ไตวาย เหลือง\n- **CSF VDRL:** neurosyphilis",
+   "pearl": "Encephalitis + parkinsonism + bilateral thalamic lesion + นาข้าว/หมู = JE → CSF IgM ELISA",
+   "ref": [
+    "WHO JE surveillance standards; Thai EPI"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(2)",
+    "2.3.6(1)",
+    "B1.5.3(6)"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-18",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Rabies post-exposure prophylaxis – missed dose",
+   "stem": "A 30-year-old man was bitten on the hand by a stray dog 10 days ago, causing a bleeding wound (WHO category III). On day 0 he received wound care, equine rabies immunoglobulin (ERIG) infiltrated around the wound, and the first dose of cell-culture rabies vaccine. He missed his day-3 and day-7 appointments and returns today (day 10). He is well. What is the most appropriate management?",
+   "choices": [
+    "Continue the vaccine series from the missed dose without restarting and without repeating rabies immunoglobulin",
+    "Restart the full vaccine series from day 0 and repeat ERIG",
+    "Give a second dose of ERIG only",
+    "Stop vaccination because the dog cannot be observed",
+    "Give tetanus toxoid only and reassure him because 10 days have passed without symptoms"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** rabies virus เดินทางจากแผลตาม peripheral nerve (retrograde axonal transport) ช้า ระยะฟักตัว 1–3 เดือน (บางรายเป็นปี) จึงยังมีเวลาสร้าง neutralizing antibody จากวัคซีน; RIG ให้ passive antibody ปิดช่วงแรก 7 วันก่อนวัคซีนกระตุ้นภูมิทัน\n- **การฉีดล่าช้า:** ฉีดเข็มที่ขาดต่อทันทีแล้วเลื่อนตารางตามช่วงห่างเดิม **ไม่ต้องเริ่มใหม่**\n- **RIG:** ให้ได้ถึงวันที่ 7 หลังวัคซีนเข็มแรกเท่านั้น หลังจากนั้นวัคซีนสร้าง antibody แล้ว RIG จะไปกดการตอบสนอง → ไม่ให้ซ้ำ\n- ตาราง: IM (Essen) 0, 3, 7, 14 (± 28) หรือ ID (Thai Red Cross) 2 จุด วัน 0, 3, 7, 28; category III ต้องได้ RIG (ERIG 40 IU/kg, HRIG 20 IU/kg) ฉีดรอบแผลให้มากที่สุด + ล้างแผลด้วยสบู่และน้ำไหล 15 นาที + tetanus prophylaxis\n\n- **เริ่มใหม่ + ERIG ซ้ำ:** ไม่จำเป็นและ ERIG ซ้ำกดภูมิจากวัคซีน\n- **หยุดวัคซีน/รอดูอาการ:** โรคมีอัตราตายเกือบ 100% เมื่อมีอาการ",
+   "pearl": "Rabies PEP ขาดนัด → ฉีดต่อ ไม่เริ่มใหม่; RIG ให้ได้ถึง day 7 ของวัคซีนเข็มแรก",
+   "ref": [
+    "MED30 MCQ Infect 2 – ฉีด rabies vaccine + Ig เข็มแรก ไม่ได้มาฉีดเข็ม 2 → ฉีด vaccine ต่อ (choice: vaccine ต่อ / vaccine ต่อ + Ig)",
+    "MED31 โน้ต – ตาราง Rabies vaccine + ERIG/HRIG, tetanus (non-vaccinated vs vaccinated)",
+    "WHO position paper on rabies vaccines 2018; สถานเสาวภา สภากาชาดไทย"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1-3(1)",
+    "B1.5.3(6)"
+   ],
+   "years": [
+    "30",
+    "31"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-19",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Cryptococcal meningitis – diagnosis",
+   "stem": "A 30-year-old Thai man has had headache for 2 weeks. Examination shows oral candidiasis, a pruritic papular eruption and multiple 1-cm cervical lymph nodes. There is no neck stiffness and no papilledema; the rest of the neurological examination is normal. LP: opening pressure 12 cmH2O, WBC 5 cells/µL (all lymphocytes), protein 200 mg/dL, glucose 30 mg/dL (blood glucose 130 mg/dL). CSF stain shows multiple encapsulated budding yeasts. What is the diagnosis?",
+   "choices": [
+    "Cryptococcal meningitis",
+    "Candida meningitis",
+    "Histoplasma meningitis",
+    "Streptococcus pneumoniae meningitis",
+    "Tuberculous meningitis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Cryptococcus neoformans* (มูลนกพิราบ) หายใจเข้าปอด → ในคนที่ CD4 <100 กระจายไป CNS; **polysaccharide capsule (glucuronoxylomannan)** ต้าน phagocytosis และกด inflammation → **WBC ใน CSF ต่ำมาก** (มักไม่มีคอแข็ง) และ capsule อุดกั้น arachnoid villi → OP สูง (แต่ OP ปกติก็ไม่ตัดโรค ดังรายนี้)\n- **India ink:** encapsulated budding yeast (sensitivity 70–80%) **CSF/serum CrAg (LFA)** sensitivity >95% เป็นการตรวจที่ดีที่สุด; culture ยืนยัน\n- PPE + oral thrush + LN → advanced HIV ต้องตรวจ anti-HIV, CD4\n- **Disseminated cryptococcosis** ทำ umbilicated papules ที่ผิวหนังได้ (DDx: talaromycosis, histoplasmosis, molluscum)\n\n- **Candida:** budding yeast + pseudohyphae ไม่มี capsule หนา, meningitis พบน้อยมาก\n- **Histoplasma:** intracellular yeast เล็ก 2–4 µm ไม่มี capsule\n- **S. pneumoniae:** PMN สูง gram-positive diplococci\n- **TB:** lymphocyte สูง ไม่พบ yeast",
+   "pearl": "HIV + headache เรื้อรัง + CSF WBC ต่ำ + encapsulated budding yeast = Cryptococcus; CrAg ไวที่สุด",
+   "ref": [
+    "MED31 MCQ – ชาย 30 ปี ปวดศีรษะ 2 สัปดาห์ oral candidiasis, PPE, LN, OP 12, WBC 5, encapsulated budding yeast, protein 200, sugar 30/130 → Cryptococcal meningitis",
+    "MED33 MCQ – LP OP 29, glucose ต่ำ, protein >45, WBC lymphocyte predominate → cryptococcus",
+    "MED28 MCQ 2 – fever headache 2 wk + umbilicated papules face/chest/arms → Cryptococcosis"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)",
+    "2.3.1-3(7)",
+    "2.3.1(9)"
+   ],
+   "years": [
+    "28",
+    "31",
+    "33"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-20",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Cryptococcal meningitis – raised intracranial pressure",
+   "stem": "A 29-year-old woman with AIDS (CD4 18 cells/µL) is on day 4 of induction therapy for cryptococcal meningitis (amphotericin B plus flucytosine). She now has worsening headache, vomiting and blurred vision. CT brain shows no hydrocephalus or mass lesion. Repeat LP opening pressure is 38 cmH2O. What is the most appropriate next step?",
+   "choices": [
+    "Therapeutic LP, draining CSF to lower the pressure to <20 cmH2O (or by 50%), repeated daily until stable",
+    "Add oral acetazolamide",
+    "Give IV mannitol and dexamethasone",
+    "Switch to oral fluconazole monotherapy",
+    "Start antiretroviral therapy immediately to restore immunity"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** capsular polysaccharide และ yeast จำนวนมากอุดตัน **arachnoid villi** → CSF outflow ลดลง → communicating-type ICP สูงโดย ventricle ไม่โต; เป็นสาเหตุสำคัญของตาบอด หูหนวก และเสียชีวิตใน 2 สัปดาห์แรก\n- OP ≥25 cmH2O + อาการ → **therapeutic LP** เอา CSF ออก (มัก 20–30 mL) จน OP <20 หรือ ลดลง 50% ทำซ้ำทุกวันจน OP ปกติ ≥2 วัน; ถ้าไม่ไหวพิจารณา lumbar drain/VP shunt\n\n- **Acetazolamide / mannitol / steroid:** ไม่มีประโยชน์ และ dexamethasone เพิ่ม mortality/disability ในการศึกษา CryptoDex\n- **Fluconazole เดี่ยว:** induction ไม่พอ ฆ่าเชื้อช้า\n- **เริ่ม ART ทันที:** เพิ่ม mortality (COAT trial) จาก IRIS — รอ 4–6 สัปดาห์\n\n(หมายเหตุ: โพย MED30 จดว่า 'สงสัย crypto meningitis ให้ antifungal อาการแย่ลง' คำตอบในโพยไม่ชัด ข้อนี้ใช้แนวทางปัจจุบัน)",
+   "pearl": "Crypto + OP สูง → therapeutic LP ซ้ำทุกวัน; ไม่ใช้ steroid/mannitol/acetazolamide",
+   "ref": [
+    "MED30 MCQ Infect 8 – สงสัย crypto meningitis ให้ antifungal อาการแย่ลง (choice: empirical cef-3, second-line antifungal) — คำตอบโพยไม่ชัด",
+    "WHO guidelines for cryptococcal disease in HIV 2022; IDSA 2010"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1-3(7)"
+   ],
+   "years": [
+    "30"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-21",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Cryptococcal meningitis – induction regimen",
+   "stem": "A 32-year-old man (60 kg) with newly diagnosed HIV infection, CD4 25 cells/µL, has cryptococcal meningitis confirmed by CSF India ink and CSF cryptococcal antigen. Creatinine is 0.9 mg/dL. Which induction regimen is most appropriate?",
+   "choices": [
+    "IV amphotericin B deoxycholate 0.7–1 mg/kg/day plus oral flucytosine 100 mg/kg/day for 2 weeks, then fluconazole consolidation",
+    "Oral fluconazole 200 mg/day for 2 weeks",
+    "IV amphotericin B deoxycholate 0.3 mg/kg/day alone for 2 weeks",
+    "IV caspofungin 70 mg loading then 50 mg/day",
+    "IV fluconazole 400 mg/day plus dexamethasone"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** amphotericin B จับ **ergosterol** ใน fungal membrane → สร้าง pore → fungicidal; flucytosine (5-FC) ถูกเปลี่ยนเป็น 5-FU ในเซลล์รา ยับยั้ง DNA/RNA synthesis → **synergy ฆ่าเชื้อใน CSF เร็วขึ้น (early fungicidal activity) และลด mortality**\n**3 phases:**\n1. **Induction 2 สัปดาห์:** AmBd 0.7–1 mg/kg/day + 5-FC 100 mg/kg/day (25 mg/kg q6h); ไม่มี 5-FC → AmBd + fluconazole 800–1,200 mg/day; WHO 2022 preferred: liposomal AmB 10 mg/kg single dose + 5-FC + fluconazole 1,200 mg × 14 วัน\n2. **Consolidation 8 สัปดาห์:** fluconazole 400–800 mg/day\n3. **Maintenance (secondary prophylaxis):** fluconazole 200 mg/day อย่างน้อย 1 ปี จน CD4 >100 และ VL undetectable ≥3 เดือน\n\n- **Fluconazole 200 mg:** fungistatic ขนาดต่ำ = maintenance dose\n- **AmB 0.3 mg/kg:** ขนาดต่ำเกิน (เป็นตัวลวงในโพย MED35)\n- **Echinocandin (caspofungin):** *Cryptococcus* ดื้อโดยธรรมชาติ\n- **Steroid:** เพิ่ม mortality",
+   "pearl": "Crypto induction = AmB 0.7–1 mg/kg/d + 5-FC 100 mg/kg/d × 2 wk → fluconazole 400–800 × 8 wk → 200 mg maintenance",
+   "ref": [
+    "MED31 MCQ 6 – HIV meningitis stiff neck positive ให้ยาอะไร → Amphotericin B 0.7 mg/kg IV q24h",
+    "MED35 FA MCQ 6 – HIV meningitis ให้ยาอะไร → Amphotericin B 0.7 mg/kg IV q24h",
+    "MED35 FA ชุด 5 ข้อ 3 – cryptococcosis ให้ยาอะไร จำ dose (Amphotericin B 0.7 / Fluconazole IV / Amphotericin B 0.3)",
+    "WHO cryptococcal guideline 2022; แนวทางการดูแลรักษา HIV ประเทศไทย 2564/2565"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1-3(7)",
+    "2.3.1(9)"
+   ],
+   "years": [
+    "31",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-22",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Amphotericin B toxicity – hypokalemia",
+   "stem": "A 21-year-old single Thai woman with symptomatic HIV infection (last CD4 29 cells/µL, 2%) was admitted for cryptococcal meningitis and has received IV amphotericin B 40 mg/day for 1 week. This morning she feels weak and cannot lift her arms or rise from a chair. Bowel and bladder function and swallowing are normal. Neurological examination: proximal muscle power grade 3+ in all limbs, distal grade 5, normal deep tendon reflexes, normal plantar responses, normal sensation and cranial nerves. What is the most appropriate next step?",
+   "choices": [
+    "Check serum electrolytes (especially potassium) and magnesium",
+    "Emergency CT brain",
+    "Stop amphotericin B immediately",
+    "Check BUN and creatinine only",
+    "Check serum electrolytes, calcium and phosphate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** amphotericin B จับ cholesterol ใน tubular cell membrane → **distal tubule รั่ว** (distal RTA type 1) → **K⁺ และ Mg²⁺ wasting** + afferent arteriolar vasoconstriction → GFR ลด; hypokalemia ทำ proximal muscle weakness, hypomagnesemia ทำให้แก้ K ไม่ขึ้น\n- ป้องกัน: **pre-hydration NSS 1 L ก่อนให้ยา + KCl 20 mEq/day + Mg supplement**, ตรวจ K, Mg, Cr, CBC อย่างน้อย 2 ครั้ง/สัปดาห์\n- หยุดยาเฉพาะเมื่อ Cr สูงมาก/ไม่ตอบสนอง (หรือเปลี่ยนเป็น liposomal AmB)\n\n- **CT brain:** symmetric proximal weakness ไม่มี UMN signs/cranial nerve → ไม่ใช่ CNS lesion\n- **หยุดยา:** ยังไม่จำเป็น การรักษา crypto ล่าช้าอันตรายกว่า\n- **BUN/Cr อย่างเดียว:** ไม่ตอบคำถามสาเหตุอ่อนแรง\n- **Ca/PO4:** ไม่ใช่ electrolyte หลักที่ AmB ทำให้ผิดปกติ",
+   "pearl": "AmB → hypoK + hypoMg (distal RTA) → prehydrate + KCl + Mg และ monitor 2 ครั้ง/สัปดาห์",
+   "ref": [
+    "MED31 MCQ – หญิง 21 ปี HIV CD4 29 cryptococcal meningitis ได้ amphotericin B 40 mg/day 1 สัปดาห์ อ่อนแรง proximal 3+ → (choices A–E as in item)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1-3(7)",
+    "2.3.1(9)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-23",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Timing of ART in cryptococcal meningitis",
+   "stem": "A 27-year-old man with newly diagnosed HIV infection (CD4 40 cells/µL, ART-naive) has started induction therapy for cryptococcal meningitis 5 days ago and is improving. When should antiretroviral therapy be started?",
+   "choices": [
+    "4–6 weeks after starting antifungal therapy",
+    "Immediately, within 48 hours of diagnosis",
+    "Only after the CD4 count rises above 200 cells/µL",
+    "After completing 12 months of fluconazole maintenance",
+    "Never while he is taking fluconazole because of drug interactions"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** เมื่อเริ่ม ART ภูมิคุ้มกันฟื้นเร็ว → T-cell ตอบสนองต่อ cryptococcal antigen ที่ยังค้างใน CSF → **paradoxical IRIS** ใน CNS (สมองบวม ICP สูง) ซึ่งอันตรายกว่า IRIS ที่อวัยวะอื่น; COAT trial พบว่าเริ่ม ART ที่ 1–2 สัปดาห์ mortality สูงกว่าเริ่มที่ 5 สัปดาห์\n- แนวทาง WHO/ไทย: เริ่ม ART **4–6 สัปดาห์** หลังเริ่ม antifungal (ต่างจาก OI อื่นเช่น PCP ที่เริ่มภายใน 2 สัปดาห์; TB meningitis ก็รอ ~4–8 สัปดาห์)\n- เริ่ม co-trimoxazole prophylaxis ได้เลย (CD4 <200)\n- ป้องกันระดับประชากร: **serum CrAg screening เมื่อ CD4 <100** → ถ้าบวกต้อง LP; ถ้า CSF ลบ ให้ pre-emptive fluconazole\n\n- **ทันที 48 ชม.:** เสี่ยง CNS IRIS\n- **รอ CD4 >200:** CD4 จะไม่ขึ้นเองถ้าไม่ได้ ART\n- **รอ 12 เดือน / ไม่ให้เลย:** ผิด; fluconazole interaction กับ ARV ส่วนใหญ่จัดการได้",
+   "pearl": "Crypto meningitis: เริ่ม ART หลัง antifungal 4–6 สัปดาห์ (กัน CNS IRIS)",
+   "ref": [
+    "Boulware DR et al. NEJM 2014 (COAT trial); WHO 2022; MED34 MEQ case 2 (crypto + HIV) treatment and advice"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(9)",
+    "2.3.1-3(7)"
+   ],
+   "years": [
+    "34"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-24",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Eosinophilic meningitis – Angiostrongylus",
+   "stem": "A 35-year-old man from Khon Kaen has had severe headache for 5 days with paresthesia of his trunk. Two weeks earlier he ate 'koi hoi' (raw Pila snails). He is afebrile with mild neck stiffness and no focal motor deficit. CT brain is normal. CSF: opening pressure 30 cmH2O, WBC 400/µL (eosinophils 40%), protein 80 mg/dL, glucose 60 mg/dL (blood glucose 100 mg/dL). Which management is most appropriate?",
+   "choices": [
+    "Analgesics, repeated LP to relieve raised pressure, and oral prednisolone for 2 weeks",
+    "IV ceftriaxone plus vancomycin",
+    "IV amphotericin B",
+    "Emergency craniotomy to remove the larvae",
+    "Oral albendazole 400 mg twice daily for 21 days as monotherapy"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Angiostrongylus cantonensis* (rat lungworm) — หนูเป็น definitive host, หอยโข่ง/หอยทากเป็น intermediate host; คนกิน L3 larvae ในหอยดิบ → larvae ไปที่สมองและตาย → **eosinophilic inflammation ที่ meninges** → ปวดศีรษะรุนแรง, paresthesia/hyperesthesia, OP สูง; เป็นโรค self-limited ส่วนใหญ่\n- เกณฑ์ eosinophilic meningitis: **eosinophil ≥10% หรือ ≥10 cells/µL ใน CSF** (รายนี้ 160/µL)\n- รักษา: **analgesics + repeat LP** ลดความดัน + **prednisolone 60 mg/day × 14 วัน** (RCT ในไทย ลดระยะเวลาปวดศีรษะและความต้องการ LP) ± albendazole ร่วมกับ steroid ในบางแนวทาง\n\n- **Ceftriaxone + vancomycin:** ไม่ใช่ bacterial\n- **Amphotericin B:** สำหรับ cryptococcal\n- **Craniotomy:** ไม่มีบทบาท\n- **Albendazole เดี่ยว:** larvae ตายพร้อมกันจำนวนมากอาจทำให้อักเสบมากขึ้น จึงไม่ใช้เดี่ยวโดยไม่มี steroid\n\n**DDx Gnathostoma spinigerum:** กินปลาน้ำจืด/กบ/ไก่ดิบ (ส้มฟัก ปลาส้ม), migratory swelling, **radiculomyelitis** ปวดร้าวตามเส้นประสาทแล้วอัมพาตครึ่งล่าง, **xanthochromic/bloody CSF, ICH/SAH** → รักษา albendazole 21 วัน (± ivermectin), พยากรณ์แย่กว่า",
+   "pearl": "Eosinophilic meningitis + หอยโข่งดิบ = Angiostrongylus cantonensis → steroid + LP; ถ้าเลือดออก/radiculomyelitis + ปลาดิบ = Gnathostoma",
+   "ref": [
+    "MED28 MCQ 25 – CSF eosinophilia, most likely causative agent → Angiostrongylus cantonensis",
+    "MED29 SAQ 3 – CSF angiostrongylus cantonensis (OP/CP สูง, lymph + eos เด่น, high protein)",
+    "MED31 SAQ 7 – กินหอยโข่งแล้ว stiff neck วิเคราะห์ CSF ตอบเชื้อ (สะกด genus & species)",
+    "MED33 SAQ comment – OP 28, glucose 20/100, protein 96, WBC 100 (PMN35 L45 E25) จากอีสาน กินหอยดิบ → eosinophilic meningitis",
+    "MED35 ลงกอง2 SAQ – คนอีสานกินหอยโข่งดิบ CSF → eosinophilic meningitis, Angiostrongylus cantonensis",
+    "Chotmongkol V et al. 2000 (prednisolone RCT, Khon Kaen)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "2.3.1-3(8)"
+   ],
+   "years": [
+    "28",
+    "29",
+    "31",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MCQ-25",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Neurosyphilis – CSF test",
+   "stem": "A 25-year-old man with HIV infection presents with fever and diffuse headache for 2 weeks. He has had a non-itchy rash involving his palms and soles for 1 year. Examination: T 38 °C, reddish maculopapular rash on the trunk, palms and soles, and positive neck stiffness. Lumbar puncture is performed. Which CSF investigation is most appropriate to establish the likely diagnosis?",
+   "choices": [
+    "CSF VDRL",
+    "CSF FTA-ABS",
+    "CSF PCR for herpes simplex virus",
+    "CSF PCR for Mycobacterium tuberculosis",
+    "CSF bacterial culture"
+   ],
+   "answer": 0,
+   "explain": "**กลไก:** *Treponema pallidum* invade CNS ได้ตั้งแต่ระยะแรก (secondary syphilis ผื่นฝ่ามือฝ่าเท้า) โดยเฉพาะใน HIV → early neurosyphilis = syphilitic meningitis (lymphocytic pleocytosis, protein ↑) ± cranial neuropathy, ocular/otic syphilis\n- **CSF VDRL:** **specificity สูง** — ถ้าบวก (และ CSF ไม่ปนเลือด) ยืนยัน neurosyphilis แต่ sensitivity เพียง 30–70%\n- **CSF FTA-ABS:** sensitivity สูงแต่ specificity ต่ำ (antibody รั่วจาก serum) → ใช้ **ตัดโรค** เมื่อผลลบ\n- รักษา: **aqueous penicillin G 18–24 MU/day IV (3–4 MU q4h) × 10–14 วัน** (benzathine penicillin IM ไม่ถึง CSF) ติดตาม CSF ทุก 6 เดือน\n\n- **HSV PCR / TB PCR:** ไม่เข้ากับผื่นฝ่ามือฝ่าเท้า 1 ปี\n- **Bacterial culture:** *T. pallidum* เพาะเชื้อไม่ได้",
+   "pearl": "Neurosyphilis: CSF VDRL บวก = ยืนยัน (specific), CSF FTA-ABS ลบ = ตัดออก (sensitive); รักษา IV aqueous penicillin G",
+   "ref": [
+    "MED28 MCQ 10 – HIV 25M fever headache 2 wk, rash palms & soles 1 yr, neck stiffness → CSF for VDRL test",
+    "MED30 MCQ Infect 6 – syphilis มีอาการทาง neuro ส่งอะไร → VDRL",
+    "MED30 โน้ต – Penicillin G IV tx neurosyphilis",
+    "CDC STI Treatment Guidelines 2021"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.1(19)",
+    "B3.2.2(1)"
+   ],
+   "years": [
+    "28",
+    "30"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "NEU-CNS-MEQ-01",
+   "part": "MEQ",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Acute bacterial meningitis – Streptococcus suis",
+   "vignette": "ชายไทยอายุ 56 ปี อาชีพเกษตรกร ภูมิลำเนา จ.อุดรธานี\nCC: ไข้สูง ปวดศีรษะ 2 วัน ซึมลง 6 ชั่วโมงก่อนมาโรงพยาบาล\nU/D: ดื่มสุราขาววันละ 1 แบน 20 ปี ไม่เคยตรวจสุขภาพ\nPI: 2 วันก่อนมีไข้สูง หนาวสั่น ปวดศีรษะทั่วศีรษะมาก อาเจียน 3 ครั้ง วันนี้ญาติสังเกตว่าซึมลง ตอบช้า และบ่นว่าได้ยินไม่ชัดทั้ง 2 ข้าง ประวัติ 4 วันก่อนไปงานบุญ กินลาบหมูดิบและหลู้ (เลือดหมูดิบ)\nV/S: BT 39.4 °C, BP 128/76 mmHg, PR 112/min, RR 22/min, SpO2 97% RA, BW 60 kg\nPE: drowsy, GCS E3V4M6 = 13, no rash/purpura\nNeuro: neck stiffness positive, Kernig sign positive, pupils 3 mm RTLBE, fundi: no papilledema, no focal motor deficit, Rinne positive both sides with markedly decreased hearing bilaterally (sensorineural), truncal ataxia ประเมินไม่ได้\nLab: CBC Hb 13.2, WBC 18,600 (N 90%), Plt 140,000; DTX 120 mg/dL; Cr 1.0",
+   "questions": [
+    {
+     "q": "1. จงเขียน problem list และให้ differential diagnosis มา 3 โรค พร้อมเหตุผลสนับสนุน",
+     "a": "**Problem list**\n1. Acute febrile illness with meningism (fever, headache, neck stiffness, Kernig +) 2 วัน\n2. Alteration of consciousness (GCS 13)\n3. Acute bilateral sensorineural hearing loss\n4. History of eating raw pork/pig blood 4 วันก่อน\n5. Chronic alcohol use\n6. Leukocytosis with neutrophilia\n\n**DDx**\n1. **Acute bacterial meningitis จาก *Streptococcus suis*** — กินหมู/เลือดหมูดิบ, ผู้ชายดื่มสุรา, ภาคอีสาน, **hearing loss** เป็นลักษณะเด่น\n2. **Pneumococcal meningitis** — สาเหตุที่พบบ่อยที่สุดในผู้ใหญ่ สุราเป็นปัจจัยเสี่ยง; hearing loss พบได้\n3. **Listeria monocytogenes meningitis** — อายุ >50, alcoholism (cell-mediated immunity ↓)\n(อื่นๆ ที่ยอมรับ: meningococcal meningitis, leptospirosis/melioidosis with CNS involvement, HSV encephalitis)"
+    },
+    {
+     "q": "2. ท่านจะดูแลเบื้องต้นที่ห้องฉุกเฉินอย่างไร (ลำดับขั้นตอน ยา ขนาด วิธีให้) จำเป็นต้องทำ CT brain ก่อน LP หรือไม่ เพราะอะไร",
+     "a": "**ต้องทำ CT ก่อน LP** เพราะมี **abnormal level of consciousness (GCS 13)** ซึ่งเป็นข้อบ่งชี้ตาม IDSA แต่ **ห้าม delay ยาฆ่าเชื้อ**\n**ลำดับ (ภายใน 1 ชั่วโมงแรก)**\n1. ABC, O2 keep SpO2 ≥94%, IV access, monitor V/S + GCS q1h, droplet precautions จนตัด meningococcus ได้\n2. **Hemoculture 2 specimens** (+ CBC, BUN/Cr, electrolytes, LFT, coagulation, lactate)\n3. **Dexamethasone 10 mg (0.15 mg/kg) IV q6h × 4 วัน** — ให้ก่อนหรือพร้อม antibiotic เข็มแรก\n4. **Empirical antibiotics** (อายุ >50 + alcoholism)\n   - **Ceftriaxone 2 g IV q12h**\n   - **Vancomycin 15–20 mg/kg IV q8–12h** (≈1 g q12h, ปรับตาม trough/AUC)\n   - **Ampicillin 2 g IV q4h** (cover *Listeria*)\n5. **CT brain non-contrast** → ถ้าไม่มี mass/herniation → **LP** วัด OP, CSF cell count, protein, glucose (คู่ blood glucose), Gram stain, culture, ± PCR/latex\n6. Supportive: NSS maintenance (หลีกเลี่ยง hypotonic), paracetamol, ป้องกันชัก/ICP (head up 30°), **thiamine 100 mg IV** (ติดสุรา), CIWA monitoring alcohol withdrawal"
+    },
+    {
+     "q": "3. ผล LP: OP 32 cmH2O, cloudy, WBC 1,800 cells/µL (PMN 90%), protein 260 mg/dL, CSF glucose 18 mg/dL (blood glucose 120 mg/dL), Gram stain: gram-positive cocci in pairs and short chains. จงแปลผลและบอกเชื้อที่น่าจะเป็นมากที่สุด (เขียนชื่อเต็ม)",
+     "a": "**แปลผล**\n- Opening pressure สูง (32 > 20 cmH2O)\n- Cloudy appearance\n- Marked pleocytosis, **neutrophil predominance**\n- Protein สูง (260 > 45 mg/dL)\n- **Glucose ต่ำ: CSF:blood ratio = 18/120 = 0.15 (<0.4)**\n- Gram-positive cocci in pairs/short chains\n→ **Acute bacterial meningitis**\n**เชื้อ:** ***Streptococcus suis*** (ประวัติหมูดิบ + hearing loss; GPC แบบ pair/short chain แยกจาก pneumococcus ที่เป็น lancet-shaped diplococci)"
+    },
+    {
+     "q": "4. Culture ขึ้น S. suis serotype 2 ไวต่อ penicillin และ ceftriaxone จะปรับการรักษาอย่างไร ระยะเวลาเท่าไร และมีภาวะแทรกซ้อนอะไรที่ต้องเฝ้าระวัง",
+     "a": "**ปรับยา (de-escalate)**\n- หยุด vancomycin และ ampicillin\n- **Ceftriaxone 2 g IV q12h ต่อจนครบ ~14 วัน** (ทางเลือก: penicillin G 4 MU IV q4h)\n- **Dexamethasone ต่อจนครบ 4 วัน** (ข้อมูลจากเวียดนามพบลด hearing loss ใน *S. suis*)\n\n**ภาวะแทรกซ้อนที่ต้องเฝ้าระวัง**\n- **Sensorineural hearing loss** (พบ 50–70%, มักถาวร) และ vestibular dysfunction/ataxia → audiogram ก่อนกลับบ้าน, ส่ง ENT/rehab, พิจารณา hearing aid/cochlear implant\n- Septic shock, DIC, purpura, AKI, rhabdomyolysis\n- Infective endocarditis (ฟัง murmur, echo ถ้า bacteremia นาน), septic arthritis, endophthalmitis\n- Hydrocephalus, seizure, SIADH\n- Alcohol withdrawal syndrome / Wernicke"
+    },
+    {
+     "q": "5. ญาติถามว่าคนในบ้านต้องกินยาป้องกันหรือไม่ และจะให้คำแนะนำป้องกันโรคนี้อย่างไร",
+     "a": "- ***S. suis* ไม่ติดต่อจากคนสู่คน** → **ไม่ต้องให้ chemoprophylaxis** แก่ผู้สัมผัส (ต่างจาก *N. meningitidis* ที่ต้องให้ ciprofloxacin/rifampicin/ceftriaxone) และไม่ต้องแยกห้องเมื่อตัด meningococcus ได้แล้ว\n- ไม่กินเนื้อหมู เลือดหมู หรือเครื่องในหมูดิบ/สุกๆดิบๆ (ลาบดิบ หลู้ ส้า) ปรุงให้สุก ≥70 °C\n- ไม่ซื้อ/ชำแหละหมูที่ป่วยตาย; คนชำแหละหมูหรือเลี้ยงหมูสวมถุงมือ รองเท้าบูท ปิดแผลที่มือ ล้างมือ\n- ลด/งดสุรา (ปัจจัยเสี่ยงต่อการติดเชื้อรุนแรง)\n- รายงานโรคตามระบบเฝ้าระวัง (รง.506) เพื่อสอบสวนการระบาดจากแหล่งอาหารเดียวกัน\n- มาโรงพยาบาลทันทีถ้ามีไข้ ปวดศีรษะ หูอื้อ หลังกินหมูดิบ"
+    }
+   ],
+   "ref": [
+    "MED32 MCQ 54, MED31 MCQ 26 – เกี่ยวกับหมู gram +ve cocci stiff neck → cef-3",
+    "MED35 ลงกอง1 OSCE-2 + SAQ-P2 – ไข้ ปวดศีรษะ 3 วัน ตรวจ neuro, ส่ง CSF/CT → bacterial meningitis",
+    "MED29 SAQ – แปลผล CSF bacterial + เขียนชื่อเชื้อเต็ม",
+    "IDSA 2004; ESCMID 2016; Mai NT NEJM 2007"
+   ],
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)",
+    "2.1.3",
+    "2.1.1"
+   ]
+  },
+  {
+   "id": "NEU-CNS-MEQ-02",
+   "part": "MEQ",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "Cryptococcal meningitis in HIV",
+   "vignette": "ชายไทยอายุ 32 ปี อาชีพพนักงานบริษัท ภูมิลำเนา กรุงเทพฯ\nCC: ไข้ต่ำๆ ปวดศีรษะมากขึ้นเรื่อยๆ 2 สัปดาห์ก่อนมาโรงพยาบาล\nU/D: ปฏิเสธโรคประจำตัว ไม่เคยตรวจ anti-HIV\nPI: 2 สัปดาห์ก่อนเริ่มปวดศีรษะทั่วศีรษะ ปวดมากตอนเช้า ร่วมกับไข้ต่ำๆ คลื่นไส้ 3 วันก่อนมองเห็นภาพไม่ชัด น้ำหนักลด 6 kg ใน 2 เดือน มีเพศสัมพันธ์ไม่ป้องกันกับคู่หลายคน\nV/S: BT 38.0 °C, BP 120/70 mmHg, PR 96/min, RR 18/min, BW 60 kg\nPE: alert, GCS 15, thin, oral thrush, multiple umbilicated papules at face (3–4 lesions), generalized lymphadenopathy 1 cm\nNeuro: neck stiffness mild, bilateral papilledema, no focal deficit\nLab: Anti-HIV positive, CD4 25 cells/µL (3%), Cr 0.9 mg/dL, K 3.8 mEq/L, Mg 1.9 mg/dL",
+   "note_img": "Q3 มีรูป CSF India ink preparation: yeast กลมขนาด ~5–10 µm ล้อมรอบด้วย clear halo (thick polysaccharide capsule) บนพื้นหลังสีดำ บางตัวมี narrow-based budding (ตามโพย MED31/32/34/35 SAQ ที่ให้รูป Cryptococcus neoformans ย้อม India ink)",
+   "questions": [
+    {
+     "q": "1. จงให้ differential diagnosis มา 3 โรค (ภาวะ CNS infection ในผู้ป่วยรายนี้)",
+     "a": "1. **Cryptococcal meningitis** — advanced HIV (CD4 <100), subacute headache, high ICP (papilledema, ตามัว), umbilicated papules (disseminated cryptococcosis)\n2. **Tuberculous meningitis** — subacute fever + headache + weight loss ใน HIV\n3. **Cerebral toxoplasmosis** (หรือ neurosyphilis / CNS lymphoma / talaromycosis) — CD4 <100; toxo มักมี focal deficit/seizure และ ring-enhancing lesion"
+    },
+    {
+     "q": "2. จงส่งตรวจทางห้องปฏิบัติการที่สำคัญ 5 อย่าง พร้อมเหตุผล (ระบุลำดับ CT/LP)",
+     "a": "1. **CT brain (± contrast) ก่อน LP** — immunocompromised + papilledema → ตัด mass lesion (toxo, lymphoma, cryptococcoma) ก่อนเจาะ\n2. **LP วัด opening pressure** (ท่านอนตะแคง) + CSF profile — crypto มัก OP สูงมาก, ใช้ตัดสินใจทำ therapeutic LP\n3. **CSF India ink + CSF cryptococcal antigen (LFA) + fungal culture** — ยืนยันเชื้อ (CrAg sensitivity >95%)\n4. **Serum cryptococcal antigen** — screening/สนับสนุนการวินิจฉัย disseminated disease\n5. **CSF AFB, Xpert MTB/RIF Ultra, VDRL, Gram stain/culture** — แยก TB meningitis/neurosyphilis\n(อื่นๆ: hemoculture for fungus (crypto/Talaromyces), Toxoplasma IgG, CXR, HBsAg/anti-HCV, CBC, BUN/Cr, electrolytes/Mg ก่อนให้ amphotericin)"
+    },
+    {
+     "q": "3. ผล CT brain ปกติ ไม่มี mass หรือ hydrocephalus. LP: opening pressure 38 cmH2O, clear, WBC 12 cells/µL (lymphocyte 90%), protein 70 mg/dL, glucose 40 mg/dL (blood glucose 95 mg/dL), CSF CrAg LFA positive (titer 1:2,560) และให้รูป India ink (ดู note_img) จงแปลผล CSF บรรยายรูป และวินิจฉัย (เขียนชื่อเชื้อเต็ม)",
+     "a": "**CSF:** opening pressure **สูงมาก** (38 cmH2O), clear, **mild lymphocytic pleocytosis** (WBC ต่ำเพราะ capsule กด inflammation), protein สูงเล็กน้อย, glucose ratio 40/95 = 0.42 (ต่ำเล็กน้อย), CrAg positive titer สูง (fungal burden สูง)\n**รูป (India ink preparation):** round/oval **encapsulated budding yeast** ขนาด ~5–10 µm มี **clear halo** รอบ cell จาก thick polysaccharide capsule ที่ไม่ติดหมึก บน dark background, narrow-based budding\n**Diagnosis:** **Cryptococcal meningitis** จาก ***Cryptococcus neoformans*** in advanced HIV disease (AIDS, CD4 25) with raised intracranial pressure, oral candidiasis, possible disseminated cryptococcosis (skin)"
+    },
+    {
+     "q": "4. จงเขียนคำสั่งการรักษา (order) ในช่วง induction ให้ครบ ระบุยา ขนาด วิธีให้ การเฝ้าระวัง และการจัดการ opening pressure",
+     "a": "**Antifungal – induction 2 สัปดาห์**\n- **Amphotericin B deoxycholate 0.7–1 mg/kg/day** = 42–60 mg (เช่น 50 mg) ผสม **D5W 500 mL** IV drip ใน 4–6 ชม. วันละครั้ง (ห้ามผสม NSS เพราะตกตะกอน); premedication ได้ถ้ามี infusion reaction (paracetamol, CPM)\n- **Pre-hydration: NSS 1,000 mL + KCl 20 mEq** IV ก่อนให้ AmB ทุกวัน + **KCl elixir/Mg supplement**\n- **Flucytosine 25 mg/kg PO q6h (100 mg/kg/day)** = 1,500 mg q6h; ถ้าไม่มี → **fluconazole 800–1,200 mg/day PO**\n  (WHO 2022 preferred: liposomal AmB 10 mg/kg single dose + 5-FC 100 mg/kg/day + fluconazole 1,200 mg/day × 14 วัน ถ้ามี)\n\n**Raised ICP**\n- **Therapeutic LP**: OP 38 → เอา CSF ออก (~20–30 mL) จน **OP <20 cmH2O หรือลด 50%**; ทำซ้ำทุกวันจน OP ปกติ ≥2 วัน; ไม่ใช้ mannitol/acetazolamide/steroid\n\n**Monitor:** K, Mg, BUN/Cr, CBC **อย่างน้อย 2 ครั้ง/สัปดาห์**, I/O, V/S, GCS, visual acuity; 5-FC → CBC (marrow suppression)\n**Consolidation:** fluconazole 400–800 mg/day × 8 สัปดาห์ → **Maintenance:** fluconazole 200 mg/day ≥1 ปี จน CD4 >100 และ VL undetectable ≥3 เดือน\n**อื่นๆ:** co-trimoxazole (TMP-SMX 80/400) 2 tab OD (PCP/toxo prophylaxis), clotrimazole troche/nystatin for oral thrush, counseling HIV"
+    },
+    {
+     "q": "5. วันที่ 6 ผู้ป่วยบ่นอ่อนแรงแขนขาส่วนต้น K 2.6 mEq/L, Mg 1.2 mg/dL, Cr 1.4 mg/dL เกิดจากอะไร จะจัดการอย่างไร และจะเริ่ม ART เมื่อใด พร้อมให้คำแนะนำผู้ป่วย",
+     "a": "**สาเหตุ:** **Amphotericin B nephrotoxicity** — distal tubular injury (distal RTA) → **renal K⁺ และ Mg²⁺ wasting** + afferent vasoconstriction → Cr ↑; hypokalemia ทำ proximal weakness\n**จัดการ**\n- KCl IV (เช่น KCl 40 mEq ใน NSS 1 L drip ≤10–20 mEq/hr ทาง peripheral) + oral KCl; **แก้ Mg ก่อน/พร้อมกัน** (MgSO4 2 g IV ใน 1 ชม.) มิฉะนั้น K ไม่ขึ้น\n- เพิ่ม pre-hydration NSS, หลีกเลี่ยง nephrotoxin อื่น; ถ้า Cr สูงขึ้นต่อเนื่อง → เปลี่ยน **liposomal AmB** (3–4 mg/kg/day) หรือข้ามบางวัน\n- ติดตาม K/Mg/Cr ทุกวันจนคงที่\n\n**ART:** เริ่ม **4–6 สัปดาห์หลังเริ่ม antifungal** (COAT trial: เริ่มเร็วเพิ่ม mortality จาก CNS-IRIS); สูตร TLD (tenofovir + lamivudine + dolutegravir)\n\n**คำแนะนำ:** อธิบายโรค HIV/OI, กินยาสม่ำเสมอ (fluconazole นาน ≥1 ปี, ART ตลอดชีวิต), อาการ IRIS (ปวดศีรษะ ไข้ ซึมลงหลังเริ่ม ART) ให้มาทันที, safe sex/ใช้ถุงยาง, แจ้งคู่นอนให้ตรวจ HIV, ไม่ต้องแยกจากครอบครัว (crypto ไม่ติดต่อจากคนสู่คน), นัด follow-up CD4/VL"
+    }
+   ],
+   "ref": [
+    "MED34 MEQ Case 2 – cryptococcal meningitis with HIV infection with oral thrush: Ddx 3, invest 5 พร้อมเหตุผล (CT with contrast, LP, CSF India ink, CSF/serum CrAg, anti-HIV, CD4), treatment 2 ยา + คำแนะนำ",
+    "MED34 OSCE 5–6 – ซักประวัติปวดหัวไข้ → crypto; SAQ รูป India ink: encapsulated budding yeast, ยา amphotericin B + fluconazole",
+    "MED35 FA SAQ 1 – HIV CSF รูป India ink (encapsulated, halo) → Cryptococcus neoformans, ยา 2 ตัว",
+    "MED32 SAQ 2 – อ่าน CSF profile + อธิบายรูป Cryptococcus neoformans in India ink (สะกดให้ถูก)",
+    "MED31 OSCE/SAQ – รูป Cryptococcus neoformans บรรยายรูป ย้อมด้วยอะไร (India ink) บอกเชื้อ ยารักษา 2 ตัว; SAQ แปลผล CSF crypto",
+    "MED35 ลงกอง1 MCQ 70 – Cryptococcus meningitis (รูป colony)",
+    "WHO 2022; Thai HIV guideline 2564/2565; COAT trial NEJM 2014"
+   ],
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)",
+    "2.3.1-3(7)",
+    "2.3.1(9)",
+    "2.1.3"
+   ]
+  },
+  {
+   "id": "NEU-CNS-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "N04",
+   "lecture": "CNS infection and CSF interpretation (อ.ดำรงวิทย์)",
+   "topic": "SAQ – Eosinophilic meningitis CSF interpretation",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "instruction": "ชายไทยอายุ 35 ปี ภูมิลำเนา จ.ขอนแก่น มาด้วยปวดศีรษะรุนแรงมาก 5 วัน ร่วมกับชาและแสบตามผิวหนังลำตัว ไม่มีไข้สูง 2 สัปดาห์ก่อนกินก้อยหอยโข่งดิบกับเพื่อน\nPE: BT 37.4 °C, alert, neck stiffness positive, no focal deficit, no papilledema\nCBC: WBC 11,200 (N 55%, L 25%, E 18%)\nCT brain: normal\nLP: opening pressure 28 cmH2O, closing pressure 18 cmH2O, appearance: slightly turbid (whitish), WBC 600 cells/µL (N 20%, L 45%, E 35%), RBC 0, protein 90 mg/dL, CSF glucose 60 mg/dL, blood glucose 100 mg/dL\n\nคำถาม\n1. จงแปลผล CSF ให้ครบทุกค่า (3 คะแนน)\n2. จงให้การวินิจฉัย และระบุเชื้อก่อโรคที่เป็นไปได้มากที่สุด 1 ชื่อ เขียนชื่อเต็ม genus และ species ให้สะกดถูกต้อง (2 คะแนน)\n3. จงบอกลักษณะทางคลินิก/ผล CSF ที่ช่วยแยกโรคนี้จากการติดเชื้อพยาธิอีกชนิดที่ทำให้เกิด eosinophilic meningitis ในประเทศไทย 2 ข้อ (2 คะแนน)\n4. จงบอกแนวทางการรักษา 3 ข้อ (3 คะแนน)",
+   "answer": "**1. แปลผล CSF (3 คะแนน; 0.5/ข้อ)**\n- Opening pressure **สูง** (28 > 20 cmH2O), closing pressure 18\n- Appearance: slightly turbid (ขาวขุ่น)\n- **Pleocytosis** WBC 600 cells/µL\n- **Eosinophil predominance**: 35% = **210 eos/µL** (เกณฑ์ ≥10% หรือ ≥10/µL) ร่วมกับ lymphocyte\n- Protein **สูง** (90 > 45 mg/dL)\n- Glucose **ปกติ**: ratio 60/100 = 0.6\n(+ peripheral eosinophilia 18%)\n\n**2. Diagnosis (2 คะแนน)**\n- **Eosinophilic meningitis** (1)\n- ***Angiostrongylus cantonensis*** (1; ต้องสะกดถูกทั้ง genus และ species, ตัวเอียง/ขีดเส้นใต้, ห้ามย่อ — เขียนผิดไม่ได้คะแนน)\n\n**3. แยกจาก *Gnathostoma spinigerum* (2 คะแนน; ข้อละ 1)**\n- แหล่ง: Gnathostoma จากกินปลาน้ำจืด กบ ไก่ ดิบ (ส้มฟัก ปลาส้ม) vs Angiostrongylus จากหอยโข่ง/หอยทากดิบ\n- Gnathostoma มี **migratory subcutaneous swelling**, **radiculomyelitis** (ปวดร้าวตามเส้นประสาทรุนแรงแล้ว paraplegia), encephalitis\n- CSF Gnathostoma มัก **xanthochromic/bloody**, อาจมี ICH/SAH บน CT; Angiostrongylus CSF ใส/ขุ่นขาว ไม่มีเลือด\n- Angiostrongylus ส่วนใหญ่ self-limited พยากรณ์ดี\n\n**4. การรักษา (3 คะแนน; ข้อละ 1)**\n- **Analgesics** (paracetamol, NSAIDs/weak opioid) ± antiemetic\n- **Repeated therapeutic LP** เมื่อ OP สูง/ปวดศีรษะมาก\n- **Prednisolone 60 mg/day PO × 14 วัน** (ลดระยะเวลาปวดศีรษะ; RCT ขอนแก่น) ± albendazole ร่วมกับ steroid (ไม่ให้ anthelminthic เดี่ยว)\n- (คำแนะนำ: ไม่กินหอยดิบ ล้างผักให้สะอาด)",
+   "ref": [
+    "MED33 SAQ comment – OP+CP 28, CSF glucose 20/blood 100, protein 96, WBC 100 (PMN 35 L 45 E 25) มาจากอีสาน ชอบกินหอยดิบ: แปลผล LP + เชื้อ",
+    "MED35 ลงกอง2 SAQ CSF – คนอีสานกินหอยโข่งดิบ แปลผล → eosinophilic meningitis, Angiostrongylus cantonensis (เขียนให้ถูกทุกตัว)",
+    "MED31 SAQ 7 – กินหอยโข่ง stiff neck วิเคราะห์ CSF ตอบเชื้อ (genus & species ห้ามย่อ)",
+    "MED29 SAQ 4 – LP OP/CP 28, glucose 20/100, protein 96, WBC 100 (PMN35 L45 E25) → eosinophilic meningitis; Angiostrongylus cantonensis",
+    "MED28 MCQ 25 – CSF eosinophilia → Angiostrongylus cantonensis"
+   ],
+   "nl": [
+    "B3.2.2(1)",
+    "2.3.6(5)",
+    "B3.3(2)",
+    "2.3.1-3(8)"
+   ],
+   "years": [
+    "28",
+    "29",
+    "31",
+    "33",
+    "35"
+   ]
+  }
+ ]
+}

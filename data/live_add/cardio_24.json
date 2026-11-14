@@ -1,0 +1,753 @@
+{
+ "mcq": [
+  {
+   "id": "C-AF-MCQ-01",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Classification of atrial fibrillation",
+   "stem": "A 63-year-old man notices palpitations that began 10 days ago and have not stopped. ECG confirms atrial fibrillation. After 3 weeks of anticoagulation he undergoes electrical cardioversion and is in sinus rhythm. He had one previous self-terminating episode lasting 2 days a year ago. How should his atrial fibrillation be classified?",
+   "choices": [
+    "Persistent atrial fibrillation",
+    "Paroxysmal atrial fibrillation",
+    "Long-standing persistent atrial fibrillation",
+    "Permanent atrial fibrillation",
+    "Lone atrial fibrillation"
+   ],
+   "answer": 0,
+   "explain": "**หลักการจำแนก (ESC 2024) — ใช้ \"ระยะเวลาของ episode ปัจจุบัน\" และ \"การตัดสินใจรักษา\"**\n\n| ชนิด | นิยาม |\n|---|---|\n| **First-diagnosed** | เพิ่งพบครั้งแรก ไม่ว่านานเท่าไร |\n| **Paroxysmal** | หยุดเอง (หรือ cardiovert) **ภายใน 7 วัน** |\n| **Persistent** | **นานเกิน 7 วัน** รวมถึงที่ต้อง cardiovert หลัง 7 วัน |\n| **Long-standing persistent** | ต่อเนื่อง **≥ 12 เดือน** แต่ยังตั้งใจทำ rhythm control |\n| **Permanent** | ผู้ป่วยและแพทย์ **ตัดสินใจไม่ทำ rhythm control อีก** (เป็นการตัดสินใจ ไม่ใช่คุณสมบัติของโรค) |\n\nรายนี้ episode ปัจจุบัน **ต่อเนื่อง 10 วันจนต้อง cardiovert → persistent** (ใช้ episode ที่เด่น/ล่าสุด แม้เคยมี paroxysmal มาก่อน)\n\n**กลไกที่ทำให้จำแนกสำคัญ** — \"AF begets AF\": ยิ่ง AF นาน atrium ยิ่งเกิด **electrical remodeling (refractory period สั้นลง) และ structural remodeling (fibrosis)** → rhythm control ยากขึ้น · แต่ **ชนิดของ AF ไม่ได้ใช้ตัดสินเรื่อง anticoagulant** — ใช้ CHA2DS2-VA เหมือนกันทุกชนิด\n\n**ทำไมตัวลวงผิด**\n- *Paroxysmal* — ต้องหยุดภายใน 7 วัน\n- *Long-standing* — ต้อง ≥ 12 เดือน\n- *Permanent* — เพิ่งทำ cardioversion สำเร็จ ยังเลือก rhythm control\n- *Lone AF* — คำเก่าที่ ESC เลิกใช้แล้ว",
+   "pearl": "Paroxysmal ≤ 7 วัน, persistent > 7 วัน, long-standing ≥ 1 ปี, permanent = เลิกทำ rhythm control",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B7.2.5(5)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-02",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "ECG recognition – atrial fibrillation versus its mimics",
+   "stem": "A 74-year-old woman with palpitations has an irregular pulse; the apical rate counted by auscultation is 140/min but the radial pulse is 112/min. Her ECG shows narrow QRS complexes at about 140/min with completely irregular R–R intervals, no discernible P waves and a fine irregular undulating baseline in V1. What is the rhythm?",
+   "choices": [
+    "Atrial fibrillation with rapid ventricular response",
+    "Multifocal atrial tachycardia",
+    "Atrial flutter with 2:1 atrioventricular block",
+    "Sinus tachycardia with frequent premature atrial complexes",
+    "Atrioventricular nodal re-entrant tachycardia"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ใน AF atrium มี **wavelet ไร้ระเบียบ 350–600 ครั้ง/นาที** → ไม่มีการบีบตัวเป็นจังหวะ จึง **ไม่มี P wave** เห็นแต่ **fibrillatory (f) wave** ที่ baseline (ชัดสุดใน V1) → AV node รับ impulse แบบสุ่ม (concealed conduction) → **R–R ไม่สม่ำเสมอแบบ irregularly irregular**\n- **Pulse deficit** — บีบตัวที่ R–R สั้น เลือดเติมหัวใจไม่พอ → stroke volume น้อยจนคลำชีพจรที่ข้อมือไม่ได้ (apical > radial) — ต้องนับชีพจรที่ apex เสมอใน AF\n\n**แยกจาก mimics**\n| จังหวะ | ลักษณะแยก |\n|---|---|\n| **AF** | irregularly irregular, **ไม่มี P**, f-wave |\n| **MAT** | irregular แต่มี **P wave ≥ 3 รูปแบบ**, PR ต่างกัน, rate > 100 — มักใน **COPD exacerbation**, hypoxia → รักษาที่สาเหตุ |\n| **Atrial flutter** | **sawtooth F-wave ~300/min** ใน II, III, aVF; 2:1 → **regular 150/min** (variable block จึงจะ irregular) |\n| **Sinus + PACs** | มี P wave นำทุก QRS, irregular เป็นช่วง ๆ |\n| **AVNRT** | **regular** 150–250, P ซ่อนใน QRS/pseudo-r' |\n\n**ขั้นตอนต่อไป**: ประเมิน hemodynamic → rate control, CHA2DS2-VA, หาสาเหตุ (TSH, K/Mg, echo)",
+   "pearl": "Irregularly irregular + ไม่มี P = AF; irregular แต่มี P ≥ 3 รูป = MAT; regular 150 = นึกถึง flutter 2:1",
+   "ref": [
+    "โพย MED32 SAQ ECG (บรรยาย irregular, unidentical P wave, narrow QRS → AF c RVR)",
+    "โพย MED29 OSCE (EKG AF น่าจะ RVR ถามการรักษา)",
+    "โพย MED31 MCQ ข้อ 55 (HF ใจสั่น irregular tachycardia → AF)",
+    "โพย MED34 MEQ (AF PE: irregular pulse)",
+    "โพย MED32 MCQ ข้อ 58 (AF ฟังเสียงหัวใจกับคลำ pulse ไม่พร้อมกัน)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B7.3(3)b",
+    "3.1.12",
+    "2.3.9(1)",
+    "2.1.36"
+   ],
+   "years": [
+    "29",
+    "31",
+    "32",
+    "34"
+   ],
+   "note_img": "โพย MED32 SAQ ให้ภาพ EKG 12 leads (AF with RVR: irregular narrow QRS ไม่มี P wave ชัด) — ข้อนี้บรรยาย ECG เป็นข้อความแทนภาพ"
+  },
+  {
+   "id": "C-AF-MCQ-03",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Atrial flutter – recognition and stroke risk",
+   "stem": "A 66-year-old man has palpitations. ECG shows a regular narrow-complex tachycardia at exactly 150/min. Leads II, III and aVF show a continuous 'saw-tooth' baseline with negative deflections at 300/min, and every second atrial wave is followed by a QRS. He has hypertension and diabetes. Which statement about this arrhythmia is correct?",
+   "choices": [
+    "It is typical atrial flutter with 2:1 block; anticoagulation follows the same risk-based approach as atrial fibrillation, and cavotricuspid isthmus ablation is highly effective",
+    "It is sinus tachycardia; no anticoagulation is needed",
+    "Atrial flutter does not cause atrial thrombus, so stroke prevention is unnecessary",
+    "Adenosine will permanently terminate this rhythm because it is AV-node dependent",
+    "Class IC drugs such as flecainide alone are first-line because they slow the atrial rate safely"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **typical (counter-clockwise) flutter** = **macro-reentry รอบ right atrium** ผ่าน **cavotricuspid isthmus (CTI)** atrial rate ~300/min → AV node ปล่อยลงได้ครึ่งหนึ่ง **(2:1) → ventricular rate 150/min พอดี** (เห็น rate 150 แบบ regular ให้นึกถึง flutter 2:1 เสมอ) · F-wave **ลบใน II, III, aVF** เป็นฟันเลื่อย\n\n**ประเด็นสำคัญ**\n- **Stroke risk** — atrium บีบตัวไม่มีประสิทธิภาพ เกิด thrombus ได้ และ flutter มัก **สลับกับ AF** → ใช้ **CHA2DS2-VA และ anticoagulant แบบเดียวกับ AF** (รายนี้ HT + DM = 2 → แนะนำ OAC) — โพยถาม \"flutter แล้วเกิด stroke เพราะอะไร\" ตอบ **cardioembolic (left atrial thrombus)**\n- **Rate control ยากกว่า AF** — มักต้อง cardioversion (พลังงานต่ำ 50–100 J ได้ผลดี)\n- **CTI ablation** สำเร็จ > 90% → ESC 2024 แนะนำเป็นการรักษาหลักใน flutter ที่เป็นซ้ำ\n\n**ทำไมตัวลวงผิด**\n- *sinus tachycardia* — sinus ไม่มีทาง \"พอดี 150\" พร้อม sawtooth\n- *ไม่ต้องป้องกัน stroke* — ผิด\n- *adenosine หยุดถาวร* — flutter ไม่พึ่ง AV node; adenosine แค่ **block ชั่วคราวให้เห็น F-wave** ชัด (ใช้วินิจฉัย)\n- *flecainide เดี่ยว* — ทำให้ atrial rate ช้าลง (~200) จน AV node ปล่อย **1:1 → ventricular rate สูงมาก** ต้องให้ AV-nodal blocker ร่วม",
+   "pearl": "Regular 150/min + sawtooth ใน II, III, aVF = flutter 2:1 — ป้องกัน stroke เหมือน AF",
+   "ref": [
+    "โพย MED29 SAQ (EKG atrial flutter, atrial rate 300, variable AV conduction)",
+    "โพย MED31 MCQ ข้อ 42 (EKG atrial flutter แล้วเป็น stroke → cardioembolic)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B7.3(3)b",
+    "2.3.9(1)",
+    "2.2.39"
+   ],
+   "years": [
+    "29",
+    "31"
+   ],
+   "note_img": "โพย MED29 SAQ และ MED31 MCQ ข้อ 42 ให้ภาพ EKG atrial flutter — ข้อนี้บรรยาย ECG เป็นข้อความแทนภาพ"
+  },
+  {
+   "id": "C-AF-MCQ-04",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "CHA2DS2-VA (ESC 2024) – calculating stroke risk",
+   "stem": "A 72-year-old woman has newly diagnosed non-valvular atrial fibrillation. She has hypertension and type 2 diabetes. She has no heart failure, no previous stroke or transient ischaemic attack, and no vascular disease. Using the CHA2DS2-VA score recommended by the 2024 ESC guideline, what is her score and the recommendation?",
+   "choices": [
+    "Score 3; oral anticoagulation is recommended, preferably with a direct oral anticoagulant",
+    "Score 4; oral anticoagulation is recommended because female sex adds 1 point",
+    "Score 2; aspirin is an acceptable alternative to anticoagulation",
+    "Score 1; no antithrombotic therapy is needed",
+    "Score 3; dual antiplatelet therapy with aspirin and clopidogrel is preferred"
+   ],
+   "answer": 0,
+   "explain": "**CHA2DS2-VA (ESC 2024) — ตัด \"Sc (sex category)\" ออก**\n\n| ตัวอักษร | ปัจจัย | คะแนน |\n|---|---|---|\n| **C** | Congestive HF / LVEF ลด | 1 |\n| **H** | Hypertension | 1 |\n| **A2** | **อายุ ≥ 75** | **2** |\n| **D** | Diabetes | 1 |\n| **S2** | Stroke/TIA/thromboembolism | **2** |\n| **V** | Vascular disease (MI, PAD, aortic plaque) | 1 |\n| **A** | **อายุ 65–74** | 1 |\n\nรายนี้: **อายุ 72 (1) + HT (1) + DM (1) = 3** (ถ้าใช้ CHA2DS2-VASc แบบเก่าจะได้ 4)\n\n**ทำไมตัด sex** — เพศหญิงเป็น **risk modifier ที่มีผลเฉพาะเมื่อมีปัจจัยอื่นอยู่แล้ว** และทำให้เกณฑ์ตัดสินต่างกันระหว่างชาย–หญิงโดยไม่จำเป็น การตัดออกทำให้ **เกณฑ์เดียวกันทุกเพศ**\n\n**คำแนะนำ (ESC 2024)**\n- **≥ 2 → แนะนำ OAC (Class I)**\n- **= 1 → ควรพิจารณา OAC (IIa)**\n- **0 → ไม่ต้อง**\n- **DOAC มาก่อน warfarin** (ยกเว้น mechanical valve, moderate–severe MS)\n- **Antiplatelet (aspirin, DAPT) ไม่ใช่ทางเลือกแทน OAC** — ป้องกันได้น้อยและเลือดออกไม่ได้น้อยกว่า DOAC มากนัก\n\n(แนวทาง ACC/AHA 2023 ยังใช้ CHA2DS2-VASc: ชาย ≥ 2 / หญิง ≥ 3 → OAC)",
+   "pearl": "CHA2DS2-VA: ไม่นับเพศ — ≥ 2 ให้ OAC, 1 พิจารณา; aspirin ไม่ใช่ทางเลือก",
+   "ref": [
+    "โพย MED35 MCQ ข้อ 8 (Afib ระวัง thromboembolism ต้องประเมิน CHA2DS2-VASc)",
+    "โพย MED33 MCQ (Management AF → คำนวณ CHADS2-VASc)",
+    "โพย MED31 MCQ ข้อ 33 (stroke initial: NIHSS vs CHADS score)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)",
+    "2.2.39"
+   ],
+   "years": [
+    "31",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-05",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "HAS-BLED – using bleeding risk correctly",
+   "stem": "A 76-year-old man with atrial fibrillation (CHA2DS2-VA score 3) has blood pressure 172/96 mmHg on no treatment, takes diclofenac most days for knee pain and drinks about 10 standard drinks per week. Renal and liver function are normal. His HAS-BLED score is 3. What is the most appropriate approach?",
+   "choices": [
+    "Start a direct oral anticoagulant and correct the modifiable bleeding risks: treat hypertension, stop the NSAID and reduce alcohol",
+    "Withhold anticoagulation because a HAS-BLED score of 3 or more is an absolute contraindication",
+    "Give aspirin instead of anticoagulation because it causes less bleeding",
+    "Give warfarin with a target INR of 1.5 to reduce bleeding",
+    "Defer any antithrombotic therapy until his blood pressure has been normal for 1 year"
+   ],
+   "answer": 0,
+   "explain": "**หลักคิด** — HAS-BLED (**H**ypertension uncontrolled SBP > 160, **A**bnormal renal/liver, **S**troke, **B**leeding history, **L**abile INR, **E**lderly > 65, **D**rugs (antiplatelet/NSAID) or alcohol ≥ 8 drinks/สัปดาห์) ใช้เพื่อ **หาและแก้ปัจจัยเลือดออกที่แก้ได้ + นัดติดตามใกล้ชิด** **ไม่ได้ใช้ตัดสินว่าห้ามให้ OAC**\n\nเหตุผล: ผู้ที่ HAS-BLED สูงมักมี stroke risk สูงด้วย → **net clinical benefit ของ OAC ยังเป็นบวก** (ESC 2024 Class III: ไม่ควรใช้ bleeding score ตัดสินไม่ให้ OAC)\n\n**ปัจจัยที่แก้ได้ในรายนี้**\n- **BP 172/96** → ควบคุมให้ < 140/90 (ลดทั้ง bleeding และ stroke)\n- **Diclofenac** → หยุด (NSAID + OAC เพิ่ม GI bleed มาก) ใช้ paracetamol แทน\n- **Alcohol** → ลด\n- (อื่น ๆ: แก้ซีด, labile INR → เปลี่ยนเป็น DOAC, ทบทวน antiplatelet ที่ไม่จำเป็น)\n\n**ทำไมตัวลวงผิด**\n- *HAS-BLED ≥ 3 ห้ามให้* — ผิดหลัก\n- *aspirin* — ป้องกัน stroke ได้น้อย เลือดออกพอ ๆ กับ apixaban (AVERROES)\n- *warfarin INR 1.5* — INR < 2 ป้องกัน stroke ไม่ได้\n- *รอ 1 ปี* — ปล่อยให้เสี่ยง stroke โดยไม่จำเป็น",
+   "pearl": "HAS-BLED สูง = แก้ปัจจัยที่แก้ได้และนัดถี่ ไม่ใช่เหตุงด OAC",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-06",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "DOAC dosing – calculating creatinine clearance",
+   "stem": "A 78-year-old man weighing 64 kg has non-valvular atrial fibrillation with CHA2DS2-VA score 4. Serum creatinine is 1.6 mg/dL and stable. He has no mechanical valve and no mitral stenosis. Using the Cockcroft–Gault equation, which anticoagulant regimen is correctly dosed?",
+   "choices": [
+    "Rivaroxaban 15 mg once daily with the evening meal",
+    "Rivaroxaban 20 mg once daily with the evening meal",
+    "Apixaban 2.5 mg twice daily",
+    "Edoxaban 60 mg once daily",
+    "Dabigatran is contraindicated at his creatinine clearance, so warfarin must be used"
+   ],
+   "answer": 0,
+   "explain": "**คำนวณ Cockcroft–Gault**\nCrCl = (140 − อายุ) × น้ำหนัก ÷ (72 × Cr) [× 0.85 ถ้าหญิง]\n= (140 − 78) × 64 ÷ (72 × 1.6) = 3,968 ÷ 115.2 = **34 mL/min**\n\n**ขนาด DOAC ใน AF (ESC 2024/ฉลากยา)**\n| ยา | ขนาดปกติ | ลดขนาดเมื่อ | ห้ามเมื่อ |\n|---|---|---|---|\n| **Rivaroxaban** | 20 mg OD (กับอาหาร) | **CrCl 15–49 → 15 mg OD** | < 15 |\n| **Apixaban** | 5 mg BID | **≥ 2 ใน 3**: อายุ ≥ 80, น้ำหนัก ≤ 60 kg, Cr ≥ 1.5 mg/dL → 2.5 mg BID (หรือ CrCl 15–29) | < 15 |\n| **Edoxaban** | 60 mg OD | CrCl 15–50, น้ำหนัก ≤ 60 kg, P-gp inhibitor → 30 mg OD | < 15 |\n| **Dabigatran** | 150 mg BID | 110 mg BID ถ้าอายุ ≥ 80 / verapamil / bleeding risk สูง | **< 30** (ขับทางไต 80%) |\n\n**ไล่ตัวเลือก**\n- **Rivaroxaban 15 mg** — CrCl 34 อยู่ในช่วง 15–49 → **ถูก** (กินกับอาหารเย็นเพื่อการดูดซึม)\n- *Rivaroxaban 20 mg* — เกินขนาด\n- *Apixaban 2.5 mg BID* — มีเกณฑ์เพียง **1 ข้อ** (Cr 1.6) อายุ 78 < 80, น้ำหนัก 64 > 60 → ควรเป็น **5 mg BID** (underdose เพิ่ม stroke)\n- *Edoxaban 60 mg* — CrCl ≤ 50 ต้องลดเป็น 30 mg\n- *Dabigatran ห้าม* — ห้ามเมื่อ < 30; ที่ 34 ใช้ได้ (110 mg BID ในผู้สูงอายุที่ bleeding risk สูง)\n\n**ข้อสังเกต** — ใช้ **Cockcroft–Gault (CrCl)** ไม่ใช่ eGFR (CKD-EPI) ในการปรับขนาด DOAC เพราะเป็นสูตรที่ใช้ใน RCT",
+   "pearl": "DOAC ใช้ CrCl (Cockcroft–Gault) — apixaban ลดขนาดด้วยเกณฑ์ 2 ใน 3 (อายุ ≥ 80, ≤ 60 kg, Cr ≥ 1.5)",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "EHRA Practical Guide on the use of NOACs in AF (2021)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-07",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Which atrial fibrillation patient may receive a DOAC?",
+   "stem": "Each of the following patients has atrial fibrillation with a CHA2DS2-VA score of at least 2. For which patient is a direct oral anticoagulant an appropriate choice?",
+   "choices": [
+    "A 70-year-old woman with a bioprosthetic aortic valve implanted 2 years ago",
+    "A 52-year-old man with a mechanical mitral valve",
+    "A 45-year-old woman with rheumatic mitral stenosis, mitral valve area 1.2 cm2",
+    "A 60-year-old man with a mechanical aortic valve",
+    "A 48-year-old woman with triple-positive antiphospholipid syndrome and previous arterial thrombosis"
+   ],
+   "answer": 0,
+   "explain": "**หลักการ** — คำว่า \"valvular AF\" ในแนวทางปัจจุบันหมายถึง **2 ภาวะเท่านั้น** ที่ต้องใช้ **warfarin (VKA)**:\n1. **Mechanical prosthetic valve** — **RE-ALIGN** (dabigatran) ลิ่มเลือดและเลือดออกมากกว่า warfarin; เป้า INR: **aortic 2.5 (2.0–3.0)**, **mitral 3.0 (2.5–3.5)** หรือ aortic ที่มีปัจจัยเสี่ยง\n2. **Moderate–severe rheumatic mitral stenosis** — **INVICTUS** (rivaroxaban) แย่กว่า VKA; เป้า INR 2.0–3.0\n\n**กลไก** — ลิ้นเทียมโลหะกระตุ้น **contact (intrinsic) pathway** ปริมาณมาก ยาที่ยับยั้งเพียง factor เดียว (IIa หรือ Xa) ไม่พอ ส่วน MS รุนแรงมี left atrium โตมาก stasis สูงมาก\n\n**ภาวะลิ้นหัวใจอื่น DOAC ใช้ได้**: **bioprosthetic valve (หลัง 3 เดือน)**, TAVI, mitral valve repair, AS, AR, MR, mild MS\n\n**ทำไมตัวลวงผิด**\n- *mechanical mitral / mechanical aortic* — VKA เท่านั้น\n- *rheumatic MS MVA 1.2* — moderate–severe → VKA\n- *triple-positive APS* — ไม่เกี่ยวกับลิ้น แต่ **DOAC ด้อยกว่า warfarin** (TRAPS) → ต้องใช้ warfarin เช่นกัน\n\n> ในไทย rheumatic MS ยังพบบ่อย — โพยหลายรุ่นถาม MS + AF แล้วเกิด stroke (embolic) ซึ่งต้องใช้ warfarin INR 2–3",
+   "pearl": "Warfarin เท่านั้น: mechanical valve, moderate–severe MS (และ APS) — bioprosthetic ใช้ DOAC ได้",
+   "ref": [
+    "โพย MED30 MCQ ข้อ 85 (Mitral stenosis & AF แล้วเป็น stroke → embolic stroke)",
+    "โพย MED34 MEQ (CHF + mitral stenosis, AF)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2020 ACC/AHA Valvular heart disease guideline"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.3.9-3(8)",
+    "B2.4(3)"
+   ],
+   "years": [
+    "30",
+    "34"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-08",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Rate control – first-line drug and target",
+   "stem": "A 70-year-old woman has palpitations for 2 days. ECG shows atrial fibrillation at 128/min. BP 142/86 mmHg, no signs of heart failure, LVEF 60% on bedside echocardiography. She walks daily for exercise. TSH and electrolytes are normal. Which initial rate-control strategy is most appropriate?",
+   "choices": [
+    "An oral beta-blocker such as metoprolol or bisoprolol, titrated to a resting heart rate below 110/min initially",
+    "Digoxin monotherapy as the first-line drug",
+    "Intravenous amiodarone infusion",
+    "Rate control to a strict resting heart rate below 60/min",
+    "Intravenous adenosine 6 mg to slow the ventricular rate"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ventricular rate ใน AF ถูกกำหนดโดย **AV node** → rate control คือ **ยืดเวลา refractory ของ AV node**\n- **β-blocker** (metoprolol, bisoprolol, atenolol) — ลด sympathetic tone ได้ผล **ทั้งขณะพักและออกแรง**\n- **Non-DHP CCB** (diltiazem, verapamil) — ทางเลือกเท่ากันเมื่อ **LVEF > 40%** (ห้ามใน HFrEF เพราะ negative inotrope)\n- **Digoxin** — เพิ่ม vagal tone → คุมได้ **เฉพาะขณะพัก** (ออกแรงแล้ว sympathetic ชนะ) ใช้เป็น **ยาเสริม** หรือในผู้สูงอายุที่ไม่ค่อยเคลื่อนไหว/HFrEF/BP ต่ำ (RATE-AF: ใช้เดี่ยวได้ในผู้สูงอายุมีอาการ HF)\n- **Amiodarone** — สำรองสำหรับ HF รุนแรง/hemodynamic ไม่คงที่ (และอาจ cardiovert เองจึงต้องคำนึง anticoagulation)\n\n**เป้าหมาย** — **lenient: resting HR < 110/min** เป็นเป้าเริ่มต้น (RACE II: ไม่แย่กว่า strict < 80) ลดลงถ้ายังมีอาการ\n\n**ขนาดยาที่ใช้บ่อย**: metoprolol tartrate 25–100 mg PO BID (IV 2.5–5 mg ช้า ๆ ซ้ำได้ถึง 15 mg) · bisoprolol 1.25–10 mg OD · diltiazem 60–120 mg PO TID/ER 120–360 mg OD (IV 0.25 mg/kg ใน 2 นาที) · digoxin 0.0625–0.25 mg OD\n\n**ทำไมตัวลวงผิด**\n- *digoxin เดี่ยวเป็นอันดับแรก* — ผู้ป่วย active คุมขณะออกแรงไม่ได้ (โพย MED33 เฉลย \"digoxin\" ถือเป็นคำตอบเก่า)\n- *IV amiodarone* — ไม่จำเป็นใน stable, LVEF ปกติ\n- *HR < 60* — strict ไม่ได้ประโยชน์เพิ่ม เสี่ยง bradycardia\n- *adenosine* — block AV node เพียงไม่กี่วินาที ไม่มีบทบาทใน AF (และอันตรายใน WPW)",
+   "pearl": "Rate control: β-blocker หรือ diltiazem/verapamil (ถ้า EF > 40%), digoxin เป็นตัวเสริม — เป้าเริ่ม HR < 110",
+   "ref": [
+    "โพย MED33 MCQ ข้อ 104 (ECG AF ให้ยาอะไร → digoxin — คำตอบเก่า)",
+    "โพย MED33 MCQ ข้อ 14 (digoxin or warfarin)",
+    "โพย MED32 MCQ ข้อ 15 (AF control symptoms: asa, warfarin, amiodarone, atenolol)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "RACE II trial (NEJM 2010)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B7.4(7)"
+   ],
+   "years": [
+    "32",
+    "33"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-09",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Elective cardioversion – anticoagulation before and after",
+   "stem": "A 66-year-old man with hypertension has had palpitations since about 5 days ago. ECG shows atrial fibrillation at 96/min; he is haemodynamically stable and very symptomatic, and wishes to be cardioverted. He has not been taking any anticoagulant. Which approach is correct?",
+   "choices": [
+    "Anticoagulate for at least 3 weeks before cardioversion (or perform transoesophageal echocardiography to exclude left atrial appendage thrombus), then continue anticoagulation for at least 4 weeks afterwards",
+    "Cardiovert today, because the risk of stroke is only present if AF has lasted more than 1 month",
+    "Give one dose of a DOAC today and cardiovert 2 hours later without imaging",
+    "Cardiovert today and stop anticoagulation immediately once sinus rhythm returns",
+    "Give aspirin for 3 weeks, then cardiovert"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — AF > 24–48 ชม. → เลือดคั่งใน **left atrial appendage (LAA)** เกิด thrombus ได้ · เมื่อกลับเป็น sinus หัวใจห้องบนเริ่มบีบตัว **แต่ช่วงแรก atrium \"stunned\"** (บีบตัวกลับมาเต็มที่ใช้เวลาหลายสัปดาห์) → **ลิ่มเลือดใหม่เกิดได้และหลุดได้หลัง cardioversion** — ความเสี่ยง thromboembolism สูงสุดใน 10 วันแรก\n\n**แนวทาง**\n- **ระยะเวลา**: ACC/AHA 2023 ใช้ **≥ 48 ชม.** · **ESC 2024 ใช้ > 24 ชม.** (และระยะเวลาไม่ชัดก็ถือว่านาน)\n- ก่อน: **OAC เต็มขนาด ≥ 3 สัปดาห์** หรือ **TEE ไม่พบ thrombus** แล้วทำได้ทันที (ภายใต้ heparin/DOAC)\n- หลัง: **OAC ≥ 4 สัปดาห์ทุกราย** แล้ว **ต่อระยะยาวตาม CHA2DS2-VA ไม่ใช่ตามจังหวะหัวใจ** (รายนี้ HT + อายุ 66 = 2 → ต่อตลอด)\n- ถ้า **hemodynamic ไม่คงที่** → cardiovert ทันทีไม่ต้องรอ แล้วให้ anticoagulant ทันทีที่ทำได้\n\n**ทำไมตัวลวงผิด**\n- *เสี่ยงเฉพาะ > 1 เดือน* — ผิด เกณฑ์คือ 24–48 ชม.\n- *DOAC 1 dose แล้ว cardiovert* — ยังไม่ได้ละลาย/ป้องกัน thrombus ที่มีอยู่แล้ว (ต้องมี TEE)\n- *หยุด OAC ทันทีหลัง sinus* — ช่วง atrial stunning เสี่ยงสูงสุด\n- *aspirin* — ไม่ป้องกัน LAA thrombus",
+   "pearl": "AF > 48 ชม. (ESC: > 24 ชม.) → OAC 3 สัปดาห์หรือ TEE ก่อน, OAC ต่อ ≥ 4 สัปดาห์หลัง แล้วต่อระยะยาวตาม CHA2DS2-VA",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-10",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Pharmacological cardioversion – choosing a drug when the heart is diseased",
+   "stem": "A 58-year-old man who had an anterior myocardial infarction 2 years ago (LVEF 35%) develops palpitations; ECG shows atrial fibrillation that began 8 hours ago. He is haemodynamically stable and anticoagulated, and the team decides on pharmacological cardioversion. Which drug is most appropriate?",
+   "choices": [
+    "Intravenous amiodarone",
+    "Oral flecainide 300 mg ('pill in the pocket')",
+    "Oral propafenone 600 mg",
+    "Intravenous verapamil",
+    "Oral dronedarone"
+   ],
+   "answer": 0,
+   "explain": "**กลไกและการเลือก** — ยาต้านจังหวะเปลี่ยนจังหวะได้โดยยืด refractory period/ลดการนำไฟฟ้าใน atrium แต่ **ยาแต่ละกลุ่มมีความเสี่ยง proarrhythmia ต่างกันตามสภาพหัวใจ**\n\n| สภาพหัวใจ | ยาที่ใช้ได้ |\n|---|---|\n| **ไม่มีโรคหัวใจโครงสร้าง** (ไม่มี IHD, LVH รุนแรง, HFrEF) | **Flecainide / propafenone (class IC)** — ได้ผลเร็ว ใช้แบบ \"pill-in-the-pocket\" ได้ (ให้ AV-nodal blocker ร่วม) · vernakalant |\n| **Coronary disease / HFrEF / LVH มาก** | **Amiodarone** (± vernakalant ถ้าไม่มี severe AS/HF รุนแรง) |\n\n**ทำไม class IC ห้ามใน IHD/HFrEF** — **CAST trial**: flecainide/encainide หลัง MI เพิ่มอัตราตายจาก **VT/VF** (scar เป็นฐานของ re-entry + IC ทำให้ conduction ช้าลง) และ negative inotrope\n\n**ทำไมตัวลวงผิด**\n- *flecainide / propafenone* — ห้ามในหลัง MI และ LVEF 35%\n- *verapamil IV* — เป็น **rate control** ไม่ใช่ rhythm control และกดหัวใจใน HFrEF\n- *dronedarone* — ไม่ใช้ cardiovert แบบเฉียบพลัน และ **ห้ามใน HFrEF ที่เพิ่ง decompensate/NYHA III–IV** (ANDROMEDA)\n\n**ข้อควรระวัง amiodarone** — IV phlebitis, hypotension, bradycardia; ระยะยาว: thyroid (hypo/hyper), pulmonary fibrosis, hepatotoxicity, corneal deposits, photosensitivity, เพิ่ม INR ของ warfarin และระดับ digoxin",
+   "pearl": "Rhythm control: หัวใจปกติ → flecainide/propafenone; IHD/HFrEF → amiodarone",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "CAST investigators NEJM 1989",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B7.4(7)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-11",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Catheter ablation – who benefits most",
+   "stem": "A 56-year-old man with heart failure with reduced ejection fraction (LVEF 30%) on optimal guideline-directed therapy including bisoprolol, sacubitril/valsartan, spironolactone and dapagliflozin has symptomatic persistent atrial fibrillation with recurrent heart-failure admissions. Which intervention has been shown to reduce death and heart-failure hospitalisation in such patients?",
+   "choices": [
+    "Catheter ablation with pulmonary vein isolation",
+    "Adding flecainide for rhythm control",
+    "Adding dronedarone for rhythm control",
+    "Replacing bisoprolol with diltiazem",
+    "Stopping anticoagulation once sinus rhythm is achieved"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — AF เริ่มต้นส่วนใหญ่จาก **ectopic firing ในกล้ามเนื้อที่ยื่นเข้าไปใน pulmonary veins** → **pulmonary vein isolation (PVI)** ด้วย radiofrequency/cryo/pulsed-field ตัดทางนำไฟฟ้ารอบ PV\n- ใน HFrEF, AF ทำให้ **เสีย atrial kick + rate เร็ว/ไม่สม่ำเสมอ → tachycardia-induced cardiomyopathy**; การคืน sinus rhythm ทำให้ **LVEF ดีขึ้น**\n\n**หลักฐาน**: **CASTLE-AF** (2018) — ablation ใน HFrEF ลด death + HF hospitalization ~38%; **CASTLE-HTx** (2023) ใน end-stage HF · **EAST-AFNET 4** — early rhythm control (AF < 1 ปี) ลด CV outcome\n\n**ESC 2024**\n- **HFrEF + AF → ablation Class I** (ในผู้ที่น่าจะเป็น tachycardia-induced cardiomyopathy) / IIa ในรายอื่น\n- **Paroxysmal AF ที่มีอาการ → ablation เป็น first-line ได้ (Class I)** โดยตัดสินใจร่วมกับผู้ป่วย\n- **Anticoagulation หลัง ablation ยังต้องต่อตาม CHA2DS2-VA** ไม่ใช่ตามจังหวะหัวใจ\n\n**ทำไมตัวลวงผิด**\n- *flecainide* — ห้ามใน HFrEF\n- *dronedarone* — ห้ามใน HFrEF/NYHA III–IV\n- *diltiazem แทน β-blocker* — negative inotrope และตัด GDMT\n- *หยุด OAC* — ความเสี่ยง stroke ไม่หายตามจังหวะ",
+   "pearl": "HFrEF + AF ที่มีอาการ → catheter ablation (PVI) ลดตายและนอน รพ. (CASTLE-AF)",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "Marrouche NF et al. CASTLE-AF, NEJM 2018",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.3.9(5)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-12",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Unstable atrial fibrillation – synchronised cardioversion",
+   "stem": "A 67-year-old woman presents with palpitations and confusion. ECG shows atrial fibrillation at 170/min. BP 78/50 mmHg, cool clammy peripheries, SpO2 92%. A carotid pulse is present. What is the most appropriate immediate management?",
+   "choices": [
+    "Synchronised DC cardioversion at 120–200 J biphasic after procedural sedation",
+    "Unsynchronised defibrillation at 200 J biphasic",
+    "Intravenous diltiazem 0.25 mg/kg over 2 minutes",
+    "Intravenous adenosine 6 mg rapid push",
+    "Intravenous amiodarone 150 mg over 10 minutes, then reassess in 1 hour before any shock"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — rate 170 + ไม่มี atrial kick → **diastolic filling ไม่พอ → cardiac output ตก** → hypotension, สับสน, ปลายมือปลายเท้าเย็น = **unstable tachyarrhythmia** (ACLS: hypotension, altered mental status, signs of shock, ischemic chest pain, acute HF)\n\n**การรักษา: synchronised cardioversion ทันที** (ไม่ต้องรอ anticoagulation 3 สัปดาห์; ให้ heparin/DOAC ทันทีที่ทำได้)\n- **Synchronised** = ปล่อยไฟตรง **R wave** หลีกเลี่ยง **T wave (vulnerable period)** ซึ่งจะทำให้เกิด **VF (R-on-T)**\n- **พลังงาน (AHA ACLS)**: **AF 120–200 J biphasic** (ESC/ERC แนะนำเริ่มสูงได้ถึง 150–200 J), flutter/SVT 50–100 J, monomorphic VT 100 J\n- ให้ sedation/analgesia ถ้าผู้ป่วยรู้สึกตัว (etomidate, midazolam + fentanyl, propofol ถ้า BP ไหว)\n\n**ทำไมตัวลวงผิด**\n- *unsynchronised defibrillation* — สำหรับ **pulseless VT/VF** เท่านั้น ใช้กับ AF เสี่ยงเกิด VF\n- *diltiazem IV* — negative inotrope + vasodilate → BP ตกหนักขึ้น\n- *adenosine* — ไม่ได้ผลใน AF และอาจทำ AF + WPW เป็น VF\n- *amiodarone แล้วรอ 1 ชม.* — ช้าเกินไปในผู้ป่วย shock (ใช้เป็นทางเลือกเสริมเมื่อ cardioversion ล้มเหลวหรือ AF กลับซ้ำ)\n\n> โพยถาม \"คลำ pulse ไม่ได้แต่ยังคุยได้\" — ถ้ายังรู้สึกตัวแปลว่ามี perfusion (pulse deficit ที่ radial) → **synchronised** cardioversion; ถ้า pulseless จริงเป็น cardiac arrest ใช้ ACLS",
+   "pearl": "AF + shock/สับสน/เจ็บหน้าอก/HF เฉียบพลัน → synchronised cardioversion 120–200 J biphasic ทันที",
+   "ref": [
+    "โพย MED31 SAQ ข้อ 8 (ใจสั่น เหนื่อย คลำ pulse ไม่ได้แต่คุยได้ EKG AF → amiodarone, electrocardioversion)",
+    "โพย MED33/MED31 SAQ (EKG เต้นเร็ว: รักษาเบื้องต้น, หลัง NSR ทำอะไรต่อ)",
+    "โพย MED31 MCQ ข้อ 69 (AF then shock)",
+    "2020/2025 AHA ACLS – tachycardia with a pulse algorithm",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.2.7",
+    "B7.4(7)"
+   ],
+   "years": [
+    "31",
+    "33"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-13",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Pre-excited atrial fibrillation (WPW) – what not to give",
+   "stem": "A 24-year-old man has sudden palpitations. BP 116/72 mmHg, alert. ECG shows a very fast irregular rhythm at up to 260/min with wide QRS complexes of varying width and shape. A previous ECG in sinus rhythm showed a short PR interval and delta waves. What is the most appropriate treatment?",
+   "choices": [
+    "Intravenous procainamide (or synchronised cardioversion if he deteriorates)",
+    "Intravenous verapamil",
+    "Intravenous adenosine",
+    "Intravenous digoxin",
+    "Intravenous metoprolol"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ใน WPW มี **accessory pathway (bundle of Kent)** ที่นำไฟฟ้าได้เร็วมากและ **ไม่มีคุณสมบัติ decremental** แบบ AV node\n- เมื่อเกิด AF impulse 350–600/min สามารถลงทางลัดได้มาก → **ventricular rate 250–300+**, QRS กว้างและรูปร่างเปลี่ยนไปตามสัดส่วนที่ลงผ่านทางลัด (\"FBI\": fast, broad, irregular)\n- ถ้าให้ **AV-nodal blocker** (adenosine, β-blocker, verapamil/diltiazem, digoxin) → **ปิด AV node ทำให้ impulse ไหลลงทางลัดมากขึ้น** (digoxin/verapamil ยังทำให้ refractory ของ accessory pathway สั้นลง) → **VF**\n\n**การรักษา**\n- **Unstable → synchronised cardioversion ทันที**\n- **Stable → IV procainamide** (หรือ ibutilide) ซึ่ง **ยืด refractory ของ accessory pathway** หรือ elective cardioversion\n- **IV amiodarone ไม่แนะนำ** (ESC 2024) — มีฤทธิ์ AV-nodal blocking และมีรายงาน VF\n- ระยะยาว: **catheter ablation ของ accessory pathway** (curative, ESC Class I หลังเกิด pre-excited AF)\n\n**ทำไมตัวลวงผิด** — verapamil, adenosine, digoxin, metoprolol ล้วนเป็น AV-nodal blocker → อาจกระตุ้น VF",
+   "pearl": "AF + WPW (irregular, wide, bizarre, เร็วมาก): ห้าม ABCD (Adenosine, β-blocker, CCB, Digoxin) — ใช้ procainamide/cardioversion",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2019 ESC Guidelines for supraventricular tachycardia",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B7.3(3)b",
+    "B7.4(7)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-14",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Atrial fibrillation from thyrotoxicosis",
+   "stem": "A 34-year-old woman has 2 months of weight loss, tremor, heat intolerance and palpitations. Pulse is irregularly irregular at 140/min, BP 132/70 mmHg, no heart failure, temperature 37.2 °C. She has a diffuse goitre with a bruit and lid lag. TSH < 0.01 mIU/L, free T4 4.2 ng/dL (high). ECG confirms atrial fibrillation. What is the most appropriate initial management?",
+   "choices": [
+    "Propranolol for rate and adrenergic symptoms plus an antithyroid drug such as methimazole; defer cardioversion until she is euthyroid",
+    "Immediate DC cardioversion to restore sinus rhythm",
+    "Intravenous amiodarone to convert the rhythm",
+    "Digoxin as the first-line rate-control drug",
+    "Radioactive iodine today without any beta-blocker"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ฮอร์โมนไทรอยด์ **เพิ่ม β-adrenergic receptor และความไวต่อ catecholamine**, **ย่อ atrial refractory period** และเพิ่ม automaticity → AF พบ 10–15% ของ thyrotoxicosis (มากขึ้นตามอายุ) — **โพยหลายรุ่นถาม \"hyperthyroid ไม่รักษาเกิดอะไร\" = AF**\n\n**การรักษา**\n1. **β-blocker (propranolol 20–40 mg ทุก 6–8 ชม.)** — คุม rate และอาการ adrenergic; propranolol ขนาดสูงยังลด T4→T3 (หรือ diltiazem ถ้าห้าม β-blocker)\n2. **Antithyroid drug** — **methimazole** (PTU ในไตรมาสแรกของการตั้งครรภ์/thyroid storm)\n3. **Anticoagulation** — ตาม **CHA2DS2-VA เหมือน AF ทั่วไป** (รายนี้ = 0 → ยังไม่จำเป็น แต่ประเมินใหม่ถ้า AF ไม่หาย)\n4. **ไม่ทำ cardioversion จนกว่าจะ euthyroid** — ทำตอนยังเป็นพิษ AF กลับมาเกือบทั้งหมด; **~60% กลับเป็น sinus เองภายใน 2–3 เดือน** หลัง euthyroid\n\n**ทำไมตัวลวงผิด**\n- *cardioversion ทันที* — ยังไม่ euthyroid จะกลับเป็นซ้ำ (เว้นแต่ unstable)\n- *amiodarone* — มีไอโอดีนสูงและทำให้ไทรอยด์แย่ลงได้\n- *digoxin เป็นตัวแรก* — ได้ผลน้อยเพราะ clearance เพิ่ม และ sympathetic สูง\n- *RAI ทันทีโดยไม่มี β-blocker* — RAI ออกฤทธิ์ช้า (หลายสัปดาห์) และอาจกระตุ้น thyroiditis; ต้องคุมอาการก่อน\n\n> ถ้ามีไข้สูง HF ซึม สับสน + AF = **thyroid storm** (Burch–Wartofsky) → PTU, iodine (หลัง thionamide 1 ชม.), steroid, β-blocker, ICU",
+   "pearl": "AF จากไทรอยด์เป็นพิษ: β-blocker + antithyroid, anticoagulate ตาม CHA2DS2-VA, รอ euthyroid ก่อน cardioversion",
+   "ref": [
+    "โพย MED31 MCQ ข้อ 53 (Hyperthyroid ไม่รักษาเกิดอะไร → AF)",
+    "โพย MED30 MCQ ข้อ 13 (hyperthyroid → EKG เหมือน AF ให้ยาอะไร: antithyroid)",
+    "โพย MED35 MCQ ข้อ 79 (ไข้สูง HF AF T สูง → thyroid storm)",
+    "โพย MED34 MEQ Case 2 (เหนื่อยง่าย ใจสั่น → hyperthyroidism, MMI + β-blocker)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2016 ATA Guidelines for hyperthyroidism"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.3.4(9)",
+    "B11.2.5(2)",
+    "2.1.36"
+   ],
+   "years": [
+    "30",
+    "31",
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-15",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Post-operative atrial fibrillation",
+   "stem": "A 71-year-old man with hypertension develops palpitations on day 2 after a total hip replacement. ECG shows new atrial fibrillation at 124/min; BP 134/80 mmHg. He has pain, K+ 3.2 mmol/L and Mg2+ 1.4 mg/dL. Which statement about his management is most accurate?",
+   "choices": [
+    "Correct triggers (pain, electrolytes), control the rate, and consider long-term anticoagulation according to stroke and bleeding risk, because post-operative AF predicts recurrent AF and later stroke",
+    "Post-operative AF is always benign and transient, so no follow-up or anticoagulation is ever needed",
+    "All patients with post-operative AF need immediate DC cardioversion",
+    "Aspirin is sufficient stroke prevention after surgery",
+    "Amiodarone must be continued lifelong once post-operative AF has occurred"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — หลังผ่าตัดมี **sympathetic surge, inflammation (IL-6/CRP), hypoxia, fluid shift, hypokalemia/hypomagnesemia, ปวด, ซีด, ติดเชื้อ** → กระตุ้น AF บน atrium ที่มีฐานเสี่ยงอยู่แล้ว (อายุ, HT) — พบ ~20–40% หลังผ่าตัดหัวใจ และ ~5–10% หลังผ่าตัดใหญ่ที่ไม่ใช่หัวใจ\n\n**การดูแล (ESC 2024)**\n- **แก้ trigger**: K > 4, Mg ปกติ, คุมปวด, ให้ออกซิเจน/ประเมิน volume, หา sepsis/PE\n- **Rate control** (β-blocker) ± rhythm control ถ้ามีอาการ\n- **Anticoagulation**: POAF ไม่ได้ \"ไม่มีพิษภัย\" — ผู้ป่วยมี **โอกาส AF กลับเป็นซ้ำสูงและ stroke ระยะยาวเพิ่มขึ้น** → **พิจารณา OAC ระยะยาวหลังผ่าตัดที่ไม่ใช่หัวใจ (IIa)** ตาม CHA2DS2-VA และความเสี่ยงเลือดออกหลังผ่าตัด (รายนี้อายุ 71 + HT = 2)\n- **นัดติดตาม** ตรวจหา AF ซ้ำ (Holter/ECG)\n- ป้องกันใน cardiac surgery: β-blocker ต่อเนื่อง, amiodarone perioperative, posterior pericardiotomy\n\n**ทำไมตัวลวงผิด**\n- *ไม่ต้องติดตามเลย* — ข้อมูลใหม่ชี้ว่าเพิ่มความเสี่ยงระยะยาว\n- *cardioversion ทุกราย* — เสถียรอยู่ หลายรายหายเองเมื่อแก้ trigger\n- *aspirin* — ไม่ได้ป้องกัน stroke จาก AF\n- *amiodarone ตลอดชีวิต* — พิษสะสมสูง ไม่จำเป็น",
+   "pearl": "POAF ไม่ใช่เรื่องเล็ก: แก้ trigger, คุม rate, ประเมิน OAC ระยะยาวตาม CHA2DS2-VA และนัดติดตาม",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-16",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Starting anticoagulation after an AF-related ischaemic stroke",
+   "stem": "A 74-year-old woman with atrial fibrillation who was not on anticoagulation has a minor ischaemic stroke (NIHSS 3) with a small cortical infarct on MRI and no haemorrhagic transformation. She did not receive thrombolysis and is now neurologically stable on day 1. Renal function is normal. When should a DOAC be started?",
+   "choices": [
+    "Within about 48 hours (early start), based on the ELAN trial for minor-to-moderate stroke",
+    "After 14 days, using aspirin alone until then",
+    "Never; anticoagulation is contraindicated after an ischaemic stroke",
+    "Immediately with an intravenous heparin bolus and infusion before starting warfarin",
+    "Only after 3 months, once the infarct has fully matured"
+   ],
+   "answer": 0,
+   "explain": "**กลไก/ดุลยภาพ** — หลัง cardioembolic stroke มีความเสี่ยง **recurrent embolism สูงในช่วงแรก** แต่ infarct ที่ใหญ่มีความเสี่ยง **hemorrhagic transformation** → เวลาเริ่ม OAC ขึ้นกับ **ขนาด infarct**\n\n**กฎเดิม \"1-3-6-12 days\"** (expert consensus, EHRA): **TIA วันที่ 1, minor วันที่ 3, moderate วันที่ 6, severe วันที่ 12**\n\n**หลักฐานใหม่ (ESC 2024 อ้างอิง)**\n- **ELAN (NEJM 2023)**: early start — **minor/moderate ภายใน 48 ชม.**, **major วันที่ 6–7** — ไม่เพิ่ม symptomatic ICH และแนวโน้มลด recurrent event\n- **TIMING, OPTIMAS** — early DOAC ไม่แย่กว่า delayed\n\n**หลักปฏิบัติ**\n- ใช้ **DOAC** (ไม่ใช่ heparin bridge — **IV heparin ในระยะเฉียบพลันเพิ่ม ICH โดยไม่ลด recurrence**)\n- ตรวจภาพสมองซ้ำก่อนเริ่มในรายใหญ่\n- **ไม่ต้องใช้ aspirin ร่วม** เมื่อเริ่ม OAC แล้ว\n\n**ทำไมตัวลวงผิด**\n- *รอ 14 วันด้วย aspirin* — แนวทางเก่า ล่าช้าเกินไปใน minor stroke\n- *ห้ามให้ OAC* — ตรงข้าม stroke คือข้อบ่งชี้ที่แรงที่สุด (S2 = 2 คะแนน)\n- *heparin bolus* — เพิ่ม hemorrhagic transformation\n- *รอ 3 เดือน* — เสี่ยง recurrent stroke ในช่วงที่สูงสุด",
+   "pearl": "AF + ischaemic stroke: minor/moderate เริ่ม DOAC ใน 48 ชม. (ELAN), major วันที่ 6–7 — ไม่ใช้ heparin bridge",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "Fischer U et al. ELAN trial, NEJM 2023",
+    "AHA/ASA 2021 secondary stroke prevention guideline"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.2.39",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-17",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Acute ischaemic stroke in a patient on warfarin",
+   "stem": "A 67-year-old woman with diabetes and atrial fibrillation on warfarin develops sudden left hemiparesis (face and arm worse than leg), left neglect and dysarthria while brushing her teeth 1 hour ago. Pulse 110/min irregular, BP 205/95 mmHg. Glucose and CBC are normal; INR is 1.8. Non-contrast CT shows no haemorrhage, and CT angiography shows occlusion of the right middle cerebral artery (M1). What is the most appropriate treatment?",
+   "choices": [
+    "Mechanical thrombectomy (endovascular therapy) after lowering BP to 185/110 mmHg or less",
+    "Intravenous alteplase 0.9 mg/kg",
+    "Start intravenous unfractionated heparin",
+    "Start aspirin plus clopidogrel",
+    "Continue warfarin at a higher dose to reach an INR of 3"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — AF → ลิ่มเลือดจาก **LAA** หลุดไปอุดหลอดเลือดใหญ่ (**large-vessel occlusion**: MCA M1) → อาการรุนแรง (cortical sign: neglect, gaze, aphasia) · INR 1.8 = **warfarin ระดับต่ำกว่าเป้า (subtherapeutic)** จึงป้องกันไม่ได้\n\n**ทำไม IV thrombolysis ห้าม** — ข้อห้ามของ alteplase/tenecteplase: **INR > 1.7**, PT > 15 s, ได้ DOAC ภายใน 48 ชม. (เว้นแต่ระดับยาปกติ/ให้ idarucizumab แล้ว), plt < 100,000, BP > 185/110 ที่คุมไม่ได้\n\n**Mechanical thrombectomy** — มาตรฐานสำหรับ **LVO ของ anterior circulation ภายใน 6 ชม.** (ถึง 24 ชม. ถ้า imaging เหมาะ — DAWN/DEFUSE-3) **ไม่ขึ้นกับ INR** → ลด BP ให้ **≤ 185/110** ก่อน (labetalol/nicardipine) และคง ≤ 180/105 หลังทำ\n\n**ทำไมตัวลวงผิด**\n- *IV alteplase* — INR 1.8 เกิน 1.7\n- *heparin* — ไม่เปิดหลอดเลือด เพิ่ม ICH\n- *DAPT* — ใช้ใน minor non-cardioembolic stroke/TIA (CHANCE/POINT) ไม่ใช่ LVO\n- *เพิ่ม warfarin* — ไม่ได้รักษาภาวะเฉียบพลัน\n\n> เฉลยโพย \"call a vascular surgery consult for endovascular intervention\" — ปัจจุบันคือ **ทีม stroke/neurointervention ทำ mechanical thrombectomy**; ระยะยาวควรเปลี่ยนเป็น **DOAC** (warfarin คุม INR ไม่ได้)",
+   "pearl": "INR > 1.7 ห้าม IV tPA แต่ LVO ยังทำ thrombectomy ได้ — ลด BP ≤ 185/110 ก่อน",
+   "ref": [
+    "โพย MED32 LMS ข้อ 21 (67-year-old woman with DM and AF on warfarin, INR 1.8 → endovascular intervention)",
+    "โพย MED35 LMS (คำถามซ้ำ 67-year-old woman stroke)",
+    "AHA/ASA 2019 Guidelines for early management of acute ischemic stroke",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.2.39",
+    "2.3.9(1)",
+    "B2.4(3)"
+   ],
+   "years": [
+    "32",
+    "35"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-18",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Major bleeding on a DOAC – the specific reversal agent",
+   "stem": "A 79-year-old man taking dabigatran 110 mg twice daily for atrial fibrillation falls and hits his head. CT shows an acute subdural haematoma with midline shift. His last dose was 4 hours ago and creatinine clearance is 45 mL/min. Neurosurgery plans urgent evacuation. Which reversal agent is most appropriate?",
+   "choices": [
+    "Idarucizumab 5 g intravenously",
+    "Vitamin K 10 mg intravenously",
+    "Protamine sulfate",
+    "Andexanet alfa",
+    "Fresh frozen plasma 15 mL/kg as the sole reversal"
+   ],
+   "answer": 0,
+   "explain": "**กลไกยาแก้ฤทธิ์ที่จำเพาะ**\n| ยา | กลไก | ยาแก้ |\n|---|---|---|\n| **Dabigatran** (direct thrombin inhibitor) | จับ thrombin (IIa) | **Idarucizumab 5 g IV** — humanized antibody fragment จับ dabigatran แน่นกว่าที่จับ thrombin ~350 เท่า, ออกฤทธิ์ในไม่กี่นาที (RE-VERSE AD) · dialysis ได้ (protein binding ต่ำ) |\n| **Apixaban, rivaroxaban, edoxaban** (factor Xa inhibitor) | จับ Xa | **Andexanet alfa** — Xa ตัวล่อที่ไม่ทำงาน (ANNEXA-4/I) · ถ้าไม่มี → **4-factor PCC 50 IU/kg** |\n| **Warfarin** | ลด II, VII, IX, X | **Vitamin K IV + 4F-PCC** (FFP ถ้าไม่มี PCC) |\n| **Heparin/LMWH** | ผ่าน antithrombin | **Protamine** (LMWH แก้ได้บางส่วน) |\n\n**มาตรการทั่วไปทุกราย**: หยุดยา, ประคับประคองไหลเวียน, ห้ามเลือดเฉพาะที่, **activated charcoal ถ้ากินยาภายใน 2–4 ชม.**, ให้เลือดตามจำเป็น, tranexamic acid พิจารณาบางกรณี\n\n**ทำไมตัวลวงผิด**\n- *vitamin K* — ช่วยเฉพาะ **warfarin** (กลไก vitamin K–dependent factors)\n- *protamine* — แก้ **heparin**\n- *andexanet* — สำหรับ **Xa inhibitor**\n- *FFP อย่างเดียว* — ไม่มีผลต่อ direct thrombin inhibitor ในระดับที่พอ และปริมาตรมาก",
+   "pearl": "Dabigatran → idarucizumab · Xa inhibitor → andexanet (หรือ 4F-PCC) · warfarin → vitamin K + PCC",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "EHRA Practical Guide on NOACs (2021)",
+    "Pollack CV et al. RE-VERSE AD, NEJM 2017"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "B2.4(3)",
+    "2.3.3(1)",
+    "2.3.9(1)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-19",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Left atrial appendage occlusion",
+   "stem": "A 76-year-old man with permanent atrial fibrillation (CHA2DS2-VA score 5) has had three episodes of major gastrointestinal bleeding from small-bowel angiodysplasia over 18 months despite endoscopic therapy and a switch from warfarin to apixaban. Each episode required transfusion. Which stroke-prevention strategy is most appropriate?",
+   "choices": [
+    "Percutaneous left atrial appendage occlusion",
+    "Aspirin 81 mg daily as a substitute for anticoagulation",
+    "Warfarin with a higher INR target of 3.0 to 4.0",
+    "Dabigatran 150 mg twice daily",
+    "Surgical mitral valve replacement"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ใน non-valvular AF ลิ่มเลือด **~90% เกิดใน left atrial appendage (LAA)** ซึ่งเป็นถุงตันที่เลือดไหลช้า → การ **ปิด LAA ด้วยอุปกรณ์ทางสายสวน (เช่น Watchman, Amulet)** จึงลดแหล่งกำเนิด embolus ได้โดยไม่ต้องใช้ OAC ระยะยาว (หลังใส่ใช้ antithrombotic ระยะสั้น)\n\n**ข้อบ่งชี้ (ESC 2024 IIb; ACC/AHA 2023 IIa)** — AF ที่ **stroke risk สูงแต่ใช้ OAC ระยะยาวไม่ได้** เช่น **เลือดออกรุนแรงซ้ำจากสาเหตุที่แก้ไม่ได้**, intracranial hemorrhage, ข้อห้ามถาวร · หลักฐาน PROTECT-AF, PREVAIL, PRAGUE-17 (ไม่ด้อยกว่า DOAC)\n- **Surgical LAA occlusion** ร่วมกับผ่าตัดหัวใจอื่น (LAAOS III) ลด stroke เพิ่มจาก OAC\n\n**ทำไมตัวลวงผิด**\n- *aspirin* — ป้องกัน stroke ได้น้อยมาก แต่เลือดออกใกล้เคียง apixaban\n- *warfarin INR 3–4* — ยิ่งเลือดออก\n- *dabigatran 150 mg* — GI bleed มากกว่า warfarin\n- *mitral valve replacement* — ไม่มีข้อบ่งชี้",
+   "pearl": "Stroke risk สูงแต่ OAC ระยะยาวไม่ได้ (เลือดออกซ้ำ/ICH) → ปิด LAA",
+   "ref": [
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "B2.4(3)"
+   ]
+  },
+  {
+   "id": "C-AF-MCQ-20",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "AF-CARE / ABC pathway – risk-factor management",
+   "stem": "A 58-year-old man has symptomatic paroxysmal atrial fibrillation. He takes apixaban and bisoprolol. BMI is 34 kg/m2, BP 156/94 mmHg, he snores with witnessed apnoeas (untreated), and he drinks about 25 standard drinks per week. Which additional intervention has been shown to reduce his AF burden and recurrence?",
+   "choices": [
+    "Structured risk-factor management: weight loss of at least 10%, alcohol reduction, BP control and treatment of sleep apnoea",
+    "Lifelong amiodarone regardless of symptoms",
+    "Replacing apixaban with aspirin",
+    "Left atrial appendage occlusion",
+    "Adding digoxin to bisoprolol"
+   ],
+   "answer": 0,
+   "explain": "**แนวคิด ABC pathway** (Atrial fibrillation Better Care) → **ESC 2024 พัฒนาเป็น AF-CARE**\n- **A / A**: **A**void stroke — anticoagulation ตาม CHA2DS2-VA\n- **B / R**: **B**etter symptom control — **R**educe symptoms by rate/rhythm control\n- **C / C**: **C**omorbidity & **C**ardiovascular risk factor management — **ESC 2024 ยกขึ้นเป็นอันดับแรก (\"C\" ของ AF-CARE)**\n- **E**: **E**valuation and dynamic reassessment\n\n**กลไก** — โรคอ้วน, HT, OSA, แอลกอฮอล์ → **atrial stretch, ไขมันรอบหัวใจ (epicardial fat) ปล่อย inflammatory mediator, fibrosis, autonomic surge (OSA: negative intrathoracic pressure + hypoxia)** → สร้าง substrate ของ AF\n\n**หลักฐาน**\n- **LEGACY/ARREST-AF** — ลดน้ำหนัก ≥ 10% ทำให้ **AF-free survival สูงขึ้นหลายเท่า** ทั้งที่ใช้/ไม่ใช้ ablation\n- **Alcohol abstinence trial (NEJM 2020)** — ลด AF recurrence และ burden\n- คุม BP, CPAP สำหรับ OSA, ออกกำลังกาย, คุม DM\n\n**ทำไมตัวลวงผิด**\n- *amiodarone ตลอดชีวิต* — พิษสะสม ไม่ได้แก้ substrate\n- *aspirin แทน apixaban* — ลดการป้องกัน stroke\n- *LAAO* — สำหรับผู้ใช้ OAC ไม่ได้ ไม่ลด AF burden\n- *digoxin* — rate ไม่ได้มีปัญหา ไม่ลด AF burden",
+   "pearl": "AF-CARE: Comorbidity/risk-factor control ลด AF จริง — ลดน้ำหนัก ≥ 10%, งดเหล้า, คุม BP, รักษา OSA",
+   "ref": [
+    "โพย MED31 MCQ ข้อ 69 (irregular pulse ทุกวันจันทร์หลังปาร์ตี้ → AF from alcohol)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "Pathak RK et al. LEGACY, JACC 2015",
+    "Voskoboinik A et al. Alcohol abstinence in drinkers with AF, NEJM 2020"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.9(1)",
+    "2.3.4(7)"
+   ],
+   "years": [
+    "31"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "C-AF-MEQ-01",
+   "part": "MEQ",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "Elderly woman with palpitations – AF with rapid ventricular response: ECG, rate control, CHA2DS2-VA, DOAC dosing, then instability",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 78 ปี น้ำหนัก 52 kg มาห้องฉุกเฉินด้วย **ใจสั่น เหนื่อยเล็กน้อย 6 ชั่วโมง**\n\nPI: ใจสั่นเกิดขึ้นทันทีขณะนั่งดูโทรทัศน์ ไม่มีเจ็บหน้าอก ไม่หน้ามืด ไม่เป็นลม นอนราบได้ ไม่มีไข้\nU/D: **ความดันโลหิตสูง** (amlodipine 10 mg/day), **เบาหวานชนิดที่ 2** (metformin 500 mg BID) · ไม่เคยเป็น stroke ไม่มีโรคหัวใจขาดเลือด\nSocial: ไม่สูบบุหรี่ ไม่ดื่มสุรา\n\nV/S: BT 36.8 °C, **PR 150/min irregular (apical 150, radial 128)**, **BP 138/84 mmHg**, RR 20/min, SpO2 97% room air\nPE: alert · JVP ไม่สูง · heart: irregularly irregular rhythm, varying intensity S1, ไม่มี murmur · lungs clear · ไม่บวม · ไม่มีคอพอก\n\nLab: Hb 12.4 g/dL · **Cr 1.3 mg/dL** · Na 138, **K 4.2** mmol/L · TSH ปกติ · troponin ปกติ",
+   "note_img": "ในข้อสอบจริง (แนวโพย MED29/MED31/MED33 SAQ) มักให้ภาพ EKG 12 leads — ข้อนี้บรรยายเป็นข้อความ: irregularly irregular narrow QRS rate ~150/min ไม่มี P wave มี fibrillatory wave ใน V1, normal axis, ไม่มี ST elevation",
+   "questions": [
+    {
+     "q": "1. ECG แสดง: ventricular rate ~150/min, R–R ไม่สม่ำเสมอโดยสิ้นเชิง, ไม่เห็น P wave มีแต่ fine undulating baseline ใน V1, QRS แคบ 0.08 s, normal axis, ไม่มี ST elevation/delta wave. จงแปลผล ECG และให้การวินิจฉัย พร้อมบอกว่าทำไมชีพจรที่ข้อมือจึงน้อยกว่าที่ apex",
+     "a": "**ECG interpretation (อ่านเป็นระบบ)**\n- Rate ~150/min (irregular → นับ QRS ใน 10 วินาที × 6)\n- Rhythm: **irregularly irregular**\n- **ไม่มี P wave**, มี **fibrillatory (f) wave**\n- QRS แคบ (supraventricular), normal axis, ไม่มี pre-excitation, ไม่มี ST–T change ของ ischemia\n\n**Diagnosis**: **Atrial fibrillation with rapid ventricular response (first-diagnosed), hemodynamically stable**; underlying HT, DM\n\n**Pulse deficit (apical 150 > radial 128)** — R–R ที่สั้นมากทำให้ ventricle เติมเลือดไม่พอ บีบตัวแล้ว stroke volume น้อยจนคลำชีพจรส่วนปลายไม่ได้ → **ต้องนับ HR ที่ apex หรือจาก ECG** ใน AF"
+    },
+    {
+     "q": "2. จงสั่งการรักษาเพื่อควบคุมอัตราการเต้นของหัวใจ ระบุชื่อยา ขนาด วิธีให้ ลำดับการเลือก และเป้าหมาย",
+     "a": "**หลัก**: stable, ไม่มี HF, ไม่มี WPW → **rate control ด้วย β-blocker หรือ non-DHP CCB**\n\n**ลำดับที่ 1: β-blocker**\n- **Metoprolol tartrate 2.5–5 mg IV ช้า ๆ ใน 2 นาที ซ้ำทุก 5 นาที (รวมไม่เกิน 15 mg)** แล้วต่อด้วย **oral metoprolol 25–50 mg BID** (ปรับถึง 100 mg BID) หรือ **bisoprolol 1.25–2.5 mg OD** (ปรับถึง 10 mg)\n\n**ลำดับที่ 1 ทางเลือก: Non-DHP CCB** (LVEF ต้อง > 40% — ทำ echo)\n- **Diltiazem 0.25 mg/kg IV ใน 2 นาที** (~13 mg ในรายนี้) ซ้ำ 0.35 mg/kg หลัง 15 นาทีได้ → oral 60 mg TID/ER 120–360 mg OD\n- (หยุด amlodipine ถ้าใช้ diltiazem และ BP ต่ำ)\n\n**ลำดับที่ 2 (เสริม): Digoxin** เมื่อยังคุมไม่ได้ หรือมี HF/BP ต่ำ\n- **0.25 mg IV ทุก 2 ชม. (loading รวมไม่เกิน 1–1.5 mg/24 ชม.)** แล้วต่อ **0.0625–0.125 mg/วัน** (ผู้สูงอายุ CrCl ต่ำ ใช้ขนาดต่ำ ติดตามระดับยา/K)\n\n**ลำดับที่ 3**: amiodarone (ถ้าล้มเหลว/HF รุนแรง) — คำนึงว่าอาจ cardiovert\n\n**เป้าหมาย**: **resting HR < 110/min (lenient)** และอาการดีขึ้น · **ห้ามให้ adenosine/verapamil-digoxin ถ้าสงสัย WPW**"
+    },
+    {
+     "q": "3. จงคำนวณ CHA2DS2-VA score และ HAS-BLED score และบอกข้อบ่งชี้ในการให้ยาต้านการแข็งตัวของเลือด",
+     "a": "**CHA2DS2-VA (ESC 2024)**\n- C (HF) 0 · **H (HT) 1** · **A2 (อายุ ≥ 75) 2** · **D (DM) 1** · S2 0 · V 0 · A (65–74) 0\n- **รวม = 4** (CHA2DS2-VASc แบบเก่า = 5 เพราะนับเพศหญิง)\n\n**HAS-BLED**: H (SBP > 160) 0 · A (renal/liver) 0 · S 0 · B 0 · L 0 · **E (อายุ > 65) 1** · D 0 → **1 (ต่ำ)**\n\n**การตัดสินใจ**: CHA2DS2-VA ≥ 2 → **แนะนำ oral anticoagulant (Class I), เลือก DOAC ก่อน warfarin** (ไม่มี mechanical valve/moderate–severe MS) · **aspirin ไม่ใช่ทางเลือก**"
+    },
+    {
+     "q": "4. จงคำนวณ creatinine clearance และเลือก DOAC 1 ชนิดพร้อมขนาดที่ถูกต้อง อธิบายเหตุผล",
+     "a": "**Cockcroft–Gault (หญิง × 0.85)**\nCrCl = (140 − 78) × 52 ÷ (72 × 1.3) × 0.85\n= 3,224 ÷ 93.6 × 0.85 = 34.4 × 0.85 = **≈ 29 mL/min**\n\n**การเลือก**\n- **Apixaban 5 mg BID** — เกณฑ์ลดขนาดต้อง ≥ 2 ใน 3: อายุ ≥ 80 (**ไม่**, 78), น้ำหนัก ≤ 60 kg (**ใช่**, 52), Cr ≥ 1.5 (**ไม่**, 1.3) → **มีข้อเดียว จึงใช้ 5 mg BID** (ESC/EHRA: CrCl 15–29 บางแนวทางให้ 2.5 mg BID — ให้ระบุว่าใช้เกณฑ์ใดและติดตามไตใกล้ชิด)\n- หรือ **Rivaroxaban 15 mg OD** กับอาหารเย็น (CrCl 15–49)\n- หรือ **Edoxaban 30 mg OD** (CrCl 15–50 และน้ำหนัก ≤ 60)\n- **Dabigatran ห้าม** (CrCl < 30)\n\n**ติดตาม**: Cr/CBC ทุก 6 เดือน (CrCl < 30 → ทุก 3 เดือน, คำนวณ \"CrCl ÷ 10\" = จำนวนเดือนที่ควรตรวจซ้ำ)"
+    },
+    {
+     "q": "5. หลังให้ยา 4 ชั่วโมง ผู้ป่วยเริ่มสับสน ปลายมือปลายเท้าเย็น เหงื่อออก ECG ยังเป็น AF rate 170/min, BP 82/50 mmHg, SpO2 93%. จงให้การรักษาเร่งด่วนพร้อมรายละเอียด",
+     "a": "**ภาวะ**: **Unstable AF with RVR** (hypotension + altered consciousness + signs of shock)\n\n**การรักษา**: **Synchronised DC cardioversion ทันที**\n1. ABC, O2, IV access, monitor, ตามทีม\n2. **Procedural sedation/analgesia** ที่ไม่ลด BP มาก (เช่น **etomidate 0.1–0.15 mg/kg IV** หรือ midazolam 1–2 mg + fentanyl 25–50 µg) ถ้าเวลาเอื้อ\n3. เปิดโหมด **SYNC** (เห็น marker บน R wave) → **120–200 J biphasic** (หากไม่สำเร็จเพิ่มพลังงานเป็นขั้น; ต้องกด SYNC ใหม่ทุกครั้งในบางเครื่อง)\n4. **ไม่ต้องรอ anticoagulation 3 สัปดาห์/TEE** เพราะ unstable — ให้ **heparin หรือ DOAC ทันทีก่อน/หลังทำ**\n5. หลังกลับเป็น sinus: ECG 12 leads, หาสาเหตุ (ischemia, electrolyte, sepsis, PE, thyroid), พิจารณา **IV amiodarone 150 mg ใน 10 นาที → infusion** ถ้า AF กลับซ้ำ\n\n**ห้าม**: unsynchronised shock, diltiazem/β-blocker IV เพิ่ม (BP ต่ำ), adenosine"
+    },
+    {
+     "q": "6. หลัง cardioversion ผู้ป่วยกลับเป็น sinus rhythm และอาการคงที่ ญาติถามว่า \"หัวใจกลับมาเต้นปกติแล้ว ยังต้องกินยากันเลือดแข็งอีกไหม\" จงตอบพร้อมแผนการดูแลระยะยาว",
+     "a": "**คำตอบ**: **ยังต้องกินต่อ** — หลัง cardioversion ทุกรายต้องให้ OAC **อย่างน้อย 4 สัปดาห์** (atrial stunning เสี่ยงลิ่มเลือดช่วงแรก) และเนื่องจาก **CHA2DS2-VA = 4 ต้องกินต่อระยะยาวตลอดไป** ไม่ว่าจังหวะหัวใจจะเป็น sinus หรือไม่ เพราะ AF มักกลับมาโดยไม่มีอาการ\n\n**แผนระยะยาว (AF-CARE)**\n- **C**: คุม BP (เป้า < 130/80), DM, ลดน้ำหนัก, ตรวจ OSA, ไม่ดื่มสุรา\n- **A**: DOAC ขนาดถูกต้อง, ตรวจ Cr/CBC ทุก 3–6 เดือน, ทบทวนยาที่ทำให้เลือดออก (NSAID)\n- **R**: β-blocker ต่อ; พิจารณา **early rhythm control** (EAST-AFNET 4) — antiarrhythmic เลือกตามโครงสร้างหัวใจจาก **echocardiogram** (หัวใจปกติ: flecainide/propafenone; มีโรคหัวใจโครงสร้าง: amiodarone) หรือ **catheter ablation** ถ้ากลับเป็นซ้ำ\n- **E**: echo, TSH, ติดตาม ECG/Holter, ให้ความรู้ เรื่องจับชีพจรเอง อาการ stroke (BE-FAST) และอาการเลือดออก"
+    }
+   ],
+   "ref": [
+    "โพย MED31 SAQ ข้อ 8 (ใจสั่น คลำ pulse ไม่ได้ EKG AF → amiodarone, electrocardioversion; ถ้ากลับ sinus จะรักษาอย่างไร)",
+    "โพย MED33 SAQ ข้อ 6/8 และ MED29 OSCE (EKG AF RVR: treatment และหลัง NSR ทำอะไรต่อ)",
+    "โพย MED32 SAQ ECG (AF c RVR)",
+    "โพย MED35 MCQ ข้อ 88 (80-year-old palpitation + LOC, PR irregular 110–160)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation",
+    "AHA ACLS – adult tachycardia with a pulse algorithm",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "nl": [
+    "2.3.9(1)",
+    "B7.3(3)b",
+    "3.1.12",
+    "2.1.36",
+    "B7.4(7)",
+    "B2.4(3)"
+   ],
+   "years": [
+    "29",
+    "31",
+    "32",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "C-AF-MEQ-02",
+   "part": "MEQ",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "AF-related stroke on subtherapeutic warfarin – acute treatment, starting a DOAC, bleeding on a DOAC and LAA occlusion",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 67 ปี น้ำหนัก 58 kg ถูกนำส่งห้องฉุกเฉินด้วย **แขนขาซ้ายอ่อนแรงและพูดไม่ชัดทันทีขณะแปรงฟัน 1 ชั่วโมงก่อนมา**\n\nU/D: เบาหวาน (metformin), ความดันโลหิตสูง (losartan), **AF ได้ warfarin 3 mg/day มา 2 ปี** ค่า INR ที่ผ่านมาไม่คงที่ (1.4–3.6) มาตรวจไม่สม่ำเสมอ\n\nV/S: **BP 205/95 mmHg**, PR 110/min irregular, RR 18/min, SpO2 97%, DTX 142 mg/dL\nNeuro: **left hemiparesis (face = arm > leg) motor grade 2/5, left neglect, dysarthria, right gaze preference**, **NIHSS 16**\n\nLab: CBC ปกติ, **INR 1.8**, Cr 0.9 mg/dL\n**Non-contrast CT brain: no hemorrhage, ASPECTS 9** · **CTA: right MCA (M1) occlusion**",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัย และอธิบายกลไกที่ AF ทำให้เกิดโรคนี้",
+     "a": "**Diagnosis**: **Acute ischemic stroke, right MCA territory (large-vessel occlusion, M1), cardioembolic from AF**, onset 1 hr, on **subtherapeutic warfarin (INR 1.8)**\n\n**กลไก (Virchow's triad ใน left atrium)**\n- **Stasis**: atrium ไม่บีบตัว เลือดไหลวนช้าใน **left atrial appendage (LAA)**\n- **Endothelial dysfunction/remodeling**: atrial fibrosis, inflammation\n- **Hypercoagulability**: เพิ่ม fibrinogen, vWF, platelet activation\n→ ลิ่มเลือดใน LAA หลุดไปอุด **MCA** (สายตรงจาก ICA) → infarct ใหญ่ cortical\n- INR 1.8 ต่ำกว่าเป้า 2–3 → การป้องกันไม่พอ"
+    },
+    {
+     "q": "2. จงให้การรักษาเฉียบพลัน ระบุว่าจะให้ IV thrombolysis หรือไม่ เพราะเหตุใด และการควบคุมความดันโลหิต",
+     "a": "**IV thrombolysis (alteplase/tenecteplase): ห้าม** — **INR 1.8 > 1.7** เพิ่ม symptomatic ICH\n\n**Mechanical thrombectomy (endovascular therapy)**: **ทำทันที** — anterior circulation LVO, onset < 6 ชม., NIHSS ≥ 6, ASPECTS ≥ 6, ก่อนป่วยช่วยเหลือตัวเองได้ → **ไม่ขึ้นกับ INR**\n- เรียกทีม stroke/neurointervention (โพยเดิมใช้คำว่า vascular surgery consult)\n\n**BP**: ลดให้ **≤ 185/110 mmHg ก่อนทำ** และ **≤ 180/105 ใน 24 ชม. หลังทำ** — **labetalol 10–20 mg IV ใน 1–2 นาที** ซ้ำได้ หรือ **nicardipine 5 mg/hr IV** ปรับเพิ่ม 2.5 mg/hr ทุก 5–15 นาที (สูงสุด 15)\n\n**อื่น ๆ**: NPO จนกว่าจะประเมินการกลืน, คุมน้ำตาล 140–180, หัวนอนราบ/30° ตามสภาวะ, **หยุด warfarin**, ไม่ให้ heparin หรือ antiplatelet ใน 24 ชม. แรกหลังหัตถการโดยไม่มีข้อบ่งชี้"
+    },
+    {
+     "q": "3. หลัง thrombectomy สำเร็จ (TICI 2b) NIHSS ลดเหลือ 6, MRI วันที่ 2 พบ infarct ขนาดปานกลาง ไม่มี hemorrhagic transformation. จะเริ่มยาต้านการแข็งตัวของเลือดเมื่อใด ชนิดและขนาดใด",
+     "a": "**เวลา**\n- **ELAN (2023)**: stroke ขนาด **minor/moderate → เริ่ม DOAC ภายใน 48 ชม.** (major วันที่ 6–7) — ESC 2024 รับรอง early start\n- กฎเดิม **1-3-6-12**: moderate ≈ วันที่ 6 (ยังใช้ได้เป็นแนวทางทางเลือก)\n- **ไม่ใช้ heparin bridging**; ทำ CT/MRI ซ้ำก่อนเริ่มถ้ามีข้อสงสัย\n\n**ชนิด**: **เปลี่ยนจาก warfarin เป็น DOAC** — INR ไม่คงที่ (TTR ต่ำ) และ DOAC ลด ICH ได้ครึ่งหนึ่ง\n\n**ขนาด**: **Apixaban 5 mg BID** — อายุ 67 (< 80), น้ำหนัก 58 (≤ 60 ✓ ข้อเดียว), Cr 0.9 → ไม่เข้าเกณฑ์ลดขนาด\n(CrCl = (140 − 67) × 58 ÷ (72 × 0.9) × 0.85 = 4,234 ÷ 64.8 × 0.85 ≈ **56 mL/min**)\n- ทางเลือก: rivaroxaban 20 mg OD, **edoxaban 30 mg OD (น้ำหนัก ≤ 60)**, dabigatran 150 mg BID\n\n**อื่น ๆ**: high-intensity statin, คุม BP < 130/80 ระยะยาว, DM, กายภาพบำบัด, ไม่ต้องให้ aspirin ร่วม"
+    },
+    {
+     "q": "4. 8 เดือนต่อมา ผู้ป่วยมาด้วยถ่ายดำ 2 วัน หน้ามืด BP 88/56, PR 120, Hb 6.9 g/dL. กิน apixaban มื้อสุดท้าย 3 ชั่วโมงก่อน และซื้อยาแก้ปวดข้อ (diclofenac) กินเอง 1 เดือน. จงให้การรักษา",
+     "a": "**ภาวะ**: **Major (life-threatening) upper GI bleeding on apixaban** + NSAID, hemorrhagic shock class III\n\n**การรักษา**\n1. **ABC**, large-bore IV 2 เส้น, **crystalloid → PRC** เป้า Hb ≥ 7–8 g/dL (มีโรคหลอดเลือดอาจ 8)\n2. **หยุด apixaban และ diclofenac**\n3. **Activated charcoal 50 g** — กินยาภายใน 2–4 ชม. (ถ้าไม่เสี่ยงสำลัก และไม่ขัดกับการส่องกล้อง)\n4. **Reversal (bleeding คุกคามชีวิต)**: **andexanet alfa** (ยาแก้จำเพาะ Xa inhibitor) — ถ้าไม่มี (ไทยส่วนใหญ่) ใช้ **4-factor PCC 50 IU/kg** (± tranexamic acid ไม่แนะนำใน GI bleed จาก HALT-IT)\n5. **IV PPI** (pantoprazole 80 mg แล้ว 40 mg ทุก 12 ชม. หรือ infusion)\n6. **Urgent endoscopy ภายใน 24 ชม.** (หลัง resuscitation) หา peptic ulcer จาก NSAID → endoscopic hemostasis\n7. ตรวจ *H. pylori* และรักษา"
+    },
+    {
+     "q": "5. หลังห้ามเลือดได้ แพทย์จะเริ่มยาต้านการแข็งตัวของเลือดอีกหรือไม่ เมื่อใด และถ้าผู้ป่วยมีเลือดออกรุนแรงซ้ำอีกจากสาเหตุที่แก้ไม่ได้ จะมีทางเลือกใด",
+     "a": "**กลับมาให้ OAC** — **ใช่** เพราะ CHA2DS2-VA สูงมาก (HT 1, DM 1, **stroke 2**, อายุ 65–74 1 = **5**) ประโยชน์ป้องกัน stroke ซ้ำมากกว่าความเสี่ยง\n- **เวลา**: ส่วนใหญ่ **ประมาณ 7–14 วัน** หลังห้ามเลือดได้และแก้สาเหตุแล้ว (ตัดสินร่วมกับทีม GI)\n- แก้ปัจจัยเลือดออก: **หยุด NSAID ถาวร**, PPI ระยะยาว, รักษา *H. pylori*, คุม BP\n\n**ถ้าเลือดออกรุนแรงซ้ำจากสาเหตุที่แก้ไม่ได้ (เช่น angiodysplasia กระจาย) หรือมี ICH**\n- **Percutaneous left atrial appendage occlusion (LAAO)** — ปิดแหล่งกำเนิดลิ่มเลือด ~90% ใน non-valvular AF แล้วใช้ antithrombotic ระยะสั้นหลังใส่ (ESC 2024 IIb, ACC/AHA 2023 IIa)\n- **ไม่ใช้ aspirin แทน** (ป้องกันได้น้อย เลือดออกพอ ๆ กัน)"
+    }
+   ],
+   "ref": [
+    "โพย MED32 LMS ข้อ 21 และ MED35 LMS (67-year-old woman with DM and AF on warfarin INR 1.8 → endovascular intervention)",
+    "โพย MED30 MCQ ข้อ 85 (MS & AF แล้วเป็น stroke → embolic)",
+    "AHA/ASA 2019 Guidelines for early management of acute ischemic stroke",
+    "Fischer U et al. ELAN, NEJM 2023",
+    "EHRA Practical Guide on NOACs (2021)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)"
+   ],
+   "nl": [
+    "2.2.39",
+    "2.3.9(1)",
+    "B2.4(3)",
+    "2.3.3(1)"
+   ],
+   "years": [
+    "30",
+    "32",
+    "35"
+   ]
+  },
+  {
+   "id": "C-AF-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "24",
+   "lecture": "Atrial fibrillation (อ.อภิชัย)",
+   "topic": "SAQ – อ่าน ECG ผู้ป่วยใจสั่น: atrial fibrillation with RVR และการรักษา",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "note_img": "โพย MED31 SAQ ข้อ 8, MED33 SAQ ข้อ 6/8, MED29 OSCE และ MED32 SAQ ให้ภาพ EKG 12 leads จริง — ข้อนี้บรรยาย ECG เป็นข้อความ: 12-lead ECG ความเร็ว 25 mm/s, 10 mm/mV; QRS แคบ ระยะห่าง R–R ไม่เท่ากันเลย นับได้ 25 QRS ใน 10 วินาที; ไม่มี P wave ที่ชัดเจน baseline เป็นคลื่นเล็กไม่สม่ำเสมอเห็นชัดใน V1; QRS axis ปกติ; ST ไม่ยกหรือกด; ไม่มี delta wave; lead II ยาวด้านล่าง",
+   "instruction": "ชายไทยอายุ 70 ปี มาด้วยใจสั่น 1 วัน เหนื่อยเล็กน้อย · BP 128/76 mmHg, PR irregular · ให้ภาพ ECG 12 leads (25 mm/s, 10 mm/mV):\n\n**QRS แคบ ระยะ R–R ไม่เท่ากันเลย นับได้ 25 QRS ใน 10 วินาที, ไม่มี P wave ชัดเจน มีคลื่นเล็กไม่สม่ำเสมอที่ baseline ใน V1, QRS axis ปกติ, ไม่มี ST elevation/depression, ไม่มี delta wave**\n\n**คำถาม**\n1. จงบรรยาย ECG อย่างเป็นระบบ (rate, rhythm, P wave, PR, QRS, axis, ST–T) (2 คะแนน)\n2. จงให้การวินิจฉัยให้สมบูรณ์ (1 คะแนน)\n3. จงให้การรักษาเบื้องต้น (1 คะแนน)\n4. ถ้ารักษาจนกลับมาเป็น sinus rhythm แล้ว จะทำอะไรต่อ (1 คะแนน)",
+   "answer": "**1. บรรยาย ECG**\n- **Rate**: rhythm ไม่สม่ำเสมอ → นับ QRS ใน 10 วินาที × 6 = 25 × 6 = **150/min** (tachycardia)\n- **Rhythm**: **irregularly irregular**\n- **P wave**: **absent**, มี **fibrillatory (f) waves** ไม่สม่ำเสมอ (เห็นชัดใน V1)\n- **PR interval**: วัดไม่ได้\n- **QRS**: **narrow (< 0.12 s)**, ไม่มี delta wave/pre-excitation, ไม่มี pathological Q\n- **Axis**: normal\n- **ST–T**: ไม่มี ST elevation/depression ที่มีนัยสำคัญ, QT ไม่ยาว\n\n**2. Diagnosis**\n**Atrial fibrillation with rapid ventricular response (~150/min), hemodynamically stable** (ระบุชนิดตามระยะเวลา: first-diagnosed/ไม่ทราบระยะเวลา)\n\n(แยกจาก: **atrial flutter 2:1** — regular 150 + sawtooth · **MAT** — P wave ≥ 3 รูปแบบ · **sinus tachycardia + PAC** — มี P นำ)\n\n**3. การรักษาเบื้องต้น**\n- **Stable** → **rate control**: **β-blocker** (metoprolol 2.5–5 mg IV ช้า ๆ ซ้ำได้ ทุก 5 นาที ≤ 15 mg แล้วต่อ oral) หรือ **diltiazem 0.25 mg/kg IV** (ถ้า LVEF > 40%) ± digoxin เป้า HR < 110\n- **ประเมิน stroke risk: CHA2DS2-VA** (อายุ 70 = 1 + อื่น ๆ) → ≥ 2 ให้ **DOAC**; = 1 พิจารณา\n- **หาสาเหตุ**: TSH, electrolytes (K, Mg), Cr, CBC, troponin ถ้าสงสัย, **echocardiogram**\n- **ถ้า unstable** (hypotension, สับสน, เจ็บหน้าอก, HF เฉียบพลัน) → **synchronised cardioversion 120–200 J biphasic**\n\n**4. หลังกลับเป็น sinus rhythm**\n- **Anticoagulation ต่อ ≥ 4 สัปดาห์ทุกราย** แล้ว **ต่อระยะยาวตาม CHA2DS2-VA** (ไม่ขึ้นกับว่าเป็น sinus)\n- พิจารณา **rhythm control ระยะยาว**: antiarrhythmic ตามโครงสร้างหัวใจ (หัวใจปกติ → flecainide/propafenone; IHD/HFrEF → amiodarone) หรือ **catheter ablation** ถ้ากลับเป็นซ้ำ\n- **β-blocker ต่อ** สำหรับคุม rate ถ้ากลับเป็น AF\n- จัดการ **risk factor**: BP, DM, น้ำหนัก, OSA, แอลกอฮอล์, ไทรอยด์\n- **ติดตาม** ECG/Holter, ให้ความรู้การจับชีพจรเองและอาการ stroke\n\n> โพยเดิม (MED31) เฉลยข้อ 4 ว่า \"propranolol, digoxin, diltiazem\" — ไม่ผิดในแง่ rate control กรณีกลับเป็น AF แต่ **คำตอบที่ให้คะแนนสูงต้องมี anticoagulation ตาม CHA2DS2-VA ด้วยเสมอ**",
+   "ref": [
+    "โพย MED31 SAQ ข้อ 8 (ใจสั่น EKG AF: diag, รักษา, ถ้ากลับ sinus rhythm จะรักษาอย่างไร)",
+    "โพย MED33 SAQ ข้อ 6 และ 8 (EKG: บรรยาย, วินิจฉัย, รักษา, หลัง NSR ทำอะไรต่อ)",
+    "โพย MED29 OSCE (EKG AF RVR ถามการรักษาและหลัง NSR)",
+    "โพย MED32 SAQ ECG (AF c RVR)",
+    "2024 ESC Guidelines for the management of atrial fibrillation (Eur Heart J 2024)",
+    "สไลด์ อ.อภิชัย Atrial fibrillation (5 ต.ค.)"
+   ],
+   "nl": [
+    "3.1.12",
+    "B7.3(3)b",
+    "2.3.9(1)",
+    "2.1.36"
+   ],
+   "years": [
+    "29",
+    "31",
+    "32",
+    "33"
+   ]
+  }
+ ]
+}

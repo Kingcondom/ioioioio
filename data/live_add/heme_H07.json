@@ -1,0 +1,902 @@
+{
+ "mcq": [
+  {
+   "id": "HE-AN-MCQ-01",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Reticulocyte production index – is the marrow responding?",
+   "stem": "A 58-year-old woman has fatigue for 2 months. Haemoglobin is 8.0 g/dL, haematocrit 24%, MCV 88 fL, white cells and platelets are normal. The reticulocyte count is reported as 3.0%. Using a normal haematocrit of 45% and a maturation (shift) correction factor of 2.0 for this haematocrit, which interpretation is correct?",
+   "choices": [
+    "The reticulocyte production index is about 0.8, indicating an inadequate (hypoproliferative) marrow response",
+    "The reticulocyte count of 3.0% is above the normal range, so the marrow response is adequate and haemolysis is likely",
+    "The corrected reticulocyte count is about 1.6%, which is above 1% and therefore indicates an adequate response",
+    "The reticulocyte production index is about 3.0, indicating haemolysis or acute blood loss",
+    "The reticulocyte count cannot be interpreted until iron studies are known"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เรติคูโลไซต์รายงานเป็น **% ของเม็ดเลือดแดงทั้งหมด** เมื่อคนไข้ซีด ตัวหารเล็กลง ค่า % จึง **สูงเกินจริง** และเมื่อ Hct ต่ำ erythropoietin สูงจะ **ดันเรติคูโลไซต์อายุน้อยออกจากไขกระดูกเร็ว (shift cells)** ซึ่งอยู่ในเลือดนานกว่า 1 วัน จึงต้องแก้ 2 ชั้น\n\n**คำนวณ**\n1. **Corrected retic** = 3.0 × (24 ÷ 45) = **1.6%**\n2. **RPI** = 1.6 ÷ 2.0 (maturation factor ที่ Hct ~25%) = **0.8**\n\n| RPI | ความหมาย | ตัวอย่างสาเหตุ |\n|---|---|---|\n| **< 2** | ไขกระดูก **ตอบสนองไม่พอ (hypoproliferative)** | ขาดเหล็ก/B12/folate, ACD, CKD, marrow failure |\n| **> 2–3** | ไขกระดูก **ตอบสนองดี** | hemolysis, acute blood loss (หลังผ่านไป 3–5 วัน), หลังเริ่มรักษา |\n\nรายนี้ normocytic + RPI 0.8 → แนวทางต่อไปคือหาสาเหตุ **การสร้างลดลง** (iron studies, Cr, TSH, B12/folate และพิจารณาไขกระดูก)\n\n**ทำไมตัวลวงผิด**\n- *3.0% สูงกว่าปกติจึงตอบสนองดี* — ลืมแก้ค่า Hct และ shift\n- *corrected 1.6% > 1% จึงพอ* — ในคนซีด Hb 8 ไขกระดูกปกติควรเพิ่มการสร้าง **2–3 เท่า** ค่านี้จึงยังไม่พอ\n- *RPI 3.0* — คำนวณผิด (ไม่ได้หารเลย)\n- *ต้องรู้ iron studies ก่อน* — RPI แปลผลได้ทันทีและเป็นตัว **แบ่งทาง** ของการ approach",
+   "pearl": "เรติคูโลไซต์ต้องแก้ทั้ง Hct และ shift เสมอ: RPI < 2 = สร้างไม่พอ, > 2–3 = ถูกทำลาย/เสียเลือด",
+   "ref": [
+    "Harrison's Principles of Internal Medicine 21e – Anemia and polycythemia (reticulocyte production index)",
+    "สไลด์ อ.คุณาภา Approach to anemia (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.1.56",
+    "B2.3(3)",
+    "B2.3(2)"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-02",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Hypersegmented neutrophils – the DNA-synthesis defect",
+   "stem": "A 35-year-old man has followed a strict vegan diet for 10 years. Haemoglobin is 9.2 g/dL and MCV 112 fL. The blood smear shows oval macrocytes (macro-ovalocytes) and many neutrophils with six or seven nuclear lobes. What is the mechanism behind these smear findings?",
+   "choices": [
+    "Impaired DNA synthesis with normal RNA and protein synthesis, so nuclear maturation lags behind cytoplasmic maturation",
+    "Defective haem synthesis in mitochondria with iron accumulating around the nucleus",
+    "Excess cholesterol deposited in the red cell membrane from abnormal lipid metabolism",
+    "Release of large immature reticulocytes in response to haemolysis",
+    "Oxidative denaturation of haemoglobin forming intracellular inclusions"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — B12 และ folate จำเป็นต่อการสร้าง **thymidine (dTMP)** สำหรับ DNA\n- ขาดตัวใดตัวหนึ่ง → **DNA สร้างช้า แต่ RNA และโปรตีนในไซโตพลาสซึมสร้างได้ตามปกติ** → **nuclear–cytoplasmic asynchrony**\n- เซลล์ตั้งต้นแบ่งตัวได้น้อยรอบ จึง **ตัวใหญ่ (megaloblast) → macro-ovalocyte**\n- ในสาย neutrophil นิวเคลียส **แบ่งเป็นแฉกมากผิดปกติ (≥ 6 lobes หรือ > 5% มี 5 lobes) = hypersegmented neutrophil** ซึ่งจำเพาะต่อ **megaloblastic anemia** มากกว่าแค่ MCV สูง\n- ภาวะนี้กระทบ **ทุกเซลล์ที่แบ่งตัวเร็ว** → อาจมี pancytopenia, glossitis และ intramedullary hemolysis (LDH สูงมาก)\n\nคนกินมังสวิรัติเคร่งครัด (vegan/เจ) เสี่ยง **B12** เพราะ B12 มาจากผลิตภัณฑ์สัตว์เท่านั้น\n\n**ทำไมตัวลวงผิด**\n- *haem synthesis บกพร่องในไมโทคอนเดรีย* — คือ **sideroblastic anemia** (ring sideroblast, มัก microcytic/dimorphic)\n- *cholesterol เกาะเยื่อหุ้ม* — macrocyte แบบ **กลมและไม่มี hypersegmented** ในโรคตับ/แอลกอฮอล์ (non-megaloblastic) และ target cell\n- *reticulocyte* — ทำให้ MCV สูงได้ แต่เป็น **polychromasia** ไม่ใช่ macro-ovalocyte + hypersegmented\n- *oxidative denaturation* — **Heinz body ใน G6PD deficiency**",
+   "pearl": "Hypersegmented neutrophil = DNA สร้างไม่ทัน (B12/folate) — ไม่ใช่แค่ MCV สูง",
+   "ref": [
+    "โพย MED35 MCQ ข้อ 49 (hypersegmented neutrophil → DNA erythropoiesis)",
+    "โพย MED35 MCQ ข้อ 60 (กินเจ ไม่กินเนื้อ MCV 110 เจอ 6–7 lobes)",
+    "โพย MED32 MCQ ข้อ 57 (รูป hypersegmented neutrophil → vegetarian)",
+    "โพย MED33 MCQ ข้อ 54 (MCV เกิน 100 → vegetarian)",
+    "Harrison 21e – Megaloblastic anemias"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.2.5(1)",
+    "3.1.2"
+   ],
+   "years": [
+    "32",
+    "33",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-03",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Iron deficiency – the expected iron profile",
+   "stem": "A 32-year-old woman has heavy menstrual bleeding for 6 months. Haemoglobin is 8.6 g/dL, MCV 66 fL, red cell count 4.1 million/microlitre (Mentzer index about 16), red cell distribution width 19%, and platelets 480,000/mm3. CRP is normal. Which iron profile is expected?",
+   "choices": [
+    "Ferritin 6 ng/mL, low serum iron, raised total iron-binding capacity and transferrin saturation 5%",
+    "Ferritin 250 ng/mL, low serum iron, low total iron-binding capacity and transferrin saturation 12%",
+    "Ferritin 90 ng/mL, normal serum iron, normal total iron-binding capacity and transferrin saturation 30%",
+    "Ferritin 800 ng/mL, high serum iron, low total iron-binding capacity and transferrin saturation 75%",
+    "Ferritin 6 ng/mL, low serum iron, low total iron-binding capacity and transferrin saturation 40%"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เสียเลือดเรื้อรัง → **เหล็กสะสม (ferritin) หมดก่อน** → ตับรับรู้ว่าขาดเหล็ก จึง **สร้าง transferrin เพิ่ม (TIBC สูง)** เพื่อจับเหล็กให้มากที่สุด → แต่เหล็กในเลือดน้อย **TSAT จึงต่ำมาก (< 16–20%)**\n\n| ภาวะ | Ferritin | Serum Fe | TIBC | TSAT |\n|---|---|---|---|---|\n| **IDA** | **↓↓ (< 30)** | ↓ | **↑** | **↓↓** |\n| ACD | ปกติ/↑ | ↓ | **↓** | ↓/ปกติ |\n| Thal trait | ปกติ | ปกติ | ปกติ | ปกติ |\n| Iron overload / sideroblastic | ↑↑ | ↑ | ↓ | **↑↑** |\n\nข้อมูลอื่นที่เข้ากับ IDA: **Mentzer 66 ÷ 4.1 = 16 (> 13)**, **RDW กว้าง**, **reactive thrombocytosis**\n\n**ทำไมตัวลวงผิด**\n- *Ferritin 250 + TIBC ต่ำ* — แบบแผน **anemia of chronic disease** (hepcidin ขังเหล็ก)\n- *ทุกค่าปกติ* — แบบ **thalassemia trait** แต่ Mentzer > 13 และ RDW กว้าง\n- *Ferritin 800 + TSAT 75%* — **iron overload/sideroblastic**\n- *Ferritin 6 แต่ TIBC ต่ำและ TSAT 40%* — **ขัดกันเองทางสรีรวิทยา** ไม่เกิดจริงใน IDA\n\n> โพยเดิม (MED34) มีตัวเลือก \"nucleated RBC on PBS\" — ไม่ใช่ลักษณะของ IDA (NRBC พบใน hemolysis รุนแรง, thal major, marrow infiltration)",
+   "pearl": "IDA: ferritin ต่ำ + TIBC สูง + TSAT ต่ำ — TIBC ต่ำเมื่อไรให้นึกถึง ACD",
+   "ref": [
+    "โพย MED34 MCQ ข้อ 88 (hypermenorrhea, low MCV → iron profile: ferritin, transferrin sat)",
+    "โพย MED35 MCQ ข้อ 11 (หญิง hypermenorrhea hypochromic microcytic → ferritin ตก, TIBC ขึ้น)",
+    "BSH Guideline for the laboratory diagnosis of iron deficiency in adults (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "3.3.26",
+    "B2.2.5(1)"
+   ],
+   "years": [
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-04",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Iron deficiency in an older man – look for the GI source",
+   "stem": "A 68-year-old man has exertional dyspnoea for 2 months. He denies melaena or haematochezia and takes no medication. Haemoglobin is 9.2 g/dL, MCV 71 fL, ferritin 8 ng/mL and transferrin saturation 6%. A single faecal occult blood test is negative. Coeliac serology is negative. What is the most appropriate next step?",
+   "choices": [
+    "Arrange upper gastrointestinal endoscopy and colonoscopy, and start iron replacement",
+    "Give oral iron for 3 months and investigate only if the haemoglobin does not respond",
+    "Repeat the faecal occult blood test three times and investigate only if positive",
+    "Send haemoglobin typing because thalassaemia is common in Thailand",
+    "Perform bone marrow aspiration with iron staining to confirm the diagnosis"
+   ],
+   "answer": 0,
+   "explain": "**กลไก/หลักคิด** — ผู้ชาย (และหญิงวัยหมดประจำเดือน) **ไม่มีทางเสียเหล็กตามธรรมชาติ** การขาดเหล็กจึงเท่ากับ **เสียเลือดเรื้อรังจนกว่าจะพิสูจน์ได้ว่าไม่ใช่** และแหล่งที่พบบ่อยและอันตรายที่สุดคือ **ทางเดินอาหาร** — มะเร็งลำไส้ใหญ่ (โดยเฉพาะ **ด้านขวา** ที่ไม่ค่อยมีอาการ), มะเร็งกระเพาะ, แผลจาก NSAID, angiodysplasia\n\nแนวทาง BSG/BSH: **IDA ที่ยืนยันแล้วในชาย ทุกอายุ และหญิงหลังหมดประจำเดือน → ส่อง bidirectional endoscopy (OGD + colonoscopy)** ร่วมกับตรวจ coeliac serology และ urinalysis และ **ให้เหล็กไปพร้อมกันได้** — การให้เหล็กไม่ควรเลื่อนการหาสาเหตุ\n\n**ทำไมตัวลวงผิด**\n- *ให้เหล็กก่อนแล้วค่อยหาสาเหตุถ้าไม่ดีขึ้น* — Hb ดีขึ้นได้แม้มีมะเร็ง → **พลาดการวินิจฉัย**\n- *ทำ FOBT ซ้ำ* — เลือดออกจากมะเร็งเป็นพัก ๆ ผลลบ **ไม่ตัดโรค** แนวทางไม่แนะนำ gFOBT ใน IDA\n- *Hb typing* — ferritin 8 ยืนยันการขาดเหล็กแล้ว และ Mentzer/ferritin ไม่เข้ากับ thal trait\n- *bone marrow iron stain* — invasive โดยไม่จำเป็น ferritin < 15 จำเพาะต่อ IDA เกือบ 100%",
+   "pearl": "ชายหรือหญิงวัยทองที่ขาดเหล็ก = ส่องกล้องทั้งบนและล่างเสมอ อย่าแค่ให้เหล็ก",
+   "ref": [
+    "BSG guidelines for the management of iron deficiency anaemia in adults (Gut 2021)",
+    "สไลด์ อ.คุณาภา Iron deficiency anemia (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "2.1.56",
+    "3.3.26"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-05",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Oral iron – alternate-day dosing and hepcidin",
+   "stem": "A 28-year-old woman with iron deficiency anaemia (Hb 9.0 g/dL, ferritin 5 ng/mL) was prescribed ferrous sulfate 200 mg three times daily. After 1 week she has nausea and epigastric discomfort and wants to stop. Which change is most appropriate?",
+   "choices": [
+    "Ferrous sulfate 200 mg once daily on alternate days, taken on an empty stomach with water or orange juice",
+    "Increase to ferrous sulfate 200 mg four times daily to correct the anaemia faster despite symptoms",
+    "Switch immediately to intravenous iron because oral iron has failed",
+    "Continue three times daily but take each dose with milk or tea to reduce stomach upset",
+    "Continue three times daily with omeprazole to protect the stomach"
+   ],
+   "answer": 0,
+   "explain": "**กลไก: hepcidin** — หลังกินเหล็ก 1 มื้อ ระดับเหล็กในเลือดสูงขึ้น → ตับหลั่ง **hepcidin** ซึ่ง **ทำลาย ferroportin** ที่ผนังลำไส้ → **การดูดซึมเหล็กมื้อถัดไปภายใน ~24 ชม. ลดลง** การกินหลายมื้อต่อวันจึง **เพิ่มผลข้างเคียงแต่ไม่เพิ่มเหล็กที่ดูดซึมได้ตามสัดส่วน**\n\nการศึกษาของ Stoffel และคณะ (Lancet Haematol 2017; Haematologica 2020): **กินวันเว้นวัน วันละครั้ง** → fractional absorption สูงกว่า และ **คลื่นไส้/ท้องอืดน้อยลง** BSH/BSG 2021 จึงแนะนำ **วันละ 1 เม็ด หรือวันเว้นวันถ้าทนไม่ได้**\n\n**วิธีกินที่ถูก** — ท้องว่าง กับน้ำหรือ **น้ำส้ม/วิตามินซี** (รักษาเหล็กในรูป Fe²⁺) ห่างจาก **นม ชา กาแฟ แคลเซียม ยาลดกรด/PPI** อย่างน้อย 2 ชม.\n\n**ทำไมตัวลวงผิด**\n- *เพิ่มเป็น 4 มื้อ* — hepcidin ทำให้ดูดซึมไม่เพิ่ม แต่ผลข้างเคียงมากขึ้น → ผู้ป่วยหยุดยา\n- *เปลี่ยนเป็น IV ทันที* — ยังไม่ถือว่า oral iron ล้มเหลว (ยังไม่ได้ลองขนาด/วิธีที่เหมาะ)\n- *กินกับนม/ชา* — calcium, tannin **จับเหล็ก** ลดการดูดซึม\n- *ให้ omeprazole* — กรดในกระเพาะช่วยดูดซึม PPI **ลดการดูดซึมเหล็ก**",
+   "pearl": "เหล็กกินวันละครั้งหรือวันเว้นวันดีกว่าวันละหลายครั้ง — เพราะ hepcidin ปิดประตูลำไส้ 24 ชม.",
+   "ref": [
+    "Stoffel NU et al. Lancet Haematol 2017;4:e524 – alternate-day iron dosing",
+    "BSG guidelines for IDA in adults (Gut 2021)",
+    "สไลด์ อ.คุณาภา Iron deficiency anemia (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.4(2)"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-06",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Oral iron absorption – advising a patient whose deficiency worsened",
+   "stem": "A 46-year-old woman with known iron deficiency anaemia takes ferrous fumarate, omeprazole for dyspepsia, vitamin C and calcium carbonate every morning together. She stopped all of them for 2 weeks because of vomiting, and her ferritin has fallen further. Which piece of advice is NOT appropriate?",
+   "choices": [
+    "Stop the vitamin C because it reduces iron absorption",
+    "Take the calcium carbonate at least 2 hours apart from the iron tablet",
+    "Review whether omeprazole is still needed, because suppressing gastric acid reduces iron absorption",
+    "Look for the source of ongoing iron loss rather than only replacing iron",
+    "Reduce the iron to once daily or alternate days to improve tolerance"
+   ],
+   "answer": 0,
+   "explain": "**กลไกการดูดซึมเหล็กที่ลำไส้เล็กส่วนต้น**\n- เหล็กอาหาร/ยาส่วนใหญ่อยู่ในรูป Fe³⁺ ต้องถูกรีดิวซ์เป็น **Fe²⁺** โดย duodenal cytochrome b ก่อนเข้าทาง **DMT1**\n- **กรดในกระเพาะ** และ **วิตามินซี** ช่วยรักษาเหล็กให้อยู่ในรูปละลายได้/Fe²⁺ → **เพิ่ม** การดูดซึม\n- **แคลเซียม, ยาลดกรด, PPI, ชา (tannin), นม, phytate** → **ลด** การดูดซึม\n\nดังนั้น **\"วิตามินซีลดการดูดซึม\" เป็นคำแนะนำที่ผิด** — วิตามินซีช่วยดูดซึม (แม้หลักฐานทางคลินิกว่าเพิ่ม Hb จะไม่มาก แต่ไม่มีเหตุให้หยุดเพราะกลัวลดการดูดซึม)\n\n**ทำไมข้ออื่นเหมาะสม**\n- *แยกแคลเซียม ≥ 2 ชม.* — ถูก\n- *ทบทวนข้อบ่งชี้ PPI* — ถูก PPI ระยะยาวเป็นสาเหตุ oral iron ไม่ได้ผล\n- *หาสาเหตุการเสียเหล็ก* — ถูก ferritin ยังลดลงแปลว่า **ยังเสียเลือดอยู่** (ประจำเดือน, GI) ไม่ควรแค่เติมเหล็ก\n- *ลดเป็นวันละครั้ง/วันเว้นวัน* — ถูก ลดอาการอาเจียนและดูดซึมดีขึ้นจาก hepcidin\n\n> โพย MED35 ข้อนี้มีตัวเลือก \"no further investigation for iron deficiency\" ซึ่งก็ **ไม่เหมาะสม** เช่นกัน จึงปรับตัวเลือกให้มีคำตอบเดียว",
+   "pearl": "วิตามินซีช่วย — แคลเซียม ชา นม PPI ขัดขวางการดูดซึมเหล็ก",
+   "ref": [
+    "โพย MED35 MCQ ข้อ 16 (หยุด ferrous fumarate, omeprazole, vitamin C, calcium เพราะอาเจียน → inappropriate advice)",
+    "โพย MED35 OSCE-3 (แนะนำกินเหล็กกับวิตามินซี ไม่กินพร้อมนม ชา กาแฟ)",
+    "BSG guidelines for IDA in adults (Gut 2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.4(2)"
+   ],
+   "years": [
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-07",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Oral iron – expected response and duration",
+   "stem": "A 30-year-old woman with iron deficiency anaemia from menorrhagia (now controlled) started oral ferrous sulfate once daily. Baseline Hb was 8.0 g/dL. A reticulocyte count on day 8 was raised, and at 3 weeks Hb is 9.6 g/dL. She feels better and asks when she can stop. What is the most appropriate advice?",
+   "choices": [
+    "Continue iron for about 3 months after the haemoglobin normalises to replenish iron stores, then check ferritin",
+    "Stop iron as soon as the haemoglobin reaches the normal range",
+    "Switch to intravenous iron because a rise of 1.6 g/dL in 3 weeks is an inadequate response",
+    "Stop iron now and send haemoglobin typing because the response is too slow for iron deficiency",
+    "Add folic acid and vitamin B12 because iron alone cannot correct the anaemia"
+   ],
+   "answer": 0,
+   "explain": "**ลำดับการตอบสนองต่อเหล็ก (กลไก)**\n1. **Serum iron** สูงขึ้นภายในชั่วโมง (เป็นค่าที่ \"ขึ้นก่อน\" ทางเคมี แต่ไม่สะท้อนการรักษา)\n2. **Reticulocyte** เพิ่มเริ่ม ~วันที่ 4–5 **สูงสุดวันที่ 7–10**\n3. **Hb เพิ่ม ≥ 1–2 g/dL ภายใน 2–4 สัปดาห์** (BSH: เพิ่ม ≥ 1 g/dL ใน 2 สัปดาห์ถือว่าตอบสนอง) → ปกติภายใน ~6–8 สัปดาห์\n4. **Ferritin (เหล็กสะสม)** เติมเต็มเป็นลำดับสุดท้าย → ต้องกิน **ต่ออีก ~3 เดือนหลัง Hb ปกติ**\n\nรายนี้ Hb เพิ่ม 1.6 g/dL ใน 3 สัปดาห์ = **ตอบสนองดี** ไม่ต้องเปลี่ยนแผน\n\n**ทำไมตัวลวงผิด**\n- *หยุดเมื่อ Hb ปกติ* — เหล็กสะสมยังว่าง จะ **กลับมาซีดเร็ว**\n- *เปลี่ยน IV* — ไม่ใช่ inadequate response\n- *Hb typing* — ตอบสนองดีต่อเหล็กยืนยัน IDA แล้ว\n- *เพิ่ม folate/B12* — ไม่มีหลักฐานขาด\n\n> โพย MED33 ถาม \"ให้เหล็กแล้วอะไรขึ้นก่อน\" เฉลย serum iron — ถูกในแง่เคมี แต่ **ตัวชี้วัดการตอบสนองทางคลินิกที่ใช้ติดตามคือ reticulocyte (วันที่ 7–10) และ Hb (2–4 สัปดาห์)**",
+   "pearl": "Retic peak วันที่ 7–10, Hb ขึ้น ≥ 1–2 g/dL ใน 2–4 สัปดาห์ และกินต่ออีก 3 เดือนหลัง Hb ปกติ",
+   "ref": [
+    "โพย MED33 MCQ ข้อ 53 (ให้ iron supplement อะไรขึ้นก่อน: serum iron)",
+    "BSH guideline – oral iron response (Br J Haematol 2021)",
+    "สไลด์ อ.คุณาภา IDA treatment (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.4(2)",
+    "B2.3(3)"
+   ],
+   "years": [
+    "33"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-08",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Intravenous iron – when oral iron cannot work",
+   "stem": "A 40-year-old woman had a Roux-en-Y gastric bypass 5 years ago. She has fatigue; Hb is 8.2 g/dL, MCV 68 fL, ferritin 5 ng/mL and transferrin saturation 4%. She has taken ferrous sulfate once daily on an empty stomach for 3 months with good adherence, but Hb has risen by only 0.2 g/dL. There is no ongoing bleeding. What is the most appropriate treatment?",
+   "choices": [
+    "Intravenous iron, such as ferric carboxymaltose or iron sucrose, calculated to replace the total iron deficit",
+    "Double the oral ferrous sulfate to three times daily",
+    "Transfuse 2 units of packed red cells and continue oral iron",
+    "Intramuscular iron dextran injections",
+    "Subcutaneous erythropoietin"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เหล็กดูดซึมมากที่สุดที่ **duodenum และ proximal jejunum** ซึ่งต้องการ **กรดในกระเพาะ** Roux-en-Y gastric bypass **ข้ามทั้ง duodenum และลดกรด** → oral iron ไม่ว่าขนาดเท่าใดก็ดูดซึมไม่ได้\n\n**ข้อบ่งชี้ IV iron (BSH/BSG 2021, ESC HF 2023)**\n- **ดูดซึมไม่ได้**: post-bariatric, coeliac/IBD ที่ยัง active\n- **ทนยากินไม่ได้** แม้ปรับขนาด/วันเว้นวันแล้ว\n- **ไม่ตอบสนอง** (Hb ไม่ขึ้น ≥ 1 g/dL ใน 2–4 สัปดาห์) โดยกินถูกต้อง\n- **เสียเลือดต่อเนื่องเกินกว่า oral ทดแทนได้**\n- **ต้องการแก้ไขเร็ว**: ตั้งครรภ์ไตรมาส 2–3, ก่อนผ่าตัดใหญ่\n- **CKD** (โดยเฉพาะที่ได้ ESA/dialysis) และ **heart failure** ที่ ferritin < 100 หรือ 100–299 ร่วมกับ TSAT < 20%\n\n**ทำไมตัวลวงผิด**\n- *เพิ่มเป็นวันละ 3 ครั้ง* — ปัญหาอยู่ที่ **ดูดซึม** ไม่ใช่ขนาด และ hepcidin ทำให้ยิ่งไม่ได้ผล\n- *ให้เลือด* — ผู้ป่วยไม่มีอาการรุนแรง/hemodynamic instability ไม่จำเป็น และไม่แก้การขาดเหล็กสะสม\n- *IM iron dextran* — เจ็บ ผิวหนังเปลี่ยนสี เสี่ยง anaphylaxis ไม่แนะนำแล้ว\n- *EPO* — ไม่ได้ผลเมื่อไม่มีเหล็ก",
+   "pearl": "ดูดซึมไม่ได้ (bypass/coeliac/IBD), ทนไม่ได้, ไม่ตอบสนอง, เสียต่อเนื่อง, CKD/HF, ตั้งครรภ์ช่วงท้าย → IV iron",
+   "ref": [
+    "BSG guidelines for IDA in adults (Gut 2021)",
+    "2023 ESC HF focused update – iron deficiency definition",
+    "สไลด์ อ.คุณาภา IDA treatment (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.4(2)"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-09",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Iron deficiency – the clinical clue that points to iron",
+   "stem": "A 20-year-old woman has had heavy menstruation for 4 months, with fatigue and palpitations. Hb is 5 g/dL, Hct 15%, MCV 50 fL, WBC 6,000/mm3 and platelets 500,000/mm3. Which additional history or examination finding most specifically suggests iron deficiency as the cause?",
+   "choices": [
+    "Craving to chew ice (pagophagia) and spoon-shaped nails",
+    "A palpable spleen 4 cm below the costal margin",
+    "Loss of vibration and joint position sense in both feet",
+    "Intermittent dark urine on waking in the morning",
+    "Scleral icterus with raised indirect bilirubin"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เหล็กไม่ได้ใช้แค่สร้าง Hb แต่เป็น cofactor ของเอนไซม์ในเซลล์ที่แบ่งตัวเร็วและในสมอง\n- **เยื่อบุผิว/เล็บ** → **koilonychia (เล็บช้อน), angular cheilitis, atrophic glossitis**, Plummer–Vinson (esophageal web)\n- **สมอง (dopamine pathway)** → **pica โดยเฉพาะ pagophagia (เคี้ยวน้ำแข็ง)** และ **restless legs syndrome**\n- **ไขกระดูก** → **reactive thrombocytosis** (เกล็ดเลือด 500,000 ในรายนี้) จาก EPO/ไขกระดูก cross-stimulation\n- อาการทั่วไปของซีดมาก (Hb 5): ใจสั่น, systolic ejection (flow) murmur, bounding pulse\n\n**ทำไมตัวลวงผิด**\n- *ม้ามโต* — **IDA ไม่ทำให้ม้ามโต** (ข้อนี้คือตัวเลือกคลาสสิกที่ \"ไม่พบ\" ในโพยหลายรุ่น) นึกถึง thalassemia/hemolysis/infiltration\n- *เสีย vibration/position sense* — subacute combined degeneration จาก **B12**\n- *ปัสสาวะสีเข้มตอนเช้า* — **PNH** (intravascular hemolysis)\n- *ตาเหลือง indirect bilirubin สูง* — **hemolysis**",
+   "pearl": "IDA: koilonychia, glossitis, pica/pagophagia, RLS, เกล็ดเลือดสูง — แต่ไม่มีม้ามโต",
+   "ref": [
+    "โพย MED35 LMS ข้อ 3 (20-year-old heavy menstruation, Hb 5, MCV 50 → not expected: splenomegaly)",
+    "โพย MED31 LMS ข้อ 12 (เคสเดียวกัน)",
+    "โพย MED30 MCQ ข้อ 73 (lab IDA ไม่พบอะไร → splenomegaly)",
+    "โพย MED34 MCQ Hemato ข้อ 2 (มะเร็งเต้านม เลือดออกเรื้อรัง IDA → glossitis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "2.1.56"
+   ],
+   "years": [
+    "30",
+    "31",
+    "34",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-10",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Thrombocytosis – reactive versus not",
+   "stem": "Thrombocytosis is a recognised feature of each of the following conditions EXCEPT one. Which condition is NOT associated with thrombocytosis?",
+   "choices": [
+    "Haemolytic uraemic syndrome",
+    "Polycythaemia vera",
+    "Thalassaemia after splenectomy",
+    "Iron deficiency anaemia",
+    "Active inflammatory bowel disease"
+   ],
+   "answer": 0,
+   "explain": "**กลไก**\n- **Thrombocytosis แบบ reactive**: IL-6 จากการอักเสบ → ตับสร้าง **thrombopoietin** ↑ (IBD, ติดเชื้อ, มะเร็ง) · **ขาดเหล็ก** → megakaryocyte ถูกกระตุ้นร่วม (EPO cross-reactivity, ปลดเบรกของ megakaryopoiesis) · **หลังตัดม้าม** → ไม่มีที่เก็บเกล็ดเลือด (ปกติม้ามเก็บ ~1/3) จึงสูงถาวร\n- **Clonal**: myeloproliferative neoplasm เช่น **polycythemia vera, essential thrombocythemia** (JAK2)\n\n**HUS** เป็น **thrombotic microangiopathy** → เกล็ดเลือดถูกใช้ไปในลิ่มเลือดขนาดเล็ก → **thrombocytopenia** ร่วมกับ MAHA (schistocyte) และไตวาย จึงเป็นข้อยกเว้น\n\n**ประเด็นธาลัสซีเมีย** — หลัง splenectomy นอกจากเกล็ดเลือดสูงแล้ว ยังมี **Howell–Jolly body**, target cell, NRBC เพิ่ม และ **เสี่ยง thrombosis/pulmonary hypertension** โดยเฉพาะ NTDT",
+   "pearl": "เกล็ดเลือดสูง: ขาดเหล็ก, อักเสบ, หลังตัดม้าม, MPN — ส่วน TMA (HUS/TTP/DIC) เกล็ดเลือดต่ำ",
+   "ref": [
+    "โพย MED31 (ข้อสอบพิมพ์) Thrombocytosis is NOT the clinical feature in: PV, HUS, thalassemia post splenectomy, IDA, IBD"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "2.3.3(8)",
+    "B2.3(2)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-11",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Anaemia in pregnancy – physiological or iron deficiency?",
+   "stem": "A 26-year-old Thai woman, G1P0 at 24 weeks' gestation, has Hb 9.0 g/dL, MCV 72 fL, red cell count 3.9 million/microlitre and red cell distribution width 18%. She has mild glossitis. Her antenatal osmotic fragility and DCIP screening tests are negative. What is the most likely cause of her anaemia?",
+   "choices": [
+    "Iron deficiency anaemia",
+    "Physiological haemodilution of pregnancy",
+    "Anaemia of chronic disease",
+    "Folate deficiency",
+    "Beta-thalassaemia trait"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ในครรภ์ **ปริมาตรพลาสมาเพิ่ม ~45–50% แต่ red cell mass เพิ่มเพียง ~20–30%** → Hb ลดลงแบบ **dilutional** แต่ **MCV ปกติ** (ไม่มีอะไรเปลี่ยนขนาดเม็ดเลือด) ส่วนความต้องการเหล็กรวมตลอดครรภ์ ~1,000 mg (ทารก รก และการเพิ่ม red cell mass) → **IDA เป็นสาเหตุซีดที่พบบ่อยที่สุดในหญิงตั้งครรภ์**\n\n**นิยามโลหิตจางในครรภ์ (WHO/BSH)**: Hb < 11 g/dL ไตรมาส 1, **< 10.5 g/dL ไตรมาส 2**, < 11 g/dL ไตรมาส 3\n\nรายนี้: **MCV 72 (microcytic)**, **RDW 18% (กว้าง)**, **Mentzer = 72 ÷ 3.9 = 18.5 (> 13)**, glossitis และ **OF/DCIP ลบ** (ตัด β-thal trait, HbE, α-thal 1 ได้เกือบหมด) → **IDA**\n\n**ทำไมตัวลวงผิด**\n- *Physiological hemodilution* — Hb ไม่ควรต่ำกว่า 10.5 ในไตรมาส 2 และ **MCV ต้องปกติ**\n- *ACD* — ไม่มีโรคอักเสบเรื้อรัง\n- *Folate deficiency* — ทำให้ **macrocytic** (แม้ในครรภ์จะพบได้ แต่ภาพนี้ microcytic)\n- *β-thal trait* — OF test ลบ และ Mentzer > 13, RDW กว้าง ไม่เข้า",
+   "pearl": "ซีดในครรภ์ + MCV ต่ำ ไม่ใช่ physiologic — hemodilution ทำให้ Hb ลดแต่ MCV ปกติ",
+   "ref": [
+    "โพย MED31 MCQ ข้อ 40 (ผู้หญิงท้องซีด choice: normal physio of pregnancy, ACD → iron def)",
+    "โพย MED31 MCQ ข้อ 20 (แม่ตั้งครรภ์ ซีด glossitis MCV 70 → iron def)",
+    "BSH guideline – iron deficiency in pregnancy (2020)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "2.1.56"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-12",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Sideroblastic anaemia from isoniazid",
+   "stem": "A 45-year-old man has been taking isoniazid, rifampicin, pyrazinamide and ethambutol for pulmonary tuberculosis for 4 months without pyridoxine. Hb is 8.4 g/dL, MCV 72 fL, ferritin 650 ng/mL and transferrin saturation 70%. The smear is dimorphic with Pappenheimer bodies; bone marrow Prussian blue staining shows many ring sideroblasts. What is the most appropriate treatment?",
+   "choices": [
+    "Pyridoxine (vitamin B6) supplementation",
+    "Oral ferrous sulfate",
+    "Folic acid alone",
+    "Desferrioxamine infusion as first-line therapy",
+    "Stop all anti-tuberculosis drugs permanently"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ขั้นแรกของการสร้าง haem ในไมโทคอนเดรียคือ **ALA synthase (ALAS2)** ซึ่งต้องใช้ **pyridoxal phosphate (vitamin B6)** เป็น cofactor\n- **Isoniazid** จับกับ pyridoxine → **ขาด B6 แบบทำงาน** → haem สร้างไม่ได้\n- เหล็กที่ขนเข้ามาใช้ไม่ได้ จึง **สะสมในไมโทคอนเดรียรอบนิวเคลียส = ring sideroblast** (Prussian blue)\n- ผลคือ **microcytic (หรือ dimorphic) แต่ iron overload**: ferritin และ TSAT สูง, Pappenheimer bodies\n\n**สาเหตุ sideroblastic อื่น**: แอลกอฮอล์, **ตะกั่ว** (ยับยั้ง ALA dehydratase/ferrochelatase → **basophilic stippling**), ขาดทองแดง/ได้ zinc เกิน, chloramphenicol, linezolid, MDS (MDS-RS/SF3B1), X-linked ALAS2 mutation\n\n**ทำไมตัวลวงผิด**\n- *oral iron* — เหล็กเกินอยู่แล้ว (ferritin 650, TSAT 70%) ยิ่งให้ยิ่งเป็นพิษ\n- *folic acid* — ไม่ได้แก้ที่ ALA synthase\n- *desferrioxamine เป็นอันดับแรก* — แก้ที่สาเหตุก่อน ซีดจะดีขึ้นเอง chelation พิจารณาเฉพาะ overload ที่ชัดเจนต่อเนื่อง\n- *หยุดยา TB ถาวร* — ไม่จำเป็น ให้ **B6 ร่วมกับ INH** (ปกติควรให้ป้องกันตั้งแต่ต้น)",
+   "pearl": "Microcytic แต่ ferritin สูง + ring sideroblast → นึกถึง INH/แอลกอฮอล์/ตะกั่ว/MDS — INH แก้ด้วย B6",
+   "ref": [
+    "Harrison 21e – Sideroblastic anemias",
+    "สไลด์ อ.คุณาภา Microcytic anemia (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.4(2)",
+    "3.3.26"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-13",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Pernicious anaemia – the confirming antibody",
+   "stem": "A 60-year-old woman has chronic anaemia. She eats meat and fish regularly. Examination shows hyporeflexia and loss of joint position sense in both feet. Hb 7 g/dL, Hct 22%, MCV 125 fL, WBC 3,500/mm3 (N 65%, L 22%), platelets 120,000/mm3. Which laboratory finding is most likely in this patient?",
+   "choices": [
+    "Positive anti-intrinsic factor antibody",
+    "Abnormal Ham (acidified serum) test",
+    "Low serum folate level",
+    "Low serum homocysteine level",
+    "Low serum methylmalonic acid level"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **Pernicious anemia** = autoimmune gastritis ที่ทำลาย **parietal cell** (ตัวสร้างกรดและ **intrinsic factor**)\n- B12 ต้องจับ **IF** แล้วไปดูดซึมที่ **terminal ileum (cubilin)** → ไม่มี IF จึงขาด B12 แม้กินเนื้อสัตว์ปกติ\n- B12 เป็น cofactor ของ 2 เอนไซม์:\n  - **methionine synthase** (ร่วมกับ folate) → ขาดแล้ว **homocysteine ↑** และ DNA สร้างไม่ได้ → megaloblastic, pancytopenia\n  - **methylmalonyl-CoA mutase** → ขาดแล้ว **methylmalonic acid (MMA) ↑** → ไขมันใน myelin ผิดปกติ → **subacute combined degeneration** (posterior column: position/vibration, corticospinal) และ peripheral neuropathy (hyporeflexia)\n\n**ตรวจยืนยัน**: B12 ต่ำ (± MMA สูง) แล้วตรวจ **anti-intrinsic factor antibody** (จำเพาะสูง ~95% แต่ไว ~50–70%) และ anti-parietal cell antibody (ไวแต่ไม่จำเพาะ) ± gastrin สูง\n\n**ทำไมตัวลวงผิด**\n- *Ham test* — ใช้ใน **PNH** (ปัจจุบันใช้ flow cytometry CD55/CD59)\n- *folate ต่ำ* — folate deficiency **ไม่ทำให้มีอาการทางประสาท** และผู้ป่วยกินอาหารปกติ\n- *homocysteine ต่ำ / MMA ต่ำ* — ใน B12 deficiency **ทั้งคู่สูง** (folate deficiency: homocysteine สูง แต่ MMA ปกติ)\n\n**การรักษา**: **B12 ฉีด IM** (hydroxocobalamin/cyanocobalamin 1,000 µg) ตลอดชีวิต และติดตามมะเร็งกระเพาะ/neuroendocrine tumour",
+   "pearl": "B12 ต่ำ + ไม่ใช่มังสวิรัติ + อาการประสาท → anti-intrinsic factor; MMA และ homocysteine สูงทั้งคู่",
+   "ref": [
+    "โพย MED28 MCQ ข้อ 67 (60-year-old female, MCV 125, hyporeflexia → anti-intrinsic factor)",
+    "โพย MED31 MCQ ข้อ 4 (vit B12 def → high MMA and homocysteine)",
+    "BSH guideline – cobalamin and folate disorders (2014, updated 2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.2.5(1)"
+   ],
+   "years": [
+    "28",
+    "31"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-14",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Vitamin B12 deficiency after ileal resection",
+   "stem": "A 50-year-old man with Crohn's disease had 80 cm of terminal ileum resected 4 years ago. He now has tingling in both feet and fatigue. Hb is 9.8 g/dL, MCV 114 fL, and the smear shows macro-ovalocytes with hypersegmented neutrophils. Serum B12 is low. Which statement about cause and treatment is correct?",
+   "choices": [
+    "Loss of the ileal site that absorbs the B12–intrinsic factor complex; he needs lifelong parenteral (intramuscular) B12",
+    "Loss of gastric parietal cells; a short course of low-dose oral B12 is sufficient",
+    "Folate deficiency from small-bowel loss; oral folic acid alone will correct both the anaemia and the neuropathy",
+    "Dietary B12 deficiency; advise him to eat more meat and no supplement is needed",
+    "Bacterial overgrowth consuming iron; he needs oral iron and antibiotics"
+   ],
+   "answer": 0,
+   "explain": "**กลไกการดูดซึม B12 (ต้องจำเป็นลำดับ)**\n1. กรด/pepsin ในกระเพาะ **ปลด B12 ออกจากโปรตีนอาหาร** → จับ haptocorrin\n2. ที่ duodenum เอนไซม์ตับอ่อนตัด haptocorrin → B12 จับ **intrinsic factor** (จาก parietal cell)\n3. **B12–IF ถูกดูดซึมที่ terminal ileum ผ่าน cubilin receptor** ← จุดที่เสียไปในรายนี้\n4. สะสมที่ตับ 2–5 mg (พอใช้ 3–5 ปี → อาการจึงเกิด **หลังผ่าตัดหลายปี** เหมือนรายนี้)\n\n**สาเหตุ B12 ต่ำแยกตามขั้น**: กินมังสวิรัติเคร่ง (1) · **metformin ระยะยาว, PPI/H2RA** (1 และ cubilin-Ca²⁺) · atrophic gastritis/**pernicious anemia**/gastrectomy (2) · ตับอ่อนบกพร่อง · **ileal resection/Crohn**, bacterial overgrowth, fish tapeworm (3)\n\n**รักษา**: เมื่อจุดดูดซึมหายไป ต้อง **ฉีด B12 (hydroxocobalamin 1,000 µg IM) ถี่ในช่วงแรก แล้วทุก 2–3 เดือนตลอดชีวิต** (oral ขนาดสูงมาก 1–2 mg อาศัย passive diffusion ~1% ใช้ได้ในบางราย แต่รายมีอาการประสาทควรเริ่มด้วยฉีด)\n\n**ทำไมตัวลวงผิด**\n- *parietal cell* — นั่นคือ pernicious anemia/gastrectomy ไม่ใช่ ileal resection และขนาดต่ำระยะสั้นไม่พอ\n- *folic acid อย่างเดียว* — อันตราย แก้เลือดบางส่วนแต่ **ระบบประสาทแย่ลง**\n- *dietary* — กินอาหารไม่ช่วยเพราะดูดซึมไม่ได้\n- *bacterial overgrowth กินเหล็ก* — overgrowth กิน **B12** ไม่ใช่สาเหตุ macrocytosis จากเหล็ก",
+   "pearl": "ตัด terminal ileum / Crohn / metformin / PPI / มังสวิรัติ = เสี่ยง B12 — ileal loss ต้องฉีด B12 ตลอดชีวิต",
+   "ref": [
+    "โพย MED35 MCQ ข้อ 61 (คนตัดลำไส้ → B12 def, intrinsic factor def)",
+    "โพย MED31 MEQ (Oral iron, IM cobalamin, oral folic acid)",
+    "BSH guideline – cobalamin and folate disorders (2014)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(7)",
+    "B2.2.5(1)",
+    "B2.4(2)"
+   ],
+   "years": [
+    "31",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-15",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Haemolysis labs – recognising intravascular haemolysis",
+   "stem": "A 24-year-old Thai man has passed cola-coloured urine all day for 2 days after a febrile illness. He is pale and mildly jaundiced. Urine dipstick shows blood 3+, but microscopy shows 0–2 red cells/HPF. Hb 8.5 g/dL, LDH 980 U/L, indirect bilirubin 3.2 mg/dL, haptoglobin undetectable, creatine kinase normal. Which interpretation is correct?",
+   "choices": [
+    "Intravascular haemolysis with haemoglobinuria",
+    "Rhabdomyolysis with myoglobinuria",
+    "Glomerular haematuria from post-infectious glomerulonephritis",
+    "Obstructive jaundice with bilirubinuria",
+    "Purely extravascular (splenic) haemolysis without haemoglobinuria"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — เม็ดเลือดแดงแตก **ในหลอดเลือด** → Hb อิสระจับ **haptoglobin** จนหมด (haptoglobin ต่ำ/ตรวจไม่พบ) → Hb ส่วนเกินกรองผ่านไต → **hemoglobinuria** (ปัสสาวะสีโค้ก, dipstick blood บวก **แต่ไม่มี RBC**) → เซลล์ท่อไตเก็บไว้แล้วหลุดออกมาเป็น **hemosiderinuria** (บวกหลัง ~1 สัปดาห์) และอาจเกิด AKI\n\n| ลักษณะ | Intravascular | Extravascular |\n|---|---|---|\n| ที่เกิด | ในหลอดเลือด | ม้าม/ตับ (macrophage) |\n| Haptoglobin | **ตรวจไม่พบ** | ลดลง |\n| ปัสสาวะ | **Hemoglobinuria, hemosiderinuria** | ปกติ (urobilinogen ↑) |\n| ตัวอย่าง | **G6PD, PNH, incompatible transfusion, malaria (falciparum), MAHA** | HS, warm AIHA, thalassemia |\n\nร่วมกันทั้งสองแบบ: **LDH ↑, indirect bilirubin ↑, reticulocyte ↑**\n\nในบริบทไทย ชายหนุ่มปัสสาวะดำหลังไข้ → นึกถึง **G6PD deficiency** (เครียดจากติดเชื้อหรือยา) และ **malaria** → ส่ง PBS (bite/blister cell, parasite) และ G6PD\n\n**ทำไมตัวลวงผิด**\n- *Rhabdomyolysis* — dipstick บวกโดยไม่มี RBC เหมือนกัน แต่ **CK ปกติ** และ myoglobin ไม่ทำให้ซีด/haptoglobin ต่ำ\n- *Glomerular hematuria* — ต้องเห็น **RBC (dysmorphic) ในกล้อง**\n- *Obstructive jaundice* — bilirubin เป็น **direct** และ dipstick blood ไม่บวก\n- *Extravascular ล้วน* — ไม่ทำให้ hemoglobinuria",
+   "pearl": "Dipstick blood บวกแต่ไม่มี RBC + haptoglobin ศูนย์ + CK ปกติ = hemoglobinuria จาก intravascular hemolysis",
+   "ref": [
+    "โพย MED32 MEQ (ปัสสาวะสีโค้กทั้งวัน → intravascular hemolytic jaundice, ส่ง G6PD/PBS)",
+    "โพย MED32 MCQ ข้อ 83 (ฉี่ดำ MCV ต่ำ → hemolytic anemia/HbH)",
+    "โพย MED32 MCQ (jaundice 2 วัน mild anemia splenomegaly → hemolysis)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(3)",
+    "2.1.13",
+    "2.1.43",
+    "B2.3(3)"
+   ],
+   "years": [
+    "32"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-16",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "G6PD deficiency – testing before primaquine",
+   "stem": "A 30-year-old Thai man from a border province has Plasmodium vivax malaria confirmed on thick and thin films. He has completed chloroquine and is now afebrile. Which is the most appropriate step for radical cure?",
+   "choices": [
+    "Test G6PD status first; give 14 days of daily primaquine if normal, or weekly primaquine 0.75 mg/kg for 8 weeks with monitoring if deficient",
+    "Give daily primaquine for 14 days immediately without testing, because haemolysis from primaquine is always mild",
+    "Omit primaquine because chloroquine already kills the liver hypnozoites",
+    "Give artesunate for 7 days instead of primaquine to eradicate hypnozoites",
+    "Test G6PD 1 week after starting primaquine and stop only if the result is low"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — G6PD เป็นเอนไซม์แรกของ **pentose phosphate pathway** ที่ผลิต **NADPH** → ใช้รีดิวซ์ glutathione ปกป้อง Hb จาก oxidant\n- เม็ดเลือดแดงไม่มีไมโทคอนเดรีย จึง **พึ่ง G6PD เป็นแหล่ง NADPH เดียว**\n- **Primaquine (8-aminoquinoline)** สร้าง reactive oxygen species → ในคนขาด G6PD Hb ถูก oxidize เป็น **Heinz body** → ม้ามตัด (bite cell) และแตกในหลอดเลือด\n- **Hypnozoite** ของ *P. vivax/ovale* อยู่ในตับ **chloroquine/artesunate ฆ่าไม่ได้** ต้องใช้ primaquine (หรือ tafenoquine) จึงเลี่ยงไม่ได้ ต้องตรวจ G6PD ก่อน\n\n**ระบาดวิทยาไทย** — **X-linked** ชายไทยขาด G6PD ประมาณ **3–18%** (Viangchan/Mahidol variant พบบ่อย) ความชุกสูงตามแนวชายแดน\n\n**แนวทาง (WHO/กรมควบคุมโรค)**\n- G6PD ปกติ → primaquine **0.25–0.5 mg/kg/day × 14 วัน** (ไทยใช้ 0.5 mg/kg/day × 14 วัน)\n- G6PD ขาด → **0.75 mg/kg สัปดาห์ละครั้ง × 8 สัปดาห์** ภายใต้การติดตาม Hb/ปัสสาวะ\n- ห้าม tafenoquine ถ้า G6PD activity < 70%\n\n**ทำไมตัวลวงผิด**\n- *ให้เลยไม่ต้องตรวจ* — บางสายพันธุ์ (เช่น Mediterranean, Viangchan) hemolysis รุนแรงได้\n- *chloroquine ฆ่า hypnozoite* — ผิด ไม่มีฤทธิ์ระยะตับ\n- *artesunate แทน* — ฆ่าได้แต่ blood stage\n- *ตรวจหลังเริ่มยา 1 สัปดาห์* — ช่วง hemolysis เซลล์แก่ที่ขาดเอนไซม์แตกไปแล้ว เหลือ retic ที่เอนไซม์สูง → **ผลปกติลวง** (ต้องตรวจซ้ำหลัง 2–3 เดือน)",
+   "pearl": "Vivax/ovale ต้องให้ primaquine ฆ่า hypnozoite — ตรวจ G6PD ก่อนทุกครั้ง",
+   "ref": [
+    "โพย MED30 MCQ ข้อ 40 (→ Chloroquine + Primaquine)",
+    "โพย MED35 MCQ ข้อ 10 และ 69 (PBS RBC ใหญ่ P. vivax → chloroquine + primaquine)",
+    "แนวทางเวชปฏิบัติการรักษาโรคมาลาเรียในประเทศไทย (กรมควบคุมโรค)",
+    "WHO Guidelines for malaria (2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(3)",
+    "B2.2.1(3)"
+   ],
+   "years": [
+    "30",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-17",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "G6PD deficiency – the smear and the special stain",
+   "stem": "A 19-year-old man develops jaundice and dark urine 2 days after taking a sulfonamide antibiotic. Hb has fallen from 14.5 to 9.0 g/dL. The Wright-stained smear shows red cells with a semicircular 'bite' removed from the edge, cells in which haemoglobin is pushed to one side leaving a clear membrane bubble, and irregularly contracted dense cells. Which test will directly demonstrate the inclusions responsible?",
+   "choices": [
+    "Supravital staining (methyl violet or brilliant cresyl blue) to show Heinz bodies",
+    "Prussian blue staining to show ring sideroblasts",
+    "Direct antiglobulin (Coombs) test to show red cell–bound IgG",
+    "Osmotic fragility test to show increased fragility",
+    "Haemoglobin electrophoresis to show haemoglobin S"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — oxidant (sulfa, dapsone, primaquine, **nitrofurantoin**, methylene blue, **rasburicase**, ถั่วปากอ้า/fava, ติดเชื้อ, DKA) → ไม่มี NADPH พอ → Hb ถูก oxidize เป็น methemoglobin → **hemichrome → ตกตะกอนเกาะเยื่อหุ้ม = Heinz body**\n- Heinz body **ไม่ติดสี Wright** ต้องใช้ **supravital stain** (methyl/crystal violet, brilliant cresyl blue, new methylene blue)\n- macrophage ในม้าม \"กัด\" Heinz body ออก → **bite cell (degmacyte)**\n- Hb ถูกดึงไปด้านหนึ่งเหลือเยื่อหุ้มใส → **blister cell (hemighost)**\n- เซลล์ถูก oxidize ทั้งเซลล์ → **irregularly contracted cell** (โพยใช้คำ \"contracted red cell / ghost cell\")\n\n**ประเด็นเพิ่ม**\n- **X-linked recessive** — ลูกสาวของพ่อที่ขาด G6PD **เป็น carrier ทุกคน** ลูกชายของแม่ carrier เสี่ยง 50%\n- **Rasburicase ห้ามใช้** ใน G6PD deficiency (ผลิต H₂O₂) → TLS ใช้ allopurinol + hydration\n- ตรวจ G6PD ในช่วง hemolysis อาจปกติลวง → ตรวจซ้ำ 2–3 เดือน\n\n**ทำไมตัวลวงผิด**\n- *Prussian blue* — ring sideroblast/Pappenheimer (sideroblastic)\n- *DAT* — immune hemolysis ซึ่งเห็น **spherocyte** ไม่ใช่ bite cell\n- *OF test* — HS (fragility เพิ่ม) หรือ thal screening (fragility ลด)\n- *Hb electrophoresis HbS* — sickle cell ไม่พบในไทย ไม่สัมพันธ์กับยา",
+   "pearl": "Bite + blister + contracted cell บน Wright, Heinz body ต้องย้อม supravital",
+   "ref": [
+    "โพย MED32 MCQ ข้อ 14 (G6PD def: contracted red cell, ghost cell)",
+    "โพย MED31 MCQ ข้อ 30 (CONTRACTED rbc → G6PD def)",
+    "โพย MED33 SAQ PBS (bite cell/blister cell, Heinz body ต้อง supravital stain)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(3)",
+    "B2.2.1(3)",
+    "B2.3(5)",
+    "3.1.2"
+   ],
+   "years": [
+    "31",
+    "32",
+    "33"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-18",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Alpha-thalassaemia 1 – risk of Hb Bart's hydrops fetalis",
+   "stem": "A Thai couple attend antenatal clinic at 8 weeks' gestation. Both have MCV about 68 fL, normal ferritin, haemoglobin typing A2A with normal HbA2, and PCR confirms that each carries the Southeast Asian (SEA) alpha-thalassaemia 1 deletion (--SEA/αα). What is the risk to this pregnancy and the appropriate counselling?",
+   "choices": [
+    "25% risk of Hb Bart's hydrops fetalis, which is lethal and also endangers the mother; offer prenatal diagnosis",
+    "25% risk of HbH disease, a mild anaemia that needs no prenatal diagnosis",
+    "50% risk of beta-thalassaemia major requiring lifelong transfusion",
+    "No risk of severe thalassaemia because haemoglobin typing in both parents is normal",
+    "100% risk of alpha-thalassaemia 1 trait in all children, with no severe disease possible"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — คนปกติมียีน α-globin 4 ตัว (αα/αα)\n- **α-thal 1 (--/αα)**: ขาด 2 ยีนบนโครโมโซมเดียว (cis) — **SEA deletion พบบ่อยในไทย**\n- **α-thal 2 (-α/αα)**: ขาด 1 ยีน\n\nพ่อ --/αα × แม่ --/αα →\n| ลูก | โอกาส | ผล |\n|---|---|---|\n| αα/αα | 25% | ปกติ |\n| --/αα | 50% | α-thal 1 trait |\n| **--/--** | **25%** | **Hb Bart's hydrops fetalis** |\n\nไม่มี α-chain เลย → ทารกสร้าง **γ4 (Hb Bart's)** ซึ่ง **จับ O₂ แน่นมากไม่ปล่อยให้เนื้อเยื่อ** → ซีดรุนแรง หัวใจล้ม บวมน้ำทั้งตัว เสียชีวิตในครรภ์/หลังคลอด และ **มารดาเสี่ยง preeclampsia (mirror syndrome), คลอดยาก, PPH**\n\n**การดูแล**: ให้คำปรึกษา **prenatal diagnosis** (CVS/amniocentesis/cordocentesis หรือ US ดู cardiothoracic ratio, placental thickness) และเสนอยุติการตั้งครรภ์ถ้าพบ\n\n**ทำไม Hb typing ปกติ** — α-thal 1 trait มี HbA2 ปกติ ต้องใช้ **PCR** วินิจฉัย (screen ด้วย MCV/MCH ต่ำ, OF บวก)\n\n**ทำไมตัวลวงผิด**\n- *HbH 25%* — HbH (--/-α) ต้องมีพ่อหรือแม่เป็น **α-thal 2** ไม่ใช่ α-thal 1 ทั้งคู่\n- *β-thal major* — ไม่มีใครมียีน β\n- *ไม่มีความเสี่ยงเพราะ typing ปกติ* — กับดักคลาสสิก\n- *ลูกเป็น trait ทุกคน* — ผิด Mendelian",
+   "pearl": "α-thal 1 × α-thal 1 = Bart's hydrops 25% — Hb typing ปกติไม่ตัด α-thal 1 ต้อง PCR",
+   "ref": [
+    "แนวทางการป้องกันและควบคุมโรคธาลัสซีเมีย (กรมอนามัย/กรมวิทยาศาสตร์การแพทย์)",
+    "สไลด์ อ.คุณาภา Thalassemia in Thailand (9 พ.ย.)",
+    "TIF Guidelines for the management of NTDT, 3rd ed (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.2.1(1)",
+    "B2.3(4)"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-19",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Thalassaemia screening – interpreting OF and DCIP",
+   "stem": "A 27-year-old woman has premarital screening. Hb 11.8 g/dL, MCV 68 fL, MCH 21 pg, ferritin 80 ng/mL. The one-tube osmotic fragility (OF) test is positive and the DCIP (dichlorophenol-indophenol) precipitation test is negative. Haemoglobin typing shows A2A with HbA2 2.6% and no HbE. What is the most appropriate next step?",
+   "choices": [
+    "PCR for the alpha-thalassaemia 1 (SEA) deletion, and screen her partner",
+    "Reassure her that she has no thalassaemia gene because haemoglobin typing is normal",
+    "Diagnose beta-thalassaemia trait and stop further testing",
+    "Diagnose haemoglobin E trait because the OF test is positive",
+    "Give a 3-month trial of oral iron and repeat the CBC"
+   ],
+   "answer": 0,
+   "explain": "**หลักการคัดกรองของไทย** (มุ่งหาคู่เสี่ยง 3 โรครุนแรง: **Bart's hydrops, β-thal major, β-thal/HbE**)\n- **OF test** — เม็ดเลือดแดงแบนบางของ thal **ทนแรงดันออสโมติกได้ดีกว่า** (fragility ลด) จึงแตกไม่หมดใน 0.36% NaCl → **ขุ่น = บวก** ใน **α-thal 1 trait, β-thal trait** (และ HbE บางส่วน) — ขาดเหล็กก็บวกได้\n- **DCIP** — HbE ไม่เสถียร ตกตะกอนเมื่อถูก oxidize → **บวกใน HbE**\n- ใช้ **MCV < 80 / MCH < 27** แทน OF ได้\n\n**แปลผลรายนี้**: OF บวก/MCV ต่ำ แต่ **ferritin ปกติ (ไม่ใช่ขาดเหล็ก)**, **HbA2 < 3.5% (ไม่ใช่ β-thal trait)**, **ไม่มี HbE** → เหลือ **α-thal 1 trait** ซึ่ง Hb typing ปกติ → ต้อง **PCR SEA/Thai deletion** และตรวจคู่สมรส\n\n| ผล Hb typing | แปลผล |\n|---|---|\n| HbA2 **≥ 4%** (3.5–9) | β-thal trait |\n| HbE 25–30% | HbE trait |\n| HbA2 ปกติ, MCV ต่ำ, ferritin ปกติ | สงสัย **α-thal 1** → PCR |\n\n**ทำไมตัวลวงผิด**\n- *typing ปกติจึงไม่เป็นอะไร* — พลาด α-thal 1\n- *β-thal trait* — HbA2 ต้อง ≥ 3.5–4%\n- *HbE trait* — DCIP ลบ และไม่พบ HbE\n- *ให้เหล็ก* — ferritin 80 ไม่ขาดเหล็ก การให้เหล็กในคนเป็น thal ไม่จำเป็น",
+   "pearl": "OF+/MCV ต่ำ, ferritin ปกติ, HbA2 ปกติ, ไม่มี HbE → PCR หา α-thal 1",
+   "ref": [
+    "โพย MED29 MCQ (ให้ PBS HS ส่งตรวจอะไร → OF test)",
+    "โพย MED31 note (ferritin, OF test = thalassemia screening)",
+    "โพย MED34 MCQ Hemato ข้อ 3 (ซีดทั้งครอบครัว target cell → Hb electrophoresis)",
+    "แนวทางการป้องกันและควบคุมโรคธาลัสซีเมีย (กรมอนามัย)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.2.1(1)",
+    "B2.2.1(2)",
+    "B2.3(4)"
+   ],
+   "years": [
+    "29",
+    "31",
+    "34"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-20",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "HbH disease – an infection-triggered haemolytic crisis",
+   "stem": "A 22-year-old Thai woman has had lifelong mild pallor and intermittent jaundice. She now has fever for 2 days and dark urine. Hb has fallen from her usual 9 g/dL to 6.5 g/dL, MCV 62 fL, reticulocytes 8%. The spleen is palpable 3 cm. Haemoglobin typing shows A2A with Hb Bart's and a fast-moving HbH band of 15%; brilliant cresyl blue staining shows many 'golf-ball' inclusions. What is the diagnosis?",
+   "choices": [
+    "HbH disease (alpha-thalassaemia 1/alpha-thalassaemia 2) with an infection-triggered acute haemolytic crisis",
+    "Beta-thalassaemia/HbE disease with hypersplenism",
+    "Iron deficiency anaemia with intercurrent infection",
+    "G6PD deficiency with drug-induced haemolysis",
+    "Warm autoimmune haemolytic anaemia"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — **HbH disease (--/-α)** เหลือยีน α ทำงานเพียง 1 ตัว → β-chain เกิน **รวมกันเป็น β4 = HbH**\n- HbH **ไม่เสถียร** ถูก oxidize ง่าย → ตกตะกอนในเม็ดเลือดแดง (**golf-ball inclusion** เมื่อย้อม brilliant cresyl blue) → ม้ามทำลาย = **chronic hemolysis** (ซีดปานกลาง, ตัวเหลืองเป็น ๆ หาย ๆ, ม้ามโต, นิ่ว)\n- เมื่อมี **ไข้/ติดเชื้อหรือยา oxidant** → HbH ตกตะกอนเพิ่มอย่างรวดเร็ว → **acute hemolytic crisis** (Hb ลดฮวบ, ปัสสาวะสีเข้ม) — ชนิด **HbH–Constant Spring** มักรุนแรงกว่า\n\n**การดูแล**: รักษาการติดเชื้อ, ให้เลือดเมื่อจำเป็น, **folic acid**, หลีกเลี่ยงยา oxidant, **ไม่ให้เหล็ก**, ติดตาม iron overload (NTDT)\n\n**ทำไมตัวลวงผิด**\n- *β-thal/HbE* — Hb typing ต้องพบ **HbE + HbF** ไม่ใช่ HbH/Bart's\n- *IDA* — ไม่ทำให้ตัวเหลือง ม้ามโต หรือ retic 8%\n- *G6PD* — เป็นได้ร่วม แต่ inclusion ใน G6PD คือ **Heinz body** และ Hb typing ไม่ควรพบ HbH\n- *Warm AIHA* — normocytic + spherocyte, DAT บวก ไม่ microcytic ตลอดชีวิต",
+   "pearl": "Microcytic + ซีดเหลืองเรื้อรัง + ม้ามโต + HbH/Bart's บน typing = HbH disease; ไข้ทำให้ hemolytic crisis",
+   "ref": [
+    "โพย MED34 MCQ Hemato ข้อ 5 (อายุ 20 ซีด เหลือง ไม่มีตับม้ามโต: β-thalassemia vs Hb H disease)",
+    "โพย MED32 MCQ ข้อ 83 (ฉี่ดำ MCV ต่ำ → hemolytic anemia/HbH)",
+    "TIF Guidelines for NTDT 3rd ed (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.2.1(1)",
+    "B2.3(5)"
+   ],
+   "years": [
+    "32",
+    "34"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-21",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Transfusion-dependent thalassaemia – the transfusion target",
+   "stem": "A 19-year-old man with beta-thalassaemia/HbE has needed transfusion every 3–4 weeks since childhood. His pre-transfusion Hb has usually been 6.5–7 g/dL, and he has frontal bossing and a spleen 8 cm below the costal margin. Which transfusion strategy is most appropriate?",
+   "choices": [
+    "Leukocyte-reduced packed red cells to keep the pre-transfusion Hb at about 9.5–10.5 g/dL",
+    "Transfuse only when Hb falls below 7 g/dL, as in critically ill adults",
+    "Fresh whole blood every 3 months",
+    "Fresh frozen plasma with each red cell transfusion",
+    "Stop regular transfusion and give oral iron and folic acid"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ใน TDT การปล่อยให้ Hb ต่ำ → **EPO สูงเรื้อรัง** → **ineffective erythropoiesis** ขยายตัว → ไขกระดูกขยาย (frontal bossing, กระดูกบาง), **extramedullary hematopoiesis**, ม้ามโต (ยิ่งทำลายเลือด) และ **hepcidin ถูกกด → ดูดซึมเหล็กจากลำไส้เพิ่ม**\n\n**Hypertransfusion (TIF 2021)** — รักษา **pre-transfusion Hb 9.5–10.5 g/dL** (11–12 ถ้ามีโรคหัวใจ) ด้วย PRC 10–15 mL/kg ทุก 2–5 สัปดาห์ → กด erythropoiesis, การเจริญเติบโตปกติ, ม้ามไม่โตต่อ\n\n**ชนิดเลือด** — **leukocyte-reduced (leukocyte-depleted) PRC** ลด **febrile non-hemolytic reaction**, HLA alloimmunization และ CMV; จับคู่ ABO/Rh(D) และควรรวม C, E, Kell; ตรวจ antibody screening ก่อนทุกครั้ง\n\n**ทำไมตัวลวงผิด**\n- *Hb < 7 แบบ ICU* — ใช้กับผู้ป่วยวิกฤตที่ไขกระดูกปกติ ไม่ใช่ TDT\n- *Whole blood* — ปริมาตรมาก เสี่ยง TACO และไม่จำเป็น\n- *FFP* — ไม่มีข้อบ่งชี้ (ไม่มีปัญหาการแข็งตัวของเลือด)\n- *oral iron* — **ห้าม** ผู้ป่วย iron overload อยู่แล้ว",
+   "pearl": "TDT: pre-transfusion Hb 9.5–10.5 ด้วย leukocyte-reduced PRC — ไม่ใช่รอให้ต่ำแล้วค่อยเติม",
+   "ref": [
+    "โพย MED31 MCQ ข้อ 31 (พ่อแม่เป็น thalassemia → leukocyte depleted RBC)",
+    "โพย MED31 MCQ ข้อ 62 (ผู้ป่วยซีดให้อะไร: FFP, cryo …)",
+    "TIF Guidelines for the management of TDT, 4th ed (2021)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.4(1)",
+    "B2.2.1(2)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-22",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Iron chelation – deferiprone and agranulocytosis",
+   "stem": "A 25-year-old woman with transfusion-dependent beta-thalassaemia major has serum ferritin 2,600 ng/mL and takes deferiprone 75 mg/kg/day in three divided doses. She presents with fever 39 °C and a sore throat for 1 day. What is the most important immediate action?",
+   "choices": [
+    "Withhold deferiprone and check an urgent absolute neutrophil count",
+    "Continue deferiprone and prescribe oral amoxicillin for pharyngitis",
+    "Arrange audiometry and an eye examination for chelator toxicity",
+    "Increase deferiprone to 100 mg/kg/day because ferritin is high",
+    "Check serum ferritin and transfuse if Hb is low"
+   ],
+   "answer": 0,
+   "explain": "**กลไก/ทำไมต้องขับเหล็ก** — ร่างกาย **ไม่มีทางขับเหล็กส่วนเกิน** เลือด 1 ยูนิตมีเหล็ก ~200–250 mg → สะสมที่หัวใจ (cardiomyopathy — สาเหตุตายอันดับ 1), ตับ (cirrhosis), ต่อมไร้ท่อ (DM, hypogonadism, hypothyroid)\n\n**เมื่อไรเริ่ม**: TDT — **หลังให้เลือด 10–20 ยูนิต หรือ ferritin > 1,000 ng/mL** · NTDT — **ferritin ≥ 800 ng/mL หรือ LIC ≥ 5 mg Fe/g dw** (หยุดเมื่อ ferritin < 300 / LIC < 3)\n\n| ยา | วิธีให้ | พิษสำคัญ | ติดตาม |\n|---|---|---|---|\n| **Deferoxamine (DFO)** | SC/IV infusion 8–12 ชม. 5–7 คืน/สัปดาห์ | **ototoxicity, retinopathy**, growth, **Yersinia** | audiometry, ตา |\n| **Deferiprone (DFP)** | oral วันละ 3 ครั้ง | **agranulocytosis (~1%)**, neutropenia, arthropathy | **CBC/ANC ทุกสัปดาห์** |\n| **Deferasirox (DFX)** | oral วันละครั้ง | **ไตวาย/proteinuria**, ตับอักเสบ, GI bleed | Cr, UA, LFT ทุกเดือน |\n\nผู้ป่วยไข้ + เจ็บคอ ขณะกิน deferiprone = **agranulocytosis จนกว่าพิสูจน์ได้ว่าไม่ใช่** → หยุดยาทันที ตรวจ ANC ถ้า < 500 ให้จัดการแบบ **febrile neutropenia** (IV broad-spectrum antibiotics)\n\n**ทำไมตัวลวงผิด**\n- *ให้ amoxicillin แล้วกินยาต่อ* — อาจพลาด neutropenic sepsis\n- *audiometry/ตา* — พิษของ **deferoxamine**\n- *เพิ่มขนาด* — อันตรายถ้ามี agranulocytosis\n- *ตรวจ ferritin/ให้เลือด* — ไม่ใช่ปัญหาเร่งด่วน",
+   "pearl": "Deferiprone = ANC ทุกสัปดาห์, deferasirox = ไต/ตับ, deferoxamine = หู/ตา/Yersinia",
+   "ref": [
+    "TIF Guidelines for TDT 4th ed (2021) – iron overload and chelation",
+    "แนวทางเวชปฏิบัติโรคธาลัสซีเมีย (สมาคมโลหิตวิทยาแห่งประเทศไทย)",
+    "สไลด์ อ.คุณาภา Thalassemia management (9 พ.ย.)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.4(2)",
+    "2.3.3(2)"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-23",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Splenectomy in thalassaemia – infection risk",
+   "stem": "Which of the following patients is at the highest risk of developing severe, rapidly fatal bacterial infection?",
+   "choices": [
+    "A patient with thalassaemia who had splenectomy 1 month ago without any vaccination",
+    "A patient with HIV infection on antiretroviral therapy with CD4 count 700/microlitre",
+    "A patient with stage I Hodgkin lymphoma treated with radiotherapy alone",
+    "A patient with immune thrombocytopenia taking low-dose prednisolone",
+    "A patient with chronic myeloid leukaemia in remission on imatinib"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ม้ามเป็นทั้ง **ตัวกรองเลือดที่ไม่มีภูมิ (red pulp macrophage)** และแหล่ง **IgM memory B cell (marginal zone)** ที่จำเป็นต่อการกำจัด **แบคทีเรียที่มีแคปซูล** (*S. pneumoniae*, *H. influenzae* type b, *N. meningitidis*) และ *Capnocytophaga* (สุนัขกัด), malaria/babesia\n- ไม่มีม้าม → **overwhelming post-splenectomy infection (OPSI)**: ไข้ → septic shock + DIC ภายในชั่วโมง อัตราตาย 50%\n- **ผู้ป่วยธาลัสซีเมียหลังตัดม้ามเสี่ยงสูงกว่าคนทั่วไป** (iron overload ทำให้ภูมิบกพร่องเพิ่ม) โดยเฉพาะ **2–3 ปีแรก** และ **ไม่ได้ฉีดวัคซีน**\n\n**ข้อบ่งชี้ splenectomy ใน thal**: ต้องการเลือด > 200–220 mL/kg/ปี, hypersplenism (cytopenia), ม้ามโตมีอาการ/เสี่ยงแตก — **หลีกเลี่ยงก่อนอายุ 5 ปี**\n\n**ป้องกัน**: วัคซีน **pneumococcal (PCV + PPSV23), Hib, meningococcal (ACWY + B)** **≥ 2 สัปดาห์ก่อนผ่าตัด** (หรือ ≥ 2 สัปดาห์หลัง ถ้าฉุกเฉิน), influenza ทุกปี, ยาปฏิชีวนะป้องกัน/stand-by amoxicillin, ให้ความรู้มา รพ. ทันทีที่มีไข้\n\n**ผลอื่นหลังตัดม้าม**: Howell–Jolly body, thrombocytosis, **thrombosis**, pulmonary hypertension\n\n**ทำไมตัวลวงผิด** — CD4 700 ภูมิดี, Hodgkin stage I ฉายแสงอย่างเดียว, prednisolone ขนาดต่ำ และ imatinib ใน remission มีความเสี่ยงเพิ่มน้อย",
+   "pearl": "หลังตัดม้าม: วัคซีน pneumococcus/Hib/meningococcus ก่อนผ่าตัด ≥ 2 สัปดาห์ — ไข้ = ฉุกเฉิน",
+   "ref": [
+    "โพย MED31 (ข้อสอบพิมพ์) Which patients are highest risk of severe infection → thalassemia post splenectomy without vaccination",
+    "TIF Guidelines for TDT 4th ed (2021) – splenectomy"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "2.3.3-3(5)"
+   ],
+   "years": [
+    "31"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-24",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Non-transfusion-dependent thalassaemia – stop the iron, give folate",
+   "stem": "A 35-year-old Thai woman with known beta-thalassaemia/HbE (non-transfusion-dependent, baseline Hb 8 g/dL) has been given ferrous sulfate by a clinic for 6 months 'because she is anaemic'. Hb is unchanged at 8.1 g/dL, MCV 60 fL, serum ferritin 950 ng/mL. She is not pregnant. What is the most appropriate management?",
+   "choices": [
+    "Stop iron, continue folic acid, and assess liver iron (for example by MRI) to decide on chelation",
+    "Increase ferrous sulfate to three times daily because the anaemia has not improved",
+    "Switch to intravenous iron to bypass poor absorption",
+    "Start regular monthly transfusion to keep Hb above 12 g/dL",
+    "Add vitamin C to improve iron absorption"
+   ],
+   "answer": 0,
+   "explain": "**กลไก** — ใน thalassemia ซีดจาก **การสร้างสาย globin ไม่สมดุล + ineffective erythropoiesis** ไม่ใช่ขาดเหล็ก\n- Ineffective erythropoiesis หลั่ง **erythroferrone (ERFE)** → **กด hepcidin** → ลำไส้ดูดซึมเหล็กเพิ่มเอง **แม้ไม่ได้รับเลือด** → NTDT เกิด iron overload ได้ช้า ๆ (ferritin ใน NTDT มัก **ต่ำกว่า** ปริมาณเหล็กในตับจริง)\n- การให้เหล็กจึง **ไม่เพิ่ม Hb และเร่ง iron overload**\n- ไขกระดูกทำงานหนัก (erythroid hyperplasia) ใช้ **folate** มาก → ให้ **folic acid 1–5 mg/วัน**\n\n**NTDT chelation (TIF 2023)**: เริ่มเมื่อ **ferritin ≥ 800 ng/mL หรือ LIC ≥ 5 mg Fe/g** → รายนี้ 950 ถึงเกณฑ์ → ประเมิน LIC และพิจารณา **deferasirox**\n\n**ทำไมตัวลวงผิด**\n- *เพิ่มเหล็ก / IV iron / วิตามินซี* — เติมเหล็กเกินให้หนักขึ้น\n- *ให้เลือดสม่ำเสมอให้ Hb > 12* — NTDT ให้เลือดเฉพาะช่วงจำเป็น (ติดเชื้อ, ตั้งครรภ์, การเจริญเติบโตช้า, ภาวะแทรกซ้อน) และเป้าไม่ใช่ 12\n\n> บทเรียนจากโพย (MED30 โน้ต \"MCV ต่ำ: iron def หรือ thalassemia → thalassemia ให้ folate supplement\") — **ก่อนให้เหล็กในคนไทยที่ MCV ต่ำ ต้องแยก thal ก่อนเสมอ**",
+   "pearl": "ธาลัสซีเมีย (ที่ไม่ขาดเหล็ก) ห้ามให้เหล็ก — ให้ folic acid และเฝ้าระวัง iron overload",
+   "ref": [
+    "โพย MED30 โน้ตสรุป (MCV ต่ำ: iron def or thalassemia; thalassemia ให้ folate supplement)",
+    "โพย MED33 MCQ (vegetarian, thalassemia E trait)",
+    "TIF Guidelines for NTDT 3rd ed (2023)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3(8)",
+    "B2.4(2)",
+    "B2.2.1(2)"
+   ],
+   "years": [
+    "30",
+    "33"
+   ]
+  },
+  {
+   "id": "HE-AN-MCQ-25",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Pancytopenia – which diagnosis does not fit",
+   "stem": "A 30-year-old man has fatigue and gum bleeding. CBC shows Hb 6.8 g/dL, WBC 1,800/mm3 with relative lymphocytosis, platelets 15,000/mm3, and reticulocytes 0.3%. There is no hepatosplenomegaly or lymphadenopathy. Each of the following could explain this picture EXCEPT one. Which is the LEAST likely cause?",
+   "choices": [
+    "Chronic myeloid leukaemia in chronic phase",
+    "Aplastic anaemia",
+    "Acute myeloid leukaemia (aleukaemic presentation)",
+    "Severe vitamin B12 deficiency",
+    "Acute lymphoblastic leukaemia"
+   ],
+   "answer": 0,
+   "explain": "**กลไกของ pancytopenia** แบ่ง 3 กลุ่ม\n1. **ไขกระดูกสร้างไม่ได้ (hypocellular)** — **aplastic anemia** (ยา, ไวรัสตับอักเสบ, benzene, idiopathic/autoimmune T cell), PNH\n2. **ไขกระดูกถูกแทนที่/สร้างผิดปกติ** — **acute leukemia** (AML/ALL มาด้วย pancytopenia และไม่เห็น blast ในเลือดได้ = aleukemic), MDS, myelofibrosis, มะเร็งแพร่กระจาย, **megaloblastic anemia (B12/folate)** — ineffective hematopoiesis\n3. **ถูกทำลายรอบนอก** — hypersplenism, SLE\n\n**CML chronic phase** = MPN จาก **BCR-ABL1** → **เพิ่ม** การสร้าง: WBC สูงมาก (มักหลายหมื่น–แสน) เห็นทุก stage ของ granulocyte, basophilia, เกล็ดเลือดปกติ/สูง และ **ม้ามโตมาก** → **ไม่ทำให้ pancytopenia**\n\n**ภาพรายนี้เข้ากับ aplastic anemia มากที่สุด**: retic ต่ำมาก, relative lymphocytosis (ลด neutrophil เป็นหลัก), **ไม่มีตับม้ามต่อมน้ำเหลืองโต** → **bone marrow aspiration + biopsy** (hypocellular < 25% ไม่มี infiltration) รุนแรง (ANC < 500, plt < 20,000, retic < 60,000) → **HSCT ในคนอายุน้อยที่มี HLA-matched sibling** หรือ **ATG + cyclosporine (+ eltrombopag)** ให้เลือดแบบ leukoreduced/irradiated เท่าที่จำเป็น",
+   "pearl": "Pancytopenia: aplastic, acute leukemia, MDS, B12/folate, hypersplenism — CML (chronic phase) WBC สูงไม่ใช่ต่ำ",
+   "ref": [
+    "โพย MED30 MCQ ข้อ 89 (pancytopenia ไม่พบในอะไร: aplastic anemia, AML, ALL, CML → CML)",
+    "โพย MED32 MCQ ข้อ 70 (pancytopenia diff dx ยกเว้น: AML, ALL, CLL, cancer)",
+    "โพย MED32 MCQ ข้อ 62 (Hct Plt WBC ต่ำ relative lymphocytosis AA → bone marrow biopsy)",
+    "โพย MED34 MCQ ข้อ 49 (anemia thrombocytopenia → bone marrow)",
+    "BSH guideline – diagnosis and management of adult aplastic anaemia (2024)"
+   ],
+   "part": "MCQ",
+   "nl": [
+    "2.3.3-3(1)",
+    "B2.2.2-3(1)",
+    "2.1.56"
+   ],
+   "years": [
+    "30",
+    "32",
+    "34"
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "HE-AN-MEQ-01",
+   "part": "MEQ",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Microcytic anaemia with a family history – beta-thalassaemia/HbE: work-up, transfusion and chelation",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 24 ปี ภูมิลำเนา จ.ร้อยเอ็ด มาด้วย **เหนื่อยง่าย ซีดลงมา 2 เดือน**\n\nPI: ซีดและตัวเหลืองเล็กน้อยมาตั้งแต่เด็ก **เคยได้รับเลือด 3 ครั้งตอนเป็นไข้ (อายุ 8, 12 และ 19 ปี)** ไม่ได้รับเลือดประจำ · 2 เดือนก่อนเป็นไข้หวัด หลังจากนั้นเหนื่อยมากขึ้น · **คลินิกให้ยาเม็ดธาตุเหล็กกินมา 6 เดือน** แต่ไม่ดีขึ้น · ประจำเดือนปกติ ไม่มีถ่ายดำ\nFH: **น้องชายซีด ต้องให้เลือดทุกเดือน** · พ่อแม่สุขภาพดี\nSocial: แต่งงานแล้ว 1 ปี **วางแผนมีบุตร**\n\nV/S: BT 37.0 °C, PR 104/min, BP 112/68 mmHg, RR 20/min\nPE: **moderately pale, mild icteric sclera** · **thalassemic facies (frontal bossing, maxillary prominence)** · **liver 2 cm, spleen 6 cm below costal margin** · ไม่มีต่อมน้ำเหลืองโต · systolic ejection murmur grade 2/6",
+   "questions": [
+    {
+     "q": "1. จงให้ problem list และ differential diagnosis ที่เป็นไปได้มากที่สุด 3 โรค พร้อมเหตุผลสั้น ๆ",
+     "a": "**Problem list**\n1. Chronic anemia with **mild jaundice and hepatosplenomegaly** ตั้งแต่เด็ก (chronic hemolytic anemia) — อาการซีดเพิ่มหลังไข้\n2. **Thalassemic facies** (ไขกระดูกขยายตัว)\n3. **Family history** น้องชายเป็นโรคเลือดต้องให้เลือดประจำ\n4. **ได้รับ oral iron 6 เดือนไม่ดีขึ้น** (เสี่ยง iron overload)\n5. วางแผนมีบุตร → ต้องให้คำปรึกษาทางพันธุกรรม\n\n**Differential diagnosis**\n1. **β-thalassemia/HbE disease (NTDT)** — พบบ่อยที่สุดในภาคอีสาน, ซีดปานกลาง + เหลือง + ตับม้ามโต + facies, ให้เลือดเป็นครั้งคราวช่วงติดเชื้อ\n2. **HbH disease (α-thal 1/α-thal 2 หรือ HbH–Constant Spring)** — ซีดปานกลาง เหลือง ม้ามโต และ hemolytic crisis เมื่อมีไข้\n3. **Homozygous β-thalassemia (intermedia)** หรือ **β-thal trait ร่วมกับ IDA** (น้อยกว่า)\n\n(IDA อย่างเดียวไม่อธิบายตัวเหลือง ม้ามโต และ facies)"
+    },
+    {
+     "q": "2. ผลตรวจ: Hb 6.4 g/dL, Hct 21%, MCV 61 fL, MCH 19 pg, RBC 3.4 ล้าน/µL, RDW 28%, WBC 8,200 (NRBC 12/100 WBC), Plt 250,000, reticulocyte 6% · indirect bilirubin 2.6 mg/dL, LDH 520 U/L. จงคำนวณ Mentzer index และแปลผล พร้อมบอกการตรวจเพิ่มเติม 3 อย่างที่จะยืนยันการวินิจฉัย",
+     "a": "**Mentzer index = MCV ÷ RBC = 61 ÷ 3.4 = 17.9**\n- ค่า > 13 ปกติชี้ไปทาง IDA **แต่ Mentzer ใช้แยก trait (ภาวะแฝง) จาก IDA เท่านั้น** ใช้ไม่ได้ในโรค thalassemia ที่มีอาการ (RBC ต่ำเพราะ hemolysis และ RDW กว้างจาก poikilocytosis รุนแรง)\n- ภาพรวม: microcytic hypochromic + **retic 6% (RPI ≈ 6 × 21/45 ÷ 2 ≈ 1.4 — ต่ำเกินเทียบ Hb จาก ineffective erythropoiesis)** + NRBC + indirect bilirubin/LDH สูง = **hemolysis ร่วมกับ ineffective erythropoiesis** ตรงกับ thalassemia disease\n\n**การตรวจยืนยัน**\n1. **Hemoglobin typing (HPLC/capillary electrophoresis)** — β-thal/HbE: **EF** (HbE 40–60% + HbF 30–60%, ไม่มี HbA) · HbH: A2A + H + Bart's\n2. **Peripheral blood smear** — hypochromic microcytic, marked aniso-poikilocytosis, **target cells**, NRBC, basophilic stippling (± inclusion body ด้วย brilliant cresyl blue ถ้าสงสัย HbH)\n3. **Serum ferritin/TSAT** — ประเมิน iron overload (และตัดการขาดเหล็กร่วม)\n4. (เพิ่มได้) **DNA analysis** — β-globin mutation/α-thal deletion เพื่อใช้วางแผนครอบครัว, ตรวจพ่อแม่/น้อง"
+    },
+    {
+     "q": "3. Hb typing: EF (HbE 55%, HbF 45%), ferritin 1,250 ng/mL, ALT 58 U/L. จงให้การวินิจฉัยสมบูรณ์ และอธิบายว่าผู้ป่วยเป็น TDT หรือ NTDT และจะดูแลการให้เลือดอย่างไร",
+     "a": "**Diagnosis**: **β-thalassemia/HbE disease, non-transfusion-dependent (NTDT)** with **acute exacerbation of anemia after infection** and **secondary iron overload** (จากการดูดซึมเหล็กเพิ่ม + ได้รับ oral iron โดยไม่จำเป็น)\n\n**NTDT** เพราะ Hb พื้นฐานพอดำรงชีวิตได้ ให้เลือดเพียงเป็นครั้งคราว (ไม่ใช่ทุก 2–5 สัปดาห์ตลอด)\n\n**การให้เลือด**\n- ตอนนี้ Hb 6.4 มีอาการ (เหนื่อย PR 104) → ให้ **leukocyte-reduced PRC 10–15 mL/kg** (ABO/Rh และควร match C, E, Kell)\n- NTDT ให้เลือด **เฉพาะช่วง**: ติดเชื้อ/hemolytic crisis, ตั้งครรภ์, ผ่าตัด, เด็กโตช้า, ภาวะแทรกซ้อน (EMH mass, pulmonary hypertension, แผลที่ขา, thrombosis)\n- **ถ้า Hb พื้นฐานลดลงเรื่อย ๆ หรือมีภาวะแทรกซ้อน** อาจเปลี่ยนเป็น regular transfusion แบบ TDT (เป้า pre-transfusion Hb 9.5–10.5)\n- **หยุด oral iron ทันที** และให้ **folic acid 5 mg/วัน**"
+    },
+    {
+     "q": "4. จงบอกข้อบ่งชี้ในการเริ่มยาขับเหล็กของผู้ป่วยรายนี้ ยาที่เลือก ขนาด และสิ่งที่ต้องติดตาม",
+     "a": "**ข้อบ่งชี้ (TIF NTDT 2023)**: **ferritin ≥ 800 ng/mL** หรือ **LIC ≥ 5 mg Fe/g dw (MRI T2*)** → รายนี้ ferritin 1,250 → **เริ่ม chelation** (หยุดเมื่อ ferritin < 300 หรือ LIC < 3)\n\n**ยาที่เลือก**: **Deferasirox** (หลักฐานดีที่สุดใน NTDT – THALASSA trial)\n- film-coated tablet **7–14 mg/kg/วัน วันละครั้ง** (dispersible ~10–20 mg/kg) ปรับตาม ferritin/LIC\n\n**ติดตาม**\n- **Serum creatinine, urine protein** (ก่อนเริ่ม แล้วทุกเดือน) — nephrotoxicity, Fanconi\n- **LFT ทุกเดือน** (ALT สูงอยู่แล้ว ต้องระวัง) — hepatotoxicity\n- อาการ GI bleed, ผื่น, audiometry/ตรวจตาปีละครั้ง\n- Ferritin ทุก 3 เดือน, MRI LIC ปีละครั้ง, cardiac T2* ถ้าทำได้\n\n**ทางเลือก**: deferiprone (ต้องตรวจ **ANC ทุกสัปดาห์** — agranulocytosis), deferoxamine SC (ototoxicity, retinopathy, Yersinia)"
+    },
+    {
+     "q": "5. ผู้ป่วยถามว่า \"ถ้าจะมีลูก ลูกจะเป็นแบบหนูหรือแบบน้องชายไหม\" สามีตรวจคัดกรองแล้ว OF test บวก, DCIP ลบ, Hb typing A2A HbA2 5.2%. จงอธิบายความเสี่ยงและให้คำแนะนำ",
+     "a": "**แปลผลสามี**: HbA2 5.2% (≥ 3.5–4%) = **β-thalassemia trait**\n\n**ความเสี่ยงของลูก** (ภรรยามียีน β⁰/β ที่ผิดปกติ 1 ยีน และ βE 1 ยีน — ส่งให้ลูกแน่นอน 1 ตัว; สามีส่ง β-thal 50% หรือ β ปกติ 50%)\n| ลูกได้จากแม่ | ลูกได้จากพ่อ | ผล | โอกาส |\n|---|---|---|---|\n| β-thal | β-thal | **Homozygous β-thal (major)** | **25%** |\n| βE | β-thal | **β-thal/HbE disease** | **25%** |\n| β-thal | ปกติ | β-thal trait | 25% |\n| βE | ปกติ | HbE trait | 25% |\n\n→ **โอกาสลูกเป็นโรครุนแรง 50%** ทุกการตั้งครรภ์ (β-thal major หรือ β/E ที่อาจรุนแรงแบบน้องชาย)\n\n**คำแนะนำ**\n- อธิบายเป็นภาษาเข้าใจง่าย ไม่ชี้นำการตัดสินใจ (non-directive counselling)\n- ทางเลือก: **prenatal diagnosis** (CVS 10–12 สัปดาห์ หรือ amniocentesis 16–18 สัปดาห์ ตรวจ DNA) และยุติการตั้งครรภ์ถ้าเป็นโรครุนแรง · **PGT-M (IVF ตรวจตัวอ่อน)** · รับบุตรบุญธรรม\n- **ผู้ป่วยตั้งครรภ์ได้** แต่ต้องดูแลแบบครรภ์เสี่ยงสูง: ประเมินหัวใจ/ตับ/ต่อมไร้ท่อก่อน, **หยุด deferasirox ระหว่างตั้งครรภ์**, ให้เลือดตามความจำเป็น (เป้า Hb > 9–10), folic acid ต่อ, เฝ้าระวัง thrombosis"
+    }
+   ],
+   "ref": [
+    "TIF Guidelines for NTDT 3rd ed (2023)",
+    "TIF Guidelines for TDT 4th ed (2021)",
+    "แนวทางเวชปฏิบัติโรคธาลัสซีเมีย (สมาคมโลหิตวิทยาแห่งประเทศไทย)",
+    "โพย MED34 MCQ Hemato ข้อ 3 (ซีดทั้งครอบครัว target cell → Hb typing)",
+    "โพย MED32 MCQ ข้อ 35, MED31 ข้อ 11, MED28 ข้อ 81 (β-thal trait × HbE trait – ความเสี่ยงของลูก)",
+    "สไลด์ อ.คุณาภา Thalassemia (9 พ.ย.)"
+   ],
+   "nl": [
+    "2.3.3(8)",
+    "B2.2.1(1)",
+    "B2.2.1(2)",
+    "B2.3(4)",
+    "B2.4(2)",
+    "2.1.56"
+   ],
+   "years": [
+    "28",
+    "31",
+    "32",
+    "34"
+   ]
+  },
+  {
+   "id": "HE-AN-MEQ-02",
+   "part": "MEQ",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "Acute haemolysis after an oxidant drug – G6PD deficiency",
+   "vignette": "ผู้ป่วยชายไทยอายุ 28 ปี อาชีพทหารพราน ประจำการชายแดน จ.ตาก มาห้องฉุกเฉินด้วย **ปัสสาวะสีดำเหมือนน้ำโค้ก 1 วัน ร่วมกับตาเหลือง อ่อนเพลีย หอบเหนื่อย**\n\nPI: 1 สัปดาห์ก่อนได้รับการวินิจฉัย *P. vivax* malaria จากหน่วยมาลาเรีย ได้ **chloroquine 3 วัน** หายไข้ · **4 วันก่อนเริ่ม primaquine 30 mg/วัน** (ไม่ได้ตรวจ G6PD) · 2 วันก่อนปวดหลัง ปัสสาวะเริ่มสีเข้ม\nPH: เคยตัวเหลืองตอนแรกเกิด ต้องส่องไฟ · **น้าชาย (พี่ชายของแม่) เคยปัสสาวะดำหลังกินยา**\n\nV/S: BT 37.4 °C, PR 118/min, BP 104/64 mmHg, RR 24/min, SpO2 96%\nPE: **markedly pale, jaundice** · ไม่มีตับม้ามโต · ไม่มีจุดเลือดออก",
+   "questions": [
+    {
+     "q": "1. จงบอก provisional diagnosis และกลไกการเกิดโรคโดยสังเขป",
+     "a": "**Provisional diagnosis**: **Acute intravascular hemolysis from G6PD deficiency precipitated by primaquine** (in a patient with recently treated *P. vivax* malaria)\n\n**กลไก**\n- G6PD → สร้าง **NADPH** → รีดิวซ์ glutathione ปกป้อง Hb จาก oxidant; เม็ดเลือดแดงพึ่งทางนี้ทางเดียว\n- Primaquine สร้าง ROS → Hb ถูก oxidize → ตกตะกอนเป็น **Heinz body** → เยื่อหุ้มเสียหาย → **แตกในหลอดเลือด (hemoglobinuria)** และ macrophage ในม้ามตัด (bite cell)\n- **X-linked recessive** → ชายแสดงอาการ, ประวัติ **น้าชายฝั่งแม่** และตัวเหลืองแรกเกิดสนับสนุน\n- ชายไทยขาด G6PD ~3–18%"
+    },
+    {
+     "q": "2. จงส่งตรวจทางห้องปฏิบัติการ 5 อย่างที่จำเป็นในห้องฉุกเฉิน พร้อมผลที่คาดว่าจะพบ",
+     "a": "1. **CBC + reticulocyte** — Hb ลดลงเฉียบพลัน (normocytic), **retic สูง** (หลัง 3–5 วัน), อาจ WBC สูง\n2. **PBS** — **bite cells, blister cells (hemighost), irregularly contracted cells**, polychromasia, ± NRBC; ตรวจหา **malaria parasite** ซ้ำ (thick/thin film)\n3. **Hemolysis markers** — **LDH ↑, indirect bilirubin ↑, haptoglobin ↓↓**\n4. **Urinalysis** — dipstick **blood บวก แต่ RBC 0–2/HPF = hemoglobinuria**\n5. **BUN/Creatinine, electrolytes (K)** — เสี่ยง **AKI จาก pigment nephropathy** และ hyperkalemia\n6. (เพิ่มได้) **Supravital stain หา Heinz body**, **DAT** (ควรลบ — แยก immune hemolysis), group & match"
+    },
+    {
+     "q": "3. แพทย์ส่งตรวจ G6PD (fluorescent spot test) ในวันนี้ ได้ผลว่า \"ปกติ (normal fluorescence)\" จงอธิบายผลนี้ และจะวางแผนอย่างไร",
+     "a": "**ผลปกติลวง (false-normal) ช่วง acute hemolysis**\n- เม็ดเลือดแดง **ตัวแก่** ซึ่ง G6PD ต่ำที่สุดถูกทำลายไปแล้ว\n- ไขกระดูกปล่อย **reticulocyte/เม็ดเลือดแดงอายุน้อย** ที่มี G6PD activity สูงกว่าออกมาแทน → เอนไซม์รวมดูปกติ (โดยเฉพาะชนิด Viangchan/A– ที่ขาดไม่มาก)\n\n**แผน**\n- **ห้ามตัดสินว่าไม่ขาด G6PD** ทางคลินิกถือว่าขาดจนกว่าพิสูจน์ได้\n- **ตรวจซ้ำหลัง hemolysis หาย 2–3 เดือน** (หรือตรวจ quantitative assay เทียบกับ retic count/ตรวจแม่ หรือ DNA mutation ซึ่งไม่ขึ้นกับ retic)"
+    },
+    {
+     "q": "4. จงให้การรักษาในห้องฉุกเฉินและระหว่างนอนโรงพยาบาล",
+     "a": "1. **หยุด primaquine ทันที** และหลีกเลี่ยงยา oxidant อื่น\n2. **IV fluid** — 0.9% NSS ให้ urine output ≥ 1–1.5 mL/kg/hr ป้องกัน pigment nephropathy; ติดตาม I/O, Cr, K\n3. **Packed red cell transfusion** ถ้า Hb < 7 g/dL หรือมีอาการ (หอบ, ใจสั่น, hemodynamic instability) — ผู้ป่วยรายนี้หอบและ PR 118 → พิจารณาให้\n4. **Folic acid** 5 mg/วัน (ไขกระดูกสร้างเร็ว)\n5. รักษา AKI/hyperkalemia ถ้ามี (dialysis ถ้าจำเป็น)\n6. **ไม่ต้องให้ steroid** (ไม่ใช่ immune hemolysis)\n7. Hemolysis มัก **self-limited** ใน 1 สัปดาห์ (ชนิด A–/Viangchan) เพราะเหลือเซลล์อายุน้อยที่ทนได้"
+    },
+    {
+     "q": "5. จะให้ radical cure ของ P. vivax อย่างไรต่อ และจงให้คำแนะนำผู้ป่วยก่อนกลับบ้าน (ยา/อาหารที่ต้องหลีกเลี่ยง อย่างน้อย 5 อย่าง)",
+     "a": "**Radical cure** — hypnozoite ยังอยู่ ยังต้องการ 8-aminoquinoline\n- เมื่อหาย hemolysis แล้ว ให้ **primaquine 0.75 mg/kg สัปดาห์ละครั้ง × 8 สัปดาห์** ภายใต้การติดตาม Hb และสีปัสสาวะ (ตามแนวทาง WHO/กรมควบคุมโรค) — **ห้าม tafenoquine** (G6PD < 70%)\n\n**คำแนะนำ**\n- อธิบายว่าเป็นโรคพันธุกรรม **ขาดเอนไซม์ G6PD ถ่ายทอดทางโครโมโซม X** · พกบัตรประจำตัวผู้ป่วย แจ้งแพทย์/เภสัชกรทุกครั้ง\n- **ยาที่ต้องหลีกเลี่ยง**: primaquine/tafenoquine (ยกเว้นตามแผนแพทย์), **dapsone, sulfonamide (co-trimoxazole), nitrofurantoin, rasburicase, methylene blue**, quinolone บางตัว, ยาสมุนไพรบางชนิด (ใช้ด้วยความระมัดระวัง: high-dose vitamin C, naphthalene/ลูกเหม็น)\n- **อาหาร**: **ถั่วปากอ้า (fava bean)**\n- **ภาวะกระตุ้น**: ติดเชื้อ, DKA — ถ้ามีไข้แล้วปัสสาวะสีเข้ม/ตาเหลือง ให้มา รพ. ทันที\n- **พันธุกรรม**: ลูกสาวทุกคนจะเป็นพาหะ ลูกชายไม่เป็น; พี่น้องชายและญาติฝ่ายแม่ควรตรวจ"
+    }
+   ],
+   "ref": [
+    "โพย MED32 MEQ (ปัสสาวะสีโค้กทั้งวัน → intravascular hemolysis, ส่ง G6PD level/PBS; ไปเข้าป่า เป็นมาลาเรีย)",
+    "โพย MED30 MCQ ข้อ 40 และ MED35 MCQ ข้อ 69 (P. vivax → chloroquine + primaquine)",
+    "WHO Guidelines for malaria (2024)",
+    "แนวทางเวชปฏิบัติการรักษาโรคมาลาเรียในประเทศไทย (กรมควบคุมโรค)",
+    "สไลด์ อ.คุณาภา G6PD deficiency (9 พ.ย.)"
+   ],
+   "nl": [
+    "2.3.3(3)",
+    "B2.2.1(3)",
+    "B2.3(5)",
+    "2.1.13",
+    "2.1.43"
+   ],
+   "years": [
+    "30",
+    "32",
+    "35"
+   ]
+  },
+  {
+   "id": "HE-AN-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "H07",
+   "lecture": "Anemia / Nutritional deficiency anemia / G6PD / Thalassemia (AL) (อ.คุณาภา)",
+   "topic": "SAQ – PBS ของผู้ป่วยซีดเหลืองตั้งแต่เด็ก: thalassaemia blood picture",
+   "station": "SAQ (เขียนตอบ) 5 นาที",
+   "note_img": "โพย MED34 SAQ ข้อ 3 และ MED29 SAQ ให้ภาพ PBS จริง (MED29: 'PBS บรรยาย target cell thrombocytopenia ani poiki Dx 3 โรค') — ข้อนี้บรรยายภาพเป็นข้อความแทน: สไลด์ Wright stain กำลังขยาย 100x เห็นเม็ดเลือดแดงเล็กกว่านิวเคลียสของ small lymphocyte ติดสีจางมาก ขนาดและรูปร่างต่างกันมาก มี target cell จำนวนมาก, เซลล์รูปหยดน้ำและเศษเม็ดเลือดแดง, เม็ดเลือดแดงมีนิวเคลียส 2–3 ตัวต่อ field, บางเซลล์มีจุดน้ำเงินกระจายในเซลล์ (basophilic stippling); เม็ดเลือดขาวรูปร่างปกติ; เกล็ดเลือด 10–15 ตัว/oil field",
+   "instruction": "หญิงไทยอายุ 18 ปี ภูมิลำเนา จ.ขอนแก่น ซีดและตัวเหลืองเล็กน้อยตั้งแต่เด็ก ม้ามโต 5 cm · Hb 7.2 g/dL, MCV 60 fL, MCH 19 pg, RDW 30%\n\nPBS (Wright stain, oil immersion): **เม็ดเลือดแดงเล็กกว่านิวเคลียสของ small lymphocyte ติดสีจาง มีขนาดและรูปร่างแตกต่างกันมาก พบเซลล์รูปเป้ายิงธนูจำนวนมาก, เซลล์รูปหยดน้ำ, เศษเม็ดเลือดแดงบางส่วน, เม็ดเลือดแดงมีนิวเคลียส 2–3 ตัวต่อ field และจุดสีน้ำเงินเล็ก ๆ กระจายในเม็ดเลือดแดงบางเซลล์** · เม็ดเลือดขาวรูปร่างปกติ · เกล็ดเลือด 10–15/oil field\n\n**คำถาม**\n1. จงบรรยาย PBS ให้ครบทั้ง 3 series โดยใช้ศัพท์ทางการแพทย์ (2 คะแนน)\n2. จงให้การวินิจฉัยแยกโรค 2 โรค (1 คะแนน)\n3. จงส่งตรวจเพิ่มเติม 2 อย่าง พร้อมเหตุผล (2 คะแนน)",
+   "answer": "**1. บรรยาย PBS**\n- **Adequacy**: adequate area for examination\n- **RBC**: **hypochromic microcytic RBC** · **anisocytosis 3+, poikilocytosis 3+** · **target cells 2–3+** · teardrop cells 1+ · **fragmented RBC (schistocyte) 1+** · **basophilic stippling 1+** · **nucleated RBC 2–3/oil field** (หรือรายงานเป็น NRBC/100 WBC) · ± polychromasia\n- **WBC**: normal number and morphology, neutrophil predominate, no blast\n- **Platelet**: adequate (10–15/oil field ≈ 200,000–300,000/µL), normal morphology\n\n**คำศัพท์ที่ต้องรู้ (ใช้ได้ทุกข้อสอบ PBS)**\n| เซลล์ | ความหมายที่สำคัญ |\n|---|---|\n| **Target cell** | เยื่อหุ้มมากเกินเทียบ Hb → **thalassemia, HbE**, โรคตับ, หลังตัดม้าม |\n| **Spherocyte** | เสียเยื่อหุ้ม → **HS, warm AIHA** |\n| **Schistocyte** | ถูกตัดในหลอดเลือด → **MAHA (DIC, TTP, HUS)**, ลิ้นหัวใจเทียม |\n| **Teardrop** | ถูกบีบออกจากไขกระดูกที่ผิดปกติ → **myelofibrosis, marrow infiltration**, thal |\n| **Basophilic stippling** | ribosome ค้าง → **ตะกั่ว**, thalassemia, sideroblastic |\n| **Hypersegmented neutrophil** | **B12/folate deficiency** |\n| **Howell–Jolly body** | DNA ค้าง → **asplenia/หลังตัดม้าม** |\n| **Bite/blister cell** | **G6PD deficiency** |\n| **Pencil cell** | **IDA** |\n\n**2. DDx (thalassemia blood picture)**\n1. **β-thalassemia/HbE disease**\n2. **HbH disease** (หรือ homozygous β-thalassemia)\n\n(IDA อย่างเดียวไม่อธิบาย NRBC, target cell จำนวนมาก, ตัวเหลืองและม้ามโต)\n\n**3. ส่งตรวจเพิ่ม**\n1. **Hemoglobin typing (HPLC/electrophoresis)** — ยืนยันชนิด: **EF** = β/HbE · **A2A + H + Bart's** = HbH · **F (± A2)** = homozygous β-thal\n2. **Serum ferritin (± TSAT)** — ประเมิน iron overload (ซึ่งพบได้แม้ไม่ได้รับเลือด) และตัด IDA ร่วม\n3. (ทางเลือก) **Inclusion body stain (brilliant cresyl blue)** — หา HbH golf-ball inclusion · reticulocyte count · DNA analysis เพื่อ counselling ครอบครัว",
+   "ref": [
+    "โพย MED34 SAQ ข้อ 3 (PBS – บรรยาย & DDx 2 diseases & 2 investigation plan)",
+    "โพย MED29 SAQ (PBS บรรยาย target cell, aniso-poikilo, Dx 3 โรค)",
+    "โพย MED33 SAQ spot diagnosis (beta thalassemia major, basophilic stippling)",
+    "สไลด์ อ.คุณาภา Blood smear reading session (9 พ.ย.)"
+   ],
+   "nl": [
+    "3.1.2",
+    "B2.3(2)",
+    "2.3.3(8)",
+    "B2.3(4)"
+   ],
+   "years": [
+    "29",
+    "33",
+    "34"
+   ]
+  }
+ ]
+}
