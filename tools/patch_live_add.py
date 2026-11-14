@@ -69,6 +69,36 @@ def main(src, out, spec_path):
                     s[part].append(q)
                     have[q["id"]] = len(s[part]) - 1
                 added[ent["set"]] = added.get(ent["set"], 0) + 1
+    # ข้อสอบเก่าจากโพย: แต่ละข้อมี set + lec → ใส่ในกลุ่ม old ของคาบนั้น (ไม่มีกลุ่ม = สร้างใหม่)
+    names = {}
+    for s, v in bank.items():
+        for part in ("mcq", "meq"):
+            for q in v[part]:
+                names.setdefault((s, q.get("lec")), q.get("lecture", ""))
+        for g in v["old"]:
+            names.setdefault((s, g["lec"]), g.get("lecture", ""))
+    for path in spec.get("old", []):
+        for q in json.load(open(path, encoding="utf-8")):
+            q = dict(q)
+            s, lec = q.pop("set"), q["lec"]
+            q.pop("from_held", None)
+            pic = q.pop("img", None)
+            if pic:
+                q["note"] = q["note"].rstrip() + "\n\n🖼 ข้อนี้ในโพยเป็นภาพ: " + pic
+            q["lecture"] = names.get((s, lec), "")
+            q = shuffle(q)
+            groups = bank[s]["old"]
+            g = next((g for g in groups if g["lec"] == lec), None)
+            if g is None:
+                g = {"lec": lec, "lecture": q["lecture"],
+                     "count_note": "เรียบเรียงจากโพย MED28–MED35 เป็นตัวเลือก 5 ข้อพร้อมเฉลย", "items": []}
+                groups.append(g)
+            ids = {x.get("id"): i for i, x in enumerate(g["items"])}
+            if q["id"] in ids:
+                g["items"][ids[q["id"]]] = q
+            else:
+                g["items"].append(q)
+            added[s + ":old"] = added.get(s + ":old", 0) + 1
     html = html[:m.start(2)] + js_json(bank) + html[m.end(2):]
 
     m = re.search(r'var LEC = (\{.*?\});', html, re.S)
