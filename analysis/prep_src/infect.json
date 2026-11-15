@@ -1,0 +1,416 @@
+{
+ "one_per_theme": [
+  {
+   "theme": "Sepsis: วินิจฉัยจากอาการและ vital signs",
+   "id": "ID-OLDP-001",
+   "related": "- **Sepsis-3 (2016)**: sepsis = การติดเชื้อ + organ dysfunction ที่คุกคามชีวิต วัดด้วย **SOFA เพิ่มขึ้น ≥2** จาก baseline ไม่ใช้ SIRS แล้ว และเลิกใช้คำว่า severe sepsis\n- **Septic shock** = ต้องใช้ vasopressor เพื่อคง **MAP ≥65 mmHg** และ **lactate >2 mmol/L** ทั้งที่ให้สารน้ำพอแล้ว\n- **qSOFA** (RR ≥22, SBP ≤100, สติเปลี่ยน) ใช้บอกความเสี่ยงตาย ไม่ใช่เกณฑ์วินิจฉัย และ SSC 2021 ไม่แนะนำให้ใช้คัดกรองเดี่ยวๆ\n- Bundle ชั่วโมงแรก: วัด lactate, **hemoculture 2 ชุดก่อนให้ยา**, antibiotic ภายใน 1 ชม. เมื่อสงสัย shock, **crystalloid 30 mL/kg** เมื่อ hypotension หรือ lactate ≥4\n- **Norepinephrine** เป็น vasopressor ตัวแรก ใช้ balanced crystalloid ดีกว่า NSS ปริมาณมาก เติม **hydrocortisone** เมื่อยังต้องใช้ vasopressor ต่อเนื่อง\n- Bacteremia คือมีเชื้อในเลือด ไม่ใช่ระดับความรุนแรง; UTI ที่เชื้อขึ้นในเลือดแล้วไม่ดีขึ้นใน 48–72 ชม. ต้องหา obstruction หรือ abscess ด้วย ultrasound ไต",
+   "fix": "ข้อนี้ตอบ Sepsis ตามกรอบ Sepsis-1/2 (SIRS + infection) ตาม Sepsis-3 ผู้ป่วยไม่มี organ dysfunction (BP, SpO2, สติปกติ) จึงเป็น bacteremic pyelonephritis ที่ยังไม่เข้าเกณฑ์ sepsis"
+  },
+  {
+   "theme": "Pharyngitis: strep vs viral, แพ้ penicillin → erythromycin, diphtheria",
+   "id": "PP35-INF-058",
+   "related": "- **Centor/McIsaac**: ไข้ >38°C, tonsillar exudate, tender anterior cervical LN, ไม่ไอ (+1 ถ้าอายุ 3–14 ปี, −1 ถ้า ≥45 ปี) คะแนนต่ำไม่ต้องตรวจและไม่ต้องให้ยา คะแนนกลางให้ตรวจ rapid antigen test หรือ culture\n- GAS: **penicillin V หรือ amoxicillin 10 วัน** หรือ **benzathine penicillin G IM ครั้งเดียว** ให้เพื่อป้องกัน **acute rheumatic fever** แต่ไม่ป้องกัน post-streptococcal GN\n- แพ้ penicillin แบบไม่รุนแรงใช้ cephalexin ได้ แพ้แบบ anaphylaxis ใช้ **macrolide (erythromycin, azithromycin) หรือ clindamycin**\n- **Diphtheria**: pseudomembrane สีเทาติดแน่น ขูดแล้วเลือดออก คอบวม (bull neck) รักษาด้วย **diphtheria antitoxin ทันทีไม่ต้องรอผล** + erythromycin หรือ penicillin, droplet isolation, เฝ้าระวัง myocarditis และ neuropathy\n- **Infectious mononucleosis (EBV)**: exudative pharyngitis + posterior cervical LN + ม้ามโต + atypical lymphocyte ถ้าได้ amoxicillin จะเกิดผื่น maculopapular\n- ภาวะแทรกซ้อนที่ต้องส่งต่อ: **peritonsillar abscess** (trismus, uvula เบี้ยว, เสียงอู้อี้) และ **Lemierre syndrome** (Fusobacterium, septic thrombophlebitis ของ internal jugular vein)"
+  },
+  {
+   "theme": "Nocardia vs Actinomyces: branching filament, modified AFB, การรักษา",
+   "id": "ID-OLDP-006",
+   "related": "- **Nocardia**: aerobic, gram-positive branching beaded filament, **modified AFB (Kinyoun) ติดบางส่วน** อยู่ในดิน ติดทางหายใจ พบในคนภูมิต่ำ (HIV, steroid, transplant)\n- Nocardia ชอบไป **ปอด (nodule, cavity) และสมอง (brain abscess)** จึงควรทำ imaging สมองทุกรายที่พบในปอด\n- รักษา Nocardia: **TMP-SMX ขนาดสูง** รายรุนแรงหรือ CNS ให้ร่วมกับ imipenem ± amikacin นาน 6–12 เดือนขึ้นไป\n- **Actinomyces israelii**: anaerobe ในช่องปาก **modified AFB ลบ** มี **sulfur granules** เป็นก้อนแข็งมี sinus tract ทะลุข้าม fascial plane (cervicofacial หลังทำฟัน, thoracic, pelvic จาก IUD)\n- รักษา Actinomyces: **penicillin G หรือ amoxicillin นานหลายเดือน** ร่วมกับระบายหนอง ทางเลือกในผู้แพ้คือ doxycycline, macrolide, clindamycin (ข้อเก่าที่เฉลย azithromycin ใช้ได้แค่เป็นทางเลือก)\n- แยก M. tuberculosis: แท่งตรงไม่แตกแขนง ติด Ziehl–Neelsen เต็มที่; Rhodococcus equi เป็น coccobacilli พบใน HIV ที่สัมผัสม้า"
+  },
+  {
+   "theme": "Chancroid/painful genital ulcer: เลือกยา azithromycin",
+   "id": "ID-OLDP-005",
+   "related": "- แผลอวัยวะเพศแยกด้วยอาการเจ็บและต่อมน้ำเหลือง: **chancroid** เจ็บ ขอบ undermined ก้นมีหนอง + bubo กดเจ็บอาจแตก; **primary syphilis** ไม่เจ็บ ขอบแข็ง ก้นสะอาด\n- **HSV** = ตุ่มน้ำเป็นกลุ่มแตกเป็นแผลตื้นหลายแผล เจ็บมาก; **LGV** (C. trachomatis L1–L3) = แผลเล็กหายเร็ว ตามด้วย inguinal LN โต (groove sign)\n- H. ducreyi เป็น gram-negative coccobacilli เรียงแบบ school of fish การวินิจฉัยส่วนใหญ่ทางคลินิกหลังตัด syphilis และ HSV\n- รักษา chancroid: **azithromycin 1 g ครั้งเดียว** หรือ **ceftriaxone 250 mg IM ครั้งเดียว** ทางเลือก ciprofloxacin 3 วัน หรือ erythromycin 7 วัน\n- Bubo ที่เป็นหนองให้เจาะดูดหรือ incision and drainage; ผู้ติดเชื้อ HIV ตอบสนองช้า ต้องนัดดูแผลใน 3–7 วัน\n- ทุกรายที่มี genital ulcer ต้องตรวจ **HIV และ syphilis serology** และรักษาคู่นอนที่สัมผัสในช่วง 10 วันก่อนมีอาการ"
+  },
+  {
+   "theme": "COVID-19 infection control: การแพร่เชื้อ, PPE, หน้ากาก",
+   "id": "ID-OLDP-008",
+   "related": "- ปัจจุบัน WHO และ CDC ถือว่า SARS-CoV-2 แพร่ทาง **respiratory particles/aerosol (airborne)** เป็นหลัก ร่วมกับ droplet และ contact\n- ตรวจผู้ป่วยสงสัยทั่วไป: medical mask หรือ N95 ตามนโยบาย + **eye protection** + gown + gloves; **aerosol-generating procedure** (intubation, suction, nebulizer, CPR) ต้องใช้ **N95 ที่ผ่าน fit test** และห้อง negative pressure\n- ลำดับ **ใส่ PPE**: hand hygiene → gown → mask/N95 → goggles/face shield → gloves; ลำดับ **ถอด**: gloves → gown → hand hygiene → face shield → mask → hand hygiene\n- ประสิทธิภาพการกรอง: N95 > medical mask > หน้ากากผ้า หน้ากากผ้าช่วย source control ได้บ้างแต่ด้อยที่สุด\n- มาตรการชุมชนที่ได้ผล: ล้างมือ ระบายอากาศดี เลี่ยงที่แออัด และฉีดวัคซีน ระยะแยกตัวเปลี่ยนตามแนวทาง ไม่ต้องยึด 14 วัน\n- ผู้ป่วยเสี่ยงสูงให้ยาต้านไวรัสเร็ว เช่น **nirmatrelvir/ritonavir ภายใน 5 วัน** (ระวัง drug interaction ผ่าน CYP3A) หรือ remdesivir; ฟ้าทะลายโจรไม่ใช่การป้องกัน",
+   "fix": "หน้ากากผ้าไม่ได้ไร้ประโยชน์เสียทีเดียว แต่กรองได้น้อยที่สุดในตัวเลือก จึงยังเป็นคำตอบที่ดีที่สุด แนวทางปัจจุบันถือว่าแพร่ทาง airborne/aerosol ด้วย และไม่ใช้การกักตัว 14 วันแล้ว"
+  },
+  {
+   "theme": "Infection control: hand hygiene ป้องกัน nosocomial, isolation precaution (VZV → airborne)",
+   "id": "PP31-INF-003",
+   "related": "- **WHO 5 moments**: ก่อนสัมผัสผู้ป่วย, ก่อนทำหัตถการปลอดเชื้อ, หลังสัมผัสสารคัดหลั่ง, หลังสัมผัสผู้ป่วย, หลังสัมผัสสิ่งแวดล้อมรอบผู้ป่วย\n- **Alcohol hand rub** เป็นวิธีหลัก แต่ต้อง **ล้างด้วยสบู่และน้ำ** เมื่อมือเปื้อนชัด หรือดูแลผู้ป่วย **C. difficile และ norovirus** (alcohol ไม่ฆ่า spore)\n- **Airborne** (N95, ห้อง negative pressure): TB, measles, varicella, **disseminated zoster หรือ zoster ในคนภูมิต่ำ** (ร่วม contact)\n- **Droplet** (surgical mask): influenza, pertussis, diphtheria ที่คอ, meningococcus, mumps, rubella; **Contact** (gown + gloves): MRSA, CRE, C. difficile, scabies\n- Localized zoster ในคนภูมิปกติที่ปิดแผลได้ ใช้ standard precaution; ถุงมือไม่ใช่สิ่งทดแทน hand hygiene\n- Prophylactic antibiotic แบบเหมารวมเพิ่มเชื้อดื้อยาและ C. difficile; bundle ลด HAI ได้แก่ CLABSI (maximal barrier, chlorhexidine), CAUTI (ถอดสายเร็ว), VAP (หัวเตียงสูง 30–45°)"
+  },
+  {
+   "theme": "วัคซีนและกลุ่มเสี่ยง: COVID/influenza priority, asplenia",
+   "id": "PP32-INF-029",
+   "related": "- กลุ่มเสี่ยงที่ควรได้ **influenza vaccine ทุกปี**: หญิงตั้งครรภ์ (ตั้งแต่ 4 เดือนตามกรมควบคุมโรค), อายุ ≥65 ปี, เด็ก 6 เดือน–2 ปี, โรคเรื้อรัง (COPD, asthma, CVD, CKD, DM), ภูมิคุ้มกันต่ำ, อ้วนมาก, บุคลากรการแพทย์\n- หญิงตั้งครรภ์ให้ได้เฉพาะ **วัคซีนชนิดไม่มีชีวิต**: influenza, **Tdap ทุกครรภ์** (ป้องกัน pertussis ในทารก), COVID-19; **ห้าม live vaccine** (MMR, varicella, LAIV)\n- **Asplenia/splenectomy** เสี่ยง **OPSI** จาก encapsulated bacteria (S. pneumoniae, H. influenzae b, N. meningitidis) ให้ pneumococcal, Hib, meningococcal vaccine อย่างน้อย 2 สัปดาห์ก่อนผ่าตัด elective หรือ 2 สัปดาห์หลังผ่าตัด\n- ผู้ไม่มีม้ามที่มีไข้ถือเป็นภาวะฉุกเฉิน ให้ antibiotic ทันที (เช่น ceftriaxone) และควรมียาสำรองติดตัว\n- HIV ที่ CD4 <200 ห้าม live vaccine; ผู้สูงอายุควรได้ pneumococcal และ recombinant zoster vaccine\n- DM และ HT เป็นกลุ่มเสี่ยงโควิดรุนแรง ควรได้ COVID-19 vaccine ร่วมกับ influenza และ pneumococcal ตามเกณฑ์"
+  },
+  {
+   "theme": "Gram stain เดาเชื้อ: GN diplococci/coccobacilli (Moraxella, H. influenzae)",
+   "id": "PP29-INF-043",
+   "related": "- จำ Gram stain: **GPC clusters** = Staphylococcus, **GPC chains** = Streptococcus, **GP lancet-shaped diplococci** = S. pneumoniae, **GN diplococci** = Neisseria และ Moraxella\n- **GN coccobacilli** = H. influenzae, Bordetella, Brucella, Acinetobacter; **GP rods** = Clostridium, Listeria, Corynebacterium, Bacillus\n- เสมหะที่ใช้แปลผลได้ (adequate) = **PMN >25 และ squamous epithelial cell <10 ต่อ LPF**\n- **Moraxella catarrhalis** ก่อ AECOPD, sinusitis, otitis เกือบทุกสายพันธุ์สร้าง **β-lactamase** จึงใช้ amoxicillin-clavulanate, cephalosporin รุ่น 2–3 หรือ macrolide\n- **H. influenzae** non-typeable ก่อ AECOPD และ pneumonia; type b ก่อ meningitis และ epiglottitis ในเด็กที่ไม่ได้วัคซีน บางสายพันธุ์สร้าง β-lactamase\n- N. meningitidis ก็เป็น GN diplococci แต่เป็นเชื้อของเลือดและ CSF; Klebsiella เป็น GN bacilli มี capsule (currant-jelly sputum ในผู้ติดสุราหรือ DM)"
+  },
+  {
+   "theme": "Tetanus: การรักษาครบ (debridement, metronidazole, TIG, toxoid)",
+   "id": "PPNA-INF-126",
+   "related": "- Tetanospasmin ยับยั้งการหลั่ง **GABA และ glycine** จาก inhibitory interneuron → rigidity, **trismus**, risus sardonicus, opisthotonus, spasm ที่ถูกกระตุ้นด้วยเสียงหรือสัมผัส ผู้ป่วยรู้สติดี\n- วินิจฉัย **ทางคลินิก** ไม่มี lab ยืนยัน (spatula test ช่วยได้)\n- รักษา: ห้อง ICU ที่เงียบ, **benzodiazepine** คุม spasm (± magnesium sulfate), ดูแล airway (tracheostomy เมื่อ spasm รุนแรง), **HTIG**, **metronidazole**, debridement\n- ต้องให้ **tetanus toxoid ครบชุด** เสมอ เพราะการเป็นโรคไม่ทำให้มีภูมิคุ้มกัน; ฉีด HTIG และ toxoid คนละตำแหน่ง\n- **Autonomic instability** (BP แกว่ง, tachyarrhythmia) เป็นสาเหตุตายสำคัญช่วงสัปดาห์ที่ 2\n- ป้องกันหลังมีแผล: แผลสะอาดให้ Td เมื่อเคยได้ <3 เข็มหรือเข็มสุดท้าย >10 ปี; **แผลสกปรกให้ Td เมื่อเข็มสุดท้าย >5 ปี** และให้ **TIG เพิ่มเมื่อเคยได้ <3 เข็มหรือไม่ทราบประวัติ**\n- นิยม metronidazole มากกว่า penicillin เพราะ penicillin เป็น GABA antagonist ในทางทฤษฎี"
+  },
+  {
+   "theme": "Rabies: post-exposure prophylaxis ตาม WHO category",
+   "id": "PP31-INF-018",
+   "related": "- **WHO category**: I = สัมผัสหรือถูกเลียที่ผิวปกติ → ไม่ต้องให้; II = งับเป็นรอยช้ำ ข่วนถลอกไม่มีเลือด → **วัคซีนอย่างเดียว**; III = แผลมีเลือด น้ำลายถูกเยื่อเมือก หรือสัมผัสค้างคาว → **วัคซีน + RIG**\n- ล้างแผลด้วยน้ำและสบู่นานประมาณ 15 นาที แล้วใส่ povidone-iodine หลีกเลี่ยงการเย็บแผลทันที\n- **RIG** (ERIG หรือ HRIG) ฉีดรอบแผลให้มากที่สุด ให้ได้จนถึงวันที่ 7 หลังวัคซีนเข็มแรก ห้ามฉีดตำแหน่งเดียวกับวัคซีน\n- ผู้ที่ **เคยได้ PEP หรือ PrEP ครบมาก่อน** → กระตุ้นวัคซีน 2 เข็ม (วัน 0 และ 3) **ไม่ต้องให้ RIG**\n- การเฝ้าดูสุนัข 10 วันใช้ตัดสินหยุดวัคซีนได้ ไม่ใช่เหตุผลรอเริ่มวัคซีนในพื้นที่ระบาดอย่างไทย\n- โรคพิษสุนัขบ้ามีแบบ **furious** (hydrophobia, aerophobia) และ **paralytic** (คล้าย GBS) เมื่อมีอาการแล้วตายเกือบ 100%\n- แผลกัดให้ป้องกันบาดทะยักตามประวัติวัคซีน และพิจารณา amoxicillin-clavulanate ในแผลที่เสี่ยงติดเชื้อ (มือ แผลลึก)"
+  },
+  {
+   "theme": "Melioidosis & pyogenic liver abscess: เดาเชื้อ (B. pseudomallei, Klebsiella)",
+   "id": "ID-OLDP-009",
+   "related": "- **B. pseudomallei**: GN bacilli ติดสีสองปลาย (**safety-pin**) อยู่ในดินและน้ำ นาข้าวภาคอีสาน ปัจจัยเสี่ยงอันดับหนึ่งคือ **DM** ตามด้วย CKD, ติดสุรา, thalassemia, steroid\n- อาการ: pneumonia, sepsis, **ฝีหลายตำแหน่ง** (ตับ ม้าม prostate, parotid ในเด็ก) ฝีตับม้ามเป็นแบบ **honeycomb**\n- วินิจฉัยด้วย **culture** (Ashdown agar) serology ช่วยน้อยในพื้นที่ระบาด\n- รักษา **intensive phase**: **ceftazidime** หรือ **meropenem** IV อย่างน้อย 10–14 วัน แล้ว **eradication** ด้วย **TMP-SMX กิน 3–6 เดือน** เพื่อลด relapse\n- B. pseudomallei **ดื้อ** aminoglycoside, colistin และตอบสนองไม่ดีต่อ ceftriaxone\n- **Pyogenic liver abscess** ในเอเชียเกิดจาก **K. pneumoniae (hypervirulent)** มากที่สุด ใน DM เสี่ยง endophthalmitis และ metastatic infection รักษา drainage + ceftriaxone ± metronidazole\n- **Amoebic liver abscess**: ฝีเดี่ยวกลีบขวา หนองสี anchovy paste รักษา metronidazole แล้วตามด้วย luminal agent มักไม่ต้องระบาย"
+  },
+  {
+   "theme": "Leptospirosis: วินิจฉัยจาก conjunctival suffusion, jaundice, calf pain",
+   "id": "ID-OLDP-017",
+   "related": "- Leptospira มาจาก **ปัสสาวะหนู** ในน้ำและดิน เข้าทางผิวถลอกหรือเยื่อบุ (ลุยน้ำท่วม ทำนา)\n- ดำเนินโรคแบบ **biphasic**: leptospiremic phase 4–7 วัน (ไข้สูง **ปวดน่อง**, **conjunctival suffusion**) แล้วเข้า immune phase (aseptic meningitis, uveitis)\n- **Weil's disease** = jaundice + **AKI แบบ non-oliguric มักมี hypokalemia** + bleeding; **pulmonary hemorrhage** เป็นสาเหตุตายสำคัญ\n- ตัวเหลืองแบบ **bilirubin สูงมากแต่ AST/ALT สูงไม่มาก** และ CPK สูงจาก myositis; ถ้า AST/ALT สูงถึงหลักพันให้คิดถึง viral hepatitis มากกว่า\n- ภาพรังสีที่พบบ่อยคือ patchy alveolar infiltrate จากเลือดออก ไม่ใช่ interstitial\n- รักษา: อาการน้อยใช้ **doxycycline** หรือ amoxicillin กิน; รุนแรงใช้ **penicillin G IV หรือ ceftriaxone** และ dialysis เมื่อจำเป็น อาจเกิด Jarisch–Herxheimer reaction\n- ป้องกันในผู้ที่ต้องลุยน้ำ: doxycycline 200 mg สัปดาห์ละครั้งช่วงสัมผัส"
+  },
+  {
+   "theme": "Leptospirosis: การตรวจยืนยัน (MAT, IFA) และทางติดต่อ",
+   "id": "ID-OLDP-010",
+   "related": "- **MAT** เป็น serologic **gold standard**: ยืนยันด้วย paired sera ที่ titer เพิ่ม **4 เท่า** หรือ single titer สูงตามเกณฑ์ของพื้นที่\n- สัปดาห์แรก antibody ยังไม่ขึ้น ใช้ **PCR จากเลือด** หรือ culture (EMJH medium ใช้เวลานาน) หลังสัปดาห์แรกใช้ PCR หรือ culture ปัสสาวะ และ serology\n- IFA, ELISA IgM และ rapid test ใช้คัดกรองได้ ความไวต่ำในระยะแรก\n- **อย่ารอผลยืนยันก่อนให้ยา** เมื่อสงสัยทางคลินิกให้ antibiotic ทันที\n- ทางติดต่อคือ **เชื้อไชผ่านผิวหนังถลอกหรือเยื่อบุ** หรือกลืนน้ำปนเชื้อ ไม่ติดจากคนสู่คน และไม่ได้ติดจากการถูกหนูกัด\n- เชื้อก่อโรคคือ **L. interrogans** ส่วน L. biflexa เป็นสายพันธุ์ saprophyte; Weil–Felix ใช้กับ rickettsia ไม่ใช่ lepto"
+  },
+  {
+   "theme": "Scrub typhus: eschar → doxycycline",
+   "id": "ID-OLDP-011",
+   "related": "- **Orientia tsutsugamushi** ติดจากตัวอ่อนไรอ่อน (**chigger**) ในป่าละเมาะ ทุ่งหญ้า ไร่\n- **Eschar** แผลดำไม่เจ็บ ขอบแดง อยู่ในที่อับ (ขาหนีบ รักแร้ เอว อวัยวะเพศ) ต้องตรวจทั้งตัว ร่วมกับไข้ ปวดศีรษะ ต่อมน้ำเหลืองโตใกล้ eschar และผื่น maculopapular\n- ยืนยันด้วย **IFA** (paired sera) หรือ **PCR** จาก eschar หรือเลือด; Weil–Felix ไวต่ำ ไม่ใช้แล้ว\n- รักษา **doxycycline 100 mg bid 7 วัน** ทางเลือก **azithromycin** (หญิงตั้งครรภ์ เด็กเล็ก) หรือ chloramphenicol รายรุนแรงให้ doxycycline IV\n- ตอบสนองเร็ว ไข้ลงใน 24–48 ชม. ถ้าไม่ลงให้คิดถึงโรคอื่นหรือติดเชื้อร่วม\n- ภาวะแทรกซ้อน: pneumonitis/ARDS, meningoencephalitis, myocarditis, AKI\n- แยก **murine typhus** (R. typhi จากหมัดหนู ในเมือง ไม่มี eschar) และ **cutaneous anthrax** (eschar ร่วมบวมน้ำมาก สัมผัสสัตว์)"
+  },
+  {
+   "theme": "Dengue: วินิจฉัย, ระยะโรค, fluid management",
+   "id": "PP34-INF-013",
+   "related": "- 3 ระยะ: **febrile** (2–7 วัน) → **critical** (24–48 ชม. ช่วงไข้ลง มี plasma leakage) → **recovery**\n- **Warning signs**: ปวดท้อง อาเจียนมาก มีน้ำในช่องท้องหรือปอด เลือดออกเยื่อบุ ซึมหรือกระสับกระส่าย ตับโต **Hct สูงขึ้นพร้อมเกล็ดเลือดลดเร็ว**\n- ตรวจ **NS1 หรือ RT-PCR ในวันที่ 1–5** และ **IgM ตั้งแต่ราววันที่ 5** IgG ขึ้นเร็วบ่งการติดเชื้อซ้ำ\n- ช็อกระยะแรกคือ **pulse pressure แคบ ≤20 mmHg**; ให้ **isotonic crystalloid** ปรับตาม Hct และปัสสาวะ ถ้า Hct ลดแต่ยังช็อกให้คิดถึงเลือดออกภายในและให้เลือด\n- **ห้าม** NSAIDs, aspirin และ IM injection; **ไม่ให้เกล็ดเลือดป้องกัน** ไม่ให้ steroid หรือ G-CSF\n- ระยะฟื้นตัว (ปัสสาวะออกมาก Hct ลด อยากอาหาร convalescent rash) ต้องลดหรือหยุด IV fluid เพื่อป้องกัน fluid overload"
+  },
+  {
+   "theme": "Salmonella: ภาวะแทรกซ้อน/ภาวะที่สัมพันธ์",
+   "id": "ID-OLDP-023",
+   "related": "- **Typhoidal** (S. Typhi, Paratyphi): ไข้สูงต่อเนื่อง relative bradycardia, rose spots, ม้ามโต, leukopenia ภาวะแทรกซ้อนสัปดาห์ที่ 3 คือ **ลำไส้ทะลุหรือเลือดออกที่ Peyer's patch**\n- **Non-typhoidal Salmonella**: gastroenteritis หายเอง ไม่ต้องให้ antibiotic ยกเว้นทารก ผู้สูงอายุที่มี atherosclerosis หรือภูมิต่ำ\n- NTS bacteremia ในผู้สูงอายุ → **mycotic aneurysm ของ aorta**; hemoglobinopathy → **osteomyelitis**; HIV, SLE → bacteremia ซ้ำ\n- **Chronic carrier** สัมพันธ์กับ **นิ่วถุงน้ำดี** รักษาด้วย fluoroquinolone ระยะยาว ± cholecystectomy\n- วินิจฉัย typhoid ด้วย **hemoculture** ในสัปดาห์แรก (bone marrow culture ไวที่สุด) **Widal** ไม่ไวและไม่จำเพาะ\n- รักษา typhoid: **ceftriaxone** (รุนแรง) หรือ **azithromycin** กิน fluoroquinolone ดื้อมากในเอเชีย"
+  },
+  {
+   "theme": "Malaria: วินิจฉัยและแยกชนิดเชื้อจาก blood smear",
+   "id": "PP33-INF-002",
+   "related": "- **Thick film** คัดกรองว่ามีเชื้อ (ไวกว่า) **thin film** แยก species และนับ % parasitemia ตรวจซ้ำทุก 12–24 ชม. รวม 3 ครั้งก่อนตัดโรค; RDT ใช้เมื่อไม่มี microscopy\n- **P. falciparum**: RBC ไม่โต ring เล็ก double chromatin หลายตัวในเซลล์เดียว **gametocyte รูปกล้วย** ติด RBC ทุกวัยจึง parasitemia สูง\n- **P. vivax/ovale**: RBC โตและซีด **Schüffner's dots** trophozoite รูป amoeboid มี **hypnozoite** จึง relapse ได้\n- **P. malariae**: band form ไข้ทุก 72 ชม. สัมพันธ์ nephrotic syndrome; **P. knowlesi** (ลิงแสม ภาคใต้) หน้าตาคล้าย malariae แต่รุนแรงได้\n- **Severe malaria** ตาม WHO: สติเปลี่ยนหรือชัก, prostration, shock, pulmonary edema, ซีดมาก, ไตวาย, hypoglycemia, acidosis, เลือดออก, **parasitemia >10%** → ให้ IV artesunate\n- Babesia: ring เล็กหรือ tetrad (Maltese cross) ไม่มี pigment พบในอเมริกาเหนือ"
+  },
+  {
+   "theme": "Malaria: การรักษา (ACT, หญิงตั้งครรภ์)",
+   "id": "PP31-INF-034",
+   "related": "- **Uncomplicated falciparum (ไทย)**: **DHA–piperaquine 3 วัน + primaquine single low dose** เพื่อตัดการแพร่ gametocyte ไม่ต้องตรวจ G6PD ก่อน; สูตรเดิมคือ artesunate + mefloquine\n- **Severe malaria**: **IV artesunate** จนกินได้ แล้วต่อ ACT ให้ครบ ใช้ได้ทุกไตรมาสของครรภ์ ระวัง delayed hemolysis หลังให้\n- **P. vivax/ovale**: **chloroquine 3 วัน + primaquine 14 วัน** (radical cure) หลังตรวจ **G6PD**\n- **ตั้งครรภ์ไตรมาสแรก**: quinine + clindamycin 7 วัน (WHO 2022 ให้ artemether–lumefantrine ได้) ไตรมาส 2–3 ใช้ ACT **ห้าม primaquine, tafenoquine, doxycycline**\n- Quinine ทำให้ **hypoglycemia** (กระตุ้นการหลั่ง insulin), cinchonism, QT ยาว\n- แนวชายแดนไทยมี artemisinin partial resistance ต้องติดตาม smear จนเชื้อหมด"
+  },
+  {
+   "theme": "Malaria chemoprophylaxis: doxycycline ก่อนเข้าป่า",
+   "id": "PP31-INF-004",
+   "related": "- ชายแดนไทย falciparum **ดื้อ chloroquine และ mefloquine** จึงใช้ **doxycycline 100 mg/วัน** (เริ่ม 1–2 วันก่อน ระหว่าง และต่อ **4 สัปดาห์** หลังออก) หรือ **atovaquone–proguanil** (เริ่ม 1–2 วันก่อน ต่อ **7 วัน** หลังออก)\n- Doxycycline: กินกับน้ำมากๆ ไม่นอนทันที (esophagitis), photosensitivity **ห้ามในหญิงตั้งครรภ์และเด็กอายุ <8 ปี**\n- Mefloquine มีผลข้างเคียงทางจิตประสาท และดื้อในแนวชายแดนไทย chloroquine ใช้ได้เฉพาะพื้นที่ที่ยังไวต่อยา\n- สำคัญที่สุดคือ **ป้องกันยุงกัด**: มุ้งชุบสารเคมี ยาทากันยุง (DEET) เสื้อแขนยาว เพราะ Anopheles กัดช่วงค่ำถึงเช้ามืด\n- มีไข้ภายในหลายเดือนหลังออกจากป่า ต้องตรวจ blood smear เสมอ แม้กินยาป้องกันครบ\n- ไม่แนะนำยาป้องกันกับนักท่องเที่ยวทั่วไปที่ไปเมืองหรือรีสอร์ต ใช้กับผู้ที่ค้างในป่าพื้นที่ระบาด"
+  },
+  {
+   "theme": "HIV กับ pneumonia: เดาเชื้อตาม CD4 (S. pneumoniae, reactivation TB)",
+   "id": "ID-OLDP-025",
+   "related": "- **ใช้ CD4 จัดลำดับเชื้อ**: ทุกระดับ CD4 → **bacterial pneumonia (S. pneumoniae บ่อยสุด)** และ **TB**; **CD4 <200** → **PCP**; **CD4 <100** → cryptococcus, toxoplasma, talaromycosis; **CD4 <50** → MAC, CMV\n- TB ใน HIV: CD4 สูงเป็นแบบ reactivation ที่ upper lobe มี cavity; **CD4 ต่ำ → lower lobe infiltrate ไม่มี cavity ต่อมน้ำเหลืองโต หรือ miliary** sputum AFB มักลบ จึงส่ง **Xpert MTB/RIF**\n- **PCP**: ไอแห้ง เหนื่อยค่อยเป็นค่อยไป desaturation เมื่อออกแรง CXR เป็น **bilateral interstitial/ground-glass** LDH สูง\n- รักษา PCP ด้วย **TMP-SMX 21 วัน** + **prednisolone เมื่อ PaO2 <70 mmHg** หรือ A–a gradient ≥35\n- ป้องกัน PCP ด้วย **TMP-SMX เมื่อ CD4 <200**\n- TB + HIV: เริ่มยาวัณโรคก่อน แล้วเริ่ม ART **ภายใน 2 สัปดาห์** (ยกเว้น TB meningitis ให้เลื่อนออกไป) rifampicin ลดระดับ dolutegravir จึงให้ DTG 50 mg วันละ 2 ครั้ง"
+  },
+  {
+   "theme": "HIV CNS infection: cryptococcal meningitis, CT ก่อน LP, amphotericin B และผลข้างเคียง",
+   "id": "ID-OLDP-032",
+   "related": "- HIV ที่มีไข้ ปวดศีรษะ หรือชัก ให้ **CT brain ก่อน LP** เมื่อมี focal deficit, ชักใหม่, papilledema, สติลด หรือภูมิคุ้มกันต่ำ\n- **Cryptococcal meningitis** (CD4 <100): ปวดศีรษะกึ่งเฉียบพลัน คอแข็งอาจไม่ชัด **opening pressure สูง** CSF เซลล์น้อย **India ink** และ **CrAg** ไวเกือบ 100%\n- Induction ตาม WHO 2022: **liposomal AmB ครั้งเดียวขนาดสูง + flucytosine + fluconazole** ถ้าไม่มีใช้ **AmB deoxycholate + flucytosine** (หรือ + fluconazole ขนาดสูง) แล้ว consolidation และ maintenance ด้วย fluconazole (ข้อเก่าที่ให้ AmB เดี่ยวยังไม่ครบ)\n- **Opening pressure ≥25 cmH2O** ให้ **therapeutic LP ซ้ำทุกวัน** ไม่ใช้ acetazolamide, mannitol หรือ steroid\n- **เลื่อน ART ไป 4–6 สัปดาห์** หลังเริ่มยาต้านเชื้อรา เพื่อลด IRIS และการตาย\n- พิษของ AmB: nephrotoxicity, **hypokalemia และ hypomagnesemia** (distal RTA) ให้ NSS ก่อนยาและตรวจ K, Mg, Cr สม่ำเสมอ\n- **Cerebral toxoplasmosis**: ring-enhancing lesion หลายก้อนที่ basal ganglia รักษา pyrimethamine + sulfadiazine (หรือ TMP-SMX) ไม่ดีขึ้นใน 2 สัปดาห์ให้คิดถึง primary CNS lymphoma"
+  },
+  {
+   "theme": "Disseminated fungal ใน HIV: umbilicated papules (crypto/talaromycosis)",
+   "id": "ID-OLDP-040",
+   "related": "- CD4 <100 + **papule มีรอยบุ๋มกลาง (umbilicated)** ที่หน้าและลำตัว → **talaromycosis** (T. marneffei พบมากภาคเหนือ), **disseminated cryptococcosis** หรือ histoplasmosis\n- แยกจาก **molluscum contagiosum** ซึ่งก็ umbilicated แต่ไม่มีไข้หรืออาการทั่วร่างกาย\n- Talaromycosis: ไข้ น้ำหนักลด ซีด ตับม้ามโต ต่อมน้ำเหลืองโต ขูดตุ่มหรือ biopsy, เพาะเชื้อจากเลือดหรือไขกระดูก เห็นยีสต์มี **transverse septum** (ไม่ได้แตกหน่อแบบ Histoplasma)\n- รักษา talaromycosis: **amphotericin B 2 สัปดาห์ → itraconazole** ต่อ แล้ว secondary prophylaxis จน CD4 ฟื้น\n- Disseminated cryptococcosis ทุกรายต้อง **เจาะ LP** แม้ไม่มีอาการทางสมอง\n- ตุ่มอื่นใน HIV: **eosinophilic folliculitis** (คันมาก), **bacillary angiomatosis** (ตุ่มแดงเลือดออกง่าย Bartonella → doxycycline หรือ erythromycin), **Kaposi sarcoma** (ตุ่มม่วง), pruritic papular eruption"
+  },
+  {
+   "theme": "Syphilis: วินิจฉัย (VDRL, CSF VDRL), ผื่น secondary syphilis และรักษา (benzathine penicillin)",
+   "id": "ID-OLDP-029",
+   "related": "- ระยะโรค: **primary** (chancre ไม่เจ็บ ขอบแข็ง) → **secondary** (ผื่น papulosquamous ฝ่ามือฝ่าเท้า, mucous patch, **condyloma lata**, ผมร่วงหย่อม, ต่อมน้ำเหลืองโต) → latent → tertiary (gumma, aortitis, neurosyphilis)\n- **Non-treponemal** (VDRL/RPR) ใช้คัดกรองและติดตามการรักษา (titer ต้องลด **4 เท่า**) **treponemal** (TPHA, FTA-ABS) ใช้ยืนยันและบวกตลอดชีวิต ระวัง **prozone** ทำให้ลบปลอมเมื่อ titer สูงมาก\n- **Early** (primary, secondary, early latent): **benzathine penicillin G 2.4 MU IM ครั้งเดียว**; **late latent หรือไม่ทราบระยะ**: 2.4 MU ทุกสัปดาห์ **3 ครั้ง**\n- **Neurosyphilis, ocular, otic**: **aqueous penicillin G IV 10–14 วัน** CSF VDRL บวกช่วยยืนยัน (จำเพาะสูงแต่ไวต่ำ) CSF FTA-ABS ลบช่วยตัดโรค\n- แพ้ penicillin: **doxycycline 14 วัน** (late 28 วัน) **หญิงตั้งครรภ์ต้อง desensitize แล้วให้ penicillin** erythromycin ไม่แนะนำ\n- **Jarisch–Herxheimer reaction**: ไข้ หนาวสั่นภายใน 24 ชม. หลังฉีดยา ให้ยาลดไข้ ไม่ใช่การแพ้ยา\n- ทุกรายต้องตรวจ HIV และรักษาคู่นอน"
+  },
+  {
+   "theme": "HIV: การวินิจฉัย (window period) และทางติดต่อ",
+   "id": "ID-OLDP-033",
+   "related": "- **Window period** ขึ้นกับชุดตรวจ: antibody อย่างเดียวนานกว่า **Ag/Ab combo (4th gen)** ซึ่งส่วนใหญ่ตรวจพบภายใน 6 สัปดาห์ และ **HIV RNA** ตรวจพบเร็วที่สุด\n- ผลลบในผู้ที่มีความเสี่ยงใหม่ → **ตรวจซ้ำหลังพ้น window** หรือส่ง HIV RNA เมื่อสงสัย acute HIV (ไข้ ผื่น เจ็บคอ ต่อมน้ำเหลืองโต)\n- ไทยยืนยันผลบวกด้วย **ชุดตรวจ 3 ชนิดที่ต่างหลักการ** ไม่ใช้ Western blot แล้ว เด็กอายุ <18 เดือนใช้ **HIV DNA PCR** เพราะยังมี antibody จากแม่\n- **หญิงตั้งครรภ์** ตรวจตั้งแต่ฝากครรภ์ครั้งแรกและตรวจซ้ำช่วงไตรมาส 3 ในผู้มีความเสี่ยง ถ้าบวกเริ่ม ART ทันทีเพื่อป้องกันการติดเชื้อสู่ลูก\n- สารที่ติดเชื้อได้: เลือด น้ำอสุจิ สารคัดหลั่งช่องคลอด น้ำนม และของเหลวในช่องร่างกาย; **ปัสสาวะ น้ำลาย น้ำตา เหงื่อ อุจจาระ** ไม่ติด ยกเว้นปนเลือด\n- **PEP** เริ่มภายใน **72 ชม.** ให้ 28 วัน; **PrEP** ในกลุ่มเสี่ยงสูง; **U=U** คือ viral load ตรวจไม่พบต่อเนื่องจะไม่ติดทางเพศสัมพันธ์"
+  },
+  {
+   "theme": "HIV: เริ่ม ART และเลือกสูตร (TLD, HBV coinfection)",
+   "id": "PP33-INF-025",
+   "related": "- **Treat all**: เริ่ม ART ทุกรายไม่ต้องรอ CD4 ยิ่งเร็วยิ่งดี (เริ่มวันเดียวกับที่วินิจฉัยได้ ถ้าไม่มี OI ที่ต้องเลื่อน)\n- First-line ไทยและ WHO: **TDF + 3TC (หรือ FTC) + DTG (TLD)** ใช้ EFV แทน DTG เมื่อจำเป็น\n- **HBV coinfection** ต้องมี **TDF หรือ TAF + 3TC/FTC** เสมอ หยุด tenofovir เองทำให้ HBV flare\n- **เลื่อน ART**: cryptococcal meningitis 4–6 สัปดาห์, TB meningitis ตามแนวทาง; TB ปอดเริ่ม ART ภายใน 2 สัปดาห์\n- ผลข้างเคียง: **TDF** → ไตเสื่อม (Fanconi) และกระดูกบาง; **DTG** → นอนไม่หลับ น้ำหนักขึ้น Cr สูงเล็กน้อยจากยับยั้งการหลั่ง; **EFV** → ฝันร้าย มึน; **AZT** → ซีด; **ABC** → hypersensitivity ใน **HLA-B*57:01**; **NVP** → ตับอักเสบ ผื่น\n- DTG มี interaction กับ **ยาลดกรดที่มี Mg/Al/Ca และธาตุเหล็ก** (กินห่างกัน) และ rifampicin (เพิ่ม DTG เป็นวันละ 2 ครั้ง)\n- ติดตาม **viral load** ที่ 6 และ 12 เดือนแล้วปีละครั้ง VL สูงซ้ำหลังแก้ adherence แล้ว = treatment failure"
+  },
+  {
+   "theme": "HIV chronic diarrhea: Cryptosporidium vs Cystoisospora (ขนาด oocyst)",
+   "id": "PP34-INF-019",
+   "related": "- **Modified AFB บวกในอุจจาระ**: **Cryptosporidium** (กลมเล็ก **4–6 µm**), **Cyclospora** (กลม 8–10 µm), **Cystoisospora** (รีใหญ่ **20–30 µm**)\n- **Cryptosporidium**: หัวใจของการรักษาคือ **ART ให้ CD4 ฟื้น** + ชดเชยน้ำ nitazoxanide ช่วยได้น้อยเมื่อ CD4 ต่ำ\n- **Cystoisospora และ Cyclospora**: **TMP-SMX** แล้วให้ secondary prophylaxis จน CD4 ฟื้น Cystoisospora มักมี eosinophilia\n- **Microsporidia**: spore เล็กมาก ย้อม modified trichrome บางชนิดตอบสนอง albendazole\n- อื่นๆ: **CMV colitis** (CD4 <50 ถ่ายเป็นเลือด biopsy เห็น owl's eye → ganciclovir), MAC, Giardia (metronidazole), **Strongyloides** (ivermectin)\n- ต้องขอ **modified AFB** แยก เพราะการตรวจอุจจาระทั่วไปมองไม่เห็น และควรส่งหลายครั้ง"
+  },
+  {
+   "theme": "Recurrent candidiasis: หาโรคพื้นฐาน (DM)",
+   "id": "ID-OLDP-034",
+   "related": "- **Recurrent VVC** = เป็น ≥3 ครั้งต่อปี ให้หา host factor: **DM ควบคุมไม่ดี**, ยาปฏิชีวนะบ่อย, ตั้งครรภ์, ฮอร์โมน estrogen สูง, steroid, **HIV**, SGLT2 inhibitor\n- ตกขาวขาวข้นเป็นก้อน คันมาก pH ปกติ (<4.5) KOH เห็น pseudohyphae และ budding yeast\n- รักษาครั้งเดียว: **fluconazole 150 mg กินครั้งเดียว** หรือ azole สอดช่องคลอด **หญิงตั้งครรภ์ใช้ azole สอด 7 วัน** ไม่ใช้ fluconazole กิน\n- Recurrent: fluconazole ทุก 72 ชม. 3 ครั้ง แล้ว **maintenance สัปดาห์ละครั้ง 6 เดือน** และเพาะเชื้อหา non-albicans (C. glabrata มักดื้อ fluconazole)\n- **ไม่ต้องรักษาคู่นอนเป็นประจำ** เพราะไม่ใช่โรคติดต่อทางเพศสัมพันธ์\n- Oral thrush ในผู้ใหญ่ที่ไม่ได้ใช้ยาสูด steroid หรือ antibiotic ให้ตรวจ HIV"
+  },
+  {
+   "theme": "Urethritis/STD: เชื้อก่อโรค (M. genitalium, disseminated gonococcal infection)",
+   "id": "PP35-INF-045",
+   "related": "- **Gonococcal urethritis**: หนองข้น เริ่มเร็ว Gram stain เห็น **GN intracellular diplococci** รักษา **ceftriaxone 500 mg IM ครั้งเดียว**\n- ถ้ายังตัด chlamydia ไม่ได้ ให้ **doxycycline 100 mg bid 7 วัน** ร่วมด้วย (doxycycline ดีกว่า azithromycin สำหรับ chlamydia)\n- **M. genitalium** เป็นสาเหตุหลักของ **persistent/recurrent urethritis** หลังได้ doxycycline ตรวจด้วย NAAT รักษา doxycycline นำ แล้วตามด้วย moxifloxacin\n- Trichomonas เป็นอีกสาเหตุของ NGU รักษาด้วย metronidazole\n- **DGI**: **migratory polyarthralgia + tenosynovitis + pustule ไม่เจ็บที่มือและแขนขา** หรือ purulent monoarthritis ส่ง NAAT/culture หลายตำแหน่ง (คอ ทวาร อวัยวะเพศ) และ hemoculture\n- รักษา DGI ด้วย **ceftriaxone 1 g IV ทุก 24 ชม.** จนดีขึ้นแล้วรวมอย่างน้อย 7 วัน\n- DGI หรือ meningococcal infection ซ้ำ → ตรวจ **terminal complement deficiency (C5–C9)**; ทุกรายรักษาคู่นอนและตรวจ HIV, syphilis"
+  },
+  {
+   "theme": "ยาต้านจุลชีพ: กลไก, spectrum (anti-pseudomonal), red man syndrome",
+   "id": "PP30-INF-023",
+   "related": "- **Anti-pseudomonal**: piperacillin–tazobactam, **ceftazidime, cefepime**, meropenem/imipenem, ciprofloxacin/levofloxacin, aminoglycoside, aztreonam, colistin\n- **ไม่ครอบคลุม Pseudomonas**: ceftriaxone, cefotaxime, cefazolin, amoxicillin-clavulanate, **ertapenem**\n- **MRSA**: vancomycin, linezolid, daptomycin (ห้ามใช้ใน pneumonia เพราะ surfactant ทำลายยา) ผิวหนังใช้ TMP-SMX, doxycycline, clindamycin ได้\n- กลไก: β-lactam และ vancomycin → **cell wall**; aminoglycoside, tetracycline → **30S**; macrolide, clindamycin, linezolid → **50S**; fluoroquinolone → **DNA gyrase/topoisomerase IV**; TMP-SMX → **folate**\n- พิษสำคัญ: aminoglycoside (ไต หู), fluoroquinolone (เอ็นฉีก QT ยาว), linezolid (เกล็ดเลือดต่ำ serotonin syndrome), TMP-SMX (hyperkalemia, SJS)\n- **Vancomycin infusion reaction** เกิดจาก histamine หลั่งโดยตรงเมื่อให้เร็ว ไม่ใช่ IgE: หยุดชั่วคราว ให้ antihistamine แล้วให้ใหม่ช้าลง ใช้ยาต่อได้"
+  },
+  {
+   "theme": "Prosthetic valve endocarditis (MSSA): regimen",
+   "id": "PPNA-INF-125",
+   "related": "- วินิจฉัย IE ด้วย **Duke criteria**: hemoculture พบเชื้อตามแบบ IE หลายชุด และ imaging (echo หรือ PET-CT) พบ vegetation หรือ abscess\n- **Prosthetic valve + MSSA**: **cloxacillin (หรือ cefazolin) ≥6 สัปดาห์ + rifampicin ≥6 สัปดาห์** (ฆ่าเชื้อใน biofilm) + **gentamicin 2 สัปดาห์แรก** ถ้าเป็น MRSA ใช้ vancomycin แทน β-lactam\n- **Native valve MSSA**: cloxacillin หรือ cefazolin 4–6 สัปดาห์ **ไม่ต้องเพิ่ม gentamicin หรือ rifampicin**\n- Viridans streptococci ที่ native valve: penicillin G หรือ ceftriaxone 4 สัปดาห์; Enterococcus: ampicillin + ceftriaxone\n- **ข้อบ่งชี้ผ่าตัด**: heart failure, ติดเชื้อคุมไม่ได้ (abscess, bacteremia ไม่หาย), emboli ซ้ำหรือ vegetation ใหญ่; PVE จาก S. aureus มักต้องผ่าตัด\n- สงสัย PVE ต้องทำ **TEE** เพราะ TTE ไวต่ำในลิ้นเทียม"
+  }
+ ],
+ "synth": [
+  {
+   "id": "SYN-INFECT-01",
+   "title": "Septic shock จาก prosthetic valve endocarditis (MSSA): Sepsis-3 และการเลือกยา",
+   "stem": "A 58-year-old man who had a mechanical aortic valve replacement 3 years ago presents with fever for 5 days and new confusion. Temperature 39.2°C, pulse 118/min, respiratory rate 26/min, BP 84/50 mmHg (MAP 61 mmHg) after 30 mL/kg of balanced crystalloid, GCS 13. There is a new early diastolic murmur and splinter haemorrhages. WBC 18,600/µL, platelets 92,000/µL, creatinine 2.1 mg/dL (baseline 0.9 mg/dL), lactate 4.2 mmol/L. Norepinephrine is started. Three of three blood culture sets grow gram-positive cocci in clusters, identified as methicillin-susceptible Staphylococcus aureus. Transoesophageal echocardiography shows a 12-mm vegetation on the prosthetic valve with a paravalvular abscess. Which of the following is the most appropriate management?",
+   "choices": [
+    "Cloxacillin for at least 6 weeks plus rifampicin for at least 6 weeks plus gentamicin for the first 2 weeks, with urgent referral for valve surgery",
+    "Cloxacillin alone for 4 weeks, as for native-valve MSSA endocarditis",
+    "Ceftazidime monotherapy, because it gives broad anti-pseudomonal gram-negative coverage",
+    "Switch to vancomycin alone, because vancomycin is more effective than β-lactams against MSSA",
+    "Classify the illness as severe sepsis rather than septic shock and give further fluid boluses before starting antibiotics"
+   ],
+   "answer": 0,
+   "explain": "กลไก: S. aureus เกาะลิ้นเทียมแล้วสร้าง biofilm ยา β-lactam ฆ่าเชื้อที่แบ่งตัว ส่วน rifampicin ซึมเข้า biofilm ได้ดี gentamicin ช่วงแรกช่วยให้เลือดปลอดเชื้อเร็วขึ้น ผู้ป่วยรายนี้ต้องใช้ vasopressor เพื่อคง MAP และ lactate >2 หลังให้สารน้ำพอแล้ว จึงเป็น septic shock ตาม Sepsis-3 และมี organ dysfunction หลายระบบ (สติ ไต เกล็ดเลือด)\n\nทำไมข้อถูกถูก: PVE จาก MSSA ใช้สามยา คือ anti-staphylococcal penicillin + rifampicin อย่างน้อย 6 สัปดาห์ และ gentamicin 2 สัปดาห์แรก การมี paravalvular abscess, heart failure จาก AR และ S. aureus บนลิ้นเทียม เป็นข้อบ่งชี้ผ่าตัด\n\nตัวลวง: (1) cloxacillin เดี่ยว 4 สัปดาห์ เป็นสูตร native valve ใช้กับลิ้นเทียมไม่พอ (2) ceftazidime ครอบคลุม Pseudomonas แต่ฤทธิ์ต่อ S. aureus อ่อน ใช้กับโจทย์ที่ถามยาครอบคลุม Pseudomonas (3) vancomycin ด้อยกว่า β-lactam สำหรับ MSSA ใช้เมื่อเป็น MRSA หรือแพ้ β-lactam แบบรุนแรง และถ้าให้เร็วจะเกิด infusion reaction (4) คำว่า severe sepsis ถูกยกเลิกใน Sepsis-3 และห้ามเลื่อนยาปฏิชีวนะในช็อก ต้องให้ภายใน 1 ชั่วโมง",
+   "fullcover": "- **Sepsis-3**: sepsis = ติดเชื้อ + **SOFA เพิ่ม ≥2**; **septic shock** = ต้องใช้ vasopressor คง **MAP ≥65** และ **lactate >2 mmol/L** หลังให้สารน้ำพอ; ไม่ใช้ SIRS และไม่มีคำว่า severe sepsis\n- Hour-1 bundle: lactate, **hemoculture 2 ชุดก่อนยา**, antibiotic ภายใน 1 ชม., **crystalloid 30 mL/kg** ใน hypotension หรือ lactate ≥4, **norepinephrine** เป็นตัวแรก\n- S. aureus ในเลือด ต้องเจาะเลือดซ้ำจนลบ หาแหล่งติดเชื้อ ถอดสายสวนที่สงสัย และทำ echo ทุกราย (TEE เมื่อมีลิ้นเทียมหรือ TTE ไม่ชัด)\n- **Duke criteria**: hemoculture เชื้อตามแบบ IE หลายชุด + imaging พบ vegetation หรือ abscess เป็นเกณฑ์หลัก\n- **PVE + MSSA**: cloxacillin หรือ cefazolin ≥6 สัปดาห์ + **rifampicin ≥6 สัปดาห์** + **gentamicin 2 สัปดาห์แรก**; MRSA ใช้ vancomycin แทน β-lactam\n- **Native valve MSSA**: cloxacillin หรือ cefazolin 4–6 สัปดาห์ ไม่ต้องเพิ่ม gentamicin หรือ rifampicin\n- **ข้อบ่งชี้ผ่าตัด IE**: heart failure, abscess หรือ bacteremia ไม่หาย, emboli ซ้ำหรือ vegetation ใหญ่, PVE จาก S. aureus\n- **Anti-pseudomonal**: ceftazidime, cefepime, piperacillin–tazobactam, meropenem/imipenem, ciprofloxacin, aminoglycoside; **ertapenem, ceftriaxone, cefazolin ไม่ครอบคลุม**\n- กลไกยา: β-lactam/vancomycin → cell wall, aminoglycoside/tetracycline → 30S, macrolide/clindamycin/linezolid → 50S, fluoroquinolone → DNA gyrase\n- **Vancomycin infusion reaction**: histamine หลั่งเมื่อให้เร็ว หยุดชั่วคราว ให้ antihistamine แล้วให้ช้าลง ไม่ใช่การแพ้แบบ IgE\n- **ยังไม่เคยออก:** septic shock ที่ยังต้องใช้ vasopressor ต่อเนื่อง ให้ hydrocortisone และใช้ balanced crystalloid ดีกว่า NSS ปริมาณมาก\n- **ยังไม่เคยออก:** PVE ระยะแรกหลังผ่าตัด empirical ใช้ vancomycin + gentamicin + rifampicin ระหว่างรอผลเพาะเชื้อ",
+   "pearl": "ช็อก = vasopressor + lactate >2; ลิ้นเทียม + S. aureus = cloxa + rifampicin 6 สัปดาห์ + genta 2 สัปดาห์ + ปรึกษาผ่าตัด",
+   "covers_themes": [
+    "Sepsis: วินิจฉัยจากอาการและ vital signs",
+    "ยาต้านจุลชีพ: กลไก, spectrum (anti-pseudomonal), red man syndrome",
+    "Prosthetic valve endocarditis (MSSA): regimen"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-INFECT-02",
+   "title": "Exudative pharyngitis ในวัยรุ่น: EBV vs strep vs diphtheria",
+   "stem": "A 19-year-old university student has fever, sore throat and marked fatigue for 6 days. Temperature 38.6°C, pulse 96/min. Both tonsils are enlarged with white exudate that wipes off easily without bleeding; there are palatal petechiae, tender posterior and anterior cervical lymphadenopathy, and the spleen tip is palpable 2 cm below the left costal margin. He has no cough and no parotid swelling. WBC 13,200/µL with 58% lymphocytes and 16% atypical lymphocytes, platelets 140,000/µL, AST 88 U/L, ALT 104 U/L. A rapid streptococcal antigen test is negative. What is the most appropriate next step?",
+   "choices": [
+    "Heterophile antibody (Monospot) test with symptomatic care, and advice to avoid contact sports for at least 3–4 weeks",
+    "Amoxicillin for 10 days for presumed group A streptococcal pharyngitis",
+    "Diphtheria antitoxin and erythromycin with droplet isolation",
+    "Oral acyclovir for 10 days to shorten the illness",
+    "Oral prednisolone for 5 days for all patients with this condition"
+   ],
+   "answer": 0,
+   "explain": "กลไก: EBV ติด B cell ผ่าน CD21 แล้ว CD8 T cell ตอบสนองอย่างมาก เห็นเป็น atypical lymphocyte ทำให้ต่อมน้ำเหลืองทั่วตัว ทอนซิล ตับ และม้ามโต ม้ามที่โตและเปราะแตกได้จากแรงกระแทก\n\nทำไมข้อถูกถูก: exudative pharyngitis + posterior cervical LN + ม้ามโต + lymphocyte ≥50% และ atypical ≥10% + transaminase สูงเล็กน้อย เข้ากับ infectious mononucleosis ยืนยันด้วย heterophile antibody (ช่วงแรกอาจลบปลอม ตรวจ EBV VCA IgM แทน) รักษาตามอาการ และห้ามกีฬาปะทะอย่างน้อย 3–4 สัปดาห์\n\nตัวลวง: (1) amoxicillin ใช้กับ GAS แต่ rapid test ในผู้ใหญ่ลบแล้วไม่ต้องเพาะซ้ำ และให้ amoxicillin ใน EBV จะเกิดผื่น (2) antitoxin ใช้กับ diphtheria ซึ่ง pseudomembrane สีเทาติดแน่น ขูดแล้วเลือดออก (3) acyclovir ลดการปล่อยไวรัสแต่ไม่ช่วยอาการทางคลินิก (4) steroid ใช้เฉพาะภาวะแทรกซ้อน เช่น ทางเดินหายใจอุดกั้นจากทอนซิลโต autoimmune hemolysis หรือเกล็ดเลือดต่ำมาก",
+   "fullcover": "- **Viral pharyngitis** (ไอ น้ำมูก ไม่มี exudate) รักษาตามอาการ ไม่ให้ antibiotic\n- **Centor/McIsaac**: ไข้, tonsillar exudate, tender anterior LN, ไม่ไอ, ปรับตามอายุ คะแนนกลางตรวจ rapid antigen test\n- **GAS**: penicillin V หรือ amoxicillin 10 วัน หรือ benzathine penicillin IM ครั้งเดียว เพื่อป้องกัน rheumatic fever; แพ้รุนแรงใช้ macrolide หรือ clindamycin\n- **Infectious mononucleosis**: posterior cervical LN, ม้ามโต, petechiae ที่เพดาน, lymphocytosis + atypical lymphocyte ≥10%, transaminase สูง\n- ตรวจ **heterophile antibody**; สัปดาห์แรกอาจลบ ใช้ **EBV VCA IgM**\n- ภาวะแทรกซ้อน EBV: **ม้ามแตก** (ห้ามกีฬาปะทะ 3–4 สัปดาห์), airway obstruction, hemolytic anemia, thrombocytopenia; ได้ amoxicillin → ผื่น\n- **Diphtheria**: pseudomembrane สีเทาติดแน่น ขูดแล้วเลือดออก bull neck; GP rods รูป club (Chinese letters)\n- รักษา diphtheria: **antitoxin ทันทีไม่รอผล** + erythromycin หรือ penicillin, droplet isolation, ให้ยาป้องกันและวัคซีนผู้สัมผัส; เฝ้าระวัง **myocarditis** และ neuropathy\n- ภาวะแทรกซ้อนที่ต้องส่งต่อ: peritonsillar abscess (trismus, uvula เบี้ยว) และ Lemierre syndrome\n- **ยังไม่เคยออก:** **Mumps** = parotitis ข้างเดียวหรือสองข้าง ปวดเวลาเคี้ยว อาจมี orchitis (หลังวัยรุ่น), aseptic meningitis, pancreatitis; รักษาตามอาการ droplet precaution; ป้องกันด้วย MMR\n- **ยังไม่เคยออก:** CMV และ acute HIV ทำให้เกิด mononucleosis-like illness ที่ heterophile ลบ ต้องนึกถึงในผู้มีความเสี่ยง\n- **ยังไม่เคยออก:** diphtheria ในผู้ใหญ่ไทยยังมีรายงานจากภูมิตก จึงแนะนำ Td กระตุ้นทุก 10 ปี",
+   "pearl": "ทอนซิลเป็นหนอง + ม้ามโต + atypical lymph = EBV ห้าม amoxicillin ห้ามกีฬาปะทะ; ฝ้าเทาขูดแล้วเลือดออก = diphtheria ให้ antitoxin",
+   "covers_themes": [
+    "Pharyngitis: strep vs viral, แพ้ penicillin → erythromycin, diphtheria"
+   ],
+   "covers_nl": [
+    "Diphtheria",
+    "Infectious mononucleosis",
+    "Mumps"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-03",
+   "title": "ปอดอักเสบใน HIV: อ่าน Gram stain และ CD4 แยก Nocardia, Actinomyces, TB, Moraxella",
+   "stem": "A 42-year-old man with HIV infection who is not on antiretroviral therapy (CD4 count 45 cells/µL) presents with 3 weeks of fever and productive cough, and 2 days of weakness of the right arm. Temperature 38.4°C, respiratory rate 24/min, SpO2 94% on room air. Chest radiograph shows multiple cavitating nodules in both lungs. Contrast CT of the brain shows a 2.5-cm ring-enhancing lesion in the left frontal lobe. A sputum sample with >25 neutrophils and <10 squamous epithelial cells per low-power field shows gram-positive, beaded, branching filaments that are weakly acid-fast on modified Kinyoun stain and negative on Ziehl–Neelsen stain. Sputum Xpert MTB/RIF is negative and serum Toxoplasma IgG is negative. Which initial antimicrobial therapy is most appropriate?",
+   "choices": [
+    "High-dose trimethoprim–sulfamethoxazole plus imipenem, followed by prolonged oral therapy for at least 12 months",
+    "High-dose IV penicillin G followed by oral amoxicillin for 6–12 months",
+    "Amoxicillin–clavulanate for 7 days",
+    "Isoniazid, rifampicin, pyrazinamide and ethambutol",
+    "Ceftriaxone plus azithromycin for 7 days"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Nocardia เป็น aerobic actinomycete ในดิน ผนังมี mycolic acid สายสั้นจึงติด modified acid-fast เพียงบางส่วน ติดทางหายใจในคนที่ cell-mediated immunity บกพร่อง แล้วกระจายทางเลือดไปสมองได้บ่อย\n\nทำไมข้อถูกถูก: เส้นสายแตกแขนงเป็นปุ่ม + modified AFB บวกบางส่วน + ก้อนในปอดมีโพรง + ฝีในสมอง ใน HIV CD4 ต่ำ = disseminated nocardiosis ใช้ TMP-SMX ขนาดสูงร่วม imipenem (± amikacin) เมื่อมี CNS แล้วต่อยากินนานอย่างน้อย 12 เดือน\n\nตัวลวง: (1) penicillin นานหลายเดือนเป็นการรักษา Actinomyces ซึ่ง modified AFB ลบและเป็น anaerobe (2) amoxicillin–clavulanate สำหรับ Moraxella ที่เป็น gram-negative diplococci ใน AECOPD (3) ยาวัณโรค 4 ตัว สำหรับ TB ซึ่งเป็นแท่งตรง ติด Ziehl–Neelsen เต็มที่ และ Xpert ลบในรายนี้ (4) ceftriaxone + azithromycin เป็นสูตร CAP สำหรับ S. pneumoniae ซึ่งพบบ่อยที่สุดใน HIV ที่ CD4 ยังสูง และเห็นเป็น gram-positive diplococci",
+   "fullcover": "- **HIV + pneumonia ใช้ CD4 จัดลำดับ**: ทุกระดับ → S. pneumoniae และ TB; CD4 <200 → PCP; <100 → cryptococcus, toxoplasma, talaromycosis; <50 → MAC, CMV\n- เสมหะที่แปลผลได้: **PMN >25 และ squamous <10 ต่อ LPF**\n- Gram stain: GPC clusters = Staph, GP lancet diplococci = pneumococcus, **GN diplococci = Moraxella/Neisseria**, **GN coccobacilli = H. influenzae**, GP branching filament = Nocardia/Actinomyces\n- **Moraxella**: AECOPD, สร้าง β-lactamase → amoxicillin–clavulanate; **H. influenzae**: AECOPD และ pneumonia บางสายพันธุ์สร้าง β-lactamase\n- **Nocardia**: aerobic, beaded branching, **modified AFB บวกบางส่วน**, ปอด + สมอง → **TMP-SMX** (± imipenem/amikacin) นานเป็นปี และ imaging สมองทุกราย\n- **Actinomyces**: anaerobe, **modified AFB ลบ**, sulfur granule, sinus tract → **penicillin นานหลายเดือน**\n- **TB ใน HIV CD4 ต่ำ**: lower lobe infiltrate ไม่มีโพรง ต่อมน้ำเหลืองโต หรือ miliary เสมหะ AFB มักลบ ส่ง **Xpert MTB/RIF**\n- TB + HIV: เริ่มยาวัณโรคก่อน แล้ว ART ภายใน 2 สัปดาห์; rifampicin ทำให้ต้องเพิ่ม dolutegravir เป็นวันละ 2 ครั้ง\n- **PCP**: ไอแห้ง desaturation เมื่อออกแรง bilateral ground-glass LDH สูง → TMP-SMX 21 วัน + prednisolone เมื่อ PaO2 <70 mmHg; ป้องกันด้วย TMP-SMX เมื่อ CD4 <200\n- ฝีในสมองของ HIV: toxoplasma (basal ganglia, IgG บวก), Nocardia, tuberculoma, cryptococcoma, CNS lymphoma\n- **ยังไม่เคยออก:** Rhodococcus equi (สัมผัสม้า) ทำให้ปอดเป็นโพรงใน HIV ได้ เป็น coccobacilli ติด modified AFB บางส่วน\n- **ยังไม่เคยออก:** TMP-SMX ขนาดสูงทำให้ hyperkalemia, เม็ดเลือดต่ำ และผื่นแพ้ยารุนแรง ต้องติดตาม",
+   "pearl": "แตกแขนง + modified AFB บวก = Nocardia (TMP-SMX, ดูสมอง); แตกแขนง + AFB ลบ + sulfur granule = Actinomyces (penicillin)",
+   "covers_themes": [
+    "Nocardia vs Actinomyces: branching filament, modified AFB, การรักษา",
+    "Gram stain เดาเชื้อ: GN diplococci/coccobacilli (Moraxella, H. influenzae)",
+    "HIV กับ pneumonia: เดาเชื้อตาม CD4 (S. pneumoniae, reactivation TB)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-INFECT-04",
+   "title": "Cryptococcal meningitis ใน HIV และโรคฉวยโอกาสของสมองและตา",
+   "stem": "A 34-year-old woman with newly diagnosed HIV infection (CD4 count 22 cells/µL) has had headache for 3 weeks with fever and blurred vision. She has multiple umbilicated papules on the face. She is alert (GCS 15) with no focal neurological deficit; there is bilateral papilloedema but no retinitis on dilated fundoscopy. Non-contrast CT of the brain is normal. Lumbar puncture: opening pressure 38 cmH2O, WBC 12 cells/µL (90% lymphocytes), protein 68 mg/dL, glucose 35 mg/dL (serum glucose 98 mg/dL). India ink shows encapsulated budding yeasts and CSF cryptococcal antigen is positive. Which management plan is most appropriate?",
+   "choices": [
+    "Amphotericin B plus flucytosine induction, daily therapeutic lumbar punctures until the pressure normalises, and start antiretroviral therapy 4–6 weeks after antifungal therapy",
+    "Fluconazole 400 mg/day monotherapy and start antiretroviral therapy within 48 hours",
+    "Amphotericin B plus flucytosine with acetazolamide and dexamethasone to lower intracranial pressure",
+    "Pyrimethamine plus sulfadiazine with folinic acid",
+    "Intravenous ganciclovir"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Cryptococcus เข้าทางปอดแล้วกระจายมาสมองเมื่อ CD4 <100 แคปซูล polysaccharide อุดการดูดซึม CSF ที่ arachnoid villi ทำให้ความดันในกะโหลกสูงมาก เป็นสาเหตุตายและตาบอดหลัก ตุ่ม umbilicated ที่หน้าบอกว่าเชื้อกระจายเข้ากระแสเลือด\n\nทำไมข้อถูกถูก: induction ต้องใช้ amphotericin B ร่วม flucytosine (WHO 2022 ใช้ liposomal AmB ครั้งเดียวขนาดสูง + flucytosine + fluconazole) opening pressure ≥25 cmH2O ต้องเจาะระบายซ้ำทุกวัน และเลื่อน ART 4–6 สัปดาห์เพราะเริ่มเร็วเพิ่มการตายจาก IRIS\n\nตัวลวง: (1) fluconazole เดี่ยวด้อยกว่าใน induction และเริ่ม ART ใน 48 ชม. เพิ่มการตาย (2) acetazolamide และ dexamethasone ไม่ช่วยและเพิ่มผลเสียในโรคนี้ (3) pyrimethamine + sulfadiazine ใช้กับ cerebral toxoplasmosis ซึ่งมี ring-enhancing lesion ที่ CT (4) ganciclovir ใช้กับ CMV retinitis หรือ encephalitis ซึ่งรายนี้ไม่มี retinitis และ CSF พบเชื้อราชัดเจน",
+   "fullcover": "- HIV + ไข้ ปวดศีรษะ หรือชัก: **CT ก่อน LP** เมื่อมี focal deficit, ชักใหม่, papilledema หรือสติลด\n- **Cryptococcal meningitis**: CD4 <100, ปวดศีรษะกึ่งเฉียบพลัน, **opening pressure สูง**, CSF เซลล์น้อย, **India ink** และ **CrAg** ไวเกือบ 100%\n- Induction: **AmB + flucytosine** (WHO 2022: liposomal AmB ครั้งเดียวขนาดสูง + flucytosine + fluconazole 14 วัน) → consolidation fluconazole → maintenance fluconazole จน CD4 ฟื้น\n- **Opening pressure ≥25 cmH2O → therapeutic LP ทุกวัน**; ไม่ใช้ acetazolamide, mannitol, steroid\n- **เลื่อน ART 4–6 สัปดาห์** หลังเริ่มยาต้านเชื้อรา (ต่างจาก TB ปอดที่เริ่มภายใน 2 สัปดาห์)\n- พิษ AmB: ไตเสื่อม, **hypokalemia, hypomagnesemia** จาก distal RTA → ให้ NSS ก่อนยา ตรวจ K Mg Cr ทุกวันถึงวันเว้นวัน\n- **Umbilicated papules ใน HIV**: talaromycosis (ยีสต์มี transverse septum, ภาคเหนือ) หรือ disseminated cryptococcosis; แยก molluscum ที่ไม่มีไข้\n- รักษา talaromycosis: AmB 2 สัปดาห์ → itraconazole แล้ว secondary prophylaxis\n- คัดกรอง **serum CrAg เมื่อ CD4 <100** ถ้าบวกและไม่มีอาการทางสมอง ให้ fluconazole แบบ pre-emptive หลังตัด meningitis ด้วย LP\n- **ยังไม่เคยออก:** **Cerebral toxoplasmosis** = ring-enhancing lesion หลายก้อนที่ basal ganglia, Toxoplasma IgG บวก → **pyrimethamine + sulfadiazine + folinic acid** (หรือ TMP-SMX) ไม่ดีขึ้นใน 2 สัปดาห์ให้คิด CNS lymphoma; ป้องกันด้วย TMP-SMX เมื่อ CD4 <100 และ IgG บวก\n- **ยังไม่เคยออก:** **CMV disease** (CD4 <50): **retinitis** (เลือดออกและ exudate แบบ pizza pie ตามัวไม่เจ็บ), colitis (ถ่ายเป็นเลือด owl's eye), esophagitis แผลใหญ่ตื้น, ventriculoencephalitis → **ganciclovir/valganciclovir**; พิษคือ neutropenia\n- **ยังไม่เคยออก:** tissue parasites อื่นที่ทำ CNS ในไทย: **Angiostrongylus** (หอยโข่งดิบ, eosinophilic meningitis, steroid ± albendazole) และ **Gnathostoma** (ปลาดิบ, migratory swelling, ไขสันหลังและเลือดออกในสมอง, albendazole หรือ ivermectin)",
+   "pearl": "Crypto meningitis = AmB + 5FC, เจาะระบายเมื่อ OP ≥25, รอ ART 4–6 สัปดาห์",
+   "covers_themes": [
+    "HIV CNS infection: cryptococcal meningitis, CT ก่อน LP, amphotericin B และผลข้างเคียง",
+    "Disseminated fungal ใน HIV: umbilicated papules (crypto/talaromycosis)"
+   ],
+   "covers_nl": [
+    "CMV disease",
+    "Tissue parasites (angiostrongylus, gnathostoma, toxoplasma …)"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-05",
+   "title": "HIV ขั้นสูงกับท้องเสียเรื้อรัง: เลือก ART (HBV coinfection) และอ่าน stool modified AFB",
+   "stem": "A 36-year-old man has had watery diarrhoea 6–8 times a day for 8 weeks with 9 kg weight loss. HIV infection is confirmed by the three-test algorithm; CD4 count is 38 cells/µL. HBsAg is positive and creatinine is 0.9 mg/dL. Stool modified acid-fast stain shows round acid-fast oocysts 4–6 µm in diameter. Eosinophils are 2% of the white cell count. Serum cryptococcal antigen is negative, chest radiograph is normal and sputum Xpert MTB/RIF is negative. What is the most important management for his diarrhoea?",
+   "choices": [
+    "Start antiretroviral therapy with tenofovir + lamivudine (or emtricitabine) + dolutegravir as soon as possible, with oral rehydration (± nitazoxanide)",
+    "Trimethoprim–sulfamethoxazole 160/800 mg four times daily for 10 days as definitive therapy",
+    "Abacavir + lamivudine + dolutegravir after HLA-B*57:01 testing",
+    "Defer antiretroviral therapy until the diarrhoea resolves and the CD4 count is repeated in 3 months",
+    "Ivermectin 200 µg/kg daily for 2 days"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Cryptosporidium เกาะผิว enterocyte ทำให้ villi ฝ่อและหลั่งน้ำ ในคนภูมิปกติหายเองได้ แต่เมื่อ CD4 ต่ำร่างกายกำจัดเชื้อไม่ได้ ยาต้านปรสิตที่มีอยู่ได้ผลน้อย การฟื้นภูมิด้วย ART จึงเป็นการรักษาที่ได้ผลที่สุด\n\nทำไมข้อถูกถูก: oocyst กลมเล็ก 4–6 µm ติด modified AFB = Cryptosporidium ต้องเริ่ม ART เร็วที่สุด เลือกสูตร TLD เพราะมี HBV ร่วม (tenofovir + 3TC/FTC รักษาทั้ง HIV และ HBV) ไม่มี cryptococcal หรือ TB ที่ต้องเลื่อน ART\n\nตัวลวง: (1) TMP-SMX ใช้กับ Cystoisospora (oocyst รีใหญ่ 20–30 µm มัก eosinophilia) ไม่ได้ผลกับ Cryptosporidium (2) ABC/3TC/DTG ไม่มี tenofovir จึงคุม HBV ไม่ได้ และ 3TC เดี่ยวต่อ HBV ทำให้ดื้อยา (3) การรอ CD4 หรือรอให้ท้องเสียหายผิดหลัก treat all และทำให้โรคแย่ลง (4) ivermectin ใช้กับ Strongyloides ซึ่งพบ larva ในอุจจาระและมักมี eosinophilia",
+   "fullcover": "- **ยืนยัน HIV** ด้วยชุดตรวจ 3 ชนิดต่างหลักการ เด็ก <18 เดือนใช้ HIV DNA PCR\n- **Window period**: ผลลบในผู้ที่เพิ่งมีความเสี่ยง ให้ตรวจซ้ำหลังพ้น window หรือส่ง HIV RNA ถ้าสงสัย acute HIV; หญิงตั้งครรภ์เสี่ยงสูงตรวจซ้ำไตรมาส 3\n- สารที่ติดเชื้อได้: เลือด น้ำอสุจิ สารคัดหลั่งช่องคลอด น้ำนม; ปัสสาวะ น้ำลาย น้ำตา ไม่ติดถ้าไม่ปนเลือด; **PEP ภายใน 72 ชม.**\n- **Treat all**: เริ่ม ART ทุกราย; first-line **TDF + 3TC/FTC + DTG**\n- **HBV coinfection** ต้องมี tenofovir + 3TC/FTC; หยุดเองเสี่ยง HBV flare\n- เลื่อน ART เฉพาะ **cryptococcal meningitis (4–6 สัปดาห์)** และ TB meningitis; TB ปอดเริ่มใน 2 สัปดาห์\n- ผลข้างเคียง: TDF (ไต กระดูก), DTG (นอนไม่หลับ น้ำหนักขึ้น interaction กับยาลดกรดและธาตุเหล็ก), ABC (HLA-B*57:01), EFV (ฝันร้าย)\n- **Stool modified AFB**: Cryptosporidium กลม **4–6 µm** → **ART** + rehydration ± nitazoxanide; Cyclospora 8–10 µm และ **Cystoisospora รี 20–30 µm** → **TMP-SMX**\n- ท้องเสียเรื้อรังใน HIV อื่นๆ: microsporidia (albendazole บางชนิด), **CMV colitis** (CD4 <50 ถ่ายเป็นเลือด → ganciclovir), MAC, Giardia\n- **ยังไม่เคยออก:** **Strongyloides** ติดทางผิวหนังจากดิน อยู่ได้นานหลายสิบปี; ได้ steroid หรือ HTLV-1 → **hyperinfection** (ปอด ลำไส้ gram-negative sepsis/meningitis) → ivermectin; ควรคัดกรองก่อนให้ steroid ในผู้มาจากพื้นที่ระบาด\n- **ยังไม่เคยออก:** **Ascaris** (Löffler syndrome, ลำไส้อุดตัน, biliary ascariasis) และ **hookworm** (iron deficiency anemia, ground itch) → **albendazole 400 mg ครั้งเดียว**\n- **ยังไม่เคยออก:** **Taenia solium** จากหมูดิบ; ไข่ทำให้ **neurocysticercosis** (ชัก, cyst มี scolex) → albendazole + steroid เมื่อ cyst ยังมีชีวิต; T. saginata จากวัวรักษาด้วย praziquantel; **Opisthorchis** (ปลาดิบ อีสาน) สัมพันธ์ cholangiocarcinoma → praziquantel",
+   "pearl": "Crypto (เล็ก 4–6 µm) รักษาด้วย ART, Cystoisospora (ใหญ่ 20–30 µm) รักษาด้วย TMP-SMX; HBV ร่วมต้องมี tenofovir",
+   "covers_themes": [
+    "HIV: การวินิจฉัย (window period) และทางติดต่อ",
+    "HIV: เริ่ม ART และเลือกสูตร (TLD, HBV coinfection)",
+    "HIV chronic diarrhea: Cryptosporidium vs Cystoisospora (ขนาด oocyst)"
+   ],
+   "covers_nl": [
+    "Intestinal parasites (ascaris, hookworm, strongyloides, taenia …)"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-06",
+   "title": "STI รวม: secondary syphilis + gonococcal urethritis, แผลอวัยวะเพศ และ candidiasis ซ้ำ",
+   "stem": "A 26-year-old man who has sex with men presents with a 2-week, non-itchy rash on the trunk, palms and soles, and purulent urethral discharge with dysuria for 3 days. Six weeks ago he had a painless penile ulcer that healed without treatment. Examination shows copper-coloured scaly papules on the palms and soles, moist flat perianal plaques and generalised non-tender lymphadenopathy. He has no headache, visual or hearing symptoms, and the neurological examination is normal. A urethral Gram stain shows intracellular gram-negative diplococci. RPR is reactive at 1:64 and TPHA is positive. Anti-HIV is negative. He has no drug allergy. Which treatment is most appropriate?",
+   "choices": [
+    "Benzathine penicillin G 2.4 million units IM once plus ceftriaxone 500 mg IM once, with doxycycline 100 mg twice daily for 7 days if chlamydia is not excluded",
+    "Azithromycin 1 g orally as a single dose",
+    "Aqueous crystalline penicillin G IV for 10–14 days plus ceftriaxone 500 mg IM once",
+    "Benzathine penicillin G 2.4 million units IM weekly for 3 weeks plus ceftriaxone 500 mg IM once",
+    "Fluconazole 150 mg orally once plus doxycycline 100 mg twice daily for 7 days"
+   ],
+   "answer": 0,
+   "explain": "กลไก: T. pallidum กระจายทางเลือดหลัง chancre หาย 4–10 สัปดาห์ ทำให้ผื่นฝ่ามือฝ่าเท้า condyloma lata และต่อมน้ำเหลืองโตทั่วตัว เชื้อแบ่งตัวช้ามากจึงต้องใช้ penicillin ชนิดออกฤทธิ์นาน ส่วนหนองในเกิดจาก N. gonorrhoeae ซึ่งดื้อยาหลายกลุ่ม เหลือ ceftriaxone เป็นยาหลัก\n\nทำไมข้อถูกถูก: secondary syphilis ที่ไม่มีอาการทางระบบประสาท ตา หู เป็น early syphilis ใช้ benzathine penicillin G 2.4 MU ครั้งเดียว ร่วมกับ ceftriaxone 500 mg สำหรับ gonorrhea และให้ doxycycline เมื่อยังตัด chlamydia ไม่ได้\n\nตัวลวง: (1) azithromycin 1 g เป็นยาของ chancroid (แผลเจ็บ ขอบ undermined) ไม่พอสำหรับ gonorrhea และ T. pallidum ดื้อ macrolide (2) aqueous penicillin IV ใช้กับ neurosyphilis, ocular หรือ otic syphilis (3) benzathine 3 สัปดาห์ใช้กับ late latent หรือไม่ทราบระยะ (4) fluconazole ใช้กับ candidiasis ซึ่งไม่ทำให้เกิดหนองแบบนี้",
+   "fullcover": "- **แผลอวัยวะเพศ**: syphilis = ไม่เจ็บ ขอบแข็ง; **chancroid** = เจ็บ ขอบ undermined + bubo กดเจ็บ → **azithromycin 1 g หรือ ceftriaxone 250 mg IM ครั้งเดียว**; HSV = ตุ่มน้ำกลุ่ม แผลตื้นหลายแผล; LGV = ต่อมน้ำเหลืองขาหนีบโต\n- **Secondary syphilis**: ผื่นฝ่ามือฝ่าเท้า สีน้ำตาลแดง, mucous patch, **condyloma lata**, ผมร่วงเป็นหย่อม, ต่อมน้ำเหลืองโตทั่วตัว\n- Serology: **RPR/VDRL** คัดกรองและติดตาม (ลด 4 เท่า), **TPHA/FTA-ABS** ยืนยันและบวกตลอดชีวิต; ระวัง prozone\n- **Early syphilis**: benzathine penicillin G 2.4 MU IM ครั้งเดียว; **late latent**: ทุกสัปดาห์ 3 ครั้ง; **neurosyphilis/ocular/otic**: aqueous penicillin G IV 10–14 วัน\n- Neurosyphilis: CSF VDRL บวกช่วยยืนยัน, CSF FTA-ABS ลบช่วยตัดโรค; แพ้ penicillin ใช้ doxycycline ส่วน **คนท้องต้อง desensitize**\n- **Jarisch–Herxheimer**: ไข้ หนาวสั่นภายใน 24 ชม. หลังฉีด ไม่ใช่แพ้ยา\n- **Gonorrhea**: ceftriaxone 500 mg IM ครั้งเดียว + doxycycline 7 วันถ้ายังตัด chlamydia ไม่ได้\n- **M. genitalium**: urethritis ที่ไม่หายหลัง doxycycline และ NAAT gonorrhea/chlamydia ลบ → doxycycline นำแล้ว moxifloxacin\n- **DGI**: migratory polyarthralgia + tenosynovitis + pustule ไม่เจ็บ → ceftriaxone 1 g IV วันละครั้ง; เป็นซ้ำตรวจ terminal complement\n- **Candidiasis ซ้ำ** (≥3 ครั้งต่อปี): หา DM, HIV, steroid, ยาปฏิชีวนะ; maintenance fluconazole สัปดาห์ละครั้ง 6 เดือน; ไม่ต้องรักษาคู่นอนเป็นประจำ\n- ทุก STI: ตรวจ HIV, syphilis, HBV, HCV, รักษาคู่นอน และเสนอ HIV PrEP ในกลุ่มเสี่ยง\n- **ยังไม่เคยออก:** **doxy-PEP** (doxycycline 200 mg ภายใน 72 ชม. หลังมีเพศสัมพันธ์) ลด syphilis และ chlamydia ในชายที่มีเพศสัมพันธ์กับชายที่เคยเป็น STI\n- **ยังไม่เคยออก:** syphilis ที่มีอาการตา (uveitis) หรือหู ให้รักษาแบบ neurosyphilis แม้ CSF ปกติ",
+   "pearl": "Early syphilis = benzathine 2.4 MU ครั้งเดียว; หนองใน = ceftriaxone 500 mg; แผลเจ็บ + bubo = chancroid ใช้ azithromycin",
+   "covers_themes": [
+    "Chancroid/painful genital ulcer: เลือกยา azithromycin",
+    "Syphilis: วินิจฉัย (VDRL, CSF VDRL), ผื่น secondary syphilis และรักษา (benzathine penicillin)",
+    "Recurrent candidiasis: หาโรคพื้นฐาน (DM)",
+    "Urethritis/STD: เชื้อก่อโรค (M. genitalium, disseminated gonococcal infection)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-INFECT-07",
+   "title": "ไข้เฉียบพลันหลังน้ำท่วม: leptospirosis รุนแรง แยกจาก scrub typhus, dengue และ zoonosis อื่น",
+   "stem": "A 45-year-old rice farmer from Sisaket presents in October, two weeks after his fields flooded, with 5 days of high fever, headache and severe calf pain, and 1 day of yellow eyes and dark urine. Temperature 39.0°C, pulse 104/min, BP 110/70 mmHg, respiratory rate 20/min, SpO2 97%. He has conjunctival suffusion, icteric sclerae and marked calf tenderness; there is no eschar on a full-body examination and no rash. Hb 12.8 g/dL, Hct 38%, WBC 13,500/µL (neutrophils 85%), platelets 62,000/µL, total bilirubin 9.8 mg/dL (direct 7.6 mg/dL), AST 96 U/L, ALT 72 U/L, BUN 58 mg/dL, creatinine 3.4 mg/dL, K 3.1 mEq/L, CPK 1,850 U/L. Urine output is 1,500 mL/day. Thick and thin blood films are negative for malaria and the dengue NS1 antigen test is negative. Which is the most appropriate management now?",
+   "choices": [
+    "Start IV penicillin G (or ceftriaxone) immediately after sending blood for Leptospira PCR and serology, with close monitoring of renal and respiratory function",
+    "Withhold antibiotics until a microscopic agglutination test on paired sera confirms the diagnosis",
+    "Oral doxycycline 100 mg twice daily for 7 days as an outpatient",
+    "Restricted isotonic IV fluid guided by serial haematocrit, without antibiotics",
+    "Prophylactic platelet transfusion and IV dexamethasone"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Leptospira ไชผ่านผิวถลอกจากน้ำปนปัสสาวะหนู กระจายในเลือดแล้วทำลาย endothelium ทั่วร่างกาย เกิด vasculitis ที่ตา (conjunctival suffusion) กล้ามเนื้อ (CPK สูง ปวดน่อง) ตับ (bilirubin สูงมากแต่ transaminase สูงไม่มาก) และท่อไตส่วนต้น (AKI แบบปัสสาวะไม่น้อย มี hypokalemia) รวมเป็น Weil's disease\n\nทำไมข้อถูกถูก: severe leptospirosis ต้องให้ penicillin G IV หรือ ceftriaxone ทันทีโดยไม่รอผลยืนยัน และเฝ้าระวัง pulmonary hemorrhage และไตวายที่อาจต้อง dialysis\n\nตัวลวง: (1) MAT เป็น gold standard แต่ต้องใช้ paired sera ผลช้า และ antibody ยังไม่ขึ้นในสัปดาห์แรก ห้ามรอ (2) doxycycline กินใช้กับ lepto อาการน้อยและ scrub typhus ที่มี eschar รายนี้รุนแรงต้อง admit และให้ยาฉีด (3) IV fluid ตาม Hct โดยไม่ให้ยาเป็นแนวทาง dengue ซึ่งมัก leukopenia และ Hct สูงขึ้น ต่างจากรายนี้ที่ neutrophilia (4) การให้เกล็ดเลือดป้องกันและ steroid ไม่มีประโยชน์ทั้งใน dengue และ leptospirosis",
+   "fullcover": "- **Leptospirosis**: ปัสสาวะหนู + ลุยน้ำ/ทำนา, ไข้สูง **ปวดน่อง**, **conjunctival suffusion**, biphasic course\n- **Weil's disease**: bilirubin สูงมากแต่ AST/ALT สูงไม่มาก, **AKI แบบ non-oliguric + hypokalemia**, เกล็ดเลือดต่ำ, CPK สูง; **pulmonary hemorrhage** ตายมากที่สุด\n- ตรวจ: สัปดาห์แรก **PCR เลือด**/culture; หลังจากนั้น serology; **MAT** paired sera titer เพิ่ม 4 เท่า = gold standard; IFA/rapid test ใช้คัดกรอง\n- รักษา: น้อยใช้ **doxycycline** กิน; รุนแรงใช้ **penicillin G IV หรือ ceftriaxone** + dialysis เมื่อจำเป็น; อย่ารอผลยืนยัน\n- **Scrub typhus**: chigger, **eschar** ในที่อับ ต้องตรวจทั้งตัว → **doxycycline 7 วัน** (คนท้องใช้ azithromycin) ไข้ลงใน 24–48 ชม.\n- ไข้ไม่ทราบสาเหตุในชนบทไทย ถ้ายังแยก lepto กับ scrub ไม่ได้ ให้ doxycycline (อาการน้อย) หรือ ceftriaxone ร่วม doxycycline (รุนแรง) ครอบคลุมทั้งสองโรค\n- **Dengue**: ระยะไข้ → critical (ไข้ลง plasma leakage) → recovery; leukopenia, Hct สูงพร้อมเกล็ดเลือดลด; NS1/PCR วันที่ 1–5, IgM หลังวันที่ 5\n- รักษา dengue: isotonic crystalloid ตาม Hct และปัสสาวะ, **ห้าม NSAIDs และ IM**, ไม่ให้เกล็ดเลือดป้องกัน steroid หรือ G-CSF, ลด IV fluid ในระยะ reabsorption\n- Malaria ต้องตัดด้วย blood film ทุกรายที่มาจากป่าหรือชายแดน\n- **ยังไม่เคยออก:** **Cutaneous anthrax** (ชำแหละวัวควายที่ตาย): ตุ่มไม่เจ็บกลายเป็น **eschar สีดำร่วมบวมน้ำรอบมาก** → ciprofloxacin หรือ doxycycline; inhalational anthrax มี mediastinum กว้าง\n- **ยังไม่เคยออก:** **Brucellosis** (นมดิบ แพะ วัว): ไข้เป็นช่วง (undulant), เหงื่อออก, ปวดข้อ sacroiliitis, spondylitis, ตับม้ามโต → doxycycline ร่วม rifampicin หรือ aminoglycoside นานหลายสัปดาห์\n- **ยังไม่เคยออก:** zoonosis อื่นในไทย: **Streptococcus suis** (หมูดิบ ลาบหลู้ → meningitis + **หูหนวก** → ceftriaxone), murine typhus (หมัดหนู ในเมือง ไม่มี eschar)",
+   "pearl": "น้ำท่วม + ปวดน่อง + ตาแดงไม่มีขี้ตา + เหลือง + ไตวาย = lepto รุนแรง ให้ penicillin/ceftriaxone ทันทีไม่รอ MAT",
+   "covers_themes": [
+    "Leptospirosis: วินิจฉัยจาก conjunctival suffusion, jaundice, calf pain",
+    "Leptospirosis: การตรวจยืนยัน (MAT, IFA) และทางติดต่อ",
+    "Scrub typhus: eschar → doxycycline",
+    "Dengue: วินิจฉัย, ระยะโรค, fluid management"
+   ],
+   "covers_nl": [
+    "Zoonosis (brucellosis, anthrax …)"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-08",
+   "title": "Malaria จากชายแดนไทย: แยก species จาก smear และเลือกยาให้ถูกสถานการณ์",
+   "stem": "A 30-year-old male forest ranger who works along the Thai–Myanmar border and took no chemoprophylaxis has had fever with chills every other day for 4 days. He is alert, can take oral medication, and has no jaundice or bleeding. Temperature 39.4°C, BP 118/72 mmHg. Hb 12.6 g/dL, platelets 88,000/µL, creatinine 0.9 mg/dL, blood glucose 104 mg/dL. A thin blood film shows enlarged, pale infected red cells with Schüffner's dots and amoeboid trophozoites, with 0.4% parasitaemia; no crescent-shaped gametocytes are seen. A rapid diagnostic test is positive for pan-LDH and negative for HRP2. Quantitative G6PD activity is normal. Which treatment is most appropriate?",
+   "choices": [
+    "Chloroquine for 3 days plus primaquine for 14 days",
+    "Dihydroartemisinin–piperaquine for 3 days plus a single low dose of primaquine only",
+    "IV artesunate followed by a full course of an artemisinin-based combination",
+    "Quinine plus clindamycin for 7 days",
+    "Doxycycline 100 mg daily for 4 weeks"
+   ],
+   "answer": 0,
+   "explain": "กลไก: P. vivax เลือกติด reticulocyte ทำให้ RBC ที่ติดเชื้อโตและเห็น Schüffner's dots และมีระยะ hypnozoite หลับอยู่ในตับ ยาที่ฆ่าเชื้อในเลือดอย่างเดียวจึงไม่พอ ต้องมี primaquine 14 วันกำจัด hypnozoite ซึ่งทำให้เม็ดเลือดแดงแตกในคนที่ขาด G6PD\n\nทำไมข้อถูกถูก: vivax ที่ไม่รุนแรง G6PD ปกติ ใช้ chloroquine 3 วัน + primaquine 14 วัน (radical cure) ตามแนวทางไทย\n\nตัวลวง: (1) DHA–piperaquine + primaquine ขนาดต่ำครั้งเดียว เป็นสูตร falciparum ที่ไม่รุนแรง primaquine ขนาดนี้ตัดแค่ gametocyte ไม่กำจัด hypnozoite (2) IV artesunate ใช้กับ severe malaria ซึ่งรายนี้ไม่มีเกณฑ์ (3) quinine + clindamycin ใช้กับ falciparum ในหญิงตั้งครรภ์ไตรมาสแรก (4) doxycycline 100 mg ต่อเนื่องเป็นยาป้องกันก่อนเข้าป่า ไม่ใช่การรักษา",
+   "fullcover": "- ตรวจ **thick film** (คัดกรอง) + **thin film** (species, % parasitemia); RDT: HRP2 = falciparum, pan-LDH = ทุก species; ตรวจซ้ำ 3 ครั้งก่อนตัดโรค\n- **Falciparum**: RBC ไม่โต ring เล็ก double chromatin หลายตัวต่อเซลล์ **gametocyte รูปกล้วย** parasitemia สูงได้\n- **Vivax/ovale**: RBC โตซีด **Schüffner's dots** amoeboid trophozoite มี **hypnozoite** จึง relapse\n- P. malariae: band form ไข้ทุก 72 ชม.; **P. knowlesi** (ลิงแสม ภาคใต้) คล้าย malariae แต่รุนแรงได้\n- **Uncomplicated falciparum**: **DHA–piperaquine 3 วัน + primaquine single low dose** (ตัดการแพร่ ไม่ต้องตรวจ G6PD)\n- **Vivax/ovale**: **chloroquine 3 วัน + primaquine 14 วัน** หลังตรวจ **G6PD**; ขาด G6PD ให้ primaquine สัปดาห์ละครั้ง 8 สัปดาห์ภายใต้การดูแล\n- **Severe malaria** (สติเปลี่ยน ชัก ช็อก pulmonary edema ไตวาย hypoglycemia acidosis ซีดมาก parasitemia >10%) → **IV artesunate** ทุกไตรมาส แล้วต่อ ACT; ระวัง delayed hemolysis\n- **ตั้งครรภ์**: ไตรมาสแรก quinine + clindamycin (WHO 2022 ให้ artemether–lumefantrine ได้); ไตรมาส 2–3 ใช้ ACT; **ห้าม primaquine, tafenoquine, doxycycline**\n- Quinine ทำให้ **hypoglycemia**, cinchonism และ QT ยาว\n- **Chemoprophylaxis ชายแดนไทย**: **doxycycline 100 mg/วัน** เริ่ม 1–2 วันก่อน ต่อ 4 สัปดาห์หลังออก หรือ atovaquone–proguanil (ต่อ 7 วันหลังออก); chloroquine และ mefloquine ดื้อ\n- ป้องกันยุงกัดสำคัญที่สุด: มุ้งชุบสารเคมี DEET เสื้อแขนยาว; ไข้หลังออกจากป่าต้องตรวจ smear เสมอ\n- **ยังไม่เคยออก:** **tafenoquine** ครั้งเดียวใช้แทน primaquine 14 วันได้ แต่ต้องตรวจ G6PD เชิงปริมาณก่อนและห้ามในหญิงตั้งครรภ์",
+   "pearl": "Vivax = chloroquine + primaquine 14 วัน (ตรวจ G6PD); falciparum = ACT + primaquine ครั้งเดียว; รุนแรง = IV artesunate",
+   "covers_themes": [
+    "Malaria: วินิจฉัยและแยกชนิดเชื้อจาก blood smear",
+    "Malaria: การรักษา (ACT, หญิงตั้งครรภ์)",
+    "Malaria chemoprophylaxis: doxycycline ก่อนเข้าป่า"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-INFECT-09",
+   "title": "ฝีตับหลายตำแหน่งในชาวนาเบาหวาน: melioidosis vs Klebsiella vs amoeba และ Salmonella/typhoid",
+   "stem": "A 52-year-old rice farmer from Ubon Ratchathani with poorly controlled type 2 diabetes (HbA1c 11.2%) has had fever for 10 days with right upper quadrant pain. Temperature 39.1°C, pulse 108/min, BP 112/68 mmHg. He has tender hepatomegaly and a palpable spleen. WBC 17,800/µL (neutrophils 88%), alkaline phosphatase 310 U/L, blood glucose 286 mg/dL. CT of the abdomen shows several multiloculated, honeycomb-like hypodense lesions in the liver and multiple small splenic abscesses. Blood cultures grow oxidase-positive gram-negative bacilli with bipolar ('safety-pin') staining that form wrinkled colonies on Ashdown agar and are resistant to gentamicin. Which antimicrobial plan is most appropriate?",
+   "choices": [
+    "IV ceftazidime (or meropenem) for at least 2 weeks, followed by oral trimethoprim–sulfamethoxazole for 3–6 months",
+    "IV ceftriaxone plus metronidazole with percutaneous drainage for 4–6 weeks",
+    "Oral metronidazole followed by a luminal agent such as paromomycin",
+    "Oral azithromycin for 7 days",
+    "IV gentamicin plus ampicillin for 2 weeks"
+   ],
+   "answer": 0,
+   "explain": "กลไก: B. pseudomallei อยู่ในดินและน้ำนาข้าว เข้าทางผิวหนัง การหายใจ หรือกลืน เบาหวานทำให้ neutrophil ทำงานบกพร่อง เชื้อจึงกระจายทางเลือดเกิดฝีหลายอวัยวะ เชื้อยังซ่อนในเซลล์ได้ จึง relapse ถ้าไม่ได้ยาระยะ eradication\n\nทำไมข้อถูกถูก: GN bacilli ติดสีสองปลาย โคโลนีย่นบน Ashdown agar ดื้อ gentamicin + ฝีตับม้ามแบบ honeycomb ใน DM = melioidosis รักษา intensive phase ด้วย ceftazidime หรือ meropenem อย่างน้อย 10–14 วัน (นานขึ้นเมื่อมีฝีลึก) แล้วต่อ TMP-SMX กิน 3–6 เดือน\n\nตัวลวง: (1) ceftriaxone + metronidazole + drainage เป็นการรักษา pyogenic liver abscess จาก K. pneumoniae ซึ่งเป็นสาเหตุอันดับหนึ่งในเอเชีย แต่ ceftriaxone ได้ผลไม่ดีกับ B. pseudomallei (2) metronidazole + luminal agent สำหรับ amoebic liver abscess ซึ่งมักเป็นฝีเดี่ยว (3) azithromycin กินเป็นยารักษา typhoid ที่ไม่รุนแรง (4) B. pseudomallei ดื้อ aminoglycoside โดยธรรมชาติ",
+   "fullcover": "- **Melioidosis**: ดิน/น้ำ นาข้าวอีสาน ฤดูฝน; ปัจจัยเสี่ยง **DM** > CKD, ติดสุรา, thalassemia, steroid\n- อาการ: pneumonia, sepsis, **ฝีหลายตำแหน่ง** (ตับ ม้าม prostate; parotid ในเด็ก); ฝีตับม้ามแบบ **honeycomb**\n- Lab: **GN bacilli ติดสีสองปลาย (safety-pin)**, เพาะบน **Ashdown agar** ได้โคโลนีย่น, **ดื้อ gentamicin**; serology ช่วยน้อยในพื้นที่ระบาด\n- รักษา: **ceftazidime หรือ meropenem** (รุนแรง) IV ≥10–14 วัน → **TMP-SMX 3–6 เดือน** (eradication) ระบายฝีใหญ่\n- B. pseudomallei **ดื้อ aminoglycoside และ colistin** และ ceftriaxone ได้ผลไม่ดี\n- **Pyogenic liver abscess (Klebsiella hypervirulent)**: DM, ฝีเดี่ยวหรือหลายก้อน, เสี่ยง **endophthalmitis**, ต้องระบาย + ceftriaxone ± metronidazole\n- **Amoebic liver abscess**: ชายวัยกลางคน ฝีเดี่ยวกลีบขวา anchovy paste, serology บวก → metronidazole แล้ว luminal agent; มักไม่ต้องระบาย\n- **Salmonella**: NTS gastroenteritis ไม่ต้องให้ยา ยกเว้นกลุ่มเสี่ยง; NTS bacteremia ผู้สูงอายุ → **mycotic aneurysm**; hemoglobinopathy → osteomyelitis; chronic carrier สัมพันธ์นิ่วถุงน้ำดี\n- **Typhoid (enteric fever)**: ไข้สูงขึ้นทีละขั้น, relative bradycardia, rose spots, ม้ามโต, leukopenia, ท้องผูกหรือท้องเสีย\n- วินิจฉัย typhoid: **hemoculture** สัปดาห์แรก (bone marrow ไวที่สุด); **Widal ไม่น่าเชื่อถือ**\n- **ยังไม่เคยออก:** รักษา typhoid ด้วย **ceftriaxone** (รุนแรง) หรือ **azithromycin** (ไม่รุนแรง); fluoroquinolone ดื้อมากในเอเชีย; typhoid ที่มีสติเปลี่ยนหรือช็อกให้ dexamethasone ขนาดสูง\n- **ยังไม่เคยออก:** ภาวะแทรกซ้อน typhoid สัปดาห์ที่ 3: **ลำไส้ทะลุ**ที่ terminal ileum และเลือดออกทางเดินอาหาร; **paratyphoid** อาการคล้ายแต่เบากว่า; ป้องกันด้วยน้ำและอาหารสะอาด และ typhoid conjugate vaccine",
+   "pearl": "ชาวนาอีสาน + DM + ฝีตับม้ามแบบรังผึ้ง + safety-pin = melioidosis: ceftazidime/meropenem แล้ว TMP-SMX 3–6 เดือน",
+   "covers_themes": [
+    "Melioidosis & pyogenic liver abscess: เดาเชื้อ (B. pseudomallei, Klebsiella)",
+    "Salmonella: ภาวะแทรกซ้อน/ภาวะที่สัมพันธ์"
+   ],
+   "covers_nl": [
+    "Typhoid / paratyphoid"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-10",
+   "title": "ไข้หวัดใหญ่ในหญิงตั้งครรภ์: oseltamivir, infection control และวัคซีน",
+   "stem": "During the rainy season, a 32-year-old woman at 24 weeks' gestation presents with 30 hours of abrupt fever, myalgia, headache, dry cough and sore throat. Several family members had a similar illness last week. She did not receive an influenza vaccine this year. Temperature 38.9°C, pulse 104/min, respiratory rate 20/min, BP 112/68 mmHg, SpO2 97% on room air, and the lungs are clear. Nasopharyngeal swabs for influenza and SARS-CoV-2 are sent and the results will be available tomorrow. Which is the most appropriate management?",
+   "choices": [
+    "Start oseltamivir 75 mg twice daily for 5 days now without waiting for the test results, and use droplet plus standard precautions",
+    "Withhold antiviral therapy because she has no pneumonia and is not severely ill",
+    "Admit her to an airborne-infection isolation room and require N95 respirators for all staff, as for varicella",
+    "Give live attenuated influenza vaccine today to boost her immunity",
+    "Give azithromycin for presumed pertussis"
+   ],
+   "answer": 0,
+   "explain": "กลไก: influenza virus ใช้ hemagglutinin เกาะ sialic acid ของเยื่อบุทางเดินหายใจ และใช้ neuraminidase ปล่อยไวรัสออกจากเซลล์ oseltamivir ยับยั้ง neuraminidase จึงได้ผลมากเมื่อให้เร็ว หญิงตั้งครรภ์มีการเปลี่ยนแปลงของหัวใจ ปอด และภูมิคุ้มกัน จึงเสี่ยงปอดอักเสบ ICU และเสียชีวิตสูงกว่าคนทั่วไป\n\nทำไมข้อถูกถูก: หญิงตั้งครรภ์เป็นกลุ่มเสี่ยงสูง ต้องเริ่ม oseltamivir ทันทีตามอาการโดยไม่รอผลตรวจ (ได้ประโยชน์แม้เกิน 48 ชม. ในกลุ่มเสี่ยง) influenza แพร่ทาง droplet เป็นหลัก ใช้ surgical mask, hand hygiene และ standard precaution\n\nตัวลวง: (1) การไม่ให้ยาเพราะยังไม่มีปอดอักเสบใช้ได้เฉพาะคนแข็งแรงที่ไม่เสี่ยง (2) airborne isolation ใช้กับ TB, measles, varicella และ disseminated zoster (3) live attenuated vaccine ห้ามในหญิงตั้งครรภ์ และวัคซีนไม่ใช่การรักษา ควรให้ inactivated vaccine หลังหายป่วย (4) pertussis ไอเป็นชุดนานเกิน 2 สัปดาห์ มีเสียง whoop หรืออาเจียนหลังไอ ไม่ใช่ไข้สูงเฉียบพลันแบบนี้",
+   "fullcover": "- **Influenza**: ไข้สูงเฉียบพลัน ปวดกล้ามเนื้อ ไอแห้ง ระบาดฤดูฝนและหนาว; ตรวจ RT-PCR (rapid antigen ไวต่ำ)\n- **Oseltamivir 75 mg bid 5 วัน** ให้ทันทีโดยไม่รอผลในกลุ่มเสี่ยง: ตั้งครรภ์และหลังคลอด 2 สัปดาห์, อายุ ≥65, เด็กเล็ก, โรคเรื้อรัง, ภูมิต่ำ, อ้วนมาก หรือผู้ป่วยที่ต้อง admit\n- ภาวะแทรกซ้อน: viral pneumonia, **secondary bacterial pneumonia (S. aureus รวม MRSA, pneumococcus)**, myocarditis, encephalitis, rhabdomyolysis\n- **Hand hygiene** เป็นมาตรการเดียวที่ป้องกัน HAI ได้ดีที่สุด ตาม WHO 5 moments; ล้างด้วยสบู่เมื่อเปื้อนหรือ C. difficile\n- Isolation: **airborne** (TB, measles, varicella, disseminated zoster), **droplet** (influenza, pertussis, diphtheria, meningococcus, mumps), **contact** (MRSA, CRE, C. difficile)\n- **COVID-19**: แพร่ทาง aerosol/airborne ร่วม droplet และ contact; ตรวจทั่วไปใช้ mask + eye protection + gown + gloves; AGP ต้อง N95 ที่ fit test\n- หน้ากาก: N95 > medical mask > ผ้า; ลำดับถอด PPE ให้ถอดถุงมือก่อน หน้ากากสุดท้าย\n- **วัคซีนในครรภ์**: inactivated influenza (ทุกไตรมาส ไทยเน้นตั้งแต่ 4 เดือน), **Tdap ทุกครรภ์**, COVID-19; ห้าม live vaccine\n- กลุ่มที่ควรได้ influenza vaccine ทุกปี: ตั้งครรภ์, ≥65 ปี, เด็ก 6 เดือน–2 ปี, โรคเรื้อรัง, ภูมิต่ำ, บุคลากรการแพทย์\n- **Asplenia**: เสี่ยง OPSI จาก encapsulated bacteria → pneumococcal, Hib, meningococcal vaccine ≥2 สัปดาห์ก่อนหรือหลังผ่าตัด และให้ antibiotic ทันทีเมื่อมีไข้\n- **ยังไม่เคยออก:** **Pertussis**: catarrhal → paroxysmal (ไอเป็นชุด whoop อาเจียนหลังไอ) นานเป็นสัปดาห์, lymphocytosis; ทารกอาจหยุดหายใจ → **azithromycin** + droplet isolation + ให้ยาผู้สัมผัสใกล้ชิด\n- **ยังไม่เคยออก:** influenza prophylaxis หลังสัมผัสในกลุ่มเสี่ยงใช้ oseltamivir วันละครั้ง; baloxavir ใช้ในผู้ใหญ่ไม่ตั้งครรภ์",
+   "pearl": "ไข้หวัดใหญ่ในคนท้อง = oseltamivir ทันทีไม่รอผล + droplet precaution; ห้ามวัคซีนเชื้อเป็นในครรภ์ ให้ Tdap ทุกครรภ์",
+   "covers_themes": [
+    "COVID-19 infection control: การแพร่เชื้อ, PPE, หน้ากาก",
+    "Infection control: hand hygiene ป้องกัน nosocomial, isolation precaution (VZV → airborne)",
+    "วัคซีนและกลุ่มเสี่ยง: COVID/influenza priority, asplenia"
+   ],
+   "covers_nl": [
+    "Influenza",
+    "Pertussis"
+   ]
+  },
+  {
+   "id": "SYN-INFECT-11",
+   "title": "อัมพาตจาก neurotoxin และ neuro-infection: botulism vs tetanus vs rabies vs polio",
+   "stem": "Four villagers in Nan province became ill 18–36 hours after sharing home-canned bamboo shoots. A 48-year-old man (weight 70 kg) has blurred and double vision, ptosis, slurred speech and difficulty swallowing, followed by symmetric weakness descending to both arms. He is afebrile, alert and oriented, and sensation is normal. Pupils are dilated and poorly reactive; deep tendon reflexes are reduced. There is no trismus, no muscle rigidity, no hydrophobia and no history of an animal bite or wound. Forced vital capacity is 1.5 L and falling. CSF: protein 38 mg/dL, 2 cells/µL. Which is the most appropriate management?",
+   "choices": [
+    "Give botulinum antitoxin as soon as possible without waiting for the toxin assay, with ICU monitoring and early intubation if needed",
+    "Human tetanus immunoglobulin, metronidazole and wound debridement",
+    "Rabies vaccine with rabies immunoglobulin",
+    "IV immunoglobulin or plasma exchange, as for Guillain–Barré syndrome",
+    "Supportive care only, as the presentation is acute poliomyelitis"
+   ],
+   "answer": 0,
+   "explain": "กลไก: botulinum toxin ตัดโปรตีน SNARE ที่ปลายประสาท cholinergic ทำให้ไม่หลั่ง acetylcholine เกิดอัมพาตแบบอ่อนปวกเปียก เริ่มจาก cranial nerve (ตาพร่า เห็นภาพซ้อน หนังตาตก กลืนลำบาก) แล้วลงมาสองข้างเท่ากัน ร่วมอาการ anticholinergic เช่น รูม่านตาขยาย ปากแห้ง ความรู้สึกปกติ ไม่มีไข้ อาหารกระป๋องทำเองที่ไม่ผ่านความร้อนพอ (หน่อไม้ปี๊บ) เป็นแหล่งคลาสสิกในไทย\n\nทำไมข้อถูกถูก: antitoxin จับได้เฉพาะ toxin ที่ยังไม่เข้าปลายประสาท จึงต้องให้เร็วที่สุดตามอาการ ไม่รอผลตรวจ toxin และเฝ้าระวังการหายใจ (FVC ราว 21 mL/kg และลดลงเรื่อยๆ ใกล้เกณฑ์ใส่ท่อ)\n\nตัวลวง: (1) HTIG + metronidazole + debridement เป็นการรักษา tetanus ซึ่งเป็น spastic paralysis มี trismus และ rigidity (2) rabies vaccine + RIG เป็น PEP ก่อนมีอาการ เมื่อเป็น paralytic rabies แล้วไม่ช่วย และรายนี้ไม่มีประวัติถูกกัด (3) GBS เป็นอัมพาตขึ้นจากขา มีชาและ CSF protein สูงโดยเซลล์ปกติ ไม่มีรูม่านตาขยาย (4) poliomyelitis มีไข้ อ่อนแรงไม่สมมาตร CSF มีเซลล์เพิ่ม และไม่เกิดเป็นกลุ่มหลังกินอาหารร่วมกัน",
+   "fullcover": "- **Tetanus**: tetanospasmin ยับยั้ง GABA/glycine → **trismus**, risus sardonicus, opisthotonus, spasm, รู้สติดี; วินิจฉัยทางคลินิก\n- รักษา tetanus: ICU เงียบ, **benzodiazepine** ± magnesium, airway, **HTIG**, **metronidazole**, debridement, **tetanus toxoid ครบชุด** (เป็นโรคแล้วไม่มีภูมิ); เฝ้าระวัง autonomic instability\n- ป้องกันบาดทะยักหลังแผล: แผลสกปรกให้ Td เมื่อเข็มสุดท้าย >5 ปี และ TIG เมื่อเคยได้ <3 เข็มหรือไม่ทราบ\n- **Rabies PEP**: category II วัคซีนอย่างเดียว, **category III วัคซีน + RIG** ฉีดรอบแผล; เคยได้วัคซีนครบให้กระตุ้น 2 เข็มไม่ต้อง RIG; ล้างแผลด้วยสบู่ 15 นาที\n- Rabies เมื่อมีอาการ: furious (hydrophobia, aerophobia) หรือ paralytic (คล้าย GBS) ตายเกือบทั้งหมด\n- **Botulism**: อาหารกระป๋องทำเอง (หน่อไม้ปี๊บ), wound botulism, infant botulism (น้ำผึ้ง); **descending symmetric flaccid paralysis** เริ่มที่ cranial nerve, รูม่านตาขยาย, ไม่มีไข้, ความรู้สึกปกติ\n- รักษา botulism: **antitoxin เร็วที่สุด**, ติดตาม FVC และใส่ท่อเมื่อ FVC ลดต่ำ (ราว <20 mL/kg), แจ้งระบาดวิทยาเพื่อหาผู้ป่วยรายอื่น; aminoglycoside ทำให้แย่ลง\n- **GBS**: อ่อนแรงขึ้นจากขา reflex หาย มีชา CSF **albuminocytologic dissociation** → IVIG หรือ plasma exchange\n- **Myasthenia gravis**: อ่อนแรงล้าเมื่อใช้ ตาตก ภาพซ้อน แต่รูม่านตาปกติ → pyridostigmine\n- **ยังไม่เคยออก:** **Poliomyelitis**: ไข้ แล้ว **asymmetric flaccid paralysis** ขามากกว่าแขน, reflex ลด, ความรู้สึกปกติ, CSF lymphocytosis; ทุก **acute flaccid paralysis (AFP)** ในเด็ก <15 ปี ต้องรายงานและเก็บอุจจาระ 2 ครั้งห่าง 24 ชม.\n- **ยังไม่เคยออก:** vaccine-derived poliovirus จาก OPV เป็นเหตุผลที่เพิ่ม IPV; post-polio syndrome คืออ่อนแรงใหม่หลายสิบปีต่อมา\n- **ยังไม่เคยออก:** botulinum toxin ที่ใช้ความงามเกินขนาดทำให้เกิด iatrogenic botulism ได้",
+   "pearl": "อัมพาตลงจากหัวสองข้าง + ม่านตาขยาย + ไม่มีไข้ หลังกินหน่อไม้ปี๊บ = botulism ให้ antitoxin ไม่รอผล; เกร็ง + trismus = tetanus",
+   "covers_themes": [
+    "Tetanus: การรักษาครบ (debridement, metronidazole, TIG, toxoid)",
+    "Rabies: post-exposure prophylaxis ตาม WHO category"
+   ],
+   "covers_nl": [
+    "Botulism",
+    "Poliomyelitis"
+   ]
+  }
+ ]
+}

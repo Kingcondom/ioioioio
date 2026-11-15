@@ -1,0 +1,392 @@
+{
+ "one_per_theme": [
+  {
+   "theme": "ปฏิกิริยาจากการให้เลือด: FNHTR, allergic, TACO",
+   "id": "HE-OLDP-024",
+   "related": "- **Allergic (urticarial)**: มีแต่ลมพิษ/คัน ไม่มีไข้ ไม่มีความดันตก → หยุดชั่วคราว ให้ antihistamine แล้ว**ให้ต่อจากถุงเดิมได้** เป็นชนิดเดียวที่ให้ต่อได้ ถ้ามี angioedema หายใจลำบาก ความดันตก = **anaphylaxis** (นึกถึง IgA deficiency ที่มี anti-IgA) → หยุดถาวร ให้ adrenaline IM ครั้งต่อไปใช้ washed RBC\n- **FNHTR** เป็น diagnosis of exclusion ต้องหยุดให้เลือดก่อนเสมอ แล้วตัด acute hemolytic และ bacterial contamination ออก ป้องกันครั้งหน้าด้วย **leukoreduced blood** ให้ paracetamol รักษาไข้ได้\n- **ไข้ร่วมกับความดันตก ปวดหลัง/เอว ปัสสาวะสีเข้ม** = acute hemolytic (ABO incompatible ส่วนใหญ่จาก clerical error) → หยุดทันที เช็กชื่อ-หมู่เลือด ส่งถุงและเลือดผู้ป่วยไป blood bank (DAT, crossmatch ซ้ำ) ให้สารน้ำรักษา urine output ระวัง DIC/AKI\n- ไข้สูง หนาวสั่น ช็อกทันที โดยเฉพาะหลังให้ **platelet** (เก็บที่อุณหภูมิห้อง) → คิดถึง **bacterial contamination** ส่ง hemoculture ทั้งผู้ป่วยและถุง เริ่มยาปฏิชีวนะ\n- **TACO**: ผู้สูงอายุ หัวใจล้มเหลว ไตวาย ซีดเรื้อรัง → หอบ **ความดันสูง JVP โป่ง** BNP สูง → หยุด/ชะลอ ให้ IV furosemide ป้องกันด้วยการให้ช้าทีละยูนิต\n- **TRALI**: หอบภายใน 6 ชม. ไข้ **ความดันต่ำ** ไม่มี volume overload ไม่ดีขึ้นด้วย diuretic (anti-HLA/HNA ในพลาสมาผู้ให้) → รักษาแบบ ARDS ห้ามให้ diuretic\n- ชนิดที่มาช้า: **delayed hemolytic** 3–14 วัน (anamnestic alloantibody เช่น Kidd) Hb ไม่ขึ้น ดีซ่าน DAT บวก; **post-transfusion purpura** เกล็ดเลือดต่ำมากราว 1 สัปดาห์หลังให้; **TA-GVHD** ป้องกันด้วย **irradiated blood** (leukoreduction ป้องกันไม่ได้)"
+  },
+  {
+   "theme": "IDA: อาการ, ตรวจร่างกาย, smear และ iron studies ในการวินิจฉัย",
+   "id": "HE-OLDP-002",
+   "related": "- อาการจำเพาะของขาดเหล็ก: **koilonychia, angular stomatitis, atrophic glossitis**, pica/อยากเคี้ยวน้ำแข็ง, restless legs; **ไม่มีม้ามโตและไม่เหลือง** ถ้ามีให้นึกถึง thalassemia หรือ hemolysis\n- Smear: hypochromic microcytic, anisopoikilocytosis, **pencil (cigar) cell**, RDW สูง, **reactive thrombocytosis** พบได้บ่อย\n- Iron studies: **ferritin ต่ำ** คือตัวจำเพาะที่สุด, **TIBC สูง, TSAT ต่ำ**; ferritin เป็น acute phase reactant ถ้ามีการอักเสบร่วมอาจปกติหลอกได้\n- แยกจาก thalassemia trait: IDA มี RDW สูง RBC count ต่ำ **Mentzer index (MCV/RBC) >13**; thal trait RBC count สูง ferritin ปกติ Mentzer <13\n- **ต้องหาสาเหตุเสมอ**: หญิงวัยเจริญพันธุ์ → ประจำเดือนมาก/ตั้งครรภ์; ผู้ชายหรือหญิงวัยหมดประจำเดือน → หาเลือดออกทางเดินอาหาร (endoscopy) ตัดมะเร็งลำไส้\n- หญิงตั้งครรภ์ไทยที่ซีด microcytic: ส่ง **ferritin ร่วมกับ Hb typing** เพราะ HbE/thal พบบ่อยและอาจเป็นร่วมกัน ให้ folic acid ร่วมด้วย\n- แยก anemia of chronic disease: serum iron ต่ำเหมือนกัน แต่ **TIBC ต่ำและ ferritin ปกติหรือสูง**"
+  },
+  {
+   "theme": "IDA: การให้ธาตุเหล็ก — คำแนะนำการกิน, lab ที่ขึ้นก่อน",
+   "id": "PP35-HEM-069",
+   "related": "- ให้ ferrous salt **วันละครั้งหรือวันเว้นวัน** ดีกว่าแบ่งหลายมื้อ เพราะ hepcidin ที่สูงขึ้นหลังกินเหล็กจะลดการดูดซึมมื้อถัดไป\n- กินตอนท้องว่าง กินร่วมกับ vitamin C ได้ **ห่างจาก** นม แคลเซียม ยาลดกรด PPI ชา กาแฟ tetracycline/quinolone และ levothyroxine\n- ผลข้างเคียง: คลื่นไส้ ปวดท้อง ท้องผูก **อุจจาระดำ** (ไม่ใช่เลือดออก) ถ้าทนไม่ได้ลดขนาดหรือกินวันเว้นวัน\n- ลำดับการตอบสนอง: serum iron ขึ้นก่อนภายในชั่วโมง → **reticulocyte สูงสุดราว 7–10 วัน** → Hb ขึ้นราว 1–2 g/dL ใน 2–4 สัปดาห์ → ferritin ขึ้นช้าที่สุด\n- ให้ต่ออีก **ราว 3 เดือนหลัง Hb ปกติ** เพื่อเติมเหล็กสำรอง\n- ไม่ตอบสนอง: กินไม่สม่ำเสมอ เสียเลือดต่อเนื่อง ดูดซึมไม่ได้ (celiac, H. pylori, atrophic gastritis, หลังผ่าตัดกระเพาะ) หรือวินิจฉัยผิด (thalassemia) → พิจารณา **IV iron**\n- ให้เลือดเฉพาะซีดรุนแรงที่มีอาการหรือหัวใจล้มเหลว ไม่ใช่การรักษาหลักของ IDA"
+  },
+  {
+   "theme": "Acute phase response: CRP สูง, albumin/transferrin ต่ำ",
+   "id": "HE-OLDP-008",
+   "related": "- IL-6 กระตุ้นตับ: **positive APR** = CRP, fibrinogen, ferritin, hepcidin, haptoglobin, serum amyloid A, ceruloplasmin; **negative APR** = albumin, transferrin, prealbumin (transthyretin)\n- **Hepcidin** สูงจากการอักเสบ ทำลาย ferroportin → ลดการดูดซึมเหล็กและกักเหล็กไว้ใน macrophage → **anemia of chronic disease**\n- ACD: normocytic (บางรายเป็น microcytic), serum iron ต่ำ, **TIBC ต่ำ, ferritin ปกติหรือสูง** ต่างจาก IDA ที่ TIBC สูง ferritin ต่ำ\n- ถ้ามีทั้ง IDA และอักเสบ ferritin อาจอยู่ช่วงกลาง ใช้ TSAT ต่ำ หรือ soluble transferrin receptor สูงช่วยบอกว่าขาดเหล็กจริง\n- ESR สูงตาม fibrinogen และ immunoglobulin ที่เพิ่ม; CRP ขึ้นเร็วลงเร็วกว่า ESR จึงใช้ติดตามการอักเสบเฉียบพลันได้ดีกว่า\n- albumin หรือ prealbumin ต่ำในผู้ป่วยที่อักเสบ ไม่ได้แปลว่าขาดสารอาหารเสมอไป\n- รักษา ACD ที่โรคต้นเหตุ ไม่ต้องให้เหล็กถ้าไม่ได้ขาดจริง ใช้ ESA ในบางกลุ่ม เช่น CKD"
+  },
+  {
+   "theme": "Thalassemia/HbE: โอกาสถ่ายทอดสู่ลูก, Hb typing วินิจฉัย",
+   "id": "HE-OLDP-009",
+   "related": "- Hb typing (HPLC/electrophoresis) ดู HbA2 (สูงกว่าราว 3.5% = **β-thal trait**), HbE, HbF, HbH, Hb Bart's; **α-thal-1 trait ให้ Hb typing ปกติ** ต้องยืนยันด้วย **DNA (PCR หา SEA deletion)**\n- คัดกรองในไทย: **OF test + DCIP** (หรือ MCV/MCH) ในหญิงตั้งครรภ์และสามี ถ้าผลบวกจึงตรวจยืนยัน\n- คู่เสี่ยงที่ต้องให้คำปรึกษาก่อนคลอด: **Hb Bart's hydrops fetalis** (α-thal-1 × α-thal-1), **β-thal major** (β-thal × β-thal), **β-thal/HbE** (β-thal trait × HbE trait)\n- พาหะ × พาหะ (autosomal recessive): ลูกเป็นโรค 25% พาหะ 50% ปกติ 25% เช่น β-thal trait × HbE trait → β-thal/HbE 25%\n- HbE trait/HbEE: ซีดน้อยหรือไม่ซีด MCV ต่ำเล็กน้อย ไม่ต้องรักษา **อย่าให้เหล็กโดยไม่ตรวจ ferritin**\n- Smear: target cell, nucleated RBC, basophilic stippling; Mentzer index <13\n- ผู้ป่วย transfusion-dependent: leukoreduced PRC, **iron chelation** (deferoxamine, deferiprone, deferasirox) เมื่อเหล็กเกิน, folic acid, splenectomy เมื่อ hypersplenism (ต้องฉีดวัคซีนก่อน)"
+  },
+  {
+   "theme": "Megaloblastic anemia (B12): สาเหตุ, smear hypersegmented, lab ยืนยัน",
+   "id": "PP35-HEM-054",
+   "related": "- สาเหตุ B12 ขาด: **pernicious anemia** (anti-intrinsic factor, anti-parietal cell, atrophic gastritis), กินเจ/มังสวิรัติเข้มงวดนาน, ผ่าตัดกระเพาะ, **ตัด terminal ileum/Crohn**, ใช้ metformin หรือ PPI นาน, bacterial overgrowth\n- สาเหตุ folate ขาด: สุรา กินน้อย ตั้งครรภ์ hemolysis เรื้อรัง ยา methotrexate, phenytoin, trimethoprim\n- Smear: **macro-ovalocyte, hypersegmented neutrophil** (≥5 lobes) อาจมี pancytopenia, **LDH สูงมากและ indirect bilirubin สูง** จาก ineffective erythropoiesis (อย่าสับสนกับ hemolysis)\n- ยืนยัน: B12 ต่ำ ถ้าก้ำกึ่งดู **MMA และ homocysteine: สูงทั้งคู่ = B12**; folate ขาด homocysteine สูง แต่ MMA ปกติ\n- B12 ขาดทำให้อาการทางประสาท: **subacute combined degeneration** (dorsal column + corticospinal tract), peripheral neuropathy, สมองเสื่อม; folate ไม่ทำให้เกิดอาการเหล่านี้\n- **ห้ามให้ folate อย่างเดียวในผู้ที่ขาด B12** เพราะเลือดดีขึ้นแต่ระบบประสาทแย่ลง\n- รักษา: B12 ฉีด IM (จำเป็นเมื่อดูดซึมไม่ได้หรือมีอาการประสาท) หรือกินขนาดสูง ระวัง **hypokalemia** ช่วงแรกที่ไขกระดูกสร้างเซลล์เร็ว retic ขึ้นในราว 1 สัปดาห์\n- Macrocytosis ที่ไม่ใช่ megaloblastic: สุรา โรคตับ hypothyroidism reticulocytosis MDS"
+  },
+  {
+   "theme": "Hemolytic anemia: แนวทางวินิจฉัยเบื้องต้น (ซีด+เหลือง+ม้ามโต)",
+   "id": "HE-OLDP-003",
+   "related": "- ยืนยันว่ามี hemolysis: **reticulocyte สูง, indirect bilirubin สูง, LDH สูง, haptoglobin ต่ำ** (ไม่ต้องส่ง stool occult blood)\n- **Intravascular** (ปัสสาวะสีโค้ก hemoglobinuria, hemosiderinuria, haptoglobin ต่ำมาก): G6PD, acute hemolytic transfusion reaction, PNH, MAHA, malaria\n- **Extravascular** (ม้ามโต spherocyte): hereditary spherocytosis, warm AIHA, thalassemia\n- ปัสสาวะสีเข้มต้องแยก: hemoglobinuria (dipstick blood บวกแต่ไม่เห็น RBC), hematuria (เห็น RBC), myoglobinuria (dipstick บวก CK สูงมาก พลาสมาใส)\n- ขั้นต่อไปตาม smear: spherocyte → **DAT** (บวก = AIHA, ลบ = HS); bite/blister cell → G6PD; schistocyte → MAHA; target cell → Hb typing\n- Hemolysis เรื้อรังแต่ retic ต่ำลงฉับพลัน → **aplastic crisis จาก parvovirus B19**\n- ภาวะแทรกซ้อนระยะยาว: **pigment gallstone**, ต้องการ folic acid มากขึ้น; LFT มัก ALT/ALP ปกติ AST สูงเล็กน้อยจาก RBC"
+  },
+  {
+   "theme": "AIHA: spherocyte+polychromasia → DAT, Evans syndrome",
+   "id": "HE-OLDP-013",
+   "related": "- **Warm AIHA (IgG)**: spherocyte + polychromasia, DAT บวก IgG ± C3, ทำลายที่ม้าม; สาเหตุรอง **SLE, CLL/lymphoma**, ยา (methyldopa, penicillin, cephalosporin), HIV\n- **Cold agglutinin disease (IgM, C3d)**: เขียวคล้ำปลายมือเท้าเมื่อเย็น, RBC agglutination บน smear, MCV สูงหลอก; ตามหลัง Mycoplasma/EBV หรือ lymphoproliferative; steroid ไม่ค่อยได้ผล\n- **Evans syndrome** = AIHA + ITP (± neutropenia) → หาโรคร่วม SLE, lymphoma, CVID, HIV\n- Spherocyte + **DAT ลบ** + ประวัติครอบครัว/นิ่วอายุน้อย → hereditary spherocytosis\n- ผู้ป่วย AIHA รายใหม่ทุกคน: ส่ง ANA, ดู lymphocyte/flow หา CLL, ตรวจหาต่อมน้ำเหลืองโต ทบทวนยา\n- DAT บวกอย่างเดียวไม่ได้แปลว่ามี hemolysis ต้องมี lab ของ hemolysis ร่วมด้วย"
+  },
+  {
+   "theme": "AIHA: การรักษา — prednisolone, ให้เลือด least incompatible",
+   "id": "HE-OLDP-005",
+   "related": "- First-line warm AIHA: **prednisolone 1 mg/kg/วัน** ราว 3 สัปดาห์แล้วค่อยๆ ลดในหลายเดือน; ไม่ตอบหรือกำเริบ → **rituximab** (ปัจจุบันใช้เร็วขึ้น), splenectomy, azathioprine, MMF, cyclosporine\n- ให้เลือดเมื่อซีดรุนแรงมีอาการ หรือมีโรคหัวใจขาดเลือด **อย่าเลื่อนเพราะ crossmatch ไม่เข้า** → ใช้ **least incompatible blood** ให้ช้าทีละยูนิต เฝ้าระวังใกล้ชิด\n- ให้ **folic acid** และป้องกัน VTE เพราะ AIHA เพิ่มความเสี่ยงลิ่มเลือด\n- IVIG ได้ผลน้อยใน AIHA (ต่างจาก ITP); EPO ไม่ช่วยในระยะเฉียบพลัน; azathioprine ออกฤทธิ์ช้าหลายสัปดาห์\n- **Cold AIHA**: หลีกเลี่ยงความเย็น อุ่นเลือดด้วย blood warmer ใช้ rituximab ± bendamustine; steroid และ splenectomy ไม่ค่อยได้ผล\n- รักษาโรคต้นเหตุร่วมด้วย เช่น หยุดยาที่สงสัย รักษา CLL หรือ SLE"
+  },
+  {
+   "theme": "Hereditary spherocytosis: membrane defect, ยืนยันด้วย EMA/osmotic fragility",
+   "id": "HE-OLDP-004",
+   "related": "- กลไก: ความผิดปกติของ **ankyrin, spectrin, band 3, protein 4.2** → เยื่อหุ้มหลุดเป็นถุง → spherocyte ถูกทำลายในม้าม; ส่วนใหญ่ autosomal dominant\n- ลักษณะ: ซีด เหลืองเป็นๆ หายๆ ม้ามโต ประวัติครอบครัว นิ่วถุงน้ำดีอายุน้อย; เบาะแสใน CBC คือ **MCHC สูง**\n- ยืนยัน: **DAT ลบ** + **EMA binding test** (flow cytometry ไวและจำเพาะ) หรือ **osmotic fragility เพิ่มขึ้น** (incubated)\n- **Aplastic crisis** จาก parvovirus B19: Hb ตกฮวบ retic ต่ำมาก; **hemolytic crisis** ระหว่างติดเชื้อ: เหลืองมากขึ้น ม้ามโตขึ้น retic สูง\n- รักษา: folic acid; **splenectomy** ในรายรุนแรง (ควรรอหลังอายุราว 6 ปี) ฉีดวัคซีน pneumococcus, Hib, meningococcus ก่อนผ่าตัดอย่างน้อย 2 สัปดาห์ ตัดถุงน้ำดีร่วมถ้ามีนิ่ว\n- อย่าสับสน OF test ที่ใช้คัดกรอง thalassemia (RBC **ทน** hypotonic ได้มากขึ้น) กับ HS (RBC **แตกง่ายขึ้น**)"
+  },
+  {
+   "theme": "G6PD deficiency: ยา/ถั่วปากอ้า → bite/blister cell, Heinz body",
+   "id": "PP31-HEM-010",
+   "related": "- X-linked recessive จึงพบในผู้ชายเป็นส่วนใหญ่ พบบ่อยในไทย; หญิงพาหะอาจมีอาการได้\n- ตัวกระตุ้น oxidant: **ติดเชื้อ (พบบ่อยที่สุด)**, ถั่วปากอ้า, ยา **primaquine, dapsone, sulfonamide/co-trimoxazole, nitrofurantoin, rasburicase, methylene blue**, naphthalene (ลูกเหม็น)\n- ภาพทางคลินิก: hemolysis แบบ **intravascular** ภายใน 1–3 วันหลังสัมผัส ปัสสาวะสีโค้ก Hb ลดเร็ว; smear irregularly contracted cell, bite/blister cell; **Heinz body ต้องย้อม supravital**\n- **ระดับ G6PD อาจปกติหลอกช่วง hemolysis เฉียบพลัน** เพราะ RBC อายุน้อยมีเอนไซม์มาก → ตรวจซ้ำหลังราว 2–3 เดือน หรือใช้ quantitative assay\n- รักษา: หยุดสิ่งกระตุ้น ให้สารน้ำเพียงพอป้องกัน **AKI จาก hemoglobinuria** ให้เลือดเมื่อซีดมากหรือมีอาการ ส่วนใหญ่ hemolysis หยุดเองเพราะ RBC ใหม่มีเอนไซม์มากกว่า\n- ตรวจ G6PD ก่อนให้ primaquine, dapsone, rasburicase; **ห้ามใช้ methylene blue** รักษา methemoglobinemia ในผู้ขาด G6PD\n- ทารกแรกเกิดที่ขาด G6PD เสี่ยง neonatal jaundice รุนแรง"
+  },
+  {
+   "theme": "PNH: hemolysis + thrombosis (Budd-Chiari) → flow cytometry CD55/CD59",
+   "id": "HE-OLDP-027",
+   "related": "- กลไก: somatic mutation **PIGA** ใน stem cell → ไม่มี GPI anchor → ขาด **CD55 (DAF) และ CD59 (MIRL)** → complement ทำลาย RBC แบบ intravascular (DAT ลบ)\n- Triad: **hemolysis + thrombosis ตำแหน่งแปลก** (Budd–Chiari, mesenteric, cerebral vein) **+ cytopenia/marrow failure**\n- อาการอื่น: ปัสสาวะสีเข้มตอนเช้า, กลืนลำบาก ปวดท้อง erectile dysfunction (free Hb จับ nitric oxide), **ขาดเหล็กจาก hemosiderinuria**\n- วินิจฉัย: **flow cytometry CD55/CD59 ร่วมกับ FLAER** เป็นมาตรฐานปัจจุบัน แทน Ham test และ sucrose lysis test\n- สัมพันธ์กับ **aplastic anemia** (PNH clone พบได้ในผู้ป่วย AA) จึงควรตรวจ flow ในผู้ป่วย AA ทุกราย\n- รักษา: complement C5 inhibitor **eculizumab/ravulizumab** (ต้องฉีดวัคซีน meningococcus ก่อน), anticoagulation เมื่อมี thrombosis, HSCT เป็นทางรักษาหายขาด"
+  },
+  {
+   "theme": "MAHA: schistocytes → DIC, TTP, HUS",
+   "id": "PP31-HEM-004",
+   "related": "- MAHA = **schistocyte (helmet cell) + thrombocytopenia + hemolysis** (LDH สูง haptoglobin ต่ำ DAT ลบ)\n- **DIC**: มีโรคต้นเหตุ (sepsis, trauma, APL, ภาวะทางสูติกรรม, งูพิษ) **PT/aPTT ยาว fibrinogen ต่ำ D-dimer สูง** → รักษาต้นเหตุ ให้ component เมื่อมีเลือดออกหรือต้องทำหัตถการ\n- **TTP**: ADAMTS13 <10% → ultra-large vWF; ไข้ อาการทางสมองเปลี่ยนแปลง ไตเสียเล็กน้อย **PT/aPTT ปกติ** → ฉุกเฉิน ทำ **plasma exchange** + steroid ± caplacizumab/rituximab; **หลีกเลี่ยง platelet transfusion** เว้นแต่เลือดออกอันตราย\n- **HUS**: ไตวายเด่น มักตามหลังท้องเสียเป็นเลือดจาก **STEC (E. coli O157:H7)** ในเด็ก → supportive ไม่ให้ยาปฏิชีวนะหรือยาหยุดถ่าย; **atypical HUS** (complement) → eculizumab\n- MAHA อื่นๆ: HELLP, malignant hypertension, scleroderma renal crisis, ลิ้นหัวใจเทียม, ยา (calcineurin inhibitor, gemcitabine)\n- PLASMIC score ช่วยประเมินโอกาส TTP ระหว่างรอผล ADAMTS13 อย่ารอผลก่อนเริ่ม plasma exchange ถ้าสงสัยสูง"
+  },
+  {
+   "theme": "Pancytopenia: DDx (aplastic anemia ฯลฯ) และ bone marrow study",
+   "id": "HE-OLDP-011",
+   "related": "- สาเหตุ pancytopenia: **marrow failure** (aplastic anemia, PNH), **marrow infiltration** (acute leukemia, MDS, myeloma, lymphoma, มะเร็งแพร่กระจาย, myelofibrosis, TB), **ineffective hematopoiesis** (ขาด B12/folate), **peripheral** (hypersplenism, SLE), ยา/เคมีบำบัด, ติดเชื้อ (HIV, sepsis, dengue)\n- **CML และ CLL ระยะเรื้อรังไม่ทำให้ pancytopenia** เพราะ WBC สูง เป็นตัวลวงที่ออกบ่อย\n- Aplastic anemia: retic ต่ำ **ไม่มีม้ามโตหรือต่อมน้ำเหลืองโต** (ถ้ามีให้คิดถึงโรคอื่น) ต้องทำ **trephine biopsy** เพื่อดูว่า marrow hypocellular จริง\n- ความรุนแรงของ AA ใช้ cellularity ร่วมกับ ANC, platelet และ retic (ANC <500/µL ถือว่ารุนแรง ANC <200/µL รุนแรงมาก)\n- รักษา AA รุนแรง: อายุน้อยมี HLA-matched sibling → **HSCT**; ไม่มี → **ATG + cyclosporine ± eltrombopag**; ให้เลือดแบบ leukoreduced/irradiated และหลีกเลี่ยงเลือดจากญาติก่อน transplant\n- ก่อนเจาะไขกระดูก ดู smear (blast, hypersegmented neutrophil, teardrop cell), retic, B12/folate, HIV, flow หา PNH clone"
+  },
+  {
+   "theme": "Primary vs secondary hemostasis: mucocutaneous bleeding vs haemarthrosis",
+   "id": "PP29-HEM-080",
+   "related": "- **Primary hemostasis (platelet/vWF)**: petechiae, purpura เล็ก, เลือดออกเยื่อบุ (เหงือก กำเดา ประจำเดือนมาก GI) เลือดออก**ทันที**หลังบาดเจ็บ หยุดได้ด้วยการกด\n- **Secondary hemostasis (coagulation factor)**: **hemarthrosis, deep muscle hematoma, retroperitoneal bleeding**, เลือดออก**ช้าหรือซ้ำ**หลังผ่าตัด/ถอนฟัน\n- **Vessel wall**: scurvy (perifollicular hemorrhage), IgA vasculitis (palpable purpura), ใช้ steroid/Cushing, senile purpura — platelet และ coagulation ปกติ\n- การตรวจเบื้องต้น: CBC และ smear, PT/INR, aPTT ± fibrinogen, TT; bleeding time ปัจจุบันใช้น้อย (PFA-100 แทน)\n- Isolated aPTT ยาว: hemophilia A/B, factor XI deficiency, vWD (ถ้า FVIII ต่ำ), heparin, lupus anticoagulant (ไม่เลือดออกแต่เกิด thrombosis) → ใช้ **mixing test** แยก factor deficiency (แก้ได้) จาก inhibitor (แก้ไม่ได้)\n- เลือดออกแต่ PT/aPTT/platelet ปกติ: vWD อ่อน, platelet function defect (aspirin, uremia), **factor XIII deficiency**, vessel wall"
+  },
+  {
+   "theme": "von Willebrand disease: เลือดออกเยื่อบุ, aPTT ยาว PT ปกติ, bleeding time",
+   "id": "HE-OLDP-028",
+   "related": "- vWD เป็น **inherited bleeding disorder ที่พบบ่อยที่สุด** ส่วนใหญ่ type 1 แบบ autosomal dominant จึงเป็นได้ทั้งชายและหญิง\n- vWF ทำ 2 หน้าที่: ให้ platelet เกาะผ่าน GPIb และ**ปกป้อง FVIII** → FVIII อาจต่ำจน **aPTT ยาวได้** แต่ PT ปกติ platelet count ปกติ (ยกเว้น type 2B)\n- อาการ: ประจำเดือนมากตั้งแต่มีประจำเดือน เลือดกำเดา เลือดออกนานหลังถอนฟัน ประวัติครอบครัวทั้งสองเพศ\n- ตรวจ: **vWF:Ag, vWF activity (ristocetin cofactor/GPIbM), FVIII:C**, multimer; ระดับสูงขึ้นได้จากความเครียด ตั้งครรภ์ estrogen และหมู่เลือด O มีระดับต่ำกว่า จึงอาจต้องตรวจซ้ำ\n- รักษา: **desmopressin (DDAVP)** ใน type 1 (ปล่อย vWF จาก Weibel–Palade body; ระวัง hyponatremia, tachyphylaxis; ไม่ใช้ใน type 2B), **tranexamic acid** สำหรับเยื่อบุและประจำเดือน, vWF-containing concentrate หรือ **cryoprecipitate** เมื่อไม่มี\n- หลีกเลี่ยง aspirin/NSAID; ยาคุมกำเนิดชนิดฮอร์โมนช่วยลดประจำเดือนมาก"
+  },
+  {
+   "theme": "แปลผล coagulation: PT+aPTT ยาว → common pathway, TT, vit K-dependent factors",
+   "id": "PP35-HEM-064",
+   "related": "- PT = extrinsic (VII) + common; aPTT = intrinsic (XII, XI, IX, VIII) + common (X, V, II, fibrinogen); **TT = ขั้น fibrinogen → fibrin เท่านั้น**\n- PT ยาวเดี่ยว: warfarin หรือขาด vitamin K ระยะแรก (FVII half-life สั้นที่สุด), โรคตับระยะแรก, FVII deficiency\n- PT + aPTT ยาว: ขาด vitamin K/warfarin, โรคตับ, DIC, dilutional coagulopathy, ขาด X/V/II/fibrinogen\n- **TT ยาว** = fibrinogen ต่ำหรือผิดปกติ, heparin, dabigatran, FDP สูง; TT ปกติแสดงว่าปัญหาอยู่ที่ factor ก่อนขั้น thrombin\n- ขาด vitamin K: ยาปฏิชีวนะกลุ่ม NMTT (cefoperazone) ร่วมกับกินไม่ได้, ท่อน้ำดีอุดตัน, malabsorption, ทารกแรกเกิด → **vitamin K IV** (PT ดีขึ้นใน 6–24 ชม.) ถ้าเลือดออกรุนแรงเพิ่ม **4-factor PCC** หรือ FFP\n- แยก: ขาด vitamin K → FVIII ปกติ ตอบสนองต่อ vitamin K; โรคตับ → FVIII ปกติหรือสูง ไม่ค่อยตอบสนอง; DIC → FVIII ต่ำ fibrinogen ต่ำ D-dimer สูง platelet ต่ำ\n- Mixing test: แก้ได้ = factor deficiency; แก้ไม่ได้ = inhibitor (lupus anticoagulant, acquired FVIII inhibitor)"
+  },
+  {
+   "theme": "Hemophilia: X-linked, haemarthrosis, aPTT ยาว → ให้ factor VIII/cryo",
+   "id": "PP32-HEM-039",
+   "related": "- **X-linked recessive**: ผู้ชายเป็นโรค ไม่มีการถ่ายทอดพ่อสู่ลูกชาย; **ลูกสาวของพ่อที่เป็นโรคเป็นพาหะทุกคน**; แม่พาหะ → ลูกชายเป็นโรค 50% ลูกสาวพาหะ 50%; ราว 1/3 เป็น mutation ใหม่\n- Hemophilia A (FVIII) พบมากกว่า B (FIX) หลายเท่า; ความรุนแรงตามระดับ factor: severe <1%, moderate 1–5%, mild 5–40%\n- Lab: **isolated aPTT ยาว**, PT และ platelet ปกติ, mixing test แก้ได้ → ตรวจ factor assay\n- รักษาเลือดออก: ให้ **factor concentrate ทันที** (เลือดออกในข้อหรือกล้ามเนื้อเป้าราว 40–50%, ศีรษะหรือผ่าตัดใหญ่ราว 80–100%); ไม่มี → **cryoprecipitate** สำหรับ A, **FFP** สำหรับ B (cryo ไม่มี FIX)\n- ข้อเลือดออก: factor + RICE **ไม่เจาะข้อก่อนให้ factor**, ห้ามฉีดยา IM, ห้าม aspirin/NSAID ใช้ paracetamol\n- Mild hemophilia A: **desmopressin** ได้; ถอนฟันให้ tranexamic acid ร่วม\n- ภาวะแทรกซ้อน: **inhibitor** (alloantibody ต่อ FVIII) → bypassing agent (rFVIIa, aPCC) หรือ **emicizumab** prophylaxis, hemophilic arthropathy"
+  },
+  {
+   "theme": "Pseudothrombocytopenia: platelet clumping → ไม่ต้องรักษา",
+   "id": "HE-OLDP-030",
+   "related": "- กลไก: antibody ที่ทำงานเมื่อมี **EDTA** ทำให้เกล็ดเลือดจับกลุ่ม เครื่องนับได้ต่ำหลอก ผู้ป่วยไม่มีเลือดออกตามจำนวนที่นับได้\n- **ดู smear ทุกครั้งก่อนแปลผล platelet ต่ำ**: เห็น platelet clump หรือ platelet satellitism รอบ neutrophil\n- ยืนยันด้วยเจาะใหม่ใส่หลอด **sodium citrate** (ปรับค่าตาม dilution) หรือ heparin หรือนับจากเลือดปลายนิ้วทันที\n- ไม่ต้องให้ platelet, steroid หรือเจาะไขกระดูก บันทึกไว้ในเวชระเบียนเพื่อไม่ให้ถูกรักษาผิดครั้งต่อไป\n- Platelet ต่ำหลอกอื่น: giant platelet (เครื่องนับเป็น RBC), เลือดแข็งตัวในหลอด\n- ถ้า platelet ต่ำจริงเดี่ยวๆ smear ปกติ → **ITP** (diagnosis of exclusion ตรวจ HIV, HCV, H. pylori, ทบทวนยา) รักษาเมื่อ platelet <30,000/µL หรือมีเลือดออก ด้วย steroid ± IVIG\n- ประจำเดือนมากโดย platelet ปกติจริง → คิดถึง vWD หรือสาเหตุทางนรีเวช"
+  },
+  {
+   "theme": "Scurvy: vit C ขาด → collagen synthesis บกพร่อง",
+   "id": "PP33-HEM-009",
+   "related": "- Vitamin C เป็น cofactor ของ **prolyl และ lysyl hydroxylase** → collagen triple helix ไม่เสถียร → ผนังหลอดเลือดและเนื้อเยื่อเกี่ยวพันเปราะ\n- อาการ: **perifollicular hemorrhage, corkscrew hair**, follicular hyperkeratosis, เหงือกบวมเลือดออก (เฉพาะผู้มีฟัน), จ้ำเลือดที่ขา, แผลหายช้า, ปวดกระดูก/ข้อจาก subperiosteal hemorrhage หรือ hemarthrosis\n- กลุ่มเสี่ยง: ผู้สูงอายุอยู่คนเดียว ติดสุรา โรคจิตเวชหรือกินอาหารจำกัด malabsorption ล้างไต ไม่กินผักผลไม้\n- Lab: **platelet, PT, aPTT ปกติ** ช่วยแยกจากโรคเลือดออกอื่น; ระดับ vitamin C ในเลือดต่ำ; มักซีดร่วม (ขาดเหล็กหรือ folate ร่วม และ vitamin C ช่วยดูดซึมเหล็ก)\n- รักษา: เสริม vitamin C วันละหลายร้อย mg ถึงราว 1 g อาการเลือดออกดีขึ้นในไม่กี่วัน แก้ภาวะขาดสารอาหารอื่นร่วม\n- เด็ก (Barlow disease): ปวดขาไม่ยอมเดิน scorbutic rosary subperiosteal hemorrhage"
+  },
+  {
+   "theme": "งูกัด hematotoxic: investigation ที่จำเป็น/ไม่จำเป็น",
+   "id": "PPNA-HEM-138",
+   "related": "- งูพิษต่อเลือดในไทย: **งูกะปะ (Malayan pit viper), งูแมวเซา (Russell's viper), งูเขียวหางไหม้ (green pit viper)**; งูพิษต่อระบบประสาท: เห่า จงอาง สามเหลี่ยม/ทับสมิงคลา → ติดตาม ptosis และการหายใจ\n- ติดตาม hematotoxic: **VCT/20WBCT, PT/INR, platelet**, UA (hematuria; แมวเซาทำ hemoglobinuria และ AKI), BUN/Cr — ตรวจซ้ำทุก 6 ชม. ใน 24 ชม.แรก แม้ครั้งแรกปกติ\n- ข้อบ่งชี้ให้ **antivenom ชนิดจำเพาะ**: systemic bleeding, 20WBCT ไม่แข็งตัว/VCT ยาวเกิน 20 นาที, INR สูงผิดปกติ หรือ platelet ต่ำมาก (ตามแนวทางสภากาชาดไทย)\n- ให้ FFP/cryo/platelet ไม่ใช่การรักษาหลัก เพราะพิษยังอยู่และจะทำลาย factor ที่ให้ต่อ ใช้ร่วมกับ antivenom เฉพาะเลือดออกรุนแรง\n- ปฐมพยาบาล: ไม่กรีด ไม่ดูด ไม่ขันชะเนาะ ไม่ประคบเย็น ดามให้นิ่ง; ให้ tetanus prophylaxis ไม่ต้องให้ยาปฏิชีวนะทุกราย\n- Local swelling มาก ระวัง compartment syndrome วัด compartment pressure และแก้ coagulopathy ก่อนทำ fasciotomy"
+  },
+  {
+   "theme": "Massive transfusion: citrate → hypoCa, dilutional coagulopathy",
+   "id": "PP35-HEM-060",
+   "related": "- นิยาม massive transfusion ที่ใช้บ่อย: PRC ≥10 ยูนิตใน 24 ชม. หรือเปลี่ยนเลือดราว 1 blood volume ใน 24 ชม.\n- **Dilutional coagulopathy**: PRC และ crystalloid ไม่มี factor และ platelet → ป้องกันด้วย **balanced ratio PRC:FFP:platelet ใกล้ 1:1:1**, ให้ cryo เมื่อ fibrinogen ต่ำ, tranexamic acid ใน trauma ภายใน 3 ชม.\n- **Citrate toxicity → ionized hypocalcemia** (ชา tetany QT ยาว ความดันต่ำ) เป็นมากเมื่อตับทำงานลด → ให้ calcium gluconate/chloride ตาม ionized Ca\n- อื่นๆ: **hyperkalemia** (K รั่วจาก RBC ที่เก็บนาน), **hypothermia** (ใช้ blood warmer), metabolic alkalosis ภายหลัง (citrate เปลี่ยนเป็น bicarbonate)\n- **Lethal triad**: hypothermia + acidosis + coagulopathy ต้องแก้พร้อมกัน\n- ติดตาม CBC, PT/aPTT, fibrinogen, ionized Ca, K, ABG หรือใช้ viscoelastic test (TEG/ROTEM) นำการให้ component"
+  },
+  {
+   "theme": "Blood component: ข้อบ่งชี้และการเลือก (PRC, platelet, leukoreduced, cryo)",
+   "id": "HE-OLDP-026",
+   "related": "- PRC 1 ยูนิตเพิ่ม Hb ราว 1 g/dL (Hct ราว 3%) ในผู้ใหญ่ที่ไม่เสียเลือด; เกณฑ์ให้แบบ restrictive: Hb <7 g/dL ทั่วไป, <8 g/dL ในโรคหัวใจหรือผ่าตัดกระดูก\n- **Platelet**: ป้องกันเมื่อ <10,000/µL; <50,000/µL เมื่อมีเลือดออกหรือก่อนหัตถการ; ราว 100,000/µL ในเลือดออกในสมอง/ผ่าตัดสมองหรือตา; **หลีกเลี่ยงใน TTP และ HIT**; ITP ให้เฉพาะเลือดออกรุนแรง\n- **FFP**: มีทุก factor ใช้เมื่อขาดหลาย factor และมีเลือดออก (DIC, โรคตับ, warfarin เมื่อไม่มี PCC), plasma exchange ใน TTP; ไม่ใช่ volume expander\n- **Cryoprecipitate**: fibrinogen, FVIII, vWF, FXIII → fibrinogen ต่ำใน DIC/massive transfusion; ในผู้ใหญ่ไม่จำเป็นต้อง ABO compatible\n- **Leukoreduced**: ลด FNHTR, HLA alloimmunization, CMV → ผู้รับเลือดประจำ (thalassemia, aplastic anemia), ผู้รอ transplant\n- **Irradiated**: ป้องกัน TA-GVHD ในผู้กดภูมิรุนแรง HSCT ได้เลือดจากญาติ หรือ HLA-matched platelet\n- **Washed RBC**: IgA deficiency หรือเคยแพ้รุนแรงซ้ำๆ"
+  },
+  {
+   "theme": "Multiple myeloma: ปวดหลัง + rouleaux → วินิจฉัย",
+   "id": "HE-OLDP-038",
+   "related": "- **Rouleaux** เกิดจาก paraprotein ลดประจุลบผิว RBC; ESR สูงมาก; total protein สูงแต่ albumin ต่ำ → **globulin gap**\n- **CRAB**: hyperCalcemia, Renal insufficiency (cast nephropathy), Anemia (normocytic), Bone lytic lesion; ร่วมกับติดเชื้อซ้ำจาก Ig ปกติลดลง\n- **Urine dipstick protein ลบหรือน้อย แต่ UPCR/24-h สูง** = light chain (Bence Jones) เพราะ dipstick จับ albumin เป็นหลัก\n- ส่งตรวจ: **SPEP + immunofixation, serum free light chain**, bone marrow (clonal plasma cell ≥10%), imaging กระดูกด้วย **whole-body low-dose CT หรือ PET-CT/MRI** (ไวกว่า skeletal survey)\n- เกณฑ์ IMWG: clonal plasma cell ≥10% ร่วมกับ CRAB อย่างน้อย 1 ข้อ หรือ SLiM (plasma cell ≥60%, FLC ratio ≥100, focal lesion บน MRI >1 แห่ง)\n- แยก **MGUS** (M-protein <3 g/dL, plasma cell <10%, ไม่มี CRAB) และ **Waldenström** (IgM, hyperviscosity, ต่อมน้ำเหลือง/ม้ามโต ไม่มี lytic lesion)\n- ผู้สูงอายุปวดหลัง + ซีด + creatinine สูง + calcium สูง ต้องคิดถึง myeloma ก่อน osteoporotic fracture"
+  },
+  {
+   "theme": "Multiple myeloma: ลักษณะทางคลินิก, กลไก hypercalcemia",
+   "id": "HE-OLDP-047",
+   "related": "- Hypercalcemia: plasma cell กระตุ้น osteoclast ผ่าน **RANKL, MIP-1α, IL-6** และหลั่ง **DKK-1 กด osteoblast** → lytic lesion ที่ **ALP ปกติ** และ bone scan มักให้ผลลบ\n- รักษา hypercalcemia: **IV NSS ก่อน** → **bisphosphonate (zoledronic acid)** หรือ **denosumab** (เลือกเมื่อไตเสื่อม), calcitonin ลดเร็วชั่วคราว, steroid ช่วยใน myeloma; furosemide เฉพาะหลังได้น้ำพอหรือมี volume overload\n- ไตเสื่อม: **cast nephropathy** (light chain + Tamm–Horsfall protein), hypercalcemia, ขาดน้ำ, NSAID/contrast → ให้น้ำ เลิก NSAID\n- Lab แปลก: **anion gap ต่ำ** (IgG paraprotein มีประจุบวก), pseudohyponatremia, ESR สูงมาก\n- Hyperviscosity (พบใน IgM หรือ IgA): ตามัว ปวดศีรษะ เลือดออก → plasmapheresis\n- ติดเชื้อ encapsulated bacteria (S. pneumoniae) บ่อยจาก functional hypogammaglobulinemia\n- รักษาหลัก: induction เช่น bortezomib + lenalidomide + dexamethasone (± daratumumab) ตามด้วย autologous SCT ในผู้ที่เหมาะสม; lenalidomide/thalidomide ต้องป้องกัน VTE"
+  },
+  {
+   "theme": "AML: blast + Auer rod → วินิจฉัย, induction 7+3",
+   "id": "HE-OLDP-036",
+   "related": "- เกณฑ์ acute leukemia: **blast ≥20%** ใน blood หรือ marrow (บาง genetic abnormality เช่น t(15;17), t(8;21), inv(16) วินิจฉัย AML ได้แม้ blast ต่ำกว่า)\n- AML vs ALL: **Auer rod, MPO บวก** ผู้ใหญ่/ผู้สูงอายุ → AML; ALL พบในเด็ก TdT บวก, CD19/CD10 (B-ALL), mediastinal mass (T-ALL), ลาม CNS ได้บ่อย\n- **APL (t(15;17) PML-RARA)**: Auer rod หลายแท่ง (faggot cell) **DIC รุนแรง** → เริ่ม **ATRA ทันทีที่สงสัย** ไม่ต้องรอผลยืนยัน ร่วมกับ arsenic trioxide; ระวัง differentiation syndrome → dexamethasone\n- Induction ผู้ป่วยแข็งแรง: **7+3** (cytarabine 7 วัน + daunorubicin/idarubicin 3 วัน); ผู้สูงอายุหรือ frail: **azacitidine/decitabine + venetoclax** หรือ supportive/palliative\n- ภาวะฉุกเฉิน: **tumor lysis syndrome** (K, uric acid, phosphate สูง Ca ต่ำ → hydration, allopurinol/rasburicase), **leukostasis** (WBC >100,000/µL → hydroxyurea/leukapheresis เลี่ยงให้เลือดเร็ว), febrile neutropenia\n- เหงือกบวมหรือผิวหนังมี infiltration → monocytic subtype"
+  },
+  {
+   "theme": "CLL: small mature lymphocytosis ในผู้ไม่มีอาการ",
+   "id": "HE-OLDP-043",
+   "related": "- เกณฑ์: clonal B lymphocyte **≥5,000/µL** ต่อเนื่อง; flow **CD5+, CD19+, CD23+, CD20 จาง**; smear มี **smudge cell**; ส่วนใหญ่เป็นผู้สูงอายุไม่มีอาการ\n- น้อยกว่า 5,000/µL ไม่มีต่อมน้ำเหลืองหรือม้ามโต = **monoclonal B-cell lymphocytosis (MBL)**\n- Staging **Rai/Binet**: ต่อมโต ม้ามโต ซีด เกล็ดเลือดต่ำ = ระยะสูงขึ้น\n- ระยะแรกไม่มีอาการ → **watch and wait** (รักษาเร็วไม่เพิ่มอัตรารอด); รักษาเมื่อ active: B symptoms, cytopenia จาก marrow, ต่อม/ม้ามโตมากมีอาการ, lymphocyte doubling time <6 เดือน\n- ยาปัจจุบัน: **BTK inhibitor** (ibrutinib, acalabrutinib) หรือ **venetoclax + obinutuzumab**; ตรวจ del(17p)/TP53 และ IGHV ก่อนเลือกยา\n- ภาวะแทรกซ้อน: **autoimmune cytopenia (AIHA, ITP)**, hypogammaglobulinemia ติดเชื้อซ้ำ, **Richter transformation** เป็น DLBCL\n- แยก: reactive lymphocytosis (atypical lymphocyte จากไวรัส), hairy cell leukemia (ม้ามโต pancytopenia), mantle cell lymphoma (CD5+ แต่ CD23− cyclin D1+)"
+  },
+  {
+   "theme": "Essential thrombocythemia: plt สูงมากต่อเนื่อง ไม่มีสาเหตุ reactive",
+   "id": "PP35-HEM-063",
+   "related": "- ต้องตัด **reactive thrombocytosis** ก่อนเสมอ (พบบ่อยกว่ามาก): ขาดเหล็ก อักเสบ/ติดเชื้อ (CRP สูง) มะเร็ง หลังตัดม้าม เสียเลือด\n- เกณฑ์ WHO: platelet **≥450,000/µL** ต่อเนื่อง, marrow มี megakaryocyte ใหญ่ mature เพิ่ม, มี **JAK2 (ราวครึ่งหนึ่ง), CALR หรือ MPL** และ **ไม่เข้าเกณฑ์ CML (BCR-ABL1 ลบ)**, PV, PMF, MDS\n- อาการ: vasomotor (**erythromelalgia**, ปวดศีรษะ ตามัว), thrombosis ทั้งแดงและดำ, เลือดออกเมื่อ platelet สูงมากเกินราว 1 ล้าน (**acquired vWD**)\n- แบ่งความเสี่ยง: **อายุ >60 ปี หรือเคยมี thrombosis = high risk** → **hydroxyurea** + low-dose aspirin; low risk → aspirin อย่างเดียวหรือติดตาม\n- ก่อนให้ aspirin เมื่อ platelet สูงมาก ให้ตรวจ vWF activity ตัด acquired vWD\n- ตั้งครรภ์ใช้ **interferon-α** แทน hydroxyurea; anagrelide เป็นทางเลือก; ระยะยาวอาจกลายเป็น myelofibrosis หรือ AML (พบน้อย)"
+  },
+  {
+   "theme": "Polycythemia vera: aquagenic pruritus, Hct สูง → JAK2",
+   "id": "PP32-HEM-031",
+   "related": "- เกณฑ์ WHO: **Hb >16.5 g/dL (ชาย) หรือ >16.0 (หญิง) หรือ Hct >49%/48%**, marrow panmyelosis, **JAK2 V617F หรือ exon 12** (>95%); minor criterion คือ **EPO ต่ำ**\n- Secondary erythrocytosis: hypoxia (COPD, OSA, อยู่ที่สูง, สูบบุหรี่ carboxyhemoglobin), เนื้องอกสร้าง EPO (RCC, HCC, cerebellar hemangioblastoma, uterine fibroid), testosterone, SGLT2i → **EPO ปกติหรือสูง**; relative polycythemia จากขาดน้ำ/diuretic\n- อาการ: คันหลังอาบน้ำอุ่น (aquagenic pruritus), หน้าแดง, erythromelalgia, ม้ามโต, thrombosis (Budd–Chiari), gout\n- รักษาทุกราย: **phlebotomy ให้ Hct <45%** + **low-dose aspirin**; high risk (อายุ >60 หรือเคยมี thrombosis) เพิ่ม hydroxyurea (หรือ interferon, ruxolitinib)\n- ไม่ให้เหล็กเสริม เพราะการขาดเหล็กจาก phlebotomy ช่วยจำกัดการสร้าง RBC\n- ภาวะแทรกซ้อนระยะยาว: post-PV myelofibrosis และ AML"
+  },
+  {
+   "theme": "CML: massive splenomegaly, WBC สูง → BCR-ABL1",
+   "id": "PP31-HEM-047",
+   "related": "- t(9;22) **Philadelphia chromosome → BCR-ABL1 tyrosine kinase** ที่ทำงานตลอด\n- ภาพเลือด: WBC สูงมาก เห็น**ทุกระยะของ myeloid** (myelocyte เด่น), **basophilia, eosinophilia**, platelet สูงได้, ม้ามโตมาก; LAP score ต่ำ ต่างจาก leukemoid reaction ที่ LAP สูง มี toxic granulation และไม่มี basophilia\n- ระยะโรค: chronic → accelerated → **blast crisis** (ราว 2/3 myeloid, 1/3 lymphoid)\n- รักษา: **TKI — imatinib** (หรือ dasatinib, nilotinib) ติดตามด้วย **quantitative RT-PCR BCR-ABL1 (IS)** ให้ถึง major molecular response; ไม่ใช้ chemo แบบ 7+3 ในระยะเรื้อรัง\n- WBC สูงมากมีอาการ leukostasis หรือรอยืนยันผล → hydroxyurea ลด WBC ร่วมกับ hydration และ allopurinol\n- ม้ามโตมาก (massive splenomegaly) DDx: CML, myelofibrosis (teardrop cell, dry tap), thalassemia, malaria, kala-azar, lymphoma"
+  },
+  {
+   "theme": "Lymphoma: excisional LN biopsy, ปัจจัยพยากรณ์ NHL",
+   "id": "PP34-HEM-021",
+   "related": "- ต้องได้ **excisional (whole node) biopsy** หรือ core biopsy ชิ้นใหญ่ เพื่อดู architecture และทำ IHC; **FNA ไม่พอ**สำหรับวินิจฉัยและแยก subtype; เลือกต่อมใหญ่สุดหรือ FDG สูงสุด (supraclavicular ดีกว่า inguinal)\n- Hodgkin: Reed–Sternberg cell (CD15+, CD30+) ลามต่อเนื่องเป็นกลุ่มต่อม ปวดต่อมหลังดื่มสุรา; NHL: **DLBCL พบบ่อยสุด** extranodal บ่อยกว่า\n- **B symptoms**: ไข้ >38°C, เหงื่อออกกลางคืนจนเปียก, น้ำหนักลด >10% ใน 6 เดือน\n- Staging **Lugano (Ann Arbor ดัดแปลง)** ด้วย **PET-CT**; **IPI** สำหรับ aggressive NHL 5 ข้อ: **อายุ >60, LDH สูง, ECOG ≥2, stage III–IV, extranodal >1 แห่ง**\n- การรักษาหลัก: DLBCL ใช้ R-CHOP หรือสูตรที่มี rituximab; Hodgkin ใช้ ABVD หรือสูตรที่มี brentuximab\n- ตรวจ **HBV (HBsAg, anti-HBc) ก่อนให้ rituximab** เพราะเสี่ยง reactivation และตรวจ HIV\n- ภาวะฉุกเฉิน: SVC syndrome, spinal cord compression, tumor lysis (Burkitt); DDx ต่อมโต: TB lymphadenitis (caseating granuloma), มะเร็งแพร่กระจาย, reactive, EBV"
+  }
+ ],
+ "synth": [
+  {
+   "id": "SYN-HEME-01",
+   "title": "หอบระหว่างให้เลือด: TACO vs TRALI และปฏิกิริยาอื่น",
+   "stem": "A 68-year-old woman with heart failure with reduced ejection fraction (LVEF 30%) and CKD stage 4 is admitted with symptomatic anaemia (Hb 6.2 g/dL) from chronic gastrointestinal blood loss. Two units of packed red cells are ordered, and the first unit is infused over 1 hour. Ninety minutes after it was started she becomes acutely short of breath. Temperature 37.2 °C, BP 178/96 mmHg, HR 112/min, RR 30/min, SpO2 86% on room air. JVP is raised to the angle of the jaw, there are bilateral fine crackles and an S3 gallop. Urine is clear yellow and there is no rash. Chest X-ray shows cardiomegaly, bilateral perihilar opacities and small pleural effusions; NT-proBNP is much higher than her baseline. Which is the most appropriate management?",
+   "choices": [
+    "Stop the transfusion, sit her upright, give oxygen and intravenous furosemide",
+    "Stop the transfusion and give supportive ventilation without diuretics, as for transfusion-related acute lung injury",
+    "Pause the transfusion, give an antihistamine and restart the same unit once she settles",
+    "Stop the transfusion, send the bag for repeat crossmatch and DAT, and give rapid intravenous saline to keep urine output high",
+    "Give intravenous calcium gluconate for citrate-induced hypocalcaemia and continue the transfusion"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ผู้ป่วยมี HFrEF + CKD + ซีดเรื้อรัง (ปริมาตรเลือดปกติหรือเกินอยู่แล้ว ร่างกายชดเชยด้วย cardiac output สูง) เมื่อได้ PRC เร็วใน 1 ชม. ปริมาตรเพิ่มเกินกว่าหัวใจรับไหว → pulmonary edema = **TACO** จุดชี้คือ **ความดันสูง JVP โป่ง S3 BNP สูง ไม่มีไข้**\n\nข้อถูก: หยุดเลือด นั่งตัวตรง ให้ออกซิเจน และ IV furosemide แล้วยูนิตถัดไปให้ช้า (ราว 1 mL/kg/ชม.) พร้อม diuretic\n\nตัวลวง:\n- TRALI: หอบใน 6 ชม.เหมือนกัน แต่ความดัน**ต่ำ** มักมีไข้ JVP ไม่โป่ง ไม่ตอบ diuretic และห้ามให้ diuretic — ใช้ตอบเมื่อโจทย์เป็นผู้ป่วยไม่มี volume overload ที่หอบหลังได้ plasma/platelet\n- Antihistamine แล้วให้ต่อ: ใช้กับ allergic (urticarial) ที่มีแต่ลมพิษ ไม่มีหอบหรือความดันตก\n- ส่ง crossmatch/DAT และให้ NSS เร็ว: แนวทางของ acute hemolytic reaction (ไข้ ปวดหลัง ปัสสาวะสีโค้ก ความดันตก) ถ้าทำในเคสนี้จะซ้ำเติม pulmonary edema\n- Calcium gluconate: ใช้เมื่อ massive transfusion แล้วมี citrate toxicity (ชา tetany QT ยาว ionized Ca ต่ำ) ไม่เกี่ยวกับการให้ 1 ยูนิต",
+   "fullcover": "- **หลักแรกของทุกปฏิกิริยา**: หยุดให้เลือด คงเส้น IV ด้วย NSS ตรวจชื่อ/หมู่เลือดที่ข้างเตียง ประเมิน vital signs แล้วแยกชนิดจากอาการเด่น\n- **FNHTR**: ไข้ขึ้น ≥1°C ± หนาวสั่น ไม่มี hemolysis (cytokine จาก WBC ผู้ให้) ป้องกันด้วย **leukoreduced blood** เป็น diagnosis of exclusion\n- **Allergic**: ลมพิษอย่างเดียว ให้ antihistamine แล้วให้ต่อได้; anaphylaxis (นึกถึง IgA deficiency) ให้ adrenaline หยุดถาวร ใช้ washed RBC ครั้งต่อไป\n- **Acute hemolytic (ABO)**: ไข้ ปวดหลัง ปัสสาวะสีโค้ก ความดันตก DIC/AKI สาเหตุหลักคือ clerical error\n- **TACO vs TRALI**: TACO ความดันสูง JVP โป่ง BNP สูง ตอบ furosemide; TRALI ความดันต่ำ ไข้ ไม่ตอบ diuretic รักษาแบบ ARDS\n- **Bacterial contamination**: ไข้สูงช็อกทันที โดยเฉพาะ platelet → hemoculture ผู้ป่วยและถุง ให้ยาปฏิชีวนะ\n- ชนิดที่มาช้า: delayed hemolytic (3–14 วัน DAT บวก), post-transfusion purpura, **TA-GVHD** (ป้องกันด้วย irradiated blood)\n- **Massive transfusion**: dilutional coagulopathy → ให้ PRC:FFP:platelet ใกล้ 1:1:1 และ cryo; citrate → ionized Ca ต่ำ; hyperkalemia, hypothermia\n- เลือกส่วนประกอบเลือด: PRC 1 ยูนิตเพิ่ม Hb ราว 1 g/dL; platelet ป้องกันเมื่อ <10,000/µL ให้เมื่อเลือดออกและ <50,000/µL; cryo ให้ fibrinogen/FVIII/vWF; FFP สำหรับขาดหลาย factor\n- ชนิดพิเศษ: leukoreduced (ผู้รับเลือดประจำ ลด FNHTR และ HLA alloimmunization), irradiated (ผู้กดภูมิรุนแรง เลือดจากญาติ), washed (IgA deficiency)\n- เกณฑ์ให้ PRC แบบ restrictive: Hb <7 g/dL ทั่วไป และ <8 g/dL ในโรคหัวใจ; ผู้ป่วยเสี่ยง TACO ให้ทีละยูนิตช้าๆ และประเมินซ้ำ\n- **ยังไม่เคยออก:** TRALI กับ TACO เป็นสาเหตุการตายจากการให้เลือดอันดับต้น แยกด้วยความดันโลหิตและการตอบสนองต่อ diuretic\n- **ยังไม่เคยออก:** ITP และ TTP เป็นข้อห้ามสัมพัทธ์ของ platelet transfusion ถ้าไม่มีเลือดออกอันตราย",
+   "pearl": "หอบตอนให้เลือด: ความดันสูง+JVP โป่ง = TACO ให้ furosemide; ความดันต่ำ+ไข้ = TRALI ห้าม diuretic",
+   "covers_themes": [
+    "ปฏิกิริยาจากการให้เลือด: FNHTR, allergic, TACO",
+    "Massive transfusion: citrate → hypoCa, dilutional coagulopathy",
+    "Blood component: ข้อบ่งชี้และการเลือก (PRC, platelet, leukoreduced, cryo)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-02",
+   "title": "ซีด microcytic ในหญิงตั้งครรภ์ไทย: IDA, ACD, thalassemia/HbE",
+   "stem": "A 24-year-old Thai woman, G1P0 at 20 weeks' gestation, has fatigue and a craving to chew ice. She had heavy menstrual periods for years before the pregnancy. Examination: pallor and spoon-shaped nails; no jaundice and no hepatosplenomegaly. CBC: Hb 8.6 g/dL, Hct 27%, MCV 66 fL, MCH 21 pg, RBC 4.1 × 10^6/µL, RDW 19%, WBC 7,200/µL, platelets 480,000/µL. The smear shows hypochromic microcytic red cells with pencil cells. Serum ferritin 6 ng/mL, TIBC 460 µg/dL, transferrin saturation 6%, CRP normal. Her husband's antenatal screen shows MCV 74 fL and a positive DCIP test. Which is the most appropriate plan?",
+   "choices": [
+    "Start oral iron with folic acid, and also send her haemoglobin typing because her husband screens positive for HbE",
+    "Give iron together with her calcium tablet and milk at breakfast to improve adherence",
+    "Give folic acid only, because the microcytosis is explained by thalassaemia trait",
+    "Avoid iron, because a low serum iron with anaemia in pregnancy indicates anaemia of chronic inflammation",
+    "Recheck serum ferritin 1 week after starting iron, as it is the earliest marker of response"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ประจำเดือนมากเรื้อรัง + ตั้งครรภ์ (ต้องการเหล็กเพิ่มมาก) → เหล็กสำรองหมด → สร้าง heme ไม่ได้ → microcytic hypochromic; ferritin 6 TIBC สูง TSAT ต่ำ RDW สูง Mentzer 66/4.1 ≈ 16 (>13) ยืนยัน **IDA** ส่วน CRP ปกติตัดการอักเสบที่ทำให้ ferritin สูงหลอก\n\nข้อถูก: รักษา IDA ด้วยเหล็ก + folic acid และเนื่องจากสามีน่าจะเป็นพาหะ HbE (DCIP บวก) ต้องรู้ว่าภรรยาเป็นพาหะ β-thal หรือไม่ เพราะคู่ β-thal trait × HbE trait ลูกเสี่ยง β-thal/HbE 25% และผลคัดกรอง OF/MCV ของเธอแปลไม่ได้ในขณะที่ขาดเหล็ก จึงต้องส่ง Hb typing (± DNA หา α-thal-1)\n\nตัวลวง:\n- กินพร้อมแคลเซียมและนม: ลดการดูดซึมเหล็ก ต้องกินห่างกัน (ใช้กับโจทย์คำแนะนำการกินยาเหล็ก)\n- Folic acid อย่างเดียวเพราะเป็น thal trait: ferritin 6 คือขาดเหล็กจริง และ thal trait ไม่ทำให้ ferritin ต่ำ\n- ACD: ACD มี TIBC ต่ำ ferritin ปกติ/สูง ตรงข้ามกับเคสนี้ (ใช้กับโจทย์ acute phase response)\n- ferritin เป็นตัวที่ขึ้นช้าที่สุด สิ่งที่ขึ้นก่อนคือ serum iron และ reticulocyte (สูงสุดราว 7–10 วัน)",
+   "fullcover": "- **IDA วินิจฉัย**: ferritin ต่ำ (ตัวจำเพาะที่สุด) TIBC สูง TSAT ต่ำ RDW สูง pencil cell reactive thrombocytosis; ไม่มีม้ามโตและไม่เหลือง\n- อาการจำเพาะ: koilonychia, angular stomatitis, atrophic glossitis, pica/pagophagia\n- **หาสาเหตุเสมอ**: หญิงวัยเจริญพันธุ์ → ประจำเดือน/ตั้งครรภ์; ชายหรือหญิงหมดประจำเดือน → ส่องกล้องหาเลือดออกทางเดินอาหาร\n- **การให้เหล็ก**: ferrous salt วันละครั้งหรือวันเว้นวัน ท้องว่าง กินกับ vitamin C ได้ ห่างจากนม แคลเซียม ยาลดกรด PPI ชา; อุจจาระดำเป็นผลของยา\n- ลำดับการตอบสนอง: serum iron → reticulocyte (สูงสุด 7–10 วัน) → Hb (1–2 g/dL ใน 2–4 สัปดาห์) → ferritin; ให้ต่ออีกราว 3 เดือนหลัง Hb ปกติ\n- ไม่ตอบสนอง: กินไม่สม่ำเสมอ เสียเลือดต่อ malabsorption วินิจฉัยผิด → พิจารณา IV iron (ใช้ได้ในไตรมาส 2–3)\n- **Acute phase response**: IL-6 → CRP, ferritin, fibrinogen, hepcidin สูง; albumin, transferrin ต่ำ → ACD มี TIBC ต่ำ ferritin ปกติหรือสูง\n- **Thalassemia/HbE**: คัดกรอง OF + DCIP → ยืนยัน Hb typing (HbA2 สูงใน β-thal trait, HbE) และ DNA สำหรับ α-thal-1\n- คู่เสี่ยงโรครุนแรง: Hb Bart's hydrops (α-thal-1 × α-thal-1), β-thal major, β-thal/HbE; พาหะ × พาหะ ลูกเป็นโรค 25% พาหะ 50%\n- แยก IDA กับ thal trait: Mentzer >13, RDW สูง, RBC count ต่ำ เอนไปทาง IDA; ถ้าทั้งคู่ร่วมกันต้องแก้เหล็กก่อนแปลผล HbA2 (ขาดเหล็กทำ HbA2 ต่ำลงได้)\n- Transfusion-dependent thalassemia: leukoreduced PRC, iron chelation, folic acid\n- **ยังไม่เคยออก:** การดูแลคู่เสี่ยง → ให้คำปรึกษาและวินิจฉัยก่อนคลอด (CVS/amniocentesis/cordocentesis) ตามกำหนดอายุครรภ์\n- **ยังไม่เคยออก:** ภาวะขาดเหล็กทำให้ HbA2 ต่ำลง อาจบัง β-thal trait จึงควรตรวจซ้ำหลังเติมเหล็กถ้าผลก้ำกึ่ง",
+   "pearl": "ferritin ต่ำ = IDA เสมอ แต่ในคนไทยต้องคิดถึง thal/HbE ร่วมด้วยเมื่อวางแผนครอบครัว",
+   "covers_themes": [
+    "IDA: อาการ, ตรวจร่างกาย, smear และ iron studies ในการวินิจฉัย",
+    "IDA: การให้ธาตุเหล็ก — คำแนะนำการกิน, lab ที่ขึ้นก่อน",
+    "Acute phase response: CRP สูง, albumin/transferrin ต่ำ",
+    "Thalassemia/HbE: โอกาสถ่ายทอดสู่ลูก, Hb typing วินิจฉัย"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-03",
+   "title": "Pancytopenia + macrocytosis + อาการประสาท: B12 vs aplastic anemia vs PNH",
+   "stem": "A 58-year-old woman has 4 months of fatigue, tingling in both feet and an unsteady gait that is worse in the dark. She has hypothyroidism on levothyroxine and vitiligo. Examination: pallor, mild icterus, a smooth red tongue, no lymphadenopathy and no splenomegaly; vibration and position sense are lost in the feet, Romberg sign is positive, knee reflexes are brisk and plantar responses are extensor. CBC: Hb 6.8 g/dL, MCV 122 fL, WBC 2,900/µL (ANC 1,500/µL), platelets 88,000/µL, reticulocytes 0.5%. The smear shows macro-ovalocytes and hypersegmented neutrophils with no blasts. LDH 2,800 U/L, indirect bilirubin 2.4 mg/dL, haptoglobin low, DAT negative. Which is the most appropriate next step?",
+   "choices": [
+    "Send serum vitamin B12 (with anti-intrinsic factor antibody) and start intramuscular vitamin B12 promptly",
+    "Start oral folic acid alone and recheck the blood count in 4 weeks",
+    "Perform bone marrow aspiration and trephine biopsy for aplastic anaemia before giving any vitamin",
+    "Send flow cytometry for CD55/CD59 because of pancytopenia with haemolysis",
+    "Start antithymocyte globulin plus cyclosporine"
+   ],
+   "answer": 0,
+   "explain": "กลไก: B12 เป็น cofactor ของการสังเคราะห์ DNA (methionine synthase) และ methylmalonyl-CoA mutase → ขาดแล้วนิวเคลียสโตช้ากว่า cytoplasm (megaloblastic) ทุก cell line จึงได้ pancytopenia เซลล์ถูกทำลายในไขกระดูก (ineffective erythropoiesis) ทำให้ **LDH สูงมาก indirect bilirubin สูง haptoglobin ต่ำ แต่ retic ต่ำ** ส่วน myelin เสียทำให้ dorsal column + corticospinal tract (subacute combined degeneration) ผู้ป่วยมีโรค autoimmune (hypothyroid, vitiligo) และลิ้นเลี่ยน → **pernicious anemia**\n\nข้อถูก: ส่ง B12 (± MMA, anti-IF) แล้วฉีด B12 ทันทีเพราะมีอาการประสาท ไม่ต้องรอนาน\n\nตัวลวง:\n- Folic acid อย่างเดียว: เลือดอาจดีขึ้นแต่ระบบประสาทแย่ลง ห้ามทำเมื่อยังไม่ตัด B12\n- Bone marrow ก่อน: ภาพ smear และคลินิกชัด ไม่จำเป็นก่อน (ถ้าทำจะเห็น hypercellular megaloblastic ไม่ใช่ hypocellular) — ใช้กับโจทย์ pancytopenia ที่ไม่มีเบาะแส หรือสงสัย aplastic/infiltration\n- Flow CD55/CD59: PNH มี hemolysis + cytopenia ได้ แต่ไม่ทำให้ macro-ovalocyte/hypersegmented neutrophil และอาการประสาท (ใช้กับโจทย์ hemolysis + thrombosis ตำแหน่งแปลก)\n- ATG + cyclosporine: การรักษา severe aplastic anemia ในคนที่ไม่มี donor ซึ่งต้องมี marrow hypocellular",
+   "fullcover": "- **B12 ขาด สาเหตุ**: pernicious anemia (anti-IF, anti-parietal cell), กินเจเข้มงวด, ผ่าตัดกระเพาะ, ตัด terminal ileum/Crohn, metformin/PPI นาน; folate ขาด: สุรา กินน้อย ตั้งครรภ์ ยา MTX/phenytoin\n- Smear: macro-ovalocyte, hypersegmented neutrophil (≥5 lobes) MCV มัก >110; อาจ pancytopenia; LDH สูงมากจาก ineffective erythropoiesis\n- ยืนยัน: B12 ต่ำ; ก้ำกึ่งดู MMA และ homocysteine (สูงทั้งคู่ = B12; folate ขาด MMA ปกติ)\n- อาการประสาทเกิดจาก B12 เท่านั้น: dorsal column (vibration/position, Romberg), corticospinal (UMN signs), peripheral neuropathy, สมองเสื่อม\n- รักษา: B12 IM ทันทีเมื่อมีอาการประสาท แล้วให้ต่อตลอดชีวิตใน pernicious anemia; ระวัง hypokalemia ช่วงแรก; retic ขึ้นในราว 1 สัปดาห์\n- **Pancytopenia DDx**: aplastic anemia, PNH, acute leukemia, MDS, myeloma, lymphoma, metastasis, myelofibrosis, TB, B12/folate, hypersplenism, SLE, ยา, HIV/sepsis/dengue\n- **CML และ CLL ระยะเรื้อรังไม่ทำให้ pancytopenia** เป็นตัวลวงที่ออกบ่อย\n- **Aplastic anemia**: retic ต่ำ ไม่มีม้ามโต ต้องทำ trephine biopsy (hypocellular) รักษาด้วย HSCT ในคนอายุน้อยที่มี donor หรือ ATG + cyclosporine ± eltrombopag\n- **PNH**: PIGA mutation → ขาด CD55/CD59 → complement lysis; triad hemolysis + thrombosis ตำแหน่งแปลก (Budd–Chiari) + cytopenia; วินิจฉัย flow CD55/CD59 + FLAER; รักษา C5 inhibitor (ฉีดวัคซีน meningococcus ก่อน)\n- PNH clone พบร่วมกับ aplastic anemia ได้ จึงตรวจ flow ในผู้ป่วย AA ทุกราย\n- **ยังไม่เคยออก:** pernicious anemia เพิ่มความเสี่ยงมะเร็งกระเพาะและ carcinoid และมักพบร่วมกับ autoimmune thyroid disease/vitiligo/T1DM\n- **ยังไม่เคยออก:** megaloblastic anemia ทำให้ LDH สูงและ haptoglobin ต่ำได้ อย่าเข้าใจผิดว่าเป็น hemolytic anemia ดูที่ retic ต่ำและ smear",
+   "pearl": "Pancytopenia + MCV >110 + hypersegmented + อาการประสาท = B12 ฉีดก่อน ห้ามให้ folate เดี่ยว",
+   "covers_themes": [
+    "Megaloblastic anemia (B12): สาเหตุ, smear hypersegmented, lab ยืนยัน",
+    "Pancytopenia: DDx (aplastic anemia ฯลฯ) และ bone marrow study",
+    "PNH: hemolysis + thrombosis (Budd-Chiari) → flow cytometry CD55/CD59"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-04",
+   "title": "ซีด เหลือง spherocyte: warm AIHA ใน SLE vs hereditary spherocytosis",
+   "stem": "A 29-year-old woman has 10 days of progressive fatigue, exertional dyspnoea and yellow eyes. She has had arthralgia and a facial rash for 3 months. Temperature 37.6 °C, BP 112/70 mmHg, HR 108/min. She is pale and icteric with a palpable spleen tip. CBC: Hb 6.4 g/dL, MCV 102 fL, reticulocytes 14%, WBC 3,800/µL, platelets 145,000/µL. The smear shows many microspherocytes and polychromasia without schistocytes. Total bilirubin 4.2 mg/dL (direct 0.5), LDH 780 U/L, haptoglobin <10 mg/dL, ALT normal. Direct antiglobulin test: IgG 3+, C3 negative. ANA 1:1,280 homogeneous. She has no chest pain and is haemodynamically stable. Which is the most appropriate management?",
+   "choices": [
+    "Prednisolone 1 mg/kg/day with folic acid, and evaluation and treatment of SLE",
+    "Splenectomy as first-line therapy",
+    "Intravenous immunoglobulin as the main therapy",
+    "Withhold all red cell transfusion permanently because crossmatch will be incompatible",
+    "Eosin-5'-maleimide binding test to confirm hereditary spherocytosis before any treatment"
+   ],
+   "answer": 0,
+   "explain": "กลไก: autoantibody IgG เคลือบ RBC → macrophage ในม้ามกัดเยื่อหุ้มทีละส่วน → spherocyte → ถูกทำลายในม้าม (extravascular) ไขกระดูกชดเชยจน retic 14% (polychromasia, MCV สูงจาก reticulocyte) ร่วมกับ indirect bilirubin สูง LDH สูง haptoglobin ต่ำ = hemolysis ชัด DAT IgG บวก = **warm AIHA** และ ANA สูง ผื่น ข้ออักเสบ WBC ต่ำ ชี้ว่าเป็น **secondary จาก SLE**\n\nข้อถูก: prednisolone 1 mg/kg/วัน เป็น first-line + folic acid + ประเมิน/รักษา SLE (ผู้ป่วยเสถียร ไม่มี ACS ยังไม่ต้องให้เลือดทันที)\n\nตัวลวง:\n- Splenectomy: เป็นทางเลือกลำดับหลัง (second-/third-line) ใน warm AIHA และเป็นการรักษาของ HS รุนแรง\n- IVIG: ได้ผลดีใน ITP แต่ใน AIHA ได้ผลน้อย ใช้เสริมเท่านั้น\n- ห้ามให้เลือดถาวร: ผิด ถ้าซีดรุนแรงมีอาการหรือมีโรคหัวใจต้องให้ **least incompatible blood** ช้าๆ ไม่ต้องรอ crossmatch เข้ากัน\n- EMA test: ใช้ยืนยัน HS เมื่อ spherocyte + **DAT ลบ** + ประวัติครอบครัว; เคสนี้ DAT บวกอธิบายได้แล้ว",
+   "fullcover": "- **แนวทาง hemolysis**: ยืนยันด้วย retic สูง, indirect bilirubin สูง, LDH สูง, haptoglobin ต่ำ (ไม่ต้องส่ง stool occult blood)\n- แยก intravascular (hemoglobinuria: G6PD, AHTR, PNH, MAHA) กับ extravascular (ม้ามโต spherocyte: HS, warm AIHA, thalassemia)\n- Spherocyte + polychromasia → ส่ง **DAT**: บวก = AIHA, ลบ = HS (ยืนยัน EMA binding หรือ osmotic fragility)\n- **Warm AIHA (IgG)**: secondary จาก SLE, CLL/lymphoma, ยา, HIV → ส่ง ANA, CBC/flow หา CLL, ทบทวนยา\n- **Cold agglutinin (IgM, C3)**: อาการเมื่อเย็น agglutination บน smear หลัง Mycoplasma/EBV; steroid ไม่ค่อยได้ผล ใช้ rituximab ให้ความอบอุ่น\n- **Evans syndrome** = AIHA + ITP → หา SLE, lymphoma, CVID\n- **รักษา warm AIHA**: prednisolone 1 mg/kg/วัน แล้วค่อยลด; ดื้อหรือกำเริบ → rituximab, splenectomy, azathioprine/MMF; ให้ folic acid และป้องกัน VTE\n- **ให้เลือดใน AIHA**: เมื่ออาการรุนแรงหรือมี ACS ให้ least incompatible ทีละยูนิตช้าๆ เฝ้าระวังใกล้ชิด อย่าเลื่อนเพราะ crossmatch ไม่เข้า\n- **HS**: ankyrin/spectrin/band 3 ผิดปกติ autosomal dominant MCHC สูง นิ่วอายุน้อย; aplastic crisis จาก parvovirus B19; splenectomy ในรายรุนแรงหลังฉีดวัคซีน\n- Hemolysis เรื้อรังทุกชนิด: pigment gallstone และต้องการ folic acid มากขึ้น\n- **ยังไม่เคยออก:** SLE วินิจฉัยด้วยเกณฑ์ EULAR/ACR 2019 ที่ autoimmune hemolysis เป็นเกณฑ์ทางโลหิตวิทยาข้อหนึ่ง ควรตรวจ anti-dsDNA, complement, UA หาโรคไต\n- **ยังไม่เคยออก:** ผู้ป่วย AIHA ที่ได้ steroid ขนาดสูงนานควรได้ PJP prophylaxis, ป้องกันกระดูกพรุน และตรวจ HBV ก่อนให้ rituximab",
+   "pearl": "Spherocyte: DAT บวก = AIHA ให้ prednisolone; DAT ลบ + ครอบครัว = HS ยืนยัน EMA",
+   "covers_themes": [
+    "Hemolytic anemia: แนวทางวินิจฉัยเบื้องต้น (ซีด+เหลือง+ม้ามโต)",
+    "AIHA: spherocyte+polychromasia → DAT, Evans syndrome",
+    "AIHA: การรักษา — prednisolone, ให้เลือด least incompatible",
+    "Hereditary spherocytosis: membrane defect, ยืนยันด้วย EMA/osmotic fragility"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-05",
+   "title": "ปัสสาวะสีโค้กหลังได้ primaquine: G6PD vs MAHA (TTP/HUS/DIC)",
+   "stem": "A 24-year-old Thai man is treated for Plasmodium vivax malaria with chloroquine, and primaquine is started without prior testing. Two days later he has dark cola-coloured urine, fatigue and back pain. Temperature 37.4 °C, BP 118/72 mmHg, HR 104/min. He is pale and icteric with no petechiae. Hb has fallen from 14.2 to 8.1 g/dL; reticulocytes 6%; platelets 210,000/µL; PT and aPTT normal; LDH 1,450 U/L; haptoglobin undetectable; indirect bilirubin 3.6 mg/dL; creatinine 1.0 mg/dL. Urine dipstick shows blood 3+ with 0–1 RBC/HPF. DAT is negative. The smear shows irregularly contracted red cells, bite cells and blister cells, without schistocytes. A G6PD fluorescent spot test sent today is reported as normal. What is the most likely diagnosis?",
+   "choices": [
+    "G6PD deficiency with acute oxidative haemolysis; the normal screen is falsely reassuring during acute haemolysis",
+    "Thrombotic thrombocytopenic purpura",
+    "Disseminated intravascular coagulation from severe malaria",
+    "Warm autoimmune haemolytic anaemia",
+    "Haemolytic uraemic syndrome"
+   ],
+   "answer": 0,
+   "explain": "กลไก: G6PD สร้าง NADPH เพื่อรักษา reduced glutathione; เมื่อเจอ oxidant (primaquine) Hb ถูก oxidize ตกตะกอนเป็น Heinz body ม้ามตัดส่วนนั้นออกเป็น bite/blister cell และ RBC แตกในหลอดเลือด → hemoglobinuria (dipstick blood บวกแต่ไม่มี RBC) haptoglobin หมด LDH สูง\n\nข้อถูก: ภาพครบของ **acute hemolytic crisis จาก G6PD** หลังยา 2 วัน; ผลตรวจคัดกรองปกติหลอกเพราะ RBC แก่ที่ขาดเอนไซม์มากถูกทำลายไปแล้ว เหลือ RBC อายุน้อยและ reticulocyte ที่มีเอนไซม์สูง → ตรวจซ้ำหลังราว 2–3 เดือน\n\nตัวลวง:\n- TTP: ต้องมี schistocyte + **platelet ต่ำ** ± ไข้ อาการทางสมอง ADAMTS13 ต่ำ (เคสนี้ platelet ปกติ)\n- DIC: ต้องมี platelet ต่ำ PT/aPTT ยาว fibrinogen ต่ำ D-dimer สูง\n- Warm AIHA: spherocyte และ DAT บวก extravascular เป็นหลัก\n- HUS: ไตวายเด่น + schistocyte + platelet ต่ำ มักตามหลังท้องเสียเป็นเลือด (STEC)",
+   "fullcover": "- **G6PD deficiency**: X-linked พบบ่อยในชายไทย ตัวกระตุ้นที่พบบ่อยสุดคือ **การติดเชื้อ** รองลงมาคือยา (primaquine, dapsone, sulfonamide, nitrofurantoin, rasburicase, methylene blue) ถั่วปากอ้า ลูกเหม็น\n- Smear: bite cell, blister cell, irregularly contracted cell; **Heinz body ต้องย้อม supravital**\n- ระดับ G6PD ปกติหลอกช่วง hemolysis เฉียบพลัน → ตรวจซ้ำหลัง 2–3 เดือนหรือใช้ quantitative assay\n- **Acute hemolytic crisis** (intravascular) สาเหตุ: G6PD, ABO incompatible transfusion, PNH, MAHA, malaria (โดยเฉพาะ falciparum), พิษงูแมวเซา, ผึ้ง/ต่อต่อยจำนวนมาก, Clostridium sepsis\n- ปัสสาวะสีเข้ม: hemoglobinuria (dipstick บวก ไม่มี RBC พลาสมาสีชมพู) vs myoglobinuria (dipstick บวก CK สูงมาก พลาสมาใส) vs hematuria (เห็น RBC)\n- รักษา hemolytic crisis: หยุดสิ่งกระตุ้น สารน้ำให้ปัสสาวะออกดี ป้องกัน **AKI จาก pigment nephropathy** ให้ PRC เมื่อ Hb ต่ำมากหรือมีอาการ ติดตาม K และ creatinine\n- **MAHA** = schistocyte + thrombocytopenia + hemolysis → DIC, TTP, HUS (และ HELLP, malignant hypertension, ลิ้นหัวใจเทียม)\n- **TTP**: ADAMTS13 <10% PT/aPTT ปกติ → plasma exchange ด่วน + steroid หลีกเลี่ยง platelet transfusion\n- **HUS**: STEC ในเด็ก supportive ห้ามยาปฏิชีวนะ/ยาหยุดถ่าย; atypical HUS → C5 inhibitor\n- **ยังไม่เคยออก:** ต้องตรวจ G6PD (quantitative ในผู้หญิง) ก่อนให้ primaquine เพื่อ radical cure ของ vivax/ovale; ถ้าขาดปานกลางใช้ primaquine สัปดาห์ละครั้งนาน 8 สัปดาห์\n- **ยังไม่เคยออก:** DIC วินิจฉัยด้วย ISTH score (platelet, D-dimer/FDP, PT ยาว, fibrinogen ต่ำ) จุดต่างจาก TTP คือ coagulation ผิดปกติ",
+   "pearl": "Hemolysis เฉียบพลันหลังยา + bite cell + platelet ปกติ = G6PD; schistocyte + platelet ต่ำ = MAHA",
+   "covers_themes": [
+    "G6PD deficiency: ยา/ถั่วปากอ้า → bite/blister cell, Heinz body",
+    "MAHA: schistocytes → DIC, TTP, HUS"
+   ],
+   "covers_nl": [
+    "Acute hemolytic crisis",
+    "DIC"
+   ]
+  },
+  {
+   "id": "SYN-HEME-06",
+   "title": "เลือดออกง่าย: primary vs secondary hemostasis, vWD, hemophilia, scurvy",
+   "stem": "A 19-year-old woman has had heavy menstrual bleeding since menarche, frequent nosebleeds and prolonged oozing for 2 days after a previous tooth extraction. Her father bruises easily and has gum bleeding, but no one in the family has had joint bleeding. She eats fruit and vegetables daily and takes no medication. Examination shows a few ecchymoses; there are no petechiae, no perifollicular haemorrhages and no joint deformity. Hb 10.1 g/dL, MCV 74 fL, platelets 260,000/µL, PT 12 s (control 12 s), aPTT 41 s (control 30 s) that corrects on mixing. Factor VIII activity 38%, factor IX 95%, von Willebrand factor antigen 32% and ristocetin cofactor activity 28%. She needs a wisdom-tooth extraction next week. Which is the most appropriate preparation?",
+   "choices": [
+    "Desmopressin (after a test-dose response) plus tranexamic acid",
+    "Recombinant factor IX concentrate",
+    "Prophylactic platelet transfusion",
+    "Vitamin C 500 mg daily for 2 weeks before surgery",
+    "Recombinant (vWF-free) factor VIII concentrate, as for haemophilia A"
+   ],
+   "answer": 0,
+   "explain": "กลไก: vWF ทำ 2 หน้าที่ คือให้ platelet เกาะผนังหลอดเลือด (primary hemostasis) และพา FVIII ไม่ให้ถูกสลาย → ขาด vWF จึงเลือดออกแบบเยื่อบุ (ประจำเดือนมาก กำเดา ถอนฟัน) และ FVIII ต่ำตาม ทำให้ aPTT ยาวแต่แก้ได้ด้วย mixing; ถ่ายทอดจากพ่อสู่ลูกสาว (autosomal) และ vWF:Ag ลดพอๆ กับ activity (ratio >0.7) = **vWD type 1**\n\nข้อถูก: DDAVP ปล่อย vWF และ FVIII จาก Weibel–Palade body ได้ผลใน type 1 (ทดสอบขนาดก่อนว่าขึ้นจริง) ร่วมกับ tranexamic acid ซึ่งช่วยมากในเลือดออกช่องปาก\n\nตัวลวง:\n- Factor IX: รักษา hemophilia B (FIX ต่ำ) เคสนี้ FIX ปกติ\n- Platelet transfusion: platelet ปกติ ไม่ช่วยถ้าขาด vWF (ใช้ในเลือดออกที่ platelet ต่ำ)\n- Vitamin C: รักษา scurvy ที่มี perifollicular hemorrhage corkscrew hair เหงือกบวม และ coag ปกติ\n- Recombinant FVIII: ใช้ใน hemophilia A แต่ไม่มี vWF จึงไม่แก้ปัญหา platelet adhesion และ FVIII อยู่ได้ไม่นานเมื่อไม่มี vWF; ถ้าต้องใช้ factor ให้ใช้ vWF-containing concentrate หรือ cryoprecipitate",
+   "fullcover": "- **Primary hemostasis** (platelet/vWF): petechiae เลือดออกเยื่อบุ ออกทันที; **secondary** (factor): hemarthrosis, deep muscle hematoma, ออกช้า/ซ้ำหลังผ่าตัด\n- **Vessel wall**: scurvy, IgA vasculitis, steroid/Cushing, senile purpura → platelet และ PT/aPTT ปกติ\n- การตรวจเบื้องต้น: CBC + smear, PT, aPTT, fibrinogen ± TT; isolated aPTT ยาวทำ mixing test (แก้ได้ = deficiency, ไม่แก้ = inhibitor/lupus anticoagulant)\n- **vWD**: inherited bleeding disorder ที่พบบ่อยสุด type 1 autosomal dominant; ตรวจ vWF:Ag, vWF activity, FVIII, multimer; ระดับเพิ่มจากความเครียด ตั้งครรภ์ estrogen หมู่เลือด O ต่ำกว่า\n- รักษา vWD: DDAVP (type 1, ระวัง hyponatremia, ห้ามใน type 2B), tranexamic acid, vWF-containing concentrate หรือ cryoprecipitate, ฮอร์โมนคุมประจำเดือน\n- **Hemophilia**: X-linked recessive (ไม่มีพ่อสู่ลูกชาย ลูกสาวของพ่อที่เป็นโรคเป็นพาหะทุกคน) hemarthrosis isolated aPTT ยาว\n- รักษา hemophilia: factor concentrate ทันที (A = FVIII, B = FIX) ไม่มีใช้ cryo สำหรับ A และ FFP สำหรับ B; ไม่เจาะข้อก่อนให้ factor ห้าม IM และ NSAID; mild A ใช้ DDAVP ได้\n- Hemophilia inhibitor → bypassing agent (rFVIIa, aPCC) หรือ emicizumab\n- **Scurvy**: ขาด vitamin C → prolyl/lysyl hydroxylase ทำงานไม่ได้ → collagen อ่อน; perifollicular hemorrhage, corkscrew hair, เหงือกบวม; coag ปกติ\n- ผู้หญิงที่ประจำเดือนมากตั้งแต่เริ่มมีประจำเดือนและขาดเหล็ก ควรคัดกรอง vWD\n- **ยังไม่เคยออก:** หญิงพาหะ hemophilia อาจมี FVIII ต่ำจนเลือดออกได้ (symptomatic carrier) ต้องตรวจ factor level ก่อนผ่าตัดหรือคลอด\n- **ยังไม่เคยออก:** acquired hemophilia A (autoantibody ต่อ FVIII ในผู้สูงอายุ/หลังคลอด) → จ้ำเลือดใหญ่ aPTT ยาวที่ mixing แก้ไม่ได้",
+   "pearl": "เลือดออกเยื่อบุ + ถ่ายทอดทั้งสองเพศ = vWD ให้ DDAVP + tranexamic; ข้อบวมในเด็กชาย = hemophilia ให้ factor",
+   "covers_themes": [
+    "Primary vs secondary hemostasis: mucocutaneous bleeding vs haemarthrosis",
+    "von Willebrand disease: เลือดออกเยื่อบุ, aPTT ยาว PT ปกติ, bleeding time",
+    "Hemophilia: X-linked, haemarthrosis, aPTT ยาว → ให้ factor VIII/cryo",
+    "Scurvy: vit C ขาด → collagen synthesis บกพร่อง"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-07",
+   "title": "งูกัดพิษต่อเลือดกับการแปลผล coagulation และ DIC",
+   "stem": "A 40-year-old rubber-plantation worker in southern Thailand was bitten on the foot by a snake at night and did not see it. Eighteen hours later he has swelling up to the mid-calf, oozing from the fang marks and gum bleeding. He has no ptosis, dysphagia or limb weakness. BP 128/80 mmHg, HR 92/min, RR 16/min. The 20-minute whole-blood clotting test shows no clot. Platelets 160,000/µL; PT and aPTT unclottable; thrombin time unclottable; fibrinogen <50 mg/dL; D-dimer markedly raised; creatinine 0.9 mg/dL; urinalysis shows no haemoglobinuria. The smear has no schistocytes. Which is the most appropriate management?",
+   "choices": [
+    "Give Malayan pit viper antivenom intravenously and repeat the clotting tests every 6 hours",
+    "Give fresh frozen plasma and cryoprecipitate alone to correct the coagulopathy",
+    "Give intravenous vitamin K 10 mg",
+    "Start a heparin infusion for disseminated intravascular coagulation",
+    "Observe without antivenom, because there is no ptosis or weakness"
+   ],
+   "answer": 0,
+   "explain": "กลไก: พิษงูกะปะมี thrombin-like enzyme ตัด fibrinogen โดยตรง (defibrination) → fibrinogen แทบหมด TT/PT/aPTT ไม่แข็งตัว D-dimer สูง เลือดออกตามรอยเขี้ยวและเหงือก; บวมเฉพาะที่ และไม่มีพิษต่อระบบประสาท ภาคใต้สวนยาง = **Malayan pit viper**\n\nข้อถูก: 20WBCT ไม่แข็งตัว + systemic bleeding = ข้อบ่งชี้ antivenom ชนิดจำเพาะ แล้วตรวจซ้ำทุก 6 ชม. ให้ซ้ำถ้ายังไม่แข็งตัว\n\nตัวลวง:\n- FFP/cryo อย่างเดียว: พิษยังอยู่ จะสลาย fibrinogen ที่ให้เข้าไปต่อ ใช้เสริมเฉพาะเลือดออกรุนแรงหลังให้ antivenom\n- Vitamin K: ใช้เมื่อขาด vitamin K (PT ยาวก่อน TT ปกติ fibrinogen ปกติ เช่นได้ cefoperazone กินไม่ได้) เคสนี้ TT ยาว fibrinogen ต่ำ\n- Heparin: ไม่ใช้ใน coagulopathy จากพิษงู และใน DIC ใช้เฉพาะชนิดที่ thrombosis เด่น\n- เฝ้าดูเฉยๆ: การไม่มี ptosis ตัดแค่ neurotoxic (เห่า จงอาง สามเหลี่ยม) ไม่ได้ตัด hematotoxic",
+   "fullcover": "- **แปลผล coagulation**: PT = VII + common; aPTT = XII/XI/IX/VIII + common; TT = fibrinogen → fibrin เท่านั้น\n- PT + aPTT ยาว TT ปกติ → ขาด factor (vitamin K, warfarin, โรคตับ, ขาด X/V/II); TT ยาว → fibrinogen ต่ำ/ผิดปกติ, heparin, dabigatran, FDP สูง\n- ขาด vitamin K: NMTT antibiotic + กินไม่ได้, obstructive jaundice, malabsorption → vitamin K IV (± PCC ถ้าเลือดออกรุนแรง); โรคตับ FVIII ปกติหรือสูง\n- **งูพิษต่อเลือดในไทย**: กะปะ (defibrination ± platelet ต่ำ), เขียวหางไหม้ (defibrination platelet อาจต่ำ), แมวเซา (DIC-like, hemoglobinuria, AKI)\n- ติดตาม: 20WBCT/VCT, PT/INR, platelet, UA, creatinine ทุก 6 ชม. ใน 24 ชม.แรก; PEFR หรือการหายใจใช้ติดตามงูพิษต่อประสาท\n- ข้อบ่งชี้ antivenom (hematotoxic): systemic bleeding, 20WBCT ไม่แข็งตัว/VCT >20 นาที, INR สูง, platelet ต่ำมาก\n- ปฐมพยาบาล: ไม่กรีด ไม่ดูด ไม่ขันชะเนาะ ดามให้นิ่ง; tetanus prophylaxis; ระวัง compartment syndrome\n- **ยังไม่เคยออก:** **DIC** = การกระตุ้น coagulation ทั่วร่างกาย (sepsis, trauma, APL, รกลอกตัว น้ำคร่ำอุดหลอดเลือด, งูแมวเซา) → platelet ต่ำ PT/aPTT ยาว fibrinogen ต่ำ D-dimer สูง schistocyte\n- **ยังไม่เคยออก:** วินิจฉัย DIC ด้วย ISTH score ≥5 (platelet, D-dimer, PT, fibrinogen) และรักษาต้นเหตุเป็นหลัก\n- **ยังไม่เคยออก:** DIC ที่เลือดออก: platelet เมื่อ <50,000/µL, cryo เมื่อ fibrinogen <150 mg/dL, FFP เมื่อ PT/aPTT ยาวมาก; heparin เฉพาะ DIC ที่ thrombosis เด่น\n- **ยังไม่เคยออก:** APL (t(15;17)) มาด้วย DIC/hyperfibrinolysis ต้องให้ ATRA ทันทีที่สงสัย",
+   "pearl": "งูกัด + เลือดไม่แข็งใน 20 นาที = ให้ antivenom ไม่ใช่ FFP; TT ยาว = fibrinogen หาย",
+   "covers_themes": [
+    "แปลผล coagulation: PT+aPTT ยาว → common pathway, TT, vit K-dependent factors",
+    "งูกัด hematotoxic: investigation ที่จำเป็น/ไม่จำเป็น"
+   ],
+   "covers_nl": [
+    "DIC"
+   ]
+  },
+  {
+   "id": "SYN-HEME-08",
+   "title": "Platelet สูง/ต่ำ และ MPN: ET vs PV vs CML vs reactive",
+   "stem": "A 61-year-old man has burning pain and redness of both feet that worsens with heat, and last month had a 20-minute episode of right-hand weakness that resolved completely. He does not smoke. There is no splenomegaly. CBC on two occasions 3 months apart: Hb 14.2 g/dL, Hct 43%, WBC 9,800/µL with a normal differential (no basophilia or immature myeloid cells), platelets 1,050,000/µL. The smear confirms markedly increased platelets with giant forms and no clumping. Ferritin 140 ng/mL and CRP are normal. JAK2 V617F is detected and BCR-ABL1 is negative. Von Willebrand factor activity is normal. Which is the most appropriate treatment?",
+   "choices": [
+    "Hydroxyurea plus low-dose aspirin",
+    "Imatinib",
+    "Phlebotomy to keep the haematocrit below 45%",
+    "Oral iron and observation for reactive thrombocytosis",
+    "Prednisolone with intravenous immunoglobulin"
+   ],
+   "answer": 0,
+   "explain": "กลไก: JAK2 V617F ทำให้ JAK-STAT ทำงานตลอดโดยไม่ต้องมี cytokine → megakaryocyte เพิ่มจำนวนเป็น clone → platelet สูงต่อเนื่อง; platelet ที่ทำงานผิดปกติทำให้ erythromelalgia (microvascular) และ thrombosis (TIA) เมื่อ Hb/Hct ปกติ BCR-ABL1 ลบ ferritin/CRP ปกติ = **essential thrombocythemia**\n\nข้อถูก: อายุ >60 และเคยมี thrombosis (TIA) = **high risk** → cytoreduction ด้วย hydroxyurea + low-dose aspirin (vWF activity ปกติจึงให้ aspirin ได้)\n\nตัวลวง:\n- Imatinib: รักษา CML (BCR-ABL1 บวก WBC สูงเห็นทุกระยะของ myeloid basophilia ม้ามโตมาก)\n- Phlebotomy Hct <45%: รักษา PV (Hb/Hct สูง EPO ต่ำ คันหลังอาบน้ำ)\n- เหล็ก/สังเกต: reactive thrombocytosis จากขาดเหล็กหรืออักเสบ แต่ ferritin และ CRP ปกติ และมี JAK2\n- Steroid + IVIG: รักษา ITP (platelet ต่ำจริง) เป็นคนละขั้วกับเคสนี้",
+   "fullcover": "- **ขั้นแรกของ platelet ผิดปกติทุกครั้ง: ดู smear** — platelet clump = pseudothrombocytopenia (EDTA) ยืนยันด้วยหลอด citrate ไม่ต้องรักษา\n- Thrombocytosis: reactive (ขาดเหล็ก อักเสบ มะเร็ง หลังตัดม้าม) พบบ่อยกว่า MPN มาก → ดู ferritin, CRP\n- **ET**: platelet ≥450,000 ต่อเนื่อง, JAK2/CALR/MPL, ต้องตัด **CML (BCR-ABL1)**, PV, PMF, MDS\n- ET high risk (อายุ >60 หรือเคย thrombosis) → hydroxyurea + aspirin; low risk → aspirin; platelet >1 ล้านตรวจ acquired vWD ก่อนให้ aspirin; ตั้งครรภ์ใช้ interferon\n- **PV**: Hb/Hct สูง, JAK2 >95%, EPO ต่ำ, aquagenic pruritus, plethora → phlebotomy Hct <45% + aspirin ± hydroxyurea; secondary erythrocytosis มี EPO สูง (hypoxia, RCC)\n- **CML**: t(9;22) BCR-ABL1, WBC สูงมากทุกระยะ myeloid basophilia ม้ามโตมาก LAP ต่ำ → TKI (imatinib) ติดตามด้วย RT-PCR\n- MPN ทุกชนิดเสี่ยง thrombosis ตำแหน่งแปลก (Budd–Chiari) และเปลี่ยนเป็น myelofibrosis/AML\n- **ยังไม่เคยออก:** **ITP** = platelet ต่ำเดี่ยว smear ปกติ diagnosis of exclusion (ตรวจ HIV, HCV, H. pylori) รักษาเมื่อ platelet <30,000/µL หรือเลือดออก ด้วย prednisolone/dexamethasone ± IVIG\n- **ยังไม่เคยออก:** **HIT**: platelet ลด >50% วันที่ 5–10 หลังได้ heparin ร่วมกับ thrombosis → หยุด heparin ทุกชนิด เปลี่ยนเป็น non-heparin anticoagulant ห้ามให้ platelet\n- **ยังไม่เคยออก:** platelet ต่ำในหญิงตั้งครรภ์: gestational thrombocytopenia (ไม่ต่ำมาก ไตรมาส 3) vs ITP vs HELLP/preeclampsia\n- **ยังไม่เคยออก:** platelet ต่ำจากยา (heparin, quinine, linezolid, valproate) และจากไวรัส (dengue) เป็นสาเหตุที่ต้องถามทุกราย",
+   "pearl": "Platelet สูง: ตัด reactive → JAK2/CALR/MPL + BCR-ABL1 ลบ = ET; อายุ >60 หรือมี thrombosis ให้ hydroxyurea",
+   "covers_themes": [
+    "Pseudothrombocytopenia: platelet clumping → ไม่ต้องรักษา",
+    "Essential thrombocythemia: plt สูงมากต่อเนื่อง ไม่มีสาเหตุ reactive",
+    "Polycythemia vera: aquagenic pruritus, Hct สูง → JAK2",
+    "CML: massive splenomegaly, WBC สูง → BCR-ABL1"
+   ],
+   "covers_nl": [
+    "Platelet disorders"
+   ]
+  },
+  {
+   "id": "SYN-HEME-09",
+   "title": "Multiple myeloma: ปวดหลัง + rouleaux + hypercalcemia + AKI",
+   "stem": "A 67-year-old man has 3 months of low back pain, fatigue and constipation, and for 2 days has been confused. He takes ibuprofen for the back pain. BP 110/70 mmHg, HR 102/min, dry mucous membranes. Hb 8.9 g/dL (MCV 92 fL), WBC 5,600/µL, platelets 190,000/µL; the smear shows rouleaux formation. Total protein 9.6 g/dL, albumin 3.0 g/dL, albumin-corrected calcium 13.4 mg/dL, creatinine 2.6 mg/dL (1.0 mg/dL a year ago), ALP 85 U/L. Urine dipstick protein is trace, but the urine protein-to-creatinine ratio is 3.2 g/g. X-rays show multiple punched-out lytic lesions in the skull and an L2 compression fracture. Which is the most appropriate initial management?",
+   "choices": [
+    "Intravenous 0.9% saline and stop ibuprofen, then calcitonin plus an antiresorptive agent (denosumab or a renally adjusted bisphosphonate)",
+    "Intravenous furosemide first to promote calcium excretion, before fluid replacement",
+    "Bone scintigraphy to stage the skeletal disease before treatment",
+    "Urgent plasmapheresis for hyperviscosity",
+    "Parathyroidectomy for primary hyperparathyroidism"
+   ],
+   "answer": 0,
+   "explain": "กลไก: plasma cell ใน marrow หลั่ง RANKL/MIP-1α/IL-6 กระตุ้น osteoclast และ DKK-1 กด osteoblast → lytic lesion ปล่อย Ca (ALP ปกติ bone scan มักลบ) → hypercalcemia ทำให้ปัสสาวะมาก ขาดน้ำ สับสน ท้องผูก; light chain ตกตะกอนกับ Tamm–Horsfall protein (cast nephropathy) ร่วมกับขาดน้ำและ NSAID → AKI; paraprotein ทำให้ total protein สูง globulin gap และ rouleaux; dipstick ไม่จับ light chain จึงต่างจาก UPCR\n\nข้อถูก: Ca 13.4 + สับสน = hypercalcemia รุนแรงปานกลาง เริ่ม IV NSS แก้ขาดน้ำ หยุด NSAID แล้วให้ calcitonin (เร็ว) + antiresorptive (denosumab เหมาะเมื่อไตเสื่อม หรือ bisphosphonate ปรับขนาด) แล้วจึงยืนยัน myeloma ด้วย SPEP/IFE, FLC, marrow\n\nตัวลวง:\n- Furosemide ก่อนให้น้ำ: ทำให้ขาดน้ำและไตแย่ลง ใช้หลังให้น้ำพอหรือมี volume overload เท่านั้น\n- Bone scan: myeloma ไม่มี osteoblastic activity ผลมักลบ ใช้ low-dose whole-body CT/PET-CT/MRI\n- Plasmapheresis: สำหรับ hyperviscosity (มักเป็น IgM/Waldenström) หรือบางรายของ cast nephropathy ไม่ใช่การรักษาแรกของ hypercalcemia\n- Parathyroidectomy: primary hyperparathyroidism มี PTH สูง ไม่มี rouleaux/lytic punched-out/AKI จาก light chain",
+   "fullcover": "- **สงสัย MM**: ผู้สูงอายุปวดหลัง + ซีด normocytic + Cr สูง + Ca สูง/total protein สูง + ESR สูงมาก + rouleaux\n- **CRAB**: hyperCalcemia, Renal, Anemia, Bone; และ SLiM (plasma cell ≥60%, FLC ratio ≥100, focal lesion บน MRI >1)\n- ส่งตรวจ: **SPEP + immunofixation, serum free light chain**, UPCR, bone marrow (clonal plasma cell ≥10%), whole-body low-dose CT/PET-CT/MRI\n- **Dipstick protein ลบแต่ UPCR สูง** = light chain proteinuria\n- Lab แปลก: **anion gap ต่ำ**, globulin gap, pseudohyponatremia, ALP ปกติแม้กระดูกพรุนกร่อน\n- **Hypercalcemia**: NSS → calcitonin + bisphosphonate/denosumab; steroid ช่วยใน myeloma; furosemide หลังให้น้ำพอ; dialysis ถ้าไตวายรุนแรง\n- ไต: cast nephropathy, hypercalcemia, ขาดน้ำ, NSAID, contrast → ให้น้ำ หลีกเลี่ยง NSAID\n- แยก MGUS (M-protein <3 g/dL, plasma cell <10%, ไม่มี CRAB) และ Waldenström (IgM, hyperviscosity, ไม่มี lytic lesion)\n- รักษา: bortezomib + lenalidomide + dexamethasone (± daratumumab) → autologous SCT; ป้องกัน VTE เมื่อใช้ lenalidomide; วัคซีนและระวังติดเชื้อ encapsulated\n- **ยังไม่เคยออก:** hypercalcemia จากมะเร็งอื่น (PTHrP: squamous cell lung ca, breast, RCC) PTH ต่ำ PTHrP สูง; lymphoma (1,25-OH vitamin D สูง)\n- **ยังไม่เคยออก:** spinal cord compression จาก vertebral collapse ใน myeloma → dexamethasone + MRI ด่วน + radiotherapy/ผ่าตัด",
+   "pearl": "ปวดหลัง + rouleaux + Ca สูง + Cr สูง = myeloma; แก้ Ca ด้วยน้ำเกลือก่อน ห้าม furosemide ตอนขาดน้ำ",
+   "covers_themes": [
+    "Multiple myeloma: ปวดหลัง + rouleaux → วินิจฉัย",
+    "Multiple myeloma: ลักษณะทางคลินิก, กลไก hypercalcemia"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-HEME-10",
+   "title": "ต่อมน้ำเหลืองโตใน CLL: Richter transformation, lymphoma และภูมิคุ้มกันบกพร่อง",
+   "stem": "A 64-year-old man has chronic lymphocytic leukaemia diagnosed 4 years ago (Rai stage 0, managed by observation). Over the past year he has had recurrent sinusitis and two pneumonias; serum IgG is 380 mg/dL. In the past 6 weeks a left cervical lymph node has enlarged rapidly from 1.5 to 5 cm, and he has drenching night sweats, fever up to 38.3 °C and 9% weight loss. There is no dental or skin infection; the node is firm, non-tender and not fluctuant. WBC 38,000/µL (lymphocytes 85%, smudge cells), Hb 12.1 g/dL, platelets 150,000/µL, LDH 620 U/L (ULN 250). PET-CT shows the cervical node with SUVmax 18, far higher than his other small nodes (SUVmax 3). Which is the most appropriate next step?",
+   "choices": [
+    "Excisional (or PET-guided core) biopsy of the most FDG-avid node",
+    "Fine-needle aspiration cytology of the node",
+    "Start a BTK inhibitor for progressive CLL without further tissue sampling",
+    "A 2-week course of oral antibiotics for bacterial lymphadenitis, then review",
+    "Induction chemotherapy with cytarabine and daunorubicin (7+3)"
+   ],
+   "answer": 0,
+   "explain": "กลไก: CLL บางรายเกิด clone ใหม่ที่ aggressive (ส่วนใหญ่เป็น DLBCL) = **Richter transformation** อาการคือต่อมโตเร็วเฉพาะจุด B symptoms LDH สูง และ PET มี SUV สูงกว่าต่อม CLL เดิมชัดเจน; การรักษาต่างจาก CLL โดยสิ้นเชิงจึงต้องมีชิ้นเนื้อดู architecture\n\nข้อถูก: ตัดต่อมทั้งต่อม (หรือ core ชิ้นใหญ่) ที่ SUV สูงสุด\n\nตัวลวง:\n- FNA: ได้แค่เซลล์ ไม่เห็น architecture แยก CLL จาก large cell lymphoma ไม่ได้ (ใช้ตอบโจทย์ lymphoma ทั่วไปว่าไม่พอ)\n- BTK inhibitor: รักษา CLL ที่ active แต่ถ้าเป็น Richter ต้องใช้สูตรแบบ DLBCL (R-CHOP) จึงต้องพิสูจน์ก่อน\n- ยาปฏิชีวนะ: lymphadenitis จากแบคทีเรียจะกดเจ็บ แดง ร้อน อาจมี fluctuation และมีแหล่งติดเชื้อ เคสนี้ไม่ใช่\n- 7+3: induction ของ AML (blast ≥20%, Auer rod) ไม่เกี่ยวกับ lymphoma",
+   "fullcover": "- **CLL**: B lymphocyte ≥5,000/µL CD5+/CD19+/CD23+ smudge cell; ส่วนใหญ่ไม่มีอาการ → watch and wait; รักษาเมื่อ active ด้วย BTK inhibitor หรือ venetoclax + obinutuzumab\n- ภาวะแทรกซ้อน CLL: AIHA/ITP, **hypogammaglobulinemia** ติดเชื้อซ้ำ, Richter transformation\n- **Lymphoma วินิจฉัย**: excisional biopsy ไม่ใช่ FNA; staging ด้วย PET-CT (Lugano); B symptoms: ไข้ เหงื่อกลางคืน น้ำหนักลด >10% ใน 6 เดือน\n- **IPI** (aggressive NHL): อายุ >60, LDH สูง, ECOG ≥2, stage III–IV, extranodal >1\n- ตรวจ HBV ก่อนให้ rituximab ป้องกัน reactivation\n- **AML**: blast ≥20%, Auer rod, MPO+; induction 7+3 ในผู้แข็งแรง, ผู้สูงอายุใช้ hypomethylating agent + venetoclax; APL ให้ ATRA ทันที\n- ภาวะฉุกเฉินมะเร็งเลือด: tumor lysis syndrome, leukostasis, SVC syndrome, cord compression\n- **ยังไม่เคยออก:** **Lymphadenitis** แยกจากมะเร็ง: เจ็บ แดง ร้อน มีแหล่งติดเชื้อ → ยาปฏิชีวนะคลุม S. aureus/Streptococcus; มีหนอง → เจาะ/ระบาย; ต่อมโตเรื้อรังไม่เจ็บ หรือ >2 cm นานกว่า 4–6 สัปดาห์ → biopsy\n- **ยังไม่เคยออก:** **TB lymphadenitis** (scrofula) พบบ่อยในไทย ต่อมคอเป็นกลุ่ม อาจแตกเป็น sinus → excision/core biopsy ส่ง AFB, culture, Xpert; HIV ควรตรวจทุกราย\n- **ยังไม่เคยออก:** **Febrile neutropenia** หลังเคมีบำบัด (ANC <500/µL หรือกำลังลดลง + ไข้ ≥38.3°C หรือ ≥38.0°C นาน 1 ชม.) → เพาะเชื้อแล้วให้ antipseudomonal β-lactam ภายใน 1 ชม.\n- **ยังไม่เคยออก:** **Asplenia** (หลังตัดม้าม หรือ functional เช่น sickle cell) เสี่ยง overwhelming sepsis จาก encapsulated bacteria → วัคซีน pneumococcus, Hib, meningococcus (ก่อนตัดม้าม ≥2 สัปดาห์), ไข้ให้ยาปฏิชีวนะทันที\n- **ยังไม่เคยออก:** CLL ที่มี hypogammaglobulinemia + ติดเชื้อรุนแรงซ้ำ → พิจารณา IVIG ทดแทน และวัคซีนชนิดไม่มีชีวิต (ห้ามวัคซีนเชื้อเป็น)",
+   "pearl": "CLL ที่ต่อมโตเร็ว + LDH สูง + SUV สูงเด่น = Richter ต้อง excisional biopsy ไม่ใช่ FNA",
+   "covers_themes": [
+    "AML: blast + Auer rod → วินิจฉัย, induction 7+3",
+    "CLL: small mature lymphocytosis ในผู้ไม่มีอาการ",
+    "Lymphoma: excisional LN biopsy, ปัจจัยพยากรณ์ NHL"
+   ],
+   "covers_nl": [
+    "Lymphadenitis",
+    "Immune deficiency (asplenia, post-chemo)"
+   ]
+  }
+ ]
+}

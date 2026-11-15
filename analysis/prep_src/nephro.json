@@ -1,0 +1,578 @@
+{
+ "one_per_theme": [
+  {
+   "theme": "Diabetic nephropathy: hyperfiltration, UACR, SGLT2i, ACEI",
+   "id": "N-OLD-041",
+   "related": "- **UACR แบ่ง A1 < 30, A2 30-300, A3 > 300 mg/g** ต้องผิดปกติ 2 ใน 3 ครั้งในช่วง 3-6 เดือน เพราะไข้ ออกกำลังหนัก UTI น้ำตาลสูงมาก ทำให้บวกชั่วคราว; คัดกรองปีละครั้ง (T2DM ตั้งแต่วินิจฉัย, T1DM หลังเป็น 5 ปี)\n- ลำดับพยาธิ: **hyperfiltration → GBM หนา + mesangial expansion → albuminuria → nodular glomerulosclerosis (Kimmelstiel-Wilson)**; ตัวเร่งที่แก้ได้คือน้ำตาล ความดัน albuminuria บุหรี่\n- เบาหวานเป็นสาเหตุอันดับ 1 ของ CKD/ESKD ทั้งในไทยและทั่วโลก รองลงมาคือความดันสูง\n- เสาหลักการรักษา: **ACEI หรือ ARB ขนาดสูงสุดที่ทนได้ (ห้ามใช้คู่กัน)** + **SGLT2 inhibitor** (เริ่มได้ถ้า eGFR ≥ 20) + คุมความดัน < 130/80; ถ้ายังมี albuminuria เหลือใน T2DM พิจารณา **finerenone** และ GLP-1 RA มีหลักฐานชะลอไตด้วย\n- **Creatinine ขึ้นไม่เกินราว 30% หลังเริ่ม ACEI/ARB หรือ SGLT2i ยอมรับได้** (ลดแรงดันใน glomerulus) ไม่ต้องหยุดยา; ถ้าขึ้นมากกว่านั้นให้หาภาวะขาดน้ำ ยา NSAID หรือ renal artery stenosis\n- ปรับยาเบาหวานตามไต: **metformin ลดขนาดเมื่อ eGFR 30-44 และหยุดเมื่อ < 30**, เลี่ยง glibenclamide (น้ำตาลต่ำนาน)\n- **Pitfall**: เบาหวานที่มี active sediment (RBC cast), ไตเสื่อมเร็ว, nephrotic เกิดฉับพลัน หรือ T1DM ที่ไม่มี retinopathy ให้คิดถึงโรคไตอื่นและพิจารณาเจาะชิ้นเนื้อ"
+  },
+  {
+   "theme": "Hypercalcemia: PHPT, มะเร็ง, myeloma, ลำดับการรักษา",
+   "id": "N-OLD-014",
+   "related": "- **ขั้นแรกตรวจ intact PTH**: สูงหรือ \"ปกติ\" ทั้งที่ Ca สูง = PTH-dependent (primary HPT, FHH, lithium); PTH ถูกกด = PTHrP (มะเร็ง squamous, ไต), osteolytic metastasis/myeloma, calcitriol (lymphoma, granuloma เช่น TB, sarcoid), vitamin D เกิน, milk-alkali, thiazide, thyrotoxicosis\n- **ผู้ป่วยนอก = primary HPT (Ca สูง PO4 ต่ำ ไม่มีอาการ), ผู้ป่วยใน = มะเร็ง**; แยก FHH ด้วย urine calcium ต่ำ (calcium/creatinine clearance ratio ต่ำมาก) ซึ่งไม่ต้องผ่าตัด\n- ข้อบ่งชี้ผ่าตัด parathyroid (หลักการ): มีอาการ, นิ่ว/nephrocalcinosis, กระดูกพรุน, eGFR < 60, อายุน้อย หรือ Ca สูงกว่าค่าบนมาก\n- แก้ค่าตาม albumin: **corrected Ca = Ca + 0.8 × (4 − albumin)**; อาการ stones bones groans moans, ปัสสาวะมาก (nephrogenic DI), QT สั้น\n- **ลำดับรักษา Ca สูงรุนแรง**: isotonic saline ปริมาณมาก → calcitonin (ออกฤทธิ์ในชั่วโมง แต่ดื้อภายใน 48 ชม.) → bisphosphonate (zoledronate ออกฤทธิ์ 2-4 วัน) หรือ **denosumab เมื่อไตเสื่อม**; **steroid ใช้กับ calcitriol-mediated** (lymphoma, granuloma); furosemide เฉพาะน้ำเกิน; dialysis เมื่อรุนแรงร่วมไตวาย\n- Myeloma (CRAB): ส่ง **SPEP + immunofixation + serum free light chain** (UPEP ช่วย) เพราะ dipstick จับ light chain ไม่ได้; เลี่ยง NSAID และสารทึบรังสีเพราะเร่ง cast nephropathy\n- ภาพที่ช่วยนึกถึง myeloma: globulin สูง (total protein − albumin กว้าง), **anion gap ต่ำ**, ซีด และ Fanconi-like tubulopathy"
+  },
+  {
+   "theme": "Tumor lysis syndrome: วินิจฉัย, ลักษณะ (ไม่มี hyperCa)",
+   "id": "N-OLD-005",
+   "related": "- **Cairo-Bishop (lab TLS)** ≥ 2 ข้อภายใน 3 วันก่อนถึง 7 วันหลังเริ่มรักษา: uric acid ≥ 8 mg/dL, K ≥ 6 mEq/L, PO4 ≥ 4.5 mg/dL (ผู้ใหญ่), Ca ≤ 7 mg/dL หรือเปลี่ยนจากเดิม 25%; **clinical TLS** = lab TLS + creatinine ≥ 1.5 เท่าของค่าบน หรือ arrhythmia หรือชัก\n- กลุ่มเสี่ยงสูง: **Burkitt, ALL ที่ WBC สูง, high-grade lymphoma ก้อนใหญ่, LDH สูง** และไตเสื่อมเดิม; เกิดเองก่อนให้ยาได้ในก้อนที่โตเร็ว\n- ป้องกัน: สารน้ำปริมาณมาก + **allopurinol (เสี่ยงปานกลาง เริ่มก่อนเคมีบำบัด 1-2 วัน)** หรือ **rasburicase (เสี่ยงสูงหรือ uric acid สูงแล้ว)**\n- **Rasburicase ห้ามใช้ใน G6PD deficiency** (hemolysis, methemoglobinemia) ซึ่งพบบ่อยในไทย ต้องตรวจก่อน; ตัวอย่างเลือดวัด uric acid ต้องแช่เย็นเพราะยายังย่อยต่อในหลอด\n- **ไม่ทำ urine alkalinization** เพราะเร่งการตกตะกอน calcium phosphate และ xanthine\n- **ให้ calcium เฉพาะเมื่อมีอาการหรือ ECG เปลี่ยน** เพราะ PO4 สูงจะจับ Ca ตกตะกอนในเนื้อเยื่อ; ลด PO4 ด้วยยาจับฟอสเฟต\n- ข้อบ่งชี้ dialysis: K สูงดื้อยา, PO4 สูงมากร่วม Ca ต่ำมีอาการ, ปัสสาวะออกน้อยหรือน้ำเกิน"
+  },
+  {
+   "theme": "Hypocalcemia: สาเหตุ (iatrogenic), Chvostek/Trousseau → IV Ca gluconate",
+   "id": "N-OLD-008",
+   "related": "- ส่ง **ionized Ca หรือแก้ตาม albumin** ก่อนเสมอ แล้วตรวจ **Mg, PO4, PTH, 25-OH vitamin D** แบ่งตาม PTH: PTH ต่ำ = hypoparathyroidism (สาเหตุบ่อยสุดคือ **หลังผ่าตัดคอ** และ Mg ต่ำ), PTH สูง = ขาดวิตามินดี, CKD, pseudohypoparathyroidism, hungry bone, ตับอ่อนอักเสบ, TLS/rhabdomyolysis\n- อาการ: ชารอบปาก ตะคริว **Chvostek, Trousseau**, laryngospasm, ชัก, **QT ยาว**\n- **มีอาการ: 10% calcium gluconate 10-20 mL IV ช้าใน 10 นาที แล้วต่อ infusion** พร้อม ECG monitor; gluconate ระคายหลอดเลือดน้อยกว่า chloride; ไม่ผสมกับ bicarbonate (ตกตะกอน) และระวังผู้ได้ digoxin\n- **Mg ต่ำต้องแก้ก่อน** มิฉะนั้น Ca ไม่ขึ้น (Mg ต่ำกดการหลั่งและฤทธิ์ PTH)\n- Hypoparathyroidism เรื้อรัง: calcium รับประทาน + **calcitriol (active vit D)** เป้าหมาย Ca ระดับปกติค่อนต่ำเพื่อลด hypercalciuria และนิ่ว\n- **CKD-MBD**: จำกัดฟอสเฟต, ยาจับฟอสเฟต (calcium carbonate พร้อมอาหาร, sevelamer/lanthanum เมื่อ Ca สูง), active vit D, cinacalcet ในผู้ฟอกเลือดที่ PTH สูงมาก; ปล่อยนานเป็น tertiary HPT (Ca สูง)\n- สาเหตุ iatrogenic อื่น: **citrate จาก massive transfusion**, bisphosphonate/denosumab, foscarnet"
+  },
+  {
+   "theme": "Magnesium และ hypoK ดื้อ (amphotericin)",
+   "id": "N-OLD-010",
+   "related": "- สาเหตุ Mg ต่ำที่ออกสอบ: **PPI ระยะยาว, loop/thiazide, แอลกอฮอล์, ท้องเสียเรื้อรัง, aminoglycoside, amphotericin B, cisplatin, calcineurin inhibitor**\n- **Amphotericin B → distal (type 1) RTA + เสีย K และ Mg ทางไต + ATN**; ลดพิษด้วยการให้ saline loading และใช้ lipid/liposomal formulation\n- Mg ต่ำทำให้ **K ต่ำดื้อการแก้** (ROMK ปล่อย K ออกมากขึ้น) และ **Ca ต่ำ** (กด PTH) จึงต้องแก้ Mg ก่อนหรือพร้อมกัน\n- **Torsades de pointes หรือ Mg ต่ำมีอาการ: MgSO4 2 g IV**; อาการน้อยให้รับประทาน (ท้องเสียเป็นผลข้างเคียง); ระวังให้ Mg ในไตวายเพราะเสี่ยง Mg สูง\n- การให้ K: รับประทานปลอดภัยกว่า; IV ทาง peripheral ไม่ควรเร็วเกินราว 10 mEq/ชม. (เร็วกว่านี้ทาง central พร้อม ECG monitor) และ **ห้ามผสมใน dextrose** เพราะกระตุ้น insulin ดัน K เข้าเซลล์\n- แยกโรคท่อไตพันธุกรรม: **Gitelman = เหมือนได้ thiazide (Mg ต่ำ, urine Ca ต่ำ)**, **Bartter = เหมือนได้ loop (urine Ca สูง)** ทั้งคู่ K ต่ำ metabolic alkalosis ความดันปกติ"
+  },
+  {
+   "theme": "Nephrotic syndrome: นิยาม/ตรวจปัสสาวะ",
+   "id": "N-OLD-017",
+   "related": "- เกณฑ์: **proteinuria > 3.5 g/วัน (หรือ UPCR > 3-3.5 g/g)** + albumin ต่ำ + บวม (+ ไขมันสูงและ lipiduria); hematuria/RBC cast/ความดันสูง/GFR ตก เป็นลักษณะ nephritic\n- **Dipstick จับเฉพาะ albumin** และขึ้นกับความเข้มข้นปัสสาวะ จึงใช้คัดกรองเท่านั้น วัดปริมาณด้วย UPCR หรือ 24-hour urine\n- บวมเกิดจากทั้ง underfill (oncotic ต่ำ) และ **overfill (ไตเก็บ Na เองที่ collecting duct)**; รักษาด้วยจำกัดเกลือ + loop diuretic ขนาดสูง (albumin ต่ำทำให้ยาไปถึงท่อไตน้อย)\n- การสืบค้นหาสาเหตุในผู้ใหญ่: น้ำตาล/HbA1c, HBsAg, anti-HCV, anti-HIV, ANA, C3/C4, **anti-PLA2R**, SPEP/free light chain ในอายุมาก แล้ว **เจาะชิ้นเนื้อไต**; เด็กให้ steroid ได้เลยเพราะส่วนใหญ่เป็น MCD\n- ประคับประคองทุกราย: **ACEI/ARB ลดโปรตีน**, statin ในรายที่ไขมันสูงต่อเนื่อง, ประเมินความเสี่ยงลิ่มเลือด\n- Lipiduria: oval fat body, fatty cast เห็น **Maltese cross** ใต้ polarized light\n- โรคที่ให้ทั้ง nephrotic และ nephritic: **lupus nephritis class IV, MPGN/C3 glomerulopathy**"
+  },
+  {
+   "theme": "Nephrotic: ภาวะแทรกซ้อน VTE",
+   "id": "N-OLD-019",
+   "related": "- กลไก hypercoagulable: **เสีย antithrombin III และ protein S ทางปัสสาวะ** + ตับสร้าง fibrinogen, factor V, VIII เพิ่ม + เลือดข้นจากยาขับปัสสาวะ + เกล็ดเลือดไวขึ้น\n- **Renal vein thrombosis พบมากใน membranous nephropathy**: ปวดสีข้างฉับพลัน, hematuria, creatinine ขึ้น, **varicocele ซ้ายใหม่** (หลอดเลือดดำอัณฑะซ้ายเทเข้า renal vein ซ้าย), อาจหลุดเป็น PE; วินิจฉัยด้วย CT venography หรือ Doppler\n- ความเสี่ยงสูงขึ้นเมื่อ **albumin ต่ำมาก (ราว < 2.5 g/dL)** โดยเฉพาะ MN จึงพิจารณา prophylactic anticoagulation เมื่อเสี่ยงเลือดออกต่ำ\n- **Heparin อาจได้ผลลดลง** เพราะต้องอาศัย antithrombin ที่เสียไป\n- ภาวะแทรกซ้อนอื่น: **ติดเชื้อจากเสีย IgG** (pneumococcal peritonitis, cellulitis) ควรฉีดวัคซีน pneumococcus; AKI จากขาดน้ำหรือยาขับปัสสาวะมากไป\n- เสียโปรตีนจับฮอร์โมนและแร่ธาตุ: vitamin D-binding protein (Ca ต่ำ), **TBG** (total T4 ต่ำแต่ free T4 ปกติ), transferrin (ซีดขาดเหล็ก)\n- ไขมันสูงเพิ่มความเสี่ยงหลอดเลือดแดงแข็ง ถ้าโปรตีนรั่วต่อเนื่องให้ statin"
+  },
+  {
+   "theme": "Glomerular disease ตามบริบท (MN-มะเร็ง, MCD, HIVAN, heroin, myeloma)",
+   "id": "N-OLD-020",
+   "related": "- **MCD**: เด็กเป็นหลัก ผู้ใหญ่ที่เกิดหลัง **NSAID หรือ Hodgkin lymphoma**; LM ปกติ EM foot process effacement; ตอบ steroid ดีมาก\n- **FSGS**: primary หรือ secondary จาก **อ้วน, HIV (collapsing), heroin, APOL1, ไตเหลือน้อย, reflux**; มักมีความดันสูงและ hematuria ร่วม และดื้อ steroid บ่อยกว่า MCD\n- **Membranous**: primary ราว 70% มี **anti-PLA2R**; secondary จาก **HBV, SLE (class V), มะเร็ง solid organ, ยา (NSAID, penicillamine, gold)** → คัดกรองมะเร็งตามอายุ; เสี่ยง renal vein thrombosis สูงสุด\n- **HIVAN**: proteinuria มาก ไตวายเร็ว ไตโต echogenic; รักษาหลักคือ **ART ทันที** + ACEI/ARB\n- **Myeloma**: cast nephropathy (dipstick ลบแต่ UPCR สูง), **AL amyloidosis** (nephrotic แท้ albumin รั่วมาก ไตโต), light chain deposition disease, Fanconi\n- **HCV → MPGN จาก cryoglobulinemia (C4 ต่ำ)**; HBV → MN (เด็ก) หรือ MPGN\n- Diabetic kidney disease ยังเป็นสาเหตุ nephrotic-range proteinuria ที่พบบ่อยที่สุดในผู้ใหญ่โดยรวม\n- หลักการเลือก: อายุ + บริบท (ยา ไวรัส มะเร็ง สารเสพติด) + มี hematuria หรือ complement ต่ำหรือไม่"
+  },
+  {
+   "theme": "Urine cast บอกตำแหน่ง (RBC/WBC/muddy brown)",
+   "id": "N-OLD-026",
+   "related": "- **Hyaline cast**: ปกติได้ ปัสสาวะเข้มข้น prerenal หรือได้ยาขับปัสสาวะ ไม่บอกโรคเนื้อไต\n- **RBC cast** = glomerulonephritis; **WBC cast** = pyelonephritis หรือ **acute interstitial nephritis**; **muddy brown granular / renal tubular epithelial cast** = ATN; **fatty cast/oval fat body** = nephrotic; **waxy/broad cast** = CKD ระยะท้าย\n- Cast ทุกชนิดเกิดใน **ท่อไต** จึงยืนยันว่าพยาธิสภาพอยู่ที่ไต ไม่ใช่กระเพาะปัสสาวะ\n- **AIN**: เกิดจากยา (beta-lactam, PPI, NSAID, rifampicin, allopurinol) หรือการติดเชื้อ; triad ไข้ ผื่น eosinophilia พบไม่ครบ; **eosinophiluria ไวต่ำ** ไม่ใช้ตัดออก; รักษาหยุดยา ± steroid\n- **Dipstick blood บวกแต่ไม่มี RBC** = myoglobin (rhabdomyolysis) หรือ hemoglobin (hemolysis)\n- ผลึกที่ควรจำ: uric acid รูปข้าวหลามตัด (TLS), **calcium oxalate รูปซองจดหมายหรือเข็ม (ethylene glycol)**, struvite รูปฝาโลง, cystine หกเหลี่ยม\n- ต้องส่องปัสสาวะสดภายในไม่กี่ชั่วโมง cast จะสลายเมื่อปัสสาวะทิ้งไว้หรือเป็นด่าง"
+  },
+  {
+   "theme": "Hematuria: glomerular vs urologic",
+   "id": "N-OLD-082",
+   "related": "- นิยาม microscopic hematuria: **≥ 3 RBC/HPF จากการส่องกล้อง** (dipstick บวกต้องยืนยันด้วยกล้องทุกครั้ง)\n- ตัดสาเหตุชั่วคราวก่อน: ประจำเดือน, ออกกำลังหนัก, UTI, บาดเจ็บ แล้วตรวจซ้ำหลังหาย\n- **Glomerular**: dysmorphic RBC/acanthocyte, RBC cast, proteinuria, ปัสสาวะสีโคล่า ไม่มีลิ่มเลือด → ส่ง creatinine, UPCR, C3/C4, ANA, ANCA, anti-GBM และปรึกษาอายุรแพทย์โรคไต\n- **Non-glomerular**: RBC รูปร่างปกติ มีลิ่มเลือด → ปัจจัยเสี่ยง urothelial cancer (อายุมาก, **บุหรี่**, สารเคมี aniline dye, เคยได้ **cyclophosphamide**, ฉายรังสีอุ้งเชิงกราน, gross hematuria) → **CT urography + cystoscopy**\n- **ได้ยาต้านการแข็งตัวของเลือดแล้วมี hematuria ยังต้องสืบค้นเหมือนเดิม** ยาไม่ใช่คำอธิบายเพียงพอ\n- ปวดบิดเป็นพัก ๆ ร้าวลงขาหนีบ + hematuria = นิ่ว ตรวจด้วย non-contrast CT KUB\n- ปัสสาวะแดงแต่ไม่มี RBC: myoglobin, hemoglobin, rifampicin, บีทรูท, porphyria"
+  },
+  {
+   "theme": "ชนิด proteinuria (glomerular/functional/orthostatic)",
+   "id": "N-OLD-028",
+   "related": "- ค่าปกติ: โปรตีน < 150 mg/วัน และ albumin < 30 mg/วัน\n- **4 กลไก**: glomerular (albumin เด่น ปริมาณมาก), **tubular** (โปรตีนโมเลกุลเล็ก เช่น beta-2 microglobulin มักไม่เกิน 2 g จาก Fanconi, AIN, โลหะหนัก), **overflow** (light chain, myoglobin, hemoglobin), functional/orthostatic\n- **Dipstick จับ albumin เท่านั้น**; ถ้า dipstick ลบแต่ UPCR สูง หรือ UPCR สูงมากเทียบกับ UACR = มีโปรตีนที่ไม่ใช่ albumin → **คิดถึง light chain ส่ง serum free light chain และ immunofixation**\n- **Functional**: หลังไข้ ออกกำลังกายหนัก หัวใจล้มเหลว ภาวะเครียด หายเองเมื่อตรวจซ้ำ ไม่ต้องสืบค้น\n- **Orthostatic**: วัยรุ่นและผู้ใหญ่ตอนต้น โปรตีนรั่วตอนยืน **ปัสสาวะเช้าแรกปกติ** วินิจฉัยด้วยเก็บแยกช่วงนอนกับช่วงยืน พยากรณ์ดี\n- Proteinuria ที่คงอยู่: วัดปริมาณด้วย UPCR/UACR + eGFR + ส่องตะกอน; ถ้ามี hematuria ร่วม ไตเสื่อม หรือเกิน 1 g/วัน ให้ส่งต่อพิจารณาเจาะชิ้นเนื้อ"
+  },
+  {
+   "theme": "Acute nephritic: PSGN vs IgA",
+   "id": "N-OLD-029",
+   "related": "- **PSGN**: ระยะแฝง **1-3 สัปดาห์หลังคออักเสบ, 3-6 สัปดาห์หลังผิวหนังติดเชื้อ**; serology ใช้ ASO (คอ) หรือ **anti-DNase B (ผิวหนัง)**; EM เห็น subepithelial hump\n- **C3 ต่ำแต่ C4 ปกติ และต้องกลับปกติภายใน 6-8 สัปดาห์** ถ้ายังต่ำให้คิดถึง C3 glomerulopathy, MPGN หรือ lupus แล้วเจาะชิ้นเนื้อ\n- รักษา PSGN แบบประคับประคอง: จำกัดเกลือน้ำ, loop diuretic, ยาลดความดัน, antibiotic กำจัดเชื้อ; เด็กพยากรณ์ดี ผู้ใหญ่และผู้สูงอายุแย่กว่า\n- **IgA nephropathy**: GN ปฐมภูมิที่พบบ่อยที่สุดในโลก, gross hematuria **พร้อมกับ** URI, complement ปกติ, mesangial IgA; รักษา ACEI/ARB เมื่อ proteinuria เกินราว 0.5 g/วัน + คุมความดัน + SGLT2i, กลุ่มเสี่ยงสูงจึงพิจารณา steroid\n- **IgA vasculitis (HSP)**: palpable purpura ขา, ปวดท้อง, ข้ออักเสบ + IgA nephropathy\n- จำกลุ่ม **complement ต่ำ**: PSGN, lupus, MPGN/C3G, cryoglobulinemia (HCV), endocarditis/shunt nephritis; **complement ปกติ**: IgA, ANCA vasculitis, anti-GBM\n- ไตวายเร็วในวันถึงสัปดาห์ (RPGN) = เจาะชิ้นเนื้อด่วนหา crescent"
+  },
+  {
+   "theme": "Lupus nephritis",
+   "id": "N-OLD-031",
+   "related": "- **ISN/RPS class**: I minimal mesangial, II mesangial proliferative, **III focal (< 50% glomeruli), IV diffuse (≥ 50%)**, **V membranous (nephrotic เด่น)**, VI advanced sclerosing (≥ 90% sclerosis ไม่ต้องกดภูมิ)\n- ข้อบ่งชี้เจาะชิ้นเนื้อ: **proteinuria ≥ 0.5 g/วัน**, active sediment หรือ creatinine ขึ้นโดยไม่มีเหตุอื่น\n- ตัวบอกโรคกำเริบ: **anti-dsDNA สูงขึ้นพร้อม C3/C4 ต่ำลง**\n- Induction class III/IV (± V): **glucocorticoid + mycophenolate หรือ IV cyclophosphamide ขนาดต่ำ**; แนวทางใหม่เพิ่ม belimumab หรือ calcineurin inhibitor ได้; **ทุกรายให้ hydroxychloroquine** และ ACEI/ARB\n- **Pyuria ใน SLE ต้องเพาะเชื้อก่อน** เพราะอาจเป็น UTI ในผู้ได้ยากดภูมิ หรือเป็นไตอักเสบเอง\n- Pitfall: antiphospholipid syndrome ทำ thrombotic microangiopathy ในไตได้; **ตั้งครรภ์ห้าม MMF (teratogen) ให้ใช้ azathioprine**\n- Cyclophosphamide: hemorrhagic cystitis (mesna), เป็นหมัน, มะเร็งกระเพาะปัสสาวะ"
+  },
+  {
+   "theme": "Anti-GBM (Goodpasture): แอนติเจน α3 chain ของ type IV collagen",
+   "id": "PP30-NEP-076",
+   "related": "- ภาพทางคลินิก: **RPGN (crescentic GN) ± pulmonary hemorrhage** (ไอเป็นเลือด, ฝ้าในปอด, Hb ตก) พบมากในผู้สูบบุหรี่หรือสัมผัส hydrocarbon\n- ชิ้นเนื้อ: **linear IgG ตาม GBM บน immunofluorescence**; ส่ง serum anti-GBM และ **ANCA ร่วมด้วยเสมอ** เพราะมี double positive ได้\n- รักษาเร่งด่วน: **plasma exchange + steroid ขนาดสูง + cyclophosphamide** เริ่มได้ก่อนผลชิ้นเนื้อถ้าสงสัยมาก\n- พยากรณ์แย่เมื่อมาด้วยต้องฟอกเลือดแล้วและ crescent เกือบทั้งหมด (ยกเว้นมีเลือดออกในปอดยังต้องรักษา)\n- จำแนก RPGN ตาม IF: **linear = anti-GBM, granular = immune complex (lupus, PSGN, IgA), pauci-immune = ANCA (GPA: PR3/c-ANCA, MPA: MPO/p-ANCA)**\n- Pulmonary-renal syndrome ในไทยต้องนึกถึง **leptospirosis** ด้วย นอกเหนือจาก anti-GBM, ANCA vasculitis และ SLE\n- **Alport syndrome** = กลายพันธุ์ของ type IV collagen (α5 แบบ X-linked) มีหูหนวก ตาผิดปกติ และอาจเกิด anti-GBM หลังปลูกถ่ายไต"
+  },
+  {
+   "theme": "CKD vs AKI: ไตเล็ก = เรื้อรัง",
+   "id": "N-OLD-035",
+   "related": "- **นิยาม CKD**: ความผิดปกติของโครงสร้างหรือหน้าที่ไต **> 3 เดือน** คือ eGFR < 60 หรือมี marker เช่น albuminuria ≥ 30 mg/g, ตะกอนผิดปกติ, ภาพถ่ายผิดปกติ; จัดระยะด้วย **G1-G5 คู่กับ A1-A3**\n- **AKI (KDIGO)**: creatinine เพิ่ม ≥ 0.3 mg/dL ใน 48 ชม. หรือ ≥ 1.5 เท่าของค่าฐานใน 7 วัน หรือปัสสาวะ < 0.5 mL/kg/ชม. นาน 6 ชม.\n- ไตปกติยาวราว 10-12 ซม.; **ไตเล็ก cortex บาง echogenic = เรื้อรัง**\n- **ข้อยกเว้นที่ไตยังโตแม้เป็น CKD**: เบาหวาน, amyloidosis, HIVAN, **ADPKD**, obstructive uropathy (และ myeloma)\n- เบาะแสความเรื้อรังอื่น: ซีด normocytic, PO4 สูง PTH สูง, renal osteodystrophy, broad/waxy cast, ประวัติ creatinine เดิม\n- **Acute-on-chronic พบบ่อย**: ต้องหาปัจจัยที่แก้ได้ทุกครั้ง (ขาดน้ำ ยา NSAID การอุดกั้น การติดเชื้อ)\n- ส่งต่ออายุรแพทย์โรคไตเมื่อ eGFR < 30, UACR > 300 mg/g, ไตเสื่อมเร็ว หรือมี active sediment"
+  },
+  {
+   "theme": "eGFR / Cockcroft-Gault",
+   "id": "N-OLD-038",
+   "related": "- **CKD-EPI 2021** ใช้ creatinine อายุ เพศ (ตัดตัวแปรเชื้อชาติออกแล้ว); ใช้ **cystatin C ร่วม** เมื่อมวลกล้ามเนื้อผิดปกติมากหรือต้องการยืนยัน\n- **Cockcroft-Gault**: CrCl = (140 − อายุ) × น้ำหนัก ÷ (72 × Cr) × 0.85 ถ้าเป็นหญิง; ตัวอย่างชาย 40 ปี 70 กก. Cr 1.5 → (100 × 70) ÷ 108 ≈ 65 mL/min; ยังใช้ปรับขนาดยาหลายตัว (เช่น DOAC)\n- **eGFR ใช้ไม่ได้เมื่อ creatinine ยังไม่คงที่ (AKI)**: ค่าที่คำนวณจะสูงเกินจริงตอนไตกำลังแย่ลง; ผู้ป่วย anuria ให้ถือว่า GFR < 10\n- **Creatinine สูงโดย GFR ไม่ลด**: trimethoprim, cimetidine, dolutegravir, cobicistat (ยับยั้งการหลั่งที่ท่อไต), creatine supplement, กินเนื้อมาก\n- **มวลกล้ามเนื้อน้อย** (ผู้สูงอายุติดเตียง ตัดขา ตับแข็ง) ทำให้ eGFR สูงเกินจริง\n- หญิงตั้งครรภ์มี hyperfiltration creatinine ปกติจะต่ำลง ค่าที่ \"ปกติแบบคนทั่วไป\" อาจผิดปกติแล้ว"
+  },
+  {
+   "theme": "NSAID กับไต",
+   "id": "N-OLD-045",
+   "related": "- NSAID ทำร้ายไตได้หลายแบบ: **prerenal (เสีย PG ขยาย afferent)**, **AIN ร่วมกับ nephrotic (MCD หรือ MN)**, papillary necrosis (analgesic nephropathy), **K สูง (hyporeninemic hypoaldosteronism)**, Na และน้ำคั่ง ความดันขึ้น หัวใจล้มเหลวกำเริบ\n- กลุ่มเสี่ยง: ผู้สูงอายุ, CKD, หัวใจล้มเหลว, ตับแข็ง, ขาดน้ำ และ **triple whammy (NSAID + ACEI/ARB + diuretic)**\n- COX-2 selective ก็มีผลต่อไตเหมือนกัน\n- ทางเลือกแก้ปวด: paracetamol, NSAID ทาเฉพาะที่, กายภาพ\n- **Sick day rules**: เมื่อขาดน้ำ อาเจียน ท้องเสีย ให้หยุดชั่วคราว ACEI/ARB, diuretic, **SGLT2i, metformin**, NSAID แล้วเริ่มใหม่เมื่อกินได้และไตกลับมา\n- หลังหยุด NSAID ไตกลุ่ม hemodynamic มักฟื้นในไม่กี่วัน ถ้าไม่ฟื้นหรือมี pyuria/WBC cast ให้นึกถึง AIN"
+  },
+  {
+   "theme": "Uremia และข้อบ่งชี้ dialysis",
+   "id": "N-OLD-046",
+   "related": "- **AEIOU**: Acidosis ดื้อการรักษา, Electrolyte (**K สูงดื้อยาหรือมี ECG เปลี่ยน**), Intoxication ที่ฟอกออกได้ (**methanol, ethylene glycol, lithium, salicylate, metformin-associated lactic acidosis**), Overload ดื้อยาขับปัสสาวะ, Uremic complication (**pericarditis, encephalopathy, เลือดออก**)\n- **Uremic pericarditis เป็นข้อบ่งชี้ฟอกเลือดด่วน** (เสียงเสียดสี, ST ยกทั่วไป, ไม่มี PR depression ชัดได้); ถ้าเกิดในผู้ฟอกอยู่แล้วให้เพิ่มความถี่การฟอก\n- เลือดออกจาก uremic platelet dysfunction: **desmopressin**, แก้ซีด, ฟอกเลือด\n- CKD เรื้อรัง: เริ่ม dialysis ตาม **อาการและภาวะแทรกซ้อน** ไม่ใช่ตามตัวเลข eGFR อย่างเดียว (มักเริ่มเมื่อ eGFR ราว 5-10)\n- AKI: เริ่มฟอกเร็วกว่าข้อบ่งชี้ไม่ได้ประโยชน์ ให้เริ่มเมื่อมีภาวะแทรกซ้อนที่แก้ด้วยยาไม่ได้\n- วางแผนล่วงหน้า: ทำ **AV fistula หลายเดือนก่อนต้องใช้**, ถนอมหลอดเลือดแขน (เลี่ยงเจาะเลือดหรือใส่ PICC แขนข้างที่ไม่ถนัด), ให้ข้อมูล HD, PD, ปลูกถ่ายไต, conservative care\n- อาการ uremia อื่น: คลื่นไส้ เบื่ออาหาร คัน สะอึก ปลายประสาทอักเสบ ขาอยู่ไม่สุข"
+  },
+  {
+   "theme": "Hyponatremia: approach และแก้อย่างปลอดภัย (ODS, thiazide, pseudo)",
+   "id": "N-OLD-054",
+   "related": "- **ขั้นตอน**: serum osm (ตัด pseudo จากไขมัน/โปรตีน และ translocational จากน้ำตาล/mannitol) → urine osm (< 100 = ดื่มน้ำมาก/beer potomania) → urine Na (< 20-30 = ปริมาตรพร่องจริง) → ประเมิน volume\n- **SIADH**: hypotonic, urine osm > 100, urine Na > 30, euvolemic, **ต้องตัด hypothyroidism และ adrenal insufficiency ก่อน**, ไม่ได้ยาขับปัสสาวะ\n- **อาการรุนแรง (ชัก ซึมมาก): 3% NaCl 100-150 mL bolus** ซ้ำได้ เป้าหมายเพิ่ม Na 4-6 mEq/L ก็พอให้อาการดีขึ้น\n- **ขีดจำกัด**: ไม่เกิน 10 mEq/L ใน 24 ชม. และ **≤ 8 ในกลุ่มเสี่ยง ODS** (ติดสุรา ขาดอาหาร ตับแข็ง K ต่ำ Na ≤ 105)\n- **Overcorrection มักเกิดเมื่อเอาตัวกระตุ้น ADH ออก** (หยุด thiazide, ให้ cortisol, ให้สารน้ำในผู้ขาดน้ำ, beer potomania ได้อาหาร) → ไตขับน้ำเปล่าออกเยอะ; แก้ด้วย D5W ± desmopressin\n- SIADH เรื้อรัง: จำกัดน้ำ, urea รับประทาน, salt tablet + loop diuretic, tolvaptan (ระวังแก้เร็วเกินและพิษต่อตับ)\n- **Hyperglycemia**: บวก Na ราว 1.6-2.4 ต่อกลูโคสที่เกิน 100 mg/dL ทุก 100"
+  },
+  {
+   "theme": "Adrenal insufficiency: primary vs secondary (hyperpigmentation, ACTH), cosyntropin test, adrenal crisis จากหยุด steroid",
+   "id": "N-OLD-058",
+   "related": "- **Primary (Addison)**: ขาดทั้ง cortisol และ aldosterone → **Na ต่ำ K สูง ผิวคล้ำ อยากกินเค็ม**; สาเหตุ autoimmune, **วัณโรคต่อมหมวกไต (ไทย)**, adrenal hemorrhage (anticoagulant, meningococcemia), มะเร็งแพร่กระจาย, HIV/CMV\n- **Secondary/tertiary**: ACTH ต่ำ aldosterone ยังปกติ → **ไม่มี K สูง ไม่คล้ำ** ผิวซีด; **สาเหตุที่พบบ่อยที่สุดคือหยุด glucocorticoid** (รวมยาชุด ยาลูกกลอน) และ Sheehan\n- การวินิจฉัย: **cortisol 8 โมงเช้า < 3-5 µg/dL ยืนยัน, > 15-18 ตัดออก**; ค่ากลางทำ **cosyntropin 250 µg** (peak ต่ำกว่าราว 18 µg/dL = ไม่พอ ขึ้นกับวิธีตรวจ) แล้วดู ACTH แยก primary/secondary\n- **Adrenal crisis: hydrocortisone 100 mg IV ทันที แล้ว 200 mg/วัน** + isotonic fluid ที่มี dextrose; **ไม่ต้องรอผลตรวจ** (เจาะ cortisol/ACTH ก่อนให้ถ้าทำได้ หรือใช้ dexamethasone ถ้าจะทำ test ทีหลัง)\n- Maintenance: hydrocortisone 15-25 mg/วัน แบ่งให้; **fludrocortisone เฉพาะ primary**; สอน sick day rules (เพิ่มขนาด 2-3 เท่าเมื่อป่วย) และพกบัตรประจำตัว\n- **Pitfall**: hypothyroid ร่วม AI ให้ steroid ก่อน thyroxine; Na ต่ำจาก AI จะขึ้นเร็วหลังได้ cortisol (เสี่ยง ODS) ต้องติดตามถี่"
+  },
+  {
+   "theme": "Periodic paralysis / K shift (thyrotoxic)",
+   "id": "N-OLD-061",
+   "related": "- **TPP**: ชายเอเชียอายุ 20-40 ปี อ่อนแรงส่วนต้นหลังอาหารแป้งมาก แอลกอฮอล์ หรือพักหลังออกกำลัง; อาการ thyrotoxic อาจไม่ชัด ต้องส่ง TFT ทุกรายที่ K ต่ำร่วมอ่อนแรงเฉียบพลัน\n- ลักษณะของ shift: **K ต่ำ + PO4 ต่ำ + urine K ต่ำ + กรดด่างปกติ** และฟื้นเร็วด้วย K ปริมาณน้อย\n- รักษา: **KCl ขนาดน้อย** (เลี่ยง rebound hyperkalemia เมื่อ K กลับออกจากเซลล์) + **propranolol (non-selective)**; **ห้ามผสม K ใน dextrose และห้ามให้ insulin/glucose หรือ salbutamol**\n- **ป้องกันกลับเป็นซ้ำ = ทำให้ euthyroid** (antithyroid, radioiodine, ผ่าตัด)\n- **Familial hypokalemic periodic paralysis** (CACNA1S): มีประวัติครอบครัว ไทรอยด์ปกติ; ป้องกันด้วย acetazolamide หรือ K-sparing diuretic\n- สาเหตุ shift อื่น: insulin, beta-2 agonist, alkalosis, refeeding, เริ่มรักษา B12 ใน megaloblastic anemia\n- **Hyperkalemic periodic paralysis** (SCN4A): กระตุ้นด้วยพักหลังออกกำลัง อาหาร K สูง ความเย็น"
+  },
+  {
+   "theme": "Electrolyte กับอาการชัก",
+   "id": "N-OLD-063",
+   "related": "- ความผิดปกติที่ทำให้ **ชักได้**: Na ต่ำ (โดยเฉพาะลดเร็วใน < 48 ชม.), Na สูงรุนแรง, **Ca ต่ำ**, **Mg ต่ำ**, **น้ำตาลต่ำ** และ PO4 ต่ำมาก (refeeding)\n- ผู้ป่วยชักทุกรายตรวจ **capillary glucose ข้างเตียงก่อน** เพราะแก้ได้เร็วที่สุด\n- **K ต่ำหรือสูง** ออกอาการที่กล้ามเนื้อและหัวใจ (อ่อนแรง, ileus, arrhythmia) ไม่ทำให้ชัก; **Ca สูง** ทำให้ซึม สับสน โคม่า มากกว่าชัก\n- **Exercise-associated hyponatremia** (มาราธอน ดื่มน้ำเปล่ามาก + ADH จากการออกกำลัง) และยา ecstasy/MDMA, thiazide ทำ Na ลดเร็ว\n- Acute hyponatremia มีอาการ: **3% NaCl 100-150 mL bolus** ทันที เพราะความเสี่ยงสมองบวมมากกว่า ODS\n- **Torsades จาก Mg ต่ำ: MgSO4 2 g IV**; tetany/ชักจาก Ca ต่ำ: calcium gluconate IV\n- ชักที่ไม่ตอบสนองต่อยากันชักให้นึกถึงสาเหตุ metabolic เสมอ"
+  },
+  {
+   "theme": "HypoK อื่น ๆ (leptospirosis, ECG U wave)",
+   "id": "N-OLD-070",
+   "related": "- **ลำดับประเมิน K ต่ำ**: ECG + Mg → urine K (**K/Cr > 13 mEq/g = เสียทางไต**, ต่ำ = ทางเดินอาหารหรือ shift) → ถ้าเสียทางไตดูกรดด่าง: acidosis = RTA type 1/2, DKA; alkalosis + **ความดันสูง** = hyperaldosteronism, Cushing, ชะเอม; alkalosis + **ความดันปกติ** = ยาขับปัสสาวะ, อาเจียน (urine Cl ต่ำ), Bartter/Gitelman\n- **Leptospirosis**: non-oliguric AKI + **K ต่ำ** (เด่นต่างจาก AKI อื่น) + CK สูง ตาแดง ปวดน่อง ประวัติลุยน้ำหรือทำนา; Weil disease = ดีซ่าน + ไตวาย + เลือดออก; รักษา **penicillin G, ceftriaxone หรือ doxycycline**\n- ECG: **T แบน, U wave, ST ยุบ, QU ยาว**, เสี่ยง arrhythmia มากขึ้นเมื่อได้ digoxin\n- ผลอื่นของ K ต่ำ: อ่อนแรง, rhabdomyolysis, ileus, nephrogenic DI, metabolic alkalosis คงอยู่\n- ทดแทนด้วย **KCl** (Cl ช่วยแก้ alkalosis); รับประทานปลอดภัยกว่า IV, IV ไม่ผสมใน dextrose\n- TTKG ใช้ได้แต่ปัจจุบันนิยม urine K/Cr มากกว่า"
+  },
+  {
+   "theme": "PseudohyperK: เกล็ดเลือดสูง / hemolysis → ECG ก่อน",
+   "id": "PP31-NEP-070",
+   "related": "- สาเหตุ pseudohyperkalemia: **hemolysis, กำมือแน่นหรือรัด tourniquet นาน, เกล็ดเลือดหรือ WBC สูงมาก, ส่งตัวอย่างช้า, ปนเปื้อน K-EDTA** (จะเห็น Ca ต่ำมากผิดธรรมชาติร่วม)\n- ยืนยันด้วย **plasma K (หลอด heparin)** เจาะไม่รัดแน่น ส่งทันที; ในเกล็ดเลือดสูง serum K สูงกว่า plasma K ชัด\n- **ECG มาก่อนเสมอ**: ถ้ามี peaked T, PR ยาว, P หาย, QRS กว้าง ให้รักษาเป็น hyperK จริงทันที\n- รักษา hyperK จริง: (1) **10% calcium gluconate 10 mL IV** ใน 2-3 นาที ทำซ้ำได้ถ้า ECG ไม่ดีขึ้น (2) **regular insulin 10 U + glucose 25 g** (เฝ้าน้ำตาลต่ำ) ± salbutamol พ่น (3) เอาออก: loop diuretic, ยาจับ K (SPS/Kalimate, patiromer, sodium zirconium cyclosilicate), dialysis; NaHCO3 เฉพาะมี acidosis\n- สาเหตุ K สูงจริงใน CKD: ACEI/ARB, MRA, trimethoprim, NSAID, heparin, อาหาร K สูง, ภาวะกรด\n- ลำดับ ECG: peaked T → PR ยาว P แบน → QRS กว้าง → sine wave → VF/asystole"
+  },
+  {
+   "theme": "Hypernatremia: ผู้สูงอายุติดเตียงดื่มน้ำไม่พอ",
+   "id": "PP31-NEP-023",
+   "related": "- กลไก: **ขาดน้ำเปล่า** ปกติความกระหายป้องกันได้ จึงเกิดในคนที่เข้าถึงน้ำไม่ได้ (ผู้สูงอายุติดเตียง สมองเสื่อม ทารก ซึม ใส่ท่อช่วยหายใจ)\n- แยกสาเหตุด้วย urine osm: **สูง (> 600-800) = เสียน้ำนอกไตหรือดื่มไม่พอ**, **ต่ำกว่า plasma = diabetes insipidus**, ราว 300 = osmotic diuresis (น้ำตาล urea mannitol)\n- **Free water deficit = TBW × (Na/140 − 1)**; TBW ราว 0.6 × น้ำหนักในชาย, 0.5 ในหญิงและชายสูงอายุ, 0.45 ในหญิงสูงอายุ\n- **ช็อกหรือปริมาตรพร่องมาก ให้ isotonic saline ก่อน** แล้วจึงให้สารน้ำ hypotonic (D5W, 0.45% NaCl, น้ำทาง NG)\n- **เรื้อรัง (> 48 ชม.) ลด Na ไม่เกิน 10-12 mEq/L/วัน** เพื่อเลี่ยงสมองบวม; แบบเฉียบพลันลดเร็วกว่านี้ได้\n- ต้องคิดรวม **น้ำที่เสียต่อเนื่อง** (ปัสสาวะ insensible ไข้) ไม่ใช่แค่ชดเชย deficit\n- สาเหตุ iatrogenic: hypertonic saline, NaHCO3, ให้ NSS อย่างเดียวในผู้ที่ขับน้ำเปล่าออกมาก"
+  },
+  {
+   "theme": "Fanconi syndrome",
+   "id": "N-OLD-077",
+   "related": "- **Proximal tubule ดูดกลับทุกอย่างไม่ได้**: glucose (**glucosuria ทั้งที่น้ำตาลในเลือดปกติ**), phosphate (osteomalacia/rickets), กรดอะมิโน, uric acid (uric acid ในเลือดต่ำ), bicarbonate (**type 2 RTA**), low-molecular-weight proteinuria\n- **Type 2 RTA**: NAGMA, K ต่ำ; urine pH ต่ำกว่า 5.5 ได้เมื่อ HCO3 ในเลือดลดต่ำกว่า threshold แล้ว; ต้องให้ด่างปริมาณมากและ K จะยิ่งต่ำเมื่อให้ bicarbonate\n- สาเหตุผู้ใหญ่: **multiple myeloma (light chain), tenofovir disoproxil (TDF), ifosfamide, cisplatin, aminoglycoside, tetracycline หมดอายุ, ตะกั่ว แคดเมียม**; เด็ก: cystinosis, Wilson, galactosemia\n- ผู้ติดเชื้อ HIV/HBV ที่เกิด Fanconi จาก TDF ให้เปลี่ยนเป็น **tenofovir alafenamide (TAF)** หรือยาอื่น\n- รักษา: หยุดสาเหตุ + phosphate + active vitamin D + citrate/bicarbonate + K\n- แยกจาก **SGLT2i** ซึ่งให้ glucosuria อย่างเดียวโดยไม่มี phosphaturia หรือ acidosis"
+  },
+  {
+   "theme": "นิ่วไต (calcium oxalate, struvite/Proteus, uric)",
+   "id": "N-OLD-084",
+   "related": "- **วินิจฉัย: non-contrast CT KUB** ดีที่สุด (ตั้งครรภ์หรืออายุน้อยใช้ ultrasound); KUB film เห็นนิ่ว Ca แต่ **uric acid โปร่งรังสี** (CT ยังเห็น)\n- ปวดบิด: **NSAID เป็นยาแก้ปวดตัวแรก** ถ้าไตดี; นิ่ว < 5 มม. มักหลุดเอง, 5-10 มม. ส่วนปลาย ureter ใช้ **tamsulosin (medical expulsive therapy)**, > 10 มม. หรือไม่หลุดทำ URS/ESWL\n- **ฉุกเฉิน: นิ่วอุดตันร่วมติดเชื้อ (ไข้), ไตข้างเดียว หรือ AKI → ระบายด่วนด้วย nephrostomy หรือ ureteric stent** + ยาปฏิชีวนะ ก่อนเอานิ่วออกภายหลัง\n- **Calcium oxalate** บ่อยสุด: ดื่มน้ำให้ปัสสาวะ > 2-2.5 ลิตร/วัน, **ไม่จำกัดแคลเซียมในอาหาร**, ลดเกลือ ลดโปรตีนสัตว์; thiazide ถ้า hypercalciuria, citrate ถ้า hypocitraturia\n- **Uric acid**: ปัสสาวะเป็นกรด (เบาหวาน metabolic syndrome เกาต์) → ทำปัสสาวะด่าง pH 6-6.5 ด้วย potassium citrate ± allopurinol; ห้าม probenecid\n- **Struvite (staghorn)**: Proteus, Klebsiella (urease) ปัสสาวะด่าง → **เอานิ่วออกให้หมด (PCNL) + antibiotic**; cystine หกเหลี่ยม เป็นพันธุกรรม\n- นิ่วเป็นซ้ำ: ตรวจ Ca (หา primary HPT), uric acid และ 24-hour urine"
+  },
+  {
+   "theme": "Asymptomatic bacteriuria: รักษาเมื่อไร",
+   "id": "N-OLD-100",
+   "related": "- นิยาม ASB: **≥ 10^5 CFU/mL โดยไม่มีอาการ** (ผู้หญิงต้อง 2 ครั้งติดกันเชื้อเดียวกัน, ผู้ชาย 1 ครั้ง)\n- **รักษาเฉพาะ 2 กลุ่ม**: หญิงตั้งครรภ์ (คัดกรองช่วงไตรมาสแรก) และ **ก่อนหัตถการทางเดินปัสสาวะที่มีเลือดออกของเยื่อบุ** เช่น TURP\n- **ไม่รักษา**: ผู้สูงอายุ, เบาหวาน, คาสายสวน, บาดเจ็บไขสันหลัง, ก่อนผ่าตัดกระดูก; **pyuria อย่างเดียวไม่ใช่ข้อบ่งชี้**\n- ยาในหญิงตั้งครรภ์: cephalexin, amoxicillin-clavulanate, fosfomycin, nitrofurantoin (เลี่ยงใกล้คลอด); **ห้าม fluoroquinolone และ tetracycline**; TMP-SMX เลี่ยงไตรมาสแรกและใกล้คลอด; เพาะเชื้อซ้ำหลังรักษา\n- ผู้สูงอายุสับสนแต่ไม่มีไข้ ไม่มีอาการเฉพาะที่ ให้ **หาสาเหตุ delirium อื่นก่อน** (ยา ท้องผูก ปัสสาวะคั่ง ขาดน้ำ ปวด)\n- การให้ยาโดยไม่จำเป็นเพิ่ม **เชื้อดื้อยาและ C. difficile**"
+  },
+  {
+   "theme": "Simple cystitis (เกณฑ์ culture, ยาสั้น)",
+   "id": "N-OLD-090",
+   "related": "- เกณฑ์ culture: 10^5 CFU/mL เป็นเกณฑ์คลาสสิก (และเกณฑ์ ASB) แต่ **หญิงที่มีอาการชัด ≥ 10^3 CFU/mL ก็มีนัยสำคัญ**; เพาะได้หลายเชื้อ = ปนเปื้อน\n- Uncomplicated cystitis = หญิงไม่ตั้งครรภ์ ไม่มีความผิดปกติของทางเดินปัสสาวะ; **dysuria + frequency โดยไม่มีตกขาว วินิจฉัยทางคลินิกได้** ไม่ต้องเพาะเชื้อในครั้งแรก\n- ยาตัวแรก: **nitrofurantoin 5 วัน, fosfomycin 3 g ครั้งเดียว, TMP-SMX 3 วัน (ถ้าเชื้อดื้อในพื้นที่ < 20%)**; fluoroquinolone สงวนไว้เพราะผลข้างเคียงและดื้อยา\n- **มีไข้ เคาะเจ็บสีข้าง = pyelonephritis** ห้ามใช้ nitrofurantoin หรือ fosfomycin (ระดับยาในเนื้อไตต่ำ)\n- ต้องเพาะเชื้อเมื่อ: เป็นซ้ำ ไม่หาย ตั้งครรภ์ ผู้ชาย สงสัย pyelonephritis หรือเคยติดเชื้อดื้อยา\n- **เป็นซ้ำ (≥ 2 ครั้งใน 6 เดือน หรือ ≥ 3 ครั้งใน 1 ปี)**: ยาป้องกันต่อเนื่องหรือหลังมีเพศสัมพันธ์, vaginal estrogen ในวัยหมดประจำเดือน\n- **Sterile pyuria ซ้ำหลังได้ยาหลายรอบ** ให้นึกถึงวัณโรค, chlamydia, นิ่ว"
+  },
+  {
+   "theme": "UTI: เดาเชื้อจาก gram stain / สายสวน",
+   "id": "N-OLD-093",
+   "related": "- Community UTI: **E. coli 75-90%**; **S. saprophyticus** ในหญิงวัยเจริญพันธุ์ (GPC กลุ่ม nitrite ลบ); Klebsiella; **Proteus** (urease ปัสสาวะด่าง นิ่ว struvite)\n- CAUTI และในโรงพยาบาล: **Enterococcus, Pseudomonas, Candida, เชื้อ ESBL**\n- **Enterococcus ดื้อ cephalosporin โดยธรรมชาติ** → ใช้ ampicillin/amoxicillin; cystitis ใช้ nitrofurantoin หรือ fosfomycin ได้\n- **S. aureus ในปัสสาวะให้คิดถึง bacteremia** (hematogenous) ต้องเพาะเชื้อในเลือดและหา endocarditis\n- **Nitrite ลบไม่ตัด UTI**: Enterococcus, Staphylococcus, Pseudomonas ไม่สร้าง nitrite และปัสสาวะต้องค้างในกระเพาะนานพอ\n- CAUTI: ต้องมีอาการ + เชื้อ ≥ 10^3 CFU/mL; **เปลี่ยนสายสวนที่ใส่นานกว่า 2 สัปดาห์ก่อนเก็บปัสสาวะ**; ไม่รักษา bacteriuria ที่ไม่มีอาการ\n- **Candiduria** ในผู้คาสายส่วนใหญ่เป็น colonization รักษาเมื่อมีอาการ neutropenia หรือก่อนหัตถการ"
+  },
+  {
+   "theme": "เบาหวานกับ UTI (รวม SGLT2i)",
+   "id": "N-OLD-097",
+   "related": "- เบาหวานเพิ่ม UTI จาก **glycosuria, neutrophil ทำงานบกพร่อง, neurogenic bladder (ปัสสาวะค้าง)**\n- ภาวะแทรกซ้อนเฉพาะ: **emphysematous pyelonephritis** (E. coli, Klebsiella, แก๊สในเนื้อไตบน CT, รักษายา + ระบาย/stent หรือ nephrectomy), ฝีในไตหรือรอบไต, **papillary necrosis**, fungal UTI\n- **ASB ในเบาหวานไม่รักษา**\n- **SGLT2i**: ผลข้างเคียงที่พบบ่อยสุดคือ **genital mycotic infection** (vulvovaginal candidiasis, balanitis), UTI เพิ่มเล็กน้อย, **Fournier gangrene** พบน้อยแต่ร้ายแรง\n- SGLT2i ยังเสี่ยง **euglycemic DKA**: หยุดยาชั่วคราวเมื่อป่วยหนัก ผ่าตัด อดอาหาร หรือ sepsis (sick day rule)\n- ประเมิน post-void residual ในผู้ป่วยเบาหวานที่ติดเชื้อซ้ำ (diabetic cystopathy)\n- Cystitis ในเบาหวานที่คุมได้ดีรักษาแบบมาตรฐานได้ แต่ pyelonephritis ต้องเฝ้าระวังภาวะแทรกซ้อนใกล้ชิด"
+  },
+  {
+   "theme": "UTI ซ้ำในผู้ชาย → ตรวจต่อมลูกหมาก",
+   "id": "N-OLD-094",
+   "related": "- **UTI ในผู้ชายถือเป็น complicated ทุกครั้ง** รักษาอย่างน้อย 7 วัน; ถ้ามี prostatitis ใช้ยาที่เข้าต่อมลูกหมากได้ (fluoroquinolone, TMP-SMX)\n- **Acute bacterial prostatitis**: ไข้ ปวดฝีเย็บ ปัสสาวะขัด ต่อมลูกหมากกดเจ็บนุ่ม → **ตรวจ DRE อย่างนุ่มนวล ห้ามนวดต่อม** (เสี่ยง bacteremia); รักษา 2-4 สัปดาห์\n- **Chronic bacterial prostatitis**: UTI ซ้ำเชื้อเดิม ระหว่างรอบไม่มีอาการ ยืนยันด้วย Meares-Stamey (เก็บปัสสาวะก่อนหลังนวดต่อม); รักษานาน 4-6 สัปดาห์\n- สืบค้นหาสาเหตุเชิงโครงสร้าง: **post-void residual, ultrasound ไตและกระเพาะปัสสาวะ**, uroflowmetry, urethral stricture, นิ่ว\n- ชายวัยหนุ่มที่มีเพศสัมพันธ์: นึกถึง **urethritis (chlamydia, gonorrhea) ส่ง NAAT** และ epididymitis\n- **PSA สูงขึ้นช่วงต่อมลูกหมากอักเสบ** อย่าตรวจคัดกรองช่วงติดเชื้อ"
+  },
+  {
+   "theme": "Pyelonephritis ซับซ้อน (abscess, de-escalate, sepsis AKI)",
+   "id": "N-OLD-096",
+   "related": "- ข้อบ่งชี้รับไว้ใน รพ.: sepsis, กินไม่ได้, ตั้งครรภ์, สงสัยอุดกั้น, ภูมิคุ้มกันต่ำ\n- Empirical: **ceftriaxone**; ถ้าช็อกหรือเสี่ยง ESBL ใช้ **carbapenem**; แล้ว **de-escalate ตามผลเพาะเชื้อ** และเปลี่ยนเป็นยารับประทานเมื่อไข้ลง\n- ระยะเวลา: fluoroquinolone 5-7 วัน, beta-lactam ราว 10-14 วัน (หลักการ ขึ้นกับยาและความรุนแรง)\n- **ไข้ไม่ลงใน 48-72 ชม. หรือ sepsis → ถ่ายภาพ (ultrasound/CT)** หาฝี การอุดกั้น emphysematous pyelonephritis\n- **ไตอุดตันร่วมติดเชื้อ = urologic emergency** ต้องระบายด้วย nephrostomy หรือ stent\n- **ฝีในไตเล็ก (ราว < 3 ซม.) ใช้ยาอย่างเดียวได้, ใหญ่กว่าต้องระบายผ่านผิวหนัง**; perinephric abscess จาก S. aureus ทางกระแสเลือดก็ได้\n- Sepsis-associated AKI: ให้สารน้ำตามเป้า, หยุดยาที่เป็นพิษต่อไต, ปรับขนาดยาตามไต, ระวังน้ำเกิน"
+  },
+  {
+   "theme": "Hemorrhagic cystitis: cyclophosphamide (ป้องกันด้วยน้ำ/mesna)",
+   "id": "N-OLD-098",
+   "related": "- **Acrolein** จาก cyclophosphamide/ifosfamide ระคาย urothelium → ป้องกันด้วย **สารน้ำมาก ปัสสาวะบ่อย และ mesna** (จำเป็นกับ ifosfamide และ cyclophosphamide ขนาดสูง)\n- สาเหตุอื่นของ hemorrhagic cystitis: **BK virus และ adenovirus หลังปลูกถ่ายไขกระดูก**, ฉายรังสีอุ้งเชิงกราน (เกิดช้าหลายเดือนถึงปี)\n- รักษา: หยุดหรือเลื่อนยา, สารน้ำ, **สายสวน 3 ทาง continuous bladder irrigation** ล้างลิ่มเลือด, ให้เลือด; รายดื้อใช้ยาหยอดกระเพาะหรือ hyperbaric oxygen\n- **ระยะยาวเสี่ยงมะเร็งกระเพาะปัสสาวะ** ผู้เคยได้ cyclophosphamide ที่มี hematuria ต้องทำ cystoscopy\n- Ifosfamide ยังทำ **Fanconi syndrome และ encephalopathy** (แก้ด้วย methylene blue)\n- จับคู่ยาเคมีกับพิษ: cisplatin = ไตเสื่อม Mg ต่ำ; methotrexate = ผลึกในท่อไต (leucovorin, glucarpidase, ทำปัสสาวะด่าง); doxorubicin = cardiomyopathy (dexrazoxane); bleomycin = พังผืดปอด"
+  },
+  {
+   "theme": "Purple urine bag syndrome",
+   "id": "N-OLD-101",
+   "related": "- ปัจจัยเสี่ยง: **หญิงสูงอายุติดเตียง คาสายสวนนาน ท้องผูก ปัสสาวะด่าง** CKD\n- กลไก: tryptophan → indole (แบคทีเรียลำไส้) → **indoxyl sulfate** (ตับ) → ขับทางปัสสาวะ → แบคทีเรียที่มี sulfatase/phosphatase (Providencia, Klebsiella, Proteus, E. coli, Enterococcus) เปลี่ยนเป็น **indigo (น้ำเงิน) + indirubin (แดง)** ติดถุง PVC เป็นสีม่วง\n- จัดการ: **เปลี่ยนสายสวนและถุง แก้ท้องผูก ทบทวนความจำเป็นของสายสวน**; ให้ยาปฏิชีวนะเฉพาะเมื่อมีอาการ UTI จริง\n- ป้องกัน CAUTI ดีที่สุดคือ **ถอดสายสวนที่ไม่จำเป็น** และใช้ระบบปิด\n- สีปัสสาวะอื่น: ส้มแดง rifampicin, น้ำตาลเข้ม myoglobin/bilirubin/metronidazole, ดำ alkaptonuria/melanoma, เขียว propofol/methylene blue/Pseudomonas, ขาวขุ่น chyluria/phosphate"
+  },
+  {
+   "theme": "Renal TB (sterile pyuria)",
+   "id": "N-OLD-102",
+   "related": "- **Sterile pyuria**: วัณโรคทางเดินปัสสาวะ, ได้ยาปฏิชีวนะมาก่อน, **chlamydia/gonorrhea**, นิ่ว, AIN, เนื้องอก, interstitial cystitis, Kawasaki\n- Renal TB เกิดจากเชื้อแพร่ทางเลือดเงียบหลายปี อาการระบบอาจไม่ชัด และ **CXR อาจปกติ**\n- ภาพถ่าย: calyx ขรุขระ (moth-eaten), **ureter ตีบเป็นช่วง (beaded)**, putty kidney/autonephrectomy มีหินปูน, กระเพาะปัสสาวะเล็ก (thimble bladder), hydronephrosis\n- วินิจฉัย: **ปัสสาวะเช้าแรก 3 วัน ส่ง AFB smear, mycobacterial culture (มาตรฐาน) และ Xpert MTB/RIF**\n- รักษา **2HRZE/4HR**; ท่อไตตีบอาจแย่ลงระหว่างรักษาจากการหายเป็นพังผืด ต้องติดตามภาพถ่ายและใส่ stent ถ้าจำเป็น\n- **Pitfall**: เคยได้ fluoroquinolone รักษา \"UTI\" ทำให้อาการดีขึ้นชั่วคราวและบดบังการวินิจฉัย\n- ในผู้ชายอาจมี TB epididymitis, ต่อมลูกหมาก; ในหญิงทำให้มีบุตรยาก"
+  },
+  {
+   "theme": "Prerenal vs ATN (FENa, cast, กลไก)",
+   "id": "N-OLD-106",
+   "related": "- **FENa = (UNa × PCr) ÷ (PNa × UCr) × 100**: < 1% prerenal, > 2% ATN\n- ได้ยาขับปัสสาวะมา **ใช้ FEUrea แทน: < 35% prerenal, > 50% ATN**\n- **FENa ต่ำได้แม้เป็น intrinsic**: contrast, **pigment (rhabdomyolysis, hemolysis)**, sepsis ระยะแรก, GN; **FENa สูงได้แม้ prerenal**: ยาขับปัสสาวะ, CKD เดิม, bicarbonaturia\n- **Hepatorenal syndrome** (prerenal ชนิดหนึ่ง): ตับแข็งมีน้ำในท้อง ไม่ดีขึ้นหลังหยุดยาขับปัสสาวะและให้ **albumin 1 g/kg/วัน 2 วัน** ไม่มีช็อก ไม่มีโรคเนื้อไต → **terlipressin + albumin** (หรือ norepinephrine)\n- Intrinsic แบ่ง: tubular (ATN), interstitial (AIN), glomerular, vascular (malignant HTN, TMA, **atheroembolism หลังสวนหลอดเลือด: livedo, eosinophilia, C3 ต่ำ**)\n- ATN มีระยะ initiation → maintenance (มักปัสสาวะน้อย) → **recovery ปัสสาวะมาก (เสีย K, Mg)**\n- จัดการ: ให้สารน้ำเฉพาะเมื่อขาดน้ำ, หยุดยาพิษต่อไต, ปรับยา; **furosemide ไม่ช่วยให้ไตฟื้น** ใช้เฉพาะน้ำเกิน"
+  },
+  {
+   "theme": "Rhabdomyolysis / statin myopathy (CK)",
+   "id": "N-OLD-110",
+   "related": "- สาเหตุ: บาดเจ็บถูกทับ **นอนกับพื้นนาน**, ออกกำลังหนัก, heat stroke, ชัก, **statin + gemfibrozil หรือ statin + CYP3A4 inhibitor (clarithromycin, azole, protease inhibitor)**, แอลกอฮอล์, K ต่ำ, PO4 ต่ำ, ติดเชื้อ (influenza, leptospirosis), hypothyroidism\n- Lab: **CK > 5 เท่า (มักเกิน 10,000 U/L)**, dipstick blood บวกแต่ไม่มี RBC, **K สูง PO4 สูง Ca ต่ำ (ช่วงแรก) แล้ว Ca อาจสูงช่วงฟื้น**, uric acid สูง, HAGMA, **AST สูงกว่า ALT**\n- รักษา: **หยุดยาต้นเหตุ + isotonic crystalloid ปริมาณมากเร็ว** เป้าหมายปัสสาวะราว 200-300 mL/ชม. (ระวังน้ำเกินถ้าปัสสาวะไม่ออก); **bicarbonate และ mannitol ไม่มีหลักฐานว่าดีกว่า**\n- **ห้ามให้ Ca แก้ Ca ต่ำที่ไม่มีอาการ** (ตกตะกอนกับ PO4 และ Ca สูงช่วงฟื้น); ให้เฉพาะ ECG จาก K สูงหรือ tetany\n- **Dialysis ตาม AEIOU ไม่ใช่ตามระดับ CK**\n- เฝ้าระวัง **compartment syndrome** (ปวดมากเกินสัดส่วน ตึง) ต้อง fasciotomy\n- Statin myopathy: myalgia (CK ปกติ) → myopathy → rhabdomyolysis; **CK สูงต่อเนื่องหลังหยุดยา → anti-HMGCR necrotizing myopathy**; ตรวจ TSH ด้วย; เมื่อหายแล้วเปลี่ยนเป็น statin ชนิด hydrophilic ขนาดต่ำได้"
+  },
+  {
+   "theme": "Contrast-associated AKI",
+   "id": "N-OLD-112",
+   "related": "- นิยาม: creatinine ขึ้นภายใน 48-72 ชม. หลังได้สารทึบรังสี **สูงสุดราววันที่ 3-5** และมักฟื้นใน 1-2 สัปดาห์\n- ปัจจัยเสี่ยงหลัก: **eGFR < 30 (สำหรับ IV contrast)**, เบาหวานร่วม CKD, หัวใจล้มเหลว, ขาดน้ำ, สารทึบรังสีปริมาณมากทางหลอดเลือดแดง, ยาพิษต่อไต\n- ความเสี่ยงจาก IV contrast ต่ำกว่าที่เคยเชื่อ จึง **ไม่ควรงดการตรวจที่จำเป็นต่อการรักษา**\n- ป้องกันที่มีหลักฐาน: **isotonic saline (bicarbonate ไม่ดีกว่า)**, ใช้ปริมาณน้อยที่สุด, iso/low-osmolar, ไม่ฉีดซ้ำในไม่กี่วัน, หยุด NSAID; **N-acetylcysteine ไม่ได้ผล (PRESERVE)**; ไม่ทำ prophylactic dialysis\n- **Metformin**: หยุดก่อนฉีดเมื่อ eGFR < 30 หรือมี AKI แล้วเริ่มใหม่หลัง 48 ชม. เมื่อ creatinine คงที่\n- แยกจาก **atheroembolic AKI** หลังสวนหลอดเลือดแดง: เกิดช้ากว่า (วันถึงสัปดาห์), livedo reticularis, นิ้วเท้าม่วง, eosinophilia, C3 ต่ำ\n- Gadolinium (MRI) ใน eGFR < 30 เสี่ยง **nephrogenic systemic fibrosis** เลือกชนิด group II"
+  },
+  {
+   "theme": "Obstructive AKI (BPH)",
+   "id": "N-OLD-121",
+   "related": "- สาเหตุ post-renal: **BPH**, มะเร็งต่อมลูกหมาก, neurogenic bladder (เบาหวาน), **ยา anticholinergic/antihistamine/opioid/TCA/decongestant**, ท่อไตอุดทั้งสองข้าง (มะเร็งปากมดลูก, retroperitoneal fibrosis), นิ่วในไตข้างเดียว\n- วินิจฉัย: **bladder scan วัด post-void residual**, ultrasound หา hydronephrosis (อาจไม่เห็นในระยะแรกหรือ retroperitoneal fibrosis)\n- รักษา: **ใส่สายสวนทางท่อปัสสาวะ** ถ้าใส่ไม่ได้ใช้ suprapubic catheter; อุดเหนือกระเพาะใช้ nephrostomy หรือ stent\n- **Post-obstructive diuresis**: วัดปัสสาวะทุกชั่วโมง ติดตาม Na K Mg และทดแทนบางส่วนของปัสสาวะที่ออก ไม่ทดแทนทั้งหมด (จะยืดเวลาขับ)\n- ปัสสาวะเป็นเลือดหลังระบายมักหายเอง การระบายเร็วกับค่อย ๆ ระบายผลไม่ต่างกัน\n- หลังระบาย: เริ่ม **alpha-blocker แล้วลองถอดสาย (trial without catheter)**; ไม่สำเร็จหรือมีภาวะแทรกซ้อนพิจารณา TURP\n- อุดกั้นเรื้อรังทำ **type 4 RTA (K สูง) และ nephrogenic DI** ได้"
+  },
+  {
+   "theme": "Diabetes insipidus (รวม lithium nephrogenic DI)",
+   "id": "N-OLD-122",
+   "related": "- ปัสสาวะมาก > 3 ลิตร/วัน: แยก **water diuresis (urine osm < 300)** กับ **solute diuresis (urine osm > 300 เช่นน้ำตาล urea mannitol)**\n- **Primary polydipsia**: Na ปกติค่อนต่ำ ปัสสาวะเจือจาง; **DI**: Na ปกติค่อนสูง (สูงชัดเมื่อเข้าถึงน้ำไม่ได้) ปัสสาวะเจือจาง\n- **Water deprivation test แล้วให้ desmopressin**: central DI urine osm เพิ่มมาก (> 50%), nephrogenic แทบไม่เปลี่ยน; ปัจจุบันใช้ **copeptin** ช่วยได้\n- Central DI: หลังผ่าตัดต่อมใต้สมอง (triphasic), บาดเจ็บศีรษะ, craniopharyngioma, Langerhans cell histiocytosis, sarcoid → **desmopressin** (ระวัง Na ต่ำ)\n- Nephrogenic DI: **lithium, Ca สูง, K ต่ำ**, demeclocycline, หลังแก้อุดกั้น → แก้สาเหตุ, อาหารเกลือต่ำโปรตีนต่ำ, **thiazide**, **amiloride (ปิดทางเข้า lithium ที่ ENaC)**, NSAID\n- Lithium ยังทำ CKD (tubulointerstitial), Ca สูง (PTH), hypothyroidism; **thiazide, ACEI, NSAID เพิ่มระดับ lithium**; พิษรุนแรงฟอกเลือดได้"
+  },
+  {
+   "theme": "Methanol poisoning: osmolal gap สูง → fomepizole/ethanol",
+   "id": "PP32-NEP-047",
+   "related": "- แหล่ง: **สุราเถื่อน/สุราผสมเมทานอล** แอลกอฮอล์อุตสาหกรรม; อาการเริ่ม 12-24 ชม. (ดื่มเอทานอลร่วมทำให้ช้าลง)\n- **Formic acid** เป็นพิษต่อ optic nerve (มัวเหมือนหิมะตก จานประสาทตาแดงบวม ตาบอด) และ **putamen (basal ganglia) necrosis**\n- **Osmolal gap = osm ที่วัด − (2Na + glucose/18 + BUN/2.8)** เกินราว 10 ผิดปกติ; ระยะแรก osmolal gap สูง ต่อมาเมื่อ metabolize แล้ว gap ลดลงและ anion gap สูงขึ้น\n- รักษา: **fomepizole หรือ ethanol** ยับยั้ง alcohol dehydrogenase + **NaHCO3** แก้ acidosis + **folinic/folic acid** ช่วยกำจัด formate + **hemodialysis** เมื่อ acidosis รุนแรง ตามัว AKI หรือระดับสูง\n- **Ethylene glycol**: AKI + **calcium oxalate crystal** + Ca ต่ำ; รักษาเหมือนกันเสริม thiamine และ pyridoxine\n- HAGMA อื่นจำ **GOLDMARK**: glycols, oxoproline (paracetamol เรื้อรัง), L-lactate, D-lactate, methanol, aspirin, renal failure, ketoacidosis\n- Isopropanol: osmolal gap สูงแต่ **ไม่มี acidosis** (ได้ acetone)"
+  },
+  {
+   "theme": "ADPKD: ไตโตเป็นถุงน้ำสองข้าง + ประวัติครอบครัว",
+   "id": "PP31-NEP-029",
+   "related": "- ยีน **PKD1 (รุนแรงกว่า ESKD เร็ว)** และ PKD2 (อ่อนกว่า) ถ่ายทอด autosomal dominant ลูกมีโอกาส 50%\n- วินิจฉัยด้วย **ultrasound ใช้เกณฑ์จำนวนถุงน้ำตามช่วงอายุ** ในผู้มีประวัติครอบครัว; MRI ช่วยเมื่อไม่ชัด\n- **นอกไต**: ถุงน้ำในตับ (พบบ่อยสุด), **intracranial aneurysm** (คัดกรองด้วย MRA เมื่อมีประวัติครอบครัว SAH หรืออาชีพเสี่ยง), mitral valve prolapse, ไส้เลื่อน, diverticulosis\n- ภาวะแทรกซ้อนในไต: **ความดันสูงเกิดเร็ว (RAAS)**, ปวดสีข้าง, cyst hemorrhage (hematuria), **cyst infection ใช้ยา lipophilic เช่น fluoroquinolone หรือ TMP-SMX**, นิ่ว (uric acid), CKD ก้าวหน้า\n- รักษา: คุมความดันด้วย **ACEI/ARB**, ดื่มน้ำมาก, **tolvaptan (V2 antagonist) ชะลอโรคในรายก้าวหน้าเร็ว** ต้องเฝ้าระวังตับ\n- **เป็น CKD แต่ไตโต** (ข้อยกเว้นของหลักไตเล็ก = เรื้อรัง)\n- แยกจาก **acquired cystic kidney disease ในผู้ฟอกเลือด (ไตเล็ก เสี่ยง RCC)**, ARPKD (เด็ก hepatic fibrosis), tuberous sclerosis, VHL"
+  }
+ ],
+ "synth": [
+  {
+   "id": "SYN-NEPHRO-01",
+   "title": "DKD + NSAID triple whammy: ACEI/SGLT2i และ eGFR ตอน AKI",
+   "stem": "A 66-year-old woman with type 2 diabetes for 15 years and hypertension takes metformin 1,000 mg twice daily, enalapril 20 mg/day and hydrochlorothiazide 25 mg/day. Three months ago her creatinine was 1.2 mg/dL (eGFR about 50 mL/min/1.73 m2) with a urine albumin-to-creatinine ratio of 620 mg/g. Ten days ago she started diclofenac 75 mg twice daily for knee osteoarthritis, and for 3 days she has eaten and drunk little because of a viral illness. BP 108/64 mmHg (usually 140/85), pulse 96/min, dry mucous membranes, no oedema. Creatinine 2.3 mg/dL, BUN 46 mg/dL, Na 136, K 5.6, HCO3 19 mEq/L. Urinalysis: protein 2+, no RBC, a few hyaline casts. Ultrasound: kidneys 10.8 and 11.0 cm, no hydronephrosis, no size asymmetry. What is the most appropriate management?",
+   "choices": [
+    "Stop diclofenac, temporarily hold enalapril, hydrochlorothiazide and metformin, give isotonic fluid, then restart the ACE inhibitor and add an SGLT2 inhibitor once kidney function is stable",
+    "Recalculate eGFR from today's creatinine, restage her as CKD G4 and permanently reduce all drug doses accordingly",
+    "Stop enalapril permanently because the rise in creatinine shows intolerance to ACE inhibitors",
+    "Arrange renal artery Doppler ultrasound because creatinine rose more than 30% while on an ACE inhibitor",
+    "Start dapagliflozin today to slow progression of diabetic kidney disease"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ไตของผู้ป่วยรายนี้พึ่งสองกลไกรักษา GFR ตอนปริมาตรพร่อง คือ prostaglandin ขยาย afferent และ angiotensin II หด efferent เมื่อได้ **NSAID (ตัด PG) + ACEI (ตัด Ang II) + thiazide (ลดปริมาตร) = triple whammy** ร่วมกับกินน้ำไม่ได้ GFR จึงตกแบบ hemodynamic (prerenal) เห็นได้จาก BUN/Cr 20, ความดันต่ำกว่าปกติ ตะกอนมีแค่ hyaline cast และ K สูงจาก ACEI + NSAID\n\nทำไมข้อถูกถูก: แก้ที่สาเหตุ คือหยุด NSAID ให้สารน้ำ และใช้ **sick day rule** หยุด ACEI, diuretic, metformin ชั่วคราว (metformin เสี่ยง lactic acidosis เมื่อ AKI) แต่ไม่ทิ้งการรักษาระยะยาว เพราะผู้ป่วยมี DKD A3 ที่ต้องได้ทั้ง ACEI และ SGLT2i เมื่อไตกลับสู่ภาวะคงที่\n\nตัวลวง:\n- **คำนวณ eGFR ใหม่จาก creatinine วันนี้**: ผิด เพราะ eGFR ใช้ได้เฉพาะ steady state ช่วง AKI ค่าไม่คงที่และจัดระยะ CKD ไม่ได้ (CKD ต้องผิดปกตินานกว่า 3 เดือน)\n- **หยุด ACEI ถาวร**: ผิด creatinine ขึ้นเพราะปริมาตรพร่องและ NSAID ไม่ใช่การแพ้ยา ACEI ยังเป็นเสาหลักชะลอ DKD ที่มี albuminuria\n- **Doppler หา renal artery stenosis**: เบาะแส RAS คือ creatinine ขึ้นมากหลังเริ่ม ACEI ในภาวะปริมาตรปกติ ไตไม่เท่ากัน flash pulmonary edema แต่เคสนี้มีเหตุชัดกว่า (NSAID + ขาดน้ำ) และไตขนาดเท่ากัน\n- **เริ่ม SGLT2i วันนี้**: ยาดีระยะยาว แต่ทำให้ขับน้ำและเกลือเพิ่ม ไม่ควรเริ่มตอนขาดน้ำและ AKI (ยังเสี่ยง euglycemic DKA ตอนป่วย)",
+   "fullcover": "- **DKD วินิจฉัยด้วย UACR** (A2 30-300, A3 > 300 mg/g ต้องผิดปกติซ้ำ 2 ใน 3 ครั้ง) คู่กับ eGFR; คัดกรอง T2DM ตั้งแต่วินิจฉัย T1DM หลัง 5 ปี\n- พยาธิ: hyperfiltration → GBM หนา mesangial expansion → albuminuria → Kimmelstiel-Wilson; เบาหวานเป็นสาเหตุ ESKD อันดับ 1\n- รักษาระยะยาว: **ACEI/ARB ขนาดสูงสุดที่ทนได้ (ไม่ใช้คู่กัน) + SGLT2i** + คุมความดัน < 130/80; albuminuria ยังเหลือใน T2DM เพิ่ม finerenone\n- **Creatinine ขึ้นไม่เกินราว 30% หลังเริ่ม ACEI/ARB หรือ SGLT2i ยอมรับได้**; ขึ้นมากกว่านั้นหาภาวะขาดน้ำ NSAID หรือ RAS\n- **eGFR (CKD-EPI) ต้องใช้ในภาวะคงที่** ช่วง AKI ค่าที่ได้สูงเกินจริงหรือแกว่ง; Cockcroft-Gault ยังใช้ปรับยา\n- ยาเพิ่ม creatinine โดยไม่ลด GFR: trimethoprim, cimetidine; มวลกล้ามเนื้อน้อยทำ eGFR สูงเกินจริง\n- **NSAID ทำร้ายไต**: prerenal, AIN + nephrotic, papillary necrosis, K สูง, Na คั่ง; triple whammy = NSAID + ACEI/ARB + diuretic\n- **Sick day rules (ป่วย ขาดน้ำ อาเจียน)**: หยุดชั่วคราว ACEI/ARB, diuretic, SGLT2i, metformin, NSAID แล้วเริ่มใหม่ใน 24-48 ชม. เมื่อกินได้\n- Metformin: ลดขนาดเมื่อ eGFR 30-44 หยุดเมื่อ < 30 หรือมี AKI\n- Pitfall DKD: มี RBC cast ไตเสื่อมเร็ว ไม่มี retinopathy (T1DM) ให้หาโรคไตอื่นและพิจารณาเจาะชิ้นเนื้อ\n- **ยังไม่เคยออก:** Renal artery stenosis มีสองแบบ คือ **atherosclerotic** (ผู้สูงอายุ สูบบุหรี่ มีโรคหลอดเลือดอื่น) และ **fibromuscular dysplasia** (หญิงอายุน้อย ภาพ string of beads)\n- **ยังไม่เคยออก:** เบาะแส RAS ได้แก่ ความดันสูงดื้อยาหรือเริ่มก่อน 30 ปี/หลัง 55 ปีแบบรุนแรง, **flash pulmonary edema**, creatinine ขึ้น > 30% หลังเริ่ม ACEI/ARB, ไตสองข้างขนาดต่างกัน > 1.5 ซม., abdominal bruit, K ต่ำ\n- **ยังไม่เคยออก:** สืบค้นด้วย duplex Doppler, CTA หรือ MRA; atherosclerotic RAS รักษาด้วยยาเป็นหลัก (statin, antiplatelet, คุมความดัน รวม ACEI/ARB อย่างระวัง) การใส่ stent ไม่ดีกว่ายาในคนส่วนใหญ่ สงวนไว้กรณี flash pulmonary edema หรือไตเสื่อมเร็ว; FMD ทำ angioplasty ได้ผลดี\n- **ยังไม่เคยออก:** RAS สองข้างหรือไตข้างเดียวเป็นข้อห้ามสัมพัทธ์ของ ACEI/ARB เพราะ GFR พึ่ง Ang II หด efferent",
+   "pearl": "ไตตกหลัง NSAID + ACEI + diuretic: หยุดชั่วคราว ให้น้ำ แล้วกลับมาใช้ ACEI + SGLT2i ตอนไตนิ่ง; eGFR ใช้ไม่ได้ตอน AKI",
+   "covers_themes": [
+    "Diabetic nephropathy: hyperfiltration, UACR, SGLT2i, ACEI",
+    "eGFR / Cockcroft-Gault",
+    "NSAID กับไต"
+   ],
+   "covers_nl": [
+    "Renal artery stenosis"
+   ]
+  },
+  {
+   "id": "SYN-NEPHRO-02",
+   "title": "ESKD จาก ADPKD: uremic pericarditis, CKD-MBD และไตโตแต่เรื้อรัง",
+   "stem": "A 48-year-old man presents with 3 weeks of nausea, pruritus and hiccups, and 2 days of pleuritic chest pain. He has had hypertension since age 30, and his mother started dialysis at age 55. BP 170/100 mmHg, pulse 92/min, temperature 37.2 C. He has a pericardial friction rub, asterixis and bilateral irregular ballotable flank masses; the lungs are clear and there is no oedema. Labs: Hb 8.6 g/dL (MCV 88 fL), BUN 140 mg/dL, creatinine 11.2 mg/dL, Na 136, K 5.4, HCO3 17 mEq/L, albumin-corrected calcium 7.6 mg/dL, phosphate 7.8 mg/dL, intact PTH 480 pg/mL. He has no tetany or perioral numbness. ECG shows diffuse ST elevation without peaked T waves; echocardiography shows a small pericardial effusion without tamponade. Ultrasound shows both kidneys 18 cm long and replaced by multiple cysts. What is the most appropriate next step?",
+   "choices": [
+    "Urgent haemodialysis for uraemic pericarditis and encephalopathy",
+    "IV 10% calcium gluconate to normalise serum calcium before dialysis",
+    "Treat as acute kidney injury because the kidneys are large, with IV fluid and observation for recovery",
+    "Indomethacin and colchicine for acute pericarditis, with dialysis only if potassium rises above 6.5 mEq/L",
+    "Kidney biopsy to establish the cause before deciding on renal replacement therapy"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ADPKD (ประวัติครอบครัว ความดันสูงตั้งแต่อายุน้อย ไตโตเป็นถุงน้ำสองข้าง) ดำเนินโรคจนเป็น ESKD เมื่อ GFR ต่ำมาก ของเสียคั่ง (uremic toxin) ทำให้คลื่นไส้ คัน สะอึก **asterixis (encephalopathy)** และ **uremic pericarditis** ขณะเดียวกันไตขับฟอสเฟตไม่ได้และสร้าง calcitriol ไม่ได้ จึงได้ PO4 สูง Ca ต่ำ PTH สูง (secondary HPT) และซีด normocytic จาก erythropoietin ต่ำ\n\nทำไมข้อถูกถูก: **uremic pericarditis และ uremic encephalopathy เป็นข้อบ่งชี้ dialysis ด่วน** (U ใน AEIOU) โดยไม่ต้องรอ K หรือ acidosis และ pericarditis ชนิดนี้ตอบสนองต่อการฟอกเลือด\n\nตัวลวง:\n- **IV calcium gluconate**: Ca ต่ำในเคสนี้ไม่มีอาการ และ PO4 สูงมาก การให้ Ca จะเพิ่ม Ca x PO4 เสี่ยงหินปูนเกาะเนื้อเยื่อ IV Ca ให้เมื่อมี tetany ชัก หรือ ECG จาก K สูงเท่านั้น\n- **รักษาเป็น AKI เพราะไตโต**: ไตโตเป็นข้อยกเว้นของหลัก \"ไตเล็ก = เรื้อรัง\" (ADPKD, เบาหวาน, amyloid, HIVAN) ภาพซีด PTH สูง PO4 สูง บอกว่าเรื้อรัง\n- **NSAID/colchicine**: เป็นการรักษา viral pericarditis แต่ uremic pericarditis รักษาด้วยการฟอกเลือด และ NSAID ยังเพิ่มเลือดออกจาก uremic platelet dysfunction\n- **เจาะชิ้นเนื้อไต**: วินิจฉัยได้จากภาพถ่ายแล้ว การเจาะไตถุงน้ำเสี่ยงเลือดออกและไม่เปลี่ยนการรักษา",
+   "fullcover": "- **ADPKD**: PKD1 (รุนแรงกว่า) และ PKD2 ถ่ายทอด autosomal dominant; ความดันสูงเร็ว ปวดสีข้าง hematuria นิ่ว cyst infection; วินิจฉัยด้วย ultrasound ตามเกณฑ์อายุ\n- นอกไต: ถุงน้ำตับ, **intracranial aneurysm** (คัดกรองถ้าครอบครัวมี SAH), MVP, ไส้เลื่อน; ชะลอโรคด้วยคุมความดัน ACEI/ARB และ tolvaptan ในรายก้าวหน้าเร็ว\n- **ไตเล็ก echogenic = เรื้อรัง** ยกเว้น ADPKD, เบาหวาน, amyloidosis, HIVAN, obstructive uropathy ที่ไตยังโต\n- เบาะแสเรื้อรังอื่น: ซีด normocytic, PO4 สูง PTH สูง, renal osteodystrophy, broad waxy cast, ประวัติ creatinine เดิม\n- **CKD-MBD กลไก**: ขับ PO4 ไม่ได้ + สร้าง 1,25(OH)2D ไม่ได้ → Ca ต่ำ → secondary HPT; ปล่อยนานเป็น tertiary HPT (Ca สูง)\n- จัดการ CKD-MBD: จำกัดฟอสเฟต, ยาจับฟอสเฟต (calcium carbonate หรือ sevelamer/lanthanum), active vitamin D, cinacalcet ในผู้ฟอกเลือด\n- **Ca ต่ำมีอาการเท่านั้นที่ให้ IV calcium gluconate**; Ca ต่ำไม่มีอาการใน CKD แก้ที่ฟอสเฟตก่อน\n- **AEIOU**: acidosis ดื้อ, K สูงดื้อหรือ ECG เปลี่ยน, intoxication ที่ฟอกได้, น้ำเกินดื้อยา, **uremic pericarditis/encephalopathy/เลือดออก**\n- CKD เรื้อรังเริ่ม dialysis ตามอาการและภาวะแทรกซ้อน ไม่ใช่ตัวเลข eGFR อย่างเดียว; วางแผน AV fistula ล่วงหน้าหลายเดือน\n- Uremic bleeding: desmopressin, แก้ซีด, ฟอกเลือด; ซีดจาก CKD ให้ ESA หลังเติมเหล็กให้พอ\n- Uremic pericarditis ECG มักไม่เด่นเท่า viral pericarditis; มีน้ำในเยื่อหุ้มหัวใจมากหรือ tamponade ต้องเจาะระบาย\n- **ยังไม่เคยออก:** acquired cystic kidney disease ในผู้ฟอกเลือดนาน (ไตเล็กมีถุงน้ำ เสี่ยง RCC) ต่างจาก ADPKD ที่ไตโต\n- **ยังไม่เคยออก:** ESKD ทางเลือกการรักษาคือ HD, PD, ปลูกถ่ายไต (ดีที่สุดถ้าทำได้) หรือ conservative kidney management ในผู้สูงอายุมีโรคร่วมมาก",
+   "pearl": "Pericardial rub + asterixis ใน ESKD = ฟอกเลือดด่วน; ไตโตไม่ได้แปลว่าเฉียบพลัน (ADPKD, DM, amyloid, HIVAN)",
+   "covers_themes": [
+    "CKD vs AKI: ไตเล็ก = เรื้อรัง",
+    "Uremia และข้อบ่งชี้ dialysis",
+    "ADPKD: ไตโตเป็นถุงน้ำสองข้าง + ประวัติครอบครัว",
+    "Hypocalcemia: สาเหตุ (iatrogenic), Chvostek/Trousseau → IV Ca gluconate"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-03",
+   "title": "Myeloma: hypercalcemia + light chain + Fanconi และลำดับรักษา Ca สูง",
+   "stem": "A 67-year-old woman has 2 months of back pain, polyuria and constipation, and 3 days of increasing drowsiness. BP 104/62 mmHg, pulse 104/min, dry mucous membranes, no oedema. Labs: Hb 8.9 g/dL, total protein 9.6 g/dL, albumin 3.2 g/dL, calcium 13.6 mg/dL, phosphate 2.0 mg/dL, creatinine 2.4 mg/dL (0.9 mg/dL six months ago), Na 133, K 3.1, Cl 112, HCO3 16 mEq/L, glucose 96 mg/dL, uric acid 2.4 mg/dL. Urine dipstick: protein trace, glucose 2+. Urine protein-creatinine ratio 3.8 g/g. Spine radiographs show multiple lytic lesions. Intact PTH is 8 pg/mL (10-65). What is the most appropriate initial management?",
+   "choices": [
+    "IV isotonic saline first, then an antiresorptive agent (kidney-adjusted bisphosphonate or denosumab), with calcitonin for rapid effect",
+    "IV furosemide as first-line therapy to increase urinary calcium excretion",
+    "Urgent parathyroidectomy for primary hyperparathyroidism",
+    "Oral sodium bicarbonate and phosphate for Fanconi syndrome as the first priority",
+    "Reassurance, because a trace dipstick protein indicates benign functional proteinuria"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ภาพ **CRAB** (Ca สูง, ไตวาย, ซีด, lytic lesion) + globulin สูง (total protein − albumin = 6.4) = multiple myeloma; Ca สูงจาก osteolysis จึง **PTH ถูกกด** ส่วน **light chain** (1) รั่วทางปัสสาวะเป็น overflow proteinuria ที่ **dipstick จับไม่ได้ (จับแค่ albumin) แต่ UPCR สูง** (2) อุดท่อไต (cast nephropathy) และ (3) ทำลาย proximal tubule เป็น **Fanconi** ได้ glucosuria ทั้งที่น้ำตาลปกติ PO4 ต่ำ uric acid ต่ำ K ต่ำ และ NAGMA; anion gap ที่ต่ำ (133 − 128 = 5) เข้ากับ paraprotein ที่มีประจุบวก ส่วน Ca สูงทำให้ nephrogenic DI ปัสสาวะมากจนขาดน้ำและ Ca ยิ่งสูง\n\nทำไมข้อถูกถูก: Ca สูงรุนแรงมีอาการ (corrected ราว 14.2) ร่วมกับขาดน้ำ **ต้องเริ่มด้วย isotonic saline** แก้ปริมาตรและเพิ่มการขับ Ca แล้วให้ antiresorptive (bisphosphonate ปรับตามไต หรือ denosumab เมื่อไตเสื่อม) ร่วม calcitonin ที่ออกฤทธิ์เร็วในชั่วโมง จากนั้นยืนยัน myeloma ด้วย SPEP, immunofixation, serum free light chain\n\nตัวลวง:\n- **Furosemide ตัวแรก**: ทำให้ขาดน้ำมากขึ้น ใช้เฉพาะเมื่อน้ำเกินหลังให้สารน้ำแล้ว\n- **Parathyroidectomy**: PTH ถูกกด (8) จึงไม่ใช่ primary HPT ซึ่งจะมี PTH สูงหรือปกติทั้งที่ Ca สูง\n- **รักษา Fanconi ก่อน**: ถูกว่ามี Fanconi แต่ไม่ใช่สิ่งที่คุกคามชีวิตตอนนี้ และการให้ phosphate ขณะ Ca สูงเสี่ยงตกตะกอน\n- **Functional proteinuria**: dipstick trace แต่ UPCR 3.8 คือหลักฐาน overflow proteinuria ของ light chain ไม่ใช่ภาวะไม่ร้ายแรง",
+   "fullcover": "- **ขั้นแรกของ Ca สูงคือ intact PTH**: สูงหรือปกติ = primary HPT, FHH, lithium; ถูกกด = มะเร็ง (PTHrP, osteolysis, myeloma), calcitriol (lymphoma, granuloma), vitamin D, milk-alkali, thiazide\n- ผู้ป่วยนอก = primary HPT (Ca สูง PO4 ต่ำ PTH สูง), ผู้ป่วยใน = มะเร็ง; FHH แยกด้วย urine Ca ต่ำ\n- Corrected Ca = Ca + 0.8 × (4 − albumin); อาการ stones bones groans moans, ปัสสาวะมาก, QT สั้น\n- **ลำดับรักษา**: isotonic saline → calcitonin (เร็วแต่ดื้อใน 48 ชม.) → bisphosphonate (2-4 วัน) หรือ denosumab (ไตเสื่อม) → steroid ถ้า calcitriol-mediated → dialysis ถ้ารุนแรงร่วมไตวาย; furosemide เฉพาะน้ำเกิน\n- **Myeloma (CRAB)**: ส่ง SPEP + immunofixation + serum free light chain, ไขกระดูก, low-dose whole-body CT; หลีกเลี่ยง NSAID และสารทึบรังสี\n- ไตใน myeloma: **cast nephropathy** (บ่อยสุด), AL amyloidosis (albumin รั่วมาก nephrotic), light chain deposition, Fanconi, Ca สูง\n- **ชนิด proteinuria**: glomerular (albumin มาก), tubular (โมเลกุลเล็ก < 2 g), **overflow (light chain, myoglobin)**, functional/orthostatic (น้อย หายเอง)\n- **Dipstick ลบหรือน้อย แต่ UPCR สูง = โปรตีนที่ไม่ใช่ albumin** ต้องหา light chain\n- **Fanconi**: glucosuria น้ำตาลปกติ, phosphaturia, aminoaciduria, uric acid ต่ำ, type 2 RTA, K ต่ำ; สาเหตุผู้ใหญ่ myeloma, tenofovir, ifosfamide, cisplatin\n- Anion gap ต่ำ: myeloma (IgG ประจุบวก), albumin ต่ำ, lithium หรือ bromide\n- Orthostatic proteinuria: ปัสสาวะเช้าแรกปกติ พยากรณ์ดี; functional: หลังไข้หรือออกกำลังกาย หายเอง\n- **ยังไม่เคยออก:** ในข้อสอบที่ให้ globulin สูง + anion gap ต่ำ + ไตวาย ให้นึกถึง myeloma ก่อนที่จะมี lytic lesion\n- **ยังไม่เคยออก:** Ca สูงจาก lymphoma (calcitriol) หรือ TB/sarcoid ตอบสนองต่อ glucocorticoid ต่างจาก PTHrP",
+   "pearl": "Ca สูง + PTH ต่ำ + dipstick น้อยแต่ UPCR สูง + glucosuria น้ำตาลปกติ = myeloma (light chain + Fanconi); รักษา Ca ด้วยน้ำเกลือก่อน",
+   "covers_themes": [
+    "Hypercalcemia: PHPT, มะเร็ง, myeloma, ลำดับการรักษา",
+    "ชนิด proteinuria (glomerular/functional/orthostatic)",
+    "Fanconi syndrome"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-04",
+   "title": "หลังเคมีบำบัด: TLS, hyperK จริงหรือปลอม และ hemorrhagic cystitis",
+   "stem": "A 24-year-old man with Burkitt lymphoma and bulky abdominal disease (LDH 2,400 U/L) received his first cycle of chemotherapy, including cyclophosphamide with mesna and IV hydration, 36 hours ago. He now feels weak and has passed 250 mL of urine in the last 12 hours (weight 60 kg). Labs: WBC 9,800/mm3, platelets 180,000/mm3, K 6.7 mEq/L (non-haemolysed heparinised plasma sample), phosphate 8.4 mg/dL, calcium 6.8 mg/dL, uric acid 12.5 mg/dL, creatinine 2.6 mg/dL (0.9 mg/dL at baseline), HCO3 18 mEq/L. ECG shows peaked T waves and a widened QRS complex. His urine is clear. What is the most appropriate immediate management?",
+   "choices": [
+    "IV calcium gluconate for the ECG changes, then insulin with glucose, and arrange urgent dialysis",
+    "Repeat the potassium in a heparinised sample before treating, because this is probably pseudohyperkalaemia",
+    "Urine alkalinisation with IV sodium bicarbonate to dissolve uric acid crystals",
+    "Stop mesna and start continuous bladder irrigation for haemorrhagic cystitis",
+    "IV bisphosphonate for hypercalcaemia of malignancy"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Burkitt ก้อนใหญ่ LDH สูง = เสี่ยง TLS สูงสุด เมื่อเซลล์แตกพร้อมกันจะปล่อย **K, PO4 และ nucleic acid (→ uric acid)** ออกมา PO4 ที่สูงจับ Ca ตกตะกอนจึงได้ **Ca ต่ำ** ส่วน uric acid และ calcium phosphate ตกผลึกอุดท่อไตทำให้ oliguric AKI (0.35 mL/kg/ชม.) ซึ่งยิ่งทำให้ขับ K ไม่ได้\n\nทำไมข้อถูกถูก: K 6.7 พร้อม **QRS กว้าง** คือ hyperK ที่คุกคามหัวใจ ต้อง **stabilise membrane ด้วย calcium gluconate ทันที** (ที่นี่ให้ Ca ได้เพราะมี ECG เปลี่ยน) ตามด้วย insulin + glucose ดัน K เข้าเซลล์ และเนื่องจากปัสสาวะออกน้อย PO4 สูงมาก และ K สูงต่อเนื่องจากเซลล์ที่ยังแตก จึงต้องเตรียม **dialysis ด่วน** ร่วมกับ rasburicase (ตรวจ G6PD)\n\nตัวลวง:\n- **รอเจาะซ้ำเพราะอาจเป็น pseudohyperK**: ตัวอย่างเป็น plasma ไม่ hemolysed เกล็ดเลือดและ WBC ไม่สูง และที่สำคัญ **ECG ผิดปกติแล้ว** ต้องรักษาทันที (pseudohyperK จะ ECG ปกติ)\n- **Urine alkalinisation**: ไม่แนะนำแล้วใน TLS เพราะเร่งการตกตะกอน calcium phosphate และ xanthine\n- **Hemorrhagic cystitis**: เกิดจาก acrolein ของ cyclophosphamide แต่ผู้ป่วยได้ mesna และปัสสาวะใส ไม่มีอาการ และไม่อธิบาย K สูง\n- **Bisphosphonate**: TLS ทำ Ca **ต่ำ** ไม่ใช่สูง การให้ bisphosphonate ยิ่งทำ Ca ต่ำลง",
+   "fullcover": "- **TLS = K สูง, PO4 สูง, uric acid สูง, Ca ต่ำ + AKI**; ไม่มี Ca สูง\n- **Cairo-Bishop lab TLS**: ≥ 2 ข้อ (uric acid ≥ 8, K ≥ 6, PO4 ≥ 4.5 mg/dL ในผู้ใหญ่, Ca ≤ 7 หรือเปลี่ยน 25%) ช่วง 3 วันก่อนถึง 7 วันหลังรักษา; clinical TLS = มี AKI, arrhythmia หรือชัก\n- เสี่ยงสูง: Burkitt, ALL WBC สูง, ก้อนใหญ่, LDH สูง, ไตเสื่อมเดิม; มักเกิด 12-72 ชม. หลังเริ่มยา\n- ป้องกัน: สารน้ำมาก + allopurinol (ปานกลาง) หรือ **rasburicase (สูง) ห้ามใน G6PD deficiency**; ไม่ทำ urine alkalinisation\n- **Ca ใน TLS ให้เฉพาะเมื่อมีอาการหรือ ECG เปลี่ยน**; dialysis เมื่อ K ดื้อ PO4 สูงมาก ปัสสาวะน้อย น้ำเกิน\n- **ลำดับรักษา hyperK**: calcium gluconate (ECG เปลี่ยน) → insulin 10 U + glucose 25 g ± salbutamol → เอา K ออก (loop diuretic, ยาจับ K, dialysis); NaHCO3 เฉพาะมี acidosis\n- **Pseudohyperkalemia**: hemolysis, กำมือ, tourniquet นาน, เกล็ดเลือดหรือ WBC สูงมาก, K-EDTA ปนเปื้อน → ยืนยันด้วย plasma K; **ทำ ECG ก่อนเสมอ** ถ้าผิดปกติรักษาเลย\n- **Hemorrhagic cystitis**: acrolein จาก cyclophosphamide/ifosfamide → ป้องกันด้วยน้ำมาก + mesna; รักษาด้วย bladder irrigation ผ่านสายสวน 3 ทาง\n- สาเหตุ hemorrhagic cystitis อื่น: BK virus/adenovirus หลังปลูกถ่ายไขกระดูก, ฉายรังสี; ระยะยาวเสี่ยงมะเร็งกระเพาะปัสสาวะ\n- จับคู่ยาเคมีกับยาป้องกัน: cyclophosphamide-mesna, doxorubicin-dexrazoxane, methotrexate-leucovorin, cisplatin-สารน้ำและ Mg\n- **ยังไม่เคยออก:** ตัวอย่างวัด uric acid หลังให้ rasburicase ต้องแช่เย็น มิฉะนั้นได้ค่าต่ำเกินจริง\n- **ยังไม่เคยออก:** TLS เกิดเองก่อนเริ่มเคมีบำบัดได้ในก้อนที่โตเร็วมาก (spontaneous TLS) มักมี uric acid สูงเด่นแต่ PO4 ไม่สูงมาก",
+   "pearl": "TLS: K PO4 uric สูง Ca ต่ำ; ECG ผิดปกติ = ให้ Ca แล้ว insulin ทันที ไม่ต้องรอเจาะซ้ำ; ไม่ทำปัสสาวะด่างแล้ว",
+   "covers_themes": [
+    "Tumor lysis syndrome: วินิจฉัย, ลักษณะ (ไม่มี hyperCa)",
+    "PseudohyperK: เกล็ดเลือดสูง / hemolysis → ECG ก่อน",
+    "Hemorrhagic cystitis: cyclophosphamide (ป้องกันด้วยน้ำ/mesna)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-05",
+   "title": "Nephrotic ในผู้ใหญ่: MN จากมะเร็ง + renal vein thrombosis",
+   "stem": "A 62-year-old man who has smoked 40 pack-years has 6 weeks of progressive leg and scrotal oedema and frothy urine. Two days ago he developed left flank pain and noticed a new left-sided varicocele. BP 138/84 mmHg. Labs: albumin 1.8 g/dL, total cholesterol 380 mg/dL, creatinine 1.4 mg/dL (0.9 mg/dL one month ago), urine protein-creatinine ratio 9.2 g/g. Urine sediment shows oval fat bodies that form Maltese crosses under polarised light and 5-10 RBC/HPF without RBC casts. C3 and C4 are normal; anti-PLA2R antibody is negative; HBsAg, anti-HCV and anti-HIV are negative; fasting glucose is normal. Chest radiograph shows a 3-cm spiculated mass in the right upper lobe. Which statement best describes his kidney disease and the cause of his new symptoms?",
+   "choices": [
+    "Secondary membranous nephropathy associated with lung cancer, complicated by left renal vein thrombosis",
+    "Minimal change disease complicated by acute tubular necrosis",
+    "Primary FSGS complicated by acute pyelonephritis",
+    "Myeloma cast nephropathy complicated by renal infarction",
+    "Lupus nephritis class IV complicated by a nephritic flare"
+   ],
+   "answer": 0,
+   "explain": "กลไก: proteinuria 9.2 g/g + albumin 1.8 + ไขมันสูง + oval fat body = **nephrotic syndrome**; ในผู้ใหญ่อายุมากที่มีก้อนในปอดและ **anti-PLA2R ลบ** ให้นึกถึง **secondary membranous nephropathy จากมะเร็ง solid organ** (immune complex ใต้เยื่อบุผิวทำให้ podocyte บาดเจ็บ) ส่วนอาการใหม่ ปวดสีข้างซ้าย creatinine ขึ้น และ **varicocele ซ้ายใหม่** (หลอดเลือดดำอัณฑะซ้ายเทเข้า renal vein ซ้าย) บ่งว่ามี **renal vein thrombosis** จากภาวะ hypercoagulable: เสีย antithrombin III ทางปัสสาวะ ตับสร้าง fibrinogen และ factor V/VIII เพิ่ม; MN เสี่ยงสูงสุดโดยเฉพาะเมื่อ albumin ต่ำมาก\n\nทำไมข้อถูกถูก: อธิบายครบทั้งชนิด glomerular disease ตามบริบท (อายุ มะเร็ง PLA2R ลบ complement ปกติ) และภาวะแทรกซ้อนเฉพาะของ nephrotic\n\nตัวลวง:\n- **MCD + ATN**: MCD พบในเด็กหรือผู้ใหญ่ที่ได้ NSAID หรือมี Hodgkin ไม่สัมพันธ์กับมะเร็งปอด และ ATN ไม่ทำ varicocele\n- **Primary FSGS + pyelonephritis**: ไม่มีไข้หรือ pyuria; FSGS secondary นึกถึงอ้วน HIV heroin\n- **Myeloma cast nephropathy**: proteinuria เป็น light chain ซึ่งไม่ทำ albumin ต่ำมากและ lipiduria; ไม่มีซีดหรือ Ca สูง\n- **Lupus class IV**: ต้องมี active nephritic sediment (RBC cast) และ complement ต่ำ ซึ่งเคสนี้ปกติ",
+   "fullcover": "- **นิยาม nephrotic**: proteinuria > 3.5 g/วัน (UPCR > 3-3.5 g/g) + albumin ต่ำ + บวม ± ไขมันสูง lipiduria (oval fat body, Maltese cross); hematuria เป็นลักษณะ nephritic\n- Dipstick จับ albumin เท่านั้น วัดปริมาณด้วย UPCR; ผู้ป่วยบวมทั่วตัวปัสสาวะเป็นฟองเริ่มด้วย urinalysis\n- **ผู้ใหญ่ต้องหาสาเหตุ**: น้ำตาล, HBV, HCV, HIV, ANA, C3/C4, anti-PLA2R, SPEP/FLC แล้วเจาะชิ้นเนื้อไต; เด็กให้ steroid ได้เลย\n- **MN**: primary มี anti-PLA2R; secondary จากมะเร็ง (ปอด ลำไส้ เต้านม), HBV, SLE class V, ยา NSAID → คัดกรองมะเร็งตามอายุ\n- **MCD**: เกิดเร็ว ไตทำงานปกติ ตอบ steroid ดี; ผู้ใหญ่นึกถึง NSAID และ Hodgkin\n- **FSGS**: อ้วน, HIV (collapsing, ไตโต echogenic, รักษาด้วย ART), heroin, APOL1; ดื้อ steroid บ่อย\n- Myeloma: cast nephropathy (dipstick ลบ UPCR สูง), AL amyloid (nephrotic แท้)\n- **ภาวะแทรกซ้อน VTE**: เสีย antithrombin III, ตับสร้าง clotting factor เพิ่ม; renal vein thrombosis (ปวดสีข้าง hematuria creatinine ขึ้น varicocele ซ้าย) และ PE\n- ยืนยัน RVT ด้วย CT venography หรือ Doppler แล้ว anticoagulate; พิจารณา prophylactic anticoagulation ใน MN ที่ albumin ต่ำมากและเสี่ยงเลือดออกต่ำ\n- ภาวะแทรกซ้อนอื่น: ติดเชื้อ (เสีย IgG, pneumococcus), ไขมันสูง, เสีย vitamin D-binding protein, TBG, transferrin, AKI จากขาดน้ำ\n- ประคับประคอง: จำกัดเกลือ, loop diuretic ขนาดสูง, ACEI/ARB ลดโปรตีน, statin\n- **ยังไม่เคยออก:** heparin อาจได้ผลน้อยลงใน nephrotic เพราะเสีย antithrombin ซึ่งเป็นตัวที่ heparin ต้องใช้\n- **ยังไม่เคยออก:** varicocele ข้างขวาที่เกิดใหม่หรือไม่ยุบเมื่อนอนให้นึกถึงก้อนกดในช่องท้อง เพราะหลอดเลือดดำขวาเทเข้า IVC โดยตรง",
+   "pearl": "ผู้ใหญ่ nephrotic + มะเร็ง + PLA2R ลบ = secondary MN; ปวดสีข้าง + varicocele ซ้ายใหม่ = renal vein thrombosis",
+   "covers_themes": [
+    "Nephrotic syndrome: นิยาม/ตรวจปัสสาวะ",
+    "Nephrotic: ภาวะแทรกซ้อน VTE",
+    "Glomerular disease ตามบริบท (MN-มะเร็ง, MCD, HIVAN, heroin, myeloma)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-06",
+   "title": "Glomerular hematuria ในหญิงสาว: lupus nephritis vs PSGN vs IgA vs anti-GBM",
+   "stem": "A 23-year-old woman has 2 weeks of facial and leg oedema. For 3 months she has had painful wrists and knees and a facial rash after sun exposure. She had a sore throat 3 days before the oedema began. She has no cough or haemoptysis. BP 160/100 mmHg. Labs: Hb 9.8 g/dL, platelets 110,000/mm3, creatinine 1.6 mg/dL, albumin 2.6 g/dL. Urinalysis: protein 3+, RBC 30-50/HPF with dysmorphic forms and RBC casts, WBC 10-20/HPF, no bacteria; urine culture is negative. Urine protein-creatinine ratio 3.4 g/g. ANA 1:1,280 (homogeneous), anti-dsDNA positive, C3 42 mg/dL (90-180), C4 5 mg/dL (10-40). ASO titre is normal. Chest radiograph is clear. What is the most appropriate next step?",
+   "choices": [
+    "Kidney biopsy to classify the lesion, then induction with glucocorticoid plus mycophenolate or cyclophosphamide according to class",
+    "Salt restriction and diuretics only, as post-streptococcal glomerulonephritis resolves spontaneously",
+    "An ACE inhibitor alone for synpharyngitic IgA nephropathy",
+    "Urgent plasma exchange for anti-GBM disease",
+    "A 7-day course of antibiotics for urinary tract infection"
+   ],
+   "answer": 0,
+   "explain": "กลไก: SLE สร้าง immune complex (anti-dsDNA) ไปเกาะที่ glomerulus กระตุ้น complement (C3 และ C4 ต่ำทั้งคู่ = classical pathway) ทำให้ไตอักเสบ เห็นเป็น **dysmorphic RBC + RBC cast (glomerular)** ร่วมกับ proteinuria ระดับ nephrotic และ sterile pyuria จากการอักเสบ ภาพ nephritic-nephrotic แบบนี้เข้ากับ class III/IV (± V)\n\nทำไมข้อถูกถูก: **class ของ lupus nephritis เป็นตัวกำหนดการรักษา** จึงต้องเจาะชิ้นเนื้อ (ข้อบ่งชี้ proteinuria ≥ 0.5 g/วัน หรือ active sediment) แล้ว induction class III/IV ด้วย glucocorticoid + MMF หรือ IV cyclophosphamide พร้อม hydroxychloroquine และ ACEI/ARB\n\nตัวลวง:\n- **PSGN**: ต้องมีระยะแฝง 1-3 สัปดาห์หลังคออักเสบ ASO สูง และ **C3 ต่ำแต่ C4 ปกติ**; เคสนี้ C4 ต่ำ ASO ปกติ มีผื่นแพ้แสง ข้ออักเสบ เกล็ดเลือดต่ำ anti-dsDNA บวก\n- **IgA nephropathy**: hematuria พร้อม URI (synpharyngitic) ได้ แต่ **complement ปกติ** และไม่มีอาการ SLE ทั้งระบบ\n- **Anti-GBM**: RPGN ± เลือดออกในปอด complement ปกติ ไม่มี ANA/dsDNA; plasma exchange ไม่ใช่ขั้นแรกของ lupus\n- **UTI**: pyuria ใน SLE ต้องเพาะเชื้อก่อน ซึ่งผลลบและไม่มีแบคทีเรีย จึงเป็น sterile pyuria จากไตอักเสบ",
+   "fullcover": "- **ตำแหน่งจากตะกอน**: RBC cast/dysmorphic RBC = glomerulus; WBC cast = pyelonephritis หรือ AIN; muddy brown cast = ATN; fatty cast = nephrotic; waxy cast = CKD\n- **Lupus nephritis class**: I-II mesangial, **III focal, IV diffuse (ต้องกดภูมิแรง), V membranous (nephrotic)**, VI sclerosing (ไม่ต้องกดภูมิ)\n- Induction III/IV: glucocorticoid + MMF หรือ low-dose IV cyclophosphamide; เพิ่ม belimumab หรือ calcineurin inhibitor ได้; **ทุกรายให้ hydroxychloroquine**\n- Activity: anti-dsDNA ขึ้น C3/C4 ลง; ตั้งครรภ์เปลี่ยน MMF เป็น azathioprine; cyclophosphamide ทำ hemorrhagic cystitis\n- **PSGN**: หลังคออักเสบ 1-3 สัปดาห์ (ผิวหนัง 3-6 สัปดาห์), ASO หรือ anti-DNase B, **C3 ต่ำ C4 ปกติ กลับปกติใน 8 สัปดาห์**, รักษาประคับประคอง จำกัดเกลือ ยาขับปัสสาวะ ลดความดัน\n- **IgA nephropathy**: hematuria พร้อม URI 1-2 วัน, complement ปกติ, ACEI/ARB เมื่อมี proteinuria; IgA vasculitis มีผื่น purpura ปวดท้อง\n- **Anti-GBM**: แอนติเจน **NC1 domain ของ α3 chain type IV collagen**, linear IgG, RPGN ± pulmonary hemorrhage, รักษา plasma exchange + steroid + cyclophosphamide\n- **Complement ต่ำ**: PSGN, lupus, MPGN/C3G, cryoglobulinemia, endocarditis; **ปกติ**: IgA, ANCA, anti-GBM\n- RPGN จำแนกด้วย IF: linear (anti-GBM), granular (immune complex), pauci-immune (ANCA: PR3 = GPA, MPO = MPA)\n- ต้องตัด UTI ก่อนสรุปว่า pyuria มาจากไตอักเสบในผู้ป่วยที่กดภูมิ\n- **ยังไม่เคยออก:** C3 ต่ำนานเกิน 8 สัปดาห์หลังคาดว่าเป็น PSGN ให้เจาะชิ้นเนื้อหา C3 glomerulopathy, MPGN หรือ lupus\n- **ยังไม่เคยออก:** pulmonary-renal syndrome ในไทยต้องคิดถึง leptospirosis ร่วมกับ anti-GBM, ANCA vasculitis และ SLE",
+   "pearl": "Nephritic + C3 และ C4 ต่ำ + dsDNA = lupus ต้องเจาะไตจัด class; PSGN C3 ต่ำ C4 ปกติหลังแฝง 2 สัปดาห์; IgA และ anti-GBM complement ปกติ",
+   "covers_themes": [
+    "Urine cast บอกตำแหน่ง (RBC/WBC/muddy brown)",
+    "Acute nephritic: PSGN vs IgA",
+    "Lupus nephritis",
+    "Anti-GBM (Goodpasture): แอนติเจน α3 chain ของ type IV collagen"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-07",
+   "title": "Hyponatremia จาก adrenal crisis หลังหยุดยาชุดสเตียรอยด์: แก้ Na อย่างปลอดภัย",
+   "stem": "A 58-year-old woman is brought in with 3 days of vomiting, abdominal pain and increasing drowsiness. For 2 years she took a herbal 'joint pain' remedy daily and stopped it 2 weeks ago when it ran out. She has a round face, central obesity, purple striae and thin skin; there is no hyperpigmentation. BP 78/48 mmHg despite 2 L of 0.9% saline, pulse 118/min, temperature 37.6 C. GCS 13, no focal deficit and no seizure. Labs: Na 117 mEq/L, K 4.4 mEq/L, glucose 58 mg/dL, creatinine 1.3 mg/dL, serum osmolality 248 mOsm/kg, urine osmolality 420 mOsm/kg, urine Na 46 mEq/L. A random serum cortisol drawn before treatment is 2.1 µg/dL. What is the most appropriate management?",
+   "choices": [
+    "IV hydrocortisone 100 mg now with dextrose-containing isotonic fluid, checking sodium every 2-4 hours so it rises no more than 8 mEq/L in 24 hours",
+    "Fluid restriction to 800 mL/day for SIADH",
+    "Defer steroids until a cosyntropin stimulation test confirms adrenal insufficiency",
+    "Fludrocortisone alone, because aldosterone deficiency is the cause of the hyponatraemia",
+    "Continuous 3% saline infusion to bring sodium to 135 mEq/L within 24 hours"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ยาชุดที่มีสเตียรอยด์กด HPA axis นานจน cushingoid เมื่อหยุดเองจึงเกิด **tertiary (secondary) adrenal insufficiency** ขาด cortisol แต่ aldosterone ยังปกติ (ระบบ renin ยังทำงาน) จึง **ไม่มี K สูงและไม่คล้ำ** cortisol ที่ต่ำทำให้ (1) หลอดเลือดไม่ตอบสนองต่อ catecholamine ช็อกไม่ดีขึ้นด้วยน้ำเกลือ (2) **ADH หลั่งเพิ่ม (cortisol ปกติยับยั้ง CRH/ADH)** ขับน้ำเปล่าไม่ได้ ได้ภาพเหมือน SIADH (urine osm สูง urine Na สูง) และ (3) น้ำตาลต่ำ\n\nทำไมข้อถูกถูก: adrenal crisis ต้องให้ **hydrocortisone ทันทีโดยไม่รอผลตรวจ** ร่วมกับสารน้ำที่มี dextrose เมื่อ cortisol กลับมา ADH จะถูกกดและไตจะขับน้ำเปล่าออกมาก Na จะขึ้นเร็วเอง จึงต้องเจาะ Na ถี่และคุมไม่ให้เกิน 8 mEq/L ใน 24 ชม. เพราะ Na 117 เรื้อรังเสี่ยง ODS (ถ้าเกินให้ D5W ± desmopressin)\n\nตัวลวง:\n- **จำกัดน้ำแบบ SIADH**: ต้องตัด adrenal insufficiency และ hypothyroidism ก่อนวินิจฉัย SIADH และผู้ป่วยช็อกอยู่\n- **รอ cosyntropin test**: adrenal crisis ห้ามรอ ถ้าอยากทดสอบภายหลังให้เจาะ cortisol/ACTH ก่อนให้ยา หรือใช้ dexamethasone ชั่วคราว\n- **Fludrocortisone อย่างเดียว**: ใช้ใน primary เท่านั้น เคสนี้ aldosterone ปกติ (K ปกติ) ปัญหาหลักคือขาด cortisol\n- **3% saline ให้ถึง 135 ใน 24 ชม.**: เกินขีดจำกัดมาก เสี่ยง osmotic demyelination; 3% ใช้ bolus 100-150 mL เฉพาะอาการรุนแรง เช่น ชักหรือโคม่า",
+   "fullcover": "- **ขั้นตอน hyponatremia**: serum osm (ตัด pseudo/translocational) → urine osm (< 100 = ดื่มน้ำมาก) → urine Na (< 30 = ปริมาตรพร่อง) → volume status\n- **SIADH ต้องตัด hypothyroidism และ adrenal insufficiency ก่อน** และไม่ได้ยาขับปัสสาวะ\n- **อาการรุนแรง (ชัก โคม่า)**: 3% NaCl 100-150 mL bolus ซ้ำได้ เพิ่ม Na 4-6 ก็พอ; ไม่รุนแรงแก้ตามสาเหตุ\n- **ขีดจำกัด ≤ 8-10 mEq/L/24 ชม.** (≤ 8 ในกลุ่มเสี่ยง: ติดสุรา ขาดอาหาร ตับแข็ง K ต่ำ Na ≤ 105); เกินแล้วให้ D5W ± desmopressin\n- ODS อาการเกิด 2-6 วันหลังแก้: พูดไม่ชัด กลืนลำบาก quadriparesis locked-in\n- Overcorrection เกิดเมื่อเอาตัวกระตุ้น ADH ออก: **ให้ cortisol, หยุด thiazide, แก้ปริมาตร**, beer potomania ได้อาหาร\n- Thiazide-induced: หญิงสูงอายุ หยุดยาเป็นหลัก; hyperglycemia: บวก Na ราว 1.6-2.4 ต่อกลูโคสทุก 100 ที่เกิน 100\n- **Primary AI**: ขาด cortisol + aldosterone → Na ต่ำ K สูง คล้ำ (ACTH สูง); **secondary/tertiary**: ACTH ต่ำ K ปกติ ไม่คล้ำ; สาเหตุบ่อยสุดคือหยุด steroid, Sheehan\n- วินิจฉัย: cortisol 8 โมงเช้า < 3-5 ยืนยัน > 15-18 ตัดออก; ค่ากลางทำ cosyntropin 250 µg; ACTH แยก primary/secondary\n- **Adrenal crisis**: hydrocortisone 100 mg IV แล้ว 200 mg/วัน + NSS/dextrose; maintenance hydrocortisone 15-25 mg/วัน, fludrocortisone เฉพาะ primary, สอน sick day rules\n- **ชักจาก electrolyte**: Na ต่ำ, Ca ต่ำ, Mg ต่ำ, น้ำตาลต่ำ; K ต่ำหรือสูงไม่ทำให้ชัก (ทำอ่อนแรง arrhythmia)\n- Exercise-associated hyponatremia (มาราธอน ดื่มน้ำมาก) ชักได้ ให้ 3% bolus ทันที\n- **ยังไม่เคยออก:** ผู้ป่วย cushingoid จากยาภายนอกที่ช็อกดื้อ vasopressor ต้องนึกถึง adrenal crisis เสมอ แม้หน้าตาจะดู \"cortisol เกิน\"\n- **ยังไม่เคยออก:** hypothyroidism ร่วม AI ให้ steroid ก่อน thyroxine เพราะ thyroxine เร่ง cortisol metabolism จน crisis",
+   "pearl": "Na ต่ำ + ช็อก + เคยกินยาชุด = adrenal crisis ให้ hydrocortisone ทันที แล้วเฝ้า Na ขึ้นเร็ว (≤ 8/วัน)",
+   "covers_themes": [
+    "Hyponatremia: approach และแก้อย่างปลอดภัย (ODS, thiazide, pseudo)",
+    "Adrenal insufficiency: primary vs secondary (hyperpigmentation, ACTH), cosyntropin test, adrenal crisis จากหยุด steroid",
+    "Electrolyte กับอาการชัก"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-08",
+   "title": "Hypernatremia ในผู้สูงอายุที่กิน lithium: nephrogenic DI และการให้น้ำเปล่า",
+   "stem": "A 74-year-old man with bipolar disorder has taken lithium for 25 years. He was admitted 4 days ago with a hip fracture and has been drowsy since surgery, taking little by mouth; his IV maintenance fluid has been 0.9% saline 1 L/day. Urine output is 4.5 L/day. Weight 60 kg, BP 112/70 mmHg, pulse 98/min, dry mucous membranes. Labs: Na 162 mEq/L, K 3.8 mEq/L, glucose 110 mg/dL, BUN 30 mg/dL, creatinine 1.4 mg/dL, serum osmolality 340 mOsm/kg, urine osmolality 110 mOsm/kg. Serum lithium is within the therapeutic range. After desmopressin 2 µg IV, urine osmolality rises only to 125 mOsm/kg. What is the most appropriate management?",
+   "choices": [
+    "Give free water (D5W or enteral water) to replace the deficit plus ongoing urine losses, lowering sodium by no more than 10-12 mEq/L per day",
+    "Desmopressin 2 µg every 12 hours for central diabetes insipidus",
+    "Continue 0.9% saline and restrict free water for primary polydipsia",
+    "Give D5W rapidly to normalise sodium within 6 hours",
+    "Start hydrochlorothiazide and amiloride alone without replacing water"
+   ],
+   "answer": 0,
+   "explain": "กลไก: lithium เข้าเซลล์ principal cell ทาง ENaC แล้วรบกวนสัญญาณ ADH ทำให้ **aquaporin-2 ลดลง = nephrogenic DI** ปัสสาวะเจือจางมาก (110) ทั้งที่ plasma osm สูง (340) และ **desmopressin เพิ่ม urine osm น้อยกว่า 50%** (110 → 125) ยืนยันว่าเป็น nephrogenic ไม่ใช่ central ตามปกติผู้ป่วย DI จะดื่มน้ำชดเชยได้ Na จึงไม่สูงมาก แต่เมื่อซึมหลังผ่าตัดเข้าถึงน้ำไม่ได้ และได้แต่ NSS (Na เข้าไปเพิ่ม น้ำเปล่าไม่มี) จึงเกิด **hypernatremia** รุนแรง\n\nทำไมข้อถูกถูก: ปัญหาคือขาดน้ำเปล่า free water deficit ≈ 0.5 × 60 × (162/140 − 1) ≈ 4.7 ลิตร และยังเสียต่อเนื่องทางปัสสาวะ 4.5 ลิตร/วัน จึงต้องให้ทั้ง deficit และ ongoing loss โดยลด Na ≤ 10-12 mEq/L/วัน ในรายที่เป็นเกิน 48 ชม.\n\nตัวลวง:\n- **Desmopressin**: ทดสอบแล้วไม่ตอบสนอง (nephrogenic) การให้ต่อไม่ช่วย\n- **Primary polydipsia**: จะมี Na ต่ำหรือปกติค่อนต่ำ ไม่ใช่ 162 และการให้ NSS ต่อทำ Na ยิ่งสูง\n- **D5W เร็วให้ปกติใน 6 ชม.**: Na สูงเรื้อรังสมองปรับตัวแล้ว ลดเร็วทำ **สมองบวม** ชัก\n- **Thiazide + amiloride อย่างเดียว**: เป็นการรักษาเรื้อรังของ lithium-induced NDI (ลดปริมาณปัสสาวะ) แต่ตอนนี้ต้องให้น้ำแก้ Na 162 ก่อน",
+   "fullcover": "- **Hypernatremia = ขาดน้ำเปล่า** เกิดในผู้ที่เข้าถึงน้ำไม่ได้: ผู้สูงอายุติดเตียง สมองเสื่อม ซึม ทารก ใส่ท่อช่วยหายใจ\n- แยกด้วย urine osm: สูงมาก = เสียน้ำนอกไตหรือดื่มไม่พอ; **ต่ำกว่า plasma = DI**; ราว 300 = osmotic diuresis\n- **Free water deficit = TBW × (Na/140 − 1)**; TBW 0.6 (ชาย) 0.5 (หญิง ชายสูงอายุ) 0.45 (หญิงสูงอายุ) × น้ำหนัก\n- ช็อกให้ NSS ก่อน แล้วจึงให้ hypotonic (D5W, 0.45% NaCl, น้ำทาง NG); **เรื้อรังลด ≤ 10-12 mEq/L/วัน**; ต้องรวม ongoing loss\n- **DI vs primary polydipsia**: ทั้งคู่ปัสสาวะเจือจาง แต่ DI Na ปกติค่อนสูง polydipsia Na ปกติค่อนต่ำ\n- Water deprivation + desmopressin: **central เพิ่ม urine osm > 50%, nephrogenic แทบไม่เพิ่ม**; copeptin ช่วยแยกได้\n- Central DI: หลังผ่าตัดต่อมใต้สมอง บาดเจ็บศีรษะ craniopharyngioma LCH → desmopressin\n- **Nephrogenic DI**: lithium, **Ca สูง, K ต่ำ**, หลังแก้อุดกั้น → แก้สาเหตุ อาหารเกลือต่ำ thiazide และ **amiloride สำหรับ lithium**\n- Lithium ยังทำ CKD เรื้อรัง, Ca สูง (PTH), hypothyroidism; thiazide ACEI NSAID เพิ่มระดับ lithium; พิษรุนแรงฟอกเลือดได้\n- ผู้ป่วยที่ปัสสาวะมากแล้วให้แต่ NSS เป็น pitfall สำคัญที่ทำให้ Na สูงในโรงพยาบาล\n- **ยังไม่เคยออก:** polyuria ต้องแยก solute diuresis (urine osm > 300 เช่น น้ำตาล urea หลังได้อาหารโปรตีนสูงทางสาย mannitol) ออกจาก water diuresis ก่อน\n- **ยังไม่เคยออก:** ผู้ป่วยหลังผ่าตัดต่อมใต้สมองอาจเป็น DI → SIADH → DI (triphasic) ต้องติดตาม Na ทุกวัน",
+   "pearl": "Lithium + ปัสสาวะเจือจาง + desmopressin ไม่ได้ผล = nephrogenic DI; Na สูงเพราะเข้าถึงน้ำไม่ได้ ให้น้ำเปล่าแต่ลด ≤ 10-12/วัน",
+   "covers_themes": [
+    "Hypernatremia: ผู้สูงอายุติดเตียงดื่มน้ำไม่พอ",
+    "Diabetes insipidus (รวม lithium nephrogenic DI)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-09",
+   "title": "Acid-base: methanol (HAGMA + osmolal gap) เทียบ RTA และ Fanconi",
+   "stem": "A 46-year-old man is brought in 18 hours after drinking a large amount of homemade liquor with friends. He complains of blurred 'snowstorm' vision and abdominal pain and is becoming drowsy. BP 130/80 mmHg, pulse 104/min, RR 32/min with deep breathing. Fundoscopy shows hyperaemic, swollen optic discs. Labs: Na 138, K 4.8, Cl 100, HCO3 5 mEq/L; arterial pH 7.12, PaCO2 16 mmHg; glucose 90 mg/dL, BUN 14 mg/dL, creatinine 1.1 mg/dL; lactate 2.0 mmol/L; serum ketones negative; measured serum osmolality 326 mOsm/kg. Urinalysis shows no crystals, glucose negative, pH 5.0. What is the most appropriate treatment?",
+   "choices": [
+    "Fomepizole (or ethanol if unavailable), IV sodium bicarbonate, folinic acid and haemodialysis",
+    "Oral potassium citrate for distal renal tubular acidosis",
+    "Insulin infusion and IV fluid for diabetic ketoacidosis",
+    "High-dose oral bicarbonate and phosphate replacement for proximal RTA (Fanconi syndrome)",
+    "Correct potassium and magnesium first, as in amphotericin-induced tubular acidosis"
+   ],
+   "answer": 0,
+   "explain": "กลไก: methanol ถูก alcohol dehydrogenase เปลี่ยนเป็น formaldehyde แล้วเป็น **formic acid** ซึ่งเป็นกรดที่ไม่ได้วัด (anion gap สูง) และเป็นพิษต่อ mitochondria ของ optic nerve (ตามัว จานประสาทตาบวม) ตัว methanol เองเป็น osmole จึงเพิ่ม osmolal gap\nคำนวณ: **AG = 138 − (100 + 5) = 33** (สูง); calculated osm = 2(138) + 90/18 + 14/2.8 = 286 → **osmolal gap = 326 − 286 = 40** (สูง); Winter: คาด PaCO2 = 1.5(5) + 8 = 15.5 ± 2 ได้ 16 จึงชดเชยเหมาะสม; lactate และ ketone ไม่สูงพอจะอธิบาย\n\nทำไมข้อถูกถูก: **fomepizole/ethanol ยับยั้ง ADH ไม่ให้สร้าง formate เพิ่ม**, bicarbonate ลดรูป formic acid ที่ไม่แตกตัวซึ่งเข้าเนื้อเยื่อได้, folinic acid ช่วยเผาผลาญ formate และ **hemodialysis** ข้อบ่งชี้ชัดคือ acidosis รุนแรง (pH < 7.15) และมีอาการทางตา\n\nตัวลวง:\n- **Distal RTA**: เป็น **normal AG** acidosis และ urine pH > 5.5 (ทำปัสสาวะเป็นกรดไม่ได้) เคสนี้ AG สูงและ urine pH 5.0\n- **DKA**: AG สูงได้แต่ต้องมีน้ำตาลสูงและ ketone บวก ทั้งคู่ไม่มี\n- **Fanconi/proximal RTA**: normal AG มี glucosuria phosphaturia ซึ่งไม่มี\n- **Amphotericin**: ทำ distal RTA ร่วม K และ Mg ต่ำ เป็น normal AG ไม่เกี่ยวกับประวัติดื่มสุรา",
+   "fullcover": "- **ลำดับอ่าน acid-base**: pH → primary (HCO3 หรือ PaCO2) → ชดเชย (Winter: PaCO2 = 1.5 × HCO3 + 8 ± 2) → **anion gap = Na − (Cl + HCO3)** (แก้ตาม albumin) → ถ้า AG สูงดู osmolal gap และ delta-delta\n- **HAGMA จำ GOLDMARK**: glycols, oxoproline, L-lactate, D-lactate, methanol, aspirin, renal failure, ketoacidosis\n- **Osmolal gap = osm ที่วัด − (2Na + glucose/18 + BUN/2.8)** สูงกว่าราว 10 ผิดปกติ; ระยะแรก OG สูง AG ยังไม่มาก ต่อมาตรงข้าม\n- **Methanol**: สุราเถื่อน อาการช้า 12-24 ชม., ตามัว optic disc บวม, putamen necrosis → fomepizole/ethanol + bicarbonate + folinic acid + dialysis\n- **Ethylene glycol**: AKI + calcium oxalate crystal + Ca ต่ำ; ให้ thiamine และ pyridoxine ร่วม; isopropanol OG สูงแต่ไม่มี acidosis\n- **NAGMA** สาเหตุหลัก: ท้องเสีย, RTA, ให้ NSS ปริมาณมาก, ureteral diversion, acetazolamide\n- **Urine anion gap (Na + K − Cl)**: ลบ = ไตขับ NH4 ได้ดี (ท้องเสีย), บวก = ไตขับกรดไม่ได้ (distal RTA)\n- **Type 2 (proximal) RTA**: ส่วนหนึ่งของ **Fanconi** (glucosuria น้ำตาลปกติ, phosphaturia, aminoaciduria, uric acid ต่ำ); urine pH < 5.5 ได้เมื่อ HCO3 ต่ำแล้ว; ต้องให้ด่างปริมาณมาก; สาเหตุ myeloma, tenofovir, ifosfamide\n- Amphotericin B: distal RTA + เสีย K และ Mg + ATN; K ต่ำดื้อต้องแก้ Mg ก่อน; ลดพิษด้วย saline loading และ liposomal form\n- **ยังไม่เคยออก:** **Type 1 (distal) RTA**: ขับ H+ ที่ collecting duct ไม่ได้ → urine pH > 5.5 เสมอ, K ต่ำ, hypocitraturia จึงเกิด **นิ่ว calcium phosphate และ nephrocalcinosis**; สาเหตุ Sjögren, SLE, amphotericin, ยีน; รักษาด้วย potassium citrate ขนาดไม่มาก\n- **ยังไม่เคยออก:** **Type 4 RTA**: ขาดหรือดื้อ aldosterone → **K สูง** + NAGMA ระดับน้อย พบมากในเบาหวานที่ไตเสื่อม (hyporeninemic hypoaldosteronism) และยา ACEI/ARB, spironolactone, trimethoprim, heparin, NSAID, calcineurin inhibitor; รักษาด้วย loop diuretic, ยาจับ K, หยุดยาต้นเหตุ, fludrocortisone ในรายเหมาะสม\n- **ยังไม่เคยออก:** ตารางแยก RTA: type 1 K ต่ำ urine pH > 5.5 มีนิ่ว; type 2 K ต่ำ urine pH แปรผัน มี Fanconi; type 4 K สูง urine pH < 5.5\n- **ยังไม่เคยออก:** RTA ในไทยพบ distal RTA ชนิดประจำถิ่นภาคตะวันออกเฉียงเหนือ มาด้วยอัมพาตจาก K ต่ำ ต้องแยกจาก periodic paralysis",
+   "pearl": "AG สูง + osmolal gap สูง + ตามัวหลังดื่มสุราเถื่อน = methanol: fomepizole + bicarbonate + dialysis; RTA เป็น normal AG เสมอ",
+   "covers_themes": [
+    "Methanol poisoning: osmolal gap สูง → fomepizole/ethanol",
+    "Fanconi syndrome",
+    "Magnesium และ hypoK ดื้อ (amphotericin)"
+   ],
+   "covers_nl": [
+    "Renal tubular acidosis"
+   ]
+  },
+  {
+   "id": "SYN-NEPHRO-10",
+   "title": "K ต่ำกับอัมพาตเฉียบพลัน: TPP (shift) vs เสียทางไต vs Mg ต่ำ",
+   "stem": "A 27-year-old man wakes at 3 a.m. unable to lift his legs after a party with a large rice meal and beer. He has lost 4 kg and had palpitations for 2 months. Proximal power is grade 2/5 in all limbs with reduced reflexes and normal sensation. Pulse 118/min, fine tremor, mild diffuse goitre. Labs: K 1.9 mEq/L, Mg 2.0 mg/dL, phosphate 1.8 mg/dL, HCO3 24 mEq/L, creatinine 0.8 mg/dL, CK 280 U/L, urine potassium-to-creatinine ratio 9 mEq/g, TSH < 0.01 mIU/L, free T4 3.6 ng/dL. ECG: sinus tachycardia with prominent U waves. What is the most appropriate management?",
+   "choices": [
+    "Small doses of potassium chloride with a non-selective beta-blocker (propranolol), then definitive treatment of the hyperthyroidism",
+    "Aggressive IV potassium chloride until serum potassium exceeds 5 mEq/L",
+    "IV potassium chloride diluted in 5% dextrose",
+    "IV penicillin for leptospirosis-associated renal potassium wasting",
+    "IV magnesium sulfate first, because hypokalaemia cannot be corrected without magnesium"
+   ],
+   "answer": 0,
+   "explain": "กลไก: thyroid hormone เพิ่ม **Na-K-ATPase** และความไวต่อ beta-adrenergic เมื่อมีตัวกระตุ้น (อาหารแป้งมาก → insulin, แอลกอฮอล์/ตื่นเต้น → catecholamine) K จะถูกดันเข้าเซลล์กล้ามเนื้ออย่างฉับพลัน **K รวมในร่างกายไม่ได้ลด** เบาะแสว่าเป็น shift คือ **urine K/Cr ต่ำ (9 < 13 mEq/g)**, PO4 ต่ำร่วม, กรดด่างปกติ; ECG มี U wave ตามระดับ K\n\nทำไมข้อถูกถูก: ให้ **KCl ปริมาณน้อย** พอให้พ้นอันตราย (K จะกลับออกจากเซลล์เองเมื่อหายกระตุ้น) ร่วมกับ **propranolol** ซึ่งปิดกลไก beta-adrenergic ที่เป็นต้นเหตุ และ **รักษาไทรอยด์เป็นพิษให้หาย** จึงไม่กลับเป็นซ้ำ\n\nตัวลวง:\n- **ให้ K มากจนเกิน 5**: เมื่อ K ออกจากเซลล์จะเกิด **rebound hyperkalemia** อันตรายต่อหัวใจ\n- **ผสม K ใน dextrose**: glucose กระตุ้น insulin ดัน K เข้าเซลล์เพิ่ม ทำให้ K ยิ่งต่ำ\n- **Leptospirosis**: ทำ K ต่ำจากเสียทางไต จะมี urine K สูง ไข้ AKI ปวดน่อง CK สูง ซึ่งไม่ตรง\n- **MgSO4 ก่อน**: ถูกเมื่อ Mg ต่ำ (เช่นได้ amphotericin, PPI) แต่ Mg ในเคสนี้ปกติ",
+   "fullcover": "- **ประเมิน K ต่ำ**: ECG + Mg → urine K/Cr (> 13 mEq/g = เสียทางไต; ต่ำ = ทางเดินอาหารหรือ shift) → กรดด่างและความดัน\n- เสียทางไต + acidosis = RTA, DKA; + alkalosis ความดันสูง = hyperaldosteronism, Cushing, ชะเอม; + alkalosis ความดันปกติ = ยาขับปัสสาวะ อาเจียน Bartter/Gitelman\n- **TPP**: ชายเอเชียวัยหนุ่ม อ่อนแรงหลังแป้งมาก แอลกอฮอล์ พัก; K ต่ำ + PO4 ต่ำ + urine K ต่ำ; อาการไทรอยด์อาจไม่ชัด ต้องส่ง TFT\n- รักษา TPP: KCl น้อย + propranolol; **ห้าม dextrose, insulin, salbutamol**; ป้องกันด้วยรักษาให้ euthyroid\n- Familial hypokalemic PP (CACNA1S) ไทรอยด์ปกติ มีประวัติครอบครัว; hyperkalemic PP (SCN4A) อ่อนแรงหลังพัก อาหาร K สูง\n- สาเหตุ shift อื่น: insulin, beta-2 agonist, alkalosis, refeeding, เริ่มรักษา B12\n- **Leptospirosis**: non-oliguric AKI + **K ต่ำ** (proximal tubule ดูด Na ไม่ได้ → Na ไปถึง distal แลก K), CK สูง ปวดน่อง ตาแดง; รักษา penicillin G/ceftriaxone/doxycycline\n- **ECG K ต่ำ**: T แบน, U wave, ST ยุบ, QU ยาว; เสี่ยง arrhythmia เมื่อได้ digoxin; K สูง: T แหลม QRS กว้าง; Ca ต่ำ: QT ยาว\n- **Mg ต่ำ** ทำ K ต่ำดื้อ (ROMK) และ Ca ต่ำ (กด PTH); สาเหตุ PPI, diuretic, แอลกอฮอล์, amphotericin, aminoglycoside, cisplatin; torsades ให้ MgSO4 2 g IV\n- ให้ K: รับประทานปลอดภัยกว่า, IV peripheral ไม่เร็วเกินราว 10 mEq/ชม., ไม่ผสม dextrose\n- K ต่ำรุนแรงทำ rhabdomyolysis, ileus, nephrogenic DI\n- **ยังไม่เคยออก:** Gitelman (เหมือนได้ thiazide: Mg ต่ำ urine Ca ต่ำ) กับ Bartter (เหมือนได้ loop: urine Ca สูง) ทั้งคู่ K ต่ำ alkalosis ความดันปกติ\n- **ยังไม่เคยออก:** K ต่ำ + NAGMA + urine pH > 5.5 ในหญิงไทยที่มีปากแห้งตาแห้ง ให้คิดถึง distal RTA จาก Sjögren",
+   "pearl": "อัมพาต + K ต่ำ + urine K ต่ำ + TSH ถูกกด = TPP: K น้อย ๆ + propranolol ห้าม dextrose; urine K สูงจึงคิดเสียทางไต",
+   "covers_themes": [
+    "Periodic paralysis / K shift (thyrotoxic)",
+    "HypoK อื่น ๆ (leptospirosis, ECG U wave)",
+    "Magnesium และ hypoK ดื้อ (amphotericin)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-11",
+   "title": "ผู้สูงอายุคาสายสวน: ASB, purple urine bag และเชื้อจาก gram stain",
+   "stem": "An 84-year-old bedridden woman in a nursing home has had an indwelling urinary catheter for 3 months because of a sacral pressure ulcer. Over 2 days she has become agitated at night. Three nights ago she was given diphenhydramine for sleep, and she has not opened her bowels for 6 days. Her daughter noticed that the urine bag has turned purple. Temperature 37.2 C, BP 130/76 mmHg, pulse 84/min, SpO2 97%. There is no suprapubic or flank tenderness; the abdomen is distended and rectal examination shows hard stool. Catheter urine: pH 8.0, WBC 20-30/HPF, nitrite positive; Gram stain shows gram-positive cocci in chains and gram-negative bacilli. Na 138 mEq/L, glucose 118 mg/dL, creatinine at baseline. What is the most appropriate management?",
+   "choices": [
+    "No antibiotics; replace the catheter and bag, relieve constipation, stop diphenhydramine and look for other causes of delirium",
+    "Ceftriaxone for catheter-associated UTI caused by Enterococcus",
+    "Ampicillin for 7 days, because purple urine bag syndrome indicates invasive infection",
+    "Send urine porphyrins because purple urine suggests acute porphyria",
+    "Haloperidol and physical restraint, then observe"
+   ],
+   "answer": 0,
+   "explain": "กลไก: ผู้คาสายสวนนานทุกคนจะมีเชื้อในปัสสาวะ (bacteriuria และ pyuria) จึงเป็น **asymptomatic bacteriuria** ถ้าไม่มีไข้ ปวดสีข้าง กดเจ็บหัวหน่าว หรือ sepsis ส่วนถุงสีม่วงเกิดจาก tryptophan → indole (แบคทีเรียลำไส้ ยิ่งท้องผูกยิ่งมาก) → indoxyl sulfate ที่ตับ → ขับทางปัสสาวะ แล้วแบคทีเรียในปัสสาวะด่างเปลี่ยนเป็น indigo + indirubin เกาะถุง PVC\n\nทำไมข้อถูกถูก: delirium รอบนี้มีสาเหตุที่ชัดกว่า คือ **ยา anticholinergic (diphenhydramine) และท้องผูก** (ซึ่งอาจทำปัสสาวะคั่ง) จึงต้องแก้ที่สาเหตุเหล่านั้น เปลี่ยนสายสวนและถุง ทบทวนความจำเป็นของสาย และ **ไม่ให้ยาปฏิชีวนะกับ ASB**\n\nตัวลวง:\n- **Ceftriaxone สำหรับ Enterococcus**: ผิดสองชั้น คือไม่มีข้อบ่งชี้รักษา และ **Enterococcus ดื้อ cephalosporin โดยธรรมชาติ** (ถ้าต้องรักษาใช้ ampicillin)\n- **Purple urine bag = ติดเชื้อรุนแรง**: ผิด เป็นภาวะไม่อันตราย บ่งว่ามีเชื้อมากและปัสสาวะด่าง ให้ยาเมื่อมีอาการ UTI จริงเท่านั้น\n- **Porphyria**: ปัสสาวะสีม่วงแดงที่เปลี่ยนสีเมื่อโดนแสง ไม่ใช่ถุงเปลี่ยนสีในผู้คาสาย\n- **Haloperidol และผูกมัด**: ไม่แก้สาเหตุ และการผูกมัดทำ delirium แย่ลง",
+   "fullcover": "- **ASB**: ≥ 10^5 CFU/mL โดยไม่มีอาการ; รักษาเฉพาะ **หญิงตั้งครรภ์ และก่อนหัตถการทางเดินปัสสาวะที่มีเลือดออก**\n- ไม่รักษา ASB ในผู้สูงอายุ เบาหวาน คาสายสวน บาดเจ็บไขสันหลัง; pyuria อย่างเดียวไม่ใช่ข้อบ่งชี้\n- ผู้สูงอายุสับสนแต่ไม่มีอาการเฉพาะที่: หาสาเหตุ delirium อื่นก่อน (ยา anticholinergic, ท้องผูก, ปัสสาวะคั่ง, ขาดน้ำ, ปวด, hypoxia, electrolyte)\n- **CAUTI วินิจฉัย**: มีอาการ (ไข้ ปวดสีข้าง กดเจ็บหัวหน่าว rigors delirium ที่ไม่มีเหตุอื่น) + เชื้อ ≥ 10^3 CFU/mL; เปลี่ยนสายที่ใส่ > 2 สัปดาห์ก่อนเก็บตัวอย่าง\n- **เชื้อจาก gram stain**: GNB + nitrite บวก = E. coli (บ่อยสุด); GPC เป็นสาย = Enterococcus (ampicillin); GPC กลุ่มในหญิงสาว = S. saprophyticus; S. aureus ในปัสสาวะ = หา bacteremia\n- เชื้อใน CAUTI: Enterococcus, Pseudomonas, Candida, Proteus, เชื้อดื้อยา; nitrite ลบไม่ตัด UTI\n- **Purple urine bag**: หญิงสูงอายุ ติดเตียง ท้องผูก ปัสสาวะด่าง คาสายนาน; รักษาด้วยเปลี่ยนสาย แก้ท้องผูก\n- สีปัสสาวะอื่น: ส้ม rifampicin, น้ำตาลเข้ม myoglobin/bilirubin, ดำ alkaptonuria, เขียว propofol/methylene blue\n- หญิงตั้งครรภ์ที่มี ASB ให้ cephalexin หรือ amoxicillin-clavulanate แล้วเพาะซ้ำ; ห้าม fluoroquinolone\n- Candiduria ในผู้คาสายส่วนใหญ่เป็น colonization\n- **ยังไม่เคยออก:** การป้องกัน CAUTI ที่ได้ผลที่สุดคือถอดสายสวนที่ไม่จำเป็น และใช้ intermittent catheterisation แทนเมื่อทำได้\n- **ยังไม่เคยออก:** Beers criteria: เลี่ยง first-generation antihistamine (diphenhydramine, chlorpheniramine) ในผู้สูงอายุ เพราะทำ delirium ปัสสาวะคั่ง ท้องผูก",
+   "pearl": "คาสาย + เชื้อในปัสสาวะ + ไม่มีอาการ UTI = ไม่ให้ยา หาสาเหตุ delirium อื่น; ถุงม่วง = indigo/indirubin ไม่อันตราย",
+   "covers_themes": [
+    "Asymptomatic bacteriuria: รักษาเมื่อไร",
+    "UTI: เดาเชื้อจาก gram stain / สายสวน",
+    "Purple urine bag syndrome"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-12",
+   "title": "Pyelonephritis ในเบาหวานที่ได้ SGLT2i: ไข้ไม่ลง ฝีในไต และ de-escalation",
+   "stem": "A 58-year-old woman with type 2 diabetes (HbA1c 10.5%) on metformin and empagliflozin is admitted with 3 days of fever, right flank pain and vomiting. Temperature 39.4 C, BP 86/50 mmHg after 30 mL/kg crystalloid, pulse 124/min. Labs: WBC 21,000/mm3, glucose 268 mg/dL, creatinine 2.1 mg/dL (0.9 mg/dL 2 months ago), HCO3 18 mEq/L, lactate 4.2 mmol/L. Urinalysis: WBC numerous with WBC casts, nitrite positive. Metformin and empagliflozin are withheld, and meropenem and norepinephrine are started. Blood and urine cultures grow E. coli susceptible to ceftriaxone and ciprofloxacin. After 72 hours her blood pressure is stable without norepinephrine but she still has fever of 39 C and flank pain. CT shows a 6-cm right intrarenal abscess without gas or hydronephrosis. What is the most appropriate next step?",
+   "choices": [
+    "Percutaneous drainage of the abscess and de-escalation to ceftriaxone according to susceptibility",
+    "Continue meropenem alone for 6 weeks without drainage",
+    "Add amphotericin B for presumed fungal infection",
+    "Emergency nephrectomy for emphysematous pyelonephritis",
+    "Switch to oral ciprofloxacin and discharge, because the organism is susceptible"
+   ],
+   "answer": 0,
+   "explain": "กลไก: เบาหวานคุมไม่ดีมี glycosuria (ยิ่งได้ SGLT2i) neutrophil ทำงานแย่ และกระเพาะปัสสาวะบีบตัวไม่ดี จึงเสี่ยง pyelonephritis ที่มีภาวะแทรกซ้อน การติดเชื้อทำให้เกิด septic shock และ **sepsis-associated AKI** (creatinine 0.9 → 2.1) ส่วน WBC cast บอกว่าการอักเสบอยู่ที่เนื้อไต\n\nทำไมข้อถูกถูก: **ไข้ไม่ลงหลัง 48-72 ชม. ของยาที่เชื้อไวต้องหาภาวะแทรกซ้อน** CT พบฝีในไต 6 ซม. ซึ่งใหญ่เกินกว่ายาจะเข้าถึง (ฝีเกินราว 3-5 ซม. ควรระบาย) จึงต้องระบายผ่านผิวหนัง และเมื่อรู้ผลความไวและผู้ป่วยเสถียรแล้ว ให้ **de-escalate เป็นยาที่แคบที่สุดที่ครอบคลุม** (ceftriaxone) ตามหลัก antimicrobial stewardship\n\nตัวลวง:\n- **Meropenem ต่อโดยไม่ระบาย**: ฝีใหญ่ไม่หายด้วยยาอย่างเดียว และการใช้ carbapenem ทั้งที่เชื้อไว ceftriaxone ส่งเสริมเชื้อดื้อยา\n- **Amphotericin B**: ไม่มีหลักฐานเชื้อรา ไข้ไม่ลงเพราะมีหนองที่ต้องระบาย\n- **Nephrectomy สำหรับ emphysematous pyelonephritis**: CT ไม่มีแก๊ส และแม้เป็น EPN ส่วนใหญ่เริ่มด้วยยา + ระบาย/stent ก่อน\n- **เปลี่ยนเป็นยากินแล้วกลับบ้าน**: ยังมีไข้และฝีที่ไม่ได้ระบาย",
+   "fullcover": "- เบาหวานเพิ่ม UTI จาก glycosuria, ภูมิคุ้มกันบกพร่อง, neurogenic bladder; ภาวะแทรกซ้อนเฉพาะ: **emphysematous pyelonephritis, ฝีในไต/รอบไต, papillary necrosis**, fungal UTI\n- **SGLT2i**: genital mycotic infection บ่อยสุด, UTI เพิ่มเล็กน้อย, Fournier gangrene น้อยแต่ร้ายแรง; **หยุดชั่วคราวเมื่อป่วยหนัก sepsis อดอาหาร ผ่าตัด** (เสี่ยง euglycemic DKA)\n- Metformin หยุดเมื่อ AKI, ช็อก, lactate สูง\n- **ASB ในเบาหวานไม่รักษา**\n- Pyelonephritis: ไข้ ปวดสีข้าง CVA tenderness, WBC cast; รับไว้เมื่อ sepsis กินไม่ได้ ตั้งครรภ์ สงสัยอุดกั้น\n- Empirical: ceftriaxone; ช็อกหรือเสี่ยง ESBL ใช้ carbapenem; **ให้ยาภายใน 1 ชม. ใน sepsis** พร้อมเพาะเชื้อ\n- **De-escalate ตามผลเพาะเชื้อ** แล้วเปลี่ยนยากินเมื่อไข้ลง; รวม 7-14 วันตามยาและความรุนแรง (นานขึ้นถ้ามีฝี)\n- **ไข้ไม่ลง 48-72 ชม.** → ultrasound/CT หาฝี การอุดกั้น แก๊ส เชื้อดื้อยา\n- **ไตอุดตันร่วมติดเชื้อ = ระบายด่วน** (nephrostomy หรือ stent); ฝีเล็กใช้ยา ฝีใหญ่ระบาย\n- Emphysematous pyelonephritis: แก๊สในเนื้อไต พบในเบาหวานคุมไม่ดี เริ่มด้วยยา + ระบาย ถ้าไม่ดีขึ้นจึง nephrectomy\n- **Sepsis-associated AKI**: hemodynamic + inflammatory; ให้สารน้ำตามเป้า หยุดยาพิษต่อไต ปรับขนาดยา (ยกเว้น loading dose ที่ไม่ต้องลด)\n- **ยังไม่เคยออก:** perinephric abscess จาก S. aureus มาทางกระแสเลือด ปัสสาวะอาจปกติ ต้องหาแหล่งติดเชื้อต้นทาง\n- **ยังไม่เคยออก:** papillary necrosis (เบาหวาน, NSAID, sickle cell, obstruction) อาจหลุดอุดท่อไตทำปวดเหมือนนิ่วและ hematuria",
+   "pearl": "Pyelonephritis ไข้ไม่ลงหลัง 72 ชม. = ถ่ายภาพหาฝีหรืออุดกั้นแล้วระบาย; ได้ผลเพาะเชื้อแล้ว de-escalate; ป่วยหนักหยุด SGLT2i",
+   "covers_themes": [
+    "เบาหวานกับ UTI (รวม SGLT2i)",
+    "Pyelonephritis ซับซ้อน (abscess, de-escalate, sepsis AKI)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-13",
+   "title": "ชายสูงอายุปัสสาวะไม่ออก: BPH, acute urinary retention, UTI ซ้ำ และ ED",
+   "stem": "A 72-year-old man with hypertension has had nocturia, a weak stream and hesitancy for 2 years, and two culture-proven E. coli urinary tract infections in the past 8 months. He also reports erectile dysfunction and takes isosorbide mononitrate for stable angina. Two days ago he started an over-the-counter cold remedy containing chlorpheniramine and pseudoephedrine. For 18 hours he has been unable to pass urine and has lower abdominal pain. Temperature 37.0 C, BP 160/90 mmHg. A tender, dull suprapubic mass reaches the umbilicus. Digital rectal examination shows a smooth, symmetrically enlarged, non-tender prostate. Creatinine 2.4 mg/dL (1.0 mg/dL 6 months ago), K 5.2 mEq/L. Bladder scan shows 1,100 mL. What is the most appropriate initial management?",
+   "choices": [
+    "Urethral catheterisation to decompress the bladder, monitoring for post-obstructive diuresis, and stopping the cold remedy",
+    "Start tamsulosin and wait for spontaneous voiding before catheterisation",
+    "Urgent haemodialysis for acute kidney injury",
+    "IV fluid bolus for prerenal azotaemia and repeat creatinine in 24 hours",
+    "Sildenafil to treat both lower urinary tract symptoms and erectile dysfunction"
+   ],
+   "answer": 0,
+   "explain": "กลไก: BPH ทำให้ทางออกกระเพาะปัสสาวะแคบอยู่เดิม (LUTS, ปัสสาวะค้างจึงติดเชื้อซ้ำ) เมื่อได้ **antihistamine (anticholinergic ลดการบีบตัวของ detrusor) + pseudoephedrine (alpha-agonist บีบ bladder neck)** จึงเกิด **acute urinary retention** แรงดันย้อนขึ้นไปถึงไตทั้งสองข้างทำให้ GFR ตก = **post-renal AKI**\n\nทำไมข้อถูกถูก: post-renal AKI แก้ได้ทันทีด้วยการระบาย **ใส่สายสวนทางท่อปัสสาวะ** (ใส่ไม่ได้จึงใช้ suprapubic) แล้วเฝ้าระวัง **post-obstructive diuresis** (วัดปัสสาวะทุกชั่วโมง ดู Na K Mg) และหยุดยาที่กระตุ้น\n\nตัวลวง:\n- **Tamsulosin แล้วรอ**: alpha-blocker ใช้หลังระบายแล้วเพื่อ trial without catheter ไม่ใช่แทนการระบายตอนที่ไตกำลังเสีย\n- **Dialysis**: ยังไม่มีข้อบ่งชี้ AEIOU และสาเหตุแก้ได้ด้วยสายสวน\n- **IV fluid เพราะคิดว่า prerenal**: กระเพาะปัสสาวะเต็ม 1,100 mL ชี้ว่าเป็น post-renal การให้น้ำไม่แก้\n- **Sildenafil**: **ห้ามใช้ PDE5 inhibitor ร่วมกับ nitrate** เพราะความดันตกรุนแรง และไม่แก้ retention",
+   "fullcover": "- **Post-renal AKI สาเหตุ**: BPH, มะเร็งต่อมลูกหมาก, neurogenic bladder (เบาหวาน), **ยา anticholinergic/antihistamine/opioid/TCA/decongestant**, ท่อไตอุดสองข้าง, นิ่วในไตข้างเดียว\n- วินิจฉัยด้วย bladder scan (PVR) และ ultrasound หา hydronephrosis\n- **รักษา: ใส่สายสวนทางท่อปัสสาวะ** ถ้าใส่ไม่ได้ใช้ suprapubic; อุดเหนือกระเพาะใช้ nephrostomy หรือ stent\n- **Post-obstructive diuresis**: วัดปัสสาวะรายชั่วโมง ติดตาม electrolyte ทดแทนบางส่วนของปัสสาวะ; hematuria หลังระบายมักหายเอง\n- **UTI ในผู้ชายเป็น complicated ทุกครั้ง** UTI ซ้ำให้ตรวจ DRE, PVR, ultrasound หา prostatitis หรือการอุดกั้น; รักษาอย่างน้อย 7 วัน\n- Acute prostatitis: ไข้ ปวดฝีเย็บ ต่อมกดเจ็บ ห้ามนวดต่อม; chronic bacterial prostatitis UTI ซ้ำเชื้อเดิม รักษา 4-6 สัปดาห์\n- **ยังไม่เคยออก:** **BPH ยา**: alpha-1 blocker (tamsulosin, doxazosin) ออกฤทธิ์เร็ว; **5-alpha reductase inhibitor (finasteride, dutasteride)** ลดขนาดต่อมในต่อมใหญ่ ใช้เวลาหลายเดือน ลด PSA ราวครึ่งหนึ่ง; ใช้ร่วมกันในต่อมใหญ่มีอาการมาก\n- **ยังไม่เคยออก:** ข้อบ่งชี้ผ่าตัด (TURP): retention ซ้ำหรือถอดสายไม่ได้, UTI ซ้ำ, นิ่วในกระเพาะปัสสาวะ, hematuria ซ้ำจากต่อม, ไตเสื่อมจาก BPH, ยาไม่ได้ผล\n- **ยังไม่เคยออก:** **Acute urinary retention**: ใส่สายระบาย หาสาเหตุ (ยา ท้องผูก UTI หลังผ่าตัด spinal cord compression) ให้ alpha-blocker 2-3 วันแล้ว trial without catheter\n- **ยังไม่เคยออก:** retention ร่วมขาอ่อนแรงหรือชารอบก้นต้องคิดถึง **cauda equina/spinal cord compression** และทำ MRI ด่วน\n- **ยังไม่เคยออก:** **Erectile dysfunction** เป็นตัวบ่งชี้โรคหลอดเลือด (มักนำโรคหัวใจ 2-5 ปี) ต้องประเมินเบาหวาน ไขมัน ความดัน; แยก psychogenic ด้วยยังมี morning erection\n- **ยังไม่เคยออก:** ED รักษาด้วย **PDE5 inhibitor ห้ามใช้กับ nitrate** (และระวัง alpha-blocker ให้เว้นระยะ); tadalafil 5 mg/วันใช้ได้ทั้ง LUTS จาก BPH และ ED; ยาที่ทำ ED: thiazide, beta-blocker, SSRI, spironolactone, 5-ARI",
+   "pearl": "ปัสสาวะไม่ออก + Cr ขึ้น = ใส่สายสวนก่อนเสมอ แล้วเฝ้า post-obstructive diuresis; ห้าม PDE5i คู่ nitrate",
+   "covers_themes": [
+    "Obstructive AKI (BPH)",
+    "UTI ซ้ำในผู้ชาย → ตรวจต่อมลูกหมาก"
+   ],
+   "covers_nl": [
+    "BPH",
+    "Acute urinary retention",
+    "Erectile dysfunction"
+   ]
+  },
+  {
+   "id": "SYN-NEPHRO-14",
+   "title": "Dysuria เรื้อรัง sterile pyuria: simple cystitis vs วัณโรคทางเดินปัสสาวะ",
+   "stem": "A 34-year-old woman has had dysuria, frequency and urgency for 4 months. She received three courses of antibiotics (nitrofurantoin, then ciprofloxacin, then fosfomycin), each followed by only brief improvement. She has low-grade evening fevers and has lost 3 kg. She is not pregnant and has no vaginal discharge; NAAT for chlamydia and gonorrhoea is negative. Urinalysis: pH 5.5, WBC 50-100/HPF, RBC 10-20/HPF, nitrite negative, leukocyte esterase positive, no casts. Three urine cultures taken off antibiotics show no growth. Chest radiograph shows fibrotic changes in the right apex. Ultrasound shows mild right hydronephrosis. What is the most appropriate next investigation?",
+   "choices": [
+    "Three early-morning urine samples for AFB smear, mycobacterial culture and Xpert MTB/RIF",
+    "No further tests; give another 3-day course of TMP-SMX for uncomplicated cystitis",
+    "Repeat a standard urine culture and treat only if growth is at least 10^5 CFU/mL",
+    "Kidney biopsy for acute interstitial nephritis",
+    "Post-coital single-dose antibiotic prophylaxis for recurrent cystitis"
+   ],
+   "answer": 0,
+   "explain": "กลไก: Mycobacterium tuberculosis แพร่ทางเลือดไปไต แล้วลงมาตามท่อไตถึงกระเพาะปัสสาวะ ทำให้เกิดการอักเสบเรื้อรัง เม็ดเลือดขาวในปัสสาวะมากแต่ **เพาะเชื้อธรรมดาไม่ขึ้น (sterile pyuria)** ปัสสาวะเป็นกรด และการหายเป็นพังผืดทำ **ท่อไตตีบจนเกิด hydronephrosis**; ciprofloxacin ที่เคยได้มีฤทธิ์ต่อ TB บางส่วนจึงดีขึ้นชั่วคราวแล้วกลับเป็นซ้ำ\n\nทำไมข้อถูกถูก: sterile pyuria + อาการเรื้อรัง + ไข้ต่ำ ๆ น้ำหนักลด + รอยโรคเก่าที่ปอด + hydronephrosis ในประเทศที่ TB ชุก ต้องส่ง **ปัสสาวะเช้าแรก 3 วัน หา AFB, culture และ Xpert MTB/RIF**\n\nตัวลวง:\n- **TMP-SMX 3 วันอีกรอบ**: uncomplicated cystitis ต้องเป็นอาการเฉียบพลันที่ตอบสนองต่อยา เคสนี้เรื้อรัง ดื้อหลายยา และเพาะเชื้อไม่ขึ้น\n- **รอเพาะเชื้อขึ้น ≥ 10^5**: culture ธรรมดาไม่ขึ้น TB อยู่แล้ว และหญิงที่มีอาการใช้เกณฑ์ต่ำกว่านั้น (≥ 10^3) ก็มีนัยสำคัญ\n- **AIN**: เป็นสาเหตุ sterile pyuria ได้ แต่สัมพันธ์กับยาและ creatinine ขึ้น มี WBC cast ไม่มีอาการกระเพาะปัสสาวะเรื้อรังหรือ hydronephrosis\n- **Post-coital prophylaxis**: ใช้กับ recurrent cystitis ที่เพาะเชื้อขึ้นจริงและสัมพันธ์กับเพศสัมพันธ์",
+   "fullcover": "- **Uncomplicated cystitis**: หญิงไม่ตั้งครรภ์ ไม่มีความผิดปกติทางเดินปัสสาวะ dysuria + frequency ไม่มีตกขาว วินิจฉัยทางคลินิกได้\n- ยาตัวแรก: **nitrofurantoin 5 วัน, fosfomycin 3 g ครั้งเดียว, TMP-SMX 3 วัน** (ดื้อในพื้นที่ < 20%); fluoroquinolone สงวนไว้\n- เกณฑ์ culture: **≥ 10^5 CFU/mL คลาสสิก** แต่หญิงมีอาการ ≥ 10^3 ก็มีนัยสำคัญ; หลายเชื้อ = ปนเปื้อน\n- ต้องเพาะเชื้อเมื่อ เป็นซ้ำ ไม่หาย ตั้งครรภ์ ผู้ชาย มีไข้ปวดสีข้าง (pyelonephritis ห้าม nitrofurantoin/fosfomycin)\n- Recurrent cystitis (≥ 2 ครั้ง/6 เดือน หรือ ≥ 3 ครั้ง/ปี): prophylaxis ต่อเนื่องหรือหลังเพศสัมพันธ์, vaginal estrogen หลังหมดประจำเดือน\n- **Sterile pyuria**: วัณโรค, ได้ยาปฏิชีวนะมาก่อน, chlamydia/gonorrhea, นิ่ว, AIN, เนื้องอก, interstitial cystitis\n- **Renal TB**: อาการกระเพาะปัสสาวะเรื้อรัง hematuria ปัสสาวะเป็นกรด; CXR อาจปกติ; ภาพถ่าย calyx ขรุขระ ท่อไตตีบเป็นช่วง putty kidney thimble bladder\n- **วินิจฉัย: ปัสสาวะเช้าแรก 3 วัน AFB smear + mycobacterial culture + Xpert MTB/RIF**\n- รักษา 2HRZE/4HR; ท่อไตตีบอาจแย่ลงระหว่างรักษา ต้องติดตามภาพถ่ายและใส่ stent ถ้าจำเป็น\n- **Pitfall**: fluoroquinolone ที่ได้รักษา \"UTI\" ทำให้ดีขึ้นชั่วคราว บดบังวัณโรคและเสี่ยงดื้อยา\n- **ยังไม่เคยออก:** ในผู้ชาย genitourinary TB ทำ epididymitis คลำได้ vas deferens เป็นปม (beaded vas) และต่อมลูกหมากเป็นปุ่ม\n- **ยังไม่เคยออก:** ผู้ป่วยอายุมากที่มี sterile pyuria + hematuria ต้องคิดถึง carcinoma in situ ของกระเพาะปัสสาวะ ส่ง urine cytology และ cystoscopy",
+   "pearl": "Dysuria เรื้อรัง + sterile pyuria + ไข้ต่ำ ๆ น้ำหนักลด + hydronephrosis = renal TB: ปัสสาวะเช้า 3 วัน AFB/Xpert",
+   "covers_themes": [
+    "Simple cystitis (เกณฑ์ culture, ยาสั้น)",
+    "Renal TB (sterile pyuria)"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-15",
+   "title": "Staghorn struvite + ไตอุดตันติดเชื้อ และแยก hematuria จากทางเดินปัสสาวะ",
+   "stem": "A 52-year-old woman with recurrent urinary tract infections has 2 days of fever, rigors and left flank pain. Temperature 38.9 C, BP 96/60 mmHg, pulse 112/min. Urinalysis: pH 8.0, WBC too numerous to count, RBC 20-30/HPF with normal (isomorphic) morphology and no RBC casts, nitrite positive, coffin-lid crystals. Creatinine 1.6 mg/dL. Non-contrast CT shows a left staghorn calculus extending into the upper ureter with moderate hydronephrosis and perinephric stranding. Blood cultures are taken and IV ceftriaxone is started after an IV fluid bolus. What is the most appropriate next step?",
+   "choices": [
+    "Urgent decompression of the left kidney by percutaneous nephrostomy or ureteric stent, with complete stone removal later",
+    "Potassium citrate to dissolve the stone",
+    "Kidney biopsy to evaluate the haematuria",
+    "Long-term suppressive antibiotics without stone removal",
+    "Tamsulosin medical expulsive therapy with analgesia, then observe"
+   ],
+   "answer": 0,
+   "explain": "กลไก: เชื้อที่สร้าง **urease (Proteus, Klebsiella)** ย่อยยูเรียเป็นแอมโมเนีย ปัสสาวะด่าง (pH 8) ทำให้ magnesium ammonium phosphate ตกผลึก (coffin-lid) เป็น **staghorn struvite** นิ่วนี้เป็นที่ซ่อนเชื้อ (biofilm) และเมื่ออุดทางออกของไต หนองจะขังอยู่ในไตที่ยาเข้าถึงไม่ดี (obstructed infected kidney / pyonephrosis) ผู้ป่วยจึงมี sepsis\n\nทำไมข้อถูกถูก: **ไตอุดตันร่วมติดเชื้อเป็น urologic emergency** ยาอย่างเดียวไม่พอ ต้องระบายด่วนด้วย nephrostomy หรือ stent ร่วมกับยาปฏิชีวนะ แล้วเมื่อหายติดเชื้อจึง **เอานิ่วออกให้หมด (PCNL)** เพื่อตัดแหล่งเชื้อ ไม่ทำการสลายหรือเอานิ่วออกขณะติดเชื้อรุนแรง\n\nตัวลวง:\n- **Potassium citrate**: ใช้สลายนิ่ว uric acid (ทำปัสสาวะด่าง) แต่ struvite เกิดในปัสสาวะด่างอยู่แล้ว การทำให้ด่างยิ่งเร่ง\n- **เจาะชิ้นเนื้อไต**: RBC รูปร่างปกติ ไม่มี RBC cast เป็น non-glomerular hematuria จากนิ่วและการติดเชื้อ\n- **ยากดเชื้อระยะยาวไม่เอานิ่วออก**: เชื้อใน biofilm ไม่หาย นิ่วโตต่อ ไตเสื่อม\n- **Tamsulosin**: ใช้กับนิ่วท่อไตส่วนปลายขนาด 5-10 มม. ที่ไม่ติดเชื้อ ไม่ใช่ staghorn ที่มี sepsis",
+   "fullcover": "- **วินิจฉัยนิ่ว: non-contrast CT KUB**; ตั้งครรภ์หรืออายุน้อยใช้ ultrasound; uric acid โปร่งรังสีบนฟิล์มแต่เห็นบน CT\n- **Calcium oxalate บ่อยสุด**: ดื่มน้ำให้ปัสสาวะ > 2 ลิตร/วัน, ไม่จำกัด Ca ในอาหาร, ลดเกลือ; thiazide ถ้า hypercalciuria, citrate ถ้า hypocitraturia\n- **Uric acid**: ปัสสาวะกรด ทำให้ด่างด้วย potassium citrate (pH 6-6.5) ± allopurinol; ห้าม probenecid\n- **Struvite**: urease (Proteus, Klebsiella), ปัสสาวะด่าง, staghorn, coffin-lid; ต้องเอาออกหมด (PCNL) + ยา\n- Cystine หกเหลี่ยม (พันธุกรรม); calcium phosphate สัมพันธ์กับ distal RTA\n- ปวดบิด: NSAID เป็นยาแรก; < 5 มม. หลุดเอง, 5-10 มม. ปลาย ureter ใช้ tamsulosin, > 10 มม. หรือไม่หลุด URS/ESWL\n- **ข้อบ่งชี้ระบายด่วน**: อุดตันร่วมติดเชื้อ, ไตข้างเดียว, AKI, ปวดคุมไม่ได้\n- นิ่วเป็นซ้ำ: ตรวจ Ca (primary HPT), uric acid, 24-hour urine\n- **Hematuria**: ยืนยันด้วยกล้องเสมอ (dipstick บวกจาก myoglobin/Hb ได้); glomerular = dysmorphic RBC, RBC cast, proteinuria, สีโคล่า; non-glomerular = RBC ปกติ ลิ่มเลือด\n- Non-glomerular ไม่เจ็บในผู้สูงอายุสูบบุหรี่ = urothelial cancer จนกว่าพิสูจน์ได้ → CT urography + cystoscopy\n- ได้ anticoagulant แล้วมี hematuria ยังต้องสืบค้นตามปกติ\n- **ยังไม่เคยออก:** หลังระบายไตอุดตัน ให้ยาตามผลเพาะเชื้อ และเลื่อนการเอานิ่วออกจนหายติดเชื้อ เพราะการทำหัตถการในไตที่ติดเชื้อเสี่ยง sepsis รุนแรง\n- **ยังไม่เคยออก:** นิ่วจากยา: indinavir (มองไม่เห็นแม้บน CT), topiramate และ acetazolamide (calcium phosphate), triamterene",
+   "pearl": "นิ่ว + ไข้ + hydronephrosis = ระบายไตด่วน (nephrostomy/stent) ก่อน; staghorn struvite ต้องเอาออกหมดภายหลัง",
+   "covers_themes": [
+    "นิ่วไต (calcium oxalate, struvite/Proteus, uric)",
+    "Hematuria: glomerular vs urologic"
+   ],
+   "covers_nl": []
+  },
+  {
+   "id": "SYN-NEPHRO-16",
+   "title": "AKI หลังนอนกับพื้นนาน: rhabdomyolysis จาก statin + fibrate, FENa และ contrast",
+   "stem": "A 63-year-old man with type 2 diabetes and CKD (baseline creatinine 1.6 mg/dL) takes simvastatin 40 mg/day and recently started gemfibrozil. He is found at home after a fall, having lain on the floor for about 20 hours. He has diffuse muscle pain and dark brown urine. BP 104/66 mmHg, pulse 110/min, JVP not visible, lungs clear. After bladder catheterisation, urine output is 40 mL/h. Labs: CK 68,000 U/L, creatinine 3.4 mg/dL, BUN 48 mg/dL, K 6.0 mEq/L, phosphate 7.2 mg/dL, calcium 7.4 mg/dL, HCO3 17 mEq/L, AST 820 U/L, ALT 140 U/L. Urine dipstick: blood 3+; microscopy: RBC 0-2/HPF with muddy brown granular casts; FENa 0.8%. ECG shows sinus tachycardia without peaked T waves or QRS widening. He has no tetany. What is the most appropriate management?",
+   "choices": [
+    "Stop simvastatin and gemfibrozil, give large-volume isotonic crystalloid targeting high urine output, and lower potassium with insulin and glucose",
+    "IV calcium gluconate to correct the low calcium",
+    "Immediate haemodialysis to remove myoglobin because CK exceeds 10,000 U/L",
+    "IV furosemide to convert oliguric to non-oliguric AKI",
+    "N-acetylcysteine with sodium bicarbonate as nephroprotection"
+   ],
+   "answer": 0,
+   "explain": "กลไก: นอนกับพื้นนานกดกล้ามเนื้อ + statin ร่วม gemfibrozil (ยับยั้งการกำจัด statin) → กล้ามเนื้อสลาย ปล่อย **myoglobin, K, PO4, uric acid** และกรด myoglobin ทำร้ายไตสามทาง: หลอดเลือดไตหดตัว อุดท่อไตเป็น cast และเป็นพิษต่อท่อไตโดยตรง (heme iron) จึงเห็น **dipstick blood บวกแต่ไม่มี RBC** และ **muddy brown cast (ATN)** แม้ **FENa 0.8%** ซึ่งต่ำได้ใน pigment nephropathy ระยะแรก (ไม่ได้แปลว่า prerenal ล้วน); Ca ต่ำเพราะไปตกตะกอนในกล้ามเนื้อที่ตาย AST สูงกว่า ALT เพราะมาจากกล้ามเนื้อ\n\nทำไมข้อถูกถูก: หยุดยาต้นเหตุ และ **ให้ isotonic crystalloid ปริมาณมากเร็ว** (เป้าหมายปัสสาวะราว 200-300 mL/ชม. ถ้าปัสสาวะยังออก และระวังน้ำเกิน) เพื่อขับ myoglobin; K 6.0 ไม่มี ECG เปลี่ยนจึงลดด้วย insulin + glucose โดยไม่ต้องให้ Ca\n\nตัวลวง:\n- **IV calcium gluconate**: Ca ต่ำที่ไม่มีอาการไม่ต้องแก้ ให้ Ca จะตกตะกอนกับ PO4 สูงและทำ Ca สูงช่วงฟื้น ให้เฉพาะ ECG เปลี่ยนจาก K หรือ tetany\n- **Dialysis เพราะ CK > 10,000**: ข้อบ่งชี้ยังเป็น AEIOU ไม่ใช่ระดับ CK และ HD ทั่วไปขจัด myoglobin ได้ไม่ดี\n- **Furosemide**: ไม่ช่วยให้ไตฟื้น ทำปริมาตรพร่องเพิ่ม ใช้เฉพาะเมื่อน้ำเกิน\n- **NAC + bicarbonate**: NAC เป็นแนวคิดเก่าของ contrast AKI (PRESERVE พบว่าไม่ได้ผล) และ bicarbonate ไม่ดีกว่าน้ำเกลือใน rhabdomyolysis",
+   "fullcover": "- **AKI (KDIGO)**: Cr เพิ่ม ≥ 0.3 ใน 48 ชม. หรือ ≥ 1.5 เท่าใน 7 วัน หรือปัสสาวะ < 0.5 mL/kg/ชม. 6 ชม.\n- **Prerenal**: BUN/Cr > 20, urine Na < 20, **FENa < 1%**, urine osm > 500, hyaline cast; ได้ยาขับปัสสาวะใช้ FEUrea < 35%\n- **ATN**: FENa > 2%, urine osm ใกล้ plasma, muddy brown cast; ยกเว้น **contrast และ pigment (rhabdo, hemolysis) ที่ FENa ต่ำได้**\n- Prerenal จากเสียเลือด: กู้ปริมาตรและหยุดเลือดคือการรักษาไต; ปล่อยนานเป็น ischemic ATN; malignant HTN เป็น intrinsic (vascular)\n- Hepatorenal syndrome: ตับแข็ง ไม่ตอบสนองต่อ albumin → terlipressin + albumin\n- **Rhabdomyolysis**: CK > 5 เท่า (มักเกิน 10,000), blood บวกไม่มี RBC, K PO4 uric สูง Ca ต่ำ, AST > ALT\n- สาเหตุ: นอนนาน, ออกกำลังหนัก, heat stroke, ชัก, statin + gemfibrozil หรือ CYP3A4 inhibitor, K ต่ำ, leptospirosis\n- รักษา: **isotonic fluid ปริมาณมากเร็ว**, หยุดยา, แก้ K; ไม่ให้ Ca ถ้าไม่มีอาการ; เฝ้าระวัง compartment syndrome\n- **Dialysis ตาม AEIOU ไม่ใช่ CK**; statin myopathy ที่ CK สูงต่อหลังหยุดยาให้นึกถึง anti-HMGCR\n- **Contrast-associated AKI**: Cr ขึ้น 48-72 ชม. สูงสุดวันที่ 3-5; เสี่ยงเมื่อ eGFR < 30; ป้องกันด้วย isotonic saline, ปริมาณน้อย; **NAC ไม่ได้ผล**; ไม่ทำ prophylactic dialysis\n- Metformin หยุดเมื่อ eGFR < 30 หรือมี AKI ก่อนฉีดสี แล้วเริ่มใหม่หลัง 48 ชม.\n- **ยังไม่เคยออก:** atheroembolic AKI หลังสวนหลอดเลือดแดง (เกิดช้ากว่า livedo reticularis นิ้วเท้าม่วง eosinophilia C3 ต่ำ) แยกจาก contrast AKI\n- **ยังไม่เคยออก:** ระยะฟื้นของ ATN และ rhabdomyolysis มักปัสสาวะมาก เสีย K Mg และ Ca อาจกลับสูง ต้องติดตาม electrolyte ต่อ",
+   "pearl": "Blood บวกแต่ไม่มี RBC + CK สูง = rhabdo: น้ำเกลือมาก หยุดยา ไม่ให้ Ca ถ้าไม่มีอาการ; ฟอกตาม AEIOU ไม่ใช่ตาม CK",
+   "covers_themes": [
+    "Prerenal vs ATN (FENa, cast, กลไก)",
+    "Rhabdomyolysis / statin myopathy (CK)",
+    "Contrast-associated AKI"
+   ],
+   "covers_nl": []
+  }
+ ]
+}
