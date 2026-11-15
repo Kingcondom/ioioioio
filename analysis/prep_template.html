@@ -1,0 +1,301 @@
+<title>MED421 Prep Drill</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* layout: แบบเดียวกับ MED421 Ward Drill — หน้าแรกการ์ดเขียว + กริดระบบ, หน้าข้อสอบ แถบระบบ + การ์ดข้อ, แถบล่างลอย */
+:root{
+  --g-50:#eff0ec;--g-0:#ffffff;--g-100:#f6f7f3;--g-900:#151a14;--g-700:#3f463c;--g-500:#6b7268;--g-200:#e2e5de;--g-300:#d3d8cd;
+  --lime:#d5f0a6;--lime-2:#a8dc5c;--lime-3:#86c43c;--on-lime:#1b2e0b;--pen:#3d7a17;
+  --bg:var(--g-50);--surface:var(--g-0);--sunk:var(--g-100);--ink:var(--g-900);--ink-2:var(--g-700);--muted:var(--g-500);--line:var(--g-200);--line-2:var(--g-300);
+  --ok:#3d7a17;--ok-soft:#e5f3e0;--miss:#94600f;--miss-soft:#fbf0d9;--bad:#c2372c;--bad-soft:#fdecea;--blue:#2f62a0;--blue-soft:#e6effa;--note:#fff3b0;--on-note:#3a3110;
+  --focus:#2f62a0;--shadow:0 12px 32px -12px rgba(20,30,10,.35);
+  --f:"IBM Plex Sans Thai","Noto Sans Thai",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  --s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;--s-6:32px;--s-7:48px;--r-sm:6px;--r-md:10px;--r-lg:16px;--r-xl:24px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --g-50:#0f110e;--g-0:#1a1d18;--g-100:#141712;--g-900:#e9ede5;--g-700:#c3cabd;--g-500:#9aa294;--g-200:#2b3027;--g-300:#3a4035;
+  --lime:#2f4219;--lime-2:#8cc24a;--lime-3:#a8dc5c;--on-lime:#e8f7d2;--pen:#a8dc5c;
+  --ok:#a8dc5c;--ok-soft:#1b2c15;--miss:#eab863;--miss-soft:#2f2512;--bad:#ff8b7c;--bad-soft:#3a201d;--blue:#93bdf0;--blue-soft:#18263a;--note:#3a3416;--on-note:#f3e7a8;
+  --focus:#93bdf0;--shadow:0 12px 32px -12px rgba(0,0,0,.8);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --g-50:#0f110e;--g-0:#1a1d18;--g-100:#141712;--g-900:#e9ede5;--g-700:#c3cabd;--g-500:#9aa294;--g-200:#2b3027;--g-300:#3a4035;
+  --lime:#2f4219;--lime-2:#8cc24a;--lime-3:#a8dc5c;--on-lime:#e8f7d2;--pen:#a8dc5c;
+  --ok:#a8dc5c;--ok-soft:#1b2c15;--miss:#eab863;--miss-soft:#2f2512;--bad:#ff8b7c;--bad-soft:#3a201d;--blue:#93bdf0;--blue-soft:#18263a;--note:#3a3416;--on-note:#f3e7a8;
+  --focus:#93bdf0;--shadow:0 12px 32px -12px rgba(0,0,0,.8);color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--f);padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3,h4,p{margin:0}
+h1,h2,h3{text-wrap:balance;font-weight:600}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--r-md)}
+.wrap{max-width:900px;margin:0 auto;padding-block:var(--s-4) var(--s-5);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:var(--s-4);grid-template-columns:minmax(0,1fr)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.press{transition:transform .15s cubic-bezier(.3,1.4,.5,1),background .2s,color .2s,border-color .2s}
+.press:active{transform:scale(.95)}
+
+/* ---------- หน้าแรก ---------- */
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--s-3);flex-wrap:wrap}
+.top h1{font-size:30px;line-height:1.3}
+.top p{font-size:14px;color:var(--muted)}
+.hero{display:grid;gap:var(--s-4);background:var(--lime);color:var(--on-lime);border-radius:var(--r-xl);padding:20px}
+.hero-r{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4)}
+.hero h2{font-size:24px;line-height:1.35}
+.hero p{font-size:14px;opacity:.85}
+.ring{--p:0;flex:none;width:88px;height:88px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--lime-3) calc(var(--p)*360deg),color-mix(in srgb,var(--surface) 55%,transparent) 0)}
+.ring-in{width:66px;height:66px;border-radius:50%;background:var(--surface);color:var(--ink);display:grid;place-content:center;text-align:center}
+.ring-in b{font:600 20px/1.2 var(--mono)}
+.ring-in small{font-size:12px;color:var(--muted);line-height:1.3}
+.next{display:flex;align-items:center;gap:var(--s-3);width:100%;min-height:56px;padding:8px 8px 8px 16px;border:0;border-radius:999px;background:var(--surface);text-align:left;cursor:pointer}
+.next span{flex:1;min-width:0;display:grid;line-height:1.4}
+.next small{font-size:12px;color:var(--muted)}
+.next b{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.next i{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--lime-2);color:#14200a;font-style:normal;font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3)}
+.tile{display:grid;gap:var(--s-1);align-content:start;text-align:left;min-height:100px;padding:var(--s-4);border:0;border-radius:20px;background:var(--surface);cursor:pointer;min-width:0}
+.tile small{font-size:12px;font-weight:600;color:var(--muted);line-height:1.5}
+.tile b{font:600 24px/1.2 var(--mono)}
+.tile b em{font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
+.whead{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s-3)}
+.whead h3{font-size:20px}
+.whead span{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-3)}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.scard{display:grid;gap:var(--s-2);align-content:start;text-align:left;min-width:0;min-height:160px;padding:var(--s-4);border:0;border-radius:20px;background:var(--surface);cursor:pointer}
+.scard .nm{font-size:20px;line-height:1.3;font-weight:600}
+.scard .th{font-size:14px;color:var(--ink-2)}
+.scard .ct{font-size:14px;color:var(--muted)}
+.scard .ct b{font:600 18px var(--mono);color:var(--ink)}
+.bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin-top:auto}
+.bar i{display:block;height:100%;background:var(--lime-3);border-radius:6px}
+.about{border-radius:20px;background:var(--surface);padding:0 16px}
+.about>summary{cursor:pointer;min-height:52px;display:flex;align-items:center;font-weight:600;list-style:none}
+.about>summary::-webkit-details-marker{display:none}
+.about>div{display:grid;gap:var(--s-3);padding:0 0 16px;font-size:14px;color:var(--ink-2)}
+.about ol{margin:0;padding-left:1.4em;display:grid;gap:var(--s-1)}
+
+/* ---------- หน้าข้อสอบ ---------- */
+.strip{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+.strip::-webkit-scrollbar{display:none}
+.tab{flex:none;min-height:44px;padding:8px 16px;border:0;border-radius:999px;background:var(--surface);color:var(--muted);font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--lime);color:var(--on-lime)}
+.tab .n{font:500 12px var(--mono);margin-left:6px;opacity:.75}
+.bar2{display:flex;flex-wrap:wrap;gap:var(--s-2);align-items:center;justify-content:space-between}
+.seg{display:inline-flex;gap:2px;padding:4px;background:var(--surface);border-radius:999px}
+.seg button{min-height:40px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--muted);font-size:14px;font-weight:600;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--lime-2);color:#14200a}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{min-height:40px;padding:0 14px;border:1px solid var(--line-2);border-radius:999px;background:none;color:var(--ink-2);font-size:14px;font-weight:500;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--lime);border-color:transparent;color:var(--on-lime);font-weight:600}
+.phead{display:flex;align-items:baseline;gap:var(--s-3);flex-wrap:wrap;padding:4px 4px 0}
+.phead h2{font-size:20px}
+.phead span{font-size:14px;color:var(--muted)}
+.stream{display:grid;gap:var(--s-3)}
+.item{background:var(--surface);border-radius:var(--r-xl);padding:20px;min-width:0}
+.ihead{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:var(--s-3)}
+.qno{font:600 12px var(--mono);color:var(--on-lime);background:var(--lime);padding:4px 10px;border-radius:999px}
+.tag{font-size:12px;font-weight:500;color:var(--muted);background:var(--sunk);padding:3px 9px;border-radius:999px;white-space:nowrap}
+.tag.yr{font-family:var(--mono);color:var(--pen);background:var(--ok-soft)}
+.tag.hot{color:var(--bad);background:var(--bad-soft);font-weight:600}
+.tag.nl{color:var(--blue);background:var(--blue-soft);font-weight:600}
+.topic{font-size:18px;line-height:1.45;margin-bottom:var(--s-2)}
+.stem{margin-bottom:var(--s-4);max-width:70ch;overflow-wrap:anywhere}
+.choices{display:grid;gap:9px;max-width:72ch}
+.choice{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start;text-align:left;background:var(--sunk);border:1px solid transparent;padding:12px 14px;border-radius:var(--r-lg);cursor:pointer;min-height:48px}
+.choice:hover:not([disabled]){border-color:var(--line-2)}
+.choice .l{font:600 12px/26px var(--mono);height:26px;text-align:center;color:var(--muted);background:var(--surface);border-radius:8px}
+.choice[disabled]{cursor:default}
+.choice.ok{border-color:var(--ok);background:var(--ok-soft)}
+.choice.ok .l{background:var(--ok);color:var(--surface)}
+.choice.miss{border-color:var(--miss);background:var(--miss-soft)}
+.choice.miss .l{background:var(--miss);color:var(--surface)}
+.choice.dim{opacity:.55}
+.verdict{display:flex;align-items:center;gap:8px;margin-top:var(--s-4);font-size:14px;font-weight:600}
+.verdict.ok{color:var(--ok)}.verdict.miss{color:var(--miss)}
+.panel{margin-top:var(--s-3);background:var(--sunk);border-radius:20px;padding:16px 18px;max-width:76ch;display:grid;gap:var(--s-3)}
+.panel h4{font-size:14px;font-weight:600;color:var(--pen)}
+.panel .blk{display:grid;gap:var(--s-1)}
+.panel .blk+.blk{padding-top:var(--s-3);border-top:1px solid var(--line)}
+.md p{margin:0 0 6px}.md p:last-child{margin:0}
+.md ul{margin:0;padding-left:1.2em;display:grid;gap:4px}
+.md strong{font-weight:600}
+.fix{background:var(--bad-soft);color:var(--bad);border-radius:var(--r-md);padding:8px 12px;font-size:14px}
+.pearl{background:var(--note);color:var(--on-note);border-radius:var(--r-md);padding:8px 12px;font-size:14px;font-weight:500}
+.src,.cov{font-size:12px;color:var(--muted)}
+.others summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--pen);min-height:32px;display:flex;align-items:center}
+.others ol{margin:var(--s-2) 0 0;padding-left:1.4em;display:grid;gap:var(--s-2);font-size:14px}
+.others li span{display:block;color:var(--ok);font-weight:500}
+.reveal{min-height:44px;margin-top:var(--s-3);padding:0 16px;border:1px solid var(--line-2);border-radius:999px;background:none;color:var(--pen);font-size:14px;font-weight:600;cursor:pointer}
+.empty{padding:var(--s-7) var(--s-4);text-align:center;color:var(--muted);background:var(--surface);border-radius:var(--r-xl)}
+.more{justify-self:center}
+
+/* ---------- แถบล่างลอย ---------- */
+.bnav{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));width:min(480px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--surface);border-radius:28px;padding:8px 4px;box-shadow:var(--shadow),0 0 0 1px var(--line)}
+.bn{display:grid;justify-items:center;gap:2px;min-height:52px;padding:4px 0;background:none;border:0;color:var(--muted);font-size:12px;line-height:1.4;font-weight:500;cursor:pointer}
+.bn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bn[aria-current="page"]{color:var(--ink);font-weight:600}
+.bn[aria-current="page"] svg{stroke-width:2.2;color:var(--pen)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap" id="app"></div>
+<nav class="bnav" aria-label="เมนูหลัก">
+  <button class="bn press" data-go="home"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>หน้าแรก</button>
+  <button class="bn press" data-go="one"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>แก่นละ 1 ข้อ</button>
+  <button class="bn press" data-go="synth"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>รวบยอด</button>
+  <button class="bn press" data-go="wrong"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg>ทวนข้อผิด</button>
+</nav>
+
+<script>
+const D = __DATA__;
+const LET = 'ABCDE';
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+function md(t){
+  let out = '', ul = false;
+  String(t || '').split('\n').forEach(L => {
+    if (/^\s*[-*] /.test(L)) { if (!ul) { out += '<ul>'; ul = true; } out += '<li>' + inl(L.replace(/^\s*[-*] /, '')) + '</li>'; }
+    else { if (ul) { out += '</ul>'; ul = false; } if (L.trim()) out += '<p>' + inl(L) + '</p>'; }
+  });
+  return '<div class="md">' + out + (ul ? '</ul>' : '') + '</div>';
+}
+// ---------- ความจำ (เก็บในเครื่องผู้ใช้) ----------
+const KEY = 'med421-prep-v1';
+let ST = { ans: {}, view: 'home', set: D.sets[0]?.key, mode: 'one', filt: 'all' };
+try { Object.assign(ST, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch (e) {} };
+
+const ALL = [];
+D.sets.forEach(s => {
+  s.one.forEach((x, i) => ALL.push(Object.assign(x, { kind: 'one', set: s.key, no: s.label + ' ' + (i + 1) })));
+  s.synth.forEach(x => ALL.push(Object.assign(x, { kind: 'synth', set: s.key, no: x.id })));
+});
+const BYID = Object.fromEntries(ALL.map(x => [x.kind + ':' + x.id, x]));
+const k = x => x.kind + ':' + x.id;
+const done = L => L.filter(x => ST.ans[k(x)] !== undefined).length;
+const right = L => L.filter(x => ST.ans[k(x)] === x.answer).length;
+const wrongs = () => ALL.filter(x => ST.ans[k(x)] !== undefined && ST.ans[k(x)] !== x.answer);
+
+function go(v){ ST.view = v; if (v === 'one' || v === 'synth') ST.mode = v; save(); render(); window.scrollTo(0, 0); }
+document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(b.dataset.go)));
+
+function render(){
+  document.querySelectorAll('.bn').forEach(b => { if (b.dataset.go === (ST.view === 'drill' ? ST.mode : ST.view)) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  if (ST.view === 'home') return renderHome();
+  if (ST.view === 'wrong') return renderWrong();
+  return renderDrill();
+}
+
+function renderHome(){
+  const one = ALL.filter(x => x.kind === 'one'), syn = ALL.filter(x => x.kind === 'synth');
+  const d = done(ALL), p = ALL.length ? d / ALL.length : 0, acc = d ? Math.round(right(ALL) / d * 100) : 0;
+  const nextSet = D.sets.find(s => done(s.one) < s.one.length) || D.sets[0];
+  $('#app').innerHTML = `
+  <div class="top"><div><h1>MED421 Prep Drill</h1><p>แก่นละ 1 ข้อจากโพย MED28–35 และโจทย์รวบยอดที่เติมหัวข้อ NL 2567</p></div></div>
+  <section class="hero">
+    <div class="hero-r"><div style="display:grid;gap:4px;min-width:0"><span style="font-size:14px;opacity:.8">ความคืบหน้า</span>
+      <h2>ทำไปแล้ว ${d} จาก ${ALL.length} ข้อ</h2><p>ตอบถูก ${acc}% ของข้อที่ทำ</p></div>
+      <div class="ring" style="--p:${p}"><div class="ring-in"><b>${Math.round(p * 100)}</b><small>%</small></div></div></div>
+    <button class="next press" id="cont"><span><small>ทำต่อ</small><b>${esc(nextSet.label)} ${esc(nextSet.thai)}: แก่นละ 1 ข้อ</b></span><i>→</i></button>
+  </section>
+  <div class="tiles">
+    <button class="tile press" data-go2="one"><small>แก่นละ 1 ข้อ</small><b>${done(one)}<em> / ${one.length}</em></b></button>
+    <button class="tile press" data-go2="synth"><small>โจทย์รวบยอด</small><b>${done(syn)}<em> / ${syn.length}</em></b></button>
+    <button class="tile press" data-go2="wrong"><small>ข้อที่ตอบผิด</small><b>${wrongs().length}</b></button>
+  </div>
+  <div class="whead"><h3>เลือกระบบ</h3><span>${D.sets.length} ระบบ</span></div>
+  <div class="grid">${D.sets.map(s => { const L = ALL.filter(x => x.set === s.key), dd = done(L);
+    return `<button class="scard press" data-set="${s.key}"><span class="nm">${esc(s.label)}</span><span class="th">${esc(s.thai)}</span>
+      <span class="ct"><b>${s.one.length}</b> แก่น <b>${s.synth.length}</b> รวบยอด</span><span class="bar"><i style="width:${L.length ? dd / L.length * 100 : 0}%"></i></span></button>`; }).join('')}</div>
+  <details class="about"><summary>ชุดนี้คืออะไร</summary><div>
+    <ol>
+      <li><b>แก่นละ 1 ข้อ</b>: ข้อสอบเก่า 1,101 ข้อในคลัง Ward Drill ยุบเหลือ ${one.length} แก่น เลือกข้อที่ออกหลายรุ่นที่สุดมาเป็นตัวแทน เรียงจากแก่นที่ออกบ่อยก่อน เฉลยมีเนื้อหาที่เกี่ยวข้องที่ต้องรู้ และข้ออื่นในแก่นเดียวกันไว้ทวนเร็ว</li>
+      <li><b>โจทย์รวบยอด</b>: โจทย์ใหม่ ${syn.length} ข้อ แต่ละข้อรวมหลายแก่นที่เป็นเรื่องเดียวกัน และเติมหัวข้อในเกณฑ์ NL 2567 ที่โพยยังไม่เคยออก เฉลยมีสรุปทั้งเรื่อง</li>
+      <li>ความคืบหน้าเก็บไว้ในเครื่องนี้เท่านั้น ถ้าล้างข้อมูลเบราว์เซอร์จะเริ่มใหม่</li>
+    </ol>
+    <button class="chip press" id="reset" style="justify-self:start">ล้างความคืบหน้า</button>
+  </div></details>`;
+  $('#cont').onclick = () => { ST.set = nextSet.key; ST.mode = 'one'; go('drill'); };
+  document.querySelectorAll('[data-go2]').forEach(b => b.onclick = () => go(b.dataset.go2 === 'wrong' ? 'wrong' : (ST.mode = b.dataset.go2, 'drill')));
+  document.querySelectorAll('[data-set]').forEach(b => b.onclick = () => { ST.set = b.dataset.set; go('drill'); });
+  let armed = false;
+  $('#reset').onclick = e => { if (!armed) { armed = true; e.target.textContent = 'กดอีกครั้งเพื่อยืนยัน'; return; } ST.ans = {}; save(); render(); };
+}
+
+let shown = 30;
+function renderDrill(){
+  if (ST.view !== 'drill') ST.view = 'drill';
+  const s = D.sets.find(x => x.key === ST.set) || D.sets[0];
+  const base = ST.mode === 'one' ? s.one : s.synth;
+  const L = base.filter(x => ST.filt === 'all' ? true : ST.filt === 'todo' ? ST.ans[k(x)] === undefined : ST.ans[k(x)] !== undefined && ST.ans[k(x)] !== x.answer);
+  $('#app').innerHTML = `
+  <div class="strip" role="tablist">${D.sets.map(x => `<button class="tab press" role="tab" aria-selected="${x.key === s.key}" data-s="${x.key}">${esc(x.label)}<span class="n">${(ST.mode === 'one' ? x.one : x.synth).length}</span></button>`).join('')}</div>
+  <div class="bar2">
+    <div class="seg" role="group" aria-label="ชุดข้อ"><button data-m="one" aria-pressed="${ST.mode === 'one'}">แก่นละ 1 ข้อ</button><button data-m="synth" aria-pressed="${ST.mode === 'synth'}">โจทย์รวบยอด</button></div>
+    <div class="chips" role="group" aria-label="กรอง"><button class="chip press" data-f="all" aria-pressed="${ST.filt === 'all'}">ทั้งหมด</button><button class="chip press" data-f="todo" aria-pressed="${ST.filt === 'todo'}">ยังไม่ทำ</button><button class="chip press" data-f="wrong" aria-pressed="${ST.filt === 'wrong'}">ตอบผิด</button></div>
+  </div>
+  <div class="phead"><h2>${esc(s.label)} ${esc(s.thai)}</h2><span>ทำแล้ว ${done(base)}/${base.length} ข้อ ตอบถูก ${right(base)}</span></div>
+  <div class="stream" id="stream">${L.length ? L.slice(0, shown).map(card).join('') : `<p class="empty">${ST.filt === 'wrong' ? 'ยังไม่มีข้อที่ตอบผิดในระบบนี้' : 'ทำครบทุกข้อในระบบนี้แล้ว เลือกระบบอื่นจากแถบด้านบน'}</p>`}</div>
+  ${L.length > shown ? `<button class="chip press more" id="more">แสดงอีก ${Math.min(30, L.length - shown)} ข้อ (เหลือ ${L.length - shown})</button>` : ''}`;
+  document.querySelectorAll('[data-s]').forEach(b => b.onclick = () => { ST.set = b.dataset.s; shown = 30; save(); render(); window.scrollTo(0, 0); });
+  document.querySelectorAll('[data-m]').forEach(b => b.onclick = () => { ST.mode = b.dataset.m; shown = 30; save(); render(); });
+  document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { ST.filt = b.dataset.f; shown = 30; save(); render(); });
+  if ($('#more')) $('#more').onclick = () => { shown += 30; render(); };
+  bindCards();
+}
+
+function renderWrong(){
+  const W = wrongs();
+  $('#app').innerHTML = `<div class="phead"><h2>ทวนข้อที่ตอบผิด</h2><span>${W.length} ข้อ จากทุกระบบ</span></div>
+  <div class="stream">${W.length ? W.map(card).join('') : '<p class="empty">ยังไม่มีข้อที่ตอบผิด ลองทำ "แก่นละ 1 ข้อ" ก่อน แล้วข้อที่ผิดจะมารวมที่นี่</p>'}</div>`;
+  bindCards();
+}
+
+function card(x){
+  const id = k(x), a = ST.ans[id], answered = a !== undefined;
+  const label = D.sets.find(s => s.key === x.set).label;
+  const yrs = x.years.map(y => `<span class="tag yr">MED${y}</span>`).join('');
+  const head = x.kind === 'one'
+    ? `<span class="qno">${esc(x.no)}</span>${x.years.length >= 4 ? `<span class="tag hot">ออก ${x.years.length} รุ่น</span>` : `<span class="tag">ออก ${x.years.length} รุ่น</span>`}${yrs}`
+    : `<span class="qno">${esc(x.id)}</span><span class="tag">คลุม ${x.themes.length} แก่น</span>${x.nl.length ? `<span class="tag nl">+NL ${x.nl.length}</span>` : ''}${yrs}`;
+  const ch = x.choices.map((c, i) => {
+    let cls = '';
+    if (answered) cls = i === x.answer ? 'ok' : i === a ? 'miss' : 'dim';
+    return `<button class="choice press ${cls}" data-id="${id}" data-i="${i}" ${answered ? 'disabled' : ''}><span class="l">${LET[i]}</span><span>${esc(c)}</span></button>`;
+  }).join('');
+  let panel = '';
+  if (answered) {
+    const ok = a === x.answer;
+    panel = `<p class="verdict ${ok ? 'ok' : 'miss'}">${ok ? '✓ ถูกต้อง' : '✗ ยังไม่ใช่ คำตอบคือ ' + LET[x.answer]}</p><div class="panel">` + (x.kind === 'one'
+      ? `<div class="blk"><h4>เฉลย</h4>${md(x.note)}</div>${x.fix ? `<p class="fix"><strong>แก้ตามแนวทางปัจจุบัน:</strong> ${inl(x.fix)}</p>` : ''}
+         <div class="blk"><h4>เนื้อหาที่เกี่ยวข้องที่ต้องรู้</h4>${md(x.related)}</div>
+         ${x.others.length ? `<details class="others blk"><summary>ข้ออื่นในแก่นนี้ (${x.others.length})</summary><ol>${x.others.map(o => `<li>${esc(o.q)} ${o.years.length ? `<em class="src">(MED${o.years.join(', MED')})</em>` : ''}<span>→ ${esc(o.a)}</span></li>`).join('')}</ol></details>` : ''}
+         <p class="src">${esc(x.src)}</p>`
+      : `<div class="blk"><h4>เฉลย</h4>${md(x.explain)}</div><div class="blk"><h4>สรุปทั้งเรื่อง</h4>${md(x.fullcover)}</div>
+         ${x.pearl ? `<p class="pearl">${inl(x.pearl)}</p>` : ''}
+         <p class="cov">ครอบคลุมแก่น: ${x.themes.map(esc).join(' / ')}${x.nl.length ? '<br>เพิ่มจาก NL ที่โพยยังไม่เคยออก: ' + x.nl.map(esc).join(' / ') : ''}</p>`) +
+      `</div><button class="reveal press" data-reset="${id}">ลองทำข้อนี้ใหม่</button>`;
+  }
+  return `<article class="item" id="c-${id.replace(':', '-')}"><div class="ihead">${head}${ST.view === 'wrong' ? `<span class="tag">${esc(label)}</span>` : ''}</div>
+    <h3 class="topic">${esc(x.kind === 'one' ? x.theme : x.title)}</h3><p class="stem">${esc(x.q)}</p><div class="choices">${ch}</div>${panel}</article>`;
+}
+function bindCards(){
+  document.querySelectorAll('.choice:not([disabled])').forEach(b => b.onclick = () => {
+    ST.ans[b.dataset.id] = +b.dataset.i; save();
+    const el = b.closest('.item'); el.outerHTML = card(BYID[b.dataset.id]); bindCards(); refreshHead();
+  });
+  document.querySelectorAll('[data-reset]').forEach(b => b.onclick = () => {
+    delete ST.ans[b.dataset.reset]; save(); const el = b.closest('.item'); el.outerHTML = card(BYID[b.dataset.reset]); bindCards(); refreshHead();
+  });
+}
+function refreshHead(){
+  const h = document.querySelector('.phead span'); if (!h || ST.view !== 'drill') return;
+  const s = D.sets.find(x => x.key === ST.set); const base = ST.mode === 'one' ? s.one : s.synth;
+  h.textContent = `ทำแล้ว ${done(base)}/${base.length} ข้อ ตอบถูก ${right(base)}`;
+}
+if (!['home', 'drill', 'wrong'].includes(ST.view)) ST.view = 'home';
+render();
+</script>
