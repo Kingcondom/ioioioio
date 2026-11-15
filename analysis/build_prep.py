@@ -21,8 +21,12 @@ for s in ORDER:
     for o in O['one_per_theme']:
         t = T[o['theme']]; it = items[o['id']]
         others = [{'q': x['q'], 'a': x['answer'], 'years': x['years']} for x in t['items'] if x['id'] != o['id']]
+        note = it.get('note', '')
+        if re.search(r'(ข้อ|ตัวเลือก|ตอบ|choice|option)\s*\(?[A-Ea-e]\)?(?![a-zA-Z])', note):
+            note += ('\n\n**หมายเหตุ:** ตัวอักษรตัวเลือกที่อ้างในคำอธิบายนี้เป็นลำดับในโพยเดิม ซึ่งไม่ตรงกับลำดับที่แสดง '
+                     f'คำตอบที่ถูกคือ **{"ABCDE"[it["answer"]]}. {it["choices"][it["answer"]]}**')
         one.append({'id': it['id'], 'theme': t['theme'], 'years': t['theme_years'], 'n': t['n'], 'q': it['q'],
-                    'choices': it['choices'], 'answer': it['answer'], 'note': it.get('note', ''), 'src': it.get('src', ''),
+                    'choices': it['choices'], 'answer': it['answer'], 'note': note, 'src': it.get('src', ''),
                     'related': o['related'], 'fix': o.get('fix', ''), 'others': others})
     one.sort(key=lambda x: (-len(x['years']), -x['n'], -(max(x['years']) if x['years'] else 0)))
     syn = []
