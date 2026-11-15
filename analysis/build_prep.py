@@ -67,15 +67,25 @@ open(f'{ROOT}/prep.html', 'w').write(tpl.replace('__DATA__', json.dumps(data, en
 E = lambda t: html.escape(str(t))
 def inl(t): return re.sub(r'(?<![*\w])\*([^*\n]+?)\*(?!\*)', r'<i>\1</i>', re.sub(r'\*\*\*?(.+?)\*\*\*?', r'<b>\1</b>', E(t)))
 def md(t):
-    out, ul = [], False
+    out, ul, tb = [], False, []
+    def flush_tb():
+        if tb:
+            rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb if not re.match(r'^\s*\|[\s:|-]+\|\s*$', r)]
+            out.append('<table>' + ''.join('<tr>' + ''.join(f'<{"th" if i == 0 else "td"}>{inl(c)}</{"th" if i == 0 else "td"}>' for c in r) + '</tr>' for i, r in enumerate(rows)) + '</table>')
+            tb.clear()
     for L in str(t).split('\n'):
         L = L.rstrip()
+        if L.lstrip().startswith('|'):
+            if ul: out.append('</ul>'); ul = False
+            tb.append(L); continue
+        flush_tb()
         if re.match(r'^\s*[-*] ', L):
             if not ul: out.append('<ul>'); ul = True
             out.append('<li>' + inl(re.sub(r'^\s*[-*] ', '', L)) + '</li>')
         else:
             if ul: out.append('</ul>'); ul = False
             if L.strip(): out.append('<p>' + inl(L) + '</p>')
+    flush_tb()
     if ul: out.append('</ul>')
     return ''.join(out)
 LET = 'ABCDE'
@@ -93,7 +103,7 @@ ol.ch{margin:0 0 4pt;padding-left:0;list-style:none}ol.ch li{margin:1pt 0}
 .ans .k{font-weight:700;color:#3d7a17}.lab{font-weight:700;font-size:9pt;color:#3d7a17;margin:5pt 0 1pt}
 .fix{background:#fdecea;color:#8a2a22;border-radius:4pt;padding:3pt 6pt;margin-top:4pt}
 .ans ul{margin:1pt 0 1pt 14pt;padding:0}.ans p{margin:1pt 0}.pearl{font-style:normal;background:#fff3b0;padding:2pt 5pt;border-radius:4pt;display:inline-block;margin-top:4pt}
-.small{font-size:8.5pt;color:#6b7268}\n.figs{display:flex;flex-wrap:wrap;gap:6pt;margin:3pt 0}.figs figure{margin:0;flex:0 1 46%}.figs img{max-width:100%;max-height:60mm;border-radius:4pt;display:block}.figs.big figure{flex:1 1 100%}.figs.big img{max-height:110mm}.figs figcaption{font-size:8pt;color:#6b7268}'''
+.small{font-size:8.5pt;color:#6b7268}\ntable{border-collapse:collapse;margin:3pt 0;font-size:9pt}td,th{border:1px solid #d3d8cd;padding:2pt 5pt;text-align:left;vertical-align:top}th{background:#eff0ec}\n.figs{display:flex;flex-wrap:wrap;gap:6pt;margin:3pt 0}.figs figure{margin:0;flex:0 1 46%}.figs img{max-width:100%;max-height:60mm;border-radius:4pt;display:block}.figs.big figure{flex:1 1 100%}.figs.big img{max-height:110mm}.figs figcaption{font-size:8pt;color:#6b7268}'''
 def doc(title, intro, body):
     return (f'<!doctype html><html lang="th"><meta charset="utf-8"><title>{E(title)}</title>'
             '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap">'
@@ -133,6 +143,7 @@ b1.append(f'<h2>ข้อสอบมีรูป<small>{len(pics)} ข้อ �
 b1 += [picblock(p) for p in pics]
 intro1 = (f'<p>ข้อสอบเก่าจากโพย MED28–MED35 ในคลัง MED421 Ward Drill {sum(len(s["one"]) for s in sets)} แก่น แก่นละ 1 ข้อ แยกตามระบบ '
           'เรียงจากแก่นที่ออกหลายรุ่นก่อน ทุกข้อบอกรุ่นที่แก่นนั้นเคยออก เฉลยมี "เนื้อหาที่เกี่ยวข้องที่ต้องรู้" ซึ่งรวมมุมที่ข้ออื่นในแก่นเคยถาม และ "ข้ออื่นในแก่นนี้" ไว้ทวนเร็ว</p>'
+          '<p>แก่นที่มีรูปจากข้อสอบจริง MED35 แนบรูปไว้ในเฉลย และท้ายเล่มรวมข้อสอบมีรูปทั้ง 24 ข้อ ทุกส่วนผ่านการตรวจความถูกต้องทางการแพทย์อีกรอบ จุดที่ต่างจากโพยเดิมมีกล่องแดงกำกับ</p>'
           '<p>เฉลยอยู่ใต้แต่ละข้อ ถ้าจะทำเป็นข้อสอบให้ปิดกล่องเฉลยไว้ก่อน</p>')
 open(f'{ROOT}/print_one.html', 'w').write(doc('แก่นละ 1 ข้อ · MED421', intro1, ''.join(b1)))
 b2 = []
