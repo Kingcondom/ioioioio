@@ -121,6 +121,16 @@ input{flex:1 1 200px;min-width:0}
   </section>
 
   <section class="card">
+    <h2>เทียบกับเกณฑ์ NL 2567</h2>
+    <p class="sub">รายการโรคใน ข.2.3 (โรคตามระบบ) และ ข.2.2 (ภาวะฉุกเฉิน) ของประกาศแพทยสภา เทียบกับแก่นโพยทั้งหมด ตัดเรื่องศัลย์ สูติ เด็ก ตา หูคอจมูก และจิตเวชออก</p>
+    <div class="stats" id="nlStats"></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>โพยมีแก่นตรง</span><span><i style="background:var(--rep)"></i>แตะแค่บางส่วน</span><span><i style="background:var(--new)"></i>ไม่เคยออกในโพย</span></div>
+    <div class="controls"><select id="nlF" aria-label="แสดง"><option value="NP">เฉพาะที่ยังขาด (ไม่เคยออก + แตะบางส่วน)</option><option value="N">เฉพาะที่ไม่เคยออก</option><option value="YNP">ทั้งหมด</option></select></div>
+    <div id="nlList"></div>
+    <p class="note">กลุ่ม 1 = ภาวะฉุกเฉิน กลุ่ม 2 = ต้องวินิจฉัยและรักษาได้เอง กลุ่ม 3 = วินิจฉัยแยกโรคและส่งต่อได้ ตัดสินจากชื่อแก่นร่วมกับค้นคำในโจทย์และคำตอบของข้อสอบเก่าทุกข้อ</p>
+  </section>
+
+  <section class="card">
     <h3>ข้อควรรู้ก่อนใช้</h3>
     <ol class="note">
       <li>นับเฉพาะส่วน "คลังข้อสอบเก่า" ที่เรียบเรียงจากโพย ไม่รวม MCQ ที่แต่งใหม่และชุด mock<span id="noYear"></span></li>
@@ -198,7 +208,26 @@ function renderAll(){
 }
 ['fSys','fSort','fQ'].forEach(id=>$(id).addEventListener('input',renderAll));
 renderAll();
+const NLC = __NLC__;
+if(NLC.length){
+  const inS=NLC.filter(r=>r.st!=='X'), cnt=st=>inS.filter(r=>r.st===st).length;
+  const g2=inS.filter(r=>r.grp==='2'), em=inS.filter(r=>r.grp==='1');
+  $('nlStats').innerHTML=[[`${cnt('Y')}/${inS.length}`,'หัวข้อที่โพยมีแก่นตรง'],[cnt('P'),'แตะแค่บางส่วน'],[cnt('N'),'ไม่เคยออกในโพย'],
+    [`${g2.filter(r=>r.st==='Y').length}/${g2.length}`,'กลุ่ม 2 (ต้องรักษาเองได้) ที่ครอบคลุม'],[`${em.filter(r=>r.st==='Y').length}/${em.length}`,'ภาวะฉุกเฉินที่ครอบคลุม']]
+    .map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('');
+  const lab={Y:'มีแก่นตรง',P:'แตะบางส่วน',N:'ไม่เคยออก'}, col={Y:'var(--accent)',P:'var(--rep)',N:'var(--new)'};
+  function renderNL(){
+    const f=$('nlF').value, secs=[...new Set(inS.map(r=>r.sec))];
+    $('nlList').innerHTML=secs.map(sc=>{const L=inS.filter(r=>r.sec===sc&&f.includes(r.st));if(!L.length)return '';
+      const all=inS.filter(r=>r.sec===sc),y=all.filter(r=>r.st==='Y').length;
+      return `<details${f!=='YNP'?' open':''}><summary><span class="t">${esc(sc)}</span><span class="meta"><span class="badge">ครอบคลุม ${y}/${all.length}</span><span class="badge n">${L.length}</span></span></summary>
+      <ol class="items">${L.map(r=>`<li><span class="q"><span class="badge" style="background:${col[r.st]};color:#fff">${lab[r.st]}</span> ${esc(r.name)} <span class="y">กลุ่ม ${r.grp}</span></span>${r.note?`<span class="id">${esc(r.note)}</span>`:''}</li>`).join('')}</ol></details>`}).join('');
+  }
+  $('nlF').addEventListener('input',renderNL); renderNL();
+}
 </script>
 '''
-open(os.path.join(ROOT, 'old_themes.html'), 'w').write(html.replace('__DATA__', json.dumps(d, ensure_ascii=False)))
+nlp = os.path.join(ROOT, 'nl_coverage.json')
+nlc = json.load(open(nlp)) if os.path.exists(nlp) else []
+open(os.path.join(ROOT, 'old_themes.html'), 'w').write(html.replace('__DATA__', json.dumps(d, ensure_ascii=False)).replace('__NLC__', json.dumps(nlc, ensure_ascii=False)))
 print('ok')
