@@ -19,6 +19,16 @@ for s in LABEL:
     tmap[s] = json.load(open(f'{tdir}/{s}.json'))
     for t in tmap[s]:
         themes.append({'system': LABEL[s], 'theme': t['theme'], 'ids': t['ids']})
+# แก่นชื่อเดียวกันข้ามระบบ = แก่นเดียวกัน (รวมข้อ) และรวมแก่นที่ระบุใน merge.json (ชื่อปลายทาง: [ชื่อที่ยุบเข้า])
+mfile = f'{tdir}/merge.json'
+alias = {o: k for k, v in (json.load(open(mfile)).items() if os.path.exists(mfile) else []) for o in v}
+merged = {}
+for t in themes:
+    name = alias.get(t['theme'], t['theme'])
+    m = merged.setdefault(name, {'system': [], 'theme': name, 'ids': []})
+    if t['system'] not in m['system']: m['system'].append(t['system'])
+    m['ids'] += t['ids']
+themes = [dict(m, system=' + '.join(m['system'])) for m in merged.values()]
 seen = collections.Counter(i for t in themes for i in t['ids'])
 dup = [i for i, c in seen.items() if c > 1]; miss = sorted(set(items) - set(seen)); extra = sorted(set(seen) - set(items))
 assert not dup and not extra, (dup[:10], extra[:10])
@@ -28,7 +38,7 @@ for t in themes:
     its = [items[i] for i in t['ids']]
     yrs = collections.Counter(y for it in its for y in it['years'])
     out_t.append({'system': t['system'], 'theme': t['theme'], 'n': len(its), 'years': dict(sorted(yrs.items())),
-                  'first': min(yrs) if yrs else 99,
+                  'first': min(yrs) if yrs else None,
                   'items': [{'id': it['id'], 'lec': it['lec'], 'years': it['years'], 'q': it['q'],
                              'a': it['choices'][it['answer']] if 'choices' in it else it.get('a', '')} for it in its]})
 YEARS = sorted({y for x in items.values() for y in x['years']})

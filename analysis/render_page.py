@@ -18,7 +18,7 @@ html = r'''<title>แก่นโพย MED421</title>
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11161d;--surface:#1a212b;--ink:#e6ebf2;--muted:#9aa6b6;--line:#2c3644;--accent:#3fb8a9;--accent-soft:#2a6f68;--new:#f08a4b;--rep:#7d9cc4;--chip:#232c38;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#11161d;--surface:#1a212b;--ink:#e6ebf2;--muted:#9aa6b6;--line:#2c3644;--accent:#3fb8a9;--accent-soft:#2a6f68;--new:#f08a4b;--rep:#7d9cc4;--chip:#232c38;color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--f)}
-.wrap{max-width:860px;margin:0 auto;padding-block:var(--s-5) var(--s-7);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:var(--s-5)}
+.wrap{max-width:860px;margin:0 auto;grid-template-columns:minmax(0,1fr);padding-block:var(--s-5) var(--s-7);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:var(--s-5)}
 h1{font-size:30px;line-height:1.3;font-weight:600;margin:0;text-wrap:balance}
 h2{font-size:24px;line-height:1.35;font-weight:600;margin:0;text-wrap:balance}
 h3{font-size:18px;line-height:1.45;font-weight:600;margin:0}
@@ -154,11 +154,11 @@ const py = Object.fromEntries(D.per_year.map(p=>[p.year,p]));
 const pct = y=>{const p=py[y];return Math.round((p.items-p.new_theme_items)/p.items*100)};
 const topT = [...D.themes].sort((a,b)=>Object.keys(b.years).length-Object.keys(a.years).length||b.n-a.n).slice(0,5);
 $('findings').innerHTML = [
-  `โจทย์ ${D.n_items} ข้อ ยุบเหลือ ${D.n_themes} แก่น เฉลี่ยแก่นละ ${(D.n_items/D.n_themes).toFixed(1)} ข้อ ครึ่งหนึ่งของแก่นมีตั้งแต่ 3 ข้อขึ้นไป`,
+  `โจทย์ ${D.n_items} ข้อ ยุบเหลือ ${D.n_themes} แก่น เฉลี่ยแก่นละ ${(D.n_items/D.n_themes).toFixed(1)} ข้อ แก่นที่มีตั้งแต่ 3 ข้อขึ้นไปมี ${multi.length} แก่น (${Math.round(multi.length/D.n_themes*100)}% ของแก่น)`,
   `แก่นที่ออกทนที่สุด: ${topT.map(t=>`${esc(t.theme.split(':')[0])} (${Object.keys(t.years).length} รุ่น)`).join(', ')}`,
   `ยิ่งรุ่นหลังยิ่งออกตามโพย: MED34 มี ${pct(34)}% และ MED35 มี ${pct(35)}% ของข้อที่อยู่ในแก่นที่เคยออกแล้ว`,
-  `แต่ข้อเดิมเป๊ะมีแค่ราวครึ่ง (MED35 ซ้ำข้อเดิม ${py[35].repeat_items}/${py[35].items} ข้อ) ที่เหลือคือแก่นเดิมแต่ถามมุมใหม่ อ่านโพยให้เข้าใจแก่น ไม่ใช่จำคำตอบ`,
-  `MED35 หลุดโพยจริงแค่ ${py[35].new_themes.length} แก่น: ${py[35].new_themes.map(t=>esc(t.theme)).join(', ')}`,
+  `แต่ข้อเดิมเป๊ะมีไม่ถึงครึ่ง (MED35 ซ้ำข้อเดิม ${py[35].repeat_items}/${py[35].items} ข้อ = ${Math.round(py[35].repeat_items/py[35].items*100)}%) ที่เหลือส่วนใหญ่เป็นแก่นเดิมแต่ถามมุมใหม่ ต้องอ่านโพยให้เข้าใจแก่น ท่องคำตอบอย่างเดียวไม่พอ`,
+  `MED35 หลุดโพยจริงแค่ ${py[35].new_themes.length} แก่น (${py[35].new_theme_items} ข้อ) ดูรายชื่อได้ในส่วน "หลุดโพยในแต่ละรุ่น"`,
 ].map(s=>`<li>${s}</li>`).join('');
 
 const maxItems = Math.max(...D.per_year.map(p=>p.items));
@@ -184,12 +184,12 @@ function renderYear(){
 $('yearTabs').addEventListener('click',e=>{const b=e.target.closest('[data-y]');if(b){curYear=+b.dataset.y;renderYear()}});
 renderYear();
 
-[...new Set(D.themes.map(t=>t.system))].forEach(s=>$('fSys').insertAdjacentHTML('beforeend',`<option>${s}</option>`));
+[...new Set(D.themes.flatMap(t=>t.system.split(' + ')))].forEach(s=>$('fSys').insertAdjacentHTML('beforeend',`<option>${s}</option>`));
 function renderAll(){
   const sys=$('fSys').value, q=$('fQ').value.trim().toLowerCase(), sort=$('fSort').value;
-  let L = D.themes.filter(t=>(!sys||t.system===sys)&&(!q||t.theme.toLowerCase().includes(q)||t.items.some(i=>(i.q+' '+i.a).toLowerCase().includes(q))));
+  let L = D.themes.filter(t=>(!sys||t.system.split(' + ').includes(sys))&&(!q||t.theme.toLowerCase().includes(q)||t.items.some(i=>(i.q+' '+i.a).toLowerCase().includes(q))));
   const ny=t=>Object.keys(t.years).length;
-  L.sort(sort==='n'?(a,b)=>b.n-a.n||ny(b)-ny(a):sort==='first'?(a,b)=>b.first-a.first||b.n-a.n:(a,b)=>ny(b)-ny(a)||b.n-a.n);
+  L.sort(sort==='n'?(a,b)=>b.n-a.n||ny(b)-ny(a):sort==='first'?(a,b)=>(b.first||0)-(a.first||0)||b.n-a.n:(a,b)=>ny(b)-ny(a)||b.n-a.n);
   $('allCount').textContent = `แสดง ${L.length} แก่น ${L.reduce((a,t)=>a+t.n,0)} ข้อ`;
   $('allList').innerHTML = L.length ? L.map(t=>`<details><summary><span style="display:grid;gap:var(--s-1)"><span class="t">${esc(t.theme)}</span>
      <span class="ruler" aria-label="ออกใน ${Object.keys(t.years).map(y=>'MED'+y).join(', ')}">${YEARS.map(y=>`<span class="${t.years[y]?'on':''}" title="MED${y}"></span>`).join('')}</span></span>

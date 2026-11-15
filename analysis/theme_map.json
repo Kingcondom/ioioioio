@@ -1,0 +1,3020 @@
+{
+ "cardio": [
+  {
+   "theme": "Pericarditis: วินิจฉัยจากท่าโน้มตัว + ECG ST ยกทุก lead / PR กด",
+   "ids": [
+    "C-OLD-01",
+    "C-OLD-03",
+    "C-OLD-04",
+    "C-OLD-14",
+    "C-OLD-108"
+   ]
+  },
+  {
+   "theme": "Pericarditis: รักษาด้วย NSAID/aspirin + colchicine",
+   "ids": [
+    "C-OLD-02"
+   ]
+  },
+  {
+   "theme": "Cardiac tamponade: Beck triad, pulsus paradoxus, electrical alternans → pericardiocentesis",
+   "ids": [
+    "C-OLD-05",
+    "C-OLD-07",
+    "C-OLD-08",
+    "C-OLD-09",
+    "C-OLD-12",
+    "C-OLD-15",
+    "PP30-CAR-049",
+    "PP31-CAR-058"
+   ]
+  },
+  {
+   "theme": "จำแนกชนิด shock และ hemodynamics (JVP, SVR)",
+   "ids": [
+    "C-OLD-06",
+    "C-OLD-18",
+    "C-OLD-19",
+    "C-OLD-20",
+    "C-OLD-23",
+    "C-OLD-28",
+    "C-OLD-32"
+   ]
+  },
+  {
+   "theme": "ECG บอกตำแหน่ง STEMI (ผนัง/หลอดเลือด, right-sided lead)",
+   "ids": [
+    "C-OLD-10",
+    "C-OLD-42",
+    "C-OLD-43",
+    "C-OLD-51",
+    "C-OLD-54",
+    "C-OLD-104",
+    "PP29-CAR-057",
+    "PP33-CAR-021"
+   ]
+  },
+  {
+   "theme": "Myocarditis: สาเหตุส่วนใหญ่คือไวรัส",
+   "ids": [
+    "C-OLD-11"
+   ]
+  },
+  {
+   "theme": "Doxorubicin cardiomyopathy",
+   "ids": [
+    "C-OLD-13"
+   ]
+  },
+  {
+   "theme": "Constrictive pericarditis ต่างจาก tamponade",
+   "ids": [
+    "C-OLD-16"
+   ]
+  },
+  {
+   "theme": "Pericardial effusion: TB (ADA สูง) vs มะเร็ง",
+   "ids": [
+    "C-OLD-17"
+   ]
+  },
+  {
+   "theme": "Tachyarrhythmia ไม่เสถียร → synchronized cardioversion / defibrillation",
+   "ids": [
+    "C-OLD-21",
+    "C-OLD-70",
+    "C-OLD-101",
+    "C-OLD-102"
+   ]
+  },
+  {
+   "theme": "AF กับ stroke: CHA2DS2-VASc, MS + AF → warfarin",
+   "ids": [
+    "C-OLD-22",
+    "C-OLD-56",
+    "C-OLD-65",
+    "C-OLD-66"
+   ]
+  },
+  {
+   "theme": "Anaphylaxis: type I, IM adrenaline, พก auto-injector",
+   "ids": [
+    "C-OLD-24",
+    "C-OLD-25",
+    "C-OLD-26"
+   ]
+  },
+  {
+   "theme": "ขาดน้ำ/shock ± Na ต่ำ → 0.9% NSS",
+   "ids": [
+    "C-OLD-27",
+    "C-OLD-29"
+   ]
+  },
+  {
+   "theme": "Vasovagal ระหว่างเจาะน้ำในช่องปอด",
+   "ids": [
+    "C-OLD-30"
+   ]
+  },
+  {
+   "theme": "Shock liver (ischemic hepatitis)",
+   "ids": [
+    "C-OLD-31"
+   ]
+  },
+  {
+   "theme": "STEMI reperfusion: primary PCI vs fibrinolysis, เกณฑ์สำเร็จ",
+   "ids": [
+    "C-OLD-33",
+    "C-OLD-34",
+    "C-OLD-50",
+    "C-OLD-52"
+   ]
+  },
+  {
+   "theme": "กลไก ischemia: plaque rupture, fixed stenosis, microvascular",
+   "ids": [
+    "C-OLD-35",
+    "C-OLD-40",
+    "C-OLD-41"
+   ]
+  },
+  {
+   "theme": "ACS spectrum: stable angina / UA / NSTEMI, troponin ซ้ำ, high-risk",
+   "ids": [
+    "C-OLD-36",
+    "C-OLD-37",
+    "C-OLD-38",
+    "C-OLD-39",
+    "C-OLD-105"
+   ]
+  },
+  {
+   "theme": "Mechanical complication หลัง MI (VSR)",
+   "ids": [
+    "C-OLD-44",
+    "C-OLD-81"
+   ]
+  },
+  {
+   "theme": "ไขมัน/statin/FH",
+   "ids": [
+    "C-OLD-45",
+    "C-OLD-46",
+    "C-OLD-47"
+   ]
+  },
+  {
+   "theme": "เจ็บแน่นหน้าอก → ตรวจแรกคือ ECG 12 lead",
+   "ids": [
+    "C-OLD-48",
+    "PP35-CAR-031",
+    "PP30-CAR-002"
+   ]
+  },
+  {
+   "theme": "Stable angina: ห้าม short-acting nifedipine",
+   "ids": [
+    "C-OLD-49"
+   ]
+  },
+  {
+   "theme": "ลำดับการอ่าน/รายงาน ECG",
+   "ids": [
+    "C-OLD-53",
+    "C-OLD-106"
+   ]
+  },
+  {
+   "theme": "Secondary prevention หลัง MI",
+   "ids": [
+    "C-OLD-55"
+   ]
+  },
+  {
+   "theme": "ยาคุม rate/rhythm ของ AF",
+   "ids": [
+    "C-OLD-57",
+    "C-OLD-58"
+   ]
+  },
+  {
+   "theme": "จำ AF ให้ได้: pulse deficit, ECG, RVR → HF/syncope",
+   "ids": [
+    "C-OLD-59",
+    "C-OLD-67",
+    "C-OLD-68",
+    "C-OLD-71"
+   ]
+  },
+  {
+   "theme": "Bradyarrhythmia: AV block ทุกดีกรี, SSS → pacing",
+   "ids": [
+    "C-OLD-60",
+    "C-OLD-95",
+    "C-OLD-96",
+    "C-OLD-97",
+    "C-OLD-98",
+    "C-OLD-99"
+   ]
+  },
+  {
+   "theme": "ต้นเหตุ tachyarrhythmia: thyrotoxicosis / thyroid storm / alcohol",
+   "ids": [
+    "C-OLD-61",
+    "C-OLD-62",
+    "C-OLD-63",
+    "C-OLD-64",
+    "C-OLD-69"
+   ]
+  },
+  {
+   "theme": "Mitral stenosis: เสียง, rheumatic, echo",
+   "ids": [
+    "C-OLD-72",
+    "C-OLD-73",
+    "C-OLD-74",
+    "C-OLD-92",
+    "C-OLD-93",
+    "C-OLD-94"
+   ]
+  },
+  {
+   "theme": "Aortic regurgitation (รวม Marfan)",
+   "ids": [
+    "C-OLD-75",
+    "C-OLD-76",
+    "PP30-CAR-050",
+    "PP34-CAR-007"
+   ]
+  },
+  {
+   "theme": "Aortic stenosis",
+   "ids": [
+    "C-OLD-77",
+    "C-OLD-78",
+    "PP30-CAR-052"
+   ]
+  },
+  {
+   "theme": "MR / MVP",
+   "ids": [
+    "C-OLD-79",
+    "C-OLD-80",
+    "PP35-CAR-042",
+    "PP35-CAR-043"
+   ]
+  },
+  {
+   "theme": "Congenital shunt murmur (PDA / ASD)",
+   "ids": [
+    "C-OLD-82",
+    "C-OLD-91"
+   ]
+  },
+  {
+   "theme": "Pulmonary hypertension + right HF",
+   "ids": [
+    "C-OLD-83"
+   ]
+  },
+  {
+   "theme": "Acute rheumatic fever (ASO, Jones)",
+   "ids": [
+    "C-OLD-84",
+    "C-OLD-85"
+   ]
+  },
+  {
+   "theme": "Infective endocarditis: hemoculture, signs, ยา, prophylaxis",
+   "ids": [
+    "C-OLD-86",
+    "C-OLD-87",
+    "C-OLD-88",
+    "C-OLD-89",
+    "C-OLD-90",
+    "PP30-CAR-053",
+    "PP31-CAR-053",
+    "PP32-CAR-034"
+   ]
+  },
+  {
+   "theme": "SVT → adenosine",
+   "ids": [
+    "C-OLD-100"
+   ]
+  },
+  {
+   "theme": "HyperK: ECG T สูงแหลม → Ca gluconate, ยาลด K",
+   "ids": [
+    "C-OLD-103",
+    "C-OLD-107",
+    "C-OLD-109"
+   ]
+  },
+  {
+   "theme": "วินิจฉัย HT: white coat / resistant / secondary / lifestyle",
+   "ids": [
+    "C-OLD-110",
+    "C-OLD-111",
+    "C-OLD-112",
+    "C-OLD-121",
+    "PP28-CAR-046",
+    "PP30-CAR-047",
+    "PP30-CAR-048"
+   ]
+  },
+  {
+   "theme": "เลือกยาลดความดันตามสถานการณ์ (RAS, ตั้งครรภ์, CCB บวม, dissection)",
+   "ids": [
+    "C-OLD-113",
+    "C-OLD-114",
+    "C-OLD-124",
+    "C-OLD-127",
+    "PP30-CAR-055",
+    "PP31-CAR-023"
+   ]
+  },
+  {
+   "theme": "HFrEF: GDMT (ACEI/ARNI + BB …)",
+   "ids": [
+    "C-OLD-115",
+    "C-OLD-116"
+   ]
+  },
+  {
+   "theme": "Acute LHF / pulmonary edema: อาการ กลไก CXR",
+   "ids": [
+    "C-OLD-117",
+    "C-OLD-118",
+    "C-OLD-119",
+    "C-OLD-129"
+   ]
+  },
+  {
+   "theme": "HF พื้นฐาน: NYHA, precipitant, JVP แยกจากตับแข็ง",
+   "ids": [
+    "C-OLD-120",
+    "C-OLD-122",
+    "C-OLD-123"
+   ]
+  },
+  {
+   "theme": "Cardiorenal / high-output state",
+   "ids": [
+    "C-OLD-125",
+    "C-OLD-126"
+   ]
+  },
+  {
+   "theme": "COPD hypercapnic respiratory failure: O2 เกิน, NIV",
+   "ids": [
+    "C-OLD-128"
+   ]
+  },
+  {
+   "theme": "Diabetic nephropathy: hyperfiltration, UACR, SGLT2i, ACEI",
+   "ids": [
+    "C-OLD-130"
+   ]
+  },
+  {
+   "theme": "Syncope: vasovagal / orthostatic hypotension",
+   "ids": [
+    "PP31-CAR-018",
+    "PP29-CAR-122"
+   ]
+  },
+  {
+   "theme": "Innocent (functional) murmur: ลักษณะ",
+   "ids": [
+    "PP30-CAR-051"
+   ]
+  },
+  {
+   "theme": "Digoxin toxicity: กลไก Na/K-ATPase → arrhythmia",
+   "ids": [
+    "PP30-CAR-054"
+   ]
+  },
+  {
+   "theme": "Atrial flutter: ECG sawtooth, variable AV conduction",
+   "ids": [
+    "PPSAQ-CAR-056"
+   ]
+  },
+  {
+   "theme": "WPW: delta wave/short PR, สัมพันธ์ Ebstein anomaly",
+   "ids": [
+    "PP31-CAR-020",
+    "PP31-CAR-024",
+    "PP35-CAR-039"
+   ]
+  },
+  {
+   "theme": "วัดความดัน: ขนาด cuff / เทคนิคที่ถูกต้อง",
+   "ids": [
+    "PP31-CAR-005"
+   ]
+  }
+ ],
+ "nephro": [
+  {
+   "theme": "Hypercalcemia: PHPT, มะเร็ง, myeloma, ลำดับการรักษา",
+   "ids": [
+    "N-OLD-001",
+    "N-OLD-002",
+    "N-OLD-003",
+    "N-OLD-004",
+    "N-OLD-013",
+    "N-OLD-014",
+    "PP30-NEP-003"
+   ]
+  },
+  {
+   "theme": "Tumor lysis syndrome",
+   "ids": [
+    "N-OLD-005",
+    "N-OLD-006",
+    "N-OLD-111"
+   ]
+  },
+  {
+   "theme": "Hypocalcemia: สาเหตุ",
+   "ids": [
+    "N-OLD-007",
+    "N-OLD-008",
+    "N-OLD-009",
+    "N-OLD-012"
+   ]
+  },
+  {
+   "theme": "Magnesium และ hypoK ดื้อ (amphotericin)",
+   "ids": [
+    "N-OLD-010",
+    "N-OLD-011",
+    "N-OLD-015"
+   ]
+  },
+  {
+   "theme": "Nephrotic syndrome: นิยาม/ตรวจปัสสาวะ",
+   "ids": [
+    "N-OLD-016",
+    "N-OLD-017",
+    "N-OLD-018",
+    "N-OLD-032",
+    "N-OLD-075"
+   ]
+  },
+  {
+   "theme": "Nephrotic: ภาวะแทรกซ้อน VTE",
+   "ids": [
+    "N-OLD-019"
+   ]
+  },
+  {
+   "theme": "Glomerular disease ตามบริบท (MN-มะเร็ง, MCD, HIVAN, heroin, myeloma)",
+   "ids": [
+    "N-OLD-020",
+    "N-OLD-021",
+    "N-OLD-023",
+    "N-OLD-024",
+    "N-OLD-025"
+   ]
+  },
+  {
+   "theme": "Drug-induced AIN (sterile pyuria, WBC cast)",
+   "ids": [
+    "N-OLD-022",
+    "N-OLD-114",
+    "N-OLD-120"
+   ]
+  },
+  {
+   "theme": "Urine cast บอกตำแหน่ง (RBC/WBC/muddy brown)",
+   "ids": [
+    "N-OLD-026",
+    "N-OLD-072",
+    "N-OLD-073",
+    "N-OLD-074"
+   ]
+  },
+  {
+   "theme": "Hematuria: glomerular vs urologic",
+   "ids": [
+    "N-OLD-027",
+    "N-OLD-081",
+    "N-OLD-082"
+   ]
+  },
+  {
+   "theme": "ชนิด proteinuria (glomerular/functional/orthostatic)",
+   "ids": [
+    "N-OLD-028",
+    "N-OLD-078",
+    "N-OLD-079"
+   ]
+  },
+  {
+   "theme": "Acute nephritic: PSGN vs IgA",
+   "ids": [
+    "N-OLD-029",
+    "N-OLD-030",
+    "N-OLD-033"
+   ]
+  },
+  {
+   "theme": "Lupus nephritis",
+   "ids": [
+    "N-OLD-031",
+    "N-OLD-076",
+    "N-OLD-085",
+    "N-OLD-086"
+   ]
+  },
+  {
+   "theme": "Anti-GBM (Goodpasture): แอนติเจน α3 chain ของ type IV collagen",
+   "ids": [
+    "PP30-NEP-076"
+   ]
+  },
+  {
+   "theme": "CKD vs AKI: ไตเล็ก = เรื้อรัง",
+   "ids": [
+    "N-OLD-034",
+    "N-OLD-035",
+    "N-OLD-036",
+    "N-OLD-037"
+   ]
+  },
+  {
+   "theme": "eGFR / Cockcroft-Gault",
+   "ids": [
+    "N-OLD-038",
+    "N-OLD-047"
+   ]
+  },
+  {
+   "theme": "Diabetic nephropathy: hyperfiltration, UACR, SGLT2i, ACEI",
+   "ids": [
+    "N-OLD-039",
+    "N-OLD-040",
+    "N-OLD-041",
+    "N-OLD-042",
+    "PP30-NEP-077"
+   ]
+  },
+  {
+   "theme": "Metformin กับ eGFR",
+   "ids": [
+    "N-OLD-043"
+   ]
+  },
+  {
+   "theme": "Crystal arthritis: gout / CPPD / BCP",
+   "ids": [
+    "N-OLD-044"
+   ]
+  },
+  {
+   "theme": "NSAID กับไต",
+   "ids": [
+    "N-OLD-045",
+    "N-OLD-113"
+   ]
+  },
+  {
+   "theme": "Uremia และข้อบ่งชี้ dialysis",
+   "ids": [
+    "N-OLD-046",
+    "N-OLD-048",
+    "N-OLD-124",
+    "PP31-NEP-075"
+   ]
+  },
+  {
+   "theme": "Cardiorenal / high-output state",
+   "ids": [
+    "N-OLD-049",
+    "N-OLD-116",
+    "N-OLD-117"
+   ]
+  },
+  {
+   "theme": "ขาดน้ำ/shock ± Na ต่ำ → 0.9% NSS",
+   "ids": [
+    "N-OLD-050",
+    "N-OLD-053",
+    "N-OLD-055",
+    "PP31-NEP-027"
+   ]
+  },
+  {
+   "theme": "Hyponatremia: approach และแก้อย่างปลอดภัย (ODS, thiazide, pseudo)",
+   "ids": [
+    "N-OLD-051",
+    "N-OLD-052",
+    "N-OLD-054",
+    "N-OLD-056",
+    "N-OLD-068"
+   ]
+  },
+  {
+   "theme": "Small cell lung cancer → SIADH",
+   "ids": [
+    "N-OLD-057"
+   ]
+  },
+  {
+   "theme": "Adrenal insufficiency",
+   "ids": [
+    "N-OLD-058",
+    "N-OLD-059"
+   ]
+  },
+  {
+   "theme": "Periodic paralysis / K shift (thyrotoxic)",
+   "ids": [
+    "N-OLD-060",
+    "N-OLD-061",
+    "N-OLD-062",
+    "N-OLD-066",
+    "N-OLD-071"
+   ]
+  },
+  {
+   "theme": "Electrolyte กับอาการชัก",
+   "ids": [
+    "N-OLD-063",
+    "PP31-NEP-059"
+   ]
+  },
+  {
+   "theme": "HyperK: ECG T สูงแหลม → Ca gluconate, ยาลด K",
+   "ids": [
+    "N-OLD-064",
+    "N-OLD-065",
+    "N-OLD-069",
+    "PP31-NEP-024"
+   ]
+  },
+  {
+   "theme": "HypoK อื่น ๆ (leptospirosis, ECG U wave)",
+   "ids": [
+    "N-OLD-067",
+    "N-OLD-070",
+    "PP30-NEP-075"
+   ]
+  },
+  {
+   "theme": "PseudohyperK: เกล็ดเลือดสูง / hemolysis → ECG ก่อน",
+   "ids": [
+    "PP30-NEP-073",
+    "PP31-NEP-070"
+   ]
+  },
+  {
+   "theme": "Hypernatremia: ผู้สูงอายุติดเตียงดื่มน้ำไม่พอ",
+   "ids": [
+    "PP30-NEP-074",
+    "PP31-NEP-023"
+   ]
+  },
+  {
+   "theme": "Fanconi syndrome",
+   "ids": [
+    "N-OLD-077"
+   ]
+  },
+  {
+   "theme": "นิ่วไต (calcium oxalate, struvite/Proteus, uric)",
+   "ids": [
+    "N-OLD-080",
+    "N-OLD-083",
+    "N-OLD-084",
+    "N-OLD-087",
+    "PP28-NEP-078",
+    "N-OLD-103"
+   ]
+  },
+  {
+   "theme": "Asymptomatic bacteriuria: รักษาเมื่อไร",
+   "ids": [
+    "N-OLD-088",
+    "N-OLD-089",
+    "N-OLD-100"
+   ]
+  },
+  {
+   "theme": "Simple cystitis (เกณฑ์ culture, ยาสั้น)",
+   "ids": [
+    "N-OLD-090",
+    "N-OLD-104"
+   ]
+  },
+  {
+   "theme": "UTI: เดาเชื้อจาก gram stain / สายสวน",
+   "ids": [
+    "N-OLD-091",
+    "N-OLD-093",
+    "N-OLD-099"
+   ]
+  },
+  {
+   "theme": "เบาหวานกับ UTI (รวม SGLT2i)",
+   "ids": [
+    "N-OLD-092",
+    "N-OLD-097"
+   ]
+  },
+  {
+   "theme": "UTI ซ้ำในผู้ชาย → ตรวจต่อมลูกหมาก",
+   "ids": [
+    "N-OLD-094"
+   ]
+  },
+  {
+   "theme": "Pyelonephritis ซับซ้อน (abscess, de-escalate, sepsis AKI)",
+   "ids": [
+    "N-OLD-095",
+    "N-OLD-096",
+    "N-OLD-118"
+   ]
+  },
+  {
+   "theme": "Cyclophosphamide hemorrhagic cystitis",
+   "ids": [
+    "N-OLD-098"
+   ]
+  },
+  {
+   "theme": "Purple urine bag syndrome",
+   "ids": [
+    "N-OLD-101"
+   ]
+  },
+  {
+   "theme": "Renal TB (sterile pyuria)",
+   "ids": [
+    "N-OLD-102"
+   ]
+  },
+  {
+   "theme": "Prerenal vs ATN (FENa, cast, กลไก)",
+   "ids": [
+    "N-OLD-105",
+    "N-OLD-106",
+    "N-OLD-107",
+    "N-OLD-108",
+    "N-OLD-115",
+    "N-OLD-119",
+    "PP31-NEP-050"
+   ]
+  },
+  {
+   "theme": "Rhabdomyolysis / statin myopathy (CK)",
+   "ids": [
+    "N-OLD-109",
+    "N-OLD-110",
+    "N-OLD-123"
+   ]
+  },
+  {
+   "theme": "Contrast-associated AKI",
+   "ids": [
+    "N-OLD-112",
+    "PP31-NEP-025"
+   ]
+  },
+  {
+   "theme": "Obstructive AKI (BPH)",
+   "ids": [
+    "N-OLD-121"
+   ]
+  },
+  {
+   "theme": "Lithium nephrogenic DI",
+   "ids": [
+    "N-OLD-122"
+   ]
+  },
+  {
+   "theme": "Diabetes insipidus: polyuria + Na สูง + urine osm ต่ำ",
+   "ids": [
+    "PPNA-NEP-079"
+   ]
+  },
+  {
+   "theme": "Methanol poisoning: osmolal gap สูง → fomepizole/ethanol",
+   "ids": [
+    "PP32-NEP-047"
+   ]
+  },
+  {
+   "theme": "ADPKD: ไตโตเป็นถุงน้ำสองข้าง + ประวัติครอบครัว",
+   "ids": [
+    "PP31-NEP-029"
+   ]
+  }
+ ],
+ "chest": [
+  {
+   "theme": "ผลข้างเคียงยา TB (INH, RIF, PZA, EMB)",
+   "ids": [
+    "CH-OLD-01",
+    "CH-OLD-02",
+    "CH-OLD-03",
+    "CH-OLD-04",
+    "CH-OLD-05",
+    "PP29-CHE-120",
+    "PP31-CHE-033",
+    "PP31-CHE-006"
+   ]
+  },
+  {
+   "theme": "TB: วินิจฉัย/โปรแกรม (culture, MDR, adherence, isolation, apex)",
+   "ids": [
+    "CH-OLD-06",
+    "CH-OLD-07",
+    "CH-OLD-08",
+    "CH-OLD-09",
+    "CH-OLD-10",
+    "PP33-CHE-010",
+    "PP32-CHE-038",
+    "PP32-CHE-046",
+    "PP35-CHE-041",
+    "PP32-CHE-060"
+   ]
+  },
+  {
+   "theme": "PCP ใน HIV / ผู้ได้ยากดภูมิ",
+   "ids": [
+    "CH-OLD-11",
+    "CH-OLD-22"
+   ]
+  },
+  {
+   "theme": "Drug-induced AIN (sterile pyuria, WBC cast)",
+   "ids": [
+    "CH-OLD-12"
+   ]
+  },
+  {
+   "theme": "Hyperventilation: respiratory alkalosis → ionized Ca ต่ำ (carpopedal spasm)",
+   "ids": [
+    "PP30-CHE-014"
+   ]
+  },
+  {
+   "theme": "อ่าน ABG",
+   "ids": [
+    "PP30-CHE-017",
+    "PP30-CHE-041",
+    "PP34-CHE-011",
+    "CH-OLD-13",
+    "CH-OLD-14",
+    "CH-OLD-15",
+    "CH-OLD-16",
+    "CH-OLD-21"
+   ]
+  },
+  {
+   "theme": "TB immunology: TNF-α คุม granuloma (anti-TNF → reactivation)",
+   "ids": [
+    "PP31-CHE-048"
+   ]
+  },
+  {
+   "theme": "Salicylate poisoning: HAGMA + respiratory alkalosis",
+   "ids": [
+    "PP34-CHE-001"
+   ]
+  },
+  {
+   "theme": "Hypoxemia physiology: shunt, A-a gradient, ARDS",
+   "ids": [
+    "PP34-CHE-023",
+    "PP31-CHE-032",
+    "CH-OLD-17",
+    "CH-OLD-18",
+    "CH-OLD-20"
+   ]
+  },
+  {
+   "theme": "Pleural fluid: Light criteria และสาเหตุ",
+   "ids": [
+    "CH-OLD-23",
+    "CH-OLD-24",
+    "CH-OLD-25",
+    "CH-OLD-26",
+    "CH-OLD-27",
+    "CH-OLD-34",
+    "CH-OLDP-001",
+    "CH-OLDP-002",
+    "PP29-CHE-044",
+    "PP29-CHE-121"
+   ]
+  },
+  {
+   "theme": "Pneumothorax (tension / iatrogenic)",
+   "ids": [
+    "CH-OLD-28",
+    "CH-OLD-29",
+    "PP31-CHE-063",
+    "PP34-CHE-004",
+    "PPSAQ-CHE-042"
+   ]
+  },
+  {
+   "theme": "Re-expansion pulmonary edema",
+   "ids": [
+    "CH-OLD-30"
+   ]
+  },
+  {
+   "theme": "Vasovagal ระหว่างเจาะน้ำในช่องปอด",
+   "ids": [
+    "CH-OLD-31"
+   ]
+  },
+  {
+   "theme": "COPD hypercapnic respiratory failure: O2 เกิน, NIV",
+   "ids": [
+    "CH-OLD-32",
+    "CH-OLD-19"
+   ]
+  },
+  {
+   "theme": "ตรวจร่างกาย pleural effusion",
+   "ids": [
+    "CH-OLD-33",
+    "PP33-CHE-011"
+   ]
+  },
+  {
+   "theme": "Airway ฉุกเฉิน: หมดสติหายใจตื้น → BVM + O2 แล้ว intubate",
+   "ids": [
+    "PP30-CHE-004"
+   ]
+  },
+  {
+   "theme": "Pulmonary embolism: เดาจากบริบท (post-op, ตั้งครรภ์+DVT) และ anticoagulation",
+   "ids": [
+    "PP30-CHE-027",
+    "PP29-CHE-045",
+    "PP31-CHE-001"
+   ]
+  },
+  {
+   "theme": "ARDS: lung-protective ventilation (Vt 6 mL/kg, Pplat ≤30)",
+   "ids": [
+    "PP31-CHE-051",
+    "PP31-CHE-016"
+   ]
+  },
+  {
+   "theme": "Occupational lung disease (silica, asbestos, mesothelioma, occupational asthma)",
+   "ids": [
+    "CH-OLD-35",
+    "CH-OLD-36",
+    "CH-OLD-37",
+    "CH-OLD-38",
+    "PP31-CHE-064"
+   ]
+  },
+  {
+   "theme": "CXR lobar pneumonia",
+   "ids": [
+    "CH-OLD-39",
+    "PPSAQ-CHE-040"
+   ]
+  },
+  {
+   "theme": "Lung cancer: SVC syndrome, มะเร็งที่สัมพันธ์บุหรี่",
+   "ids": [
+    "CH-OLD-40",
+    "CH-OLD-42"
+   ]
+  },
+  {
+   "theme": "Small cell lung cancer → SIADH",
+   "ids": [
+    "CH-OLD-41"
+   ]
+  },
+  {
+   "theme": "Mediastinal mass: anterior = 4T (thymoma, teratoma, thyroid, lymphoma)",
+   "ids": [
+    "PP30-CHE-142"
+   ]
+  },
+  {
+   "theme": "Pneumonia: เดาเชื้อจากเบาะแส",
+   "ids": [
+    "CH-OLD-43",
+    "CH-OLD-45",
+    "CH-OLD-46",
+    "CH-OLD-47",
+    "CH-OLD-56"
+   ]
+  },
+  {
+   "theme": "CAP severity → รักษา OPD",
+   "ids": [
+    "CH-OLD-44"
+   ]
+  },
+  {
+   "theme": "COPD: วินิจฉัยและรักษาระยะคงที่",
+   "ids": [
+    "CH-OLD-48",
+    "CH-OLD-49",
+    "CH-OLD-50",
+    "CH-OLD-51",
+    "PP28-CHE-039",
+    "PP31-CHE-057",
+    "PP35-CHE-065"
+   ]
+  },
+  {
+   "theme": "Asthma: วินิจฉัยและรักษา",
+   "ids": [
+    "CH-OLD-52",
+    "CH-OLD-53",
+    "CH-OLD-54",
+    "CH-OLD-55",
+    "PP31-CHE-041",
+    "PP35-CHE-036"
+   ]
+  },
+  {
+   "theme": "กลไก airflow limitation: COPD (เสีย elastic recoil) vs asthma (airway inflammation)",
+   "ids": [
+    "PP30-CHE-038",
+    "PP35-CHE-049"
+   ]
+  },
+  {
+   "theme": "กลไกติดเชื้อปอด: microaspiration, lung abscess จาก anaerobe",
+   "ids": [
+    "PP28-CHE-132",
+    "PP35-CHE-050"
+   ]
+  },
+  {
+   "theme": "Common cold: รักษาตามอาการ ไม่ให้ antibiotic",
+   "ids": [
+    "PP31-CHE-037"
+   ]
+  },
+  {
+   "theme": "CAP ใน รพ.: empirical ceftriaxone + macrolide, เกณฑ์เปลี่ยน IV → oral",
+   "ids": [
+    "PP31-CHE-073",
+    "PP32-CHE-063"
+   ]
+  }
+ ],
+ "neuro": [
+  {
+   "theme": "Acute ischemic stroke: NIHSS, rt-PA ในช่วงเวลา, endovascular, aspirin ป้องกันซ้ำ",
+   "ids": [
+    "NEU-OLDP-001",
+    "NEU-OLDP-011",
+    "NEU-OLDP-015",
+    "NEU-OLDP-016"
+   ]
+  },
+  {
+   "theme": "Stroke mechanism: cardioembolism จาก AF/flutter/valve, TOAST subtype",
+   "ids": [
+    "NEU-OLDP-007",
+    "NEU-OLDP-008",
+    "NEU-OLDP-012",
+    "NEU-OLDP-014",
+    "NEU-OLDP-010"
+   ]
+  },
+  {
+   "theme": "Stroke pathology: atherosclerosis, lacune (lipohyalinosis), hypertensive ICH",
+   "ids": [
+    "PP30-NEU-032",
+    "PP28-NEU-134",
+    "PP28-NEU-135"
+   ]
+  },
+  {
+   "theme": "Facial palsy: UMN vs LMN pattern, Bell palsy, Ramsay Hunt",
+   "ids": [
+    "NEU-OLDP-002",
+    "NEU-OLDP-003",
+    "NEU-OLDP-004",
+    "NEU-OLDP-036",
+    "PP35-NEU-033",
+    "PP31-NEU-017"
+   ]
+  },
+  {
+   "theme": "Aphasia: Broca vs Wernicke (ลักษณะ + ตำแหน่ง)",
+   "ids": [
+    "NEU-OLDP-009",
+    "NEU-OLDP-013",
+    "NEU-OLDP-055",
+    "PP30-NEU-031",
+    "PP32-NEU-028"
+   ]
+  },
+  {
+   "theme": "Localization: visual field defect, crossed sensory (pons), neglect (parietal)",
+   "ids": [
+    "NEU-OLDP-005",
+    "NEU-OLDP-006",
+    "NEU-OLDP-032",
+    "PP31-NEU-020"
+   ]
+  },
+  {
+   "theme": "Third nerve palsy: ptosis+diplopia, pupil-involving → PCom aneurysm",
+   "ids": [
+    "PP30-NEU-149",
+    "PP35-NEU-046"
+   ]
+  },
+  {
+   "theme": "Cerebellar hemorrhage/infarction: vertigo, ataxia, nystagmus ± stiff neck",
+   "ids": [
+    "PP35-NEU-034",
+    "PP29-NEU-037",
+    "PP31-NEU-043",
+    "PP33-NEU-004"
+   ]
+  },
+  {
+   "theme": "SAH: ปวดหัวรุนแรงทันที, stiff neck ไม่มีไข้, vasospasm",
+   "ids": [
+    "PP28-NEU-136",
+    "NEU-OLDP-051",
+    "NEU-OLDP-018"
+   ]
+  },
+  {
+   "theme": "Cerebral venous sinus thrombosis: OCP, headache, papilledema, seizure",
+   "ids": [
+    "PP34-NEU-003"
+   ]
+  },
+  {
+   "theme": "Tension-type headache: วินิจฉัย + amitriptyline ป้องกัน",
+   "ids": [
+    "NEU-OLDP-017",
+    "NEU-OLDP-033",
+    "PP31-NEU-021"
+   ]
+  },
+  {
+   "theme": "Migraine: aura, triptan abortive, propranolol prophylaxis",
+   "ids": [
+    "PP28-NEU-033",
+    "PP31-NEU-022",
+    "PP32-NEU-045",
+    "PP35-NEU-040"
+   ]
+  },
+  {
+   "theme": "Myasthenia gravis: ptosis+proximal weakness, test, pyridostigmine, thymectomy",
+   "ids": [
+    "NEU-OLDP-019",
+    "NEU-OLDP-031",
+    "NEU-OLDP-046",
+    "NEU-OLDP-052",
+    "PP30-NEU-011",
+    "PP31-NEU-022b"
+   ]
+  },
+  {
+   "theme": "Lambert-Eaton: proximal weakness ดีขึ้นหลังออกแรง, CMAP increment",
+   "ids": [
+    "PP30-NEU-009",
+    "PP30-NEU-010"
+   ]
+  },
+  {
+   "theme": "GBS: ascending weakness, albuminocytologic dissociation → IVIG",
+   "ids": [
+    "NEU-OLDP-020",
+    "NEU-OLDP-045",
+    "PP28-NEU-133"
+   ]
+  },
+  {
+   "theme": "Entrapment neuropathy: CTS, meralgia paresthetica, Morton neuroma",
+   "ids": [
+    "NEU-OLDP-021",
+    "PP30-NEU-020",
+    "PP30-NEU-021",
+    "PP30-NEU-026",
+    "PP35-NEU-032"
+   ]
+  },
+  {
+   "theme": "Diabetic polyneuropathy: distal symmetric sensory, axonal degeneration",
+   "ids": [
+    "NEU-OLDP-025",
+    "NEU-OLDP-062"
+   ]
+  },
+  {
+   "theme": "Lumbar spinal stenosis: neurogenic vs vascular claudication → MRI L-spine",
+   "ids": [
+    "PP35-NEU-047"
+   ]
+  },
+  {
+   "theme": "Wernicke encephalopathy: confusion, ophthalmoplegia, ataxia",
+   "ids": [
+    "NEU-OLDP-022"
+   ]
+  },
+  {
+   "theme": "Alcohol withdrawal / delirium tremens → benzodiazepine",
+   "ids": [
+    "NEU-OLDP-057",
+    "NEU-OLDP-060"
+   ]
+  },
+  {
+   "theme": "Restless legs syndrome: อาการและปัจจัย",
+   "ids": [
+    "NEU-OLDP-023"
+   ]
+  },
+  {
+   "theme": "Movement disorders: Parkinson (SNc), focal dystonia, tardive dyskinesia",
+   "ids": [
+    "NEU-OLDP-024",
+    "NEU-OLDP-026",
+    "PP30-NEU-036"
+   ]
+  },
+  {
+   "theme": "Vertigo: central vs peripheral, CPA tumor",
+   "ids": [
+    "NEU-OLDP-027",
+    "NEU-OLDP-053",
+    "NEU-OLDP-075"
+   ]
+  },
+  {
+   "theme": "Bacterial meningitis: Gram stain/เบาะแส → ceftriaxone (S. suis), Listeria → ampicillin",
+   "ids": [
+    "NEU-OLDP-028",
+    "NEU-OLDP-058",
+    "NEU-OLDP-059",
+    "NEU-OLDP-067",
+    "PP32-NEU-027",
+    "PP32-NEU-030"
+   ]
+  },
+  {
+   "theme": "Meningococcus & กลไก meningitis: purpura, การแพร่เชื้อ, hematogenous route",
+   "ids": [
+    "NEU-OLDP-029",
+    "PP34-NEU-018",
+    "PP30-NEU-143"
+   ]
+  },
+  {
+   "theme": "HSV encephalitis: frontotemporal lesion, CSF RBC/lymphocyte, PCR → IV acyclovir",
+   "ids": [
+    "NEU-OLDP-041",
+    "NEU-OLDP-042",
+    "NEU-OLDP-043",
+    "NEU-OLDP-048",
+    "NEU-OLDP-049",
+    "NEU-OLDP-050",
+    "NEU-OLDP-063",
+    "PP34-NEU-026"
+   ]
+  },
+  {
+   "theme": "Lumbar puncture: CT ก่อน LP, ข้อห้าม (mass/midline shift)",
+   "ids": [
+    "NEU-OLDP-038",
+    "NEU-OLDP-047",
+    "NEU-OLDP-061",
+    "NEU-OLDP-065",
+    "NEU-OLDP-068"
+   ]
+  },
+  {
+   "theme": "TB meningitis: CSF lymphocyte, protein สูง, glucose ต่ำ",
+   "ids": [
+    "NEU-OLDP-066"
+   ]
+  },
+  {
+   "theme": "Eosinophilic meningitis: กินหอยโข่งดิบ → Angiostrongylus",
+   "ids": [
+    "PP28-NEU-030",
+    "PP31-NEU-028",
+    "PP35-NEU-067"
+   ]
+  },
+  {
+   "theme": "GCS scoring / ระดับ coma",
+   "ids": [
+    "NEU-OLDP-034",
+    "NEU-OLDP-054",
+    "PP31-NEU-019",
+    "PP32-NEU-065",
+    "PP31-NEU-066"
+   ]
+  },
+  {
+   "theme": "Opioid overdose: pinpoint pupil, RR ต่ำ → naloxone; ยาที่ไม่ทำ miosis",
+   "ids": [
+    "NEU-OLDP-030",
+    "NEU-OLDP-074",
+    "PP28-NEU-024",
+    "PP31-NEU-031"
+   ]
+  },
+  {
+   "theme": "Organophosphate poisoning: muscarinic vs nicotinic → atropine",
+   "ids": [
+    "PP30-NEU-015",
+    "PP30-NEU-016"
+   ]
+  },
+  {
+   "theme": "Alteration of consciousness: สาเหตุ metabolic, ประวัติสำคัญ, asterixis = diffuse",
+   "ids": [
+    "NEU-OLDP-039",
+    "NEU-OLDP-077",
+    "NEU-OLDP-078",
+    "PP35-NEU-051"
+   ]
+  },
+  {
+   "theme": "Delirium ผู้สูงอายุหลังผ่าตัด: การดูแล",
+   "ids": [
+    "NEU-OLDP-064"
+   ]
+  },
+  {
+   "theme": "Status epilepticus / ชักเฉียบพลัน: airway → IV benzodiazepine",
+   "ids": [
+    "NEU-OLDP-035",
+    "NEU-OLDP-040",
+    "NEU-OLDP-056"
+   ]
+  },
+  {
+   "theme": "Seizure: classification (focal → bilateral), ประวัติ, EEG",
+   "ids": [
+    "NEU-OLDP-037",
+    "NEU-OLDP-044",
+    "NEU-OLDP-076",
+    "PP32-NEU-033"
+   ]
+  },
+  {
+   "theme": "Seizure mechanism: glutamate excitation vs GABA inhibition",
+   "ids": [
+    "NEU-OLDP-073",
+    "PP34-NEU-002"
+   ]
+  },
+  {
+   "theme": "Antiseizure drug choice: ethosuximide (absence), levetiracetam/lamotrigine (pregnancy)",
+   "ids": [
+    "PP30-NEU-034",
+    "PP30-NEU-035"
+   ]
+  },
+  {
+   "theme": "Alzheimer: hippocampus ฝ่อก่อน, donepezil",
+   "ids": [
+    "NEU-OLDP-069",
+    "NEU-OLDP-070",
+    "PPNA-NEU-137"
+   ]
+  },
+  {
+   "theme": "NPH: triad gait-dementia-incontinence, gait ดีขึ้นหลัง shunt",
+   "ids": [
+    "NEU-OLDP-071",
+    "NEU-OLDP-072"
+   ]
+  }
+ ],
+ "air": [
+  {
+   "theme": "Anaphylaxis: type I, IM adrenaline, พก auto-injector",
+   "ids": [
+    "AIR-OLD-01",
+    "AIR-OLD-02",
+    "AIR-OLD-03",
+    "AIR-OLDP-001",
+    "AIR-OLDP-002",
+    "AIR-OLDP-004",
+    "PP31-AIR-052"
+   ]
+  },
+  {
+   "theme": "SJS จาก allopurinol (HLA-B*58:01)",
+   "ids": [
+    "AIR-OLD-04",
+    "AIR-OLD-05"
+   ]
+  },
+  {
+   "theme": "Transfusion reaction",
+   "ids": [
+    "AIR-OLD-06",
+    "AIR-OLD-07"
+   ]
+  },
+  {
+   "theme": "Immune cytopenia → หา SLE/HIV/HCV",
+   "ids": [
+    "AIR-OLD-08",
+    "AIR-OLD-09",
+    "AIR-OLD-10"
+   ]
+  },
+  {
+   "theme": "ผลข้างเคียงยากดภูมิใน SLE (วัคซีน, DM, HCQ ตา, AVN, MMF ตั้งครรภ์)",
+   "ids": [
+    "AIR-OLD-11",
+    "AIR-OLD-12",
+    "AIR-OLD-17",
+    "AIR-OLD-44",
+    "AIR-OLD-49",
+    "PP31-AIR-001"
+   ]
+  },
+  {
+   "theme": "จำแนก arthritis (OA/RA/SpA/AOSD/chikungunya)",
+   "ids": [
+    "AIR-OLD-13",
+    "AIR-OLD-45",
+    "AIR-OLD-50",
+    "PP33-AIR-005",
+    "PP31-AIR-003"
+   ]
+  },
+  {
+   "theme": "เลือก autoantibody (ANA, dsDNA/Sm, drug-induced, APS, Scl-70, ANCA)",
+   "ids": [
+    "AIR-OLD-14",
+    "AIR-OLD-15",
+    "AIR-OLD-18",
+    "AIR-OLD-34",
+    "AIR-OLD-41",
+    "AIR-OLD-48"
+   ]
+  },
+  {
+   "theme": "PCP ใน HIV / ผู้ได้ยากดภูมิ",
+   "ids": [
+    "AIR-OLD-16"
+   ]
+  },
+  {
+   "theme": "Crystal arthritis: gout / CPPD / BCP",
+   "ids": [
+    "AIR-OLD-19",
+    "AIR-OLD-20",
+    "AIR-OLD-21",
+    "AIR-OLD-22",
+    "AIR-OLD-29",
+    "AIR-OLD-30",
+    "AIR-OLD-31",
+    "PPNA-AIR-112",
+    "PP31-AIR-036"
+   ]
+  },
+  {
+   "theme": "ผลข้างเคียงยา TB (INH, RIF, PZA, EMB)",
+   "ids": [
+    "AIR-OLD-23"
+   ]
+  },
+  {
+   "theme": "Septic / gonococcal arthritis",
+   "ids": [
+    "AIR-OLD-24",
+    "AIR-OLD-25",
+    "AIR-OLD-26",
+    "AIR-OLD-32",
+    "PP31-AIR-013",
+    "PP33-AIR-008",
+    "PP34-AIR-017",
+    "PP34-AIR-027"
+   ]
+  },
+  {
+   "theme": "Pericarditis: รักษาด้วย NSAID/aspirin + colchicine",
+   "ids": [
+    "AIR-OLD-33"
+   ]
+  },
+  {
+   "theme": "Scleroderma renal crisis",
+   "ids": [
+    "AIR-OLD-35"
+   ]
+  },
+  {
+   "theme": "Rhabdomyolysis / statin myopathy (CK)",
+   "ids": [
+    "AIR-OLD-36",
+    "AIR-OLD-37"
+   ]
+  },
+  {
+   "theme": "Dermatomyositis → หามะเร็ง",
+   "ids": [
+    "AIR-OLD-38"
+   ]
+  },
+  {
+   "theme": "GCA / PMR",
+   "ids": [
+    "AIR-OLD-39",
+    "AIR-OLD-46"
+   ]
+  },
+  {
+   "theme": "IgA vasculitis (HSP)",
+   "ids": [
+    "AIR-OLD-40"
+   ]
+  },
+  {
+   "theme": "ความปลอดภัย DMARD/biologic ใน RA",
+   "ids": [
+    "AIR-OLD-42",
+    "AIR-OLD-43",
+    "AIR-OLD-47",
+    "PP31-AIR-013b"
+   ]
+  },
+  {
+   "theme": "Chronic urticaria: นิยาม ≥6 สัปดาห์",
+   "ids": [
+    "AIR-OLDP-005"
+   ]
+  },
+  {
+   "theme": "Allergic contact dermatitis (type IV) → patch test",
+   "ids": [
+    "AIR-OLDP-003"
+   ]
+  },
+  {
+   "theme": "Osteoarthritis: อาการ, crepitus, synovial fluid ไม่อักเสบ",
+   "ids": [
+    "AIR-OLD-27",
+    "PP30-AIR-019",
+    "PP28-AIR-111",
+    "PP31-AIR-025",
+    "PP35-AIR-038"
+   ]
+  },
+  {
+   "theme": "Rheumatoid arthritis: ข้อเล็กสมมาตร, morning stiffness, RF, nodule",
+   "ids": [
+    "AIR-OLD-28",
+    "PP30-AIR-022",
+    "PP31-AIR-072",
+    "PP33-AIR-016",
+    "PP28-AIR-113",
+    "PP30-AIR-108"
+   ]
+  },
+  {
+   "theme": "Soft tissue rheumatism: fibromyalgia, myofascial pain, tennis elbow, trigger finger",
+   "ids": [
+    "PP30-AIR-104",
+    "PP30-AIR-105",
+    "PP30-AIR-106",
+    "PP30-AIR-107"
+   ]
+  },
+  {
+   "theme": "SLE: ยาหลัก HCQ ทุกราย ± steroid",
+   "ids": [
+    "AIR-OLDP-006",
+    "PP31-AIR-062",
+    "PP35-AIR-059"
+   ]
+  },
+  {
+   "theme": "Behçet disease",
+   "ids": [
+    "PP30-AIR-088"
+   ]
+  },
+  {
+   "theme": "SLE: วินิจฉัยจากอาการ/criteria, cutaneous lupus, overlap",
+   "ids": [
+    "PP30-AIR-109",
+    "PP28-AIR-110",
+    "PP31-AIR-055",
+    "PP31-AIR-068",
+    "PP32-AIR-053"
+   ]
+  },
+  {
+   "theme": "SLE: แสง UV กระตุ้น flare (keratinocyte apoptosis)",
+   "ids": [
+    "PP31-AIR-046",
+    "PP31-AIR-012"
+   ]
+  }
+ ],
+ "infect": [
+  {
+   "theme": "Sepsis: วินิจฉัยจากอาการและ vital signs",
+   "ids": [
+    "ID-OLDP-001"
+   ]
+  },
+  {
+   "theme": "Meningococcemia: purpura → N. meningitidis, chemoprophylaxis ผู้สัมผัส",
+   "ids": [
+    "ID-OLDP-002",
+    "ID-OLDP-004"
+   ]
+  },
+  {
+   "theme": "Pharyngitis: strep vs viral, แพ้ penicillin → erythromycin, diphtheria",
+   "ids": [
+    "ID-OLDP-003",
+    "PP34-INF-012",
+    "PP35-INF-058"
+   ]
+  },
+  {
+   "theme": "Nocardia vs Actinomyces: branching filament, modified AFB, การรักษา",
+   "ids": [
+    "ID-OLDP-006",
+    "ID-OLDP-007",
+    "ID-OLDP-038"
+   ]
+  },
+  {
+   "theme": "Chancroid/painful genital ulcer: เลือกยา azithromycin",
+   "ids": [
+    "ID-OLDP-005",
+    "ID-OLDP-030"
+   ]
+  },
+  {
+   "theme": "COVID-19 infection control: การแพร่เชื้อ, PPE, หน้ากาก",
+   "ids": [
+    "ID-OLDP-008",
+    "PPNA-INF-127",
+    "PP31-INF-028",
+    "PP32-INF-061"
+   ]
+  },
+  {
+   "theme": "Infection control: hand hygiene ป้องกัน nosocomial, isolation precaution (VZV → airborne)",
+   "ids": [
+    "PP29-INF-119",
+    "PP31-INF-003",
+    "PP31-INF-071"
+   ]
+  },
+  {
+   "theme": "วัคซีนและกลุ่มเสี่ยง: COVID/influenza priority, asplenia",
+   "ids": [
+    "PP30-INF-001",
+    "PP32-INF-029",
+    "PP31-INF-007"
+   ]
+  },
+  {
+   "theme": "Gram stain เดาเชื้อ: GN diplococci/coccobacilli (Moraxella, H. influenzae)",
+   "ids": [
+    "PP29-INF-043",
+    "PP28-INF-131"
+   ]
+  },
+  {
+   "theme": "Listeria meningitis: กลุ่มเสี่ยง → ampicillin",
+   "ids": [
+    "PPNA-INF-123"
+   ]
+  },
+  {
+   "theme": "Tetanus: การรักษาครบ (debridement, metronidazole, TIG, toxoid)",
+   "ids": [
+    "PPNA-INF-126"
+   ]
+  },
+  {
+   "theme": "Rabies: post-exposure prophylaxis ตาม WHO category",
+   "ids": [
+    "PP31-INF-018"
+   ]
+  },
+  {
+   "theme": "Mycobacterium marinum: fish tank granuloma",
+   "ids": [
+    "PP35-INF-035"
+   ]
+  },
+  {
+   "theme": "Melioidosis & pyogenic liver abscess: เดาเชื้อ (B. pseudomallei, Klebsiella)",
+   "ids": [
+    "ID-OLDP-009",
+    "ID-OLDP-022",
+    "PP30-INF-029"
+   ]
+  },
+  {
+   "theme": "Leptospirosis: วินิจฉัยจาก conjunctival suffusion, jaundice, calf pain",
+   "ids": [
+    "ID-OLDP-012",
+    "ID-OLDP-013",
+    "ID-OLDP-014",
+    "ID-OLDP-017",
+    "ID-OLDP-018",
+    "ID-OLDP-024"
+   ]
+  },
+  {
+   "theme": "Leptospirosis: การตรวจยืนยัน (MAT, IFA) และทางติดต่อ",
+   "ids": [
+    "ID-OLDP-010",
+    "ID-OLDP-015",
+    "ID-OLDP-016"
+   ]
+  },
+  {
+   "theme": "Scrub typhus: eschar → doxycycline",
+   "ids": [
+    "ID-OLDP-011",
+    "ID-OLDP-019",
+    "ID-OLDP-020"
+   ]
+  },
+  {
+   "theme": "Dengue: วินิจฉัย, ระยะโรค, fluid management",
+   "ids": [
+    "ID-OLDP-021",
+    "PP34-INF-013",
+    "PP33-INF-014",
+    "PP33-INF-024"
+   ]
+  },
+  {
+   "theme": "Salmonella: ภาวะแทรกซ้อน/ภาวะที่สัมพันธ์",
+   "ids": [
+    "ID-OLDP-023"
+   ]
+  },
+  {
+   "theme": "Malaria: วินิจฉัยและแยกชนิดเชื้อจาก blood smear",
+   "ids": [
+    "PP30-INF-114",
+    "PP33-INF-002",
+    "PP32-INF-050"
+   ]
+  },
+  {
+   "theme": "Malaria: การรักษา (ACT, หญิงตั้งครรภ์)",
+   "ids": [
+    "PP30-INF-117",
+    "PP31-INF-034",
+    "PP31-INF-007b"
+   ]
+  },
+  {
+   "theme": "Malaria chemoprophylaxis: doxycycline ก่อนเข้าป่า",
+   "ids": [
+    "PP29-INF-118",
+    "PP31-INF-004"
+   ]
+  },
+  {
+   "theme": "HIV กับ pneumonia: เดาเชื้อตาม CD4 (S. pneumoniae, reactivation TB)",
+   "ids": [
+    "ID-OLDP-025",
+    "ID-OLDP-036",
+    "ID-OLDP-041"
+   ]
+  },
+  {
+   "theme": "PCP: การวินิจฉัยและรักษา (cotrimoxazole + steroid)",
+   "ids": [
+    "ID-OLDP-028",
+    "ID-OLDP-031"
+   ]
+  },
+  {
+   "theme": "HIV CNS infection: cryptococcal meningitis, CT ก่อน LP, amphotericin B และผลข้างเคียง",
+   "ids": [
+    "ID-OLDP-026",
+    "ID-OLDP-027",
+    "ID-OLDP-032",
+    "ID-OLDP-037",
+    "ID-OLDP-039"
+   ]
+  },
+  {
+   "theme": "Disseminated fungal ใน HIV: umbilicated papules (crypto/talaromycosis)",
+   "ids": [
+    "ID-OLDP-040"
+   ]
+  },
+  {
+   "theme": "Syphilis: วินิจฉัย (VDRL, CSF VDRL) และรักษา (benzathine penicillin)",
+   "ids": [
+    "ID-OLDP-029",
+    "PPNA-INF-124",
+    "PP32-INF-040",
+    "PP32-INF-041"
+   ]
+  },
+  {
+   "theme": "HIV: การวินิจฉัย (window period) และทางติดต่อ",
+   "ids": [
+    "ID-OLDP-033",
+    "ID-OLDP-042"
+   ]
+  },
+  {
+   "theme": "HIV: เริ่ม ART และเลือกสูตร (TLD, HBV coinfection)",
+   "ids": [
+    "PP31-INF-010",
+    "PP33-INF-025",
+    "PP28-INF-129"
+   ]
+  },
+  {
+   "theme": "HIV chronic diarrhea: Cryptosporidium vs Cystoisospora (ขนาด oocyst)",
+   "ids": [
+    "PPSAQ-INF-128",
+    "PP30-INF-141",
+    "PP34-INF-019"
+   ]
+  },
+  {
+   "theme": "Recurrent candidiasis: หาโรคพื้นฐาน (DM)",
+   "ids": [
+    "ID-OLDP-034"
+   ]
+  },
+  {
+   "theme": "Urethritis/STD: เชื้อก่อโรค (M. genitalium, disseminated gonococcal infection)",
+   "ids": [
+    "ID-OLDP-035",
+    "PP35-INF-045"
+   ]
+  },
+  {
+   "theme": "ยาต้านจุลชีพ: กลไก, spectrum (anti-pseudomonal), red man syndrome",
+   "ids": [
+    "PP30-INF-023",
+    "PP30-INF-115",
+    "PP30-INF-116"
+   ]
+  },
+  {
+   "theme": "Prosthetic valve endocarditis (MSSA): regimen",
+   "ids": [
+    "PPNA-INF-125"
+   ]
+  }
+ ],
+ "gi": [
+  {
+   "theme": "Esophageal cancer: กลืนของแข็งลำบากแบบ progressive ในคนสูบบุหรี่/ดื่มเหล้า",
+   "ids": [
+    "GI-OLDP-001",
+    "GI-OLDP-003"
+   ]
+  },
+  {
+   "theme": "Dysphagia: แยก oropharyngeal (neuromuscular) vs esophageal, achalasia (bird's beak)",
+   "ids": [
+    "PP30-GIS-025",
+    "PP30-GIS-059",
+    "PP31-GIS-012"
+   ]
+  },
+  {
+   "theme": "Upper GI bleeding: เดาสาเหตุ (varices, Mallory-Weiss tear)",
+   "ids": [
+    "GI-OLDP-002",
+    "PP31-GIS-009"
+   ]
+  },
+  {
+   "theme": "NSAID-induced peptic ulcer: ให้ PPI (omeprazole) ร่วมกับ NSAID",
+   "ids": [
+    "GI-OLDP-004",
+    "GI-OLDP-005"
+   ]
+  },
+  {
+   "theme": "GERD: อาการเด่น heartburn และคำแนะนำ lifestyle",
+   "ids": [
+    "PP30-GIS-067",
+    "PP30-GIS-068"
+   ]
+  },
+  {
+   "theme": "Corrosive ingestion: NPO + endoscopy ภายใน 12–24 ชม.",
+   "ids": [
+    "PP31-GIS-027"
+   ]
+  },
+  {
+   "theme": "H. pylori: สัมพันธ์กับ gastric MALT lymphoma",
+   "ids": [
+    "PP32-GIS-035"
+   ]
+  },
+  {
+   "theme": "Jaundice: แยกชนิด prehepatic/hepatocellular/obstructive จาก LFT และ investigation แรก",
+   "ids": [
+    "GI-OLDP-006",
+    "GI-OLDP-012",
+    "GI-OLDP-014",
+    "PP30-GIS-028"
+   ]
+  },
+  {
+   "theme": "Transaminase pattern: AST>ALT → alcoholic hepatitis, ALT>AST → ส่ง viral hepatitis serology",
+   "ids": [
+    "GI-OLDP-011",
+    "GI-OLDP-013",
+    "PP31-GIS-011"
+   ]
+  },
+  {
+   "theme": "Fatty liver: NAFLD เมื่อ BMI สูงและดื่มน้อย",
+   "ids": [
+    "GI-OLDP-016"
+   ]
+  },
+  {
+   "theme": "Hepatitis B serology: แปลผล HBsAg/anti-HBs/anti-HBc (ภูมิจากวัคซีน, acute HBV)",
+   "ids": [
+    "GI-OLDP-009",
+    "GI-OLDP-025",
+    "PP30-GIS-069"
+   ]
+  },
+  {
+   "theme": "Hepatitis A: fecal-oral, anti-HAV IgM, รักษาแบบ supportive",
+   "ids": [
+    "GI-OLDP-027",
+    "PP32-GIS-059",
+    "PP30-GIS-005"
+   ]
+  },
+  {
+   "theme": "Hepatitis B/C virology: DNA virus, HCV จากรอยสัก, HBV → HCC",
+   "ids": [
+    "PP28-GIS-071",
+    "PP31-GIS-060",
+    "PP35-GIS-066"
+   ]
+  },
+  {
+   "theme": "SBP: กลไก bacterial translocation",
+   "ids": [
+    "GI-OLDP-007",
+    "GI-OLDP-020"
+   ]
+  },
+  {
+   "theme": "SBP: วินิจฉัยจาก ascitic PMN ≥250 (รวม CNNA) และรักษา cefotaxime ± albumin",
+   "ids": [
+    "GI-OLDP-008",
+    "GI-OLDP-019",
+    "PP30-GIS-065",
+    "PP29-GIS-066",
+    "PP30-GIS-145"
+   ]
+  },
+  {
+   "theme": "Ascites: แปลผล SAAG/total protein (SAAG ต่ำ + protein สูง → TB peritonitis)",
+   "ids": [
+    "GI-OLDP-018",
+    "GI-OLDP-026"
+   ]
+  },
+  {
+   "theme": "Ascites ใน cirrhosis: กลไก portal HT/splanchnic vasodilatation และ spironolactone",
+   "ids": [
+    "PP34-GIS-030",
+    "PP35-GIS-048"
+   ]
+  },
+  {
+   "theme": "Hepatic encephalopathy: asterixis → lactulose (กลไก)",
+   "ids": [
+    "GI-OLDP-022",
+    "GI-OLDP-023",
+    "PP30-GIS-146"
+   ]
+  },
+  {
+   "theme": "Cirrhosis: stigmata CLD, hypersplenism/coagulopathy, โภชนาการ",
+   "ids": [
+    "GI-OLDP-021",
+    "GI-OLDP-024",
+    "PP34-GIS-008",
+    "PPNA-GIS-072"
+   ]
+  },
+  {
+   "theme": "Esophageal varices: NSBB primary/secondary prophylaxis (กลไก carvedilol)",
+   "ids": [
+    "GI-OLDP-028",
+    "PP31-GIS-006",
+    "PP34-GIS-009"
+   ]
+  },
+  {
+   "theme": "Liver abscess: amoebic (วงจรเชื้อ, serology) vs pyogenic (ceftazidime)",
+   "ids": [
+    "GI-OLDP-010",
+    "GI-OLDP-017",
+    "PP31-GIS-002"
+   ]
+  },
+  {
+   "theme": "Paracetamol overdose: N-acetylcysteine",
+   "ids": [
+    "GI-OLDP-015",
+    "PP32-GIS-042"
+   ]
+  },
+  {
+   "theme": "Acute cholangitis: ไข้ หนาวสั่น ดีซ่าน + CBD dilate",
+   "ids": [
+    "PP30-GIS-060"
+   ]
+  },
+  {
+   "theme": "Acute pancreatitis: อาการปวดทะลุหลัง, lipase, สาเหตุ (gallstone), กลไก",
+   "ids": [
+    "GI-OLDP-034",
+    "GI-OLDP-036",
+    "PP30-GIS-018",
+    "PP33-GIS-006",
+    "PP32-GIS-049"
+   ]
+  },
+  {
+   "theme": "Colorectal cancer: change in bowel habit/alarm features → colonoscopy",
+   "ids": [
+    "GI-OLDP-029",
+    "GI-OLDP-032",
+    "GI-OLDP-037",
+    "GI-OLDP-039",
+    "PP30-GIS-144",
+    "PP34-GIS-028"
+   ]
+  },
+  {
+   "theme": "Clostridium septicum bacteremia: หามะเร็งลำไส้ใหญ่",
+   "ids": [
+    "GI-OLDP-031",
+    "GI-OLDP-041"
+   ]
+  },
+  {
+   "theme": "IBS: ลักษณะที่สนับสนุน IBS มากกว่า organic disease",
+   "ids": [
+    "PP29-GIS-070"
+   ]
+  },
+  {
+   "theme": "Diverticulitis: ปวด LLQ ในผู้สูงอายุ → empirical antibiotic",
+   "ids": [
+    "GI-OLDP-030"
+   ]
+  },
+  {
+   "theme": "Food poisoning (preformed toxin): อาเจียนเด่น onset เร็ว",
+   "ids": [
+    "GI-OLDP-033",
+    "GI-OLDP-043"
+   ]
+  },
+  {
+   "theme": "Dysentery (invasive diarrhea): กลไก, เดาเชื้อ (Shigella, Campylobacter), stool exam",
+   "ids": [
+    "GI-OLDP-035",
+    "PP30-GIS-061",
+    "PP31-GIS-061",
+    "PP34-GIS-010",
+    "PP30-GIS-063"
+   ]
+  },
+  {
+   "theme": "Amoebic dysentery: stool exam (trophozoite, Charcot–Leyden) และ metronidazole + luminal agent",
+   "ids": [
+    "PPNA-GIS-064",
+    "PP30-GIS-058"
+   ]
+  },
+  {
+   "theme": "Acute watery diarrhea: ORS ± antiemetic, ประเมิน dehydration, cholera",
+   "ids": [
+    "GI-OLDP-040",
+    "PP30-GIS-147",
+    "PP33-GIS-018",
+    "PP33-GIS-019",
+    "PP34-GIS-022",
+    "PP35-GIS-056"
+   ]
+  },
+  {
+   "theme": "Diarrhea: นิยาม acute vs chronic",
+   "ids": [
+    "PP30-GIS-062",
+    "PP35-GIS-044"
+   ]
+  },
+  {
+   "theme": "C. difficile (pseudomembranous colitis): oral vancomycin",
+   "ids": [
+    "GI-OLDP-038"
+   ]
+  },
+  {
+   "theme": "Acute appendicitis: กลไก pain migration ไป RLQ",
+   "ids": [
+    "GI-OLDP-042"
+   ]
+  },
+  {
+   "theme": "Terminal ileum resection: B12 deficiency → IM cobalamin",
+   "ids": [
+    "PP31-GIS-005"
+   ]
+  }
+ ],
+ "endo": [
+  {
+   "theme": "Dyslipidemia: แปลผล lipid profile, คำนวณ LDL (Friedewald), เลือก statin vs fibrate",
+   "ids": [
+    "EN-OLDP-015",
+    "EN-OLDP-016",
+    "PP29-END-101",
+    "PP29-END-102",
+    "PP31-END-040",
+    "PP32-END-058"
+   ]
+  },
+  {
+   "theme": "Metabolic syndrome: องค์ประกอบของเกณฑ์วินิจฉัย",
+   "ids": [
+    "EN-OLDP-021",
+    "EN-OLDP-023",
+    "EN-OLDP-024"
+   ]
+  },
+  {
+   "theme": "Lifestyle modification: ออกกำลังกาย/อาหาร ลด insulin resistance, ป้องกันเบาหวานและ CVD",
+   "ids": [
+    "EN-OLDP-022",
+    "PP31-END-021",
+    "PP34-END-005",
+    "EN-OLDP-012",
+    "EN-OLDP-009"
+   ]
+  },
+  {
+   "theme": "ชนิดของเบาหวาน: MODY, type 1, LADA, type 3c, acanthosis/insulin resistance",
+   "ids": [
+    "EN-OLDP-001",
+    "EN-OLDP-002",
+    "EN-OLDP-008",
+    "PP33-END-012",
+    "PP35-END-052",
+    "PP35-END-061"
+   ]
+  },
+  {
+   "theme": "วินิจฉัยเบาหวาน: OGTT ในผู้เคยเป็น GDM",
+   "ids": [
+    "EN-OLDP-017"
+   ]
+  },
+  {
+   "theme": "ยาเบาหวาน: metformin first-line, SGLT2i ป้องกันไต, ข้อห้ามตาม eGFR",
+   "ids": [
+    "EN-OLDP-003",
+    "EN-OLDP-004",
+    "EN-OLDP-005",
+    "EN-OLDP-019",
+    "PP32-END-032"
+   ]
+  },
+  {
+   "theme": "ภาวะแทรกซ้อนเบาหวาน: คัดกรองประจำปี (จอตา, microalbuminuria), ประเมินแรกวินิจฉัย",
+   "ids": [
+    "EN-OLDP-014",
+    "EN-OLDP-020",
+    "PPNA-END-100"
+   ]
+  },
+  {
+   "theme": "DKA: ลำดับการรักษา (NSS ก่อน → IV insulin drip, K ต่ำให้ K ก่อน)",
+   "ids": [
+    "EN-OLDP-006",
+    "EN-OLDP-007",
+    "EN-OLDP-010",
+    "EN-OLDP-011",
+    "EN-OLDP-013",
+    "EN-OLDP-018",
+    "EN-OLDP-026",
+    "PP28-END-103"
+   ]
+  },
+  {
+   "theme": "DKA: เกณฑ์วินิจฉัยและอาการแสดง (fruity breath)",
+   "ids": [
+    "PP31-END-054",
+    "PP34-END-024"
+   ]
+  },
+  {
+   "theme": "Hypoglycemia: Whipple triad, รักษาด้วย 50% glucose IV",
+   "ids": [
+    "PP30-END-090",
+    "PP33-END-020"
+   ]
+  },
+  {
+   "theme": "เบาหวานกับ COVID-19: พยากรณ์โรคแย่กว่า",
+   "ids": [
+    "EN-OLDP-025"
+   ]
+  },
+  {
+   "theme": "Thyroid nodule: ส่ง TFT ก่อน → TSH ปกติ FNA, TSH ต่ำ thyroid scan",
+   "ids": [
+    "EN-OLDP-029",
+    "EN-OLDP-030",
+    "EN-OLDP-031",
+    "EN-OLDP-032",
+    "EN-OLDP-033",
+    "PP33-END-017",
+    "PP31-END-039"
+   ]
+  },
+  {
+   "theme": "Hypothyroidism: อาการ, ตรวจร่างกาย (delayed DTR, Queen Anne sign), แปลผล TSH",
+   "ids": [
+    "EN-OLDP-028",
+    "EN-OLDP-044",
+    "PP30-END-095",
+    "PP33-END-013",
+    "EN-OLDP-042"
+   ]
+  },
+  {
+   "theme": "Hypothyroidism รักษา: levothyroxine, ยาที่ลดการดูดซึม (iron)",
+   "ids": [
+    "EN-OLDP-027",
+    "PP33-END-001",
+    "PP30-END-092"
+   ]
+  },
+  {
+   "theme": "Hashimoto thyroiditis: สาเหตุหลักของ hypothyroid, anti-TPO",
+   "ids": [
+    "PP29-END-096",
+    "PP35-END-062",
+    "PP32-END-064"
+   ]
+  },
+  {
+   "theme": "Thyrotoxicosis: อาการ, แปลผล TFT, hypoK จาก transcellular shift",
+   "ids": [
+    "EN-OLDP-034",
+    "EN-OLDP-041",
+    "EN-OLDP-039"
+   ]
+  },
+  {
+   "theme": "Graves disease: TRAb, ophthalmopathy/pretibial myxedema เฉพาะ Graves",
+   "ids": [
+    "EN-OLDP-036",
+    "EN-OLDP-038",
+    "PP30-END-093",
+    "PP35-END-068"
+   ]
+  },
+  {
+   "theme": "ยาต้านไทรอยด์: PTU (ไตรมาสแรก, thyroid storm) vs methimazole, agranulocytosis",
+   "ids": [
+    "EN-OLDP-035",
+    "EN-OLDP-040",
+    "EN-OLDP-043",
+    "PP30-END-094",
+    "PP34-END-025"
+   ]
+  },
+  {
+   "theme": "Subacute (de Quervain) thyroiditis หลัง URI",
+   "ids": [
+    "EN-OLDP-037"
+   ]
+  },
+  {
+   "theme": "Thyroid physiology: เปรียบเทียบ T3 vs T4",
+   "ids": [
+    "PP31-END-049",
+    "PP31-END-014b"
+   ]
+  },
+  {
+   "theme": "Hypocalcemia: สาเหตุ (iatrogenic), Chvostek/Trousseau → IV Ca gluconate",
+   "ids": [
+    "EN-OLDP-045",
+    "EN-OLDP-052"
+   ]
+  },
+  {
+   "theme": "Adrenal insufficiency: primary vs secondary (hyperpigmentation, ACTH), cosyntropin test, adrenal crisis จากหยุด steroid",
+   "ids": [
+    "EN-OLDP-046",
+    "EN-OLDP-049",
+    "EN-OLDP-051",
+    "PP30-END-089",
+    "PPNA-END-099"
+   ]
+  },
+  {
+   "theme": "Corticosteroid: ฤทธิ์ mineralocorticoid (fludrocortisone)",
+   "ids": [
+    "EN-OLDP-053"
+   ]
+  },
+  {
+   "theme": "Cushing: หาตำแหน่งสาเหตุด้วย ACTH + high-dose dex (Cushing disease vs ectopic ACTH)",
+   "ids": [
+    "EN-OLDP-047",
+    "PPSAQ-END-097",
+    "PP28-END-098"
+   ]
+  },
+  {
+   "theme": "Cushing syndrome: อาการเด่น (striae, proximal weakness) แยกจากอ้วนธรรมดา",
+   "ids": [
+    "EN-OLDP-050",
+    "PP30-END-007",
+    "PP30-END-008"
+   ]
+  },
+  {
+   "theme": "Pheochromocytoma: อาการคลาสสิก (5P)",
+   "ids": [
+    "EN-OLDP-048"
+   ]
+  },
+  {
+   "theme": "Pituitary: macroadenoma hormonal workup, hyperprolactinemia, ทดแทนฮอร์โมนใน panhypopituitarism",
+   "ids": [
+    "PP30-END-013",
+    "PP30-END-091",
+    "PP31-END-002"
+   ]
+  },
+  {
+   "theme": "Hypogonadism: ผลต่อกล้ามเนื้อ",
+   "ids": [
+    "PP31-END-017"
+   ]
+  }
+ ],
+ "heme": [
+  {
+   "theme": "IDA: อาการ, ตรวจร่างกาย, smear และ iron studies ในการวินิจฉัย",
+   "ids": [
+    "HE-OLDP-001",
+    "HE-OLDP-002",
+    "HE-OLDP-015",
+    "HE-OLDP-017",
+    "HE-OLDP-019",
+    "HE-OLDP-021",
+    "PP30-HEM-085",
+    "PP34-HEM-029"
+   ]
+  },
+  {
+   "theme": "IDA: การให้ธาตุเหล็ก — คำแนะนำการกิน, lab ที่ขึ้นก่อน",
+   "ids": [
+    "HE-OLDP-020",
+    "PP31-HEM-029",
+    "PP35-HEM-069"
+   ]
+  },
+  {
+   "theme": "Acute phase response: CRP สูง, albumin/transferrin ต่ำ",
+   "ids": [
+    "HE-OLDP-008"
+   ]
+  },
+  {
+   "theme": "Thalassemia/HbE: โอกาสถ่ายทอดสู่ลูก, Hb typing วินิจฉัย",
+   "ids": [
+    "HE-OLDP-006",
+    "HE-OLDP-007",
+    "HE-OLDP-009"
+   ]
+  },
+  {
+   "theme": "Megaloblastic anemia (B12): สาเหตุ, smear hypersegmented, lab ยืนยัน",
+   "ids": [
+    "HE-OLDP-012",
+    "HE-OLDP-014",
+    "HE-OLDP-016",
+    "PPNA-HEM-083",
+    "PP35-HEM-054"
+   ]
+  },
+  {
+   "theme": "Hemolytic anemia: แนวทางวินิจฉัยเบื้องต้น (ซีด+เหลือง+ม้ามโต)",
+   "ids": [
+    "HE-OLDP-003",
+    "HE-OLDP-010",
+    "PP32-HEM-056"
+   ]
+  },
+  {
+   "theme": "AIHA: spherocyte+polychromasia → DAT, Evans syndrome",
+   "ids": [
+    "HE-OLDP-013",
+    "HE-OLDP-018",
+    "PP30-HEM-082"
+   ]
+  },
+  {
+   "theme": "AIHA: การรักษา — prednisolone, ให้เลือด least incompatible",
+   "ids": [
+    "HE-OLDP-005",
+    "PP31-HEM-016",
+    "PP32-HEM-037",
+    "PP33-HEM-007"
+   ]
+  },
+  {
+   "theme": "Hereditary spherocytosis: membrane defect, ยืนยันด้วย EMA/osmotic fragility",
+   "ids": [
+    "HE-OLDP-004",
+    "PP29-HEM-087"
+   ]
+  },
+  {
+   "theme": "G6PD deficiency: ยา/ถั่วปากอ้า → bite/blister cell, Heinz body",
+   "ids": [
+    "PP31-HEM-044",
+    "PP31-HEM-010",
+    "PP32-HEM-036"
+   ]
+  },
+  {
+   "theme": "PNH: hemolysis + thrombosis (Budd-Chiari) → flow cytometry CD55/CD59",
+   "ids": [
+    "PP31-HEM-019",
+    "HE-OLDP-027"
+   ]
+  },
+  {
+   "theme": "MAHA: schistocytes → DIC, TTP, HUS",
+   "ids": [
+    "PPSAQ-HEM-086",
+    "PP31-HEM-004"
+   ]
+  },
+  {
+   "theme": "Pancytopenia: DDx (aplastic anemia ฯลฯ) และ bone marrow study",
+   "ids": [
+    "HE-OLDP-011",
+    "HE-OLDP-041",
+    "HE-OLDP-037",
+    "PP32-HEM-062"
+   ]
+  },
+  {
+   "theme": "Primary vs secondary hemostasis: mucocutaneous bleeding vs haemarthrosis",
+   "ids": [
+    "HE-OLDP-034",
+    "PP29-HEM-080",
+    "PP35-HEM-053"
+   ]
+  },
+  {
+   "theme": "von Willebrand disease: เลือดออกเยื่อบุ, aPTT ยาว PT ปกติ, bleeding time",
+   "ids": [
+    "HE-OLDP-022",
+    "HE-OLDP-023",
+    "HE-OLDP-028"
+   ]
+  },
+  {
+   "theme": "แปลผล coagulation: PT+aPTT ยาว → common pathway, TT, vit K-dependent factors",
+   "ids": [
+    "HE-OLDP-025",
+    "PP35-HEM-064",
+    "PP32-HEM-052"
+   ]
+  },
+  {
+   "theme": "Hemophilia: X-linked, haemarthrosis, aPTT ยาว → ให้ factor VIII/cryo",
+   "ids": [
+    "PP29-HEM-081",
+    "PP33-HEM-003",
+    "PP32-HEM-039",
+    "PP31-HEM-015"
+   ]
+  },
+  {
+   "theme": "Pseudothrombocytopenia: platelet clumping → ไม่ต้องรักษา",
+   "ids": [
+    "HE-OLDP-030"
+   ]
+  },
+  {
+   "theme": "Scurvy: vit C ขาด → collagen synthesis บกพร่อง",
+   "ids": [
+    "PP33-HEM-009"
+   ]
+  },
+  {
+   "theme": "งูกัด hematotoxic: investigation ที่จำเป็น/ไม่จำเป็น",
+   "ids": [
+    "PPNA-HEM-138"
+   ]
+  },
+  {
+   "theme": "ปฏิกิริยาจากการให้เลือด: FNHTR, allergic, TACO",
+   "ids": [
+    "HE-OLDP-024",
+    "HE-OLDP-031",
+    "PP30-HEM-148",
+    "HE-OLDP-029"
+   ]
+  },
+  {
+   "theme": "Massive transfusion: citrate → hypoCa, dilutional coagulopathy",
+   "ids": [
+    "HE-OLDP-033",
+    "PP35-HEM-060"
+   ]
+  },
+  {
+   "theme": "Blood component: ข้อบ่งชี้และการเลือก (PRC, platelet, leukoreduced, cryo)",
+   "ids": [
+    "HE-OLDP-026",
+    "HE-OLDP-032",
+    "PP31-HEM-045",
+    "PP31-HEM-069"
+   ]
+  },
+  {
+   "theme": "Multiple myeloma: ปวดหลัง + rouleaux → วินิจฉัย",
+   "ids": [
+    "HE-OLDP-035",
+    "HE-OLDP-038",
+    "HE-OLDP-039",
+    "HE-OLDP-040",
+    "HE-OLDP-042",
+    "HE-OLDP-045"
+   ]
+  },
+  {
+   "theme": "Multiple myeloma: ลักษณะทางคลินิก, กลไก hypercalcemia",
+   "ids": [
+    "HE-OLDP-047",
+    "PP30-HEM-012"
+   ]
+  },
+  {
+   "theme": "AML: blast + Auer rod → วินิจฉัย, induction 7+3",
+   "ids": [
+    "HE-OLDP-036",
+    "PP29-HEM-084",
+    "PP31-HEM-042",
+    "PP31-HEM-008"
+   ]
+  },
+  {
+   "theme": "CLL: small mature lymphocytosis ในผู้ไม่มีอาการ",
+   "ids": [
+    "HE-OLDP-043",
+    "HE-OLDP-044"
+   ]
+  },
+  {
+   "theme": "Essential thrombocythemia: plt สูงมากต่อเนื่อง ไม่มีสาเหตุ reactive",
+   "ids": [
+    "PP31-HEM-030",
+    "PP32-HEM-026",
+    "PP35-HEM-063"
+   ]
+  },
+  {
+   "theme": "Polycythemia vera: aquagenic pruritus, Hct สูง → JAK2",
+   "ids": [
+    "PP31-HEM-056",
+    "PP32-HEM-031"
+   ]
+  },
+  {
+   "theme": "CML: massive splenomegaly, WBC สูง → BCR-ABL1",
+   "ids": [
+    "PP31-HEM-047"
+   ]
+  },
+  {
+   "theme": "Lymphoma: excisional LN biopsy, ปัจจัยพยากรณ์ NHL",
+   "ids": [
+    "HE-OLDP-046",
+    "PP34-HEM-021"
+   ]
+  }
+ ],
+ "derm": [
+  {
+   "theme": "SJS/TEN: ลักษณะผื่น, ยาก่อเหตุ และ HLA-B*58:01 (allopurinol)/HLA-B*15:02 (carbamazepine)",
+   "ids": [
+    "DE-OLDP-001",
+    "DE-OLDP-002",
+    "PP30-DER-006",
+    "PP32-DER-051"
+   ]
+  },
+  {
+   "theme": "Fixed drug eruption: ผื่นซ้ำที่เดิมเมื่อได้ยา",
+   "ids": [
+    "PP30-DER-139"
+   ]
+  },
+  {
+   "theme": "Erythema nodosum/panniculitis: ก้อนกดเจ็บที่หน้าแข้ง (OCP, ติดเชื้อ)",
+   "ids": [
+    "DE-OLDP-003",
+    "DE-OLDP-004",
+    "DE-OLDP-005",
+    "DE-OLDP-023"
+   ]
+  },
+  {
+   "theme": "Miliaria: ร้อนชื้นเหงื่อออกมาก",
+   "ids": [
+    "DE-OLDP-006"
+   ]
+  },
+  {
+   "theme": "Herpes zoster: วินิจฉัยจาก dermatomal vesicles, acyclovir, HZO",
+   "ids": [
+    "DE-OLDP-007",
+    "DE-OLDP-028",
+    "DE-OLDP-042",
+    "DE-OLDP-039",
+    "PP28-DER-130"
+   ]
+  },
+  {
+   "theme": "Herpesvirus vesicles: Tzanck smear ยืนยัน, vesiculopustule = VZV",
+   "ids": [
+    "DE-OLDP-022",
+    "DE-OLDP-025",
+    "DE-OLDP-036",
+    "DE-OLDP-008"
+   ]
+  },
+  {
+   "theme": "Herpes simplex: grouped vesicles ซ้ำที่เดิม (ริมฝีปาก, ก้นกบ)",
+   "ids": [
+    "DE-OLDP-011",
+    "DE-OLDP-038"
+   ]
+  },
+  {
+   "theme": "Measles: Koplik spot, ผื่นลามจากหน้าลงล่าง, ตายจาก pneumonia",
+   "ids": [
+    "PP34-DER-016",
+    "PP32-DER-055"
+   ]
+  },
+  {
+   "theme": "Herpangina: supportive care",
+   "ids": [
+    "PP32-DER-043"
+   ]
+  },
+  {
+   "theme": "Autoimmune blistering: pemphigus vulgaris vs bullous pemphigoid",
+   "ids": [
+    "PP30-DER-140",
+    "PP31-DER-074"
+   ]
+  },
+  {
+   "theme": "Tinea (dermatophyte): annular scaly plaque → KOH, topical azole (รวม tinea incognito)",
+   "ids": [
+    "DE-OLDP-009",
+    "DE-OLDP-016",
+    "DE-OLDP-017",
+    "PP32-DER-054"
+   ]
+  },
+  {
+   "theme": "Onychomycosis: วินิจฉัย และรักษา oral terbinafine/itraconazole",
+   "ids": [
+    "DE-OLDP-018",
+    "DE-OLDP-019",
+    "DE-OLDP-043"
+   ]
+  },
+  {
+   "theme": "Wood's lamp: tinea capitis, erythrasma (coral-red), tinea versicolor (yellow-green)",
+   "ids": [
+    "DE-OLDP-040",
+    "DE-OLDP-047",
+    "DE-OLDP-048",
+    "PP31-DER-065",
+    "PP34-DER-014"
+   ]
+  },
+  {
+   "theme": "Scabies: permethrin, sulfur ในคนท้อง",
+   "ids": [
+    "DE-OLDP-010",
+    "PP32-DER-057"
+   ]
+  },
+  {
+   "theme": "Psoriasis: plaque ที่ extensor, nail pitting, ปัจจัยกระตุ้น",
+   "ids": [
+    "DE-OLDP-012",
+    "DE-OLDP-024"
+   ]
+  },
+  {
+   "theme": "Bacterial skin infection: impetigo (honey crust), erysipelas",
+   "ids": [
+    "DE-OLDP-013",
+    "DE-OLDP-034"
+   ]
+  },
+  {
+   "theme": "Mycobacterium marinum: แผลตุ่มหนองหลังสัมผัสปลา/น้ำ",
+   "ids": [
+    "PP32-DER-048"
+   ]
+  },
+  {
+   "theme": "Irritant contact dermatitis: มือแห้งแตก (แม่บ้าน, alcohol hand rub)",
+   "ids": [
+    "DE-OLDP-014",
+    "DE-OLDP-015",
+    "DE-OLDP-037"
+   ]
+  },
+  {
+   "theme": "Allergic contact dermatitis: patch test หา allergen",
+   "ids": [
+    "DE-OLDP-021"
+   ]
+  },
+  {
+   "theme": "Dyshidrotic eczema: deep-seated vesicles ที่ฝ่ามือ/ข้างนิ้ว",
+   "ids": [
+    "DE-OLDP-029",
+    "DE-OLDP-030"
+   ]
+  },
+  {
+   "theme": "Atopic dermatitis: ตำแหน่ง flexural ในผู้ใหญ่, topical steroid + emollient",
+   "ids": [
+    "DE-OLDP-026",
+    "DE-OLDP-041",
+    "DE-OLDP-044",
+    "DE-OLDP-046"
+   ]
+  },
+  {
+   "theme": "SCLE: annular scaly plaque + anti-Ro/SSA",
+   "ids": [
+    "DE-OLDP-020",
+    "DE-OLDP-032"
+   ]
+  },
+  {
+   "theme": "Pityriasis rosea: collarette scale",
+   "ids": [
+    "DE-OLDP-027"
+   ]
+  },
+  {
+   "theme": "Secondary syphilis: ผื่นตามตัวร่วมกับรอยโรคในปาก",
+   "ids": [
+    "DE-OLDP-031"
+   ]
+  },
+  {
+   "theme": "Pityriasis alba: hypopigmented scaly patch ที่หน้า",
+   "ids": [
+    "DE-OLDP-033"
+   ]
+  },
+  {
+   "theme": "Seborrheic dermatitis: ketoconazole cream",
+   "ids": [
+    "DE-OLDP-035"
+   ]
+  },
+  {
+   "theme": "Acne vulgaris: C. acnes และคำแนะนำ (high-GI diet)",
+   "ids": [
+    "DE-OLDP-045",
+    "PP34-DER-006"
+   ]
+  },
+  {
+   "theme": "Verruca vulgaris: papule ขรุขระ + black dots",
+   "ids": [
+    "PP33-DER-066"
+   ]
+  },
+  {
+   "theme": "Lichen planus: potent topical corticosteroid",
+   "ids": [
+    "PP35-DER-055"
+   ]
+  }
+ ],
+ "onco": [
+  {
+   "theme": "Breast mass: workup (core needle biopsy) และพยาธิ DCIS",
+   "ids": [
+    "ON-OLDP-001",
+    "PP34-ONC-020"
+   ]
+  },
+  {
+   "theme": "Myelosuppression/febrile neutropenia จากเคมีบำบัด",
+   "ids": [
+    "ON-OLDP-002",
+    "PP31-ONC-026b"
+   ]
+  },
+  {
+   "theme": "Lung cancer: clubbing, paraneoplastic (SIADH ใน SCLC)",
+   "ids": [
+    "ON-OLDP-003",
+    "ON-OLDP-004"
+   ]
+  },
+  {
+   "theme": "SCLC: การรักษา (chemotherapy ± thoracic RT)",
+   "ids": [
+    "ON-OLDP-013",
+    "PP31-ONC-035"
+   ]
+  },
+  {
+   "theme": "SVC syndrome: สาเหตุ (NSCLC, thymoma) และอาการ",
+   "ids": [
+    "ON-OLDP-014",
+    "ON-OLDP-015",
+    "ON-OLDP-016"
+   ]
+  },
+  {
+   "theme": "Tumor lysis syndrome: วินิจฉัย, ลักษณะ (ไม่มี hyperCa)",
+   "ids": [
+    "ON-OLDP-017",
+    "ON-OLDP-018",
+    "ON-OLDP-039",
+    "ON-OLDP-040"
+   ]
+  },
+  {
+   "theme": "Hemorrhagic cystitis: cyclophosphamide",
+   "ids": [
+    "ON-OLDP-009",
+    "ON-OLDP-030",
+    "ON-OLDP-033"
+   ]
+  },
+  {
+   "theme": "Anthracycline/bleomycin toxicity: cardiomyopathy, extravasation, cumulative dose, pulmonary fibrosis",
+   "ids": [
+    "ON-OLDP-026",
+    "ON-OLDP-027",
+    "ON-OLDP-031",
+    "ON-OLDP-032"
+   ]
+  },
+  {
+   "theme": "มะเร็งที่หายขาดด้วยเคมีบำบัด: testicular germ cell, lymphoma, chemosensitivity",
+   "ids": [
+    "ON-OLDP-029",
+    "ON-OLDP-035",
+    "ON-OLDP-036",
+    "ON-OLDP-037",
+    "ON-OLDP-041",
+    "ON-OLDP-043",
+    "ON-OLDP-044"
+   ]
+  },
+  {
+   "theme": "Mediastinal germ cell tumor: β-hCG/AFP → choriocarcinoma vs seminoma",
+   "ids": [
+    "ON-OLDP-022",
+    "ON-OLDP-024",
+    "ON-OLDP-025",
+    "PP32-ONC-044"
+   ]
+  },
+  {
+   "theme": "Scrotal mass: workup ด้วย ultrasound",
+   "ids": [
+    "ON-OLDP-007"
+   ]
+  },
+  {
+   "theme": "Performance status (ECOG) และ treatment intent",
+   "ids": [
+    "ON-OLDP-008",
+    "ON-OLDP-010"
+   ]
+  },
+  {
+   "theme": "Hereditary cancer syndromes: Lynch (HNPCC), BRCA",
+   "ids": [
+    "ON-OLDP-011",
+    "ON-OLDP-012",
+    "ON-OLDP-021"
+   ]
+  },
+  {
+   "theme": "Cancer screening: test ที่ลด mortality",
+   "ids": [
+    "ON-OLDP-006",
+    "ON-OLDP-038"
+   ]
+  },
+  {
+   "theme": "Breast cancer: hormonal/targeted therapy (tamoxifen, trastuzumab) และผลข้างเคียง tamoxifen",
+   "ids": [
+    "ON-OLDP-020",
+    "PP34-ONC-015",
+    "PP31-ONC-026"
+   ]
+  },
+  {
+   "theme": "Metastatic breast cancer: palliative systemic therapy, brain metastasis",
+   "ids": [
+    "ON-OLDP-019",
+    "PP33-ONC-015"
+   ]
+  },
+  {
+   "theme": "หลักการรักษา: adjuvant chemotherapy, เฝ้าติดตามหลังผ่าตัด",
+   "ids": [
+    "ON-OLDP-005",
+    "ON-OLDP-028"
+   ]
+  },
+  {
+   "theme": "Risk factor มะเร็ง: smoking, asbestos-mesothelioma",
+   "ids": [
+    "ON-OLDP-034",
+    "ON-OLDP-042"
+   ]
+  },
+  {
+   "theme": "EGFR signaling: RAS-MAPK/PI3K-AKT",
+   "ids": [
+    "ON-OLDP-023"
+   ]
+  },
+  {
+   "theme": "Biostat: แปลผล 95% CI",
+   "ids": [
+    "PP35-ONC-057"
+   ]
+  }
+ ]
+}
