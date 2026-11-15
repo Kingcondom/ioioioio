@@ -25,6 +25,7 @@
   --ok:#a8dc5c;--ok-soft:#1b2c15;--miss:#eab863;--miss-soft:#2f2512;--bad:#ff8b7c;--bad-soft:#3a201d;--blue:#93bdf0;--blue-soft:#18263a;--note:#3a3416;--on-note:#f3e7a8;
   --focus:#93bdf0;--shadow:0 12px 32px -12px rgba(0,0,0,.8);color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--f);padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))}
 h1,h2,h3,h4,p{margin:0}
 h1,h2,h3{text-wrap:balance;font-weight:600}
@@ -52,7 +53,8 @@ button{font:inherit;color:inherit}
 .next small{font-size:12px;color:var(--muted)}
 .next b{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .next i{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--lime-2);color:#14200a;font-style:normal;font-weight:600}
-.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3)}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-3)}
+@media(min-width:640px){.tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .tile{display:grid;gap:var(--s-1);align-content:start;text-align:left;min-height:100px;padding:var(--s-4);border:0;border-radius:20px;background:var(--surface);cursor:pointer;min-width:0}
 .tile small{font-size:12px;font-weight:600;color:var(--muted);line-height:1.5}
 .tile b{font:600 24px/1.2 var(--mono)}
@@ -128,11 +130,27 @@ button{font:inherit;color:inherit}
 .others ol{margin:var(--s-2) 0 0;padding-left:1.4em;display:grid;gap:var(--s-2);font-size:14px}
 .others li span{display:block;color:var(--ok);font-weight:500}
 .reveal{min-height:44px;margin-top:var(--s-3);padding:0 16px;border:1px solid var(--line-2);border-radius:999px;background:none;color:var(--pen);font-size:14px;font-weight:600;cursor:pointer}
+.figs{display:flex;flex-wrap:wrap;gap:var(--s-2);margin:0 0 var(--s-4)}
+.figs figure{margin:0;flex:1 1 260px;min-width:0;background:var(--sunk);border-radius:var(--r-lg);padding:8px}
+.figs img{display:block;max-width:100%;max-height:420px;margin:0 auto;border-radius:var(--r-md);background:#fff;cursor:zoom-in}
+.figs figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+.thumbs{display:flex;flex-wrap:wrap;gap:var(--s-2)}
+.thumbs button{display:grid;gap:4px;width:132px;padding:6px;border:0;border-radius:var(--r-md);background:var(--surface);text-align:left;cursor:pointer;font-size:12px;color:var(--muted)}
+.thumbs img{width:100%;height:84px;object-fit:cover;border-radius:6px;background:#fff}
+.saq{display:grid;gap:var(--s-2);margin-top:var(--s-2)}
+.saq details{background:var(--sunk);border-radius:var(--r-lg);padding:0 14px}
+.saq summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:600;list-style:none}
+.saq summary::-webkit-details-marker{display:none}
+.saq summary::after{content:"ดูเฉลย";margin-left:auto;font-size:12px;color:var(--pen);padding-left:8px;white-space:nowrap}
+.saq details[open] summary::after{content:"ซ่อน"}
+.saq details>div{padding:0 0 12px}
+.lightbox{position:fixed;inset:0;z-index:40;background:rgba(10,12,9,.88);display:grid;place-items:center;padding:16px;cursor:zoom-out}
+.lightbox img{max-width:100%;max-height:100%;border-radius:8px;background:#fff}
 .empty{padding:var(--s-7) var(--s-4);text-align:center;color:var(--muted);background:var(--surface);border-radius:var(--r-xl)}
 .more{justify-self:center}
 
 /* ---------- แถบล่างลอย ---------- */
-.bnav{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));width:min(480px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--surface);border-radius:28px;padding:8px 4px;box-shadow:var(--shadow),0 0 0 1px var(--line)}
+.bnav{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));width:min(520px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:var(--surface);border-radius:28px;padding:8px 4px;box-shadow:var(--shadow),0 0 0 1px var(--line)}
 .bn{display:grid;justify-items:center;gap:2px;min-height:52px;padding:4px 0;background:none;border:0;color:var(--muted);font-size:12px;line-height:1.4;font-weight:500;cursor:pointer}
 .bn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .bn[aria-current="page"]{color:var(--ink);font-weight:600}
@@ -145,6 +163,7 @@ button{font:inherit;color:inherit}
   <button class="bn press" data-go="home"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>หน้าแรก</button>
   <button class="bn press" data-go="one"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>แก่นละ 1 ข้อ</button>
   <button class="bn press" data-go="synth"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>รวบยอด</button>
+  <button class="bn press" data-go="pic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 8"/></svg>มีรูป</button>
   <button class="bn press" data-go="wrong"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg>ทวนข้อผิด</button>
 </nav>
 
@@ -153,7 +172,7 @@ const D = __DATA__;
 const LET = 'ABCDE';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const inl = s => esc(s).replace(/\*\*\*?(.+?)\*\*\*?/g, '<strong>$1</strong>').replace(/(^|[^*\w])\*([^*\n]+?)\*(?!\*)/g, '$1<em>$2</em>');
 function md(t){
   let out = '', ul = false;
   String(t || '').split('\n').forEach(L => {
@@ -173,13 +192,16 @@ D.sets.forEach(s => {
   s.one.forEach((x, i) => ALL.push(Object.assign(x, { kind: 'one', set: s.key, no: s.label + ' ' + (i + 1) })));
   s.synth.forEach(x => ALL.push(Object.assign(x, { kind: 'synth', set: s.key, no: x.id })));
 });
+(D.pics || []).forEach(x => ALL.push(Object.assign(x, { no: x.id, years: x.years || [] })));
+const PICS = ALL.filter(x => x.kind === 'pic' || x.kind === 'saq');
+const MCQ = ALL.filter(x => x.kind !== 'saq');
 const BYID = Object.fromEntries(ALL.map(x => [x.kind + ':' + x.id, x]));
 const k = x => x.kind + ':' + x.id;
 const done = L => L.filter(x => ST.ans[k(x)] !== undefined).length;
-const right = L => L.filter(x => ST.ans[k(x)] === x.answer).length;
+const right = L => L.filter(x => ST.ans[k(x)] !== undefined && ST.ans[k(x)] === x.answer).length;
 const wrongs = () => ALL.filter(x => ST.ans[k(x)] !== undefined && ST.ans[k(x)] !== x.answer);
 
-function go(v){ ST.view = v; if (v === 'one' || v === 'synth') ST.mode = v; save(); render(); window.scrollTo(0, 0); }
+function go(v){ ST.view = v; if (v === 'one' || v === 'synth' || v === 'pic') ST.mode = v; save(); render(); window.scrollTo(0, 0); }
 document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(b.dataset.go)));
 
 function render(){
@@ -191,17 +213,18 @@ function render(){
 
 function renderHome(){
   const one = ALL.filter(x => x.kind === 'one'), syn = ALL.filter(x => x.kind === 'synth');
-  const d = done(ALL), p = ALL.length ? d / ALL.length : 0, acc = d ? Math.round(right(ALL) / d * 100) : 0;
+  const d = done(MCQ), p = MCQ.length ? d / MCQ.length : 0, acc = d ? Math.round(right(MCQ) / d * 100) : 0;
   const nextSet = D.sets.find(s => done(s.one) < s.one.length) || D.sets[0];
   $('#app').innerHTML = `
   <div class="top"><div><h1>MED421 Prep Drill</h1><p>แก่นละ 1 ข้อจากโพย MED28–35 และโจทย์รวบยอดที่เติมหัวข้อ NL 2567</p></div></div>
   <section class="hero">
     <div class="hero-r"><div style="display:grid;gap:4px;min-width:0"><span style="font-size:14px;opacity:.8">ความคืบหน้า</span>
-      <h2>ทำไปแล้ว ${d} จาก ${ALL.length} ข้อ</h2><p>ตอบถูก ${acc}% ของข้อที่ทำ</p></div>
+      <h2>ทำไปแล้ว ${d} จาก ${MCQ.length} ข้อ</h2><p>ตอบถูก ${acc}% ของข้อที่ทำ</p></div>
       <div class="ring" style="--p:${p}"><div class="ring-in"><b>${Math.round(p * 100)}</b><small>%</small></div></div></div>
     <button class="next press" id="cont"><span><small>ทำต่อ</small><b>${esc(nextSet.label)} ${esc(nextSet.thai)}: แก่นละ 1 ข้อ</b></span><i>→</i></button>
   </section>
   <div class="tiles">
+    <button class="tile press" data-go2="pic"><small>ข้อสอบมีรูป</small><b>${PICS.length}<em> ข้อ</em></b></button>
     <button class="tile press" data-go2="one"><small>แก่นละ 1 ข้อ</small><b>${done(one)}<em> / ${one.length}</em></b></button>
     <button class="tile press" data-go2="synth"><small>โจทย์รวบยอด</small><b>${done(syn)}<em> / ${syn.length}</em></b></button>
     <button class="tile press" data-go2="wrong"><small>ข้อที่ตอบผิด</small><b>${wrongs().length}</b></button>
@@ -214,6 +237,7 @@ function renderHome(){
     <ol>
       <li><b>แก่นละ 1 ข้อ</b>: ข้อสอบเก่า 1,101 ข้อในคลัง Ward Drill ยุบเหลือ ${one.length} แก่น เลือกข้อที่ออกหลายรุ่นที่สุดมาเป็นตัวแทน เรียงจากแก่นที่ออกบ่อยก่อน เฉลยมีเนื้อหาที่เกี่ยวข้องที่ต้องรู้ และข้ออื่นในแก่นเดียวกันไว้ทวนเร็ว</li>
       <li><b>โจทย์รวบยอด</b>: โจทย์ใหม่ ${syn.length} ข้อ แต่ละข้อรวมหลายแก่นที่เป็นเรื่องเดียวกัน และเติมหัวข้อในเกณฑ์ NL 2567 ที่โพยยังไม่เคยออก เฉลยมีสรุปทั้งเรื่อง</li>
+      <li><b>ข้อสอบมีรูป</b>: ${PICS.length} ข้อจากรูปในโพย MED35 (ECG, CXR, smear, ผื่น ฯลฯ) และรูปเดียวกันแนบไว้ในเฉลยของแก่นที่เกี่ยวข้อง</li>
       <li>ความคืบหน้าเก็บไว้ในเครื่องนี้เท่านั้น ถ้าล้างข้อมูลเบราว์เซอร์จะเริ่มใหม่</li>
     </ol>
     <button class="chip press" id="reset" style="justify-self:start">ล้างความคืบหน้า</button>
@@ -229,15 +253,15 @@ let shown = 30;
 function renderDrill(){
   if (ST.view !== 'drill') ST.view = 'drill';
   const s = D.sets.find(x => x.key === ST.set) || D.sets[0];
-  const base = ST.mode === 'one' ? s.one : s.synth;
+  const base = ST.mode === 'one' ? s.one : ST.mode === 'pic' ? PICS : s.synth;
   const L = base.filter(x => ST.filt === 'all' ? true : ST.filt === 'todo' ? ST.ans[k(x)] === undefined : ST.ans[k(x)] !== undefined && ST.ans[k(x)] !== x.answer);
   $('#app').innerHTML = `
-  <div class="strip" role="tablist">${D.sets.map(x => `<button class="tab press" role="tab" aria-selected="${x.key === s.key}" data-s="${x.key}">${esc(x.label)}<span class="n">${(ST.mode === 'one' ? x.one : x.synth).length}</span></button>`).join('')}</div>
+  <div class="strip" role="tablist" ${ST.mode === 'pic' ? 'hidden' : ''}>${D.sets.map(x => `<button class="tab press" role="tab" aria-selected="${x.key === s.key}" data-s="${x.key}">${esc(x.label)}<span class="n">${(ST.mode === 'one' ? x.one : x.synth).length}</span></button>`).join('')}</div>
   <div class="bar2">
-    <div class="seg" role="group" aria-label="ชุดข้อ"><button data-m="one" aria-pressed="${ST.mode === 'one'}">แก่นละ 1 ข้อ</button><button data-m="synth" aria-pressed="${ST.mode === 'synth'}">โจทย์รวบยอด</button></div>
+    <div class="seg" role="group" aria-label="ชุดข้อ"><button data-m="one" aria-pressed="${ST.mode === 'one'}">แก่นละ 1 ข้อ</button><button data-m="synth" aria-pressed="${ST.mode === 'synth'}">โจทย์รวบยอด</button><button data-m="pic" aria-pressed="${ST.mode === 'pic'}">มีรูป</button></div>
     <div class="chips" role="group" aria-label="กรอง"><button class="chip press" data-f="all" aria-pressed="${ST.filt === 'all'}">ทั้งหมด</button><button class="chip press" data-f="todo" aria-pressed="${ST.filt === 'todo'}">ยังไม่ทำ</button><button class="chip press" data-f="wrong" aria-pressed="${ST.filt === 'wrong'}">ตอบผิด</button></div>
   </div>
-  <div class="phead"><h2>${esc(s.label)} ${esc(s.thai)}</h2><span>ทำแล้ว ${done(base)}/${base.length} ข้อ ตอบถูก ${right(base)}</span></div>
+  <div class="phead"><h2>${ST.mode === 'pic' ? 'ข้อสอบมีรูป ทุกระบบ' : esc(s.label) + ' ' + esc(s.thai)}</h2><span>ทำแล้ว ${done(base)}/${base.length} ข้อ ตอบถูก ${right(base)}</span></div>
   <div class="stream" id="stream">${L.length ? L.slice(0, shown).map(card).join('') : `<p class="empty">${ST.filt === 'wrong' ? 'ยังไม่มีข้อที่ตอบผิดในระบบนี้' : 'ทำครบทุกข้อในระบบนี้แล้ว เลือกระบบอื่นจากแถบด้านบน'}</p>`}</div>
   ${L.length > shown ? `<button class="chip press more" id="more">แสดงอีก ${Math.min(30, L.length - shown)} ข้อ (เหลือ ${L.length - shown})</button>` : ''}`;
   document.querySelectorAll('[data-s]').forEach(b => b.onclick = () => { ST.set = b.dataset.s; shown = 30; save(); render(); window.scrollTo(0, 0); });
@@ -256,10 +280,13 @@ function renderWrong(){
 
 function card(x){
   const id = k(x), a = ST.ans[id], answered = a !== undefined;
-  const label = D.sets.find(s => s.key === x.set).label;
+  const label = (D.sets.find(s => s.key === x.set) || {label: x.set}).label;
+  if (x.kind === 'saq') return saqCard(x, label);
+  const figs = x.img ? `<div class="figs">${x.img.map(i => `<figure><img src="${esc(i.src)}" alt="${esc(i.cap)}" loading="lazy"><figcaption>${esc(i.cap)}</figcaption></figure>`).join('')}</div>` : '';
   const yrs = x.years.map(y => `<span class="tag yr">MED${y}</span>`).join('');
   const head = x.kind === 'one'
     ? `<span class="qno">${esc(x.no)}</span>${x.years.length >= 4 ? `<span class="tag hot">ออก ${x.years.length} รุ่น</span>` : `<span class="tag">ออก ${x.years.length} รุ่น</span>`}${yrs}`
+    : x.kind === 'pic' ? `<span class="qno">${esc(x.id)}</span><span class="tag">${esc(label)}</span>${yrs}`
     : `<span class="qno">${esc(x.id)}</span><span class="tag">คลุม ${x.themes.length} แก่น</span>${x.nl.length ? `<span class="tag nl">+NL ${x.nl.length}</span>` : ''}${yrs}`;
   const ch = x.choices.map((c, i) => {
     let cls = '';
@@ -272,16 +299,30 @@ function card(x){
     panel = `<p class="verdict ${ok ? 'ok' : 'miss'}">${ok ? '✓ ถูกต้อง' : '✗ ยังไม่ใช่ คำตอบคือ ' + LET[x.answer]}</p><div class="panel">` + (x.kind === 'one'
       ? `<div class="blk"><h4>เฉลย</h4>${md(x.note)}</div>${x.fix ? `<p class="fix"><strong>แก้ตามแนวทางปัจจุบัน:</strong> ${inl(x.fix)}</p>` : ''}
          <div class="blk"><h4>เนื้อหาที่เกี่ยวข้องที่ต้องรู้</h4>${md(x.related)}</div>
+         ${x.pics ? `<div class="blk"><h4>รูปจากข้อสอบจริง MED35</h4><div class="thumbs">${x.pics.map(p => `<button class="press" data-pic="${esc(p.id)}"><img src="${esc(p.img[0].src)}" alt="" loading="lazy">${esc(p.id)} ดูข้อนี้</button>`).join('')}</div></div>` : ''}
          ${x.others.length ? `<details class="others blk"><summary>ข้ออื่นในแก่นนี้ (${x.others.length})</summary><ol>${x.others.map(o => `<li>${esc(o.q)} ${o.years.length ? `<em class="src">(MED${o.years.join(', MED')})</em>` : ''}<span>→ ${esc(o.a)}</span></li>`).join('')}</ol></details>` : ''}
          <p class="src">${esc(x.src)}</p>`
+      : x.kind === 'pic' ? `<div class="blk"><h4>เฉลย</h4>${md(x.explain)}</div>${x.fix ? `<p class="fix"><strong>แก้ไข:</strong> ${inl(x.fix)}</p>` : ''}${x.pearl ? `<p class="pearl">${inl(x.pearl)}</p>` : ''}<p class="cov">แก่น: ${esc(x.theme)}</p>`
       : `<div class="blk"><h4>เฉลย</h4>${md(x.explain)}</div><div class="blk"><h4>สรุปทั้งเรื่อง</h4>${md(x.fullcover)}</div>
          ${x.pearl ? `<p class="pearl">${inl(x.pearl)}</p>` : ''}
          <p class="cov">ครอบคลุมแก่น: ${x.themes.map(esc).join(' / ')}${x.nl.length ? '<br>เพิ่มจาก NL ที่โพยยังไม่เคยออก: ' + x.nl.map(esc).join(' / ') : ''}</p>`) +
       `</div><button class="reveal press" data-reset="${id}">ลองทำข้อนี้ใหม่</button>`;
   }
   return `<article class="item" id="c-${id.replace(':', '-')}"><div class="ihead">${head}${ST.view === 'wrong' ? `<span class="tag">${esc(label)}</span>` : ''}</div>
-    <h3 class="topic">${esc(x.kind === 'one' ? x.theme : x.title)}</h3><p class="stem">${esc(x.q)}</p><div class="choices">${ch}</div>${panel}</article>`;
+    <h3 class="topic">${esc(x.kind === 'one' ? x.theme : x.title)}</h3><p class="stem">${esc(x.q)}</p>${figs}<div class="choices">${ch}</div>${panel}</article>`;
 }
+function saqCard(x, label){
+  return `<article class="item" id="c-${k(x).replace(':', '-')}"><div class="ihead"><span class="qno">${esc(x.id)}</span><span class="tag">${esc(label)}</span><span class="tag">${esc(x.station || 'SAQ')}</span>${x.years.map(y => `<span class="tag yr">MED${y}</span>`).join('')}</div>
+    <h3 class="topic">${esc(x.title)}</h3>${md(x.q)}<div class="figs" style="margin-top:12px">${x.img.map(i => `<figure><img src="${esc(i.src)}" alt="${esc(i.cap)}" loading="lazy"><figcaption>${esc(i.cap)}</figcaption></figure>`).join('')}</div>
+    <div class="saq">${x.parts.map(p => `<details><summary>${esc(p.q)}</summary><div>${md(p.a)}</div></details>`).join('')}</div>
+    ${x.fix ? `<p class="fix" style="margin-top:12px"><strong>แก้ไข:</strong> ${inl(x.fix)}</p>` : ''}${x.pearl ? `<p class="pearl" style="margin-top:12px">${inl(x.pearl)}</p>` : ''}<p class="cov" style="margin-top:8px">แก่น: ${esc(x.theme)}</p></article>`;
+}
+document.addEventListener('click', e => {
+  const im = e.target.closest('.figs img');
+  if (im) { const lb = document.createElement('div'); lb.className = 'lightbox'; lb.innerHTML = `<img src="${im.getAttribute('src')}" alt="">`; lb.onclick = () => lb.remove(); document.body.appendChild(lb); return; }
+  const pb = e.target.closest('[data-pic]');
+  if (pb) { ST.mode = 'pic'; ST.filt = 'all'; shown = 99; go('drill'); const el = document.getElementById('c-' + (BYID['pic:' + pb.dataset.pic] ? 'pic-' : 'saq-') + pb.dataset.pic); if (el) el.scrollIntoView(); }
+});
 function bindCards(){
   document.querySelectorAll('.choice:not([disabled])').forEach(b => b.onclick = () => {
     ST.ans[b.dataset.id] = +b.dataset.i; save();
@@ -293,9 +334,10 @@ function bindCards(){
 }
 function refreshHead(){
   const h = document.querySelector('.phead span'); if (!h || ST.view !== 'drill') return;
-  const s = D.sets.find(x => x.key === ST.set); const base = ST.mode === 'one' ? s.one : s.synth;
+  const s = D.sets.find(x => x.key === ST.set); const base = ST.mode === 'one' ? s.one : ST.mode === 'pic' ? PICS : s.synth;
   h.textContent = `ทำแล้ว ${done(base)}/${base.length} ข้อ ตอบถูก ${right(base)}`;
 }
 if (!['home', 'drill', 'wrong'].includes(ST.view)) ST.view = 'home';
+if (!['one', 'synth', 'pic'].includes(ST.mode)) ST.mode = 'one';
 render();
 </script>
