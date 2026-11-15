@@ -76,7 +76,7 @@ input{flex:1 1 200px;min-width:0}
 <div class="wrap">
   <header style="display:grid;gap:var(--s-2)">
     <h1>แก่นโพย MED421</h1>
-    <p class="sub">ข้อสอบเก่าในคลัง drill ระบบ Cardio, Nephro, Chest และ AIR รวม <span class="num" id="nItems"></span> ข้อ จากโพย MED28–MED35 จัดกลุ่มตามแก่นของโจทย์ แล้วดูว่าแต่ละรุ่นมีอะไรที่ไม่เคยอยู่ในโพยรุ่นก่อน</p>
+    <p class="sub">คลังข้อสอบเก่าในหน้า MED421 Ward Drill <span id="nSys"></span> รวม <span class="num" id="nItems"></span> ข้อ จากโพย MED28–MED35 จัดกลุ่มตามแก่นของโจทย์ แล้วดูว่าแต่ละรุ่นมีอะไรที่ไม่เคยอยู่ในโพยรุ่นก่อน</p>
   </header>
 
   <section class="card">
@@ -123,9 +123,10 @@ input{flex:1 1 200px;min-width:0}
   <section class="card">
     <h3>ข้อควรรู้ก่อนใช้</h3>
     <ol class="note">
-      <li>นับจากคลังข้อสอบเก่าใน drill เท่านั้น (ถอดจากโพย MED28–34 และ MED35) ยังไม่มี ID, Neuro, GI, Endo, Hemato, Skin, Onco</li>
+      <li>นับเฉพาะส่วน "คลังข้อสอบเก่า" ที่เรียบเรียงจากโพย ไม่รวม MCQ ที่แต่งใหม่และชุด mock<span id="noYear"></span></li>
       <li>ข้อที่โพยหลายรุ่นถามเรื่องเดียวกันถูกรวมเป็นข้อเดียวไว้แล้ว ปีของข้อดูจากช่อง "แหล่งที่มา" ของแต่ละข้อ</li>
-      <li>โพยแต่ละรุ่นจดมาไม่ครบเท่ากัน AIR ส่วนใหญ่มาจากโพย MED33 จึงดูเหมือน MED33 มีแก่นใหม่ฝั่ง AIR เยอะ</li>
+      <li>โพยแต่ละรุ่นจดมาไม่ครบเท่ากัน (MED31 จดมาเยอะสุด MED28–29 น้อยสุด) รุ่นที่จดน้อยจะดูเหมือนออกซ้ำน้อย ส่วนรุ่นถัดไปจะดูเหมือนมีแก่นใหม่เยอะกว่าความจริง</li>
+      <li>แก่นแบ่งตามระบบ เรื่องเดียวกันที่ถูกถามในสองระบบ (เช่น anaphylaxis ใน Cardio กับ AIR) อาจถูกนับเป็นสองแก่น</li>
       <li>การจัดแก่นเป็นดุลยพินิจ ข้อที่คาบเกี่ยวสองเรื่องถูกจัดไว้แก่นเดียวตามสิ่งที่โจทย์ถามจริง</li>
     </ol>
   </section>
@@ -136,10 +137,12 @@ const YEARS = D.per_year.map(p=>p.year);
 const $ = id=>document.getElementById(id);
 const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 $('nItems').textContent = D.n_items;
+$('nSys').textContent = `${D.systems.length} ระบบ (${D.systems.join(', ')})`;
 
 const multi = D.themes.filter(t=>t.n>=3), multiItems = multi.reduce((a,t)=>a+t.n,0);
 const recur = D.themes.filter(t=>Object.keys(t.years).length>=4);
 const single = D.themes.filter(t=>t.n===1).length;
+if(D.no_year) $('noYear').textContent = ` มี ${D.no_year} ข้อที่โพยไม่ได้ระบุรุ่น จึงไม่อยู่ในกราฟรายรุ่น`;
 $('stats').innerHTML = [
   [D.n_themes,'แก่นทั้งหมด'],
   [multi.length,`แก่นที่มี ≥3 ข้อ (${multiItems} ข้อ = ${Math.round(multiItems/D.n_items*100)}%)`],
