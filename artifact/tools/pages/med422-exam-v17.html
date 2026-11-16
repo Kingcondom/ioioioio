@@ -36,6 +36,10 @@ h1,h2,h3{font-family:var(--f-display);font-weight:600;text-wrap:balance;line-hei
 /* แอปรัวตอนเลื่อน (ผู้ใช้บอก 15 พ.ย.) — เบลอเฉพาะแถบบน/แถบล่างที่มีเนื้อหาเลื่อนผ่าน การ์ดในหน้าใช้พื้นทึบขึ้นแทน */
 .glass:not(header):not(.nav){-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.66)}
 .wrap{max-width:1100px;margin:0 auto;padding:16px}
+/* ทำแล้วกี่ครั้ง ในรายการเลือกสถานี (ผู้ใช้ขอ 16 พ.ย.) */
+.setrow.done .d{color:var(--green)}
+.donec{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;font-weight:600;line-height:1.3;color:var(--green);background:rgba(52,168,83,.12);border:1px solid rgba(52,168,83,.35);border-radius:999px;padding:2px 10px;margin:2px 0;white-space:nowrap}
+.donec.no{color:var(--muted);background:transparent;border-color:var(--edge);font-weight:500}
 /* top bar */
 header.top{display:flex;align-items:center;gap:12px;padding:14px 18px;position:sticky;top:0;z-index:6}
 header.top .brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:600;font-size:1.05rem}
@@ -573,13 +577,25 @@ function startRun(sid,mode,only){
   enterView({k:"run"});$("#homeBtn").hidden=false;
   openItem();
 }
+function doneMap(set){ // key → {n: ครั้งที่ทำ, last: วันที่ล่าสุด} นับเฉพาะครั้งที่มีคำตอบหรือคะแนนจริง
+  const m={},has=v=>v!=null&&JSON.stringify(v)!=="{}"&&JSON.stringify(v)!=="[]"&&v!=="";
+  ATT.filter(a=>a.setId===set.id).forEach(a=>{const seen={};
+    Object.keys(Object.assign({},a.ans||{},a.grade||{})).forEach(k=>{
+      if(!has((a.ans||{})[k])&&!has((a.grade||{})[k]))return;
+      const u=k.startsWith("m")?k.replace(/p\d+$/,""):k;if(seen[u])return;seen[u]=1;
+      const r=m[u]||(m[u]={n:0,last:""});r.n++;const t=a.finishedAt||a.startedAt||"";if(t>r.last)r.last=t;});});
+  return m;
+}
+function doneChip(r){if(!r)return `<span class="donec no">ยังไม่เคยทำ</span>`;
+  const d=r.last?new Date(r.last).toLocaleDateString("th-TH",{day:"numeric",month:"short",timeZone:"Asia/Bangkok"}):"";
+  return `<span class="donec" title="ทำแล้ว ${r.n} ครั้ง${d?" · ล่าสุด "+d:""}">✓ ทำแล้ว ${r.n} ครั้ง${d?" · "+d:""}</span>`}
 function renderPick(set){
-  run=null;stopClock();$("#clock").hidden=true;chrome(true);$("#where").textContent=set.title;$("#homeBtn").hidden=false;enterView({k:"pick",sid:set.id});
+  run=null;stopClock();$("#clock").hidden=true;chrome(true);$("#where").textContent=set.title;$("#homeBtn").hidden=false;enterView({k:"pick",sid:set.id});const DM=doneMap(set);
   $("#app").innerHTML=`<h2 style="margin:6px 0 12px">${set.stations.length?"เลือกสถานี":"เลือกเคส"}จาก ${esc(set.title)}</h2>
-   <div class="sets">${set.stations.map(st=>`<div class="setrow glass"><div class="d"><b>${st.n}</b>${set.bank?"ข้อ":"สถานี"}</div>
-     <div><h3>${esc(st.title)}</h3><span class="chip k-${st.kind}">${KIND[st.kind]}${st.link?" ต่อจากสถานี "+st.link:""}</span>${st.freq>1?` <span class="chip">ออกในโพย ${st.freq} ครั้ง</span>`:""}${hotChip(st)}${hotWhy(st)}</div>
+   <div class="sets">${set.stations.map(st=>`<div class="setrow glass${DM["s"+st.n]?" done":""}"><div class="d"><b>${DM["s"+st.n]?"✓ ":""}${st.n}</b>${set.bank?"ข้อ":"สถานี"}</div>
+     <div><h3>${esc(st.title)}</h3>${doneChip(DM["s"+st.n])} <span class="chip k-${st.kind}">${KIND[st.kind]}${st.link?" ต่อจากสถานี "+st.link:""}</span>${st.freq>1?` <span class="chip">ออกในโพย ${st.freq} ครั้ง</span>`:""}${hotChip(st)}${hotWhy(st)}</div>
      <div class="acts"><button class="btn" data-n="${st.n}">ทำสถานีนี้</button></div></div>`).join("")}
-   ${set.meq.map((c,i)=>`<div class="setrow glass"><div class="d"><b>M${i+1}</b>MEQ</div><div><h3>${esc(c.title)}</h3><span class="chip">${c.pages.length} หน้า</span> <span class="chip">${c.pages.reduce((t,p)=>t+(p.min||3),0)} นาที</span></div><div class="acts"><button class="btn" data-m="${i}">ทำ MEQ นี้</button></div></div>`).join("")}</div>`;
+   ${set.meq.map((c,i)=>`<div class="setrow glass${DM["m"+i]?" done":""}"><div class="d"><b>${DM["m"+i]?"✓ ":""}M${i+1}</b>MEQ</div><div><h3>${esc(c.title)}</h3>${doneChip(DM["m"+i])} <span class="chip">${c.pages.length} หน้า</span> <span class="chip">${c.pages.reduce((t,p)=>t+(p.min||3),0)} นาที</span></div><div class="acts"><button class="btn" data-m="${i}">ทำ MEQ นี้</button></div></div>`).join("")}</div>`;
   $("#app").querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>startRun(set.id,"osce",+b.dataset.n));
   $("#app").querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{bell(0);enterView({k:"run"});run={set,mode:"meq",queue:set.meq[+b.dataset.m].pages.map((p,pi)=>({t:"mp",ci:+b.dataset.m,pi,sec:(p.min||3)*60})),idx:0,ans:{},chat:{},grade:{},started:new Date().toISOString(),strict:true};openItem()});
 }
