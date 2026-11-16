@@ -1,0 +1,1303 @@
+{
+ "lec": "3/11",
+ "date": "อ. 3 พ.ย.",
+ "title": "Asthma — โรคหืด: วินิจฉัยและดูแลตาม GINA 2026",
+ "subtitle": "นิยามและกลไก T2 · วินิจฉัยด้วย BDR ≥ 12% + 200 mL และ PEF variability · แยกโรคตามอายุ · คุมอาการ 4 ข้อ · Track 1 ICS-formoterol (AIR → MART) · I ADORE และหืดรุนแรง · หอบกำเริบ 92/30/50 และเกณฑ์จำหน่าย",
+ "objectives": [
+  "บอกนิยามหืดตาม GINA (อาการแปรปรวน + ลมหายใจออกแปรปรวน) และอธิบายกลไกของอาการ เช่น อาการกลางคืนและ silent chest",
+  "อธิบาย Type 2 cascade (IL-4, IL-5, IL-13), early/late phase, remodeling และจับคู่ biomarker กับ biologic ได้",
+  "แปลผล spirometry ก่อน–หลังยาขยาย (≥ 12% และ ≥ 200 mL) PEF variability (> 10%) และ challenge test โดยไม่ใช้เกณฑ์ FEV1/FVC < 0.7",
+  "แยกหืดจาก COPD, inducible laryngeal obstruction, สิ่งแปลกปลอม, หัวใจล้มเหลว และวัณโรคตามช่วงอายุ",
+  "ประเมิน symptom control 4 ข้อและปัจจัยเสี่ยงต่อการกำเริบ บอกความหมายของ clinical/complete remission",
+  "เลือกขั้นเริ่มต้นตาม GINA 2026 Track 1/Track 2 สั่ง MART ได้ถูกขนาด และอธิบายว่าทำไม SABA เดี่ยวอันตราย",
+  "ไล่ I ADORE ก่อน step up แยก difficult-to-treat กับ severe asthma และดูแลกลุ่มพิเศษ (ตั้งครรภ์ AERD ผ่าตัด)",
+  "จัดระดับและรักษาหอบกำเริบ (92/30/50) รู้สัญญาณใกล้หายใจล้มเหลว เกณฑ์จำหน่าย (1–2/92/70) และสอน written action plan"
+ ],
+ "nlGap": "ตรงกับเกณฑ์ฯ แพทยสภา: asthma (`นล. 2.3.10(1)` กลุ่ม 2 — ดูแลเองได้, `B6.2.2(2)`) · asthma exacerbation (`2.2.11`) · acute respiratory failure (`2.2.9`) · spirometry/PEF (`3.3.18`, `B6.3(3)`) · ABG (`3.3.17`) · ยาขยายหลอดลม/ICS (`B6.4(4)`, `B6.4(5)`) · ภูมิแพ้และ biologic (`B1.4.11(1)`, `B1.4.14`) · บุหรี่ (`2.3.19(6)`) · **คาบนี้ไม่มีสไลด์ในมือ** — เนื้อหาเรียบเรียงจาก **เสียงบรรยาย 85 นาที (Plaud, 3 พ.ย. 2569)** และเทียบตัวเลขกับ **GINA 2026 Summary Guide** ตามหน้า \"Asthma ข้างเตียง\" · จุดที่ในคาบพูดไม่ชัดหรือต่างจากไกด์ไลน์ระบุไว้ในบทเรียนตรงจุดนั้น (เช่น PEF variability 10% vs 40%, \"ตั้งแต่ 2 ครั้ง\" vs \"มากกว่า 2 ครั้ง\", stridor ≠ bronchitis) · ไม่ทราบชื่ออาจารย์ผู้บรรยายจากไฟล์เสียง",
+ "guidelines": [
+  "**GINA 2026** — Global Strategy for Asthma Management and Prevention, Summary Guide (ginasthma.org) · แหล่งหลัก",
+  "**เสียงบรรยาย \"การวินิจฉัยและการจัดการโรคหืด\" 3 พ.ย. 2569** (Plaud, 85 นาที) — สิ่งที่อาจารย์เน้น ตัวอย่าง และข้อเตือน",
+  "**หน้า Asthma ข้างเตียง: GINA 2026 (บรรยาย 3 พ.ย.)** — ฉบับที่ไล่ transcript ครบและเทียบตัวเลขกับ GINA 2026 แล้ว"
+ ],
+ "sections": [
+  {
+   "id": "chest-ast-01",
+   "title": "หืดคืออะไร — อาการแปรปรวน ลมแปรปรวน และทำไมถึงมีอาการแบบนี้",
+   "summary": "นิยาม GINA · 4 อาการหลัก · แปรปรวนตามเวลาและตัวจุด · ตรวจร่างกายปกติได้ · silent chest · กลไกของแต่ละอาการ",
+   "minutes": 9,
+   "source": "เสียงบรรยาย 3 พ.ย. 2569 (Plaud) + GINA 2026 Summary Guide",
+   "nl": [
+    "2.3.10(1)",
+    "B6.2.2(2)",
+    "2.1.34",
+    "2.1.32"
+   ],
+   "md": "### นิยาม\nหืด (asthma) เป็น **โรคที่หลากหลาย (heterogeneous) มักมีการอักเสบเรื้อรังของทางเดินหายใจ** วินิจฉัยจาก 2 ขาเสมอ\n1. **อาการทางเดินหายใจที่แปรปรวน** — หวีด (wheeze) หายใจลำบาก แน่นหน้าอก ไอ\n2. **หลักฐานของลมหายใจออกที่แปรปรวน (variable expiratory airflow limitation)** — ตอนนี้ หรือเคยบันทึกไว้\n\n> อาจารย์ย้ำในคาบว่านิยามของหืดใน GINA ปัจจุบัน **ไม่ได้ใช้คำว่า obstruction แล้ว** ใช้คำว่า **variable** — คำว่า \"แปรปรวน\" คือหัวใจของโรคนี้ ทั้งใช้วินิจฉัยและใช้แยกจาก COPD\n\n### ลักษณะอาการที่ชวนนึกถึงหืด\n- มีอาการ **มากกว่า 1 อย่าง** ใน 4 อย่าง (wheeze · เหนื่อย · แน่นอก · ไอ)\n- **มีช่วงเป็น มีช่วงหาย** แปรปรวนตามเวลาและความแรง — ถ้าเป็นตลอดเวลาไม่ใช่ลักษณะหืด เว้นแต่โรคหนักมาก\n- **แย่ตอนกลางคืนหรือเช้ามืด**\n- มี **ตัวจุด**: ออกกำลังกาย หัวเราะ สารก่อภูมิแพ้ อากาศเย็น หวัด · ตัวอย่างในคาบ: ความชื้น ฝนตก โดนแอร์ อากาศเปลี่ยนจากร้อนเป็นเย็น ควันบุหรี่ มลพิษ\n- อาการค่อย ๆ ไล่จากน้อยไปมาก: **ไอ → เหนื่อย/แน่นอก → หอบจนต้องรีบมาโรงพยาบาล**\n\n### การตรวจร่างกาย\n**ปกติได้** ในช่วงที่ไม่มีอาการ — ตรวจปกติจึง **ไม่ตัดหืด** · ช่วงมีอาการได้ยิน wheeze ตอนหายใจออก (โดยเฉพาะหายใจออกแรง)\n\n#### ทำไมถึงมีอาการนี้\n| อาการ | กลไก |\n|---|---|\n| **Wheeze ช่วงหายใจออก** | ลมไหลเร็วผ่านหลอดลมที่ตีบ ผนังสั่นเกิดเสียง · ตอนหายใจออกความดันรอบหลอดลมสูงขึ้น หลอดลมยิ่งแคบ |\n| **แย่ช่วงกลางคืน/เช้ามืด** | cortisol และ catecholamine ต่ำสุด · vagal tone สูง · อุณหภูมิทางเดินหายใจลดลง |\n| **แย่หลังออกกำลัง/อากาศเย็น** | หายใจเร็ว เยื่อบุแห้งและเย็น → osmolarity เปลี่ยน → mast cell ปล่อยสาร หลอดลมบีบ |\n| **ไอเรื้อรังอย่างเดียว** | **cough-variant asthma** — หลอดลมไวเกิน (AHR) เด่น แต่บีบตัวไม่มาก |\n| **Silent chest** | ลมผ่านน้อยจน **ไม่มีเสียง wheeze** = อันตรายกว่ามีเสียง ต้องช่วยด่วน |\n\n> **Silent chest ไม่ใช่ดีขึ้น** — wheeze ที่เบาลงในคนที่ยังหอบแปลว่าลมเข้าออกน้อยลงจนไม่พอทำให้เกิดเสียง",
+   "pearls": [
+    "วินิจฉัยหืด = อาการแปรปรวน + ลมหายใจออกแปรปรวน (ต้องมีหลักฐาน)",
+    "GINA ปัจจุบันใช้คำว่า variable ไม่ใช้คำว่า obstruction ในนิยาม",
+    "ตรวจร่างกายปกติในช่วงไม่มีอาการ ไม่ตัดหืด",
+    "อาการแย่ตอนกลางคืน/เช้ามืด เพราะ cortisol ต่ำ vagal tone สูง",
+    "Silent chest ในคนหอบ = อันตราย ไม่ใช่ดีขึ้น"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-01",
+     "kind": "mcq",
+     "topic": "Definition of asthma",
+     "stem": "Which statement best describes the key diagnostic feature of asthma in current GINA guidance?",
+     "choices": [
+      "A raised total serum IgE level with a family history of atopy",
+      "Wheeze heard on chest auscultation at the clinic visit",
+      "Persistent breathlessness that is present every day without symptom-free periods",
+      "A post-bronchodilator FEV1/FVC ratio below 0.70 in a patient with wheeze",
+      "A history of variable respiratory symptoms together with evidence of variable expiratory airflow limitation"
+     ],
+     "answer": 4,
+     "explain": "นิยามหืดตาม GINA มี **2 ขา**: **อาการแปรปรวน** (wheeze เหนื่อย แน่นอก ไอ เปลี่ยนตามเวลาและความแรง) + **หลักฐานลมหายใจออกแปรปรวน** · อาจารย์ย้ำว่านิยามปัจจุบันใช้คำว่า **variable** ไม่ได้ใช้คำว่า obstruction\n\n- *FEV1/FVC < 0.70 post-BD* — เป็นเกณฑ์ obstruction ของ **COPD** ไม่ใช่เกณฑ์วินิจฉัยหืด\n- *ได้ยิน wheeze ที่คลินิก* — หืดตรวจปกติได้ในช่วงไม่มีอาการ และ wheeze พบในหลายโรค\n- *IgE สูง + ภูมิแพ้ในครอบครัว* — บอกแค่ atopy ไม่ยืนยันหืด\n- *เหนื่อยทุกวันไม่มีช่วงปกติ* — ขัดกับลักษณะแปรปรวน ชวนนึกถึง COPD/HF มากกว่า",
+     "pearl": "หืด = อาการแปรปรวน + ลมแปรปรวน ไม่ใช่ FEV1/FVC < 0.7",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B6.2.2(2)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-02",
+     "kind": "mcq",
+     "topic": "Silent chest",
+     "stem": "A 22-year-old man with asthma has been breathless for 6 hours. On arrival he had loud widespread wheeze. Thirty minutes later he is drowsy, speaks single words, and the wheeze has become much quieter. SpO2 is 88% on room air. What does the change in his chest sounds most likely indicate?",
+     "choices": [
+      "Development of a pneumonia with consolidation",
+      "Vocal cord dysfunction replacing bronchospasm",
+      "A side effect of salbutamol causing reduced airway secretions",
+      "Resolution of bronchospasm after the first bronchodilator dose",
+      "Critically reduced airflow with impending respiratory failure"
+     ],
+     "answer": 4,
+     "explain": "**Silent/quiet chest** — wheeze เกิดจากลมไหลเร็วผ่านหลอดลมตีบ ถ้าลมผ่าน **น้อยลงมาก** เสียงก็หายไป · ในคนที่ยังหอบ ซึม พูดได้ทีละคำ SpO₂ 88% = **life-threatening** ต้องช่วยด่วนและเตรียม ICU\n\n- *หลอดลมคลายแล้ว* — ถ้าดีขึ้นจริงต้องพูดได้มากขึ้น ตื่นตัว SpO₂ ดีขึ้น ไม่ใช่ซึมลง\n- *pneumonia* — ไม่อธิบายการเปลี่ยนเสียงภายใน 30 นาที\n- *vocal cord dysfunction* — มี stridor ตอนหายใจเข้า SpO₂ มักปกติ\n- *ผลข้างเคียง salbutamol* — ไม่ทำให้เสียงหายใจหายไป",
+     "pearl": "Wheeze เบาลงแต่คนไข้แย่ลง = silent chest ไม่ใช่ดีขึ้น",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.2.11",
+      "2.1.34"
+     ]
+    },
+    {
+     "id": "CH-OLD-53",
+     "kind": "old",
+     "stem": "A 24-year-old man has had nocturnal wheeze and breathlessness almost every night for 1 week, with no daytime symptoms and no leg oedema. He has nasal congestion and rhinorrhoea every evening. Examination shows pale swollen inferior turbinates, no jugular venous distension, normal heart sounds and clear lungs. What is the most likely cause of his breathlessness?",
+     "choices": [
+      "Bronchiectasis",
+      "Pulmonary embolism",
+      "Chronic obstructive pulmonary disease",
+      "Congestive heart failure",
+      "Asthma"
+     ],
+     "answer": 4,
+     "explain": "เบาะแสที่ชี้ asthma\n1. **อาการกลางคืนเป็นหลัก** — เพราะกลางคืน **vagal tone สูง, cortisol และ catecholamine ต่ำที่สุด, airway calibre ต่ำสุดราวตี 4** และการนอนราบทำให้สารคัดหลั่งจากจมูกไหลลงคอ\n2. **มี allergic rhinitis ร่วม** (**turbinate ซีดและบวม**) — แนวคิด **\"united airway disease\"**: ผู้ป่วย asthma กว่า 80% มี rhinitis ร่วม และการรักษาจมูกช่วยควบคุมหอบ\n3. **อายุน้อย ไม่สูบบุหรี่ ไม่มีสัญญาณของหัวใจล้มเหลว** และ **ตรวจปอดปกติระหว่างที่ไม่มีอาการ** ซึ่งเป็นลักษณะปกติของ asthma (ต่างจาก COPD ที่มักผิดปกติต่อเนื่อง)\n\n**การวินิจฉัยยืนยัน**: **spirometry ก่อน-หลัง bronchodilator** (FEV1 เพิ่ม **≥12% และ ≥200 mL** = reversible) หรือ **serial peak expiratory flow variability > 10%** หรือ bronchial provocation test เมื่อ spirometry ปกติ\n\n**อย่าลืมแยก \"cardiac asthma\"**: หอบกลางคืนใน heart failure (PND) จะมี **orthopnoea, JVP สูง, crepitation, S3 และขาบวม** ซึ่งโจทย์ตัดออกให้หมดแล้ว",
+     "pearl": "",
+     "topic": "คลังข้อสอบเก่า MED28–MED35",
+     "src": "MED31 past paper loop C&D – ผู้ป่วยชายไทย อายุ 24 ปี เหนื่อยหอบตอนกลางคืนแทบทุกคืน 1 สัปดาห์ ไม่มีอาการกลางวัน nasal mucosa swelling and pale at inferior turbinate → Asthma; MED32 MCQ ข้อ 61 – อาการคล้าย asthma เป็นตอนกลางคืน → spirometry ก่อน; MED34 MCQ ครั้งที่ 4 ข้อ 72 – Asthma ไอกลางคืน → dx spirometry",
+     "ref": [],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)",
+      "B6.2.2(2)"
+     ]
+    }
+   ],
+   "figs": {}
+  },
+  {
+   "id": "chest-ast-02",
+   "title": "กลไก — T2-high กับ T2-low, ไซโตไคน์ 4-5-13 และ airway remodeling",
+   "summary": "Phenotype vs endotype · allergic/non-allergic eosinophilic · T2-low · Th2 → IL-4/5/13 · early vs late phase · remodeling · biomarker และ biologic ตามสาย",
+   "minutes": 12,
+   "source": "เสียงบรรยาย 3 พ.ย. 2569 (Plaud) + GINA 2026 Summary Guide",
+   "nl": [
+    "B6.2.2(2)",
+    "B1.4.11(1)",
+    "B1.4.6",
+    "B1.4.14"
+   ],
+   "md": "### Phenotype กับ endotype — แยกคำให้ขาด\n- **Phenotype** = ลักษณะที่ผู้ป่วยแสดงออก เช่น allergic vs non-allergic · classic vs **cough-variant** · มี **persistent airflow limitation** หรือไม่ · บริบทพิเศษ (occupational, อ้วน, มี chronic rhinosinusitis)\n- **Endotype** = กลไกการอักเสบข้างใน แบ่งตามการอักเสบ\n\n| Endotype | ลักษณะ |\n|---|---|\n| **Allergic eosinophilic** (T2-high) | พบบ่อยสุด เริ่มตั้งแต่เด็ก มีภูมิแพ้ร่วม IgE สูง ตอบ ICS ดี |\n| **Non-allergic eosinophilic** (T2-high) | เริ่มตอนโต ไม่มีประวัติแพ้ชัด อาจเกี่ยวกับงาน/สิ่งแวดล้อม eos ยังสูง มักมี nasal polyp |\n| **T2-low** | ไม่ได้อาศัยสาย Th2 เป็นหลัก — neutrophilic (Th1/Th17) หรือ paucigranulocytic · มักพบในอ้วน สูบบุหรี่ · ตอบ ICS น้อยกว่า |\n\n> อาจารย์ใช้คำ **\"T2-low\"** ไม่ใช้ \"non-T2\" เพราะสาย T2 \"มีน้อย แต่ไม่ได้เป็นศูนย์\"\n\n### Type 2 cascade ทีละขั้น\n1. สารก่อภูมิแพ้ถูก **dendritic cell** จับและนำเสนอต่อ naive T cell · **TSLP** (alarmin จากเยื่อบุ) ส่งเสริมให้เป็น **Th2**\n2. Th2 หลั่งไซโตไคน์ 3 ตัวที่ต้องจำ\n   - **IL-4** — กระตุ้น B cell เป็น plasma cell สร้าง **IgE** ไปเกาะ mast cell\n   - **IL-5** — เรียกและกระตุ้น **eosinophil**\n   - **IL-13** — กระตุ้น **goblet cell สร้างเมือก** หลอดลมไวเกิน และทำให้ **FeNO** สูง\n3. **Early phase (นาที)** — สัมผัสสารซ้ำ จับ IgE บน mast cell → degranulation → histamine, prostaglandin, leukotriene, PAF → **หลอดลมบีบ หลอดเลือดขยายและรั่ว mucociliary clearance เสีย**\n4. **Late phase (4–8 ชม.)** — eosinophil หลั่ง **major basic protein (MBP)** ทำลายเยื่อบุ\n5. อักเสบนานจบที่ **airway remodeling** — กล้ามเนื้อเรียบหนา คอลลาเจนและพังผืดใต้เยื่อบุ goblet cell เพิ่ม เส้นเลือดเพิ่ม → **ตีบถาวร (persistent airflow limitation)**\n\n[[fig:ast_cascade]]\n\n### ตัวจุด → endotype\n- สารก่อภูมิแพ้ → Th2 → IL-4/5/13 + IgE เด่น = **allergic eosinophilic**\n- ติดเชื้อ มลพิษ ควันบุหรี่ → ยังเป็นสาย T2 (ผ่าน alarmin/ILC2) แต่ IgE ไม่เด่น = **non-allergic eosinophilic**\n- ไม่ไปทาง IL-4/5 แต่ไปทาง neutrophil = **T2-low**\n\n> **อุปมาของอาจารย์: การอักเสบเหมือนน้ำ** — ปิด IgE น้ำก็วิ่งไปด้านข้าง ปิดสาย 4 ก็ไปสาย 5 ปิดสาย 5 ก็ไปสาย 4 ในผู้ป่วยหนึ่งคนจึงแยกขาด 100% ว่าเป็นสายเดียวไม่ได้ · ยา biologic รุ่นหลังจึงมุ่งตัด **ต้นน้ำ** (IL-4Rα, TSLP) มากกว่าบล็อก IgE อย่างเดียว\n\n#### ไซโตไคน์ → biomarker → biologic\n| สาย | biomarker ที่สูง | biologic |\n|---|---|---|\n| IL-4 → IgE | IgE · skin prick บวก | **Omalizumab** (anti-IgE) |\n| IL-5 → eosinophil | blood eosinophil | **Mepolizumab, Reslizumab** (anti-IL-5) · **Benralizumab** (anti-IL-5Rα) |\n| IL-13 (+IL-4) | **FeNO** | **Dupilumab** (anti-IL-4Rα ซึ่ง IL-4 และ IL-13 ใช้ร่วมกัน) |\n| ต้นน้ำ TSLP | ไม่ต้องรอ biomarker สูง | **Tezepelumab** (anti-TSLP) |",
+   "pearls": [
+    "ไซโตไคน์ที่ต้องจำ: IL-4 สร้าง IgE · IL-5 เรียก eosinophil · IL-13 สร้างเมือกและ FeNO",
+    "Early phase (นาที) = mast cell degranulation · late phase (4–8 ชม.) = eosinophil ปล่อย MBP",
+    "อักเสบเรื้อรัง → remodeling → persistent airflow limitation",
+    "T2-low = neutrophilic/paucigranulocytic ตอบ ICS น้อยกว่า",
+    "Dupilumab ตัด IL-4Rα (ทั้งสาย IL-4 และ IL-13) · tezepelumab ตัด TSLP ต้นน้ำ"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-03",
+     "kind": "mcq",
+     "topic": "Th2 cytokines",
+     "stem": "In allergic eosinophilic asthma, which cytokine is principally responsible for recruiting and prolonging the survival of eosinophils in the airway?",
+     "choices": [
+      "Interleukin-13",
+      "Interleukin-17",
+      "Interferon-gamma",
+      "Interleukin-4",
+      "Interleukin-5"
+     ],
+     "answer": 4,
+     "explain": "จำ **4 · 5 · 13**: **IL-5 เรียกและยืดอายุ eosinophil** (เป้าของ mepolizumab/benralizumab)\n\n- *IL-4* — ทำให้ B cell สลับไปสร้าง **IgE** และส่งเสริม Th2\n- *IL-13* — goblet cell สร้างเมือก หลอดลมไวเกิน และทำให้ FeNO สูง\n- *IFN-γ* — ไซโตไคน์ Th1 ยับยั้ง Th2\n- *IL-17* — Th17 ดึง **neutrophil** = กลไกของ T2-low asthma",
+     "pearl": "IL-4 = IgE · IL-5 = eosinophil · IL-13 = เมือก/FeNO",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.2.2(2)",
+      "B1.4.6"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-04",
+     "kind": "mcq",
+     "topic": "Late-phase reaction",
+     "stem": "An allergic patient with asthma inhales cat allergen. Bronchoconstriction develops within 15 minutes, resolves, and then recurs 6 hours later. Which mechanism best explains the second episode?",
+     "choices": [
+      "Immediate degranulation of IgE-sensitised mast cells releasing histamine",
+      "Neutrophil recruitment by interleukin-17 after bacterial infection",
+      "Complement activation by immune complexes deposited in the bronchial wall",
+      "Direct cholinergic reflex triggered by irritant receptors",
+      "Eosinophil infiltration releasing major basic protein and other mediators"
+     ],
+     "answer": 4,
+     "explain": "**Late phase (4–8 ชม.)** — mast cell และ Th2 ปล่อยไซโตไคน์เรียก **eosinophil** ซึ่งหลั่ง **MBP** ทำลายเยื่อบุ ร่วมกับ leukotriene → หลอดลมตีบซ้ำและไวเกิน · ICS ป้องกัน late phase ได้ดี\n\n- *mast cell degranulation ทันที* — คือ **early phase** (นาที) ซึ่งเป็นตอนแรก\n- *IL-17/neutrophil* — กลไก T2-low ไม่ใช่ปฏิกิริยาต่อสารแพ้\n- *cholinergic reflex* — เกิดทันที ไม่ใช่ 6 ชม.\n- *immune complex* — type III hypersensitivity ไม่ใช่กลไกของหืด",
+     "pearl": "Early phase = mast cell (นาที) · late phase = eosinophil/MBP (4–8 ชม.)",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.2.2(2)",
+      "B1.4.11(1)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-05",
+     "kind": "mcq",
+     "topic": "Biologic targets",
+     "stem": "Which biologic agent used in severe asthma blocks the interleukin-4 receptor alpha subunit, thereby inhibiting signalling by both interleukin-4 and interleukin-13?",
+     "choices": [
+      "Dupilumab",
+      "Benralizumab",
+      "Omalizumab",
+      "Tezepelumab",
+      "Mepolizumab"
+     ],
+     "answer": 0,
+     "explain": "**Dupilumab** จับ **IL-4Rα** ซึ่งเป็นตัวรับร่วมของ IL-4 และ IL-13 → ลด IgE เมือก และ FeNO · เหมาะกับ eosinophilic/Type 2 หรือคนที่ต้องใช้ OCS ประจำ\n\n- *Omalizumab* — จับ **IgE** อิสระ\n- *Mepolizumab* — จับ **IL-5**\n- *Benralizumab* — จับ **IL-5Rα** บน eosinophil (ทำลาย eos ผ่าน ADCC)\n- *Tezepelumab* — จับ **TSLP** (alarmin ต้นน้ำ)",
+     "pearl": "Dupilumab = IL-4Rα (ตัด IL-4 + IL-13)",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B1.4.14",
+      "B6.2.2(2)"
+     ]
+    }
+   ],
+   "figs": {
+    "ast_cascade": {
+     "title": "Type 2 cascade — จากตัวจุดถึง remodeling และจุดที่ยาออกฤทธิ์",
+     "cap": "ตัวจุดทำให้เยื่อบุปล่อย **alarmin (TSLP, IL-33, IL-25)** → dendritic cell และ ILC2 พา T cell ไปเป็น **Th2** → **IL-4** สร้าง IgE ที่ไปเกาะ mast cell · **IL-5** เรียกและยืดอายุ eosinophil · **IL-13** สร้างเมือก หลอดลมไวเกิน และทำให้ **FeNO** สูง · biologic ตัดตามจุดในกล่องสีน้ำเงิน ส่วน β2-agonist คลายกล้ามเนื้อเรียบที่ปลายทาง และ **ICS ลดการอักเสบทั้งสาย** · อาจารย์เตือนว่าแผนภาพที่วาดเองช่วยจำลำดับเท่านั้น เวลาสอบให้อิงรูปจาก GINA หรือ review มาตรฐาน",
+     "svg": "<svg viewBox=\"0 0 420 352\" role=\"img\" aria-label=\"Type 2 cascade ในโรคหืด จากตัวจุด alarmin Th2 ไซโตไคน์ IL-4 IL-5 IL-13 ไปสู่ early phase late phase และ remodeling พร้อมจุดที่ยาออกฤทธิ์\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"110\" y=\"8\" width=\"200\" height=\"34\" rx=\"8\" class=\"sk\"/><text x=\"210\" y=\"24\" class=\"sm b mid\">ตัวจุด</text><text x=\"210\" y=\"37\" class=\"xs mid mu\">ไรฝุ่น ไวรัส ควัน PM2.5 อากาศเย็น</text>\n<line x1=\"210\" y1=\"42\" x2=\"210\" y2=\"54\" class=\"ln\"/>\n<rect x=\"110\" y=\"54\" width=\"200\" height=\"34\" rx=\"8\" class=\"bx\"/><text x=\"210\" y=\"70\" class=\"sm b mid\">เยื่อบุหลอดลม</text><text x=\"210\" y=\"83\" class=\"xs mid mu\">ปล่อย alarmin: TSLP · IL-33 · IL-25</text>\n<line x1=\"310\" y1=\"71\" x2=\"318\" y2=\"71\" class=\"lwa\"/><rect x=\"318\" y=\"58\" width=\"96\" height=\"26\" rx=\"6\" class=\"wa\"/><text x=\"366\" y=\"75\" class=\"xs mid b twa\">Tezepelumab</text>\n<line x1=\"210\" y1=\"88\" x2=\"210\" y2=\"100\" class=\"ln\"/>\n<rect x=\"110\" y=\"100\" width=\"200\" height=\"34\" rx=\"8\" class=\"ac\"/><text x=\"210\" y=\"116\" class=\"sm b mid tac\">Th2 (+ ILC2)</text><text x=\"210\" y=\"129\" class=\"xs mid\">DC นำเสนอแอนติเจน → T cell เป็น Th2</text>\n<line x1=\"150\" y1=\"134\" x2=\"70\" y2=\"152\" class=\"ln\"/><line x1=\"210\" y1=\"134\" x2=\"210\" y2=\"152\" class=\"ln\"/><line x1=\"270\" y1=\"134\" x2=\"350\" y2=\"152\" class=\"ln\"/>\n<rect x=\"10\" y=\"152\" width=\"120\" height=\"58\" rx=\"8\" class=\"bx\"/><text x=\"70\" y=\"171\" class=\"b mid\">IL-4</text><text x=\"70\" y=\"186\" class=\"xs mid\">B cell สร้าง IgE</text><text x=\"70\" y=\"199\" class=\"xs mid\">เกาะ mast cell</text>\n<rect x=\"150\" y=\"152\" width=\"120\" height=\"58\" rx=\"8\" class=\"bx\"/><text x=\"210\" y=\"171\" class=\"b mid\">IL-5</text><text x=\"210\" y=\"186\" class=\"xs mid\">เรียก eosinophil</text><text x=\"210\" y=\"199\" class=\"xs mid\">ให้อยู่นานขึ้น</text>\n<rect x=\"290\" y=\"152\" width=\"120\" height=\"58\" rx=\"8\" class=\"bx\"/><text x=\"350\" y=\"171\" class=\"b mid\">IL-13</text><text x=\"350\" y=\"186\" class=\"xs mid\">goblet cell สร้างเมือก</text><text x=\"350\" y=\"199\" class=\"xs mid\">AHR · FeNO สูง</text>\n<rect x=\"10\" y=\"214\" width=\"120\" height=\"22\" rx=\"5\" class=\"wa\"/><text x=\"70\" y=\"229\" class=\"xs mid b twa\">Omalizumab (IgE)</text>\n<rect x=\"150\" y=\"214\" width=\"120\" height=\"22\" rx=\"5\" class=\"wa\"/><text x=\"210\" y=\"229\" class=\"xs mid b twa\">anti-IL-5 / IL-5Rα</text>\n<rect x=\"290\" y=\"214\" width=\"120\" height=\"22\" rx=\"5\" class=\"wa\"/><text x=\"350\" y=\"229\" class=\"xs mid b twa\">Dupilumab (IL-4Rα)</text>\n<line x1=\"70\" y1=\"236\" x2=\"70\" y2=\"250\" class=\"ln\"/><line x1=\"210\" y1=\"236\" x2=\"210\" y2=\"250\" class=\"ln\"/><line x1=\"350\" y1=\"236\" x2=\"350\" y2=\"250\" class=\"ln\"/>\n<rect x=\"10\" y=\"250\" width=\"120\" height=\"44\" rx=\"8\" class=\"ms\"/><text x=\"70\" y=\"267\" class=\"sm b mid\">Early phase · นาที</text><text x=\"70\" y=\"284\" class=\"xs mid\">mast cell → บีบ บวม</text>\n<rect x=\"150\" y=\"250\" width=\"120\" height=\"44\" rx=\"8\" class=\"ms\"/><text x=\"210\" y=\"267\" class=\"sm b mid\">Late phase · 4–8 ชม.</text><text x=\"210\" y=\"284\" class=\"xs mid\">eos ปล่อย MBP</text>\n<rect x=\"290\" y=\"250\" width=\"120\" height=\"44\" rx=\"8\" class=\"bad\"/><text x=\"350\" y=\"267\" class=\"sm b mid tbad\">Remodeling · ปี</text><text x=\"350\" y=\"284\" class=\"xs mid\">ตีบถาวร</text>\n<rect x=\"10\" y=\"306\" width=\"120\" height=\"38\" rx=\"8\" class=\"ok\"/><text x=\"70\" y=\"322\" class=\"sm b mid tok\">β2-agonist</text><text x=\"70\" y=\"337\" class=\"xs mid\">คลายกล้ามเนื้อเรียบ</text>\n<rect x=\"150\" y=\"306\" width=\"260\" height=\"38\" rx=\"8\" class=\"ok\"/><text x=\"280\" y=\"322\" class=\"sm b mid tok\">ICS = ดับไฟที่ต้นเหตุ</text><text x=\"280\" y=\"337\" class=\"xs mid\">ลดกำเริบ ลดตาย ชะลอ remodeling</text>\n<line x1=\"70\" y1=\"306\" x2=\"70\" y2=\"296\" class=\"lok da\"/><line x1=\"210\" y1=\"306\" x2=\"210\" y2=\"296\" class=\"lok da\"/><line x1=\"350\" y1=\"306\" x2=\"350\" y2=\"296\" class=\"lok da\"/>\n</svg>"
+    }
+   },
+   "mnem": [
+    {
+     "name": "4 · 5 · 13",
+     "what": "ไซโตไคน์ Th2 สามตัว → ผล → biomarker",
+     "lines": [
+      [
+       "4",
+       "**IL-4** สร้าง **IgE** → skin test/IgE สูง → anti-IgE"
+      ],
+      [
+       "5",
+       "**IL-5** เรียก **eos** → blood eos สูง → anti-IL-5/5R"
+      ],
+      [
+       "13",
+       "**IL-13** สร้าง **เมือก + AHR** → FeNO สูง → anti-IL-4Rα"
+      ]
+     ],
+     "note": "จำผลของไซโตไคน์ได้ จะเดาชื่อ biomarker และยา biologic ได้เอง · ต้นน้ำสุดคือ TSLP ตัดทุกสาย",
+     "src": "เรียบเรียงจากคาบ 3 พ.ย. (อาจารย์ให้จำ IL-4, IL-5, IL-13)"
+    }
+   ]
+  },
+  {
+   "id": "chest-ast-03",
+   "title": "วินิจฉัย (1) — Spirometry กับเกณฑ์ ≥ 12% และ ≥ 200 mL",
+   "summary": "ทำ BDR อย่างไร · สูตรคิดเปอร์เซ็นต์ · ห้ามเอา FEV1/FVC < 0.7 มาปน · งดยาก่อนตรวจ · บันทึกหลักฐาน",
+   "minutes": 9,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "3.3.18",
+    "B6.3(3)",
+    "2.3.10(1)",
+    "B6.1.2(2)"
+   ],
+   "md": "### Spirometry ก่อน–หลังยาขยายหลอดลม (bronchodilator responsiveness, BDR)\n- **FEV1** = ปริมาตรลมที่เป่าออกแรงได้ในวินาทีแรก · **FVC** = ปริมาตรลมที่เป่าออกแรงได้ทั้งหมด\n- วิธีทำ: เป่าครั้งแรก → ให้ **salbutamol 200–400 mcg (2–4 พัฟ)** → เป่าซ้ำหลัง **10–15 นาที**\n- **บวก (ผู้ใหญ่)** เมื่อ FEV1 หรือ FVC เพิ่ม **≥ 12% และ ≥ 200 mL** จากค่าก่อนยา\n- ถ้าใช้ **PEF** แทน (ไม่มีเครื่อง spirometry) ต้องเพิ่ม **≥ 20%**\n- เด็ก: FEV1 เพิ่ม ≥ 12% ของค่าคาดคะเน\n\n> **สูตร: (หลังยา − ก่อนยา) ÷ ก่อนยา × 100** — อาจารย์แก้ในคาบว่า **หารด้วยค่า \"ก่อนยา\"** ไม่ใช่เอาค่ามากหารค่าน้อย\n\n### อย่าเอาเกณฑ์ COPD มาปน\n- **FEV1/FVC < 0.7** ใช้บอกว่ามี **obstruction** (เช่นใน COPD ต้องเป็น post-BD)\n- เกณฑ์ยืนยันหืดคือ **ความแปรปรวน** — ถึง FEV1/FVC จะ 0.8, 0.9 หรือ 1.0 **ก็ยังต้องทำ BDR** และถ้าเพิ่มถึงเกณฑ์ก็ยืนยันหืดได้\n- อาจารย์ย้ำเรื่องนี้หลายรอบ: **เกณฑ์วินิจฉัยหืดไม่มี FEV1/FVC < 0.7**\n\n### เตรียมผู้ป่วยก่อนตรวจ\nถ้าทำได้ให้งดยาขยายก่อนตรวจ (ไม่งด ICS)\n| ยา | งดก่อนตรวจ |\n|---|---|\n| SABA | ≥ 4 ชม. |\n| ICS-LABA วันละ 2 ครั้ง | ≥ 24 ชม. |\n| ICS-LABA วันละครั้ง | ≥ 36 ชม. |\n| LAMA | 36–48 ชม. |\n\n### ทำไมต้องบันทึกหลักฐาน\nGINA ระบุว่าผู้ที่ถูกวินิจฉัยหืดในเวชปฏิบัติทั่วไป **25–35% ไม่ได้เป็นหืดจริง** · เมื่อเริ่ม ICS ไปแล้วการพิสูจน์ความแปรปรวนจะยากขึ้นมาก จึงควรตรวจ **ก่อนเริ่ม ICS** ถ้าทำได้ และเขียนผลลงเวชระเบียน\n\n[[fig:ast_dx]]",
+   "pearls": [
+    "BDR บวก = FEV1 หรือ FVC เพิ่ม ≥ 12% และ ≥ 200 mL จากค่าก่อนยา",
+    "คิดเปอร์เซ็นต์โดยหารด้วยค่าก่อนยา",
+    "PEF ใช้แทนได้ — ต้องเพิ่ม ≥ 20%",
+    "FEV1/FVC < 0.7 เป็นเกณฑ์ obstruction ของ COPD ไม่ใช่เกณฑ์วินิจฉัยหืด",
+    "ตรวจก่อนเริ่ม ICS ถ้าทำได้ และบันทึกหลักฐานลงเวชระเบียน"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-06",
+     "kind": "mcq",
+     "topic": "Bronchodilator responsiveness",
+     "stem": "A 25-year-old woman has episodic wheeze and night cough. Spirometry: pre-bronchodilator FEV1 2.50 L, FVC 3.60 L (FEV1/FVC 0.69). Fifteen minutes after salbutamol 400 mcg, FEV1 is 2.85 L. How should this result be interpreted?",
+     "choices": [
+      "Positive bronchodilator responsiveness (FEV1 increased 14% and 350 mL), supporting asthma",
+      "Positive only if the post-bronchodilator FEV1/FVC is above 0.70",
+      "Diagnostic of COPD because the pre-bronchodilator FEV1/FVC is below 0.70",
+      "Uninterpretable because peak expiratory flow was not measured",
+      "Negative test because the FEV1 increase is less than 400 mL"
+     ],
+     "answer": 0,
+     "explain": "คิด **(หลัง − ก่อน) ÷ ก่อน** = (2.85 − 2.50) ÷ 2.50 = **14%** และเพิ่ม **350 mL** → ผ่านเกณฑ์ **≥ 12% และ ≥ 200 mL** = BDR บวก สนับสนุนหืด\n\n- *ต้องเพิ่ม ≥ 400 mL* — 400 mL เป็นตัวเลขที่บางแนวทางใช้บอก \"ตอบมาก\" ไม่ใช่เกณฑ์วินิจฉัย\n- *FEV1/FVC < 0.70 = COPD* — ต้องเป็น **post-BD** และต้องมีบริบท (อายุ บุหรี่) · ผู้หญิง 25 ปีอาการแปรปรวนเป็นหืด\n- *ต้องให้ ratio หลังยา > 0.70* — ไม่ใช่เกณฑ์ของหืด อาจารย์ย้ำว่าอย่าเอา ratio มาปน\n- *ต้องมี PEF* — spirometry ดีกว่า PEF อยู่แล้ว",
+     "pearl": "BDR บวก = เพิ่ม ≥ 12% และ ≥ 200 mL — หารด้วยค่าก่อนยา",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "3.3.18",
+      "B6.3(3)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-07",
+     "kind": "mcq",
+     "topic": "FEV1/FVC is not an asthma criterion",
+     "stem": "A 30-year-old man with intermittent wheeze has pre-bronchodilator FEV1/FVC 0.86. A colleague says spirometry cannot support asthma because there is no obstruction. What is the most appropriate response?",
+     "choices": [
+      "Agree and exclude asthma because the FEV1/FVC is above 0.70",
+      "Start oral prednisolone to unmask obstruction before repeating spirometry",
+      "Proceed with bronchodilator responsiveness testing; a normal ratio does not exclude variable airflow",
+      "Order a chest radiograph as the definitive test for asthma",
+      "Diagnose restrictive lung disease because the ratio is above 0.80"
+     ],
+     "answer": 2,
+     "explain": "เกณฑ์หืดคือ **ความแปรปรวน** ไม่ใช่ obstruction ถาวร — ratio 0.8–1.0 **ก็ยังต้องทำ BDR** และถ้า FEV1 เพิ่ม ≥ 12% + 200 mL ก็ยืนยันหืด · ถ้ายังลบให้หาหลักฐานทางอื่น (PEF variability, challenge)\n\n- *ratio > 0.70 จึงตัดหืด* — สิ่งที่อาจารย์เตือนซ้ำหลายรอบว่าเป็นความเข้าใจผิด\n- *restrictive* — ต้องดู FVC/TLC ต่ำ ratio สูงอย่างเดียวไม่พอ\n- *ให้ prednisolone ก่อนตรวจ* — ทำให้การพิสูจน์ความแปรปรวนยากขึ้น\n- *CXR* — ใช้คัดโรคอื่น ไม่ใช่วินิจฉัยหืด",
+     "pearl": "Ratio ปกติไม่ตัดหืด — ยังต้องทำ BDR",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "3.3.18",
+      "2.3.10(1)"
+     ]
+    },
+    {
+     "id": "CH-OLD-55",
+     "kind": "old",
+     "stem": "Which test best confirms the diagnosis of asthma in a patient with intermittent wheeze and a normal physical examination in the clinic?",
+     "choices": [
+      "Single peak expiratory flow measurement in the clinic",
+      "Arterial blood gas analysis",
+      "Chest radiograph",
+      "Total serum IgE level",
+      "Spirometry with bronchodilator reversibility testing"
+     ],
+     "answer": 4,
+     "explain": "**การวินิจฉัย asthma ต้องมี 2 องค์ประกอบ**: (1) **ประวัติอาการทางเดินหายใจที่แปรปรวน** (wheeze, หายใจสั้น แน่นหน้าอก ไอ — เปลี่ยนตามเวลาและความรุนแรง) และ (2) **หลักฐานของ variable expiratory airflow limitation**\n\n**Bronchodilator reversibility test เป็นวิธีที่ใช้บ่อยที่สุด**: หลังพ่น salbutamol 200-400 mcg แล้ววัดซ้ำที่ 10-15 นาที — **FEV1 เพิ่ม ≥12% และ ≥200 mL จากค่าเริ่มต้น** = positive\n\nวิธีอื่นที่ยืนยันความแปรปรวนได้\n- **Serial PEF variability > 10%** (วัดเช้า-เย็น 2 สัปดาห์) — เหมาะกับ **occupational asthma** ที่ต้องเทียบวันทำงานกับวันหยุด\n- **Bronchial provocation test (methacholine/exercise)** เมื่อ spirometry ปกติแต่ยังสงสัยมาก — มี **negative predictive value สูง** ใช้ตัดโรคได้ดี\n- **FeNO** ช่วยสนับสนุน type-2 inflammation แต่ไม่ใช้วินิจฉัยเดี่ยวๆ\n\n**ข้อควรจำ: spirometry ที่ปกติในขณะไม่มีอาการ ไม่ตัดโรค asthma** และ **CXR มีไว้เพื่อคัดโรคอื่น ไม่ใช่เพื่อวินิจฉัย**",
+     "pearl": "",
+     "topic": "คลังข้อสอบเก่า MED28–MED35",
+     "src": "MED35 ลงกองครั้งที่ 2 MCQ ข้อ 56 – ตรวจ asthma → Bronchodilator reversibility test; MED32 MCQ ข้อ 61 – spirometer ก่อน; MED30 สรุป – diagnosis spirometry / peak flow; MED31 – serial peak flow meter (asthma)",
+     "ref": [],
+     "nl": [
+      "B6.3(3)",
+      "3.3.18",
+      "2.3.10(1)"
+     ]
+    }
+   ],
+   "figs": {
+    "ast_dx": {
+     "title": "ลำดับการวินิจฉัยหืด — พิสูจน์ว่าลมหายใจออก \"แปรปรวน\"",
+     "cap": "เริ่มจากอาการที่เข้ากับหืด → ถ้าหอบรุนแรงรักษาก่อน → spirometry ก่อน–หลังยาขยาย (**FEV1 หรือ FVC เพิ่ม ≥ 12% และ ≥ 200 mL**) · ถ้ายังไม่ยืนยันแต่สงสัยมาก หาหลักฐานทางอื่น (ตรวจซ้ำตอนมีอาการ, PEF เช้า–เย็น 2 สัปดาห์ variability > 10%, challenge test, ทดลอง ICS 4 สัปดาห์) · ยืนยันได้ให้ **บันทึกหลักฐานลงเวชระเบียน** · ยืนยันไม่ได้ให้คิดโรคอื่นตามช่วงอายุ",
+     "svg": "<svg viewBox=\"0 0 420 330\" role=\"img\" aria-label=\"แผนผังการวินิจฉัยหืด จากอาการ ไป spirometry ก่อนหลังยาขยาย ถ้าไม่ยืนยันให้หาหลักฐานทางอื่น\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"20\" y=\"8\" width=\"230\" height=\"34\" rx=\"17\" class=\"sk\"/><text x=\"135\" y=\"30\" class=\"sm b mid\">อาการแปรปรวน เข้ากับหืด</text>\n<line x1=\"135\" y1=\"42\" x2=\"135\" y2=\"56\" class=\"ln\"/>\n<rect x=\"20\" y=\"56\" width=\"230\" height=\"34\" rx=\"8\" class=\"bx\"/><text x=\"135\" y=\"78\" class=\"sm b mid\">หอบรุนแรงอยู่ไหม?</text>\n<line x1=\"250\" y1=\"73\" x2=\"276\" y2=\"73\" class=\"lbad\"/><rect x=\"276\" y=\"56\" width=\"134\" height=\"34\" rx=\"8\" class=\"bad\"/><text x=\"343\" y=\"72\" class=\"xs mid b tbad\">ใช่ → รักษากำเริบก่อน</text><text x=\"343\" y=\"85\" class=\"xs mid\">วินิจฉัยทีหลัง</text>\n<line x1=\"135\" y1=\"90\" x2=\"135\" y2=\"104\" class=\"ln\"/><text x=\"143\" y=\"101\" class=\"xs mu\">ไม่</text>\n<rect x=\"20\" y=\"104\" width=\"230\" height=\"44\" rx=\"8\" class=\"ac\"/><text x=\"135\" y=\"122\" class=\"sm b mid tac\">Spirometry ก่อน–หลัง salbutamol</text><text x=\"135\" y=\"140\" class=\"xs mid\">200–400 mcg · วัดซ้ำ 10–15 นาที</text>\n<line x1=\"135\" y1=\"148\" x2=\"135\" y2=\"162\" class=\"ln\"/>\n<rect x=\"20\" y=\"162\" width=\"230\" height=\"34\" rx=\"8\" class=\"bx\"/><text x=\"135\" y=\"184\" class=\"sm b mid\">FEV1/FVC เพิ่ม ≥ 12% และ ≥ 200 mL?</text>\n<line x1=\"250\" y1=\"179\" x2=\"276\" y2=\"179\" class=\"lok\"/><rect x=\"276\" y=\"162\" width=\"134\" height=\"34\" rx=\"8\" class=\"ok\"/><text x=\"343\" y=\"178\" class=\"xs mid b tok\">ใช่ → ยืนยันหืด</text><text x=\"343\" y=\"191\" class=\"xs mid\">บันทึกหลักฐาน</text>\n<line x1=\"135\" y1=\"196\" x2=\"135\" y2=\"210\" class=\"ln\"/><text x=\"143\" y=\"207\" class=\"xs mu\">ไม่</text>\n<rect x=\"20\" y=\"210\" width=\"230\" height=\"64\" rx=\"8\" class=\"ms\"/><text x=\"135\" y=\"227\" class=\"sm b mid\">หาหลักฐานทางอื่น</text><text x=\"135\" y=\"242\" class=\"xs mid\">ตรวจซ้ำตอนมีอาการ · PEF 2 สัปดาห์ (&gt;10%)</text><text x=\"135\" y=\"256\" class=\"xs mid\">challenge test · exercise (ลด &gt;10%)</text><text x=\"135\" y=\"269\" class=\"xs mid\">ทดลอง ICS 4 สัปดาห์</text>\n<line x1=\"250\" y1=\"242\" x2=\"276\" y2=\"242\" class=\"lok\"/><rect x=\"276\" y=\"225\" width=\"134\" height=\"34\" rx=\"8\" class=\"ok\"/><text x=\"343\" y=\"241\" class=\"xs mid b tok\">บวก → ยืนยันหืด</text><text x=\"343\" y=\"254\" class=\"xs mid\">biomarker แค่ช่วยหนุน</text>\n<line x1=\"135\" y1=\"274\" x2=\"135\" y2=\"288\" class=\"ln\"/><text x=\"143\" y=\"285\" class=\"xs mu\">ยังลบ</text>\n<rect x=\"20\" y=\"288\" width=\"230\" height=\"34\" rx=\"8\" class=\"bad\"/><text x=\"135\" y=\"310\" class=\"sm b mid tbad\">คิดโรคอื่นตามช่วงอายุ</text>\n</svg>"
+    }
+   }
+  },
+  {
+   "id": "chest-ast-04",
+   "title": "วินิจฉัย (2) — ผลแรกยังไม่ยืนยัน: PEF variability, challenge test และ biomarker",
+   "summary": "ตรวจซ้ำตอนมีอาการ · PEF เช้า–เย็น 2 สัปดาห์ > 10% · methacholine/exercise (> 10%) · ทดลอง ICS 4 สัปดาห์ · FeNO eos IgE ช่วยหนุนแต่ไม่ยืนยัน",
+   "minutes": 10,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "3.3.18",
+    "B6.3(3)",
+    "2.3.10(1)"
+   ],
+   "md": "### ผลแรกไม่ยืนยัน แต่ยังสงสัยมาก — หาหลักฐานทางอื่น\n1. **ตรวจซ้ำตอนมีอาการ** หรือหลังงดยาขยาย · ช่วงติดเชื้อไวรัสหลอดลมอาจไม่ตอบสนองต่อยาขยาย\n2. **บันทึก PEF ที่บ้าน เช้า–เย็น 2 สัปดาห์** (อาจารย์ให้เป่า 6 โมงเช้ากับ 6 โมงเย็น) เป่า 3 ครั้งเก็บค่าสูงสุด\n   - **diurnal variability = (ค่ามาก − ค่าน้อย) ÷ ค่าเฉลี่ยของวัน × 100** แล้วเฉลี่ยทุกวัน\n   - ใช้ \"มากลบน้อย\" เพราะไม่รู้ว่าผู้ป่วยแย่ตอนเช้าหรือตอนเย็น\n   - **บวกเมื่อ > 10% ในผู้ใหญ่** (> 13% ในเด็ก)\n3. **Bronchial challenge** (methacholine, mannitol, hypertonic saline) — คนปกติต้องได้สารขนาดสูงหลอดลมจึงตีบ ส่วนคนหืด \"ใส่นิดเดียว\" FEV1 ก็ลดถึง 20% · **ห้ามทำในหญิงตั้งครรภ์**\n4. **Exercise challenge** — บวกเมื่อ FEV1 **ลด > 10% (และ > 200 mL)** หลังออกกำลัง · อาจารย์เน้นว่าเป็น **ตัวเลขที่ต่างจาก 12%** อย่าจำสลับ\n5. **ทดลอง ICS 4 สัปดาห์** — FEV1 เพิ่ม ≥ 12% และ ≥ 200 mL (หรือ PEF ≥ 20%)\n6. FEV1 ต่างกันระหว่างการมาตรวจ ≥ 12% และ ≥ 200 mL (จำเพาะสูงแต่ไวต่ำ)\n\n> ในคาบได้ยินเลข \"10%\" กับ \"40%\" ปนกันโดยไม่ชัดว่าใช้กับอะไร — เลขที่ต้องจำตาม GINA คือ **PEF variability > 10% (ผู้ใหญ่) / > 13% (เด็ก)** และ **exercise ลด > 10%**\n\n### Biomarker — ช่วยหนุน ไม่ใช่ตัวตัดสิน\n- **FeNO** (nitric oxide ในลมหายใจออก) สัมพันธ์กับ eosinophilic/IL-13 inflammation · FeNO > 50 ppb (ผู้ใหญ่) หรือ > 35 ppb (เด็ก) ในคนที่อาการเข้ากับหืด ช่วยหนุน Type 2 asthma\n- **Blood eosinophil** สูงช่วยหนุน แต่ **ไม่จำเพาะ** — พยาธิ ภูมิแพ้อื่นก็สูงได้\n- **Specific IgE/skin prick test** บวก = **\"ไวต่อสาร\" (sensitisation)** ไม่ได้ยืนยันว่าเป็น allergic asthma · ลบก็ไม่ตัดหืดชนิดอื่น\n- คำแปลของอาจารย์: biomarker สูง = **\"น่าจะ\"** เป็นหืด · ปกติทุกตัว = **\"ไม่น่าจะ\"** — แต่ **ไม่ได้ exclude** (อาจเป็น non-eosinophilic หรือกำลังใช้ ICS อยู่)\n- eos ในเลือดสูงสุดตอนเช้า ส่วน FeNO ต่ำสุดตอนเช้ามืด · ICS และการสูบบุหรี่ทำให้ FeNO ต่ำลง\n\n#### เลขของการวินิจฉัย — ตารางเดียวจบ\n| การตรวจ | บวกเมื่อ (ผู้ใหญ่) |\n|---|---|\n| BDR (spirometry) | FEV1/FVC เพิ่ม ≥ 12% และ ≥ 200 mL |\n| BDR ด้วย PEF | เพิ่ม ≥ 20% |\n| PEF variability 2 สัปดาห์ | เฉลี่ย > 10% |\n| Exercise challenge | FEV1 ลด > 10% และ > 200 mL |\n| Methacholine | FEV1 ลด ≥ 20% ที่ขนาดต่ำ |\n| ทดลอง ICS 4 สัปดาห์ | FEV1 เพิ่ม ≥ 12% และ ≥ 200 mL |",
+   "pearls": [
+    "PEF variability = (มาก − น้อย) ÷ ค่าเฉลี่ยของวัน — บวก > 10% ในผู้ใหญ่",
+    "Exercise challenge ใช้ลด > 10% ต่างจาก 12% ของ BDR",
+    "Methacholine challenge มี NPV สูง ห้ามทำในหญิงตั้งครรภ์",
+    "Skin test/IgE บวก = sensitisation ไม่ใช่ยืนยัน allergic asthma",
+    "Biomarker สูง = น่าจะ · ปกติ = ไม่น่าจะ แต่ไม่ได้ exclude"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-08",
+     "kind": "mcq",
+     "topic": "PEF variability",
+     "stem": "A 35-year-old woman with suspected asthma has normal spirometry with no bronchodilator response at clinic. Over 2 weeks she records PEF twice daily. Her average diurnal variability is 16%. What is the interpretation?",
+     "choices": [
+      "Uninterpretable because PEF is less reliable than FEV1",
+      "Diagnostic of occupational asthma",
+      "Normal variability; asthma is excluded",
+      "Excessive variability supporting a diagnosis of asthma",
+      "Diagnostic only if the variability exceeds 20%"
+     ],
+     "answer": 3,
+     "explain": "PEF variability = (ค่ามาก − ค่าน้อย) ÷ ค่าเฉลี่ยของวัน แล้วเฉลี่ยทุกวัน · **> 10% ในผู้ใหญ่** (> 13% ในเด็ก) = ลมแปรปรวน **สนับสนุนหืด**\n\n- *ปกติ ตัดหืดได้* — 16% เกินเกณฑ์\n- *ต้อง > 20%* — 20% คือเกณฑ์ **PEF เพิ่มหลังยาขยาย** ไม่ใช่ variability\n- *occupational asthma* — ต้องเทียบวันทำงานกับวันหยุด ข้อมูลนี้ยังไม่พอ\n- *PEF ใช้ไม่ได้* — ใช้ได้ดีเมื่อเป่าถูกวิธี และเหมาะกับการติดตามที่บ้าน",
+     "pearl": "PEF variability > 10% (ผู้ใหญ่) / > 13% (เด็ก)",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "3.3.18",
+      "B6.3(3)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-09",
+     "kind": "mcq",
+     "topic": "Exercise challenge threshold",
+     "stem": "A 19-year-old athlete reports cough and chest tightness 5–10 minutes after running. Resting spirometry is normal. An exercise challenge is performed. Which result confirms exercise-induced bronchoconstriction?",
+     "choices": [
+      "A rise in FEV1 of at least 12% and 200 mL after exercise",
+      "A rise in peak expiratory flow of more than 20%",
+      "A fall in FEV1/FVC to below 0.70 at any time",
+      "A fall in SpO2 of at least 4% during exercise",
+      "A fall in FEV1 of more than 10% and more than 200 mL from baseline"
+     ],
+     "answer": 4,
+     "explain": "Exercise challenge วัดการ **ลดลง** ของ FEV1 · เกณฑ์ **> 10% และ > 200 mL** — อาจารย์เน้นว่าเป็นตัวเลขที่ **ต่างจาก 12%** ของ BDR อย่าจำสลับ\n\n- *เพิ่ม ≥ 12% + 200 mL* — เกณฑ์ BDR/ทดลอง ICS\n- *ratio < 0.70* — เกณฑ์ obstruction ไม่ใช่ challenge\n- *PEF เพิ่ม > 20%* — เกณฑ์ BDR ด้วย PEF\n- *SpO₂ ลด* — ใช้ใน 6-minute walk/ILD ไม่ใช่เกณฑ์ EIB",
+     "pearl": "Exercise challenge: FEV1 ลด > 10% (ไม่ใช่ 12%)",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "3.3.18",
+      "B6.3(3)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-10",
+     "kind": "mcq",
+     "topic": "Interpreting allergy tests",
+     "stem": "A 28-year-old man has a positive skin prick test to house dust mite. He has no respiratory symptoms. What does this result indicate?",
+     "choices": [
+      "That a methacholine challenge will be positive",
+      "Exercise-induced bronchoconstriction",
+      "Allergic sensitisation, which by itself does not establish a diagnosis of asthma",
+      "A false-positive result that should be ignored",
+      "Allergic asthma requiring inhaled corticosteroid"
+     ],
+     "answer": 2,
+     "explain": "Skin prick/specific IgE บวก = **ไวต่อสาร (sensitisation)** เท่านั้น — คนที่ไม่มีอาการก็บวกได้ · ไม่ได้ยืนยัน allergic asthma และผลลบก็ไม่ตัดหืดชนิดอื่น · ใช้ช่วยหาสิ่งกระตุ้นในคนที่ **วินิจฉัยหืดแล้ว**\n\n- *allergic asthma ต้องให้ ICS* — ไม่มีอาการ ไม่มีหลักฐานลมแปรปรวน\n- *false positive* — ผลถูกต้อง แต่ตีความเกินไม่ได้\n- *EIB* — ไม่เกี่ยว\n- *methacholine จะบวก* — ทำนายไม่ได้",
+     "pearl": "Skin test บวก = sensitisation ไม่ใช่ asthma",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B1.4.11(1)",
+      "2.3.10(1)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-11",
+     "kind": "mcq",
+     "topic": "FeNO",
+     "stem": "In a patient with symptoms suggestive of asthma, which finding most directly reflects type 2 (IL-13-driven) airway inflammation?",
+     "choices": [
+      "Raised fractional exhaled nitric oxide (FeNO)",
+      "Raised sputum neutrophil count",
+      "Reduced diffusing capacity for carbon monoxide",
+      "Raised serum C-reactive protein",
+      "Raised serum alpha-1 antitrypsin"
+     ],
+     "answer": 0,
+     "explain": "**IL-13** กระตุ้นเยื่อบุให้สร้าง inducible NO synthase → **FeNO สูง** · FeNO > 50 ppb (ผู้ใหญ่) ในคนอาการเข้ากับหืดช่วยหนุน Type 2 asthma แต่ **ไม่ใช่ตัวยืนยัน** และค่าต่ำไม่ตัดหืด (ICS และบุหรี่ทำให้ FeNO ต่ำลง)\n\n- *CRP* — การอักเสบทั่วไป ไม่จำเพาะ\n- *sputum neutrophil* — สะท้อน **T2-low**\n- *DLCO ลด* — emphysema/ILD ใน asthma มักปกติหรือสูง\n- *alpha-1 antitrypsin* — เป็น acute-phase reactant และใช้หา AATD",
+     "pearl": "FeNO สะท้อน IL-13/Type 2 — ช่วยหนุน ไม่ยืนยัน",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.3(3)",
+      "B6.2.2(2)"
+     ]
+    }
+   ],
+   "figs": {}
+  },
+  {
+   "id": "chest-ast-05",
+   "title": "แยกโรค — หืดกับ COPD, หัวใจล้มเหลว และโรคอื่นตามช่วงอายุ",
+   "summary": "ตัวจุดร่วมของหืดกับ COPD · อะไรช่วยแยก · stridor = inducible laryngeal obstruction · สิ่งแปลกปลอม · ACEI · วัณโรค · asthma+COPD ต้องมี ICS",
+   "minutes": 8,
+   "source": "เสียงบรรยาย 3 พ.ย. 2569 (Plaud) + GINA 2026 Summary Guide",
+   "nl": [
+    "2.3.10(1)",
+    "2.3.10(3)",
+    "2.1.34",
+    "2.1.32"
+   ],
+   "md": "### หืดกับ COPD\nติดเชื้อ ควันบุหรี่ มลพิษ **กระตุ้นได้ทั้งสองโรค จึงใช้แยกโรคไม่ได้** · ตัวที่ช่วยแยกคือ **สารก่อภูมิแพ้** (\"ถ้าเป็น allergen ก็จบ\"), **อายุร่วมกับประวัติสูบบุหรี่** และ **เสมหะเรื้อรัง**\n\n| ประเด็น | Asthma | COPD |\n|---|---|---|\n| อายุที่เริ่ม | มักเด็ก/หนุ่มสาว (adult-onset ก็มี) | มัก > 40 ปี |\n| ตัวจุด | ภูมิแพ้ อากาศเย็น ออกกำลัง | บุหรี่ ควันชีวมวล มลพิษ |\n| รูปแบบอาการ | แปรปรวน มาเป็นพัก ๆ ช่วงดีอาจปกติ | ค่อย ๆ แย่ลงต่อเนื่อง เหนื่อยเวลาออกแรง |\n| เสมหะ | ไม่เด่น | เสมหะเรื้อรังเด่น |\n| Spirometry | แปรปรวนมาก กลับมาปกติได้ | post-BD FEV1/FVC < 0.7 ค้างถาวร |\n| ยาหลัก | **ต้องมี ICS ทุกคน** | LAMA/LABA (ICS เมื่อ eos สูงหรือมีหืดร่วม) |\n\n> ถ้ามีลักษณะของทั้งสองโรค (asthma + COPD) **ต้องให้ยาที่มี ICS เสมอ** — ให้แต่ยาขยายหลอดลม (LABA/LAMA เดี่ยว) เพิ่มความเสี่ยงนอนโรงพยาบาลและเสียชีวิต\n\n### โรคอื่นที่ต้องคิดตามช่วงอายุ\n| ช่วงอายุ | นึกถึง |\n|---|---|\n| **6–11 ปี** | **สิ่งแปลกปลอมในหลอดลม** · โรคแต่กำเนิด/หัวใจพิการ · **primary ciliary dyskinesia** (อาการจมูก + ติดเชื้อซ้ำ) · bronchiectasis |\n| **12–39 ปี** | **inducible laryngeal obstruction (vocal cord dysfunction)** — มี **stridor** · hyperventilation · alpha-1 antitrypsin deficiency · bronchiectasis, CF |\n| **≥ 40 ปี / สูบบุหรี่** | **COPD** · **heart failure** (บวม เสียงฟู่ orthopnea) · ยา (**ACE inhibitor ทำให้ไอ**, β-blocker) · central airway obstruction/มะเร็ง |\n| ทุกวัย | **วัณโรค** — ไอเรื้อรัง ไอเป็นเลือด ไข้ เหงื่อออกกลางคืน น้ำหนักลด |\n\n> **อย่าจำผิด**: ในคาบมีผู้นำเสนอพูดว่า \"ไอคล้าย stridor → นึกถึง bronchitis\" — ที่ถูกคือ **stridor = เสียงจากทางเดินหายใจส่วนบน/กลาง** ให้นึกถึง **inducible laryngeal obstruction หรือ central airway obstruction**\n\n- ผลตรวจปกติแค่ครั้งเดียว **ไม่พอจะตัดโรคใดทิ้ง** ต้องดูภาพรวม\n- หืดที่เริ่มตอนโตต้อง **ถามเรื่องงานเสมอ** — วันหยุดอาการดีขึ้นไหม (**occupational asthma**) ยืนยันด้วย objective test ส่งต่อเร็ว และหยุดการสัมผัสสาเหตุ",
+   "pearls": [
+    "บุหรี่ มลพิษ ติดเชื้อ กระตุ้นได้ทั้งหืดและ COPD — ใช้แยกโรคไม่ได้",
+    "Asthma + COPD ต้องให้ยาที่มี ICS เสมอ",
+    "Stridor → inducible laryngeal obstruction หรือ central airway obstruction",
+    "เด็ก 6–11 ปีที่หวีดข้างเดียวหรือเริ่มทันที → สิ่งแปลกปลอม",
+    "หืดเริ่มตอนโต ถามเรื่องงาน — ดีขึ้นวันหยุด = occupational asthma"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-12",
+     "kind": "mcq",
+     "topic": "Inducible laryngeal obstruction",
+     "stem": "A 24-year-old nurse has recurrent episodes of sudden throat tightness and noisy breathing during stressful shifts. During an episode there is inspiratory stridor, SpO2 is 98%, and inhaled salbutamol gives no benefit. What is the most likely diagnosis?",
+     "choices": [
+      "Acute bronchitis",
+      "Acute left heart failure",
+      "Alpha-1 antitrypsin deficiency",
+      "Inducible laryngeal obstruction (vocal cord dysfunction)",
+      "Severe asthma exacerbation"
+     ],
+     "answer": 3,
+     "explain": "**Stridor ตอนหายใจเข้า** = เสียงจากทางเดินหายใจส่วนบน/กล่องเสียง · ไม่ตอบยาขยาย SpO₂ ปกติ ในวัยหนุ่มสาวที่มีตัวกระตุ้นทางอารมณ์ → **inducible laryngeal obstruction** (vocal cord dysfunction) · ยืนยันด้วย laryngoscopy ระหว่างมีอาการ\n\n- *bronchitis* — ในคาบมีผู้พูดว่า stridor → bronchitis **ซึ่งผิด** · bronchitis มีไอเสมหะ ไม่มี stridor\n- *severe asthma* — wheeze ตอนหายใจออก SpO₂ ต่ำ และตอบยาขยาย\n- *AATD* — emphysema ในคนอายุน้อย อาการค่อยเป็น\n- *acute HF* — มี crepitation orthopnea ไม่ใช่ stridor",
+     "pearl": "Stridor + SpO₂ ปกติ + ไม่ตอบยาขยาย → inducible laryngeal obstruction",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "2.1.34"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-13",
+     "kind": "mcq",
+     "topic": "Asthma–COPD overlap",
+     "stem": "A 55-year-old man who smoked 30 pack-years has childhood asthma and now has persistent airflow limitation with post-bronchodilator FEV1/FVC 0.62. He is currently using only a LABA/LAMA inhaler. What is the most important change to his treatment?",
+     "choices": [
+      "Stop the LAMA and use a SABA as needed only",
+      "Switch to an oral leukotriene receptor antagonist alone",
+      "Continue the current regimen without change",
+      "Add oral theophylline",
+      "Add an inhaled corticosteroid"
+     ],
+     "answer": 4,
+     "explain": "มีลักษณะของ **ทั้งหืดและ COPD** → **ต้องได้ยาที่มี ICS เสมอ** · การให้แต่ยาขยายหลอดลมระยะยาว (LABA/LAMA) โดยไม่มี ICS ในผู้ที่มีหืดร่วม **เพิ่มความเสี่ยงกำเริบรุนแรง นอนโรงพยาบาล และเสียชีวิต**\n\n- *SABA อย่างเดียว* — แย่กว่าเดิม\n- *theophylline* — ไม่แนะนำ พิษมาก\n- *LTRA เดี่ยว* — ด้อยกว่า ICS\n- *ไม่เปลี่ยน* — ขาด ICS ซึ่งเป็นยาหลักของหืด",
+     "pearl": "Asthma + COPD ต้องมี ICS — ห้ามใช้ LABA/LAMA เดี่ยว",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "2.3.10(3)",
+      "B6.4(5)"
+     ]
+    }
+   ],
+   "figs": {}
+  },
+  {
+   "id": "chest-ast-06",
+   "title": "เป้าหมายการรักษาและการประเมิน — คุมอาการ 4 ข้อ ความเสี่ยงในอนาคต และ remission",
+   "summary": "2 ขาของเป้าหมาย · 4 คำถาม GINA (4 สัปดาห์) · ACQ/ACT · ปัจจัยเสี่ยงกำเริบ / persistent airflow limitation / ผลข้างเคียงยา · remission 4 ข้อ 6 ข้อ",
+   "minutes": 10,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "2.3.10(1)",
+    "B6.4(5)",
+    "2.3.19(6)"
+   ],
+   "md": "### เป้าหมายการรักษา 2 ขา\n1. **คุมอาการ** — อาการน้อยหรือไม่มี ไม่ตื่นกลางคืน ทำกิจกรรมได้ปกติ\n2. **ลดความเสี่ยงในอนาคต** — ไม่กำเริบ ไม่เสียสมรรถภาพปอด ลดหรือเลี่ยง systemic corticosteroid ไม่มีผลข้างเคียงจากยา\n\n> อาจารย์: **well controlled คือ \"เกณฑ์ขั้นต่ำ\"** ยังยอมให้มีอาการได้ไม่เกิน 2 ครั้ง/สัปดาห์ · เป้าขั้นสูงคือไม่มีอาการกลางวัน ไม่มีอาการกลางคืน ไม่ใช้ reliever ไม่มีข้อจำกัดเลย\n\n### Symptom control — 4 คำถาม (ย้อนหลัง 4 สัปดาห์)\n1. มีอาการกลางวัน **มากกว่า 2 ครั้ง/สัปดาห์**\n2. **ตื่นกลางคืน** เพราะหืด (แม้ครั้งเดียว)\n3. ต้องใช้ reliever (SABA) **มากกว่า 2 ครั้ง/สัปดาห์** — ไม่นับพ่นก่อนออกกำลัง และไม่ใช้ข้อนี้กับคนที่ใช้ ICS-formoterol เป็น reliever\n4. **กิจกรรมถูกจำกัด** เพราะหืด\n\n| ตอบ \"ใช่\" | ระดับ |\n|---|---|\n| 0 ข้อ | **Well controlled** |\n| 1–2 ข้อ | **Partly controlled** |\n| 3–4 ข้อ | **Uncontrolled** |\n\n> ในคาบสรุปเขียนว่า \"ตั้งแต่ 2 ครั้ง\" แต่ GINA ใช้ **\"มากกว่า 2 ครั้ง/สัปดาห์\"** · แบบประเมินอื่นคือ **ACQ-5** (≤ 0.75 คุมได้ดี, 0.75–1.5 ก้ำกึ่ง, ≥ 1.5 คุมไม่ได้) และ **ACT** (≥ 20 คุมได้ดี) — อาจารย์บอก \"ไม่ต้องจำ ใช้ในงานวิจัย จำแค่ 4 ข้อ\" และอย่าสับสน **ACT ของหืด กับ CAT ของ COPD**\n\n### ความเสี่ยงที่ต้องถามทุกคน แม้อาการน้อย\n#### เสี่ยงกำเริบ\n- **อาการคุมไม่ได้** (สำคัญที่สุด)\n- ใช้ SABA มาก (**≥ 3 หลอด/ปี** เสี่ยงกำเริบ · **≥ 1 หลอด/เดือน** เสี่ยงตาย)\n- **ICS ไม่พอ** — ไม่ได้ใช้ ใช้ไม่สม่ำเสมอ หรือพ่นผิดวิธี\n- FEV1 < 60% หรือตอบยาขยายมาก · eos หรือ FeNO สูง\n- เคยกำเริบรุนแรงในปีที่แล้ว · **เคยใส่ท่อช่วยหายใจ/นอน ICU**\n- สัมผัสสารที่แพ้ บุหรี่ บุหรี่ไฟฟ้า มลพิษ · ปัญหาจิตใจ/เศรษฐสังคม\n- โรคร่วม: อ้วน ไซนัสอักเสบเรื้อรัง GERD แพ้อาหารที่ยืนยันแล้ว ตั้งครรภ์ · ใช้หรือเพิ่งหยุด OCS\n#### เสี่ยง persistent airflow limitation\nคลอดก่อนกำหนด น้ำหนักแรกเกิดน้อย น้ำหนักขึ้นเร็วตอนทารก · ไอมีเสมหะเรื้อรัง · **เคยกำเริบรุนแรงโดยไม่ได้ ICS** · ควัน สารเคมี มลพิษจากงาน · FEV1 ต่ำตั้งแต่ต้น · eos ในเลือดหรือเสมหะสูง\n#### เสี่ยงผลข้างเคียงยา\n- **Systemic**: OCS บ่อย · ICS ขนาดสูงนาน · ใช้ร่วมกับ **CYP3A4 inhibitor** (ritonavir, ketoconazole, itraconazole)\n- **Local**: ICS ขนาดสูงหรือพ่นผิดวิธี → **เชื้อราในปาก เสียงแหบ**\n- **ICS ขนาดต่ำให้ประโยชน์ส่วนใหญ่แล้ว** เพิ่มเป็นขนาดสูงได้ประโยชน์อีกไม่มาก แต่ผลข้างเคียงมากขึ้น\n\n### Remission — เป้าหมายใหม่ ไม่ใช่หายขาด\nอาจารย์: remission **\"ไม่ได้บอกว่าหายขาด\"** แต่ \"ปัจจุบันการรักษา asthma เรามุ่งหวัง remission\"\n- **Clinical remission (4 ข้อ)**: ไม่มีอาการ · ไม่กำเริบ · lung function ปกติ/คงที่ · ไม่ต้องใช้ systemic corticosteroid\n- **Complete remission (6 ข้อ)**: 4 ข้อ + **biomarker กลับปกติ** + **AHR หายไป**\n\n> GINA 2026 พูดถึง remission โดยเฉพาะในผู้ป่วย severe ที่ได้ biologic ยังไม่มีเกณฑ์ตายตัว ตัวทำนายที่ดีคืออาการน้อย ปอดดี โรคร่วมน้อย เริ่มเป็นเร็ว และใช้ OCS น้อย",
+   "pearls": [
+    "4 คำถาม: อาการกลางวัน > 2/สัปดาห์ · ตื่นกลางคืน · reliever > 2/สัปดาห์ · กิจกรรมถูกจำกัด",
+    "0 ข้อ well · 1–2 partly · 3–4 uncontrolled",
+    "SABA ≥ 3 หลอด/ปี เสี่ยงกำเริบ · ≥ 1 หลอด/เดือน เสี่ยงตาย",
+    "ICS ขนาดต่ำให้ประโยชน์ส่วนใหญ่ — ขนาดสูงเพิ่มผลข้างเคียงมากกว่าประโยชน์",
+    "Clinical remission 4 ข้อ · complete remission 6 ข้อ (+ biomarker ปกติ + AHR หาย)"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-14",
+     "kind": "mcq",
+     "topic": "Symptom control assessment",
+     "stem": "A 32-year-old woman with asthma uses budesonide-formoterol as needed. Over the past 4 weeks she had daytime symptoms 3 times per week, woke once at night because of asthma, and has no activity limitation. How is her symptom control classified?",
+     "choices": [
+      "Uncontrolled",
+      "Cannot be classified without spirometry",
+      "Well controlled",
+      "Severe asthma",
+      "Partly controlled"
+     ],
+     "answer": 4,
+     "explain": "4 คำถาม (4 สัปดาห์): อาการกลางวัน **> 2/สัปดาห์ = ใช่** · **ตื่นกลางคืน = ใช่** · reliever > 2/สัปดาห์ **ไม่ใช้ข้อนี้** เมื่อ reliever เป็น ICS-formoterol · กิจกรรมจำกัด = ไม่ → ใช่ **2 ข้อ = partly controlled**\n\n- *well controlled* — ต้องใช่ 0 ข้อ\n- *uncontrolled* — ต้องใช่ 3–4 ข้อ\n- *severe asthma* — นิยามจากความยากในการรักษา ไม่ใช่จากคะแนนนี้\n- *ต้องมี spirometry* — symptom control ประเมินจากอาการ ส่วน lung function อยู่ในการประเมินความเสี่ยง",
+     "pearl": "ใช่ 1–2 ข้อ = partly controlled · ข้อ reliever ไม่ใช้กับ ICS-formoterol",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-15",
+     "kind": "mcq",
+     "topic": "Inhaled corticosteroid and CYP3A4",
+     "stem": "A 40-year-old man with asthma on high-dose inhaled fluticasone starts antiretroviral therapy containing ritonavir. Two months later he develops a round face, central obesity and proximal weakness. What is the mechanism?",
+     "choices": [
+      "Fluticasone induces the metabolism of ritonavir",
+      "Ritonavir inhibits CYP3A4, increasing systemic fluticasone exposure",
+      "Inhaled corticosteroids are fully absorbed regardless of dose",
+      "HIV infection causes primary adrenal hyperplasia",
+      "Ritonavir directly stimulates adrenocorticotropic hormone release"
+     ],
+     "answer": 1,
+     "explain": "Fluticasone ถูกเผาผลาญผ่าน **CYP3A4** · ritonavir (และ ketoconazole, itraconazole) ยับยั้ง CYP3A4 แรง → ระดับ steroid ในเลือดสูง → **iatrogenic Cushing** และต่อมาเกิด **adrenal suppression** · แก้ด้วยเปลี่ยนเป็น ICS ที่ได้รับผลน้อยกว่าหรือลดขนาด\n\n- *กระตุ้น ACTH* — Cushing ที่นี่เป็นแบบ exogenous ACTH จะ **ต่ำ**\n- *fluticasone เหนี่ยวนำยาต้านไวรัส* — กลับทิศ\n- *HIV ทำ adrenal hyperplasia* — ไม่ใช่\n- *ICS ดูดซึมหมด* — ปกติ first-pass ทำลายยาที่กลืนลงไปเกือบหมด ปัญหาเกิดเพราะ CYP3A4 ถูกยับยั้ง",
+     "pearl": "ICS + ritonavir (CYP3A4 inhibitor) → Cushing / adrenal suppression",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.4(5)",
+      "2.3.10(1)"
+     ]
+    }
+   ],
+   "figs": {},
+   "mnem": [
+    {
+     "name": "2-2-1-1",
+     "what": "4 คำถามคุมอาการของ GINA (4 สัปดาห์ที่ผ่านมา)",
+     "lines": [
+      [
+       "2",
+       "อาการ **กลางวัน > 2** ครั้ง/สัปดาห์"
+      ],
+      [
+       "2",
+       "ใช้ **reliever > 2** ครั้ง/สัปดาห์"
+      ],
+      [
+       "1",
+       "**ตื่นกลางคืน** แม้ **1** ครั้ง"
+      ],
+      [
+       "1",
+       "**กิจกรรมถูกจำกัด** แม้ **1** อย่าง"
+      ]
+     ],
+     "note": "ใช่ 0 ข้อ = well · 1–2 = partly · 3–4 = uncontrolled",
+     "src": "GINA 2026 Summary Guide — Assessment of symptom control"
+    }
+   ]
+  },
+  {
+   "id": "chest-ast-07",
+   "title": "ยาที่ใช้ในหืด — กลไก ผลข้างเคียง และทำไม SABA เดี่ยวจึงอันตราย",
+   "summary": "Controller · reliever · add-on · β2-agonist (Gs → cAMP) · antimuscarinic · ICS · AIR กับ MART · ทำไม salmeterol เป็น reliever ไม่ได้ · ยาที่ไม่แนะนำ",
+   "minutes": 10,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "B6.4(4)",
+    "B6.4(5)",
+    "2.3.10(1)",
+    "B1.4.14"
+   ],
+   "md": "### 3 กลุ่มยา\n- **Controller (maintenance)** — ใช้ต่อเนื่อง **มี ICS เป็นส่วนประกอบ** เพื่อลดการอักเสบและความเสี่ยง · ICS แบ่งขนาดต่ำ กลาง สูง ตามชนิดยา\n- **Reliever** — ใช้เมื่อมีอาการ: **ICS-formoterol** · **ICS-SABA** · SABA\n- **Add-on** — สำหรับหืดรุนแรง/รักษายาก เช่น LAMA, **biologic**\n\n### คำศัพท์ที่ต้องแยกให้ออก\n- **AIR (anti-inflammatory reliever)** = reliever ที่มี ICS ในตัว (ICS-formoterol หรือ ICS-SABA) — ทุกครั้งที่พ่นตอนหอบ **ได้ ICS ไปดับไฟด้วย**\n- **MART (maintenance and reliever therapy)** = ใช้ **ICS-formoterol หลอดเดียว** เป็นทั้ง maintenance และ reliever\n- อาจารย์: ปัจจุบัน \"ไม่เรียกว่า reliever เราใช้คำว่า **AIR**\" — ทุกครั้งที่หอบต้องได้ ICS คู่เสมอ\n\n### เภสัชวิทยาที่ออกสอบ\n| ยา | กลไก | ผลข้างเคียงที่ต้องรู้ |\n|---|---|---|\n| **β2-agonist** (salbutamol = SABA · formoterol, salmeterol = LABA) | β2 → **Gs → adenylyl cyclase → cAMP ↑ → PKA** → กล้ามเนื้อเรียบหลอดลมคลาย | มือสั่น ใจสั่น หัวใจเต้นเร็ว · **K ต่ำ** (ดัน K เข้าเซลล์ผ่าน Na-K ATPase) · น้ำตาลสูง · lactic acidosis เมื่อให้ขนาดสูง |\n| **Antimuscarinic** (ipratropium = SAMA · tiotropium = LAMA) | ยับยั้ง **M3** → ลด vagal bronchoconstriction และการหลั่งเมือก | ปากแห้ง · ระวังต้อหินมุมปิด ปัสสาวะคั่ง |\n| **ICS** (budesonide, beclometasone, fluticasone) | ยับยั้งการถอดรหัสยีนอักเสบ ลดจำนวน eosinophil/mast cell **เพิ่มจำนวน β2-receptor** | เฉพาะที่: **เชื้อราในปาก เสียงแหบ** (บ้วนปากหลังพ่น ใช้ spacer) · ทั้งระบบ (ขนาดสูง/ร่วมกับ **CYP3A4 inhibitor** เช่น ritonavir + fluticasone → Cushing, adrenal suppression) |\n\n### ทำไม formoterol ใช้เป็น reliever ได้ แต่ salmeterol ไม่ได้\n- **Formoterol ออกฤทธิ์เร็ว (1–3 นาที)** เหมือน SABA และอยู่นาน จึงใช้ได้ทั้ง maintenance และ reliever\n- **Salmeterol และ vilanterol ออกฤทธิ์ช้า** → ใช้เป็น MART ไม่ได้\n- คนที่ใช้ **ICS-salmeterol** เป็น maintenance **ห้ามใช้ ICS-formoterol เป็น reliever** — ให้ใช้ SABA หรือ ICS-SABA แทน\n\n### ทำไม SABA เดี่ยวจึงอันตราย (อาจารย์เล่า)\n- SABA แค่ **\"ปิดบังอาการ\"** การอักเสบข้างในยังอยู่และค่อย ๆ เพิ่มขึ้น\n- พ่น Ventolin อย่างเดียวซ้ำ ๆ พัฟแรกยังได้ผล แต่ครั้งที่ 3–4 เริ่มไม่ได้ผล ก็ยิ่งพ่นมากขึ้น — ตรงกับ GINA ที่ว่าใช้ SABA เป็นประจำเพียง 1–2 สัปดาห์ก็ **เพิ่ม AHR การอักเสบ และลดการตอบสนองต่อยาขยาย**\n- สุดท้าย \"ไม่ตายจาก asthma ก็อาจจะตายจาก cardiac\" (หัวใจเต้นผิดจังหวะ)\n- GINA: ใช้ SABA ≥ 3 หลอด/ปี เพิ่มความเสี่ยงกำเริบ · **≥ 12 หลอด/ปี สัมพันธ์กับการตายจากหืด**\n\n> **ไม่แนะนำ**: SABA เดี่ยวโดยไม่มี ICS · LABA เดี่ยวโดยไม่มี ICS (เพิ่มความเสี่ยงตาย) · oral salbutamol · theophylline · oral epinephrine",
+   "pearls": [
+    "β2-agonist: Gs → cAMP ↑ → กล้ามเนื้อเรียบคลาย · ขนาดสูงทำให้ K ต่ำ",
+    "AIR = reliever ที่มี ICS · MART = ICS-formoterol หลอดเดียวเป็นทั้ง maintenance และ reliever",
+    "Formoterol ออกฤทธิ์เร็ว ใช้เป็น reliever ได้ · salmeterol/vilanterol ช้า ใช้ไม่ได้",
+    "SABA เดี่ยวปิดบังอาการ เพิ่ม AHR และสัมพันธ์กับการตาย — ไม่แนะนำแล้ว",
+    "ICS ร่วมกับ ritonavir (CYP3A4 inhibitor) → Cushing / adrenal suppression"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-16",
+     "kind": "mcq",
+     "topic": "Why salmeterol cannot be a reliever",
+     "stem": "A patient's maintenance inhaler is changed from fluticasone-salmeterol to budesonide-formoterol so that the same inhaler can also be used for symptom relief. Which property of formoterol makes this possible?",
+     "choices": [
+      "Greater selectivity for beta-1 receptors",
+      "Shorter half-life than salbutamol",
+      "Antimuscarinic activity in addition to beta-2 agonism",
+      "Direct anti-inflammatory action independent of the beta-2 receptor",
+      "Rapid onset of action within minutes together with long duration"
+     ],
+     "answer": 4,
+     "explain": "**Formoterol ออกฤทธิ์เร็ว (1–3 นาที)** เหมือน SABA และอยู่นาน ~12 ชม. → ใช้ได้ทั้ง maintenance และ reliever (**MART/AIR**) · **salmeterol และ vilanterol ออกฤทธิ์ช้า** ใช้เป็น reliever ไม่ได้ — คนที่ใช้ ICS-salmeterol ต้องใช้ SABA หรือ ICS-SABA เป็น reliever\n\n- *β1 selective* — ทั้งสองเป็น β2 selective และ β1 ไม่ใช่สิ่งที่ต้องการ\n- *antimuscarinic* — ไม่มี\n- *half-life สั้นกว่า salbutamol* — ผิด formoterol อยู่นานกว่า\n- *ต้านอักเสบเอง* — ส่วนที่ต้านอักเสบคือ budesonide",
+     "pearl": "Formoterol เร็ว → เป็น reliever ได้ · salmeterol ช้า → ไม่ได้",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.4(4)",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-17",
+     "kind": "mcq",
+     "topic": "Beta-2 agonist adverse effect",
+     "stem": "During treatment of an acute asthma attack with repeated nebulised salbutamol, a patient develops muscle weakness and flattened T waves on ECG. Which mechanism explains this?",
+     "choices": [
+      "Direct myocardial toxicity causing hyperkalaemia",
+      "Increased renal potassium excretion through aldosterone release",
+      "Stimulation of Na+/K+-ATPase shifting potassium into cells",
+      "Blockade of muscarinic M3 receptors",
+      "Inhibition of phosphodiesterase causing hypercalcaemia"
+     ],
+     "answer": 2,
+     "explain": "β2 → cAMP ↑ → กระตุ้น **Na⁺/K⁺-ATPase** → **K⁺ เข้าเซลล์** → **hypokalaemia** (กล้ามเนื้ออ่อนแรง T wave แบน U wave) · ต้องเจาะเกลือแร่เมื่อให้ SABA ขนาดสูงซ้ำ ๆ · ผลอื่น: มือสั่น ใจสั่น น้ำตาลสูง lactic acidosis\n\n- *aldosterone* — ไม่ใช่กลไกหลักของ salbutamol\n- *M3 blockade* — ipratropium ไม่ทำให้ K ต่ำ\n- *PDE inhibition* — theophylline และไม่ได้ทำแคลเซียมสูง\n- *K สูง* — ตรงข้าม",
+     "pearl": "SABA ขนาดสูง → K⁺ เข้าเซลล์ → hypokalaemia",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.4(4)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-18",
+     "kind": "mcq",
+     "topic": "SABA-only treatment",
+     "stem": "A 20-year-old man with asthma uses salbutamol alone and has filled 14 salbutamol canisters in the past year. Which statement best explains why this is dangerous?",
+     "choices": [
+      "SABA is safe at any dose because it is inhaled",
+      "SABA causes irreversible beta-2 receptor destruction within days",
+      "SABA directly causes eosinophilia",
+      "SABA relieves bronchospasm but leaves airway inflammation untreated, and high use is associated with asthma death",
+      "SABA is a weak bronchodilator compared with theophylline"
+     ],
+     "answer": 3,
+     "explain": "SABA แค่ **ปิดบังอาการ** การอักเสบยังอยู่ · ใช้ประจำเพิ่ม AHR และลดการตอบสนองต่อยาขยาย (พ่นครั้งที่ 3–4 ไม่ได้ผล ยิ่งพ่นมาก) · ใช้ **≥ 3 หลอด/ปี** เสี่ยงกำเริบ **≥ 12 หลอด/ปี สัมพันธ์กับการตายจากหืด** · อาจารย์: \"ไม่ตายจาก asthma ก็อาจจะตายจาก cardiac\" → ต้องเปลี่ยนเป็นยาที่มี ICS (Track 1)\n\n- *ทำลาย receptor ถาวร* — เป็น downregulation/tolerance ซึ่งกลับคืนได้ และ ICS ช่วยฟื้น\n- *อ่อนกว่า theophylline* — ตรงข้าม\n- *ทำให้ eosinophil สูง* — ไม่ใช่\n- *ปลอดภัยทุกขนาด* — ผิดชัดเจน",
+     "pearl": "SABA ≥ 12 หลอด/ปี สัมพันธ์กับการตายจากหืด",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "B6.4(4)",
+      "2.3.10(1)"
+     ]
+    }
+   ],
+   "figs": {}
+  },
+  {
+   "id": "chest-ast-08",
+   "title": "GINA 2026 สองรางห้าขั้น — เลือกขั้นเริ่มต้นและขนาดยา MART",
+   "summary": "Track 1 (ICS-formoterol) vs Track 2 · AIR-only → MART ขนาดต่ำ → ขนาดกลาง · ไม่มี ICS ขนาดสูงใน Step 4 · เลือกขั้นเริ่มจากอาการกลางวัน กลางคืน ปอด กำเริบ · ข้อจำกัดในไทย",
+   "minutes": 11,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "2.3.10(1)",
+    "B6.4(4)",
+    "B6.4(5)"
+   ],
+   "md": "[[fig:ast_steps]]\n\n### ผู้ใหญ่และวัยรุ่น (≥ 12 ปี)\n| ขั้น | Track 1 (preferred) — reliever = ICS-formoterol ขนาดต่ำ | Track 2 (alternative) — reliever = ICS-SABA หรือ SABA |\n|---|---|---|\n| **Step 1–2** (mild) | **AIR-only**: ICS-formoterol 1 สูดเมื่อมีอาการ | Step 1: ICS-SABA เมื่อมีอาการ (ถ้ามีแต่ SABA ให้พ่น ICS ทุกครั้งที่พ่น SABA) · Step 2: ICS ขนาดต่ำทุกวัน |\n| **Step 3** (moderate) | **MART ขนาดต่ำ**: 1 สูด เช้า–เย็น + 1 สูดเมื่อมีอาการ | ICS-LABA ขนาดต่ำทุกวัน |\n| **Step 4** (moderate) | **MART ขนาดกลาง**: 2 สูด เช้า–เย็น + 1 สูดเมื่อมีอาการ | ICS-LABA ขนาดกลางทุกวัน |\n| **Step 5** (severe) | ส่งผู้เชี่ยวชาญ ประเมิน phenotype · add-on LAMA · ICS ขนาดสูง (จำกัด 3–6 เดือนถ้าทำได้) · biologic | เหมือนกัน |\n\n- ตัวอย่างยา Track 1: **budesonide-formoterol 160/4.5 mcg** หรือ BDP-formoterol 100/6 mcg · รวมทั้งวัน **ไม่ควรเกิน 12 สูด** (เด็ก 6–11 ปีใช้ 80/4.5 ไม่เกิน 8 สูด) — ถ้าต้องใช้มากกว่านั้นต้องมาโรงพยาบาล\n- อาจารย์เน้น **\"นั่นจะเน้นนะ\"**: GINA ปัจจุบัน **ไม่มี ICS ขนาดสูงใน Step 4 แล้ว** ใช้ขนาดสูงเฉพาะ Step 5 เพราะผลข้างเคียงเยอะ\n\n### ทำไม Track 1 ชนะ\n1. **Formoterol ออกฤทธิ์เร็ว** เหมือน SABA จึงใช้เป็น reliever ได้\n2. ทุกครั้งที่หอบแล้วพ่น **ได้ ICS ไปด้วย** — ดับไฟตอนที่ไฟลุก\n3. **หลอดเดียว เทคนิคเดียว** ตั้งแต่ Step 1–4 ง่ายต่อผู้ป่วย\n4. **ลดการกำเริบรุนแรงได้มากกว่า** รางที่ใช้ SABA เป็น reliever โดยคุมอาการได้พอกัน\n\n> **บริบทไทย (จากคาบ)**: ในไทยไม่มี ICS-SABA แบบรวมหลอด ถ้าใช้ Track 2 ผู้ป่วยคนเดียวอาจต้องมี 3 หลอด (ICS-LABA + ICS + SABA) ในทางปฏิบัติผู้ป่วยไม่ค่อยยอมใช้\n\n### เลือกขั้นเริ่มต้น\nหลักจำของอาจารย์ — นับว่ามีอะไรบ้างใน 4 อย่าง: **อาการกลางวัน · อาการกลางคืน · ปอดต่ำ · กำเริบ**\n| อาการตอนมาครั้งแรก | เริ่มที่ (Track 1) |\n|---|---|\n| มีอาการ ≤ 2 วัน/สัปดาห์ หรือน้อยกว่า 3–5 วัน/สัปดาห์ ปอดปกติหรือลดเล็กน้อย | **Step 1–2** — ICS-formoterol เมื่อมีอาการ |\n| อาการเกือบทุกวัน (≥ 4 วัน/สัปดาห์) **หรือ** ตื่นกลางคืน ≥ 1 ครั้ง/สัปดาห์ **หรือ** ปอดต่ำ | **Step 3** — MART ขนาดต่ำ |\n| อาการทุกวัน หรือตื่นกลางคืน ≥ 1 ครั้ง/สัปดาห์ **ร่วมกับ** ปอดต่ำ หรือเพิ่งกำเริบ | **Step 4** — MART ขนาดกลาง |\n| มาครั้งแรกด้วยอาการกำเริบเฉียบพลัน | รักษาแบบ exacerbation + OCS ระยะสั้น แล้วเริ่ม **Step 4** |\n\n> อาจารย์เสริมว่าในชีวิตจริงแทบไม่เจอคนที่ปอดต่ำแต่ไม่มีอาการเลย",
+   "pearls": [
+    "Track 1 = ICS-formoterol ทุกขั้น: AIR-only (1–2) → MART ต่ำ (3) → MART กลาง (4)",
+    "ICS-formoterol รวมทั้งวันไม่เกิน 12 สูด (เด็ก 8)",
+    "ไม่มี ICS ขนาดสูงใน Step 4 แล้ว — ขนาดสูงเฉพาะ Step 5 จำกัด 3–6 เดือน",
+    "เลือกขั้นเริ่ม: นับอาการกลางวัน กลางคืน ปอดต่ำ กำเริบ",
+    "มาด้วยกำเริบครั้งแรก → OCS ระยะสั้น แล้วเริ่ม Step 4"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-19",
+     "kind": "mcq",
+     "topic": "Initial step — Track 1",
+     "stem": "A 26-year-old woman newly diagnosed with asthma has daytime symptoms 5 days per week and wakes at night about once a week. FEV1 is 72% predicted. She has never had an exacerbation. According to GINA Track 1, what is the most appropriate initial treatment?",
+     "choices": [
+      "High-dose inhaled corticosteroid-LABA plus salbutamol as needed",
+      "Low-dose budesonide-formoterol as maintenance and reliever (MART)",
+      "As-needed salbutamol only",
+      "As-needed low-dose budesonide-formoterol only",
+      "Oral montelukast alone"
+     ],
+     "answer": 1,
+     "explain": "อาการ **เกือบทุกวัน (≥ 4 วัน/สัปดาห์)** + **ตื่นกลางคืน** + **ปอดต่ำ** แต่ **ไม่เคยกำเริบ** → เริ่ม **Step 3 = MART ขนาดต่ำ** (1 สูดเช้า–เย็น + 1 สูดเมื่อมีอาการ ไม่เกิน 12 สูด/วัน)\n\n- *AIR-only* — สำหรับอาการน้อยกว่า 3–5 วัน/สัปดาห์ ปอดปกติ (Step 1–2)\n- *SABA เดี่ยว* — ไม่แนะนำแล้วทุกขั้น\n- *ICS-LABA ขนาดสูง* — ไม่มีขนาดสูงก่อน Step 5 และใช้ SABA เป็น reliever ไม่ใช่ทางเลือกที่ดีที่สุด\n- *montelukast เดี่ยว* — ด้อยกว่า ICS",
+     "pearl": "อาการเกือบทุกวัน/ตื่นกลางคืน/ปอดต่ำ → Step 3 MART ขนาดต่ำ",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-20",
+     "kind": "mcq",
+     "topic": "No high-dose ICS at Step 4",
+     "stem": "A 45-year-old man with asthma remains partly controlled on low-dose budesonide-formoterol MART despite correct inhaler technique and good adherence. What is the next step?",
+     "choices": [
+      "Change the reliever to salbutamol and continue the same maintenance",
+      "Add a long course of oral prednisolone",
+      "Add salmeterol as a second long-acting beta-2 agonist",
+      "Switch to high-dose ICS-LABA maintenance",
+      "Increase to medium-dose budesonide-formoterol MART"
+     ],
+     "answer": 4,
+     "explain": "เช็กเทคนิคและ adherence แล้ว (I ADORE) → **step up เป็น Step 4 = MART ขนาดกลาง** (2 สูดเช้า–เย็น + 1 สูดเมื่อมีอาการ) · อาจารย์เน้นว่า **Step 4 ไม่มี ICS ขนาดสูงแล้ว** ขนาดสูงเก็บไว้ Step 5 (จำกัด 3–6 เดือน)\n\n- *ICS-LABA ขนาดสูง* — ข้ามไป Step 5 เพิ่มผลข้างเคียงโดยไม่จำเป็น\n- *OCS ระยะยาว* — ทางเลือกสุดท้าย\n- *เพิ่ม salmeterol* — ซ้ำซ้อน LABA สองตัว\n- *เปลี่ยน reliever เป็น SABA* — เสียประโยชน์ของ AIR",
+     "pearl": "Step 3 → Step 4 = MART ขนาดกลาง ไม่ใช่ ICS ขนาดสูง",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-OLD-54",
+     "kind": "old",
+     "stem": "A 28-year-old woman with asthma has symptoms twice a week and wakes at night once or twice a month. She currently uses only an as-needed short-acting beta-2 agonist. According to current asthma guidelines, what should she be prescribed?",
+     "choices": [
+      "As-needed low-dose inhaled corticosteroid-formoterol as reliever therapy",
+      "A long-acting beta-2 agonist alone as controller",
+      "A long-acting muscarinic antagonist alone",
+      "As-needed short-acting beta-2 agonist alone, continued",
+      "Oral theophylline daily"
+     ],
+     "answer": 0,
+     "explain": "**การเปลี่ยนแปลงสำคัญของแนวทาง asthma (GINA) ที่ต้องรู้: ไม่แนะนำให้ใช้ SABA เดี่ยวๆ อีกต่อไปในผู้ใหญ่และวัยรุ่นทุกระดับความรุนแรง**\n\nเหตุผล: SABA แก้เพียง bronchospasm แต่ **ไม่แตะการอักเสบซึ่งเป็นพยาธิกำเนิดหลัก** → การใช้ SABA เดี่ยวสัมพันธ์กับ **exacerbation รุนแรงและการเสียชีวิตจากหอบหืด** (การใช้เกิน 3 กระบอก/ปี = ธงแดง) และยังทำให้ **β-receptor downregulation**\n\n**แนวทางปัจจุบัน (track 1)**: ใช้ **ICS-formoterol เป็น reliever** ทุกขั้น\n- **Step 1-2**: as-needed low-dose **ICS-formoterol**\n- **Step 3**: low-dose ICS-formoterol เป็น **maintenance และ reliever (MART)**\n- **Step 4**: medium-dose ICS-formoterol MART\n- **Step 5**: เพิ่ม LAMA และประเมิน phenotype เพื่อใช้ **biologic** (anti-IgE, anti-IL5, anti-IL4R)\n\n**หลักที่ห้ามลืม: ห้ามใช้ LABA เดี่ยวๆ โดยไม่มี ICS** เพราะเพิ่มความเสี่ยงเสียชีวิต\n\nก่อน step up ทุกครั้งต้องตรวจ **เทคนิคการพ่นยา ความสม่ำเสมอในการใช้ยา สิ่งกระตุ้นในสิ่งแวดล้อม และโรคร่วม (rhinitis, GERD, obesity, OSA)**",
+     "pearl": "",
+     "topic": "คลังข้อสอบเก่า MED28–MED35",
+     "src": "MED34 FA MCQ (RS ข้อ 2) – Asthma → As-needed ICS-formoterol; MED34 ข้อสอบ MED ครั้งที่ 2 FA MCQ ข้อ 6 – Asthma เป็นมา 1 ปี exacerbation 1-2 times/week management; MED32 MCQ ข้อ 36 – Asthma 1 ปี → long term ICS; MED31 MCQ ข้อ 71 – Step up asthma → moderate ICS + LABA; MED35 ลงกองครั้งที่ 2 MCQ ข้อ 55 – Long term asthma → ICS, LABA, SABA",
+     "ref": [],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)"
+     ]
+    }
+   ],
+   "figs": {
+    "ast_steps": {
+     "title": "GINA 2026 ผู้ใหญ่และวัยรุ่น (≥ 12 ปี) — สองราง ห้าขั้น",
+     "cap": "**Track 1 (preferred)** ใช้ **ICS-formoterol ขนาดต่ำ** เป็น reliever ตลอด — Step 1–2 พ่นเมื่อมีอาการ (**AIR-only**) · Step 3 **MART ขนาดต่ำ** · Step 4 **MART ขนาดกลาง** · **Track 2 (alternative)** ใช้ ICS-SABA หรือ SABA เป็น reliever และ ICS / ICS-LABA เป็น maintenance · Step 5 ส่งผู้เชี่ยวชาญ ประเมิน phenotype พิจารณา LAMA, ICS ขนาดสูง (จำกัด 3–6 เดือน) และ biologic · อาจารย์เน้นว่า **ไม่มี ICS ขนาดสูงใน Step 4 แล้ว**",
+     "svg": "<svg viewBox=\"0 0 420 312\" role=\"img\" aria-label=\"ขั้นบันไดการรักษาหืด GINA 2026 Track 1 และ Track 2 ขั้น 1 ถึง 5\" xmlns=\"http://www.w3.org/2000/svg\">\n<text x=\"10\" y=\"18\" class=\"sm b tok\">Track 1 · reliever = ICS-formoterol ขนาดต่ำ</text>\n<rect x=\"10\" y=\"88\" width=\"96\" height=\"54\" rx=\"6\" class=\"ok\"/><text x=\"58\" y=\"105\" class=\"xs mid b\">Step 1–2</text><text x=\"58\" y=\"120\" class=\"xs mid\">ICS-formoterol</text><text x=\"58\" y=\"134\" class=\"xs mid\">เมื่อมีอาการ</text>\n<rect x=\"110\" y=\"72\" width=\"96\" height=\"70\" rx=\"6\" class=\"ok\"/><text x=\"158\" y=\"90\" class=\"xs mid b\">Step 3</text><text x=\"158\" y=\"104\" class=\"xs mid\">MART</text><text x=\"158\" y=\"117\" class=\"xs mid\">ขนาดต่ำ</text><text x=\"158\" y=\"131\" class=\"xs mid mu\">1 สูด × 2 + PRN</text>\n<rect x=\"210\" y=\"46\" width=\"96\" height=\"96\" rx=\"6\" class=\"ok\"/><text x=\"258\" y=\"64\" class=\"xs mid b\">Step 4</text><text x=\"258\" y=\"78\" class=\"xs mid\">MART</text><text x=\"258\" y=\"91\" class=\"xs mid\">ขนาดกลาง</text><text x=\"258\" y=\"105\" class=\"xs mid mu\">2 สูด × 2 + PRN</text>\n<rect x=\"310\" y=\"28\" width=\"100\" height=\"114\" rx=\"6\" class=\"ac\"/><text x=\"360\" y=\"46\" class=\"xs mid b tac\">Step 5</text><text x=\"360\" y=\"62\" class=\"xs mid\">ส่งผู้เชี่ยวชาญ</text><text x=\"360\" y=\"76\" class=\"xs mid\">+ LAMA</text><text x=\"360\" y=\"90\" class=\"xs mid\">ICS ขนาดสูง</text><text x=\"360\" y=\"104\" class=\"xs mid\">(3–6 เดือน)</text><text x=\"360\" y=\"118\" class=\"xs mid\">biologic</text>\n<line x1=\"10\" y1=\"156\" x2=\"410\" y2=\"156\" class=\"lru da\"/>\n<text x=\"10\" y=\"176\" class=\"sm b tms\">Track 2 · reliever = ICS-SABA หรือ SABA</text>\n<rect x=\"10\" y=\"252\" width=\"47\" height=\"52\" rx=\"6\" class=\"ms\"/><text x=\"33\" y=\"268\" class=\"xs mid b\">S1</text><text x=\"33\" y=\"281\" class=\"xs mid\">ICS +</text><text x=\"33\" y=\"294\" class=\"xs mid\">SABA</text>\n<rect x=\"59\" y=\"236\" width=\"47\" height=\"68\" rx=\"6\" class=\"ms\"/><text x=\"82\" y=\"252\" class=\"xs mid b\">S2</text><text x=\"82\" y=\"266\" class=\"xs mid\">ICS</text><text x=\"82\" y=\"279\" class=\"xs mid\">ต่ำ</text><text x=\"82\" y=\"292\" class=\"xs mid\">ทุกวัน</text>\n<rect x=\"110\" y=\"220\" width=\"96\" height=\"84\" rx=\"6\" class=\"ms\"/><text x=\"158\" y=\"238\" class=\"xs mid b\">Step 3</text><text x=\"158\" y=\"254\" class=\"xs mid\">ICS-LABA</text><text x=\"158\" y=\"268\" class=\"xs mid\">ขนาดต่ำ</text><text x=\"158\" y=\"282\" class=\"xs mid\">ทุกวัน</text>\n<rect x=\"210\" y=\"200\" width=\"96\" height=\"104\" rx=\"6\" class=\"ms\"/><text x=\"258\" y=\"218\" class=\"xs mid b\">Step 4</text><text x=\"258\" y=\"234\" class=\"xs mid\">ICS-LABA</text><text x=\"258\" y=\"248\" class=\"xs mid\">ขนาดกลาง</text><text x=\"258\" y=\"262\" class=\"xs mid\">ทุกวัน</text>\n<rect x=\"310\" y=\"186\" width=\"100\" height=\"118\" rx=\"6\" class=\"ac\"/><text x=\"360\" y=\"204\" class=\"xs mid b tac\">Step 5</text><text x=\"360\" y=\"222\" class=\"xs mid\">เหมือน Track 1</text><text x=\"360\" y=\"236\" class=\"xs mid\">LAMA</text><text x=\"360\" y=\"250\" class=\"xs mid\">ICS-LABA สูง</text><text x=\"360\" y=\"264\" class=\"xs mid\">biologic</text>\n<text x=\"210\" y=\"196\" class=\"xs end mu\">ขั้นสูงขึ้น →</text>\n</svg>"
+    }
+   }
+  },
+  {
+   "id": "chest-ast-09",
+   "title": "ดูแลระยะยาว — Assess · Adjust · Review, I ADORE, หืดรุนแรง และกลุ่มพิเศษ",
+   "summary": "วงจรทุก visit · นัดติดตาม · step down · คุมไม่ได้ไล่ I ADORE ก่อน step up · difficult-to-treat vs severe · biologic · ไม่ใช้ยา วัคซีน · ตั้งครรภ์ AERD ผ่าตัด",
+   "minutes": 12,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "2.3.10(1)",
+    "B6.4(5)",
+    "B1.4.14",
+    "2.3.19(6)"
+   ],
+   "md": "### Assess → Adjust → Review (ทุก visit)\n- **Assess** — ยืนยันการวินิจฉัย (ถ้ายังไม่มีหลักฐาน) · symptom control 4 ข้อ + ปัจจัยเสี่ยง · **ดูเทคนิคพ่นยาด้วยตา** และถาม adherence แบบไม่ตัดสิน · โรคร่วม (rhinitis/rhinosinusitis, GERD, อ้วน, OSA, ซึมเศร้า/วิตกกังวล) · เป้าหมายและความชอบของผู้ป่วย\n- **Adjust** — ยาที่มี ICS ทุกคน + reliever ที่ออกฤทธิ์เร็ว · แก้ปัจจัยเสี่ยงที่แก้ได้ · ให้ความรู้ ฝึกพ่นยา และ **written asthma action plan ทุกคน**\n- **Review** — อาการ การกำเริบ ผลข้างเคียง สมรรถภาพปอด ความพึงพอใจ\n\n### นัดติดตาม\n- **1–3 เดือน** หลังเริ่มยา จากนั้น **ทุก 3–12 เดือน**\n- **หญิงตั้งครรภ์ ทุก 4–6 สัปดาห์** และ **ห้ามหยุด/ลด ICS**\n- หลังกำเริบ: **ภายใน 1 สัปดาห์**\n- วัดสมรรถภาพปอดก่อนเริ่ม ICS, 3–6 เดือนหลังเริ่ม และอย่างน้อยทุก 1–2 ปี\n\n### Step down\n- คุมได้ดี **≥ 2–3 เดือน** → ลดหาขนาดต่ำสุดที่ยังคุมอาการและความเสี่ยงได้\n- เลือกช่วงที่ **ไม่ติดเชื้อ ไม่เดินทาง ไม่ตั้งครรภ์** · ลด ICS ครั้งละ **25–50%** · รออีก 2–3 เดือนก่อนลดต่อ\n- **ห้ามหยุด ICS ทั้งหมดในผู้ใหญ่/วัยรุ่น**\n\n### คุมไม่ได้ → อย่าเพิ่ง step up! ไล่ \"I ADORE\" ก่อน\n| | ตรวจอะไร |\n|---|---|\n| **I**nhaler technique | ให้พ่นให้ดู ใช้ checklist แก้แล้วเช็กซ้ำ |\n| **A**dherence | ถามแบบไม่ตัดสิน \"4 สัปดาห์ที่ผ่านมาพ่นกี่วันต่อสัปดาห์\" ดู dose counter |\n| **D**iagnosis | หืดจริงไหม ถ้าปอดปกติตอนมีอาการให้คิดโรคอื่น |\n| **O**ther risk factors | บุหรี่ **β-blocker** **NSAID** สารก่อภูมิแพ้ งาน |\n| **R**hinitis & comorbidities | rhinosinusitis, GERD (รักษาเมื่อมีอาการ), อ้วน, OSA, ซึมเศร้า, ปัญหากล่องเสียง |\n| **E**scalate | แล้วจึง step up (ระยะสั้นหรือข้ามขั้น) · ผู้ใหญ่เปลี่ยนเป็น Track 1 ถ้ายังไม่ได้ใช้ |\n\n### Difficult-to-treat vs severe asthma\n- **Difficult-to-treat** — คุมไม่ได้แม้ได้ Step 4–5 (ICS-LABA ขนาดกลาง/สูง) หรือต้องใช้ขนาดสูงจึงคุมได้ · **ส่วนใหญ่มีปัจจัยที่แก้ได้**: พ่นผิด ไม่ใช้ยา ใช้ผิดสูตร สูบบุหรี่ โรคร่วม วินิจฉัยผิด\n- **Severe asthma** — **ยังคุมไม่ได้หลังแก้ปัจจัยที่แก้ได้ทั้งหมดแล้ว** (รวม OSA, GERD) หรือต้องใช้ขนาดสูงไว้ตลอด\n- ยังคุมไม่ได้หลัง Step 4 นาน 3–6 เดือน → **ส่งผู้เชี่ยวชาญ** · FeNO สูงทั้งที่ได้ Step 3–4 → **เช็ก adherence ก่อนเสมอ** · OCS ต่อเนื่องเป็นทางเลือกสุดท้าย (เฝ้าระวัง adrenal suppression กระดูกพรุน)\n\n#### Biologic (Step 5)\n| เป้า | ยา (อายุ) | ใครเหมาะ |\n|---|---|---|\n| IgE | **Omalizumab** SC (≥ 6) | severe allergic asthma |\n| IL-5 / IL-5Rα | **Mepolizumab** SC (≥ 6) · Reslizumab IV (≥ 18) · Depemokimab SC (≥ 12 ฉีดทุก 6 เดือน) · **Benralizumab** SC (≥ 12) | severe eosinophilic asthma |\n| IL-4Rα | **Dupilumab** SC (≥ 6) | eosinophilic/Type 2 หรือต้องใช้ OCS ประจำ |\n| TSLP | **Tezepelumab** SC (≥ 12) | severe asthma — ใช้ได้กว้างสุดเพราะตัดต้นน้ำ |\n\n### การดูแลที่ไม่ใช้ยา\n- **เลิกบุหรี่และบุหรี่ไฟฟ้า** (รวมควันมือสอง) · เลี่ยงสารก่อภูมิแพ้และมลพิษในบ้านและที่ทำงาน\n- **ออกกำลังกายสม่ำเสมอ** + ฝึกการหายใจ · exercise-induced bronchoconstriction ให้ warm-up และพ่น reliever ก่อนออกกำลังได้\n- ลดน้ำหนัก 5–10% ในคนอ้วนช่วยคุมอาการ\n- **วัคซีนทางเดินหายใจตามวัย**: ไข้หวัดใหญ่ COVID-19 RSV pneumococcus pertussis (ในคาบผู้นำเสนอพูดถึง adenovirus ด้วย แต่ไม่มีใน GINA)\n\n### กลุ่มพิเศษ\n- **ตั้งครรภ์** — ถามเรื่องหืดทุกคน · **ห้ามหยุดหรือลด ICS** (หืดคุมไม่ได้อันตรายต่อทารกมากกว่ายา) · ห้ามทำ bronchial challenge · กำเริบให้รักษาเหมือนคนไม่ท้องเพื่อกัน fetal hypoxia\n- **AERD** (แพ้ aspirin/NSAID) — หอบหลังกิน NSAID + **nasal polyp** + rhinosinusitis · ถามประวัติก่อนสั่ง NSAID ทุกครั้ง\n- **ผ่าตัด** — ผ่าตอนคุมหืดได้ดี ใช้ ICS ต่อ · ใช้ ICS ขนาดสูงนานหรือได้ OCS > 2 สัปดาห์ใน 6 เดือน → ให้ **hydrocortisone ระหว่างผ่าตัด** กัน adrenal crisis",
+   "pearls": [
+    "นัด 1–3 เดือนหลังเริ่มยา แล้วทุก 3–12 เดือน · ตั้งครรภ์ทุก 4–6 สัปดาห์",
+    "Step down เมื่อคุมได้ ≥ 2–3 เดือน ลด ICS 25–50% ห้ามหยุด ICS ทั้งหมดในผู้ใหญ่",
+    "คุมไม่ได้ → I ADORE (เทคนิค adherence วินิจฉัย ปัจจัยเสี่ยง โรคร่วม) ก่อน step up",
+    "Severe asthma = ยังคุมไม่ได้หลังแก้ปัจจัยที่แก้ได้ทั้งหมดแล้ว",
+    "ตั้งครรภ์ห้ามหยุด ICS · AERD = NSAID + nasal polyp"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-21",
+     "kind": "mcq",
+     "topic": "Uncontrolled asthma — first action",
+     "stem": "A 34-year-old woman with asthma on medium-dose budesonide-formoterol MART still has nightly symptoms. Before increasing her treatment, what should be done first?",
+     "choices": [
+      "Refer for bronchial thermoplasty",
+      "Prescribe high-dose inhaled corticosteroid",
+      "Add a long-acting muscarinic antagonist",
+      "Start a biologic agent",
+      "Ask her to demonstrate her inhaler technique and assess adherence"
+     ],
+     "answer": 4,
+     "explain": "คุมไม่ได้ → **อย่าเพิ่ง step up** ไล่ **I ADORE**: **I**nhaler technique · **A**dherence · **D**iagnosis · **O**ther risk factors (บุหรี่ β-blocker NSAID) · **R**hinitis/comorbidities · แล้วจึง **E**scalate · ปัญหาส่วนใหญ่ของหืดที่คุมไม่ได้คือพ่นผิดหรือไม่ได้ใช้ยา\n\n- *biologic / LAMA / ICS ขนาดสูง* — เป็น Step 5 หลังแก้ปัจจัยที่แก้ได้แล้วเท่านั้น\n- *bronchial thermoplasty* — เฉพาะบางรายในศูนย์เฉพาะทาง",
+     "pearl": "คุมไม่ได้ → ดูเทคนิคพ่นยาและ adherence ก่อนเสมอ",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-22",
+     "kind": "mcq",
+     "topic": "Asthma in pregnancy",
+     "stem": "A 29-year-old woman whose asthma is well controlled on low-dose budesonide-formoterol MART is 8 weeks pregnant. She asks to stop her inhaler to protect the baby. What is the most appropriate advice?",
+     "choices": [
+      "Switch to salbutamol alone during pregnancy",
+      "Perform a methacholine challenge to confirm she still has asthma",
+      "Continue her inhaled corticosteroid-containing treatment and review every 4–6 weeks",
+      "Stop all asthma medication until the second trimester",
+      "Stop the inhaler and use oral prednisolone if symptoms occur"
+     ],
+     "answer": 2,
+     "explain": "ตั้งครรภ์ **ห้ามหยุดหรือลด ICS** — หืดที่คุมไม่ได้/กำเริบทำให้ **fetal hypoxia** อันตรายกว่ายามาก · budesonide มีข้อมูลความปลอดภัยดี · นัดทุก **4–6 สัปดาห์**\n\n- *หยุดยา* — เพิ่มความเสี่ยงกำเริบ\n- *SABA เดี่ยว* — ไม่แนะนำในทุกคน\n- *รอใช้ OCS* — OCS มีผลข้างเคียงมากกว่า ICS\n- *methacholine challenge* — **ห้ามทำในหญิงตั้งครรภ์**",
+     "pearl": "ตั้งครรภ์: ห้ามหยุด ICS · นัดทุก 4–6 สัปดาห์",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-23",
+     "kind": "mcq",
+     "topic": "Severe asthma definition",
+     "stem": "Which patient meets the definition of severe asthma?",
+     "choices": [
+      "Had one severe exacerbation triggered by influenza but is otherwise well controlled",
+      "Uses salbutamol 3 times per week without a controller",
+      "Uncontrolled on medium-dose ICS-LABA while still smoking 20 cigarettes a day",
+      "Uncontrolled on low-dose ICS because she uses it only twice a week",
+      "Uncontrolled despite adherence to high-dose ICS-LABA with correct technique after comorbidities have been treated"
+     ],
+     "answer": 4,
+     "explain": "**Severe asthma** = ยังคุมไม่ได้แม้ใช้ **ICS-LABA ขนาดสูงอย่างสม่ำเสมอ เทคนิคถูก** และ **แก้ปัจจัยที่แก้ได้ทั้งหมดแล้ว** (โรคร่วม บุหรี่) หรือต้องใช้ขนาดสูงไว้ตลอดจึงคุมได้ · ต้องส่งผู้เชี่ยวชาญประเมิน phenotype และพิจารณา biologic\n\n- *ใช้ ICS ไม่สม่ำเสมอ* — **difficult-to-treat** (adherence)\n- *กำเริบครั้งเดียวจากไข้หวัดใหญ่* — ยังไม่ใช่ severe\n- *ยังสูบบุหรี่* — ปัจจัยที่แก้ได้ยังไม่ได้แก้\n- *SABA เดี่ยว* — ยังไม่ได้รักษาตามมาตรฐาน",
+     "pearl": "Severe = คุมไม่ได้หลังแก้ทุกปัจจัยที่แก้ได้แล้ว",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.3.10(1)",
+      "B1.4.14"
+     ]
+    }
+   ],
+   "figs": {},
+   "mnem": [
+    {
+     "name": "I ADORE",
+     "what": "สิ่งที่ต้องไล่ก่อน step up ในหืดที่คุมไม่ได้",
+     "lines": [
+      [
+       "I",
+       "**I**nhaler technique — ให้พ่นให้ดู"
+      ],
+      [
+       "A",
+       "**A**dherence — ถามแบบไม่ตัดสิน ดู dose counter"
+      ],
+      [
+       "D",
+       "**D**iagnosis — หืดจริงไหม"
+      ],
+      [
+       "O",
+       "**O**ther risk factors — บุหรี่ β-blocker NSAID สารแพ้ งาน"
+      ],
+      [
+       "R",
+       "**R**hinitis & comorbidities — GERD อ้วน OSA ซึมเศร้า"
+      ],
+      [
+       "E",
+       "**E**scalate — แล้วจึง step up"
+      ]
+     ],
+     "note": "โจทย์ \"คุมไม่ได้ ทำอะไรต่อ\" คำตอบแรกเกือบทุกครั้งคือเช็กเทคนิคพ่นยาและ adherence",
+     "src": "เรียบเรียงจาก GINA 2026 — difficult-to-treat asthma (หลักจำของหน้า Asthma ข้างเตียง)"
+    }
+   ]
+  },
+  {
+   "id": "chest-ast-10",
+   "title": "หอบหืดกำเริบ (1) — ตัวจุด ผู้เสี่ยงตาย จัดระดับ 92 · 30 · 50 และยาตามความรุนแรง",
+   "summary": "นิยาม · ไวรัส สารแพ้ PM2.5 หยุดยา · red flag เสี่ยงตาย 4 กลุ่ม · mild/moderate/severe · salbutamol ipratropium O2 OCS · แยก anaphylaxis",
+   "minutes": 11,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "2.2.11",
+    "2.3.10(1)",
+    "B6.4(4)",
+    "2.1.34",
+    "2.2.7"
+   ],
+   "md": "### นิยาม\n**Exacerbation** = อาการแย่ลงเฉียบพลันหรือกึ่งเฉียบพลัน **พร้อมกับ lung function ลดลง** เทียบกับปกติของคนนั้น · อาจเป็นอาการแรกที่มาหาเลยก็ได้ และ **เกิดได้แม้คนที่อาการน้อยมาก่อน**\n\n### ตัวจุดที่พบบ่อย\n- **ติดเชื้อไวรัส** — rhinovirus, influenza, RSV (พบบ่อยที่สุด)\n- สารก่อภูมิแพ้ — เกสร ฝุ่น สปอร์เชื้อรา · **PM2.5** · อากาศเย็น\n- **ใช้ยาไม่สม่ำเสมอ/หยุดยาเอง**\n- อาหารแพ้สัมพันธ์ได้แต่ไม่ใช่สาเหตุหลัก — ถ้ามี **ผื่นลมพิษ ปากหรือหน้าบวม ความดันตก หลังสัมผัสอาหาร** ให้คิด **anaphylaxis** → **adrenaline IM ก่อนยาอื่น**\n\n### Red flag เสี่ยงตายจากหืด (บันทึกในเวชระเบียน สอนสัญญาณเตือน นัดถี่)\n1. **เคยหนัก** — เคยใส่ท่อช่วยหายใจหรือเกือบตาย · นอนโรงพยาบาล/มา ER ในปีที่ผ่านมา\n2. **คุมไม่ดี** — กำลังใช้หรือเพิ่งหยุด OCS · ไม่ได้ใช้ ICS หรือใช้ไม่สม่ำเสมอ · **ใช้ SABA ≥ 1 หลอด/เดือน** หรือพ่น nebulized SABA ที่บ้านเป็นประจำ · ไม่มีหรือไม่ทำตาม action plan\n3. **ตัวผู้ป่วย** — ปัญหาจิตเวช/จิตสังคม · รับรู้ความรุนแรงของหลอดลมตีบได้ไม่ดี · severe AHR\n4. **โรคร่วม** — แพ้อาหารที่ยืนยันแล้ว · pneumonia · เบาหวาน · arrhythmia\n\n### ประเมินพร้อมเริ่มรักษา\nใช่หืดจริงไหม — คิดถึง **pneumothorax, anaphylaxis, inducible laryngeal obstruction, pneumonia, acute HF, PE** · ได้ยาอะไรมาแล้ว · ดูความรุนแรงจากการพูด ท่านั่ง RR ชีพจร accessory muscle air entry **SpO₂** และ **PEF**\n\n#### จัดระดับและรักษาทันที\n| | **Mild** | **Moderate** | **Severe / life-threatening** |\n|---|---|---|---|\n| การพูด ท่า | พูดเป็นประโยค นอนราบได้ ไม่กระสับกระส่าย | พูดเป็นวลี ชอบนั่งมากกว่านอน | **พูด ดื่ม หรือนอนราบไม่ได้** |\n| RR | ปกติหรือเพิ่มเล็กน้อย | เพิ่มแต่ **≤ 30/นาที** | **> 30/นาที** |\n| อื่น ๆ | air entry ดี | ใช้ accessory muscle · wheeze · air entry ลด | **silent chest** · ซึม สับสน เขียว = acutely life-threatening |\n| SpO₂ (room air) | **≥ 94%** | **≥ 92%** | **< 92%** |\n| PEF | **> 70%** | **50–70%** | **< 50%** |\n| ยา | **salbutamol 4 พัฟ** pMDI + spacer (หรือ budesonide-formoterol 160/4.5 2 สูด) ให้ซ้ำได้ | **salbutamol 4–6 พัฟ** + spacer (หรือ neb 2.5 mg) ได้ถึง 3 ครั้ง ห่าง 20–30 นาที · ± **ipratropium 4 พัฟ** ถึง 3 ครั้ง · **เริ่ม OCS** | **ส่งต่อทันที** · **salbutamol 6–10 พัฟ** + spacer (หรือ neb 5 mg) ทุก 20–30 นาที · **ipratropium** ทุกครั้ง · **O₂ เป้า SpO₂ 92–95%** · **systemic corticosteroid** · monitor ต่อเนื่อง |\n\n> ช่วงไวรัสระบาดเลี่ยง nebulizer ใช้ **pMDI + spacer** แทน (ได้ผลเท่ากันและลดการฟุ้งกระจาย)\n\n### Systemic corticosteroid\n- ผู้ใหญ่ **prednisolone 40–50 mg ทุกเช้า 5–7 วัน** · เด็ก 1–2 mg/kg/วัน (สูงสุด 40 mg) 3–5 วัน\n- ใช้ไม่ถึง 2 สัปดาห์ **หยุดได้เลยไม่ต้อง taper**\n- ออกฤทธิ์ช้า (4–6 ชม.) จึงต้อง **ให้เร็วภายในชั่วโมงแรก** · กินได้ผลเท่าฉีดถ้ากลืนได้",
+   "pearls": [
+    "ตัวจุดกำเริบที่พบบ่อยสุดคือติดเชื้อไวรัส (rhinovirus)",
+    "Severe = พูดไม่ได้ · RR > 30 · SpO₂ < 92% · PEF < 50% · silent chest",
+    "เสี่ยงตายสุด: เคยใส่ท่อ/ICU · SABA ≥ 1 หลอด/เดือน · ใช้หรือเพิ่งหยุด OCS",
+    "Severe: salbutamol + ipratropium + O₂ (SpO₂ 92–95%) + steroid และส่งต่อ",
+    "Prednisolone 40–50 mg 5–7 วัน ไม่ต้อง taper · anaphylaxis ร่วม → adrenaline IM ก่อน"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-24",
+     "kind": "mcq",
+     "topic": "Grading exacerbation severity",
+     "stem": "A 30-year-old woman with asthma presents to a community hospital. She speaks in phrases, prefers to sit, RR 26/min, uses accessory muscles, SpO2 93% on room air and PEF 60% of personal best. How should this exacerbation be graded and treated initially?",
+     "choices": [
+      "Moderate — intravenous aminophylline as first-line therapy",
+      "Mild — salbutamol 4 puffs once and discharge without corticosteroid",
+      "Severe — immediate intubation",
+      "Severe — intravenous magnesium sulfate before any bronchodilator",
+      "Moderate — salbutamol 4–6 puffs via spacer up to 3 times 20–30 minutes apart, consider ipratropium, and start oral corticosteroid"
+     ],
+     "answer": 4,
+     "explain": "พูดเป็นวลี ชอบนั่ง RR ≤ 30 ใช้ accessory muscle **SpO₂ ≥ 92% (93%)** **PEF 50–70% (60%)** = **moderate** → salbutamol 4–6 พัฟ + spacer (หรือ neb 2.5 mg) ได้ถึง 3 ครั้ง ห่าง 20–30 นาที ± ipratropium 4 พัฟ และ **เริ่ม OCS** · ประเมินซ้ำภายใน 1 ชม.\n\n- *mild* — ต้องพูดเป็นประโยค SpO₂ ≥ 94% PEF > 70%\n- *ใส่ท่อทันที* — ไม่มีสัญญาณ life-threatening\n- *aminophylline* — ไม่แนะนำ\n- *MgSO₄ ก่อนยาขยาย* — ใช้ใน severe ที่ไม่ตอบสนองเท่านั้น",
+     "pearl": "Moderate = วลี · RR ≤ 30 · SpO₂ ≥ 92% · PEF 50–70% → SABA ซ้ำ + OCS",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.2.11",
+      "B6.4(4)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-25",
+     "kind": "mcq",
+     "topic": "Anaphylaxis presenting as asthma",
+     "stem": "A 25-year-old woman with asthma develops wheeze, generalised urticaria, lip swelling and BP 80/50 mmHg 15 minutes after eating shrimp. What is the first drug to give?",
+     "choices": [
+      "Nebulised salbutamol 5 mg",
+      "Intravenous hydrocortisone 200 mg",
+      "Oral cetirizine 10 mg",
+      "Intramuscular adrenaline (epinephrine) 0.5 mg into the anterolateral thigh",
+      "Intravenous magnesium sulfate 2 g"
+     ],
+     "answer": 3,
+     "explain": "ผื่นลมพิษ ปากบวม **ความดันตก** + หอบ หลังสัมผัสอาหาร = **anaphylaxis** (ผู้ป่วยหืดเสี่ยงรุนแรงกว่า) → **adrenaline IM 0.01 mg/kg (สูงสุด 0.5 mg) ที่ต้นขาด้านนอก เป็นอันดับแรก** ซ้ำได้ทุก 5–15 นาที · α1 ยกความดัน β2 ขยายหลอดลมและหยุด mast cell\n\n- *salbutamol* — ช่วยหลอดลมแต่ไม่แก้ shock ให้ **หลัง** adrenaline\n- *hydrocortisone* — ออกฤทธิ์ช้า ไม่ใช่ยาช่วยชีวิต\n- *antihistamine* — แก้แค่ผื่น\n- *MgSO₄* — ไม่ใช่ยาของ anaphylaxis",
+     "pearl": "หอบ + ลมพิษ + ความดันตก = anaphylaxis → adrenaline IM ก่อนยาอื่น",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.2.7",
+      "B1.4.11(1)",
+      "2.2.11"
+     ]
+    },
+    {
+     "id": "CH-OLD-52",
+     "kind": "old",
+     "stem": "A 30-year-old woman with asthma comes to the emergency department with progressive dyspnoea and non-productive cough over 3 days. She stopped her inhaled corticosteroid 3 months ago and has used her reliever inhaler every day in the past week, three times in the last hour. Vital signs: BT 37 C, PR 120/min, RR 30/min, BP 140/90 mmHg, SpO2 90 percent on room air, with generalised expiratory wheeze. What is the most appropriate initial treatment?",
+     "choices": [
+      "Systemic corticosteroid and inhaled short-acting beta-2 agonist without oxygen",
+      "Oxygen supplementation, systemic corticosteroid and inhaled short-acting beta-2 agonist",
+      "High-dose inhaled corticosteroid and inhaled short-acting beta-2 agonist only",
+      "Oral and inhaled corticosteroid with oxygen supplementation",
+      "Oxygen, high-dose inhaled corticosteroid and inhaled short-acting beta-2 agonist"
+     ],
+     "answer": 1,
+     "explain": "**การรักษา acute asthma exacerbation ที่ห้องฉุกเฉินมี 3 เสาหลัก**\n1. **ออกซิเจน** เป้า SpO2 **93-95%** (ในเด็ก 94-98%)\n2. **SABA พ่นซ้ำ** (salbutamol) ± **ipratropium** ในรายที่รุนแรง — ขยายหลอดลมทันที\n3. **Systemic corticosteroid ภายใน 1 ชั่วโมง** (prednisolone 40-50 mg oral หรือ IV ถ้ากินไม่ได้) — **ลดการอักเสบซึ่งเป็นต้นเหตุ ลดการกลับมาซ้ำและลดการ admit**; ออกฤทธิ์ใน 4-6 ชั่วโมงจึงต้องให้เร็ว\n\n**ทำไม ICS ขนาดสูงแทน systemic steroid ไม่พอ**: ในภาวะเฉียบพลันที่หลอดลมตีบและมีเสมหะอุด **ยาสูดเข้าไปไม่ถึงส่วนปลาย** และหลักฐานสนับสนุน systemic steroid ชัดเจนกว่า\n\n**ยาเสริมในรายที่รุนแรง**: **magnesium sulfate IV** (ในรายที่ไม่ตอบสนองและ FEV1 < 25-30%)\n\n**สิ่งที่บ่งว่าอันตรายมาก (life-threatening)**: **เงียบลง (silent chest), เขียว, สับสนซึมลง, ความดันตก, PaCO2 ปกติหรือสูง** (เพราะในหอบรุนแรงผู้ป่วยควร hyperventilate จน CO2 ต่ำ — ถ้า CO2 \"ปกติ\" แปลว่ากล้ามเนื้อหายใจกำลังล้า)\n\nและต้องแก้ต้นเหตุ: **ผู้ป่วยรายนี้หยุด ICS เอง** — ต้องเริ่มใหม่และให้ความรู้เรื่อง controller ก่อนกลับบ้าน",
+     "pearl": "",
+     "topic": "คลังข้อสอบเก่า MED28–MED35",
+     "src": "MED35 LMS / MED31 past paper ข้อ 4 – A 30 year-old asthmatic woman came to ER with progressive dyspnea, stopped ICS, SpO2 90% → Oxygen supplementation, systemic corticosteroids and inhaled short-acting b-agonists; MED30 SAQ ข้อ 11 – Asthma → inhale steroid + SABA + O2",
+     "ref": [],
+     "nl": [
+      "2.2.11",
+      "B6.4(4)",
+      "B6.4(5)"
+     ]
+    }
+   ],
+   "figs": {},
+   "mnem": [
+    {
+     "name": "92 · 30 · 50",
+     "what": "เกณฑ์ severe asthma exacerbation",
+     "lines": [
+      [
+       "92",
+       "SpO₂ room air **< 92%**"
+      ],
+      [
+       "30",
+       "RR **> 30**/นาที"
+      ],
+      [
+       "50",
+       "PEF **< 50%** ของ personal best"
+      ]
+     ],
+     "note": "ร่วมกับพูด/ดื่ม/นอนราบไม่ได้ · silent chest · ซึม สับสน เขียว = life-threatening",
+     "src": "เรียบเรียงจากคาบ 3 พ.ย. และ GINA 2026"
+    }
+   ]
+  },
+  {
+   "id": "chest-ast-11",
+   "title": "หอบหืดกำเริบ (2) — ประเมินซ้ำ สัญญาณใกล้หายใจล้มเหลว เกณฑ์จำหน่าย และ action plan",
+   "summary": "ประเมินซ้ำใน 1 ชม. · ไม่ทำ CXR/ABG/ATB เป็น routine · ห้ามยากล่อม · PaCO₂ ปกติ = ล้า · MgSO₄ · เกณฑ์ 1–2 / 92 / 70 · ก่อนกลับบ้าน · นัด 2–7 วัน · action plan 3 แบบ",
+   "minutes": 11,
+   "source": "GINA 2026 Summary Guide + เสียงบรรยาย 3 พ.ย. 2569 (Plaud)",
+   "nl": [
+    "2.2.11",
+    "2.2.9",
+    "3.3.17",
+    "2.3.10(1)",
+    "B6.4(5)"
+   ],
+   "md": "### ประเมินซ้ำ\n- ประเมินซ้ำ **ภายใน 1 ชม.** (30–60 นาที) หรือเร็วกว่าถ้าแย่ลง — ดู SpO₂ RR accessory muscle air entry PEF\n- **ไม่ต้องทำ CXR หรือ blood gas เป็น routine** · **ไม่ให้ antibiotic เป็น routine** (ส่วนใหญ่ตัวจุดเป็นไวรัส) · **ห้ามให้ยานอนหลับ/ยากล่อมประสาท** (กดการหายใจ)\n- CXR เมื่อสงสัย pneumothorax, pneumomediastinum, pneumonia หรือไม่ตอบสนอง\n- แย่ลงหรือไม่ดีขึ้น → ส่งต่อระดับสูงขึ้น/ICU\n\n### สัญญาณใกล้หายใจล้มเหลว — PaCO₂ \"ปกติ\" ไม่ใช่ข่าวดี\n- ในหอบเฉียบพลัน ผู้ป่วยหายใจเร็ว **PaCO₂ ควรต่ำ** (respiratory alkalosis)\n- เมื่อกล้ามเนื้อหายใจ **ล้า** PaCO₂ ไต่กลับ **\"ปกติ\" แล้วสูงขึ้น** → **PaCO₂ ปกติในคนที่ยังหอบรุนแรง = กำลังจะหายใจล้มเหลว**\n- ร่วมกับ silent chest · ซึม สับสน · หัวใจเต้นช้าลง · ท่าทางหมดแรง → **ICU เตรียมใส่ท่อช่วยหายใจ**\n- **Magnesium sulfate 2 g IV ใน 20 นาที (ครั้งเดียว)** ในผู้ใหญ่ที่ FEV1 < 25–30% ตอนมา หรือไม่ตอบสนองต่อการรักษาเริ่มต้นและยัง hypoxemia — ไม่ใช้เป็น routine\n- **ห้ามให้ β-blocker** · aminophylline/theophylline ไม่แนะนำ (ประโยชน์น้อย พิษมาก)\n\n### เกณฑ์จำหน่าย \"1–2 / 92 / 70\"\n- อาการเข้าเกณฑ์ mild และคงที่ **อย่างน้อย 1–2 ชม.** หลัง salbutamol ครั้งสุดท้าย\n- **SpO₂ room air ≥ 92%**\n- **PEF ดีขึ้นและ > 70%** ของ personal best หรือค่าคาดคะเน\n- มีคนดูแลและทรัพยากรพอที่บ้าน — ขึ้นกับดุลยพินิจของทีม\n\n### ก่อนกลับบ้าน\n1. บันทึกการวินิจฉัยและตัวจุด\n2. **เริ่มหรือเพิ่มยาที่มี ICS** — อายุ ≥ 12 ปี เลือก **Step 4 MART ด้วย ICS-formoterol** ถ้าไม่มีใช้ ICS-LABA ขนาดกลาง\n3. บอกให้ใช้ reliever **เมื่อมีอาการ** ไม่ใช่พ่นเป็นเวลา\n4. **ฝึกพ่นยา** (pMDI ใช้ spacer) และเช็ก adherence\n5. OCS ต่อให้ครบ + ยาพอถึงวันนัด\n6. **Asthma action plan**\n7. นัด **ผู้ใหญ่ภายใน 2–7 วัน · เด็ก 2–5 วัน** จากนั้นนัดต่อใน 2–3 เดือน\n8. ได้ OCS มากกว่า 1 รอบในปีที่ผ่านมา → ส่งผู้เชี่ยวชาญ\n\n### Written asthma action plan — ผู้ป่วยทำอะไรเมื่ออาการแย่ลงที่บ้าน\n| Reliever ที่ใช้ | ทำอะไรเพิ่ม | มาโรงพยาบาลเมื่อ |\n|---|---|---|\n| **ICS-formoterol** (Track 1/MART) | พ่นเพิ่มทีละ 1 สูดเมื่อมีอาการ · maintenance ต่อตามเดิม | แย่ลงเร็ว · ไม่ดีขึ้นใน 2–3 วัน · ต้องใช้ > 12 สูด/24 ชม. |\n| **ICS-SABA** (Track 2) | พ่นครั้งละ 2 สูดเมื่อมีอาการ · ใช้ยาควบคุมตามเดิม | แย่ลงเร็ว · ไม่ดีขึ้นใน 2–3 วัน · ต้องใช้ > 6 ครั้ง/วัน |\n| **SABA** | พ่นเมื่อมีอาการ + **เพิ่ม ICS อย่างน้อย 1–2 สัปดาห์** | ต้องพ่นซ้ำภายใน 3 ชม. หรือแย่ลงเร็ว |\n\n> อาจารย์ฝากเรื่อง AI: AI ตอบผิดได้ถ้าใช้ฐานข้อมูลเก่า เวลาถามให้ระบุชื่อและฉบับไกด์ไลน์ชัด ๆ เช่น **\"GINA version 2026\"** แล้วกลับมาเทียบกับต้นฉบับเองทุกครั้ง",
+   "pearls": [
+    "ไม่ทำ CXR/ABG เป็น routine · ไม่ให้ antibiotic เป็น routine · ห้ามยากล่อม",
+    "PaCO₂ ปกติในคนยังหอบรุนแรง = กล้ามเนื้อล้า ใกล้หายใจล้มเหลว",
+    "MgSO₄ 2 g IV ครั้งเดียว เฉพาะ severe ที่ไม่ตอบสนองหรือ FEV1 < 25–30%",
+    "จำหน่าย: คงที่ 1–2 ชม. · SpO₂ ≥ 92% · PEF > 70%",
+    "กลับบ้านด้วย MART (≥ 12 ปี) + action plan + นัดผู้ใหญ่ 2–7 วัน"
+   ],
+   "items": [
+    {
+     "id": "CH-AST-MCQ-26",
+     "kind": "mcq",
+     "topic": "Discharge criteria",
+     "stem": "A 28-year-old man was treated for a moderate asthma exacerbation. Ninety minutes after his last salbutamol dose he is talking in sentences, RR 18/min, SpO2 96% on room air and PEF 78% of personal best. He lives with his wife. Which discharge plan is most appropriate?",
+     "choices": [
+      "Discharge on salbutamol as needed only with review in 3 months",
+      "Discharge on a tapering 4-week course of prednisolone without an inhaled corticosteroid",
+      "Admit for 48 hours of observation because he had an exacerbation",
+      "Discharge on prednisolone 40–50 mg for 5–7 days, budesonide-formoterol MART, inhaler technique check, written action plan and review within 2–7 days",
+      "Discharge with oral antibiotics because exacerbations are usually bacterial"
+     ],
+     "answer": 3,
+     "explain": "เข้าเกณฑ์จำหน่าย **1–2 / 92 / 70**: คงที่ ≥ 1–2 ชม. หลัง salbutamol · SpO₂ ≥ 92% · PEF > 70% · มีคนดูแล → กลับบ้านพร้อม **OCS 5–7 วัน (ไม่ต้อง taper)** + **เริ่มยาที่มี ICS — อายุ ≥ 12 ปีเลือก Step 4 MART** + ฝึกพ่นยา + **action plan** + นัด **2–7 วัน**\n\n- *SABA เดี่ยว* — ทำให้กำเริบซ้ำ ต้องมี ICS\n- *admit 48 ชม.* — ไม่จำเป็นเมื่อเข้าเกณฑ์\n- *taper 4 สัปดาห์ไม่มี ICS* — ไม่ต้อง taper และขาด controller\n- *antibiotic* — ตัวจุดส่วนใหญ่เป็นไวรัส ไม่ให้เป็น routine",
+     "pearl": "จำหน่าย 1–2 / 92 / 70 → OCS 5–7 วัน + MART + action plan + นัด 2–7 วัน",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.2.11",
+      "B6.4(5)"
+     ]
+    },
+    {
+     "id": "CH-AST-MCQ-27",
+     "kind": "mcq",
+     "topic": "Routine investigations in exacerbation",
+     "stem": "Which of the following is NOT routinely required for a patient presenting with a moderate asthma exacerbation who responds to initial treatment?",
+     "choices": [
+      "Peak expiratory flow measurement before and after treatment",
+      "Pulse oximetry",
+      "Chest radiograph and antibiotics",
+      "Reassessment of symptoms and vital signs within 1 hour",
+      "Review of inhaler technique before discharge"
+     ],
+     "answer": 2,
+     "explain": "GINA: **ไม่ต้องทำ CXR หรือ blood gas เป็น routine และไม่ให้ antibiotic เป็น routine** — ตัวจุดส่วนใหญ่เป็นไวรัส · ทำ CXR เมื่อสงสัย pneumothorax, pneumonia หรือไม่ตอบสนอง · ส่วน SpO₂ PEF การประเมินซ้ำใน 1 ชม. และการเช็กเทคนิคพ่นยา **ต้องทำทุกราย**",
+     "pearl": "Exacerbation: ไม่ทำ CXR/ABG/antibiotic เป็น routine",
+     "src": "",
+     "ref": [
+      "GINA 2026 Summary Guide",
+      "บรรยาย Asthma 3 พ.ย. 2569"
+     ],
+     "nl": [
+      "2.2.11"
+     ]
+    },
+    {
+     "id": "CH-MCQ-36",
+     "kind": "mcq",
+     "stem": "A 24-year-old woman with asthma presents with severe breathlessness. She can speak only in single words, respiratory rate 32/min, pulse 128/min, and the chest is quiet on auscultation. Peak expiratory flow is 32% of her best. She has received continuous nebulised salbutamol and ipratropium plus intravenous hydrocortisone for 1 hour. Arterial blood gas now shows pH 7.36, PaCO2 41 mmHg, PaO2 68 mmHg on oxygen, HCO3 23 mmol/L. Which of the following is the most appropriate interpretation and action?",
+     "choices": [
+      "The blood gas is reassuring and she can be stepped down to intermittent nebulisers on the general ward",
+      "The 'normal' PaCO2 indicates impending respiratory failure; she needs urgent senior review in a critical care area with preparation for ventilatory support",
+      "The quiet chest indicates the attack has resolved and she may be discharged after observation",
+      "She should be given a beta-blocker to control the tachycardia",
+      "The findings indicate metabolic compensation is adequate, so no further escalation is required"
+     ],
+     "answer": 1,
+     "explain": "**กลไก: ทำไม PaCO2 \"ปกติ\" จึงเป็นสัญญาณอันตราย**\n\nในหอบหืดเฉียบพลัน ผู้ป่วยหายใจเร็วเพื่อชดเชย → **PaCO2 ควรจะต่ำ (respiratory alkalosis)** เป็นปกติ\nเมื่อการอุดกั้นรุนแรงขึ้นและ **กล้ามเนื้อหายใจล้า (fatigue)** ผู้ป่วยหมดแรงจะระบาย CO2 → PaCO2 ค่อย ๆ ไต่กลับ **\"ปกติ\"** แล้วจึง **สูงขึ้น**\n→ **PaCO2 ปกติในผู้ป่วยหอบรุนแรง = จุดข้ามผ่านสู่ระบบหายใจล้มเหลว ไม่ใช่การดีขึ้น**\n\n**สัญญาณอันตรายถึงชีวิต (life-threatening asthma) ที่มีในโจทย์**\n- **พูดได้ทีละคำ**\n- **Silent chest** — ลมเข้าออกน้อยเกินกว่าจะเกิดเสียงหวีด (**wheeze หายไป = แย่ลง ไม่ใช่ดีขึ้น**)\n- **PEF < 33–50%** ของค่าดีที่สุด\n- **PaCO2 ปกติหรือสูง**\n- อื่น ๆ ที่ต้องจำ: **ซึม/สับสน, เขียว, หัวใจเต้นช้าลงหรือความดันตก, ท่าทางหมดแรง, SpO2 < 92%**\n\n**ต้องทำอะไร**: ตามแพทย์อาวุโส/ICU ทันที, **ให้ออกซิเจนคุม SpO2 ราว 92–95% ตาม GINA 2026**, พ่นยาต่อเนื่อง, **IV magnesium sulfate 2 g**, พิจารณา IV salbutamol/aminophylline, **เตรียมใส่ท่อช่วยหายใจ** (ระวัง **dynamic hyperinflation/auto-PEEP → ใช้ permissive hypercapnia, expiratory time ยาว, RR ต่ำ**)\n\n**ทำไมข้ออื่นผิด**\n- **ก๊าซดูดี ย้ายไปหอผู้ป่วยสามัญ**: ตีความกลับด้าน = อันตรายที่สุด\n- **ชดเชยพอแล้ว**: HCO3 23 คือค่าปกติ ไม่มีการชดเชยอะไรเกิดขึ้น และการชดเชยทางเมตาบอลิกใช้เวลาหลายวัน\n- **ให้ beta-blocker**: **ห้ามเด็ดขาด** — หลอดลมหดตัวรุนแรงขึ้น; ชีพจรเร็วเป็นผลจาก beta-agonist และภาวะเครียดของโรคเอง\n- **Silent chest = หายแล้ว**: กับดักคลาสสิกที่สุดของเรื่องนี้",
+     "pearl": "หอบรุนแรง: silent chest + PaCO2 ปกติ = ใกล้หายใจล้มเหลว ไม่ใช่ดีขึ้น — ขึ้น ICU และเตรียมใส่ท่อ",
+     "topic": "Life-threatening asthma: the 'normal' PaCO2",
+     "src": "",
+     "ref": [
+      "MED30 MCQ acute asthma",
+      "MED34 MEQ asthma",
+      "MED35 สอบลงกองครั้งที่ 3 — asthma"
+     ],
+     "nl": [
+      "2.2.11",
+      "2.2.9",
+      "3.3.17"
+     ]
+    }
+   ],
+   "figs": {}
+  }
+ ],
+ "meq": [
+  {
+   "id": "CH-AST-MEQ-01",
+   "part": "MEQ",
+   "lec": "3/11",
+   "lecture": "Asthma — การวินิจฉัยและการจัดการโรคหืด (บรรยาย 3 พ.ย. 2569)",
+   "topic": "New-onset asthma in a young adult — confirming the diagnosis, choosing the GINA track and managing poor control",
+   "nl": [
+    "2.3.10(1)",
+    "3.3.18",
+    "B6.3(3)",
+    "B6.4(4)",
+    "B6.4(5)",
+    "2.3.19(6)"
+   ],
+   "ref": [
+    "GINA 2026 Summary Guide",
+    "บรรยาย Asthma 3 พ.ย. 2569"
+   ],
+   "vignette": "หญิงไทยอายุ 23 ปี พนักงานออฟฟิศ มา OPD ด้วยไอและแน่นหน้าอกเป็น ๆ หาย ๆ 4 เดือน เป็นมากตอนตี 4–5 และเวลาเข้าห้องแอร์หรือช่วงฝนตก ช่วงนี้มีอาการกลางวัน 5 วัน/สัปดาห์ ตื่นกลางคืนเพราะไอ/หวีดสัปดาห์ละ 1–2 ครั้ง ต้องหยุดวิ่งออกกำลังกายเพราะเหนื่อย ซื้อ salbutamol MDI พ่นเองวันละ 2–3 ครั้ง ใช้หมดไปแล้ว 4 หลอด\nประวัติ: เป็นผื่นภูมิแพ้ผิวหนังตอนเด็ก จามคัดจมูกตอนเช้า ไม่สูบบุหรี่ เลี้ยงแมว 2 ตัว ไม่เคยมา ER ด้วยหอบ\nPE: RR 18/min · SpO2 98% room air · inferior turbinate ซีดบวม · ปอดได้ยิน end-expiratory wheeze เล็กน้อยทั้งสองข้างตอนหายใจออกแรง · หัวใจปกติ ไม่มีขาบวม\nSpirometry (งด salbutamol 6 ชม.): pre-BD FEV1 2.30 L (76% predicted), FVC 3.20 L, FEV1/FVC 0.72 · 15 นาทีหลัง salbutamol 400 mcg: FEV1 2.68 L\nCBC: eosinophil 520 cells/µL · FeNO 58 ppb",
+   "questions": [
+    {
+     "q": "1. จงแปลผล spirometry และบอกว่าผู้ป่วยรายนี้เข้าเกณฑ์วินิจฉัยหืดหรือไม่ พร้อมเหตุผล (3 คะแนน)",
+     "a": "- **BDR**: FEV1 เพิ่ม 2.68 − 2.30 = **380 mL** คิดเป็น 380 ÷ 2,300 = **16.5%** → **≥ 12% และ ≥ 200 mL = BDR บวก** (1)\n- เข้าเกณฑ์ 2 ขาของ GINA: **อาการแปรปรวน** (ไอ แน่นอก หวีด เป็นมากเช้ามืด มีตัวจุด แอร์/ฝน/แมว) + **หลักฐานลมหายใจออกแปรปรวน** (BDR บวก) → **วินิจฉัยหืด** และบันทึกหลักฐานลงเวชระเบียน (1)\n- **FEV1/FVC 0.72 ไม่ได้ใช้ตัดสิน** — เกณฑ์หืดไม่มี ratio < 0.7 · ถึง ratio จะปกติก็ยังวินิจฉัยได้จาก BDR (0.5)\n- eos 520 + FeNO 58 ppb **ช่วยหนุน** Type 2 (allergic eosinophilic) asthma แต่ไม่ใช่ตัวยืนยัน · ร่วมกับ allergic rhinitis และผื่นภูมิแพ้ (0.5)"
+    },
+    {
+     "q": "2. จงประเมิน symptom control และปัจจัยเสี่ยงต่อการกำเริบของผู้ป่วยรายนี้ (3 คะแนน)",
+     "a": "**Symptom control (4 สัปดาห์)** (1.5)\n| คำถาม | ผู้ป่วย |\n|---|---|\n| อาการกลางวัน > 2/สัปดาห์ | **ใช่** (5 วัน) |\n| ตื่นกลางคืน | **ใช่** |\n| ใช้ SABA > 2/สัปดาห์ | **ใช่** (วันละ 2–3 ครั้ง) |\n| กิจกรรมถูกจำกัด | **ใช่** (หยุดวิ่ง) |\n→ ใช่ 4 ข้อ = **uncontrolled**\n\n**ปัจจัยเสี่ยงกำเริบ** (1.5)\n- อาการคุมไม่ได้ (สำคัญที่สุด)\n- **ใช้ SABA เดี่ยว ไม่มี ICS** · ใช้ SABA ≥ 3 หลอด/ปี (4 หลอดใน 4 เดือน)\n- **eos และ FeNO สูง**\n- สัมผัสสารก่อภูมิแพ้ต่อเนื่อง (แมว) · allergic rhinitis ที่ยังไม่ได้รักษา"
+    },
+    {
+     "q": "3. จงเลือกการรักษาเริ่มต้นตาม GINA 2026 ระบุชื่อยา วิธีใช้ ขนาดสูงสุดต่อวัน และให้เหตุผลว่าทำไมไม่ให้ salbutamol ต่อเพียงอย่างเดียว (4 คะแนน)",
+     "a": "- อาการเกือบทุกวัน + ตื่นกลางคืน + FEV1 76% แต่ **ยังไม่เคยกำเริบ** → เริ่ม **Step 3 Track 1 = MART ขนาดต่ำ** (1)\n- **budesonide-formoterol 160/4.5 mcg (DPI) 1 สูด เช้า–เย็น + 1 สูดทุกครั้งที่มีอาการ** · รวม **ไม่เกิน 12 สูด/วัน** ถ้าต้องใช้มากกว่านั้นให้มาโรงพยาบาล · **หยุด salbutamol** (ไม่ต้องใช้ reliever แยก) (1.5)\n- **ทำไมไม่ SABA เดี่ยว**: SABA แค่คลายกล้ามเนื้อเรียบ **ไม่ลดการอักเสบ** ใช้ประจำเพิ่ม AHR ลดการตอบสนองต่อยาขยาย และการใช้มากสัมพันธ์กับการกำเริบรุนแรงและ **การตาย** · formoterol ออกฤทธิ์เร็ว ทุกครั้งที่พ่นตอนมีอาการจึงได้ ICS ไปดับไฟด้วย (1)\n- ร่วมกับรักษา **allergic rhinitis ด้วย intranasal corticosteroid** · ลดการสัมผัสแมว (0.5)"
+    },
+    {
+     "q": "4. นอกจากยา จะให้คำแนะนำอะไร และนัดติดตามเมื่อไร (2 คะแนน)",
+     "a": "- **สอนพ่น DPI** ให้ทำให้ดู (หายใจออกนอกเครื่อง · สูดแรงและเร็ว · กลั้นหายใจ · บ้วนปาก) และเช็กซ้ำทุก visit (0.5)\n- **Written asthma action plan**: แย่ลงให้พ่นเพิ่มทีละ 1 สูด · มาโรงพยาบาลถ้าแย่เร็ว ไม่ดีขึ้น 2–3 วัน หรือใช้ > 12 สูด/24 ชม. (0.5)\n- เลี่ยงตัวจุด (แมวออกนอกห้องนอน ซักผ้าปูที่นอน) · เลี่ยงควันบุหรี่ · ออกกำลังกายต่อได้ (warm-up, พ่นก่อนวิ่งได้) · วัคซีนไข้หวัดใหญ่ (0.5)\n- นัด **1–3 เดือน** เพื่อประเมินการควบคุม และวัด spirometry ซ้ำ 3–6 เดือนหลังเริ่ม ICS (0.5)"
+    },
+    {
+     "q": "5. สามเดือนต่อมาผู้ป่วยยังตื่นกลางคืน 2 ครั้ง/สัปดาห์ จงบอกสิ่งที่ต้องทำก่อนปรับยา และถ้าแก้แล้วยังคุมไม่ได้จะปรับเป็นอะไร (3 คะแนน)",
+     "a": "**ไล่ I ADORE ก่อน step up** (2)\n- **I**nhaler technique — ให้พ่นให้ดู (DPI สูดเบาเกินไปเป็นปัญหาบ่อย)\n- **A**dherence — ถามแบบไม่ตัดสิน ดู dose counter\n- **D**iagnosis — ยืนยันแล้วด้วย BDR\n- **O**ther risk factors — แมวยังอยู่ในห้องนอนไหม ควันบุหรี่ ยา β-blocker/NSAID\n- **R**hinitis & comorbidities — ใช้ยาพ่นจมูกไหม GERD อ้วน\n\n**ถ้าแก้ครบแล้วยังคุมไม่ได้** → **Step 4 = MART ขนาดกลาง** (budesonide-formoterol 160/4.5 **2 สูด เช้า–เย็น** + 1 สูดเมื่อมีอาการ) · ไม่ใช้ ICS ขนาดสูงใน Step 4 · ติดตาม 2–3 เดือน ถ้ายังคุมไม่ได้หลัง Step 4 นาน 3–6 เดือน → ส่งผู้เชี่ยวชาญ (1)"
+    }
+   ],
+   "_kind": "meq",
+   "_set": "chest"
+  },
+  {
+   "id": "CH-MEQ-05",
+   "part": "MEQ",
+   "lec": "3/11",
+   "lecture": "Pneumonia / Asthma / COPD (Basic) (AL) (อ.เกรียงศักดิ์)",
+   "topic": "Acute severe asthma progressing to respiratory failure",
+   "vignette": "ผู้ป่วยหญิงไทยอายุ 27 ปี ถูกนำส่งห้องฉุกเฉินด้วยอาการหอบเหนื่อยรุนแรง 6 ชั่วโมงก่อนมาโรงพยาบาล\nPI: 3 วันก่อนมีน้ำมูกใส เจ็บคอ ไอแห้ง 6 ชั่วโมงก่อนเริ่มหอบมากขึ้นเรื่อยๆ พ่นยา salbutamol ที่บ้านทุก 20 นาที รวมกว่า 10 ครั้งแล้วไม่ดีขึ้น\nU/D: asthma ตั้งแต่เด็ก เคย admit ICU และใส่ท่อช่วยหายใจ 1 ครั้งเมื่อ 3 ปีก่อน ปีนี้ไป ER ด้วยอาการหอบ 3 ครั้ง\nยาเดิม: ได้รับ ICS/formoterol แต่ใช้เฉพาะเวลามีอาการ, ใช้ salbutamol MDI หมดเดือนละมากกว่า 1 หลอด\nประวัติ: เลี้ยงแมวในบ้าน, ไม่สูบบุหรี่\nPE: GA: นั่งตัวตรง โน้มตัวไปข้างหน้า กระสับกระส่าย พูดได้ทีละคำ ใช้กล้ามเนื้อ sternocleidomastoid ชัดเจน\nV/S: BT 37.2 C, PR 132/min, RR 34/min, BP 136/84 mmHg (pulsus paradoxus 22 mmHg), SpO2 90% room air\nHEENT: no cyanosis; Lung: ทรวงอกขยายน้อย เสียงหายใจเบามากทั้งสองข้าง ได้ยิน wheeze เบาๆ ในช่วงหายใจออก\nHeart: tachycardia, regular; Extremities: no edema\nPEF ที่ ER = 130 L/min (ค่าดีที่สุดของผู้ป่วย = 420 L/min)",
+   "questions": [
+    {
+     "q": "1. จงประเมินความรุนแรงของการจับหืดครั้งนี้ พร้อมระบุสัญญาณอันตราย และอธิบายกลไกของ pulsus paradoxus",
+     "a": "**ระดับความรุนแรง: Life-threatening asthma (acute severe ที่มีสัญญาณคุกคามชีวิต)**\n\n**เกณฑ์ประเมินความรุนแรง**\n| | **Moderate** | **Severe** | **Life-threatening** |\n|---|---|---|---|\n| การพูด | เป็นประโยค | **เป็นวลี** | **เป็นคำ** ← |\n| RR | < 25 | **≥ 25** | ← 34 |\n| PR | < 110 | **≥ 110** | ← 132 (หรือ **ช้าลง = ใกล้หยุดหายใจ**) |\n| **PEF** | > 50-75% | **33-50%** | **< 33%** ← (130/420 = **31%**) |\n| SpO2 | ≥ 92% | ≥ 92% | **< 92%** ← 90% |\n| เสียงปอด | wheeze ชัด | wheeze ชัด | **silent chest** ← |\n\n**สัญญาณอันตรายที่พบในผู้ป่วยรายนี้**\n- **พูดได้ทีละคำ** และ **กระสับกระส่าย** (สัญญาณเริ่มต้นของภาวะขาดออกซิเจนต่อสมอง)\n- **เสียงหายใจเบามาก / เกือบ silent chest** — **wheeze ที่เบาลงหรือหายไป แปลว่าลมผ่านน้อยลงมาก ไม่ใช่ดีขึ้น**\n- **PEF 31% ของค่าดีที่สุด**\n- **SpO2 90% ที่อากาศห้อง**\n- **ใช้กล้ามเนื้อช่วยหายใจ**\n- **Pulsus paradoxus 22 mmHg**\n\n**ปัจจัยเสี่ยงต่อการเสียชีวิตจากหืด (near-fatal asthma risk factors) — มีครบหลายข้อ**\n- **เคยใส่ท่อช่วยหายใจ/เข้า ICU จากหืด** ← ปัจจัยทำนายที่แรงที่สุด\n- **มาห้องฉุกเฉินหลายครั้งในปีนี้ (3 ครั้ง)**\n- **ใช้ SABA มากกว่า 1 หลอดต่อเดือน**\n- **ใช้ ICS ไม่สม่ำเสมอ (ใช้เฉพาะเวลามีอาการ)**\n- **สัมผัสสารก่อภูมิแพ้ต่อเนื่อง (แมว)** และมีการติดเชื้อไวรัสนำมาก่อน\n\n**กลไกของ pulsus paradoxus (ความดันซิสโตลิกลดลง > 10 mmHg ขณะหายใจเข้า)**\n1. การอุดกั้นทางเดินหายใจรุนแรงทำให้ต้องออกแรงหายใจเข้ามาก → **ความดันในช่องอกติดลบมากผิดปกติ**\n2. ความดันติดลบ → **venous return เข้าหัวใจขวาเพิ่มขึ้นมาก** → **ผนังกั้นห้องหัวใจโป่งไปทางซ้าย (ventricular interdependence)** → **ปริมาตรหัวใจห้องซ้ายลดลง**\n3. พร้อมกันนั้น ความดันติดลบรอบหัวใจยัง **เพิ่ม afterload ของหัวใจห้องซ้าย** (transmural pressure สูงขึ้น) และหลอดเลือดปอดที่ขยายกักเลือดไว้\n→ ผลรวม: **stroke volume และ systolic BP ตกลงขณะหายใจเข้า**\n\n> ค่านี้ **ไม่จำเพาะต่อ tamponade** — พบได้ในหืดรุนแรง, COPD รุนแรง, tension pneumothorax, constrictive pericarditis, PE ขนาดใหญ่\n> **ข้อควรระวัง**: เมื่อผู้ป่วยอ่อนแรงจนหายใจไม่แรงแล้ว **pulsus paradoxus อาจหายไป** ทั้งที่อาการแย่ลง — **การหายไปของสัญญาณจึงไม่ใช่ข่าวดี**"
+    },
+    {
+     "q": "2. จงวางแผนการรักษาในชั่วโมงแรก โดยระบุยา ขนาด และกลไกการออกฤทธิ์",
+     "a": "**เป้าหมาย: แก้ hypoxaemia, คลายหลอดลม, และหยุดการอักเสบ — ทำพร้อมกันทันที**\n\n**1) ออกซิเจน — เป้าหมาย SpO2 93-95%**\n(ต่างจาก COPD ที่ใช้ 88-92% เพราะผู้ป่วยหืดอายุน้อยไม่มี chronic CO2 retention)\n\n**2) ยาขยายหลอดลมชนิดสูดออกฤทธิ์สั้น — SABA**\n- **Salbutamol 2.5-5 mg nebulisation ทุก 20 นาที × 3 ครั้ง** หรือ **พ่นต่อเนื่อง (continuous nebulisation 10-15 mg/ชม.)** ในรายรุนแรง\n- **กลไก**: กระตุ้น **β2-receptor → เพิ่ม cAMP → ลด intracellular Ca²⁺ → กล้ามเนื้อเรียบหลอดลมคลายตัว**\n- **ผลข้างเคียงที่ต้องเฝ้าระวัง**: **hypokalaemia** (ดัน K เข้าเซลล์ผ่าน Na-K ATPase), **hyperglycaemia**, **lactic acidosis**, มือสั่น ใจสั่น → **ต้องเจาะเกลือแร่ติดตาม**\n\n**3) Ipratropium bromide 0.5 mg พ่นร่วมกันทุก 20 นาที × 3 ครั้ง**\n- **กลไก**: ต้าน **muscarinic M3** → ลด vagally-mediated bronchoconstriction และลดการหลั่งเมือก\n- **หลักฐาน**: การเพิ่ม ipratropium ในการจับหืดรุนแรง **ลดอัตราการรับไว้ในโรงพยาบาลและเพิ่ม FEV1** — ใช้เฉพาะระยะเฉียบพลัน ไม่ต่อเนื่องหลังผู้ป่วยดีขึ้น\n\n**4) Systemic corticosteroid — ต้องให้ภายใน 1 ชั่วโมงทุกราย**\n- **Prednisolone 40-50 mg oral** หรือ **hydrocortisone 100 mg IV ทุก 6 ชม.** (ให้ทางปากได้ผลเท่ากันถ้าผู้ป่วยกลืนได้) ต่อเนื่อง **5-7 วัน ไม่ต้อง taper**\n- **กลไก**: ยับยั้งการถอดรหัสของยีนที่สร้างไซโตไคน์อักเสบ, ลดการเคลื่อนตัวของ eosinophil, **ฟื้นการตอบสนองของ β2-receptor ที่ถูก downregulate จากการใช้ SABA มากเกิน (upregulation)**\n- **ออกฤทธิ์ช้า 4-6 ชั่วโมง** จึงต้องให้เร็วที่สุด ไม่ใช่รอดูอาการ\n\n**5) Magnesium sulfate 2 g IV ใน 20 นาที (ให้ครั้งเดียว)**\n- **ข้อบ่งชี้**: **การจับหืดรุนแรงที่ไม่ตอบสนองต่อการรักษาเริ่มต้น หรือ PEF < 25-30%** ← ผู้ป่วยรายนี้\n- **กลไก**: แมกนีเซียมเป็น **calcium channel blocker ตามธรรมชาติ** → ยับยั้งการไหลเข้าของ Ca²⁺ สู่กล้ามเนื้อเรียบหลอดลม และยับยั้งการหลั่งสารจาก mast cell\n\n**6) การรักษาเสริมและสิ่งที่ต้องทำ**\n- **ให้สารน้ำ** — ผู้ป่วยมักขาดน้ำจากการหายใจเร็วและกินได้น้อย\n- **แก้ K, Mg, PO4**\n- **หาและแก้ปัจจัยกระตุ้น**: การติดเชื้อไวรัส (ในรายนี้), ยา NSAIDs/beta-blocker, **anaphylaxis** (ถ้าสงสัยให้ **adrenaline IM** ทันที)\n- **CXR ไม่ใช่การตรวจประจำ** — ส่งเมื่อสงสัย **pneumothorax, pneumomediastinum, pneumonia** หรือไม่ตอบสนองต่อการรักษา\n- **ห้ามให้ยาระงับประสาท/ยานอนหลับ** เด็ดขาดในผู้ป่วยที่ยังไม่ได้ใส่ท่อ — กดการหายใจ\n- **ห้ามใช้ beta-blocker**; ยาปฏิชีวนะไม่ให้เป็นประจำ (ส่วนใหญ่กระตุ้นด้วยไวรัส)\n- **ยาที่มีบทบาทจำกัด**: aminophylline (ประโยชน์น้อย พิษมาก), **heliox** และ **ketamine** พิจารณาเฉพาะรายที่ดื้อต่อการรักษาในหน่วยวิกฤต"
+    },
+    {
+     "q": "3. หลังรักษา 1 ชั่วโมง ผู้ป่วยซึมลง พูดไม่ได้ RR 40/min แล้วลดเหลือ 12/min ABG: pH 7.18, PaCO2 62 mmHg, PaO2 55 mmHg (on mask with bag 10 LPM), HCO3 22 mmol/L จงแปลผลและบอกการรักษาต่อไป รวมถึงหลักการตั้งเครื่องช่วยหายใจ",
+     "a": "**แปลผล ABG**\n- **pH 7.18** = acidaemia รุนแรง\n- **PaCO2 62** สูง → **primary respiratory acidosis**\n- **HCO3 22** ≈ ปกติ — ตรวจสอบ: acute respiratory acidosis คาด HCO3 = 24 + (22/10 × 1) ≈ **26**; ค่าจริง 22 **ต่ำกว่า** → มี **metabolic acidosis ร่วมด้วย** (จาก **lactic acidosis** ของกล้ามเนื้อหายใจที่ทำงานหนัก + ผลจาก salbutamol ขนาดสูง)\n→ **Mixed respiratory and metabolic acidosis with severe hypoxaemia**\n\n**การประเมินทางคลินิก — นี่คือภาวะใกล้หยุดหายใจ (near-fatal / imminent respiratory arrest)**\n- **ซึมลง** = CO2 narcosis + hypoxia ต่อสมอง\n- **RR ลดจาก 40 เหลือ 12** = **ไม่ใช่การดีขึ้น แต่คือกล้ามเนื้อหายใจล้าจนหมดแรง** — เป็นสัญญาณที่อันตรายที่สุดในโจทย์นี้\n- **PaCO2 62 ในผู้ป่วยหืดที่ควรจะ hyperventilate** = การอุดกั้นชนะแรงหายใจแล้ว\n\n**การรักษา: ใส่ท่อช่วยหายใจทันที (rapid sequence intubation) โดยแพทย์ที่มีประสบการณ์มากที่สุด**\n- **ยานำสลบที่แนะนำ: ketamine 1-2 mg/kg** เพราะ **มีฤทธิ์ขยายหลอดลมโดยตรง** (ปลดปล่อย catecholamine + ต้าน muscarinic) และคงความดันโลหิตไว้ได้; ทางเลือก propofol (ขยายหลอดลมได้แต่ทำให้ความดันตก)\n- ใช้ **ท่อขนาดใหญ่ที่สุดเท่าที่ทำได้ (≥ 8.0 mm)** เพื่อลดแรงต้านของท่อและช่วยดูดเสมหะเหนียว\n- **เตรียมรับความดันตกหลังใส่ท่อ** — ให้สารน้ำล่วงหน้าและเตรียม vasopressor\n\n**หลักการตั้งเครื่องช่วยหายใจในหืด: ปัญหาหลักคือ dynamic hyperinflation (auto-PEEP / breath stacking)**\n\n**กลไก**: หลอดลมตีบทำให้ **เวลาหายใจออกไม่พอ** → ลมค้างในถุงลมสะสมทุกครั้งที่ให้ลมเข้า → **ความดันในช่องอกสูงขึ้นเรื่อย ๆ** → **venous return ลดลง → ความดันตก** และ **เสี่ยง barotrauma/pneumothorax**\n\n**การตั้งเครื่องที่ถูกต้อง (เป้าหมายคือ \"ให้เวลาหายใจออกมากที่สุด\")**\n| ตัวแปร | ค่าที่ตั้ง | เหตุผล |\n|---|---|---|\n| **Tidal volume** | **6-8 mL/kg predicted body weight** | ลดปริมาตรที่ค้าง |\n| **Respiratory rate** | **ต่ำ 8-12 /min** | **ยืดเวลาหายใจออก** ← สำคัญที่สุด |\n| **Inspiratory flow** | **สูง 60-80 L/min** | ทำให้ช่วงหายใจเข้าสั้น เหลือเวลาหายใจออกมาก |\n| **I:E ratio** | **1:3 ถึง 1:5** | เช่นเดียวกัน |\n| **PEEP** | **ต่ำ (0-5 cmH2O)** ในระยะแรก | PEEP สูงเพิ่ม hyperinflation ในผู้ป่วยที่ไม่หายใจเอง |\n| **Plateau pressure** | **< 30 cmH2O** | เป็นตัวชี้วัดความเสี่ยง barotrauma ที่ดีกว่า peak pressure |\n\n**Permissive hypercapnia**: **ยอมให้ PaCO2 สูงและ pH ต่ำลงได้ (โดยทั่วไป pH > 7.15-7.20)** เพื่อหลีกเลี่ยงการเพิ่ม RR/VT ซึ่งจะทำให้ hyperinflation แย่ลง — **การรักษาตัวเลขก๊าซให้สวยคือกับดักที่ฆ่าผู้ป่วย**\n\n**ถ้าความดันตกทันทีหลังใส่ท่อ — วินิจฉัยแยกโรคที่ต้องคิดใน 30 วินาที**\n1. **Auto-PEEP** → **ปลดเครื่องช่วยหายใจออกจากท่อและกดหน้าอกไล่ลมออก (apnoea test)**; ถ้าความดันกลับมา = ยืนยัน\n2. **Tension pneumothorax** → เจาะระบายทันที\n3. ผลของยานำสลบ/ภาวะขาดน้ำ → ให้สารน้ำ + vasopressor\n\n**การรักษาต่อเนื่อง**: ให้ **SABA ต่อทางท่อ (inline nebuliser/MDI พร้อม spacer)**, corticosteroid ต่อ, หาและแก้ปัจจัยกระตุ้น, ดูดเสมหะ, ให้ยาคลายกล้ามเนื้อเท่าที่จำเป็น (ระวัง **steroid + neuromuscular blocker → critical illness myopathy**)\n\n**ก่อนจำหน่าย**: **เปลี่ยนเป็นสูตร ICS-formoterol ใช้ประจำและ as-needed (MART)**, ตรวจสอบเทคนิคการพ่นยา, ให้ **written asthma action plan**, จัดการสิ่งกระตุ้น (แมว), นัดติดตามภายใน 1-2 สัปดาห์ และประเมินเพื่อส่งต่อพิจารณา **biologic therapy** เนื่องจากเป็น severe asthma ที่มี exacerbation บ่อย"
+    }
+   ],
+   "ref": [
+    "MED34 MEQ acute severe asthma",
+    "MED30 MCQ asthma",
+    "MED35 สอบลงกองครั้งที่ 3 — asthma"
+   ],
+   "nl": [
+    "2.2.11",
+    "2.2.9",
+    "B6.4(4)"
+   ],
+   "_kind": "meq",
+   "_set": "chest"
+  }
+ ],
+ "osce": [
+  {
+   "id": "CH-AST-OSCE-01",
+   "part": "OSCE/SAQ",
+   "lec": "3/11",
+   "lecture": "Asthma — การวินิจฉัยและการจัดการโรคหืด (บรรยาย 3 พ.ย. 2569)",
+   "topic": "OSCE – Teaching budesonide-formoterol DPI as MART and explaining a written asthma action plan",
+   "station": "OSCE (สอนผู้ป่วย) 7 นาที",
+   "nl": [
+    "2.3.10(1)",
+    "B6.4(5)",
+    "B6.4(4)"
+   ],
+   "ref": [
+    "GINA 2026 Summary Guide — Inhaler skills, written asthma action plan"
+   ],
+   "instruction": "หญิงอายุ 23 ปี เพิ่งได้รับการวินิจฉัยหืด แพทย์สั่ง **budesonide-formoterol 160/4.5 mcg ชนิดผงแห้ง (DPI)** แบบ **MART** (1 สูดเช้า–เย็น และ 1 สูดเมื่อมีอาการ) ผู้ป่วยเคยใช้แต่ salbutamol MDI และกลัวว่า \"ยาสเตียรอยด์จะทำให้อ้วนและติดยา\"\n\n**จงสอนผู้ป่วย (ผู้ป่วยมาตรฐาน) ใช้ยาพ่นผงแห้งให้ถูกต้อง อธิบายแผนการใช้ยาแบบ MART และ written asthma action plan ภายใน 7 นาที** · มีเครื่องพ่นผงแห้งหลอดฝึกวางไว้ให้",
+   "answer": "**เกณฑ์ให้คะแนน (16 คะแนน)**\n\n| ข้อ | สิ่งที่ต้องทำ | คะแนน |\n|---|---|---|\n| 1 | แนะนำตัว ยืนยันตัวผู้ป่วย ถามความเข้าใจเดิมและ **ความกังวลเรื่องสเตียรอยด์** | 1 |\n| 2 | อธิบายสั้น ๆ ว่าหืดคือ **หลอดลมอักเสบเรื้อรัง** — salbutamol แค่คลายหลอดลม ส่วนยาใหม่มี **ยาลดอักเสบ (budesonide) + ยาขยายหลอดลมออกฤทธิ์เร็ว (formoterol)** | 2 |\n| 3 | ตอบความกังวล: ICS เป็นยาสูดขนาดต่ำ เข้าเลือดน้อยมาก **ไม่ทำให้อ้วนหรือติดยาแบบยากิน** · ผลข้างเคียงเฉพาะที่ (เชื้อราในปาก เสียงแหบ) ป้องกันได้ด้วยการบ้วนปาก | 2 |\n| 4 | เตรียมเครื่อง: เปิดฝา **ถือตั้งตรง** หมุนฐานไปจนสุดแล้วหมุนกลับจนได้ยินเสียง \"คลิก\" (บรรจุยา 1 dose) · ไม่เขย่า | 2 |\n| 5 | **หายใจออกให้สุดโดยหันหน้าออกจากเครื่อง** (ไม่เป่าลมเข้าเครื่อง ผงยาจะชื้น) | 1 |\n| 6 | อมปากกระบอกให้สนิท **สูดเข้าแรงและเร็ว ลึก ๆ** (ต่างจาก MDI ที่สูดช้า) | 2 |\n| 7 | เอาเครื่องออก **กลั้นหายใจ 5–10 วินาที** แล้วหายใจออกช้า ๆ · ปิดฝา | 1 |\n| 8 | **บ้วนปาก กลั้วคอ และบ้วนทิ้ง** หลังพ่น | 1 |\n| 9 | อธิบาย **MART**: 1 สูดเช้า–เย็นทุกวันแม้ไม่มีอาการ + **1 สูดทุกครั้งที่มีอาการ** (ใช้แทน salbutamol ได้) · รวม **ไม่เกิน 12 สูด/วัน** · ดู dose counter | 2 |\n| 10 | **Action plan**: แย่ลงให้พ่นเพิ่มทีละ 1 สูด ใช้ maintenance ต่อ · **มาโรงพยาบาลทันที** ถ้าเหนื่อยมากพูดไม่เป็นประโยค ไม่ดีขึ้นหลังพ่น อาการแย่ลงเร็ว ไม่ดีขึ้นใน 2–3 วัน หรือต้องใช้ > 12 สูด/24 ชม. | 1 |\n| 11 | **Teach-back**: ให้ผู้ป่วยสาธิตและอธิบายกลับ แก้จุดผิด · นัดติดตาม 1–3 เดือน | 1 |\n\n**จุดที่ผู้สอบมักดู**\n- ห้ามสอนให้ **สูดช้า** หรือ **เขย่า** DPI (เป็นวิธีของ pMDI)\n- ต้องบอกว่า **ไม่ต้องใช้ salbutamol แยก** เมื่อใช้ MART และคนที่ใช้ ICS-salmeterol จะใช้ ICS-formoterol เป็น reliever ไม่ได้\n- การตอบความกลัวสเตียรอยด์ด้วยภาษาง่ายและไม่ตัดสินเพิ่ม adherence",
+   "_kind": "meq",
+   "_set": "chest"
+  }
+ ]
+}

@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="th">
 <meta charset="utf-8">
@@ -354,7 +355,17 @@ table.tq td.cv.op{background:var(--ok-soft)}
    แขวนไว้ที่ <html> ไม่ใช่ <body> เพื่อไม่โดน zoom ของ body (ตำแหน่ง fixed จึงตรงกับพิกัดจอ) */
 .ai-fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:60;
   font:600 14px/1.3 var(--sans);color:var(--on-accent);background:var(--accent);border:0;border-radius:999px;padding:12px 16px;cursor:pointer;box-shadow:0 8px 24px -8px rgba(0,0,0,.45)}
-.ai-fab[hidden],.ai-sel[hidden],.ai-panel[hidden],.ai-quote[hidden],.ai-quick[hidden]{display:none!important}
+.ai-fab[hidden],.ai-sel[hidden],.ai-panel[hidden],.ai-quote[hidden],.ai-quick[hidden],.ai-selbar[hidden]{display:none!important}
+/* แถบลอยตอนลากเลือกข้อความ — มีทั้ง "ถาม AI" และ "ใส่ในสไลด์" (ผู้ใช้ขอ 14 พ.ย.) */
+.ai-selbar{position:fixed;z-index:62;display:flex;gap:8px;align-items:center}
+.ai-selbar .ai-sel{position:static}
+.ai-add{background:var(--surface);color:var(--accent-ink);border:1px solid var(--accent)}
+/* ชิปที่ผู้ใช้เลือกเองบนสไลด์ */
+.pv-mt{font-size:13px;font-weight:600;color:var(--accent-ink);margin:var(--s-5) 0 0}
+.pv-mine{list-style:none;margin:var(--s-2) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--s-2)}
+.pv-mine li{display:flex;align-items:center;gap:var(--s-2);font-size:17px;line-height:1.45;font-weight:600;padding:var(--s-2) var(--s-3);border:1px solid var(--accent);border-radius:var(--r-md);background:var(--accent-soft);color:var(--accent-ink)}
+.pv-mine button{font:inherit;font-size:15px;line-height:1;color:var(--ink-3);background:transparent;border:0;cursor:pointer;padding:4px 2px;min-height:32px}
+.pv-mine button:hover{color:var(--bad)}
 .ai-sel{position:fixed;z-index:62;font:600 14px/1.3 var(--sans);color:var(--on-accent);background:var(--accent);border:0;border-radius:999px;padding:8px 12px;cursor:pointer;box-shadow:0 6px 18px -6px rgba(0,0,0,.5);white-space:nowrap}
 .ai-panel{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:61;width:min(420px,calc(100vw - 32px));height:min(600px,calc(100vh - 100px));
   display:flex;flex-direction:column;background:var(--surface);color:var(--ink);border:1px solid var(--rule-strong);border-radius:var(--r-lg);box-shadow:0 18px 50px -18px rgba(0,0,0,.55);font-family:var(--sans);overflow:hidden}
@@ -842,6 +853,15 @@ body.tr-lock{overflow:hidden}
   .tr-pins{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .tr-pn{min-height:88px;padding:12px;border-radius:6px 6px 16px 6px;background:#fff3b0;color:#3a3110;font-size:14px;line-height:1.5;box-shadow:0 6px 14px -10px rgba(60,50,0,.6);transform:rotate(var(--r,0deg));overflow:hidden;overflow-wrap:anywhere}
   .tr-pn small{display:block;font-size:12px;opacity:.7}
+  .tr-pv{display:flex;flex-direction:column;gap:8px;max-height:46vh;overflow:auto;scrollbar-width:thin}
+  .tr-pvs{display:grid;gap:4px;width:100%;min-width:0;flex:none;overflow:hidden;padding:10px 12px;border:1px solid var(--rule);border-radius:16px;background:var(--surface-sunk);color:var(--ink);text-align:left;font:inherit;cursor:pointer}
+  .tr-pvs:hover{border-color:var(--accent)}
+  .tr-pvs.now{border-color:var(--accent);background:var(--accent-soft)}
+  .tr-pvs small{font-size:11px;font-weight:600;color:var(--ink-3)}
+  .tr-pvs b{font-size:14px;line-height:1.45;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tr-pvk{display:flex;flex-wrap:wrap;gap:4px;min-width:0;max-width:100%}
+  .tr-pvk i{font-style:normal;font-size:11.5px;line-height:1.4;padding:2px 7px;border:1px solid var(--rule-strong);border-radius:999px;background:var(--surface);color:var(--ink-2);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tr-pvs em{font-style:normal;font-size:11.5px;font-weight:600;color:var(--accent-ink)}
   .tr-keys{list-style:none;margin:0;padding:0;display:grid;gap:8px}
   .tr-keys li{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px}
   .tr-empty{font-size:14px;color:var(--ink-3);margin:0}
@@ -901,6 +921,12 @@ body:not([data-view="home"]) #main>*:not(.tr-fz){zoom:var(--fz,1)}
 }
 @media (prefers-reduced-motion:reduce){.tr-side,.tr-dock,body{transition:none!important}}
 @media print{.tr-rail,.tr-hide{display:none!important}}
+/* ซ่อนสารบัญ "หัวข้อทั้งหมด" เป็นค่าเริ่มต้น (ผู้ใช้ขอ 16 พ.ย.) — เปิด/ปิดได้จากปุ่ม "สารบัญ" ในทางลัด (+) หรือแถบซ้าย */
+.cols>aside#outline{display:none!important}
+body.tr-toc .cols>aside#outline{display:block!important}
+.cols{grid-template-columns:minmax(0,1fr)!important}
+@media (min-width:1700px){body.tr-toc:not([data-view="home"]) .cols{grid-template-columns:290px minmax(0,1fr)!important}}
+@media (max-width:1099px){body[data-view="home"] .cols>aside#outline{display:none!important}}
 
 </style>
 
@@ -986,7 +1012,7 @@ function boot(){
 
 var KEY="med421-learn-v1";
 var state={course:"",view:"home",lec:null,sec:null,pid:null,
-           done:{},ans:{},notes:{},rate:{},theme:"",hide:{},log:{}};
+           done:{},ans:{},notes:{},rate:{},theme:"",hide:{},pvadd:{},log:{}};
 try{var raw=localStorage.getItem(KEY);if(raw){var s=JSON.parse(raw);if(s&&typeof s==="object"){
   for(var k in state) if(k in s) state[k]=s[k];}}}catch(e){}
 if(state.theme)document.documentElement.setAttribute("data-theme",state.theme);
@@ -1682,7 +1708,7 @@ function viewSection(){
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
     "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
-    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"<button class='btn' data-act='present' data-plec='"+esc(l.lec)+"' data-psec='"+esc(s.id)+"'>▶ พรีเซนต์จากหัวข้อนี้</button>"+hideBtn(l)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#l-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
+    (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"<button class='btn' data-act='present' data-plec='"+esc(l.lec)+"' data-psec='"+esc(s.id)+"'>▶ พรีเซนต์จากหัวข้อนี้</button>"+(PVADD.countSec(s)?"<span class='chip acc' title='ลากคลุมข้อความในบทเรียนแล้วกด ＋ ใส่ในสไลด์ เพื่อเพิ่ม'>ใส่ในสไลด์เอง "+PVADD.countSec(s)+"</span>":"")+""+hideBtn(l)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#l-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
     (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,IMGS=s.imgs||{},"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
   FIGS={};ANIMS={};IMGS={};
   if(!hid&&s.pearls&&s.pearls.length)
@@ -2027,14 +2053,17 @@ function startTimer(mins){
   var root=document.documentElement,el={};
   function mk(tag,cls,html){var x=document.createElement(tag);if(cls)x.className=cls;if(html!=null)x.innerHTML=html;return x;}
   el.fab=mk("button","ai-fab","ถาม AI");el.fab.hidden=true;el.fab.type="button";el.fab.title="ถาม Claude เรื่องที่กำลังอ่าน";
-  el.sel=mk("button","ai-sel","ถาม AI ↗");el.sel.hidden=true;el.sel.type="button";
+  el.sel=mk("button","ai-sel","ถาม AI ↗");el.sel.type="button";
+  el.add=mk("button","ai-sel ai-add","＋ ใส่ในสไลด์");el.add.type="button";
+  el.add.title="เอาข้อความที่เลือกไปขึ้นบนสไลด์พรีเซนต์ของหัวข้อย่อยนี้";
+  el.bar=mk("div","ai-selbar");el.bar.hidden=true;el.bar.appendChild(el.add);el.bar.appendChild(el.sel);
   el.panel=mk("div","ai-panel");el.panel.hidden=true;el.panel.setAttribute("role","dialog");el.panel.setAttribute("aria-label","ถาม AI");
   el.panel.innerHTML="<div class='ai-hd'><b>ถาม AI<span class='ai-ctx'></span></b><button type='button' data-ai='clear'>ล้างแชท</button><button type='button' data-ai='close' aria-label='ปิด'>ปิด</button></div>"+
     "<div class='ai-log' aria-live='polite'></div><div class='ai-quote' hidden><span></span><button type='button' data-ai='unquote' aria-label='เอาข้อความที่เลือกออก'>×</button></div>"+
     "<div class='ai-quick' hidden><button type='button' data-aq='อธิบายตรงนี้ให้เข้าใจง่าย ๆ'>อธิบาย</button><button type='button' data-aq='ทำไมถึงเป็นแบบนี้ (กลไก)'>ทำไม</button><button type='button' data-aq='ขอเคสตัวอย่างสั้น ๆ ที่ข้อสอบชอบออก'>เคสข้อสอบ</button><button type='button' data-aq='มีวิธีจำง่าย ๆ ไหม'>วิธีจำ</button></div>"+
     "<div class='ai-in'><textarea rows='1' placeholder='พิมพ์คำถาม… (Enter ส่ง)'></textarea><button type='button' data-ai='send'>ส่ง</button></div>"+
     "<div class='ai-note'>ตอบโดย Claude (Sonnet) จากบัญชีของคุณ · อิงเนื้อหาหัวข้อที่เปิดอยู่ ตรวจกับตำราก่อนใช้จริง</div>";
-  [el.fab,el.sel,el.panel].forEach(function(x){root.appendChild(x);});
+  [el.fab,el.bar,el.panel].forEach(function(x){root.appendChild(x);});
   var log=el.panel.querySelector(".ai-log"),ta=el.panel.querySelector("textarea"),sendB=el.panel.querySelector("[data-ai='send']"),
       qBox=el.panel.querySelector(".ai-quote"),quick=el.panel.querySelector(".ai-quick"),ctxEl=el.panel.querySelector(".ai-ctx");
   var ERR={not_granted:"ไม่ได้อนุญาตให้หน้านี้ใช้ Claude",sampling_disabled:"บัญชีนี้ใช้ Claude จากหน้านี้ไม่ได้",not_declared:"หน้านี้ยังไม่ได้เปิดสิทธิ์ใช้ Claude",
@@ -2104,7 +2133,7 @@ function startTimer(mins){
   }
   /* ปุ่มลอยตอนลากคลุมข้อความในบทเรียน */
   var selT=null;
-  function hideSel(){el.sel.hidden=true;}
+  function hideSel(){el.bar.hidden=true;}
   function selText(){
     var s=window.getSelection&&window.getSelection();if(!s||s.isCollapsed||!s.rangeCount)return null;
     var r=s.getRangeAt(0),main=document.getElementById("main");
@@ -2113,19 +2142,34 @@ function startTimer(mins){
     return {t:t,r:r};
   }
   function placeSel(){
-    selT=null;if(!AI.sample){hideSel();return;}
+    selT=null;
     var x=selText();if(!x){hideSel();return;}
+    el.sel.hidden=!AI.sample;                               /* ถาม AI ใช้ได้เมื่อเปิดใน claude.ai ที่ล็อกอิน */
+    el.add.hidden=!(state.view==="section"&&state.sec);     /* ใส่ในสไลด์ ใช้ได้เมื่ออ่านอยู่ในหัวข้อ */
+    if(el.sel.hidden&&el.add.hidden){hideSel();return;}
     var rs=x.r.getClientRects(),b=rs.length?rs[rs.length-1]:x.r.getBoundingClientRect();
-    el.sel.hidden=false;
-    var w=el.sel.offsetWidth,h=el.sel.offsetHeight,vw=root.clientWidth,vh=root.clientHeight;
+    el.bar.hidden=false;
+    var w=el.bar.offsetWidth,h=el.bar.offsetHeight,vw=root.clientWidth,vh=root.clientHeight;
     var left=Math.max(8,Math.min(b.right-w/2,vw-w-8)),top=b.bottom+8;
     if(top+h>vh-8)top=b.top-h-8;
     top=Math.max(8,Math.min(top,vh-h-8));
-    el.sel.style.left=left+"px";el.sel.style.top=top+"px";
+    el.bar.style.left=left+"px";el.bar.style.top=top+"px";
   }
   document.addEventListener("selectionchange",function(){clearTimeout(selT);selT=setTimeout(placeSel,220);});
-  window.addEventListener("scroll",function(){if(!el.sel.hidden)placeSel();},{passive:true});
-  el.sel.addEventListener("mousedown",function(e){e.preventDefault();});   /* อย่าให้การกดปุ่มล้างข้อความที่เลือก */
+  window.addEventListener("scroll",function(){if(!el.bar.hidden)placeSel();},{passive:true});
+  el.bar.addEventListener("mousedown",function(e){e.preventDefault();});   /* อย่าให้การกดปุ่มล้างข้อความที่เลือก */
+  el.add.addEventListener("click",function(){
+    var x=selText();
+    if(x){
+      var nd=x.r.commonAncestorContainer;nd=nd&&nd.nodeType===1?nd:(nd&&nd.parentElement);
+      var r=PVADD.add(x.t,nd);
+      PVADD.say(!r?"เปิดหัวข้อในบทเรียนก่อน แล้วลากเลือกข้อความอีกครั้ง"
+        :r.dup?"ข้อความนี้อยู่ในสไลด์แล้ว · "+r.head:"ใส่ในสไลด์แล้ว · "+r.head);
+      if(r&&!r.dup&&state.view==="section")render();
+    }
+    try{window.getSelection().removeAllRanges();}catch(e){}
+    hideSel();
+  });
   el.sel.addEventListener("click",function(){
     var x=selText();if(!x)return;
     setQuote(x.t);openPanel();
@@ -2156,6 +2200,67 @@ function startTimer(mins){
    อธิบายทั้งคาบให้คนอื่นฟัง — อธิบายได้ = เข้าใจแล้ว · บนจอมีแค่หัวข้อกับ keyword (คำตัวหนาในบทเรียน)
    ลำดับ: ปก → ต่อหัวข้อ (เปิดหัวข้อ → หัวข้อย่อย ### ละสไลด์ → ปิดหัวข้อ) → สรุปจุดที่ติด
    โน้ตเต็มซ่อนไว้ กดดูหลังอธิบายเสร็จ · ประเมินตัวเองเก็บใน state.rate คีย์ pv|ชุด|หัวข้อ#ลำดับ (ซิงก์บัญชี) */
+/* ---------- เลือกเนื้อหาเองใส่สไลด์พรีเซนต์ (ผู้ใช้ขอ 14 พ.ย.) ----------
+   ลากคลุมข้อความในบทเรียน → กด "＋ ใส่ในสไลด์" → ข้อความนั้นไปขึ้นบนสไลด์ของหัวข้อย่อยที่มันอยู่ใต้
+   หัวข้อของสไลด์ระบบหาให้เอง จากหัวข้อย่อย (### / ####) ที่อยู่เหนือข้อความนั้น ไม่ต้องพิมพ์เอง
+   เก็บใน state.pvadd คีย์เดียวกับสไลด์ (หัวข้อ#ลำดับ) จึงซิงก์ขึ้นบัญชีเหมือนคะแนนพรีเซนต์ */
+var PVADD=(function(){
+  function all(){state.pvadd=state.pvadd||{};return state.pvadd;}
+  function list(key){var a=all()[key];return a&&a.length?a:[];}
+  function plain(t){return String(t==null?"":t).replace(/\*\*/g,"").replace(/`/g,"").replace(/\s+/g," ").trim();}
+  function blocksOf(s){                       /* แบ่งหัวข้อย่อยแบบเดียวกับที่โหมดพรีเซนต์แบ่งสไลด์ */
+    var bs=[],cur={title:"",lines:[]};
+    String(s.md||"").split("\n").forEach(function(L){
+      var m=/^\s*#{3,4}\s+(.*)$/.exec(L);
+      if(m){bs.push(cur);cur={title:m[1],lines:[]};}else cur.lines.push(L);
+    });
+    bs.push(cur);
+    return bs.filter(function(b){return b.title||b.lines.join("").trim();});
+  }
+  function keyFor(node){
+    var l=state.lec&&lecOf(state.lec),s=l&&secOf(l,state.sec);
+    if(!s)return null;
+    var prose=node&&node.closest&&node.closest(".prose"),head="";
+    if(prose&&node.compareDocumentPosition){
+      var hs=prose.querySelectorAll("h3,h4");
+      for(var i=0;i<hs.length;i++)
+        if(hs[i].compareDocumentPosition(node)&Node.DOCUMENT_POSITION_FOLLOWING)head=plain(hs[i].textContent);
+    }
+    var bs=blocksOf(s),idx=-1;
+    if(head)for(var j=0;j<bs.length;j++)if(plain(bs[j].title)===head)idx=j;
+    return {sec:s,key:idx<0?s.id+"#sec":s.id+"#"+idx,head:head||plain(s.title)};
+  }
+  function add(text,node){
+    var k=keyFor(node);if(!k)return null;
+    var t=plain(text).slice(0,300);if(t.length<2)return null;
+    var a=all();a[k.key]=a[k.key]||[];
+    for(var i=0;i<a[k.key].length;i++)if(a[k.key][i].t===t)return {dup:true,head:k.head};
+    a[k.key].push({t:t,h:k.head,ts:Date.now()});save();
+    return {head:k.head,n:a[k.key].length};
+  }
+  function remove(key,i){
+    var a=all();if(!a[key])return;
+    a[key].splice(i,1);if(!a[key].length)delete a[key];save();
+  }
+  function html(key){
+    var a=list(key);if(!a.length)return "";
+    return "<p class='pv-mt'>ที่เลือกใส่เอง "+a.length+" รายการ</p><ul class='pv-mine'>"+
+      a.map(function(x,i){return "<li><span>"+inline(x.t)+"</span>"+
+        "<button type='button' data-pvx='"+esc(key)+"|"+i+"' aria-label='เอาออกจากสไลด์' title='เอาออกจากสไลด์'>✕</button></li>";}).join("")+"</ul>";
+  }
+  function countSec(s){
+    var n=0,a=all();
+    for(var k in a)if(k.indexOf(s.id+"#")===0)n+=a[k].length;
+    return n;
+  }
+  function say(m){
+    var el=document.querySelector(".tr-toast");if(!el)return;
+    el.textContent=m;el.classList.add("on");
+    clearTimeout(say.t);say.t=setTimeout(function(){el.classList.remove("on");},1800);
+  }
+  return {add:add,remove:remove,html:html,list:list,countSec:countSec,say:say};
+})();
+
 var Pres=(function(){
   var P={el:null,S:[],i:0,lec:null,notes:false,t0:0,tick:null,back:null,off:{},pickOpen:false};
   var PKEY="med421-pres",PPKEY="med421-pres-pick",RATES=[["ok","อธิบายได้"],["part","ติดบางจุด"],["no","ยังไม่ได้"]];
@@ -2255,6 +2360,20 @@ var Pres=(function(){
       blocks(s).forEach(function(b,bi){if(!w[s.id+"#"+bi])off[s.id+"#"+bi]=1;});});}
     P.off=off;repick();
   }
+  /* รายการสไลด์ของหัวข้อหนึ่ง สำหรับพรีวิวในแถบขวา (ผู้ใช้ขอ 14 พ.ย.) */
+  function outline(lecId,secId){
+    var l=lecOf(lecId),s=l&&secOf(l,secId);if(!s)return [];
+    var out=[{key:s.id+"#sec",eye:"เปิดหัวข้อ",title:plain(s.title),
+      kw:String(s.summary||"").split(/\s·\s/).map(plain).filter(Boolean).slice(0,4)}];
+    blocks(s).forEach(function(b,bi){
+      var kw=keywords(b.lines),vis=visual(b.lines);
+      if(!kw.length&&!vis&&!b.title)return;
+      out.push({key:s.id+"#"+bi,eye:vis?"มีภาพ":"",title:plain(b.title||"เปิดเรื่อง"),kw:kw.slice(0,4).map(plain)});
+    });
+    out.push({key:s.id+"#end",eye:"ปิดหัวข้อ",title:"สรุป "+plain(s.title),
+      kw:(s.mnem||[]).map(function(m){return plain(m.name);}).slice(0,4)});
+    return out;
+  }
   function chips(kw,more){
     if(!kw.length)return "<p class='pv-more'>หัวข้อนี้ไม่มีคำตัวหนา — อธิบายจากหัวข้อและภาพ</p>";
     return "<ul class='pv-kw'>"+kw.map(function(k){return "<li>"+inline(k)+"</li>";}).join("")+"</ul>"+
@@ -2311,14 +2430,14 @@ var Pres=(function(){
     if(x.type==="sec"){
       return "<p class='pv-eye'>"+eye+" · เปิดหัวข้อ</p><h1 class='pv-h1'>"+esc(x.s.title)+"</h1>"+
         "<p class='pv-ask'>เปิดให้คนฟังรู้ก่อนว่าหัวข้อนี้ตอบคำถามอะไร และทำไมต้องรู้ แล้วไล่ภาพรวมตามคำข้างล่าง</p>"+
-        chips(x.kw,x.more)+rateBox(x.key)+
+        chips(x.kw,x.more)+PVADD.html(x.key)+rateBox(x.key)+
         notesBox("โน้ต · สรุปหัวข้อ",x.s.summary?"<p>"+splitDots(inline(x.s.summary)).join("<br>")+"</p>":"<p>ไม่มีสรุป</p>");
     }
     if(x.type==="end"){
       var mn=(x.s.mnem||[]).map(function(m){return m.name;});
       return "<p class='pv-eye'>"+eye+" · ปิดหัวข้อ</p><h2 class='pv-h2'>"+esc(x.s.title)+"</h2>"+
         "<p class='pv-ask'>สรุปหัวข้อนี้ให้คนฟังในสามประโยค แล้วบอกว่าข้อสอบชอบถามตรงไหน"+(mn.length?" ปิดท้ายด้วยหลักจำ":"")+"</p>"+
-        (mn.length?chips(mn,0):"")+rateBox(x.key)+
+        (mn.length?chips(mn,0):"")+PVADD.html(x.key)+rateBox(x.key)+
         notesBox("โน้ต · จำไปสอบ",(x.s.pearls&&x.s.pearls.length?"<ol>"+x.s.pearls.map(function(p){return "<li>"+inline(p)+"</li>";}).join("")+"</ol>":"")+
           (x.s.mnem&&x.s.mnem.length?"<div class='mnem'>"+mnemBody(x.s.mnem)+"</div>":""));
     }
@@ -2327,7 +2446,7 @@ var Pres=(function(){
     if(x.vis)vis="<div class='pv-vis'>"+(x.vis.t==="fig"?figHtml(x.vis.k):x.vis.t==="anim"?animHtml(x.vis.k):imgHtml(x.vis.k))+"</div>";
     return "<p class='pv-eye'>"+eye+" · "+esc(plain(x.s.title))+"</p><h2 class='pv-h2'>"+inline(x.b.title||"เปิดเรื่อง")+"</h2>"+
       "<p class='pv-ask'>อธิบายให้คนฟังเข้าใจ โดยพูดถึงทุกคำข้างล่าง"+(x.vis?" และอธิบายภาพก่อนเปิดป้าย":"")+"</p>"+
-      chips(x.kw,x.more)+vis+rateBox(x.key)+
+      chips(x.kw,x.more)+PVADD.html(x.key)+vis+rateBox(x.key)+
       notesBox("โน้ต · เนื้อหาในบทเรียน",md(x.b.lines.join("\n")));
   }
   function show(i){
@@ -2360,7 +2479,7 @@ var Pres=(function(){
     document.documentElement.style.overflow="";
     if(P.back&&P.back.focus)try{P.back.focus();}catch(e){}
   }
-  function open(lecId,secId,from){
+  function open(lecId,secId,from,startKey){
     var l=lecOf(lecId);if(!l||!l.sections.length)return;
     P.lec=l;P.off=pickGet();P.pickOpen=false;
     if(secId&&P.off[secId]){delete P.off[secId];pickSet(P.off);}   /* กดพรีเซนต์จากหัวข้อที่ไม่ได้เลือกไว้ → ใส่หัวข้อนั้นกลับ */
@@ -2386,7 +2505,8 @@ var Pres=(function(){
       if(Math.abs(dx)>60&&Math.abs(dy)<45)show(P.i+(dx<0?1:-1));},{passive:true});
     P.tick=setInterval(clock,1000);
     var start=0;
-    if(secId)for(var i=0;i<P.S.length;i++)if(P.S[i].type==="sec"&&P.S[i].s.id===secId){start=i;break;}
+    if(startKey)for(var k=0;k<P.S.length;k++)if(P.S[k].key===startKey){start=k;break;}
+    if(!start&&secId)for(var i=0;i<P.S.length;i++)if(P.S[i].type==="sec"&&P.S[i].s.id===secId){start=i;break;}
     show(start);el.focus();
   }
   document.addEventListener("click",function(e){
@@ -2399,6 +2519,9 @@ var Pres=(function(){
     if(a==="notes"){P.notes=!P.notes;var y=P.el.querySelector(".pv-stage").scrollTop;show(P.i);if(P.notes){var n=P.el.querySelector(".pv-notes");if(n)n.scrollIntoView({block:"nearest"});}else P.el.querySelector(".pv-stage").scrollTop=y;return;}
     if(b.hasAttribute("data-pvgo")){show(+b.getAttribute("data-pvgo"));return;}
     var pk=b.getAttribute("data-pvpk");if(pk){pickAct(pk);return;}
+    var xk=b.getAttribute("data-pvx");
+    if(xk){var cut=xk.lastIndexOf("|");PVADD.remove(xk.slice(0,cut),+xk.slice(cut+1));
+      var ys=P.el.querySelector(".pv-stage").scrollTop;show(P.i);P.el.querySelector(".pv-stage").scrollTop=ys;return;}
     var r=b.getAttribute("data-pvr");
     if(r){var x=P.S[P.i],k=rk(x.key);
       if(state.rate[k]===r)delete state.rate[k];else state.rate[k]=r;
@@ -2425,7 +2548,7 @@ var Pres=(function(){
     if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();show(P.i-1);return;}
     if((e.key==="n"||e.key==="N")&&!e.metaKey&&!e.ctrlKey){e.preventDefault();P.el.querySelector("[data-pv='notes']").click();}
   });
-  return {open:open,close:close};
+  return {open:open,close:close,outline:outline};
 })();
 
 /* ===================== โครงหน้าแบบ Teaching Round (ผู้ใช้ขอ 9 พ.ย.) =====================
@@ -2652,6 +2775,17 @@ var TR=(function(){
     if(!WIDE.matches){dock.innerHTML="";return}
     var w=wrongList().slice(0,4),pins=(ls(PINKEY)||[]).slice(-4).reverse();
     var h="<div class='tr-dk-top'><button type='button' class='tr-hide press' data-trpane='d' aria-label='ซ่อนแถบขวา' title='ซ่อนแถบขวา (ปุ่ม ])'><span>ซ่อน</span>"+CHR+"</button></div>";
+    var pv=(state.view==="section"&&state.sec&&loaded())?Pres.outline(state.lec,state.sec):null;
+    h+="<section class='tr-dk'><div class='tr-dk-h'><h3>สไลด์พรีเซนต์หัวข้อนี้</h3><small>"+(pv&&pv.length?pv.length+" สไลด์":"ยังไม่ได้เปิดหัวข้อ")+"</small></div>";
+    h+=pv&&pv.length?"<div class='tr-pv'>"+pv.map(function(x,i){
+        var mine=PVADD.list(x.key).length;
+        return "<button type='button' class='tr-pvs press' data-trpv='"+esc(x.key)+"' title='กดเพื่อเปิดโหมดพรีเซนต์ที่สไลด์นี้'>"+
+          "<small>"+(i+1)+"/"+pv.length+(x.eye?" · "+esc(x.eye):"")+"</small><b>"+esc(x.title)+"</b>"+
+          (x.kw.length?"<span class='tr-pvk'>"+x.kw.map(function(k){return "<i>"+esc(k)+"</i>"}).join("")+"</span>":"")+
+          (mine?"<em>＋ ที่เลือกใส่เอง "+mine+"</em>":"")+"</button>"}).join("")+"</div>"+
+        "<button type='button' class='btn press' data-trpv='"+esc(pv[0].key)+"'>▶ พรีเซนต์จากหัวข้อนี้</button>"
+      :"<p class='tr-empty'>เปิดหัวข้อในบทเรียนก่อน แล้วสไลด์ของหัวข้อนั้นจะมาขึ้นที่นี่ — กดสไลด์ไหนก็เข้าโหมดพรีเซนต์ที่สไลด์นั้นเลย</p>";
+    h+="</section>";
     h+="<section class='tr-dk'><div class='tr-dk-h'><h3>ข้อที่ผิดในชุดนี้</h3><small>"+wrongCount()+" ข้อ</small></div>";
     h+=w.length?"<ul class='tr-wl'>"+w.map(function(x){return "<li><button class='press' data-trsec='"+esc(x.s.id)+"' data-trsl='"+esc(x.l.lec)+"'><small>ผิด "+x.n+" ข้อ · คาบ "+esc(x.l.lec)+"</small><span>"+esc(x.s.title)+"</span></button></li>"}).join("")+"</ul>":"<p class='tr-empty'>ยังไม่มีข้อที่ตอบผิดในชุดนี้</p>";
     h+="</section><section class='tr-dk'><div class='tr-dk-h'><h3>ปักจากหน้านี้ล่าสุด</h3><small>เครื่องนี้</small></div>";
@@ -2693,8 +2827,9 @@ var TR=(function(){
   function sector(a0,a1){var p1=pt(RO,a0),p2=pt(RO,a1),p3=pt(RI,a1),p4=pt(RI,a0),f=function(v){return v.toFixed(2)};
     return "M"+f(p1[0])+" "+f(p1[1])+"A"+RO+" "+RO+" 0 0 1 "+f(p2[0])+" "+f(p2[1])+"L"+f(p3[0])+" "+f(p3[1])+"A"+RI+" "+RI+" 0 0 0 "+f(p4[0])+" "+f(p4[1])+"Z"}
   function toc(){
-    if(DESK.matches){document.body.classList.toggle("tr-toc");return}
-    var o=document.getElementById("outline");if(!o||getComputedStyle(o).display==="none"){toast("เปิดคาบหรือหัวข้อก่อน แล้วสารบัญจะอยู่ท้ายหน้า");return}
+    var tocOn=document.body.classList.toggle("tr-toc");if(DESK.matches)return;
+    if(!tocOn){toast("ซ่อนสารบัญแล้ว");return}
+    var o=document.getElementById("outline");if(!o||getComputedStyle(o).display==="none"){document.body.classList.remove("tr-toc");toast("เปิดคาบหรือหัวข้อก่อน แล้วสารบัญจะอยู่ท้ายหน้า");return}
     try{o.scrollIntoView({behavior:RM?"auto":"smooth"})}catch(_){}o.classList.remove("tr-flash");void o.offsetWidth;o.classList.add("tr-flash")}
   function act(k){
     if(k==="next")return openNext();
@@ -2934,6 +3069,7 @@ var TR=(function(){
     if(b.dataset.trnext){pop(b);openNext();return}
     if(b.dataset.trlec){pop(b);openLecSheet(lecOf(b.dataset.trlec));return}
     if(b.dataset.trview){goView(b.dataset.trview);return}
+    if(b.dataset.trpv){var kk=b.dataset.trpv;Pres.open(state.lec,kk.split("#")[0],b,kk);return}
     if(b.dataset.trsec){openSection(b.dataset.trsl,b.dataset.trsec);return}
     if(b.dataset.trcourse){setCourse(b.dataset.trcourse);return}
     if(b.dataset.trplus){openMenu(null);return}
@@ -2991,5 +3127,7 @@ renderSync();
 boot();
 })();
 </script>
+
+</body></html>
 
 </body></html>
