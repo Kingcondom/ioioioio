@@ -29,6 +29,16 @@ SONNET = re.compile(r"sonnet")
 
 fail = []
 
+ASK_LABEL = re.compile(r"ถาม\s*AI")
+
+
+def ask_btn(pg):
+    """ปุ่ม 'ถาม AI' ที่โผล่ตอนลากคลุม — คลาส .ai-sel ใช้ร่วมกับปุ่มอื่นแล้ว
+    (เช่น '＋ ใส่ในสไลด์' ของโหมดพรีเซนต์) จึงต้องเลือกด้วยข้อความบนปุ่ม"""
+    return pg.locator(".ai-sel").filter(has_text=ASK_LABEL)
+
+
+
 
 def chromium():
     c = glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome")
@@ -178,7 +188,7 @@ try:
             fail.append("หาย่อหน้าให้ลากคลุมในหัวข้อ %s ไม่ได้" % sid)
         else:
             pg.wait_for_timeout(400)
-            sel = pg.locator(".ai-sel")
+            sel = ask_btn(pg)
             if sel.is_hidden():
                 fail.append("ลากคลุมข้อความแล้วปุ่ม 'ถาม AI ↗' ไม่โผล่")
             else:
@@ -276,7 +286,7 @@ try:
         pg.wait_for_timeout(200)
         picked = select_prose(pg)
         pg.wait_for_timeout(400)
-        if pg.locator(".ai-sel").count() and pg.locator(".ai-sel").is_visible():
+        if ask_btn(pg).count() and ask_btn(pg).first.is_visible():
             fail.append("not_granted = ใช้ไม่ได้ถาวร แต่ลากคลุมแล้วยังโชว์ปุ่ม 'ถาม AI ↗'")
         print("error ถาวร (not_granted): เลิกโชว์ปุ่มถามตอนลากคลุม ✓")
 
@@ -292,7 +302,7 @@ try:
                 fail.append("ไม่มี capability แต่กดปุ่มถามแล้วกล่องยังเปิด — ถามไปก็ไม่มีใครตอบ")
         picked = select_prose(pg)
         pg.wait_for_timeout(400)
-        if pg.locator(".ai-sel").count() and pg.locator(".ai-sel").is_visible():
+        if ask_btn(pg).count() and ask_btn(pg).first.is_visible():
             fail.append("ไม่มี capability แต่ลากคลุมแล้วยังโชว์ปุ่ม 'ถาม AI ↗'")
         print("ไม่มี capability: ไม่โชว์ปุ่มทั้งสองแบบ ✓")
         ctx.close()
