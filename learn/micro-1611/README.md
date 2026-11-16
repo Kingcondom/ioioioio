@@ -13,3 +13,8 @@
 
 แก้เนื้อหา: แก้ `lec_a.py` / `lec_b.py` แล้วรัน `python3 build.py` (ลบคาบ 16/11 เดิมแล้วใส่ใหม่ รันซ้ำได้ ผลเหมือนเดิม)
 แล้วเผยแพร่ด้วยเครื่องมือ Artifact ไปที่ URL ข้างบน โดยส่ง `data/id.json`, `data/index.json` และ `img/id/*.jpg` เป็นไฟล์ประกอบ
+
+## MED421 Prep Drill (https://claude.ai/artifact/FyGkbfyoKTW2aEdvBuxwtr)
+`drill_lx.py` เพิ่มคาบ 16/11 เข้าแท็บ "เทียบโพยกับบทเรียน" ชุด ID: ย้ายข้อสอบเก่า 22 ข้อจากบทเสริม (มาลาเรีย, Nocardia/Actinomyces,
+M. marinum, HIV diarrhea, pharyngitis/diphtheria, ฝีตับ Klebsiella, Salmonella, PVE MSSA) เข้าหัวข้อของคาบ แล้วคำนวณตัวเลขสรุปใหม่
+ใช้: ดาวน์โหลดหน้า Prep Drill (Artifact read) แล้ว `python3 drill_lx.py <ไฟล์ที่ได้> <ไฟล์ปลายทาง>` จากนั้นเผยแพร่ไฟล์ปลายทางไปที่ URL เดิม

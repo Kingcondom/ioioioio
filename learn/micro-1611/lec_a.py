@@ -147,7 +147,9 @@ S.append(dict(
 ### ยาที่ต้องตอบ
 > ผู้สอนสรุปยาที่ต้องจำ: **Strep → penicillin / cephalosporin** · **Staph → cloxacillin** · **Enterococcus → ampicillin**
 
-- **GAS pharyngitis** → **penicillin V / amoxicillin 10 วัน** (ป้องกัน ARF)
+- **GAS pharyngitis** → **penicillin V / amoxicillin 10 วัน** (ป้องกัน ARF) · **แพ้ penicillin → erythromycin** (หรือ azithromycin)
+- **ไอ น้ำมูก คอแดงไม่มีหนอง ต่อมน้ำเหลืองไม่โต** = viral pharyngitis → **รักษาตามอาการ ไม่ให้ยาปฏิชีวนะ**
+- **Diphtheria** — แผ่นเยื่อ **สีเทา (pseudomembrane)** ที่คอ → **diphtheria antitoxin** + penicillin หรือ **erythromycin** (แพ้ penicillin)
 - **Pneumococcal CAP** → amoxicillin/ceftriaxone ตามความรุนแรง — ผู้สอน: ผู้ป่วยมาจากบ้าน **ไม่ต้องตอบ piperacillin-tazobactam** · **meningitis** → ceftriaxone + vancomycin จนรู้ความไว
 - **Enterococcal IE** → **ampicillin + ceftriaxone** (เลี่ยง gentamicin เพื่อรักษาไต)""",
  pearls=["β: GAS (คอ ผิว ARF AGN) · GBS (ทารก ตั้งครรภ์ ผู้สูงอายุ)", "α: pneumococcus (lancet diplococci มีแคปซูล) · viridans (IE) · S. suis (หมู + หูดับ)", "γ: Enterococcus → UTI, IE · amp + ceftriaxone"],
@@ -366,7 +368,7 @@ S.append(dict(
 | จำแบบผู้สอน | **ติดทั้ง Gram และ mAFB (2 ภาพ)** | **ติด Gram อย่างเดียว (1 ภาพ)** |
 | ผู้ป่วย | **ภูมิต่ำ: steroid, HIV, ปลูกถ่าย** | คนปกติ ฟันผุ ใส่ IUD |
 | โรค | **ฝีในปอดและสมอง** | **ฝีบริเวณใบหน้าลำคอ (lumpy jaw)** ทะลุเป็นโพรง · ช่องท้อง เชิงกราน |
-| ยา | **co-trimoxazole (Bactrim)** · รายรุนแรง + imipenem/amikacin · CT สมองทุกราย | **amoxicillin / penicillin** ระยะยาว |
+| ยา | **co-trimoxazole (Bactrim)** · รายรุนแรง + imipenem/amikacin · CT สมองทุกราย | **penicillin G IV แล้วต่อ penicillin V/amoxicillin 6–12 เดือน** · แพ้ penicillin → macrolide (โพยเก่าตอบ azithromycin — ถ้ามี penicillin ในตัวเลือกให้ตอบ penicillin) |
 
 ### เบาะแสว่าเป็น anaerobe
 - Gram stain/เพาะเชื้อได้ **หลายเชื้อปนกัน**

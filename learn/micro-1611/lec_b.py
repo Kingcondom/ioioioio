@@ -155,7 +155,7 @@ S.append(dict(
 | ปอด — **bronchiectasis** | หญิงไม่สูบบุหรี่ | MAC, *M. abscessus* |
 | hypersensitivity pneumonitis | **hot tub**, ช่างโลหะ | *M. avium* |
 | **ต่อมน้ำเหลืองที่คอ** | เด็ก | MAC, *M. scrofulaceum* |
-| **fish tank granuloma** (ตุ่มเรียงตามท่อน้ำเหลือง) | เลี้ยงปลา | ***M. marinum*** |
+| **fish tank granuloma** — ตุ่มม่วงคล้ำ/แผลตกสะเก็ดที่หลังมือ เรียงตามท่อน้ำเหลือง | เลี้ยงปลา **ตกปลา** สัมผัสน้ำ | ***M. marinum*** |
 | แผลเนื้อตาย (Buruli ulcer) | | *M. ulcerans* |
 | แผลติดเชื้อหลังผ่าตัด/ฉีดยา/สายสวน | health-care associated | **RGM** |
 | **disseminated** | **HIV CD4 < 50** | **MAC**, *M. kansasii* |
@@ -426,8 +426,11 @@ S.append(dict(
 | **severe malaria** (ซึม ชัก ไตวาย parasitemia สูง ฯลฯ) | **artesunate IV** แล้วต่อด้วยยากินครบสูตร | |
 
 - **ตรวจ G6PD ก่อนให้ primaquine 14 วัน** (เม็ดเลือดแดงแตก) · ห้ามในหญิงตั้งครรภ์
+- **ตรวจแรกเมื่อสงสัย** (ไข้หนาวสั่นหลังเข้าป่า/ชายแดน): **thick และ thin blood film** (หรือ rapid test)
+- **หญิงตั้งครรภ์ไตรมาสแรก PF**: **quinine + clindamycin 7 วัน** (แนวทางเดิมและคำตอบในโพย) · WHO 2022 ให้ **artemether–lumefantrine** ได้แล้ว · **ห้าม primaquine และ doxycycline**
+- **ยาป้องกันก่อนเข้าป่า** (PF ดื้อยาหลายขนาน ชายแดน): **doxycycline 100 mg วันละครั้ง** เริ่ม 1–2 วันก่อนเข้า กินทุกวัน และต่อ **4 สัปดาห์หลังออก** + ป้องกันยุงกัด
 - ผู้สอน: **เปลี่ยนแค่สูตร PF** สายพันธุ์อื่นยังเหมือนเดิม""",
- pearls=["PF: RBC ปกติ · ring หลายวง · double chromatin · appliqué · gametocyte กล้วย", "PV/PO: RBC โต + Schüffner's dots · PO รูปรีขอบหยัก · PM: band form ไม่มีจุด", "PF → DHA-piperaquine + primaquine ครั้งเดียว (ฆ่า gametocyte)", "PV/PO → chloroquine + primaquine 14 วัน (ฆ่า hypnozoite) · ตรวจ G6PD"],
+ pearls=["ป้องกันก่อนเข้าป่า: doxycycline 100 mg/วัน 1–2 วันก่อน → 4 สัปดาห์หลังออก", "PF: RBC ปกติ · ring หลายวง · double chromatin · appliqué · gametocyte กล้วย", "PV/PO: RBC โต + Schüffner's dots · PO รูปรีขอบหยัก · PM: band form ไม่มีจุด", "PF → DHA-piperaquine + primaquine ครั้งเดียว (ฆ่า gametocyte)", "PV/PO → chloroquine + primaquine 14 วัน (ฆ่า hypnozoite) · ตรวจ G6PD"],
  imgs=dict([
   im("mic-q12-pbs", "Quiz 12 — Thin blood smear", "เม็ดเลือดแดงขนาดปกติหลายเซลล์ บางเซลล์มี ring เล็กอยู่ชิดขอบเซลล์และมีจุดโครมาตินสองจุด",
      "Peripheral blood smear — บรรยายสิ่งที่พบ วินิจฉัย และให้การรักษา",
