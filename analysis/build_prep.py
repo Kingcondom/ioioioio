@@ -12,6 +12,18 @@ items = {i['id']: i for v in bank.values() for g in v.get('old', []) for i in g[
 def shuffle(choices, ans, key):
     idx = list(range(len(choices))); random.Random(int(hashlib.md5(key.encode()).hexdigest()[:8], 16)).shuffle(idx)
     return [choices[i] for i in idx], idx.index(ans)
+LECNAME = {}
+for sk, v in bank.items():
+    for g in v.get('old', []): LECNAME.setdefault(f"{sk}-{g['lec']}", g['lecture'])
+    for x in v.get('mcq', []) + v.get('meq', []):
+        if x.get('lec') and x.get('lecture'): LECNAME.setdefault(f"{sk}-{x['lec']}", x['lecture'])
+LECNAME = {k: re.sub(r'\s*\(ยังไม่ระบุคาบ\)', '', v) for k, v in LECNAME.items()}
+_lm = f'{ROOT}/prep_src/lectures_map.json'   # ชื่อคาบจากหน้า MED421 Lectures (key เดียวกับลิงก์ Drill)
+if os.path.exists(_lm):
+    for k, v in json.load(open(_lm)).items():
+        LECNAME[k] = ' / '.join(dict.fromkeys(x['title'] for x in v)) + ' (' + ', '.join(dict.fromkeys(x['by'] for x in v)) + ')'
+ITEMSYS = {i['id']: sk for sk, v in bank.items() for g in v.get('old', []) for i in g['items']}
+def lk(iid): return f"{ITEMSYS[iid]}-{items[iid]['lec']}"
 sets = []
 for s in ORDER:
     tf, of = f'{S}/in2/{s}_themes.json', f'{S}/out2/{s}.json'
@@ -25,7 +37,7 @@ for s in ORDER:
         if re.search(r'(ข้อ|ตัวเลือก|ตอบ|choice|option)\s*\(?[A-Ea-e]\)?(?![a-zA-Z])', note):
             note += ('\n\n**หมายเหตุ:** ตัวอักษรตัวเลือกที่อ้างในคำอธิบายนี้เป็นลำดับในโพยเดิม ซึ่งไม่ตรงกับลำดับที่แสดง '
                      f'คำตอบที่ถูกคือ **{"ABCDE"[it["answer"]]}. {it["choices"][it["answer"]]}**')
-        one.append({'id': it['id'], 'theme': t['theme'], 'years': t['theme_years'], 'n': t['n'], 'q': it['q'],
+        one.append({'lecs': sorted({lk(x['id']) for x in t['items']}), 'id': it['id'], 'theme': t['theme'], 'years': t['theme_years'], 'n': t['n'], 'q': it['q'],
                     'choices': it['choices'], 'answer': it['answer'], 'note': note, 'src': it.get('src', ''),
                     'related': o['related'], 'fix': o.get('fix', ''), 'others': others})
     one.sort(key=lambda x: (-len(x['years']), -x['n'], -(max(x['years']) if x['years'] else 0)))
@@ -33,7 +45,7 @@ for s in ORDER:
     for q in O['synth']:
         ch, a = shuffle(q['choices'], q.get('answer', 0), q['id'])
         yrs = sorted({y for th in q['covers_themes'] if th in T for y in T[th]['theme_years']})
-        syn.append({'id': q['id'], 'title': q['title'], 'q': q['stem'], 'choices': ch, 'answer': a, 'explain': q['explain'],
+        syn.append({'lecs': sorted({lk(i['id']) for th in q['covers_themes'] if th in T for i in T[th]['items']}), 'id': q['id'], 'title': q['title'], 'q': q['stem'], 'choices': ch, 'answer': a, 'explain': q['explain'],
                     'fullcover': q['fullcover'], 'pearl': q.get('pearl', ''), 'themes': q['covers_themes'],
                     'nl': q.get('covers_nl', []), 'years': yrs})
     sets.append({'key': s, 'label': LABEL[s][0], 'thai': LABEL[s][1], 'one': one, 'synth': syn})
@@ -50,7 +62,7 @@ pics = []
 theme_ix = {x['theme']: x for st in sets for x in st['one']}
 for p in json.load(open(f'{ROOT}/prep_src/pics.json')):
     th = next(t for t in theme_ix if t.startswith(PICMAP[p['id']]))
-    q = {'id': p['id'], 'set': p['sys'], 'theme': th, 'title': p['topic'], 'img': p['img'], 'years': [int(y) for y in p.get('years', [])],
+    q = {'lecs': [f"{p['sys']}-{p['lec']}"], 'id': p['id'], 'set': p['sys'], 'theme': th, 'title': p['topic'], 'img': p['img'], 'years': [int(y) for y in p.get('years', [])],
          'fix': pfix.get(p['id'], ''), 'pearl': p.get('pearl', '')}
     if p.get('choices'):
         q.update(kind='pic', q=p['stem'], choices=p['choices'], answer=p['answer'], explain=p['explain'])
@@ -58,7 +70,7 @@ for p in json.load(open(f'{ROOT}/prep_src/pics.json')):
         q.update(kind='saq', q=p['vignette'], station=p.get('station', ''), parts=p['questions'])
     pics.append(q)
     theme_ix[th].setdefault('pics', []).append({'id': p['id'], 'img': p['img']})
-data = {'pics': pics, 'sets': sets, 'n_one': sum(len(x['one']) for x in sets), 'n_syn': sum(len(x['synth']) for x in sets)}
+data = {'lecnames': LECNAME, 'pics': pics, 'sets': sets, 'n_one': sum(len(x['one']) for x in sets), 'n_syn': sum(len(x['synth']) for x in sets)}
 json.dump(data, open(f'{ROOT}/prep_data.json', 'w'), ensure_ascii=False)
 tpl = open(f'{ROOT}/prep_template.html').read()
 open(f'{ROOT}/prep.html', 'w').write(tpl.replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')))
