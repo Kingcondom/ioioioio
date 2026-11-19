@@ -63,13 +63,13 @@
   "stem": "A 62-year-old woman has had 4 days of vomiting and diarrhoea from acute gastroenteritis; the vomiting stopped this morning. She complains of fatigue and dizziness on standing. She is alert and fully oriented, with no headache, confusion or seizure. Lips and tongue are dry. BP 102/64 mmHg (PR 96/min) supine, falling to 84/56 mmHg (PR 118/min) on standing. Serum Na 112 mEq/L, K 3.2 mEq/L, BUN 28 mg/dL, creatinine 1.3 mg/dL, glucose 90 mg/dL, measured serum osmolality 238 mOsm/kg. Urine osmolality 480 mOsm/kg, urine Na 12 mEq/L. Which of the following is the most appropriate initial management?",
   "choices": [
    "IV 0.9% NaCl, limiting the rise in Na to ≤8–10 mEq/L in 24 hours",
-   "IV 3% NaCl 100 mL bolus, repeated up to three times",
-   "Fluid restriction to 800 mL per day",
-   "Oral tolvaptan 15 mg once daily",
+   "IV 3% NaCl 100 mL boluses, repeated up to three times over 30 minutes",
+   "Fluid restriction to 800 mL per day with oral salt tablets",
+   "Oral tolvaptan 15 mg once daily with free access to water",
    "IV 5% dextrose in water to replace the fluid deficit"
   ],
   "answer": 0,
-  "explain": "**กลไก**: ภาวะ volume depletion กระตุ้น baroreceptor → หลั่ง **ADH แบบ non-osmotic** ซึ่ง \"ชนะ\" สัญญาณ hypo-osmolality → ไตเก็บน้ำอิสระ ขณะที่ผู้ป่วยดื่ม/ได้น้ำที่ hypotonic → **Na ต่ำ** ไตยังทำงานถูกต้องคือ **ดูด Na กลับเต็มที่ (urine Na 12 < 20)** บอกว่าเสีย Na ทาง **นอกไต (GI)** ไม่ใช่ทางไต (เช่น diuretic, adrenal insufficiency)\n\nการรักษาที่ตรงกลไกคือ **คืน volume ด้วย isotonic saline** → baroreceptor หยุดกระตุ้น ADH → ปัสสาวะเจือจาง (aquaresis) → Na ขึ้นเอง\n**จุดอันตราย**: เมื่อ ADH ถูกปิด Na อาจขึ้นเร็วเกิน → **osmotic demyelination syndrome** — จำกัดการแก้ไม่เกิน **8–10 mEq/L ใน 24 ชม.** (≤ 8 ถ้าเสี่ยงสูง: Na ≤ 105, K ต่ำ, สุรา, ขาดอาหาร, โรคตับ) ตรวจ Na ทุก 2–4 ชม. และดูปริมาณปัสสาวะ ถ้าเกินให้ D5W ± desmopressin เพื่อดึงกลับ (ผู้ป่วยรายนี้ K ต่ำด้วย ต้องเสริม K ซึ่งก็ทำให้ Na ขึ้นได้ ต้องนับรวม)\n\n| ภาวะ volume | urine Na | ตัวอย่าง | การรักษาหลัก |\n|---|---|---|---|\n| Hypovolemic | < 20 | ท้องเสีย อาเจียน | **0.9% NaCl** |\n| Hypovolemic | > 20 | diuretic, adrenal insufficiency, salt-wasting | 0.9% NaCl + แก้สาเหตุ |\n| Euvolemic | > 30 | SIADH, hypothyroid, glucocorticoid deficiency | fluid restriction, salt tab, (tolvaptan) |\n| Hypervolemic | < 20 | HF, cirrhosis, nephrotic | จำกัดน้ำ/เกลือ + diuretic |\n\n**ทำไมตัวลวงผิด**\n- **3% NaCl bolus**: สงวนไว้สำหรับ **อาการรุนแรงหรือค่อนข้างรุนแรง** จากสมองบวม (ชัก ซึมลึก โคม่า อาเจียนจากสมองบวม สับสน ปวดศีรษะ) — ผู้ป่วยรายนี้รู้ตัวดี อาเจียนมาจากลำไส้อักเสบและหยุดแล้ว ภาวะนี้น่าจะเรื้อรังกว่า 48 ชม. การให้ hypertonic เพิ่มเสี่ยง overcorrection โดยไม่จำเป็น\n- **Fluid restriction**: เป็นการรักษา SIADH (euvolemic) — ในผู้ป่วยขาดน้ำจะยิ่งทำให้ volume ลด ADH ยิ่งหลั่ง และเสี่ยงไตวาย\n- **Tolvaptan**: vasopressin V2 antagonist **ห้ามใช้ใน hypovolemic hyponatremia** — ทำให้เสียน้ำเพิ่มและ Na ขึ้นเร็วเกินคุม\n- **5% dextrose in water**: เท่ากับให้ **น้ำอิสระ** (กลูโคสถูกเผาผลาญหมด) → ADH ยังสูง → Na ยิ่งต่ำลง\n\n> หมายเหตุ: ถ้ามีข้อสงสัยว่ามีอาการทางสมองรุนแรงจริง (เช่น ซึมลงหรือชัก) แนวทางยุโรปให้ 3% NaCl 150 mL ก่อนเสมอไม่ว่า volume status จะเป็นอย่างไร — โจทย์จึงต้องอ่านอาการทางระบบประสาทให้ดี",
+  "explain": "**กลไก**: ภาวะ volume depletion กระตุ้น baroreceptor → หลั่ง **ADH แบบ non-osmotic** ซึ่ง \"ชนะ\" สัญญาณ hypo-osmolality → ไตเก็บน้ำอิสระ ขณะที่ผู้ป่วยดื่ม/ได้น้ำที่ hypotonic → **Na ต่ำ** ไตยังทำงานถูกต้องคือ **ดูด Na กลับเต็มที่ (urine Na 12 < 20)** บอกว่าเสีย Na ทาง **นอกไต (GI)** ไม่ใช่ทางไต (เช่น diuretic, adrenal insufficiency)\n\nการรักษาที่ตรงกลไกคือ **คืน volume ด้วย isotonic saline** → baroreceptor หยุดกระตุ้น ADH → ปัสสาวะเจือจาง (aquaresis) → Na ขึ้นเอง\n**จุดอันตราย**: เมื่อ ADH ถูกปิด Na อาจขึ้นเร็วเกิน → **osmotic demyelination syndrome** — จำกัดการแก้ไม่เกิน **8–10 mEq/L ใน 24 ชม.** (≤ 8 ถ้าเสี่ยงสูง: Na ≤ 105, K ต่ำ, สุรา, ขาดอาหาร, โรคตับ) ตรวจ Na ทุก 2–4 ชม. และดูปริมาณปัสสาวะ ถ้าเกินให้ D5W ± desmopressin เพื่อดึงกลับ (ผู้ป่วยรายนี้ K ต่ำด้วย ต้องเสริม K ซึ่งก็ทำให้ Na ขึ้นได้ ต้องนับรวม)\n\n| ภาวะ volume | urine Na | ตัวอย่าง | การรักษาหลัก |\n|---|---|---|---|\n| Hypovolemic | < 20 | ท้องเสีย อาเจียน | **0.9% NaCl** |\n| Hypovolemic | > 20 | diuretic, adrenal insufficiency, salt-wasting | 0.9% NaCl + แก้สาเหตุ |\n| Euvolemic | > 30 | SIADH, hypothyroid, glucocorticoid deficiency | fluid restriction, salt tab, (tolvaptan) |\n| Hypervolemic | < 20 | HF, cirrhosis, nephrotic | จำกัดน้ำ/เกลือ + diuretic |\n\n**ทำไมตัวลวงผิด**\n- **3% NaCl bolus**: สงวนไว้สำหรับ **อาการรุนแรงหรือค่อนข้างรุนแรง** จากสมองบวม (ชัก ซึมลึก โคม่า อาเจียนจากสมองบวม สับสน ปวดศีรษะ) — ผู้ป่วยรายนี้รู้ตัวดี อาเจียนมาจากลำไส้อักเสบและหยุดแล้ว ภาวะนี้น่าจะเรื้อรังกว่า 48 ชม. การให้ hypertonic เพิ่มเสี่ยง overcorrection โดยไม่จำเป็น\n- **Fluid restriction + salt tablets**: เป็นการรักษา SIADH (euvolemic) — เกลือเม็ดอย่างเดียวไม่พอคืน volume ที่ขาดอย่างรวดเร็ว และการจำกัดน้ำในผู้ป่วยขาดน้ำจะยิ่งทำให้ volume ลด ADH ยิ่งหลั่ง และเสี่ยงไตวาย\n- **Tolvaptan**: vasopressin V2 antagonist **ห้ามใช้ใน hypovolemic hyponatremia** — ทำให้เสียน้ำเพิ่มและ Na ขึ้นเร็วเกินคุม\n- **5% dextrose in water**: เท่ากับให้ **น้ำอิสระ** (กลูโคสถูกเผาผลาญหมด) → ADH ยังสูง → Na ยิ่งต่ำลง\n\n> หมายเหตุ: ถ้ามีข้อสงสัยว่ามีอาการทางสมองรุนแรงจริง (เช่น ซึมลงหรือชัก) แนวทางยุโรปให้ 3% NaCl 150 mL ก่อนเสมอไม่ว่า volume status จะเป็นอย่างไร — โจทย์จึงต้องอ่านอาการทางระบบประสาทให้ดี",
   "pearl": "Hypovolemic hyponatremia ที่ไม่มีอาการทางสมองรุนแรง ให้ 0.9% NaCl แต่ต้องเฝ้าระวัง Na ขึ้นเร็วเกินเมื่อ volume กลับมา (ADH ถูกปิด) — จำกัด ≤ 8–10 mEq/L ต่อ 24 ชม.",
   "ref": [
    "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 31 — Vomit, dry lip, Na 112 - Isotonic crystalloid",
@@ -148,12 +148,12 @@
   "choices": [
    "Rapidly progressive glomerulonephritis",
    "Acute tubular necrosis",
-   "Acute interstitial nephritis",
-   "Chronic glomerulonephritis",
+   "Drug-induced acute interstitial nephritis",
+   "Chronic (slowly progressive) glomerulonephritis",
    "Nephrotic syndrome"
   ],
   "answer": 0,
-  "explain": "**กลไก**: การอักเสบของ glomerulus ที่รุนแรงทำให้ **GBM และ Bowman capsule ฉีกขาด** → fibrin, macrophage และ cytokine รั่วเข้า Bowman space → parietal epithelial cell แบ่งตัว → **crescent** → บีบ glomerular tuft → GFR ลดลงอย่างรวดเร็วใน **หลายวันถึงหลายสัปดาห์ (ไม่เกิน 3 เดือน)** ร่วมกับ **active (nephritic) sediment**: dysmorphic RBC และ **RBC cast**\n\nโจทย์นี้มีครบ: Cr 1.0 → 4.5 ใน 6 สัปดาห์ + RBC cast + proteinuria ระดับ sub-nephrotic + ไตขนาดปกติ (ไม่ใช่โรคเรื้อรัง) = **RPGN** ซึ่งเป็น **ภาวะเร่งด่วน** ต้องส่ง ANCA, anti-GBM, C3/C4, ANA และทำ kidney biopsy โดยเร็ว เพื่อเริ่ม immunosuppression ก่อนไตเป็นแผลถาวร\n\n| ชนิดของ RPGN | IF | ตัวอย่าง |\n|---|---|---|\n| Type I anti-GBM | **linear** IgG | anti-GBM disease, Goodpasture |\n| Type II immune complex | **granular** | lupus, IgAN, PSGN, IgA vasculitis |\n| Type III pauci-immune | น้อยหรือไม่มี | **ANCA vasculitis** (GPA, MPA) — พบบ่อยสุดในผู้สูงอายุ |\n\n| กลุ่มอาการ | ระยะเวลาที่ไตเสื่อม | ขนาดไต |\n|---|---|---|\n| Acute GN | วัน | ปกติ |\n| **RPGN** | **สัปดาห์–3 เดือน** | ปกติ |\n| Chronic GN | หลายเดือน–ปี | **เล็ก echogenicity สูง** |\n\n**ทำไมตัวลวงผิด**\n- **Acute tubular necrosis**: ต้องมี insult (hypotension, ยา/สารทึบรังสี) และ sediment เป็น **muddy brown granular cast** ไม่ใช่ RBC cast\n- **Acute interstitial nephritis**: มักมียาใหม่ ไข้ ผื่น eosinophilia และ sediment เป็น **WBC cast**, sterile pyuria\n- **Chronic glomerulonephritis**: ไตเสื่อมช้าเป็นเดือน–ปี ไตเล็กและ echogenic มี broad waxy cast — โจทย์มี baseline ปกติเมื่อ 6 สัปดาห์ก่อนและไตขนาดปกติ\n- **Nephrotic syndrome**: ต้องมีโปรตีน > 3.5 g/วัน, albumin < 3.0 และ sediment มักไม่ active — โจทย์ UPCR 1.8 และมี RBC cast",
+  "explain": "**กลไก**: การอักเสบของ glomerulus ที่รุนแรงทำให้ **GBM และ Bowman capsule ฉีกขาด** → fibrin, macrophage และ cytokine รั่วเข้า Bowman space → parietal epithelial cell แบ่งตัว → **crescent** → บีบ glomerular tuft → GFR ลดลงอย่างรวดเร็วใน **หลายวันถึงหลายสัปดาห์ (ไม่เกิน 3 เดือน)** ร่วมกับ **active (nephritic) sediment**: dysmorphic RBC และ **RBC cast**\n\nโจทย์นี้มีครบ: Cr 1.0 → 4.5 ใน 6 สัปดาห์ + RBC cast + proteinuria ระดับ sub-nephrotic + ไตขนาดปกติ (ไม่ใช่โรคเรื้อรัง) = **RPGN** ซึ่งเป็น **ภาวะเร่งด่วน** ต้องส่ง ANCA, anti-GBM, C3/C4, ANA และทำ kidney biopsy โดยเร็ว เพื่อเริ่ม immunosuppression ก่อนไตเป็นแผลถาวร\n\n| ชนิดของ RPGN | IF | ตัวอย่าง |\n|---|---|---|\n| Type I anti-GBM | **linear** IgG | anti-GBM disease, Goodpasture |\n| Type II immune complex | **granular** | lupus, IgAN, PSGN, IgA vasculitis |\n| Type III pauci-immune | น้อยหรือไม่มี | **ANCA vasculitis** (GPA, MPA) — พบบ่อยสุดในผู้สูงอายุ |\n\n| กลุ่มอาการ | ระยะเวลาที่ไตเสื่อม | ขนาดไต |\n|---|---|---|\n| Acute GN | วัน | ปกติ |\n| **RPGN** | **สัปดาห์–3 เดือน** | ปกติ |\n| Chronic GN | หลายเดือน–ปี | **เล็ก echogenicity สูง** |\n\n**ทำไมตัวลวงผิด**\n- **Acute tubular necrosis**: ต้องมี insult (hypotension, ยา/สารทึบรังสี) และ sediment เป็น **muddy brown granular cast** ไม่ใช่ RBC cast\n- **Drug-induced acute interstitial nephritis**: ต้องมียาใหม่ (β-lactam, NSAID, PPI) ซึ่งโจทย์ระบุว่าไม่มี และมักมีไข้ ผื่น eosinophilia, sediment เป็น **WBC cast**, sterile pyuria ไม่ใช่ RBC cast\n- **Chronic (slowly progressive) glomerulonephritis**: ไตเสื่อมช้าเป็นเดือน–ปี ไตเล็กและ echogenic มี broad waxy cast — โจทย์มี baseline ปกติเมื่อ 6 สัปดาห์ก่อนและไตขนาดปกติ\n- **Nephrotic syndrome**: ต้องมีโปรตีน > 3.5 g/วัน, albumin < 3.0 และ sediment มักไม่ active — โจทย์ UPCR 1.8 และมี RBC cast",
   "pearl": "Cr สูงขึ้นในหลายสัปดาห์ + RBC cast + ไตขนาดปกติ = RPGN (crescentic GN) → ส่ง ANCA/anti-GBM/C3 และ biopsy ด่วน",
   "ref": [
    "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 43 — ไตแย่ลง6week -> RPGN",
@@ -174,8 +174,8 @@
   "stem": "A 30-year-old man has biopsy-proven IgA nephropathy (mesangial hypercellularity only; no crescents). He takes no medication. BP 138/88 mmHg, eGFR 75 mL/min/1.73 m², 24-hour urine protein 1.2 g, serum albumin 3.9 g/dL, urine RBC 10–20/HPF. Which of the following is the most appropriate initial management?",
   "choices": [
    "Start an ACE inhibitor or ARB, titrated to the maximum tolerated dose",
-   "High-dose oral prednisolone alone for 6 months",
-   "IV cyclophosphamide pulses with glucocorticoids",
+   "High-dose oral prednisolone alone for 6 months, without RAS blockade",
+   "IV cyclophosphamide pulses with high-dose glucocorticoids",
    "Amlodipine titrated to a BP below 130/80 mmHg",
    "No drug therapy; repeat urine protein in 12 months"
   ],
@@ -281,9 +281,9 @@
   "stem": "A 35-year-old woman presents 2 weeks after an upper respiratory tract infection with anterior neck pain radiating to the jaw and ears, low-grade fever, palpitations and tremor. The thyroid is mildly enlarged, firm and markedly tender; there is no eye involvement. Laboratory results: TSH < 0.01 mIU/L, free T4 3.2 ng/dL (normal 0.9–1.7), ESR 85 mm/h, WBC 9,800/µL. 24-hour radioactive iodine uptake is 1% (normal 10–30%). Which of the following is the most likely diagnosis?",
   "choices": [
    "Subacute granulomatous (de Quervain) thyroiditis",
-   "Graves' disease",
+   "Graves' disease (diffuse toxic goitre)",
    "Painless (silent) lymphocytic thyroiditis",
-   "Acute suppurative thyroiditis",
+   "Acute suppurative (bacterial) thyroiditis",
    "Toxic multinodular goitre"
   ],
   "answer": 0,
@@ -330,11 +330,11 @@
   "topic": "Type 2 diabetes with established ASCVD – add-on to metformin",
   "stem": "A 58-year-old man has had type 2 diabetes for 6 years. He had an anterior myocardial infarction treated with PCI 2 years ago. Current medications: metformin 2,000 mg/day, aspirin, atorvastatin 80 mg, ramipril and bisoprolol. BMI 28 kg/m², BP 128/76 mmHg, HbA1c 8.2%, eGFR 85 mL/min/1.73 m², urine albumin-to-creatinine ratio 15 mg/g, LVEF 55% with no symptoms of heart failure. Which of the following is the most appropriate glucose-lowering agent to add?",
   "choices": [
-   "A GLP-1 receptor agonist with proven CV benefit (e.g., semaglutide)",
-   "A sulfonylurea (e.g., glipizide)",
+   "A GLP-1 receptor agonist (e.g., semaglutide)",
+   "A sulfonylurea (e.g., gliclazide modified-release)",
    "A DPP-4 inhibitor (e.g., sitagliptin)",
    "A thiazolidinedione (pioglitazone)",
-   "Basal insulin (insulin glargine)"
+   "Basal insulin (insulin glargine) at bedtime"
   ],
   "answer": 0,
   "explain": "**กลไก**: GLP-1 receptor agonist (GLP-1 RA) เลียนแบบ incretin → **กระตุ้น insulin แบบขึ้นกับระดับน้ำตาล** (จึงเสี่ยง hypoglycemia ต่ำ), กด glucagon, ชะลอการบีบตัวของกระเพาะ และ **ลดความอยากอาหารที่ hypothalamus → น้ำหนักลด** นอกจากนี้ยังลดการอักเสบของหลอดเลือด ลด BP และไขมัน → ในการศึกษา CVOT (**LEADER–liraglutide, SUSTAIN-6–semaglutide, REWIND–dulaglutide**) ลด **MACE (CV death, MI, stroke) ราว 12–26%**\n\nADA 2025: ผู้ป่วย T2DM ที่มี **established ASCVD** (เช่น MI เก่า) ให้ **GLP-1 RA และ/หรือ SGLT2 inhibitor ที่พิสูจน์ประโยชน์ต่อหัวใจ** เพื่อลดความเสี่ยงหัวใจ **โดยไม่ขึ้นกับ HbA1c และไม่ขึ้นกับว่าได้ metformin อยู่หรือไม่** ในรายนี้ BMI 28 ยิ่งได้ประโยชน์จากการลดน้ำหนักของ GLP-1 RA\n\n**ทำไมตัวลวงผิด**\n- **Sulfonylurea**: ลด HbA1c ได้ดีและราคาถูก แต่ **ไม่มีประโยชน์ต่อหัวใจ** ทำให้น้ำหนักขึ้นและ hypoglycemia (ซึ่งเพิ่ม arrhythmia ในผู้ป่วยโรคหัวใจ)\n- **DPP-4 inhibitor**: CVOT (TECOS, CARMELINA) เป็น **CV neutral** ลด HbA1c ได้เพียง ~0.5–0.7% และไม่ควรใช้ร่วมกับ GLP-1 RA\n- **Pioglitazone**: ลด insulin resistance และอาจลด stroke ในบางการศึกษา แต่ทำให้ **น้ำหนักขึ้น บวมน้ำ เสี่ยง heart failure และกระดูกหัก** — ไม่ใช่ยาที่แนะนำเป็นลำดับแรกเพื่อลด ASCVD\n- **Basal insulin**: CV neutral (ORIGIN) เพิ่มน้ำหนักและ hypoglycemia — สงวนไว้เมื่อ HbA1c สูงมาก (> 10%) มีอาการ catabolic หรือยาอื่นไม่พอ\n\n> หมายเหตุ: SGLT2 inhibitor ที่มี CV benefit (empagliflozin, canagliflozin) ก็เป็นคำตอบที่ถูกได้ในชีวิตจริง จึงไม่ได้ใส่เป็นตัวลวงในข้อนี้",
@@ -575,8 +575,8 @@
    "Moderate-intensity statin (e.g., atorvastatin 10–20 mg daily)",
    "No drug therapy, because his LDL-C is below 130 mg/dL",
    "Low-intensity statin (e.g., simvastatin 10 mg daily)",
-   "Ezetimibe 10 mg daily as monotherapy",
-   "Fenofibrate 160 mg daily"
+   "Ezetimibe 10 mg daily as monotherapy instead of a statin",
+   "Fenofibrate 160 mg daily to raise HDL-C and lower TG"
   ],
   "answer": 0,
   "explain": "**กลไก**: statin ยับยั้ง **HMG-CoA reductase** → cholesterol ในเซลล์ตับลด → กระตุ้น **SREBP-2 → เพิ่ม LDL receptor** บนผิวเซลล์ตับ → ดึง LDL ออกจากเลือด จาก CTT meta-analysis ทุก ๆ **LDL ที่ลด 1 mmol/L (~39 mg/dL) → ลด major vascular event ~21%** โดย **ไม่ขึ้นกับ LDL ตั้งต้น** — ผู้ป่วยเบาหวานมีความเสี่ยงพื้นฐานสูง จึงได้ประโยชน์สัมบูรณ์มากแม้ LDL \"ไม่สูง\"\n\nADA 2025 (primary prevention ในเบาหวาน):\n| กลุ่ม | statin |\n|---|---|\n| อายุ 40–75 ปี **ไม่มี ASCVD** | **moderate-intensity** (+ lifestyle) |\n| อายุ 40–75 ปี มี ≥ 1 ASCVD risk factor | **high-intensity**, ลด LDL ≥ 50% และเป้า < 70 mg/dL |\n| มี ASCVD แล้ว | high-intensity, เป้า LDL < 55 mg/dL (เพิ่ม ezetimibe/PCSK9i ถ้าไม่ถึง) |\n| อายุ 20–39 ปี มี risk factor | พิจารณา statin ได้ |\n\n| ความแรงของ statin | ลด LDL | ตัวอย่าง |\n|---|---|---|\n| High | ≥ 50% | atorvastatin 40–80, rosuvastatin 20–40 |\n| **Moderate** | **30–49%** | **atorvastatin 10–20, rosuvastatin 5–10, simvastatin 20–40** |\n| Low | < 30% | simvastatin 10, pravastatin 10–20 |\n\nผู้ป่วยอายุ 52 ปี ไม่มี ASCVD และไม่มี risk factor เพิ่ม (ไม่สูบบุหรี่ BP ปกติ ไม่มี albuminuria/CKD/retinopathy) → **moderate-intensity statin**\n\n**ทำไมตัวลวงผิด**\n- **ไม่ให้ยาเพราะ LDL < 130**: ในเบาหวานอายุ 40–75 ปีให้ statin โดย **ไม่ต้องรอ LDL สูง** — ข้อบ่งชี้มาจากความเสี่ยงรวม ไม่ใช่ตัวเลข LDL\n- **Low-intensity statin**: ลด LDL < 30% ไม่ถึงระดับที่การศึกษาพิสูจน์ประโยชน์ในเบาหวาน (CARDS ใช้ atorvastatin 10 mg)\n- **Ezetimibe เดี่ยว**: ใช้เป็นยาเสริมเมื่อ statin ขนาดที่ทนได้ไม่ถึงเป้า หรือแพ้ statin — ไม่ใช่ยาแรก\n- **Fenofibrate**: ลด TG เป็นหลัก — FIELD และ ACCORD-Lipid **ไม่ลด CV event** และ TG 125 ปกติอยู่แล้ว\n\n> หมายเหตุจาก recall: ต้นฉบับมีตัวเลือก \"lifestyle modification, low dose statin, mod-high statin, ezetimibe\" — ถ้าผู้ป่วยมี risk factor เพิ่ม (เช่น สูบบุหรี่ ความดันสูง albuminuria) คำตอบจะขยับเป็น high-intensity",

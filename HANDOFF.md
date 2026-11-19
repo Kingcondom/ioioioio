@@ -22,6 +22,7 @@ https://claude.ai/code/artifact/69931ac7-6ac2-4b0a-b4f3-41b7f4aff86d
 | Chest (ระบบหายใจ) | 50 | 56 | ✅ 57 | ✅ 5 คาบ | เสร็จ |
 | AIR (Allergy/Immuno/Rheum) | 60 (MCQ 50 + MEQ 4 + OSCE/SAQ 6) | 50 | ✅ 51 | ✅ 3 คาบ | เสร็จ |
 | Mock NL Part 1 | 200 (แยก 11 สาขา M01–M11) | — | ✅ ระดับหมวด | — | นำเข้าแล้ว |
+| **ลงกอง 3 (MED35)** `r3` | 91 (MCQ 78 + MEQ 3 + OSCE/SAQ 10) แยกตามระบบ K01–K11 | — | ✅ 122 | — | เรียบเรียงจาก recall ใน Google Doc "MED Y4 Pastpapers MD35" แท็บสอบลงกองครั้งที่ 3 · ไฟล์ข้อความ `export/r3.md` + `export/r3_quiz.txt` |
 | **ยังไม่ทำ** | Infectious (5 คาบ) · Neuro (4) · GI (4) · Endocrine (3) · Hemato (3) · Skin (2) · Onco (1) | | | | |
 
 รวมตอนนี้ **770 ข้อ** · ไฟล์อ้างอิง NL 250 หัวข้อ · หน้าเว็บเป็นดีไซน์การ์ดพาสเทลพร้อมอนิเมชัน
@@ -50,6 +51,7 @@ python3 build.py                  # ทุกระบบ (เว็บ + PDF)
 python3 build.py air --no-pdf     # ระบบเดียว ไม่ทำ PDF — ใช้ตอนกำลังเขียนข้อ
 python3 check_numbers.py          # ตรวจตัวเลข ABG ทั้งคลัง
 python3 export_text.py            # export/<ระบบ>.md + export/ALL.md
+python3 export_text.py r3 --quiz  # + export/r3_quiz.txt ข้อสอบล้วน 5 ตัวเลือก เฉลยท้ายไฟล์
 ```
 
 ## 5. กติกาที่ห้ามพลาด (สรุปจาก SPEC.md)
