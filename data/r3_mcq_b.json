@@ -1,0 +1,624 @@
+[
+ {
+  "id": "R3-MCQ-22",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Acid–base: normal anion gap metabolic acidosis from diarrhoea",
+  "stem": "A 34-year-old man presents with 2 days of profuse watery diarrhoea, about 15 episodes per day, without vomiting. He feels weak and thirsty. Vital signs: BP 96/60 mmHg, PR 112/min, RR 24/min, T 37.4 °C. Arterial blood gas on room air: pH 7.29, PaCO2 26 mmHg, HCO3 12 mEq/L. Serum: Na 138 mEq/L, K 3.0 mEq/L, Cl 116 mEq/L, albumin 4.0 g/dL, glucose 98 mg/dL, BUN 30 mg/dL, creatinine 1.2 mg/dL, lactate 1.5 mmol/L. Spot urine: Na 30 mEq/L, K 25 mEq/L, Cl 75 mEq/L. Which of the following best describes his acid–base status?",
+  "choices": [
+   "Normal anion gap metabolic acidosis with appropriate respiratory compensation",
+   "High anion gap metabolic acidosis with appropriate respiratory compensation",
+   "Normal anion gap metabolic acidosis with a concomitant respiratory acidosis",
+   "Normal anion gap metabolic acidosis with a concomitant respiratory alkalosis",
+   "Primary respiratory alkalosis with compensatory metabolic acidosis"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: สารคัดหลั่งในลำไส้ (น้ำดี น้ำย่อยตับอ่อน และ Cl⁻/HCO3⁻ exchanger ที่ colon) มี **HCO3 สูง** — ท้องเสียปริมาณมากจึงเท่ากับ **เสีย HCO3 ออกทางอุจจาระโดยตรง** ขณะเดียวกันภาวะขาดน้ำทำให้ไตดูด Na และ **Cl กลับเพิ่ม** → HCO3 ที่หายไปถูกแทนที่ด้วย Cl ในสัดส่วนเท่ากัน → **anion gap ไม่เปลี่ยน** = **hyperchloremic (normal AG) metabolic acidosis** ส่วน K ต่ำเพราะเสีย K ในอุจจาระ + secondary hyperaldosteronism จาก volume depletion\n\n**แปล ABG ทีละขั้น**\n1. pH 7.29 → **acidemia**\n2. HCO3 ต่ำ (12) และ PaCO2 ต่ำ (26) เปลี่ยนไปทิศเดียวกัน → ตัวตั้งต้นคือ **metabolic acidosis** (PaCO2 ต่ำเป็นการชดเชย)\n3. **Anion gap** = 138 − (116 + 12) = **10** → ปกติ (albumin 4.0 ไม่ต้อง correct)\n4. **Winter's formula**: PaCO2 ที่คาด = 1.5 × 12 + 8 = 26 ± 2 → **24–28**; ค่าจริง 26 อยู่ในช่วง → **ชดเชยพอดี ไม่มีความผิดปกติทางหายใจซ้อน**\n5. **Urine anion gap** = UNa + UK − UCl = 30 + 25 − 75 = **−20** (ติดลบ) → ไตขับ NH4⁺ (ซึ่งพา Cl⁻ ออกมาด้วย) ได้ดี = ไตตอบสนองถูกต้อง → สาเหตุอยู่ **นอกไต (GI loss)** ไม่ใช่ RTA\n\n| PaCO2 จริงเทียบ Winter's (24–28) | ความหมาย |\n|---|---|\n| อยู่ในช่วง | ชดเชยพอดี (simple metabolic acidosis) |\n| สูงกว่าช่วง (> 28) | มี respiratory acidosis ซ้อน (หายใจไม่พอ เช่น กล้ามเนื้ออ่อนแรงจาก K ต่ำมาก, ซึม) |\n| ต่ำกว่าช่วง (< 24) | มี respiratory alkalosis ซ้อน (sepsis, salicylate, ตับวาย) |\n\n**ทำไมตัวลวงผิด**\n- **High AG metabolic acidosis**: AG = 10 ไม่สูง — ท้องเสียจะกลายเป็น high AG ก็ต่อเมื่อขาดน้ำจนช็อกเกิด lactic acidosis หรือไตวายรุนแรง แต่ lactate 1.5 และ Cr 1.2\n- **ร่วมกับ respiratory acidosis**: ต้องมี PaCO2 > 28 จึงจะบอกว่าหายใจชดเชยไม่พอ\n- **ร่วมกับ respiratory alkalosis**: ต้องมี PaCO2 < 24 — ค่าจริง 26 ยังอยู่ในช่วงคาด\n- **Primary respiratory alkalosis**: ถ้าตัวตั้งต้นเป็น respiratory alkalosis pH ต้อง **> 7.40 (alkalemia)** เพราะการชดเชยไม่เคยเกินจนพลิกทิศ pH; โจทย์ pH เป็น acidemia\n\n> หมายเหตุจาก recall: ต้นฉบับจดไว้เพียง \"Metabolic acidosis\" จำโจทย์และตัวเลขจริงไม่ได้ — ข้อนี้จึงสร้างใหม่ให้ครอบคลุมขั้นตอนแปลผล (AG, Winter's, urine AG) ที่ข้อสอบแนวนี้มักถาม",
+  "pearl": "ท้องเสียรุนแรง = เสีย HCO3 → normal AG metabolic acidosis + K ต่ำ + urine anion gap ติดลบ; ถ้า urine AG เป็นบวกในภาวะเดียวกันให้นึกถึง distal RTA",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 22 — Metabolic acidosis",
+   "Harrison's Principles of Internal Medicine 21e – Acidosis and alkalosis"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "B9.2.5(2)",
+   "B9.1.2(6)",
+   "3.3.17",
+   "B9.3(5)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-30",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Hyperkalaemia with ECG changes – first step",
+  "stem": "A 70-year-old man with chronic kidney disease (eGFR 22 mL/min/1.73 m²) and heart failure takes enalapril and spironolactone, and recently started ibuprofen for knee pain. He presents with generalised weakness. BP 130/70 mmHg, PR 48/min. Repeated non-haemolysed serum potassium is 7.0 mEq/L; Na 136 mEq/L, creatinine 3.8 mg/dL. ECG shows tall peaked T waves, absent P waves and a QRS duration of 150 ms. Which of the following is the most appropriate immediate first step?",
+  "choices": [
+   "IV 10% calcium gluconate 10 mL over 2–3 minutes",
+   "IV regular insulin 10 units with 50% glucose 50 mL",
+   "Nebulised salbutamol 10–20 mg",
+   "Oral sodium polystyrene sulfonate 30 g",
+   "Urgent haemodialysis as the first intervention"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: resting membrane potential (RMP) ของเซลล์กล้ามเนื้อหัวใจถูกกำหนดโดยสัดส่วน K ในเซลล์/นอกเซลล์ (Nernst) — เมื่อ K นอกเซลล์สูง **RMP จะเป็นลบน้อยลง** ช่วงแรกเซลล์ไวต่อการกระตุ้น (T สูงแหลมจาก repolarization เร็ว) แต่ต่อมา **fast Na channel ถูก inactivate** → การนำไฟฟ้าช้าลง → P หาย, **QRS กว้าง**, sine wave → VF/asystole\n\n**Calcium** ไม่ได้ลด K แต่ทำให้ **threshold potential เป็นลบน้อยลง** → คืนระยะห่างระหว่าง RMP กับ threshold → **membrane stabilization** ภายใน 1–3 นาที อยู่ได้ 30–60 นาที จึงเป็น **ขั้นแรกทันทีเมื่อมี ECG เปลี่ยน** (โดยเฉพาะ QRS กว้าง/P หาย/หัวใจเต้นช้า) แล้วจึงตามด้วยการย้าย K เข้าเซลล์และการเอา K ออกจากร่างกาย\n\n| ขั้น | ยา | เริ่มออกฤทธิ์ | ลด K |\n|---|---|---|---|\n| 1. Stabilize | 10% Ca gluconate 10 mL IV (ซ้ำได้ถ้า ECG ไม่ดีขึ้นใน 5 นาที) | 1–3 นาที | ไม่ลด |\n| 2. Shift | insulin 10 U + glucose 25–50 g; salbutamol 10–20 mg พ่น | 15–30 นาที | ~0.6–1.0 mEq/L |\n| 3. Remove | loop diuretic, K binder (SPS, patiromer, SZC), **hemodialysis** | ชั่วโมง–วัน (HD เร็วสุดเมื่อเริ่มได้) | ลด total body K จริง |\n\n**ทำไมตัวลวงผิด**\n- **Insulin + glucose**: ถูกต้องและต้องให้ **ตามมาทันที** แต่ใช้เวลา 15–30 นาทีกว่าจะลด K — ไม่ได้ป้องกันหัวใจในนาทีแรก เมื่อ QRS กว้างต้องให้ Ca ก่อน\n- **Salbutamol**: ย้าย K เข้าเซลล์ผ่าน β2 → Na-K-ATPase แต่ต้องใช้ขนาดสูงและผู้ป่วยไตเสื่อมราว 1 ใน 3 ไม่ตอบสนอง ใช้เป็นตัวเสริม insulin\n- **Sodium polystyrene sulfonate**: ออกฤทธิ์ช้าหลายชั่วโมง–วัน และเสี่ยง colonic necrosis — ไม่ใช่ยาฉุกเฉิน\n- **Hemodialysis เป็นขั้นแรก**: เป็นวิธีเอา K ออกที่ดีที่สุดในผู้ป่วย CKD G4 และควรเตรียมคู่ขนาน แต่ต้องใช้เวลาใส่สายและเตรียมเครื่อง ระหว่างนั้นหัวใจอาจหยุดเต้น — ให้ Ca ก่อนเสมอ\n\nอย่าลืมหยุดยาที่เป็นต้นเหตุ (enalapril, spironolactone, ibuprofen) และติดตาม ECG monitor ตลอด",
+  "pearl": "K สูงที่มี ECG เปลี่ยน ให้ IV calcium ก่อนเสมอ เพื่อปกป้องหัวใจ (ไม่ได้ลด K) แล้วจึง shift ด้วย insulin–glucose และ remove ด้วย dialysis/binder",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 30 — K 7 ->  IV calcium",
+   "UK Kidney Association Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults (2020)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.15",
+   "B9.2.5(2)",
+   "3.1.12",
+   "B9.4(2)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-31",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Hypovolaemic hyponatraemia without severe symptoms – fluid choice",
+  "stem": "A 62-year-old woman has had 4 days of vomiting and diarrhoea from acute gastroenteritis; the vomiting stopped this morning. She complains of fatigue and dizziness on standing. She is alert and fully oriented, with no headache, confusion or seizure. Lips and tongue are dry. BP 102/64 mmHg (PR 96/min) supine, falling to 84/56 mmHg (PR 118/min) on standing. Serum Na 112 mEq/L, K 3.2 mEq/L, BUN 28 mg/dL, creatinine 1.3 mg/dL, glucose 90 mg/dL, measured serum osmolality 238 mOsm/kg. Urine osmolality 480 mOsm/kg, urine Na 12 mEq/L. Which of the following is the most appropriate initial management?",
+  "choices": [
+   "IV 0.9% NaCl, limiting the rise in Na to ≤8–10 mEq/L in 24 hours",
+   "IV 3% NaCl 100 mL bolus, repeated up to three times",
+   "Fluid restriction to 800 mL per day",
+   "Oral tolvaptan 15 mg once daily",
+   "IV 5% dextrose in water to replace the fluid deficit"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: ภาวะ volume depletion กระตุ้น baroreceptor → หลั่ง **ADH แบบ non-osmotic** ซึ่ง \"ชนะ\" สัญญาณ hypo-osmolality → ไตเก็บน้ำอิสระ ขณะที่ผู้ป่วยดื่ม/ได้น้ำที่ hypotonic → **Na ต่ำ** ไตยังทำงานถูกต้องคือ **ดูด Na กลับเต็มที่ (urine Na 12 < 20)** บอกว่าเสีย Na ทาง **นอกไต (GI)** ไม่ใช่ทางไต (เช่น diuretic, adrenal insufficiency)\n\nการรักษาที่ตรงกลไกคือ **คืน volume ด้วย isotonic saline** → baroreceptor หยุดกระตุ้น ADH → ปัสสาวะเจือจาง (aquaresis) → Na ขึ้นเอง\n**จุดอันตราย**: เมื่อ ADH ถูกปิด Na อาจขึ้นเร็วเกิน → **osmotic demyelination syndrome** — จำกัดการแก้ไม่เกิน **8–10 mEq/L ใน 24 ชม.** (≤ 8 ถ้าเสี่ยงสูง: Na ≤ 105, K ต่ำ, สุรา, ขาดอาหาร, โรคตับ) ตรวจ Na ทุก 2–4 ชม. และดูปริมาณปัสสาวะ ถ้าเกินให้ D5W ± desmopressin เพื่อดึงกลับ (ผู้ป่วยรายนี้ K ต่ำด้วย ต้องเสริม K ซึ่งก็ทำให้ Na ขึ้นได้ ต้องนับรวม)\n\n| ภาวะ volume | urine Na | ตัวอย่าง | การรักษาหลัก |\n|---|---|---|---|\n| Hypovolemic | < 20 | ท้องเสีย อาเจียน | **0.9% NaCl** |\n| Hypovolemic | > 20 | diuretic, adrenal insufficiency, salt-wasting | 0.9% NaCl + แก้สาเหตุ |\n| Euvolemic | > 30 | SIADH, hypothyroid, glucocorticoid deficiency | fluid restriction, salt tab, (tolvaptan) |\n| Hypervolemic | < 20 | HF, cirrhosis, nephrotic | จำกัดน้ำ/เกลือ + diuretic |\n\n**ทำไมตัวลวงผิด**\n- **3% NaCl bolus**: สงวนไว้สำหรับ **อาการรุนแรงหรือค่อนข้างรุนแรง** จากสมองบวม (ชัก ซึมลึก โคม่า อาเจียนจากสมองบวม สับสน ปวดศีรษะ) — ผู้ป่วยรายนี้รู้ตัวดี อาเจียนมาจากลำไส้อักเสบและหยุดแล้ว ภาวะนี้น่าจะเรื้อรังกว่า 48 ชม. การให้ hypertonic เพิ่มเสี่ยง overcorrection โดยไม่จำเป็น\n- **Fluid restriction**: เป็นการรักษา SIADH (euvolemic) — ในผู้ป่วยขาดน้ำจะยิ่งทำให้ volume ลด ADH ยิ่งหลั่ง และเสี่ยงไตวาย\n- **Tolvaptan**: vasopressin V2 antagonist **ห้ามใช้ใน hypovolemic hyponatremia** — ทำให้เสียน้ำเพิ่มและ Na ขึ้นเร็วเกินคุม\n- **5% dextrose in water**: เท่ากับให้ **น้ำอิสระ** (กลูโคสถูกเผาผลาญหมด) → ADH ยังสูง → Na ยิ่งต่ำลง\n\n> หมายเหตุ: ถ้ามีข้อสงสัยว่ามีอาการทางสมองรุนแรงจริง (เช่น ซึมลงหรือชัก) แนวทางยุโรปให้ 3% NaCl 150 mL ก่อนเสมอไม่ว่า volume status จะเป็นอย่างไร — โจทย์จึงต้องอ่านอาการทางระบบประสาทให้ดี",
+  "pearl": "Hypovolemic hyponatremia ที่ไม่มีอาการทางสมองรุนแรง ให้ 0.9% NaCl แต่ต้องเฝ้าระวัง Na ขึ้นเร็วเกินเมื่อ volume กลับมา (ADH ถูกปิด) — จำกัด ≤ 8–10 mEq/L ต่อ 24 ชม.",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 31 — Vomit, dry lip, Na 112 - Isotonic crystalloid",
+   "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014",
+   "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "B9.2.5(2)",
+   "B9.4(2)",
+   "B9.3(3)",
+   "B9.1.2(5)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-41",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Minimal change disease – mechanism of proteinuria",
+  "stem": "A 24-year-old man develops generalised oedema over 2 weeks. Urinalysis shows protein 4+ without haematuria; 24-hour urine protein is 9 g, serum albumin 1.6 g/dL, total cholesterol 410 mg/dL, creatinine 0.9 mg/dL, C3 normal. Kidney biopsy: glomeruli appear normal on light microscopy, immunofluorescence is negative, and electron microscopy shows diffuse effacement of podocyte foot processes without electron-dense deposits. Which of the following best explains his proteinuria?",
+  "choices": [
+   "Diffuse podocyte injury disrupting the slit diaphragm and charge barrier",
+   "Subepithelial immune-complex deposits activating complement",
+   "Mesangial deposition of galactose-deficient IgA1",
+   "Defective type IV collagen causing GBM splitting",
+   "Non-enzymatic glycation thickening the glomerular basement membrane"
+  ],
+  "answer": 0,
+  "explain": "**กลไก — glomerular filtration barrier มี 3 ชั้น**: (1) fenestrated endothelium (2) **GBM** ที่มี heparan sulfate ประจุลบ (3) **podocyte foot processes** ที่ยึดกันด้วย **slit diaphragm** (nephrin, podocin) — ชั้นที่สำคัญที่สุดต่อการกั้นโปรตีนคือ podocyte/slit diaphragm\n\nใน **minimal change disease (MCD)**: ความผิดปกติของ T cell / circulating permeability factor (ปัจจุบันพบ **anti-nephrin antibody** ในผู้ป่วยส่วนหนึ่ง) → **podocyte บาดเจ็บทั่วทุก glomerulus** → foot process แผ่แบน (effacement) สูญเสีย slit diaphragm และประจุลบ → **albumin (ประจุลบ ขนาดเล็ก) รั่วเป็นหลัก = selective proteinuria** → nephrotic syndrome ที่ไม่มี hematuria และไตยังทำงานปกติ\nเพราะการบาดเจ็บอยู่ที่ระดับ ultrastructure จึง **LM ปกติ, IF ลบ (ไม่มี immune complex), เห็นเฉพาะใน EM** — และตอบสนองดีต่อ steroid\n\n| โรค | LM | IF | EM | กลไก |\n|---|---|---|---|---|\n| **MCD** | ปกติ | ลบ | diffuse foot process effacement | podocytopathy |\n| FSGS | sclerosis บางส่วนของบาง glomeruli | ลบ/IgM, C3 ในรอยแผล | effacement | podocytopathy + scar |\n| Membranous | GBM หนา, spike | granular IgG, C3 | subepithelial deposits | anti-PLA2R → C5b-9 |\n| IgA nephropathy | mesangial proliferation | mesangial IgA | mesangial deposits | Gd-IgA1 immune complex |\n| Alport | ไม่จำเพาะ | ลบ | GBM แตกเป็นชั้น (basket-weave) | type IV collagen (COL4A5) |\n| Diabetic | GBM หนา, Kimmelstiel–Wilson nodule | linear IgG แบบไม่จำเพาะ | GBM หนา | AGEs, hyperfiltration |\n\n**ทำไมตัวลวงผิด**\n- **Subepithelial immune complex**: คือ membranous nephropathy — LM จะเห็น GBM หนา และ IF ต้องบวก granular IgG/C3 และ EM ต้องเห็น electron-dense deposits\n- **Mesangial Gd-IgA1**: คือ IgA nephropathy — มักมาด้วย hematuria และ IF ต้องเห็น IgA ใน mesangium\n- **Type IV collagen ผิดปกติ**: Alport — hematuria เรื้อรัง หูหนวก ประวัติครอบครัว EM เห็น GBM แตกเป็นชั้น ไม่ใช่ GBM ปกติ\n- **Non-enzymatic glycation**: diabetic nephropathy — ต้องมีเบาหวานนานและ LM ผิดปกติชัดเจน\n\n> foot process effacement พบได้ในโรค nephrotic ทุกชนิด (เป็นผลของ proteinuria หนัก) แต่ **effacement แบบ diffuse + LM ปกติ + IF ลบ** คือรูปแบบของ MCD",
+  "pearl": "MCD = podocytopathy: LM ปกติ, IF ลบ, EM เห็น foot process effacement แบบ diffuse และตอบสนองต่อ steroid ดีมาก",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 41 — Proteinuria, Light microscope ไม่เจอความผิดปกติ, Podocyte effacement mechanism?- podocyte เสีย",
+   "Robbins & Cotran Pathologic Basis of Disease 10e – The Kidney",
+   "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "B9.2.2(4)",
+   "2.3.14(12)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-42",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Synpharyngitic gross haematuria – IgA nephropathy vs PSGN",
+  "stem": "A 21-year-old man has had fever and sore throat for 5 days. On the second day of the sore throat he noticed red-brown urine, \"like water used to wash meat\". He had a similar episode of dark urine during a cold one year ago. He has no rash, joint pain, abdominal pain or hearing problem, and no family history of kidney disease. BP 130/80 mmHg. Urinalysis: RBC > 50/HPF, mostly dysmorphic, a few RBC casts, protein 1+. Creatinine 1.0 mg/dL, C3 110 mg/dL (normal), ASO titre normal. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "IgA nephropathy",
+   "Post-streptococcal glomerulonephritis",
+   "IgA vasculitis (Henoch–Schönlein purpura)",
+   "Alport syndrome",
+   "Thin basement membrane nephropathy"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: IgA nephropathy เกิดจาก **IgA1 ที่ขาดน้ำตาล galactose (Gd-IgA1)** → ร่างกายสร้าง IgG autoantibody ต่อ Gd-IgA1 → เกิด **immune complex ที่ไปตกใน mesangium** → mesangial proliferation และกระตุ้น complement ทาง alternative/lectin pathway (C3 ในเลือดจึง **ปกติ**) → glomerular hematuria\nการติดเชื้อที่เยื่อบุ (คอหอย ทางเดินอาหาร) กระตุ้นการสร้าง IgA ทันที → **ปัสสาวะเป็นเลือดเกิด \"ระหว่าง\" ที่ยังเจ็บคอ ภายใน 1–2 วัน (synpharyngitic hematuria)** และเป็นซ้ำได้ทุกครั้งที่ติดเชื้อ\n\nต่างจาก **PSGN** ที่ต้องใช้เวลาสร้าง antibody ต่อ streptococcal antigen และเกิด immune complex → มี **ระยะแฝง 1–3 สัปดาห์หลังคออักเสบ (3–6 สัปดาห์หลัง impetigo)** และ **C3 ต่ำ** (classical/alternative pathway ถูกใช้)\n\n| | IgA nephropathy | PSGN | IgA vasculitis | Alport | Thin BM |\n|---|---|---|---|---|---|\n| ช่วงเวลาหลังติดเชื้อ | **1–2 วัน (พร้อมกัน)** | 1–3 สัปดาห์ | หลังติดเชื้อได้ | – | – |\n| C3 | ปกติ | **ต่ำ** (กลับปกติใน 8 สัปดาห์) | ปกติ | ปกติ | ปกติ |\n| อาการนอกไต | ไม่มี | บวม ความดันสูง | **purpura ที่ขา, ปวดข้อ, ปวดท้อง** | **หูหนวก, เลนส์ตาผิดปกติ** | ไม่มี |\n| เป็นซ้ำ | **ซ้ำได้บ่อย** | ไม่ค่อยซ้ำ | ซ้ำได้ | เรื้อรัง ค่อย ๆ แย่ | microscopic hematuria คงที่ |\n\n**ทำไมตัวลวงผิด**\n- **PSGN**: ระยะเวลาไม่เข้า (เลือดออกวันที่ 2 ของคออักเสบ) C3 ปกติ ASO ปกติ และเป็นซ้ำ — ไม่เข้ากับ PSGN\n- **IgA vasculitis**: พยาธิสภาพในไตเหมือน IgAN แต่เป็น **systemic small-vessel vasculitis** ต้องมี palpable purpura ± ปวดข้อ/ปวดท้อง ซึ่งโจทย์ระบุว่าไม่มี\n- **Alport syndrome**: X-linked type IV collagen defect มี hematuria เรื้อรัง + **sensorineural hearing loss** + ประวัติครอบครัว — โจทย์ไม่มีทั้งสอง\n- **Thin basement membrane nephropathy**: มัก microscopic hematuria คงที่ในครอบครัว ไม่ค่อยมี gross hematuria ที่สัมพันธ์กับการติดเชื้อ และไม่มี RBC cast\n\n> หมายเหตุจาก recall: ต้นฉบับจด \"ไข้ 5 วัน, เจ็บคอ ฉี่สีน้ำล้างเนื้อ - IgA\" — โจทย์เขียนให้ชัดว่าปัสสาวะเป็นเลือด **ระหว่าง** ที่ยังเจ็บคอ ซึ่งเป็นจุดแยกจาก PSGN",
+  "pearl": "ปัสสาวะเป็นเลือดภายใน 1–2 วันของคออักเสบ + C3 ปกติ = IgA nephropathy; ถ้าห่าง 1–3 สัปดาห์ + C3 ต่ำ = PSGN",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 42 — ไข้5วัน, เจ็บคอ ฉี่สีน่ำล้างเนื้อ - IgA",
+   "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases – IgA nephropathy"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.14(2)",
+   "2.3.14-3(1)",
+   "B9.2.2(3)",
+   "B9.3(2)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-43",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "Rapidly progressive glomerulonephritis – recognising the syndrome",
+  "stem": "A 60-year-old woman had a serum creatinine of 1.0 mg/dL at a health check 6 weeks ago. She now presents with fatigue, poor appetite and ankle oedema. She has taken no new medications and has had no hypotension or contrast exposure. BP 160/95 mmHg. Creatinine 4.5 mg/dL, BUN 62 mg/dL, albumin 3.5 g/dL. Urinalysis: protein 2+, RBC 30–50/HPF with dysmorphic forms and RBC casts; no WBC casts. Urine protein-to-creatinine ratio 1.8 g/g. Ultrasound shows both kidneys 11 cm with normal echogenicity. Which of the following is the most likely clinical syndrome?",
+  "choices": [
+   "Rapidly progressive glomerulonephritis",
+   "Acute tubular necrosis",
+   "Acute interstitial nephritis",
+   "Chronic glomerulonephritis",
+   "Nephrotic syndrome"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: การอักเสบของ glomerulus ที่รุนแรงทำให้ **GBM และ Bowman capsule ฉีกขาด** → fibrin, macrophage และ cytokine รั่วเข้า Bowman space → parietal epithelial cell แบ่งตัว → **crescent** → บีบ glomerular tuft → GFR ลดลงอย่างรวดเร็วใน **หลายวันถึงหลายสัปดาห์ (ไม่เกิน 3 เดือน)** ร่วมกับ **active (nephritic) sediment**: dysmorphic RBC และ **RBC cast**\n\nโจทย์นี้มีครบ: Cr 1.0 → 4.5 ใน 6 สัปดาห์ + RBC cast + proteinuria ระดับ sub-nephrotic + ไตขนาดปกติ (ไม่ใช่โรคเรื้อรัง) = **RPGN** ซึ่งเป็น **ภาวะเร่งด่วน** ต้องส่ง ANCA, anti-GBM, C3/C4, ANA และทำ kidney biopsy โดยเร็ว เพื่อเริ่ม immunosuppression ก่อนไตเป็นแผลถาวร\n\n| ชนิดของ RPGN | IF | ตัวอย่าง |\n|---|---|---|\n| Type I anti-GBM | **linear** IgG | anti-GBM disease, Goodpasture |\n| Type II immune complex | **granular** | lupus, IgAN, PSGN, IgA vasculitis |\n| Type III pauci-immune | น้อยหรือไม่มี | **ANCA vasculitis** (GPA, MPA) — พบบ่อยสุดในผู้สูงอายุ |\n\n| กลุ่มอาการ | ระยะเวลาที่ไตเสื่อม | ขนาดไต |\n|---|---|---|\n| Acute GN | วัน | ปกติ |\n| **RPGN** | **สัปดาห์–3 เดือน** | ปกติ |\n| Chronic GN | หลายเดือน–ปี | **เล็ก echogenicity สูง** |\n\n**ทำไมตัวลวงผิด**\n- **Acute tubular necrosis**: ต้องมี insult (hypotension, ยา/สารทึบรังสี) และ sediment เป็น **muddy brown granular cast** ไม่ใช่ RBC cast\n- **Acute interstitial nephritis**: มักมียาใหม่ ไข้ ผื่น eosinophilia และ sediment เป็น **WBC cast**, sterile pyuria\n- **Chronic glomerulonephritis**: ไตเสื่อมช้าเป็นเดือน–ปี ไตเล็กและ echogenic มี broad waxy cast — โจทย์มี baseline ปกติเมื่อ 6 สัปดาห์ก่อนและไตขนาดปกติ\n- **Nephrotic syndrome**: ต้องมีโปรตีน > 3.5 g/วัน, albumin < 3.0 และ sediment มักไม่ active — โจทย์ UPCR 1.8 และมี RBC cast",
+  "pearl": "Cr สูงขึ้นในหลายสัปดาห์ + RBC cast + ไตขนาดปกติ = RPGN (crescentic GN) → ส่ง ANCA/anti-GBM/C3 และ biopsy ด่วน",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 43 — ไตแย่ลง6week -> RPGN",
+   "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.14(2)",
+   "B9.2.7(1)",
+   "B9.3(2)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-49",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "IgA nephropathy with proteinuria – initial management",
+  "stem": "A 30-year-old man has biopsy-proven IgA nephropathy (mesangial hypercellularity only; no crescents). He takes no medication. BP 138/88 mmHg, eGFR 75 mL/min/1.73 m², 24-hour urine protein 1.2 g, serum albumin 3.9 g/dL, urine RBC 10–20/HPF. Which of the following is the most appropriate initial management?",
+  "choices": [
+   "Start an ACE inhibitor or ARB, titrated to the maximum tolerated dose",
+   "High-dose oral prednisolone alone for 6 months",
+   "IV cyclophosphamide pulses with glucocorticoids",
+   "Amlodipine titrated to a BP below 130/80 mmHg",
+   "No drug therapy; repeat urine protein in 12 months"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: โปรตีนที่รั่วผ่าน glomerulus เป็นตัวทำลายไตเอง (proximal tubule ดูดโปรตีนกลับมากเกิน → อักเสบและ fibrosis) และ **intraglomerular hypertension** ทำให้ glomerulus ที่เหลือพังเร็วขึ้น **ACEI/ARB** ขยาย efferent arteriole → ลดความดันใน glomerulus → **ลด proteinuria ~30–40% โดยไม่ขึ้นกับการลด BP** และชะลอการเสื่อมของไต\n\nKDIGO (2021 และ IgAN guideline 2025): ผู้ป่วย IgAN ที่มี **proteinuria > 0.5 g/วัน** ให้ **ACEI หรือ ARB ปรับถึงขนาดสูงสุดที่ทนได้** เป็นแกนหลักของ supportive care ทุกคน ร่วมกับคุม BP, ลดเกลือ, งดบุหรี่ เป้าหมายโปรตีน < 0.5 g/วัน (ดีที่สุด < 0.3 g/วัน) ตรวจ K และ Cr ใน 2–4 สัปดาห์หลังเริ่ม/เพิ่มยา (Cr ขึ้นได้ไม่เกิน 30%)\n\n**ทำไมตัวลวงผิด**\n- **Prednisolone ขนาดสูงเดี่ยว ๆ**: KDIGO ให้พิจารณา glucocorticoid 6 เดือนเฉพาะผู้ที่ **ยังมี proteinuria สูงแม้ได้ supportive care เต็มที่** และต้องชั่งกับผลข้างเคียง (TESTING trial พบติดเชื้อรุนแรงเพิ่ม) — ไม่ใช่การรักษาเริ่มต้น และไม่ใช่การให้ \"แทน\" RAS blockade\n- **Cyclophosphamide + steroid**: สงวนไว้สำหรับ **crescentic IgAN ที่มาแบบ RPGN** — ผู้ป่วยรายนี้ไม่มี crescent และไตปกติ\n- **Amlodipine**: ลด BP ได้ แต่ dihydropyridine CCB ขยาย afferent arteriole → **ไม่ลด intraglomerular pressure และไม่ลด proteinuria** — ถ้าต้องใช้ ให้เป็นยาตัวที่สองหลัง RAS blocker\n- **ไม่ให้ยา รอ 12 เดือน**: proteinuria 1.2 g/วัน เป็นปัจจัยเสี่ยงสำคัญที่สุดต่อการเข้าสู่ ESKD — ปล่อยไว้เท่ากับเสียเนฟรอนไปเปล่า ๆ\n\n> หมายเหตุ: แนวทาง KDIGO 2025 ให้รักษา \"สองทาง\" พร้อมกัน — ลดการเสียเนฟรอน (RAS blocker เต็มขนาด ± SGLT2 inhibitor) และในผู้เสี่ยงสูงพิจารณายาที่จัดการกลไกภูมิคุ้มกันของ IgAN (เช่น targeted-release budesonide) แต่ทุกทางเลือกยังวางบน RAS blockade เต็มขนาด",
+  "pearl": "IgAN ที่มีโปรตีน > 0.5 g/วัน ให้ ACEI/ARB จนถึงขนาดสูงสุดที่ทนได้ก่อนเสมอ เพราะลด intraglomerular pressure และ proteinuria ได้เกินกว่าผลลด BP",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 49 — IgA nephropathy ทำอะไรต่อ -> ACEI",
+   "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases – Chapter 2 IgA nephropathy",
+   "KDIGO 2025 Clinical Practice Guideline for the Management of IgA Nephropathy and IgA Vasculitis"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.14-3(1)",
+   "B9.2.7(2)",
+   "B9.1.2(2)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-66",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "CKD staging by GFR and albuminuria categories",
+  "stem": "A 64-year-old man with type 2 diabetes is reviewed in clinic. His eGFR was 43 and 42 mL/min/1.73 m² on two occasions 4 months apart, and his spot urine albumin-to-creatinine ratio was 450 and 470 mg/g on the same occasions. Kidney ultrasound shows normal-sized kidneys without obstruction. According to KDIGO, which of the following is his CKD classification?",
+  "choices": [
+   "G3b A3",
+   "G3a A3",
+   "G3b A2",
+   "G3a A2",
+   "G4 A3"
+  ],
+  "answer": 0,
+  "explain": "**หลักการ**: CKD = ความผิดปกติของโครงสร้างหรือการทำงานของไต **นานกว่า 3 เดือน** (โจทย์ยืนยันแล้วด้วยค่าสองครั้งห่าง 4 เดือน) และจำแนกด้วย **CGA = Cause, GFR category, Albuminuria category** เพราะทั้ง GFR ที่ต่ำลงและ albuminuria ที่สูงขึ้น **ต่างเพิ่มความเสี่ยงอย่างอิสระ** ต่อ ESKD, การเสียชีวิตและโรคหัวใจ\n\n| G | eGFR (mL/min/1.73 m²) |\n|---|---|\n| G1 | ≥ 90 |\n| G2 | 60–89 |\n| G3a | 45–59 |\n| **G3b** | **30–44** |\n| G4 | 15–29 |\n| G5 | < 15 |\n\n| A | UACR (mg/g) | ชื่อเดิม |\n|---|---|---|\n| A1 | < 30 | ปกติ–เพิ่มเล็กน้อย |\n| A2 | 30–300 | microalbuminuria |\n| **A3** | **> 300** | macroalbuminuria |\n\neGFR 42 → **G3b**; UACR 450 → **A3** → **CKD G3b A3** (จาก diabetic kidney disease) ซึ่งอยู่ในช่อง **\"very high risk\" (สีแดง)** ของ KDIGO heat map → ควรส่งพบอายุรแพทย์โรคไต ให้ RAS blocker เต็มขนาด + **SGLT2 inhibitor** ± finerenone, คุม BP และติดตาม eGFR/UACR อย่างน้อย 3 ครั้งต่อปี\n\n**ทำไมตัวลวงผิด**\n- **G3a A3**: G3a คือ 45–59 — eGFR 42 ต่ำกว่า 45 แล้ว\n- **G3b A2 / G3a A2**: A2 คือ 30–300 mg/g — UACR 450 เกิน 300 จึงเป็น A3 (มักสับสนเพราะจำตัดที่ 30 อย่างเดียว)\n- **G4 A3**: G4 เริ่มที่ eGFR < 30",
+  "pearl": "จำเลขตัด: G3a 45–59, G3b 30–44, G4 15–29; A2 = UACR 30–300, A3 > 300 mg/g — ต้องรายงานทั้ง G และ A เสมอ",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 66 — Staging CKD egfr 42, albumin 450 —> 3ba3",
+   "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.14(3)",
+   "B9.2.7(2)",
+   "B9.3(4)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-73",
+  "lec": "K03",
+  "lecture": "ลงกอง 3 · Nephrology & electrolytes",
+  "topic": "PLA2R-negative membranous nephropathy in an older adult",
+  "stem": "A 66-year-old man who has smoked 40 pack-years presents with 2 months of leg oedema and an unintentional weight loss of 3 kg. Urine protein-to-creatinine ratio is 8 g/g, serum albumin 2.1 g/dL, total cholesterol 320 mg/dL, creatinine 1.1 mg/dL. Kidney biopsy shows membranous nephropathy with granular IgG and C3 along the capillary walls; glomerular PLA2R staining and serum anti-PLA2R antibody are both negative. HBsAg, anti-HCV, anti-HIV and ANA are negative, and he has not used NSAIDs. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Age-appropriate screening for an underlying malignancy",
+   "Start rituximab for primary membranous nephropathy",
+   "Start cyclophosphamide with glucocorticoids (modified Ponticelli)",
+   "Start high-dose prednisolone monotherapy",
+   "Repeat the kidney biopsy in 3 months"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: membranous nephropathy (MN) เกิดจาก **immune complex ที่ตกใต้ podocyte (subepithelial)** → กระตุ้น complement จนเกิด **C5b-9 (membrane attack complex)** ที่ podocyte → podocyte บาดเจ็บ → nephrotic syndrome\n- **Primary MN (~70–80%)**: antibody (ส่วนใหญ่ IgG4) ต่อ **PLA2R** บน podocyte เอง (THSD7A ส่วนน้อย)\n- **Secondary MN**: antigen มาจากที่อื่นแล้วไปตกใต้ podocyte — **มะเร็ง (solid tumor: ปอด ลำไส้ใหญ่ ต่อมลูกหมาก เต้านม กระเพาะ)**, ติดเชื้อ (HBV, HCV, syphilis), SLE class V, ยา (NSAID, gold, penicillamine)\n\nผู้ป่วยรายนี้ **PLA2R ลบทั้งในเลือดและในเนื้อไต + อายุ > 60 + สูบบุหรี่หนัก + น้ำหนักลด** และตัดสาเหตุติดเชื้อ/SLE/ยาออกแล้ว → ต้องนึกถึง **malignancy-associated MN** มากที่สุด (ในผู้สูงอายุพบมะเร็งได้ราว 10% และมักตรวจพบภายใน 1 ปีหลังวินิจฉัย MN) → ทำ **age-appropriate cancer screening** เช่น CT chest (ผู้สูบบุหรี่), colonoscopy, PSA ฯลฯ ถ้าพบมะเร็งแล้วรักษามะเร็ง proteinuria มักดีขึ้นตาม ส่วนระหว่างนี้ให้ supportive care (RAS blocker, diuretic, statin, พิจารณา anticoagulant ถ้า albumin ต่ำมาก)\n\n**ทำไมตัวลวงผิด**\n- **Rituximab** และ **cyclophosphamide + steroid**: เป็นการรักษา **primary MN** ที่เสี่ยงปานกลาง–สูง แต่ KDIGO ระบุว่าต้อง **ตัด secondary cause ก่อน** — การกดภูมิในผู้ที่มีมะเร็งแฝงอยู่ทำให้พลาดการวินิจฉัยและอาจเร่งโรค และ cyclophosphamide เองเพิ่มความเสี่ยงมะเร็ง\n- **Prednisolone เดี่ยว**: steroid อย่างเดียว **ไม่ได้ผลใน MN** (ต่างจาก MCD) ไม่ว่า primary หรือ secondary\n- **Biopsy ซ้ำ**: biopsy แรกให้คำตอบครบแล้ว การทำซ้ำไม่ได้ช่วยหาสาเหตุ สิ่งที่ขาดคือการค้นหามะเร็ง\n\n> เบาะแสเพิ่มใน biopsy ที่บ่งชี้ secondary MN: IgG1/IgG2 เด่นแทน IgG4, มี mesangial/subendothelial deposits, เซลล์อักเสบใน glomerulus มาก",
+  "pearl": "MN ในผู้สูงอายุที่ anti-PLA2R ลบ ให้คิดถึง secondary MN โดยเฉพาะมะเร็ง — คัดกรองมะเร็งก่อนเริ่มยากดภูมิ",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 73 — MN > ตรวจมะเร็ง",
+   "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases – Membranous nephropathy"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.14(12)",
+   "B9.2.2(4)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-01",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Physical activity prescription in type 2 diabetes",
+  "stem": "A 55-year-old man with type 2 diabetes for 3 years takes metformin; HbA1c is 7.4%. His BMI is 22 kg/m². He jogs slowly — at a pace at which he can still talk comfortably — for 20 minutes, 5 days a week, and does no other exercise. He has no retinopathy, neuropathy or cardiovascular disease. Which of the following is the most appropriate advice about physical activity?",
+  "choices": [
+   "Increase moderate aerobic activity to ≥150 min/week and add resistance training 2–3 days/week",
+   "Continue the current routine, since 100 minutes a week is enough for someone with a normal BMI",
+   "Aim for 5–7% weight loss first, then increase the amount of exercise",
+   "Replace jogging with daily stretching and flexibility exercises only",
+   "Combine the 100 minutes into one long session every weekend"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: การหดตัวของกล้ามเนื้อกระตุ้น **AMPK → GLUT4 เคลื่อนขึ้นผิวเซลล์โดยไม่ต้องพึ่ง insulin** และเพิ่ม insulin sensitivity ต่อเนื่องได้ราว **24–72 ชั่วโมง** หลังออกกำลังแต่ละครั้ง ส่วน resistance training เพิ่มมวลกล้ามเนื้อซึ่งเป็นแหล่งเก็บกลูโคสหลัก → การออกกำลังกายที่พอเพียงลด HbA1c ได้ราว 0.5–0.7% และลดความเสี่ยงหัวใจ **โดยไม่ขึ้นกับว่าน้ำหนักลดหรือไม่**\n\n**คำแนะนำ ADA 2025 / แนวทางเวชปฏิบัติเบาหวานไทย 2566 สำหรับผู้ใหญ่**\n- Aerobic ระดับ **moderate–vigorous รวม ≥ 150 นาที/สัปดาห์** กระจาย ≥ 3 วัน และ **ไม่หยุดติดกันเกิน 2 วัน**\n- **Resistance training 2–3 ครั้ง/สัปดาห์** (ไม่ติดกัน)\n- ลดการนั่งนาน ลุกขยับทุก 30 นาที; ผู้สูงอายุเพิ่ม flexibility/balance\n\nผู้ป่วยวิ่งช้า ๆ ที่ยังพูดคุยได้ = ความหนักระดับ moderate รวมเพียง 20 × 5 = **100 นาที/สัปดาห์ < 150** และยังไม่มี resistance training → ต้องเพิ่มทั้งสองส่วน\n\n**ทำไมตัวลวงผิด**\n- **ทำต่อเหมือนเดิมเพราะ BMI ปกติ**: เป้าหมายการออกกำลังกายในเบาหวานใช้กับทุกคน ไม่ได้ผูกกับน้ำหนัก — ประโยชน์มาจากผลต่อกล้ามเนื้อและ insulin sensitivity\n- **ลดน้ำหนัก 5–7% ก่อน**: เป้าหมายนี้ใช้กับคนที่ **น้ำหนักเกินหรืออ้วน** — BMI 22 ไม่จำเป็นต้องลดน้ำหนัก และไม่มีเหตุผลให้รอ\n- **ยืดเหยียดอย่างเดียว**: flexibility ช่วยข้อต่อและการทรงตัว แต่ **ไม่มีผลต่อระดับน้ำตาล** อย่างมีนัยสำคัญ\n- **รวบไปออกครั้งเดียวสุดสัปดาห์**: ผลเพิ่ม insulin sensitivity อยู่ได้เพียง 1–3 วัน จึงต้องกระจายและไม่เว้นเกิน 2 วันติด\n\n> หมายเหตุ: ADA ระบุว่าคนอายุน้อยที่ฟิตอาจใช้ vigorous/interval ≥ 75 นาที/สัปดาห์แทนได้ — โจทย์จึงกำหนดให้วิ่ง \"ช้า พูดได้สบาย\" (moderate) เพื่อให้เกณฑ์ 150 นาทีเป็นคำตอบเดียว",
+  "pearl": "เบาหวานทุกคน (ไม่ว่าน้ำหนักเท่าไร) ควรออกกำลังแบบ aerobic ≥ 150 นาที/สัปดาห์ กระจาย ≥ 3 วัน ไม่หยุดเกิน 2 วันติด + resistance 2–3 ครั้ง/สัปดาห์",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 01 — Dm BMI 22 วิ่งวันละ 20min 5วัน/สัปดาห์ -> increase intense physical exercise (เพิ่มการออกกำลังกายให้150 นาที/wk)",
+   "ADA Standards of Care in Diabetes—2025 – Section 5: Facilitating Positive Health Behaviors",
+   "แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-02",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Painful thyroid with low radioiodine uptake after a viral illness",
+  "stem": "A 35-year-old woman presents 2 weeks after an upper respiratory tract infection with anterior neck pain radiating to the jaw and ears, low-grade fever, palpitations and tremor. The thyroid is mildly enlarged, firm and markedly tender; there is no eye involvement. Laboratory results: TSH < 0.01 mIU/L, free T4 3.2 ng/dL (normal 0.9–1.7), ESR 85 mm/h, WBC 9,800/µL. 24-hour radioactive iodine uptake is 1% (normal 10–30%). Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Subacute granulomatous (de Quervain) thyroiditis",
+   "Graves' disease",
+   "Painless (silent) lymphocytic thyroiditis",
+   "Acute suppurative thyroiditis",
+   "Toxic multinodular goitre"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: หลังติดเชื้อไวรัส เกิด **granulomatous inflammation ทำลาย thyroid follicle** → ฮอร์โมนที่เก็บไว้ใน colloid (ส่วนใหญ่เป็น **T4**) รั่วออกมา → thyrotoxicosis ชั่วคราว 3–6 สัปดาห์ → **TSH ถูกกด** และเพราะต่อมถูกทำลาย + TSH ต่ำ ต่อมจึง **ไม่จับไอโอดีนเพื่อสร้างฮอร์โมนใหม่ → RAIU ต่ำมาก (< 5%)** จากนั้นอาจเข้าสู่ hypothyroid phase ก่อนกลับเป็นปกติในกว่า 90%\nลักษณะเฉพาะ: **ต่อมเจ็บมาก ร้าวไปขากรรไกร/หู, ไข้, ESR/CRP สูงมาก** — การรักษาคือ NSAID/aspirin (prednisolone ถ้าปวดมาก) + β-blocker; **ไม่ใช้ thionamide** เพราะไม่มีการสร้างฮอร์โมนใหม่ให้ยับยั้ง\n\n| Thyrotoxicosis | RAIU | ต่อม | เบาะแส |\n|---|---|---|---|\n| Graves | **สูง แบบ diffuse** | โตทั่ว ไม่เจ็บ มี bruit | ตาโปน, pretibial myxedema, TRAb + |\n| Toxic MNG / toxic adenoma | สูง เป็นหย่อม/ก้อนเดียว | เป็นก้อน ไม่เจ็บ | อายุมาก |\n| **Subacute thyroiditis** | **ต่ำ** | **เจ็บมาก** | หลัง URI, **ESR สูง** |\n| Painless/postpartum thyroiditis | ต่ำ | ไม่เจ็บ | หลังคลอด, anti-TPO +, ESR ปกติ |\n| Exogenous T4 | ต่ำ | ไม่โต | **thyroglobulin ต่ำ** |\n\n**ทำไมตัวลวงผิด**\n- **Graves' disease**: ต่อมสร้างฮอร์โมนมากขึ้นจาก TRAb → **RAIU สูง** และต่อมไม่เจ็บ\n- **Painless thyroiditis**: RAIU ต่ำเหมือนกัน แต่ **ต่อมไม่เจ็บและ ESR ปกติ** (เป็น lymphocytic/autoimmune)\n- **Acute suppurative thyroiditis**: ติดเชื้อแบคทีเรีย (มักผ่าน pyriform sinus fistula) ไข้สูง ปวดข้างเดียว อาจมีหนองคลำได้ WBC สูง และ **มักยัง euthyroid**\n- **Toxic multinodular goitre**: ต่อมเป็นหลายก้อน ไม่เจ็บ RAIU ปกติ–สูงแบบเป็นหย่อม\n\n> หมายเหตุจาก recall: ต้นฉบับจดว่า \"TSH ปกติ FT3 สูง FT4 ปกติ\" ซึ่ง **ไม่เข้ากับ thyrotoxic phase** ของ subacute thyroiditis — ในระยะนี้ TSH ต้องถูกกด และฮอร์โมนที่รั่วออกมาเป็น **T4 เด่น** (อัตราส่วน T4:T3 สูง ต่างจาก Graves ที่ T3 เด่น) TSH ปกติร่วมกับ FT3 สูงควรนึกถึงความคลาดเคลื่อนของการจด, assay interference หรือ TSH-mediated hyperthyroidism มากกว่า ข้อนี้จึงใช้ค่าที่สอดคล้องกับพยาธิสรีรวิทยาแทน แต่คำตอบยังคงเป็น subacute thyroiditis ตาม recall",
+  "pearl": "ต่อมไทรอยด์เจ็บมาก + ESR สูง + thyrotoxicosis + RAIU ต่ำ หลังติดเชื้อไวรัส = subacute (de Quervain) thyroiditis → รักษาด้วย NSAID/steroid + β-blocker ไม่ใช่ antithyroid drug",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 02 — ติดเชื้อURI หลังจากนั้น TSH ปกติ FT3สูง FT4 ปกติ Subacute thyroiditis",
+   "Ross DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-03",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Thyrotoxicosis with a solitary thyroid nodule",
+  "stem": "A 45-year-old woman has had palpitations, heat intolerance and a 4-kg weight loss over 3 months. Examination: PR 108/min, fine tremor, a firm, non-tender, well-defined 3-cm nodule in the right thyroid lobe that moves with swallowing; the rest of the gland is not palpable. There is no proptosis, periorbital oedema or pretibial myxoedema. TSH < 0.01 mIU/L, free T4 2.6 ng/dL (normal 0.9–1.7). Ultrasound shows a single 3.1-cm solid nodule with an otherwise normal gland. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Toxic adenoma",
+   "Graves' disease",
+   "Toxic multinodular goitre",
+   "Subacute granulomatous thyroiditis",
+   "Papillary thyroid carcinoma"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: toxic adenoma เกิดจาก **somatic gain-of-function mutation ของ TSH receptor** (หรือ Gsα/GNAS) ในเซลล์ follicle กลุ่มเดียว → cAMP สูงตลอดเวลา → ก้อนโตและสร้างฮอร์โมน **เองโดยไม่ต้องพึ่ง TSH (autonomous)** → ฮอร์โมนสูงไปกด TSH → **เนื้อไทรอยด์ส่วนที่เหลือหยุดทำงาน** → thyroid scan (Tc-99m หรือ I-123) เห็น **\"hot nodule\" ร่วมกับการจับสารที่ถูกกดในเนื้อส่วนอื่น** ก้อนที่ทำให้เกิด thyrotoxicosis ชัดเจนมักมีขนาด **≥ 3 cm** และเพราะไม่มี TRAb จึง **ไม่มี Graves ophthalmopathy หรือ pretibial myxedema**\n\nก้อนที่เป็น hot nodule **แทบไม่เป็นมะเร็ง จึงไม่ต้อง FNA**; รักษาให้หายขาดด้วย **radioactive iodine** หรือ **lobectomy** (antithyroid drug คุมได้แต่ไม่หาย เพราะ mutation ยังอยู่)\n\n| | Graves | Toxic MNG | **Toxic adenoma** | Subacute thyroiditis |\n|---|---|---|---|---|\n| คลำ | โตทั่ว นุ่ม มี bruit | หลายก้อน | **ก้อนเดียว** | เจ็บมาก |\n| ตา/ผิวหนัง | ophthalmopathy, myxedema | ไม่มี | **ไม่มี** | ไม่มี |\n| Scan | uptake สูงทั่วต่อม | หลายจุดร้อน-เย็นปน | **จุดร้อนจุดเดียว ส่วนอื่นถูกกด** | uptake ต่ำทั้งต่อม |\n\n**ทำไมตัวลวงผิด**\n- **Graves' disease**: ต่อมโตแบบ diffuse ไม่ใช่ก้อนเดียว และมักมีอาการทางตาหรือผิวหนังจาก TRAb\n- **Toxic multinodular goitre**: พบในผู้สูงอายุที่มี goitre มานาน คลำ/US เห็น **หลายก้อน** — โจทย์ US ยืนยันก้อนเดียวและต่อมส่วนอื่นปกติ\n- **Subacute thyroiditis**: ต่อมเจ็บมาก มีไข้ ESR สูง และ uptake ต่ำ — ก้อนนี้ไม่เจ็บ\n- **Papillary thyroid carcinoma**: มะเร็งไทรอยด์แทบทั้งหมดเป็น **cold nodule** และผู้ป่วยมักมีการทำงานของไทรอยด์ปกติ ไม่ใช่ thyrotoxicosis",
+  "pearl": "Thyrotoxicosis + ก้อนเดียว ≥ 3 cm + ไม่มีอาการตา = toxic adenoma → scan เห็น hot nodule ที่กดเนื้อส่วนอื่น ไม่ต้อง FNA รักษาด้วย RAI หรือ lobectomy",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 03 — TSH Low, FT4 high PE anterior ได้ก้อน : Toxic adenoma",
+   "Ross DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-28",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Type 2 diabetes with established ASCVD – add-on to metformin",
+  "stem": "A 58-year-old man has had type 2 diabetes for 6 years. He had an anterior myocardial infarction treated with PCI 2 years ago. Current medications: metformin 2,000 mg/day, aspirin, atorvastatin 80 mg, ramipril and bisoprolol. BMI 28 kg/m², BP 128/76 mmHg, HbA1c 8.2%, eGFR 85 mL/min/1.73 m², urine albumin-to-creatinine ratio 15 mg/g, LVEF 55% with no symptoms of heart failure. Which of the following is the most appropriate glucose-lowering agent to add?",
+  "choices": [
+   "A GLP-1 receptor agonist with proven CV benefit (e.g., semaglutide)",
+   "A sulfonylurea (e.g., glipizide)",
+   "A DPP-4 inhibitor (e.g., sitagliptin)",
+   "A thiazolidinedione (pioglitazone)",
+   "Basal insulin (insulin glargine)"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: GLP-1 receptor agonist (GLP-1 RA) เลียนแบบ incretin → **กระตุ้น insulin แบบขึ้นกับระดับน้ำตาล** (จึงเสี่ยง hypoglycemia ต่ำ), กด glucagon, ชะลอการบีบตัวของกระเพาะ และ **ลดความอยากอาหารที่ hypothalamus → น้ำหนักลด** นอกจากนี้ยังลดการอักเสบของหลอดเลือด ลด BP และไขมัน → ในการศึกษา CVOT (**LEADER–liraglutide, SUSTAIN-6–semaglutide, REWIND–dulaglutide**) ลด **MACE (CV death, MI, stroke) ราว 12–26%**\n\nADA 2025: ผู้ป่วย T2DM ที่มี **established ASCVD** (เช่น MI เก่า) ให้ **GLP-1 RA และ/หรือ SGLT2 inhibitor ที่พิสูจน์ประโยชน์ต่อหัวใจ** เพื่อลดความเสี่ยงหัวใจ **โดยไม่ขึ้นกับ HbA1c และไม่ขึ้นกับว่าได้ metformin อยู่หรือไม่** ในรายนี้ BMI 28 ยิ่งได้ประโยชน์จากการลดน้ำหนักของ GLP-1 RA\n\n**ทำไมตัวลวงผิด**\n- **Sulfonylurea**: ลด HbA1c ได้ดีและราคาถูก แต่ **ไม่มีประโยชน์ต่อหัวใจ** ทำให้น้ำหนักขึ้นและ hypoglycemia (ซึ่งเพิ่ม arrhythmia ในผู้ป่วยโรคหัวใจ)\n- **DPP-4 inhibitor**: CVOT (TECOS, CARMELINA) เป็น **CV neutral** ลด HbA1c ได้เพียง ~0.5–0.7% และไม่ควรใช้ร่วมกับ GLP-1 RA\n- **Pioglitazone**: ลด insulin resistance และอาจลด stroke ในบางการศึกษา แต่ทำให้ **น้ำหนักขึ้น บวมน้ำ เสี่ยง heart failure และกระดูกหัก** — ไม่ใช่ยาที่แนะนำเป็นลำดับแรกเพื่อลด ASCVD\n- **Basal insulin**: CV neutral (ORIGIN) เพิ่มน้ำหนักและ hypoglycemia — สงวนไว้เมื่อ HbA1c สูงมาก (> 10%) มีอาการ catabolic หรือยาอื่นไม่พอ\n\n> หมายเหตุ: SGLT2 inhibitor ที่มี CV benefit (empagliflozin, canagliflozin) ก็เป็นคำตอบที่ถูกได้ในชีวิตจริง จึงไม่ได้ใส่เป็นตัวลวงในข้อนี้",
+  "pearl": "T2DM + established ASCVD → เพิ่ม GLP-1 RA หรือ SGLT2i ที่พิสูจน์ CV benefit โดยไม่ต้องดู HbA1c; ถ้าน้ำหนักเกินด้วยให้ GLP-1 RA เด่นกว่า",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 28 — BMI 28 เกินๆ เป็นเบาหวาน แต่ คนไข้ เป็น artherosclerosis ตอบ GLP-1",
+   "ADA Standards of Care in Diabetes—2025 – Section 9: Pharmacologic Approaches to Glycemic Treatment; Section 10: Cardiovascular Disease and Risk Management"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4",
+   "2.3.9"
+  ]
+ },
+ {
+  "id": "R3-MCQ-32",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Graves' disease in the first trimester – choice of antithyroid drug",
+  "stem": "A 28-year-old woman at 8 weeks of gestation presents with palpitations, tremor and weight loss. Examination: PR 120/min, diffuse goitre with a bruit and mild bilateral proptosis. TSH < 0.01 mIU/L, free T4 3.4 ng/dL (non-pregnant reference 0.9–1.7), TSH-receptor antibody markedly positive. She has no hyperemesis. Besides short-term symptom control, which of the following is the most appropriate treatment?",
+  "choices": [
+   "Propylthiouracil",
+   "Methimazole",
+   "Radioactive iodine (I-131) ablation",
+   "Total thyroidectomy during the first trimester",
+   "Propranolol alone until delivery, without an antithyroid drug"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: thionamide ทั้ง PTU และ methimazole (MMI) **ยับยั้ง thyroid peroxidase (TPO)** → หยุดการ organification และ coupling; PTU ยัง **ยับยั้ง type 1 deiodinase (T4 → T3) ที่ส่วนปลาย** เพิ่มอีกชั้น\nความต่างที่ตัดสินในการตั้งครรภ์คือ **ผลต่อทารก**:\n- **MMI/carbimazole ในช่วง organogenesis (สัปดาห์ที่ 6–10)** สัมพันธ์กับ **methimazole embryopathy**: aplasia cutis, choanal/esophageal atresia, omphalocele\n- **PTU** ความพิการแต่กำเนิดน้อยกว่าและรุนแรงน้อยกว่า แต่เสี่ยง **hepatotoxicity รุนแรง** ในแม่\n→ ATA 2017: **ใช้ PTU ในไตรมาสแรก (ถึง ~16 สัปดาห์)** แล้วพิจารณาเปลี่ยนเป็น MMI หลังจากนั้น ใช้ขนาดต่ำสุดให้ FT4 อยู่ **ขอบบนของค่าปกติ** เพราะยาผ่านรกและทำให้ทารก hypothyroid/คอพอกได้ และติดตาม TRAb เพราะ antibody ผ่านรกทำให้ fetal/neonatal thyrotoxicosis ได้\n\nผู้ป่วยรายนี้เป็น **Graves จริง** (goitre มี bruit, ตาโปน, TRAb บวก) ไม่ใช่ **gestational transient thyrotoxicosis** จาก hCG (ซึ่งไม่มี goitre/ตาโปน TRAb ลบ มักมี hyperemesis และไม่ต้องให้ thionamide)\n\n**ทำไมตัวลวงผิด**\n- **Methimazole**: เป็นยาหลักนอกการตั้งครรภ์และหลังไตรมาสแรก แต่ **ช่วง 8 สัปดาห์อยู่ในหน้าต่าง embryopathy**\n- **Radioactive iodine**: **ห้ามเด็ดขาดในการตั้งครรภ์** — ต่อมไทรอยด์ทารกเริ่มจับไอโอดีนหลัง 10–12 สัปดาห์ → ถูกทำลายถาวร; ต้องตรวจการตั้งครรภ์ก่อนให้ RAI ทุกครั้ง\n- **Thyroidectomy ในไตรมาสแรก**: สงวนไว้สำหรับผู้ที่แพ้/ใช้ thionamide ไม่ได้ และถ้าจำเป็นทำใน **ไตรมาสที่สอง** (ไตรมาสแรกเสี่ยงแท้ง และผลของยาสลบต่อ organogenesis)\n- **Propranolol อย่างเดียว**: คุมอาการได้ชั่วคราวแต่ไม่แก้การสร้างฮอร์โมนเกิน — overt hyperthyroidism ที่ไม่รักษาเสี่ยงแท้ง preeclampsia คลอดก่อนกำหนด thyroid storm; การใช้ β-blocker นานยังสัมพันธ์กับ IUGR, ทารกหัวใจเต้นช้า, น้ำตาลต่ำ\n\n> หมายเหตุจาก recall: ต้นฉบับจด \"PTU, MMI\" — คำตอบตามแนวทางคือ PTU ในไตรมาสแรก",
+  "pearl": "ไทรอยด์เป็นพิษในไตรมาสแรกใช้ PTU (หลีกเลี่ยง MMI embryopathy) แล้วเปลี่ยนเป็น MMI หลังไตรมาสแรก (หลีกเลี่ยงพิษต่อตับของ PTU); RAI ห้ามเด็ดขาด",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 32 — หญิงท้อง 8 week, hyperthyroid - PTU, MMI",
+   "Alexander EK, et al. 2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-37",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Diabetic ketoacidosis with hypokalaemia – order of therapy",
+  "stem": "A 24-year-old woman with type 1 diabetes presents with 2 days of vomiting and abdominal pain after missing insulin doses. BP 100/60 mmHg, PR 118/min, deep rapid breathing. Plasma glucose 520 mg/dL, serum β-hydroxybutyrate 5.5 mmol/L. Arterial blood gas: pH 7.23, PaCO2 22 mmHg, HCO3 9 mEq/L. Serum Na 134 mEq/L, K 3.2 mEq/L, Cl 98 mEq/L, creatinine 1.2 mg/dL. She has received 1 L of 0.9% NaCl in the emergency department and is passing urine. Which of the following is the most appropriate next step?",
+  "choices": [
+   "Continue 0.9% NaCl with IV KCl and hold insulin until K is ≥3.3 mEq/L",
+   "Start IV regular insulin 0.1 U/kg/h now and add KCl after 2 hours",
+   "Give subcutaneous rapid-acting insulin every 2 hours with oral KCl",
+   "Give IV sodium bicarbonate 100 mmol over 2 hours before insulin",
+   "Switch to 5% dextrose in 0.45% NaCl with an insulin infusion, no KCl"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: ใน DKA ร่างกาย **ขาด K ทั้งหมดราว 3–5 mEq/kg** (osmotic diuresis, อาเจียน, secondary hyperaldosteronism) แต่ serum K มักปกติหรือสูงเพราะ **ขาด insulin และ hyperosmolality (solvent drag)** ดึง K ออกนอกเซลล์ เมื่อเริ่ม insulin → **กระตุ้น Na-K-ATPase ดึง K กลับเข้าเซลล์อย่างรวดเร็ว** (ร่วมกับการแก้ acidosis และให้น้ำ) → serum K ดิ่งลง → **arrhythmia, หัวใจหยุดเต้น, กล้ามเนื้อหายใจอ่อนแรง**\nดังนั้นถ้า **K เริ่มต้นต่ำอยู่แล้ว (3.2)** ต้อง **ให้น้ำ + KCl ทางหลอดเลือดก่อน และเลื่อน insulin** จนกว่า K จะขึ้นถึงระดับปลอดภัย\n\n| Serum K (mEq/L) | การจัดการ (ADA 2009) |\n|---|---|\n| < 3.3 | **งด insulin**, ให้ KCl 20–30 mEq/h จนกว่า K ≥ 3.3 |\n| 3.3–5.2 | เติม KCl 20–30 mEq ในน้ำเกลือแต่ละลิตร ให้ K อยู่ 4–5 |\n| > 5.2 | ยังไม่ให้ K ตรวจซ้ำทุก 2 ชม. |\n\nการแปล ABG ประกอบ: AG = 134 − (98 + 9) = 27 (สูง); Winter's คาด PaCO2 = 1.5 × 9 + 8 = 21.5 ± 2 → ค่าจริง 22 = ชดเชยพอดี — เป็น DKA ระดับปานกลาง\n\n**ทำไมตัวลวงผิด**\n- **IV insulin ทันทีแล้วค่อยเติม K**: เป็นลำดับที่ทำให้ K ดิ่งต่ำกว่า 3 ภายในชั่วโมงแรก — อันตรายถึงชีวิต\n- **SC rapid-acting insulin + KCl กิน**: ยังเป็นการให้ insulin ขณะ K 3.2 และ KCl ทางปากขึ้นช้า/อาเจียนอยู่ ไม่พอสำหรับภาวะนี้\n- **Sodium bicarbonate**: ให้เฉพาะ pH < 7.0 และ **ยิ่งดัน K เข้าเซลล์ → K ต่ำลงอีก** เสี่ยง paradoxical CSF acidosis\n- **D5/0.45% NaCl + insulin ไม่มี KCl**: dextrose เริ่มเมื่อน้ำตาลลดถึง ~250 mg/dL (ตอนนี้ 520) และการให้ insulin โดยไม่มี K ในผู้ป่วยที่ K 3.2 คือข้อผิดที่ร้ายแรงที่สุด\n\n> หมายเหตุจาก recall: ต้นฉบับตอบ \"ให้ K ก่อนแล้วค่อยให้ insulin sc\" — **ลำดับ K ก่อน insulin ถูกต้อง** แต่ DKA ระดับปานกลาง–รุนแรงมาตรฐานคือ **IV regular insulin infusion**; consensus ADA/EASD/JBDS/AACE/DTS ปี 2024 ยอมให้ใช้ SC rapid-acting analog ได้ใน DKA mild–moderate ที่ไม่ซับซ้อน และปรับเกณฑ์งด insulin สูงขึ้นเป็นราว K < 3.5 mmol/L — ไม่ว่าเกณฑ์ไหน K 3.2 ต้องได้ K ก่อน insulin",
+  "pearl": "DKA ที่ K < 3.3 (แนวทาง 2024 ใช้ < 3.5) ให้น้ำเกลือ + IV KCl ก่อน และงด insulin จนกว่า K จะขึ้น — insulin ดึง K เข้าเซลล์จนหัวใจหยุดเต้นได้",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 37 — คนไข้เป็น DKA แล้ว K 3.2 management ยังไง - ให้ K ก่อนแล้วค่อยให้ insulin sc",
+   "Kitabchi AE, et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009",
+   "Umpierrez GE, et al. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report. Diabetes Care 2024"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.16",
+   "2.2.15",
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-44",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Young lean adult with multigenerational diabetes – MODY",
+  "stem": "A 22-year-old woman was diagnosed with diabetes at age 19 after a fasting glucose of 142 mg/dL on a pre-employment check. She has been controlled with oral agents (current HbA1c 6.7%) and has never required insulin or had ketoacidosis. BMI 21 kg/m², no acanthosis nigricans. Her mother was diagnosed with diabetes at 25 years of age and is not obese; her maternal grandfather and a maternal uncle were diagnosed before age 30. Hearing is normal. Anti-GAD and anti-IA-2 antibodies are negative, and fasting C-peptide is 2.1 ng/mL (normal). Which of the following is the most likely type of diabetes?",
+  "choices": [
+   "Maturity-onset diabetes of the young (MODY)",
+   "Type 1 diabetes in the honeymoon phase",
+   "Latent autoimmune diabetes in adults (LADA)",
+   "Type 2 diabetes",
+   "Maternally inherited diabetes and deafness (MIDD)"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: MODY เป็น **monogenic diabetes ถ่ายทอดแบบ autosomal dominant** จาก mutation ของยีนที่ควบคุม **การหลั่ง insulin ของ β-cell** (ไม่ใช่ insulin resistance และไม่ใช่ autoimmune) → จึงพบใน **คนอายุน้อย ผอม ไม่มี antibody, C-peptide ยังดี ไม่ต้องใช้ insulin และเป็นต่อเนื่องหลายรุ่น (ทุกรุ่นมีคนเป็น)**\n- **HNF1A-MODY** (พบบ่อยสุด): ไวต่อ **sulfonylurea ขนาดต่ำ** มาก, glycosuria ที่ระดับน้ำตาลไม่สูง (renal threshold ต่ำ)\n- **GCK-MODY**: glucose sensor ตั้งค่าสูงขึ้น → น้ำตาลขณะอดอาหารสูงเล็กน้อยคงที่ (FPG ~100–145) มักพบตอนตรวจ GDM **ส่วนใหญ่ไม่ต้องรักษา**\n- HNF4A (ทารกตัวโต/hypoglycemia แรกเกิด), HNF1B (ถุงน้ำในไต, ความผิดปกติของมดลูก)\nยืนยันด้วย **genetic testing** ซึ่งเปลี่ยนการรักษาและการคัดกรองญาติ\n\n| | T1DM | T2DM | **MODY** | LADA | MIDD |\n|---|---|---|---|---|---|\n| อายุเริ่ม | เด็ก–วัยรุ่น | ผู้ใหญ่ | **< 25–35 ปี** | > 30 ปี | ผู้ใหญ่ตอนต้น |\n| รูปร่าง | ผอม | **อ้วน, acanthosis** | ผอม/ปกติ | ปกติ | ผอม |\n| Antibody | **+** | − | **−** | **+** | − |\n| C-peptide | ต่ำ | ปกติ/สูง | **ปกติ** | ลดลงภายในไม่กี่ปี | ลดลงช้า ๆ |\n| ประวัติครอบครัว | ไม่เด่น | พบบ่อย (polygenic) | **autosomal dominant หลายรุ่น** | ไม่เด่น | **ทางแม่เท่านั้น** + หูหนวก |\n\n**ทำไมตัวลวงผิด**\n- **Type 1 DM (honeymoon)**: honeymoon อยู่ได้เป็นเดือน ไม่ใช่ 3 ปี และต้องมี islet antibody บวก C-peptide ลดลง\n- **LADA**: นิยามคือ autoimmune diabetes ในผู้ใหญ่ — **ต้องมี antibody (โดยเฉพาะ anti-GAD) บวก**\n- **Type 2 DM**: ประวัติครอบครัวพบได้ แต่มักอ้วน มี insulin resistance (acanthosis) และอายุมากกว่า — ผู้ป่วยผอม BMI 21 ไม่มี acanthosis\n- **MIDD (mitochondrial)**: ถ่ายทอด **ทางแม่เท่านั้น** (mtDNA) และมี sensorineural hearing loss — ในโจทย์ **ตาฝั่งแม่ (ผู้ชาย) ก็เป็น** ซึ่งชายส่ง mtDNA ให้ลูกไม่ได้ และการได้ยินปกติ\n\n> หมายเหตุจาก recall: ต้นฉบับจด \"แม่เป็น DM, อ้วน, เคยเป็น DM ตอนท้อง → MODY\" — ถ้าแม่ **อ้วน** และเคยเป็น **GDM** ภาพจะเข้ากับ **T2DM** มากกว่า (insulin resistance + polygenic) อย่างไรก็ตาม MODY โดยเฉพาะ GCK-MODY มักถูกพบครั้งแรกเป็น GDM ได้ ดังนั้นตัวชี้ที่แยกจริงคือ **อายุน้อย ผอม antibody ลบ C-peptide ปกติ และถ่ายทอดทุกรุ่นแบบ autosomal dominant** — ข้อนี้จึงเขียนโจทย์ให้ชี้ MODY ชัดเจน",
+  "pearl": "เบาหวานอายุ < 25–35 ปี ผอม antibody ลบ C-peptide ปกติ ไม่ต้องใช้ insulin และมีคนเป็นทุกรุ่น = MODY → ส่ง genetic test (HNF1A ตอบ sulfonylurea ขนาดต่ำ, GCK มักไม่ต้องรักษา)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 44 — แม่เป็นDM, อ้วน, เคยเปนdmตอนท้อง  -> MODY",
+   "ADA Standards of Care in Diabetes—2025 – Section 2: Diagnosis and Classification of Diabetes (monogenic diabetes syndromes)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-54",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Interpreting the blood gas in diabetic ketoacidosis",
+  "stem": "A 19-year-old woman with type 1 diabetes has missed insulin for 3 days and presents with vomiting, abdominal pain and deep, rapid breathing. BP 98/60 mmHg, PR 120/min. Plasma glucose 450 mg/dL, serum β-hydroxybutyrate 6.2 mmol/L, urine ketones 3+. Arterial blood gas: pH 7.22, PaCO2 20 mmHg, HCO3 8 mEq/L. Serum Na 132 mEq/L, K 5.1 mEq/L, Cl 96 mEq/L, albumin 4.0 g/dL, lactate 1.4 mmol/L. Which of the following best describes her acid–base status?",
+  "choices": [
+   "High anion gap metabolic acidosis with appropriate respiratory compensation",
+   "Normal anion gap metabolic acidosis with appropriate respiratory compensation",
+   "High anion gap metabolic acidosis with a concomitant respiratory acidosis",
+   "High anion gap metabolic acidosis with a concomitant respiratory alkalosis",
+   "High anion gap metabolic acidosis with a concomitant metabolic alkalosis"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: ขาด insulin + glucagon สูง → lipolysis ปล่อย free fatty acid → ตับ (carnitine palmitoyltransferase-1 ไม่ถูกยับยั้ง) เผาผลาญเป็น **ketoacid (β-hydroxybutyrate, acetoacetate)** → H⁺ ถูก HCO3 buffer → HCO3 ลด แต่ **anion ของ ketoacid (unmeasured anion) ค้างอยู่** → **anion gap สูง** ขณะเดียวกัน acidemia กระตุ้น peripheral/central chemoreceptor → **Kussmaul breathing** ลด PaCO2 เพื่อชดเชย\n\n**แปลทีละขั้น**\n1. pH 7.22 → acidemia\n2. HCO3 8 ต่ำ, PaCO2 20 ต่ำ → primary **metabolic acidosis**\n3. **AG** = 132 − (96 + 8) = **28** → สูง (albumin 4.0 ไม่ต้อง correct) — สาเหตุคือ ketone (lactate 1.4 ไม่ได้เป็นตัวหลัก)\n4. **Winter's**: 1.5 × 8 + 8 = 20 ± 2 → **18–22**; ค่าจริง 20 → **ชดเชยพอดี**\n5. **Delta ratio** = (28 − 12) ÷ (24 − 8) = 16 ÷ 16 = **1.0** → อยู่ในช่วง 1–2 = pure high AG acidosis ไม่มี metabolic disorder อื่นซ้อน\n\n| Delta ratio | ความหมาย |\n|---|---|\n| < 0.4 | normal AG acidosis เป็นหลัก |\n| 0.4–0.8 | high AG + normal AG acidosis ร่วมกัน (พบในช่วงรักษา DKA ที่ได้ NSS มาก) |\n| 1–2 | pure high AG acidosis (DKA ทั่วไป) |\n| > 2 | high AG acidosis + **metabolic alkalosis** ซ้อน (เช่น อาเจียนมาก) |\n\n**ทำไมตัวลวงผิด**\n- **Normal AG**: AG = 28 ชัดเจนว่าสูง\n- **ร่วมกับ respiratory acidosis**: ต้องมี PaCO2 > 22 (เช่น ผู้ป่วยซึมจนหายใจไม่พอ) — ค่าจริง 20\n- **ร่วมกับ respiratory alkalosis**: ต้องมี PaCO2 < 18 (เช่น sepsis, ปอดอักเสบ) — ค่าจริง 20\n- **ร่วมกับ metabolic alkalosis**: แม้ผู้ป่วยอาเจียน แต่ delta ratio = 1.0 ไม่ถึง 2 → ไม่มีหลักฐานของ metabolic alkalosis ซ้อน\n\nข้อสังเกตทางคลินิก: corrected Na = 132 + 1.6 × (450 − 100)/100 ≈ 138 (ปกติ) และ K 5.1 แม้สูงแต่ total body K ขาดจริง — ต้องติดตาม K เมื่อเริ่ม insulin\n\n> หมายเหตุจาก recall: ต้นฉบับจด \"DKA ให้ blood gas → diabetic ketoacidosis\" ไม่ได้จดค่าจริง — ข้อนี้กำหนดค่าใหม่ที่ผ่าน Henderson–Hasselbalch และ Winter's",
+  "pearl": "DKA ทั่วไปคือ high AG metabolic acidosis ที่ชดเชยพอดี (Winter's) และ delta ratio ~1–2; ถ้า delta ratio > 2 ให้หา metabolic alkalosis ซ้อน (อาเจียน)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 54 — DKA ให้ blood gas -> diabetic ketoacidosis",
+   "Kitabchi AE, et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009",
+   "Umpierrez GE, et al. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report. Diabetes Care 2024"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.16",
+   "B9.2.5(2)",
+   "3.3.17",
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-60",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Rationale for an HbA1c target below 7%",
+  "stem": "A 50-year-old man with newly diagnosed type 2 diabetes asks why his doctor recommends keeping his HbA1c below 7%. Based on the DCCT and UKPDS trials, which of the following is the principal, best-established benefit of achieving this target?",
+  "choices": [
+   "Reduced risk of microvascular complications: retinopathy, nephropathy and neuropathy",
+   "Large early reduction in cardiovascular death within the first 3–5 years of treatment",
+   "Regression of established coronary atherosclerotic plaques",
+   "Prevention of the weight gain associated with glucose-lowering therapy",
+   "Preservation of β-cell mass, so that diabetes goes into permanent remission"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: น้ำตาลสูงเรื้อรังทำลาย **หลอดเลือดขนาดเล็ก** ผ่านหลายเส้นทาง — **polyol pathway** (aldose reductase → sorbitol สะสม, NADPH หมด), **advanced glycation end-products (AGEs)**, **protein kinase C activation** และ hexosamine pathway → pericyte ตาย, basement membrane หนา, endothelial dysfunction → retinopathy, nephropathy, neuropathy\nเซลล์ที่โดนมากคือเซลล์ที่ **รับกลูโคสโดยไม่ต้องพึ่ง insulin** (endothelium, retina, mesangium, Schwann cell) จึงสะท้อนระดับน้ำตาลในเลือดโดยตรง — ความสัมพันธ์ HbA1c กับ retinopathy เป็นแบบ **เส้นโค้งชัน**\n\n| การศึกษา | ผลหลัก |\n|---|---|\n| **DCCT** (T1DM) | intensive (HbA1c ~7%) ลด retinopathy ~76%, nephropathy ~50%, neuropathy ~60% |\n| **UKPDS 33** (T2DM) | HbA1c 7.0 vs 7.9 → ลด **microvascular endpoint 25%**; MI ลด 16% แต่ **ไม่มีนัยสำคัญ** |\n| UKPDS/DCCT follow-up (EDIC) | ประโยชน์ต่อหัวใจและการตายเห็นได้ **หลัง 10 ปีขึ้นไป** (legacy effect) |\n| ACCORD | เป้า < 6% ใน T2DM เสี่ยงหัวใจสูง → **ตายมากขึ้น** (hypoglycemia) |\n\n**ทำไมตัวลวงผิด**\n- **ลด CV death อย่างมากใน 3–5 ปี**: การศึกษา intensive glucose control (UKPDS, ACCORD, ADVANCE, VADT) **ไม่พบการลด CV death ในระยะสั้น** — ประโยชน์ต่อหัวใจเกิดช้า (legacy effect) ส่วนการลด CV ระยะสั้นมาจากยาเฉพาะกลุ่ม (GLP-1 RA, SGLT2i) และการคุม BP/ไขมัน\n- **Plaque ยุบลง**: การคุมน้ำตาลไม่ทำให้ atherosclerosis ที่เกิดแล้วถอยกลับ — macrovascular ขึ้นกับ LDL, BP, บุหรี่มากกว่า\n- **ป้องกันน้ำหนักขึ้น**: ตรงกันข้าม — การคุมเข้มด้วย insulin/SU ทำให้น้ำหนักขึ้นใน UKPDS\n- **β-cell กลับมาจน remission ถาวร**: UKPDS แสดงว่า β-cell function ยังลดลงต่อเนื่องแม้คุมดี; remission เกิดจากการลดน้ำหนักมาก (DiRECT) ไม่ใช่จากการคุม HbA1c ที่ 7%\n\nADA 2025: HbA1c < 7% สำหรับผู้ใหญ่ส่วนใหญ่ที่ไม่เสี่ยง hypoglycemia; < 6.5% ได้ถ้าปลอดภัย; < 8% ในผู้สูงอายุเปราะบาง/อายุขัยจำกัด",
+  "pearl": "HbA1c < 7% ลด microvascular complication ชัดเจน (DCCT, UKPDS) ส่วน macrovascular ได้ประโยชน์ช้าแบบ legacy effect และคุมเข้มเกิน (< 6%) ในผู้เสี่ยงสูงเพิ่มการตาย (ACCORD)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 60 — ควรคุมให้น้ำตาลน้อยกว่า HbA1c 7 เพราะ -> decrease risk of microvascular",
+   "UK Prospective Diabetes Study (UKPDS 33). Lancet 1998",
+   "DCCT Research Group. N Engl J Med 1993",
+   "ADA Standards of Care in Diabetes—2025 – Section 6: Glycemic Goals and Hypoglycemia"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-61",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Screening test for diabetic kidney disease",
+  "stem": "A 50-year-old man has just been diagnosed with type 2 diabetes. He has no symptoms; BP is 128/78 mmHg and serum creatinine is 0.9 mg/dL. In addition to eGFR, which urine test is recommended to screen for diabetic kidney disease?",
+  "choices": [
+   "Spot urine albumin-to-creatinine ratio",
+   "Spot urine protein-to-creatinine ratio",
+   "Urine dipstick for protein",
+   "24-hour urine total protein",
+   "Urine microscopy for casts"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: ระยะแรกของ diabetic kidney disease มี **glomerular hyperfiltration**, GBM หนาขึ้น และ **สูญเสีย charge selectivity** ของ filtration barrier → **albumin ซึ่งเล็กและเป็นโปรตีนหลักในพลาสมาจะรั่วออกมาก่อน** ในปริมาณน้อย (30–300 mg/วัน) ก่อนที่ total protein จะสูงพอให้การตรวจโปรตีนรวมจับได้ การตรวจ **เฉพาะ albumin** จึงไวกว่าในระยะที่ยังย้อนกลับได้ และการหารด้วย creatinine ใน spot urine ช่วย **แก้ผลของความเข้มข้นปัสสาวะ** โดยไม่ต้องเก็บ 24 ชม.\n\nADA 2025 / KDIGO: คัดกรอง **UACR + eGFR ปีละครั้ง** — T2DM เริ่ม **ตั้งแต่วินิจฉัย** (เพราะเป็นมานานก่อนรู้ตัว), T1DM เริ่ม **หลังเป็น 5 ปี**; ใช้ spot urine ตอนเช้าดีที่สุด\n\n| การตรวจ | วัดอะไร | ข้อจำกัดในการคัดกรอง DKD |\n|---|---|---|\n| **UACR** | albumin | **มาตรฐานการคัดกรอง** |\n| UPCR | โปรตีนรวม (รวม tubular protein, Tamm–Horsfall) | ไม่ไวพอที่ระดับต่ำ ใช้ติดตามเมื่อโปรตีนมากแล้ว/GN |\n| Dipstick | albumin ที่ความเข้มข้นสูง (~300 mg/L ขึ้นไป) | **พลาด A2 เกือบทั้งหมด** |\n| 24-h urine | โปรตีนรวม | เก็บยาก ผิดพลาดบ่อย ไม่จำเป็นสำหรับคัดกรอง |\n| Microscopy | RBC/WBC cast | ใช้หา nephritic/การติดเชื้อ ไม่ใช่คัดกรอง DKD |\n\n**ทำไมตัวลวงผิด**\n- **UPCR**: วัดโปรตีนรวม จึงตรวจจับ albumin ปริมาณน้อยได้ไม่ดี เหมาะกับการติดตามโปรตีนปริมาณมาก/glomerulonephritis\n- **Dipstick**: บวกเมื่อ albumin เกินราว 300 mg/L → ผลลบไม่ได้ตัด albuminuria ระดับ A2 ออก\n- **24-hour urine protein**: เก็บยาก มักไม่ครบ และยังวัดโปรตีนรวม ไม่ใช่ albumin\n- **Urine microscopy**: DKD มักเป็น bland sediment — ใช้หาโรคไตอื่น (ถ้าเจอ RBC cast ควรคิดถึง non-diabetic kidney disease)\n\n> หมายเหตุจาก recall: ต้นฉบับตอบ \"UPCR\" ซึ่ง **ไม่ตรงแนวทางปัจจุบัน** — ADA และ KDIGO ใช้ **UACR** สำหรับคัดกรอง DKD ส่วน UPCR ใช้ประเมินปริมาณโปรตีนเมื่อมีมากหรือในโรคไตชนิดอื่น",
+  "pearl": "คัดกรองโรคไตจากเบาหวานด้วย spot UACR + eGFR ปีละครั้ง (T2DM ตั้งแต่วินิจฉัย, T1DM หลัง 5 ปี) — ไม่ใช้ dipstick หรือ UPCR",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 61 — ตรวจnephropathy -> UPCR",
+   "ADA Standards of Care in Diabetes—2025 – Section 11: Chronic Kidney Disease and Risk Management",
+   "KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4",
+   "2.3.14(3)",
+   "3.1.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-62",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Negative dipstick with raised UACR – moderately increased albuminuria",
+  "stem": "A 56-year-old woman with type 2 diabetes for 8 years attends her annual review. BP 132/80 mmHg, eGFR 78 mL/min/1.73 m². Urine dipstick is negative for protein, but a spot urine albumin-to-creatinine ratio on the same morning sample is 120 mg/g. She has had no fever, urinary symptoms, vigorous exercise or menstruation in the past few days. Which of the following is the most appropriate interpretation and next step?",
+  "choices": [
+   "Moderately increased albuminuria; confirm with 2 of 3 samples over 3–6 months",
+   "Normal result, because the dipstick is negative; repeat in one year",
+   "Laboratory error, because the dipstick is more sensitive than UACR",
+   "Severely increased albuminuria that warrants a kidney biopsy",
+   "Nephrotic-range proteinuria that needs a 24-hour urine collection"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: urine dipstick ใช้ปฏิกิริยา **protein error of indicator (tetrabromophenol blue)** ซึ่งไวต่อ albumin แต่จะเปลี่ยนสีเมื่อความเข้มข้น **เกินราว 300 mg/L (trace ~150–300)** ขณะที่ **UACR วัด albumin ด้วย immunoassay ที่ไวกว่ามาก** และปรับตามความเข้มข้นปัสสาวะด้วย creatinine — ช่วง 30–300 mg/g (เดิมเรียก **microalbuminuria**) จึงมัก **dipstick ลบ** ทั้งที่เป็นสัญญาณแรกของ diabetic kidney disease และเป็น **ตัวบ่งชี้ความเสี่ยงหัวใจและหลอดเลือดอิสระ** (endothelial dysfunction ทั่วร่างกาย)\n\n**การแปลผล**: UACR 120 mg/g = **A2 (moderately increased albuminuria)**\n**ขั้นต่อไป**: albumin ในปัสสาวะแปรปรวนวันต่อวันมาก (≥ 20%) และเพิ่มชั่วคราวได้จาก **ออกกำลังกายหนักใน 24 ชม., ไข้/ติดเชื้อ, UTI, heart failure, น้ำตาลสูงมาก, ประจำเดือน, BP สูงมาก** → ต้อง **ยืนยันว่าผิดปกติ 2 ใน 3 ครั้งภายใน 3–6 เดือน** จึงวินิจฉัย; เมื่อยืนยันแล้ว = CKD (G2 A2) → ให้ ACEI/ARB (โดยเฉพาะถ้ามี hypertension), SGLT2 inhibitor, คุม BP < 130/80, ติดตาม UACR/eGFR อย่างน้อยปีละ 2 ครั้ง\n\n| UACR (mg/g) | หมวด | dipstick โดยทั่วไป |\n|---|---|---|\n| < 30 | A1 ปกติ | ลบ |\n| **30–300** | **A2 moderately increased** | **มักลบหรือ trace** |\n| > 300 | A3 severely increased | บวก |\n| > ~2,200 | nephrotic range (~3.5 g/วัน) | 3+–4+ |\n\n**ทำไมตัวลวงผิด**\n- **ปกติเพราะ dipstick ลบ**: dipstick ไม่ไวพอสำหรับช่วง A2 — นี่คือเหตุผลที่แนวทางให้คัดกรองด้วย UACR\n- **Lab error เพราะ dipstick ไวกว่า**: กลับกัน — UACR ไวกว่า dipstick หลายเท่า ผลที่ไม่ตรงกันแบบนี้เป็นสิ่งที่คาดได้\n- **A3 ต้อง biopsy**: A3 คือ > 300 mg/g; และ DKD ที่มีลักษณะเข้าได้ (เบาหวานนาน ไม่มี hematuria/active sediment) **ไม่ต้อง biopsy**\n- **Nephrotic range**: ต้องสูงกว่านี้ราว 20 เท่า\n\n> หมายเหตุจาก recall: ต้นฉบับจดเพียง \"ช้อย microalbumin จำโจทย์ไม่ได้\" — ข้อนี้จึงสร้างโจทย์ใหม่ให้คำตอบเป็นการแปลผล microalbuminuria (A2) ที่ dipstick ตรวจไม่พบ",
+  "pearl": "Dipstick ลบไม่ได้ตัด albuminuria — UACR 30–300 mg/g (A2/microalbuminuria) ต้องยืนยัน 2 ใน 3 ครั้งใน 3–6 เดือนก่อนวินิจฉัย",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 62 — ช้อย microalbumin จำโจทย์ไม่ได้",
+   "ADA Standards of Care in Diabetes—2025 – Section 11: Chronic Kidney Disease and Risk Management",
+   "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4",
+   "2.3.14(3)",
+   "B9.3(2)",
+   "3.1.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-67",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Uncontrolled T2DM on metformin + sulfonylurea, declining insulin",
+  "stem": "A 50-year-old woman has had type 2 diabetes for 8 years. She takes metformin 2,000 mg/day and glibenclamide 20 mg/day (maximum dose). HbA1c is 10.0%, BMI 31 kg/m², eGFR 80 mL/min/1.73 m². She has no polyuria and her weight is stable. She has no cardiovascular or kidney disease. She declines insulin because she fears weight gain and hypoglycaemia, but is willing to use a once-weekly injection. Which of the following is the most appropriate addition?",
+  "choices": [
+   "Weekly semaglutide (GLP-1 receptor agonist)",
+   "Sitagliptin 100 mg daily (DPP-4 inhibitor)",
+   "Acarbose 100 mg three times daily",
+   "Pioglitazone 30 mg daily",
+   "Continue the current drugs and reinforce diet for 3 months"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: GLP-1 RA กระตุ้นการหลั่ง insulin **เฉพาะเมื่อน้ำตาลสูง** (glucose-dependent), กด glucagon, ชะลอการบีบตัวของกระเพาะ และลดความอยากอาหารผ่าน hypothalamus → **ลด HbA1c ได้ราว 1–1.8% (semaglutide สูงสุดในกลุ่ม) พร้อมลดน้ำหนัก** และเสี่ยง hypoglycemia ต่ำเมื่อใช้เดี่ยว — ตรงกับความต้องการของผู้ป่วยทุกข้อ (ไม่ใช่ insulin, ไม่เพิ่มน้ำหนัก, ฉีดสัปดาห์ละครั้ง)\n\nADA 2025: เมื่อต้องเพิ่มยาฉีด **ให้ GLP-1 RA (หรือ dual GIP/GLP-1 RA) ก่อน insulin** ในผู้ป่วยส่วนใหญ่; insulin ควรเลือกก่อนเมื่อมี **อาการ catabolic (น้ำหนักลด ปัสสาวะมาก ketosis) หรือ HbA1c > 10% ร่วมกับน้ำตาล ≥ 300 mg/dL ที่มีอาการ** — ผู้ป่วยรายนี้ไม่มีอาการ catabolic เมื่อเริ่ม GLP-1 RA ควรพิจารณา **ลดขนาด sulfonylurea** เพื่อลด hypoglycemia\n\n| ยา | ลด HbA1c โดยประมาณ | น้ำหนัก | ข้อสังเกต |\n|---|---|---|---|\n| **GLP-1 RA** | **1.0–1.8%** | **ลด** | คลื่นไส้, ห้ามใน MTC/MEN2 |\n| DPP-4 inhibitor | 0.5–0.8% | คงที่ | ไม่พอสำหรับ HbA1c 10% |\n| Acarbose | 0.5–0.8% | คงที่ | ท้องอืด ผายลม |\n| Pioglitazone | 0.7–1.0% | **เพิ่ม** | บวมน้ำ HF กระดูกหัก |\n\n**ทำไมตัวลวงผิด**\n- **Sitagliptin**: เพิ่ม endogenous GLP-1 ได้เพียงระดับ physiologic → ลด HbA1c น้อย ไม่พอจาก 10% สู่เป้า\n- **Acarbose**: ลดน้ำตาลหลังอาหารเป็นหลัก ฤทธิ์อ่อนและผลข้างเคียงทางเดินอาหารทำให้หยุดยาบ่อย\n- **Pioglitazone**: ลด HbA1c ได้ปานกลาง แต่ **ทำให้น้ำหนักขึ้นและบวมน้ำ** ซึ่งผู้ป่วยไม่ต้องการ และยิ่งร่วมกับ SU น้ำหนักยิ่งขึ้น\n- **ทำเหมือนเดิม + คุมอาหาร 3 เดือน**: เป็น **therapeutic inertia** — HbA1c 10% บนยาสองตัวขนาดสูงสุด ต้องเพิ่มยาทันที\n\n> หมายเหตุจาก recall: ต้นฉบับจด \"GLP1, SU\" — ผู้ป่วยได้ SU ขนาดสูงสุดแล้วตามโจทย์นี้ การเพิ่ม SU จึงไม่ใช่ทางเลือก คำตอบคือ GLP-1 RA (ยาเม็ด SGLT2 inhibitor ก็เพิ่มได้ แต่ลด HbA1c เพียง ~0.5–0.8% และไม่ได้อยู่ในตัวเลือก)",
+  "pearl": "T2DM ที่ต้องเพิ่มยาฉีดและไม่มีอาการ catabolic ให้ GLP-1 RA ก่อน insulin — ลด HbA1c มาก ลดน้ำหนัก และเสี่ยง hypoglycemia ต่ำ",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 67 — DM ไม่อยากฉีด insulin ให้ไร —> GLP1, SU",
+   "ADA Standards of Care in Diabetes—2025 – Section 9: Pharmacologic Approaches to Glycemic Treatment"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4"
+  ]
+ },
+ {
+  "id": "R3-MCQ-68",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Primary prevention statin therapy in diabetes",
+  "stem": "A 52-year-old man with type 2 diabetes for 4 years takes metformin; HbA1c is 6.8%. He does not smoke, BP is 124/78 mmHg without medication, BMI 24 kg/m², eGFR 95 mL/min/1.73 m², urine albumin-to-creatinine ratio 10 mg/g, and he has no retinopathy or family history of premature ASCVD. He has no history of cardiovascular disease. Fasting lipids: total cholesterol 175 mg/dL, LDL-C 100 mg/dL, HDL-C 50 mg/dL, triglycerides 125 mg/dL. Which of the following is the most appropriate lipid management in addition to lifestyle therapy?",
+  "choices": [
+   "Moderate-intensity statin (e.g., atorvastatin 10–20 mg daily)",
+   "No drug therapy, because his LDL-C is below 130 mg/dL",
+   "Low-intensity statin (e.g., simvastatin 10 mg daily)",
+   "Ezetimibe 10 mg daily as monotherapy",
+   "Fenofibrate 160 mg daily"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: statin ยับยั้ง **HMG-CoA reductase** → cholesterol ในเซลล์ตับลด → กระตุ้น **SREBP-2 → เพิ่ม LDL receptor** บนผิวเซลล์ตับ → ดึง LDL ออกจากเลือด จาก CTT meta-analysis ทุก ๆ **LDL ที่ลด 1 mmol/L (~39 mg/dL) → ลด major vascular event ~21%** โดย **ไม่ขึ้นกับ LDL ตั้งต้น** — ผู้ป่วยเบาหวานมีความเสี่ยงพื้นฐานสูง จึงได้ประโยชน์สัมบูรณ์มากแม้ LDL \"ไม่สูง\"\n\nADA 2025 (primary prevention ในเบาหวาน):\n| กลุ่ม | statin |\n|---|---|\n| อายุ 40–75 ปี **ไม่มี ASCVD** | **moderate-intensity** (+ lifestyle) |\n| อายุ 40–75 ปี มี ≥ 1 ASCVD risk factor | **high-intensity**, ลด LDL ≥ 50% และเป้า < 70 mg/dL |\n| มี ASCVD แล้ว | high-intensity, เป้า LDL < 55 mg/dL (เพิ่ม ezetimibe/PCSK9i ถ้าไม่ถึง) |\n| อายุ 20–39 ปี มี risk factor | พิจารณา statin ได้ |\n\n| ความแรงของ statin | ลด LDL | ตัวอย่าง |\n|---|---|---|\n| High | ≥ 50% | atorvastatin 40–80, rosuvastatin 20–40 |\n| **Moderate** | **30–49%** | **atorvastatin 10–20, rosuvastatin 5–10, simvastatin 20–40** |\n| Low | < 30% | simvastatin 10, pravastatin 10–20 |\n\nผู้ป่วยอายุ 52 ปี ไม่มี ASCVD และไม่มี risk factor เพิ่ม (ไม่สูบบุหรี่ BP ปกติ ไม่มี albuminuria/CKD/retinopathy) → **moderate-intensity statin**\n\n**ทำไมตัวลวงผิด**\n- **ไม่ให้ยาเพราะ LDL < 130**: ในเบาหวานอายุ 40–75 ปีให้ statin โดย **ไม่ต้องรอ LDL สูง** — ข้อบ่งชี้มาจากความเสี่ยงรวม ไม่ใช่ตัวเลข LDL\n- **Low-intensity statin**: ลด LDL < 30% ไม่ถึงระดับที่การศึกษาพิสูจน์ประโยชน์ในเบาหวาน (CARDS ใช้ atorvastatin 10 mg)\n- **Ezetimibe เดี่ยว**: ใช้เป็นยาเสริมเมื่อ statin ขนาดที่ทนได้ไม่ถึงเป้า หรือแพ้ statin — ไม่ใช่ยาแรก\n- **Fenofibrate**: ลด TG เป็นหลัก — FIELD และ ACCORD-Lipid **ไม่ลด CV event** และ TG 125 ปกติอยู่แล้ว\n\n> หมายเหตุจาก recall: ต้นฉบับมีตัวเลือก \"lifestyle modification, low dose statin, mod-high statin, ezetimibe\" — ถ้าผู้ป่วยมี risk factor เพิ่ม (เช่น สูบบุหรี่ ความดันสูง albuminuria) คำตอบจะขยับเป็น high-intensity",
+  "pearl": "เบาหวานอายุ 40–75 ปีที่ไม่มี ASCVD ให้ moderate-intensity statin เสมอโดยไม่ต้องดูค่า LDL; ถ้ามี ASCVD risk factor เพิ่มให้ high-intensity",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 68 — DM LDL 100 ทำไร —> lifestyle modification, low dose statin, mod-high statin, etezimibe",
+   "ADA Standards of Care in Diabetes—2025 – Section 10: Cardiovascular Disease and Risk Management",
+   "RCPT Clinical Practice Guideline on Pharmacologic Therapy of Dyslipidemia for Atherosclerotic Cardiovascular Disease Prevention 2016"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4",
+   "2.3.9(3)",
+   "B7.4(8)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-69",
+  "lec": "K04",
+  "lecture": "ลงกอง 3 · Endocrine & diabetes",
+  "topic": "Type 2 diabetes with HFrEF – add-on to metformin",
+  "stem": "A 64-year-old man with type 2 diabetes takes metformin 2,000 mg/day; HbA1c is 8.0%. He has heart failure with reduced ejection fraction (LVEF 30%, NYHA class II) treated with sacubitril/valsartan, carvedilol, spironolactone and furosemide. BP 112/70 mmHg, eGFR 55 mL/min/1.73 m², K 4.6 mEq/L. Which of the following is the most appropriate glucose-lowering agent to add?",
+  "choices": [
+   "Empagliflozin (SGLT2 inhibitor)",
+   "Glipizide (sulfonylurea)",
+   "Saxagliptin (DPP-4 inhibitor)",
+   "Pioglitazone (thiazolidinedione)",
+   "Insulin glargine (basal insulin)"
+  ],
+  "answer": 0,
+  "explain": "**กลไก**: SGLT2 ที่ proximal tubule ดูดกลูโคสที่กรองกลับ ~90% — ยับยั้งแล้วเกิด **glycosuria + natriuresis** → ลด preload/afterload และ volume โดยไม่กระตุ้น sympathetic มาก; Na ที่มาถึง macula densa มากขึ้นฟื้น **tubuloglomerular feedback** → afferent หด → ลด intraglomerular pressure (ปกป้องไต); นอกจากนี้ยังเปลี่ยนพลังงานหัวใจไปใช้ ketone ลด fibrosis และเพิ่ม hematocrit\n**DAPA-HF (dapagliflozin) และ EMPEROR-Reduced (empagliflozin)** ลด **CV death หรือ HF hospitalization ราว 25%** ไม่ว่าจะมีเบาหวานหรือไม่ → ทั้ง ADA 2025 และ AHA/ACC/HFSA 2022 จัด SGLT2i เป็น **หนึ่งในสี่เสาหลักของ HFrEF** (ARNI/ACEI/ARB, β-blocker, MRA, SGLT2i)\n\n**ทำไมตัวลวงผิด**\n- **Glipizide**: ลดน้ำตาลได้แต่ไม่มีประโยชน์ต่อ HF และเพิ่ม hypoglycemia\n- **Saxagliptin**: SAVOR-TIMI 53 พบ **เพิ่ม HF hospitalization ~27%** — FDA เตือนให้ระวังในผู้ป่วย HF (alogliptin ก็มีสัญญาณคล้ายกัน)\n- **Pioglitazone**: กระตุ้น PPARγ → เพิ่มการดูด Na ผ่าน **ENaC ที่ collecting duct** → บวมน้ำและ HF แย่ลง — **ห้ามใน NYHA III–IV** และไม่แนะนำใน HF ที่มีอาการ\n- **Insulin glargine**: CV neutral แต่ทำให้ Na/น้ำคั่ง น้ำหนักขึ้น และ hypoglycemia — ใช้เมื่อยาอื่นไม่พอ ไม่ใช่ยาที่เลือกเพื่อประโยชน์ต่อหัวใจ\n\nข้อควรระวังเมื่อเริ่ม SGLT2i: อาจต้องลดขนาด loop diuretic, เฝ้าระวัง euglycemic DKA (หยุดยาก่อนผ่าตัด/เมื่อป่วยหนัก/อดอาหาร), genital mycotic infection; eGFR ลดลงเล็กน้อยช่วงแรกเป็นเรื่องที่คาดได้ (hemodynamic) — ใช้ได้ถึง eGFR ≥ 20",
+  "pearl": "T2DM + HFrEF → เพิ่ม SGLT2 inhibitor (ลด CV death/HF admission ไม่ขึ้นกับ HbA1c); หลีกเลี่ยง pioglitazone และ saxagliptin",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 69 — DM กิน metformin อยู่แต่ยังคุมไม่ดีให้ไรเพิ่ม —> SU, GLP1, DDP4, SGLT2",
+   "ADA Standards of Care in Diabetes—2025 – Section 9 & 10",
+   "Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.4",
+   "2.3.9(5)",
+   "B7.2.5(2)"
+  ]
+ }
+]
