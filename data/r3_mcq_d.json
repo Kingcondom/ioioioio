@@ -1,0 +1,494 @@
+[
+ {
+  "id": "R3-MCQ-24",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Ischaemic stroke mechanism with atrial fibrillation",
+  "stem": "A 74-year-old man with hypertension is brought to the emergency department 50 minutes after he suddenly slumped while watching television. His wife says the weakness was maximal from the very first moment. Examination: PR 112/min and irregularly irregular, BP 164/92 mmHg; global aphasia, right facial weakness, right arm weakness worse than leg (power 1/5 arm, 3/5 leg) and left gaze preference. No carotid bruit. ECG shows no discernible P waves with irregular R-R intervals. Non-contrast CT brain shows no haemorrhage. Subsequent MRI shows a large left MCA cortical infarct plus a small acute infarct in the right occipital lobe. Carotid duplex shows less than 30% stenosis bilaterally. Which of the following is the most likely mechanism of this stroke?",
+  "choices": [
+   "Cardioembolism from a left atrial appendage thrombus",
+   "Large-artery atherosclerosis with artery-to-artery embolism",
+   "Small-vessel (lacunar) occlusion of a penetrating artery",
+   "Watershed infarction from global cerebral hypoperfusion",
+   "Dissection of the left internal carotid artery"
+  ],
+  "answer": 0,
+  "explain": "กลไก: ใน **atrial fibrillation** atrium ไม่บีบตัวเป็นจังหวะ (เสีย atrial kick) → เลือดไหลช้าและวนค้างใน **left atrial appendage (LAA)** ซึ่งเป็นถุงตันมีร่องกล้ามเนื้อ → ครบ Virchow triad (stasis + endothelial/endocardial dysfunction + hypercoagulable) → เกิด **thrombus ก้อนใหญ่ที่อุดมด้วย fibrin (\"red clot\")** → หลุดตามกระแสเลือดไปอุด**หลอดเลือดใหญ่ส่วนต้น** ทันที\n\nลักษณะที่ชี้ไปทาง **cardioembolism** ในโจทย์:\n- **อาการมากที่สุดตั้งแต่วินาทีแรก (maximal at onset)** — ก้อนอุดทันที ไม่มี collateral ช่วย\n- **cortical signs** (aphasia, gaze preference) = อุดสาขาใหญ่ของ MCA ไม่ใช่ penetrating artery\n- **infarct หลาย territory พร้อมกัน** (left MCA + right PCA) → แหล่งก้อนต้องอยู่ \"ต้นน้ำ\" ของทั้งสองข้าง คือหัวใจ/aortic arch\n- ชีพจร irregularly irregular + ECG ไม่มี P wave = AF; carotid ตีบ <30% จึงไม่ใช่ large-artery source\n\n| TOAST subtype | ลักษณะเด่น |\n|---|---|\n| **Cardioembolism** | AF/LV thrombus/endocarditis, onset ทันที, cortical, หลาย territory, hemorrhagic transformation บ่อย |\n| Large-artery atherosclerosis | carotid/intracranial stenosis ≥50% ข้างเดียวกับ infarct, มักมี TIA นำมาก่อน stepwise |\n| Small-vessel (lacunar) | lacunar syndrome (pure motor, pure sensory, ataxic hemiparesis) ไม่มี cortical sign, infarct <15 mm |\n| Other determined | dissection, vasculitis, hypercoagulable |\n| Undetermined | หาไม่เจอหรือมีหลายสาเหตุ |\n\nทำไมข้ออื่นผิด:\n- **Large-artery atherosclerosis**: ต้องมีรอยตีบ ≥50% ของหลอดเลือดที่เลี้ยง territory นั้น — carotid <30% และ artery-to-artery embolism อธิบาย infarct ฝั่ง **right PCA** ไม่ได้\n- **Lacunar**: เกิดจาก lipohyalinosis ของ penetrating artery → ไม่มี aphasia/gaze deviation และไม่เกิดหลาย territory\n- **Watershed (hypoperfusion)**: เกิดเมื่อ BP ตกทั้งระบบ (cardiac arrest, shock) — ผู้ป่วย BP 164/92 และ infarct เป็นแบบ territorial ไม่ใช่ border zone\n- **ICA dissection**: นึกถึงในคนอายุน้อย มีปวดคอ/หน้า Horner syndrome ประวัติ trauma/neck manipulation และจะอธิบาย infarct ฝั่งขวาไม่ได้\n\nต่อยอด: หลังผ่านระยะเฉียบพลันให้ **anticoagulant (DOAC มากกว่า warfarin)** เพื่อป้องกันซ้ำ ไม่ใช่ antiplatelet; ช่วงเวลาเริ่มขึ้นกับขนาด infarct (ELAN 2023 แสดงว่าเริ่ม DOAC เร็วปลอดภัยพอ ๆ กับเริ่มช้า) และประเมินด้วย CHA2DS2-VASc",
+  "pearl": "AF + stroke ที่อาการเต็มที่ตั้งแต่แรก มี cortical sign และ infarct หลาย territory = cardioembolism → ป้องกันซ้ำด้วย anticoagulant ไม่ใช่ aspirin",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 24 — Irregularly irregular เป็น stroke -> cardioembolism",
+   "TOAST classification (Adams 1993); AHA/ASA Secondary Stroke Prevention 2021; ELAN trial 2023"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.9-3(3)",
+   "2.3.9(1)",
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-25",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Classification of pain – lumbar radicular pain",
+  "stem": "A 44-year-old warehouse worker develops low back pain 2 weeks after lifting a heavy box. The pain now shoots from the buttock down the posterolateral thigh and lateral calf to the dorsum of the right foot and great toe. He describes it as burning and electric shock-like, with numbness and pins-and-needles in the same distribution; coughing makes it worse. Examination: straight-leg raise reproduces the leg pain at 40 degrees on the right; weakness of right great-toe dorsiflexion (4/5); reduced pinprick over the dorsum of the right foot; knee and ankle reflexes are normal. Which type of pain best describes his leg pain?",
+  "choices": [
+   "Neuropathic (radicular) pain from nerve root compression",
+   "Nociceptive somatic pain from paraspinal muscle strain",
+   "Somatic referred pain arising from the lumbar facet joints",
+   "Visceral referred pain from a retroperitoneal organ",
+   "Nociplastic pain from central sensitization"
+  ],
+  "answer": 0,
+  "explain": "กลไก: หมอนรองกระดูก L4–L5 ปลิ้น (herniated nucleus pulposus) กดและทำให้ **รากประสาท L5** อักเสบ (ทั้งแรงกดเชิงกลและสารอักเสบจาก nucleus pulposus เช่น TNF-α) → เกิด **ectopic discharge จากตัวเส้นประสาทเอง** และ dorsal root ganglion → ปวดตามแนว **dermatome** ของรากนั้น ซึ่งตามนิยาม IASP คือ **neuropathic pain** = ปวดจาก lesion/disease ของ somatosensory nervous system\n\nลักษณะ neuropathic ในโจทย์:\n- คุณภาพ **แสบร้อน ช็อตไฟฟ้า ชา เป็นเหน็บ** (positive + negative sensory symptoms)\n- กระจาย **ตาม dermatome ลงไปถึงใต้เข่า/เท้า** (L5 = หลังเท้า + นิ้วโป้ง)\n- มี **neurologic deficit** (EHL อ่อน, pinprick ลด) และ **SLR บวก** (นิยาม radiculopathy)\n- ไอ/เบ่งแล้วปวดมากขึ้น (เพิ่มแรงดันใน epidural space)\n\n| ชนิดปวด | กลไก | ลักษณะ |\n|---|---|---|\n| **Neuropathic (radicular)** | lesion ของเส้นประสาท/ราก | แสบ ช็อต ชา ตาม dermatome ลงใต้เข่า มี deficit |\n| Nociceptive somatic | กระตุ้น nociceptor ในกล้ามเนื้อ/ข้อ/เอ็น | ปวดตื้อ เฉพาะที่ ขยับแล้วปวด |\n| Somatic referred | nociceptor ที่ facet/disc ส่งเข้า dorsal horn เดียวกับขา | ปวดตื้อ ลึก ขอบเขตไม่ชัด มักไม่เลยเข่า ไม่มี deficit |\n| Visceral | อวัยวะภายใน | ปวดลึก บอกตำแหน่งไม่ได้ มีอาการระบบอัตโนมัติร่วม |\n| Nociplastic | central sensitization ไม่มี lesion ชัด | ปวดกระจายหลายที่ (fibromyalgia) ตรวจไม่พบรอยโรค |\n\nทำไมข้ออื่นผิด:\n- **Muscle strain (nociceptive somatic)**: อธิบายอาการปวดหลังได้ แต่ไม่อธิบายอาการแสบ/ช็อต ชาตาม dermatome และกำลังกล้ามเนื้อที่ลดลง\n- **Facet joint referred pain**: ร้าวลงต้นขาได้ แต่ **ไม่ลงต่ำกว่าเข่า ไม่มีชา ไม่มี neurologic deficit และ SLR ลบ** — เป็นกับดักที่พบบ่อยที่สุด\n- **Visceral referred pain** (เช่น ไต, aortic aneurysm): ไม่สัมพันธ์กับการไอ/SLR และไม่มี dermatomal sensory loss\n- **Nociplastic**: วินิจฉัยเมื่อ**ไม่มี** lesion ที่อธิบายอาการ — เคสนี้มี lesion ชัดเจน\n\nการดูแล: ส่วนใหญ่หายเองใน 6–12 สัปดาห์ → ให้ยาแก้ปวด + เคลื่อนไหวตามทน; ถ้ามี **red flag** (cauda equina: saddle anesthesia, ปัสสาวะไม่ออก; motor deficit ก้าวหน้า) ต้อง MRI ด่วน",
+  "pearl": "ปวดหลังร้าวลงขา 'เลยเข่า ตาม dermatome + ชา/แสบ/ช็อต + SLR บวก' = radicular neuropathic pain; ถ้าร้าวแค่ต้นขา ไม่มี deficit มักเป็น somatic referred pain",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 25 — ชนิด pain ที่หลังล่าง ร้าวลงขา - neuropathic pain",
+   "IASP Terminology (revised 2017, nociplastic pain)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.13(4)",
+   "B5.2.3(2)",
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-39",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Alcohol withdrawal – delirium tremens",
+  "stem": "A 48-year-old man who has drunk about a bottle of whisky daily for 15 years is admitted for a closed femoral fracture. His last drink was 72 hours ago. Over the past 12 hours he has become agitated and disoriented to time and place, keeps picking at the bed sheets and says insects are crawling on the walls. BT 38.4 C, PR 128/min, BP 170/100 mmHg, RR 24/min. He is drenched in sweat and has a coarse tremor of the outstretched hands. Eye movements are full without nystagmus; there is no asterixis, jaundice or ascites. Capillary glucose 112 mg/dL, serum Na 137 mEq/L. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Delirium tremens",
+   "Wernicke encephalopathy",
+   "Alcoholic hallucinosis",
+   "Hepatic encephalopathy",
+   "Postictal state after an alcohol withdrawal seizure"
+  ],
+  "answer": 0,
+  "explain": "กลไก: แอลกอฮอล์เรื้อรัง **เสริม GABA-A** และ **ยับยั้ง NMDA (glutamate)** → สมองปรับตัวโดย **down-regulate GABA-A** และ **up-regulate NMDA** เมื่อหยุดดื่มทันที เบรกหาย คันเร่งค้าง → **glutamatergic + noradrenergic storm** → hyperexcitability ของสมองและระบบประสาทอัตโนมัติ\n\nไทม์ไลน์ของ alcohol withdrawal (นับจากแก้วสุดท้าย):\n| ระยะ | เวลา | ลักษณะ |\n|---|---|---|\n| Minor withdrawal | 6–24 ชม. | มือสั่น นอนไม่หลับ ใจสั่น วิตกกังวล |\n| Alcoholic hallucinosis | 12–48 ชม. | เห็น/ได้ยินภาพหลอน แต่ **รู้สติดี (clear sensorium)** vital signs เกือบปกติ |\n| Withdrawal seizure | 6–48 ชม. | GTC สั้น ๆ มักครั้งเดียวหรือเป็นชุด |\n| **Delirium tremens** | **48–96 ชม.** | **delirium (สับสน สมาธิผันผวน) + ภาพหลอน + autonomic hyperactivity: ไข้ HR/BP สูง เหงื่อท่วม** |\n\nผู้ป่วยรายนี้หยุดดื่ม 72 ชม. มี **delirium** (disoriented, picking at sheets) + visual hallucination + **ไข้ tachycardia hypertension diaphoresis** = **DT** ซึ่งตายได้ (5–15% ถ้าไม่รักษา) จาก arrhythmia, hyperthermia, aspiration\n\nรักษา: ICU/monitor, **benzodiazepine** ขนาดสูงพอ (diazepam/lorazepam, ปรับตาม CIWA-Ar หรือ RASS), **thiamine IV ก่อนให้ glucose**, IV fluid, electrolyte (Mg, K, PO4), หา trigger อื่น (ติดเชื้อ, เลือดออก)\n\nทำไมข้ออื่นผิด:\n- **Wernicke encephalopathy**: thiamine deficiency → triad สับสน + **ophthalmoplegia/nystagmus** + **ataxia**; ไม่มีไข้ เหงื่อแตก หรือ hyperadrenergic state — โจทย์ระบุ eye movement ปกติ (แต่ยังต้องให้ thiamine ป้องกันเสมอ)\n- **Alcoholic hallucinosis**: มาเร็วกว่า (12–48 ชม.) และจุดแยกสำคัญคือ **ผู้ป่วยรู้ตัว orientation ปกติ** vital signs ไม่ผิดปกติมาก\n- **Hepatic encephalopathy**: มี asterixis, stigmata ของตับแข็ง; มักซึมช้า ไม่ใช่ hyperadrenergic\n- **Postictal state**: สับสนชั่วคราวหลังชัก (นาที–ชั่วโมง) ไม่มีประวัติชัก และไม่อธิบายไข้ เหงื่อ tachycardia ที่ต่อเนื่อง\n\n> หมายเหตุจาก recall: recall จดตัวเลือก \"delirium tremens, Wernicke\" — คำตอบคือ delirium tremens เพราะมี hallucination + autonomic hyperactivity ตามเวลา; Wernicke ใช้เป็นตัวลวง แต่สองภาวะเกิดร่วมกันได้ จึงต้องให้ thiamine ทุกรายที่ดื่มหนัก",
+  "pearl": "หยุดเหล้า 48–96 ชม. + สับสน + ภาพหลอน + ไข้/HR/BP สูง/เหงื่อท่วม = delirium tremens → benzodiazepine + thiamine ก่อน glucose; ถ้าภาพหลอนแต่รู้สติดี = alcoholic hallucinosis",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 39 — กิน Alcohol เห็นภาพหลอน เป็นอะไร -delirium tremen, wenicke",
+   "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management 2020"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.6",
+   "2.1.1"
+  ]
+ },
+ {
+  "id": "R3-MCQ-52",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Focal epilepsy – starting maintenance antiseizure medication",
+  "stem": "A 26-year-old man has had three stereotyped episodes in the past 6 months. Each begins with a rising epigastric sensation, after which he stares blankly and is unresponsive for 1–2 minutes with lip-smacking and fumbling movements of the right hand, followed by 10 minutes of confusion; he cannot recall the events. None was provoked by sleep deprivation, alcohol, drugs or illness. He is now seizure-free and his neurological examination is normal. MRI brain shows left mesial temporal sclerosis, and EEG shows left anterior temporal interictal spikes. Serum electrolytes and glucose are normal, and HLA-B*15:02 is negative. Which of the following is the most appropriate management?",
+  "choices": [
+   "Start long-term oral carbamazepine monotherapy",
+   "Give intravenous diazepam now",
+   "Observe without medication until another seizure occurs",
+   "Give an intravenous phenobarbital loading dose",
+   "Refer for anterior temporal lobectomy now"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **mesial temporal sclerosis** (neuronal loss + gliosis ใน hippocampus) ทำให้เกิดวงจร hyperexcitable → **focal seizure** ที่เริ่มด้วย aura (epigastric rising) แล้วกลายเป็น **focal impaired-awareness seizure** (เดิมเรียก complex partial) มี automatism (lip-smacking, fumbling) และ postictal confusion\n\nตามนิยาม ILAE ผู้ป่วยเป็น **epilepsy** แล้ว เพราะมี **unprovoked seizure ≥2 ครั้งห่างกัน >24 ชม.** (มี 3 ครั้ง) และยังมี structural lesion + epileptiform EEG ซึ่งทำนายการชักซ้ำสูงมาก → ข้อบ่งชี้ให้เริ่ม **antiseizure medication (ASM) ระยะยาว** แม้ตอนนี้ไม่ชัก\n\n**Carbamazepine**: ยับยั้ง **voltage-gated Na+ channel** (จับช่องในสภาพ inactivated) → ลด high-frequency repetitive firing → เป็น first-line สำหรับ **focal seizure** (ร่วมกับ lamotrigine, levetiracetam, oxcarbazepine)\n- ในคนไทย/เอเชีย ต้องตรวจ **HLA-B*15:02** ก่อนเริ่ม (เสี่ยง SJS/TEN) — โจทย์ตรวจแล้วเป็นลบ\n- AE อื่น: hyponatremia (SIADH), leukopenia, hepatotoxicity, enzyme inducer (ลดฤทธิ์ยาคุม/warfarin), teratogen\n\nทำไมข้ออื่นผิด:\n- **IV diazepam ตอนนี้**: benzodiazepine เป็นยา **ยุติการชักเฉียบพลัน/status epilepticus** — ผู้ป่วยไม่ได้ชักอยู่ ฤทธิ์สั้น ไม่ป้องกันการชักซ้ำ\n- **รอให้ชักอีกครั้ง**: แนวทาง \"ยังไม่ให้ยา\" ใช้กับ **first unprovoked seizure** ที่ความเสี่ยงต่ำ ผู้ป่วยรายนี้ชักมาแล้ว 3 ครั้ง ความเสี่ยงชักซ้ำ >60%\n- **Phenobarbital loading IV**: ใช้ใน status epilepticus ที่ดื้อ benzodiazepine; ในการรักษาระยะยาวผลข้างเคียงด้าน cognition/sedation มากกว่า และไม่มีข้อบ่งชี้ให้ loading ทางเส้นเลือด\n- **Temporal lobectomy ทันที**: ได้ผลดีมากใน mesial temporal sclerosis แต่ข้อบ่งชี้คือ **drug-resistant epilepsy** (ล้มเหลว ASM ที่เหมาะสม 2 ตัว) — ยังไม่เคยลองยาเลย\n\n> หมายเหตุจาก recall: recall จด \"Diazepam (ถ้า initial) แต่ตอบ carba\" — diazepam ใช้หยุดการชักที่กำลังเกิด ส่วนคำถามนี้คือการป้องกันการชักซ้ำในผู้ป่วยที่ไม่ได้ชักอยู่ จึงตอบ carbamazepine ซึ่งตรงกับแนวทาง",
+  "pearl": "Unprovoked seizure ≥2 ครั้ง = epilepsy → เริ่ม ASM ระยะยาว; focal seizure ให้ carbamazepine/lamotrigine/levetiracetam และคนไทยต้องตรวจ HLA-B*15:02 ก่อนให้ carbamazepine",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 52 — ชัก3ครั้งใน6เดือน -> Diazepem(ถ้าinitial) แต่ตอบcarba",
+   "ILAE practical clinical definition of epilepsy 2014; NICE NG217 Epilepsies 2022"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-53",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Psychogenic non-epileptic seizure versus epileptic seizure",
+  "stem": "A 24-year-old woman is referred for recurrent convulsive episodes that have continued despite two antiseizure medications. Episodes last 5–15 minutes and often occur after arguments at home. Interictal EEG and MRI brain are normal. She is admitted for video-EEG monitoring. If observed during a typical event, which of the following features most strongly favors a psychogenic non-epileptic seizure (PNES) over an epileptic seizure?",
+  "choices": [
+   "Eyes kept tightly closed throughout, resisting passive opening",
+   "Laceration on the lateral border of the tongue",
+   "Confusion and drowsiness lasting 20 minutes after the event ends",
+   "Onset of the event out of EEG-confirmed sleep",
+   "Urinary incontinence during the event"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **PNES (functional/dissociative seizure)** ไม่มี hypersynchronous discharge ของ cortex — เป็นการตอบสนองทาง dissociative ที่ผู้ป่วยไม่ได้แกล้ง ส่วน epileptic seizure (โดยเฉพาะ GTC) เกิดจาก cortical discharge ที่ทำให้ **สติหายจริง** ระหว่างชัก กล้ามเนื้อเกร็งกระตุกแบบ tonic-clonic ทั่วร่าง → **ตามักเปิดค้าง** (ลืมตา) และหลังชักสมองล้า (postictal depression)\n\nใน PNES การรับรู้ยังหลงเหลืออยู่บางส่วน → **หลับตาแน่นตลอดอาการและขัดขืนเมื่อพยายามเปิดตา** — เป็นหนึ่งใน sign ที่ specific ที่สุด (ictal eye closure, specificity ~90%+)\n\n| ลักษณะ | ชี้ไปทาง PNES | ชี้ไปทาง epileptic seizure |\n|---|---|---|\n| ตาขณะชัก | **ปิดแน่น ขัดขืนการเปิด** | เปิดค้าง |\n| ระยะเวลา | นาน >2–5 นาที ขึ้นลง waxing-waning | สั้น 1–2 นาที stereotyped |\n| การเคลื่อนไหว | asynchronous, ส่ายหัวซ้ายขวา, pelvic thrusting | synchronous tonic → clonic |\n| กัดลิ้น | ปลายลิ้น (ถ้ามี) | **ข้างลิ้น (lateral)** |\n| หลังชัก | ตื่นเร็ว ร้องไห้ จำเหตุการณ์ได้ | **สับสน ง่วง หายใจ stertorous** |\n| เกิดขณะหลับ | \"pseudo-sleep\" (EEG ตื่น) | **เกิดจากหลับจริงบน EEG** |\n| ปัสสาวะราด | พบได้ | พบได้ — **แยกไม่ได้** |\n\nทำไมข้ออื่นผิด:\n- **กัดข้างลิ้น**: specific ต่อ GTC (specificity ~96%) → ชี้ไปทาง epileptic\n- **สับสนง่วงหลังอาการ 20 นาที**: postictal confusion ชี้ไปทาง epileptic; ใน PNES มักฟื้นทันที\n- **เกิดจากการหลับที่ยืนยันด้วย EEG**: PNES เกิดได้แค่ตอนผู้ป่วย \"ดูเหมือนหลับ\" แต่ EEG ยังตื่น — ถ้าเกิดจากหลับจริงคือ epileptic\n- **ปัสสาวะราด**: พบได้ทั้งสองแบบ ไม่ช่วยแยกโรค (แม้หลายคนจำว่าเป็นของ epilepsy)\n\nมาตรฐานการวินิจฉัย = **video-EEG จับอาการตามปกติได้** และ EEG ไม่มี epileptiform activity ระหว่างอาการ; อย่าลืมว่า ~10–20% มีทั้ง epilepsy และ PNES ร่วมกัน\n\n> หมายเหตุจาก recall: recall จด \"หลับตา, ไม่มี confusion หลังตื่น, กลั้นปัสสาวะ\" — หลับตาเป็น sign ที่ดีที่สุด, การไม่มี postictal confusion ก็สนับสนุน PNES (ข้อนี้จึงเขียนตัวลวงในรูป \"มี postictal confusion\"), ส่วนปัสสาวะราด/กลั้นปัสสาวะไม่ใช่ตัวแยกที่เชื่อถือได้",
+  "pearl": "ตาปิดแน่นระหว่างชัก = นึกถึง PNES; ตาเปิด + กัดข้างลิ้น + postictal confusion = epileptic; ปัสสาวะราดแยกไม่ได้ — ยืนยันด้วย video-EEG",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 53 — อะไรทำให้นึกถึง PNES มากกว่า epiletic seizure -> หลับตา, ไม่มี confusion หลังตื่น, กลั้นปสว",
+   "ILAE Task Force minimum requirements for PNES diagnosis (LaFrance 2013)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-55",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Neuroanatomy – function of the reticulospinal tract",
+  "stem": "A 63-year-old man has a left internal capsule infarct that destroyed most of the corticospinal fibres to the right side. Six months later he still cannot perform fine independent finger movements with the right hand, yet he can stand, maintain an upright posture and walk with a circumducting gait using his trunk and proximal limb muscles. Part of this recovery is attributed to a descending pathway that arises from the pontine and medullary reticular formation and travels in the anterior and anterolateral funiculi of the spinal cord. Which of the following is the principal function of this pathway?",
+  "choices": [
+   "Regulation of axial and proximal limb muscle tone for posture and locomotion",
+   "Fine, fractionated voluntary control of the distal hand and finger muscles",
+   "Facilitation of upper-limb flexor muscles via the red nucleus",
+   "Reflex turning of the head and eyes toward a visual stimulus",
+   "Conscious proprioception and vibration sense from the limbs"
+  ],
+  "answer": 0,
+  "explain": "กลไก: tract สั่งการที่ลงมาจากก้านสมองแบ่งเป็น 2 ระบบ (Kuypers)\n- **Lateral system** (lateral corticospinal, rubrospinal) → วิ่งใน lateral funiculus ไปที่ motor neuron ของ **กล้ามเนื้อปลายแขนขา** → ควบคุมการเคลื่อนไหวละเอียด\n- **Medial system** (**reticulospinal**, vestibulospinal, tectospinal, anterior corticospinal) → วิ่งใน anterior/anteromedial funiculus ไปที่ motor neuron ของ **กล้ามเนื้อแกนกลางลำตัวและต้นแขนขา** แบบสองข้าง → ควบคุม **ท่าทาง ความตึงตัว (tone) การทรงตัวรอรับการเคลื่อนไหว (anticipatory postural adjustment) และการเดิน**\n\n**Reticulospinal tract** มี 2 ส่วน:\n| ส่วน | จุดเริ่ม | ทางเดิน | ผลต่อ tone |\n|---|---|---|---|\n| Pontine (medial) RST | pontine reticular formation | ข้างเดียวกัน anterior funiculus | **กระตุ้น extensor/antigravity** |\n| Medullary (lateral) RST | medullary reticular formation | ทั้งสองข้าง anterolateral funiculus | **ยับยั้ง** extensor tone (ต้องได้ drive จาก cortex) |\n\nโยงคลินิก:\n- หลัง stroke ที่ทำลาย corticospinal → **ทักษะมือละเอียดไม่กลับมา** แต่ **การยืนเดินและการขยับต้นแขนขา** ฟื้นได้ส่วนหนึ่งผ่าน reticulospinal (สองข้าง)\n- รอยโรค UMN ตัด cortical drive ต่อ medullary RST (ตัวยับยั้ง) → pontine RST + vestibulospinal ทำงานเกิน → **spasticity / hyperreflexia** และ **decerebrate posturing** เมื่อรอยโรคต่ำกว่า red nucleus\n\nทำไมข้ออื่นผิด:\n- **Fine distal hand movement** = **lateral corticospinal tract** (ส่วนที่ผู้ป่วยสูญเสียไปถาวร)\n- **กระตุ้น flexor แขนผ่าน red nucleus** = **rubrospinal tract** (เกี่ยวกับ decorticate posture เมื่อรอยโรคอยู่เหนือ red nucleus)\n- **หันหัวและตาตามสิ่งเร้าทางสายตา** = **tectospinal tract** (จาก superior colliculus)\n- **Conscious proprioception/vibration** = **dorsal column–medial lemniscus** ซึ่งเป็น sensory tract ไม่ใช่ motor\n\n> หมายเหตุจาก recall: recall จดไว้เพียง \"Reticulo tract???\" จำโจทย์จริงไม่ได้ ข้อนี้จึงเขียนใหม่ให้ถามหน้าที่หลักของ reticulospinal tract ซึ่งเป็นประเด็นที่น่าจะออกมากที่สุด",
+  "pearl": "Medial descending system (reticulospinal, vestibulospinal) = แกนกลางลำตัว/ต้นแขนขา ท่าทางและการเดิน; lateral system (corticospinal, rubrospinal) = ปลายแขนขา การเคลื่อนไหวละเอียด",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 55 — Reticulo tract???"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-56",
+  "lec": "K07",
+  "lecture": "ลงกอง 3 · Neurology",
+  "topic": "Stroke mimic – hypoglycaemia in a patient on sulfonylurea",
+  "stem": "A 78-year-old woman with type 2 diabetes treated with glibenclamide and metformin, and chronic kidney disease (eGFR 28 mL/min/1.73 m2), is brought to the emergency department after her daughter found her drowsy with right-sided weakness 1 hour ago. She has eaten very little for 2 days because of diarrhoea. BP 156/88 mmHg, PR 102/min, RR 18/min. She is sweaty, GCS E3V4M6, with right hemiparesis (power 3/5) and a right extensor plantar response. Which of the following should be performed first?",
+  "choices": [
+   "Point-of-care capillary blood glucose",
+   "Non-contrast CT scan of the brain",
+   "CT angiography of the head and neck",
+   "Intravenous alteplase once BP is below 185/110 mmHg",
+   "MRI brain with diffusion-weighted imaging"
+  ],
+  "answer": 0,
+  "explain": "กลไก: เซลล์ประสาทใช้ **glucose เป็นพลังงานหลักและแทบไม่มีสำรอง** เมื่อน้ำตาลต่ำ (<50 mg/dL) → ATP ลด → Na/K-ATPase ล้ม → depolarization และ cytotoxic edema เฉพาะจุดในบริเวณที่ไวต่อภาวะพร่องพลังงาน (internal capsule, cortex) → เกิด **focal deficit เหมือน stroke ได้** (hypoglycemic hemiplegia) ซึ่ง**กลับเป็นปกติทันทีเมื่อให้ glucose** แต่ถ้าปล่อยไว้นานจะเกิด neuronal death ถาวร\n\nผู้ป่วยรายนี้เสี่ยงสูงมาก:\n- **Glibenclamide** เป็น sulfonylurea ออกฤทธิ์ยาว มี **active metabolite ที่ขับทางไต** → สะสมใน CKD (eGFR 28) → hypoglycemia รุนแรงและนาน\n- กินไม่ได้ 2 วัน + อายุมาก (hypoglycemia unawareness)\n- มีเหงื่อออก ใจเร็ว = adrenergic response\n\nตามแนวทาง AHA/ASA 2019 **blood glucose เป็นการตรวจเดียวที่ต้องได้ผลก่อนให้ thrombolysis** และต้องทำทันทีที่ผู้ป่วยมาถึงในทุกราย acute stroke ใช้เวลาไม่ถึง 1 นาที\n\nทำไมข้ออื่นผิด (ไม่ใช่ \"ไม่ต้องทำ\" แต่ \"ไม่ใช่ลำดับแรก\"):\n- **Non-contrast CT brain**: จำเป็นเพื่อแยก hemorrhage ก่อน thrombolysis แต่ต้องตรวจน้ำตาลปลายนิ้วก่อน ซึ่งใช้เวลาไม่กี่วินาทีและอาจเปลี่ยนการวินิจฉัยทั้งหมด\n- **CTA head and neck**: ใช้หา large vessel occlusion เพื่อ thrombectomy — ทำหลัง CT และหลังแยก mimic แล้ว\n- **IV alteplase**: ให้ thrombolysis แก่ stroke mimic ที่เป็น hypoglycemia = ผิดร้ายแรง (เสี่ยงเลือดออกโดยไม่ได้ประโยชน์) และห้ามให้ก่อนทำ CT\n- **MRI DWI**: ไวสุดในการเห็น infarct แต่ใช้เวลานาน ไม่ใช่การตรวจแรกในห้องฉุกเฉิน\n\nการรักษาถ้าน้ำตาลต่ำ: **50% glucose 50 mL IV** แล้วต่อด้วย **10% dextrose drip** และเจาะน้ำตาลซ้ำบ่อย ๆ อย่างน้อย 24–72 ชม. เพราะ hypoglycemia จาก sulfonylurea **กลับมาซ้ำได้** (พิจารณา octreotide ถ้าเป็นซ้ำ); หยุด glibenclamide ถาวร",
+  "pearl": "ผู้ป่วยที่ดูเหมือน stroke ทุกราย โดยเฉพาะที่ใช้ insulin/sulfonylurea ต้องเจาะ capillary blood glucose เป็นอย่างแรก เพราะ hypoglycemia ทำให้อ่อนแรงครึ่งซีกได้และแก้ได้ภายในไม่กี่นาที",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 56 — คนไข้มาซึม เหมือนจะ stroke เเต่ถามว่าตรวจอะไรก่อน ตอบ ตรวจcapillary blood sugar",
+   "AHA/ASA Guidelines for the Early Management of Acute Ischemic Stroke 2019"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.17",
+   "2.3.9-3(3)",
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-17",
+  "lec": "K08",
+  "lecture": "ลงกอง 3 · Hematology & oncology",
+  "topic": "NSAID-induced upper GI bleeding – acute blood loss anaemia",
+  "stem": "A 62-year-old man with knee osteoarthritis has taken over-the-counter ibuprofen 400 mg three times daily for 2 weeks. For 2 days he has passed black, tarry stools and feels dizzy on standing. PR 112/min, BP 100/62 mmHg supine falling to 82/50 mmHg on sitting. A complete blood count at a health check 3 days ago was normal with Hb 13.2 g/dL. Today: Hb 8.1 g/dL, MCV 88 fL, RDW 13.5%, WBC 11,200/µL, platelets 310,000/µL, reticulocytes 1.4%, total bilirubin 0.6 mg/dL, BUN 46 mg/dL, creatinine 1.0 mg/dL. Which of the following best explains his anaemia?",
+  "choices": [
+   "Acute blood loss from NSAID-induced upper GI bleeding",
+   "Iron deficiency anaemia from chronic occult GI blood loss",
+   "NSAID-induced immune haemolytic anaemia",
+   "Anaemia of chronic inflammation from osteoarthritis",
+   "Drug-induced aplastic anaemia from ibuprofen"
+  ],
+  "answer": 0,
+  "explain": "กลไก: NSAID ยับยั้ง **COX-1** ในเยื่อบุกระเพาะ → **PGE2/PGI2 ลด** → mucus และ bicarbonate ลด, mucosal blood flow ลด, epithelial repair ช้า → **peptic ulcer** + ยับยั้ง **thromboxane A2** ของเกล็ดเลือด → เลือดหยุดยาก → **upper GI bleeding** (melena = เลือดผ่านลำไส้ถูกย่อยเป็น hematin)\n\nหลักฐานว่าเป็น **acute blood loss**:\n- **Hb ลด 5 g/dL ใน 3 วัน** — ถ้าไขกระดูกหยุดสร้างเลยทั้งหมด Hb จะลดเพียง ~1% ต่อวัน (RBC อยู่ได้ 120 วัน) ≈ 0.4 g/dL ใน 3 วัน → การลดเร็วขนาดนี้ต้องเป็น **เสียเลือดหรือ hemolysis** เท่านั้น\n- **Normocytic, RDW ปกติ** — RBC ที่เหลือคือเซลล์เดิมที่ปกติ\n- **Reticulocyte ยังไม่ขึ้น** — ไขกระดูกต้องใช้ 3–5 วันจึงตอบสนองเต็มที่\n- **BUN/Cr = 46** (>30) — โปรตีนจากเลือดถูกย่อยดูดซึม + prerenal จาก volume ลด → ชี้ไปทาง upper GI source\n- **Postural hypotension** = เสียเลือด ≥15–20% ของ blood volume\n- ข้อควรระวัง: Hb แรกหลังเลือดออกอาจยัง \"ปกติ\" เพราะเสียทั้ง plasma และ RBC พร้อมกัน Hb ลดจริงเมื่อเกิด hemodilution ใน 24–72 ชม. หรือหลังให้น้ำเกลือ\n\nทำไมข้ออื่นผิด:\n- **Iron deficiency จาก chronic loss**: ต้องใช้เวลาหลายสัปดาห์–เดือนจนเหล็กสำรองหมด → **microcytic hypochromic, RDW สูง** — เคสนี้ Hb ปกติเมื่อ 3 วันก่อน\n- **Immune hemolysis**: Hb ลดเร็วได้ แต่ต้องมี **reticulocytosis, indirect bilirubin/LDH สูง, haptoglobin ต่ำ, DAT บวก** และไม่มี melena\n- **Anemia of chronic inflammation**: ซีดเล็กน้อย (Hb 10–11) ค่อยเป็นค่อยไป และ OA ไม่ใช่โรคอักเสบระบบ\n- **Aplastic anemia**: ต้องมี **pancytopenia** — WBC และเกล็ดเลือดปกติ และ Hb ลดได้ช้ากว่านี้มาก\n\nการดูแล: resuscitation, **IV PPI**, หยุด NSAID, Glasgow-Blatchford score, **EGD ภายใน 24 ชม.**, ให้เลือดเมื่อ **Hb <7 g/dL** (≤8 ถ้ามีโรคหัวใจ)",
+  "pearl": "Hb ที่ลดเร็วกว่า ~1% ต่อวันเป็นไปไม่ได้จากไขกระดูกหยุดสร้าง ต้องเป็นเสียเลือดหรือ hemolysis; melena + BUN/Cr >30 + normocytic + retic ยังไม่ขึ้น = acute upper GI blood loss",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 17 — กิน ibuprofen - acute blood loss",
+   "International Consensus Group on Upper GI Bleeding (Barkun 2019)"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "B5.4(1)",
+   "2.3.3",
+   "2.3.11"
+  ]
+ },
+ {
+  "id": "R3-MCQ-38",
+  "lec": "K08",
+  "lecture": "ลงกอง 3 · Hematology & oncology",
+  "topic": "Megaloblastic anaemia with subacute combined degeneration – vitamin B12 deficiency",
+  "stem": "A 58-year-old woman with hypothyroidism presents with 6 months of fatigue, numbness and tingling of both feet and hands, and unsteadiness that is worse in the dark. Examination: pallor, mild scleral icterus and a smooth, beefy-red tongue. Vibration and joint-position sense are markedly reduced in both feet, Romberg sign is positive, ankle jerks are absent and both plantar responses are extensor. Laboratory: Hb 7.6 g/dL, MCV 118 fL, WBC 3,600/µL, platelets 118,000/µL, reticulocytes 0.6%; peripheral smear shows macro-ovalocytes and hypersegmented neutrophils; LDH 1,850 U/L, indirect bilirubin 2.0 mg/dL. Which of the following is the most likely diagnosis?",
+  "choices": [
+   "Vitamin B12 (cobalamin) deficiency",
+   "Folate deficiency",
+   "Myelodysplastic syndrome",
+   "Macrocytosis from alcohol-related liver disease",
+   "Autoimmune haemolytic anaemia with reticulocytosis"
+  ],
+  "answer": 0,
+  "explain": "กลไก: vitamin B12 เป็น cofactor ของ 2 เอนไซม์\n1. **Methionine synthase**: homocysteine + methyl-THF → methionine + THF → ถ้าขาด B12 folate ติดค้างในรูป methyl-THF (\"**folate trap**\") → สร้าง thymidine ไม่ได้ → **DNA synthesis บกพร่อง** → nuclear-cytoplasmic asynchrony → **megaloblastic** ในทุก cell line (macro-ovalocyte, **hypersegmented neutrophil**, pancytopenia) และเซลล์ตายในไขกระดูก (**ineffective erythropoiesis** = intramedullary hemolysis → **LDH สูงมาก, indirect bilirubin สูง, retic ต่ำ**)\n2. **Methylmalonyl-CoA mutase**: methylmalonyl-CoA → succinyl-CoA → ถ้าขาดจะมี **methylmalonic acid (MMA) สะสม** + methylation ของ myelin บกพร่อง → **subacute combined degeneration**: dorsal column (สูญเสีย vibration/proprioception, Romberg บวก) + lateral corticospinal tract (Babinski) + peripheral neuropathy (ankle jerk หาย)\n\n**ประเด็นตัดสิน**: ซีด macrocytic + **อาการทางระบบประสาท** = B12 เพราะ folate ไม่เกี่ยวกับเส้นทาง MMA ผู้ป่วยมี hypothyroidism (autoimmune) → นึกถึง **pernicious anemia** (anti-intrinsic factor antibody) และ glossitis ลิ้นแดงเลี่ยน\n\nทำไมข้ออื่นผิด:\n- **Folate deficiency**: เลือดเหมือนกันทุกอย่าง (megaloblastic, hypersegmented) แต่ **ไม่มี neurologic deficit** และ MMA ปกติ (homocysteine สูงทั้งคู่)\n- **MDS**: ผู้สูงอายุ macrocytic cytopenia ได้ แต่มักมี dysplasia (pseudo-Pelger-Huët = hypo-segmented, ไม่ใช่ hyper) และไม่มี SCD\n- **Alcohol/liver disease**: macrocytosis มักไม่เกิน ~110 fL, เป็น round macrocyte/target cell, ไม่มี hypersegmented neutrophil\n- **AIHA**: MCV สูงได้จาก reticulocyte ตัวใหญ่ แต่ retic ต้อง **สูง** — เคสนี้ retic 0.6% และมี pancytopenia\n\nยืนยัน: serum B12 ต่ำ (ถ้า borderline ตรวจ **MMA + homocysteine**), anti-IF antibody; รักษาด้วย **B12 IM 1,000 µg** (หรือ oral ขนาดสูง) — **ห้ามให้ folate อย่างเดียว** เพราะเลือดดีขึ้นแต่ระบบประสาทแย่ลง; ระวัง hypokalemia ช่วงแรกของการรักษา",
+  "pearl": "Macrocytic anemia + hypersegmented neutrophil + อาการชา/proprioception เสีย = B12 deficiency (MMA สูง); folate deficiency เลือดเหมือนกันแต่ไม่มีอาการทางประสาท",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 38 — Anemia + ชา -> B12",
+   "BSH Guidelines for cobalamin and folate disorders 2014"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.3",
+   "2.3.6"
+  ]
+ },
+ {
+  "id": "R3-MCQ-40",
+  "lec": "K08",
+  "lecture": "ลงกอง 3 · Hematology & oncology",
+  "topic": "Clinical presentation of acute lymphoblastic leukaemia",
+  "stem": "During a haematology tutorial, five brief patient summaries are presented. Each patient's history, examination and complete blood count are summarized below. Which of the following presentations is most consistent with acute lymphoblastic leukaemia?",
+  "choices": [
+   "A 6-year-old boy with 1 week of fever, pallor, bone pain, petechiae, generalized lymphadenopathy and hepatosplenomegaly",
+   "A 72-year-old man with 6 months of fatigue, macrocytic anaemia and thrombocytopenia, without lymphadenopathy or organomegaly",
+   "A 25-year-old man with 3 months of painless cervical lymphadenopathy, night sweats and weight loss, and a normal blood count",
+   "A 45-year-old woman with 2 months of early satiety, massive splenomegaly and WBC 180,000/µL with basophilia",
+   "A 20-year-old woman with 2 weeks of pallor and petechiae, pancytopenia, and no lymphadenopathy or organomegaly"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **ALL** = clonal proliferation ของ **lymphoblast** (B หรือ T precursor) ที่หยุดเจริญ (maturation arrest) และแบ่งตัวเร็วมาก → อาการแบ่งเป็น 3 กลุ่ม\n1. **Marrow failure** (blast เบียดไขกระดูก) → ซีด (pallor), เกล็ดเลือดต่ำ (petechiae, จ้ำเลือด), neutrophil ต่ำ (ไข้/ติดเชื้อ)\n2. **Marrow expansion** → **ปวดกระดูก** เด็กเดินกะเผลกหรือไม่ยอมเดิน\n3. **Extramedullary infiltration** — ต่างจาก AML ตรงที่ lymphoblast ชอบไปอยู่ในอวัยวะ lymphoid → **lymphadenopathy ทั่วตัว, hepatosplenomegaly**, mediastinal mass (T-ALL), CNS, testis\n\nลักษณะเวลา: เป็น **acute** — อาการเกิดในไม่กี่วันถึงไม่กี่สัปดาห์ และ peak อายุ **2–5 ปี** (มะเร็งที่พบบ่อยที่สุดในเด็ก) วินิจฉัยด้วย bone marrow มี lymphoblast ≥20% (TdT+, CD10/CD19 สำหรับ B-ALL)\n\n| สถานการณ์ | วินิจฉัย | จุดแยก |\n|---|---|---|\n| เด็ก 6 ปี 1 สัปดาห์ ไข้ ซีด ปวดกระดูก จ้ำเลือด LN โตทั่ว ตับม้ามโต | **ALL** | acute + cytopenia + infiltration |\n| ชายสูงอายุ 6 เดือน macrocytic anemia + plt ต่ำ ไม่มีก้อน | **MDS** | ผู้สูงอายุ ค่อยเป็น dysplasia |\n| ชายหนุ่ม 3 เดือน LN คอไม่เจ็บ + B symptoms CBC ปกติ | **Hodgkin lymphoma** | ไขกระดูกปกติ ก้อนเป็นเดือน |\n| หญิงวัยกลางคน ม้ามโตมาก WBC 180,000 basophilia | **CML** | myeloid ครบทุกระยะ BCR-ABL1 |\n| หญิงสาว pancytopenia ไม่มี LN/ตับม้าม | **Aplastic anemia** | ไขกระดูกฝ่อ ไม่มี infiltration |\n\nทำไมตัวเลือกอื่นผิด:\n- **MDS**: เป็น clonal disorder ของผู้สูงอายุ ดำเนินโรคเป็นเดือน–ปี ไม่มี lymphadenopathy/organomegaly\n- **Hodgkin lymphoma**: ก้อนต่อมน้ำเหลืองโตช้าเป็นเดือน มี B symptoms และ **CBC ปกติ** (ยังไม่ลงไขกระดูก)\n- **CML**: chronic phase มี leukocytosis สูงมากพร้อม **basophilia** และ **ม้ามโตมาก** ไม่มี marrow failure\n- **Aplastic anemia**: มี pancytopenia เหมือนกัน แต่ไขกระดูก \"ว่าง\" จึง **ไม่มี lymphadenopathy, ตับม้ามโต หรือปวดกระดูก** — การมีก้อน/อวัยวะโตทำให้ต้องคิดถึง leukemia แทน\n\n> หมายเหตุจาก recall: recall จดเป็นรายการ \"hepatomegaly, generalized lymphadenopathy 1 wk, lymphadenopathy 3 month, MDS 1 wk\" แสดงว่าตัวเลือกจริงเป็นสถานการณ์สั้น ๆ ที่ต่างกันที่ระยะเวลาและอาการ ข้อนี้จึงเขียนตัวเลือกเป็นสถานการณ์เทียบ ALL กับ MDS, lymphoma, CML และ aplastic anemia",
+  "pearl": "ALL = เด็ก + อาการเฉียบพลันเป็นวัน–สัปดาห์ + cytopenia (ซีด จ้ำ ไข้) + ปวดกระดูก + LN/ตับม้ามโต; ถ้า pancytopenia โดยไม่มีก้อนหรืออวัยวะโต ให้นึกถึง aplastic anemia",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 40 — ALL - hepatomegaly, generalized lymphadenopathy 1 wk, lymphadenopathy 3 month, MDS 1 wk",
+   "WHO Classification of Haematolymphoid Tumours 5th ed. 2022"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.2",
+   "2.3.3"
+  ]
+ },
+ {
+  "id": "R3-MCQ-57",
+  "lec": "K08",
+  "lecture": "ลงกอง 3 · Hematology & oncology",
+  "topic": "Complications of red cell transfusion",
+  "stem": "A 32-year-old man with a pelvic fracture and haemorrhagic shock receives 12 units of packed red cells, 8 units of fresh frozen plasma and 2 units of platelets over 6 hours under a massive transfusion protocol. The intern reviews the possible adverse effects of red cell transfusion with the team. Which of the following is NOT an expected complication of packed red cell transfusion?",
+  "choices": [
+   "Hypercalcaemia",
+   "Hyperkalaemia",
+   "Transfusion-associated circulatory overload",
+   "Febrile non-haemolytic transfusion reaction",
+   "Transfusion-related acute lung injury"
+  ],
+  "answer": 0,
+  "explain": "กลไก: เลือดที่เก็บในถุงใช้ **citrate** เป็น anticoagulant โดย citrate **จับ (chelate) ionized calcium** ไม่ให้ coagulation cascade ทำงาน เมื่อให้เลือดปริมาณมากและเร็ว (massive transfusion) หรือผู้ป่วยมีตับบกพร่อง (ตับเป็นที่ metabolize citrate) → citrate ในเลือดผู้ป่วยจับ Ca2+ → **hypocalcemia** ไม่ใช่ hypercalcemia\n- อาการ: ชารอบปาก tetany, QT ยาว, ความดันต่ำและหัวใจบีบตัวลด, coagulopathy แย่ลง\n- ป้องกัน/แก้: ตรวจ ionized Ca บ่อย ๆ ให้ **calcium chloride/gluconate** ระหว่าง massive transfusion\n- citrate ที่ถูก metabolize แล้วเปลี่ยนเป็น bicarbonate → **metabolic alkalosis** ตามมาได้; และพบ **hypomagnesemia** ร่วม\n\nภาวะแทรกซ้อนอื่นที่ \"เกิดได้จริง\":\n- **Hyperkalemia**: \"storage lesion\" — Na/K-ATPase ของ RBC ไม่ทำงานในตู้เย็น → K รั่วออกมาในถุง ยิ่งเก็บนาน/ฉายรังสี ยิ่งสูง; อันตรายเมื่อให้เร็วผ่าน central line, ในทารก, ไตวาย\n- **TACO**: volume overload ในผู้ป่วยหัวใจ/ไตไม่ดี หรือให้เร็วเกิน → pulmonary edema ความดันสูง JVP สูง BNP สูง ตอบสนองต่อ diuretic\n- **FNHTR**: cytokine จาก leukocyte ที่ปนในถุง หรือ anti-HLA ของผู้รับ → ไข้หนาวสั่นโดยไม่มี hemolysis; ป้องกันด้วย **leukoreduction** (ภาวะแทรกซ้อนที่พบบ่อยที่สุด)\n- **TRALI**: anti-HLA/anti-HNA ใน plasma ผู้บริจาค (มักเป็นหญิงที่ตั้งครรภ์หลายครั้ง) กระตุ้น neutrophil ใน pulmonary capillary → non-cardiogenic pulmonary edema ภายใน 6 ชม.\n\n| | TACO | TRALI |\n|---|---|---|\n| กลไก | hydrostatic (volume) | permeability (immune) |\n| BP | สูง | ต่ำได้ |\n| JVP/BNP | สูง | ปกติ |\n| ไข้ | ไม่มี | มีได้ |\n| ตอบสนองต่อ diuretic | ดี | ไม่ดี (อาจแย่ลง) |\n\nอื่น ๆ ที่ควรรู้: acute hemolytic reaction (ABO incompatibility), allergic/anaphylaxis (IgA deficiency), hypothermia, dilutional coagulopathy, TA-GVHD (ป้องกันด้วย irradiation), iron overload (ระยะยาว)",
+  "pearl": "Massive transfusion → citrate จับ Ca2+ → hypocalcemia (ไม่ใช่ hypercalcemia) + K รั่วจาก RBC ที่เก็บไว้ → hyperkalemia; ต้องเช็ก ionized Ca และ K ระหว่างให้เลือดจำนวนมาก",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 57 — Complication of PRC ข้อไหนไม่ใช่ -> hyperCal",
+   "AABB/Thai Red Cross transfusion guidelines; Carson et al. AABB Red Blood Cell Transfusion Guidelines 2023"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.2.21",
+   "2.3.3"
+  ]
+ },
+ {
+  "id": "R3-MCQ-70",
+  "lec": "K08",
+  "lecture": "ลงกอง 3 · Hematology & oncology",
+  "topic": "Lynch syndrome – DNA mismatch repair defect",
+  "stem": "A 38-year-old man is found to have an adenocarcinoma of the caecum on colonoscopy; only two small adenomatous polyps are present elsewhere in the colon. His father developed colon cancer at age 45 and his paternal aunt developed endometrial cancer at age 50; his paternal grandfather had a ureteral urothelial carcinoma. Immunohistochemistry of the tumour shows loss of MLH1 and PMS2 protein expression, and the tumour is microsatellite instability-high; BRAF V600E is not detected. Which of the following mechanisms underlies this family's cancer predisposition?",
+  "choices": [
+   "Germline mutation in a DNA mismatch repair gene, causing microsatellite instability",
+   "Germline APC mutation causing constitutive activation of Wnt/β-catenin signalling",
+   "Germline TP53 mutation impairing cell-cycle arrest and apoptosis after DNA damage",
+   "Germline BRCA1 mutation impairing homologous recombination repair of double-strand breaks",
+   "Somatic KRAS mutation driving the classic adenoma–carcinoma sequence"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Lynch syndrome (hereditary non-polyposis colorectal cancer, HNPCC)** เกิดจาก **germline mutation ของยีน DNA mismatch repair (MMR)** — **MLH1, MSH2, MSH6, PMS2** (หรือ EPCAM deletion ที่ทำให้ MSH2 เงียบ) ถ่ายทอดแบบ **autosomal dominant**\n- คนในครอบครัวได้ allele ผิดปกติมา 1 ตัว → เมื่อเซลล์ใดเสีย allele ที่ 2 (second hit ตาม Knudson) → ซ่อม base mismatch/insertion-deletion loop ที่เกิดตอน DNA replication ไม่ได้\n- ความผิดพลาดสะสมมากที่ **microsatellite** (ลำดับซ้ำสั้น ๆ) → **microsatellite instability (MSI-high)** → frameshift ในยีนที่มี repeat เช่น TGFBR2, BAX → มะเร็งเกิดเร็ว (\"accelerated carcinogenesis\")\n- IHC: MLH1 กับ PMS2 ทำงานเป็นคู่ (MutLα) จึงหายไปด้วยกัน; MSH2 หายจะพาให้ MSH6 หายด้วย\n\nลักษณะคลินิกที่เข้ากับ Lynch ในโจทย์:\n- มะเร็งลำไส้ **อายุน้อย** ที่ **ลำไส้ด้านขวา** มี polyp **ไม่มาก** (ต่างจาก FAP ที่มีหลายร้อย–พัน)\n- ครอบครัวมีมะเร็งกลุ่ม Lynch: colorectal, **endometrium**, urothelium (ureter/renal pelvis), ovary, stomach, small bowel — ครบ **Amsterdam II** (3 คน, 2 รุ่น, ≥1 คนอายุ <50)\n- **BRAF V600E ลบ** — ตัด sporadic MSI จาก **MLH1 promoter hypermethylation** (ซึ่งมักมี BRAF V600E และพบในผู้สูงอายุ) ออก\n\nทำไมข้ออื่นผิด:\n| ตัวเลือก | กลุ่มอาการ | ลักษณะ |\n|---|---|---|\n| **Germline APC** | **FAP** | polyp นับร้อย–พันตั้งแต่วัยรุ่น, chromosomal instability ไม่ใช่ MSI |\n| **Germline TP53** | **Li-Fraumeni** | sarcoma, มะเร็งเต้านมอายุน้อย, brain tumor, adrenocortical carcinoma, leukemia |\n| **Germline BRCA1** | **HBOC** | มะเร็งเต้านม/รังไข่, ไม่ทำให้ MMR protein หายบน IHC |\n| **Somatic KRAS** | sporadic CRC | เป็นขั้นหนึ่งของ adenoma–carcinoma sequence ใน tumor แต่ไม่ถ่ายทอดในครอบครัว |\n\n> หมายเหตุจาก recall: recall จด \"APC gene, P53\" เป็นคำตอบ ซึ่งเป็นยีนของ FAP และ Li-Fraumeni/sporadic chromosomal instability pathway ไม่ใช่กลไกของ Lynch syndrome; คำตอบที่ถูกตามหลักคือ germline MMR gene mutation → MSI\n\nการดูแล: ตรวจ germline ยืนยัน, colonoscopy ทุก 1–2 ปีเริ่มอายุ 20–25 ปี, พิจารณาผ่าตัดมดลูก/รังไข่หลังมีบุตรครบ, aspirin ลดความเสี่ยง (CAPP2); MSI-high tumor ตอบสนองดีต่อ immune checkpoint inhibitor",
+  "pearl": "Lynch = germline MMR mutation (MLH1/MSH2/MSH6/PMS2) → MSI-high; มะเร็งลำไส้ขวาอายุน้อย polyp ไม่มาก + มะเร็งเยื่อบุโพรงมดลูกในครอบครัว; ส่วน APC = FAP และ TP53 = Li-Fraumeni",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 70 — ทั้งครอบครัวเป็นมะเร็ง (lynch syndrome) เกิดการกลไกอะไร —> APC gene, P53",
+   "NCCN Genetic/Familial High-Risk Assessment: Colorectal 2024; Amsterdam II criteria"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.2",
+   "2.3.11"
+  ]
+ },
+ {
+  "id": "R3-MCQ-11",
+  "lec": "K09",
+  "lecture": "ลงกอง 3 · Gastroenterology & hepatology",
+  "topic": "Acute hepatitis A after raw shellfish",
+  "stem": "A 24-year-old man presents with 5 days of fever, malaise, anorexia, nausea and right upper quadrant discomfort. Two days ago the fever subsided but he noticed dark urine and yellow eyes. About 4 weeks ago he ate raw oysters and raw cockles at a seaside restaurant; two friends who ate with him have similar symptoms. He has no history of blood transfusion, injection drug use, new sexual partners, alcohol excess or medication use, and has never been vaccinated against hepatitis A. He is jaundiced with a tender, mildly enlarged liver and no stigmata of chronic liver disease. ALT 2,400 U/L, AST 1,850 U/L, ALP 190 U/L, total bilirubin 6.8 mg/dL, direct bilirubin 5.1 mg/dL, INR 1.1. Which of the following tests is most appropriate to confirm the most likely diagnosis?",
+  "choices": [
+   "IgM antibody to hepatitis A virus (IgM anti-HAV)",
+   "Total (IgG) antibody to hepatitis A virus (IgG anti-HAV)",
+   "Hepatitis B surface antigen (HBsAg)",
+   "Antibody to hepatitis C virus (anti-HCV)",
+   "IgG antibody to hepatitis E virus (IgG anti-HEV)"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Hepatitis A virus** (picornavirus, RNA ไม่มี envelope ทนกรดและความร้อนปานกลาง) ติดต่อแบบ **fecal-oral** — หอยสองฝา (หอยนางรม หอยแครง) เป็น **filter feeder** ที่กรองน้ำทะเลปนเปื้อนอุจจาระและสะสมไวรัสไว้ในตัว จึงเป็นแหล่งระบาดคลาสสิกเมื่อกินดิบ/ไม่สุก\n- ระยะฟักตัว **15–50 วัน (เฉลี่ย ~28 วัน)** — ตรงกับกินหอย 4 สัปดาห์ก่อน และเพื่อนที่กินด้วยกันป่วยพร้อมกัน (common-source outbreak)\n- ไวรัส **ไม่ได้ทำลายเซลล์ตับโดยตรง**; การทำลายเกิดจาก **CD8+ T cell โจมตี hepatocyte ที่ติดเชื้อ** → ALT สูงมาก (มัก >1,000) ช่วงที่ภูมิคุ้มกันขึ้น\n- อาการ: prodrome ไข้ อ่อนเพลีย คลื่นไส้ ปวดชายโครงขวา → **เมื่อตัวเหลืองขึ้น ไข้มักลง** (ตรงกับโจทย์); ผู้ใหญ่มีอาการเหลืองบ่อยกว่าเด็กมาก\n\nการวินิจฉัย: **IgM anti-HAV** ขึ้นตั้งแต่เริ่มมีอาการและอยู่นาน 3–6 เดือน = ยืนยัน **acute** infection\n\nทำไมข้ออื่นผิด:\n- **IgG anti-HAV (total)**: บอกว่าเคยติดเชื้อ/เคยได้วัคซีน อยู่ตลอดชีวิต — ผลบวกแยกระหว่างการติดเชื้อใหม่กับเก่าไม่ได้ (คนไทยรุ่นเก่าจำนวนมากมีภูมิอยู่แล้ว)\n- **HBsAg**: acute HBV ทำ ALT สูงได้ แต่ระยะฟักตัว 1–6 เดือน ติดทางเลือด/เพศสัมพันธ์ ไม่มีปัจจัยเสี่ยง และไม่อธิบาย outbreak จากอาหาร (ถ้าจะแยก acute HBV ให้ใช้ IgM anti-HBc)\n- **Anti-HCV**: acute HCV ส่วนใหญ่ไม่มีอาการ ALT ไม่สูงขนาดนี้ และติดทางเลือด; anti-HCV อาจยังไม่ขึ้นในระยะแรก\n- **IgG anti-HEV**: HEV ติดทาง fecal-oral และเกี่ยวกับหอย/เนื้อหมูได้เช่นกัน แต่ **IgG บอกการติดเชื้อในอดีต** การวินิจฉัย acute HEV ต้องใช้ **IgM anti-HEV หรือ HEV RNA** — และประวัติหอยดิบ + outbreak ในคนอายุน้อยชี้ไปทาง HAV ก่อน\n\nการดูแล: supportive (HAV ไม่เป็นเรื้อรัง), เลี่ยงยาตับ/แอลกอฮอล์, เฝ้าระวัง **acute liver failure** (INR ≥1.5 + encephalopathy) ซึ่งพบได้น้อยแต่เสี่ยงในผู้สูงอายุ/มีโรคตับเดิม; ผู้สัมผัสใกล้ชิดให้ **HAV vaccine (หรือ immunoglobulin) ภายใน 2 สัปดาห์** หลังสัมผัส",
+  "pearl": "หอยดิบ + ระยะฟัก ~4 สัปดาห์ + ไข้ลงเมื่อตัวเหลือง + ALT หลักพัน = acute hepatitis A → ยืนยันด้วย IgM anti-HAV (IgG บอกแค่ว่าเคยติด/มีภูมิ)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 11 — ไข้5วัน กินอาหารดิบ ตัวเหลือง - Hepatitis A",
+   "CDC Viral Hepatitis Serology & Hepatitis A Clinical Overview 2024"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1",
+   "2.3.11"
+  ]
+ },
+ {
+  "id": "R3-MCQ-47",
+  "lec": "K10",
+  "lecture": "ลงกอง 3 · Dermatology",
+  "topic": "Candidal intertrigo – topical azole",
+  "stem": "A 56-year-old woman with obesity (BMI 34 kg/m2) and poorly controlled type 2 diabetes (HbA1c 9.8%) presents with a 2-week itchy, burning rash beneath both breasts during the hot, humid season. Examination shows bright red, moist, macerated plaques confined to the inframammary folds with a slightly scalloped border and multiple small satellite papules and pustules just beyond the main edge. A KOH preparation of a pustule shows budding yeasts and pseudohyphae. Which of the following is the most appropriate treatment?",
+  "choices": [
+   "Topical clotrimazole cream twice daily and keep the folds dry",
+   "Topical clobetasol propionate 0.05% cream twice daily to the folds",
+   "Oral griseofulvin daily for 6 weeks",
+   "Topical erythromycin solution twice daily",
+   "Topical tacrolimus ointment twice daily"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Candida albicans** เป็น commensal ปกติบนผิวและเยื่อบุ เมื่อผิวบริเวณ**ซอกพับ**ถูกปิด อับชื้น อุ่น เสียดสี → stratum corneum เปื่อย (maceration) ร่วมกับปัจจัยของผู้ป่วย (**เบาหวานคุมไม่ได้, อ้วน**, ยาปฏิชีวนะ, steroid, ภูมิต่ำ) → yeast เปลี่ยนเป็น **pseudohyphae** รุกเข้า stratum corneum → อักเสบเป็นผื่นแดงสด ชื้น แสบคัน\n- **Satellite papules/pustules** นอกขอบผื่นหลัก = จุดเด่นที่สุดของ cutaneous candidiasis (เชื้อลุกลามเป็นจุด ๆ ออกไปจากรอยโรค)\n- KOH: **budding yeast + pseudohyphae** (ต่างจาก dermatophyte ที่เห็น septate hyphae ยาว)\n\nรักษา: **topical azole** (clotrimazole, miconazole, ketoconazole) หรือ nystatin วันละ 2 ครั้ง 2–4 สัปดาห์ + **ทำให้ซอกพับแห้ง** (ผ้าซับ/ผ้าฝ้ายรองใต้ราวนม, แป้ง) + คุมน้ำตาล; azole ยับยั้ง **lanosterol 14α-demethylase (CYP51)** → สร้าง ergosterol ไม่ได้ → เยื่อหุ้มเซลล์เชื้อรารั่ว; ใช้ oral fluconazole เมื่อเป็นกว้างหรือดื้อต่อยาทา\n\n| ผื่นที่ซอกพับ | ลักษณะ | รักษา |\n|---|---|---|\n| **Candidal intertrigo** | แดงสด ชื้น **satellite pustules**, KOH yeast+pseudohyphae | topical azole/nystatin |\n| Tinea cruris/corporis | ขอบนูนชัด active border ตรงกลางจาง, KOH septate hyphae | topical azole/terbinafine |\n| Erythrasma | ปื้นน้ำตาลแดงเรียบ ไม่มี satellite, Wood's lamp **coral-red** | topical/oral erythromycin |\n| Inverse psoriasis | แดงขอบคมชัด มันวาว ไม่มีขุย ไม่มี satellite, มี psoriasis ที่อื่น | low-potency steroid, calcineurin inhibitor |\n\nทำไมข้ออื่นผิด:\n- **Clobetasol (super-potent steroid)**: ลดอักเสบชั่วคราวแต่ **กดภูมิในผิว ทำให้ Candida ลุกลาม** และซอกพับเป็นบริเวณที่ดูดซึม steroid สูง เสี่ยงผิวบาง/striae\n- **Oral griseofulvin**: ออกฤทธิ์เฉพาะ **dermatophyte** (จับ keratin รบกวน microtubule ของเชื้อ) **ไม่มีฤทธิ์ต่อ Candida**\n- **Topical erythromycin**: รักษา **erythrasma** (Corynebacterium minutissimum) ซึ่งเป็น differential ของผื่นซอกพับ แต่ไม่มี satellite pustule และ KOH ไม่พบเชื้อรา\n- **Topical tacrolimus**: ใช้ใน inverse psoriasis/seborrheic dermatitis/atopic dermatitis — เป็นยากดภูมิ จะทำให้การติดเชื้อราแย่ลง",
+  "pearl": "ผื่นแดงชื้นในซอกพับ + satellite papules/pustules = cutaneous candidiasis → topical azole (clotrimazole) + ทำให้แห้ง; อย่าให้ steroid แรงหรือ griseofulvin (ไม่มีฤทธิ์ต่อ Candida)",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 47 — รูปนมแดงๆ candida - clotrimazole"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.12",
+   "2.3.1",
+   "2.1.50"
+  ]
+ },
+ {
+  "id": "R3-MCQ-63",
+  "lec": "K10",
+  "lecture": "ลงกอง 3 · Dermatology",
+  "topic": "Varicella – 'dew drop on a rose petal' vesicle",
+  "stem": "A 7-year-old unvaccinated boy develops low-grade fever and malaise, followed the next day by an intensely itchy rash that began on the scalp, face and trunk and spread to the proximal limbs. On day 3 of the rash, the lesions are most dense on the trunk, and red macules, papules, vesicles and crusted lesions are seen side by side in the same area. A classmate had a similar illness 2 weeks ago. A Tzanck smear of a vesicle base shows multinucleated giant cells. Which of the following descriptions best fits the characteristic early vesicle of this disease?",
+  "choices": [
+   "A small, clear, thin-walled vesicle on an erythematous base ('dew drop on a rose petal')",
+   "Deep-seated, firm vesicles all at the same stage, densest on the face and distal extremities",
+   "Target lesions with three concentric zones and a dusky or blistered centre",
+   "A large herald patch followed by oval scaly macules in a 'Christmas-tree' pattern",
+   "Fragile vesicles that rupture to leave golden 'honey-coloured' crusts"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Varicella-zoster virus (VZV)** ติดต่อทาง **airborne/droplet** และสัมผัสน้ำในตุ่ม → แบ่งตัวที่ nasopharynx/tonsil → viremia ครั้งที่ 1 ไป reticuloendothelial system → viremia ครั้งที่ 2 ไปที่ผิวหนัง (ระยะฟักตัว **10–21 วัน** ตรงกับเพื่อนป่วย 2 สัปดาห์ก่อน)\n- ใน epidermis ไวรัสทำให้เซลล์ **บวมเสื่อม (ballooning degeneration)** เกิด **multinucleated giant cells** (Tzanck บวก — เหมือน HSV) → เซลล์แยกจากกันเป็น **intraepidermal vesicle** ตื้น ผนังบาง น้ำใส อยู่บนฐานแดงจากการอักเสบใน dermis → ภาพ **\"dew drop on a rose petal\"** (หยดน้ำค้างบนกลีบกุหลาบ)\n- ไวรัสลงผิวเป็นระลอก (crops) → **เห็นผื่นทุกระยะพร้อมกัน** (macule → papule → vesicle → pustule → crust) และกระจายแบบ **centripetal** (หนาแน่นที่ลำตัว)\n\nทำไมข้ออื่นผิด:\n| ลักษณะ | โรค | จุดแยกจาก varicella |\n|---|---|---|\n| ตุ่มลึก แข็ง **ระยะเดียวกันหมด** หนาแน่นที่หน้าและแขนขา (centrifugal) รวมฝ่ามือฝ่าเท้า | **Smallpox** | varicella ตุ่มตื้น หลายระยะ หนาแน่นที่ลำตัว |\n| Target lesion 3 วง ตรงกลางคล้ำ/พุพอง | **Erythema multiforme** (มักตามหลัง HSV) | ไม่ใช่ vesicle บนฐานแดง ไม่มีหลายระยะ |\n| Herald patch + Christmas-tree pattern | **Pityriasis rosea** | ผื่นมีขุย collarette ไม่มีตุ่มน้ำ |\n| ตุ่มแตกง่ายเหลือ **สะเก็ดสีน้ำผึ้ง** | **Impetigo** (S. aureus/GAS) | เป็นเฉพาะที่ (รอบจมูก/ปาก) Tzanck ลบ — แต่เป็น **ภาวะแทรกซ้อนที่พบบ่อยที่สุด** ของ varicella (เกาแล้วติดเชื้อแบคทีเรีย) |\n\nการดูแล: เด็กสุขภาพดีรักษาตามอาการ (antihistamine, calamine, ตัดเล็บ), **paracetamol ไม่ใช้ aspirin** (Reye syndrome) และเลี่ยง NSAID (สัมพันธ์กับ invasive GAS/necrotizing fasciitis); ให้ **acyclovir ภายใน 24 ชม.** ในวัยรุ่น ≥13 ปี ผู้ใหญ่ มีโรคผิวหนัง/ปอดเรื้อรัง ได้ steroid หรือภูมิต่ำ (IV); แพร่เชื้อได้ตั้งแต่ 1–2 วันก่อนผื่นจน **ทุกตุ่มตกสะเก็ด**",
+  "pearl": "Varicella = vesicle ใสบนฐานแดง 'dew drop on a rose petal' + ผื่นทุกระยะในบริเวณเดียวกัน + หนาแน่นที่ลำตัว; smallpox ตุ่มลึก ระยะเดียวกันหมด หนาแน่นที่หน้าและแขนขา",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 63 — บรรยายผื่น ให้ว่าเป็น chicken pox -> dew drop on petal rose",
+   "AAP Red Book 2024 – Varicella-Zoster Virus Infections"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1",
+   "2.3.12",
+   "2.1.50"
+  ]
+ },
+ {
+  "id": "R3-MCQ-04",
+  "lec": "K11",
+  "lecture": "ลงกอง 3 · Pharmacology",
+  "topic": "Fluoroquinolone-associated Achilles tendon rupture",
+  "stem": "A 72-year-old man with COPD on long-term oral prednisolone 10 mg/day and chronic kidney disease (eGFR 40 mL/min/1.73 m2) was prescribed an oral antibiotic for a complicated urinary tract infection 6 days ago. Today, while climbing stairs, he felt a sudden 'pop' and sharp pain at the back of his right heel and now cannot stand on tiptoe. There is posterior heel swelling with a palpable gap 4 cm above the calcaneal insertion, and squeezing the right calf produces no plantar flexion. Which antibiotic is most likely to have contributed to this injury?",
+  "choices": [
+   "Ciprofloxacin",
+   "Amoxicillin–clavulanate",
+   "Nitrofurantoin",
+   "Cefixime",
+   "Trimethoprim–sulfamethoxazole"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Fluoroquinolone** (ciprofloxacin, levofloxacin) ทำให้เกิด **tendinopathy/tendon rupture** ผ่านหลายทาง\n- **chelate divalent cation** (Mg2+) ที่จำเป็นต่อ integrin และการยึดเกาะของ tenocyte กับ matrix\n- เพิ่ม **matrix metalloproteinase (MMP-1, -3, -13)** → ย่อย **collagen type I**, ลดการแบ่งตัวและเพิ่ม apoptosis ของ tenocyte, oxidative stress ต่อ mitochondria\n- เกิดมากที่ **Achilles tendon** โดยเฉพาะบริเวณ **2–6 cm เหนือจุดเกาะ** ซึ่งเลือดมาเลี้ยงน้อย (hypovascular zone) — ตรงกับ gap 4 cm ในโจทย์\n- เวลาเกิด: มัธยฐาน ~**6 วัน** หลังเริ่มยา (เป็นชั่วโมงจนถึงหลายเดือนหลังหยุดยา) เป็น 2 ข้างได้\n\nปัจจัยเสี่ยงที่ผู้ป่วยมีครบ: **อายุ >60 ปี**, **ใช้ corticosteroid ร่วม** (เสริมฤทธิ์ชัดเจน), **CKD** (ยาสะสม); อื่น ๆ: ปลูกถ่ายอวัยวะ, เล่นกีฬาหนัก\nThompson test บวก (บีบน่องแล้วเท้าไม่ plantarflex) = Achilles tendon rupture\n\nผลไม่พึงประสงค์อื่นของ FQ (FDA boxed warning): tendinitis/rupture, peripheral neuropathy, CNS effects, **ทำให้ myasthenia gravis แย่ลง**; และ QT ยาว, dysglycemia, aortic aneurysm/dissection, C. difficile; ไม่ควรใช้ใน UTI ธรรมดาถ้ามียาอื่น\n\nทำไมข้ออื่นผิด:\n- **Amoxicillin–clavulanate**: AE เด่นคือท้องเสีย และ **cholestatic hepatitis** (จาก clavulanate) ไม่เกี่ยวกับเส้นเอ็น\n- **Nitrofurantoin**: pulmonary reaction (acute/chronic fibrosis), peripheral neuropathy, hepatitis; ใช้เฉพาะ cystitis และไม่ควรใช้เมื่อ eGFR ต่ำ\n- **Cefixime**: ท้องเสีย, C. difficile, rash — ไม่มีพิษต่อเส้นเอ็น\n- **TMP–SMX**: **hyperkalemia** (trimethoprim ปิด ENaC เหมือน amiloride), creatinine สูงขึ้นแบบหลอก, SJS/TEN, bone marrow suppression\n\n> หมายเหตุจาก recall: recall จดว่า \"Tonovitis - ceprofloxacin\" สันนิษฐานว่าหมายถึง **tendinitis/tendon rupture** จาก ciprofloxacin ข้อนี้จึงเขียนโจทย์เป็น Achilles tendon rupture ในผู้สูงอายุที่ใช้ steroid",
+  "pearl": "ผู้สูงอายุ + steroid + CKD ที่ได้ fluoroquinolone แล้วปวดส้นเท้า/เอ็นร้อยหวายขาด = FQ tendinopathy → หยุดยาทันทีและพักการใช้เอ็น",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 04 — Tonovitis - ceprofloxacin",
+   "FDA Drug Safety Communication: fluoroquinolone boxed warning 2016"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.13(7)",
+   "B5.2.3(1)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-07",
+  "lec": "K11",
+  "lecture": "ลงกอง 3 · Pharmacology",
+  "topic": "Mechanism of action of gentamicin",
+  "stem": "A 68-year-old woman with septic shock from acute pyelonephritis is started on intravenous ceftriaxone plus a single daily dose of gentamicin 5 mg/kg. Her urine culture later grows Escherichia coli. The pharmacist reminds the team to monitor trough levels, renal function and hearing. Which of the following is the mechanism of action of gentamicin?",
+  "choices": [
+   "Binds the 30S ribosomal subunit, causing misreading of mRNA",
+   "Binds the 50S ribosomal subunit, blocking peptide translocation",
+   "Binds penicillin-binding proteins, blocking cell wall cross-linking",
+   "Inhibits DNA gyrase and topoisomerase IV",
+   "Inhibits bacterial dihydrofolate reductase"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **Aminoglycoside** (gentamicin, amikacin, streptomycin) เป็นโมเลกุลประจุบวก\n1. **เข้าเซลล์**: จับ LPS/phospholipid ประจุลบที่ outer membrane → ผ่าน porin → ข้าม inner membrane ด้วย **oxygen-dependent active transport** (ต้องใช้ electron transport chain) → **ไม่มีฤทธิ์ต่อ anaerobe** และฤทธิ์ลดในฝีที่ pH ต่ำ\n2. **จับ 30S subunit** (ตำแหน่ง A-site ของ **16S rRNA**) → ribosome อ่าน codon ผิด (**misreading of mRNA**) + ยับยั้ง initiation complex → ได้โปรตีนผิดรูปไปแทรกใน cell membrane → membrane รั่ว ยาเข้าเซลล์มากขึ้นอีก → **bactericidal** (ต่างจากยากลุ่ม protein synthesis inhibitor ส่วนใหญ่ที่เป็น bacteriostatic)\n\nPK/PD ที่ออกสอบ:\n- **Concentration-dependent killing + post-antibiotic effect ยาว** → ให้ **once-daily (extended-interval) dosing** ได้ผลดีและไตเป็นพิษน้อยลง\n- **Synergy กับ β-lactam**: β-lactam ทำลาย cell wall → aminoglycoside เข้าเซลล์ได้มากขึ้น (เช่น ampicillin + gentamicin ใน enterococcal endocarditis)\n\nพิษ:\n- **Nephrotoxicity**: proximal tubule ดูดยาผ่าน megalin → ATN (non-oliguric) ส่วนใหญ่กลับคืนได้; ติดตาม trough และ creatinine\n- **Ototoxicity**: cochlear/vestibular hair cell **ไม่กลับคืน**; เสี่ยงสูงใน mitochondrial **12S rRNA m.1555A>G**\n- **Neuromuscular blockade** (ระวังใน myasthenia gravis), teratogen (congenital deafness)\n\nทำไมข้ออื่นผิด:\n- **50S, block translocation** = **macrolide** (erythromycin, azithromycin); clindamycin และ chloramphenicol ก็จับ 50S\n- **PBP / cell wall cross-linking** = **β-lactam** (ceftriaxone ที่ให้ร่วม)\n- **DNA gyrase/topoisomerase IV** = **fluoroquinolone**\n- **Dihydrofolate reductase** = **trimethoprim** (sulfamethoxazole ยับยั้ง dihydropteroate synthase)\n\nตัวช่วยจำ: \"buy **AT 30**, **CCEL** at **50**\" — **A**minoglycoside, **T**etracycline = 30S; **C**hloramphenicol, **C**lindamycin, **E**rythromycin (macrolide), **L**inezolid = 50S\n\n> หมายเหตุจาก recall: recall จดไว้ \"30s, 50s\" — คำตอบมาตรฐานของ gentamicin คือ **30S** (16S rRNA) แม้มีงานวิจัยว่า aminoglycoside บางตัวจับบริเวณรอยต่อกับ 50S (H69 ของ 23S rRNA) ได้ด้วย แต่ในข้อสอบให้ตอบ 30S",
+  "pearl": "Gentamicin จับ 30S → อ่าน mRNA ผิด → bactericidal แบบ concentration-dependent ต้องใช้ O2 เข้าเซลล์ (ไม่ฆ่า anaerobe) — พิษไตกลับคืนได้ แต่พิษหูไม่กลับคืน",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 07 — ATB Gentamicin mechanism - 30s, 50s"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.1"
+  ]
+ },
+ {
+  "id": "R3-MCQ-19",
+  "lec": "K11",
+  "lecture": "ลงกอง 3 · Pharmacology",
+  "topic": "Drug interaction – simvastatin with a strong CYP3A4 inhibitor",
+  "stem": "A 64-year-old man with hypertension, type 2 diabetes and dyslipidaemia has taken simvastatin 40 mg nightly, enalapril 10 mg daily and metformin 1,000 mg twice daily for 3 years, with paracetamol as needed for knee pain. Two weeks ago a private clinic prescribed oral ketoconazole 200 mg daily for extensive tinea versicolor and omeprazole 20 mg daily for dyspepsia. He now presents with diffuse muscle pain, proximal weakness and cola-coloured urine. CK 38,000 U/L; creatinine 2.3 mg/dL (baseline 0.9 mg/dL); urine dipstick is 3+ for blood but microscopy shows 0–2 RBC/HPF. Which medication most likely interacted with simvastatin to cause this condition?",
+  "choices": [
+   "Ketoconazole",
+   "Omeprazole",
+   "Enalapril",
+   "Metformin",
+   "Paracetamol"
+  ],
+  "answer": 0,
+  "explain": "กลไก: **simvastatin** (เช่นเดียวกับ lovastatin, atorvastatin) ถูก metabolize เกือบทั้งหมดโดย **CYP3A4** ในผนังลำไส้และตับ (first-pass สูง bioavailability <5%) → เมื่อได้ **strong CYP3A4 inhibitor** เช่น **ketoconazole** ร่วม → ระดับ simvastatin/simvastatin acid ในเลือด**เพิ่มได้ 10–20 เท่า** → พิษต่อกล้ามเนื้อลาย (ลด CoQ10 และ isoprenylation ของโปรตีน → mitochondrial dysfunction) → **rhabdomyolysis**\n\nโจทย์มี rhabdomyolysis ครบ: ปวดอ่อนแรงกล้ามเนื้อ + **CK >10× ULN** + ปัสสาวะสีโค้ก + **dipstick blood บวกแต่ไม่มี RBC** (= myoglobin) + **AKI** (myoglobin อุดและเป็นพิษต่อ tubule)\n\nยาที่ **ห้ามใช้ร่วมกับ simvastatin**: azole (ketoconazole, itraconazole, posaconazole, voriconazole), macrolide (clarithromycin, erythromycin), HIV protease inhibitor/ritonavir/cobicistat, **gemfibrozil** (ยับยั้ง glucuronidation/OATP1B1), cyclosporine; ระวัง amlodipine/diltiazem/verapamil/amiodarone (จำกัดขนาด simvastatin) และน้ำเกรปฟรุตปริมาณมาก\nstatin ที่พึ่ง CYP3A4 น้อย: **pravastatin, rosuvastatin, pitavastatin** (fluvastatin ผ่าน CYP2C9)\n\nทำไมข้ออื่นผิด:\n- **Omeprazole**: ยับยั้ง **CYP2C19** เป็นหลัก (ลดการ activate clopidogrel) ไม่ใช่ CYP3A4 แบบแรง — ไม่เพิ่มระดับ simvastatin อย่างมีนัยสำคัญ\n- **Enalapril**: prodrug ที่ถูก esterase ในตับ ไม่ผ่าน CYP — interaction ที่ต้องระวังคือ hyperkalemia (กับ K-sparing diuretic/TMP) และ AKI ร่วมกับ NSAID + diuretic (\"triple whammy\")\n- **Metformin**: ไม่ถูก metabolize ขับทางไตแบบไม่เปลี่ยนรูป ไม่มีผลต่อ statin — แต่ **ต้องหยุดชั่วคราวในผู้ป่วยรายนี้** เพราะมี AKI เสี่ยง lactic acidosis\n- **Paracetamol**: ไม่ยับยั้ง CYP3A4 และไม่ทำให้เกิด myopathy\n\nการดูแล: หยุด simvastatin และ ketoconazole, **IV isotonic crystalloid ปริมาณมาก** ให้ urine output ~200–300 mL/h, ติดตาม K/Ca/PO4/CK; ไม่ควรใช้ **oral ketoconazole** รักษา tinea versicolor (FDA 2013: hepatotoxicity, adrenal insufficiency, drug interaction) — ใช้ยาทาหรือ itraconazole/fluconazole แทน\n\n> หมายเหตุจาก recall: recall จดตัวเลือก \"Omeprazole vs enalapril vs statin vs ketoconazole\" และตอบ ketoconazole–statin ซึ่งตรงกับหลัก CYP3A4 inhibition",
+  "pearl": "Simvastatin/atorvastatin/lovastatin ผ่าน CYP3A4 → ห้ามใช้ร่วมกับ azole, clarithromycin, ritonavir (และ gemfibrozil) เพราะเสี่ยง rhabdomyolysis; ถ้าจำเป็นต้องใช้ ให้เปลี่ยนเป็น pravastatin/rosuvastatin",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 19 — Omprazole vs enalapril vs statinvs ketoconazole ยาตีกัน ตอบ ketoconazole statin?",
+   "FDA Drug Safety Communication: simvastatin dose limitations 2011; FDA oral ketoconazole safety communication 2013"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.13-3(7)",
+   "2.3.9(3)"
+  ]
+ },
+ {
+  "id": "R3-MCQ-58",
+  "lec": "K11",
+  "lecture": "ลงกอง 3 · Pharmacology",
+  "topic": "Anticholinergic (antimuscarinic) toxidrome",
+  "stem": "A 19-year-old man is brought to the emergency department 3 hours after eating seeds of a trumpet-flowered plant (Datura) at a party. He is agitated and confused, mumbling, and picking at imaginary objects in the air. BT 39.1 C, PR 138/min, BP 152/90 mmHg, RR 20/min. Pupils are 8 mm and poorly reactive to light. His mucous membranes are dry, the skin is flushed, hot and dry including the axillae, bowel sounds are hypoactive and the bladder is palpable. Capillary glucose is 110 mg/dL. Which class of agent best explains these findings?",
+  "choices": [
+   "Antimuscarinic (anticholinergic) agent such as atropine",
+   "GABA-A receptor agonist such as a benzodiazepine",
+   "μ-opioid receptor agonist such as heroin",
+   "Acetylcholinesterase inhibitor such as an organophosphate",
+   "Central α2-adrenergic agonist such as clonidine"
+  ],
+  "answer": 0,
+  "explain": "กลไก: เมล็ด **ลำโพง (Datura)** มี **atropine, scopolamine, hyoscyamine** ซึ่ง **แย่งจับ muscarinic receptor** แบบ competitive → ตัดผลของ parasympathetic และ sympathetic-cholinergic ทุกอวัยวะ\n| อวัยวะ (receptor) | ผลเมื่อถูก block | คำจำ |\n|---|---|---|\n| Iris sphincter (M3) | **mydriasis** ไม่ตอบสนองต่อแสง, ciliary → มองใกล้ไม่ชัด | blind as a bat |\n| ต่อมเหงื่อ (sympathetic cholinergic, M3) | **ผิวแห้ง เหงื่อไม่ออก** → ระบายความร้อนไม่ได้ → **ไข้สูง** | dry as a bone, hot as a hare |\n| หลอดเลือดผิว | ขยายเพื่อระบายความร้อน → **หน้าแดง** | red as a beet |\n| SA node (M2) | **tachycardia** | |\n| ลำไส้/กระเพาะปัสสาวะ (M3) | **ileus, urinary retention** | full as a flask |\n| CNS (M1) | **delirium**, hallucination, picking at air | mad as a hatter |\n\n| Toxidrome | รูม่านตา | ผิว | HR/T | อื่น ๆ |\n|---|---|---|---|---|\n| **Anticholinergic** | **โต** | **แห้ง แดง ร้อน** | สูง | ileus, ปัสสาวะค้าง, delirium |\n| Sympathomimetic | โต | **เหงื่อท่วม** | สูง | bowel sound ปกติ/มาก |\n| Cholinergic (OP) | **เล็ก** | เหงื่อ น้ำลาย | HR ช้า | SLUDGE/DUMBELS, fasciculation |\n| Opioid | **เล็กเท่ารูเข็ม** | ปกติ | ต่ำ | หายใจช้า ซึม |\n| Sedative-hypnotic (BZD) | ปกติ/กลาง | ปกติ | ปกติ/ต่ำ | ซึม พูดไม่ชัด ataxia |\n\nทำไมข้ออื่นผิด:\n- **GABA-A agonist (benzodiazepine)**: ทำให้ **ซึม** ไม่ใช่กระวนกระวาย รูม่านตาปกติ vital signs ปกติหรือต่ำ — และเป็น **ยารักษา** agitation ในผู้ป่วยรายนี้\n- **Opioid**: **pinpoint pupils** + ซึม + หายใจช้า ตรงข้ามกับโจทย์\n- **Organophosphate**: เป็น **cholinergic excess** → รูม่านตาเล็ก น้ำลาย/เหงื่อ/น้ำตามาก bradycardia — ตรงข้ามทุกข้อ\n- **Clonidine**: ลด sympathetic outflow → **miosis, bradycardia, hypotension, ซึม** เลียนแบบ opioid\n\nการรักษา: supportive, ลดไข้ด้วยการ cooling, **benzodiazepine** คุม agitation, ใส่สายสวนปัสสาวะ, activated charcoal ถ้ามาเร็ว; **physostigmine** (carbamate ผ่าน BBB) ในกรณี delirium รุนแรงและ ECG ไม่มี QRS กว้าง (ห้ามถ้าสงสัย TCA)\n\n> หมายเหตุจาก recall: recall จด \"Pupil dilate -> GABA, antimuscarinic\" — GABA agonist ไม่ทำให้รูม่านตาขยาย คำตอบที่ถูกคือ antimuscarinic",
+  "pearl": "รูม่านตาโต + ผิวแห้งแดงร้อน + ปัสสาวะค้าง/ลำไส้ไม่เคลื่อน + delirium = anticholinergic; ถ้ารูม่านตาโตแต่เหงื่อท่วม = sympathomimetic",
+  "ref": [
+   "MED35 สอบลงกองครั้งที่ 3 · MCQ recall ข้อ 58 — Pupil dilate -> GABA, antimuscarinic",
+   "Goldfrank's Toxicologic Emergencies 11th ed. – Anticholinergics"
+  ],
+  "part": "MCQ",
+  "nl": [
+   "2.3.6"
+  ]
+ }
+]
