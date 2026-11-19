@@ -10,8 +10,9 @@
 **หน้าเว็บที่เผยแพร่แล้ว (ลิงก์ถาวร — republish ทับได้ ไม่ต้องส่งลิงก์ใหม่ให้เพื่อน)**
 https://claude.ai/code/artifact/69931ac7-6ac2-4b0a-b4f3-41b7f4aff86d
 
-**ฉบับที่มีชุดลงกอง 3 (19 พ.ย. 2569)** — ลิงก์เดิมด้านบนอัปเดตจากแชทนี้ไม่ได้ (ระบบมองว่าเป็นอาร์ติแฟกต์ของบัญชี/องค์กรอื่น) จึงเผยแพร่ใหม่ที่
-https://claude.ai/artifact/P6HiWmFEDS723gx1NKqLbu (private — ต้องกด Share เองถ้าจะส่งเพื่อน)
+**หน้าที่ใช้จริงตอนนี้ (ธีม Teaching Round, 13 ระบบ): https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X**
+หน้านั้น build จากคิทเวอร์ชันที่ใหม่กว่า repo นี้ (มี neuro/infect/gi/endo/heme/derm/onco) — อย่าเอา drill.html ของ repo ไปทับ
+ชุดลงกอง 3 ใส่เข้าไปแล้ว (19 พ.ย. 2569, version 47) โดยอ่านหน้าเดิมแล้วแทรก `r3` เข้า `<script id="bank">`, `var SETS`, `var LEC` (K01–K11), CSS `[data-set="r3"]`/`.sys-r3`, `NAME.r3` และ `QZ_SKIP`
 
 > วิธีอัปเดตจากแชทใหม่: เรียกเครื่องมือ Artifact โดยส่ง `url` เป็นลิงก์ข้างบน พร้อมไฟล์ `drill.html` ที่ build ใหม่ — URL จะไม่เปลี่ยน
 > repo: `Kingcondom/ioioioio` branch `claude/med-exam-pipeline-kit-g3zgv1`
