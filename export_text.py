@@ -4,6 +4,7 @@ export_text.py — แปลงคลังข้อสอบทั้งหม�
 
     python3 export_text.py            # ทุกระบบ -> export/<ระบบ>.md + export/ALL.md
     python3 export_text.py air chest  # เฉพาะบางระบบ
+    python3 export_text.py r3 --quiz  # เพิ่ม export/<ระบบ>_quiz.txt = ข้อสอบล้วน 5 ตัวเลือก + เฉลยท้ายไฟล์
 
 อ่านจาก bank_merged.json (หลังสลับตัวเลือกแล้ว) ตัวอักษรเฉลยจึงตรงกับเว็บและ PDF
 """
@@ -120,6 +121,39 @@ def export_set(key):
     return '\n'.join(L)
 
 
+def quiz_set(key):
+    """ข้อสอบล้วน (ไม่มีคำอธิบายใต้ข้อ) ไว้ทำจับเวลา — เฉลยรวมไว้ท้ายไฟล์"""
+    s = next(x for x in CFG['sets'] if x['key'] == key)
+    d = BANK[key]
+    mcq, meq = d['mcq'], d['meq']
+    L = ['MED421 · %s (%s)' % (s['label'], s['thai']),
+         'แบบทดสอบ MCQ %d ข้อ (5 ตัวเลือก) + MEQ/OSCE/SAQ %d ข้อ — เฉลยอยู่ท้ายไฟล์' % (len(mcq), len(meq)),
+         '=' * 70, '', 'ส่วนที่ 1 · MCQ', '']
+    cur = None
+    for n, it in enumerate(mcq, 1):
+        if it.get('lecture') != cur:
+            cur = it.get('lecture')
+            L += ['-' * 70, '[%s] %s' % (it.get('lec', ''), cur or ''), '-' * 70, '']
+        L += ['%d. (%s) %s' % (n, it['id'], it.get('stem') or it.get('q', ''))]
+        L += ['   %s. %s' % (LETTERS[i], c) for i, c in enumerate(it['choices'])] + ['']
+    if meq:
+        L += ['=' * 70, '', 'ส่วนที่ 2 · MEQ และ OSCE/SAQ (เขียนตอบ)', '']
+        for it in meq:
+            L += ['(%s) %s — %s' % (it['id'], it.get('part', ''), it.get('topic', ''))]
+            if it.get('station'):
+                L += ['สถานี: ' + it['station']]
+            if it.get('vignette'):
+                L += [it['vignette']]
+            if it.get('instruction'):
+                L += [it['instruction']]
+            L += ['  ' + q['q'] for q in it.get('questions') or []] + ['']
+    L += ['=' * 70, '', 'เฉลย MCQ', '']
+    for n, it in enumerate(mcq, 1):
+        L += ['%3d. %s  (%s)  %s' % (n, LETTERS[it['answer']], it['id'], it['choices'][it['answer']])]
+    L += ['', 'คำอธิบายรายข้อ และแนวคำตอบ MEQ/OSCE อยู่ในไฟล์ %s.md' % key, '']
+    return '\n'.join(L)
+
+
 def main():
     keys = [a for a in sys.argv[1:] if not a.startswith('-')] or [s['key'] for s in CFG['sets']]
     os.makedirs(OUT, exist_ok=True)
@@ -133,6 +167,10 @@ def main():
         open(path, 'w', encoding='utf-8').write(text)
         parts.append(text)
         print('  ✓ %s  %d KB' % (path, len(text.encode()) / 1024))
+        if '--quiz' in sys.argv:
+            qp = os.path.join(OUT, '%s_quiz.txt' % k)
+            open(qp, 'w', encoding='utf-8').write(quiz_set(k))
+            print('  ✓ %s' % qp)
     if len(parts) > 1:
         allp = os.path.join(OUT, 'ALL.md')
         open(allp, 'w', encoding='utf-8').write(
