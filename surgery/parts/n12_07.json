@@ -24,7 +24,7 @@
    "summary": "มะเร็งเกิดจากยีนกลุ่มไหน เลือก biopsy แบบใด ใช้ TNM และ tumor marker อย่างไร และวางการรักษาแบบหลายวิธีอย่างไร",
    "minutes": 12,
    "source": "Schwartz 11e Ch 10 — Cancer genetics, biopsy, staging, tumor markers, multimodality therapy",
-   "md": "### มะเร็งเกิดจากอะไร: oncogene กับ tumor suppressor\n\nมะเร็งคือการสะสม **mutation หลายขั้น** ในเซลล์เดียวจนเซลล์ได้คุณสมบัติชุด **hallmarks of cancer** เช่น ส่งสัญญาณแบ่งตัวเอง ไม่ตอบสนองต่อสัญญาณหยุด หนี apoptosis แบ่งตัวไม่สิ้นสุด (telomerase) สร้างหลอดเลือดใหม่ บุกรุกและแพร่กระจาย หนีภูมิคุ้มกัน และเปลี่ยน metabolism\n\n[[fig:twohit]]\n\n| กลุ่มยีน | กลไก | ต้องเสียกี่ allele | ตัวอย่าง |\n|---|---|---|---|\n| **Proto-oncogene → oncogene** | **gain of function** (กลายพันธุ์/ขยายจำนวน/translocation) | **1 allele** ก็พอ (dominant) | **RAS, MYC, HER2 (ERBB2), RET**, BCR-ABL |\n| **Tumor suppressor gene** | **loss of function** | **2 allele** (Knudson **two-hit**) | **TP53, RB1, APC, BRCA1/2**, VHL |\n| **DNA repair gene** | ซ่อม DNA ไม่ได้ → mutation สะสม | 2 allele | **mismatch repair (MLH1, MSH2)** ใน Lynch syndrome |\n\n- กลุ่มมะเร็งถ่ายทอดทางพันธุกรรมส่วนใหญ่คือ **ได้ hit แรกมาทาง germline** ทุกเซลล์ แล้วเกิด hit ที่สองในเนื้อเยื่อ → มะเร็งเกิด **อายุน้อย หลายตำแหน่ง สองข้าง**\n- ปัจจัยภายนอก: สารเคมี (บุหรี่, aflatoxin), รังสี (UV, ionizing), ไวรัส (**HBV/HCV → HCC, HPV → cervix/oropharynx/anus, EBV → nasopharynx**), ปรสิต (**liver fluke → cholangiocarcinoma** ซึ่งสำคัญมากในอีสาน)\n\n### การวินิจฉัยด้วยชิ้นเนื้อ: เลือกวิธีให้ตรงกับคำถาม\n| วิธี | ได้อะไร | ข้อดี | ข้อจำกัด |\n|---|---|---|---|\n| **Fine-needle aspiration (FNA)** | **cytology** (เซลล์) | ง่าย ปลอดภัย เร็ว | **ไม่เห็น architecture** แยก in situ กับ invasive ไม่ได้ |\n| **Core-needle biopsy** | **histology** ชิ้นเนื้อเป็นแท่ง | บอก invasion, grade, **receptor (ER/PR/HER2)** | sampling error ได้ |\n| **Incisional biopsy** | ตัดบางส่วนของก้อน | เนื้อเยื่อมาก | เป็นการผ่าตัด ใช้กับก้อนใหญ่ที่เข็มไม่ได้ผล |\n| **Excisional biopsy** | ตัดทั้งก้อน | ได้ทั้งวินิจฉัยและรักษา | ต้องทำแบบมี margin เพื่อให้เป็นการรักษาได้ |\n| **Punch biopsy** | ผิวหนังเต็มความหนา | ใช้กับรอยโรคผิวหนัง | — |\n\nหลักการที่ศัลยแพทย์ต้องรู้\n- ถ้าผล **ไม่สอดคล้องกับภาพทางคลินิก/ภาพรังสี (discordant)** ต้องเจาะซ้ำหรือทำ open biopsy\n- แผล biopsy ต้อง **วางให้อยู่ในแนวที่จะตัดออกตอนผ่าตัดใหญ่** (แขนขาใช้แนวยาว) ไม่ให้ปนเปื้อนช่องเนื้อเยื่ออื่น\n- ทำ **orientation** ของชิ้นเนื้อ (ไหม/clip) และให้พยาธิแพทย์ **ink margin**\n\n### Staging: TNM\n- **T** = ขนาด/การลุกลามของก้อน · **N** = ต่อมน้ำเหลืองบริเวณ · **M** = แพร่กระจายไกล → รวมเป็น stage 0–IV (AJCC 8th edition เพิ่ม biomarker/grade ในบางมะเร็ง เช่น เต้านม)\n- คำนำหน้า: **c** = clinical (ก่อนรักษา), **p** = pathologic (หลังผ่าตัด), **yp** = หลัง neoadjuvant therapy, **r** = recurrence\n- Staging ใช้เพื่อ **เลือกการรักษา บอกพยากรณ์ และเปรียบเทียบผลการรักษา**\n- **Grade** (ความผิดปกติของเซลล์) ≠ **stage** (ขอบเขตของโรค)\n\n### Tumor markers: ใช้ติดตามมากกว่าคัดกรอง\n| Marker | มะเร็งหลัก | การใช้ที่ได้ประโยชน์ |\n|---|---|---|\n| **CEA** | colorectal | วัดก่อนผ่าตัด (บอกพยากรณ์) และ **ติดตามหลังผ่าตัด stage II–III ทุก 3 เดือน** หา recurrence · **ไม่ใช้คัดกรอง** |\n| **AFP** | HCC, germ cell tumor (non-seminoma, yolk sac) | เฝ้าระวัง HCC ร่วมกับ US ในผู้ป่วย HBV/cirrhosis ทุก 6 เดือน |\n| **CA 19-9** | pancreas, biliary | ติดตามระหว่างรักษา · ไม่ใช้คัดกรอง (ต้องมี Lewis antigen) |\n| **CA-125** | ovarian epithelial | ติดตามการรักษา |\n| **PSA** | prostate | คัดกรองยังเป็นข้อถกเถียง ต้องตัดสินใจร่วมกับผู้ป่วย |\n| **β-hCG** | choriocarcinoma, germ cell | วินิจฉัยและติดตาม |\n| **Calcitonin** | medullary thyroid cancer | ติดตามหลังผ่าตัด |\n| CA 15-3 | breast | ติดตามระยะแพร่กระจาย |\n\n> Marker ส่วนใหญ่ **sensitivity/specificity ต่ำ** และสูงได้ในโรคไม่ร้าย → ใช้ติดตามได้ดีเมื่อค่าสูงตั้งแต่ก่อนรักษา\n\n### การรักษามะเร็งแบบหลายวิธี (multimodality)\n- **Surgery**: curative (ตัดก้อน + margin ลบ + ต่อมน้ำเหลือง), prophylactic (เช่น total colectomy ใน FAP, thyroidectomy ใน RET carrier, mastectomy ใน BRCA), palliative, cytoreductive, metastasectomy (เช่น liver metastasis ของ colorectal)\n- **Neoadjuvant** = ให้ก่อนผ่าตัดเพื่อ **ลดขนาดก้อน (downstage)** เพิ่มโอกาสผ่าตัดเก็บอวัยวะ และดูการตอบสนอง · **Adjuvant** = ให้หลังผ่าตัดเพื่อกำจัด micrometastasis\n- **Chemotherapy** (cell-cycle specific/non-specific), **radiotherapy**, **hormonal therapy** (tamoxifen, aromatase inhibitor, ADT), **targeted therapy** (trastuzumab, imatinib), **immunotherapy** (immune checkpoint inhibitor เช่น anti-PD-1)\n- การตัดสินใจทำใน **multidisciplinary tumor board**",
+   "md": "### มะเร็งเกิดจากอะไร: oncogene กับ tumor suppressor\n\nมะเร็งคือการสะสม **mutation หลายขั้น** ในเซลล์เดียวจนเซลล์ได้คุณสมบัติชุด **hallmarks of cancer** เช่น ส่งสัญญาณแบ่งตัวเอง ไม่ตอบสนองต่อสัญญาณหยุด หนี apoptosis แบ่งตัวไม่สิ้นสุด (telomerase) สร้างหลอดเลือดใหม่ บุกรุกและแพร่กระจาย หนีภูมิคุ้มกัน และเปลี่ยน metabolism\n\n[[fig:twohit]]\n\n| กลุ่มยีน | กลไก | ต้องเสียกี่ allele | ตัวอย่าง |\n|---|---|---|---|\n| **Proto-oncogene → oncogene** | **gain of function** (กลายพันธุ์/ขยายจำนวน/translocation) | **1 allele** ก็พอ (dominant) | **RAS, MYC, HER2 (ERBB2), RET**, BCR-ABL |\n| **Tumor suppressor gene** | **loss of function** | **2 allele** (Knudson **two-hit**) | **TP53, RB1, APC, BRCA1/2**, VHL |\n| **DNA repair gene** | ซ่อม DNA ไม่ได้ → mutation สะสม | 2 allele | **mismatch repair (MLH1, MSH2)** ใน Lynch syndrome |\n\n- กลุ่มมะเร็งถ่ายทอดทางพันธุกรรมส่วนใหญ่คือ **ได้ hit แรกมาทาง germline** ทุกเซลล์ แล้วเกิด hit ที่สองในเนื้อเยื่อ → มะเร็งเกิด **อายุน้อย หลายตำแหน่ง สองข้าง**\n- ปัจจัยภายนอก: สารเคมี (บุหรี่, aflatoxin), รังสี (UV, ionizing), ไวรัส (**HBV/HCV → HCC, HPV → cervix/oropharynx/anus, EBV → nasopharynx**), ปรสิต (**liver fluke → cholangiocarcinoma** ซึ่งสำคัญมากในอีสาน)\n\n### การวินิจฉัยด้วยชิ้นเนื้อ: เลือกวิธีให้ตรงกับคำถาม\n| วิธี | ได้อะไร | ข้อดี | ข้อจำกัด |\n|---|---|---|---|\n| **Fine-needle aspiration (FNA)** | **cytology** (เซลล์) | ง่าย ปลอดภัย เร็ว | **ไม่เห็น architecture** แยก in situ กับ invasive ไม่ได้ |\n| **Core-needle biopsy** | **histology** ชิ้นเนื้อเป็นแท่ง | บอก invasion, grade, **receptor (ER/PR/HER2)** | sampling error ได้ |\n| **Incisional biopsy** | ตัดบางส่วนของก้อน | เนื้อเยื่อมาก | เป็นการผ่าตัด ใช้กับก้อนใหญ่ที่เข็มไม่ได้ผล |\n| **Excisional biopsy** | ตัดทั้งก้อน | ได้ทั้งวินิจฉัยและรักษา | ต้องทำแบบมี margin เพื่อให้เป็นการรักษาได้ |\n| **Punch biopsy** | ผิวหนังเต็มความหนา | ใช้กับรอยโรคผิวหนัง | — |\n\nหลักการที่ศัลยแพทย์ต้องรู้\n- ถ้าผล **ไม่สอดคล้องกับภาพทางคลินิก/ภาพรังสี (discordant)** ต้องเจาะซ้ำหรือทำ open biopsy\n- แผล biopsy ต้อง **วางให้อยู่ในแนวที่จะตัดออกตอนผ่าตัดใหญ่** (แขนขาใช้แนวยาว) ไม่ให้ปนเปื้อนช่องเนื้อเยื่ออื่น\n- ทำ **orientation** ของชิ้นเนื้อ (ไหม/clip) และให้พยาธิแพทย์ **ink margin**\n\n### Staging: TNM\n\n[[anim:tnm_steps]]\n\n- **T** = ขนาด/การลุกลามของก้อน · **N** = ต่อมน้ำเหลืองบริเวณ · **M** = แพร่กระจายไกล → รวมเป็น stage 0–IV (AJCC 8th edition เพิ่ม biomarker/grade ในบางมะเร็ง เช่น เต้านม)\n- คำนำหน้า: **c** = clinical (ก่อนรักษา), **p** = pathologic (หลังผ่าตัด), **yp** = หลัง neoadjuvant therapy, **r** = recurrence\n- Staging ใช้เพื่อ **เลือกการรักษา บอกพยากรณ์ และเปรียบเทียบผลการรักษา**\n- **Grade** (ความผิดปกติของเซลล์) ≠ **stage** (ขอบเขตของโรค)\n\n### Tumor markers: ใช้ติดตามมากกว่าคัดกรอง\n| Marker | มะเร็งหลัก | การใช้ที่ได้ประโยชน์ |\n|---|---|---|\n| **CEA** | colorectal | วัดก่อนผ่าตัด (บอกพยากรณ์) และ **ติดตามหลังผ่าตัด stage II–III ทุก 3 เดือน** หา recurrence · **ไม่ใช้คัดกรอง** |\n| **AFP** | HCC, germ cell tumor (non-seminoma, yolk sac) | เฝ้าระวัง HCC ร่วมกับ US ในผู้ป่วย HBV/cirrhosis ทุก 6 เดือน |\n| **CA 19-9** | pancreas, biliary | ติดตามระหว่างรักษา · ไม่ใช้คัดกรอง (ต้องมี Lewis antigen) |\n| **CA-125** | ovarian epithelial | ติดตามการรักษา |\n| **PSA** | prostate | คัดกรองยังเป็นข้อถกเถียง ต้องตัดสินใจร่วมกับผู้ป่วย |\n| **β-hCG** | choriocarcinoma, germ cell | วินิจฉัยและติดตาม |\n| **Calcitonin** | medullary thyroid cancer | ติดตามหลังผ่าตัด |\n| CA 15-3 | breast | ติดตามระยะแพร่กระจาย |\n\n> Marker ส่วนใหญ่ **sensitivity/specificity ต่ำ** และสูงได้ในโรคไม่ร้าย → ใช้ติดตามได้ดีเมื่อค่าสูงตั้งแต่ก่อนรักษา\n\n### การรักษามะเร็งแบบหลายวิธี (multimodality)\n- **Surgery**: curative (ตัดก้อน + margin ลบ + ต่อมน้ำเหลือง), prophylactic (เช่น total colectomy ใน FAP, thyroidectomy ใน RET carrier, mastectomy ใน BRCA), palliative, cytoreductive, metastasectomy (เช่น liver metastasis ของ colorectal)\n- **Neoadjuvant** = ให้ก่อนผ่าตัดเพื่อ **ลดขนาดก้อน (downstage)** เพิ่มโอกาสผ่าตัดเก็บอวัยวะ และดูการตอบสนอง · **Adjuvant** = ให้หลังผ่าตัดเพื่อกำจัด micrometastasis\n- **Chemotherapy** (cell-cycle specific/non-specific), **radiotherapy**, **hormonal therapy** (tamoxifen, aromatase inhibitor, ADT), **targeted therapy** (trastuzumab, imatinib), **immunotherapy** (immune checkpoint inhibitor เช่น anti-PD-1)\n- การตัดสินใจทำใน **multidisciplinary tumor board**",
    "pearls": [
     "Oncogene = gain of function เสีย allele เดียวก็พอ (RAS, MYC, HER2, RET)",
     "Tumor suppressor = two-hit (TP53, RB1, APC, BRCA) · germline hit แรก → มะเร็งอายุน้อย หลายที่",
@@ -121,6 +121,42 @@
      "title": "Two-hit: ทำไมมะเร็งพันธุกรรมเกิดอายุน้อยและหลายตำแหน่ง",
      "cap": "tumor suppressor ต้องเสีย **ทั้ง 2 allele** · คนทั่วไปต้องรอ 2 hit ในเซลล์เดียว ส่วนผู้มี **germline mutation** มี hit แรกในทุกเซลล์แล้ว ขาดอีก **hit เดียว** จึงเป็นเร็ว หลายตำแหน่ง สองข้าง · oncogene ต่างกัน: **1 allele ก็พอ**",
      "svg": "<svg viewBox=\"0 0 420 262\" role=\"img\" aria-label=\"Knudson two-hit: มะเร็งแบบ sporadic ต้องเสีย 2 allele ในเซลล์เดียว แบบถ่ายทอดได้ hit แรกมาแต่กำเนิด\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"10\" y=\"16\" class=\"xs b\">Tumor suppressor gene (เช่น RB1, APC, BRCA)</text><text x=\"10\" y=\"40\" class=\"sm b\">Sporadic</text><circle cx=\"40\" cy=\"70\" r=\"20\" class=\"bx\"/><rect x=\"31\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"okf\"/><rect x=\"43\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"okf\"/><path d=\"M62 70 L96 70\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><text x=\"79\" y=\"62\" class=\"xs mid tbad\">hit 1</text><circle cx=\"120\" cy=\"70\" r=\"20\" class=\"bx\"/><rect x=\"111\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><rect x=\"123\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"okf\"/><path d=\"M142 70 L176 70\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><text x=\"159\" y=\"62\" class=\"xs mid tbad\">hit 2</text><circle cx=\"200\" cy=\"70\" r=\"20\" class=\"bx\"/><rect x=\"191\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><rect x=\"203\" y=\"61\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><path d=\"M222 70 L236 70\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><rect x=\"242\" y=\"48\" width=\"168\" height=\"44\" rx=\"6\" class=\"ms\"/><text x=\"326\" y=\"66.8\" class=\"xs mid\"><tspan x=\"326\" dy=\"0\">ต้อง 2 hit ในเซลล์เดียว</tspan><tspan x=\"326\" dy=\"13.9\">→ อายุมาก · ก้อนเดียว</tspan></text><text x=\"10\" y=\"122\" class=\"sm b\">Hereditary (germline)</text><circle cx=\"40\" cy=\"152\" r=\"20\" class=\"bx\"/><rect x=\"31\" y=\"143\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><rect x=\"43\" y=\"143\" width=\"6\" height=\"18\" rx=\"2\" class=\"okf\"/><text x=\"40\" y=\"186\" class=\"xs mid mu\">ทุกเซลล์ตั้งแต่เกิด</text><path d=\"M62 152 L176 152\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><text x=\"119\" y=\"144\" class=\"xs mid tbad\">hit เดียวพอ</text><circle cx=\"200\" cy=\"152\" r=\"20\" class=\"bx\"/><rect x=\"191\" y=\"143\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><rect x=\"203\" y=\"143\" width=\"6\" height=\"18\" rx=\"2\" class=\"badf\"/><path d=\"M222 152 L236 152\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><rect x=\"242\" y=\"130\" width=\"168\" height=\"44\" rx=\"6\" class=\"bad\"/><text x=\"326\" y=\"148.8\" class=\"xs mid\"><tspan x=\"326\" dy=\"0\">อายุน้อย · หลายตำแหน่ง</tspan><tspan x=\"326\" dy=\"13.9\">สองข้าง</tspan></text><rect x=\"14\" y=\"206\" width=\"6\" height=\"12\" rx=\"2\" class=\"okf\"/><text x=\"24\" y=\"216\" class=\"xs\">allele ปกติ</text><rect x=\"94\" y=\"206\" width=\"6\" height=\"12\" rx=\"2\" class=\"badf\"/><text x=\"104\" y=\"216\" class=\"xs\">allele เสีย</text><rect x=\"10\" y=\"226\" width=\"400\" height=\"32\" rx=\"6\" class=\"ac\"/><text x=\"210\" y=\"245.8\" class=\"xs mid\">Oncogene (RAS, MYC, HER2, RET) ต่างกัน: gain-of-function 1 allele ก็พอ</text></svg>"
+    }
+   },
+   "anims": {
+    "tnm_steps": {
+     "title": "จากเซลล์ปกติถึง T, N, M",
+     "svg": "<svg viewBox=\"0 0 420 294\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว: เซลล์ปกติสะสม mutation เป็น adenoma, carcinoma in situ, invasive แล้วแพร่ไปต่อมน้ำเหลืองและอวัยวะไกล ตรงกับ T N M\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 110 L252 110\" class=\"lac w3\"/><text x=\"24\" y=\"126\" class=\"xs tac\">basement membrane</text><circle cx=\"40\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"66\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"92\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"118\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"144\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"170\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"196\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"222\" cy=\"97\" r=\"10\" class=\"sk\"/><circle cx=\"92\" cy=\"97\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"92\" cy=\"77\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"118\" cy=\"97\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"118\" cy=\"77\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"144\" cy=\"97\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"144\" cy=\"77\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"170\" cy=\"97\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"170\" cy=\"77\" r=\"10\" class=\"ms\" data-s=\"2\" data-x=\"3\"/><circle cx=\"92\" cy=\"97\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"92\" cy=\"77\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"118\" cy=\"97\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"118\" cy=\"77\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"144\" cy=\"97\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"144\" cy=\"77\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"170\" cy=\"97\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"170\" cy=\"77\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"118\" cy=\"57\" r=\"10\" class=\"bad\" data-s=\"3\"/><circle cx=\"144\" cy=\"57\" r=\"10\" class=\"bad\" data-s=\"3\"/><g data-s=\"4\"><circle cx=\"168\" cy=\"132\" r=\"9\" class=\"bad pl\"/><circle cx=\"186\" cy=\"148\" r=\"9\" class=\"bad pl\"/><circle cx=\"204\" cy=\"134\" r=\"9\" class=\"bad pl\"/></g><text x=\"148\" y=\"154\" class=\"lg b mid tbad\" data-s=\"4\">T</text><circle cx=\"334\" cy=\"120\" r=\"16\" class=\"sk\" data-x=\"5\"/><g data-s=\"5\"><circle cx=\"334\" cy=\"120\" r=\"16\" class=\"bad pl\"/></g><text x=\"334\" y=\"154\" class=\"xs mid mu\">ต่อมน้ำเหลือง</text><g data-x=\"6\"><rect x=\"300\" y=\"180\" width=\"108\" height=\"44\" rx=\"6\" class=\"bx\"/><text x=\"354.0\" y=\"198.6\" class=\"sm b mid\">อวัยวะไกล</text><text x=\"354.0\" y=\"213.3\" class=\"xs mid\">ตับ ปอด กระดูก</text></g><g data-s=\"6\"><g><rect x=\"300\" y=\"180\" width=\"108\" height=\"44\" rx=\"6\" class=\"bad pl\"/><text x=\"354.0\" y=\"198.6\" class=\"sm b mid\">อวัยวะไกล</text><text x=\"354.0\" y=\"213.3\" class=\"xs mid\">ตับ ปอด กระดูก</text></g></g><path d=\"M218 140 C 260 146, 280 124, 312 120\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\" data-s=\"5\"/><text x=\"364\" y=\"112\" class=\"lg b tbad\" data-s=\"5\">N</text><path d=\"M214 154 C 240 190, 260 204, 294 202\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\" data-s=\"6\"/><text x=\"282\" y=\"182\" class=\"lg b mid tbad\" data-s=\"6\">M</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"1\" data-x=\"2\">เซลล์ปกติ</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"2\" data-x=\"3\">Adenoma (clone)</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"3\" data-x=\"4\">Carcinoma in situ (Tis)</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"4\" data-x=\"5\">Invasive carcinoma</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"5\" data-x=\"6\">แพร่ไปต่อมน้ำเหลือง</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"6\" data-x=\"7\">แพร่กระจายไกล</text><text x=\"20\" y=\"24\" class=\"sm b tac\" data-s=\"7\">TNM → stage → รักษา</text><g data-s=\"1\" data-x=\"2\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"bx\"/><text x=\"210.0\" y=\"265.1\" class=\"sm mid\">เซลล์เยื่อบุเรียงชั้นเดียวบน basement membrane</text></g><g data-s=\"2\" data-x=\"3\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"ms\"/><text x=\"210.0\" y=\"257.4\" class=\"sm mid\"><tspan x=\"210.0\" dy=\"0\">hit แรก เช่น APC ✗ (tumor suppressor) → เซลล์แบ่งเกิน</tspan><tspan x=\"210.0\" dy=\"1.348em\">กลายเป็น clone เดียวกัน (adenoma)</tspan></text></g><g data-s=\"3\" data-x=\"4\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"bad\"/><text x=\"210.0\" y=\"257.4\" class=\"sm mid\"><tspan x=\"210.0\" dy=\"0\">สะสม mutation: KRAS ↑ (oncogene) · TP53 ✗</tspan><tspan x=\"210.0\" dy=\"1.348em\">เซลล์ผิดรูปทั้งชั้นแต่ยังไม่ทะลุ = in situ</tspan></text></g><g data-s=\"4\" data-x=\"5\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"bad\"/><text x=\"210.0\" y=\"257.4\" class=\"sm mid\"><tspan x=\"210.0\" dy=\"0\">ทะลุ basement membrane = invasive → T ตามขนาด/ความลึก</tspan><tspan x=\"210.0\" dy=\"1.348em\">FNA เห็นแค่เซลล์ แยก in situ กับ invasive ไม่ได้ → core</tspan></text></g><g data-s=\"5\" data-x=\"6\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"bad\"/><text x=\"210.0\" y=\"265.1\" class=\"sm mid\">เข้าท่อน้ำเหลือง → ต่อมน้ำเหลืองบริเวณ = N</text></g><g data-s=\"6\" data-x=\"7\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"bad\"/><text x=\"210.0\" y=\"265.1\" class=\"sm mid\">เข้ากระแสเลือด → อวัยวะไกล = M</text></g><g data-s=\"7\"><rect x=\"12\" y=\"238\" width=\"396\" height=\"46\" rx=\"6\" class=\"ok\"/><text x=\"210.0\" y=\"257.4\" class=\"sm mid\"><tspan x=\"210.0\" dy=\"0\">รวม TNM เป็น stage → ผ่าตัด margin ลบ + ต่อมน้ำเหลือง</tspan><tspan x=\"210.0\" dy=\"1.348em\">neoadjuvant ลดขนาด · adjuvant กำจัด micrometastasis</tspan></text></g></svg>",
+     "steps": [
+      {
+       "t": "เซลล์ปกติ",
+       "cap": "เยื่อบุเรียงชั้นเดียวบน **basement membrane** — มะเร็งเกิดจากการ**สะสม mutation หลายขั้น**ในเซลล์เดียว"
+      },
+      {
+       "t": "Hit แรก → clone",
+       "cap": "เสีย **tumor suppressor** (เช่น APC ต้องเสียครบ 2 allele) → เซลล์แบ่งเกินเป็น clone เดียวกัน (adenoma) · ถ้า hit แรกมาทาง germline มะเร็งจะเกิดเร็วและหลายตำแหน่ง"
+      },
+      {
+       "t": "Carcinoma in situ",
+       "cap": "สะสมเพิ่ม: **oncogene** ทำงานเกิน (KRAS — แค่ 1 allele) และเสีย **TP53** → เซลล์ผิดรูปทั้งชั้นแต่**ยังไม่ทะลุ basement membrane** (Tis เช่น DCIS)"
+      },
+      {
+       "t": "Invasive = T",
+       "cap": "ทะลุ basement membrane → **invasive** วัดเป็น **T** ตามขนาด/ความลึก · FNA เห็นแค่เซลล์ จึงแยก in situ กับ invasive ไม่ได้ ต้อง **core biopsy** ดู architecture"
+      },
+      {
+       "t": "ต่อมน้ำเหลือง = N",
+       "cap": "เซลล์มะเร็งเข้าท่อน้ำเหลืองไปยังต่อมน้ำเหลืองบริเวณ = **N** (sentinel node คือต่อมแรกที่รับน้ำเหลือง)"
+      },
+      {
+       "t": "แพร่กระจายไกล = M",
+       "cap": "เข้ากระแสเลือดไปอวัยวะไกล เช่น ตับ ปอด กระดูก = **M**"
+      },
+      {
+       "t": "Stage → รักษา",
+       "cap": "รวม TNM เป็น **stage** เพื่อเลือกการรักษาและบอกพยากรณ์ · local: ผ่าตัด margin ลบ + ต่อมน้ำเหลือง · systemic: **neoadjuvant** ลดขนาดก้อน **adjuvant** กำจัด micrometastasis · grade ≠ stage"
+      }
+     ]
     }
    }
   },
@@ -513,5 +549,66 @@
    ]
   }
  ],
- "osce": []
+ "osce": [],
+ "reading": {
+  "minutes": 110,
+  "start": "เริ่มจากหลักการมะเร็ง (ยีน → biopsy → TNM → marker) แล้วนำไปใช้กับผิวหนังและเต้านม · ตัวเลขที่ออกข้อสอบคือ margin ตาม Breslow และ BI-RADS — รอบแรกข้าม special types และรายละเอียดยาแต่ละตัวได้",
+  "order": [
+   {
+    "sec": "n12-07-1",
+    "level": "must",
+    "why": "oncogene vs tumor suppressor, เลือกวิธี biopsy, TNM และ tumor marker เป็นพื้นของทุกมะเร็ง"
+   },
+   {
+    "sec": "n12-07-3",
+    "level": "must",
+    "why": "triple assessment, BI-RADS และโรคเต้านมไม่ร้ายที่ต้องแยก — โจทย์ก้อนเต้านมพบบ่อยที่สุด"
+   },
+   {
+    "sec": "n12-07-4",
+    "level": "must",
+    "why": "BRCA, ชนิดมะเร็ง, staging และการรักษาตาม receptor"
+   },
+   {
+    "sec": "n12-07-2",
+    "level": "must",
+    "why": "ลักษณะ BCC/SCC/melanoma, ห้าม shave biopsy และ margin ตาม Breslow"
+   }
+  ],
+  "schwartz": [
+   {
+    "ch": "Ch 10",
+    "part": "Hallmarks of Cancer / Oncogenes",
+    "why": "พื้นฐาน carcinogenesis และ two-hit"
+   },
+   {
+    "ch": "Ch 10",
+    "part": "Serum Markers",
+    "why": "marker ใดใช้ติดตาม ใดใช้คัดกรองไม่ได้"
+   },
+   {
+    "ch": "Ch 16",
+    "part": "Melanoma",
+    "why": "ชนิด, Breslow, margin และ sentinel node"
+   },
+   {
+    "ch": "Ch 17",
+    "part": "Breast Cancer Staging / Sentinel Lymph Node Dissection",
+    "why": "T/N ของเต้านม และเหตุผลที่ไม่ต้อง ALND ในบางราย"
+   }
+  ],
+  "beyond": [
+   "**NSABP B-06** — breast-conserving surgery + RT อัตรารอดเท่ากับ mastectomy",
+   "**ACOSOG Z0011 (JAMA 2011)** — SLN บวก 1–2 ต่อมที่ทำ BCS + RT ไม่ต้อง axillary dissection",
+   "**MSLT-II (NEJM 2017)** — melanoma SLN บวกไม่ต้อง completion lymph node dissection เป็นประจำ",
+   "**AJCC Cancer Staging Manual, 8th edition (2017)** — เพิ่ม biomarker เข้าใน staging มะเร็งเต้านม"
+  ],
+  "tips": [
+   "Oncogene = **gain of function 1 allele** (RAS, MYC, HER2, RET) · tumor suppressor = **2 hit** (TP53, RB1, APC, BRCA) · hit แรก germline → อายุน้อย หลายตำแหน่ง",
+   "FNA = cytology **แยก in situ กับ invasive ไม่ได้** · core ได้ histology + ER/PR/HER2 · ผลไม่สอดคล้องกับภาพ → เจาะซ้ำ/ตัด",
+   "Melanoma: **ห้าม shave biopsy** · **Breslow** คือตัวพยากรณ์สำคัญสุด · margin ≤ 1 mm → 1 cm, > 2 mm → 2 cm · SLNB เมื่อ > 1 mm",
+   "BI-RADS **3 → ติดตาม 6 เดือน**, **4–5 → biopsy** · ก้อนเคลื่อนดีหญิงอายุน้อย = fibroadenoma · ก้อนใหญ่โตเร็วคล้าย fibroadenoma = **phyllodes (ไม่เลาะต่อมน้ำเหลือง)**",
+   "เลือดออกหัวนมรูเดียว = **intraductal papilloma** · ผิวแดงบวม peau d'orange เร็วไม่กี่สัปดาห์ = **inflammatory (T4d) → neoadjuvant ก่อน** · tamoxifen → endometrial cancer/DVT · AI → กระดูกพรุน"
+  ]
+ }
 }

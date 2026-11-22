@@ -19,3 +19,8 @@ CONTENT_SPEC.md     สเปกการเขียนเนื้อหา/�
 ## แผนภาพ pathophysiology
 ทุกหัวข้อมีแผนภาพ SVG (298 ภาพ) เก็บใน `figs` ของแต่ละ section และวางในเนื้อหาด้วยบรรทัด `[[fig:key]]` — สเปกอยู่ใน FIG_SPEC.md
 ตรวจ: `python3 tools/figlint.py parts/*.json` และ `node tools/figrender.js parts/*.json` (ต้องได้ 0 ทั้งคู่)
+
+## ภาพเคลื่อนไหวและแนะนำการอ่าน
+- ภาพเคลื่อนไหวทีละขั้น 65 ชุด (`anims` ของ section วางด้วย `[[anim:key]]`) — สเปกใน ANIM_SPEC.md ตรวจด้วย tools/figlint.py และ tools/figrender.js (เรนเดอร์ทุกขั้น)
+- แนะนำการอ่านรายคาบ (`reading` ของ lecture: ลำดับอ่าน ต้องอ่าน/อ่านเสริม, หัวข้อใน Schwartz, แนวทาง/งานวิจัย, ข้อสอบชอบถาม) แสดงที่หน้าคาบ
+- แผนการอ่านของแต่ละกลุ่ม (`plan` ใน COURSES ของ build.py) แสดงที่หน้าแรก

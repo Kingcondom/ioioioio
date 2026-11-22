@@ -2820,7 +2820,7 @@ var TR=(function(){
       "<button class='tr-tile press"+(wc?" warn":"")+"' data-trview='review'><small>ข้อที่ผิด รอทวน</small><b>"+wc+"</b></button>"+
       "<button class='tr-tile press' data-trview='meq'><small>"+esc(PL().meq+" / "+PL().osce)+"</small><b>"+meqN+"</b></button>"+
       "<button class='tr-tile press tr-desk' data-trview='lectures'><small>ข้อสอบ MCQ ทั้งชุด</small><b>"+allSections().reduce(function(a,x){return a+x.sec.items.length},0)+"</b></button></div>";
-    if(c.plan&&c.plan.length)h+="<details class='tr-about tr-plan' open><summary>แผนการอ่านแนะนำ · "+esc(c.label)+"</summary><div>"+(c.planNote?"<p style='margin:0 0 12px'>"+inline(c.planNote)+"</p>":"")+"<ol class='tr-plan-l'>"+
+    if(c.plan&&c.plan.length)h+="<details class='tr-about tr-plan'><summary>แผนการอ่านแนะนำ · "+esc(c.label)+"</summary><div>"+(c.planNote?"<p style='margin:0 0 12px'>"+inline(c.planNote)+"</p>":"")+"<ol class='tr-plan-l'>"+
       c.plan.map(function(p,pi){return "<li><b>"+(pi+1)+". "+esc(p.name)+"</b>"+(p.note?"<span>"+inline(p.note)+"</span>":"")+"<div class='tr-plan-c'>"+
         (p.lecs||[]).map(function(id){var l=lecOf(id);if(!l)return "";var s=cardStat(l);
           return "<button class='tr-tag press"+(s.ok===s.n?" ok":s.ok?" go":"")+"' data-trlec='"+esc(id)+"'>"+(s.ok===s.n?"✓ ":"")+"คาบ "+esc(id)+" "+esc(l.title)+"</button>";}).join("")+"</div></li>";}).join("")+"</ol></div></details>";

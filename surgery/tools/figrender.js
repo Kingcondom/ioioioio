@@ -5,10 +5,13 @@ const base=fs.readFileSync(path.join(__dirname,'figbase.html'),'utf8');
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:600,height:800},deviceScaleFactor:png?2:1});
  await p.setContent(base);await p.waitForTimeout(300);let total=0;
  for(const f of args){const L=JSON.parse(fs.readFileSync(f,'utf8'));
-  for(const s of L.sections){for(const [k,fg] of Object.entries(s.figs||{})){
-   const res=await p.evaluate((svg)=>{const r=document.getElementById('root');
+  for(const s of L.sections){const jobs=[];for(const [k,fg] of Object.entries(s.figs||{}))jobs.push([k,fg.svg,0]);
+   for(const [k,a] of Object.entries(s.anims||{}))for(let st=1;st<=(a.steps||[]).length;st++)jobs.push([k+'@step'+st,a.svg,st]);
+   for(const [k,svgsrc,step] of jobs){const fg={svg:svgsrc};
+   const res=await p.evaluate(([svg,step])=>{const r=document.getElementById('root');
      r.innerHTML="<figure class='fig' style='width:540px'><div class='figsv'><div class='figin'>"+svg+"</div></div></figure>";
-     const sv=r.querySelector('svg');if(!sv)return ['no svg'];const vb=sv.viewBox.baseVal;const probs=[];
+     const sv=r.querySelector('svg');if(!sv)return ['no svg'];
+     if(step){sv.querySelectorAll('[data-s],[data-x]').forEach(el=>{const a=el.getAttribute('data-s'),x=el.getAttribute('data-x');if((a&&+a>step)||(x&&+x<=step))el.remove();});}const vb=sv.viewBox.baseVal;const probs=[];
      const T=[...sv.querySelectorAll('text')];const bbs=T.map(t=>{try{return t.getBBox()}catch(e){return null}});
      const txt=t=>t.textContent.trim().slice(0,30);
      T.forEach((t,i)=>{const bb=bbs[i];if(!bb||!bb.width)return;
@@ -21,8 +24,8 @@ const base=fs.readFileSync(path.join(__dirname,'figbase.html'),'utf8');
      T.forEach((t,i)=>{const bb=bbs[i];if(!bb||!bb.width)return;const cx=bb.x+Math.min(bb.width,8),cy=bb.y+bb.height/2;
        const host=R.filter(r=>cx>=r.x&&cx<=r.x+r.width&&cy>=r.y&&cy<=r.y+r.height).sort((a,b)=>a.width*a.height-b.width*b.height)[0];
        if(host&&(bb.x+bb.width>host.x+host.width+1.5||bb.y+bb.height>host.y+host.height+2||bb.y<host.y-2))probs.push('text sticks out of its box: "'+txt(t)+'"');});
-     return probs;},fg.svg);
+     return probs;},[fg.svg,step]);
    if(res.length){total+=res.length;console.log(`${path.basename(f)} ${s.id}/${k}:`);res.forEach(x=>console.log('   ',x));}
-   if(png){const el=await p.$('#root figure');await el.screenshot({path:path.join(png,`${s.id}_${k}.png`)});}
+   if(png){const el=await p.$('#root figure');await el.screenshot({path:path.join(png,`${s.id}_${k.replace('@','_')}.png`)});}
   }}}
  console.log('problems:',total);await b.close();process.exit(total?1:0);})();

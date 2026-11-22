@@ -26,7 +26,7 @@
    "summary": "ยากดภูมิแต่ละตัวตัดวงจร T-cell activation ตรงไหน มีพิษอะไรที่ศัลยแพทย์ต้องเจอ และ drug interaction ใดทำให้เกิด rejection หรือพิษ",
    "minutes": 15,
    "source": "Schwartz 11e Ch 11 — Transplant immunobiology; Clinical immunosuppression",
-   "md": "### Allorecognition: ทำไมร่างกายจำอวัยวะคนอื่นได้\n- **HLA class I** (HLA-A, -B, -C) อยู่บนเซลล์ที่มีนิวเคลียสทุกชนิด นำเสนอต่อ **CD8** T cell; **HLA class II** (HLA-DR, -DQ, -DP) อยู่บน antigen-presenting cell นำเสนอต่อ **CD4** — การ match ไตใช้ HLA-A, -B, -DR เป็นหลัก\n- **Direct allorecognition**: T cell ของผู้รับจำ HLA ของผู้ให้บน donor APC (passenger leukocyte) → ขับเคลื่อน acute rejection ระยะแรก · **Indirect**: APC ของผู้รับนำเสนอ peptide ของ donor HLA → สัมพันธ์กับ antibody และ chronic rejection\n- ABO incompatibility และ antibody ต่อ HLA ที่มีอยู่ก่อน (จากการตั้งครรภ์ การให้เลือด การปลูกถ่ายครั้งก่อน) คือต้นเหตุของ **hyperacute rejection**\n\n### Three-signal model: แผนที่ว่ายาแต่ละตัวตัดตรงไหน\n\n[[fig:signals]]\n\n| Signal | เหตุการณ์ | ยาที่ตัด |\n|---|---|---|\n| 1 | TCR จับ HLA-peptide → **calcineurin** dephosphorylate NFAT → ถอดรหัส IL-2 | **cyclosporine** (จับ cyclophilin), **tacrolimus** (จับ FKBP12) |\n| 2 | Costimulation **CD28–CD80/86** | **belatacept** (CTLA4-Ig) |\n| 3 | IL-2 จับ **CD25** → **mTOR** → cell cycle G1→S | **basiliximab** (anti-CD25), **sirolimus/everolimus** (FKBP + mTOR) |\n| การแบ่งตัว | สังเคราะห์ purine | **MMF** (ยับยั้ง IMPDH, de novo pathway), azathioprine |\n| เซลล์ทั้งหมด | depletion | **rabbit ATG** (Thymoglobulin), **alemtuzumab** (anti-CD52), rituximab (anti-CD20) |\n\n> หลักการ: **induction** (ช่วงความเสี่ยง rejection สูงสุด) + **maintenance** สามตัว (CNI + antimetabolite + steroid) ระดับยากดภูมิสูงสุดใน 3–6 เดือนแรก จึงต้องให้ prophylaxis ช่วงนี้\n\n### ตารางพิษของยาที่ต้องจำ\n\n| ยา | พิษเด่น | จุดสอบ |\n|---|---|---|\n| **Cyclosporine** | nephrotoxicity, HTN, **hirsutism, gingival hyperplasia**, hyperK, hypoMg | หดหลอดเลือด afferent |\n| **Tacrolimus** | nephrotoxicity, **neurotoxicity** (tremor, PRES), **PTDM/hyperglycemia**, alopecia, ท้องเสีย | ใช้มากที่สุดใน maintenance |\n| **Sirolimus/everolimus** | **wound dehiscence, lymphocele**, hyperlipidemia, thrombocytopenia, pneumonitis, proteinuria, mouth ulcer | ไม่ nephrotoxic; หลีกเลี่ยงช่วงแรกหลังผ่าตัด; ต้านมะเร็งผิวหนังได้ |\n| **MMF** | ท้องเสีย คลื่นไส้ leukopenia, **teratogenic** | หญิงวางแผนตั้งครรภ์เปลี่ยนเป็น azathioprine |\n| **Azathioprine** | bone marrow suppression, hepatotoxicity, pancreatitis | ห้ามคู่ **allopurinol** (ถ้าจำเป็นลดยา 75%) |\n| **Steroid** | DM, osteoporosis, แผลหายช้า, ติดเชื้อ | ยาแรกในการรักษา acute cellular rejection |\n| **Belatacept** | **PTLD (โดยเฉพาะ CNS)** ใน EBV-seronegative | ใช้เฉพาะไต และผู้รับ **EBV-seropositive** เท่านั้น; ลด CV risk และไม่ nephrotoxic |\n| **Rabbit ATG** | cytokine release, leukopenia, thrombocytopenia, ติดเชื้อ, PTLD | ใช้ทั้ง induction และรักษา steroid-resistant rejection |\n| **Basiliximab** | ผลข้างเคียงน้อย | **ไม่ depletion → ใช้รักษา rejection ไม่ได้** |\n\n### Drug interaction: CYP3A4 และ P-glycoprotein\n\n[[fig:cyp]]\n\n| ระดับ CNI/mTOR **เพิ่ม** (เสี่ยงพิษ) | ระดับ **ลด** (เสี่ยง rejection) |\n|---|---|\n| azole antifungals, macrolide (erythromycin, clarithromycin), **diltiazem/verapamil**, protease inhibitor, น้ำ grapefruit | **rifampin**, phenytoin, carbamazepine, phenobarbital, St John's wort |\n\n- บริบทไทย: ผู้ป่วยหลังปลูกถ่ายเป็น **วัณโรค** บ่อย การเริ่ม rifampin ทำให้ระดับ tacrolimus ตกมากจนเกิด rejection — ต้องเพิ่มขนาดยาหลายเท่าและวัด trough ถี่ หรือใช้ rifabutin แทน\n- ยาที่เพิ่ม **nephrotoxicity** ร่วมกับ CNI: aminoglycoside, NSAID, amphotericin, ACEi/ARB ช่วงแรก, IV contrast\n- ศัลยแพทย์ทั่วไปต้องรู้: ผู้ป่วยกิน steroid เรื้อรังที่มาผ่าตัดฉุกเฉินอาจต้อง **stress-dose steroid**; NPO นานต้องเปลี่ยนเป็น IV tacrolimus (ขนาดประมาณ 1/3–1/5 ของขนาดกิน) และวัดระดับ\n",
+   "md": "### Allorecognition: ทำไมร่างกายจำอวัยวะคนอื่นได้\n\n[[anim:allorec]]\n\n- **HLA class I** (HLA-A, -B, -C) อยู่บนเซลล์ที่มีนิวเคลียสทุกชนิด นำเสนอต่อ **CD8** T cell; **HLA class II** (HLA-DR, -DQ, -DP) อยู่บน antigen-presenting cell นำเสนอต่อ **CD4** — การ match ไตใช้ HLA-A, -B, -DR เป็นหลัก\n- **Direct allorecognition**: T cell ของผู้รับจำ HLA ของผู้ให้บน donor APC (passenger leukocyte) → ขับเคลื่อน acute rejection ระยะแรก · **Indirect**: APC ของผู้รับนำเสนอ peptide ของ donor HLA → สัมพันธ์กับ antibody และ chronic rejection\n- ABO incompatibility และ antibody ต่อ HLA ที่มีอยู่ก่อน (จากการตั้งครรภ์ การให้เลือด การปลูกถ่ายครั้งก่อน) คือต้นเหตุของ **hyperacute rejection**\n\n### Three-signal model: แผนที่ว่ายาแต่ละตัวตัดตรงไหน\n\n[[fig:signals]]\n\n| Signal | เหตุการณ์ | ยาที่ตัด |\n|---|---|---|\n| 1 | TCR จับ HLA-peptide → **calcineurin** dephosphorylate NFAT → ถอดรหัส IL-2 | **cyclosporine** (จับ cyclophilin), **tacrolimus** (จับ FKBP12) |\n| 2 | Costimulation **CD28–CD80/86** | **belatacept** (CTLA4-Ig) |\n| 3 | IL-2 จับ **CD25** → **mTOR** → cell cycle G1→S | **basiliximab** (anti-CD25), **sirolimus/everolimus** (FKBP + mTOR) |\n| การแบ่งตัว | สังเคราะห์ purine | **MMF** (ยับยั้ง IMPDH, de novo pathway), azathioprine |\n| เซลล์ทั้งหมด | depletion | **rabbit ATG** (Thymoglobulin), **alemtuzumab** (anti-CD52), rituximab (anti-CD20) |\n\n> หลักการ: **induction** (ช่วงความเสี่ยง rejection สูงสุด) + **maintenance** สามตัว (CNI + antimetabolite + steroid) ระดับยากดภูมิสูงสุดใน 3–6 เดือนแรก จึงต้องให้ prophylaxis ช่วงนี้\n\n### ตารางพิษของยาที่ต้องจำ\n\n| ยา | พิษเด่น | จุดสอบ |\n|---|---|---|\n| **Cyclosporine** | nephrotoxicity, HTN, **hirsutism, gingival hyperplasia**, hyperK, hypoMg | หดหลอดเลือด afferent |\n| **Tacrolimus** | nephrotoxicity, **neurotoxicity** (tremor, PRES), **PTDM/hyperglycemia**, alopecia, ท้องเสีย | ใช้มากที่สุดใน maintenance |\n| **Sirolimus/everolimus** | **wound dehiscence, lymphocele**, hyperlipidemia, thrombocytopenia, pneumonitis, proteinuria, mouth ulcer | ไม่ nephrotoxic; หลีกเลี่ยงช่วงแรกหลังผ่าตัด; ต้านมะเร็งผิวหนังได้ |\n| **MMF** | ท้องเสีย คลื่นไส้ leukopenia, **teratogenic** | หญิงวางแผนตั้งครรภ์เปลี่ยนเป็น azathioprine |\n| **Azathioprine** | bone marrow suppression, hepatotoxicity, pancreatitis | ห้ามคู่ **allopurinol** (ถ้าจำเป็นลดยา 75%) |\n| **Steroid** | DM, osteoporosis, แผลหายช้า, ติดเชื้อ | ยาแรกในการรักษา acute cellular rejection |\n| **Belatacept** | **PTLD (โดยเฉพาะ CNS)** ใน EBV-seronegative | ใช้เฉพาะไต และผู้รับ **EBV-seropositive** เท่านั้น; ลด CV risk และไม่ nephrotoxic |\n| **Rabbit ATG** | cytokine release, leukopenia, thrombocytopenia, ติดเชื้อ, PTLD | ใช้ทั้ง induction และรักษา steroid-resistant rejection |\n| **Basiliximab** | ผลข้างเคียงน้อย | **ไม่ depletion → ใช้รักษา rejection ไม่ได้** |\n\n### Drug interaction: CYP3A4 และ P-glycoprotein\n\n[[fig:cyp]]\n\n| ระดับ CNI/mTOR **เพิ่ม** (เสี่ยงพิษ) | ระดับ **ลด** (เสี่ยง rejection) |\n|---|---|\n| azole antifungals, macrolide (erythromycin, clarithromycin), **diltiazem/verapamil**, protease inhibitor, น้ำ grapefruit | **rifampin**, phenytoin, carbamazepine, phenobarbital, St John's wort |\n\n- บริบทไทย: ผู้ป่วยหลังปลูกถ่ายเป็น **วัณโรค** บ่อย การเริ่ม rifampin ทำให้ระดับ tacrolimus ตกมากจนเกิด rejection — ต้องเพิ่มขนาดยาหลายเท่าและวัด trough ถี่ หรือใช้ rifabutin แทน\n- ยาที่เพิ่ม **nephrotoxicity** ร่วมกับ CNI: aminoglycoside, NSAID, amphotericin, ACEi/ARB ช่วงแรก, IV contrast\n- ศัลยแพทย์ทั่วไปต้องรู้: ผู้ป่วยกิน steroid เรื้อรังที่มาผ่าตัดฉุกเฉินอาจต้อง **stress-dose steroid**; NPO นานต้องเปลี่ยนเป็น IV tacrolimus (ขนาดประมาณ 1/3–1/5 ของขนาดกิน) และวัดระดับ\n",
    "pearls": [
     "Class I (A, B, C) → CD8; class II (DR, DQ, DP) → CD4",
     "CNI ยับยั้ง calcineurin → IL-2; mTOR inhibitor ตัด signal 3",
@@ -128,6 +128,38 @@
      "title": "CNI drug interaction: CYP3A4 ขึ้นหรือลง",
      "cap": "CNI และ mTOR inhibitor ถูกกำจัดผ่าน **CYP3A4/P-gp** ยาที่ **ยับยั้ง** ทำให้ระดับสูงจนเป็นพิษ ยาที่ **เหนี่ยวนำ** (เช่น **rifampin**) ทำให้ระดับตกจนเกิด rejection",
      "svg": "<svg viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"ยาที่ยับยั้งและเหนี่ยวนำ CYP3A4 ต่อระดับ calcineurin inhibitor\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"100\" y=\"8\" width=\"220\" height=\"44\" rx=\"6\" class=\"ac\"/><text x=\"210\" y=\"24.7\" class=\"xs b tac mid\">ระดับยา (CYP3A4 + P-gp)</text><text x=\"210\" y=\"39.9\" class=\"xs mid\">Tacrolimus · CsA · sirolimus</text><path d=\"M150 52 L150 60 L105 60 L105 70\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><path d=\"M270 52 L270 60 L315 60 L315 70\" class=\"lms\" marker-end=\"url(#ah-ms)\"/><rect x=\"10\" y=\"76\" width=\"196\" height=\"64\" rx=\"6\" class=\"bad\"/><text x=\"108\" y=\"95.6\" class=\"xs b tbad mid\">Inhibitor → ระดับ ↑</text><text x=\"108\" y=\"110.8\" class=\"xs mid\"><tspan x=\"108\" dy=\"0\">azole · macrolide</tspan><tspan x=\"108\" dy=\"14.2\">diltiazem/verapamil · grapefruit</tspan></text><rect x=\"214\" y=\"76\" width=\"196\" height=\"64\" rx=\"6\" class=\"ms\"/><text x=\"312\" y=\"95.6\" class=\"xs b tms mid\">Inducer → ระดับ ↓</text><text x=\"312\" y=\"110.8\" class=\"xs mid\"><tspan x=\"312\" dy=\"0\">rifampin · phenytoin</tspan><tspan x=\"312\" dy=\"14.2\">carbamazepine · St John's wort</tspan></text><path d=\"M105 140 L105 150\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><path d=\"M315 140 L315 150\" class=\"lms\" marker-end=\"url(#ah-ms)\"/><rect x=\"10\" y=\"156\" width=\"196\" height=\"40\" rx=\"6\" class=\"bad\"/><text x=\"108\" y=\"171.2\" class=\"xs mid\"><tspan x=\"108\" dy=\"0\">พิษ: nephro · neuro</tspan><tspan x=\"108\" dy=\"14.2\">(PRES, tremor)</tspan></text><rect x=\"214\" y=\"156\" width=\"196\" height=\"40\" rx=\"6\" class=\"ms\"/><text x=\"312\" y=\"178.3\" class=\"xs mid\">Rejection</text><text x=\"214\" y=\"214\" class=\"xs tms\">ไทย: rifampin สำหรับ TB</text><text x=\"214\" y=\"228\" class=\"xs tms\">→ เพิ่มขนาด · วัด trough ถี่</text><text x=\"214\" y=\"242\" class=\"xs tms\">หรือใช้ rifabutin แทน</text><text x=\"10\" y=\"214\" class=\"xs mu\">nephrotoxic ร่วม: NSAID · aminoglycoside</text><text x=\"10\" y=\"228\" class=\"xs mu\">NPO: IV tacrolimus ~1/3–1/5 ของขนาดกิน</text></svg>"
+    }
+   },
+   "anims": {
+    "allorec": {
+     "title": "Allorecognition: เส้นทางจำอวัยวะคนอื่นกำหนดชนิด rejection",
+     "svg": "<svg viewBox=\"0 0 420 316\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว allorecognition แบบ direct และ indirect, antibody และ preformed antibody นำไปสู่ rejection แต่ละชนิด\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"14\" width=\"106\" height=\"44\" rx=\"6\" class=\"sk\" data-s=\"1\"/><text x=\"67.0\" y=\"33.0\" class=\"xs mid\" data-s=\"1\"><tspan x=\"67.0\" dy=\"0\">graft: donor APC</tspan><tspan x=\"67.0\" dy=\"1.3em\">HLA I/II ผู้ให้</tspan></text><path d=\"M120 36 L160 36\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\" data-s=\"2\"/><text x=\"143\" y=\"52\" class=\"xs mid tbad\" data-s=\"2\">direct</text><rect x=\"166\" y=\"14\" width=\"104\" height=\"44\" rx=\"6\" class=\"ac\" data-s=\"2\"/><text x=\"218.0\" y=\"33.0\" class=\"xs mid\" data-s=\"2\"><tspan x=\"218.0\" dy=\"0\">recipient T</tspan><tspan x=\"218.0\" dy=\"1.3em\">CD8 · CD4</tspan></text><path d=\"M270 36 L290 36\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\" data-s=\"2\"/><rect x=\"296\" y=\"14\" width=\"110\" height=\"44\" rx=\"6\" class=\"bad\" data-s=\"2\"/><text x=\"351.0\" y=\"33.0\" class=\"xs mid\" data-s=\"2\"><tspan x=\"351.0\" dy=\"0\" class=\"b\">TCMR</tspan><tspan x=\"351.0\" dy=\"1.3em\">วัน–เดือน</tspan></text><path d=\"M67 58 L67 78\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\" data-s=\"3\"/><rect x=\"14\" y=\"84\" width=\"106\" height=\"44\" rx=\"6\" class=\"ms\" data-s=\"3\"/><text x=\"67.0\" y=\"103.0\" class=\"xs mid\" data-s=\"3\"><tspan x=\"67.0\" dy=\"0\">recipient APC</tspan><tspan x=\"67.0\" dy=\"1.3em\">ย่อย HLA ผู้ให้</tspan></text><path d=\"M120 106 L160 106\" class=\"lms w2 fl\" marker-end=\"url(#ah-ms)\" data-s=\"3\"/><text x=\"143\" y=\"122\" class=\"xs mid tms\" data-s=\"3\">indirect</text><rect x=\"166\" y=\"84\" width=\"104\" height=\"44\" rx=\"6\" class=\"ac\" data-s=\"3\"/><text x=\"218.0\" y=\"103.0\" class=\"xs mid\" data-s=\"3\"><tspan x=\"218.0\" dy=\"0\">CD4 helper</tspan><tspan x=\"218.0\" dy=\"1.3em\">ช่วย B cell</tspan></text><path d=\"M270 106 L290 106\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\" data-s=\"4\"/><rect x=\"296\" y=\"84\" width=\"110\" height=\"44\" rx=\"6\" class=\"bad\" data-s=\"4\"/><text x=\"351.0\" y=\"103.0\" class=\"xs mid\" data-s=\"4\"><tspan x=\"351.0\" dy=\"0\">B/plasma cell</tspan><tspan x=\"351.0\" dy=\"1.3em\">→ DSA</tspan></text><path d=\"M351 128 L351 148\" class=\"lbad w2\" marker-end=\"url(#ah-bad)\" data-s=\"4\"/><rect x=\"296\" y=\"154\" width=\"110\" height=\"44\" rx=\"6\" class=\"bad\" data-s=\"4\"/><text x=\"351.0\" y=\"173.0\" class=\"xs mid\" data-s=\"4\"><tspan x=\"351.0\" dy=\"0\" class=\"b\">ABMR (C4d+)</tspan><tspan x=\"351.0\" dy=\"1.3em\">→ chronic</tspan></text><g data-s=\"5\"><rect x=\"14\" y=\"214\" width=\"226\" height=\"44\" rx=\"6\" class=\"bad pl\"/></g><text x=\"127.0\" y=\"233.0\" class=\"xs mid\" data-s=\"5\"><tspan x=\"127.0\" dy=\"0\">preformed Ab ต่อ ABO/HLA</tspan><tspan x=\"127.0\" dy=\"1.3em\">ครรภ์ · ให้เลือด · ปลูกถ่ายเดิม</tspan></text><path d=\"M240 236 L290 236\" class=\"lbad w2 fl\" marker-end=\"url(#ah-bad)\" data-s=\"5\"/><rect x=\"296\" y=\"214\" width=\"110\" height=\"44\" rx=\"6\" class=\"bad\" data-s=\"5\"/><text x=\"351.0\" y=\"233.0\" class=\"xs mid\" data-s=\"5\"><tspan x=\"351.0\" dy=\"0\" class=\"b\">Hyperacute</tspan><tspan x=\"351.0\" dy=\"1.3em\">นาที–ชั่วโมง</tspan></text><rect x=\"14\" y=\"270\" width=\"392\" height=\"40\" rx=\"6\" class=\"ok\" data-s=\"6\"/><text x=\"210.0\" y=\"287.0\" class=\"xs mid\" data-s=\"6\"><tspan x=\"210.0\" dy=\"0\">ป้องกัน: ABO typing + crossmatch/DSA ก่อนผ่าตัด</tspan><tspan x=\"210.0\" dy=\"1.3em\">ยากดภูมิตัดสัญญาณ T cell (signal 1–3)</tspan></text></svg>",
+     "steps": [
+      {
+       "t": "แอนติเจนของผู้ให้",
+       "cap": "Graft มี **HLA class I** บนทุกเซลล์และ **HLA class II** บน APC ของผู้ให้ (passenger leukocyte) ที่ติดมากับอวัยวะ"
+      },
+      {
+       "t": "Direct",
+       "cap": "T cell ของผู้รับเห็น **HLA ทั้งโมเลกุล**บน donor APC โดยตรง — สัญญาณแรงมาก ขับเคลื่อน **TCMR** ช่วงวันถึงเดือนแรก รักษาด้วย pulse steroid (ดื้อ → ATG)"
+      },
+      {
+       "t": "Indirect",
+       "cap": "APC ของผู้รับกลืน HLA ผู้ให้ ย่อยเป็น peptide แล้วนำเสนอบน self HLA ให้ **CD4 helper** — เส้นทางนี้คงอยู่ตลอดชีวิต graft"
+      },
+      {
+       "t": "Antibody",
+       "cap": "CD4 ช่วย B cell สร้าง **donor-specific antibody (DSA)** → **ABMR** (C4d+, peritubular capillaritis) และเป็นแกนของ **chronic rejection** · รักษา plasmapheresis + IVIG ± rituximab"
+      },
+      {
+       "t": "Preformed antibody",
+       "cap": "ผู้รับที่มี antibody ต่อ ABO/HLA อยู่ก่อน (ครรภ์ ให้เลือด ปลูกถ่ายเดิม) → complement + thrombosis ภายใน**นาที** = **hyperacute** แก้ไม่ได้ต้องเอา graft ออก"
+      },
+      {
+       "t": "ป้องกันที่ไหน",
+       "cap": "Hyperacute ป้องกันด้วย **ABO typing + crossmatch/DSA** ก่อนผ่าตัด · เส้นทาง T cell คุมด้วยยากดภูมิที่ตัด signal 1–3 · ก่อนให้ยารักษา rejection ต้อง **biopsy** เสมอ"
+      }
+     ]
     }
    }
   },
@@ -506,5 +538,66 @@
    "instruction": "**บทบาท:** คุณเป็น senior resident ศัลยกรรมตับและปลูกถ่ายอวัยวะ ผู้สอบถามตามลำดับ ตอบตรงประเด็น\n\n**Scenario:** ชายอายุ 55 ปี HBV cirrhosis ได้ entecavir อยู่ มี ascites ควบคุมด้วยยาขับปัสสาวะ, variceal band ligation 2 ครั้ง ตรวจ US คัดกรองพบก้อนในตับ\n\n**Prompt ของผู้สอบ**\n1. \"CT 4-phase พบ 3 ก้อน ขนาด 2.8, 2.2 และ 1.5 cm มี arterial enhancement และ washout ไม่มี portal vein invasion — วินิจฉัยอย่างไร ต้อง biopsy ไหม และจะ stage อย่างไร\"\n2. \"Total bilirubin 2.4 mg/dL, INR 1.7, Cr 1.0 mg/dL, albumin 2.8 g/dL, platelet 58,000 — ทางเลือกการรักษาคืออะไร ทำไมไม่ resection\"\n3. \"ระหว่างรอ list 8 เดือน คุณจะทำอะไรกับก้อน และถ้าก้อนโตเกินเกณฑ์จะทำอย่างไร\"\n4. \"หลังปลูกถ่ายตับวันที่ 2: AST 6,200, INR 3.5, lactate สูง, ผู้ป่วยซึม — คุณคิดถึงอะไรและจะทำอะไร\"\n5. \"สมมติ Doppler ปกติ แต่วันที่ 7 มี bile ออกทาง drain 300 mL/วัน และไข้ — คิดถึงอะไร จัดการอย่างไร\"\n6. \"สามเดือนต่อมา ไข้ ท้องเสีย leukopenia ผู้ป่วยเป็น CMV D+/R− — แนวทางคืออะไร\"",
    "answer": "1. **วินิจฉัยและ stage (2 คะแนน)**: ในตับแข็ง ก้อน arterial hyperenhancement + washout = **LI-RADS 5/HCC ไม่ต้อง biopsy**; stage ด้วย CT chest ± bone scan, AFP; จำนวน 3 ก้อนแต่ละก้อน ≤3 cm ไม่มี vascular invasion = **อยู่ใน Milan criteria**\n2. **ทางเลือก (2 คะแนน)**: คำนวณ Child-Pugh (B–C) และ MELD (~18–20) → ตับ decompensated + portal HTN (ascites, varices, platelet ต่ำ) → resection เสี่ยง liver failure สูงและก้อนหลายตำแหน่ง → **liver transplantation** (รักษาทั้งมะเร็งและตับแข็ง) พร้อม MELD exception; ประเมิน cardiopulmonary, portopulmonary HTN, psychosocial\n3. **Bridging (1 คะแนน)**: **TACE หรือ ablation** เพื่อลดการ dropout; ติดตาม CT ทุก 3 เดือน; ถ้าเกินเกณฑ์ → downstaging แล้วประเมินใหม่ ถ้ามี vascular invasion/extrahepatic → ไม่ปลูกถ่าย\n4. **Early graft failure (2 คะแนน)**: DDx **primary nonfunction** vs **hepatic artery thrombosis** (และ PVT) → **Doppler US ทันที**; HAT → re-exploration thrombectomy/revision หรือ retransplant; PNF (AST ~5,000+, INR ไม่ดีขึ้น, ไม่มีสาเหตุอื่น) → **list retransplant ด่วน**; ดูแล ICU: น้ำตาล, coagulopathy, cerebral edema\n5. **Bile leak (1 คะแนน)**: ต้องตรวจ **hepatic artery** ด้วย Doppler ก่อนเสมอ (HAT ทำให้ biliary ischemia); bile leak ระยะแรกจากรอยต่อ → มัก **ผ่าตัดแก้** (revise duct-to-duct หรือเปลี่ยนเป็น Roux-en-Y hepaticojejunostomy) ส่วน leak เล็ก/จาก T-tube อาจใช้ ERCP stent + drainage\n6. **CMV (1 คะแนน)**: CMV PCR, CBC, LFT, colonoscopy biopsy ถ้าท้องเสีย → **IV ganciclovir** (invasive) หรือ valganciclovir (ไม่รุนแรง) + ลดยากดภูมิ (MMF ก่อน); ระวังลำไส้ทะลุ/เลือดออก\n\n**Critical fails**: เสนอ resection ในตับ decompensated · ไม่ตรวจ Doppler เมื่อ AST พุ่งหลังปลูกถ่าย · รักษา AST สูงด้วย steroid pulse โดยไม่ตัด HAT · ไม่ประเมินหลอดเลือดแดงเมื่อมี bile leak"
   }
- ]
+ ],
+ "reading": {
+  "minutes": 110,
+  "start": "เริ่มจาก immunology สองหัวข้อ (allorecognition + three-signal) เพราะทุกเรื่องที่เหลือ — ยา rejection CMV PTLD — อธิบายด้วยแผนที่เดียวกัน จากนั้นอ่านภาวะแทรกซ้อนเชิงศัลยกรรมของไตและตับ ซึ่งเป็นสิ่งที่ resident ต้องจัดการเอง",
+  "order": [
+   {
+    "sec": "res-14-1",
+    "level": "must",
+    "why": "กลไก allorecognition จุดที่ยาตัด พิษยา และ CYP3A4 interaction"
+   },
+   {
+    "sec": "res-14-4",
+    "level": "must",
+    "why": "ชนิด rejection ตามเวลา, CMV/BK, PTLD และ brain death"
+   },
+   {
+    "sec": "res-14-2",
+    "level": "must",
+    "why": "urine leak vs lymphocele, vascular thrombosis และ DGF"
+   },
+   {
+    "sec": "res-14-3",
+    "level": "extra",
+    "why": "MELD, Milan, King's criteria และ HAT — ตัวเลขออกบ่อยแต่อ่านเร็วได้"
+   }
+  ],
+  "schwartz": [
+   {
+    "ch": "Ch 11",
+    "part": "Allorecognition and Lymphocyte Activation",
+    "why": "direct/indirect pathway และการกระตุ้น T cell"
+   },
+   {
+    "ch": "Ch 11",
+    "part": "Clinical Immunosuppression",
+    "why": "กลไกและพิษของ induction/maintenance drugs"
+   },
+   {
+    "ch": "Ch 11",
+    "part": "Kidney Transplantation",
+    "why": "recipient operation, perioperative care และภาวะแทรกซ้อน"
+   },
+   {
+    "ch": "Ch 11",
+    "part": "Liver Transplantation",
+    "why": "indications, contraindications และ complications"
+   }
+  ],
+  "beyond": [
+   "**Banff classification of allograft pathology** — ภาษาที่ใช้แยก TCMR/ABMR จาก biopsy",
+   "**AST/TTS guidelines on CMV in solid organ transplantation** — prophylaxis vs preemptive ตาม D/R serostatus",
+   "**Milan criteria (Mazzaferro, NEJM 1996)** — ก้อนเดียว ≤5 cm หรือ ≤3 ก้อน แต่ละก้อน ≤3 cm ไม่มี vascular invasion",
+   "**World Brain Death Project (JAMA 2020)** — มาตรฐานการวินิจฉัยสมองตายและ apnea test"
+  ],
+  "tips": [
+   "Hyperacute = preformed antibody (ป้องกันด้วย crossmatch) · TCMR พบบ่อยสุด รักษา pulse steroid · ABMR ดู DSA + C4d รักษา plasmapheresis/IVIG",
+   "ยาที่ยับยั้ง CYP3A4 (azole, macrolide, diltiazem, เกรปฟรุต) → ระดับ CNI สูง ไตเป็นพิษ · rifampin/phenytoin → ระดับตก เกิด rejection",
+   "น้ำรอบไตใหม่: creatinine ในน้ำสูงกว่า serum มาก = urine leak · เท่า serum = lymphocele (drain/peritoneal window)",
+   "CMV เสี่ยงสุด D+/R− ช่วง 3–6 เดือนหรือหลังหยุด prophylaxis · BK nephropathy รักษาด้วย **ลด** ยากดภูมิ",
+   "HAT หลัง liver transplant ระยะแรก → bile leak/ตับตาย ต้อง revise หรือ retransplant · ตรวจคัดกรองด้วย Doppler US"
+  ]
+ }
 }

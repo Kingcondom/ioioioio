@@ -26,7 +26,7 @@
    "summary": "ยาชาให้ได้เท่าไร พิษจากยาชาและ malignant hyperthermia รักษาอย่างไร และเลือกยาคลายกล้ามเนื้อ/ยานำสลบอย่างไรให้ปลอดภัย",
    "minutes": 13,
    "source": "Schwartz 11e Ch 46 — Anesthesia for Surgical Patients",
-   "md": "### Local anesthetics: กลไก ชนิด และขนาดสูงสุด\nยาชาเฉพาะที่ **ปิด voltage-gated Na⁺ channel** จากด้านในเซลล์ → กระแสประสาทไม่ส่งต่อ · เส้นใยเล็ก/มี myelin บาง (ความเจ็บ อุณหภูมิ) ชาก่อน motor\n| | **Amide** (ชื่อมี \"i\" สองตัว) | **Ester** |\n|---|---|---|\n| ตัวอย่าง | **lidocaine**, **bupivacaine**, ropivacaine, mepivacaine | procaine, chloroprocaine, tetracaine, benzocaine, cocaine |\n| Metabolism | **ตับ** | **plasma cholinesterase** |\n| แพ้ยา | พบน้อยมาก | มากกว่า (PABA) |\n\n| ยา | ขนาดสูงสุดโดยทั่วไป (ไม่มี epinephrine) | มี epinephrine |\n|---|---|---|\n| **Lidocaine** | **4.5 mg/kg** (ราว 300 mg) | **7 mg/kg** (ราว 500 mg) |\n| **Bupivacaine** | **2.5 mg/kg** (ราว 175 mg) | 3 mg/kg (ราว 225 mg) |\n\n- คำนวณจาก % : **1% = 10 mg/mL** · เช่น ผู้ใหญ่ 60 kg ใช้ 1% lidocaine ธรรมดาได้ราว 270 mg = 27 mL\n- Epinephrine หดหลอดเลือด → ยาอยู่นานขึ้น เลือดออกน้อย ดูดซึมช้า (จึงให้ขนาดสูงขึ้นได้) — ใช้ที่นิ้ว/อวัยวะเพศได้ในขนาดเจือจางตามหลักฐานปัจจุบัน แต่ระวังผู้ป่วยหลอดเลือดส่วนปลายเสีย\n- ฉีดในเนื้อเยื่ออักเสบ (pH ต่ำ) ยาชาได้ไม่ดี เพราะยาอยู่ในรูป ionized มาก\n\n### Local anesthetic systemic toxicity (LAST)\n\n[[fig:last]]\n\n- ปัจจัยเสี่ยง: ขนาดสะสมสูง, **ฉีดเข้าหลอดเลือด**, ตำแหน่งดูดซึมสูง (intercostal มากกว่า epidural มากกว่า subcutaneous), โรคตับ/หัวใจ/ไต, ผู้สูงอายุ\n- **CNS มาก่อน**: ชารอบปาก ลิ้นชา **เสียงในหู** รสโลหะ กระสับกระส่าย พูดไม่ชัด → **ชัก** → หมดสติ\n- **Cardiovascular**: ความดันตก, heart block, ventricular arrhythmia, หัวใจหยุดเต้น — **bupivacaine** เป็นพิษต่อหัวใจมากที่สุด (กู้ชีพยาก)\n- ป้องกัน: คำนวณขนาดก่อนฉีด, **aspirate ก่อนฉีดและฉีดทีละน้อย**, ใช้ US นำ\n#### การรักษา (ASRA)\n1. หยุดฉีด เรียกช่วย ดูแล airway ให้ O₂ 100% (ป้องกัน hypoxia/acidosis)\n2. คุมชักด้วย **benzodiazepine** (หลีกเลี่ยง propofol ขนาดสูงถ้าความดันต่ำ)\n3. **20% lipid emulsion**: bolus ราว 1.5 mL/kg (หรือ 100 mL ในผู้ใหญ่เกิน 70 kg) แล้ว infusion\n4. ถ้าหัวใจหยุด: CPR โดยใช้ **epinephrine ขนาดลดลง** (≤1 mcg/kg) หลีกเลี่ยง vasopressin, CCB, β-blocker, lidocaine · เตรียม cardiopulmonary bypass\n\n### Malignant hyperthermia (MH)\n\n[[fig:mh]]\n\n- กรรมพันธุ์ (มักเป็น autosomal dominant) ส่วนใหญ่ **RYR1** · ตัวกระตุ้น: **volatile anesthetics** (sevoflurane, desflurane, isoflurane) และ **succinylcholine**\n- Ca²⁺ ในกล้ามเนื้อสูงไม่หยุด → hypermetabolism\n- **อาการแรกสุด: EtCO₂ สูงขึ้นอธิบายไม่ได้** (แม้เพิ่มการหายใจ) + **tachycardia** · masseter rigidity หลัง succinylcholine · กล้ามเนื้อแข็งทั้งตัว · **ไข้สูงเป็นอาการช้า**\n- ผลตามมา: mixed respiratory + metabolic acidosis, **hyperkalemia**, rhabdomyolysis/myoglobinuria, arrhythmia, DIC\n- รักษา: **หยุด volatile + succinylcholine ทันที**, hyperventilate O₂ 100% flow สูง, **dantrolene 2.5 mg/kg IV** ให้ซ้ำได้, ลดอุณหภูมิ, แก้ K⁺/acidosis, ปัสสาวะออกดี, ICU (กลับเป็นซ้ำได้) · ผ่าตัดครั้งหน้าใช้ **TIVA** (propofol) + nondepolarizing NMB\n- แยก **neuroleptic malignant syndrome** (ยาต้านโรคจิต ค่อยเป็นค่อยไป) และ thyroid storm\n\n### Neuromuscular blockers (NMB) และยานำสลบ\n| | **Succinylcholine** (depolarizing) | **Rocuronium/vecuronium** (nondepolarizing, steroid) | Cisatracurium |\n|---|---|---|---|\n| ขนาด intubate | 1 mg/kg | roc 0.6 mg/kg (**1.2 mg/kg สำหรับ RSI**) | 0.1 mg/kg |\n| ออกฤทธิ์/หมดฤทธิ์ | **เร็วสุด** (ไม่ถึง 60 วินาที / 5–8 นาที) มี fasciculation | ปานกลาง | ปานกลาง |\n| Metabolism | **pseudocholinesterase** (ขาด → หยุดหายใจนานหลายชม.) | ตับเป็นหลัก | **Hofmann elimination** (ไตวาย/ตับวายใช้ได้) |\n| Reversal | ไม่มี | **sugammadex** หรือ **neostigmine + glycopyrrolate/atropine** | neostigmine |\n\n- **ห้าม succinylcholine** เมื่อเสี่ยง **hyperkalemia** รุนแรง: **ไฟไหม้/crush/denervation** (stroke, SCI) หลังผ่านไปราว 24–72 ชม., นอนนาน, กล้ามเนื้อเสื่อม (เด็กชาย Duchenne), K⁺ สูงเดิม, ประวัติ MH · ผลอื่น: bradycardia (เด็ก), ICP/IOP สูงชั่วคราว, ปวดกล้ามเนื้อ\n- ต้อง reverse NMB ให้พอก่อนถอดท่อ — residual blockade เพิ่มการหายใจล้มเหลวหลังผ่าตัด\n| ยานำสลบ | จุดเด่น |\n|---|---|\n| **Propofol** | ใช้บ่อยสุด ฟื้นเร็ว ลด PONV · **ความดันตก** |\n| **Ketamine** | NMDA antagonist · **คงความดัน/ขยายหลอดลม** → ดีใน shock, asthma · หลอน |\n| **Etomidate** | hemodynamic นิ่งที่สุด · กด **adrenal (11β-hydroxylase)** |\n\n### Airway assessment และ rapid sequence intubation\n- ประเมิน: **Mallampati I–IV** (เห็นลิ้นไก่/เพดานอ่อนชัดแค่ไหน), อ้าปาก (น้อยกว่า 3 นิ้ว), thyromental distance (น้อยกว่า 3 นิ้ว/6 cm), คอสั้น/ขยับคอได้น้อย, ฟันยื่น, อ้วน/OSA, เคยใส่ท่อยาก\n- **RSI** สำหรับผู้ป่วยเสี่ยงสำลัก (ท้องอิ่ม ลำไส้อุดตัน ตั้งครรภ์ GERD รุนแรง): preoxygenate → ยานำสลบ + **succinylcholine หรือ rocuronium 1.2 mg/kg** ต่อกันทันที → ไม่บีบ bag (หรือบีบเบา) → ใส่ท่อ → ยืนยันด้วย **EtCO₂ waveform**\n- **Can't intubate, can't oxygenate** → supraglottic airway → **emergency front-of-neck access (cricothyrotomy)** ตาม difficult airway algorithm",
+   "md": "### Local anesthetics: กลไก ชนิด และขนาดสูงสุด\nยาชาเฉพาะที่ **ปิด voltage-gated Na⁺ channel** จากด้านในเซลล์ → กระแสประสาทไม่ส่งต่อ · เส้นใยเล็ก/มี myelin บาง (ความเจ็บ อุณหภูมิ) ชาก่อน motor\n| | **Amide** (ชื่อมี \"i\" สองตัว) | **Ester** |\n|---|---|---|\n| ตัวอย่าง | **lidocaine**, **bupivacaine**, ropivacaine, mepivacaine | procaine, chloroprocaine, tetracaine, benzocaine, cocaine |\n| Metabolism | **ตับ** | **plasma cholinesterase** |\n| แพ้ยา | พบน้อยมาก | มากกว่า (PABA) |\n\n| ยา | ขนาดสูงสุดโดยทั่วไป (ไม่มี epinephrine) | มี epinephrine |\n|---|---|---|\n| **Lidocaine** | **4.5 mg/kg** (ราว 300 mg) | **7 mg/kg** (ราว 500 mg) |\n| **Bupivacaine** | **2.5 mg/kg** (ราว 175 mg) | 3 mg/kg (ราว 225 mg) |\n\n- คำนวณจาก % : **1% = 10 mg/mL** · เช่น ผู้ใหญ่ 60 kg ใช้ 1% lidocaine ธรรมดาได้ราว 270 mg = 27 mL\n- Epinephrine หดหลอดเลือด → ยาอยู่นานขึ้น เลือดออกน้อย ดูดซึมช้า (จึงให้ขนาดสูงขึ้นได้) — ใช้ที่นิ้ว/อวัยวะเพศได้ในขนาดเจือจางตามหลักฐานปัจจุบัน แต่ระวังผู้ป่วยหลอดเลือดส่วนปลายเสีย\n- ฉีดในเนื้อเยื่ออักเสบ (pH ต่ำ) ยาชาได้ไม่ดี เพราะยาอยู่ในรูป ionized มาก\n\n### Local anesthetic systemic toxicity (LAST)\n\n[[fig:last]]\n\n- ปัจจัยเสี่ยง: ขนาดสะสมสูง, **ฉีดเข้าหลอดเลือด**, ตำแหน่งดูดซึมสูง (intercostal มากกว่า epidural มากกว่า subcutaneous), โรคตับ/หัวใจ/ไต, ผู้สูงอายุ\n- **CNS มาก่อน**: ชารอบปาก ลิ้นชา **เสียงในหู** รสโลหะ กระสับกระส่าย พูดไม่ชัด → **ชัก** → หมดสติ\n- **Cardiovascular**: ความดันตก, heart block, ventricular arrhythmia, หัวใจหยุดเต้น — **bupivacaine** เป็นพิษต่อหัวใจมากที่สุด (กู้ชีพยาก)\n- ป้องกัน: คำนวณขนาดก่อนฉีด, **aspirate ก่อนฉีดและฉีดทีละน้อย**, ใช้ US นำ\n#### การรักษา (ASRA)\n1. หยุดฉีด เรียกช่วย ดูแล airway ให้ O₂ 100% (ป้องกัน hypoxia/acidosis)\n2. คุมชักด้วย **benzodiazepine** (หลีกเลี่ยง propofol ขนาดสูงถ้าความดันต่ำ)\n3. **20% lipid emulsion**: bolus ราว 1.5 mL/kg (หรือ 100 mL ในผู้ใหญ่เกิน 70 kg) แล้ว infusion\n4. ถ้าหัวใจหยุด: CPR โดยใช้ **epinephrine ขนาดลดลง** (≤1 mcg/kg) หลีกเลี่ยง vasopressin, CCB, β-blocker, lidocaine · เตรียม cardiopulmonary bypass\n\n### Malignant hyperthermia (MH)\n\n[[fig:mh]]\n\n- กรรมพันธุ์ (มักเป็น autosomal dominant) ส่วนใหญ่ **RYR1** · ตัวกระตุ้น: **volatile anesthetics** (sevoflurane, desflurane, isoflurane) และ **succinylcholine**\n- Ca²⁺ ในกล้ามเนื้อสูงไม่หยุด → hypermetabolism\n- **อาการแรกสุด: EtCO₂ สูงขึ้นอธิบายไม่ได้** (แม้เพิ่มการหายใจ) + **tachycardia** · masseter rigidity หลัง succinylcholine · กล้ามเนื้อแข็งทั้งตัว · **ไข้สูงเป็นอาการช้า**\n- ผลตามมา: mixed respiratory + metabolic acidosis, **hyperkalemia**, rhabdomyolysis/myoglobinuria, arrhythmia, DIC\n- รักษา: **หยุด volatile + succinylcholine ทันที**, hyperventilate O₂ 100% flow สูง, **dantrolene 2.5 mg/kg IV** ให้ซ้ำได้, ลดอุณหภูมิ, แก้ K⁺/acidosis, ปัสสาวะออกดี, ICU (กลับเป็นซ้ำได้) · ผ่าตัดครั้งหน้าใช้ **TIVA** (propofol) + nondepolarizing NMB\n- แยก **neuroleptic malignant syndrome** (ยาต้านโรคจิต ค่อยเป็นค่อยไป) และ thyroid storm\n\n### Neuromuscular blockers (NMB) และยานำสลบ\n| | **Succinylcholine** (depolarizing) | **Rocuronium/vecuronium** (nondepolarizing, steroid) | Cisatracurium |\n|---|---|---|---|\n| ขนาด intubate | 1 mg/kg | roc 0.6 mg/kg (**1.2 mg/kg สำหรับ RSI**) | 0.1 mg/kg |\n| ออกฤทธิ์/หมดฤทธิ์ | **เร็วสุด** (ไม่ถึง 60 วินาที / 5–8 นาที) มี fasciculation | ปานกลาง | ปานกลาง |\n| Metabolism | **pseudocholinesterase** (ขาด → หยุดหายใจนานหลายชม.) | ตับเป็นหลัก | **Hofmann elimination** (ไตวาย/ตับวายใช้ได้) |\n| Reversal | ไม่มี | **sugammadex** หรือ **neostigmine + glycopyrrolate/atropine** | neostigmine |\n\n[[anim:sux_k]]\n\n- **ห้าม succinylcholine** เมื่อเสี่ยง **hyperkalemia** รุนแรง: **ไฟไหม้/crush/denervation** (stroke, SCI) หลังผ่านไปราว 24–72 ชม., นอนนาน, กล้ามเนื้อเสื่อม (เด็กชาย Duchenne), K⁺ สูงเดิม, ประวัติ MH · ผลอื่น: bradycardia (เด็ก), ICP/IOP สูงชั่วคราว, ปวดกล้ามเนื้อ\n- ต้อง reverse NMB ให้พอก่อนถอดท่อ — residual blockade เพิ่มการหายใจล้มเหลวหลังผ่าตัด\n| ยานำสลบ | จุดเด่น |\n|---|---|\n| **Propofol** | ใช้บ่อยสุด ฟื้นเร็ว ลด PONV · **ความดันตก** |\n| **Ketamine** | NMDA antagonist · **คงความดัน/ขยายหลอดลม** → ดีใน shock, asthma · หลอน |\n| **Etomidate** | hemodynamic นิ่งที่สุด · กด **adrenal (11β-hydroxylase)** |\n\n### Airway assessment และ rapid sequence intubation\n- ประเมิน: **Mallampati I–IV** (เห็นลิ้นไก่/เพดานอ่อนชัดแค่ไหน), อ้าปาก (น้อยกว่า 3 นิ้ว), thyromental distance (น้อยกว่า 3 นิ้ว/6 cm), คอสั้น/ขยับคอได้น้อย, ฟันยื่น, อ้วน/OSA, เคยใส่ท่อยาก\n- **RSI** สำหรับผู้ป่วยเสี่ยงสำลัก (ท้องอิ่ม ลำไส้อุดตัน ตั้งครรภ์ GERD รุนแรง): preoxygenate → ยานำสลบ + **succinylcholine หรือ rocuronium 1.2 mg/kg** ต่อกันทันที → ไม่บีบ bag (หรือบีบเบา) → ใส่ท่อ → ยืนยันด้วย **EtCO₂ waveform**\n- **Can't intubate, can't oxygenate** → supraglottic airway → **emergency front-of-neck access (cricothyrotomy)** ตาม difficult airway algorithm",
    "pearls": [
     "Lidocaine max 4.5 mg/kg (7 mg/kg + epi) · bupivacaine 2.5 mg/kg · 1% = 10 mg/mL",
     "LAST: CNS (ชารอบปาก เสียงในหู ชัก) → CVS · bupivacaine พิษต่อหัวใจสุด → 20% lipid emulsion",
@@ -128,6 +128,38 @@
      "title": "LAST: CNS ก่อน แล้วหัวใจ",
      "cap": "ยาชาที่เข้ากระแสเลือดปิด Na⁺ channel ทั่วร่างกาย · ระดับยาต่ำแสดงที่ **CNS ก่อน** (ชารอบปาก เสียงในหู → ชัก) ระดับสูงจึงถึง **หัวใจ** (bupivacaine อันตรายสุด) · คุมชักด้วย **benzodiazepine** และให้ **20% lipid emulsion**",
      "svg": "<svg viewBox=\"0 0 420 288\" role=\"img\" aria-label=\"local anesthetic systemic toxicity: อาการ CNS มาก่อน cardiovascular และการรักษาแต่ละขั้น\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"40\" y=\"8\" width=\"210\" height=\"46\" rx=\"6\" class=\"bad\"/><text x=\"145\" y=\"26.2\" class=\"xs b mid\">ยาชาเข้ากระแสเลือด</text><text x=\"145\" y=\"43.4\" class=\"xs mid\">ฉีดเข้าหลอดเลือด · ขนาดเกิน</text><rect x=\"262\" y=\"8\" width=\"148\" height=\"58\" rx=\"6\" class=\"ok\"/><text x=\"336\" y=\"25.1\" class=\"xs b tok mid\">ป้องกัน</text><text x=\"336\" y=\"42.3\" class=\"xs mid\"><tspan x=\"336\" dy=\"0\">aspirate · ฉีดทีละน้อย</tspan><tspan x=\"336\" dy=\"14.2\">lido 4.5 / 7 mg/kg</tspan></text><rect x=\"40\" y=\"76\" width=\"210\" height=\"40\" rx=\"6\" class=\"ac\"/><text x=\"145\" y=\"99.8\" class=\"xs b tac mid\">ปิด Na⁺ channel ทั่วร่างกาย</text><path d=\"M145 54 L145 71\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><rect x=\"40\" y=\"140\" width=\"210\" height=\"58\" rx=\"6\" class=\"ms\"/><text x=\"145\" y=\"157.1\" class=\"xs b tms mid\">CNS มาก่อน</text><text x=\"145\" y=\"174.3\" class=\"xs mid\"><tspan x=\"145\" dy=\"0\">ชารอบปาก · เสียงในหู</tspan><tspan x=\"145\" dy=\"14.2\">รสโลหะ → ชัก</tspan></text><rect x=\"40\" y=\"222\" width=\"210\" height=\"58\" rx=\"6\" class=\"bad\"/><text x=\"145\" y=\"239.1\" class=\"xs b tbad mid\">Cardiovascular</text><text x=\"145\" y=\"256.3\" class=\"xs mid\"><tspan x=\"145\" dy=\"0\">BP ↓ · block · VT/VF · arrest</tspan><tspan x=\"145\" dy=\"14.2\">bupivacaine แย่สุด</tspan></text><path d=\"M145 116 L145 135\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><path d=\"M145 198 L145 217\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><path d=\"M22 140 L22 276\" class=\"lbad w3\" marker-end=\"url(#ah-bad)\"/><text x=\"12\" y=\"132\" class=\"xs b tbad\">ระดับยา ↑</text><rect x=\"262\" y=\"140\" width=\"148\" height=\"58\" rx=\"6\" class=\"ok\"/><text x=\"336\" y=\"157.1\" class=\"xs b tok mid\">Benzodiazepine</text><text x=\"336\" y=\"174.3\" class=\"xs mid\"><tspan x=\"336\" dy=\"0\">คุมชัก</tspan><tspan x=\"336\" dy=\"14.2\">airway · O₂ 100%</tspan></text><rect x=\"262\" y=\"222\" width=\"148\" height=\"58\" rx=\"6\" class=\"ok\"/><text x=\"336\" y=\"239.1\" class=\"xs b tok mid\">20% lipid emulsion</text><text x=\"336\" y=\"256.3\" class=\"xs mid\"><tspan x=\"336\" dy=\"0\">1.5 mL/kg bolus</tspan><tspan x=\"336\" dy=\"14.2\">CPR: epi ≤ 1 mcg/kg</tspan></text><path d=\"M262 169 L255 169\" class=\"lok da\" marker-end=\"url(#ah-ok)\"/><path d=\"M262 251 L255 251\" class=\"lok da\" marker-end=\"url(#ah-ok)\"/></svg>"
+    }
+   },
+   "anims": {
+    "sux_k": {
+     "title": "Succinylcholine: ทำไม K⁺ พุ่งหลังไฟไหม้/denervation",
+     "svg": "<svg viewBox=\"0 0 420 312\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว succinylcholine กับ hyperkalemia: receptor งอกทั่วเซลล์หลังไฟไหม้หรือ denervation แล้ว K⁺ ทะลัก\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"174\" y=\"22\" width=\"72\" height=\"28\" rx=\"8\" class=\"bx\"/><text x=\"210\" y=\"40\" class=\"xs mid\">ปลายประสาท</text><g data-s=\"2\"><path d=\"M202 51 L218 61 M218 51 L202 61\" class=\"lbad w3\"/></g><text x=\"256\" y=\"34\" class=\"xs b tbad\" data-s=\"2\">denervation · ไฟไหม้</text><text x=\"256\" y=\"48\" class=\"xs b tbad\" data-s=\"2\">crush · นอนนาน</text><rect x=\"20\" y=\"70\" width=\"380\" height=\"50\" rx=\"12\" class=\"sk\"/><text x=\"210\" y=\"100\" class=\"xs mu mid\">เซลล์กล้ามเนื้อ (K⁺ ในเซลล์สูง)</text><text x=\"24\" y=\"60\" class=\"xs mu\">endplate →</text><rect x=\"186\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"acf\"/><rect x=\"196\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"acf\"/><rect x=\"206\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"acf\"/><rect x=\"216\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"acf\"/><rect x=\"226\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"acf\"/><g data-s=\"3\"><rect x=\"96\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"118\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"140\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"162\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"250\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"272\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"294\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"316\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"338\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"360\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"382\" y=\"63\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"34\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"56\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"78\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"100\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"122\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"144\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"166\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"188\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"210\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"232\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"254\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"276\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"298\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"320\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"342\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"364\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/><rect x=\"386\" y=\"117\" width=\"6\" height=\"10\" rx=\"2\" class=\"msf\"/></g><path d=\"M200 128 L200 146\" class=\"lms w2\" marker-end=\"url(#ah-ms)\" data-s=\"1\" data-x=\"4\"/><path d=\"M222 128 L222 146\" class=\"lms w2\" marker-end=\"url(#ah-ms)\" data-s=\"1\" data-x=\"4\"/><text x=\"260\" y=\"144\" class=\"xs b tms\" data-s=\"1\" data-x=\"4\">K⁺ ออกเล็กน้อย</text><path d=\"M37 130 L37 146 M59 130 L59 146 M81 130 L81 146 M103 130 L103 146 M125 130 L125 146 M147 130 L147 146 M169 130 L169 146 M191 130 L191 146 M213 130 L213 146 M235 130 L235 146 M257 130 L257 146 M279 130 L279 146 M301 130 L301 146 M323 130 L323 146 M345 130 L345 146 M367 130 L367 146 M389 130 L389 146\" class=\"lbad w2 fl\" data-s=\"4\" data-x=\"6\"/><text x=\"210\" y=\"160\" class=\"xs b tbad mid\" data-s=\"4\" data-x=\"6\">K⁺ ทะลักออกทั้งเซลล์</text><text x=\"210\" y=\"160\" class=\"xs b tok mid\" data-s=\"6\">rocuronium: จับ receptor แต่ไม่เปิด channel</text><g data-s=\"1\"><rect x=\"20\" y=\"172\" width=\"192\" height=\"42\" rx=\"6\" class=\"bx\"/><text x=\"116\" y=\"189.5\" class=\"xs mid b\">ปกติ: AChR อยู่ที่ endplate</text><text x=\"116\" y=\"204.0\" class=\"xs mid\">succinylcholine → K⁺ ↑ ~0.5</text></g><g data-s=\"2\"><rect x=\"20\" y=\"220\" width=\"192\" height=\"42\" rx=\"6\" class=\"bad\"/><text x=\"116\" y=\"237.5\" class=\"xs mid b\">บาดเจ็บ/ไม่ได้ใช้กล้ามเนื้อ</text><text x=\"116\" y=\"252.0\" class=\"xs mid\">ไฟไหม้ · crush · stroke · SCI</text></g><g data-s=\"3\"><rect x=\"20\" y=\"268\" width=\"192\" height=\"42\" rx=\"6\" class=\"ms\"/><text x=\"116\" y=\"285.5\" class=\"xs mid b\">ผ่านไป 24–72 ชม.</text><text x=\"116\" y=\"300.0\" class=\"xs mid\">AChR งอกทั่วทั้งเซลล์</text></g><g data-s=\"4\"><rect x=\"218\" y=\"172\" width=\"192\" height=\"42\" rx=\"6\" class=\"bad\"/><text x=\"314\" y=\"189.5\" class=\"xs mid b\">ให้ succinylcholine</text><text x=\"314\" y=\"204.0\" class=\"xs mid\">ทุก receptor เปิด → K⁺ ทะลัก</text></g><g data-s=\"5\"><rect x=\"218\" y=\"220\" width=\"192\" height=\"42\" rx=\"6\" class=\"bad\"/><text x=\"314\" y=\"237.5\" class=\"xs mid b tbad\">Hyperkalemia เฉียบพลัน</text><text x=\"314\" y=\"252.0\" class=\"xs mid\">arrhythmia · หัวใจหยุดเต้น</text></g><g data-s=\"6\"><rect x=\"218\" y=\"268\" width=\"192\" height=\"42\" rx=\"6\" class=\"ok\"/><text x=\"314\" y=\"285.5\" class=\"xs mid b tok\">ใช้ rocuronium แทน</text><text x=\"314\" y=\"300.0\" class=\"xs mid\">RSI: 1.2 mg/kg</text></g></svg>",
+     "steps": [
+      {
+       "t": "ปกติ",
+       "cap": "AChR อยู่เฉพาะที่ **endplate** · succinylcholine เปิด channel แล้วค้าง (depolarize) K⁺ ออกจากเซลล์เพียงเล็กน้อย"
+      },
+      {
+       "t": "กล้ามเนื้อถูกทำร้าย",
+       "cap": "**ไฟไหม้, crush, denervation** (stroke, spinal cord injury) หรือนอนนาน ทำให้กล้ามเนื้อขาดสัญญาณประสาทปกติ"
+      },
+      {
+       "t": "receptor งอกทั่วเซลล์",
+       "cap": "ราว **24–72 ชม.** ต่อมา เซลล์สร้าง **extrajunctional AChR** กระจายทั่วผิวเซลล์ (up-regulation)"
+      },
+      {
+       "t": "ให้ succinylcholine",
+       "cap": "ทุก receptor เปิดพร้อมกัน → **K⁺ ทะลักออกทั้งเซลล์**"
+      },
+      {
+       "t": "ผลต่อหัวใจ",
+       "cap": "**hyperkalemia เฉียบพลัน** → arrhythmia จนหัวใจหยุดเต้น"
+      },
+      {
+       "t": "เลือกยาให้ถูก",
+       "cap": "กลุ่มเสี่ยง **ห้าม succinylcholine** → ใช้ **rocuronium** (nondepolarizing, RSI 1.2 mg/kg) ที่จับ receptor โดยไม่เปิด channel"
+      }
+     ]
     }
    }
   },
@@ -560,5 +592,66 @@
    ]
   }
  ],
- "osce": []
+ "osce": [],
+ "reading": {
+  "minutes": 140,
+  "start": "เริ่มจากยาที่อันตรายในห้องผ่าตัด (LAST, MH, succinylcholine) เพราะเป็นคำถามกลไก–การรักษาตรงตัว แล้วต่อด้วยการประเมินก่อนผ่าตัดและไข้หลังผ่าตัดตามเวลา ส่วนผู้สูงอายุและจริยธรรมอ่านเป็นหลักการ รอบแรกข้ามตารางยานำสลบและรายละเอียด ERAS แต่ละข้อได้",
+  "order": [
+   {
+    "sec": "n12-15-1",
+    "level": "must",
+    "why": "LAST (CNS ก่อนหัวใจ, lipid), MH (EtCO₂ ↑ แรกสุด, dantrolene), ข้อห้าม succinylcholine"
+   },
+   {
+    "sec": "n12-15-2",
+    "level": "must",
+    "why": "ASA class, เวลางดน้ำงดอาหาร, RCRI และ ≥ 4 METs, เวลาเลื่อนผ่าตัดหลัง stent"
+   },
+   {
+    "sec": "n12-15-3",
+    "level": "must",
+    "why": "ไข้หลังผ่าตัดตามวัน, anastomotic leak, oliguria ตรวจสายสวนก่อน"
+   },
+   {
+    "sec": "n12-15-4",
+    "level": "extra",
+    "why": "จำ CAM, ห้าม benzodiazepine ใน delirium และองค์ประกอบ consent/capacity"
+   }
+  ],
+  "schwartz": [
+   {
+    "ch": "Ch 46",
+    "part": "Neuromuscular Blockers",
+    "why": "depolarizing vs nondepolarizing และข้อห้าม succinylcholine"
+   },
+   {
+    "ch": "Ch 46",
+    "part": "Malignant Hyperthermia",
+    "why": "อาการแรก การวินิจฉัย และ dantrolene"
+   },
+   {
+    "ch": "Ch 50",
+    "part": "Metabolic Stress Response to Surgery",
+    "why": "เหตุผลเบื้องหลังมาตรการ ERAS"
+   },
+   {
+    "ch": "Ch 47",
+    "part": "Delirium",
+    "why": "ปัจจัยเสี่ยง การป้องกัน และการรักษาโดยไม่ใช้ยา"
+   }
+  ],
+  "beyond": [
+   "**ASRA Checklist for Local Anesthetic Systemic Toxicity (2020)** — ลำดับการรักษาและขนาด lipid emulsion",
+   "**ACC/AHA Perioperative Cardiovascular Evaluation guideline (2014)** — RCRI, METs และเวลาหลัง stent",
+   "**POISE trial (Lancet 2008)** — เริ่ม β-blocker ขนาดสูงวันผ่าตัดเพิ่ม stroke และอัตราตาย",
+   "**ERAS Society guidelines for elective colorectal surgery** — carbohydrate loading, ไม่ใส่ NG ประจำ, ให้กินเร็ว"
+  ],
+  "tips": [
+   "MH: อาการแรกสุดคือ **EtCO₂ สูงอธิบายไม่ได้ + tachycardia** · ไข้มาช้า · รักษา **dantrolene**",
+   "LAST: **CNS ก่อน** (ชารอบปาก เสียงในหู → ชัก) แล้วหัวใจ · bupivacaine อันตรายสุด → **20% lipid emulsion**",
+   "**ห้าม succinylcholine** ในไฟไหม้/crush/denervation หลัง 24–72 ชม., ประวัติ MH, K⁺ สูง → ใช้ rocuronium",
+   "งดน้ำใส **2 ชม.** · อาหารเบา/นมผง **6 ชม.** · อาหารมัน **8 ชม.** · ASA + E เมื่อฉุกเฉิน",
+   "ไข้หลังผ่าตัด: ≤ 48 ชม. ส่วนใหญ่ inflammatory · วัน 3–5 pneumonia/UTI/line · วัน 5–7 SSI/leak/DVT"
+  ]
+ }
 }

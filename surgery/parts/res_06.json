@@ -258,7 +258,7 @@
    "summary": "ตัด melanoma กว้างเท่าไรตาม Breslow ใครต้องทำ SLNB และเมื่อ SLN positive ทำไมไม่ต้อง CLND แล้วในยุค immunotherapy",
    "minutes": 15,
    "source": "Schwartz 11e Ch 16 — Melanoma",
-   "md": "### Biopsy และ staging ของ melanoma\nก้อนสงสัย (ABCDE, ugly duckling) ทำ **excisional biopsy margin 1–3 mm** ให้ได้ความหนาเต็มชั้น ตามแนวแกนที่จะทำ wide excision ต่อ — ก้อนใหญ่/ตำแหน่งยาก (หน้า, ฝ่ามือ, subungual) ใช้ incisional/punch ที่ส่วนนูนหนาที่สุด **หลีกเลี่ยง shave ตื้น** เพราะตัด Breslow\nปัจจัยพยากรณ์สำคัญที่สุดของ localized disease คือ **Breslow thickness** (วัดจาก granular layer ถึงจุดลึกสุด) ร่วมกับ **ulceration** · ใน stage III ปัจจัยสำคัญที่สุดคือ **จำนวนต่อมน้ำเหลือง** · stage IV: ตำแหน่ง metastasis และ **LDH**\n\n| AJCC 8th T | ความหนา | a / b |\n|---|---|---|\n| **T1** | ≤1.0 mm | T1a <0.8 mm ไม่มี ulceration · **T1b 0.8–1.0 mm หรือ <0.8 mm มี ulceration** |\n| T2 | >1.0–2.0 mm | a = ไม่มี ulceration · b = มี |\n| T3 | >2.0–4.0 mm | a / b |\n| T4 | >4.0 mm | a / b |\n\n> AJCC 8th ตัด mitotic rate ออกจาก T1 แล้ว (แต่ยังใช้ประกอบการตัดสินใจ SLNB) · ไม่ต้องทำ CXR/CT ใน stage I–II ที่ไม่มีอาการ — ทำ CT/PET-CT และ brain MRI ตั้งแต่ stage III ขึ้นไป\n\n### Wide local excision: margin ตามความหนา\n\n[[fig:breslow]]\n\n| Breslow | Clinical margin (NCCN) |\n|---|---|\n| In situ | **0.5–1 cm** (lentigo maligna อาจต้องกว้างกว่า/staged excision, Mohs) |\n| ≤1.0 mm | **1 cm** |\n| 1.01–2.0 mm | **1–2 cm** |\n| >2.0 mm (T3–T4) | **2 cm** |\n\nตัดลึกถึง **muscle fascia (ไม่ต้องเอา fascia ออก)** · RCT ยืนยันว่า margin >2 cm ไม่เพิ่ม survival แต่ margin 1 cm ใน melanoma >2 mm เพิ่ม locoregional recurrence (UK trial 1 cm vs 3 cm) · Subungual melanoma: amputation ระดับที่ได้ margin (มักที่ DIP/IP joint) · Schwartz สรุปคล้ายกัน: <1 mm 0.5–1 cm, 1–2 mm 1–2 cm, >2 mm 2 cm\n\n### Sentinel lymph node biopsy (SLNB)\n**ข้อบ่งชี้** (NCCN/ASCO-SSO): **≥T1b** (≥0.8 mm หรือมี ulceration) → discuss and offer · T1a <0.8 mm ไม่มี ulceration → โดยทั่วไปไม่ทำ (SLN+ <5%) เว้นมี high-risk features เช่น mitoses สูง, LVI, ขอบลึกของ biopsy ยังมีมะเร็ง · T2–T4 cN0 → แนะนำ SLNB\n**เทคนิค**: preoperative **lymphoscintigraphy** (Tc-99m) ใช้หา basin ที่ผิดคาด (เช่น ลำตัว ศีรษะลำคอ ระบายได้หลาย basin, ส้นเท้าไป popliteal) + intradermal blue dye ระหว่างผ่าตัด → พบ SLN ~98% · ทำ **พร้อมกับ WLE ครั้งแรก** เพราะการตัดกว้างก่อนจะเปลี่ยนทางเดินน้ำเหลือง\n**MSLT-I**: SLNB + immediate lymphadenectomy ถ้า positive เพิ่ม **DFS** ในความหนา 1.2–3.5 mm และ >3.5 mm (Schwartz: +7% และ +10%) และเพิ่ม melanoma-specific survival ในกลุ่มหนาปานกลางที่ node positive — SLNB จึงเป็นทั้ง staging ที่แม่นที่สุดและเปิดทางสู่ adjuvant therapy\n\n### MSLT-II: SLN positive แล้วไม่ต้อง CLND\n**MSLT-II** (Faries, NEJM 2017; 1,939 ราย) สุ่ม SLN+ ไป **completion lymph node dissection (CLND)** vs **nodal ultrasound surveillance** → **melanoma-specific survival ไม่ต่างกัน (~86% ที่ 3 ปีทั้งสองแขน)** CLND ให้ regional control ดีกว่าและข้อมูล staging เพิ่ม (non-SLN positive ~11.5%) แต่ **lymphedema 24% vs 6%** · **DeCOG-SLT** ได้ผลเช่นเดียวกัน\n\n[[fig:nodes]]\n\n| สถานการณ์ | แนวทางปัจจุบัน |\n|---|---|\n| SLN positive (microscopic) | **Active nodal US surveillance** (ทุก ~4 เดือนใน 2 ปีแรก) + **adjuvant anti-PD-1** หรือ dabrafenib/trametinib ถ้า BRAF V600 |\n| Clinically detected node (คลำได้/ภาพพบ) resectable | **Neoadjuvant pembrolizumab** → therapeutic lymphadenectomy → adjuvant (SWOG **S1801**: 2-yr EFS 72% vs 49%) หรือ upfront lymphadenectomy + adjuvant |\n| Stage IIB–IIC (node negative หนา/ulcerated) | adjuvant pembrolizumab (KEYNOTE-716) หรือ nivolumab (CheckMate 76K) |\n\n### In-transit และ distant disease\n**In-transit/satellite**: excise ให้ margin ลบถ้าจำนวนน้อย · หลายก้อน → intralesional **T-VEC**, systemic immunotherapy, หรือ **isolated limb perfusion/infusion** (melphalan) สำหรับโรคที่จำกัดในแขนขา · **Stage IV**: first-line คือ **checkpoint inhibitors** (nivolumab + ipilimumab หรือ nivolumab + relatlimab, หรือ anti-PD-1 เดี่ยว) หรือ BRAF/MEK ในผู้ที่ต้องการ response เร็ว · **metastasectomy** ในผู้ที่มี oligometastasis และตอบสนองต่อยา/disease-free interval ยาว · brain met: SRS ± resection\n",
+   "md": "### Biopsy และ staging ของ melanoma\nก้อนสงสัย (ABCDE, ugly duckling) ทำ **excisional biopsy margin 1–3 mm** ให้ได้ความหนาเต็มชั้น ตามแนวแกนที่จะทำ wide excision ต่อ — ก้อนใหญ่/ตำแหน่งยาก (หน้า, ฝ่ามือ, subungual) ใช้ incisional/punch ที่ส่วนนูนหนาที่สุด **หลีกเลี่ยง shave ตื้น** เพราะตัด Breslow\nปัจจัยพยากรณ์สำคัญที่สุดของ localized disease คือ **Breslow thickness** (วัดจาก granular layer ถึงจุดลึกสุด) ร่วมกับ **ulceration** · ใน stage III ปัจจัยสำคัญที่สุดคือ **จำนวนต่อมน้ำเหลือง** · stage IV: ตำแหน่ง metastasis และ **LDH**\n\n| AJCC 8th T | ความหนา | a / b |\n|---|---|---|\n| **T1** | ≤1.0 mm | T1a <0.8 mm ไม่มี ulceration · **T1b 0.8–1.0 mm หรือ <0.8 mm มี ulceration** |\n| T2 | >1.0–2.0 mm | a = ไม่มี ulceration · b = มี |\n| T3 | >2.0–4.0 mm | a / b |\n| T4 | >4.0 mm | a / b |\n\n> AJCC 8th ตัด mitotic rate ออกจาก T1 แล้ว (แต่ยังใช้ประกอบการตัดสินใจ SLNB) · ไม่ต้องทำ CXR/CT ใน stage I–II ที่ไม่มีอาการ — ทำ CT/PET-CT และ brain MRI ตั้งแต่ stage III ขึ้นไป\n\n### Wide local excision: margin ตามความหนา\n\n[[fig:breslow]]\n\n| Breslow | Clinical margin (NCCN) |\n|---|---|\n| In situ | **0.5–1 cm** (lentigo maligna อาจต้องกว้างกว่า/staged excision, Mohs) |\n| ≤1.0 mm | **1 cm** |\n| 1.01–2.0 mm | **1–2 cm** |\n| >2.0 mm (T3–T4) | **2 cm** |\n\nตัดลึกถึง **muscle fascia (ไม่ต้องเอา fascia ออก)** · RCT ยืนยันว่า margin >2 cm ไม่เพิ่ม survival แต่ margin 1 cm ใน melanoma >2 mm เพิ่ม locoregional recurrence (UK trial 1 cm vs 3 cm) · Subungual melanoma: amputation ระดับที่ได้ margin (มักที่ DIP/IP joint) · Schwartz สรุปคล้ายกัน: <1 mm 0.5–1 cm, 1–2 mm 1–2 cm, >2 mm 2 cm\n\n### Sentinel lymph node biopsy (SLNB)\n**ข้อบ่งชี้** (NCCN/ASCO-SSO): **≥T1b** (≥0.8 mm หรือมี ulceration) → discuss and offer · T1a <0.8 mm ไม่มี ulceration → โดยทั่วไปไม่ทำ (SLN+ <5%) เว้นมี high-risk features เช่น mitoses สูง, LVI, ขอบลึกของ biopsy ยังมีมะเร็ง · T2–T4 cN0 → แนะนำ SLNB\n**เทคนิค**: preoperative **lymphoscintigraphy** (Tc-99m) ใช้หา basin ที่ผิดคาด (เช่น ลำตัว ศีรษะลำคอ ระบายได้หลาย basin, ส้นเท้าไป popliteal) + intradermal blue dye ระหว่างผ่าตัด → พบ SLN ~98% · ทำ **พร้อมกับ WLE ครั้งแรก** เพราะการตัดกว้างก่อนจะเปลี่ยนทางเดินน้ำเหลือง\n**MSLT-I**: SLNB + immediate lymphadenectomy ถ้า positive เพิ่ม **DFS** ในความหนา 1.2–3.5 mm และ >3.5 mm (Schwartz: +7% และ +10%) และเพิ่ม melanoma-specific survival ในกลุ่มหนาปานกลางที่ node positive — SLNB จึงเป็นทั้ง staging ที่แม่นที่สุดและเปิดทางสู่ adjuvant therapy\n\n[[anim:sln_steps]]\n\n### MSLT-II: SLN positive แล้วไม่ต้อง CLND\n**MSLT-II** (Faries, NEJM 2017; 1,939 ราย) สุ่ม SLN+ ไป **completion lymph node dissection (CLND)** vs **nodal ultrasound surveillance** → **melanoma-specific survival ไม่ต่างกัน (~86% ที่ 3 ปีทั้งสองแขน)** CLND ให้ regional control ดีกว่าและข้อมูล staging เพิ่ม (non-SLN positive ~11.5%) แต่ **lymphedema 24% vs 6%** · **DeCOG-SLT** ได้ผลเช่นเดียวกัน\n\n[[fig:nodes]]\n\n| สถานการณ์ | แนวทางปัจจุบัน |\n|---|---|\n| SLN positive (microscopic) | **Active nodal US surveillance** (ทุก ~4 เดือนใน 2 ปีแรก) + **adjuvant anti-PD-1** หรือ dabrafenib/trametinib ถ้า BRAF V600 |\n| Clinically detected node (คลำได้/ภาพพบ) resectable | **Neoadjuvant pembrolizumab** → therapeutic lymphadenectomy → adjuvant (SWOG **S1801**: 2-yr EFS 72% vs 49%) หรือ upfront lymphadenectomy + adjuvant |\n| Stage IIB–IIC (node negative หนา/ulcerated) | adjuvant pembrolizumab (KEYNOTE-716) หรือ nivolumab (CheckMate 76K) |\n\n### In-transit และ distant disease\n**In-transit/satellite**: excise ให้ margin ลบถ้าจำนวนน้อย · หลายก้อน → intralesional **T-VEC**, systemic immunotherapy, หรือ **isolated limb perfusion/infusion** (melphalan) สำหรับโรคที่จำกัดในแขนขา · **Stage IV**: first-line คือ **checkpoint inhibitors** (nivolumab + ipilimumab หรือ nivolumab + relatlimab, หรือ anti-PD-1 เดี่ยว) หรือ BRAF/MEK ในผู้ที่ต้องการ response เร็ว · **metastasectomy** ในผู้ที่มี oligometastasis และตอบสนองต่อยา/disease-free interval ยาว · brain met: SRS ± resection\n",
    "pearls": [
     "Biopsy: excisional 1–3 mm full thickness · ห้าม shave ตื้น",
     "WLE: in situ 0.5–1 cm · ≤1 mm 1 cm · 1–2 mm 1–2 cm · >2 mm 2 cm ลึกถึง fascia",
@@ -366,6 +366,34 @@
      "title": "Melanoma node positive: MSLT-II และ S1801",
      "cap": "SLN บวกจากกล้อง: **MSLT-II** พบว่า CLND ไม่เพิ่ม melanoma-specific survival แต่เพิ่ม lymphedema จึงใช้ **US surveillance + adjuvant** ต่อมที่คลำได้: **neoadjuvant pembrolizumab** ก่อนผ่าตัดเพิ่ม EFS (S1801)",
      "svg": "<svg viewBox=\"0 0 420 308\" role=\"img\" aria-label=\"การจัดการ melanoma ที่ต่อมน้ำเหลืองบวกตาม MSLT-II และ S1801\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"195\" height=\"40\" rx=\"6\" class=\"ac\"/><text x=\"107.5\" y=\"26.5\" class=\"xs mid\"><tspan x=\"107.5\" dy=\"0\" class=\"b tac\">SLN + (microscopic)</tspan><tspan x=\"107.5\" dy=\"14.5\">cN0 ก่อนผ่าตัด</tspan></text><rect x=\"215\" y=\"10\" width=\"195\" height=\"40\" rx=\"6\" class=\"bad\"/><text x=\"312.5\" y=\"26.5\" class=\"xs mid\"><tspan x=\"312.5\" dy=\"0\" class=\"b\">Clinical node</tspan><tspan x=\"312.5\" dy=\"14.5\">คลำได้ / ภาพพบ · resectable</tspan></text><path d=\"M107 50 L107 64\" class=\"lac\" marker-end=\"url(#ah-ac)\"/><path d=\"M312 50 L312 64\" class=\"lbad\" marker-end=\"url(#ah-bad)\"/><rect x=\"10\" y=\"68\" width=\"195\" height=\"72\" rx=\"6\" class=\"ok\"/><text x=\"107.5\" y=\"86\" class=\"xs mid\"><tspan x=\"107.5\" dy=\"0\" class=\"b tok\">Nodal US surveillance</tspan><tspan x=\"107.5\" dy=\"14.5\">ทุก ~4 เดือนใน 2 ปีแรก</tspan><tspan x=\"107.5\" dy=\"14.5\">+ adjuvant anti-PD-1</tspan><tspan x=\"107.5\" dy=\"14.5\">(BRAF V600: dabrafenib + trametinib)</tspan></text><rect x=\"215\" y=\"68\" width=\"195\" height=\"40\" rx=\"6\" class=\"ac\"/><text x=\"312.5\" y=\"84.5\" class=\"xs mid\"><tspan x=\"312.5\" dy=\"0\" class=\"b tac\">Neoadjuvant pembrolizumab</tspan><tspan x=\"312.5\" dy=\"14.5\">(SWOG S1801)</tspan></text><path d=\"M312 108 L312 118\" class=\"lac\" marker-end=\"url(#ah-ac)\"/><rect x=\"215\" y=\"122\" width=\"195\" height=\"40\" rx=\"6\" class=\"ok\"/><text x=\"312.5\" y=\"138.5\" class=\"xs mid\"><tspan x=\"312.5\" dy=\"0\" class=\"b tok\">Lymphadenectomy</tspan><tspan x=\"312.5\" dy=\"14.5\">→ adjuvant</tspan></text><text x=\"10\" y=\"160\" class=\"xs b\">MSLT-II: CLND vs surveillance</text><text x=\"10\" y=\"180\" class=\"xs\">MSS 3 ปี</text><rect x=\"80\" y=\"171\" width=\"94.6\" height=\"10\" rx=\"2\" class=\"muf\"/><text x=\"178.6\" y=\"180\" class=\"xs b\">86%</text><rect x=\"80\" y=\"183\" width=\"94.6\" height=\"10\" rx=\"2\" class=\"okf\"/><text x=\"178.6\" y=\"192\" class=\"xs b\">86%</text><text x=\"10\" y=\"214\" class=\"xs\">Lymphedema</text><rect x=\"80\" y=\"205\" width=\"26.4\" height=\"10\" rx=\"2\" class=\"muf\"/><text x=\"110.4\" y=\"214\" class=\"xs b\">24%</text><rect x=\"80\" y=\"217\" width=\"6.6\" height=\"10\" rx=\"2\" class=\"okf\"/><text x=\"90.6\" y=\"226\" class=\"xs b\">6%</text><text x=\"215\" y=\"182\" class=\"xs b\">S1801: 2-yr EFS</text><text x=\"215\" y=\"202\" class=\"xs\">neoadj</text><rect x=\"260\" y=\"193\" width=\"108\" height=\"10\" rx=\"2\" class=\"okf\"/><text x=\"372\" y=\"202\" class=\"xs b\">72%</text><text x=\"215\" y=\"220\" class=\"xs\">adj only</text><rect x=\"260\" y=\"211\" width=\"73.5\" height=\"10\" rx=\"2\" class=\"muf\"/><text x=\"337.5\" y=\"220\" class=\"xs b\">49%</text><rect x=\"10\" y=\"238\" width=\"10\" height=\"10\" rx=\"2\" class=\"muf\"/><text x=\"24\" y=\"247\" class=\"xs mu\">CLND / adjuvant only</text><rect x=\"160\" y=\"238\" width=\"10\" height=\"10\" rx=\"2\" class=\"okf\"/><text x=\"174\" y=\"247\" class=\"xs mu\">surveillance / neoadjuvant</text><rect x=\"10\" y=\"258\" width=\"400\" height=\"42\" rx=\"6\" class=\"sk\"/><text x=\"210\" y=\"275.5\" class=\"xs mid\"><tspan x=\"210\" dy=\"0\" class=\"b\">Stage IIB–IIC: adjuvant pembro/nivo · in-transit: T-VEC/ILP</tspan><tspan x=\"210\" dy=\"14.5\">Stage IV: checkpoint inhibitor หรือ BRAF/MEK · metastasectomy บางราย</tspan></text></svg>"
+    }
+   },
+   "anims": {
+    "sln_steps": {
+     "title": "SLN mapping ของ melanoma ทีละขั้น",
+     "svg": "<svg viewBox=\"0 0 420 310\" role=\"img\" aria-label=\"ภาพเคลื่อนไหว sentinel lymph node mapping ของ melanoma บนลำตัวที่ระบายไปสอง basin\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"14\" width=\"170\" height=\"288\" rx=\"34\" class=\"sk\"/><text x=\"64\" y=\"110\" class=\"xs mid mu\">ลำตัวด้านหลัง</text><text x=\"170\" y=\"32\" class=\"xs end mu\">รักแร้</text><text x=\"118\" y=\"292\" class=\"xs mid mu\">ขาหนีบ</text><circle cx=\"46\" cy=\"66\" r=\"6\" class=\"bx\"/><circle cx=\"34\" cy=\"50\" r=\"6\" class=\"bx\"/><circle cx=\"46\" cy=\"258\" r=\"6\" class=\"bx\"/><circle cx=\"34\" cy=\"276\" r=\"6\" class=\"bx\"/><circle cx=\"178\" cy=\"50\" r=\"6\" class=\"bx\"/><circle cx=\"164\" cy=\"280\" r=\"6\" class=\"bx\"/><g data-x=\"3\"><circle cx=\"158\" cy=\"70\" r=\"7\" class=\"bx\"/></g><g data-x=\"3\"><circle cx=\"150\" cy=\"262\" r=\"7\" class=\"bx\"/></g><g data-s=\"1\"><circle cx=\"128\" cy=\"170\" r=\"8\" class=\"badf\"/></g><text x=\"110\" y=\"182\" class=\"xs end tbad b\" data-s=\"1\">melanoma</text><g data-s=\"2\"><circle cx=\"128\" cy=\"170\" r=\"14\" class=\"lms w2 dt\"/></g><path d=\"M134 160 C142 130 150 104 156 84\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\" data-s=\"2\"/><path d=\"M134 180 C140 208 146 232 149 250\" class=\"lwa w2 fl\" marker-end=\"url(#ah-wa)\" data-s=\"2\"/><text x=\"110\" y=\"154\" class=\"xs end tms b\" data-s=\"2\">Tc-99m</text><g data-s=\"3\" data-x=\"4\"><circle cx=\"158\" cy=\"70\" r=\"9\" class=\"msf\"/><circle cx=\"150\" cy=\"262\" r=\"9\" class=\"msf\"/></g><path d=\"M166 64 L174 56\" class=\"lmu dt\" data-s=\"3\"/><path d=\"M156 271 L160 275\" class=\"lmu dt\" data-s=\"3\"/><text x=\"146\" y=\"96\" class=\"xs end tms b\" data-s=\"3\">SLN</text><text x=\"140\" y=\"244\" class=\"xs end tms b\" data-s=\"3\">SLN</text><g data-s=\"4\"><circle cx=\"158\" cy=\"70\" r=\"9\" class=\"waf\"/><circle cx=\"150\" cy=\"262\" r=\"9\" class=\"waf\"/></g><text x=\"126\" y=\"214\" class=\"xs end tok b\" data-s=\"4\">✂ พร้อม WLE</text><g data-s=\"1\"><rect x=\"210\" y=\"10\" width=\"200\" height=\"52\" rx=\"6\" class=\"ac\"/><text x=\"310\" y=\"25.3\" class=\"xs mid\"><tspan x=\"310\" dy=\"0\" class=\"b\">≥ T1b: Breslow ≥ 0.8 mm</tspan><tspan x=\"310\" dy=\"14.5\">หรือ ulceration → offer SLNB</tspan><tspan x=\"310\" dy=\"14.5\">T1a โดยทั่วไปไม่ทำ</tspan></text></g><g data-s=\"2\"><rect x=\"210\" y=\"68\" width=\"200\" height=\"52\" rx=\"6\" class=\"wa\"/><text x=\"310\" y=\"83.3\" class=\"xs mid\"><tspan x=\"310\" dy=\"0\" class=\"b\">Tc-99m lymphoscintigraphy</tspan><tspan x=\"310\" dy=\"14.5\">ลำตัว/ศีรษะลำคอ</tspan><tspan x=\"310\" dy=\"14.5\">ระบายได้หลาย basin</tspan></text></g><g data-s=\"3\"><rect x=\"210\" y=\"126\" width=\"200\" height=\"52\" rx=\"6\" class=\"ms\"/><text x=\"310\" y=\"141.3\" class=\"xs mid\"><tspan x=\"310\" dy=\"0\" class=\"b\">SLN = node แรก</tspan><tspan x=\"310\" dy=\"14.5\">ที่รับน้ำเหลืองจากก้อน</tspan><tspan x=\"310\" dy=\"14.5\">บอกสถานะทั้ง basin</tspan></text></g><g data-s=\"4\"><rect x=\"210\" y=\"184\" width=\"200\" height=\"52\" rx=\"6\" class=\"ok\"/><text x=\"310\" y=\"199.3\" class=\"xs mid\"><tspan x=\"310\" dy=\"0\" class=\"b\">blue dye + gamma probe</tspan><tspan x=\"310\" dy=\"14.5\">พบ SLN ~98%</tspan><tspan x=\"310\" dy=\"14.5\">ทำพร้อม WLE ครั้งแรก</tspan></text></g><g data-s=\"5\"><rect x=\"210\" y=\"244\" width=\"82\" height=\"58\" rx=\"6\" class=\"ok\"/><text x=\"251\" y=\"269.6\" class=\"xs mid\"><tspan x=\"251\" dy=\"0\" class=\"b\">SLN ลบ</tspan><tspan x=\"251\" dy=\"14.5\">ติดตาม</tspan></text></g><g data-s=\"5\"><rect x=\"298\" y=\"244\" width=\"112\" height=\"58\" rx=\"6\" class=\"bad\"/><text x=\"354\" y=\"262.3\" class=\"xs mid\"><tspan x=\"354\" dy=\"0\" class=\"b\">SLN บวก</tspan><tspan x=\"354\" dy=\"14.5\">MSLT-II: US</tspan><tspan x=\"354\" dy=\"14.5\">แทน CLND ทันที</tspan></text></g></svg>",
+     "steps": [
+      {
+       "t": "ใครต้องทำ SLNB",
+       "cap": "melanoma **≥ T1b** (Breslow ≥ 0.8 mm หรือมี ulceration) → เสนอ SLNB · T1a ไม่มี risk feature โอกาส SLN+ < 5% จึงมักไม่ทำ"
+      },
+      {
+       "t": "Lymphoscintigraphy",
+       "cap": "ฉีด **Tc-99m** รอบก้อนก่อนผ่าตัด ภาพบอกว่าน้ำเหลืองไหลไป basin ไหน — รอยโรคที่ลำตัวอาจไป**ทั้งรักแร้และขาหนีบ**"
+      },
+      {
+       "t": "Sentinel node",
+       "cap": "node แรกที่รับน้ำเหลืองคือ **SLN (hot)** ซึ่งสะท้อนสถานะของ basin ทั้งหมด ต่อมถัดไปไม่ต้องตัด"
+      },
+      {
+       "t": "เก็บ SLN",
+       "cap": "ระหว่างผ่าตัดใช้ **blue dye + gamma probe** หา SLN ได้ ~98% · ต้องทำ**พร้อม WLE ครั้งแรก** เพราะตัดกว้างก่อนจะเปลี่ยนทางเดินน้ำเหลือง"
+      },
+      {
+       "t": "แปลผล",
+       "cap": "SLN ลบ → ติดตาม · SLN บวก → **MSLT-II**: ไม่ต้อง completion lymphadenectomy ทันที ใช้ **ultrasound ติดตาม** ร่วม adjuvant therapy"
+      }
+     ]
     }
    }
   },
@@ -524,5 +552,66 @@
    "instruction": "**บทบาท**: แพทย์ประจำบ้านศัลยกรรมปีสุดท้าย ผู้สอบให้ข้อมูลทีละขั้น\n\n**Scenario**: ชายอายุ 46 ปี ถูกส่งตัวจาก รพช. หลังได้รับการ \"ตัดก้อนไขมัน\" ที่ต้นขาด้านหน้าซ้ายเมื่อ 2 สัปดาห์ก่อน ผ่านแผลแนวขวาง 6 cm ใส่ drain ออกด้านข้าง ผลชิ้นเนื้อ: **high-grade myxofibrosarcoma 6 cm, margins positive** แผลหายดี\n\n**Examiner prompts**\n1. \"ปัญหาของการผ่าตัดครั้งแรกคืออะไร คุณจะประเมินผู้ป่วยต่ออย่างไร\"\n2. \"MRI เห็น residual enhancing tissue ที่ tumor bed ลงไปถึง fascia ของ quadriceps CT chest ปกติ — แผนการรักษาคืออะไร จะให้รังสีก่อนหรือหลังผ่าตัด\"\n3. \"บอกขั้นตอนการผ่าตัด re-excision ครั้งนี้ จะตัดอะไรออกบ้าง\"\n4. \"หลังผ่าตัด 3 สัปดาห์ แผลแยก 4 cm มี serous discharge ทำอย่างไร\"\n5. \"ผู้ป่วยถามว่าต้องตรวจติดตามอย่างไร และโอกาสโรคแพร่กระจายไปที่ไหน\"\n",
    "answer": "1. **Prompt 1 — ปัญหาและการประเมิน (2 คะแนน)**\n- เป็น **unplanned (\"whoops\") excision**: ไม่มีภาพ/biopsy ก่อน, แผลแนวขวาง, drain exit แยกตำแหน่ง → ปนเปื้อนเนื้อเยื่อกว้าง margin positive\n- Review slide โดย sarcoma pathologist (subtype, grade FNCLCC)\n- **MRI ต้นขา** (ก่อนผ่าตัดซ้ำ) ดู residual disease และ **CT chest** (high-grade >5 cm)\n- ส่งปรึกษา **multidisciplinary sarcoma tumor board**\n\n2. **Prompt 2 — แผนการรักษา (2 คะแนน)**\n- **Re-excision ของ tumor bed** พร้อมแผลเดิมและ drain tract เพื่อให้ได้ R0 + radiation\n- เลือก **preoperative RT 50 Gy** (field เล็กกว่า, late fibrosis น้อยกว่า) โดยยอมรับ wound complication สูงกว่า (~35% vs 17%; ต้นขาเสี่ยงสูง) หรือ postoperative 60–66 Gy — ตอบเหตุผลสองฝั่งได้\n- Myxofibrosarcoma infiltrative ต้อง margin กว้างกว่า sarcoma อื่น\n\n3. **Prompt 3 — Operative plan (3 คะแนน)**\n- ตัดแผลเดิมแบบ ellipse ครอบคลุม **drain exit site** ทั้งหมด ไม่เปิดเข้า cavity เดิม\n- ตัดพร้อม **fascia/กล้ามเนื้อส่วนที่สัมผัส** ให้ได้ margin ~1–2 cm หรือ fascial barrier ไม่ถูกบุก\n- Orient specimen, ink margins, clip tumor bed สำหรับรังสี\n- วางแผนปิดแผล: **flap (เช่น gracilis/ALT/rotational)** ถ้าหลัง preop RT หรือแผลตึง ใส่ drain ออกในแนวแผล\n\n4. **Prompt 4 — Wound complication (2 คะแนน)**\n- ตรวจ/US หา seroma หรือ abscess, culture ถ้าติดเชื้อ\n- Local wound care/NPWT, debridement ถ้ามีเนื้อตาย, flap coverage ถ้าแผลใหญ่หรือเห็นโครงสร้างสำคัญ\n- ประสานรังสีแพทย์ถ้าเป็น postop RT (เลื่อนจนแผลหาย)\n\n5. **Prompt 5 — Follow-up (1 คะแนน)**\n- High-grade: H&P + **CT chest ทุก 3–6 เดือน 2–3 ปีแรก** แล้วห่างขึ้น, MRI local ตามความเสี่ยง\n- Metastasis ส่วนใหญ่ไป **ปอด** ภายใน 2–3 ปี; lung metastasectomy เป็นทางเลือกในโรคจำกัด\n\n**Critical fails**\n- สังเกตอาการ/ให้แต่รังสีโดยไม่ re-excise tumor bed\n- ไม่ตัด drain tract/แผลเดิม หรือผ่าผ่าน cavity เดิม\n- ไม่ทำ CT chest staging ก่อนผ่าตัด"
   }
- ]
+ ],
+ "reading": {
+  "minutes": 110,
+  "start": "จับหลักใหญ่ก่อนว่ามะเร็งยุคใหม่ผ่าตัด \"น้อยลงแต่แม่นขึ้น\" — margin ให้พอ และจัดการต่อมน้ำเหลืองตาม trial · อ่าน breast กับ melanoma ให้แน่นเพราะชื่อ trial ออกสอบตรง ๆ · รอบแรกข้ามตาราง targeted therapy และ retroperitoneal sarcoma ได้",
+  "order": [
+   {
+    "sec": "res-06-2",
+    "level": "must",
+    "why": "BCT vs mastectomy, margin, B-32, Z0011, AMAROS และ axilla หลัง neoadjuvant"
+   },
+   {
+    "sec": "res-06-3",
+    "level": "must",
+    "why": "margin ตาม Breslow, ข้อบ่งชี้ SLNB และ MSLT-I/II"
+   },
+   {
+    "sec": "res-06-4",
+    "level": "must",
+    "why": "biopsy sarcoma ให้ถูก, limb-sparing + RT และ GIST กับ imatinib"
+   },
+   {
+    "sec": "res-06-1",
+    "level": "extra",
+    "why": "หลัก R0, hereditary syndromes และ immunotherapy/irAE — ใช้เป็นกรอบรวม"
+   }
+  ],
+  "schwartz": [
+   {
+    "ch": "Ch 17",
+    "part": "Sentinel Lymph Node Dissection",
+    "why": "เทคนิคและหลักฐานของ SLNB ในมะเร็งเต้านม"
+   },
+   {
+    "ch": "Ch 16",
+    "part": "Melanoma",
+    "why": "staging, margin และการจัดการต่อมน้ำเหลือง"
+   },
+   {
+    "ch": "Ch 36",
+    "part": "Retroperitoneal Sarcoma",
+    "why": "การผ่าตัด en bloc และบทบาทของรังสี"
+   },
+   {
+    "ch": "Ch 10",
+    "part": "Surgical Therapy",
+    "why": "หลักการผ่าตัดมะเร็งและ margin"
+   }
+  ],
+  "beyond": [
+   "**ACOSOG Z0011 (JAMA 2011/2017)** — 1–2 SLN บวกใน BCS + whole-breast RT ไม่ต้อง ALND",
+   "**AMAROS (Lancet Oncol 2014)** — axillary RT แทน ALND ได้ผลควบคุมเท่ากัน lymphedema น้อยกว่า",
+   "**MSLT-II (NEJM 2017)** — SLN บวกใน melanoma ไม่ต้อง completion lymphadenectomy ใช้ ultrasound ติดตาม",
+   "**SSO/ASTRO margin consensus (2014)** — invasive cancer ที่ทำ BCS + WBI ใช้ \"no ink on tumor\""
+  ],
+  "tips": [
+   "Z0011 ใช้ไม่ได้เมื่อ mastectomy, ≥ 3 SLN บวก, ได้ neoadjuvant หรือไม่ได้ WBI — โจทย์ชอบเปลี่ยนเงื่อนไขข้อเดียว",
+   "Melanoma margin: in situ 0.5–1 cm · ≤ 1 mm 1 cm · 1–2 mm 1–2 cm · > 2 mm 2 cm ลึกถึง fascia (ไม่เอา fascia)",
+   "SLNB ใน melanoma ทำพร้อม WLE ครั้งแรก — ถ้าตัดกว้างก่อน mapping จะเชื่อถือไม่ได้",
+   "Sarcoma: biopsy ด้วย core ตามแนวที่จะตัดออก ห้าม excisional ก้อนใหญ่ · ต่อมน้ำเหลืองบวกพบน้อย ยกเว้น epithelioid, rhabdo, clear cell, angiosarcoma",
+   "GIST: imatinib ตาม KIT/PDGFRA (PDGFRA D842V ดื้อ) · ไม่ต้อง lymphadenectomy"
+  ]
+ }
 }
