@@ -226,3 +226,39 @@ https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X (อัปเดตอัต�
 - รายการค้างเดิมไม่เปลี่ยน (ดูสัปดาห์ที่ 6–8)
 
 สัปดาห์ที่ 2–8: ไม่มีคาบไหนเปลี่ยนสถานะ (ไม่มีการเพิ่มข้อในคลังตั้งแต่ 25 ก.ย.)
+
+---
+
+## สัปดาห์ที่ 10 · 16–20 พ.ย. 2569
+
+ไม่มีคาบ lecture — สัปดาห์สอบลงกอง (MEQ + OSCE 17–18 พ.ย.) · ไม่นับ "🎯 แผนก่อนสอบ" (จ. 16) เพราะเป็นแผนทบทวน
+
+---
+
+## อัปเดตย้อนหลัง (เติมคลัง 14 พ.ย. 2569 · หน้าเว็บ v41–v45)
+
+ตั้งแต่รอบนี้ นับจาก **หน้าเว็บสด** (https://claude.ai/artifact/Fdi5gcNXKqFLAXg4fQBV7X) ไม่ใช่ `bank_merged.json` ใน repo ซึ่งตามหลังหน้าเว็บ (session อื่นเติมข้อตรงเข้าหน้าเว็บ) — ตารางสัปดาห์ 2–9 ข้างบนจึงนับขาดไป
+
+| คาบที่เคยเป็น 🟡/❌ | ตอนนี้ | สถานะ |
+|---|---|---|
+| Blood transfusion (สัปดาห์ 2) | heme `H05` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| Epilepsy (2) | neuro `N03` 30 MCQ (session อื่น) | ✅ |
+| Derm infection (2) | derm `D04` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| AF (4) | cardio `24` +20 MCQ + MEQ 2 + SAQ 1 | ✅ |
+| Bleeding/Hemophilia/ITP (4) | heme `H06` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| STDs (4) | infect `I06` ulcer/syphilis 35 (session อื่น) + `I07` urethritis/PID 28 | ✅ |
+| Hepatitis (5) | gi `G04` 35 (session อื่น) | ✅ |
+| WBC disorder/LAD (5) | heme `H04` 34 (session อื่น) | ✅ |
+| CNS infection/CSF (5) | neuro `N04` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| Acute confusional state (6) | neuro `ACS` 45 (session อื่น) | ✅ |
+| Urethral catheterization (6) | nephro `CATH` 26 (session อื่น) | ✅ |
+| Abdominal pain (7) | gi `G05` 35 (session อื่น) | ✅ |
+| Cirrhosis (8) | gi `G07` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| Anemia/Thal/G6PD (9) | heme `H07` MCQ 25 + MEQ 2 + SAQ 1 | ✅ |
+| Dermatitis/Eczema/Urticaria/STD/Leprosy (9) | derm `D03` 47 (session อื่น) | ✅ |
+
+ข้อเก่าที่พักไว้ (`_held_unverified_papers.json`) ถูกตรวจ และไล่โพยใหม่ครบ MED28–35 + โพย SAQ แล้ว → เพิ่มเข้าคลัง 378 ข้อ (`data/live_add/past_papers_sweep.json`) ข้อที่เหลือในไฟล์พักซ้ำกับที่อยู่ในหน้าเว็บแล้ว
+
+**ยังค้าง**
+- รูปจากโพย SAQ (ECG/CXR/PBS/urine cast 26 ข้อ) — รอไฟล์ PDF
+- ตัวเลือกที่ถูกยังมักยาวที่สุดในชุดใหม่ (45–85% ของข้อ) — รอตัดสินใจว่าจะปรับไหม
