@@ -1,0 +1,475 @@
+{
+ "lec": "05",
+ "date": "Schwartz Ch 6, 9",
+ "title": "Surgical infections & wound healing",
+ "subtitle": "จะป้องกันและรักษาการติดเชื้อทางศัลยกรรมอย่างไร (prophylaxis, source control, necrotizing infection) และแผลหายอย่างไร อะไรทำให้แผลหายช้า",
+ "objectives": [
+  "เรียนจบแล้วต้องจัด wound class และบอกความเสี่ยงของ SSI พร้อมปัจจัยเสี่ยงของผู้ป่วยและการผ่าตัดได้",
+  "เรียนจบแล้วต้องสั่ง antibiotic prophylaxis ได้ถูกยา ถูกเวลา ถูกระยะเวลา และรักษา incisional SSI ได้",
+  "เรียนจบแล้วต้องแยก primary, secondary และ tertiary peritonitis และอธิบายหลัก source control กับระยะเวลาของ antibiotic",
+  "เรียนจบแล้วต้องแยก cellulitis, abscess และ necrotizing soft tissue infection และรู้ว่าเมื่อไรต้องผ่าตัดทันที",
+  "เรียนจบแล้วต้องอธิบายระยะของการหายของแผล บทบาทของ macrophage, collagen และ vitamin C",
+  "เรียนจบแล้วต้องระบุปัจจัยที่ทำให้แผลหายช้าและเลือกวิธีปิดแผล (primary, secondary, delayed primary closure) ได้เหมาะสม"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 6 Surgical infections; Ch 9 Wound healing",
+  "**CDC** Guideline for the prevention of surgical site infection (2017) · ASHP/IDSA/SIS/SHEA Clinical practice guidelines for antimicrobial prophylaxis in surgery (2013)",
+  "**Surgical Infection Society** revised guidelines on management of intra-abdominal infection (2017) · **STOP-IT** trial (NEJM 2015)",
+  "**IDSA** Practice guidelines for skin and soft tissue infections (2014) · ACIP tetanus wound management"
+ ],
+ "sections": [
+  {
+   "id": "n12-05-1",
+   "title": "Wound classes, SSI risk และ antibiotic prophylaxis",
+   "summary": "แผลผ่าตัดแต่ละ class เสี่ยงติดเชื้อแค่ไหน ใครควรได้ antibiotic prophylaxis ยาอะไร ให้เมื่อไรและนานเท่าไร",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 6 — Surgical site infections (Tables 6-6, 6-7, 6-8); prophylaxis principles",
+   "md": "### Surgical site infection (SSI) คืออะไร\n**SSI** = การติดเชื้อของเนื้อเยื่อ อวัยวะ หรือช่องว่างที่ถูกเปิดระหว่างผ่าตัด ภายใน **30 วัน** หลังผ่าตัด (ถึง 90 วันถ้าใส่ implant) แบ่งเป็น\n\n| ชนิด | ขอบเขต | ตัวอย่าง |\n|---|---|---|\n| **Superficial incisional** | ผิวหนัง + subcutaneous | แผลแดง บวม มีหนองที่แผล |\n| **Deep incisional** | fascia และกล้ามเนื้อ | fascial dehiscence ที่มีหนอง |\n| **Organ/space** | อวัยวะหรือช่องในร่างกายที่ผ่าตัด | intra-abdominal abscess, anastomotic leak |\n\n**การรักษา incisional SSI**: **เปิดแผลระบายหนอง** ก็เพียงพอ ไม่ต้องให้ antibiotic **ยกเว้น** มี cellulitis รอบแผลมากหรือมีอาการทั่วร่างกาย (SIRS/sepsis) · ปล่อยแผลหายแบบ secondary intention หรือใช้ **negative pressure wound therapy** ในแผลใหญ่ · เพาะเชื้อในผู้ที่อยู่โรงพยาบาลนาน (เสี่ยง MRSA/เชื้อดื้อยา)\n\n### Wound classification และอัตราการติดเชื้อ\n\n| Class | นิยาม | ตัวอย่าง | SSI (Schwartz) |\n|---|---|---|---|\n| **I Clean** | ไม่เปิดทางเดินอาหาร/หายใจ/ปัสสาวะ ไม่มีการอักเสบ (**I-D** = ใส่ prosthesis) | hernia repair, breast biopsy, thyroidectomy | **1–2%** |\n| **II Clean-contaminated** | เปิด hollow viscus อย่างควบคุมได้ ไม่มีการหกเลอะมาก | cholecystectomy, elective GI (ไม่ใช่ colon) · **colorectal** | 2.1–9.5% · colorectal 4–14% |\n| **III Contaminated** | แผลอุบัติเหตุใหม่, หกเลอะจากลำไส้มาก, ผิดหลัก aseptic มาก, ผ่าผ่านเนื้อเยื่ออักเสบที่ยังไม่เป็นหนอง | penetrating abdominal trauma, enterotomy ใน bowel obstruction, **acute nonperforated appendicitis ที่อักเสบ** | 3.4–13.2% |\n| **IV Dirty** | มีหนอง, อวัยวะทะลุ, แผลอุบัติเหตุที่ล่าช้ามีเนื้อตาย | **perforated diverticulitis**, ฝี, necrotizing soft tissue infection | 3.1–12.8% |\n\n- เชื้อก่อ SSI สะท้อน **flora ของตำแหน่งที่ผ่าตัด**: class I = เชื้อที่ผิวหนัง (**S. aureus**, coagulase-negative staph) · colorectal = skin flora + gram-negative + **anaerobe (B. fragilis)**\n- การปิดผิวหนังใน class III–IV เสี่ยง incisional SSI 25–50% → **ปล่อยผิวหนังเปิด/delayed primary closure** (ยกเว้น perforated appendicitis ที่ปิดได้ถ้าให้ antibiotic ครอบคลุม — SSI ราว 3–4%)\n\n### ปัจจัยเสี่ยงของ SSI\n\n| ผู้ป่วย | การผ่าตัด/ในห้องผ่าตัด |\n|---|---|\n| อายุมาก, **เบาหวาน/น้ำตาลสูง**, **อ้วน**, **สูบบุหรี่**, ขาดอาหาร, steroid/ภูมิคุ้มกันต่ำ, ไตวาย, ฉายแสง, **S. aureus carrier**, ติดเชื้อที่ตำแหน่งอื่น | ผ่าตัดนาน, open มากกว่า laparoscopic, เตรียมผิวไม่ดี, **antibiotic prophylaxis ไม่เหมาะสม** (ผิดเวลา/ไม่ redose), **hypothermia**, hypoxia, ให้เลือด, เนื้อตาย, สิ่งแปลกปลอม, โกนขนด้วยมีดโกน |\n\n### Antibiotic prophylaxis: ถูกยา ถูกเวลา สั้น\n**ข้อบ่งชี้**: class II ทุกราย · class I ที่ใส่ **prosthesis/mesh** หรือถ้าติดเชื้อแล้วผลร้ายแรง (หัวใจ หลอดเลือด สมอง กระดูก) · class III–IV ไม่ใช่ prophylaxis แต่เป็น **การรักษา**\n\n| หลัก | รายละเอียด |\n|---|---|\n| **ยา** | ครอบคลุม flora ของตำแหน่ง: **cefazolin** สำหรับ clean และ upper GI/biliary · colorectal → **cefazolin + metronidazole** หรือ cefoxitin/cefotetan · แพ้ β-lactam รุนแรง → clindamycin/vancomycin (+ aminoglycoside/aztreonam ถ้าต้องครอบคลุม gram-negative) |\n| **เวลา** | ให้ IV **ก่อนลงมีด ภายใน 60 นาที** (Schwartz key point: ภายใน 30 นาที) · vancomycin/fluoroquinolone เริ่มภายใน 120 นาที |\n| **ขนาด** | cefazolin 2 g (3 g ถ้าน้ำหนัก 120 kg ขึ้นไป) |\n| **Redose** | เมื่อผ่าตัดนานเกิน 2 เท่าของ half-life (cefazolin ทุก **4 ชม.**) หรือเสียเลือดมากกว่า 1,500 mL |\n| **หยุด** | ส่วนใหญ่ **dose เดียวพอ** · ไม่เกิน **24 ชม.** หลังผ่าตัด (CDC 2017: ไม่ให้เพิ่มหลังปิดแผลในการผ่าตัด clean/clean-contaminated) — การมีสายระบายไม่ใช่เหตุให้ยาต่อ |\n\nให้ยานานเกินไม่ลด SSI แต่เพิ่ม **C. difficile**, เชื้อดื้อยา และค่าใช้จ่าย\n\n### มาตรการอื่นที่ลด SSI (CDC 2017 / Schwartz)\n- อาบน้ำด้วยสบู่/antiseptic คืนก่อนผ่าตัด\n- **ไม่โกนขน** ถ้าจำเป็นใช้ **clipper** ในห้องผ่าตัด (มีดโกนทำให้ผิวเป็นแผลเล็ก ๆ)\n- เตรียมผิวด้วย **alcohol-based antiseptic** (เช่น chlorhexidine–alcohol)\n- คุม **น้ำตาลน้อยกว่า 200 mg/dL** ช่วงผ่าตัด (ทั้งผู้ป่วยเบาหวานและไม่เป็น)\n- **Normothermia** (อุ่นผู้ป่วย) · ให้ออกซิเจนเพียงพอ (CDC สนับสนุน FiO₂ สูงช่วงผ่าตัดในผู้ที่ปอดปกติ — หลักฐานยังขัดแย้ง)\n- หยุดสูบบุหรี่ก่อนผ่าตัด (อย่างน้อย 4 สัปดาห์), ลดน้ำหนัก, แก้ภาวะขาดอาหาร, รักษาการติดเชื้อที่อื่นก่อน elective surgery\n- decolonize S. aureus (mupirocin + chlorhexidine) ใน carrier ที่จะผ่าตัดหัวใจ/กระดูกใส่ implant\n- เทคนิคผ่าตัด: เนื้อเยื่อช้ำน้อย ไม่ทิ้ง dead space ไม่ทิ้งเนื้อตาย ลดเวลาผ่าตัด\n",
+   "pearls": [
+    "Class I clean 1–2% · II clean-contaminated · III contaminated · IV dirty (หนอง/ทะลุ)",
+    "Prophylaxis: cefazolin ภายใน 60 นาทีก่อนลงมีด · colorectal เพิ่ม metronidazole",
+    "Redose cefazolin ทุก 4 ชม. หรือเสียเลือดมากกว่า 1,500 mL · หยุดภายใน 24 ชม. (ส่วนใหญ่ dose เดียว)",
+    "Incisional SSI → เปิดแผลระบาย · antibiotic เฉพาะเมื่อมี cellulitis มาก/SIRS",
+    "Class III–IV: ปล่อยผิวหนังเปิดหรือ delayed primary closure",
+    "ลด SSI: clipper ไม่ใช่มีดโกน, alcohol-based prep, glucose น้อยกว่า 200, normothermia",
+    "เชื้อ SSI = flora ของตำแหน่งผ่าตัด: ผิวหนัง → S. aureus · colon → gram-negative + anaerobe"
+   ],
+   "items": [
+    {
+     "id": "N12-05-1-1",
+     "kind": "mcq",
+     "topic": "Wound classification",
+     "stem": "A 52-year-old man undergoes laparotomy for a sigmoid colon perforation from diverticulitis with purulent and feculent peritonitis in all four quadrants. A Hartmann procedure is performed. How is this surgical wound classified?",
+     "choices": [
+      "Class IV (dirty)",
+      "Class I (clean)",
+      "Class II (clean-contaminated)",
+      "Class III (contaminated)",
+      "Class I-D (clean with device)"
+     ],
+     "answer": 0,
+     "explain": "แผลที่ผ่าตัดในภาวะที่มี **หนองหรือ viscus ทะลุพร้อมการปนเปื้อนมาก** จัดเป็น **class IV (dirty)** · ผลทางปฏิบัติ: antibiotic เป็นการ **รักษา** (ไม่ใช่ prophylaxis) และควร **ไม่ปิดผิวหนัง** (ปล่อยเปิดหรือ delayed primary closure) เพราะการปิดแผลชนิดนี้เสี่ยง incisional SSI 25–50%\n- **Class I** ไม่มีการเปิดทางเดินอาหาร เช่น hernia repair\n- **Class II** เปิดทางเดินอาหารแบบควบคุมได้โดยไม่มีการหกเลอะมาก เช่น elective colectomy\n- **Class III** การหกเลอะครั้งใหญ่จากลำไส้/แผลอุบัติเหตุใหม่ แต่ยังไม่มีหนอง\n- **Class I-D** แผลสะอาดที่ใส่อุปกรณ์ เช่น mesh",
+     "pearl": "หนอง/อวัยวะทะลุ = class IV (dirty) → อย่าปิดผิวหนัง",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-1-2",
+     "kind": "mcq",
+     "topic": "Timing of antibiotic prophylaxis",
+     "stem": "A 60-year-old woman is scheduled for elective laparoscopic sigmoid colectomy for cancer. The anesthesia team asks when and how to give surgical antibiotic prophylaxis. Which plan is most appropriate?",
+     "choices": [
+      "Cefazolin plus metronidazole IV within 60 minutes before incision, redosing cefazolin if surgery exceeds 4 hours, and stopping within 24 hours",
+      "Cefazolin IV at the end of surgery and continued for 7 days",
+      "Oral ciprofloxacin starting 3 days before surgery and continued until the drains are removed",
+      "Vancomycin IV immediately after skin closure only",
+      "No antibiotic prophylaxis because the procedure is laparoscopic"
+     ],
+     "answer": 0,
+     "explain": "การผ่าตัด colorectal เป็น **class II** ต้องการ prophylaxis ที่ครอบคลุม **skin flora + gram-negative + anaerobe** เช่น **cefazolin + metronidazole** (หรือ cefoxitin) ให้ทาง IV **ภายใน 60 นาทีก่อนลงมีด** เพื่อให้ระดับยาในเนื้อเยื่อสูงขณะเกิดการปนเปื้อน, **redose** cefazolin ทุก 4 ชม. หรือเมื่อเสียเลือดมากกว่า 1,500 mL และ **หยุดภายใน 24 ชม.** (มักให้ dose เดียว)\n- **ให้หลังผ่าตัดเสร็จและต่อ 7 วัน** ผิดทั้งเวลา (ยาต้องอยู่ในเนื้อเยื่อก่อนการปนเปื้อน) และระยะเวลา\n- **Ciprofloxacin ทางปากจนถอด drain** ไม่ครอบคลุม anaerobe และการมีสายระบายไม่ใช่ข้อบ่งชี้ให้ยาต่อ\n- **Vancomycin หลังปิดแผล** ผิดเวลาและไม่ครอบคลุม gram-negative/anaerobe\n- **ไม่ให้เพราะส่องกล้อง** ผิด laparoscopic colectomy ยังเปิดลำไส้",
+     "pearl": "Prophylaxis: ถูกยา (ตาม flora) · ภายใน 60 นาทีก่อนลงมีด · redose · หยุดใน 24 ชม.",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-1-3",
+     "kind": "mcq",
+     "topic": "Management of superficial incisional SSI",
+     "stem": "A 45-year-old woman is on postoperative day 6 after an open appendectomy for nonperforated appendicitis. The wound is red and fluctuant over 3 cm with purulent drainage, but there is no surrounding spreading cellulitis. Temperature 37.6°C, heart rate 84/min, WBC 10,800/µL. What is the most appropriate management?",
+     "choices": [
+      "Open the wound, drain the pus and pack or dress it without systemic antibiotics",
+      "Start oral antibiotics and keep the skin closed",
+      "Start IV carbapenem for 14 days",
+      "Return to the operating room for laparotomy",
+      "Apply a warm compress and reassess in one week"
+     ],
+     "answer": 0,
+     "explain": "**Superficial incisional SSI** ที่มีหนองเฉพาะที่ การรักษาหลักคือ **เปิดแผลระบายหนอง** แล้วปล่อยหายแบบ secondary intention (ทำแผล หรือ NPWT ถ้าแผลใหญ่) — Schwartz ระบุว่าการระบายเพียงอย่างเดียวพอ ให้ antibiotic เฉพาะเมื่อมี **cellulitis รอบแผลมาก หรือมีอาการทั่วร่างกาย (SIRS/sepsis)** ซึ่งผู้ป่วยรายนี้ไม่มี\n- **ยาทางปากโดยไม่ระบายหนอง** ยาเข้าโพรงหนองได้น้อย แผลไม่หาย\n- **Carbapenem 14 วัน** เกินความจำเป็นและเพิ่มเชื้อดื้อยา\n- **Laparotomy** ใช้เมื่อสงสัย organ/space SSI ที่ระบายผ่านผิวหนังไม่ได้\n- **ประคบอุ่นแล้วรอ** ทำให้หนองลุกลาม",
+     "pearl": "Incisional SSI = เปิดแผลระบาย · antibiotic เฉพาะ cellulitis มาก/SIRS",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-1-4",
+     "kind": "mcq",
+     "topic": "Measures to reduce SSI",
+     "stem": "A surgical team is reviewing its protocol to reduce surgical site infections after elective abdominal operations. Which practice is supported by current evidence?",
+     "choices": [
+      "Maintaining perioperative blood glucose below 200 mg/dL and normothermia",
+      "Shaving the operative site with a razor the night before surgery",
+      "Continuing prophylactic antibiotics until all drains are removed",
+      "Routinely soaking mesh in antibiotic solution as the main preventive strategy",
+      "Allowing intraoperative hypothermia to reduce metabolic demand"
+     ],
+     "answer": 0,
+     "explain": "แนวทาง **CDC 2017** และ Schwartz: คุม **glucose น้อยกว่า 200 mg/dL** ช่วงผ่าตัดในผู้ป่วยทุกคน (น้ำตาลสูงกด neutrophil) และรักษา **normothermia** (hypothermia ทำให้หลอดเลือดใต้ผิวหนังหด ออกซิเจนในเนื้อเยื่อต่ำ ภูมิคุ้มกันลด) ร่วมกับ prophylaxis ที่ถูกเวลา, clipper, alcohol-based skin prep\n- **โกนด้วยมีดโกนคืนก่อน** ทำให้เกิดรอยถลอกที่เชื้อเจริญได้ — ถ้าต้องกำจัดขนให้ใช้ clipper ในห้องผ่าตัด\n- **ให้ยาจนถอด drain** ไม่ลด SSI แต่เพิ่มเชื้อดื้อยาและ C. difficile\n- **แช่ mesh ใน antibiotic** ไม่มีหลักฐานชัดเจนว่าลดการติดเชื้อ\n- **ปล่อยให้ตัวเย็น** เพิ่ม SSI ไม่ใช่ลด",
+     "pearl": "Glucose น้อยกว่า 200 + normothermia + clipper + prophylaxis ถูกเวลา = ลด SSI",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-05-2",
+   "title": "Intra-abdominal infection และ source control",
+   "summary": "จะแยก peritonitis แต่ละชนิดอย่างไร ทำไม source control จึงสำคัญกว่ายา และควรให้ antibiotic นานเท่าไร",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 6 — Source control; appropriate use of antimicrobial agents; intra-abdominal infections; organ-specific infections",
+   "md": "### หลักการรักษาการติดเชื้อทางศัลยกรรม\nSchwartz สรุปองค์ประกอบ 3 อย่างที่ต้องทำพร้อมกัน: **resuscitation**, **antibiotics** และ **source control**\n- **Source control** = ระบายหนองทั้งหมด, ตัด/debride เนื้อเยื่อตายหรือติดเชื้อ, เอาสิ่งแปลกปลอมออก และ **แก้สาเหตุต้นตอ** (ปิดรูทะลุ ตัดลำไส้ที่ทะลุ)\n- **Abscess ที่มีผนังชัด** → ระบาย (percutaneous หรือผ่าตัด) · **การรั่วต่อเนื่อง** (ลำไส้ทะลุ) หรือ **การติดเชื้อลุกลามเร็ว** (necrotizing) → **ผ่าตัดทันที**\n- การติดเชื้อทางศัลยกรรมที่รุนแรง **แทบไม่หายด้วยยาอย่างเดียว**\n- ล่าช้าในการทำ source control → ผลลัพธ์แย่ลง (SSC: ภายใน 6–12 ชม. เมื่อทำได้)\n\n### ชนิดของ peritonitis\n\n| ชนิด | สาเหตุ | เชื้อ | การรักษา |\n|---|---|---|---|\n| **Primary (spontaneous bacterial peritonitis)** | ไม่มีรูทะลุ — **ascites (ตับแข็ง)**, peritoneal dialysis | **monomicrobial**: E. coli, Klebsiella, S. pneumoniae · PD → gram-positive | **antibiotic** (เช่น cefotaxime/ceftriaxone) · วินิจฉัยด้วย ascitic **PMN มากกว่า 250/mm³** · **ไม่ผ่าตัด** |\n| **Secondary** | อวัยวะทะลุ/อักเสบ: appendicitis, peptic ulcer perforation, diverticulitis, ลำไส้ขาดเลือด, anastomotic leak, trauma | **polymicrobial** gram-negative (E. coli) + anaerobe (**B. fragilis**) ± enterococcus | **source control + antibiotic** ครอบคลุม aerobe + anaerobe |\n| **Tertiary (persistent)** | peritonitis ที่ไม่หายหลังรักษา secondary อย่างเหมาะสม มักในผู้ป่วยภูมิคุ้มกันต่ำ | เชื้อดื้อยา/ฉวยโอกาส: **Enterococcus, S. epidermidis, Candida, Pseudomonas** | ยาตามเพาะเชื้อ, ประคับประคอง · ตายมากกว่า 50% |\n\n- ลักษณะสำคัญ: SBP ผู้ป่วยตับแข็งปวดท้องทั่ว ๆ ไม่มีจุดกดเจ็บชัด และ **CT ไม่พบแหล่งที่ผ่าตัดได้** · ถ้าน้ำในท้องมีหลายเชื้อ, protein สูง, glucose ต่ำ, LDH สูง หรือมีลมอิสระ → นึกถึง **secondary** peritonitis ที่ต้องผ่าตัด\n- Secondary peritonitis ที่ทำ source control ได้ผล อัตราตายราว **5–6%** · ถ้าคุมแหล่งไม่ได้ อัตราตาย **มากกว่า 40%**\n\n### Antibiotic สำหรับ intra-abdominal infection: ระยะเวลาสั้นพอ\n\n| สถานการณ์ (SIS 2016 / Schwartz) | ระยะเวลาหลัง source control |\n|---|---|\n| Traumatic bowel perforation ที่ผ่าตัดภายใน 12 ชม. · gastroduodenal perforation ผ่าตัดภายใน 24 ชม. · ลำไส้ขาดเลือดไม่ทะลุ · **gangrenous appendicitis/cholecystitis ที่ไม่ทะลุ** | **ไม่เกิน 24 ชม.** |\n| Established infection เช่น **perforated appendicitis**, ฝี, peritonitis | ราว **4 วัน** (**STOP-IT trial** 2015: 4 วันได้ผลเท่ากับให้จนไข้/WBC หาย) |\n| ระบายฝีผ่านผิวหนัง (คนไข้ตอบสนองดี) | 3–5 วัน |\n\n- **Empiric therapy**: ครอบคลุม gram-negative + anaerobe เช่น ceftriaxone + metronidazole, piperacillin–tazobactam · ผู้ป่วยรุนแรง/hospital-acquired → ครอบคลุม Pseudomonas, enterococcus, ESBL\n- เปลี่ยนเป็นยากินเมื่อ ileus หาย · ผลเพาะเชื้อสำคัญน้อยกว่าการตอบสนองทางคลินิกใน polymicrobial infection\n- ถ้าให้ยาครบแล้ว **ไม่มีไข้ (น้อยกว่า 38°C), WBC ปกติ, ไม่มี band form** → แทบไม่มีการติดเชื้อหลงเหลือ · ถ้ายังไม่ดีขึ้น → **หา source ที่ยังคุมไม่ได้** (ฝีค้าง, leak) ด้วย CT ไม่ใช่แค่เปลี่ยนยา\n\n### Intra-abdominal abscess และการติดเชื้อเฉพาะอวัยวะ\n- อาการ: ไข้ต่อเนื่อง ileus ยืดเยื้อ WBC สูง **วันที่ 5–7 หลังผ่าตัด** → **CT with contrast**\n- ส่วนใหญ่ระบายด้วย **CT/US-guided percutaneous drainage** · ผ่าตัดเมื่อ: หลายฝี, อยู่ใกล้อวัยวะสำคัญจนเจาะไม่ปลอดภัย, มี **การรั่วต่อเนื่อง** (enteric leak), ระบายไม่สำเร็จ\n- ถอดสายเมื่อโพรงยุบ output **น้อยกว่า 10–20 mL/วัน** ไม่มีการรั่ว และผู้ป่วยดีขึ้น\n- **Pyogenic liver abscess**: E. coli, **Klebsiella pneumoniae** (เบาหวาน) · ในไทยต้องนึกถึง **melioidosis** และ amebic liver abscess (anchovy-sauce pus, ตอบสนองต่อ metronidazole) · ฝีเล็กหลายก้อน (น้อยกว่า 1 cm) → antibiotic 4–6 สัปดาห์ · ฝีใหญ่ → percutaneous drainage\n- **Infected pancreatic necrosis**: สงสัยเมื่อ sepsis ไม่หายหรือกลับเป็นใหม่ 2–3 สัปดาห์ หลัง severe pancreatitis หรือพบ **ฟองแก๊สใน necrosis** บน CT · **ไม่ให้ prophylactic antibiotic** ใน necrotizing pancreatitis · ใช้ **step-up approach** (percutaneous/endoscopic drainage → minimally invasive necrosectomy) และ **เลื่อนการผ่าตัดไปหลัง 4 สัปดาห์** ถ้าทำได้ (ผ่าตัดใน 2 สัปดาห์แรกตายมากกว่า)\n",
+   "pearls": [
+    "Source control = ระบายหนอง + debride + เอาสิ่งแปลกปลอมออก + แก้ต้นเหตุ",
+    "Primary peritonitis (SBP): monomicrobial, ascitic PMN มากกว่า 250 → antibiotic ไม่ผ่าตัด",
+    "Secondary peritonitis: polymicrobial (E. coli + B. fragilis) → source control + ยาครอบคลุม anaerobe",
+    "Tertiary peritonitis: Enterococcus, Candida, S. epidermidis, Pseudomonas · ตายมากกว่า 50%",
+    "STOP-IT: antibiotic ราว 4 วันหลัง source control เพียงพอ",
+    "ไข้หลังผ่าตัดวันที่ 5–7 + ileus → CT หา abscess → percutaneous drainage",
+    "Infected pancreatic necrosis: step-up approach และเลื่อนการผ่าตัดถ้าทำได้"
+   ],
+   "items": [
+    {
+     "id": "N12-05-2-1",
+     "kind": "mcq",
+     "topic": "Spontaneous bacterial peritonitis versus secondary peritonitis",
+     "stem": "A 54-year-old man with alcoholic cirrhosis and tense ascites presents with fever 38.3°C, diffuse mild abdominal tenderness and new confusion. CT shows ascites without free air, abscess or bowel abnormality. Paracentesis: 620 PMN/mm³, Gram stain shows a single gram-negative rod, total protein 0.8 g/dL, glucose 110 mg/dL. What is the most appropriate management?",
+     "choices": [
+      "Intravenous third-generation cephalosporin without surgery",
+      "Emergency exploratory laparotomy",
+      "Percutaneous drainage of the ascites with a pigtail catheter alone",
+      "Diagnostic laparoscopy and peritoneal lavage",
+      "Observation and repeat paracentesis in 48 hours"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยตับแข็งที่มี ascites, PMN มากกว่า **250/mm³**, เชื้อ **ชนิดเดียว** (monomicrobial), protein ต่ำ glucose ปกติ และ **CT ไม่พบแหล่งที่ผ่าตัดได้** = **primary (spontaneous bacterial) peritonitis** รักษาด้วย **antibiotic** (เช่น cefotaxime/ceftriaxone ± albumin) **ไม่ต้องผ่าตัด** · การผ่าตัดในผู้ป่วยตับแข็งรุนแรงเสี่ยงสูงมาก\n- **Laparotomy** สำหรับ secondary peritonitis ที่มีรูทะลุ — หากน้ำในท้องมีหลายเชื้อ protein สูง glucose ต่ำ หรือมีลมอิสระ จึงนึกถึง\n- **Pigtail drainage อย่างเดียว** ไม่ใช่การรักษา SBP\n- **Diagnostic laparoscopy** ไม่จำเป็นและเสี่ยง\n- **สังเกตอาการ** ทำให้การรักษาล่าช้า เสี่ยง sepsis และไตวาย",
+     "pearl": "SBP = monomicrobial + PMN มากกว่า 250 + ไม่มีแหล่งผ่าตัด → antibiotic ไม่ผ่าตัด",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-2-2",
+     "kind": "mcq",
+     "topic": "Duration of antibiotics after source control",
+     "stem": "A 29-year-old woman undergoes laparoscopic appendectomy for perforated appendicitis with localized purulent fluid, which is suctioned. Postoperatively she improves steadily. What is the most appropriate duration of antibiotic therapy after this adequate source control?",
+     "choices": [
+      "About 4 days",
+      "A single preoperative dose only",
+      "Until the WBC count is completely normal, regardless of duration",
+      "14 days intravenously",
+      "6 weeks orally"
+     ],
+     "answer": 0,
+     "explain": "**Perforated appendicitis** เป็น established intra-abdominal infection ที่ได้ **source control เพียงพอแล้ว** แนวทาง SIS 2016 และ **STOP-IT trial** (Sawyer 2015) พบว่าการให้ antibiotic ระยะสั้นคงที่ **ราว 4 วัน** ให้ผลเท่ากับการให้จนไข้/WBC/ileus หาย โดยใช้ยาน้อยกว่า · ถ้ายังไม่ดีขึ้นหลังครบยา ให้หาฝีหรือการรั่วด้วย CT\n- **Single dose** เหมาะกับ prophylaxis หรือ appendicitis ที่ไม่ทะลุ (ให้ไม่เกิน 24 ชม. สำหรับ gangrenous ไม่ทะลุ)\n- **ให้จน WBC ปกติ** เป็นแนวเก่าที่ทำให้ใช้ยานานเกินจำเป็น\n- **14 วัน IV** นานเกิน เพิ่มเชื้อดื้อยาและ C. difficile\n- **6 สัปดาห์** ใช้กับฝีในตับหลายก้อนเล็ก ไม่ใช่กรณีนี้",
+     "pearl": "Complicated IAI + source control ดี → antibiotic ~4 วัน (STOP-IT)",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-2-3",
+     "kind": "mcq",
+     "topic": "Postoperative intra-abdominal abscess",
+     "stem": "A 63-year-old man is on postoperative day 7 after sigmoid colectomy with primary anastomosis for perforated diverticulitis. He has persistent fever 38.6°C, prolonged ileus and WBC 17,000/µL, but he is hemodynamically stable without generalized peritonitis. CT shows a single 6-cm rim-enhancing pelvic collection accessible through the gluteal window, with no free contrast leak. What is the best next step?",
+     "choices": [
+      "CT-guided percutaneous drainage with continued antibiotics",
+      "Immediate relaparotomy and end colostomy",
+      "Change antibiotics to a carbapenem and observe without drainage",
+      "Start antifungal therapy",
+      "Discharge home on oral antibiotics"
+     ],
+     "answer": 0,
+     "explain": "ฝีหลังผ่าตัดก้อนเดียวที่ **เข้าถึงได้ด้วยเข็ม** ในผู้ป่วยที่ **hemodynamics คงที่** และไม่มีการรั่วของ anastomosis ชัดเจน → **CT-guided percutaneous drainage** เป็นวิธี source control ที่รุกล้ำน้อยและได้ผล ร่วมกับ antibiotic ระยะสั้น · ถอดสายเมื่อโพรงยุบและ output น้อยกว่า 10–20 mL/วัน\n- **Relaparotomy** สงวนไว้เมื่อมีหลายฝี ฝีที่เจาะไม่ได้ การรั่วต่อเนื่อง generalized peritonitis หรือระบายไม่สำเร็จ\n- **เปลี่ยนยาโดยไม่ระบาย** ยาเข้าโพรงหนองได้น้อย ผลมักล้มเหลว\n- **Antifungal** ไม่มีข้อบ่งชี้เบื้องต้น\n- **ให้กลับบ้าน** ไม่เหมาะเพราะยังมี sepsis จากฝีที่ยังไม่ได้ระบาย",
+     "pearl": "ฝีหลังผ่าตัดก้อนเดียวเจาะได้ + คนไข้ stable → percutaneous drainage",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-2-4",
+     "kind": "mcq",
+     "topic": "Tertiary peritonitis organisms",
+     "stem": "A 58-year-old kidney transplant recipient on immunosuppression underwent two laparotomies for colonic perforation and has received 3 weeks of broad-spectrum antibiotics. He still has fever and diffuse low-grade peritonitis without a new leak or drainable collection. Peritoneal fluid culture is most likely to grow which organisms?",
+     "choices": [
+      "Enterococcus, Candida, coagulase-negative staphylococci and Pseudomonas",
+      "Streptococcus pneumoniae alone",
+      "Bacteroides fragilis and Escherichia coli only, fully sensitive",
+      "Neisseria gonorrhoeae",
+      "Mycobacterium tuberculosis"
+     ],
+     "answer": 0,
+     "explain": "**Tertiary (persistent) peritonitis** เกิดในผู้ป่วยภูมิคุ้มกันต่ำที่ได้รับการรักษา secondary peritonitis อย่างเหมาะสมแล้วแต่การติดเชื้อยังไม่หาย เชื้อที่พบมักเป็นเชื้อ **ดื้อยา/ฉวยโอกาส** ที่ถูกคัดเลือกจากการใช้ antibiotic นาน: **Enterococcus faecalis/faecium, Staphylococcus epidermidis, Candida albicans, Pseudomonas aeruginosa** · อัตราตายมากกว่า 50% รักษาตามผลเพาะเชื้อและประคับประคอง\n- **S. pneumoniae อย่างเดียว** เป็นเชื้อของ primary peritonitis\n- **B. fragilis + E. coli ที่ไวต่อยา** เป็นเชื้อของ secondary peritonitis ระยะแรก\n- **N. gonorrhoeae** ทำให้ pelvic peritonitis/Fitz-Hugh–Curtis ในหญิง\n- **TB peritonitis** มีบริบทต่างกัน (ascites lymphocyte สูง, เรื้อรัง)",
+     "pearl": "Tertiary peritonitis = Enterococcus, Candida, S. epidermidis, Pseudomonas",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-05-3",
+   "title": "Skin and soft-tissue infections และ necrotizing infection",
+   "summary": "จะแยก cellulitis, abscess และ necrotizing soft tissue infection ได้อย่างไร และทำไม NSTI ต้องผ่าตัดทันทีโดยไม่รอภาพถ่ายรังสี",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 6 — Infections of the skin and soft tissue; necrotizing soft tissue infection",
+   "md": "### Skin and soft-tissue infection (SSTI): ต้องผ่าตัดหรือไม่\n\n| ชนิด | ชั้นที่เกี่ยวข้อง | เชื้อหลัก | การรักษา |\n|---|---|---|---|\n| **Erysipelas** | dermis ชั้นบน + lymphatics | **Streptococcus pyogenes** | antibiotic (penicillin) · ขอบนูนแดงชัด |\n| **Cellulitis** | dermis + subcutaneous | Streptococcus, S. aureus | **antibiotic** + ยกสูง · หาแหล่ง (แผล เชื้อราที่เท้า) |\n| **Furuncle/carbuncle/abscess** | รูขุมขน/ subcutaneous มีหนองเป็นก้อน | **S. aureus** (รวม CA-MRSA) | **incision & drainage** · antibiotic เมื่อมี cellulitis มาก, SIRS, ภูมิต้านทานต่ำ |\n| **Necrotizing soft tissue infection (NSTI)** | fascia ± กล้ามเนื้อ (myonecrosis) | polymicrobial หรือ monomicrobial | **ผ่าตัด debride ทันที** + broad-spectrum antibiotic |\n\n- Abscess ที่ระบายแล้วไม่หาย/เป็นซ้ำ → นึกถึง **community-acquired MRSA** (เพาะเชื้อ, ปรับยา เช่น clindamycin/doxycycline/TMP-SMX/vancomycin)\n- Ultrasound ช่วยแยก cellulitis กับ abscess ที่ต้องระบาย\n\n### Necrotizing soft tissue infection: รู้เร็ว ผ่าตัดเร็ว\nผู้ป่วยเสี่ยง: **เบาหวาน**, อายุมาก, ภูมิคุ้มกันต่ำ, โรคหลอดเลือดส่วนปลาย, สุรา/ตับแข็ง, ใช้ยาเสพติดฉีด — แต่ group A strep เกิดในคนแข็งแรงได้ · ตำแหน่งบ่อย: แขนขา > perineum > ลำตัว\n\n| ชนิด | เชื้อ | บริบท |\n|---|---|---|\n| **Type I (polymicrobial)** — พบบ่อยที่สุด | gram-positive + gram-negative + anaerobe | เบาหวาน, หลังผ่าตัด, **Fournier's gangrene** (perineum/scrotum) |\n| **Type II (monomicrobial)** | **Group A Streptococcus** ± S. aureus | คนแข็งแรง แผลเล็ก · toxic shock |\n| Clostridial myonecrosis (gas gangrene) | **C. perfringens** (C. septicum ในมะเร็งลำไส้ใหญ่) | แผลสกปรก/crush · แก๊สมาก |\n| Marine/ตับแข็ง (บางตำราเรียก type III) | **Vibrio vulnificus**, Aeromonas | กินอาหารทะเลดิบ/แผลสัมผัสน้ำทะเล–น้ำจืด ในผู้ป่วยตับแข็ง — พบได้ในไทย |\n\n**อาการที่ต้องสงสัย** (ไม่จำเป็นต้องครบ)\n- **ปวดมากเกินกว่าที่เห็น (pain out of proportion)** — สัญญาณแรกที่สำคัญที่สุด\n- บวมตึงเกินขอบแดง, ผิวเปลี่ยนเป็นสีบรอนซ์/ม่วง, **bullae/blebs** (โดยเฉพาะมีเลือด), ผิวชา (เส้นประสาทตาย), **crepitus**\n- **\"Dishwater pus\"** สีเทาขุ่นไม่ข้น, ลุกลามเร็วเป็นชั่วโมง, **sepsis/septic shock** โดยหาสาเหตุไม่ได้\n- ในการผ่าตัด: fascia เทาบวม ไม่มีเลือดออก แยกชั้นด้วยนิ้วได้ง่าย (**positive finger test**)\n\n### วินิจฉัย: อย่าให้ภาพถ่ายรังสีทำให้ผ่าตัดช้า\n- Schwartz: ถ้าสงสัยจริงจังจากอาการ **ไม่ต้องรอภาพถ่ายรังสี** — ไปห้องผ่าตัดเพื่อ explore (incision ดูชั้น fascia โดยตรง) ซึ่งเป็นทั้งการวินิจฉัยและรักษา\n- CT อาจเห็นแก๊สตามชั้น fascia/การบวมของ fascia (ใช้ได้เมื่อผู้ป่วยคงที่และวินิจฉัยไม่ชัด) · plain film เห็นแก๊สได้แต่ไวน้อย\n- **LRINEC score** ช่วยคัดกรองแต่ **ไม่ไวพอที่จะตัดโรคออก**:\n\n| ตัวแปร | คะแนน |\n|---|---|\n| CRP ≥150 mg/L | 4 |\n| WBC 15–25 / มากกว่า 25 ×10³/µL | 1 / 2 |\n| Hb 11–13.5 / น้อยกว่า 11 g/dL | 1 / 2 |\n| Na น้อยกว่า 135 mmol/L | 2 |\n| Creatinine มากกว่า 1.6 mg/dL | 2 |\n| Glucose มากกว่า 180 mg/dL | 1 |\n\nคะแนน ≥6 สงสัย, ≥8 โอกาสสูง\n\n### รักษา NSTI\n1. **Resuscitation** แบบ septic shock\n2. **Radical surgical debridement ทันที** — ตัดเนื้อเยื่อที่ตายทั้งหมดจนถึงเนื้อดีที่มีเลือดออก (อาจต้องตัดแขนขา) · การ debride ไม่หมดเพิ่มอัตราตาย\n3. **กลับเข้าห้องผ่าตัดซ้ำตามกำหนด (second look) ใน 24 ชม.** และทุกครั้งจนไม่มีเนื้อตายเพิ่ม\n4. **Antibiotic** broad-spectrum: เช่น **vancomycin + piperacillin–tazobactam/carbapenem** + **clindamycin** (ยับยั้งการสร้าง toxin ของ streptococcus/clostridium) · Schwartz เสนอ **penicillin G ขนาดสูง** สำหรับ clostridia · ปรับตามผลเพาะเชื้อ\n5. Fournier's: debride ± colostomy เพื่อเบี่ยงอุจจาระ, suprapubic cystostomy ตามความจำเป็น\n6. Hyperbaric oxygen: หลักฐานจำกัด อาจใช้ใน clostridial infection — **ห้ามทำให้การผ่าตัดล่าช้า**\n- อัตราตาย: ถ้าไม่ได้รักษาเร็ว **80–100%** · แม้รักษาเร็วยัง **16–24%**\n\n### บาดแผลจากอุบัติเหตุและการป้องกันบาดทะยัก\n- ล้างแผลด้วยน้ำสะอาดปริมาณมาก ตัดเนื้อตาย เอาสิ่งแปลกปลอมออก · แผลสะอาดอายุน้อยกว่า 6–8 ชม. (หน้า/หนังศีรษะนานกว่านั้นได้) เย็บปิดได้ · แผลสกปรก/ถูกกัด/เก่า → ปล่อยเปิดหรือ delayed primary closure\n- **Tetanus prophylaxis** (CDC/ACIP): แผลสะอาดเล็กน้อย → Td/Tdap ถ้าวัคซีนครั้งสุดท้ายนานกว่า **10 ปี** · **แผลสกปรก/tetanus-prone** → ถ้านานกว่า **5 ปี** · ถ้าไม่เคยได้ครบ 3 เข็มหรือไม่ทราบ → วัคซีน + **TIG** สำหรับแผลสกปรก\n- บริบทไทย: แผลจากการทำนา/ดิน (เสี่ยง melioidosis, tetanus), สุนัข/แมวกัด (ล้างแผลมาก ๆ, amoxicillin–clavulanate, rabies PEP ตามแนวทาง)\n",
+   "pearls": [
+    "Cellulitis/erysipelas → antibiotic · abscess → incision & drainage",
+    "NSTI: pain out of proportion, บวมเกินขอบแดง, bullae, crepitus, dishwater pus, sepsis",
+    "สงสัย NSTI จริงจัง → ไปห้องผ่าตัดทันที ไม่รอ imaging",
+    "Type I polymicrobial (เบาหวาน, Fournier) · Type II group A strep · Vibrio ในผู้ป่วยตับแข็ง",
+    "รักษา: radical debridement + second look 24 ชม. + vancomycin + pip-tazo/carbapenem + clindamycin",
+    "LRINEC ≥6 สงสัย แต่คะแนนต่ำตัดโรคไม่ได้",
+    "Tetanus: แผลสกปรก + วัคซีนนานกว่า 5 ปี → Td/Tdap · ไม่เคยครบ → + TIG"
+   ],
+   "mnem": [
+    {
+     "name": "NSTI red flags: 'PAIN-BCD'",
+     "what": "สัญญาณที่ต้องคิดถึง necrotizing soft tissue infection",
+     "lines": [
+      [
+       "PAIN",
+       "ปวดมากเกินกว่าที่เห็น"
+      ],
+      [
+       "B",
+       "Bullae/ผิวเปลี่ยนสีบรอนซ์–ม่วง, บวมตึงเกินขอบแดง"
+      ],
+      [
+       "C",
+       "Crepitus"
+      ],
+      [
+       "D",
+       "Dishwater pus + ชา + sepsis ลุกลามเร็ว"
+      ]
+     ],
+     "note": "ข้อใดข้อหนึ่ง = explore ในห้องผ่าตัด"
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-05-3-1",
+     "kind": "mcq",
+     "topic": "Necrotizing fasciitis — immediate surgery",
+     "stem": "A 56-year-old man with poorly controlled diabetes has severe pain in his left thigh 2 days after a minor abrasion while working in a rice field. The pain is far worse than the mild erythema suggests. There are hemorrhagic bullae and the skin is tense beyond the area of erythema. Temperature 39.1°C, BP 92/56 mmHg, heart rate 124/min. What is the most appropriate next step?",
+     "choices": [
+      "Resuscitation, broad-spectrum antibiotics and immediate operative exploration with debridement",
+      "MRI of the thigh to confirm fascial involvement before surgery",
+      "Oral cephalexin and review in 48 hours",
+      "Needle aspiration of the bullae for culture and await the result",
+      "Hyperbaric oxygen therapy before considering surgery"
+     ],
+     "answer": 0,
+     "explain": "**Pain out of proportion**, **hemorrhagic bullae**, บวมตึงเกินขอบแดง และ **septic shock** ในผู้ป่วยเบาหวาน = **necrotizing soft tissue infection** จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ · Schwartz เน้นว่าการวินิจฉัยใช้อาการทางคลินิก และ **ไม่ควรรอภาพถ่ายรังสี** ต้อง resuscitate, ให้ broad-spectrum antibiotic (vancomycin + piperacillin–tazobactam/carbapenem + clindamycin) และ **ผ่าตัด explore/debride ทันที** แล้วกลับมาดูซ้ำใน 24 ชม. (ในไทยต้องนึกถึง melioidosis และ Aeromonas ด้วย)\n- **MRI ก่อน** ทำให้ผ่าตัดล่าช้า อัตราตายเพิ่มตามเวลา\n- **Cephalexin ทางปาก** ไม่เหมาะกับผู้ป่วยช็อกและไม่แก้เนื้อตาย\n- **รอผลเพาะเชื้อ** เสียเวลาสำคัญ\n- **Hyperbaric oxygen** หลักฐานจำกัดและห้ามทำให้การผ่าตัดช้า",
+     "pearl": "สงสัย NSTI + sepsis → ผ่าตัด debride ทันที ไม่รอ imaging",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-3-2",
+     "kind": "mcq",
+     "topic": "Abscess versus cellulitis management",
+     "stem": "A 24-year-old healthy man has a 4-cm tender, fluctuant, erythematous swelling on his buttock for 4 days with minimal surrounding erythema. Temperature 37.4°C, heart rate 82/min. Ultrasound confirms a subcutaneous fluid collection. What is the most appropriate treatment?",
+     "choices": [
+      "Incision and drainage",
+      "Oral antibiotics alone for 10 days",
+      "Intravenous vancomycin and admission",
+      "Warm compresses only",
+      "Surgical excision of the entire lesion with primary closure"
+     ],
+     "answer": 0,
+     "explain": "ก้อนหนองใต้ผิวหนัง (**cutaneous abscess**, มักเกิดจาก S. aureus) ที่มี fluctuation และยืนยันด้วย ultrasound → การรักษาหลักคือ **incision and drainage** · antibiotic ให้เพิ่มเมื่อมี cellulitis รอบ ๆ มาก, มีอาการทั่วร่างกาย, ภูมิคุ้มกันต่ำ, ระบายไม่หมด หรือเป็นซ้ำ (สงสัย CA-MRSA ให้เพาะเชื้อ)\n- **Antibiotic อย่างเดียว** ยาเข้าโพรงหนองได้ไม่ดี ก้อนมักไม่หาย\n- **IV vancomycin + admit** เกินความจำเป็นในผู้ป่วยไม่มีอาการทั่วร่างกาย\n- **ประคบอุ่นอย่างเดียว** อาจใช้กับ furuncle เล็กที่ยังไม่เป็นหนอง แต่ก้อน 4 cm ที่มีหนองต้องระบาย\n- **Excision + primary closure** เป็นการผ่าตัดที่เกินจำเป็นและการเย็บปิดแผลติดเชื้อทำให้หนองค้าง",
+     "pearl": "Abscess → I&D · cellulitis → antibiotic",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-3-3",
+     "kind": "mcq",
+     "topic": "Fournier gangrene",
+     "stem": "A 64-year-old man with diabetes and a recent perianal abscess presents with scrotal pain and swelling for 1 day. The scrotal skin is dusky with crepitus extending to the perineum and lower abdominal wall, and there is a foul odor. He is febrile and tachycardic. Which description of the likely microbiology and treatment is correct?",
+     "choices": [
+      "Polymicrobial (type I) necrotizing infection requiring urgent radical debridement and broad-spectrum antibiotics",
+      "Monomicrobial Neisseria gonorrhoeae infection treated with ceftriaxone alone",
+      "Viral orchitis treated with analgesia and scrotal support",
+      "Testicular torsion requiring detorsion and orchidopexy",
+      "Candida intertrigo treated with topical antifungal"
+     ],
+     "answer": 0,
+     "explain": "**Fournier's gangrene** คือ necrotizing fasciitis ของ perineum/scrotum มักเริ่มจากแหล่งในทวารหนัก (perianal abscess) หรือทางเดินปัสสาวะ ในผู้ป่วยเบาหวาน เป็น **type I (polymicrobial)**: gram-negative (E. coli), anaerobe (Bacteroides), streptococcus/staphylococcus · **crepitus** และกลิ่นเหม็นจากแก๊สของ anaerobe · ต้อง resuscitate, broad-spectrum antibiotic และ **radical debridement ด่วน** (อัณฑะมักรอดเพราะเลือดมาเลี้ยงจาก testicular artery) ± diverting colostomy, กลับมา debride ซ้ำ\n- **Gonorrhea** ทำให้ epididymitis/urethritis ไม่ใช่เนื้อตายและ crepitus\n- **Viral orchitis** ไม่มีผิวคล้ำ crepitus หรือ sepsis\n- **Testicular torsion** เป็นปวดอัณฑะเฉียบพลันในวัยรุ่น ไม่มี crepitus ลามถึงหน้าท้อง\n- **Candida intertrigo** เป็นผื่นผิวหนังตื้น ๆ",
+     "pearl": "Fournier = type I polymicrobial NSTI ของ perineum → debride ด่วน",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N12-05-3-4",
+     "kind": "mcq",
+     "topic": "Tetanus prophylaxis",
+     "stem": "A 38-year-old woman steps on a rusty nail while working barefoot in a muddy rice paddy, causing a puncture wound contaminated with soil. She completed a full primary tetanus vaccination series in childhood and her last booster was 7 years ago. What is the most appropriate tetanus prophylaxis?",
+     "choices": [
+      "Tetanus toxoid–containing vaccine (Td or Tdap) without tetanus immune globulin",
+      "Tetanus immune globulin alone",
+      "No prophylaxis because she has had a full primary series",
+      "Tetanus immune globulin plus a full three-dose primary series",
+      "Oral metronidazole instead of vaccination"
+     ],
+     "answer": 0,
+     "explain": "แผลถูกตะปูตำที่ปนเปื้อนดิน = **tetanus-prone wound** · ผู้ป่วยได้วัคซีนครบ 3 เข็มแล้ว ข้อบ่งชี้คือให้ **booster (Td/Tdap)** ถ้าเข็มสุดท้ายนาน **มากกว่า 5 ปี** (กรณีนี้ 7 ปี) **ไม่ต้องให้ TIG** เพราะมีภูมิพื้นฐานแล้ว ร่วมกับทำความสะอาดแผลและตัดเนื้อตาย (แผลจากดินนาในไทยเสี่ยง melioidosis ด้วย)\n- **TIG อย่างเดียว** ให้ภูมิแบบชั่วคราวและไม่กระตุ้นภูมิระยะยาว ใช้ในผู้ที่ไม่เคยได้วัคซีนครบร่วมกับวัคซีน\n- **ไม่ต้องให้อะไร** ใช้ได้กับแผลสะอาดเล็ก ๆ ที่ booster ไม่เกิน 10 ปี หรือแผลสกปรกที่ไม่เกิน 5 ปี\n- **TIG + ฉีดชุดใหม่ 3 เข็ม** สำหรับผู้ที่ไม่เคยได้หรือได้ไม่ครบ\n- **Metronidazole** ใช้รักษาโรคบาดทะยักที่เกิดแล้ว ไม่ใช่การป้องกันแทนวัคซีน",
+     "pearl": "แผลสกปรก + booster นานกว่า 5 ปี → Td/Tdap · ไม่ครบชุด → + TIG",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-05-4",
+   "title": "Wound healing: phases และปัจจัยที่ทำให้แผลหายช้า",
+   "summary": "แผลหายผ่านระยะใดบ้าง เซลล์และสารใดสำคัญในแต่ละระยะ และปัจจัยใดทำให้แผลผ่าตัดหายช้าหรือแยก",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 9 — Phases of wound healing; classification of wounds; factors affecting wound healing (Table 9-6); excess healing",
+   "md": "### 3 ระยะของการหายของแผล\n\n| ระยะ | ช่วงเวลา (โดยประมาณ) | เซลล์/เหตุการณ์หลัก |\n|---|---|---|\n| **Hemostasis & inflammation** | วันที่ 0–4 | เกล็ดเลือดปล่อย **PDGF, TGF-β** · fibrin clot เป็นนั่งร้าน · **neutrophil** สูงสุด 24–48 ชม. (กินเชื้อ เศษเนื้อเยื่อ) · **macrophage** มาที่ 48–96 ชม. = **เซลล์สำคัญที่สุด** (ขาดไม่ได้) · T lymphocyte สูงสุดราว 1 สัปดาห์ |\n| **Proliferation** | วันที่ 4–12 (ถึง ~3 สัปดาห์) | **fibroblast** (ถูกเรียกโดย PDGF) สร้าง collagen **type III** ก่อน · **angiogenesis** (VEGF) → **granulation tissue** · epithelialization · **myofibroblast** ทำให้แผลหดตัว (contraction) |\n| **Maturation & remodeling** | 3 สัปดาห์ – **6–12 เดือน** | collagen **type III → type I**, cross-link · MMPs/TIMPs ปรับสมดุล · แผลซีดลง แบนลง เซลล์และหลอดเลือดลดลง |\n\n- ระยะต่าง ๆ **ซ้อนทับกัน** ไม่ได้แยกขาดจากกัน\n- **Neutrophil ไม่จำเป็น** ต่อการสร้าง collagen/ความแข็งแรงของแผล แต่ **macrophage จำเป็น** (หลั่ง growth factors ควบคุม fibroblast และ angiogenesis)\n- Epithelialization ของแผลเย็บปิดเกิดภายใน **24–48 ชม.** (แผลกันน้ำได้)\n\n### Collagen และความแข็งแรงของแผล\n- **Collagen type I** = ส่วนใหญ่ของผิวหนัง/scar ที่สมบูรณ์ · **type III** = ช่วงแรกของแผล (และพบใน Ehlers–Danlos บางชนิด)\n- การสร้าง collagen ต้องการ **hydroxylation ของ proline และ lysine** โดย prolyl/lysyl hydroxylase ซึ่งต้องใช้ **vitamin C (ascorbate), O₂, Fe²⁺, α-ketoglutarate** → ขาด vitamin C (**scurvy**) = แผลไม่แข็งแรง เหงือกเลือดออก แผลเก่าแยก\n- ความแข็งแรง (tensile strength): สัปดาห์แรกต่ำมาก (อาศัยไหมเย็บ) → ราว 6 สัปดาห์ถึงจุดสูงสุดในอัตราการเพิ่ม → แผลที่หายแล้ว **ได้ความแข็งแรงเพียง 75–80% ของเนื้อเยื่อปกติ** ตลอดไป (Schwartz)\n- Anastomosis ลำไส้: ความแข็งแรงต่ำที่สุดช่วง **วันที่ 3–5** (collagenolysis ช่วงแรก) → anastomotic leak มักพบช่วงนี้ · **submucosa** เป็นชั้นที่ยึดไหมได้แข็งแรงที่สุด\n\n### Primary, secondary, tertiary intention\n\n| แบบ | วิธี | ใช้เมื่อ |\n|---|---|---|\n| **Primary intention** | เย็บปิดขอบแผลชิดกันทันที | แผลสะอาด/clean-contaminated, แผลอุบัติเหตุสะอาดที่ใหม่ |\n| **Secondary intention** | ปล่อยเปิด หายด้วย **granulation, contraction, epithelialization** | แผลติดเชื้อ/ปนเปื้อนมาก, เนื้อหายมาก, ฝี, pressure ulcer · ใช้เวลานาน แผลเป็นมาก |\n| **Tertiary intention (delayed primary closure)** | ปล่อยเปิด 3–5 วันแล้วจึงเย็บปิด | class III–IV wounds, แผลถูกกัด, แผลที่ปนเปื้อนแต่เนื้อเยื่อดี |\n\n- แผล **chronic** = ไม่หายหลังการรักษา **4 สัปดาห์** · contamination มากกว่า **10⁵ เชื้อต่อกรัมเนื้อเยื่อ** เสี่ยงแผลติดเชื้อสูง (ต่ำกว่านั้นถ้ามีสิ่งแปลกปลอม)\n\n### ปัจจัยที่ทำให้แผลหายช้า\n\n| ปัจจัย | กลไก / สิ่งที่ทำได้ |\n|---|---|\n| **Infection** | สาเหตุเฉพาะที่ที่พบบ่อยที่สุด · ยืดระยะ inflammation, MMPs ทำลาย collagen → ระบาย/debride |\n| **Hypoxia/ischemia** | collagen hydroxylation ต้องใช้ O₂ · หลอดเลือดแดงตีบ, ปวด/หนาว/ขาดน้ำทำให้หลอดเลือดใต้ผิวหนังหด → แก้ perfusion, อุ่น, ระงับปวด, revascularize |\n| **Diabetes** | inflammation/angiogenesis/collagen ลด, neutrophil ทำงานแย่, microvascular disease → คุมน้ำตาลก่อนผ่าตัด |\n| **Steroids** | กดระยะ **inflammation** (macrophage, angiogenesis, fibroblast) · ลด epithelialization, contraction · ผลน้อยลงถ้าเริ่มหลังวันที่ 3–4 · แก้ได้บางส่วนด้วย **vitamin A** |\n| Chemotherapy, radiation | antimetabolite กดการแบ่งเซลล์ (เลื่อนยาราว 2 สัปดาห์หลังผ่าตัด) · ฉายแสง → endarteritis, fibrosis |\n| **Malnutrition** | ขาดโปรตีน → collagen น้อย แผลแยก · **vitamin C** (hydroxylation), **zinc** (cofactor ของ DNA polymerase/MMPs; ให้เมื่อขาดเท่านั้น), vitamin A |\n| **Smoking** | nicotine หดหลอดเลือด, CO จับ Hb, ลด O₂ → หยุดอย่างน้อย 4 สัปดาห์ก่อนผ่าตัด |\n| อื่น ๆ | **อายุมาก**, **obesity** (แผลแยก/SSI/hernia), uremia, jaundice, anemia รุนแรง, สิ่งแปลกปลอม, แรงตึง/edema, เนื้อตาย |\n\n### Scar ผิดปกติและแผลเรื้อรัง\n\n| | **Hypertrophic scar** | **Keloid** |\n|---|---|---|\n| ขอบเขต | **อยู่ในขอบแผลเดิม** | **ลามเกินขอบแผลเดิม** |\n| เวลา | เกิดภายใน 4 สัปดาห์ | อาจเกิดหลายเดือนต่อมา |\n| การยุบเอง | มักยุบลงตามเวลา | ไม่ค่อยยุบ เป็นซ้ำหลังตัดบ่อย |\n| ปัจจัย | แผลตึง, ข้ามข้อพับ, epithelialization นานกว่า 21 วัน (เช่น burns) | ผิวสีเข้ม (แอฟริกัน เอเชีย), พันธุกรรม, ติ่งหู/หน้าอก/ไหล่ |\n| รักษา | pressure garment, silicone gel, steroid ฉีด | steroid ฉีดในแผล, silicone, ตัด + ฉีด steroid/ฉายแสง |\n\n- **Wound dehiscence** (fascial) มักเกิดวันที่ 5–8 — สัญญาณเตือน: **น้ำสีชมพูใส (salmon-colored) ไหลจากแผล** · ปัจจัยเสี่ยง: เทคนิคเย็บ, ติดเชื้อ, ความดันในท้องสูง, ขาดอาหาร, steroid\n- **Chronic wounds**: venous ulcer (ขาส่วนล่าง เหนือตาตุ่มใน → compression), arterial ulcer (ปลายเท้า เจ็บ → revascularize), **diabetic foot ulcer** (neuropathy, จุดรับน้ำหนัก → offloading, debride, คุมการติดเชื้อ), **pressure ulcer** (stage I–IV ตามความลึก → พลิกตัว ลดแรงกด debride) · แผลเรื้อรังนานผิดปกติ → biopsy หา **Marjolin's ulcer** (SCC)\n",
+   "pearls": [
+    "Inflammation (0–4 วัน) → proliferation (4–12 วัน) → remodeling (3 สัปดาห์–12 เดือน)",
+    "Neutrophil สูงสุด 24–48 ชม. · macrophage 48–96 ชม. = เซลล์ที่ขาดไม่ได้",
+    "Collagen type III ก่อน → type I · vitamin C + O₂ จำเป็นต่อ hydroxylation ของ proline/lysine",
+    "แผลที่หายแล้วแข็งแรงได้แค่ 75–80% ของเนื้อเยื่อปกติ",
+    "Steroid กดระยะ inflammation → แก้ด้วย vitamin A",
+    "Hypertrophic scar อยู่ในขอบแผล · keloid ลามเกินขอบ",
+    "Chronic wound = ไม่หายใน 4 สัปดาห์ · contamination มากกว่า 10⁵/g → ติดเชื้อ"
+   ],
+   "items": [
+    {
+     "id": "N12-05-4-1",
+     "kind": "mcq",
+     "topic": "Key cell in wound healing",
+     "stem": "In an experimental study of skin incisions, depletion of one circulating cell type results in markedly impaired fibroblast proliferation, angiogenesis and collagen deposition, whereas depletion of neutrophils does not reduce wound tensile strength in clean wounds. Which cell type was depleted?",
+     "choices": [
+      "Macrophages",
+      "Platelets after hemostasis is complete",
+      "Eosinophils",
+      "Mast cells",
+      "Basophils"
+     ],
+     "answer": 0,
+     "explain": "**Macrophage** (มาจาก monocyte) เข้าสู่แผลราว 48–96 ชม. และเป็นเซลล์ที่ **จำเป็นต่อการหายของแผล**: เก็บกวาดเศษเนื้อเยื่อและหลั่ง growth factors (PDGF, TGF-β, VEGF, FGF, IGF) ที่ควบคุมการแบ่งตัวของ fibroblast, การสร้าง matrix และ angiogenesis · ขณะที่ **neutrophil** มีหน้าที่หลักคือกำจัดเชื้อ ไม่จำเป็นต่อการสร้าง collagen ในแผลสะอาด\n- **Platelets** สำคัญในช่วง hemostasis และปล่อย PDGF/TGF-β ช่วงแรก แต่ไม่ใช่ตัวควบคุมระยะ proliferation ต่อเนื่อง\n- **Eosinophils, mast cells, basophils** มีบทบาทเล็กน้อย ไม่ใช่เซลล์ที่ขาดไม่ได้",
+     "pearl": "Macrophage = เซลล์ที่ขาดไม่ได้ · neutrophil ไม่จำเป็นต่อ collagen",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N12-05-4-2",
+     "kind": "mcq",
+     "topic": "Vitamin C and collagen",
+     "stem": "A 70-year-old man who lives alone and eats almost no fruit or vegetables has a laparotomy wound that separates on postoperative day 9. He also has bleeding gums, perifollicular hemorrhages and corkscrew hairs. Which step of collagen synthesis is most directly impaired?",
+     "choices": [
+      "Hydroxylation of proline and lysine residues",
+      "Transcription of the collagen gene",
+      "Cleavage of procollagen propeptides by peptidases",
+      "Glycosylation of collagen in the Golgi",
+      "Degradation of collagen by matrix metalloproteinases"
+     ],
+     "answer": 0,
+     "explain": "อาการเหงือกเลือดออก perifollicular hemorrhage และ corkscrew hairs = **scurvy (ขาด vitamin C)** · **ascorbic acid** เป็น cofactor (electron donor) ของ **prolyl และ lysyl hydroxylase** ที่เปลี่ยน proline/lysine เป็น hydroxyproline/hydroxylysine — ขั้นนี้จำเป็นต่อการสร้าง triple helix ที่เสถียรและ cross-link → ขาดแล้ว collagen อ่อนแอ แผลแยก แผลเก่าเปิดซ้ำ และติดเชื้อง่าย\n- **Transcription** ไม่ได้ขึ้นกับ vitamin C โดยตรง\n- **Cleavage ของ propeptide** เกิดนอกเซลล์โดย procollagen peptidase (ผิดปกติใน Ehlers–Danlos บางชนิด)\n- **Glycosylation** ไม่ต้องใช้ vitamin C\n- **MMP degradation** ไม่ใช่ขั้นที่บกพร่องใน scurvy",
+     "pearl": "Vitamin C = cofactor ของ prolyl/lysyl hydroxylase → ขาดแล้วแผลแยก",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N12-05-4-3",
+     "kind": "mcq",
+     "topic": "Delayed primary closure",
+     "stem": "A 34-year-old man has a 6-cm laceration on his forearm from a farm machine. He presents 20 hours after injury; the wound is contaminated with soil and has some devitalized edges but no tendon or neurovascular injury. After irrigation and debridement, what is the most appropriate wound closure strategy?",
+     "choices": [
+      "Leave the wound open with dressings and close it after 3–5 days if clean (delayed primary closure)",
+      "Close primarily immediately with tight sutures",
+      "Close primarily and give 3 weeks of oral antibiotics",
+      "Apply a skin graft immediately",
+      "Leave open permanently and never close"
+     ],
+     "answer": 0,
+     "explain": "แผลที่ **ปนเปื้อนมาก (ดิน) มาช้า (20 ชม.)** และมีเนื้อตาย เสี่ยงติดเชื้อสูงหากเย็บปิดทันที · หลังล้างและตัดเนื้อตาย ให้ **ปล่อยเปิดและทำแผล 3–5 วัน แล้วเย็บปิดเมื่อแผลสะอาด** = **delayed primary closure (tertiary intention)** ซึ่งได้แผลเป็นดีกว่าการปล่อยหายเอง และลดการติดเชื้อเทียบกับการปิดทันที · ร่วมกับ tetanus prophylaxis\n- **ปิดทันทีแบบตึง** เสี่ยงหนองค้างใต้แผลและเนื้อตายจากความตึง\n- **ปิดทันที + ยา 3 สัปดาห์** ยาไม่สามารถชดเชยการปิดแผลที่ปนเปื้อนได้ และยานานเกินจำเป็น\n- **Skin graft ทันที** ไม่ติดบนแผลปนเปื้อนและไม่จำเป็นเมื่อไม่มีการเสียผิวหนัง\n- **ปล่อยเปิดตลอด** (secondary intention) ใช้ได้แต่หายช้าและแผลเป็นมากกว่าเมื่อแผลสะอาดพอจะปิดได้",
+     "pearl": "แผลปนเปื้อนมาก/มาช้า → delayed primary closure (tertiary intention)",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N12-05-4-4",
+     "kind": "mcq",
+     "topic": "Steroids and wound healing",
+     "stem": "A 48-year-old woman with Crohn disease has taken prednisolone 30 mg daily for 4 months and requires an ileocolic resection. The surgeon is concerned about wound healing. Which statement best describes the effect of corticosteroids and a measure that may partly counteract it?",
+     "choices": [
+      "Steroids inhibit the inflammatory phase and reduce collagen synthesis; vitamin A may partly reverse the effect",
+      "Steroids accelerate collagen synthesis; no additional measure is needed",
+      "Steroids affect only epithelialization; zinc fully reverses the effect",
+      "Steroids impair healing only when started after day 7; vitamin C reverses the effect",
+      "Steroids improve wound contraction; stopping them abruptly before surgery is recommended"
+     ],
+     "answer": 0,
+     "explain": "Glucocorticoid ขนาดสูง/ใช้นาน **กดระยะ inflammation** (การเคลื่อนที่ของ macrophage/neutrophil, angiogenesis, การแบ่งตัวของ fibroblast) → **collagen synthesis และ wound strength ลดลง** ยังกด epithelialization, contraction และเพิ่มการติดเชื้อ · **vitamin A** ช่วยกระตุ้น epithelialization และ collagen synthesis ในแผลที่ได้ steroid ได้บางส่วน (Schwartz) · steroid ที่เริ่มหลังวันที่ 3–4 มีผลน้อยกว่า · ห้ามหยุด steroid ทันทีก่อนผ่าตัด (เสี่ยง adrenal crisis)\n- **เร่ง collagen** ผิดทิศ\n- **กระทบเฉพาะ epithelialization + zinc แก้ได้** ผิด zinc ช่วยเฉพาะผู้ที่ขาด zinc\n- **มีผลเฉพาะเมื่อเริ่มหลังวันที่ 7** ผิด ผลมากที่สุดเมื่อได้ก่อน/ช่วงแรก\n- **ช่วย contraction และควรหยุดทันที** ผิดทั้งสองส่วน",
+     "pearl": "Steroid กด inflammation/collagen → vitamin A ช่วยได้บางส่วน · อย่าหยุดกะทันหัน",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-05-MEQ1",
+   "part": "MEQ",
+   "topic": "Perforated appendicitis — wound class, antibiotics, postoperative SSI, abscess and impaired wound healing",
+   "vignette": "ชายไทยอายุ 61 ปี น้ำหนัก 90 kg (BMI 33) เป็นเบาหวานคุมไม่ดี (HbA1c 10.2%) สูบบุหรี่วันละ 1 ซอง มาด้วยปวดท้องน้อยขวา 3 วัน ไข้\n\nPE: BT 38.8°C, BP 118/70 mmHg, PR 108/min · กดเจ็บและ guarding ที่ RLQ · WBC 18,900/µL, glucose 286 mg/dL\n\nCT: **perforated appendicitis** มีของเหลวขุ่นในอุ้งเชิงกรานเล็กน้อย ไม่มีฝีเป็นก้อน\n\nได้รับการผ่าตัด **open appendectomy** พบไส้ติ่งทะลุที่ปลาย มีหนองเฉพาะที่ ดูดออกและล้าง",
+   "questions": [
+    {
+     "q": "1. จงจัด wound class ของการผ่าตัดนี้ บอกเชื้อที่คาด และเลือก antibiotic พร้อมระยะเวลาที่เหมาะสมหลังผ่าตัด",
+     "a": "- **Class IV (dirty)** — มีหนอง/อวัยวะทะลุ → antibiotic เป็น **การรักษา** ไม่ใช่ prophylaxis\n- เชื้อ: **polymicrobial** — E. coli/gram-negative + **anaerobe (Bacteroides fragilis)**\n- ยา: เช่น **ceftriaxone + metronidazole** หรือ amoxicillin–clavulanate/piperacillin–tazobactam (ตามความรุนแรงและเชื้อดื้อยาในพื้นที่) — ให้ dose แรกก่อนลงมีด\n- ระยะเวลา: **ราว 4 วันหลัง source control** (STOP-IT/SIS 2016) แล้วประเมินทางคลินิก เปลี่ยนเป็นยากินได้เมื่อกินอาหารได้\n- เกณฑ์ให้คะแนน: wound class (1) · เชื้อ (1) · ยาครอบคลุม aerobe + anaerobe (1) · ระยะเวลา (1)"
+    },
+    {
+     "q": "2. ผู้ป่วยรายนี้มีปัจจัยเสี่ยงต่อ SSI อะไรบ้าง และควรจัดการแผลผิวหนังและดูแลรอบผ่าตัดอย่างไรเพื่อลดความเสี่ยง",
+     "a": "- ปัจจัยเสี่ยง: **dirty wound**, **เบาหวานคุมไม่ดี/น้ำตาลสูง**, **อ้วน**, **สูบบุหรี่**, อายุมาก, open surgery\n- แผล: Schwartz ระบุว่า perforated appendicitis ในผู้ป่วยแข็งแรงที่ได้ยาครอบคลุมสามารถ **ปิดผิวหนังได้** (SSI ~3–4%) แต่ผู้ป่วยรายนี้เสี่ยงสูง → พิจารณา **ปล่อยผิวหนังเปิด/delayed primary closure** หรือ NPWT\n- ดูแลรอบผ่าตัด: คุม **glucose น้อยกว่า 200 mg/dL** (insulin), **normothermia**, ออกซิเจนเพียงพอ, clipper, alcohol-based prep, redose ยาถ้าผ่าตัดนาน, เปลี่ยนถุงมือ/เครื่องมือก่อนปิดแผล (wound protector)\n- เกณฑ์ให้คะแนน: ปัจจัยเสี่ยงอย่างน้อย 4 (2) · การจัดการผิวหนัง (1) · มาตรการรอบผ่าตัดอย่างน้อย 3 (2)"
+    },
+    {
+     "q": "3. วันที่ 5 หลังผ่าตัด แผลบวมแดงมีหนองไหล ส่วนวันที่ 7 ยังมีไข้ 38.7°C ท้องอืด ไม่ผายลม WBC 16,000 จงบอกการวินิจฉัยและการรักษาของปัญหาแต่ละอย่าง",
+     "a": "- **Superficial incisional SSI** → **เปิดแผลระบายหนอง** ทำแผล/NPWT · antibiotic เฉพาะเมื่อมี cellulitis มากหรือ SIRS · เพาะเชื้อ\n- ไข้ต่อเนื่อง + ileus วันที่ 7 → สงสัย **organ/space SSI (pelvic abscess)** → **CT with contrast**\n- ถ้าพบฝีก้อนเดียวเจาะได้และ stable → **CT-guided percutaneous drainage** + antibiotic ระยะสั้น 3–5 วันหลังระบาย\n- ผ่าตัดซ้ำเมื่อ: หลายฝี เจาะไม่ได้ มีการรั่ว (stump leak) peritonitis ทั่วไป หรือ septic shock\n- ห้ามแค่ \"เปลี่ยนยาให้แรงขึ้น\" โดยไม่หาและระบาย source\n- เกณฑ์ให้คะแนน: incisional SSI + การรักษา (2) · สงสัย abscess + CT (1) · drainage + ข้อบ่งชี้ผ่าตัดซ้ำ (2)"
+    },
+    {
+     "q": "4. วันที่ 8 หลังผ่าตัด มีน้ำสีชมพูใสไหลซึมออกจากแผลปริมาณมาก จงบอกภาวะที่ต้องสงสัย อธิบายปัจจัยด้าน wound healing ที่ทำให้เกิด และแนวทางจัดการ",
+     "a": "- **Fascial dehiscence** — น้ำสีชมพูใส (salmon-colored peritoneal fluid) เป็นสัญญาณเตือนคลาสสิก มักเกิดวันที่ 5–8 · เสี่ยง **evisceration**\n- ปัจจัยด้าน healing: ช่วงสัปดาห์แรกแผลยังมี tensile strength ต่ำ (ระยะ inflammation→proliferation ใช้ไหมรับแรง) + **ติดเชื้อ** (MMPs ทำลาย collagen) + **เบาหวาน** (inflammation/angiogenesis/collagen ลด) + **สูบบุหรี่/hypoxia** (collagen hydroxylation ต้องใช้ O₂) + **อ้วน**, ท้องอืด/ไอ (แรงตึง), อาจขาดอาหาร\n- จัดการ: ปิดแผลด้วยผ้าชุบ NSS, ประเมินด้วยนิ้ว/CT, **กลับห้องผ่าตัดเพื่อเย็บ fascia ใหม่** (หรือ temporary closure/NPWT ถ้าการติดเชื้อมาก), คุมน้ำตาล โภชนาการ (โปรตีน, vitamin C, zinc ถ้าขาด), รักษาการติดเชื้อ\n- ระยะยาว: เสี่ยง **incisional hernia** · แผลหายแล้วแข็งแรงเพียง 75–80% ของปกติ\n- เกณฑ์ให้คะแนน: วินิจฉัย (1) · อธิบายปัจจัยอย่างน้อย 3 (2) · การจัดการ (2)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 6",
+    "Schwartz 11e Ch 9",
+    "Sawyer RG et al. STOP-IT trial. NEJM 2015"
+   ]
+  }
+ ],
+ "osce": []
+}

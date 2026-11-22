@@ -1,0 +1,452 @@
+{
+ "lec": "06",
+ "date": "Schwartz Ch 26, 28, 30, 32",
+ "title": "Acute abdomen",
+ "subtitle": "เจอผู้ป่วยปวดท้องเฉียบพลันใน ER จะซักอะไร ตรวจอะไร ส่งภาพอะไร และตัดสินอย่างไรว่าต้องผ่าตัดเดี๋ยวนี้",
+ "objectives": [
+  "เรียนจบแล้วต้องซักประวัติและตรวจร่างกายผู้ป่วย acute abdomen อย่างเป็นระบบ รวมถึง hernia orifices, PR และ hCG ในหญิงวัยเจริญพันธุ์",
+  "เรียนจบแล้วต้องเลือกภาพถ่าย (upright CXR, US, CT, MRI, CTA) ให้ตรงคำถามทางคลินิกและสภาพผู้ป่วย",
+  "เรียนจบแล้วต้องระบุข้อบ่งชี้ผ่าตัดด่วน (peritonitis, free air, strangulation, ischemia, bleeding) และสั่ง resuscitation ก่อนผ่าตัดได้",
+  "เรียนจบแล้วต้องใช้ Alvarado score และภาพถ่ายวินิจฉัยไส้ติ่งอักเสบ และเลือกระหว่าง appendectomy กับ percutaneous drainage",
+  "เรียนจบแล้วต้องใช้ Tokyo Guidelines 2018 วินิจฉัยและแบ่งความรุนแรง acute cholecystitis/cholangitis และเลือกเวลาผ่าตัดหรือวิธีระบาย",
+  "เรียนจบแล้วต้องจัดการ adhesive SBO แบบ conservative พร้อม water-soluble contrast และจำแนกผู้ป่วย mesenteric ischemia ที่ต้องทำ CTA และให้ heparin ทันที"
+ ],
+ "guidelines": [
+  "Tokyo Guidelines 2018 (TG18) — diagnostic criteria and severity grading of acute cholecystitis and acute cholangitis",
+  "Alvarado score (MANTRELS), Ann Emerg Med 1986",
+  "STOP-IT trial (Sawyer et al., NEJM 2015) — short-course antibiotics after source control",
+  "Schwartz's Principles of Surgery 11e, Ch 26, 28, 30, 32"
+ ],
+ "sections": [
+  {
+   "id": "n3-06-1",
+   "title": "Approach to acute abdomen: ซัก ตรวจ ส่งตรวจ และใครต้องผ่าตัดเดี๋ยวนี้",
+   "summary": "ผู้ป่วยปวดท้องเฉียบพลันต้อง resuscitate ไปพร้อมกับตัดสินว่าต้องผ่าตัดด่วนหรือไม่ โดยใช้รูปแบบอาการ การตรวจ และภาพถ่ายที่เลือกให้ตรงคำถาม",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 26 (perforated ulcer), Ch 28 (SBO), Ch 30 (appendicitis imaging) — synthesis",
+   "md": "### เริ่มจากคำถามเดียว: ผู้ป่วยรายนี้ต้องผ่าตัดตอนนี้หรือไม่\nเมื่อเจอผู้ป่วย **acute abdomen** ใน ER ให้แยกงานเป็นสองชั้นพร้อมกัน ชั้นแรกคือ **ABC และ resuscitation** (เปิดเส้น 2 เส้น, crystalloid, งดน้ำงดอาหาร, ระงับปวด) ชั้นที่สองคือการตัดสินว่า **ต้องผ่าตัดด่วน / ต้องการภาพถ่ายเพิ่ม / สังเกตอาการได้** การให้ยาแก้ปวด (เช่น morphine ขนาดไต่ระดับ) ไม่ได้บดบังการวินิจฉัย ไม่ควรรอให้ศัลยแพทย์ตรวจก่อนจึงจะให้ยา\n- ผู้ป่วยที่ **ช็อก + ปวดท้อง** ให้คิดถึงโรคที่ฆ่าเร็วก่อน: ruptured AAA, ruptured ectopic pregnancy, perforated viscus กับ septic shock, mesenteric ischemia, severe pancreatitis\n- อายุมาก เบาหวาน กินสเตียรอยด์ อาการทางหน้าท้องจะน้อยกว่าความรุนแรงจริง ต้องลดเกณฑ์การส่งภาพถ่าย\n\n### ซักประวัติให้ได้ \"รูปแบบ\" ของปวด\n| ลักษณะ | คิดถึง |\n|---|---|\n| ปวดทันทีรุนแรง บอกเวลาได้ | **perforation**, rupture (AAA, ectopic), mesenteric embolus |\n| ปวดบิดเป็นพัก ๆ + อาเจียน + ไม่ผายลม | **bowel obstruction**, ureteric colic |\n| ปวดรอบสะดือแล้วย้ายไป RLQ | **appendicitis** (visceral → parietal peritoneum) |\n| ปวดตื้อ RUQ หลังอาหารมัน นานกว่า 6 ชม. มีไข้ | **acute cholecystitis** |\n| ปวดมากแต่ตรวจท้องนุ่ม ผู้ป่วยมี AF | **acute mesenteric ischemia** |\n| ปวดลิ้นปี่ทะลุหลัง ดื่มสุรา/นิ่ว | pancreatitis |\n\nถามเพิ่มทุกครั้ง: **ประจำเดือนครั้งสุดท้าย**และการคุมกำเนิด, ประวัติผ่าตัดช่องท้อง (adhesion), ยา (NSAIDs, steroid, anticoagulant), โรคหัวใจ/AF, การดื่มสุรา, อาการทางเดินปัสสาวะ\n\n### ตรวจร่างกายแบบมีเป้าหมาย\n1. ดู vital signs ก่อนหน้าท้อง: ไข้, ชีพจร, ความดัน, การหายใจ (ช็อกต้อง resuscitate ก่อน)\n2. ดูท้อง: distension, แผลผ่าตัดเก่า, ผู้ป่วยนอนนิ่ง (peritonitis) หรือดิ้นไปมา (colic)\n3. ฟัง bowel sound: high-pitched/tinkling ในลำไส้อุดตันช่วงแรก เงียบใน ileus หรือ peritonitis ระยะท้าย\n4. คลำจากจุดไม่ปวดไปจุดปวด หา **guarding, rebound, rigidity**, Murphy sign, McBurney point, pulsatile mass\n5. **ตรวจ hernia orifices** (inguinal และ femoral) ในทุกรายที่สงสัย obstruction\n6. ตรวจ **PR** และในหญิงที่สงสัยโรคอุ้งเชิงกรานตรวจภายใน (cervical motion tenderness)\n\n> Generalized peritonitis (board-like rigidity) เป็นการวินิจฉัยทางคลินิกที่พอจะตัดสินใจผ่าตัดได้ ไม่จำเป็นต้องรอ CT ถ้าผู้ป่วยไม่คงที่\n\n### Lab และภาพถ่าย: เลือกให้ตรงคำถาม\n- **Lab พื้นฐาน**: CBC, BUN/Cr, electrolytes, glucose, LFT, **lipase/amylase**, UA, **urine hCG ในหญิงวัยเจริญพันธุ์ทุกราย**, lactate และ blood gas ถ้าสงสัย ischemia หรือ sepsis, G/M เมื่อมีแนวโน้มผ่าตัด\n- ปกติไม่ได้แปลว่าไม่มีโรค: WBC และ lactate อาจปกติใน mesenteric ischemia ระยะแรก\n\n| คำถามทางคลินิก | ภาพถ่ายที่เลือก |\n|---|---|\n| มี free air ไหม | **upright CXR** (เห็นลมใต้กะบังลมราว 80% ของ perforated ulcer) |\n| RUQ pain, สงสัยนิ่ว/ถุงน้ำดีอักเสบ | **ultrasound** เป็นอันดับแรก |\n| หญิงตั้งครรภ์ เด็ก | ultrasound ก่อน แล้ว MRI ถ้าไม่ชัด |\n| ปวดท้องผู้ใหญ่ที่ไม่ชัด, obstruction, ischemia | **CT abdomen with IV contrast** (สงสัย ischemia ใช้ CTA) |\n| ผู้ป่วยช็อก สงสัย AAA rupture | bedside US (FAST/aorta) แล้วไป OR ไม่ส่ง CT ถ้าไม่คงที่ |\n\n### ใครต้องเข้าห้องผ่าตัดเดี๋ยวนี้\n| ข้อบ่งชี้ผ่าตัดด่วน | ตัวอย่าง |\n|---|---|\n| **Generalized peritonitis** | perforated ulcer, perforated appendicitis ที่ไม่ walled-off |\n| **Free air + peritonitis** | perforated viscus |\n| **Strangulation / closed loop** | SBO ที่มีไข้ ชีพจรเร็ว ปวดตลอด เจ็บเฉพาะที่ lactate สูง |\n| **Ischemia** | acute mesenteric ischemia, incarcerated hernia ที่ดันไม่เข้า |\n| **Hemorrhage ที่ไม่หยุด** | ruptured AAA, ruptured ectopic, ruptured HCC |\n\nส่วนผู้ป่วยที่คงที่และยังไม่แน่ใจ ให้ทำ **serial abdominal examination** โดยคนเดิม ทุก 4–6 ชั่วโมง ร่วมกับภาพถ่าย ใน รพช. ที่ไม่มี CT ถ้าสงสัยภาวะที่ต้องผ่าตัดแต่ทำเองไม่ได้ ให้ resuscitate ให้ยาปฏิชีวนะ แล้ว **refer พร้อม NG tube, Foley, IV line** ไม่ควรรอจนผู้ป่วยช็อก\n",
+   "pearls": [
+    "ช็อก + ปวดท้อง: คิด ruptured AAA, ruptured ectopic, perforation, mesenteric ischemia ก่อน",
+    "ให้ยาแก้ปวดได้ ไม่บดบังการวินิจฉัย",
+    "หญิงวัยเจริญพันธุ์ปวดท้องทุกราย: urine/serum hCG",
+    "SBO ทุกราย: ตรวจ inguinal และ femoral hernia",
+    "Upright CXR เห็น free air ราว 80% ของ perforated ulcer",
+    "Generalized peritonitis ในผู้ป่วยไม่คงที่: ไปห้องผ่าตัด ไม่ต้องรอ CT",
+    "สังเกตอาการ = serial exam โดยคนเดิม ทุก 4–6 ชม."
+   ],
+   "items": [
+    {
+     "id": "N3-06-1-1",
+     "kind": "mcq",
+     "topic": "Acute abdomen — urgent operation",
+     "stem": "A 58-year-old man with chronic knee pain treated with ibuprofen presents 3 hours after sudden severe epigastric pain that is now generalized. Temperature 37.8°C, pulse 118/min, BP 104/66 mmHg. The abdomen is rigid with diffuse rebound tenderness. Upright chest radiograph shows air under both hemidiaphragms. Two IV lines are placed and crystalloid is started. What is the most appropriate next step?",
+     "choices": [
+      "IV antibiotics and analgesia followed by emergency laparotomy/laparoscopy",
+      "CT abdomen with oral contrast to localize the perforation",
+      "Nasogastric suction and observation with serial examinations",
+      "Urgent upper endoscopy to identify the ulcer",
+      "High-dose IV PPI and repeat chest radiograph in 6 hours"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **generalized peritonitis + free air** หลังใช้ NSAIDs คือ perforated peptic ulcer ซึ่งเป็นข้อบ่งชี้ผ่าตัดด่วน หลัง resuscitation ให้ยาปฏิชีวนะครอบคลุม gram-negative/anaerobe และระงับปวด แล้วไปห้องผ่าตัดเพื่อปิดรูทะลุ (omental patch) และล้างช่องท้อง\n- **CT abdomen** ไม่จำเป็นเมื่อการวินิจฉัยชัดแล้ว ทำให้เสียเวลา\n- **NG suction + observation** ใช้ได้เฉพาะรายที่ไม่มี peritonitis และมีหลักฐานว่ารูทะลุปิดแล้วจาก contrast study\n- **Upper endoscopy** ห้ามทำในภาวะ perforation เพราะการเป่าลมทำให้รูรั่วมากขึ้น\n- **IV PPI แล้วถ่ายซ้ำ** เป็นการรักษาเสริม ไม่ใช่ source control",
+     "pearl": "Peritonitis ทั่วท้อง + free air = ไปห้องผ่าตัด ไม่ต้องรอ CT",
+     "src": "Schwartz 11e Ch 26",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 26"
+     ]
+    },
+    {
+     "id": "N3-06-1-2",
+     "kind": "mcq",
+     "topic": "Acute abdomen — pregnancy test",
+     "stem": "A 24-year-old woman presents with 8 hours of lower abdominal pain, worse on the right. Her last menstrual period was 7 weeks ago. Pulse 112/min, BP 96/60 mmHg. There is lower abdominal tenderness with mild guarding. Hemoglobin 10.2 g/dL. Which investigation should be obtained first?",
+     "choices": [
+      "Urine or serum hCG",
+      "CT abdomen with IV contrast",
+      "Serum lipase",
+      "Plain abdominal radiograph",
+      "Stool occult blood test"
+     ],
+     "answer": 0,
+     "explain": "หญิงวัยเจริญพันธุ์ที่ปวดท้องน้อยต้องตรวจ **hCG ก่อนเสมอ** รายนี้ขาดประจำเดือน 7 สัปดาห์ มีชีพจรเร็ว ความดันต่ำ Hb ต่ำ ต้องคิดถึง **ruptured ectopic pregnancy** ก่อน appendicitis ถ้า hCG บวกให้ทำ bedside US (หา free fluid/ไม่มีถุงการตั้งครรภ์ในมดลูก) และปรึกษาสูติฯ ผ่าตัดด่วน\n- **CT with contrast** ให้รังสีแก่ทารกที่อาจมีอยู่ และไม่ควรทำในผู้ป่วยที่ไม่คงที่\n- **Serum lipase** ใช้ในปวดลิ้นปี่สงสัย pancreatitis ไม่ตอบคำถามนี้\n- **Plain abdominal radiograph** ไม่ช่วยในโรคอุ้งเชิงกราน\n- **Stool occult blood** ไม่เกี่ยวกับภาวะเฉียบพลันนี้",
+     "pearl": "หญิงวัยเจริญพันธุ์ปวดท้อง → hCG ทุกราย ก่อนส่ง CT",
+     "src": "Schwartz 11e Ch 30",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 30"
+     ]
+    },
+    {
+     "id": "N3-06-1-3",
+     "kind": "mcq",
+     "topic": "Imaging choice in acute abdomen",
+     "stem": "A 34-year-old woman at 20 weeks' gestation presents with 18 hours of periumbilical pain migrating to the right flank, nausea, and temperature 37.9°C. WBC 14,500/mm3. Abdominal ultrasound by the radiologist does not visualize the appendix. She is hemodynamically stable. What is the best next imaging study?",
+     "choices": [
+      "MRI of the abdomen without gadolinium",
+      "CT abdomen with IV contrast",
+      "Plain abdominal radiograph series",
+      "HIDA scan",
+      "Repeat ultrasound in 48 hours"
+     ],
+     "answer": 0,
+     "explain": "ในหญิงตั้งครรภ์ที่สงสัย appendicitis ให้ทำ **ultrasound ก่อน** ถ้าไม่เห็นไส้ติ่ง ขั้นต่อไปคือ **MRI** (sensitivity ประมาณ 0.95 specificity 0.92) ซึ่งไม่มีรังสี การวินิจฉัยช้าในหญิงตั้งครรภ์เพิ่มความเสี่ยงไส้ติ่งแตกและทารกเสียชีวิต จึงต้องได้คำตอบเร็ว\n- **CT with contrast** แม่นยำแต่ให้รังสีแก่ทารก เป็นทางเลือกเมื่อไม่มี MRI\n- **Plain radiograph** ไม่มีประโยชน์ในการวินิจฉัยไส้ติ่งอักเสบ\n- **HIDA scan** ใช้ยืนยัน acute cholecystitis เมื่อ US ไม่ชัด\n- **Repeat US ใน 48 ชม.** ช้าเกินไป เสี่ยงแตก",
+     "pearl": "ตั้งครรภ์ + สงสัย appendicitis: US → MRI",
+     "src": "Schwartz 11e Ch 30",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 30"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-06-2",
+   "title": "Acute appendicitis: วินิจฉัยข้างเตียงและตัดสินใจรักษา",
+   "summary": "ใช้อาการ อาการแสดง Alvarado score และภาพถ่ายที่เหมาะกับผู้ป่วยแต่ละกลุ่มเพื่อวินิจฉัยไส้ติ่งอักเสบ และเลือกระหว่างผ่าตัดทันที ระบายหนอง หรือ interval appendectomy",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 30 — The Appendix: clinical diagnosis, imaging, management",
+   "md": "### Appendicitis: วินิจฉัยด้วยคลินิกก่อน\nอาการคลาสสิกคือ **ปวดรอบสะดือแล้วย้ายมา RLQ** (pain migration, LR+ ประมาณ 2) ร่วมกับเบื่ออาหาร คลื่นไส้ อาเจียน ไข้ต่ำ ๆ ประมาณ 38°C ผู้ป่วยมักนอนนิ่งเพราะ parietal peritonitis\n- **McBurney point**: หนึ่งในสามของระยะจาก ASIS ไปสะดือ\n- **Rovsing sign**: กดซ้ายล่างแล้วปวดขวาล่าง · **Psoas sign**: ปวดเมื่อเหยียด/งอสะโพก (retrocecal) · **Obturator sign**: ปวดเมื่อหมุนสะโพกเข้าใน (pelvic) · **Dunphy sign**: ปวดเมื่อไอ\n- Lab: **WBC** มักราว 10,000 และสูงขึ้น (ราว 17,000) เมื่อ gangrenous/perforated, **CRP**, UA (แยกนิ่ว/กรวยไตอักเสบ), **hCG** ในผู้หญิง\n- อาการเดี่ยวแต่ละตัวมีน้ำหนักน้อย แต่เมื่อรวมกันมีพลังแยกโรคสูง จึงนิยมใช้คะแนน เช่น **Alvarado score**\n\n| Alvarado (MANTRELS) | คะแนน |\n|---|---|\n| Migration of pain to RLQ | 1 |\n| Anorexia | 1 |\n| Nausea/vomiting | 1 |\n| Tenderness RLQ | 2 |\n| Rebound | 1 |\n| Elevated temperature (≥37.3°C) | 1 |\n| Leukocytosis (WBC มากกว่า 10,000) | 2 |\n| Shift to left | 1 |\n\nแปลผล: **0–4** โอกาสน้อย (พิจารณาโรคอื่น/นัดดูซ้ำ) · **5–6** ไม่แน่ชัด → imaging/สังเกตอาการ · **7–10** โอกาสสูง → ปรึกษาผ่าตัด\n\n### เลือกภาพถ่ายอย่างไร\n| วิธี | Sens / Spec | ใช้เมื่อ |\n|---|---|---|\n| **CT with IV contrast** | ประมาณ 0.96 / 0.96 | ผู้ใหญ่ที่การวินิจฉัยไม่ชัด ผู้สูงอายุ (ควรมีภาพก่อนผ่าตัด) |\n| **Graded-compression US** | ประมาณ 0.85 / 0.90 | เด็ก หญิงตั้งครรภ์ คนผอม (ไส้ติ่งกดยุบได้และน้อยกว่า 5 mm แทบตัดโรค; มากกว่า 6 mm, กดเจ็บ, appendicolith สนับสนุน) |\n| **MRI** | ประมาณ 0.95 / 0.92 | หญิงตั้งครรภ์ เด็ก เมื่อ US ไม่ชัด |\n\n> negative appendectomy ที่ยอมรับได้ประมาณน้อยกว่า 10% ในชาย และน้อยกว่า 20% ในหญิง เพราะโรคทางนรีเวชเลียนแบบได้มาก\n\n### Differential ที่ต้องคิดใน RLQ pain\n| โรค | เบาะแส |\n|---|---|\n| **Ectopic pregnancy** | ขาดประจำเดือน hCG บวก ช็อก |\n| **PID** / tubo-ovarian abscess | ตกขาว ไข้ cervical motion tenderness ปวดสองข้าง |\n| **Ovarian torsion** | ปวดทันที อาเจียนมาก คลำ adnexal mass |\n| **Mittelschmerz** | กลางรอบเดือน ไม่มีไข้ WBC ปกติ |\n| **Mesenteric adenitis** | เด็ก ประวัติไข้หวัดนำมาก่อน |\n| **Ureteric colic** | ปวดบิดร้าวลงขาหนีบ ปัสสาวะมีเลือด |\n| Cecal/Meckel diverticulitis, Crohn ileitis | ภาพ CT ช่วยแยก |\n\n### การรักษา: เมื่อใดผ่า เมื่อใดระบาย\n- **Uncomplicated appendicitis**: มาตรฐานคือ **appendectomy** (laparoscopic มีข้อดีเรื่องแผลติดเชื้อและนอน รพ. สั้น) ให้ prophylactic antibiotic 30–60 นาทีก่อนลงมีด (เช่น cefoxitin หรือ cefazolin + metronidazole) หลังผ่าตัด **ไม่ต้องให้ยาต่อ** การเลื่อนผ่าตัดได้ไม่เกิน 12 ชั่วโมงในรายอาการน้อยกว่า 48 ชั่วโมงและไม่แตก\n- **Antibiotics alone** เป็นทางเลือกผ่าน shared decision-making แต่ราว 1 ใน 4 (26.5%) ต้องผ่าตัดภายใน 1 ปี\n- **Complicated (perforated/abscess/phlegmon)**: ถ้าผู้ป่วย septic หรือแตกเข้าช่องท้องอิสระ → ผ่าตัดด่วน ถ้า **มาช้าและเป็น abscess ที่ล้อมรอบแล้ว** → IV antibiotics + **percutaneous drainage** ภายใต้ CT แล้วพิจารณา **interval appendectomy** ประมาณ 6–8 สัปดาห์ (ตัดสินร่วมกับผู้ป่วย; ผู้สูงอายุต้องตรวจ colonoscopy/หา neoplasm)\n- หลัง source control ครบในรายแตก ให้ยาปฏิชีวนะประมาณ **4 วัน** (STOP-IT trial)\n\n### Appendix mass vs abscess vs phlegmon\n| ภาวะ | การจัดการ |\n|---|---|\n| **Phlegmon** (ก้อนอักเสบไม่มีหนอง) | **antibiotics**, สังเกตอาการ |\n| Abscess ขนาดใหญ่พอเจาะได้ | **percutaneous drainage** + antibiotics |\n| **Free perforation**, generalized peritonitis | **ผ่าตัดด่วน** |\n| ไม่ดีขึ้นจาก conservative | ผ่าตัด |\n",
+   "pearls": [
+    "Migration of pain เป็นอาการที่ช่วยมากที่สุดในประวัติ",
+    "Alvarado ≥7 โอกาสสูง · 5–6 ต้องทำ imaging/สังเกต · ≤4 โอกาสน้อย",
+    "CT sens/spec ราว 0.96 · US ราว 0.85/0.90 · MRI สำหรับหญิงตั้งครรภ์",
+    "ไส้ติ่งกดยุบและน้อยกว่า 5 mm บน US แทบตัดโรค",
+    "Uncomplicated: ยาเข็มเดียวก่อนผ่า ไม่ต้องให้ต่อหลังผ่า",
+    "Abscess ที่ stable: percutaneous drainage + antibiotics",
+    "Antibiotic-only: ราว 1 ใน 4 ต้องผ่าตัดใน 1 ปี"
+   ],
+   "mnem": [
+    {
+     "name": "MANTRELS",
+     "what": "Alvarado score สำหรับไส้ติ่งอักเสบ (รวม 10 คะแนน)",
+     "lines": [
+      [
+       "M",
+       "Migration of pain to RLQ (1)"
+      ],
+      [
+       "A",
+       "Anorexia (1)"
+      ],
+      [
+       "N",
+       "Nausea/vomiting (1)"
+      ],
+      [
+       "T",
+       "Tenderness RLQ (2)"
+      ],
+      [
+       "R",
+       "Rebound (1)"
+      ],
+      [
+       "E",
+       "Elevated temperature (1)"
+      ],
+      [
+       "L",
+       "Leukocytosis (2)"
+      ],
+      [
+       "S",
+       "Shift to left (1)"
+      ]
+     ],
+     "note": "T และ L ได้ 2 คะแนน ที่เหลือ 1"
+    }
+   ],
+   "items": [
+    {
+     "id": "N3-06-2-1",
+     "kind": "mcq",
+     "topic": "Appendicitis — Alvarado and next step",
+     "stem": "A 19-year-old man has periumbilical pain for 14 hours that moved to the right lower quadrant, with anorexia and one episode of vomiting. Temperature 37.9°C. There is RLQ tenderness with rebound. WBC 14,800/mm3 with 82% neutrophils. Urinalysis is normal. What is the most appropriate management?",
+     "choices": [
+      "Surgical consultation for appendectomy with preoperative antibiotics",
+      "Discharge with oral antibiotics and review in 48 hours",
+      "CT abdomen before any surgical referral is made",
+      "Colonoscopy to exclude cecal pathology",
+      "Observation without antibiotics and repeat WBC in 24 hours"
+     ],
+     "answer": 0,
+     "explain": "ชายหนุ่มที่มี migration, anorexia, vomiting, RLQ tenderness, rebound, ไข้, WBC สูง และ neutrophil shift ได้ **Alvarado 10 คะแนน** โอกาสเป็นไส้ติ่งอักเสบสูงมาก การวินิจฉัยทางคลินิกในชายหนุ่มเชื่อถือได้ จึงให้ **prophylactic antibiotic** และผ่าตัด appendectomy\n- **กลับบ้านพร้อมยา** ไม่เหมาะกับคะแนนสูง และ antibiotic-only ต้องทำโดยศัลยแพทย์ร่วมกับผู้ป่วย มีโอกาสกลับเป็นซ้ำ\n- **CT ก่อนปรึกษา** ไม่จำเป็นในชายหนุ่มคะแนนสูง ภาพถ่ายใช้กับรายที่ไม่ชัดหรือเสี่ยงสูง\n- **Colonoscopy** ไม่มีบทบาทในภาวะเฉียบพลัน\n- **Observation ไม่ให้ยา 24 ชม.** เสี่ยงแตก",
+     "pearl": "Alvarado ≥7 ในชายหนุ่ม → ผ่าตัดได้เลย ไม่ต้องรอ CT",
+     "src": "Schwartz 11e Ch 30",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 30"
+     ]
+    },
+    {
+     "id": "N3-06-2-2",
+     "kind": "mcq",
+     "topic": "Perforated appendicitis with abscess",
+     "stem": "A 46-year-old woman presents with 6 days of right lower quadrant pain and fever. She is alert, pulse 98/min, BP 128/78 mmHg. A tender mass is felt in the RLQ without generalized peritonitis. CT shows a 5-cm rim-enhancing fluid collection adjacent to the cecum with an appendicolith. What is the best initial management?",
+     "choices": [
+      "IV antibiotics with CT-guided percutaneous drainage",
+      "Immediate open appendectomy with drainage",
+      "Oral antibiotics and outpatient follow-up",
+      "Immediate right hemicolectomy",
+      "Colonoscopy to obtain tissue diagnosis"
+     ],
+     "answer": 0,
+     "explain": "ไส้ติ่งแตกที่ **มาช้าและเป็น abscess ล้อมรอบ** ในผู้ป่วยที่ไม่ septic ให้ **resuscitate + IV antibiotics + percutaneous image-guided drainage** สำเร็จราว 80% การผ่าตัดทันทีในพังผืดอักเสบหนาเสี่ยง fistula และต้องตัดลำไส้มากเกินจำเป็น ต่อมาพิจารณา interval appendectomy และในวัยนี้ควรตรวจ colonoscopy หลังหายเพื่อหา neoplasm\n- **Immediate appendectomy** เก็บไว้สำหรับรายที่ septic หรือแตกเข้าช่องท้องอิสระ\n- **Oral antibiotics ผู้ป่วยนอก** ไม่เพียงพอสำหรับ abscess 5 cm\n- **Right hemicolectomy ทันที** เป็นการผ่าตัดใหญ่เกินจำเป็นโดยยังไม่มีหลักฐานมะเร็ง\n- **Colonoscopy** ในช่วงอักเสบเฉียบพลันเสี่ยงทะลุ",
+     "pearl": "Appendiceal abscess ที่ stable → drain + antibiotics แล้วค่อยคิด interval appendectomy",
+     "src": "Schwartz 11e Ch 30",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 30"
+     ]
+    },
+    {
+     "id": "N3-06-2-3",
+     "kind": "mcq",
+     "topic": "Appendectomy — postoperative antibiotics",
+     "stem": "A 27-year-old man undergoes laparoscopic appendectomy for a non-perforated, non-gangrenous inflamed appendix. He received one dose of cefoxitin before incision. On the ward the intern asks about antibiotic orders. What is the most appropriate plan?",
+     "choices": [
+      "No further antibiotics after the operation",
+      "IV cefoxitin for 3 days",
+      "Oral amoxicillin–clavulanate for 7 days",
+      "IV piperacillin–tazobactam for 4 days",
+      "IV ceftriaxone plus metronidazole for 10 days"
+     ],
+     "answer": 0,
+     "explain": "ไส้ติ่งอักเสบชนิด **uncomplicated** ต้องการเพียง **prophylactic dose ก่อนลงมีด** หลังผ่าตัดไม่ต้องให้ต่อ เพราะเอาแหล่งติดเชื้อออกหมดแล้ว การให้ยาเกินจำเป็นเพิ่มเชื้อดื้อยาและ C. difficile\n- **Cefoxitin 3 วัน** ไม่มีประโยชน์เพิ่ม\n- **Amoxicillin–clavulanate 7 วัน** ไม่จำเป็นในรายไม่แตก\n- **Piperacillin–tazobactam 4 วัน** เป็นแนวทางของ perforated appendicitis หลัง source control (STOP-IT)\n- **Ceftriaxone + metronidazole 10 วัน** นานเกินแม้ในรายแตก",
+     "pearl": "Uncomplicated appendectomy: ยาเข็มเดียวก่อนผ่า · perforated: ประมาณ 4 วันหลัง source control",
+     "src": "Schwartz 11e Ch 30",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 30"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-06-3",
+   "title": "Cholecystitis vs cholangitis: Tokyo criteria ข้างเตียง",
+   "summary": "แยก biliary colic, acute cholecystitis และ acute cholangitis ด้วยอาการ lab และ US แล้วใช้ TG18 ตัดสินว่าจะผ่าตัดเร็ว ใส่ cholecystostomy หรือระบายท่อน้ำดีด่วน",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 32 — Acute cholecystitis, Cholangitis; Tokyo Guidelines 2018",
+   "md": "### RUQ pain: biliary colic, cholecystitis หรือ cholangitis\nสามโรคนี้เป็นสเปกตรัมของ **นิ่วอุดทางเดินน้ำดีที่ตำแหน่งต่างกัน** แยกกันที่เวลา ไข้ และดีซ่าน\n\n| | Biliary colic | **Acute cholecystitis** | **Acute cholangitis** |\n|---|---|---|---|\n| ตำแหน่งอุด | cystic duct ชั่วคราว | cystic duct ค้าง + อักเสบ | **CBD** + ติดเชื้อ |\n| ปวด | RUQ/ลิ้นปี่ หายภายในไม่กี่ชั่วโมง | ปวดต่อเนื่อง มากกว่า 6 ชม. | RUQ |\n| ไข้ | ไม่มี | มี | มีสูง หนาวสั่น |\n| ดีซ่าน | ไม่มี | ไม่มี/น้อย (bilirubin มักน้อยกว่า 4) | **มี** |\n| ตรวจ | กดเจ็บเล็กน้อย | **Murphy sign** | **Charcot triad** (ไข้ ปวด RUQ ดีซ่าน) |\n| Lab | ปกติ | WBC 12,000–15,000 | WBC สูง, bilirubin + ALP สูง |\n| US | นิ่ว | นิ่ว + ผนังหนา + pericholecystic fluid + sonographic Murphy | **ท่อน้ำดีขยาย** ± นิ่วใน CBD |\n\n> WBC มากกว่า 20,000 ใน cholecystitis ให้คิดถึง gangrene, perforation หรือมี cholangitis ร่วม · ดีซ่านมากใน cholecystitis ให้คิดถึงนิ่วใน CBD หรือ **Mirizzi syndrome**\n\n### Tokyo Guidelines 2018: Acute cholecystitis ข้างเตียง\n**เกณฑ์วินิจฉัย (TG18)** แบ่งเป็น 3 กลุ่ม\n- **A. Local signs**: Murphy sign, RUQ mass/pain/tenderness\n- **B. Systemic signs**: ไข้, CRP สูง, WBC สูง\n- **C. Imaging** เข้ากับ acute cholecystitis\n- Suspected = A + B · **Definite = A + B + C**\n\n| Grade | เกณฑ์ | แนวทาง |\n|---|---|---|\n| **III (severe)** | มี organ dysfunction: ความดันต่ำต้องใช้ vasopressor, ซึมลง, PaO2/FiO2 น้อยกว่า 300, oliguria/Cr มากกว่า 2.0, PT-INR มากกว่า 1.5, platelet น้อยกว่า 100,000 | ICU support; ถ้าพร้อมและทนได้ทำ early lap chole ในศูนย์ที่ชำนาญ ไม่เช่นนั้น **percutaneous cholecystostomy (PTGBD)** |\n| **II (moderate)** | WBC มากกว่า 18,000, คลำได้ก้อนกดเจ็บ RUQ, อาการนานกว่า 72 ชม., อักเสบเฉพาะที่รุนแรง (gangrenous, abscess, emphysematous, biliary peritonitis) | **early lap chole** ในมือผู้ชำนาญ; ถ้าเสี่ยงสูง → PTGBD |\n| **I (mild)** | ไม่เข้า II หรือ III | **early lap chole** |\n\nการรักษาพื้นฐานทุก grade: NPO, IV fluid, analgesia, **ยาปฏิชีวนะครอบคลุม gram-negative enteric และ anaerobe**. Schwartz แนะนำ **early cholecystectomy ภายใน 72 ชั่วโมง** ดีกว่ารอ 6–10 สัปดาห์ (รักษาจบในการนอนครั้งเดียว ฟื้นตัวเร็ว ภาวะแทรกซ้อนไม่ต่างกัน) ผู้ป่วยที่ไม่พร้อมผ่าตัดใช้ **cholecystostomy tube** แล้วถอดเมื่อ tract แข็งแรง (ราว 4 สัปดาห์) และนัดผ่าตัดราว 6–8 สัปดาห์\n\n### Tokyo Guidelines 2018: Acute cholangitis\n**เกณฑ์วินิจฉัย**\n- **A. Systemic inflammation**: ไข้มากกว่า 38°C/หนาวสั่น หรือ lab อักเสบ (WBC ผิดปกติ, CRP สูง)\n- **B. Cholestasis**: **total bilirubin ≥2 mg/dL** หรือ LFT ผิดปกติ (ALP, GGT, AST, ALT มากกว่า 1.5 เท่าของค่าปกติ)\n- **C. Imaging**: ท่อน้ำดีขยาย หรือเห็นสาเหตุ (นิ่ว, stricture, stent)\n- Suspected = A + (B หรือ C) · **Definite = A + B + C**\n\n| Grade | เกณฑ์ | การระบายน้ำดี |\n|---|---|---|\n| **III** | organ dysfunction เช่นเดียวกับ cholecystitis | **urgent drainage** หลัง resuscitation/organ support |\n| **II** | มี 2 ข้อขึ้นไป: WBC มากกว่า 12,000 หรือน้อยกว่า 4,000, ไข้ ≥39°C, อายุ ≥75, bilirubin ≥5 mg/dL, albumin ต่ำ | **early drainage** |\n| **I** | ไม่เข้า II/III | antibiotics; ถ้าไม่ตอบสนองใน 24 ชม. → drainage |\n\n**Reynolds pentad** = Charcot triad + ช็อก + ซึมสับสน บอกว่าต้องระบายด่วน การระบายที่เลือกเป็นอันดับแรกคือ **ERCP + sphincterotomy** (เอานิ่วออก/ใส่ stent, เก็บน้ำดีเพาะเชื้อ) ถ้าทำไม่ได้ใช้ **PTBD**, EUS-guided หรือผ่าตัดใส่ T-tube\n> **Cholecystostomy ไม่ใช่การรักษา cholangitis** เพราะแหล่งติดเชื้ออยู่ในท่อน้ำดี ไม่ใช่ในถุงน้ำดี\n\n### ลำดับคำสั่งการรักษาใน ER\n1. NPO, IV crystalloid, เจาะ **hemoculture** 2 ขวด ก่อนให้ยา\n2. **ยาปฏิชีวนะ** เช่น ceftriaxone + metronidazole หรือ piperacillin–tazobactam (เลือกตามความรุนแรงและเชื้อดื้อยาในโรงพยาบาล)\n3. CBC, LFT, lipase, coagulation (INR สำคัญก่อนเจาะ/ERCP), BUN/Cr, lactate\n4. **Ultrasound RUQ** ภายในวันแรก\n5. ประเมิน TG18 grade → ตัดสินเวลาผ่าตัด/ระบาย และ refer ถ้า รพ. ไม่มี ERCP หรือ interventional radiology\n6. หลังหาย cholangitis จากนิ่ว นัด **cholecystectomy** ตามมา (ราว 6 สัปดาห์ หรือในการนอนครั้งเดียวกันถ้าเหมาะสม)\n",
+   "pearls": [
+    "Cholecystitis = ปวดต่อเนื่อง + Murphy + ไข้ · ดีซ่านเด่นให้คิด CBD stone/Mirizzi",
+    "TG18 definite = local + systemic + imaging",
+    "Early lap chole ภายใน 72 ชม. ดีกว่ารอ 6–10 สัปดาห์",
+    "ผ่าตัดไม่ได้ → percutaneous cholecystostomy",
+    "Charcot triad = ไข้ + ปวด RUQ + ดีซ่าน · Reynolds = + ช็อก + ซึม",
+    "Cholangitis grade III → urgent ERCP drainage หลัง resuscitation",
+    "Cholecystostomy ไม่รักษา cholangitis"
+   ],
+   "items": [
+    {
+     "id": "N3-06-3-1",
+     "kind": "mcq",
+     "topic": "Acute cholangitis — drainage",
+     "stem": "A 72-year-old woman presents with 2 days of RUQ pain, rigors and jaundice. Temperature 39.4°C, pulse 120/min, BP 82/50 mmHg after 2 L of crystalloid, and she is newly confused. Total bilirubin 6.8 mg/dL, ALP 420 U/L, WBC 21,000/mm3. Ultrasound shows gallstones and a dilated common bile duct (12 mm). Antibiotics and norepinephrine have been started. What is the most appropriate next step?",
+     "choices": [
+      "Urgent ERCP with sphincterotomy and biliary drainage",
+      "Percutaneous cholecystostomy",
+      "Emergency open cholecystectomy",
+      "MRCP to confirm the level of obstruction before any intervention",
+      "Continue antibiotics and plan elective cholecystectomy in 6 weeks"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **Reynolds pentad** และ organ dysfunction (ต้องใช้ vasopressor, ซึม) = **TG18 grade III cholangitis** หลัง resuscitation และให้ยาปฏิชีวนะต้อง **ระบายท่อน้ำดีด่วน** วิธีแรกคือ ERCP + sphincterotomy (เอานิ่วออกหรือใส่ stent) ถ้าไม่มีใช้ PTBD\n- **Percutaneous cholecystostomy** ไม่ระบาย CBD ที่อุดอยู่ จึงไม่ใช่การรักษา cholangitis\n- **Emergency open cholecystectomy** ในผู้ป่วยช็อกเสี่ยงสูงและไม่แก้ CBD โดยตรง\n- **MRCP ก่อน** ทำให้ล่าช้า US พบท่อขยายและนิ่วแล้ว\n- **ให้ยาอย่างเดียว** ไม่พอใน grade III",
+     "pearl": "Cholangitis + ช็อก/ซึม = grade III → ERCP drainage ด่วน (ไม่ใช่ cholecystostomy)",
+     "src": "Schwartz 11e Ch 32",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 32"
+     ]
+    },
+    {
+     "id": "N3-06-3-2",
+     "kind": "mcq",
+     "topic": "Acute cholecystitis — timing of surgery",
+     "stem": "A 45-year-old woman has 36 hours of constant RUQ pain and fever 38.3°C. Murphy sign is positive. WBC 13,500/mm3, bilirubin 1.1 mg/dL, ALP and lipase normal. Ultrasound shows gallstones, a 6-mm gallbladder wall and pericholecystic fluid. She has no comorbidities. After IV fluids and antibiotics, what is the best definitive plan?",
+     "choices": [
+      "Laparoscopic cholecystectomy during this admission, within 72 hours of onset",
+      "Discharge on oral antibiotics and elective cholecystectomy in 6–10 weeks",
+      "Percutaneous cholecystostomy followed by interval cholecystectomy",
+      "ERCP with sphincterotomy",
+      "Ursodeoxycholic acid for 6 months"
+     ],
+     "answer": 0,
+     "explain": "เข้าเกณฑ์ **definite acute cholecystitis (A + B + C)** และเป็น **grade I** ในผู้ป่วยแข็งแรง การรักษาที่ดีที่สุดคือ **early laparoscopic cholecystectomy** ภายใน 72 ชั่วโมงจากเริ่มอาการ ซึ่งให้ผลดีกว่าแบบรอ: นอน รพ. ครั้งเดียว ฟื้นเร็ว ภาวะแทรกซ้อนเท่ากัน\n- **รอผ่าตัด 6–10 สัปดาห์** เสี่ยงกลับมาเป็นซ้ำระหว่างรอและนอน รพ. หลายครั้ง\n- **Cholecystostomy** สำหรับผู้ป่วยที่ไม่พร้อมผ่าตัดหรือ grade III เท่านั้น\n- **ERCP** ใช้เมื่อมีนิ่วใน CBD หรือ cholangitis รายนี้ bilirubin และ ALP ปกติ\n- **Ursodeoxycholic acid** ไม่มีบทบาทในภาวะเฉียบพลัน",
+     "pearl": "Acute cholecystitis ที่ fit → early lap chole ภายใน 72 ชม.",
+     "src": "Schwartz 11e Ch 32",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 32"
+     ]
+    },
+    {
+     "id": "N3-06-3-3",
+     "kind": "mcq",
+     "topic": "Acute cholecystitis — high-risk patient",
+     "stem": "An 84-year-old man with severe ischemic cardiomyopathy (ejection fraction 20%) and COPD on home oxygen has 4 days of RUQ pain and fever. Ultrasound shows a distended gallbladder with stones, wall thickening and pericholecystic fluid. Despite 24 hours of IV antibiotics and fluids he remains febrile with worsening RUQ tenderness. Bilirubin is 1.4 mg/dL and the CBD is not dilated. What is the most appropriate next step?",
+     "choices": [
+      "Percutaneous cholecystostomy",
+      "Emergency laparoscopic cholecystectomy",
+      "ERCP with biliary stent",
+      "Change antibiotics and continue observation for 1 week",
+      "HIDA scan to confirm the diagnosis"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี acute cholecystitis ที่ไม่ตอบสนองต่อยา และ **ความเสี่ยงการผ่าตัด/ดมยาสูงมาก** ทางเลือกคือ **percutaneous cholecystostomy** เพื่อระบายถุงน้ำดี ซึ่งมักทำให้อาการดีขึ้น แล้วพิจารณาผ่าตัดภายหลังถ้าร่างกายพร้อม ถ้าไม่ดีขึ้นหลังใส่ท่อให้คิดถึง gangrene/perforation\n- **Emergency lap chole** เสี่ยงต่อชีวิตจากโรคหัวใจและปอด\n- **ERCP** ระบาย CBD ซึ่งไม่ได้อุดตัน ไม่ช่วยถุงน้ำดี\n- **เปลี่ยนยาแล้วรอ 1 สัปดาห์** เสี่ยง gangrene และ perforation\n- **HIDA scan** ไม่จำเป็นเพราะ US วินิจฉัยได้ชัดแล้ว",
+     "pearl": "Cholecystitis + ผ่าตัดไม่ได้ → cholecystostomy (ใช้ได้กับถุงน้ำดี ไม่ใช่ CBD)",
+     "src": "Schwartz 11e Ch 32",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 32"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-06-4",
+   "title": "Perforated viscus, bowel obstruction & mesenteric ischemia",
+   "summary": "รู้จักและจัดการสามภาวะที่ฆ่าผู้ป่วยได้หากช้า: กระเพาะ/ลำไส้ทะลุ ลำไส้อุดตันที่ขาดเลือด และลำไส้ขาดเลือดเฉียบพลัน",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 26 — Perforated peptic ulcer; Ch 28 — SBO, mesenteric ischemia; Ch 23 — mesenteric arterial disease",
+   "md": "### Perforated peptic ulcer\n- ประวัติ: ปวดลิ้นปี่ทันทีรุนแรง **บอกเวลาได้** ผู้ป่วยมักใช้ **NSAIDs/aspirin**, สูบบุหรี่, มี H. pylori ในช่วงแรกเป็น chemical peritonitis แล้วกลายเป็น bacterial peritonitis ภายในไม่กี่ชั่วโมง\n- ตรวจ: ท้องแข็งทั้งท้อง (**board-like rigidity**), rebound, ผู้ป่วยนอนนิ่ง\n- **Upright CXR** เห็น free air ประมาณ 80% ถ้าไม่เห็นแต่สงสัยมาก → CT\n- การรักษา: resuscitate (third-space loss มาก), NG tube, analgesia, broad-spectrum antibiotics, **IV PPI**, แล้วผ่าตัด\n- Duodenal ulcer perforation: **omental (Graham) patch** ผ่านกล้องหรือเปิดท้อง + ล้างช่องท้อง · Gastric ulcer perforation: ต้อง **biopsy** หรือตัดขอบแผลเพราะอาจเป็นมะเร็ง\n- **Nonoperative** เฉพาะผู้ป่วยคงที่ ไม่มี peritonitis และมี contrast study ยืนยันว่ารูปิดแล้ว\n- หลังผ่าตัด: ตรวจและกำจัด **H. pylori**, หยุด NSAIDs, PPI ระยะยาว\n\n### Small bowel obstruction: แยกสี่คำถาม\n| คำถาม | สิ่งที่ช่วยตอบ |\n|---|---|\n| Mechanical หรือ ileus | ปวดบิด bowel sound สูง vs เงียบ; มี transition zone บน CT |\n| สาเหตุอะไร | **adhesion** (แผลผ่าตัดเก่า) พบบ่อยสุด, **hernia** (ตรวจขาหนีบเสมอ), tumor, gallstone ileus |\n| Partial หรือ complete | ยังผายลม/ถ่ายหลังเริ่มอาการ 6–12 ชม. = partial |\n| Simple หรือ **strangulated** | ไข้ ชีพจรเร็ว ปวดต่อเนื่องเกินสัดส่วน เจ็บเฉพาะที่ WBC สูง acidosis |\n\nภาพถ่าย: **AXR** (supine + upright + upright CXR) เห็นลำไส้เล็กขยายมากกว่า 3 cm, air-fluid levels, ลมใน colon น้อย sensitivity 70–80% · **CT** (sens 80–90%) ใช้หา transition zone, **closed loop** (ลำไส้รูป U/C, mesentery หมุนเข้าหาจุดบิด) และสัญญาณ strangulation (ผนังหนา enhance ไม่ดี **pneumatosis**, portal venous gas, mesenteric haziness)\n\n### Adhesive SBO: conservative หรือผ่าตัด\n**Strangulation/peritonitis/closed loop** → ไปห้องผ่าตัด\nถ้าไม่มี → **\"drip and suck\"**: NPO, IV fluid แก้ electrolytes (K⁺), **NG decompression**, Foley วัดปัสสาวะ, serial abdominal exam\n- ให้ **water-soluble contrast (Gastrografin) ประมาณ 100 mL ทาง NG** แล้วถ่าย AXR ตามแผนภูมิใน Schwartz ราว 8 ชั่วโมง ถ้า **contrast ถึง colon ภายใน 24 ชม.** ทำนายว่าหายโดยไม่ผ่าตัด (sens 92% spec 93%) และยังลดอัตราผ่าตัดและวันนอน\n- ไม่ดีขึ้นหรือแย่ลงระหว่างสังเกต → ผ่าตัด lysis of adhesions ตรวจความมีชีวิตของลำไส้ (สี peristalsis ชีพจรที่ mesentery)\n- **ไม่มีแผลผ่าตัดเก่า (virgin abdomen)** + SBO → ต้องหาสาเหตุ (hernia, tumor) มักต้องผ่าตัด\n- Incarcerated hernia ที่ดันไม่เข้าหรือสงสัย strangulation → ผ่าตัดด่วน\n\n### Acute mesenteric ischemia\n- Hallmark: **ปวดท้องรุนแรงไม่สมกับการตรวจ** (pain out of proportion) ในผู้สูงอายุที่มี **AF** โรคหัวใจ หรือหลอดเลือดแข็ง ระยะแรกท้องนุ่ม ต่อมาท้องอืด peritonitis ถ่ายเป็นเลือด\n- ลำไส้เริ่มลอกของเยื่อบุภายในราว 3 ชั่วโมง และตายทั้งชั้นได้ภายในราว 6 ชั่วโมง → เวลาคือลำไส้\n\n| ชนิด | ลักษณะ | ตำแหน่ง/ภาพ |\n|---|---|---|\n| **Embolus** (มากกว่า 50%) | AF, MI, ลิ้นหัวใจ | ติดที่ SMA ส่วนกลาง ใต้ middle colic |\n| **Thrombosis** | หลอดเลือดแข็ง มีประวัติ intestinal angina | SMA ต้นทาง |\n| **NOMI** | ICU, ช็อก, ใช้ vasopressor, digitalis | หลอดเลือดหดทั่ว |\n| **Venous (SMV) thrombosis** (5–15%) | ภาวะเลือดแข็งตัวง่าย | SMV |\n\n- Lab ไม่ไวและไม่จำเพาะ (lactate, acidosis, WBC) AXR มักไม่มีลม (gasless)\n- **CT angiography** เป็นการตรวจหลักในปัจจุบัน; ห้ามสวน barium\n- การรักษา: resuscitation, **systemic heparin**, ยาปฏิชีวนะ, แล้ว **revascularization** (embolectomy/bypass/endovascular) + **ตัดลำไส้ที่ตาย** ± **second-look** 24–48 ชม. · NOMI: แก้สาเหตุ หยุด vasoconstrictor ให้ papaverine ทาง catheter · ผู้ป่วยมี peritonitis → ผ่าตัดทันทีไม่ต้องรอภาพ\n\n### สรุปสัญญาณอันตรายที่ไม่ควรพลาด\n| สัญญาณ | ความหมาย |\n|---|---|\n| Free air บน CXR + peritonitis | perforated viscus → ผ่าตัด |\n| SBO + ไข้ + ชีพจรเร็ว + เจ็บเฉพาะที่ | **strangulation** → ผ่าตัด |\n| ปวดมาก ท้องนุ่ม + AF + lactate สูง | **mesenteric ischemia** → CTA + heparin + revascularize |\n| ลำไส้เล็กโค้งรูป C + vessels หมุน | **closed loop** → ผ่าตัด |\n| Pneumatosis, portal venous gas | ลำไส้ขาดเลือด/ตาย |\n",
+   "pearls": [
+    "Perforated DU: resuscitate + antibiotics + IV PPI → omental patch + washout",
+    "Perforated GU: ต้อง biopsy ขอบแผลเสมอ",
+    "SBO สาเหตุอันดับหนึ่ง = adhesion; ไม่มีแผลผ่าตัดเก่าให้หา hernia/tumor",
+    "Contrast ถึง colon ภายใน 24 ชม. ทำนายหายโดยไม่ผ่าตัด",
+    "Strangulation: ปวดต่อเนื่อง ไข้ ชีพจรเร็ว เจ็บเฉพาะที่ lactate สูง",
+    "Mesenteric ischemia: pain out of proportion + AF → CTA + heparin",
+    "Embolus ติดที่ SMA ใต้ middle colic · thrombosis ที่ต้นทาง SMA"
+   ],
+   "items": [
+    {
+     "id": "N3-06-4-1",
+     "kind": "mcq",
+     "topic": "Adhesive small bowel obstruction",
+     "stem": "A 62-year-old man who had an open sigmoid colectomy 3 years ago presents with 24 hours of colicky abdominal pain, bilious vomiting and distension. Temperature 37.2°C, pulse 92/min, BP 132/80 mmHg. The abdomen is distended and mildly diffusely tender without guarding; hernia orifices are normal. WBC 9,800/mm3, lactate 1.3 mmol/L. CT shows dilated small bowel with a transition zone in the pelvis, no closed loop and normal bowel wall enhancement. After NG decompression and IV fluids, what is the most appropriate next step?",
+     "choices": [
+      "Administer water-soluble contrast via the NG tube and obtain serial abdominal radiographs",
+      "Immediate laparotomy and adhesiolysis",
+      "Colonoscopic decompression",
+      "Start total parenteral nutrition and observe for 2 weeks",
+      "Oral polyethylene glycol bowel preparation"
+     ],
+     "answer": 0,
+     "explain": "เป็น **adhesive SBO** ที่ไม่มีสัญญาณ strangulation (ไม่มีไข้ ชีพจรปกติ ไม่มี guarding lactate ปกติ CT ไม่มี closed loop) จึงรักษาแบบ conservative และให้ **water-soluble contrast ทาง NG** ถ้า contrast ถึง colon ภายใน 24 ชม. ทำนายว่าหายเองได้ดี และยังลดอัตราการผ่าตัดและวันนอน\n- **Immediate laparotomy** สำหรับรายที่มี strangulation, closed loop หรือไม่ดีขึ้น\n- **Colonoscopic decompression** ใช้กับ colonic pseudo-obstruction/sigmoid volvulus ไม่ใช่ลำไส้เล็ก\n- **TPN รอ 2 สัปดาห์** นานเกินไป ถ้าไม่ดีขึ้นใน 3–5 วันควรผ่าตัด\n- **PEG bowel prep** ทางปากห้ามให้ในลำไส้อุดตัน",
+     "pearl": "Adhesive SBO ไม่มี strangulation → NG + IV + Gastrografin challenge",
+     "src": "Schwartz 11e Ch 28",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 28"
+     ]
+    },
+    {
+     "id": "N3-06-4-2",
+     "kind": "mcq",
+     "topic": "Acute mesenteric ischemia",
+     "stem": "A 74-year-old woman with atrial fibrillation who stopped warfarin 2 weeks ago presents with 4 hours of severe periumbilical pain and one episode of diarrhea. She is writhing in pain and requests more morphine. Pulse 124/min irregular, BP 138/84 mmHg. The abdomen is soft with mild tenderness and no guarding. Lactate 4.1 mmol/L, WBC 18,000/mm3. What is the most appropriate next step?",
+     "choices": [
+      "CT angiography of the abdomen and start IV unfractionated heparin",
+      "Upright chest radiograph and serial abdominal examinations",
+      "Barium enema",
+      "Colonoscopy",
+      "Abdominal ultrasound for gallstones"
+     ],
+     "answer": 0,
+     "explain": "ปวดรุนแรง **ไม่สมกับการตรวจท้องที่ยังนุ่ม** ในผู้ป่วย AF ที่หยุดยาต้านเลือดแข็ง + lactate สูง ต้องคิดถึง **embolic acute mesenteric ischemia** ให้ทำ **CTA** ทันทีและเริ่ม **heparin** เพื่อหยุดลิ่มเลือดลุกลาม ระหว่างนี้ resuscitate และเตรียม revascularization/ตัดลำไส้ที่ตาย\n- **CXR + serial exam** ทำให้ล่าช้า ลำไส้ตายทั้งชั้นได้ในราว 6 ชั่วโมง\n- **Barium enema** ห้ามทำ บดบังภาพหลอดเลือดและเสี่ยงรั่วถ้าทะลุ\n- **Colonoscopy** ไม่ประเมินหลอดเลือดและเสี่ยงทะลุ\n- **US หานิ่ว** ไม่ตอบโจทย์อาการนี้",
+     "pearl": "AF + pain out of proportion + lactate สูง → CTA + heparin ทันที",
+     "src": "Schwartz 11e Ch 28",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 28"
+     ]
+    },
+    {
+     "id": "N3-06-4-3",
+     "kind": "mcq",
+     "topic": "Strangulated obstruction recognition",
+     "stem": "A 55-year-old man with prior appendectomy presents with 18 hours of colicky pain and vomiting. Initially managed with NG tube and IV fluids. Six hours later the pain becomes constant. Temperature 38.4°C, pulse 122/min. There is now focal tenderness with guarding in the right lower abdomen. WBC 19,000/mm3, lactate 3.8 mmol/L. What is the most appropriate management?",
+     "choices": [
+      "Proceed to urgent exploratory laparotomy after resuscitation and antibiotics",
+      "Give water-soluble contrast and repeat radiograph in 8 hours",
+      "Continue NG decompression and recheck lactate in 12 hours",
+      "Insert a long intestinal tube and observe",
+      "Increase analgesia and reassess the next morning"
+     ],
+     "answer": 0,
+     "explain": "การเปลี่ยนจาก **ปวดบิดเป็นปวดต่อเนื่อง + ไข้ + ชีพจรเร็ว + เจ็บเฉพาะที่มี guarding + WBC และ lactate สูง** คือสัญญาณ **strangulated obstruction** ต้องผ่าตัดด่วนหลังให้สารน้ำและยาปฏิชีวนะ เพื่อแก้การอุดและตัดลำไส้ที่ตาย ความล่าช้าเพิ่มอัตราตายชัดเจน\n- **Water-soluble contrast** ใช้กับรายที่ไม่มี strangulation เท่านั้น\n- **NG ต่อ รอ 12 ชม.** อันตรายเพราะลำไส้ขาดเลือดอยู่\n- **Long intestinal tube** ไม่ได้ดีกว่า NG และไม่แก้ ischemia\n- **เพิ่มยาแก้ปวดรอพรุ่งนี้** เป็นความผิดพลาดร้ายแรง",
+     "pearl": "SBO ที่ปวดเปลี่ยนเป็นต่อเนื่อง + SIRS + เจ็บเฉพาะที่ = strangulation → ผ่าตัด",
+     "src": "Schwartz 11e Ch 28",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 28"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-06-MEQ1",
+   "part": "MEQ",
+   "topic": "Acute cholangitis in an elderly patient — TG18 grading, drainage, definitive care",
+   "vignette": "หญิงไทยอายุ 76 ปี เป็นเบาหวานและความดันโลหิตสูง มา รพช. ด้วยปวดท้องใต้ชายโครงขวา 2 วัน ไข้หนาวสั่น ปัสสาวะสีเข้ม ญาติสังเกตว่าตาเหลือง วันนี้พูดสับสน\n\nPE: T 39.2°C, PR 118/min, BP 88/52 mmHg, RR 24/min, sclera icteric, กดเจ็บ RUQ ไม่มี guarding ทั่วท้อง\n\n| Lab | ผล |\n|---|---|\n| WBC | 19,800/mm³ (neutrophil 90%) |\n| Total/direct bilirubin | 5.6 / 4.4 mg/dL |\n| ALP / AST / ALT | 410 / 180 / 210 U/L |\n| Platelet | 96,000/mm³ |\n| Cr | 2.3 mg/dL |\n| PT-INR | 1.3 |\n| Lipase | ปกติ |\n\nUS ข้างเตียง: มีนิ่วในถุงน้ำดีหลายก้อน ผนังไม่หนา CBD 13 mm มีเงานิ่วปลาย CBD",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยและระดับความรุนแรงตาม Tokyo Guidelines 2018 พร้อมเหตุผล",
+     "a": "**Acute cholangitis (definite)** จากนิ่วใน CBD (choledocholithiasis)\n- A systemic inflammation: ไข้ 39.2°C, WBC สูง\n- B cholestasis: bilirubin 5.6 mg/dL, ALP/AST/ALT สูง\n- C imaging: CBD ขยาย 13 mm + นิ่วปลาย CBD\n**Grade III (severe)** เพราะมี organ dysfunction: ความดันต่ำ (ต้องประเมินว่าตอบสนองต่อสารน้ำหรือต้องใช้ vasopressor), **ซึมสับสน**, Cr มากกว่า 2.0, platelet น้อยกว่า 100,000 · มี **Reynolds pentad** ครบ\nเกณฑ์ให้คะแนน: วินิจฉัยถูก 1, ระบุเกณฑ์ A/B/C 1, grade III พร้อม organ dysfunction อย่างน้อย 2 ข้อ 1"
+    },
+    {
+     "q": "2. จงเขียนคำสั่งการรักษาเบื้องต้นใน ER ก่อนส่งต่อ",
+     "a": "- **Resuscitation**: O₂, เปิด IV 2 เส้น, **crystalloid 30 mL/kg** แล้วประเมินซ้ำ ถ้า MAP ยังน้อยกว่า 65 mmHg เริ่ม **norepinephrine**\n- **Hemoculture 2 ขวด** แล้วให้ **ยาปฏิชีวนะภายใน 1 ชั่วโมง** ครอบคลุม gram-negative enteric และ anaerobe เช่น piperacillin–tazobactam (หรือ ceftriaxone + metronidazole ตามบริบท)\n- NPO, **Foley** วัด urine output, เจาะ lactate, coagulation, G/M\n- คุมน้ำตาล, งดยา metformin, ระวังยาที่เป็นพิษต่อไต\n- ติดต่อ **refer ด่วน** ไป รพ. ที่ทำ ERCP/PTBD ได้ พร้อมพยาบาล ติดตาม vital signs ระหว่างทาง"
+    },
+    {
+     "q": "3. เมื่อถึง รพ. ศูนย์ จะระบายท่อน้ำดีด้วยวิธีใด เมื่อใด และถ้าทำวิธีแรกไม่ได้จะทำอย่างไร",
+     "a": "**Urgent biliary drainage** ทันทีที่ผู้ป่วยได้รับ resuscitation/organ support พอให้ทำหัตถการได้\n- วิธีแรก: **ERCP + endoscopic sphincterotomy** เอานิ่วออก ถ้าผู้ป่วยไม่คงที่ใส่ **biliary stent/nasobiliary drain** อย่างเดียวให้สั้นที่สุด แล้วเอานิ่วออกภายหลัง\n- ถ้า ERCP ไม่สำเร็จ/ทำไม่ได้: **PTBD** หรือ EUS-guided drainage ทางเลือกสุดท้ายคือผ่าตัด CBD exploration + T-tube\n- **ไม่ใช้ percutaneous cholecystostomy** เพราะไม่ระบาย CBD\n- แก้ coagulopathy/platelet ถ้าจำเป็นก่อนทำ sphincterotomy"
+    },
+    {
+     "q": "4. หลังระบายแล้วไข้ลง สามวันต่อมาอาการดีขึ้น จะให้ยาปฏิชีวนะนานเท่าไร และวางแผนระยะยาวอย่างไร",
+     "a": "- ยาปฏิชีวนะ **ราว 4–7 วันหลัง source control** สำเร็จ (ปรับตามผลเพาะเชื้อ; ถ้ามี bacteremia จาก gram-positive เช่น enterococcus อาจให้อย่างน้อย 2 สัปดาห์)\n- นิ่วมาจากถุงน้ำดี จึงต้องทำ **laparoscopic cholecystectomy** หลังหาย โดยทั่วไปราว **6 สัปดาห์** หรือในการนอนครั้งเดียวกันถ้าผู้ป่วยฟื้นดีและทีมพร้อม เพื่อป้องกันการกลับเป็นซ้ำ\n- ถ้าใส่ stent ไว้ ต้องนัดเอา stent ออก/เปลี่ยน และ clear CBD ให้หมด\n- ประเมินความพร้อมผ่าตัดของผู้สูงอายุ (เบาหวาน หัวใจ ไต)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 32",
+    "Tokyo Guidelines 2018"
+   ]
+  },
+  {
+   "id": "N3-06-MEQ2",
+   "part": "MEQ",
+   "topic": "Small bowel obstruction — conservative trial to strangulation",
+   "vignette": "ชายไทยอายุ 60 ปี เคยผ่าตัดเปิดท้องจากอุบัติเหตุรถจักรยานยนต์เมื่อ 10 ปีก่อน มาด้วยปวดท้องบิดเป็นพัก ๆ รอบสะดือ 1 วัน อาเจียนสีเขียว 5 ครั้ง ไม่ผายลมและไม่ถ่ายตั้งแต่เมื่อวาน\n\nPE: T 37.4°C, PR 100/min, BP 124/76 mmHg, ท้องอืด มีแผลเป็นกลางท้อง bowel sound ดังเสียงสูง กดเจ็บทั่วไปเล็กน้อย ไม่มี guarding ขาหนีบไม่มีก้อน\n\nLab: Na 133, K 3.1, Cl 95, HCO₃ 28 mEq/L, BUN 32, Cr 1.3 mg/dL, WBC 10,500, lactate 1.5 mmol/L\n\nAXR: ลำไส้เล็กขยายหลายขด ขนาด 4 cm มี air-fluid levels หลายระดับในท่ายืน ลมใน colon น้อย",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยที่เป็นไปได้มากที่สุด สาเหตุ และบอกว่ามีหรือไม่มีลักษณะ strangulation",
+     "a": "**Mechanical small bowel obstruction** น่าจะเป็น **complete** (ไม่ผายลม) จาก **adhesion** (เคยผ่าตัดเปิดท้อง ขาหนีบปกติ)\nยัง **ไม่มีลักษณะ strangulation**: ไม่มีไข้ ชีพจร 100 (ต้องดูหลังให้สารน้ำ) ไม่มีปวดต่อเนื่อง/เจ็บเฉพาะที่/guarding, WBC และ lactate ปกติ\nภาวะ hypokalemic hypochloremic alkalosis เล็กน้อยและ prerenal จากอาเจียน"
+    },
+    {
+     "q": "2. จงเขียนคำสั่งการรักษาในหอผู้ป่วย 24 ชั่วโมงแรก",
+     "a": "- **NPO**, ใส่ **NG tube** ต่อ suction บันทึกปริมาณ\n- **IV balanced crystalloid** แก้ขาดน้ำ แล้ว maintenance + ทดแทน NG loss, เติม **KCl** เมื่อปัสสาวะออก\n- **Foley** วัด urine output เป้าหมายอย่างน้อย 0.5 mL/kg/h\n- ระงับปวด, ติดตาม vital signs ทุก 2–4 ชม., **serial abdominal exam** โดยศัลยแพทย์คนเดิม\n- **Water-soluble contrast (Gastrografin) ราว 100 mL ทาง NG** แล้วปิด NG ชั่วคราว ถ่าย AXR ตาม protocol (เช่น 8 ชม. และถึง 24 ชม.)\n- CT abdomen with IV contrast ถ้ายังสงสัยสาเหตุ/closed loop"
+    },
+    {
+     "q": "3. 12 ชั่วโมงต่อมา ปวดเปลี่ยนเป็นตลอดเวลา T 38.3°C, PR 124/min กดเจ็บเฉพาะที่ด้านซ้ายมี guarding, WBC 17,000, lactate 3.6 จะทำอย่างไร",
+     "a": "นี่คือสัญญาณ **strangulated obstruction** (ปวดต่อเนื่อง ไข้ ชีพจรเร็ว peritoneal signs เฉพาะที่ WBC/lactate สูง)\n- หยุดการรักษาแบบ conservative → **ผ่าตัดด่วน (exploratory laparotomy)**\n- ก่อนผ่าตัด: resuscitate, **broad-spectrum antibiotics**, G/M, consent รวมถึงโอกาสตัดลำไส้และ stoma\nเกณฑ์ให้คะแนน: บอก strangulation 1, ตัดสินผ่าตัดด่วนไม่รอ contrast/CT 2, เตรียมผ่าตัดครบ 1"
+    },
+    {
+     "q": "4. ในห้องผ่าตัดพบ band adhesion รัดลำไส้เล็กยาว 40 cm สีคล้ำ หลังตัด band แล้วจะประเมินและจัดการลำไส้อย่างไร",
+     "a": "- ประเมินความมีชีวิต: **สี, peristalsis, การเต้นของหลอดเลือด mesentery** หลังห่อผ้าชุบน้ำอุ่นรอสักครู่ (อาจใช้ Doppler หรือ fluorescein ช่วยในรายก้ำกึ่ง)\n- ส่วนที่ตายชัดหรือสั้นและก้ำกึ่ง → **ตัดออกและต่อ primary anastomosis** ถ้าผู้ป่วยคงที่\n- ถ้าส่วนที่ก้ำกึ่งยาวมาก → เก็บไว้และ **second-look ใน 24–48 ชม.** เพื่อลดความเสี่ยง short bowel\n- ถ้าผู้ป่วยไม่คงที่ → damage control (ตัดส่วนตาย ปิดปลาย ยังไม่ต่อ ปิดท้องชั่วคราว)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 28"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-06-OSCE1",
+   "topic": "Abdominal examination — right lower quadrant pain",
+   "station": "สถานี 7 นาที · ตรวจร่างกาย",
+   "instruction": "**สถานการณ์**: ชายไทยอายุ 22 ปี มาห้องฉุกเฉินด้วยปวดท้องรอบสะดือ 12 ชั่วโมง ต่อมาย้ายไปปวดท้องน้อยด้านขวา เบื่ออาหาร คลื่นไส้\n\n**คำสั่ง**: จงตรวจร่างกายระบบทางเดินอาหารที่เกี่ยวข้องในผู้ป่วยจำลอง (SP) พร้อมบอกผู้คุมสอบถึงสิ่งที่ตรวจและสิ่งที่ต้องการค้นหา ใน 6 นาที นาทีสุดท้ายผู้คุมสอบจะถามการวินิจฉัยแยกโรคและการตรวจเพิ่มเติม\n\n(ไม่ต้องตรวจ PR/PV ใน SP ให้บอกผู้คุมสอบว่าจะตรวจและหาอะไร)",
+   "answer": "1. ล้างมือ แนะนำตัว ยืนยันชื่อผู้ป่วย ขออนุญาต จัดท่านอนหงายราบ เปิดเผยหน้าท้องตั้งแต่ราวนมถึงต้นขา ปกปิดส่วนอื่น ถามว่าปวดตรงไหนก่อนตรวจ (1)\n2. ดู general appearance และ vital signs: ไข้ ชีพจร ผู้ป่วยนอนนิ่ง/งอสะโพกขวา (1)\n3. ดูหน้าท้อง: distension, แผลผ่าตัด, การเคลื่อนไหวตามการหายใจ ให้ผู้ป่วยไอ (Dunphy sign) (1)\n4. คลำเบาจากจุดที่ไม่ปวด (ซ้ายบน) วนมาจุดปวดท้ายสุด ดูสีหน้าผู้ป่วยตลอด (1)\n5. หา **McBurney point tenderness** อธิบายตำแหน่ง (หนึ่งในสามจาก ASIS ถึงสะดือ) และ guarding (1)\n6. ตรวจ **rebound tenderness** หรือใช้ percussion tenderness แทนเพื่อลดความเจ็บ (1)\n7. **Rovsing sign** (กด LLQ ปวด RLQ) (1)\n8. **Psoas sign** (นอนตะแคงซ้าย เหยียดสะโพกขวา) และ **obturator sign** (งอสะโพกและเข่า 90° แล้วหมุนเข้าใน) (1)\n9. คลำก้อนที่ RLQ (appendix mass), ตับ ม้าม ไต, ตรวจ **CVA tenderness** (1)\n10. ฟัง bowel sound, ตรวจ **hernia orifices** และอัณฑะ (แยก torsion) (1)\n11. บอกว่าจะตรวจ **PR** หา tenderness ด้านขวา (pelvic appendix) และในผู้หญิงตรวจภายในหา cervical motion tenderness (1)\n12. ขอบคุณ ปิดผ้า สรุปผลและ DDx: acute appendicitis, mesenteric adenitis, ureteric colic, Meckel diverticulitis, terminal ileitis; ส่ง CBC, CRP, UA (ในหญิงเพิ่ม hCG) คำนวณ Alvarado (1)\n\n**Critical fails**: คลำจุดปวดก่อนหรือคลำลึกแรงจนผู้ป่วยเจ็บมาก, ไม่ตรวจ hernia orifices/อัณฑะ, ไม่ขออนุญาตหรือไม่ปกปิดร่างกาย"
+  },
+  {
+   "id": "N3-06-OSCE2",
+   "topic": "Explaining appendectomy and obtaining informed consent",
+   "station": "สถานี 5 นาที · สื่อสาร",
+   "instruction": "**สถานการณ์**: หญิงไทยอายุ 28 ปี ได้รับการวินิจฉัย acute appendicitis (CT ยืนยัน ไม่แตก, urine hCG ลบ) ศัลยแพทย์วางแผนผ่าตัด laparoscopic appendectomy คืนนี้ ผู้ป่วยกลัวการผ่าตัดและถามว่า \"กินยาฆ่าเชื้อแทนได้ไหม\"\n\n**คำสั่ง**: จงอธิบายโรค การผ่าตัด ทางเลือก และความเสี่ยงแก่ผู้ป่วย (SP) และขอความยินยอม",
+   "answer": "1. แนะนำตัว ยืนยันตัวผู้ป่วย ถามความเข้าใจเดิมและความกังวล (1)\n2. อธิบายโรคด้วยภาษาง่าย: ไส้ติ่งอุดตันและอักเสบ ถ้าปล่อยไว้อาจแตกเป็นหนองในท้อง (1)\n3. อธิบายการผ่าตัดส่องกล้อง: ดมยาสลบ แผลเล็ก 3 จุด ตัดไส้ติ่งออก อาจต้องเปลี่ยนเป็นผ่าตัดเปิดถ้าอักเสบมาก/มองไม่เห็น (1)\n4. ประโยชน์: รักษาหายขาด ลดโอกาสแตก นอน รพ. ราว 1–2 วัน (1)\n5. ความเสี่ยง: แผลติดเชื้อ, หนองในท้อง, เลือดออก, บาดเจ็บลำไส้/กระเพาะปัสสาวะ, ไส้เลื่อนที่แผล, ความเสี่ยงการดมยา, อาจพบว่าไส้ติ่งปกติและพบโรคอื่น (1)\n6. **ทางเลือก antibiotics อย่างเดียว**: ตอบตรงไปตรงมาว่าทำได้ในบางราย แต่ประมาณ 1 ใน 4 ต้องผ่าตัดภายใน 1 ปี และถ้ากลับเป็นซ้ำอาจรุนแรงกว่า มาตรฐานยังเป็นผ่าตัด เคารพการตัดสินใจ (shared decision-making) (2)\n7. ถ้าไม่รักษา: เสี่ยงแตก peritonitis ติดเชื้อในกระแสเลือด (1)\n8. การเตรียมตัว: งดน้ำงดอาหาร ให้ยาฆ่าเชื้อก่อนผ่า ลุกเดินเร็ว กลับไปทำงานเบาได้ในไม่กี่วัน (1)\n9. ตรวจสอบความเข้าใจ (teach-back) เปิดโอกาสให้ถาม ให้เวลาตัดสินใจและให้ญาติร่วมรับรู้ถ้าผู้ป่วยต้องการ แล้วลงนามยินยอม (1)\n\n**Critical fails**: บังคับหรือข่มขู่ให้ผ่าตัด, ปฏิเสธว่าไม่มีทางเลือกอื่น, ไม่บอกความเสี่ยงสำคัญ, ใช้ศัพท์แพทย์ไม่อธิบาย"
+  }
+ ]
+}

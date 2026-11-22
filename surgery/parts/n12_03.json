@@ -1,0 +1,474 @@
+{
+ "lec": "03",
+ "date": "Schwartz Ch 4",
+ "title": "Hemostasis, surgical bleeding & transfusion",
+ "subtitle": "ร่างกายห้ามเลือดอย่างไร จะจัดการผู้ป่วยที่เลือดออกง่ายหรือกินยาต้านเลือดแข็งรอบผ่าตัดอย่างไร และจะให้เลือดอย่างถูกข้อบ่งชี้และปลอดภัยได้อย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบายขั้นตอน hemostasis และแปลผล PT/INR, aPTT, platelet count, fibrinogen และ TEG ได้",
+  "เรียนจบแล้วต้องวินิจฉัยและเตรียมผ่าตัดผู้ป่วย hemophilia, vWD, HIT และ coagulopathy จากโรคตับ/ท่อน้ำดีอุดตันได้",
+  "เรียนจบแล้วต้องวางแผนหยุดยา antiplatelet, warfarin, DOAC ก่อนผ่าตัด ตัดสินใจเรื่อง bridging และ reverse ยาในภาวะฉุกเฉินได้",
+  "เรียนจบแล้วต้องเลือกส่วนประกอบของเลือดตามข้อบ่งชี้และ transfusion threshold ปัจจุบัน",
+  "เรียนจบแล้วต้องแยกและจัดการ acute hemolytic reaction, TRALI, TACO และภาวะแทรกซ้อนอื่นจากการให้เลือด",
+  "เรียนจบแล้วต้องอธิบายหลัก damage control resuscitation, massive transfusion protocol และการใช้ tranexamic acid"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 4 Hemostasis, surgical bleeding, and transfusion",
+  "**AABB** red blood cell transfusion thresholds (2016; update 2023) และ platelet transfusion guideline (2015)",
+  "**ACCP/CHEST** Perioperative management of antithrombotic therapy (2022) · BRIDGE trial (NEJM 2015)",
+  "**PROPPR** trial (JAMA 2015) · **CRASH-2** (Lancet 2010) · ATLS 10th edition (2018)"
+ ],
+ "sections": [
+  {
+   "id": "n12-03-1",
+   "title": "Normal hemostasis และ coagulation tests",
+   "summary": "ร่างกายหยุดเลือดอย่างไร และ PT, aPTT, platelet count, TEG แต่ละตัวบอกความผิดปกติที่ขั้นไหน",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 4 — Biology of hemostasis; Tests of hemostasis and blood coagulation",
+   "md": "### 4 ขั้นตอนของการห้ามเลือด\nเมื่อหลอดเลือดฉีกขาด ร่างกายห้ามเลือดด้วย 4 กระบวนการที่ต่อเนื่องและเสริมกัน\n1. **Vasoconstriction** — กล้ามเนื้อเรียบหดตัวทันที ร่วมกับ **thromboxane A₂**, endothelin, serotonin · หลอดเลือดที่ขาดทั้งเส้นหดและปิดได้ดีกว่าหลอดเลือดที่ฉีกด้านข้าง\n2. **Primary hemostasis (platelet plug)** — subendothelial collagen ถูกเปิด → **von Willebrand factor (vWF)** เชื่อม collagen กับ **GP Ib/IX/V** บนเกล็ดเลือด (adhesion) → เกล็ดเลือดหลั่ง ADP, TXA₂, serotonin → **GP IIb/IIIa** จับ **fibrinogen** เชื่อมเกล็ดเลือดเข้าด้วยกัน (aggregation)\n3. **Secondary hemostasis (fibrin)** — coagulation cascade สร้าง thrombin เปลี่ยน fibrinogen เป็น fibrin, factor XIII เชื่อมขวางให้ลิ่มเลือดแข็งแรง\n4. **Fibrinolysis** — tPA เปลี่ยน plasminogen เป็น **plasmin** สลาย fibrin ได้ **D-dimer**/FDPs · ยับยั้งด้วย PAI-1, α2-antiplasmin, TAFI และยา **tranexamic acid**\n\nเกล็ดเลือดปกติ 150,000–400,000/µL อายุ **7–10 วัน** ราว 30% ถูกเก็บในม้าม · เกล็ดเลือดเป็นที่มาของความแข็งแรงของลิ่มเลือดราว 80%\n> Aspirin ยับยั้ง COX ของเกล็ดเลือด **แบบถาวร** (ตลอดอายุเกล็ด) · NSAIDs ยับยั้งแบบ **ชั่วคราว** · COX-2 inhibitor ไม่มีผลต่อเกล็ดเลือด\n\n### Coagulation cascade แบบที่ใช้แปลผล lab\n- **Extrinsic**: tissue factor + **VIIa** → เป็นจุดเริ่มต้นจริงในร่างกาย\n- **Intrinsic**: XII → XI → IX (+ VIII) → ขยายสัญญาณ (tenase)\n- **Common**: X (+ V) → prothrombin (II) → thrombin → fibrinogen (I) → fibrin\n- **Vitamin K–dependent**: **II, VII, IX, X** (+ protein C, S) — factor VII half-life สั้นที่สุด (~4–6 ชม.) จึงทำให้ **PT/INR ยาวก่อน**\n- สารต้าน: **antithrombin** (เป้าของ heparin), protein C/S (เป้าของ factor V Leiden), TFPI\n- Cell-based model: initiation (TF/VIIa บนเซลล์) → amplification (เกล็ดเลือดถูกกระตุ้นด้วย thrombin) → propagation (thrombin burst บนผิวเกล็ดเลือด)\n\n### Coagulation tests: ตรวจอะไร เพี้ยนเมื่อไร\n\n| Test | วัดอะไร | ยาว/ผิดปกติเมื่อ |\n|---|---|---|\n| **PT/INR** | extrinsic + common (VII, X, V, II, fibrinogen) | **warfarin**, ขาด vitamin K, **โรคตับ**, DIC |\n| **aPTT** | intrinsic + common (XII, XI, IX, VIII, X, V, II) | **unfractionated heparin**, **hemophilia A/B**, factor XI deficiency, lupus anticoagulant (ยาวแต่เกิด thrombosis) |\n| **Platelet count** | จำนวน | ITP, HIT, DIC, hypersplenism, dilution |\n| Bleeding time / PFA-100 | การทำงานของเกล็ดเลือด + vWF | **vWD**, aspirin, uremia |\n| **Fibrinogen** | ปกติ 200–400 mg/dL | DIC, massive transfusion, hyperfibrinolysis |\n| **TEG/ROTEM** | การเกิดลิ่มเลือดทั้งกระบวนการใน whole blood | ใช้กำหนดการให้ blood products ในผู้ป่วยเลือดออก |\n\n| ค่าใน TEG | ความหมาย | ถ้าผิดปกติให้ |\n|---|---|---|\n| **R time** ยาว | coagulation factors ช้า | **FFP** |\n| K time ยาว/α-angle ต่ำ | fibrinogen ไม่พอ | **cryoprecipitate**/fibrinogen |\n| **MA** ต่ำ | เกล็ดเลือด (และ fibrinogen) อ่อนแรง | **platelets** (± DDAVP) |\n| **LY30** สูง | hyperfibrinolysis | **tranexamic acid** |\n\n### ประเมินความเสี่ยงเลือดออกก่อนผ่าตัด\n**ประวัติดีที่สุด** — ดีกว่าการส่ง lab คัดกรองทุกคน\n- เคยเลือดออกนานหลังถอนฟัน ผ่าตัดทอนซิล คลอด หรือแผลเล็ก ๆ, ประจำเดือนมาก, ฟกช้ำง่าย, ญาติมีโรคเลือดออกง่าย\n- **ยา**: aspirin, clopidogrel/prasugrel/ticagrelor, warfarin, DOAC, NSAIDs, สมุนไพร (แปะก๊วย กระเทียม น้ำมันปลา)\n- **โรคร่วม**: ตับแข็ง, ไตวาย (uremic platelet dysfunction), ท่อน้ำดีอุดตัน (ขาด vitamin K), ขาดอาหาร\n- รูปแบบเลือดออกช่วยบอกตำแหน่ง: **mucocutaneous/petechiae/เลือดออกทันที** = เกล็ดเลือด/vWF · **ข้อ/กล้ามเนื้อ/เลือดออกช้าหลังผ่าตัด** = coagulation factor\n\n**บริบทไทย**: ผู้ป่วยถูกงูแมวเซา/งูกะปะกัดมีเลือดออกจาก **venom-induced consumption coagulopathy** — ตรวจข้างเตียงด้วย **20-minute whole blood clotting test (20WBCT)** และรักษาด้วย **antivenom** ไม่ใช่ FFP\n",
+   "pearls": [
+    "vWF เชื่อม collagen กับ GP Ib · fibrinogen เชื่อมเกล็ดเลือดผ่าน GP IIb/IIIa",
+    "Vitamin K–dependent: II, VII, IX, X (+ protein C, S) · VII half-life สั้นสุด → INR ยาวก่อน",
+    "PT/INR = warfarin, vit K, ตับ · aPTT = heparin, hemophilia",
+    "Aspirin ยับยั้ง COX ถาวรตลอดอายุเกล็ด 7–10 วัน",
+    "TEG: R → FFP · angle/K → cryo · MA → platelet · LY30 → TXA",
+    "ประวัติเลือดออกดีกว่าการคัดกรองด้วย lab ในทุกคน",
+    "เลือดออกตามเยื่อบุ/ทันที = เกล็ดเลือด/vWF · ข้อ/กล้ามเนื้อ/ล่าช้า = coagulation factor"
+   ],
+   "items": [
+    {
+     "id": "N12-03-1-1",
+     "kind": "mcq",
+     "topic": "Interpreting coagulation tests — vitamin K deficiency",
+     "stem": "A 64-year-old man from northeastern Thailand presents with painless jaundice, pale stools and pruritus for 6 weeks. CT shows a hilar mass with dilated intrahepatic ducts. Labs: platelets 260,000/µL, INR 2.1, aPTT 36 s (normal 25–35), albumin 3.6 g/dL. Before ERCP, what is the most likely cause of the elevated INR and the appropriate correction?",
+     "choices": [
+      "Vitamin K malabsorption from biliary obstruction; give parenteral vitamin K",
+      "Disseminated intravascular coagulation; give cryoprecipitate",
+      "Hemophilia A; give factor VIII concentrate",
+      "Heparin contamination of the sample; repeat with protamine",
+      "Primary fibrinolysis; give tranexamic acid"
+     ],
+     "answer": 0,
+     "explain": "ท่อน้ำดีอุดตัน (ในที่นี้น่าจะเป็น **hilar cholangiocarcinoma** ซึ่งพบบ่อยในภาคอีสานจากพยาธิใบไม้ตับ) ทำให้ไม่มีน้ำดีในลำไส้ → ดูดซึม **vitamin K (fat-soluble)** ไม่ได้ → factor II, VII, IX, X ลดลง โดย VII มี half-life สั้นสุด INR จึงยาวก่อน · ตับยังทำงานดี (albumin ปกติ) จึงแก้ได้ด้วย **vitamin K ทางหลอดเลือด/ฉีด** (ทางปากไม่ดูดซึม) ภายใน 12–24 ชม.\n- **DIC** ต้องมีเกล็ดเลือดต่ำ fibrinogen ต่ำ D-dimer สูง\n- **Hemophilia A** ทำให้ aPTT ยาวเด่นและ PT ปกติ ไม่ใช่ INR ยาว\n- **Heparin contamination** ทำให้ aPTT ยาวมากกว่า INR\n- **Primary fibrinolysis** ไม่เข้ากับภาพทางคลินิกนี้",
+     "pearl": "ท่อน้ำดีอุดตัน + INR ยาว → ขาด vitamin K → ให้ vitamin K ทางฉีด",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-1-2",
+     "kind": "mcq",
+     "topic": "Isolated prolonged aPTT — hemophilia",
+     "stem": "A 19-year-old man is scheduled for elective inguinal hernia repair. He reports a swollen painful knee after minor sports injuries and prolonged bleeding after a dental extraction. His maternal uncle had similar problems. Labs: platelets 240,000/µL, PT 12 s (normal), aPTT 68 s (prolonged), bleeding time normal. What is the most likely diagnosis?",
+     "choices": [
+      "Hemophilia A (factor VIII deficiency)",
+      "Von Willebrand disease type 3",
+      "Factor VII deficiency",
+      "Immune thrombocytopenic purpura",
+      "Factor XIII deficiency"
+     ],
+     "answer": 0,
+     "explain": "ผู้ชาย + ญาติฝ่ายแม่ (X-linked recessive) + **hemarthrosis** และเลือดออกหลังถอนฟัน + **aPTT ยาวอย่างเดียว** โดย PT, เกล็ดเลือด และ bleeding time ปกติ = **hemophilia A** (factor VIII; hemophilia B คือ factor IX ให้ภาพเหมือนกัน แยกด้วย factor assay) · ก่อนผ่าตัดต้องทดแทน factor VIII ให้ระดับสูงพอ (ผ่าตัดใหญ่ 80–100%) ร่วมกับทีมโลหิตวิทยา\n- **vWD type 3** อาจทำให้ aPTT ยาว (VIII ต่ำ) แต่ต้องมี bleeding time ผิดปกติและเลือดออกตามเยื่อบุเด่น\n- **Factor VII deficiency** ทำให้ PT ยาวอย่างเดียว\n- **ITP** เกล็ดเลือดต่ำ\n- **Factor XIII deficiency** PT/aPTT ปกติทั้งคู่",
+     "pearl": "aPTT ยาวอย่างเดียว + hemarthrosis + ชาย = hemophilia",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-1-3",
+     "kind": "mcq",
+     "topic": "Platelet-type bleeding — von Willebrand disease",
+     "stem": "A 26-year-old woman is evaluated before laparoscopic cholecystectomy. She has had heavy menstrual periods since menarche, frequent nosebleeds and easy bruising; her mother has similar symptoms. Platelet count 230,000/µL, PT normal, aPTT 37 s (slightly prolonged), PFA-100 closure time prolonged. Which agent is most appropriate to prevent operative bleeding if her factor studies show a mild partial quantitative defect?",
+     "choices": [
+      "Desmopressin (DDAVP)",
+      "Vitamin K",
+      "Protamine sulfate",
+      "Fresh frozen plasma alone",
+      "Platelet transfusion"
+     ],
+     "answer": 0,
+     "explain": "เลือดออกแบบ **mucocutaneous** (ประจำเดือนมาก เลือดกำเดา ฟกช้ำ) ถ่ายทอดแบบ autosomal + PFA ยาว + aPTT ยาวเล็กน้อย (vWF เป็นตัวพา factor VIII) = **von Willebrand disease** ซึ่งเป็นโรคเลือดออกง่ายแต่กำเนิดที่พบบ่อยที่สุด · **type 1** (partial quantitative) ตอบสนองดีต่อ **desmopressin** ซึ่งกระตุ้นการหลั่ง vWF และ factor VIII จาก endothelium · type 3 ต้องใช้ vWF concentrate\n- **Vitamin K** ไม่เกี่ยวกับ vWF\n- **Protamine** ใช้ reverse heparin\n- **FFP อย่างเดียว** มี vWF น้อย ต้องให้ปริมาณมาก (cryoprecipitate หรือ vWF concentrate ดีกว่า)\n- **Platelet transfusion** ไม่แก้ปัญหาเพราะเกล็ดเลือดปกติ ปัญหาอยู่ที่ vWF",
+     "pearl": "vWD type 1 → DDAVP · type 3 → vWF concentrate",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-1-4",
+     "kind": "mcq",
+     "topic": "Thromboelastography-guided therapy",
+     "stem": "A 41-year-old man is undergoing laparotomy for a liver laceration after a motorcycle crash. Diffuse oozing continues after surgical control of major vessels. Rapid TEG shows normal R time, normal alpha angle, normal maximum amplitude, and LY30 of 12% (elevated). Which therapy is most appropriate?",
+     "choices": [
+      "Tranexamic acid",
+      "Fresh frozen plasma",
+      "Platelet transfusion",
+      "Cryoprecipitate",
+      "Protamine sulfate"
+     ],
+     "answer": 0,
+     "explain": "**LY30** คือ % ของ amplitude ที่ลดลง 30 นาทีหลังถึง MA ค่าที่สูงแสดงว่าลิ่มเลือดถูกสลายเร็ว = **hyperfibrinolysis** ซึ่งพบบ่อยใน trauma-induced coagulopathy (tPA สูง PAI-1 ต่ำ) · การรักษาคือ antifibrinolytic **tranexamic acid** ซึ่งจับ lysine-binding site ของ plasminogen/plasmin · ส่วนอื่นของ TEG ปกติจึงยังไม่ต้องให้ส่วนประกอบเลือดอื่น\n- **FFP** ใช้เมื่อ R time ยาว (factor ไม่พอ)\n- **Platelets** ใช้เมื่อ MA ต่ำ\n- **Cryoprecipitate** ใช้เมื่อ α-angle ต่ำ/K ยาว หรือ fibrinogen ต่ำ\n- **Protamine** ใช้เมื่อมี heparin effect",
+     "pearl": "TEG LY30 สูง = hyperfibrinolysis → TXA",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-03-2",
+   "title": "Bleeding disorders และการจัดการยาต้านเลือดแข็งรอบผ่าตัด",
+   "summary": "ผู้ป่วยโรคเลือดออกง่ายหรือกินยาต้านเกล็ดเลือด/ยาต้านการแข็งตัวของเลือด ต้องหยุดยาเมื่อไร ต้อง bridging หรือไม่ และ reverse อย่างไรเมื่อต้องผ่าตัดฉุกเฉิน",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 4 — Congenital factor deficiencies; acquired hemostatic defects; anticoagulation and bleeding",
+   "md": "### Congenital bleeding disorders ที่ศัลยแพทย์ต้องรู้\n\n| โรค | ถ่ายทอด | Lab | การเตรียมผ่าตัด |\n|---|---|---|---|\n| **Hemophilia A** (VIII) | X-linked recessive | aPTT ยาว · PT/plt ปกติ | **factor VIII concentrate** (recombinant) · ผ่าตัดใหญ่ต้องให้ระดับ 80–100% |\n| **Hemophilia B** (IX, Christmas) | X-linked recessive | aPTT ยาว | **factor IX concentrate** |\n| **von Willebrand disease** | autosomal (ส่วนใหญ่ dominant) | PFA/bleeding time ยาว ± aPTT ยาว | type 1 → **DDAVP** · type 3 → vWF concentrate/cryo |\n| Factor XI deficiency | autosomal recessive | aPTT ยาว | **FFP** (เลือดออกหลังผ่าตัดมากกว่าเลือดออกเอง) |\n| Factor VII deficiency | autosomal recessive | PT ยาวอย่างเดียว | FFP, recombinant VIIa |\n| Factor XIII deficiency | autosomal recessive | **PT/aPTT ปกติ** | FFP/cryo/XIII concentrate · เลือดออกล่าช้า, สายสะดือ |\n\n- ความรุนแรงของ hemophilia ตามระดับ factor: **น้อยกว่า 1% = severe** (ข้อ/กล้ามเนื้อเลือดออกเอง) · 1–5% = moderate · 5–30% = mild (มักรู้ตัวครั้งแรกหลังถอนฟัน/ผ่าตัด)\n- เป้าระดับ factor: เลือดออกเล็กน้อย 30–40% · รุนแรง 50% · คุกคามชีวิต/ผ่าตัดใหญ่ **80–100%**\n- ราว 20% ของ hemophilia A เกิด **inhibitor** → ใช้ recombinant VIIa หรือ activated PCC (bypassing agents)\n- เกล็ดเลือดของผู้ป่วย hemophilia ปกติ จึงอาจไม่เลือดออกทันทีแต่เลือดออก **ภายหลัง**\n\n### Acquired disorders ที่พบบ่อยในผู้ป่วยศัลยกรรม\n- **Thrombocytopenia** — สาเหตุบ่อยที่สุดของเลือดออกในผู้ป่วยศัลยกรรม: dilution จาก massive transfusion, sepsis/DIC, hypersplenism (portal hypertension), ITP, ยา\n- **Heparin-induced thrombocytopenia (HIT)**: antibody ต่อ **PF4–heparin** → เกล็ดเลือดต่ำ **และเกิดลิ่มเลือด** (หลอดเลือดดำ/แดง)\n- HIT: นึกถึงเมื่อเกล็ดเลือดลดลง **มากกว่า 50%** หรือต่ำกว่า 100,000 ใน **วันที่ 5–10** ของ heparin (เร็วขึ้นถ้าเคยได้ภายใน 100 วัน) · ใช้ **4Ts score** + anti-PF4 ELISA (NPV สูง)\n- HIT: **หยุด heparin ทุกรูปแบบ (รวม LMWH และ heparin flush)** + เริ่ม **non-heparin anticoagulant** (argatroban, bivalirudin, fondaparinux) · ห้ามเริ่ม warfarin จนเกล็ดเลือดฟื้น · หลีกเลี่ยง platelet transfusion\n- **DIC**: เกล็ดเลือดต่ำ PT/aPTT ยาว fibrinogen ต่ำ D-dimer สูง จาก sepsis, trauma, มะเร็ง, ภาวะทางสูติกรรม → รักษาต้นเหตุ ให้ส่วนประกอบเลือดเมื่อเลือดออก\n- **Liver disease**: สร้าง factor ลด (INR ยาว), เกล็ดเลือดต่ำจาก hypersplenism, fibrinogen ผิดปกติ — แต่ protein C/S ก็ลดด้วย จึงเป็น \"rebalanced hemostasis\" · vitamin K ช่วยไม่ได้ถ้าตับเสีย\n- **Uremia**: เกล็ดเลือดทำงานผิดปกติ → **dialysis, DDAVP** (การให้เกล็ดเลือดได้ผลน้อย)\n- **Trauma-induced coagulopathy**: พบได้ถึง 1/3 ของผู้บาดเจ็บรุนแรงตั้งแต่แรกรับ — จาก shock/hypoperfusion, activated protein C, hyperfibrinolysis, endothelial glycocalyx shedding ซ้ำเติมด้วย **lethal triad (hypothermia, acidosis, coagulopathy)** และ hemodilution\n\n### Antiplatelet ก่อนผ่าตัด\n\n| ยา | กลไก | หยุดก่อนผ่าตัด elective |\n|---|---|---|\n| **Aspirin** | ยับยั้ง COX-1 ถาวร | มักให้ต่อในผู้ป่วยโรคหัวใจ/มี stent (หยุด 7 วันถ้าเสี่ยงเลือดออกสูง เช่น neurosurgery) |\n| **Clopidogrel** | P2Y12 (ADP) ถาวร | **5 วัน** |\n| **Prasugrel** | P2Y12 ถาวร | 7 วัน |\n| Ticagrelor | P2Y12 ชั่วคราว | 3–5 วัน |\n\nSchwartz: โดยทั่วไปเว้น **5–7 วัน** สำหรับยาที่ยับยั้งเกล็ดเลือดถาวร\n> ผู้ป่วยที่เพิ่งใส่ **coronary drug-eluting stent** ห้ามหยุด dual antiplatelet เอง — เลื่อนผ่าตัด elective (ราว 6 เดือนหลัง DES) และปรึกษาแพทย์โรคหัวใจ เพราะ stent thrombosis อันตรายถึงชีวิต\n\n### Warfarin, heparin, DOAC: หยุด–bridging–reverse\n**Elective (ACCP 2022)**\n- **Warfarin**: หยุด **5 วัน** ก่อนผ่าตัด ตรวจ INR (ผ่าตัดได้เมื่อ INR น้อยกว่า 1.5) · เริ่มใหม่ 12–24 ชม. หลังผ่าตัดถ้าเลือดหยุดดี\n- **Bridging** ด้วย LMWH/UFH เฉพาะ **high thrombotic risk**: mechanical mitral valve หรือ valve รุ่นเก่า, VTE/stroke/MI ภายใน 1–3 เดือน — งานวิจัย (เช่น BRIDGE trial ใน AF) พบว่า bridging ทุกคนเพิ่มเลือดออกโดยไม่ลด thromboembolism\n- UFH infusion หยุด **4–6 ชม.** ก่อนผ่าตัด · LMWH ขนาดรักษาหยุด 24 ชม. ก่อน\n- **DOAC**: หยุด 1–2 วัน (ผ่าตัดเสี่ยงเลือดออกต่ำ/สูง ในไตปกติ) · dabigatran ต้องหยุดนานขึ้นเมื่อไตเสื่อม · ไม่ต้อง bridging\n\n**Emergency reversal**\n\n| ยา | Reversal |\n|---|---|\n| **Warfarin** | **vitamin K 10 mg IV ช้า ๆ** (ออกฤทธิ์ 6–24 ชม. ช่วยคงผล) + **4-factor PCC** (เร็ว ปริมาตรน้อย ดีกว่า FFP) หรือ FFP ถ้าไม่มี PCC |\n| **Unfractionated heparin** | หยุดยา + **protamine** (ราว 1 mg ต่อ heparin 100 U ที่ได้ในช่วง 2–3 ชม.) · ระวัง hypotension/anaphylaxis (แพ้ปลา, เคยได้ NPH insulin) |\n| LMWH | protamine ได้บางส่วน (~60%) |\n| **Dabigatran** | **idarucizumab** · dialysis ได้ |\n| **Rivaroxaban/apixaban** | **andexanet alfa** (อนุมัติแล้ว) หรือ **4F-PCC** |\n| Antiplatelet | platelet transfusion (หลักฐานจำกัด), DDAVP |\n\nถ้า INR น้อยกว่า 1.5 หรือ aPTT น้อยกว่า 1.3 เท่าของ control การผ่าตัดหลายชนิดทำได้โดยไม่ต้อง reverse (Schwartz) แต่ไม่ควรผ่าตัดสมองหรือตาขณะยังมีฤทธิ์ยา\n",
+   "pearls": [
+    "Hemophilia ผ่าตัดใหญ่ต้องให้ factor 80–100% · มี inhibitor → rFVIIa/aPCC",
+    "HIT: เกล็ดลด มากกว่า 50% วันที่ 5–10 + thrombosis → หยุด heparin ทุกชนิด + argatroban/bivalirudin",
+    "Clopidogrel หยุด 5 วัน · prasugrel 7 วัน · aspirin มักให้ต่อในผู้ป่วยหัวใจ",
+    "Warfarin หยุด 5 วัน · bridging เฉพาะ high thrombotic risk (mechanical mitral valve, VTE/stroke ใหม่)",
+    "Warfarin + เลือดออกรุนแรง → vitamin K 10 mg IV + 4F-PCC",
+    "Dabigatran → idarucizumab · factor Xa inhibitor → andexanet alfa หรือ 4F-PCC · heparin → protamine",
+    "Uremic bleeding → dialysis + DDAVP"
+   ],
+   "items": [
+    {
+     "id": "N12-03-2-1",
+     "kind": "mcq",
+     "topic": "Heparin-induced thrombocytopenia",
+     "stem": "A 66-year-old woman is on postoperative day 7 after total knee arthroplasty and has received subcutaneous unfractionated heparin since surgery. Her platelet count has fallen from 280,000 to 95,000/µL, and she now has a swollen left calf with DVT on ultrasound. There is no other cause for thrombocytopenia. What is the most appropriate management?",
+     "choices": [
+      "Stop all heparin and start a non-heparin anticoagulant such as argatroban",
+      "Switch to enoxaparin at therapeutic dose",
+      "Stop heparin and start warfarin immediately",
+      "Transfuse platelets and continue heparin",
+      "Stop heparin and give no anticoagulation until platelets recover"
+     ],
+     "answer": 0,
+     "explain": "เกล็ดเลือดลดลงมากกว่า 50% ในวันที่ 5–10 ของ heparin ร่วมกับ **thrombosis ใหม่** และไม่มีสาเหตุอื่น → 4Ts สูง = **HIT** (antibody ต่อ PF4–heparin กระตุ้นเกล็ดเลือด) ต้อง **หยุด heparin ทุกรูปแบบ** และเริ่ม **non-heparin anticoagulant ทันที** (argatroban, bivalirudin, fondaparinux หรือ DOAC ในบางราย) ส่ง anti-PF4 ELISA ยืนยัน\n- **Enoxaparin** มี cross-reactivity กับ antibody ของ HIT ห้ามใช้\n- **Warfarin ทันที** ลด protein C เร็วจนเกิด venous limb gangrene/skin necrosis ต้องรอให้เกล็ดเลือดฟื้นและได้ยาตัวอื่นก่อน\n- **Platelet transfusion** เพิ่มความเสี่ยง thrombosis และการให้ heparin ต่อผิดหลัก\n- **หยุด heparin โดยไม่ให้ยาต้านการแข็งตัวอื่น** ไม่พอป้องกัน thrombosis ซึ่งเสี่ยงสูงมาก",
+     "pearl": "HIT = หยุด heparin ทุกชนิด + เริ่ม non-heparin anticoagulant (ไม่ใช่แค่หยุด)",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-2-2",
+     "kind": "mcq",
+     "topic": "Emergency warfarin reversal",
+     "stem": "A 78-year-old man taking warfarin for atrial fibrillation presents with peritonitis from a perforated sigmoid colon. BP is 100/60 mmHg after fluids, INR 3.4, and he needs an emergency laparotomy within the next hour. What is the best way to reverse his anticoagulation?",
+     "choices": [
+      "Intravenous vitamin K plus four-factor prothrombin complex concentrate",
+      "Oral vitamin K alone and proceed in 24 hours",
+      "Protamine sulfate",
+      "Platelet transfusion",
+      "Idarucizumab"
+     ],
+     "answer": 0,
+     "explain": "ต้องผ่าตัดภายในหนึ่งชั่วโมง จึงต้อง reverse warfarin **ทันที** ด้วย **4-factor PCC** (มี II, VII, IX, X เข้มข้น แก้ INR ได้ภายในนาที ปริมาตรน้อยกว่าและเร็วกว่า FFP) ร่วมกับ **vitamin K 10 mg IV ช้า ๆ** เพื่อให้ตับสร้าง factor ต่อ เพราะ PCC มีฤทธิ์สั้น · ถ้าไม่มี PCC ใช้ FFP แทน\n- **Vitamin K ทางปากอย่างเดียว** ช้า (ชั่วโมงถึงวัน) ไม่เหมาะกับผ่าตัดฉุกเฉิน\n- **Protamine** ใช้ reverse heparin\n- **Platelets** ไม่ได้แก้ผลของ warfarin\n- **Idarucizumab** ใช้กับ dabigatran เท่านั้น",
+     "pearl": "Warfarin + ผ่าตัดด่วน → 4F-PCC + vitamin K IV",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-2-3",
+     "kind": "mcq",
+     "topic": "Perioperative bridging decision",
+     "stem": "A 70-year-old man on warfarin for nonvalvular atrial fibrillation (CHA2DS2-VASc 3, no prior stroke) is scheduled for elective laparoscopic right hemicolectomy in 2 weeks. He has no mechanical valve and no recent thromboembolism. What is the most appropriate perioperative anticoagulation plan?",
+     "choices": [
+      "Stop warfarin 5 days before surgery without heparin bridging, and resume after surgery when hemostasis is secure",
+      "Continue warfarin through surgery with a target INR of 2.5",
+      "Stop warfarin 5 days before and bridge with therapeutic enoxaparin until the morning of surgery",
+      "Stop warfarin 1 day before surgery and give FFP in the operating room",
+      "Stop warfarin permanently after surgery"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย AF ที่ไม่มี mechanical valve และไม่มี stroke/VTE ใหม่ จัดเป็น **thrombotic risk ไม่สูง** · การศึกษา **BRIDGE** พบว่าการ bridging ด้วย LMWH ไม่ลด arterial thromboembolism แต่ **เพิ่ม major bleeding** แนวทาง ACCP 2022 จึงแนะนำ **หยุด warfarin 5 วันก่อนผ่าตัด** ตรวจ INR ก่อนผ่าตัด และ **ไม่ bridging** แล้วเริ่มใหม่ 12–24 ชม. หลังผ่าตัดเมื่อเลือดหยุดดี\n- **ผ่าตัดขณะ INR 2.5** เสี่ยงเลือดออกมากในการผ่าตัดลำไส้ใหญ่\n- **Bridging ด้วย therapeutic enoxaparin** สงวนไว้สำหรับ high risk (mechanical mitral valve, VTE/stroke ภายใน 3 เดือน)\n- **หยุด 1 วันแล้วให้ FFP** ไม่จำเป็นในการผ่าตัด elective และสัมผัส blood product โดยไม่จำเป็น\n- **หยุดถาวร** ผิด ผู้ป่วยยังมีข้อบ่งชี้ของ anticoagulation",
+     "pearl": "AF ไม่มี high risk → หยุด warfarin 5 วัน ไม่ต้อง bridge",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-2-4",
+     "kind": "mcq",
+     "topic": "Antiplatelet timing before elective surgery",
+     "stem": "A 59-year-old man takes clopidogrel alone for peripheral arterial disease (no coronary stent). He is scheduled for elective open repair of a large incisional hernia. How long before surgery should clopidogrel generally be stopped to allow recovery of platelet function?",
+     "choices": [
+      "About 5 days",
+      "12 hours",
+      "24 hours",
+      "3 weeks",
+      "It does not need to be stopped because its effect is reversible"
+     ],
+     "answer": 0,
+     "explain": "**Clopidogrel** ยับยั้ง P2Y12 (ADP receptor) ของเกล็ดเลือด **แบบถาวร** ผลจึงหายเมื่อมีเกล็ดเลือดใหม่มาแทน (อายุเกล็ด 7–10 วัน) แนวทางทั่วไปให้หยุด **ราว 5 วัน** ก่อนผ่าตัด elective (Schwartz: 5–7 วันสำหรับยาต้านเกล็ดเลือดชนิดถาวร) ผู้ป่วยรายนี้ไม่มี stent ใหม่จึงหยุดได้ปลอดภัย\n- **12 หรือ 24 ชม.** สั้นเกินไปสำหรับยาที่ออกฤทธิ์ถาวร\n- **3 สัปดาห์** นานเกินจำเป็นและเพิ่มความเสี่ยงเหตุการณ์หลอดเลือด\n- **ฤทธิ์ย้อนกลับได้** ผิด เป็นลักษณะของ ticagrelor ไม่ใช่ clopidogrel",
+     "pearl": "Clopidogrel หยุด 5 วัน · prasugrel 7 วัน",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-03-3",
+   "title": "Blood components และข้อบ่งชี้การให้เลือด",
+   "summary": "ส่วนประกอบเลือดแต่ละชนิดมีอะไร เก็บอย่างไร และควรให้เมื่อไรตามหลักฐานปัจจุบัน (restrictive transfusion)",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 4 — Transfusion: replacement therapy, indications for replacement of blood and its elements",
+   "md": "### ส่วนประกอบของเลือด: เก็บอย่างไร ให้เพื่ออะไร\n\n| ส่วนประกอบ | การเก็บ | มีอะไร | ข้อบ่งชี้หลัก |\n|---|---|---|---|\n| **Packed red cells (PRC)** | 1–6°C นาน **42 วัน** | RBC | anemia มีอาการ/ต่ำกว่า threshold, เลือดออก · 1 unit เพิ่ม Hb ราว **1 g/dL** |\n| **Platelets** | **20–24°C เขย่าตลอด นาน 5 วัน** | เกล็ดเลือด | เกล็ดต่ำ/ทำงานผิดปกติ + เลือดออกหรือก่อนหัตถการ · random-donor 1 unit เพิ่มราว 5,000–10,000/µL |\n| **FFP** | −18°C หรือต่ำกว่า นาน 1–2 ปี · ละลาย 20–30 นาที | **coagulation factor ทุกตัว** (แหล่งเดียวของ factor V) | INR ยาว + เลือดออก, massive transfusion, TTP (plasma exchange) |\n| **Cryoprecipitate** | แช่แข็ง | **fibrinogen, VIII, vWF, XIII**, fibronectin | **fibrinogen ต่ำ** (น้อยกว่า 150–200 mg/dL) ในผู้ป่วยเลือดออก, DIC |\n| Whole blood | เย็น | ทุกอย่าง | กลับมาใช้ใน trauma (low-titer O whole blood) |\n\n**ปรับแต่งพิเศษ**\n- **Leukocyte-reduced**: ลด febrile reaction, HLA alloimmunization, CMV\n- **Irradiated**: ป้องกัน **transfusion-associated GVHD** ในผู้ป่วยภูมิคุ้มกันต่ำ/ได้เลือดจากญาติ\n- **Washed**: ผู้ป่วย IgA deficiency ที่มี anti-IgA, แพ้รุนแรงซ้ำ\n\n### หมู่เลือดและเลือดฉุกเฉิน\n- **Type & screen** (ABO/Rh + หา antibody) ใช้เวลาไม่นาน · **crossmatch** ยืนยันความเข้ากันก่อนให้\n- ฉุกเฉินที่รอไม่ได้: **O-negative RBC** (O-positive ได้ในชาย/หญิงหมดประจำเดือน) และ **AB plasma** หรือ **low-titer A plasma** · type-specific เมื่อรู้หมู่ (ราว 10–15 นาที)\n- เกล็ดเลือดไม่ต้อง crossmatch\n- คนไทยส่วนใหญ่เป็น Rh บวก (Rh ลบพบน้อยกว่า 1%) — ผู้หญิงวัยเจริญพันธุ์ที่ได้ Rh บวกเสี่ยง anti-D\n\n### Transfusion thresholds สำหรับผู้ป่วยไม่เลือดออก\n\n| สถานการณ์ | Threshold |\n|---|---|\n| ผู้ป่วยส่วนใหญ่ใน ICU/หลังผ่าตัด ที่ hemodynamics คงที่ | **Hb น้อยกว่า 7 g/dL** (TRICC: Hb 7–9 ไม่แย่กว่า 10–12) |\n| ผ่าตัดหัวใจ, ผ่าตัดกระดูก, มีโรคหัวใจหลอดเลือดเดิม | **Hb น้อยกว่า 8 g/dL** (AABB) |\n| Acute coronary syndrome | ยังเป็นประเด็นถกเถียง — หลายแนวทางใช้ราว 8 g/dL |\n| ผู้ป่วยมีอาการของ anemia | ให้ทีละ 1 unit แล้วประเมินใหม่ |\n\n- **ไม่ใช้กฎ \"10/30\"** (Hb 10, Hct 30) แบบเดิม — การให้เลือดมากเกินจำเป็นเพิ่มการติดเชื้อ, TRALI/TACO, ภูมิคุ้มกันถูกกด\n- ในผู้ป่วยที่ **เลือดออกอยู่** ตัวเลข Hb ตามไม่ทัน (ช่วงแรก Hb ยังไม่ตก) → ตัดสินใจจาก hemodynamics และปริมาณเลือดที่เสีย\n\n### เกล็ดเลือด, FFP, cryo: ใช้เมื่อไร\n**Platelet**\n- ป้องกันเลือดออกเองในผู้ป่วยไม่เลือดออก: น้อยกว่า **10,000/µL** (AABB)\n- Schwartz: เลือดออกเองเมื่อน้อยกว่า 20,000 · ผ่าตัดเล็กควรมากกว่า **30,000** · ผ่าตัดใหญ่ควรมากกว่า **50,000** · **neurosurgery/ตา มากกว่า 100,000**\n- ใน **ITP** เกล็ดเลือดที่ให้ถูกทำลายเร็ว — เตรียมด้วย steroid/IVIG ก่อน splenectomy และให้เกล็ดหลัง clamp splenic artery ถ้าเลือดออก\n- Hypersplenism: เกล็ดถูกม้ามจับ การให้เพิ่มได้น้อย\n\n**FFP**: เลือดออกร่วมกับ INR/aPTT ยาว (มากกว่า 1.5 เท่า), massive transfusion, reverse warfarin เมื่อไม่มี PCC · **ไม่ใช้ FFP เป็น volume expander** และไม่ให้เพื่อแก้ INR ที่ยาวเล็กน้อยในผู้ป่วยไม่เลือดออก\n\n**Cryoprecipitate**: fibrinogen น้อยกว่า 150–200 mg/dL ในผู้ป่วยเลือดออก · fibrinogen เป็น factor ตัวแรกที่ตกถึงระดับวิกฤตในการเสียเลือดมาก\n\n**Patient blood management**: แก้ anemia ก่อนผ่าตัด (iron, ตามหาสาเหตุเช่นมะเร็งลำไส้ใหญ่), หยุดยาต้านเลือดแข็งอย่างเหมาะสม, เทคนิคผ่าตัดเสียเลือดน้อย, **tranexamic acid** ในผ่าตัดกระดูก/หัวใจ, cell salvage, restrictive threshold\n",
+   "pearls": [
+    "PRC 1–6°C 42 วัน · platelet 20–24°C 5 วัน (เสี่ยงแบคทีเรียสุด) · FFP แช่แข็ง ละลาย 20–30 นาที",
+    "1 unit PRC เพิ่ม Hb ~1 g/dL",
+    "Hb threshold 7 g/dL ส่วนใหญ่ · 8 g/dL ในผ่าตัดหัวใจ/กระดูก/โรคหัวใจ",
+    "Cryo = fibrinogen, VIII, vWF, XIII · ให้เมื่อ fibrinogen น้อยกว่า 150–200 + เลือดออก",
+    "เกล็ดเลือด: ผ่าตัดใหญ่ มากกว่า 50,000 · neurosurgery/ตา มากกว่า 100,000 · prophylaxis น้อยกว่า 10,000",
+    "ฉุกเฉิน: O-neg RBC + AB หรือ low-titer A plasma",
+    "Irradiated blood ป้องกัน TA-GVHD · leukoreduced ลด febrile reaction/CMV"
+   ],
+   "items": [
+    {
+     "id": "N12-03-3-1",
+     "kind": "mcq",
+     "topic": "Restrictive transfusion threshold",
+     "stem": "A 52-year-old woman without cardiac disease is on postoperative day 2 after an uncomplicated open hysterectomy and is mobilizing. She feels well; heart rate 84/min, BP 122/74 mmHg, and there is no evidence of ongoing bleeding. Hemoglobin is 7.6 g/dL (preoperative 11.8). What is the most appropriate management regarding transfusion?",
+     "choices": [
+      "No transfusion; monitor and give iron as appropriate",
+      "Transfuse 2 units of packed red cells to reach hemoglobin 10 g/dL",
+      "Transfuse 1 unit of whole blood",
+      "Transfuse fresh frozen plasma to expand volume",
+      "Transfuse 1 unit of packed red cells because hemoglobin is below 8 g/dL"
+     ],
+     "answer": 0,
+     "explain": "หลักฐานจาก **TRICC** และแนวทาง **AABB** สนับสนุน **restrictive strategy**: ในผู้ป่วยที่ hemodynamics คงที่และไม่มีโรคหัวใจ ให้ PRC เมื่อ **Hb น้อยกว่า 7 g/dL** หรือมีอาการ ผู้ป่วยรายนี้ไม่มีอาการ ไม่เลือดออก Hb 7.6 จึง **ไม่ต้องให้เลือด** ติดตามและให้ธาตุเหล็ก\n- **ให้จนถึง Hb 10** คือกฎเก่า 10/30 ที่ไม่ลดอัตราตายและเพิ่มภาวะแทรกซ้อน\n- **Whole blood** ไม่มีข้อบ่งชี้ในผู้ป่วยไม่เลือดออก\n- **FFP เพื่อ volume** ไม่ถูกต้อง FFP ไม่ใช่ volume expander\n- **Threshold 8 g/dL** ใช้ในผ่าตัดหัวใจ/กระดูกหรือผู้มีโรคหัวใจหลอดเลือด ซึ่งผู้ป่วยรายนี้ไม่มี",
+     "pearl": "Hb threshold 7 g/dL สำหรับผู้ป่วยคงที่ไม่มีโรคหัวใจ",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-3-2",
+     "kind": "mcq",
+     "topic": "Cryoprecipitate indication",
+     "stem": "A 30-year-old woman develops massive postpartum hemorrhage after cesarean delivery and is taken back for hysterectomy. After 6 units of red cells, 6 units of plasma and 1 apheresis platelet unit, there is diffuse oozing. Labs: platelets 98,000/µL, INR 1.4, fibrinogen 90 mg/dL. Which product is most appropriate next?",
+     "choices": [
+      "Cryoprecipitate",
+      "Additional platelets",
+      "Vitamin K",
+      "Albumin 5%",
+      "Desmopressin"
+     ],
+     "answer": 0,
+     "explain": "**Fibrinogen 90 mg/dL** ต่ำมาก (fibrinogen เป็น factor ตัวแรกที่ตกถึงระดับวิกฤตในการเสียเลือดมาก และในสูติกรรมยิ่งสำคัญ) ขณะที่เกล็ดเลือดและ INR ยอมรับได้ ผลิตภัณฑ์ที่ให้ fibrinogen เข้มข้นคือ **cryoprecipitate** (หรือ fibrinogen concentrate) — FFP มี fibrinogen แต่ต้องให้ปริมาณมาก\n- **Platelets เพิ่ม** เกล็ด 98,000 ยังพอสำหรับการห้ามเลือด\n- **Vitamin K** ไม่แก้ fibrinogen และออกฤทธิ์ช้า\n- **Albumin** ไม่มี clotting factor ทำให้ dilution แย่ลง\n- **Desmopressin** ใช้ในโรค vWD/uremia ไม่ได้เพิ่ม fibrinogen",
+     "pearl": "Fibrinogen ต่ำ + เลือดออก → cryoprecipitate",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-3-3",
+     "kind": "mcq",
+     "topic": "Platelet threshold for neurosurgery",
+     "stem": "A 47-year-old man with alcoholic cirrhosis falls and develops an acute subdural hematoma with midline shift requiring craniotomy. Platelet count is 62,000/µL, INR 1.7, fibrinogen 210 mg/dL. Which platelet count target is generally recommended before this operation?",
+     "choices": [
+      "Greater than 100,000/µL",
+      "Greater than 10,000/µL",
+      "Greater than 20,000/µL",
+      "Greater than 30,000/µL",
+      "No platelet target is needed if INR is corrected"
+     ],
+     "answer": 0,
+     "explain": "การผ่าตัดในตำแหน่งที่ **เลือดออกเพียงเล็กน้อยก็เกิดอันตรายร้ายแรง** เช่น สมองและตา แนะนำให้เกล็ดเลือด **มากกว่า 100,000/µL** (Schwartz) ขณะที่ผ่าตัดใหญ่ทั่วไปมากกว่า 50,000 ก็เพียงพอ ผู้ป่วยตับแข็งมักมีเกล็ดเลือดต่ำจาก hypersplenism การให้เกล็ดเลือดเพิ่มได้น้อยกว่าคนปกติ ต้องตรวจซ้ำ ร่วมกับแก้ INR\n- **10,000** คือ threshold ป้องกันเลือดออกเองในผู้ป่วยไม่เลือดออกและไม่ทำหัตถการ\n- **20,000** ระดับที่เสี่ยงเลือดออกเอง\n- **30,000** เพียงพอสำหรับหัตถการเล็กเท่านั้น\n- **ไม่ต้องตั้งเป้า** ผิด เกล็ดเลือดเป็นส่วนสำคัญของ clot strength",
+     "pearl": "Neurosurgery/ตา → เกล็ดเลือดมากกว่า 100,000",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-3-4",
+     "kind": "mcq",
+     "topic": "Emergency uncrossmatched blood",
+     "stem": "A 24-year-old man arrives after a stab wound to the abdomen with BP 70/40 mmHg and heart rate 140/min. His blood type is unknown and he needs blood immediately while the surgical team prepares for laparotomy. Which blood products are most appropriate to give first?",
+     "choices": [
+      "Group O red cells with group AB or low-titer group A plasma",
+      "Group AB red cells with group O plasma",
+      "Wait for full crossmatch before any transfusion",
+      "Group A red cells with group A plasma",
+      "Two liters of crystalloid and albumin instead of blood"
+     ],
+     "answer": 0,
+     "explain": "ในภาวะเลือดออกรุนแรงที่ไม่รู้หมู่เลือด ให้ **O RBC** (ไม่มี A/B antigen บนเม็ดเลือด — O-negative ในหญิงวัยเจริญพันธุ์, O-positive ได้ในชาย) และ **AB plasma** (ไม่มี anti-A/anti-B) หรือ **low-titer A plasma** ซึ่งหลายศูนย์ใช้แทนเพราะ AB ขาดแคลน · เปลี่ยนเป็น type-specific เมื่อรู้หมู่ และเปิด massive transfusion protocol\n- **AB RBC + O plasma** กลับด้าน: AB RBC จะถูก anti-A/anti-B ของผู้รับทำลาย และ O plasma มี anti-A/anti-B\n- **รอ crossmatch** ใช้เวลานานเกินในผู้ป่วยที่กำลังจะเสียชีวิตจากการเสียเลือด\n- **Group A** อาจไม่เข้ากับผู้ป่วยหมู่ B หรือ O\n- **Crystalloid/albumin** ปริมาณมากทำให้ dilutional coagulopathy และไม่เพิ่มการขนออกซิเจน",
+     "pearl": "ฉุกเฉินไม่รู้หมู่: O RBC + AB (หรือ low-titer A) plasma",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-03-4",
+   "title": "Transfusion complications และ massive transfusion",
+   "summary": "ผู้ป่วยที่มีอาการระหว่างหรือหลังให้เลือดเป็นภาวะอะไร ต้องทำอะไรทันที และจะให้เลือดปริมาณมากในผู้บาดเจ็บอย่างไรให้ปลอดภัย",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 4 — Complications of transfusion (Table 4-9); new concepts in resuscitation; massive transfusion (Tables 4-6, 4-7)",
+   "md": "### ภาวะแทรกซ้อนจากการให้เลือด: แยกให้ออก\n\n| ภาวะ | เกิดเมื่อ | ลักษณะเด่น | กลไก/การป้องกัน |\n|---|---|---|---|\n| **Febrile nonhemolytic (FNHTR)** | ระหว่าง/หลังให้ไม่กี่ชั่วโมง | ไข้เพิ่มมากกว่า 1°C หนาวสั่น · พบบ่อยที่สุด | cytokine ในถุงเลือด/antibody ต่อ WBC ผู้ให้ → **leukoreduction**, paracetamol |\n| **Allergic** | ระหว่างให้ | ลมพิษ คัน · รุนแรง = anaphylaxis (IgA deficiency) | antihistamine · anaphylaxis → epinephrine, washed products |\n| **Acute hemolytic** | **นาทีแรก ๆ** | ไข้ ปวดหลัง/ตรงที่ให้ ความดันตก **hemoglobinuria**, DIC, AKI · ผู้ป่วยดมยา = เลือดออกทั่วไป + ความดันตก | **ABO incompatibility** (IgM) ส่วนใหญ่จาก **ความผิดพลาดในการระบุตัวผู้ป่วย/ถุงเลือด** |\n| **Delayed hemolytic** | **2–10 วัน** | Hb ลดอธิบายไม่ได้, indirect bilirubin สูง, **DAT/Coombs บวก** | anamnestic IgG ต่อ minor antigen (Kidd, Rh) — extravascular |\n| **TRALI** | **ภายใน 6 ชม.** (มักใน 1–2 ชม.) | หายใจลำบาก hypoxemia infiltrate สองข้าง **ไข้ ความดันต่ำ** · non-cardiogenic | anti-HLA/HNA antibody ใน plasma ของผู้ให้ (หญิงที่เคยตั้งครรภ์) → ใช้ plasma จากผู้ชาย |\n| **TACO** | ระหว่าง/หลังให้ | หายใจลำบาก **ความดันสูง JVP สูง** BNP สูง ตอบสนองต่อยาขับปัสสาวะ | ให้เร็ว/มากในผู้สูงอายุ โรคหัวใจ โรคไต → ให้ช้า, furosemide |\n| **Bacterial contamination** | ระหว่างให้ | ไข้สูง หนาวสั่น ช็อก | พบบ่อยใน **platelets** (เก็บที่อุณหภูมิห้อง) |\n| TA-GVHD | 1–2 สัปดาห์ | ผื่น ท้องเสีย ตับอักเสบ **pancytopenia** ตายสูง | lymphocyte ผู้ให้ → **irradiation** |\n| Post-transfusion purpura | 5–10 วัน | เกล็ดเลือดต่ำรุนแรง | anti-HPA-1a · IVIG |\n\n### เมื่อสงสัย acute transfusion reaction ทำอะไร\n1. **หยุดให้เลือดทันที** เก็บสาย IV ไว้ด้วย NSS\n2. ประเมิน ABC, vital signs, ดูแล airway/ความดัน\n3. **ตรวจสอบชื่อ-หมู่เลือดบนถุงกับผู้ป่วยอีกครั้ง** (clerical error พบบ่อยที่สุด)\n4. ส่งถุงเลือดและเลือดผู้ป่วยกลับธนาคารเลือด: repeat ABO, **DAT**, CBC, bilirubin, LDH, haptoglobin, UA หา hemoglobin, coagulation, culture ถุงถ้าสงสัยติดเชื้อ\n5. Acute hemolysis: ให้สารน้ำเพื่อให้ **ปัสสาวะออกมากกว่า 100 mL/ชม.** (ป้องกัน AKI จาก free hemoglobin) ± diuretic, รักษา DIC\n6. รายงานเหตุการณ์ (hemovigilance)\n\nความเสี่ยงติดเชื้อปัจจุบันต่ำมาก: HIV/HCV น้อยกว่า 1 ใน 1,000,000 · HBV ราว 1 ใน 300,000 (Schwartz) — ในประเทศไทยการคัดกรองด้วย NAT ทำให้ความเสี่ยงลดลงมาก\n\n### Massive transfusion: นิยามและภาวะแทรกซ้อน\n- นิยามดั้งเดิม: **มากกว่าหรือเท่ากับ 10 units PRC ใน 24 ชม.** (หรือเปลี่ยนเลือดทั้งตัว) · นิยามใหม่ที่ใช้ได้เร็วกว่า: **Critical Administration Threshold (CAT) = 3 units ใน 60 นาที**\n- ทำนายการต้องใช้ MT ด้วย **ABC score** (1 คะแนนต่อข้อ): penetrating mechanism, **SBP ≤90**, **HR ≥120**, **FAST บวก** → ตั้งแต่ **2 ข้อ** ให้เปิด MTP\n\nภาวะแทรกซ้อนของ massive transfusion\n\n| ปัญหา | สาเหตุ | การจัดการ |\n|---|---|---|\n| **Hypothermia** | เลือดเย็น สารน้ำเย็น เปิดช่องท้อง | **blood warmer**, อุ่นห้อง/ผู้ป่วย — hypothermia ทำให้ enzyme การแข็งตัวทำงานลด |\n| **Hypocalcemia** | **citrate** ในถุงเลือดจับ Ca (ตับแปรรูปไม่ทัน) | ตรวจ **ionized Ca** และให้ calcium เป็นระยะ |\n| Hyperkalemia | K รั่วจาก RBC ที่เก็บนาน | monitor EKG/K |\n| **Dilutional coagulopathy** | ให้ RBC + crystalloid ไม่มี factor/เกล็ด | ให้ plasma และ platelets ในอัตราส่วนสมดุล |\n| Acidosis | shock + เลือดเก็บเป็นกรด | แก้ perfusion |\n| Metabolic alkalosis (ภายหลัง) | citrate ถูกเผาเป็น bicarbonate | ติดตาม |\n\n### Damage control resuscitation (DCR)\nหลักการ 3 ข้อในผู้บาดเจ็บที่เลือดออกรุนแรง (ทำ **พร้อมกับ** หยุดเลือดด้วยการผ่าตัด/angioembolization)\n1. **Permissive hypotension** — ยอมให้ SBP ราว 80–90 mmHg (MAP ~50–65) จนกว่าจะหยุดเลือดได้ (**ยกเว้น TBI** ที่ต้องรักษา perfusion ของสมอง)\n2. **จำกัด crystalloid** — เลี่ยง dilution, acidosis, hypothermia, abdominal compartment syndrome\n3. **Balanced transfusion 1:1:1** (plasma : platelets : RBC) ตั้งแต่ถุงแรก ๆ\n- **PROPPR trial** (2015, 680 ราย): 1:1:1 เทียบ 1:1:2 — อัตราตายรวมที่ 24 ชม. และ 30 วันไม่ต่างอย่างมีนัยสำคัญ แต่ **ตายจากเลือดออกใน 24 ชม. น้อยกว่า (9% vs 15%)** และหยุดเลือดได้มากกว่า (86% vs 78%) โดยไม่เพิ่ม ARDS/MOF\n- ตรวจ fibrinogen หลัง 6 units แรก ถ้าต่ำให้ cryoprecipitate · ใช้ **TEG/ROTEM** ช่วยกำหนดส่วนประกอบ\n- **Tranexamic acid** (CRASH-2): **1 g IV ใน 10 นาที แล้ว 1 g ใน 8 ชม.** ให้ภายใน **3 ชม.** หลังบาดเจ็บ — ลดการตายจากเลือดออก ให้หลัง 3 ชม. อาจเป็นอันตราย\n- หลีกเลี่ยง **lethal triad**: hypothermia + acidosis + coagulopathy → ถ้ามีให้ทำ **damage control surgery** (หยุดเลือด/ควบคุมการปนเปื้อน ปิดชั่วคราว แล้วไปแก้ไขสภาพใน ICU)\n- บริบทไทย: ผู้บาดเจ็บจากรถจักรยานยนต์ใน รพช. → ให้ O RBC ที่มี, TXA ภายใน 3 ชม., หยุดเลือดภายนอก (tourniquet/pelvic binder), จำกัด crystalloid และส่งต่อเร็วไป รพศ./รพท. ที่ผ่าตัดได้\n",
+   "pearls": [
+    "Acute hemolytic = ABO (IgM) จาก clerical error → หยุดให้เลือดทันที ตรวจชื่อ/หมู่ซ้ำ",
+    "Delayed hemolytic 2–10 วัน: Hb ลด bilirubin สูง DAT บวก",
+    "TRALI: ภายใน 6 ชม. ไข้ ความดันต่ำ non-cardiogenic · TACO: ความดันสูง JVP สูง ตอบ diuretic",
+    "FNHTR พบบ่อยสุด → leukoreduction · bacterial contamination พบบ่อยใน platelets",
+    "MT = ≥10 units/24 ชม. หรือ CAT 3 units/ชม. · ABC score ≥2 → เปิด MTP",
+    "DCR: permissive hypotension + จำกัด crystalloid + 1:1:1 (PROPPR)",
+    "TXA 1 g + 1 g/8 ชม. ภายใน 3 ชม. หลังบาดเจ็บ (CRASH-2) · citrate → ionized Ca ต่ำ"
+   ],
+   "mnem": [
+    {
+     "name": "ABC score",
+     "what": "ทำนายการต้องใช้ massive transfusion ในผู้บาดเจ็บ (≥2 ข้อ = เปิด MTP)",
+     "lines": [
+      [
+       "P",
+       "Penetrating mechanism"
+      ],
+      [
+       "S",
+       "SBP ≤90 mmHg ที่ ER"
+      ],
+      [
+       "H",
+       "HR ≥120/min ที่ ER"
+      ],
+      [
+       "F",
+       "FAST บวก"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-03-4-1",
+     "kind": "mcq",
+     "topic": "Acute hemolytic transfusion reaction",
+     "stem": "A 58-year-old woman receiving her first unit of packed red cells after a hip fracture repair develops chills, flank pain and a sense of doom 10 minutes into the transfusion. Temperature 39.0°C, BP 82/50 mmHg, and her urine becomes dark red. What is the most appropriate immediate step?",
+     "choices": [
+      "Stop the transfusion immediately, keep the line open with saline and recheck patient and unit identification",
+      "Slow the transfusion rate and give paracetamol",
+      "Give diphenhydramine and continue the transfusion",
+      "Give furosemide and continue the transfusion slowly",
+      "Complete the unit and then send a direct antiglobulin test"
+     ],
+     "answer": 0,
+     "explain": "ไข้ หนาวสั่น ปวดหลัง/สีข้าง ความดันตก และ **ปัสสาวะสีแดงเข้ม (hemoglobinuria)** ภายในไม่กี่นาทีแรก = **acute hemolytic transfusion reaction** จาก ABO incompatibility (IgM แตก RBC ในหลอดเลือด) ซึ่งส่วนใหญ่เกิดจากความผิดพลาดในการระบุตัวผู้ป่วย ต้อง **หยุดให้เลือดทันที** เปิดเส้นด้วย NSS ตรวจสอบชื่อ/หมู่ ส่งถุงและเลือดผู้ป่วยกลับธนาคารเลือด (DAT, repeat crossmatch) และให้สารน้ำให้ปัสสาวะออกมาก ป้องกัน AKI\n- **ลดอัตรา + paracetamol** เหมาะกับ FNHTR ที่ไม่มีความดันตก/hemoglobinuria\n- **Antihistamine แล้วให้ต่อ** ใช้กับ allergic reaction เล็กน้อยเท่านั้น\n- **Furosemide แล้วให้ต่อ** ผิดเพราะต้องหยุดเลือดก่อน\n- **ให้ครบถุงแล้วค่อยส่งตรวจ** ทำให้ได้รับ RBC ที่เข้ากันไม่ได้มากขึ้น อาจเสียชีวิต",
+     "pearl": "สงสัย acute hemolytic reaction → หยุดให้เลือดทันที + ตรวจชื่อ/หมู่ซ้ำ",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-4-2",
+     "kind": "mcq",
+     "topic": "TRALI versus TACO",
+     "stem": "A 45-year-old man in the ICU after liver resection receives 2 units of plasma for an INR of 1.9. One hour later he develops acute dyspnea, SpO2 84% on room air, temperature 38.4°C and BP 86/50 mmHg. JVP is not raised, and chest radiograph shows new bilateral infiltrates with a normal heart size. Echocardiography shows normal ventricular function. What is the most likely diagnosis?",
+     "choices": [
+      "Transfusion-related acute lung injury",
+      "Transfusion-associated circulatory overload",
+      "Delayed hemolytic transfusion reaction",
+      "Febrile nonhemolytic transfusion reaction",
+      "Transfusion-associated graft-versus-host disease"
+     ],
+     "answer": 0,
+     "explain": "หายใจล้มเหลวเฉียบพลัน **ภายใน 6 ชม.** หลังได้ผลิตภัณฑ์ที่มี plasma ร่วมกับ **infiltrate สองข้าง, ไข้, ความดันต่ำ** แต่ JVP ไม่สูงและหัวใจทำงานปกติ (non-cardiogenic) = **TRALI** เกิดจาก anti-HLA/anti-HNA antibody ใน plasma ของผู้บริจาค (มักเป็นผู้หญิงที่เคยตั้งครรภ์) กระตุ้น neutrophil ในปอด · รักษาแบบประคับประคอง: หยุดให้เลือด ให้ออกซิเจน/เครื่องช่วยหายใจ แจ้งธนาคารเลือด ไม่ควรให้ diuretic\n- **TACO** มีความดันสูง JVP สูง หัวใจโต/น้ำเกิน ตอบสนองต่อ diuretic\n- **Delayed hemolytic** เกิด 2–10 วัน แสดงด้วยซีดและ bilirubin สูง\n- **FNHTR** มีไข้แต่ไม่ทำให้หายใจล้มเหลวและ infiltrate\n- **TA-GVHD** เกิด 1–2 สัปดาห์ มีผื่น ท้องเสีย pancytopenia",
+     "pearl": "TRALI = non-cardiogenic ภายใน 6 ชม. + ไข้ + ความดันต่ำ · TACO = น้ำเกิน ความดันสูง",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-4-3",
+     "kind": "mcq",
+     "topic": "Hypocalcemia in massive transfusion",
+     "stem": "A 33-year-old man with a liver injury from a motorcycle crash has received 14 units of red cells, 12 units of plasma and 2 apheresis platelet units over 2 hours. He develops hypotension unresponsive to further volume, a prolonged QT interval on the monitor and ongoing oozing. Which laboratory abnormality is most likely responsible and should be corrected?",
+     "choices": [
+      "Low ionized calcium from citrate binding",
+      "High ionized calcium from stored red cells",
+      "Hypernatremia from plasma",
+      "Hypomagnesemia from platelets",
+      "Hyperphosphatemia from plasma"
+     ],
+     "answer": 0,
+     "explain": "เลือดและ plasma ในถุงใช้ **citrate** เป็นสารกันเลือดแข็ง ซึ่งจับ **calcium** เมื่อให้เร็วและปริมาณมาก (ตับแปรรูป citrate ไม่ทัน โดยเฉพาะเมื่อ shock/hypothermia/ตับบาดเจ็บ) → **ionized Ca ต่ำ** ทำให้หัวใจบีบตัวลด ความดันต่ำดื้อต่อสารน้ำ QT ยาว และ Ca เป็น cofactor ของการแข็งตัวของเลือด → เลือดออกมากขึ้น ต้องตรวจ ionized Ca และให้ **calcium chloride/gluconate** ระหว่าง massive transfusion\n- **Ionized Ca สูง** ผิดทิศ\n- **Hypernatremia** ไม่ใช่ปัญหาหลักและไม่ทำให้ QT ยาว\n- **Hypomagnesemia** อาจเกิดได้บ้าง (citrate จับ Mg ด้วย) แต่ไม่ใช่ปัญหาหลัก\n- **Hyperphosphatemia** ไม่ใช่ภาวะแทรกซ้อนที่คาดได้",
+     "pearl": "Massive transfusion → citrate → ionized Ca ต่ำ → ให้ calcium",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N12-03-4-4",
+     "kind": "mcq",
+     "topic": "Damage control resuscitation and ratios",
+     "stem": "A 27-year-old man with a gunshot wound to the abdomen arrives with BP 76/44 mmHg, heart rate 132/min and a positive FAST. The massive transfusion protocol is activated and he is taken to the operating room. Which resuscitation strategy is supported by current evidence?",
+     "choices": [
+      "Early plasma, platelets and red cells in about a 1:1:1 ratio with limited crystalloid and permissive hypotension until hemorrhage control",
+      "Two liters of crystalloid first, then red cells only, then plasma after 10 units",
+      "Red cells alone until INR exceeds 2.0, then plasma",
+      "Large-volume colloid infusion to keep systolic BP above 120 mmHg before surgery",
+      "Red cells and plasma in a 1:4 ratio to minimize plasma-related lung injury"
+     ],
+     "answer": 0,
+     "explain": "**Damage control resuscitation** ประกอบด้วย **permissive hypotension** (ยอม SBP ราว 80–90 mmHg ในผู้ที่ไม่มี TBI จนกว่าจะหยุดเลือดได้), **จำกัด crystalloid/colloid** และให้ **plasma : platelets : RBC ราว 1:1:1** ตั้งแต่ต้น · **PROPPR** พบว่า 1:1:1 ลดการตายจากเลือดออกใน 24 ชม. (9% vs 15%) และหยุดเลือดได้มากกว่า 1:1:2 โดยไม่เพิ่ม ARDS/MOF · ร่วมกับ TXA ภายใน 3 ชม. และหยุดเลือดด้วยการผ่าตัดโดยเร็ว\n- **Crystalloid 2 L ก่อน** ตามแนวเก่า ทำให้ dilution, hypothermia, acidosis\n- **RBC อย่างเดียวจนกว่า INR สูง** ทำให้ coagulopathy แย่ลงก่อนจะแก้\n- **Colloid ปริมาณมากให้ SBP มากกว่า 120** เพิ่มเลือดออก (pop the clot) และ dilution\n- **Plasma น้อย (1:4)** สัมพันธ์กับอัตราตายสูงขึ้นในผู้บาดเจ็บที่เสียเลือดมาก",
+     "pearl": "DCR = permissive hypotension + น้อย crystalloid + 1:1:1",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-03-MEQ1",
+   "part": "MEQ",
+   "topic": "Anticoagulated trauma patient with hemorrhagic shock — reversal, massive transfusion and transfusion complications",
+   "vignette": "ชายไทยอายุ 68 ปี ขับรถจักรยานยนต์ล้ม ปวดท้องด้านซ้ายบน ถูกส่งต่อจาก รพช. มา รพศ. ประวัติ AF กิน **warfarin** (INR เป้า 2–3) ไม่ทราบว่ากินยาครั้งสุดท้ายเมื่อไร\n\nแรกรับ: GCS 15, BP 78/50 mmHg, PR 128/min, RR 26/min, BT 35.6°C · ท้องกดเจ็บด้านซ้ายบน · **FAST บวก** (splenorenal)\n\n| Lab | ค่า |\n|---|---|\n| Hb | 9.1 g/dL |\n| Platelets | 180,000/µL |\n| INR | 3.2 |\n| Fibrinogen | 150 mg/dL |\n| pH / BE | 7.24 / −8 |\n| Lactate | 5.2 mmol/L |",
+   "questions": [
+    {
+     "q": "1. จงบอกภาวะของผู้ป่วยและปัจจัยที่ทำให้เลือดออกรุนแรงขึ้น พร้อมเหตุผลว่าทำไม Hb 9.1 จึงไม่ได้แปลว่าเสียเลือดน้อย",
+     "a": "- **Hemorrhagic shock** จาก **splenic injury** (FAST บวก, ความดันต่ำ, HR เร็ว, lactate สูง, BE −8)\n- ปัจจัยซ้ำเติม: **warfarin (INR 3.2)**, **trauma-induced coagulopathy**, **lethal triad** — hypothermia (35.6°C), acidosis (pH 7.24), coagulopathy · fibrinogen ต่ำ · อายุมาก (หัวใจชดเชยได้น้อย)\n- Hb ช่วงแรกยังไม่ตกเพราะเสีย whole blood (สัดส่วน RBC/plasma เท่าเดิม) จะลดเมื่อมีการเติมน้ำจากนอกหลอดเลือดหรือได้ crystalloid → ตัดสินจาก hemodynamics\n- เกณฑ์ให้คะแนน: วินิจฉัย (1) · ปัจจัยครบอย่างน้อย 3 (1) · อธิบาย Hb (1)"
+    },
+    {
+     "q": "2. จงสั่งการรักษาเบื้องต้นในห้องฉุกเฉินภายใน 15 นาทีแรก (รวมการ reverse warfarin)",
+     "a": "- ABC, เปิดเส้นใหญ่ 2 เส้น, ส่ง type & crossmatch, **เปิด massive transfusion protocol** (ABC score: SBP ≤90, HR ≥120, FAST บวก = 3)\n- ให้ **O RBC + AB/low-titer A plasma + platelets ราว 1:1:1** ผ่าน **blood warmer** · จำกัด crystalloid · **permissive hypotension** (SBP ~80–90 ไม่มี TBI)\n- **Tranexamic acid 1 g IV ใน 10 นาที** แล้ว 1 g ใน 8 ชม. (ภายใน 3 ชม.)\n- **Reverse warfarin**: **4-factor PCC** (ขนาดตาม INR/น้ำหนัก) + **vitamin K 10 mg IV ช้า ๆ** (ถ้าไม่มี PCC ใช้ FFP)\n- อุ่นร่างกาย, ตรวจ ionized Ca, ABG, TEG/ROTEM ถ้ามี\n- **ไปห้องผ่าตัดทันที** (splenectomy) — ผู้ป่วยไม่ตอบสนองจึงไม่เหมาะกับ nonoperative management\n- เกณฑ์ให้คะแนน: MTP/สัดส่วน (2) · TXA (1) · reversal ถูก (2) · source control (1)"
+    },
+    {
+     "q": "3. ระหว่างผ่าตัด ได้ PRC 12 units, plasma 10 units, platelets 2 apheresis units มีเลือดซึมทั่ว fibrinogen 80 mg/dL ionized Ca 0.8 mmol/L อุณหภูมิ 34.8°C จงแก้ไขทีละปัญหา และบอกทางเลือกการผ่าตัดถ้ายังไม่ดีขึ้น",
+     "a": "- **Fibrinogen ต่ำ** → **cryoprecipitate** (หรือ fibrinogen concentrate) ตามระดับ\n- **Ionized Ca ต่ำ** จาก citrate → **calcium chloride/gluconate IV**\n- **Hypothermia** → อุ่นเลือด/สารน้ำ, warm air blanket, อุ่นห้อง\n- แก้ acidosis ด้วยการคืน perfusion · ใช้ TEG กำหนด products ต่อ\n- **Damage control surgery**: หยุดเลือด (splenectomy, packing), ควบคุมการปนเปื้อน, **ปิดช่องท้องชั่วคราว** แล้วไปแก้ lethal triad ใน ICU ก่อนกลับมาผ่าตัดใหม่ใน 24–48 ชม.\n- เกณฑ์ให้คะแนน: แก้ครบ 3 ปัญหา (3) · damage control (1)"
+    },
+    {
+     "q": "4. หลังผ่าตัด 1 ชั่วโมงใน ICU ผู้ป่วยหายใจเหนื่อยขึ้น SpO₂ 85% CXR มี infiltrate สองข้าง จงแยกโรคระหว่าง TRALI กับ TACO และบอกการจัดการ",
+     "a": "| | **TRALI** | **TACO** |\n|---|---|---|\n| เวลา | ภายใน 6 ชม. | ระหว่าง/หลังให้ |\n| BP | **ต่ำ** | **สูง** |\n| ไข้ | มักมี | ไม่มี |\n| JVP/CVP, BNP | ปกติ | **สูง** |\n| Echo | หัวใจทำงานปกติ | น้ำเกิน/หัวใจทำงานลด |\n| ตอบ diuretic | ไม่ | **ดี** |\n- การจัดการ: หยุด/ชะลอการให้เลือดที่ไม่จำเป็น, ออกซิเจน/เครื่องช่วยหายใจ (lung-protective), แจ้งธนาคารเลือด · TACO → furosemide, จำกัดน้ำ · TRALI → ประคับประคอง ไม่ให้ diuretic ถ้าความดันต่ำ\n- แยกจาก ARDS จาก shock/aspiration และ pulmonary contusion\n- เกณฑ์ให้คะแนน: ลักษณะแยกโรคอย่างน้อย 3 ข้อ (2) · การจัดการแต่ละภาวะ (2)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 4",
+    "Holcomb JB et al. PROPPR trial. JAMA 2015",
+    "CRASH-2 collaborators. Lancet 2010"
+   ]
+  }
+ ],
+ "osce": []
+}

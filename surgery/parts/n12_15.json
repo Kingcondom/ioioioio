@@ -1,0 +1,521 @@
+{
+ "lec": "15",
+ "date": "Schwartz Ch 46–48, 50",
+ "title": "Anesthesia, perioperative care, older adults & ethics",
+ "subtitle": "ยาชา/ยาสลบที่อันตราย การประเมินก่อนผ่าตัด ERAS และภาวะแทรกซ้อนหลังผ่าตัด รวมถึงการดูแลผู้สูงอายุและการตัดสินใจทางจริยธรรม",
+ "objectives": [
+  "คำนวณขนาดสูงสุดของ local anesthetic และรักษา LAST และ malignant hyperthermia ได้ทันที",
+  "เลือกใช้ neuromuscular blocker และยานำสลบอย่างปลอดภัย และระบุข้อห้ามของ succinylcholine",
+  "จัด ASA class ประเมินความเสี่ยงหัวใจ/ปอดก่อนผ่าตัด และให้คำแนะนำ NPO ยาต้านเกล็ดเลือด/anticoagulant",
+  "อธิบายองค์ประกอบ ERAS และแนวทางหาสาเหตุไข้และภาวะแทรกซ้อนหลังผ่าตัด",
+  "ประเมิน frailty ป้องกันและจัดการ postoperative delirium ในผู้สูงอายุ",
+  "ประยุกต์หลัก informed consent, capacity, surrogate, double effect และ DNR ในบริบทไทย"
+ ],
+ "guidelines": [
+  "ASA Practice Guidelines for Preoperative Fasting (2017)",
+  "ACC/AHA 2014 Perioperative Cardiovascular Evaluation guideline",
+  "ASRA Checklist for Local Anesthetic Systemic Toxicity (2020)",
+  "ACS NSQIP/AGS Best Practices for the Optimal Preoperative Assessment of the Geriatric Surgical Patient (2012)",
+  "ERAS Society guidelines for elective colorectal surgery",
+  "พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12"
+ ],
+ "sections": [
+  {
+   "id": "n12-15-1",
+   "title": "Anesthesia pharmacology: local anesthetics, MH, NMB และ airway",
+   "summary": "ยาชาให้ได้เท่าไร พิษจากยาชาและ malignant hyperthermia รักษาอย่างไร และเลือกยาคลายกล้ามเนื้อ/ยานำสลบอย่างไรให้ปลอดภัย",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 46 — Anesthesia for Surgical Patients",
+   "md": "### Local anesthetics: กลไก ชนิด และขนาดสูงสุด\nยาชาเฉพาะที่ **ปิด voltage-gated Na⁺ channel** จากด้านในเซลล์ → กระแสประสาทไม่ส่งต่อ · เส้นใยเล็ก/มี myelin บาง (ความเจ็บ อุณหภูมิ) ชาก่อน motor\n| | **Amide** (ชื่อมี \"i\" สองตัว) | **Ester** |\n|---|---|---|\n| ตัวอย่าง | **lidocaine**, **bupivacaine**, ropivacaine, mepivacaine | procaine, chloroprocaine, tetracaine, benzocaine, cocaine |\n| Metabolism | **ตับ** | **plasma cholinesterase** |\n| แพ้ยา | พบน้อยมาก | มากกว่า (PABA) |\n\n| ยา | ขนาดสูงสุดโดยทั่วไป (ไม่มี epinephrine) | มี epinephrine |\n|---|---|---|\n| **Lidocaine** | **4.5 mg/kg** (ราว 300 mg) | **7 mg/kg** (ราว 500 mg) |\n| **Bupivacaine** | **2.5 mg/kg** (ราว 175 mg) | 3 mg/kg (ราว 225 mg) |\n\n- คำนวณจาก % : **1% = 10 mg/mL** · เช่น ผู้ใหญ่ 60 kg ใช้ 1% lidocaine ธรรมดาได้ราว 270 mg = 27 mL\n- Epinephrine หดหลอดเลือด → ยาอยู่นานขึ้น เลือดออกน้อย ดูดซึมช้า (จึงให้ขนาดสูงขึ้นได้) — ใช้ที่นิ้ว/อวัยวะเพศได้ในขนาดเจือจางตามหลักฐานปัจจุบัน แต่ระวังผู้ป่วยหลอดเลือดส่วนปลายเสีย\n- ฉีดในเนื้อเยื่ออักเสบ (pH ต่ำ) ยาชาได้ไม่ดี เพราะยาอยู่ในรูป ionized มาก\n\n### Local anesthetic systemic toxicity (LAST)\n- ปัจจัยเสี่ยง: ขนาดสะสมสูง, **ฉีดเข้าหลอดเลือด**, ตำแหน่งดูดซึมสูง (intercostal มากกว่า epidural มากกว่า subcutaneous), โรคตับ/หัวใจ/ไต, ผู้สูงอายุ\n- **CNS มาก่อน**: ชารอบปาก ลิ้นชา **เสียงในหู** รสโลหะ กระสับกระส่าย พูดไม่ชัด → **ชัก** → หมดสติ\n- **Cardiovascular**: ความดันตก, heart block, ventricular arrhythmia, หัวใจหยุดเต้น — **bupivacaine** เป็นพิษต่อหัวใจมากที่สุด (กู้ชีพยาก)\n- ป้องกัน: คำนวณขนาดก่อนฉีด, **aspirate ก่อนฉีดและฉีดทีละน้อย**, ใช้ US นำ\n#### การรักษา (ASRA)\n1. หยุดฉีด เรียกช่วย ดูแล airway ให้ O₂ 100% (ป้องกัน hypoxia/acidosis)\n2. คุมชักด้วย **benzodiazepine** (หลีกเลี่ยง propofol ขนาดสูงถ้าความดันต่ำ)\n3. **20% lipid emulsion**: bolus ราว 1.5 mL/kg (หรือ 100 mL ในผู้ใหญ่เกิน 70 kg) แล้ว infusion\n4. ถ้าหัวใจหยุด: CPR โดยใช้ **epinephrine ขนาดลดลง** (≤1 mcg/kg) หลีกเลี่ยง vasopressin, CCB, β-blocker, lidocaine · เตรียม cardiopulmonary bypass\n\n### Malignant hyperthermia (MH)\n- กรรมพันธุ์ (มักเป็น autosomal dominant) ส่วนใหญ่ **RYR1** · ตัวกระตุ้น: **volatile anesthetics** (sevoflurane, desflurane, isoflurane) และ **succinylcholine**\n- Ca²⁺ ในกล้ามเนื้อสูงไม่หยุด → hypermetabolism\n- **อาการแรกสุด: EtCO₂ สูงขึ้นอธิบายไม่ได้** (แม้เพิ่มการหายใจ) + **tachycardia** · masseter rigidity หลัง succinylcholine · กล้ามเนื้อแข็งทั้งตัว · **ไข้สูงเป็นอาการช้า**\n- ผลตามมา: mixed respiratory + metabolic acidosis, **hyperkalemia**, rhabdomyolysis/myoglobinuria, arrhythmia, DIC\n- รักษา: **หยุด volatile + succinylcholine ทันที**, hyperventilate O₂ 100% flow สูง, **dantrolene 2.5 mg/kg IV** ให้ซ้ำได้, ลดอุณหภูมิ, แก้ K⁺/acidosis, ปัสสาวะออกดี, ICU (กลับเป็นซ้ำได้) · ผ่าตัดครั้งหน้าใช้ **TIVA** (propofol) + nondepolarizing NMB\n- แยก **neuroleptic malignant syndrome** (ยาต้านโรคจิต ค่อยเป็นค่อยไป) และ thyroid storm\n\n### Neuromuscular blockers (NMB) และยานำสลบ\n| | **Succinylcholine** (depolarizing) | **Rocuronium/vecuronium** (nondepolarizing, steroid) | Cisatracurium |\n|---|---|---|---|\n| ขนาด intubate | 1 mg/kg | roc 0.6 mg/kg (**1.2 mg/kg สำหรับ RSI**) | 0.1 mg/kg |\n| ออกฤทธิ์/หมดฤทธิ์ | **เร็วสุด** (ไม่ถึง 60 วินาที / 5–8 นาที) มี fasciculation | ปานกลาง | ปานกลาง |\n| Metabolism | **pseudocholinesterase** (ขาด → หยุดหายใจนานหลายชม.) | ตับเป็นหลัก | **Hofmann elimination** (ไตวาย/ตับวายใช้ได้) |\n| Reversal | ไม่มี | **sugammadex** หรือ **neostigmine + glycopyrrolate/atropine** | neostigmine |\n\n- **ห้าม succinylcholine** เมื่อเสี่ยง **hyperkalemia** รุนแรง: **ไฟไหม้/crush/denervation** (stroke, SCI) หลังผ่านไปราว 24–72 ชม., นอนนาน, กล้ามเนื้อเสื่อม (เด็กชาย Duchenne), K⁺ สูงเดิม, ประวัติ MH · ผลอื่น: bradycardia (เด็ก), ICP/IOP สูงชั่วคราว, ปวดกล้ามเนื้อ\n- ต้อง reverse NMB ให้พอก่อนถอดท่อ — residual blockade เพิ่มการหายใจล้มเหลวหลังผ่าตัด\n| ยานำสลบ | จุดเด่น |\n|---|---|\n| **Propofol** | ใช้บ่อยสุด ฟื้นเร็ว ลด PONV · **ความดันตก** |\n| **Ketamine** | NMDA antagonist · **คงความดัน/ขยายหลอดลม** → ดีใน shock, asthma · หลอน |\n| **Etomidate** | hemodynamic นิ่งที่สุด · กด **adrenal (11β-hydroxylase)** |\n\n### Airway assessment และ rapid sequence intubation\n- ประเมิน: **Mallampati I–IV** (เห็นลิ้นไก่/เพดานอ่อนชัดแค่ไหน), อ้าปาก (น้อยกว่า 3 นิ้ว), thyromental distance (น้อยกว่า 3 นิ้ว/6 cm), คอสั้น/ขยับคอได้น้อย, ฟันยื่น, อ้วน/OSA, เคยใส่ท่อยาก\n- **RSI** สำหรับผู้ป่วยเสี่ยงสำลัก (ท้องอิ่ม ลำไส้อุดตัน ตั้งครรภ์ GERD รุนแรง): preoxygenate → ยานำสลบ + **succinylcholine หรือ rocuronium 1.2 mg/kg** ต่อกันทันที → ไม่บีบ bag (หรือบีบเบา) → ใส่ท่อ → ยืนยันด้วย **EtCO₂ waveform**\n- **Can't intubate, can't oxygenate** → supraglottic airway → **emergency front-of-neck access (cricothyrotomy)** ตาม difficult airway algorithm",
+   "pearls": [
+    "Lidocaine max 4.5 mg/kg (7 mg/kg + epi) · bupivacaine 2.5 mg/kg · 1% = 10 mg/mL",
+    "LAST: CNS (ชารอบปาก เสียงในหู ชัก) → CVS · bupivacaine พิษต่อหัวใจสุด → 20% lipid emulsion",
+    "Amide = ตับ · ester = plasma cholinesterase (แพ้ง่ายกว่า)",
+    "MH: EtCO₂ สูงขึ้นเป็นอาการแรก ไข้มาทีหลัง → หยุด volatile + dantrolene 2.5 mg/kg",
+    "Succinylcholine ห้ามใน burn/crush/denervation หลัง 24–72 ชม. (hyperkalemia), ประวัติ MH",
+    "Rocuronium/vecuronium reverse ด้วย sugammadex · cisatracurium = Hofmann (ไต/ตับวายใช้ได้)",
+    "Ketamine คงความดัน ขยายหลอดลม · etomidate กด adrenal · propofol ความดันตก"
+   ],
+   "items": [
+    {
+     "id": "N12-15-1-1",
+     "kind": "mcq",
+     "topic": "Local anesthetic maximum dose",
+     "stem": "A 50-kg woman is scheduled for excision of a large lipoma on her back under local anesthesia in the minor operating room. The surgeon plans to infiltrate 1% lidocaine without epinephrine. What is the maximum volume that can be safely used?",
+     "choices": [
+      "About 22 mL",
+      "About 50 mL",
+      "About 35 mL",
+      "About 10 mL",
+      "About 70 mL"
+     ],
+     "answer": 0,
+     "explain": "ขนาดสูงสุดของ **lidocaine ไม่ผสม epinephrine** ราว **4.5 mg/kg** → 50 kg × 4.5 = **225 mg** · **1% = 10 mg/mL** ดังนั้นใช้ได้ราว **22 mL** (ถ้าผสม epinephrine 7 mg/kg = 350 mg หรือ 35 mL)\n- **50 mL** = 500 mg เกินขนาดสูงสุดแม้มี epinephrine สำหรับน้ำหนักนี้\n- **35 mL** = 350 mg คือขนาดสูงสุดเมื่อ **ผสม epinephrine** (7 mg/kg)\n- **10 mL** ปลอดภัยแต่ไม่ใช่ขนาดสูงสุด อาจไม่พอสำหรับก้อนใหญ่\n- **70 mL** = 700 mg เสี่ยงชักและหัวใจหยุดเต้น",
+     "pearl": "1% lidocaine = 10 mg/mL · ไม่มี epi 4.5 mg/kg",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-1-2",
+     "kind": "mcq",
+     "topic": "LAST — treatment",
+     "stem": "A 68-year-old man receives an ultrasound-guided interscalene block with 30 mL of 0.5% bupivacaine before shoulder surgery. Two minutes later he reports perioral numbness and ringing in his ears, then has a generalized tonic–clonic seizure. BP falls to 70/40 mmHg with wide-complex bradycardia. Airway is secured and oxygen given. Besides benzodiazepine for the seizure, what is the most specific treatment?",
+     "choices": [
+      "20% lipid emulsion IV bolus followed by infusion",
+      "Intravenous lidocaine for the arrhythmia",
+      "High-dose vasopressin",
+      "Intravenous verapamil",
+      "Dantrolene 2.5 mg/kg"
+     ],
+     "answer": 0,
+     "explain": "ชารอบปาก เสียงในหู → ชัก → ความดันตก หัวใจนำไฟฟ้าผิดปกติหลังฉีด **bupivacaine** ปริมาณมาก (150 mg) = **local anesthetic systemic toxicity** เริ่มจาก CNS แล้วตามด้วยหัวใจ (bupivacaine พิษต่อหัวใจมากที่สุด) การรักษาจำเพาะคือ **20% lipid emulsion** (bolus ราว 1.5 mL/kg แล้ว infusion) ทำหน้าที่เป็น \"lipid sink\" ดึงยาออกจากเนื้อเยื่อ ร่วมกับ airway/O₂ และ CPR โดยใช้ epinephrine ขนาดลดลงถ้าหัวใจหยุด\n- **Lidocaine** เป็นยาชาอีกตัว เพิ่มพิษ\n- **Vasopressin** ไม่แนะนำใน LAST\n- **Verapamil** (CCB) กดหัวใจเพิ่ม ห้ามใช้\n- **Dantrolene** ใช้กับ malignant hyperthermia",
+     "pearl": "LAST → airway/O₂ + benzodiazepine + 20% lipid emulsion",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-1-3",
+     "kind": "mcq",
+     "topic": "Malignant hyperthermia — early sign and treatment",
+     "stem": "A 22-year-old man undergoing laparoscopic appendectomy under sevoflurane after succinylcholine induction develops, 25 minutes into the case, a rise in end-tidal CO2 from 38 to 72 mmHg despite doubling minute ventilation, HR 140/min, and generalized muscle rigidity. Temperature is 37.9°C and rising. ABG: pH 7.12, PaCO2 78 mmHg, K 6.1 mEq/L. What is the most appropriate immediate management?",
+     "choices": [
+      "Stop sevoflurane, hyperventilate with 100% oxygen and give IV dantrolene 2.5 mg/kg",
+      "Increase sevoflurane concentration to deepen anesthesia",
+      "Give another dose of succinylcholine to relieve rigidity",
+      "Give acetaminophen and continue the operation",
+      "Start IV lipid emulsion"
+     ],
+     "answer": 0,
+     "explain": "EtCO₂ สูงขึ้นเรื่อยๆ ทั้งที่เพิ่มการหายใจ + tachycardia + กล้ามเนื้อแข็ง + acidosis + **hyperkalemia** หลังได้ **volatile และ succinylcholine** = **malignant hyperthermia** (RYR1 ทำให้ Ca²⁺ ในกล้ามเนื้อสูงต่อเนื่อง) ไข้เป็นอาการที่มาช้า การรักษาคือ **หยุดยากระตุ้นทันที**, ให้ O₂ 100% flow สูง hyperventilate, **dantrolene 2.5 mg/kg IV** (ซ้ำได้) ร่วมกับลดอุณหภูมิ แก้ K⁺ และเฝ้าระวังใน ICU\n- **เพิ่ม sevoflurane** คือเพิ่มตัวกระตุ้น\n- **Succinylcholine ซ้ำ** เป็นตัวกระตุ้นและเพิ่ม K⁺\n- **Acetaminophen** ไม่แก้กลไกและไข้ใน MH ไม่ได้มาจาก hypothalamus\n- **Lipid emulsion** ใช้กับ LAST",
+     "pearl": "MH: EtCO₂ พุ่งก่อนไข้ → หยุด volatile + dantrolene",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-1-4",
+     "kind": "mcq",
+     "topic": "Succinylcholine contraindication",
+     "stem": "A 40-year-old man with 45% total body surface area flame burns sustained 5 days ago requires urgent intubation for escharotomy and debridement under general anesthesia. Serum potassium is 4.6 mEq/L. Which neuromuscular blocker should be avoided for intubation?",
+     "choices": [
+      "Succinylcholine",
+      "Rocuronium",
+      "Vecuronium",
+      "Cisatracurium",
+      "Atracurium"
+     ],
+     "answer": 0,
+     "explain": "หลังไฟไหม้ (และ crush/denervation/นอนนาน) ราว 24–72 ชม. ขึ้นไป กล้ามเนื้อเพิ่ม **extrajunctional acetylcholine receptors** จำนวนมาก เมื่อได้ **succinylcholine** (depolarizing) จะปล่อย K⁺ ออกพร้อมกันจนเกิด **hyperkalemia รุนแรง หัวใจหยุดเต้นได้** แม้ K⁺ ก่อนให้ยาปกติ จึงต้องหลีกเลี่ยง และใช้ nondepolarizing แทน\n- **Rocuronium** (1.2 mg/kg) ใช้แทนใน RSI ได้ และ reverse ด้วย sugammadex\n- **Vecuronium** ไม่ทำให้ K⁺ สูง (แม้ผู้ป่วยไฟไหม้อาจต้องใช้ขนาดสูงขึ้น)\n- **Cisatracurium/atracurium** ใช้ได้ และไม่ขึ้นกับการทำงานของไต/ตับ",
+     "pearl": "Burn/crush/denervation หลัง 24–72 ชม. → ห้าม succinylcholine",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-15-2",
+   "title": "Preoperative evaluation: ASA, ความเสี่ยงหัวใจและปอด",
+   "summary": "ผู้ป่วยคนนี้พร้อมผ่าตัดหรือยัง ต้องตรวจเพิ่มอะไร และต้องปรับยาอะไรก่อนผ่าตัด",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 46 — Preoperative Evaluation",
+   "md": "### ASA physical status และเป้าหมายของการประเมินก่อนผ่าตัด\nเป้าหมายไม่ใช่ \"clear\" ผู้ป่วย แต่เพื่อ **หาความเสี่ยงที่แก้ได้ ปรับให้ดีที่สุด และวางแผนร่วมกับผู้ป่วย**\n| ASA | ความหมาย | ตัวอย่าง |\n|---|---|---|\n| I | แข็งแรงดี | ไม่มีโรคประจำตัว |\n| II | โรคทางระบบเล็กน้อย | HT/DM คุมได้ดี, สูบบุหรี่, อ้วนไม่มาก |\n| III | โรคทางระบบรุนแรง (จำกัดกิจกรรม) | DM คุมไม่ดี, COPD, BMI ≥40, ESRD ฟอกเลือด, MI เกิน 3 เดือน |\n| IV | โรครุนแรงคุกคามชีวิตตลอดเวลา | MI/stroke ใน 3 เดือน, sepsis, EF ต่ำมาก |\n| V | ใกล้ตาย ไม่ผ่าตัดไม่รอด | ruptured AAA, intracranial bleed + mass effect |\n| VI | สมองตาย บริจาคอวัยวะ | — |\n- ต่อท้าย **E** เมื่อผ่าตัดฉุกเฉิน (เช่น appendicitis ในคนแข็งแรง = **ASA IE**) · อัตราตายเพิ่มตาม ASA และเพิ่มในกรณีฉุกเฉิน\n- **Labs ส่งตามข้อบ่งชี้** (โรค ยา ชนิดผ่าตัด) ไม่ใช่ทุกราย · ทดสอบตั้งครรภ์ในหญิงวัยเจริญพันธุ์\n\n| งดน้ำงดอาหาร (ASA, elective) | เวลาก่อนผ่าตัด |\n|---|---|\n| **Clear liquids** (น้ำ, เครื่องดื่มคาร์โบไฮเดรต, ชา/กาแฟไม่ใส่นม) | **2 ชม.** |\n| นมแม่ | 4 ชม. |\n| อาหารเบา, นมผงทารก, นมวัว | **6 ชม.** |\n| อาหารมัน/ทอด/เนื้อ | **8 ชม.** |\nผู้ป่วยเสี่ยงสำลักแม้งดตามเวลา (GERD รุนแรง, gastroparesis เบาหวาน, ลำไส้อุดตัน) → **RSI**\n\n### ความเสี่ยงด้านหัวใจ (ACC/AHA 2014)\n**Revised Cardiac Risk Index (RCRI)** 6 ข้อ: ① **ischemic heart disease** ② **heart failure** ③ **cerebrovascular disease** ④ **เบาหวานที่ใช้ insulin** ⑤ **creatinine มากกว่า 2 mg/dL** ⑥ **ผ่าตัดเสี่ยงสูง** (intraperitoneal, intrathoracic, suprainguinal vascular)\n#### ลำดับการตัดสินใจแบบย่อ\n1. ผ่าตัดฉุกเฉิน → ไปผ่าตัด พร้อมเฝ้าระวัง\n2. มี **active cardiac condition** (ACS, decompensated HF, arrhythmia รุนแรง, **severe AS ที่มีอาการ**) → ชะลอ elective แล้วรักษาก่อน\n3. ความเสี่ยงต่ำ (MACE น้อยกว่า 1%) → ผ่าตัดได้\n4. ความเสี่ยงสูง → ดู **functional capacity**: ทำได้ **≥4 METs** (ขึ้นบันได 1–2 ชั้น เดินขึ้นเนิน ทำงานบ้านหนัก) → **ผ่าตัดได้โดยไม่ต้องตรวจเพิ่ม** · ไม่ถึง/ไม่ทราบ → พิจารณา stress test **เฉพาะเมื่อผลจะเปลี่ยนการรักษา**\n- **Coronary stent**: เลื่อน elective ไป **30 วันหลัง BMS** และ **1 ปีหลัง DES** (semi-elective ที่รอไม่ได้ อย่างน้อย **180 วัน**) · ผ่าตัดเร่งด่วนก่อนกำหนด → ให้ dual antiplatelet ต่อถ้าทำได้ (อย่างน้อย **aspirin** ไม่หยุด)\n- **β-blocker และ statin ที่กินอยู่ → กินต่อ** · ห้ามเริ่ม β-blocker ในวันผ่าตัด (POISE: stroke และตายเพิ่ม)\n\n### ความเสี่ยงด้านปอดและอื่นๆ\n- ปัจจัยเสี่ยงปอด: **ผ่าตัดช่องท้องส่วนบน/ช่องอก**, ผ่าตัดนาน, ฉุกเฉิน, อายุมาก, COPD, **สูบบุหรี่**, ASA ≥II, functional dependence, albumin ต่ำ, **OSA**\n- ลดความเสี่ยง: **เลิกบุหรี่** (ยิ่งนานยิ่งดี ควร ≥4–8 สัปดาห์ แต่เลิกเมื่อไรก็มีประโยชน์), คุม COPD/asthma, **incentive spirometry/deep breathing**, ยาแก้ปวดดี (หายใจลึกได้), ใช้ laparoscopy, ลุกเดินเร็ว\n- **OSA**: คัดกรองด้วย **STOP-BANG** (Snoring, Tired, Observed apnea, Pressure, BMI เกิน 35, Age เกิน 50, Neck เกิน 40 cm, Gender ชาย) → ระวังยากดการหายใจ นำ CPAP มาใช้หลังผ่าตัด\n- **Glucose**: HbA1c สูงเพิ่ม SSI · ลด/งด oral hypoglycemics เช้าวันผ่าตัด (SGLT2i หยุด 3–4 วันก่อน — เสี่ยง euglycemic DKA) · insulin basal ลดขนาด\n- **Anticoagulants**: **warfarin หยุด 5 วัน** (เช็ค INR) · bridging เฉพาะเสี่ยง thrombosis สูง (mechanical mitral valve, VTE ภายใน 3 เดือน) · DOAC หยุด 1–3 วันตามไตและความเสี่ยงเลือดออก\n- **Steroid เรื้อรัง** → stress-dose hydrocortisone ตามขนาดการผ่าตัด\n- **Nutrition**: น้ำหนักลดเกิน 10% ใน 6 เดือน หรือ albumin ต่ำกว่า 3 g/dL → เสริมอาหาร 7–14 วันก่อนผ่าตัดใหญ่ถ้ารอได้\n- **Liver disease**: Child–Pugh/MELD สูง → อัตราตายหลังผ่าตัดช่องท้องสูงมาก",
+   "pearls": [
+    "ASA I แข็งแรง · II โรคเล็กน้อย · III โรครุนแรง · IV คุกคามชีวิต · V ใกล้ตาย · E = ฉุกเฉิน",
+    "NPO: clear 2 ชม. · นมแม่ 4 · อาหารเบา 6 · อาหารมัน 8 ชม.",
+    "RCRI: IHD, HF, stroke, DM ใช้ insulin, Cr มากกว่า 2, ผ่าตัดเสี่ยงสูง",
+    "ทำได้ ≥4 METs → ผ่าตัดได้โดยไม่ต้อง stress test",
+    "Elective หลัง stent: BMS 30 วัน · DES 1 ปี (เร่งได้ไม่ต่ำกว่า 180 วัน)",
+    "β-blocker ที่กินอยู่ให้ต่อ · ห้ามเริ่มวันผ่าตัด",
+    "Warfarin หยุด 5 วัน · bridging เฉพาะเสี่ยง thrombosis สูง"
+   ],
+   "items": [
+    {
+     "id": "N12-15-2-1",
+     "kind": "mcq",
+     "topic": "ASA classification",
+     "stem": "A 58-year-old man with poorly controlled type 2 diabetes (HbA1c 9.8%), hypertension and a body mass index of 41 kg/m² presents with acute appendicitis and is booked for laparoscopic appendectomy tonight. He is able to walk on level ground but gets dyspneic climbing one flight of stairs. Which ASA physical status classification is correct?",
+     "choices": [
+      "ASA IIIE",
+      "ASA IIE",
+      "ASA III",
+      "ASA IVE",
+      "ASA I"
+     ],
+     "answer": 0,
+     "explain": "เบาหวานคุมไม่ดี + **BMI ≥40 (morbid obesity)** ถือเป็น **โรคทางระบบรุนแรงที่จำกัดกิจกรรม** = **ASA III** และเพราะเป็นการผ่าตัด **ฉุกเฉิน** จึงต่อท้ายด้วย **E** → **ASA IIIE**\n- **ASA IIE** ใช้กับโรคที่คุมได้ดีไม่จำกัดกิจกรรม (เช่น HT คุมดี, BMI 30–40)\n- **ASA III** ขาดตัว E ของการผ่าตัดฉุกเฉิน\n- **ASA IVE** ต้องเป็นโรคที่คุกคามชีวิตตลอดเวลา เช่น MI ใหม่ sepsis shock\n- **ASA I** คือคนแข็งแรงไม่มีโรค",
+     "pearl": "โรครุนแรงจำกัดกิจกรรม = ASA III · ผ่าตัดฉุกเฉินต่อ E",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-2-2",
+     "kind": "mcq",
+     "topic": "Functional capacity and cardiac testing",
+     "stem": "A 66-year-old woman with hypertension and type 2 diabetes on metformin is scheduled for elective laparoscopic colectomy for colon cancer. She has no chest pain, heart failure symptoms or prior stroke; creatinine is 1.0 mg/dL. She gardens daily and climbs two flights of stairs to her apartment without symptoms. ECG shows no acute changes. What is the most appropriate next step in cardiac evaluation?",
+     "choices": [
+      "Proceed to surgery without further cardiac testing",
+      "Dobutamine stress echocardiography",
+      "Coronary angiography",
+      "Start metoprolol on the morning of surgery",
+      "Delay surgery for 6 months"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยไม่มี active cardiac condition และมี RCRI เพียง 1 ข้อ (การผ่าตัด intraperitoneal; เบาหวานไม่ได้ใช้ insulin) ที่สำคัญคือ **functional capacity ดี (≥4 METs)** — ขึ้นบันได 2 ชั้นได้โดยไม่มีอาการ ตามแนวทาง ACC/AHA สามารถ **ผ่าตัดได้เลยโดยไม่ต้องตรวจเพิ่ม** เพราะการตรวจเพิ่มจะไม่เปลี่ยนการรักษา\n- **Stress echo** สงวนไว้สำหรับผู้เสี่ยงสูงที่ functional capacity ไม่ถึง 4 METs/ไม่ทราบ และผลจะเปลี่ยนการรักษา\n- **Coronary angiography** ไม่มีข้อบ่งชี้\n- **เริ่ม metoprolol วันผ่าตัด** เพิ่ม stroke และตาย (POISE)\n- **เลื่อน 6 เดือน** เป็นอันตรายต่อการรักษามะเร็งโดยไม่จำเป็น",
+     "pearl": "≥4 METs ไม่มีอาการ → ผ่าตัดได้ไม่ต้อง stress test",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-2-3",
+     "kind": "mcq",
+     "topic": "Drug-eluting stent and elective surgery",
+     "stem": "A 62-year-old man had a drug-eluting stent placed in the left anterior descending artery 3 months ago for an acute coronary syndrome and takes aspirin plus ticagrelor. He has a symptomatic but uncomplicated reducible inguinal hernia and requests repair next week. What is the most appropriate recommendation?",
+     "choices": [
+      "Defer the elective hernia repair until dual antiplatelet therapy can be safely completed, ideally about 1 year after stent placement",
+      "Stop both antiplatelet drugs 7 days before surgery and operate next week",
+      "Stop aspirin and continue ticagrelor and operate next week",
+      "Bridge with enoxaparin after stopping antiplatelets",
+      "Operate next week while continuing both drugs because hernia repair has no bleeding risk"
+     ],
+     "answer": 0,
+     "explain": "ภายในปีแรกหลังใส่ **drug-eluting stent** (โดยเฉพาะหลัง ACS) การหยุด dual antiplatelet เสี่ยง **stent thrombosis** ซึ่งทำให้ MI และตายได้สูง ACC/AHA แนะนำ **เลื่อนการผ่าตัด elective ไปราว 1 ปี** หลัง DES (ถ้ารอไม่ได้ อย่างน้อย 6 เดือน) — ไส้เลื่อนที่ดันกลับได้และไม่มีภาวะแทรกซ้อนรอได้ (ให้คำแนะนำอาการ incarceration)\n- **หยุดยาทั้งสองตัว** ช่วง 3 เดือนหลังใส่ stent อันตรายที่สุด\n- **หยุด aspirin แต่คง ticagrelor** ไม่ใช่แนวทาง — หากจำเป็นต้องผ่าตัดให้คง aspirin ไว้\n- **Enoxaparin bridging** ไม่ป้องกัน stent thrombosis (เป็นกลไกเกล็ดเลือด)\n- **ผ่าตัดโดยให้ยาต่อทั้งสองตัว** เพิ่มเลือดออก และไม่มีความจำเป็นต้องรีบ",
+     "pearl": "DES ภายใน 1 ปี → เลื่อน elective (อย่างน้อย 180 วัน) · ไม่หยุด antiplatelet",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46 — Anesthesia for Surgical Patients"
+     ]
+    },
+    {
+     "id": "N12-15-2-4",
+     "kind": "mcq",
+     "topic": "Preoperative fasting",
+     "stem": "A 35-year-old healthy woman (ASA I) is scheduled for elective laparoscopic cholecystectomy at 1:00 PM as part of an enhanced recovery pathway. She asks what she may eat and drink. Which instruction is most appropriate?",
+     "choices": [
+      "Light breakfast until 7:00 AM, and clear carbohydrate drink until 11:00 AM",
+      "Nothing by mouth after midnight, including water",
+      "Fried food until 9:00 AM",
+      "Milk tea until 12:30 PM",
+      "Clear liquids allowed only until 5:00 AM"
+     ],
+     "answer": 0,
+     "explain": "ตามแนวทาง ASA สำหรับ elective surgery: **clear liquids ได้ถึง 2 ชม.** ก่อนผ่าตัด (รวม **carbohydrate drink** ตาม ERAS ซึ่งลด insulin resistance และความหิว/กระหาย) · **อาหารเบา 6 ชม.** · อาหารมัน/ทอด 8 ชม. ผ่าตัด 13:00 จึงกินอาหารเบาได้ถึง 07:00 และดื่ม clear carbohydrate ได้ถึง 11:00\n- **NPO หลังเที่ยงคืน** เป็นแนวปฏิบัติเก่า ทำให้ขาดน้ำ หิว และ insulin resistance โดยไม่ลดการสำลัก\n- **ของทอดถึง 09:00** ห่างเพียง 4 ชม. ต้องงดอย่างน้อย 8 ชม.\n- **ชานมถึง 12:30** — นมไม่ใช่ clear liquid และห่างเพียง 30 นาที\n- **Clear ถึง 05:00** ปลอดภัยแต่งดนานเกินจำเป็น",
+     "pearl": "Clear 2 ชม. · อาหารเบา 6 ชม. · อาหารมัน 8 ชม.",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50 — Optimizing Perioperative Care: Enhanced Recovery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-15-3",
+   "title": "ERAS และภาวะแทรกซ้อนหลังผ่าตัดที่พบบ่อย",
+   "summary": "ทำอย่างไรให้ผู้ป่วยฟื้นเร็วหลังผ่าตัด และเมื่อมีไข้/ปัสสาวะน้อย/ท้องอืดหลังผ่าตัดต้องคิดถึงอะไร",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 50 — Optimizing Perioperative Care: Enhanced Recovery",
+   "md": "### ERAS (enhanced recovery after surgery) คืออะไร\nชุดมาตรการ **multimodal** ที่อิงหลักฐาน ลด **surgical stress response** (catabolism, insulin resistance, ileus, ปวด) → ฟื้นตัวเร็ว นอนรพ.สั้น ภาวะแทรกซ้อนลด โดยไม่เพิ่ม readmission — แต่ละข้อช่วยเล็กน้อย **ใช้ร่วมกันจึงได้ผลเสริมกัน** และต้องทำงานเป็นทีม (ศัลยแพทย์ วิสัญญี พยาบาล นักโภชนาการ)\n| ระยะ | องค์ประกอบหลัก |\n|---|---|\n| **ก่อนผ่าตัด** | ให้ความรู้/ตั้งเป้าหมาย, เลิกบุหรี่/แอลกอฮอล์, ปรับโภชนาการ/โลหิตจาง, prehabilitation · **ไม่งดน้ำนาน** + **carbohydrate loading** (ราว 100 g คืนก่อน และ 50 g 2–3 ชม.ก่อน) · ไม่ให้ยานอนหลับ/benzodiazepine ออกฤทธิ์ยาว · VTE และ SSI prophylaxis (ยาภายใน 60 นาทีก่อนลงมีด) |\n| **ระหว่างผ่าตัด** | **minimally invasive** เมื่อทำได้, ยาสลบออกฤทธิ์สั้น, **goal-directed fluid** (หลีกเลี่ยงทั้งน้ำเกินและขาด), **normothermia**, **PONV prophylaxis** ตามความเสี่ยง, regional/epidural block หรือ local infiltration, **ไม่ใส่ NG tube/drain เป็นประจำ** |\n| **หลังผ่าตัด** | **multimodal opioid-sparing analgesia** (paracetamol + NSAID ± gabapentinoid, regional), **ให้กินเร็ว** (ภายในวันแรก), **ลุกเดินวันผ่าตัด/วันแรก**, **ถอดสายสวนปัสสาวะเร็ว**, เคี้ยวหมากฝรั่ง, คุมน้ำตาล, เกณฑ์จำหน่ายชัดเจน และ audit การปฏิบัติตาม |\n\n> เหตุผลของการเลิก NG tube ประจำ: ไม่ลด leak แต่เพิ่มไข้ ปอดแฟบ pneumonia และทำให้กินช้า\n\n### ไข้หลังผ่าตัด: คิดตามเวลา\n| ช่วงเวลา | สาเหตุที่ต้องนึกถึง |\n|---|---|\n| ระหว่าง/ทันทีหลังผ่าตัด (ชั่วโมง) | **malignant hyperthermia**, ปฏิกิริยาจากเลือด/ยา, bacteremia จากการผ่าตัดในที่ติดเชื้อ |\n| **ภายใน 48 ชม.** | **inflammatory response** ต่อการผ่าตัด (ส่วนใหญ่) · **atelectasis** พบร่วมแต่ไม่ใช่สาเหตุไข้ที่พิสูจน์แล้ว · **necrotizing soft tissue infection** (Group A strep/Clostridium — แผลปวดมาก ผิวคล้ำ น้ำใส) · aspiration · ลำไส้รั่วตั้งแต่ระหว่างผ่าตัด |\n| **วันที่ 3–5** | **pneumonia**, **UTI** (สายสวน), **line infection**, anastomotic leak เริ่มแสดง |\n| **วันที่ 5–7 ขึ้นไป** | **surgical site infection**, **intra-abdominal abscess/anastomotic leak**, **DVT/PE**, C. difficile, drug fever |\n- จำ **5W**: Wind (ปอด) · Water (ปัสสาวะ) · Wound (แผล) · Walking (DVT/PE) · Wonder drugs (ยา) — และเพิ่ม \"What did we do\" (line, leak, abscess)\n- ประเมิน: ตรวจแผลทุกครั้ง, ดูสาย/line, CBC, UA, culture, CXR ตามอาการ · ไข้ร่วม **tachycardia/ปวดท้องเพิ่ม/ileus นาน หลังผ่าตัดลำไส้** → **CT with contrast** หา leak/abscess\n\n### ภาวะแทรกซ้อนที่พบบ่อย\n| ภาวะ | จุดสำคัญ | การจัดการ |\n|---|---|---|\n| **Atelectasis/pneumonia** | ผ่าตัดช่องท้องบน ปวดหายใจไม่ลึก สูบบุหรี่ | incentive spirometry, ลุกเดิน, คุมปวด · pneumonia → ยาปฏิชีวนะ |\n| **SSI** | superficial/deep/organ-space · แผลแดงร้อนมีหนอง วันที่ 5–7 | **เปิดแผลระบาย** เป็นหลัก ± ยาปฏิชีวนะถ้ามี cellulitis/systemic signs |\n| **Anastomotic leak** | วันที่ 3–7 ไข้ tachycardia ปวดท้อง ileus นาน ลำไส้ไม่ทำงาน | CT · leak เล็ก/ฝีเฉพาะที่ → percutaneous drain + antibiotics · peritonitis/sepsis → ผ่าตัด (มัก diverting stoma) |\n| **Postoperative ileus** | ยา opioid, ผ่าตัดลำไส้, เกลือแร่ผิดปกติ (K, Mg) | แก้เกลือแร่ ลด opioid ลุกเดิน · ileus นานเกินปกติ → หาสาเหตุ (leak, obstruction) |\n| **Oliguria/AKI** | ปัสสาวะน้อยกว่า 0.5 mL/kg/ชม. | **ตรวจสายสวนอุดตันก่อน** → ประเมิน volume → ยาเป็นพิษต่อไต → obstruction |\n| **Urinary retention** | ผ่าตัดไส้เลื่อน/ทวารหนัก, spinal, ชายสูงอายุ, opioid | bladder scan → สวนปัสสาวะ |\n| **DVT/PE** | ขาบวม, หอบ tachycardia ขาดออกซิเจนเฉียบพลัน | CTPA/duplex → anticoagulant |\n| **PONV** | หญิง, ไม่สูบบุหรี่, เคยเมารถ/PONV, opioid หลังผ่าตัด (Apfel) | prophylaxis หลายกลไก: dexamethasone, ondansetron ฯลฯ |\n| **Postoperative MI** | มักไม่มีเจ็บหน้าอก (ยาแก้ปวด/ยาสลบ) | troponin, ECG เมื่อมี hypotension/arrhythmia/หอบ |\n\n### หลักการให้สารน้ำหลังผ่าตัด\n- ผู้ใหญ่ maintenance ราว **25–30 mL/kg/วัน** + Na⁺/K⁺ ตามความต้องการ · ทดแทน loss จาก NG/drain/stoma ตามชนิดของเหลว\n- **น้ำเกิน** (บวม ลำไส้บวม anastomosis แย่ ปอดบวมน้ำ) อันตรายพอๆ กับน้ำขาด — ERAS เน้น **goal-directed** และหยุด IV เมื่อกินได้\n- ช่วงหลังผ่าตัดมี **ADH สูง** → ระวัง hyponatremia ถ้าให้น้ำ hypotonic มาก",
+   "pearls": [
+    "ERAS = multimodal: carb loading, ไม่งดน้ำนาน, MIS, goal-directed fluid, ไม่ใส่ NG/drain ประจำ, กินเร็ว ลุกเร็ว",
+    "Opioid-sparing multimodal analgesia ลด ileus และ PONV",
+    "ไข้ภายใน 48 ชม. ส่วนใหญ่ = inflammatory response · ระวัง necrotizing SSI ที่ปวดเกินเหตุ",
+    "ไข้วันที่ 3–5: pneumonia, UTI, line · วันที่ 5–7+: SSI, abscess/leak, DVT/PE",
+    "Anastomotic leak: ไข้ + tachycardia + ileus นาน วันที่ 3–7 → CT",
+    "SSI superficial → เปิดแผลระบายเป็นหลัก",
+    "ปัสสาวะออกน้อยหลังผ่าตัด → ตรวจสายสวนอุดตันก่อน"
+   ],
+   "mnem": [
+    {
+     "name": "5W ของไข้หลังผ่าตัด",
+     "what": "ไล่หาสาเหตุไข้หลังผ่าตัดตามลำดับเวลาโดยประมาณ",
+     "lines": [
+      [
+       "Wind",
+       "ปอด: aspiration, pneumonia (วันที่ 1–3)"
+      ],
+      [
+       "Water",
+       "UTI จากสายสวน (วันที่ 3–5)"
+      ],
+      [
+       "Wound",
+       "SSI (วันที่ 5–7)"
+      ],
+      [
+       "Walking",
+       "DVT/PE (วันที่ 5 ขึ้นไป)"
+      ],
+      [
+       "Wonder drugs",
+       "drug fever, C. difficile, เลือด"
+      ]
+     ],
+     "note": "เวลาเป็นแค่แนว — ผู้ป่วยแต่ละรายต้องตรวจแผลและ line เสมอ"
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-15-3-1",
+     "kind": "mcq",
+     "topic": "Anastomotic leak",
+     "stem": "A 64-year-old man underwent open right hemicolectomy with primary ileocolic anastomosis for cancer. On postoperative day 5 he develops fever of 38.8°C, HR 118/min, increasing diffuse abdominal pain and distension; he has not passed flatus and is intolerant of oral intake. The wound looks clean. WBC 19,500/µL. What is the most appropriate next step?",
+     "choices": [
+      "CT of the abdomen and pelvis with IV (± oral/rectal) contrast",
+      "Reassure that this is normal postoperative ileus and start a regular diet",
+      "Chest radiograph and incentive spirometry only",
+      "Urinalysis and oral nitrofurantoin",
+      "Discharge home with oral antibiotics"
+     ],
+     "answer": 0,
+     "explain": "ไข้ + **tachycardia** + ปวดท้องมากขึ้น + ileus ไม่หาย ในวันที่ 3–7 หลังต่อลำไส้ ต้องคิดถึง **anastomotic leak/intra-abdominal abscess** ก่อน (tachycardia ที่อธิบายไม่ได้เป็นสัญญาณเตือนสำคัญ) ขั้นต่อไปคือ **CT with contrast** — leak เล็ก/ฝีเฉพาะที่ → percutaneous drainage + antibiotics · ถ้ามี generalized peritonitis หรือ sepsis → กลับไปผ่าตัด (มักทำ stoma)\n- **Normal ileus แล้วให้กิน** ไม่เข้ากับไข้ ชีพจรเร็ว และ WBC สูง\n- **CXR + spirometry อย่างเดียว** มองข้ามอาการทางท้อง\n- **UA + nitrofurantoin** ไม่อธิบายปวดท้องและ ileus\n- **ส่งกลับบ้าน** อันตรายถึงชีวิต",
+     "pearl": "หลังต่อลำไส้ วันที่ 3–7 ไข้ + tachycardia + ileus → CT หา leak",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50 — Optimizing Perioperative Care: Enhanced Recovery"
+     ]
+    },
+    {
+     "id": "N12-15-3-2",
+     "kind": "mcq",
+     "topic": "Superficial surgical site infection",
+     "stem": "A 52-year-old woman has a temperature of 38.4°C on postoperative day 6 after open sigmoid colectomy. The lower portion of her midline incision is red, warm, indurated and tender, with a small amount of purulent drainage. The abdomen is otherwise soft, she is tolerating diet and passing stool, and the fascia is intact on probing. What is the most appropriate management?",
+     "choices": [
+      "Open the infected part of the incision, drain, and perform local wound care",
+      "Start IV antibiotics alone and keep the wound closed",
+      "Emergency relaparotomy",
+      "CT-guided drainage",
+      "Apply a topical antibiotic ointment over the closed wound"
+     ],
+     "answer": 0,
+     "explain": "ไข้วันที่ 5–7 + แผลแดงร้อนกดเจ็บมีหนอง โดยท้องนุ่ม ลำไส้ทำงาน และ fascia ยังดี = **superficial incisional SSI** หลักการรักษาที่สำคัญที่สุดคือ **เปิดแผลส่วนที่ติดเชื้อเพื่อระบายหนอง** แล้วทำแผลเปิด (wet-to-dry หรือ NPWT) · ยาปฏิชีวนะเสริมเฉพาะเมื่อมี cellulitis กว้างหรืออาการทั่วร่างกาย\n- **ยาอย่างเดียวโดยปิดแผล** หนองไม่ระบาย ไม่หาย\n- **Relaparotomy** ไม่จำเป็นเมื่อไม่มีหลักฐาน organ-space infection หรือ fascia แยก\n- **CT-guided drainage** ใช้กับ intra-abdominal abscess\n- **ยาทาภายนอก** ไม่ระบายหนองใต้ผิว",
+     "pearl": "Superficial SSI → เปิดแผลระบาย เป็นการรักษาหลัก",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50 — Optimizing Perioperative Care: Enhanced Recovery"
+     ]
+    },
+    {
+     "id": "N12-15-3-3",
+     "kind": "mcq",
+     "topic": "ERAS elements",
+     "stem": "A hospital is implementing an enhanced recovery pathway for elective colorectal surgery. Which practice is consistent with ERAS principles?",
+     "choices": [
+      "Preoperative oral carbohydrate loading with clear fluids up to 2 hours before surgery",
+      "Routine nasogastric tube decompression until return of flatus",
+      "Fasting from midnight and liberal intraoperative crystalloid of 5 L",
+      "Patient-controlled IV morphine as the sole postoperative analgesic",
+      "Bed rest for 48 hours and urinary catheter until discharge"
+     ],
+     "answer": 0,
+     "explain": "ERAS เน้นลด surgical stress: ให้ **clear carbohydrate drink ได้ถึง 2 ชม.ก่อนผ่าตัด** ลด insulin resistance การสลายโปรตีน และความหิว/กระหาย โดยไม่เพิ่มการสำลัก\n- **NG tube ประจำ** ไม่ลด leak แต่เพิ่มไข้ ปอดแฟบ pneumonia และทำให้กินช้า\n- **งดน้ำตั้งแต่เที่ยงคืน + น้ำ 5 L** ขัดกับหลัก goal-directed fluid — น้ำเกินทำให้ลำไส้บวม ileus และภาวะแทรกซ้อน\n- **Morphine เป็นยาแก้ปวดเดียว** ขัดกับ multimodal opioid-sparing analgesia (opioid เพิ่ม ileus/PONV)\n- **นอนบนเตียง 48 ชม. + สายสวนจนกลับบ้าน** ขัดกับการลุกเดินเร็วและถอดสายสวนเร็ว (เพิ่ม VTE, pneumonia, UTI)",
+     "pearl": "ERAS: carb loading, ไม่ NG ประจำ, fluid พอดี, multimodal analgesia, ลุกเร็ว",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50 — Optimizing Perioperative Care: Enhanced Recovery"
+     ]
+    },
+    {
+     "id": "N12-15-3-4",
+     "kind": "mcq",
+     "topic": "Postoperative oliguria",
+     "stem": "A 70-year-old man is 10 hours after an open abdominal aortic aneurysm repair. The nurse reports urine output of 10 mL/h for the last 2 hours, previously 60 mL/h. BP 122/70 mmHg, HR 92/min, CVP unchanged, and the abdomen is soft and not distended. He has a Foley catheter in place. What is the most appropriate first step?",
+     "choices": [
+      "Check the Foley catheter for obstruction by flushing it",
+      "Give IV furosemide 40 mg",
+      "Start renal-dose dopamine",
+      "Arrange emergency hemodialysis",
+      "Immediate return to the operating room"
+     ],
+     "answer": 0,
+     "explain": "ปัสสาวะลดลงฉับพลันในผู้ป่วยที่มีสายสวน ขั้นแรกที่ง่ายและพบบ่อยที่สุดคือ **สายสวนอุดตัน/หักพับ** จึงต้อง **ตรวจและ flush สายก่อน** (หรือ bladder scan) แล้วจึงประเมิน volume status, ความดันในช่องท้อง (abdominal compartment syndrome), ยาที่เป็นพิษต่อไต และหลอดเลือดไตที่อาจได้รับผลจากการ clamp aorta\n- **Furosemide** ทำให้ปัสสาวะออกโดยไม่แก้สาเหตุ และซ้ำเติมถ้าขาดน้ำ\n- **Renal-dose dopamine** ไม่ป้องกันหรือรักษา AKI\n- **Hemodialysis ฉุกเฉิน** ไม่มีข้อบ่งชี้ (ไม่มี K สูง, น้ำเกิน, acidosis รุนแรง, uremia)\n- **กลับห้องผ่าตัดทันที** เกินเหตุเมื่อยังไม่ได้ตรวจสาเหตุพื้นฐาน",
+     "pearl": "Oliguria หลังผ่าตัด → ตรวจสายสวนก่อน แล้วค่อยประเมิน volume",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50 — Optimizing Perioperative Care: Enhanced Recovery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-15-4",
+   "title": "ผู้ป่วยสูงอายุ (frailty, delirium) และจริยธรรม (consent, capacity, palliative care)",
+   "summary": "ประเมินและดูแลผู้สูงอายุก่อน–หลังผ่าตัดอย่างไร และตัดสินใจเรื่องการยินยอม/การรักษาระยะท้ายอย่างถูกหลัก",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 47 — Surgical Considerations in Older Adults; Ch 48 — Ethics, Palliative Care, and Care at the End of Life",
+   "md": "### ผู้สูงอายุ: frailty และ functional status\n**Frailty** = ภาวะลดลงของพลังสำรองหลายระบบ ทนความเครียดได้น้อย → ภาวะแทรกซ้อน นอนรพ.นาน **ส่งไป nursing home** และตายสูงขึ้น โดยไม่ขึ้นกับอายุตามปฏิทิน\n| Fried frailty phenotype (5 ข้อ) | |\n|---|---|\n| น้ำหนักลดโดยไม่ตั้งใจ | เหนื่อยล้า (exhaustion) |\n| กิจกรรมทางกายน้อย | **เดินช้า** (walk time) |\n| **แรงบีบมือลดลง** (grip strength) | |\n- 1–2 ข้อ = **prefrail** · **≥3 ข้อ = frail** · คัดกรองง่าย: **timed up and go**, Clinical Frailty Scale\n- ACS NSQIP/AGS แนะนำประเมิน: **cognition** (Mini-Cog), **ความเสี่ยง delirium**, ซึมเศร้า, แอลกอฮอล์, **functional status/ADL**, การล้ม, โภชนาการ, ยาที่ไม่เหมาะ (**Beers criteria**), เป้าหมายการรักษาและ advance directive, การสนับสนุนจากครอบครัว\n- **Acute abdomen ในผู้สูงอายุอาการไม่ชัด**: appendicitis/cholecystitis/perforation มักไม่มีไข้ WBC อาจปกติ ไม่มี peritonitis ชัด → ต้องสงสัยสูง ใช้ CT เร็ว\n- **การทำงานของหัวใจเสื่อม** เป็นสาเหตุการตายหลังผ่าตัดมากกว่าครึ่งในผู้สูงอายุ → ระวังสารน้ำทั้งขาดและเกิน · ไต GFR ลด (creatinine อาจปกติเพราะกล้ามเนื้อน้อย) → ปรับขนาดยา\n\n### Postoperative delirium\n- นิยาม: **เฉียบพลัน + ขึ้นลงตลอดวัน + inattention** + (คิดสับสน หรือ ระดับความรู้สึกตัวเปลี่ยน) = **CAM criteria**\n- **Hypoactive** (เงียบ ซึม) พบบ่อยและพลาดง่ายกว่า hyperactive · สัมพันธ์กับตายสูง สมองเสื่อมเร็ว นอนนาน\n- ปัจจัยเสี่ยง: อายุเกิน 65, **cognitive impairment เดิม**, โรคร่วมมาก, ฟังก์ชันไม่ดี, การมองเห็น/ได้ยินบกพร่อง\n- ปัจจัยกระตุ้น: **ยา** (anticholinergic, **benzodiazepine**, meperidine, steroid, antihistamine), ปวดคุมไม่ได้, การติดเชื้อ, hypoxia, เกลือแร่, **ปัสสาวะคั่ง/อุจจาระอัด**, ผูกมัด, สายต่างๆ, นอนไม่หลับ, ถอนสุรา\n- **DELIRIUM** หาสาเหตุ: Drugs · Electrolytes · Lack of drugs (withdrawal) · Infection · Restraints/Reduced sensory input · Intracranial · Urinary retention/fecal impaction · Metabolic (MI, PE, hypoxia)\n- **ป้องกัน/รักษาโดยไม่ใช้ยาเป็นหลัก**: แว่นตา/เครื่องช่วยฟัง, orientation, ลุกเดินเร็ว, นอนหลับกลางคืน, ถอดสาย/เลิกผูกมัด, ครอบครัวอยู่ด้วย, คุมปวดแบบ opioid-sparing, ทบทวนยา\n- ยาใช้ **เฉพาะ agitation ที่อันตรายต่อตนเอง/ผู้อื่น**: **haloperidol ขนาดต่ำ** (0.5 mg, รวมมักไม่เกิน 1–2 mg, ดู QTc) · **ไม่ใช้ benzodiazepine** ยกเว้นถอนสุรา/ยานอนหลับ\n\n### Informed consent และ decision-making capacity\n**องค์ประกอบ 4 ข้อของ informed consent** (Schwartz): ① ผู้ป่วย/ผู้แทน **มีความสามารถตัดสินใจ** ② แพทย์ **เปิดเผยข้อมูล** การวินิจฉัย ทางเลือก (รวมการไม่รักษา) ประโยชน์ ความเสี่ยงที่สำคัญ ③ ผู้ป่วย **เข้าใจ** ข้อมูล ④ **ตัดสินใจโดยสมัครใจ** ไม่ถูกบังคับ\n| Capacity (เฉพาะเรื่อง เฉพาะเวลา) | ตรวจอย่างไร |\n|---|---|\n| **เข้าใจ** ข้อมูล | ให้เล่ากลับด้วยคำพูดของตนเอง |\n| **ตระหนัก (appreciate)** ว่าเกี่ยวกับตนเอง | รู้ว่าผลจะเกิดกับตัวเขา |\n| **ใช้เหตุผล** เปรียบเทียบทางเลือก | อธิบายเหตุผลของการเลือก |\n| **สื่อสารการตัดสินใจ** ที่คงที่ | ไม่เปลี่ยนไปมา |\n- **Capacity** เป็นการประเมินทางคลินิกโดยแพทย์ ต่างจาก competence ซึ่งเป็นการตัดสินทางกฎหมาย · ผู้ป่วยที่มี capacity **ปฏิเสธการรักษาได้** แม้แพทย์เห็นว่าไม่สมเหตุสมผล — ต้องอธิบายผลที่ตามมา บันทึก และเสนอทางเลือก\n- **ภาวะฉุกเฉิน** ที่ผู้ป่วยตัดสินใจไม่ได้และรอผู้แทนไม่ได้ → ทำการรักษาที่จำเป็นเพื่อรักษาชีวิตได้ (**emergency exception / implied consent**)\n- ไม่มี capacity → **ผู้แทน (surrogate)** ตัดสินใจตาม **ความประสงค์ที่ผู้ป่วยเคยแสดง (substituted judgment)** ถ้าไม่ทราบใช้ **best interest** · เด็ก: ผู้ปกครองยินยอม + ขอ assent จากเด็ก\n- บริบทไทย: **พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12** — บุคคลทำ **หนังสือแสดงเจตนาไม่ประสงค์จะรับบริการสาธารณสุขที่เป็นไปเพียงเพื่อยืดการตายในวาระสุดท้าย** ได้ (living will)\n\n### End-of-life care และ palliative surgery\n- **Palliative care** = ดูแลอาการและคุณภาพชีวิตร่วมกับการรักษาได้ทุกระยะ ไม่ใช่เฉพาะช่วงท้าย · **hospice** = ระยะท้ายที่เลิกมุ่งรักษาโรค\n- **Withholding กับ withdrawing** life-sustaining treatment **ไม่ต่างกันทางจริยธรรม** — การหยุดเครื่องช่วยหายใจที่ไม่ได้ประโยชน์ไม่ใช่การฆ่า\n- **Principle of double effect**: ให้ยา (เช่น opioid titrate) เพื่อ **บรรเทาทุกข์ทรมาน** เป็นที่ยอมรับ แม้อาจทำให้หายใจลดลงหรือเสียชีวิตเร็วขึ้นโดยไม่ตั้งใจ — ต่างจากการให้ยาขนาดใหญ่ครั้งเดียวโดยตั้งใจให้หยุดหายใจ\n- **DNR ไม่ใช่ \"do not treat\"** · ก่อนผ่าตัดผู้ป่วยที่มี DNR ต้อง **คุยทบทวนใหม่ (required reconsideration)** ว่าจะคง/ระงับช่วงผ่าตัดหรือจำกัดเฉพาะหัตถการใด ไม่ยกเลิกอัตโนมัติ\n- การสื่อสาร: ใช้กรอบ **\"best case/worst case\"** หรือ SPIKES ตอนแจ้งข่าวร้าย · **เปิดเผยความผิดพลาด (disclosure of error)** ตรงไปตรงมา ขอโทษ อธิบายแผนแก้ไข",
+   "pearls": [
+    "Fried frailty: น้ำหนักลด, เหนื่อยล้า, กิจกรรมน้อย, เดินช้า, grip อ่อน · ≥3 = frail",
+    "ผู้สูงอายุ acute abdomen มักไม่มีไข้/WBC ปกติ → สงสัยสูง CT เร็ว",
+    "Delirium (CAM): เฉียบพลัน+ขึ้นลง + inattention + สับสน/ระดับความรู้สึกตัวเปลี่ยน · hypoactive พลาดง่าย",
+    "Delirium รักษาโดยไม่ใช้ยาเป็นหลัก · agitation อันตราย → haloperidol ขนาดต่ำ · เลี่ยง benzodiazepine",
+    "Informed consent: capacity + disclosure + understanding + voluntary authorization",
+    "ผู้มี capacity ปฏิเสธการรักษาได้ · ฉุกเฉินที่ตัดสินใจไม่ได้ → emergency exception",
+    "Withholding = withdrawing ทางจริยธรรม · double effect · DNR ต้อง reconsider ก่อนผ่าตัด"
+   ],
+   "mnem": [
+    {
+     "name": "DELIRIUM",
+     "what": "หาสาเหตุ delirium หลังผ่าตัด",
+     "lines": [
+      [
+       "D",
+       "Drugs (anticholinergic, benzo, opioid, steroid)"
+      ],
+      [
+       "E",
+       "Electrolytes, Environment"
+      ],
+      [
+       "L",
+       "Lack of drugs (withdrawal), Lack of sleep"
+      ],
+      [
+       "I",
+       "Infection"
+      ],
+      [
+       "R",
+       "Restraints, Reduced sensory input"
+      ],
+      [
+       "I",
+       "Intracranial (stroke, bleed, seizure)"
+      ],
+      [
+       "U",
+       "Urinary retention, fecal impaction"
+      ],
+      [
+       "M",
+       "Metabolic/Myocardial (MI, PE, hypoxia, uremia)"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-15-4-1",
+     "kind": "mcq",
+     "topic": "Postoperative delirium management",
+     "stem": "An 82-year-old woman is on postoperative day 2 after hemiarthroplasty for a femoral neck fracture. Overnight she became intermittently confused, pulling at her IV line, and this morning she is drowsy and cannot keep attention on the conversation; her daughter says she was cognitively normal at home. Vital signs and SpO2 are normal. She has a urinary catheter, was given diphenhydramine for sleep, and her pain is poorly controlled. What is the best initial management?",
+     "choices": [
+      "Identify and remove precipitants (stop diphenhydramine, treat pain, remove the catheter), with non-pharmacologic measures",
+      "Start scheduled lorazepam at night",
+      "Apply physical restraints to protect the IV line",
+      "Start donepezil for presumed dementia",
+      "Order brain MRI before any other measures"
+     ],
+     "answer": 0,
+     "explain": "อาการ **เฉียบพลัน ขึ้นลง** ร่วมกับ **inattention** และระดับความรู้สึกตัวเปลี่ยน (ซึม) = **postoperative delirium** (CAM บวก) มีปัจจัยกระตุ้นชัด: **diphenhydramine (anticholinergic)**, **ปวดที่คุมไม่ได้**, **สายสวนปัสสาวะ** การรักษาหลักคือ **หาและแก้สาเหตุ** ร่วมกับ **มาตรการไม่ใช้ยา** (orientation แว่น/เครื่องช่วยฟัง ครอบครัวอยู่ด้วย นอนกลางคืน ลุกเดิน) และตรวจหาการติดเชื้อ ปัสสาวะคั่ง เกลือแร่\n- **Lorazepam** ทำให้ delirium แย่ลง (ใช้เฉพาะถอนสุรา/ยานอนหลับ)\n- **Physical restraints** เป็นปัจจัยกระตุ้น delirium และเพิ่มบาดเจ็บ\n- **Donepezil** — ผู้ป่วยไม่มีสมองเสื่อมเดิม และไม่รักษา delirium\n- **MRI** ไม่ใช่ขั้นแรกเมื่อไม่มีอาการทางระบบประสาทเฉพาะที่",
+     "pearl": "Delirium: แก้ปัจจัยกระตุ้น + non-pharmacologic ก่อน · เลี่ยง benzo/ผูกมัด",
+     "src": "Schwartz 11e Ch 47",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 47 — Surgical Considerations in Older Adults"
+     ]
+    },
+    {
+     "id": "N12-15-4-2",
+     "kind": "mcq",
+     "topic": "Capacity and refusal of surgery",
+     "stem": "A 74-year-old retired teacher with perforated sigmoid diverticulitis and generalized peritonitis is advised to undergo emergency Hartmann's procedure. He is alert and oriented, accurately explains that without surgery he will probably die, and says he has watched his wife live with a colostomy and does not want one under any circumstances, accepting the risk of death. His son insists that the surgeon operate anyway. What is the most appropriate action?",
+     "choices": [
+      "Respect the patient's refusal after confirming capacity, discuss alternatives, document, and offer palliative care",
+      "Operate because the son consents as next of kin",
+      "Obtain an emergency court order and operate",
+      "Sedate the patient and proceed under implied consent",
+      "Ask a psychiatrist to declare him incompetent because his choice is unreasonable"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **มี decision-making capacity** ครบ: เข้าใจข้อมูล ตระหนักว่าตนเองจะตาย ใช้เหตุผลที่สอดคล้องกับค่านิยมของตน และสื่อสารการตัดสินใจคงที่ ตามหลัก **autonomy** ผู้ป่วยที่มี capacity **ปฏิเสธการรักษาได้** แม้จะทำให้เสียชีวิต แพทย์ควรยืนยัน capacity สำรวจความกังวล เสนอทางเลือก (เช่น primary anastomosis ± diverting ileostomy ชั่วคราว, percutaneous drainage ถ้าเหมาะสม) บันทึกอย่างละเอียด และให้ **palliative care** ถ้ายังปฏิเสธ\n- **ความยินยอมจากลูก** ใช้ไม่ได้เมื่อผู้ป่วยตัดสินใจเองได้ — surrogate มีบทบาทเมื่อผู้ป่วยไม่มี capacity เท่านั้น\n- **คำสั่งศาล** ไม่เหมาะเพื่อบังคับรักษาผู้ใหญ่ที่มี capacity\n- **Sedate แล้วผ่าตัด** เป็นการละเมิด (battery) — implied consent ใช้กับผู้ที่ตัดสินใจไม่ได้เท่านั้น\n- **การเลือกที่แพทย์เห็นว่าไม่สมเหตุสมผล** ไม่ได้แปลว่าไม่มี capacity",
+     "pearl": "มี capacity → ปฏิเสธการรักษาได้ ญาติแทนไม่ได้",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48 — Ethics, Palliative Care, and Care at the End of Life"
+     ]
+    },
+    {
+     "id": "N12-15-4-3",
+     "kind": "mcq",
+     "topic": "Emergency exception to informed consent",
+     "stem": "A 30-year-old unidentified man is brought in unconscious after a motorcycle crash with a GCS of 6, hypotension, a positive FAST examination and a rapidly expanding abdomen. No family can be reached and there is no advance directive. Delay of laparotomy is likely to be fatal. How should consent be handled?",
+     "choices": [
+      "Proceed with emergency laparotomy under the emergency exception, documenting the circumstances",
+      "Wait until a relative arrives to sign the consent",
+      "Obtain consent from the police officer who accompanied him",
+      "Delay surgery until he regains consciousness",
+      "Ask the hospital director to sign as surrogate before any surgery"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **ไม่สามารถตัดสินใจได้** ไม่มีผู้แทนหรือ advance directive และ **การรอจะทำให้เสียชีวิต** ตามหลักจริยธรรมและกฎหมาย แพทย์ทำการรักษาที่จำเป็นเพื่อรักษาชีวิตได้ภายใต้ **emergency exception (implied consent)** โดยถือตามฉันทามติของสังคมว่าคนส่วนใหญ่ต้องการได้รับการช่วยชีวิต ต้อง **บันทึกเหตุผลความเร่งด่วน** และติดต่อญาติต่อไป การตัดสินใจเรื่องจำกัดการรักษาค่อยทบทวนเมื่อพยากรณ์ชัดขึ้น\n- **รอญาติ** ทำให้ผู้ป่วยเสียชีวิต\n- **ตำรวจ** ไม่ใช่ผู้แทนตามกฎหมายในการตัดสินใจทางการแพทย์\n- **รอให้ฟื้น** เป็นไปไม่ได้ในภาวะช็อกจากเลือดออก\n- **ผู้อำนวยการลงนาม** ไม่จำเป็นและทำให้ล่าช้า",
+     "pearl": "ฉุกเฉิน ตัดสินใจไม่ได้ ไม่มีผู้แทน รอไม่ได้ → ผ่าตัดได้ (emergency exception)",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48 — Ethics, Palliative Care, and Care at the End of Life"
+     ]
+    },
+    {
+     "id": "N12-15-4-4",
+     "kind": "mcq",
+     "topic": "Double effect and withdrawal of support",
+     "stem": "A 79-year-old woman with metastatic pancreatic cancer develops malignant bowel obstruction and is now dying. With her previously documented wishes and her family's agreement, the team has stopped artificial nutrition and is focusing on comfort. She has severe pain and air hunger. The resident worries that titrating IV morphine to relieve her distress could hasten death. Which ethical principle best supports titrating morphine?",
+     "choices": [
+      "The principle of double effect",
+      "The principle of justice",
+      "Therapeutic privilege",
+      "Substituted judgment",
+      "Medical futility as grounds for euthanasia"
+     ],
+     "answer": 0,
+     "explain": "ตาม **principle of double effect** การให้ยา (เช่น **titrate opioid**) ที่ **ตั้งใจบรรเทาความปวดและหอบเหนื่อย** เป็นสิ่งที่ยอมรับได้ทางจริยธรรม แม้อาจมีผลข้างเคียงที่ไม่ได้ตั้งใจคือหายใจลดลงหรือเสียชีวิตเร็วขึ้น — ต่างจากการให้ยาขนาดใหญ่ครั้งเดียวโดย **ตั้งใจ** ให้หยุดหายใจ นอกจากนี้การ **withholding กับ withdrawing** การรักษายืดชีวิตไม่ต่างกันทางจริยธรรม\n- **Justice** เกี่ยวกับการกระจายทรัพยากรอย่างเป็นธรรม\n- **Therapeutic privilege** คือการไม่เปิดเผยข้อมูลบางอย่างเพราะเชื่อว่าจะเป็นอันตรายต่อผู้ป่วย ใช้แคบมาก\n- **Substituted judgment** เป็นหลักการตัดสินใจของผู้แทน ไม่ได้อธิบายการ titrate ยา\n- **Euthanasia** คือการตั้งใจทำให้ตาย ไม่ใช่สิ่งที่กำลังทำ",
+     "pearl": "Titrate opioid เพื่อบรรเทาทุกข์ = double effect · withholding = withdrawing",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48 — Ethics, Palliative Care, and Care at the End of Life"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-15-MEQ1",
+   "part": "MEQ",
+   "topic": "Older adult after colectomy — postoperative delirium, fever workup, anastomotic leak and goals of care",
+   "vignette": "ชายไทยอายุ 81 ปี มีเบาหวาน ความดันสูง เคยลืมง่ายเล็กน้อยแต่ช่วยเหลือตนเองได้ ได้รับการผ่าตัด open sigmoid colectomy + primary anastomosis จากมะเร็งลำไส้ใหญ่ ตามแนวทาง ERAS\nPOD 1: ดีขึ้น ลุกนั่งได้ เริ่มดื่มน้ำ ได้ morphine PCA และ diazepam ก่อนนอนตามที่ญาติขอ\nPOD 3 กลางคืน: สับสน ดึงสายน้ำเกลือ กลางวันหลับซึม เรียกตื่นแต่สนใจคำถามได้ไม่นาน\nPOD 4: T 38.6°C, BP 104/60 mmHg, PR 122/min, RR 24/min, SpO₂ 93% · ท้องอืดตึง กดเจ็บทั่วไป ยังไม่ผายลม · แผลผ่าตัดดี\nLab: WBC 21,000/µL, Cr 1.8 mg/dL (ก่อนผ่าตัด 1.0), lactate 3.2 mmol/L",
+   "questions": [
+    {
+     "q": "1. ภาวะทางจิตประสาทของผู้ป่วยในคืน POD 3 คืออะไร จงให้เหตุผลและบอกปัจจัยเสี่ยง/ปัจจัยกระตุ้น",
+     "a": "**Postoperative delirium** (ชนิด mixed: hyperactive กลางคืน + hypoactive กลางวัน)\n- เข้าเกณฑ์ **CAM**: เกิดเฉียบพลันและขึ้นลง + **inattention** + ระดับความรู้สึกตัวเปลี่ยน\n- ปัจจัยเสี่ยง: อายุ 81, cognitive impairment เดิม, โรคร่วม, ผ่าตัดใหญ่\n- ปัจจัยกระตุ้น: **diazepam (benzodiazepine)**, **opioid**, นอนรพ./สภาพแวดล้อมใหม่ และที่สำคัญคือ **sepsis ที่กำลังเกิด** (delirium เป็นอาการแรกของภาวะแทรกซ้อนได้)\nเกณฑ์ให้คะแนน: วินิจฉัย + CAM 1 · ปัจจัยอย่างน้อย 3 ข้อ 1"
+    },
+    {
+     "q": "2. ใน POD 4 จงบอกการวินิจฉัยแยกโรคของไข้และอาการทรุดลง และการตรวจที่ต้องทำ",
+     "a": "- อันดับแรก: **anastomotic leak/intra-abdominal sepsis** (POD 3–7, ไข้ + **tachycardia** + ท้องอืดกดเจ็บ + ileus + AKI + lactate สูง)\n- อื่นๆ: **pneumonia/aspiration** (RR สูง SpO₂ 93%), UTI, line infection, PE, MI เงียบ (ผู้สูงอายุเบาหวาน)\n- ตรวจ: hemoculture 2 ชุด, CBC, electrolyte, Cr, lactate, ABG, UA/urine culture, **CXR**, ECG + troponin\n- **CT abdomen/pelvis with IV contrast** (± rectal contrast) หา leak/abscess/free air — ปรับตามไต แต่ไม่ควรเลื่อนเมื่อสงสัย leak"
+    },
+    {
+     "q": "3. CT พบ free fluid และ free air จำนวนมากรอบ anastomosis ผู้ป่วยความดันลดเป็น 88/50 mmHg จงบอกการรักษา",
+     "a": "**Anastomotic leak with generalized peritonitis + septic shock**\n- Resuscitation: crystalloid 30 mL/kg ประเมินซ้ำ, **norepinephrine** เป้า MAP ≥65\n- **Broad-spectrum IV antibiotics ภายใน 1 ชม.** (เช่น piperacillin–tazobactam หรือ carbapenem)\n- **Source control ด่วน**: relaparotomy, washout, take down anastomosis → **end colostomy (Hartmann)** (หรือ diverting stoma ตามสภาพ) — leak ใหญ่ + peritonitis ทั่วไม่เหมาะกับ percutaneous drain\n- ICU หลังผ่าตัด\n- หยุด benzodiazepine, คุมปวดแบบ multimodal ลด opioid, ป้องกัน delirium แบบไม่ใช้ยา"
+    },
+    {
+     "q": "4. ก่อนกลับไปผ่าตัด ผู้ป่วยซึมสับสน ลูกสาวคนหนึ่งขอให้ \"ทำทุกอย่าง\" อีกคนบอกว่าพ่อเคยพูดว่าไม่อยากใส่ท่อช่วยหายใจนาน จะดำเนินการเรื่องการยินยอมและเป้าหมายการรักษาอย่างไร",
+     "a": "- ประเมินว่าผู้ป่วย **ไม่มี capacity** ขณะนี้ (delirium) → ใช้ **surrogate** ตัดสินใจตาม **ความประสงค์ที่ผู้ป่วยเคยแสดง (substituted judgment)** ถ้าไม่ทราบจึงใช้ best interest\n- ตรวจหา **หนังสือแสดงเจตนา (พ.ร.บ.สุขภาพแห่งชาติ มาตรา 12)** หรือผู้แทนที่ผู้ป่วยระบุไว้\n- จัด **family meeting** อย่างรวดเร็ว: อธิบายสถานการณ์ ประโยชน์/ความเสี่ยงของการผ่าตัด ใช้กรอบ best case/worst case, ถามว่า \"คุณพ่อให้ความสำคัญกับอะไร\"\n- การผ่าตัดเพื่อ source control อาจสอดคล้องกับเป้าหมายได้ แม้ผู้ป่วยไม่ต้องการใส่ท่อนาน — ตกลง **time-limited trial** ของการดูแลใน ICU และทบทวน DNR/ขอบเขตการรักษาหลังผ่าตัด (required reconsideration)\n- ถ้าเลือกไม่ผ่าตัด → ให้ palliative care เต็มที่\n- บันทึกการสนทนาและการตัดสินใจทั้งหมด · ถ้าไม่สามารถรอได้และชีวิตเสี่ยงทันที ใช้ emergency exception เพื่อการช่วยชีวิต"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 47",
+    "Schwartz 11e Ch 48",
+    "Schwartz 11e Ch 50"
+   ]
+  }
+ ],
+ "osce": []
+}

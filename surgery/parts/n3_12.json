@@ -1,0 +1,309 @@
+{
+ "lec": "12",
+ "date": "Schwartz Ch 42–44",
+ "title": "Head injury, spine & limb injuries",
+ "subtitle": "ผู้บาดเจ็บศีรษะ กระดูกสันหลัง และแขนขา — ประเมิน GCS ตัดสินใจ CT/ส่งต่อ ลด ICP clear C-spine และจัดการ open fracture, compartment syndrome และการติดเชื้อมือได้ทันเวลา",
+ "objectives": [
+  "เรียนจบแล้วต้องประเมิน GCS และทำ neuro observation ได้ถูกต้อง พร้อมระบุสัญญาณ herniation ที่ต้องแจ้งทันที",
+  "เรียนจบแล้วต้องเลือกผู้ป่วยที่ต้อง CT head ตามเกณฑ์ และตัดสินใจส่งต่อหรือทำ burr hole ฉุกเฉินในบริบท รพช.",
+  "เรียนจบแล้วต้องสั่งการรักษาป้องกัน secondary brain injury และลด ICP (CPP, PaCO₂, mannitol/hypertonic saline) ได้",
+  "เรียนจบแล้วต้อง clear C-spine ด้วย NEXUS/Canadian C-spine rule และแยก neurogenic shock ออกจาก hemorrhagic shock",
+  "เรียนจบแล้วต้องจัดการ open fracture ที่ ER (antibiotic, tetanus, dressing, splint) และวินิจฉัย/รักษา compartment syndrome ได้ทันเวลา",
+  "เรียนจบแล้วต้องรู้จักการติดเชื้อและการบาดเจ็บของมือที่ต้องผ่าตัดเร่งด่วน (flexor tenosynovitis, fight bite, high-pressure injection, amputation)"
+ ],
+ "guidelines": [
+  "ATLS 10th edition (2018)",
+  "Brain Trauma Foundation Guidelines for the Management of Severe TBI, 4th edition (2016)",
+  "Canadian CT Head Rule (Stiell 2001), NEXUS and Canadian C-spine Rule",
+  "NICE NG232 Head injury (2023) — neuro observation frequency",
+  "AANS/CNS acute cervical spine and spinal cord injury guidelines (2013) — MAP 85–90 mmHg for 7 days",
+  "BOAST 4 / EAST guidance — antibiotic timing in open fractures"
+ ],
+ "sections": [
+  {
+   "id": "n3-12-1",
+   "title": "Head injury: GCS, ข้อบ่งชี้ CT head, การลด ICP และการส่งต่อ/burr hole",
+   "summary": "ผู้ป่วยศีรษะกระแทกคนไหนต้อง CT ใครต้องเฝ้าระวังแบบไหน และเมื่อซึมลงต้องทำอะไรก่อนถึงมือประสาทศัลยแพทย์",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 42 — Trauma (TBI, EDH, SDH, ICP); Ch 7 — Brain",
+   "md": "### GCS และการแบ่งความรุนแรง\n**Glasgow Coma Scale** = **E** (4) + **V** (5) + **M** (6) รวม 3–15 ให้คะแนนจาก**การตอบสนองที่ดีที่สุด** (ถ้าแขนสองข้างต่างกันใช้ข้างที่ดีกว่า) ใส่ท่อช่วยหายใจให้เขียน **VT** (เช่น E2VTM5)\n| คะแนน | Eye | Verbal | Motor |\n|---|---|---|---|\n| 6 | — | — | ทำตามสั่ง (obeys) |\n| 5 | — | รู้เรื่อง (oriented) | ปัดถูกที่ (localizes) |\n| 4 | ลืมตาเอง | สับสน (confused) | ชักแขนหนี (withdraws) |\n| 3 | ลืมตาเมื่อเรียก | พูดเป็นคำไม่เข้าเรื่อง | งอแขนผิดปกติ (**decorticate**) |\n| 2 | ลืมตาเมื่อเจ็บ | ส่งเสียงไม่เป็นคำ | เหยียดแขน (**decerebrate**) |\n| 1 | ไม่ลืม | ไม่มีเสียง | ไม่ตอบสนอง |\n- **Mild TBI** GCS 13–15 · **Moderate** 9–12 · **Severe** 3–8 (GCS ≤8 → ใส่ท่อช่วยหายใจปกป้อง airway)\n- กระตุ้นเจ็บใช้ **supraorbital pressure/trapezius squeeze** สำหรับดูว่า localize หรือไม่ (กดเล็บดูได้แค่ withdraw)\n- **Motor score** มีค่าพยากรณ์โรคมากที่สุด; ประเมินหลัง resuscitate (ความดันต่ำ/ขาดออกซิเจน/แอลกอฮอล์ทำให้ GCS ต่ำหลอก)\n\n### ใครต้อง CT head\nSchwartz แบ่งความเสี่ยง:\n- **ต่ำ**: ไม่มีอาการหรือแค่ปวดหัว เวียนหัว แผลหนังศีรษะ ไม่สลบ → กลับบ้านได้โดยไม่ CT พร้อมคนเฝ้าและเอกสารอาการเตือน\n- **ปานกลาง**: เคยสลบ/สับสน, **amnesia**, ปวดหัวมากขึ้น, **อาเจียน**, ชัก, กะโหลก/ใบหน้าแตก → **CT โดยเร็ว** ถ้าปกติและ neuro กลับเป็นปกติ กลับบ้านได้ ไม่เช่นนั้นสังเกต 24 ชม.\n- **สูง**: GCS ลดลง, **focal deficit**, penetrating, depressed skull fracture, neuro เปลี่ยนแปลง → **CT ทันที + admit**\n- Schwartz Ch 7: **GCS <14** ทุกราย และ**ผู้สูงอายุหรือได้ antiplatelet/anticoagulant** แม้ GCS 15\n| Canadian CT Head Rule (GCS 13–15 ที่สลบ/ลืม/สับสน) | |\n|---|---|\n| High risk (ต้องผ่าตัด) | GCS <15 ที่ 2 ชม., สงสัย open/depressed skull fracture, **signs of basal skull fracture** (raccoon eyes, Battle sign, CSF rhinorrhea/otorrhea, hemotympanum), **อาเจียน ≥2 ครั้ง**, **อายุ ≥65** |\n| Medium risk (พบรอยโรคใน CT) | amnesia ก่อนเกิดเหตุ ≥30 นาที, กลไกอันตราย (คนเดินถนนถูกชน, กระเด็นจากรถ, ตกสูง >3 ฟุตหรือ 5 ขั้นบันได) |\n\n### Neuro observation และสัญญาณ herniation\n**Neuro obs** = GCS + **pupils** (ขนาด/การตอบสนองแสง) + **กำลังแขนขาซ้ายขวา** + V/S — ทุก 15–30 นาทีช่วงแรก (NICE: ทุก 30 นาทีจน GCS 15 แล้วทุก 30 นาที × 2 ชม., ทุก 1 ชม. × 4 ชม., แล้วทุก 2 ชม.)\nสัญญาณให้แจ้งแพทย์/CT ซ้ำทันที:\n- GCS ลด **≥2 คะแนน** (หรือ motor ลด 1)\n- **pupil ขยายข้างเดียว**/ไม่ตอบสนองแสง (CN III จาก **uncal herniation**) + **hemiparesis ด้านตรงข้าม**\n- ปวดหัวมากขึ้น อาเจียนซ้ำ ชัก\n- **Cushing's triad**: ความดันสูง ชีพจรช้า หายใจผิดปกติ (สัญญาณช้า)\n**EDH vs SDH**:\n| | Epidural (EDH) | Acute subdural (SDH) |\n|---|---|---|\n| แหล่งเลือด | **middle meningeal artery** (มักมีกะโหลกร้าว) | bridging vein |\n| CT | **biconvex/lentiform** ไม่ข้าม suture | **crescent** ข้าม suture ได้ ไม่ข้าม falx |\n| อาการ | **lucid interval** (เพียง ~20%) | มักซึมตั้งแต่แรก, สมองช้ำร่วม |\n| ผ่าตัด | ส่วนใหญ่ผ่าตัด; รักษาเฝ้าดูได้ถ้า **<30 cm³ และหนา <1.5 cm และ GCS >8** | หนา **>1 cm** หรือ **midline shift >5 mm** หรือ GCS ลด ≥2 |\n| พยากรณ์ | ดี (85–90% ถ้าผ่าตัดเร็ว) | แย่กว่า |\n\n### การจัดการ ICP และป้องกัน secondary brain injury\nหลักคือป้องกัน **hypoxia และ hypotension** (แต่ละครั้งเพิ่มอัตราตาย)\n- **Airway**: GCS ≤8 → intubate (RSI + in-line stabilization)\n- **Ventilation**: PaCO₂ **35–40 mmHg**; hyperventilate ชั่วคราว (PaCO₂ ~30–35) เฉพาะเมื่อมีสัญญาณ herniation ระหว่างรอผ่าตัด\n- **Circulation**: SBP ≥100–110 mmHg, **CPP = MAP − ICP** เป้า **60–70 mmHg**\n- จัดท่า **ยกหัวเตียง 30°** ศีรษะตรง ไม่รัดคอ (collar หลวมพอ), แก้ไข้ ชัก น้ำตาล Na\n- **Osmotherapy**: **mannitol 0.25–1 g/kg** IV (ออกฤทธิ์ ~20 นาที ระวังความดันตกจาก diuresis — ใส่ Foley) หรือ **hypertonic saline** (3%/7.5%/23.4%)\n- BTF 4th edition: รักษาเมื่อ **ICP >22 mmHg** (ปกติ 4–14), พิจารณาวัด ICP ใน severe TBI ที่ CT ผิดปกติ\n- **Steroid ห้ามใช้**ใน TBI (CRASH trial: ตายมากขึ้น)\n- ให้ **antiseizure prophylaxis** (เช่น levetiracetam/phenytoin) 7 วันในราย severe TBI ลด early seizure\n- **Tranexamic acid** ภายใน 3 ชม. ใน mild–moderate TBI (CRASH-3)\n\n### เมื่อไรส่งต่อ และ burr hole ฉุกเฉิน\n**ส่งต่อ/ปรึกษาประสาทศัลยแพทย์**: GCS ≤12 หรือลดลง, CT มี hematoma/midline shift, depressed/open skull fracture, penetrating injury, CSF leak, ชักซ้ำ — บริบทไทย: รพช. → รพท./รพศ. ที่มี CT และศัลยแพทย์ ประสานก่อนส่ง ใส่ท่อช่วยหายใจก่อนเดินทางถ้า GCS ≤8 หรือ airway ไม่ปลอดภัย\n**Emergency burr hole** (Schwartz Fig 7-52): เป็น **life-saving maneuver** เมื่อมี EDH ชัดเจนพร้อม herniation (pupil ขยาย, GCS ลดเร็ว) และ**ไม่สามารถส่งถึงประสาทศัลยแพทย์ได้ทัน**\n- เจาะตรงตำแหน่งก้อนตาม CT (ถ้าไม่มี CT: ด้านเดียวกับ pupil ที่ขยาย บริเวณ temporal เหนือ zygomatic arch ~2 นิ้วมือหน้าหู)\n- ระบายก้อนเลือดเพื่อลดแรงดัน **ไม่พยายามหยุดเลือดในกะโหลกผ่านรู burr hole** ปิดด้วย bulky dressing แล้วส่งต่อทันที\n- เป็นหัตถการทางเลือกสุดท้าย ไม่ใช่แทนการผ่าตัด craniotomy\n",
+   "pearls": [
+    "Mild 13–15 · Moderate 9–12 · Severe 3–8; GCS motor ใช้ข้างที่ดีที่สุด",
+    "CT head: GCS <14, ผู้สูงอายุ, ได้ antiplatelet/anticoagulant แม้ GCS 15",
+    "Neuro obs = GCS + pupils + limb power + V/S; GCS ลด ≥2 → แจ้งแพทย์/CT ซ้ำ",
+    "EDH: biconvex, middle meningeal artery, lucid interval; conservative ได้ถ้า <30 mL + <1.5 cm + GCS >8",
+    "Acute SDH ผ่าตัดเมื่อหนา >1 cm หรือ MLS >5 mm หรือ GCS ลด ≥2",
+    "ป้องกัน hypoxia/hypotension; CPP 60–70, PaCO₂ 35–40, ICP >22 ต้องรักษา",
+    "Steroid ห้ามใช้ใน TBI; burr hole เป็น life-saving maneuver เมื่อส่งต่อไม่ทัน"
+   ],
+   "items": [
+    {
+     "id": "N3-12-1-1",
+     "kind": "mcq",
+     "topic": "Epidural hematoma with lucid interval — deterioration",
+     "stem": "A 22-year-old man was hit on the right temple by a motorcycle handlebar. He was briefly unconscious, then talked normally in the ER (GCS 15). Two hours later the nurse finds GCS E2V2M5, right pupil 6 mm non-reactive, left pupil 3 mm reactive, and left-sided weakness. BP 168/92 mmHg, HR 56/min. He is intubated. CT shows a 50-mL biconvex right temporal hematoma with 8-mm midline shift. A neurosurgeon is available in 30 minutes. While preparing, which measure is most appropriate?",
+     "choices": [
+      "Mannitol 1 g/kg IV bolus, head of bed 30°, brief hyperventilation to PaCO2 about 30–35 mmHg and urgent craniotomy",
+      "Dexamethasone 10 mg IV to reduce cerebral edema",
+      "Lower blood pressure with IV nicardipine to a systolic of 110 mmHg",
+      "Repeat CT in 6 hours to check for hematoma expansion",
+      "Lumbar puncture to relieve intracranial pressure"
+     ],
+     "answer": 0,
+     "explain": "ภาพ **lucid interval** แล้วซึมลง pupil ขวาขยาย อ่อนแรงซีกซ้าย และ Cushing response = **right EDH กับ uncal herniation** ต้องลด ICP ชั่วคราวระหว่างพาไป **craniotomy ด่วน**: **mannitol** bolus (ออกฤทธิ์ราว 20 นาที), ยกหัวเตียง 30°, hyperventilation ระยะสั้นเป็น bridge, รักษา CPP\n- **dexamethasone**: steroid ห้ามใช้ใน TBI (CRASH trial อัตราตายเพิ่ม)\n- **ลดความดันด้วย nicardipine**: ความดันสูงเป็น Cushing response เพื่อรักษา CPP การลดลงทำให้สมองขาดเลือด\n- **CT ซ้ำใน 6 ชม.**: ผู้ป่วยกำลัง herniate ต้องผ่าตัดทันที\n- **lumbar puncture**: ห้ามทำเมื่อมี mass effect เพราะทำให้ tonsillar/transtentorial herniation",
+     "pearl": "Lucid interval + pupil ขยาย + hemiparesis ด้านตรงข้าม = EDH herniating → mannitol + OR ทันที",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    },
+    {
+     "id": "N3-12-1-2",
+     "kind": "mcq",
+     "topic": "CT head indications in minor head injury",
+     "stem": "A 70-year-old woman on warfarin for atrial fibrillation tripped at home and struck her forehead. She did not lose consciousness, has a mild headache and a small forehead abrasion. GCS 15, no focal neurological deficit, no vomiting. INR 2.6. What is the most appropriate next step?",
+     "choices": [
+      "Non-contrast CT head now",
+      "Discharge with a head-injury advice sheet and a responsible adult",
+      "Skull X-ray and discharge if no fracture",
+      "Observe for 4 hours and image only if she vomits",
+      "MRI brain as an outpatient within 1 week"
+     ],
+     "answer": 0,
+     "explain": "Schwartz ระบุว่า**ผู้สูงอายุหรือผู้ที่ได้ antiplatelet/anticoagulant ต้อง CT head แม้ GCS 15** (Canadian CT Head Rule และ NICE ก็นับอายุ ≥65 และ anticoagulation เป็นข้อบ่งชี้) เพราะเลือดออกในกะโหลกอาจไม่แสดงอาการในระยะแรกและลุกลามได้มาก ถ้าพบเลือดออกต้อง reverse warfarin (vitamin K + PCC/FFP)\n- **ให้กลับบ้าน**: เหมาะกับคนอายุน้อย low risk ที่ไม่มี anticoagulant\n- **Skull X-ray**: ไม่บอกเลือดออกในสมอง ไม่ใช่มาตรฐานแล้ว\n- **สังเกต 4 ชม. ก่อน**: ทำให้วินิจฉัย ICH ช้า; ผู้สูงอายุที่สมองฝ่อมักไม่มีอาการจนก้อนใหญ่\n- **MRI นอก**: ช้าเกินไปและไม่เหมาะกับการคัดกรองเลือดออกเฉียบพลัน",
+     "pearl": "อายุ ≥65 หรือได้ยาต้านการแข็งตัวของเลือด → CT head แม้ GCS 15",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    },
+    {
+     "id": "N3-12-1-3",
+     "kind": "mcq",
+     "topic": "GCS scoring",
+     "stem": "A 35-year-old man is assessed after a fall. His eyes open only to a trapezius squeeze. He makes incomprehensible moaning sounds without words. On supraorbital pressure his right hand reaches up toward the examiner's hand above the clavicle; the left arm flexes abnormally at the elbow and wrist. What is his GCS?",
+     "choices": [
+      "E2 V2 M5 = 9",
+      "E2 V3 M3 = 8",
+      "E1 V2 M4 = 7",
+      "E2 V2 M3 = 7",
+      "E3 V2 M5 = 10"
+     ],
+     "answer": 0,
+     "explain": "ลืมตาเมื่อถูกกระตุ้นเจ็บ = **E2**; ส่งเสียงครางไม่เป็นคำ (incomprehensible sounds) = **V2**; motor ให้ใช้**การตอบสนองที่ดีที่สุด** — มือขวาเอื้อมขึ้นมาปัดเหนือไหปลาร้าเมื่อกด supraorbital = **localizes = M5** แม้ข้างซ้ายจะ decorticate ก็ตาม → **GCS 9 (moderate TBI)** แต่ต้องบันทึกว่ามี lateralizing sign (ข้างซ้ายผิดปกติ) ซึ่งบ่งถึง mass lesion\n- **E2V3M3**: V3 คือพูดเป็นคำแต่ไม่เข้าเรื่อง ไม่ใช่เสียงคราง และ M3 ใช้ข้างที่แย่กว่า\n- **E1V2M4**: ผู้ป่วยลืมตาเมื่อเจ็บ ไม่ใช่ไม่ลืมตา\n- **E2V2M3**: ใช้ motor ข้างที่แย่กว่า ผิดหลัก\n- **E3V2M5**: E3 คือลืมตาเมื่อเรียก ผู้ป่วยต้องใช้การกระตุ้นเจ็บ",
+     "pearl": "GCS motor ใช้ข้างที่ดีที่สุด แต่บันทึก lateralizing sign แยกไว้",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-12-2",
+   "title": "Spine clearance และ spinal cord injury",
+   "summary": "เมื่อไรถอด collar ได้โดยไม่ต้องถ่ายภาพ เมื่อไรต้อง CT/MRI และดูแลผู้ป่วยบาดเจ็บไขสันหลังช่วงแรกอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 42 — Spine trauma; Ch 7 — Neck and spine",
+   "md": "### Spinal precautions: สมมติว่ามี spine injury จนกว่าจะ clear ได้\n- ผู้บาดเจ็บ blunt trauma ทุกรายให้คิดว่ามี **C-spine injury** จนพิสูจน์ได้ว่าไม่มี: **manual in-line stabilization** ระหว่าง airway, **hard collar** (soft collar ไม่ช่วย), **log roll** 4 คนตรวจหลัง\n- **Spine board ใช้เพื่อเคลื่อนย้าย**เท่านั้น นำผู้ป่วยออกจาก board เร็วที่สุด (แผลกดทับ)\n- penetrating neck wound: **ไม่แนะนำใส่ collar** (บดบังการประเมิน hematoma/airway และโอกาส unstable spine ต่ำ)\n- มี spine fracture ระดับหนึ่ง → ต้องตรวจทั้งแนวกระดูกสันหลังเพราะมักมีหลายระดับ\n\n### Clinical clearance: NEXUS และ Canadian C-spine rule\nSchwartz: ผู้ที่**ตื่นดี ไม่มีอาการทางประสาท ตรวจ neuro ปกติ ไม่ปวดคอ/หลัง และกลไกไม่เสี่ยง** มีความเสี่ยงต่ำมาก\n| NEXUS — เอา collar ออกได้โดยไม่ต้องถ่ายภาพ เมื่อครบทั้ง 5 ข้อ |\n|---|\n| ไม่มี **posterior midline tenderness** |\n| ไม่มี **focal neurologic deficit** |\n| **ระดับความรู้สึกตัวปกติ** (GCS 15) |\n| ไม่มี **intoxication** (เหล้า/ยา) |\n| ไม่มี **painful distracting injury** (เช่น กระดูกต้นขาหัก) |\n**Canadian C-spine rule** (ผู้ใหญ่ตื่นดี GCS 15 stable):\n1. **High-risk** → ถ่ายภาพ: อายุ **≥65**, **กลไกอันตราย** (ตกสูง ≥3 ฟุต/5 ขั้นบันได, axial load, รถชนความเร็วสูง/พลิกคว่ำ/กระเด็น, จักรยานยนต์), **ชาแขนขา**\n2. ไม่มี high-risk และมี **low-risk factor** (rear-end ธรรมดา, นั่งได้ใน ER, เดินได้, ปวดคอเกิดภายหลัง, ไม่กดเจ็บแนวกลาง) → ให้ลองหมุนคอ\n3. **หมุนคอได้เอง 45° ซ้ายและขวา** → clear ทางคลินิก ไม่ต้องถ่ายภาพ\n- ไม่ผ่านเกณฑ์ → **CT C-spine** (มาตรฐานปัจจุบัน แทน plain film); Schwartz: ใส่ท่อช่วยหายใจ, มี distracting injury, กลไกรุนแรง หรือพบ spine fracture อื่น → CT\n- CT ปกติแต่ยังปวด/มีอาการทางประสาท → **MRI** (ligamentous injury, cord compression, disc)\n- ผู้ป่วยซึม/ใส่ท่อที่ CT คุณภาพดีปกติ → แนวทาง EAST (2015) อนุญาตให้ถอด collar ได้\n\n### Spinal cord injury: ตรวจระดับ แยก complete/incomplete\nตรวจตาม **ASIA (ISNCSCI)**: กำลังกล้ามเนื้อ key muscles, pinprick/light touch ไล่จากล่างขึ้นบน หา**ระดับต่ำสุดที่ยังปกติ**, **sacral sparing** (ความรู้สึกรอบทวาร, voluntary anal contraction) — มี sacral sparing = **incomplete** (พยากรณ์ดีกว่า)\n| กลุ่มอาการ | กลไก | อาการเด่น |\n|---|---|---|\n| **Central cord** | ผู้สูงอายุ hyperextension บน spondylosis | **แขนอ่อนแรงมากกว่าขา** |\n| **Anterior cord** | flexion/ขาด anterior spinal artery | สูญเสีย motor + pain/temp, posterior column ปกติ |\n| **Brown-Séquard** | penetrating/hemisection | motor + proprioception ข้างเดียวกัน, pain/temp ข้างตรงข้าม |\n| **Cauda equina** | L-spine ใต้ conus | saddle anesthesia, retention, LMN |\n\n**Neurogenic shock กับ spinal shock** — ชื่อคล้ายกันแต่คนละเรื่อง:\n\n| | **Neurogenic shock** | **Spinal shock** |\n|---|---|---|\n| คืออะไร | hemodynamic: สูญเสีย sympathetic tone (บาดเจ็บ ≥T6) | neurologic: สูญเสีย reflex ทั้งหมดใต้ระดับบาดเจ็บชั่วคราว |\n| อาการ | **ความดันต่ำ + ชีพจรช้า + ผิวอุ่นแห้ง** | flaccid, areflexia, bulbocavernosus reflex หาย |\n| จัดการ | **แยก hemorrhagic shock ก่อนเสมอ**, IV fluid → vasopressor (norepinephrine/phenylephrine), atropine ถ้า bradycardia | รอ reflex กลับ (วัน–สัปดาห์) จึงประเมิน complete ได้จริง |\n\n### การรักษาเบื้องต้นและการส่งต่อ\n- ABC: บาดเจ็บ **C3–C5** เสี่ยงหายใจล้มเหลว (phrenic nerve) — ติดตาม vital capacity/การหายใจ, intubate แบบ in-line stabilization\n- รักษา **MAP >85 mmHg นาน 7 วัน** หลังบาดเจ็บ (Schwartz/AANS guideline) ป้องกัน secondary cord ischemia\n- **High-dose methylprednisolone ไม่แนะนำ**เป็นมาตรฐาน (NASCIS ประโยชน์น้อยจาก post-hoc analysis และภาวะแทรกซ้อนมาก: ปอดอักเสบ, sepsis) และห้ามในบาดเจ็บจากกระสุน, เด็ก <14 ปี, ตั้งครรภ์\n- ใส่ **Foley** (neurogenic bladder), NG tube (ileus), ป้องกัน **pressure ulcer** (พลิกตัวแบบ log roll ทุก 2 ชม.), **DVT prophylaxis**, ป้องกัน hypothermia\n- ข้อบ่งชี้ผ่าตัดเร่งด่วน: **neuro แย่ลง**, fracture/dislocation ที่มี **incomplete deficit**; ผ่าตัด decompression ภายใน 24 ชม. มีแนวโน้มผลดีกว่า\n- ส่งต่อศูนย์ที่มีศัลยแพทย์กระดูกสันหลัง/ประสาทศัลยแพทย์ด้วยการ immobilize ครบ\n",
+   "pearls": [
+    "NEXUS 5 ข้อ: ไม่กดเจ็บแนวกลาง, ไม่มี deficit, ตื่นดี, ไม่เมา, ไม่มี distracting injury",
+    "Canadian C-spine: อายุ ≥65/กลไกอันตราย/ชา → ถ่ายภาพ; หมุนคอได้ 45° สองข้าง → clear",
+    "CT C-spine เป็นภาพมาตรฐาน; ยังมีอาการ → MRI",
+    "Neurogenic shock = ความดันต่ำ + ชีพจรช้า + ผิวอุ่น (แต่ต้องแยกเลือดออกก่อน)",
+    "MAP >85 mmHg นาน 7 วันหลัง SCI",
+    "High-dose methylprednisolone ไม่แนะนำเป็นมาตรฐาน",
+    "Central cord: ผู้สูงอายุ hyperextension แขนอ่อนแรงกว่าขา"
+   ],
+   "items": [
+    {
+     "id": "N3-12-2-1",
+     "kind": "mcq",
+     "topic": "Clinical C-spine clearance",
+     "stem": "A 28-year-old woman is seen 2 hours after a low-speed rear-end car collision. She is fully alert (GCS 15), not intoxicated, and walked into the ER. She complains of mild neck stiffness that started an hour after the crash. There is no midline cervical tenderness, no neurological deficit and no other injury. She can actively rotate her neck 45° to the left and right. What is the most appropriate next step?",
+     "choices": [
+      "Remove the collar and clear the cervical spine clinically without imaging",
+      "CT of the cervical spine before removing the collar",
+      "Three-view plain radiographs of the cervical spine",
+      "MRI of the cervical spine to exclude ligamentous injury",
+      "Keep the hard collar for 2 weeks and review in clinic"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยผ่านเกณฑ์ **NEXUS ครบทั้ง 5 ข้อ** (ไม่กดเจ็บแนวกลาง ไม่มี neuro deficit ตื่นดี ไม่เมา ไม่มี distracting injury) และตาม **Canadian C-spine rule** ไม่มี high-risk factor (อายุ <65, กลไกไม่อันตราย, ไม่ชา) มี low-risk factor (rear-end ธรรมดา เดินได้ ปวดคอเกิดภายหลัง) และ**หมุนคอได้ 45° สองข้าง** → **clear ทางคลินิกได้ ไม่ต้องถ่ายภาพ**\n- **CT C-spine**: ใช้เมื่อไม่ผ่านเกณฑ์ ถ้าทำในรายนี้เป็นการได้รังสีโดยไม่จำเป็น\n- **plain film 3 views**: ไม่จำเป็นและมีความไวต่ำกว่า CT\n- **MRI**: ใช้เมื่อมีอาการทางประสาทหรือปวดต่อเนื่องแม้ CT ปกติ\n- **ใส่ collar 2 สัปดาห์**: ไม่มีข้อบ่งชี้ และ collar นานทำให้กล้ามเนื้อคอแข็ง/แผลกดทับ",
+     "pearl": "ผ่าน NEXUS/Canadian C-spine rule และหมุนคอได้ 45° สองข้าง → clear ทางคลินิก ไม่ต้องถ่ายภาพ",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    },
+    {
+     "id": "N3-12-2-2",
+     "kind": "mcq",
+     "topic": "Neurogenic vs hemorrhagic shock",
+     "stem": "A 40-year-old man fell from a tree. He cannot move his legs or arms below the shoulders. BP 78/40 mmHg, HR 52/min, skin warm and dry, SpO2 95%. FAST is negative, pelvic X-ray is normal, and there is no external bleeding. After 1 L of crystalloid his BP is 84/46 mmHg. CT shows a C5–C6 fracture-dislocation. What is the most appropriate next step for his hypotension?",
+     "choices": [
+      "Start a vasopressor (e.g., norepinephrine) titrated to MAP >85 mmHg, with atropine available for bradycardia",
+      "Continue crystalloid boluses to a total of 4 liters",
+      "Activate the massive transfusion protocol",
+      "Give high-dose methylprednisolone 30 mg/kg bolus",
+      "Emergency laparotomy for occult intra-abdominal bleeding"
+     ],
+     "answer": 0,
+     "explain": "ความดันต่ำ + **ชีพจรช้า + ผิวอุ่นแห้ง** ในผู้ป่วย cervical cord injury ที่ตรวจไม่พบแหล่งเลือดออก (FAST/pelvis ปกติ) = **neurogenic shock** จากการสูญเสีย sympathetic tone เมื่อให้สารน้ำพอสมควรแล้วไม่ดีขึ้น → **vasopressor** (norepinephrine/phenylephrine) และ atropine ถ้าช้ามาก เป้าหมาย **MAP >85 mmHg นาน 7 วัน** ตาม Schwartz/แนวทาง AANS\n- **ให้ crystalloid จนถึง 4 L**: เสี่ยง pulmonary edema เพราะปัญหาคือหลอดเลือดขยาย ไม่ใช่ขาดปริมาตร\n- **massive transfusion**: ไม่มีหลักฐานเลือดออก (แต่ต้องตรวจซ้ำเป็นระยะ)\n- **methylprednisolone**: แนวทางปัจจุบันไม่แนะนำ และไม่แก้ความดันต่ำ\n- **laparotomy**: FAST ลบ hemodynamics เข้ากับ neurogenic shock ไม่มีข้อบ่งชี้",
+     "pearl": "ความดันต่ำ + ชีพจรช้า + ผิวอุ่น ใน cord injury = neurogenic shock → vasopressor, MAP >85",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    },
+    {
+     "id": "N3-12-2-3",
+     "kind": "mcq",
+     "topic": "Spinal cord syndrome recognition",
+     "stem": "A 72-year-old man with known cervical spondylosis falls forward and hits his forehead on the floor. He is alert. He has marked weakness of both hands and arms (power 2/5) but his legs are 4/5. He has patchy sensory loss and urinary retention. CT shows no fracture but severe degenerative canal narrowing at C4–C6. Which is the most likely diagnosis?",
+     "choices": [
+      "Central cord syndrome",
+      "Anterior cord syndrome",
+      "Brown-Séquard syndrome",
+      "Cauda equina syndrome",
+      "Complete cord transection at C5"
+     ],
+     "answer": 0,
+     "explain": "ผู้สูงอายุที่มี **spondylosis** ล้มหน้าฟาด (**hyperextension**) แล้ว**แขนอ่อนแรงมากกว่าขา** = **central cord syndrome** (ไขสันหลังส่วนกลางซึ่งเป็นทางเดินของแขนบาดเจ็บมากกว่า) เป็น incomplete SCI ที่พบบ่อยที่สุด มักฟื้นได้บางส่วน ต้องทำ MRI และปรึกษา spine surgeon\n- **Anterior cord**: เกิดจาก flexion/หลอดเลือด anterior spinal artery อ่อนแรงทั้งแขนและขา เสีย pain/temp แต่ proprioception ปกติ\n- **Brown-Séquard**: อาการครึ่งซีก (motor ข้างเดียวกัน pain/temp ข้างตรงข้าม) มักจาก penetrating\n- **Cauda equina**: บาดเจ็บใต้ conus แขนปกติ\n- **Complete transection**: ขาก็ต้องอ่อนแรงทั้งหมด ไม่ใช่ 4/5",
+     "pearl": "ผู้สูงอายุ + hyperextension + แขนอ่อนแรงกว่าขา = central cord syndrome",
+     "src": "Schwartz 11e Ch 42",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 42"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-12-3",
+   "title": "Open fracture, compartment syndrome และการติดเชื้อ/บาดเจ็บของมือ",
+   "summary": "กระดูกหักแบบเปิดต้องทำอะไรภายในชั่วโมงแรก จะจับ compartment syndrome ให้ทันได้อย่างไร และแผลที่มือแบบไหนห้ามมองข้าม",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 43 — Open fractures, Compartment syndrome; Ch 44 — Hand infections, Amputation",
+   "md": "### Open fracture: antibiotic เร็ว ล้าง ตัดเนื้อตาย ยึดตรึง\nกระดูกหักที่มีแผลติดต่อกับภายนอก (แผลเล็กเหนือกระดูกหักก็ให้ถือว่าเปิดจนกว่าจะพิสูจน์ได้)\n| Gustilo–Anderson | แผล | เนื้อเยื่อ/การปนเปื้อน |\n|---|---|---|\n| **I** | **<1 cm** สะอาด | พลังงานต่ำ |\n| **II** | **1–10 cm** (Schwartz: 2–10 cm) | บาดเจ็บปานกลาง |\n| **III** | **>10 cm** หรือพลังงานสูง | กล้ามเนื้อตายมาก ปนเปื้อนมาก · IIIA ปิดเนื้อเยื่อได้ · **IIIB** ต้องใช้ flap · **IIIC** มี arterial injury ต้องซ่อม |\n> การจัดชนิดสุดท้ายทำ**ในห้องผ่าตัดหลัง debridement** ไม่ใช่ที่ ER; บาดเจ็บจากฟาร์ม/น้ำครำ/กระสุนความเร็วสูง ถือว่าเป็น type III\nที่ ER (สิ่งที่ต้องทำ):\n1. ATLS primary survey ก่อน — กระดูกที่ผิดรูปไม่ใช่ลำดับแรก\n2. **IV antibiotic โดยเร็วที่สุด (ภายใน 1 ชม.)**: **cefazolin** (type I–II) · type III เพิ่ม **gentamicin** (gram-negative) · ปนเปื้อนดิน/ฟาร์ม เพิ่มยาครอบคลุม anaerobe (เช่น penicillin/metronidazole)\n3. **Tetanus prophylaxis** ตามประวัติวัคซีน (TT/Td ± TIG)\n4. ถ่ายภาพแผลไว้ เอาสิ่งปนเปื้อนชิ้นใหญ่ออก ล้างเบา ๆ ปิด **sterile saline-soaked dressing** — ไม่ต้องสำรวจแผลซ้ำหลายครั้งที่ ER\n5. **จัดแนวกระดูก + ดาม (splint)** แล้ว**ตรวจ neurovascular ก่อนและหลังทุกครั้ง**\n6. ห้ามเลือดด้วย direct pressure (tourniquet ถ้าคุมไม่ได้)\n7. ส่ง OR: **irrigation & debridement** (ใช้ saline ปริมาณมาก ความดันต่ำ) ภายใน ~12–24 ชม. (ทันทีถ้าปนเปื้อนมาก/หลอดเลือดบาดเจ็บ), ยึดตรึงด้วย **external fixator** ในแผลสกปรก แล้วค่อย definitive fixation/ปิดแผลภายหลัง\n\n### Compartment syndrome: ปวดเกินเหตุ ปวดเมื่อยืดกล้ามเนื้อ\nความดันในช่องกล้ามเนื้อสูงจนเลือดไปเลี้ยงกล้ามเนื้อและเส้นประสาทไม่พอ — พบบ่อยใน **tibia fracture** (ทั้งปิดและเปิด), forearm fracture, crush injury, หลัง revascularization, เฝือกรัดแน่น, งูพิษกัด (บริบทไทย: ส่วนใหญ่เป็น pseudo-compartment จากบวม ต้องวัดความดันก่อนตัดสินใจ)\n- อาการเริ่มแรก (ต้องจับให้ได้): **ปวดมากเกินกว่าการบาดเจ็บ**, ต้องการยาแก้ปวดมากขึ้น, **ปวดเมื่อ passive stretch**, ช่องกล้ามเนื้อตึงแข็ง\n- อาการช้า: ชา อ่อนแรง **ชีพจรหาย** — **ชีพจรปกติไม่ได้ตัดภาวะนี้ออก**\n- วัดความดัน (จำเป็นในผู้ป่วยหมดสติ/ใส่ท่อ): **ΔP = diastolic BP − compartment pressure <30 mmHg** = วินิจฉัย (Schwartz: compartment pressure within 30 mmHg of diastolic)\n| ขั้นตอนเมื่อสงสัย | |\n|---|---|\n| 1 | **ตัดเฝือก/ผ้าพันทุกชั้นลงถึงผิวหนัง** (bivalve) |\n| 2 | วางแขนขา**ระดับหัวใจ** (ไม่ยกสูง เพราะลด perfusion pressure) |\n| 3 | แก้ความดันต่ำ ให้ O₂ |\n| 4 | ไม่ดีขึ้นใน 30–60 นาที หรือ ΔP <30 → **emergency fasciotomy** (ขา 4 ช่อง ผ่าสองแผล medial + lateral) |\n- ปล่อยไว้ → กล้ามเนื้อตาย, **Volkmann's ischemic contracture**, rhabdomyolysis/AKI — ตรวจ CK, ปัสสาวะ myoglobin\n\n### Splint และการประเมินแขนขาที่บาดเจ็บ\n- ตรวจ **5 Ps/neurovascular** ส่วนปลาย: สีผิว อุณหภูมิ capillary refill, **ชีพจร** (เทียบข้างดี, Doppler/ABI ถ้าไม่ชัด: **ABI <0.9** → CTA), ความรู้สึกและการเคลื่อนไหวของเส้นประสาทหลัก (radial/ulnar/median ในแขน, peroneal/tibial ในขา)\n- หลัก splint: ดามให้คลุม**ข้อเหนือและใต้**กระดูกที่หัก, บุนุ่ม, ดึงตรงแนว (gentle traction) ก่อนดาม, ตรวจ NV ซ้ำหลังดาม\n- **ข้อเคลื่อนที่มีชีพจรหาย** (เช่น knee dislocation) → reduce ทันที ถ้าชีพจรยังไม่กลับ → สำรวจหลอดเลือด/CTA; knee dislocation มักบาดเจ็บ **popliteal artery**\n- **Pelvic fracture + shock** → pelvic binder ระดับ greater trochanter\n- กระดูกต้นขาหัก → traction splint (ข้อห้าม: กระดูกเชิงกราน/เข่า/ข้อเท้าหักข้างเดียวกัน)\n\n### มือ: ติดเชื้อและบาดเจ็บที่ห้ามพลาด\n| ภาวะ | จุดสังเกต | จัดการ |\n|---|---|---|\n| **Suppurative flexor tenosynovitis** | **Kanavel's signs**: นิ้วงอเล็กน้อย, บวมทั้งนิ้วแบบ **fusiform**, กดเจ็บตามแนว sheath, **ปวดมากเมื่อเหยียดนิ้ว passive** | **surgical emergency**: IV antibiotic + **ล้าง sheath ในห้องผ่าตัด** (ระยะแรกมากอาจลอง antibiotic 12–24 ชม. ใกล้ชิด) |\n| **Fight bite** (ชกปาก) | แผลเล็กเหนือ **MCP joint** ปิดเร็ว เชื้อ **Eikenella corrodens** + strep/staph/anaerobe | **สำรวจ ล้างข้อในห้องผ่าตัด**, ไม่เย็บปิด, **amoxicillin-clavulanate**, X-ray หาฟัน/กระดูกแตก |\n| สุนัข/แมวกัด | แมว: **Pasteurella multocida** แผลลึก | ล้าง, amoxicillin-clavulanate, rabies/tetanus |\n| **Felon** | ฝีในเนื้อปลายนิ้ว (septa) ปวดตุบ | digital block → กรีด**แนวยาวตรงจุด fluctuance** ไม่ข้าม DIP crease ไม่ลึกถึง sheath |\n| **Paronychia** | ฝีที่ขอบเล็บ | ยกขอบเล็บ/กรีดระบาย ± ถอดเล็บบางส่วน |\n| **High-pressure injection** | แผลเล็กแต่สารเข้าไปลึกตาม sheath | **ไม่หลอกตา — ส่ง OR debridement ด่วน** |\n- เชื้อ hand infection ~90% เป็น **Staph/Strep**; บาดเจ็บจากน้ำ: Vibrio vulnificus, M. marinum\n- **นิ้วขาด (amputation)**: ห่อส่วนที่ขาดด้วย**ผ้าก๊อซชุบ NSS ใส่ถุงปิดสนิท แช่ในน้ำผสมน้ำแข็ง** ห้ามสัมผัสน้ำแข็งโดยตรง/dry ice; ข้อบ่งชี้ replant: **นิ้วโป้ง, หลายนิ้ว, เด็ก** · ข้อห้ามสัมพัทธ์: crush, นิ้วเดียวส่วนปลายต่อ PIP\n- **Flexor tendon injury**: ตรวจ FDS (จับนิ้วอื่นเหยียดไว้แล้วงอ PIP) และ FDP (ยึด PIP งอ DIP) แยกกัน → ซ่อมในห้องผ่าตัดเสมอ\n",
+   "pearls": [
+    "Gustilo I <1 cm · II 1–10 cm · III >10 cm/พลังงานสูง/ปนเปื้อนมาก (ฟาร์ม = III)",
+    "Open fracture: IV cefazolin ภายใน 1 ชม. (+ gentamicin ใน type III) + tetanus + saline dressing + splint",
+    "Compartment syndrome: ปวดเกินเหตุ + ปวดเมื่อ passive stretch; ΔP <30 mmHg → fasciotomy",
+    "ชีพจรปกติไม่ได้ตัด compartment syndrome; ผ่าเฝือกทุกชั้นเป็นขั้นแรก",
+    "Kanavel signs: งอนิ้ว, fusiform swelling, กดเจ็บตาม sheath, ปวดเมื่อเหยียด passive",
+    "Fight bite: สำรวจข้อ MCP, ไม่เย็บ, amoxicillin-clavulanate (Eikenella)",
+    "นิ้วขาด: ผ้าชุบ NSS → ถุงปิด → แช่น้ำผสมน้ำแข็ง ห้ามสัมผัสน้ำแข็งโดยตรง"
+   ],
+   "items": [
+    {
+     "id": "N3-12-3-1",
+     "kind": "mcq",
+     "topic": "Open fracture — ER management",
+     "stem": "A 26-year-old man crashes his motorcycle in a rice field. He has a deformed right leg with a 12-cm wound over the mid-tibia, exposed bone, mud contamination and devitalized muscle. Distal pulses are present. Primary survey is otherwise normal. He received tetanus toxoid 3 years ago. Which antibiotic plan is most appropriate to give in the ER now?",
+     "choices": [
+      "IV cefazolin plus gentamicin, with anaerobic coverage (e.g., penicillin or metronidazole) for farm contamination",
+      "Oral amoxicillin-clavulanate after wound closure",
+      "IV cefazolin alone for 24 hours",
+      "No antibiotics until intraoperative wound cultures are available",
+      "Topical povidone-iodine dressing only"
+     ],
+     "answer": 0,
+     "explain": "แผล >10 cm กล้ามเนื้อตาย ปนเปื้อนโคลนนา = **Gustilo type III** (การบาดเจ็บในฟาร์มถือว่า type III เสมอ) ต้องให้ **IV antibiotic โดยเร็ว (ภายใน 1 ชม.)**: **cefazolin + gentamicin** (gram-negative) และเพิ่มยาครอบคลุม **anaerobe/Clostridium** เพราะปนเปื้อนดิน ร่วมกับ sterile saline dressing, splint และส่ง OR ทำ irrigation & debridement + external fixator; tetanus toxoid ล่าสุด 3 ปี ไม่ต้องเพิ่ม (ให้เมื่อ >5 ปีในแผลสกปรก)\n- **oral amoxicillin-clavulanate หลังปิดแผล**: ช้าและไม่ควรปิดแผล type III ที่ ER\n- **cefazolin เดี่ยว**: พอสำหรับ type I–II แต่ไม่ครอบคลุม gram-negative/anaerobe ใน type III\n- **รอผล culture**: การให้ยาช้าเพิ่มการติดเชื้อชัดเจน และ culture แรกรับไม่ช่วยทำนายเชื้อ\n- **povidone-iodine อย่างเดียว**: ไม่ใช่การรักษามาตรฐาน",
+     "pearl": "Open fracture: IV antibiotic ภายใน 1 ชม. — type III เพิ่ม gram-negative ± anaerobe",
+     "src": "Schwartz 11e Ch 43",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 43"
+     ]
+    },
+    {
+     "id": "N3-12-3-2",
+     "kind": "mcq",
+     "topic": "Compartment syndrome after tibial fracture",
+     "stem": "A 30-year-old man had closed reduction and an above-knee cast for a closed tibial shaft fracture 8 hours ago. He now has severe leg pain despite two doses of IV morphine and cries out when the nurse passively flexes his toes. Dorsalis pedis pulse is palpable; capillary refill is 2 seconds. BP 130/80 mmHg. What is the most appropriate next step?",
+     "choices": [
+      "Split (bivalve) the cast and padding down to skin, keep the limb at heart level, and proceed to fasciotomy if not relieved or if compartment pressure confirms",
+      "Increase opioid dose and reassess in 4 hours",
+      "Elevate the leg high on pillows and apply ice packs",
+      "Doppler ultrasound to exclude deep vein thrombosis",
+      "Reassure because a palpable pulse excludes compartment syndrome"
+     ],
+     "answer": 0,
+     "explain": "**ปวดมากเกินกว่าการบาดเจ็บ** แม้ได้ morphine และ**ปวดเมื่อยืดกล้ามเนื้อแบบ passive** หลังกระดูก tibia หัก + ใส่เฝือก = **acute compartment syndrome** จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ ให้**ผ่าเฝือกและผ้ารองทุกชั้น**ทันที วางขาระดับหัวใจ ถ้าไม่ดีขึ้นหรือวัด ΔP (diastolic − compartment) <30 mmHg → **emergency fasciotomy**\n- **เพิ่มยาแก้ปวดและรอ 4 ชม.**: กล้ามเนื้อเริ่มตายถาวรภายในไม่กี่ชั่วโมง การเพิ่มยาบดบังอาการ\n- **ยกขาสูงมากและประคบเย็น**: การยกสูงลด arterial perfusion pressure ทำให้แย่ลง\n- **Doppler หา DVT**: ไม่ใช่ปัญหาเร่งด่วนที่เข้ากับอาการ เสียเวลา\n- **ชีพจรคลำได้ตัดออก**: ชีพจรหายเป็นอาการช้า ความดันในช่องกล้ามเนื้อสูงพอทำลายกล้ามเนื้อก่อนจะกดหลอดเลือดแดงใหญ่",
+     "pearl": "Compartment syndrome: ปวดเกินเหตุ + ปวดเมื่อ passive stretch; ชีพจรปกติไม่ได้ตัดออก; ΔP <30 → fasciotomy",
+     "src": "Schwartz 11e Ch 43",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 43"
+     ]
+    },
+    {
+     "id": "N3-12-3-3",
+     "kind": "mcq",
+     "topic": "Fight bite",
+     "stem": "A 24-year-old man presents 18 hours after punching another man in the mouth. There is a 5-mm laceration over the dorsum of the right 4th metacarpophalangeal joint with surrounding erythema, swelling and pain on moving the finger. X-ray shows no fracture or foreign body. What is the most appropriate management?",
+     "choices": [
+      "Surgical exploration and irrigation of the MCP joint, leave the wound open, and give amoxicillin-clavulanate",
+      "Primary suture of the wound and oral cephalexin",
+      "Steri-strip closure and oral ciprofloxacin",
+      "Oral antibiotics only and review in 1 week",
+      "Topical antibiotic ointment and a dry dressing"
+     ],
+     "answer": 0,
+     "explain": "แผลเล็กเหนือ **MCP joint หลังชกปาก (fight bite)** มักทะลุถึง extensor tendon และข้อ เมื่อนิ้วกลับมาเหยียด แผลชั้นต่าง ๆ เลื่อนปิดกันจนดูเล็ก มีอาการติดเชื้อแล้ว → ต้อง**สำรวจและล้างข้อในห้องผ่าตัด** **ไม่เย็บปิด** และให้ **amoxicillin-clavulanate** (ครอบคลุม **Eikenella corrodens**, strep, staph, anaerobe) พร้อม tetanus\n- **เย็บแผล + cephalexin**: เย็บปิดแผลกัดที่ติดเชื้อทำให้เป็นฝี; cephalexin ไม่ครอบคลุม Eikenella\n- **steri-strip + ciprofloxacin**: ปิดแผลเช่นกันและ cipro ไม่ครอบคลุม anaerobe/strep ดีพอ\n- **ยากินอย่างเดียว**: ไม่พอเมื่อสงสัยข้อติดเชื้อ (septic arthritis ทำลายกระดูกอ่อนเร็ว)\n- **ยาทา**: ไม่รักษาการติดเชื้อชั้นลึก",
+     "pearl": "Fight bite = สำรวจข้อ MCP + ไม่เย็บ + amoxicillin-clavulanate (Eikenella)",
+     "src": "Schwartz 11e Ch 44",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 44"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-12-MEQ1",
+   "part": "MEQ",
+   "topic": "Motorcycle crash — head injury with deterioration and open tibial fracture at a community hospital",
+   "vignette": "ชายไทยอายุ 19 ปี ขับมอเตอร์ไซค์ไม่สวมหมวกกันน็อกชนท้ายรถกระบะ ถูกนำส่ง รพช. 40 นาทีหลังเกิดเหตุ\nแรกรับ: airway โล่ง RR 20/min SpO₂ 97% BP 132/80 mmHg PR 92/min\nลืมตาเมื่อเรียก พูดสับสนตอบไม่ตรงคำถาม ปัดมือผู้ตรวจได้ถูกตำแหน่งเมื่อกด supraorbital pupil 3 mm เท่ากันสองข้าง ตอบสนองแสงดี มีบวมช้ำที่ขมับซ้าย\nขาขวา: แผลยาว 4 cm ที่หน้าแข้งกลางขา เห็นปลายกระดูกโผล่ ปนเปื้อนดินเล็กน้อย ชีพจร dorsalis pedis คลำได้\nรพช.ไม่มี CT และไม่มีศัลยแพทย์ รพท.ห่าง 45 นาที",
+   "questions": [
+    {
+     "q": "1. จงประเมิน GCS แบ่งความรุนแรงของ head injury และบอกสิ่งที่ต้องทำในช่วง primary survey",
+     "a": "GCS = **E3 V4 M5 = 12** → **moderate TBI**\nPrimary survey:\n- **A**: airway + **C-spine protection** (hard collar, in-line stabilization) — กลไกรุนแรงและสติไม่ปกติ ไม่สามารถ clear C-spine ทางคลินิก\n- **B**: O₂ ให้ SpO₂ >94%, ตรวจอก\n- **C**: เปิด IV 2 เส้น, หาแหล่งเลือดออก (FAST ถ้ามี), ห้ามเลือดที่ขา, **หลีกเลี่ยง hypotension (SBP ≥100–110)**\n- **D**: GCS, pupils, lateralizing sign, DTX\n- **E**: ถอดเสื้อผ้าตรวจทั่วตัว ป้องกัน hypothermia\nเกณฑ์ให้คะแนน: คำนวณ GCS ถูก (2), ระบุ moderate (1), C-spine (1), ป้องกัน hypoxia/hypotension (2)"
+    },
+    {
+     "q": "2. จงบอกข้อบ่งชี้ในการส่ง CT head/ส่งต่อ และสิ่งที่ต้องเตรียมก่อนส่งต่อ",
+     "a": "- ข้อบ่งชี้ CT: **GCS <14** (Schwartz), สับสน/ซึม, บาดเจ็บที่ศีรษะชัดเจน → ต้อง **CT ทุกราย** และ รพช.ไม่มี CT → **ส่งต่อ รพท.**\n- ประสานศัลยแพทย์ปลายทางล่วงหน้า แจ้ง GCS, pupils, กลไก, open fracture\n- เตรียม: C-spine immobilization, IV fluid (NSS — หลีกเลี่ยงสารน้ำ hypotonic), **ดาม splint ขาขวา**, ให้ IV antibiotic + tetanus ก่อนส่ง\n- พิจารณา **intubate ก่อนส่ง** ถ้า GCS ≤8 หรือลดลงเร็ว/ป้องกัน airway ไม่ได้\n- มีพยาบาลประจำรถ ทำ **neuro obs ทุก 15 นาที** ระหว่างทาง พร้อม mannitol\n- ส่งเอกสาร/บันทึกเวลา GCS แต่ละครั้ง"
+    },
+    {
+     "q": "3. ระหว่างรอรถส่งต่อ 20 นาที พยาบาลแจ้งว่าผู้ป่วยซึมลง ลืมตาเมื่อเจ็บ ส่งเสียงไม่เป็นคำ งอแขนขวาผิดปกติ pupil ซ้าย 6 mm ไม่ตอบสนองแสง BP 170/90 PR 58 จงแปลผลและให้การรักษาเบื้องต้น",
+     "a": "GCS ใหม่ **E2 V2 M3 = 7** ลดลง 5 คะแนน + **pupil ซ้ายขยาย** + อ่อนแรง/ท่าผิดปกติแขนขวา + **Cushing response** (ความดันสูง ชีพจรช้า) → **left uncal (transtentorial) herniation** น่าจะเป็น **EDH ซ้าย** (บวมขมับซ้าย ลักษณะ lucid/ค่อย ๆ แย่ลง)\nการรักษา:\n- **Intubate** (RSI + in-line stabilization), ventilate ให้ PaCO₂ ~35 และ**ทำ hyperventilation ชั่วคราว (PaCO₂ 30–35)** เป็น bridge\n- **Mannitol 1 g/kg IV** bolus (หรือ hypertonic saline), ใส่ Foley\n- **ยกหัวเตียง 30°** คลาย collar ไม่ให้กดหลอดเลือดดำคอ\n- **ห้ามลดความดัน**, รักษา SBP ≥100–110\n- แจ้งปลายทางว่าเป็น herniation ให้เตรียม OR ทันที ส่งด่วน\n- ถ้าไม่สามารถส่งได้ทันและมีผู้ฝึกทำ: **emergency burr hole** ด้านซ้าย (ฝั่งเดียวกับ pupil ขยาย) เป็น life-saving maneuver"
+    },
+    {
+     "q": "4. ที่ รพท. CT พบ left temporal EDH หนา 2.5 cm ปริมาตร 60 mL midline shift 9 mm ได้รับการผ่าตัดแล้ว จงบอกแผนจัดการ open fracture ขาขวาอย่างครบถ้วน",
+     "a": "- Gustilo (เบื้องต้น) **type II** (แผล 4 cm ปนเปื้อนเล็กน้อย) — จัดชนิดสุดท้ายหลัง debridement\n- **IV cefazolin ภายใน 1 ชม.** (ถ้าปนเปื้อนดินมาก/สงสัย type III เพิ่ม gentamicin ± anaerobic coverage) ให้ต่อ ~24–72 ชม. หลังปิดแผล\n- **Tetanus prophylaxis** ตามประวัติวัคซีน (ไม่ทราบประวัติ → Td + TIG)\n- ถ่ายภาพแผล ปิด saline-soaked sterile dressing, **long leg splint** ตรวจ neurovascular ก่อน/หลัง\n- **Irrigation & debridement ในห้องผ่าตัดโดยเร็ว** (ภายใน ~12–24 ชม.) อาจทำพร้อมการผ่าตัดสมองถ้าเสถียร + ยึดตรึง (external fixator หรือ IM nail ตามการปนเปื้อน)\n- เฝ้าระวัง **compartment syndrome** (ผู้ป่วยหมดสติ → วัด compartment pressure เป็นระยะ), ติดเชื้อ, DVT prophylaxis เมื่อปลอดภัยต่อสมอง"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 7",
+    "Schwartz 11e Ch 42",
+    "Schwartz 11e Ch 43",
+    "ATLS 10th edition (2018)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-12-OSCE1",
+   "topic": "GCS assessment and neurological observation",
+   "station": "สถานี 5 นาที · ตรวจร่างกาย (ผู้ป่วยจำลอง)",
+   "instruction": "ผู้ป่วยจำลอง (SP) ชายอายุ 45 ปี ตกบันไดศีรษะกระแทกพื้น 1 ชั่วโมงก่อน ได้รับการ admit ward ศัลยกรรมเพื่อสังเกตอาการ CT แรกรับมี small contusion ที่ frontal\n\nให้นักศึกษา **ประเมิน GCS และทำ neuro observation** ให้ครบ พร้อมรายงานผลเป็นตัวเลขแก่ผู้คุมสอบ และบอกเกณฑ์ที่จะแจ้งแพทย์/ส่ง CT ซ้ำ (SP จะแสดง: ลืมตาเมื่อเรียก, ตอบสับสน, ทำตามสั่งได้, pupil ขวาตอบสนองช้ากว่าซ้ายเล็กน้อย)",
+   "answer": "1. แนะนำตัว อธิบายผู้ป่วย (แม้ซึม) ล้างมือ (1)\n2. **Eye**: สังเกตก่อนกระตุ้น → เรียกชื่อ → ถ้าไม่ลืมจึงกระตุ้นเจ็บ (trapezius/supraorbital) — ได้ **E3** (1)\n3. **Verbal**: ถามชื่อ สถานที่ วัน/เวลา — สับสน = **V4** (1)\n4. **Motor**: สั่งให้ทำตาม (ชูนิ้ว 2 นิ้ว/แลบลิ้น ไม่ใช้การบีบมืออย่างเดียว) — ทำตามได้ = **M6**; ถ้าไม่ทำตามจึงใช้ central pain stimulus ดู localize (1)\n5. รายงาน **GCS = E3V4M6 = 13** (1)\n6. **Pupils**: ขนาด (mm) ทั้งสองข้าง และ direct/consensual light reflex — บันทึกว่าขวาตอบสนองช้า (2)\n7. **Limb power** ซ้าย-ขวา ทั้งแขนขา (เปรียบเทียบ) ± pronator drift (1)\n8. **Vital signs**: BP, PR, RR, SpO₂, อุณหภูมิ — สังเกต Cushing (1)\n9. บอกความถี่ neuro obs: ทุก 30 นาทีจน GCS 15 แล้วลดความถี่ตามแนวทาง (NICE) (1)\n10. เกณฑ์แจ้งแพทย์/CT ซ้ำ: **GCS ลด ≥2 (หรือ motor ลด ≥1)**, pupil ไม่เท่ากัน/ขยายใหม่, อ่อนแรงซีกใหม่, ปวดหัวมาก/อาเจียนซ้ำ, ชัก, ชีพจรช้า-ความดันสูง (2)\n\n**Fatal errors**: ใช้การกดเล็บประเมินว่า localize, ไม่ตรวจ pupil, รายงานคะแนนรวมโดยไม่แยก E/V/M, ไม่รู้ว่า pupil ผิดปกติต้องรายงานทันที"
+  },
+  {
+   "id": "N3-12-OSCE2",
+   "topic": "Assessment and splinting of an open tibial fracture",
+   "station": "สถานี 7 นาที · หัตถการ/ตรวจร่างกาย (SP + moulage)",
+   "instruction": "ชายอายุ 30 ปี รถจักรยานยนต์ล้ม ขาซ้ายผิดรูปตรงกลางหน้าแข้ง มีแผลยาว 3 cm เลือดซึม (moulage) primary survey ผ่านแล้ว V/S stable\n\nให้นักศึกษา **ประเมินแขนขาที่บาดเจ็บ ดูแลแผล และดาม (splint) ขาซ้าย** ด้วยอุปกรณ์ที่ให้ (slab/splint สำเร็จรูป, สำลีรอง, ผ้ายืด, NSS, ผ้าก๊อซ) พร้อมบอกยาที่จะสั่งและแผนต่อไป",
+   "answer": "1. แนะนำตัว อธิบาย ขออนุญาต ให้ยาแก้ปวดก่อน (IV morphine) (1)\n2. Look: ผิดรูป บวม แผล ขนาด การปนเปื้อน กระดูกโผล่ — สรุปว่า **open fracture** (1)\n3. **Neurovascular ส่วนปลายก่อนดาม**: dorsalis pedis/posterior tibial pulse, capillary refill, สี อุณหภูมิ, ความรู้สึก (deep/superficial peroneal, tibial nerve), กระดกข้อเท้า/นิ้วเท้า (2)\n4. ประเมิน **compartment** (ตึง, ปวดเมื่อ passive stretch นิ้วเท้า) (1)\n5. ถ่ายภาพแผล เอาสิ่งปนเปื้อนชิ้นใหญ่ออก ล้างเบาด้วย NSS ปิด **sterile saline-moistened gauze** ไม่สำรวจแผลด้วยนิ้ว (1)\n6. **Gentle in-line traction** จัดแนว (ถ้าผิดรูปมาก/ชีพจรไม่ดี) (1)\n7. ดาม **คลุมข้อเหนือ (เข่า) และใต้ (ข้อเท้า)** รองสำลี จุดกระดูกนูน พันไม่แน่น (2)\n8. **ตรวจ neurovascular ซ้ำหลังดาม** บันทึก (1)\n9. สั่ง **IV cefazolin โดยเร็วภายใน 1 ชม.** (+ gentamicin ถ้า type III), **tetanus prophylaxis**, X-ray ทั้งกระดูก (ข้อเหนือ-ใต้) (2)\n10. แผน: NPO, ส่ง **OR ทำ irrigation & debridement** ± external fixation, เฝ้าระวัง compartment syndrome, ยกขาระดับหัวใจ (1)\n\n**Fatal errors**: ไม่ตรวจชีพจร/ความรู้สึกก่อนและหลังดาม, ดามไม่คลุมข้อเหนือ-ใต้, ไม่ให้ antibiotic, ดันกระดูกที่โผล่กลับเข้าไปโดยไม่ล้าง/บันทึก, พันแน่นจนเกิด compartment"
+  }
+ ]
+}

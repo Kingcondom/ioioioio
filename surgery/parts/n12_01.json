@@ -1,0 +1,499 @@
+{
+ "lec": "01",
+ "date": "Schwartz Ch 2",
+ "title": "Systemic response to injury, metabolism & nutrition",
+ "subtitle": "ร่างกายตอบสนองต่อการบาดเจ็บอย่างไร ทำไมผู้ป่วยศัลยกรรมจึงสลายกล้ามเนื้อ และจะให้โภชนบำบัดอย่างถูกทางและปลอดภัยได้อย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบายกลไก sterile inflammation จาก DAMPs, เกณฑ์ SIRS และบทบาทของ TNF-α, IL-1, IL-6 ได้",
+  "เรียนจบแล้วต้องบอกผลของ cortisol, catecholamine, ADH/aldosterone ต่อเมตาบอลิซึมหลังผ่าตัด และจำแนก adrenal insufficiency หลังผ่าตัดได้",
+  "เรียนจบแล้วต้องเปรียบเทียบเมตาบอลิซึมของ starvation กับ injury/sepsis ในด้าน glycogen, gluconeogenesis, ketosis และ protein catabolism",
+  "เรียนจบแล้วต้องประเมินภาวะโภชนาการ คำนวณพลังงาน โปรตีน และ nitrogen balance ได้",
+  "เรียนจบแล้วต้องเลือกระหว่าง enteral และ parenteral nutrition และ feeding access ที่เหมาะสม",
+  "เรียนจบแล้วต้องป้องกัน วินิจฉัย และรักษา refeeding syndrome และภาวะแทรกซ้อนของ TPN ได้"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 2 Systemic response to injury and metabolic support; Ch 3 (refeeding syndrome)",
+  "**ASPEN/SCCM** Guidelines for nutrition support in the adult critically ill patient (2016; protein/energy update 2022)",
+  "**ESPEN** Guideline on clinical nutrition in surgery (2021) · NICE CG32 Nutrition support for adults (refeeding risk criteria)",
+  "**Sepsis-3** consensus definitions (JAMA 2016)"
+ ],
+ "sections": [
+  {
+   "id": "n12-01-1",
+   "title": "การตอบสนองต่อการบาดเจ็บ: DAMPs, SIRS, cytokines และ neuroendocrine",
+   "summary": "ทำไมผู้ป่วยหลังผ่าตัดใหญ่หรือ trauma จึงมีไข้ ชีพจรเร็ว น้ำตาลสูง ทั้งที่ไม่มีเชื้อ และฮอร์โมน/cytokine ตัวไหนเป็นตัวขับเคลื่อน",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 2 — Detection of cellular injury, central nervous system regulation, cytokines",
+   "md": "### ร่างกายรู้ได้อย่างไรว่า \"บาดเจ็บ\"\nหลังผ่าตัดใหญ่หรืออุบัติเหตุรุนแรง ผู้ป่วยมีไข้ ชีพจรเร็ว หายใจเร็ว WBC สูง ทั้งที่ยังไม่มีเชื้อโรค — นี่คือ **sterile inflammation** ซึ่งเกิดจากโมเลกุลภายในร่างกายที่หลุดออกมาจากเซลล์ที่ตายหรือเครียด เรียกว่า **DAMPs (damage-associated molecular patterns)** หรือ alarmins\n- DAMPs จับกับ **pattern recognition receptors (PRRs)** เช่น **Toll-like receptors (TLRs)** และ RAGE ซึ่งเป็นตัวรับชุดเดียวกับที่ใช้ตรวจจับเชื้อโรค (PAMPs) → อธิบายว่าทำไมผู้ป่วย trauma กับผู้ป่วย sepsis จึงดูเหมือนกันทางคลินิก\n- การตอบสนองมี 3 แขนที่เกิด **พร้อมกันตั้งแต่ต้น** ไม่ได้เรียงลำดับ: proinflammatory (innate), anti-inflammatory และการกดภูมิคุ้มกันแบบ adaptive\n- ความรุนแรงของการตอบสนองแปรตามความรุนแรงของการบาดเจ็บ และทำนาย organ dysfunction ได้\n\n| DAMP | ตัวรับหลัก | จุดที่ควรจำ |\n|---|---|---|\n| **HMGB1** | TLR2, TLR4, TLR9, RAGE | DAMP ที่ศึกษามากที่สุด พบในเลือดภายใน 30 นาทีหลังบาดเจ็บ ระดับสัมพันธ์กับ ISS |\n| **Mitochondrial DNA** | TLR9 | ไมโทคอนเดรียมีต้นกำเนิดจากแบคทีเรีย จึงกระตุ้นภูมิคุ้มกันแรงคล้ายเชื้อโรค · ระดับสูงในผู้ที่เสียชีวิต |\n| Heat shock proteins | TLR2, TLR4, CD14 | หลั่งจากเซลล์ที่เครียด |\n| S100, hyaluronan, biglycan | TLR4, RAGE, TLR2 | ส่วนประกอบเซลล์/ECM ที่ถูกทำลาย |\n\n### SIRS, sepsis และเส้นทางหลังบาดเจ็บ\nเกณฑ์ **SIRS** (ต้องมีอย่างน้อย 2 ข้อ) ใช้บรรยายภาวะอักเสบทั้งร่างกาย ไม่ว่าจะมีเชื้อหรือไม่\n\n| เกณฑ์ | ค่าที่ผิดปกติ |\n|---|---|\n| อุณหภูมิ | ≥38°C หรือ ≤36°C |\n| Heart rate | ≥90/min |\n| Respiratory rate | ≥20/min หรือ PaCO₂ ≤32 mmHg หรือใช้เครื่องช่วยหายใจ |\n| WBC | ≥12,000 หรือ ≤4,000/µL หรือ band ≥10% |\n\nใน Table 2-1 ของ Schwartz: **sepsis** = SIRS + แหล่งติดเชื้อ · severe sepsis = sepsis + organ dysfunction · **septic shock** = ต้องใช้ vasopressor (ปัจจุบัน Sepsis-3 นิยาม sepsis ด้วย organ dysfunction ตาม SOFA แทน SIRS — ดูคาบ Shock)\n\nเส้นทางหลังบาดเจ็บรุนแรง: ฟื้นเร็ว · ตายเร็วจาก **multiple organ failure** · หรือเข้าสู่ภาวะ chronic critical illness ที่เรียกว่า **PICS** (persistent inflammation, immunosuppression, and catabolism syndrome) — ติดเชื้อซ้ำ กล้ามเนื้อลีบ ไม่ฟื้นกลับเท่าก่อนป่วย\n\n### Cytokines ตัวหลักที่ต้องรู้\n\n| Cytokine | บทบาท | จุดเด่น |\n|---|---|---|\n| **TNF-α** | หลั่งเร็วที่สุดตัวหนึ่ง จาก macrophage | half-life สั้นมาก (น้อยกว่า 20 นาที) · ทำให้ shock, สลายกล้ามเนื้อ (cachexia), insulin resistance, กระตุ้นการแข็งตัวของเลือด |\n| **IL-1** | คล้าย TNF | ไข้ผ่าน **prostaglandin ที่ anterior hypothalamus** · half-life น้อยกว่า 6 นาที |\n| **IL-6** | ตัวชี้วัดความรุนแรงที่ดี | ตรวจพบใน 60 นาที สูงสุด 4–6 ชม. อยู่ได้ถึง 10 วัน · ระดับแปรตามความรุนแรง · สั่งตับสร้าง **acute phase proteins** |\n| **IL-10** | anti-inflammatory | กด TNF/IL-1/IL-6 · เป็นแขนต้านการอักเสบ |\n\n> TNF และ IL-1 อยู่ในเลือดสั้นจนวัดยาก ส่วน **IL-6 half-life ยาว** และสัมพันธ์กับ outcome จึงใช้ติดตามได้ดีกว่า\n\n### แกนประสาท–ต่อมไร้ท่อ (neuroendocrine response)\nสัญญาณการบาดเจ็บไปถึงสมองสองทาง: cytokine ในเลือด และเส้นประสาทรับความรู้สึก (โดยเฉพาะ **vagus afferent** ไปยัง nucleus tractus solitarius)\n- **HPA axis**: hypothalamus หลั่ง CRH → pituitary หลั่ง **ACTH** → zona fasciculata หลั่ง **cortisol** → น้ำตาลสูง (gluconeogenesis), สลายโปรตีนกล้ามเนื้อ, lipolysis, และ **ต้านการอักเสบ** (glucocorticoid receptor ยับยั้ง NF-κB)\n- **Catecholamines**: หัวใจเต้นเร็ว บีบแรง เส้นเลือดหด · glycogenolysis, gluconeogenesis, lipolysis · กดการหลั่ง insulin ผ่าน **α-adrenergic receptor** ของตับอ่อน → hyperglycemia\n- **ADH และ aldosterone** (ผ่าน RAAS) ↑ → เก็บน้ำและโซเดียม ปัสสาวะออกน้อยหลังผ่าตัด ขับโพแทสเซียม\n- **Glucagon, growth hormone** ↑ ร่วมสร้าง **insulin resistance** — hyperglycemia หลังบาดเจ็บเป็น \"stress hyperglycemia\"\n- **Cholinergic anti-inflammatory pathway**: vagus efferent หลั่ง acetylcholine กด cytokine จาก macrophage (ผ่าน α7 nicotinic receptor) — สมองเป็นตัวเบรกการอักเสบด้วย\n\n#### CIRCI (critical illness–related corticosteroid insufficiency)\nคอร์ติซอลไม่พอกับความเครียด (HPA ผิดปกติ หรือเนื้อเยื่อดื้อ) อาการ: ความดันต่ำไม่ตอบสนองต่อสารน้ำ/vasopressor, น้ำตาลต่ำ, Na ต่ำ, K สูง · เกณฑ์: **delta cortisol น้อยกว่า 9 µg/dL** ที่ 60 นาทีหลังให้ cosyntropin 250 µg หรือ **random cortisol น้อยกว่า 10 µg/dL** · ผู้ป่วยที่เคยกิน steroid นาน ๆ แล้วมาผ่าตัด = กลุ่มเสี่ยงคลาสสิกของ adrenal crisis\n\n### Acute phase response\n**IL-6** สั่งตับเปลี่ยนการสร้างโปรตีน:\n\n| เพิ่มขึ้น (positive APP) | ลดลง (negative APP) |\n|---|---|\n| **CRP** (เพิ่มได้มากกว่า 1,000 เท่า จากปกติไม่เกิน 3 mg/L) · fibrinogen · serum amyloid A · ferritin · hepcidin · haptoglobin | **albumin** · **prealbumin (transthyretin)** · **transferrin** |\n\nผลทางคลินิก: albumin/prealbumin ที่ต่ำในผู้ป่วยวิกฤตสะท้อน **การอักเสบ** มากกว่าภาวะทุพโภชนาการ จึงต้องแปลผลร่วมกับ CRP · fibrinogen สูงทำให้ ESR สูง · hepcidin สูงทำให้เหล็กถูกขัง → anemia of inflammation\n",
+   "pearls": [
+    "Trauma → DAMPs (HMGB1, mtDNA) → PRR/TLR เดียวกับเชื้อโรค → SIRS ที่ปราศจากเชื้อ",
+    "SIRS ≥2 ข้อ: T ≥38 หรือ ≤36 · HR ≥90 · RR ≥20 หรือ PaCO₂ ≤32 · WBC ≥12,000 หรือ ≤4,000 หรือ band ≥10%",
+    "TNF-α ออกเร็วสุด half-life สั้น · IL-1 ทำให้ไข้ผ่าน PGE₂ · IL-6 ตรวจได้นานและแปรตามความรุนแรง",
+    "Catecholamine + cortisol + glucagon + GH → stress hyperglycemia/insulin resistance",
+    "IL-6 → ตับสร้าง CRP, fibrinogen, ferritin, hepcidin · ลด albumin, prealbumin, transferrin",
+    "CIRCI: delta cortisol น้อยกว่า 9 µg/dL หลัง cosyntropin 250 µg หรือ random cortisol น้อยกว่า 10 µg/dL",
+    "PICS = persistent inflammation, immunosuppression, catabolism — เส้นทางของ chronic critical illness"
+   ],
+   "mnem": [
+    {
+     "name": "SIRS: 'T-H-R-W'",
+     "what": "ไล่เกณฑ์ SIRS ครบ 4 ข้อ (ต้อง ≥2)",
+     "lines": [
+      [
+       "T",
+       "Temp ≥38 หรือ ≤36°C"
+      ],
+      [
+       "H",
+       "Heart rate ≥90"
+      ],
+      [
+       "R",
+       "RR ≥20 หรือ PaCO₂ ≤32"
+      ],
+      [
+       "W",
+       "WBC ≥12k หรือ ≤4k หรือ band ≥10%"
+      ]
+     ],
+     "note": "Sepsis-3 ใช้ SOFA/qSOFA แทนในการนิยาม sepsis"
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-01-1-1",
+     "kind": "mcq",
+     "topic": "DAMPs and sterile inflammation",
+     "stem": "A 28-year-old man is admitted after a motorcycle crash with bilateral femur fractures and a liver laceration managed nonoperatively. CT shows no hollow-viscus injury and cultures are negative. On day 1 his temperature is 38.6°C, heart rate 118/min, respiratory rate 24/min and WBC 16,500/µL. Which mechanism best explains this systemic response?",
+     "choices": [
+      "Release of endogenous damage-associated molecular patterns sensed by pattern recognition receptors",
+      "Bacterial translocation of endotoxin across the intact gut wall",
+      "Direct hypothalamic injury from blood loss causing loss of thermoregulation",
+      "Hemolytic transfusion reaction from ABO-incompatible blood",
+      "Primary adrenal insufficiency from adrenal hemorrhage"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **SIRS** ครบ 4 ข้อ แต่ไม่มีแหล่งติดเชื้อ — นี่คือ **sterile inflammation** เนื้อเยื่อที่แตกหักและตายปล่อย **DAMPs** เช่น HMGB1 และ mitochondrial DNA ซึ่งจับกับ **PRRs/TLRs** ชุดเดียวกับที่รับรู้เชื้อโรค จึงทำให้อาการคล้าย sepsis\n- **Endotoxin translocation** เป็นสมมติฐานที่มีหลักฐานในสัตว์ทดลองเป็นหลัก และไม่ใช่กลไกหลักของ SIRS หลังบาดเจ็บในวันแรก\n- **Hypothalamic injury** ไม่เกิดจากการเสียเลือด และไม่อธิบาย WBC สูง\n- **Hemolytic transfusion reaction** ต้องมีประวัติให้เลือดผิดหมู่ร่วมกับ hemoglobinuria/ความดันตก\n- **Adrenal insufficiency** มักให้ความดันต่ำ น้ำตาลต่ำ Na ต่ำ K สูง ไม่ใช่ภาพ SIRS ที่ WBC สูงแบบนี้",
+     "pearl": "SIRS หลังบาดเจ็บโดยไม่มีเชื้อ = DAMPs จับ TLR (sterile inflammation)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-1-2",
+     "kind": "mcq",
+     "topic": "Acute phase proteins",
+     "stem": "A 62-year-old woman is on postoperative day 4 after an emergency Hartmann procedure for perforated sigmoid diverticulitis. Her CRP is 210 mg/L. The nutrition team notes her serum albumin has fallen from 3.9 g/dL preoperatively to 2.4 g/dL despite adequate oral intake before surgery. Which mediator most directly drives the hepatic change in both proteins?",
+     "choices": [
+      "Interleukin-6",
+      "Interleukin-10",
+      "Aldosterone",
+      "Insulin",
+      "Interleukin-2"
+     ],
+     "answer": 0,
+     "explain": "**IL-6** เป็นตัวสั่งการหลักของ **acute phase response** ในตับ: เพิ่ม CRP, fibrinogen, serum amyloid A, ferritin และลดการสร้าง **albumin, transferrin, prealbumin** — albumin ที่ตกเร็วหลังผ่าตัดจึงสะท้อนการอักเสบ (และการรั่วออกนอกหลอดเลือด) มากกว่าภาวะทุพโภชนาการ\n- **IL-10** เป็น anti-inflammatory cytokine กดการสร้าง IL-6 ไม่ได้กระตุ้น CRP\n- **Aldosterone** ควบคุม Na/K ที่ไต ไม่ได้กำหนดการสร้างโปรตีนในตับ\n- **Insulin** เป็นฮอร์โมน anabolic ไม่ได้ทำให้ CRP สูง\n- **IL-2** เกี่ยวกับการแบ่งตัวของ T cell และมักลดลงหลังบาดเจ็บรุนแรง",
+     "pearl": "IL-6 → CRP ↑ · albumin/prealbumin/transferrin ↓ (negative acute phase)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-1-3",
+     "kind": "mcq",
+     "topic": "Stress hyperglycemia mechanism",
+     "stem": "A 45-year-old man without diabetes undergoes laparotomy for a ruptured spleen after blunt trauma. Six hours after surgery his capillary glucose is 238 mg/dL while receiving only lactated Ringer's solution. Which combination of hormonal changes best explains the hyperglycemia?",
+     "choices": [
+      "Increased catecholamines, cortisol and glucagon with peripheral insulin resistance",
+      "Increased insulin secretion with enhanced peripheral glucose uptake",
+      "Decreased cortisol and increased thyroid hormone",
+      "Increased aldosterone and antidiuretic hormone only",
+      "Decreased growth hormone and decreased glucagon"
+     ],
+     "answer": 0,
+     "explain": "หลังบาดเจ็บ ร่างกายหลั่ง **counter-regulatory hormones**: catecholamine (glycogenolysis, gluconeogenesis และกดการหลั่ง insulin ผ่าน α-adrenergic receptor), **cortisol** (gluconeogenesis, สลายโปรตีน), **glucagon** และ GH ร่วมกับ cytokine (TNF) ทำให้เกิด **insulin resistance** ที่กล้ามเนื้อและไขมัน → stress hyperglycemia\n- **Insulin เพิ่มพร้อมการนำน้ำตาลเข้าเซลล์ดีขึ้น** จะทำให้น้ำตาลต่ำ ไม่ใช่สูง\n- **Cortisol ลดลง** ตรงข้ามกับความจริงหลังบาดเจ็บ (ยกเว้น CIRCI) และ thyroid hormone มักต่ำ (sick euthyroid)\n- **Aldosterone/ADH** ทำให้เก็บน้ำและเกลือ ไม่ได้ทำให้น้ำตาลสูงโดยตรง\n- **GH และ glucagon ลดลง** ผิด เพราะทั้งคู่เพิ่มขึ้นหลังบาดเจ็บ",
+     "pearl": "Stress hyperglycemia = catecholamine + cortisol + glucagon + GH + insulin resistance",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-1-4",
+     "kind": "mcq",
+     "topic": "Adrenal insufficiency after surgery",
+     "stem": "A 58-year-old woman with rheumatoid arthritis has taken prednisolone 15 mg daily for 2 years. She undergoes urgent small-bowel resection for adhesive obstruction; steroids were not given perioperatively. On postoperative day 1 she has BP 78/40 mmHg unresponsive to 3 L crystalloid and norepinephrine, glucose 52 mg/dL, Na 128 mmol/L and K 5.6 mmol/L. What is the best next step?",
+     "choices": [
+      "Give intravenous hydrocortisone immediately",
+      "Start broad-spectrum antibiotics and repeat CT before any other therapy",
+      "Give intravenous 3% saline to correct the sodium",
+      "Start fludrocortisone orally alone",
+      "Perform a cosyntropin stimulation test and wait for the result before treatment"
+     ],
+     "answer": 0,
+     "explain": "การกิน steroid ขนาดสูงนานกดแกน HPA → ต่อมหมวกไตฝ่อ เมื่อเจอความเครียดจากการผ่าตัดจึงสร้าง cortisol ไม่พอ ภาพคลาสสิก: **ความดันต่ำที่ไม่ตอบสนองต่อสารน้ำและ vasopressor, น้ำตาลต่ำ, Na ต่ำ, K สูง** → ต้องให้ **IV hydrocortisone ทันที** (เจาะ cortisol เก็บไว้ก่อนให้ยาได้แต่ห้ามรอผล)\n- **Antibiotics + CT** อาจจำเป็นถ้าสงสัยติดเชื้อ แต่ไม่แก้สาเหตุที่ทำให้ช็อกตอนนี้\n- **3% saline** ไม่เหมาะ Na 128 ไม่มีอาการทางสมองและจะดีขึ้นเมื่อได้ steroid\n- **Fludrocortisone ทางปากอย่างเดียว** ไม่ทดแทน glucocorticoid และกินทางปากไม่ได้หลังผ่าตัดลำไส้\n- **รอผล cosyntropin test** ทำให้เสียเวลาในผู้ป่วยที่ช็อก — วินิจฉัยและรักษาพร้อมกัน",
+     "pearl": "กิน steroid นาน + ผ่าตัด + ช็อกดื้อ + น้ำตาลต่ำ/Na ต่ำ/K สูง → hydrocortisone IV ทันที",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-01-2",
+   "title": "Metabolism: starvation เทียบกับ injury/sepsis",
+   "summary": "ร่างกายดึงพลังงานจาก glycogen ไขมัน และโปรตีนอย่างไรเมื่ออดอาหาร และทำไมผู้ป่วยบาดเจ็บรุนแรงจึงสลายกล้ามเนื้อมากกว่าคนที่แค่อดอาหาร",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 2 — Metabolism during fasting, metabolism after injury, protein metabolism",
+   "md": "### ระบบพลังงานสำรองของร่างกาย\nคนปกติต้องการพลังงานพื้นฐานราว **22–25 kcal/kg/วัน** (ขณะพักและอดอาหาร) แหล่งพลังงานสำรอง:\n\n| แหล่ง | ปริมาณ (ผู้ใหญ่ 70 kg) | ใช้ได้นานแค่ไหน |\n|---|---|---|\n| **Glycogen ที่ตับ** | 75–100 g | หมดภายในไม่ถึง 1 วัน (น้ำตาลเริ่มตกภายในราว 16 ชม.) |\n| Glycogen ในกล้ามเนื้อ | 200–250 g | ใช้ได้เฉพาะในกล้ามเนื้อเอง เพราะ **ขาด glucose-6-phosphatase** ปล่อยกลูโคสเข้าเลือดไม่ได้ |\n| **ไขมัน** | มากที่สุด | แหล่งพลังงานหลักเมื่ออดนาน |\n| โปรตีน | ไม่มี \"คลังสำรอง\" | ทุกกรัมที่สลายคือกล้ามเนื้อ/อวัยวะที่ทำงานอยู่ |\n\nเซลล์ที่ **ต้องใช้กลูโคส (obligate glycolytic)**: สมอง, RBC, WBC, renal medulla — ใช้ราว 180 g/วัน\n\n### Short-term starvation (น้อยกว่า 5 วัน)\n1. glycogen ตับหมด → ต้องสร้างกลูโคสใหม่ด้วย **gluconeogenesis** ที่ตับ\n2. สารตั้งต้น: **lactate** (Cori cycle — ให้กลูโคสได้ถึง 40%), **glycerol** จากไขมัน และ **amino acids (alanine, glutamine)** จากกล้ามเนื้อ\n3. กล้ามเนื้อถูกสลายราว **75 g โปรตีน/วัน** → urinary nitrogen เพิ่มจากปกติ 7–10 เป็นได้ถึง 30 g/วัน\n4. ฮอร์โมนที่คุม: insulin ↓, glucagon ↑, cortisol ↑ → lipolysis และ proteolysis\n\n### Prolonged starvation: ร่างกาย \"ประหยัดโปรตีน\"\n- ตับเปลี่ยนกรดไขมันเป็น **ketone bodies** (acetoacetate, β-hydroxybutyrate) — ตับเองใช้ ketone ไม่ได้\n- สมองเริ่มใช้ ketone หลัง ~2 วัน และกลายเป็นเชื้อเพลิงหลักราว **24 วัน** → ความต้องการกลูโคสลดลง\n- proteolysis ลดเหลือราว **20 g/วัน** urinary nitrogen คงที่ 2–5 g/วัน\n- **ไต** สร้างกลูโคสจาก glutamine ได้ถึงครึ่งหนึ่งของทั้งหมด และขับ NH₄⁺ เพิ่ม\n- ketone ยับยั้ง pyruvate dehydrogenase → ประหยัดกลูโคส\n> Starvation = **adaptation**: เผาไขมัน ลดการใช้โปรตีน ลด metabolic rate\n\n### Injury/sepsis ต่างจาก starvation อย่างไร\n\n| ลักษณะ | Simple starvation | Injury / sepsis |\n|---|---|---|\n| Energy expenditure | **ลดลง** | ช่วงแรก (ebb) ไม่สูง → **เพิ่มขึ้นชัดในสัปดาห์ที่ 2** (flow/hypermetabolic) |\n| ฮอร์โมนเด่น | insulin ต่ำ | catecholamine, cortisol, glucagon สูง + **insulin resistance** |\n| Gluconeogenesis | ถูกกดได้ด้วยการให้กลูโคส | **ไม่ถูกกด** แม้ให้กลูโคส/insulin |\n| Proteolysis | ลดลงเมื่ออดนาน | **เพิ่มมาก** ไม่ปรับตัว — กล้ามเนื้อลายถูกใช้ก่อนอวัยวะภายใน |\n| Ketosis | เด่น | **ถูกกด** (insulin สูงขึ้นเล็กน้อยและ FFA ถูกเผาเร็ว) — ยิ่งเจ็บมาก ketone ยิ่งน้อย |\n| Nitrogen balance | ลบเล็กน้อย | **ลบมาก** สูงสุดราววันที่ 7 อาจนาน 3–7 สัปดาห์ |\n| ใช้ไขมัน | ✔ | ✔ (lipolysis จาก catecholamine) |\n\n### Protein catabolism และความหมายทางคลินิก\n- กล้ามเนื้อลายถูกสลายผ่าน **ubiquitin–proteasome system** ส่งกรดอะมิโน (โดยเฉพาะ **alanine, glutamine**) ไปตับเพื่อสร้างกลูโคสและ acute phase proteins และไปลำไส้/เซลล์ภูมิคุ้มกัน\n- สิ่งที่เร่งการสลาย: เนื้อเยื่อขาดออกซิเจน, acidosis, insulin resistance, glucocorticoid สูง\n- ระดับการสลายเรียงจากน้อยไปมาก: elective surgery → infection → skeletal trauma → severe sepsis → **major burns** (มากที่สุด)\n- ผลที่ตามมา: กล้ามเนื้อหายใจอ่อนแรง หย่าเครื่องช่วยหายใจยาก แผลหายช้า ภูมิคุ้มกันต่ำ → ต้องให้ **โปรตีนสูง** ในผู้ป่วยวิกฤต\n- การให้กลูโคสอย่างเดียวหยุด proteolysis จากการบาดเจ็บไม่ได้ — ต่างจาก starvation ที่ 100 g glucose/วันช่วยลดการสลายโปรตีนได้ชัด\n",
+   "pearls": [
+    "Glycogen ตับ 75–100 g หมดภายในไม่ถึงวัน · glycogen กล้ามเนื้อปล่อยเข้าเลือดไม่ได้ (ไม่มี glucose-6-phosphatase)",
+    "Gluconeogenesis ใช้ lactate (Cori cycle), glycerol, alanine/glutamine",
+    "อดอาหารนาน → ketone เป็นเชื้อเพลิงสมอง → proteolysis ลดจาก ~75 เหลือ ~20 g/วัน",
+    "Injury: hypermetabolism + insulin resistance + gluconeogenesis ที่กดไม่ลง + ketosis ถูกกด",
+    "Negative nitrogen balance หลังบาดเจ็บสูงสุดราววันที่ 7 อาจนาน 3–7 สัปดาห์",
+    "Burns สลายโปรตีนมากที่สุด ตามด้วย severe sepsis และ skeletal trauma",
+    "ตับสร้าง ketone แต่ใช้ ketone เองไม่ได้"
+   ],
+   "items": [
+    {
+     "id": "N12-01-2-1",
+     "kind": "mcq",
+     "topic": "Muscle glycogen and blood glucose",
+     "stem": "A 35-year-old healthy man is kept nil per os for 24 hours before elective surgery and receives no dextrose. His muscle glycogen content remains largely intact, yet his plasma glucose is maintained mainly by hepatic gluconeogenesis. Which enzyme deficiency in skeletal muscle explains why muscle glycogen cannot directly supply blood glucose?",
+     "choices": [
+      "Glucose-6-phosphatase",
+      "Glycogen phosphorylase",
+      "Hexokinase",
+      "Pyruvate carboxylase",
+      "Phosphofructokinase-1"
+     ],
+     "answer": 0,
+     "explain": "กล้ามเนื้อเก็บ glycogen ได้มากกว่าตับ (200–250 g เทียบกับ 75–100 g) แต่ไม่มี **glucose-6-phosphatase** จึงเปลี่ยน glucose-6-phosphate เป็นกลูโคสอิสระเพื่อส่งออกสู่เลือดไม่ได้ glycogen ในกล้ามเนื้อจึงใช้เฉพาะในกล้ามเนื้อเอง ระดับน้ำตาลในเลือดหลังอดอาหารจึงต้องพึ่งตับ (glycogenolysis แล้วตามด้วย gluconeogenesis)\n- **Glycogen phosphorylase** มีในกล้ามเนื้อ ใช้สลาย glycogen ให้กล้ามเนื้อใช้เอง\n- **Hexokinase** ใช้จับกลูโคสเข้าเซลล์ ไม่เกี่ยวกับการส่งออก\n- **Pyruvate carboxylase** เป็นเอนไซม์ของ gluconeogenesis ในตับ/ไต ไม่ใช่เหตุที่ glycogen กล้ามเนื้อส่งออกไม่ได้\n- **PFK-1** เป็นตัวคุม glycolysis มีในกล้ามเนื้อตามปกติ",
+     "pearl": "Glycogen กล้ามเนื้อใช้ได้แค่ในกล้ามเนื้อ เพราะขาด glucose-6-phosphatase",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-2-2",
+     "kind": "mcq",
+     "topic": "Adaptation in prolonged starvation",
+     "stem": "A 40-year-old woman with a malignant gastric outlet obstruction has had almost no oral intake for 4 weeks. She is alert, and her urinary nitrogen excretion is now only about 3 g/day. Which metabolic adaptation best explains the reduced protein breakdown compared with her first week of starvation?",
+     "choices": [
+      "The brain uses ketone bodies as its principal fuel, reducing the need for gluconeogenesis from amino acids",
+      "Skeletal muscle releases glucose from its glycogen stores",
+      "Insulin levels rise markedly and block lipolysis",
+      "The liver oxidizes ketone bodies to supply its own energy",
+      "Red blood cells switch to fatty acid oxidation"
+     ],
+     "answer": 0,
+     "explain": "เมื่ออดอาหารนาน ตับสร้าง **ketone bodies** จากกรดไขมัน สมองค่อย ๆ ปรับมาใช้ ketone เป็นเชื้อเพลิงหลัก (ราวสัปดาห์ที่ 3–4) ความต้องการกลูโคสลดลง จึงไม่ต้องสลายกล้ามเนื้อเพื่อเอากรดอะมิโนไปทำ gluconeogenesis มากเท่าช่วงแรก → proteolysis ลดเหลือราว 20 g/วัน urinary N 2–5 g/วัน\n- **Glycogen กล้ามเนื้อ** ส่งกลูโคสเข้าเลือดไม่ได้ และหมดไปนานแล้ว\n- **Insulin สูงขึ้นมาก** ผิด ในการอดอาหาร insulin ต่ำ จึงเกิด lipolysis และ ketogenesis\n- **ตับใช้ ketone เอง** ไม่ได้ ตับไม่มีเอนไซม์ใช้ ketone\n- **RBC** ไม่มีไมโทคอนเดรีย ใช้ได้แต่กลูโคส (glycolysis)",
+     "pearl": "อดนาน → สมองใช้ ketone → ประหยัดโปรตีน",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-2-3",
+     "kind": "mcq",
+     "topic": "Injury versus starvation metabolism",
+     "stem": "Two patients have had minimal intake for 7 days: a 30-year-old man with anorexia from depression, and a 30-year-old man with 45% total body surface area burns. Compared with the first patient, which finding is most expected in the burned patient?",
+     "choices": [
+      "Persistent hepatic gluconeogenesis that is not suppressed by glucose infusion",
+      "Lower resting energy expenditure",
+      "Higher plasma ketone body concentration",
+      "Lower urinary nitrogen excretion",
+      "Increased peripheral insulin sensitivity"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยแผลไหม้เป็นตัวอย่างของ **hypermetabolic injury** สูงสุด: catecholamine/cortisol/glucagon สูง ร่วมกับ **insulin resistance** ทำให้ตับยังคงสร้างกลูโคส (**gluconeogenesis ที่กดไม่ลง** แม้ได้กลูโคสหรือ insulin) และสลายกล้ามเนื้อต่อเนื่อง ต่างจากคนอดอาหารธรรมดาที่ร่างกายปรับตัวลดการใช้พลังงาน\n- **Energy expenditure ต่ำกว่า** เป็นลักษณะของ starvation ส่วน burns สูงมาก\n- **Ketone สูงกว่า** ผิด ภาวะบาดเจ็บรุนแรงกด ketogenesis\n- **Urinary nitrogen ต่ำกว่า** ผิด burns มี nitrogen loss มากที่สุด\n- **Insulin sensitivity เพิ่ม** ผิด เป็น insulin resistance",
+     "pearl": "Injury = hypermetabolism + insulin resistance + gluconeogenesis กดไม่ลง + ketosis ถูกกด",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-2-4",
+     "kind": "mcq",
+     "topic": "Gluconeogenic substrates",
+     "stem": "A 52-year-old man with severe necrotizing pancreatitis is in the ICU on day 5. Serial measurements show progressive loss of thigh muscle mass and rising urinary urea nitrogen. Which amino acid is a major carrier of nitrogen and carbon from skeletal muscle to the liver for gluconeogenesis in this state?",
+     "choices": [
+      "Alanine",
+      "Leucine",
+      "Tryptophan",
+      "Lysine",
+      "Phenylalanine"
+     ],
+     "answer": 0,
+     "explain": "หลังบาดเจ็บ/sepsis กล้ามเนื้อลายถูกสลายผ่าน ubiquitin–proteasome ส่งกรดอะมิโนออก โดย **alanine** และ **glutamine** เป็นตัวพาหลัก: alanine ไปตับ เปลี่ยนเป็น pyruvate เพื่อสร้างกลูโคส (glucose–alanine cycle) ส่วน nitrogen ถูกเปลี่ยนเป็น urea → urinary urea nitrogen สูง\n- **Leucine** เป็น branched-chain ที่ถูกเผาในกล้ามเนื้อและเป็น ketogenic ล้วน ไม่ใช่ตัวขนส่งหลัก\n- **Tryptophan** ไม่ใช่ตัวพาหลักไปตับ\n- **Lysine** เป็น ketogenic ล้วน ไม่ใช้สร้างกลูโคส\n- **Phenylalanine** ถูกใช้เป็น marker ของ protein breakdown แต่ไม่ใช่ตัวขนส่งหลักไป gluconeogenesis",
+     "pearl": "กล้ามเนื้อส่ง alanine และ glutamine ไปตับ/ลำไส้หลังบาดเจ็บ",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-01-3",
+   "title": "Nutritional assessment และการคำนวณความต้องการพลังงาน/โปรตีน",
+   "summary": "จะรู้ได้อย่างไรว่าผู้ป่วยศัลยกรรมขาดอาหาร และต้องให้พลังงาน โปรตีน เท่าไร พร้อมวิธีอ่าน nitrogen balance",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 2 — Nutrition in the surgical patient: estimation of energy requirements, Table 2-8, Table 2-9",
+   "md": "### ใครเสี่ยงทุพโภชนาการ — ประเมินอย่างไร\nผู้ป่วยทุกคนที่นอนโรงพยาบาลควรได้ประเมินภาวะโภชนาการ\n- **ประวัติ**: น้ำหนักลดโดยไม่ตั้งใจ (มากกว่า 10% ใน 6 เดือน หรือมากกว่า 5% ใน 1 เดือนถือว่ามีนัยสำคัญ), กินได้น้อยลง, โรคเรื้อรัง, สุรา, ยา\n- **ตรวจร่างกาย**: กล้ามเนื้อขมับ/ไหล่ลีบ, ไขมันใต้ผิวลดลง, บวม, ผิวหนัง/ผม/เล็บผิดปกติ\n- **Anthropometry**: น้ำหนัก, BMI, skinfold thickness, arm muscle circumference\n- **Lab**: albumin (half-life ~20 วัน), **prealbumin** (half-life ~2 วัน ตามการเปลี่ยนแปลงระยะสั้นได้), transferrin, total lymphocyte count, creatinine excretion\n- **Scoring**: **NRS 2002** หรือ **NUTRIC score** สำหรับผู้ป่วยวิกฤต ร่วมกับประเมินการทำงานของทางเดินอาหารและความเสี่ยงสำลัก\n\n> albumin และ prealbumin เป็น **negative acute phase proteins** — ในผู้ป่วยที่มีการอักเสบ ค่าต่ำอาจไม่ได้แปลว่าขาดอาหาร ต้องดู CRP ร่วม\n\nผู้ป่วยที่ **nutritional risk ต่ำ** และโรคไม่รุนแรง ไม่จำเป็นต้องให้โภชนบำบัดพิเศษในสัปดาห์แรก (ประเมินซ้ำเป็นระยะ) · คนปกติไม่มีทุพโภชนาการ ผ่าตัดไม่ซับซ้อน ทนต่อ partial starvation (IV fluid อย่างเดียว) ได้ราว **10 วัน**\n\n### คำนวณพลังงาน (calories)\n- **Gold standard**: **indirect calorimetry** (วัด VO₂, VCO₂ → REE และ respiratory quotient)\n- ถ้าไม่มี: สูตรง่าย **25–30 kcal/kg/วัน** (ใช้ dry/usual body weight) — ตามแนวทาง ASPEN สำหรับ ICU, หรือ predictive equation เช่น Harris–Benedict\n- ความเครียดสูงต้องการมากขึ้น:\n\n| ภาวะ | kcal/kg/วัน | โปรตีน g/kg/วัน | nonprotein kcal : N |\n|---|---|---|---|\n| ปกติ/ขาดอาหารปานกลาง | 25–30 | 1.0 | 150:1 |\n| Mild stress | 25–30 | 1.2 | 150:1 |\n| Moderate stress | 30 | 1.5 | 120:1 |\n| Severe stress | 30–35 | 2.0 | 90–120:1 |\n| **Burns** | 35–40 | **2.5** | 90–100:1 |\n\nพลังงานต่อกรัม: คาร์โบไฮเดรต 4 kcal (dextrose IV **3.4 kcal/g**) · โปรตีน 4 kcal · ไขมัน **9 kcal** · lipid emulsion 10% = 1.1 kcal/mL, 20% = 2 kcal/mL\n\n### โปรตีนและ nitrogen balance\n- คนปกติ **0.8 g/kg/วัน** · ผู้ป่วยวิกฤต/บาดเจ็บ **1.2–2.0 g/kg/วัน** · burns ถึง 2.5 · ผู้ป่วยอ้วน (BMI มากกว่า 30) แนะนำ high-protein\n- โปรตีน 6.25 g มี **nitrogen 1 g**\n- **Nitrogen balance** = N intake − N output โดยประมาณ N output = **UUN (24 ชม.) + 4 g** (ส่วนที่เสียทางอุจจาระ ผิวหนัง และ non-urea N)\n- ค่าบวก = anabolic (สร้างมากกว่าสลาย) · ค่าลบ = catabolic → ต้องเพิ่มโปรตีน/ประเมินแหล่ง sepsis\n\nตัวอย่าง: ได้โปรตีน 75 g/วัน (N = 75/6.25 = 12 g) UUN 16 g → balance = 12 − (16 + 4) = **−8 g/วัน**\n\n### Overfeeding และ respiratory quotient\n- **RQ** = VCO₂/VO₂: กลูโคส 1.0 · โปรตีน 0.8 · ไขมัน 0.7 · ค่า **มากกว่า 1.0 = lipogenesis จาก overfeeding**\n- Overfeeding ทำให้: CO₂ สูง หย่าเครื่องช่วยหายใจยาก, **fatty liver**, hyperglycemia, ภูมิคุ้มกันต่ำ, ติดเชื้อมากขึ้น\n- สาเหตุบ่อย: ใช้ **actual body weight** คำนวณในผู้ป่วยบวมน้ำหรืออ้วน → ใช้ dry weight / adjusted body weight\n- ช่วงสัปดาห์แรกใน ICU แนวทางปัจจุบันยอมให้ **hypocaloric, high-protein** (น้อยกว่า 20 kcal/kg/วัน หรือน้อยกว่า 80% ของเป้า + โปรตีนมากกว่า 1.2 g/kg/วัน) แล้วค่อยเพิ่มเมื่อเข้าสู่ระยะฟื้นตัว\n",
+   "pearls": [
+    "พลังงาน 25–30 kcal/kg/วัน (dry weight) · gold standard = indirect calorimetry",
+    "โปรตีนคนปกติ 0.8 · ผู้ป่วยวิกฤต 1.2–2.0 · burns 2.5 g/kg/วัน",
+    "โปรตีน 6.25 g = N 1 g · N balance = N in − (UUN + 4)",
+    "ไขมัน 9 kcal/g · dextrose IV 3.4 kcal/g · โปรตีน 4 kcal/g",
+    "RQ มากกว่า 1 = overfeeding/lipogenesis → CO₂ สูง หย่า ventilator ยาก",
+    "Prealbumin half-life ~2 วัน ไวกว่า albumin (~20 วัน) แต่ทั้งคู่ตกเมื่อมีการอักเสบ",
+    "คนปกติผ่าตัดไม่ซับซ้อนทนกินไม่ได้ (IV fluid อย่างเดียว) ได้ราว 10 วัน"
+   ],
+   "items": [
+    {
+     "id": "N12-01-3-1",
+     "kind": "mcq",
+     "topic": "Nitrogen balance calculation",
+     "stem": "A 60-year-old man is in the surgical ICU 6 days after laparotomy for perforated duodenal ulcer. He receives enteral nutrition providing 100 g of protein per day. A 24-hour urine urea nitrogen is 20 g. Using the standard estimate for non-urinary losses, what is his nitrogen balance?",
+     "choices": [
+      "−8 g/day",
+      "+4 g/day",
+      "−4 g/day",
+      "−12 g/day",
+      "+16 g/day"
+     ],
+     "answer": 0,
+     "explain": "**Nitrogen intake** = โปรตีน ÷ 6.25 = 100 ÷ 6.25 = 16 g/วัน · **Nitrogen output** ≈ UUN + 4 g (ส่วนที่เสียทางอุจจาระ ผิวหนัง และ nitrogen ที่ไม่ใช่ urea) = 20 + 4 = 24 g · Balance = 16 − 24 = **−8 g/วัน** → ยังอยู่ใน catabolic phase ควรเพิ่มโปรตีน (เป้า 1.5–2 g/kg) และหาสาเหตุ hypercatabolism เช่น sepsis\n- **+4** ได้จากเอา 24 − 20 ไม่ได้คำนวณ intake ถูกต้อง\n- **−4** ลืมบวก 4 g ของการสูญเสียที่ไม่ใช่ทางปัสสาวะ\n- **−12** ได้จากใช้โปรตีนหาร 8 หรือบวก loss ซ้ำ\n- **+16** คือ N intake ไม่ได้หัก output",
+     "pearl": "N balance = (protein/6.25) − (UUN + 4)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-3-2",
+     "kind": "mcq",
+     "topic": "Respiratory quotient and overfeeding",
+     "stem": "A 68-year-old man with COPD has been on parenteral nutrition for 10 days after a complicated colectomy and has failed two spontaneous breathing trials because of rising PaCO2. Indirect calorimetry shows a respiratory quotient of 1.15. What is the most appropriate adjustment?",
+     "choices": [
+      "Reduce total calories, especially dextrose, to avoid overfeeding",
+      "Increase dextrose concentration to provide more energy for respiratory muscles",
+      "Stop all protein in the parenteral formula",
+      "Add sodium bicarbonate to the parenteral nutrition",
+      "Increase the infusion rate to meet 2.0 times the resting energy expenditure"
+     ],
+     "answer": 0,
+     "explain": "RQ = VCO₂/VO₂ ของสารอาหารแต่ละชนิด: ไขมัน 0.7, โปรตีน 0.8, คาร์โบไฮเดรต 1.0 ค่า **มากกว่า 1.0** แสดงว่าร่างกายเปลี่ยนคาร์โบไฮเดรตส่วนเกินเป็นไขมัน (**lipogenesis**) ซึ่งผลิต CO₂ มาก → ผู้ป่วย COPD หย่าเครื่องช่วยหายใจไม่ได้ วิธีแก้คือ **ลดพลังงานรวม โดยเฉพาะ dextrose** และใช้ไขมันเป็นส่วนหนึ่งของพลังงาน\n- **เพิ่ม dextrose** ทำให้ CO₂ เพิ่ม ยิ่งแย่ลง\n- **หยุดโปรตีน** ไม่แก้ปัญหา และทำให้ nitrogen balance ลบมากขึ้น\n- **Sodium bicarbonate** ไม่ได้แก้ต้นเหตุ และอาจเพิ่ม CO₂\n- **เพิ่มเป็น 2 เท่าของ REE** คือ overfeeding หนักขึ้น",
+     "pearl": "RQ มากกว่า 1 = overfeeding → ลดพลังงาน/dextrose",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-3-3",
+     "kind": "mcq",
+     "topic": "Caloric and protein targets",
+     "stem": "A 70-kg (dry weight) 50-year-old man with moderate surgical stress after a Whipple procedure is starting nutrition support. Which daily target is most appropriate according to standard weight-based estimates?",
+     "choices": [
+      "About 2,100 kcal and 105 g protein",
+      "About 1,200 kcal and 40 g protein",
+      "About 3,500 kcal and 56 g protein",
+      "About 2,100 kcal and 56 g protein",
+      "About 4,200 kcal and 175 g protein"
+     ],
+     "answer": 0,
+     "explain": "Moderate stress: พลังงานราว **30 kcal/kg/วัน** และโปรตีน **1.5 g/kg/วัน** → 70 × 30 = 2,100 kcal และ 70 × 1.5 = 105 g โปรตีน (nonprotein kcal : N ราว 120:1)\n- **1,200 kcal/40 g** ต่ำเกินไป (ราว 17 kcal/kg และ 0.6 g/kg) เสี่ยงสลายกล้ามเนื้อ\n- **3,500 kcal/56 g** พลังงานสูงเกิน (50 kcal/kg = overfeeding) และโปรตีนแค่ 0.8 g/kg ของคนปกติ\n- **2,100 kcal/56 g** พลังงานถูกแต่โปรตีนเท่าคนไม่เครียด ไม่พอสำหรับหลังผ่าตัดใหญ่\n- **4,200 kcal/175 g** เป็น 60 kcal/kg ซึ่งเกินแม้แต่ burns",
+     "pearl": "Moderate stress ≈ 30 kcal/kg + 1.5 g protein/kg",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-3-4",
+     "kind": "mcq",
+     "topic": "Interpretation of albumin in critical illness",
+     "stem": "A 34-year-old previously healthy woman is on day 3 in the ICU after a laparotomy for a gunshot wound. Before injury she was well nourished with a BMI of 24. Her serum albumin is now 2.2 g/dL and CRP 180 mg/L. Which statement best explains the low albumin?",
+     "choices": [
+      "It mainly reflects the acute inflammatory response with redistribution and reduced hepatic synthesis",
+      "It indicates severe chronic protein–calorie malnutrition developing over 3 days",
+      "It proves she needs immediate parenteral nutrition",
+      "It is caused by nephrotic syndrome from the injury",
+      "It reflects laboratory error because albumin has a half-life of only 2 days"
+     ],
+     "answer": 0,
+     "explain": "Albumin เป็น **negative acute phase protein**: IL-6 สั่งตับลดการสร้าง และการรั่วของหลอดเลือด (capillary leak) ร่วมกับสารน้ำที่ให้ทำให้ albumin กระจายออกไป ผู้ป่วยรายนี้เดิมสุขภาพดี จึงสะท้อน **การอักเสบ ไม่ใช่ทุพโภชนาการ** — ต้องประเมินภาวะโภชนาการด้วยประวัติ ตรวจร่างกาย และ score (NUTRIC/NRS) ไม่ใช่จาก albumin ตัวเดียว\n- **Chronic malnutrition ใน 3 วัน** เป็นไปไม่ได้ albumin มี half-life ราว 20 วัน\n- **ต้องให้ PN ทันที** ผิด ผู้ป่วยไม่มีทุพโภชนาการเดิม และควรลอง enteral nutrition ก่อน\n- **Nephrotic syndrome** ไม่มีหลักฐาน\n- **Half-life 2 วัน** คือ prealbumin ไม่ใช่ albumin",
+     "pearl": "Albumin ต่ำใน ICU = inflammation marker มากกว่า nutrition marker",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-01-4",
+   "title": "Enteral vs parenteral nutrition, feeding access และ refeeding syndrome",
+   "summary": "เมื่อไรควรให้อาหารทางลำไส้หรือทางหลอดเลือดดำ เลือกสายให้อาหารแบบไหน และจะป้องกันภาวะแทรกซ้อน โดยเฉพาะ refeeding syndrome ได้อย่างไร",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 2 — Enteral nutrition, access, parenteral nutrition, complications · Ch 3 — Refeeding syndrome",
+   "md": "### Enteral ก่อนเสมอ ถ้าลำไส้ใช้ได้\n\"If the gut works, use it\" — **enteral nutrition (EN)** ดีกว่า parenteral (PN) เพราะ\n- คงสภาพเยื่อบุลำไส้ (villi), IgA, gut-associated lymphoid tissue ป้องกัน **mucosal atrophy** และ bacterial translocation\n- ติดเชื้อน้อยกว่า ราคาถูกกว่า ไม่มีความเสี่ยงจากสายสวนหลอดเลือดดำ (แต่อัตราตายโดยรวมไม่ต่างชัด)\n- เริ่ม **early EN ภายใน 24–48 ชม.** ในผู้ป่วยวิกฤตเมื่อ resuscitation เพียงพอ (ปัสสาวะออกดี) — ไม่ต้องรอ bowel sound หรือผายลม\n- ไม่ต้องงดอาหารหลังต่อลำไส้ (early feeding ไม่เพิ่ม anastomotic leak) และใช้ได้ใน low-output fistula (น้อยกว่า 500 mL/วัน)\n- **ข้อห้าม/ระวัง**: ช็อกที่ยังต้องใช้ vasopressor ขนาดสูง (เสี่ยง **bowel ischemia/necrosis** โดยเฉพาะ jejunal feeding), bowel obstruction, ileus รุนแรง, high-output fistula, GI bleeding รุนแรง\n- เป้า: ไม่ต้องให้เต็มตั้งแต่วันแรก ค่อยเพิ่มให้ถึงมากกว่า 80% ของเป้าภายใน 3–4 วัน · ให้แบบ **continuous** ในผู้ป่วยวิกฤต\n\n### เลือก access ให้เหมาะ\n\n| Access | ใช้เมื่อ | ข้อควรระวัง |\n|---|---|---|\n| **Nasogastric tube** | ระยะสั้น (ไม่กี่สัปดาห์) สติดี มี gag reflex | สำลัก, เลื่อนหลุด · **ต้องยืนยันตำแหน่งด้วย x-ray** (ฟังลมไม่แม่น) |\n| **Nasoduodenal/nasojejunal** | gastroparesis, gastric residual สูง, เสี่ยงสำลัก | ใส่ยาก มักต้อง fluoroscopy/endoscopy |\n| **PEG** | ต้องให้อาหารนานกว่า 4–6 สัปดาห์ (เช่น stroke, มะเร็งศีรษะ-คอ) | ต้องส่องกล้องผ่านได้ · site leak/infection |\n| **Surgical gastrostomy/jejunostomy** | ทำร่วมขณะผ่าตัดใหญ่ (esophagectomy, Whipple) หรือส่องกล้องผ่านไม่ได้ | ต้องดมยา · jejunostomy ให้อาหารแบบ continuous เท่านั้น |\n\nGastric residual ตั้งแต่ **200 mL ใน 4–6 ชม.** หรือท้องอืด → ลดอัตรา/หยุดชั่วคราว แล้วพิจารณา post-pyloric feeding\n\n### ภาวะแทรกซ้อนของ enteral nutrition\n- **Aspiration pneumonia**: ยกหัวเตียง 30–45°, post-pyloric feeding ในรายเสี่ยง\n- **Diarrhea**: hyperosmolar formula, ยา (sorbitol, antibiotics), **C. difficile** — ตรวจหาสาเหตุก่อนหยุดอาหาร, fiber ช่วยได้\n- ท้องอืด ปวดเกร็ง → หยุดชั่วคราวแล้วเริ่มใหม่ช้าลง\n- **Pneumatosis intestinalis/small-bowel necrosis** (พบน้อยแต่อันตราย): jejunal feeding ในผู้ป่วยช็อก/ใช้ vasopressor\n- Tube: อุดตัน, เลื่อนหลุด, ใส่ผิดเข้าหลอดลม\n- Formula: polymeric มาตรฐาน 1–2 kcal/mL (ต้องการราว 1,500–1,800 mL/วัน) · calorie-dense สำหรับจำกัดน้ำ · elemental สำหรับ malabsorption · renal formula (K, PO₄, Mg ต่ำ)\n\n### Parenteral nutrition: ใช้เมื่อไรและใช้อย่างไร\n- **ข้อบ่งชี้**: ลำไส้ใช้ไม่ได้ (obstruction, short bowel, high-output fistula, ischemia, severe ileus) ในผู้ป่วย **high nutritional risk** · หรือเสริมเมื่อ EN ได้ไม่ถึง 60% ของเป้าหลัง 1 สัปดาห์ · ผู้ป่วย low risk ไม่ได้ประโยชน์จาก PN ในสัปดาห์แรก\n- **TPN (central)**: dextrose 15–25% + amino acids 3–5% + lipid emulsion → ต้องเข้า **central vein** (ปลายสายอยู่ SVC) เพราะ hyperosmolar\n- **PPN (peripheral)**: dextrose 5–10% ใช้ระยะสั้น (น้อยกว่า 2 สัปดาห์) ไม่พอสำหรับคนขาดอาหารรุนแรง\n- เติม vitamins (vitamin K ไม่อยู่ในสูตรมาตรฐาน ให้แยกรายสัปดาห์), trace elements · คุมน้ำตาล 140–180 mg/dL\n- ภาวะขาดที่ควรรู้: **essential fatty acid deficiency** (ผื่นแห้งเป็นขุย ผมร่วง — ป้องกันด้วย lipid 10–15% ของพลังงาน), **zinc** (ผื่นแบบ eczema ตามซอกพับ), **copper** (microcytic anemia), **chromium** (glucose intolerance)\n\n| ภาวะแทรกซ้อนของ PN | สิ่งที่ต้องจำ |\n|---|---|\n| **Catheter-related bloodstream infection** | สัญญาณแรกอาจเป็น **glucose intolerance ใหม่** ± ไข้ · femoral เสี่ยงสุด subclavian น้อยสุด |\n| Mechanical | pneumothorax, hemothorax, air embolism, arrhythmia → ใช้ **ultrasound guidance** |\n| Metabolic | hyperglycemia, hypokalemia (K เข้าเซลล์ตามกลูโคส — เช็ก K ก่อนให้ insulin) |\n| Hepatobiliary | steatosis, **cholestasis, gallstones** (ถุงน้ำดีไม่บีบตัว) |\n| Gut | mucosal atrophy → ให้ EN ปริมาณน้อย (trophic) ร่วมด้วยถ้าทำได้ |\n\n### Refeeding syndrome\nผู้ป่วยขาดอาหารรุนแรง (อดนาน, **สุราเรื้อรัง**, anorexia nervosa, มะเร็งหลอดอาหาร/กระเพาะอุดตัน, น้ำหนักลดมากหลังผ่าตัดลดน้ำหนัก) เมื่อได้ **คาร์โบไฮเดรต** กะทันหัน → insulin หลั่ง → เซลล์ดึง **phosphate, K, Mg** (และ Ca) เข้าเซลล์ + เก็บ Na/น้ำ\n- **Hypophosphatemia** เป็นจุดเด่น → ATP และ 2,3-DPG ต่ำ → กล้ามเนื้ออ่อนแรง **หายใจล้มเหลว**, หัวใจล้มเหลว/arrhythmia, สับสน ชัก, hemolysis\n- **Thiamine** ถูกใช้หมด → Wernicke encephalopathy, lactic acidosis\n- เกิดในไม่กี่วันแรก (ทั้ง EN และ PN)\n\nการป้องกัน (หลักการตาม Schwartz และแนวทาง NICE/ASPEN):\n1. ระบุผู้ป่วยเสี่ยงก่อนเริ่มอาหาร\n2. แก้ electrolyte และสารน้ำก่อน\n3. ให้ **thiamine ก่อนเริ่มอาหาร** (และให้ต่อเนื่องหลายวัน)\n4. เริ่มพลังงาน **ต่ำ** (ราว 10–20 kcal/kg/วัน ในรายเสี่ยงสูงอาจต่ำกว่า) แล้วค่อยเพิ่มตลอดสัปดาห์แรก\n5. ตรวจ PO₄, K, Mg, glucose ทุกวันช่วงแรก ติดตาม vital signs และ fluid balance\n",
+   "pearls": [
+    "Gut works → use it: EN ลดการติดเชื้อและคงสภาพเยื่อบุลำไส้",
+    "Early EN ภายใน 24–48 ชม. หลัง resuscitate ได้ ไม่ต้องรอ bowel sound/flatus",
+    "NG feeding tube ต้องยืนยันด้วย x-ray · ให้อาหารนานกว่า 4–6 สัปดาห์ → gastrostomy",
+    "PN ใช้เมื่อลำไส้ใช้ไม่ได้ในผู้ป่วย high risk หรือ EN ได้น้อยกว่า 60% หลัง 1 สัปดาห์",
+    "ผู้ป่วยบน TPN ที่จู่ ๆ น้ำตาลคุมไม่อยู่ → นึกถึง catheter sepsis",
+    "Refeeding: insulin ↑ → PO₄, K, Mg เข้าเซลล์ · hypophosphatemia → หายใจล้มเหลว หัวใจล้มเหลว",
+    "ป้องกัน refeeding: แก้เกลือแร่ + thiamine ก่อน แล้วเริ่มพลังงานต่ำค่อยเพิ่มในสัปดาห์แรก"
+   ],
+   "mnem": [
+    {
+     "name": "Refeeding: 'P-K-Mg + B1'",
+     "what": "สิ่งที่ต้องเช็กและให้ก่อนเริ่มอาหารในผู้ป่วยขาดอาหาร",
+     "lines": [
+      [
+       "P",
+       "Phosphate — ตัวที่ตกมากและอันตรายที่สุด"
+      ],
+      [
+       "K",
+       "Potassium — arrhythmia"
+      ],
+      [
+       "Mg",
+       "Magnesium — arrhythmia, ชัก"
+      ],
+      [
+       "B1",
+       "Thiamine ก่อนให้กลูโคส — กัน Wernicke"
+      ]
+     ],
+     "note": "Start low, go slow ในสัปดาห์แรก"
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-01-4-1",
+     "kind": "mcq",
+     "topic": "Refeeding syndrome",
+     "stem": "A 56-year-old man with chronic alcohol use and an obstructing esophageal carcinoma has lost 18% of his body weight over 3 months. A nasojejunal tube is placed and full-strength feeding at 30 kcal/kg/day is started. On day 3 he becomes confused and weak, with respiratory rate 32/min. Serum phosphate is 0.9 mg/dL, K 2.9 mmol/L and Mg 1.2 mg/dL. Which mechanism best explains these findings?",
+     "choices": [
+      "Carbohydrate-stimulated insulin release driving phosphate, potassium and magnesium into cells",
+      "Excess enteral sodium causing dilutional hypophosphatemia",
+      "Aspiration of feeds causing chemical pneumonitis",
+      "Tumor lysis syndrome from rapid tumor necrosis",
+      "Diarrhea from hyperosmolar formula causing gastrointestinal phosphate loss"
+     ],
+     "answer": 0,
+     "explain": "นี่คือ **refeeding syndrome** ในผู้ป่วยเสี่ยงสูง (สุราเรื้อรัง น้ำหนักลดมาก กินไม่ได้นาน) ที่เริ่มอาหารเต็มที่ทันที คาร์โบไฮเดรตกระตุ้น **insulin** → เซลล์ดึง **phosphate, K, Mg** เข้าไปใช้สร้าง ATP และ glycogen → hypophosphatemia ทำให้ ATP/2,3-DPG ต่ำ กล้ามเนื้อหายใจอ่อนแรง สับสน หัวใจล้มเหลว · ควรลดอัตราอาหาร ให้ phosphate, K, Mg และ thiamine ทดแทน\n- **Dilution จาก sodium** ไม่ทำให้ phosphate ต่ำขนาดนี้\n- **Aspiration** อธิบายอาการหายใจได้ แต่ไม่อธิบาย electrolyte ที่ตกทั้งสามตัว\n- **Tumor lysis** ทำให้ phosphate และ K **สูง** ไม่ใช่ต่ำ\n- **Diarrhea** อาจทำให้ K ต่ำได้ แต่ phosphate ต่ำรุนแรงในวันที่ 3 ของการเริ่มอาหารเป็นลักษณะของ refeeding",
+     "pearl": "ขาดอาหารรุนแรง + เริ่มอาหารเร็ว → PO₄/K/Mg ตก = refeeding",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-4-2",
+     "kind": "mcq",
+     "topic": "Choice of enteral access",
+     "stem": "A 74-year-old woman had a large left middle cerebral artery stroke 2 weeks ago. She is alert but has severe dysphagia with repeated aspiration on videofluoroscopy, and the neurologist expects swallowing impairment to last many months. Her gastrointestinal tract is normal. What is the most appropriate route for long-term nutrition?",
+     "choices": [
+      "Percutaneous endoscopic gastrostomy",
+      "Total parenteral nutrition via a tunneled central line",
+      "Long-term nasogastric tube feeding",
+      "Peripheral parenteral nutrition",
+      "Surgical feeding jejunostomy via laparotomy"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมีลำไส้ปกติ จึงควรใช้ **enteral route** และคาดว่าต้องให้อาหารนานเกิน 4–6 สัปดาห์ → **PEG** เหมาะที่สุด: ทำผ่านกล้อง ไม่ต้องดมยาสลบ สบายกว่าสายทางจมูก ใช้ได้นาน 12–24 เดือนก่อนเปลี่ยน\n- **TPN** ไม่จำเป็นเมื่อลำไส้ใช้ได้ และมีความเสี่ยงติดเชื้อจากสาย/ภาวะแทรกซ้อนทางตับ\n- **NG tube ระยะยาว** ระคายจมูก เลื่อนหลุดบ่อย เหมาะกับระยะสั้นเท่านั้น\n- **PPN** ใช้ได้ไม่เกิน 2 สัปดาห์และให้พลังงานไม่พอ\n- **Surgical jejunostomy** รุกล้ำกว่า ใช้เมื่อส่องกล้องทำ PEG ไม่ได้หรือผ่าตัดช่องท้องอยู่แล้ว",
+     "pearl": "ลำไส้ดี + ต้องให้อาหารนานกว่า 4–6 สัปดาห์ → PEG",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-4-3",
+     "kind": "mcq",
+     "topic": "TPN complication — catheter sepsis",
+     "stem": "A 48-year-old woman with short-bowel syndrome has received TPN through a subclavian central venous catheter for 3 weeks with stable glucose. Today her glucose rises to 320 mg/dL on the same infusion, and she has a temperature of 38.7°C. Examination shows no wound, chest or urinary source. What is the most likely cause?",
+     "choices": [
+      "Central line–associated bloodstream infection",
+      "Essential fatty acid deficiency",
+      "Development of type 1 diabetes mellitus",
+      "Chromium deficiency",
+      "Refeeding syndrome"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยที่ได้ TPN และเคยคุมน้ำตาลได้ดี แล้วเกิด **glucose intolerance ขึ้นใหม่กะทันหัน** (± ไข้) เป็นสัญญาณแรกที่คลาสสิกของ **catheter-related bloodstream infection** — sepsis ทำให้ insulin resistance ต้องเพาะเชื้อจากเลือดและสาย และถอดสายถ้าเป็นแหล่งติดเชื้อ\n- **Essential fatty acid deficiency** ให้ผื่นแห้งเป็นขุยและผมร่วง ไม่ทำให้ไข้และน้ำตาลพุ่ง\n- **Type 1 DM** ใหม่ในวัยนี้แบบกะทันหันพร้อมไข้ไม่น่าเป็นไปได้เทียบกับ CLABSI\n- **Chromium deficiency** ทำให้ glucose intolerance แต่ค่อยเป็นค่อยไปหลัง TPN นานมาก และไม่ทำให้ไข้\n- **Refeeding** เกิดในวันแรก ๆ ของการเริ่มอาหาร ไม่ใช่สัปดาห์ที่ 3",
+     "pearl": "TPN + น้ำตาลคุมไม่อยู่ขึ้นมาใหม่ = คิดถึง line sepsis ก่อน",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N12-01-4-4",
+     "kind": "mcq",
+     "topic": "Timing of enteral feeding after surgery",
+     "stem": "A 63-year-old man is on postoperative day 1 after a right hemicolectomy with primary ileocolic anastomosis for colon cancer. He is hemodynamically stable, passing urine 60 mL/h, but has not yet passed flatus and bowel sounds are hypoactive. He is not malnourished. What is the most appropriate nutritional plan?",
+     "choices": [
+      "Start oral/enteral feeding early as tolerated without waiting for flatus",
+      "Keep nil per os until bowel sounds return and flatus is passed",
+      "Start total parenteral nutrition immediately",
+      "Keep nil per os for 7 days to protect the anastomosis",
+      "Insert a nasogastric tube for routine decompression and keep nil per os"
+     ],
+     "answer": 0,
+     "explain": "หลักฐานปัจจุบันสนับสนุน **early enteral/oral feeding** หลังผ่าตัดลำไส้ (ภายใน 24 ชม.) เมื่อ hemodynamics คงที่ — ไม่เพิ่ม anastomotic leak และลดภาวะแทรกซ้อน การมี bowel sound หรือผายลม **ไม่ใช่ข้อบังคับ** ก่อนเริ่มอาหาร (เป็นหลักของ ERAS ด้วย)\n- **รอ flatus** เป็นแนวปฏิบัติเก่าที่ทำให้งดอาหารนานโดยไม่จำเป็น\n- **TPN** ไม่มีข้อบ่งชี้ ผู้ป่วยไม่ขาดอาหารและลำไส้ใช้ได้\n- **NPO 7 วัน** ไม่ได้ปกป้อง anastomosis และเพิ่ม catabolism\n- **Routine NG decompression** ไม่ช่วยและเพิ่มภาวะแทรกซ้อนทางปอด",
+     "pearl": "หลังต่อลำไส้ ให้กินเร็วได้ ไม่ต้องรอผายลม",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-01-MEQ1",
+   "part": "MEQ",
+   "topic": "Malnourished esophageal cancer patient — nutrition assessment, route, requirements and refeeding syndrome",
+   "vignette": "ชายไทยอายุ 58 ปี อาชีพชาวนา ดื่มสุราขาววันละครึ่งขวดมา 20 ปี กลืนลำบากมากขึ้นเรื่อย ๆ 3 เดือน ปัจจุบันกลืนได้แต่น้ำ น้ำหนักลดจาก 60 เหลือ 49 kg ส่องกล้องพบ **squamous cell carcinoma ที่หลอดอาหารส่วนกลาง** อุดตันเกือบทั้งหมด กล้องผ่านไม่ได้ รพ.ชุมชนส่งต่อมา รพ.ศูนย์ เพื่อเตรียมให้ neoadjuvant chemoradiation และผ่าตัด\n\nPE: BT 36.8°C, BP 104/66 mmHg, PR 96/min · ผอม ขมับและกล้ามเนื้อไหล่ลีบ ไม่บวม\n\n| Lab | ค่า |\n|---|---|\n| Albumin | 2.8 g/dL |\n| Na / K | 133 / 3.2 mmol/L |\n| Phosphate | 2.6 mg/dL |\n| Mg | 1.6 mg/dL |\n| Glucose | 78 mg/dL |",
+   "questions": [
+    {
+     "q": "1. จงประเมินภาวะโภชนาการของผู้ป่วยรายนี้ บอกข้อมูลที่สนับสนุน และอธิบายว่าทำไมไม่ควรใช้ albumin ค่าเดียวตัดสิน",
+     "a": "**Severe protein–energy malnutrition** · น้ำหนักลด 11/60 = **18% ใน 3 เดือน** (มากกว่า 10% ใน 6 เดือน), กินได้น้อยมาก, กล้ามเนื้อขมับ/ไหล่ลีบ (muscle wasting), สุราเรื้อรัง (ขาด thiamine, Mg), electrolyte ต่ำ\n- ใช้ score เช่น **NRS 2002** (คะแนนสูง) ร่วมด้วย\n- albumin เป็น **negative acute phase protein** และ half-life ยาว ~20 วัน ค่าเปลี่ยนตามการอักเสบ ภาวะน้ำ และโรคตับ — ใช้ประกอบเท่านั้น\n- เกณฑ์ให้คะแนน: ระบุ severe malnutrition (1) · % weight loss ถูกต้อง (1) · ข้อจำกัดของ albumin (1)"
+    },
+    {
+     "q": "2. ทีมวางแผนให้โภชนบำบัดก่อนผ่าตัด 2–3 สัปดาห์ จงเลือกเส้นทางให้อาหารที่เหมาะสมพร้อมเหตุผล",
+     "a": "ลำไส้ใช้ได้ปกติ จึงเลือก **enteral nutrition** ก่อน PN\n- หลอดอาหารอุดตัน ใส่ NG/PEG ผ่านกล้องไม่ได้ → เลือก **feeding jejunostomy** (laparoscopic/open) หรือ **surgical/radiologic gastrostomy** — ศัลยแพทย์มักเลี่ยงการใช้กระเพาะเพราะต้องเก็บไว้เป็น **gastric conduit** ในการผ่าตัด esophagectomy จึงนิยม jejunostomy\n- หากใส่ stent/ขยายหลอดอาหารแล้วสาย nasoenteric ผ่านได้ก็เป็นทางเลือกชั่วคราว\n- **PN** สงวนไว้เมื่อทำ enteral ไม่ได้หรือได้ไม่ถึงเป้า\n- เกณฑ์ให้คะแนน: เลือก EN และเหตุผล (1) · ระบุ access ที่เป็นไปได้จริง (1) · เหตุผลเรื่องเก็บกระเพาะ (1)"
+    },
+    {
+     "q": "3. คำนวณเป้าหมายพลังงานและโปรตีนต่อวัน และบอกวิธีติดตามว่าได้รับพอ",
+     "a": "ใช้น้ำหนักปัจจุบัน 49 kg (ไม่อ้วน ไม่บวม)\n- พลังงานเป้าหมายระยะยาว **25–30 kcal/kg/วัน** ≈ 1,225–1,470 kcal (ในระยะฟื้นตัวอาจเพิ่มได้) แต่ **เริ่มต่ำกว่านี้** เพราะเสี่ยง refeeding\n- โปรตีน **1.2–1.5 g/kg/วัน** ≈ 60–75 g\n- ติดตาม: น้ำหนักรายสัปดาห์, intake จริง, **nitrogen balance** = (โปรตีน/6.25) − (UUN 24 ชม. + 4), prealbumin (half-life ~2 วัน) ร่วมกับ CRP, electrolyte\n- เกณฑ์ให้คะแนน: ตัวเลขพลังงาน (1) · โปรตีน (1) · วิธีติดตามอย่างน้อย 2 อย่าง (1)"
+    },
+    {
+     "q": "4. วันที่ 3 หลังเริ่มให้อาหารเต็มที่ ผู้ป่วยสับสน หายใจเร็ว 30/min ขาบวม phosphate 0.8 mg/dL, K 2.7, Mg 1.0 จงวินิจฉัย อธิบายกลไก และบอกการรักษา/การป้องกัน",
+     "a": "**Refeeding syndrome**\n- กลไก: คาร์โบไฮเดรต → **insulin** หลั่ง → เซลล์ดึง **PO₄, K, Mg** เข้าเซลล์ (ใช้สร้าง ATP/glycogen) + insulin ทำให้ไตเก็บ Na/น้ำ → บวม หัวใจล้มเหลว · **hypophosphatemia** → ATP, 2,3-DPG ต่ำ → กล้ามเนื้อหายใจอ่อนแรง สับสน ชัก hemolysis · thiamine ถูกใช้หมด → Wernicke\n- รักษา: **ลดอัตราอาหาร** (ไม่ต้องหยุดถาวร), ให้ **IV phosphate, KCl, MgSO₄**, **thiamine** IV, monitor EKG, electrolyte วันละ 1–2 ครั้ง, จำกัด Na/น้ำ, ดูแลการหายใจ\n- ป้องกัน: ระบุกลุ่มเสี่ยง, แก้ electrolyte ก่อน, ให้ thiamine ก่อนเริ่มอาหาร, เริ่มพลังงานต่ำ (ราว 10–20 kcal/kg/วัน) แล้วเพิ่มช้า ๆ ตลอดสัปดาห์แรก\n- เกณฑ์ให้คะแนน: วินิจฉัย (1) · กลไก insulin–intracellular shift (1) · การรักษาครบ (2) · การป้องกัน (1)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 2",
+    "Schwartz 11e Ch 3 — Refeeding syndrome"
+   ]
+  }
+ ],
+ "osce": []
+}

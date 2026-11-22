@@ -1,0 +1,480 @@
+{
+ "lec": "06",
+ "date": "Schwartz Ch 10, 16, 17, 36",
+ "title": "Surgical oncology: breast, melanoma & sarcoma",
+ "subtitle": "ผ่าตัดมะเร็งให้ 'เล็กลงแต่แม่นขึ้น' — เมื่อไรละ ALND/CLND ได้ตามหลักฐาน ตัด margin เท่าไร และใช้ systemic therapy ร่วมกับการผ่าตัดอย่างไรใน breast, melanoma, sarcoma และ GIST",
+ "objectives": [
+  "เรียนจบแล้วต้องนิยาม R0/R1/R2 และอธิบายบทบาท neoadjuvant therapy และหลักการผ่าตัด oligometastasis ได้",
+  "เรียนจบแล้วต้องระบุ hereditary cancer syndromes สำคัญ (BRCA, TP53, Lynch, CDH1, RET) และการผ่าตัดป้องกันที่เหมาะสมได้",
+  "เรียนจบแล้วต้องจัดการ irAE และวางแผนเวลาผ่าตัดในผู้ป่วยที่ได้ targeted therapy (เช่น bevacizumab) ได้",
+  "เรียนจบแล้วต้องเลือก BCT/mastectomy, margin และการจัดการ axilla ตาม B-32, Z0011, AMAROS, Z1071 ได้",
+  "เรียนจบแล้วต้องกำหนด margin ของ melanoma ตาม Breslow ข้อบ่งชี้ SLNB และการจัดการ SLN positive ตาม MSLT-II ได้",
+  "เรียนจบแล้วต้องวางแผน biopsy และการรักษา extremity/retroperitoneal sarcoma และ GIST (ผ่าตัด + imatinib) ได้"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 10 Oncology, Ch 16 Skin, Ch 17 Breast, Ch 36 Soft Tissue Sarcomas",
+  "**Breast**: NSABP B-06, B-18, B-32 · ACOSOG Z0011, Z1071 · AMAROS · SSO/ASTRO margin consensus (2014, DCIS 2016) · KATHERINE, CREATE-X, KEYNOTE-522",
+  "**Melanoma**: AJCC 8th ed · NCCN Cutaneous Melanoma · MSLT-I, MSLT-II, DeCOG-SLT · SWOG S1801",
+  "**Sarcoma/GIST**: NCIC SR2 (preop vs postop RT) · STRASS · ACOSOG Z9001 · SSG XVIII/AIO",
+  "**ASCO/NCCN** management of immune-related adverse events"
+ ],
+ "sections": [
+  {
+   "id": "res-06-1",
+   "title": "หลักศัลยกรรมมะเร็ง: margin, hereditary syndromes, immunotherapy และ targeted therapy",
+   "summary": "ศัลยแพทย์ต้องรู้อะไรเรื่อง margin, กลุ่มอาการมะเร็งทางพันธุกรรมที่ต้องผ่าตัดป้องกัน และผลของ immunotherapy/targeted therapy ต่อการผ่าตัด",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 10 — Surgical management of primary tumors; Cancer genetics; Immunotherapy",
+   "md": "### เป้าหมายของการผ่าตัดมะเร็ง: margin คือหัวใจ\nการผ่าตัดเพื่อหายขาดต้องมีเงื่อนไขว่าโรคจำกัดอยู่ในอวัยวะต้นกำเนิดและ/หรือต่อมน้ำเหลืองบริเวณนั้น ผู้ที่มีโอกาส distant metastasis สูงต้อง **stage ก่อนผ่าตัด** เสมอ แนวโน้มสามสิบปีที่ผ่านมาคือผ่าตัด \"น้อยลงแต่แม่นขึ้น\" (BCT แทน radical mastectomy, wide excision แทน compartmentectomy ใน sarcoma) แต่หลักที่ไม่เปลี่ยนคือ **negative microscopic margin**\n\n| ผลการผ่าตัด | ความหมาย |\n|---|---|\n| **R0** | ไม่มีมะเร็งที่ขอบทั้งตาเปล่าและกล้องจุลทรรศน์ |\n| **R1** | ตาเปล่าหมด แต่กล้องพบมะเร็งที่ขอบ |\n| **R2** | เหลือมะเร็งที่มองเห็นด้วยตาเปล่า |\n\nเครื่องมือช่วยให้ได้ R0 ครั้งแรก: ศัลยแพทย์ **orient specimen** ด้วยไหม/คลิป, pathologist **ink margins**, ส่ง frozen section เมื่อจำเป็น — Schwartz ย้ำว่า **adjuvant therapy ไม่สามารถทดแทนการผ่าตัดที่ไม่เพียงพอ** ความกว้างของ margin ที่เหมาะสมต่างกันในแต่ละมะเร็ง (melanoma ถูกกำหนดด้วย RCT ชัดที่สุด)\n- **Neoadjuvant therapy**: ลดขนาดเพื่อผ่าตัดเล็กลง (เช่นเปลี่ยน mastectomy เป็น BCS) ประเมินการตอบสนองของ tumor biology ในตัวผู้ป่วย และรักษา micrometastasis เร็ว\n- **Oligometastasis**: ผ่าตัด metastasis ได้เมื่อ natural history ดี (เช่น colorectal liver met, sarcoma lung met ที่ disease-free interval ยาว) และควบคุม primary ได้\n\n### Hereditary cancer syndromes ที่ศัลยแพทย์ต้องรู้\n\n| Syndrome | ยีน | มะเร็งหลัก | การผ่าตัดป้องกัน/ข้อพิจารณา |\n|---|---|---|---|\n| HBOC | **BRCA1/2** | เต้านม, รังไข่, (BRCA2: ชาย, ตับอ่อน, prostate) | bilateral mastectomy ลดความเสี่ยง >90% · **RRSO** อายุ 35–40 (BRCA1) / 40–45 (BRCA2) |\n| **Li-Fraumeni** | TP53 | sarcoma, เต้านมอายุน้อย, สมอง, adrenocortical, leukemia | **เลี่ยงรังสี** ถ้าทำได้ → mastectomy มากกว่า BCS |\n| **Lynch** | MLH1, MSH2, MSH6, PMS2, EPCAM | colon (มักด้านขวา), endometrium, ovary | colon cancer → พิจารณา **total abdominal colectomy + IRA** · TAH-BSO หลังมีบุตรครบ |\n| **FAP** | APC | colon ~100%, duodenum/ampulla, desmoid | proctocolectomy/IPAA หรือ colectomy + IRA |\n| **HDGC** | **CDH1** | diffuse gastric (signet ring), lobular breast | **prophylactic total gastrectomy** (มักช่วงอายุ 18–40) |\n| Cowden | PTEN | เต้านม, thyroid (follicular), endometrium | เฝ้าระวัง/พิจารณาผ่าตัดป้องกัน |\n| **MEN2** | RET | medullary thyroid, pheo | prophylactic total thyroidectomy ตาม codon risk |\n\n> ประวัติครอบครัวที่บ่งชี้: มะเร็งอายุน้อย, หลายรุ่นต่อเนื่อง, มะเร็งสองข้าง/หลายชนิดในคนเดียว, มะเร็งที่พบน้อย (เต้านมผู้ชาย, adrenocortical, medullary thyroid) → ส่ง **genetic counseling** ก่อนตัดสินใจขอบเขตผ่าตัด\n\n### Immunotherapy พื้นฐานสำหรับศัลยแพทย์\n**Immune checkpoint inhibitors** ปลดเบรกของ T cell: anti-**CTLA-4** (ipilimumab) ทำงานช่วง priming ใน lymph node, anti-**PD-1** (nivolumab, pembrolizumab) และ anti-**PD-L1** (atezolizumab, durvalumab) ทำงานที่ tumor microenvironment ใช้แพร่หลายใน melanoma, NSCLC, RCC, TNBC และมะเร็ง **MSI-H/dMMR** ทุกอวัยวะ\n**Immune-related adverse events (irAEs)** ที่มาหาศัลยแพทย์:\n- **Colitis** (ipilimumab/ combination พบมากสุด) — ท้องเสีย ปวดท้อง อาจทะลุ: แยก C difficile/ติดเชื้อ แล้วให้ **corticosteroid** (methylprednisolone 1–2 mg/kg ในรายรุนแรง) ถ้าไม่ดีขึ้นใน ~48–72 ชม. ให้ **infliximab** หรือ vedolizumab; ผ่าตัดเมื่อทะลุ/ไม่ตอบสนอง\n- **Hypophysitis, primary adrenal insufficiency** → ต้องให้ stress-dose steroid รอบผ่าตัด · **thyroiditis** · hepatitis · pneumonitis\n- **Pseudoprogression**: ก้อนโตชั่วคราวจาก immune infiltration ไม่ได้แปลว่าล้มเหลวเสมอ\n\n### Targeted therapy และผลต่อการผ่าตัด\n\n| ยา | เป้าหมาย | ใช้ใน | ข้อควรระวังทางศัลยกรรม |\n|---|---|---|---|\n| Trastuzumab, pertuzumab, T-DM1 | **HER2** | breast, gastric | cardiotoxicity → echo ก่อน/ระหว่าง |\n| **Imatinib** | KIT, PDGFRA | GIST, CML | ใช้ neoadjuvant ลดขนาดก้อนได้ |\n| Dabrafenib + trametinib | **BRAF V600**/MEK | melanoma | ไข้ (pyrexia syndrome) |\n| **Bevacizumab** | VEGF-A | colorectal ฯลฯ | **แผลหายช้า, anastomotic leak, GI perforation, เลือดออก** — หยุดอย่างน้อย ~4–6 สัปดาห์ (≥28 วัน) ก่อน elective surgery และเริ่มใหม่หลังแผลหาย ≥28 วัน |\n| Cetuximab/panitumumab | EGFR | colorectal (RAS wild-type, ด้านซ้าย) | ผื่น acneiform |\n| Olaparib | PARP | BRCA-mutated breast/ovary/pancreas | synthetic lethality กับ HR-deficient cells |\n\nหลัก \"**predictive marker → targeted drug**\" (HER2, KIT, BRAF, RAS, MSI) ทำให้ศัลยแพทย์ต้องส่งเนื้อเยื่อเพียงพอและจัดการ specimen ให้ตรวจ molecular ได้\n",
+   "pearls": [
+    "R0 = margin ลบทางกล้อง · adjuvant ไม่ชดเชย margin ที่ไม่พอ",
+    "Li-Fraumeni (TP53): เลี่ยงรังสี → mastectomy มากกว่า BCS",
+    "CDH1 carrier → prophylactic total gastrectomy",
+    "Lynch + colon cancer → พิจารณา total abdominal colectomy + IRA",
+    "Checkpoint colitis: steroid ก่อน · ไม่ตอบสนอง → infliximab · ทะลุ → ผ่าตัด",
+    "Bevacizumab: หยุด ≥4–6 สัปดาห์ก่อน elective surgery (เสี่ยง leak/แผลแยก)",
+    "ผู้ป่วยได้ checkpoint inhibitor แล้วความดันตกหลังผ่าตัด → คิดถึง adrenal insufficiency"
+   ],
+   "items": [
+    {
+     "id": "RES-06-1-1",
+     "kind": "mcq",
+     "topic": "Li-Fraumeni and breast surgery choice",
+     "stem": "A 29-year-old woman has a 1.8-cm invasive ductal carcinoma of the left breast, clinically node-negative. Her mother had breast cancer at 34, a brother died of osteosarcoma at 16, and a maternal cousin had adrenocortical carcinoma. Germline testing shows a pathogenic TP53 variant. Which local therapy is most appropriate to recommend?",
+     "choices": [
+      "Mastectomy with sentinel lymph node biopsy, avoiding radiotherapy if possible",
+      "Lumpectomy with sentinel lymph node biopsy and whole-breast irradiation",
+      "Lumpectomy with accelerated partial-breast irradiation",
+      "Lumpectomy alone followed by endocrine therapy",
+      "Neoadjuvant chemoradiation followed by lumpectomy"
+     ],
+     "answer": 0,
+     "explain": "ประวัติครอบครัว (เต้านมอายุน้อย, sarcoma ในเด็ก, adrenocortical carcinoma) + TP53 = **Li-Fraumeni syndrome** เซลล์ของผู้ป่วยไวต่อความเสียหายจากรังสีและเสี่ยง **radiation-induced second malignancy** (เช่น angiosarcoma/sarcoma ในบริเวณฉายรังสี) จึงควรเลือก **mastectomy** เพื่อหลีกเลี่ยงการฉายรังสีเต้านม (และพิจารณา contralateral risk reduction)\n- **Lumpectomy + WBI / APBI**: BCS ต้องพึ่งรังสีเสมอ ซึ่งควรหลีกเลี่ยงใน TP53 carrier\n- **Lumpectomy อย่างเดียว**: local recurrence สูง และผู้ป่วยอายุน้อยไม่เข้าเกณฑ์ละเว้นรังสี\n- **Neoadjuvant chemoradiation**: ไม่ใช่มาตรฐานของมะเร็งเต้านม และใช้รังสีซึ่งควรเลี่ยง",
+     "pearl": "TP53 carrier: เลือก mastectomy เพื่อเลี่ยงรังสี",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10",
+      "Schwartz's Principles of Surgery 11e, Ch 17",
+      "NCCN Genetic/Familial High-Risk Assessment: Breast, Ovarian, Pancreatic, and Prostate"
+     ]
+    },
+    {
+     "id": "RES-06-1-2",
+     "kind": "mcq",
+     "topic": "CDH1 — prophylactic gastrectomy",
+     "stem": "A healthy 26-year-old man is referred after his sister died of diffuse (signet-ring cell) gastric cancer at age 31. Genetic testing reveals a pathogenic germline CDH1 variant. Upper endoscopy with 30 random biopsies shows no carcinoma. Which recommendation is most appropriate?",
+     "choices": [
+      "Prophylactic total gastrectomy with Roux-en-Y reconstruction",
+      "Annual endoscopy with random biopsies as the definitive strategy, without surgery",
+      "Prophylactic distal (subtotal) gastrectomy",
+      "Helicobacter pylori testing and eradication only",
+      "Endoscopic submucosal dissection of any visible pale lesion when found"
+     ],
+     "answer": 0,
+     "explain": "**Hereditary diffuse gastric cancer (CDH1)** มีความเสี่ยงมะเร็งกระเพาะชนิด diffuse ตลอดชีวิตสูง (Schwartz: ~70% ในชาย, ~56% ในหญิง; median age ตอนวินิจฉัย 38 ปี) โรคเริ่มเป็น **multifocal intramucosal signet-ring foci** ใต้เยื่อบุที่ปกติ ซึ่ง endoscopy มักมองไม่เห็นแม้ biopsy จำนวนมาก แนวทางจึงแนะนำ **prophylactic total gastrectomy** (โดยทั่วไปช่วงอายุราว 20–30 ปีหรือก่อนอายุที่ญาติเป็น) ตรวจให้แน่ใจว่าตัดถึงเยื่อบุหลอดอาหารและ duodenum\n- **Endoscopy ทุกปีเป็นทางหลัก**: ใช้เป็นทางเลือกเฉพาะผู้ที่ปฏิเสธ/เลื่อนผ่าตัด เพราะ sensitivity ต่ำ\n- **Distal gastrectomy**: foci กระจายทั้งกระเพาะรวม cardia/fundus ต้อง total\n- **H pylori eradication**: ไม่ลดความเสี่ยงที่มาจาก germline CDH1\n- **ESD**: โรคเป็น multifocal และมองไม่เห็น ไม่ใช่โรคที่ลบออกเป็นจุดได้",
+     "pearl": "CDH1 = prophylactic total gastrectomy (ไม่ใช่ distal) · พบ lobular breast cancer ร่วมด้วย",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10",
+      "Schwartz's Principles of Surgery 11e, Ch 26",
+      "International Gastric Cancer Linkage Consortium HDGC guideline (2020)"
+     ]
+    },
+    {
+     "id": "RES-06-1-3",
+     "kind": "mcq",
+     "topic": "Checkpoint inhibitor colitis",
+     "stem": "A 57-year-old man with stage IV melanoma on combination ipilimumab and nivolumab presents with 9 bloody stools daily and cramping for 4 days. HR 104/min, BP 118/70 mmHg, abdomen tender without peritonitis. Stool studies, including C difficile, are negative. CT shows diffuse colonic wall thickening without free air or pneumatosis. What is the most appropriate next step?",
+     "choices": [
+      "Hold immunotherapy and start IV methylprednisolone 1–2 mg/kg/day",
+      "Urgent subtotal colectomy with end ileostomy",
+      "Continue immunotherapy and start loperamide",
+      "Start oral vancomycin empirically",
+      "Start infliximab alone without corticosteroids"
+     ],
+     "answer": 0,
+     "explain": "นี่คือ **immune-related colitis grade 3** (≥7 ครั้ง/วันเหนือ baseline) ที่ไม่มี perforation การรักษาแรกคือ **หยุด checkpoint inhibitor** และให้ **IV corticosteroid 1–2 mg/kg/day** ถ้าไม่ดีขึ้นภายในประมาณ 48–72 ชม. จึงเพิ่ม **infliximab** (หรือ vedolizumab)\n- **Subtotal colectomy**: สงวนไว้สำหรับ perforation, toxic megacolon, เลือดออกไม่หยุด หรือไม่ตอบสนองต่อ steroid + biologic\n- **ให้ยาต่อ + loperamide**: เหมาะกับ grade 1 เท่านั้น ใน grade 3 เสี่ยงทะลุ\n- **Oral vancomycin**: ผล C difficile เป็นลบ ไม่มีเหตุผล\n- **Infliximab อย่างเดียว**: เป็น second-line หลัง steroid ไม่ใช่ทางแรก",
+     "pearl": "irAE colitis: หยุดยา + steroid → infliximab ถ้าดื้อ → ผ่าตัดเมื่อทะลุ",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10",
+      "ASCO/NCCN Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy"
+     ]
+    },
+    {
+     "id": "RES-06-1-4",
+     "kind": "mcq",
+     "topic": "Bevacizumab and elective surgery",
+     "stem": "A 62-year-old woman with rectal cancer and three resectable liver metastases has received FOLFOX plus bevacizumab, with her last bevacizumab dose 10 days ago. Restaging shows a good response and the team plans a simultaneous low anterior resection and liver resection. Regarding timing of surgery, which is most appropriate?",
+     "choices": [
+      "Schedule surgery at least 4–6 weeks after the last bevacizumab dose",
+      "Proceed within the next week to avoid tumor regrowth",
+      "Proceed now and give a dose of bevacizumab immediately after surgery",
+      "Bevacizumab has no effect on wound healing, so timing is irrelevant",
+      "Wait at least 6 months after the last dose before any operation"
+     ],
+     "answer": 0,
+     "explain": "**Bevacizumab** (anti-VEGF) half-life ยาวราว 20 วัน และรบกวน angiogenesis ที่จำเป็นต่อการหายของแผล เพิ่ม **wound dehiscence, anastomotic leak, GI perforation และเลือดออก** แนวปฏิบัติจึงเว้นอย่างน้อยประมาณ **28 วัน (มักใช้ 4–6 สัปดาห์)** ก่อน elective major surgery และเริ่มยาใหม่หลังผ่าตัดอย่างน้อย 28 วันเมื่อแผลหายดี (FOLFOX ช่วงสุดท้ายสามารถให้ต่อโดยไม่มี bevacizumab ได้)\n- **ผ่าภายในสัปดาห์**: เสี่ยง anastomotic leak สูง โดยเฉพาะ low anastomosis\n- **ให้ bevacizumab หลังผ่าตัดทันที**: เพิ่ม leak/แผลแยก\n- **ไม่มีผล**: ผิด ผลต่อแผลเป็นที่ทราบชัด\n- **รอ 6 เดือน**: นานเกินจำเป็น เสียโอกาส resection ช่วงที่ตอบสนองดี",
+     "pearl": "Bevacizumab: เว้น ≥4–6 สัปดาห์ก่อนผ่าตัด และ ≥28 วันหลังผ่าตัด",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10",
+      "Bevacizumab prescribing information (FDA label)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-06-2",
+   "title": "Breast cancer surgery: BCT, SLNB, Z0011, AMAROS และ neoadjuvant",
+   "summary": "เลือก BCT หรือ mastectomy อย่างไร margin เท่าไรพอ เมื่อไรละ ALND ได้ตาม Z0011/AMAROS และจัดการ axilla หลัง neoadjuvant อย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 17 — Breast cancer: surgical and axillary management, neoadjuvant chemotherapy",
+   "md": "### BCT vs mastectomy: หลักฐานและข้อห้าม\n**NSABP B-06** (ก้อน ≤4 cm) และ Milan trial: **lumpectomy + whole-breast irradiation (WBI)** ให้ survival เท่ากับ mastectomy ที่ 20 ปี การฉายรังสีลด ipsilateral recurrence ลงอย่างชัดเจน BCT จึงเป็นทางเลือกมาตรฐานของ stage I–II เมื่อทำได้\n\n| ข้อห้าม BCT | เหตุผล |\n|---|---|\n| **Multicentric** (หลาย quadrant) · **diffuse malignant-appearing calcifications** | ตัดให้หมดพร้อมรูปร่างดีไม่ได้ |\n| **Persistent positive margin** หลัง re-excision | ต้อง mastectomy |\n| เคยฉายรังสีที่ผนังอกมาก่อน (เช่น mantle field) | ฉายซ้ำไม่ได้ |\n| **ตั้งครรภ์** ที่ต้องฉายรังสีระหว่างตั้งครรภ์ | ผ่าตัดไตรมาส 2–3 แล้วเลื่อน RT หลังคลอดได้ |\n| **Inflammatory breast cancer** | ต้อง modified radical mastectomy หลัง neoadjuvant |\n| Relative: scleroderma/SLE active, ก้อนใหญ่เทียบเต้านม, TP53 carrier | ผลข้างเคียงรังสี/รูปร่าง |\n\n**Margin**: SSO/ASTRO 2014 สำหรับ invasive stage I–II ที่ได้ WBI ใช้ **\"no ink on tumor\"** — การกว้างกว่านั้นไม่ลด local recurrence · **DCIS ที่ได้ WBI ใช้ 2 mm** (SSO/ASTRO/ASCO 2016) เทคนิค: specimen radiograph, orient specimen, shave cavity margins, **oncoplastic** techniques สำหรับก้อนใหญ่\n**Mastectomy**: total, **skin-sparing**, **nipple-sparing** (ก้อนห่าง nipple, ไม่มี nipple involvement) + reconstruction · **PMRT** เมื่อ ≥4 nodes, T3–T4 หรือพิจารณาใน 1–3 nodes\n\n### Axillary staging: SLNB และ Z0011\nSLNB เป็นมาตรฐานของ **cN0** — **NSABP B-32** (5,611 ราย): identification 97%, **false-negative 9.7%**, SLN ลบแล้วไม่ทำ ALND ให้ DFS/OS เท่ากันแต่ morbidity น้อยกว่า ถ้าคลำ/US ได้ต่อมน้ำเหลืองแล้วพิสูจน์ด้วย FNA/core ว่าเป็นมะเร็ง → ไม่ต้อง SLNB ไปทาง neoadjuvant หรือ ALND\n**ACOSOG Z0011**: cT1–2 cN0, **1–2 positive SLN**, **BCS + WBI (tangents)**, ไม่ได้ neoadjuvant → สุ่ม ALND vs ไม่ทำต่อ: OS 91.9% vs 92.5%, DFS 82.2% vs 83.8% ที่ 6.3 ปี และยืนยันที่ 10 ปี · lymphedema ที่ 1 ปี **13% vs 2%**\n- **ไม่ใช้ Z0011** เมื่อ: mastectomy, partial-breast irradiation, ไม่ฉายรังสี, ≥3 positive SLN, gross extranodal extension, ได้ neoadjuvant\n- **IBCSG 23-01**: SLN micrometastasis (รวมผู้ป่วย mastectomy ~9%) → ละเว้น ALND ได้\n\n### AMAROS และการละเว้น SLNB\n**AMAROS** (EORTC, Lancet Oncol 2014): cT1–2 cN0 ที่ SLN positive (รวม mastectomy) สุ่ม **ALND vs axillary radiotherapy (ART)** → axillary recurrence ที่ 5 ปีต่ำมากทั้งสองแขน (0.43% vs 1.19%) ไม่ต่างด้าน DFS/OS แต่ **lymphedema ลดลงราวครึ่งหนึ่ง** ในกลุ่ม ART (ประมาณ 23% vs 11% ที่ 5 ปี) → ผู้ป่วย mastectomy ที่มี 1–2 SLN positive ใช้ **axillary/regional nodal RT แทน ALND** ได้\n**การละเว้น SLNB**: SOUND (2023) และ INSEMA (2024) แสดงว่าก้อนเล็ก (≤2 cm) ที่ US axilla ปกติ และทำ BCS + RT การไม่ทำ SLNB ไม่ด้อยกว่า · Choosing Wisely: ผู้หญิง **≥70 ปี HR+/HER2− cT1N0** ไม่ต้อง SLNB เป็นประจำ\n\n### Neoadjuvant systemic therapy (NAST)\n**ข้อบ่งชี้**: **HER2+** และ **TNBC** ที่ ≥cT2 หรือ cN+ (บางแนวทางเริ่ม cT1c), locally advanced/**inflammatory**, ต้องการ downstage เพื่อ BCS · **NSABP B-18**: neoadjuvant vs adjuvant chemotherapy ให้ survival เท่ากัน แต่ BCS ได้มากขึ้น และ **pCR ทำนายการรอด**\n- **Response-adapted adjuvant**: HER2+ ที่เหลือ invasive disease → **T-DM1** (KATHERINE) · TNBC เหลือโรค → **capecitabine** (CREATE-X) หรือ olaparib ถ้า gBRCA · TNBC stage II–III → **pembrolizumab + chemo** ก่อนและหลังผ่าตัด (KEYNOTE-522)\n- ER+ ตอบสนองต่อเคมีน้อย (pCR <10%, lobular <3%) → neoadjuvant endocrine therapy ในบางราย\n- ก่อนเริ่ม NAST ต้อง **ใส่ clip** ที่ก้อนและที่ต่อมน้ำเหลืองที่ biopsy positive\n\n### Axilla หลัง neoadjuvant\n\n| สถานการณ์ | แนวทาง |\n|---|---|\n| cN0 ก่อน NAST | SLNB หลัง NAST |\n| **cN1 → ycN0** | SLNB ได้ถ้า **dual tracer + ≥3 SLN + เอา clipped node ออก (TAD)** · Z1071 FNR 12.6% โดยรวม → 6.8% เมื่อ ≥2 SLN และ clipped node อยู่ใน SLN · TAD (MD Anderson) FNR ~2% |\n| SLN ยัง positive หลัง NAST (ypN+) | **ALND** มาตรฐาน (การใช้ RT แทนอยู่ในการศึกษา Alliance A011202) |\n| cN2–3, inflammatory | ALND |\n",
+   "pearls": [
+    "Invasive + WBI: margin = no ink on tumor · DCIS: 2 mm",
+    "Z0011: cT1–2, 1–2 SLN+, BCS + WBI, ไม่มี neoadjuvant → ไม่ต้อง ALND",
+    "Mastectomy + 1–2 SLN+ → AMAROS: axillary RT แทน ALND ได้ lymphedema ครึ่งหนึ่ง",
+    "B-32: SLNB FNR 9.7% · Z0011 lymphedema 13% vs 2%",
+    "cN1→cN0 หลัง NAST: dual tracer + ≥3 SLN + clipped node (TAD)",
+    "HER2+ residual disease → T-DM1 · TNBC residual → capecitabine/olaparib",
+    "Inflammatory breast cancer = NAST แล้ว MRM ห้าม BCS/SLNB"
+   ],
+   "items": [
+    {
+     "id": "RES-06-2-1",
+     "kind": "mcq",
+     "topic": "ACOSOG Z0011 application",
+     "stem": "A 56-year-old woman with a 2.2-cm ER-positive, HER2-negative invasive ductal carcinoma and a clinically and sonographically normal axilla undergoes lumpectomy and sentinel lymph node biopsy. Margins are negative. Two of three sentinel nodes contain macrometastases (largest 5 mm) without gross extranodal extension. Whole-breast irradiation and endocrine therapy are planned. What is the most appropriate axillary management?",
+     "choices": [
+      "No further axillary surgery",
+      "Completion axillary lymph node dissection",
+      "Conversion to mastectomy with axillary dissection",
+      "Repeat sentinel lymph node mapping with dual tracer",
+      "PET-CT before deciding on axillary dissection"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยตรงเกณฑ์ **ACOSOG Z0011** ทุกข้อ: cT1–2, cN0, **1–2 positive SLN**, ทำ **BCS + WBI** และไม่ได้ neoadjuvant ผลการศึกษาไม่พบความต่างของ OS (91.9% vs 92.5%) หรือ locoregional recurrence เมื่อไม่ทำ ALND ขณะที่ ALND เพิ่ม lymphedema (13% vs 2%) จึง **ไม่ต้องผ่าตัด axilla เพิ่ม**\n- **Completion ALND**: เพิ่ม morbidity โดยไม่เพิ่ม survival ในกลุ่มนี้\n- **เปลี่ยนเป็น mastectomy**: margin ลบแล้ว และการทำ mastectomy จะทำให้ผู้ป่วยออกนอกเกณฑ์ Z0011\n- **Map ใหม่**: ได้ SLN ครบแล้ว ไม่มีเหตุผล\n- **PET-CT**: ไม่ใช่ staging มาตรฐานใน stage II ที่ไม่มีอาการ",
+     "pearl": "Z0011 = BCS + WBI + 1–2 SLN+ + cN0 → ละ ALND",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17",
+      "Giuliano AE et al. ACOSOG Z0011. JAMA 2011 and 10-year follow-up JAMA 2017"
+     ]
+    },
+    {
+     "id": "RES-06-2-2",
+     "kind": "mcq",
+     "topic": "AMAROS — mastectomy with positive SLN",
+     "stem": "A 48-year-old woman with multicentric 2.5-cm invasive lobular carcinoma, clinically node-negative, undergoes total mastectomy with sentinel lymph node biopsy. One of two sentinel nodes contains a 4-mm metastasis. She does not want axillary dissection because she is a professional pianist. Which axillary option is supported by randomized evidence as an alternative to ALND?",
+     "choices": [
+      "Axillary radiotherapy",
+      "No further axillary treatment, based on ACOSOG Z0011",
+      "Observation with axillary ultrasound every 6 months",
+      "Low-dose axillary brachytherapy",
+      "Excision of additional palpable nodes only at re-operation"
+     ],
+     "answer": 0,
+     "explain": "**AMAROS** สุ่มผู้ป่วย cT1–2 cN0 ที่ SLN positive (รวมผู้ป่วย **mastectomy**) ระหว่าง ALND กับ **axillary radiotherapy** — axillary recurrence ต่ำมากทั้งสองแขน DFS/OS ไม่ต่างกัน แต่ **lymphedema น้อยกว่าราวครึ่งหนึ่ง** ในกลุ่มรังสี จึงเป็นทางเลือกที่เหมาะกับผู้ป่วยที่ต้องการรักษาการใช้งานแขน\n- **ไม่รักษาต่อตาม Z0011**: Z0011 ไม่รวมผู้ป่วย mastectomy (ไม่มี tangential WBI ที่คลุม low axilla บางส่วน) จึงนำมาใช้ไม่ได้\n- **ตรวจ US เฝ้าระวัง**: ไม่ใช่การรักษามาตรฐานสำหรับ macrometastasis หลัง mastectomy\n- **Brachytherapy axilla**: ไม่มีหลักฐาน\n- **ตัดเฉพาะต่อมที่คลำได้**: ไม่ใช่การรักษาที่มีหลักฐาน",
+     "pearl": "Mastectomy + 1–2 SLN+ → AMAROS: axillary RT แทน ALND",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17",
+      "Donker M et al. Radiotherapy or surgery of the axilla after a positive sentinel node (EORTC 10981-22023 AMAROS). Lancet Oncol 2014"
+     ]
+    },
+    {
+     "id": "RES-06-2-3",
+     "kind": "mcq",
+     "topic": "Axillary staging after neoadjuvant chemotherapy",
+     "stem": "A 44-year-old woman with a 3.5-cm HER2-positive breast cancer and a biopsy-proven metastatic axillary lymph node (a clip was placed in the node) completes neoadjuvant chemotherapy with trastuzumab and pertuzumab. The axilla is now clinically and sonographically normal. Which axillary surgical approach best minimizes the false-negative rate if dissection is to be avoided?",
+     "choices": [
+      "Sentinel node biopsy with dual tracer, removing at least 3 nodes including the clipped node",
+      "Sentinel node biopsy with radioisotope alone, stopping after one hot node",
+      "No axillary surgery because the axilla responded clinically",
+      "Axillary sampling of level III nodes only",
+      "Fine-needle aspiration of the clipped node without surgery"
+     ],
+     "answer": 0,
+     "explain": "การทำ SLNB หลัง NAST ในผู้ป่วยที่เคย **cN1** มี false-negative rate สูง (ACOSOG **Z1071** FNR 12.6% โดยรวม) แต่ลดลงอย่างชัดเจนเมื่อใช้ **dual tracer**, เก็บ **≥3 SLN** และ **ยืนยันการเอา clipped node ออก** (Z1071: 6.8% เมื่อ clipped node อยู่ใน SLN; **targeted axillary dissection** ของ MD Anderson FNR ~2%) ถ้ายังพบมะเร็งใน node → ALND\n- **Isotope อย่างเดียว 1 node**: FNR สูงเกินยอมรับ\n- **ไม่ผ่าตัด axilla**: การตรวจร่างกาย/US ไม่ไวพอที่จะยืนยัน nodal pCR\n- **Level III sampling**: ไม่ใช่เทคนิคที่มีหลักฐานและข้ามการระบายน้ำเหลืองตามลำดับ\n- **FNA ของ clipped node**: ไม่ไวพอสำหรับ residual disease ขนาดเล็ก",
+     "pearl": "cN1 → ycN0: dual tracer + ≥3 SLN + clipped node = FNR ต่ำพอ",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17",
+      "Boughey JC et al. ACOSOG Z1071. JAMA 2013 · Caudle AS et al. Targeted axillary dissection. J Clin Oncol 2016"
+     ]
+    },
+    {
+     "id": "RES-06-2-4",
+     "kind": "mcq",
+     "topic": "Margins in breast-conserving surgery",
+     "stem": "A 61-year-old woman undergoes lumpectomy for a 1.6-cm invasive ductal carcinoma without an extensive intraductal component. Final pathology shows the closest margin (posterior) at 0.5 mm with no tumor at ink; the posterior margin is at the pectoralis fascia. Whole-breast irradiation is planned. What is the most appropriate next step regarding the margin?",
+     "choices": [
+      "No re-excision; proceed with whole-breast irradiation",
+      "Re-excise the posterior margin to achieve at least 2 mm",
+      "Re-excise all margins to achieve at least 1 cm",
+      "Convert to total mastectomy",
+      "Add a radiation boost instead of surgery because the margin is positive"
+     ],
+     "answer": 0,
+     "explain": "ตามฉันทามติ **SSO/ASTRO 2014** สำหรับมะเร็งเต้านม invasive stage I–II ที่ได้ WBI นิยาม negative margin คือ **\"no ink on tumor\"** การกว้างกว่านั้นไม่ลด ipsilateral recurrence (ปัจจัยที่สำคัญกว่าคือ biology, systemic therapy และรังสี) ขอบ posterior ที่ pectoralis fascia ยิ่งไม่ต้องตัดเพิ่ม\n- **Re-excise ให้ได้ 2 mm**: เกณฑ์ 2 mm ใช้กับ **DCIS** (SSO/ASTRO/ASCO 2016) ไม่ใช่ invasive\n- **Margin 1 cm**: แนวคิดเก่า ทำให้ re-excision และรูปร่างแย่โดยไม่มีประโยชน์\n- **Mastectomy**: ไม่จำเป็นเมื่อ margin ลบ\n- **Boost แทนผ่าตัดเพราะ margin positive**: margin นี้ไม่ positive",
+     "pearl": "Invasive + WBI = no ink on tumor พอ · 2 mm ใช้กับ DCIS",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17",
+      "SSO/ASTRO Consensus guideline on margins for BCS with WBI in stages I–II invasive breast cancer (2014)",
+      "SSO/ASTRO/ASCO margins guideline for DCIS (2016)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-06-3",
+   "title": "Melanoma: margin ตามความหนา, SLNB และ MSLT-II",
+   "summary": "ตัด melanoma กว้างเท่าไรตาม Breslow ใครต้องทำ SLNB และเมื่อ SLN positive ทำไมไม่ต้อง CLND แล้วในยุค immunotherapy",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 16 — Melanoma",
+   "md": "### Biopsy และ staging ของ melanoma\nก้อนสงสัย (ABCDE, ugly duckling) ทำ **excisional biopsy margin 1–3 mm** ให้ได้ความหนาเต็มชั้น ตามแนวแกนที่จะทำ wide excision ต่อ — ก้อนใหญ่/ตำแหน่งยาก (หน้า, ฝ่ามือ, subungual) ใช้ incisional/punch ที่ส่วนนูนหนาที่สุด **หลีกเลี่ยง shave ตื้น** เพราะตัด Breslow\nปัจจัยพยากรณ์สำคัญที่สุดของ localized disease คือ **Breslow thickness** (วัดจาก granular layer ถึงจุดลึกสุด) ร่วมกับ **ulceration** · ใน stage III ปัจจัยสำคัญที่สุดคือ **จำนวนต่อมน้ำเหลือง** · stage IV: ตำแหน่ง metastasis และ **LDH**\n\n| AJCC 8th T | ความหนา | a / b |\n|---|---|---|\n| **T1** | ≤1.0 mm | T1a <0.8 mm ไม่มี ulceration · **T1b 0.8–1.0 mm หรือ <0.8 mm มี ulceration** |\n| T2 | >1.0–2.0 mm | a = ไม่มี ulceration · b = มี |\n| T3 | >2.0–4.0 mm | a / b |\n| T4 | >4.0 mm | a / b |\n\n> AJCC 8th ตัด mitotic rate ออกจาก T1 แล้ว (แต่ยังใช้ประกอบการตัดสินใจ SLNB) · ไม่ต้องทำ CXR/CT ใน stage I–II ที่ไม่มีอาการ — ทำ CT/PET-CT และ brain MRI ตั้งแต่ stage III ขึ้นไป\n\n### Wide local excision: margin ตามความหนา\n\n| Breslow | Clinical margin (NCCN) |\n|---|---|\n| In situ | **0.5–1 cm** (lentigo maligna อาจต้องกว้างกว่า/staged excision, Mohs) |\n| ≤1.0 mm | **1 cm** |\n| 1.01–2.0 mm | **1–2 cm** |\n| >2.0 mm (T3–T4) | **2 cm** |\n\nตัดลึกถึง **muscle fascia (ไม่ต้องเอา fascia ออก)** · RCT ยืนยันว่า margin >2 cm ไม่เพิ่ม survival แต่ margin 1 cm ใน melanoma >2 mm เพิ่ม locoregional recurrence (UK trial 1 cm vs 3 cm) · Subungual melanoma: amputation ระดับที่ได้ margin (มักที่ DIP/IP joint) · Schwartz สรุปคล้ายกัน: <1 mm 0.5–1 cm, 1–2 mm 1–2 cm, >2 mm 2 cm\n\n### Sentinel lymph node biopsy (SLNB)\n**ข้อบ่งชี้** (NCCN/ASCO-SSO): **≥T1b** (≥0.8 mm หรือมี ulceration) → discuss and offer · T1a <0.8 mm ไม่มี ulceration → โดยทั่วไปไม่ทำ (SLN+ <5%) เว้นมี high-risk features เช่น mitoses สูง, LVI, ขอบลึกของ biopsy ยังมีมะเร็ง · T2–T4 cN0 → แนะนำ SLNB\n**เทคนิค**: preoperative **lymphoscintigraphy** (Tc-99m) ใช้หา basin ที่ผิดคาด (เช่น ลำตัว ศีรษะลำคอ ระบายได้หลาย basin, ส้นเท้าไป popliteal) + intradermal blue dye ระหว่างผ่าตัด → พบ SLN ~98% · ทำ **พร้อมกับ WLE ครั้งแรก** เพราะการตัดกว้างก่อนจะเปลี่ยนทางเดินน้ำเหลือง\n**MSLT-I**: SLNB + immediate lymphadenectomy ถ้า positive เพิ่ม **DFS** ในความหนา 1.2–3.5 mm และ >3.5 mm (Schwartz: +7% และ +10%) และเพิ่ม melanoma-specific survival ในกลุ่มหนาปานกลางที่ node positive — SLNB จึงเป็นทั้ง staging ที่แม่นที่สุดและเปิดทางสู่ adjuvant therapy\n\n### MSLT-II: SLN positive แล้วไม่ต้อง CLND\n**MSLT-II** (Faries, NEJM 2017; 1,939 ราย) สุ่ม SLN+ ไป **completion lymph node dissection (CLND)** vs **nodal ultrasound surveillance** → **melanoma-specific survival ไม่ต่างกัน (~86% ที่ 3 ปีทั้งสองแขน)** CLND ให้ regional control ดีกว่าและข้อมูล staging เพิ่ม (non-SLN positive ~11.5%) แต่ **lymphedema 24% vs 6%** · **DeCOG-SLT** ได้ผลเช่นเดียวกัน\n\n| สถานการณ์ | แนวทางปัจจุบัน |\n|---|---|\n| SLN positive (microscopic) | **Active nodal US surveillance** (ทุก ~4 เดือนใน 2 ปีแรก) + **adjuvant anti-PD-1** หรือ dabrafenib/trametinib ถ้า BRAF V600 |\n| Clinically detected node (คลำได้/ภาพพบ) resectable | **Neoadjuvant pembrolizumab** → therapeutic lymphadenectomy → adjuvant (SWOG **S1801**: 2-yr EFS 72% vs 49%) หรือ upfront lymphadenectomy + adjuvant |\n| Stage IIB–IIC (node negative หนา/ulcerated) | adjuvant pembrolizumab (KEYNOTE-716) หรือ nivolumab (CheckMate 76K) |\n\n### In-transit และ distant disease\n**In-transit/satellite**: excise ให้ margin ลบถ้าจำนวนน้อย · หลายก้อน → intralesional **T-VEC**, systemic immunotherapy, หรือ **isolated limb perfusion/infusion** (melphalan) สำหรับโรคที่จำกัดในแขนขา · **Stage IV**: first-line คือ **checkpoint inhibitors** (nivolumab + ipilimumab หรือ nivolumab + relatlimab, หรือ anti-PD-1 เดี่ยว) หรือ BRAF/MEK ในผู้ที่ต้องการ response เร็ว · **metastasectomy** ในผู้ที่มี oligometastasis และตอบสนองต่อยา/disease-free interval ยาว · brain met: SRS ± resection\n",
+   "pearls": [
+    "Biopsy: excisional 1–3 mm full thickness · ห้าม shave ตื้น",
+    "WLE: in situ 0.5–1 cm · ≤1 mm 1 cm · 1–2 mm 1–2 cm · >2 mm 2 cm ลึกถึง fascia",
+    "SLNB เมื่อ ≥T1b (≥0.8 mm หรือ ulcerated) · ทำพร้อม WLE ครั้งแรก",
+    "MSLT-II: SLN+ → nodal US surveillance ไม่ต้อง CLND (survival เท่ากัน lymphedema น้อยกว่า)",
+    "Clinical node+ resectable → neoadjuvant pembrolizumab (S1801)",
+    "Stage III หลังผ่าตัด → adjuvant anti-PD-1 หรือ BRAF/MEK ถ้า V600",
+    "Stage IV: LDH เป็นตัวพยากรณ์ · stage III: จำนวน node สำคัญสุด"
+   ],
+   "items": [
+    {
+     "id": "RES-06-3-1",
+     "kind": "mcq",
+     "topic": "Melanoma excision margin",
+     "stem": "A 45-year-old man has an excisional biopsy of a pigmented lesion on the forearm showing superficial spreading melanoma, Breslow thickness 1.5 mm, no ulceration, deep and peripheral margins narrowly clear. Examination shows no palpable lymphadenopathy. What is the most appropriate surgical plan?",
+     "choices": [
+      "Wide local excision with 1–2 cm clinical margins down to fascia plus sentinel lymph node biopsy",
+      "Wide local excision with 0.5 cm margins and clinical follow-up",
+      "Wide local excision with 3 cm margins including the underlying fascia",
+      "Wide local excision with 2 cm margins plus elective axillary lymph node dissection",
+      "Mohs micrographic surgery alone"
+     ],
+     "answer": 0,
+     "explain": "Melanoma **1.01–2.0 mm (T2a)** ใช้ clinical margin **1–2 cm** ลึกถึง muscle fascia (ไม่จำเป็นต้องเอา fascia ออก) และเนื่องจากเป็น ≥T1b ที่ cN0 จึงควรทำ **SLNB พร้อมกับ WLE** เพื่อ staging และกำหนด adjuvant therapy (MSLT-I แสดงประโยชน์ชัดในความหนาปานกลาง)\n- **0.5 cm**: ใช้กับ melanoma in situ เท่านั้น\n- **3 cm + fascia**: margin >2 cm ไม่เพิ่ม survival และเพิ่ม morbidity/ต้อง graft\n- **Elective ALND**: ไม่มีประโยชน์ด้าน survival ใน cN0 ถูกแทนที่ด้วย SLNB\n- **Mohs**: ใช้ในบาง lentigo maligna บนใบหน้า ไม่ใช่มาตรฐานของ invasive melanoma บนลำตัว/แขน และไม่ได้ staging",
+     "pearl": "T2 melanoma: WLE 1–2 cm + SLNB",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16",
+      "NCCN Guidelines: Cutaneous Melanoma",
+      "Schwartz's Principles of Surgery 11e, Ch 10"
+     ]
+    },
+    {
+     "id": "RES-06-3-2",
+     "kind": "mcq",
+     "topic": "SLNB indication — thin melanoma",
+     "stem": "A 38-year-old woman has a nonulcerated superficial spreading melanoma of the back with Breslow thickness 0.9 mm and 2 mitoses/mm2; the biopsy margins are clear. She has no palpable nodes. Which management is most appropriate?",
+     "choices": [
+      "Wide excision with 1 cm margins and discussion/offer of sentinel lymph node biopsy",
+      "Wide excision with 1 cm margins only; SLNB is never indicated for T1 melanoma",
+      "Wide excision with 2 cm margins and completion lymph node dissection",
+      "PET-CT and brain MRI before any further surgery",
+      "Wide excision with 0.5 cm margins and observation"
+     ],
+     "answer": 0,
+     "explain": "ความหนา **0.8–1.0 mm** จัดเป็น **T1b** ตาม AJCC 8th ซึ่งมีโอกาส SLN positive ราว 5–10% แนวทาง NCCN/ASCO-SSO จึงให้ **discuss and offer SLNB** (ยิ่งมี mitoses สูง/อายุน้อยยิ่งสนับสนุน) ร่วมกับ WLE margin **1 cm** (≤1 mm)\n- **ไม่ทำ SLNB ใน T1 เลย**: ผิด — T1b ควรพิจารณา, ที่ไม่แนะนำคือ T1a (<0.8 mm ไม่มี ulceration ไม่มี high-risk feature)\n- **2 cm + CLND**: margin เกิน และไม่มีข้อบ่งชี้ dissection\n- **PET-CT/brain MRI**: ไม่ใช่ staging ของ stage I ที่ไม่มีอาการ\n- **0.5 cm**: เป็น margin ของ in situ",
+     "pearl": "T1b = ≥0.8 mm หรือ ulcerated → พิจารณา SLNB · T1a ไม่ต้อง",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16",
+      "AJCC Cancer Staging Manual 8th ed — Melanoma",
+      "ASCO/SSO guideline update: sentinel lymph node biopsy for melanoma (2018)"
+     ]
+    },
+    {
+     "id": "RES-06-3-3",
+     "kind": "mcq",
+     "topic": "MSLT-II — positive sentinel node",
+     "stem": "A 52-year-old man undergoes wide excision and SLNB for a 2.4-mm ulcerated melanoma of the calf. One of two inguinal sentinel nodes contains a 0.6-mm metastatic deposit. Staging CT is negative and the tumor is BRAF wild-type. What is the most appropriate next management?",
+     "choices": [
+      "Nodal ultrasound surveillance plus adjuvant anti-PD-1 therapy",
+      "Completion inguinal and pelvic lymph node dissection",
+      "Adjuvant radiotherapy to the inguinal basin",
+      "Clinical examination alone every 6 months without systemic therapy",
+      "Adjuvant dabrafenib plus trametinib"
+     ],
+     "answer": 0,
+     "explain": "**MSLT-II** และ **DeCOG-SLT** แสดงว่า CLND หลัง SLN positive **ไม่เพิ่ม melanoma-specific survival** แต่เพิ่ม lymphedema มาก (24% vs 6%) มาตรฐานปัจจุบันจึงเป็น **active nodal surveillance ด้วย ultrasound** และเนื่องจากเป็น stage III จึงควรได้ **adjuvant anti-PD-1** (nivolumab หรือ pembrolizumab) ซึ่งลด recurrence\n- **CLND**: ไม่เพิ่ม survival มีที่ใช้เฉพาะบางรายที่ติดตามไม่ได้ หรือในบริบทการวิจัย\n- **Adjuvant RT**: ใช้ในบางรายหลัง therapeutic dissection ที่เสี่ยง regional recurrence สูง ไม่ใช่ microscopic SLN\n- **ตรวจร่างกายอย่างเดียว**: ไม่ไวพอ และขาด adjuvant therapy\n- **Dabrafenib + trametinib**: ใช้เฉพาะ BRAF V600-mutant",
+     "pearl": "SLN+ melanoma: US surveillance + adjuvant ICI แทน CLND (MSLT-II)",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16",
+      "Faries MB et al. Completion dissection or observation for sentinel-node metastasis in melanoma (MSLT-II). N Engl J Med 2017"
+     ]
+    },
+    {
+     "id": "RES-06-3-4",
+     "kind": "mcq",
+     "topic": "Clinically detected nodal melanoma",
+     "stem": "A 64-year-old woman presents with a 3-cm palpable left axillary mass 2 years after excision of a 1.3-mm melanoma of the arm (SLNB was not done). Core biopsy confirms metastatic melanoma, BRAF wild-type. PET-CT and brain MRI show no other disease. Which approach has shown superior event-free survival in a randomized trial?",
+     "choices": [
+      "Neoadjuvant pembrolizumab followed by axillary lymph node dissection and adjuvant pembrolizumab",
+      "Axillary dissection followed by observation",
+      "Excision of the palpable node only followed by observation",
+      "Definitive axillary radiotherapy without surgery",
+      "Adjuvant high-dose interferon after axillary dissection"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเป็น **clinically detected stage III** ที่ resectable — **SWOG S1801** (NEJM 2023) สุ่ม **neoadjuvant pembrolizumab 3 รอบ → ผ่าตัด → adjuvant** เทียบกับผ่าตัดแล้วให้ adjuvant pembrolizumab ทั้งหมด พบ **event-free survival ที่ 2 ปี 72% vs 49%** เพราะ T cell ที่ยังอยู่ในก้อนช่วยให้ immune response กว้างกว่า (การผ่าตัด therapeutic lymphadenectomy ยังจำเป็น)\n- **ALND แล้วสังเกต**: ขาด systemic therapy ซึ่งลด recurrence ใน stage III\n- **ตัดเฉพาะก้อน**: \"berry picking\" ไม่ได้ regional control\n- **RT อย่างเดียว**: ไม่ใช่การรักษาหลักของ resectable nodal disease\n- **Interferon**: ถูกแทนที่ด้วย checkpoint inhibitors ที่ได้ผลดีกว่าและพิษน้อยกว่า",
+     "pearl": "Palpable nodal melanoma: neoadjuvant pembrolizumab → dissection → adjuvant (S1801)",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16",
+      "Patel SP et al. Neoadjuvant–adjuvant or adjuvant-only pembrolizumab in advanced melanoma (SWOG S1801). N Engl J Med 2023"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-06-4",
+   "title": "Soft tissue sarcoma และ GIST",
+   "summary": "Approach ก้อนเนื้อเยื่ออ่อนที่สงสัย sarcoma, หลัก limb-sparing + radiation, retroperitoneal sarcoma และการผ่าตัด/imatinib ใน GIST",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 36 — Soft tissue sarcomas; GIST",
+   "md": "### Soft tissue mass ที่ต้องสงสัย sarcoma และการ biopsy\nก้อนที่ **ใหม่และโตขึ้น, >5 cm, หรืออยู่ลึกกว่า fascia** ถือว่าสงสัย sarcoma จนกว่าจะพิสูจน์ — ก้อนผิวตื้น <5 cm ที่ไม่เปลี่ยนแปลงสังเกตได้\n- **Imaging**: แขนขา/ลำตัวใช้ **MRI** · retroperitoneum/ช่องท้องใช้ **CT** · ปอดเป็นตำแหน่ง metastasis หลัก (80% ภายใน 2–3 ปี) → **CT chest** ใน high-grade ก้อน >5 cm (CXR พอใน low-grade/เล็ก) · myxoid round cell liposarcoma ชอบแพร่ไปที่นอกปอด (retroperitoneum, กระดูกสันหลัง) → ภาพเพิ่ม\n- **Core needle biopsy** (ภายใต้ภาพ) เป็นมาตรฐาน: Schwartz อ้างความแม่นยำ ~93% ภาวะแทรกซ้อน <1% · วางแนวเข็ม/แผลตาม **แกนยาวของแขนขา** และอยู่ในแนวที่ศัลยแพทย์จะตัดออกพร้อมก้อนได้\n- **Incisional biopsy** เมื่อ core ไม่พอ · **Excisional biopsy** เฉพาะก้อนผิวตื้น <3 cm\n- ห้าม transverse incision, ห้ามเปิดหลาย compartment, hemostasis ดี (hematoma = การปนเปื้อน)\n> **Unplanned (\"whoops\") excision**: ก้อนถูกตัดแบบ lipoma แล้วผลเป็น sarcoma → margin มักเป็น positive/ไม่ทราบ ต้องทำ MRI และ **re-excision ของ tumor bed** พร้อมแผลและ drain tract เดิม (มักร่วมกับรังสี)\n\nปัจจัยพยากรณ์: **grade** (FNCLCC: differentiation + mitotic count + necrosis), ขนาด, ความลึก, histologic subtype, margin · nodal metastasis พบ **<5%** ยกเว้น **epithelioid sarcoma, rhabdomyosarcoma, clear cell sarcoma, angiosarcoma** และ synovial sarcoma บางส่วน → ตรวจ/พิจารณา SLNB ในกลุ่มนี้\n\n### Extremity sarcoma: limb-sparing surgery + radiation\n- **Wide local excision** เอาก้อนพร้อมเนื้อปกติ **1–2 cm** หรือ fascial barrier ที่ยังไม่ถูกบุก (fascia/periosteum/adventitia ถือเป็น margin ที่ดีแม้บาง) ไม่เปิดเข้า pseudocapsule (มี satellite cells) · ทำ marker clip ที่ tumor bed\n- **Amputation** เหลือ **<5%** (ก้อนที่ติด neurovascular bundle หลัก/กระดูกจนรักษาแขนขาที่ใช้งานได้ไม่ได้)\n- **Radiation** เพิ่ม local control ใน high-grade/ก้อนใหญ่/margin แคบ · ก้อนผิวตื้น low-grade <5 cm ที่ margin ดี ผ่าตัดอย่างเดียวพอ\n\n| | Preoperative RT | Postoperative RT |\n|---|---|---|\n| ขนาดรังสี | **50 Gy** | 60–66 Gy |\n| Field | เล็กกว่า | ใหญ่กว่า (คลุมแผลและ drain) |\n| **Wound complication** (NCIC SR2, O'Sullivan) | **35%** (ขาส่วนล่าง 43%, แขน 5%) | 17% |\n| **Late toxicity** (fibrosis, edema, joint stiffness) | 32% | **48%** |\n| Local control/survival | เท่ากัน | เท่ากัน |\n\nเนื่องจาก wound complication แก้ไขได้ (flap) แต่ fibrosis ถาวร หลายศูนย์จึงนิยม **preoperative RT** · chemotherapy (doxorubicin + ifosfamide) พิจารณาในก้อนใหญ่ high-grade ที่ chemo-sensitive (synovial, myxoid round cell liposarcoma) · ก้อนแขนขาที่ผ่าตัดไม่ได้ → **isolated limb perfusion** (TNF + melphalan)\n\n### Retroperitoneal sarcoma (RPS)\n70% มีขนาด **>10 cm** ตอนวินิจฉัย ชนิดที่พบบ่อยคือ **liposarcoma** (well-differentiated/dedifferentiated) และ **leiomyosarcoma** ปัญหาหลักคือ **local recurrence** (สาเหตุการตายหลัก) ไม่ใช่ metastasis\n- CT abdomen/pelvis + chest, ประเมินไตข้างตรงข้าม (split renal function) · **CT-guided core biopsy** ผ่านทางหลัง (retroperitoneal) เมื่อจะรักษาก่อนผ่าตัดหรือสงสัย lymphoma/GCT\n- ผ่าตัด **en bloc compartmental resection** เอาอวัยวะที่ติดออกด้วย (ไต, colon, psoas) เพื่อได้ macroscopic complete resection ใน **high-volume center** — ผ่าครั้งแรกคือโอกาสดีที่สุด\n- **STRASS** (EORTC): preoperative RT ไม่เพิ่ม abdominal recurrence-free survival โดยรวม (อาจมีประโยชน์ในกลุ่ม liposarcoma) จึงไม่ใช้ routine\n\n### GIST: biology, ผ่าตัด, และ imatinib\nGIST เกิดจาก interstitial cells of Cajal; **KIT** mutation (exon 11 พบมากสุดและตอบสนอง imatinib ดีสุด, exon 9 ต้องใช้ imatinib **800 mg**) หรือ **PDGFRA** (exon 18 **D842V ดื้อ imatinib** → avapritinib) · ไม่มี mutation (SDH-deficient, NF1) มักพบในเด็ก/หนุ่มสาว\n- **ผ่าตัด**: R0 resection **ไม่ต้อง wide margin และไม่ต้อง lymphadenectomy** (lymph node met หายาก ยกเว้น SDH-deficient) → gastric GIST ส่วนใหญ่ทำ wedge resection ได้ ไม่ต้อง total gastrectomy · **ห้ามก้อนแตก** (tumor rupture = high risk) — laparoscopic ได้ถ้าจับก้อนอย่างระวังและใส่ถุง\n- Gastric GIST **<2 cm** ไม่มีลักษณะเสี่ยงทาง EUS (ขอบไม่เรียบ, cystic, ulcer, echogenic foci, heterogeneous) → EUS surveillance ได้\n\n| Risk factor | ความหมาย |\n|---|---|\n| ขนาด | <2, 2–5, 5–10, >10 cm |\n| **Mitoses** | ≤5 vs >5 ต่อ 50 HPF (5 mm2) · >10 = high risk |\n| ตำแหน่ง | **gastric พยากรณ์ดีกว่า** small bowel/rectum |\n| **Rupture** | จัดเป็น high risk ทันที |\n\n**Adjuvant imatinib 400 mg**: ACOSOG **Z9001** (GIST ≥3 cm, 1 ปี vs placebo → เพิ่ม RFS ไม่เพิ่ม OS) · **SSG XVIII/AIO**: high-risk GIST **3 ปี vs 1 ปี → เพิ่มทั้ง RFS และ OS** → มาตรฐาน **3 ปีใน high-risk** · **Neoadjuvant imatinib** ในก้อนใหญ่/ผ่าตัดยากหรือเพื่อรักษาอวัยวะ (rectum, GEJ, duodenum) ให้ 6–12 เดือนจนตอบสนองสูงสุด (ประเมินด้วย CT/PET; **Choi criteria** ดู density ด้วย) · ดื้อยา → sunitinib → regorafenib → ripretinib\n",
+   "pearls": [
+    "ก้อน >5 cm, ลึกกว่า fascia, โตขึ้น → MRI + core biopsy ก่อนผ่าตัด",
+    "แนว biopsy ตามแกนยาว ให้อยู่ในแนวที่ตัดออกได้ · unplanned excision → re-excision tumor bed",
+    "Preop RT 50 Gy: wound complication 35% vs 17% · postop 66 Gy: fibrosis มากกว่า",
+    "Sarcoma ที่ไป node: epithelioid, rhabdomyosarcoma, clear cell, angiosarcoma (± synovial)",
+    "GIST: R0 ไม่ต้อง wide margin/ไม่ต้อง lymphadenectomy · ห้ามก้อนแตก",
+    "High-risk GIST: imatinib 3 ปี (SSG XVIII) · exon 9 → 800 mg · PDGFRA D842V ดื้อ imatinib",
+    "RPS: ผ่าตัดครั้งแรก en bloc ในศูนย์ใหญ่ · STRASS: preop RT ไม่ใช่ routine"
+   ],
+   "items": [
+    {
+     "id": "RES-06-4-1",
+     "kind": "mcq",
+     "topic": "Biopsy of suspected extremity sarcoma",
+     "stem": "A 49-year-old man has a painless, firm mass in the anterior thigh that has enlarged over 4 months. MRI shows a 9-cm heterogeneous mass deep to the fascia within the quadriceps compartment, abutting but not encasing the femoral vessels. What is the most appropriate next step for diagnosis?",
+     "choices": [
+      "Image-guided core needle biopsy along the longitudinal axis within the planned resection field",
+      "Excisional biopsy through a transverse incision",
+      "Fine-needle aspiration cytology alone",
+      "Open incisional biopsy through a medial approach away from the future incision",
+      "PET-CT, with surgery planned based on SUV without tissue diagnosis"
+     ],
+     "answer": 0,
+     "explain": "ก้อนลึกกว่า fascia ขนาด >5 cm และโตขึ้นต้องสงสัย **soft tissue sarcoma** การวินิจฉัยมาตรฐานคือ **image-guided core needle biopsy** (แม่นยำสูง ภาวะแทรกซ้อน <1%) โดยให้แนวเข็มอยู่ตามแกนยาวและอยู่ในบริเวณที่จะตัดออกพร้อมก้อนเพราะ tract อาจมีเซลล์มะเร็ง ควรวางแผนร่วมกับศัลยแพทย์ที่จะผ่าตัดจริง\n- **Excisional biopsy แนวขวาง**: ปนเปื้อน compartment กว้าง ทำ limb-sparing ยากและ margin ไม่ดี\n- **FNA อย่างเดียว**: มักไม่พอสำหรับ subtype และ grade (ใช้ยืนยัน recurrence ได้)\n- **Incisional biopsy ทาง medial**: แผลอยู่นอกแนวผ่าตัด ทำให้ต้องตัดแผลเพิ่มหรือปนเปื้อนอีก compartment\n- **PET-CT แทนชิ้นเนื้อ**: ไม่สามารถบอก histology/grade ซึ่งกำหนดการรักษาก่อนผ่าตัด",
+     "pearl": "Sarcoma: core biopsy แนวยาวในแนวที่จะตัดออก · ห้าม excisional/transverse",
+     "src": "Schwartz 11e Ch 36",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 36"
+     ]
+    },
+    {
+     "id": "RES-06-4-2",
+     "kind": "mcq",
+     "topic": "Preoperative vs postoperative radiotherapy",
+     "stem": "A 58-year-old woman with a 10-cm high-grade undifferentiated pleomorphic sarcoma of the posterior thigh is planned for limb-sparing resection with radiotherapy. She asks how giving radiation before surgery (50 Gy) differs from giving it after surgery (66 Gy). Based on the NCIC randomized trial, which statement is most accurate?",
+     "choices": [
+      "Preoperative RT has about twice the rate of major wound complications but less late fibrosis and joint stiffness",
+      "Preoperative RT improves overall survival compared with postoperative RT",
+      "Postoperative RT has a higher rate of early wound complications",
+      "Preoperative RT eliminates the need for negative surgical margins",
+      "Local control is markedly worse with preoperative RT"
+     ],
+     "answer": 0,
+     "explain": "**NCIC SR2** (O'Sullivan, Lancet 2002) สุ่ม preoperative 50 Gy vs postoperative 66 Gy: **wound complication 35% vs 17%** (สูงมากในขา 43%) แต่ **late toxicity** เช่น fibrosis, edema, joint stiffness สูงกว่าในกลุ่ม postoperative (48% vs 32%) เพราะใช้ขนาดรังสีสูงกว่าและ field ใหญ่กว่า ส่วน local control และ survival ใกล้เคียงกัน\n- **เพิ่ม OS**: ไม่พบความต่างของ survival ที่มีนัยสำคัญเป็นข้อสรุปหลัก\n- **Postop มี wound complication มากกว่า**: กลับกัน\n- **ไม่ต้อง negative margin**: รังสีไม่แทนการผ่าตัดที่เพียงพอ\n- **Local control แย่กว่า**: ไม่จริง เท่ากัน",
+     "pearl": "Preop RT: แผลแย่กว่า (แก้ได้) · postop RT: fibrosis ถาวรมากกว่า",
+     "src": "Schwartz 11e Ch 36",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 36",
+      "O'Sullivan B et al. Preoperative versus postoperative radiotherapy in soft-tissue sarcoma of the limbs (NCIC SR2). Lancet 2002"
+     ]
+    },
+    {
+     "id": "RES-06-4-3",
+     "kind": "mcq",
+     "topic": "Adjuvant imatinib duration",
+     "stem": "A 66-year-old man undergoes laparoscopic wedge resection of a 7-cm gastric GIST without rupture; margins are negative. Pathology shows 12 mitoses per 5 mm2 (50 HPF) and a KIT exon 11 deletion. Which adjuvant strategy is most appropriate?",
+     "choices": [
+      "Imatinib 400 mg daily for 3 years",
+      "Imatinib 400 mg daily for 1 year",
+      "Observation with CT surveillance only",
+      "Imatinib 800 mg daily for 6 months",
+      "Adjuvant doxorubicin-based chemotherapy"
+     ],
+     "answer": 0,
+     "explain": "ก้อน 7 cm ร่วมกับ **mitoses >10/50 HPF** จัดเป็น **high-risk GIST** **SSG XVIII/AIO** แสดงว่า imatinib **3 ปี** ดีกว่า 1 ปี ทั้ง RFS และ **overall survival** และ KIT exon 11 ตอบสนองต่อ imatinib 400 mg ดีที่สุด\n- **1 ปี**: จาก Z9001 ซึ่งเพิ่ม RFS แต่ด้อยกว่า 3 ปีในกลุ่ม high-risk\n- **สังเกตอย่างเดียว**: ความเสี่ยงกลับเป็นซ้ำสูงมากในกลุ่มนี้\n- **800 mg**: ใช้ใน **KIT exon 9** ไม่ใช่ exon 11 และ 6 เดือนสั้นเกิน\n- **Doxorubicin**: GIST ไม่ตอบสนองต่อเคมีบำบัดแบบดั้งเดิม",
+     "pearl": "High-risk GIST: imatinib 400 mg 3 ปี (SSG XVIII) · exon 9 ใช้ 800 mg",
+     "src": "Schwartz 11e Ch 36",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 36",
+      "Joensuu H et al. One vs three years of adjuvant imatinib for operable GIST (SSG XVIII/AIO). JAMA 2012",
+      "Schwartz's Principles of Surgery 11e, Ch 26"
+     ]
+    },
+    {
+     "id": "RES-06-4-4",
+     "kind": "mcq",
+     "topic": "Sarcoma subtypes with nodal spread",
+     "stem": "A 24-year-old man has a 3-cm firm nodule on the volar forearm that has ulcerated; core biopsy shows a soft tissue sarcoma. Staging MRI and chest CT show no distant disease and no clinically enlarged nodes. For which histologic subtype would regional lymph node evaluation (e.g., sentinel lymph node biopsy) be most justified?",
+     "choices": [
+      "Epithelioid sarcoma",
+      "Well-differentiated liposarcoma",
+      "Leiomyosarcoma",
+      "Dermatofibrosarcoma protuberans",
+      "Myxofibrosarcoma"
+     ],
+     "answer": 0,
+     "explain": "Soft tissue sarcoma ส่วนใหญ่กระจายทางเลือดไปปอด nodal metastasis พบ <5% ยกเว้นกลุ่มที่จำได้ว่า **epithelioid sarcoma, rhabdomyosarcoma, clear cell sarcoma, angiosarcoma** (และ synovial sarcoma บางส่วน) — **epithelioid sarcoma** มักเกิดที่แขน/มือของคนหนุ่ม เป็นก้อนแข็งแตกเป็นแผล และไปต่อมน้ำเหลืองบ่อย จึงควรประเมิน regional nodes\n- **Well-differentiated liposarcoma**: low grade แทบไม่แพร่กระจาย ปัญหาคือ local recurrence\n- **Leiomyosarcoma**: แพร่ทางเลือด (ปอด ตับ) ไม่ใช่ต่อมน้ำเหลือง\n- **DFSP**: local recurrence สูงแต่ metastasis หายาก รักษาด้วย wide excision/Mohs\n- **Myxofibrosarcoma**: infiltrative ต้อง margin กว้าง แต่ nodal spread ไม่เด่น",
+     "pearl": "Sarcoma ไป node: epithelioid, rhabdo, clear cell, angiosarcoma (± synovial)",
+     "src": "Schwartz 11e Ch 36",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 36"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-06-MEQ1",
+   "part": "MEQ",
+   "topic": "HER2-positive node-positive breast cancer — neoadjuvant pathway",
+   "vignette": "หญิงไทยอายุ 42 ปี คลำได้ก้อนเต้านมขวา 2 เดือน ตรวจพบก้อน 4 cm ที่ upper outer quadrant ต่อมน้ำเหลืองรักแร้ขวาโต 1.5 cm เคลื่อนได้ ไม่มีผิวหนังบวมแดง\n\n| ผลตรวจ | ค่า |\n|---|---|\n| Core biopsy ก้อน | invasive ductal carcinoma grade 3, ER 0%, PR 0%, **HER2 3+**, Ki-67 60% |\n| FNA ต่อมน้ำเหลือง | metastatic carcinoma |\n| CT chest/abdomen, bone scan | ไม่พบ distant metastasis |\n| ประวัติครอบครัว | ไม่มีมะเร็งเต้านม/รังไข่ |",
+   "questions": [
+    {
+     "q": "1. ระบุ clinical stage และแผนการรักษาลำดับแรก พร้อมสิ่งที่ต้องทำก่อนเริ่มยา",
+     "a": "- **cT2 N1 M0 = stage IIB** (anatomic), HER2-positive, HR-negative\n- ลำดับแรก: **neoadjuvant chemotherapy + trastuzumab + pertuzumab** (เช่น TCHP) เพราะ HER2+ และ node positive — ได้ประโยชน์ downstage และใช้ pCR กำหนด adjuvant therapy\n- ก่อนเริ่มยา: **ใส่ clip ที่ก้อนและที่ต่อมน้ำเหลืองที่ biopsy positive**, echocardiogram (LVEF ก่อนให้ anti-HER2), พิจารณา genetic testing (อายุ <50 ก็เข้าเกณฑ์บางแนวทาง), fertility counseling"
+    },
+    {
+     "q": "2. หลังครบยา ก้อนคลำไม่ได้ MRI เหลือรอยโรค 0.8 cm รักแร้ US ปกติ ผู้ป่วยต้องการเก็บเต้านม จะผ่าตัดเต้านมและรักแร้อย่างไร",
+     "a": "- เต้านม: **lumpectomy (wire/seed localization ที่ clip)** ได้ — ไม่มีข้อห้าม BCT, margin เป้าหมาย no ink on tumor แล้วตามด้วย WBI\n- Axilla (cN1 → ycN0): **SLNB ด้วย dual tracer เก็บ ≥3 nodes และเอา clipped node ออก (targeted axillary dissection)** — ลด FNR จาก ~12.6% (Z1071 โดยรวม) เหลือ <7–2%\n- ถ้า SLN ไม่พบ/map ไม่ติด → ALND\n- เกณฑ์ให้คะแนน: ระบุ localization ที่ clip · dual tracer · ≥3 nodes · clipped node"
+    },
+    {
+     "q": "3. ผลพยาธิ: เต้านมเหลือ invasive carcinoma 0.6 cm (ypT1b) margin ลบ SLN 3 ต่อม รวม clipped node ไม่พบมะเร็ง (ypN0) จะให้การรักษาเสริมอะไร",
+     "a": "- ไม่ได้ pCR ใน HER2+ → เปลี่ยนเป็น **T-DM1 (trastuzumab emtansine) 14 รอบ** ตาม **KATHERINE** (ลด invasive recurrence เทียบกับ trastuzumab ต่อ)\n- **Whole-breast irradiation** หลัง BCS (± regional nodal RT ตามการตัดสินใจของ radiation oncology เพราะเป็น cN1 ก่อนยา)\n- ไม่ต้อง endocrine therapy (HR-negative)\n- ติดตาม LVEF ระหว่างได้ anti-HER2"
+    },
+    {
+     "q": "4. ถ้าในข้อ 2 พบ metastasis 3 mm ใน clipped node ขณะทำ SLNB จะทำอย่างไร และทำไมใช้ Z0011 ไม่ได้",
+     "a": "- **Residual nodal disease หลัง NAST (ypN+) → completion ALND** เป็นมาตรฐาน (การใช้ regional RT แทน ALND ยังอยู่ในการศึกษา Alliance A011202) + regional nodal irradiation\n- **Z0011 ใช้ไม่ได้** เพราะเกณฑ์ Z0011 ไม่รวมผู้ป่วยที่ได้ neoadjuvant therapy และผู้ป่วยกลุ่มนั้นเป็น cN0 ตั้งแต่แรก — residual disease หลังยาบ่งถึง chemoresistant tumor ที่มีภาระโรคในรักแร้สูงกว่า"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 17",
+    "ACOSOG Z1071 (JAMA 2013)",
+    "KATHERINE (NEJM 2019)",
+    "NCCN Breast Cancer Guidelines"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-06-OSCE1",
+   "topic": "Mock oral board — Extremity soft tissue sarcoma after unplanned excision",
+   "station": "Mock oral 10 นาที · Extremity soft tissue sarcoma และ unplanned excision",
+   "instruction": "**บทบาท**: แพทย์ประจำบ้านศัลยกรรมปีสุดท้าย ผู้สอบให้ข้อมูลทีละขั้น\n\n**Scenario**: ชายอายุ 46 ปี ถูกส่งตัวจาก รพช. หลังได้รับการ \"ตัดก้อนไขมัน\" ที่ต้นขาด้านหน้าซ้ายเมื่อ 2 สัปดาห์ก่อน ผ่านแผลแนวขวาง 6 cm ใส่ drain ออกด้านข้าง ผลชิ้นเนื้อ: **high-grade myxofibrosarcoma 6 cm, margins positive** แผลหายดี\n\n**Examiner prompts**\n1. \"ปัญหาของการผ่าตัดครั้งแรกคืออะไร คุณจะประเมินผู้ป่วยต่ออย่างไร\"\n2. \"MRI เห็น residual enhancing tissue ที่ tumor bed ลงไปถึง fascia ของ quadriceps CT chest ปกติ — แผนการรักษาคืออะไร จะให้รังสีก่อนหรือหลังผ่าตัด\"\n3. \"บอกขั้นตอนการผ่าตัด re-excision ครั้งนี้ จะตัดอะไรออกบ้าง\"\n4. \"หลังผ่าตัด 3 สัปดาห์ แผลแยก 4 cm มี serous discharge ทำอย่างไร\"\n5. \"ผู้ป่วยถามว่าต้องตรวจติดตามอย่างไร และโอกาสโรคแพร่กระจายไปที่ไหน\"\n",
+   "answer": "1. **Prompt 1 — ปัญหาและการประเมิน (2 คะแนน)**\n- เป็น **unplanned (\"whoops\") excision**: ไม่มีภาพ/biopsy ก่อน, แผลแนวขวาง, drain exit แยกตำแหน่ง → ปนเปื้อนเนื้อเยื่อกว้าง margin positive\n- Review slide โดย sarcoma pathologist (subtype, grade FNCLCC)\n- **MRI ต้นขา** (ก่อนผ่าตัดซ้ำ) ดู residual disease และ **CT chest** (high-grade >5 cm)\n- ส่งปรึกษา **multidisciplinary sarcoma tumor board**\n\n2. **Prompt 2 — แผนการรักษา (2 คะแนน)**\n- **Re-excision ของ tumor bed** พร้อมแผลเดิมและ drain tract เพื่อให้ได้ R0 + radiation\n- เลือก **preoperative RT 50 Gy** (field เล็กกว่า, late fibrosis น้อยกว่า) โดยยอมรับ wound complication สูงกว่า (~35% vs 17%; ต้นขาเสี่ยงสูง) หรือ postoperative 60–66 Gy — ตอบเหตุผลสองฝั่งได้\n- Myxofibrosarcoma infiltrative ต้อง margin กว้างกว่า sarcoma อื่น\n\n3. **Prompt 3 — Operative plan (3 คะแนน)**\n- ตัดแผลเดิมแบบ ellipse ครอบคลุม **drain exit site** ทั้งหมด ไม่เปิดเข้า cavity เดิม\n- ตัดพร้อม **fascia/กล้ามเนื้อส่วนที่สัมผัส** ให้ได้ margin ~1–2 cm หรือ fascial barrier ไม่ถูกบุก\n- Orient specimen, ink margins, clip tumor bed สำหรับรังสี\n- วางแผนปิดแผล: **flap (เช่น gracilis/ALT/rotational)** ถ้าหลัง preop RT หรือแผลตึง ใส่ drain ออกในแนวแผล\n\n4. **Prompt 4 — Wound complication (2 คะแนน)**\n- ตรวจ/US หา seroma หรือ abscess, culture ถ้าติดเชื้อ\n- Local wound care/NPWT, debridement ถ้ามีเนื้อตาย, flap coverage ถ้าแผลใหญ่หรือเห็นโครงสร้างสำคัญ\n- ประสานรังสีแพทย์ถ้าเป็น postop RT (เลื่อนจนแผลหาย)\n\n5. **Prompt 5 — Follow-up (1 คะแนน)**\n- High-grade: H&P + **CT chest ทุก 3–6 เดือน 2–3 ปีแรก** แล้วห่างขึ้น, MRI local ตามความเสี่ยง\n- Metastasis ส่วนใหญ่ไป **ปอด** ภายใน 2–3 ปี; lung metastasectomy เป็นทางเลือกในโรคจำกัด\n\n**Critical fails**\n- สังเกตอาการ/ให้แต่รังสีโดยไม่ re-excise tumor bed\n- ไม่ตัด drain tract/แผลเดิม หรือผ่าผ่าน cavity เดิม\n- ไม่ทำ CT chest staging ก่อนผ่าตัด"
+  }
+ ]
+}

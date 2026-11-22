@@ -1,0 +1,461 @@
+{
+ "lec": "15",
+ "date": "Schwartz Ch 12, 14, 47, 48, 51",
+ "title": "Quality, MIS, evidence & the older/dying patient",
+ "subtitle": "คาบนี้ตอบว่า: ทำผ่าตัดให้ปลอดภัยและวัดคุณภาพอย่างไร, pneumoperitoneum และ energy device ทำร้ายผู้ป่วยได้อย่างไร, อ่านงานวิจัยอย่างไรไม่ให้หลง และดูแลผู้สูงอายุกับผู้ป่วยระยะท้ายอย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบาย Swiss cheese model, Donabedian, NSQIP O/E และ failure to rescue ได้",
+  "เรียนจบแล้วต้องใช้ WHO checklist และป้องกัน never events รวมถึงจัดการ count discrepancy ได้",
+  "เรียนจบแล้วต้องอธิบายผลของ CO2 pneumoperitoneum และจัดการ gas embolism, access injury และ stray energy injury ได้",
+  "เรียนจบแล้วต้องคำนวณ NNT และตีความ P value, power, noninferiority และ bias ในงานวิจัยศัลยกรรมได้",
+  "เรียนจบแล้วต้องประเมิน frailty และ cognition ก่อนผ่าตัด และป้องกัน/รักษา postoperative delirium ได้",
+  "เรียนจบแล้วต้องคุยเรื่อง DNR ในห้องผ่าตัด ผู้ตัดสินใจแทน และ palliative surgery ได้ตามหลักจริยธรรม"
+ ],
+ "guidelines": [
+  "WHO Surgical Safety Checklist (Haynes et al., NEJM 2009)",
+  "Joint Commission Universal Protocol · NQF Serious Reportable (Never) Events",
+  "ACS NSQIP · ACS NSQIP/AGS Best Practices Guideline for the geriatric surgical patient (2012)",
+  "SAGES guidelines for laparoscopy during pregnancy (2017)",
+  "GRADE working group · CONSORT",
+  "ACS Statement on advance directives and DNR in the operating room (required reconsideration)",
+  "พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12"
+ ],
+ "sections": [
+  {
+   "id": "res-15-1",
+   "title": "Patient safety & quality improvement",
+   "summary": "ความผิดพลาดในการผ่าตัดเกิดจากระบบอย่างไร วัดคุณภาพด้วยอะไร (NSQIP, failure to rescue) และเครื่องมืออะไรป้องกัน never events ได้จริง",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 12 — Science of patient safety; NSQIP; WHO checklist; Never events",
+   "md": "### ความผิดพลาดเกิดจากระบบ: Swiss cheese และ high reliability\n- รายงาน **To Err Is Human** (IOM 1999) ทำให้โลกตระหนักว่าความผิดพลาดทางการแพทย์ทำให้ผู้ป่วยเสียชีวิตจำนวนมาก และส่วนใหญ่ป้องกันได้\n- **Swiss cheese model** (James Reason): อุบัติการณ์เกิดเมื่อรูของหลายชั้นป้องกันเรียงตรงกัน — **active failure** คือการกระทำของคนหน้างาน (ตัดผิดข้าง ลืมนับ) ส่วน **latent condition** คือจุดอ่อนที่ฝังในระบบ (ตารางผ่าตัดพิมพ์ข้างผิด, เวรยาว, เครื่องมือไม่มาตรฐาน, ไม่มี policy)\n- **Normal accident theory**: ระบบซับซ้อนเกิดอุบัติเหตุได้เสมอ vs **high reliability organization** (กองเรือดำน้ำนิวเคลียร์, การบิน) ที่ทำให้ error ต่ำได้ด้วยวัฒนธรรมความปลอดภัย การสื่อสาร และการไม่ลงโทษผู้รายงาน (**just culture** — แยกความผิดพลาดของมนุษย์ที่ควรสนับสนุน กับพฤติกรรมเสี่ยงที่ต้อง coach และความประมาทที่ต้องลงโทษ)\n- Joint Commission พบว่า **การสื่อสารล้มเหลว** เป็นหนึ่งใน root cause หลักของ sentinel event รวมถึง wrong-site surgery\n\n| Donabedian | คำถาม | ตัวอย่างในศัลยกรรม |\n|---|---|---|\n| **Structure** | มีเครื่องมือ คน นโยบายที่ถูกต้องไหม | ICU intensivist, ปริมาณผ่าตัดของโรงพยาบาล, มี checklist |\n| **Process** | ใช้สิ่งนั้นจริงไหม | ให้ antibiotic ภายใน 60 นาทีก่อนลงมีด, VTE prophylaxis |\n| **Outcome** | ผู้ป่วยได้รับอันตรายบ่อยแค่ไหน | 30-day mortality, SSI, readmission |\n\n### วัดคุณภาพ: NSQIP และ failure to rescue\n- **NSQIP** เริ่มใน VA ปี 1991 (ลด 30-day mortality 31% และ morbidity 45% ในทศวรรษแรก) แล้วขยายสู่ภาคเอกชนโดย ACS ปี 2004; เก็บข้อมูลทางคลินิกโดย **trained clinical reviewer** (ไม่ใช่ billing data) ติดตาม **30 วัน** แม้ผู้ป่วยกลับบ้านแล้ว\n- รายงานเป็น **risk-adjusted observed-to-expected (O/E) ratio**: O/E >1 และ CI ไม่คร่อม 1 = **high outlier** (แย่กว่าที่คาดเมื่อปรับ case mix แล้ว) → ใช้หาจุดพัฒนา; มี **ACS NSQIP Surgical Risk Calculator** ใช้คุยความเสี่ยงกับผู้ป่วย\n- **Failure to rescue** (ตายหลังเกิด complication) คือสิ่งที่แยกโรงพยาบาล mortality สูงกับต่ำ — อัตรา complication ใกล้กัน แต่โรงพยาบาลที่ดีจับและแก้ complication ได้เร็วกว่า (rapid response, ICU, ทีมพร้อม)\n- เครื่องมือพัฒนา: **PDSA cycle** (Plan-Do-Study-Act) รอบเล็กและเร็ว, **root cause analysis** หลัง sentinel event (ถามว่า \"ทำไม\" ซ้ำ ๆ หา latent condition), FMEA (วิเคราะห์ล่วงหน้า)\n\n### WHO Surgical Safety Checklist, time-out และ handoff\n\n| ช่วง | สิ่งที่ยืนยัน |\n|---|---|\n| **Sign in** (ก่อนดมยา) | identity, site marking, consent, ความพร้อมเครื่องดมยา, pulse oximeter, แพ้ยา, difficult airway/aspiration, เสี่ยงเสียเลือด >500 mL (เด็ก 7 mL/kg) |\n| **Time out** (ก่อนลงมีด) | ทีมแนะนำตัว, ยืนยันผู้ป่วย-ตำแหน่ง-หัตถการ, critical events ที่คาด, **antibiotic ใน 60 นาที**, ภาพที่จำเป็นแสดงอยู่ |\n| **Sign out** (ก่อนออกห้อง) | ชื่อหัตถการ, **นับเครื่องมือ/ผ้า/เข็มครบ**, ติดป้ายชิ้นเนื้อ, ปัญหาอุปกรณ์, ข้อกังวลสำหรับ recovery |\n\n- **Haynes et al. (NEJM 2009)** ใน 8 โรงพยาบาลทั่วโลก: mortality ลดจาก 1.5% เหลือ 0.8% และ complication จาก 11% เหลือ 7% — ผลมาจากการเปลี่ยน **วัฒนธรรมทีม** ไม่ใช่แค่ติ๊กช่อง\n- **Universal Protocol** (Joint Commission): pre-procedure verification, **site marking โดยผู้ทำหัตถการ**, time-out\n- Handoff ที่เป็นโครงสร้าง (**I-PASS**, SBAR) ลด medical error; ใช้ **closed-loop communication** และให้ทุกคนในทีมมีสิทธิ์ \"หยุด\" (speak up) แบบ crew resource management\n\n### Never events และ retained surgical items\n- **Never events** (NQF) = เหตุการณ์ร้ายแรงที่ป้องกันได้และไม่ควรเกิด เช่น **wrong site/procedure/patient**, **retained foreign object**, ตายระหว่าง/หลังผ่าตัดทันทีใน ASA I, ใส่ผิดตัว (implant), ฉีด/ให้เลือดผิดกรุ๊ป, ไฟไหม้ในห้องผ่าตัด\n- Retained surgical item พบประมาณ **1 ต่อ 8,000–18,000** ครั้ง; ชนิดที่พบบ่อยที่สุดคือ **ผ้าซับ (sponge)** ทำให้เกิด abscess, fistula, obstruction หรือ **gossypiboma**\n\n| ปัจจัยเสี่ยง retained sponge | การป้องกัน |\n|---|---|\n| **ผ่าตัดฉุกเฉิน**, เปลี่ยนแผนผ่าตัดกลางคัน, **BMI สูง**, หลายทีม/หลายหัตถการ, เปลี่ยนเวรพยาบาลระหว่างผ่าตัด | นับมาตรฐาน, สำรวจแผลอย่างเป็นระบบก่อนปิด, ใช้เฉพาะของที่ทึบรังสี, **ถ่าย X-ray ก่อนออกห้อง** เมื่อนับไม่ตรงหรือมีปัจจัยเสี่ยง, debriefing |\n\n- \"**Falsely correct count**\" พบใน 21–100% ของรายที่เกิด retained item — การนับอย่างเดียวไม่พอ ต้องมีระบบซ้อน (radiograph, RF-tagged sponge)\n- พบ retained sponge → เอาออกเสมอ; เข็มเล็กที่ฝังลึกอาจไม่ต้องเอาออกถ้าการผ่าเสี่ยงกว่า\n\n### M&M และการเปิดเผยความผิดพลาด\n- **M&M conference** ที่ดี: เน้น **ระบบและการเรียนรู้** ไม่ใช่หาคนผิด, จัดประเภท complication (เช่น Clavien–Dindo), แยก error ของ judgment/technique/system, ปิดท้ายด้วย action item ที่วัดได้\n- **Disclosure**: บอกผู้ป่วย/ญาติโดยเร็ว อธิบายข้อเท็จจริงที่รู้ แสดงความเสียใจ บอกสิ่งที่จะทำต่อและการป้องกันไม่ให้เกิดซ้ำ บันทึกในเวชระเบียน — โปรแกรมแบบ communication-and-resolution (เช่น CANDOR) ลดการฟ้องร้องและเพิ่มความไว้วางใจ\n- Human factors ที่ต้องรู้: **fatigue** (ACGME จำกัดชั่วโมง), interruption/distraction ระหว่างนับ, hierarchy ที่ทำให้ไม่กล้าทัก, alarm fatigue\n",
+   "pearls": [
+    "Swiss cheese: latent condition (ระบบ) + active failure (คน) เรียงตรงกัน",
+    "Donabedian: structure → process → outcome",
+    "NSQIP = clinical data 30 วัน, risk-adjusted O/E",
+    "Failure to rescue อธิบายความต่างของ mortality ระหว่างโรงพยาบาล",
+    "WHO checklist (Haynes 2009): mortality 1.5→0.8%, complication 11→7%",
+    "Retained sponge: ฉุกเฉิน, เปลี่ยนแผน, BMI สูง, หลายทีม → X-ray ก่อนออกห้อง",
+    "M&M และ disclosure เน้นระบบ ไม่ใช่หาคนผิด"
+   ],
+   "items": [
+    {
+     "id": "RES-15-1-1",
+     "kind": "mcq",
+     "topic": "Retained surgical item — count discrepancy",
+     "stem": "A 34-year-old man undergoes an emergency trauma laparotomy for a motorcycle crash. The operation lasts 5 hours, involves packing and a change of scrub nurses midway, and the patient's BMI is 34 kg/m². At closure, the sponge count is short by one; a methodical wound search finds nothing. The patient is hemodynamically stable. What is the most appropriate next step before he leaves the operating room?",
+     "choices": [
+      "Obtain an intraoperative abdominal radiograph",
+      "Close the abdomen and document the discrepancy for follow-up",
+      "Close and obtain a CT scan on postoperative day 1",
+      "Reopen and explore again without imaging until the sponge is found",
+      "Accept the count as an error because the search was negative"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **ปัจจัยเสี่ยง retained sponge หลายข้อ**: ผ่าตัดฉุกเฉิน ผ่าตัดนาน มีการเปลี่ยนเวรพยาบาล BMI สูง และ **นับไม่ตรง** แนวทาง ACS/AORN/Joint Commission แนะนำ **ถ่าย X-ray ในห้องผ่าตัด** ก่อนผู้ป่วยออกจากห้องเมื่อมีความไม่แน่ใจเรื่องการนับ เพราะการนับเองมี falsely correct count และการเอาออกตอนนี้ปลอดภัยที่สุด (ผ้าซับในแบบมาตรฐานมีแถบทึบรังสี)\n- **ปิดแล้วบันทึก** — ปล่อยให้เกิด never event ที่ป้องกันได้\n- **CT วันรุ่งขึ้น** — ทำให้ต้องดมยาและผ่าตัดซ้ำ\n- **สำรวจซ้ำไม่จำกัดโดยไม่ใช้ภาพ** — ยืดเวลาผ่าตัดโดยไม่จำเป็น radiograph ชี้ตำแหน่งได้\n- **ถือว่านับผิด** — ขัดหลักความปลอดภัย",
+     "pearl": "นับไม่ตรงหรือมีปัจจัยเสี่ยง → X-ray ในห้องผ่าตัดก่อนออก",
+     "src": "Schwartz 11e Ch 12",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 12"
+     ]
+    },
+    {
+     "id": "RES-15-1-2",
+     "kind": "mcq",
+     "topic": "Failure to rescue",
+     "stem": "A regional health authority compares NSQIP data from hospitals in the highest and lowest quintiles of risk-adjusted mortality after major abdominal surgery. Overall complication rates are nearly identical between the two groups, but mortality is almost twice as high in the worst-performing hospitals. Which concept best explains this difference?",
+     "choices": [
+      "Failure to rescue",
+      "Selection bias in case mix",
+      "Higher rates of surgical site infection",
+      "Lower surgeon procedural volume causing more complications",
+      "Coding inaccuracies in administrative data"
+     ],
+     "answer": 0,
+     "explain": "**Failure to rescue** = สัดส่วนผู้ป่วยที่ **เสียชีวิตหลังเกิด complication** เมื่อ complication rate ใกล้กันแต่ mortality ต่างกันมาก แสดงว่าโรงพยาบาลที่ดีกว่า **จับและแก้ complication ได้ทัน** (rapid response, ICU, ทีมและทรัพยากร) ไม่ใช่ว่าเกิด complication น้อยกว่า — เป้าการพัฒนาจึงรวมถึงระบบ rescue\n- **Selection bias** — NSQIP ปรับความเสี่ยงแล้ว และ complication ใกล้กัน\n- **SSI สูงกว่า** — ขัดกับที่ complication rate ใกล้กัน\n- **Volume ต่ำทำให้ complication มาก** — ข้อมูลบอกว่า complication ไม่ต่าง\n- **Coding error** — NSQIP ใช้ clinical reviewer ไม่ใช่ข้อมูล billing",
+     "pearl": "Complication เท่ากัน แต่ตายต่างกัน = failure to rescue",
+     "src": "Schwartz 11e Ch 12",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 12"
+     ]
+    },
+    {
+     "id": "RES-15-1-3",
+     "kind": "mcq",
+     "topic": "Latent condition in a wrong-site event",
+     "stem": "A root cause analysis is performed after a left inguinal hernia repair was performed on a patient scheduled for a right-sided repair. Findings: the electronic OR schedule listed 'left' because of a template default, the site was not marked because the patient arrived late, the time-out was abbreviated because the room was running behind, and the surgeon relied on memory of the clinic visit. Which finding represents a latent condition rather than an active failure?",
+     "choices": [
+      "An OR scheduling template that defaults to the left side",
+      "The surgeon relying on memory of the clinic visit",
+      "The team abbreviating the time-out",
+      "Failure of the surgeon to mark the operative site",
+      "The circulating nurse not reading the consent aloud"
+     ],
+     "answer": 0,
+     "explain": "ตาม **Swiss cheese model** — **latent condition** คือจุดอ่อนที่ฝังอยู่ในระบบ ออกแบบไว้ล่วงหน้าและรอวันทำให้เกิดอุบัติการณ์ เช่น **template ตารางผ่าตัดที่ตั้งค่าข้างซ้ายเป็น default** ซึ่งจะทำให้เกิด error กับผู้ป่วยรายอื่นได้อีก แก้ด้วยการออกแบบระบบใหม่ (forcing function) ส่วน **active failure** คือการกระทำผิดของคนหน้างาน ณ เวลานั้น\n- **พึ่งความจำ** — active failure ของศัลยแพทย์\n- **ย่อ time-out** — active failure (แม้มีแรงกดดันด้านเวลาเป็นปัจจัยร่วม)\n- **ไม่ mark site** — active failure ต่อ Universal Protocol\n- **ไม่อ่าน consent** — active failure ของบุคคล",
+     "pearl": "Latent condition = จุดอ่อนในระบบ (template, staffing, policy); active failure = การกระทำหน้างาน",
+     "src": "Schwartz 11e Ch 12",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 12"
+     ]
+    },
+    {
+     "id": "RES-15-1-4",
+     "kind": "mcq",
+     "topic": "Interpreting NSQIP O/E ratio",
+     "stem": "Your hospital's semiannual ACS NSQIP report for colectomy shows an observed-to-expected ratio for surgical site infection of 1.6 (95% CI 1.3–1.9) and is flagged as a 'high outlier'. Mortality O/E is 0.9 (95% CI 0.6–1.2). Which interpretation is most accurate?",
+     "choices": [
+      "SSI is significantly higher than expected after adjustment for patient risk, while mortality is as expected",
+      "Your patients are sicker than average, which explains the high SSI rate",
+      "Both SSI and mortality are significantly better than expected",
+      "Mortality is significantly worse than expected because the ratio is close to 1",
+      "The SSI result cannot be interpreted without raw complication counts"
+     ],
+     "answer": 0,
+     "explain": "NSQIP รายงาน **risk-adjusted O/E ratio** โดยคาดการณ์จากลักษณะผู้ป่วยแล้ว O/E 1.6 ที่ **CI ไม่คร่อม 1** หมายถึง SSI สูงกว่าที่ควรเป็น **หลังปรับความเสี่ยงของผู้ป่วยแล้ว** (high outlier) → เป็นเป้าหมายของ QI เช่น colorectal SSI bundle ส่วน mortality O/E 0.9 ที่ CI คร่อม 1 = ไม่ต่างจากที่คาด\n- **ผู้ป่วยป่วยหนักกว่า** — case mix ถูกปรับไว้ในค่า expected แล้ว\n- **ดีกว่าที่คาดทั้งคู่** — O/E >1 คือแย่กว่า\n- **Mortality แย่กว่า** — CI คร่อม 1 ไม่มีนัยสำคัญ\n- **ต้องมีตัวเลขดิบ** — O/E พร้อม CI ตีความได้ในตัว",
+     "pearl": "NSQIP O/E >1 และ CI ไม่คร่อม 1 = แย่กว่าที่คาดหลังปรับ case mix",
+     "src": "Schwartz 11e Ch 12",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-15-2",
+   "title": "Minimally invasive surgery: physiology, access & energy",
+   "summary": "Pneumoperitoneum เปลี่ยนสรีรวิทยาอย่างไร จะเข้าช่องท้องให้ปลอดภัยและแก้ภาวะแทรกซ้อนจาก access, gas embolism และ energy device ได้อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 14 — Physiology of pneumoperitoneum; Access; Energy sources",
+   "md": "### สรีรวิทยาของ CO2 pneumoperitoneum\nCO2 ถูกใช้เพราะละลายในเลือดดีและไม่ติดไฟ แต่ถูกดูดซึมเกิด **respiratory acidosis**; ร่างกายมีบัฟเฟอร์ (ส่วนใหญ่ในกระดูก) ดูดซับได้ระยะหนึ่ง จากนั้นต้องเพิ่ม minute ventilation — ถ้าต้องใช้ RR เกิน 20 ครั้ง/นาที การแลกเปลี่ยนก๊าซจะด้อยลง\n\n| ระบบ | ผล | ประเด็นทางคลินิก |\n|---|---|---|\n| หัวใจและหลอดเลือด | **SVR และ MAP เพิ่ม** (hypercarbia + catecholamine), venous return ลดใน **hypovolemia + reverse Trendelenburg**, CVP/filling pressure อ่านค่าสูงเทียม | IAP <20 mmHg cardiac output มักคงที่; ใช้ **12–15 mmHg** |\n| Arrhythmia | **bradycardia** จาก vagal เมื่อ peritoneum ถูกยืดเร็ว | **ปล่อยลม** + atropine + ให้สารน้ำ |\n| ปอด | diaphragm ถูกดันขึ้น, FRC ลด, peak airway pressure เพิ่ม, hypercarbia | COPD เก็บ CO2 → ลดความดัน/พักปล่อยลม |\n| ไต | renal blood flow, GFR, **urine output ลด**; ADH และ renin สูง (ค้างได้ ~1 ชม. หลังผ่าตัด) | **oliguria ระหว่างผ่าตัดไม่ได้สะท้อน volume** — อย่าให้น้ำตาม UO |\n| หลอดเลือดดำ | กด IVC → venous stasis ขา | **VTE prophylaxis** ในหัตถการนาน |\n| สมอง | **ICP เพิ่ม** | ระวังใน head injury/VP shunt |\n\n### Gas embolism, capnothorax และ subcutaneous emphysema\n- **CO2 embolism**: พบน้อยแต่ร้ายแรง มักเกิดช่วง insufflation (Veress เข้าหลอดเลือด) หรือขณะเปิด venous sinus — **ความดันตกทันที, EtCO2 ตก (อาจขึ้นชั่วครู่ก่อน), SpO2 ตก, arrhythmia, \"mill-wheel\" murmur**\n- จัดการ: **หยุด insufflation และปล่อยลมทันที**, O2 100%, จัดท่า **left lateral decubitus + head down** (Durant) ให้ก๊าซค้างที่ยอด RV, ดูดก๊าซผ่าน **central venous catheter**, CPR ถ้าจำเป็น\n- ก๊าซเฉื่อย (helium, argon) ละลายน้อยกว่า CO2 จึงเสี่ยง embolism มากกว่า; **argon beam** ในช่องท้องที่ปิดต้อง vent port\n- **Capnothorax/pneumothorax** (มักใน hiatal/esophageal surgery): airway pressure สูง SpO2 ตก — ลดความดันช่องท้อง เพิ่ม PEEP ส่วนใหญ่หายเองเพราะ CO2 ถูกดูดซึมเร็ว; tension physiology → decompress\n- **Subcutaneous emphysema** จาก extraperitoneal insufflation: hypercarbia สูงขึ้นมาก — ลดความดัน ปรับ ventilation\n\n### Access: Veress, Hasson และการบาดเจ็บจากการเข้าช่องท้อง\n\n| วิธี | จุดเด่น | ข้อควรระวัง |\n|---|---|---|\n| **Veress needle** | เร็ว; รู้สึก **2 pops** (fascia, peritoneum), saline drop test, ความดันเริ่มต้นต่ำและ flow ดี | blind; ชี้ไปทาง pelvis ห่างจาก **aorta/iliac**; ผอมมากเสี่ยงหลอดเลือด |\n| **Hasson (open)** | เห็นชั้นต่าง ๆ; เหมาะผ่าตัดช่องท้องเก่า, ตั้งครรภ์, เด็ก | gas leak, ใช้เวลามากกว่า |\n| Optical trocar | เห็นชั้นขณะแทง | ต้องรู้จักชั้น abdominal wall ดี |\n| **Palmer's point** | LUQ, midclavicular ใต้ชายโครง 3 cm — เมื่อมีพังผืดบริเวณสะดือ | ใส่ NG tube ลดกระเพาะก่อน |\n\n- **บาดเจ็บหลอดเลือดใหญ่** (aorta, iliac, IVC) ระหว่าง access: เลือดออกจาก Veress หรือความดันตกทันที/retroperitoneal hematoma → **คา trocar ไว้ที่เดิม**, เปิดท้อง midline ทันที, กดห้ามเลือด, เรียก vascular surgeon\n- **บาดเจ็บลำไส้** ที่ไม่เห็นในขณะผ่าตัด → peritonitis ภายหลัง mortality สูง — ผู้ป่วยหลัง laparoscopy ควร **ดีขึ้นทุกวัน** ถ้าแย่ลงต้องคิดถึง bowel injury ก่อนเสมอ\n- **Port-site hernia**: ปิด fascia ทุก port ≥10 mm (โดยเฉพาะ umbilicus) และ port ในเด็ก; ระวัง Richter's hernia\n\n### Energy devices: กลไกและการบาดเจ็บที่มองไม่เห็น\n\n| อุปกรณ์ | วงจร/กลไก | ข้อควรรู้ |\n|---|---|---|\n| **Monopolar** | กระแสผ่านตัวผู้ป่วยไป **grounding pad** | ถูกแต่เสี่ยง stray current; cut = continuous low voltage, coag = high voltage |\n| **Bipolar / advanced bipolar** | กระแสระหว่างขากรรไกร | seal หลอดเลือดได้ถึง **7 mm**; lateral spread น้อย |\n| **Ultrasonic** (harmonic) | สั่นความถี่สูง → denature โปรตีน ไม่มีกระแสผ่านตัว | seal ~5 mm (บางรุ่นถึง 7 mm); **active blade ยังร้อนหลังกดใช้** |\n| Argon beam | monopolar ผ่าน argon jet | ผิว liver/spleen; ระวัง gas embolism |\n\n- กลไก stray current ของ monopolar: **insulation failure** (พบบ่อยที่สุด มักอยู่นอกสายตา), **direct coupling** (electrode แตะ instrument/scope โลหะ), **capacitive coupling** (เกิดกับ **hybrid trocar** — cannula โลหะที่มีปลอกยึดพลาสติก กระแสไม่ระบายผ่านผนังหน้าท้อง)\n- ผลลัพธ์คือ **thermal injury ของลำไส้ที่ไม่เห็น** → ทะลุวันที่ 3–7 ป้องกันโดยเห็นส่วนที่ไม่หุ้มฉนวนตลอด, ใช้ low-voltage (cut) waveform, ไม่ activate ในอากาศ, ใช้ trocar ชนิดเดียวกันทั้งระบบ, active electrode monitoring\n- ผู้ป่วยมี **pacemaker/ICD**: ใช้ bipolar หรือ ultrasonic, วาง pad ให้ห่างวงจรผ่านหัวใจ, ปรึกษาตั้งเครื่อง\n- **Laparoscopy ในหญิงตั้งครรภ์**: ทำได้ทุกไตรมาส (SAGES) แม้ Schwartz ว่าดีที่สุดในไตรมาส 2; จัดท่าเอียงซ้าย, access ตามระดับยอดมดลูก (open/Palmer's), **IAP 10–15 mmHg**, monitor EtCO2 (fetal pH ตาม maternal pH), ฟังเสียงหัวใจทารกก่อน-หลัง, VTE prophylaxis\n",
+   "pearls": [
+    "CO2 → respiratory acidosis, ↑SVR/MAP; hypovolemia + reverse Trendelenburg → ↓venous return",
+    "Bradycardia จากการยืด peritoneum: ปล่อยลม + atropine",
+    "Oliguria ระหว่าง laparoscopy ไม่สะท้อน volume",
+    "CO2 embolism: หยุดก๊าซ left lateral head-down ดูดผ่าน CVC",
+    "Vascular injury จาก access: คา trocar + laparotomy ทันที",
+    "Capacitive coupling เกิดกับ hybrid trocar; insulation failure พบบ่อยที่สุด",
+    "ตั้งครรภ์: ทำได้ทุกไตรมาส, IAP 10–15 mmHg, เอียงซ้าย"
+   ],
+   "items": [
+    {
+     "id": "RES-15-2-1",
+     "kind": "mcq",
+     "topic": "CO2 gas embolism",
+     "stem": "During initial Veress needle insufflation for a laparoscopic cholecystectomy in a 52-year-old woman, intra-abdominal pressure rises slowly to 8 mmHg. Suddenly BP falls from 128/76 to 62/30 mmHg, end-tidal CO2 drops from 36 to 14 mmHg, SpO2 falls to 84% and a 'mill-wheel' murmur is heard over the precordium. What is the most appropriate immediate management?",
+     "choices": [
+      "Stop insufflation, release the pneumoperitoneum and place the patient in left lateral decubitus with head down",
+      "Increase insufflation pressure to 15 mmHg to tamponade venous bleeding",
+      "Place the patient in reverse Trendelenburg with the right side down",
+      "Give a fluid bolus and phenylephrine and continue the operation",
+      "Convert immediately to laparotomy to search for major vascular injury"
+     ],
+     "answer": 0,
+     "explain": "ความดันตก + **EtCO2 ตกทันที** + hypoxemia + **mill-wheel murmur** ระหว่าง insufflation = **CO2 gas embolism** (Veress อาจเข้าหลอดเลือดดำ) ต้อง **หยุดใส่ก๊าซและปล่อยลมทันที**, ให้ O2 100%, จัดท่า **left lateral decubitus + Trendelenburg** เพื่อให้ฟองก๊าซลอยค้างที่ยอด RV ไม่อุด RVOT แล้วดูดผ่าน central line; CPR ถ้า arrest\n- **เพิ่มความดัน** — ดันก๊าซเข้าระบบหลอดเลือดมากขึ้น\n- **Reverse Trendelenburg ขวาลง** — ทำให้ก๊าซไปอุด RVOT\n- **Fluid + pressor แล้วผ่าต่อ** — ไม่หยุดแหล่งของก๊าซ\n- **เปิดท้องหาเส้นเลือด** — ภาพทางคลินิกเป็น embolism ไม่ใช่ hemorrhage (EtCO2 ตกแบบนี้และ murmur เฉพาะ)",
+     "pearl": "CO2 embolism: หยุดก๊าซ ปล่อยลม left lateral + head down ดูดผ่าน CVC",
+     "src": "Schwartz 11e Ch 14",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 14"
+     ]
+    },
+    {
+     "id": "RES-15-2-2",
+     "kind": "mcq",
+     "topic": "Capacitive coupling injury",
+     "stem": "A 47-year-old man is readmitted on postoperative day 4 after an uncomplicated laparoscopic cholecystectomy with fever, diffuse peritonitis and free air. At reoperation a small, blanched transmural perforation is found on the transverse colon far from the operative field. The case used a monopolar hook through an epigastric port consisting of a metal cannula held by a plastic abdominal-wall anchor; no instrument insulation defect was found on testing. What is the most likely mechanism?",
+     "choices": [
+      "Capacitive coupling through the hybrid metal–plastic trocar",
+      "Direct coupling from the hook touching the laparoscope",
+      "Ultrasonic energy lateral thermal spread",
+      "Grounding pad failure causing an alternate-site burn",
+      "Veress needle puncture during access"
+     ],
+     "answer": 0,
+     "explain": "การบาดเจ็บความร้อนของลำไส้ที่ **อยู่ไกลจากจุดผ่าตัด** และเกิดทะลุภายหลัง เข้ากับ stray current ของ monopolar เมื่อใช้ **hybrid trocar** (cannula โลหะ + ปลอกยึดพลาสติก) กระแสที่ถูก induce บน cannula โลหะ (ตัวเก็บประจุ) ระบายออกผ่านผนังหน้าท้องไม่ได้เพราะพลาสติกกั้น จึงปล่อยเข้าสู่ลำไส้ที่แตะ cannula = **capacitive coupling**; ป้องกันโดยใช้ระบบ trocar ชนิดเดียวกัน (all-metal หรือ all-plastic) และ low-voltage waveform\n- **Direct coupling** — ต้องมีการสัมผัส instrument โลหะ ซึ่งมักเห็นในสนาม\n- **Ultrasonic** — ไม่ได้ใช้ และ lateral spread อยู่ใกล้จุดทำงาน\n- **Grounding pad** — ทำให้ไหม้ที่ผิวหนังบริเวณ pad/จุดสัมผัสโลหะ ไม่ใช่ลำไส้\n- **Veress puncture** — ทำให้รูทะลุจากเข็ม ไม่ใช่รอยไหม้ซีดและไม่อยู่ใน transverse colon ที่ห่างไกล",
+     "pearl": "Stray monopolar: insulation failure, direct coupling, capacitive coupling (hybrid trocar)",
+     "src": "Schwartz 11e Ch 14",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 14"
+     ]
+    },
+    {
+     "id": "RES-15-2-3",
+     "kind": "mcq",
+     "topic": "Intraoperative oliguria during laparoscopy",
+     "stem": "A 65-year-old woman is 2 hours into a laparoscopic right colectomy at an insufflation pressure of 14 mmHg. Urine output over the past hour is 12 mL (0.2 mL/kg/h). HR is 78/min, BP 138/82 mmHg, pulse pressure variation is 6%, lactate is 1.1 mmol/L and estimated blood loss is 80 mL. She received 1,000 mL of balanced crystalloid. What is the most appropriate management of the low urine output?",
+     "choices": [
+      "Continue current fluid management because oliguria is an expected effect of pneumoperitoneum",
+      "Give a 2-L crystalloid bolus to restore urine output above 0.5 mL/kg/h",
+      "Administer intravenous furosemide",
+      "Convert to open surgery to relieve intra-abdominal pressure",
+      "Start a low-dose dopamine infusion for renal protection"
+     ],
+     "answer": 0,
+     "explain": "Pneumoperitoneum ลด renal blood flow และ GFR จากการกดไต/renal vein และกระตุ้น **ADH และ renin** ทำให้ **oliguria ระหว่าง laparoscopy เป็นเรื่องปกติและไม่สะท้อน volume status** ผู้ป่วย hemodynamics ดี PPV ต่ำ lactate ปกติ เลือดออกน้อย → ให้สารน้ำตาม goal เดิม ไม่ต้องไล่ตาม UO (UO จะกลับมาหลังปล่อยลม ราว 1 ชม.)\n- **Bolus 2 L** — เสี่ยง fluid overload ขัดหลัก ERAS\n- **Furosemide** — ไม่มีข้อบ่งชี้และอาจทำให้ขาดน้ำ\n- **Convert to open** — ไม่จำเป็นในผู้ป่วยที่คงที่\n- **Renal-dose dopamine** — ไม่มีหลักฐานว่าป้องกันไต",
+     "pearl": "Oliguria ระหว่าง laparoscopy = ผลของ pneumoperitoneum/ADH ไม่ใช่ตัวบอก volume",
+     "src": "Schwartz 11e Ch 14",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 14"
+     ]
+    },
+    {
+     "id": "RES-15-2-4",
+     "kind": "mcq",
+     "topic": "Major vascular injury during trocar insertion",
+     "stem": "During placement of the first 10-mm periumbilical trocar by direct-puncture technique in a thin 24-year-old woman, the camera shows rapidly expanding blood at the base of the mesentery and a retroperitoneal hematoma near the sacral promontory. BP falls to 70/40 mmHg. What is the most appropriate next step?",
+     "choices": [
+      "Leave the trocar in place and perform an immediate midline laparotomy",
+      "Remove the trocar and observe the hematoma laparoscopically",
+      "Increase insufflation pressure to 20 mmHg to tamponade bleeding",
+      "Obtain CT angiography after fluid resuscitation",
+      "Desufflate, close the port site and transfer to the ICU for transfusion"
+     ],
+     "answer": 0,
+     "explain": "ความดันตก + **retroperitoneal hematoma ที่ขยายเร็ว** ใกล้ sacral promontory หลังแทง trocar ในผู้ป่วยผอม = **บาดเจ็บ aorta/iliac vessels** ต้อง **คา trocar ไว้** (ช่วยอุดรูและบอกตำแหน่ง) แล้ว **เปิดท้อง midline ทันที** กดห้ามเลือด proximal control และตามศัลยแพทย์หลอดเลือด พร้อม massive transfusion protocol\n- **ดึง trocar ออกแล้วดู** — เพิ่มเลือดออกและเสียเวลา\n- **เพิ่มความดันก๊าซ** — ไม่ห้ามเลือดแดงใหญ่ และเพิ่มเสี่ยง gas embolism\n- **CT angiography** — ผู้ป่วย unstable ต้องผ่าตัดไม่ใช่ส่งตรวจ\n- **ปิดแล้วไป ICU** — ปล่อยให้เสียชีวิตจาก hemorrhage",
+     "pearl": "Vascular injury จาก trocar: คา trocar ไว้ + เปิดท้องทันที",
+     "src": "Schwartz 11e Ch 14",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-15-3",
+   "title": "Evidence-based surgery: designs, bias & statistics pitfalls",
+   "summary": "อ่าน paper ศัลยกรรมอย่างไรไม่ให้ถูกหลอก: design ไหนตอบคำถามอะไร bias แบบใดทำให้ผลเพี้ยน และตีความ NNT, P value, power และ noninferiority ให้ถูก",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 51 — Understanding, evaluating, and using evidence for surgical practice",
+   "md": "### Study designs: เลือกให้ถูกคำถาม\n\n| Design | เหมาะกับ | จุดอ่อนหลัก |\n|---|---|---|\n| **RCT** | ประสิทธิผลของการรักษา (causation) | แพง, generalizability, blinding ยากในศัลยกรรม, learning curve |\n| Prospective cohort | incidence, ปัจจัยเสี่ยง, outcome ระยะยาว | confounding, loss to follow-up |\n| Retrospective cohort/registry (NSQIP) | ข้อมูลใหญ่ เหตุการณ์หายาก | **selection bias**, ข้อมูลไม่ครบ |\n| **Case-control** | **โรค/outcome ที่พบน้อย** | recall bias; ได้ **odds ratio** ไม่ได้ incidence |\n| Cross-sectional | prevalence | บอก temporality ไม่ได้ |\n| Case series | โรคใหม่/เทคนิคใหม่ | ไม่มี comparator |\n| Systematic review/meta-analysis | รวมหลักฐาน เพิ่ม power | **heterogeneity** (I²), publication bias, garbage in–garbage out |\n\n- **GRADE** ประเมินคุณภาพของ \"กลุ่มหลักฐาน\" (high/moderate/low/very low) ไม่ได้ดูแค่ design: RCT ลดระดับได้จาก risk of bias, inconsistency, indirectness, imprecision, publication bias; observational เพิ่มระดับได้เมื่อ effect ใหญ่มากหรือมี dose-response; คำแนะนำแบ่ง **strong vs weak (conditional)**\n- ปัญหาเฉพาะ RCT ศัลยกรรม: ปิดบังศัลยแพทย์ไม่ได้, sham surgery มีประเด็นจริยธรรม, ผลขึ้นกับฝีมือ → **expertise-based design** (สุ่มผู้ป่วยไปหาศัลยแพทย์ที่ถนัดวิธีนั้น), ต้องมี **equipoise**\n\n### Bias และ confounding ที่ข้อสอบชอบ\n\n| Bias | กลไก | วิธีลด |\n|---|---|---|\n| **Selection / confounding by indication** | ผู้ป่วยที่ได้การรักษาหนึ่งแข็งแรงกว่าตั้งแต่แรก (เช่น เลือก laparoscopy ในคนแข็งแรง) | randomization; ในข้อมูล observational ใช้ multivariable/**propensity score** (ปรับได้เฉพาะตัวแปรที่วัด) |\n| Information/measurement, recall | วัด outcome ต่างกัน/จำต่างกัน | blinded outcome assessor, นิยามมาตรฐาน |\n| Performance | ดูแลกลุ่มต่างกันนอกเหนือจาก intervention | protocol มาตรฐาน |\n| **Attrition** | สูญหายไม่เท่ากัน | ITT, ติดตามให้ครบ |\n| **Lead-time** | screening ทำให้วินิจฉัยเร็วขึ้น survival ดูยาวขึ้นแต่เสียชีวิตเวลาเดิม | ใช้ mortality ไม่ใช่ survival จากวันวินิจฉัย |\n| **Length-time** | screening จับโรคโตช้าได้มากกว่า | RCT ของ screening |\n| Publication | ผลบวกได้ตีพิมพ์มากกว่า | trial registration, funnel plot |\n\n### วัดขนาดผล: ARR, RRR, NNT, OR\n- **ARR** = risk กลุ่มควบคุม − risk กลุ่มรักษา · **RRR** = ARR ÷ risk กลุ่มควบคุม · **NNT = 1/ARR** (ปัดขึ้น) · NNH = 1/absolute risk increase ของผลเสีย\n- ตัวอย่าง: SSI 15% → 10% → ARR 5%, RRR 33%, **NNT 20** — RRR ฟังดูน่าประทับใจกว่าเสมอ ต้องดู ARR ด้วย\n- NNT ขึ้นกับ baseline risk: การรักษาเดียวกันมี NNT ต่ำในกลุ่มเสี่ยงสูง (Schwartz ยกตัวอย่าง cholecystectomy ป้องกัน idiopathic pancreatitis ซ้ำ NNT 5)\n- **Odds ratio ใกล้เคียง relative risk เมื่อ outcome พบน้อย (<10%)**; ถ้า outcome พบบ่อย OR จะเกินจริง\n- Diagnostic test: sensitivity/specificity เป็นคุณสมบัติของ test; **PPV/NPV ขึ้นกับ prevalence**; SnNout (sensitive สูง ผลลบ rule out), SpPin; likelihood ratio ใช้กับ pretest probability\n\n### Hypothesis testing และกับดักทางสถิติ\n\n| คำ | ความหมาย |\n|---|---|\n| **Type I error (α)** | บอกว่ามีความต่างทั้งที่ไม่มี (false positive) — มักตั้ง 0.05 |\n| **Type II error (β)** | บอกว่าไม่ต่างทั้งที่ต่างจริง (false negative) |\n| **Power = 1 − β** | มักตั้ง 80–90%; ขึ้นกับ effect size, variance, α และ **sample size** |\n| P value | ความน่าจะเป็นของข้อมูลแบบนี้ถ้า null จริง — **ไม่ใช่ขนาดผลและไม่ใช่ความสำคัญทางคลินิก** |\n| 95% CI | ช่วงที่บอกทั้งขนาดและความแม่นยำ — ถ้าคร่อม 1 (ratio) หรือ 0 (difference) = ไม่มีนัยสำคัญ |\n\n- **\"ไม่พบความต่าง\" ไม่เท่ากับ \"เท่ากัน\"** — trial เล็ก power ต่ำ เสี่ยง type II error\n- **Multiple comparisons/subgroup analysis**: ทดสอบ 20 อย่างจะมี 1 อย่าง \"significant\" โดยบังเอิญ — subgroup ที่ไม่ได้ prespecify เป็นเพียง hypothesis-generating; ใช้ Bonferroni หรือ interaction test\n- Composite endpoint: ต้องดูว่าองค์ประกอบใดขับผล (เช่น repeat revascularization ใน SYNTAX)\n- Schwartz เตือนว่าใช้ P <0.05 อย่างเดียวอาจได้ข้อสรุปผิดอย่างน้อย ~30% ของเวลา โดยเฉพาะ study ที่ power ต่ำ\n\n### Noninferiority trials และ ITT\n- ใช้เมื่อวิธีใหม่มีข้อดีอื่น (เจ็บน้อย, ถูกกว่า, invasive น้อย) และพอใจถ้า \"ไม่แย่กว่าเกินขอบเขต\" เช่น laparoscopic vs open colectomy สำหรับมะเร็ง, antibiotic vs appendectomy, sublobar vs lobectomy (CALGB 140503)\n- หัวใจคือ **noninferiority margin (Δ)** ที่กำหนดล่วงหน้า: ถ้าขอบของ CI ด้าน \"แย่กว่า\" **ไม่เกิน Δ** → noninferior; ถ้าคร่อม Δ → **สรุป noninferiority ไม่ได้**; ถ้า CI ทั้งช่วงอยู่ฝั่งดีกว่า 0 → อาจทดสอบ superiority ต่อได้\n- **Intention-to-treat** (\"once randomized, always analyzed\") รักษาประโยชน์ของ randomization ใน superiority trial; แต่ใน **noninferiority trial ITT ลากผลให้เหมือนกัน** (crossover/noncompliance) จึงต้องดู **per-protocol** ประกอบ ผลต้องสอดคล้องทั้งสองแบบ\n- Generalizability (external validity): ผู้ป่วยใน trial ตรงกับผู้ป่วยของเราไหม ศัลยแพทย์ใน trial มีประสบการณ์มากกว่าไหม\n",
+   "pearls": [
+    "NNT = 1/ARR; ต้องดู ARR ไม่ใช่ RRR อย่างเดียว",
+    "OR ≈ RR เมื่อ outcome พบน้อย (<10%)",
+    "PPV/NPV ขึ้นกับ prevalence; sens/spec ไม่ขึ้น",
+    "Power = 1 − β; trial เล็กไม่พบความต่าง ≠ เท่ากัน",
+    "Subgroup ที่ไม่ได้ prespecify = hypothesis-generating",
+    "Noninferiority: ขอบ CI ด้านแย่ต้องไม่เกิน margin; ดูทั้ง ITT และ per-protocol",
+    "Observational: confounding by indication → propensity score ช่วยได้บางส่วน"
+   ],
+   "items": [
+    {
+     "id": "RES-15-3-1",
+     "kind": "mcq",
+     "topic": "Calculating NNT",
+     "stem": "A randomized trial of an incisional negative-pressure wound therapy dressing after laparotomy enrolls 1,000 patients. Surgical site infection occurs in 15% of the standard-dressing group and in 10% of the negative-pressure group (P = .01). How many patients must be treated with the negative-pressure dressing to prevent one surgical site infection?",
+     "choices": [
+      "20",
+      "5",
+      "10",
+      "33",
+      "50"
+     ],
+     "answer": 0,
+     "explain": "**ARR** = 15% − 10% = **5%** (0.05) → **NNT = 1/ARR = 1/0.05 = 20** แปลว่าต้องใช้ dressing นี้ 20 รายจึงป้องกัน SSI ได้ 1 ราย ส่วน RRR = 5/15 = 33% ซึ่งฟังดูดีกว่า ต้องพิจารณาร่วมกับค่าใช้จ่ายและผลเสีย (NNH)\n- **5** — คือ ARR เป็นเปอร์เซ็นต์ ไม่ใช่ NNT\n- **10** — คือ risk ในกลุ่มรักษา\n- **33** — สับสนกับ RRR (33%)\n- **50** — คำนวณผิดจาก ARR 2%",
+     "pearl": "NNT = 1/ARR; RRR ดูน่าประทับใจกว่า ARR เสมอ",
+     "src": "Schwartz 11e Ch 51",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 51"
+     ]
+    },
+    {
+     "id": "RES-15-3-2",
+     "kind": "mcq",
+     "topic": "Interpreting a noninferiority result",
+     "stem": "A randomized noninferiority trial compares antibiotics with appendectomy for uncomplicated appendicitis. The prespecified noninferiority margin for treatment failure at 1 year is 10 percentage points. The difference in failure rate (antibiotics minus surgery) is 7 percentage points, with a two-sided 95% CI of 2 to 13 percentage points in both intention-to-treat and per-protocol analyses. What is the correct conclusion?",
+     "choices": [
+      "Noninferiority of antibiotics was not demonstrated",
+      "Antibiotics are noninferior because the point estimate is below the margin",
+      "Antibiotics are superior to appendectomy",
+      "The two treatments are equivalent",
+      "The result is invalid because a per-protocol analysis was performed"
+     ],
+     "answer": 0,
+     "explain": "ในการตีความ noninferiority ต้องดู **ขอบบนของ CI** (ด้านที่แย่กว่า) เทียบกับ **margin 10%** ขอบบน 13% **เกิน margin** จึง **สรุป noninferiority ไม่ได้** (แม้ point estimate 7% จะต่ำกว่า margin) และเพราะ CI ไม่คร่อม 0 จึงบอกได้ว่า antibiotic มี failure สูงกว่าจริงอย่างมีนัยสำคัญ\n- **Point estimate ต่ำกว่า margin** — ไม่พอ ต้องใช้ทั้งช่วง CI\n- **Superior** — ทิศทางผลแย่กว่า ไม่ใช่ดีกว่า\n- **Equivalent** — ต้องมี CI อยู่ภายใน ±margin ทั้งสองด้าน\n- **Per-protocol ทำให้ไม่ valid** — ตรงข้าม ใน NI trial ควรรายงานทั้ง ITT และ per-protocol",
+     "pearl": "Noninferiority: ขอบ CI ด้านแย่ต้องไม่เกิน margin; point estimate อย่างเดียวไม่พอ",
+     "src": "Schwartz 11e Ch 51",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 51"
+     ]
+    },
+    {
+     "id": "RES-15-3-3",
+     "kind": "mcq",
+     "topic": "Type II error in an underpowered trial",
+     "stem": "A single-center randomized trial of 60 patients compares mesh versus suture repair for small umbilical hernias. Recurrence at 2 years is 4% with mesh and 10% with suture repair (P = .38). The authors conclude that 'mesh and suture repair are equally effective.' A post hoc calculation shows the study had 20% power to detect this difference. What is the main flaw in their conclusion?",
+     "choices": [
+      "The study was underpowered, so a true difference may have been missed (type II error)",
+      "A type I error occurred because the P value is greater than 0.05",
+      "The study should have used a case-control design",
+      "Randomization introduced selection bias",
+      "The P value indicates that the observed difference is clinically unimportant"
+     ],
+     "answer": 0,
+     "explain": "ความต่างที่พบ (4% vs 10%) มีความหมายทางคลินิก แต่ trial มีผู้ป่วยน้อย **power เพียง 20%** ทำให้โอกาส **type II error (false negative)** สูงถึงราว 80% — การได้ P >0.05 จึงแปลว่า \"ไม่มีหลักฐานพอ\" ไม่ใช่ \"เท่ากัน\" (absence of evidence ไม่ใช่ evidence of absence) การจะสรุปว่าเท่ากันต้องออกแบบเป็น equivalence/noninferiority trial ที่มี margin และ sample size เพียงพอ\n- **Type I error** — คือ false positive ไม่ใช่สถานการณ์นี้\n- **Case-control** — ใช้กับ outcome หายาก ไม่ช่วยเปรียบเทียบการรักษา\n- **Randomization ทำให้เกิด selection bias** — randomization ลด bias\n- **P value บอกความสำคัญทางคลินิก** — P ไม่ได้บอกขนาดผล",
+     "pearl": "ไม่พบความต่างใน trial เล็ก ≠ เท่ากัน (type II error)",
+     "src": "Schwartz 11e Ch 51",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 51"
+     ]
+    },
+    {
+     "id": "RES-15-3-4",
+     "kind": "mcq",
+     "topic": "Confounding by indication in observational data",
+     "stem": "A national registry study of 20,000 patients undergoing elective colectomy reports 30-day mortality of 0.9% after laparoscopic resection versus 3.1% after open resection. Patients in the open group were older, had higher ASA class, more frequent prior abdominal surgery and more often had emergency admissions. Which is the most important threat to concluding that the laparoscopic approach itself lowers mortality?",
+     "choices": [
+      "Confounding by indication (selection bias)",
+      "Lead-time bias",
+      "Recall bias",
+      "Publication bias",
+      "Type II error"
+     ],
+     "answer": 0,
+     "explain": "ศัลยแพทย์ **เลือก** laparoscopy ในผู้ป่วยที่แข็งแรงกว่าและเลือก open ในผู้ป่วยหนัก ความต่างของ mortality จึงอาจมาจากความเสี่ยงพื้นฐาน ไม่ใช่จากวิธีผ่าตัด = **confounding by indication** ซึ่งเป็น selection bias หลักของข้อมูล observational แก้บางส่วนด้วย multivariable adjustment หรือ **propensity score matching** แต่ปรับได้เฉพาะตัวแปรที่เก็บ; คำตอบที่แท้ต้องใช้ RCT\n- **Lead-time bias** — เกี่ยวกับ screening และวันวินิจฉัย\n- **Recall bias** — ปัญหาของ case-control ที่ถามย้อนหลังจากผู้ป่วย\n- **Publication bias** — เกี่ยวกับการรวมหลายการศึกษา\n- **Type II error** — study ใหญ่และพบความต่างแล้ว",
+     "pearl": "Observational: วิธีที่ถูกเลือกในคนแข็งแรงดูดีเกินจริง = confounding by indication",
+     "src": "Schwartz 11e Ch 51",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 51"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-15-4",
+   "title": "Geriatric surgery (frailty, delirium) & palliative/end-of-life care",
+   "summary": "ประเมินผู้สูงอายุก่อนผ่าตัดอย่างไรให้เห็นความเสี่ยงที่แท้จริง ป้องกันและรักษา delirium อย่างไร และศัลยแพทย์ควรคุยเรื่อง DNR ผู้ตัดสินใจแทน และ palliative surgery อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 47 — Surgical considerations in older adults; Ch 48 — Ethics, palliative care, end of life",
+   "md": "### ประเมินผู้สูงอายุก่อนผ่าตัด (ACS NSQIP/AGS Best Practices)\nอายุตามปฏิทินทำนาย outcome ได้น้อยกว่า **สมรรถภาพ ความคิด และ frailty** การประเมินจึงต้องมากกว่า \"หัวใจ-ปอด\"\n\n| หมวด | เครื่องมือ/เกณฑ์ |\n|---|---|\n| Cognition & capacity | **Mini-Cog** (3-word recall + clock draw), ทดสอบ decision-making capacity |\n| Delirium risk, depression, alcohol | ซักประวัติ/คัดกรอง |\n| Function & falls | ADL/IADL, ประวัติล้ม, **Timed Up and Go ≥15 วินาที** = เสี่ยงสูง (complication 52–77% และ 1-year mortality ~31% เทียบ 3% ในกลุ่มเร็ว) |\n| **Frailty** | Fried phenotype, frailty index, Clinical Frailty Scale, mFI-5 |\n| Nutrition | BMI <18.5, **albumin <3.0 g/dL**, น้ำหนักลด >10–15% ใน 6 เดือน |\n| Medication | **Beers criteria**, polypharmacy, หยุดยาที่ไม่จำเป็น |\n| Goals & support | เป้าหมาย/ความคาดหวัง, advance directive, ผู้ตัดสินใจแทน, การดูแลหลังจำหน่าย |\n\n- **Fried frailty phenotype** 5 ข้อ: น้ำหนักลดโดยไม่ตั้งใจ, exhaustion, กิจกรรมน้อย, เดินช้า, grip อ่อน — 1–2 ข้อ = **prefrail**, ≥3 ข้อ = **frail**; อีกแนวคือ **deficit accumulation** (Rockwood frailty index)\n- Frail → complication, LOS, **ต้องจำหน่ายไปสถานดูแล** (OR สูงมาก) และ functional decline ถาวร — ใช้ข้อมูลนี้ทั้งตัดสินใจผ่าตัดและ **prehabilitation** (ออกกำลังกาย โภชนาการ จิตใจ 2–6 สัปดาห์)\n\n### Postoperative delirium\n- นิยาม (DSM-5): ความผิดปกติของ **attention และ awareness** เกิดเฉียบพลัน **fluctuate**; ตรวจด้วย **CAM**: (1) acute onset + fluctuating course **และ** (2) inattention **ร่วมกับ** (3) disorganized thinking **หรือ** (4) altered level of consciousness — ชนิด **hypoactive** พบบ่อยและถูกมองข้าม\n- อุบัติการณ์: 4–5% ใน cataract/urologic ถึง **50–60% ใน hip fracture และ AAA repair**; เพิ่ม 1-year mortality **2–3 เท่า**, เพิ่ม LOS, การเข้าสถานดูแล และ cognitive decline\n\n| ปัจจัยเสี่ยง (predisposing) | ปัจจัยกระตุ้น (precipitating) |\n|---|---|\n| อายุ ≥70, cognitive impairment, functional ต่ำ, สายตา/การได้ยินบกพร่อง, ซึมเศร้า, alcohol, Na/K/glucose ผิดปกติ | ผ่าตัดใหญ่ (intrathoracic, AAA), **Hct <30%**, ปวดที่คุมไม่ได้, restraint, **Foley**, ยาใหม่ ≥3 กลุ่ม, ขาดอาหาร, ติดเชื้อ, hypoxia, urinary retention |\n\n- ยาที่ทำให้เกิด: **anticholinergic** (diphenhydramine, promethazine, TCA), **benzodiazepine**, **meperidine**, corticosteroid, zolpidem, H2-blocker\n- ป้องกัน (HELP-type bundle): แว่น/เครื่องช่วยฟัง, reorientation, **early mobilization**, sleep hygiene, เอา catheter/สายออกเร็ว, คุมปวดด้วย multimodal (ปวดที่ไม่ได้รักษาเพิ่ม delirium)\n- รักษา: **หาสาเหตุที่แก้ได้ก่อน** (hypoxia, sepsis/leak, electrolyte, retention, ยา, alcohol withdrawal) → nonpharmacologic → antipsychotic ขนาดต่ำ **เฉพาะเมื่อเสี่ยงอันตรายต่อตนเอง/ผู้อื่น**; หลีกเลี่ยง benzodiazepine ยกเว้น alcohol/benzo withdrawal\n\n### จริยธรรมพื้นฐาน: capacity, consent และผู้ตัดสินใจแทน\n- หลัก 4 ข้อ: **autonomy, beneficence, nonmaleficence, justice**\n- **Decision-making capacity** (เฉพาะเรื่อง ไม่ใช่ทั้งชีวิต): เข้าใจข้อมูล, เข้าใจว่าเกี่ยวกับตนเอง (appreciate), ใช้เหตุผลเปรียบเทียบทางเลือก, **สื่อสารการเลือกได้คงที่** — ศัลยแพทย์ประเมินได้เอง ไม่จำเป็นต้องเป็นจิตแพทย์\n- **Informed consent** ที่สมบูรณ์: บันทึก capacity, เปิดเผยการวินิจฉัย ทางเลือก (รวมการไม่ผ่าตัด) ความเสี่ยงและประโยชน์, ผู้ป่วยเข้าใจ, ตัดสินใจโดยสมัครใจ — ฉุกเฉินที่ไม่มีผู้ตัดสินใจแทนใช้หลัก **implied consent**\n- ผู้ตัดสินใจแทน: ใช้ **substituted judgment** (ผู้ป่วยจะเลือกอะไรตามค่านิยมที่เคยแสดง) ก่อน **best interest**; advance directive/living will และ durable power of attorney\n- บริบทไทย: **พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12** ให้สิทธิทำ **หนังสือแสดงเจตนาไม่ประสงค์จะรับบริการสาธารณสุข** ที่เป็นไปเพื่อยืดการตายในวาระสุดท้าย\n- **Withholding = withdrawing** ในทางจริยธรรม; **double effect**: ให้ opioid/sedation เพื่อบรรเทาทุกข์ได้แม้อาจทำให้ตายเร็วขึ้น หากเจตนาคือบรรเทาอาการและ titrate ตามอาการ (ไม่ใช่ bolus ขนาดใหญ่เพื่อให้ตาย)\n\n### DNR ในห้องผ่าตัดและการสื่อสารเมื่อผ่าตัดเสี่ยงสูง\n- ACS/ASA: DNR **ไม่ถูกระงับอัตโนมัติ** เมื่อเข้าห้องผ่าตัด → ใช้ **required reconsideration**: คุยกับผู้ป่วย/ผู้แทนว่าในช่วง perioperative ยอมรับมาตรการใดบ้าง (เช่น intubation, vasopressor, defibrillation, CPR) หรือให้ทีม \"ใช้ดุลยพินิจตามเป้าหมาย\" แล้วบันทึกชัดเจน\n- การสื่อสารก่อนผ่าตัดเสี่ยงสูงในผู้สูงอายุ: ใช้กรอบ **Best Case/Worst Case** อธิบายทางเลือกผ่าตัดและไม่ผ่าตัดเป็นเรื่องเล่าพร้อมผลต่อการใช้ชีวิต ถามว่า \"อะไรสำคัญที่สุด\" แทนการถามว่า \"จะเอาทุกอย่างไหม\"; ระวัง \"surgical buy-in\" ที่ทำให้ศัลยแพทย์ไม่ยอมถอยการรักษาหลังผ่าตัด\n- **Palliative surgery** = ผ่าตัดเพื่อบรรเทาอาการ/คุณภาพชีวิต ไม่ใช่ยืดชีวิต — ตัวอย่าง **malignant bowel obstruction**: ทางเลือกคือ venting gastrostomy, octreotide, steroid, stent, bypass หรือ resection; ผลไม่ดีถ้ามี carcinomatosis ร่วม ascites, อุดหลายตำแหน่ง, performance status แย่\n\n| อาการช่วงท้าย | การจัดการ |\n|---|---|\n| ปวด | opioid เป็นหลัก, adjuvant, ให้ยาระบายป้องกันท้องผูกทุกครั้ง, แปลงขนาดแบบ equianalgesic |\n| **Dyspnea** | **opioid** titrate (เริ่ม ~1/2–2/3 ของขนาดสำหรับปวด; ผู้ที่ใช้อยู่เพิ่ม 25–50%), พัดลม, O2 ถ้า hypoxic |\n| Death rattle | glycopyrrolate/scopolamine, จัดท่า |\n| Terminal delirium | haloperidol; midazolam สำหรับ palliative sedation ในรายดื้อ |\n\n- **Hospice** สำหรับผู้คาดว่าชีวิตเหลือ ≤6 เดือนที่เลือกเน้นความสบาย; ส่ง palliative care consult ตั้งแต่เนิ่น ๆ ไม่ต้องรอระยะสุดท้าย\n",
+   "pearls": [
+    "Fried frailty: ≥3/5 = frail; TUG ≥15 วินาที = เสี่ยงสูง",
+    "Mini-Cog + capacity + goals ต้องอยู่ใน pre-op ผู้สูงอายุ",
+    "CAM: acute/fluctuating + inattention + (disorganized thinking หรือ altered LOC)",
+    "Delirium: หาสาเหตุก่อน; เลี่ยง benzo, anticholinergic, meperidine",
+    "DNR ในห้องผ่าตัด = required reconsideration",
+    "Substituted judgment ก่อน best interest; withholding = withdrawing",
+    "Dyspnea ช่วงท้าย → opioid; double effect ถ้าเจตนาบรรเทาทุกข์"
+   ],
+   "items": [
+    {
+     "id": "RES-15-4-1",
+     "kind": "mcq",
+     "topic": "Postoperative delirium — first step",
+     "stem": "An 81-year-old man is on postoperative day 2 after an open sigmoid colectomy. The night nurse reports he has been pulling at his lines and is now drowsy, intermittently disoriented and unable to keep attention on a conversation. He received diphenhydramine for sleep last night. Vitals: T 37.9°C, HR 104/min, BP 132/70 mmHg, RR 22/min, SpO2 90% on room air. A Foley catheter is still in place. What is the most appropriate initial step?",
+     "choices": [
+      "Evaluate and treat precipitating causes, including hypoxemia, infection or anastomotic leak, and stop deliriogenic drugs",
+      "Give lorazepam 1 mg intravenously for agitation",
+      "Apply bilateral wrist restraints to protect his lines",
+      "Start scheduled haloperidol and continue all current medications",
+      "Obtain a CT scan of the head as the first investigation"
+     ],
+     "answer": 0,
+     "explain": "CAM บวก (acute, fluctuating, inattention, altered consciousness) = **delirium** ซึ่งเป็น \"อาการ\" ของโรคอื่น ผู้ป่วยมี **SpO2 90%, ไข้ต่ำ ๆ, HR เร็ว** หลัง colectomy วันที่ 2 ต้องหา **hypoxia, pneumonia/aspiration, anastomotic leak, sepsis, electrolyte, urinary retention** และ **หยุด diphenhydramine** (anticholinergic) เอา Foley ออกเมื่อทำได้ ให้ O2 และใช้มาตรการ nonpharmacologic\n- **Lorazepam** — benzodiazepine ทำให้ delirium แย่ลง ใช้เฉพาะ alcohol withdrawal\n- **Restraint** — เป็น precipitating factor เพิ่ม delirium และอันตราย\n- **Haloperidol ประจำ** — ใช้เฉพาะเมื่อเสี่ยงอันตราย และไม่ควรใช้แทนการหาสาเหตุ\n- **CT head ก่อน** — ไม่มีอาการทางระบบประสาทเฉพาะที่ สาเหตุทั่วร่างกายพบบ่อยกว่ามาก",
+     "pearl": "Delirium หลังผ่าตัด: หาสาเหตุ (hypoxia, sepsis, leak, ยา) ก่อนให้ยาสงบ",
+     "src": "Schwartz 11e Ch 47",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 47"
+     ]
+    },
+    {
+     "id": "RES-15-4-2",
+     "kind": "mcq",
+     "topic": "Frail patient before elective surgery",
+     "stem": "A 79-year-old woman is referred for elective laparoscopic right colectomy for a 3-cm cecal adenocarcinoma found during work-up of iron-deficiency anemia. She lives alone, has lost 6 kg over 6 months, needs help with shopping, has fallen twice this year, and her Timed Up and Go test is 19 seconds. Mini-Cog score is 2 and albumin is 2.9 g/dL. There is no obstruction or active bleeding. What is the most appropriate next step?",
+     "choices": [
+      "Multidisciplinary geriatric assessment with prehabilitation and a goals-of-care discussion before scheduling surgery",
+      "Proceed with colectomy within 1 week to avoid tumor progression",
+      "Recommend against any surgery because she is too frail",
+      "Proceed with surgery and arrange postoperative physical therapy only",
+      "Refer for palliative chemotherapy instead of resection"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมีลักษณะ **frailty** (น้ำหนักลด, TUG ≥15 วินาที, ล้มซ้ำ, พึ่งพา IADL), **cognitive impairment** (Mini-Cog ≤2) และ **ภาวะโภชนาการต่ำ** (albumin <3.0) ซึ่งทำนาย complication, delirium, การจำหน่ายไปสถานดูแลและการเสียชีวิต มะเร็งไม่ได้ทำให้ต้องรีบ (ไม่อุด ไม่เลือดออก) จึงควร **ประเมินแบบ geriatric/multidisciplinary**, ทำ **prehabilitation** (ออกกำลัง โภชนาการ แก้ซีด), ประเมิน capacity และ **คุยเป้าหมายการรักษา** ก่อนตัดสินใจ\n- **ผ่าภายใน 1 สัปดาห์** — พลาดโอกาสปรับสภาพและคุยเป้าหมาย\n- **ห้ามผ่าตัดเลย** — frailty เป็นสเปกตรัม บางส่วนแก้ไขได้และการผ่าตัดอาจยังตรงเป้าหมายผู้ป่วย\n- **ผ่าแล้วค่อย PT** — ไม่แก้ปัจจัยเสี่ยงก่อนผ่าตัด\n- **Palliative chemo** — มะเร็งระยะต้นที่ตัดได้ ไม่ใช่ทางเลือกหลัก",
+     "pearl": "Frail + cognitive impairment ก่อนผ่าตัด elective → CGA, prehab, คุยเป้าหมายก่อน",
+     "src": "Schwartz 11e Ch 47",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 47"
+     ]
+    },
+    {
+     "id": "RES-15-4-3",
+     "kind": "mcq",
+     "topic": "DNR order in the operating room",
+     "stem": "A 74-year-old man with metastatic pancreatic cancer and a documented do-not-resuscitate order is scheduled for laparoscopic gastrojejunostomy for gastric outlet obstruction to allow him to eat. The anesthesiologist states that DNR orders are automatically suspended in the operating room at this hospital. What is the most appropriate approach?",
+     "choices": [
+      "Hold a required-reconsideration discussion with the patient to define and document which resuscitative measures are acceptable perioperatively",
+      "Automatically suspend the DNR order until discharge from the recovery room",
+      "Cancel the operation because surgery is inconsistent with a DNR order",
+      "Proceed with no airway support or vasopressors under any circumstances",
+      "Ask the hospital ethics committee to obtain a court order"
+     ],
+     "answer": 0,
+     "explain": "ACS และ ASA ระบุว่า DNR **ไม่ควรถูกระงับอัตโนมัติ** ในห้องผ่าตัด แต่ใช้หลัก **required reconsideration**: คุยกับผู้ป่วย (มี capacity) ว่าในช่วงผ่าตัดยอมรับมาตรการใดบ้าง — การใส่ท่อและยากระตุ้นความดันเป็นส่วนหนึ่งของการดมยาที่ผู้ป่วยมักยอมรับ แต่ CPR/defibrillation อาจไม่ — หรือให้ทีมตัดสินใจตามเป้าหมายของผู้ป่วย แล้วบันทึกชัดเจนและสื่อสารทั้งทีม\n- **ระงับอัตโนมัติ** — ละเมิด autonomy\n- **ยกเลิกผ่าตัด** — palliative surgery สอดคล้องกับ DNR ได้ เพราะเป้าหมายคือคุณภาพชีวิต\n- **ไม่ช่วยหายใจ/ไม่ให้ยาเลย** — การดมยาต้องใช้มาตรการเหล่านี้อยู่แล้ว และไม่ใช่สิ่งที่ DNR ปฏิเสธเสมอไป\n- **Court order** — ไม่จำเป็นเมื่อผู้ป่วยตัดสินใจเองได้",
+     "pearl": "DNR ในห้องผ่าตัด = required reconsideration ไม่ใช่ระงับอัตโนมัติ",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48"
+     ]
+    },
+    {
+     "id": "RES-15-4-4",
+     "kind": "mcq",
+     "topic": "Surrogate decision standard",
+     "stem": "A 77-year-old man with severe COPD is intubated after emergency laparotomy for perforated diverticulitis and develops multiorgan failure. He lacks decision-making capacity. His daughter, his designated healthcare proxy, reports that after his wife died on a ventilator he said repeatedly he would never want to be kept alive on machines without a chance of returning home. The team estimates a very low chance of recovery to independent living. Which standard should primarily guide the daughter's decision?",
+     "choices": [
+      "Substituted judgment based on the patient's previously expressed wishes and values",
+      "The best-interest standard as judged by the surgical team",
+      "The daughter's own preferences for her father's care",
+      "The principle of double effect",
+      "Hospital policy requiring full treatment until brain death"
+     ],
+     "answer": 0,
+     "explain": "เมื่อผู้ป่วยขาด capacity ผู้ตัดสินใจแทนควรใช้ **substituted judgment** — ตัดสินใจอย่างที่ **ผู้ป่วยจะเลือกเอง** ตามค่านิยมและคำพูดที่เคยแสดงไว้ ซึ่งรักษา autonomy ของผู้ป่วย จะใช้ **best interest** เฉพาะเมื่อไม่ทราบความประสงค์ของผู้ป่วยเลย ในรายนี้ความประสงค์ชัดเจน การถอดเครื่องช่วยหายใจ (withdrawing) จึงชอบธรรมเท่ากับไม่เริ่ม (withholding)\n- **Best interest โดยทีม** — ใช้เมื่อไม่รู้ความต้องการของผู้ป่วย\n- **ความต้องการของลูกสาวเอง** — ไม่ใช่มาตรฐาน ผู้แทนต้องสะท้อนผู้ป่วย\n- **Double effect** — ใช้อธิบายการให้ยาบรรเทาอาการที่อาจทำให้ตายเร็วขึ้น ไม่ใช่มาตรฐานการตัดสินใจแทน\n- **รักษาเต็มที่จนสมองตาย** — ขัดหลัก autonomy และกฎหมายสิทธิปฏิเสธการรักษา",
+     "pearl": "ผู้ตัดสินใจแทน: substituted judgment ก่อน best interest",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-15-MEQ1",
+   "part": "MEQ",
+   "topic": "Emergency surgery in a frail older adult — shared decision and delirium",
+   "vignette": "หญิงไทยอายุ 86 ปี อยู่กับลูกสาว เดินได้ด้วย walker ช่วยตัวเองได้บางส่วน มีภาวะสมองเสื่อมระยะต้น เบาหวาน CKD stage 3b ล้มในบ้าน 2 ครั้งปีนี้ มาด้วยปวดท้องทั่วไป 1 วัน\n\n| ตรวจ | ผล |\n|---|---|\n| Vital signs | T 38.4°C, HR 118/min, BP 92/54 mmHg, RR 26/min |\n| Abdomen | guarding และ rebound ทั่วท้อง |\n| Lab | WBC 19,000/µL, lactate 4.2 mmol/L, Cr 2.4 mg/dL |\n| CT | free air + fluid, perforated sigmoid diverticulitis (Hinchey IV) |",
+   "questions": [
+    {
+     "q": "1. ก่อนคุยกับครอบครัว คุณต้องประเมินอะไรบ้างเพื่อให้ข้อมูลความเสี่ยงที่ตรงความจริง",
+     "a": "- Resuscitation ตาม sepsis bundle ไปพร้อมกัน (fluid, antibiotic ภายใน 1 ชม., culture)\n- ประเมิน **capacity** ของผู้ป่วยตอนนี้ (มักไม่มีเพราะ sepsis + dementia) และหา **ผู้ตัดสินใจแทน**/advance directive/หนังสือแสดงเจตนาตาม ม.12\n- ประเมิน baseline function, frailty (Clinical Frailty Scale ~6), cognition, การล้ม → ทำนาย outcome\n- ใช้ **ACS NSQIP risk calculator**/emergency surgery score ประกอบ: mortality และโอกาส **ไม่ได้กลับบ้าน** สูง\n- เกณฑ์ให้คะแนน: resuscitation (1), capacity/surrogate (1), frailty-function (1), risk tool (1)"
+    },
+    {
+     "q": "2. จงสาธิตการคุยกับลูกสาวโดยใช้กรอบ Best Case/Worst Case และบอกทางเลือกที่ต้องเสนอ",
+     "a": "- ทางเลือก: **ผ่าตัด (Hartmann's procedure)** หรือ **comfort-focused care** (ไม่ผ่าตัด ให้ยาบรรเทาอาการ)\n- ผ่าตัด — best case: รอดผ่าน ICU หลายวัน มี stoma อยู่ ward นาน ต้องฟื้นฟูและอาจไม่กลับไปเดินได้เหมือนเดิม; worst case: เสียชีวิตใน ICU หลังใส่ท่อช่วยหายใจ/ฟอกไต; most likely: รอดแต่ต้องย้ายไปสถานดูแลระยะยาว\n- ไม่ผ่าตัด — best case: อยู่กับครอบครัวได้ระยะสั้นโดยไม่ทรมาน; worst case/most likely: เสียชีวิตในไม่กี่วัน\n- ถามค่านิยม: \"แม่เคยพูดถึงสิ่งที่สำคัญที่สุดไหม\" ใช้ **substituted judgment** และเสนอคำแนะนำของแพทย์\n- เกณฑ์ให้คะแนน: เสนอทั้งสองทางเลือก (2), ผลลัพธ์เชิงการใช้ชีวิต (1), ถามค่านิยม (1)"
+    },
+    {
+     "q": "3. ครอบครัวเลือกผ่าตัด และตกลงเรื่อง DNR ไว้ก่อน ต้องจัดการ DNR ในห้องผ่าตัดอย่างไร",
+     "a": "- **Required reconsideration**: ตกลงร่วมกันว่าระหว่างผ่าตัดยอมรับ intubation, vasopressor ได้ (เป็นส่วนของการดมยา) แต่จะไม่ทำ CPR/defibrillation หรือให้ทีมใช้ดุลยพินิจตามเป้าหมาย\n- บันทึกชัดเจนและแจ้งทีมดมยา/พยาบาลใน **time-out**\n- กำหนดว่าจะทบทวนสถานะ DNR เดิมเมื่อใด (เช่น ออกจาก PACU/ICU)\n- เกณฑ์ให้คะแนน: ไม่ระงับอัตโนมัติ (2), ระบุมาตรการ (1), สื่อสารใน time-out (1)"
+    },
+    {
+     "q": "4. วันที่ 3 หลังผ่าตัด ผู้ป่วยซึมลง สับสนเป็นพัก ๆ ดึงสาย จงวินิจฉัยและให้แผนจัดการ",
+     "a": "- ใช้ **CAM**: acute/fluctuating + inattention + altered LOC → **delirium** (อาจเป็น hypoactive สลับ hyperactive)\n- หาสาเหตุ: hypoxia, sepsis ค้าง/intra-abdominal abscess/stoma ischemia, AKI-uremia, Na/glucose, urinary retention, ปวด, ยา (opioid เกิน, anticholinergic, benzo)\n- Nonpharmacologic: แว่น/เครื่องช่วยฟัง, ให้ครอบครัวอยู่ด้วย, reorientation, นอนกลางคืน, mobilize, เอา Foley/สายที่ไม่จำเป็นออก, ไม่ผูกมัด\n- Haloperidol/quetiapine ขนาดต่ำเฉพาะเมื่อเสี่ยงอันตราย; หลีกเลี่ยง benzodiazepine\n- อธิบายครอบครัวว่า delirium เพิ่ม 1-year mortality 2–3 เท่า และทบทวนเป้าหมายการรักษา\n- เกณฑ์ให้คะแนน: CAM (1), สาเหตุ ≥4 (1), nonpharm (1), ยาและข้อห้าม (1)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 47",
+    "Schwartz 11e Ch 48",
+    "ACS NSQIP/AGS Best Practices Guideline: Optimal preoperative assessment of the geriatric surgical patient (2012)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-15-OSCE1",
+   "topic": "Mock oral board — missed enterotomy after laparoscopy, disclosure and M&M",
+   "station": "Mock oral 10 นาที · Laparoscopic complication, disclosure และ M&M",
+   "instruction": "**บทบาท:** คุณเป็นศัลยแพทย์ผู้ผ่าตัด ผู้สอบถามตามลำดับ\n\n**Scenario:** ชายอายุ 58 ปี BMI 31 เคยผ่าตัดเปิดท้องแนวกลางจากอุบัติเหตุ ได้รับ laparoscopic cholecystectomy เมื่อวานนี้ การผ่าตัดใช้เวลา 2.5 ชั่วโมง มี adhesiolysis มากบริเวณสะดือ วันนี้ (POD1) ปวดท้องมากขึ้น ต้องใช้ morphine บ่อยกว่าที่คาด HR 112, T 38.2°C, BP 118/70\n\n**Prompt ของผู้สอบ**\n1. \"ผู้ป่วย laparoscopic chole ควรมีอาการอย่างไรใน POD1 คุณคิดถึงอะไร และจะทำอะไรต่อ\"\n2. \"CT พบ free fluid และ free air มากกว่าที่คาด มี contrast รั่วบริเวณ small bowel ใต้สะดือ — จะทำอะไร\"\n3. \"ในห้องผ่าตัดพบรูทะลุ 1 cm ที่ ileum และรอยไหม้ซีดอีกจุดที่ jejunum — กลไกน่าจะเป็นอะไรบ้าง และจะจัดการแต่ละจุดอย่างไร\"\n4. \"หลังผ่าตัด ภรรยาผู้ป่วยถามว่า 'หมอทำพลาดใช่ไหม' — คุณจะพูดอย่างไร\"\n5. \"นำเสนอเคสนี้ใน M&M อย่างไร และจะเสนอการเปลี่ยนแปลงระบบอะไรบ้าง\"",
+   "answer": "1. **Clinical course (2 คะแนน)**: หลัง laparoscopic chole ผู้ป่วยควร **ดีขึ้นทุกวัน** ปวดลดลง กินได้ กลับบ้านเร็ว; ปวดมากขึ้น + tachycardia + ไข้ = **ต้องคิดถึง bowel injury ที่ไม่เห็น** (โดยเฉพาะมี adhesiolysis), bile leak, bleeding → ตรวจร่างกาย, lab (CBC, lactate, LFT), **CT with oral/IV contrast**; ไม่ใช่เพิ่ม analgesia แล้วรอ\n2. **Return to OR (2 คะแนน)**: resuscitate, broad-spectrum antibiotic, **ผ่าตัดด่วน** (laparoscopy ถ้าทักษะเพียงพอและผู้ป่วยคงที่ หรือ laparotomy) ล้างช่องท้อง ซ่อม/ตัดต่อลำไส้\n3. **กลไกและการแก้ (2 คะแนน)**: รูทะลุ = trocar/sharp injury หรือ traction ระหว่าง adhesiolysis; รอยไหม้ซีด = **thermal injury** (insulation failure, direct/capacitive coupling, เครื่องมือยังร้อน) — **thermal injury ขยายเกินขอบที่เห็น** จึงต้อง debride/resect ให้ถึงเนื้อดีหรือ segmental resection แทนการเย็บปิดแค่ขอบ; ตรวจลำไส้ทั้งหมดตั้งแต่ ligament of Treitz ถึง ileocecal valve\n4. **Disclosure (2 คะแนน)**: นัดคุยในที่เป็นส่วนตัวโดยเร็ว พร้อมทีม; บอกข้อเท็จจริงด้วยภาษาง่าย (\"ลำไส้มีรูทะลุจากการผ่าตัดครั้งแรก ซึ่งเป็นภาวะแทรกซ้อนที่เกิดได้ และเราแก้ไขแล้ว\"), **แสดงความเสียใจ/ขอโทษ**, ไม่โทษคนอื่นและไม่คาดเดาเกินข้อมูล, บอกแผนการรักษาต่อและการติดตาม, บอกว่าจะทบทวนหาสาเหตุเพื่อป้องกัน, เปิดช่องทางติดต่อ, บันทึกเวชระเบียน, รายงานระบบความเสี่ยงของโรงพยาบาล\n5. **M&M (2 คะแนน)**: นำเสนอแบบไม่กล่าวโทษ — timeline, การวินิจฉัย, จำแนก (Clavien–Dindo IIIb), วิเคราะห์ปัจจัย: ผู้ป่วย (adhesion), เทคนิค (access method, energy use), ระบบ (การตรวจ insulation ของเครื่องมือ, ชนิด trocar hybrid, ไม่มี protocol ตรวจลำไส้หลัง adhesiolysis); action: ใช้ Hasson/Palmer's point ในผู้ป่วยเคยผ่าตัด, ตรวจ insulation/ใช้ active electrode monitoring, ตรวจลำไส้ก่อนปิด, ส่งเสริม discharge criteria ที่ให้ผู้ป่วยกลับมาทันทีเมื่อปวดเพิ่ม\n\n**Critical fails**: อธิบายอาการปวดที่แย่ลงว่าเป็นเรื่องปกติแล้วให้ยาแก้ปวดต่อ · เย็บปิด thermal injury เฉพาะขอบที่เห็น · ปกปิดหรือโทษผู้อื่นเมื่อสื่อสารกับครอบครัว · นำเสนอ M&M แบบหาคนผิดโดยไม่มีการแก้ระบบ"
+  }
+ ]
+}

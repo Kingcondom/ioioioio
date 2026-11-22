@@ -1,0 +1,313 @@
+{
+ "lec": "04",
+ "date": "Schwartz Ch 4, 5",
+ "title": "Shock & bleeding at the bedside",
+ "subtitle": "ข้างเตียงผู้ป่วยความดันต่ำหรือเลือดออก จะแยกชนิดของช็อก ให้เลือดแบบ massive transfusion ใช้ TXA/permissive hypotension และกลับฤทธิ์ยาต้านลิ่มเลือดอย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องรู้จักภาวะช็อกจากสัญญาณ hypoperfusion ก่อนความดันตก และแยก hypovolemic, cardiogenic, obstructive, septic, neurogenic shock ด้วยข้อมูลข้างเตียงและ POCUS",
+  "เรียนจบแล้วต้องเริ่มการรักษาเบื้องต้นตามชนิดของช็อก รวมถึง Hour-1 bundle ของ septic shock",
+  "เรียนจบแล้วต้องตัดสินใจเปิด massive transfusion protocol ให้ component ในสัดส่วนที่เหมาะสม ใช้ TXA และ permissive hypotension ได้ถูกข้อบ่งชี้",
+  "เรียนจบแล้วต้องกลับฤทธิ์ warfarin, heparin, LMWH, DOAC และ antiplatelet ในผู้ป่วยเลือดออกหรือต้องผ่าตัดด่วน และวางแผนหยุด/เริ่มยาใหม่รอบผ่าตัด",
+  "เรียนจบแล้วต้องขอความยินยอมรับเลือด และจำแนก-จัดการปฏิกิริยาจากการให้เลือดได้"
+ ],
+ "guidelines": [
+  "Surviving Sepsis Campaign Guidelines 2021 (Hour-1 bundle)",
+  "CRASH-2 (Lancet 2010) และ CRASH-3 (Lancet 2019) — tranexamic acid",
+  "PROPPR trial (JAMA 2015) — 1:1:1 transfusion",
+  "AABB Red Blood Cell Transfusion Thresholds guideline; TRICC trial (NEJM 1999)",
+  "BRIDGE trial (NEJM 2015) — perioperative bridging in AF",
+  "ATLS 10th edition (2018) — classification of hemorrhage"
+ ],
+ "sections": [
+  {
+   "id": "n3-04-1",
+   "title": "รู้จักและจำแนก shock ข้างเตียง",
+   "summary": "ผู้ป่วยรายนี้ช็อกหรือยัง ช็อกชนิดไหน และต้องแก้อะไรก่อน",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 5 — Classification and diagnosis of shock, hypovolemic, septic, cardiogenic, obstructive, neurogenic shock",
+   "md": "### Shock คือ perfusion ไม่พอ ไม่ใช่ \"ความดันต่ำ\"\n**Shock** = การส่งออกซิเจนไปเนื้อเยื่อไม่พอกับความต้องการ → เซลล์เปลี่ยนเป็น anaerobic → **lactate** สูง → อวัยวะล้มเหลว ถ้าปล่อยไว้จะเข้าสู่ระยะ **irreversible** ที่ให้สารน้ำแล้วก็ไม่กลับ\n- **ความดันตกเป็นอาการช้า** — ร่างกายชดเชยด้วย sympathetic, renin-angiotensin, ADH จนเสียปริมาตรราว 30% จึงเห็น hypotension\n- สัญญาณ hypoperfusion ข้างเตียง: **สติเปลี่ยน** (กระสับกระส่าย → ซึม), **ผิวเย็นชื้น capillary refill นาน** หรือผิวลาย (mottling), **ปัสสาวะน้อยกว่า 0.5 mL/kg/hr**, หายใจเร็ว, **lactate มากกว่า 2 mmol/L**, base deficit\n- **Shock index** = HR/SBP — มากกว่าราว 0.9–1.0 บ่งว่าน่าจะมีภาวะช็อกแม้ BP ยังดูปกติ\n- ผู้สูงอายุ/กิน β-blocker/ใส่ pacemaker อาจไม่มี tachycardia · ในงานวิจัยผู้ป่วยบาดเจ็บ SBP น้อยกว่า 110 mmHg เริ่มสัมพันธ์กับการตายที่เพิ่มขึ้น\n\n### แยกชนิดของ shock ด้วยข้อมูลข้างเตียง\n| ชนิด | สาเหตุในผู้ป่วยศัลยกรรม | ผิว | JVP/CVP | CO | SVR |\n|---|---|---|---|---|---|\n| **Hypovolemic/hemorrhagic** | เลือดออก, เสียน้ำทาง GI, third-space, burn | เย็น ซีด | ↓ | ↓ | ↑ |\n| **Cardiogenic** | MI, arrhythmia, cardiac contusion, HF | เย็น | ↑ | ↓ | ↑ |\n| **Obstructive** | **tension PTX, tamponade, massive PE** | เย็น | ↑ (อาจไม่สูงถ้าเสียเลือดร่วม) | ↓ | ↑ |\n| **Septic (distributive)** | leak, abscess, cholangitis, NSTI, pneumonia | อุ่นช่วงแรก → เย็น | ↓/ปกติ | ↑/ปกติ (ช่วงแรก) | ↓ |\n| **Neurogenic** | cervical/high thoracic cord injury, spinal anesthesia สูง | อุ่น แห้ง | ↓ | ↓/ปกติ | ↓ · **HR ช้า** |\n\n- **Cardiogenic shock** (เกณฑ์ที่ใช้บ่อย): SBP น้อยกว่า 90 นานอย่างน้อย 30 นาที, cardiac index น้อยกว่า 2.2 L/min/m², PCWP มากกว่า 15 mmHg\n- **Adrenal insufficiency**: ผู้ใช้ steroid ระยะยาว/ยาลูกกลอน ช็อกไม่ตอบสนองต่อสารน้ำและ vasopressor, Na ต่ำ K สูง → **hydrocortisone 100 mg IV**\n> ผู้ป่วยบาดเจ็บ/หลังผ่าตัดที่ช็อก ให้คิดว่าเป็น **hemorrhagic** ก่อนเสมอ ส่วน neurogenic เป็นการวินิจฉัยหลังตัดเลือดออก\n\n### POCUS ข้างเตียง: Pump, Tank, Pipes\n| ดู | หาอะไร | แปลผล |\n|---|---|---|\n| **Pump** (หัวใจ) | pericardial effusion, LV บีบตัว, RV โต | effusion + RV collapse = **tamponade** · LV บีบอ่อน = cardiogenic · **RV ใหญ่กว่า LV** = PE |\n| **Tank** (ปริมาตร) | IVC, FAST, pleural, B-lines | IVC เล็กแฟบตามการหายใจ = hypovolemia · มีน้ำ/เลือดในท้อง-อก = เลือดออก · B-lines มาก = น้ำท่วมปอด |\n| **Pipes** (หลอดเลือด) | aorta, DVT (compression US) | AAA แตก · DVT ร่วม = สนับสนุน PE |\n\n- **Passive leg raise** (ยกขา 45° ราว 1 นาที) ถ้า CO/pulse pressure เพิ่ม = น่าจะ **fluid responsive** ใช้ก่อนให้น้ำซ้ำในรายไม่แน่ใจ\n- ติดตามผลการรักษา: MAP, UO, สติ, capillary refill, **lactate clearance**, ScvO2\n\n### รักษาตามชนิด: หลักใหญ่ข้างเตียง\n- **Hemorrhagic**: หยุดเลือด (ผ่าตัด/angio) + เลือด ไม่ใช่ crystalloid หลายลิตร (ดูหัวข้อถัดไป)\n- **Septic shock** (Hour-1 bundle): วัด **lactate**, **hemoculture ก่อนยา**, **broad-spectrum antibiotic ภายใน 1 ชม.**, **crystalloid 30 mL/kg** เมื่อ hypotension หรือ lactate ตั้งแต่ 4 (ส่วนใหญ่ให้ใน 3 ชม.แรก), **norepinephrine** เป้า **MAP ตั้งแต่ 65** และ **source control** เร็วที่สุด · ไม่ใช้ starch · ไม่ตอบสนองต่อ fluid + vasopressor → **hydrocortisone 200 mg/วัน** ± vasopressin\n- **Cardiogenic**: O2, รักษา MI (cardiology/PCI), inotrope (dobutamine) ± vasopressor, ระวังให้น้ำมาก\n- **Obstructive**: แก้ที่สาเหตุ — **decompress tension PTX**, **ระบาย tamponade** (ผ่าตัด/pericardiocentesis), **thrombolysis/embolectomy** ใน massive PE\n- **Neurogenic**: สารน้ำ, vasopressor ที่มีฤทธิ์ α (norepinephrine/phenylephrine) ± atropine เมื่อชีพจรช้า, รักษา spine\n",
+   "pearls": [
+    "ความดันตกเป็นอาการช้า: ดูสติ ผิว UO lactate shock index",
+    "ช็อกในผู้ป่วยบาดเจ็บ/หลังผ่าตัด = hemorrhagic จนกว่าจะพิสูจน์ได้",
+    "Neurogenic: ความดันต่ำ + HR ช้า + ผิวอุ่น — ตัดเลือดออกก่อน",
+    "Cardiogenic: SBP น้อยกว่า 90 นาน 30 นาที, CI น้อยกว่า 2.2, PCWP มากกว่า 15",
+    "Obstructive: tension PTX, tamponade, massive PE — JVP สูง แก้ที่สาเหตุ",
+    "Septic shock: antibiotic ภายใน 1 ชม., 30 mL/kg, norepinephrine MAP ตั้งแต่ 65, source control",
+    "ช็อกไม่ตอบสนองในผู้ใช้ steroid → hydrocortisone"
+   ],
+   "items": [
+    {
+     "id": "N3-04-1-1",
+     "kind": "mcq",
+     "topic": "Neurogenic shock",
+     "stem": "A 27-year-old man dove into a shallow pond. He cannot move his arms or legs. BP 78/42 mmHg, HR 52/min, skin warm and dry, SpO2 97%. Chest radiograph and pelvic radiograph are normal. eFAST shows no free fluid and no pericardial effusion. There are no external wounds. Which is the most likely type of shock?",
+     "choices": [
+      "Neurogenic shock",
+      "Hemorrhagic shock",
+      "Cardiogenic shock from blunt cardiac injury",
+      "Obstructive shock from tension pneumothorax",
+      "Septic shock"
+     ],
+     "answer": 0,
+     "explain": "**Neurogenic shock** จาก cervical cord injury: เสีย sympathetic tone → หลอดเลือดขยาย (**SVR ต่ำ**, ผิว **อุ่นแห้ง**) และ **ไม่มี reflex tachycardia (HR ช้า)** ร่วมกับอัมพาตแขนขา การตรวจหาเลือดออกทั้งอก ท้อง เชิงกรานเป็นลบ จึงเหมาะกับการวินิจฉัยนี้ (ต้องตัดเลือดออกก่อนเสมอ)\n- **Hemorrhagic shock** — ผิวเย็นซีดและชีพจรเร็ว และ eFAST/X-ray ไม่พบแหล่งเลือดออก\n- **Cardiogenic จาก blunt cardiac injury** — ไม่มีกลไกกระแทกอก และมักมี arrhythmia/ JVP สูง\n- **Tension PTX** — CXR ปกติ\n- **Septic shock** — ไม่มีแหล่งติดเชื้อในเวลาเฉียบพลัน",
+     "pearl": "ความดันต่ำ + ชีพจรช้า + ผิวอุ่น + อัมพาต = neurogenic shock (ตัดเลือดออกก่อน)",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N3-04-1-2",
+     "kind": "mcq",
+     "topic": "Septic shock after surgery — initial resuscitation",
+     "stem": "A 70-year-old woman (weight 60 kg) is on postoperative day 4 after Whipple procedure. She has fever 39.2°C, BP 80/46 mmHg (MAP 57), HR 124/min, confusion, and purulent drainage from the surgical drain. Lactate 4.8 mmol/L. Blood cultures have been drawn. What is the most appropriate immediate management?",
+     "choices": [
+      "Broad-spectrum IV antibiotics within 1 hour, about 1,800 mL balanced crystalloid, and norepinephrine if MAP remains below 65 mmHg",
+      "Dopamine infusion as first-line vasopressor and restrict fluids",
+      "Hydroxyethyl starch 1 L bolus",
+      "Wait for blood culture results before starting antibiotics",
+      "Start hydrocortisone 200 mg/day as the first intervention"
+     ],
+     "answer": 0,
+     "explain": "Septic shock (hypotension + lactate สูง + แหล่งติดเชื้อในช่องท้อง) ต้องทำตาม **Hour-1 bundle**: antibiotic ภายใน 1 ชม.หลังเก็บ culture, **crystalloid 30 mL/kg** (60 kg ≈ 1,800 mL) และ **norepinephrine** เมื่อ MAP ยังต่ำกว่า 65 แล้วจึงหา source control (CT/drainage/ผ่าตัด)\n- **Dopamine เป็นตัวแรก** — arrhythmia มากกว่า norepinephrine เป็นยาหลัก\n- **Starch** — เพิ่ม AKI และการตาย ไม่ควรใช้\n- **รอผล culture** — ทุกชั่วโมงที่ช้าเพิ่มการตาย\n- **Hydrocortisone เป็นอันดับแรก** — ใช้เมื่อไม่ตอบสนองต่อสารน้ำและ vasopressor",
+     "pearl": "Septic shock: culture → antibiotic ภายใน 1 ชม. → 30 mL/kg → norepinephrine MAP ตั้งแต่ 65 → source control",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N3-04-1-3",
+     "kind": "mcq",
+     "topic": "Obstructive shock — bedside differentiation",
+     "stem": "A 58-year-old man is on postoperative day 7 after total hip arthroplasty. He suddenly becomes dyspneic and hypotensive: BP 82/50 mmHg, HR 128/min, SpO2 86%, JVP elevated, lungs clear. Bedside echocardiography shows a dilated right ventricle larger than the left ventricle, without pericardial effusion. What is the most appropriate treatment?",
+     "choices": [
+      "Systemic thrombolysis for massive pulmonary embolism, if no absolute contraindication",
+      "Pericardiocentesis",
+      "Furosemide 40 mg IV",
+      "Rapid 3 L crystalloid infusion",
+      "Emergency chest tube on the right side"
+     ],
+     "answer": 0,
+     "explain": "Hypotension + hypoxemia + JVP สูง + ปอดใส + **RV โตกว่า LV** หลังผ่าตัดกระดูก = **massive (high-risk) PE** ทำให้เกิด obstructive shock การรักษาคือ **reperfusion — systemic thrombolysis** (การผ่าตัดเมื่อ 7 วันก่อนเป็นข้อห้ามสัมพัทธ์ ถ้าเลือดออกเสี่ยงสูงพิจารณา catheter-directed therapy หรือ surgical embolectomy) ร่วมกับ heparin\n- **Pericardiocentesis** — ไม่มี effusion\n- **Furosemide** — ลด preload ของ RV ที่ล้มเหลว ทำให้ความดันตกมากขึ้น\n- **Crystalloid 3 L** — RV ขยายมากขึ้น เบียด LV ให้ได้ทีละน้อยเท่านั้น\n- **Chest tube** — ไม่มีหลักฐาน pneumothorax",
+     "pearl": "RV โตกว่า LV + ช็อกหลังผ่าตัด = massive PE → reperfusion",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-04-2",
+   "title": "Massive transfusion, TXA และ permissive hypotension",
+   "summary": "เมื่อผู้ป่วยเลือดออกมาก ต้องให้เลือดอะไร เท่าไร เร็วแค่ไหน และตั้งเป้าความดันเท่าไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 4 — Transfusion therapy, damage control resuscitation, massive transfusion; Ch 5 — Hemorrhagic shock",
+   "md": "### ใครต้องเปิด Massive Transfusion Protocol\n- นิยามดั้งเดิมของ **massive transfusion**: PRC ตั้งแต่ **10 ยูนิตใน 24 ชม.** — ช้าเกินไปสำหรับตัดสินใจจริง นิยามใหม่ **CAT (critical administration threshold)**: PRC **3 ยูนิตภายใน 60 นาที** สัมพันธ์กับการตายเพิ่มขึ้นสองเท่า\n- **ABC score** (ใช้ข้อมูลที่มีทันที): **penetrating mechanism**, **SBP 90 หรือต่ำกว่า**, **HR 120 หรือมากกว่า**, **FAST บวก** — 2 ข้อขึ้นไปทำนายว่าจะต้องการ massive transfusion\n- ผู้ป่วยไม่คงที่ที่ได้ PRC 1–2 ยูนิตแล้วไม่ตอบสนองรวดเร็ว ก็ควรเปิด MTP\n- **อย่ารอผล lab** — ตัดสินจากสภาพผู้ป่วย\n\n### MTP ทำงานอย่างไร\n1. แจ้งธนาคารเลือดทันที ให้ **O-negative** (หญิงวัยเจริญพันธุ์) หรือ O-positive (ชาย) uncrossmatched → type-specific (ราว 5–10 นาที) → crossmatched (ราว 40 นาที) · ส่งเลือดทำ type & cross ก่อนให้\n2. ส่ง \"cooler\" เช่น **PRC 6 : FFP 6 : platelet 6-pack** → ให้ในสัดส่วน **1:1:1** เริ่มตั้งแต่ 2 ยูนิตแรก\n3. ลด crystalloid ให้น้อยที่สุด · ให้ผ่าน **blood warmer**\n4. ตรวจซ้ำหลังแต่ละ cooler: **CBC, INR, fibrinogen, pH/base deficit, ionized Ca, K**, TEG/ROTEM ถ้ามี\n5. **หยุด MTP** เมื่อหยุดเลือดได้แล้ว แจ้งธนาคารเลือด (ไม่ปล่อยให้เลือดเตรียมค้าง)\n\n| Component | สิ่งที่ได้ | ใช้เมื่อ |\n|---|---|---|\n| **PRC** | RBC (1 ยูนิตเพิ่ม Hb ราว 1 g/dL ในผู้ใหญ่) | เสียเลือด, Hb ต่ำมีอาการ |\n| **FFP** | coagulation factors ทั้งหมด (แหล่งเดียวของ factor V) | MTP, coagulopathy มีเลือดออก, กลับฤทธิ์ warfarin เมื่อไม่มี PCC (10–15 mL/kg) |\n| **Platelet** | เก็บอุณหภูมิห้อง อายุ 5 วัน | MTP, plt ต่ำมีเลือดออก/ก่อนหัตถการ (ทั่วไปต้องการ 50,000 ขึ้นไป, neurosurgery 100,000) |\n| **Cryoprecipitate** | **fibrinogen**, VIII, vWF, XIII | fibrinogen ต่ำ (ราว 150–200 mg/dL ลงไป) ในเลือดออก |\n| **4F-PCC** | factor II, VII, IX, X | กลับฤทธิ์ warfarin เร็ว (ดีกว่า FFP เรื่องความเร็วและปริมาตร) |\n\n### Lethal triad และภาวะแทรกซ้อนของการให้เลือดมาก\n- **Lethal triad (bloody vicious cycle)**: **hypothermia + acidosis + coagulopathy** ต่างเสริมกัน — ป้องกันด้วยอุ่นผู้ป่วยและเลือด, ลด crystalloid, หยุดเลือดเร็ว (damage control surgery)\n- **Trauma-induced coagulopathy** เกิดได้ตั้งแต่ก่อนให้สารน้ำ → เหตุผลที่ต้องให้ plasma เร็ว\n- **Hypocalcemia** จาก citrate ในเลือด → หัวใจบีบตัวลด ความดันต่ำ เลือดไม่แข็ง → ติดตาม ionized Ca และให้ calcium เมื่อต่ำ\n- **Hyperkalemia** (เลือดเก่า), hypothermia, **TACO**, **TRALI**, dilutional thrombocytopenia\n- หลีกเลี่ยงการ \"ให้เลือดเพื่อตัวเลข\" เมื่อหยุดเลือดได้แล้ว\n\n### TXA และ permissive hypotension\n**Tranexamic acid** ยับยั้งการเปลี่ยน plasminogen เป็น plasmin (จับ lysine-binding site) → **กันลิ่มเลือดถูกสลาย** ไม่ได้สร้างลิ่มเลือดใหม่ half-life ราว 2 ชม. ขับทางไต\n- **CRASH-2**: ผู้ป่วยบาดเจ็บที่เลือดออก ให้ **ภายใน 3 ชม.** → ลดการตายจากเลือดออก · **1 g IV ใน 10 นาที แล้ว 1 g ใน 8 ชม.** · ให้หลัง 3 ชม. **ไม่ได้ประโยชน์และอาจเพิ่มการตายจากเลือดออก** · ยิ่งเร็วยิ่งดี\n- ใช้ในบริบทอื่น: TBI ไม่รุนแรงมาก (CRASH-3), PPH (WOMAN), ผ่าตัดกระดูก/หัวใจ · ห้ามให้ร่วมกับ activated PCC และระวังในผู้มีลิ่มเลือดอุดตันอยู่\n**Permissive (hypotensive) resuscitation**: การดันความดันให้ปกติก่อนหยุดเลือดได้ทำให้ลิ่มเลือดหลุด เลือดเจือจาง และตายมากขึ้น\n\n| สถานการณ์ | เป้าหมาย |\n|---|---|\n| Penetrating torso injury ก่อนหยุดเลือด | **SBP ราว 80–90 mmHg** (สติยังดี) |\n| Blunt trauma ร่วม **TBI** | **SBP ตั้งแต่ 100–110 mmHg** — ความดันต่ำทำให้สมองบาดเจ็บซ้ำ |\n| ผู้สูงอายุ HT เรื้อรัง | ระวัง ใช้เป้าสูงขึ้นตามดุลยพินิจ |\n\n> Permissive hypotension เป็น \"สะพาน\" ไปสู่การหยุดเลือด ไม่ใช่การรักษาระยะยาว — ถ้าใช้นานโดยไม่หยุดเลือดจะเกิด hypoperfusion\n\n### ให้เลือดในผู้ป่วยที่ไม่ได้เลือดออกอยู่\n- **Restrictive strategy**: Hb **7 g/dL** ในผู้ป่วยคงที่ (TRICC) · ราว **8 g/dL** ในผ่าตัดหัวใจ ออร์โธปิดิกส์ และผู้มีโรคหัวใจหลอดเลือด (AABB)\n- ให้ทีละ 1 ยูนิตแล้วประเมินซ้ำ · Hb ต่ำโดยไม่มีอาการเพียงอย่างเดียวไม่ใช่ข้อบ่งชี้\n- Hb/Hct แรกในเลือดออกเฉียบพลันอาจยังปกติ → อย่าใช้ตัดสินว่าไม่ต้องให้เลือดในผู้ป่วยช็อก\n",
+   "pearls": [
+    "CAT: PRC 3 ยูนิตใน 60 นาที · ABC score ตั้งแต่ 2 → MTP",
+    "MTP 1:1:1 เริ่มเร็วตั้งแต่ 2 ยูนิตแรก ลด crystalloid ให้น้อยที่สุด",
+    "O-negative สำหรับหญิงวัยเจริญพันธุ์ · crossmatch ใช้ราว 40 นาที",
+    "TXA ภายใน 3 ชม.: 1 g ใน 10 นาที + 1 g ใน 8 ชม. · ห้ามร่วม activated PCC",
+    "Permissive hypotension SBP 80–90 · มี TBI ใช้ SBP ตั้งแต่ 100–110",
+    "Lethal triad: hypothermia + acidosis + coagulopathy · ระวัง hypocalcemia จาก citrate",
+    "Restrictive transfusion: Hb 7 (8 ถ้ามีโรคหัวใจ) ให้ทีละ 1 ยูนิต"
+   ],
+   "items": [
+    {
+     "id": "N3-04-2-1",
+     "kind": "mcq",
+     "topic": "Massive transfusion protocol activation",
+     "stem": "A 34-year-old man arrives 40 minutes after a stab wound to the left upper abdomen. BP 84/50 mmHg, HR 132/min, FAST positive in the left upper quadrant. He has received 1 L crystalloid prehospital. The surgical team is preparing for laparotomy. Which resuscitation strategy is most appropriate?",
+     "choices": [
+      "Activate the massive transfusion protocol with plasma, platelets and red cells in about a 1:1:1 ratio, plus tranexamic acid",
+      "Give 3 L of normal saline and then reassess",
+      "Transfuse red cells only until hemoglobin reaches 10 g/dL",
+      "Wait for crossmatched blood before transfusing",
+      "Give FFP only after INR results return above 1.5"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **ABC score 4/4** (penetrating, SBP 90 หรือต่ำกว่า, HR 120 ขึ้นไป, FAST บวก) → คาดว่าต้องการ massive transfusion ให้ **เปิด MTP** สัดส่วน **1:1:1** ตั้งแต่ต้น ร่วมกับ **TXA** (ภายใน 3 ชม.) และไปห้องผ่าตัดหยุดเลือด\n- **NSS 3 L** — เลือดเจือจาง coagulopathy acidosis\n- **ให้แต่ PRC** — ไม่แก้ coagulopathy ทำให้เลือดออกต่อ\n- **รอ crossmatch** — ใช้เวลาราว 40 นาที ผู้ป่วยรอไม่ได้ ใช้ O/type-specific\n- **รอ INR** — coagulopathy เกิดเร็ว ผล lab ช้ากว่าสภาพจริง",
+     "pearl": "ABC score ตั้งแต่ 2 → เปิด MTP 1:1:1 ไม่รอ lab",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N3-04-2-2",
+     "kind": "mcq",
+     "topic": "Tranexamic acid timing",
+     "stem": "A 41-year-old man is transferred from a community hospital 4 hours after a motorcycle crash with a pelvic fracture. He is now hemodynamically stable after 3 units of red cells, and pelvic angioembolization has been completed. He has not received tranexamic acid. Which statement is most appropriate?",
+     "choices": [
+      "Tranexamic acid should not be started now because benefit is limited to administration within 3 hours of injury",
+      "Give tranexamic acid 1 g bolus now and 1 g over 8 hours",
+      "Give tranexamic acid 4 g bolus because of the delay",
+      "Give tranexamic acid only if fibrinogen is above 300 mg/dL",
+      "Combine tranexamic acid with activated prothrombin complex concentrate"
+     ],
+     "answer": 0,
+     "explain": "CRASH-2 แสดงว่า TXA ลดการตายจากเลือดออกเมื่อให้ **ภายใน 3 ชม.** หลังบาดเจ็บ และการเริ่มให้ **หลัง 3 ชม.สัมพันธ์กับการตายจากเลือดออกที่เพิ่มขึ้น** ผู้ป่วยมาถึง 4 ชม.และหยุดเลือดแล้ว จึงไม่ควรเริ่ม\n- **ให้ขนาดมาตรฐานตอนนี้** — เลยเวลาที่มีประโยชน์\n- **4 g bolus** — ไม่มีหลักฐาน และเพิ่มความเสี่ยงชัก/ลิ่มเลือด\n- **ให้เมื่อ fibrinogen สูง** — ไม่ใช่เกณฑ์การใช้\n- **ร่วมกับ activated PCC** — ข้อห้าม เสี่ยงลิ่มเลือดอุดตัน",
+     "pearl": "TXA ต้องภายใน 3 ชม. — เกินแล้วไม่เริ่ม",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N3-04-2-3",
+     "kind": "mcq",
+     "topic": "Restrictive transfusion threshold",
+     "stem": "A 63-year-old woman with no cardiac history is on postoperative day 2 after open right hemicolectomy. She is comfortable, ambulating, BP 128/74 mmHg, HR 82/min, no active bleeding, drain serous. Hemoglobin is 7.6 g/dL (preoperative 10.2). What is the most appropriate management?",
+     "choices": [
+      "No transfusion; monitor and give iron as needed",
+      "Transfuse 2 units of packed red cells",
+      "Transfuse 1 unit of packed red cells to reach hemoglobin above 8 g/dL",
+      "Transfuse fresh frozen plasma",
+      "Transfuse whole blood"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **คงที่ ไม่มีอาการ ไม่มีเลือดออก และไม่มีโรคหัวใจ** ใช้ **restrictive threshold Hb 7 g/dL** (TRICC, AABB) Hb 7.6 จึง **ไม่ต้องให้เลือด** ติดตามอาการและเสริมธาตุเหล็ก การให้เลือดโดยไม่จำเป็นเพิ่มความเสี่ยงติดเชื้อ TACO TRALI และภาวะภูมิคุ้มกัน\n- **PRC 2 ยูนิต** — ไม่มีข้อบ่งชี้ และควรให้ทีละ 1 ยูนิตเมื่อจำเป็น\n- **PRC 1 ยูนิตให้เกิน 8** — เกณฑ์ 8 ใช้ในผู้มีโรคหัวใจ/ผ่าตัดหัวใจ-ออร์โธ\n- **FFP** — ไม่มี coagulopathy หรือเลือดออก\n- **Whole blood** — ไม่มีข้อบ่งชี้",
+     "pearl": "Hb 7 ในผู้ป่วยคงที่ (8 ถ้ามีโรคหัวใจ) · ให้ทีละ 1 ยูนิต",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-04-3",
+   "title": "ผู้ป่วยเลือดออกที่ใช้ anticoagulant/antiplatelet: การกลับฤทธิ์และ transfusion reaction",
+   "summary": "ผู้ป่วยกินยาต้านลิ่มเลือดแล้วเลือดออกหรือต้องผ่าตัดด่วน จะกลับฤทธิ์ยาแต่ละตัวอย่างไร และถ้าเกิดปฏิกิริยาจากการให้เลือดต้องทำอะไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 4 — Anticoagulation and bleeding, warfarin reversal guideline, complications of transfusion",
+   "md": "### ผู้ป่วยเลือดออกที่ใช้ยาต้านลิ่มเลือด: ขั้นตอนข้างเตียง\n1. **ABC + หยุดเลือดเฉพาะที่** (กด, เย็บ, ผ่าตัด/endoscopy/angio) — การกลับฤทธิ์ยาไม่แทนการหยุดเลือด\n2. **หยุดยา** และถาม: ยาอะไร ขนาด **กินครั้งสุดท้ายเมื่อไร**, ข้อบ่งชี้ของยา (mechanical valve? stent เมื่อไร?), การทำงานของไต\n3. Lab: CBC, **PT/INR, aPTT**, fibrinogen, Cr, G/M · (thrombin time สำหรับ dabigatran, anti-Xa level ถ้ามี)\n4. แบ่งความรุนแรง: เลือดออก **คุกคามชีวิต/อวัยวะสำคัญ** (ICH, ช็อก, ต้องผ่าตัดด่วน) → กลับฤทธิ์ทันที · เลือดออกเล็กน้อย → หยุด/เลื่อนยา\n5. วางแผน **การกลับมาให้ยา** หลังหยุดเลือดได้ (ชั่งลิ่มเลือดกับเลือดออก)\n> ผ่าตัดได้โดยไม่ต้องกลับฤทธิ์เต็มที่เมื่อ **INR น้อยกว่า 1.5** หรือ **aPTT น้อยกว่า 1.3 เท่าของ control** แต่ต้องผ่าตัดอย่างพิถีพิถัน — ยกเว้นผ่าตัดสมองและตาที่เลือดออกเล็กน้อยก็อันตราย\n\n### ตารางกลับฤทธิ์ยา\n| ยา | กลไก | การกลับฤทธิ์ในเลือดออกรุนแรง |\n|---|---|---|\n| **Warfarin** | ลด factor II, VII, IX, X | **Vitamin K 10 mg IV ช้า ๆ** + **4F-PCC** (ตาม INR) · ไม่มี PCC → **FFP 10–15 mL/kg** |\n| **UFH** | antithrombin → IIa, Xa | หยุด infusion (half-life สั้น) · **protamine 1 mg ต่อ heparin 100 U** ที่ได้ใน 2–3 ชม.ที่ผ่านมา (สูงสุด 50 mg) |\n| **LMWH** (enoxaparin) | anti-Xa มากกว่า IIa | protamine กลับได้บางส่วน (ราว 1 mg ต่อ enoxaparin 1 mg ถ้าได้ภายใน 8 ชม.) |\n| **Dabigatran** | direct thrombin inhibitor | **Idarucizumab 5 g IV** · ฟอกเลือดได้ |\n| **Rivaroxaban, apixaban, edoxaban** | direct Xa inhibitor | **Andexanet alfa** ถ้ามี หรือ **4F-PCC** (ราว 50 U/kg) · ฟอกเลือดไม่ได้ |\n| **Aspirin, clopidogrel, prasugrel** | ยับยั้งเกล็ดเลือดแบบถาวร | **platelet transfusion** เมื่อเลือดออกคุกคามชีวิตหรือต้องผ่าตัดด่วน ± **DDAVP 0.3 µg/kg** |\n\n- Protamine อาจทำให้ความดันตก หน้าแดง หัวใจช้า โดยเฉพาะผู้แพ้ปลา/เคยได้ protamine insulin\n- Vitamin K อย่างเดียวออกฤทธิ์ช้า (6–24 ชม.) แต่ต้องให้เสมอเพื่อคงผลของ PCC/FFP ซึ่ง half-life สั้น\n\n### Warfarin กับ 4F-PCC: ใช้ขนาดตาม INR\n| INR | 4F-PCC (ตัวอย่าง protocol) |\n|---|---|\n| 1.5–3.9 | 25 U/kg (สูงสุด 2,500 U) |\n| 4–6 | 35 U/kg (สูงสุด 3,500 U) |\n| มากกว่า 6 | 50 U/kg (สูงสุด 5,000 U) |\n\n- **ตรวจ INR ซ้ำ** ราว 1, 6, 24 ชม. หลังให้ ถ้ายังมากกว่า 1.5 พิจารณา FFP/vitamin K ซ้ำ\n- **4F-PCC ดีกว่า FFP** เรื่องความเร็วและปริมาตร (ไม่เสี่ยง TACO) แต่ราคาสูง · ข้อห้ามสัมพัทธ์: เพิ่งมีลิ่มเลือดอุดตันใน 3 เดือน, DIC, HIT\n- ในโรงพยาบาลชุมชนไทยที่ไม่มี PCC: ให้ **vitamin K IV + FFP** แล้วส่งต่อ\n- **INR สูงโดยไม่มีเลือดออก**: หยุด/ลดขนาดยา ± vitamin K ทางปาก — ไม่ต้องให้ FFP\n\n### ก่อนผ่าตัด elective: หยุดยาและ bridging\n| ยา | หยุดก่อนผ่าตัด | หมายเหตุ |\n|---|---|---|\n| Warfarin | ราว 5 วัน | ตรวจ INR วันก่อนผ่าตัด |\n| DOAC (ไตปกติ) | ราว 1–2 วัน (36–48 ชม.) | ไตเสื่อม/dabigatran/ผ่าตัดเลือดออกสูง → นานขึ้น |\n| Clopidogrel, prasugrel, ticagrelor | ราว 5–7 วัน | ถ้ามี stent ใหม่ ปรึกษา cardiology ก่อน |\n| UFH infusion | 4–6 ชม. | เริ่มใหม่ 12–24 ชม.หลังผ่าตัดถ้าเลือดหยุด |\n\n- **Bridging** ด้วย heparin เฉพาะ **เสี่ยงลิ่มเลือดสูง**: **mechanical heart valve**, **MI/stroke/PE ภายใน 30 วัน** · AF ทั่วไปหรือลิ่มเลือดนานกว่า 30 วัน **ไม่ต้อง bridge** (BRIDGE trial: bridging เพิ่มเลือดออกโดยไม่ลดลิ่มเลือด)\n- DOAC ไม่ต้อง bridge (ออกฤทธิ์เร็ว)\n- เริ่มยาต้านลิ่มเลือดใหม่หลังผ่าตัดเมื่อหยุดเลือดดี: ราว 24 ชม.ในผ่าตัดเลือดออกน้อย และ 48–72 ชม.ในผ่าตัดเลือดออกสูง\n\n### ปฏิกิริยาจากการให้เลือด: จำแนกเร็วข้างเตียง\n| ปฏิกิริยา | เวลา/ลักษณะ | จัดการ |\n|---|---|---|\n| **Acute hemolytic** (ABO ผิดหมู่) | นาทีแรก ๆ: ไข้ หนาวสั่น **ปวดหลัง/อก** ปวดที่แขนตำแหน่งให้ ความดันต่ำ **ปัสสาวะสีเข้ม**, ผู้ป่วยดมยา: เลือดซึมทั่วไป + ความดันตก | **หยุดเลือดทันที**, ส่งถุงเลือด+เลือดผู้ป่วยไปธนาคารเลือด (DAT), ให้สารน้ำรักษา UO, ดู DIC/AKI/K |\n| Febrile nonhemolytic | ไข้เพิ่มมากกว่า 1°C, หนาวสั่น, V/S ดี | หยุดชั่วคราว ตัด hemolysis, paracetamol · ป้องกันด้วย leukoreduced |\n| Allergic | ผื่นลมพิษ คัน | antihistamine · ถ้าผื่นอย่างเดียวให้ต่อได้ |\n| **Anaphylaxis** | ความดันตก หลอดลมตีบ | หยุด, **epinephrine IM**, airway |\n| **TRALI** | หอบ hypoxemia ภายใน 6 ชม. (มักใน 1–2 ชม.) ไข้ ความดันต่ำ ปอดขาวสองข้าง **ไม่มีน้ำเกิน** | หยุด, แจ้งธนาคารเลือด, ช่วยหายใจ · ไม่ใช้ diuretic |\n| **TACO** | หอบ ความดันสูง JVP สูง crackles ในผู้สูงอายุ/โรคหัวใจ | หยุด/ช้าลง, **diuretic**, นั่ง |\n| Delayed hemolytic | 2–10 วัน: Hb ลด ดีซ่าน indirect bilirubin สูง DAT บวก | มักไม่ต้องรักษาเฉพาะ ระบุ antigen |\n| Bacterial contamination | ไข้สูง ช็อก มักจาก platelet | หยุด, เพาะเชื้อถุงและผู้ป่วย, antibiotic |\n",
+   "pearls": [
+    "กลับฤทธิ์ยาไม่แทนการหยุดเลือดเฉพาะที่",
+    "Warfarin: vitamin K 10 mg IV + 4F-PCC ตาม INR (FFP ถ้าไม่มี PCC)",
+    "Heparin: protamine 1 mg ต่อ 100 U · Dabigatran: idarucizumab · Xa inhibitor: andexanet หรือ 4F-PCC",
+    "ผ่าตัดได้เมื่อ INR น้อยกว่า 1.5 หรือ aPTT น้อยกว่า 1.3 เท่า (ยกเว้นสมอง/ตา)",
+    "Bridging เฉพาะ mechanical valve หรือ MI/stroke/PE ภายใน 30 วัน — AF ทั่วไปไม่ต้อง",
+    "Acute hemolytic reaction: ไข้ ปวดหลัง ความดันตก ปัสสาวะสีเข้ม → หยุดเลือดทันที ส่งถุงตรวจ",
+    "TRALI ไม่มีน้ำเกิน (ห้าม diuretic) · TACO มีน้ำเกิน (ให้ diuretic)"
+   ],
+   "items": [
+    {
+     "id": "N3-04-3-1",
+     "kind": "mcq",
+     "topic": "Warfarin reversal in life-threatening bleeding",
+     "stem": "A 78-year-old woman taking warfarin for atrial fibrillation presents with an incarcerated femoral hernia with signs of strangulation requiring emergency surgery. BP 112/70 mmHg, HR 104/min. INR 3.4, platelets 210,000/µL. 4-factor prothrombin complex concentrate is available. What is the best approach to her anticoagulation before surgery?",
+     "choices": [
+      "Vitamin K 10 mg IV slowly plus 4-factor PCC about 25 U/kg, then recheck INR",
+      "Vitamin K 10 mg orally and operate tomorrow",
+      "Fresh frozen plasma 2 units only",
+      "Protamine sulfate 50 mg IV",
+      "Platelet transfusion 6 units"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยต้อง **ผ่าตัดฉุกเฉิน** (strangulation) และ INR 3.4 → ต้องกลับฤทธิ์ warfarin เร็ว: **vitamin K 10 mg IV ช้า ๆ** (คงผลระยะยาว) + **4F-PCC** ขนาดตาม INR (1.5–3.9 → ราว 25 U/kg) ซึ่งแก้ INR ได้ในไม่กี่นาที แล้วตรวจ INR ซ้ำ\n- **Vitamin K กินแล้วผ่าวันพรุ่งนี้** — ช้าเกินไป ลำไส้จะเน่า\n- **FFP 2 ยูนิต** — ปริมาณไม่พอ (ต้องราว 10–15 mL/kg) ช้ากว่า และเสี่ยง TACO ในผู้สูงอายุ\n- **Protamine** — กลับฤทธิ์ heparin ไม่ใช่ warfarin\n- **Platelet** — เกล็ดเลือดปกติ ไม่ใช่ปัญหา",
+     "pearl": "Warfarin + ผ่าตัด/เลือดออกด่วน → vitamin K IV + 4F-PCC (FFP ถ้าไม่มี PCC)",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N3-04-3-2",
+     "kind": "mcq",
+     "topic": "Dabigatran reversal",
+     "stem": "A 72-year-old man taking dabigatran 150 mg twice daily (last dose 6 hours ago) sustains a fall and is found to have a splenic injury with active contrast extravasation. BP 88/56 mmHg after 2 units of blood. Creatinine 1.2 mg/dL. He is being prepared for urgent splenectomy. Which agent is most appropriate to reverse his anticoagulant?",
+     "choices": [
+      "Idarucizumab 5 g IV",
+      "Protamine sulfate",
+      "Vitamin K 10 mg IV",
+      "Andexanet alfa",
+      "Desmopressin 0.3 µg/kg IV"
+     ],
+     "answer": 0,
+     "explain": "**Dabigatran** เป็น direct thrombin inhibitor ยากลับฤทธิ์เฉพาะคือ **idarucizumab** (monoclonal antibody fragment จับ dabigatran) 5 g IV ให้ผลทันที (ถ้าไม่มี ฟอกเลือดได้เพราะจับโปรตีนน้อย)\n- **Protamine** — กลับฤทธิ์ heparin\n- **Vitamin K** — ใช้กับ warfarin\n- **Andexanet alfa** — สำหรับ factor Xa inhibitor (rivaroxaban, apixaban)\n- **Desmopressin** — ช่วยการทำงานของเกล็ดเลือด (uremia, vWD, antiplatelet) ไม่กลับฤทธิ์ dabigatran",
+     "pearl": "Dabigatran → idarucizumab · Xa inhibitor → andexanet/4F-PCC",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "N3-04-3-3",
+     "kind": "mcq",
+     "topic": "Acute hemolytic transfusion reaction",
+     "stem": "A 50-year-old woman is receiving her first unit of packed red cells on the ward after surgery. Ten minutes into the transfusion she develops chills, fever 38.9°C, low back pain, and BP falls from 124/76 to 88/50 mmHg. Her urine in the catheter bag turns dark red. What is the most appropriate first action?",
+     "choices": [
+      "Stop the transfusion immediately, keep the IV line open with normal saline, and send the blood unit and patient samples to the blood bank",
+      "Slow the transfusion rate and give paracetamol",
+      "Give chlorpheniramine and continue the transfusion",
+      "Give furosemide 40 mg IV and continue the transfusion",
+      "Complete the unit quickly and then investigate"
+     ],
+     "answer": 0,
+     "explain": "ไข้ หนาวสั่น **ปวดหลัง ความดันตก และ hemoglobinuria** ภายในไม่กี่นาทีแรก = **acute hemolytic transfusion reaction** (มักเกิดจากให้เลือดผิดคน/ABO ผิด) ต้อง **หยุดเลือดทันที**, คงเส้นด้วย NSS ใหม่, ตรวจ identity ซ้ำ, ส่งถุงเลือดและเลือดผู้ป่วย (DAT, crossmatch ซ้ำ, hemolysis labs) ให้สารน้ำรักษาปัสสาวะออกดี และเฝ้าระวัง DIC/AKI\n- **ให้ช้าลง + paracetamol** — เหมาะกับ febrile nonhemolytic ที่ V/S ดีเท่านั้น\n- **Antihistamine แล้วให้ต่อ** — สำหรับผื่นลมพิษอย่างเดียว\n- **Furosemide แล้วให้ต่อ** — การให้เลือดต่อทำให้ hemolysis มากขึ้น\n- **ให้หมดถุงก่อน** — อันตรายถึงชีวิต ปริมาณเลือดผิดหมู่ที่ได้สัมพันธ์กับความรุนแรง",
+     "pearl": "สงสัย hemolytic reaction → หยุดทันที ส่งถุง + เลือดผู้ป่วย รักษา UO",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-04-MEQ1",
+   "part": "MEQ",
+   "topic": "Elderly patient on warfarin with splenic injury — shock, reversal and massive transfusion",
+   "vignette": "หญิงไทยอายุ 74 ปี (น้ำหนัก 55 kg) ลื่นล้มในห้องน้ำ ชายโครงซ้ายกระแทกขอบอ่าง 2 ชม.ก่อนมา รพ. โรคประจำตัว **AF กิน warfarin**, HT กิน **bisoprolol**\n\nV/S: BP 86/54 mmHg, HR 92/min, RR 26/min, T 36.2°C, GCS 15 กระสับกระส่าย ผิวเย็นซีด\n\nPE: กดเจ็บ LUQ และซี่โครงซ้ายล่าง ท้องอืดเล็กน้อย\n\neFAST: มีน้ำใน LUQ และ Morison pouch · CXR: ซี่โครงซ้าย 10–11 หัก ไม่มี hemothorax\n\n| Lab | ผล |\n|---|---|\n| Hb | 9.4 g/dL |\n| Platelet | 180,000/µL |\n| INR | 3.1 |\n| Lactate | 4.6 mmol/L |\n| Fibrinogen | 160 mg/dL |",
+   "questions": [
+    {
+     "q": "1. ผู้ป่วยอยู่ในภาวะช็อกชนิดใด ระดับใด และทำไมชีพจรเพียง 92/min",
+     "a": "- **Hemorrhagic (hypovolemic) shock** จาก **splenic injury** (FAST บวก ซี่โครงซ้ายล่างหัก)\n- ความดันต่ำ กระสับกระส่าย lactate สูง → เสียเลือดราว **class III ขึ้นไป (มากกว่า 30%)**\n- ชีพจรไม่เร็วตามคาดเพราะ **bisoprolol** และอายุมาก → tachycardia เชื่อถือไม่ได้ในผู้สูงอายุ\n- Hb 9.4 ยังไม่สะท้อนการเสียเลือดจริง (ยังไม่ equilibrate)"
+    },
+    {
+     "q": "2. จงสั่งการ resuscitation ใน 15 นาทีแรก",
+     "a": "- O2, IV ใหญ่ 2 เส้น, monitor, ห่มอุ่น\n- จำกัด crystalloid → **เปิด MTP**: O/type-specific PRC : FFP : platelet ราว **1:1:1** ผ่าน warmer\n- **TXA 1 g IV ใน 10 นาที แล้ว 1 g ใน 8 ชม.** (ยังอยู่ภายใน 3 ชม.)\n- ส่ง G/M, CBC, coag, fibrinogen, ABG, ionized Ca\n- แจ้งศัลยแพทย์และห้องผ่าตัดทันที — ผู้ป่วยไม่คงที่ + FAST บวก → **laparotomy/splenectomy** (ผู้สูงอายุที่ช็อกไม่เหมาะกับ nonoperative management)"
+    },
+    {
+     "q": "3. จงกลับฤทธิ์ warfarin ให้ถูกต้อง และบอกเป้าหมายของ fibrinogen",
+     "a": "- **Vitamin K 10 mg IV ช้า ๆ**\n- **4F-PCC 25 U/kg** (INR 3.1 อยู่ช่วง 1.5–3.9) ≈ 1,375 U → ตรวจ INR ซ้ำหลังให้ราว 1 ชม. เป้า INR น้อยกว่า 1.5\n- ถ้าไม่มี PCC: **FFP 10–15 mL/kg** (ราว 550–825 mL) ระวัง TACO\n- Fibrinogen 160 mg/dL ในผู้ป่วยเลือดออกมาก → ให้ **cryoprecipitate** เป้าหมายราว 150–200 mg/dL ขึ้นไป\n- ไม่ต้องรอ INR ปกติก่อนเริ่มผ่าตัดถ้าผู้ป่วยไม่คงที่ — ทำคู่กัน"
+    },
+    {
+     "q": "4. ระหว่างผ่าตัดได้ PRC 8 ยูนิต FFP 8 ยูนิต ผู้ป่วยความดันลดลงอีกแม้เลือดหยุดแล้ว ECG QT ยาว จงบอกสาเหตุที่น่าจะเป็นและการแก้ไข",
+     "a": "- **Hypocalcemia จาก citrate** ในเลือดจำนวนมาก → หัวใจบีบตัวลด ความดันต่ำ QT ยาว\n- ตรวจ **ionized Ca** และให้ **calcium chloride/gluconate IV**\n- ตรวจอื่นด้วย: K (hyperkalemia จากเลือดเก่า), อุณหภูมิ (hypothermia), pH (acidosis) — **lethal triad**\n- เมื่อเลือดหยุดแล้ว **หยุด MTP** แจ้งธนาคารเลือด"
+    },
+    {
+     "q": "5. หลังผ่าตัดวันที่ 3 ผู้ป่วยคงที่ ญาติถามว่าจะกลับไปกิน warfarin เมื่อไร และต้องฉีดยาอะไรเพิ่มไหม",
+     "a": "- ชั่งความเสี่ยง **stroke จาก AF** กับ **เลือดออกซ้ำ**: เมื่อหยุดเลือดดีแล้ว (มักราว 48–72 ชม.ขึ้นไปหลังผ่าตัดเลือดออกสูง) เริ่ม VTE prophylaxis ก่อน แล้วค่อยกลับไปให้ anticoagulant ขนาดรักษา (warfarin หรือพิจารณา DOAC) ร่วมกับทีมอายุรกรรม\n- AF ทั่วไป **ไม่ต้อง bridge ด้วย heparin ขนาดรักษา** (BRIDGE trial)\n- **Post-splenectomy vaccines**: pneumococcal, meningococcal, Haemophilus influenzae type b (มักให้ราว 14 วันหลังผ่าตัดหรือก่อนกลับบ้าน) และให้ความรู้เรื่องไข้หลังตัดม้าม (OPSI)\n- ประเมินความเสี่ยงหกล้มและความเหมาะสมของยาต้านลิ่มเลือดในผู้สูงอายุ"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 4",
+    "Schwartz 11e Ch 5",
+    "Schwartz 11e Ch 7",
+    "CRASH-2 trial (Lancet 2010)",
+    "BRIDGE trial (NEJM 2015)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-04-OSCE1",
+   "topic": "Hypotensive patient after surgery — recognition and management",
+   "station": "สถานี 8 นาที · จัดการผู้ป่วยวิกฤตบนหอ (ผู้คุมสอบให้ข้อมูล)",
+   "instruction": "**บทบาท**: แพทย์เวรศัลยกรรม เวลา 20:00 น.\n\n**สถานการณ์**: ชายอายุ 56 ปี น้ำหนัก 70 kg ได้รับ **laparoscopic cholecystectomy** เวลา 14:00 น. (ผ่าตัดยากเพราะ cholecystitis) ใส่ drain ใต้ตับ พยาบาลแจ้งว่า **BP 84/50 mmHg, HR 128/min** ผู้ป่วยบ่นปวดท้องและไหล่ขวา\n\n**งานของคุณ** (8 นาที): บอกสิ่งที่คุณจะประเมินและทำตามลำดับ ผู้คุมสอบจะให้ข้อมูลเมื่อถาม\n\n**ข้อมูลสำหรับผู้คุมสอบ**: RR 26, SpO2 95%, T 36.8 · ซีด เหงื่อออก กระสับกระส่าย capillary refill 4 วินาที JVP แฟบ ปอดใส · ท้องอืดขึ้น กดเจ็บทั่ว · **drain มีเลือดสด 350 mL ใน 2 ชม.** · ไม่มียาลดความดันใหม่ · Hb 10.8 (preop 14.2) · หลัง LRS 1 L → BP 90/56, HR 124 แล้วกลับมา 82/50 ใน 15 นาที",
+   "answer": "1. ไปดูผู้ป่วยทันที เรียกช่วย บอกทีม (0.5)\n2. **ABC**: O2, IV ใหญ่ 2 เส้น, monitor, ยกขา (1)\n3. ประเมินหาสาเหตุช็อกอย่างเป็นระบบ: สติ ผิว JVP ปอด ท้อง **drain** แผล ทบทวน op note/ยา (1)\n4. ระบุ **hemorrhagic shock จากเลือดออกหลังผ่าตัด** (drain เลือดสด ท้องอืด Hb ลด JVP แฟบ) และไม่ลืมแยก tension PTX/MI/anaphylaxis/sepsis (1)\n5. ส่ง **G/M ด่วน, CBC, coag, fibrinogen, lactate, ABG** (1)\n6. Crystalloid bolus จำกัด → แปลผลเป็น **transient responder** → **ให้เลือด** (O/uncrossmatched ถ้ารอไม่ได้) พิจารณา MTP (1)\n7. **แจ้งศัลยแพทย์เจ้าของไข้/อาวุโสทันที เตรียมกลับห้องผ่าตัด** (relaparoscopy/laparotomy หยุดเลือด เช่น clip cystic artery หลุด) แจ้งวิสัญญีและห้องผ่าตัด (1.5)\n8. แก้ coagulopathy ตามผล, อุ่นผู้ป่วย, Foley วัด UO (0.5)\n9. ไม่ส่งผู้ป่วยไม่คงที่ไป CT (0.5)\n10. สื่อสารกับผู้ป่วย/ญาติ ขอ consent ผ่าตัดซ้ำและให้เลือด บันทึกเวลา (1)\n\n**Fatal errors**: ให้ vasopressor แทนเลือด/ผ่าตัด, ให้ crystalloid หลายลิตรต่อเนื่อง, ส่ง CT, รอ Hb ซ้ำ 6 ชม., ไม่แจ้งอาวุโส"
+  },
+  {
+   "id": "N3-04-OSCE2",
+   "topic": "Blood transfusion consent and management of a transfusion reaction",
+   "station": "สถานี 10 นาที · สื่อสาร (5 นาที) + จัดการภาวะแทรกซ้อน (5 นาที)",
+   "instruction": "**ส่วนที่ 1 (5 นาที)**: หญิงอายุ 60 ปี POD 1 หลังผ่าตัด hip hemiarthroplasty มีโรคหัวใจขาดเลือด Hb 7.4 g/dL เหนื่อยเมื่อลุกนั่ง แพทย์เจ้าของไข้สั่ง PRC 1 ยูนิต **จงให้ข้อมูลและขอความยินยอมรับเลือด** กับผู้ป่วยจำลอง (ผู้ป่วยกังวลว่า \"รับเลือดแล้วจะติดเอดส์ไหม\")\n\n**ส่วนที่ 2 (5 นาที)**: หลังเริ่มให้เลือด 15 นาที พยาบาลแจ้งว่า ผู้ป่วยหนาวสั่น T 38.8°C ปวดหลัง BP 92/50 (ก่อนให้ 136/80) HR 118 ปัสสาวะสีน้ำล้างเนื้อ **จงบอกการจัดการตามลำดับ**",
+   "answer": "**ส่วนที่ 1 — Consent**\n1. แนะนำตัว ยืนยันตัวตน ถามความเข้าใจเดิม (0.5)\n2. เหตุผล: เลือดจาง (Hb 7.4) ร่วมกับโรคหัวใจและมีอาการ → เพิ่มออกซิเจนให้หัวใจ/ร่างกาย (1)\n3. วิธีให้: ทีละ 1 ถุง ราว 2–4 ชม. ตรวจสอบชื่อ/หมู่เลือดซ้ำข้างเตียง เฝ้าสัญญาณชีพ (0.5)\n4. ความเสี่ยง: ไข้ ผื่นแพ้ (พบได้บ่อยแต่ไม่รุนแรง), น้ำเกิน/หอบ, ปฏิกิริยาเลือดไม่เข้ากัน (พบน้อยมาก), **การติดเชื้อ (HIV, HBV, HCV) ต่ำมาก** เพราะเลือดผ่านการคัดกรองผู้บริจาคและการตรวจกรดนิวคลีอิก (1.5)\n5. ทางเลือก: ไม่รับเลือดและรักษาด้วยธาตุเหล็ก/ติดตาม (ผลที่อาจเกิด), สิทธิ์ปฏิเสธ (1)\n6. บอกอาการที่ต้องแจ้งพยาบาลทันที: หนาวสั่น ปวดหลัง/อก หอบ ผื่น (0.5)\n**ส่วนที่ 2 — Reaction**\n7. **หยุดให้เลือดทันที**, เปลี่ยนชุดสาย คง IV ด้วย NSS (1)\n8. **ตรวจสอบชื่อผู้ป่วย-ถุงเลือด-ใบขอเลือดซ้ำ** ข้างเตียง (0.5)\n9. ABC, O2, monitor, สารน้ำรักษา BP และ **urine output** (ราว 1 mL/kg/hr ขึ้นไป) (1)\n10. ส่ง **ถุงเลือดพร้อมสาย + เลือดผู้ป่วย** ไปธนาคารเลือด: repeat ABO/Rh, crossmatch, **DAT**; lab: CBC, LDH, bilirubin, haptoglobin, plasma Hb, UA (hemoglobinuria), BUN/Cr, K, coag/DIC (1)\n11. แจ้งแพทย์อาวุโส/ธนาคารเลือด รายงานอุบัติการณ์ บอกผู้ป่วยตรงไปตรงมา (0.5)\n\n**Fatal errors**: ให้เลือดต่อ, ให้แค่ paracetamol/antihistamine, ไม่ส่งถุงเลือดตรวจ, บอกผู้ป่วยว่าไม่มีความเสี่ยงติดเชื้อเลย"
+  }
+ ]
+}

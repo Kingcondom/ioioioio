@@ -1,0 +1,417 @@
+{
+ "lec": "07",
+ "date": "Schwartz Ch 26, 29, 31, 32, 33",
+ "title": "GI bleeding & jaundice",
+ "subtitle": "อาเจียนเป็นเลือด ถ่ายเป็นเลือด หรือตัวเหลืองตาเหลือง ควร resuscitate อย่างไร ส่งตรวจอะไร และส่องกล้อง ระบาย หรือผ่าตัดเมื่อไร",
+ "objectives": [
+  "เรียนจบแล้วต้องสั่ง resuscitation ผู้ป่วย GI bleeding ได้ครบ รวมถึงเกณฑ์ให้เลือดแบบ restrictive และการแก้ยาต้านเลือดแข็ง",
+  "เรียนจบแล้วต้องคำนวณ Glasgow-Blatchford score และใช้ Forrest classification ตัดสินการรักษาทางกล้องและการให้ PPI",
+  "เรียนจบแล้วต้องสั่ง variceal bleeding bundle (vasoactive, ceftriaxone, EVL ภายใน 12 ชม., TIPS) และวางแผนป้องกันเลือดออกซ้ำ",
+  "เรียนจบแล้วต้องวางลำดับการตรวจ lower GI bleeding (ตัด UGIB, colonoscopy, CTA, angioembolization) และบอกข้อบ่งชี้ผ่าตัด",
+  "เรียนจบแล้วต้องแปลผล LFT และ ultrasound เพื่อแยกระดับการอุดตันทางเดินน้ำดี และเลือก CT/MRCP/ERCP/PTBD ได้เหมาะสม",
+  "เรียนจบแล้วต้องอธิบายหลักการดูแล periampullary tumor และ cholangiocarcinoma ในบริบทพยาธิใบไม้ตับของไทย รวมถึงเมื่อใดต้องระบายท่อน้ำดีก่อนผ่าตัด"
+ ],
+ "guidelines": [
+  "International Consensus Group / ACG 2021 guideline — upper GI and ulcer bleeding (GBS, endoscopy within 24 h, restrictive transfusion)",
+  "Baveno VII consensus (2022) — portal hypertension and acute variceal bleeding",
+  "British Society of Gastroenterology 2019 — acute lower GI bleeding (Oakland score)",
+  "DROP trial (van der Gaag et al., NEJM 2010) — preoperative biliary drainage for pancreatic head cancer",
+  "Schwartz's Principles of Surgery 11e, Ch 26, 29, 31, 32, 33"
+ ],
+ "sections": [
+  {
+   "id": "n3-07-1",
+   "title": "Upper GI bleeding: resuscitation, Glasgow-Blatchford, PPI และเวลาส่องกล้อง",
+   "summary": "ผู้ป่วยอาเจียนเป็นเลือดหรือถ่ายดำต้องได้ resuscitation แบบ restrictive แยกความเสี่ยงด้วย GBS ให้ PPI และส่องกล้องให้ทันเวลา แล้วตัดสินการรักษาตาม Forrest",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 26 — Bleeding peptic ulcer, Table 26-9 (Blatchford/Rockall), Fig 26-42",
+   "md": "### ห้านาทีแรก: resuscitate ก่อนหาแหล่งเลือดออก\nผู้ป่วยอาเจียนเป็นเลือด (**hematemesis**), อาเจียนสีกาแฟ หรือถ่ายดำ (**melena**) ให้ทำพร้อมกัน\n1. ประเมิน airway (ซึม/อาเจียนเป็นเลือดมาก → พิจารณาใส่ท่อช่วยหายใจก่อนส่องกล้อง), O₂\n2. **IV เข็มใหญ่ 2 เส้น**, เจาะ CBC, BUN/Cr, LFT, PT/INR, **G/M (crossmatch)**, lactate\n3. ให้ crystalloid แล้วให้เลือดแบบ **restrictive**: เป้าหมาย Hb ราว 7 g/dL (ราว 8 g/dL ในผู้มีโรคหัวใจขาดเลือด) ยกเว้นยังเลือดออกมาก/ช็อกให้เลือดตามสภาพ (massive transfusion protocol)\n4. NPO, Foley ในรายช็อก, ประวัติยา: **NSAIDs/aspirin, antiplatelet, warfarin/DOAC**, สุรา, โรคตับ\n5. แก้ coagulopathy ตามยา (vitamin K/PCC สำหรับ warfarin ที่เลือดออกรุนแรง)\n\n> **BUN สูงขึ้นไม่สมกับ creatinine** สนับสนุนเลือดออกทางเดินอาหารส่วนบน (โปรตีนเลือดถูกย่อยและดูดซึม)\n\n### Glasgow-Blatchford score (GBS): ใช้ก่อนส่องกล้อง\n| ตัวแปร | ค่า → คะแนน |\n|---|---|\n| **BUN (mmol/L)** | 6.5–7.9 → 2 · 8.0–9.9 → 3 · 10.0–24.9 → 4 · ≥25 → 6 |\n| **Hb ชาย (g/dL)** | 12.0–12.9 → 1 · 10.0–11.9 → 3 · น้อยกว่า 10 → 6 |\n| **Hb หญิง (g/dL)** | 10.0–11.9 → 1 · น้อยกว่า 10 → 6 |\n| **SBP (mmHg)** | 100–109 → 1 · 90–99 → 2 · น้อยกว่า 90 → 3 |\n| อื่น ๆ | ชีพจร ≥100 → 1 · melena → 1 · syncope → 2 · โรคตับ → 2 · หัวใจล้มเหลว → 2 |\n\nคะแนนเต็ม 23 · **GBS 0–1** = ความเสี่ยงต่ำมาก ส่วนใหญ่ **ส่องกล้องแบบผู้ป่วยนอกได้** โดยไม่ต้องนอน รพ. · ส่วน **Rockall** (เต็ม 11) ต้องใช้ผลส่องกล้อง และ **AIMS65** ทำนายอัตราตายใน รพ.\n\n### ยาและเวลาส่องกล้อง\n- **IV PPI** ก่อนส่องกล้อง (เช่น omeprazole/pantoprazole 80 mg IV) ลดสัดส่วนแผลที่มี stigmata เสี่ยงสูง แต่ไม่แทนการส่องกล้อง\n- **Erythromycin 250 mg IV** 30–120 นาทีก่อนส่อง ช่วยไล่เลือดออกจากกระเพาะให้มองเห็นดีขึ้น\n- **Upper endoscopy ภายใน 24 ชั่วโมง** หลังได้ resuscitation ในผู้ป่วยส่วนใหญ่ ไม่ควรส่องในผู้ป่วยที่ยังไม่ได้ resuscitate\n- NG aspiration ช่วยยืนยันว่าเลือดมาจากส่วนบน แต่ผลลบไม่ตัดแผลที่ duodenum\n\n### Forrest classification: บอกว่าต้องทำอะไรต่อ\n| Forrest | ลักษณะแผล | การรักษา |\n|---|---|---|\n| **Ia** | spurting | **endoscopic therapy** |\n| **Ib** | oozing | endoscopic therapy |\n| **IIa** | **non-bleeding visible vessel** | endoscopic therapy |\n| IIb | adherent clot | พิจารณาเอาก้อนเลือดออกแล้วรักษาสิ่งที่อยู่ใต้ |\n| IIc | flat pigmented spot | PPI ไม่ต้องรักษาทางกล้อง |\n| III | clean base | PPI ทานได้ กลับบ้านเร็ว |\n\n- วิธีหยุดเลือด: **clip**, thermal coagulation, ฉีด epinephrine (ไม่ควรใช้ epinephrine อย่างเดียว ให้ใช้ร่วมกับวิธีที่สอง) และตัดชิ้นเนื้อตรวจ **H. pylori**\n- หลังหยุดเลือดในแผลเสี่ยงสูง: **high-dose PPI 72 ชั่วโมง** (bolus แล้ว infusion หรือให้แบบ intermittent ขนาดสูง) แล้วต่อด้วยยากิน\n\n### เลือดออกซ้ำและเมื่อไรต้องผ่าตัด\n- ผู้ป่วยแผลเปปติกที่เลือดออก ราว 3 ใน 4 หยุดเองด้วยการงดอาหารและยากดกรด ส่วนที่เหลือคือกลุ่มที่ตายและต้องผ่าตัด\n- ปัจจัยเสี่ยงสูง: **ช็อก, hematemesis, ต้องให้เลือดมากกว่า 4 ยูนิตใน 24 ชม., active bleeding หรือ visible vessel**, แผลลึกที่ **posterior duodenal bulb** (gastroduodenal artery) หรือ **lesser curvature** (left gastric artery)\n- **Rebleeding** หลังรักษาทางกล้อง → **ส่องกล้องซ้ำ** ครั้งที่สอง\n- ล้มเหลว 2 ครั้ง หรือไม่คงที่ → **transcatheter arterial embolization (TAE)** ถ้ามี interventional radiology หรือ **ผ่าตัด**: duodenotomy เย็บผูก GDA ที่ฐานแผล (oversew) ± biopsy แผลกระเพาะ\n- ก่อนกลับบ้าน: กำจัด H. pylori, หยุด NSAIDs, PPI ต่อเนื่อง (ระยะยาวในรายที่ต้องใช้ antiplatelet/anticoagulant)\n",
+   "pearls": [
+    "Restrictive transfusion: Hb เป้าราว 7 (8 ถ้ามีโรคหัวใจ)",
+    "GBS เต็ม 23 · GBS 0–1 ดูแลแบบผู้ป่วยนอกได้",
+    "Endoscopy ภายใน 24 ชม. หลัง resuscitation",
+    "Forrest Ia, Ib, IIa → รักษาทางกล้อง · IIc, III → PPI อย่างเดียว",
+    "Epinephrine อย่างเดียวไม่พอ ต้องคู่กับ clip/thermal",
+    "Rebleed → ส่องซ้ำ; ล้มเหลว 2 ครั้ง → TAE หรือผ่าตัด",
+    "Posterior duodenal ulcer กัด GDA · lesser curve กัด left gastric"
+   ],
+   "items": [
+    {
+     "id": "N3-07-1-1",
+     "kind": "mcq",
+     "topic": "Glasgow-Blatchford score — low-risk disposition",
+     "stem": "A 28-year-old man presents after one episode of black stool this morning. He has no syncope, liver disease or heart disease, and takes no medications. Pulse 84/min, BP 128/76 mmHg. Hemoglobin 13.6 g/dL, BUN 6.0 mmol/L. He feels well and is tolerating fluids. What is the most appropriate disposition?",
+     "choices": [
+      "Discharge with oral PPI and arrange early outpatient endoscopy",
+      "Admit to ICU and perform endoscopy within 2 hours",
+      "Transfuse 1 unit of packed red cells and admit",
+      "Admit for CT angiography of the abdomen",
+      "Admit and start IV octreotide infusion"
+     ],
+     "answer": 0,
+     "explain": "คำนวณ **Glasgow-Blatchford score**: melena 1 คะแนน ส่วน BUN น้อยกว่า 6.5 mmol/L, Hb ชายมากกว่า 13, SBP มากกว่า 110, ชีพจรน้อยกว่า 100 และไม่มีโรคร่วม = **GBS 1** ซึ่งเป็นกลุ่มเสี่ยงต่ำมาก สามารถ **ดูแลแบบผู้ป่วยนอก** ให้ PPI และนัดส่องกล้องเร็ว พร้อมอธิบายอาการที่ต้องกลับมาทันที\n- **ICU + endoscopy ภายใน 2 ชม.** เกินความจำเป็นในผู้ป่วยเสี่ยงต่ำ\n- **ให้เลือด** ไม่มีข้อบ่งชี้เมื่อ Hb 13.6\n- **CT angiography** ใช้กับเลือดออกมากต่อเนื่องที่หาตำแหน่งไม่ได้\n- **Octreotide** ใช้กับสงสัย variceal bleeding ในโรคตับ",
+     "pearl": "GBS 0–1 → ดูแลแบบผู้ป่วยนอกได้",
+     "src": "Schwartz 11e Ch 26",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 26"
+     ]
+    },
+    {
+     "id": "N3-07-1-2",
+     "kind": "mcq",
+     "topic": "Peptic ulcer bleeding — visible vessel",
+     "stem": "A 66-year-old woman taking naproxen for osteoarthritis presents with hematemesis and melena. After 2 L crystalloid and 2 units of packed red cells, pulse is 96/min and BP 118/70 mmHg. Endoscopy at 10 hours shows a 1.5-cm duodenal bulb ulcer with a non-bleeding visible vessel. What is the most appropriate management?",
+     "choices": [
+      "Endoscopic clip or thermal therapy combined with epinephrine injection, then high-dose PPI for 72 hours",
+      "Epinephrine injection alone and oral PPI",
+      "No endoscopic therapy; oral PPI and discharge next day",
+      "Immediate surgical oversewing of the ulcer",
+      "Transcatheter arterial embolization before any endoscopic therapy"
+     ],
+     "answer": 0,
+     "explain": "**Non-bleeding visible vessel = Forrest IIa** มีโอกาสเลือดออกซ้ำสูง ต้องรักษาทางกล้องด้วย **วิธีกล (clip) หรือ thermal** โดยอาจฉีด epinephrine ร่วม แล้วให้ **high-dose PPI 72 ชม.** ซึ่งเป็นช่วงที่เสี่ยงเลือดออกซ้ำมากที่สุด พร้อมตรวจ H. pylori และหยุด NSAIDs\n- **Epinephrine อย่างเดียว** ด้อยกว่าการใช้ร่วมกับวิธีที่สอง\n- **ไม่รักษาทางกล้อง** เหมาะกับ clean base หรือ flat spot เท่านั้น\n- **ผ่าตัดทันที** สงวนไว้สำหรับรายที่รักษาทางกล้องล้มเหลวหรือไม่คงที่\n- **TAE** ใช้เมื่อรักษาทางกล้องไม่สำเร็จ",
+     "pearl": "Forrest Ia/Ib/IIa → รักษาทางกล้อง (dual therapy) + high-dose PPI 72 ชม.",
+     "src": "Schwartz 11e Ch 26",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 26"
+     ]
+    },
+    {
+     "id": "N3-07-1-3",
+     "kind": "mcq",
+     "topic": "Restrictive transfusion in upper GI bleeding",
+     "stem": "A 52-year-old man with no cardiac history presents with coffee-ground emesis and melena. After 1.5 L crystalloid, pulse 92/min, BP 122/78 mmHg, no ongoing hematemesis. Hemoglobin is 8.1 g/dL. Endoscopy is scheduled for the next morning. The resident asks about blood transfusion. What is the most appropriate plan?",
+     "choices": [
+      "Withhold transfusion now and transfuse if hemoglobin falls below 7 g/dL or he becomes unstable",
+      "Transfuse 2 units to reach hemoglobin above 10 g/dL",
+      "Transfuse fresh frozen plasma 4 units",
+      "Transfuse platelets 1 dose",
+      "Transfuse 1 unit before endoscopy regardless of hemoglobin"
+     ],
+     "answer": 0,
+     "explain": "การให้เลือดแบบ **restrictive (เป้าหมาย Hb ราว 7 g/dL)** ในผู้ป่วย UGIB ที่คงที่และไม่มีโรคหัวใจ ลดอัตราเลือดออกซ้ำและอัตราตายเทียบกับการให้แบบ liberal (การเพิ่มปริมาตรมากเกินทำให้ความดันในหลอดเลือดและ portal pressure สูง) รายนี้ Hb 8.1 และคงที่จึงยังไม่ต้องให้ ติดตาม Hb ซ้ำ\n- **ให้จน Hb มากกว่า 10** เป็นแบบ liberal ที่ผลแย่กว่า\n- **FFP** ใช้เมื่อมี coagulopathy หรือ massive transfusion\n- **Platelet** ใช้เมื่อเกล็ดเลือดต่ำมากหรือมีเลือดออกขณะใช้ antiplatelet ในบางกรณี\n- **ให้ 1 ยูนิตโดยไม่ดู Hb** ไม่มีเหตุผล",
+     "pearl": "UGIB ที่คงที่: ให้เลือดเมื่อ Hb น้อยกว่า 7 (น้อยกว่า 8 ถ้ามีโรคหัวใจ)",
+     "src": "Schwartz 11e Ch 26",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 26"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-07-2",
+   "title": "Variceal bleeding bundle",
+   "summary": "ผู้ป่วยตับแข็งที่อาเจียนเลือดต้องได้ vasoactive drug, ยาปฏิชีวนะป้องกัน, การให้เลือดแบบระวัง และ EVL ภายใน 12 ชั่วโมง พร้อมแผนสำรองเมื่อเลือดไม่หยุด",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 31 — Portal hypertension: management of acute variceal hemorrhage, TIPS; Baveno VII",
+   "md": "### สงสัย variceal bleeding เมื่อไร\nผู้ป่วย **cirrhosis** (HBV, HCV, สุรา, NASH) หรือมีลักษณะ **portal hypertension**: ม้ามโต ascites, spider nevi, palmar erythema, caput medusae, เกล็ดเลือดต่ำ ร่วมกับอาเจียนเลือดปริมาณมาก ให้ **รักษาแบบ variceal ตั้งแต่ ER** ไม่ต้องรอส่องกล้องยืนยัน\n- cirrhosis ชดเชยได้มี varices ราว 30% และ decompensated ราว 60%\n- เลือดออกแต่ละครั้งมีอัตราตายราว **20–30%** และถ้าไม่ป้องกัน ราว 70% จะเลือดออกซ้ำใน 2 ปี\n- ผู้ป่วยมักตายจากตับวาย ไม่ใช่จากการเสียเลือดโดยตรง จึงต้องดูแลตับ ไต และการติดเชื้อไปพร้อมกัน\n\n### Variceal bleeding bundle (Baveno VII)\n| องค์ประกอบ | รายละเอียด |\n|---|---|\n| **Restrictive transfusion** | เป้า Hb ราว 7–8 g/dL; ให้เลือดหรือ saline มากเกินทำให้เลือดออกซ้ำและตายมากขึ้น |\n| **Vasoactive drug** เริ่มทันที | **octreotide** 50 µg bolus แล้ว 50 µg/h หรือ **terlipressin**; ให้ต่อ 2–5 วัน (vasopressin ไม่ใช้แล้วเพราะหลอดเลือดหดทั่วร่างกาย) |\n| **Antibiotic prophylaxis** | **ceftriaxone 1 g/วัน IV** นานสูงสุด 7 วัน ลดการติดเชื้อ (SBP, UTI, ปอดอักเสบ) และเพิ่มอัตรารอด |\n| **Endoscopy ภายใน 12 ชม.** | **endoscopic variceal ligation (EVL)** สำหรับ esophageal varices; gastric varices ใช้ cyanoacrylate injection |\n| ป้องกัน encephalopathy | ไล่เลือดออกจากลำไส้ (**lactulose**), แก้ hypokalemia, หลีกเลี่ยง sedative |\n| **Pre-emptive TIPS** | ภายใน 72 ชม. (ดีที่สุดภายใน 24 ชม.) ใน Child C 10–13 คะแนน หรือ Child B มากกว่า 7 ที่มี active bleeding ขณะส่องกล้อง |\n\n> ยา vasoactive + EVL ร่วมกันดีกว่าวิธีเดียว ทั้งการหยุดเลือดครั้งแรกและอัตรา hemostasis ที่ 5 วัน\n> FFP/platelet ให้เฉพาะ coagulopathy รุนแรง ไม่แนะนำ recombinant factor VIIa\n\n### เลือดไม่หยุด: สะพานไป TIPS\n1. **Balloon tamponade** (Sengstaken-Blakemore tube) หยุดเลือดได้ราว 90% แต่เสี่ยงสำลัก ทางเดินหายใจอุดตัน หลอดอาหารทะลุ จึง **ใส่ท่อช่วยหายใจก่อน** และ **ไม่เกิน 36 ชม.** (บางศูนย์ใช้ esophageal self-expanding metal stent แทน)\n2. **Rescue TIPS**: ต่อ portal vein กับ hepatic vein ผ่าน stent ให้ portal pressure gradient น้อยกว่า 12 mmHg ควบคุมเลือดได้มากกว่า 90% แต่เกิด encephalopathy และภาวะแทรกซ้อนราว 25–30%\n3. ผ่าตัด shunt หรือ devascularization (เช่น Sugiura) ใช้น้อยมาก; ผู้ป่วยตับวายพิจารณา **liver transplantation**\n\nใน รพช. ที่ไม่มีกล้อง: resuscitate, เริ่ม octreotide/terlipressin + ceftriaxone, ใส่ท่อช่วยหายใจถ้าเลือดออกมาก แล้ว **refer** ไปศูนย์ที่ส่องกล้องได้ทันที\n\n### หลังหยุดเลือด: ป้องกันซ้ำ\n- **Secondary prophylaxis**: **non-selective β-blocker** (propranolol, nadolol หรือ carvedilol) **ร่วมกับ EVL** ทุก 1–2 สัปดาห์จน varices หมด แล้วส่องกล้องเฝ้าระวัง\n- รักษาสาเหตุ: หยุดสุรา, antiviral สำหรับ HBV/HCV, คัดกรอง **HCC** ด้วย US ทุก 6 เดือน\n- ประเมินส่งต่อ liver transplantation (MELD/Child-Pugh)\n\n| Child-Pugh | 1 | 2 | 3 |\n|---|---|---|---|\n| Bilirubin (mg/dL) | น้อยกว่า 2 | 2–3 | มากกว่า 3 |\n| Albumin (g/dL) | มากกว่า 3.5 | 2.8–3.5 | น้อยกว่า 2.8 |\n| INR | น้อยกว่า 1.7 | 1.7–2.3 | มากกว่า 2.3 |\n| Ascites | ไม่มี | น้อย/คุมได้ | มาก/คุมยาก |\n| Encephalopathy | ไม่มี | grade 1–2 | grade 3–4 |\n\nClass A 5–6 · **B 7–9** · **C 10–15**\n",
+   "pearls": [
+    "Cirrhosis + UGIB: รักษาเป็น variceal ตั้งแต่ ER",
+    "Octreotide/terlipressin 2–5 วัน + ceftriaxone 1 g/วัน",
+    "EVL ภายใน 12 ชม.; ยา + EVL ดีกว่าวิธีเดียว",
+    "ให้เลือดมากเกินไป → เลือดออกซ้ำและตายมากขึ้น",
+    "Balloon tamponade: intubate ก่อน ไม่เกิน 36 ชม. เป็นสะพานไป TIPS",
+    "TIPS: portal pressure gradient น้อยกว่า 12 mmHg",
+    "Secondary prophylaxis: NSBB + EVL"
+   ],
+   "items": [
+    {
+     "id": "N3-07-2-1",
+     "kind": "mcq",
+     "topic": "Suspected variceal bleeding — initial pharmacotherapy",
+     "stem": "A 54-year-old man with alcohol-related cirrhosis presents with massive hematemesis. He has ascites and spider nevi. Pulse 122/min, BP 88/54 mmHg. Two large-bore IV lines are placed, blood is cross-matched and the gastroenterologist will perform endoscopy in 3 hours. Besides cautious transfusion, which drug combination should be started now?",
+     "choices": [
+      "IV octreotide (or terlipressin) and IV ceftriaxone",
+      "IV vasopressin and oral propranolol",
+      "IV tranexamic acid and IV vitamin K",
+      "IV pantoprazole alone",
+      "Oral propranolol and oral norfloxacin"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย cirrhosis ที่อาเจียนเลือดมากให้รักษาเป็น **variceal bleeding** ทันที: **vasoactive drug** (octreotide/terlipressin) ลดเลือดไหลเข้า varices และ **ceftriaxone 1 g/วัน** ป้องกันการติดเชื้อซึ่งเพิ่มทั้งเลือดออกซ้ำและอัตราตาย ตามด้วย EVL ภายใน 12 ชม.\n- **Vasopressin** มีผลหดหลอดเลือดทั่วร่างกาย (หัวใจขาดเลือด แขนขาขาดเลือด) และ **propranolol** ห้ามให้ขณะช็อก ใช้ในระยะป้องกัน\n- **Tranexamic acid** ไม่ลดอัตราตายใน GI bleeding (HALT-IT) และเพิ่มลิ่มเลือดอุดตัน\n- **PPI อย่างเดียว** ไม่หยุด variceal bleeding\n- **ยากิน** ไม่เหมาะในผู้ป่วยช็อกที่อาเจียนเลือด",
+     "pearl": "Cirrhosis + UGIB: octreotide/terlipressin + ceftriaxone ก่อนส่องกล้อง",
+     "src": "Schwartz 11e Ch 31",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 31"
+     ]
+    },
+    {
+     "id": "N3-07-2-2",
+     "kind": "mcq",
+     "topic": "Refractory variceal bleeding",
+     "stem": "A 61-year-old woman with HBV cirrhosis (Child-Pugh C) continues to vomit large amounts of blood despite octreotide infusion, ceftriaxone, and band ligation 2 hours ago. Pulse 130/min, BP 78/46 mmHg on norepinephrine. She has been intubated. Interventional radiology can perform a TIPS tomorrow morning. What is the most appropriate immediate step?",
+     "choices": [
+      "Insert a Sengstaken-Blakemore balloon tube as a bridge to TIPS",
+      "Emergency portacaval shunt surgery tonight",
+      "Start IV propranolol infusion",
+      "Repeat band ligation in 1 week",
+      "Give recombinant factor VIIa and observe"
+     ],
+     "answer": 0,
+     "explain": "เลือดไม่หยุดแม้ได้ยาและ EVL = **refractory variceal bleeding** ระหว่างรอ TIPS ใช้ **balloon tamponade** ซึ่งหยุดเลือดได้ราว 90% ในผู้ป่วยที่ใส่ท่อช่วยหายใจแล้ว และต้องเอาออกภายใน 36 ชม. เพื่อเลี่ยงเนื้อเยื่อตาย แล้วทำ **rescue TIPS**\n- **Portacaval shunt ฉุกเฉิน** ใน Child C อัตราตายสูงมาก ใช้น้อยมากในยุค TIPS\n- **Propranolol** ห้ามในช็อก และใช้ป้องกันระยะยาว\n- **รอ EVL อีก 1 สัปดาห์** ไม่แก้เลือดที่ออกตอนนี้\n- **Factor VIIa** ไม่ได้ผลดีกว่าการรักษามาตรฐาน",
+     "pearl": "Refractory variceal bleed: tamponade (ไม่เกิน 36 ชม.) → TIPS",
+     "src": "Schwartz 11e Ch 31",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 31"
+     ]
+    },
+    {
+     "id": "N3-07-2-3",
+     "kind": "mcq",
+     "topic": "Secondary prophylaxis of variceal bleeding",
+     "stem": "A 49-year-old man with HBV cirrhosis is recovering on day 5 after esophageal variceal bleeding controlled with band ligation and octreotide. He is hemodynamically stable with heart rate 88/min and BP 116/70 mmHg. Tenofovir has been started. What is the best strategy to prevent rebleeding?",
+     "choices": [
+      "Non-selective beta-blocker plus repeat band ligation every 1–2 weeks until eradication",
+      "Band ligation alone only if he rebleeds",
+      "Long-term oral octreotide",
+      "Prophylactic surgical portosystemic shunt",
+      "Isosorbide mononitrate alone"
+     ],
+     "answer": 0,
+     "explain": "หลัง variceal bleed ครั้งแรก ไม่ป้องกันจะเลือดออกซ้ำราว 70% ใน 2 ปี มาตรฐาน **secondary prophylaxis** คือ **NSBB (propranolol/nadolol/carvedilol) ร่วมกับ EVL ซ้ำ** ทุก 1–2 สัปดาห์จน varices หมด แล้วส่องกล้องเฝ้าระวัง ร่วมกับรักษาสาเหตุ (antiviral)\n- **รอให้เลือดออกก่อน** ไม่เหมาะเพราะแต่ละครั้งตายราว 20–30%\n- **Octreotide ระยะยาว** ใช้เฉพาะช่วงเฉียบพลัน 2–5 วัน\n- **Surgical shunt** มีบทบาทน้อยมากในปัจจุบัน\n- **Nitrate เดี่ยว** ไม่มีประสิทธิภาพพอ",
+     "pearl": "หลัง variceal bleed: NSBB + EVL ทุกราย",
+     "src": "Schwartz 11e Ch 31",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 31"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-07-3",
+   "title": "Lower GI bleeding approach",
+   "summary": "ผู้ป่วยถ่ายเป็นเลือดต้อง resuscitate ตัด upper source และ anorectal source แล้วเลือก colonoscopy, CTA, angioembolization หรือผ่าตัดตามความเร็วของเลือดและความคงที่",
+   "minutes": 10,
+   "source": "Schwartz 11e Ch 29 — Lower GI bleeding (Fig 29-7), diverticular hemorrhage; Ch 28 — obscure GI bleeding",
+   "md": "### นิยามและขั้นแรกที่ลืมไม่ได้\n**Lower GI bleeding** คือเลือดออกจากส่วนปลายต่อ ligament of Treitz อาการเด่น **hematochezia** (ถ่ายเลือดแดง/เลือดคล้ำ) ส่วนใหญ่ในผู้สูงอายุและหยุดเองได้ (diverticular bleeding หยุดเองราว 80%)\n- ขั้นที่ 1 **Resuscitation** เหมือน UGIB (IV 2 เส้น, G/M, restrictive transfusion, หยุด/แก้ฤทธิ์ยาต้านเลือดแข็ง)\n- ขั้นที่ 2 **ตัดเลือดออกจากส่วนบน**: เลือดออกมากจาก duodenal ulcer ไหลเร็วจนถ่ายเลือดแดงได้ โดยเฉพาะผู้ป่วยที่ **ช็อก + BUN สูง** → NG aspiration (ได้น้ำดีไม่มีเลือดช่วยบอกว่าน่าจะอยู่ใต้ Treitz) หรือส่อง EGD ก่อน\n- ขั้นที่ 3 **ตรวจทวารหนัก + anoscopy/proctoscopy** หา hemorrhoid, fissure, rectal cancer\n\n### สาเหตุที่พบบ่อยตามกลุ่มอายุ\n| สาเหตุ | เบาะแส |\n|---|---|\n| **Diverticular bleeding** | ผู้สูงอายุ เลือดออกมาก ไม่ปวดท้อง มักหยุดเอง (right colon บ่อยใน Asian) |\n| **Angiodysplasia** | ผู้สูงอายุ CKD/aortic stenosis เลือดออกเป็นพัก ๆ |\n| **Colorectal cancer/polyp** | ถ่ายเปลี่ยนนิสัย น้ำหนักลด ซีดจากขาดธาตุเหล็ก |\n| **Ischemic colitis** | ปวดท้องซ้ายแล้วถ่ายเลือด ผู้สูงอายุ หลังความดันต่ำ |\n| **Hemorrhoids/fissure** | เลือดแดงหยดหลังอุจจาระ (fissure ปวดแสบเหมือนมีดบาด) |\n| **IBD, infectious colitis** | ท้องเสียมีมูกเลือด ไข้ |\n| Post-polypectomy | 1–2 สัปดาห์หลังตัด polyp |\n| Meckel diverticulum | เด็ก ไม่ปวด |\n\n### เลือกเครื่องมือตามความเร็วของเลือด\n| สถานการณ์ | ทางเลือก |\n|---|---|\n| คงที่ เลือดช้าลง/หยุด | **colonoscopy** หลัง **rapid bowel prep** (4–6 ชม.) หาสาเหตุและหยุดเลือดได้ (clip, cautery, epinephrine) |\n| เลือดยังออกเร็ว ผู้ป่วยตอบสนองต่อ resuscitation | **CT angiography** หาจุด extravasation (ไวต่อเลือดราว 0.3 mL/min ขึ้นไป) |\n| CTA บวก | **mesenteric angiography + superselective embolization** (ต้องเลือดออกราว 0.5–1.0 mL/min จึงเห็น) |\n| ช้า ๆ หาตำแหน่งไม่ได้ | **Tc-99m tagged RBC scan** (ไวมาก จับเลือดราว 0.05–0.2 mL/min แต่บอกตำแหน่งไม่แม่น) แล้วตามด้วย angiography |\n| EGD และ colonoscopy ปกติ | สงสัยลำไส้เล็ก: **capsule endoscopy**, enteroscopy (small bowel angiodysplasia พบบ่อยสุดในผู้ใหญ่) |\n\n> ผู้ป่วยความเสี่ยงต่ำ (เช่น **Oakland score ≤8** ตาม BSG 2019) ให้กลับบ้านและนัด colonoscopy ได้\n\n### เมื่อไรต้องผ่าตัด\n- เลือดออกต่อเนื่อง/ซ้ำทั้งที่รักษาทางกล้องและ embolization ไม่สำเร็จ, ไม่คงที่ทั้งที่ resuscitate เต็มที่, ต้องการเลือดจำนวนมาก\n- ถ้าหาตำแหน่งได้ → **segmental colectomy**\n- ถ้าหาตำแหน่งไม่ได้และผู้ป่วยไม่คงที่ → **subtotal colectomy** (blind) แต่ก่อนตัดต้อง **ส่อง anoscopy/proctoscopy ซ้ำ** ให้แน่ใจว่าเลือดไม่ได้มาจากทวารหนัก (ส่วนที่จะเก็บไว้)\n- การตัด segment โดยไม่รู้ตำแหน่งเลือดออกซ้ำสูง ห้ามทำ\n\n### Occult bleeding และ iron-deficiency anemia\n- ผลตรวจ **FIT/FOBT บวก** หรือ **iron-deficiency anemia** ที่อธิบายไม่ได้ในผู้ใหญ่ → **colonoscopy** (± EGD) เพื่อหามะเร็ง\n- อย่าสรุปว่าเลือดออกจากริดสีดวงโดยไม่ส่องกล้องในผู้ป่วยอายุมากกว่า 45–50 ปี หรือมีอาการเตือน (น้ำหนักลด ถ่ายเปลี่ยนนิสัย ซีด)\n",
+   "pearls": [
+    "Hematochezia + ช็อก: ตัด UGIB ก่อน (NG aspirate/EGD)",
+    "Diverticular bleeding หยุดเองราว 80%",
+    "Tagged RBC ไวสุด (ราว 0.05–0.2 mL/min) แต่บอกตำแหน่งไม่แม่น",
+    "Angiography ต้องเลือดออกราว 0.5–1.0 mL/min",
+    "หาตำแหน่งได้ → segmental colectomy; ไม่ได้ + ไม่คงที่ → subtotal colectomy",
+    "ก่อน blind subtotal colectomy ต้องส่อง anorectum ซ้ำ",
+    "FIT บวก/IDA ในผู้ใหญ่ → colonoscopy"
+   ],
+   "items": [
+    {
+     "id": "N3-07-3-1",
+     "kind": "mcq",
+     "topic": "Hematochezia with shock — exclude upper source",
+     "stem": "A 70-year-old man taking aspirin and ibuprofen presents with 3 episodes of large-volume maroon stool. Pulse 124/min, BP 86/50 mmHg, improving to 104/66 mmHg after 2 L crystalloid. Hemoglobin 7.6 g/dL, BUN 48 mg/dL, creatinine 1.1 mg/dL. Anoscopy shows no active anorectal bleeding. What is the most appropriate next diagnostic step after transfusion is started?",
+     "choices": [
+      "Upper endoscopy",
+      "Colonoscopy without bowel preparation",
+      "Technetium-99m tagged red cell scan",
+      "Barium enema",
+      "Capsule endoscopy"
+     ],
+     "answer": 0,
+     "explain": "ถ่ายเลือดแดงคล้ำปริมาณมาก **พร้อมช็อกและ BUN สูงเกินสัดส่วนกับ creatinine** ในผู้ใช้ NSAIDs/aspirin ต้องตัด **upper GI source** (เช่น duodenal ulcer เลือดออกเร็ว) ก่อน Schwartz แนะนำให้ทำ NG aspiration ทุกราย และถ้าได้เลือด/ไม่มีน้ำดีหรือสงสัยส่วนบนให้ส่อง **EGD** ซึ่งวินิจฉัยและหยุดเลือดได้ในครั้งเดียว\n- **Colonoscopy ไม่เตรียมลำไส้** มองเห็นไม่ดีและยังไม่ได้ตัดส่วนบน\n- **Tagged RBC scan** ใช้หาตำแหน่งเลือดช้า บอกตำแหน่งไม่แม่น\n- **Barium enema** ไม่มีบทบาทและรบกวนการตรวจ angiography/colonoscopy\n- **Capsule endoscopy** สำหรับ obscure bleeding หลัง EGD/colonoscopy ปกติ",
+     "pearl": "Hematochezia + ช็อก + BUN สูง → คิด UGIB ส่อง EGD ก่อน",
+     "src": "Schwartz 11e Ch 29",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 29"
+     ]
+    },
+    {
+     "id": "N3-07-3-2",
+     "kind": "mcq",
+     "topic": "Lower GI bleeding — ongoing brisk bleeding",
+     "stem": "An 80-year-old woman with diverticulosis has ongoing bright red rectal bleeding. EGD is normal. After 3 units of packed cells her BP is 100/60 mmHg and pulse 110/min, but she continues to pass blood clots every 30 minutes. CT angiography shows active contrast extravasation in the ascending colon. What is the most appropriate next step?",
+     "choices": [
+      "Mesenteric angiography with superselective embolization",
+      "Blind subtotal colectomy",
+      "Technetium-99m tagged red cell scan",
+      "Oral bowel preparation and colonoscopy tomorrow",
+      "Right hemicolectomy without further localization"
+     ],
+     "answer": 0,
+     "explain": "CTA บอก **ตำแหน่งที่เลือดยังออก** แล้ว ขั้นต่อไปคือ **mesenteric angiography + superselective embolization** ซึ่งทั้งยืนยันและหยุดเลือดได้ทันที (angiography เห็นเลือดเมื่อออกราว 0.5–1.0 mL/min ขึ้นไป) ถ้าล้มเหลวหรือเลือดออกซ้ำจึงผ่าตัด segmental resection ตามตำแหน่งที่ทราบ\n- **Blind subtotal colectomy** ใช้เมื่อหาตำแหน่งไม่ได้และผู้ป่วยไม่คงที่\n- **Tagged RBC scan** ซ้ำซ้อนเมื่อ CTA บอกตำแหน่งแล้ว\n- **Colonoscopy พรุ่งนี้** ช้าเกินไปในผู้ป่วยที่ยังเลือดออกเร็ว\n- **Right hemicolectomy ทันที** เป็นทางเลือกหลัง embolization ล้มเหลว ไม่ใช่ขั้นแรก",
+     "pearl": "LGIB ที่ยังออก: CTA หาจุด → angioembolization → ผ่าตัดตามตำแหน่ง",
+     "src": "Schwartz 11e Ch 29",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 29"
+     ]
+    },
+    {
+     "id": "N3-07-3-3",
+     "kind": "mcq",
+     "topic": "Lower GI bleeding — stable patient",
+     "stem": "A 68-year-old man had two episodes of bright red blood mixed with stool yesterday. Today he has no further bleeding. Pulse 82/min, BP 136/80 mmHg. Hemoglobin 12.1 g/dL (baseline 13.0). Anoscopy shows small non-bleeding internal hemorrhoids. He reports 5 kg weight loss over 3 months. What is the most appropriate next step?",
+     "choices": [
+      "Colonoscopy after bowel preparation",
+      "Rubber band ligation of the hemorrhoids and discharge",
+      "Mesenteric angiography",
+      "CT angiography",
+      "Reassurance and high-fiber diet"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยคงที่ เลือดหยุดแล้ว ควรทำ **colonoscopy หลังเตรียมลำไส้** เพื่อหาสาเหตุ โดยเฉพาะเมื่อ **อายุมากและน้ำหนักลด** ต้องหามะเร็งลำไส้ใหญ่ ริดสีดวงเล็กที่ไม่มีเลือดออกไม่ควรถูกสรุปว่าเป็นสาเหตุ\n- **Band ligation แล้วกลับบ้าน** อาจพลาดมะเร็ง\n- **Mesenteric angiography** ต้องมีเลือดออกขณะตรวจ ใช้ไม่ได้เมื่อหยุดแล้ว\n- **CT angiography** ใช้กับเลือดออกเร็วต่อเนื่อง\n- **ปลอบใจ + fiber** ไม่ปลอดภัยเมื่อมีอาการเตือน",
+     "pearl": "เลือดหยุดและคงที่ → colonoscopy; อย่าโทษริดสีดวงเมื่อมี red flags",
+     "src": "Schwartz 11e Ch 29",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 29"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-07-4",
+   "title": "Obstructive jaundice workup: US → CT/MRCP → ERCP/PTBD",
+   "summary": "แปลผล LFT และ ultrasound เพื่อแยกระดับการอุดตัน แล้วเลือกภาพถ่ายและวิธีระบายที่เหมาะกับนิ่ว periampullary tumor หรือ perihilar cholangiocarcinoma",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 32 — Choledocholithiasis, Cholangiocarcinoma; Ch 33 — Pancreatic cancer diagnosis and palliation",
+   "md": "### Jaundice: แยก pre-hepatic, hepatic, post-hepatic\n| แบบแผน | Bilirubin เด่น | ALP/GGT | AST/ALT | อื่น ๆ |\n|---|---|---|---|---|\n| **Pre-hepatic** (hemolysis, Gilbert) | **indirect** | ปกติ | ปกติ | Hb ต่ำ, LDH สูง, reticulocyte สูง, ปัสสาวะไม่เข้ม |\n| **Hepatocellular** (hepatitis, ยา) | ผสม | สูงเล็กน้อย | **สูงมาก** (หลายร้อยถึงพัน) | albumin ต่ำ INR สูงในโรคเรื้อรัง |\n| **Cholestatic/obstructive** | **direct** | **สูงมาก** | สูงปานกลาง | ปัสสาวะสีชา อุจจาระซีด คัน |\n\n- นิ่ว CBD ที่อุดเฉียบพลันทำให้ **AST/ALT พุ่งสูงชั่วคราว** ในวันแรก แล้ว ALP ค่อยตามขึ้น อย่าเข้าใจผิดว่าเป็นตับอักเสบ\n- ดีซ่านเรื้อรัง → **INR ยาวจากขาด vitamin K** (ดูดซึมไขมันไม่ได้) แก้ได้ด้วย vitamin K ทางหลอดเลือดดำ\n\n### ซักประวัติและตรวจร่างกายแยกนิ่วกับมะเร็ง\n| | **นิ่ว (choledocholithiasis)** | **มะเร็ง (malignant obstruction)** |\n|---|---|---|\n| ปวด | ปวด RUQ เป็นพัก ๆ | อาจไม่ปวดหรือปวดตื้อร้าวหลัง |\n| ดีซ่าน | ขึ้นลง ไข้หนาวสั่น | ค่อย ๆ เพิ่ม ไม่ลด คันมาก |\n| น้ำหนัก | ไม่ลด | **ลดมาก** เบื่ออาหาร |\n| ถุงน้ำดี | หดเล็ก ผนังหนา (อักเสบเรื้อรัง) | **คลำได้ไม่เจ็บ (Courvoisier)** ถ้าอุดต่ำกว่า cystic duct |\n\n- ไม่ควรถือว่า pancreatic cancer มาด้วย painless jaundice เสมอ ผู้ป่วยส่วนใหญ่มีปวดร่วม\n- **บริบทไทย**: ชาวอีสานที่กิน **ปลาร้า/ก้อยปลาดิบ** ติดพยาธิใบไม้ตับ **Opisthorchis viverrini** เสี่ยง **cholangiocarcinoma** สูงที่สุดในโลก ถามประวัติการกินและการรักษาด้วย praziquantel\n\n### ลำดับการตรวจ: US → CT/MRCP → ERCP/PTBD\n1. **Ultrasound** ก่อนเสมอ: ท่อน้ำดีขยายไหม (CBD มากกว่าราว 6–8 mm), ระดับที่อุด, นิ่วในถุงน้ำดี/CBD, ก้อนในตับ\n2. ท่อ **ไม่ขยาย** → คิด hepatocellular → ตรวจ viral hepatitis, ยา, autoimmune\n3. ท่อขยาย + **นิ่วถุงน้ำดี** → choledocholithiasis → **ERCP** (โอกาสสูง: เห็นนิ่ว CBD บน US, cholangitis, หรือ bilirubin สูงร่วมกับท่อขยาย) หรือ **MRCP/EUS** ก่อนถ้าโอกาสปานกลาง\n4. ท่อขยาย **ไม่มีนิ่ว** → คิด malignancy → **CT pancreas protocol (multiphase)** หรือ **MRI/MRCP** เพื่อดูก้อน ระดับ การลุกลามหลอดเลือด และการกระจาย **ก่อน ERCP**\n5. **ERCP** (ระบายทางล่าง ทำ brushing ใส่ stent) เหมาะกับอุดส่วนปลาย; **PTBD** เหมาะกับอุดส่วน hilum (Bismuth III–IV) หรือ ERCP ไม่สำเร็จ/กายวิภาคเปลี่ยน\n6. Tumor markers: **CA 19-9** ช่วยแต่ไม่จำเพาะ (สูงได้ใน cholangitis และท่ออุดตันจากนิ่ว) จึงควรตรวจซ้ำหลังระบายท่อน้ำดีแล้ว\n\n| ภาพ US | ระดับอุด | คิดถึง |\n|---|---|---|\n| Intrahepatic ducts ขยาย, **CBD และถุงน้ำดีแฟบ** | **hilum** | **perihilar cholangiocarcinoma (Klatskin)**, gallbladder cancer ลุกลาม |\n| Intra + extrahepatic ขยาย, **ถุงน้ำดีโต** | **ส่วนปลาย CBD/ampulla** | **periampullary tumor** (pancreatic head, ampulla, distal CBD, duodenum), นิ่ว |\n| CBD ขยาย + นิ่ว CBD | distal CBD | choledocholithiasis |\n\n### Periampullary tumor และ cholangiocarcinoma: หลักการที่ NL3 ต้องรู้\n- **Periampullary cancer** = pancreatic head, ampulla of Vater, distal CBD, duodenum มาด้วยดีซ่านคล้ายกัน แต่ ampullary/duodenal/distal CBD พยากรณ์ดีกว่าเพราะดีซ่านเกิดเร็ว\n- การผ่าตัดเพื่อหายขาด: **pancreaticoduodenectomy (Whipple)** · perihilar: ตัด bile duct + hepatectomy ตาม **Bismuth-Corlette** (I: common hepatic duct, II: bifurcation, IIIa/IIIb: ลามไป right/left secondary ducts, IV: ทั้งสองข้าง)\n- **Preoperative biliary drainage** ไม่ต้องทำทุกราย (ในผู้ป่วยที่จะผ่าตัด Whipple ได้เร็ว การใส่ stent ก่อนเพิ่มภาวะแทรกซ้อน — DROP trial) ให้ทำเมื่อมี **cholangitis**, bilirubin สูงมาก/คันมาก, ไตวาย, ต้องให้ neoadjuvant therapy หรือผ่าตัดต้องเลื่อนนาน\n- **Unresectable**: palliate ด้วย **metal stent** ทาง ERCP (อยู่ได้นานกว่า plastic stent) หรือ PTBD, ดูแลอาการคัน ปวด ภาวะโภชนาการ\n- ส่งต่อ **รพ. ศูนย์ (HPB)** เมื่อสงสัยมะเร็ง ก่อนใส่ stent ถ้าทำได้ เพื่อให้ทีมผ่าตัดวางแผนการระบายเอง\n",
+   "pearls": [
+    "Cholestatic: direct bilirubin + ALP สูงเด่น · hepatocellular: AST/ALT สูงเด่น",
+    "US ก่อนเสมอ: ท่อขยายไหม ระดับไหน มีนิ่วไหม",
+    "ท่อขยาย + ไม่มีนิ่ว → CT/MRCP ก่อน ERCP",
+    "IHD ขยาย + CBD/GB แฟบ = hilar (Klatskin)",
+    "Courvoisier: ถุงน้ำดีคลำได้ไม่เจ็บ + ดีซ่าน → คิด periampullary tumor",
+    "ไม่ต้องใส่ stent ก่อน Whipple ทุกราย (DROP trial)",
+    "Opisthorchis viverrini (ปลาร้า/ก้อยปลา) → cholangiocarcinoma ในอีสาน"
+   ],
+   "items": [
+    {
+     "id": "N3-07-4-1",
+     "kind": "mcq",
+     "topic": "Painless jaundice — imaging before ERCP",
+     "stem": "A 63-year-old man has 4 weeks of progressive jaundice, pruritus, dark urine and 6-kg weight loss. He is afebrile. Total bilirubin 14.2 mg/dL (direct 11.8), ALP 680 U/L, AST 110 U/L, ALT 132 U/L. Ultrasound shows dilated intrahepatic and extrahepatic ducts, a distended gallbladder without stones, and a poorly seen pancreatic head. What is the most appropriate next investigation?",
+     "choices": [
+      "Multiphase contrast-enhanced CT of the pancreas (pancreas protocol)",
+      "ERCP with biliary stent placement",
+      "HIDA scan",
+      "Percutaneous liver biopsy",
+      "Upper GI barium study"
+     ],
+     "answer": 0,
+     "explain": "ดีซ่านแบบ obstructive ที่ **ท่อขยายทั้งในและนอกตับ ถุงน้ำดีโต ไม่มีนิ่ว** พร้อมน้ำหนักลด ชี้ไปที่ **periampullary/pancreatic head tumor** Schwartz แนะนำว่าถ้าไม่มีนิ่ว ให้ทำ **CT (pancreas protocol)** ก่อน ERCP เพื่อดูก้อน การลุกลามหลอดเลือด (resectability) และการกระจาย ซึ่ง stent ที่ใส่ก่อนจะรบกวนภาพ\n- **ERCP + stent** ทำภายหลังเมื่อมีข้อบ่งชี้ (cholangitis, ต้องเลื่อนผ่าตัด, palliation)\n- **HIDA scan** ใช้กับ acute cholecystitis ไม่ช่วยหาก้อน\n- **Liver biopsy** ไม่เหมาะในดีซ่านจากการอุดตัน\n- **Barium study** ไม่ประเมินตับอ่อนและท่อน้ำดี",
+     "pearl": "ท่อขยาย + ไม่มีนิ่ว → CT/MRCP ก่อน ERCP",
+     "src": "Schwartz 11e Ch 33",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 33"
+     ]
+    },
+    {
+     "id": "N3-07-4-2",
+     "kind": "mcq",
+     "topic": "Choledocholithiasis without cholangitis",
+     "stem": "A 45-year-old woman has 2 days of colicky RUQ pain and yellow eyes. She is afebrile. Total bilirubin 4.8 mg/dL, ALP 310 U/L, ALT 240 U/L, lipase normal, WBC 8,900/mm3. Ultrasound shows multiple gallstones, a 10-mm common bile duct and an echogenic shadowing focus in the distal CBD. What is the most appropriate management sequence?",
+     "choices": [
+      "ERCP with sphincterotomy and stone extraction, followed by laparoscopic cholecystectomy",
+      "Laparoscopic cholecystectomy alone",
+      "Percutaneous cholecystostomy",
+      "Ursodeoxycholic acid and repeat ultrasound in 3 months",
+      "CT of the pancreas followed by Whipple procedure"
+     ],
+     "answer": 0,
+     "explain": "US เห็น **นิ่วใน CBD + ท่อขยาย** + ดีซ่าน = โอกาสสูงมากที่เป็น choledocholithiasis จึงทำ **ERCP เอานิ่วออก** ได้เลยโดยไม่ต้อง MRCP ก่อน แล้วตามด้วย **laparoscopic cholecystectomy** (ในการนอน รพ. ครั้งเดียวกันเมื่อทำได้) เพื่อตัดแหล่งนิ่ว\n- **Lap chole อย่างเดียว** ทิ้งนิ่ว CBD ไว้ เว้นแต่ทำ CBD exploration ร่วม\n- **Cholecystostomy** ไม่แก้ CBD และผู้ป่วยไม่มี cholecystitis รุนแรง\n- **Ursodeoxycholic acid** ไม่สลายนิ่ว CBD ในภาวะเฉียบพลัน\n- **CT + Whipple** สำหรับมะเร็ง ไม่ใช่นิ่ว",
+     "pearl": "นิ่ว CBD เห็นชัดบน US → ERCP แล้ว lap chole",
+     "src": "Schwartz 11e Ch 32",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 32"
+     ]
+    },
+    {
+     "id": "N3-07-4-3",
+     "kind": "mcq",
+     "topic": "Hilar obstruction in a liver-fluke endemic area",
+     "stem": "A 58-year-old rice farmer from northeastern Thailand who regularly eats raw fermented fish presents with 6 weeks of painless jaundice and pruritus. Bilirubin 16 mg/dL, ALP 720 U/L, CA 19-9 840 U/mL. Ultrasound shows markedly dilated intrahepatic ducts in both lobes, a collapsed gallbladder and a non-dilated common bile duct. What is the most appropriate next investigation?",
+     "choices": [
+      "MRI with MRCP of the liver and bile ducts",
+      "ERCP with plastic stent placement in the common bile duct",
+      "Laparoscopic cholecystectomy",
+      "Endoscopic ultrasound of the pancreatic head",
+      "Hepatitis serology and liver biopsy"
+     ],
+     "answer": 0,
+     "explain": "ท่อในตับขยายทั้งสองกลีบ แต่ **CBD และถุงน้ำดีแฟบ** = อุดที่ **hilum** ในชาวอีสานที่กินปลาดิบ (Opisthorchis viverrini) ร่วมกับ CA 19-9 สูง ต้องคิดถึง **perihilar cholangiocarcinoma** การตรวจที่เหมาะคือ **MRI/MRCP** (หรือ CT multiphase) เพื่อดูระดับการลุกลามตาม Bismuth-Corlette หลอดเลือด และเนื้อตับที่จะเหลือ ก่อนตัดสินว่าจะผ่าตัดหรือระบายทางใด (มักเลือก PTBD สำหรับ Bismuth III–IV)\n- **ERCP + stent ที่ CBD** ไม่ระบายท่อที่อุดเหนือ hilum ได้ดีและเสี่ยง cholangitis ในกลีบที่ไม่ถูกระบาย\n- **Lap chole** ไม่เกี่ยว\n- **EUS pancreatic head** เหมาะกับอุดส่วนปลาย\n- **Liver biopsy** ไม่ใช่การตรวจขั้นต่อไปของ obstructive jaundice",
+     "pearl": "IHD ขยาย + CBD/GB แฟบ = hilar obstruction → MRCP ก่อนเลือก PTBD/ERCP",
+     "src": "Schwartz 11e Ch 32",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 32"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-07-MEQ1",
+   "part": "MEQ",
+   "topic": "Acute variceal hemorrhage in HBV cirrhosis",
+   "vignette": "ชายไทยอายุ 52 ปี เป็นไวรัสตับอักเสบบีเรื้อรัง ไม่เคยรักษา ดื่มสุราเป็นประจำ มาห้องฉุกเฉิน รพท. ด้วยอาเจียนเป็นเลือดสด 3 ครั้ง ปริมาณรวมราว 1 ลิตร ใน 2 ชั่วโมง\n\nPE: ซึมเล็กน้อยแต่ปลุกตื่น ทำตามสั่งได้ T 37.0°C, PR 128/min, BP 84/50 mmHg, RR 24/min, ตาเหลืองเล็กน้อย spider nevi ที่หน้าอก ท้องโป่ง shifting dullness บวก ม้ามโต 3 cm ใต้ชายโครง\n\n| Lab | ผล |\n|---|---|\n| Hb | 7.4 g/dL |\n| Platelet | 68,000/mm³ |\n| INR | 1.9 |\n| Total bilirubin | 2.6 mg/dL |\n| Albumin | 2.6 g/dL |\n| BUN / Cr | 38 / 1.2 mg/dL |",
+   "questions": [
+    {
+     "q": "1. จงให้การวินิจฉัยที่เป็นไปได้มากที่สุด และประเมิน Child-Pugh",
+     "a": "**Acute variceal bleeding (esophageal varices) จาก portal hypertension** ใน **HBV/alcohol-related cirrhosis** มี hypovolemic shock\nChild-Pugh: bilirubin 2.6 → 2, albumin 2.6 → 3, INR 1.9 → 2, ascites ปานกลาง → 2, encephalopathy เล็กน้อย (ซึม) → 2 = **11 คะแนน = Child C**\nเกณฑ์ให้คะแนน: วินิจฉัย 1, คำนวณ Child-Pugh ถูก (C) 1"
+    },
+    {
+     "q": "2. จงเขียนคำสั่งการรักษาใน ER ชั่วโมงแรก",
+     "a": "- Airway: ซึมและอาเจียนเลือดมาก → พิจารณา **endotracheal intubation** ก่อนส่องกล้อง, O₂\n- **IV เข็มใหญ่ 2 เส้น**, G/M PRC, ให้ crystalloid พอให้ perfusion ดีขึ้น (ระวังมากเกิน)\n- **PRC** ให้เป้า Hb ราว 7–8 g/dL (ผู้ป่วยช็อกให้เลือดได้ทันที) · FFP/platelet เฉพาะเลือดออกมากและ coagulopathy รุนแรง\n- **Octreotide 50 µg IV bolus แล้ว 50 µg/h** (หรือ terlipressin) ต่อ 2–5 วัน\n- **Ceftriaxone 1 g IV วันละครั้ง** (สูงสุด 7 วัน)\n- IV PPI ได้ระหว่างรอส่องกล้องจนกว่าจะยืนยันว่าไม่ใช่แผล\n- Lactulose ป้องกัน encephalopathy, Foley, ติดตาม vital signs, NPO\n- ติดต่อ **endoscopy ภายใน 12 ชม.** (หรือ refer ถ้าไม่มี)\nเกณฑ์ให้คะแนน: vasoactive 2, antibiotic 2, restrictive transfusion 1, airway 1, endoscopy timing 1"
+    },
+    {
+     "q": "3. ส่องกล้องพบ large esophageal varices มี active spurting ได้ทำ EVL หยุดเลือดได้ ควรพิจารณาการรักษาใดเพิ่มในผู้ป่วยรายนี้เพื่อลดอัตราตาย",
+     "a": "**Pre-emptive TIPS ภายใน 72 ชม. (ดีที่สุดภายใน 24 ชม.)** เพราะเป็น **Child C 10–13 คะแนน** (หรือ Child B ที่มี active bleeding ขณะส่องกล้อง) ซึ่งมีความเสี่ยงล้มเหลว/เลือดออกซ้ำสูง การทำ TIPS เร็วเพิ่มอัตรารอดในกลุ่มนี้\nระหว่างนี้ให้ octreotide และ ceftriaxone ต่อ ถ้าไม่มี TIPS ให้ refer ศูนย์ที่ทำได้"
+    },
+    {
+     "q": "4. วันที่ 2 ผู้ป่วยอาเจียนเลือดซ้ำ ความดันตก จะทำอย่างไร",
+     "a": "- Resuscitate, ใส่ท่อช่วยหายใจ (ถ้ายังไม่ใส่)\n- **ส่องกล้องซ้ำ** ทำ EVL ซ้ำได้หนึ่งครั้งถ้าเห็นจุดชัด\n- ถ้ายังไม่หยุด → **balloon tamponade (Sengstaken-Blakemore)** เป็นสะพาน ไม่เกิน 36 ชม. (หรือ esophageal stent)\n- **Rescue TIPS** โดยเร็ว\n- ค้นหาการติดเชื้อ (SBP: ทำ diagnostic paracentesis), ภาวะไตวาย (hepatorenal) และ encephalopathy\n- ปรึกษาทีม liver transplant ถ้าเหมาะสม"
+    },
+    {
+     "q": "5. ก่อนกลับบ้านจะวางแผนดูแลระยะยาวอย่างไร",
+     "a": "- **Secondary prophylaxis**: NSBB (propranolol/carvedilol) + **EVL ทุก 1–2 สัปดาห์จน varices หมด** แล้วส่องกล้องเฝ้าระวัง (ถ้าทำ TIPS แล้วไม่ต้องใช้ NSBB/EVL แต่ต้องติดตาม TIPS patency)\n- **Antiviral สำหรับ HBV** (tenofovir/entecavir) และ **หยุดสุรา**\n- คัดกรอง **HCC**: US ± AFP ทุก 6 เดือน\n- ฉีดวัคซีน HAV, ประเมิน MELD เพื่อส่งต่อ liver transplantation\n- ให้ความรู้ญาติเรื่องอาการเลือดออกซ้ำและสับสน"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 31",
+    "Baveno VII (2022)"
+   ]
+  },
+  {
+   "id": "N3-07-MEQ2",
+   "part": "MEQ",
+   "topic": "Painless jaundice — periampullary tumor workup and biliary drainage decision",
+   "vignette": "หญิงไทยอายุ 64 ปี จากจังหวัดขอนแก่น มาด้วยตัวเหลืองตาเหลืองมากขึ้นเรื่อย ๆ 1 เดือน คันทั้งตัว ปัสสาวะสีชา อุจจาระสีซีด น้ำหนักลด 5 kg ไม่มีไข้ ปวดจุกลิ้นปี่เล็กน้อย\n\nPE: deep jaundice, รอยเกา, คลำได้ก้อนรูปร่างลูกแพร์ใต้ชายโครงขวา ไม่เจ็บ ตับไม่โต ไม่มี ascites\n\n| Lab | ผล |\n|---|---|\n| Total / direct bilirubin | 12.5 / 10.1 mg/dL |\n| ALP / GGT | 640 / 810 U/L |\n| AST / ALT | 98 / 124 U/L |\n| Albumin | 3.4 g/dL |\n| INR | 1.6 |\n| CA 19-9 | 420 U/mL |",
+   "questions": [
+    {
+     "q": "1. จงแปลผล lab และบอกว่าการคลำได้ถุงน้ำดีบ่งชี้อะไร",
+     "a": "- **Cholestatic pattern**: direct bilirubin เด่น, ALP/GGT สูงมาก, AST/ALT สูงเล็กน้อย → **extrahepatic biliary obstruction**\n- INR 1.6 จาก **ขาด vitamin K** (ไม่มีน้ำดีช่วยดูดซึม) ไม่ใช่ตับวายเพราะ albumin เกือบปกติ\n- ถุงน้ำดีโตคลำได้ไม่เจ็บ + ดีซ่าน = **Courvoisier sign** → อุด **ต่ำกว่าระดับ cystic duct** และมักเป็นมะเร็ง (ถุงน้ำดีที่มีนิ่วเรื้อรังมักหดเป็นพังผืด ขยายไม่ได้)\n- CA 19-9 สูงสนับสนุนมะเร็งแต่ไม่จำเพาะ ต้องแปลผลใหม่หลังระบายท่อน้ำดี"
+    },
+    {
+     "q": "2. จงวางลำดับการตรวจทางรังสี",
+     "a": "1. **Ultrasound**: คาดว่าเห็น intra- และ extrahepatic duct ขยาย ถุงน้ำดีโต ไม่มีนิ่ว\n2. **CT pancreas protocol (multiphase)** หรือ MRI/MRCP: หาก้อนที่ pancreatic head/ampulla/distal CBD, ดูหลอดเลือด (SMA, celiac, hepatic artery, SMV/portal vein) เพื่อแบ่ง resectable/borderline/unresectable และหาการกระจายไปตับ ปอด peritoneum\n3. **EUS ± FNA** ถ้าก้อนเล็กเห็นไม่ชัด หรือจำเป็นต้องมีผลชิ้นเนื้อก่อน neoadjuvant\n4. ERCP เพื่อดู ampulla/biopsy และระบาย **หลัง** ได้ภาพ CT แล้ว\nเกณฑ์ให้คะแนน: บอกว่าทำ CT ก่อน ERCP 2 คะแนน"
+    },
+    {
+     "q": "3. CT พบก้อน 2.5 cm ที่ pancreatic head ไม่ลุกลามหลอดเลือดแดง ไม่มีการกระจาย จำเป็นต้องใส่ stent ระบายท่อน้ำดีก่อนผ่าตัดหรือไม่",
+     "a": "**ไม่จำเป็นทุกราย** ถ้าผ่าตัด **pancreaticoduodenectomy (Whipple)** ได้ภายในเวลาสั้น การใส่ stent ก่อนผ่าตัดเพิ่มภาวะแทรกซ้อน (DROP trial)\nข้อบ่งชี้ในการระบายก่อนผ่าตัด: **cholangitis**, คันมาก/bilirubin สูงมาก, ไตทำงานบกพร่อง, ภาวะทุพโภชนาการ, **จะให้ neoadjuvant chemotherapy** หรือคิวผ่าตัดต้องรอนาน\nถ้าระบาย: ERCP ใส่ **metal stent** (short) ดีกว่า plastic\nให้ **vitamin K IV** แก้ INR ก่อนผ่าตัด"
+    },
+    {
+     "q": "4. ถ้า CT พบมะเร็งกระจายไปตับหลายก้อน จะดูแลแบบประคับประคองอย่างไร",
+     "a": "- ระบายท่อน้ำดีด้วย **ERCP + self-expanding metal stent** (patency นานกว่า plastic ราว 3 เดือน) ถ้า ERCP ไม่ได้ใช้ PTBD\n- ยืนยันชิ้นเนื้อ (EUS-FNA หรือ biopsy ก้อนตับ) เพื่อพิจารณา palliative chemotherapy\n- ควบคุมอาการ: ปวด (opioid, celiac plexus block), คัน (cholestyramine/แก้การอุด), เบื่ออาหาร, enzyme replacement\n- Gastric outlet obstruction ระยะหลัง: duodenal stent หรือ gastrojejunostomy\n- คุยเรื่อง goals of care และส่งทีม palliative care"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 33",
+    "Schwartz 11e Ch 32"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-07-OSCE1",
+   "topic": "Hematemesis in the emergency room — history and immediate orders",
+   "station": "สถานี 7 นาที · ซักประวัติ/สั่งการรักษา",
+   "instruction": "**สถานการณ์**: ชายไทยอายุ 60 ปี อาเจียนเป็นเลือดสีแดงคล้ำ 2 ครั้ง ถ่ายดำเหลว 1 ครั้งเมื่อเช้า ที่ห้องฉุกเฉิน รพท. PR 112/min, BP 96/60 mmHg\n\n**คำสั่ง**: (1) ซักประวัติผู้ป่วยจำลองที่สำคัญ 3 นาที (2) บอกผู้คุมสอบถึงการตรวจร่างกายที่ต้องการ ผู้คุมสอบจะให้ผล lab (3) สั่งการรักษาเบื้องต้นและวางแผนการตรวจ\n\nข้อมูลสำหรับ SP: ปวดเข่ากินยาแก้ปวดจากร้านขายยามา 1 เดือน (ibuprofen) กิน aspirin 81 mg เพราะเคยเป็น stroke ไม่ดื่มสุรา ไม่มีโรคตับ ไม่เคยเป็นแบบนี้ เมื่อเช้าเป็นลมหมดสติชั่วครู่ในห้องน้ำ\n\nผล lab (เมื่อถาม): Hb 8.8 g/dL, platelet 260,000, INR 1.0, BUN 14.6 mmol/L (41 mg/dL), Cr 1.0 mg/dL",
+   "answer": "1. แนะนำตัว ประเมินว่าผู้ป่วยไม่คงที่ จึงเรียกทีมและเริ่ม resuscitation ไปพร้อมซักประวัติ (1)\n2. ซักลักษณะเลือด ปริมาณ จำนวนครั้ง ถ่ายดำ หน้ามืด/เป็นลม (1)\n3. ซักอาการนำ: ปวดลิ้นปี่ อาเจียนหลายครั้งก่อนมีเลือด (Mallory-Weiss) กลืนลำบาก น้ำหนักลด (1)\n4. **ยา: NSAIDs, aspirin/antiplatelet, anticoagulant, steroid** (2)\n5. สุรา โรคตับ ไวรัสตับอักเสบ ประวัติแผลในกระเพาะ/H. pylori โรคหัวใจ (1)\n6. ตรวจร่างกาย: vital signs ซ้ำ postural, ซีด, stigmata of chronic liver disease, ตรวจท้อง (peritonitis = perforation ร่วม), **PR ดู melena** (1)\n7. คำสั่ง: O₂, **IV 2 เส้นเข็มใหญ่**, crystalloid, G/M PRC 2–4 ยูนิต, CBC, BUN/Cr, LFT, PT/INR, Foley (1)\n8. คำนวณ/บอกว่าเป็น **high risk** (GBS: BUN 4, Hb 6, SBP 2, ชีพจร 1, melena 1, syncope 2 = 16) ต้องนอน รพ. (1)\n9. **IV PPI** (omeprazole 80 mg IV), NPO, หยุด NSAIDs และ aspirin ชั่วคราว (ปรึกษาเรื่องเริ่ม aspirin กลับเมื่อหยุดเลือดได้ เพราะใช้ป้องกัน stroke) (1)\n10. **Endoscopy ภายใน 24 ชม.** หลัง resuscitation (เร็วขึ้นถ้ายังไม่คงที่), ปรึกษาศัลยแพทย์ไว้ก่อน (1)\n11. ให้เลือดตามเกณฑ์ restrictive (Hb น้อยกว่า 7, หรือ 8 ในผู้มีโรคหลอดเลือด) หรือตามความไม่คงที่ (1)\n\n**Critical fails**: ไม่ resuscitate ก่อน, ไม่ถามประวัติยา NSAIDs/antiplatelet, ส่งผู้ป่วยไม่คงที่ไปส่องกล้องโดยไม่ resuscitate, ให้ PPI ทางปากอย่างเดียวแล้วกลับบ้าน"
+  },
+  {
+   "id": "N3-07-OSCE2",
+   "topic": "Interpretation of liver function tests and ultrasound in jaundice",
+   "station": "สถานี 5 นาที · แปลผล",
+   "instruction": "**สถานการณ์**: ผู้ป่วยหญิงอายุ 56 ปี ตาเหลือง 3 สัปดาห์ ผู้คุมสอบให้ผลตรวจดังนี้\n\n| ผู้ป่วย | Total/direct bilirubin (mg/dL) | ALP (U/L) | AST/ALT (U/L) | Ultrasound |\n|---|---|---|---|---|\n| ก | 3.2 / 0.4 | 80 | 30 / 28 | ม้ามโตเล็กน้อย ท่อน้ำดีปกติ |\n| ข | 8.4 / 5.1 | 190 | 1,450 / 1,820 | ตับโตเล็กน้อย ท่อน้ำดีปกติ |\n| ค | 9.6 / 7.8 | 520 | 120 / 150 | intrahepatic duct ขยายทั้งสองข้าง CBD 4 mm ถุงน้ำดีแฟบ |\n| ง | 10.8 / 8.6 | 610 | 140 / 160 | intra/extrahepatic duct ขยาย CBD 14 mm ถุงน้ำดีโต ไม่มีนิ่ว |\n\n**คำสั่ง**: จงแปลผลแต่ละราย บอกระดับปัญหา การวินิจฉัยแยกโรค และการตรวจขั้นต่อไปแก่ผู้คุมสอบ",
+   "answer": "1. ราย ก: **indirect hyperbilirubinemia** เอนไซม์ปกติ → **pre-hepatic** (hemolysis, Gilbert) ส่ง CBC, reticulocyte, LDH, haptoglobin, peripheral smear (2)\n2. ราย ข: **AST/ALT สูงมากเกินพัน** ALP ไม่สูงมาก ท่อไม่ขยาย → **hepatocellular** (viral hepatitis A/B/E, ยา/สมุนไพร, ischemic) ส่ง HBsAg, anti-HAV IgM, anti-HCV, INR, ประวัติยา (2)\n3. ราย ค: cholestatic + **IHD ขยาย CBD/ถุงน้ำดีแฟบ** → อุดที่ **hilum** คิด **perihilar cholangiocarcinoma (Klatskin)** โดยเฉพาะผู้ป่วยอีสานที่มีพยาธิใบไม้ตับ, gallbladder cancer, Mirizzi ส่ง **MRI/MRCP** หรือ CT, CA 19-9 แล้วพิจารณา PTBD (2)\n4. ราย ง: cholestatic + **ท่อขยายทั้งหมด ถุงน้ำดีโต ไม่มีนิ่ว** → อุด **distal CBD/ampulla** คิด **periampullary tumor** (pancreatic head, ampulla, distal CBD, duodenum) ส่ง **CT pancreas protocol** ก่อน ERCP (2)\n5. บอกหลักการ: US ก่อน → ระดับอุด → CT/MRCP → ERCP (ล่าง) หรือ PTBD (hilum) และแก้ INR ด้วย vitamin K ก่อนหัตถการ (2)\n\n**Critical fails**: แปลราย ข ว่าเป็นการอุดตันแล้วส่ง ERCP, ส่ง ERCP ใส่ stent ในราย ค/ง ก่อนได้ภาพ cross-sectional โดยไม่มีเหตุจำเป็น"
+  }
+ ]
+}

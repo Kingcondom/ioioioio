@@ -1,0 +1,461 @@
+{
+ "lec": "13",
+ "date": "Schwartz Ch 19–21",
+ "title": "Thoracic & cardiac surgery",
+ "subtitle": "คาบนี้ตอบว่า: มะเร็งปอดผ่าได้แค่ไหน, empyema และก้อนใน mediastinum จัดการอย่างไร, เมื่อใดควร CABG หรือเปลี่ยนลิ้นหัวใจ และโรคหัวใจพิการแต่กำเนิดที่ศัลยแพทย์ต้องรู้",
+ "objectives": [
+  "เรียนจบแล้วต้อง stage NSCLC ตาม AJCC 8th และเลือก EBUS/mediastinoscopy ได้ถูกข้อบ่งชี้",
+  "เรียนจบแล้วต้องคำนวณ ppoFEV1/ppoDLCO แปลผล VO2max และเลือก lobectomy หรือ sublobar resection โดยอ้าง JCOG0802 และ CALGB 140503",
+  "เรียนจบแล้วต้องจำแนก empyema 3 ระยะและเลือก chest tube, tPA/DNase, VATS หรือ decortication ได้",
+  "เรียนจบแล้วต้องแยกก้อนใน mediastinum ตาม compartment ใช้ tumor marker และวางแผนผ่าตัด thymoma ได้",
+  "เรียนจบแล้วต้องบอกข้อบ่งชี้ CABG เทียบ PCI และเกณฑ์ผ่าตัดลิ้น AS, MR, AR, MS",
+  "เรียนจบแล้วต้องอธิบายการรักษา ASD, VSD, PDA, TOF และ coarctation รวมถึงภาวะแทรกซ้อนหลังผ่าตัด"
+ ],
+ "guidelines": [
+  "AJCC Cancer Staging Manual 8th edition — lung cancer",
+  "ACCP 2013 physiologic evaluation before lung resection (Brunelli)",
+  "JCOG0802/WJOG4607L (Lancet 2022) · CALGB 140503 (NEJM 2023) · LCSG 821 (1995)",
+  "MIST2 (NEJM 2011) intrapleural tPA + DNase",
+  "SYNTAX, FREEDOM, EXCEL trials · PARTNER/SURTAVI TAVR trials",
+  "2020 ACC/AHA Guideline for the Management of Valvular Heart Disease",
+  "Masaoka staging for thymoma · MGTX trial (2016)"
+ ],
+ "sections": [
+  {
+   "id": "res-13-1",
+   "title": "Lung cancer: staging, physiologic evaluation & extent of resection",
+   "summary": "NSCLC ผู้ป่วยคนนี้ stage อะไร ต้องเอาชิ้นเนื้อ node ก่อนไหม ปอดพอให้ตัดแค่ไหน และควรทำ lobectomy หรือ sublobar ตามหลักฐานล่าสุด",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 19 — Lung neoplasms: staging, preoperative evaluation, limited resection",
+   "md": "### Staging มะเร็งปอดชนิด NSCLC (AJCC 8th) ที่ต้องตอบได้ทันที\nขนาดก้อนถูกตัดเป็นช่วงละ 1 cm ในกลุ่ม T1–T2 และช่วงกว้างขึ้นใน T3–T4 สิ่งที่ข้อสอบชอบคือ **T descriptor ที่ไม่ใช่ขนาด** และ **N2 vs N3** เพราะเป็นตัวตัดสินว่าผ่าตัดได้หรือไม่\n\n| หมวด | เกณฑ์ (ย่อ) |\n|---|---|\n| T1a / T1b / T1c | ≤1 cm / >1–2 cm / >2–3 cm |\n| T2a / T2b | >3–4 cm / >4–5 cm · หรือลุก main bronchus (ไม่ถึง carina), visceral pleura, atelectasis ถึง hilum |\n| T3 | >5–7 cm · chest wall (รวม superior sulcus), phrenic n., parietal pericardium · nodule แยกใน lobe เดียวกัน |\n| T4 | >7 cm · mediastinum, หัวใจ, great vessels, trachea, carina, RLN, esophagus, vertebral body, diaphragm · nodule ต่าง lobe ข้างเดียวกัน |\n| N1 / N2 / N3 | hilar-peribronchial ข้างเดียวกัน (station 10–14) / mediastinal-subcarinal ข้างเดียวกัน (2–9) / ฝั่งตรงข้าม หรือ scalene-supraclavicular |\n| M1a / M1b / M1c | pleural-pericardial effusion/nodule หรือก้อนปอดอีกข้าง / extrathoracic ตำแหน่งเดียว / หลายตำแหน่ง |\n\n> จำ stage แบบเร็ว: N0 + T1 = **IA**, N2 กับ T1–T2 = **IIIA**, N3 = IIIB–IIIC, M1 = IV — **N3 หรือ T4N2 แทบไม่มีบทบาทผ่าตัด**\n\n### Mediastinal staging: เมื่อไหร่ต้องได้ชิ้นเนื้อก่อนผ่าตัด\n- ผู้ป่วยที่คิดจะผ่าตัดทุกคนทำ **PET-CT** แต่ PET บวกต้องยืนยันด้วยชิ้นเนื้อเสมอ (false positive สูง โดยเฉพาะในประเทศที่มีวัณโรคและ granulomatous disease ชุกอย่างไทย)\n- ข้อบ่งชี้ invasive staging: ก้อน **central**, ก้อน T2–T3, หรือ node โตใน CT/PET — Schwartz ระบุว่า false negative ของ CT/PET สูงถึงราว 30% ในก้อน central และ T3\n- เริ่มด้วย **EBUS-TBNA** (เข้าถึง station 2, 4, 7, 10, 11) ถ้าผลลบแต่ยังสงสัยให้ทำ **cervical mediastinoscopy** ต่อ; station 5–6 (aortopulmonary window) ต้องใช้ anterior mediastinotomy (Chamberlain) หรือ VATS; EUS ช่วยเข้าถึง station 8–9\n- แผนตาม N: N0–N1 → ผ่าตัด + adjuvant ตาม stage · N2 สถานีเดียว ไม่ bulky → induction แล้วประเมินผ่าตัด (หลีกเลี่ยง **right pneumonectomy หลัง induction**) · N2 bulky หลายสถานี → definitive chemoradiation · พบ N2 โดยบังเอิญขณะผ่าตัด → ผ่าตัดต่อพร้อม mediastinal lymph node dissection หรือหยุดเพื่อให้ induction ก็ได้\n- ยุคปัจจุบันเพิ่ม **neoadjuvant chemo-immunotherapy** (CheckMate 816) และ adjuvant osimertinib ใน EGFR-mutant (ADAURA) จึงต้องส่ง molecular testing จากชิ้นเนื้อเสมอ\n\n### ประเมินสมรรถภาพปอด: FEV1, DLCO และ ppo\nสูตร: **ppoFEV1% = FEV1% ก่อนผ่าตัด × (1 − จำนวน segment ที่ตัด/จำนวน segment ทั้งหมด)** — Schwartz คิดฐาน 20 segment (บางแนวทางใช้ 19) ตัด RUL 3 segment จึงเหลือ ×0.85; ใช้สูตรเดียวกันกับ DLCO\n\n| ขั้น | เกณฑ์ (ตาม algorithm ใน Schwartz Fig 19-24) | ความหมาย |\n|---|---|---|\n| FEV1 และ DLCO >80% | — | ผ่าตัดได้ถึง pneumonectomy |\n| ppoFEV1 และ ppoDLCO >40% | — | ความเสี่ยงเฉลี่ย |\n| ppoFEV1 หรือ ppoDLCO <40% | ทำ **CPET** | ต้องวัด VO2max |\n| ppoFEV1 <30% หรือ ppoFEV1 × ppoDLCO <1650 | high risk | พิจารณา sublobar/SBRT |\n| **VO2max** >15 / 10–15 / <10 mL/kg/min | ปกติ / เพิ่มความเสี่ยง / สูงมาก (mortality ~26% vs 8.3%) | <10 มักไม่ควรทำ major resection |\n\n- ค่าดิบที่ยังออกสอบ: FEV1 **>2.0 L** ทน pneumonectomy, **>1.5 L** ทน lobectomy — แต่ต้องแปลงเป็น % predicted เสมอ\n- เดินขึ้นบันได **2 ชั้น** ได้โดยไม่หยุด → มักทน pneumonectomy ได้; ก้อน central ที่อุด bronchus ให้ทำ **quantitative perfusion scan** เพื่อคิด ppo ตาม perfusion จริง\n- DLCO ลดลงทุก 10% เพิ่มความเสี่ยง pulmonary complication ราว 42%; เลิกบุหรี่ ≥8 สัปดาห์ดีที่สุด อย่างน้อย 2 สัปดาห์ก็ยังควรทำ\n- ACCP 2013 ใช้จุดตัดใหม่ (ppo >60% = low risk, 30–60% ให้ทำ stair climb/shuttle walk, <30% ทำ CPET) — ตอบตาม algorithm ที่โจทย์ให้\n\n### Lobectomy vs sublobar resection: จาก LCSG ถึง JCOG0802 และ CALGB 140503\n\n| Trial | กลุ่มผู้ป่วย | ผลหลัก |\n|---|---|---|\n| LCSG 821 (Ginsberg 1995) | T1N0 | limited resection → local recurrence สูงราว 3 เท่า → **lobectomy เป็นมาตรฐาน** 25 ปี |\n| **JCOG0802/WJOG4607L** (Lancet 2022) | peripheral ≤2 cm, consolidation/tumor ratio >0.5 | **segmentectomy** OS 5 ปีดีกว่า (94.3% vs 91.1%) แต่ local recurrence สูงกว่า (~10.5% vs 5.4%) |\n| **CALGB 140503** (NEJM 2023) | peripheral ≤2 cm, N0 ยืนยันด้วย frozen section | sublobar (wedge ~60% หรือ segment) **noninferior** ต่อ DFS และ OS |\n\nเงื่อนไขที่ทำให้ sublobar ปลอดภัย: ก้อนอยู่ outer third, ≤2 cm, **N0 จาก frozen section** ของ hilar และ mediastinal node, **margin ≥2 cm หรือ ≥ ขนาดก้อน** (margin:tumor ratio >1 ทำให้ recurrence ~6% เทียบ 25% ถ้า <1), และ GGO-predominant (AIS/MIA) ทำได้ดีมาก; ยังต้อง sample node ทุกครั้ง\nผู้ป่วยผ่าตัดไม่ได้: **SBRT** ให้ local control ~90% ที่ 3 ปี แต่ระวังก้อนที่อยู่ภายใน 2 cm จาก proximal bronchial tree; **VATS/robotic lobectomy** ให้ผลมะเร็งเท่า open แต่ complication และ LOS น้อยกว่า\n\n### ภาวะแทรกซ้อนหลังตัดปอดที่ต้องจัดการเป็น\n\n| ภาวะ | จุดสังเกต | การจัดการ |\n|---|---|---|\n| **Prolonged air leak** (>5 วัน) | emphysema | ลด/เลิก suction, water seal, pleurodesis (doxycycline/talc) เมื่อปอดขยายเต็ม, Heimlich valve กลับบ้าน |\n| **Bronchopleural fistula** | วัน 7–14, right pneumonectomy, หลัง induction, ไอเสมหะเหมือนน้ำ pleural, air-fluid level ลดลง | นอนตะแคง **ข้างผ่าตัดลง** ใส่ chest tube ทันที → bronchoscopy → ปิด stump ใหม่ + muscle flap; รู <4 mm ใช้ fibrin glue |\n| **Postpneumonectomy pulmonary edema** | 1–5%, ขวา > ซ้าย | ป้องกันด้วยจำกัดน้ำ ใช้ vasopressor แทน bolus; รักษาด้วย ventilator, diuretic, ECMO — mortality เกือบ 100% |\n| Atrial fibrillation | พบบ่อยสุดในกลุ่ม arrhythmia, วัน 2–3 | rate control, anticoagulation ตามความเสี่ยง |\n| Lobar torsion, chylothorax, RLN injury | middle lobe torsion; station 5 dissection ทำ RLN ซ้ายบาดเจ็บ | re-explore; NPO/MCT diet → ligate thoracic duct |\n",
+   "pearls": [
+    "N2 สถานีเดียวไม่ bulky = induction แล้วผ่าตัดได้; N3 หรือ T4N2 = ไม่ผ่าตัด",
+    "PET-positive node ต้องพิสูจน์ด้วยชิ้นเนื้อเสมอ เริ่มด้วย EBUS-TBNA",
+    "ppo = ค่า % predicted × สัดส่วน segment ที่เหลือ; ppo <40% → CPET",
+    "VO2max >15 mL/kg/min ปลอดภัย, <10 mL/kg/min ความเสี่ยงสูงมาก",
+    "JCOG0802: segmentectomy OS ดีกว่า, local recurrence สูงกว่า · CALGB 140503: sublobar noninferior",
+    "Sublobar ต้องมี margin ≥2 cm หรือ ≥ ขนาดก้อน และ N0 จาก frozen section",
+    "BPF: ข้างผ่าตัดลง + chest tube; postpneumonectomy edema ป้องกันด้วยจำกัดน้ำ"
+   ],
+   "items": [
+    {
+     "id": "RES-13-1-1",
+     "kind": "mcq",
+     "topic": "ppoFEV1/ppoDLCO and CPET",
+     "stem": "A 67-year-old man with a 2.6-cm right upper lobe adenocarcinoma (cT1cN0M0 after EBUS) is evaluated for lobectomy. FEV1 is 48% predicted and DLCO is 44% predicted. He becomes short of breath after one flight of stairs. Using a 20-segment model, the right upper lobe contains 3 segments. What is the most appropriate next step?",
+     "choices": [
+      "Cardiopulmonary exercise testing to measure VO2max",
+      "Proceed with right upper lobectomy because ppoFEV1 exceeds 40%",
+      "Refer directly for stereotactic body radiotherapy",
+      "Proceed with right pneumonectomy for better nodal clearance",
+      "Repeat spirometry after 2 weeks of bronchodilators and proceed if FEV1 improves"
+     ],
+     "answer": 0,
+     "explain": "คำนวณ ppoFEV1 = 48 × 0.85 ≈ 41% และ **ppoDLCO = 44 × 0.85 ≈ 37%** ซึ่ง <40% ตาม algorithm ใน Schwartz ถ้าค่า ppo ตัวใดตัวหนึ่งต่ำกว่า 40% ต้องประเมินต่อด้วย **CPET** เพื่อวัด VO2max — ถ้า >15 mL/kg/min ยังทำ lobectomy ได้ ถ้า <10 ความเสี่ยงสูงมากควรเปลี่ยนเป็น sublobar หรือ SBRT\n- **Proceed with lobectomy** — ดูแค่ ppoFEV1 ไม่พอ ppoDLCO ทำนาย mortality และ pulmonary complication ได้ดี\n- **SBRT ทันที** — ยังไม่ได้พิสูจน์ว่าผ่าตัดไม่ได้ อาจตัดผู้ป่วยออกจากการรักษาที่หายขาดเร็วเกินไป\n- **Pneumonectomy** — เสียปอดมากขึ้นใน reserve ที่ต่ำอยู่แล้ว ไม่มีข้อบ่งชี้ทาง oncology\n- **Bronchodilator แล้วทำซ้ำ** — ไม่เปลี่ยน DLCO และไม่แทนการประเมินด้วย exercise test",
+     "pearl": "ppo ตัวใดตัวหนึ่ง <40% → CPET; VO2max <10 mL/kg/min = high risk",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-1-2",
+     "kind": "mcq",
+     "topic": "JCOG0802 segmentectomy vs lobectomy",
+     "stem": "A 63-year-old woman has a 1.7-cm peripheral, solid-predominant adenocarcinoma in the left lower lobe with a consolidation-to-tumor ratio of 0.8. Staging is cN0M0 and pulmonary reserve is excellent. She asks about the JCOG0802/WJOG4607L trial comparing anatomic segmentectomy with lobectomy for such tumors. Which statement best summarizes its findings?",
+     "choices": [
+      "Segmentectomy improved 5-year overall survival but had a higher local recurrence rate",
+      "Segmentectomy was inferior to lobectomy for overall survival",
+      "Segmentectomy had a lower local recurrence rate than lobectomy",
+      "The trial enrolled central tumors up to 3 cm",
+      "Segmentectomy preserved substantially more FEV1, which was the reason it was adopted"
+     ],
+     "answer": 0,
+     "explain": "**JCOG0802/WJOG4607L** สุ่มผู้ป่วย peripheral NSCLC ≤2 cm ที่ CTR >0.5 พบว่า **segmentectomy ให้ OS 5 ปีดีกว่า** lobectomy (94.3% vs 91.1%) แม้ **local recurrence สูงกว่า** (~10.5% vs 5.4%) คาดว่าเพราะผู้ป่วยมีปอดเหลือมากพอรับการรักษามะเร็งรองหรือมะเร็งที่กลับเป็นซ้ำ และตายจากโรคอื่นน้อยลง\n- **OS inferior** — ตรงข้ามกับผลจริง\n- **Local recurrence ต่ำกว่า** — ผิด recurrence สูงขึ้นจึงต้องเคร่งเรื่อง margin และ node\n- **Central ≤3 cm** — trial รับเฉพาะ peripheral ≤2 cm\n- **FEV1 ดีขึ้นมาก** — ความต่างของ FEV1 ที่ 1 ปีเล็กน้อยกว่าที่คาด ไม่ใช่เหตุผลหลัก",
+     "pearl": "JCOG0802: segmentectomy OS ดีกว่าใน peripheral ≤2 cm แต่ local recurrence สูงกว่า",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-1-3",
+     "kind": "mcq",
+     "topic": "Mediastinal staging of PET-positive N2",
+     "stem": "A 58-year-old man has a 3.6-cm right lower lobe mass. PET-CT shows the primary (SUV 11) and a 1.8-cm FDG-avid subcarinal lymph node (station 7); there are no distant metastases. Spirometry is normal. What is the most appropriate next step?",
+     "choices": [
+      "Endobronchial ultrasound-guided transbronchial needle aspiration of station 7",
+      "Right lower lobectomy with mediastinal lymph node dissection",
+      "Definitive concurrent chemoradiation without tissue confirmation of the node",
+      "CT-guided core biopsy of the primary tumor only, then lobectomy",
+      "Repeat PET-CT in 3 months to assess nodal change"
+     ],
+     "answer": 0,
+     "explain": "node ที่ PET บวกต้อง **พิสูจน์ด้วยชิ้นเนื้อ** เพราะ false positive สูง (granulomatous disease, วัณโรค) และ N2 เปลี่ยนแผนการรักษาทั้งหมดจากผ่าตัดเป็น induction/chemoradiation **EBUS-TBNA** เข้าถึง station 7 ได้และได้ชิ้นเนื้อ+molecular พร้อมกัน ถ้าลบแต่สงสัยค่อยทำ mediastinoscopy\n- **Lobectomy ทันที** — ถ้าเป็น N2 จริงผู้ป่วยควรได้ induction ก่อน\n- **Chemoradiation โดยไม่มีชิ้นเนื้อ** — เสี่ยงให้การรักษาต่ำกว่ามาตรฐานถ้า node เป็นแค่การอักเสบ\n- **Biopsy เฉพาะ primary** — ได้ histology แต่ไม่ได้ N stage\n- **รอ PET ซ้ำ** — ทำให้การรักษาล่าช้าโดยไม่ได้ข้อมูลเพิ่ม",
+     "pearl": "PET-positive mediastinal node ต้องได้ชิ้นเนื้อ เริ่มด้วย EBUS ก่อน mediastinoscopy",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-1-4",
+     "kind": "mcq",
+     "topic": "Bronchopleural fistula after pneumonectomy",
+     "stem": "A 61-year-old man is on postoperative day 9 after right pneumonectomy following induction chemoradiation. He develops fever and a sudden cough productive of large amounts of thin, serosanguinous fluid. Chest radiograph shows a new drop in the air-fluid level of the right hemithorax. What is the most appropriate immediate management?",
+     "choices": [
+      "Position him operative side down and place a chest tube into the right pleural space",
+      "Position him operative side up and start broad-spectrum antibiotics",
+      "Perform immediate bronchoscopic fibrin glue application without drainage",
+      "Give intravenous furosemide for postpneumonectomy pulmonary edema",
+      "Perform diagnostic thoracentesis and await culture results"
+     ],
+     "answer": 0,
+     "explain": "อาการไอเสมหะใสปนเลือดจำนวนมาก + air-fluid level ในช่องอกที่ตัดปอดลดลง = **bronchopleural fistula** ของ bronchial stump (เสี่ยงใน right pneumonectomy และหลัง induction) อันตรายเฉพาะหน้าคือของเหลวติดเชื้อไหลเข้าปอดที่เหลืออยู่ → aspiration pneumonia จึงต้อง **นอนตะแคงข้างผ่าตัดลง** และ **ใส่ chest tube ระบาย** ทันที แล้วจึงทำ bronchoscopy และวางแผนปิด stump ใหม่ด้วย muscle flap\n- **ข้างผ่าตัดขึ้น** — ทำให้น้ำไหลเข้าปอดดี เป็นท่าที่ผิดอันตราย\n- **Fibrin glue ทันที** — ใช้ได้เฉพาะรูเล็ก <4 mm และต้องระบายช่องอกก่อน\n- **Furosemide** — postpneumonectomy edema ไม่มีอาการไอเอาน้ำออกมาและ air-fluid level ไม่ลด\n- **Thoracentesis แล้วรอ** — ไม่ป้องกัน aspiration และไม่ระบายพอ",
+     "pearl": "BPF หลัง pneumonectomy: ข้างผ่าตัดลง + chest tube ก่อน แล้วค่อย bronchoscopy/ปิด stump",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-13-2",
+   "title": "Pleura & mediastinum: empyema, mediastinal masses, thymoma",
+   "summary": "Empyema ระยะไหนต้องใส่สาย ใช้ fibrinolytic หรือผ่าตัด และก้อนใน mediastinum แต่ละ compartment ควรตรวจอะไรก่อนตัดสินว่าจะผ่าหรือให้ยา",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 19 — Pleura and pleural space; Mediastinum",
+   "md": "### Parapneumonic effusion สู่ empyema: 3 ระยะที่กำหนดการรักษา\nEmpyema คือหนองในช่องเยื่อหุ้มปอด สาเหตุส่วนใหญ่มาจากปอดอักเสบ (contiguous spread 50–60%) รองลงมาคือหลังหัตถการ/ผ่าตัด/บาดเจ็บ (30–40%) เชื้อหลักยังเป็น pneumococcus และ staphylococcus แต่ gram-negative และ anaerobe เพิ่มขึ้น และพบหลายเชื้อได้ถึงครึ่งหนึ่ง\n\n| ระยะ (ATS) | ลักษณะน้ำ | การรักษาหลัก |\n|---|---|---|\n| I **Exudative** | ใส ไหลอิสระ pH >7.3, glucose >60 mg/dL, LDH <500 U/L | antibiotic ± thoracentesis ให้หมด |\n| II **Fibrinopurulent** | ขุ่น เริ่ม loculate, **pH <7.2, glucose <40 mg/dL**, gram stain บวก | chest tube ± intrapleural tPA/DNase หรือ **VATS drainage** ระยะแรก |\n| III **Organizing** | มี peel หนา ปอดถูกรัด (**trapped lung**) | **decortication** (VATS หรือ thoracotomy) |\n| Chronic | ช่องค้าง ติดเชื้อเรื้อรัง | open drainage (Eloesser flap), muscle flap, thoracoplasty |\n\n- **Light's criteria**: exudate ถ้า protein ratio >0.5 หรือ LDH ratio >0.6 หรือ pleural LDH >2/3 ของ upper limit\n- Gram stain พบหลายเชื้อร่วมกับ **yeast** → นึกถึง **esophageal perforation**\n- บริบทไทย: ผู้ป่วยเบาหวานจากภาคอีสานที่มี empyema/ฝีหลายที่ ต้องคิดถึง **melioidosis** (ceftazidime หรือ carbapenem)\n\n### Fibrinolytics หรือ VATS: ใช้หลักฐานเลือก\n- **MIST1**: streptokinase อย่างเดียวไม่ช่วย · **MIST2**: **tPA 10 mg + DNase 5 mg** ฉีดเข้าทาง chest tube วันละ 2 ครั้ง 3 วัน (clamp 1 ชม.) ลดเงาใน CXR และลด LOS ราว 7 วัน — ให้ผลเฉพาะ **การใช้คู่กัน** ไม่ใช่ตัวเดียว\n- **VATS** ได้ผลดีที่สุดเมื่อทำเร็ว (ภายในราว 1–2 สัปดาห์ของระยะ fibrinopurulent) ถ้ารอจนเป็น organizing โอกาส convert เป็น thoracotomy เพิ่มขึ้น\n- ข้อบ่งชี้ผ่าตัด: sepsis ไม่ดีขึ้นทั้งที่ระบาย, loculation ระบายไม่หมด, **trapped lung**, ล้มเหลวจาก chest tube/fibrinolytic\n- ช่องว่างค้างหลังผ่าตัดปอด: ถ้าเล็กและระบายดีให้ค่อย ๆ ถอยสาย (open tube) ถ้าใหญ่ต้อง decortication หรือ open window + muscle flap; **post-pneumonectomy empyema** ต้องหา BPF ทุกราย (Clagett procedure)\n\n### Mediastinal masses: คิดตาม compartment\n\n| Compartment | ส่วนประกอบปกติ | ก้อนที่พบบ่อย |\n|---|---|---|\n| **Anterior** (prevascular) | thymus, IMA/IMV, fat, node | **thymoma**, germ cell tumor/teratoma, lymphoma, substernal thyroid (\"4 T\") |\n| **Visceral (middle)** | หัวใจ-pericardium, trachea, great vessels, phrenic/vagus | bronchogenic/pericardial cyst, lymphadenopathy (lymphoma, วัณโรค, sarcoid) |\n| **Posterior** (paravertebral) | sympathetic chain, nerve roots, esophagus, descending aorta | **neurogenic tumor** (ผู้ใหญ่ schwannoma; เด็ก neuroblastoma/ganglioneuroma), esophageal lesion |\n\n- ผู้ใหญ่: neurogenic, cyst และ thymoma พบบ่อย; เด็ก: neurogenic มากที่สุดตามด้วย lymphoma; ราว **25%** ของ mediastinal tumor เป็นมะเร็ง\n- ก้อน paravertebral ที่ขยาย neural foramen (**dumbbell tumor**) ต้องทำ **MRI** ก่อนผ่าตัดและวางแผนร่วม neurosurgery เพื่อไม่ให้เลือดออกใน spinal canal\n- ก้อน anterior ขนาดใหญ่: ระวัง **airway/SVC collapse ตอน induction** ให้คงการหายใจเอง จัดท่านั่ง และเตรียม rigid bronchoscopy/ECMO\n\n### Germ cell tumor และ lymphoma: tumor marker ตัดสินแผน\n\n| ชนิด | Marker | การรักษา |\n|---|---|---|\n| Mature teratoma | ปกติ | ผ่าตัดออก (CT มี fat, fluid, calcium) |\n| **Seminoma** | **AFP ปกติเสมอ**, hCG สูงเล็กน้อยได้ ~10% | cisplatin-based chemo (หรือ RT); ก้อนเล็กบังเอิญผ่าตัดได้ |\n| **Nonseminomatous GCT** | AFP หรือ hCG สูง >90%, LDH สูง | **BEP chemo ก่อน** แล้วผ่าตัด residual (≈20% tumor, 40% teratoma, 40% fibrosis) |\n| Lymphoma | — | ต้องได้ชิ้นเนื้อพอ (core/surgical biopsy) แล้ว chemo ไม่ใช่ผ่าตัด |\n\n> ชายหนุ่ม + ก้อน anterior mediastinum + **AFP สูง** = ไม่ใช่ pure seminoma และห้ามรีบตัด ให้ chemo ก่อน\n\n### Thymoma และ myasthenia gravis\n- Thymoma พบบ่อยอายุ **40–60 ปี**; ผู้ป่วย thymoma 10–50% มีอาการหรือ antibody ของ **MG** แต่ผู้ป่วย MG มี thymoma **<10%**; paraneoplastic อื่น เช่น red cell aplasia, hypogammaglobulinemia\n- ถ้าภาพเข้าได้กับ thymoma ที่ตัดได้ **ไม่ควรเจาะชิ้นเนื้อผ่านผิวหนังก่อน** (เสี่ยงทำลาย capsule และ seeding) — ทำ **total thymectomy + perithymic fat en bloc** (sternotomy หรือ VATS/robotic ในก้อนระยะต้น) เก็บ **phrenic nerve** ไว้\n- เตรียม MG ก่อนผ่าตัด (pyridostigmine, IVIG หรือ plasmapheresis ถ้าอาการมาก) เพื่อลด **myasthenic crisis** หลังผ่าตัด\n\n| Masaoka | นิยาม | หลังผ่าตัด |\n|---|---|---|\n| I | encapsulated สมบูรณ์ | ติดตาม |\n| IIa / IIb | ทะลุ capsule ระดับกล้องจุลทรรศน์ / เข้าไขมันหรือติด pleura-pericardium | RT ยังถกเถียง |\n| III | ลุกอวัยวะข้างเคียง (pericardium, lung, great vessels) | **adjuvant RT** |\n| IVa / IVb | pleural-pericardial dissemination / lymphatic-hematogenous metastasis | platinum chemo ± debulking |\n\n- Thymectomy ใน MG ที่มี thymoma ทำให้ MG ดีขึ้นราว 25% แต่ใน MG ที่ไม่มี thymoma ได้ผลดีกว่า (Schwartz: remission ได้ถึง 50%, ดีขึ้น 90%) — **MGTX trial** ยืนยันประโยชน์ใน AChR-positive generalized MG อายุ 18–65 ปี\n",
+   "pearls": [
+    "Empyema 3 ระยะ: exudative → fibrinopurulent → organizing (trapped lung → decortication)",
+    "pH <7.2 หรือ glucose <40 mg/dL → ต้องระบาย",
+    "MIST2: tPA + DNase คู่กันเท่านั้นที่ได้ผล",
+    "Gram stain หลายเชื้อ + yeast = คิดถึง esophageal perforation",
+    "Anterior mediastinum = 4T; posterior = neurogenic; dumbbell → MRI",
+    "AFP สูง = ไม่ใช่ pure seminoma → BEP ก่อนผ่าตัด",
+    "Thymoma ที่ตัดได้ไม่ต้อง biopsy ก่อน; Masaoka III → adjuvant RT"
+   ],
+   "items": [
+    {
+     "id": "RES-13-2-1",
+     "kind": "mcq",
+     "topic": "Fibrinopurulent empyema management",
+     "stem": "A 54-year-old man with diabetes is admitted with right lower lobe pneumonia. On day 6 a CT shows a multiloculated right pleural effusion. Thoracentesis yields turbid fluid with pH 7.02, glucose 28 mg/dL and LDH 2,100 U/L. A 28F chest tube drains 200 mL, but repeat CT after 72 hours of appropriate antibiotics shows persistent loculated collections and he remains febrile. He is fit for surgery. What is the most appropriate next step?",
+     "choices": [
+      "Video-assisted thoracoscopic drainage and decortication",
+      "Intrapleural streptokinase alone through the chest tube",
+      "Open window thoracostomy with an Eloesser flap",
+      "Change antibiotics and continue chest tube drainage for 2 more weeks",
+      "Serial therapeutic thoracenteses every 48 hours"
+     ],
+     "answer": 0,
+     "explain": "น้ำ pH <7.2, glucose <40 และ loculation = **fibrinopurulent stage (II)** ที่ระบายด้วย chest tube ไม่สำเร็จ ผู้ป่วยยังไข้และผ่าตัดได้ → **VATS** เพื่อเลาะ loculation, ล้างหนอง และเลาะ peel ที่เริ่มเกิด ให้ปอดขยายเต็ม ยิ่งทำเร็วยิ่งเลี่ยง thoracotomy ได้\n- **Streptokinase อย่างเดียว** — MIST1 ไม่พบประโยชน์ หลักฐานใน MIST2 คือ tPA + DNase คู่กัน\n- **Eloesser flap** — สำหรับ chronic empyema ในผู้ป่วยที่ทนการผ่าตัดใหญ่ไม่ได้ ไม่ใช่ขั้นแรก\n- **เปลี่ยนยาแล้วรอ** — ปัญหาคือ source control ไม่ใช่เชื้อดื้อ การรอทำให้กลายเป็น organizing peel\n- **Thoracentesis ซ้ำ** — ระบาย loculation หลายช่องไม่ได้",
+     "pearl": "Empyema loculated ที่ chest tube ไม่พอ ในคนผ่าตัดได้ → VATS ให้เร็ว",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-2-2",
+     "kind": "mcq",
+     "topic": "Nonseminomatous mediastinal germ cell tumor",
+     "stem": "A 24-year-old man presents with chest pressure and dyspnea. CT shows a 10-cm heterogeneous anterior mediastinal mass with necrotic areas and small pulmonary nodules. Serum AFP is 2,400 ng/mL, beta-hCG is 180 mIU/mL and LDH is elevated. Testicular ultrasound is normal. What is the most appropriate initial treatment?",
+     "choices": [
+      "Cisplatin-based combination chemotherapy (BEP)",
+      "Median sternotomy with en bloc resection of the mass",
+      "Mediastinal radiotherapy alone",
+      "Thoracoscopic thymectomy",
+      "Observation with repeat markers in 6 weeks"
+     ],
+     "answer": 0,
+     "explain": "ชายหนุ่ม ก้อน anterior mediastinum ขนาดใหญ่ + **AFP สูงมาก** = **nonseminomatous germ cell tumor** (seminoma แท้ AFP ต้องปกติ) marker ที่สูงชัดเพียงพอจะวินิจฉัยได้เกือบ 100% การรักษาแรกคือ **BEP (bleomycin, etoposide, cisplatin)** แล้วจึงผ่าตัดก้อนที่เหลือหลัง marker กลับปกติ ซึ่งยังพบ tumor ราว 20% และ teratoma ราว 40%\n- **ผ่าตัดก่อน** — โรคมีการกระจายแล้วและตอบสนองต่อ chemo ดี การตัดก่อนเพิ่มความเสี่ยงโดยไม่ช่วยรอด\n- **RT อย่างเดียว** — ใช้ได้ในบาง seminoma ไม่ใช่ NSGCT\n- **Thymectomy** — ผิดโรค\n- **Observation** — โรคโตเร็วและมีอาการกดเบียดแล้ว",
+     "pearl": "Anterior mediastinal mass + AFP สูง = NSGCT → BEP ก่อน แล้วตัด residual",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-2-3",
+     "kind": "mcq",
+     "topic": "Thymoma with myasthenia gravis",
+     "stem": "A 47-year-old woman has 3 months of fluctuating ptosis and diplopia. Acetylcholine receptor antibodies are positive. CT shows a 5-cm well-circumscribed, homogeneous anterior mediastinal mass without invasion of adjacent structures or lymphadenopathy. After neurologic optimization, what is the most appropriate management of the mass?",
+     "choices": [
+      "Total thymectomy with en bloc removal of the mass and perithymic fat without preoperative biopsy",
+      "CT-guided percutaneous core biopsy before any resection",
+      "Induction platinum-based chemotherapy followed by resection",
+      "Definitive mediastinal radiotherapy",
+      "Pyridostigmine alone with CT surveillance every 6 months"
+     ],
+     "answer": 0,
+     "explain": "ภาพเป็นก้อน encapsulated ใน anterior mediastinum ร่วมกับ MG = thymoma ที่น่าจะตัดได้ (Masaoka I–II) การรักษาคือ **complete resection ด้วย total thymectomy + perithymic fat en bloc** ไม่ต้องเจาะชิ้นเนื้อก่อนเพราะการเจาะอาจทำลาย capsule และเพาะเชื้อมะเร็งตามรอยเข็ม ต้องเตรียม MG ให้คงที่ก่อนเพื่อลด myasthenic crisis\n- **Core biopsy** — สงวนไว้เมื่อภาพไม่ชัดหรือสงสัย lymphoma/ก้อนที่ตัดไม่ได้\n- **Induction chemo** — ใช้ในก้อนลุกลามมาก (stage III–IV ที่ตัดไม่ได้)\n- **RT อย่างเดียว** — ใช้เป็น adjuvant หรือก้อนตัดไม่ได้\n- **ยาอย่างเดียว** — thymoma มีศักยภาพลุกลาม และ thymectomy ช่วย MG ด้วย",
+     "pearl": "Thymoma ที่ดูตัดได้ → total thymectomy ไม่ต้อง biopsy ก่อน; เตรียม MG ก่อนผ่าตัด",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "RES-13-2-4",
+     "kind": "mcq",
+     "topic": "Dumbbell posterior mediastinal tumor",
+     "stem": "A 36-year-old man has an incidental 4-cm smooth right paravertebral mass at T6. CT shows widening of the adjacent neural foramen. He has no neurologic deficits and plasma metanephrines are normal. What is the most important study before resection?",
+     "choices": [
+      "MRI of the thoracic spine to evaluate intraspinal extension",
+      "Serum AFP and beta-hCG",
+      "Transthoracic needle biopsy of the mass",
+      "Barium esophagogram",
+      "Bone scintigraphy"
+     ],
+     "answer": 0,
+     "explain": "ก้อน paravertebral ในผู้ใหญ่ส่วนใหญ่เป็น **neurogenic tumor** (schwannoma/neurofibroma) ถ้า neural foramen กว้างต้องสงสัย **dumbbell (intraspinal) extension** — **MRI** บอกส่วนที่อยู่ใน spinal canal เพื่อวางแผนผ่าตัดร่วมกับ neurosurgery ตัดส่วนใน canal ก่อนหรือพร้อมกัน ป้องกันเลือดออกใน epidural space และ cord compression\n- **AFP/hCG** — สำหรับ anterior mediastinal germ cell tumor\n- **Needle biopsy** — ไม่เปลี่ยนการตัดสินใจผ่าตัดและเสี่ยงต่อ spinal canal\n- **Esophagogram** — ไม่ใช่ปัญหาหลักของก้อน neurogenic\n- **Bone scan** — ไม่บอก intraspinal extension",
+     "pearl": "ก้อน posterior mediastinum + foramen กว้าง → MRI ก่อนผ่าตัดเสมอ",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-13-3",
+   "title": "Acquired heart disease: CABG vs PCI & valve surgery indications",
+   "summary": "ผู้ป่วยโรคหลอดเลือดหัวใจคนไหนควรได้ CABG มากกว่า PCI และโรคลิ้นหัวใจแต่ละชนิดถึงเกณฑ์ผ่าตัดหรือทำหัตถการเมื่อใด",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 21 — Coronary artery disease; Valvular heart disease",
+   "md": "### CABG หรือ PCI: ใครได้ประโยชน์จากการผ่าตัด\n\n| กายวิภาค (ACC/AHA, เพื่อ survival) | Class |\n|---|---|\n| **Left main** stenosis | I |\n| **3-vessel** ± proximal LAD | I |\n| 2-vessel + proximal LAD | I |\n| **Multivessel + diabetes** | IIa (CABG ดีกว่า PCI) |\n| LVEF 35–50% / <35% ไม่มี LM | IIa / IIb |\n| 1-vessel ไม่รวม proximal LAD | III (harm) |\n\n| Trial | สรุป |\n|---|---|\n| **SYNTAX** (1,800 ราย, LM หรือ 3VD) | MACCE 5 ปี CABG 26.9% vs PCI 37.3% ความต่างอยู่ในกลุ่ม **SYNTAX score ปานกลาง–สูง**; mortality ไม่ต่างใน trial หลัก |\n| **FREEDOM** (เบาหวาน multivessel) | CABG ลด death/MI และ all-cause mortality แต่ stroke มากกว่าเล็กน้อย |\n| **EXCEL** (LM ความซับซ้อนต่ำ–ปานกลาง) | 3 ปีไม่ต่างใน composite แต่เหตุการณ์หลัง 30 วันสูงกว่าในกลุ่ม PCI |\n| ASCERT (ข้อมูลทะเบียน >65 ปี) | mortality ที่ 4 ปีต่ำกว่าใน CABG |\n\n> คำตอบ board: **LM, 3VD ที่ SYNTAX สูง, เบาหวาน multivessel, LV dysfunction** → CABG; โรคง่ายหลอดเดียว → PCI\n\n### Conduit และภาวะแทรกซ้อนหลัง CABG\n- **LIMA → LAD** คือหัวใจของ CABG: patency ~98% ที่ 5 ปี และ 85–90% ที่ 10 ปี ช่วยให้รอดชีวิตยาวขึ้น; **radial artery** (ตรวจ Allen test/duplex ก่อน) patency 5 ปีดีกว่า saphenous vein (98% vs 86%); multi-arterial grafting ได้ผลดีในเบาหวานและอายุไม่มาก\n- **BIMA** เพิ่ม event-free survival แต่เพิ่ม sternal wound infection ในเบาหวาน/อ้วน (เก็บแบบ skeletonized ช่วยลด)\n- Off-pump: บาง trial (ROOBY) พบ patency 1 ปีต่ำกว่า on-pump ใช้เฉพาะรายเลือก เช่น porcelain aorta\n\n| ภาวะแทรกซ้อน | จุดสังเกต | จัดการ |\n|---|---|---|\n| **Postop AF** | พบบ่อยที่สุด (ราว 20–40%), วัน 2–3 | beta-blocker ป้องกัน, rate/rhythm control, anticoag ถ้า >48 ชม. |\n| **Tamponade** | ความดันตก, CVP สูง, **chest tube output ลดลงทันที**, pressure equalization | **re-exploration** ด่วน (เปิดแผลข้างเตียงได้ถ้า arrest) |\n| Bleeding | >400 mL ชม.แรก หรือ >200 mL/ชม. ต่อเนื่อง หลังแก้ coagulopathy | กลับห้องผ่าตัด |\n| Mediastinitis | เบาหวาน อ้วน BIMA; sternum โยก มีหนอง | debridement + muscle flap/NPWT |\n| Perioperative stroke, AKI, vasoplegia | — | ป้องกันด้วย epiaortic scan, หลีกเลี่ยง hypotension |\n\n### Aortic stenosis: ความรุนแรง ข้อบ่งชี้ และ TAVR vs SAVR\n\n| ตัวชี้วัด | Mild | Moderate | **Severe** |\n|---|---|---|---|\n| Jet velocity (m/s) | <3.0 | 3.0–4.0 | **>4.0** |\n| Mean gradient (mmHg) | <25 | 25–40 | **>40** |\n| Valve area (cm²) | >1.5 | 1.0–1.5 | **<1.0** (index <0.6 cm²/m²) |\n\n- ข้อบ่งชี้ AVR (class I): **severe AS ที่มีอาการ** (angina, syncope, heart failure — survival หลังมีอาการราว 5, 3, 2 ปีตามลำดับ), **severe AS ไม่มีอาการแต่ LVEF <50%**, และ severe AS ที่กำลังผ่าตัดหัวใจอื่น; moderate AS ที่ทำ CABG อยู่แล้วพิจารณาเปลี่ยนด้วย\n- Low-flow low-gradient + EF ต่ำ → **dobutamine stress echo** แยก true severe AS กับ pseudosevere\n- **TAVR**: PARTNER I (ผ่าตัดไม่ได้) ลด mortality 1 ปีจาก 50.7% เหลือ 30.7% เทียบ standard therapy; PARTNER 2 และ SURTAVI (intermediate risk) noninferior ต่อ SAVR; PARTNER 3/Evolut Low Risk ขยายไปถึง low risk\n- เลือกวิธี (ACC/AHA 2020): อายุ <65 ปีหรือคาดชีวิต >20 ปี → **SAVR**; 65–80 ปี → shared decision; >80 ปีหรือคาดชีวิต <10 ปี → **transfemoral TAVR**; TAVR มี pacemaker และ paravalvular leak มากกว่า SAVR มี AF, AKI และเลือดออกมากกว่า\n- Mechanical valve ต้องใช้ **warfarin** ตลอดชีวิต (DOAC ห้ามใช้ — RE-ALIGN) bioprosthesis เหมาะกับผู้สูงอายุหรือผู้ที่กิน anticoagulant ไม่ได้ (เช่น หญิงที่วางแผนตั้งครรภ์)\n\n### Mitral และ aortic regurgitation, mitral stenosis\n\n| โรค | ข้อบ่งชี้ผ่าตัด/หัตถการหลัก |\n|---|---|\n| **Primary MR** รุนแรง | มีอาการ · ไม่มีอาการแต่ **LVEF ≤60% หรือ LVESD ≥40 mm** · AF ใหม่ หรือ PASP >50 mmHg · ไม่มีอาการ EF ปกติแต่โอกาส repair >90% |\n| Secondary (functional) MR | GDMT + CRT ก่อน; TEER (MitraClip) ในรายเลือก (COAPT) |\n| **AR** รุนแรง | มีอาการ · LVEF ≤50% (ACC/AHA 2020 ใช้ ≤55%) · LV โตมาก (LVESD >55 mm ใน Schwartz; >50 mm ในแนวทางใหม่) · กำลังผ่าตัดหัวใจอื่น |\n| **MS** (MVA ≤1.5 cm²) | มีอาการ + morphology เหมาะ (**Wilkins score ≤8**) ไม่มี LA thrombus ไม่มี MR ปานกลางขึ้นไป → **PMBC**; ไม่เข้าเงื่อนไข → MV surgery |\n\n- **Repair ดีกว่า replacement** ใน degenerative MR (posterior leaflet prolapse) — รักษา LV geometry, ไม่ต้อง anticoagulation ระยะยาว, freedom from reoperation สูง\n- Acute severe MR จาก **papillary muscle rupture** หลัง MI (วัน 2–7): murmur ใหม่ + pulmonary edema/shock → IABP + afterload reduction แล้ว **ผ่าตัดฉุกเฉิน**\n- บริบทไทย: **rheumatic MS/MR** ยังพบบ่อยในผู้ใหญ่วัยทำงาน ให้นึกถึง AF + LA thrombus ทุกครั้งก่อนทำ PMBC (ทำ TEE)\n- Infective endocarditis ผ่าตัดเมื่อ: heart failure, การติดเชื้อควบคุมไม่ได้ (abscess, heart block, bacteremia ค้างหลังยา 5–7 วัน), เชื้อรา/เชื้อดื้อ, **vegetation >10 mm ร่วมกับ embolic event**\n",
+   "pearls": [
+    "LM, 3VD, เบาหวาน multivessel, SYNTAX สูง → CABG",
+    "LIMA–LAD patency 85–90% ที่ 10 ปี และให้ survival benefit",
+    "Severe AS: Vmax >4 m/s, mean gradient >40 mmHg, AVA <1.0 cm²",
+    "AS ไม่มีอาการแต่ EF <50% → AVR",
+    "Primary MR: EF ≤60% หรือ LVESD ≥40 mm → repair",
+    "MS: PMBC ถ้า Wilkins ≤8, ไม่มี LA thrombus, MR ไม่เกิน mild",
+    "Drain หยุดทันที + CVP สูง หลังผ่าตัดหัวใจ = tamponade"
+   ],
+   "items": [
+    {
+     "id": "RES-13-3-1",
+     "kind": "mcq",
+     "topic": "CABG vs PCI in diabetic multivessel disease",
+     "stem": "A 62-year-old man with insulin-treated diabetes has exertional angina despite maximal medical therapy. Angiography shows 80–90% stenoses of the proximal LAD, mid circumflex and right coronary arteries; the left main is normal. SYNTAX score is 34 and LVEF is 45%. What is the best revascularization strategy?",
+     "choices": [
+      "Coronary artery bypass grafting with a left internal mammary artery to the LAD",
+      "Multivessel PCI with drug-eluting stents",
+      "PCI of the proximal LAD only, then medical therapy for the other lesions",
+      "Optimal medical therapy alone",
+      "Hybrid procedure with balloon angioplasty of all vessels"
+     ],
+     "answer": 0,
+     "explain": "เบาหวาน + 3-vessel disease รวม proximal LAD + SYNTAX score สูง (>32) + EF ลดลง = กลุ่มที่ **CABG** ให้ประโยชน์เหนือ PCI ชัด ตาม **FREEDOM** (CABG ลด death/MI ในเบาหวาน multivessel) และ **SYNTAX** (ความต่างของ MACCE อยู่ในกลุ่ม score ปานกลาง–สูง) โดย LIMA–LAD เป็น conduit ที่ให้ survival benefit\n- **Multivessel PCI** — repeat revascularization และ MACCE สูงกว่าในเบาหวานและ SYNTAX สูง\n- **PCI LAD อย่างเดียว** — revascularize ไม่ครบใน 3VD\n- **Medical therapy** — ยังมี angina และ 3VD กับ LV dysfunction ได้ survival benefit จากผ่าตัด\n- **Balloon angioplasty ทุกเส้น** — ไม่มีบทบาทในยุค stent และไม่ใช่ hybrid ที่แท้จริง",
+     "pearl": "เบาหวาน + multivessel หรือ SYNTAX สูง → CABG (FREEDOM, SYNTAX)",
+     "src": "Schwartz 11e Ch 21",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 21"
+     ]
+    },
+    {
+     "id": "RES-13-3-2",
+     "kind": "mcq",
+     "topic": "Asymptomatic severe AS with LV dysfunction",
+     "stem": "A 71-year-old man is found to have a systolic murmur on a routine examination. He denies angina, syncope or dyspnea and walks 3 km daily. Echocardiography shows aortic valve area 0.8 cm², mean gradient 48 mmHg, peak velocity 4.6 m/s and LVEF 45% with no other cause of LV dysfunction. What is the most appropriate management?",
+     "choices": [
+      "Aortic valve replacement",
+      "Repeat echocardiography in 6–12 months",
+      "Balloon aortic valvuloplasty as definitive therapy",
+      "Start an ACE inhibitor and observe",
+      "Exercise stress testing to decide on intervention"
+     ],
+     "answer": 0,
+     "explain": "เป็น **severe AS** (AVA <1.0, mean gradient >40, Vmax >4) แม้ไม่มีอาการ แต่ **LVEF <50%** ซึ่งเป็นข้อบ่งชี้ class I ของ **AVR** เพราะแสดงว่ากล้ามเนื้อหัวใจเริ่มเสื่อมจาก afterload ที่สูงเรื้อรัง การรอจะทำให้ EF ไม่ฟื้น เลือก SAVR หรือ TAVR ตามอายุ ความเสี่ยงและกายวิภาค\n- **Echo ซ้ำ** — เหมาะกับ asymptomatic severe AS ที่ EF ปกติ\n- **Balloon valvuloplasty** — ผลชั่วคราว ใช้เป็น bridge เท่านั้น\n- **ACE inhibitor** — ไม่แก้การอุดตันทางกล\n- **Exercise test** — ใช้หาอาการแฝงในรายที่ EF ปกติ ไม่จำเป็นเมื่อมีข้อบ่งชี้ชัดแล้ว",
+     "pearl": "Severe AS ไม่มีอาการ + LVEF <50% → AVR (class I)",
+     "src": "Schwartz 11e Ch 21",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 21"
+     ]
+    },
+    {
+     "id": "RES-13-3-3",
+     "kind": "mcq",
+     "topic": "Asymptomatic primary MR timing",
+     "stem": "A 52-year-old woman with mitral valve prolapse has no symptoms. Transthoracic echocardiography shows severe mitral regurgitation from a flail P2 segment, LVEF 58% and LV end-systolic dimension 42 mm. She is in sinus rhythm. The center has a mitral repair success rate above 95%. What is the most appropriate management?",
+     "choices": [
+      "Mitral valve repair",
+      "Mitral valve replacement with a mechanical prosthesis",
+      "Transcatheter edge-to-edge repair",
+      "Serial echocardiography every 6 months",
+      "Afterload reduction with an ACE inhibitor"
+     ],
+     "answer": 0,
+     "explain": "Primary (degenerative) MR รุนแรงที่ไม่มีอาการแต่ **LVEF ≤60% หรือ LVESD ≥40 mm** แปลว่า LV เริ่มเสื่อม ต้องผ่าตัด และใน posterior leaflet prolapse/flail **mitral valve repair** ให้ผลดีกว่า replacement (รักษา subvalvular apparatus และ LV function ไม่ต้องกิน warfarin ระยะยาว)\n- **Mechanical replacement** — สำรองเมื่อ repair ไม่ได้\n- **TEER** — สำหรับผู้ป่วยเสี่ยงผ่าตัดสูงหรือ secondary MR ที่เหมาะ (COAPT)\n- **Echo ทุก 6 เดือน** — เลยจุดที่ควรผ่าตัดแล้ว\n- **ACE inhibitor** — ไม่มีประโยชน์ใน primary MR ที่ความดันปกติ",
+     "pearl": "Primary MR: LVEF ≤60% หรือ LVESD ≥40 mm → ผ่าตัด และเลือก repair",
+     "src": "Schwartz 11e Ch 21",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 21"
+     ]
+    },
+    {
+     "id": "RES-13-3-4",
+     "kind": "mcq",
+     "topic": "Tamponade after cardiac surgery",
+     "stem": "Four hours after three-vessel CABG, a 66-year-old man becomes hypotensive (BP 78/50 mmHg) with HR 125/min. Chest tube output was 250 mL/h for 2 hours and then abruptly fell to 10 mL/h. CVP has risen from 8 to 19 mmHg, and pulmonary artery diastolic pressure is 19 mmHg. Cardiac index is 1.6 L/min/m². What is the most appropriate management?",
+     "choices": [
+      "Emergency mediastinal re-exploration",
+      "Fluid bolus and increase in inotrope dose",
+      "Intra-aortic balloon pump insertion",
+      "Intravenous furosemide",
+      "Transfuse red cells and fresh frozen plasma and reassess in 2 hours"
+     ],
+     "answer": 0,
+     "explain": "เลือดออกมากแล้ว **chest tube output ลดลงทันที** (สายอุดตันด้วย clot) + CVP สูง + **pressure equalization** (CVP ≈ PAD) + low cardiac output = **cardiac tamponade** หลังผ่าตัดหัวใจ ซึ่งมักเป็น localized clot การรักษาคือ **re-exploration ด่วน** ถ้า arrest ให้เปิด sternotomy ข้างเตียง\n- **Fluid + inotrope** — ซื้อเวลาได้สั้น ๆ แต่ไม่แก้การกดหัวใจ\n- **IABP** — สำหรับ pump failure ไม่ใช่ tamponade\n- **Furosemide** — ลด preload ทำให้ cardiac output แย่ลง\n- **Transfuse แล้วรอ** — ไม่เอา clot ออก และเสียเวลา",
+     "pearl": "หลังผ่าตัดหัวใจ: drain หยุดทันที + CVP สูง + equalization = tamponade → re-explore",
+     "src": "Schwartz 11e Ch 21",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 21"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-13-4",
+   "title": "Congenital heart disease essentials: shunts, TOF, coarctation, PDA",
+   "summary": "โรคหัวใจพิการแต่กำเนิดที่ศัลยแพทย์ทั่วไปต้องรู้: ปิด shunt เมื่อใดด้วยวิธีใด ดูแล ductal-dependent lesion และ TOF/coarctation อย่างไร และภาวะแทรกซ้อนหลังผ่าตัดที่มาถึงมือเรา",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 20 — Left-to-right shunts; Tetralogy of Fallot; Aortic coarctation; PDA",
+   "md": "### Shunt lesions: คิดจาก Qp:Qs และ PVR\nLeft-to-right shunt ทำให้เลือดไปปอดมาก (Qp >Qs) → volume overload และ heart failure ในทารก ถ้าปล่อยไว้ **pulmonary vascular resistance** สูงขึ้นถาวร → shunt กลับทิศ = **Eisenmenger syndrome** ซึ่งเป็นข้อห้ามของการปิดรู\n\n| Lesion | Volume overload | ข้อบ่งชี้/เวลาปิด | วิธี |\n|---|---|---|---|\n| **ASD** | RA/RV | Qp:Qs **>1.5:1** หรือ RV โต; elective ราว 4–5 ปี | secundum → **device** ถ้า rim พอ; ชนิดอื่นผ่าตัด patch |\n| **VSD** | LA/LV | ใหญ่ + CHF/เลี้ยงไม่โต → ภายในขวบปีแรก; supracristal + AV prolapse → ปิดแม้รูเล็ก | patch ผ่าน right atrium |\n| **PDA** | LA/LV | ยังเปิดอยู่ = ปิด (เสี่ยง endocarditis/HF) | preterm NSAID; term device หรือ ligation |\n\n> เกณฑ์ inoperable: PVR สูงคงที่ (Schwartz: >12 Wood units) หรือมี Eisenmenger — การปิดรูจะทำให้ RV ล้มเหลว\n\n### ASD และ VSD: ชนิดที่สำคัญทางศัลยกรรม\n- **ASD**: secundum พบบ่อยที่สุด; **primum** = partial AV canal มี cleft mitral (พบใน Down syndrome); **sinus venosus** (superior) มักมี **PAPVR** ของ right upper pulmonary vein เข้า SVC — ต้องผ่าตัด patch/Warden ปิด device ไม่ได้; coronary sinus type สัมพันธ์กับ persistent left SVC\n- อาการ ASD มักน้อยในเด็ก ตรวจพบ **fixed split S2**; ในผู้ใหญ่ >40 ปีอาจต้อง cath ดู PVR และ coronary\n- **VSD** 4 ชนิด: perimembranous (ราว **80% ของรายที่ต้องผ่าตัด**), inlet (AV canal), outlet/supracristal, muscular (พบบ่อยที่สุดโดยรวม หลายรายปิดเอง)\n- Nonrestrictive VSD (ขนาด ≈ aortic annulus) → RV pressure เท่า systemic → CHF ในไม่กี่สัปดาห์–เดือน ต้องปิดก่อน PVR คงที่\n- ภาวะแทรกซ้อนผ่าตัด VSD: **complete heart block** (conduction อยู่ขอบ posteroinferior ของ perimembranous VSD), residual VSD, AV/TV regurgitation\n\n### PDA และ ductal-dependent lesions\n- Preterm: **indomethacin หรือ ibuprofen** (acetaminophen เป็นทางเลือก) — ห้ามใช้ถ้ามี **NEC**, ไตวาย, เลือดออก/IVH รุนแรง, เกล็ดเลือดต่ำ; term infant มักไม่ตอบสนองต่อยา → ปิดด้วย device หรือผ่าตัด\n- ผ่าตัด: left posterolateral thoracotomy ช่อง 3–4, clip/ligate; ระวัง **left recurrent laryngeal nerve** (เสียงแหบ), ผูกผิดเส้น (**left pulmonary artery หรือ descending aorta** ในทารกตัวเล็ก), chylothorax, เลือดออก; ductus สั้นกว้างให้ตัดระหว่าง clamp แล้วเย็บปิดสองปลาย\n\n| Ductal-dependent | ตัวอย่าง | หลักการ |\n|---|---|---|\n| **Systemic flow** | HLHS, critical AS, **critical coarctation**, interrupted arch | ductus ปิด → shock, acidosis, ชีพจรขาหาย |\n| **Pulmonary flow** | pulmonary atresia, critical PS, TOF รุนแรง | ductus ปิด → cyanosis รุนแรง |\n| Mixing | TGA | PGE1 ± balloon atrial septostomy |\n\n> **PGE1** (prostaglandin E1) เปิด ductus ไว้ ผลข้างเคียงสำคัญคือ **apnea** ไข้ และความดันต่ำ — เตรียมใส่ท่อช่วยหายใจก่อนส่งต่อ\n\n### Tetralogy of Fallot\n- 4 องค์ประกอบ: **perimembranous VSD (malalignment), overriding aorta, RVOT obstruction, RVH** — ทั้งหมดเกิดจาก infundibular septum เลื่อนไปทาง anterior-cephalad\n- CXR **boot-shaped heart**; cath มีความเสี่ยงกระตุ้น tet spell\n- **Tet spell**: เด็กร้อง/ไข้ → SVR ลด → shunt R→L เพิ่ม; จัดการตามลำดับ **knee-chest, O2, morphine, IV fluid, phenylephrine** (เพิ่ม SVR), beta-blocker (esmolol/propranolol) ลด infundibular spasm, sodium bicarbonate แก้ acidosis — ห้ามใช้ inotrope\n- ผ่าตัด: **primary complete repair** ในช่วงไม่กี่เดือนแรก (มัก 3–6 เดือน): ปิด VSD, resect infundibular muscle ± **transannular patch** (เมื่อ PA/Ao <0.5, RV/LV pressure >0.7 หรือ pulmonary annulus Z score ต่ำกว่า −2.5)\n- **Modified BT shunt** (subclavian → PA) ก่อน: ทารกไม่คงที่อายุ <3 เดือน, **LAD แยกจาก RCA ข้าม RVOT** (~3%) ซึ่งต้องใช้ conduit, pulmonary atresia หรือ PA เล็กมาก\n- ระยะยาว: **pulmonary regurgitation** → RV โต ต้องทำ pulmonary valve replacement, ventricular arrhythmia และ sudden death\n\n### Coarctation of the aorta\n- ตีบใต้ต่อ **left subclavian artery** ใกล้ ductus; ร่วมกับ **bicuspid aortic valve 25–42%**, Turner syndrome, berry aneurysm\n- อาการ: ทารก — shock เมื่อ ductus ปิด (ให้ PGE1); เด็กโต/ผู้ใหญ่ — hypertension แขน, ชีพจรขาเบาและช้า, BP แขน-ขาต่างกัน, **rib notching** จาก intercostal collateral\n- ผ่าตัด: **resection + extended end-to-end anastomosis** (ตัด ductal tissue ออกหมด แก้ arch hypoplasia ได้) เป็นมาตรฐานในทารก; subclavian flap ใช้น้อยลง (แขนซ้ายโตไม่เท่า, aneurysm); patch aortoplasty/graft เมื่อช่วงยาว; **balloon/stent** สำหรับ recoarctation และเด็กโต/ผู้ใหญ่ (ไม่ใช้ native coarctation ในทารกแรกเกิด)\n\n| ภาวะแทรกซ้อน | จุดสังเกต |\n|---|---|\n| **Paradoxical hypertension** | วันแรก ๆ จาก baroreceptor + RAAS → esmolol/nitroprusside |\n| **Post-coarctectomy syndrome** | วัน 2–5 ปวดท้อง ท้องอืด จาก mesenteric arteritis → คุม BP เข้ม, งดอาหาร |\n| Paraplegia | spinal cord ischemia จาก clamp นาน collateral น้อย (พบน้อยแต่รุนแรง) |\n| Recoarctation, aneurysm | gradient ≥20 mmHg; aneurysm หลัง patch aortoplasty |\n| ระยะยาว | hypertension ค้างแม้ซ่อมดี, ต้องติดตาม BAV และ aorta ตลอดชีวิต |\n",
+   "pearls": [
+    "ASD ปิดเมื่อ Qp:Qs >1.5:1 หรือ RV โต; secundum → device",
+    "Sinus venosus ASD มักมี PAPVR → ต้องผ่าตัด",
+    "Perimembranous VSD ~80% ของรายผ่าตัด; ระวัง heart block",
+    "Preterm PDA: NSAID ยกเว้น NEC/ไตวาย/เลือดออก; ligation ระวัง left RLN",
+    "PGE1 เปิด ductus — ผลข้างเคียงสำคัญคือ apnea",
+    "Tet spell: phenylephrine เพิ่ม SVR; ห้าม inotrope",
+    "Coarctation: BAV 25–42%; หลังซ่อม paradoxical HTN และ mesenteric arteritis"
+   ],
+   "items": [
+    {
+     "id": "RES-13-4-1",
+     "kind": "mcq",
+     "topic": "PDA in preterm with NEC",
+     "stem": "A 27-week preterm infant (900 g) on day 10 of life has a hemodynamically significant patent ductus arteriosus with bounding pulses, a widened pulse pressure and increasing ventilator requirements. Yesterday he developed pneumatosis intestinalis consistent with necrotizing enterocolitis and his platelet count is 60,000/µL. What is the most appropriate way to close the ductus?",
+     "choices": [
+      "Surgical or transcatheter mechanical closure of the ductus",
+      "Intravenous indomethacin",
+      "Intravenous ibuprofen",
+      "Prostaglandin E1 infusion",
+      "Liberal fluid administration and observation"
+     ],
+     "answer": 0,
+     "explain": "PDA ที่มี hemodynamic significance ใน preterm ปกติจะเริ่มด้วย **indomethacin/ibuprofen** แต่ NSAID ลด mesenteric/renal blood flow และการทำงานของเกล็ดเลือด จึง **ห้ามใช้เมื่อมี NEC**, ไตวาย, เลือดออก หรือเกล็ดเลือดต่ำ รายนี้จึงต้อง **ปิดด้วยวิธีกล** (ligation ผ่าน left thoracotomy หรือ device ในศูนย์ที่ทำได้) ระวัง recurrent laryngeal nerve และการผูกผิดเส้น\n- **Indomethacin / ibuprofen** — ถูกห้ามในภาวะ NEC และเกล็ดเลือดต่ำ\n- **PGE1** — เปิด ductus ไว้ ตรงข้ามกับเป้าหมาย\n- **ให้น้ำมาก** — เพิ่ม pulmonary overcirculation และ heart failure",
+     "pearl": "Preterm PDA + NEC/ไตวาย/เลือดออก → ห้าม NSAID → ปิดด้วย ligation/device",
+     "src": "Schwartz 11e Ch 20",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 20"
+     ]
+    },
+    {
+     "id": "RES-13-4-2",
+     "kind": "mcq",
+     "topic": "Hypercyanotic (tet) spell management",
+     "stem": "A 7-month-old boy with unrepaired tetralogy of Fallot becomes deeply cyanotic and irritable after prolonged crying; SpO2 falls to 55%. He has been placed in the knee-chest position, given 100% oxygen, intramuscular morphine and a 20 mL/kg crystalloid bolus, but SpO2 remains 58% and the systolic murmur has become softer. Which drug is most appropriate next?",
+     "choices": [
+      "Phenylephrine",
+      "Dobutamine",
+      "Isoproterenol",
+      "Furosemide",
+      "Nitroglycerin"
+     ],
+     "answer": 0,
+     "explain": "Tet spell เกิดจาก **SVR ลดลง** และ/หรือ infundibular spasm ทำให้เลือดข้ามจาก RV ไป aorta มากขึ้น (murmur เบาลงเพราะเลือดผ่าน RVOT น้อยลง) เมื่อขั้นพื้นฐานไม่ได้ผล ให้ **phenylephrine** (pure alpha agonist) เพิ่ม SVR ดันเลือดกลับไปทาง pulmonary; beta-blocker เช่น esmolol ใช้ลด spasm ได้ด้วย ถ้ายังไม่ดีขึ้นพิจารณาผ่าตัดด่วน/ECMO\n- **Dobutamine / isoproterenol** — inotrope และ chronotrope เพิ่มการบีบของ infundibulum ทำให้ spasm แย่ลง และ isoproterenol ลด SVR\n- **Furosemide** — ลด preload ทำให้ RV ส่งเลือดไปปอดน้อยลง\n- **Nitroglycerin** — vasodilator ลด SVR ทำให้ R→L shunt เพิ่ม",
+     "pearl": "Tet spell: knee-chest, O2, morphine, fluid → phenylephrine ± beta-blocker; ห้าม inotrope",
+     "src": "Schwartz 11e Ch 20",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 20"
+     ]
+    },
+    {
+     "id": "RES-13-4-3",
+     "kind": "mcq",
+     "topic": "Post-coarctectomy syndrome",
+     "stem": "A 6-year-old girl undergoes resection of a discrete coarctation with end-to-end anastomosis through a left thoracotomy. On postoperative day 3 she develops crampy abdominal pain, distension, vomiting and mild abdominal tenderness without peritonitis. Blood pressure is 150/95 mmHg. Abdominal radiograph shows mild ileus. What is the most appropriate management?",
+     "choices": [
+      "Aggressive antihypertensive control and bowel rest",
+      "Urgent exploratory laparotomy",
+      "Catheter stent placement for presumed recoarctation",
+      "High-dose corticosteroids",
+      "Resume full oral feeding and add a prokinetic"
+     ],
+     "answer": 0,
+     "explain": "ปวดท้อง ท้องอืด อาเจียนในวันที่ 2–5 หลังซ่อม coarctation ร่วมกับ **paradoxical hypertension** = **post-coarctectomy syndrome** จาก **mesenteric arteritis** เพราะหลอดเลือดลำไส้ที่เคยได้ความดันต่ำได้รับ pulsatile pressure สูงทันที การรักษาคือ **คุมความดันเข้มงวด** (esmolol/nitroprusside ต่อด้วย beta-blocker) และ **งดอาหาร** ส่วนใหญ่หายเอง ผ่าตัดเฉพาะเมื่อเกิดลำไส้ขาดเลือดหรือทะลุ\n- **Laparotomy ทันที** — ไม่มี peritonitis และพยาธิสภาพเป็น arteritis\n- **Stent** — ความดันสูงในช่วงนี้ไม่ใช่ recoarctation\n- **Steroid** — ไม่มีบทบาท\n- **ให้อาหารเต็มที่** — เพิ่ม mesenteric demand และอาจทำให้ลำไส้ขาดเลือด",
+     "pearl": "หลังซ่อม coarctation: HTN + ปวดท้องวัน 2–5 = mesenteric arteritis → คุม BP + NPO",
+     "src": "Schwartz 11e Ch 20",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 20"
+     ]
+    },
+    {
+     "id": "RES-13-4-4",
+     "kind": "mcq",
+     "topic": "Sinus venosus ASD with PAPVR",
+     "stem": "A 5-year-old girl has a fixed split S2 and a pulmonary flow murmur. Echocardiography and cardiac MRI show a superior sinus venosus atrial septal defect with the right upper pulmonary vein draining into the superior vena cava, right ventricular dilation and Qp:Qs of 2.1:1. Pulmonary artery pressure is normal. What is the most appropriate management?",
+     "choices": [
+      "Surgical patch repair that baffles the anomalous pulmonary venous drainage to the left atrium",
+      "Transcatheter septal occluder device closure",
+      "Observation until symptoms develop",
+      "Pulmonary artery banding",
+      "Endothelin receptor antagonist therapy"
+     ],
+     "answer": 0,
+     "explain": "**Sinus venosus ASD** อยู่ที่รอยต่อ SVC–RA และมักมี **partial anomalous pulmonary venous return** ของ right upper pulmonary vein จึง **ปิดด้วย device ไม่ได้** (ไม่มี rim และต้อง reroute pulmonary vein) Qp:Qs >1.5:1 และ RV โตเป็นข้อบ่งชี้ปิด จึงต้อง **ผ่าตัด patch** ที่ baffle pulmonary vein ไป LA (หรือ Warden procedure ถ้า vein เข้าสูงใน SVC)\n- **Device closure** — ใช้ได้เฉพาะ secundum ASD ที่ rim พอ\n- **Observation** — Qp:Qs 2.1 และ RV dilation ต้องปิด รอไปเสี่ยง AF, RV failure และ pulmonary hypertension\n- **PA banding** — ใช้ชั่วคราวใน VSD ใหญ่หลายรู ไม่ใช่ ASD\n- **Endothelin antagonist** — สำหรับ pulmonary hypertension ไม่ใช่การแก้ shunt ที่ความดันปอดปกติ",
+     "pearl": "Sinus venosus ASD + PAPVR → ผ่าตัด patch/Warden; device ใช้เฉพาะ secundum",
+     "src": "Schwartz 11e Ch 20",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 20"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-13-MEQ1",
+   "part": "MEQ",
+   "topic": "Early-stage NSCLC — staging, physiologic evaluation and resection",
+   "vignette": "ชายไทยอายุ 66 ปี สูบบุหรี่ 45 pack-year (เลิก 1 เดือน) ตรวจ CT low-dose ตามโครงการคัดกรองพบก้อน **2.4 cm** ที่ RUL ขอบ spiculated ตำแหน่ง peripheral ไม่มีอาการ\n\n| การตรวจ | ผล |\n|---|---|\n| PET-CT | ก้อน SUV 8.2; node station 4R ขนาด 1.1 cm SUV 3.5; ไม่มี distant uptake |\n| Spirometry | FEV1 1.6 L (**55% predicted**), FEV1/FVC 0.58 |\n| DLCO | **50% predicted** |\n| Echo | LVEF 60% |",
+   "questions": [
+    {
+     "q": "1. จงบอก clinical T stage และขั้นตอนถัดไปเพื่อ stage mediastinum พร้อมเหตุผล",
+     "a": "- ก้อน 2.4 cm = **cT1c**; node 4R มี uptake ต้องพิสูจน์เพราะถ้าเป็นจริงคือ **N2 (stage IIIA)** ซึ่งเปลี่ยนแผนเป็น induction\n- ขั้นถัดไป **EBUS-TBNA** ของ 4R (และ sample station 7, 10R, 11R ในคราวเดียว) ถ้าลบแต่ยังสงสัย → **cervical mediastinoscopy**\n- ส่ง molecular (EGFR, ALK) และ PD-L1 จากชิ้นเนื้อ\n- เกณฑ์ให้คะแนน: บอก T ถูก (1), ระบุว่า PET บวกต้องได้ชิ้นเนื้อ (2), เลือก EBUS ก่อน mediastinoscopy (1)"
+    },
+    {
+     "q": "2. EBUS ทุก station เป็นลบ (รวม 4R) จงคำนวณ ppoFEV1 และ ppoDLCO สำหรับ right upper lobectomy (ใช้ 20 segment, RUL = 3) และแปลผล",
+     "a": "- ppoFEV1 = 55 × 0.85 ≈ **47%**; ppoDLCO = 50 × 0.85 ≈ **42.5%**\n- ทั้งคู่ >40% → ตาม algorithm ใน Schwartz อยู่ในกลุ่ม **average risk** ทำ lobectomy ได้ (ถ้าใช้ ACCP 2013 ค่า 30–60% ให้ทำ stair climb/shuttle walk ประกอบ)\n- เน้นเลิกบุหรี่ต่อเนื่อง, pulmonary rehab, inspiratory muscle training ก่อนผ่าตัด\n- เกณฑ์ให้คะแนน: คำนวณถูก (2), แปลผลถูกตามเกณฑ์ (1), พูดถึง prehabilitation (1)"
+    },
+    {
+     "q": "3. ในห้องผ่าตัด frozen section ของ station 10R, 4R, 7 เป็นลบ ก้อน CTR 1.0 อยู่ outer third จะเลือก lobectomy หรือ sublobar resection อ้างอิงหลักฐาน",
+     "a": "- ก้อน 2.4 cm **>2 cm** จึงอยู่นอกเกณฑ์ JCOG0802 และ CALGB 140503 (ทั้งสอง trial รับ ≤2 cm) → มาตรฐานคือ **VATS/robotic lobectomy + systematic mediastinal lymph node dissection/sampling**\n- ถ้าก้อน ≤2 cm, peripheral, N0 → segmentectomy (JCOG0802: OS ดีกว่า, local recurrence สูงกว่า) หรือ sublobar (CALGB: noninferior) เป็นทางเลือกได้ โดยต้องมี margin ≥2 cm หรือ ≥ ขนาดก้อน\n- เกณฑ์ให้คะแนน: บอกเกณฑ์ขนาดของ trial (2), เลือก lobectomy + node (1), บอกเงื่อนไข margin (1)"
+    },
+    {
+     "q": "4. วันที่ 5 หลังผ่าตัด ยังมี air leak ต่อเนื่องเล็กน้อย CXR ปอดขยายเต็ม ไข้ไม่มี จะวินิจฉัยและจัดการอย่างไร และเมื่อไหร่ต้องกังวลว่าเป็น BPF",
+     "a": "- **Prolonged air leak** (>5 วัน) พบบ่อยในปอด emphysema\n- จัดการ: เปลี่ยนเป็น **water seal**, ถ้าปอดขยายเต็มพิจารณา **chemical pleurodesis** (doxycycline/talc) หรือ autologous blood patch หรือส่งกลับบ้านด้วย Heimlich valve\n- ต้องคิด **BPF** เมื่อ leak ใหญ่/เพิ่มขึ้น, ปอดยุบ, มีไข้-empyema, ไอเสมหะมาก, ผู้ป่วยได้ induction/immunocompromised → **bronchoscopy** ดู stump และพิจารณาผ่าตัดซ่อม + muscle flap\n- เกณฑ์ให้คะแนน: นิยาม >5 วัน (1), ขั้นตอนจัดการ (2), สัญญาณ BPF + bronchoscopy (1)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 19",
+    "JCOG0802/WJOG4607L (Lancet 2022)",
+    "CALGB 140503 (NEJM 2023)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-13-OSCE1",
+   "topic": "Mock oral board — parapneumonic empyema",
+   "station": "Mock oral 10 นาที · Parapneumonic empyema",
+   "instruction": "**บทบาท:** คุณเป็น chief resident ศัลยกรรมทรวงอก ที่ รพท. ภาคอีสาน ผู้สอบจะถามตามลำดับ ตอบกระชับเหมือนสอบ oral board\n\n**Scenario:** ชายอายุ 52 ปี เบาหวานคุมไม่ดี ทำนา มีไข้ ไอ เหนื่อย 10 วัน ได้ ceftriaxone ที่ รพช. มา 4 วันไม่ดีขึ้น ส่งต่อมา T 39.2°C, HR 118, BP 104/66, RR 26, SpO2 92% room air ปอดขวาเสียงหายใจลดลงครึ่งล่าง\n\n**Prompt ของผู้สอบ**\n1. \"คุณจะประเมินอะไรบ้างเป็นอย่างแรก และจะส่งตรวจอะไร\"\n2. \"CT พบ loculated right pleural effusion หลายช่อง มี pleural enhancement (split pleura sign) เจาะได้หนองขุ่น pH 6.95 glucose 20 mg/dL จะทำอะไรต่อ และจะเปลี่ยนยาไหม\"\n3. \"ใส่ chest tube แล้ว 3 วัน ยังมีไข้ CT ยังมี loculation — ทางเลือกคืออะไร คุณจะเลือกอะไร\"\n4. \"ระหว่าง VATS พบ peel หนาคลุมปอด ปอดไม่ขยาย จะทำอะไร\"\n5. \"ถ้าผู้ป่วยรายนี้ septic shock, ASA IV ทนการดมยาสลบนานไม่ได้ และเป็นมา 6 สัปดาห์ ทางเลือกคืออะไร\"\n6. \"หลังผ่าตัด lung ขยายไม่ได้ มี air leak มากและต่อเนื่อง คุณคิดถึงอะไร\"",
+   "answer": "1. **Initial assessment (2 คะแนน)**: ABC, sepsis bundle (lactate, hemoculture 2 ชุดก่อนเปลี่ยนยา, IV fluid), CXR + **ultrasound ข้างเตียง**, CT chest with contrast; ส่ง CBC, glucose, creatinine; คิดถึง **melioidosis** ในชาวนาเบาหวานจากอีสาน (ส่ง culture จาก pleural fluid/blood/urine/throat swab) และวัณโรค\n2. **Fibrinopurulent empyema (2 คะแนน)**: pH <7.2, glucose <40 → **chest tube** (US-guided) ระบาย + ส่ง gram stain/culture; ปรับยาเป็น **ceftazidime หรือ meropenem** ครอบคลุม B. pseudomallei และ anaerobe จนกว่าผลเพาะเชื้อออก; ตรวจหา abscess อื่น (ตับ ม้าม ต่อมลูกหมาก)\n3. **ล้มเหลวจาก tube (2 คะแนน)**: ทางเลือก intrapleural **tPA 10 mg + DNase 5 mg** วันละ 2 ครั้ง 3 วัน (MIST2) หรือ **VATS drainage/debridement**; ผู้ป่วยทนผ่าตัดได้และมีไข้ต่อเนื่อง → เลือก **VATS แต่เนิ่น ๆ** ก่อนเข้าสู่ organizing stage\n4. **Organizing/trapped lung (1 คะแนน)**: **decortication** ลอก visceral peel ให้ปอดขยายเต็ม ถ้าทำผ่าน VATS ไม่ได้ให้ convert เป็น thoracotomy; ใส่ drain 2 เส้น\n5. **ผู้ป่วยเสี่ยงสูง/เรื้อรัง (1 คะแนน)**: ระบายด้วย tube ต่อเนื่อง/เปลี่ยนเป็น open drainage หรือ **open window thoracostomy (Eloesser flap)**/rib resection แล้วปิดภายหลังด้วย muscle flap หรือ thoracoplasty\n6. **Air leak มาก + ปอดไม่ขยาย (1 คะแนน)**: นึกถึง lung abscess/necrotizing pneumonia ทะลุ หรือ **bronchopleural fistula** → bronchoscopy, คงการระบาย, พิจารณา muscle flap\n\n**Critical fails**: ให้ antibiotic อย่างเดียวโดยไม่ระบายหนองที่ pH <7.2 · ไม่ครอบคลุม melioidosis ในบริบทนี้ · ใช้ fibrinolytic ตัวเดียว (streptokinase/tPA) แล้วอ้างว่ามีหลักฐาน · ทำ decortication ในผู้ป่วย shock ที่ยังไม่ resuscitate"
+  }
+ ]
+}

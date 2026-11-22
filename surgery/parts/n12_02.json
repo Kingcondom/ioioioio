@@ -1,0 +1,496 @@
+{
+ "lec": "02",
+ "date": "Schwartz Ch 3",
+ "title": "Fluids, electrolytes & acid–base",
+ "subtitle": "จะสั่งสารน้ำให้ผู้ป่วยศัลยกรรมอย่างไร และจะแก้ความผิดปกติของ Na, K, Ca, Mg, PO₄ และกรด-ด่างได้อย่างปลอดภัย",
+ "objectives": [
+  "เรียนจบแล้วต้องบอกสัดส่วนของ body fluid compartments และเลือกชนิดของ crystalloid ตามส่วนประกอบได้",
+  "เรียนจบแล้วต้องคำนวณ maintenance fluid และวางแผนทดแทน deficit กับ ongoing GI losses ได้",
+  "เรียนจบแล้วต้องแยกสาเหตุของ hyponatremia/hypernatremia ตาม volume status และกำหนดอัตราการแก้ที่ปลอดภัย",
+  "เรียนจบแล้วต้องรักษา hyperkalemia ที่มี EKG ผิดปกติ และภาวะ K, Ca, Mg, PO₄ ผิดปกติที่พบบ่อยหลังผ่าตัดได้",
+  "เรียนจบแล้วต้องแปลผล ABG อย่างเป็นขั้นตอน คำนวณ anion gap และ expected compensation",
+  "เรียนจบแล้วต้องอธิบายและรักษา hypochloremic hypokalemic metabolic alkalosis จาก gastric outlet obstruction ได้"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 3 Fluid and electrolyte management of the surgical patient",
+  "**European clinical practice guideline on diagnosis and treatment of hyponatraemia** (ESE/ESICM/ERA-EDTA, 2014)",
+  "**ERAS Society** guidelines — perioperative fluid management"
+ ],
+ "sections": [
+  {
+   "id": "n12-02-1",
+   "title": "Body fluid compartments, crystalloids และ maintenance fluids",
+   "summary": "น้ำและเกลือแร่กระจายอยู่ในร่างกายอย่างไร และจะเลือกชนิดกับปริมาณสารน้ำให้ผู้ป่วยศัลยกรรมอย่างไรให้ถูก",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 3 — Body fluids, parenteral solutions (Table 3-12), preoperative/postoperative fluid therapy",
+   "md": "### น้ำในร่างกายอยู่ที่ไหน\n**Total body water (TBW)** ≈ 60% ของน้ำหนักในชายหนุ่ม และ 50% ในหญิง (ไขมันมากกว่า) · ผู้สูงอายุ/อ้วนน้อยลง · ทารกแรกเกิดราว 80%\n\n| ช่อง | % น้ำหนักตัว | ชาย 70 kg | ไอออนหลัก |\n|---|---|---|---|\n| **Intracellular (ICF)** | 40% (2/3 ของ TBW) | 28 L | **K⁺, Mg²⁺**, phosphate, protein |\n| **Extracellular (ECF)** | 20% (1/3 ของ TBW) | 14 L | **Na⁺, Cl⁻, HCO₃⁻** |\n| · Interstitial | 15% | 10.5 L | เหมือน plasma แต่โปรตีนน้อย |\n| · Plasma | 5% | 3.5 L | มี albumin → oncotic pressure |\n\n- น้ำผ่านทุกช่องได้อิสระ แต่ **Na⁺ ถูกจำกัดอยู่ใน ECF** ด้วย Na⁺/K⁺-ATPase → สารน้ำที่มี Na ขยาย ECF เท่านั้น และไปอยู่ใน interstitial ราว **3 เท่า** ของที่อยู่ใน plasma (ให้ isotonic 1 L อยู่ในหลอดเลือดแค่ราว 250 mL)\n- **D5W** เมื่อกลูโคสถูกใช้ไปจะเหลือน้ำเปล่า กระจายทั่ว TBW → อยู่ในหลอดเลือดน้อยมาก **ห้ามใช้ resuscitate**\n- **Osmolality** คำนวณ = 2[Na] + glucose/18 + BUN/2.8 (ปกติ 290–310 mOsm/kg)\n\n### สมดุลน้ำต่อวันและความผิดปกติ 3 แบบ\nผู้ใหญ่ดื่ม/ได้น้ำราว 2,000 mL/วัน · เสียทางปัสสาวะ 800–1,500 mL, อุจจาระ ~250 mL, **insensible loss ~600 mL** (ผิวหนัง 75% ปอด 25% เพิ่มตามไข้และหายใจเร็ว) · ไตต้องขับปัสสาวะอย่างน้อย 500–800 mL/วันเพื่อขับของเสีย\n\nความผิดปกติแบ่งเป็น **volume** (เสีย/ได้ isotonic fluid → ECF เปลี่ยน), **concentration** (น้ำเปล่าเข้า-ออก → Na เปลี่ยน → น้ำเคลื่อนเข้าออกเซลล์) และ **composition** (K, Ca, Mg, pH)\n\n**ECF volume deficit** เป็นความผิดปกติที่พบบ่อยที่สุดในผู้ป่วยศัลยกรรม — สาเหตุหลักคือ **เสียน้ำทางเดินอาหาร** (อาเจียน, NG suction, ท้องเสีย, fistula) และ **third-space sequestration** (ลำไส้อุดตัน, peritonitis, ตับอ่อนอักเสบ, burns, crush injury)\n\n| | Volume deficit | Volume excess |\n|---|---|---|\n| ทั่วไป | น้ำหนักลด, skin turgor ลด | น้ำหนักเพิ่ม, บวม |\n| หัวใจ | ชีพจรเร็ว, orthostasis, คอแฟบ | JVP สูง, CVP สูง |\n| ไต | oliguria, BUN สูง, urine Na น้อยกว่า 20 | — |\n| ปอด/GI | ileus | pulmonary edema, bowel edema |\n\n### ส่วนประกอบของ GI secretions (เลือกสารน้ำทดแทน)\n\n| สารคัดหลั่ง | ปริมาณ/วัน (mL) | Na | K | Cl | HCO₃⁻ |\n|---|---|---|---|---|---|\n| **กระเพาะ** | 1,000–2,000 | 60–90 | 10–30 | **100–130** | 0 |\n| ลำไส้เล็ก | 2,000–3,000 | 120–140 | 5–10 | 90–120 | 30–40 |\n| **ตับอ่อน** | 600–800 | 135–145 | 5–10 | 70–90 | **95–115** |\n| น้ำดี | 300–800 | 135–145 | 5–10 | 90–110 | 30–40 |\n| ลำไส้ใหญ่ | — | 60 | **30** | 40 | 0 |\n\n> เสียน้ำกระเพาะ → **Cl⁻ และ H⁺ หาย** → hypochloremic metabolic alkalosis · เสียน้ำตับอ่อน/ท้องเสีย → **HCO₃⁻ หาย** → normal AG metabolic acidosis\n\n### Crystalloids: รู้ส่วนประกอบแล้วเลือกให้ถูก\n\n| สารน้ำ | Na | Cl | K | Buffer | mOsm/L | ใช้เมื่อ |\n|---|---|---|---|---|---|---|\n| ECF (เทียบ) | 142 | 103 | 4 | HCO₃⁻ 27 | 280–310 | — |\n| **0.9% NaCl (NSS)** | 154 | **154** | 0 | — | 308 | volume deficit + hypoNa/hypoCl/metabolic alkalosis · ให้มากเกิน → **hyperchloremic metabolic acidosis** |\n| **Lactated Ringer's** | 130 | 109 | 4 | lactate 28 (ตับเปลี่ยนเป็น HCO₃⁻) | 273 | resuscitation, ทดแทน GI loss — แบบ balanced, Ca 3 |\n| Plasma-Lyte | 140 | 98 | 5 | acetate/gluconate 27 | 295 | balanced ใกล้ plasma ที่สุด |\n| D5 0.45% NaCl | 77 | 77 | 0 | — | 407 | maintenance (+ KCl 20 mEq/L เมื่อปัสสาวะออกดี) |\n| D5W | 0 | 0 | 0 | — | 253 | free water (hypernatremia) ไม่ใช่ resuscitation |\n| 3% NaCl | 513 | 513 | 0 | — | 1,026 | symptomatic hyponatremia |\n\nDextrose 5% = 50 g/L = **200 kcal/L** — พอกัน ketosis แต่ไม่ใช่อาหาร · Colloid (albumin, starch) ไม่ได้ลดอัตราตายเทียบ crystalloid และ **hydroxyethyl starch เพิ่มไตวาย** จึงใช้จำกัด\n\n### Maintenance และการสั่งสารน้ำหลังผ่าตัด\n**สูตร 100/50/20 (Holliday–Segar)** ต่อวัน: 10 kg แรก 100 mL/kg · 10 kg ถัดไป 50 mL/kg · ส่วนที่เกิน 20 kg 20 mL/kg (หรือ **4-2-1 mL/kg/ชม.**)\n- ตัวอย่าง: 60 kg = 1,000 + 500 + 800 = **2,300 mL/วัน** (≈ 100 mL/ชม.)\n- สูตรเบื้องต้น: **D5 ½NSS** + KCl 20 mEq/L เมื่อปัสสาวะออกดี\n\nลำดับคิดทุกวัน: **deficit + maintenance + ongoing loss** (NG, drain, fistula — ทดแทนด้วยสารน้ำที่ส่วนประกอบใกล้เคียง)\n- ผู้ป่วยที่มีสัญญาณ volume deficit → **bolus isotonic 1–2 L** แล้วประเมินซ้ำ\n- เป้า: vital signs ดีขึ้น, **urine output 0.5–1 mL/kg/ชม.**, base deficit/lactate ลดลง\n- ช่วง 24–48 ชม. แรกหลังผ่าตัด ใช้ **isotonic** (ADH หลั่งมาก เสี่ยง hyponatremia ถ้าให้ hypotonic มาก)\n- ระหว่างผ่าตัดใหญ่ทางช่องท้อง: balanced salt solution ราว 500–1,000 mL/ชม. ตามการเสีย\n- **ERAS**: ดื่ม clear fluid ได้ถึง 2 ชม. ก่อนผ่าตัด, goal-directed fluid, หลีกเลี่ยง fluid overload (ileus, anastomotic edema), หยุด IV เร็ว\n- สัญญาณแรกของ volume excess = **น้ำหนักเพิ่ม** (ผู้ป่วยหลังผ่าตัดที่ไม่ได้อาหารควรน้ำหนักลด 0.1–0.2 kg/วัน)\n",
+   "pearls": [
+    "TBW 60% (ชาย) · ICF 40% · ECF 20% = interstitial 15% + plasma 5%",
+    "Isotonic 1 L → อยู่ในหลอดเลือด ~1/4 · D5W กระจายทั่ว TBW ห้ามใช้ resuscitate",
+    "NSS Na 154/Cl 154 → ให้มาก = hyperchloremic metabolic acidosis · LR Na 130, K 4, Ca 3, lactate 28",
+    "Maintenance 100/50/20 mL/kg/วัน หรือ 4-2-1 mL/kg/ชม. · 60 kg ≈ 2,300 mL/วัน",
+    "Urine output เป้าหมาย 0.5–1 mL/kg/ชม. ในผู้ใหญ่",
+    "น้ำกระเพาะ Cl สูง H⁺ สูง · น้ำตับอ่อน HCO₃⁻ สูงสุด · ลำไส้ใหญ่ K สูง",
+    "สัญญาณแรกของ volume overload หลังผ่าตัดคือน้ำหนักเพิ่ม"
+   ],
+   "mnem": [
+    {
+     "name": "4-2-1",
+     "what": "อัตรา maintenance fluid ต่อชั่วโมง",
+     "lines": [
+      [
+       "4",
+       "mL/kg/ชม. สำหรับ 10 kg แรก"
+      ],
+      [
+       "2",
+       "mL/kg/ชม. สำหรับ 10 kg ถัดไป"
+      ],
+      [
+       "1",
+       "mL/kg/ชม. สำหรับทุก kg ที่เกิน 20"
+      ]
+     ],
+     "note": "ผู้ใหญ่ 70 kg = 40 + 20 + 50 = 110 mL/ชม."
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-02-1-1",
+     "kind": "mcq",
+     "topic": "Maintenance fluid calculation",
+     "stem": "A 65-kg 45-year-old woman with normal renal and cardiac function is kept nil per os for 24 hours awaiting an elective cholecystectomy that was postponed. She has no ongoing losses and normal electrolytes. Using the standard weight-based (100/50/20) formula, what is her daily maintenance fluid requirement?",
+     "choices": [
+      "2,400 mL",
+      "1,950 mL",
+      "2,000 mL",
+      "3,250 mL",
+      "6,500 mL"
+     ],
+     "answer": 0,
+     "explain": "สูตร **100/50/20**: 10 kg แรก × 100 = 1,000 mL · 10 kg ถัดไป × 50 = 500 mL · ส่วนที่เหลือ 45 kg × 20 = 900 mL → รวม **2,400 mL/วัน** (≈ 100 mL/ชม. ตรงกับ 4-2-1: 40 + 20 + 45 = 105 mL/ชม.) สารน้ำที่ใช้บ่อยคือ D5 ½NSS + KCl 20 mEq/L\n- **1,950 mL** ได้จากคิด 30 mL/kg (30 × 65) ซึ่งเป็นการประมาณคร่าว ๆ อีกแบบ ไม่ใช่สูตรที่ถาม\n- **2,000 mL** ปัดตัวเลขโดยไม่ได้คำนวณตามสูตร\n- **3,250 mL** คือ 50 mL/kg ทั้งตัว เกินความต้องการ\n- **6,500 mL** คือ 100 mL/kg ทั้งตัว ใช้ได้เฉพาะ 10 kg แรก",
+     "pearl": "Maintenance = 100/50/20 mL/kg/วัน",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-1-2",
+     "kind": "mcq",
+     "topic": "Normal saline and hyperchloremic acidosis",
+     "stem": "A 30-year-old man with blunt abdominal trauma received 8 L of 0.9% sodium chloride over 12 hours during resuscitation. His blood pressure and urine output are now normal. Labs: Na 145, K 4.0, Cl 120, HCO3 16 mmol/L; lactate 1.5 mmol/L; pH 7.29. What is the most likely cause of his acid–base disorder?",
+     "choices": [
+      "Hyperchloremic normal anion gap acidosis from chloride load",
+      "Lactic acidosis from persistent hypoperfusion",
+      "Diabetic ketoacidosis",
+      "Respiratory acidosis from hypoventilation",
+      "Renal failure with retention of organic acids"
+     ],
+     "answer": 0,
+     "explain": "NSS มี **Na 154 และ Cl 154 mmol/L** (Cl สูงกว่าพลาสมามาก) เมื่อให้ปริมาณมาก Cl⁻ ที่เพิ่มขึ้นแทนที่ HCO₃⁻ → **hyperchloremic metabolic acidosis** · Anion gap = 145 − (120 + 16) = **9** (ปกติ) และ lactate ปกติ ยืนยันว่าไม่ใช่ hypoperfusion · ป้องกันด้วยการใช้ **balanced crystalloid** (LR, Plasma-Lyte)\n- **Lactic acidosis** จะมี AG สูงและ lactate สูง ซึ่งไม่มี\n- **DKA** เป็น high AG และต้องมีน้ำตาลสูง/ketone\n- **Respiratory acidosis** ปัญหาอยู่ที่ HCO₃⁻ ต่ำ ไม่ใช่ PaCO₂ สูง\n- **Renal failure** ทำให้ high AG และผู้ป่วยมีปัสสาวะปกติ",
+     "pearl": "NSS ปริมาณมาก → normal AG (hyperchloremic) acidosis · ใช้ balanced crystalloid แทน",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-1-3",
+     "kind": "mcq",
+     "topic": "Distribution of intravenous fluids",
+     "stem": "A 72-year-old man with a bleeding duodenal ulcer is hypotensive while awaiting endoscopy and blood products. A junior resident proposes giving 1 L of 5% dextrose in water as the initial bolus. Why is this a poor choice for intravascular volume expansion?",
+     "choices": [
+      "The water distributes across total body water, so very little remains intravascular",
+      "Dextrose causes immediate hyperkalemia",
+      "5% dextrose is hypertonic and causes cellular dehydration",
+      "Dextrose solutions cannot be given through peripheral veins",
+      "It contains lactate that worsens acidosis in shock"
+     ],
+     "answer": 0,
+     "explain": "เมื่อกลูโคสใน D5W ถูกเผาผลาญ จะเหลือ **น้ำเปล่า** ซึ่งกระจายไปทุกช่องตามสัดส่วน TBW (2/3 เข้าเซลล์) อยู่ใน plasma เพียงราว 1/12 → ขยายปริมาตรหลอดเลือดได้น้อยมาก การ resuscitate ต้องใช้ **isotonic crystalloid** ที่มี Na (ซึ่งอยู่ใน ECF) หรือเลือดในกรณีเสียเลือด\n- **Hyperkalemia ทันที** ไม่ใช่ผลของ D5W (กลูโคสกระตุ้น insulin ทำให้ K เข้าเซลล์ด้วยซ้ำ)\n- **Hypertonic** ผิด D5W ในถุง 253 mOsm/L และในร่างกายทำตัวเป็น hypotonic\n- **ให้ทาง peripheral ไม่ได้** ผิด D5W ให้ทางหลอดเลือดส่วนปลายได้\n- **มี lactate** ผิด นั่นคือ lactated Ringer's",
+     "pearl": "D5W = น้ำเปล่า กระจายทั่ว TBW → ห้ามใช้ resuscitate",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-1-4",
+     "kind": "mcq",
+     "topic": "Replacement of gastric losses",
+     "stem": "A 50-year-old woman with gastric outlet obstruction from a peptic stricture has 1.8 L/day of nasogastric output. Labs: Na 134, K 3.0, Cl 86, HCO3 36 mmol/L. She is tachycardic with dry mucosa and urine output of 15 mL/h. Which is the most appropriate initial intravenous fluid?",
+     "choices": [
+      "0.9% sodium chloride, adding potassium once urine output is adequate",
+      "5% dextrose in water",
+      "Sodium bicarbonate infusion",
+      "3% sodium chloride",
+      "Lactated Ringer's with additional sodium bicarbonate"
+     ],
+     "answer": 0,
+     "explain": "น้ำกระเพาะมี **Cl⁻ และ H⁺ สูง** การเสียทาง NG ทำให้เกิด **hypochloremic, hypokalemic metabolic alkalosis** ร่วมกับ volume deficit สารน้ำที่เหมาะคือ **0.9% NaCl** เพราะให้ทั้ง volume และ Cl⁻ ซึ่งไตต้องใช้เพื่อขับ HCO₃⁻ ส่วนเกิน แล้วเติม **KCl** เมื่อปัสสาวะออกพอ\n- **D5W** ไม่แก้ volume deficit และไม่มี Cl\n- **Bicarbonate** ทำให้ alkalosis แย่ลง\n- **3% NaCl** ใช้กับ symptomatic hyponatremia ไม่ใช่ทดแทน GI loss\n- **LR + bicarbonate** ให้ buffer เพิ่มในผู้ป่วยที่เป็น alkalosis อยู่แล้ว และ Cl ต่ำกว่า NSS",
+     "pearl": "Gastric loss → NSS + KCl (เมื่อปัสสาวะออก)",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-02-2",
+   "title": "Sodium disorders: hyponatremia, hypernatremia และอัตราการแก้",
+   "summary": "จะแยกสาเหตุของ Na ต่ำ/สูงในผู้ป่วยศัลยกรรมอย่างไร และแก้เร็วแค่ไหนจึงปลอดภัยต่อสมอง",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 3 — Concentration changes, correction of sodium, SIADH, DI, cerebral salt wasting",
+   "md": "### หลักคิด: Na บอก \"น้ำ\" ไม่ได้บอก \"volume\"\nระดับ Na ในเลือดสะท้อนสัดส่วนน้ำต่อเกลือ (**concentration**) ไม่ได้บอกปริมาตร ECF — ผู้ป่วย Na ต่ำอาจขาดน้ำ ปกติ หรือน้ำเกินก็ได้ ต้องประเมิน **volume status** ทางคลินิกทุกครั้ง\n- อาการของทั้ง hypo- และ hypernatremia เป็นอาการทาง **สมอง** เพราะน้ำเคลื่อนเข้า/ออกจากเซลล์ประสาท\n- ความเร็วของการเกิดสำคัญกว่าตัวเลข: เกิดเร็ว (น้อยกว่า 48 ชม.) สมองปรับตัวไม่ทัน อาการรุนแรง · เกิดช้า สมองปรับ osmolyte แล้ว จึงต้องแก้ช้า\n\n### Hyponatremia: แยกสาเหตุอย่างเป็นระบบ\n1. ตัด **pseudohyponatremia** (ไขมัน/โปรตีนในเลือดสูงมาก) และ **hyperosmolar** (น้ำตาลสูง, mannitol) — Na ลด **1.6 mEq/L ต่อกลูโคสที่เพิ่มทุก 100 mg/dL**\n2. ประเมิน volume:\n\n| Volume | สาเหตุในผู้ป่วยศัลยกรรม | Urine Na |\n|---|---|---|\n| **ต่ำ** | อาเจียน, NG, ท้องเสีย, fistula, diuretic, cerebral salt wasting | น้อยกว่า 20 (GI loss) · มากกว่า 20 (ไต/diuretic/CSW) |\n| **ปกติ** | **SIADH** (หลังผ่าตัด, head injury, ยา morphine/NSAID, small cell lung cancer), hypothyroid, glucocorticoid deficiency | มากกว่า 20–40 + urine osm สูง |\n| **สูง** | ให้ hypotonic fluid มาก, หัวใจล้มเหลว, ตับแข็ง, ไตวาย | แปรผัน |\n\n- **หลังผ่าตัด** ADH หลั่งมาก (ความปวด คลื่นไส้ ยา stress) → ถ้าให้ hypotonic fluid มาก → **iatrogenic hyponatremia** (ผู้หญิงวัยก่อนหมดประจำเดือนและเด็กเสี่ยงสมองบวมรุนแรง)\n- **SIADH**: euvolemic, Na ต่ำ, serum osm ต่ำ, **urine osm สูงเกินควร** (มากกว่า 100) และ urine Na สูง · รักษาด้วย **จำกัดน้ำ** ± loop diuretic, แก้สาเหตุ · การให้ NSS อาจทำให้แย่ลงถ้า urine Na สูงกว่า 154\n- **Cerebral salt wasting**: ผู้ป่วยมีรอยโรคในสมอง (เช่น SAH) ไตเสีย Na จน **volume ต่ำ** → รักษาด้วยให้ Na และน้ำ (ตรงข้ามกับ SIADH)\n\n### Hyponatremia: การรักษาและอัตราการแก้\n\n| สถานการณ์ | การรักษา | อัตรา |\n|---|---|---|\n| **มีอาการทางสมอง** (ชัก, ซึมลง, สับสนรุนแรง) | **3% NaCl** (เช่น bolus 100–150 mL แล้วประเมินซ้ำ) | Schwartz: เพิ่มไม่เกิน 1 mEq/L/ชม. จนถึง 130 หรืออาการดีขึ้น · แนวทางปัจจุบัน: เพิ่ม 4–6 mEq/L ในชั่วโมงแรกก็พอหยุดชักได้ |\n| ไม่มีอาการ | แก้ตามสาเหตุ: hypovolemic → NSS · SIADH/hypervolemic → จำกัดน้ำ | ไม่เกิน 0.5 mEq/L/ชม. |\n| ทุกกรณี | ตรวจ Na ซ้ำทุก 2–4 ชม. ช่วงแรก | **ไม่เกิน 12 mEq/L ใน 24 ชม.** (Schwartz) · ผู้ป่วยเสี่ยงสูง (สุรา ขาดอาหาร K ต่ำ ตับแข็ง) แนวทางปัจจุบันให้ไม่เกิน 8 mEq/L/24 ชม. |\n\n> แก้เร็วเกินไปใน chronic hyponatremia → **osmotic demyelination syndrome (central pontine myelinolysis)**: พูดไม่ชัด กลืนลำบาก quadriparesis, locked-in — อาการมักเกิดหลังแก้ไป 2–6 วัน และมักถาวร\n\n### Hypernatremia\nเกิดจาก **เสียน้ำเปล่ามากกว่าเกลือ** หรือได้ Na มาก — มักเกิดในคนที่ **กินน้ำเองไม่ได้/ไม่รู้สึกกระหาย** (ผู้สูงอายุติดเตียง, ใส่ท่อช่วยหายใจ, หมดสติ)\n\n| Volume | สาเหตุ |\n|---|---|\n| ต่ำ | เสียน้ำทางผิวหนัง (ไข้, burns), GI, osmotic diuresis (น้ำตาลสูง, mannitol, tube feeding โปรตีนสูง), DI ที่ไม่ได้ดื่มน้ำ |\n| ปกติ | **Diabetes insipidus** — central (หลังผ่าตัด pituitary, head injury, brain death) หรือ nephrogenic (K ต่ำ, Ca สูง, lithium, amphotericin) |\n| สูง | ได้ NaCl/NaHCO₃ มาก, mineralocorticoid excess |\n\n**Water deficit (L) = TBW × ([Na] − 140) / 140**\n- ถ้า hypovolemic: คืน volume ด้วย isotonic ก่อน แล้วค่อยแก้ free water ด้วย D5W, ½NSS หรือน้ำทางสายให้อาหาร\n- อัตรา: acute ลดไม่เกิน **1 mEq/L/ชม. และ 12 mEq/L/วัน** · chronic ช้ากว่านี้ (ราว 0.5 mEq/L/ชม.) → เร็วเกินไปเกิด **cerebral edema**\n- Central DI: ปัสสาวะมาก เจือจาง (urine osm ต่ำ) Na สูงขึ้น → desmopressin/vasopressin\n\n### ตัวอย่างการคำนวณ\nชาย 70 kg, **Na 160** → **TBW** = 0.6 × 70 = 42 L → deficit = 42 × (160 − 140)/140 = **6 L** · ให้ทดแทนใน 48–72 ชม. ร่วมกับ **maintenance และ insensible loss** พร้อมตรวจ Na ทุก 4–6 ชม.\n",
+   "pearls": [
+    "Na บอก concentration (น้ำ) ไม่ได้บอก volume — ประเมิน volume ทางคลินิกเสมอ",
+    "Glucose เพิ่มทุก 100 mg/dL → Na ลด 1.6 mEq/L",
+    "SIADH: euvolemic, urine osm สูง, urine Na สูง → จำกัดน้ำ · CSW: volume ต่ำ → ให้ Na และน้ำ",
+    "Symptomatic hyponatremia → 3% NaCl · แก้ไม่เกิน 12 mEq/L/24 ชม. (เสี่ยงสูง ≤8)",
+    "แก้ hyponatremia เร็วเกิน → osmotic demyelination · แก้ hypernatremia เร็วเกิน → cerebral edema",
+    "Water deficit = TBW × (Na − 140)/140",
+    "Hypernatremia เกิดในคนที่เข้าถึงน้ำไม่ได้ — คนไข้ติดเตียง/ใส่ท่อ"
+   ],
+   "items": [
+    {
+     "id": "N12-02-2-1",
+     "kind": "mcq",
+     "topic": "Postoperative hyponatremia — SIADH",
+     "stem": "A 67-year-old man is on postoperative day 3 after a right upper lobectomy for small cell carcinoma found at surgery. He is alert, mildly nauseated, euvolemic on examination, and receiving 5% dextrose in 0.45% saline at 125 mL/h. Labs: Na 124 mmol/L, serum osmolality 258 mOsm/kg, urine osmolality 520 mOsm/kg, urine Na 62 mmol/L, normal TSH and cortisol. What is the most appropriate initial management?",
+     "choices": [
+      "Restrict free water and stop the hypotonic infusion",
+      "Give 3% sodium chloride bolus",
+      "Give 0.9% saline at 150 mL/h",
+      "Start desmopressin",
+      "Give furosemide alone and continue the current infusion"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมีลักษณะครบของ **SIADH**: euvolemic, serum osm ต่ำ, **urine osm สูงเกินควร** และ urine Na สูง โดยไทรอยด์และ cortisol ปกติ ปัจจัยกระตุ้นคือหลังผ่าตัด (ปวด คลื่นไส้ ยา) และ small cell carcinoma ร่วมกับได้ hypotonic fluid · ไม่มีอาการทางสมองรุนแรง → **จำกัดน้ำและหยุด hypotonic fluid** เป็นขั้นแรก แก้ Na ไม่เกิน 8–12 mEq/L ใน 24 ชม.\n- **3% NaCl** สงวนไว้ในรายที่มีอาการทางสมอง (ชัก ซึม)\n- **NSS** ใน SIADH ที่ urine osm สูงมาก Na จะถูกขับออกและน้ำถูกเก็บไว้ อาจทำให้ Na ต่ำลงอีก\n- **Desmopressin** คือ ADH ทำให้แย่ลง\n- **Furosemide** ใช้ร่วมกับจำกัดน้ำได้ แต่การให้ hypotonic fluid ต่อไปเป็นต้นเหตุ",
+     "pearl": "SIADH หลังผ่าตัด → หยุด hypotonic fluid + จำกัดน้ำ",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-2-2",
+     "kind": "mcq",
+     "topic": "Symptomatic hyponatremia",
+     "stem": "A 34-year-old woman is on postoperative day 1 after laparoscopic myomectomy and received 4 L of 5% dextrose in water overnight. She has a generalized tonic–clonic seizure. Na is 118 mmol/L (preoperative 139). Airway is secured and glucose is normal. What is the best next step?",
+     "choices": [
+      "Give 3% sodium chloride bolus with frequent sodium checks",
+      "Restrict fluids to 800 mL/day only",
+      "Give 0.45% sodium chloride",
+      "Give oral sodium chloride tablets",
+      "Give tolvaptan orally"
+     ],
+     "answer": 0,
+     "explain": "นี่คือ **acute (น้อยกว่า 48 ชม.) symptomatic hyponatremia** จาก ADH หลังผ่าตัดร่วมกับ D5W ปริมาณมาก หญิงวัยเจริญพันธุ์เสี่ยงสมองบวมรุนแรง ผู้ป่วย **ชัก** = ภาวะฉุกเฉิน ต้องให้ **3% NaCl** เพื่อเพิ่ม Na อย่างรวดเร็วในช่วงแรก (เพิ่มราว 4–6 mEq/L ก็มักหยุดชักและลดสมองบวม) แล้วติดตาม Na ทุก 1–2 ชม. ไม่ให้เกินเพดาน 24 ชม.\n- **จำกัดน้ำอย่างเดียว** ช้าเกินไปสำหรับผู้ป่วยที่ชัก\n- **0.45% NaCl** เป็น hypotonic ต่อปัสสาวะเข้มข้นของผู้ป่วย อาจทำให้ Na ต่ำลง\n- **Salt tablets** ช้าเกินและให้ทางปากไม่ได้ขณะชัก\n- **Tolvaptan** ไม่ใช่ยาสำหรับภาวะฉุกเฉินที่มีชัก และคาดเดาผลได้ยาก",
+     "pearl": "Hyponatremia + ชัก/ซึม → 3% NaCl ทันที",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-2-3",
+     "kind": "mcq",
+     "topic": "Osmotic demyelination",
+     "stem": "A 52-year-old man with chronic alcohol use and malnutrition presents with vomiting for one week. Na is 109 mmol/L. He is given isotonic saline and his Na rises to 126 mmol/L within 24 hours. Four days later he develops dysarthria, dysphagia and spastic quadriparesis. Which complication is most likely?",
+     "choices": [
+      "Osmotic demyelination syndrome",
+      "Wernicke encephalopathy",
+      "Cerebral edema",
+      "Subarachnoid hemorrhage from hypernatremia",
+      "Guillain–Barré syndrome"
+     ],
+     "answer": 0,
+     "explain": "Na เพิ่ม 17 mEq/L ใน 24 ชม. ในผู้ป่วย **chronic hyponatremia ที่เสี่ยงสูง** (สุรา ขาดอาหาร) สมองที่ปรับ osmolyte ไปแล้วถูกดึงน้ำออกเร็วเกิน → **osmotic demyelination (central pontine myelinolysis)** อาการเกิดหลังแก้ 2–6 วัน: dysarthria, dysphagia, quadriparesis, locked-in · ป้องกันด้วยการแก้ไม่เกิน 12 (กลุ่มเสี่ยงสูงไม่เกิน 8) mEq/L/24 ชม. ถ้าเร็วเกินให้ D5W/desmopressin ลด Na กลับ\n- **Wernicke** (ขาด thiamine) ให้ ophthalmoplegia, ataxia, confusion ไม่ใช่ quadriparesis แบบนี้\n- **Cerebral edema** เกิดจากการแก้ hypernatremia เร็ว หรือจาก hyponatremia เฉียบพลันเอง\n- **SAH จาก hypernatremia** ไม่เกี่ยวกับผู้ป่วยรายนี้\n- **GBS** เป็น ascending flaccid paralysis หลังติดเชื้อ ไม่สัมพันธ์กับการแก้ Na",
+     "pearl": "Chronic hypoNa แก้เกิน 12 (กลุ่มเสี่ยงเกิน 8)/24 ชม. → osmotic demyelination",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-2-4",
+     "kind": "mcq",
+     "topic": "Hypernatremia water deficit",
+     "stem": "An 80-year-old bedridden man (weight 60 kg) is admitted from a nursing home with fever and pneumonia. He has dry mucous membranes but blood pressure 128/72 mmHg after 1 L of saline. Na is 158 mmol/L. Using total body water of 50% of body weight, approximately how much free water deficit should be replaced?",
+     "choices": [
+      "About 3.9 L",
+      "About 4.6 L",
+      "About 7.7 L",
+      "About 1.5 L",
+      "About 0.4 L"
+     ],
+     "answer": 0,
+     "explain": "สูตร **water deficit = TBW × (Na − 140)/140** · ผู้ชายสูงอายุใช้ TBW ราว 50% → 0.5 × 60 = 30 L · deficit = 30 × (158 − 140)/140 = 30 × 0.129 ≈ **3.9 L** · ทดแทนใน 48–72 ชม. ด้วย free water (D5W หรือน้ำทางสาย) บวก maintenance/insensible loss (ไข้ทำให้เสียมากขึ้น) และลด Na ไม่เกินราว 10–12 mEq/L/วัน\n- **4.6 L** ใช้ TBW 60% ซึ่งเป็นค่าของชายหนุ่ม ผู้สูงอายุมีน้ำในร่างกายน้อยกว่า\n- **7.7 L** ได้จากหารด้วย 70 แทน 140\n- **1.5 L** ใช้ปริมาตร ECF (20% ของน้ำหนัก) แทน TBW ทั้งที่น้ำเปล่ากระจายทุกช่อง\n- **0.4 L** ใช้ plasma volume (5%) แทน TBW ต่ำเกินจริงมาก",
+     "pearl": "Water deficit = TBW × (Na − 140)/140 · ผู้สูงอายุ TBW ต่ำกว่า 60%",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-02-3",
+   "title": "Potassium, calcium, magnesium และ phosphate",
+   "summary": "ความผิดปกติของ K, Ca, Mg, PO₄ ที่พบบ่อยในผู้ป่วยศัลยกรรมมีอาการ EKG และการรักษาอย่างไร โดยเฉพาะภาวะที่อันตรายถึงชีวิต",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 3 — Composition changes; correction of life-threatening electrolyte abnormalities (Tables 3-5, 3-6, 3-14, 3-15)",
+   "md": "### Potassium: 98% อยู่ในเซลล์\nK⁺ ปกติ 3.5–5.0 mEq/L อยู่ใน ECF เพียง **2%** การเคลื่อนเล็กน้อยระหว่างเซลล์จึงเปลี่ยนระดับในเลือดมาก\n- **ดัน K เข้าเซลล์**: insulin, β2-agonist, **alkalosis** (pH เพิ่ม 0.1 → K ลดราว 0.3)\n- **ดึง K ออก**: acidosis, hyperosmolality (น้ำตาลสูง, mannitol), เซลล์แตก (hemolysis, **rhabdomyolysis, crush injury**, tumor lysis), succinylcholine ในผู้ป่วย burns/denervation\n\n**Hypokalemia** พบบ่อยกว่ามากในผู้ป่วยศัลยกรรม: เสีย GI (ท้องเสีย, fistula, NG/อาเจียน — ร่วมกับไตเสีย K จาก aldosterone), diuretic, alkalosis, insulin, refeeding, **hypomagnesemia**\n- อาการ: **ileus**, อ่อนแรง, reflex ลด, arrhythmia (โดยเฉพาะผู้ที่ได้ digoxin) · EKG: **U wave**, T แบน, ST depression\n- รักษา: ทางปากในรายไม่รุนแรง · IV **ไม่เกิน 10 mEq/ชม. ทาง peripheral (ไม่มี monitor)** · ถึง 40 mEq/ชม. ทาง central line พร้อม **EKG monitor** · ระวังในผู้ป่วยปัสสาวะออกน้อย\n- **ถ้า Mg ต่ำ ต้องแก้ Mg ก่อน/พร้อมกัน** ไม่เช่นนั้นไตยังเสีย K ต่อ\n\n### Hyperkalemia: ทำตามลำดับ \"ป้องกันหัวใจ → ดันเข้าเซลล์ → เอาออก\"\nสาเหตุ: ไตวาย, ยา (ACEi/ARB, spironolactone, NSAIDs), ให้เลือดมาก, เซลล์แตก, acidosis\n- อาการ: อ่อนแรงแบบ ascending, คลื่นไส้, arrhythmia/cardiac arrest\n- EKG ตามลำดับ: **peaked T** → PR ยาว/P แบน → **QRS กว้าง** → sine wave → VF\n\n| ขั้น | ยา | เริ่มออกฤทธิ์/หมายเหตุ |\n|---|---|---|\n| ป้องกันกล้ามเนื้อหัวใจ | **10% calcium gluconate** (หรือ CaCl₂) 10 mL IV | ไม่ลด K · ให้ทันทีเมื่อมี EKG ผิดปกติ · ระวังใน digoxin |\n| ดัน K เข้าเซลล์ | **regular insulin 10 U + glucose** (D50 1 amp) | 15–30 นาที อยู่ได้ไม่กี่ชั่วโมง |\n| | β2-agonist (salbutamol nebulized 10–20 mg) · NaHCO₃ (ถ้ามี acidosis) | เสริม |\n| เอาออกจากร่างกาย | loop diuretic, cation-exchange resin (Kayexalate, ยาใหม่ patiromer/SZC), **hemodialysis** | dialysis = แน่นอนที่สุดในไตวาย |\n\nทุกขั้น: หยุด K ใน IV fluid/TPN และยาที่เป็นสาเหตุ · มาตรการดันเข้าเซลล์ได้ผลชั่วคราวราว 1–4 ชม.\n\n### Calcium: ดูที่ ionized\nCa ในเลือด: จับโปรตีน 40% · จับ anion 10% · **ionized 50%** (ส่วนที่ทำงาน) · ปกติ total 8.5–10.5 mg/dL\n- **Corrected Ca** = measured Ca + 0.8 × (4 − albumin) · ดีที่สุดคือวัด **ionized Ca** โดยตรง\n- **Alkalosis** เพิ่มการจับโปรตีน → ionized Ca ลด (เช่น hyperventilation) · acidosis ทำตรงข้าม\n\n**Hypocalcemia** สาเหตุในศัลยกรรม: **หลังผ่าตัดไทรอยด์/พาราไทรอยด์** (hypoparathyroidism, hungry bone), **pancreatitis** (saponification กับกรดไขมัน), **massive transfusion (citrate จับ Ca)**, necrotizing soft tissue infection, ไตวาย, Mg ต่ำ, tumor lysis/rhabdomyolysis (phosphate สูงไปจับ Ca)\n- อาการ: ชาปลายนิ้ว/รอบปาก, ตะคริว, **Chvostek** (เคาะ facial nerve แล้วมุมปากกระตุก), **Trousseau** (พัน cuff แล้วมือจีบ = carpopedal spasm), laryngospasm/stridor, ชัก · EKG: **QT ยาว**\n- รักษา: อาการ → **10% calcium gluconate IV** · แก้ Mg ด้วย (hypoCa ดื้อถ้า Mg ต่ำ)\n\n**Hypercalcemia** — ผู้ป่วยนอก: **primary hyperparathyroidism** · ผู้ป่วยใน: **มะเร็ง** (bone metastasis, PTHrP) · อาการ \"stones, bones, abdominal groans, psychic moans\" + polyuria/ขาดน้ำ · EKG: **QT สั้น** · มักมีอาการเมื่อมากกว่า 12 mg/dL, วิกฤตที่ 15 mg/dL · รักษา: **ให้ NSS คืนปริมาตร** แล้วจึงพิจารณา loop diuretic, bisphosphonate, calcitonin\n\n### Magnesium และ Phosphate\n**Hypomagnesemia** พบบ่อยใน ICU: สุรา, ขาดอาหาร, TPN ที่ไม่เติม Mg, ท้องเสีย/fistula, ยา (diuretic, aminoglycoside, amphotericin, cisplatin, PPI) · อาการคล้าย Ca ต่ำ: reflex ไว, tremor, tetany, ชัก, **torsades de pointes** · ทำให้ **K และ Ca ต่ำแก้ไม่ขึ้น** · รักษา: MgSO₄ 1–2 g IV ใน 15 นาที (torsades: ให้เร็วภายใต้ EKG monitor)\n\n**Hypermagnesemia** พบน้อย: ไตวาย + ยาลดกรด/ยาระบายที่มี Mg, การรักษา preeclampsia · reflex หาย, หายใจกด, ความดันต่ำ, หัวใจหยุด · รักษา: หยุดแหล่ง Mg, **calcium gluconate**, dialysis\n\n**Hypophosphatemia**: ส่วนใหญ่จาก **intracellular shift** — **refeeding syndrome**, insulin, respiratory alkalosis, hungry bone syndrome · อาการเมื่อระดับต่ำมาก: กล้ามเนื้ออ่อนแรง (รวมกระบังลม → หย่าเครื่องช่วยหายใจไม่ได้), หัวใจบีบตัวลด, hemolysis, สับสน (ATP และ 2,3-DPG ต่ำ)\n\n**Hyperphosphatemia**: ไตวาย, เซลล์แตก (rhabdomyolysis, tumor lysis), hypoparathyroidism · จับ Ca → hypocalcemia และ metastatic calcification · รักษาด้วย phosphate binder, dialysis\n\n| ตัว | ต่ำ — อาการเด่น | สูง — อาการเด่น |\n|---|---|---|\n| K | ileus, อ่อนแรง, U wave | peaked T, QRS กว้าง, arrest |\n| Ca | Chvostek/Trousseau, QT ยาว | stones/bones/groans, QT สั้น, polyuria |\n| Mg | tetany, torsades, K/Ca ต่ำดื้อ | reflex หาย, หายใจกด |\n| PO₄ | หายใจล้มเหลว, hemolysis (refeeding) | Ca ต่ำ, calcification |\n",
+   "pearls": [
+    "Hyperkalemia + EKG ผิดปกติ → calcium gluconate ก่อน แล้ว insulin + glucose แล้วเอา K ออก",
+    "KCl IV ทาง peripheral ไม่เกิน 10 mEq/ชม. · ถึง 40 mEq/ชม. ต้องมี EKG monitor/central line",
+    "K หรือ Ca ต่ำที่แก้ไม่ขึ้น → เช็กและแก้ Mg",
+    "Corrected Ca = Ca + 0.8 × (4 − albumin) · ดีที่สุดวัด ionized Ca",
+    "หลัง thyroidectomy ชารอบปาก + Chvostek/Trousseau → hypocalcemia → Ca gluconate IV",
+    "Hypercalcemia: ให้ NSS ก่อนเสมอ · primary HPT (OPD) vs malignancy (IPD)",
+    "Hypophosphatemia รุนแรง = refeeding · หย่าเครื่องช่วยหายใจไม่ได้"
+   ],
+   "mnem": [
+    {
+     "name": "C-BIG-K",
+     "what": "ลำดับรักษา hyperkalemia",
+     "lines": [
+      [
+       "C",
+       "Calcium gluconate — กันหัวใจ"
+      ],
+      [
+       "B",
+       "β2-agonist / bicarbonate — ดันเข้าเซลล์"
+      ],
+      [
+       "I",
+       "Insulin"
+      ],
+      [
+       "G",
+       "Glucose (กันน้ำตาลต่ำ)"
+      ],
+      [
+       "K",
+       "Kayexalate/resin, diuretic, dialysis — เอา K ออก"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-02-3-1",
+     "kind": "mcq",
+     "topic": "Hyperkalemia with ECG changes",
+     "stem": "A 64-year-old man with diabetic nephropathy is on postoperative day 2 after below-knee amputation. He feels weak. K is 7.2 mmol/L (non-hemolyzed) and the ECG shows peaked T waves with a widened QRS complex. Blood pressure is 140/80 mmHg. What is the first drug to give?",
+     "choices": [
+      "Intravenous calcium gluconate",
+      "Sodium polystyrene sulfonate orally",
+      "Intravenous furosemide",
+      "Intravenous regular insulin without glucose",
+      "Oral potassium citrate"
+     ],
+     "answer": 0,
+     "explain": "Hyperkalemia ที่มี **EKG เปลี่ยน (peaked T, QRS กว้าง)** เสี่ยงหัวใจหยุดเต้น ขั้นแรกต้อง **stabilize กล้ามเนื้อหัวใจ** ด้วย **IV calcium gluconate** (ออกฤทธิ์ภายในไม่กี่นาที ไม่ลดระดับ K) แล้วตามด้วย insulin + glucose และ β2-agonist เพื่อดัน K เข้าเซลล์ และวิธีเอา K ออก (dialysis ในผู้ป่วยไตเสื่อม)\n- **Kayexalate** ออกฤทธิ์ช้าเป็นชั่วโมง ไม่ใช่ขั้นแรก\n- **Furosemide** ช่วยขับ K ได้ช้าและไม่แน่นอนในไตเสื่อม\n- **Insulin โดยไม่ให้ glucose** เสี่ยงน้ำตาลต่ำ และยังไม่ใช่ยาตัวแรกเมื่อ EKG ผิดปกติ\n- **Potassium citrate** เพิ่ม K เป็นอันตราย",
+     "pearl": "Hyperkalemia + EKG เปลี่ยน → calcium gluconate IV ก่อนเสมอ",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-3-2",
+     "kind": "mcq",
+     "topic": "Refractory hypokalemia",
+     "stem": "A 46-year-old woman with a high-output enterocutaneous fistula has K of 2.8 mmol/L despite receiving 160 mEq of KCl over the past 2 days. Her urine output is good and she is not on diuretics. Which additional abnormality most likely needs correction for potassium repletion to succeed?",
+     "choices": [
+      "Hypomagnesemia",
+      "Hypercalcemia",
+      "Hypernatremia",
+      "Hyperphosphatemia",
+      "Hypoalbuminemia"
+     ],
+     "answer": 0,
+     "explain": "**Magnesium** จำเป็นต่อการปิด ROMK channel ในท่อไต เมื่อ Mg ต่ำ ไตจะ **เสีย K ไปทางปัสสาวะต่อเนื่อง** การให้ K อย่างเดียวจึงไม่ขึ้น ผู้ป่วย fistula เสีย Mg ทางลำไส้ร่วมด้วยบ่อย ต้อง **แก้ Mg ก่อนหรือพร้อมกัน** (เช่น MgSO₄ IV) แล้ว K จะแก้ได้\n- **Hypercalcemia** ไม่ใช่สาเหตุของ K ต่ำแก้ไม่ขึ้น\n- **Hypernatremia** ไม่ทำให้ไตเสีย K\n- **Hyperphosphatemia** ไม่เกี่ยว และผู้ป่วย fistula มักมี phosphate ต่ำ\n- **Hypoalbuminemia** มีผลต่อการแปลผล Ca ไม่ใช่ K",
+     "pearl": "K ต่ำแก้ไม่ขึ้น → แก้ Mg",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-3-3",
+     "kind": "mcq",
+     "topic": "Post-thyroidectomy hypocalcemia",
+     "stem": "A 38-year-old woman develops perioral numbness and tingling in her fingers 24 hours after total thyroidectomy for Graves disease. Tapping anterior to the ear causes twitching of the upper lip. Ionized calcium is 0.85 mmol/L (low). ECG shows a prolonged QT interval. What is the most appropriate immediate treatment?",
+     "choices": [
+      "Intravenous calcium gluconate",
+      "Oral vitamin D alone",
+      "Intravenous magnesium sulfate alone",
+      "Intravenous normal saline and furosemide",
+      "Oral levothyroxine"
+     ],
+     "answer": 0,
+     "explain": "อาการชารอบปาก ปลายนิ้ว **Chvostek sign** บวก และ QT ยาว หลัง total thyroidectomy = **symptomatic hypocalcemia** จาก parathyroid ถูกกระทบ (hypoparathyroidism ชั่วคราวหรือถาวร) และ hungry bone ในผู้ป่วย Graves การรักษาทันทีคือ **IV calcium gluconate** แล้วตามด้วยแคลเซียมทางปาก ± calcitriol\n- **Vitamin D ทางปากอย่างเดียว** ออกฤทธิ์ช้า ไม่พอสำหรับผู้ป่วยมีอาการ\n- **MgSO₄ อย่างเดียว** ควรให้ถ้า Mg ต่ำ แต่ไม่ใช่การรักษาหลักของ hypocalcemia จาก hypoparathyroidism\n- **NSS + furosemide** คือการรักษา hypercalcemia\n- **Levothyroxine** ไม่ได้แก้ Ca",
+     "pearl": "หลัง thyroidectomy + Chvostek/Trousseau → IV calcium gluconate",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-3-4",
+     "kind": "mcq",
+     "topic": "Hypercalcemia of malignancy",
+     "stem": "A 61-year-old woman with metastatic breast cancer presents with confusion, polyuria, constipation and abdominal pain. She is clinically dehydrated. Corrected calcium is 14.8 mg/dL, creatinine 1.6 mg/dL (baseline 0.9). ECG shows a short QT interval. What is the most appropriate first step in management?",
+     "choices": [
+      "Intravenous isotonic saline to restore volume",
+      "Intravenous furosemide before any fluid",
+      "Intravenous calcium gluconate",
+      "Oral phosphate binders",
+      "Thiazide diuretic"
+     ],
+     "answer": 0,
+     "explain": "Hypercalcemia ทำให้ไตเสียความสามารถในการทำปัสสาวะเข้มข้น (nephrogenic DI) → **polyuria และขาดน้ำ** ซึ่งลด GFR ทำให้ไตขับ Ca ได้น้อยลง วงจรนี้ต้องตัดด้วย **IV isotonic saline** คืนปริมาตรก่อน เพื่อเพิ่ม GFR และการขับ Ca แล้วจึงให้ bisphosphonate/calcitonin และรักษามะเร็ง\n- **Furosemide ก่อนให้น้ำ** ทำให้ขาดน้ำหนักขึ้น ใช้ได้หลังคืนปริมาตรแล้วเท่านั้น (ในผู้ป่วยที่น้ำเกิน)\n- **Calcium gluconate** เพิ่ม Ca อันตราย\n- **Phosphate binder** ใช้กับ phosphate สูง ไม่ใช่ Ca สูง\n- **Thiazide** ลดการขับ Ca ทางไต ทำให้ Ca สูงขึ้น",
+     "pearl": "Hypercalcemia → NSS ก่อนเสมอ แล้วค่อย bisphosphonate",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-02-4",
+   "title": "Acid–base disorders ในผู้ป่วยศัลยกรรม",
+   "summary": "จะอ่าน ABG อย่างเป็นระบบอย่างไร และภาวะกรด-ด่างแบบไหนที่บอกโรคทางศัลยกรรม เช่น gastric outlet obstruction หรือลำไส้ขาดเลือด",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 3 — Acid-base balance, metabolic derangements (Tables 3-7 to 3-11)",
+   "md": "### อ่าน ABG เป็นขั้นตอน\n1. ดู **pH**: น้อยกว่า 7.35 = acidemia · มากกว่า 7.45 = alkalemia\n2. หาต้นเหตุ: **HCO₃⁻** (metabolic, ปกติ 22–26) หรือ **PaCO₂** (respiratory, ปกติ 35–45) ตัวไหนเปลี่ยนไปทางเดียวกับ pH\n3. ตรวจว่าชดเชยเหมาะสมหรือไม่ (ถ้าไม่ตรง = mixed disorder)\n4. ถ้าเป็น metabolic acidosis → คำนวณ **anion gap**\n\n| ภาวะ | ปัญหาแรก | การชดเชยที่คาด |\n|---|---|---|\n| Metabolic acidosis | HCO₃⁻ ↓ | **PaCO₂ = 1.5 × HCO₃⁻ + 8 (±2)** (Winters) |\n| Metabolic alkalosis | HCO₃⁻ ↑ | PaCO₂ = 0.7 × HCO₃⁻ + 21 |\n| Acute respiratory acidosis | PaCO₂ ↑ | ΔpH = 0.008 × (PaCO₂ − 40) |\n| Chronic respiratory acidosis | PaCO₂ ↑ | ΔpH = 0.003 × (PaCO₂ − 40) |\n| Acute respiratory alkalosis | PaCO₂ ↓ | ΔpH = 0.008 × (40 − PaCO₂) |\n\n> ปอดชดเชยภาวะ metabolic **ภายในนาที** แต่ไตชดเชยภาวะ respiratory **ช้า เริ่มราว 6 ชม. และใช้หลายวัน** → จึงแยก acute/chronic respiratory ได้\n\n### Metabolic acidosis และ anion gap\n**AG = Na − (Cl + HCO₃⁻)** ปกติราว 8–12 · albumin ต่ำทำให้ AG ต่ำลวง → **AG ที่แก้แล้ว = AG + 2.5 × (4.5 − albumin)** (Schwartz)\n\n| High AG | Normal AG (hyperchloremic) |\n|---|---|\n| **Lactic acidosis** (shock, ลำไส้ขาดเลือด, sepsis) | **ท้องเสีย**, pancreatic/small-bowel fistula, ileostomy output สูง |\n| **Ketoacidosis** (DKA, สุรา, อดอาหาร) | **NSS ปริมาณมาก** |\n| **ไตวาย** (organic acids คั่ง) | Renal tubular acidosis, acetazolamide |\n| สารพิษ: methanol, ethylene glycol, salicylate | Ureterosigmoidostomy/ileal conduit |\n\n- สาเหตุที่พบบ่อยที่สุดของ metabolic acidosis รุนแรงในผู้ป่วยศัลยกรรมคือ **lactic acidosis จาก hypoperfusion** → การรักษาคือ **คืน perfusion** (สารน้ำ เลือด แก้แหล่งติดเชื้อ ผ่าตัดลำไส้ที่ตาย) **ไม่ใช่ให้ bicarbonate**\n- Bicarbonate ไม่ลดอัตราตายใน lactic acidosis/DKA และทำให้ CO₂ เพิ่ม (แย่ในผู้ป่วย ARDS) และ intracellular acidosis แย่ลง\n- Lactate ที่ไม่ลดลงหรือ acidosis ที่ไม่ดีขึ้นทั้งที่ resuscitate แล้ว → นึกถึง **mesenteric ischemia, necrotizing infection, abdominal compartment syndrome**\n\n### Metabolic alkalosis — แบบคลาสสิกในศัลยกรรม\nตัวอย่างคลาสสิก: **gastric outlet obstruction** (peptic stricture, มะเร็งกระเพาะ, pyloric stenosis ในทารก) หรือ NG suction นาน → เสีย **HCl** → **hypochloremic, hypokalemic metabolic alkalosis**\nลำดับเหตุการณ์ในไต:\n1. ระยะแรก ไตขับ HCO₃⁻ (ปัสสาวะด่าง)\n2. ขาดน้ำ → **aldosterone** ↑ → ดูด Na แลกกับขับ K⁺ และ H⁺\n3. K ในร่างกายหมด → ไตต้องขับ H⁺ แทน → **paradoxical aciduria** (ปัสสาวะเป็นกรดทั้งที่เลือดเป็นด่าง)\n4. Cl ต่ำทำให้ไตขับ HCO₃⁻ ไม่ได้\n- รักษา: **0.9% NaCl** (ให้ทั้ง volume และ Cl⁻) แล้ว **KCl** เมื่อปัสสาวะออก · พิจารณา PPI ลดการเสียกรดทาง NG\n- **Urine Cl** แยกสาเหตุ: น้อยกว่า 20 = chloride-responsive (อาเจียน, NG, diuretic ระยะหลัง) · มากกว่า 20 = chloride-resistant (mineralocorticoid excess, K ต่ำรุนแรง)\n- สาเหตุอื่นในศัลยกรรม: diuretic, **citrate จากเลือดที่ให้มาก**, acetate ใน TPN, ยาลดกรด\n\n### Respiratory acid–base ในผู้ป่วยหลังผ่าตัด\n**Respiratory acidosis** (hypoventilation): **opioid/ยาสลบค้าง**, ปวดแผลผ่าตัดช่องท้องส่วนบน/ทรวงอกจนหายใจตื้น, atelectasis, เสมหะอุด, pneumonia, ท้องอืดมาก/**abdominal compartment syndrome** ดันกระบังลม, CNS injury · รักษาที่สาเหตุ + ช่วยหายใจ (NIV/ใส่ท่อ)\n\n**Respiratory alkalosis** (hyperventilation): ปวด, กังวล, ไข้, **sepsis ระยะแรก (gram-negative)**, hypoxemia (PE, pneumonia), ตั้งเครื่องช่วยหายใจเร็วเกิน, ตับวาย · CO₂ ต่ำเฉียบพลันทำให้ K, PO₄ เข้าเซลล์และ ionized Ca ลด → ชา ตะคริว\n\n### ตัวอย่างการแปลผล\nผู้ป่วยลำไส้ขาดเลือด: pH 7.21, PaCO₂ 28, HCO₃⁻ 11, Na 138, Cl 102\n- pH ต่ำ + HCO₃⁻ ต่ำ = **metabolic acidosis**\n- คาด PaCO₂ = 1.5 × 11 + 8 = 24.5 ± 2 → วัดได้ 28 สูงกว่าที่คาด = มี **respiratory acidosis ร่วม** (เหนื่อยล้า/ปวดจนหายใจไม่พอ)\n- AG = 138 − (102 + 11) = **25** → high AG → **lactic acidosis**\n- การรักษา: resuscitate, ผ่าตัดเอาลำไส้ตายออก, เตรียมช่วยหายใจ\n",
+   "pearls": [
+    "Winters: expected PaCO₂ = 1.5 × HCO₃⁻ + 8 ± 2 · ไม่ตรง = mixed disorder",
+    "AG = Na − (Cl + HCO₃⁻) · albumin ต่ำทำให้ AG ต่ำลวง",
+    "High AG: lactate, ketone, ไตวาย, สารพิษ · Normal AG: ท้องเสีย, fistula, NSS มาก, RTA",
+    "Lactic acidosis จาก shock → แก้ perfusion ไม่ใช่ให้ bicarbonate",
+    "Gastric outlet obstruction → hypochloremic hypokalemic metabolic alkalosis + paradoxical aciduria → NSS + KCl",
+    "ไตชดเชยภาวะ respiratory ช้า (เริ่ม ~6 ชม. ใช้หลายวัน)",
+    "Acidosis ไม่ดีขึ้นทั้งที่ resuscitate → หา dead bowel/necrotizing infection/ACS"
+   ],
+   "items": [
+    {
+     "id": "N12-02-4-1",
+     "kind": "mcq",
+     "topic": "Paradoxical aciduria in gastric outlet obstruction",
+     "stem": "A 58-year-old man has had persistent vomiting of undigested food for 10 days due to a pyloric channel ulcer with stenosis. Labs: Na 132, K 2.6, Cl 80, HCO3 40 mmol/L; arterial pH 7.55. Urine pH is 5.5. Which mechanism best explains the acidic urine?",
+     "choices": [
+      "Renal hydrogen ion secretion in exchange for sodium because of volume depletion and potassium depletion",
+      "Coexisting distal renal tubular acidosis",
+      "Respiratory compensation with hyperventilation",
+      "Loss of bicarbonate in vomitus",
+      "Ketoacidosis from starvation dominating the urine"
+     ],
+     "answer": 0,
+     "explain": "อาเจียนจาก **gastric outlet obstruction** เสียเฉพาะน้ำกระเพาะ (HCl) → hypochloremic metabolic alkalosis · ร่างกายขาดน้ำ → **aldosterone** ↑ ดูด Na กลับโดยแลกกับ K⁺ และ H⁺ · เมื่อ K ในร่างกายหมด ไตต้องขับ **H⁺ แทน K⁺** → ปัสสาวะเป็นกรดแม้เลือดเป็นด่าง = **paradoxical aciduria** · แก้ด้วย NSS และ KCl\n- **Distal RTA** ทำให้ metabolic acidosis ไม่ใช่ alkalosis\n- **Hyperventilation** ผิดทิศ การชดเชย alkalosis คือหายใจช้าลง (PaCO₂ สูง)\n- **เสีย bicarbonate ในอาเจียน** ผิด น้ำกระเพาะไม่มี HCO₃⁻ (เสีย H⁺ และ Cl⁻)\n- **Starvation ketosis** ไม่ได้อธิบายภาพนี้และ urine pH ต่ำในบริบทนี้เกิดจากกลไกของไตเป็นหลัก",
+     "pearl": "GOO: Cl ต่ำ K ต่ำ HCO₃ สูง + ปัสสาวะเป็นกรด = paradoxical aciduria",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-4-2",
+     "kind": "mcq",
+     "topic": "High anion gap acidosis in surgical patient",
+     "stem": "A 74-year-old woman with atrial fibrillation presents with 8 hours of severe periumbilical pain out of proportion to a soft abdomen. BP 96/60 mmHg. Labs: Na 140, Cl 100, HCO3 12 mmol/L, albumin 4.0 g/dL; pH 7.22; PaCO2 26 mmHg; glucose 130 mg/dL; creatinine 1.0 mg/dL. Which is the most likely acid–base diagnosis and source?",
+     "choices": [
+      "High anion gap metabolic acidosis from lactate due to mesenteric ischemia",
+      "Normal anion gap metabolic acidosis from diarrhea",
+      "Metabolic acidosis from renal failure with uncompensated respiratory acidosis",
+      "Diabetic ketoacidosis with appropriate compensation",
+      "Primary respiratory alkalosis with metabolic compensation"
+     ],
+     "answer": 0,
+     "explain": "AG = 140 − (100 + 12) = **28** (สูง) · Winters: คาด PaCO₂ = 1.5 × 12 + 8 = 26 ± 2 → วัดได้ 26 = ชดเชยเหมาะสม · ผู้ป่วย AF ปวดท้องรุนแรงไม่สัมพันธ์กับการตรวจ (pain out of proportion) และช็อก → **acute mesenteric ischemia** ทำให้ **lactic acidosis** ต้อง resuscitate และ CT angiography/ผ่าตัดด่วน\n- **Normal AG จากท้องเสีย** ไม่ตรงเพราะ AG สูง\n- **Renal failure** creatinine ปกติ และไม่มี respiratory acidosis (PaCO₂ ต่ำตามที่คาด)\n- **DKA** น้ำตาลเพียง 130 ไม่เข้ากับ DKA\n- **Primary respiratory alkalosis** ผิด pH ต่ำ แสดงว่าเป็น acidemia",
+     "pearl": "AF + pain out of proportion + high AG acidosis = lactic acidosis จาก mesenteric ischemia",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-4-3",
+     "kind": "mcq",
+     "topic": "Bicarbonate therapy in lactic acidosis",
+     "stem": "A 55-year-old man with septic shock from perforated diverticulitis has pH 7.18, HCO3 10 mmol/L and lactate 7 mmol/L. He is receiving crystalloid boluses and norepinephrine, and is being prepared for the operating room. A colleague suggests an infusion of sodium bicarbonate to normalize the pH. What is the most appropriate response?",
+     "choices": [
+      "Prioritize restoring perfusion and source control; routine bicarbonate does not improve outcome",
+      "Give bicarbonate to correct the pH to 7.40 before surgery",
+      "Give bicarbonate because it lowers PaCO2 and improves intracellular pH",
+      "Delay surgery until the lactate normalizes with bicarbonate",
+      "Replace all crystalloid with sodium bicarbonate solution"
+     ],
+     "answer": 0,
+     "explain": "Lactic acidosis จาก shock แก้ที่ **ต้นเหตุ**: คืน perfusion (สารน้ำ vasopressor) และ **source control** (ผ่าตัดเอาส่วนที่ทะลุออก) เมื่อ perfusion ดีขึ้นตับจะเผาผลาญ lactate กลับเป็น HCO₃⁻ เอง · การศึกษาพบว่า bicarbonate ไม่ลดการเสียชีวิตใน lactic acidosis และยังเพิ่ม CO₂ ซึ่งแพร่เข้าเซลล์ทำให้ intracellular acidosis แย่ลง (บางแนวทางพิจารณาเฉพาะ pH ต่ำมากร่วมกับ AKI)\n- **แก้ pH เป็น 7.40** ไม่จำเป็นและเสี่ยง Na เกิน volume เกิน ionized Ca ลด\n- **Bicarbonate ลด PaCO₂** ผิด มันเพิ่ม CO₂\n- **เลื่อนผ่าตัด** ทำให้ source control ช้าและแย่ลง\n- **ใช้ bicarbonate แทน crystalloid ทั้งหมด** ไม่มีหลักฐานและอันตราย",
+     "pearl": "Lactic acidosis → แก้ perfusion + source control ไม่ใช่ bicarbonate",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N12-02-4-4",
+     "kind": "mcq",
+     "topic": "Postoperative respiratory acidosis",
+     "stem": "A 69-year-old man is 6 hours after an open upper abdominal operation. He received multiple intravenous morphine doses for pain and is now drowsy with shallow breathing at 8/min. ABG: pH 7.24, PaCO2 62 mmHg, HCO3 26 mmol/L, PaO2 70 mmHg on 3 L/min oxygen. What is the acid–base disorder?",
+     "choices": [
+      "Acute respiratory acidosis",
+      "Chronic respiratory acidosis",
+      "Metabolic acidosis with respiratory compensation",
+      "Mixed metabolic and respiratory alkalosis",
+      "Acute respiratory alkalosis"
+     ],
+     "answer": 0,
+     "explain": "pH ต่ำและ **PaCO₂ สูง** (62) โดย HCO₃⁻ ยังปกติ = **acute respiratory acidosis** (ไตยังไม่ทันชดเชย ซึ่งต้องใช้เวลาเป็นวัน) · คาด ΔpH = 0.008 × (62 − 40) ≈ 0.18 → pH ≈ 7.22 ตรงกับที่วัด · สาเหตุ: **opioid กดการหายใจ** ร่วมกับปวดแผลช่องท้องส่วนบน → รักษาด้วย naloxone อย่างระมัดระวัง กระตุ้นหายใจ/ช่วยหายใจ และใช้ multimodal analgesia\n- **Chronic** ต้องมี HCO₃⁻ สูงขึ้นจากไตชดเชย และ pH ตกน้อยกว่านี้\n- **Metabolic acidosis** ต้องมี HCO₃⁻ ต่ำ\n- **Alkalosis** ทั้งสองแบบผิดเพราะ pH ต่ำ\n- **Respiratory alkalosis** ต้องมี PaCO₂ ต่ำ",
+     "pearl": "Opioid หลังผ่าตัด + PaCO₂ สูง + HCO₃ ปกติ = acute respiratory acidosis",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-02-MEQ1",
+   "part": "MEQ",
+   "topic": "Small-bowel obstruction with vomiting — volume deficit, hypokalemic metabolic alkalosis and postoperative hyponatremia",
+   "vignette": "หญิงไทยอายุ 62 ปี น้ำหนัก 55 kg เคยผ่าตัดมดลูกเมื่อ 10 ปีก่อน มาด้วยปวดท้องเป็นพัก ๆ อาเจียนบ่อยมา 4 วัน ไม่ผายลม 2 วัน\n\nPE: BT 37.4°C, BP 92/58 mmHg (นั่งแล้วหน้ามืด), PR 116/min · ปากแห้ง ตาลึก ท้องอืด เสียงลำไส้ high-pitched · ปัสสาวะ 10 mL/ชม.\n\n| Lab | ค่า |\n|---|---|\n| Na / K / Cl / HCO₃⁻ | 133 / 2.9 / 88 / 34 mmol/L |\n| BUN / Cr | 48 / 1.6 mg/dL |\n| ABG | pH 7.51, PaCO₂ 45 mmHg |\n| Urine Na / Cl | 12 / 8 mmol/L |\n\nAXR: dilated small bowel with air–fluid levels · CT: adhesive SBO ไม่มีสัญญาณขาดเลือด",
+   "questions": [
+    {
+     "q": "1. จงประเมินภาวะสารน้ำและอิเล็กโทรไลต์ และแปลผลกรด-ด่างของผู้ป่วย",
+     "a": "- **ECF volume deficit รุนแรง** (BP ต่ำ, orthostasis, HR เร็ว, ปัสสาวะน้อย, BUN:Cr สูง, urine Na ต่ำ) จากอาเจียนและ **third-space sequestration** ในลำไส้ที่อุดตัน\n- **Hypokalemic, hypochloremic metabolic alkalosis** (pH 7.51, HCO₃⁻ 34) · คาด PaCO₂ = 0.7 × 34 + 21 ≈ 45 → **ชดเชยเหมาะสม**\n- urine Cl น้อยกว่า 20 = **chloride-responsive** alkalosis\n- Na 133 ต่ำเล็กน้อย (ADH จาก hypovolemia)\n- เกณฑ์ให้คะแนน: volume deficit + เหตุผล (1) · แปลผล acid–base ครบ (2) · chloride-responsive (1)"
+    },
+    {
+     "q": "2. จงเขียนคำสั่งการให้สารน้ำใน 24 ชั่วโมงแรก พร้อมเป้าหมายการติดตาม",
+     "a": "- **NPO, NG tube decompression** (บันทึกปริมาณ)\n- **Bolus 0.9% NaCl 1–2 L** แล้วประเมินซ้ำ (เลือก NSS เพราะผู้ป่วย Cl ต่ำและ alkalosis)\n- ต่อด้วย isotonic สำหรับ maintenance (55 kg ≈ 100/50/20 = 1,000 + 500 + 700 = 2,200 mL/วัน) + **ทดแทน NG output mL ต่อ mL** ด้วย NSS + KCl\n- **KCl** เติมเมื่อปัสสาวะออก (เช่น 20–40 mEq/L) ทาง peripheral ไม่เกิน 10 mEq/ชม.; เช็ก Mg\n- ติดตาม: vital signs, **urine output 0.5–1 mL/kg/ชม.** (Foley), electrolyte ทุก 6–12 ชม., น้ำหนัก, สัญญาณ strangulation\n- เกณฑ์ให้คะแนน: ชนิดสารน้ำถูก (2) · ทดแทน ongoing loss (1) · K และเงื่อนไข (1) · เป้าหมาย (1)"
+    },
+    {
+     "q": "3. ทำไมผู้ป่วยรายนี้ alkalosis จะไม่หายถ้าให้แต่ KCl โดยไม่ให้ volume และ Cl⁻ และอธิบาย paradoxical aciduria ถ้าเกิดขึ้น",
+     "a": "- ขาดน้ำ → **aldosterone** ↑ → ไตดูด Na แลก K⁺/H⁺ ต่อเนื่อง\n- **Cl⁻ ต่ำ** → ไตต้องดูด Na คู่กับ HCO₃⁻ แทน Cl⁻ จึงขับ HCO₃⁻ ส่วนเกินไม่ได้\n- K ในร่างกายหมด → ไตขับ H⁺ แทน → ปัสสาวะเป็นกรดทั้งที่เลือดเป็นด่าง (**paradoxical aciduria**)\n- เมื่อให้ NSS: volume คืน aldosterone ลด และ Cl⁻ พอ → ไตขับ HCO₃⁻ ได้ alkalosis ดีขึ้น\n- เกณฑ์ให้คะแนน: บทบาท volume/aldosterone (1) · บทบาท Cl⁻ (1) · paradoxical aciduria (1)"
+    },
+    {
+     "q": "4. ผู้ป่วยไม่ดีขึ้นด้วย conservative treatment และได้รับการผ่าตัด adhesiolysis หลังผ่าตัดวันที่ 2 ได้ D5W 3 L/วัน ผู้ป่วยสับสนและชัก Na 117 mmol/L จงอธิบายสาเหตุ การรักษา และอัตราการแก้ที่ปลอดภัย",
+     "a": "- **Acute postoperative hyponatremia**: ADH หลั่งมากหลังผ่าตัด (ปวด คลื่นไส้ opioid) + ได้ **hypotonic fluid (D5W)** ปริมาณมาก → น้ำเกินเทียบ Na → สมองบวม\n- เป็นภาวะฉุกเฉิน: ดูแล ABC, **3% NaCl** bolus (เช่น 100–150 mL ซ้ำได้) เพื่อเพิ่ม Na ราว 4–6 mEq/L ให้หยุดชัก, หยุด D5W, ตรวจ Na ทุก 1–2 ชม.\n- อัตรา: Schwartz แนะนำเพิ่มไม่เกิน 1 mEq/L/ชม. ในรายมีอาการจนถึง 130 หรืออาการดีขึ้น และ **รวมไม่เกิน 12 mEq/L ใน 24 ชม.** (ผู้ป่วยเสี่ยงสูงไม่เกิน 8)\n- ภาวะแทรกซ้อนถ้าแก้เร็วเกินในรายเรื้อรัง = **osmotic demyelination**\n- ป้องกัน: ใช้ **isotonic fluid** ช่วงหลังผ่าตัด หลีกเลี่ยง D5W ปริมาณมาก ติดตาม Na\n- เกณฑ์ให้คะแนน: สาเหตุ (1) · 3% NaCl (2) · อัตราและเพดาน (1) · การป้องกัน (1)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 3"
+   ]
+  }
+ ],
+ "osce": []
+}

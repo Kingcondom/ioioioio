@@ -1,0 +1,313 @@
+{
+ "lec": "05",
+ "date": "Schwartz Ch 8, 9, 16",
+ "title": "Burns, wounds & bites in the ER",
+ "subtitle": "ในห้องฉุกเฉิน จะดูแลผู้ป่วยไฟไหม้ แผลฉีกขาด และแผลถูกสัตว์กัดอย่างไร ตั้งแต่ airway และการคำนวณสารน้ำ ไปจนถึงบาดทะยักและวัคซีนพิษสุนัขบ้าแบบไทย",
+ "objectives": [
+  "เรียนจบแล้วต้องประเมิน airway (inhalation injury, CO, cyanide) %TBSA และความลึกของแผลไหม้ได้ถูกต้อง",
+  "เรียนจบแล้วต้องคำนวณสารน้ำด้วย Parkland/ABA formula นับเวลาจากเวลาเกิดเหตุ และปรับตาม urine output ได้",
+  "เรียนจบแล้วต้องบอกข้อบ่งชี้ escharotomy และเกณฑ์ส่งต่อ burn center",
+  "เรียนจบแล้วต้องเตรียมและปิดแผลสดได้ถูกวิธี (ยาชา irrigation debridement การเลือกวิธีปิด ไหมและการตัดไหม)",
+  "เรียนจบแล้วต้องใช้ตาราง tetanus prophylaxis ตัดสินใจให้ toxoid และ TIG ได้ถูกต้อง",
+  "เรียนจบแล้วต้องจัดการแผลถูกสัตว์กัด ให้ antibiotic prophylaxis และ rabies PEP (วัคซีน + RIG) ตามประเภทการสัมผัสในบริบทไทยได้"
+ ],
+ "guidelines": [
+  "American Burn Association — Guidelines for burn center referral; ABA consensus fluid formula",
+  "ATLS 10th edition (2018) — Thermal injuries",
+  "ACIP/CDC Tetanus prophylaxis in wound management",
+  "WHO Rabies vaccines: WHO position paper (2018)",
+  "แนวทางเวชปฏิบัติโรคพิษสุนัขบ้า กรมควบคุมโรค กระทรวงสาธารณสุข และสถานเสาวภา สภากาชาดไทย",
+  "IDSA Practice Guidelines for Skin and Soft Tissue Infections (2014) — animal bites"
+ ],
+ "sections": [
+  {
+   "id": "n3-05-1",
+   "title": "Burn initial management: airway, fluids, escharotomy และการส่งต่อ",
+   "summary": "ผู้ป่วยไฟไหม้มาถึง ER ต้องจัดการ airway อย่างไร คำนวณสารน้ำเท่าไร และเมื่อไรต้องกรีด eschar หรือส่งต่อ",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 8 — Initial evaluation, burn size and depth, resuscitation, inhalation injury, escharotomy",
+   "md": "### ผู้ป่วยไฟไหม้คือผู้ป่วยบาดเจ็บ: เริ่มที่ ABCDE\n1. **หยุดการไหม้**: ถอดเสื้อผ้า เครื่องประดับ (ก่อนบวม) · แผลเล็ก **ล้างด้วยน้ำสะอาดอุณหภูมิห้องไหลผ่าน** (ห้ามน้ำแข็ง) · แผลใหญ่ **มากกว่า 20% TBSA ไม่ควร cool นาน** เพราะ hypothermia → ห่มผ้าสะอาดแห้งอุ่น\n2. **Primary survey ตาม ATLS** + secondary survey (ระเบิด กระโดดหนีไฟ รถชน มีบาดเจ็บร่วมได้)\n3. **IV ใหญ่** (แผลมากกว่า 40% ใส่ 2 เส้น) ผ่านผิวที่ไหม้ได้ถ้าจำเป็น, IO ถ้าเปิดไม่ได้ · แผลน้อยกว่า 15% ส่วนใหญ่ดื่มน้ำเองได้\n4. **ห้ามให้ antibiotic ป้องกัน** (เพิ่มเชื้อราและเชื้อดื้อยา) — ให้เพียง **tetanus prophylaxis** ตามประวัติ\n5. คุมปวดด้วย opioid IV ขนาดเล็ก ๆ ร่วม multimodal · ใส่ **Foley** วัดปัสสาวะในแผลใหญ่ · NG tube ในแผลใหญ่ (ileus) หรือใส่ท่อช่วยหายใจ\n\n### Airway: inhalation injury, CO และ cyanide\n- **อาการเตือนว่าทางเดินหายใจกำลังบวม**: **เสียงแหบ**, **stridor**, wheeze, **รู้สึกหายใจลำบาก** → **ใส่ท่อช่วยหายใจตั้งแต่เนิ่น** (orotracheal, ท่อขนาดใหญ่) ก่อนบวมจนใส่ไม่ได้\n- **ไหม้รอบปากและขนจมูกไหม้** อย่างเดียวยังไม่ใช่ข้อบ่งชี้ใส่ท่อ แต่เป็นสัญญาณให้ตรวจช่องปาก-คอหา mucosal injury, เขม่าในเสมหะ, ไหม้ในที่ปิด\n- **Carbon monoxide**: จับ Hb แน่นกว่า O2 ราว 200–250 เท่า · **pulse oximeter อ่านค่าสูงหลอก** → ต้องตรวจ **carboxyhemoglobin** จาก ABG · รักษาด้วย **100% O2** (ลด half-life จากราว 250 นาที เหลือ 40–60 นาที) · hyperbaric oxygen ประโยชน์ยังไม่ชัด\n- **Cyanide** (ไฟไหม้พลาสติก/ที่ปิด): **lactic acidosis รุนแรงที่ไม่ดีขึ้น** สติเปลี่ยน ST เปลี่ยน → **hydroxocobalamin** + 100% O2\n\n### ขนาดและความลึกของแผล\n**Rule of nines (ผู้ใหญ่)**: ศีรษะ 9%, แขนข้างละ 9%, ลำตัวหน้า 18%, ลำตัวหลัง 18%, ขาข้างละ 18%, perineum 1% · **ฝ่ามือรวมนิ้วของผู้ป่วย = 1%** ใช้กับแผลกระจาย · เด็กเล็ก (ต่ำกว่าราว 3 ปี) ศีรษะสัดส่วนใหญ่กว่า → ใช้ **Lund–Browder chart**\n- **ไม่นับ superficial (first-degree) burn** ใน TBSA และเช็ดเขม่าออกก่อนประเมิน · แพทย์ไม่ชำนาญมักประเมินแผลเล็กเกิน และแผลใหญ่ต่ำเกิน\n\n| ความลึก | ลักษณะ | ปวด | การหาย |\n|---|---|---|---|\n| **Superficial** (1st) | แดง ไม่มีตุ่มน้ำ | ปวด | 3–7 วัน ไม่มีแผลเป็น |\n| **Superficial partial** (2nd) | **ตุ่มน้ำ** ชมพู ชื้น กดแล้วซีด | **ปวดมาก** | ราว 2 สัปดาห์ ทำแผล |\n| **Deep partial** (2nd) | ขาวปนแดง แห้งกว่า กดซีดน้อย | ปวดน้อยลง | มากกว่า 3 สัปดาห์ → มัก **excision + graft** |\n| **Full thickness** (3rd) | **แข็งเหมือนหนัง** ขาว/ดำ ไม่ซีดเมื่อกด | **ไม่ปวด** | ต้อง **graft** |\n\n- แผลไหม้ \"ลึกขึ้น\" ได้ใน 48–72 ชม.แรก (zone of stasis) ถ้า resuscitation ไม่พอหรือติดเชื้อ\n\n### Fluid resuscitation: สูตรเป็นแค่จุดเริ่ม\nให้ IV เมื่อ **มากกว่า 20% TBSA ในผู้ใหญ่ (มากกว่า 15% ในเด็ก)** ด้วย **Lactated Ringer's**\n\n| สูตร | ปริมาณ 24 ชม.แรก |\n|---|---|\n| **Parkland (Baxter)** | **4 mL × kg × %TBSA** (ช่วง 3–4) |\n| ABA consensus / ATLS 10th | **2 mL × kg × %TBSA** ในผู้ใหญ่ (เด็ก 3 mL, electrical 4 mL) |\n\n- **ครึ่งแรกใน 8 ชม. นับจากเวลาเกิดเหตุ** (ไม่ใช่เวลามาถึง) ครึ่งหลังใน 16 ชม.ถัดไป\n- **ปรับตาม urine output**: ผู้ใหญ่ราว **0.5 mL/kg/hr (ราว 30 mL/hr)**, เด็กราว **1 mL/kg/hr (1–1.5)**, electrical injury ที่มี myoglobinuria ราว 1–1.5 mL/kg/hr · MAP มากกว่า 60\n- เด็กน้ำหนักน้อยกว่า 20 kg: ให้ **maintenance ที่มี dextrose** เพิ่มจากสูตร (glycogen สะสมน้อย)\n- **Fluid creep**: ให้เกินสูตรบ่อยมาก → abdominal/extremity compartment syndrome, ปอดบวมน้ำ · ลด rate เมื่อ UO เกินเป้า อย่าใช้ bolus ซ้ำ ๆ ถ้าไม่จำเป็น\n> ตัวอย่าง: 70 kg ไหม้ partial+full thickness 40% มาถึงหลังเกิดเหตุ 2 ชม. ใช้ 2 mL → 5,600 mL/24 ชม. ครึ่งแรก 2,800 mL ต้องให้ใน 6 ชม.ที่เหลือ = **ราว 467 mL/hr** แล้ว 2,800 mL ใน 16 ชม. = **175 mL/hr** (ถ้าใช้ Parkland 4 mL ได้ 11,200 mL)\n\n### Escharotomy, electrical/chemical burns และเกณฑ์ส่งต่อ\n- **Escharotomy**: eschar ของ **full-thickness แบบรอบวง** รัดเหมือน tourniquet เมื่อบวม → แขนขา: ชา ปวด capillary refill ช้า ชีพจรหาย · อก: ventilator pressure สูง หายใจไม่ได้ · มักไม่จำเป็นใน 8 ชม.แรก ทำข้างเตียงด้วย electrocautery แนว **medial และ lateral** ของแขนขา · อก: แนว **anterior axillary line** สองข้างต่อด้วยแนวใต้ชายโครง/ใต้ไหปลาร้า · ไม่ดีขึ้น → fasciotomy\n- **Electrical**: แผลผิวเห็นน้อยแต่ข้างในเสียหายมาก → **ECG ทุกราย** (low voltage น้อยกว่า 1,000 V + ECG ปกติอาจไม่ต้อง admit), เฝ้าระวัง **rhabdomyolysis** และ **compartment syndrome** (fasciotomy แม้สงสัยปานกลาง), ต้อกระจก/ระบบประสาทระยะยาว\n- **Chemical**: ปัดผงแห้งออก แล้ว **ล้างน้ำปริมาณมากนาน ๆ** (ด่างทำ liquefactive necrosis ลึกกว่ากรด) · hydrofluoric acid → calcium gluconate\n\n| เกณฑ์ส่งต่อ burn center (ABA) |\n|---|\n| Partial-thickness มากกว่า 10% TBSA |\n| แผลที่ **หน้า มือ เท้า อวัยวะเพศ perineum ข้อใหญ่** |\n| **Full thickness** ทุกอายุ |\n| **Electrical** (รวมฟ้าผ่า), **chemical**, **inhalation injury** |\n| มีโรคประจำตัวที่ทำให้รักษายาก, มีบาดเจ็บร่วม (ถ้าบาดเจ็บอื่นเสี่ยงกว่า ให้ stabilize ที่ trauma center ก่อน) |\n| เด็กใน รพ.ที่ไม่มีบุคลากรดูแลเด็ก, ต้องการการดูแลด้านสังคม/จิตใจ/ฟื้นฟูพิเศษ |\n\n- ก่อนส่ง: airway ปลอดภัย (ใส่ท่อถ้าสงสัย inhalation), IV + rate ที่คำนวณ, Foley, ห่มแผลด้วยผ้าสะอาดแห้ง, ห่มอุ่น, บันทึก TBSA/สารน้ำ/UO\n",
+   "pearls": [
+    "เสียงแหบ stridor หายใจลำบาก → ใส่ท่อเร็ว · ขนจมูกไหม้อย่างเดียวยังไม่ใช่ข้อบ่งชี้",
+    "CO: pulse oximeter อ่านสูงหลอก → ตรวจ COHb และให้ 100% O2",
+    "ไม่นับ first-degree ใน TBSA · ฝ่ามือรวมนิ้ว = 1%",
+    "Parkland 4 mL/kg/% (ABA 2 mL) LRS ครึ่งแรกใน 8 ชม.นับจากเวลาเกิดเหตุ",
+    "Urine output เป้าหมาย: ผู้ใหญ่ราว 0.5 mL/kg/hr (30 mL/hr), เด็กราว 1 mL/kg/hr",
+    "ห้าม antibiotic ป้องกันในแผลไหม้ — ให้แค่ tetanus",
+    "Escharotomy แนว medial/lateral ของแขนขา และ anterior axillary line ของอก"
+   ],
+   "items": [
+    {
+     "id": "N3-05-1-1",
+     "kind": "mcq",
+     "topic": "Inhalation injury — airway decision",
+     "stem": "A 35-year-old man is rescued from a burning house after 15 minutes in a closed room. He has burns to the face and anterior trunk (about 18% TBSA). His voice is hoarse and he reports difficulty breathing; mild inspiratory stridor is heard. SpO2 98% on 15 L/min oxygen. There is soot in the mouth. What is the most appropriate next step?",
+     "choices": [
+      "Early endotracheal intubation with a large-diameter tube",
+      "Observe in the ward with humidified oxygen and repeat assessment in 6 hours",
+      "Rely on the pulse oximetry reading and discharge after dressing",
+      "Give nebulized salbutamol and reassess the next morning",
+      "Perform elective tracheostomy after 48 hours of fluid resuscitation"
+     ],
+     "answer": 0,
+     "explain": "เสียงแหบ stridor และรู้สึกหายใจลำบากหลังติดอยู่ในห้องปิดที่ไฟไหม้ = **upper airway thermal/inhalation injury** ที่บวมเร็วและอาจถึงตาย → **ใส่ท่อช่วยหายใจตั้งแต่เนิ่น** ด้วยท่อขนาดใหญ่ ก่อนที่การบวมจากการให้สารน้ำจะทำให้ใส่ไม่ได้ · SpO2 ปกติไม่ตัด CO poisoning ต้องตรวจ carboxyhemoglobin\n- **สังเกตอาการ 6 ชม.** — airway อาจปิดก่อนถึงเวลาประเมิน\n- **เชื่อ pulse oximeter** — อ่านค่าสูงหลอกใน CO poisoning\n- **Salbutamol แล้วรอ** — ไม่แก้การบวมของ upper airway\n- **Tracheostomy หลัง 48 ชม.** — ช้าเกินไปสำหรับภาวะฉุกเฉิน",
+     "pearl": "แหบ/stridor/หายใจลำบากหลังไฟไหม้ในที่ปิด → ใส่ท่อเร็ว",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N3-05-1-2",
+     "kind": "mcq",
+     "topic": "Burn fluid calculation",
+     "stem": "A 60-kg woman sustains flame burns: deep partial and full thickness burns of the entire anterior trunk and the entire right arm, plus superficial (first-degree) erythema of the face. She arrives 2 hours after injury having received no IV fluid. Using the Parkland formula (4 mL/kg/%TBSA) of lactated Ringer's, what is the infusion rate for the next 6 hours?",
+     "choices": [
+      "About 540 mL/h",
+      "About 270 mL/h",
+      "About 405 mL/h",
+      "About 720 mL/h",
+      "About 200 mL/h"
+     ],
+     "answer": 0,
+     "explain": "TBSA = ลำตัวหน้า 18% + แขนขวา 9% = **27%** (**ไม่นับ** erythema ที่หน้าซึ่งเป็น superficial burn) → Parkland = 4 × 60 × 27 = **6,480 mL/24 ชม.** ครึ่งแรก 3,240 mL ต้องให้ภายใน **8 ชม.นับจากเวลาเกิดเหตุ** มาถึงหลัง 2 ชม. จึงเหลือ 6 ชม. → 3,240/6 = **540 mL/hr** แล้วปรับตาม urine output ราว 0.5 mL/kg/hr\n- **ราว 270 mL/hr** — คิดครึ่งแรกใน 12 ชม. หรือใช้ 2 mL/kg\n- **ราว 405 mL/hr** — กระจายครึ่งแรกใน 8 ชม.เต็มโดยลืมหักเวลาที่ผ่านไป\n- **ราว 720 mL/hr** — นับหน้าเป็น 9% (ไม่ควรนับ superficial)\n- **ราว 200 mL/hr** — เป็น rate ของ 16 ชม.หลัง (3,240/16)",
+     "pearl": "เวลาเริ่มนับจากเกิดเหตุ ไม่ใช่เวลามาถึง · ไม่นับ first-degree ใน TBSA",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N3-05-1-3",
+     "kind": "mcq",
+     "topic": "Escharotomy",
+     "stem": "A 42-year-old man has circumferential full-thickness burns of the left forearm and hand after a motorcycle fire. Ten hours into resuscitation the forearm is tense, he reports numbness of the fingers, capillary refill is delayed and the radial Doppler signal is weakening. What is the most appropriate management?",
+     "choices": [
+      "Bedside escharotomy along the medial and lateral aspects of the forearm",
+      "Increase the IV fluid rate by 50%",
+      "Elevate the limb and reassess in 12 hours",
+      "Apply silver sulfadiazine and a compressive dressing",
+      "Immediate amputation"
+     ],
+     "answer": 0,
+     "explain": "Eschar ของ **full-thickness รอบวง** ไม่ยืดตามการบวมของเนื้อเยื่อใต้ → ความดันเพิ่ม กด venous outflow แล้ว arterial inflow (ชา capillary refill ช้า ชีพจรลด) → **escharotomy** ข้างเตียง (มักใช้ electrocautery) แนว **medial และ lateral** ของแขน ขยายไปมือได้ ถ้าไม่ดีขึ้นจึงพิจารณา fasciotomy\n- **เพิ่มสารน้ำ** — ทำให้บวมมากขึ้น ไม่ใช่ปัญหาปริมาตร\n- **ยกแขนแล้วรอ 12 ชม.** — เนื้อเยื่อจะขาดเลือดถาวร\n- **SSD + พันแน่น** — พันแน่นยิ่งกดมากขึ้น\n- **Amputation** — ยังกู้คืนได้",
+     "pearl": "Full-thickness รอบวง + perfusion ลด → escharotomy (medial/lateral)",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-05-2",
+   "title": "แผลฉีกขาดในห้องฉุกเฉินและตาราง tetanus prophylaxis",
+   "summary": "เตรียมแผล เลือกวิธีปิด เลือกไหม นัดตัดไหม และตัดสินใจเรื่องวัคซีนบาดทะยักอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 9 — Management of acute wounds (local care, antibiotics, closure); Ch 44 — Tetanus in hand injuries",
+   "md": "### ประเมินแผลสด: ถามและตรวจอะไรก่อนเย็บ\n- **ประวัติ**: กลไก (มีด กระจก โลหะขึ้นสนิม เครื่องจักร ถูกกัด), **เวลาเกิดแผล**, สิ่งปนเปื้อน (ดิน มูลสัตว์ น้ำครำ), **ประวัติวัคซีนบาดทะยัก**, เบาหวาน steroid สูบบุหรี่ ยาต้านลิ่มเลือด, แพ้ยาชา, มือข้างถนัด/อาชีพ\n- **ตรวจ**: ตำแหน่ง ขนาด ความลึก รูปร่าง ขอบ เนื้อตาย สิ่งแปลกปลอม และ **โครงสร้างใต้แผล** — ทดสอบ **sensation และ motor/tendon ก่อนฉีดยาชา**, ชีพจรส่วนปลาย, capillary refill\n- สิ่งแปลกปลอม: กระจกส่วนใหญ่เห็นใน X-ray, ไม้/พลาสติกใช้ ultrasound\n- **ส่งต่อ/ปรึกษา** เมื่อ: tendon/nerve/vessel บาดเจ็บ, แผลข้อ (เสี่ยง septic arthritis), แผลที่ขอบตา ท่อน้ำตา หู จมูก ต้องการผลเครื่องสำอางสูง, แผลกว้างสูญเสียเนื้อเยื่อมาก\n\n### ขั้นตอนเตรียมแผล\n1. **ยาชา**: **lidocaine 0.5–1%** (หรือ bupivacaine 0.25–0.5%) ± **epinephrine 1:100,000–1:200,000** ช่วยห้ามเลือดและอยู่นานขึ้น · ขนาดสูงสุดโดยประมาณ lidocaine **4.5 mg/kg** (ไม่มี epi) และ **7 mg/kg** (มี epi) · Schwartz แนะนำ **เลี่ยง epinephrine ที่นิ้ว นิ้วเท้า หู จมูก อวัยวะเพศชาย** (หลักฐานใหม่บอกว่าที่นิ้วค่อนข้างปลอดภัย แต่ข้อสอบมักยึดหลักนี้)\n2. **Irrigation**: **normal saline** ปริมาณมาก แรงดันสูง (เช่น syringe 20–60 mL + เข็ม/IV catheter) — **ไม่ใช้ povidone-iodine, hydrogen peroxide หรือน้ำยาฆ่าเชื้อในแผล** เพราะทำลาย neutrophil/macrophage และชะลอการหาย (ใช้ได้กับ **ผิวรอบแผล**)\n3. **Debridement** เนื้อตาย ขอบแผลช้ำ/เอียง ให้ได้ขอบสด · เอาก้อนเลือดและสิ่งแปลกปลอมออก · หยุดเลือดด้วยการผูก/จี้\n4. ตัดขน (clipper) รอบแผลถ้าจำเป็น **ไม่โกนคิ้ว**\n5. ปูผ้า sterile แล้วเย็บ\n\n### เลือกวิธีปิดแผล\n| วิธี | ใช้เมื่อ |\n|---|---|\n| **Primary intention** (เย็บทันที) | แผลสะอาด ขอบชัด ไม่นาน · หน้า/หนังศีรษะเลือดมาเลี้ยงดี เย็บได้แม้หลายชั่วโมง |\n| **Delayed primary (tertiary intention)** | แผลปนเปื้อนมาก/มาช้า/ถูกกัดที่ไม่ใช่หน้า → ล้าง ทำแผลเปิด 3–5 วัน แล้วเย็บเมื่อสะอาด |\n| **Secondary intention** | แผลติดเชื้อ แผลถูกเจาะ แผลสูญเสียเนื้อเยื่อ ปล่อยให้ granulation และหดตัว |\n\n- เย็บ **ชั้นลึก/fascia ด้วยไหมละลาย** ลด dead space (ไม่เย็บในไขมัน) · **ผิวหนังด้วย nonabsorbable monofilament** หรือ staples · แผลตรงแรงตึงน้อยใช้ **tissue glue (octyl-cyanoacrylate)** ได้ (เด็กดี)\n- แผลที่ข้าม **vermilion border, คิ้ว, ไรผม** ต้องเย็บจุดแรกให้ขอบตรงกันก่อน\n\n| ตำแหน่ง | ไหมผิวหนังที่ใช้บ่อย | ตัดไหม |\n|---|---|---|\n| หน้า | 5-0/6-0 nylon | **4–5 วัน** |\n| หนังศีรษะ | staples/3-0–4-0 | 7–10 วัน |\n| ลำตัว แขนขา | 3-0/4-0 nylon | **7–10 วัน** |\n| เหนือข้อ หลัง ฝ่าเท้า | 3-0/4-0 nylon | 10–14 วัน |\n\n- ตัดไหมช้าเกินทำให้เกิดรอยไหม (track marks) · antibiotic ไม่จำเป็นในแผลสะอาด ให้เมื่อ **มีการติดเชื้อชัดเจน** หรือกลุ่มเสี่ยงสูง (ถูกกัด แผลปนเปื้อนมาก open fracture ภูมิคุ้มกันต่ำ)\n\n### Tetanus prophylaxis: ตารางที่ต้องจำ\n**Tetanus-prone wound** (\"แผลอื่น ๆ\"): ปนเปื้อนดิน มูลสัตว์ น้ำลาย, **แผลถูกตะปูตำ/puncture**, แผลฉีกขาดมีเนื้อตาย, crush, avulsion, แผลจากกระสุน, burn, frostbite, แผลที่มาช้า\n\n| ประวัติวัคซีน (toxoid) | แผลสะอาด เล็ก | แผลอื่น ๆ (tetanus-prone) |\n|---|---|---|\n| **ไม่ทราบ หรือน้อยกว่า 3 เข็ม** | **Td/Tdap: ให้** · TIG: ไม่ให้ | **Td/Tdap: ให้** · **TIG: ให้** |\n| ครบ 3 เข็มขึ้นไป เข็มสุดท้าย **น้อยกว่า 5 ปี** | ไม่ให้ | ไม่ให้ |\n| ครบ 3 เข็มขึ้นไป เข็มสุดท้าย **5–10 ปี** | ไม่ให้ | **Td: ให้** |\n| ครบ 3 เข็มขึ้นไป เข็มสุดท้าย **มากกว่า 10 ปี** | **Td: ให้** | **Td: ให้** |\n\n- **TIG (human tetanus immunoglobulin) 250 IU IM** ฉีดคนละตำแหน่งกับ toxoid\n- ผู้ที่ไม่เคยฉีดหรือไม่ครบ ต้อง **นัดฉีดให้ครบชุด 3 เข็ม** (เช่น 0, 1 เดือน, 6–12 เดือน) ไม่ใช่แค่เข็มเดียววันนี้\n- หญิงตั้งครรภ์ได้รับ Td/Tdap ได้ · ในไทยใช้ dT สำหรับผู้ใหญ่\n",
+   "pearls": [
+    "ตรวจ sensation/motor ก่อนฉีดยาชา",
+    "Lidocaine สูงสุดราว 4.5 mg/kg (7 mg/kg ถ้ามี epinephrine)",
+    "ล้างในแผลด้วย NSS แรงดันสูง — ไม่ใช้ povidone/H2O2 ในแผล",
+    "แผลปนเปื้อนมาก/มาช้า → delayed primary closure ใน 3–5 วัน",
+    "ตัดไหม: หน้า 4–5 วัน · ลำตัว/แขนขา 7–10 วัน · เหนือข้อ 10–14 วัน",
+    "ไม่ทราบ/น้อยกว่า 3 เข็ม + แผลสกปรก → Td + TIG 250 IU",
+    "ครบ 3 เข็ม: แผลสะอาดกระตุ้นเมื่อเกิน 10 ปี · แผลสกปรกกระตุ้นเมื่อเกิน 5 ปี"
+   ],
+   "items": [
+    {
+     "id": "N3-05-2-1",
+     "kind": "mcq",
+     "topic": "Tetanus prophylaxis — unknown status, dirty wound",
+     "stem": "A 58-year-old farmer stepped on a rusty nail in a rice field 6 hours ago; the puncture wound on his sole is contaminated with mud. He does not remember ever receiving tetanus vaccination. What is the appropriate tetanus prophylaxis?",
+     "choices": [
+      "Tetanus-diphtheria toxoid plus human tetanus immunoglobulin 250 IU at a different site, and complete the primary series",
+      "Tetanus-diphtheria toxoid alone",
+      "Human tetanus immunoglobulin alone",
+      "No prophylaxis because the wound is small",
+      "Oral metronidazole for 7 days instead of vaccination"
+     ],
+     "answer": 0,
+     "explain": "แผลถูกตะปูตำปนเปื้อนโคลน = **tetanus-prone wound** ร่วมกับ **ประวัติวัคซีนไม่ทราบ** → ต้องให้ทั้ง **toxoid (Td/Tdap)** สร้างภูมิระยะยาว และ **TIG 250 IU IM** ให้ภูมิทันทีแบบ passive ฉีดคนละตำแหน่ง แล้ว **นัดฉีดให้ครบ 3 เข็ม**\n- **Td อย่างเดียว** — ภูมิขึ้นช้าเกินไปสำหรับแผลเสี่ยงในผู้ไม่มีภูมิ\n- **TIG อย่างเดียว** — ไม่สร้างภูมิถาวร\n- **ไม่ให้** — แผลเล็กแต่ลึกและปนเปื้อนเสี่ยงสูงมาก\n- **Metronidazole แทนวัคซีน** — ใช้รักษาบาดทะยัก ไม่ใช่การป้องกันแทน immunization",
+     "pearl": "ไม่ทราบ/ไม่ครบ 3 เข็ม + แผลสกปรก → Td + TIG + ฉีดให้ครบชุด",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N3-05-2-2",
+     "kind": "mcq",
+     "topic": "Laceration preparation and irrigation",
+     "stem": "A 25-year-old man has a 4-cm laceration on the forearm from a broken glass 3 hours ago. Sensation and tendon function are intact. Radiograph shows no foreign body. After local anesthesia, which method of wound cleansing is most appropriate before closure?",
+     "choices": [
+      "High-pressure irrigation with normal saline, cleansing the surrounding skin with antiseptic",
+      "Pour 10% povidone-iodine into the wound and leave it for 5 minutes",
+      "Irrigate the wound with hydrogen peroxide until bubbling stops",
+      "Scrub the wound bed with chlorhexidine-alcohol",
+      "Soak the arm in antibiotic solution for 30 minutes"
+     ],
+     "answer": 0,
+     "explain": "การล้างแผลที่ดีที่สุดคือ **normal saline ปริมาณมากด้วยแรงดันสูง** ช่วยเอาสิ่งแปลกปลอมและเชื้อออก ส่วน **น้ำยาฆ่าเชื้อใช้กับผิวหนังรอบแผล** ไม่ใช่ในแผล เพราะ povidone-iodine, hydrogen peroxide และสารฆ่าเชื้ออื่นทำลายเซลล์ที่ใช้ในการหายของแผล\n- **Povidone-iodine ในแผล** — เป็นพิษต่อเนื้อเยื่อ ชะลอการหาย\n- **Hydrogen peroxide** — ทำลาย fibroblast/neutrophil\n- **Chlorhexidine-alcohol ขัดพื้นแผล** — ระคายเคืองเนื้อเยื่อ ใช้เตรียมผิวรอบแผล\n- **แช่ยาปฏิชีวนะ** — ไม่มีหลักฐานว่าได้ประโยชน์",
+     "pearl": "ล้างในแผลด้วย NSS แรงดันสูง · antiseptic ใช้รอบแผลเท่านั้น",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N3-05-2-3",
+     "kind": "mcq",
+     "topic": "Choice of closure for a contaminated wound",
+     "stem": "A 30-year-old man presents 20 hours after a farm injury with a 6-cm laceration on the lower leg, heavily contaminated with soil and manure, with ragged edges. There is no fracture and no tendon injury. His tetanus vaccination is up to date (last dose 3 years ago). After irrigation and debridement, what is the most appropriate wound management?",
+     "choices": [
+      "Leave the wound open with dressings and consider delayed primary closure in 3–5 days",
+      "Close primarily with nylon sutures and remove them in 7 days",
+      "Close with tissue adhesive",
+      "Close primarily and give tetanus immunoglobulin",
+      "Apply a skin graft immediately"
+     ],
+     "answer": 0,
+     "explain": "แผล **ปนเปื้อนมาก (ดิน มูลสัตว์) มาช้า ขอบไม่เรียบ** เสี่ยงติดเชื้อสูงถ้าเย็บปิดทันที → **ล้าง debride ทำแผลเปิด** แล้ว **delayed primary closure (tertiary intention)** เมื่อแผลสะอาดใน 3–5 วัน หรือปล่อยหายเองถ้าเหมาะสม · วัคซีนครบและเข็มสุดท้ายน้อยกว่า 5 ปี จึง **ไม่ต้องให้ tetanus booster หรือ TIG**\n- **เย็บปิดทันที** — เสี่ยง SSI และ wound dehiscence\n- **Tissue adhesive** — ใช้กับแผลสะอาด ขอบตรง แรงตึงน้อย\n- **เย็บ + TIG** — ไม่ต้องให้ TIG เพราะมีภูมิครบ\n- **Skin graft ทันที** — ไม่มีการสูญเสียผิวหนังที่ต้องปิด และพื้นแผลยังไม่สะอาด",
+     "pearl": "แผลปนเปื้อนมาก/มาช้า → ล้าง เปิดแผลไว้ แล้ว delayed primary closure",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-05-3",
+   "title": "แผลถูกสัตว์กัด แผลปนเปื้อน และ rabies PEP แบบไทย",
+   "summary": "ถูกสุนัข แมว หรือคนกัด ต้องล้าง ปิดแผล ให้ยาปฏิชีวนะ และป้องกันพิษสุนัขบ้าอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 16 — Bite wounds; WHO and Thai Ministry of Public Health rabies PEP guidance",
+   "md": "### หลักการรักษาแผลถูกสัตว์กัด\n- **ล้างแผลทันทีด้วยสบู่และน้ำไหลนานราว 15 นาที** ทุกแผล แล้วใช้ povidone-iodine หรือ alcohol (ในบริบทโรคพิษสุนัขบ้า สารฆ่าเชื้อไวรัสช่วยลดการติดเชื้อ) · debride เนื้อตาย · ตรวจหา tendon/ข้อ/กระดูก (X-ray ถ้ากัดลึกใกล้กระดูก หรือฟันหักฝัง)\n- **เชื้อ**: สุนัข/แมว — **Pasteurella multocida** (แมวพบมากกว่า), Streptococcus, Staphylococcus, anaerobes, **Capnocytophaga canimorsus** (รุนแรงใน **ผู้ตัดม้าม/ติดสุรา/ภูมิคุ้มกันต่ำ**) · คน — S. aureus, Streptococcus, anaerobes, **Eikenella corrodens** ปริมาณเชื้อสูง\n- **Fight bite** (ต่อยฟันคนแล้วแผลที่ข้อนิ้ว MCP): แผลเล็กแต่ฟันเข้าข้อ/tendon ได้ → สำรวจแผลในท่ากำมือ ล้าง ไม่เย็บ ให้ antibiotic ปรึกษา hand surgeon\n\n| การตัดสินใจ | แนวทาง |\n|---|---|\n| ปิดแผล | **หน้า** (ความสวยงาม เลือดเลี้ยงดี) → ล้าง debride แล้ว **เย็บปิดได้** + antibiotic สั้น + นัดดู · **มือ แผลเจาะ แผลมาช้า แผลติดเชื้อ** → ไม่เย็บปิดทันที |\n| **Antibiotic prophylaxis** | **amoxicillin–clavulanate 3–7 วัน** สำหรับ: แมวกัด, คนกัด, แผลที่มือ/ใกล้ข้อ/กระดูก, แผลเจาะลึก, แผลที่เย็บปิด, ภูมิคุ้มกันต่ำ/ตัดม้าม, บวมมาก |\n| แพ้ penicillin | doxycycline หรือ clindamycin + ciprofloxacin (หรือ TMP-SMX) |\n| แผลติดเชื้อแล้ว | antibiotic รักษา ± drainage, ยกสูง, ระวัง tenosynovitis/septic arthritis |\n\n- อย่าลืม **tetanus** ตามตารางเดิม (แผลถูกกัดถือเป็น tetanus-prone)\n\n### โรคพิษสุนัขบ้า: ประเมินการสัมผัส\nในไทยแหล่งสำคัญคือ **สุนัขและแมว** โรคเมื่อมีอาการแล้วเสียชีวิตเกือบทั้งหมด แต่ป้องกันได้เกือบ 100% ถ้าทำ **post-exposure prophylaxis (PEP)** ถูกต้อง\n\n| ประเภทการสัมผัส (WHO) | ลักษณะ | การปฏิบัติ |\n|---|---|---|\n| **I** | สัมผัส/ให้อาหารสัตว์, ถูกเลียผิวหนังปกติ | ล้างบริเวณที่สัมผัส **ไม่ต้องฉีดวัคซีน** |\n| **II** | **งับเป็นรอยช้ำ**, **ข่วน/ถลอกไม่มีเลือดออก** | ล้างแผล + **วัคซีน** |\n| **III** | **กัดหรือข่วนทะลุผิวหนังมีเลือดออก**, **ถูกเลียบนแผล/เยื่อบุ** (ตา ปาก), สัมผัสค้างคาว | ล้างแผล + **วัคซีน + rabies immunoglobulin (RIG)** |\n\n- ปัจจัยที่ต้องถาม: ชนิดสัตว์, สัตว์มีเจ้าของ/ได้วัคซีนไหม (วัคซีนในสัตว์ไม่ใช่เหตุงด PEP ในบริบทไทย), พฤติกรรมผิดปกติหรือถูกยั่ว, สัตว์ยังอยู่สังเกตได้ไหม, ตำแหน่งแผล (หน้า มือ ใกล้ประสาท = ระยะฟักตัวสั้น), ผู้ป่วยเคยได้วัคซีนมาก่อนหรือไม่, ภูมิคุ้มกัน\n- **เริ่ม PEP ทันที ไม่ต้องรอดูอาการสัตว์** · สุนัข/แมวที่สังเกตได้ ถ้ายังปกติครบ 10 วันอาจพิจารณาหยุดวัคซีนที่เหลือได้ตามแนวทาง (สัตว์ตาย/หาย/มีอาการ → ส่งตรวจหัวสัตว์และฉีดครบ)\n- สัตว์ฟันแทะ เช่น หนู กระรอก โดยทั่วไปไม่ต้อง PEP\n\n### PEP regimen ที่ใช้ในไทย\n| สูตร | วิธี | วันฉีด |\n|---|---|---|\n| **IM (Essen)** | 1 dose (1 vial) IM ที่ **deltoid** (เด็กเล็กที่ต้นขาด้านหน้าข้าง) **ห้ามฉีดก้น** | วันที่ **0, 3, 7, 14, 28** |\n| **ID (Thai Red Cross, 2-2-2-0-2)** | 0.1 mL ID **2 ตำแหน่ง** (ต้นแขนซ้าย-ขวา) | วันที่ **0, 3, 7, 28** |\n| **เคยได้วัคซีนครบมาก่อน** (PrEP หรือ PEP ครบ) | กระตุ้น IM 1 dose หรือ ID 0.1 mL 1 ตำแหน่ง | วันที่ **0 และ 3** — **ไม่ต้องให้ RIG** (หรือ ID 4 ตำแหน่งวันเดียว) |\n\n- WHO (2018) รับรองสูตรย่อลงได้ เช่น IM 4 ครั้ง หรือ ID 1 สัปดาห์ — ใช้ตามแนวทางกระทรวงสาธารณสุขและสถานพยาบาล\n- **RIG**: **ERIG 40 IU/kg** หรือ **HRIG 20 IU/kg** — **ฉีดเข้าและรอบแผลทุกแผลให้มากที่สุดเท่าที่ทำได้** (ส่วนที่เหลือไม่จำเป็นต้องฉีด IM ไกลแผลตามคำแนะนำปัจจุบัน; ปริมาตรไม่พอให้เจือจางด้วย NSS) · ให้พร้อมวัคซีนเข็มแรก ถ้าไม่ได้ให้วันแรก ให้ได้ **จนถึงวันที่ 7** หลังวัคซีนเข็มแรก หลังจากนั้นไม่ต้องให้ · ห้ามฉีด RIG ด้วยเข็มเดียวกับ/ตำแหน่งเดียวกับวัคซีน\n- ERIG เป็นซีรัมม้า: เตรียมรักษา anaphylaxis (skin test ไม่ทำนายได้แม่นยำ)\n\n### แผลปนเปื้อนอื่นที่พบในห้องฉุกเฉิน\n- **แผลจากฟาร์ม/ดิน/มูลสัตว์/น้ำท่วมขัง**: ล้างและ debride อย่างดี, tetanus, พิจารณา delayed closure · ในไทย แผลสัมผัสดิน-น้ำในผู้ป่วยเบาหวานแล้วติดเชื้อรุนแรง ให้นึกถึง **melioidosis**\n- **แผลถูกตะปูตำทะลุรองเท้า**: เสี่ยง Pseudomonas osteomyelitis/cellulitis\n- **Open fracture**: antibiotic IV เร็ว (cefazolin ± gentamicin ตามความรุนแรง), tetanus, splint, ปรึกษาออร์โธ\n- **High-pressure injection injury ที่มือ**: แผลเล็กแต่เนื้อเยื่อเสียหายมาก → ผ่าตัด debridement ด่วน\n> **งูพิษกัด** (บริบทไทย): ไม่กรีด ไม่ดูด ไม่ขันชะเนาะ ดามอวัยวะให้นิ่ง ส่ง รพ. เฝ้าระวังอาการทางระบบประสาท/การแข็งตัวของเลือด และให้ antivenom ตามข้อบ่งชี้ — แผลงูกัดไม่ต้องให้ antibiotic ป้องกันทุกราย\n",
+   "pearls": [
+    "ล้างแผลด้วยสบู่และน้ำไหลราว 15 นาทีทุกแผลทันที",
+    "แมวกัด/คนกัด/มือ/แผลเจาะ → amoxicillin–clavulanate 3–7 วัน",
+    "หน้าเย็บปิดได้หลังล้างดี · มือและแผลเจาะไม่ควรเย็บปิด",
+    "Category II → วัคซีน · Category III → วัคซีน + RIG เข้าแผล",
+    "ERIG 40 IU/kg, HRIG 20 IU/kg · ให้ได้ถึงวันที่ 7 หลังวัคซีนเข็มแรก",
+    "IM วันที่ 0, 3, 7, 14, 28 ที่ deltoid · ID 2 ตำแหน่ง วันที่ 0, 3, 7, 28",
+    "เคยได้วัคซีนครบ → กระตุ้นวันที่ 0, 3 ไม่ต้อง RIG"
+   ],
+   "items": [
+    {
+     "id": "N3-05-3-1",
+     "kind": "mcq",
+     "topic": "Cat bite to the hand",
+     "stem": "A 45-year-old woman was bitten on the dorsum of her right hand by her own vaccinated cat 3 hours ago. There are two deep puncture wounds near the second metacarpophalangeal joint without signs of infection. Tendon function is intact. Tetanus vaccination is up to date. Besides irrigation, which management is most appropriate?",
+     "choices": [
+      "Leave the punctures open and prescribe amoxicillin–clavulanate for 3–5 days, with follow-up in 24–48 hours",
+      "Suture the punctures closed and no antibiotics",
+      "Prescribe oral cephalexin alone for 10 days",
+      "Prescribe oral metronidazole",
+      "No antibiotics because the cat is vaccinated"
+     ],
+     "answer": 0,
+     "explain": "**แมวกัด + แผลเจาะลึก + ที่มือใกล้ข้อ** เป็นกลุ่มเสี่ยงติดเชื้อสูง (Pasteurella multocida, anaerobes) → **ไม่เย็บปิดแผลเจาะ** ให้ **amoxicillin–clavulanate** เป็น prophylaxis และนัดตรวจซ้ำใน 24–48 ชม. เพื่อดู cellulitis/tenosynovitis/septic arthritis\n- **เย็บปิดและไม่ให้ยา** — แผลเจาะที่มือปิดแล้วเสี่ยง abscess\n- **Cephalexin อย่างเดียว** — ครอบคลุม Pasteurella และ anaerobes ไม่ดี\n- **Metronidazole** — ไม่ครอบคลุม Pasteurella หรือ gram-positive\n- **ไม่ให้เพราะแมวได้วัคซีน** — วัคซีนพิษสุนัขบ้าไม่เกี่ยวกับการติดเชื้อแบคทีเรียของแผล",
+     "pearl": "แมวกัด/มือ/แผลเจาะ → amoxicillin–clavulanate และไม่เย็บปิดแผลเจาะ",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    },
+    {
+     "id": "N3-05-3-2",
+     "kind": "mcq",
+     "topic": "Rabies post-exposure prophylaxis — category III",
+     "stem": "An 8-year-old boy (25 kg) in a rural district was bitten on the calf by a stray dog that ran away. There are two bleeding transdermal puncture wounds. He has never received rabies vaccine. The wound has been washed with soap and water for 15 minutes. What is the most appropriate rabies management?",
+     "choices": [
+      "Rabies vaccine series plus rabies immunoglobulin infiltrated into and around the wounds",
+      "Rabies vaccine series only",
+      "Rabies immunoglobulin only",
+      "Observe for 10 days and vaccinate only if symptoms develop",
+      "No prophylaxis because the bite is on the leg, far from the brain"
+     ],
+     "answer": 0,
+     "explain": "**แผลกัดทะลุผิวหนังมีเลือดออก = category III** และสัตว์หนีไปสังเกตไม่ได้ ผู้ป่วยไม่เคยได้วัคซีน → **วัคซีนครบชุด + RIG** (ERIG 40 IU/kg หรือ HRIG 20 IU/kg) **ฉีดเข้าและรอบแผลทุกแผล** ให้พร้อมวัคซีนเข็มแรก RIG ให้แอนติบอดีทันทีระหว่างที่วัคซีนยังสร้างภูมิไม่ทัน (ราว 7–14 วัน)\n- **วัคซีนอย่างเดียว** — พอสำหรับ category II แต่ไม่พอสำหรับ category III\n- **RIG อย่างเดียว** — ไม่สร้างภูมิระยะยาว\n- **สังเกต 10 วันแล้วค่อยฉีด** — ห้ามรอ เพราะเมื่อมีอาการแล้วรักษาไม่ได้ และสัตว์ก็หายไปแล้ว\n- **ไม่ให้เพราะแผลที่ขา** — ตำแหน่งไกลมีผลแค่ระยะฟักตัวนานขึ้น ไม่ได้ลดความเสี่ยงจนไม่ต้องป้องกัน",
+     "pearl": "Category III (กัด/ข่วนมีเลือด, เลียแผล/เยื่อบุ) → วัคซีน + RIG เข้าแผล",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    },
+    {
+     "id": "N3-05-3-3",
+     "kind": "mcq",
+     "topic": "Rabies PEP in a previously vaccinated person",
+     "stem": "A 30-year-old veterinary nurse who completed a 3-dose pre-exposure rabies vaccination series 2 years ago is bitten on the finger by an unvaccinated dog with abnormal behavior. The wound is a bleeding transdermal bite. After thorough wound washing, what is the appropriate rabies prophylaxis?",
+     "choices": [
+      "Booster vaccine on days 0 and 3 without rabies immunoglobulin",
+      "Full 5-dose IM vaccine series plus rabies immunoglobulin",
+      "Rabies immunoglobulin only",
+      "No further vaccine because pre-exposure vaccination was completed",
+      "Full ID series on days 0, 3, 7 and 28 plus ERIG"
+     ],
+     "answer": 0,
+     "explain": "ผู้ที่ **เคยได้วัคซีนครบ (PrEP หรือ PEP ครบชุด)** มี immunologic memory → เมื่อสัมผัสใหม่แม้เป็น category III ให้เพียง **วัคซีนกระตุ้นวันที่ 0 และ 3** (IM 1 dose หรือ ID 1 ตำแหน่ง) และ **ไม่ต้องให้ RIG** (RIG อาจกดการตอบสนองต่อ booster)\n- **5 เข็ม + RIG** — สำหรับผู้ไม่เคยได้วัคซีน\n- **RIG อย่างเดียว** — ไม่กระตุ้นภูมิ\n- **ไม่ต้องทำอะไร** — ต้องกระตุ้นทุกครั้งที่สัมผัสใหม่\n- **ID ครบชุด + ERIG** — เกินความจำเป็น",
+     "pearl": "เคยได้วัคซีนครบแล้ว → กระตุ้นวันที่ 0, 3 ไม่ต้อง RIG",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-05-MEQ1",
+   "part": "MEQ",
+   "topic": "Dog bite to the face of a child — wound care, rabies and tetanus prophylaxis",
+   "vignette": "เด็กหญิงอายุ 6 ปี น้ำหนัก 20 kg มา รพช. 2 ชม.หลังถูก **สุนัขของเพื่อนบ้าน** กัดที่แก้มซ้าย สุนัขไม่เคยได้วัคซีน ยังถูกล่ามอยู่ เจ้าของบอกว่าสุนัข \"ดุผิดปกติมา 2 วัน\"\n\nเด็กได้รับวัคซีนตามแผนการสร้างเสริมภูมิคุ้มกันของกระทรวงสาธารณสุขครบ (DTP ครบรวมเข็มกระตุ้นตอนอายุ 4 ปี) ไม่เคยได้วัคซีนพิษสุนัขบ้า ไม่มีโรคประจำตัว\n\nPE: V/S ปกติ แผลที่แก้มซ้ายเป็นแผลฉีกขาด 3 cm ลึกถึงชั้นไขมัน ขอบไม่เรียบ เลือดซึม และมีรอยเขี้ยวเจาะ 2 จุด ไม่ถึงต่อมน้ำลาย/ท่อ Stensen ไม่มีอัมพาตกล้ามเนื้อใบหน้า",
+   "questions": [
+    {
+     "q": "1. จงจัดประเภทการสัมผัสโรคพิษสุนัขบ้า และบอกการดูแลแผลเบื้องต้น",
+     "a": "- **Category III** (กัดทะลุผิวหนังมีเลือดออก) + **แผลที่หน้า** (ใกล้สมอง ระยะฟักตัวอาจสั้น) + สุนัขพฤติกรรมผิดปกติ ไม่ได้วัคซีน → **เสี่ยงสูงมาก**\n- **ล้างแผลด้วยสบู่และน้ำไหลราว 15 นาที** ทุกแผลทันที แล้วใช้ povidone-iodine\n- ตรวจโครงสร้างสำคัญของหน้า (facial nerve, parotid duct), debride เนื้อตายเล็กน้อยเท่าที่จำเป็น"
+    },
+    {
+     "q": "2. จงสั่ง rabies PEP ให้ครบ (ชนิด ขนาด วิธี วันนัด)",
+     "a": "- **RIG**: ERIG **40 IU/kg × 20 kg = 800 IU** (หรือ HRIG 20 IU/kg = 400 IU) **ฉีดเข้าและรอบแผลทุกแผลให้มากที่สุด** (หน้า: ฉีดอย่างระวัง เจือจางด้วย NSS ถ้าปริมาตรไม่พอครอบคลุม) ให้วันเดียวกับวัคซีนเข็มแรก เตรียมยารักษา anaphylaxis\n- **วัคซีน**: IM 1 dose ที่ **deltoid** วันที่ **0, 3, 7, 14, 28** หรือ ID 0.1 mL × 2 ตำแหน่ง วันที่ **0, 3, 7, 28** (ตามแนวทางที่ใช้)\n- ห้ามฉีดวัคซีนที่ก้น และห้ามฉีด RIG ตำแหน่งเดียวกับวัคซีน\n- **กักสุนัขสังเกตอาการ 10 วัน** ถ้าสุนัขตาย/มีอาการ → ส่งหัวสุนัขตรวจ และฉีดวัคซีนต่อให้ครบ · อย่ารอผลสัตว์ก่อนเริ่ม PEP\n- แจ้งเจ้าหน้าที่ปศุสัตว์/สาธารณสุขในพื้นที่"
+    },
+    {
+     "q": "3. ควรเย็บปิดแผลที่หน้าหรือไม่ และให้ยาปฏิชีวนะหรือไม่",
+     "a": "- **เย็บปิดได้** เพราะเป็นแผลที่หน้า เลือดมาเลี้ยงดี และความสวยงามสำคัญ หลัง **ล้างแผลอย่างดีและฉีด RIG เข้าแผลก่อนเย็บ** (ฉีด RIG ก่อนปิดแผล) เย็บหลวม ๆ ด้วย 5-0/6-0 nonabsorbable ตัดไหมราว 4–5 วัน หรือส่งต่อศัลยแพทย์ตกแต่งถ้าซับซ้อน\n- รอยเขี้ยวเจาะ ไม่ต้องเย็บ\n- **Antibiotic prophylaxis**: amoxicillin–clavulanate ราว 3–5 วัน (แผลเย็บปิดที่หน้า + แผลเจาะ)\n- นัดดูแผลใน 24–48 ชม."
+    },
+    {
+     "q": "4. ต้องให้ tetanus prophylaxis หรือไม่ เพราะอะไร",
+     "a": "- เด็กได้ toxoid **ครบ 3 เข็มขึ้นไป** เข็มสุดท้ายอายุ 4 ปี (**น้อยกว่า 5 ปี**) → แม้แผลถูกกัดจะเป็น tetanus-prone **ไม่ต้องให้ toxoid และไม่ต้องให้ TIG**\n- ถ้าประวัติวัคซีนไม่แน่นอน → ให้ toxoid + TIG ตามตาราง"
+    },
+    {
+     "q": "5. จงให้คำแนะนำผู้ปกครองก่อนกลับบ้าน",
+     "a": "- ความสำคัญของการมาฉีดวัคซีน **ตรงตามนัดทุกเข็ม** (ให้บัตรนัด) — โรคเมื่อมีอาการแล้วเสียชีวิตเกือบทั้งหมด แต่ป้องกันได้ถ้าฉีดครบ\n- อาการแพ้ ERIG ที่ต้องกลับมา: ผื่น ไข้ ปวดข้อ (serum sickness ราว 1–2 สัปดาห์)\n- อาการแผลติดเชื้อ: บวมแดงร้อน หนอง ไข้\n- ติดตามสุนัข 10 วันและแจ้งผลเมื่อสุนัขผิดปกติ\n- ป้องกันในอนาคต: ไม่เล่นกับสุนัขแปลกหน้า, นำสัตว์เลี้ยงไปฉีดวัคซีนทุกปี"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 16 — Bite wounds",
+    "Schwartz 11e Ch 9",
+    "WHO Rabies vaccines position paper (2018)",
+    "แนวทางเวชปฏิบัติโรคพิษสุนัขบ้า กรมควบคุมโรค กระทรวงสาธารณสุข"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-05-OSCE1",
+   "topic": "Burn assessment and fluid calculation",
+   "station": "สถานี 7 นาที · ประเมินแผลไหม้/คำนวณสารน้ำ/สั่งการรักษา",
+   "instruction": "**สถานการณ์**: ชายอายุ 40 ปี น้ำหนัก 70 kg ถังแก๊สหุงต้มระเบิดในครัวแบบเปิดโล่ง เวลา 10:00 น. มาถึง ER เวลา 11:30 น. ยังไม่ได้รับสารน้ำ\n\nภาพ/หุ่นแสดง: **deep partial และ full thickness** ที่ **ลำตัวด้านหน้าทั้งหมด** และ **แขนทั้งสองข้างทั้งหมด**, **superficial (แดง ไม่มีตุ่มน้ำ)** ที่หน้า · พูดได้ชัด ไม่แหบ ไม่มีเขม่าในปาก BP 128/80, HR 110, SpO2 98%\n\n**งานของคุณ** (7 นาที):\n1. ประเมิน %TBSA และความลึก\n2. คำนวณสารน้ำ 24 ชม.แรกด้วย Parkland formula และบอก rate ที่ต้องให้ตอนนี้\n3. บอกการติดตาม การดูแลอื่น และการตัดสินใจส่งต่อ",
+   "answer": "1. ประเมินตาม ABCDE ก่อน (airway ปลอดภัยตอนนี้ แต่ติดตามเพราะแผลที่หน้า) (1)\n2. **%TBSA = ลำตัวหน้า 18 + แขน 9 + 9 = 36%** — **ไม่นับ** superficial burn ที่หน้า (1.5)\n3. Parkland: **4 × 70 × 36 = 10,080 mL** LRS ใน 24 ชม. (1)\n4. ครึ่งแรก **5,040 mL ภายใน 8 ชม.นับจาก 10:00 น.** (ถึง 18:00 น.) มาถึง 11:30 น. เหลือ 6.5 ชม. → **ราว 775 mL/hr** (1.5)\n5. ครึ่งหลัง 5,040 mL ใน 16 ชม. → **315 mL/hr** (0.5)\n6. **ปรับตาม urine output ราว 0.5 mL/kg/hr (35 mL/hr)** — ใส่ Foley, ลด rate ถ้าเกินเป้า เพิ่มถ้าต่ำกว่า, MAP มากกว่า 60, ระวัง fluid creep (บอกว่า ABA/ATLS แนะนำเริ่มที่ 2 mL/kg/% ได้ = 5,040 mL) (1)\n7. อื่น ๆ: IV ใหญ่ 2 เส้น, opioid IV แก้ปวด, NG tube (แผลมากกว่า 20%), ห่มอุ่น, tetanus ตามประวัติ, **ไม่ให้ antibiotic ป้องกัน**, ตรวจ COHb/ABG/lactate, ประเมิน escharotomy ถ้าเป็นรอบวง (1)\n8. **ส่งต่อ burn center**: partial thickness มากกว่า 10%, full thickness, แผลที่ข้อใหญ่/มือ (ถ้ามี) — ติดต่อแพทย์ปลายทาง ส่งพร้อมบันทึก TBSA สารน้ำ UO (1)\n\n**Fatal errors**: นับเวลาจากเวลามาถึง, นับ superficial burn, ให้ antibiotic ป้องกัน, ไม่ติดตาม urine output, cool ด้วยน้ำเย็นนานในแผลใหญ่จน hypothermia"
+  },
+  {
+   "id": "N3-05-OSCE2",
+   "topic": "Tetanus prophylaxis and wound-care counselling after laceration repair",
+   "station": "สถานี 6 นาที · สื่อสาร/ให้คำแนะนำ",
+   "instruction": "**สถานการณ์**: นายสมชาย อายุ 52 ปี เกษตรกร ถูกจอบบาดหน้าแข้งขวาขณะทำนา 4 ชม.ก่อน แผลยาว 5 cm ปนเปื้อนโคลน แพทย์ล้างแผลและเย็บแล้ว (ไหม nylon 4-0) ผู้ป่วย **จำไม่ได้ว่าเคยฉีดวัคซีนบาดทะยักหรือไม่** มีเบาหวาน\n\n**งานของคุณ** (6 นาที): อธิบายความจำเป็นของการฉีดยาป้องกันบาดทะยัก ขอความยินยอม และให้คำแนะนำการดูแลแผลและการนัดหมาย\n\n**ข้อมูลผู้ป่วยจำลอง**: \"ฉีดยาบาดทะยักเข็มเดียวพอไหมหมอ ไม่อยากมาบ่อย ต้องไปทำนา\" และถามว่า \"แผลโดนน้ำได้ไหม\"",
+   "answer": "1. แนะนำตัว ยืนยันตัวตน ถามความเข้าใจเรื่องบาดทะยัก (0.5)\n2. อธิบายโรคบาดทะยักด้วยภาษาง่าย: เชื้อในดิน/โคลน เข้าแผล สร้างพิษทำให้กล้ามเนื้อเกร็ง ขากรรไกรแข็ง อันตรายถึงชีวิต (1)\n3. อธิบายว่าแผลนี้เป็น **แผลเสี่ยง** (ปนเปื้อนโคลน) + **ไม่ทราบประวัติวัคซีน** → ต้องได้ **วัคซีน (dT) + อิมมูโนโกลบูลิน (TIG 250 IU)** ฉีดคนละแขน (1.5)\n4. ตอบข้อกังวล: เข็มเดียววันนี้ไม่พอสร้างภูมิระยะยาว ต้องฉีด **ให้ครบ 3 เข็ม** (เช่น วันนี้, 1 เดือน, 6–12 เดือน) แล้วกระตุ้นทุก 10 ปี — นัดให้ตรงกับช่วงว่างงานหรือฉีดที่ รพ.สต.ใกล้บ้านได้ (1)\n5. ผลข้างเคียงที่พบได้: ปวดบวมตำแหน่งฉีด ไข้ต่ำ (0.5)\n6. ดูแลแผล: ให้แผลแห้ง 24–48 ชม.แรก หลังจากนั้นอาบน้ำได้แต่ซับให้แห้ง **หลีกเลี่ยงการแช่โคลน/น้ำนา** ใส่รองเท้าบูท ยกขาสูง คุมน้ำตาล (1)\n7. อาการต้องกลับมาก่อนนัด: บวม แดง ร้อน ปวดมากขึ้น หนอง ไข้ แผลแยก ขากรรไกรแข็ง/กล้ามเนื้อเกร็ง (1)\n8. นัดดูแผล 2–3 วัน และตัดไหม **ราว 10–14 วัน** (หน้าแข้ง/ใกล้ข้อ ผู้ป่วยเบาหวาน) — สรุป teach-back และเปิดโอกาสให้ถาม (0.5)\n\n**Fatal errors**: ให้เพียง TIG หรือ toxoid อย่างเดียว, บอกว่าเข็มเดียวพอ, ไม่บอกอาการติดเชื้อ, บอกให้แช่น้ำนาได้ตามปกติ"
+  }
+ ]
+}

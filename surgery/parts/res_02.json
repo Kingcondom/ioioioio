@@ -1,0 +1,508 @@
+{
+ "lec": "02",
+ "date": "Schwartz Ch 4, 5, 13",
+ "title": "Shock, monitoring & coagulopathy",
+ "subtitle": "จะประเมินและแก้ไขภาวะช็อกด้วย monitoring, vasopressor และ blood products อย่างมีหลักฐาน และจัดการ anticoagulation/HIT/VTE รอบผ่าตัดได้อย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องคำนวณ DO₂/CaO₂ แปลผล hemodynamic profile และเลือกวิธีประเมิน fluid responsiveness ให้เหมาะกับสภาพผู้ป่วยได้",
+  "เรียนจบแล้วต้องจัดการ septic shock ตาม hour-1 bundle เลือก vasopressor/inotrope และ corticosteroid ตามหลักฐานจาก landmark trials ได้",
+  "เรียนจบแล้วต้องอธิบายกลไกของ trauma-induced coagulopathy และแปลผล TEG/ROTEM เพื่อเลือก blood component ได้",
+  "เรียนจบแล้วต้องสั่ง massive transfusion ตามหลัก damage control resuscitation และใช้ TXA ตามกรอบเวลาของ CRASH-2 ได้",
+  "เรียนจบแล้วต้องวางแผน bridging/reversal ของ warfarin และ DOAC รอบผ่าตัด และวินิจฉัย/รักษา HIT ได้",
+  "เรียนจบแล้วต้องเลือก VTE prophylaxis ตาม Caprini และในผู้ป่วย trauma รวมถึงข้อบ่งชี้ของ IVC filter ได้"
+ ],
+ "guidelines": [
+  "Surviving Sepsis Campaign: International guidelines for management of sepsis and septic shock (2021)",
+  "Landmark trials: Rivers EGDT (2001), ProCESS/ARISE/ProMISe (2014–2015), VASST (2008), CORTICUS (2008), ADRENAL & APROCCHSS (2018)",
+  "PROPPR (JAMA 2015), CRASH-2 (Lancet 2010), CRASH-3 (2019), PAMPer (2018); EAST practice management guidelines for TXA and transfusion ratios",
+  "BRIDGE (NEJM 2015), PAUSE (2019); ACCP/CHEST antithrombotic guidelines; ASH 2018 guideline on HIT",
+  "ATLS 10th edition (2018) — hemorrhage classes"
+ ],
+ "sections": [
+  {
+   "id": "res-02-1",
+   "title": "Hemodynamic monitoring, oxygen delivery และ fluid responsiveness",
+   "summary": "จะรู้ได้อย่างไรว่าผู้ป่วยช็อกชนิดไหน ใครควรได้สารน้ำเพิ่ม และ monitoring แบบใดมีหลักฐานจริง",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 13 — Hemodynamic monitoring, PAC, PPV, NIRS; Ch 5 — Shock classification",
+   "md": "### Oxygen delivery: สมการที่ต้องคล่อง\n- **DO₂** = CO × CaO₂ × 10 · **CaO₂** = (1.34 × Hb × SaO₂) + (0.003 × PaO₂)\n- **VO₂** = CO × (CaO₂ − CvO₂) × 10 · สัดส่วนการดึง O₂ (O₂ extraction) ปกติราว 25%\n- **SvO₂** (จาก pulmonary artery) ขึ้นกับ VO₂, CO, SaO₂ และ Hb — ค่าต่ำบอกว่า DO₂ ไม่พอเทียบกับความต้องการ (CO ต่ำ, Hb ต่ำ, hypoxemia, หรือ VO₂ สูงจากไข้/สั่น) · **ScvO₂** จาก SVC ใช้แทนได้โดยประมาณ (ปกติสูงกว่า SvO₂ เล็กน้อย)\n- ตัวเลขให้จำ: Hb มีผลต่อ CaO₂ มากกว่า PaO₂ มหาศาล — O₂ ที่ละลายมีเพียง 0.003 mL/dL ต่อ mmHg\n\n> SvO₂/ScvO₂ ที่ **สูงผิดปกติ** ในช็อก (เช่น ScvO₂ 85% ใน septic shock ที่ lactate สูง) บอกว่าเซลล์ **ดึง O₂ ไม่ได้** (microcirculatory shunt, mitochondrial dysfunction) ไม่ใช่ว่าเนื้อเยื่อได้ O₂ พอ\n\n### Hemodynamic profiles ของช็อก\n| ชนิด | CO/CI | Preload (CVP/PAOP) | SVR | SvO₂ |\n|---|---|---|---|---|\n| **Hypovolemic** | ↓ | ↓ | ↑ | ↓ |\n| **Cardiogenic** | ↓ (CI น้อยกว่า 2.2 L/min/m²) | ↑ (PAOP มากกว่า 15 mmHg) | ↑ | ↓ |\n| **Septic (หลังเติมน้ำ)** | ↑ หรือปกติ | ↓ ถึงปกติ | **↓** | ปกติถึง ↑ |\n| **Obstructive** (tamponade, tension PTX, massive PE) | ↓ | ↑ (tamponade: diastolic pressures เท่ากัน) | ↑ | ↓ |\n| **Neurogenic** | ↓ หรือปกติ · **HR ช้า** | ↓ | **↓** (ผิวอุ่น) | ปกติ |\n\nนิยาม cardiogenic shock (Schwartz): SBP น้อยกว่า 90 mmHg นานอย่างน้อย 30 นาที, CI น้อยกว่า 2.2 L/min/m², PAOP มากกว่า 15 mmHg · mortality 50–80%\n\n### Static vs dynamic: ใครตอบสนองต่อสารน้ำ\n**Fluid responsiveness** = CI/SV เพิ่ม **อย่างน้อย 10–15%** หลังให้สารน้ำมาตรฐาน มีผู้ป่วยวิกฤตเพียงราวครึ่งเดียวที่ตอบสนอง ที่เหลือได้แต่บวมน้ำ\n- **Static** (CVP, PAOP, LVEDV ครั้งเดียว) ทำนายได้ไม่ดี\n- **Pulse pressure variation (PPV)** = (PPmax − PPmin) ÷ ค่าเฉลี่ย ระหว่างรอบ positive-pressure breath — ในการศึกษาเปรียบเทียบ PPV ทำนายดีที่สุดเหนือ CVP, PAOP, systolic pressure variation · cut-off ที่ใช้บ่อย **ราว 12–13%**\n- **ข้อจำกัดของ PPV/SVV**: ต้อง **controlled ventilation ไม่มีการหายใจเอง**, tidal volume อย่างน้อย 8 mL/kg, **sinus rhythm** (AF ใช้ไม่ได้), อกปิด, ไม่มี RV failure หรือ intra-abdominal hypertension รุนแรง\n- **Passive leg raise (PLR)** = auto-bolus ราว 300 mL ใช้ได้แม้หายใจเองหรือ AF — ต้องวัด CO/SV แบบ real-time (เพิ่ม 10% ขึ้นไป = responsive) ไม่ใช่ดูแค่ BP · ใช้ไม่ได้เมื่อ IAH หรือ pelvic/spine fracture\n- อื่น ๆ: IVC collapsibility/distensibility บน ultrasound, end-expiratory occlusion test, mini-fluid challenge\n\n### Pulmonary artery catheter และ minimally invasive monitoring\n- **Connors (SUPPORT, 1996)** observational พบว่าผู้ป่วยที่ใส่ PAC ใน 24 ชม.แรกมี mortality สูงขึ้น · RCTs ต่อมา (Sandham, PAC-Man, ESCAPE) **ไม่พบประโยชน์ด้าน mortality** → เลิกใช้ routine\n- ยังมีที่ใช้: cardiogenic shock ที่ไม่ตอบสนอง, แยก shock ผสม, pulmonary hypertension, ผ่าตัดหัวใจ/ปลูกถ่ายบางกลุ่ม\n- ทางเลือก: arterial pulse contour (SV, SVV), transpulmonary thermodilution, esophageal Doppler (intraoperative goal-directed SV optimization ลดภาวะแทรกซ้อน), bedside echocardiography (ดู LV/RV, tamponade, IVC)\n- **NIRS StO₂**: ค่า 75% หรือต่ำกว่า ทำนาย MODS หลัง torso trauma ได้ใกล้เคียง **base deficit 6 mEq/L ขึ้นไป** โดยไม่ invasive\n\n### Endpoints ของ resuscitation\n| ตัวชี้วัด | ความหมาย |\n|---|---|\n| **Lactate** | ค่าแรกและ **lactate clearance** ทำนาย morbidity/mortality · SSC: วัดซ้ำถ้ามากกว่า 2 mmol/L |\n| **Base deficit** | สัมพันธ์กับ transfusion need และ mortality ใน trauma |\n| ScvO₂ 70% ขึ้นไป | เป้า Rivers EGDT (ไม่บังคับแล้วหลัง ProCESS/ARISE/ProMISe) |\n| Urine output 0.5 mL/kg/h ขึ้นไป | perfusion ไต |\n| MAP 65 mmHg ขึ้นไป | เป้า septic shock (SSC) |\n\n- Hemorrhage class (ATLS): I น้อยกว่า 15% (ราว 750 mL ในคน 70 kg) แทบไม่มีอาการ · II 15–30% HR เร็ว pulse pressure แคบ · III 30–40% **BP เริ่มตก** · IV มากกว่า 40% คุกคามชีวิตทันที ต้องผ่าตัดห้ามเลือด\n",
+   "pearls": [
+    "CaO₂ = 1.34 × Hb × SaO₂ + 0.003 × PaO₂ — Hb สำคัญกว่า PaO₂ มาก",
+    "Cardiogenic: SBP น้อยกว่า 90 นานกว่า 30 นาที, CI น้อยกว่า 2.2, PAOP มากกว่า 15",
+    "Fluid responsive = SV/CI เพิ่ม 10–15% ขึ้นไป · PPV มากกว่า 12–13% ทำนายดีกว่า CVP",
+    "PPV ใช้ไม่ได้: หายใจเอง, AF, TV ต่ำ, อกเปิด → ใช้ PLR + วัด SV real-time",
+    "PAC ไม่ลด mortality (Connors, PAC-Man, ESCAPE) → ใช้เฉพาะกรณี",
+    "ScvO₂ สูงผิดปกติในช็อก = เซลล์ดึง O₂ ไม่ได้",
+    "NIRS StO₂ 75% หรือต่ำกว่า ≈ base deficit 6 ขึ้นไป ทำนาย MODS"
+   ],
+   "items": [
+    {
+     "id": "RES-02-1-1",
+     "kind": "mcq",
+     "topic": "Pulse pressure variation — fluid responsiveness",
+     "stem": "A 64-year-old man is on day 1 after an open sigmoid colectomy for perforated diverticulitis. He is sedated and paralyzed on volume-control ventilation (tidal volume 8 mL/kg), in sinus rhythm. BP 86/50 mmHg on norepinephrine 0.1 µg/kg/min, CVP 12 mmHg, urine output 15 mL/h, lactate 3.4 mmol/L. The arterial line shows a pulse pressure variation of 19%. What is the most appropriate next step?",
+     "choices": [
+      "Give a 500-mL crystalloid bolus and reassess stroke volume",
+      "Increase norepinephrine because the CVP indicates adequate preload",
+      "Start dobutamine for presumed septic cardiomyopathy",
+      "Start furosemide to improve urine output",
+      "Insert a pulmonary artery catheter before giving any fluid"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยอยู่ในเงื่อนไขที่ **PPV ใช้ได้** (controlled ventilation, ไม่หายใจเอง, tidal volume 8 mL/kg, sinus rhythm) ค่า **19%** สูงกว่า cut-off ราว 12–13% ชัดเจน → **preload responsive** ควรให้ fluid bolus แล้วประเมิน SV/CI ซ้ำ\n- **เพิ่ม norepinephrine โดยอาศัย CVP 12** — CVP เป็น static measure ทำนายการตอบสนองต่อสารน้ำได้ไม่ดี\n- **Dobutamine** ใช้เมื่อ CO ต่ำจากหัวใจหลังเติมสารน้ำพอแล้ว ยังไม่มีหลักฐาน\n- **Furosemide** ในผู้ป่วย hypovolemic ทำให้แย่ลง\n- **PAC** ไม่เพิ่ม survival และทำให้การรักษาช้า",
+     "pearl": "PPV มากกว่า 12–13% (controlled MV, sinus, TV 8 mL/kg) = fluid responsive",
+     "src": "Schwartz 11e Ch 13",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 13"
+     ]
+    },
+    {
+     "id": "RES-02-1-2",
+     "kind": "mcq",
+     "topic": "Passive leg raise when PPV invalid",
+     "stem": "A 72-year-old woman with new atrial fibrillation (ventricular rate 105/min) is hypotensive on postoperative day 2 after a Whipple procedure. She is breathing spontaneously on pressure-support ventilation. BP 88/54 mmHg, lactate 2.9 mmol/L. A minimally invasive cardiac output monitor is in place. Which test is the most reliable predictor of whether she will increase cardiac output with fluid?",
+     "choices": [
+      "Passive leg raise with real-time measurement of stroke volume",
+      "Pulse pressure variation from the arterial waveform",
+      "Stroke volume variation from pulse contour analysis",
+      "Single central venous pressure measurement",
+      "Change in blood pressure after a 4-L crystalloid infusion"
+     ],
+     "answer": 0,
+     "explain": "PPV และ SVV **ใช้ไม่ได้** เมื่อผู้ป่วย **หายใจเอง** และมี **AF** (ความแปรปรวนของ SV มาจากจังหวะหัวใจ ไม่ใช่จากการหายใจ) **Passive leg raise** ทำหน้าที่เป็น reversible auto-bolus ราว 300 mL ใช้ได้ทั้งใน AF และการหายใจเอง ต้องวัด **SV/CO แบบ real-time** (เพิ่ม 10% ขึ้นไป = responsive)\n- **PPV** ถูกรบกวนโดย AF และการหายใจเอง\n- **SVV** มีข้อจำกัดเดียวกับ PPV\n- **CVP ค่าเดียว** ทำนายไม่ดี\n- **ให้ 4 L แล้วดู BP** ไม่ใช่การทดสอบแต่เป็นการให้สารน้ำเกินที่อาจทำอันตราย",
+     "pearl": "AF หรือหายใจเอง → ใช้ PLR + วัด SV real-time แทน PPV",
+     "src": "Schwartz 11e Ch 13",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 13"
+     ]
+    },
+    {
+     "id": "RES-02-1-3",
+     "kind": "mcq",
+     "topic": "Hemodynamic profile — cardiogenic shock",
+     "stem": "A 70-year-old man becomes hypotensive 8 hours after open repair of an abdominal aortic aneurysm. A pulmonary artery catheter shows: BP 82/56 mmHg, HR 112/min, cardiac index 1.8 L/min/m², pulmonary artery occlusion pressure 24 mmHg, CVP 14 mmHg, SVR 1,900 dyn·s/cm⁵, SvO2 48%. Abdominal compartment pressure is 12 mmHg. Which shock state best fits these values?",
+     "choices": [
+      "Cardiogenic shock",
+      "Hypovolemic shock",
+      "Septic (distributive) shock",
+      "Neurogenic shock",
+      "Abdominal compartment syndrome"
+     ],
+     "answer": 0,
+     "explain": "**CI น้อยกว่า 2.2**, **PAOP มากกว่า 15 mmHg**, **SVR สูง** และ **SvO₂ ต่ำ** = ภาพ **cardiogenic shock** (เกณฑ์ใน Schwartz: SBP น้อยกว่า 90 อย่างน้อย 30 นาที, CI น้อยกว่า 2.2, PAOP มากกว่า 15) หลังผ่าตัดหลอดเลือดใหญ่ต้องคิดถึง perioperative MI → ECG, troponin, echo, inotrope และ revascularization\n- **Hypovolemic** มี PAOP ต่ำ ไม่ใช่ 24 mmHg\n- **Septic** หลังเติมน้ำมัก CI สูงและ SVR ต่ำ\n- **Neurogenic** มี SVR ต่ำและหัวใจเต้นช้า\n- **ACS** ต้องมี IAP มากกว่า 20 mmHg ร่วมกับอวัยวะล้มเหลวใหม่ ค่า 12 mmHg เป็นเพียง grade I IAH",
+     "pearl": "CI ต่ำ + PAOP สูง + SVR สูง + SvO₂ ต่ำ = cardiogenic",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "RES-02-1-4",
+     "kind": "mcq",
+     "topic": "Determinants of oxygen delivery",
+     "stem": "A 55-year-old woman in the SICU after a liver resection has Hb 7.0 g/dL, SaO2 96%, PaO2 85 mmHg and cardiac output 5.0 L/min. Her ScvO2 is 54% and lactate is rising despite adequate volume status. Which single intervention would produce the largest increase in arterial oxygen content?",
+     "choices": [
+      "Transfusing red cells to raise hemoglobin to 9.0 g/dL",
+      "Increasing FiO2 to raise PaO2 from 85 to 300 mmHg",
+      "Increasing FiO2 to raise SaO2 from 96% to 100%",
+      "Adding PEEP to raise PaO2 from 85 to 120 mmHg",
+      "Hyperbaric oxygen to raise dissolved oxygen modestly"
+     ],
+     "answer": 0,
+     "explain": "CaO₂ = (1.34 × Hb × SaO₂) + (0.003 × PaO₂) · ปัจจุบัน ≈ 1.34 × 7 × 0.96 + 0.26 ≈ **9.3 mL/dL** · เพิ่ม Hb เป็น 9 → ≈ 11.8 mL/dL (**เพิ่มราว 2.6 mL/dL**) ซึ่งมากที่สุด\n- **PaO₂ 85→300** เพิ่ม O₂ ที่ละลายเพียง 0.003 × 215 ≈ **0.65 mL/dL**\n- **SaO₂ 96→100%** เพิ่ม 1.34 × 7 × 0.04 ≈ 0.38 mL/dL\n- **PEEP ให้ PaO₂ 120** เพิ่มเพียงราว 0.1 mL/dL และอาจลด venous return\n- **Hyperbaric O₂** เพิ่มเฉพาะส่วน dissolved ไม่คุ้มและไม่ใช่การรักษาในบริบทนี้",
+     "pearl": "CaO₂ ขึ้นกับ Hb × SaO₂ เป็นหลัก — PaO₂ มีผลน้อยมาก",
+     "src": "Schwartz 11e Ch 13",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-02-2",
+   "title": "Vasopressors, inotropes และการจัดการ septic shock",
+   "summary": "เมื่อสารน้ำไม่พอ จะเลือก vasopressor/inotrope ตัวใด ให้ steroid เมื่อไร และ landmark trials บอกอะไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 5 — Septic shock, cardiogenic shock, neurogenic shock; Surviving Sepsis Campaign 2021",
+   "md": "### Surviving Sepsis: hour-1 bundle\n| องค์ประกอบ (Schwartz Table 5-7) | รายละเอียด |\n|---|---|\n| Lactate | วัดทันที วัดซ้ำถ้ามากกว่า 2 mmol/L |\n| Blood culture | ก่อนให้ antibiotic (ไม่ให้ทำให้ช้า) |\n| **Broad-spectrum antibiotic** | ภายใน 1 ชม. เมื่อ septic shock |\n| **Crystalloid 30 mL/kg** | เมื่อ hypotension หรือ **lactate 4 mmol/L ขึ้นไป** |\n| **Vasopressor** | ถ้ายัง hypotension ระหว่าง/หลังให้สารน้ำ → **MAP 65 mmHg ขึ้นไป** |\n\n- ใช้ **balanced crystalloid** · **หลีกเลี่ยง hydroxyethyl starch** (เพิ่ม AKI/RRT และการตาย: 6S, CHEST) · พิจารณา albumin เมื่อต้องการสารน้ำปริมาณมาก\n- **Source control** เป็นหัวใจของศัลยแพทย์: drainage/debridement/ถอดอุปกรณ์ติดเชื้อโดยเร็วที่สุดที่ทำได้ (SSC แนะนำภายใน 6–12 ชม.)\n- **Rivers EGDT (2001)**: protocol 6 ชม. (CVP 8–12, MAP 65 ขึ้นไป, UO 0.5 mL/kg/h ขึ้นไป, ScvO₂ 70% ขึ้นไป) ลด 28-day mortality 49.2% → 33.3% · แต่ **ProCESS, ARISE, ProMISe (2014–2015)** ไม่พบประโยชน์ของ protocol/central line บังคับเทียบ usual care ยุคใหม่ — เพราะการรักษามาตรฐานดีขึ้นแล้ว\n\n### Vasopressors และ inotropes\n| ยา | Receptor | ผลหลัก | ใช้เมื่อ |\n|---|---|---|---|\n| **Norepinephrine** | α1 มาก, β1 ปานกลาง | ↑ SVR, ↑ CO เล็กน้อย | **first-line** septic shock |\n| **Vasopressin** 0.03 U/min | V1 | vasoconstriction ไม่ผ่าน catecholamine | เสริม NE เพื่อลดขนาด NE (catecholamine resistance) |\n| **Epinephrine** | β1, β2, α1 | ↑ CO และ SVR · lactate ขึ้น (β2) | second-line, anaphylaxis |\n| Dopamine | dose-dependent D1/β1/α1 | arrhythmia มากกว่า NE (SOAP II) | เฉพาะ bradycardia ที่เสี่ยง arrhythmia ต่ำ |\n| **Phenylephrine** | α1 ล้วน | ↑ SVR, reflex bradycardia | tachyarrhythmia, anesthesia-induced hypotension |\n| **Dobutamine** | β1 (β2) | ↑ contractility, vasodilate | **CO ต่ำ/hypoperfusion แม้ MAP และ volume พอ** |\n| Milrinone | PDE3 inhibitor | inodilator, ไม่ผ่าน β-receptor | RV failure, ผู้ป่วยที่ใช้ β-blocker |\n| Angiotensin II | AT1 | vasoconstriction | refractory vasodilatory shock (ATHOS-3) |\n\n- **VASST (2008)**: vasopressin + NE ไม่ลด mortality โดยรวม (อาจได้ประโยชน์ในกลุ่มช็อกไม่รุนแรง) ใช้เพื่อ \"NE-sparing\"\n- ถ้าอยู่ในช็อกนาน ให้ใส่ arterial line และให้ vasopressor ผ่าน central line เมื่อทำได้ (ระยะสั้นทาง peripheral ได้)\n\n### Corticosteroids ใน septic shock\n| Trial | ผล |\n|---|---|\n| Annane (2002) | hydrocortisone 50 mg q6h + fludrocortisone 50 µg 7 วัน → ลดการตายใน **relative adrenal insufficiency** |\n| **CORTICUS (2008)** | hydrocortisone ไม่ลด mortality · shock reversal เร็วขึ้น |\n| **ADRENAL (2018)** | hydrocortisone 200 mg/วัน ไม่ลด 90-day mortality แต่ช็อกหายเร็วขึ้น ใช้เครื่องช่วยหายใจสั้นลง |\n| **APROCCHSS (2018)** | hydrocortisone + fludrocortisone **ลด 90-day mortality** |\n\n> แนวทางปัจจุบัน: ให้ **hydrocortisone 200 mg/วัน** (50 mg q6h หรือ infusion) เมื่อ **ยังต้องใช้ vasopressor ต่อเนื่อง** (SSC 2021: NE หรือ epinephrine 0.25 µg/kg/min ขึ้นไปนานอย่างน้อย 4 ชม.) — ไม่ต้องทำ ACTH stimulation test ก่อน · Schwartz: พิจารณาเมื่อ SBP ยังน้อยกว่า 90 mmHg แม้ได้สารน้ำและ vasopressor เหมาะสม\n\n### Septic cardiomyopathy และการเลือก inotrope\n- ผู้ป่วย sepsis ส่วนใหญ่เป็น **hyperdynamic** (CO สูง SVR ต่ำ) แต่บางรายมี **CO ต่ำ** แม้ volume พอและ MAP ได้เป้า → ScvO₂ ต่ำ lactate ไม่ลง echo พบ LV/RV บีบตัวลด → เพิ่ม **dobutamine** (หรือเปลี่ยนเป็น epinephrine)\n- การดัน DO₂ ให้ supranormal และ optimize SvO₂ ถึง 72 ชม. **ไม่ลด mortality**\n\n### Cardiogenic และ neurogenic shock ในผู้ป่วยศัลย์\n- **Cardiogenic** (post-op MI, หลังผ่าตัดหลอดเลือด): 75% เกิดภายใน 24 ชม.หลัง MI · revascularization เร็ว (SHOCK trial) · NE เป็น vasopressor หลัก + dobutamine/milrinone · IABP ไม่ลด mortality (IABP-SHOCK II) · พิจารณา mechanical circulatory support (Impella, VA-ECMO) ในศูนย์ที่มี\n- **Neurogenic** (cervical/high thoracic cord injury เหนือ T6): สูญเสีย sympathetic → hypotension + **bradycardia** + ผิวอุ่น · ต้อง **แยก hemorrhage ก่อนเสมอ** · ให้สารน้ำพอประมาณ แล้วใช้ **norepinephrine** (มี β1 ช่วยหัวใจ) หรือ dopamine · atropine/pacing ถ้าช้ามาก · เป้า **MAP 85–90 mmHg** 7 วันแรกเพื่อ cord perfusion (ตามแนวทาง AANS/CNS) · phenylephrine อย่างเดียวอาจทำให้ bradycardia แย่ลง\n",
+   "pearls": [
+    "Hour-1 bundle: lactate, culture, antibiotic, 30 mL/kg ถ้า hypotension/lactate 4 ขึ้นไป, vasopressor MAP 65",
+    "Norepinephrine first-line · vasopressin 0.03 U/min เสริมเพื่อลดขนาด NE",
+    "Dobutamine เมื่อ CO ต่ำ/ScvO₂ ต่ำ แม้ MAP และ volume พอ",
+    "Hydrocortisone 200 mg/วันเมื่อ vasopressor สูงต่อเนื่อง ไม่ต้องทำ ACTH test",
+    "EGDT (Rivers) ดีใน 2001 แต่ ProCESS/ARISE/ProMISe ไม่พบประโยชน์ของ protocol",
+    "หลีกเลี่ยง hydroxyethyl starch ใน sepsis",
+    "Neurogenic shock: bradycardia + vasodilation → NE, MAP 85–90 · แยก hemorrhage ก่อน"
+   ],
+   "items": [
+    {
+     "id": "RES-02-2-1",
+     "kind": "mcq",
+     "topic": "First-line vasopressor in septic shock",
+     "stem": "A 67-year-old woman with acute cholangitis from a common bile duct stone has BP 76/42 mmHg, HR 118/min, temperature 39.4°C and lactate 5.2 mmol/L. Blood cultures were drawn and piperacillin–tazobactam given. After 30 mL/kg of balanced crystalloid her MAP is 56 mmHg; PPV is 6% and IVC is plethoric. ERCP is being arranged. Which vasoactive agent should be started first?",
+     "choices": [
+      "Norepinephrine",
+      "Dopamine",
+      "Phenylephrine",
+      "Dobutamine",
+      "Vasopressin as sole agent"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเป็น **septic shock** ที่ได้สารน้ำ 30 mL/kg แล้ว ไม่ fluid responsive (PPV 6%, IVC โป่ง) แต่ MAP ยังน้อยกว่า 65 → เริ่ม **norepinephrine** ซึ่งเป็น first-line (α1 เพิ่ม SVR และ β1 พยุง CO) ร่วมกับ **source control** (ERCP biliary drainage)\n- **Dopamine** มี arrhythmia มากกว่า NE (SOAP II) และ mortality ไม่ดีกว่า\n- **Phenylephrine** เป็น α ล้วน อาจลด CO ใช้เป็นทางเลือกเฉพาะกรณี\n- **Dobutamine** เป็น inotrope ทำให้ vasodilate ไม่เหมาะเป็นยาตัวแรกเมื่อ SVR ต่ำ\n- **Vasopressin เดี่ยว** ใช้เป็นยาเสริมเพื่อลดขนาด NE ไม่ใช่ตัวแรก",
+     "pearl": "Septic shock หลัง 30 mL/kg ยัง MAP ต่ำกว่า 65 → norepinephrine + source control",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "RES-02-2-2",
+     "kind": "mcq",
+     "topic": "Hydrocortisone in vasopressor-dependent septic shock",
+     "stem": "A 58-year-old man is 6 hours after Hartmann procedure for feculent peritonitis. Despite adequate volume resuscitation he requires norepinephrine 0.35 µg/kg/min plus vasopressin 0.03 U/min to keep MAP 65 mmHg. Random cortisol is pending. Which additional therapy is recommended now?",
+     "choices": [
+      "Hydrocortisone 200 mg/day intravenously in divided doses or infusion",
+      "Cosyntropin stimulation test, then steroids only if increment is less than 9 µg/dL",
+      "Methylprednisolone 1 g IV daily for 3 days",
+      "Dexamethasone 10 mg IV every 6 hours",
+      "No corticosteroid because CORTICUS showed no mortality benefit"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **vasopressor-dependent septic shock** (NE มากกว่า 0.25 µg/kg/min นานกว่า 4 ชม.) แนวทางปัจจุบันให้ **hydrocortisone 200 mg/วัน** (50 mg q6h หรือ infusion) โดย**ไม่ต้องรอผล ACTH test** — ADRENAL ทำให้ช็อกหายเร็วขึ้น และ APROCCHSS (ร่วมกับ fludrocortisone) ลด 90-day mortality\n- **Cosyntropin test ก่อน** ไม่แนะนำแล้วในการตัดสินใจให้ steroid ใน septic shock\n- **Methylprednisolone 1 g** เป็นขนาดสูง (pulse) เพิ่มการติดเชื้อ ไม่มีประโยชน์\n- **Dexamethasone** ไม่มี mineralocorticoid effect และไม่ใช่ยาที่ศึกษาใน trial เหล่านี้\n- **ไม่ให้เลย** — CORTICUS ไม่ลด mortality แต่ shock reversal เร็วขึ้น และข้อมูลใหม่สนับสนุนการให้ในกลุ่มที่ต้องใช้ vasopressor สูง",
+     "pearl": "Vasopressor ขนาดสูงต่อเนื่อง → hydrocortisone 200 mg/วัน ไม่ต้องทำ ACTH test",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "RES-02-2-3",
+     "kind": "mcq",
+     "topic": "Dobutamine for septic myocardial dysfunction",
+     "stem": "A 61-year-old woman with necrotizing soft-tissue infection of the thigh underwent radical debridement. Twelve hours later she is on norepinephrine 0.2 µg/kg/min with MAP 68 mmHg. PPV is 5%, Hb 9.2 g/dL, ScvO2 52%, lactate rising from 3.8 to 5.1 mmol/L, and bedside echo shows global LV hypokinesis with ejection fraction 25%. What is the best next step?",
+     "choices": [
+      "Add dobutamine",
+      "Give another 30 mL/kg crystalloid bolus",
+      "Transfuse red cells to Hb 12 g/dL",
+      "Add phenylephrine to increase MAP to 85 mmHg",
+      "Start a nitroglycerin infusion"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย MAP ได้เป้า volume พอ (PPV 5%) Hb พอ แต่ยังมี **hypoperfusion** (ScvO₂ 52%, lactate ขึ้น) จาก **septic cardiomyopathy** (EF 25%) → เพิ่ม **dobutamine** เพื่อเพิ่ม CO ตามคำแนะนำใน Schwartz/SSC สำหรับ cardiac dysfunction ที่ filling pressure สูง CO ต่ำ หลังได้สารน้ำและ BP แล้ว\n- **Crystalloid อีก 30 mL/kg** ผู้ป่วยไม่ fluid responsive จะเกิด pulmonary edema\n- **Transfuse ถึง Hb 12** ไม่มีประโยชน์และเพิ่มความเสี่ยง (เป้าทั่วไป 7 g/dL)\n- **Phenylephrine เพิ่ม MAP** เพิ่ม afterload ลด CO ของหัวใจที่อ่อนแอ\n- **Nitroglycerin** ลด preload และ BP ในผู้ป่วยช็อก",
+     "pearl": "MAP ได้ + volume พอ แต่ CO ต่ำ/ScvO₂ ต่ำ → dobutamine",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "RES-02-2-4",
+     "kind": "mcq",
+     "topic": "Neurogenic shock management",
+     "stem": "A 24-year-old man fell from a mango tree and has a C5 burst fracture with complete quadriplegia. BP 78/40 mmHg, HR 46/min, warm dry extremities. FAST, chest and pelvic radiographs are negative and there is no external bleeding. After 2 L of crystalloid BP is 84/46 mmHg. Which vasoactive agent is most appropriate?",
+     "choices": [
+      "Norepinephrine",
+      "Phenylephrine",
+      "Dobutamine",
+      "Milrinone",
+      "Vasopressin"
+     ],
+     "answer": 0,
+     "explain": "**Neurogenic shock** จาก cervical cord injury: สูญเสีย sympathetic tone → vasodilation (ผิวอุ่น) และ unopposed vagal → **bradycardia** หลังแยก hemorrhagic shock แล้วและให้สารน้ำพอประมาณ ยาที่เหมาะคือ **norepinephrine** ซึ่งมีทั้ง α1 (เพิ่ม SVR) และ β1 (เพิ่ม HR/contractility) เป้า **MAP 85–90 mmHg** ในสัปดาห์แรกเพื่อ cord perfusion\n- **Phenylephrine** เป็น α ล้วน ทำให้ reflex bradycardia แย่ลงในผู้ป่วยที่ HR 46 อยู่แล้ว\n- **Dobutamine** ทำให้ vasodilate BP อาจตกลงอีก\n- **Milrinone** เป็น inodilator ลด SVR\n- **Vasopressin** ไม่แก้ bradycardia และไม่ใช่ยาหลัก",
+     "pearl": "Neurogenic shock: แยกเลือดออกก่อน → NE (α+β1) เป้า MAP 85–90",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-02-3",
+   "title": "Trauma-induced coagulopathy, TEG/ROTEM, MTP ratios และ TXA",
+   "summary": "ทำไมผู้บาดเจ็บรุนแรงเลือดไม่แข็งตั้งแต่มาถึง และจะใช้ ratio, viscoelastic test และ TXA ให้ถูกจังหวะอย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 4 — Coagulopathy of trauma, damage control resuscitation, viscoelastic assays, TXA; Ch 7 — Massive transfusion protocol",
+   "md": "### Trauma-induced coagulopathy (TIC) ไม่ใช่แค่ dilution\n**TIC** เกิดตั้งแต่ก่อนให้สารน้ำ (ผู้ป่วยบาดเจ็บรุนแรงราว 1 ใน 4 มี coagulopathy เมื่อมาถึง และตายมากกว่าหลายเท่า) เป็นกระบวนการแยกจาก DIC กลไกหลักที่เสนอ:\n- **Activated protein C** (shock + tissue injury → thrombomodulin–thrombin → APC) → ทำลาย factor Va/VIIIa และกิน PAI-1 → **hyperfibrinolysis**\n- **Endothelial glycocalyx (EGL) shedding** (syndecan-1 ↑) → \"auto-heparinization\" และ permeability สูง\n- **Platelet dysfunction** แม้นับได้ปกติ\n- **Hyperfibrinolysis** จาก tPA หลั่งมากและ PAI-1 ลด\n- ซ้ำเติมด้วย **lethal triad**: hypothermia (enzyme ช้า), acidosis, coagulopathy + hemodilution + hypocalcemia\n- TBI และ pulmonary contusion ทำให้เกิด TIC ได้แม้ไม่ช็อก (tissue factor ออกมาจำนวนมาก)\n\n### Viscoelastic testing: TEG และ ROTEM\nได้ผลภายในราว **15 นาที** (conventional tests อย่างน้อย 45 นาที) และวัดทุกขั้นตั้งแต่เริ่มก่อลิ่มถึง lysis\n\n| TEG parameter | สะท้อน | ค่าผิดปกติ → แก้ด้วย (Denver rapid TEG) |\n|---|---|---|\n| **R time / ACT** | clotting factors เริ่มสร้าง fibrin | ACT มากกว่า 128 วินาที → **plasma** |\n| K time | factors + fibrinogen ถึงความแข็งระดับหนึ่ง | ยาว → plasma/cryo |\n| **α angle** | ความเร็วการสร้างลิ่ม ส่วนใหญ่ **fibrinogen** | น้อยกว่า 65° → **cryoprecipitate**/fibrinogen |\n| **MA** | ความแข็งสูงสุด (**platelet** ราว 80% + fibrinogen) | น้อยกว่า 55 mm → **platelets** |\n| **LY30** | % lysis 30 นาทีหลัง MA | สูง → **TXA** |\n\n- ROTEM เทียบเคียง: CT (≈R), A5/A10 และ MCF (≈MA), **FIBTEM** แยกส่วน fibrinogen ออกจาก platelet, ML (≈LY30)\n- **Fibrinolytic phenotypes** (2,540 ราย): **shutdown** (LY30 น้อยกว่า 0.8%) mortality 22% · **physiologic** (0.8–2.9%) 14% · **hyperfibrinolysis** (3% ขึ้นไป) 34% ตายจากเลือดออก → ข้อโต้แย้งว่าควรให้ TXA แบบ empiric หรือตาม TEG\n- ถ้าไม่มี TEG: PT/PTT มากกว่า 1.5 เท่า → plasma · platelet น้อยกว่า 50,000 → platelets · fibrinogen น้อยกว่า 100 mg/dL → cryo (แนวทางยุโรปใช้ fibrinogen น้อยกว่า 1.5 g/L)\n\n### Damage control resuscitation และ massive transfusion\nหลัก DCR: **permissive hypotension** (SBP ราว 80–90 mmHg จนกว่าห้ามเลือดได้ ยกเว้น TBI), **จำกัด crystalloid**, ให้ blood products ใน **balanced ratio** ตั้งแต่ถุงแรก, **ห้ามเลือดให้เร็วที่สุด** (OR/IR), แก้ hypothermia/acidosis/**calcium**\n\n| คำ | นิยาม/ตัวเลข |\n|---|---|\n| Massive transfusion | ราว 10 units RBC ขึ้นไปใน 24 ชม. (หรือ 3 units ขึ้นไปใน 1 ชม. = critical administration threshold) |\n| **ABC score** | penetrating mechanism, SBP 90 หรือต่ำกว่า, HR 120 ขึ้นไป, FAST บวก · **2 ข้อขึ้นไป** → activate MTP · พลาดน้อยกว่า 5% |\n| Denver MTP trigger | SBP 70 หรือต่ำกว่า หรือ SBP 71–90 ร่วม HR 108 ขึ้นไป ร่วมกับ penetrating torso, major pelvic fracture หรือ FAST บวกมากกว่า 1 ตำแหน่ง |\n| ลำดับเลือด | O-uncrossmatched ทันที → type-specific (5–10 นาที) → crossmatched (ราว 40 นาที) |\n\n**PROPPR (JAMA 2015)**: 680 ราย 12 level I centers สุ่ม plasma:platelet:RBC **1:1:1 vs 1:1:2**\n- all-cause mortality **24 ชม. 13% vs 17%, 30 วัน 22% vs 26% — ไม่ต่างกันอย่างมีนัยสำคัญ**\n- **ตายจาก exsanguination ใน 24 ชม. ลดลง (9% vs 15%)** และ **ได้ hemostasis มากกว่า (86% vs 78%)**\n- ไม่มีความต่างใน 23 secondary outcomes (ARDS, sepsis, MOF, VTE)\n\nเสริม: **PAMPer (2018)** prehospital plasma ระหว่างลำเลียงทางอากาศลด 30-day mortality · **Low-titer O whole blood** กำลังกลับมาใช้ (Hct, factors, platelets เข้มข้นกว่า 1:1:1 component)\n\n### Calcium และภาวะแทรกซ้อนของ massive transfusion\n- **Citrate** ในถุงเลือดจับ Ca²⁺ → **hypocalcemia** (ลด contractility, vasodilation, coagulation เพราะ Ca คือ factor IV) → ให้ **CaCl₂ 1 g** ตั้งแต่ต้นและตาม iCa (เป้าราว 1.1 mmol/L ขึ้นไป)\n- **Hyperkalemia** (เลือดเก็บนาน), hypothermia (ใช้ rapid infuser/warmer), TACO, TRALI, dilutional thrombocytopenia\n- หยุด MTP เมื่อห้ามเลือดได้ ไม่ให้ต่อจน over-transfuse\n\n### Tranexamic acid (TXA)\n- กลไก: **lysine analogue** จับ lysine-binding site ของ plasminogen → ไม่จับ fibrin ไม่ถูก activate เป็น plasmin (แรงกว่า aminocaproic acid 10 เท่า) · ขับทางไต half-life ราว 2 ชม.\n- **CRASH-2 (Lancet 2010)**: 20,211 รายใน 40 ประเทศ ผู้บาดเจ็บที่มี/เสี่ยงเลือดออกมาก · **1 g IV ใน 10 นาที แล้ว 1 g ใน 8 ชม.** → all-cause mortality **14.5% vs 16.0%**, ตายจากเลือดออกลดลง ไม่เพิ่ม vascular occlusive events\n- วิเคราะห์ตามเวลา: **ให้ภายใน 1 ชม.ได้ผลมากที่สุด, 1–3 ชม.ยังได้ผล, หลัง 3 ชม. เพิ่มการตายจากเลือดออก** → ให้เฉพาะภายใน 3 ชม.หลังบาดเจ็บ\n- **CRASH-3 (2019)**: TBI ให้ภายใน 3 ชม. ลดการตายจาก head injury ในกลุ่ม mild–moderate\n- EAST: conditional recommendation ใช้ TXA ในผู้บาดเจ็บรุนแรงเมื่อให้เร็ว · ห้ามใช้ร่วมกับ aPCC/factor IX complex และระวังใน active intravascular clotting\n",
+   "pearls": [
+    "TIC: APC, glycocalyx shedding, platelet dysfunction, hyperfibrinolysis — เกิดก่อน dilution",
+    "TEG: R/ACT→plasma, angle→cryo, MA→platelet, LY30→TXA · ได้ผลใน 15 นาที",
+    "Fibrinolysis: shutdown น้อยกว่า 0.8% (22%), physiologic (14%), hyper 3% ขึ้นไป (34%)",
+    "PROPPR: 1:1:1 ลดตายจาก exsanguination 24 ชม. 9% vs 15% แต่ 24 ชม./30 วัน all-cause ไม่ต่าง",
+    "ABC score 2 ข้อขึ้นไป → activate MTP",
+    "CRASH-2: TXA 1 g + 1 g/8 ชม. ภายใน 3 ชม. (ดีสุดภายใน 1 ชม.) — หลัง 3 ชม.เพิ่มตาย",
+    "Citrate → iCa ต่ำ → CaCl₂ ตั้งแต่ต้น"
+   ],
+   "mnem": [
+    {
+     "name": "ABC score",
+     "what": "ทำนาย massive transfusion ข้างเตียง (2 ข้อขึ้นไป = activate MTP)",
+     "lines": [
+      [
+       "P",
+       "Penetrating mechanism"
+      ],
+      [
+       "S",
+       "SBP 90 mmHg หรือต่ำกว่า"
+      ],
+      [
+       "H",
+       "HR 120/min ขึ้นไป"
+      ],
+      [
+       "F",
+       "FAST บวก"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RES-02-3-1",
+     "kind": "mcq",
+     "topic": "PROPPR trial results",
+     "stem": "A trauma center is revising its massive transfusion protocol. A resident summarizes the Pragmatic Randomized Optimal Platelet and Plasma Ratios (PROPPR) trial, which randomized 680 bleeding trauma patients to plasma:platelet:RBC 1:1:1 versus 1:1:2. Which statement correctly describes its principal findings?",
+     "choices": [
+      "No significant difference in 24-hour or 30-day all-cause mortality, but fewer deaths from exsanguination at 24 hours and more patients achieving hemostasis with 1:1:1",
+      "Significantly lower 30-day all-cause mortality with 1:1:1",
+      "Higher rates of ARDS and multiple organ failure with 1:1:1 because of greater plasma volume",
+      "No difference in hemostasis, but fewer venous thromboembolic events with 1:1:2",
+      "Significantly lower 24-hour all-cause mortality with 1:1:2"
+     ],
+     "answer": 0,
+     "explain": "**PROPPR (2015)**: all-cause mortality ที่ **24 ชม. (13% vs 17%) และ 30 วัน (22% vs 26%) ไม่ต่างกันอย่างมีนัยสำคัญ** แต่ 1:1:1 **ลดการตายจาก exsanguination ใน 24 ชม. (9% vs 15%)** และได้ **hemostasis มากกว่า (86% vs 78%)** โดยไม่เพิ่มภาวะแทรกซ้อนใน 23 secondary outcomes จึงเป็นเหตุผลให้ MTP ใช้ balanced ratio ตั้งแต่ต้น\n- **30-day mortality ลดลงอย่างมีนัยสำคัญ** — ไม่จริง เป็นเพียงแนวโน้ม\n- **ARDS/MOF มากขึ้น** — ไม่พบความต่าง\n- **VTE น้อยกว่าใน 1:1:2** — ไม่พบความต่าง และ hemostasis ต่างกัน\n- **1:1:2 ดีกว่าที่ 24 ชม.** — ผลตรงข้าม",
+     "pearl": "PROPPR: 1:1:1 ลดตายจาก exsanguination 24 ชม. + hemostasis มากขึ้น แต่ all-cause mortality ไม่ต่าง",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-3-2",
+     "kind": "mcq",
+     "topic": "TEG-guided component therapy",
+     "stem": "A 33-year-old man with a grade IV liver injury is in the OR after receiving 8 units RBC, 8 plasma and 1 apheresis platelet under the MTP. Diffuse oozing continues from raw surfaces despite packing. Temperature 35.9°C, pH 7.30, ionized calcium 1.15 mmol/L. Rapid TEG: ACT 115 s (normal), angle 68° (normal), MA 44 mm (low), LY30 1.5%. Which product is most indicated?",
+     "choices": [
+      "Apheresis platelets",
+      "Thawed plasma",
+      "Cryoprecipitate",
+      "Tranexamic acid",
+      "Recombinant factor VIIa"
+     ],
+     "answer": 0,
+     "explain": "TEG ผิดปกติเพียง **MA ต่ำ (44 mm, เกณฑ์น้อยกว่า 55)** ซึ่งสะท้อน **ความแข็งของลิ่ม** ที่มาจาก **platelet** เป็นหลัก ขณะที่ ACT (factors) และ angle (fibrinogen) ปกติ → ให้ **platelets** ตาม TEG-guided protocol\n- **Plasma** ใช้เมื่อ ACT/R ยาว\n- **Cryoprecipitate** ใช้เมื่อ angle ต่ำ (fibrinogen) หรือ MA ต่ำร่วมกับ angle ต่ำ\n- **TXA** ใช้เมื่อ LY30 สูง (hyperfibrinolysis) ค่านี้อยู่ช่วง physiologic\n- **rFVIIa** ไม่ใช่การรักษาหลักและไม่แก้ platelet deficit",
+     "pearl": "TEG: R/ACT→plasma, angle→cryo, MA→platelets, LY30→TXA",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-3-3",
+     "kind": "mcq",
+     "topic": "TXA timing — CRASH-2",
+     "stem": "A 45-year-old woman is transferred from a district hospital after a rollover crash. She arrives 4 hours after injury with a pelvic fracture, HR 120/min, BP 88/50 mmHg. She has not received tranexamic acid. Rapid TEG shows LY30 of 1.2%. Pelvic angioembolization is being arranged. Regarding tranexamic acid, what is the most appropriate decision?",
+     "choices": [
+      "Do not give empiric tranexamic acid because more than 3 hours have elapsed and there is no hyperfibrinolysis",
+      "Give 1 g over 10 minutes then 1 g over 8 hours, because benefit is independent of timing",
+      "Give 2 g as a single bolus to compensate for the delay",
+      "Give tranexamic acid with activated prothrombin complex concentrate",
+      "Give aminocaproic acid instead because it is more potent than tranexamic acid"
+     ],
+     "answer": 0,
+     "explain": "**CRASH-2**: TXA ลด all-cause mortality (14.5% vs 16.0%) แต่ผลขึ้นกับเวลา — **ภายใน 1 ชม.ได้ผลมากที่สุด**, 1–3 ชม.ยังได้ผล และ **หลัง 3 ชม.เพิ่มการตายจากเลือดออก** ผู้ป่วยมาถึงหลัง 4 ชม.และ TEG ไม่มี hyperfibrinolysis (LY30 อยู่ช่วง physiologic 0.8–2.9%) จึง**ไม่ควรให้ empiric TXA** และมุ่งห้ามเลือดด้วย angioembolization/DCR\n- **ให้ตามสูตรเพราะไม่ขึ้นกับเวลา** — ผิด ผลขึ้นกับเวลาชัดเจน\n- **2 g bolus** ไม่มีหลักฐานว่าชดเชยความล่าช้า (ในบางบริบท prehospital ใช้ 2 g แต่ต้องภายในกรอบเวลา)\n- **ร่วมกับ aPCC** เป็นข้อห้ามเพราะเสี่ยง thrombosis\n- **Aminocaproic acid** อ่อนกว่า TXA ราว 10 เท่า",
+     "pearl": "TXA ต้องให้ภายใน 3 ชม. (ดีที่สุดภายใน 1 ชม.) — หลัง 3 ชม.เพิ่มตาย",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-3-4",
+     "kind": "mcq",
+     "topic": "Hypocalcemia during massive transfusion",
+     "stem": "A 29-year-old man with gunshot wounds to the abdomen has received 14 units of RBC and 12 units of plasma over 70 minutes. Despite surgical control of the major bleeding, he remains hypotensive with poor cardiac contractility on transesophageal echo, and the field shows diffuse oozing. Temperature 36.2°C, K 5.1 mEq/L, ionized calcium 0.72 mmol/L. What is the most appropriate immediate intervention?",
+     "choices": [
+      "Intravenous calcium chloride",
+      "Sodium bicarbonate infusion",
+      "Additional platelet transfusion",
+      "Insulin with dextrose",
+      "Desmopressin (DDAVP)"
+     ],
+     "answer": 0,
+     "explain": "เลือดและ plasma มี **citrate** เป็น anticoagulant ซึ่งจับ Ca²⁺ เมื่อให้เร็วและมาก (ตับเผาผลาญ citrate ไม่ทัน โดยเฉพาะเมื่อช็อก/hypothermia) → **ionized hypocalcemia** ทำให้หัวใจบีบตัวลด vasodilation และ coagulation บกพร่อง (Ca คือ factor IV) ต้องให้ **CaCl₂** (ให้ Ca ธาตุมากกว่า calcium gluconate 3 เท่า) ตาม iCa\n- **Bicarbonate** ไม่แก้สาเหตุและยิ่งลด iCa\n- **Platelets** อาจต้องใช้แต่ยังไม่แก้ hypocalcemia ที่เป็นปัญหาเด่น\n- **Insulin/dextrose** สำหรับ hyperkalemia ที่รุนแรง ค่า K 5.1 ยังไม่ใช่ปัญหาหลัก\n- **DDAVP** ใช้ใน uremic platelet dysfunction/vWD",
+     "pearl": "MTP: citrate → iCa ต่ำ → ให้ CaCl₂ ตั้งแต่ต้นและตามค่า",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-02-4",
+   "title": "Perioperative anticoagulation, HIT และ VTE prophylaxis/treatment",
+   "summary": "จะจัดการยาต้านการแข็งตัวของเลือดรอบผ่าตัดอย่างไร วินิจฉัยและรักษา HIT อย่างไร และให้ VTE prophylaxis ใครเมื่อไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 4 — Anticoagulation and bleeding, HIT; Ch 7 — Prophylactic measures; Ch 24 — VTE prophylaxis",
+   "md": "### Warfarin: หยุด, bridge หรือ reverse\n- Elective: หยุด warfarin **5 วัน** ก่อนผ่าตัด ตรวจ INR วันก่อนผ่าตัด\n- **Bridging** ด้วย LMWH/UFH: แนวโน้มลดลง — **BRIDGE (NEJM 2015)** ใน AF: ไม่ bridge **ไม่ด้อยกว่า** ด้าน arterial thromboembolism (0.4% vs 0.3%) และ **major bleeding น้อยกว่า (1.3% vs 3.2%)** Schwartz: bridging เพิ่มเลือดออกโดยไม่ลด VTE\n- กลุ่มเสี่ยงสูงที่ยังควร bridge: **mechanical heart valve** (โดยเฉพาะ mitral, ball-cage, หลาย valve), stroke/MI/PE/VTE ภายใน 30 วัน–3 เดือน, thrombophilia รุนแรง · heparin infusion หยุด **4–6 ชม.** ก่อนผ่าตัด และเริ่มใหม่ **12–24 ชม.** หลังผ่าตัดถ้าห้ามเลือดได้ (LMWH therapeutic dose สุดท้ายราว 24 ชม.ก่อน)\n- **Emergency/life-threatening bleeding**: **4-factor PCC** (II, VII, IX, X) แก้ INR เร็วและแม่นกว่า plasma ปริมาณน้อย ไม่ overload + **vitamin K 10 mg IV ช้า ๆ** (ให้ผลคงอยู่เพราะ PCC/plasma half-life สั้น) · 4F-PCC แก้ INR ได้ดีกว่า 3F-PCC\n- Vitamin K ไม่ได้ผลเมื่อ coagulopathy มาจาก hepatocellular failure\n\n### DOACs และยาต้านเกล็ดเลือด\n| ยา | ระยะหยุดก่อนผ่าตัด (ไตปกติ) | Reversal ฉุกเฉิน |\n|---|---|---|\n| **Dabigatran** (thrombin inhibitor) | 1–2 วัน (ไตเสื่อม CrCl น้อยกว่า 50 ให้ 2–4 วัน) | **idarucizumab 5 g** · dialyzable |\n| **Apixaban, rivaroxaban, edoxaban** (Xa) | Schwartz: 36–48 ชม. · PAUSE (2019): 1 วัน (low-bleed) หรือ 2 วัน (high-bleed) **ไม่ต้อง bridge** | **andexanet alfa** หรือ **4F-PCC (ราว 50 U/kg)** |\n| UFH | หยุด 4–6 ชม. | **protamine** 1 mg ต่อ UFH 100 units ที่ให้ใน 2–3 ชม.ที่ผ่านมา |\n| LMWH | 24 ชม. (therapeutic) | protamine แก้ได้บางส่วน (ราว 60%) |\n| Clopidogrel / ticagrelor / prasugrel | 5 / 3–5 / 7 วัน | platelet transfusion (ticagrelor แก้ยาก) |\n| Aspirin | ส่วนใหญ่ **ให้ต่อ** (ยกเว้น neurosurgery, ต่อมลูกหมาก) | platelet, DDAVP |\n\n- ตรวจระดับยา: ACT/ecarin clotting time สำหรับ dabigatran, anti-Xa สำหรับ Xa inhibitor (PT/aPTT ปกติไม่ได้ตัดการมียา)\n- ผู้ป่วยใส่ **drug-eluting stent**: เลื่อน elective surgery ออกไปอย่างน้อย 6 เดือน (12 เดือนถ้าใส่จาก ACS) และห้ามหยุด DAPT เองโดยไม่ปรึกษา cardiologist\n\n### Heparin-induced thrombocytopenia (HIT)\n- **Immune-mediated**: IgG ต่อ **PF4–heparin complex** กระตุ้นเกล็ดเลือดผ่าน FcγRIIa → thrombocytopenia **และ thrombosis** (venous มากกว่า arterial)\n- เกิด **5–10 วัน** หลังเริ่ม heparin (Schwartz: เริ่มตก 5–7 วัน) · ถ้าเคยได้ heparin ใน 100 วันก่อนอาจเกิดภายใน 1–2 วัน\n- สงสัยเมื่อ platelet **น้อยกว่า 100,000 หรือลดลง 50% จาก baseline** — ไม่จำเป็นต้องต่ำมาก (nadir มักราว 50,000–80,000)\n- UFH full-dose 1–3% (มากกว่า LMWH) · antibody เกิดใน UFH ราว 17% และ LMWH 8% แต่เกิด HIT จริงน้อยกว่ามาก · พบบ่อยใน **ผ่าตัดหัวใจ/ออร์โธปิดิกส์** มากกว่า medical\n\n| 4Ts | 2 คะแนน | 1 คะแนน | 0 คะแนน |\n|---|---|---|---|\n| **Thrombocytopenia** | ลด มากกว่า 50% และ nadir 20,000 ขึ้นไป | ลด 30–50% หรือ nadir 10,000–19,000 | ลดน้อยกว่า 30% หรือ nadir น้อยกว่า 10,000 |\n| **Timing** | วันที่ 5–10 หรือ 1 วันถ้าเคยได้ใน 30 วัน | หลังวันที่ 10 หรือไม่ชัด | น้อยกว่า 4 วันโดยไม่เคยได้ |\n| **Thrombosis** | thrombosis ใหม่ยืนยัน, skin necrosis | สงสัย/เป็นซ้ำ | ไม่มี |\n| **oTher cause** | ไม่มีสาเหตุอื่น | อาจมี | มีสาเหตุชัด |\n\nแปลผล: **0–3 ต่ำ** (NPV สูงมาก ไม่ต้องตรวจต่อ) · 4–5 ปานกลาง · 6–8 สูง\n\n### การรักษา HIT\n1. **หยุด heparin ทุกรูปแบบ** รวม flush, heparin-coated catheter และ **ห้ามเปลี่ยนเป็น LMWH**\n2. **เริ่ม non-heparin anticoagulant ทันที** (แค่หยุด heparin ไม่พอ — thrombosis สูงมาก): **argatroban** (ขับทางตับ → **เลือกเมื่อไตวาย**), bivalirudin (ขับทางไตบางส่วน ใช้ใน cardiac surgery/PCI), fondaparinux, หรือ DOAC ในรายเสถียร\n3. ส่ง **anti-PF4/heparin ELISA** (NPV สูง, PPV ต่ำ) และยืนยันด้วย functional assay (**serotonin release assay**)\n4. **ห้ามเริ่ม warfarin จนกว่า platelet ฟื้น** (มักใช้ 150,000 ขึ้นไป) — warfarin ลด protein C เร็ว → **venous limb gangrene/skin necrosis** · overlap อย่างน้อย 5 วัน และถ้าได้ warfarin อยู่ตอนวินิจฉัยให้ vitamin K\n5. **ไม่ให้ platelet transfusion** เว้นแต่เลือดออกหรือต้องทำหัตถการเสี่ยงสูง\n6. ระยะเวลา: HIT ไม่มี thrombosis อย่างน้อย 4–6 สัปดาห์ · มี thrombosis 3 เดือน\n\n### VTE prophylaxis และการรักษา\n| ความเสี่ยง (Caprini, general/abdominopelvic surgery) | VTE โดยประมาณ | Prophylaxis |\n|---|---|---|\n| Very low (0) | น้อยกว่า 0.5% | early ambulation |\n| Low (1–2) | ราว 1.5% | mechanical |\n| Moderate (3–4) | ราว 3% | LMWH หรือ LDUH หรือ mechanical |\n| **High (5 ขึ้นไป)** | ราว 6% | LMWH/LDUH + mechanical · **มะเร็งช่องท้อง/อุ้งเชิงกราน: extended LMWH 4 สัปดาห์** |\n| เสี่ยงเลือดออกสูง | — | mechanical จนกว่าจะปลอดภัย |\n\n- **Trauma**: กลุ่มเสี่ยงสูง = pelvic/lower-extremity fractures หลายตำแหน่ง, TBI, **spinal cord injury**, ligation ของหลอดเลือดดำใหญ่, อ้วน, อายุมากกว่า 55 ปี · เริ่ม **LMWH (เช่น enoxaparin 30 mg q12h) ทันทีที่ห้ามเลือดได้และ intracranial pathology คงที่** (TBI: CT ซ้ำคงที่ มักภายใน 24–72 ชม.) · LMWH ดีกว่า UFH ใน trauma · SCD ยกเว้นขาหัก/vascular injury\n- **IVC filter (removable)**: เมื่อมี VTE แล้ว **ห้ามให้ anticoagulant** หรือมีข้อห้ามระยะยาวในผู้เสี่ยงสูง — **ไม่ใช้ prophylactic routine**\n- **การรักษา VTE** (CHEST): DOAC เป็น first-line ในผู้ไม่เป็นมะเร็ง · มะเร็ง: LMWH หรือ apixaban/edoxaban/rivaroxaban · provoked by surgery: **3 เดือน** · massive PE (SBP น้อยกว่า 90 นานกว่า 15 นาที) → systemic thrombolysis ถ้าไม่มีข้อห้าม (หลังผ่าตัดใหญ่มักห้าม → catheter-directed/surgical embolectomy)\n",
+   "pearls": [
+    "Warfarin หยุด 5 วัน · AF ทั่วไปไม่ต้อง bridge (BRIDGE) · mechanical valve/VTE ใหม่ยัง bridge",
+    "Warfarin ฉุกเฉิน: 4F-PCC + vitamin K 10 mg IV",
+    "Dabigatran → idarucizumab · Xa inhibitor → andexanet หรือ 4F-PCC",
+    "HIT: platelet น้อยกว่า 100,000 หรือลด 50% วันที่ 5–10 + thrombosis · 4Ts 0–3 = ต่ำ",
+    "HIT: หยุด heparin ทุกชนิด + argatroban (ไตวาย) · ห้าม LMWH, warfarin ก่อน platelet ฟื้น, platelet transfusion",
+    "Caprini 5 ขึ้นไป: LMWH + mechanical · มะเร็งช่องท้อง/อุ้งเชิงกราน extended 4 สัปดาห์",
+    "Trauma: LMWH ทันทีที่เลือดหยุด/CT สมองคงที่ · IVC filter เฉพาะห้าม anticoagulant"
+   ],
+   "mnem": [
+    {
+     "name": "4Ts",
+     "what": "ประเมิน pretest probability ของ HIT",
+     "lines": [
+      [
+       "T",
+       "Thrombocytopenia — ลดมากกว่า 50%, nadir 20,000 ขึ้นไป"
+      ],
+      [
+       "T",
+       "Timing — วันที่ 5–10 (หรือ 1 วันถ้าเคยได้ heparin ใน 30 วัน)"
+      ],
+      [
+       "T",
+       "Thrombosis — ลิ่มเลือดใหม่, skin necrosis"
+      ],
+      [
+       "T",
+       "oTher causes — ไม่มีสาเหตุอื่นของ platelet ต่ำ"
+      ]
+     ],
+     "note": "0–3 ต่ำ · 4–5 ปานกลาง · 6–8 สูง"
+    }
+   ],
+   "items": [
+    {
+     "id": "RES-02-4-1",
+     "kind": "mcq",
+     "topic": "HIT with renal failure",
+     "stem": "A 71-year-old man is on postoperative day 8 after an emergency subtotal colectomy and has received unfractionated heparin 5,000 U SC q8h since admission. His platelet count fell from 260,000 to 92,000/µL over 3 days, and duplex shows a new left femoral DVT. There is no other cause for thrombocytopenia. Creatinine is 3.1 mg/dL (baseline 1.0). Anti-PF4/heparin ELISA has been sent. Besides stopping all heparin, what is the most appropriate treatment?",
+     "choices": [
+      "Argatroban infusion",
+      "Enoxaparin 1 mg/kg q12h",
+      "Warfarin with INR target 2–3",
+      "Platelet transfusion and observation",
+      "Fondaparinux 7.5 mg daily"
+     ],
+     "answer": 0,
+     "explain": "4Ts = **8 (high probability)**: platelet ลดมากกว่า 50% (2), วันที่ 5–10 (2), thrombosis ใหม่ (2), ไม่มีสาเหตุอื่น (2) → **รักษาทันทีไม่ต้องรอผล ELISA** ด้วยการหยุด heparin ทุกชนิดและเริ่ม **non-heparin anticoagulant** ผู้ป่วยมี **AKI (Cr 3.1)** จึงเลือก **argatroban** (direct thrombin inhibitor ที่ขับทางตับ) ตามคำแนะนำของ ACCP ที่ Schwartz อ้าง\n- **Enoxaparin** cross-react กับ HIT antibody ห้ามใช้\n- **Warfarin ตอนนี้** ลด protein C เร็ว → venous limb gangrene ต้องรอ platelet ฟื้น\n- **Platelet transfusion** เพิ่มความเสี่ยง thrombosis ไม่ใช่การรักษา\n- **Fondaparinux** ขับทางไต ข้อห้ามเมื่อ CrCl ต่ำ",
+     "pearl": "HIT + ไตวาย → argatroban (ขับทางตับ) · ห้าม LMWH/warfarin/platelet",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-4-2",
+     "kind": "mcq",
+     "topic": "Perioperative bridging — BRIDGE trial",
+     "stem": "A 69-year-old woman with nonvalvular atrial fibrillation (CHA2DS2-VASc 4, no prior stroke or TIA) takes warfarin with stable INR 2.4. She is scheduled for elective laparoscopic right hemicolectomy for cancer. Creatinine is normal. What is the most appropriate perioperative anticoagulation plan?",
+     "choices": [
+      "Stop warfarin 5 days before surgery without bridging, then resume when hemostasis is secure",
+      "Stop warfarin 5 days before and give therapeutic enoxaparin until 24 hours before surgery",
+      "Continue warfarin through surgery with INR 2–3",
+      "Stop warfarin 1 day before surgery and give vitamin K the morning of surgery",
+      "Stop warfarin 5 days before and place a retrievable IVC filter"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย AF ที่ไม่มีประวัติ stroke ไม่มี mechanical valve และไม่มี VTE เร็ว ๆ นี้ ถือว่า **ไม่ใช่กลุ่มเสี่ยงสูง** **BRIDGE (2015)**: การไม่ bridge **ไม่ด้อยกว่า** ด้าน arterial thromboembolism (0.4% vs 0.3%) และ **major bleeding น้อยกว่า (1.3% vs 3.2%)** → หยุด warfarin 5 วัน ไม่ bridge เริ่มใหม่หลังผ่าตัดเมื่อห้ามเลือดได้ (12–24 ชม.) ร่วม VTE prophylaxis ตาม Caprini\n- **Therapeutic enoxaparin bridge** เพิ่ม bleeding โดยไม่ลด thromboembolism\n- **ทำผ่าตัดใหญ่ขณะ INR 2–3** เลือดออกมากเกิน\n- **หยุด 1 วัน + vitamin K** INR ยังไม่ลงพอ และ vitamin K ทำให้ re-anticoagulate ยาก\n- **IVC filter** ไม่มีข้อบ่งชี้ใน AF (ป้องกันเฉพาะ PE จาก DVT)",
+     "pearl": "AF ไม่มี stroke/valve: หยุด warfarin 5 วัน ไม่ bridge (BRIDGE)",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-4-3",
+     "kind": "mcq",
+     "topic": "Emergency reversal of factor Xa inhibitor",
+     "stem": "A 76-year-old man taking apixaban 5 mg twice daily for atrial fibrillation (last dose 5 hours ago) presents after a fall with a grade IV splenic injury, BP 78/50 mmHg despite 2 units RBC, and a positive FAST. He is taken for emergency laparotomy. Andexanet alfa is not available at your hospital. Which agent should be given to reverse the anticoagulant?",
+     "choices": [
+      "Four-factor prothrombin complex concentrate",
+      "Idarucizumab",
+      "Protamine sulfate",
+      "Vitamin K 10 mg IV alone",
+      "Desmopressin"
+     ],
+     "answer": 0,
+     "explain": "**Apixaban** เป็น **factor Xa inhibitor** ยาย้อนฤทธิ์จำเพาะคือ **andexanet alfa** เมื่อไม่มี แนวทางที่ Schwartz อ้างคือให้ **4-factor PCC** (ราว 50 U/kg) ร่วมกับ DCR และผ่าตัดห้ามเลือด\n- **Idarucizumab** เป็น antibody fragment จำเพาะ **dabigatran** ไม่มีผลต่อ Xa inhibitor\n- **Protamine** ย้อนฤทธิ์ heparin\n- **Vitamin K** ใช้กับ warfarin เท่านั้น apixaban ไม่ได้ออกฤทธิ์ผ่าน vitamin K\n- **DDAVP** ใช้ใน platelet dysfunction/vWD ไม่ย้อนฤทธิ์ Xa inhibitor",
+     "pearl": "Xa inhibitor: andexanet หรือ 4F-PCC · dabigatran: idarucizumab · warfarin: 4F-PCC + vit K",
+     "src": "Schwartz 11e Ch 4",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 4"
+     ]
+    },
+    {
+     "id": "RES-02-4-4",
+     "kind": "mcq",
+     "topic": "VTE prophylaxis in polytrauma with TBI",
+     "stem": "A 34-year-old man was injured in a motorcycle crash. He has a 4-mm left subdural hematoma, a stable pelvic ring fracture, bilateral tibial fractures awaiting fixation and a grade III splenic injury managed nonoperatively. Hemoglobin has been stable for 24 hours, and repeat head CT at 24 hours shows no progression. What is the most appropriate VTE prophylaxis?",
+     "choices": [
+      "Start enoxaparin 30 mg SC every 12 hours now",
+      "Place a prophylactic retrievable IVC filter and withhold anticoagulation",
+      "Withhold all pharmacologic prophylaxis until discharge from the ICU",
+      "Start full-dose therapeutic heparin infusion",
+      "Give aspirin 81 mg daily as sole prophylaxis"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเสี่ยง VTE สูงมาก (pelvic + lower-extremity fractures หลายตำแหน่ง, TBI) Schwartz: เริ่ม **LMWH ทันทีที่ห้ามเลือดได้และ intracranial pathology คงที่** — Hb คงที่ 24 ชม. และ **CT ซ้ำไม่ progression** แล้ว จึงเริ่ม **enoxaparin 30 mg q12h** ได้ (LMWH ดีกว่า UFH ใน trauma; SCD ใช้ไม่ได้ที่ขาที่หัก)\n- **Prophylactic IVC filter** ใช้เฉพาะเมื่อมีข้อห้าม anticoagulation ระยะยาว ไม่ใช่ทางเลือกแรก\n- **รอจนออก ICU** ทำให้เสี่ยง DVT/PE สูงในช่วงที่เสี่ยงที่สุด\n- **Therapeutic heparin** เป็นการรักษา ไม่ใช่ prophylaxis และเสี่ยงเลือดออก\n- **Aspirin เดี่ยว** ไม่เพียงพอเป็น prophylaxis หลักในผู้บาดเจ็บหลายระบบ",
+     "pearl": "Trauma: LMWH ทันทีที่เลือดหยุดและ CT สมองคงที่ · IVC filter เฉพาะห้าม anticoagulant",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-02-MEQ1",
+   "part": "MEQ",
+   "topic": "Septic shock in an anticoagulated patient — reversal, vasopressors, bridging and HIT",
+   "vignette": "หญิงไทยอายุ 66 ปี มี **mechanical mitral valve** (ผ่าตัด 8 ปีก่อน) กิน warfarin มาด้วยปวดท้องทั้งท้อง 18 ชม. ไข้ 39°C\nV/S: BP 78/44 mmHg, HR 124/min, RR 28/min, SpO₂ 94%\nPE: generalized peritonitis\nCT: free air และ fluid รอบ sigmoid colon (perforated diverticulitis, Hinchey IV)\nLab: Hb 11.2 g/dL, WBC 22,000, platelet 210,000, **INR 3.6**, lactate 5.4 mmol/L, Cr 1.8 mg/dL",
+   "questions": [
+    {
+     "q": "1. จงสั่งการรักษาในชั่วโมงแรกก่อนเข้าห้องผ่าตัด รวมถึงการแก้ INR",
+     "a": "- **Hour-1 sepsis bundle**: lactate (วัดซ้ำ), blood culture, **broad-spectrum antibiotic** (เช่น piperacillin–tazobactam หรือ carbapenem) ภายใน 1 ชม., **balanced crystalloid 30 mL/kg**, vasopressor ถ้า MAP ยังน้อยกว่า 65\n- **Norepinephrine** first-line, arterial line, Foley\n- แก้ INR เพื่อผ่าตัดฉุกเฉิน: **4-factor PCC** (ตาม INR/น้ำหนัก) + **vitamin K 10 mg IV ช้า ๆ** — PCC เร็วกว่าและปริมาณน้อยกว่า plasma (สำคัญในช็อก/หัวใจ)\n- ปรึกษา anesthesia/ICU และเตรียมเลือด\n\nเกณฑ์ให้คะแนน\n- bundle ครบ (2) · NE (1) · 4F-PCC + vit K (2)"
+    },
+    {
+     "q": "2. ผ่าตัด Hartmann procedure แล้ว ที่ ICU ยังต้องใช้ norepinephrine 0.3 µg/kg/min + vasopressin; PPV 4%, ScvO₂ 55%, lactate ขึ้น, echo EF 30% จะปรับการรักษาอย่างไร",
+     "a": "- Volume พอแล้ว (PPV 4%) ไม่ให้สารน้ำเพิ่มแบบไม่มีเป้า\n- **Hydrocortisone 200 mg/วัน** (vasopressor-dependent)\n- **เพิ่ม dobutamine** เพราะ CO ต่ำ/ScvO₂ ต่ำจาก septic cardiomyopathy (หรือ epinephrine)\n- ทบทวน source control ว่าเพียงพอ ตรวจ Hb (เป้า 7 g/dL ขึ้นไป), คุม glucose 140–180"
+    },
+    {
+     "q": "3. วันที่ 2 หลังผ่าตัด ช็อกหายแล้ว เลือดหยุด จะเริ่ม anticoagulation กลับอย่างไร",
+     "a": "- Mechanical **mitral** valve = **กลุ่มเสี่ยง thromboembolism สูง** → ต้อง bridge\n- เริ่ม **UFH infusion** (ไม่ bolus) เมื่อห้ามเลือดได้ ราว 12–24 ชม.หลังผ่าตัด/เมื่อปลอดภัย — UFH ดีกว่า LMWH เพราะไตเสื่อมและปรับ/หยุดได้เร็วถ้าต้องผ่าตัดซ้ำ\n- เริ่ม warfarin เมื่อกินได้ ให้ overlap จน INR อยู่ในเป้า (2.5–3.5 สำหรับ mitral) อย่างน้อย 2 วันติด\n- ไม่ใช้ DOAC กับ mechanical valve"
+    },
+    {
+     "q": "4. วันที่ 8 หลังผ่าตัด platelet ลดจาก 230,000 เป็น 85,000 แขนซ้ายบวม duplex พบ axillary–subclavian DVT (ข้างที่ใส่ central line) INR 1.6 ขณะได้ UFH + warfarin จงวินิจฉัยและรักษา",
+     "a": "- **4Ts สูง** (ลดมากกว่า 50%, วันที่ 5–10, thrombosis ใหม่, ไม่มีเหตุอื่น) → สงสัย **HIT** อย่างมาก\n- **หยุด heparin ทุกชนิด** (รวม flush, heparin-coated line) **ห้าม LMWH**\n- เริ่ม **argatroban** (ไตเสื่อม) หรือ bivalirudin ทันที ไม่รอผล\n- **หยุด warfarin และให้ vitamin K** (ป้องกัน venous limb gangrene) แล้วเริ่ม warfarin ใหม่เมื่อ platelet 150,000 ขึ้นไป overlap อย่างน้อย 5 วัน\n- ส่ง anti-PF4/heparin ELISA ± serotonin release assay\n- ไม่ให้ platelet transfusion\n- ถอด central line ถ้าไม่จำเป็น · anticoagulate อย่างน้อย 3 เดือน (และต่อ warfarin ตลอดเพราะ valve)\n\nCritical errors: เปลี่ยนเป็น enoxaparin · ให้ warfarin ต่อโดยไม่มี parenteral non-heparin agent · ให้ platelet"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 4, Ch 5",
+    "Surviving Sepsis Campaign: international guidelines 2021",
+    "ACCP/CHEST antithrombotic guidelines; ASH 2018 HIT guideline"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-02-OSCE1",
+   "topic": "Intraoperative massive hemorrhage — damage control resuscitation and TEG-guided transfusion",
+   "station": "Mock oral 10 นาที · Massive hemorrhage และ trauma-induced coagulopathy",
+   "instruction": "**บทบาท**: คุณเป็น chief resident ที่ trauma bay/OR ของ รพ.ศูนย์ ตอบคำถามผู้คุมสอบ\n\n**สถานการณ์**: ชายไทยอายุ 26 ปี รถจักรยานยนต์ชนรถกระบะ มาถึง 45 นาทีหลังเกิดเหตุ (ส่งต่อจาก รพช. ได้ crystalloid ไป 2 L) BP 72/40 mmHg, HR 136/min, GCS 14, อุณหภูมิ 35.2°C · FAST: fluid ที่ Morison pouch และ pelvis · pelvic X-ray: open-book fracture\n\n**คำถามของผู้คุมสอบ (ทีละข้อ)**\n1. ผู้ป่วยต้อง activate MTP หรือไม่ ใช้อะไรตัดสิน\n2. หลักของ damage control resuscitation ที่คุณจะสั่งทันทีมีอะไรบ้าง\n3. จะให้ TXA หรือไม่ อย่างไร และหลักฐานคืออะไร\n4. ในห้องผ่าตัด rapid TEG: ACT 140 s, angle 58°, MA 48 mm, LY30 6% คุณจะให้อะไร\n5. หลังได้ RBC 12 units ความดันยังต่ำ หัวใจบีบตัวลด iCa 0.70 mmol/L K 5.9 จะทำอย่างไร\n6. เมื่อไรควรหยุด MTP และภาวะแทรกซ้อนที่ต้องเฝ้าระวังใน ICU คืออะไร",
+   "answer": "1. **Activate MTP**: ABC score = SBP 90 หรือต่ำกว่า + HR 120 ขึ้นไป + FAST บวก = **3** (2 ขึ้นไป) และเข้าเกณฑ์ Denver (SBP 70–90 + HR มากกว่า 108 + pelvic fracture + FAST บวก) (1 คะแนน)\n2. **DCR**: O-uncrossmatched → type-specific; **1:1:1** plasma:platelet:RBC ตั้งแต่ถุงแรก (PROPPR) หรือ low-titer O whole blood; **หยุด crystalloid**; **permissive hypotension SBP ราว 80–90** (GCS 14 ไม่มี TBI รุนแรง); pelvic binder ที่ระดับ greater trochanter; **อุ่นร่างกาย** (warmer, rapid infuser, Bair Hugger); **CaCl₂ 1 g**; เร่ง hemorrhage control (OR ± preperitoneal packing / angio / REBOA ตามทรัพยากร) (2)\n3. **TXA 1 g IV ใน 10 นาที + 1 g ใน 8 ชม.** เพราะยังอยู่ภายใน 3 ชม. (45 นาที) — **CRASH-2** ลด mortality 14.5% vs 16.0% ดีที่สุดภายใน 1 ชม.; หลัง 3 ชม.เพิ่มตาย (2)\n4. ACT ยาว → **plasma**; angle ต่ำ → **cryoprecipitate**/fibrinogen; MA ต่ำ → **platelets**; LY30 6% (มากกว่า 3%) = **hyperfibrinolysis** → TXA (ถ้ายังไม่ได้/ให้ dose ต่อ) แล้ว **ตรวจ TEG ซ้ำ** หลังแต่ละ cooler (2)\n5. **Citrate toxicity → hypocalcemia**: ให้ **CaCl₂ 1–2 g IV** ซ้ำตาม iCa; hyperkalemia: calcium (cardioprotection) + insulin/dextrose, ใช้เลือดใหม่/washed ถ้าทำได้; แก้ hypothermia/acidosis; ตรวจหา bleeding ที่ยังไม่ควบคุม (1)\n6. หยุด MTP เมื่อ **ห้ามเลือดได้** และ hemodynamics/TEG ดีขึ้น ไม่ transfuse ตาม protocol ต่อแบบอัตโนมัติ; ICU เฝ้าระวัง **TACO/TRALI, ARDS, abdominal compartment syndrome**, hypothermia, **VTE** (เริ่ม LMWH เมื่อเลือดหยุด), fibrinolysis shutdown/thrombosis, infection, AKI (2)\n\n**Critical fails**: ให้ crystalloid ต่อเพื่อดัน BP ให้ปกติ · ไม่ activate MTP/ให้ RBC อย่างเดียว · ให้ TXA หลัง 3 ชม.โดยไม่มี hyperfibrinolysis · ลืม calcium · ไม่เร่ง hemorrhage control"
+  }
+ ]
+}

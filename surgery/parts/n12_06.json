@@ -1,0 +1,533 @@
+{
+ "lec": "06",
+ "date": "Schwartz Ch 7–8",
+ "title": "Trauma & burns",
+ "subtitle": "ผู้บาดเจ็บรุนแรงต้องแก้อะไรก่อน เมื่อไหร่ต้องผ่าตัด และแผลไหม้ต้องประเมินและให้สารน้ำอย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องทำ primary survey ตามลำดับ ABCDE และระบุภาวะคุกคามชีวิตที่ต้องแก้ทันทีได้",
+  "เรียนจบแล้วต้องประเมิน hemorrhagic shock class และวางแผน damage control resuscitation ได้",
+  "เรียนจบแล้วต้องแยก epidural กับ subdural hematoma และบอกเป้าหมายป้องกัน secondary brain injury ได้",
+  "เรียนจบแล้วต้องใช้ FAST ร่วมกับ hemodynamics ตัดสินใจระหว่าง laparotomy, CT และ nonoperative management ได้",
+  "เรียนจบแล้วต้องประเมินความลึกและ %TBSA ของแผลไหม้ และคำนวณสารน้ำด้วย Parkland formula พร้อมเป้า urine output ได้",
+  "เรียนจบแล้วต้องจัดการ inhalation injury, CO/cyanide poisoning, electrical และ chemical burn ในระยะแรกได้"
+ ],
+ "guidelines": [
+  "ATLS 10th edition (2018) — American College of Surgeons Committee on Trauma",
+  "Brain Trauma Foundation Guidelines 4th ed (2016) — ICP/CPP thresholds",
+  "American Burn Association consensus on burn resuscitation (2 mL/kg/%TBSA starting rate)",
+  "CRASH-2 (2010) — tranexamic acid within 3 h · PROPPR (2015) — 1:1:1 transfusion"
+ ],
+ "sections": [
+  {
+   "id": "n12-06-1",
+   "title": "Primary survey & initial resuscitation (ATLS)",
+   "summary": "ผู้บาดเจ็บรุนแรงต้องหาและแก้อะไรก่อน ตามลำดับ ABCDE และ resuscitate อย่างไรให้ไม่ตายใน golden hour",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 7 — Initial evaluation and resuscitation of the injured patient",
+   "md": "### ลำดับการดูแลผู้บาดเจ็บตาม ATLS\nผู้บาดเจ็บรุนแรงทุกรายจัดการเป็นลำดับขั้น: **primary survey** พร้อม resuscitation → adjuncts (eFAST, CXR, pelvic film, ABG) → **secondary survey** (ตรวจหัวจรดเท้า + ประวัติ AMPLE) → definitive care → **tertiary survey** (ตรวจซ้ำภายใน 24 ชม. หา missed injury)\n- เป้าหมายของ primary survey คือ **หาและแก้สิ่งที่ฆ่าผู้ป่วยได้ภายในนาที** ไม่ใช่หาการวินิจฉัยครบทุกอย่าง\n- ในทางปฏิบัติทีมทำ ABCDE **พร้อมกัน** แต่ในใจต้องเรียงลำดับความสำคัญ ถ้าข้อไหนแย่ลงให้กลับไปเริ่มที่ A ใหม่\n- ช่วงเวลาสำคัญคือ **golden hour** — การแทรกแซงที่ถูกเวลาลดตายและพิการ\n\n| ขั้น | สิ่งที่ต้องหา | การแก้ทันที |\n|---|---|---|\n| A — Airway + C-spine | อุดกั้น, บาดเจ็บกล่องเสียง, burn ทางเดินหายใจ | jaw thrust/suction → ETT · cricothyroidotomy |\n| B — Breathing | tension PTX, open PTX, flail chest + contusion, massive hemothorax | needle/finger decompression, chest tube, occlusive dressing |\n| C — Circulation | hemorrhagic shock, tamponade, pelvic fracture, เลือดออกภายนอก | กดห้ามเลือด, IV 2 เส้น, เลือด, pelvic binder |\n| D — Disability | GCS, pupils, lateralizing sign | ป้องกัน secondary brain injury |\n| E — Exposure | บาดแผลที่ซ่อนอยู่ | ถอดเสื้อผ้า แล้ว **ป้องกัน hypothermia** |\n\n### A: ทางเดินหายใจและกระดูกคอ\n- ผู้ป่วย **พูดได้เสียงปกติ ไม่หอบ รู้สติ** = airway ยังผ่านได้ในขณะนั้น\n- ผู้บาดเจ็บแบบ blunt ทุกรายให้ถือว่ามี **C-spine injury** จนกว่าจะพิสูจน์ได้ว่าไม่มี → hard collar / manual in-line stabilization (penetrating neck injury ไม่แนะนำ collar เพราะบังการประเมิน)\n- ข้อบ่งชี้ **definitive airway**: หยุดหายใจ, ปกป้อง airway ไม่ได้จากระดับความรู้สึกตัวลด (สาเหตุที่พบบ่อยที่สุด), ทางเดินหายใจกำลังจะอุดจาก hematoma/burn/บวม, oxygenation ไม่พอ\n- ทางเลือกแรกคือ **orotracheal intubation** (RSI + in-line stabilization) ถ้าใส่ไม่ได้หรือหน้าแหลกมาก → **surgical cricothyroidotomy** (ใส่ ETT เบอร์ 6.0)\n- เด็กอายุน้อย (Schwartz ระบุต่ำกว่า 11 ปี) ไม่ควรทำ surgical cricothyroidotomy เพราะเสี่ยง subglottic stenosis → ใช้ needle cricothyroidotomy หรือ tracheostomy\n- ภาวะ hypovolemia รุนแรง การใส่ท่อและ positive pressure อาจทำให้ cardiac arrest → บางครั้ง **C มาก่อน A**\n\n### B: ภาวะทรวงอกที่ต้องแก้ใน primary survey\n| ภาวะ | ลักษณะเด่น | การจัดการทันที |\n|---|---|---|\n| **Tension pneumothorax** | หอบ + **ความดันต่ำ** + เสียงหายใจลดข้างเดียว ± trachea เบี้ยวไปฝั่งตรงข้าม คอโป่ง | decompression ทันที **ไม่รอ CXR** (needle/finger) แล้วใส่ chest tube |\n| **Open pneumothorax** | แผลผนังอกเปิด มีเสียงดูดลม | occlusive dressing **ปิด 3 ด้าน** → chest tube คนละตำแหน่งกับแผล |\n| **Flail chest** | ซี่โครง ≥ 3 ซี่ติดกัน หักซี่ละ ≥ 2 ตำแหน่ง → paradoxical movement | O₂, ระงับปวด, ventilate ถ้าหายใจล้ม — ตัวทำให้หายใจล้มคือ **pulmonary contusion** |\n| **Massive hemothorax** | เลือดในช่องอก > 1,500 mL | chest tube + เลือด → OR |\n| **Cardiac tamponade** | Beck's triad (มักไม่ครบในห้องฉุกเฉิน) | ultrasound → pericardial drainage → OR |\n\n> Tension PTX เป็น **clinical diagnosis** — ถ้ารอฟิล์มผู้ป่วยอาจหัวใจหยุดเต้นก่อน\n\n### C: ห้ามเลือดและกู้ระบบไหลเวียน\n- ความดันต่ำหลังบาดเจ็บ (SBP < 90) ให้ถือว่าเป็น **hemorrhagic shock** จนกว่าจะพิสูจน์ว่าไม่ใช่ · หาแหล่งเลือดออก 5 ที่: **พื้น (ภายนอก), ช่องอก, ช่องท้อง, pelvis/retroperitoneum, กระดูกยาว**\n- เปิด **IV ขนาดใหญ่ (≥ 16G) 2 เส้น** ถ้าไม่ได้ใช้ **intraosseous** (proximal tibia/humerus) · กดห้ามเลือดโดยตรง ไม่ clamp แบบไม่เห็น\n- Pelvic fracture ที่สงสัย → **pelvic binder/ผ้าปูรัดระดับ greater trochanter**\n- Hemorrhage class (ATLS) ใช้กะปริมาณเลือดที่เสีย:\n\n| Class | เสียเลือด | ชีพจร | BP | ปัสสาวะ (mL/h) | สติ |\n|---|---|---|---|---|---|\n| I | < 15% (≤ 750 mL) | < 100 | ปกติ | > 30 | กังวลเล็กน้อย |\n| II | 15–30% | > 100 | ปกติ · pulse pressure ↓ | 20–30 | กังวล |\n| III | 30–40% | > 120 | **ลดลง** | 5–15 | สับสน |\n| IV | > 40% | > 140 | ลดลงมาก | แทบไม่มี | ซึม |\n\n- SBP เริ่มตกเมื่อเสียเลือด **> 30%** → ความดันปกติไม่ได้แปลว่าไม่เสียเลือด · ผู้สูงอายุ/กิน β-blocker อาจไม่มี tachycardia\n- แนวปัจจุบัน: crystalloid จำกัด (ATLS 10th: เริ่ม **1 L** ในผู้ใหญ่) แล้วรีบให้ **เลือดและ plasma** แบบ **balanced/damage control resuscitation** (สัดส่วน plasma:platelet:RBC ใกล้ 1:1:1 — PROPPR), **permissive hypotension** ในผู้ป่วยไม่มีบาดเจ็บสมอง, **tranexamic acid** ภายใน 3 ชม. (CRASH-2)\n- ดูการตอบสนอง: **responder / transient responder / non-responder** — สองกลุ่มหลังมีเลือดออกต่อเนื่อง ต้องหาจุดและหยุดเลือด (OR/angioembolization)\n\n### D และ E: สมองและอุณหภูมิ\n- **GCS** = E4 + V5 + M6 (คะแนน 3–15) · GCS ≤ 8 = coma → พิจารณาใส่ท่อช่วยหายใจ\n- รูม่านตาขยายข้างเดียวไม่ตอบสนองแสง + อ่อนแรงซีกตรงข้าม = **lateralizing sign** → สงสัย mass lesion\n- **Lethal triad** (bloody vicious cycle): **hypothermia + acidosis + coagulopathy** → ถอดเสื้อผ้าตรวจแล้วห่มผ้าอุ่น ให้สารน้ำ/เลือดที่อุ่น\n- Adjuncts: ECG, SpO₂, ETCO₂, Foley (ห้ามใส่ถ้ามีเลือดที่ meatus/scrotal hematoma จนกว่าจะตรวจ urethra), OG/NG tube (ใช้ OG ถ้าสงสัย basal skull fracture)",
+   "pearls": [
+    "Primary survey = ABCDE ทำพร้อมกัน แต่คิดตามลำดับ แย่ลงเมื่อไหร่กลับไปเริ่ม A",
+    "Altered mental status เป็นข้อบ่งชี้ intubation ที่พบบ่อยที่สุดในผู้บาดเจ็บ",
+    "Tension PTX = clinical diagnosis: decompress ก่อน CXR",
+    "Flail chest = ≥ 3 ซี่ติดกัน หัก ≥ 2 จุด — ตัวทำหายใจล้มคือ pulmonary contusion",
+    "BP ตกเมื่อเสียเลือด > 30% (class III) — tachycardia มาก่อน",
+    "Damage control resuscitation: crystalloid น้อย, blood:plasma:platelet ~1:1:1, TXA ภายใน 3 ชม., permissive hypotension",
+    "ห้ามใส่ Foley ถ้ามีเลือดที่ urethral meatus — ทำ retrograde urethrogram ก่อน"
+   ],
+   "mnem": [
+    {
+     "name": "ABCDE",
+     "what": "ลำดับ primary survey",
+     "lines": [
+      [
+       "A",
+       "Airway + C-spine protection"
+      ],
+      [
+       "B",
+       "Breathing & ventilation"
+      ],
+      [
+       "C",
+       "Circulation + hemorrhage control"
+      ],
+      [
+       "D",
+       "Disability (GCS, pupils)"
+      ],
+      [
+       "E",
+       "Exposure + environment (กันตัวเย็น)"
+      ]
+     ]
+    },
+    {
+     "name": "AMPLE",
+     "what": "ซักประวัติใน secondary survey",
+     "lines": [
+      [
+       "A",
+       "Allergies"
+      ],
+      [
+       "M",
+       "Medications (anticoagulant, β-blocker)"
+      ],
+      [
+       "P",
+       "Past illness/Pregnancy"
+      ],
+      [
+       "L",
+       "Last meal"
+      ],
+      [
+       "E",
+       "Events/Environment ของการบาดเจ็บ"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-06-1-1",
+     "kind": "mcq",
+     "topic": "Tension pneumothorax",
+     "stem": "A 24-year-old man is brought in after a motorcycle crash. He is anxious and tachypneic (RR 34/min). BP 78/50 mmHg, pulse 132/min, SpO2 86% on a non-rebreather mask. Breath sounds are absent on the right, the right hemithorax is hyperresonant, and the neck veins are distended. What is the most appropriate immediate step?",
+     "choices": [
+      "Immediate needle or finger decompression of the right chest followed by tube thoracostomy",
+      "Portable chest radiograph to confirm the diagnosis",
+      "Rapid-sequence intubation and positive-pressure ventilation",
+      "Pericardiocentesis via the subxiphoid approach",
+      "Bolus 2 L of crystalloid and reassess"
+     ],
+     "answer": 0,
+     "explain": "หอบ + **ความดันต่ำ** + เสียงหายใจหายข้างเดียว + เคาะโปร่ง + คอโป่ง = **tension pneumothorax** ซึ่งเป็น clinical diagnosis ต้อง **decompress ทันที** (needle ที่ช่องซี่โครง 4–5 แนว anterior/mid-axillary หรือ finger thoracostomy) แล้วใส่ chest tube ความดันบวกในช่องอกดันประจันอก ลด venous return จนหัวใจหยุดเต้นได้\n- **ถ่าย CXR ก่อน** ทำให้เสียเวลา ผู้ป่วยอาจ arrest ระหว่างรอ\n- **ใส่ท่อและให้ positive pressure** ก่อน decompress จะเพิ่มลมใน pleura ทำให้แย่ลงเร็ว\n- **Pericardiocentesis** ใช้กับ tamponade ซึ่งเสียงหายใจปกติสองข้าง ไม่เคาะโปร่ง\n- **ให้สารน้ำ** ไม่แก้สาเหตุ (obstructive shock) เป็นแค่ซื้อเวลา",
+     "pearl": "Tension PTX วินิจฉัยด้วยมือและหู — decompress ก่อนฟิล์ม",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-1-2",
+     "kind": "mcq",
+     "topic": "Hemorrhage class",
+     "stem": "A 35-year-old man with an open femur fracture after a fall arrives with HR 128/min, BP 88/60 mmHg, RR 32/min, and he is anxious and confused. Urine output after Foley catheter placement is about 10 mL over the first hour. Approximately what proportion of his circulating blood volume has he lost?",
+     "choices": [
+      "30–40%",
+      "Less than 15%",
+      "15–30%",
+      "More than 50%",
+      "Less than 5%"
+     ],
+     "answer": 0,
+     "explain": "ชีพจร > 120 + **ความดันเริ่มตก** + หายใจเร็ว 30–40 + สับสน + ปัสสาวะ 5–15 mL/h ตรงกับ **hemorrhage class III (เสียเลือด 30–40%)** จุดตัดสำคัญคือ SBP เริ่มลดเมื่อเสียเลือดเกิน 30% กลุ่มนี้ต้องได้เลือดทันที\n- **น้อยกว่า 15%** (class I) ชีพจร < 100 ความดันปกติ ปัสสาวะ > 30 mL/h\n- **15–30%** (class II) ชีพจร > 100 แต่ SBP ยังปกติ แค่ pulse pressure แคบ\n- **มากกว่า 50%** อยู่ใน class IV ซึ่งชีพจร > 140 ซึมมาก ปัสสาวะแทบไม่มี\n- **น้อยกว่า 5%** ไม่ทำให้สัญญาณชีพเปลี่ยน",
+     "pearl": "ความดันตก = เสียเลือด > 30% แล้ว อย่ารอความดันตกถึงจะให้เลือด",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-1-3",
+     "kind": "mcq",
+     "topic": "Definitive airway",
+     "stem": "A 40-year-old man was in a house fire and sustained an assault to the face. He has severe midface fractures with active oropharyngeal bleeding. Two attempts at orotracheal intubation fail because the cords cannot be visualized, and SpO2 is falling to 80% despite bag-mask ventilation. What is the most appropriate next step?",
+     "choices": [
+      "Surgical cricothyroidotomy",
+      "Blind nasotracheal intubation",
+      "Third attempt at orotracheal intubation after repositioning",
+      "Insertion of an oropharyngeal airway and continued bag-mask ventilation",
+      "Emergency tracheostomy in the operating room"
+     ],
+     "answer": 0,
+     "explain": "เมื่อใส่ท่อทางปากไม่สำเร็จและมี **maxillofacial trauma รุนแรง** ร่วมกับ oxygenation ล้มเหลว (\"can't intubate, can't oxygenate\") ทางเลือกคือ **surgical cricothyroidotomy** ทำได้เร็วในห้องฉุกเฉิน ผ่าตามแนวตั้งที่ผิวหนังแล้วเปิด cricothyroid membrane ตามขวาง ใส่ท่อเบอร์ 6.0\n- **Nasotracheal intubation** ห้ามในหน้าแหลก/สงสัย basal skull fracture และต้องหายใจเองได้\n- **พยายามใส่ทางปากซ้ำ** ขณะ SpO₂ ตกต่อเนื่องเสี่ยง hypoxic arrest\n- **Oropharyngeal airway** ไม่ใช่ definitive airway และไม่ผ่านเลือดที่ท่วม\n- **Tracheostomy ใน OR** ช้าเกินไป ใช้กรณี laryngeal fracture/laryngotracheal separation",
+     "pearl": "Can't intubate, can't oxygenate ในผู้ใหญ่ → surgical cricothyroidotomy",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-1-4",
+     "kind": "mcq",
+     "topic": "Transient responder",
+     "stem": "A 30-year-old woman involved in a car crash has BP 82/50 mmHg and HR 130/min. After 1 L of warmed crystalloid her BP rises to 110/70 mmHg, but 15 minutes later it falls again to 85/55 mmHg. Chest and pelvic radiographs are normal. FAST shows fluid in Morison's pouch. What is the most appropriate next step?",
+     "choices": [
+      "Activate massive transfusion and take her for emergency laparotomy",
+      "CT scan of the abdomen and pelvis with contrast",
+      "Give a further 2 L of crystalloid and observe",
+      "Diagnostic peritoneal lavage to confirm the FAST finding",
+      "Admit to ICU for serial hemoglobin measurement"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเป็น **transient responder** (ดีขึ้นแล้วแย่ลง) = มีเลือดออกต่อเนื่อง และ **FAST บวก** ในขณะที่ CXR/pelvis ปกติ แหล่งเลือดคือช่องท้อง → ให้เลือดผ่าน **massive transfusion protocol** และ **laparotomy ทันที**\n- **CT** ใช้ในผู้ป่วยที่ hemodynamics stable เท่านั้น การพาผู้ป่วยไม่ stable ไป CT อันตราย\n- **ให้ crystalloid เพิ่ม** ทำให้เลือดจาง เย็น และ coagulopathy แย่ลง\n- **DPL** ไม่จำเป็นเพราะ FAST บวกแล้วในผู้ป่วยไม่ stable\n- **ICU + serial Hb** เป็นการรอที่ผิดในผู้ป่วยที่ยังเสียเลือดอยู่",
+     "pearl": "Unstable + FAST บวก = OR ไม่ใช่ CT",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-06-2",
+   "title": "Head, chest & abdominal injury: FAST และข้อบ่งชี้ผ่าตัด",
+   "summary": "แยก EDH/SDH ได้อย่างไร เมื่อไหร่ chest tube ต้องไป thoracotomy และ FAST บวกหรือลบแล้วจะไป OR หรือ CT",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 7 — Regional assessment, treatment of specific injuries",
+   "md": "### Head injury: แยก EDH กับ SDH และเป้าหมายการดูแล\n- ทำ **CT brain** ในผู้บาดเจ็บศีรษะที่ GCS < 14 (Schwartz) และในผู้สูงอายุหรือผู้กินยาต้านเกล็ดเลือด/ยาละลายลิ่มเลือดแม้ GCS 15\n\n| ลักษณะ | **Epidural hematoma** | **Subdural hematoma** |\n|---|---|---|\n| ตำแหน่ง | ระหว่างกะโหลกกับ dura | ระหว่าง dura กับผิวสมอง |\n| แหล่งเลือด | **middle meningeal artery** (มักมีกะโหลก temporal ร้าว) | **bridging veins** ฉีกขาด |\n| CT | **นูนสองด้าน (biconvex/lens)** ไม่ข้าม suture | **รูปจันทร์เสี้ยว (crescent)** ข้าม suture ได้ |\n| อาการ | หมดสติ → **lucid interval** → ซึมลงเร็ว + รูม่านตาขยายข้างเดียวกัน | ผู้สูงอายุ/ติดสุรา ค่อย ๆ ซึม |\n| พยากรณ์ | ดีถ้าผ่าตัดเร็ว | แย่กว่าเพราะมีเนื้อสมองบาดเจ็บร่วม |\n\n- Midline shift > 5 mm มักเป็นข้อบ่งชี้ผ่าตัดเอาก้อนเลือดออก\n- หัวใจของการรักษาคือป้องกัน **secondary brain injury**: เลี่ยง **SBP < 100 mmHg** และ **hypoxia (PaO₂ < 60 หรือ SpO₂ < 90%)**\n- GCS ≤ 8 + CT ผิดปกติ → monitor **ICP** เป้า **ICP < 20 mmHg** และ **CPP > 60 mmHg** (CPP = MAP − ICP)\n- Cushing reflex (ความดันสูง + ชีพจรช้า + หายใจผิดปกติ) = สัญญาณ herniation\n\n### Chest injury: chest tube แล้วเมื่อไหร่ต้องผ่าตัด\n- Chest tube ใส่ที่ **ช่องซี่โครง 4–5 แนว mid/anterior axillary line** (ระดับ inframammary crease) ผ่านขอบบนซี่โครงเพื่อเลี่ยง intercostal bundle\n- ข้อบ่งชี้ thoracotomy (Schwartz Table 7-10):\n\n| เกณฑ์ | ค่า |\n|---|---|\n| เลือดออกจาก chest tube ทันที | **> 1,000 mL (penetrating)** · **> 1,500 mL (blunt)** |\n| ออกต่อเนื่อง | **> 200 mL/h นาน 3 ชม.** (ไม่มี coagulopathy) |\n| อื่น ๆ | tamponade · massive air leak ที่ ventilate ไม่พอ · great vessel injury · caked hemothorax แม้ใส่ 2 ท่อ |\n- **Resuscitative (ED) thoracotomy**: คุ้มที่สุดใน penetrating chest trauma ที่ arrest ต่อหน้าและ CPR ไม่นาน (penetrating torso < 15 นาที, blunt < 10 นาที)\n- Blunt aortic injury: CXR **mediastinum กว้าง**, aortic knob ไม่ชัด → ยืนยันด้วย **CTA**\n\n### Abdominal trauma: FAST และการตัดสินใจผ่าตัด\n- **FAST** มองหาน้ำ/เลือดอิสระ 4 จุด: **pericardium (subxiphoid), RUQ (Morison's pouch), LUQ (splenorenal), pelvis** · **eFAST** เพิ่มการดูปอดหา pneumothorax/hemothorax\n- FAST เห็นน้ำในช่องท้องได้เมื่อมีอย่างน้อยราว **250 mL** · บอกไม่ได้ว่าอวัยวะไหนแตกและไม่ไวต่อ **hollow viscus/retroperitoneal injury**\n- **DPL/DPA** (ปัจจุบันใช้น้อย): ดูดได้เลือด > 10 mL = บวก\n\n#### อัลกอริทึม blunt abdomen\n| สภาวะ | การตัดสินใจ |\n|---|---|\n| Unstable + **FAST บวก** | **laparotomy ทันที** |\n| Unstable + FAST ลบ | หาแหล่งอื่น (อก, pelvis, กระดูกยาว) ± ทำ DPA/FAST ซ้ำ |\n| **Stable** + FAST บวก หรือสงสัย | **CT with contrast** → จัดเกรด → solid organ injury มัก **nonoperative management** ± angioembolization |\n\n### ข้อบ่งชี้ laparotomy ที่ต้องจำ\n- Hemodynamic instability + หลักฐานเลือดในช่องท้อง (FAST/DPA บวก)\n- **Peritonitis** (ท้องแข็ง กดเจ็บทั่วท้อง)\n- **Evisceration**, มีอาวุธคาอยู่ (ถอดใน OR เท่านั้น)\n- **Gunshot wound** ที่ทะลุเยื่อบุช่องท้อง (ส่วนใหญ่มีอวัยวะบาดเจ็บ)\n- **Free air** ใต้กะบังลม, diaphragm injury, rectal/GI bleeding จากแผลทะลุ\n- Stab wound หน้าท้องที่ stable: **local wound exploration** → ถ้าทะลุ posterior fascia ต้องประเมินต่อ (serial exam/CT/laparoscopy) เพราะราวครึ่งหนึ่งต้องผ่าตัด\n- **Seat belt sign** + Chance fracture → นึกถึงบาดเจ็บลำไส้/mesentery\n\n### Damage control surgery\n- เมื่อเริ่มมี **lethal triad** ให้ผ่าตัดแบบสั้น: หยุดเลือด (packing) + ควบคุมการรั่วของลำไส้ → ปิดหน้าท้องชั่วคราว → ICU แก้สรีรวิทยา → กลับมาผ่าตัด definitive ภายหลัง\n- ระวัง **abdominal compartment syndrome**: ท้องตึง ปัสสาวะลด airway pressure สูง วัด **bladder pressure**",
+   "pearls": [
+    "EDH = middle meningeal artery, biconvex, lucid interval · SDH = bridging veins, crescent",
+    "Secondary brain injury: เลี่ยง SBP < 100 และ PaO₂ < 60/SpO₂ < 90%",
+    "ICP เป้า < 20 mmHg, CPP > 60 mmHg",
+    "Chest tube ออกทันที > 1,500 mL (blunt) / > 1,000 mL (penetrating) หรือ > 200 mL/h × 3 ชม. → thoracotomy",
+    "FAST 4 จุด: pericardium, Morison, splenorenal, pelvis — เห็นน้ำราว ≥ 250 mL",
+    "Unstable + FAST บวก → laparotomy · stable → CT → solid organ ส่วนใหญ่ nonoperative",
+    "GSW ทะลุช่องท้อง → laparotomy · stab wound stable → local wound exploration"
+   ],
+   "items": [
+    {
+     "id": "N12-06-2-1",
+     "kind": "mcq",
+     "topic": "Epidural hematoma",
+     "stem": "A 19-year-old man is hit on the left temple by a baseball. He is briefly unconscious, then talks normally in the emergency department. Two hours later he becomes drowsy, his left pupil is dilated and sluggish, and he has right-sided weakness. Which finding on non-contrast CT is most likely?",
+     "choices": [
+      "A biconvex (lens-shaped) hyperdense collection in the left temporal region",
+      "A crescent-shaped hyperdense collection along the left convexity crossing suture lines",
+      "Blood in the basal cisterns and sylvian fissures",
+      "Multiple small punctate hemorrhages at the gray-white matter junction",
+      "A hypodense crescent-shaped collection over both frontal lobes"
+     ],
+     "answer": 0,
+     "explain": "หมดสติสั้น ๆ → **lucid interval** → ซึมลงเร็ว + **รูม่านตาขยายข้างเดียวกับแผล** + อ่อนแรงซีกตรงข้าม หลังกระแทกบริเวณขมับ = **epidural hematoma** จาก **middle meningeal artery** ฉีก เลือดแดงดัน dura ที่ยึดกับ suture จึงเห็น **biconvex** ไม่ข้าม suture ก้อนดัน temporal lobe เกิด uncal herniation กด CN III\n- **Crescent ข้าม suture** คือ acute subdural (bridging vein) มักไม่มี lucid interval ชัดเจน\n- **เลือดใน basal cisterns** คือ subarachnoid hemorrhage\n- **จุดเลือดออกเล็ก ๆ ที่รอยต่อ gray-white** คือ diffuse axonal injury จากแรงเฉือนความเร็วสูง ผู้ป่วยมักโคม่าตั้งแต่แรก\n- **Hypodense crescent สองข้าง** คือ chronic subdural ในผู้สูงอายุ",
+     "pearl": "Lucid interval + pupil ขยายข้างเดียวกัน = EDH → ผ่าตัดด่วน",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-2-2",
+     "kind": "mcq",
+     "topic": "Indication for thoracotomy",
+     "stem": "A 28-year-old man sustains a stab wound to the left chest. He is hypotensive on arrival. A left tube thoracostomy immediately drains 1,300 mL of blood, and his BP remains 85/50 mmHg despite blood transfusion. What is the most appropriate next step?",
+     "choices": [
+      "Operative thoracotomy",
+      "Insert a second chest tube on the left",
+      "CT angiography of the chest",
+      "Continue transfusion and observe hourly chest tube output",
+      "Video-assisted thoracoscopic surgery in 24 hours"
+     ],
+     "answer": 0,
+     "explain": "ใน **penetrating chest injury** เลือดออกจาก chest tube ทันที **> 1,000 mL** (blunt > 1,500 mL) หรือออกต่อเนื่อง > 200 mL/h นาน 3 ชม. หรือ hemodynamics ไม่ stable เป็นข้อบ่งชี้ **thoracotomy** เพราะบ่งว่ามีหลอดเลือดใหญ่/hilar vessel บาดเจ็บ\n- **ใส่ท่อเส้นที่สอง** ไม่หยุดเลือด เหมาะกับ retained hemothorax\n- **CTA** ไม่ควรทำในผู้ป่วยความดันต่ำ\n- **ให้เลือดแล้วเฝ้าดู** ไม่เหมาะเพราะเกินเกณฑ์ผ่าตัดแล้วและยัง shock\n- **VATS** ใช้กับ retained hemothorax ใน stable patient ไม่ใช่เลือดออกมากเฉียบพลัน",
+     "pearl": "Chest tube > 1,000 mL (penetrating) / > 1,500 mL (blunt) ทันที → thoracotomy",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-2-3",
+     "kind": "mcq",
+     "topic": "Blunt abdominal trauma — stable",
+     "stem": "A 45-year-old man is involved in a car crash. After 1 L of crystalloid, his vital signs normalize and remain stable (BP 124/78 mmHg, HR 88/min). He has left upper quadrant tenderness and fractures of the left 10th–11th ribs. FAST shows free fluid in the splenorenal recess. What is the most appropriate next step?",
+     "choices": [
+      "Contrast-enhanced CT scan of the abdomen and pelvis",
+      "Emergency exploratory laparotomy",
+      "Diagnostic peritoneal lavage",
+      "Splenectomy via laparoscopy",
+      "Repeat FAST in 24 hours and discharge if unchanged"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **hemodynamically stable** แม้ FAST บวก จึงควรทำ **CT with IV contrast** เพื่อระบุอวัยวะ จัดเกรด (AAST) ดู contrast blush และ pseudoaneurysm ซึ่งกำหนดว่าจะทำ **nonoperative management** ± angioembolization ได้หรือไม่ ม้ามบาดเจ็บใน stable patient ส่วนใหญ่รักษาโดยไม่ผ่าตัด\n- **Laparotomy ทันที** สำหรับผู้ป่วยไม่ stable หรือมี peritonitis\n- **DPL** บอกได้แค่มีเลือด ไม่บอกอวัยวะ/เกรด และทำให้ตรวจท้องซ้ำยาก\n- **Laparoscopic splenectomy** ไม่ใช่ขั้นตอนแรกก่อนรู้เกรดการบาดเจ็บ\n- **Repeat FAST แล้วกลับบ้าน** อันตราย ต้องรับไว้สังเกตอาการ",
+     "pearl": "Stable + FAST บวก → CT จัดเกรด → solid organ injury มัก nonoperative",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N12-06-2-4",
+     "kind": "mcq",
+     "topic": "Penetrating abdominal trauma",
+     "stem": "A 22-year-old man has a gunshot wound to the anterior abdomen just left of the umbilicus. BP 118/74 mmHg, HR 102/min. The abdomen is diffusely tender with guarding, and radiographs show the bullet in the right pelvis. What is the most appropriate management?",
+     "choices": [
+      "Exploratory laparotomy",
+      "CT scan of the abdomen with triple contrast",
+      "Local wound exploration under local anesthesia",
+      "Serial abdominal examination for 24 hours",
+      "Diagnostic laparoscopy to assess peritoneal penetration"
+     ],
+     "answer": 0,
+     "explain": "**Gunshot wound** ที่วิถีกระสุนทะลุเข้าช่องท้อง (เข้าซ้ายสะดือ ไปอยู่ pelvis ขวา) และมี **peritonitis** เป็นข้อบ่งชี้ **laparotomy** ทันที เพราะกระสุนที่ผ่านเยื่อบุช่องท้องส่วนใหญ่ทำให้ลำไส้/หลอดเลือดบาดเจ็บ\n- **CT** อาจใช้เลือกผู้ป่วย GSW แบบ tangential หรือจำกัดที่ตับใน stable patient ไม่ใช่รายที่มี peritonitis\n- **Local wound exploration** ใช้กับ stab wound หน้าท้องที่ stable\n- **Serial exam** เหมาะกับ stab wound ที่ทะลุ fascia แต่ไม่มี peritonitis\n- **Diagnostic laparoscopy** ใช้ประเมินแผล tangential หรือ diaphragm ไม่ใช่เมื่อข้อบ่งชี้ผ่าตัดชัดแล้ว",
+     "pearl": "GSW ทะลุช่องท้อง หรือ peritonitis → laparotomy",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-06-3",
+   "title": "Burns: depth, TBSA (rule of nines) & Parkland formula",
+   "summary": "ประเมินความลึกและขนาดแผลไหม้อย่างไร และคำนวณสารน้ำ 24 ชั่วโมงแรกพร้อมเป้า urine output",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 8 — Burn classification, depth, resuscitation, wound care",
+   "md": "### ประเภทแผลไหม้และความลึก\nแผลไหม้แบ่งตามสาเหตุเป็น thermal (flame, scald, contact), electrical และ chemical — **flame burn** พบบ่อยที่สุดในผู้ป่วยนอน รพ. และตายมากสุดเพราะมักมาพร้อม inhalation injury\n\n| ความลึก | ชั้นที่ถูกทำลาย | ลักษณะ | ความปวด | การหาย |\n|---|---|---|---|---|\n| **Superficial (1st degree)** | epidermis | แดง ไม่มีพอง กดซีด | ปวด | ภายในราว 1 สัปดาห์ ไม่มีแผลเป็น |\n| **Superficial partial thickness** | epidermis + papillary dermis | **พอง (blister)** ชุ่ม ชมพู กดซีด | **ปวดมาก** | 2–3 สัปดาห์ แผลเป็นน้อย |\n| **Deep partial thickness** | ลึกถึง reticular dermis | ขาว/ด่าง ชื้นน้อย กดซีดช้า | ลดลง | > 3 สัปดาห์ → มักต้อง **excision + graft** |\n| **Full thickness (3rd degree)** | ทั้งชั้น dermis | **แข็งเหมือนหนัง (leathery)** ขาว/ไหม้เกรียม ไม่ซีดเมื่อกด | **ไม่ปวด** | ต้อง graft |\n| **4th degree** | ลงถึงไขมัน กล้ามเนื้อ กระดูก | ไหม้ดำ | ไม่ปวด | reconstruction |\n\n- **Jackson's zones**: ตรงกลางคือ **zone of coagulation** (ตายแล้ว) → **zone of stasis** (ขาดเลือด ช่วยได้ถ้าให้สารน้ำดีและไม่ติดเชื้อ) → รอบนอก **zone of hyperemia** (หายเอง)\n- ความลึกเปลี่ยนได้ใน 48–72 ชม. → ต้องประเมินซ้ำ\n\n### ประเมินขนาด: %TBSA\n- **Rule of nines** (ผู้ใหญ่): ศีรษะ 9, แขนข้างละ 9, ลำตัวหน้า 18, ลำตัวหลัง 18, ขาข้างละ 18, perineum 1\n- **Rule of palm**: ฝ่ามือผู้ป่วย **รวมนิ้ว ≈ 1% TBSA** ใช้กับแผลกระจัดกระจาย\n- เด็กเล็กศีรษะใหญ่สัดส่วนมากกว่า ขาเล็กกว่า → ใช้ **Lund–Browder chart** แม่นกว่า\n- **ไม่นับ superficial (1st degree)** ในการคำนวณ %TBSA และต้องล้างเขม่าก่อนประเมิน\n- แพทย์ที่ไม่ชำนาญมักประเมินแผลเล็กเกินจริง และประเมินแผลใหญ่ต่ำกว่าจริง\n\n### การให้สารน้ำ: Parkland formula\n- เริ่มให้ IV resuscitation เมื่อแผลไหม้ **> 20% TBSA ในผู้ใหญ่ (> 15% ในเด็ก)** · burn > 40% ควรมี IV ขนาดใหญ่ 2 เส้น (ผ่านผิวที่ไหม้ได้)\n- **Parkland (Baxter)**: **Lactated Ringer's 4 mL × น้ำหนัก (kg) × %TBSA** ใน 24 ชม.แรก (Schwartz ระบุช่วง 3–4 mL) — **ครึ่งแรกใน 8 ชม. นับจากเวลาเกิดเหตุ** อีกครึ่งใน 16 ชม.ถัดไป\n- แนวใหม่ (ABA consensus, ATLS 10th) เริ่มที่ **2 mL/kg/%TBSA** ในผู้ใหญ่ เพื่อลด **fluid creep** (ไฟฟ้าแรงสูงเริ่ม 4 mL)\n- ตัวอย่าง: 70 kg, 40% → 4 × 70 × 40 = 11,200 mL → 5,600 mL ใน 8 ชม.แรก (700 mL/h) · ถ้ามาถึง รพ. ชม.ที่ 2 ต้องให้ 5,600 mL ใน 6 ชม.ที่เหลือ\n- เด็ก < 20 kg: glycogen สำรองน้อย → ให้ **maintenance ที่มี dextrose** เพิ่มจากสูตร resuscitation\n\n> สูตรเป็นแค่จุดเริ่มต้น — ปรับตาม **urine output** เป็นหลัก\n\n### เป้าหมายและภาวะแทรกซ้อนระยะแรก\n| ตัวชี้วัด | เป้าหมาย |\n|---|---|\n| Urine output ผู้ใหญ่ | ราว **30 mL/h** (≈ 0.5 mL/kg/h) |\n| Urine output เด็ก | **1–1.5 mL/kg/h** |\n| MAP | > 60 mmHg |\n\n- ให้น้ำมากเกิน → **abdominal compartment syndrome**, ปอดบวมน้ำ, compartment ที่แขนขา, แผลลึกขึ้น\n- **Circumferential full-thickness burn** ที่แขนขาหรือหน้าอก → eschar รัดเหมือนสายรัด → ปลายมือเย็น ชา ชีพจรหาย หรือ ventilate ยาก → **escharotomy** (แนว medial/lateral ของแขนขา, anterior axillary line ของหน้าอก) ส่วนใหญ่ไม่จำเป็นใน 8 ชม.แรก\n- พยากรณ์: **อายุ, %TBSA, inhalation injury** เป็นตัวทำนายตายที่แรงที่สุด (Baux score = อายุ + %TBSA)\n\n### ส่งต่อ burn center และดูแลแผล\nส่งต่อเมื่อ: partial thickness **> 10% TBSA**, แผลที่ **หน้า มือ เท้า อวัยวะเพศ perineum ข้อใหญ่**, full thickness ทุกขนาด, **electrical / chemical / inhalation**, มีโรคประจำตัวหรือบาดเจ็บร่วม, เด็กใน รพ.ที่ไม่มีทีมเด็ก\n- ยาทาที่ใช้บ่อย: **silver sulfadiazine** (ป้องกันติดเชื้อ ห้ามใช้ใกล้ graft ใหม่), **mafenide acetate** (ซึมผ่าน eschar ได้ดี ปวดตอนทา ยับยั้ง carbonic anhydrase), silver nitrate 0.5% (hyponatremia, ผ้าเปื้อนดำ)\n- Deep partial และ full thickness → **early excision and grafting** เปลี่ยนอัตรารอดชีวิต\n- ภาวะ **hypermetabolism** (metabolic rate เพิ่มได้ถึง 200%) → **early enteral nutrition**",
+   "pearls": [
+    "Superficial partial = พอง ชุ่ม ปวดมาก · full thickness = แข็ง ขาว ไม่ปวด ไม่ซีด",
+    "Rule of nines ผู้ใหญ่: ศีรษะ 9, แขน 9, ขา 18, ลำตัวหน้า 18, หลัง 18, perineum 1 · ฝ่ามือรวมนิ้ว 1%",
+    "ไม่นับ 1st-degree burn ใน %TBSA",
+    "Parkland 4 mL × kg × %TBSA (LR) — ครึ่งแรกใน 8 ชม. นับจากเวลาไหม้",
+    "Urine output เป้า: ผู้ใหญ่ ~30 mL/h (0.5 mL/kg/h), เด็ก 1–1.5 mL/kg/h",
+    "Circumferential full-thickness burn + ปลายขาดเลือด/ventilate ยาก → escharotomy",
+    "อายุ + %TBSA + inhalation injury = ตัวทำนายตายที่แรงที่สุด"
+   ],
+   "mnem": [
+    {
+     "name": "Rule of nines",
+     "what": "ประเมิน %TBSA ผู้ใหญ่",
+     "lines": [
+      [
+       "9",
+       "ศีรษะและคอ"
+      ],
+      [
+       "9 × 2",
+       "แขนแต่ละข้าง"
+      ],
+      [
+       "18 × 2",
+       "ลำตัวด้านหน้า / ด้านหลัง"
+      ],
+      [
+       "18 × 2",
+       "ขาแต่ละข้าง"
+      ],
+      [
+       "1",
+       "perineum"
+      ]
+     ],
+     "note": "เด็กเล็กศีรษะสัดส่วนใหญ่กว่า ใช้ Lund–Browder"
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-06-3-1",
+     "kind": "mcq",
+     "topic": "Parkland formula",
+     "stem": "A 70-kg man sustains flame burns to the entire anterior trunk and the whole of both upper limbs (deep partial and full thickness). He arrives at the hospital 2 hours after the injury and has received no fluid. Using the Parkland formula (4 mL/kg/%TBSA), how much lactated Ringer's should he receive over the next 6 hours?",
+     "choices": [
+      "5,040 mL",
+      "10,080 mL",
+      "2,520 mL",
+      "3,780 mL",
+      "7,560 mL"
+     ],
+     "answer": 0,
+     "explain": "%TBSA = ลำตัวด้านหน้า 18 + แขนสองข้าง 9 + 9 = **36%** → Parkland = 4 × 70 × 36 = **10,080 mL/24 ชม.** ครึ่งแรก **5,040 mL** ต้องให้ภายใน **8 ชม.นับจากเวลาเกิดเหตุ** ผู้ป่วยมาช้า 2 ชม. จึงต้องให้ 5,040 mL ใน 6 ชม.ที่เหลือ (840 mL/h) แล้วปรับตาม urine output\n- **10,080 mL** คือปริมาณทั้ง 24 ชม.\n- **2,520 mL** คือคิดจากสูตร 2 mL/kg/%TBSA ครึ่งแรก หรือแบ่งผิด\n- **3,780 mL** คือคิดเหมือนให้ 8 ชม.แรกเป็นอัตราคงที่แล้วตัดเหลือ 6 ชม. (ผิดหลักนับจากเวลาไหม้)\n- **7,560 mL** คือคำนวณ %TBSA ผิดเป็น 54%",
+     "pearl": "Parkland นับเวลาจากตอนไหม้ ไม่ใช่ตอนมาถึง รพ.",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-3-2",
+     "kind": "mcq",
+     "topic": "Burn depth",
+     "stem": "A 30-year-old woman spills boiling water on her thigh. The wound is pink, moist, with intact and ruptured blisters, blanches briskly with pressure, and is exquisitely painful to touch. What is the most likely depth and expected course?",
+     "choices": [
+      "Superficial partial-thickness burn that should heal in about 2–3 weeks with minimal scarring",
+      "Superficial (first-degree) burn that should heal within a week",
+      "Deep partial-thickness burn that will usually require excision and grafting",
+      "Full-thickness burn that will require skin grafting",
+      "Fourth-degree burn involving underlying muscle"
+     ],
+     "answer": 0,
+     "explain": "แผล **พอง ชุ่ม ชมพู กดซีดเร็ว และปวดมาก** = **superficial partial thickness** (epidermis + papillary dermis) ปลายประสาทยังอยู่จึงปวดมาก และมี skin appendage เหลือให้ epithelium งอกได้ จึงหายใน 2–3 สัปดาห์โดยไม่ต้อง graft\n- **First-degree** แดง ปวด แต่ **ไม่พอง** และไม่นับใน TBSA\n- **Deep partial** สีขาวด่าง ชื้นน้อย ซีดช้า ความรู้สึกลดลง หายช้า > 3 สัปดาห์\n- **Full thickness** แข็งเหมือนหนัง ขาว/เกรียม **ไม่ปวด** ไม่ซีด\n- **Fourth-degree** ลงถึงกล้ามเนื้อหรือกระดูก",
+     "pearl": "พอง + ปวดมาก + กดซีด = superficial partial thickness",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-3-3",
+     "kind": "mcq",
+     "topic": "Escharotomy",
+     "stem": "A 50-year-old man has circumferential full-thickness burns of the left forearm and hand after a factory fire. Eight hours into resuscitation, the hand is cool, capillary refill is delayed, he reports numbness, and the radial Doppler signal is weakening. What is the most appropriate management?",
+     "choices": [
+      "Bedside escharotomy along the medial and lateral aspects of the forearm",
+      "Elevate the limb and increase the IV fluid rate",
+      "Immediate full-thickness excision and skin grafting of the forearm",
+      "Arterial angiography of the left upper limb",
+      "Apply silver sulfadiazine and re-examine in 24 hours"
+     ],
+     "answer": 0,
+     "explain": "แผล **full-thickness รอบแขน** ทำให้ eschar แข็งไม่ยืด เมื่อเนื้อใต้แผลบวมจากการให้สารน้ำ ความดันภายในสูงขึ้น กด venous outflow แล้ว arterial inflow → ชา เย็น ชีพจรลด ต้องทำ **escharotomy** (ตัดผ่าน eschar ตามแนว medial และ lateral ข้างเคียงจนถึงเนื้อที่มีเลือด) ข้างเตียงด้วย electrocautery ถ้ายังไม่ดีขึ้นจึงพิจารณา fasciotomy\n- **ยกแขนและเพิ่มสารน้ำ** ไม่แก้การรัด และน้ำมากทำให้บวมมากขึ้น\n- **Excision + graft** เป็นการรักษาแผลระยะถัดไป ไม่ใช่การแก้ขาดเลือดเฉียบพลัน\n- **Angiography** ไม่จำเป็น ปัญหาคือแรงกดจากภายนอก\n- **ทายาแล้วรอ** ทำให้แขนขาดเลือดถาวร",
+     "pearl": "แผลไหม้ลึกรอบแขนขา + ปลายขาดเลือด → escharotomy",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-3-4",
+     "kind": "mcq",
+     "topic": "Resuscitation endpoint",
+     "stem": "A 60-kg woman with 45% TBSA flame burns is receiving lactated Ringer's per the Parkland formula. At hour 6, her BP is 118/72 mmHg, HR 105/min, and urine output has been 90–110 mL/h for the past 3 hours. Bladder pressure is rising. What is the most appropriate adjustment?",
+     "choices": [
+      "Decrease the lactated Ringer's infusion rate to target urine output of about 30 mL/h",
+      "Continue the calculated rate unchanged because the formula must be completed",
+      "Add 25% albumin bolus and furosemide",
+      "Increase the infusion rate to keep urine output above 100 mL/h",
+      "Switch to 5% dextrose in water at the same rate"
+     ],
+     "answer": 0,
+     "explain": "สูตร Parkland เป็นแค่ **จุดเริ่มต้น** ต้องปรับทุกชั่วโมงตาม **urine output** เป้าผู้ใหญ่ราว **30 mL/h (≈ 0.5 mL/kg/h)** และ MAP > 60 ผู้ป่วยนี้ปัสสาวะเกินเป้ามากและ bladder pressure สูงขึ้น = **over-resuscitation (fluid creep)** เสี่ยง abdominal compartment syndrome ปอดบวมน้ำ และแผลลึกขึ้น จึงควรลดอัตราสารน้ำ\n- **ให้ตามสูตรไม่ปรับ** ผิดหลัก titration\n- **Albumin + furosemide** ทำให้ urine output ใช้ประเมินไม่ได้ และไม่ใช่แนวทางแรก\n- **เพิ่มอัตรา** ยิ่งเพิ่มภาวะแทรกซ้อนจากน้ำเกิน\n- **D5W** เป็น free water ทำให้ hyponatremia และไม่คงปริมาตรใน vascular",
+     "pearl": "ปรับสารน้ำตาม urine output — มากเกินก็อันตราย (fluid creep)",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-06-4",
+   "title": "Inhalation, electrical & chemical burns",
+   "summary": "ผู้ป่วยไฟไหม้ที่มีควัน ไฟฟ้า หรือสารเคมี ต้องคิดอะไรเพิ่มนอกเหนือจาก %TBSA",
+   "minutes": 10,
+   "source": "Schwartz 11e Ch 8 — Inhalation injury, CO and cyanide, electrical and chemical burns",
+   "md": "### Inhalation injury: รู้ให้เร็ว ใส่ท่อให้ทัน\nพบได้ราว 1 ใน 3 ของผู้ป่วยไฟไหม้ที่นอน รพ. และเพิ่มอัตราตายชัดเจน กลไกมี 3 แบบ:\n1. **ความร้อนต่อทางเดินหายใจส่วนบน** (เหนือ vocal cord) → บวมเร็ว อุดกั้นได้ในไม่กี่ชั่วโมง\n2. **สารเคมีในควันต่อทางเดินหายใจส่วนล่าง** → bronchospasm, เยื่อบุหลุด, ARDS, pneumonia\n3. **พิษทั่วร่าง** — **CO** และ **cyanide**\n\nสิ่งที่บอกว่าเสี่ยง: ไฟไหม้ใน **ที่ปิด**, แผลไหม้ใบหน้า, ขนจมูกไหม้, **เสมหะมีเขม่า**, **เสียงแหบ, stridor, wheeze, หอบเหนื่อย**\n- ขนจมูกไหม้หรือรอบปากไหม้อย่างเดียวยัง **ไม่ใช่** ข้อบ่งชี้ใส่ท่อ แต่ต้องตรวจช่องปาก/คอเพิ่ม\n- เสียงแหบ stridor หรือหายใจลำบาก → **ใส่ท่อ orotracheal แต่เนิ่น ๆ** ก่อนบวมจนใส่ไม่ได้\n- ยืนยันและจัดเกรดด้วย **fiberoptic bronchoscopy**\n- ใส่เครื่องช่วยหายใจแบบ **lung-protective (tidal volume ~6 mL/kg)**\n\n### CO และ cyanide poisoning\n| | **Carbon monoxide** | **Hydrogen cyanide** |\n|---|---|---|\n| กลไก | จับ Hb แน่นกว่า O₂ ราว **200–250 เท่า** + พิษต่อ mitochondria | ยับยั้ง **cytochrome oxidase** → ใช้ O₂ ไม่ได้ |\n| อาการ | ปวดหัว สับสน ชัก หมดสติ ใจสั่น | **lactic acidosis รุนแรงไม่ดีขึ้น**, ซึม, ช็อก |\n| กับดัก | **pulse oximetry ปกติหลอก** → ต้องวัด **COHb จาก co-oximetry** | cherry-red skin/กลิ่นอัลมอนด์พบน้อย |\n| รักษา | **100% O₂** (half-life ของ CO ลดจาก ~250 เหลือ 40–60 นาที) · hyperbaric O₂ ยังไม่ชัดเจน | **hydroxocobalamin** (ออกฤทธิ์เร็ว) ± sodium thiosulfate + 100% O₂ |\n\n### Electrical burn: แผลเล็ก แต่ข้างในใหญ่\n- กระแสไหลผ่านเนื้อเยื่อลึก (กล้ามเนื้อ เส้นประสาท หลอดเลือด) แผลผิวหนังที่ทางเข้า-ออกจึง **ประเมินความรุนแรงต่ำเกินจริง** → rule of nines ใช้ไม่ได้ดี\n- แบ่ง **low voltage (< 1,000 V)** กับ **high voltage (≥ 1,000 V)**\n- **ECG ทุกราย** · low voltage ที่ ECG ปกติและไม่มีอาการอื่นอาจไม่ต้องนอน รพ. · ECG ผิดปกติ/หมดสติ/high voltage → monitor\n- High voltage: **rhabdomyolysis → myoglobinuria → AKI** และ **compartment syndrome** → ให้สารน้ำมากขึ้น เป้าปัสสาวะสูงกว่าปกติจนปัสสาวะใส และทำ **fasciotomy** แม้สงสัยปานกลาง\n- ภาวะแทรกซ้อนระยะยาว: **cataract**, อาการทางประสาท → ตรวจตาและระบบประสาทเป็น baseline\n- ฟ้าผ่า: asystole/หยุดหายใจ, keraunographic marks (Lichtenberg figure)\n\n### Chemical burn: ล้าง ล้าง ล้าง\n| สารเคมี | ชนิดการตายของเนื้อเยื่อ | จุดสำคัญ |\n|---|---|---|\n| **กรด** | **coagulation necrosis** (จำกัดตัวเองมากกว่า) | ล้างน้ำมาก ๆ |\n| **ด่าง** (ปูน, โซดาไฟ) | **liquefactive necrosis** → ลึกต่อเนื่อง **อันตรายกว่า** | ล้างนานกว่า · ตาโดนด่างเป็นเหตุฉุกเฉิน |\n| **Hydrofluoric acid** | liquefactive (ข้อยกเว้นของกรด) | ปวดมากเกินแผล, **hypocalcemia** → QT ยาว/VF → **calcium gluconate** ทา/IV/intra-arterial |\n| Formic acid | | hemolysis, hemoglobinuria |\n\n- ขั้นแรกทุกชนิด: ถอดเสื้อผ้าที่เปื้อน + **ล้างด้วยน้ำปริมาณมากอย่างน้อย 30 นาที** · ห้ามพยายาม neutralize ด้วยกรด/ด่าง (เกิดความร้อนเพิ่ม)\n- สารเป็น **ผงแห้ง** (ปูนซีเมนต์ ผงโซดาไฟ) → **ปัดออกก่อน** แล้วค่อยล้าง\n\n### บริบทไทย\n- อุบัติเหตุไฟฟ้าดูด/ไฟฟ้าแรงสูงจากงานก่อสร้าง ช่างไฟ และการเกษตร พบได้บ่อย → คิดถึง compartment syndrome และ myoglobinuria เสมอ\n- น้ำร้อนลวกในเด็กเล็กและแผลไหม้ไม่สอดคล้องกับประวัติ → นึกถึง **child abuse** (รอยไหม้ขอบชัดแบบจุ่ม, รูปถุงมือ/ถุงเท้า)\n- รพช. ที่รับผู้ป่วยไฟไหม้รุนแรง: primary survey, ใส่ท่อถ้าสงสัย airway burn ก่อนส่งต่อ, เริ่ม Parkland, ใส่ Foley, ห่มผ้าแห้งสะอาดป้องกันตัวเย็น แล้วส่ง burn unit",
+   "pearls": [
+    "เสียงแหบ stridor หอบ หลังสูดควัน → ใส่ท่อเร็ว ก่อน airway บวม",
+    "CO: SpO₂ ปกติหลอก → วัด COHb · รักษา 100% O₂ (half-life ~250 → 40–60 นาที)",
+    "Cyanide: lactic acidosis รุนแรงไม่ดีขึ้น → hydroxocobalamin",
+    "Electrical: แผลผิวหนังน้อยแต่กล้ามเนื้อตายมาก → ECG ทุกราย, myoglobinuria, fasciotomy",
+    "Alkali (liquefactive) ลึกกว่า acid (coagulative)",
+    "Chemical burn: ล้างน้ำ ≥ 30 นาที · ผงแห้งปัดออกก่อน",
+    "Hydrofluoric acid → hypocalcemia → calcium gluconate"
+   ],
+   "items": [
+    {
+     "id": "N12-06-4-1",
+     "kind": "mcq",
+     "topic": "Inhalation injury airway",
+     "stem": "A 38-year-old man is rescued from a burning room in a closed apartment. He has facial burns, singed nasal hairs, and carbonaceous sputum. Over 30 minutes his voice becomes hoarse and inspiratory stridor develops. SpO2 is 95% on a non-rebreather mask. What is the most appropriate next step?",
+     "choices": [
+      "Early endotracheal intubation",
+      "Nebulized racemic epinephrine and observation",
+      "High-flow nasal cannula oxygen and repeat assessment in 2 hours",
+      "Intravenous dexamethasone",
+      "Chest radiograph to look for pulmonary infiltrates"
+     ],
+     "answer": 0,
+     "explain": "ไฟไหม้ในที่ปิด + เสมหะมีเขม่า + **เสียงแหบและ stridor ที่เกิดขึ้นใหม่** = upper airway thermal injury ที่กำลังบวม airway edema จะเพิ่มขึ้นต่อเนื่องในชั่วโมงแรก ๆ (โดยเฉพาะเมื่อให้สารน้ำ) ถ้ารอจนอุดจะใส่ท่อไม่ได้ จึงต้อง **intubate แต่เนิ่น ๆ** ขณะยังทำได้ SpO₂ ที่ปกติไม่ได้ช่วยยืนยันความปลอดภัยของ airway\n- **Racemic epinephrine** และ **dexamethasone** ไม่หยุดการบวมจาก thermal injury และ steroid ไม่แนะนำในผู้ป่วยไฟไหม้\n- **High-flow O₂ แล้วรอ** เสี่ยงอุดกั้นจนใส่ท่อไม่ได้\n- **CXR** มักปกติในระยะแรกของ inhalation injury และไม่เปลี่ยนการตัดสินใจเรื่อง airway",
+     "pearl": "Stridor/เสียงแหบหลังสูดควัน = ใส่ท่อก่อนสายเกินไป",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-4-2",
+     "kind": "mcq",
+     "topic": "Carbon monoxide poisoning",
+     "stem": "A 55-year-old woman is brought from a house fire with headache, confusion, and vomiting. She has minor burns to the hands only. SpO2 by pulse oximetry is 99% on room air. What is the most appropriate test to confirm the suspected diagnosis?",
+     "choices": [
+      "Arterial carboxyhemoglobin level by co-oximetry",
+      "Repeat pulse oximetry on a different finger",
+      "Serum lactate",
+      "Fiberoptic bronchoscopy",
+      "Non-contrast CT of the brain"
+     ],
+     "answer": 0,
+     "explain": "หลังสูดควันแล้วปวดหัว สับสน อาเจียน = **CO poisoning** CO จับ Hb แน่นกว่า O₂ ราว 200–250 เท่า pulse oximeter ทั่วไปแยก carboxyhemoglobin กับ oxyhemoglobin ไม่ได้จึง **อ่านค่าสูงหลอก** ต้องวัด **COHb ด้วย co-oximetry** และให้ 100% O₂ ทันทีระหว่างรอผล\n- **วัด SpO₂ นิ้วอื่น** ยังผิดเหมือนเดิม\n- **Lactate** สูงได้ทั้ง CO และ cyanide ไม่จำเพาะ\n- **Bronchoscopy** ใช้ประเมินการบาดเจ็บทางเดินหายใจ ไม่บอกระดับ CO\n- **CT brain** ใช้หาสาเหตุอื่น ไม่ยืนยัน CO poisoning",
+     "pearl": "สูดควัน + SpO₂ ปกติ ไม่ได้แปลว่าไม่มี CO — วัด COHb",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-4-3",
+     "kind": "mcq",
+     "topic": "High-voltage electrical injury",
+     "stem": "A 32-year-old electrician touches a 22,000-V power line. He has a small charred entry wound on the right palm and an exit wound on the left foot. His right forearm is tense and painful on passive finger extension. Urine is dark red-brown and dipstick is strongly positive for blood, but microscopy shows no red cells. Which management is most important?",
+     "choices": [
+      "Aggressive IV fluids targeting high urine output and urgent forearm fasciotomy",
+      "Fluid per Parkland formula based on the visible 2% TBSA burn",
+      "Local wound care and discharge if the ECG is normal",
+      "Immediate amputation of the right hand",
+      "Restrict fluids to avoid pulmonary edema and give furosemide"
+     ],
+     "answer": 0,
+     "explain": "ไฟฟ้า **แรงสูง** วิ่งผ่านกล้ามเนื้อลึก แผลผิวหนังเล็กจึงประเมินความรุนแรงต่ำเกินจริง ปัสสาวะสีน้ำตาลแดง dipstick บวกแต่ไม่มีเม็ดเลือดแดง = **myoglobinuria** จาก **rhabdomyolysis** ต้องให้สารน้ำมากกว่าสูตรปกติเพื่อปัสสาวะออกมากจนใส ป้องกัน AKI และแขนตึง ปวดเมื่อยืดนิ้ว = **compartment syndrome** → **fasciotomy** (Schwartz แนะนำทำแม้สงสัยปานกลาง) ร่วมกับ ECG monitoring\n- **คิดตาม 2% TBSA** ให้น้ำน้อยเกินไปมาก\n- **ล้างแผลแล้วกลับบ้าน** ใช้ได้เฉพาะ low voltage ที่ ECG ปกติไม่มีอาการอื่น\n- **ตัดมือทันที** ยังไม่มีข้อบ่งชี้ ต้อง decompress และประเมินเนื้อตายก่อน\n- **จำกัดน้ำ/ให้ furosemide** ทำให้ไตวายจาก myoglobin แย่ลง",
+     "pearl": "Electrical burn: แผลเล็กหลอกตา — myoglobinuria + compartment syndrome",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "N12-06-4-4",
+     "kind": "mcq",
+     "topic": "Chemical burn",
+     "stem": "A 26-year-old worker is splashed on both forearms with liquid sodium hydroxide (caustic soda). He arrives 10 minutes later with burning pain; the skin is soapy and erythematous. What is the most appropriate initial management?",
+     "choices": [
+      "Remove contaminated clothing and irrigate with copious water for at least 30 minutes",
+      "Neutralize the alkali with dilute acetic acid",
+      "Apply silver sulfadiazine cream and a dry dressing",
+      "Apply topical calcium gluconate gel",
+      "Brief rinse for 1 minute, then assess burn depth"
+     ],
+     "answer": 0,
+     "explain": "**ด่าง** ทำให้เกิด **liquefactive necrosis** ซึ่งซึมลึกต่อเนื่องและอันตรายกว่ากรด หลักแรกของ chemical burn คือ **ถอดเสื้อผ้าที่เปื้อนและล้างด้วยน้ำปริมาณมากอย่างน้อย 30 นาที** (ด่างมักต้องล้างนานกว่านั้น) เพื่อเจือจางและชะสารออก\n- **Neutralize ด้วยกรด** ทำให้เกิดความร้อนจากปฏิกิริยา แผลลึกขึ้น และเสียเวลา\n- **Silver sulfadiazine** ใช้หลังล้างสะอาดแล้ว ไม่ใช่ขั้นแรก\n- **Calcium gluconate** ใช้กับ hydrofluoric acid เพื่อจับ fluoride\n- **ล้าง 1 นาที** ไม่พอ ด่างยังทำลายเนื้อต่อ",
+     "pearl": "Chemical burn: ล้างน้ำมาก ๆ ≥ 30 นาที ห้าม neutralize",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-06-MEQ1",
+   "part": "MEQ",
+   "topic": "Motorcycle crash with hemorrhagic shock and burns",
+   "vignette": "ชายไทยอายุ 25 ปี ขี่รถจักรยานยนต์ชนเสาไฟฟ้าแล้วรถล้มทับ ท่อไอเสียและน้ำมันติดไฟลวกขาขวา รถกู้ภัยนำส่ง รพช. 40 นาทีหลังเกิดเหตุ\nแรกรับ: พูดได้แต่สับสน GCS E3V4M6 หายใจเร็ว\nV/S: BP 84/56 mmHg, HR 136/min, RR 30/min, SpO₂ 94% (O₂ mask), T 35.8 °C\nPE: ท้องกดเจ็บทั่ว ไม่มี guarding ชัด เชิงกรานกดเจ็บ ขาขวามีแผลไหม้พอง ชุ่ม ปวดมาก ตั้งแต่ต้นขาถึงเท้าทั้งด้านหน้าและหลัง (ขาทั้งขา) น้ำหนักประมาณ 60 kg",
+   "questions": [
+    {
+     "q": "1. จงบอกการประเมินและการแก้ไขตาม primary survey ใน 10 นาทีแรก",
+     "a": "- **A**: ผู้ป่วยพูดได้ → airway ผ่านได้ขณะนี้ · **in-line C-spine stabilization** + hard collar (blunt trauma) · เฝ้าระวังการใส่ท่อเพราะสับสน\n- **B**: O₂ high flow, ตรวจเสียงหายใจสองข้าง หา tension PTX/hemothorax · **eFAST** ดูปอด\n- **C**: shock (BP 84/56, HR 136 ≈ **class III, เสียเลือด 30–40%**) → **IV ≥ 16G 2 เส้น** หรือ IO, ส่ง CBC, G/M, coagulation, lactate · crystalloid อุ่นไม่เกิน 1 L แล้วให้ **PRC (O-neg/O) ± FFP** · กดเจ็บเชิงกราน → **pelvic binder** · **TXA 1 g** ภายใน 3 ชม.\n- **D**: GCS 13 · pupils · ระวัง hypoxia/hypotension ทำ secondary brain injury\n- **E**: ถอดเสื้อผ้าทั้งหมด ดูแผลอื่น แล้ว **ห่มผ้าอุ่น** (T 35.8 = เริ่ม hypothermia)\n- Adjuncts: CXR, pelvic X-ray, **FAST**, ECG, Foley (หลังตรวจ meatus/perineum ไม่มีเลือด)\n\nเกณฑ์ให้คะแนน\n- ทำตามลำดับ ABCDE พร้อม C-spine\n- ระบุ hemorrhagic shock class III และแหล่งเลือดที่ต้องหา\n- pelvic binder + blood product + ป้องกันตัวเย็น"
+    },
+    {
+     "q": "2. FAST พบน้ำใน Morison's pouch, CXR ปกติ, pelvic film มี open-book pelvic fracture หลังให้ 1 L และ PRC 2 unit BP 88/60 จะทำอย่างไรต่อ",
+     "a": "ผู้ป่วยเป็น **non-responder/transient responder** + **FAST บวก** → มีเลือดออกในช่องท้อง + pelvic fracture\n- **Activate massive transfusion** (สัดส่วน RBC:plasma:platelet ใกล้ 1:1:1), อุ่นเลือด, ให้ calcium\n- **Emergency laparotomy** (damage control: packing, หยุดเลือดตับ/ม้าม) ร่วมกับ **pelvic packing** หรือ **angioembolization** สำหรับเลือดออกจาก pelvis\n- **ไม่ส่ง CT** เพราะไม่ stable\n- ใน รพช. ที่ไม่มีศัลยแพทย์/เลือดพอ: resuscitate + pelvic binder + ประสานส่งต่อ รพท./รพศ. ทันที (ไม่ใช่รอให้ stable ก่อนส่ง)"
+    },
+    {
+     "q": "3. จงคำนวณ %TBSA และปริมาณสารน้ำสำหรับแผลไหม้ใน 24 ชั่วโมงแรก (Parkland) พร้อมระบุเป้าหมายติดตาม",
+     "a": "- ขาขวาทั้งขาหน้าหลัง = **18% TBSA** (superficial partial thickness — นับได้)\n- Parkland: 4 × 60 × 18 = **4,320 mL LR / 24 ชม.** → **2,160 mL ใน 8 ชม.แรกนับจากเวลาเกิดเหตุ** (เหลือ 7 ชม. 20 นาที) และ 2,160 mL ใน 16 ชม.ถัดไป · (สูตร ABA 2 mL/kg/% = 2,160 mL/24 ชม.)\n- แผลไหม้ < 20% ในผู้ใหญ่โดยลำพังอาจไม่ต้อง formula resuscitation แต่ผู้ป่วยรายนี้มี hemorrhagic shock → **ภาวะช็อกในชั่วโมงแรกหลังไหม้ไม่ใช่จาก burn** ให้หาเลือดออกก่อนเสมอ\n- เป้า **urine output 0.5 mL/kg/h (~30 mL/h)**, MAP > 60, lactate ลดลง\n- ดูแลแผล: ล้างสะอาด, ปิดแผล, tetanus prophylaxis, ระงับปวด"
+    },
+    {
+     "q": "4. วันที่ 2 ใน ICU ปัสสาวะออก 15 mL/h ท้องตึงขึ้นเรื่อย ๆ peak airway pressure สูงขึ้น จงบอกภาวะที่สงสัย วิธียืนยัน และการรักษา",
+     "a": "สงสัย **abdominal compartment syndrome** (หลัง damage control + massive resuscitation + pelvic packing)\n- ยืนยันด้วย **bladder pressure** (intra-abdominal hypertension; ACS เมื่อ IAP สูงต่อเนื่อง > 20 mmHg ร่วมกับ organ dysfunction ใหม่)\n- รักษา: ลดสารน้ำเกิน, sedation/paralysis, NG/rectal decompression → ถ้าไม่ดีขึ้น **decompressive laparotomy** และ open abdomen\n- ภาวะแทรกซ้อนอื่นที่ต้องเฝ้าระวัง: lethal triad, AKI, pneumonia, DVT"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 7",
+    "Schwartz 11e Ch 8",
+    "ATLS 10th edition (2018)"
+   ]
+  }
+ ],
+ "osce": []
+}

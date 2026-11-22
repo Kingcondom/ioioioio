@@ -1,0 +1,478 @@
+{
+ "lec": "04",
+ "date": "Schwartz Ch 5",
+ "title": "Shock",
+ "subtitle": "ช็อกแต่ละชนิดเกิดจากอะไร จะแยกได้อย่างไรที่ข้างเตียง และต้อง resuscitate อย่างไรจนถึงเป้าหมายที่แท้จริงของการรักษา",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบาย pathophysiology ของช็อกในระดับเซลล์และกลไกชดเชยของร่างกายได้",
+  "เรียนจบแล้วต้องจำแนกช็อก 6 ชนิดจากอาการและรูปแบบ hemodynamics (CO, SVR, CVP) ได้",
+  "เรียนจบแล้วต้องประเมิน class ของ hemorrhagic shock หาแหล่งเลือดออก และใช้หลัก damage control resuscitation ได้",
+  "เรียนจบแล้วต้องวินิจฉัย sepsis/septic shock ตาม Sepsis-3 และสั่งการรักษาตาม hour-1 bundle พร้อม source control",
+  "เรียนจบแล้วต้องวินิจฉัยและรักษา cardiogenic shock, tension pneumothorax, cardiac tamponade, massive PE และ neurogenic shock เบื้องต้น",
+  "เรียนจบแล้วต้องเลือกและแปลผล endpoints of resuscitation (lactate, base deficit, urine output, ScvO₂) ได้"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 5 Shock",
+  "**Surviving Sepsis Campaign**: International guidelines for management of sepsis and septic shock 2021 · Sepsis-3 definitions (JAMA 2016)",
+  "**ATLS** 10th edition (2018) — classification of hemorrhagic shock",
+  "**AANS/CNS** Guidelines for management of acute cervical spine and spinal cord injuries (2013) — MAP 85–90 mmHg"
+ ],
+ "sections": [
+  {
+   "id": "n12-04-1",
+   "title": "Pathophysiology และการจำแนกชนิดของ shock",
+   "summary": "ช็อกคือการที่เซลล์ได้ออกซิเจนไม่พอ ร่างกายชดเชยอย่างไร และจะแยกช็อก 6 ชนิดจากอาการและ hemodynamics ได้อย่างไร",
+   "minutes": 11,
+   "source": "Schwartz 11e Ch 5 — Evolution in understanding shock; pathophysiology; forms of shock (Tables 5-1, 5-3)",
+   "md": "### Shock คืออะไร\n**Shock** = ภาวะที่เนื้อเยื่อได้ออกซิเจนและสารอาหาร **ไม่พอกับความต้องการของเซลล์** — ไม่ได้นิยามด้วยตัวเลขความดัน ความดันต่ำเป็นสัญญาณที่ **มาช้า**\n- เซลล์ขาดออกซิเจน → เปลี่ยนเป็น **anaerobic glycolysis** → ATP น้อย (2 ATP แทน 36) + **lactate** สะสม → metabolic acidosis\n- ATP ไม่พอ → Na⁺/K⁺-ATPase ล้ม → เซลล์บวม, Ca²⁺ เข้าเซลล์, ไมโทคอนเดรียเสีย → เซลล์ตาย ปล่อย **DAMPs** → การอักเสบทั่วร่างกาย\n- ระยะ: **compensated** (ความดันยังปกติ แต่ perfusion ไม่พอ) → **decompensated** (ความดันตก) → **irreversible** (ให้สารน้ำ/ยาก็ไม่กลับ, vasodilation ดื้อยา)\n- สะสม \"oxygen debt\" — ยิ่งนานและลึก อวัยวะยิ่งล้มเหลว (ARDS, AKI, MODS)\n\n### Oxygen delivery: สมการที่อธิบายทุกชนิดของช็อก\n**DO₂ = CO × CaO₂** โดย **CaO₂ ≈ 1.34 × Hb × SaO₂** (+ 0.003 × PaO₂) และ **CO = HR × SV**\n- SV ขึ้นกับ **preload** (ปริมาตรเลือดที่กลับหัวใจ), **contractility**, **afterload**\n- **MAP ≈ CO × SVR** → ความดันจะต่ำเมื่อ CO ต่ำ หรือ SVR ต่ำ\n- ช็อกแต่ละชนิดคือการเสียส่วนใดส่วนหนึ่งของสมการ: เสีย preload (hypovolemic), เสีย pump (cardiogenic), ถูกกั้นทางไหลกลับ (obstructive), เสีย vascular tone (septic, neurogenic)\n- **SvO₂/ScvO₂** สะท้อนสมดุลการส่ง–ใช้ออกซิเจน: ต่ำ (น้อยกว่า 65–70%) = ส่งไม่พอ/ดึงใช้มาก · สูงใน sepsis เพราะเซลล์ใช้ O₂ ไม่ได้/shunt\n\n### ร่างกายชดเชยอย่างไร\n\n| ระบบ | กลไก | สิ่งที่เห็นทางคลินิก |\n|---|---|---|\n| **Baroreceptor** (carotid sinus, aortic arch) | sympathetic ↑ | **ชีพจรเร็ว**, หัวใจบีบแรง, เส้นเลือดส่วนปลายหด → **ผิวเย็นซีด capillary refill ช้า**, pulse pressure แคบ |\n| Catecholamine จาก adrenal | epinephrine/norepinephrine | กระสับกระส่าย, น้ำตาลสูง |\n| **RAAS** | angiotensin II, aldosterone | หลอดเลือดหด, เก็บ Na/น้ำ → **ปัสสาวะน้อย** |\n| **Vasopressin (ADH)** | ดูดน้ำกลับ + หดหลอดเลือด (โดยเฉพาะ splanchnic) | ปัสสาวะเข้มข้น · ลำไส้ขาดเลือดง่าย |\n| Fluid shift | ของเหลวจาก interstitium เข้าหลอดเลือด | Hb ค่อย ๆ ลด (ต้องใช้เวลาหลายชั่วโมง) |\n| หายใจเร็ว | ชดเชย acidosis | RR เร็ว |\n\n> เลือดถูก \"ย้าย\" ไปเลี้ยงสมองและหัวใจ โดยเสียสละไต ลำไส้ ผิวหนัง กล้ามเนื้อ — **ลำไส้ขาดเลือด** เป็นตัวการสำคัญของ MODS หลังช็อก\n> Neurogenic และ septic shock **ชดเชยด้วย sympathetic ไม่ได้ดี** (หลอดเลือดขยาย)\n\n### จำแนกช็อก 6 ชนิดและรูปแบบ hemodynamics\n\n| ชนิด | สาเหตุตัวอย่าง | CO | SVR | CVP/PCWP | ผิว |\n|---|---|---|---|---|---|\n| **Hypovolemic/hemorrhagic** | เลือดออก, GI loss, burns, third space | ↓ | ↑ | **↓** | เย็น |\n| **Septic (vasodilatory)** | ติดเชื้อ | **↑** (ระยะแรก) | **↓↓** | ↓/ปกติ | **อุ่น** (ระยะแรก) |\n| **Cardiogenic** | MI, arrhythmia, valve, myocardial contusion | **↓↓** | ↑ | **↑** | เย็น + ปอดบวมน้ำ |\n| **Obstructive** | tension pneumothorax, tamponade, massive PE | ↓ | ↑ | **↑** (คอโป่ง) | เย็น |\n| **Neurogenic** | spinal cord injury สูงกว่า T6, spinal anesthesia | ↓ | **↓** | ↓ | **อุ่น** + **ชีพจรช้า** |\n| Traumatic | hemorrhage + soft tissue injury + อักเสบ | ผสม | ผสม | ผสม | — |\n\nหลักปฏิบัติ: **ช็อกในผู้บาดเจ็บหรือหลังผ่าตัด ให้คิดว่าเป็น hemorrhage ไว้ก่อน** จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ · การประเมินข้างเตียงที่ช่วยแยก: JVP, เสียงปอด, ผิวอุ่น/เย็น, **POCUS** (หัวใจบีบ, pericardial effusion, IVC, ปอด, FAST)\n",
+   "pearls": [
+    "Shock = เนื้อเยื่อได้ O₂ ไม่พอ ไม่ใช่แค่ความดันต่ำ — ความดันตกเป็นสัญญาณท้าย ๆ",
+    "DO₂ = CO × (1.34 × Hb × SaO₂) · MAP ≈ CO × SVR",
+    "Anaerobic metabolism → lactate ↑ base deficit ↑",
+    "Hypovolemic: CVP ↓ SVR ↑ · Cardiogenic: CVP ↑ CO ↓↓ · Septic: SVR ↓↓ CO ↑",
+    "Obstructive (tension, tamponade): คอโป่ง CVP ↑ แต่ CO ↓",
+    "Neurogenic: ความดันต่ำ + ชีพจรช้า + ผิวอุ่น (สูงกว่า T6)",
+    "ช็อกในผู้บาดเจ็บ/หลังผ่าตัด = เลือดออกจนกว่าจะพิสูจน์ว่าไม่ใช่"
+   ],
+   "items": [
+    {
+     "id": "N12-04-1-1",
+     "kind": "mcq",
+     "topic": "Cellular consequence of hypoperfusion",
+     "stem": "A 40-year-old man with a bleeding duodenal ulcer has BP 84/50 mmHg and heart rate 128/min. Arterial blood gas shows pH 7.26, HCO3 15 mmol/L and lactate 6.4 mmol/L. Which cellular process best explains the elevated lactate?",
+     "choices": [
+      "Anaerobic glycolysis converting pyruvate to lactate",
+      "Increased hepatic lactate clearance during hypotension",
+      "Excess lactate infusion from lactated Ringer's solution",
+      "Primary mitochondrial poisoning by cyanide",
+      "Increased renal production of lactate from glutamine"
+     ],
+     "answer": 0,
+     "explain": "เมื่อ **oxygen delivery** ไม่พอ ไมโทคอนเดรียทำ oxidative phosphorylation ไม่ได้ เซลล์จึงพึ่ง **anaerobic glycolysis** ซึ่งเปลี่ยน pyruvate เป็น **lactate** (ผ่าน LDH) เพื่อคืน NAD⁺ ให้ glycolysis ดำเนินต่อ ได้ ATP น้อยมาก → lactate สะสมเป็นตัวบ่ง **oxygen debt** และความรุนแรงของช็อก\n- **Hepatic clearance เพิ่ม** ผิด ช็อกทำให้ตับเก็บ lactate ได้ลดลง\n- **Lactate จาก LR** ถูกเผาผลาญเป็น bicarbonate และไม่ทำให้เกิด lactic acidosis ในปริมาณปกติ\n- **Cyanide poisoning** ทำให้ lactate สูงได้แต่ไม่มีประวัติ และผู้ป่วยมีสาเหตุของ hypoperfusion ชัดเจน\n- **ไตสร้าง lactate จาก glutamine** ไม่ใช่กลไก ไตเป็นอวัยวะที่ช่วยกำจัด lactate",
+     "pearl": "Lactate สูง = anaerobic metabolism จาก DO₂ ไม่พอ",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-1-2",
+     "kind": "mcq",
+     "topic": "Hemodynamic profile of cardiogenic shock",
+     "stem": "A 67-year-old woman develops hypotension on postoperative day 2 after hip replacement. She is cold and clammy with BP 80/56 mmHg, heart rate 112/min, distended neck veins and bilateral crackles. ECG shows new anterior ST elevation. Which hemodynamic profile is expected?",
+     "choices": [
+      "Low cardiac output, high systemic vascular resistance, high pulmonary capillary wedge pressure",
+      "High cardiac output, low systemic vascular resistance, low wedge pressure",
+      "Low cardiac output, low systemic vascular resistance, low wedge pressure",
+      "Normal cardiac output, high systemic vascular resistance, low wedge pressure",
+      "High cardiac output, high systemic vascular resistance, high wedge pressure"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **acute MI** หลังผ่าตัด กล้ามเนื้อหัวใจบีบไม่ได้ → **CO ลดมาก** ร่างกายชดเชยด้วย sympathetic ทำให้ **SVR สูง** (ผิวเย็นชื้น) และเลือดคั่งย้อนกลับ → **PCWP/CVP สูง** (คอโป่ง ปอดมีน้ำ) = **cardiogenic shock** (เกณฑ์ SBP น้อยกว่า 90 นาน 30 นาที, CI น้อยกว่า 2.2, PCWP มากกว่า 15)\n- **CO สูง SVR ต่ำ wedge ต่ำ** = septic shock ระยะแรก\n- **CO ต่ำ SVR ต่ำ wedge ต่ำ** = neurogenic shock\n- **CO ปกติ SVR สูง wedge ต่ำ** = hypovolemia ระยะชดเชย\n- **CO สูง SVR สูง wedge สูง** ไม่ใช่รูปแบบของช็อก (เช่นภาวะน้ำเกินในคนหัวใจดี)",
+     "pearl": "Cardiogenic = CO ↓↓ + SVR ↑ + PCWP ↑ (ปอดบวมน้ำ คอโป่ง)",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-1-3",
+     "kind": "mcq",
+     "topic": "Obstructive shock — tension pneumothorax",
+     "stem": "A 22-year-old man is brought in after a motorcycle crash. He is in respiratory distress with BP 76/40 mmHg, heart rate 136/min, distended neck veins, absent breath sounds and hyperresonance on the right chest, and trachea deviated to the left. What is the best immediate management?",
+     "choices": [
+      "Immediate needle or finger decompression, then chest tube",
+      "Chest radiograph to confirm the diagnosis before intervention",
+      "Rapid 2 L crystalloid bolus and reassess the response",
+      "Norepinephrine infusion through a peripheral line",
+      "Ultrasound-guided pericardiocentesis"
+     ],
+     "answer": 0,
+     "explain": "ภาพคลาสสิกของ **tension pneumothorax** ซึ่งเป็น **obstructive shock**: ความดันในช่องอกสูง → เลือดดำไหลกลับหัวใจไม่ได้ → CO ตก ขณะที่ **คอโป่ง (CVP สูง)** · การวินิจฉัย **ใช้การตรวจร่างกาย** ห้ามรอ x-ray ต้อง **decompress ทันที** (needle decompression ที่ 4th–5th ICS anterior axillary line หรือ finger thoracostomy) แล้วใส่ **chest tube**\n- **CXR ก่อน** ทำให้เสียเวลา ผู้ป่วยอาจหัวใจหยุดเต้น\n- **Crystalloid** ไม่แก้การอุดกั้น\n- **Norepinephrine** ไม่แก้สาเหตุ\n- **Pericardiocentesis** ใช้กับ tamponade ซึ่งจะมีเสียงหายใจปกติทั้งสองข้าง",
+     "pearl": "Tension pneumothorax = clinical diagnosis → decompress ทันที",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-1-4",
+     "kind": "mcq",
+     "topic": "Compensatory response in early hemorrhage",
+     "stem": "A 30-year-old woman with a ruptured ectopic pregnancy has heart rate 115/min, BP 112/90 mmHg, cool extremities, capillary refill 4 seconds and urine output of 15 mL in the last hour. Which mechanism best explains her near-normal systolic pressure despite significant blood loss?",
+     "choices": [
+      "Sympathetic vasoconstriction and tachycardia raising vascular resistance",
+      "Increased capillary leak expanding intravascular volume",
+      "Peripheral vasodilation mediated by excess nitric oxide",
+      "Decreased renin, angiotensin and aldosterone secretion",
+      "Reflex bradycardia increasing ventricular filling time"
+     ],
+     "answer": 0,
+     "explain": "ระยะ **compensated shock**: baroreceptor รับรู้ปริมาตรลด → **sympathetic** ↑ → หัวใจเต้นเร็ว และ **หลอดเลือดส่วนปลายหด (SVR ↑)** ทำให้ความดัน systolic ยังใกล้ปกติ แต่ **pulse pressure แคบ** (112/90), ผิวเย็น capillary refill ช้า และปัสสาวะน้อยจาก RAAS/ADH — perfusion ไม่พอแล้วแม้ความดันยังดี\n- **Capillary leak** ทำให้ปริมาตรในหลอดเลือดลด ไม่ใช่เพิ่ม (ที่ช่วยคือ fluid shift จาก interstitium เข้าหลอดเลือด)\n- **Vasodilation จาก NO** เป็นลักษณะของ septic shock ทำให้ความดันตก\n- **Renin/aldosterone ลด** ผิดทิศ\n- **Bradycardia** ไม่ใช่การชดเชยที่คาด (ยกเว้น neurogenic)",
+     "pearl": "ความดันปกติไม่ได้แปลว่าไม่ช็อก — ดู HR, pulse pressure, CRT, urine output",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-04-2",
+   "title": "Hemorrhagic/hypovolemic shock: classes และ resuscitation",
+   "summary": "จะประเมินว่าผู้ป่วยเสียเลือดไปเท่าไร หาแหล่งเลือดออกที่ไหน และ resuscitate อย่างไรให้ถูกหลัก damage control",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 5 — Hypovolemic/hemorrhagic shock (Table 5-5), damage control resuscitation",
+   "md": "### Hemorrhagic shock: ประเมินปริมาณเลือดที่เสีย\nผู้ใหญ่มีเลือดราว **7% ของน้ำหนักตัว** (70 kg ≈ 5 L)\n\n| Class | I | II | III | IV |\n|---|---|---|---|---|\n| เสียเลือด (mL) | น้อยกว่า 750 | 750–1,500 | 1,500–2,000 | มากกว่า 2,000 |\n| เสียเลือด (%) | น้อยกว่า 15 | 15–30 | 30–40 | **มากกว่า 40** |\n| Heart rate | น้อยกว่า 100 | มากกว่า 100 | มากกว่า 120 | มากกว่า 140 |\n| Blood pressure | ปกติ | ปกติ/orthostatic (pulse pressure แคบ) | **ต่ำ** | ต่ำมาก |\n| สติ | ปกติ | กังวล | **สับสน** | ซึม |\n| Base deficit (ATLS 10) | 0 ถึง −2 | −2 ถึง −6 | −6 ถึง −10 | −10 หรือแย่กว่า |\n| การรักษา | ติดตาม | crystalloid ± เลือด | **เลือด + หยุดเลือด** | **MTP + หยุดเลือดทันที** |\n\n(ตาราง Schwartz Table 5-5; ATLS 10th เพิ่ม base deficit)\n- **ความดันตกเมื่อเสียเลือดราว 30% ขึ้นไป** · เสีย 40% คุกคามชีวิตทันที\n- ข้อมูลใน trauma: **SBP น้อยกว่า 110 mmHg** สัมพันธ์กับอัตราตายที่เพิ่มขึ้น · tachycardia **ไม่ไว** (ไม่เกิดในผู้ป่วยหลายราย)\n- **ผู้สูงอายุ/ได้ β-blocker** อาจไม่มีชีพจรเร็ว · **คนหนุ่มสาว นักกีฬา เด็ก** ชดเชยเก่งจนความดันตกฉับพลัน · **หญิงตั้งครรภ์** ปริมาตรเลือดมาก อาการมาช้า\n- Hb แรกรับปกติ **ไม่ได้ตัดการเสียเลือดมาก** ออก\n\n### หาแหล่งเลือดออก: \"on the floor and four more\"\n1. **ภายนอก** (แผล หนังศีรษะ — กดห้าม, tourniquet)\n2. **ช่องอก** — แต่ละข้างจุ 2–3 L → CXR/eFAST, chest tube\n3. **ช่องท้อง** — แหล่งที่พบบ่อยที่สุด ตรวจร่างกายไม่ไว → **FAST**, DPL\n4. **Retroperitoneum/pelvis** — pelvic fracture → x-ray pelvis, **pelvic binder**\n5. **กระดูกยาว** — femur ข้างละ 1–1.5 L → splint/traction\nนอก trauma: **ทางเดินอาหาร** (UGIB/LGIB), ruptured AAA, ectopic pregnancy, เลือดออกหลังผ่าตัด\n\n### การรักษา: หยุดเลือดก่อน resuscitate ให้สมบูรณ์ไม่ได้\nลำดับความสำคัญ (Schwartz): **(1) หยุดแหล่งเลือดออก (2) ให้ volume ด้วยเลือดในผู้ที่ความดันต่ำ (3) ดูแลทางเดินหายใจ** — ทุกนาทีที่เสียใน ER เพิ่มอัตราตาย (ราว 1% ต่อ 3 นาทีในผู้ต้องผ่าตัดช่องท้อง)\n- **Damage control resuscitation**: permissive hypotension (**SBP 80–90 mmHg**) จนหยุดเลือดได้, จำกัด crystalloid, **เลือดเป็นหลัก 1:1:1**, TXA ภายใน 3 ชม., อุ่นร่างกาย\n- ข้อยกเว้น: **TBI** ต้องรักษา SBP สูงกว่า (≥100–110 mmHg ตาม Brain Trauma Foundation) เพราะความดันต่ำเพิ่ม secondary brain injury\n- หลักฐาน: การให้สารน้ำล่าช้าจนถึงห้องผ่าตัดในผู้ป่วยถูกแทงที่ลำตัว (Bickell 1994) อัตรารอดดีกว่า · crystalloid มากเกินทำให้ dilution, hypothermia, acidosis, ACS, ARDS\n- หยุดเลือดได้ที่: **ห้องผ่าตัด** (laparotomy/thoracotomy) หรือ **angioembolization** (pelvis, ตับ, ม้าม) · REBOA ในศูนย์ที่มีความพร้อม\n\n### การตอบสนองต่อการให้สารน้ำ/เลือดเริ่มต้น\n\n| ตอบสนอง | ความหมาย | ทำต่อ |\n|---|---|---|\n| **Rapid responder** | vital signs ดีขึ้นและคงที่ | เสียเลือดน้อย (น้อยกว่า 20%) เลือดหยุดแล้ว → CT/ประเมินต่อ |\n| **Transient responder** | ดีขึ้นแล้วกลับแย่ | **ยังเลือดออกอยู่** → เลือด + เตรียมหยุดเลือด |\n| **Non-responder** | ไม่ดีขึ้นเลย | เลือดออกรุนแรงต่อเนื่อง → **ผ่าตัด/หยุดเลือดทันที** (หรือนึกถึง obstructive/cardiogenic) |\n\nผู้ที่หยุดเลือดได้แล้วแต่ยังต้องการสารน้ำ/ยากระตุ้นความดันต่อเนื่อง ร่วมกับ hypothermia–acidosis–coagulopathy ที่แก้ไม่ขึ้น = เข้าสู่ **irreversible shock**\n\n### บริบทไทยและช็อกจากการเสีย volume อื่น\n- ผู้บาดเจ็บจากรถจักรยานยนต์ที่ รพช.: ABC, ห้ามเลือดภายนอก, **pelvic binder**, เปิดเส้นใหญ่ 2 เส้น, ให้ O RBC ที่มี, TXA, จำกัด crystalloid, **ส่งต่อเร็ว** (อย่ารอให้ \"stable\" ก่อนส่งถ้าที่ตนผ่าตัดไม่ได้)\n- **Hypovolemic ที่ไม่ใช่เลือด**: ท้องเสียรุนแรง (อหิวาตกโรค), ลำไส้อุดตัน, pancreatitis, burns, ไข้เลือดออกระยะ plasma leakage (Hct เพิ่มขึ้น) → ใช้ **isotonic crystalloid** เป็นหลัก ไม่ใช่เลือด\n",
+   "pearls": [
+    "Class I น้อยกว่า 15% · II 15–30% · III 30–40% (ความดันตก สับสน) · IV มากกว่า 40%",
+    "ความดันเริ่มตกเมื่อเสียเลือดราว 30% · SBP น้อยกว่า 110 ใน trauma คือสัญญาณอันตราย",
+    "แหล่งเลือดออก: ภายนอก, ทรวงอก, ช่องท้อง, pelvis/retroperitoneum, กระดูกยาว",
+    "ลำดับ: หยุดเลือด → ให้เลือด → airway (ในผู้ป่วยเลือดออกที่หายใจได้)",
+    "Permissive hypotension SBP 80–90 · ยกเว้น TBI (SBP ≥100–110)",
+    "Transient responder = ยังเลือดออก ต้องหยุดเลือด",
+    "β-blocker/ผู้สูงอายุอาจไม่มี tachycardia · Hb แรกรับปกติไม่ตัดการเสียเลือด"
+   ],
+   "mnem": [
+    {
+     "name": "On the floor and four more",
+     "what": "หาแหล่งเลือดออกในผู้บาดเจ็บที่ช็อก",
+     "lines": [
+      [
+       "Floor",
+       "ภายนอก/แผลที่พื้น"
+      ],
+      [
+       "Chest",
+       "hemothorax (CXR, eFAST)"
+      ],
+      [
+       "Abdomen",
+       "FAST/DPL"
+      ],
+      [
+       "Pelvis/retroperitoneum",
+       "pelvic x-ray, binder"
+      ],
+      [
+       "Long bones",
+       "femur fracture"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-04-2-1",
+     "kind": "mcq",
+     "topic": "Hemorrhage class estimation",
+     "stem": "A 70-kg 35-year-old man with an open femur fracture and a scalp laceration is anxious and confused. Heart rate 128/min, BP 84/60 mmHg, respiratory rate 32/min, urine output minimal. Approximately what percentage of his blood volume has he lost?",
+     "choices": [
+      "30–40%",
+      "Less than 15%",
+      "15–30%",
+      "More than 50% with no compensation",
+      "Less than 5%"
+     ],
+     "answer": 0,
+     "explain": "ชีพจรมากกว่า 120 **ความดันต่ำ** และ **สับสน** ตรงกับ **class III hemorrhage** = เสียเลือด **30–40%** (ราว 1,500–2,000 mL ในผู้ใหญ่ 70 kg) ต้องให้ **เลือด** และหาแหล่งเลือดออกให้ครบ (femur ข้างหนึ่งเสียได้ 1–1.5 L, หนังศีรษะเลือดออกมาก) แล้วหยุดเลือด\n- **น้อยกว่า 15%** (class I) ชีพจรและความดันเกือบปกติ\n- **15–30%** (class II) ชีพจรเร็วแต่ความดัน systolic ยังปกติ มีแค่กังวล\n- **มากกว่า 50% ไม่มีการชดเชย** ไม่ตรง class IV จะชีพจรมากกว่า 140 ซึมมากหรือไม่รู้สึกตัว\n- **น้อยกว่า 5%** จะไม่มีอาการ",
+     "pearl": "ความดันตก + สับสน = class III (30–40%)",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-2-2",
+     "kind": "mcq",
+     "topic": "Permissive hypotension in penetrating trauma",
+     "stem": "A 25-year-old man has a stab wound to the left upper abdomen. In the emergency department BP is 82/54 mmHg, heart rate 124/min, GCS 15, FAST positive in the left upper quadrant. The operating room will be ready in 10 minutes. What is the most appropriate resuscitation target before surgical control of bleeding?",
+     "choices": [
+      "SBP about 80–90 mmHg with blood products en route to the OR",
+      "Systolic BP above 120 mmHg using rapid crystalloid infusion",
+      "Normal heart rate before transfer to the operating room",
+      "Mean arterial pressure of 90 mmHg using norepinephrine",
+      "No fluid or blood at all until the abdomen is opened"
+     ],
+     "answer": 0,
+     "explain": "ในผู้ป่วยบาดแผลทะลุลำตัวที่ยังหยุดเลือดไม่ได้ ใช้ **permissive (hypotensive) resuscitation**: ตั้งเป้า **SBP ราว 80–90 mmHg** (พอเลี้ยงอวัยวะ ไม่ดันลิ่มเลือดที่เพิ่งเกิดให้หลุด) ด้วย **เลือดและ plasma** แทน crystalloid และ **ไปห้องผ่าตัดโดยเร็วที่สุด** — การศึกษาพบว่าการให้สารน้ำมากก่อนหยุดเลือดเพิ่มเลือดออก dilution และอัตราตาย\n- **SBP มากกว่า 120 ด้วย crystalloid** ทำให้ \"pop the clot\" เลือดออกมากขึ้นและ coagulopathy\n- **รอให้ชีพจรปกติก่อน** ทำให้เสียเวลาหยุดเลือด ซึ่งเป็นการรักษาที่แท้จริง\n- **Norepinephrine** ใน hemorrhagic shock ทำให้อวัยวะขาดเลือดและไม่แก้ปัญหาปริมาตร\n- **ไม่ให้อะไรเลย** อาจทำให้หัวใจหยุดเต้นจากความดันต่ำรุนแรง — permissive ไม่ได้แปลว่าไม่ให้",
+     "pearl": "Penetrating torso + ยังไม่หยุดเลือด → SBP 80–90 ด้วยเลือด + ไป OR เร็ว",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-2-3",
+     "kind": "mcq",
+     "topic": "Transient responder",
+     "stem": "A 48-year-old woman involved in a car crash arrives with BP 88/60 mmHg and heart rate 122/min. After 2 units of red cells, BP rises to 112/74 mmHg and heart rate falls to 98/min, but 20 minutes later BP is 86/58 mmHg again. FAST shows free fluid in Morison's pouch. What does this response indicate and what is the next step?",
+     "choices": [
+      "Ongoing hemorrhage requiring urgent operative or angiographic control",
+      "Adequate resuscitation; proceed to admission for observation",
+      "Neurogenic shock requiring vasopressors",
+      "Inadequate crystalloid volume; give 3 L more crystalloid",
+      "Cardiogenic shock from myocardial contusion requiring inotropes"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยดีขึ้นชั่วคราวแล้วความดันตกซ้ำ = **transient responder** แสดงว่า **ยังมีเลือดออกต่อเนื่อง** ร่วมกับ FAST บวก → ต้อง **หยุดเลือดโดยเร็ว** (laparotomy ในผู้ป่วยไม่คงที่) พร้อมให้เลือดแบบ balanced และพิจารณาเปิด MTP\n- **Observation** ไม่เหมาะ ผู้ป่วยกำลังเสียเลือด\n- **Neurogenic shock** จะมีชีพจรช้า ผิวอุ่น และอาการทางไขสันหลัง ไม่ใช่ FAST บวก\n- **Crystalloid 3 L** ทำให้ dilution/coagulopathy และไม่หยุดเลือด\n- **Cardiogenic จาก contusion** พบน้อย และต้องตัดเลือดออกก่อนเสมอ — ที่นี่มีแหล่งเลือดออกชัด",
+     "pearl": "Transient responder = ยังเลือดออก → หยุดเลือด",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-2-4",
+     "kind": "mcq",
+     "topic": "Pitfall — beta-blocker masking tachycardia",
+     "stem": "A 76-year-old man taking metoprolol and aspirin is admitted with melena. Heart rate is 68/min, BP 96/60 mmHg (usual 150/90), he is pale and his capillary refill is 4 seconds. Hemoglobin is 10.8 g/dL. Which statement is most accurate?",
+     "choices": [
+      "Significant blood loss is possible despite his heart rate and hemoglobin",
+      "A heart rate below 100/min excludes hemorrhagic shock",
+      "Hemoglobin of 10.8 g/dL indicates minimal acute blood loss",
+      "His blood pressure is adequate because systolic pressure is above 90 mmHg",
+      "He should be given a beta-agonist to increase heart rate before resuscitation"
+     ],
+     "answer": 0,
+     "explain": "**β-blocker** ทำให้หัวใจเต้นเร็วเพื่อชดเชยไม่ได้ ผู้สูงอายุยังชดเชยได้น้อย และ **ความดันปกติของผู้ป่วยคือ 150/90** การลดลงเป็น 96/60 จึงถือว่าความดันต่ำสัมพัทธ์ ร่วมกับซีดและ capillary refill ช้า → อาจเสียเลือดมาก · **Hb ช่วงแรกยังไม่ลด** เพราะเสีย whole blood และการเติมน้ำเข้าหลอดเลือดต้องใช้เวลา → ต้อง resuscitate และหาแหล่งเลือดออก (endoscopy)\n- **HR น้อยกว่า 100 ตัดช็อกออก** ผิด โดยเฉพาะผู้ได้ β-blocker\n- **Hb 10.8 = เสียเลือดน้อย** ผิด Hb แรกรับตามไม่ทัน\n- **SBP มากกว่า 90 คือพอ** ผิด ต้องเทียบกับค่าปกติของผู้ป่วยและดู perfusion\n- **ให้ β-agonist** ไม่ใช่การรักษา hemorrhagic shock",
+     "pearl": "β-blocker + ผู้สูงอายุ → ไม่มี tachycardia ก็อาจช็อกได้",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-04-3",
+   "title": "Septic shock: นิยาม, hour-1 bundle และ source control",
+   "summary": "จะวินิจฉัย sepsis และ septic shock ตามนิยามปัจจุบันอย่างไร และต้องทำอะไรภายในชั่วโมงแรก รวมทั้งบทบาทของศัลยแพทย์ใน source control",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 5 — Septic shock (vasodilatory shock), Table 5-7 · Surviving Sepsis Campaign 2021",
+   "md": "### Sepsis และ septic shock: นิยามปัจจุบัน (Sepsis-3, 2016)\n- **Sepsis** = **organ dysfunction ที่คุกคามชีวิตจากการตอบสนองต่อการติดเชื้อที่ผิดปกติ** → วัดด้วย **SOFA score เพิ่ม ≥2** จากเดิม\n- **Septic shock** = sepsis ที่ต้องใช้ **vasopressor เพื่อให้ MAP ≥65 mmHg** และ **lactate มากกว่า 2 mmol/L** แม้ให้สารน้ำเพียงพอแล้ว (อัตราตายมากกว่า 40%)\n- **qSOFA** (คัดกรองนอก ICU, ≥2 ข้อ = เสี่ยงผลลัพธ์แย่): **RR ≥22**, **สติเปลี่ยน**, **SBP ≤100** — SSC 2021 แนะนำไม่ใช้ qSOFA ตัวเดียวคัดกรอง\n- เกณฑ์ SIRS ยังใช้ช่วยสงสัย แต่ไม่ใช้นิยาม sepsis แล้ว\n\n### Pathophysiology: vasodilatory (distributive) shock\n- PAMPs (endotoxin/LPS จาก gram-negative, lipoteichoic acid) + DAMPs → TLR → cytokine (TNF, IL-1, IL-6) → **iNOS สร้าง nitric oxide** → หลอดเลือดขยาย **SVR ↓↓**\n- **Capillary leak** → hypovolemia สัมพัทธ์ · **microcirculatory shunting** → เซลล์ใช้ O₂ ไม่ได้แม้ DO₂ ปกติ (ScvO₂ อาจ **สูง**)\n- ระยะแรก CO สูง ผิวอุ่น (\"warm shock\") → ระยะหลัง myocardial depression, CO ลด (\"cold shock\")\n- Vasopressin ในเลือดลดลง (relative deficiency), adrenal insufficiency สัมพัทธ์ (CIRCI), DIC, ARDS, AKI\n\n### Hour-1 bundle (Surviving Sepsis Campaign)\n\n| ขั้นตอน | รายละเอียด |\n|---|---|\n| 1. **Lactate** | วัดทันที · ถ้ามากกว่า 2 mmol/L วัดซ้ำใน 2–4 ชม. (lactate clearance เป็นเป้าหมาย) |\n| 2. **Blood culture** | อย่างน้อย 2 ชุด **ก่อนให้ antibiotic** (แต่ห้ามทำให้ยาล่าช้า) |\n| 3. **Broad-spectrum antibiotics** | ภายใน **1 ชั่วโมง** สำหรับ septic shock/สงสัย sepsis สูง · ครอบคลุม gram-negative, gram-positive, anaerobe ตามแหล่ง · ปรับลด (de-escalate) เมื่อได้ผลเพาะเชื้อ |\n| 4. **Crystalloid 30 mL/kg** | สำหรับความดันต่ำหรือ lactate ≥4 mmol/L (SSC 2021: ให้ภายใน 3 ชม.แรก) · **balanced crystalloid** ดีกว่า NSS · **ห้าม hydroxyethyl starch** |\n| 5. **Vasopressor** | ถ้ายังความดันต่ำระหว่าง/หลังให้สารน้ำ → **norepinephrine** ให้ **MAP ≥65 mmHg** (ให้ทาง peripheral ได้ชั่วคราวโดยไม่ต้องรอ central line) |\n\n- ประเมินการตอบสนองต่อสารน้ำแบบ **dynamic** (passive leg raise, pulse pressure variation, POCUS) แทน CVP ตัวเดียว · **capillary refill time** ใช้ติดตามได้\n- **EGDT** (Rivers 2001) ไม่ได้ดีกว่าการดูแลมาตรฐานในการศึกษาภายหลัง (**ProCESS, ARISE, ProMISe**) — ไม่จำเป็นต้องใส่ central line ตามโปรโตคอลทุกราย\n\n### Vasopressor, steroid และการรักษาเสริม\n\n| ยา | บทบาท |\n|---|---|\n| **Norepinephrine** | first-line (α1 > β1) |\n| **Vasopressin** | เพิ่มเมื่อ NE ขนาดปานกลาง–สูง (ราว 0.25–0.5 µg/kg/min) เพื่อลดขนาด NE |\n| Epinephrine | ตัวที่สาม หรือเมื่อหัวใจบีบตัวลด |\n| **Dobutamine** | myocardial dysfunction (CO ต่ำ filling pressure สูง) หลังได้ volume และ vasopressor แล้ว |\n| Dopamine | ไม่แนะนำเป็นตัวแรก (arrhythmia มากกว่า) |\n\n- **Hydrocortisone 200 mg/วัน** (50 mg q6h หรือ infusion) เมื่อ **ยังต้องใช้ vasopressor ต่อเนื่อง** (SSC 2021) — CORTICUS ไม่พบประโยชน์ด้าน mortality แต่ช่วยให้ช็อกหายเร็วขึ้น\n- คุมน้ำตาล **140/144–180 mg/dL** (ไม่ทำ tight control 80–110 เพราะ NICE-SUGAR พบตายมากขึ้น)\n- ARDS: **tidal volume 6 mL/kg predicted body weight**, plateau pressure ≤30, PEEP, **prone positioning** ใน ARDS รุนแรง\n- DVT/stress ulcer prophylaxis, early enteral nutrition, Hb threshold 7 g/dL\n\n### Source control: หัวใจของศัลยแพทย์ใน sepsis\nAntibiotic อย่างเดียวไม่พอเมื่อมี **หนองที่เป็นก้อน, ลำไส้ทะลุ, เนื้อเยื่อตาย หรือสิ่งแปลกปลอมติดเชื้อ** → ต้องระบายหรือตัดออกโดยเร็ว (SSC: **ภายใน 6–12 ชม.** เมื่อทำได้)\n- ระบายฝีผ่านผิวหนัง (percutaneous drainage) · ผ่าตัด laparotomy สำหรับ peritonitis · **debridement** ใน necrotizing soft tissue infection · ถอด **catheter** ที่ติดเชื้อ · ERCP ใน cholangitis\n- ทำแบบรุกล้ำน้อยที่สุดที่ได้ผล · ในผู้ป่วยไม่คงที่อาจทำ **damage control laparotomy**\n- บริบทไทย: **melioidosis** (Burkholderia pseudomallei — ชาวนา ภาคอีสาน เบาหวาน) มาด้วย septic shock/ฝีในตับ ม้าม ต่อมลูกหมาก → ceftazidime/meropenem + ระบายฝี\n",
+   "pearls": [
+    "Sepsis-3: infection + SOFA เพิ่ม ≥2 · septic shock = vasopressor ให้ MAP ≥65 + lactate มากกว่า 2 หลังให้สารน้ำพอ",
+    "qSOFA: RR ≥22, สติเปลี่ยน, SBP ≤100",
+    "Hour-1: lactate, blood culture, antibiotics, 30 mL/kg crystalloid, norepinephrine MAP ≥65",
+    "Norepinephrine first-line · เพิ่ม vasopressin · dobutamine เมื่อหัวใจบีบลด",
+    "Hydrocortisone 200 mg/วัน เมื่อยังต้องใช้ vasopressor",
+    "ไม่ใช้ hydroxyethyl starch · ใช้ balanced crystalloid",
+    "Source control (drain/debride/ถอดสาย) ภายใน 6–12 ชม. — antibiotic อย่างเดียวไม่พอ"
+   ],
+   "items": [
+    {
+     "id": "N12-04-3-1",
+     "kind": "mcq",
+     "topic": "Sepsis-3 definition of septic shock",
+     "stem": "A 63-year-old woman with obstructive pyelonephritis from a ureteric stone has received 30 mL/kg of balanced crystalloid. She still requires norepinephrine 0.15 µg/kg/min to keep MAP at 65 mmHg, and her lactate is 3.8 mmol/L. According to Sepsis-3, how is her condition classified?",
+     "choices": [
+      "Septic shock",
+      "Sepsis without shock",
+      "Severe sepsis",
+      "SIRS without infection",
+      "Cardiogenic shock"
+     ],
+     "answer": 0,
+     "explain": "**Sepsis-3** นิยาม **septic shock** = sepsis ที่ **ต้องใช้ vasopressor เพื่อคง MAP ≥65 mmHg** และ **lactate มากกว่า 2 mmol/L** ทั้งที่ได้สารน้ำเพียงพอแล้ว — ผู้ป่วยรายนี้เข้าเกณฑ์ครบ และต้องทำ **source control** (ใส่ ureteric stent หรือ percutaneous nephrostomy) ร่วมกับ antibiotic\n- **Sepsis without shock** ไม่ต้องใช้ vasopressor\n- **Severe sepsis** เป็นคำเก่า ถูกตัดออกใน Sepsis-3\n- **SIRS without infection** ผิดเพราะมีแหล่งติดเชื้อชัดเจน\n- **Cardiogenic shock** ไม่มีหลักฐานหัวใจล้มเหลว",
+     "pearl": "Septic shock = vasopressor (MAP ≥65) + lactate มากกว่า 2 หลังให้สารน้ำพอ",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-3-2",
+     "kind": "mcq",
+     "topic": "Initial management of septic shock",
+     "stem": "A 58-year-old man with diabetes presents with fever 39.4°C, confusion, BP 78/42 mmHg, heart rate 124/min and RR 28/min. He has a large fluctuant perianal swelling. Lactate is 5.1 mmol/L. Blood cultures have been drawn. Which is the most appropriate set of immediate actions?",
+     "choices": [
+      "IV antibiotics within 1 hour, 30 mL/kg crystalloid, norepinephrine for MAP below 65, urgent drainage",
+      "Oral antibiotics and outpatient incision and drainage once the fever settles",
+      "Await culture results before antibiotics, then drain the abscess the next day",
+      "Hydroxyethyl starch 1 L with dopamine as the first-line vasopressor",
+      "High-dose methylprednisolone before fluids and antibiotics to blunt inflammation"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **septic shock** จาก **perianal/ischiorectal abscess** (อาจลุกลามเป็น necrotizing infection ในผู้ป่วยเบาหวาน) ต้องทำ **hour-1 bundle**: lactate, blood culture (ทำแล้ว), **broad-spectrum IV antibiotic ภายใน 1 ชม.**, **crystalloid 30 mL/kg** (balanced), **norepinephrine** ถ้า MAP ยังน้อยกว่า 65 และสำคัญที่สุดคือ **source control** — ระบายหนอง/debride ในห้องผ่าตัดโดยเร็ว\n- **Oral antibiotics + OPD** ไม่เหมาะกับผู้ป่วยช็อก\n- **รอผลเพาะเชื้อ** ทุกชั่วโมงที่ antibiotic ล่าช้าเพิ่มอัตราตาย\n- **Hydroxyethyl starch** เพิ่มไตวายและต้องล้างไต · **dopamine** ไม่ใช่ตัวแรก\n- **Methylprednisolone ขนาดสูง** ไม่มีประโยชน์ (steroid ใช้ hydrocortisone ขนาดต่ำเมื่อยังต้องใช้ vasopressor)",
+     "pearl": "Septic shock: antibiotic ภายใน 1 ชม. + 30 mL/kg + NE + source control",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-3-3",
+     "kind": "mcq",
+     "topic": "Vasopressor choice",
+     "stem": "A 71-year-old woman with fecal peritonitis has undergone Hartmann procedure. In the ICU she remains hypotensive (MAP 58 mmHg) despite 3.5 L of balanced crystalloid; echocardiography shows a hyperdynamic left ventricle with a collapsing IVC no longer after fluids. Which is the first-line vasopressor?",
+     "choices": [
+      "Norepinephrine",
+      "Dopamine",
+      "Phenylephrine",
+      "Dobutamine",
+      "Isoproterenol"
+     ],
+     "answer": 0,
+     "explain": "ใน septic shock ที่ยังความดันต่ำหลังให้สารน้ำเพียงพอ (IVC ไม่แฟบแล้ว หัวใจบีบดี = vasodilatory shock) **norepinephrine** เป็น **first-line vasopressor** ตาม Surviving Sepsis Campaign: กระตุ้น α1 เพิ่ม SVR และ β1 เล็กน้อยรักษา CO · ถ้าต้องใช้ขนาดสูงขึ้น เพิ่ม **vasopressin** และพิจารณา hydrocortisone\n- **Dopamine** ทำให้ arrhythmia มากกว่าและอัตราตายไม่ดีกว่า\n- **Phenylephrine** (α ล้วน) อาจลด CO ใช้เป็นทางเลือกเฉพาะกรณี\n- **Dobutamine** เป็น inotrope ใช้เมื่อหัวใจบีบตัวลด และอาจทำให้ความดันลดลง\n- **Isoproterenol** ทำให้หลอดเลือดขยายและหัวใจเต้นเร็ว ไม่เหมาะ",
+     "pearl": "Septic shock: norepinephrine ตัวแรก → เพิ่ม vasopressin",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-3-4",
+     "kind": "mcq",
+     "topic": "Source control principle",
+     "stem": "A 45-year-old man is treated for septic shock with appropriate IV antibiotics and vasopressors for 24 hours. CT shows a 9-cm multiloculated liver abscess. His fever persists and vasopressor requirement is rising. He is a rice farmer from northeastern Thailand with poorly controlled diabetes. What is the most important next step?",
+     "choices": [
+      "Drain the abscess percutaneously or surgically, continuing antibiotics",
+      "Change to a different broad-spectrum antibiotic and continue observation",
+      "Add hydrocortisone and continue current therapy without intervention",
+      "Increase fluid administration to 60 mL/kg",
+      "Empiric antifungal therapy for a possible candidal abscess"
+     ],
+     "answer": 0,
+     "explain": "ฝีขนาดใหญ่เป็นก้อนหนองที่ยาปฏิชีวนะซึมเข้าได้น้อย ผู้ป่วยที่ไม่ดีขึ้นแม้ได้ antibiotic ที่เหมาะสม ต้องได้ **source control** — **ระบายหนอง** (percutaneous drainage เป็นตัวเลือกแรกถ้าทำได้ หรือผ่าตัดถ้ามีหลาย loculation/ไม่สำเร็จ) ชาวนาอีสานที่เป็นเบาหวานต้องนึกถึง **melioidosis** (ceftazidime/meropenem) และ Klebsiella\n- **เปลี่ยนยาแล้วสังเกตอาการ** ไม่แก้ปัญหาแหล่งติดเชื้อ\n- **Hydrocortisone** อาจช่วยความดัน แต่ไม่แทน source control\n- **สารน้ำเพิ่มเป็น 60 mL/kg** เสี่ยงน้ำเกิน ปัญหาไม่ใช่ปริมาตร\n- **Antifungal empirically** ไม่มีข้อบ่งชี้ชัด",
+     "pearl": "Septic shock ไม่ดีขึ้น + มีหนอง → ระบาย (source control)",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-04-4",
+   "title": "Cardiogenic, obstructive, neurogenic shock และ resuscitation endpoints",
+   "summary": "จะจำแนกและรักษาช็อกที่ไม่ใช่จากเสียเลือดหรือติดเชื้ออย่างไร และจะรู้ได้อย่างไรว่าการ resuscitate เพียงพอแล้ว",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 5 — Cardiogenic shock, obstructive shock, neurogenic shock, endpoints in resuscitation (Tables 5-8 to 5-11)",
+   "md": "### Cardiogenic shock\n**นิยาม**: ปั๊มหัวใจล้มเหลวทั้งที่ปริมาตรพอ — SBP น้อยกว่า 90 mmHg นานกว่า 30 นาที, **cardiac index น้อยกว่า 2.2 L/min/m²**, **PCWP มากกว่า 15 mmHg** · อัตราตาย 50–80%\n- สาเหตุบ่อยที่สุด: **acute MI** (กล้ามเนื้อ LV เสียราว 40%) — เกิดใน 5–10% ของ MI ส่วนใหญ่ภายใน 24 ชม. · อื่น ๆ: mechanical complication ของ MI (acute MR, VSD, free wall rupture), arrhythmia, myocarditis, **blunt cardiac injury**, aortic stenosis\n- ในผู้ป่วยศัลยกรรม: **perioperative MI** (มักไม่มีเจ็บอก — ดู troponin), arrhythmia จาก electrolyte, ผู้ป่วยโรคหัวใจที่ได้สารน้ำมาก\n- อาการ: ความดันต่ำ ผิวเย็นชื้น **คอโป่ง ปอดมีน้ำ** S3 · ยืนยันด้วย **EKG + echocardiogram**, troponin\n\n**การรักษา**\n- ออกซิเจน/ช่วยหายใจ, แก้ K/Mg, คุม arrhythmia, ระงับปวด\n- **ระวังสารน้ำ** (ให้ทีละน้อยเมื่อสงสัย hypovolemia ร่วม หรือ RV infarction ซึ่งต้องการ preload)\n- ยา: **norepinephrine** เมื่อความดันต่ำ + **dobutamine** (β1 inotrope; อาจลดความดันเพราะ β2) · milrinone ในรายดื้อ\n- **Reperfusion เร็ว** (PCI) คือการรักษาที่เปลี่ยนผลลัพธ์ · CABG ใน left main/หลายเส้น\n- Mechanical support: **intra-aortic balloon pump** (ลด afterload ช่วง systole เพิ่ม coronary perfusion ช่วง diastole โดยไม่เพิ่ม O₂ demand), ECMO/Impella ในศูนย์ที่มี\n\n### Obstructive shock\nหัวใจปกติ แต่ **เลือดไหลเข้า/ออกจากหัวใจถูกกั้น** → CO ตก **CVP สูง (คอโป่ง)**\n\n| สาเหตุ | ลักษณะเด่น | การรักษาทันที |\n|---|---|---|\n| **Tension pneumothorax** | หายใจลำบาก, เสียงหายใจหายข้างเดียว, เคาะโปร่ง, คอโป่ง, trachea เบี้ยว (สัญญาณท้าย) | **decompress ทันทีโดยไม่รอ x-ray** → chest tube (ICS 4–5 ระดับหัวนม anterior–mid axillary line) |\n| **Cardiac tamponade** | **Beck's triad**: ความดันต่ำ + เสียงหัวใจเบา + คอโป่ง · **pulsus paradoxus** (SBP ลดมากกว่า 10 mmHg ตอนหายใจเข้า) · แผลที่ \"cardiac box\" | ยืนยันด้วย **FAST/echo** → pericardiocentesis (ชั่วคราว) / **pericardial window, sternotomy/thoracotomy** · ผู้ป่วยถูกแทงที่หัวใจหยุดเต้น → resuscitative thoracotomy |\n| **Massive pulmonary embolism** | หลังผ่าตัด/นอนนาน, หายใจเหนื่อยเฉียบพลัน, hypoxemia, RV โตใน echo | anticoagulation + **systemic thrombolysis** หรือ embolectomy (surgical/catheter) |\n| อื่น ๆ | PEEP สูงเกิน, **abdominal compartment syndrome**, IVC ถูกกด (มดลูกตั้งครรภ์ — ให้นอนตะแคงซ้าย) | แก้สาเหตุ |\n\n- เลือดในเยื่อหุ้มหัวใจปริมาณ **น้อย (100–200 mL)** ก็ทำให้ tamponade ได้ถ้าเกิดเร็ว เพราะเยื่อหุ้มหัวใจยืดไม่ทัน\n- ผู้ป่วยที่เสียเลือดร่วมด้วยอาจ **ไม่มีคอโป่ง** — อย่าใช้ JVP ตัวเดียวตัดสิน\n\n### Neurogenic shock\nการบาดเจ็บของไขสันหลังระดับ **cervical หรือ thoracic สูง (เหนือ T6)** ตัด sympathetic outflow → หลอดเลือดขยาย (SVR ↓) และหัวใจไม่ถูกกระตุ้น (เส้นประสาท cardioaccelerator T1–T4) → **ความดันต่ำ + ชีพจรช้า + ผิวอุ่นแห้ง** + อ่อนแรง/ชาตามระดับไขสันหลัง · อาจเกิดจาก spinal/epidural anesthesia\n- **ต่างจาก spinal shock**: spinal shock = reflex และ tone หายไปชั่วคราวใต้ระดับบาดเจ็บ (เรื่องระบบประสาท ไม่ใช่ hemodynamics)\n- **ในผู้บาดเจ็บหลายระบบ ความดันต่ำมักเกิดจากเลือดออก** แม้มีการบาดเจ็บไขสันหลัง (ในผู้บาดเจ็บไขสันหลังจากบาดแผลทะลุที่ความดันต่ำ 74% เป็นจากเสียเลือด) → ต้อง **ตัด hemorrhage ก่อน** เสมอ\n- รักษา: ให้สารน้ำคืนปริมาตร (ส่วนใหญ่ตอบสนอง) → ถ้ายังต่ำ ใช้ **vasopressor** (phenylephrine, norepinephrine, dopamine) · **atropine** สำหรับ bradycardia\n- เป้าหมายตามแนวทาง AANS/CNS: **MAP 85–90 mmHg นาน 7 วันแรก** หลัง acute spinal cord injury เพื่อเลี้ยงไขสันหลัง · ความดันต่ำซ้ำเติม secondary cord injury · arrhythmia เกิดได้ถึง 14 วัน\n\n### Endpoints of resuscitation: เมื่อไรจึงพอ\nความดัน ชีพจร และปัสสาวะปกติ **ไม่ได้แปลว่า perfusion พอ** — ผู้บาดเจ็บที่ vital signs ปกติแล้ว 80–85% ยังมี lactate สูงหรือ SvO₂ ต่ำ (**compensated/occult hypoperfusion**)\n\n| Endpoint | เป้าหมาย/ความหมาย |\n|---|---|\n| MAP | ≥65 mmHg (sepsis) · permissive ในเลือดออกยังไม่หยุด |\n| **Urine output** | ≥0.5 mL/kg/ชม. (ผู้ใหญ่) |\n| **Lactate** | ลดลงและกลับปกติ — ปกติภายใน 24 ชม. รอด 100% · 24–48 ชม. 78% · มากกว่า 48 ชม. 14% (Schwartz) |\n| **Base deficit** | mild −3 ถึง −5 · moderate −6 ถึง −14 · severe ≤−15 (ตายราว 70%) · BD ที่ไม่ดีขึ้น = ยังเลือดออก/ช็อกอยู่ |\n| ScvO₂ | ≥70% |\n| Capillary refill, สติ, ผิว | ใช้ติดตามข้างเตียง |\n| Dynamic fluid responsiveness | passive leg raise, PPV/SVV, POCUS (IVC, VTI) — ดีกว่า CVP ค่าเดียว |\n\n- lactic acidosis ที่ไม่หายภายใน **12 ชม.** สัมพันธ์กับการติดเชื้อมากขึ้น 3 เท่าและตายมากขึ้น\n- อย่าให้สารน้ำเกินเมื่อถึงเป้าแล้ว: fluid overload → ARDS, abdominal compartment syndrome, ลำไส้บวม แผลแยก\n",
+   "pearls": [
+    "Cardiogenic: SBP น้อยกว่า 90 นาน 30 นาที + CI น้อยกว่า 2.2 + PCWP มากกว่า 15 → PCI เร็ว, NE + dobutamine, IABP",
+    "Tension pneumothorax: clinical diagnosis → decompress ทันทีไม่รอ x-ray",
+    "Beck's triad: hypotension + muffled heart sounds + distended neck veins",
+    "Neurogenic shock: ความดันต่ำ + ชีพจรช้า + ผิวอุ่น (เหนือ T6) — ตัดเลือดออกก่อนเสมอ",
+    "Spinal cord injury: MAP 85–90 mmHg ใน 7 วันแรก (AANS/CNS)",
+    "Vital signs ปกติไม่ได้แปลว่า perfusion พอ — ดู lactate, base deficit, urine output",
+    "Lactate ปกติภายใน 24 ชม. พยากรณ์ดีมาก · BD ≤−15 ตายราว 70%"
+   ],
+   "items": [
+    {
+     "id": "N12-04-4-1",
+     "kind": "mcq",
+     "topic": "Cardiac tamponade",
+     "stem": "A 31-year-old man has a stab wound just left of the sternum at the fourth intercostal space. BP is 78/60 mmHg, heart rate 130/min, neck veins are distended, heart sounds are muffled and breath sounds are equal bilaterally. Systolic pressure falls by 18 mmHg on inspiration. What is the most likely diagnosis?",
+     "choices": [
+      "Cardiac tamponade",
+      "Tension pneumothorax",
+      "Massive hemothorax",
+      "Neurogenic shock",
+      "Septic shock"
+     ],
+     "answer": 0,
+     "explain": "แผลใน \"cardiac box\" + **Beck's triad** (ความดันต่ำ, เสียงหัวใจเบา, คอโป่ง) + **pulsus paradoxus** (SBP ลดมากกว่า 10 mmHg เมื่อหายใจเข้า) โดย **เสียงหายใจเท่ากันสองข้าง** = **cardiac tamponade** ซึ่งเป็น obstructive shock · ยืนยันด้วย FAST (pericardial view) แล้วรักษาด้วย **pericardial decompression** ในห้องผ่าตัด (sternotomy/thoracotomy) — pericardiocentesis ใช้ซื้อเวลา\n- **Tension pneumothorax** จะมีเสียงหายใจหายข้างเดียวและเคาะโปร่ง\n- **Massive hemothorax** ทำให้คอแฟบ (เสียเลือด) และเสียงหายใจลดข้างเดียว เคาะทึบ\n- **Neurogenic shock** มีชีพจรช้า ไม่มีคอโป่ง\n- **Septic shock** ไม่เข้ากับบาดแผลเฉียบพลัน",
+     "pearl": "Beck's triad + pulsus paradoxus + เสียงหายใจเท่ากัน = tamponade",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-4-2",
+     "kind": "mcq",
+     "topic": "Neurogenic shock",
+     "stem": "A 26-year-old man falls from a coconut tree and lands on his head. He cannot move his arms or legs. BP 80/44 mmHg, heart rate 52/min, skin warm and dry. FAST is negative, chest and pelvic radiographs are normal, and there is no external bleeding. CT shows a C5 fracture-dislocation. After 1 L of crystalloid, BP is 84/48 mmHg. What is the most appropriate next step?",
+     "choices": [
+      "Vasopressor (e.g., norepinephrine) ± atropine, targeting MAP 85–90 mmHg",
+      "A further 4 L of rapid crystalloid to fill the dilated vascular bed",
+      "Immediate laparotomy to exclude occult intra-abdominal bleeding",
+      "Dobutamine infusion alone to increase cardiac output",
+      "Give high-dose methylprednisolone as the treatment for hypotension"
+     ],
+     "answer": 0,
+     "explain": "ความดันต่ำ + **ชีพจรช้า** + **ผิวอุ่นแห้ง** + quadriplegia จาก C5 injury และ **ตัดแหล่งเลือดออกแล้ว** (FAST ลบ, CXR/pelvis ปกติ) = **neurogenic shock** จากการเสีย sympathetic tone · หลังให้สารน้ำพอสมควรแล้วไม่ดีขึ้น ให้ **vasopressor** (norepinephrine/phenylephrine/dopamine) และ **atropine** ถ้าชีพจรช้ามีอาการ ตั้งเป้า **MAP 85–90 mmHg** ใน 7 วันแรกเพื่อเลี้ยงไขสันหลัง\n- **Crystalloid อีก 4 L** เสี่ยงปอดบวมน้ำ ปัญหาคือหลอดเลือดขยาย ไม่ใช่ขาดปริมาตร\n- **Laparotomy** ไม่มีข้อบ่งชี้เมื่อ FAST ลบและไม่มีอาการเสียเลือด\n- **Dobutamine อย่างเดียว** ทำให้หลอดเลือดขยายเพิ่ม ความดันอาจลดลง\n- **Methylprednisolone ขนาดสูง** ไม่ได้รักษาความดันต่ำ และไม่แนะนำเป็นมาตรฐานใน SCI",
+     "pearl": "Neurogenic shock: ตัดเลือดออก → สารน้ำ → vasopressor + atropine, MAP 85–90",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-4-3",
+     "kind": "mcq",
+     "topic": "Occult hypoperfusion and endpoints",
+     "stem": "A 39-year-old woman underwent splenectomy for blunt trauma 10 hours ago. She now has BP 118/72 mmHg, heart rate 92/min and urine output 0.6 mL/kg/h. Repeat lactate is 4.6 mmol/L (from 6.0) and base deficit −9. Which interpretation is most appropriate?",
+     "choices": [
+      "She has persistent occult hypoperfusion and resuscitation is not yet complete",
+      "Resuscitation is complete because vital signs and urine output are normal",
+      "The lactate elevation is due to splenectomy itself and can be ignored",
+      "She should receive sodium bicarbonate to correct the base deficit",
+      "Base deficit is unrelated to tissue perfusion in trauma"
+     ],
+     "answer": 0,
+     "explain": "Vital signs และปัสสาวะปกติไม่ได้รับประกันว่าเนื้อเยื่อได้เลือดพอ — ผู้บาดเจ็บ 80–85% ที่ vital signs ปกติแล้วยังมี **lactate สูง/ScvO₂ ต่ำ** (**compensated หรือ occult hypoperfusion**) · lactate 4.6 และ BD −9 แสดงว่ายังมี oxygen debt ต้องหาสาเหตุ (**ยังมีเลือดออก**, hypovolemia, ACS) และ resuscitate ต่อจนกว่า lactate/BD กลับปกติ — lactic acidosis ที่ไม่หายใน 12–24 ชม. สัมพันธ์กับการติดเชื้อและอัตราตายสูงขึ้น\n- **Resuscitation ครบแล้ว** ผิด endpoint ระดับเนื้อเยื่อยังไม่ถึง\n- **Lactate จาก splenectomy** ไม่ใช่คำอธิบายที่ถูกต้อง\n- **Sodium bicarbonate** ไม่แก้ hypoperfusion\n- **BD ไม่เกี่ยวกับ perfusion** ผิด BD สัมพันธ์กับความรุนแรงของช็อกและอัตราตาย",
+     "pearl": "Vital signs ปกติแต่ lactate/BD ยังสูง = occult hypoperfusion ยัง resuscitate ไม่ครบ",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N12-04-4-4",
+     "kind": "mcq",
+     "topic": "Massive pulmonary embolism",
+     "stem": "A 64-year-old woman on postoperative day 6 after open radical cystectomy suddenly becomes breathless and hypotensive while walking to the bathroom. BP 74/48 mmHg, heart rate 128/min, SpO2 84% on 6 L/min oxygen, distended neck veins and clear lungs. Bedside echocardiography shows a dilated right ventricle with septal flattening and an underfilled left ventricle. Which type of shock is present?",
+     "choices": [
+      "Obstructive shock from massive pulmonary embolism",
+      "Hypovolemic shock from postoperative bleeding",
+      "Septic shock from urinary leak",
+      "Neurogenic shock from epidural analgesia",
+      "Cardiogenic shock from left ventricular infarction"
+     ],
+     "answer": 0,
+     "explain": "เหนื่อยหอบเฉียบพลันหลังผ่าตัดใหญ่ในอุ้งเชิงกราน (เสี่ยง VTE สูง) + ความดันต่ำ + **hypoxemia แต่ปอดใส** + **คอโป่ง** + echo พบ **RV โต septum แบน LV เล็ก** = **massive PE** ซึ่งเป็น **obstructive shock** (ลิ่มเลือดกั้นทางออกของ RV → LV ได้เลือดน้อย) · รักษาด้วย anticoagulation ร่วมกับ **systemic thrombolysis** หรือ catheter/surgical embolectomy เมื่อผู้ป่วยหลังผ่าตัดมีข้อห้ามของ thrombolysis\n- **Hypovolemic** จะมีคอแฟบ LV และ RV เล็กทั้งคู่\n- **Septic** มักมีไข้ หลอดเลือดขยาย ไม่ใช่ RV โตเฉียบพลัน\n- **Neurogenic จาก epidural** ให้ความดันต่ำแต่ไม่ทำให้ hypoxemia และ RV โต\n- **Cardiogenic จาก LV infarction** จะเห็น LV บีบตัวลดและปอดมีน้ำ",
+     "pearl": "เหนื่อยเฉียบพลัน + hypoxemia ปอดใส + คอโป่ง + RV โต = massive PE (obstructive)",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-04-MEQ1",
+   "part": "MEQ",
+   "topic": "Postoperative shock — differentiating hemorrhagic, septic and obstructive causes after colectomy",
+   "vignette": "หญิงไทยอายุ 66 ปี น้ำหนัก 60 kg โรคประจำตัว hypertension กิน atenolol ได้รับการผ่าตัด **anterior resection** สำหรับมะเร็ง rectosigmoid เมื่อ 5 วันก่อน ช่วงแรกฟื้นตัวดี เริ่มกินอาหารเหลวได้\n\nวันที่ 5: ปวดท้องมากขึ้นทั่วท้อง ไข้ หนาวสั่น สับสน\n\nPE: BT 39.2°C, BP 82/44 mmHg (MAP 57), PR 104/min, RR 28/min, SpO₂ 93% (room air) · ผิวอุ่น ท้องอืด กดเจ็บทั่วไป guarding · drain ข้างแผลมีน้ำขุ่นกลิ่นอุจจาระ · ปัสสาวะ 15 mL/ชม.\n\n| Lab | ค่า |\n|---|---|\n| WBC | 21,500/µL (neutrophil 90%) |\n| Hb | 11.2 g/dL (เมื่อวาน 11.5) |\n| Lactate | 4.8 mmol/L |\n| Creatinine | 1.9 mg/dL (เดิม 0.9) |\n| Platelets | 98,000/µL |",
+   "questions": [
+    {
+     "q": "1. ผู้ป่วยรายนี้อยู่ในภาวะช็อกชนิดใด จงให้เหตุผลและบอกเกณฑ์วินิจฉัยตาม Sepsis-3 พร้อมอธิบายว่าทำไมชีพจรเพียง 104/min",
+     "a": "- **Septic shock** จาก **anastomotic leak → fecal peritonitis** (ไข้ WBC สูง ท้อง peritonitis drain มีกลิ่นอุจจาระ ผิวอุ่น = vasodilatory)\n- Sepsis-3: infection + organ dysfunction (สับสน, creatinine เพิ่ม, เกล็ดเลือดต่ำ → SOFA เพิ่ม ≥2) · septic shock ถ้าหลังให้สารน้ำพอแล้วยังต้องใช้ vasopressor ให้ MAP ≥65 และ lactate มากกว่า 2\n- qSOFA 3/3 (RR ≥22, สติเปลี่ยน, SBP ≤100)\n- ชีพจรไม่เร็วมากเพราะ **atenolol (β-blocker)** กดการชดเชย\n- Hb คงที่ → ไม่น่าใช่ hemorrhagic shock (แต่ต้องติดตาม)\n- เกณฑ์ให้คะแนน: ชนิดช็อก + สาเหตุ (2) · เกณฑ์ Sepsis-3 (1) · β-blocker (1)"
+    },
+    {
+     "q": "2. จงเขียนคำสั่งการรักษาในชั่วโมงแรก",
+     "a": "- O₂, monitor, เปิดเส้น 2 เส้น, Foley วัดปัสสาวะทุกชั่วโมง\n- **Lactate** (วัดซ้ำใน 2–4 ชม.), **hemoculture 2 ชุด** + เพาะเชื้อจาก drain ก่อนให้ยา\n- **Broad-spectrum IV antibiotic ภายใน 1 ชม.** ครอบคลุม gram-negative + anaerobe (± enterococcus) เช่น piperacillin–tazobactam หรือ carbapenem ตามภาวะดื้อยาในโรงพยาบาล\n- **Balanced crystalloid 30 mL/kg ≈ 1,800 mL** ภายใน 3 ชม. ประเมินการตอบสนองทุก bolus (POCUS, PLR)\n- **Norepinephrine** ถ้า MAP ยังน้อยกว่า 65 (ให้ peripheral ได้ระหว่างรอ central line) · พิจารณา vasopressin/hydrocortisone ถ้าต้องใช้ขนาดสูง\n- NPO, NG tube, แจ้งศัลยแพทย์/ICU\n- เกณฑ์ให้คะแนน: ครบ 5 องค์ประกอบของ bundle (5)"
+    },
+    {
+     "q": "3. จงอธิบายบทบาทของ source control ในผู้ป่วยรายนี้ ทางเลือกการผ่าตัด และเวลาที่เหมาะสม",
+     "a": "- Antibiotic อย่างเดียวไม่พอสำหรับลำไส้รั่วที่มีอุจจาระในช่องท้อง → ต้อง **source control โดยเร็ว** (ภายใน 6–12 ชม. หรือทันทีที่ resuscitate ได้พอ ไม่ต้องรอให้ช็อกหายสมบูรณ์)\n- ส่วนใหญ่ต้อง **relaparotomy**: ล้างช่องท้อง, **take down anastomosis + end colostomy (Hartmann)** หรือ diverting ileostomy + drainage ถ้ารั่วเล็กและเนื้อเยื่อดี\n- ผู้ป่วยไม่คงที่มาก → **damage control laparotomy** (ควบคุมการรั่ว ปิดท้องชั่วคราว กลับมาใหม่ภายหลัง)\n- ถ้าเป็นเพียงฝีเฉพาะที่และผู้ป่วยคงที่ → percutaneous drainage อาจพอ\n- เกณฑ์ให้คะแนน: เหตุผล source control (1) · ทางเลือกผ่าตัด (2) · เวลา (1)"
+    },
+    {
+     "q": "4. หลังผ่าตัด 6 ชั่วโมงใน ICU ผู้ป่วยได้ norepinephrine 0.2 µg/kg/min BP 104/60 mmHg ปัสสาวะ 0.6 mL/kg/ชม. แต่ lactate 4.1 mmol/L จงแปลผลและวางแผนต่อ พร้อมบอก endpoints ที่ใช้ติดตาม",
+     "a": "- ความดันและปัสสาวะดีขึ้นแต่ **lactate ยังสูง** = **occult hypoperfusion** ยัง resuscitate ไม่ครบ หรือยังมีแหล่งติดเชื้อ/ลำไส้ขาดเลือด\n- ประเมิน fluid responsiveness แบบ dynamic (PLR, PPV, POCUS) → ให้สารน้ำต่อถ้ายังตอบสนอง · ประเมินการบีบตัวของหัวใจ (echo) → **dobutamine** ถ้าหัวใจบีบลด · Hb threshold 7 g/dL · เพิ่ม **vasopressin** เพื่อลดขนาด NE · **hydrocortisone 200 mg/วัน** ถ้ายังต้องใช้ vasopressor\n- ตรวจซ้ำ: แหล่งติดเชื้อที่เหลือ, ischemic stoma, abdominal compartment syndrome (วัด bladder pressure)\n- **Endpoints**: MAP ≥65, urine ≥0.5 mL/kg/ชม., **lactate ลดลงและปกติภายใน 24 ชม.**, base deficit ดีขึ้น, ScvO₂ ≥70%, capillary refill ปกติ, สติดีขึ้น\n- หลีกเลี่ยง fluid overload เมื่อไม่ตอบสนองต่อสารน้ำแล้ว\n- เกณฑ์ให้คะแนน: แปลผล occult hypoperfusion (1) · แผนครบ (2) · endpoints อย่างน้อย 4 (1)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 5",
+    "Surviving Sepsis Campaign International Guidelines 2021",
+    "Sepsis-3 (JAMA 2016)"
+   ]
+  }
+ ],
+ "osce": []
+}

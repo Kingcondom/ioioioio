@@ -1,0 +1,344 @@
+{
+ "lec": "02",
+ "date": "Schwartz Ch 3, 5, 6, 50",
+ "title": "Postoperative problems on the ward",
+ "subtitle": "เมื่อถูกตามไปดูผู้ป่วยหลังผ่าตัดที่มีไข้ ปัสสาวะน้อย ความดันต่ำ ชีพจรเร็ว หรือหอบ ต้องคิดอะไร ตรวจอะไร และสั่งอะไรก่อน",
+ "objectives": [
+  "เรียนจบแล้วต้องใช้ช่วงเวลาหลังผ่าตัดร่วมกับการตรวจร่างกายทุกระบบ วินิจฉัยแยกโรคไข้หลังผ่าตัด และเลือกส่งตรวจอย่างมีเหตุผล",
+  "เรียนจบแล้วต้องจัดการ SSI, necrotizing soft tissue infection, UTI จากสายสวน, catheter-related infection และ C. difficile ได้",
+  "เรียนจบแล้วต้องประเมินและจัดการ postoperative oliguria แยก prerenal/renal/postrenal และทำ fluid challenge ได้อย่างปลอดภัย",
+  "เรียนจบแล้วต้องเขียน IV fluid order ประจำวัน ทดแทน GI loss และแก้ hypo/hyperkalemia และ hyponatremia ได้ถูกต้อง",
+  "เรียนจบแล้วต้องจัดการ postoperative hypotension/tachycardia/dyspnea โดยคิดถึงเลือดออก PE MI และ anastomotic leak ตามลำดับความสำคัญ"
+ ],
+ "guidelines": [
+  "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021",
+  "IDSA/SHEA Clinical Practice Guideline for Clostridioides difficile Infection (2017; focused update 2021)",
+  "CDC/NHSN surgical site infection definitions",
+  "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)",
+  "ESC Guidelines for acute pulmonary embolism (2019)"
+ ],
+ "sections": [
+  {
+   "id": "n3-02-1",
+   "title": "Approach to postoperative fever ตามช่วงเวลา",
+   "summary": "ไข้หลังผ่าตัดวันนี้น่าจะเกิดจากอะไร ต้องตรวจอะไร และเมื่อไรต้องให้ยาปฏิชีวนะหรือผ่าตัดทันที",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Surgical site infections, necrotizing soft tissue infections, postoperative nosocomial infections",
+   "md": "### ไข้หลังผ่าตัด: เริ่มจากคำถาม \"วันที่เท่าไรหลังผ่าตัด\"\nการผ่าตัดทำให้เกิด **inflammatory response** จาก cytokine ไข้ต่ำ ๆ ใน **48 ชม.แรก** ส่วนใหญ่จึงไม่ใช่การติดเชื้อ และไม่จำเป็นต้อง \"pan-culture\" ทุกราย แต่ต้องไม่พลาดสาเหตุอันตรายที่เกิดเร็ว แนวคิดคือใช้ **ช่วงเวลา** บอกความน่าจะเป็น แล้วใช้ **ประวัติ-ตรวจร่างกายทุกระบบ** ยืนยัน\n\n| ช่วงเวลา | สาเหตุที่ต้องนึกถึง |\n|---|---|\n| ระหว่าง/ทันทีหลังผ่าตัด (ชั่วโมง) | **Malignant hyperthermia**, transfusion reaction, ยา, bacteremia จากผ่าตัดในเนื้อเยื่อติดเชื้อ (เช่น ทางเดินน้ำดี/ทางเดินปัสสาวะ) |\n| **วันแรก ๆ (ภายใน 48–72 ชม.)** | inflammatory response (พบบ่อยสุด), aspiration, **necrotizing SSI** (Streptococcus group A/Clostridium — แผลปวดมากผิดสัดส่วน), anastomotic leak ที่เกิดเร็ว, ภาวะต่อมหมวกไตไม่พอ/thyroid storm, alcohol withdrawal |\n| **POD 3–5** | **UTI** (สายสวน), **pneumonia** (โดยเฉพาะใส่ท่อช่วยหายใจ), **line infection** |\n| **POD 5–7 ขึ้นไป** | **SSI**, **anastomotic leak/intra-abdominal abscess**, DVT/PE |\n| หลัง 1 สัปดาห์ | abscess, **C. difficile colitis**, drug fever, DVT/PE, หลอดเลือดดำอักเสบจาก IV |\n\n> Atelectasis ถูกสอนว่าเป็นสาเหตุไข้วันแรก แต่หลักฐานความสัมพันธ์อ่อน — อย่าสรุปว่า \"ไข้เพราะ atelectasis\" จนกว่าจะตัดสาเหตุอื่น\n\n### Approach ข้างเตียง: ตรวจครบ \"สาย แผล ปอด ขา ท้อง\"\n1. **อ่าน chart**: ผ่าตัดอะไร มี anastomosis ไหม, ได้เลือด/ยาใหม่อะไร, สายอะไรอยู่ในตัวบ้าง กี่วันแล้ว\n2. **Vital signs ทั้งชุด**: ไข้ + tachycardia + hypotension/oliguria = sepsis → ทำ sepsis bundle ทันที\n3. **ตรวจ**: แผล (แดง ร้อน หนอง กดเจ็บมาก crepitus), ปอด, **ท้อง** (peritonitis, ท้องอืด), **ตำแหน่งสาย IV/CVC**, สายสวนปัสสาวะ, น่อง (บวม กดเจ็บ), ผื่นยา, ข้อ (gout)\n4. **ส่งตรวจตามที่สงสัย**: CBC, UA + urine culture (ถ้ามีสายสวน/อาการ), **hemoculture 2 ชุด** (ไข้สูง/หนาวสั่น/hemodynamic เปลี่ยน), CXR (อาการทางหายใจ), **CT abdomen with contrast** (สงสัย leak/abscess มัก POD 5 ขึ้นไป), C. difficile test (ถ่ายเหลวตั้งแต่ 3 ครั้ง/24 ชม.), duplex ultrasound ขา\n- สาเหตุไม่ติดเชื้อที่ลืมบ่อย: **drug fever**, transfusion, PE, MI, pancreatitis, gout, hematoma, adrenal insufficiency, thyroid storm\n\n### SSI และ necrotizing soft tissue infection\n**SSI** แบ่งตามความลึก: **superficial incisional** (ผิวหนัง/ใต้ผิวหนัง), **deep incisional** (fascia/กล้ามเนื้อ), **organ/space** (เช่น abscess ในช่องท้อง) — ตามนิยาม SSI ของแผลเกิดเมื่อแผลมีหนองหรือศัลยแพทย์ตัดสินว่าติดเชื้อและเปิดแผล\n- Superficial: **เปิดแผล ระบายหนอง ทำแผล** เป็นหลัก ให้ antibiotic เมื่อมี cellulitis รอบแผลหรืออาการทั่วกาย\n- ตรวจว่ามี **fascial dehiscence** หรือไม่ (น้ำสีชมพู \"salmon-colored\" ซึมจากแผล POD 5–8 เป็นสัญญาณเตือน)\n- Organ/space: **percutaneous drainage** ภายใต้ CT/US + antibiotic ถ้าเป็นโพรงเดียวเข้าถึงได้ · ผ่าตัดถ้า peritonitis ทั่วไปหรือ drain ไม่ได้\n**Necrotizing soft tissue infection**: ปวดมากเกินสิ่งที่เห็น ผิวสีบรอนซ์/แข็ง ตุ่มน้ำ **crepitus** น้ำหนองใสขุ่นเทา \"dishwater\" ร่วมกับ sepsis → **ผ่าตัด debridement ทันที** ไม่รอ imaging + broad-spectrum (เช่น vancomycin + carbapenem) และยาครอบคลุม clostridium/streptococcus ที่ยับยั้ง toxin (clindamycin) แล้วกลับไปดูซ้ำในห้องผ่าตัดตามกำหนด\n\n### ติดเชื้อจากสายและ C. difficile\n| ภาวะ | การวินิจฉัย | การรักษา |\n|---|---|---|\n| **UTI** จากสายสวน | UA มี WBC/bacteria/leukocyte esterase · culture ตั้งแต่ 10⁴ CFU/mL ในผู้มีอาการ | antibiotic ตัวเดียวราว **3–5 วัน** ตามเชื้อ + **ถอดสายสวนเร็วที่สุด** |\n| **Pneumonia** | ไข้, WBC สูง, เสมหะเป็นหนอง + **infiltrate ใหม่ใน CXR** | antibiotic ตามความเสี่ยงเชื้อดื้อยา, เก็บเสมหะ/BAL, หย่าเครื่องช่วยหายใจเร็ว |\n| **Catheter-related BSI** | hemoculture จากสายและส่วนปลายได้เชื้อเดียวกัน | **ถอดสาย** ถ้ามีหนองที่ทางออก, sepsis, gram-negative หรือเชื้อรา |\n| **C. difficile** | ถ่ายเหลว ตั้งแต่ 3 ครั้ง/24 ชม. หลังได้ antibiotic + ตรวจ toxin/PCR | หยุด antibiotic ที่ไม่จำเป็น, **vancomycin กิน 125 mg วันละ 4 ครั้ง 10 วัน** หรือ fidaxomicin, contact precautions · fulminant (shock, megacolon) อาจต้อง colectomy |\n\n- ป้องกันง่ายกว่ารักษา: ถอด Foley/CVC ทันทีที่ไม่จำเป็น, ใช้ antibiotic สั้นตามข้อบ่งชี้, incentive spirometry, ลุกเดิน\n\n### เมื่อไรต้องให้ antibiotic ทันที และเมื่อไรรอได้\n- **ให้ทันที (หลังเก็บ culture)**: sepsis/septic shock, necrotizing infection, สงสัย leak ที่มี peritonitis, neutropenia → antibiotic ภายใน 1 ชม.ของการวินิจฉัย + **source control** เร็วที่สุด\n- **รอได้**: ไข้ต่ำวันแรก ผู้ป่วยดูดี vital signs ปกติ ตรวจไม่พบจุดติดเชื้อ → สังเกตอาการ ลุกเดิน incentive spirometry ประเมินซ้ำ\n- การให้ antibiotic \"เผื่อไว้\" ทำให้หาสาเหตุยาก เกิดเชื้อดื้อยาและ C. difficile\n",
+   "pearls": [
+    "ไข้ใน 48 ชม.แรกส่วนใหญ่เป็น inflammatory response แต่ต้องตัด necrotizing SSI และ malignant hyperthermia",
+    "POD 3–5: UTI, pneumonia, line infection · POD 5–7: SSI, anastomotic leak, abscess, DVT/PE",
+    "ปวดแผลมากผิดสัดส่วน + crepitus/ตุ่มน้ำ/หนอง dishwater = necrotizing infection → OR ทันที ไม่รอ CT",
+    "UTI หลังผ่าตัด: รักษา 3–5 วัน และถอดสายสวนเร็วที่สุด",
+    "CVC มีหนองที่ทางออก/sepsis/gram-negative/เชื้อรา → ถอดสาย",
+    "C. difficile: vancomycin กิน 125 mg qid 10 วัน, ห้ามยาหยุดถ่าย",
+    "Atelectasis เป็นสาเหตุไข้ที่หลักฐานอ่อน อย่าใช้เป็นคำตอบแรก"
+   ],
+   "mnem": [
+    {
+     "name": "5W + What did we do",
+     "what": "ไล่สาเหตุไข้หลังผ่าตัดตามเวลาโดยประมาณ",
+     "lines": [
+      [
+       "Wind",
+       "ปอด: aspiration, pneumonia (atelectasis หลักฐานอ่อน)"
+      ],
+      [
+       "Water",
+       "ทางเดินปัสสาวะ: UTI จากสายสวน"
+      ],
+      [
+       "Wound",
+       "SSI, necrotizing infection, anastomotic leak/abscess"
+      ],
+      [
+       "Walking",
+       "DVT/PE"
+      ],
+      [
+       "Wonder drugs",
+       "drug fever, transfusion reaction"
+      ],
+      [
+       "What did we do",
+       "สาย IV/CVC, การผ่าตัด, เลือด"
+      ]
+     ],
+     "note": "ช่วงเวลาเป็นเพียงแนวโน้ม ต้องตรวจครบทุกระบบเสมอ"
+    }
+   ],
+   "items": [
+    {
+     "id": "N3-02-1-1",
+     "kind": "mcq",
+     "topic": "Postoperative fever — early necrotizing infection",
+     "stem": "A 48-year-old man with diabetes underwent open repair of an incarcerated umbilical hernia 30 hours ago. He now has temperature 39.4°C, HR 124/min, BP 96/58 mmHg. He complains of severe incisional pain requiring repeated opioid doses. The skin around the wound is dusky with a few bullae, and thin grayish fluid drains from the incision. What is the most appropriate next step?",
+     "choices": [
+      "Emergency surgical exploration and wide debridement with broad-spectrum antibiotics",
+      "Chest radiograph and incentive spirometry for atelectasis",
+      "CT scan of the abdominal wall before deciding on treatment",
+      "Open the skin staples at the bedside and apply wet-to-dry dressings",
+      "Oral cephalexin and review in 48 hours"
+     ],
+     "answer": 0,
+     "explain": "ไข้สูง sepsis ภายใน 48 ชม. ร่วมกับ **ปวดแผลมากผิดสัดส่วน ผิวคล้ำ ตุ่มน้ำ และหนองใสสีเทา (dishwater)** คือ **necrotizing soft tissue infection** ต้อง **ผ่าตัด debridement ทันที** ร่วมกับ broad-spectrum antibiotic ครอบคลุม gram-positive, gram-negative, anaerobe และ clostridium การรอ imaging ทำให้ล่าช้าและเพิ่มการตาย\n- **Atelectasis** — ไม่อธิบายอาการแผลและ sepsis\n- **CT ก่อนตัดสินใจ** — Schwartz ระบุว่าไม่ควรทำ imaging เมื่อสงสัยมาก เพราะทำให้ผ่าตัดช้า\n- **เปิดแผลข้างเตียง** — ไม่พอสำหรับการติดเชื้อที่ลามตาม fascia\n- **Cephalexin กิน** — ไม่เหมาะกับภาวะคุกคามชีวิต",
+     "pearl": "ไข้เร็วภายใน 48 ชม. + ปวดแผลมากผิดสัดส่วน → คิดถึง necrotizing infection → ผ่าตัดทันที",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N3-02-1-2",
+     "kind": "mcq",
+     "topic": "Postoperative fever day 6 after bowel resection",
+     "stem": "A 63-year-old woman is on postoperative day 6 after sigmoid colectomy with primary anastomosis for diverticular disease. She has fever 38.8°C, HR 112/min, BP 118/70 mmHg, new left lower abdominal tenderness without generalized peritonitis, and ileus. The wound looks clean. WBC 17,800/µL. Chest is clear and urinalysis is normal. What is the best next investigation?",
+     "choices": [
+      "CT of the abdomen and pelvis with IV contrast",
+      "Blood cultures alone and observe",
+      "Doppler ultrasound of both legs",
+      "Repeat chest radiograph",
+      "Colonoscopy to inspect the anastomosis"
+     ],
+     "answer": 0,
+     "explain": "ไข้ + tachycardia + ปวดท้องเฉพาะที่ + ileus ใน **POD 5–7 หลังต่อลำไส้** ต้องนึกถึง **anastomotic leak/pelvic abscess** เป็นอันดับแรก ผู้ป่วย hemodynamics ยังคงที่และไม่มี peritonitis ทั่วไป → **CT with contrast** ยืนยันและวางแผน percutaneous drainage หรือผ่าตัด\n- **Hemoculture อย่างเดียว** — ไม่บอกตำแหน่ง source ที่ต้องควบคุม\n- **Doppler ขา** — DVT ไม่อธิบายอาการท้อง\n- **CXR** — ปอดปกติ ไม่ใช่ source\n- **Colonoscopy** — อาจทำให้ anastomosis แยกมากขึ้น ไม่ใช่การตรวจแรก",
+     "pearl": "ไข้ POD 5–7 หลังต่อลำไส้ = leak/abscess จนกว่าจะพิสูจน์ได้ว่าไม่ใช่ → CT",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N3-02-1-3",
+     "kind": "mcq",
+     "topic": "Clostridioides difficile infection",
+     "stem": "A 71-year-old man is on postoperative day 8 after open cholecystectomy for gangrenous cholecystitis, treated with piperacillin-tazobactam for 7 days. He develops 6 watery stools per day, low-grade fever and mild diffuse abdominal tenderness. WBC 14,000/µL, creatinine normal, lactate normal. Stool test for C. difficile toxin is positive. What is the most appropriate treatment?",
+     "choices": [
+      "Oral vancomycin 125 mg four times daily for 10 days and stop unnecessary antibiotics",
+      "Loperamide to reduce stool frequency",
+      "IV vancomycin 1 g every 12 hours",
+      "Continue piperacillin-tazobactam and add oral probiotics",
+      "Emergency subtotal colectomy"
+     ],
+     "answer": 0,
+     "explain": "**C. difficile colitis ระดับไม่รุนแรง** (WBC ไม่ถึง 15,000, Cr ปกติ, ไม่มี shock/megacolon) รักษาด้วย **vancomycin ทางปาก** (หรือ fidaxomicin) 10 วัน และ **หยุด antibiotic ที่ไม่จำเป็น** ร่วมกับ contact precautions\n- **Loperamide** — ยาหยุดถ่ายอาจทำให้ toxin ค้างและเกิด toxic megacolon\n- **IV vancomycin** — ไม่ขับออกสู่ลำไส้ ไม่ได้ผลกับ C. difficile\n- **ให้ piperacillin-tazobactam ต่อ** — ยาที่เป็นตัวกระตุ้นควรหยุดถ้าไม่จำเป็นแล้ว\n- **Colectomy** — สำหรับ fulminant colitis (shock, megacolon, perforation) เท่านั้น",
+     "pearl": "C. difficile: vancomycin กิน (ไม่ใช่ IV) + หยุด antibiotic ตัวกระตุ้น",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-02-2",
+   "title": "Oliguria, IV fluid order และ electrolytes หลังผ่าตัด",
+   "summary": "ปัสสาวะน้อยหลังผ่าตัดต้องทำอะไรก่อน เขียน IV fluid ประจำวันอย่างไร และแก้เกลือแร่ผิดปกติที่พบบ่อยอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 3 — Volume control, electrolyte disorders, postoperative fluid therapy",
+   "md": "### Oliguria หลังผ่าตัด: นิยามและสิ่งที่ทำก่อนอย่างอื่น\n**Oliguria** = ปัสสาวะน้อยกว่า **0.5 mL/kg/hr** (ผู้ใหญ่ทั่วไปราว 30 mL/hr) หลังผ่าตัดปัสสาวะลดลงเล็กน้อยได้จาก ADH และ aldosterone ที่หลั่งตาม stress แต่ถ้าต่ำต่อเนื่องหลายชั่วโมงต้องประเมิน\n1. **ไปดูผู้ป่วยเอง** ไม่สั่งทางโทรศัพท์อย่างเดียว\n2. **ตรวจสายสวนก่อน**: หัก พับ อุดตัน → flush/เปลี่ยน · ถ้าไม่มีสาย → **bladder scan**/คลำ bladder (urinary retention พบบ่อยหลัง spinal anesthesia, opioid, ผู้ชายสูงอายุ, ผ่าตัดไส้เลื่อน/ทวารหนัก)\n3. **ประเมิน volume และ hemodynamics**: BP, HR, capillary refill, JVP, เสียงปอด, I/O balance, drain output, น้ำหนัก\n4. แยก **prerenal / renal / postrenal**\n\n| กลุ่ม | สาเหตุหลังผ่าตัด | เบาะแส |\n|---|---|---|\n| **Prerenal** (พบบ่อยสุด) | ให้น้ำไม่พอ, **เลือดออก**, third-space loss, sepsis, HF/MI | tachycardia, BUN:Cr สูง, **FENa น้อยกว่า 1%**, urine SG สูง |\n| Renal (ATN) | ขาดเลือดนาน, sepsis, **contrast**, **NSAID**, aminoglycoside, rhabdomyolysis | FENa มากกว่า 2%, muddy brown cast, CK สูง |\n| **Postrenal** | สายสวนอุดตัน, retention, ท่อไตบาดเจ็บ/ถูกผูก, **abdominal compartment syndrome** | bladder โต, hydronephrosis, ท้องตึง + ventilator pressure สูง |\n\n> ห้ามให้ **furosemide** เพื่อ \"เร่งปัสสาวะ\" ในผู้ป่วยที่ยังขาดน้ำ — ได้ตัวเลขปัสสาวะดีขึ้นชั่วคราวแต่ไตแย่ลง\n\n### Fluid challenge และการติดตาม\n- ถ้า hypovolemic/hemodynamics ไม่ดี: **balanced crystalloid 250–500 mL ใน 15–30 นาที** แล้วประเมินซ้ำ (HR, BP, UO, เสียงปอด) ระวังผู้สูงอายุ/โรคหัวใจ/ไต\n- ไม่ตอบสนองหลัง bolus 1–2 ครั้ง → หาสาเหตุอื่น: **เลือดออก** (Hb, drain, ท้องโตขึ้น), sepsis/leak, cardiac (ECG, troponin), compartment syndrome (วัด **bladder pressure**)\n- ส่งตรวจ: BUN/Cr, electrolytes, CBC, VBG/lactate, UA และ urine Na/Cr (คำนวณ FENa — ไม่น่าเชื่อถือถ้าเพิ่งได้ diuretic)\n- **Abdominal compartment syndrome**: IAP สูงร่วมกับอวัยวะทำงานผิดปกติ (ปัสสาวะลด, airway pressure สูง, CO ลด) → ต้อง decompress (ความดันมากกว่า 35 mmHg ต้องรักษาแม้ยังไม่ชัด)\n- ทบทวนยา: หยุด NSAID, ACEi/ARB, ยาที่ไตขับ ปรับขนาดยาตาม GFR\n\n### เขียน IV fluid order ประจำวัน\n| ส่วนประกอบ | วิธีคิด |\n|---|---|\n| **Maintenance น้ำ** | 100/50/20 mL/kg/วัน (4-2-1 mL/kg/hr) · 60 kg ≈ 2,300 mL/วัน ≈ 100 mL/hr |\n| Maintenance เกลือแร่ | Na ราว 1–2 mEq/kg/วัน, K ราว 0.5–1 mEq/kg/วัน (เติม K เมื่อ **ปัสสาวะออกดีและไตปกติ**) |\n| **Deficit** | ประเมินจากอาการขาดน้ำ/น้ำหนัก ทดแทนด้วย isotonic |\n| **Ongoing loss** | วัดได้: NG, drain, stoma, fistula → ทดแทน mL ต่อ mL ด้วยสารน้ำที่องค์ประกอบใกล้เคียง |\n\n- วันแรกหลังผ่าตัดใช้ **isotonic** (LRS/NSS) · หลัง 24–48 ชม. ถ้ายังกินไม่ได้ เปลี่ยนเป็น **5% D/N/2 + KCl 20 mEq/L** ราว 100 mL/hr ในผู้ใหญ่ทั่วไป\n- ทุกวันต้องถามใหม่: ผู้ป่วยยังต้องการ IV ไหม — **ถ้ากินได้ให้หยุด**\n\n| สารน้ำที่เสีย | Na (mEq/L) | K | Cl | HCO₃ | ทดแทนด้วย |\n|---|---|---|---|---|---|\n| กระเพาะ (NG) | 60–90 | 10–30 | 100–130 | 0 | **NSS + KCl** |\n| ลำไส้เล็ก/ileostomy | 120–140 | 5–10 | 90–120 | 30–40 | **LRS** |\n| ตับอ่อน/น้ำดี | 135–145 | 5–10 | 70–110 | 30–115 | LRS ± bicarbonate |\n\n### Electrolyte ที่พบบ่อยบนหอผู้ป่วยศัลยกรรม\n- **Hypokalemia** (พบบ่อยกว่า hyperkalemia): NG loss, อาเจียน (hypochloremic hypokalemic metabolic alkalosis), diuretic, refeeding → ทำให้ **ileus**, กล้ามเนื้ออ่อนแรง, U wave, arrhythmia · ให้ KCl ทางกิน/IV โดยทั่วไป peripheral line ไม่เกินราว 10 mEq/hr (เร็วกว่านี้ต้อง central line + ECG monitor) · **แก้ Mg ด้วย** มิฉะนั้น K ไม่ขึ้น\n- **Hyperkalemia** (ไตวาย, เนื้อเยื่อตาย, ให้เลือดมาก, ยา): ทำ ECG ทันที → **calcium gluconate 10% 10 mL IV** (กันหัวใจ) → **regular insulin 10 U + D50 50 mL** และ salbutamol พ่น (ดัน K เข้าเซลล์) → ขับออก: kayexalate, diuretic, **dialysis** · หยุด K ทุกแหล่ง\n- **Hyponatremia หลังผ่าตัด**: ADH สูง + ได้สารน้ำ hypotonic → อาการสมอง (ซึม ชัก) ถ้า Na ต่ำมาก/ลดเร็ว · มีอาการ: **3% NaCl** เพิ่ม Na ไม่เกินราว 1 mEq/L/hr จนอาการดีขึ้น · ไม่มีอาการ: จำกัดน้ำ แก้ช้า · รวมทั้งวันไม่เกิน **10–12 mEq/L ใน 24 ชม.** (ผู้เสี่ยงสูงไม่เกิน 8) เพื่อกัน **osmotic demyelination**\n- **Hypocalcemia/hypomagnesemia**: หลัง thyroid/parathyroid, pancreatitis, ให้เลือดมาก → ตรวจ ionized Ca, ให้ calcium gluconate · Mg sulfate 1–2 g IV ในรายมีอาการ\n",
+   "pearls": [
+    "Oliguria = น้อยกว่า 0.5 mL/kg/hr · ตรวจสายสวน/bladder ก่อนเสมอ",
+    "Prerenal พบบ่อยสุด: ให้น้ำไม่พอ, เลือดออก, third-space, sepsis",
+    "ห้าม furosemide ในผู้ป่วยขาดน้ำเพื่อเร่งปัสสาวะ",
+    "Maintenance 100/50/20 mL/kg/วัน · 60 kg ≈ 2,300 mL/วัน",
+    "เสีย NG → hypochloremic hypokalemic metabolic alkalosis → NSS + KCl",
+    "K สูง + ECG เปลี่ยน → calcium gluconate ก่อน",
+    "แก้ Na ไม่เกิน 10–12 mEq/L ใน 24 ชม. กัน osmotic demyelination · แก้ Mg ก่อน K ไม่ขึ้น"
+   ],
+   "items": [
+    {
+     "id": "N3-02-2-1",
+     "kind": "mcq",
+     "topic": "Postoperative oliguria — first step",
+     "stem": "A 74-year-old man is 10 hours after open repair of a right inguinal hernia under spinal anesthesia. The nurse reports he has not voided since surgery. He is restless with lower abdominal discomfort. BP 150/90 mmHg, HR 98/min. There is a tender suprapubic mass. What is the most appropriate next step?",
+     "choices": [
+      "Bladder scan and urethral catheterization",
+      "IV furosemide 20 mg",
+      "Bolus 1,000 mL normal saline",
+      "Renal ultrasound to exclude obstruction of the ureters",
+      "Measure serum creatinine and wait for the result before acting"
+     ],
+     "answer": 0,
+     "explain": "ไม่ถ่ายปัสสาวะหลัง **spinal anesthesia** ในผู้ชายสูงอายุหลังผ่าตัดไส้เลื่อน ร่วมกับ **ก้อนเหนือหัวหน่าวกดเจ็บ** คือ **acute urinary retention** (postrenal) แก้ด้วย bladder scan ยืนยันแล้ว **ใส่สายสวนปัสสาวะ** ทันที\n- **Furosemide** — ไตผลิตปัสสาวะได้ แต่ระบายไม่ออก ยิ่งทำให้ bladder โต\n- **Bolus NSS 1 L** — ไม่มีภาวะขาดน้ำ ปัญหาไม่ใช่ prerenal\n- **Renal ultrasound** — ไม่จำเป็นในขั้นแรก ปัญหาอยู่ที่ bladder outlet\n- **รอผล creatinine** — ทำให้ผู้ป่วยทรมานและ bladder เสียหาย",
+     "pearl": "ไม่มีปัสสาวะหลังผ่าตัด: ดูสายสวน/bladder ก่อน (postrenal แก้ง่ายที่สุด)",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N3-02-2-2",
+     "kind": "mcq",
+     "topic": "Replacement of nasogastric losses",
+     "stem": "A 58-year-old woman has gastric outlet obstruction from peptic ulcer disease and has had nasogastric drainage of 1,800 mL/day for 3 days. Lab: Na 133, K 2.9, Cl 86, HCO₃ 36 mEq/L. Urine output 25 mL/h. Which IV fluid order best corrects her problem?",
+     "choices": [
+      "0.9% NaCl with KCl added, after confirming urine output improves",
+      "5% dextrose in water",
+      "Lactated Ringer's solution without potassium",
+      "Sodium bicarbonate infusion",
+      "0.45% NaCl with furosemide"
+     ],
+     "answer": 0,
+     "explain": "การเสียน้ำกระเพาะทำให้เสีย **H⁺, Cl⁻, K⁺** และน้ำ → **hypochloremic hypokalemic metabolic alkalosis** ร่วมกับขาดน้ำ (ปัสสาวะน้อย) การแก้ที่ถูกคือให้ **NaCl 0.9%** (คืนน้ำและ Cl⁻ ให้ไตขับ HCO₃⁻ ได้) และ **เติม KCl** เมื่อปัสสาวะออกดี\n- **D5W** — ไม่มี Na/Cl ไม่แก้ alkalosis และทำให้ Na ต่ำลง\n- **LRS ไม่มี K** — มี lactate ซึ่งเปลี่ยนเป็น bicarbonate ทำให้ alkalosis ไม่ดีขึ้น และไม่แก้ K\n- **Sodium bicarbonate** — ทำให้ alkalosis แย่ลง\n- **0.45% NaCl + furosemide** — ขาดน้ำอยู่ ยาขับปัสสาวะทำให้แย่ลง",
+     "pearl": "เสีย NG → NSS + KCl (แก้ Cl ก่อน alkalosis จึงหาย)",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    },
+    {
+     "id": "N3-02-2-3",
+     "kind": "mcq",
+     "topic": "Hyperkalemia with ECG changes",
+     "stem": "A 66-year-old man with chronic kidney disease is on postoperative day 2 after femoral-popliteal bypass. Serum potassium is 7.1 mEq/L. ECG shows peaked T waves and widened QRS. BP 136/80 mmHg. What is the first drug to give?",
+     "choices": [
+      "10% calcium gluconate 10 mL IV",
+      "Sodium polystyrene sulfonate 30 g orally",
+      "Regular insulin 10 units IV without dextrose",
+      "Furosemide 40 mg IV",
+      "Sodium bicarbonate 50 mEq IV as the only therapy"
+     ],
+     "answer": 0,
+     "explain": "Hyperkalemia ที่มี **ECG เปลี่ยน (QRS กว้าง)** เสี่ยง arrhythmia ถึงตาย ยาแรกคือ **calcium gluconate IV** ซึ่ง **stabilize cardiac membrane** ภายในไม่กี่นาที (ไม่ลด K) จากนั้นจึงให้ insulin + glucose/salbutamol ดัน K เข้าเซลล์ และหาทางขับ K ออก (resin, dialysis)\n- **Kayexalate** — ออกฤทธิ์ช้าเป็นชั่วโมง ไม่ใช่ยาแรก\n- **Insulin โดยไม่ให้ dextrose** — ดัน K ได้แต่เสี่ยง hypoglycemia และไม่กันหัวใจทันที\n- **Furosemide** — ช่วยขับ K ใน CKD ได้น้อยและช้า\n- **Bicarbonate อย่างเดียว** — ได้ผลน้อยถ้าไม่มี acidosis และไม่กันหัวใจ",
+     "pearl": "K สูง + ECG เปลี่ยน → calcium gluconate ก่อน แล้ว shift แล้ว remove",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-02-3",
+   "title": "Hypotension, tachycardia, dyspnea หลังผ่าตัด: เลือดออก PE MI leak atelectasis",
+   "summary": "ถูกตามเพราะความดันตก ชีพจรเร็ว หรือหอบหลังผ่าตัด ต้องไล่สาเหตุอันตรายตามลำดับอย่างไร และเมื่อไรต้องกลับห้องผ่าตัด",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 5 — Hypovolemic/hemorrhagic shock, obstructive shock; Ch 6 — Intra-abdominal infection",
+   "md": "### Hypotension/tachycardia หลังผ่าตัด: ถือว่าเลือดออกจนกว่าจะพิสูจน์ได้ว่าไม่ใช่\nหลัก Schwartz: ช็อกในผู้ป่วยหลังผ่าตัดหรือบาดเจ็บ **ให้คิดว่าเป็นเลือดออกก่อน** แล้วไล่สาเหตุอื่นตามกลไก\n\n| กลไก | สาเหตุหลังผ่าตัด | เบาะแส |\n|---|---|---|\n| **Hypovolemic** | **เลือดออก**, third-space, ให้น้ำไม่พอ, NG/stoma loss | JVP แฟบ, Hb ลด (อาจยังไม่ลดในช่วงแรก), drain เป็นเลือด, ท้องโต |\n| **Distributive** | **sepsis จาก leak/abscess**, epidural block, anaphylaxis (ยา/เลือด), adrenal insufficiency | ปลายมือปลายเท้าอุ่นช่วงแรก, ไข้ |\n| **Cardiogenic** | **MI** (มักไม่มีเจ็บอก), arrhythmia (AF), HF | JVP สูง, crackles, ECG/troponin |\n| **Obstructive** | **PE**, tension pneumothorax (หลังใส่ CVC), tamponade (หลังผ่าตัดหัวใจ) | JVP สูง, SpO2 ต่ำ, เสียงหายใจลดข้างเดียว |\n\n**สัญญาณเสียเลือด**: เสียน้อยกว่า 15% อาจไม่มีอาการ, 15–30% ชีพจรเร็ว ใจสั่น, มากกว่า 30% จึงเริ่มความดันตก สับสน, มากกว่า 40% อันตรายถึงชีวิต → **tachycardia ที่อธิบายไม่ได้คือสัญญาณเตือนแรก** อย่ารอให้ความดันตก (ผู้ที่กิน β-blocker อาจไม่มี tachycardia)\n\n### Approach เมื่อถูกตามด้วย \"ความดันต่ำ\"\n1. **ABC + เรียกช่วย**: O2, IV ใหญ่ 2 เส้น, monitor, ยกขา\n2. ดูผู้ป่วยทั้งตัว: สติ ผิว แผล **drain** ท้อง ปอด JVP ขา ตำแหน่งสาย\n3. ส่งด่วน: **CBC/Hb, G/M**, coagulation, electrolytes, BUN/Cr, **lactate**, ECG, troponin, ABG, CXR ± POCUS (หัวใจ, IVC, ปอด, ท้อง)\n4. ให้ **balanced crystalloid bolus** และประเมินซ้ำ ถ้ามีเลือดออกให้ **เลือด** (ไม่ใช่ crystalloid ต่อเนื่อง)\n5. ตามแพทย์อาวุโส/ศัลยแพทย์เจ้าของไข้เร็ว: **เลือดออกที่ hemodynamics ไม่คงที่ → กลับห้องผ่าตัด** หรือ angioembolization ตามตำแหน่ง\n- แก้ coagulopathy: หยุด anticoagulant, ให้ FFP/platelet/cryo ตามผล, อุ่นร่างกาย\n- อย่าลืม **hypoglycemia**, ยา (opioid, antihypertensive ที่เพิ่งให้), epidural ที่ระดับสูง\n\n### Dyspnea/hypoxemia หลังผ่าตัด\n| ภาวะ | ช่วงเวลา/บริบท | การวินิจฉัยและจัดการ |\n|---|---|---|\n| **Atelectasis** | POD 0–2, ผ่าตัดช่องท้องส่วนบน/อก, ปวดหายใจไม่เต็ม | ลุกนั่ง/เดิน, **incentive spirometry**, คุมปวด, chest physiotherapy |\n| Aspiration | ตื่นไม่ดี, อาเจียน, NG tube | CXR (ปอดขวาล่าง), suction, O2, antibiotic ถ้าเป็น pneumonia |\n| Pneumonia | POD 3–5 ขึ้นไป | ไข้ เสมหะ infiltrate ใหม่ → antibiotic |\n| **Pulmonary embolism** | ได้ทุกเวลา มักหลัง POD 3–5, นอนนาน, มะเร็ง | tachycardia + hypoxemia + ปอดปกติ → **CTPA**, anticoagulant (ชั่งเลือดออก), ถ้าห้ามใช้ยา → IVC filter, massive PE → thrombolysis/embolectomy |\n| Pulmonary edema/**TACO** | ได้น้ำ/เลือดมาก, โรคหัวใจ | crackles, JVP สูง → diuretic, ลดน้ำ |\n| **MI** | POD 1–3 มักเงียบ | ECG, **troponin**, ปรึกษา cardiology |\n| Pneumothorax | หลังใส่ CVC/subclavian, ผ่าตัดใกล้ diaphragm | CXR, tension → decompress ทันที |\n\n### Anastomotic leak: ศัตรูที่มาวันที่ 5–7\n**Anastomotic leak** หลังผ่าตัดลำไส้ใหญ่มักแสดงอาการราว **POD 5–7** (อาจเร็วหรือช้ากว่าได้) และเป็นสาเหตุสำคัญของ sepsis หลังผ่าตัด\n- **อาการเตือนเรียงลำดับที่มักเกิดก่อน**: tachycardia ที่อธิบายไม่ได้, ไข้, ปัสสาวะลด, ท้องอืด/ileus ไม่ดีขึ้น/อาเจียน, ปวดท้องมากกว่าที่ควร, สับสน, AF ใหม่ → ตามด้วย peritonitis/septic shock\n- น้ำใน drain เปลี่ยนเป็นขุ่น/อุจจาระ/อาหาร เป็นหลักฐานชัด\n- **CT with contrast** (± rectal contrast สำหรับ low anastomosis): fluid/gas รอบ anastomosis, contrast รั่ว\n\n| ภาพทางคลินิก | การจัดการ |\n|---|---|\n| Leak เล็ก, เฉพาะที่, ผู้ป่วยคงที่ | NPO/ให้อาหารตามเหมาะสม + antibiotic ± **percutaneous drainage** |\n| Abscess ใหญ่ เข้าถึงไม่ได้ หรือไม่ดีขึ้น | ผ่าตัด drainage ± proximal diversion |\n| **Generalized peritonitis/septic shock** | resuscitation + antibiotic + **ผ่าตัดด่วน** (washout, take down anastomosis/end stoma หรือ diversion) |\n\n> Tachycardia ใหม่ใน POD 3–7 หลังต่อลำไส้ อย่าเพิ่งโทษ \"ปวดแผล\" หรือ \"ขาดน้ำ\" จนกว่าจะคิดถึง leak\n\n### Postoperative AF และการคิดหา trigger\nAF ใหม่หลังผ่าตัดที่ไม่ใช่ผ่าตัดหัวใจมักเป็น **อาการของปัญหาอื่น**: sepsis/leak, hypovolemia, hypoxia, PE, electrolyte (K, Mg ต่ำ), ปวด, withdrawal, MI\n- **ไม่คงที่** (hypotension, ischemia, หัวใจล้มเหลว) → **synchronized cardioversion**\n- คงที่ → **rate control** (β-blocker หรือ diltiazem ระวังความดัน), แก้ K/Mg, หา trigger, ประเมิน anticoagulation (CHA₂DS₂-VASc ชั่งกับเลือดออกหลังผ่าตัด)\n",
+   "pearls": [
+    "ช็อกหลังผ่าตัดให้คิดว่าเลือดออกจนกว่าจะพิสูจน์ได้ว่าไม่ใช่",
+    "Tachycardia ที่อธิบายไม่ได้เป็นสัญญาณแรก ความดันตกเมื่อเสียเลือดเกินราว 30%",
+    "Hb แรกอาจยังไม่ลดในเลือดออกเฉียบพลัน",
+    "Hypoxemia เฉียบพลัน + ปอดปกติ = PE → CTPA ถ้าคงที่",
+    "MI หลังผ่าตัดมักไม่มีเจ็บอก → ECG + troponin",
+    "Leak มักเกิด POD 5–7: tachycardia, ไข้, ileus, AF ใหม่",
+    "Leak + peritonitis ทั่วท้อง/ช็อก → ผ่าตัด source control"
+   ],
+   "items": [
+    {
+     "id": "N3-02-3-1",
+     "kind": "mcq",
+     "topic": "Postoperative hemorrhage",
+     "stem": "A 52-year-old woman is 6 hours after laparoscopic splenectomy for immune thrombocytopenia. She is pale and anxious. BP 88/54 mmHg, HR 132/min, RR 26/min. The abdomen is distended and tender; the left subphrenic drain has 400 mL of fresh blood over the last hour. She received 1 L of crystalloid without improvement. Hb is 9.8 g/dL (preoperative 12.5). What is the most appropriate management?",
+     "choices": [
+      "Transfuse blood products and return to the operating room for hemostasis",
+      "Continue crystalloid boluses until BP normalizes and recheck Hb in 6 hours",
+      "Start norepinephrine infusion and observe in ICU",
+      "CT angiography of the abdomen before deciding",
+      "Give tranexamic acid and observe the drain output"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **hemorrhagic shock** (เสียเลือดเกิน 30%: ความดันต่ำ ชีพจรมากกว่า 120 สับสน) จาก **เลือดออกหลังผ่าตัดอย่างต่อเนื่อง** (drain เลือดสด 400 mL/hr) และไม่ตอบสนองต่อ crystalloid → **ให้เลือดและกลับห้องผ่าตัด** หยุดเลือด Hb ที่ลดไม่มากเพราะยังไม่ทัน equilibrate\n- **Crystalloid ต่อ** — ทำให้เลือดเจือจาง coagulopathy และเลือดออกมากขึ้น\n- **Norepinephrine** — ไม่แก้สาเหตุ ช็อกจากเลือดออกต้องคืนปริมาตรและหยุดเลือด\n- **CT angiography** — ผู้ป่วยไม่คงที่ ห้ามไป CT\n- **TXA อย่างเดียว** — เป็นเพียง adjunct ไม่แทนการผ่าตัด",
+     "pearl": "Post-op shock = เลือดออกจนกว่าจะพิสูจน์ได้ · ไม่คงที่ + เลือดออกต่อ = กลับ OR",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N3-02-3-2",
+     "kind": "mcq",
+     "topic": "Pulmonary embolism after surgery",
+     "stem": "A 64-year-old man is on postoperative day 5 after open radical cystectomy for bladder cancer. He suddenly develops dyspnea and pleuritic chest pain. BP 124/76 mmHg, HR 118/min, RR 28/min, SpO2 89% on room air, lungs clear. ECG shows sinus tachycardia. Creatinine is normal. What is the most appropriate next step?",
+     "choices": [
+      "CT pulmonary angiography",
+      "Chest physiotherapy and incentive spirometry",
+      "Furosemide 40 mg IV",
+      "Start broad-spectrum antibiotics for pneumonia",
+      "Immediate thrombolysis with alteplase"
+     ],
+     "answer": 0,
+     "explain": "Hypoxemia + tachycardia เกิดขึ้นทันทีใน POD 5 ใน **ผู้ป่วยมะเร็งหลังผ่าตัดเชิงกรานใหญ่** โดยตรวจปอดปกติ → สงสัย **PE** สูง ผู้ป่วย hemodynamics คงที่และไตปกติ → **CTPA** ยืนยัน แล้วให้ anticoagulant โดยชั่งความเสี่ยงเลือดออก\n- **Chest physiotherapy** — สำหรับ atelectasis ซึ่งไม่อธิบายอาการเฉียบพลันและปอดปกติ\n- **Furosemide** — ไม่มีอาการน้ำเกิน\n- **Antibiotic** — ไม่มีไข้/infiltrate ที่บ่งชี้ pneumonia\n- **Thrombolysis** — สำรองไว้สำหรับ massive PE ที่มี hypotension และเพิ่งผ่าตัดใหญ่มีข้อห้ามสัมพัทธ์",
+     "pearl": "Hypoxemia เฉียบพลัน + ปอดปกติ หลังผ่าตัด = PE จนกว่าจะพิสูจน์ได้ว่าไม่ใช่",
+     "src": "Schwartz 11e Ch 5",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 5"
+     ]
+    },
+    {
+     "id": "N3-02-3-3",
+     "kind": "mcq",
+     "topic": "Anastomotic leak — unstable patient",
+     "stem": "A 69-year-old man is on postoperative day 6 after low anterior resection without diverting stoma. Over 12 hours he develops new atrial fibrillation with rate 140/min, fever 39°C, BP 84/50 mmHg after 2 L crystalloid, generalized abdominal rigidity, and feculent fluid in the pelvic drain. Lactate 5.2 mmol/L. Broad-spectrum antibiotics have been started. What is the definitive next step?",
+     "choices": [
+      "Emergency laparotomy for source control with washout and fecal diversion",
+      "CT-guided percutaneous drainage of the pelvis",
+      "Synchronized cardioversion and continue observation",
+      "Bowel rest and total parenteral nutrition",
+      "Contrast enema to confirm the leak before any intervention"
+     ],
+     "answer": 0,
+     "explain": "**Anastomotic leak ที่มี generalized peritonitis และ septic shock** (ความดันต่ำหลังให้น้ำ, lactate สูง, น้ำ drain เป็นอุจจาระ) ต้องได้ **source control ด้วยการผ่าตัดด่วน**: ล้างช่องท้อง และ **take down anastomosis/end colostomy หรือทำ proximal diversion** AF ใหม่เป็นอาการของ sepsis\n- **Percutaneous drainage** — สำหรับ leak เฉพาะที่ ผู้ป่วยคงที่ ไม่ใช่ peritonitis ทั่วท้อง\n- **Cardioversion** — AF เกิดจาก sepsis ถ้าไม่แก้ source จะไม่หาย\n- **Bowel rest + TPN** — ไม่ควบคุม source ในผู้ป่วยช็อก\n- **Contrast enema ก่อน** — ทำให้ล่าช้า การวินิจฉัยทางคลินิกชัดเจนแล้ว",
+     "pearl": "Leak + peritonitis ทั่วท้อง/ช็อก → ผ่าตัด source control ไม่ใช่ drain",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-02-MEQ1",
+   "part": "MEQ",
+   "topic": "Postoperative deterioration after colectomy — fever, tachycardia, oliguria",
+   "vignette": "หญิงไทยอายุ 66 ปี โรคประจำตัว HT ได้รับการผ่าตัด **open sigmoid colectomy with primary anastomosis** จากมะเร็งลำไส้ใหญ่ ไม่ได้ใส่ drain การผ่าตัดราบรื่น\n\n**POD 1–3**: ไข้ 37.8°C ใน POD 1 แล้วหายเอง เริ่มกินน้ำ POD 2\n\n**POD 5 เวลา 22:00** พยาบาลโทรแจ้งว่าผู้ป่วยปัสสาวะออก **15–20 mL/hr มา 3 ชม.** (น้ำหนัก 60 kg)\n\nV/S: T 38.6°C, BP 104/62 mmHg (ปกติ 140/80), HR 122/min, RR 24/min, SpO2 95% room air\n\nPE: ซึมลงเล็กน้อย ท้องอืด กดเจ็บทั่วท้องล่าง guarding เล็กน้อย bowel sound ลดลง แผลแห้งดี สาย Foley ไม่หัก น่องไม่บวม\n\n| Lab | ผล |\n|---|---|\n| WBC | 19,600/µL (neutrophil 90%) |\n| Hb | 10.9 g/dL (POD 1: 11.2) |\n| BUN/Cr | 38/1.6 mg/dL (ก่อนผ่าตัด Cr 0.8) |\n| Na/K/Cl/HCO₃ | 134/3.3/104/18 mEq/L |\n| Lactate | 3.4 mmol/L |",
+   "questions": [
+    {
+     "q": "1. จงบอก problem list และการวินิจฉัยที่สำคัญที่สุดที่ต้องนึกถึง",
+     "a": "- **Sepsis** (ไข้ RR สูง สับสน ความดันต่ำกว่าเดิม lactate สูง) ร่วมกับ **AKI (prerenal ± septic)** และ hypokalemia\n- สาเหตุที่น่าจะเป็นที่สุด: **anastomotic leak/intra-abdominal abscess** — POD 5 หลังต่อลำไส้ + ไข้ + tachycardia + ileus + ปวดท้อง guarding\n- DDx อื่นที่ต้องตัด: pneumonia, UTI (มีสาย Foley), C. difficile, PE (มี tachycardia แต่ไม่อธิบายไข้/ท้อง), MI\nเกณฑ์ให้คะแนน: บอก sepsis + AKI + leak ได้ครบ"
+    },
+    {
+     "q": "2. จงสั่งการรักษาเบื้องต้นใน 1 ชั่วโมงแรก",
+     "a": "- O2 ตามต้องการ, IV ใหญ่ 2 เส้น, monitor, record V/S q 15–30 min, I/O ทุกชั่วโมง\n- **Hemoculture 2 ชุด**, UA/urine culture แล้วให้ **broad-spectrum antibiotic ภายใน 1 ชม.** ครอบคลุม gram-negative และ anaerobe (เช่น piperacillin-tazobactam หรือ ceftriaxone + metronidazole ตามความเสี่ยงเชื้อดื้อยา)\n- **Balanced crystalloid** bolus (เช่น 500 mL ซ้ำตามการตอบสนอง; เป้า sepsis ราว 30 mL/kg ใน 3 ชม. ปรับตามปอด/หัวใจ) เป้าหมาย MAP ตั้งแต่ 65, UO ตั้งแต่ 0.5 mL/kg/hr, lactate ลดลง\n- NPO, NG tube ถ้าอาเจียน/ท้องอืดมาก\n- แก้ K (KCl IV), หยุด NSAID/ยาที่เป็นพิษต่อไต\n- **แจ้งศัลยแพทย์เจ้าของไข้/อาวุโสทันที**"
+    },
+    {
+     "q": "3. ส่งตรวจอะไรเพื่อยืนยันการวินิจฉัย และเตรียมตัวอย่างไรก่อนส่ง",
+     "a": "- **CT abdomen/pelvis with IV contrast** (± rectal contrast) หลังผู้ป่วย hemodynamics คงที่พอเคลื่อนย้ายได้ — Cr 1.6 ไม่ใช่ข้อห้ามเด็ดขาดเมื่อประโยชน์สูงกว่า ให้น้ำก่อนและหลัง\n- CXR, ECG/troponin (tachycardia), coagulation, G/M\n- ถ้าผู้ป่วยไม่คงที่แม้ resuscitation หรือมี peritonitis ทั่วท้อง → ไม่ต้องรอ CT ไปผ่าตัดเลย"
+    },
+    {
+     "q": "4. CT พบ fluid และ free air รอบ anastomosis มี contrast รั่วออกมา และมีน้ำในช่องท้องทั่วไป ผู้ป่วยยังต้องการ norepinephrine ขนาดต่ำ จงบอกการรักษาที่เหมาะสม",
+     "a": "- **Generalized leak + septic shock** → **emergency laparotomy**: washout, **resect anastomosis + end colostomy (Hartmann)** หรือในบางรายซ่อม/ต่อใหม่ร่วมกับ proximal diversion ตามสภาพเนื้อเยื่อและผู้ป่วย\n- Percutaneous drainage ไม่เหมาะเพราะ peritonitis ทั่วท้องและช็อก\n- หลังผ่าตัด: ICU, antibiotic ต่อ (ระยะสั้นหลัง source control ที่เพียงพอ ราว 4 วัน), VTE prophylaxis, โภชนาการ, ติดตาม AKI"
+    },
+    {
+     "q": "5. จงอธิบายแก่ญาติเรื่องภาวะแทรกซ้อนนี้และการผ่าตัดซ้ำ",
+     "a": "- บอกตรงไปตรงมาว่าเกิด **รอยต่อลำไส้รั่ว** ซึ่งเป็นภาวะแทรกซ้อนที่รู้จักของการผ่าตัดลำไส้ ไม่โทษใคร\n- ความรุนแรง: ติดเชื้อในกระแสเลือด ต้องผ่าตัดด่วนเพื่อช่วยชีวิต\n- อาจต้อง **ทำลำไส้เปิดทางหน้าท้อง (colostomy)** ซึ่งอาจปิดได้ภายหลังหลายเดือน\n- ความเสี่ยงของการผ่าตัดซ้ำ, การดูแลใน ICU, เปิดโอกาสให้ถาม และขอความยินยอม"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 3",
+    "Schwartz 11e Ch 5",
+    "Schwartz 11e Ch 6",
+    "Surviving Sepsis Campaign Guidelines 2021"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-02-OSCE1",
+   "topic": "Called to the ward for low urine output after surgery",
+   "station": "สถานี 7 นาที · จัดการผู้ป่วยบนหอ (ซักประวัติ/ตรวจ/สั่งการรักษา)",
+   "instruction": "**บทบาท**: คุณเป็นแพทย์เวรศัลยกรรม เวลา 02:00 น.\n\n**สถานการณ์**: พยาบาลโทรแจ้งว่า ชายอายุ 72 ปี น้ำหนัก 65 kg POD 1 หลัง **open right hemicolectomy** ปัสสาวะออก 10, 12, 15 mL ใน 3 ชม.ที่ผ่านมา ได้ IV 5%D/N/2 rate 60 mL/hr\n\n**งานของคุณ** (7 นาที): ให้บอกผู้คุมสอบว่าคุณจะทำอะไรตามลำดับ ผู้คุมสอบจะให้ข้อมูลเมื่อคุณถาม\n\n**ข้อมูลสำหรับผู้คุมสอบ (ให้เมื่อถูกถาม)**: สาย Foley ไม่หัก flush แล้วไม่มีอะไรเปลี่ยน · BP 98/60 (ก่อนผ่าตัด 150/90), HR 112, RR 20, T 37.4, SpO2 96% · ลิ้นแห้ง capillary refill 3 วินาที JVP แฟบ ปอดใส ท้องอืดเล็กน้อย แผลแห้ง · intraop EBL 300 mL, NG output 800 mL ตั้งแต่ผ่าตัด · Hb 11.8 (preop 12.4), BUN/Cr 32/1.4 (preop 0.9), K 3.4 · ยาที่ได้: ketorolac 30 mg IV q 8 hr · หลังให้ LRS 500 mL x 2 → BP 118/70, HR 94, UO 40 mL/hr",
+   "answer": "1. ไปดูผู้ป่วยด้วยตนเอง ไม่สั่ง furosemide ทางโทรศัพท์ (1)\n2. **ตรวจสาย Foley/bladder ก่อน** (flush, ตำแหน่ง) (1)\n3. ประเมิน V/S และ volume status ครบ (JVP, ลิ้น, capillary refill, ปอด, ท้อง, แผล, drain) (1)\n4. ทบทวน chart: **I/O balance, NG loss ที่ยังไม่ได้ทดแทน**, EBL, IV rate ต่ำเกิน, **ยาที่เป็นพิษต่อไต (NSAID)** (1)\n5. วินิจฉัย **prerenal AKI จาก hypovolemia** (maintenance ไม่พอ + NG loss) (1)\n6. **Fluid challenge**: balanced crystalloid 250–500 mL ใน 15–30 นาที ประเมินซ้ำ ทำซ้ำตามการตอบสนอง ระวังน้ำเกิน (1)\n7. ส่ง BUN/Cr, electrolytes, CBC ± lactate, urine Na/Cr (1)\n8. ปรับ IV order: maintenance ที่เหมาะสม (ราว 100 mL/hr) + **ทดแทน NG loss ด้วย NSS + KCl** mL ต่อ mL (1)\n9. **หยุด ketorolac** เปลี่ยนเป็น paracetamol ± opioid (1)\n10. ตั้งเกณฑ์ติดตาม: UO รายชั่วโมง, แจ้งถ้า UO น้อยกว่า 0.5 mL/kg/hr อีก, ถ้าไม่ตอบสนองคิดถึงเลือดออก/sepsis/leak/compartment syndrome และแจ้งอาวุโส (1)\n\n**Fatal errors**: ให้ furosemide ในผู้ป่วยขาดน้ำ, ไม่ตรวจสายสวน, ไม่ประเมินผู้ป่วยด้วยตนเอง, ให้ NSAID ต่อ"
+  },
+  {
+   "id": "N3-02-OSCE2",
+   "topic": "Postoperative fever on day 5 — focused assessment and plan",
+   "station": "สถานี 6 นาที · ซักประวัติและตรวจร่างกาย/วางแผน",
+   "instruction": "**สถานการณ์**: หญิงอายุ 58 ปี POD 5 หลัง **open cholecystectomy + common bile duct exploration with T-tube** มีไข้ 38.7°C ตั้งแต่บ่าย ยังคาสาย Foley และ central venous catheter ที่ right subclavian (ให้ TPN อยู่)\n\n**งานของคุณ** (6 นาที): ซักประวัติและตรวจร่างกายผู้ป่วยจำลองแบบมุ่งเป้า แล้วบอกการวินิจฉัยแยกโรคและแผนการตรวจ\n\n**ข้อมูลผู้ป่วยจำลอง**: หนาวสั่นตอนบ่าย ไม่ไอ ไม่ปวดแสบขัดปัสสาวะ ไม่ถ่ายเหลว ปวดแผลพอทนได้ ไม่เจ็บน่อง · ผู้คุมสอบให้ผลตรวจ: บริเวณ CVC แดงมีหนองซึม แผลผ่าตัดดี ท้องนุ่ม T-tube น้ำดีสีปกติ ปอดใส น่องไม่บวม",
+   "answer": "1. ยืนยันตัวตน ขออนุญาต ล้างมือ (0.5)\n2. ซักประวัติตามระบบ: ลักษณะไข้/หนาวสั่น, **ไอ เสมหะ หอบ**, **ปัสสาวะแสบขัด**, **ถ่ายเหลว** (C. difficile), ปวดแผล/ท้อง, ปวดน่อง/เหนื่อย, ยาใหม่/ผื่น, ได้เลือด (2)\n3. ตรวจ V/S ทั้งชุด + ตรวจ **แผล, T-tube, ท้อง, ปอด, ตำแหน่ง CVC/IV, สาย Foley, น่อง, ผิวหนัง** (2)\n4. DDx ตาม POD 5: **catheter-related bloodstream infection (เด่นที่สุด — TPN + หนองที่ทางออก)**, UTI จาก Foley, pneumonia, SSI/intra-abdominal collection/bile leak, cholangitis, DVT/PE, drug fever (1.5)\n5. แผนตรวจ: **hemoculture 2 ชุด (จาก CVC และ peripheral)**, swab หนองที่ทางออก, CBC, UA/urine culture, LFT, CXR ± US/CT ท้องถ้าตรวจท้องผิดปกติ (1.5)\n6. การจัดการ: **ถอด CVC** (มีหนองที่ทางออก) ส่งปลายสายเพาะเชื้อ, ให้ empirical antibiotic ครอบคลุม gram-positive รวม MRSA (เช่น vancomycin) ± gram-negative ตามความรุนแรง, ใส่สายใหม่ตำแหน่งอื่นถ้ายังต้องการ TPN, ถอด Foley ถ้าไม่จำเป็น (1.5)\n\n**Fatal errors**: ไม่ตรวจตำแหน่งสาย/แผล, สั่ง antibiotic ก่อนเก็บ culture, ใส่สายใหม่ผ่าน guidewire ในตำแหน่งที่มีหนอง"
+  }
+ ]
+}

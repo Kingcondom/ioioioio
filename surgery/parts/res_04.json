@@ -1,0 +1,486 @@
+{
+ "lec": "04",
+ "date": "Schwartz Ch 8, 9, 45",
+ "title": "Burns, wound healing & reconstruction",
+ "subtitle": "จะดูแลผู้ป่วยไฟไหม้ตั้งแต่ resuscitation จนปิดแผล เข้าใจชีววิทยาการหายของแผลและแผลเรื้อรัง และเลือกวิธี reconstruct ที่เหมาะสมได้อย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องประเมินขนาด/ความลึกของ burn คำนวณและ titrate สารน้ำ และป้องกัน/รักษาภาวะ over-resuscitation และ compartment syndrome ได้",
+  "เรียนจบแล้วต้องตัดสินใจใส่ท่อช่วยหายใจ วินิจฉัยและรักษา inhalation injury, CO และ cyanide poisoning ได้",
+  "เรียนจบแล้วต้องวางแผน early excision, เลือก graft/skin substitute และยาทาแผลไฟไหม้ พร้อมจัดการ hypermetabolic response ได้",
+  "เรียนจบแล้วต้องอธิบายระยะของ wound healing, ปัจจัยที่ทำให้แผลหายช้า และแยกการรักษาแผลเรื้อรังแต่ละชนิดรวมถึง Marjolin ulcer ได้",
+  "เรียนจบแล้วต้องแยก keloid กับ hypertrophic scar และเลือกการรักษาที่เหมาะสมได้",
+  "เรียนจบแล้วต้องใช้ reconstructive ladder/elevator เลือก graft หรือ flap ตามตำแหน่งแผล และเฝ้าระวัง/กู้ free flap ที่มีปัญหาได้"
+ ],
+ "guidelines": [
+  "American Burn Association: burn center referral criteria; practice guidelines for burn shock resuscitation (2008)",
+  "RE-ENERGIZE trial — glutamine in severe burns (NEJM 2022)",
+  "Mathes–Nahai classification of muscle and fasciocutaneous flaps; Gustilo–Anderson classification of open fractures",
+  "BOAST/BAPRAS standards for the management of open fractures (2017); Godina (1986) early free-flap coverage",
+  "EVRA (NEJM 2018) and ESCHAR (2004/2007) trials for venous leg ulcers; NPIAP pressure injury staging (2016)"
+ ],
+ "sections": [
+  {
+   "id": "res-04-1",
+   "title": "Burn resuscitation & critical care: over-resuscitation, ACS และ hypermetabolism",
+   "summary": "จะประเมินขนาดแผล ให้สารน้ำ และป้องกันภาวะแทรกซ้อนจากการให้น้ำเกินในผู้ป่วยไฟไหม้อย่างไร และจะลด hypermetabolic response ได้อย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 8 — Initial evaluation, resuscitation, critical care, nutrition, escharotomy",
+   "md": "### ขนาดแผล ความลึก และใครต้องส่ง burn center\n- **Rule of nines** (ผู้ใหญ่): ศีรษะ 9%, แขนข้างละ 9%, ลำตัวหน้า 18%, ลำตัวหลัง 18%, ขาข้างละ 18%, perineum 1% · **rule of the palm** (ฝ่ามือรวมนิ้ว ≈ 1%) · เด็กเล็กกว่า 3 ปีศีรษะใหญ่สัมพัทธ์ → ใช้ **Lund–Browder**\n- **ไม่นับ superficial (first-degree)** และต้องล้างเขม่าก่อนประเมิน · แพทย์ที่ไม่ชำนาญมัก **ประเมินแผลเล็กเกินจริง และประเมินแผลใหญ่ต่ำเกินจริง**\n- Jackson zones: **coagulation** (ตาย ต้องตัด) · **stasis** (ขาดเลือด อาจลึกขึ้นถ้า resuscitate ไม่พอหรือติดเชื้อ) · hyperemia (หายเอง) — แผลจึง \"เปลี่ยนแปลงได้ใน 48–72 ชม.\"\n- **Prognosis**: Baux (อายุ + %TBSA) · **Revised Baux** เพิ่ม inhalation injury · อายุ ขนาดแผล และ inhalation injury เป็นตัวทำนายตายที่แรงที่สุด\n- ABA referral: partial-thickness มากกว่า 10% TBSA, full-thickness ทุกขนาด, หน้า/มือ/เท้า/อวัยวะเพศ/perineum/ข้อใหญ่, electrical (รวมฟ้าผ่า), chemical, inhalation, โรคร่วม, trauma ร่วม, เด็กในโรงพยาบาลที่ไม่พร้อม\n- **ห้ามให้ prophylactic systemic antibiotics** (เพิ่มเชื้อดื้อยาและเชื้อรา) ให้เฉพาะ tetanus · อย่าทำให้ตัวเย็นในแผลมากกว่า 20%\n\n### Fluid resuscitation และ endpoints\n- ให้ IV resuscitation เมื่อ **มากกว่า 20% TBSA ในผู้ใหญ่ (มากกว่า 15% ในเด็ก)**\n\n| สูตร | ปริมาณ LR ใน 24 ชม.แรก |\n|---|---|\n| **Parkland (Baxter)** | **3–4 mL/kg/%TBSA** · ครึ่งหนึ่งใน **8 ชม.แรกนับจากเวลาไฟไหม้** อีกครึ่งใน 16 ชม.ถัดไป |\n| ABA consensus (ตามที่ Schwartz อ้าง) | **2 mL/kg/%TBSA** เริ่มต้น แล้ว titrate — เพื่อลด over-resuscitation |\n| เด็กน้ำหนักน้อยกว่า 20 kg | สูตรข้างต้น + **maintenance ที่มี dextrose** (glycogen น้อย) |\n\n- **Endpoints**: **urine output 30 mL/ชม. ในผู้ใหญ่ (ราว 0.5 mL/kg/h), 1–1.5 mL/kg/h ในเด็ก**, **MAP มากกว่า 60 mmHg** · ปรับอัตราทุกชั่วโมงขึ้นลงราว 20–30% · สูตรเป็นแค่จุดเริ่ม\n- ไม่ใช้ PAC เป็น routine (มักทำให้ได้สารน้ำเกินโดย CO ไม่ดีขึ้น) · lactate/base deficit ช่วยทำนาย\n- **Electrical injury**: ความเสียหายลึกกว่าที่เห็น, rhabdomyolysis → ต้องการสารน้ำมากกว่า, เป้า urine output สูงขึ้น (ราว 75–100 mL/ชม. ถ้ามี myoglobinuria จนปัสสาวะใส), ECG/cardiac monitoring, compartment syndrome\n\n### Over-resuscitation (\"fluid creep\") และ compartment syndromes\n- สารน้ำที่ได้จริงมัก **เกินสูตร** — ปัจจัย: **inhalation injury** (Navar: 5.76 vs 3.98 mL/kg/%), ขนาดแผล, น้ำหนัก, ใส่ท่อตั้งแต่แรกรับ และ **\"opioid creep\"** (opioid ขนาดสูง → vasodilation → bolus)\n- ผลของ fluid creep: **abdominal compartment syndrome**, extremity compartment syndrome, **orbital compartment syndrome** (ต้อง lateral canthotomy), pleural effusion, pulmonary edema, graft loss\n- **ACS ใน burn**: urine output ลด, airway pressure สูง, hypotension · วัด bladder pressure ใน burn ใหญ่ · ขั้นตอน (Schwartz): **ลดสารน้ำ, torso escharotomy, ลด tidal volume, chemical paralysis** ก่อน → **decompressive laparotomy** เมื่อดื้อต่อมาตรการ (พยากรณ์แย่มากใน burn)\n- **Adjuncts ลดปริมาณสารน้ำ**: albumin ในช่วงหลัง capillary leak ปิด (หลัง 12–24 ชม.; บางศูนย์ใช้เป็น \"albumin rescue\") · **high-dose vitamin C** ลด fluid requirement (ยังไม่พบ mortality benefit) · hypertonic saline (เสี่ยง hyperchloremic acidosis) · plasmapheresis\n\n### Escharotomy\n- Full-thickness eschar รอบแขนขา/ลำตัว + edema → tourniquet effect: venous outflow ถูกกดก่อน แล้ว arterial inflow\n- สัญญาณ: ชา ปวด capillary refill ช้า → ชีพจรหาย (late) · ผู้ป่วยใส่ท่อต้องตรวจ neurovascular บ่อย · ลำตัว: ventilation ลำบาก, peak pressure สูง\n- **ไม่ค่อยต้องทำใน 8 ชม.แรก** และไม่ควรทำโดยไม่มีข้อบ่งชี้ (แผลเป็นน่าเกลียด)\n- เทคนิค: bedside ด้วย **electrocautery** · แขนขา: แนว **medial และ lateral** (anatomic position) ขยายถึง thenar/hypothenar · **ไม่แนะนำ digital escharotomy** · ทรวงอก: **แนว anterior axillary line สองข้าง + subcostal และ subclavicular** ต่อลงด้านข้างท้องเพื่อปลดหน้าท้อง\n- ถ้า perfusion ยังไม่ดีหลัง escharotomy → **fasciotomy** (พบบ่อยใน electrical/crush) ไม่ทำ routine\n\n### Hypermetabolism และ critical care อื่น ๆ\n- Burn ใหญ่ (มากกว่า 40% TBSA) มี hypermetabolic response รุนแรงที่สุดในศัลยกรรม: catecholamine, cortisol, glucagon สูง, REE อาจเพิ่มถึงราว 1.5–2 เท่า, tachycardia, muscle wasting, insulin resistance — อาจคงอยู่ **นานหลายเดือนถึงปี**\n- **Early enteral feeding** (ภายในไม่กี่ชั่วโมงแรก) ลดการเสีย lean body mass ลด hypermetabolism ลด ileus · ไม่ต้องงด EN ก่อนไปห้องผ่าตัดในผู้ที่ใส่ท่อ · **Curreri**: 25 kcal/kg + 40 kcal/%TBSA ต่อวัน (Harris-Benedict × 2) · protein ราว 2.0–2.5 g/kg/วัน · ระวัง overfeeding (สะสมไขมันแทนกล้ามเนื้อ)\n- Glutamine: ผลไม่ชัด — **RE-ENERGIZE (2022)** ไม่ลดการตายในผู้ป่วย burn รุนแรง\n- **Propranolol**: ในเด็กลด HR และ REE ลด protein catabolism (Herndon) · ผู้ใหญ่ใช้ได้แต่ระวัง hypotension/bradycardia\n- **Oxandrolone**: เพิ่ม lean body mass และ bone density, ลด LOS, สัมพันธ์กับ mortality ลดลงใน burn ใหญ่ · ติดตาม transaminase\n- Glucose control: hyperglycemia เพิ่มการตาย · insulin (และ metformin) อาจมีผล anabolic\n- อื่น ๆ: ห้องอุ่น (ราว 30–32°C) ลด energy expenditure · VTE prophylaxis ด้วย LMWH (DVT ได้ถึง 25%) · ระวัง HIT วันที่ 7–10 · CLABSI สูง — **ย้ายตำแหน่งสายแทนการ rewire** · Curling ulcer → stress ulcer prophylaxis\n",
+   "pearls": [
+    "IV resuscitation เมื่อ burn มากกว่า 20% (เด็กมากกว่า 15%) · ไม่นับ first-degree",
+    "Parkland 3–4 mL/kg/% ครึ่งแรกใน 8 ชม.นับจากเวลาไหม้ · ABA consensus เริ่ม 2 mL/kg/%",
+    "เป้า UO 30 mL/h ผู้ใหญ่, 1–1.5 mL/kg/h เด็ก, MAP มากกว่า 60 · titrate ทุกชั่วโมง",
+    "Fluid creep → ACS, extremity/orbital compartment syndrome · inhalation injury ต้องการน้ำมากขึ้น",
+    "Escharotomy: medial/lateral, trunk ตาม anterior axillary line + subcostal · ไม่ทำ digital",
+    "ห้าม prophylactic antibiotics · ให้ tetanus",
+    "Hypermetabolism: early EN, propranolol, oxandrolone, คุมน้ำตาล, ห้องอุ่น · Curreri 25 kcal/kg + 40 kcal/%TBSA"
+   ],
+   "mnem": [
+    {
+     "name": "ABA referral",
+     "what": "เกณฑ์ส่งต่อ burn center (ย่อ)",
+     "lines": [
+      [
+       "10",
+       "Partial-thickness มากกว่า 10% TBSA"
+      ],
+      [
+       "FT",
+       "Full-thickness ทุกขนาด"
+      ],
+      [
+       "Special areas",
+       "หน้า มือ เท้า อวัยวะเพศ perineum ข้อใหญ่"
+      ],
+      [
+       "E-C-I",
+       "Electrical (รวมฟ้าผ่า), Chemical, Inhalation"
+      ],
+      [
+       "+",
+       "โรคร่วม, trauma ร่วม, เด็ก, ปัญหาสังคม/rehabilitation"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RES-04-1-1",
+     "kind": "mcq",
+     "topic": "Parkland formula calculation",
+     "stem": "A 70-kg man sustains flame burns at 08:00. On arrival at the burn center at 10:00 he has 40% TBSA deep partial- and full-thickness burns (superficial burns excluded) and has already received 1,000 mL of lactated Ringer's in the field and referring hospital. Using the Parkland formula at 4 mL/kg/%TBSA, at what rate should lactated Ringer's be infused for the next 6 hours?",
+     "choices": [
+      "About 770 mL/h",
+      "About 700 mL/h",
+      "About 930 mL/h",
+      "About 350 mL/h",
+      "About 1,400 mL/h"
+     ],
+     "answer": 0,
+     "explain": "Parkland = 4 × 70 × 40 = **11,200 mL/24 ชม.** · ครึ่งแรก **5,600 mL ต้องได้ภายใน 8 ชม.นับจากเวลาเกิดเหตุ** (08:00–16:00) ไม่ใช่จากเวลามาถึง · ได้ไปแล้ว 1,000 mL เหลือ 4,600 mL ใน 6 ชม.ที่เหลือ → **≈ 767 mL/ชม.** แล้ว titrate ตาม urine output 30 mL/ชม. และ MAP มากกว่า 60\n- **700 mL/ชม.** = 5,600 ÷ 8 คิดเหมือนเพิ่งเริ่ม ไม่ได้ปรับเวลาที่ผ่านไปและสารน้ำที่ได้\n- **930 mL/ชม.** = 5,600 ÷ 6 ลืมหักสารน้ำ 1 L ที่ได้แล้ว\n- **350 mL/ชม.** = 5,600 ÷ 16 ใช้อัตราช่วงหลังผิดช่วงเวลา\n- **1,400 mL/ชม.** เกินสูตรเกือบสองเท่า → fluid creep และ ACS",
+     "pearl": "Parkland: ครึ่งแรกใน 8 ชม.นับจากเวลาไหม้ — หักสารน้ำที่ได้แล้ว",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-1-2",
+     "kind": "mcq",
+     "topic": "Torso escharotomy before decompressive laparotomy",
+     "stem": "A 34-year-old man with 55% TBSA burns, including circumferential full-thickness burns of the chest and abdomen, is 18 hours into resuscitation and has received 7 mL/kg/%TBSA. He is intubated with peak airway pressure rising from 30 to 48 cmH2O, urine output 10 mL/h, and bladder pressure 27 mmHg. The trunk eschar is tight and leathery. What is the most appropriate next step?",
+     "choices": [
+      "Bilateral anterior axillary line escharotomies with subcostal extensions across the abdomen",
+      "Immediate decompressive laparotomy",
+      "Increase lactated Ringer's rate to improve urine output",
+      "Furosemide infusion",
+      "Early tangential excision of the trunk burns today"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **over-resuscitation** (มากกว่า Parkland เกือบสองเท่า) ร่วมกับ eschar แข็งรอบลำตัวทำให้เกิด **thoracic และ abdominal compartment syndrome** Schwartz แนะนำให้ทำมาตรการเสริมก่อน decompressive laparotomy ได้แก่ **torso escharotomy** (anterior axillary line สองข้าง + subcostal/subclavicular extensions ลงด้านข้างท้อง), ลดสารน้ำ, ลด tidal volume, paralysis เพราะ laparotomy ใน burn มีพยากรณ์แย่มาก ถ้ายังไม่ดีขึ้นจึงทำ laparotomy\n- **Decompressive laparotomy ทันที** ข้ามขั้นตอนที่อาจแก้ได้และพยากรณ์แย่\n- **เพิ่มสารน้ำ** ซ้ำเติม ACS\n- **Furosemide** ไม่แก้ความดันในช่อง และทำให้ hypovolemia\n- **Excision วันนี้** ผู้ป่วยยังไม่คงที่ และไม่แก้ปัญหาเฉียบพลัน",
+     "pearl": "Burn ACS: ลดน้ำ + torso escharotomy + paralysis ก่อน → laparotomy เมื่อดื้อ",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-1-3",
+     "kind": "mcq",
+     "topic": "Modulating burn hypermetabolism",
+     "stem": "A 9-year-old boy with 60% TBSA burns is 3 weeks after injury. Despite enteral feeding at goal, he has persistent tachycardia (HR 165/min), resting energy expenditure 1.8 times predicted, and progressive loss of lean body mass. Which pharmacologic therapy most directly reduces his heart rate, energy expenditure and muscle protein catabolism?",
+     "choices": [
+      "Propranolol titrated to reduce heart rate by about 20%",
+      "High-dose intravenous glutamine",
+      "Recombinant growth hormone with high-dose insulin",
+      "Intravenous hydrocortisone",
+      "Thyroxine replacement"
+     ],
+     "answer": 0,
+     "explain": "Hypermetabolism ใน burn ใหญ่ขับเคลื่อนด้วย **catecholamine** สูงต่อเนื่อง **β-blockade (propranolol)** ในเด็ก burn ลด HR และ **resting energy expenditure** และ **ลด protein catabolism** ได้แม้ใช้ระยะยาว (Herndon) โดยมักปรับให้ HR ลดราว 20% (ผู้ใหญ่ใช้ได้แต่ระวัง hypotension/bradycardia) ยาเสริมอีกตัวคือ oxandrolone\n- **Glutamine** ผลต่อ outcome ไม่ชัด RE-ENERGIZE ไม่ลด mortality\n- **Growth hormone + insulin** GH มีหลักฐานในเด็กแต่เสี่ยง hyperglycemia และไม่ลด HR/REE โดยตรง\n- **Hydrocortisone** ยิ่งเพิ่ม catabolism และติดเชื้อ\n- **Thyroxine** เพิ่ม metabolic rate ซ้ำเติม",
+     "pearl": "Burn hypermetabolism: propranolol (ลด HR/REE/catabolism) + oxandrolone + early EN",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-1-4",
+     "kind": "mcq",
+     "topic": "Titrating burn resuscitation to urine output",
+     "stem": "A 80-kg woman with 35% TBSA scald and flame burns is 7 hours into resuscitation at a Parkland-calculated rate of 700 mL/h. She is not intubated, MAP is 78 mmHg, and hourly urine output over the last 3 hours has been 110, 125 and 130 mL. Urine is clear and there is no electrical injury. What is the most appropriate adjustment?",
+     "choices": [
+      "Decrease the crystalloid rate by about 20–30% and continue hourly titration",
+      "Continue the calculated rate unchanged because the formula must be completed",
+      "Increase the rate to keep urine output above 100 mL/h",
+      "Switch to 5% albumin at the same rate",
+      "Give furosemide to prevent pulmonary edema"
+     ],
+     "answer": 0,
+     "explain": "สูตร Parkland เป็นเพียง **จุดเริ่ม** ต้อง titrate ตาม **urine output เป้า 30 mL/ชม. (ราว 0.5 mL/kg/h)** และ MAP มากกว่า 60 ผู้ป่วยมีปัสสาวะ 110–130 mL/ชม. (เกินเป้ามาก) = ได้สารน้ำมากเกิน → **ลดอัตราราว 20–30%** แล้วประเมินทุกชั่วโมง เพื่อลด fluid creep (ACS, pulmonary edema, graft loss)\n- **ให้ต่อตามสูตร** คือสาเหตุหลักของ over-resuscitation\n- **เพิ่มอัตราให้ UO มากกว่า 100** ใช้เฉพาะ myoglobinuria/electrical injury\n- **5% albumin อัตราเดียวกัน** ไม่แก้ปัญหาสารน้ำเกิน และให้ปริมาตรเกินเหมือนเดิม\n- **Furosemide** ทำให้ urine output ใช้เป็นตัวชี้วัดไม่ได้และเสี่ยง hypovolemia",
+     "pearl": "Burn resuscitation: titrate ทุกชั่วโมงให้ UO 30 mL/h (ผู้ใหญ่) — สูตรเป็นแค่จุดเริ่ม",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-04-2",
+   "title": "Inhalation injury, CO/cyanide, burn wound care และ excision & grafting",
+   "summary": "ใครต้องใส่ท่อช่วยหายใจตั้งแต่ต้น จะรักษาพิษจากควันอย่างไร และจะตัดแผลและปิดผิวหนังให้ได้ผลดีที่สุดอย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 8 — Inhalation injury and ventilator management, topical agents, excision and wound coverage; Ch 45 — Graft take",
+   "md": "### Airway และ inhalation injury\n- **Upper airway** (เหนือ glottis): ความร้อนตรง → edema สูงสุดราว 24–48 ชม. · **Lower airway**: สารเคมีในควัน (โดยเฉพาะจากวัสดุสังเคราะห์ในเพลิงไหม้อาคาร) → mucosal sloughing, bronchorrhea, cast อุดหลอดลมเล็ก, ARDS, pneumonia\n- พบได้ถึง **35%** ของผู้ป่วย burn ที่นอน รพ. · เพิ่มการตายและเพิ่มความต้องการสารน้ำ\n- **Intubate เร็ว** เมื่อมี: **เสียงแหบ, stridor, wheezing, หอบ**, เสมหะมีเขม่า, burn ลึกที่หน้า/คอ, ต้องให้สารน้ำปริมาณมาก (burn ใหญ่), GCS ต่ำ · **perioral burn และขนจมูกไหม้อย่างเดียวไม่ใช่ข้อบ่งชี้** แต่เป็นสัญญาณให้ตรวจละเอียด\n- ใช้ **orotracheal tube ขนาดใหญ่** (ให้ส่อง bronchoscopy/toilet ได้), ไม่ตัดท่อ (หน้าจะบวม) · succinylcholine ใช้ได้ใน 24 ชม.แรก หลังจากนั้น **ห้าม** (hyperkalemia จาก upregulated receptors)\n- วินิจฉัย: ประวัติ (ไฟไหม้ในที่ปิด) + **bronchoscopy** (เขม่า, erythema, edema, bronchorrhea; จัดเกรด AIS 0–4 — เกรดสูงสัมพันธ์ ARDS/ตาย) · **PaO₂/FiO₂ น้อยกว่า 350 แรกรับ** ทำนาย inhalation injury และความต้องการสารน้ำ\n- รักษา: aggressive pulmonary toilet, **nebulized albuterol, nebulized heparin ± N-acetylcysteine** (ลด cast เพิ่ม ventilator-free days), **lung-protective ventilation (6 mL/kg)** · HFPV ใช้ได้บางศูนย์ · HFOV ไม่ลด mortality · ECMO เป็น salvage · **ไม่ให้ steroid** routine\n\n### Carbon monoxide และ cyanide\n| | Carbon monoxide | Hydrogen cyanide |\n|---|---|---|\n| กลไก | จับ Hb แน่นกว่า O₂ **200–250 เท่า** → oxygen delivery ล้ม + mitochondrial toxicity | ยับยั้ง **cytochrome c oxidase** → ใช้ O₂ ไม่ได้ |\n| อาการเด่น | ปวดหัว สับสน หมดสติ ischemia หัวใจ · **SpO₂ ปกติหลอก** | **lactic acidosis รุนแรงที่ไม่ลดลงแม้ resuscitate**, ชัก, หมดสติ, ST elevation · กลิ่นอัลมอนด์/ผิวแดงเชอร์รีพบน้อย ห้ามใช้วินิจฉัยเดี่ยว |\n| ตรวจ | **arterial COHb (co-oximetry)** | ระดับ cyanide ช้า → วินิจฉัยทางคลินิก |\n| รักษา | **100% O₂** ลด half-life จาก **250 นาที (room air) → 40–60 นาที** · hyperbaric O₂ หลักฐานไม่ชัด ทำได้ยากใน burn ใหญ่ | **hydroxocobalamin** (จับ cyanide เป็น cyanocobalamin ขับทางไต; ขนาดทั่วไป 5 g IV) + 100% O₂ · sodium thiosulfate ออกฤทธิ์ช้า · ส่วนใหญ่ lactate หายเองเมื่อ ventilate |\n\n> ผู้ป่วยที่ cardiac arrest จาก CO มีพยากรณ์แย่มากแม้กู้ชีพสำเร็จ\n\n### Burn wound care และ topical agents\n| ยา | ข้อดี | ข้อเสีย |\n|---|---|---|\n| **Silver sulfadiazine** | broad spectrum, ใช้ง่าย ราคาถูก ไม่เจ็บ | **ไม่ซึมผ่าน eschar** · neutropenia ชั่วคราว (ส่วนใหญ่จาก margination) · แพ้ sulfa พบน้อย |\n| **Mafenide acetate** | **ซึมผ่าน eschar** ดี ใช้กับใบหู/กระดูกอ่อน | เจ็บ · **carbonic anhydrase inhibitor → metabolic acidosis** |\n| **Silver nitrate 0.5%** | broad spectrum | **hyponatremia/hypochloremia** (ดึงเกลือออก) · ย้อมสีดำ · methemoglobinemia (พบน้อย) |\n| Silver dressings, Biobrane | เปลี่ยนแผลน้อยครั้ง เจ็บน้อย | Biobrane ใช้เฉพาะ superficial partial-thickness ที่สะอาด |\n\n- Burn wound infection: ดูการเปลี่ยนแปลงของแผล (สีดำ/เขียว, แยกตัวเร็ว, partial-thickness กลายเป็น full-thickness) + quantitative biopsy · ลักษณะ sepsis ใน burn ต้องใช้เกณฑ์เฉพาะ (ABA) เพราะ SIRS มีอยู่แล้ว\n\n### Early excision และ grafting\n- **Early excision and grafting** ของ full-thickness และ deep partial-thickness (เริ่ม **ภายในไม่กี่วันแรก** เมื่อ resuscitation เสร็จและคงที่) → **ลด mortality**, ลดการติดเชื้อ, ลด LOS, ลดค่าใช้จ่ายและการผ่าตัดแก้ไข (Janzekovic) · burn ใหญ่ทำ serial excision\n- **Tangential excision** (Watson/Goulian blade) ตัดทีละชั้นจนเห็น **dermis สีขาวมีจุดเลือดออกกระจาย** หรือถึงไขมัน/fascia · **fascial excision** (electrocautery ลงถึง fascia) เสียเลือดน้อยแต่รูปร่างไม่สวย ใช้ใน burn ลึกมาก/เสี่ยงเลือดออก\n- ลดเลือดออก: **epinephrine tumescence** ใต้แผล, tourniquet ที่แขนขา, ผ้าชุบ epinephrine เจือจาง, fibrin sealant\n#### การปิดแผลหลัง excision\n- **Sheet STSG** สำหรับ **หน้า คอ มือ** (สวยและทำงานดีกว่า)\n- **Meshed STSG** (ทั่วไป 1:1.5–1:4) ครอบคลุมได้มากขึ้น ระบายเลือด/น้ำเหลือง แต่แผลเป็นลาย mesh · **Meek micrograft** ขยายได้ถึง 9:1\n- ปิดชั่วคราว: **cadaveric allograft** (ถูก reject ภายหลัง), xenograft\n- **Dermal substitute (Integra)**: collagen–chondroitin-6-sulfate + silastic → ราว **2 สัปดาห์** neodermis มีเลือดมาเลี้ยง ลอก silastic แล้วลง thin STSG · Alloderm, NovoSorb BTM\n- **Cultured epithelial autograft** สำหรับ burn ใหญ่มากที่ donor site น้อย (ช้า เปราะ take ไม่แน่นอน)\n- Donor site: ต้นขา (ทั่วไป), หลัง (ผู้สูงอายุ ผิวบาง), ก้น (ทารก) · หายใน **ราว 2 สัปดาห์** · reharvest ได้เมื่อหาย\n",
+   "pearls": [
+    "แหบ, stridor, หอบ, burn ลึกหน้าคอ → intubate เร็ว (ETT ใหญ่ ไม่ตัด)",
+    "Succinylcholine ห้ามหลัง 24–48 ชม.แรก (hyperkalemia)",
+    "Inhalation: bronchoscopy, P/F น้อยกว่า 350, nebulized heparin + NAC + albuterol, low TV",
+    "CO: SpO₂ หลอก → COHb · 100% O₂ half-life 250 → 40–60 นาที",
+    "Cyanide: lactic acidosis ดื้อต่อการรักษา → hydroxocobalamin",
+    "Mafenide ซึม eschar แต่ทำ metabolic acidosis · silver nitrate → hyponatremia",
+    "Early excision ลด mortality · sheet graft หน้า/มือ · Integra ลอก silastic ราว 2 สัปดาห์"
+   ],
+   "items": [
+    {
+     "id": "RES-04-2-1",
+     "kind": "mcq",
+     "topic": "Carbon monoxide poisoning",
+     "stem": "A 46-year-old woman is rescued from a house fire after being trapped in a closed bedroom. She has 12% TBSA burns, is confused and complains of headache. HR 112/min, BP 128/76 mmHg, RR 22/min, pulse oximetry 99% on room air. Arterial blood gas shows PaO2 92 mmHg and carboxyhemoglobin 28%; lactate 3.1 mmol/L. What is the most appropriate treatment?",
+     "choices": [
+      "100% oxygen via non-rebreather mask (or endotracheal tube if airway threatened)",
+      "Room air because pulse oximetry and PaO2 are normal",
+      "Intravenous hydroxocobalamin 5 g as sole therapy",
+      "Sodium thiosulfate infusion",
+      "Methylene blue 1–2 mg/kg IV"
+     ],
+     "answer": 0,
+     "explain": "**CO** จับ Hb แน่นกว่า O₂ **200–250 เท่า** pulse oximetry อ่าน COHb เป็น oxyhemoglobin จึง **SpO₂ ปกติหลอก** และ PaO₂ วัด O₂ ที่ละลาย ไม่สะท้อน O₂ content · COHb 28% + อาการทางสมอง → **100% O₂** ลด half-life จาก 250 นาทีเหลือ **40–60 นาที** (Schwartz ถือเป็น gold standard; hyperbaric O₂ หลักฐานไม่ชัด) ประเมิน airway และ inhalation injury ร่วม\n- **Room air** ผิดเพราะ SpO₂/PaO₂ หลอก\n- **Hydroxocobalamin เดี่ยว** สำหรับ cyanide ที่สงสัยมาก (lactic acidosis รุนแรงดื้อต่อการรักษา) ภาพนี้ lactate เพียง 3.1 และไม่ได้ให้ O₂\n- **Sodium thiosulfate** ออกฤทธิ์ช้าและไม่ใช่ยา CO\n- **Methylene blue** สำหรับ methemoglobinemia",
+     "pearl": "CO: SpO₂ หลอก → วัด COHb · 100% O₂ ลด half-life 250 → 40–60 นาที",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-2-2",
+     "kind": "mcq",
+     "topic": "Cyanide toxicity in smoke inhalation",
+     "stem": "A 38-year-old man is intubated after being found unconscious in a burning factory storeroom containing plastics and foam. Burns are 15% TBSA. He is ventilated on FiO2 1.0 with PaO2 380 mmHg and COHb 9%. Despite 2 L of crystalloid and adequate MAP, his lactate rises from 9 to 13 mmol/L and he develops seizures. What is the most appropriate additional therapy?",
+     "choices": [
+      "Intravenous hydroxocobalamin",
+      "Hyperbaric oxygen therapy",
+      "Sodium bicarbonate infusion to correct acidosis",
+      "Additional 3-L crystalloid bolus",
+      "Nebulized heparin and N-acetylcysteine"
+     ],
+     "answer": 0,
+     "explain": "เพลิงไหม้ในที่ปิดที่มีพลาสติก/โฟม ปล่อย **hydrogen cyanide** ซึ่งยับยั้ง **cytochrome c oxidase** เซลล์ใช้ O₂ ไม่ได้ → **lactic acidosis รุนแรงที่ไม่ลดลงแม้ resuscitate และ PaO₂ สูง** ร่วมกับชัก COHb 9% ไม่อธิบายภาพรุนแรงนี้ → ให้ **hydroxocobalamin** (จับ cyanide เป็น cyanocobalamin ขับทางไต ออกฤทธิ์เร็ว) Schwartz แนะนำสำหรับผู้ที่สงสัย cyanide มาก\n- **Hyperbaric O₂** ไม่ใช่ยาต้าน cyanide และ logistics ยาก\n- **Bicarbonate** แก้ตัวเลขไม่แก้ cellular hypoxia\n- **เพิ่ม crystalloid** ผู้ป่วยมี MAP พอแล้ว lactate ไม่ได้มาจาก hypovolemia\n- **Nebulized heparin/NAC** เป็นการรักษา inhalation injury ของทางเดินหายใจ ไม่แก้ cyanide",
+     "pearl": "Lactate สูงดื้อต่อ resuscitation + ไฟไหม้ในที่ปิด = cyanide → hydroxocobalamin",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-2-3",
+     "kind": "mcq",
+     "topic": "Early intubation for inhalation injury",
+     "stem": "A 29-year-old man is brought in 1 hour after a fire in a closed room with deep burns to the face and neck and 30% TBSA overall. He has a hoarse voice, inspiratory stridor, carbonaceous sputum and singed nasal hairs. SpO2 is 96% on oxygen and he is talking. Transfer to a burn center 3 hours away is planned. What is the most appropriate airway management?",
+     "choices": [
+      "Early orotracheal intubation with a large uncut endotracheal tube before transfer",
+      "Humidified oxygen and observation, intubating only if SpO2 falls",
+      "Nebulized racemic epinephrine and intravenous dexamethasone, then transfer",
+      "Fiberoptic laryngoscopy repeated every 4 hours in the ED",
+      "Elective tracheostomy through the burned neck skin"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **สัญญาณ upper airway compromise** (เสียงแหบ, **stridor**, เสมหะมีเขม่า) ร่วมกับ burn ลึกที่หน้าคอและต้องได้สารน้ำมาก airway edema จะ **แย่ลงเร็วใน 24–48 ชม.** และการลำเลียงนาน 3 ชม. → **intubate เร็วด้วย orotracheal tube ขนาดใหญ่ไม่ตัดท่อ** ก่อนส่งต่อ (ขนจมูกไหม้อย่างเดียวไม่ใช่ข้อบ่งชี้ แต่ภาพรวมนี้ชัดเจน)\n- **รอจน SpO₂ ตก** อาจใส่ท่อไม่ได้เพราะบวมปิดหมด → surgical airway ฉุกเฉิน\n- **Racemic epinephrine/steroid** ไม่ป้องกัน thermal edema และ steroid เพิ่มการติดเชื้อ\n- **ส่องซ้ำทุก 4 ชม.** เสียเวลาในผู้ที่มีข้อบ่งชี้ชัดแล้ว และอันตรายระหว่างส่งต่อ\n- **Tracheostomy ผ่านผิวไหม้** เพิ่มการติดเชื้อ ไม่ใช่ airway แรก",
+     "pearl": "แหบ/stridor/หอบ + burn ลึกหน้าคอ → intubate เร็ว (ETT ใหญ่ ไม่ตัด) โดยเฉพาะก่อนส่งต่อ",
+     "src": "Schwartz 11e Ch 8",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 8"
+     ]
+    },
+    {
+     "id": "RES-04-2-4",
+     "kind": "mcq",
+     "topic": "Skin graft loss during inosculation",
+     "stem": "A 52-year-old man underwent excision and sheet split-thickness skin grafting of a deep burn on the posterior thigh. On postoperative day 4 the dressing is removed; one area of the graft is pale, nonadherent and lifted by a dark collection beneath it, while the surrounding graft is pink with capillary refill. Which mechanism is the most likely cause of the failed area?",
+     "choices": [
+      "Hematoma beneath the graft preventing inosculation with the wound bed",
+      "Primary contraction of the graft after harvest",
+      "Secondary contraction of the wound bed",
+      "Rejection of the autograft by the host immune system",
+      "Excessive graft thickness from including full dermis"
+     ],
+     "answer": 0,
+     "explain": "Skin graft take มี 3 ระยะ: **plasmatic imbibition** (24–48 ชม.แรก ได้สารอาหารจาก plasma) → **inosculation** (หลัง 48 ชม. capillary จาก wound bed ต่อกับหลอดเลือดของ graft — ช่วงเสี่ยงที่สุด) → **revascularization** (เสร็จราววันที่ 4–5) สาเหตุ graft loss ที่พบบ่อยที่สุดคือ **hematoma/seroma** ที่ยก graft ออกจาก bed ตามด้วย **shear** และ **infection** ป้องกันด้วยห้ามเลือดดี, mesh หรือ pie-crust ให้ระบาย, bolster หรือ **NPWT** (เพิ่ม graft take)\n- **Primary contraction** คือการหดตัวทันทีหลังตัด graft ไม่ทำให้ graft ตาย\n- **Secondary contraction** เกิดช้าระหว่าง healing\n- **Rejection** ไม่เกิดกับ autograft (เกิดกับ allograft)\n- **Graft หนาเกิน** ทำให้ take ยากขึ้นได้ แต่ภาพนี้เป็นการสะสมของเหลวเฉพาะที่ในขณะที่ส่วนอื่นติดดี",
+     "pearl": "Graft take: imbibition → inosculation (เสี่ยงสุด) → revascularization; แพ้ hematoma/seroma, shear, infection",
+     "src": "Schwartz 11e Ch 45",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 45"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-04-3",
+   "title": "Wound healing biology, chronic wounds และ keloid/hypertrophic scar",
+   "summary": "แผลหายผ่านกลไกใด อะไรทำให้แผลไม่หาย และจะแยกและรักษาแผลเรื้อรังแต่ละชนิดและแผลเป็นนูนอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 9 — Phases of wound healing, factors affecting healing, chronic wounds, excess healing",
+   "md": "### ระยะของ wound healing\n| ระยะ | เวลา | เซลล์/เหตุการณ์หลัก |\n|---|---|---|\n| **Hemostasis/Inflammation** | วันที่ 0–4 | platelet ปล่อย **PDGF, TGF-β** · **neutrophil** สูงสุด 24–48 ชม. (ไม่จำเป็นต่อ healing ถ้าไม่ติดเชื้อ) · **macrophage** สูงสุด 48–96 ชม. — **จำเป็นที่สุด** (ขาดแล้วแผลไม่หาย) · T lymphocyte มาภายหลัง |\n| **Proliferation** | วันที่ 4–12 | **fibroblast** (ถูกเรียกด้วย PDGF) สร้าง collagen, angiogenesis (VEGF), granulation tissue, epithelialization, **myofibroblast** หดแผล |\n| **Maturation/Remodeling** | 3 สัปดาห์ – **6–12 เดือน** | collagen **type III → type I**, cross-linking, scar ซีดและแบนลง |\n\n- Matrix ลำดับ: fibronectin + **collagen type III** ก่อน → GAG/proteoglycan → **collagen type I** (ส่วนใหญ่ของแผลเป็นสุก)\n- **Tensile strength**: collagen ถึงจุดคงที่ในไม่กี่สัปดาห์ แต่ความแข็งแรงเพิ่มต่อหลายเดือน · แผลที่หายแล้วแข็งแรงเพียง **75–80% ของผิวปกติ** (ไม่มีวันเท่าเดิม)\n- Incision ที่เย็บชิด **epithelialize ภายใน 24–48 ชม.**\n- **Collagen synthesis**: prolyl/lysyl hydroxylase ต้องการ **vitamin C** (ascorbate), Fe²⁺, α-ketoglutarate, O₂ · **lysyl oxidase** (ต้องการ copper) สร้าง cross-link\n- GI tract: **submucosa** แข็งแรงที่สุด รับเข็มเย็บได้ดีที่สุด · anastomosis อ่อนแอที่สุดช่วงวันแรก ๆ จาก collagen lysis มากกว่าการสร้าง\n- TGF-β1 กระตุ้น fibrosis · **TGF-β3 ยับยั้งแผลเป็น** (fetal scarless healing มี hyaluronic acid สูง)\n\n### ปัจจัยที่ทำให้แผลหายช้า\n| ปัจจัย | กลไก/การแก้ |\n|---|---|\n| **Steroid** | กด inflammatory phase (macrophage, angiogenesis, fibroblast) · ลดผลได้ด้วย **vitamin A** (ไม่แก้ผลต่อ contraction และการติดเชื้อ) |\n| Vitamin C ขาด (scurvy) | collagen ไม่ถูก hydroxylate → แผลแตก แผลเก่าเปิด |\n| **Zinc** ขาด (น้อยกว่า 100 µg/dL) | granulation ไม่ดี → zinc sulfate รับประทาน |\n| Diabetes | neuropathy, microvascular disease, neutrophil ทำงานผิดปกติ · insulin ช่วยฟื้น collagen synthesis |\n| Hypoxia/ischemia, smoking | fibroblast และ neutrophil ต้องการ O₂ |\n| Radiation | endarteritis, fibroblast ผิดปกติ → impaired healing ถาวร |\n| Malnutrition, infection, chemotherapy, obesity, อายุมาก | — |\n\n- **Delayed healing** (หายช้าแต่ถึงความแข็งแรงปกติได้เมื่อแก้สาเหตุ) ต่างจาก **impaired healing** (ไม่ถึงความแข็งแรงปกติ: diabetes, steroid ระยะยาว, radiation)\n- **Contamination** = มีเชื้อไม่เพิ่มจำนวน · **colonization** = เพิ่มจำนวนแต่ไม่มี host response · **infection** = มี host response (cellulitis, discharge, healing ช้า, granulation ผิดปกติ) — เกณฑ์คลาสสิกคือมากกว่า 10⁵ organisms/g tissue · **biofilm** ทำให้แผลเรื้อรัง\n\n### Chronic wounds\n| ชนิด | ลักษณะ | หลักการรักษา |\n|---|---|---|\n| **Arterial (ischemic)** | ปวดมาก, ปลายเท้า/ระหว่างนิ้ว, ขอบเรียบ ฐานซีด, ชีพจรลด, ABI ต่ำ | **revascularization** + wound care — ไม่ revascularize มักไม่หาย |\n| **Venous stasis** | **gaiter area (เหนือ medial malleolus)**, ไม่ค่อยปวด, granulation ดีแต่ไม่ epithelialize, **lipodermatosclerosis**, hemosiderin, fibrin cuff | **compression** (multilayer ราว 30–40 mmHg หลังตัด arterial disease ด้วย ABI) + ยกขา · แก้ superficial reflux (EVRA: early endovenous ablation หายเร็วขึ้น; ESCHAR: ลดการกลับเป็นซ้ำ) |\n| **Diabetic foot** | **neuropathy 60–70%**, ischemia 15–20%, ทั้งสอง 15–20% · ใต้ metatarsal head, Charcot | **offloading** (total contact cast/รองเท้าพิเศษ), **debride กว้าง**, คุมน้ำตาล, รักษา osteomyelitis (probe-to-bone, MRI), revascularize ถ้าขาดเลือด · topical **PDGF (becaplermin)** มีบทบาทจำกัด |\n| **Pressure** | เหนือปุ่มกระดูก (sacrum, ischium, trochanter, heel) จาก pressure + shear + moisture | ลดแรงกด (พลิกตัว, ที่นอนพิเศษ), debridement, โภชนาการ, ควบคุมความชื้น/อุจจาระ · stage III–IV ที่สะอาด → flap |\n\nPressure ulcer stages (Schwartz): **I** ผิวแดงไม่ซีดเมื่อกด (ผิวยังอยู่) · **II** partial thickness · **III** full thickness ไม่ถึง fascia · **IV** ถึงกล้ามเนื้อ/กระดูก (NPIAP เพิ่ม unstageable และ deep tissue injury)\n\n### Marjolin ulcer\n- **Squamous cell carcinoma** (พบ BCC ได้) ที่เกิดใน **แผลเรื้อรัง/แผลเป็นจาก burn**, sinus ของ osteomyelitis, แผลกดทับ — มักใช้เวลาหลายสิบปี\n- สงสัยเมื่อแผลเรื้อรังเปลี่ยนลักษณะ **ขอบนูนม้วนพลิก (rolled/everted edges)**, โตเร็ว, เลือดออกง่าย, กลิ่นเหม็น → **biopsy ที่ขอบแผล (หลายจุด)**\n- ก้าวร้าวกว่า SCC ทั่วไป · รักษาด้วย wide local excision ± lymph node evaluation; ส่วนลุกลามอาจต้องตัดอวัยวะ\n\n### Hypertrophic scar vs keloid\n| | **Keloid** | **Hypertrophic scar** |\n|---|---|---|\n| ขอบเขต | **ลามเกินขอบแผลเดิม** | อยู่ในขอบแผลเดิม |\n| เริ่มเกิด | 3 เดือนถึงหลายปีหลังบาดเจ็บ | **4–6 สัปดาห์** หลังบาดเจ็บ |\n| ยุบเอง | **ไม่** | บ่อย |\n| Contracture | น้อย | **บ่อย** (ข้าม joint) |\n| ตำแหน่ง | **ติ่งหู**, deltoid, presternal, หลังส่วนบน · แทบไม่เกิดที่เปลือกตา ฝ่ามือ ฝ่าเท้า | ที่ใดก็ได้ โดยเฉพาะ burn และบริเวณตึง |\n| พันธุกรรม/เชื้อชาติ | autosomal dominant (incomplete penetrance), ผิวเข้ม เอเชีย | ไม่มี |\n| Histology | collagen หนาเรียงสะเปะสะปะ, แทบไม่มี myofibroblast · fibroblast สร้าง collagen **20 เท่าของปกติ** | collagen เป็นคลื่น มี myofibroblast |\n\nการรักษา:\n- **Silicone sheet/gel** 24 ชม./วัน ราว 3 เดือน (ดีในเด็ก ไม่เจ็บ)\n- **Pressure garment** 24–30 mmHg ใส่ 23–24 ชม./วัน นานถึง 1 ปีขึ้นไป (HTS หลัง burn) · แผลเป็นอายุเกิน 6–12 เดือนตอบสนองไม่ดี\n- **Intralesional triamcinolone** ทุก 2–3 สัปดาห์ = **first-line ของ keloid**, second-line ของ HTS · ภาวะแทรกซ้อน: ผิวฝ่อ, สีจาง, telangiectasia\n- **ตัดออกอย่างเดียว keloid กลับเป็นซ้ำ 45–100%** → ต้องตัดร่วมกับ steroid injection, silicone, pressure หรือ **radiation หลังผ่าตัด** (สำหรับผู้ใหญ่ที่ดื้อต่อวิธีอื่น) · อื่น ๆ: 5-FU, bleomycin, imiquimod, retinoids, laser\n- HTS ที่มี contracture ข้าม joint → release + Z-plasty/skin graft/flap\n",
+   "pearls": [
+    "Macrophage จำเป็นที่สุด · neutrophil ไม่จำเป็นถ้าไม่ติดเชื้อ",
+    "Collagen type III → type I · แผลหายแล้วแข็งแรงเพียง 75–80%",
+    "Prolyl/lysyl hydroxylase ต้องการ vitamin C · lysyl oxidase ต้องการ copper",
+    "Steroid กด inflammation → vitamin A ช่วย",
+    "Venous ulcer: medial malleolus + lipodermatosclerosis → compression · diabetic: offload + debride",
+    "Marjolin: SCC ในแผลเรื้อรัง/burn scar → biopsy ขอบแผล",
+    "Keloid: ลามเกินขอบ ไม่ยุบ → intralesional steroid first-line · ตัดอย่างเดียวเป็นซ้ำ 45–100%"
+   ],
+   "items": [
+    {
+     "id": "RES-04-3-1",
+     "kind": "mcq",
+     "topic": "Reversing steroid-impaired healing",
+     "stem": "A 61-year-old man taking prednisone 30 mg daily for rheumatoid arthritis requires an emergency laparotomy for a perforated sigmoid colon. The steroid cannot be stopped. The team wants to minimize the adverse effect of corticosteroids on his abdominal wound healing. Which supplement best counteracts the inhibitory effect of steroids on the inflammatory phase of wound healing?",
+     "choices": [
+      "Vitamin A",
+      "Vitamin C",
+      "Zinc sulfate",
+      "Vitamin E",
+      "Arginine"
+     ],
+     "answer": 0,
+     "explain": "Steroid กด **inflammatory phase** (macrophage migration, angiogenesis, fibroblast proliferation, การหลั่ง lysosomal enzyme) Schwartz ระบุว่าการหายช้าของแผลจาก steroid **ย้อนกลับได้บางส่วนด้วย vitamin A** ซึ่งกระตุ้น inflammatory response และ collagen synthesis ของแผลที่ได้ steroid (ไม่แก้ผลต่อ wound contraction และการติดเชื้อ)\n- **Vitamin C** เป็น cofactor ของ prolyl/lysyl hydroxylase ใช้แก้ scurvy ไม่ได้ต้านผลของ steroid\n- **Zinc** ช่วยเฉพาะผู้ที่ขาด zinc\n- **Vitamin E** ไม่มีหลักฐานและอาจรบกวน healing\n- **Arginine** มีผลต่อ collagen deposition ในการศึกษา แต่ไม่ใช่ยาต้านผลของ steroid ที่ใช้มาตรฐาน",
+     "pearl": "Steroid กด inflammatory phase → แก้ด้วย vitamin A",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "RES-04-3-2",
+     "kind": "mcq",
+     "topic": "Keloid — first-line management",
+     "stem": "A 22-year-old Thai woman has a firm, itchy, 2.5-cm nodule on her earlobe that appeared 8 months after ear piercing and has grown beyond the original puncture site. It has not regressed. She asks for treatment. What is the most appropriate initial therapy?",
+     "choices": [
+      "Serial intralesional triamcinolone injections",
+      "Simple surgical excision with primary closure alone",
+      "Radiation therapy alone",
+      "Observation, because it will regress spontaneously",
+      "Pressure garment therapy alone for 3 months"
+     ],
+     "answer": 0,
+     "explain": "Lesion **ลามเกินขอบแผลเดิม** ที่ติ่งหู เกิดหลายเดือนหลังบาดเจ็บ และไม่ยุบ = **keloid** · Schwartz: **intralesional corticosteroid** เป็น **first-line ของ keloid** (ฉีดซ้ำทุก 2–3 สัปดาห์) ลด fibroblast proliferation, collagen synthesis และ TGF-β · ถ้าต้องผ่าตัดให้ใช้ร่วมกับ steroid/pressure earring/radiation\n- **ตัดออกอย่างเดียว** กลับเป็นซ้ำ 45–100% และมักใหญ่กว่าเดิม\n- **Radiation เดี่ยว** ผลไม่แน่นอน (recurrence 10–100%) ใช้เป็น adjuvant หลังผ่าตัดในผู้ใหญ่ที่ดื้อต่อวิธีอื่น\n- **Observation** — keloid แทบไม่ยุบเอง (ต่างจาก HTS)\n- **Pressure อย่างเดียว** ใช้หลัก ๆ กับ HTS หลัง burn ที่ติ่งหูใช้ pressure earring เป็นส่วนเสริมหลังผ่าตัด",
+     "pearl": "Keloid: ลามเกินขอบแผล ไม่ยุบ → intralesional steroid first-line; ตัดอย่างเดียวเป็นซ้ำ 45–100%",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "RES-04-3-3",
+     "kind": "mcq",
+     "topic": "Venous stasis ulcer — compression",
+     "stem": "A 63-year-old woman has a 4-cm shallow ulcer above the medial malleolus for 5 months. It is mildly painful, with a moist granulating base, surrounding brown pigmentation and indurated skin. Dorsalis pedis and posterior tibial pulses are palpable; ankle–brachial index is 1.0. Duplex shows great saphenous vein reflux. Wound culture grows mixed skin flora without cellulitis. What is the most appropriate primary treatment?",
+     "choices": [
+      "Multilayer compression therapy with leg elevation",
+      "Six-week course of oral antibiotics",
+      "Split-thickness skin grafting without compression",
+      "Angioplasty of the superficial femoral artery",
+      "Topical becaplermin (PDGF) as sole therapy"
+     ],
+     "answer": 0,
+     "explain": "Ulcer ที่ **gaiter area เหนือ medial malleolus** + **lipodermatosclerosis/hemosiderin** + ABI ปกติ + superficial reflux = **venous stasis ulcer** หลักการรักษาคือ **compression** (multilayer ราว 30–40 mmHg หลังตัด arterial insufficiency ด้วย ABI) ร่วมกับยกขา และพิจารณา **endovenous ablation ของ GSV เร็ว** (EVRA: หายเร็วขึ้น; ESCHAR: ลดการกลับเป็นซ้ำ)\n- **Antibiotic 6 สัปดาห์** ไม่มีข้อบ่งชี้ — เป็นเพียง colonization ไม่มี host response\n- **STSG โดยไม่ compression** graft มักล้มเหลวเพราะ venous hypertension ยังอยู่\n- **Angioplasty** — ABI 1.0 ไม่มี arterial disease\n- **Becaplermin** มีหลักฐานใน diabetic neuropathic ulcer ไม่ใช่การรักษาหลักของ venous ulcer",
+     "pearl": "Venous ulcer: medial malleolus + lipodermatosclerosis → compression (ตรวจ ABI ก่อน) ± ablate reflux",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "RES-04-3-4",
+     "kind": "mcq",
+     "topic": "Marjolin ulcer",
+     "stem": "A 58-year-old farmer has an unstable scar on his posterior knee from a kerosene burn at age 12. For 40 years it has intermittently ulcerated. Over the past 4 months the ulcer has enlarged to 5 cm, bleeds easily and has raised, rolled, everted edges with foul discharge. A firm popliteal node is palpable. What is the most appropriate next step?",
+     "choices": [
+      "Incisional biopsies from the ulcer edge",
+      "Split-thickness skin grafting of the ulcer",
+      "Negative-pressure wound therapy for 4 weeks",
+      "Swab culture and a 2-week course of antibiotics",
+      "Intralesional triamcinolone injection"
+     ],
+     "answer": 0,
+     "explain": "แผลเรื้อรังในแผลเป็นจาก burn ที่ **เปลี่ยนลักษณะ** (โตเร็ว เลือดออกง่าย **ขอบนูนม้วนพลิก**) ต้องสงสัย **Marjolin ulcer** (ส่วนใหญ่เป็น **squamous cell carcinoma**) Schwartz: ต้อง **biopsy ที่ขอบแผล** เพื่อยืนยัน ก่อนวางแผน wide local excision และประเมินต่อมน้ำเหลือง (มี popliteal node โต) — Marjolin มักก้าวร้าวกว่า SCC ทั่วไป\n- **STSG** ปิดทับมะเร็งโดยไม่วินิจฉัย\n- **NPWT** ห้ามใช้บนแผลที่สงสัยมะเร็ง\n- **Culture + antibiotic** ทำให้การวินิจฉัยล่าช้า\n- **Triamcinolone** ใช้รักษา keloid/HTS ไม่ใช่ภาพนี้",
+     "pearl": "แผลเรื้อรังใน burn scar + ขอบม้วนพลิก = Marjolin (SCC) → biopsy ขอบแผล",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-04-4",
+   "title": "Reconstructive ladder, skin grafts และ flaps",
+   "summary": "จะเลือกวิธีปิดแผลตั้งแต่ graft ถึง free flap อย่างไร และจะเฝ้าระวังและกู้ flap ที่มีปัญหาได้อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 45 — Reconstructive strategies and methods, skin grafts, flaps, lower extremity and trunk reconstruction",
+   "md": "### Reconstructive ladder และ elevator\nลำดับจากง่ายไปซับซ้อน (ladder):\n1. **Healing by secondary intention** (± NPWT)\n2. **Primary closure** · **delayed primary closure (tertiary intention)** — แผลปนเปื้อน ล้าง/debride สังเกต 4–5 วันแล้วเย็บ\n3. **Split-thickness skin graft**\n4. **Full-thickness skin graft**\n5. **Tissue expansion**\n6. **Local flap** (random: advancement, rotation, transposition — rhomboid, Z-plasty)\n7. **Regional/pedicled flap** (axial, muscle, fasciocutaneous, perforator)\n8. **Free tissue transfer** (microvascular)\n\n**Reconstructive elevator** (Gottlieb–Krieger): ไม่จำเป็นต้องไต่ทีละขั้น — เลือก **ขั้นที่ให้ผลดีที่สุดต่อรูปร่างและการทำงาน** โดยตรง เช่น open tibia distal third ที่กระดูกโผล่ → ข้ามไป free flap เลย\n\n> หลักเลือก: แผลต้องการอะไร (ปิดผิว, ความหนา, คลุมกระดูก/hardware/หลอดเลือด, เติมช่องว่าง, ฟังก์ชัน) · **wound bed** ดีพอรับ graft หรือไม่ · donor morbidity · สภาพผู้ป่วย\n\n### Skin grafts: STSG vs FTSG\n| | **STSG** | **FTSG** |\n|---|---|---|\n| ส่วนประกอบ | epidermis + dermis บางส่วน | epidermis + **dermis ทั้งหมด** |\n| **Primary contraction** (หดทันทีหลังตัด) | น้อย | **มากที่สุด** (elastin มาก) |\n| **Secondary contraction** (หดระหว่างหาย) | **มาก** (ยิ่งบางยิ่งหดมาก) | **น้อยที่สุด** |\n| Take | **ง่ายกว่า** (metabolic demand ต่ำ) — ติดบน bed ที่ไม่สมบูรณ์ได้ดีกว่า | ต้องการ bed สะอาด เลือดดี ไม่เคยฉายแสง |\n| ความทนทาน/สีผิว | ด้อยกว่า, mesh เห็นลาย | **ทนสุด สวยสุด** |\n| Donor | หายเองราว 2 สัปดาห์ (reharvest ได้) | ต้องเย็บปิด (postauricular, supraclavicular, groin, inner arm) |\n| ใช้เมื่อ | แผลใหญ่, burn, bed ที่ไม่แน่นอน | **หน้า มือ** ใกล้โครงสร้างเคลื่อนไหว (เปลือกตา มุมปาก) |\n\n- Mesh ratio 1:1.5–1:6 (ยิ่งขยายยิ่งหดและไม่สวย) · **graft ไม่ติดบน** กระดูกที่ไม่มี periosteum, เอ็นที่ไม่มี paratenon, cartilage ไม่มี perichondrium, hardware, แผลฉายแสง → ต้อง flap\n- **Graft take**: imbibition (24–48 ชม.) → inosculation (หลัง 48 ชม. — เสี่ยงที่สุด) → revascularization (เสร็จราววันที่ 4–5) · ศัตรู: **hematoma/seroma, shear, infection** (β-hemolytic Streptococcus ทำลาย graft แม้จำนวนน้อย) · bolster tie-over หรือ **NPWT** เพิ่ม take\n\n### Flaps: จำแนกตามเลือดที่มาเลี้ยง\n- **Random pattern**: อาศัย subdermal plexus ไม่มีหลอดเลือดชื่อเฉพาะ · length:width ราว **3:1** · advancement (V-Y), rotation, transposition (**rhomboid/Limberg** มุม 60°/120°, **Z-plasty** — มุม 60° เพิ่มความยาว central limb ราว 75% และเปลี่ยนทิศ tension)\n- **Axial pattern**: มีหลอดเลือดชื่อเฉพาะวิ่งตามแกน flap (groin flap — superficial circumflex iliac, deltopectoral)\n- **Muscle/musculocutaneous**: Mathes–Nahai\n\n| Type | Vascular supply | ตัวอย่าง |\n|---|---|---|\n| I | pedicle เดียว | **gastrocnemius**, TFL |\n| II | dominant + minor (อยู่ได้ด้วย minor ไม่ได้) | **gracilis**, soleus |\n| III | dominant สองเส้น | **rectus abdominis**, gluteus maximus |\n| IV | segmental | sartorius |\n| V | dominant + secondary segmental (อยู่ได้ด้วย segmental) | **latissimus dorsi, pectoralis major** |\n\n- **Fasciocutaneous** (Nahai–Mathes A/B/C): A direct cutaneous (temporoparietal fascia) · **B septocutaneous (radial forearm)** · C musculocutaneous perforator (TRAM)\n- **Perforator flaps** (ALT, DIEP): เก็บกล้ามเนื้อไว้ donor morbidity น้อย · **propeller flap** · angiosome concept และ **choke vessels** (delay phenomenon)\n- **Free flap**: microvascular anastomosis — ALT, radial forearm, gracilis, latissimus, fibula (กระดูก)\n\n### Lower extremity และ pressure ulcer reconstruction\n| ตำแหน่งแผล open tibia | ทางเลือกหลัก |\n|---|---|\n| **Proximal third** | **gastrocnemius (medial head)** pedicled |\n| **Middle third** | **soleus** (± hemisoleus) |\n| **Distal third/ankle** | **free flap** (ALT, gracilis, latissimus) · ทางเลือก pedicled: **reverse sural artery flap**, propeller |\n\n- **Gustilo–Anderson**: I–II soft tissue เสียหายน้อย · **IIIA** soft tissue เสียหายมากแต่ปิดได้ · **IIIB** soft tissue หายต้องใช้ flap · **IIIC** มี vascular injury ต้องซ่อม\n- ลำดับ: antibiotic เร็ว (ภายใน 1 ชม.) → **debride ให้ครบ** → stabilize fracture → ซ่อมหลอดเลือด → **ปิด soft tissue เร็ว** (Godina: free flap ภายใน 72 ชม. ภาวะแทรกซ้อนน้อยที่สุด; BOAST แนะนำ definitive cover ภายใน 72 ชม.) · **NPWT ใช้ระหว่างรอ** ไม่ใช่การรักษาสุดท้าย · bone loss: ปิด soft tissue ก่อน ใส่ antibiotic spacer/beads แล้วค่อย reconstruct กระดูก\n- **Pressure ulcer flaps** (stage III–IV, หลัง debride, รักษา osteomyelitis, คุม spasm/contracture/ความชื้น/โภชนาการ): **sacral → gluteus maximus myocutaneous/fasciocutaneous rotation หรือ V-Y advancement** · **ischial → posterior thigh/hamstring V-Y, gracilis** · **trochanteric → TFL flap** · ออกแบบให้ทำซ้ำได้ (recurrence สูง)\n\n### Flap monitoring และการกู้ flap ที่ล้มเหลว\n| | **Arterial insufficiency** | **Venous congestion** |\n|---|---|---|\n| สี | ซีด ขาว | **ม่วงคล้ำ/น้ำเงิน** |\n| อุณหภูมิ/turgor | เย็น ยุบ | บวม ตึง |\n| Capillary refill | ช้าหรือไม่มี | **เร็วเกินไป** (น้อยกว่า 1–2 วินาที) |\n| Pinprick | ไม่มีเลือดหรือซึมช้า | **เลือดดำคล้ำออกเร็ว** |\n| Doppler | สัญญาณ arterial หาย | venous signal หาย/arterial เป็น \"thump\" |\n\n- Thrombosis ส่วนใหญ่เกิดใน **48–72 ชม.แรก** · **venous thrombosis พบบ่อยกว่า arterial** · ตรวจทุก 1 ชม.ในวันแรก\n- Flap มีปัญหา → **กลับห้องผ่าตัดทันที** (โอกาส salvage สูงสุดเมื่อ explore เร็ว) · ตรวจ pedicle kink/compression/hematoma, thrombectomy, revise anastomosis ± thrombolytic\n- คลายแผล/ถอดไหมที่รัด, ยกสูง, เอา hematoma ออกได้ข้างเตียง · **leech** สำหรับ venous congestion ที่ไม่มีทางแก้ด้วยการผ่าตัด (มี hirudin) → ต้องให้ **antibiotic ป้องกัน Aeromonas hydrophila** (เช่น ciprofloxacin หรือ TMP-SMX)\n- ปัจจัยเสี่ยง: smoking, radiation, hypotension/vasopressor ขนาดสูง, hypothermia, hypercoagulability, เทคนิค\n",
+   "pearls": [
+    "Ladder: secondary intention → primary → STSG → FTSG → expansion → local → regional → free flap · elevator = เลือกขั้นที่ดีที่สุดเลย",
+    "FTSG: primary contraction มาก secondary น้อย สวย/ทนสุด · STSG: take ง่าย หดมาก",
+    "Graft ไม่ติดบนกระดูกไม่มี periosteum, เอ็นไม่มี paratenon, hardware, แผลฉายแสง",
+    "Random flap 3:1 · Z-plasty 60° ยาวขึ้นราว 75%",
+    "Mathes–Nahai: I gastrocnemius, II gracilis, III rectus, IV sartorius, V latissimus/pectoralis",
+    "Tibia: proximal gastrocnemius, middle soleus, distal free flap",
+    "Flap congestion/ischemia → OR ทันที · leech ต้องให้ยาป้องกัน Aeromonas"
+   ],
+   "items": [
+    {
+     "id": "RES-04-4-1",
+     "kind": "mcq",
+     "topic": "Lower extremity coverage — middle third tibia",
+     "stem": "A 27-year-old man has a Gustilo IIIB open tibial shaft fracture from a motorcycle crash. After serial debridement and intramedullary nailing, there is a 5 × 6 cm defect over the middle third of the anterior tibia with exposed bone lacking periosteum. The wound bed is clean and the posterior tibial and anterior tibial arteries are intact. What is the most appropriate soft-tissue coverage?",
+     "choices": [
+      "Pedicled soleus muscle flap with split-thickness skin graft",
+      "Split-thickness skin graft directly onto the exposed bone",
+      "Medial gastrocnemius muscle flap",
+      "Continued negative-pressure wound therapy until healing",
+      "Healing by secondary intention with daily dressings"
+     ],
+     "answer": 0,
+     "explain": "Gustilo **IIIB** = soft tissue หายต้องใช้ flap · ตำแหน่ง **middle third ของ tibia** ทางเลือก pedicled มาตรฐานคือ **soleus** (Mathes–Nahai type II) คลุมแล้วลง STSG บนกล้ามเนื้อ · proximal third ใช้ gastrocnemius, distal third มักต้อง free flap\n- **STSG บนกระดูกที่ไม่มี periosteum** ไม่ติด เพราะไม่มี vascular bed\n- **Medial gastrocnemius** หมุนมาคลุม proximal third ได้ดีแต่มักไปไม่ถึง middle third อย่างเชื่อถือได้\n- **NPWT ต่อไปเรื่อย ๆ** เป็นเพียง bridge ทำให้เสี่ยง osteomyelitis/nail infection\n- **Secondary intention** บนกระดูกและ hardware ที่โผล่ ไม่เหมาะ",
+     "pearl": "Open tibia: proximal → gastrocnemius · middle → soleus · distal → free flap (หรือ reverse sural)",
+     "src": "Schwartz 11e Ch 45",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 45"
+     ]
+    },
+    {
+     "id": "RES-04-4-2",
+     "kind": "mcq",
+     "topic": "Free flap venous congestion",
+     "stem": "A 48-year-old woman underwent a free anterolateral thigh flap to an ankle defect with anastomoses to the anterior tibial artery and venae comitantes. Eight hours later the flap is purple, swollen and tense; capillary refill is under 1 second, and pinprick produces brisk dark blood. The arterial Doppler signal is present. What is the most appropriate next step?",
+     "choices": [
+      "Immediate return to the operating room to explore the venous anastomosis",
+      "Apply medicinal leeches and observe for 24 hours",
+      "Start a systemic heparin infusion and observe",
+      "Elevate the leg and reassess in the morning",
+      "Apply warm compresses and increase intravenous fluids"
+     ],
+     "answer": 0,
+     "explain": "Flap **ม่วงคล้ำ บวมตึง capillary refill เร็ว pinprick ได้เลือดดำออกเร็ว** แต่ arterial Doppler ยังมี = **venous congestion** ซึ่งส่วนใหญ่มาจาก venous thrombosis/kink/hematoma กดหลอดเลือด และพบบ่อยกว่า arterial thrombosis ช่วง 48–72 ชม.แรก โอกาส salvage สูงสุดเมื่อ **กลับห้องผ่าตัดทันที** เพื่อ explore pedicle, thrombectomy และ revise anastomosis\n- **Leech** ใช้เมื่อไม่มีทางแก้ด้วยการผ่าตัด (เช่น ไม่มี vein ให้ต่อ) และต้องให้ antibiotic ป้องกัน Aeromonas — ไม่ใช่ขั้นแรกในการแก้ anastomotic thrombosis\n- **Heparin แล้วเฝ้าดู** ทำให้เสียเวลาที่ flap ยังกู้ได้\n- **ยกขาแล้วรอเช้า** flap จะตายในไม่กี่ชั่วโมง\n- **Warm compress + IV fluid** ไม่แก้ venous outflow obstruction",
+     "pearl": "Free flap มีปัญหา (โดยเฉพาะ venous congestion) → กลับ OR ทันที",
+     "src": "Schwartz 11e Ch 45",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 45"
+     ]
+    },
+    {
+     "id": "RES-04-4-3",
+     "kind": "mcq",
+     "topic": "Full-thickness graft for lower eyelid",
+     "stem": "A 72-year-old man undergoes Mohs excision of a basal cell carcinoma of the right lower eyelid and infraorbital cheek, leaving a 2 × 1.5 cm defect of the lower eyelid skin with intact orbicularis muscle. Local tissue is insufficient for a flap without distortion. The surgeon wants to minimize the risk of ectropion from late contraction. Which coverage is best?",
+     "choices": [
+      "Full-thickness skin graft from the upper eyelid or postauricular skin",
+      "Thin split-thickness skin graft from the thigh",
+      "Meshed split-thickness skin graft at 1:1.5",
+      "Healing by secondary intention",
+      "Cadaveric allograft"
+     ],
+     "answer": 0,
+     "explain": "บริเวณใกล้โครงสร้างที่เคลื่อนไหวได้ (เปลือกตาล่าง) ต้องใช้ graft ที่มี **secondary contraction น้อยที่สุด** = **full-thickness skin graft** ซึ่งยังสวยที่สุดและสี/ผิวเข้ากับหน้าเมื่อใช้ donor จาก upper eyelid, postauricular หรือ supraclavicular (donor ต้องเย็บปิด) · wound bed (orbicularis) มีเลือดดีพอรับ FTSG\n- **Thin STSG** หดตัวมากระหว่างหาย → **ectropion**\n- **Meshed STSG** ยิ่งหดและเห็นลาย mesh บนหน้า\n- **Secondary intention** บนเปลือกตาล่าง contraction ดึงเปลือกตา → ectropion\n- **Allograft** เป็นเพียงการปิดชั่วคราวและถูก reject",
+     "pearl": "ใกล้เปลือกตา/มุมปาก/หน้า/มือ → FTSG (secondary contraction น้อยที่สุด)",
+     "src": "Schwartz 11e Ch 45",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 45"
+     ]
+    },
+    {
+     "id": "RES-04-4-4",
+     "kind": "mcq",
+     "topic": "Sacral pressure ulcer reconstruction",
+     "stem": "A 35-year-old man with T6 paraplegia has a 7 × 6 cm stage IV sacral pressure ulcer with exposed sacrum. After surgical debridement, bone biopsy shows no osteomyelitis, he is on a pressure-relieving air-fluidized bed, his albumin and nutrition have been optimized, and fecal contamination is controlled. Which reconstruction is most appropriate?",
+     "choices": [
+      "Gluteus maximus–based myocutaneous or fasciocutaneous rotation or V-Y advancement flap",
+      "Split-thickness skin graft over the sacrum",
+      "Tensor fascia lata flap",
+      "Free radial forearm flap",
+      "Primary closure under tension after undermining"
+     ],
+     "answer": 0,
+     "explain": "Stage IV sacral pressure ulcer ที่เตรียมพร้อมแล้ว (debride, ไม่มี osteomyelitis, ลดแรงกด, โภชนาการดี, คุมอุจจาระ) ใช้ **flap จาก gluteus maximus** (myocutaneous หรือ fasciocutaneous rotation/V-Y advancement) ซึ่งให้เนื้อเยื่อหนาคลุมกระดูก และออกแบบให้ทำซ้ำได้หากกลับเป็นซ้ำ (recurrence สูงในผู้ป่วยกลุ่มนี้)\n- **STSG บน sacrum** ไม่ทนแรงกด/shear และไม่ติดบนกระดูก\n- **TFL flap** ใช้กับ **trochanteric** ulcer\n- **Free radial forearm** บางเกินไป และ free flap ไม่จำเป็นเมื่อมี gluteal flap ในพื้นที่\n- **Primary closure ตึง** แผลแยกและกลับเป็นซ้ำ",
+     "pearl": "Pressure ulcer flaps: sacral → gluteal · ischial → hamstring/gracilis · trochanteric → TFL",
+     "src": "Schwartz 11e Ch 45",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 45"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-04-MEQ1",
+   "part": "MEQ",
+   "topic": "Major flame burn with inhalation injury — from resuscitation to excision",
+   "vignette": "ชายไทยอายุ 36 ปี น้ำหนัก 60 kg ถังแก๊ส LPG ในห้องครัวระเบิดเวลา 19:00 ติดอยู่ในห้อง 5 นาที ส่งจาก รพช. ถึง รพ.ศูนย์ 21:30 ได้ LR มาแล้ว 1,500 mL\nV/S: BP 108/70 mmHg, HR 128/min, RR 30/min, SpO₂ 97% (O₂ mask), เสียงแหบ, เสมหะมีเขม่า\nPE: deep partial- และ full-thickness burn ที่หน้า คอ ลำตัวด้านหน้าทั้งหมด แขนทั้งสองข้างรอบวง (circumferential) รวม 45% TBSA\nLab: COHb 18%, lactate 4.2 mmol/L",
+   "questions": [
+    {
+     "q": "1. จงบอกการจัดการ airway และคำนวณสารน้ำ (Parkland 4 mL/kg/%) สำหรับช่วงที่เหลือของ 8 ชม.แรก",
+     "a": "- **Intubate ทันที** (แหบ + เขม่า + burn ลึกที่หน้าคอ + burn ใหญ่) ด้วย ETT ขนาดใหญ่ ไม่ตัดท่อ, **100% O₂** (COHb 18%)\n- Parkland = 4 × 60 × 45 = **10,800 mL/24 ชม.** · ครึ่งแรก **5,400 mL** ภายใน 8 ชม.นับจาก 19:00 (ถึง 03:00) · ได้แล้ว 1,500 → เหลือ **3,900 mL ใน 5.5 ชม. ≈ 710 mL/ชม.**\n- Titrate ให้ UO 30–50 mL/ชม., MAP มากกว่า 60 · Foley, arterial line\n- คาดว่าต้องการสารน้ำมากกว่าสูตรเพราะ inhalation injury แต่ต้องระวัง fluid creep\n\nเกณฑ์ให้คะแนน: intubate + O₂ (2), คำนวณถูกและนับเวลาจากเวลาไหม้ (2), endpoints (1)"
+    },
+    {
+     "q": "2. ชั่วโมงที่ 6 แขนซ้ายชาและเย็น capillary refill ช้า ส่วน peak airway pressure เพิ่มจาก 28 เป็น 40 cmH₂O จะทำอย่างไร",
+     "a": "- **Escharotomy**: แขนซ้าย (และขวาถ้าเริ่มมีอาการ) แนว **medial และ lateral** ใน anatomic position ขยายถึงมือตามต้องการ (ไม่ทำ digital)\n- **ลำตัว**: escharotomy ตาม **anterior axillary line สองข้าง + subcostal/subclavicular** เพื่อให้ทรวงอกขยายได้\n- ใช้ electrocautery ข้างเตียง ตรวจ neurovascular ซ้ำ · ถ้ายังขาดเลือดหลัง escharotomy → fasciotomy\n- ตรวจ bladder pressure (ACS จาก fluid creep), ทบทวนอัตราสารน้ำ"
+    },
+    {
+     "q": "3. ชั่วโมงที่ 20 ได้สารน้ำไปแล้วราว 7 mL/kg/% UO 15 mL/ชม. bladder pressure 26 mmHg และ lactate ยังสูง จงอธิบายภาวะนี้และแนวทางแก้",
+     "a": "- **Over-resuscitation/fluid creep** → **abdominal compartment syndrome** (IAH grade III + oliguria)\n- แก้: หยุดเพิ่ม crystalloid ตาม UO อย่างเดียว, พิจารณา **colloid (5% albumin) rescue** หลัง 12–24 ชม., high-dose vitamin C (บางศูนย์), sedation/**paralysis**, ตรวจว่า torso escharotomy พอ, NG decompression\n- ถ้ายังมี end-organ dysfunction → **decompressive laparotomy** (พยากรณ์แย่ใน burn)\n- ตรวจหา cyanide ถ้า lactate ไม่ลดแม้ perfusion ดี → hydroxocobalamin · ตรวจ intraocular pressure (orbital compartment)"
+    },
+    {
+     "q": "4. วันที่ 3 ผู้ป่วยคงที่ วางแผนการผ่าตัด การปิดแผล และการดูแลด้าน metabolic อย่างไร",
+     "a": "- **Early excision and grafting** (ลด mortality, ติดเชื้อ, LOS) แบบ **serial** ตามความพร้อม: tangential excision จนถึง dermis ที่มีจุดเลือดออก, ลดเลือดออกด้วย epinephrine tumescence/tourniquet/fibrin sealant, เตรียมเลือด\n- ปิด: **meshed STSG** สำหรับลำตัว/แขน, **sheet graft** สำหรับหน้า คอ มือ, ส่วนที่ donor ไม่พอใช้ **allograft/xenograft** หรือ **Integra** (ลอก silastic ราว 2 สัปดาห์แล้วลง thin STSG); donor reharvest ได้เมื่อหายราว 2 สัปดาห์\n- Metabolic: **early enteral feeding** (Curreri: 25 × 60 + 40 × 45 = 3,300 kcal/วัน; protein ราว 2 g/kg), **propranolol** (ระวัง BP), **oxandrolone**, คุม glucose, ห้องอุ่น, **LMWH**, stress ulcer prophylaxis\n- ห้าม prophylactic systemic antibiotics, เฝ้าระวัง wound infection/pneumonia/CLABSI"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 8",
+    "American Burn Association practice guidelines for burn shock resuscitation (2008)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-04-OSCE1",
+   "topic": "Open tibial fracture soft-tissue reconstruction and free flap failure",
+   "station": "Mock oral 10 นาที · Lower extremity reconstruction และ free flap salvage",
+   "instruction": "**บทบาท**: คุณเป็น senior resident ที่หมุนเวียนใน plastic & reconstructive surgery ตอบคำถามผู้คุมสอบ\n\n**สถานการณ์**: ชายไทยอายุ 30 ปี รถจักรยานยนต์ล้ม มี open fracture ของ distal third tibia แผล 8 × 6 cm ที่ด้านหน้า-ใน กระดูกโผล่ ไม่มี periosteum ปนเปื้อนดินโคลน ชีพจร dorsalis pedis และ posterior tibial คลำได้ ไม่สูบบุหรี่\n\n**คำถามของผู้คุมสอบ (ทีละข้อ)**\n1. จัดประเภทแผลนี้อย่างไร และการรักษาเบื้องต้นใน 24 ชม.แรกคืออะไร\n2. ใช้ reconstructive ladder/elevator อธิบายทางเลือกการปิดแผลนี้ และคุณจะเลือกอะไร เมื่อไร\n3. หลังทำ free ALT flap ต่อกับ posterior tibial vessels จะเฝ้าระวัง flap อย่างไร\n4. ชั่วโมงที่ 10 flap ม่วงคล้ำ บวม pinprick ได้เลือดดำออกเร็ว จะทำอย่างไร\n5. ถ้าไม่สามารถแก้ venous outflow ได้ด้วยการผ่าตัด มีทางเลือกอะไรและต้องระวังอะไร\n6. ถ้า free flap ล้มเหลวทั้งหมด จะทำอย่างไรต่อ",
+   "answer": "1. **Gustilo IIIB** (soft tissue หายต้องใช้ flap คลุม ไม่มี vascular injury ที่ต้องซ่อม) · ให้ **IV antibiotic ภายใน 1 ชม.** (cefazolin ± gram-negative coverage เพราะปนเปื้อนดิน), tetanus, splint, ถ่ายรูปแผล ปิดด้วย saline dressing → **debridement ใน OR** ให้ครบ ล้างแผล, **external fixation/temporary stabilization**, **NPWT** เป็น bridge, ตรวจ compartment (2 คะแนน)\n2. Ladder: secondary intention/STSG ใช้ไม่ได้บนกระดูกไม่มี periosteum; local/pedicled flap ที่ distal third ทำได้จำกัด (reverse sural, propeller สำหรับแผลเล็ก); **elevator → free flap** (ALT, gracilis + STSG, latissimus) เป็นตัวเลือกหลักของ distal third · ทำ **definitive cover ภายใน 72 ชม.** (Godina/BOAST) ร่วมกับ definitive fixation และวางแผน bone reconstruction ภายหลังถ้ามี bone loss (2)\n3. ตรวจทุก 1 ชม. ใน 24–48 ชม.แรก: สี, อุณหภูมิ, turgor, capillary refill, pinprick bleeding, **handheld/implantable Doppler** · ห้องอุ่น, สารน้ำพอ, เลี่ยง vasopressor/hypotension, ไม่ให้มีอะไรกด pedicle, ยกขาพอประมาณ (1)\n4. **Venous congestion** → **กลับ OR ทันที**: ถอดไหม/เอา hematoma, ตรวจ pedicle kink/twist, thrombectomy, **revise venous anastomosis** (± vein graft, ต่อ vein ที่สอง), ± heparin/thrombolytic; โอกาสกู้สูงสุดเมื่อ explore เร็ว — venous thrombosis พบบ่อยกว่า arterial ใน 48–72 ชม.แรก (2)\n5. **Medicinal leeches** (hirudin) จนกว่า neovascularization จาก bed ทำงาน (มักหลายวัน) + **antibiotic ป้องกัน Aeromonas hydrophila** (ciprofloxacin หรือ TMP-SMX), ติดตาม Hb (อาจต้อง transfuse) · หรือ chemical leeching/heparin เฉพาะที่ (1)\n6. Debride flap ที่ตาย, NPWT ชั่วคราว, ประเมินหาสาเหตุ (hypercoagulability, เทคนิค, recipient vessel ใน zone of injury), **free flap ครั้งที่สอง** โดยเลือก recipient vessel นอก zone of injury หรือ pedicled alternative; ปรึกษาผู้ป่วยเรื่องทางเลือกรวมถึง amputation ถ้า salvage ไม่ได้ผล (2)\n\n**Critical fails**: STSG บนกระดูกเปลือย · ปล่อย NPWT เป็นการรักษาถาวร · รอจนเช้าเมื่อ flap congestion · ใช้ leech โดยไม่ให้ยาป้องกัน Aeromonas · ไม่ debride ให้ครบก่อนปิดแผล"
+  }
+ ]
+}

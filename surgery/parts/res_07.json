@@ -1,0 +1,472 @@
+{
+ "lec": "07",
+ "date": "Schwartz Ch 38",
+ "title": "Endocrine surgery",
+ "subtitle": "ไทรอยด์ พาราไทรอยด์ ต่อมหมวกไต และ MEN/PNET — คาบนี้ตอบว่าใครต้องผ่าตัด ผ่าแค่ไหน ต้องตรวจอะไรก่อนลงมีด และพลาดตรงไหนแล้วถึงตาย",
+ "objectives": [
+  "เรียนจบแล้วต้องกำหนดขอบเขต thyroidectomy และ neck dissection ตาม ATA 2015 และตัดสินใจเรื่อง RAI ตาม ATA risk ได้",
+  "เรียนจบแล้วต้องป้องกันและจัดการภาวะแทรกซ้อนของ thyroidectomy (RLN, LOS บน IONM, hypocalcemia, hematoma) ได้",
+  "เรียนจบแล้วต้องบอกข้อบ่งชี้ผ่าตัด PHPT ใช้ localization และ Miami criterion และเลือกการผ่าตัดใน secondary/tertiary HPT และ carcinoma ได้",
+  "เรียนจบแล้วต้อง workup adrenal incidentaloma เตรียม pheochromocytoma ใช้ AVS ใน Conn และผ่าตัด ACC ได้ถูกต้อง",
+  "เรียนจบแล้วต้องแยก MEN1/2A/2B เลือกเวลา prophylactic thyroidectomy ตาม RET codon และลำดับผ่าตัดได้",
+  "เรียนจบแล้วต้องวินิจฉัยและวางแผนผ่าตัด insulinoma, gastrinoma และ nonfunctional PNET ได้"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 38 Thyroid, Parathyroid, and Adrenal (และ Ch 33 PNET)",
+  "**American Thyroid Association** 2015 DTC guideline · ATA 2015 revised MTC guideline · INMSG loss-of-signal guideline (2018)",
+  "**International Workshop** on asymptomatic PHPT (2014; 2022 update) · **KDOQI** CKD-MBD",
+  "**AACE/AAES** adrenal incidentaloma · **ESE** incidentaloma guideline (2023) · **Endocrine Society** pheochromocytoma (2014) and primary aldosteronism (2016) · ESE/ENSAT ACC (2018)",
+  "**NCCN/ENETS** neuroendocrine tumor guidelines"
+ ],
+ "sections": [
+  {
+   "id": "res-07-1",
+   "title": "Thyroid cancer surgery: extent, ATA risk, RAI และ nerve monitoring",
+   "summary": "ผ่าตัดไทรอยด์แค่ไหนจึงพอตาม ATA 2015 ใครต้องได้ RAI และป้องกัน/จัดการภาวะแทรกซ้อนของ thyroidectomy อย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 38 — Thyroid nodule, differentiated/medullary thyroid cancer, complications",
+   "md": "### Bethesda และการตัดสินใจผ่าตัดก้อนไทรอยด์\n\n| Bethesda | ความหมาย | ความเสี่ยงมะเร็งโดยประมาณ | แนวทางทั่วไป |\n|---|---|---|---|\n| I | Nondiagnostic | — | FNA ซ้ำภายใต้ US |\n| II | Benign | ~0–3% | ติดตาม US |\n| III | AUS/FLUS | ~10–30% (Bethesda 2017) | FNA ซ้ำ, molecular testing หรือ lobectomy |\n| IV | Follicular neoplasm | **15–35%** (Schwartz) | **diagnostic lobectomy** ± molecular testing |\n| V | Suspicious for malignancy | **60–75%** | lobectomy หรือ total thyroidectomy |\n| VI | Malignant | 97–99% | ผ่าตัดตาม risk |\n\n> Follicular carcinoma แยกจาก adenoma ได้ด้วย **capsular/vascular invasion** บนพยาธิวิทยาของชิ้นเนื้อทั้งก้อนเท่านั้น FNA และ frozen section จึงบอกไม่ได้\n\n### ขอบเขตการผ่าตัด differentiated thyroid cancer (ATA 2015)\n\n| ลักษณะ | การผ่าตัดเริ่มต้น |\n|---|---|\n| PTC **<1 cm** ไม่มี ETE ไม่มี node (very low risk) | **active surveillance** (ข้อมูลญี่ปุ่น) หรือ **lobectomy** |\n| **1–4 cm** ไม่มี ETE, **cN0**, ไม่เคยฉายรังสีที่คอ, ไม่มีประวัติครอบครัว | **lobectomy หรือ total thyroidectomy** (เลือก total เพื่อให้ RAI/ติดตาม Tg ง่าย หรือตามความต้องการผู้ป่วย) |\n| **>4 cm**, **gross ETE**, **cN1**, **M1** | **total thyroidectomy** |\n| cN1a (central) | total + **therapeutic central neck dissection (level VI)** |\n| cN1b (lateral) | total + central + **modified radical/lateral neck dissection (II–V)** |\n| Prophylactic central ND | พิจารณาใน T3–T4 หรือ cN1b · ไม่ทำ routine ใน T1–T2 cN0 |\n\nSchwartz: การศึกษาภายหลังไม่พบความต่างของ survival ระหว่าง lobectomy กับ total เมื่อปรับ risk แล้ว จึงเกิดการเปลี่ยนแนวทางปี 2015\n\n### ATA risk of recurrence และ RAI\n\n| ATA risk | ลักษณะสำคัญ | Recurrence | RAI |\n|---|---|---|---|\n| **Low** | intrathyroidal, ตัดหมด, ไม่มี vascular invasion/aggressive histology, cN0 หรือ ≤5 micrometastatic nodes (<0.2 cm) | ~1–2% | **ไม่ routine** (ablation 30 mCi ถ้าพิจารณา) |\n| **Intermediate** | microscopic ETE, aggressive histology (tall cell, columnar), vascular invasion, cN1 หรือ >5 pN1 ทุกต่อม <3 cm | ปานกลาง | **พิจารณา** (favored เมื่อ microscopic ETE, node ใหญ่ >2–3 cm, lateral neck disease) |\n| **High** | **gross ETE**, ตัดไม่หมด, distant metastasis, Tg หลังผ่าตัดบ่งถึง metastasis, **pN1 ต่อมใด ≥3 cm**, FTC vascular invasion >4 foci | >50% | **แนะนำ** (adjuvant/therapy) |\n\nการเตรียม RAI: **thyroid hormone withdrawal** (TSH >30 mU/L, หยุด T4 ~6 สัปดาห์ ใช้ T3 แทนแล้วหยุด 2 สัปดาห์) หรือ **recombinant TSH** (คุณภาพชีวิตดีกว่า เท่ากันในการ ablation; ใน high-risk/metastasis ยังนิยม withdrawal) + **low-iodine diet** · ติดตามด้วย **thyroglobulin + anti-Tg antibody** และ neck US · TSH suppression ตาม risk\n\n### Nerve monitoring และภาวะแทรกซ้อน\n**RLN** เสี่ยงที่สุดใน 2–3 cm สุดท้ายก่อนเข้ากล่องเสียง (บริเวณ ligament of Berry) ระวัง **nonrecurrent RLN ด้านขวา** (สัมพันธ์กับ aberrant right subclavian artery) และ extralaryngeal branches · **external branch of superior laryngeal nerve** เสี่ยงเมื่อผูก superior pole vessels เป็นก้อน (เสียงสูงไม่ได้ เสียงล้า — สำคัญมากในนักร้อง)\n**Intraoperative nerve monitoring (IONM)**: ช่วยระบุและพยากรณ์การทำงานของเส้นประสาท แม้ Schwartz ระบุว่ายังไม่มีหลักฐานชัดว่าลด injury เมื่อผู้ผ่าตัดชำนาญ ประโยชน์สำคัญคือ **loss of signal (LOS)** หลังเสร็จข้างแรก → พิจารณา **staged thyroidectomy** (หยุดไม่ทำข้างที่สอง) เพื่อเลี่ยง **bilateral vocal cord palsy** ซึ่งต้องใส่ท่อ/เจาะคอ\n\n| ภาวะแทรกซ้อน | อัตรา (Schwartz) | การจัดการ |\n|---|---|---|\n| RLN injury ถาวร | **<1%** ในมือผู้ชำนาญ | ถ้าตัดขาดเห็นระหว่างผ่าตัด → ต่อ perineurium · ประเมิน laryngoscopy |\n| **Transient hypocalcemia** | สูงถึง **50%** | ตรวจ Ca/PTH หลังผ่าตัด, calcium ± calcitriol |\n| **Permanent hypoparathyroidism** | **<2%** | เสี่ยงขึ้นใน central/lateral ND, Graves, reoperation · autotransplant ต่อมที่ขาดเลือด |\n| **Neck hematoma** | น้อยแต่ถึงชีวิต | หายใจลำบาก → **เปิดแผลข้างเตียงทันที** แล้วเข้า OR |\n\n### Medullary และ anaplastic (สรุปสำหรับศัลยแพทย์)\n**MTC** (C cells, calcitonin/CEA): ทุกรายต้องตรวจ **germline RET** และ **plasma metanephrines** ก่อนผ่าตัด (ตัด pheo) → **total thyroidectomy + central neck dissection** · lateral ND เมื่อ node positive (บางกลุ่มทำ prophylactic เมื่อ calcitonin สูงมาก) · RAI ไม่ได้ผล · โรคลุกลาม: vandetanib, cabozantinib, selpercatinib (RET-selective)\n**Anaplastic**: อายุมาก ก้อนโตเร็ว ทุกรายเป็น stage IV · ตรวจ **BRAF V600E** เร็ว (dabrafenib + trametinib) · ผ่าตัดเฉพาะโรคที่ resectable · ดูแลทางเดินหายใจ\n",
+   "pearls": [
+    "PTC 1–4 cm cN0 ไม่มี ETE → lobectomy เพียงพอ (ATA 2015)",
+    "Total thyroidectomy: >4 cm, gross ETE, cN1, M1",
+    "ATA high risk: gross ETE, ตัดไม่หมด, M1, node ≥3 cm → RAI",
+    "IONM loss of signal หลังข้างแรก → หยุด/ทำ staged เพื่อเลี่ยง bilateral palsy",
+    "Transient hypocalcemia ถึง 50% · permanent hypopara <2% · RLN ถาวร <1%",
+    "Hematoma + stridor → เปิดแผลข้างเตียงก่อน แล้วค่อยเข้า OR",
+    "MTC ทุกราย: RET + plasma metanephrines ก่อนผ่าตัด"
+   ],
+   "items": [
+    {
+     "id": "RES-07-1-1",
+     "kind": "mcq",
+     "topic": "Extent of thyroidectomy for low-risk PTC",
+     "stem": "A 41-year-old woman has a 2.4-cm solitary right thyroid nodule; FNA is Bethesda VI (papillary carcinoma). Ultrasound shows no extrathyroidal extension and no suspicious central or lateral nodes; the contralateral lobe is normal. She has no radiation history or family history of thyroid cancer and prefers the smallest operation that is oncologically acceptable. Which operation is appropriate according to the 2015 ATA guideline?",
+     "choices": [
+      "Right thyroid lobectomy and isthmusectomy",
+      "Total thyroidectomy with bilateral prophylactic central neck dissection",
+      "Total thyroidectomy with right modified radical neck dissection",
+      "Active surveillance with ultrasound every 6 months",
+      "Radioactive iodine ablation without surgery"
+     ],
+     "answer": 0,
+     "explain": "ATA 2015 ระบุว่า DTC ขนาด **>1 cm ถึง <4 cm** ที่ไม่มี ETE และ **cN0** ทำได้ทั้ง **lobectomy** หรือ near-total/total thyroidectomy เพราะเมื่อปรับ risk แล้ว survival ไม่ต่างกัน lobectomy มีภาวะแทรกซ้อน (hypoparathyroidism, bilateral RLN) น้อยกว่า และหลายรายไม่ต้องกินฮอร์โมนทดแทน — เหมาะกับผู้ป่วยที่ต้องการผ่าตัดน้อยที่สุด (ต้องยอมรับว่าหากพยาธิวิทยาพบลักษณะเสี่ยงอาจต้อง completion thyroidectomy)\n- **Total + prophylactic central ND สองข้าง**: prophylactic CND พิจารณาใน T3–T4/cN1b ไม่ใช่ T2 cN0 และเพิ่ม hypoparathyroidism\n- **Modified radical ND**: ทำเมื่อพิสูจน์ lateral node metastasis (cN1b) เท่านั้น\n- **Active surveillance**: ใช้กับ papillary microcarcinoma <1 cm\n- **RAI โดยไม่ผ่าตัด**: RAI ต้องผ่าตัดเอาต่อมออกก่อน ไม่ใช่การรักษาหลัก",
+     "pearl": "DTC 1–4 cm, cN0, ไม่มี ETE → lobectomy ได้",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Haugen BR et al. 2015 American Thyroid Association management guidelines for adult patients with thyroid nodules and differentiated thyroid cancer"
+     ]
+    },
+    {
+     "id": "RES-07-1-2",
+     "kind": "mcq",
+     "topic": "Loss of signal on nerve monitoring",
+     "stem": "During a planned total thyroidectomy for a large symptomatic benign multinodular goiter, the left lobe is removed first. After the left resection, stimulation of the left vagus and left recurrent laryngeal nerve shows complete loss of signal despite a visually intact nerve and a verified functioning tube electrode. What is the most appropriate next step?",
+     "choices": [
+      "Stop the operation and stage the right lobectomy after laryngoscopic confirmation of left vocal cord recovery",
+      "Proceed immediately with right lobectomy because the left nerve looks intact",
+      "Perform an elective tracheostomy and then complete the right lobectomy",
+      "Resect and reanastomose the segment of left nerve that was dissected",
+      "Proceed with right lobectomy but avoid identifying the right recurrent laryngeal nerve"
+     ],
+     "answer": 0,
+     "explain": "**Loss of signal (LOS)** ที่ยืนยันแล้วว่าไม่ใช่ปัญหาอุปกรณ์ทำนาย **ipsilateral vocal cord palsy** ได้สูง แม้เส้นประสาทดูปกติ (มักเป็น traction/neuropraxia) ถ้าผ่าข้างที่สองต่อแล้วเกิด injury อีกข้าง ผู้ป่วยจะมี **bilateral vocal cord paralysis** อุดกั้นทางหายใจ แนวทาง INMSG จึงแนะนำ **staged thyroidectomy** สำหรับโรคไม่ร้ายแรง: หยุดผ่าตัด ตรวจ laryngoscopy และกลับมาทำข้างขวาเมื่อสายเสียงฟื้น\n- **ทำต่อเพราะดูปกติ**: การดูด้วยตาไม่ทำนายการทำงาน เสี่ยง bilateral palsy\n- **Tracheostomy แล้วทำต่อ**: เพิ่มความเสี่ยงโดยไม่จำเป็นในโรคไม่เร่งด่วน\n- **ตัดต่อเส้นประสาทที่ไม่ได้ขาด**: ทำลายเส้นประสาทที่อาจฟื้นเอง\n- **ไม่หา RLN ข้างขวา**: เพิ่มโอกาสบาดเจ็บ หลักการคือ identify และ preserve ทุกครั้ง",
+     "pearl": "LOS หลังข้างแรก (โรคไม่ร้าย) → staged thyroidectomy",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "International Neural Monitoring Study Group (INMSG) guideline on loss of signal (2018)"
+     ]
+    },
+    {
+     "id": "RES-07-1-3",
+     "kind": "mcq",
+     "topic": "Post-thyroidectomy neck hematoma",
+     "stem": "Four hours after total thyroidectomy, a 55-year-old woman develops rapidly increasing neck swelling, difficulty breathing, and inspiratory stridor. SpO2 is 90% on oxygen by mask and she is anxious but conscious. What is the most appropriate immediate action?",
+     "choices": [
+      "Open the skin and strap-muscle closure at the bedside to evacuate the hematoma",
+      "Obtain an urgent CT of the neck to confirm the hematoma",
+      "Give IV dexamethasone and nebulized epinephrine and observe",
+      "Check serum calcium and give IV calcium gluconate",
+      "Perform laryngoscopy to assess vocal cord mobility first"
+     ],
+     "answer": 0,
+     "explain": "**Neck hematoma** หลัง thyroidectomy กดทางเดินหายใจโดยตรงและทำให้ **venous/lymphatic congestion ของกล่องเสียงบวม** การใส่ท่อช่วยหายใจอาจยากมาก การช่วยชีวิตคือ **เปิดแผลข้างเตียงทันที (ตัดไหมผิวหนังและ strap muscles)** ระบายลิ่มเลือดเพื่อลดแรงกด แล้วจึงพาเข้าห้องผ่าตัดเพื่อหาจุดเลือดออกและ secure airway\n- **CT ก่อน**: เสียเวลาในภาวะคุกคามทางเดินหายใจ\n- **Steroid/epinephrine**: ไม่แก้สาเหตุซึ่งเป็นการกดจากเลือด\n- **Calcium**: hypocalcemia ทำให้ laryngospasm ได้แต่มักเกิด 24–72 ชม. และไม่ทำให้คอบวม\n- **Laryngoscopy ก่อน**: ช้าเกินและไม่แก้ปัญหา",
+     "pearl": "Hematoma + stridor = เปิดแผลข้างเตียง ไม่รอภาพ ไม่รอ OR",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38"
+     ]
+    },
+    {
+     "id": "RES-07-1-4",
+     "kind": "mcq",
+     "topic": "Preoperative workup of medullary thyroid cancer",
+     "stem": "A 34-year-old man has a 2-cm left thyroid nodule; FNA shows medullary thyroid carcinoma with calcitonin-positive staining. Serum calcitonin is 420 pg/mL and CEA 18 ng/mL. He reports episodic headaches and palpitations. Neck ultrasound shows no abnormal lymph nodes. Before thyroidectomy, which test is most essential?",
+     "choices": [
+      "Plasma free metanephrines",
+      "Radioactive iodine uptake scan",
+      "Serum thyroglobulin",
+      "Fine-needle aspiration of the contralateral lobe",
+      "Serum 25-hydroxyvitamin D"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย MTC ทุกรายอาจเป็น **MEN2** (ต้องตรวจ germline **RET**) และ **pheochromocytoma** ต้องถูกตัดออกก่อนผ่าตัดใด ๆ เพราะ pheo ที่ไม่ได้เตรียม α-blockade ทำให้เกิด hypertensive crisis/ตายบนโต๊ะผ่าตัด อาการปวดศีรษะใจสั่นยิ่งบ่งชี้ จึงต้องตรวจ **plasma free metanephrines** ถ้าเป็นบวก → ผ่าตัด adrenalectomy ก่อน thyroidectomy (หลังเตรียม α-blockade)\n- **RAI scan**: C cells ไม่จับไอโอดีน ไม่มีบทบาทใน MTC\n- **Thyroglobulin**: marker ของ DTC ไม่ใช่ MTC (ใช้ calcitonin/CEA)\n- **FNA ข้างตรงข้าม**: ทำ total thyroidectomy อยู่แล้ว ไม่เปลี่ยนแผน\n- **Vitamin D**: ไม่ใช่สิ่งจำเป็นเร่งด่วนเทียบกับการตัด pheo (แม้ควรตรวจ Ca เพื่อหา HPT ร่วม)",
+     "pearl": "MTC ก่อนผ่าตัด: ตัด pheo ด้วย metanephrines + ตรวจ RET + Ca",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Wells SA et al. Revised American Thyroid Association guidelines for the management of medullary thyroid carcinoma (2015)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-07-2",
+   "title": "Primary, secondary และ tertiary hyperparathyroidism",
+   "summary": "ใครควรผ่าตัด parathyroid ใช้ localization และ IOPTH (Miami) อย่างไร และผ่าตัดแบบไหนใน secondary/tertiary HPT และ carcinoma",
+   "minutes": 16,
+   "source": "Schwartz 11e Ch 38 — Parathyroid: PHPT, secondary and tertiary HPT",
+   "md": "### Primary HPT: วินิจฉัยด้วยชีวเคมี ไม่ใช่ภาพ\nPHPT = **Ca สูง + PTH สูงหรือไม่ถูกกด** (normocalcemic PHPT: Ca ปกติแต่ PTH สูงหลังตัดสาเหตุ secondary เช่นขาด vitamin D, ไตเสื่อม) สาเหตุ: **single adenoma ~85%**, multigland hyperplasia ~10–15%, double adenoma ~2–5%, **carcinoma ~1%** ต้องแยก **familial hypocalciuric hypercalcemia (FHH)** ด้วย **calcium/creatinine clearance ratio <0.01** (CASR mutation, ไม่ต้องผ่าตัด)\nอาการคลาสสิก \"stones, bones, groans, moans\" · ปัจจุบันส่วนใหญ่ไม่มีอาการชัด แต่หลังผ่าตัดอาการไม่จำเพาะ (อ่อนเพลีย ปัสสาวะบ่อย) ดีขึ้น และ BMD เพิ่ม fracture risk ลด\n\n### ข้อบ่งชี้ผ่าตัดใน asymptomatic PHPT\nผู้ป่วย **มีอาการทุกรายควรผ่าตัด** · ไม่มีอาการ ผ่าตัดเมื่อเข้าเกณฑ์ใดเกณฑ์หนึ่ง (NIH 2014 ใน Schwartz; Fifth International Workshop 2022 ใกล้เคียงกัน):\n\n| เกณฑ์ | ค่า |\n|---|---|\n| Serum calcium | **>1 mg/dL เหนือ upper limit of normal** |\n| ไต | **GFR/CrCl <60 mL/min** · 24-h urine Ca >400 mg/d (2022: >250 หญิง/>300 ชาย mg/d) + stone risk · **nephrolithiasis/nephrocalcinosis** บนภาพ |\n| กระดูก | **T-score ≤ −2.5** ที่ lumbar spine, total hip, femoral neck หรือ distal radius · vertebral fracture บนภาพ |\n| อายุ | **<50 ปี** |\n| อื่น ๆ | ไม่ต้องการ/ไม่สามารถติดตามระยะยาว |\n\n> แม้ไม่เข้าเกณฑ์ ผ่าตัดในมือผู้ชำนาญปลอดภัย (cure >95%) จึงเป็นทางเลือกที่สมเหตุสมผลในผู้ป่วยที่ fit\n\n### Localization และ operative strategy\n**Localization ใช้วางแผนผ่าตัด ไม่ใช่ยืนยันการวินิจฉัย** — ภาพลบไม่ใช่ข้อห้ามผ่าตัด\n\n| วิธี | จุดเด่น |\n|---|---|\n| **Neck ultrasound** | ราคาถูก ดู thyroid ร่วม operator-dependent |\n| **Tc-99m sestamibi (SPECT/CT)** | sensitivity >80% สำหรับ adenoma (Schwartz) · ไม่ดีใน multigland |\n| **4D-CT** | sensitivity สูงกว่า (~88% ในบางการศึกษา) ใช้ใน reoperation/ภาพอื่นไม่ชัด · รังสีสูง |\n| Selective venous sampling | reoperation ที่ภาพทั้งหมดลบ |\n\n**Focused (minimally invasive) parathyroidectomy** เมื่อภาพสองชนิดตรงกันว่าเป็น single gland + **IOPTH** · **Bilateral neck exploration** เมื่อภาพไม่ชัด/ไม่ตรงกัน, สงสัย multigland, familial/MEN, lithium\n**IOPTH — Miami criterion**: PTH ลดลง **≥50% ที่ 10 นาที** หลังตัดต่อม เทียบกับค่า **สูงสุด** ระหว่าง pre-incision กับ pre-excision → ยุติการผ่าตัด · ไม่ลดตามเกณฑ์ → สำรวจต่อหาต่อมอื่น (double adenoma/hyperplasia) · IOPTH แม่นน้อยลงใน multigland disease\nตำแหน่ง ectopic: inferior glands (3rd pouch) อยู่ใน **thymus/anterior mediastinum** ได้ · superior glands (4th pouch) อยู่ **tracheoesophageal groove/retroesophageal** · intrathyroidal, carotid sheath, undescended\n\n### Secondary และ tertiary HPT\n**Secondary HPT** (CKD): phosphate retention + calcitriol ต่ำ → Ca ต่ำ → hyperplasia ทุกต่อม รักษาด้วย phosphate binder, vitamin D analog, **calcimimetic (cinacalcet/etelcalcetide)**\nผ่าตัดเมื่อล้มเหลวต่อยาเต็มที่ + (KDOQI ใน Schwartz) **PTH >800 pg/mL**, hypercalcemia, osteoporosis/pathologic fracture, อาการ (คัน ปวดกระดูก myopathy), severe vascular calcification หรือ **calciphylaxis**\n- ผ่าตัด: **subtotal parathyroidectomy (เหลือ ~50 mg ของต่อมที่ดูปกติที่สุด)** หรือ **total parathyroidectomy + autotransplantation** (forearm brachioradialis) + **bilateral cervical thymectomy** (15–20% มีต่อมใน thymus) + cryopreservation · total ไม่ autotransplant ไม่ควรทำในผู้รอปลูกถ่ายไต\n**Tertiary HPT**: ต่อมทำงานอิสระหลัง **kidney transplant** สำเร็จ → hypercalcemia · ผ่าตัดเมื่อ PTH สูงต่อเนื่อง **>1 ปีหลังปลูกถ่าย** ร่วมกับ hypercalcemia/hypophosphatemia, BMD ต่ำ, อาการ หรือไตใหม่เสื่อมจาก calcification · ส่วนใหญ่ทำ **subtotal parathyroidectomy** (limited excision เพิ่ม recurrence ได้ถึง 5 เท่า)\n\n### Parathyroid carcinoma และภาวะหลังผ่าตัด\nสงสัย carcinoma เมื่อ **Ca >14 mg/dL**, PTH >5 เท่าของปกติ, **คลำก้อนได้ที่คอ**, เสียงแหบ — ต่อมแข็งสีเทาขาว ติดเนื้อเยื่อรอบข้าง → **en bloc resection** รวม ipsilateral thyroid lobe และเนื้อเยื่อที่ติด **ห้ามเจาะ FNA/ห้ามแตกแคปซูล** (seeding) · frozen section ไม่น่าเชื่อถือ\nหลังผ่าตัด: **hungry bone syndrome** (ผู้ป่วยโรคกระดูกรุนแรง/secondary HPT) → Ca, PO4, Mg ต่ำนาน ต้องให้ calcium ปริมาณมาก + calcitriol · **Persistent HPT** = Ca สูงภายใน 6 เดือน (มักพลาดต่อม/multigland) · **Recurrent** = กลับสูงหลัง 6 เดือน → ยืนยันชีวเคมีใหม่ ทำ localization 2 ชนิดขึ้นไปก่อน re-exploration\n",
+   "pearls": [
+    "PHPT: single adenoma ~85% · แยก FHH ด้วย Ca/Cr clearance ratio <0.01",
+    "Asymptomatic: Ca >1 เหนือ ULN, GFR <60/stone, T-score ≤−2.5/fracture, อายุ <50 → ผ่าตัด",
+    "Localization ไม่ใช่การวินิจฉัย — ภาพลบไม่ห้ามผ่าตัด",
+    "Miami: PTH ลด ≥50% ที่ 10 นาที จากค่าสูงสุดก่อนตัด",
+    "Secondary HPT: subtotal หรือ total + autotransplant + cervical thymectomy",
+    "Tertiary: PTH สูง >1 ปีหลัง transplant → subtotal parathyroidectomy",
+    "Ca >14 + ก้อนคลำได้ = คิด carcinoma → en bloc กับ thyroid lobe ห้าม FNA"
+   ],
+   "items": [
+    {
+     "id": "RES-07-2-1",
+     "kind": "mcq",
+     "topic": "Indications for parathyroidectomy",
+     "stem": "A 63-year-old woman is found to have serum calcium 10.9 mg/dL (upper limit 10.2) and intact PTH 98 pg/mL on routine testing. She has no symptoms, eGFR 78 mL/min, 24-hour urine calcium 220 mg, and no stones on ultrasound. DXA shows a distal radius T-score of −2.7 with normal spine and hip values. Her vitamin D is replete. What is the most appropriate management?",
+     "choices": [
+      "Parathyroidectomy, because her bone density meets surgical criteria",
+      "Observation with annual calcium, because calcium is less than 1 mg/dL above normal",
+      "Long-term cinacalcet therapy",
+      "Bisphosphonate therapy and repeat DXA in 2 years",
+      "Repeat biochemistry in 1 year before any decision"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเป็น **asymptomatic PHPT** ที่เข้าเกณฑ์ผ่าตัดเพราะ **T-score ≤ −2.5 ที่ตำแหน่งใดตำแหน่งหนึ่งรวม distal radius** (cortical bone ซึ่ง PTH มีผลมากที่สุด) — เพียงเกณฑ์เดียวก็พอ การผ่าตัดเพิ่ม BMD และลดกระดูกหักในระยะยาว\n- **สังเกตเพราะ Ca ไม่ถึง 1 mg/dL**: เกณฑ์ calcium ไม่ใช่เกณฑ์เดียว ผู้ป่วยเข้าเกณฑ์กระดูกแล้ว\n- **Cinacalcet**: ลด calcium แต่ไม่เพิ่ม BMD ใช้ในผู้ที่ผ่าตัดไม่ได้\n- **Bisphosphonate**: ใช้ในผู้ที่ไม่ผ่าตัด ไม่แก้สาเหตุ\n- **รอ 1 ปี**: ไม่มีเหตุผลที่จะเลื่อนเมื่อเข้าเกณฑ์แล้ว",
+     "pearl": "Asymptomatic PHPT: เข้าเกณฑ์ใดเกณฑ์หนึ่ง (รวม T-score ≤−2.5 ที่ radius) = ผ่าตัด",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Bilezikian JP et al. Guidelines for the management of asymptomatic primary hyperparathyroidism: Fourth International Workshop (2014) and Fifth International Workshop (2022)"
+     ]
+    },
+    {
+     "id": "RES-07-2-2",
+     "kind": "mcq",
+     "topic": "Intraoperative PTH — Miami criterion",
+     "stem": "During focused parathyroidectomy for a sestamibi- and ultrasound-concordant right inferior adenoma, PTH values are: pre-incision 180 pg/mL, pre-excision (after manipulation) 240 pg/mL, and 10 minutes after excision 110 pg/mL. The patient is stable. What is the most appropriate next step?",
+     "choices": [
+      "Conclude the operation; the Miami criterion is satisfied",
+      "Explore the left side, because PTH did not fall 50% from the pre-incision value",
+      "Wait for a 20-minute value before deciding",
+      "Biopsy all remaining glands for frozen section",
+      "Perform a cervical thymectomy to exclude an ectopic gland"
+     ],
+     "answer": 0,
+     "explain": "**Miami criterion**: PTH ที่ **10 นาที** หลังตัดต่อม ลดลง **≥50% จากค่าสูงสุด** ระหว่าง pre-incision และ pre-excision — ค่าสูงสุดคือ 240 ลดลงเหลือ 110 = ลด **~54%** จึงถือว่าตัดต่อมที่ทำงานเกินออกครบ ยุติการผ่าตัดได้ (cure ~97–98% เมื่อภาพตรงกัน)\n- **สำรวจด้านซ้าย**: คำนวณผิดฐาน การใช้ค่าสูงสุด (pre-excision) เป็นหลักของ Miami\n- **รอค่า 20 นาที**: ใช้เมื่อค่า 10 นาทียังไม่ถึงเกณฑ์ ไม่จำเป็นในรายนี้\n- **Biopsy ทุกต่อม**: เพิ่มความเสี่ยง hypoparathyroidism โดยไม่จำเป็น\n- **Thymectomy**: ไม่มีข้อบ่งชี้เมื่อ IOPTH ผ่านเกณฑ์",
+     "pearl": "Miami: ≥50% drop ที่ 10 นาที จากค่าสูงสุด (pre-incision หรือ pre-excision)",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38"
+     ]
+    },
+    {
+     "id": "RES-07-2-3",
+     "kind": "mcq",
+     "topic": "Surgery for secondary HPT",
+     "stem": "A 47-year-old man on hemodialysis for 8 years has severe pruritus, bone pain, and painful violaceous necrotic skin lesions on both thighs; biopsy confirms calciphylaxis. PTH is 1,450 pg/mL despite maximal cinacalcet, phosphate binders and vitamin D analogues. He is not currently a transplant candidate. Which operation is most appropriate?",
+     "choices": [
+      "Subtotal parathyroidectomy or total parathyroidectomy with autotransplantation, plus bilateral cervical thymectomy",
+      "Focused excision of the single largest gland on sestamibi",
+      "Unilateral neck exploration with removal of both ipsilateral glands",
+      "Total thyroidectomy with parathyroid preservation",
+      "Continued medical therapy with an increased dose of calcitriol"
+     ],
+     "answer": 0,
+     "explain": "**Secondary HPT** เป็น **hyperplasia ทุกต่อม** การผ่าตัดต้องลดเนื้อต่อมทั้งหมด: **subtotal parathyroidectomy** (เหลือราว 50 mg ของต่อมที่ดีที่สุด) หรือ **total + autotransplant** ที่ forearm ร่วม **bilateral cervical thymectomy** (เพราะมีต่อมใน thymus 15–20%) และ cryopreserve เนื้อต่อม — ข้อบ่งชี้ชัดคือ PTH >800 ที่ดื้อยาร่วม **calciphylaxis** (Schwartz ระบุว่า total ไม่ autotransplant อาจพิจารณาใน calciphylaxis แต่ไม่ควรในผู้ที่จะปลูกไต)\n- **ตัดต่อมใหญ่สุดต่อมเดียว**: ไม่พอใน hyperplasia กลับเป็นซ้ำแน่นอน\n- **Unilateral exploration**: เหลือต่อม hyperplastic อีกสองต่อม\n- **Total thyroidectomy**: ไม่เกี่ยวกับปัญหา\n- **เพิ่ม calcitriol**: เพิ่ม Ca × PO4 product ทำ calciphylaxis แย่ลง",
+     "pearl": "Secondary HPT = 4-gland disease → subtotal/total+AT + cervical thymectomy",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "KDOQI clinical practice guidelines for bone metabolism and disease in CKD"
+     ]
+    },
+    {
+     "id": "RES-07-2-4",
+     "kind": "mcq",
+     "topic": "Parathyroid carcinoma",
+     "stem": "A 52-year-old man presents with polyuria, bone pain, and a hoarse voice. Serum calcium is 15.1 mg/dL and PTH 1,020 pg/mL (normal 15–65). A firm 3.5-cm mass is palpable at the lower pole of the left thyroid lobe, and ultrasound shows an irregular hypoechoic lesion inseparable from the thyroid. After medical correction of hypercalcemia, what is the most appropriate surgical approach?",
+     "choices": [
+      "En bloc resection of the mass with the ipsilateral thyroid lobe and any adherent tissue, avoiding capsular rupture",
+      "Preoperative ultrasound-guided FNA of the mass, then decide",
+      "Simple enucleation of the parathyroid mass with frozen section",
+      "Bilateral neck exploration with subtotal parathyroidectomy",
+      "Medical management with cinacalcet and denosumab only"
+     ],
+     "answer": 0,
+     "explain": "ลักษณะ **Ca >14 mg/dL, PTH สูงมาก (>5 เท่า), ก้อนคลำได้ และเสียงแหบ** ชวนนึกถึง **parathyroid carcinoma** โอกาสหายขาดขึ้นกับการผ่าตัดครั้งแรกที่เป็น **en bloc resection** รวม ipsilateral thyroid lobe และเนื้อเยื่อที่ติด (strap muscles, RLN ถ้าถูกบุก) ร่วมกับ central nodes ที่ผิดปกติ โดยไม่ทำให้แคปซูลแตก\n- **FNA ก่อนผ่าตัด**: เสี่ยง seeding ตาม tract และแยก adenoma/carcinoma ไม่ได้ทางเซลล์วิทยา\n- **Enucleation + frozen section**: frozen section ไม่น่าเชื่อถือ และ enucleation ทำให้แคปซูลแตก recurrence สูง\n- **Subtotal parathyroidectomy**: ใช้กับ hyperplasia ไม่ใช่มะเร็งข้างเดียว\n- **ยาอย่างเดียว**: ใช้ควบคุม Ca ในโรคที่ผ่าตัดไม่ได้/แพร่กระจาย",
+     "pearl": "Parathyroid carcinoma: en bloc + thyroid lobe, ห้าม FNA ห้ามแตกแคปซูล",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-07-3",
+   "title": "Adrenal surgery: incidentaloma, pheochromocytoma, Conn และ ACC",
+   "summary": "Workup adrenal incidentaloma อย่างเป็นระบบ เตรียม pheochromocytoma ให้ปลอดภัย ใช้ AVS ใน primary aldosteronism และผ่าตัด ACC ให้ถูกวิธี",
+   "minutes": 16,
+   "source": "Schwartz 11e Ch 38 — Adrenal: incidentaloma, pheochromocytoma, aldosteronoma, ACC",
+   "md": "### Adrenal incidentaloma: ถามสองคำถามเสมอ\nก้อนต่อมหมวกไตที่พบโดยบังเอิญ (CT พบ 0.4–4.4%) ส่วนใหญ่เป็น **nonfunctional cortical adenoma** การ workup ต้องตอบ (1) **ทำงานสร้างฮอร์โมนหรือไม่** (2) **เสี่ยงเป็นมะเร็งหรือไม่**\n\n| ฮอร์โมน | Screening test |\n|---|---|\n| Cortisol (mild autonomous cortisol secretion/subclinical Cushing ~8%) | **1-mg overnight dexamethasone suppression test** (cortisol ≤1.8 µg/dL = ปกติ; >5 µg/dL = autonomous) |\n| Catecholamine | **plasma free metanephrines** หรือ 24-h urine fractionated metanephrines — **ทุกราย** แม้ความดันปกติ |\n| Aldosterone | **aldosterone/renin ratio** + K เฉพาะผู้ที่มี **hypertension หรือ hypokalemia** |\n| Sex steroid | DHEA-S/androgens เมื่อมี virilization หรือสงสัย ACC |\n\n**Imaging phenotype**: adenoma = homogeneous ขอบเรียบ **≤10 HU บน unenhanced CT** (lipid-rich) หรือ washout เร็ว · ACC = ใหญ่, heterogeneous, ขอบไม่เรียบ, **>10–20 HU**, มี necrosis/calcification/invasion · pheo = ไม่ใช่ lipid-rich, MRI T2 สว่างมาก · ขนาดสัมพันธ์กับมะเร็ง: carcinoma ~**2% ใน <4 cm**, ~6% ใน 4–6 cm, ~**25% ใน >6 cm** (Schwartz)\n**ผ่าตัดเมื่อ**: functioning tumor (รวม MACS ที่มีโรคร่วมแย่ลง เช่น HT, DM, osteoporosis), **imaging สงสัยมะเร็ง**, หรือขนาด **≥4 cm** ที่ไม่ใช่ benign ชัด (AACE/AAES; ESE 2023 เน้น HU มากกว่าขนาด) · **FNA ไม่แยก adenoma จาก carcinoma** — ใช้เฉพาะสงสัย metastasis ในผู้มีประวัติมะเร็ง และ **ต้องตัด pheo ก่อนเจาะทุกครั้ง**\n\n### Pheochromocytoma: เตรียมผู้ป่วยให้ปลอดภัย\nวินิจฉัยด้วย metanephrines → แล้วจึงหาตำแหน่งด้วย CT/MRI (± **Ga-68 DOTATATE PET** หรือ MIBG เมื่อสงสัย extra-adrenal/multifocal/metastatic) · ตรวจ germline ทุกราย (~30–40% hereditary: RET, VHL, NF1, SDHx)\n**Preoperative blockade** (หลักการเรียงลำดับ):\n1. **α-blockade ก่อน** 1–3 สัปดาห์: **phenoxybenzamine** (non-selective, irreversible เริ่ม 10 mg bid) หรือ selective α1 (**doxazosin**, prazosin, terazosin — ผลข้างเคียงน้อยกว่า) · หรือ **calcium channel blocker** (nicardipine) เป็นทางเลือก/เสริม\n2. **Volume/salt loading** (high-sodium diet + น้ำ) เพราะผู้ป่วย volume contracted\n3. **β-blocker หลัง α-blockade เพียงพอแล้วเท่านั้น** (เริ่ม ~3–4 วันก่อนผ่าตัดถ้ายังใจสั่น/tachyarrhythmia) — ให้ β ก่อนทำให้ **unopposed α** → hypertensive crisis, pulmonary edema\n4. **Metyrosine** เมื่อคาดว่าจะต้องจับก้อนมากหรือ blockade ไม่พอ\nระหว่างผ่าตัด: arterial line, **ผูก adrenal vein ก่อนจับก้อน** ให้มากที่สุด, ยา nitroprusside/nicardipine/phentolamine, esmolol · ส่วนใหญ่ <5–6 cm ผ่า **laparoscopic** ได้ · หลังผ่าตัด: **hypotension** (ต้องการน้ำมาก) และ **hypoglycemia** (insulin rebound) · hereditary bilateral → **cortical-sparing** adrenalectomy\n\n### Primary aldosteronism (Conn) และ AVS\nScreening: **ARR สูง** (มักใช้ aldosterone ≥15 ng/dL ร่วม ARR >20–30) → confirm (saline infusion, oral salt loading, captopril) เว้นแต่มี hypokalemia + renin ถูกกด + aldosterone สูงมาก → **CT adrenal** → **adrenal vein sampling (AVS)** เพื่อแยก **unilateral (adenoma/unilateral hyperplasia) ที่ผ่าตัดได้** จาก **bilateral hyperplasia ที่รักษาด้วยยา (spironolactone/eplerenone)**\n- AVS (Schwartz: sensitivity 95%, specificity 90%) วัด aldosterone และ **cortisol** จากทั้งสอง adrenal vein และ IVC (ภายใต้ ACTH) · **cortisol-corrected aldosterone lateralization ratio >4** = unilateral\n- อาจข้าม AVS ได้ในผู้ป่วย **อายุ <35 ปี** ที่มี hypokalemia ชัด aldosterone สูงมาก และ CT พบ adenoma ข้างเดียวชัด (Endocrine Society 2016) — อายุมากขึ้น nonfunctional incidentaloma พบบ่อย CT จึงหลอกได้\n- **Laparoscopic adrenalectomy** ข้างที่ lateralize → K ปกติเกือบทุกราย ความดันดีขึ้น (หายขาดราวครึ่งหนึ่ง ขึ้นกับระยะเวลาที่เป็นและ essential HT ร่วม)\n\n### Cushing syndrome ต้นเหตุจาก adrenal\nACTH-independent (ACTH ต่ำ) → adrenal adenoma/ACC/bilateral macronodular hyperplasia · หลัง unilateral adrenalectomy ต่อมอีกข้างถูกกดอยู่ → **ต้องให้ perioperative และ postoperative glucocorticoid** จนแกน HPA ฟื้น (อาจนานหลายเดือน) มิฉะนั้นเกิด **adrenal crisis** — รวมถึงผู้ป่วย **MACS** ที่ตรวจพบก่อนผ่าตัด\n\n### Adrenocortical carcinoma (ACC)\nมักใหญ่ (Schwartz: 92% >6 cm), ~70% มาพบใน stage III–IV, อาจหลั่ง cortisol + androgen ร่วมกัน (virilization + Cushing เร็ว)\n- **Open en bloc adrenalectomy** เมื่อสงสัย ACC ที่มี invasion/ก้อนใหญ่ — เอาไขมันรอบ ต่อมน้ำเหลือง และอวัยวะที่ติด (ไต, ม้าม, ตับ, IVC thrombus) ออกพร้อมกัน **ห้ามแตกแคปซูล** (peritoneal recurrence สูง); laparoscopic เฉพาะก้อนเล็กไม่มี invasion ในมือผู้เชี่ยวชาญ\n- **ห้ามทำ biopsy** ก้อนที่สงสัย ACC ที่ผ่าตัดได้\n- **Adjuvant mitotane** (adrenolytic, อนุพันธ์ DDT) ในผู้ป่วยเสี่ยงสูง (Ki-67 >10%, R1, stage III) ติดตามระดับยาในเลือด + ต้องให้ steroid replacement · advanced disease: EDP + mitotane\n",
+   "pearls": [
+    "Incidentaloma ทุกราย: 1-mg DST + metanephrines · ARR เฉพาะ HT หรือ K ต่ำ",
+    "≤10 HU unenhanced = lipid-rich adenoma · carcinoma ~25% ในก้อน >6 cm",
+    "ห้ามเจาะ adrenal ก่อนตัด pheo · FNA แยก adenoma/ACC ไม่ได้",
+    "Pheo: α-blockade 1–3 สัปดาห์ + volume → β-blocker ทีหลังเสมอ",
+    "Conn: AVS ก่อนผ่าตัด (ข้ามได้ใน <35 ปีที่ภาพชัด) · lateralization ratio >4",
+    "Cortisol-secreting adenoma → steroid หลังผ่าตัดจนแกน HPA ฟื้น",
+    "สงสัย ACC → open en bloc ไม่ biopsy ไม่แตกแคปซูล · mitotane ในเสี่ยงสูง"
+   ],
+   "items": [
+    {
+     "id": "RES-07-3-1",
+     "kind": "mcq",
+     "topic": "Workup of adrenal incidentaloma",
+     "stem": "A 58-year-old normotensive man with normal serum potassium undergoes CT for renal colic and is found to have a 2.8-cm homogeneous, smoothly marginated left adrenal mass with an unenhanced attenuation of 8 Hounsfield units. He has no history of malignancy and no cushingoid features. Which evaluation is most appropriate?",
+     "choices": [
+      "1-mg overnight dexamethasone suppression test and plasma free metanephrines",
+      "CT-guided biopsy of the adrenal mass",
+      "Plasma aldosterone-to-renin ratio only",
+      "Laparoscopic adrenalectomy without further testing",
+      "No further evaluation, since the mass is a benign adenoma on imaging"
+     ],
+     "answer": 0,
+     "explain": "ภาพ (homogeneous, **≤10 HU**) บ่งชี้ lipid-rich adenoma จึงตอบคำถาม \"มะเร็งหรือไม่\" แล้ว แต่ยังต้องตอบ \"**ทำงานหรือไม่**\" ซึ่งต้องตรวจทุกราย: **1-mg overnight DST** หา mild autonomous cortisol secretion และ **metanephrines** หา pheochromocytoma (pheo ไม่ได้มีความดันสูงเสมอ และบางครั้ง HU ต่ำได้ยาก) — ไม่ต้องตรวจ aldosterone เพราะความดันและ K ปกติ\n- **CT-guided biopsy**: ไม่ช่วยแยก adenoma/carcinoma และอันตรายถ้าเป็น pheo\n- **ARR อย่างเดียว**: ตรวจเฉพาะผู้มี HT/hypokalemia และพลาดการคัดกรอง cortisol/pheo\n- **Adrenalectomy ทันที**: ก้อน <4 cm benign imaging และยังไม่รู้ว่าทำงาน ไม่มีข้อบ่งชี้\n- **ไม่ตรวจเพิ่ม**: ภาพบอกแค่เรื่องมะเร็ง ไม่บอกการทำงานของฮอร์โมน",
+     "pearl": "Incidentaloma: ภาพตอบเรื่องมะเร็ง, DST + metanephrines ตอบเรื่องฮอร์โมน",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "AACE/AAES Medical guidelines for the management of adrenal incidentalomas",
+      "European Society of Endocrinology adrenal incidentaloma guideline (2023)"
+     ]
+    },
+    {
+     "id": "RES-07-3-2",
+     "kind": "mcq",
+     "topic": "Pheochromocytoma preoperative preparation",
+     "stem": "A 39-year-old woman with paroxysmal headaches, sweating and BP 186/110 mmHg has plasma normetanephrine 9 times the upper limit of normal and a 4-cm right adrenal mass. Heart rate is 112/min. Laparoscopic adrenalectomy is planned. Which preoperative regimen is most appropriate?",
+     "choices": [
+      "Alpha-blockade for 1–3 weeks with liberal salt and fluid intake, adding a beta-blocker only after adequate alpha-blockade",
+      "Start propranolol immediately to control tachycardia, then add an alpha-blocker",
+      "Proceed to surgery within 48 hours with intraoperative nitroprusside only",
+      "Start a thiazide diuretic and an ACE inhibitor for 2 weeks",
+      "Start labetalol as monotherapy for 3 days before surgery"
+     ],
+     "answer": 0,
+     "explain": "การเตรียม pheochromocytoma: **α-blockade ก่อน** (phenoxybenzamine หรือ selective α1 เช่น doxazosin) นาน 1–3 สัปดาห์ร่วมกับ **เกลือและน้ำ** เพื่อคืน volume ที่หดตัว แล้วจึงเพิ่ม **β-blocker เมื่อ α-blockade เพียงพอ** เพื่อคุม tachycardia เป้าหมายคือความดันปกติขณะนั่ง มี orthostatic hypotension เล็กน้อย\n- **β-blocker ก่อน**: ตัด β2 vasodilation ทำให้ **unopposed α** → hypertensive crisis, หัวใจล้มเหลว\n- **ผ่าตัดภายใน 48 ชม. ไม่เตรียม**: เสี่ยง catecholamine surge ระหว่างจับก้อนและ hypotension รุนแรงหลังตัด\n- **Thiazide/ACEi**: diuretic ทำ volume depletion แย่ลง และไม่ใช่การเตรียมมาตรฐาน\n- **Labetalol เดี่ยว**: ฤทธิ์ β มากกว่า α (ราว 7:1 เมื่อให้ IV) ไม่พอและเสี่ยง paradoxical hypertension",
+     "pearl": "Pheo: α ก่อน + volume loading → β ทีหลัง (ไม่เคยกลับลำดับ)",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Endocrine Society Clinical practice guideline: Pheochromocytoma and paraganglioma (2014)"
+     ]
+    },
+    {
+     "id": "RES-07-3-3",
+     "kind": "mcq",
+     "topic": "Primary aldosteronism — adrenal vein sampling",
+     "stem": "A 52-year-old man with resistant hypertension on four drugs and serum potassium 2.9 mmol/L has plasma aldosterone 32 ng/dL with suppressed renin; saline infusion fails to suppress aldosterone. CT shows a 1.1-cm left adrenal nodule and a normal-appearing right adrenal. Which is the most appropriate next step?",
+     "choices": [
+      "Adrenal vein sampling",
+      "Left laparoscopic adrenalectomy",
+      "Lifelong spironolactone without further testing",
+      "Bilateral adrenalectomy",
+      "Repeat CT in 12 months"
+     ],
+     "answer": 0,
+     "explain": "ยืนยัน primary aldosteronism แล้ว ขั้นต่อไปคือ **subtype**: unilateral (ผ่าตัด) vs bilateral hyperplasia (ยา) ในผู้ป่วยอายุ **>35 ปี** CT ไม่น่าเชื่อถือพอ เพราะ nonfunctioning adenoma พบบ่อย และ bilateral hyperplasia อาจเห็นเป็นก้อนข้างเดียวได้ จึงต้องทำ **AVS** (Schwartz: sensitivity 95%, specificity 90%) โดยใช้ cortisol-corrected aldosterone ratio >4 บ่งว่าข้างนั้นเป็นแหล่ง\n- **Left adrenalectomy ทันที**: เสี่ยงตัดผิดข้างหรือผ่าตัดในโรค bilateral\n- **Spironolactone ตลอดชีวิตโดยไม่ตรวจ**: เสียโอกาสหายขาดด้วยการผ่าตัด (ทางเลือกเมื่อผู้ป่วยไม่ต้องการผ่าตัดเท่านั้น)\n- **Bilateral adrenalectomy**: ทำให้ adrenal insufficiency ตลอดชีวิต ไม่ใช่การรักษา PA\n- **CT ซ้ำ 12 เดือน**: ไม่ช่วยตัดสินใจ",
+     "pearl": "Conn: ยืนยันแล้ว → AVS ก่อนผ่าตัด (ยกเว้น <35 ปีที่ภาพชัด)",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Endocrine Society Clinical practice guideline: Management of primary aldosteronism (2016)"
+     ]
+    },
+    {
+     "id": "RES-07-3-4",
+     "kind": "mcq",
+     "topic": "Adrenocortical carcinoma — surgical approach",
+     "stem": "A 44-year-old woman has rapidly progressive cushingoid features, new hirsutism and hypertension. Cortisol is not suppressible, ACTH is undetectable, and DHEA-S is markedly elevated. CT shows a 9-cm heterogeneous left adrenal mass (unenhanced 38 HU) with irregular margins abutting the left renal vein, without distant metastasis; metanephrines are normal. Which management is most appropriate?",
+     "choices": [
+      "Open en bloc left adrenalectomy with resection of involved adjacent structures and regional nodes, plus perioperative steroid coverage",
+      "CT-guided core biopsy to confirm the diagnosis before surgery",
+      "Laparoscopic left adrenalectomy with morcellation of the specimen",
+      "Primary mitotane therapy and reassess in 6 months",
+      "Bilateral laparoscopic adrenalectomy"
+     ],
+     "answer": 0,
+     "explain": "ก้อนใหญ่ heterogeneous HU สูง ขอบไม่เรียบ และหลั่ง **cortisol ร่วมกับ androgen** = **adrenocortical carcinoma** จนกว่าจะพิสูจน์ การรักษาเพื่อหายขาดคือ **open en bloc resection** (เอาไขมันรอบ ต่อมน้ำเหลือง และอวัยวะ/หลอดเลือดที่ติด) โดย **ไม่ทำให้แคปซูลแตก** และต้องให้ **perioperative glucocorticoid** เพราะต่อมอีกข้างถูกกด พิจารณา adjuvant mitotane ตามความเสี่ยง\n- **Biopsy ก่อน**: ไม่จำเป็นเมื่อจะผ่าตัด และเสี่ยง tumor seeding\n- **Laparoscopic + morcellation**: เสี่ยงแคปซูลแตกและ peritoneal carcinomatosis\n- **Mitotane เป็นหลัก**: ใช้เป็น adjuvant หรือในโรคที่ผ่าตัดไม่ได้\n- **Bilateral adrenalectomy**: ข้างขวาปกติ ไม่มีเหตุผล",
+     "pearl": "สงสัย ACC: open en bloc ไม่ biopsy ไม่แตกแคปซูล + steroid cover",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "ESE/ENSAT Clinical practice guideline on the management of adrenocortical carcinoma (2018)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-07-4",
+   "title": "MEN syndromes และ pancreatic neuroendocrine tumors",
+   "summary": "แยก MEN1/2A/2B เลือกเวลาผ่าตัดป้องกันตาม RET codon ลำดับการผ่าตัด และวินิจฉัย/ผ่าตัด insulinoma, gastrinoma และ nonfunctional PNET",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 38 — MEN syndromes · Ch 33 — Pancreatic neuroendocrine tumors",
+   "md": "### เปรียบเทียบ MEN syndromes\n\n| | **MEN1** | **MEN2A** | **MEN2B** |\n|---|---|---|---|\n| ยีน | **MEN1 (menin)** tumor suppressor, chr 11q13 | **RET** proto-oncogene (gain of function) | RET (ส่วนใหญ่ **M918T**) |\n| Parathyroid | **PHPT 80–100% ภายในอายุ 40** (multigland) | ~20% | ไม่พบ |\n| Pancreas/duodenum | **gastrinoma ~50%** (duodenal, หลายก้อน) · insulinoma 10–15% · NF-PNET บ่อย | — | — |\n| Pituitary | prolactinoma พบมากสุด | — | — |\n| Thyroid | — | **MTC ~100%** | MTC ~100% เร็วและรุนแรง |\n| Adrenal | adrenocortical adenoma (บางราย) | **pheo ~50%** | pheo ~50% |\n| อื่น ๆ | bronchial/thymic carcinoid, lipoma, angiofibroma | cutaneous lichen amyloidosis, Hirschsprung | **mucosal neuromas, marfanoid habitus**, intestinal ganglioneuromatosis |\n\n> ลำดับผ่าตัดเมื่อมีหลายโรคใน MEN2: **pheochromocytoma ก่อนเสมอ** → แล้วจึง thyroid/parathyroid\n\n### MEN2: prophylactic thyroidectomy ตาม RET codon (ATA 2015)\n\n| ATA risk | Codon ตัวอย่าง | เวลาที่แนะนำ |\n|---|---|---|\n| **Highest (HST)** | **M918T (MEN2B)** | **total thyroidectomy ภายในขวบปีแรก** (หรือเร็วที่สุดเท่าที่ทำได้) + central ND ถ้ามี node/ผ่าได้ปลอดภัย |\n| **High (H)** | **C634**, A883F | **ก่อนหรือที่อายุ 5 ปี** โดยดู calcitonin |\n| **Moderate (MOD)** | codon อื่น ๆ (เช่น 768, 804) | เมื่อ calcitonin เริ่มสูง หรือในวัยเด็กถ้าผู้ปกครองไม่ต้องการติดตามระยะยาว |\n\nเริ่มคัดกรอง pheo (metanephrines) ที่อายุ 11 ปีใน high/highest risk และ 16 ปีใน moderate · การผ่าตัดป้องกันก่อน MTC ลุกลามทำให้ผู้ป่วยส่วนใหญ่ calcitonin เป็นศูนย์หลังผ่าตัด (Schwartz) · ใน MEN2A ที่ Ca ปกติ รักษาต่อมพาราไทรอยด์ไว้ ถ้ามี HPT ตัดเฉพาะต่อมที่โต\n\n### MEN1: parathyroid และ pancreas\n- **PHPT ใน MEN1** เป็น **multigland** และพบต่อม supernumerary/ectopic บ่อย → **bilateral exploration** เสมอ (ไม่ทำ focused แม้ภาพชี้ต่อมเดียว) + **subtotal parathyroidectomy (3.5 ต่อม)** หรือ total + autotransplant + **bilateral cervical thymectomy** + cryopreservation · ห้ามตัดต่อมเดียว (persistent/recurrent สูง)\n- ใน MEN1 + gastrinoma ควร **แก้ hypercalcemia ก่อน** เพราะ calcium กระตุ้น gastrin และทำให้อาการกรดดีขึ้นมาก\n- Gastrinoma ใน MEN1 มักเล็ก หลายก้อนใน duodenum การผ่าตัดไม่ค่อยทำให้ gastrin ปกติ (Schwartz) — ผ่าตัดเมื่อก้อน pancreatic ใหญ่ (มัก **>2 cm**) เพื่อลด liver metastasis · NF-PNET ใน MEN1 ≤2 cm มักเฝ้าระวังได้\n\n### Functional PNETs: insulinoma และ gastrinoma\n**Insulinoma** — functional PNET ที่พบบ่อยที่สุด ~90% **benign, solitary, <2 cm** กระจายทั่วตับอ่อน\n- **Whipple triad**: อาการ hypoglycemia, glucose ต่ำขณะมีอาการ, ดีขึ้นเมื่อให้ glucose\n- **72-hour supervised fast**: เมื่อ glucose **<55 mg/dL** พบ **insulin ≥3 µU/mL, C-peptide ≥0.6 ng/mL, proinsulin ≥5 pmol/L** และ **sulfonylurea screen ลบ** (exogenous insulin → C-peptide ต่ำ)\n- Localization: CT/MRI pancreas protocol, **EUS** (ไวสำหรับก้อนเล็ก), Ga-68 exendin/DOTATATE PET, **intraoperative US**\n- ผ่าตัด: **enucleation** เมื่อก้อนห่างจาก main pancreatic duct (มัก ≥2–3 mm) · ใกล้ duct หรือ >2 cm → distal pancreatectomy (spleen-preserving ได้) หรือ pancreaticoduodenectomy\n**Gastrinoma (ZES)** — ulcer หลายแห่ง/ตำแหน่งผิดปกติ/ดื้อยา + diarrhea\n- **Fasting gastrin >1000 pg/mL** ร่วมกับ gastric pH <2 (ต้องหยุด PPI อย่างระมัดระวัง) · กำกวม → **secretin stimulation test** (gastrin เพิ่ม ≥120 pg/mL)\n- **Passaro (gastrinoma) triangle**: cystic duct–CBD junction, รอยต่อ D2–D3, คอ–ตัวตับอ่อน (70–90% อยู่ในนี้) · ส่วนใหญ่ปัจจุบันพบใน **duodenal wall**\n- Localization: **SSTR imaging (Ga-68 DOTATATE PET-CT)** + EUS · ผ่าตัด sporadic gastrinoma: **duodenotomy** (คลำ/transillumination) + เอา duodenal tumor แบบ full-thickness + **lymphadenectomy ใน triangle** + enucleation ก้อนตับอ่อน · ~50% malignant (node/liver)\n\n### Nonfunctional PNET และโรคแพร่กระจาย\nส่วนใหญ่พบโดยบังเอิญ ประเมินด้วย CT/MRI, EUS-FNA (grade ด้วย **Ki-67**: G1 <3%, G2 3–20%, G3 >20%) และ SSTR PET\n\n| สถานการณ์ | แนวทาง |\n|---|---|\n| **≤2 cm**, G1, ไม่มีอาการ ไม่มี duct dilation/node | **เฝ้าระวัง** ด้วยภาพได้ในรายที่เลือกแล้ว (NCCN/ENETS) |\n| **>2 cm** หรือโตขึ้น, G2, มี node สงสัย | **formal resection + regional lymphadenectomy** (Whipple หรือ distal pancreatectomy + splenectomy) — Schwartz เตือนว่า enucleation ไม่เอา node |\n| Liver metastasis ที่ resectable (≥90% ของภาระโรค) | resection/ablation + primary ได้ประโยชน์ |\n| Unresectable | **somatostatin analogs** (octreotide, lanreotide — ทั้งคุมอาการและชะลอโรค), everolimus, sunitinib, **PRRT (Lu-177 DOTATATE)**, liver-directed therapy |\n\nถ้าใช้ somatostatin analog ระยะยาวและจะผ่าตัดช่องท้อง พิจารณา **cholecystectomy** ไปพร้อมกัน (ยาเพิ่ม gallstones)\n",
+   "pearls": [
+    "MEN1 = 3P (parathyroid, pancreas, pituitary) · PHPT 80–100% ภายใน 40 ปี",
+    "MEN2: ผ่าตัด pheo ก่อน thyroid/parathyroid เสมอ",
+    "RET M918T (MEN2B) → thyroidectomy ภายใน 1 ปี · C634 → ภายใน/ก่อน 5 ปี",
+    "MEN1 HPT: bilateral exploration + subtotal (3.5) + cervical thymectomy ไม่ใช่ focused",
+    "Insulinoma: 72-h fast (glucose <55, insulin ≥3, C-peptide ≥0.6) → enucleation ถ้าห่าง duct",
+    "Gastrinoma: gastrin >1000 + pH <2 · secretin ↑ ≥120 · Passaro triangle · duodenotomy",
+    "NF-PNET ≤2 cm G1 เฝ้าระวังได้ · >2 cm ผ่าตัด + lymphadenectomy"
+   ],
+   "items": [
+    {
+     "id": "RES-07-4-1",
+     "kind": "mcq",
+     "topic": "Operative sequence in MEN2A",
+     "stem": "A 31-year-old man has a 2.5-cm medullary thyroid carcinoma on FNA, serum calcium 11.2 mg/dL with elevated PTH, and plasma normetanephrine 6 times normal; CT shows a 3-cm right adrenal mass. Germline testing reveals a RET C634R mutation. In what order should his conditions be treated surgically?",
+     "choices": [
+      "Right adrenalectomy after alpha-blockade first, then total thyroidectomy with central neck dissection and resection of enlarged parathyroids",
+      "Total thyroidectomy first, because medullary carcinoma is the most lethal component",
+      "Parathyroidectomy first to correct hypercalcemia, then adrenalectomy",
+      "Simultaneous thyroidectomy and adrenalectomy without preoperative blockade",
+      "Total thyroidectomy and parathyroidectomy first, deferring the adrenal mass to surveillance"
+     ],
+     "answer": 0,
+     "explain": "ใน **MEN2A** ที่มี pheochromocytoma ร่วม ต้อง **ผ่าตัด pheo ก่อน** (หลัง α-blockade) เพราะการดมยาสลบ/ผ่าตัดคอในขณะที่มี pheo ที่ไม่ได้รักษาเสี่ยง hypertensive crisis และเสียชีวิต จากนั้นจึงทำ **total thyroidectomy + central neck dissection** และตัด **เฉพาะต่อมพาราไทรอยด์ที่โต** (HPT ใน MEN2A มักไม่รุนแรง)\n- **Thyroid ก่อน**: แม้ MTC อันตรายในระยะยาว แต่ pheo ทำให้ตายบนโต๊ะผ่าตัด\n- **Parathyroid ก่อน**: เสี่ยงเรื่อง pheo เช่นเดียวกัน และ hypercalcemia ไม่ใช่ภาวะเร่งด่วนในรายนี้\n- **ผ่าตัดพร้อมกันไม่เตรียม**: ขาด α-blockade อันตราย\n- **เฝ้าระวัง adrenal**: pheo ที่ทำงานต้องผ่าตัด",
+     "pearl": "MEN2 + pheo: adrenal ก่อนเสมอ แล้วค่อยคอ",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38"
+     ]
+    },
+    {
+     "id": "RES-07-4-2",
+     "kind": "mcq",
+     "topic": "Parathyroid surgery in MEN1",
+     "stem": "A 28-year-old woman with genetically confirmed MEN1 has symptomatic hypercalcemia (calcium 11.6 mg/dL, PTH 156 pg/mL) and recurrent nephrolithiasis. Sestamibi shows a single focus of uptake at the left inferior position. What is the most appropriate operation?",
+     "choices": [
+      "Bilateral neck exploration with subtotal (3.5-gland) parathyroidectomy and bilateral cervical thymectomy",
+      "Focused left inferior parathyroidectomy guided by IOPTH",
+      "Unilateral left neck exploration removing both left glands",
+      "Total parathyroidectomy without autotransplantation or cryopreservation",
+      "Observation with cinacalcet until age 40"
+     ],
+     "answer": 0,
+     "explain": "HPT ใน **MEN1** เป็น **multigland hyperplasia** (ต่อมโตไม่เท่ากัน ภาพจึงเห็นแค่ต่อมใหญ่สุด) และพบต่อม supernumerary/ใน thymus บ่อย การทำ focused parathyroidectomy ทำให้ persistent/recurrent สูง มาตรฐานคือ **bilateral exploration + subtotal parathyroidectomy (เหลือ ~50 mg)** หรือ total + autotransplant ร่วม **bilateral cervical thymectomy** และ cryopreserve เนื้อต่อม (Schwartz: hereditary HPT ไม่เหมาะกับ focused approach)\n- **Focused + IOPTH**: IOPTH ไม่น่าเชื่อถือใน multigland disease\n- **Unilateral exploration**: ทิ้งต่อม hyperplastic ฝั่งตรงข้าม\n- **Total ไม่ autotransplant/ไม่ cryopreserve**: permanent hypoparathyroidism ในหญิงอายุน้อย\n- **รอถึง 40 ด้วย cinacalcet**: ผู้ป่วยมีอาการและนิ่วซ้ำ ต้องผ่าตัด",
+     "pearl": "MEN1 HPT: bilateral + subtotal 3.5 gland + cervical thymectomy",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38"
+     ]
+    },
+    {
+     "id": "RES-07-4-3",
+     "kind": "mcq",
+     "topic": "Insulinoma diagnosis and surgery",
+     "stem": "A 46-year-old woman has episodes of confusion relieved by eating. During a supervised fast at 30 hours she becomes diaphoretic with plasma glucose 41 mg/dL, insulin 14 µU/mL, C-peptide 2.1 ng/mL, proinsulin 18 pmol/L, and a negative sulfonylurea screen. EUS shows a 1.4-cm hypervascular lesion in the pancreatic body, 5 mm from the main pancreatic duct; there is no evidence of metastasis. What is the most appropriate treatment?",
+     "choices": [
+      "Enucleation of the tumor guided by intraoperative ultrasound",
+      "Distal pancreatectomy with splenectomy and lymphadenectomy",
+      "Pancreaticoduodenectomy",
+      "Long-term diazoxide therapy",
+      "Long-acting octreotide therapy"
+     ],
+     "answer": 0,
+     "explain": "ผล 72-hour fast เข้ากับ **endogenous hyperinsulinism** (glucose <55 พร้อม insulin ≥3, C-peptide ≥0.6, proinsulin ≥5 และ sulfonylurea ลบ) และ EUS พบก้อนเดียว 1.4 cm → **insulinoma** ซึ่ง ~90% benign ก้อนเล็กที่อยู่ **ห่าง main pancreatic duct** รักษาหายด้วย **enucleation** (ใช้ intraoperative US ยืนยันตำแหน่งและระยะห่างจาก duct) ซึ่งรักษาเนื้อตับอ่อนไว้มากที่สุด\n- **Distal pancreatectomy + splenectomy**: เกินจำเป็นสำหรับก้อนเล็ก benign ห่าง duct (ทำเมื่อใกล้ duct/ใหญ่/สงสัยมะเร็ง)\n- **Pancreaticoduodenectomy**: ก้อนอยู่ที่ body ไม่ใช่ head\n- **Diazoxide**: ใช้คุมอาการระหว่างรอ/ผ่าตัดไม่ได้\n- **Octreotide**: insulinoma หลายรายมี SSTR2 น้อย อาจทำให้ hypoglycemia แย่ลง ไม่ใช่การรักษาหลัก",
+     "pearl": "Insulinoma เล็ก ห่าง duct → enucleation",
+     "src": "Schwartz 11e Ch 33",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 33",
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Endocrine Society guideline: Evaluation and management of adult hypoglycemic disorders (2009)"
+     ]
+    },
+    {
+     "id": "RES-07-4-4",
+     "kind": "mcq",
+     "topic": "Timing of prophylactic thyroidectomy",
+     "stem": "A 3-year-old girl is tested because her father has MEN2A, and she carries the same RET codon C634 mutation. She is asymptomatic, neck ultrasound is normal and serum calcitonin is mildly elevated for age. According to the 2015 ATA guideline, what is the most appropriate recommendation?",
+     "choices": [
+      "Total thyroidectomy at or before age 5, with timing guided by calcitonin",
+      "Total thyroidectomy within the first year of life regardless of findings",
+      "Annual ultrasound with thyroidectomy only when a nodule appears",
+      "Thyroid lobectomy on the side with higher calcitonin gradient",
+      "Defer surgery until adulthood and screen for pheochromocytoma first"
+     ],
+     "answer": 0,
+     "explain": "**RET C634** จัดเป็น **ATA high risk (H)** แนะนำ **total thyroidectomy ที่อายุหรือก่อน 5 ปี** โดยใช้ระดับ calcitonin กำหนดเวลา (calcitonin เริ่มสูงยิ่งสนับสนุนให้ทำเร็ว) และเพิ่ม central neck dissection ถ้า calcitonin สูงมากหรือมี node — การผ่าตัดในระยะ C-cell hyperplasia ทำให้หายขาดเกือบทั้งหมด\n- **ภายในขวบปีแรก**: ใช้กับ **highest risk M918T (MEN2B)**\n- **รอให้มีก้อน**: MTC แพร่ไป node ก่อนคลำก้อนได้ เสียโอกาสหายขาด\n- **Lobectomy**: MTC ใน MEN2 เป็นสองข้างและ multicentric ต้อง total\n- **เลื่อนถึงผู้ใหญ่**: pheo ใน C634 เริ่มคัดกรองที่อายุ 11 ปี จึงไม่ใช่เหตุผลที่จะเลื่อน thyroidectomy ในวัย 3–5 ปี",
+     "pearl": "RET codon: M918T → <1 ปี · C634 → ≤5 ปี · moderate → ตาม calcitonin",
+     "src": "Schwartz 11e Ch 38",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 38",
+      "Wells SA et al. Revised American Thyroid Association guidelines for the management of medullary thyroid carcinoma (2015)"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-07-MEQ1",
+   "part": "MEQ",
+   "topic": "Adrenal incidentaloma revealed as pheochromocytoma",
+   "vignette": "หญิงไทยอายุ 47 ปี ทำ CT ช่องท้องเพื่อตรวจปวดท้องด้านขวา (พบนิ่วถุงน้ำดี) พบก้อนต่อมหมวกไตขวา 4.2 cm โดยบังเอิญ\n\n| ข้อมูล | ค่า |\n|---|---|\n| ประวัติ | ความดันสูง 3 ปี กินยา amlodipine 1 ตัว · บางครั้งใจสั่น เหงื่อออก ปวดศีรษะ |\n| V/S | BP 158/96 mmHg, HR 98/min |\n| CT | unenhanced 34 HU, heterogeneous enhancement, ขอบเรียบ ไม่มี invasion |\n| Lab | K 4.1 mmol/L, glucose 128 mg/dL |",
+   "questions": [
+    {
+     "q": "1. จะ workup ก้อนนี้อย่างไร และมีการตรวจอะไรที่ห้ามทำในตอนนี้",
+     "a": "- คำถามสองข้อ: **ทำงานหรือไม่** และ **เสี่ยงมะเร็งหรือไม่** (ก้อน ≥4 cm, HU >10 → ไม่ใช่ lipid-rich adenoma)\n- ตรวจ **plasma free metanephrines** (หรือ 24-h urine fractionated metanephrines), **1-mg overnight DST**, **aldosterone/renin ratio** (มีความดันสูง), DHEA-S ถ้าสงสัย ACC\n- **ห้ามทำ biopsy/FNA** ก่อนตัด pheo (hypertensive crisis, เลือดออก) และ biopsy แยก adenoma/ACC ไม่ได้"
+    },
+    {
+     "q": "2. ผล plasma normetanephrine 8 เท่าของค่าปกติ metanephrine 2 เท่า ต้องตรวจอะไรเพิ่มก่อนผ่าตัด และเตรียมผู้ป่วยอย่างไร",
+     "a": "- วินิจฉัย **pheochromocytoma** · พิจารณา **Ga-68 DOTATATE PET หรือ MIBG** ถ้าสงสัย multifocal/metastatic/extra-adrenal (ก้อน >4 cm, normetanephrine เด่น) · **genetic testing** (RET, VHL, NF1, SDHx) · echocardiogram ถ้าสงสัย catecholamine cardiomyopathy\n- เตรียม: **α-blockade 1–3 สัปดาห์** (doxazosin หรือ phenoxybenzamine) titrate จนความดันนั่ง <130/80 และมี orthostatic เล็กน้อย + **high-salt diet และน้ำ** · ใช้ CCB เสริมได้\n- **β-blocker เฉพาะหลัง α-blockade เพียงพอ** ถ้ายัง tachycardia\n- เกณฑ์ให้คะแนน: ลำดับ α → β · volume loading · ไม่ biopsy"
+    },
+    {
+     "q": "3. วางแผนการผ่าตัดและการดูแลระหว่างผ่าตัด รวมถึงนิ่วถุงน้ำดีที่พบ",
+     "a": "- **Laparoscopic right adrenalectomy** (lateral transabdominal หรือ posterior retroperitoneoscopic) — ก้อน 4.2 cm ไม่มี invasion ทำได้\n- Arterial line, central line, ยา nitroprusside/nicardipine/phentolamine และ esmolol พร้อม · หลีกเลี่ยงยากระตุ้น catecholamine\n- **ผูก right adrenal vein (สั้น เข้า IVC โดยตรง) ให้เร็วที่สุด** และจับก้อนให้น้อย · ไม่ทำให้แคปซูลแตก\n- Cholecystectomy พร้อมกันได้ถ้ามีอาการ (เพิ่มโอกาสปนเปื้อนน้อย) หรือแยกทำ — ตอบพร้อมเหตุผล"
+    },
+    {
+     "q": "4. หลังผ่าตัด 2 ชั่วโมงใน recovery room BP 78/45 mmHg HR 105 glucose 52 mg/dL อธิบายกลไกและการรักษา",
+     "a": "- **Hypotension**: catecholamine ลดลงทันที + α-blockade ที่ยังค้าง (phenoxybenzamine ออกฤทธิ์นาน) + vasodilation → ให้ **crystalloid ปริมาณมาก** ก่อน แล้วจึง vasopressor ถ้าจำเป็น; ตรวจ Hb ตัดเลือดออก\n- **Hypoglycemia**: catecholamine เคยกด insulin; เมื่อตัดก้อนออกเกิด **rebound hyperinsulinemia** → ให้ dextrose และเจาะ glucose ถี่ 24–48 ชม.แรก\n- ติดตามระยะยาว: metanephrines ที่ 2–6 สัปดาห์ และทุกปีตลอดชีวิต (recurrence/metachronous) โดยเฉพาะถ้าพบ germline mutation"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 38",
+    "Endocrine Society pheochromocytoma/paraganglioma guideline 2014",
+    "ESE adrenal incidentaloma guideline 2023"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-07-OSCE1",
+   "topic": "Mock oral board — Primary hyperparathyroidism with failed IOPTH drop",
+   "station": "Mock oral 10 นาที · Primary hyperparathyroidism และ IOPTH ไม่ลด",
+   "instruction": "**บทบาท**: แพทย์ประจำบ้านศัลยกรรมปีสุดท้าย ผู้สอบให้ข้อมูลทีละขั้น\n\n**Scenario**: หญิงอายุ 58 ปี นิ่วไต 2 ครั้ง Ca 11.4 mg/dL PTH 142 pg/mL 25-OH vitamin D 32 ng/mL eGFR 70 mL/min\n\n**Examiner prompts**\n1. \"ต้องแยกโรคอะไรก่อน และผู้ป่วยมีข้อบ่งชี้ผ่าตัดหรือไม่\"\n2. \"US และ sestamibi ชี้ตรงกันว่าเป็นต่อมซ้ายล่าง คุณจะวางแผนผ่าตัดอย่างไร\"\n3. \"ตัดต่อมซ้ายล่าง 400 mg ได้แล้ว PTH: pre-incision 150, pre-excision 168, 10 นาทีหลังตัด 120 คุณทำอย่างไรต่อ\"\n4. \"สำรวจแล้วพบต่อมซ้ายบนปกติ ฝั่งขวาพบต่อมขวาบนโต 300 mg ต่อมขวาล่างหาไม่พบ หลังตัดต่อมขวาบน PTH 10 นาทีลดเหลือ 38 คุณสรุปอะไร และจะทำอะไรต่อ\"\n5. \"วันที่ 2 หลังผ่าตัด ผู้ป่วยชาริมฝีปาก Chvostek positive Ca 7.6 mg/dL คุณจัดการอย่างไร\"\n",
+   "answer": "1. **Prompt 1 — Dx และข้อบ่งชี้ (2 คะแนน)**\n- PHPT (Ca สูง + PTH สูง, vitamin D ปกติ ตัด secondary)\n- แยก **FHH**: 24-h urine Ca และ **Ca/Cr clearance ratio** (<0.01 สนับสนุน FHH) · ทบทวนยา thiazide/lithium\n- ผู้ป่วย **มีอาการ (นิ่วไต)** → ผ่าตัดได้เลย (ไม่ต้องใช้เกณฑ์ asymptomatic)\n\n2. **Prompt 2 — Operative plan (2 คะแนน)**\n- ภาพสองชนิดตรงกัน → **focused (minimally invasive) parathyroidectomy** ด้านซ้ายล่าง + **IOPTH**\n- อธิบาย Miami criterion: ≥50% drop ที่ 10 นาทีจากค่าสูงสุดก่อนตัด\n- ระบุและรักษา RLN, consent เรื่องการเปลี่ยนเป็น bilateral exploration\n\n3. **Prompt 3 — IOPTH ไม่ลด (2 คะแนน)**\n- ค่าสูงสุด 168 → 120 = ลด ~29% **ไม่ผ่านเกณฑ์** → สงสัย **double adenoma/multigland disease**\n- เปลี่ยนเป็น **bilateral neck exploration** หาทั้ง 4 ต่อม (อาจรอค่า 20 นาทีได้ แต่ไม่ยุติการผ่าตัด)\n- ไม่ biopsy ต่อมปกติทุกต่อมโดยไม่จำเป็น\n\n4. **Prompt 4 — Double adenoma (2 คะแนน)**\n- PTH 38 (ลด >50% และเข้าช่วงปกติ) → สอดคล้อง **double adenoma** (ซ้ายล่าง + ขวาบน) ยุติการผ่าตัดได้\n- ต่อมขวาล่างที่หาไม่พบ: ไม่ต้องไล่ค้นต่อเมื่อ IOPTH ปกติแล้ว (ลดความเสี่ยง hypoparathyroidism/RLN) บันทึก op note ละเอียดไว้สำหรับ reoperation\n- นัด Ca/PTH ที่ 6 เดือนเพื่อยืนยัน cure (persistent = Ca สูงภายใน 6 เดือน)\n\n5. **Prompt 5 — Postoperative hypocalcemia (2 คะแนน)**\n- อาการ + Ca 7.6 → **IV calcium gluconate** (10 mL 10% ช้า ๆ แล้ว infusion) ตรวจ **Mg** และแก้ด้วย, ตรวจ PTH และ phosphate\n- แยก **hungry bone syndrome** (PTH ปกติ/สูง, PO4 ต่ำ, ALP สูง) จาก hypoparathyroidism ชั่วคราว (PTH ต่ำ)\n- ต่อด้วย oral calcium carbonate/citrate ± **calcitriol** แล้วลดขนาดตามระดับ Ca\n\n**Critical fails**\n- ยุติการผ่าตัดทั้งที่ IOPTH ไม่ผ่านเกณฑ์ หรือคำนวณ % ลดผิดฐาน\n- ไม่แยก FHH ก่อนผ่าตัด\n- จัดการ hypocalcemia ที่มีอาการด้วย oral calcium อย่างเดียว หรือไม่ตรวจ Mg"
+  }
+ ]
+}

@@ -1,0 +1,479 @@
+{
+ "lec": "07",
+ "date": "Schwartz Ch 10, 16–17",
+ "title": "Surgical oncology, skin & breast",
+ "subtitle": "หลักการมะเร็งวิทยาสำหรับศัลยแพทย์ มะเร็งผิวหนังสามชนิดหลัก และการประเมินก้อนเต้านมจนถึงการรักษามะเร็งเต้านม",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบายบทบาทของ oncogene, tumor suppressor และ DNA repair gene ในการเกิดมะเร็งและมะเร็งที่ถ่ายทอดทางพันธุกรรมได้",
+  "เรียนจบแล้วต้องเลือกวิธี biopsy ให้เหมาะสม และใช้ TNM กับ tumor marker ได้ถูกบริบท",
+  "เรียนจบแล้วต้องแยก BCC, SCC และ melanoma จากลักษณะทางคลินิก และกำหนด margin และข้อบ่งชี้ SLNB ตาม Breslow thickness ได้",
+  "เรียนจบแล้วต้องประเมินก้อนเต้านมด้วย triple assessment และแปลผล BI-RADS เพื่อสั่งการต่อได้",
+  "เรียนจบแล้วต้องแยกโรคเต้านมที่ไม่ร้าย (fibroadenoma, phyllodes, cyst, papilloma) และจัดการ nipple discharge ได้",
+  "เรียนจบแล้วต้องระบุปัจจัยเสี่ยง พันธุกรรม ชนิด stage และหลักการรักษาเฉพาะที่และทั้งระบบของมะเร็งเต้านมได้"
+ ],
+ "guidelines": [
+  "AJCC Cancer Staging Manual 8th ed (2017)",
+  "ACR BI-RADS Atlas 5th ed (2013)",
+  "NCCN Guidelines — Cutaneous Melanoma (margins and SLNB thresholds); MSLT-I/MSLT-II",
+  "ACOSOG Z0011 (axillary management with 1–2 positive SLN); NSABP B-06 (BCS + RT)"
+ ],
+ "sections": [
+  {
+   "id": "n12-07-1",
+   "title": "Oncology principles: carcinogenesis, TNM, tumor markers & biopsy",
+   "summary": "มะเร็งเกิดจากยีนกลุ่มไหน เลือก biopsy แบบใด ใช้ TNM และ tumor marker อย่างไร และวางการรักษาแบบหลายวิธีอย่างไร",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 10 — Cancer genetics, biopsy, staging, tumor markers, multimodality therapy",
+   "md": "### มะเร็งเกิดจากอะไร: oncogene กับ tumor suppressor\nมะเร็งคือการสะสม **mutation หลายขั้น** ในเซลล์เดียวจนเซลล์ได้คุณสมบัติชุด **hallmarks of cancer** เช่น ส่งสัญญาณแบ่งตัวเอง ไม่ตอบสนองต่อสัญญาณหยุด หนี apoptosis แบ่งตัวไม่สิ้นสุด (telomerase) สร้างหลอดเลือดใหม่ บุกรุกและแพร่กระจาย หนีภูมิคุ้มกัน และเปลี่ยน metabolism\n\n| กลุ่มยีน | กลไก | ต้องเสียกี่ allele | ตัวอย่าง |\n|---|---|---|---|\n| **Proto-oncogene → oncogene** | **gain of function** (กลายพันธุ์/ขยายจำนวน/translocation) | **1 allele** ก็พอ (dominant) | **RAS, MYC, HER2 (ERBB2), RET**, BCR-ABL |\n| **Tumor suppressor gene** | **loss of function** | **2 allele** (Knudson **two-hit**) | **TP53, RB1, APC, BRCA1/2**, VHL |\n| **DNA repair gene** | ซ่อม DNA ไม่ได้ → mutation สะสม | 2 allele | **mismatch repair (MLH1, MSH2)** ใน Lynch syndrome |\n\n- กลุ่มมะเร็งถ่ายทอดทางพันธุกรรมส่วนใหญ่คือ **ได้ hit แรกมาทาง germline** ทุกเซลล์ แล้วเกิด hit ที่สองในเนื้อเยื่อ → มะเร็งเกิด **อายุน้อย หลายตำแหน่ง สองข้าง**\n- ปัจจัยภายนอก: สารเคมี (บุหรี่, aflatoxin), รังสี (UV, ionizing), ไวรัส (**HBV/HCV → HCC, HPV → cervix/oropharynx/anus, EBV → nasopharynx**), ปรสิต (**liver fluke → cholangiocarcinoma** ซึ่งสำคัญมากในอีสาน)\n\n### การวินิจฉัยด้วยชิ้นเนื้อ: เลือกวิธีให้ตรงกับคำถาม\n| วิธี | ได้อะไร | ข้อดี | ข้อจำกัด |\n|---|---|---|---|\n| **Fine-needle aspiration (FNA)** | **cytology** (เซลล์) | ง่าย ปลอดภัย เร็ว | **ไม่เห็น architecture** แยก in situ กับ invasive ไม่ได้ |\n| **Core-needle biopsy** | **histology** ชิ้นเนื้อเป็นแท่ง | บอก invasion, grade, **receptor (ER/PR/HER2)** | sampling error ได้ |\n| **Incisional biopsy** | ตัดบางส่วนของก้อน | เนื้อเยื่อมาก | เป็นการผ่าตัด ใช้กับก้อนใหญ่ที่เข็มไม่ได้ผล |\n| **Excisional biopsy** | ตัดทั้งก้อน | ได้ทั้งวินิจฉัยและรักษา | ต้องทำแบบมี margin เพื่อให้เป็นการรักษาได้ |\n| **Punch biopsy** | ผิวหนังเต็มความหนา | ใช้กับรอยโรคผิวหนัง | — |\n\nหลักการที่ศัลยแพทย์ต้องรู้\n- ถ้าผล **ไม่สอดคล้องกับภาพทางคลินิก/ภาพรังสี (discordant)** ต้องเจาะซ้ำหรือทำ open biopsy\n- แผล biopsy ต้อง **วางให้อยู่ในแนวที่จะตัดออกตอนผ่าตัดใหญ่** (แขนขาใช้แนวยาว) ไม่ให้ปนเปื้อนช่องเนื้อเยื่ออื่น\n- ทำ **orientation** ของชิ้นเนื้อ (ไหม/clip) และให้พยาธิแพทย์ **ink margin**\n\n### Staging: TNM\n- **T** = ขนาด/การลุกลามของก้อน · **N** = ต่อมน้ำเหลืองบริเวณ · **M** = แพร่กระจายไกล → รวมเป็น stage 0–IV (AJCC 8th edition เพิ่ม biomarker/grade ในบางมะเร็ง เช่น เต้านม)\n- คำนำหน้า: **c** = clinical (ก่อนรักษา), **p** = pathologic (หลังผ่าตัด), **yp** = หลัง neoadjuvant therapy, **r** = recurrence\n- Staging ใช้เพื่อ **เลือกการรักษา บอกพยากรณ์ และเปรียบเทียบผลการรักษา**\n- **Grade** (ความผิดปกติของเซลล์) ≠ **stage** (ขอบเขตของโรค)\n\n### Tumor markers: ใช้ติดตามมากกว่าคัดกรอง\n| Marker | มะเร็งหลัก | การใช้ที่ได้ประโยชน์ |\n|---|---|---|\n| **CEA** | colorectal | วัดก่อนผ่าตัด (บอกพยากรณ์) และ **ติดตามหลังผ่าตัด stage II–III ทุก 3 เดือน** หา recurrence · **ไม่ใช้คัดกรอง** |\n| **AFP** | HCC, germ cell tumor (non-seminoma, yolk sac) | เฝ้าระวัง HCC ร่วมกับ US ในผู้ป่วย HBV/cirrhosis ทุก 6 เดือน |\n| **CA 19-9** | pancreas, biliary | ติดตามระหว่างรักษา · ไม่ใช้คัดกรอง (ต้องมี Lewis antigen) |\n| **CA-125** | ovarian epithelial | ติดตามการรักษา |\n| **PSA** | prostate | คัดกรองยังเป็นข้อถกเถียง ต้องตัดสินใจร่วมกับผู้ป่วย |\n| **β-hCG** | choriocarcinoma, germ cell | วินิจฉัยและติดตาม |\n| **Calcitonin** | medullary thyroid cancer | ติดตามหลังผ่าตัด |\n| CA 15-3 | breast | ติดตามระยะแพร่กระจาย |\n\n> Marker ส่วนใหญ่ **sensitivity/specificity ต่ำ** และสูงได้ในโรคไม่ร้าย → ใช้ติดตามได้ดีเมื่อค่าสูงตั้งแต่ก่อนรักษา\n\n### การรักษามะเร็งแบบหลายวิธี (multimodality)\n- **Surgery**: curative (ตัดก้อน + margin ลบ + ต่อมน้ำเหลือง), prophylactic (เช่น total colectomy ใน FAP, thyroidectomy ใน RET carrier, mastectomy ใน BRCA), palliative, cytoreductive, metastasectomy (เช่น liver metastasis ของ colorectal)\n- **Neoadjuvant** = ให้ก่อนผ่าตัดเพื่อ **ลดขนาดก้อน (downstage)** เพิ่มโอกาสผ่าตัดเก็บอวัยวะ และดูการตอบสนอง · **Adjuvant** = ให้หลังผ่าตัดเพื่อกำจัด micrometastasis\n- **Chemotherapy** (cell-cycle specific/non-specific), **radiotherapy**, **hormonal therapy** (tamoxifen, aromatase inhibitor, ADT), **targeted therapy** (trastuzumab, imatinib), **immunotherapy** (immune checkpoint inhibitor เช่น anti-PD-1)\n- การตัดสินใจทำใน **multidisciplinary tumor board**",
+   "pearls": [
+    "Oncogene = gain of function เสีย allele เดียวก็พอ (RAS, MYC, HER2, RET)",
+    "Tumor suppressor = two-hit (TP53, RB1, APC, BRCA) · germline hit แรก → มะเร็งอายุน้อย หลายที่",
+    "FNA ให้ cytology แยก in situ/invasive ไม่ได้ · core-needle ให้ histology + receptor",
+    "ผล biopsy ไม่สอดคล้องกับภาพทางคลินิก → เจาะซ้ำหรือ open biopsy",
+    "CEA ไม่ใช้คัดกรอง ใช้ติดตาม recurrence หลังผ่าตัด colorectal cancer",
+    "Neoadjuvant = ก่อนผ่าตัดเพื่อ downstage · adjuvant = หลังผ่าตัดกำจัด micrometastasis",
+    "ypT = staging หลังได้ neoadjuvant therapy"
+   ],
+   "items": [
+    {
+     "id": "N12-07-1-1",
+     "kind": "mcq",
+     "topic": "CEA surveillance",
+     "stem": "A 58-year-old man undergoes right hemicolectomy for a stage III (pT3N1M0) adenocarcinoma of the ascending colon. His preoperative CEA was 18 ng/mL and normalized to 2 ng/mL after surgery. He completes adjuvant chemotherapy. Which serum test is most useful for detecting recurrence during follow-up?",
+     "choices": [
+      "Carcinoembryonic antigen (CEA)",
+      "CA 19-9",
+      "Alpha-fetoprotein (AFP)",
+      "CA-125",
+      "Lactate dehydrogenase (LDH)"
+     ],
+     "answer": 0,
+     "explain": "**CEA** เป็น marker ที่ใช้ติดตามมะเร็งลำไส้ใหญ่หลังผ่าตัดได้คุ้มค่าที่สุด recurrence ส่วนใหญ่ถูกพบครั้งแรกจาก CEA ที่สูงขึ้น ASCO แนะนำวัดทุก 3 เดือนอย่างน้อย 3 ปีใน stage II–III ที่เป็นผู้สมควรผ่าตัด/รักษาต่อหากกลับเป็นซ้ำ และใช้ได้ดีเป็นพิเศษในรายที่ CEA สูงก่อนผ่าตัดแล้วกลับปกติแบบผู้ป่วยรายนี้\n- **CA 19-9** ข้อมูลไม่พอแนะนำให้ใช้ติดตามมะเร็งลำไส้ใหญ่ ใช้กับตับอ่อน/ทางเดินน้ำดีมากกว่า\n- **AFP** ใช้กับ HCC และ germ cell tumor\n- **CA-125** ใช้กับ epithelial ovarian cancer\n- **LDH** เป็นตัวพยากรณ์ใน melanoma stage IV และ lymphoma ไม่จำเพาะต่อ colorectal",
+     "pearl": "CEA: ติดตาม recurrence ของ colorectal cancer ไม่ใช่คัดกรอง",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10"
+     ]
+    },
+    {
+     "id": "N12-07-1-2",
+     "kind": "mcq",
+     "topic": "Biopsy choice",
+     "stem": "A 46-year-old woman has a 4-cm hard, irregular breast mass with a BI-RADS 5 lesion on mammography. The surgeon needs to know whether the tumor is invasive and its hormone receptor and HER2 status before planning neoadjuvant therapy. Which diagnostic procedure is most appropriate?",
+     "choices": [
+      "Image-guided core-needle biopsy",
+      "Fine-needle aspiration cytology",
+      "Excisional biopsy of the entire mass",
+      "Incisional biopsy under general anesthesia",
+      "Nipple discharge cytology"
+     ],
+     "answer": 0,
+     "explain": "เมื่อผลชิ้นเนื้อจะ **เปลี่ยนการรักษา** (ต้องรู้ว่า invasive หรือไม่ และ ER/PR/HER2) **core-needle biopsy** เป็นวิธีที่เหมาะที่สุด ได้ชิ้นเนื้อที่เห็น architecture ทำ immunohistochemistry ได้ ทำนอกห้องผ่าตัดและไม่รบกวนการผ่าตัดครั้งต่อไป\n- **FNA** ให้แค่ cytology แยก invasive กับ in situ ไม่ได้ และทำ receptor ได้จำกัด\n- **Excisional biopsy** ของก้อน 4 cm ที่จะให้ neoadjuvant ทำให้เสียโอกาสประเมินการตอบสนองและอาจได้ margin ไม่ดี\n- **Incisional biopsy** สงวนไว้เมื่อเข็มวินิจฉัยไม่ได้\n- **Cytology น้ำจากหัวนม** ไม่ไวและไม่ได้ข้อมูล receptor",
+     "pearl": "ต้องการ histology + receptor → core-needle biopsy",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10"
+     ]
+    },
+    {
+     "id": "N12-07-1-3",
+     "kind": "mcq",
+     "topic": "Oncogene vs tumor suppressor",
+     "stem": "A 5-year-old boy is referred because his mother and maternal grandfather had medullary thyroid carcinoma and pheochromocytoma. Genetic testing shows a germline activating point mutation in a receptor tyrosine kinase gene. Prophylactic total thyroidectomy is recommended. Which statement best describes the mutated gene?",
+     "choices": [
+      "A proto-oncogene in which a single mutant allele is sufficient to drive tumorigenesis",
+      "A tumor suppressor gene that requires loss of both alleles",
+      "A DNA mismatch repair gene causing microsatellite instability",
+      "A gatekeeper gene that controls apoptosis through p53",
+      "A caretaker gene for homologous recombination like BRCA1"
+     ],
+     "answer": 0,
+     "explain": "ครอบครัวมี medullary thyroid carcinoma + pheochromocytoma = **MEN2** จาก **RET** ซึ่งเป็น **proto-oncogene** การกลายพันธุ์แบบ **gain of function** ใน allele เดียวก็เพียงพอ (ถ่ายทอดแบบ autosomal dominant และ penetrance สูงมาก) จึงตัดต่อมไทรอยด์ป้องกันตั้งแต่เด็กตามความเสี่ยงของ codon\n- **Tumor suppressor (two-hit)** เช่น RB1, TP53, APC, VHL ต้องเสียทั้งสอง allele\n- **Mismatch repair gene** (MLH1, MSH2) เป็นกลไกของ Lynch syndrome\n- **ยีนควบคุม apoptosis ผ่าน p53** ไม่ใช่กลไกของ RET\n- **BRCA1** เป็น tumor suppressor ที่ซ่อม DNA ด้วย homologous recombination",
+     "pearl": "RET (MEN2) = proto-oncogene, gain of function — prophylactic thyroidectomy",
+     "src": "Schwartz 11e Ch 10",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 10"
+     ]
+    },
+    {
+     "id": "N12-07-1-4",
+     "kind": "mcq",
+     "topic": "Neoadjuvant therapy",
+     "stem": "A 52-year-old woman has a 6-cm HER2-positive invasive ductal carcinoma of a small breast with a single palpable, biopsy-proven axillary node. She strongly wishes to preserve her breast. The tumor board recommends giving chemotherapy plus trastuzumab first, followed by surgery. What is the main purpose of this sequencing?",
+     "choices": [
+      "To downstage the tumor and nodes, allowing breast conservation and assessing response",
+      "To treat micrometastatic disease after all gross tumor has been removed",
+      "To palliate symptoms in incurable metastatic disease",
+      "To allow accurate pathologic staging before chemotherapy begins",
+      "To reduce the risk of contralateral breast cancer"
+     ],
+     "answer": 0,
+     "explain": "การให้ systemic therapy **ก่อนผ่าตัด** คือ **neoadjuvant** เป้าหมายหลักคือ **ลดขนาดก้อนและต่อมน้ำเหลือง (downstaging)** ทำให้ก้อนใหญ่เมื่อเทียบกับเต้าเล็กกลายเป็นทำ BCS ได้ และดูการตอบสนองในร่างกายจริง (pathologic complete response บอกพยากรณ์และช่วยตัดสินการรักษาต่อ) ได้ผลดีมากใน HER2+ และ triple-negative\n- **กำจัด micrometastasis หลังตัดก้อนหมด** คือนิยามของ adjuvant\n- **Palliative** ใช้ในโรคระยะแพร่กระจายที่รักษาไม่หาย\n- **Pathologic staging ก่อน chemo** ทำไม่ได้เมื่อให้ยาก่อน หลังผ่าตัดจะได้ ypTNM แทน\n- **ลดมะเร็งเต้านมอีกข้าง** เป็นประโยชน์ของ endocrine therapy ไม่ใช่เหตุผลของ neoadjuvant chemo",
+     "pearl": "Neoadjuvant = downstage + ดูการตอบสนอง · adjuvant = กำจัด micrometastasis",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-07-2",
+   "title": "Skin cancers: BCC, SCC, melanoma (ABCDE, Breslow)",
+   "summary": "แยก BCC, SCC และ melanoma จากลักษณะทางคลินิกได้อย่างไร biopsy แบบไหน และ Breslow thickness กำหนด margin และ SLNB อย่างไร",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 16 — Malignant tumors of the skin",
+   "md": "### ภาพรวมมะเร็งผิวหนัง\nปัจจัยเสี่ยงหลักร่วมกันคือ **UV** (โดยเฉพาะ UVB), ผิวขาว, ภูมิคุ้มกันต่ำ (ผู้รับปลูกถ่ายอวัยวะ), รังสี, สารหนู และภาวะพันธุกรรม (xeroderma pigmentosum, nevoid BCC syndrome)\n\n| | **Basal cell carcinoma** | **Squamous cell carcinoma** | **Melanoma** |\n|---|---|---|---|\n| ความถี่ | **พบบ่อยที่สุด** | อันดับ 2 | น้อยกว่า แต่ตายมากที่สุด |\n| ตำแหน่ง | หน้า (จมูก), ริมฝีปากบน, เปลือกตา | บริเวณโดนแดด, แผลเรื้อรัง, แผลเป็นไฟไหม้ | ทุกที่ · คนเอเชียพบที่ **ฝ่าเท้า ฝ่ามือ ใต้เล็บ** |\n| ลักษณะ | **ตุ่มมันวาว (pearly) ขอบนูน มี telangiectasia**, แผลบุ๋มกลาง (**rodent ulcer**) | ตุ่ม/แผลมีสะเก็ด keratin โตเร็ว เลือดออกง่าย | ไฝผิดรูป **ABCDE** |\n| รอยโรคตั้งต้น | — | **actinic keratosis**, Bowen disease (SCC in situ) | dysplastic nevus, congenital nevus ใหญ่ |\n| การแพร่กระจาย | **ลุกลามเฉพาะที่ แทบไม่แพร่กระจาย** | ไปต่อมน้ำเหลืองได้ | ไปต่อมน้ำเหลืองและอวัยวะไกลได้มาก |\n\n### BCC และ SCC: รักษาด้วยการตัดให้ margin ลบ\n- **BCC** ชนิดที่พบบ่อยคือ nodular · ชนิด morpheaform/infiltrative ขอบไม่ชัด เสี่ยงตัดไม่หมด\n- Margin BCC: ราว **4 mm** สำหรับก้อนเล็กความเสี่ยงต่ำ (ใหญ่/เสี่ยงสูงต้องกว้างขึ้น)\n- **Mohs micrographic surgery**: ตัดเป็นชั้นและตรวจขอบทันที ได้อัตราหายสูงสุดและเก็บเนื้อดี → ใช้กับ **บนใบหน้า/บริเวณสำคัญ, ขอบไม่ชัด, เป็นซ้ำ**\n- **SCC** เริ่มจาก actinic keratosis เป็นส่วนใหญ่ · **Bowen disease** = SCC in situ ทั้งชั้น epidermis (ที่องคชาตเรียก erythroplasia of Queyrat)\n- **Marjolin ulcer** = SCC ที่เกิดในแผลเรื้อรังหรือ **แผลเป็นไฟไหม้** → ก้าวร้าว แพร่กระจายได้มากกว่า → แผลเป็นเก่าที่เริ่มเป็นแผลไม่หาย/มีก้อน **ต้อง biopsy**\n- SCC ความเสี่ยงสูง: **> 2 cm, ลึก > 4 mm**, poorly differentiated, perineural invasion, ภูมิคุ้มกันต่ำ, บริเวณหู ริมฝีปาก\n- Margin SCC: **4 mm (low risk) / 6 mm (high risk)** + คลำต่อมน้ำเหลือง ถ้าโตให้ FNA/core แล้ว lymphadenectomy\n\n### Melanoma: จำ ABCDE และอย่าทำ shave biopsy\n**ABCDE** ของไฝที่น่าสงสัย: **A**symmetry, **B**order irregular, **C**olor variation, **D**iameter > 6 mm, **E**volution (เปลี่ยนแปลง) · ร่วมกับไฝที่โตเร็ว มีแผล หรือเลือดออก\n\n| ชนิด | สัดส่วน | ลักษณะ |\n|---|---|---|\n| **Superficial spreading** | **50–70% (บ่อยสุดในคนผิวขาว)** | radial growth ก่อน มักมาจากไฝเดิม |\n| **Nodular** | 15–30% | vertical growth เร็ว ก้าวร้าว อาจไม่มีสี |\n| Lentigo maligna | ~10% | ผู้สูงอายุ ใบหน้าที่โดนแดด |\n| **Acral lentiginous** | สัดส่วนสูงในคนผิวคล้ำ/เอเชีย | **ฝ่ามือ ฝ่าเท้า ใต้เล็บ** ไม่สัมพันธ์กับแดด วินิจฉัยช้า |\n\n- การวินิจฉัย: **excisional biopsy margin 1–3 mm** (เต็มความหนา) เพื่อวัดความลึกได้ครบ · ก้อนใหญ่/ตำแหน่งยากใช้ incisional หรือ punch ส่วนที่หนาที่สุด\n- **ห้าม shave biopsy** เพราะตัดฐานทิ้ง วัด Breslow ไม่ได้\n- รอยดำใต้เล็บแนวยาวที่กว้างขึ้น/ลามมาที่ผิวรอบเล็บ (**Hutchinson sign**) → สงสัย subungual melanoma\n\n### Breslow thickness, staging และการผ่าตัด\n- **Breslow thickness** (วัดจาก granular layer ถึงจุดลึกสุด หน่วย mm) = **ตัวพยากรณ์สำคัญที่สุดของ melanoma ที่ยังไม่กระจาย** (แทน Clark level)\n- ตัวพยากรณ์อื่น: **ulceration**, mitotic rate · ถ้ามีต่อมน้ำเหลือง → **จำนวนต่อมที่บวก** สำคัญที่สุด · stage IV: ตำแหน่งที่กระจาย และ **LDH** สูงพยากรณ์แย่\n\n| Breslow (mm) | Margin ของ wide local excision |\n|---|---|\n| in situ | 0.5–1 cm |\n| ≤ 1.0 | 1 cm |\n| 1.01–2.0 | 1–2 cm |\n| > 2.0 | 2 cm |\n\n- **Sentinel lymph node biopsy (SLNB)**: staging ต่อมน้ำเหลืองในผู้ป่วยที่คลำไม่พบต่อม — แนะนำเมื่อหนา **> 1 mm** และพิจารณาใน 0.8–1 mm หรือมี ulceration (NCCN/AJCC 8th) ทำพร้อม wide excision\n- SLN บวก: ปัจจุบัน **ไม่ทำ completion lymph node dissection เป็นประจำ** (MSLT-II) ใช้การติดตามด้วย US + adjuvant immunotherapy/targeted (BRAF)\n- Staging: localized (I–II), regional (III), distant (IV) · ตรวจภาพทั้งตัว (CT/PET-CT, MRI brain) เมื่อ stage III ขึ้นไป",
+   "pearls": [
+    "BCC: pearly papule + telangiectasia + rodent ulcer · ลุกลามเฉพาะที่ แทบไม่แพร่กระจาย",
+    "SCC มาจาก actinic keratosis · Marjolin ulcer = SCC ในแผลเป็นไฟไหม้/แผลเรื้อรัง ก้าวร้าว",
+    "Mohs surgery: หน้า/บริเวณสำคัญ, ขอบไม่ชัด, เป็นซ้ำ",
+    "ABCDE: Asymmetry, Border, Color, Diameter > 6 mm, Evolution",
+    "ไฝน่าสงสัย → excisional biopsy margin 1–3 mm · ห้าม shave",
+    "Breslow thickness = prognostic factor สำคัญสุดของ localized melanoma · node+ → จำนวนต่อม",
+    "Margin: in situ 0.5–1 cm, ≤ 1 mm 1 cm, 1–2 mm 1–2 cm, > 2 mm 2 cm"
+   ],
+   "mnem": [
+    {
+     "name": "ABCDE",
+     "what": "ลักษณะไฝที่สงสัย melanoma",
+     "lines": [
+      [
+       "A",
+       "Asymmetry"
+      ],
+      [
+       "B",
+       "Border irregular"
+      ],
+      [
+       "C",
+       "Color variegation"
+      ],
+      [
+       "D",
+       "Diameter > 6 mm"
+      ],
+      [
+       "E",
+       "Evolution (ขนาด รูปร่าง สี อาการเปลี่ยน)"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N12-07-2-1",
+     "kind": "mcq",
+     "topic": "Basal cell carcinoma",
+     "stem": "A 68-year-old rice farmer has a slowly enlarging lesion on the side of his nose for 2 years. Examination shows a 1-cm pearly, translucent papule with rolled edges, surface telangiectasias, and a small central ulcer. There is no cervical lymphadenopathy. What is the most likely diagnosis?",
+     "choices": [
+      "Basal cell carcinoma",
+      "Squamous cell carcinoma",
+      "Nodular melanoma",
+      "Keratoacanthoma",
+      "Seborrheic keratosis"
+     ],
+     "answer": 0,
+     "explain": "ผู้สูงอายุทำงานกลางแดด รอยโรคบนจมูก โตช้า **มันวาว (pearly) ขอบม้วนนูน มี telangiectasia และแผลบุ๋มตรงกลาง (rodent ulcer)** เป็นลักษณะคลาสสิกของ **nodular BCC** ซึ่งเป็นมะเร็งผิวหนังที่พบบ่อยที่สุด ลุกลามเฉพาะที่และแทบไม่กระจาย\n- **SCC** มักเป็นก้อน/แผลมีสะเก็ด keratin โตเร็วกว่า เกิดจาก actinic keratosis\n- **Nodular melanoma** เป็นตุ่มสีดำ/น้ำเงินโตเร็ว (บางรายไม่มีสี) ไม่มีขอบมันวาวแบบนี้\n- **Keratoacanthoma** โตเร็วมากในไม่กี่สัปดาห์ มีจุก keratin ตรงกลาง\n- **Seborrheic keratosis** เป็นแผ่นนูนสีน้ำตาลเหมือน \"แปะไว้\" ไม่มีแผล",
+     "pearl": "Pearly + telangiectasia + rodent ulcer = BCC",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    },
+    {
+     "id": "N12-07-2-2",
+     "kind": "mcq",
+     "topic": "Melanoma prognosis",
+     "stem": "A 45-year-old woman undergoes excisional biopsy of a changing pigmented lesion on her calf. Pathology shows invasive superficial spreading melanoma with clear margins. Examination of the regional lymph nodes is normal and there is no evidence of distant disease. Which pathologic feature is the most important predictor of her prognosis?",
+     "choices": [
+      "Breslow tumor thickness",
+      "Clark level of invasion",
+      "Diameter of the lesion",
+      "Degree of pigmentation",
+      "Presence of a pre-existing nevus"
+     ],
+     "answer": 0,
+     "explain": "ใน melanoma ที่ยังไม่กระจาย (stage I–II) **Breslow thickness** (ความลึกเป็น mm จาก granular layer ถึงเซลล์มะเร็งที่ลึกที่สุด) เป็นตัวพยากรณ์สำคัญที่สุด และใช้กำหนด T stage, margin ของ wide excision และข้อบ่งชี้ SLNB ร่วมกับ ulceration\n- **Clark level** (ระดับชั้นผิวหนัง) ถูกแทนที่ด้วย Breslow เพราะทำนายได้แย่กว่า\n- **เส้นผ่านศูนย์กลาง** ใช้ในการคัดกรอง (ABCDE) ไม่ใช่ตัวพยากรณ์หลัก\n- **ระดับสี** ไม่มีค่าพยากรณ์ บางก้อนไม่มีสีเลย\n- **การเกิดจากไฝเดิม** ไม่ได้กำหนดพยากรณ์",
+     "pearl": "Localized melanoma: Breslow thickness พยากรณ์สำคัญที่สุด",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    },
+    {
+     "id": "N12-07-2-3",
+     "kind": "mcq",
+     "topic": "Biopsy of suspicious pigmented lesion",
+     "stem": "A 52-year-old man notices that a mole on his back has grown and darkened over 6 months. It is 9 mm, asymmetric, with irregular borders and areas of black and brown. The lesion is on a flat area of the back and can be easily closed primarily. What is the most appropriate next step?",
+     "choices": [
+      "Full-thickness excisional biopsy with 1–3 mm margins",
+      "Shave biopsy of the raised portion",
+      "Wide local excision with 2-cm margins without prior biopsy",
+      "Cryotherapy of the lesion",
+      "Dermoscopic follow-up in 3 months"
+     ],
+     "answer": 0,
+     "explain": "ไฝที่มีลักษณะ **ABCDE** (อสมมาตร ขอบไม่เรียบ หลายสี > 6 mm เปลี่ยนแปลง) ต้องพิสูจน์ด้วย **excisional biopsy เต็มความหนา margin 1–3 mm** ซึ่งให้พยาธิแพทย์วัด **Breslow thickness** ได้ครบ แล้วจึงวางแผน wide excision และ SLNB ตามความลึก\n- **Shave biopsy** ตัดฐานรอยโรคทิ้ง ทำให้วัดความลึกไม่ได้และ staging ผิด\n- **Wide excision 2 cm โดยไม่มีผลชิ้นเนื้อ** อาจตัดกว้างเกินจำเป็น และทำให้ lymphatic mapping สำหรับ SLNB เสียความแม่นยำ\n- **Cryotherapy** ทำลายเนื้อเยื่อจนไม่มีผลพยาธิ\n- **รอดูต่อ** ไม่เหมาะกับรอยโรคที่ชวนสงสัยสูงและเปลี่ยนแปลงแล้ว",
+     "pearl": "ไฝน่าสงสัย → excisional biopsy 1–3 mm ห้าม shave",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    },
+    {
+     "id": "N12-07-2-4",
+     "kind": "mcq",
+     "topic": "Melanoma margins and SLNB",
+     "stem": "A 60-year-old man has an excisional biopsy of an acral pigmented lesion on the sole showing melanoma with a Breslow thickness of 1.6 mm, no ulceration. There are no palpable inguinal nodes and staging is otherwise negative. What is the most appropriate definitive surgical management?",
+     "choices": [
+      "Wide local excision with 1–2 cm margins and sentinel lymph node biopsy",
+      "Wide local excision with 0.5-cm margins only",
+      "Wide local excision with 2-cm margins and elective inguinal lymph node dissection",
+      "Below-knee amputation",
+      "Re-excision with 5-cm margins and observation of nodes"
+     ],
+     "answer": 0,
+     "explain": "Breslow **1.01–2.0 mm** ต้องทำ **wide local excision margin 1–2 cm** และเนื่องจากหนา **> 1 mm** คลำไม่พบต่อม จึงควรทำ **sentinel lymph node biopsy** พร้อมกันเพื่อ staging (ผลบวกจะได้ adjuvant therapy)\n- **Margin 0.5 cm** ใช้กับ melanoma in situ เท่านั้น\n- **Elective lymph node dissection** ในผู้ที่คลำไม่พบต่อมไม่เพิ่มอัตรารอดและมี lymphedema มาก — SLNB แทนแล้ว\n- **ตัดขา** ไม่จำเป็นสำหรับรอยโรคที่ฝ่าเท้าที่ตัดกว้างและปิดด้วย graft/flap ได้\n- **Margin 5 cm** ไม่ได้ประโยชน์เพิ่มและทำให้ปิดแผลยาก",
+     "pearl": "Breslow 1–2 mm → margin 1–2 cm + SLNB",
+     "src": "Schwartz 11e Ch 16",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-07-3",
+   "title": "Benign breast disease, triple assessment & BI-RADS",
+   "summary": "ก้อนหรืออาการที่เต้านมต้องประเมินด้วยอะไรบ้าง แปลผล BI-RADS แล้วทำอะไรต่อ และแยกโรคไม่ร้ายที่พบบ่อยอย่างไร",
+   "minutes": 12,
+   "source": "Schwartz 11e Ch 17 — Benign breast disorders, imaging, biopsy, nipple discharge, phyllodes tumors",
+   "md": "### Triple assessment: หัวใจของการตรวจก้อนเต้านม\nก้อนเต้านมทุกก้อนต้องประเมิน 3 ด้าน และ **ทั้งสามด้านต้องไปทางเดียวกัน (concordant)**:\n1. **Clinical**: ประวัติ (อายุ ประจำเดือน ปัจจัยเสี่ยง ครอบครัว) + ตรวจร่างกาย (ขนาด ผิว หัวนม ต่อมน้ำเหลืองรักแร้/เหนือไหปลาร้า)\n2. **Imaging**: อายุ **< 30–35 ปี เริ่มที่ ultrasound** · อายุมากกว่านั้น **mammogram + ultrasound**\n3. **Pathology**: **core-needle biopsy** (preferred) — ได้ histology และ receptor\n\n> ถ้าสามด้านไม่สอดคล้องกัน (เช่น ภาพน่าสงสัยแต่ core ปกติ) → **ต้องตัด/เจาะซ้ำ** ห้ามสรุปว่าไม่ร้าย\n\n### BI-RADS: แปลผลภาพแล้วสั่งอะไรต่อ\n| Category | ความหมาย | การจัดการ |\n|---|---|---|\n| **0** | ข้อมูลไม่พอ | ถ่ายภาพเพิ่ม (spot view, US) |\n| **1** | ปกติ | คัดกรองตามปกติ |\n| **2** | ไม่ร้ายแน่นอน (simple cyst, calcified fibroadenoma) | คัดกรองตามปกติ |\n| **3** | น่าจะไม่ร้าย (มะเร็ง ≤ 2%) | **ติดตามระยะสั้น 6 เดือน** |\n| **4** (A/B/C) | น่าสงสัย (> 2% ถึง < 95%) | **biopsy** |\n| **5** | สงสัยมะเร็งสูง (≥ 95%) | **biopsy** |\n| **6** | biopsy ยืนยันแล้วว่าเป็นมะเร็ง | รักษา |\n\n(ACR BI-RADS 5th edition)\n- ลักษณะน่าสงสัยใน mammogram: ก้อน **ขอบ spiculated**, **microcalcification แบบ pleomorphic/linear branching**, architectural distortion · ใน US: ก้อน **taller-than-wide**, ขอบไม่เรียบ, posterior shadowing\n\n### โรคเต้านมที่ไม่ใช่มะเร็งที่ต้องแยก\n| โรค | ลักษณะเด่น | การจัดการ |\n|---|---|---|\n| **Fibroadenoma** | หญิงอายุ **15–25 ปี** ก้อนเรียบ ขอบชัด **เคลื่อนดี (breast mouse)** ยางแข็ง | US ± core · ติดตามได้ · ตัดเมื่อโต > 3 cm, โตเร็ว, ผู้ป่วยต้องการ |\n| **Phyllodes tumor** | อายุมากกว่า (~40 ปี) **ก้อนใหญ่โตเร็ว** คล้าย fibroadenoma | **wide excision margin ≥ 1 cm** · **ไม่ต้องเลาะต่อมน้ำเหลือง** (กระจายทางเลือดถ้ามะเร็ง) |\n| **Breast cyst** | อายุ 35–50 ปี ก้อนนุ่ม/ตึง เปลี่ยนตามรอบเดือน | US ยืนยัน → เจาะดูด ถ้า **ไม่มีเลือด + ก้อนหายหมด** = จบ · มีเลือด/ก้อนเหลือ/กลับเป็นซ้ำที่เดิม → biopsy |\n| **Fibrocystic change** | คลำเป็นตะปุ่มตะป่ำ เจ็บก่อนมีประจำเดือน (cyclical mastalgia) | ให้ความมั่นใจ ยกทรงพยุง ยาแก้ปวด |\n| **Intraductal papilloma** | **เลือดออกจากหัวนมรูเดียว** ไม่มีก้อนชัด | mammogram/US ± ductogram → **ตัดท่อน้ำนมนั้น (microdochectomy)** |\n| **Duct ectasia / periductal mastitis** | หัวนมบุ๋ม น้ำสีเขียวหลายรู สูบบุหรี่ | ให้ความรู้ งดบุหรี่ ระบายฝีถ้ามี |\n| **Breast abscess** | ระหว่างให้นม (S. aureus) | ยาปฏิชีวนะ + **เจาะดูดด้วย US** ให้นมต่อได้ |\n\n### Nipple discharge: เมื่อไหร่ต้องกังวล\nลักษณะที่ชวนสงสัยมะเร็ง: **ไหลเอง (spontaneous), ข้างเดียว, ออกจากท่อเดียว, มีเลือดหรือใสเป็นน้ำ, อายุ ≥ 40 ปี, มีก้อนร่วม**\n- น้ำนมสองข้างหลายท่อ (galactorrhea) → ตรวจ **prolactin, TSH, การตั้งครรภ์, ยา** (antipsychotic, metoclopramide)\n- สาเหตุที่พบบ่อยที่สุดของเลือดออกจากหัวนมรูเดียวคือ **intraductal papilloma** แต่ต้องแยก DCIS/มะเร็งเสมอ\n\n### รอยโรคเสี่ยงสูง (high-risk lesions)\n- **Atypical ductal/lobular hyperplasia (ADH/ALH)** เพิ่มความเสี่ยงมะเร็งราว 4–5 เท่า · ADH จาก core ควรตัดออกเพราะพบมะเร็งเมื่อตัดทั้งก้อนได้บ่อย\n- **LCIS** = marker of risk (มะเร็งที่ตามมาเกิดได้ทั้งสองข้างและเป็น ductal บ่อย) → เฝ้าระวัง ± chemoprevention (tamoxifen/raloxifene)\n- **DCIS** = precursor ของ invasive ductal carcinoma → รักษาเฉพาะที่ (ดูหัวข้อถัดไป)",
+   "pearls": [
+    "Triple assessment = clinical + imaging + core biopsy ต้อง concordant",
+    "อายุน้อย (< 30–35) เริ่ม US · อายุมากกว่า mammogram + US",
+    "BI-RADS 3 → ติดตาม 6 เดือน · BI-RADS 4–5 → biopsy",
+    "Fibroadenoma: 15–25 ปี ก้อนเคลื่อนดี · phyllodes: อายุมากกว่า ก้อนใหญ่โตเร็ว → wide excision ≥ 1 cm ไม่เลาะต่อม",
+    "Cyst aspiration: น้ำไม่มีเลือด + ก้อนหาย = จบ · มีเลือด/ก้อนเหลือ → biopsy",
+    "เลือดออกจากหัวนมรูเดียว ไม่มีก้อน = intraductal papilloma (ต้องแยกมะเร็ง)",
+    "ADH จาก core → ตัดออก · LCIS = marker of risk"
+   ],
+   "items": [
+    {
+     "id": "N12-07-3-1",
+     "kind": "mcq",
+     "topic": "Fibroadenoma",
+     "stem": "A 21-year-old woman notices a painless lump in her right breast. Examination shows a 2-cm, smooth, firm, rubbery, well-circumscribed, highly mobile mass. There is no nipple discharge or axillary lymphadenopathy. What is the most appropriate initial imaging study?",
+     "choices": [
+      "Breast ultrasonography",
+      "Diagnostic mammography",
+      "Breast MRI",
+      "PET-CT",
+      "Chest radiograph"
+     ],
+     "answer": 0,
+     "explain": "หญิงอายุน้อย ก้อนเรียบ ยางแข็ง **เคลื่อนดีมาก** = **fibroadenoma** โดยทั่วไป ในผู้หญิงอายุน้อยใช้ **ultrasound** เป็นภาพแรกเพราะเนื้อเต้านมแน่น mammogram มองไม่ชัดและไม่ควรรับรังสีโดยไม่จำเป็น ถ้า US มีลักษณะ fibroadenoma ชัดในคนอายุน้อยกว่า 25 ปี อาจติดตามได้โดยไม่ต้อง core biopsy\n- **Mammography** ไวต่ำใน dense breast ของหญิงอายุน้อย ใช้เป็นหลักเมื่ออายุมากกว่า 30–35 ปี\n- **MRI** ใช้คัดกรองกลุ่มเสี่ยงสูงหรือประเมินขอบเขตมะเร็ง\n- **PET-CT** ใช้ staging มะเร็งระยะลุกลาม\n- **CXR** ไม่ช่วยประเมินก้อนเต้านม",
+     "pearl": "ก้อนเต้านมในหญิงอายุน้อย → ultrasound ก่อน",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-3-2",
+     "kind": "mcq",
+     "topic": "Bloody nipple discharge",
+     "stem": "A 42-year-old woman reports spontaneous bloody discharge from a single duct of her left nipple for 1 month. No mass is palpable. Pressure at the 3 o'clock periareolar position reproduces the discharge. Mammography and ultrasound show a small dilated duct behind the nipple with no suspicious mass or calcifications. What is the most likely cause?",
+     "choices": [
+      "Intraductal papilloma",
+      "Duct ectasia",
+      "Fibrocystic change",
+      "Prolactinoma",
+      "Fibroadenoma"
+     ],
+     "answer": 0,
+     "explain": "**เลือดออกจากหัวนมเองจากท่อเดียว** และมี trigger point รอบลานนม โดยไม่มีก้อนชัด สาเหตุที่พบบ่อยที่สุดคือ **intraductal papilloma** ในท่อน้ำนมใหญ่ใต้หัวนม การรักษาคือ **ตัดท่อที่มีปัญหา (microdochectomy)** ซึ่งได้ทั้งวินิจฉัยแยก DCIS/มะเร็งและรักษา\n- **Duct ectasia** มักมีน้ำสีเขียว/เหนียวจากหลายท่อ หัวนมบุ๋ม พบในผู้สูบบุหรี่\n- **Fibrocystic change** ทำให้เจ็บและคลำได้ตะปุ่มตะป่ำ ไม่ทำให้เลือดออกจากท่อเดียว\n- **Prolactinoma** ทำให้น้ำนมขาวออกสองข้างหลายท่อ\n- **Fibroadenoma** เป็นก้อน ไม่ทำให้มีเลือดออกจากหัวนม",
+     "pearl": "เลือดออกจากหัวนมรูเดียว ไม่มีก้อน → intraductal papilloma → duct excision",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-3-3",
+     "kind": "mcq",
+     "topic": "BI-RADS 4",
+     "stem": "A 55-year-old woman has a screening mammogram showing a new 8-mm cluster of fine pleomorphic microcalcifications in the left upper outer quadrant. There is no palpable mass. The radiologist reports BI-RADS 4B. What is the most appropriate next step?",
+     "choices": [
+      "Stereotactic (image-guided) core-needle biopsy",
+      "Repeat mammography in 6 months",
+      "Routine annual screening",
+      "Modified radical mastectomy",
+      "Breast MRI and observation if negative"
+     ],
+     "answer": 0,
+     "explain": "**BI-RADS 4** = suspicious ความน่าจะเป็นมะเร็งมากกว่า 2% แต่น้อยกว่า 95% ต้อง **biopsy** เสมอ microcalcification ที่คลำไม่ได้ใช้ **stereotactic core-needle (vacuum-assisted) biopsy** วางมาร์กเกอร์ไว้ และตรวจว่าตัวอย่างมี calcification จริง (specimen radiograph) เพื่อให้ concordant\n- **ติดตาม 6 เดือน** เป็นการจัดการ BI-RADS 3 (probably benign)\n- **คัดกรองปีละครั้ง** ใช้กับ BI-RADS 1–2\n- **Mastectomy** ทำโดยยังไม่มีผลชิ้นเนื้อไม่ได้\n- **MRI แล้วเลิกติดตามถ้าปกติ** ไม่สามารถแทนการพิสูจน์ด้วยชิ้นเนื้อของ calcification ที่น่าสงสัย",
+     "pearl": "BI-RADS 4–5 → biopsy · BI-RADS 3 → ติดตาม 6 เดือน",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-3-4",
+     "kind": "mcq",
+     "topic": "Phyllodes tumor",
+     "stem": "A 44-year-old woman has a breast mass that grew from 3 cm to 8 cm over 4 months. It is smooth, lobulated, and mobile, with stretched shiny skin but no ulceration. Axillary nodes are not palpable. Core-needle biopsy shows a fibroepithelial lesion with hypercellular stroma and leaf-like architecture. What is the most appropriate surgical management?",
+     "choices": [
+      "Wide local excision with at least 1-cm margins without axillary surgery",
+      "Enucleation of the mass through a periareolar incision",
+      "Modified radical mastectomy with axillary lymph node dissection",
+      "Sentinel lymph node biopsy with lumpectomy",
+      "Observation with repeat ultrasound in 6 months"
+     ],
+     "answer": 0,
+     "explain": "ก้อน fibroepithelial **ใหญ่และโตเร็ว** ในหญิงวัย 40 ปี stroma เซลล์หนาแน่นและเรียงเป็นใบไม้ = **phyllodes tumor** การรักษาคือ **ตัดกว้างให้มี margin เนื้อปกติอย่างน้อย 1 cm** (ก้อนใหญ่เทียบกับเต้าอาจต้องทำ mastectomy) **ไม่ต้องผ่าตัดต่อมน้ำเหลือง** เพราะชนิด malignant แพร่กระจายทางกระแสเลือด แทบไม่ไปรักแร้\n- **Enucleation** แบบ fibroadenoma ทำให้กลับเป็นซ้ำเฉพาะที่สูง\n- **Axillary dissection** ไม่มีข้อบ่งชี้เพราะต่อมน้ำเหลืองแทบไม่ถูกลาม\n- **SLNB** ไม่จำเป็นด้วยเหตุผลเดียวกัน\n- **เฝ้าดู** ไม่เหมาะกับก้อนที่โตเร็ว",
+     "pearl": "Phyllodes: wide excision ≥ 1 cm ไม่ต้องทำรักแร้",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n12-07-4",
+   "title": "Breast cancer: risk factors, BRCA, types, staging & treatment",
+   "summary": "ใครเสี่ยงมะเร็งเต้านม BRCA1/2 ต่างกันอย่างไร แต่ละชนิดและ stage หน้าตาเป็นอย่างไร และเลือกการรักษาเฉพาะที่/ทั้งระบบอย่างไร",
+   "minutes": 14,
+   "source": "Schwartz 11e Ch 17 — Breast cancer risk, genetics, pathology, staging, management",
+   "md": "### ปัจจัยเสี่ยงและพันธุกรรม\n- **Estrogen exposure นาน**: มีประจำเดือนเร็ว หมดประจำเดือนช้า **ไม่มีบุตรหรือมีบุตรคนแรกหลังอายุ 30**, ไม่ให้นมบุตร, ฮอร์โมนทดแทนแบบ estrogen + progestin, อ้วนหลังหมดประจำเดือน, แอลกอฮอล์\n- ประวัติ **ครอบครัว**, ประวัติ **ADH/ALH/LCIS**, รังสีที่หน้าอกอายุน้อย (เช่น Hodgkin), เนื้อเต้านมแน่น (dense breast)\n- ความเสี่ยงตลอดชีวิตของหญิงทั่วไปราว **12%** (ข้อมูลสหรัฐฯ)\n\n| | **BRCA1** | **BRCA2** |\n|---|---|---|\n| โครโมโซม | **17q** | **13q** |\n| มะเร็งเต้านม | ความเสี่ยงตลอดชีวิตสูงมาก (บางครอบครัวถึงราว 85%) อายุน้อย | สูงเช่นกัน |\n| ชนิดที่พบ | **triple-negative**, high grade, basal-like | มักเป็น ER-positive |\n| มะเร็งอื่น | **ovarian สูง** | ovarian (น้อยกว่า), **มะเร็งเต้านมในชาย**, prostate, pancreas |\n\n- นึกถึงส่งตรวจพันธุกรรมเมื่อ: มะเร็งอายุน้อย, triple-negative อายุน้อย, มะเร็งสองข้าง, มะเร็งเต้านมในชาย, มีญาติเป็นมะเร็งเต้านม/รังไข่หลายคน\n- พาหะ BRCA: เฝ้าระวังด้วย **MRI + mammogram** · ทางเลือก **risk-reducing mastectomy** และ **salpingo-oophorectomy**\n\n### ชนิดของมะเร็งเต้านม\n| ชนิด | จุดเด่น |\n|---|---|\n| **DCIS** | in situ (ยังไม่ทะลุ basement membrane) · มักพบเป็น **microcalcification** จาก mammogram |\n| **Invasive ductal carcinoma (NST)** | **ราว 80%** · ก้อนแข็ง ขอบ spiculated |\n| **Invasive lobular carcinoma** | ราว 10% · E-cadherin หาย · คลำ/เห็นในภาพยาก **multicentric และสองข้างบ่อยกว่า** |\n| Special types (tubular, mucinous, medullary) | พยากรณ์มักดีกว่า |\n| **Inflammatory breast cancer** | ผิวแดง บวม ร้อน **peau d'orange** ≥ 1/3 ของเต้า เกิดเร็วใน **เวลาไม่กี่สัปดาห์** · tumor emboli ในท่อน้ำเหลืองผิวหนัง = **T4d** |\n| **Paget disease of the nipple** | หัวนมเป็นผื่นแดงลอก/แผลเรื้อรัง ข้างเดียว · มักมี DCIS/invasive ข้างใต้ → biopsy หัวนม |\n\nMolecular subtype จาก ER/PR/HER2/Ki-67: **luminal A** (ER+, Ki-67 ต่ำ — พยากรณ์ดีสุด), **luminal B**, **HER2-enriched**, **triple-negative** (ก้าวร้าว ใช้ chemo)\n\n### Staging (AJCC 8th — anatomic)\n| T | ความหมาย |\n|---|---|\n| T1 | ≤ 2 cm |\n| T2 | > 2 ถึง 5 cm |\n| T3 | > 5 cm |\n| T4 | ลามถึง **ผนังอก (4a) / ผิวหนัง: แผล ตุ่ม peau d'orange (4b)** / ทั้งสอง (4c) / **inflammatory (4d)** |\n\n| N (clinical) | ความหมาย |\n|---|---|\n| N1 | axillary level I–II ข้างเดียวกัน **เคลื่อนได้** |\n| N2 | axillary **ติดกันเป็นก้อน/ยึดแน่น** หรือ internal mammary อย่างเดียว |\n| N3 | **infraclavicular**, **supraclavicular**, หรือ internal mammary + axillary |\n\n- M1 ที่พบบ่อย: **กระดูก**, ปอด, ตับ, สมอง · ตรวจหาการกระจายเมื่อ stage III หรือมีอาการ ไม่ต้องทำใน stage I ที่ไม่มีอาการ\n\n### การรักษา: เฉพาะที่ + ทั้งระบบ\n**เต้านม**\n- **Breast-conserving surgery (BCS) + whole-breast radiotherapy** อัตรารอดเท่ากับ mastectomy (NSABP B-06) · ต้องได้ margin ลบ (**no tumor on ink** สำหรับ invasive)\n- ห้าม/ไม่เหมาะ BCS: **multicentric**, microcalcification มะเร็งกระจายทั่ว, เคยฉายแสงเต้านม/หน้าอก, ตั้งครรภ์ไตรมาสที่ต้องฉายแสง, margin บวกซ้ำ, ก้อนใหญ่เมื่อเทียบกับขนาดเต้า, inflammatory cancer\n- **Mastectomy** (simple / modified radical / skin- หรือ nipple-sparing + reconstruction)\n\n**รักแร้**\n- **Sentinel lymph node biopsy** = มาตรฐาน staging ใน **clinically node-negative** invasive cancer\n- SLN บวก **1–2 ต่อม** ที่ทำ BCS + whole-breast RT + systemic therapy → **ไม่ต้องทำ axillary dissection** (ACOSOG Z0011)\n- คลำได้ต่อมและพิสูจน์ว่ามะเร็ง → axillary lymph node dissection (หรือ neoadjuvant ก่อนแล้วประเมินใหม่)\n\n**Systemic therapy ตาม receptor**\n| กลุ่ม | ยาหลัก |\n|---|---|\n| ER/PR+ ก่อนหมดประจำเดือน | **tamoxifen** 5–10 ปี (± ovarian suppression) |\n| ER/PR+ หลังหมดประจำเดือน | **aromatase inhibitor** (anastrozole, letrozole) — ดีกว่า tamoxifen |\n| **HER2+** | chemo + **trastuzumab** (± pertuzumab) 1 ปี |\n| **Triple-negative** | chemotherapy (anthracycline/taxane) — มักให้ neoadjuvant |\n\n- **Neoadjuvant systemic therapy** ใช้กับ **locally advanced / inflammatory**, HER2+ หรือ triple-negative ที่ก้อนใหญ่ เพื่อลดขนาดให้ทำ BCS ได้\n- Inflammatory breast cancer: **neoadjuvant chemo → modified radical mastectomy (ไม่ทำ SLNB) → radiotherapy**\n- ผลข้างเคียงสำคัญ: tamoxifen → **endometrial cancer, DVT/PE** · AI → **กระดูกพรุน**, ปวดข้อ · trastuzumab → **cardiotoxicity** (ตรวจ echo)",
+   "pearls": [
+    "BRCA1 (17q) → triple-negative + ovarian cancer สูง · BRCA2 (13q) → มะเร็งเต้านมชาย",
+    "Invasive ductal (NST) ราว 80% · lobular: E-cadherin หาย, multicentric/สองข้างบ่อย",
+    "Inflammatory = T4d: neoadjuvant chemo → MRM (ไม่ทำ SLNB) → RT",
+    "BCS + RT = mastectomy ในแง่อัตรารอด (NSABP B-06)",
+    "cN0 → SLNB · SLN บวก 1–2 ต่อม + BCS + WBRT → ไม่ต้อง ALND (Z0011)",
+    "ER+ ก่อนหมดประจำเดือน → tamoxifen · หลังหมดประจำเดือน → aromatase inhibitor",
+    "HER2+ → trastuzumab (ระวัง cardiotoxicity)"
+   ],
+   "items": [
+    {
+     "id": "N12-07-4-1",
+     "kind": "mcq",
+     "topic": "BRCA1",
+     "stem": "A 34-year-old woman is diagnosed with a grade 3 invasive ductal carcinoma that is ER-negative, PR-negative, and HER2-negative. Her mother died of ovarian cancer at age 48 and her maternal aunt had breast cancer at age 39. A germline mutation in which gene is most likely?",
+     "choices": [
+      "BRCA1",
+      "BRCA2",
+      "TP53",
+      "PTEN",
+      "CDH1"
+     ],
+     "answer": 0,
+     "explain": "มะเร็งเต้านม **อายุน้อย** ชนิด **triple-negative/high grade** ร่วมกับญาติเป็น **มะเร็งรังไข่** และมะเร็งเต้านมอายุน้อย ชี้ไปที่ **BRCA1** (chromosome 17q) ซึ่งสัมพันธ์กับ basal-like/triple-negative และมีความเสี่ยงมะเร็งรังไข่สูงกว่า BRCA2\n- **BRCA2** มะเร็งมักเป็น ER-positive และสัมพันธ์กับมะเร็งเต้านมในชาย/prostate/pancreas\n- **TP53** (Li-Fraumeni) ให้ sarcoma, brain tumor, adrenocortical carcinoma, มะเร็งเต้านมอายุน้อยมาก แต่ไม่ใช่มะเร็งรังไข่เด่น\n- **PTEN** (Cowden) มี hamartoma, thyroid และ endometrial cancer\n- **CDH1** สัมพันธ์กับ diffuse gastric cancer และ lobular breast cancer",
+     "pearl": "Triple-negative อายุน้อย + ญาติเป็นมะเร็งรังไข่ → BRCA1",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-4-2",
+     "kind": "mcq",
+     "topic": "Inflammatory breast cancer",
+     "stem": "A 47-year-old woman has a 5-week history of a red, warm, swollen right breast involving more than half of the breast skin, with peau d'orange. She has no fever and did not improve after 10 days of antibiotics. A palpable firm axillary node is present. Skin punch biopsy shows tumor emboli in dermal lymphatics. Staging shows no distant metastasis. What is the most appropriate initial treatment?",
+     "choices": [
+      "Neoadjuvant systemic chemotherapy (plus targeted therapy according to receptor status)",
+      "Immediate modified radical mastectomy",
+      "Breast-conserving surgery with sentinel lymph node biopsy",
+      "Incision and drainage followed by a second course of antibiotics",
+      "Whole-breast radiotherapy alone"
+     ],
+     "answer": 0,
+     "explain": "เต้านมแดง ร้อน บวม **peau d'orange** เกิดเร็วในไม่กี่สัปดาห์ ไม่ดีขึ้นด้วยยาปฏิชีวนะ และพบ **tumor emboli ใน dermal lymphatics** = **inflammatory breast cancer (T4d)** การรักษามาตรฐานคือ **neoadjuvant chemotherapy** (± anti-HER2 ถ้า HER2+) → **modified radical mastectomy** → **radiotherapy ผนังอกและต่อมน้ำเหลือง** (trimodality)\n- **ผ่าตัดทันที** ให้ผลควบคุมโรคเฉพาะที่แย่และไม่ได้รักษาโรคทั้งระบบที่มักมีอยู่แล้ว\n- **BCS และ SLNB** เป็นข้อห้ามใน inflammatory breast cancer\n- **Incision and drainage** ไม่เหมาะเพราะไม่ใช่ฝี\n- **ฉายแสงอย่างเดียว** ไม่พอ ต้องมี systemic therapy",
+     "pearl": "Inflammatory breast cancer: chemo → MRM → RT · ห้าม BCS/SLNB",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-4-3",
+     "kind": "mcq",
+     "topic": "Adjuvant endocrine therapy",
+     "stem": "A 64-year-old postmenopausal woman undergoes breast-conserving surgery and sentinel lymph node biopsy for a 1.5-cm invasive ductal carcinoma, sentinel nodes negative. The tumor is ER-positive, PR-positive, HER2-negative, with low genomic recurrence risk. She will receive whole-breast radiotherapy. Which adjuvant systemic therapy is most appropriate?",
+     "choices": [
+      "An aromatase inhibitor such as letrozole for 5 years",
+      "Tamoxifen alone for 6 months",
+      "Trastuzumab for 1 year",
+      "Anthracycline- and taxane-based chemotherapy",
+      "No systemic therapy"
+     ],
+     "answer": 0,
+     "explain": "มะเร็ง **ER/PR-positive** ใน **หญิงหมดประจำเดือน** ได้ประโยชน์จาก endocrine therapy และ **aromatase inhibitor** (anastrozole, letrozole, exemestane) ให้ผลลด recurrence ดีกว่า tamoxifen ในกลุ่มนี้ ให้อย่างน้อย 5 ปี ระวังกระดูกพรุน (ตรวจ BMD) และปวดข้อ ความเสี่ยง genomic ต่ำทำให้ไม่จำเป็นต้องให้ chemo\n- **Tamoxifen 6 เดือน** สั้นเกินไป (มาตรฐาน 5–10 ปี) และเป็นตัวเลือกหลักในหญิงก่อนหมดประจำเดือน\n- **Trastuzumab** ใช้เฉพาะ HER2-positive\n- **Chemotherapy** ไม่จำเป็นใน luminal A ความเสี่ยงต่ำ\n- **ไม่ให้ยา** เสียโอกาสลด recurrence ของมะเร็งที่ตอบสนองต่อฮอร์โมน",
+     "pearl": "ER+ หลังหมดประจำเดือน → aromatase inhibitor",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    },
+    {
+     "id": "N12-07-4-4",
+     "kind": "mcq",
+     "topic": "Positive sentinel node",
+     "stem": "A 50-year-old woman with a clinically node-negative 2-cm invasive ductal carcinoma undergoes lumpectomy with negative margins and sentinel lymph node biopsy. One of three sentinel nodes contains a 4-mm metastasis without extranodal extension. She is scheduled for whole-breast radiotherapy and adjuvant systemic therapy. What is the most appropriate management of the axilla?",
+     "choices": [
+      "No further axillary surgery",
+      "Completion axillary lymph node dissection",
+      "Modified radical mastectomy",
+      "Repeat sentinel lymph node biopsy with dual tracer",
+      "Axillary ultrasound every month for 1 year instead of radiotherapy"
+     ],
+     "answer": 0,
+     "explain": "ตามผล **ACOSOG Z0011** ผู้ป่วย T1–T2 คลำไม่พบต่อม ทำ **BCS + whole-breast radiotherapy + systemic therapy** ที่มี **SLN บวก 1–2 ต่อม** ไม่ได้ประโยชน์จาก completion axillary dissection (อัตรารอดและ regional recurrence ไม่ต่างกัน) แต่ lymphedema น้อยกว่ามาก จึง **ไม่ต้องผ่าตัดรักแร้เพิ่ม**\n- **Completion ALND** เพิ่ม lymphedema และภาวะแทรกซ้อนโดยไม่เพิ่มอัตรารอดในกลุ่มนี้\n- **Mastectomy** ไม่จำเป็นเพราะ margin ลบแล้ว\n- **SLNB ซ้ำ** ไม่มีเหตุผล ได้ผลแล้ว\n- **ติดตาม US แทน RT** ผิด เพราะ RT เป็นส่วนสำคัญของการรักษาแบบ BCS และควบคุมรักแร้ด้วย",
+     "pearl": "SLN บวก 1–2 ต่อม + BCS + WBRT → ไม่ต้อง ALND (Z0011)",
+     "src": "Schwartz 11e Ch 17",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 17"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N12-07-MEQ1",
+   "part": "MEQ",
+   "topic": "Palpable breast mass — triple assessment to treatment",
+   "vignette": "หญิงไทยอายุ 46 ปี ยังมีประจำเดือน คลำพบก้อนที่เต้านมซ้ายขณะอาบน้ำ 1 เดือน ไม่เจ็บ ไม่มีน้ำออกจากหัวนม มารดาเป็นมะเร็งเต้านมตอนอายุ 62 ปี มีบุตร 1 คนเมื่ออายุ 33 ปี ไม่ได้ให้นมบุตร\nPE: ก้อนแข็ง ขอบไม่เรียบ ขนาด 2.5 cm ที่ upper outer quadrant ซ้าย เคลื่อนได้น้อย ผิวหนังเหนือก้อนดึงรั้งเล็กน้อย ไม่มี peau d'orange คลำต่อมน้ำเหลืองรักแร้ซ้ายไม่ได้ ต่อมเหนือไหปลาร้าปกติ",
+   "questions": [
+    {
+     "q": "1. จงบอกปัจจัยเสี่ยงของผู้ป่วยรายนี้และวางแผนสืบค้นเพื่อวินิจฉัย",
+     "a": "ปัจจัยเสี่ยง: **มารดาเป็นมะเร็งเต้านม (first-degree)**, **มีบุตรคนแรกหลังอายุ 30**, ไม่ให้นมบุตร, อายุ\nสืบค้นตามหลัก **triple assessment**:\n- **Diagnostic mammogram + ultrasound** เต้านมทั้งสองข้างและรักแร้\n- **US-guided core-needle biopsy** ของก้อน (ส่ง histology, grade, **ER/PR/HER2, Ki-67**)\n- ถ้า US รักแร้มีต่อมผิดปกติ → FNA/core ของต่อม\n\nเกณฑ์ให้คะแนน\n- ระบุ triple assessment ครบ 3 ด้าน\n- เลือก core-needle ไม่ใช่ FNA หรือ excision"
+    },
+    {
+     "q": "2. Mammogram พบก้อน spiculated 2.5 cm มี pleomorphic microcalcification (BI-RADS 5) core biopsy เป็น invasive ductal carcinoma grade 2, ER+ PR+ HER2 3+ จงบอก clinical stage และความจำเป็นในการตรวจหาการแพร่กระจาย",
+     "a": "- **cT2 (> 2–5 cm) cN0 M0 → clinical stage IIA** (anatomic)\n- ไม่มีอาการ stage I–II: **ไม่จำเป็นต้องทำ bone scan/CT** เป็นประจำ (ทำเมื่อมีอาการ/lab ผิดปกติ หรือ stage III ขึ้นไป) แต่ HER2+ ก้อน ≥ 2 cm ที่จะให้ neoadjuvant อาจพิจารณา staging ตามดุลยพินิจ\n- ตรวจพื้นฐาน: CBC, LFT, ALP, **echocardiogram (ก่อนให้ trastuzumab/anthracycline)**\n- พิจารณา **genetic counseling** ถ้ามีเกณฑ์ (ประวัติครอบครัว)"
+    },
+    {
+     "q": "3. จงวางแผนการรักษาโดยรวม (local + systemic) และให้เหตุผล",
+     "a": "เป็น **HER2-positive, ER-positive** ก้อน 2.5 cm:\n- **Neoadjuvant chemotherapy + trastuzumab (± pertuzumab)** → ลดขนาด เพิ่มโอกาส BCS และดูการตอบสนอง (ถ้ามี residual disease จะปรับยาหลังผ่าตัดได้)\n- ผ่าตัด: **breast-conserving surgery** (margin ลบ — no tumor on ink) + **sentinel lymph node biopsy** (cN0)\n- **Whole-breast radiotherapy** หลัง BCS\n- Trastuzumab ให้ครบ **1 ปี**\n- **Endocrine therapy**: ก่อนหมดประจำเดือน → **tamoxifen** (± ovarian suppression) 5–10 ปี\n- ทางเลือก mastectomy ถ้าผู้ป่วยเลือกหรือมีข้อห้าม BCS"
+    },
+    {
+     "q": "4. ระหว่างได้ trastuzumab ผู้ป่วยเหนื่อยง่าย ขาบวม และหลังได้ tamoxifen 2 ปี มีเลือดออกทางช่องคลอดผิดปกติ จงอธิบายภาวะที่ต้องนึกถึงและการจัดการ",
+     "a": "- **Trastuzumab cardiotoxicity** (LVEF ลด, heart failure) → ตรวจ **echocardiogram/MUGA**, หยุดยาชั่วคราวถ้า LVEF ลดตามเกณฑ์, ให้ยารักษา HF, ปรึกษา cardio-oncology — มัก **reversible** ต่างจาก anthracycline\n- **Tamoxifen** มีฤทธิ์ estrogen agonist ที่ endometrium → เสี่ยง **endometrial hyperplasia/cancer** → เลือดออกผิดปกติต้อง **transvaginal US + endometrial biopsy** · tamoxifen ยังเพิ่มความเสี่ยง **DVT/PE**"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 17",
+    "ACR BI-RADS Atlas 5th ed (2013)",
+    "AJCC Cancer Staging Manual 8th ed",
+    "ACOSOG Z0011"
+   ]
+  }
+ ],
+ "osce": []
+}

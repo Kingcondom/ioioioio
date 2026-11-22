@@ -1,0 +1,507 @@
+{
+ "lec": "01",
+ "date": "Schwartz Ch 2",
+ "title": "Surgical metabolism, inflammation & nutrition science",
+ "subtitle": "การตอบสนองทางภูมิคุ้มกันและเมแทบอลิซึมหลังบาดเจ็บทำงานอย่างไร และจะให้โภชนาการในผู้ป่วยศัลย์วิกฤตอย่างไรให้ได้ประโยชน์โดยไม่ก่ออันตราย",
+ "objectives": [
+  "เรียนจบแล้วต้องอธิบายบทบาทของ DAMPs/PAMPs, PRR (TLR, inflammasome, RAGE) และ cytokine หลักในการเกิด sterile SIRS ได้",
+  "เรียนจบแล้วต้องแยกเส้นทางหลังบาดเจ็บ (early MOF, rapid recovery, PICS) และบอกเกณฑ์/กลไกของ PICS และ CIRCI ได้",
+  "เรียนจบแล้วต้องเปรียบเทียบ metabolism ของ simple starvation กับ stress และคำนวณ nitrogen balance กับแปลผล RQ ได้",
+  "เรียนจบแล้วต้องกำหนด timing, route และเป้าพลังงาน/โปรตีนของ nutrition therapy ใน ICU ตาม ASPEN/SCCM และ landmark trials ได้",
+  "เรียนจบแล้วต้องป้องกันและรักษา refeeding syndrome, metabolic complications ของ PN และ IFALD ได้",
+  "เรียนจบแล้วต้องจำแนก intestinal failure และประเมินโอกาสพึ่ง PN ถาวรของ short bowel ตามกายวิภาคที่เหลือได้"
+ ],
+ "guidelines": [
+  "ASPEN/SCCM Guidelines for the provision and assessment of nutrition support therapy in the adult critically ill patient (2016)",
+  "ASPEN consensus recommendations for refeeding syndrome (2020) · NICE CG32 Nutrition support in adults",
+  "ESPEN guideline: clinical nutrition in surgery (2017) · ESPEN guidelines on chronic intestinal failure in adults (2016)",
+  "Landmark trials: NICE-SUGAR (2009), EPaNIC (2011), REDOXS (2013), CALORIES (2014), NUTRIREA-2 (2018)",
+  "Sepsis-3 definitions (2016)"
+ ],
+ "sections": [
+  {
+   "id": "res-01-1",
+   "title": "Inflammatory mediators, DAMPs/PAMPs และ immune dysregulation (CARS/PICS)",
+   "summary": "ทำไมผู้บาดเจ็บที่ไม่ติดเชื้อจึงมี SIRS เหมือน sepsis และอะไรทำให้บางรายจบลงด้วย chronic critical illness/PICS",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 2 — Overview, DAMPs, central nervous system regulation, cytokines, cellular response",
+   "md": "### Sterile inflammation: DAMPs กับ PAMPs ใช้ตัวรับชุดเดียวกัน\nหลังบาดเจ็บรุนแรง เซลล์ที่ตายแบบ necrosis ปล่อยโมเลกุลภายในเซลล์ออกมา เรียกว่า **DAMPs** (damage-associated molecular patterns) ส่วนเชื้อโรคมี **PAMPs** (เช่น LPS, flagellin, peptidoglycan) ทั้งสองกลุ่มถูกตรวจจับด้วย **pattern recognition receptors (PRRs)** ชุดเดียวกัน จึงอธิบายได้ว่าทำไมผู้ป่วย trauma ที่ไม่มีการติดเชื้อเลยจึงมีภาพทางคลินิกเหมือน sepsis (ไข้ หัวใจเต้นเร็ว WBC สูง) — เรียกว่า **sterile inflammation**\n\n| DAMP | แหล่ง | ตัวรับหลัก |\n|---|---|---|\n| **HMGB1** | โปรตีนในนิวเคลียส ปล่อยแบบ passive จากเซลล์ตาย และ active จาก macrophage | TLR2, TLR4, TLR9 · RAGE (บน endothelium) |\n| Heat shock proteins | ไซโทพลาสซึม | TLR2, TLR4, CD14 |\n| S100 proteins | neutrophil, monocyte | TLR4, RAGE |\n| **Mitochondrial DNA** | ไมโทคอนเดรีย (มี CpG แบบแบคทีเรีย) | TLR9 · กระตุ้น inflammasome |\n| **Formyl peptides** | ไมโทคอนเดรีย | formyl peptide receptor 1 (FPR1) บน neutrophil |\n| IL-1α, IL-33 | เก็บสำเร็จรูปในเซลล์ (alarmin) | IL-1R, ST2 |\n\n> ไมโทคอนเดรียมีต้นกำเนิดจากแบคทีเรีย mtDNA และ formyl peptides จึงเป็น \"แบคทีเรียภายในตัวเรา\" ที่กระตุ้น neutrophil ได้เต็มที่ — เป็นคำตอบยอดนิยมของคำถาม sterile SIRS หลัง trauma\n\nระดับ HMGB1 ในเลือดหลังบาดเจ็บสัมพันธ์กับ **Injury Severity Score** และสัมพันธ์กับ immunosuppression และการติดเชื้อตามมา HMGB1 เป็น \"late mediator\" ต่างจาก TNF ที่ขึ้นเร็วและหายเร็ว\n\n### PRR signaling: TLR, inflammasome และ RAGE\n- **TLR4** (ร่วมกับ CD14/MD-2) จับ LPS และ DAMPs หลายตัว → adaptor **MyD88** → IKK → ปลดปล่อย **NF-κB** เข้านิวเคลียส → ถอดรหัส TNF, IL-1, IL-6, chemokines · TLR3/TLR4 ยังมีทาง **TRIF** (MyD88-independent) → type I interferon\n- **NLRP3 inflammasome**: ต้องการสองสัญญาณ (priming ผ่าน NF-κB + activation เช่น ATP, mtDNA, crystal) → **caspase-1** ตัด pro-IL-1β และ pro-IL-18 ให้เป็นรูป active และอาจทำให้เซลล์ตายแบบ **pyroptosis**\n- **RAGE** บน endothelium จับ HMGB1, S100 → เพิ่ม permeability, adhesion molecules และ procoagulant activity — เกี่ยวกับ ALI หลัง TBI และ hemorrhagic shock\n\n### Cytokine ที่ต้องรู้ระดับบอร์ด\n| Mediator | ลักษณะเด่น | ผลทางคลินิก |\n|---|---|---|\n| **TNF** | ขึ้นเป็นตัวแรก ๆ · half-life สั้น (น้อยกว่า 20 นาที) | catabolism, cachexia, insulin resistance, ช็อก, เพิ่ม adhesion molecule และ coagulation |\n| **IL-1** | half-life ไม่กี่นาที | ไข้ผ่าน PGE2 ที่ anterior hypothalamus · ฤทธิ์คล้าย TNF |\n| **IL-6** | half-life ยาว · ระดับแปรตาม **ความรุนแรงของการบาดเจ็บ** | กระตุ้นตับสร้าง acute phase proteins (CRP, fibrinogen) · ยืดอายุ neutrophil ที่ activated |\n| IL-8 (CXCL8) | chemokine | เรียก neutrophil |\n| **IL-10** | anti-inflammatory ผ่าน STAT3 | กด TNF/IL-1 · ระดับสูงสัมพันธ์กับ immunosuppression และการติดเชื้อ |\n| HMGB1 | late mediator (ชั่วโมงถึงวัน) | sterile inflammation ที่ยืดเยื้อ |\n\n### Neuroendocrine reflex: HPA axis และ vagus\n- Cytokine และ afferent vagal fibers ส่งสัญญาณถึง hypothalamus → CRH → **ACTH** → **cortisol** (anti-inflammatory, gluconeogenesis, insulin resistance) และ sympathetic → catecholamine (glycogenolysis, lipolysis; ลด insulin ผ่าน **α-adrenergic receptor** ที่ตับอ่อน → hyperglycemia)\n- **Cholinergic anti-inflammatory pathway**: efferent vagus → acetylcholine จับ **α7 nicotinic acetylcholine receptor** บน macrophage (โดยเฉพาะในม้าม) → ยับยั้งการหลั่ง TNF\n- **CIRCI** (critical illness–related corticosteroid insufficiency) พบบ่อยในผู้ป่วยบาดเจ็บหลายระบบ มักวินิจฉัยใน 48 ชั่วโมงแรก: ความดันต่ำที่ไม่ตอบสนองต่อสารน้ำ/vasopressor, hyponatremia, hyperkalemia, hypoglycemia · เกณฑ์ที่ใช้: **delta cortisol น้อยกว่า 9 µg/dL** ที่ 60 นาทีหลัง cosyntropin 250 µg หรือ **random cortisol น้อยกว่า 10 µg/dL**\n\n### เส้นทางหลังบาดเจ็บ: SIRS, CARS และ PICS\nแนวคิดเดิม (Bone): SIRS ช่วงแรก ตามด้วย **CARS** (compensatory anti-inflammatory response syndrome) ทำให้ติดเชื้อง่าย ข้อมูล genomic ปัจจุบัน (\"genomic storm\") พบว่ายีนกลุ่ม pro- และ anti-inflammatory ถูกเปลี่ยนแปลง **พร้อมกันตั้งแต่ชั่วโมงแรก** ผู้ที่เสียชีวิตต่างจากผู้รอดเพียงที่ **ขนาดและระยะเวลา** ของการตอบสนองที่ผิดปกติ\n\n| Trajectory | ลักษณะ |\n|---|---|\n| Early death | เลือดออก, TBI ภายในชั่วโมงถึงวัน |\n| Rapid recovery | อักเสบสั้น กลับสู่ homeostasis ภายในไม่กี่วัน |\n| Early MOF | SIRS รุนแรงจาก DAMPs + ischemia/reperfusion → อวัยวะล้มเหลวหลายระบบ |\n| **Chronic critical illness / PICS** | อยู่ ICU นาน ติดเชื้อซ้ำ กล้ามเนื้อสลาย ไม่กลับสู่สภาพเดิม จำหน่ายไป long-term acute care และเสียชีวิตแบบ indolent |\n\n**PICS** (persistent inflammation, immunosuppression, and catabolism syndrome) เกณฑ์ที่ใช้บ่อย: อยู่ ICU นานกว่า 14 วัน, CRP สูงต่อเนื่อง, **lymphocyte น้อยกว่า 800/µL**, albumin น้อยกว่า 3.0 g/dL และน้ำหนักลดมากกว่า 10% กลไก: **emergency myelopoiesis** สร้าง immature myeloid cells/**MDSC** (myeloid-derived suppressor cells ซึ่งใช้ arginase ทำให้ arginine หมดและกด T cell), lymphocyte apoptosis, monocyte มี **HLA-DR ต่ำ**, T-cell exhaustion\n\n#### SIRS criteria (ยังใช้ในตำรา ศัลย์)\n- Temp 38°C ขึ้นไป หรือ 36°C ลงไป · HR 90/min ขึ้นไป · RR มากกว่า 20/min หรือ PaCO₂ น้อยกว่า 32 mmHg · WBC มากกว่า 12,000 หรือน้อยกว่า 4,000/µL หรือ band มากกว่า 10%\n- Sepsis-3 (2016) นิยาม sepsis ใหม่เป็น infection + **SOFA เพิ่ม 2 คะแนนขึ้นไป**\n",
+   "pearls": [
+    "DAMPs (HMGB1, mtDNA, formyl peptides, HSP, S100) ใช้ PRR เดียวกับ PAMPs → sterile SIRS",
+    "mtDNA → TLR9 · formyl peptide → FPR1 · HMGB1 → TLR2/4/9 และ RAGE",
+    "NLRP3 inflammasome → caspase-1 → IL-1β, IL-18 และ pyroptosis",
+    "TNF ขึ้นเร็วที่สุด half-life สั้น · IL-6 ระดับแปรตามความรุนแรงการบาดเจ็บ · IL-10 anti-inflammatory",
+    "Vagus → α7nAChR บน macrophage → TNF ลดลง (cholinergic anti-inflammatory pathway)",
+    "CIRCI: random cortisol น้อยกว่า 10 หรือ Δcortisol น้อยกว่า 9 µg/dL หลัง cosyntropin 250 µg",
+    "PICS: ICU มากกว่า 14 วัน, lymphocyte น้อยกว่า 800, albumin น้อยกว่า 3.0, น้ำหนักลดมากกว่า 10%, MDSC"
+   ],
+   "mnem": [
+    {
+     "name": "PICS",
+     "what": "จำองค์ประกอบของ chronic critical illness หลังบาดเจ็บ/sepsis",
+     "lines": [
+      [
+       "P",
+       "Persistent inflammation — CRP สูงค้าง, emergency myelopoiesis"
+      ],
+      [
+       "I",
+       "Immunosuppression — lymphopenia, MDSC, HLA-DR ต่ำ, ติดเชื้อซ้ำ"
+      ],
+      [
+       "C",
+       "Catabolism — กล้ามเนื้อสลาย น้ำหนักลด albumin ต่ำ"
+      ],
+      [
+       "S",
+       "Syndrome — ICU นานกว่า 14 วัน จำหน่ายไป long-term care"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RES-01-1-1",
+     "kind": "mcq",
+     "topic": "Mitochondrial DAMPs in sterile SIRS",
+     "stem": "A 27-year-old man is admitted after a motorcycle crash with bilateral femur fractures and a crushed lower leg. Within 12 hours he is febrile to 38.8°C, HR 124/min, WBC 19,000/µL. Blood, urine and sputum cultures are negative and no infectious source is found. Neutrophils harvested from his plasma show marked activation. Which endogenous molecule, acting through the receptor listed, best explains this bacterial-like neutrophil response?",
+     "choices": [
+      "Mitochondrial DNA acting on TLR9",
+      "Lipopolysaccharide acting on TLR4",
+      "Peptidoglycan acting on NOD2",
+      "Flagellin acting on TLR5",
+      "Double-stranded viral RNA acting on TLR3"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **sterile SIRS** จาก crush injury ไม่มีเชื้อโรค จึงต้องเป็น **DAMP** ไม่ใช่ PAMP ไมโทคอนเดรียมีต้นกำเนิดจากแบคทีเรีย **mtDNA** มี unmethylated CpG motif เหมือนแบคทีเรีย จึงจับ **TLR9** และกระตุ้น inflammasome ได้ (ส่วน formyl peptides จากไมโทคอนเดรียจับ FPR1) ทำให้ neutrophil ถูกกระตุ้นแบบเดียวกับ sepsis\n- **Lipopolysaccharide/TLR4** เป็น PAMP จาก gram-negative ต้องมีการติดเชื้อหรือ translocation\n- **Peptidoglycan/NOD2** เป็นส่วนผนังแบคทีเรีย ไม่ใช่โมเลกุลจากเนื้อเยื่อตัวเอง\n- **Flagellin/TLR5** มาจากแบคทีเรียที่มีแฟลเจลลา\n- **dsRNA/TLR3** เป็นสัญญาณไวรัส",
+     "pearl": "Sterile SIRS หลัง trauma = DAMPs (mtDNA→TLR9, formyl peptide→FPR1, HMGB1→TLR4/RAGE)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-1-2",
+     "kind": "mcq",
+     "topic": "Critical illness-related corticosteroid insufficiency",
+     "stem": "A 46-year-old woman is on day 2 after damage-control laparotomy for multiple injuries. Despite 5 L crystalloid, 6 units of blood and norepinephrine 0.3 µg/kg/min, MAP remains 58 mmHg. Labs: Na 129 mEq/L, K 5.6 mEq/L, glucose 58 mg/dL. Bleeding has been controlled. Which laboratory result would support a diagnosis of critical illness–related corticosteroid insufficiency?",
+     "choices": [
+      "Random serum cortisol of 7 µg/dL",
+      "Random serum cortisol of 28 µg/dL",
+      "Increase in cortisol of 14 µg/dL 60 minutes after 250 µg cosyntropin",
+      "Serum ACTH above the reference range",
+      "Plasma renin activity below the reference range"
+     ],
+     "answer": 0,
+     "explain": "**CIRCI** พบบ่อยในผู้บาดเจ็บหลายระบบ ส่วนใหญ่วินิจฉัยใน 48 ชั่วโมงแรก อาการคือช็อกที่ไม่ตอบสนอง ร่วมกับ hyponatremia, hyperkalemia, hypoglycemia เกณฑ์ตามตำรา: **random cortisol น้อยกว่า 10 µg/dL** หรือ **delta cortisol น้อยกว่า 9 µg/dL** ที่ 60 นาทีหลัง cosyntropin 250 µg ค่า 7 µg/dL จึงสนับสนุน CIRCI → ให้ hydrocortisone\n- **Random cortisol 28 µg/dL** เป็นการตอบสนองต่อ stress ที่เพียงพอ\n- **Delta cortisol 14 µg/dL** มากกว่า 9 แปลว่าต่อมหมวกไตตอบสนองได้\n- **ACTH สูง** เกิดได้ใน primary adrenal insufficiency แต่ไม่ใช่เกณฑ์วินิจฉัย CIRCI\n- **Renin ต่ำ** ไม่เข้ากับภาวะช็อกและไม่ใช่เกณฑ์",
+     "pearl": "CIRCI: random cortisol <10 µg/dL หรือ Δcortisol <9 µg/dL หลัง cosyntropin 250 µg",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-1-3",
+     "kind": "mcq",
+     "topic": "PICS — persistent inflammation, immunosuppression, catabolism",
+     "stem": "A 68-year-old man is in the SICU on day 24 after Hartmann procedure for feculent peritonitis. He has had ventilator-associated pneumonia and a catheter-related bloodstream infection, has lost 14% of body weight, and cannot sit unsupported. Labs: CRP persistently elevated, total lymphocyte count 520/µL, albumin 2.3 g/dL. Flow cytometry shows expansion of immature myeloid cells with low monocyte HLA-DR expression. Which condition best describes his course?",
+     "choices": [
+      "Persistent inflammation, immunosuppression, and catabolism syndrome",
+      "Early multiple organ failure from an unopposed SIRS response",
+      "Critical illness–related corticosteroid insufficiency",
+      "Refeeding syndrome",
+      "Parenteral nutrition–associated liver disease"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยอยู่ ICU นานกว่า 14 วัน ติดเชื้อซ้ำ น้ำหนักลดมากกว่า 10% lymphocyte น้อยกว่า 800/µL albumin ต่ำ และ CRP สูงค้าง = **PICS** กลไกคือ **emergency myelopoiesis** สร้าง MDSC ที่กด T cell (arginase ทำให้ arginine หมด) ร่วมกับ lymphocyte apoptosis และ monocyte HLA-DR ต่ำ ผลคือ chronic critical illness ที่มักจบด้วย long-term care หรือเสียชีวิตแบบค่อยเป็นค่อยไป\n- **Early MOF** เกิดในไม่กี่วันแรกจาก SIRS รุนแรง ไม่ใช่สัปดาห์ที่ 3–4 ที่เด่นเรื่อง immunosuppression\n- **CIRCI** เด่นที่ช็อกดื้อต่อ vasopressor และ cortisol ต่ำ ไม่อธิบาย MDSC\n- **Refeeding syndrome** เกิดในวันแรก ๆ หลังเริ่มให้อาหารและมี phosphate ต่ำ\n- **PNALD** เป็นภาวะตับ ไม่อธิบายภูมิคุ้มกันบกพร่อง",
+     "pearl": "ICU >14 วัน + ติดเชื้อซ้ำ + lymphopenia + catabolism = PICS (MDSC, HLA-DR ต่ำ)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-1-4",
+     "kind": "mcq",
+     "topic": "Cholinergic anti-inflammatory pathway",
+     "stem": "In an experimental model of hemorrhagic shock and endotoxemia, electrical stimulation of the efferent cervical vagus nerve markedly reduces serum TNF and improves survival. The effect is abolished by splenectomy and by knockout of a specific receptor on macrophages. Which receptor mediates this effect?",
+     "choices": [
+      "α7 nicotinic acetylcholine receptor",
+      "M3 muscarinic acetylcholine receptor",
+      "β2-adrenergic receptor",
+      "Glucocorticoid receptor",
+      "Formyl peptide receptor 1"
+     ],
+     "answer": 0,
+     "explain": "**Cholinergic anti-inflammatory pathway**: สัญญาณการอักเสบส่งผ่าน afferent vagus ถึง nucleus tractus solitarius → efferent vagus → splenic nerve → acetylcholine จับ **α7 nicotinic acetylcholine receptor (α7nAChR)** บน macrophage → ยับยั้ง NF-κB และการหลั่ง TNF การที่ผลหายไปเมื่อตัดม้ามหรือ knockout ตัวรับบน macrophage ชี้ว่าเป็น α7nAChR\n- **M3 muscarinic** อยู่ที่กล้ามเนื้อเรียบ/ต่อมเป็นหลัก ไม่ใช่ตัวกลางของ pathway นี้\n- **β2-adrenergic** เป็นทาง sympathetic (catecholamine) ไม่ใช่ทาง vagal\n- **Glucocorticoid receptor** เป็นแขนของ HPA axis ซึ่งไม่ขึ้นกับการกระตุ้น vagus โดยตรง\n- **FPR1** รับ formyl peptides กระตุ้น neutrophil ไม่ใช่ทางยับยั้ง",
+     "pearl": "Vagus → ACh → α7nAChR บน macrophage ม้าม → TNF ↓",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-01-2",
+   "title": "Metabolic response to injury และ substrate utilization",
+   "summary": "ร่างกายหลังบาดเจ็บใช้พลังงานต่างจากการอดอาหารธรรมดาอย่างไร และจะวัด/แปลผล nitrogen balance กับ RQ อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 2 — Metabolism in surgical patients (fasting, injury, carbohydrate, lipid, protein)",
+   "md": "### Ebb, flow และ anabolic phase\n- **Ebb phase** (ชั่วโมงแรก ๆ หลังบาดเจ็บ ก่อน resuscitation สำเร็จ): energy expenditure และ O₂ consumption **ลดลง**, อุณหภูมิกายต่ำ, เลือดไปเลี้ยงเนื้อเยื่อน้อย, เริ่มเสีย nitrogen ทางปัสสาวะ\n- **Flow phase** (catabolic) หลัง resuscitate ได้: **hypermetabolism** เพิ่ม O₂ consumption และ cardiac output, ฮอร์โมน counter-regulatory (cortisol, catecholamine, glucagon) สูง, **insulin resistance**, proteolysis และ lipolysis เร่งตัว ร่างกาย \"จัดลำดับความสำคัญใหม่\" ให้กลูโคสไปยังแผลและเซลล์ภูมิคุ้มกัน\n- **Anabolic phase**: กลับมาสร้างกล้ามเนื้อและไขมัน ใช้เวลาหลายสัปดาห์ถึงเดือน การสูญเสีย K⁺ และ Mg²⁺ ที่เปลี่ยนเป็นการเก็บกลับเป็นสัญญาณเริ่ม healing\n\n### Simple starvation กับ stress metabolism ต่างกันอย่างไร\nผู้ใหญ่สุขภาพดีต้องการพลังงานพื้นฐานราว **22–25 kcal/kg/วัน** ร่างกายมี glycogen รวม **300–400 g** แต่ที่ตับนำออกมาใช้ได้มีเพียง **75–100 g** (glycogen ในกล้ามเนื้อขาด glucose-6-phosphatase จึงใช้ได้เฉพาะในกล้ามเนื้อเอง) glycogen ตับหมดภายใน **ไม่ถึง 16 ชั่วโมง** หลังจากนั้นกลูโคสวันละราว **180 g** สำหรับ obligate glycolytic cells (สมอง RBC WBC renal medulla) ต้องมาจาก gluconeogenesis\n\n| ประเด็น | Simple starvation | Injury / sepsis |\n|---|---|---|\n| Resting energy expenditure | **ลดลง** (ปรับตัว) | **เพิ่มขึ้น** ตามความรุนแรง |\n| Insulin | ต่ำ | สูงแต่ **ดื้อ insulin** |\n| Ketosis | **เพิ่มมาก** สมองหันมาใช้ ketone → ประหยัดโปรตีน | **ถูกกด** (insulin สูงและ cytokine) |\n| Proteolysis | ลดลงเมื่ออดนานเกิน 5 วัน | **สูงต่อเนื่อง ไม่ถูกกดด้วยกลูโคส** |\n| Gluconeogenesis | เพิ่มแล้วลดเมื่อ ketoadaptation | เพิ่มต่อเนื่อง ไม่ถูกกดด้วยกลูโคสที่ให้ |\n| RQ | ราว 0.7 (เผาไขมัน) | ผสม |\n\n> จุดสอบ: การให้กลูโคสในผู้ป่วย stress **ไม่หยุด** การสลายกล้ามเนื้อ ต่างจากการอดอาหารธรรมดา — ต้องให้โปรตีนเพียงพอด้วย\n\n### Protein metabolism และ nitrogen balance\n- กล้ามเนื้อลายถูกสลายก่อน (อวัยวะภายในเช่นตับและไตค่อนข้างคงอยู่) ผ่าน **ubiquitin–proteasome system** ซึ่งถูกเร่งด้วย hypoxia, acidosis, insulin resistance และ glucocorticoid\n- กรดอะมิโนส่งไปตับในรูป **alanine** (glucose–alanine cycle) และ **glutamine** (เชื้อเพลิงของ enterocyte, lymphocyte และไต ใช้สร้าง NH₄⁺)\n- Urinary nitrogen **สูงสุดราววันที่ 7** และภาวะ catabolism อาจนาน **3–7 สัปดาห์** · burn และ sepsis สูญเสีย nitrogen มากที่สุด elective surgery น้อยที่สุด\n- **Nitrogen balance** = (protein intake ÷ 6.25) − (UUN 24 ชม. + 4) · ค่าคงที่ 4 g แทน nitrogen ที่เสียทางอุจจาระ ผิวหนัง และ non-urea nitrogen\n\n### Lipid, ketone และ respiratory quotient\n| Substrate | kcal/g | RQ |\n|---|---|---|\n| Glucose (oral/enteral) | 4.0 | **1.0** |\n| Dextrose (IV, hydrated) | **3.4** | 1.0 |\n| Lipid | **9.0** | **0.7** |\n| Protein | 4.0 | 0.8 |\n\n- Lipolysis หลังบาดเจ็บ: catecholamine → cAMP → hormone-sensitive lipase → FFA (เชื้อเพลิงหลักของหัวใจ กล้ามเนื้อ ตับ) + glycerol (สารตั้งต้น gluconeogenesis)\n- **RQ** = VCO₂/VO₂: 0.7 = เผาไขมันเป็นหลัก (underfeeding/starvation), 0.85 = ผสม, 1.0 = คาร์โบไฮเดรต, **มากกว่า 1.0 = lipogenesis จาก overfeeding** → CO₂ ล้น หย่าเครื่องช่วยหายใจยาก\n- Indirect calorimetry เป็น gold standard ประเมินพลังงาน แต่ในผู้ป่วย stress ที่ใช้เครื่องช่วยหายใจอาจ overestimate 10–15%\n\n### Hyperglycemia และการคุมน้ำตาล\n- Hyperglycemia หลังบาดเจ็บเกิดจาก gluconeogenesis + glycogenolysis + insulin resistance + การกด insulin ผ่าน α-adrenergic receptor ของ β-cell\n- Hyperglycemia เพิ่มการอักเสบ กด neutrophil function เพิ่มการติดเชื้อ\n- **NICE-SUGAR (2009)**: คุมเข้ม 81–108 mg/dL เพิ่ม mortality 90 วันและ hypoglycemia เทียบกับเป้า 180 mg/dL หรือต่ำกว่า → แนวทางปัจจุบัน (ASPEN/SCCM) ตั้งเป้า **140 หรือ 150 ถึง 180 mg/dL** ใน ICU ทั่วไป\n- ใน PN: ถ้าน้ำตาลสูงขึ้นทันทีในผู้ป่วยที่เคยคุมได้ ให้คิดถึง **catheter sepsis** ก่อน\n",
+   "pearls": [
+    "Ebb = REE ลด, flow = hypermetabolism + insulin resistance + proteolysis",
+    "Glycogen ตับ 75–100 g หมดภายในไม่ถึง 16 ชม. · ต้องการกลูโคสราว 180 g/วัน",
+    "Stress: proteolysis/gluconeogenesis ไม่ถูกกดด้วยกลูโคส และ ketosis ถูกกด",
+    "Urinary nitrogen สูงสุดราววันที่ 7 · catabolism นาน 3–7 สัปดาห์",
+    "N balance = protein/6.25 − (UUN + 4)",
+    "RQ: ไขมัน 0.7, ผสม 0.85, คาร์บ 1.0, มากกว่า 1 = overfeeding",
+    "ICU glucose 140–180 mg/dL (NICE-SUGAR)"
+   ],
+   "items": [
+    {
+     "id": "RES-01-2-1",
+     "kind": "mcq",
+     "topic": "Respiratory quotient — overfeeding",
+     "stem": "A 61-year-old man with COPD is ventilated on day 12 after esophagectomy complicated by anastomotic leak. He receives central PN providing 38 kcal/kg/day, mostly as dextrose. Spontaneous breathing trials repeatedly fail because of hypercapnia (PaCO2 58 mmHg). Indirect calorimetry shows a respiratory quotient of 1.15. What is the most appropriate change?",
+     "choices": [
+      "Reduce total calories and the dextrose fraction of the PN",
+      "Increase dextrose to cover the measured energy expenditure",
+      "Add intravenous insulin infusion to target glucose 80–110 mg/dL",
+      "Stop lipid emulsion to lower carbon dioxide production",
+      "Increase amino acids to 3 g/kg/day without changing calories"
+     ],
+     "answer": 0,
+     "explain": "**RQ มากกว่า 1.0** แปลว่ามี **lipogenesis** จากการให้คาร์โบไฮเดรตเกินความต้องการ การสร้างไขมันจากกลูโคสผลิต CO₂ มาก → ภาระการหายใจเพิ่ม หย่าเครื่องไม่ได้ วิธีแก้คือ **ลดพลังงานรวมและสัดส่วน dextrose** (แทนบางส่วนด้วยไขมันซึ่งมี RQ 0.7) ให้ใกล้ 25–30 kcal/kg\n- **เพิ่ม dextrose** ยิ่งทำให้ CO₂ สูงขึ้น\n- **Insulin เป้า 80–110** ไม่แก้ overfeeding และ NICE-SUGAR พบว่าคุมเข้มเพิ่ม mortality\n- **หยุด lipid** ทำให้ต้องพึ่ง dextrose มากขึ้น RQ ยิ่งสูง\n- **เพิ่มโปรตีนมากเกิน** โดยไม่ลดพลังงานรวมไม่แก้ปัญหา CO₂ และเพิ่ม azotemia",
+     "pearl": "RQ >1 = overfeeding/lipogenesis → ลดพลังงานและ dextrose",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-2-2",
+     "kind": "mcq",
+     "topic": "Nitrogen balance calculation",
+     "stem": "A 35-year-old woman with severe necrotizing pancreatitis receives enteral nutrition containing 100 g protein/day. A 24-hour urine collection shows urine urea nitrogen of 18 g. Using the standard formula with a 4-g correction for insensible losses, what is her nitrogen balance?",
+     "choices": [
+      "−6 g/day",
+      "−2 g/day",
+      "+2 g/day",
+      "+6 g/day",
+      "−10 g/day"
+     ],
+     "answer": 0,
+     "explain": "Nitrogen intake = protein ÷ 6.25 = 100 ÷ 6.25 = **16 g** · Nitrogen output = UUN + 4 = 18 + 4 = **22 g** · Balance = 16 − 22 = **−6 g/วัน** → ยังอยู่ใน catabolic phase ควรเพิ่มโปรตีนไปทาง 1.5–2.0 g/kg/วัน ตามความรุนแรง\n- **−2 g/วัน** ได้จากการลืมบวก insensible loss 4 g (16 − 18)\n- **+2 g/วัน** คือการลบผิดทิศ\n- **+6 g/วัน** สลับ intake กับ output\n- **−10 g/วัน** ได้เมื่อหาร protein ด้วยค่าที่ผิด หรือบวก insensible loss ซ้ำสองครั้ง",
+     "pearl": "N balance = (protein/6.25) − (UUN + 4)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-2-3",
+     "kind": "mcq",
+     "topic": "Starvation vs injury metabolism",
+     "stem": "Two 70-kg men have been without oral intake for 6 days: one is a healthy volunteer in a fasting study, the other is septic from an infected pancreatic necrosis. Both receive 5% dextrose at maintenance rates. Which metabolic feature is characteristic of the septic patient but NOT of the fasting volunteer?",
+     "choices": [
+      "Ongoing skeletal muscle proteolysis that is not suppressed by exogenous glucose",
+      "Rising blood ketone concentrations used as brain fuel",
+      "Reduced resting energy expenditure",
+      "Respiratory quotient close to 0.7",
+      "Decreasing urinary nitrogen excretion over time"
+     ],
+     "answer": 0,
+     "explain": "ใน **stress metabolism** ฮอร์โมน counter-regulatory และ cytokine (TNF, IL-6) ทำให้ **proteolysis และ gluconeogenesis ดำเนินต่อแม้ได้รับกลูโคส** (insulin resistance) และ ketogenesis ถูกกด ร่างกายจึงสลายกล้ามเนื้อต่อเนื่อง ต่างจาก simple starvation ที่ปรับตัวเพื่อประหยัดโปรตีน\n- **Ketone สูงเป็นเชื้อเพลิงสมอง** เป็นลักษณะของ starvation ที่ไม่มี stress\n- **REE ลดลง** เป็นการปรับตัวของ starvation; sepsis มี hypermetabolism\n- **RQ ใกล้ 0.7** บ่งว่าเผาไขมันเป็นหลัก เข้ากับ starvation มากกว่า\n- **Urinary nitrogen ลดลงเรื่อย ๆ** คือ protein sparing ของ starvation; sepsis ยังสูงจนถึงราววันที่ 7",
+     "pearl": "Stress = hypermetabolism + insulin resistance + proteolysis ที่กลูโคสกดไม่ได้",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-2-4",
+     "kind": "mcq",
+     "topic": "ICU glycemic target — NICE-SUGAR",
+     "stem": "A 57-year-old woman without diabetes is in the SICU after emergency laparotomy for perforated sigmoid diverticulitis. On enteral feeds and norepinephrine her glucose readings are 210–260 mg/dL. An insulin infusion is started. Based on the largest randomized trial of glycemic control in ICU patients, what target range is most appropriate?",
+     "choices": [
+      "140–180 mg/dL",
+      "81–108 mg/dL",
+      "60–100 mg/dL",
+      "200–250 mg/dL",
+      "Below 70 mg/dL"
+     ],
+     "answer": 0,
+     "explain": "**NICE-SUGAR (2009)** สุ่มผู้ป่วย ICU กว่า 6,000 ราย: กลุ่มคุมเข้ม **81–108 mg/dL** มี mortality 90 วันสูงกว่า และ hypoglycemia รุนแรงมากกว่ากลุ่มเป้า 180 หรือต่ำกว่า แนวทาง ASPEN/SCCM จึงแนะนำ **140 (หรือ 150) ถึง 180 mg/dL** ใน ICU ทั่วไป\n- **81–108** คือ arm คุมเข้มของ NICE-SUGAR ที่เพิ่มการตาย\n- **60–100** ต่ำเกิน เสี่ยง hypoglycemia รุนแรง\n- **200–250** สูงเกิน เพิ่มการติดเชื้อและ osmotic diuresis\n- **ต่ำกว่า 70** คือ hypoglycemia",
+     "pearl": "ICU glucose เป้า 140–180 mg/dL (NICE-SUGAR: คุมเข้มเพิ่มตาย)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-01-3",
+   "title": "Nutrition therapy in critical illness: timing, targets, route และ immunonutrition",
+   "summary": "ผู้ป่วยศัลย์วิกฤตควรเริ่มให้อาหารเมื่อไร ทางไหน เท่าไร และสารเสริมใดมีหลักฐานจริง",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 2 — Nutrition in the surgical patient, enteral nutrition, parenteral nutrition; ASPEN/SCCM 2016",
+   "md": "### ใครต้องได้ nutrition therapy: คัดกรองความเสี่ยง\n- ICU ใช้ **NUTRIC score** (อายุ, APACHE II, SOFA, จำนวนโรคร่วม, วันนอน รพ.ก่อนเข้า ICU ± IL-6) หรือ **NRS-2002** · **high risk** = NUTRIC 5 ขึ้นไป (6 ขึ้นไปถ้าใช้ IL-6) หรือ NRS-2002 5 ขึ้นไป\n- ผู้ป่วย **ความเสี่ยงต่ำและโรคไม่รุนแรง** ไม่จำเป็นต้องให้ specialized nutrition นานถึง **1 สัปดาห์** แต่ต้องประเมินซ้ำ\n- Albumin/prealbumin เป็น negative acute phase reactant ใน ICU จึงไม่ใช่ตัวชี้ภาวะโภชนาการที่ดี ใช้ประวัติน้ำหนักลด การกิน และการตรวจกล้ามเนื้อแทน\n- ก่อนผ่าตัด elective (ESPEN surgery): **severe nutritional risk** เช่น น้ำหนักลดมากกว่า 10–15% ใน 6 เดือน, BMI น้อยกว่า 18.5, SGA grade C หรือ albumin น้อยกว่า 3.0 g/dL (ไม่มีโรคตับ/ไต) → ให้ nutrition **7–14 วันก่อนผ่าตัด** แม้ต้องเลื่อนผ่าตัด\n\n### เป้าพลังงานและโปรตีน\n| สภาวะ (Schwartz Table 2-9) | kcal/kg/วัน | Protein g/kg/วัน |\n|---|---|---|\n| Normal/malnutrition ปานกลาง | 25–30 | 1.0 |\n| Mild stress | 25–30 | 1.2 |\n| Moderate stress | 30 | 1.5 |\n| Severe stress | 30–35 | 2.0 |\n| **Burns** | 35–40 | **2.5** |\n\n- Gold standard คือ **indirect calorimetry** ถ้าไม่มีใช้ **25–30 kcal/kg/วัน** (ใช้ dry/usual weight)\n- **สัปดาห์แรกใน ICU**: แนะนำ **hypocaloric, high-protein** — พลังงาน **น้อยกว่า 20 kcal/kg/วัน หรือน้อยกว่า 80% ของเป้า** แต่โปรตีน **มากกว่า 1.2 g/kg/วัน** (ช่วงที่ใช้ 1.2–2.0) เพื่อลด hyperglycemia และการติดเชื้อ เพราะ \"early full feeding\" สัมพันธ์กับการติดเชื้อมากขึ้น\n- **Obese ICU (ASPEN/SCCM 2016)**: BMI 30–50 ให้ **11–14 kcal/kg actual body weight**, BMI มากกว่า 50 ให้ 22–25 kcal/kg ideal body weight · โปรตีน **2.0 g/kg IBW** (BMI 30–40) ถึง 2.5 g/kg IBW (BMI 40 ขึ้นไป)\n- ระวัง overfeeding: ใช้น้ำหนักจริงในผู้ป่วยบวมน้ำหรืออ้วนทำให้คำนวณเกิน\n\n### Timing และ route: enteral ก่อนเสมอถ้าใช้ได้\n- **Early EN ภายใน 24–48 ชั่วโมง** หลังเข้า ICU เมื่อ resuscitate ได้แล้ว ช่วยคง gut barrier, IgA และ microbiome · ค่อย ๆ เพิ่มให้ได้ **มากกว่า 80% ของเป้าภายใน 3–4 วัน**\n- **ห้ามเริ่ม/ให้หยุด EN** ถ้ายังช็อกที่ควบคุมไม่ได้ vasopressor กำลังเพิ่ม lactate สูงขึ้น → เสี่ยง **non-occlusive bowel necrosis** (โดยเฉพาะ jejunal feeding) · NUTRIREA-2 (2018): early isocaloric EN เทียบ PN ในผู้ป่วยช็อกไม่ลด mortality และมี bowel ischemia มากกว่า\n- Continuous feeding เป็นมาตรฐานใน ICU ศัลย์ · ให้ทาง post-pyloric เมื่อเสี่ยงสำลักสูงหรือ gastric intolerance\n- Gastric residual volume: Schwartz ใช้ 200 mL ขึ้นไปใน 4–6 ชม. ร่วมกับท้องอืดเป็นสัญญาณปรับ แต่ ASPEN/SCCM 2016 **ไม่แนะนำหยุด EN ถ้า GRV น้อยกว่า 500 mL** โดยไม่มีอาการอื่น\n- **ไม่ต้องงด EN** หลัง bowel anastomosis หรือ low-output ECF (น้อยกว่า 500 mL/วัน) · early EN ใน open abdomen ลดการเกิด fistula\n\n### เมื่อไรใช้ parenteral nutrition\n| สถานการณ์ | คำแนะนำ |\n|---|---|\n| Low risk (NUTRIC ต่ำ) ใช้ EN ไม่ได้ | **รอ 7 วัน** ค่อยเริ่ม PN · EPaNIC (2011): late PN ติดเชื้อน้อยกว่า ออก ICU เร็วกว่า early PN |\n| **High risk หรือ malnourished รุนแรง** ใช้ EN ไม่ได้ | **เริ่ม PN ทันทีที่ resuscitate ได้** |\n| EN ได้ไม่ถึงเป้า | เพิ่ม **supplemental PN หลัง 7–10 วัน** ถ้า EN ให้ได้น้อยกว่า 60% ของพลังงาน/โปรตีน |\n| หลังผ่าตัดทั่วไปที่โภชนาการดี | **ไม่ควรให้ PN routine** — ไม่มีประโยชน์และเพิ่มภาวะแทรกซ้อน |\n\n- CALORIES (2014): เมื่อพลังงานเท่ากัน early PN กับ EN **mortality ไม่ต่างกัน** — อันตรายของ PN ในอดีตส่วนหนึ่งมาจาก overfeeding\n- TPN ผ่าน central vein: dextrose 15–25%, amino acids 3–5% · PPN dextrose 5–10% ใช้ระยะสั้น (น้อยกว่า 2 สัปดาห์) และไม่พอสำหรับ severe malnutrition\n- Lipid ถั่วเหลือง (soy) สัปดาห์แรก: จำกัด **สูงสุด 100 g/สัปดาห์** (แบ่ง 2 ครั้ง) · ในระยะยาวให้ lipid 10–15% ของพลังงานเพื่อกัน essential fatty acid deficiency\n\n### Immunonutrition: ได้ผลที่ไหน ห้ามที่ไหน\n| สาร | หลักฐาน |\n|---|---|\n| **Arginine** | ช่วย T cell และ wound healing · **ไม่แนะนำใน sepsis** (เป็นสารตั้งต้น NO อาจเพิ่ม vasodilation) — Canadian guidelines |\n| **Glutamine** | เชื้อเพลิง enterocyte/lymphocyte แต่ **REDOXS (2013)**: glutamine ขนาดสูงในผู้ป่วย MOF **เพิ่ม 6-month mortality** → ไม่แนะนำ routine ใน ICU |\n| **Omega-3 (fish oil)** | EDEN-Omega ใน ALI ไม่ได้ประโยชน์และอาจมีโทษ · ใน sepsis ข้อมูลผสม |\n| Nucleotides | มักอยู่ในสูตรผสม |\n\n- ที่มีหลักฐานดีที่สุด: **perioperative immunonutrition (arginine + omega-3 + nucleotides) 5–7 วันก่อนผ่าตัดใหญ่ทางเดินอาหารส่วนบนจากมะเร็ง** ลด infectious complications (ASPEN/ESPEN)\n- ERAS: carbohydrate loading ก่อนผ่าตัดลด insulin resistance หลังผ่าตัด\n",
+   "pearls": [
+    "High risk: NUTRIC 5 ขึ้นไป (6 ถ้ามี IL-6) หรือ NRS-2002 5 ขึ้นไป",
+    "สัปดาห์แรก ICU: น้อยกว่า 20 kcal/kg หรือน้อยกว่า 80% ของเป้า แต่โปรตีนมากกว่า 1.2 g/kg",
+    "Early EN 24–48 ชม. หลัง resuscitate · หยุดถ้า vasopressor เพิ่ม/lactate ขึ้น",
+    "Low risk ใช้ EN ไม่ได้ → รอ 7 วันก่อน PN (EPaNIC) · high risk → PN ทันที",
+    "Supplemental PN หลัง 7–10 วันถ้า EN ได้น้อยกว่า 60%",
+    "Obese: 11–14 kcal/kg ABW + โปรตีน 2.0–2.5 g/kg IBW",
+    "Glutamine ขนาดสูงเพิ่มตาย (REDOXS) · arginine ห้ามใน sepsis · immunonutrition ก่อนผ่าตัดมะเร็ง GI บน 5–7 วัน"
+   ],
+   "items": [
+    {
+     "id": "RES-01-3-1",
+     "kind": "mcq",
+     "topic": "Timing of PN in low-risk ICU patient — EPaNIC",
+     "stem": "A 49-year-old previously well man (BMI 26, no weight loss) is in the SICU after laparotomy for small-bowel obstruction with resection and primary anastomosis. He has prolonged ileus and cannot tolerate enteral feeds by ICU day 3. NUTRIC score is 2. Hemodynamics are normal. What is the most appropriate nutrition plan?",
+     "choices": [
+      "Withhold parenteral nutrition and reassess; start PN if enteral intake remains inadequate after about 7 days",
+      "Start full-dose central PN immediately to meet 100% of energy needs",
+      "Start peripheral PN today at 35 kcal/kg/day",
+      "Start PN today with high-dose intravenous glutamine",
+      "Place a surgical jejunostomy today and feed to goal"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยโภชนาการดีและ **NUTRIC ต่ำ** การให้ PN เร็วไม่มีประโยชน์ **EPaNIC (2011)** พบว่า late PN (หลังวันที่ 7) ติดเชื้อน้อยกว่าและออก ICU เร็วกว่า early PN แนวทาง ASPEN/SCCM จึงให้ **รอราว 7 วัน** ก่อนเริ่ม PN ในกลุ่มเสี่ยงต่ำ และพยายาม EN ต่อ\n- **Full-dose PN ทันที** เพิ่มการติดเชื้อและ hyperglycemia ในกลุ่มเสี่ยงต่ำ\n- **PPN 35 kcal/kg** เป็นพลังงานเกินและ PPN ไม่ได้ออกแบบให้ถึงเป้าระดับนี้\n- **IV glutamine ขนาดสูง** เพิ่ม mortality ใน REDOXS\n- **Surgical jejunostomy** เป็นหัตถการเกินจำเป็นสำหรับ ileus ที่คาดว่าจะหายเอง",
+     "pearl": "Low-risk + EN ไม่ได้ → รอ 7 วันก่อน PN (EPaNIC)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-3-2",
+     "kind": "mcq",
+     "topic": "Enteral feeding during escalating vasopressors",
+     "stem": "A 66-year-old man with perforated duodenal ulcer underwent Graham patch 10 hours ago. He is ventilated, on norepinephrine that has been increased from 0.1 to 0.45 µg/kg/min over the past 4 hours, and lactate has risen from 2.8 to 5.6 mmol/L. A nasojejunal tube is in place. What is the best nutrition decision now?",
+     "choices": [
+      "Defer enteral feeding until shock is controlled and vasopressor requirement is stable or decreasing",
+      "Start jejunal feeds at goal rate to protect gut barrier function",
+      "Start a high-osmolality calorie-dense formula at 10 mL/h",
+      "Start full parenteral nutrition immediately at 30 kcal/kg/day",
+      "Start an arginine-enriched immune-modulating formula"
+     ],
+     "answer": 0,
+     "explain": "Early EN ภายใน 24–48 ชั่วโมงเป็นเป้า **แต่ต้องหลัง resuscitation สำเร็จ** ในผู้ป่วยที่ vasopressor กำลังเพิ่มและ lactate สูงขึ้น ลำไส้มี perfusion ต่ำ การให้อาหารเพิ่ม O₂ demand ของ mucosa → **non-occlusive bowel necrosis / pneumatosis** โดยเฉพาะ jejunal feeding ความเสี่ยงรวมถึง vasopressor และ cardiogenic shock จึงควรรอจนช็อกคงที่หรือดีขึ้น\n- **Jejunal feeds เต็มอัตรา** ช่วงนี้คือสถานการณ์เสี่ยง bowel necrosis ที่สุด\n- **High-osmolality formula** ยิ่งเพิ่มภาระและ osmotic injury\n- **Full PN ทันที** ไม่มีประโยชน์ในชั่วโมงแรกของช็อก และ full calories ช่วงแรกเพิ่ม hyperglycemia/การติดเชื้อ\n- **Arginine formula** ไม่แนะนำใน sepsis/septic shock",
+     "pearl": "Vasopressor ขึ้น + lactate ขึ้น = ยังไม่ feed (เสี่ยง non-occlusive bowel necrosis)",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-3-3",
+     "kind": "mcq",
+     "topic": "Nutrition targets in obese critically ill patient",
+     "stem": "A 52-year-old woman (actual weight 120 kg, height 160 cm, BMI 47, ideal body weight 52 kg) is ventilated after laparotomy for strangulated ventral hernia. She tolerates enteral feeds. Indirect calorimetry is unavailable. Which regimen best follows current ICU guidelines?",
+     "choices": [
+      "About 1,300–1,700 kcal/day with about 130 g protein/day",
+      "About 3,600 kcal/day with about 120 g protein/day",
+      "About 1,300 kcal/day with about 50 g protein/day",
+      "About 2,600 kcal/day with about 60 g protein/day",
+      "About 600 kcal/day with about 250 g protein/day"
+     ],
+     "answer": 0,
+     "explain": "ASPEN/SCCM 2016 สำหรับ obese ICU: BMI 30–50 ให้ **11–14 kcal/kg actual body weight** = 120 × 11–14 ≈ **1,320–1,680 kcal/วัน** (hypocaloric) และ **high protein** สำหรับ BMI 40 ขึ้นไปให้ **2.5 g/kg IBW** = 52 × 2.5 ≈ **130 g/วัน** เป้าคือรักษากล้ามเนื้อพร้อมเลี่ยง overfeeding/hyperglycemia\n- **3,600 kcal** คิด 30 kcal/kg จากน้ำหนักจริง = overfeeding ชัดเจน\n- **1,300 kcal + 50 g protein** พลังงานถูกแต่โปรตีนต่ำเกิน (ราว 1 g/kg IBW)\n- **2,600 kcal + 60 g** พลังงานเกินและโปรตีนไม่พอ\n- **600 kcal + 250 g** พลังงานน้อยเกินไปมากและโปรตีนเกินโดยไม่มีพื้นฐาน",
+     "pearl": "Obese ICU: 11–14 kcal/kg ABW + protein 2.0–2.5 g/kg IBW",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-3-4",
+     "kind": "mcq",
+     "topic": "Glutamine supplementation — REDOXS",
+     "stem": "A surgical ICU is updating its nutrition protocol for ventilated patients with multiorgan failure and shock. A pharmacist proposes routine high-dose combined enteral and intravenous supplementation of one nutrient to 'support enterocytes and lymphocytes.' A large multicenter randomized trial of this exact strategy found increased 6-month mortality. Which nutrient is being proposed?",
+     "choices": [
+      "Glutamine",
+      "Arginine",
+      "Omega-3 fatty acids",
+      "Soluble fiber",
+      "Medium-chain triglycerides"
+     ],
+     "answer": 0,
+     "explain": "**Glutamine** เป็นกรดอะมิโนที่มากที่สุดในร่างกาย เป็นเชื้อเพลิงของ enterocyte และ immunocyte และลดลงในภาวะ stress จึงมีแนวคิดให้เสริม แต่ **REDOXS (2013)** ให้ glutamine ขนาดสูงทั้ง enteral และ IV ในผู้ป่วย MOF ที่ใช้เครื่องช่วยหายใจ พบ **mortality 6 เดือนเพิ่มขึ้น** แนวทางปัจจุบันจึงไม่แนะนำ glutamine routine ใน ICU\n- **Arginine** ไม่แนะนำใน sepsis เพราะอาจเพิ่ม NO แต่ไม่ใช่ trial ที่อธิบาย\n- **Omega-3** (EDEN-Omega) ไม่ได้ประโยชน์ใน ALI แต่ endpoint คือ ventilator-free days ไม่ใช่การให้ขนาดสูงสองทาง\n- **Soluble fiber** ช่วยท้องเสียและเป็นอาหารของ colonocyte (SCFA)\n- **MCT** ใช้ในสูตรสำหรับ malabsorption ไม่ใช่ภาพนี้",
+     "pearl": "Glutamine ขนาดสูงใน MOF เพิ่มตาย (REDOXS) — ไม่ใช้ routine",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-01-4",
+   "title": "Complications of nutrition therapy: refeeding, PN-associated liver disease และ intestinal failure",
+   "summary": "ภาวะแทรกซ้อนที่คร่าชีวิตจากการให้อาหารคืออะไร ป้องกันอย่างไร และเมื่อไรผู้ป่วย short bowel จะพึ่ง PN ถาวร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 2 — Complications of parenteral nutrition; ASPEN 2020 refeeding consensus; ESPEN intestinal failure guideline",
+   "md": "### Refeeding syndrome: กลไกและผู้ที่เสี่ยง\nเมื่อให้อาหาร (โดยเฉพาะคาร์โบไฮเดรต) แก่ผู้ที่ขาดอาหารนาน → **insulin พุ่ง** → ดึง **phosphate, K⁺, Mg²⁺** เข้าเซลล์ และใช้ phosphate สร้าง ATP/2,3-DPG, ใช้ **thiamine** เป็น cofactor ของ carbohydrate metabolism → ระดับในเลือดตกอย่างรวดเร็ว ภายใน **2–5 วันแรก** ร่วมกับ sodium/water retention\n\n| ความผิดปกติ | ผลทางคลินิก |\n|---|---|\n| **Hypophosphatemia** (เครื่องหมายหลัก) | กล้ามเนื้อหายใจอ่อนแรง → หย่าเครื่องไม่ได้/หายใจล้มเหลว, cardiac failure, arrhythmia, rhabdomyolysis, hemolysis, ชัก |\n| Hypokalemia, hypomagnesemia | arrhythmia, QT ยาว |\n| **Thiamine deficiency** | **Wernicke encephalopathy**, lactic acidosis, wet beriberi |\n| Na/น้ำคั่ง | volume overload, pulmonary edema |\n\nปัจจัยเสี่ยงสูง (NICE): BMI น้อยกว่า 16, น้ำหนักลดมากกว่า 15% ใน 3–6 เดือน, แทบไม่ได้กินมากกว่า 10 วัน, หรือ K/PO₄/Mg ต่ำก่อนให้อาหาร · ผู้ป่วยศัลย์ที่พบบ่อย: มะเร็งหลอดอาหาร/กระเพาะที่กลืนไม่ได้, gastric outlet obstruction, ติดสุรา, enterocutaneous fistula, ผู้สูงอายุอดอาหารนาน\n\n### ป้องกันและรักษา refeeding\n1. ระบุกลุ่มเสี่ยงก่อนเริ่มให้อาหาร ตรวจ PO₄, K, Mg, glucose\n2. **Thiamine ก่อนเริ่มอาหาร** (ASPEN 2020: 100 mg ก่อน feed แล้วต่อวันละครั้ง 5–7 วัน) ร่วมกับ multivitamin\n3. **เริ่มพลังงานต่ำ**: NICE 10 kcal/kg/วัน (5 kcal/kg ถ้าเสี่ยงสุดขีด) หรือ ASPEN 10–20 kcal/kg หรือ dextrose 100–150 g ใน 24 ชม.แรก แล้วเพิ่มทีละราว 33% ของเป้าทุก 1–2 วัน ถึงเป้าใน 4–7 วัน\n4. ตรวจ electrolyte ทุก 12 ชม. ใน 3 วันแรก แล้วทุกวัน · ทดแทน PO₄/K/Mg ทางหลอดเลือด\n5. ถ้า PO₄/K/Mg ตกมาก (เช่น ลดลงมากกว่า 30% หรือ PO₄ ต่ำมาก) → **ลดพลังงานลงราวครึ่งหนึ่ง** ทดแทนให้ปกติก่อนแล้วค่อยเพิ่มใหม่\n6. ระวังสารน้ำและโซเดียมเกิน\n\n### Metabolic complications ของ PN\n- **Hyperglycemia**: dextrose เร็วเกินหรือ stress · ถ้าเกิดทันทีในผู้ป่วยที่เคยคงที่ → คิดถึง **CLABSI** (อาจนำก่อนไข้)\n- **Hypokalemia** จาก K เข้าเซลล์พร้อมกลูโคส อาจต้อง K สูงถึง **240 mEq/วัน** · glycosuria จาก hypokalemia รักษาด้วย K ไม่ใช่ insulin\n- **Overfeeding** → CO₂ retention, fatty liver, hyperglycemia, ติดเชื้อ\n- **Micronutrient**: ขาด EFA → ผิวแห้งเป็นขุย ผมร่วง (กันด้วย lipid 10–15% ของพลังงาน) · **zinc** → ผื่น eczematoid ตามซอกพับ · **copper** → microcytic anemia, neutropenia · **chromium** → glucose intolerance · **vitamin K** ไม่มีใน multivitamin IV ส่วนใหญ่ ให้สัปดาห์ละครั้ง\n- **CLABSI**: femoral เสี่ยงสุด > IJ > subclavian เสี่ยงน้อยสุด · ใส่น้อยกว่า 3 วันเสี่ยงต่ำมาก, 3–7 วัน 3–5%, มากกว่า 7 วัน 5–10% · blood culture บวกและปลายสายบวก → ถอดและใส่ตำแหน่งใหม่ · ใช้ ultrasound guidance ลดภาวะแทรกซ้อนจากการใส่\n\n### PN-associated / intestinal failure–associated liver disease\n| | ผู้ใหญ่ | เด็ก |\n|---|---|---|\n| ลักษณะเด่น | **steatosis** (transaminase ขึ้น) | **cholestasis** (direct bilirubin สูง) → fibrosis/cirrhosis ได้ |\n| อื่น ๆ | gallbladder sludge/นิ่ว acalculous cholecystitis | ตับวายเร็วกว่า |\n\nปัจจัยเสี่ยง: **overfeeding dextrose**, **soy lipid ขนาดสูง (มากกว่า 1 g/kg/วัน)** ซึ่งมี phytosterol และ omega-6 มาก, ไม่มี enteral stimulation, sepsis/CLABSI ซ้ำ, short remnant bowel, bacterial overgrowth\n\nแนวทางป้องกัน/รักษา:\n- ให้ **EN บางส่วนเสมอ** ถ้าทำได้ (trophic feeds กระตุ้น bile flow)\n- **ลด soy lipid ให้ไม่เกิน 1 g/kg/วัน** หรือเปลี่ยนเป็น **mixed-oil (SMOF) หรือ fish oil** (fish oil ใช้รักษา cholestasis ในเด็ก)\n- **Cycle PN** (เช่น 12–16 ชม.) ไม่ให้ dextrose เกิน · รักษา sepsis และ bacterial overgrowth\n- ถ้า LFT ไม่คงที่หรือไม่กลับปกติใน **7–14 วัน** ต้องหาสาเหตุอื่น\n- IFALD ที่มี bridging fibrosis/cirrhosis เป็นข้อบ่งชี้พิจารณา intestinal (± liver) transplant\n\n### Intestinal failure และ short bowel syndrome\n**Intestinal failure** = การทำงานของลำไส้ลดลงต่ำกว่าระดับที่ดูดซึมสารอาหาร น้ำ และเกลือแร่ได้พอ จนต้องได้ IV supplementation (ESPEN)\n\n| Type (ESPEN) | ลักษณะ | ตัวอย่าง |\n|---|---|---|\n| I | acute, สั้น, หายเอง | postoperative ileus |\n| **II** | prolonged acute, metabolic ไม่คงที่ ต้องดูแลสหสาขาหลายสัปดาห์ถึงเดือน | abdominal catastrophe, high-output ECF, open abdomen |\n| III | chronic, คงที่ ต้อง home PN เป็นเดือน-ปี | short bowel หลัง massive resection |\n\n- **Short bowel** ผู้ใหญ่: ลำไส้เล็กเหลือ **น้อยกว่า 200 cm** · โอกาสพึ่ง PN ถาวรสูงเมื่อ **end jejunostomy น้อยกว่า 100–115 cm**, jejunocolic น้อยกว่า 60–65 cm, jejunoileocolic น้อยกว่า 30–35 cm (Messing) — ลำไส้ใหญ่และ ileocecal valve ช่วยมาก\n- End jejunostomy: เสีย Na/น้ำมาก ต้องจำกัด hypotonic fluid ดื่ม oral rehydration (Na อย่างน้อย 90 mmol/L) + PPI + loperamide/codeine\n- **Teduglutide** (GLP-2 analogue) เพิ่มการดูดซึม ลดปริมาณ PN · surgical rehab: STEP, Bianchi lengthening\n- **Transplant** พิจารณาเมื่อ: IFALD รุนแรง, **เสีย central venous access** (thrombosis หลายเส้น), CLABSI รุนแรงซ้ำ, dehydration ซ้ำแม้ได้ PN\n- ECF ใช้หลัก **SNAP**: Sepsis control → Nutrition → Anatomy (fistulogram/CT) → Procedure (ผ่าตัดแก้แบบ definitive หลังรอให้ hostile abdomen หาย มักไม่น้อยกว่า 3 เดือน)\n",
+   "pearls": [
+    "Refeeding: PO₄ ต่ำเป็นหลัก + K, Mg ต่ำ + thiamine หมด ใน 2–5 วันแรก",
+    "กลุ่มเสี่ยงสูง: เริ่ม 10 kcal/kg (NICE) หรือ 10–20 kcal/kg (ASPEN) + thiamine ก่อนให้อาหาร",
+    "PN คงที่แล้วน้ำตาลพุ่ง = คิดถึง CLABSI",
+    "Zinc → ผื่นซอกพับ · copper → anemia · chromium → glucose intolerance · EFAD → ผิวแห้ง ผมร่วง",
+    "IFALD: soy lipid ≤1 g/kg/วัน หรือ fish oil, cycle PN, เลี่ยง overfeeding, feed ทางลำไส้",
+    "Short bowel ผู้ใหญ่ น้อยกว่า 200 cm · end jejunostomy น้อยกว่า 100–115 cm มักพึ่ง PN ถาวร",
+    "ECF: SNAP — Sepsis, Nutrition, Anatomy, Procedure"
+   ],
+   "mnem": [
+    {
+     "name": "SNAP",
+     "what": "ลำดับดูแล enterocutaneous fistula / intestinal failure type II",
+     "lines": [
+      [
+       "S",
+       "Sepsis control + skin protection — ระบายหนอง ควบคุมปริมาณ fistula"
+      ],
+      [
+       "N",
+       "Nutrition — EN ถ้าได้ (distal feeding/fistuloclysis) ไม่งั้น PN"
+      ],
+      [
+       "A",
+       "Anatomy — fistulogram, CT ดูความยาว ทางเดิน distal obstruction"
+      ],
+      [
+       "P",
+       "Procedure — ผ่าตัด definitive หลัง abdomen หายอักเสบ (มักไม่น้อยกว่า 3 เดือน)"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RES-01-4-1",
+     "kind": "mcq",
+     "topic": "Refeeding syndrome — management",
+     "stem": "A 59-year-old man with obstructing distal esophageal cancer has lost 18% of body weight over 3 months and has eaten almost nothing for 2 weeks. A feeding jejunostomy is placed and feeds are advanced to 30 kcal/kg/day on day 1. On day 3 he becomes confused, weak and tachypneic. Labs: phosphate 0.9 mg/dL, K 2.9 mEq/L, Mg 1.2 mg/dL. Besides intravenous thiamine, what is the most appropriate management?",
+     "choices": [
+      "Reduce feeding to about half and replace phosphate, potassium and magnesium intravenously before re-advancing",
+      "Continue feeds at the current rate and add oral phosphate",
+      "Stop all nutrition for 7 days",
+      "Switch to central PN at 35 kcal/kg/day",
+      "Start an insulin infusion to control glucose and continue feeds"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเสี่ยง **refeeding** สูง (น้ำหนักลดมากกว่า 15% ใน 3 เดือน แทบไม่ได้กินมากกว่า 10 วัน) แต่ได้อาหารเต็มเป้าตั้งแต่วันแรก insulin พุ่งดึง PO₄/K/Mg เข้าเซลล์ → **hypophosphatemia** ทำให้กล้ามเนื้อหายใจอ่อนแรงและสับสน การรักษา: **ลดพลังงานลงราวครึ่งหนึ่ง** (หรือกลับไป 10–20 kcal/kg), **ทดแทน PO₄, K, Mg ทาง IV**, ให้ thiamine แล้วค่อยเพิ่มใหม่ช้า ๆ ภายใต้การตรวจ electrolyte บ่อย\n- **ให้ต่อเท่าเดิม + oral phosphate** ไม่พอและกลไกยังดำเนินต่อ\n- **หยุดอาหาร 7 วัน** ซ้ำเติมภาวะขาดอาหาร ไม่จำเป็น\n- **เปลี่ยนเป็น PN 35 kcal/kg** ให้พลังงานมากขึ้น ยิ่งแย่\n- **Insulin infusion** ยิ่งดึง PO₄/K เข้าเซลล์",
+     "pearl": "Refeeding: thiamine + ลดพลังงาน ~50% + เติม PO₄/K/Mg แล้วเพิ่มช้า ๆ",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-4-2",
+     "kind": "mcq",
+     "topic": "Sudden glucose intolerance on PN",
+     "stem": "A 44-year-old woman with a high-output enterocutaneous fistula has received central PN through a right subclavian catheter for 3 weeks with stable glucose (120–150 mg/dL) on a fixed regimen. Today her glucose is 310 mg/dL and she feels unwell; temperature is 37.9°C. The PN formulation has not changed. What is the most appropriate next step?",
+     "choices": [
+      "Evaluate for catheter-related bloodstream infection with paired blood cultures",
+      "Increase insulin in the PN bag and continue",
+      "Reduce PN dextrose by 50% and recheck in 48 hours",
+      "Switch lipid to a fish-oil emulsion",
+      "Start oral hypoglycemic therapy"
+     ],
+     "answer": 0,
+     "explain": "ในผู้ป่วยที่ได้ PN คงที่มานาน **การเกิด glucose intolerance ขึ้นฉับพลัน** (มีหรือไม่มีไข้) เป็นสัญญาณแรก ๆ ของ **sepsis จาก CLABSI** ต้องเจาะ blood culture จากสายและ peripheral ตรวจหาจุดติดเชื้ออื่น ถ้ายืนยันว่าสายติดเชื้อ (culture เลือดและปลายสายบวก) ให้ถอดสายและใส่ที่ตำแหน่งใหม่\n- **เพิ่ม insulin แล้วให้ต่อ** ปิดบังสาเหตุที่อาจคุกคามชีวิต\n- **ลด dextrose** แก้อาการไม่แก้สาเหตุ\n- **เปลี่ยนเป็น fish-oil** เป็นแนวทางของ IFALD ไม่เกี่ยวกับน้ำตาลสูงฉับพลัน\n- **Oral hypoglycemic** ไม่เหมาะกับปัญหานี้และผู้ป่วย ECF",
+     "pearl": "PN คงที่แล้วน้ำตาลพุ่งทันที = คิดถึง catheter sepsis ก่อน",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-4-3",
+     "kind": "mcq",
+     "topic": "IFALD — lipid modification",
+     "stem": "A 38-year-old man has been on home PN for 8 months after massive small-bowel resection for midgut volvulus (90 cm jejunum anastomosed to transverse colon). He receives soybean-oil lipid 1.8 g/kg/day and dextrose providing 32 kcal/kg/day as a continuous 24-hour infusion. Alkaline phosphatase and direct bilirubin are steadily rising; ultrasound shows steatosis and sludge without duct dilation. Which change is most likely to improve his liver disease?",
+     "choices": [
+      "Reduce soybean lipid to 1 g/kg/day or less (or change to a fish-oil–containing emulsion) and cycle the PN",
+      "Increase dextrose and stop all lipid emulsion",
+      "Increase soybean lipid to supply more calories and reduce dextrose to zero",
+      "Add intravenous glutamine to the PN",
+      "Stop all oral and enteral intake to rest the bowel"
+     ],
+     "answer": 0,
+     "explain": "ภาพเป็น **IFALD/PNALD** ปัจจัยเสี่ยงชัดคือ **soy lipid มากกว่า 1 g/kg/วัน** (phytosterol และ omega-6 สูง) dextrose เกิน และให้ต่อเนื่อง 24 ชม. แนวทาง: **ลด soy lipid ให้ไม่เกิน 1 g/kg/วัน หรือเปลี่ยนเป็น SMOF/fish oil**, **cycle PN** ช่วงกลางคืน, เลี่ยง overfeeding, ส่งเสริม enteral intake, รักษา sepsis/bacterial overgrowth\n- **เพิ่ม dextrose หยุด lipid ทั้งหมด** ทำให้ steatosis แย่ลงและเกิด EFAD\n- **เพิ่ม soy lipid** เพิ่ม phytosterol ทำให้ cholestasis แย่ลง\n- **IV glutamine** ไม่มีหลักฐานรักษา IFALD\n- **งด enteral ทั้งหมด** ลด bile flow และกระตุ้น cholestasis",
+     "pearl": "IFALD: soy lipid ≤1 g/kg/วัน หรือ fish oil + cycle PN + เลี่ยง overfeeding + feed ทางลำไส้",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "RES-01-4-4",
+     "kind": "mcq",
+     "topic": "Short bowel anatomy and PN dependence",
+     "stem": "Four patients have each undergone extensive small-bowel resection for mesenteric ischemia. All have a healthy remaining bowel. Which remnant anatomy carries the greatest likelihood of permanent parenteral nutrition dependence?",
+     "choices": [
+      "80 cm of jejunum ending in an end jejunostomy",
+      "80 cm of jejunum anastomosed to an intact colon",
+      "120 cm of small bowel with intact ileocecal valve and colon",
+      "50 cm of jejunum plus 20 cm terminal ileum with intact ileocecal valve and colon",
+      "150 cm of jejunum ending in an end jejunostomy"
+     ],
+     "answer": 0,
+     "explain": "ความเสี่ยงพึ่ง PN ถาวรขึ้นกับความยาวลำไส้เล็กที่เหลือ **และ** ว่ามีลำไส้ใหญ่ต่อหรือไม่ (Messing): end jejunostomy ต้องการมากกว่าราว **100–115 cm**, jejunocolic มากกว่าราว 60–65 cm, jejunoileocolic มากกว่าราว 30–35 cm **End jejunostomy 80 cm** จึงต่ำกว่าเกณฑ์ชัดเจน ไม่มี colon ช่วยดูดน้ำ/Na และได้พลังงานจาก SCFA จึงเสี่ยงสูงสุด\n- **Jejunocolic 80 cm** เกินเกณฑ์ 60–65 cm มี colon ช่วย\n- **120 cm + ICV + colon** มีโอกาส wean PN สูง\n- **Jejunoileocolic 70 cm** เกินเกณฑ์ 30–35 cm และมี terminal ileum (B12, bile salt) กับ ICV\n- **End jejunostomy 150 cm** เกินเกณฑ์ราว 100–115 cm แม้ไม่มี colon",
+     "pearl": "End jejunostomy <100–115 cm = เสี่ยง PN ถาวรสูงสุด; colon และ ICV ช่วยมาก",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-01-MEQ1",
+   "part": "MEQ",
+   "topic": "Postoperative sepsis — nutrition, refeeding and PICS",
+   "vignette": "ชายไทยอายุ 63 ปี ดื่มสุราประจำ น้ำหนักลดจาก 62 เป็น 52 kg ใน 4 เดือน (BMI 18) กลืนลำบากและกินได้น้อยมาก 2 สัปดาห์ ได้รับการผ่าตัด total gastrectomy with Roux-en-Y สำหรับ gastric cancer ที่ รพ.ศูนย์\nPOD 5: ไข้ 39°C, ปวดท้อง, BP 84/50 mmHg ต้องใช้ norepinephrine 0.25 µg/kg/min, lactate 4.8 mmol/L · CT: esophagojejunal anastomotic leak พร้อม left subphrenic collection\nLab: WBC 21,000, albumin 2.1 g/dL, PO₄ 2.4 mg/dL, K 3.3, Mg 1.5 mg/dL, glucose 245 mg/dL",
+   "questions": [
+    {
+     "q": "1. จงอธิบายการเปลี่ยนแปลงทาง metabolic/immune ของผู้ป่วยในช่วงนี้ และสิ่งที่ต้องทำก่อนเริ่มพูดถึงโภชนาการ",
+     "a": "- อยู่ใน **flow phase**: hypermetabolism, **insulin resistance** (glucose 245), proteolysis ที่กลูโคสกดไม่ได้, IL-6/CRP สูง\n- Septic shock จาก **anastomotic leak** → ต้อง **source control** ก่อน (percutaneous drainage ± re-operation/stent ตามสภาพ), broad-spectrum antibiotic, resuscitation ตาม Surviving Sepsis\n- **ยังไม่ feed** ขณะ vasopressor สูง/lactate สูง (เสี่ยง non-occlusive bowel necrosis)\n- คุม glucose **140–180 mg/dL** ด้วย insulin infusion\n\nเกณฑ์ให้คะแนน\n- บอก insulin resistance/catabolism (1)\n- source control ก่อน (2)\n- งด EN ช่วงช็อกไม่คงที่ (1)"
+    },
+    {
+     "q": "2. หลัง drainage สำเร็จ ช็อกดีขึ้นใน 48 ชั่วโมง วางแผนโภชนาการ (route, เป้า, ระยะเวลา) อย่างไร",
+     "a": "- ผู้ป่วย **high nutritional risk** (น้ำหนักลด 16%, BMI 18, กินน้อย, NUTRIC สูง) → ต้องเริ่ม nutrition เร็ว\n- **Route**: EN ทาง **feeding jejunostomy/nasojejunal tube ที่ผ่านเลย anastomosis** ถ้าวางได้ ถ้าไม่ได้หรือ EN ไม่พอ → **PN ทันที** (high risk ไม่ต้องรอ 7 วัน)\n- **เป้า**: สัปดาห์แรก hypocaloric ราว 15–20 kcal/kg แต่ **protein 1.2–2.0 g/kg/วัน** (≈ 65–100 g) แล้วขึ้นถึง 25–30 kcal/kg\n- แต่เพราะเสี่ยง refeeding สูง → **เริ่ม 10–20 kcal/kg** ค่อยเพิ่ม 4–7 วัน\n- ไม่ใช้ arginine-enriched formula ขณะ sepsis; ไม่ให้ glutamine ขนาดสูง"
+    },
+    {
+     "q": "3. วันที่ 3 หลังเริ่มให้อาหาร ผู้ป่วยหายใจเร็ว อ่อนแรง สับสน PO₄ 0.8 mg/dL จงวินิจฉัย อธิบายกลไก และการรักษา",
+     "a": "- **Refeeding syndrome**: insulin หลั่ง → PO₄, K, Mg เข้าเซลล์ + ใช้ thiamine → hypophosphatemia ทำให้ **diaphragm อ่อนแรง**, หัวใจล้มเหลว, arrhythmia, สับสน (และอาจ **Wernicke** จากสุรา + thiamine หมด)\n- การรักษา: **thiamine IV** (ก่อนกลูโคส), **IV phosphate**, K, Mg, **ลดพลังงานลงราวครึ่ง** แล้วเพิ่มใหม่ช้า ๆ, ตรวจ electrolyte ทุก 12 ชม., cardiac monitor, ระวังสารน้ำเกิน\n- Critical error: เพิ่ม insulin/เพิ่มพลังงานต่อ หรือไม่ให้ thiamine"
+    },
+    {
+     "q": "4. วันที่ 25 ใน ICU ผู้ป่วยยังติดเครื่อง ติดเชื้อ VAP และ CLABSI lymphocyte 550/µL albumin 1.9 g/dL จงอธิบายภาวะนี้และแนวทางดูแล",
+     "a": "- **PICS / chronic critical illness**: ICU มากกว่า 14 วัน, inflammation ค้าง, **immunosuppression** (MDSC, HLA-DR ต่ำ, lymphopenia), **catabolism**\n- ดูแล: หา/ควบคุมแหล่งติดเชื้อซ้ำ (เปลี่ยนสาย, ตรวจ collection), **โปรตีนสูง 1.5–2.0 g/kg/วัน** ผ่าน EN เป็นหลัก, early mobilization/rehab, คุม glucose, ลด sedation, ประเมินเป้าหมายการรักษากับญาติ (prognosis มัก discharge ไป long-term care)\n- พยากรณ์: เสี่ยงตายช่วงหลังจำหน่ายสูง"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 2",
+    "ASPEN/SCCM Guidelines for nutrition support therapy in the adult critically ill patient (2016)",
+    "ASPEN consensus recommendations for refeeding syndrome (2020)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-01-OSCE1",
+   "topic": "High-output enterocutaneous fistula — nutrition and intestinal failure",
+   "station": "Mock oral 10 นาที · High-output ECF และ intestinal failure",
+   "instruction": "**บทบาท**: คุณเป็น senior resident ศัลยกรรม ตอบคำถามผู้คุมสอบ (oral board)\n\n**สถานการณ์**: หญิงไทยอายุ 52 ปี POD 8 หลัง laparotomy แก้ adhesive small-bowel obstruction ที่มี enterotomy ซ่อมไว้ ขณะนี้มีน้ำสีเขียวออกทางแผล 1,300 mL/วัน ไข้ 38.4°C HR 110 BP 108/70 · Na 131, K 3.0, HCO₃ 19, Cr 1.6, albumin 2.4, PO₄ 2.0\n\n**คำถามของผู้คุมสอบ (ถามทีละข้อ)**\n1. ภาวะนี้คืออะไร จัดเป็น output ระดับใด และจะทำอะไรใน 24 ชั่วโมงแรก\n2. จะหา/ควบคุม sepsis อย่างไร\n3. วางแผนโภชนาการอย่างไร (route, เป้า, ข้อควรระวัง)\n4. หลังเริ่ม PN 2 วัน PO₄ 0.9 mg/dL ทำอย่างไร\n5. ปัจจัยใดทำให้ fistula ไม่ปิดเอง และจะผ่าตัดแก้เมื่อไร\n6. ถ้าสุดท้ายเหลือลำไส้เล็ก 70 cm ต่อ end jejunostomy ผู้ป่วยจะเป็นอย่างไรในระยะยาว",
+   "answer": "1. **High-output ECF** (มากกว่า 500 mL/วัน) → resuscitate ด้วย isotonic fluid, แก้ K/HCO₃, ตวง output, **ปกป้องผิวหนัง** (wound manager/stoma bag), NPO ชั่วคราว, PPI, ± somatostatin analogue ลด output (2 คะแนน)\n2. **CT abdomen ด้วย oral/IV contrast** หา intra-abdominal collection → **percutaneous drainage**, antibiotic ตาม culture, เลี่ยง re-laparotomy ช่วง hostile abdomen (ยกเว้น peritonitis ทั่วท้อง) (2)\n3. **SNAP**: high nutritional risk + high output → เริ่ม **PN** (central line) เมื่อ sepsis คุมได้; เป้าสัปดาห์แรก hypocaloric (ต่ำกว่า 20 kcal/kg) protein มากกว่า 1.2–1.5 g/kg; ค่อย ๆ เพิ่มถึง 25–30 kcal/kg และ protein 1.5–2.0 g/kg; **ระวัง refeeding** (PO₄ ต่ำตั้งต้น); พิจารณา EN/fistuloclysis ถ้ามีลำไส้ distal ยาวพอ; ทดแทน Zn, Mg ที่เสียทาง fistula (2)\n4. **Refeeding syndrome** → thiamine, IV PO₄/K/Mg, ลดพลังงานลงครึ่ง เพิ่มใหม่ช้า ๆ ตรวจ electrolyte ทุก 12 ชม. (1)\n5. **FRIENDS**: Foreign body, Radiation, IBD/Infection, Epithelialization, Neoplasm, Distal obstruction, Short tract (น้อยกว่า 2 cm)/Sepsis · ส่วนใหญ่ที่จะปิดเองปิดใน 4–6 สัปดาห์หลังคุม sepsis · ผ่าตัด definitive เมื่อโภชนาการดีและ abdomen นุ่ม มักรอ **ไม่น้อยกว่า 3 เดือน** (มักราว 3–6 เดือน): resect fistula + anastomosis ใหม่ ปิดหน้าท้อง (1)\n6. **Short bowel / intestinal failure type III**: end jejunostomy น้อยกว่า 100–115 cm → **เสี่ยงพึ่ง home PN ถาวร**, เสีย Na/น้ำมาก ต้อง oral rehydration solution (Na อย่างน้อย 90 mmol/L) จำกัด hypotonic fluid, PPI, loperamide; ภาวะแทรกซ้อน CLABSI, IFALD, นิ่วไต (ถ้ามี colon), B12 ขาด; ส่ง intestinal rehabilitation, teduglutide, พิจารณา transplant ถ้า IFALD หรือเสีย venous access (2)\n\n**Critical fails**: re-laparotomy ทันทีเพื่อเย็บ fistula ในช่วง hostile abdomen · ไม่ resuscitate/แก้ electrolyte · เริ่ม PN เต็มเป้าโดยไม่คิดถึง refeeding · ไม่หาแหล่ง sepsis"
+  }
+ ]
+}

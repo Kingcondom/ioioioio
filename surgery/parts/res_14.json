@@ -1,0 +1,462 @@
+{
+ "lec": "14",
+ "date": "Schwartz Ch 11",
+ "title": "Transplantation",
+ "subtitle": "คาบนี้ตอบว่า: ยากดภูมิแต่ละตัวทำงานและมีพิษอย่างไร, ปลูกถ่ายไต ตับ ตับอ่อนแล้วเกิดอะไรได้บ้าง และจัดการ rejection, CMV, PTLD กับผู้บริจาคสมองตายอย่างไร",
+ "objectives": [
+  "เรียนจบแล้วต้องจับคู่ยากดภูมิกับตำแหน่งที่ออกฤทธิ์ พิษสำคัญ และ drug interaction ที่เปลี่ยนระดับยาได้",
+  "เรียนจบแล้วต้องประเมินผู้รับและผู้ให้ไต และแยก urine leak, lymphocele, thrombosis, DGF หลังปลูกถ่ายไตได้",
+  "เรียนจบแล้วต้องใช้ MELD, Milan และ King's College criteria ตัดสินข้อบ่งชี้ปลูกถ่ายตับ",
+  "เรียนจบแล้วต้องจัดการ hepatic artery thrombosis, primary nonfunction และ biliary complication หลังปลูกถ่ายตับ",
+  "เรียนจบแล้วต้องแยก hyperacute, TCMR, ABMR, chronic rejection และเลือกการรักษาได้",
+  "เรียนจบแล้วต้องป้องกันและรักษา CMV, PTLD และวินิจฉัย brain death/ดูแลผู้บริจาคได้ตามขั้นตอน"
+ ],
+ "guidelines": [
+  "Banff classification of allograft pathology",
+  "Milan criteria (Mazzaferro, NEJM 1996) · UCSF criteria",
+  "King's College criteria for acute liver failure",
+  "AST/TTS guidelines on CMV prevention and treatment in solid organ transplantation",
+  "AAN 2010 / World Brain Death Project 2020 — determination of brain death",
+  "ข้อบังคับแพทยสภาเรื่องการปลูกถ่ายอวัยวะและเกณฑ์การวินิจฉัยสมองตาย · ศูนย์รับบริจาคอวัยวะ สภากาชาดไทย"
+ ],
+ "sections": [
+  {
+   "id": "res-14-1",
+   "title": "Transplant immunology & immunosuppressive drugs",
+   "summary": "ยากดภูมิแต่ละตัวตัดวงจร T-cell activation ตรงไหน มีพิษอะไรที่ศัลยแพทย์ต้องเจอ และ drug interaction ใดทำให้เกิด rejection หรือพิษ",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 11 — Transplant immunobiology; Clinical immunosuppression",
+   "md": "### Allorecognition: ทำไมร่างกายจำอวัยวะคนอื่นได้\n- **HLA class I** (HLA-A, -B, -C) อยู่บนเซลล์ที่มีนิวเคลียสทุกชนิด นำเสนอต่อ **CD8** T cell; **HLA class II** (HLA-DR, -DQ, -DP) อยู่บน antigen-presenting cell นำเสนอต่อ **CD4** — การ match ไตใช้ HLA-A, -B, -DR เป็นหลัก\n- **Direct allorecognition**: T cell ของผู้รับจำ HLA ของผู้ให้บน donor APC (passenger leukocyte) → ขับเคลื่อน acute rejection ระยะแรก · **Indirect**: APC ของผู้รับนำเสนอ peptide ของ donor HLA → สัมพันธ์กับ antibody และ chronic rejection\n- ABO incompatibility และ antibody ต่อ HLA ที่มีอยู่ก่อน (จากการตั้งครรภ์ การให้เลือด การปลูกถ่ายครั้งก่อน) คือต้นเหตุของ **hyperacute rejection**\n\n### Three-signal model: แผนที่ว่ายาแต่ละตัวตัดตรงไหน\n\n| Signal | เหตุการณ์ | ยาที่ตัด |\n|---|---|---|\n| 1 | TCR จับ HLA-peptide → **calcineurin** dephosphorylate NFAT → ถอดรหัส IL-2 | **cyclosporine** (จับ cyclophilin), **tacrolimus** (จับ FKBP12) |\n| 2 | Costimulation **CD28–CD80/86** | **belatacept** (CTLA4-Ig) |\n| 3 | IL-2 จับ **CD25** → **mTOR** → cell cycle G1→S | **basiliximab** (anti-CD25), **sirolimus/everolimus** (FKBP + mTOR) |\n| การแบ่งตัว | สังเคราะห์ purine | **MMF** (ยับยั้ง IMPDH, de novo pathway), azathioprine |\n| เซลล์ทั้งหมด | depletion | **rabbit ATG** (Thymoglobulin), **alemtuzumab** (anti-CD52), rituximab (anti-CD20) |\n\n> หลักการ: **induction** (ช่วงความเสี่ยง rejection สูงสุด) + **maintenance** สามตัว (CNI + antimetabolite + steroid) ระดับยากดภูมิสูงสุดใน 3–6 เดือนแรก จึงต้องให้ prophylaxis ช่วงนี้\n\n### ตารางพิษของยาที่ต้องจำ\n\n| ยา | พิษเด่น | จุดสอบ |\n|---|---|---|\n| **Cyclosporine** | nephrotoxicity, HTN, **hirsutism, gingival hyperplasia**, hyperK, hypoMg | หดหลอดเลือด afferent |\n| **Tacrolimus** | nephrotoxicity, **neurotoxicity** (tremor, PRES), **PTDM/hyperglycemia**, alopecia, ท้องเสีย | ใช้มากที่สุดใน maintenance |\n| **Sirolimus/everolimus** | **wound dehiscence, lymphocele**, hyperlipidemia, thrombocytopenia, pneumonitis, proteinuria, mouth ulcer | ไม่ nephrotoxic; หลีกเลี่ยงช่วงแรกหลังผ่าตัด; ต้านมะเร็งผิวหนังได้ |\n| **MMF** | ท้องเสีย คลื่นไส้ leukopenia, **teratogenic** | หญิงวางแผนตั้งครรภ์เปลี่ยนเป็น azathioprine |\n| **Azathioprine** | bone marrow suppression, hepatotoxicity, pancreatitis | ห้ามคู่ **allopurinol** (ถ้าจำเป็นลดยา 75%) |\n| **Steroid** | DM, osteoporosis, แผลหายช้า, ติดเชื้อ | ยาแรกในการรักษา acute cellular rejection |\n| **Belatacept** | **PTLD (โดยเฉพาะ CNS)** ใน EBV-seronegative | ใช้เฉพาะไต และผู้รับ **EBV-seropositive** เท่านั้น; ลด CV risk และไม่ nephrotoxic |\n| **Rabbit ATG** | cytokine release, leukopenia, thrombocytopenia, ติดเชื้อ, PTLD | ใช้ทั้ง induction และรักษา steroid-resistant rejection |\n| **Basiliximab** | ผลข้างเคียงน้อย | **ไม่ depletion → ใช้รักษา rejection ไม่ได้** |\n\n### Drug interaction: CYP3A4 และ P-glycoprotein\n\n| ระดับ CNI/mTOR **เพิ่ม** (เสี่ยงพิษ) | ระดับ **ลด** (เสี่ยง rejection) |\n|---|---|\n| azole antifungals, macrolide (erythromycin, clarithromycin), **diltiazem/verapamil**, protease inhibitor, น้ำ grapefruit | **rifampin**, phenytoin, carbamazepine, phenobarbital, St John's wort |\n\n- บริบทไทย: ผู้ป่วยหลังปลูกถ่ายเป็น **วัณโรค** บ่อย การเริ่ม rifampin ทำให้ระดับ tacrolimus ตกมากจนเกิด rejection — ต้องเพิ่มขนาดยาหลายเท่าและวัด trough ถี่ หรือใช้ rifabutin แทน\n- ยาที่เพิ่ม **nephrotoxicity** ร่วมกับ CNI: aminoglycoside, NSAID, amphotericin, ACEi/ARB ช่วงแรก, IV contrast\n- ศัลยแพทย์ทั่วไปต้องรู้: ผู้ป่วยกิน steroid เรื้อรังที่มาผ่าตัดฉุกเฉินอาจต้อง **stress-dose steroid**; NPO นานต้องเปลี่ยนเป็น IV tacrolimus (ขนาดประมาณ 1/3–1/5 ของขนาดกิน) และวัดระดับ\n",
+   "pearls": [
+    "Class I (A, B, C) → CD8; class II (DR, DQ, DP) → CD4",
+    "CNI ยับยั้ง calcineurin → IL-2; mTOR inhibitor ตัด signal 3",
+    "Cyclosporine = hirsutism + gum hyperplasia; tacrolimus = neurotoxicity + PTDM",
+    "Sirolimus = แผลแยก, lymphocele, hyperlipidemia แต่ไม่ nephrotoxic",
+    "Basiliximab ไม่ depletion → รักษา rejection ไม่ได้",
+    "Rifampin ลดระดับ CNI; azole/macrolide/diltiazem เพิ่มระดับ",
+    "Belatacept ห้ามในผู้รับ EBV-seronegative"
+   ],
+   "items": [
+    {
+     "id": "RES-14-1-1",
+     "kind": "mcq",
+     "topic": "Rifampin–tacrolimus interaction",
+     "stem": "A 41-year-old man underwent living-donor kidney transplantation 8 months ago and has been stable on tacrolimus, mycophenolate and prednisone with a creatinine of 1.2 mg/dL. Four weeks ago he was started on isoniazid, rifampin, pyrazinamide and ethambutol for pulmonary tuberculosis. Creatinine is now 2.3 mg/dL and the tacrolimus trough level is undetectable. Which mechanism best explains the graft dysfunction?",
+     "choices": [
+      "Induction of hepatic CYP3A4 and intestinal P-glycoprotein reducing tacrolimus levels",
+      "Inhibition of CYP3A4 causing tacrolimus nephrotoxicity",
+      "Rifampin-induced acute interstitial nephritis unrelated to drug levels",
+      "Isoniazid-induced inhibition of mycophenolate absorption",
+      "Pyrazinamide-induced hyperuricemic nephropathy"
+     ],
+     "answer": 0,
+     "explain": "**Rifampin เป็น inducer ที่แรงมากของ CYP3A4 และ P-glycoprotein** ทำให้ tacrolimus ถูกเผาผลาญเร็วและดูดซึมน้อยลงจนระดับต่ำจนตรวจไม่ได้ → **acute rejection** (Cr เพิ่ม) ต้องเพิ่มขนาด tacrolimus หลายเท่า วัด trough ถี่ ๆ ทำ biopsy ยืนยัน และพิจารณาเปลี่ยนเป็น rifabutin ซึ่ง induce น้อยกว่า\n- **CYP3A4 inhibition** — เป็นกลไกของ azole, macrolide, diltiazem ซึ่งทำให้ระดับสูง ไม่ใช่ต่ำ\n- **Interstitial nephritis** — เกิดได้แต่ไม่อธิบายระดับยาที่หายไป\n- **Isoniazid กับ MMF** — ไม่มี interaction สำคัญ\n- **Pyrazinamide** — เพิ่ม uric acid แต่ไม่ทำให้ระดับ tacrolimus เป็นศูนย์",
+     "pearl": "Rifampin ทำให้ระดับ CNI ตก → rejection; azole/macrolide/diltiazem ทำให้ระดับขึ้น → พิษ",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-1-2",
+     "kind": "mcq",
+     "topic": "mTOR inhibitor and wound complications",
+     "stem": "A 56-year-old woman receives a deceased-donor kidney transplant. Because of a history of cutaneous squamous cell carcinoma, her regimen is basiliximab induction, sirolimus, mycophenolate and prednisone from day 1. On postoperative day 12 she has fascial dehiscence, and by week 4 a large perigraft fluid collection with creatinine equal to serum causes hydronephrosis. Which drug most likely contributed to both complications?",
+     "choices": [
+      "Sirolimus",
+      "Basiliximab",
+      "Mycophenolate mofetil",
+      "Prednisone",
+      "Tacrolimus"
+     ],
+     "answer": 0,
+     "explain": "**mTOR inhibitor (sirolimus/everolimus)** ยับยั้งการแบ่งตัวของ fibroblast และ endothelial cell ส่งผลให้ **แผลหายช้า แผลแยก ไส้เลื่อนแผลผ่าตัด** และ **lymphocele** มากขึ้นเมื่อเริ่มใช้ทันทีหลังผ่าตัด จึงมักเลื่อนการเริ่มยาออกไปจนแผลหาย แม้จะมีข้อดีเรื่องลดมะเร็งผิวหนังและไม่ nephrotoxic\n- **Basiliximab** — nondepleting anti-CD25 ผลข้างเคียงต่ำ ไม่สัมพันธ์กับแผลแยก\n- **MMF** — พิษหลักคือ GI และ leukopenia\n- **Prednisone** — ทำให้แผลหายช้าได้แต่ไม่สัมพันธ์เด่นกับ lymphocele และใช้ขนาดมาตรฐานในทุก regimen\n- **Tacrolimus** — ผู้ป่วยไม่ได้รับยานี้",
+     "pearl": "Sirolimus ช่วงแรกหลังผ่าตัด = แผลแยก ไส้เลื่อน lymphocele",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-1-3",
+     "kind": "mcq",
+     "topic": "Azathioprine–allopurinol interaction",
+     "stem": "A 49-year-old kidney transplant recipient maintained on tacrolimus, azathioprine 100 mg/day and prednisone develops acute gout. His primary physician starts allopurinol 300 mg/day. Three weeks later he presents with fever, WBC 1,200/µL, hemoglobin 7.8 g/dL and platelets 35,000/µL. What is the mechanism of his pancytopenia?",
+     "choices": [
+      "Xanthine oxidase inhibition decreases inactivation of 6-mercaptopurine",
+      "Allopurinol inhibits CYP3A4, raising tacrolimus levels",
+      "Allopurinol-induced autoimmune hemolysis",
+      "Azathioprine competitively inhibits inosine monophosphate dehydrogenase",
+      "Uric acid crystal deposition in the bone marrow"
+     ],
+     "answer": 0,
+     "explain": "Azathioprine ถูกเปลี่ยนเป็น **6-mercaptopurine** และถูกทำลายส่วนหนึ่งโดย **xanthine oxidase** เมื่อให้ **allopurinol** (xanthine oxidase inhibitor) ระดับ active metabolite สะสม → **bone marrow suppression รุนแรง** แนวทางคือหลีกเลี่ยงการใช้ร่วม ถ้าจำเป็นลด azathioprine ราว 75% หรือเปลี่ยนเป็น MMF/ใช้ยาลด urate ตัวอื่น\n- **CYP3A4 inhibition** — allopurinol ไม่ใช่ inhibitor สำคัญของ CYP3A4 และพิษ tacrolimus ไม่ทำให้ pancytopenia\n- **Autoimmune hemolysis** — ไม่อธิบาย leukopenia และ thrombocytopenia\n- **IMPDH inhibition** — เป็นกลไกของ mycophenolate ไม่ใช่ azathioprine\n- **Uric acid ในไขกระดูก** — ไม่มีจริง",
+     "pearl": "Azathioprine + allopurinol = pancytopenia; ต้องลด AZA 75% หรือเปลี่ยนยา",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-1-4",
+     "kind": "mcq",
+     "topic": "Belatacept and EBV serostatus",
+     "stem": "A 34-year-old man with end-stage kidney disease from IgA nephropathy is scheduled for deceased-donor kidney transplantation. He is EBV-seronegative and the donor is EBV-seropositive. The team wishes to avoid long-term calcineurin inhibitor nephrotoxicity. Which maintenance agent should be avoided in this recipient?",
+     "choices": [
+      "Belatacept",
+      "Mycophenolate mofetil",
+      "Tacrolimus",
+      "Prednisone",
+      "Everolimus"
+     ],
+     "answer": 0,
+     "explain": "**Belatacept** (CTLA4-Ig ที่ปิด costimulation CD28–CD80/86) ไม่ nephrotoxic และลด CV risk แต่เพิ่ม **PTLD โดยเฉพาะชนิดใน CNS** อย่างมีนัยในผู้รับ **EBV-seronegative** FDA จึงอนุญาตเฉพาะผู้รับ EBV-seropositive ผู้ป่วยรายนี้เป็น D+/R− ซึ่งเสี่ยง PTLD สูงสุดอยู่แล้ว\n- **MMF** — ใช้ได้ เป็นส่วนหนึ่งของ triple therapy\n- **Tacrolimus** — ใช้ได้ แม้มี nephrotoxicity ต้องคุมระดับ\n- **Prednisone** — ไม่มีข้อห้ามเฉพาะ EBV\n- **Everolimus** — ใช้เพื่อลด CNI ได้ ไม่ถูกห้ามตาม EBV status",
+     "pearl": "Belatacept ใช้ได้เฉพาะผู้รับ EBV-seropositive เพราะเสี่ยง PTLD ในสมอง",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-14-2",
+   "title": "Kidney transplantation: evaluation, technique, complications & DGF",
+   "summary": "ใครเหมาะเป็นผู้รับหรือผู้ให้ไต ผ่าตัดต่ออะไรกับอะไร และเมื่อปัสสาวะลดหรือมีน้ำรอบไตหลังปลูกถ่ายจะแยกสาเหตุและแก้อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 11 — Kidney transplantation; Living donors; Organ preservation",
+   "md": "### ประเมินผู้รับไต: ใครได้ ใครไม่ได้\nไตเป็นการรักษาที่ดีที่สุดของ ESRD ทั้งในแง่ survival คุณภาพชีวิต และค่าใช้จ่าย เมื่อเทียบกับการฟอกไต\n\n| หัวข้อ | สิ่งที่ต้องดู |\n|---|---|\n| ข้อห้ามเด็ดขาด | **ติดเชื้อที่ยัง active, มะเร็งที่ยัง active** (ยกเว้น nonmelanoma skin cancer และ RCC ที่พบบังเอิญขณะตัดไตเดิม), ติดสารเสพติด, โรคจิตเวชคุมไม่ได้ |\n| มะเร็งเดิม | มะเร็งความเสี่ยงต่ำที่รักษาหายแล้ว รออย่างน้อย **2 ปี** (บางชนิดนานกว่า) |\n| หัวใจ | สาเหตุตายอันดับหนึ่งของผู้ที่ไตยังทำงาน (30–42%) — ECG + echo ทุกคน, stress test เมื่อมีปัจจัย: **เบาหวาน, ฟอกไต >1 ปี, LVH, อายุ >60, สูบบุหรี่, HTN, dyslipidemia** |\n| หลอดเลือด | ABI, CT ดู calcification ของ iliac (จุดต่อหลอดเลือด) |\n| ภูมิคุ้มกัน | ABO, HLA-A/-B/-DR, **PRA/cPRA**, DSA ด้วย Luminex single-antigen bead, **crossmatch** (CDC, flow) ก่อนผ่าตัด |\n| ทางเดินปัสสาวะ | VCUG ในผู้ที่มีประวัติ reflux/neurogenic bladder |\n\n- PRA สูง (จากการตั้งครรภ์ ให้เลือด ปลูกถ่ายครั้งก่อน) = หา donor ที่ crossmatch ลบยาก ใช้ **virtual crossmatch** หลีกเลี่ยง unacceptable antigen และอาจต้อง desensitization (PLEX, IVIG, rituximab)\n- **Positive T-cell CDC crossmatch** = ข้อห้ามผ่าตัด (เสี่ยง hyperacute rejection)\n\n### ผู้ให้ไตที่มีชีวิต\n- ข้อดี: graft survival ดีกว่า (1-year graft survival ~97–98%), DGF น้อย, วางแผน **preemptive transplant** ได้ก่อนฟอกไต, เวลารอสั้น\n- ข้อห้ามทั่วไปของผู้บริจาค: เบาหวาน, HTN คุมไม่ได้หรือมี end-organ damage, GFR ต่ำ (ประมาณ <80 mL/min/1.73 m² ขึ้นกับอายุ), proteinuria, นิ่วซ้ำ, มะเร็ง, BMI สูงมาก, ปัญหาจิตใจหรือถูกบังคับ/ซื้อขาย\n- เทคนิค: **laparoscopic donor nephrectomy** มาตรฐาน; ชอบไตซ้ายเพราะ renal vein ยาวกว่า ทิ้งไตที่ดีกว่าไว้กับผู้บริจาค; mortality ของผู้บริจาคต่ำมาก (~0.03%)\n- บริบทไทย: การบริจาคจากผู้มีชีวิตอยู่ภายใต้ข้อบังคับแพทยสภา (ญาติหรือคู่สมรสตามเงื่อนไขที่กำหนด) ห้ามซื้อขายอวัยวะ; deceased donor ผ่าน **ศูนย์รับบริจาคอวัยวะ สภากาชาดไทย**\n\n### เทคนิคผ่าตัดผู้รับและการดูแลช่วงแรก\n- วางไต **extraperitoneal ใน iliac fossa** (Gibson/hockey-stick incision), ต่อ renal artery กับ **external iliac artery** และ renal vein กับ **external iliac vein** แบบ end-to-side; ureter เย็บเข้ากระเพาะแบบ **extravesical (Lich-Gregoir) ureteroneocystostomy** มักใส่ double-J stent\n- ผูก lymphatic รอบ iliac vessels เพื่อลด **lymphocele**\n- ก่อน reperfusion: CVP ราว 10 mmHg, SBP >120 mmHg, ให้ mannitol ± furosemide; หลังผ่าตัดทดแทน urine output แบบ hour-by-hour และระวัง hypo-K/Mg/Ca ในผู้ที่ diuresis มาก\n- **ปัสสาวะลดลงทันที** หลังผ่าตัด: ขั้นแรก **flush/เปลี่ยน Foley** (clot อุด) → ประเมิน volume → **Doppler US** ดู perfusion, hydronephrosis, collection\n\n### Surgical complications ของไตปลูกถ่าย\n\n| ภาวะ | เวลา/อาการ | วินิจฉัย/รักษา |\n|---|---|---|\n| Bleeding | ชั่วโมง–วันแรก, hematoma, Hb ตก | ส่วนใหญ่หยุดเอง; ผ่าตัดถ้า unstable, ต้องให้เลือดต่อเนื่อง, hematoma กดไต |\n| **Graft thrombosis** (artery/vein) | <1%, วันแรก ๆ ปัสสาวะหยุดทันที, ปวด/บวม, hematuria (vein) | Doppler ไม่มี flow → explore ด่วน แต่ส่วนใหญ่ต้อง **graft nephrectomy** |\n| **Urine leak** | สัปดาห์แรก, ปวด บวม ปัสสาวะลด น้ำออกแผล | **creatinine ในน้ำ >> serum**; PCN + stent หรือผ่าตัดซ่อม/reimplant |\n| Ureteral obstruction | early (edema, clot, kink) / late (ischemia) | hydronephrosis → PCN + stent → reimplant หรือ ureteropyelostomy |\n| **Lymphocele** | สัปดาห์–เดือน, บวมขาข้างเดียวกัน, hydronephrosis | **creatinine เท่า serum**; aspiration มักกลับซ้ำ → **laparoscopic peritoneal fenestration** หรือ sclerotherapy |\n| Renal artery stenosis | เดือน–ปี, HTN ดื้อยา, bruit, Cr ขึ้นเมื่อให้ ACEi | Doppler → angioplasty/stent |\n\n### Delayed graft function (DGF)\n- นิยามที่ใช้บ่อย: **ต้องฟอกไตภายในสัปดาห์แรก** หลังปลูกถ่าย; สาเหตุส่วนใหญ่คือ **ATN** จาก ischemia-reperfusion\n- ปัจจัยเสี่ยง: **DCD donor, cold ischemia >24 ชม.**, donor อายุมาก/expanded criteria, donor AKI, hypotension ของผู้รับ, re-transplant/PRA สูง\n- ผลกระทบ: เพิ่มความเสี่ยง acute rejection และ graft loss ระยะยาว ค่าใช้จ่ายสูงขึ้น\n- แนวทาง: แยก surgical cause ด้วย Doppler/renogram (MAG3) ก่อน → ฟอกไตตามจำเป็น, หลีกเลี่ยง volume overload/hypovolemia, ใช้ **ATG induction** และชะลอหรือลด CNI → ถ้าไตยังไม่ฟื้นใน 7–10 วัน **biopsy** เพื่อหา rejection ที่ซ่อนอยู่\n",
+   "pearls": [
+    "ข้อห้ามเด็ดขาด: active infection, active malignancy, substance abuse, จิตเวชคุมไม่ได้",
+    "Positive T-cell crossmatch = ห้ามปลูกถ่าย (hyperacute rejection)",
+    "ปัสสาวะหยุดทันที: flush Foley ก่อน แล้ว Doppler",
+    "Urine leak: Cr ในน้ำ >> serum; lymphocele: Cr เท่า serum",
+    "Lymphocele ที่กลับซ้ำ → laparoscopic peritoneal fenestration",
+    "Graft thrombosis <1% แต่ส่วนใหญ่เสียไต",
+    "DGF = ฟอกไตในสัปดาห์แรก; DCD และ cold ischemia >24 ชม. เพิ่มความเสี่ยง"
+   ],
+   "items": [
+    {
+     "id": "RES-14-2-1",
+     "kind": "mcq",
+     "topic": "Sudden oliguria after kidney transplant",
+     "stem": "A 52-year-old man undergoes living-donor kidney transplantation with immediate brisk diuresis of 300–500 mL/h. Eight hours later, urine output abruptly falls to 5 mL/h. BP is 148/86 mmHg, HR 88/min and CVP 10 mmHg. He has mild suprapubic discomfort and some hematuria was noted earlier. What is the most appropriate first step?",
+     "choices": [
+      "Irrigate or replace the urinary catheter",
+      "Administer a 1-L crystalloid bolus",
+      "Duplex ultrasound of the graft",
+      "High-dose intravenous furosemide",
+      "Return to the operating room for exploration"
+     ],
+     "answer": 0,
+     "explain": "ไตจาก living donor ที่ปัสสาวะออกดีแล้ว **ลดลงทันที** ในผู้ป่วยที่มี hematuria และอึดอัดท้องน้อย สาเหตุที่พบบ่อยและแก้ง่ายที่สุดคือ **clot อุด Foley catheter** ต้อง flush หรือเปลี่ยนสายก่อนเสมอ ถ้ายังไม่ดีขึ้นจึงประเมิน volume และทำ Doppler หา thrombosis, leak หรือ obstruction ต่อทันที\n- **Fluid bolus** — CVP 10 และ BP ดี ไม่ใช่ปัญหา volume เป็นอันดับแรก\n- **Doppler** — สำคัญเป็นขั้นถัดไป แต่ต้องตัดสาเหตุจากสายก่อน\n- **Furosemide** — ไม่แก้การอุดตัน\n- **ผ่าตัดทันที** — ก่อนมีหลักฐาน thrombosis/leak เป็นการกระทำที่เกินจำเป็น",
+     "pearl": "ปัสสาวะหยุดทันทีหลังปลูกถ่ายไต: flush Foley ก่อน แล้วจึง Doppler",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-2-2",
+     "kind": "mcq",
+     "topic": "Lymphocele after kidney transplant",
+     "stem": "Seven weeks after a deceased-donor kidney transplant, a 46-year-old woman has new ipsilateral leg swelling and creatinine rising from 1.1 to 1.6 mg/dL. Ultrasound shows a 9-cm septated perigraft collection with moderate hydronephrosis and normal graft perfusion. Percutaneous aspiration yielded clear fluid with creatinine equal to serum and improved renal function, but the collection recurred within 2 weeks. What is the most appropriate definitive management?",
+     "choices": [
+      "Laparoscopic peritoneal fenestration (marsupialization) of the collection",
+      "Repeated percutaneous aspiration every 2 weeks",
+      "Ureteral reimplantation",
+      "Graft nephrectomy",
+      "Long-term indwelling ureteral stent alone"
+     ],
+     "answer": 0,
+     "explain": "ของเหลวใส **creatinine เท่า serum** หลังปลูกถ่ายไตหลายสัปดาห์ = **lymphocele** (จาก lymphatic รอบ iliac vessels หรือของไต) ที่กด ureter (hydronephrosis) และ iliac vein (ขาบวม) การดูดออกอย่างเดียวกลับเป็นซ้ำบ่อย การรักษาที่ได้ผลคือ **เปิดหน้าต่างเข้าช่องท้อง (peritoneal fenestration) ด้วยกล้อง** ให้ lymph ถูกดูดซึมโดย peritoneum หรือใส่ drain + sclerotherapy\n- **ดูดซ้ำ** — recurrence สูงและเสี่ยงติดเชื้อ\n- **Ureteral reimplantation** — ปัญหาไม่ได้อยู่ที่ ureter แต่ถูกกดจากภายนอก\n- **Graft nephrectomy** — ไตทำงานดีและ perfusion ปกติ\n- **Stent อย่างเดียว** — ไม่แก้การกดหลอดเลือดดำและก้อนยังโต",
+     "pearl": "น้ำรอบไต Cr = serum → lymphocele; Cr >> serum → urine leak",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-2-3",
+     "kind": "mcq",
+     "topic": "Urine leak after kidney transplant",
+     "stem": "On postoperative day 5 after kidney transplantation, a 38-year-old man has increasing graft-site pain, decreasing urine output and clear fluid leaking from the wound. Creatinine has risen from 1.8 to 2.9 mg/dL. Ultrasound shows a perigraft fluid collection without hydronephrosis. Fluid from the drain has a creatinine of 38 mg/dL. What is the most likely diagnosis?",
+     "choices": [
+      "Urine leak from the ureteroneocystostomy",
+      "Lymphocele",
+      "Perigraft hematoma",
+      "Seroma",
+      "Chylous leak from the cisterna chyli"
+     ],
+     "answer": 0,
+     "explain": "ของเหลวที่มี **creatinine สูงกว่า serum มาก** (38 vs 2.9 mg/dL) ในสัปดาห์แรกหลังผ่าตัด = **urine leak** ซึ่งมักมาจาก ischemia ของปลาย ureter หรือปัญหาทางเทคนิคที่ ureteroneocystostomy ยืนยันด้วย nuclear renogram หรือ cystogram การรักษาคือ **Foley drainage + PCN และ ureteral stent** หรือผ่าตัดซ่อม/reimplant (ขึ้นกับตำแหน่งและขนาด leak)\n- **Lymphocele** — เกิดช้ากว่า (สัปดาห์–เดือน) และ creatinine เท่า serum\n- **Hematoma** — เลือด Hb ตก ไม่ใช่น้ำใส\n- **Seroma** — creatinine เท่า serum\n- **Chylous leak** — น้ำขุ่นขาว triglyceride สูง ไม่ใช่ creatinine",
+     "pearl": "Drain Cr สูงกว่า serum หลายเท่า = urine leak → PCN/stent หรือซ่อม",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-2-4",
+     "kind": "mcq",
+     "topic": "Delayed graft function",
+     "stem": "A 61-year-old woman receives a kidney from a 58-year-old donation-after-circulatory-death donor with 31 hours of cold ischemia time. She requires hemodialysis on postoperative day 2 for hyperkalemia and remains oliguric. Doppler ultrasound shows good arterial and venous flow, mildly elevated resistive indices, no hydronephrosis and no fluid collection. The crossmatch was negative and she received thymoglobulin induction. What is the most likely cause of graft dysfunction?",
+     "choices": [
+      "Acute tubular necrosis",
+      "Hyperacute rejection",
+      "Renal artery thrombosis",
+      "BK virus nephropathy",
+      "Ureteral obstruction"
+     ],
+     "answer": 0,
+     "explain": "ไตจาก **DCD donor อายุมาก + cold ischemia >24 ชม.** ต้องฟอกไตในสัปดาห์แรก = **delayed graft function** ซึ่งสาเหตุที่พบบ่อยที่สุดคือ **ATN** จาก ischemia-reperfusion Doppler ที่ perfusion ดี ไม่มี hydronephrosis/collection สนับสนุน ให้ dialysis ประคับประคอง ชะลอ CNI และ biopsy ถ้าไม่ฟื้นใน 7–10 วันเพื่อหา rejection\n- **Hyperacute rejection** — crossmatch ลบ และจะเห็นไตเขียวคล้ำทันทีในห้องผ่าตัด perfusion หายไป\n- **Renal artery thrombosis** — Doppler จะไม่มี arterial flow\n- **BK nephropathy** — เกิดหลายเดือนหลังปลูกถ่าย\n- **Ureteral obstruction** — ต้องเห็น hydronephrosis",
+     "pearl": "DGF = ฟอกไตในสัปดาห์แรก; สาเหตุหลัก ATN จาก DCD/cold ischemia >24 ชม.",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-14-3",
+   "title": "Liver & pancreas transplantation: MELD, Milan, complications",
+   "summary": "ใครควรได้ตับ (MELD, Milan, King's College) ภาวะแทรกซ้อนหลังปลูกถ่ายตับที่ต้องรีบผ่าตัด และ pancreas transplant แต่ละแบบมีจุดดูแลอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 11 — Liver transplantation; Pancreas transplantation",
+   "md": "### ข้อบ่งชี้ liver transplant และ MELD\n- กลุ่มหลัก: **decompensated cirrhosis** (ascites ดื้อยา, variceal bleed ซ้ำ, encephalopathy, hepatorenal syndrome, SBP), **acute liver failure**, **HCC** ในเกณฑ์, โรค metabolic/cholestatic (PBC, PSC, Wilson), ในเด็กคือ **biliary atresia** หลัง Kasai ล้มเหลว\n- **MELD** = bilirubin + INR + creatinine (ปัจจุบันใช้ MELD-Na/MELD 3.0 ที่เพิ่ม sodium, albumin, เพศ) — เดิมสร้างเพื่อทำนายตายหลัง TIPS ใช้จัดลำดับตับตั้งแต่ 2002 (ให้ตามความรุนแรง ไม่ใช่เวลารอ)\n- ข้อมูลใน Schwartz: survival benefit ชัดเมื่อ **MELD ≥18**; MELD 15–18 ไม่ได้ประโยชน์ชัด (เว้นแต่ morbidity สูง) และ MELD ต่ำกว่า 15 การปลูกถ่ายเสี่ยงมากกว่ารอ — จึงมักเริ่ม list ที่ MELD ≥15\n- Hepatorenal syndrome (oliguria, urine Na <10 mEq/L) มักกลับมาหลังได้ตับใหม่ แม้ต้องฟอกไตก่อน\n- ข้อห้าม: cardiopulmonary reserve ไม่พอ (เช่น portopulmonary HTN รุนแรง), มะเร็ง/ติดเชื้อคุมไม่ได้, ไม่ร่วมมือรักษา/ดื่มต่อ; อายุมากเป็นข้อห้ามสัมพัทธ์เท่านั้น\n\n### HCC: Milan criteria และเกณฑ์ขยาย\n\n| เกณฑ์ | รายละเอียด |\n|---|---|\n| **Milan** (Mazzaferro 1996) | ก้อนเดียว **≤5 cm** หรือ **≤3 ก้อน แต่ละก้อน ≤3 cm**, ไม่มี macrovascular invasion, ไม่มี extrahepatic spread → 4-year survival ~85% |\n| UCSF | ก้อนเดียว ≤6.5 cm หรือ ≤3 ก้อน ก้อนใหญ่สุด ≤4.5 cm และรวม ≤8 cm |\n| Downstaging | TACE/RFA ให้เข้าเกณฑ์ Milan แล้วรอสังเกตความคงที่ก่อน list |\n\n- ผู้ป่วยในเกณฑ์ได้ **MELD exception points** และมักทำ **bridging therapy** (TACE, ablation) ระหว่างรอ; AFP สูงมากเป็นตัวบ่งชี้ biology ร้ายที่ต้องระวัง\n- Resection เป็นทางเลือกแรกเมื่อตับยังดี (Child A ไม่มี portal HTN ชัด) ส่วน transplant รักษาทั้งมะเร็งและตับแข็งพร้อมกัน\n- บริบทไทย: HCC จาก **HBV** พบมาก; perihilar cholangiocarcinoma ที่ไม่ลุกลามและไม่มี nodal spread อาจปลูกถ่ายได้ในโปรโตคอลเข้มงวด (neoadjuvant chemoradiation) — ไม่ใช่ข้อบ่งชี้ทั่วไป\n\n### Acute liver failure และ living donor\n- นิยาม: ตับเสียรุนแรงพร้อม coagulopathy และ **encephalopathy** ในคนที่ไม่มีโรคตับเดิม; ได้ priority สูงสุด (UNOS **Status 1A**: encephalopathy ภายใน 8 สัปดาห์หลังอาการแรก, ไม่มีโรคตับเดิม, และต้องใช้ ventilator หรือ dialysis หรือ INR >2.0)\n- สาเหตุ: **acetaminophen**, viral hepatitis A/B/E, ยา, เห็ดพิษ Amanita (บริบทไทย: เห็ดระโงกหิน), Wilson, AFLP\n- **King's College criteria (acetaminophen)**: arterial pH **<7.3** หลัง resuscitate **หรือ** มีครบทั้ง INR >6.5 (PT >100 วินาที) + creatinine >3.4 mg/dL + encephalopathy grade III–IV\n- ภาวะคุกคามชีวิต: **cerebral edema** (เสียชีวิตจาก herniation), hypoglycemia, ติดเชื้อ — ถ้าสมองเสียหายถาวรจะไม่ปลูกถ่าย\n- **Living donor**: ผู้ใหญ่ใช้ right lobe, เด็กใช้ left lateral segment (S2–S3); ต้องมี graft พอ (graft-to-recipient weight ratio ≥0.8%) ป้องกัน **small-for-size syndrome**; ความเสี่ยงของผู้บริจาค right lobe สูงกว่าผู้บริจาคไตชัดเจน\n\n### ภาวะแทรกซ้อนหลัง liver transplant\n\n| ภาวะ | ข้อมูลหลัก | การจัดการ |\n|---|---|---|\n| **Primary nonfunction** | 3–4%, ไม่มีสาเหตุ; AST สูงมาก (~5,000 IU/L), INR ไม่ดีขึ้น, encephalopathy, lactate สูง | **retransplant** ด่วน; ปัจจัย: donor macrosteatosis, ischemic time นาน |\n| **Hepatic artery thrombosis** | 1.6–4%, vascular complication ที่พบบ่อยสุด, mortality ~50%; early = fulminant necrosis/bile leak, late = cholangitis, biliary stricture, abscess | **Doppler US** (sens/spec >90%) → re-explore thrombectomy/revise anastomosis หรือ retransplant |\n| Portal vein thrombosis | พบน้อย; ascites, variceal bleed, ตับทำงานแย่ | operative thrombectomy (early) |\n| **Biliary** (10–35%) | \"Achilles' heel\"; leak (early) หรือ stricture (anastomotic/ischemic) | leak มัก **ผ่าตัด**; stricture → ERCP/PTBD; ischemic cholangiopathy ให้คิด HAT และ DCD graft |\n| Acute rejection | ~20%; LFT ขึ้น ยืนยันด้วย biopsy | steroid pulse → ATG ถ้าดื้อ |\n\n### Pancreas transplantation\n- ชนิด: **SPK** (ส่วนใหญ่ — DM type 1 + ESRD; หลุดทั้งฟอกไตและ insulin), **PAK** (~15%), **PTA** (~5%, brittle DM/hypoglycemia unawareness)\n- เทคนิค: pancreas + segment ของ donor duodenum, หลอดเลือดต่อกับ iliac ผ่าน **Y-graft** ของ donor iliac; exocrine drainage แบบ **enteric** (>80% ปัจจุบัน, physiologic) หรือ **bladder** (ติดตาม **urinary amylase** ได้: exocrine rejection มาก่อน endocrine 5–7 วัน)\n- Bladder drainage: ลด urinary amylase >25% จาก baseline → biopsy; ภาวะแทรกซ้อน **metabolic acidosis** และ dehydration จากเสีย bicarbonate, cystitis, hematuria, urethritis — 20–30% ต้องเปลี่ยนเป็น enteric drainage ใน 5 ปี\n- Technical complication สูงที่สุดในบรรดา solid organ: **graft thrombosis 5–15%** (venous > arterial, สัปดาห์แรก — insulin requirement เพิ่มทันที, graft บวมเจ็บ, ขาบวมข้างเดียวกัน → ส่วนใหญ่ graft pancreatectomy), abscess 5–10%, bleeding, graft pancreatitis, leak\n- Rejection ~30% ในปีแรก; **hyperglycemia เป็นสัญญาณช้า** (reverse ได้ <5%) — ใน SPK ใช้ creatinine ของไตจาก donor เดียวกันเป็น surrogate\n",
+   "pearls": [
+    "MELD = bilirubin + INR + creatinine (+Na); benefit ชัดเมื่อ MELD ≥18 ตาม Schwartz",
+    "Milan: 1 ก้อน ≤5 cm หรือ ≤3 ก้อนแต่ละก้อน ≤3 cm, ไม่มี vascular invasion",
+    "King's College (acetaminophen): pH <7.3 หรือ INR >6.5 + Cr >3.4 + HE III–IV",
+    "PNF 3–4% → retransplant; HAT 1.6–4% mortality ~50%",
+    "Biliary complication 10–35% = Achilles' heel; ischemic cholangiopathy ให้คิด HAT/DCD",
+    "Pancreas: thrombosis 5–15% เป็น technical complication หลัก",
+    "Bladder drainage: urinary amylase ลด >25% → biopsy; ภาวะแทรกซ้อน metabolic acidosis"
+   ],
+   "items": [
+    {
+     "id": "RES-14-3-1",
+     "kind": "mcq",
+     "topic": "Milan criteria for HCC",
+     "stem": "A 57-year-old man with hepatitis B cirrhosis (Child-Pugh B8, MELD 13, platelets 62,000/µL, moderate ascites) has two arterially enhancing lesions with washout of 2.6 cm and 2.9 cm in the right lobe on multiphase CT. There is no vascular invasion and chest CT and bone scan are negative. AFP is 85 ng/mL. What is the most appropriate definitive treatment strategy?",
+     "choices": [
+      "Referral for liver transplantation with bridging locoregional therapy",
+      "Right hepatectomy",
+      "Systemic therapy with atezolizumab and bevacizumab as definitive treatment",
+      "Best supportive care",
+      "Radiofrequency ablation followed by observation without transplant evaluation"
+     ],
+     "answer": 0,
+     "explain": "ก้อน 2 ก้อน แต่ละก้อน ≤3 cm ไม่มี vascular invasion/extrahepatic spread = **อยู่ใน Milan criteria** ผู้ป่วยมีตับแข็ง decompensated (Child B, ascites, portal HTN) ซึ่งทำ resection ไม่ปลอดภัย **liver transplantation** รักษาทั้งมะเร็งและตับแข็ง (4-year survival ~85% ในเกณฑ์ Milan) ได้ exception points และให้ TACE/ablation เป็น bridge\n- **Right hepatectomy** — portal HTN, ascites, Child B เสี่ยง post-hepatectomy liver failure สูง\n- **Systemic therapy** — สำหรับ advanced HCC ไม่ใช่ early-stage ที่รักษาหายได้\n- **Supportive care** — ผู้ป่วยมีทางรักษาหายขาด\n- **RFA แล้วเฝ้าดู** — ไม่แก้ตับแข็งที่ decompensated และไม่เปิดทางปลูกถ่าย",
+     "pearl": "Milan: ก้อนเดียว ≤5 cm หรือ ≤3 ก้อนแต่ละก้อน ≤3 cm, ไม่มี vascular invasion",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-3-2",
+     "kind": "mcq",
+     "topic": "Hepatic artery thrombosis after liver transplant",
+     "stem": "On postoperative day 4 after deceased-donor liver transplantation, a 49-year-old woman develops fever and confusion. AST rises from 650 to 4,800 IU/L, INR from 1.4 to 2.6 and lactate to 5 mmol/L. Bile output from the T-tube has become thin and scant. Doppler ultrasound shows no flow in the hepatic artery with patent portal vein. What is the most appropriate management?",
+     "choices": [
+      "Emergency re-exploration with thrombectomy and anastomotic revision, with urgent listing for retransplantation",
+      "Pulse methylprednisolone for acute rejection",
+      "Endoscopic retrograde cholangiography and biliary stenting",
+      "Systemic heparin and repeat Doppler in 24 hours",
+      "Broad-spectrum antibiotics and percutaneous drainage"
+     ],
+     "answer": 0,
+     "explain": "**Hepatic artery thrombosis** ระยะแรกทำให้ตับและท่อน้ำดีขาดเลือดอย่างรุนแรง (ท่อน้ำดีของตับปลูกถ่ายรับเลือดจาก hepatic artery อย่างเดียว) → transaminase พุ่ง, coagulopathy, bile output ลด, sepsis การรักษาคือ **re-exploration ทันที** เพื่อ thrombectomy/revise anastomosis และถ้าตับตายมากต้อง **retransplant** — mortality ราว 50%\n- **Steroid pulse** — rejection ไม่ทำให้ Doppler ไม่มี flow\n- **ERCP** — ใช้กับ stricture/leak ที่ไม่ใช่ปัญหาเฉพาะหน้า\n- **Heparin แล้วรอ** — เสียเวลา ตับตายเพิ่มขึ้นทุกชั่วโมง\n- **Antibiotic + drainage** — ไม่แก้สาเหตุ",
+     "pearl": "Early HAT: Doppler ไม่มี flow → re-explore ทันที ± retransplant",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-3-3",
+     "kind": "mcq",
+     "topic": "King's College criteria — acetaminophen",
+     "stem": "A 23-year-old woman is admitted 48 hours after ingesting 30 g of acetaminophen. Despite N-acetylcysteine and fluid resuscitation, arterial pH is 7.24 and lactate 6 mmol/L. She is drowsy (grade II encephalopathy), INR is 4.8 and creatinine 2.1 mg/dL. There is no prior liver disease or ongoing psychiatric contraindication after psychiatric assessment. What is the most appropriate next step?",
+     "choices": [
+      "Urgent listing for liver transplantation at the highest priority",
+      "Continue N-acetylcysteine and reassess only if INR exceeds 6.5",
+      "Percutaneous liver biopsy to confirm massive necrosis",
+      "Transjugular intrahepatic portosystemic shunt",
+      "Plasmapheresis as definitive therapy"
+     ],
+     "answer": 0,
+     "explain": "ตาม **King's College criteria** สำหรับ acetaminophen เพียง **arterial pH <7.3 หลัง resuscitation เพียงพอ** ก็พอที่จะทำนายว่าโอกาสรอดโดยไม่ปลูกถ่ายต่ำมาก จึงต้อง **list ด่วน (Status 1A)** พร้อมดูแล ICU: ป้องกัน cerebral edema, คุมน้ำตาล, เฝ้าระวังติดเชื้อ (เกณฑ์อีกทางคือ INR >6.5 + Cr >3.4 + encephalopathy III–IV ครบสามข้อ)\n- **รอ INR >6.5** — pH ที่ต่ำเพียงพอแล้ว การรอทำให้เสียโอกาส\n- **Liver biopsy** — เสี่ยงเลือดออกและไม่จำเป็น\n- **TIPS** — สำหรับ portal hypertension ไม่ใช่ acute liver failure\n- **Plasmapheresis** — อาจเป็น bridge แต่ไม่ใช่การรักษา definitive",
+     "pearl": "Acetaminophen ALF: pH <7.3 หลัง resuscitate = King's criteria → list ด่วน",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-3-4",
+     "kind": "mcq",
+     "topic": "Bladder-drained pancreas rejection surveillance",
+     "stem": "A 39-year-old man with type 1 diabetes underwent simultaneous pancreas–kidney transplantation with bladder exocrine drainage 5 weeks ago. He feels well and fasting glucose is 92 mg/dL; serum creatinine is stable at 1.1 mg/dL. Routine monitoring shows 24-hour urinary amylase has fallen by 45% from his post-transplant baseline, and serum lipase is mildly elevated. Ultrasound shows normal graft perfusion. What is the most appropriate next step?",
+     "choices": [
+      "Percutaneous pancreas graft biopsy",
+      "Start basal insulin",
+      "Convert to enteric drainage",
+      "Empiric antibiotics for presumed urinary tract infection",
+      "Repeat urinary amylase in 3 months"
+     ],
+     "answer": 0,
+     "explain": "ใน **bladder-drained pancreas** การลดลงของ **urinary amylase >25% จาก baseline** เป็นสัญญาณเตือนแรกของ rejection เพราะ exocrine rejection เกิดก่อน endocrine ราว 5–7 วัน ขณะยัง normoglycemic rejection ส่วนใหญ่ (>90%) ยังกลับคืนได้ ต้องยืนยันด้วย **percutaneous pancreas biopsy** แล้วรักษา; ถ้ารอจน hyperglycemia จะ reverse ได้ <5%\n- **Basal insulin** — ไม่มี hyperglycemia และไม่แก้ rejection\n- **Convert to enteric drainage** — ทำเมื่อมีภาวะแทรกซ้อนทางเดินปัสสาวะเรื้อรัง ไม่ใช่เพื่อวินิจฉัย\n- **Antibiotic** — ไม่มีอาการ UTI และไม่อธิบาย lipase สูง\n- **รอ 3 เดือน** — เสียช่วงที่ rejection ยังรักษาได้",
+     "pearl": "Bladder-drained pancreas: urinary amylase ลด >25% → biopsy ก่อน hyperglycemia",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-14-4",
+   "title": "Rejection, infection (CMV), PTLD & organ donation",
+   "summary": "แยก rejection แต่ละชนิดและรักษาให้ตรง รู้จังหวะการติดเชื้อหลังปลูกถ่าย (CMV, BK) รักษา PTLD ตามขั้น และวินิจฉัย brain death/ดูแลผู้บริจาคได้ถูกต้อง",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 11 — Clinical rejection; Infections and malignancies; Organ procurement",
+   "md": "### Rejection: แยกชนิดตามเวลาและกลไก\n\n| ชนิด | เวลา | กลไก/พยาธิ | การรักษา |\n|---|---|---|---|\n| **Hyperacute** | นาที–ชั่วโมงหลัง reperfusion | **preformed antibody** ต่อ ABO/HLA → complement, thrombosis ทั่วไต | เอา graft ออก; ป้องกันด้วย ABO typing + crossmatch |\n| **Acute T-cell mediated (TCMR)** | วัน–สัปดาห์–เดือน (พบบ่อยที่สุด) | tubulitis, interstitial infiltrate, endarteritis (Banff) | **pulse methylprednisolone**; ดื้อ steroid → **ATG** |\n| **Acute antibody-mediated (ABMR)** | ช่วงไหนก็ได้ | **DSA**, peritubular capillaritis, **C4d+** | **plasmapheresis + IVIG** ± rituximab, (bortezomib, eculizumab ในรายดื้อ) |\n| **Chronic** | เดือน–ปี | ไต: IF/TA, transplant glomerulopathy · ตับ: vanishing bile duct · หัวใจ: **cardiac allograft vasculopathy** · ปอด: **bronchiolitis obliterans** | ไม่มีการรักษาเฉพาะ; คุมปัจจัยเสี่ยง, re-transplant |\n\n- อาการ rejection ของแต่ละอวัยวะ: ไต — Cr ขึ้น (มักไม่มีอาการ), ตับ — LFT ขึ้น, pancreas — amylase/lipase ขึ้น, glucose ขึ้นเป็นสัญญาณช้า\n- ต้อง **biopsy ยืนยันเสมอ** ก่อนให้ยารักษา เพราะ differential (CNI toxicity, BK, obstruction, CMV) รักษาตรงข้ามกัน\n- สาเหตุที่พบบ่อยของ rejection ช่วงหลัง: **ไม่กินยา (non-adherence)** และ drug interaction ที่ทำให้ระดับยาตก\n\n### การติดเชื้อตามช่วงเวลา\n\n| ช่วงเวลา | เชื้อที่ต้องนึกถึง |\n|---|---|\n| **<1 เดือน** | ติดเชื้อแบบผู้ป่วยหลังผ่าตัดทั่วไป: แผล, UTI, pneumonia, line, C. difficile, **intra-abdominal infection/leak**, donor-derived |\n| **1–6 เดือน** | **opportunistic**: **CMV**, PCP, BK virus, Listeria, Nocardia, Toxoplasma, reactivation TB, HBV/HCV |\n| **>6 เดือน** | community-acquired; late CMV; fungal ตามสิ่งแวดล้อม; **PTLD**; **melioidosis** และวัณโรคในบริบทไทย |\n\n- Intra-abdominal infection หลังปลูกถ่ายมักหลายเชื้อ (E. coli, Enterococcus, Klebsiella, Pseudomonas, Candida) — อาการปวดท้องอาจถูกกลบด้วย steroid ต้องมีดัชนีความสงสัยสูงและผ่าตัดเร็ว\n- Prophylaxis มาตรฐาน: **TMP-SMX** (PCP; แทบกำจัด PCP ได้), antiviral สำหรับ CMV ตามความเสี่ยง, fluconazole ในผู้รับตับที่เสี่ยงเชื้อรา\n\n### CMV และ BK virus\n- **CMV**: herpesvirus ที่พบบ่อยสุดหลังปลูกถ่าย ความเสี่ยงสูงสุดคือ **D+/R−**; มักเกิด **3–6 เดือน** หลังปลูกถ่าย หรือหลังรักษา rejection ด้วย ATG หรือหลังหยุด prophylaxis\n- อาการ: CMV syndrome (ไข้ อ่อนเพลีย leukopenia thrombocytopenia transaminitis) หรือ **tissue-invasive** — colitis/แผลในทางเดินอาหาร (เลือดออก ทะลุ), pneumonitis, hepatitis; ทางเดินอาหารอาจตรวจ PCR เลือดได้ผลลบ ต้องใช้ biopsy (inclusion body)\n- ป้องกัน: **valganciclovir** prophylaxis 3–6 เดือน (D+/R− นานที่สุด) หรือ preemptive monitoring ด้วย PCR (ตามแนวทาง AST/TTS)\n- รักษา: **IV ganciclovir** (รายรุนแรง/invasive) หรือ oral valganciclovir (รายไม่รุนแรง) + **ลดยากดภูมิ**; เชื้อดื้อ (UL97) ใช้ foscarnet หรือ maribavir\n- **BK polyomavirus**: เฉพาะไต — BK nephropathy, ureteral stenosis; ตรวจ BK PCR ในเลือด, รักษาโดย **ลดยากดภูมิ** (ไม่ใช่เพิ่ม)\n\n### PTLD และมะเร็งหลังปลูกถ่าย\n- **PTLD** = B cell ที่ติด **EBV** แบ่งตัวผิดปกติภายใต้การกดภูมิ ปัจจัยเสี่ยง: **EBV D+/R−** (เด็กพบมาก), ยากดภูมิแรง/T-cell depletion (ATG, alemtuzumab), belatacept ในผู้รับ EBV-seronegative, ปลูกถ่ายลำไส้/ปอด\n- อาการ: ไข้ ต่อมน้ำเหลืองโต ก้อนใน graft หรือ **ลำไส้** (obstruction, bleeding, **perforation** — ศัลยแพทย์ทั่วไปมักเจอที่นี่), CNS\n- รักษาเป็นขั้น: **ลดยากดภูมิ** ก่อน → **rituximab** (anti-CD20) → chemo-immunotherapy (R-CHOP) ในรายลุกลาม; ผ่าตัด/radiation สำหรับก้อนเฉพาะที่หรือภาวะแทรกซ้อน (ลำไส้ทะลุ)\n- มะเร็งที่พบบ่อยที่สุดหลังปลูกถ่ายคือ **มะเร็งผิวหนัง (SCC มากกว่า BCC)** — mTOR inhibitor ช่วยลด; ติดตามผิวหนังทุกปี\n\n### Brain death และ organ donation\n- ขั้นตอนวินิจฉัย: ทราบสาเหตุของสมองบาดเจ็บที่ไม่กลับคืน → **ตัดภาวะเลียนแบบ** (ยากดประสาท, hypothermia, hypoglycemia, metabolic/endocrine รุนแรง, neuromuscular blocker) → ตรวจ **coma, ไม่มี brainstem reflex** (pupil, corneal, oculocephalic, oculovestibular, gag, cough) และ **apnea test** → ใช้ **ancillary test** (cerebral blood flow scan/angiography, EEG) เมื่อตรวจทางคลินิกไม่ครบ → บันทึกให้ครบ\n- **Apnea test**: preoxygenate, ปลด ventilator ให้ O2 ทาง catheter; ผลบวกเมื่อไม่มีการหายใจและ **PaCO2 ≥60 mmHg หรือเพิ่ม ≥20 mmHg จาก baseline**; ถ้า BP ตก/SpO2 ตก/arrhythmia → **หยุดการทดสอบ** แล้วใช้ ancillary test\n- บริบทไทย: วินิจฉัยตามเกณฑ์ **แพทยสภา** โดยคณะแพทย์ที่ไม่ใช่ทีมปลูกถ่าย ประสานกับ **ศูนย์รับบริจาคอวัยวะ สภากาชาดไทย**; ทีมรักษาไม่ควรเป็นผู้ขอบริจาคเอง (decoupling)\n\n| ปัญหาใน brain-dead donor | การดูแล (\"rule of 100s\" เป็นเป้าหมายคร่าว ๆ) |\n|---|---|\n| Hypotension (vasoplegia, hypovolemia) | fluid, vasopressin, เป้า SBP >100 mmHg |\n| **Diabetes insipidus** | desmopressin/vasopressin, ทดแทนน้ำ, แก้ hypernatremia |\n| Hormonal | methylprednisolone, thyroid hormone ในรายไม่คงที่ |\n| Hypothermia, coagulopathy, ปอด | อุ่นร่างกาย, lung-protective ventilation, PaO2 >100 |\n\n- **DCD** (Maastricht III ส่วนใหญ่): ถอดเครื่องหลังได้ consent แล้วรอหัวใจหยุดก่อนผ่าตัด → warm ischemia มากกว่า; ตับจาก DCD ที่ warm ischemia >25 นาทีเสี่ยง **ischemic cholangiopathy** สูง; normothermic regional perfusion/ECMO ช่วยลดปัญหานี้\n- เวลาเก็บรักษาเย็นที่เหมาะ: หัวใจ/ปอด <6 ชม., ไต cold ischemia ยิ่งเกิน 24 ชม. DGF ยิ่งมาก; น้ำยา UW และ HTK\n",
+   "pearls": [
+    "Hyperacute = preformed Ab (ป้องกันด้วย crossmatch); acute TCMR = steroid pulse/ATG",
+    "ABMR: DSA + C4d + capillaritis → PLEX + IVIG ± rituximab",
+    "CMV สูงสุดใน D+/R− ที่ 3–6 เดือนหรือหลังหยุด prophylaxis → IV ganciclovir",
+    "BK nephropathy และ PTLD รักษาด้วยการลดยากดภูมิก่อน",
+    "มะเร็งที่พบบ่อยที่สุดหลังปลูกถ่ายคือ skin SCC",
+    "Apnea test: PaCO2 ≥60 หรือเพิ่ม ≥20 mmHg; ไม่คงที่ → ancillary test",
+    "Brain-dead donor: DI → desmopressin/vasopressin; hormonal resuscitation"
+   ],
+   "items": [
+    {
+     "id": "RES-14-4-1",
+     "kind": "mcq",
+     "topic": "Tissue-invasive CMV disease",
+     "stem": "A 50-year-old man underwent deceased-donor kidney transplantation 4 months ago (CMV donor-positive, recipient-negative) and completed 3 months of valganciclovir prophylaxis 4 weeks ago. He now has fever, watery diarrhea with intermittent hematochezia, WBC 2,600/µL and mildly elevated transaminases. Colonoscopy shows multiple shallow ulcers; biopsies demonstrate large cells with intranuclear inclusions. What is the most appropriate treatment?",
+     "choices": [
+      "Intravenous ganciclovir with reduction of immunosuppression",
+      "Oral acyclovir",
+      "Foscarnet as first-line therapy",
+      "Oral vancomycin",
+      "Increase tacrolimus target level"
+     ],
+     "answer": 0,
+     "explain": "ผู้รับ **CMV D+/R−** หลังหยุด prophylaxis ได้ไม่นาน มีไข้ leukopenia transaminitis และ colitis ที่ biopsy พบ **inclusion body** = **tissue-invasive CMV disease** รักษาด้วย **IV ganciclovir** (รายรุนแรง/ทางเดินอาหาร) ร่วมกับ **ลดยากดภูมิ** แล้ว step down เป็น oral valganciclovir เมื่อดีขึ้น; ศัลยแพทย์ต้องเฝ้าระวัง GI bleeding และ perforation\n- **Acyclovir** — activity ต่อ CMV ต่ำ ไม่ใช้รักษา\n- **Foscarnet** — สงวนไว้สำหรับเชื้อดื้อ ganciclovir (nephrotoxic มาก)\n- **Oral vancomycin** — รักษา C. difficile แต่ histology เป็น CMV\n- **เพิ่ม tacrolimus** — กดภูมิมากขึ้นทำให้ CMV แย่ลง",
+     "pearl": "Tissue-invasive CMV: IV ganciclovir + ลดยากดภูมิ; D+/R− เสี่ยงสูงสุด",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-4-2",
+     "kind": "mcq",
+     "topic": "First-line management of early PTLD",
+     "stem": "A 9-year-old girl who received a liver transplant 10 months ago (EBV donor-positive, recipient-negative) presents with fever, tonsillar enlargement and bilateral cervical lymphadenopathy. EBV viral load is markedly elevated. Excisional node biopsy shows a polymorphic, CD20-positive, EBV-positive B-cell proliferation. CT shows no bowel, CNS or graft involvement. What is the most appropriate initial management?",
+     "choices": [
+      "Reduction of immunosuppression",
+      "R-CHOP chemotherapy",
+      "Involved-field radiotherapy",
+      "High-dose intravenous acyclovir as sole therapy",
+      "Increase immunosuppression to prevent rejection during treatment"
+     ],
+     "answer": 0,
+     "explain": "เด็ก **EBV D+/R−** ที่เกิด **polymorphic PTLD** ระยะแรก การรักษาขั้นแรกคือ **ลดยากดภูมิ** เพื่อให้ T cell ของผู้ป่วยควบคุม B cell ที่ติด EBV ได้ (ต้องเฝ้าระวัง rejection) ถ้าไม่ตอบสนองเพิ่ม **rituximab** และใช้ chemo-immunotherapy ในราย monomorphic/ลุกลาม\n- **R-CHOP** — สงวนสำหรับรายไม่ตอบสนองหรือ monomorphic aggressive\n- **Radiotherapy** — ใช้เฉพาะก้อนเฉพาะที่หรือ CNS\n- **Acyclovir อย่างเดียว** — ไม่มีผลต่อ B cell ที่ transform แล้ว\n- **เพิ่มยากดภูมิ** — ทำให้ PTLD ลุกลาม",
+     "pearl": "PTLD: ลดยากดภูมิก่อน → rituximab → chemo; ภาวะลำไส้ทะลุต้องผ่าตัด",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-4-3",
+     "kind": "mcq",
+     "topic": "Antibody-mediated rejection",
+     "stem": "A 44-year-old woman with three prior pregnancies received a deceased-donor kidney transplant 3 weeks ago (negative flow crossmatch, calculated PRA 65%). Creatinine has risen from 1.3 to 2.6 mg/dL with good tacrolimus levels. Ultrasound is unremarkable. Biopsy shows peritubular capillaritis and glomerulitis with diffuse C4d staining, minimal tubulitis, and a new high-level donor-specific anti-HLA antibody is detected. What is the most appropriate treatment?",
+     "choices": [
+      "Plasmapheresis and intravenous immunoglobulin, with or without rituximab",
+      "Pulse methylprednisolone alone",
+      "Basiliximab",
+      "Switch tacrolimus to sirolimus",
+      "Transplant nephrectomy"
+     ],
+     "answer": 0,
+     "explain": "Peritubular capillaritis + **C4d positive** + **DSA** = **acute antibody-mediated rejection** (ผู้หญิงที่ตั้งครรภ์หลายครั้งและ PRA สูงเสี่ยง) ต้องเอา antibody ออกด้วย **plasmapheresis** และกดการสร้างด้วย **IVIG** ± rituximab (anti-CD20) โดยมักให้ steroid ร่วมด้วย; รายดื้ออาจใช้ bortezomib หรือ eculizumab\n- **Steroid pulse อย่างเดียว** — เป็นการรักษา TCMR ไม่พอสำหรับ ABMR\n- **Basiliximab** — nondepleting ใช้ induction ไม่ใช้รักษา rejection\n- **Switch เป็น sirolimus** — ไม่แก้ antibody และอาจกดภูมิไม่พอ\n- **Nephrectomy** — ไตยังมีโอกาสกู้ได้",
+     "pearl": "C4d+ + DSA = ABMR → PLEX + IVIG ± rituximab; TCMR → steroid pulse/ATG",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    },
+    {
+     "id": "RES-14-4-4",
+     "kind": "mcq",
+     "topic": "Apnea test instability",
+     "stem": "A 28-year-old man with a devastating traumatic brain injury after a motorcycle crash has no brainstem reflexes 24 hours after admission. Core temperature is 36.8°C, there are no sedative drugs on board and electrolytes are normal. During the apnea test after preoxygenation, his systolic BP falls to 75 mmHg and SpO2 drops to 82% at 6 minutes; arterial PaCO2 at that time is 52 mmHg (baseline 40 mmHg), and no respiratory movements were seen. What is the most appropriate next step?",
+     "choices": [
+      "Abort the apnea test, reconnect the ventilator and obtain an ancillary cerebral blood flow study",
+      "Declare brain death because no respiratory effort was observed",
+      "Continue the test until PaCO2 reaches 60 mmHg despite hypotension",
+      "Repeat the full clinical examination in 7 days",
+      "Proceed to donation after circulatory death without further testing"
+     ],
+     "answer": 0,
+     "explain": "Apnea test จะยืนยันได้เมื่อไม่มีการหายใจ **และ PaCO2 ≥60 mmHg หรือเพิ่ม ≥20 mmHg จาก baseline** ที่นี่ PaCO2 52 (เพิ่ม 12) จึงยัง **ไม่ผ่านเกณฑ์** และผู้ป่วยไม่คงที่ (BP ตก, SpO2 ตก) ต้อง **หยุดการทดสอบทันที** ต่อเครื่องช่วยหายใจ และใช้ **ancillary test** เช่น nuclear cerebral perfusion scan หรือ cerebral angiography เพื่อยืนยัน\n- **ประกาศ brain death** — เกณฑ์ PaCO2 ยังไม่ถึง\n- **ทดสอบต่อ** — เสี่ยง cardiac arrest และทำลายอวัยวะที่อาจบริจาค\n- **รอ 7 วัน** — ไม่จำเป็นเมื่อมี ancillary test และทำให้อวัยวะเสื่อม\n- **ไป DCD ทันที** — ต้องมี consent และตัดสินใจถอดการรักษาตามขั้นตอนก่อน ไม่ใช่ทางลัดเมื่อวินิจฉัยไม่สำเร็จ",
+     "pearl": "Apnea test บวก = ไม่หายใจ + PaCO2 ≥60 หรือเพิ่ม ≥20; ไม่คงที่ → หยุดแล้วใช้ ancillary test",
+     "src": "Schwartz 11e Ch 11",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 11"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-14-MEQ1",
+   "part": "MEQ",
+   "topic": "Kidney transplant — early dysfunction to late complications",
+   "vignette": "ชายไทยอายุ 47 ปี ESRD จาก diabetic nephropathy ฟอกเลือดมา 4 ปี ได้รับไตจาก **deceased donor** (brain death จากอุบัติเหตุจักรยานยนต์ อายุ 52 ปี, cold ischemia 26 ชม.) CMV D+/R+, EBV D+/R+, crossmatch ลบ, cPRA 10%\n\nได้ induction ด้วย rabbit ATG และ maintenance tacrolimus + MMF + prednisolone\n\n| วันหลังผ่าตัด | ข้อมูล |\n|---|---|\n| POD 1 | ปัสสาวะ 20–30 mL/h, K 6.4 mEq/L |\n| POD 2 | Doppler: arterial และ venous flow ดี, RI 0.85, ไม่มี hydronephrosis/collection |",
+   "questions": [
+    {
+     "q": "1. ภาวะนี้คืออะไร สาเหตุที่น่าจะเป็นมากที่สุด และปัจจัยเสี่ยงในรายนี้",
+     "a": "- **Delayed graft function** (ต้องฟอกไตจาก hyperkalemia ในสัปดาห์แรก)\n- สาเหตุน่าจะเป็น **ATN** จาก ischemia-reperfusion — Doppler ตัด thrombosis/obstruction/collection แล้ว\n- ปัจจัยเสี่ยง: **cold ischemia >24 ชม.**, donor อายุ >50, donor brain death (hemodynamic instability)\n- เกณฑ์ให้คะแนน: นิยาม DGF (1), ATN (1), ปัจจัยเสี่ยง ≥2 ข้อ (2)"
+    },
+    {
+     "q": "2. จะดูแลอย่างไรในสัปดาห์แรก และเมื่อใดต้อง biopsy",
+     "a": "- Hemodialysis ตามข้อบ่งชี้ (K สูง, volume overload) ระวัง hypotension ระหว่างฟอก\n- ปรับ fluid ให้ euvolemic, หลีกเลี่ยง nephrotoxin (NSAID, contrast, aminoglycoside)\n- ใช้ ATG induction ช่วยให้ **ชะลอ/ลดระดับ tacrolimus** ได้ ลด CNI vasoconstriction\n- **Biopsy** ถ้าไม่ฟื้นภายใน 7–10 วัน หรือมีอาการสงสัย rejection เพราะ DGF ซ่อน rejection ได้\n- เกณฑ์ให้คะแนน: dialysis + fluid (1), CNI strategy (1), เวลา biopsy (2)"
+    },
+    {
+     "q": "3. สัปดาห์ที่ 6 ไตฟื้น Cr 1.4 mg/dL ต่อมา Cr ขึ้นเป็น 2.0 พร้อมขาซ้ายบวม US พบ collection 8 cm กด ureter จนเกิด hydronephrosis จงบอกการวินิจฉัยแยกและการตรวจที่ช่วยแยก",
+     "a": "- DDx: **lymphocele** (น่าจะเป็นที่สุดตามเวลาและขาบวม), urinoma/urine leak, hematoma, abscess\n- เจาะดูด (US-guided) ส่ง **creatinine เทียบ serum** (เท่ากัน = lymphocele; สูงกว่ามาก = urine leak), cell count/gram stain/culture\n- ขาบวม: ทำ duplex แยก iliac vein compression จาก DVT\n- เกณฑ์ให้คะแนน: DDx ≥3 (1), fluid creatinine (2), duplex (1)"
+    },
+    {
+     "q": "4. ผล creatinine ในน้ำเท่ากับ serum ดูดออกแล้วกลับเป็นซ้ำใน 10 วัน จะรักษาอย่างไร และยาใดในสูตรที่หากเปลี่ยนมาใช้จะเพิ่มความเสี่ยงภาวะนี้",
+     "a": "- **Laparoscopic peritoneal fenestration** (marsupialization) ระวังอย่าตัดโดน ureter (ใส่ stent/ดูตำแหน่ง ureter ก่อน); ทางเลือกคือ drain + sclerotherapy (povidone-iodine, doxycycline)\n- **mTOR inhibitor (sirolimus/everolimus)** เพิ่มความเสี่ยง lymphocele และแผลหายช้า จึงไม่ควรเริ่มช่วงแรกหลังผ่าตัด\n- เกณฑ์ให้คะแนน: การผ่าตัดที่ถูก (2), ระวัง ureter (1), ระบุ sirolimus (1)"
+    },
+    {
+     "q": "5. เดือนที่ 5 ผู้ป่วยไข้ ไอ ภาพปอดมี cavity ตรวจพบ pulmonary TB แพทย์เริ่มสูตร 2HRZE จะต้องระวังอะไรกับยากดภูมิ",
+     "a": "- **Rifampin** เป็น CYP3A4/P-gp inducer แรง → ระดับ tacrolimus (และ steroid) ลดมาก → เสี่ยง **acute rejection**\n- ต้องเพิ่มขนาด tacrolimus หลายเท่า, วัด trough ถี่ (2–3 ครั้ง/สัปดาห์ช่วงแรก), เพิ่ม prednisolone, หรือใช้ **rifabutin** แทน rifampin; เมื่อหยุด rifampin ต้องลดขนาด tacrolimus กลับเพื่อป้องกันพิษ\n- เกณฑ์ให้คะแนน: กลไก (2), การปรับยา (2)"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 11"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-14-OSCE1",
+   "topic": "Mock oral board — HCC in cirrhosis and early liver transplant complications",
+   "station": "Mock oral 10 นาที · Liver transplant for HCC และภาวะแทรกซ้อนระยะแรก",
+   "instruction": "**บทบาท:** คุณเป็น senior resident ศัลยกรรมตับและปลูกถ่ายอวัยวะ ผู้สอบถามตามลำดับ ตอบตรงประเด็น\n\n**Scenario:** ชายอายุ 55 ปี HBV cirrhosis ได้ entecavir อยู่ มี ascites ควบคุมด้วยยาขับปัสสาวะ, variceal band ligation 2 ครั้ง ตรวจ US คัดกรองพบก้อนในตับ\n\n**Prompt ของผู้สอบ**\n1. \"CT 4-phase พบ 3 ก้อน ขนาด 2.8, 2.2 และ 1.5 cm มี arterial enhancement และ washout ไม่มี portal vein invasion — วินิจฉัยอย่างไร ต้อง biopsy ไหม และจะ stage อย่างไร\"\n2. \"Total bilirubin 2.4 mg/dL, INR 1.7, Cr 1.0 mg/dL, albumin 2.8 g/dL, platelet 58,000 — ทางเลือกการรักษาคืออะไร ทำไมไม่ resection\"\n3. \"ระหว่างรอ list 8 เดือน คุณจะทำอะไรกับก้อน และถ้าก้อนโตเกินเกณฑ์จะทำอย่างไร\"\n4. \"หลังปลูกถ่ายตับวันที่ 2: AST 6,200, INR 3.5, lactate สูง, ผู้ป่วยซึม — คุณคิดถึงอะไรและจะทำอะไร\"\n5. \"สมมติ Doppler ปกติ แต่วันที่ 7 มี bile ออกทาง drain 300 mL/วัน และไข้ — คิดถึงอะไร จัดการอย่างไร\"\n6. \"สามเดือนต่อมา ไข้ ท้องเสีย leukopenia ผู้ป่วยเป็น CMV D+/R− — แนวทางคืออะไร\"",
+   "answer": "1. **วินิจฉัยและ stage (2 คะแนน)**: ในตับแข็ง ก้อน arterial hyperenhancement + washout = **LI-RADS 5/HCC ไม่ต้อง biopsy**; stage ด้วย CT chest ± bone scan, AFP; จำนวน 3 ก้อนแต่ละก้อน ≤3 cm ไม่มี vascular invasion = **อยู่ใน Milan criteria**\n2. **ทางเลือก (2 คะแนน)**: คำนวณ Child-Pugh (B–C) และ MELD (~18–20) → ตับ decompensated + portal HTN (ascites, varices, platelet ต่ำ) → resection เสี่ยง liver failure สูงและก้อนหลายตำแหน่ง → **liver transplantation** (รักษาทั้งมะเร็งและตับแข็ง) พร้อม MELD exception; ประเมิน cardiopulmonary, portopulmonary HTN, psychosocial\n3. **Bridging (1 คะแนน)**: **TACE หรือ ablation** เพื่อลดการ dropout; ติดตาม CT ทุก 3 เดือน; ถ้าเกินเกณฑ์ → downstaging แล้วประเมินใหม่ ถ้ามี vascular invasion/extrahepatic → ไม่ปลูกถ่าย\n4. **Early graft failure (2 คะแนน)**: DDx **primary nonfunction** vs **hepatic artery thrombosis** (และ PVT) → **Doppler US ทันที**; HAT → re-exploration thrombectomy/revision หรือ retransplant; PNF (AST ~5,000+, INR ไม่ดีขึ้น, ไม่มีสาเหตุอื่น) → **list retransplant ด่วน**; ดูแล ICU: น้ำตาล, coagulopathy, cerebral edema\n5. **Bile leak (1 คะแนน)**: ต้องตรวจ **hepatic artery** ด้วย Doppler ก่อนเสมอ (HAT ทำให้ biliary ischemia); bile leak ระยะแรกจากรอยต่อ → มัก **ผ่าตัดแก้** (revise duct-to-duct หรือเปลี่ยนเป็น Roux-en-Y hepaticojejunostomy) ส่วน leak เล็ก/จาก T-tube อาจใช้ ERCP stent + drainage\n6. **CMV (1 คะแนน)**: CMV PCR, CBC, LFT, colonoscopy biopsy ถ้าท้องเสีย → **IV ganciclovir** (invasive) หรือ valganciclovir (ไม่รุนแรง) + ลดยากดภูมิ (MMF ก่อน); ระวังลำไส้ทะลุ/เลือดออก\n\n**Critical fails**: เสนอ resection ในตับ decompensated · ไม่ตรวจ Doppler เมื่อ AST พุ่งหลังปลูกถ่าย · รักษา AST สูงด้วย steroid pulse โดยไม่ตัด HAT · ไม่ประเมินหลอดเลือดแดงเมื่อมี bile leak"
+  }
+ ]
+}

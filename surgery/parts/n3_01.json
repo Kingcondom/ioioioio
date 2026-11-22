@@ -1,0 +1,409 @@
+{
+ "lec": "01",
+ "date": "Schwartz Ch 46, 47, 50",
+ "title": "Preoperative assessment & perioperative orders",
+ "subtitle": "ประเมินและเตรียมผู้ป่วยก่อนผ่าตัดอย่างไรให้ปลอดภัย และเขียนคำสั่งก่อน-หลังผ่าตัดแบบ ERAS ให้ครบถ้วนในทางปฏิบัติ",
+ "objectives": [
+  "เรียนจบแล้วต้องจัด ASA class คำนวณ RCRI และใช้ functional capacity ตัดสินใจว่าต้องตรวจหัวใจเพิ่มก่อนผ่าตัดหรือไม่",
+  "เรียนจบแล้วต้องเลือกสั่ง lab ก่อนผ่าตัดตามข้อบ่งชี้ และวางแผนหยุด/กินต่อยาที่พบบ่อย (antiplatelet, anticoagulant, ยาเบาหวาน, ยาลดความดัน)",
+  "เรียนจบแล้วต้องสั่ง NPO, antibiotic prophylaxis และ VTE prophylaxis ได้ถูกชนิด ถูกเวลา ถูกระยะ",
+  "เรียนจบแล้วต้องให้ข้อมูลและขอ informed consent ครบองค์ประกอบ และอธิบายขั้นตอน WHO Surgical Safety Checklist ได้",
+  "เรียนจบแล้วต้องเขียน post-operative order แบบ One day/Continuation พร้อมเกณฑ์แจ้งแพทย์ และประยุกต์หลัก ERAS ได้",
+  "เรียนจบแล้วต้องประเมินผู้สูงอายุก่อนผ่าตัด (cognition, frailty) และป้องกัน/จัดการ postoperative delirium ได้"
+ ],
+ "guidelines": [
+  "ASA Physical Status Classification System (amended 2014)",
+  "2014 ACC/AHA Guideline on Perioperative Cardiovascular Evaluation and Management for Noncardiac Surgery",
+  "ASA Practice Guidelines for Preoperative Fasting",
+  "ASHP/IDSA/SIS/SHEA Clinical Practice Guidelines for Antimicrobial Prophylaxis in Surgery (2013) และ CDC Guideline for Prevention of SSI (2017)",
+  "ACCP Antithrombotic Therapy guidelines — VTE prevention in nonorthopedic surgical patients (Caprini)",
+  "ERAS Society guidelines; WHO Surgical Safety Checklist (2009)"
+ ],
+ "sections": [
+  {
+   "id": "n3-01-1",
+   "title": "ประเมินและเตรียมผู้ป่วยก่อนผ่าตัด: ASA, RCRI, lab และยา",
+   "summary": "ผู้ป่วยรายนี้พร้อมผ่าตัดหรือยัง ต้องตรวจอะไรเพิ่ม ยาตัวไหนต้องหยุดหรือกินต่อ",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 46 — Perioperative evaluation and preparation; Ch 47 — Preoperative assessment in older adults",
+   "md": "### เป้าหมายของ preop visit: หาว่าใครยังไม่พร้อม\nการประเมินก่อนผ่าตัดไม่ใช่การสั่ง lab ชุดเดิมให้ทุกคน แต่คือการตอบ 3 คำถาม: (1) ผู้ป่วยมีโรคอะไรที่ **เพิ่มความเสี่ยง** ของการผ่าตัดครั้งนี้ (2) โรคนั้น **optimize ได้อีกไหม** ก่อนผ่าตัด elective (3) ต้องเปลี่ยนแผนการระงับความรู้สึก/การผ่าตัด/การดูแลหลังผ่าตัดอย่างไร\n- **ประวัติ**: ปัญหากับยาสลบครั้งก่อนของตัวเองและครอบครัว (malignant hyperthermia, ใส่ท่อยาก), ภูมิแพ้ยา/latex, ยาทุกตัวรวมสมุนไพรและยาลูกกลอน (อาจมี steroid), สูบบุหรี่ ดื่มสุรา, **functional capacity**\n- **ตรวจร่างกาย**: เน้นทางเดินหายใจ (Mallampati, thyromental distance น้อยกว่า 6 cm, คอสั้น/ขยับไม่ได้), หัวใจ (murmur ใหม่ → echo), ปอด, ระบบประสาท\n- ถ้าพบว่าไม่ optimal → คุยกับแพทย์เจ้าของไข้ เลื่อน elective case ได้ ไม่ใช่ความล้มเหลว\n\n### ASA class และ RCRI: ภาษากลางของความเสี่ยง\n| ASA | ความหมาย | ตัวอย่าง |\n|---|---|---|\n| I | แข็งแรงดี | ชายอายุ 25 ไม่มีโรค |\n| II | โรค systemic เล็กน้อย คุมได้ | HT/DM คุมดี, สูบบุหรี่, อ้วนไม่มาก |\n| III | โรค systemic รุนแรง | DM คุมไม่ดี, COPD, ESRD ฟอกไต, MI นานกว่า 3 เดือน |\n| IV | โรครุนแรงที่คุกคามชีวิตตลอดเวลา | MI/stroke ไม่นาน, ischemia ต่อเนื่อง, sepsis |\n| V | ใกล้ตาย ไม่ผ่าตัดไม่รอด | ruptured AAA, massive trauma |\n| VI | brain dead บริจาคอวัยวะ | — |\n\nเติม **E** เมื่อเป็นการผ่าตัดฉุกเฉิน เช่น ไส้ติ่งอักเสบในคนแข็งแรง = **ASA IE** · อัตราตายเพิ่มตาม class และสูงขึ้นในเคสฉุกเฉิน\n\n**Revised Cardiac Risk Index (RCRI)** มี 6 ข้อ ข้อละ 1 คะแนน: **ischemic heart disease**, **heart failure**, **cerebrovascular disease**, **DM ที่ใช้ insulin**, **creatinine มากกว่า 2 mg/dL**, และ **การผ่าตัดเสี่ยงสูง** (intraperitoneal, intrathoracic, major vascular) — 0–1 ข้อถือว่าเสี่ยงต่ำ (MACE น้อยกว่า 1%), ตั้งแต่ 2 ข้อขึ้นไปถือว่าเสี่ยงสูงขึ้น\n\n### ลำดับคิดเรื่องหัวใจ (ACC/AHA 2014 แบบย่อ)\n1. **ผ่าตัดฉุกเฉิน** → ผ่าเลย ดูแลแบบลดความเสี่ยงและเฝ้าระวัง\n2. มี **active cardiac condition** (ACS/unstable angina, decompensated HF, arrhythmia สำคัญ เช่น CHB หรือ AF rate มากกว่า 100, severe AS/MS) → เลื่อนผ่าตัด รักษาก่อน\n3. ความเสี่ยงต่ำ (น้อยกว่า 1%: ผ่าตัดผิวเผิน ส่องกล้อง ตาต้อกระจก เต้านม ผู้ป่วยนอก) → ผ่าเลย\n4. เสี่ยงสูงขึ้น → ดู **functional capacity**: ทำได้ **ตั้งแต่ 4 METs** (ขึ้นบันได 1 ชั้นได้ไม่เหนื่อย/ไม่เจ็บอก) → ผ่าเลย\n5. น้อยกว่า 4 METs หรือประเมินไม่ได้ → ส่ง stress test **เฉพาะเมื่อผลจะเปลี่ยนการรักษา** ไม่ใช่ทำทุกราย\n> ECG และ stress test ไม่จำเป็นในผู้ป่วยไม่มีอาการที่ผ่าตัดความเสี่ยงต่ำ\n\n**Coronary stent**: เลื่อน elective surgery อย่างน้อย **30 วันหลัง BMS** และ **1 ปีหลัง DES** (ถ้าการรอนานเสี่ยงกว่า เช่น มะเร็ง พิจารณาได้หลัง **180 วัน**) ถ้าต้องผ่าตัดก่อนกำหนด ให้ **dual antiplatelet ต่อ** ถ้าทำได้ และคุยกับ cardiologist\n\n### สั่ง lab ก่อนผ่าตัดแบบมีเหตุผล\n| การตรวจ | สั่งเมื่อ | ไม่ต้องสั่งเมื่อ |\n|---|---|---|\n| **CBC** | ผ่าตัดใหญ่ที่คาดว่าเสียเลือด, อาการซีด, โรคเลือด/ไต, ผู้สูงอายุ | คนแข็งแรงผ่าตัดเล็ก |\n| BUN/Cr, electrolytes | CKD, DM, ใช้ diuretic/ACEi/ARB, ผ่าตัดใหญ่ | — |\n| Glucose, **HbA1c** | DM (HbA1c สูง → แผลติดเชื้อมากขึ้น) | — |\n| **PT/INR, aPTT** | ใช้ anticoagulant, โรคตับ, ประวัติเลือดออกง่าย | ตรวจ routine ไม่มีข้อบ่งชี้ |\n| **ECG** | โรคหัวใจ/arrhythmia/โรคหลอดเลือด ก่อนผ่าตัดเสี่ยงปานกลางขึ้นไป, คลำชีพจรไม่สม่ำเสมอ | ไม่มีอาการ ผ่าตัดเสี่ยงต่ำ |\n| CXR | อาการ/อาการแสดงทางหัวใจ-ปอด | routine |\n| Urine pregnancy test | หญิงวัยเจริญพันธุ์ (วันผ่าตัด) | — |\n| Blood group & match/crossmatch | คาดว่าเสียเลือดมาก | ผ่าตัดเล็ก |\n\n> เกณฑ์อายุที่ต้องทำ ECG/CXR แตกต่างกันตามสถาบัน ตอบข้อสอบ NL ให้ยึด **\"ตามข้อบ่งชี้\"**\n\n### ยาไหนหยุด ยาไหนกินต่อ\n| ยา | แนวปฏิบัติที่ใช้บ่อย |\n|---|---|\n| **β-blocker, statin** | กินต่อ (ห้ามหยุดกะทันหัน) · ไม่เริ่ม β-blocker ในวันผ่าตัด |\n| Aspirin | ส่วนใหญ่กินต่อถ้ามี stent/CAD · หยุดเฉพาะผ่าตัดที่เลือดออกเล็กน้อยก็อันตราย (สมอง ตา บางกรณี) |\n| Clopidogrel/prasugrel | antiplatelet ชนิด irreversible ทั่วไปหยุด **5–7 วัน** ก่อน elective |\n| **Warfarin** | หยุด 5 วัน ตรวจ INR ก่อนผ่าตัด · bridging เฉพาะเสี่ยงลิ่มเลือดสูง (mechanical valve, VTE/stroke ภายใน 30 วัน) |\n| DOAC | หยุดราว **36–48 ชม.** ถ้าไตปกติ (นานขึ้นถ้าไตเสื่อม/ผ่าตัดเลือดออกสูง) |\n| ACEi/ARB, diuretic | มักงดเช้าวันผ่าตัด (ลด hypotension ระหว่างดมยา) ตามนโยบายสถาบัน |\n| Metformin | งดวันผ่าตัด |\n| SGLT2 inhibitor | หยุด 3 วันก่อนผ่าตัด (เสี่ยง euglycemic DKA) |\n| Insulin | basal ลดราว 20–25% คืนก่อนผ่าตัด, งด prandial ระหว่าง NPO, เจาะ DTX |\n| Steroid ระยะยาว | กินต่อ ± stress dose ตามขนาดการผ่าตัด |\n\n### ผู้สูงอายุ: frailty, cognition และ delirium\nในผู้ป่วยอายุ **65 ปีขึ้นไป** ควรประเมินเพิ่ม: **cognition** (Mini-Cog = three-item recall + clock draw), **decision-making capacity** (เลือกได้ เข้าใจข้อมูล ยอมรับสภาพตน ใช้เหตุผลเปรียบเทียบได้), ADL/IADL, ภาวะซึมเศร้า, โภชนาการ, ประวัติหกล้ม และ **Timed Up and Go** (ตั้งแต่ 15 วินาทีขึ้นไป = เสี่ยงหกล้มและภาวะแทรกซ้อนสูง)\n- ปัจจัยเสี่ยง **postoperative delirium**: อายุตั้งแต่ 70, cognitive impairment, ดื่มสุรา, Na/K/glucose ผิดปกติ, ผ่าตัดช่องอก/AAA, Hct หลังผ่าตัดน้อยกว่า 30%, ปวดที่คุมไม่ได้\n- ยาที่ควรเลี่ยง: anticholinergic, benzodiazepine, **meperidine**, corticosteroid ขนาดสูง\n- **Optimization ที่ทำได้จริง**: เลิกบุหรี่ (ยิ่งนานยิ่งดี), คุมน้ำตาล, แก้ซีด, เสริมโภชนาการ, prehabilitation (ออกกำลังกายก่อนผ่าตัดแม้เพียงไม่กี่วันก็ช่วย)\n",
+   "pearls": [
+    "ASA เติม E เมื่อผ่าตัดฉุกเฉิน: ไส้ติ่งอักเสบในคนแข็งแรง = ASA IE",
+    "RCRI 6 ข้อ: IHD, HF, stroke/TIA, DM ใช้ insulin, Cr มากกว่า 2, ผ่าตัด intraperitoneal/intrathoracic/major vascular",
+    "Functional capacity ตั้งแต่ 4 METs (ขึ้นบันได 1 ชั้น) → ผ่าตัดได้โดยไม่ต้อง stress test",
+    "Elective surgery: เลื่อน 30 วันหลัง BMS และ 1 ปีหลัง DES (อย่างน้อย 180 วันถ้าจำเป็น)",
+    "β-blocker และ statin กินต่อ · ไม่เริ่ม β-blocker วันผ่าตัด",
+    "SGLT2i หยุด 3 วัน · warfarin หยุด 5 วัน · DOAC หยุด 36–48 ชม. ถ้าไตปกติ",
+    "ผู้สูงอายุ: Mini-Cog, capacity 4 ข้อ, TUG ตั้งแต่ 15 วินาที = เสี่ยงสูง"
+   ],
+   "mnem": [
+    {
+     "name": "DELIRIUM",
+     "what": "หาสาเหตุ postoperative delirium ที่แก้ได้",
+     "lines": [
+      [
+       "D",
+       "Drugs — ยาใหม่/ปรับขนาด, anticholinergic, benzodiazepine, pethidine"
+      ],
+      [
+       "E",
+       "Electrolytes, Environment เปลี่ยน"
+      ],
+      [
+       "L",
+       "Lack of drugs (withdrawal), Lack of sleep"
+      ],
+      [
+       "I",
+       "Infection"
+      ],
+      [
+       "R",
+       "Restraints, Reduced sensory input (แว่น/เครื่องช่วยฟัง)"
+      ],
+      [
+       "I",
+       "Intracranial: stroke, bleed, post-ictal"
+      ],
+      [
+       "U",
+       "Urinary retention, fecal impaction"
+      ],
+      [
+       "M",
+       "Metabolic: hypoxia, MI, PE, uremia, glucose"
+      ]
+     ],
+     "note": "ใช้ตามแผนภาพ delirium ใน Schwartz Ch 47"
+    }
+   ],
+   "items": [
+    {
+     "id": "N3-01-1-1",
+     "kind": "mcq",
+     "topic": "Cardiac risk — functional capacity",
+     "stem": "A 66-year-old man is scheduled for elective open inguinal hernia repair with mesh. He has hypertension and type 2 diabetes treated with metformin. He has no chest pain and climbs two flights of stairs daily to his apartment without symptoms. Creatinine 1.1 mg/dL. ECG last year was normal. What is the most appropriate next step?",
+     "choices": [
+      "Proceed with surgery without further cardiac testing",
+      "Order dobutamine stress echocardiography",
+      "Order coronary CT angiography",
+      "Refer for coronary angiography",
+      "Start metoprolol on the morning of surgery"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยไม่มี active cardiac condition, RCRI = 0 (DM ที่ไม่ใช้ insulin ไม่นับ และการผ่าตัดไส้เลื่อนขาหนีบไม่ใช่ intraperitoneal) และ **functional capacity ดีกว่า 4 METs** (ขึ้นบันไดได้ไม่มีอาการ) ตามแนวทาง ACC/AHA สามารถ **ผ่าตัดได้เลย** ไม่ต้องตรวจหัวใจเพิ่ม\n- **Dobutamine stress echo** — ส่งเฉพาะ functional capacity น้อยกว่า 4 METs/ประเมินไม่ได้ และผลจะเปลี่ยนการรักษา\n- **Coronary CT angiography** — ไม่มีข้อบ่งชี้ ผู้ป่วยไม่มีอาการ\n- **Coronary angiography** — ทำเมื่อมีข้อบ่งชี้ revascularization เหมือนคนที่ไม่ได้ผ่าตัด\n- **เริ่ม metoprolol วันผ่าตัด** — การเริ่ม β-blocker ใหม่ใกล้ผ่าตัดเพิ่ม stroke และการเสียชีวิต",
+     "pearl": "ขึ้นบันได 1 ชั้นได้ไม่มีอาการ (ตั้งแต่ 4 METs) → ผ่าตัดได้ ไม่ต้อง stress test",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46"
+     ]
+    },
+    {
+     "id": "N3-01-1-2",
+     "kind": "mcq",
+     "topic": "Coronary stent and elective surgery",
+     "stem": "A 58-year-old woman had a drug-eluting stent placed 2 months ago for unstable angina and takes aspirin plus clopidogrel. She is referred for elective laparoscopic cholecystectomy for symptomatic gallstones without complications. She is currently pain-free and tolerating diet. What is the best management?",
+     "choices": [
+      "Postpone the cholecystectomy until DAPT can be completed and continue both antiplatelet agents",
+      "Stop clopidogrel 5 days before surgery and operate next week",
+      "Stop both antiplatelet agents 7 days before surgery and bridge with enoxaparin",
+      "Operate now and stop clopidogrel for 1 week after surgery",
+      "Replace aspirin and clopidogrel with warfarin until surgery"
+     ],
+     "answer": 0,
+     "explain": "Elective surgery ควรเลื่อนออกไป **1 ปีหลังใส่ DES** (หรืออย่างน้อย 180 วันถ้าการรอเสี่ยงกว่า) เพราะการหยุด P2Y12 inhibitor ในช่วงแรกเพิ่ม **stent thrombosis** ซึ่งอัตราตายสูง ผู้ป่วย symptomatic gallstone ที่ไม่มีภาวะแทรกซ้อนรอได้ จึงควร **เลื่อนผ่าตัดและให้ DAPT ต่อ**\n- **หยุด clopidogrel 5 วันแล้วผ่าตัด** — เสี่ยง stent thrombosis ในช่วง 2 เดือนแรก\n- **หยุดทั้งสองตัวและ bridge ด้วย enoxaparin** — heparin ไม่ป้องกัน stent thrombosis\n- **ผ่าตัดเลยแล้วหยุด clopidogrel หลังผ่าตัด** — เพิ่มทั้งเลือดออกและ stent thrombosis\n- **เปลี่ยนเป็น warfarin** — ไม่ใช่ยาป้องกัน stent thrombosis",
+     "pearl": "DES ไม่ถึง 6–12 เดือน + elective case → เลื่อนผ่าตัด ให้ DAPT ต่อ",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46"
+     ]
+    },
+    {
+     "id": "N3-01-1-3",
+     "kind": "mcq",
+     "topic": "Perioperative medication management",
+     "stem": "A 61-year-old man with type 2 diabetes is scheduled for elective laparoscopic sigmoid colectomy in 5 days. His medications are metformin, empagliflozin, enalapril, atorvastatin and bisoprolol. Which instruction about his medications is most appropriate?",
+     "choices": [
+      "Stop empagliflozin at least 3 days before surgery",
+      "Stop atorvastatin 1 week before surgery",
+      "Stop bisoprolol 24 hours before surgery",
+      "Continue empagliflozin on the morning of surgery",
+      "Stop metformin 2 weeks before surgery and start insulin"
+     ],
+     "answer": 0,
+     "explain": "**SGLT2 inhibitor** ต้องหยุด **อย่างน้อย 3 วัน** ก่อนผ่าตัด เพราะเมื่อรวมกับ NPO และ stress ของการผ่าตัด อาจเกิด **euglycemic DKA** (น้ำตาลไม่สูงมากแต่มี ketoacidosis) ซึ่งวินิจฉัยช้าได้\n- **หยุด statin** — ควรกินต่อ ลด cardiovascular event รอบผ่าตัด\n- **หยุด bisoprolol** — การหยุด β-blocker กะทันหันทำให้ rebound tachycardia/ischemia ต้องกินต่อ\n- **ให้ empagliflozin เช้าวันผ่าตัด** — ขัดกับคำแนะนำ เสี่ยง euglycemic DKA\n- **หยุด metformin 2 สัปดาห์แล้วเปลี่ยนเป็น insulin** — ไม่จำเป็น งดแค่วันผ่าตัดก็พอ",
+     "pearl": "SGLT2i หยุด 3 วันก่อนผ่าตัด · statin และ β-blocker กินต่อ",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-01-2",
+   "title": "NPO, antibiotic & VTE prophylaxis, consent และ preop checklist",
+   "summary": "คืนก่อนผ่าตัดต้องสั่งอะไร ให้ยาปฏิชีวนะและยากันลิ่มเลือดอย่างไร และขอความยินยอมให้ครบอย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 46 — Preoperative fasting; Ch 6 — Prophylaxis and SSI; Ch 50 — VTE prophylaxis",
+   "md": "### NPO แบบใหม่: อดสั้นลงแต่ปลอดภัยกว่า\nการงดน้ำงดอาหารตั้งแต่เที่ยงคืน (6–12 ชม.) ทำให้ผู้ป่วยหิว กระหาย ขาดน้ำ และเกิด **insulin resistance** โดยไม่ได้ลด aspiration แนวทาง ASA สำหรับ elective surgery ในคนปกติ:\n\n| เวลาก่อนผ่าตัด | กินได้ถึง |\n|---|---|\n| **2 ชม.** | **clear liquid** (น้ำเปล่า น้ำหวานใส ชา/กาแฟดำ ไม่มีนม) |\n| 4 ชม. | นมแม่ |\n| **6 ชม.** | อาหารเบา (ขนมปัง แครกเกอร์), นมผสม/นมวัว |\n| 8 ชม. | อาหารปกติ มันหรือเนื้อสัตว์ |\n\n- **Carbohydrate loading** (ERAS): เครื่องดื่มคาร์โบไฮเดรตใสราว 100 g คืนก่อน และ 50 g 2–3 ชม. ก่อนผ่าตัด → ลด insulin resistance และอาการไม่สบายตัว\n- **ข้อยกเว้น** (ถือว่า full stomach/ต้องอดนานขึ้น): gastroparesis (DM นาน), bowel obstruction, dysphagia/achalasia, GERD รุนแรง, ascites มาก, ผ่าตัดฉุกเฉิน, ผู้ป่วยตั้งครรภ์ → พิจารณา **rapid sequence induction**\n> คำสั่งที่ถูก: \"NPO after midnight except clear fluid until 2 hr before surgery\" ไม่ใช่ \"NPO ทุกอย่างตั้งแต่เที่ยงคืน\"\n\n### Antibiotic prophylaxis: ถูกตัว ถูกเวลา ถูกระยะ\n| Wound class | ตัวอย่าง | SSI ที่คาด |\n|---|---|---|\n| I Clean | hernia repair, breast biopsy | 1–2% |\n| II Clean-contaminated | cholecystectomy, elective GI (ไม่ใช่ colon) · colorectal | 2.1–9.5% · 4–14% |\n| III Contaminated | penetrating abdominal trauma, enterotomy ใน bowel obstruction | 3.4–13.2% |\n| IV Dirty | perforated diverticulitis, necrotizing soft tissue infection | 3.1–12.8% |\n\nหลัก 4 ข้อ: (1) เลือกยาครอบคลุมเชื้อประจำถิ่นของตำแหน่งผ่าตัด (2) ให้ **ก่อนลงมีดภายในราว 60 นาที** (Schwartz เน้นใกล้เวลาลงมีด; vancomycin/fluoroquinolone เริ่มก่อนได้ถึง 120 นาที) (3) **redose** ระหว่างผ่าตัดนานตาม half-life (cefazolin ทุก 4 ชม.) หรือเสียเลือดมาก (4) **หยุดภายใน 24 ชม.** — prophylaxis ไม่ใช่ treatment\n\n| การผ่าตัด | ยาที่ใช้บ่อย |\n|---|---|\n| Hernia, breast, ortho, neuro, vascular | **Cefazolin** (แพ้: clindamycin/vancomycin) |\n| Gastroduodenal, biliary open/high-risk | Cefazolin |\n| Lap chole ความเสี่ยงต่ำ | **ไม่ต้องให้** |\n| Appendectomy, colorectal | Cefazolin + metronidazole หรือ cefoxitin/ertapenem |\n\n- เสริม: อาบน้ำคืนก่อน, ถ้าต้องโกนขน **ใช้ clipper ในห้องผ่าตัด** ไม่ใช้มีดโกน, alcohol-based skin prep, glucose น้อยกว่า 200 mg/dL, รักษา **normothermia**\n\n### VTE prophylaxis: ประเมินทุกคน ป้องกันตามความเสี่ยง\nVTE เป็นสาเหตุการตายหลังผ่าตัดที่ป้องกันได้อันดับต้น ไม่ป้องกันจะเกิด DVT ราว 25% และ PE ราว 7% หลังผ่าตัดใหญ่ และ DVT ส่วนใหญ่ไม่มีอาการ — PE อาจเป็นอาการแรก\n- ปัจจัยเสี่ยง: อายุตั้งแต่ 40, มะเร็ง, เคยเป็น VTE, อ้วน, ผ่าตัดใหญ่/นาน, กระดูกเชิงกราน-สะโพก-ขาหัก, spinal cord injury, ยาคุม/ฮอร์โมน, นอนนาน, HF/COPD\n\n| ความเสี่ยง (Caprini) | การป้องกัน |\n|---|---|\n| ต่ำมาก (0) | **early ambulation** |\n| ต่ำ (1–2) | mechanical: **IPC** หรือ stocking |\n| ปานกลาง (3–4) | **LMWH หรือ low-dose UFH** หรือ IPC ถ้าเสี่ยงเลือดออก |\n| สูง (ตั้งแต่ 5) | ยา + IPC · มะเร็งช่องท้อง/เชิงกราน: extended LMWH ราว 4 สัปดาห์ |\n\nตัวอย่างคำสั่ง: **enoxaparin 40 mg SC OD** หรือ **heparin 5,000 U SC q 8–12 h** (ไตเสื่อมรุนแรงเลือก UFH) · ถ้าจะทำ spinal/epidural ต้องเว้นช่วงเวลา LMWH ตามแนวทาง ASRA\n\n### Informed consent: สิ่งที่ผู้ป่วยต้องรู้ก่อนเซ็น\nConsent ที่ใช้ได้ต้องมี **capacity + ข้อมูลเพียงพอ + ความสมัครใจ** ข้อมูลที่ต้องอธิบายด้วยภาษาที่ผู้ป่วยเข้าใจ:\n1. การวินิจฉัย และทำไมต้องผ่าตัด\n2. ผ่าตัดอะไร อย่างไร ใครเป็นผู้ผ่าตัด ดมยาแบบไหน\n3. ประโยชน์ที่คาดหวัง\n4. **ความเสี่ยงที่พบบ่อยและที่ร้ายแรง** (เช่น lap chole: เลือดออก ติดเชื้อ bile leak ท่อน้ำดีบาดเจ็บ เปลี่ยนเป็นผ่าเปิด)\n5. **ทางเลือกอื่น รวมถึงการไม่รักษา** และผลที่ตามมา\n6. การดูแลหลังผ่าตัด ระยะพักฟื้น\n7. เปิดโอกาสให้ถาม ทวนความเข้าใจ (teach-back) และถอนความยินยอมได้\n- ผู้ยินยอม: ผู้ป่วยที่มี capacity · ผู้เยาว์หรือไร้ความสามารถ → ผู้แทนโดยชอบธรรมตามกฎหมาย · **ฉุกเฉินคุกคามชีวิต** ไม่มีผู้ให้ความยินยอม → ทำได้เพื่อช่วยชีวิตและ **บันทึกเหตุผล**\n- ผู้ป่วยที่มี DNR: ต้องคุยใหม่ก่อนผ่าตัดว่าจะคง/ยกเลิก/ปรับระหว่างผ่าตัด ไม่ควร \"ยกเลิกอัตโนมัติ\"\n\n### Preop order และ WHO Surgical Safety Checklist\n**Preop order ตัวอย่าง (elective colectomy)**: set OR วันที่… · consent operation + anesthesia · mark site · NPO solid หลังเที่ยงคืน clear fluid ได้ถึง 2 ชม.ก่อน · carbohydrate drink · IV fluid เมื่อเริ่ม NPO นาน · on-call antibiotic ให้ในห้องผ่าตัดก่อนลงมีด · G/M PRC 2 units · ยา: งด metformin/SGLT2i/ACEi ตามแผน กิน β-blocker ตามปกติ · VTE prophylaxis · อาบน้ำ chlorhexidine\n\n| ช่วง | ทำเมื่อ | ตรวจอะไร |\n|---|---|---|\n| **Sign in** | ก่อนดมยา | ตัวตน ตำแหน่ง หัตถการ consent, **site marking**, เครื่องดมยา/pulse oximeter, แพ้ยา, ใส่ท่อยาก/aspiration, เสี่ยงเสียเลือดมากกว่า 500 mL |\n| **Time out** | ก่อนลงมีด | ทีมแนะนำตัว ยืนยันผู้ป่วย-ตำแหน่ง-หัตถการ, **ให้ antibiotic ภายใน 60 นาทีแล้วหรือยัง**, เหตุการณ์วิกฤตที่คาด, ภาพ imaging |\n| **Sign out** | ก่อนออกห้อง | ชื่อหัตถการ, **นับผ้า-เข็ม-เครื่องมือครบ**, ติดฉลาก specimen, ปัญหาอุปกรณ์, ข้อกังวลหลังผ่าตัด |\n",
+   "pearls": [
+    "Clear fluid ได้ถึง 2 ชม.ก่อนดมยา · อาหารเบา 6 ชม. · อาหารหนัก 8 ชม.",
+    "Antibiotic prophylaxis ให้ก่อนลงมีดภายในราว 60 นาที, redose cefazolin ทุก 4 ชม., หยุดภายใน 24 ชม.",
+    "Lap chole ความเสี่ยงต่ำไม่ต้องให้ antibiotic prophylaxis",
+    "โกนขนด้วย clipper ในห้องผ่าตัด ไม่ใช่มีดโกนคืนก่อน",
+    "ไม่ป้องกัน: DVT ราว 25%, PE ราว 7% หลังผ่าตัดใหญ่",
+    "Consent ต้องมีทางเลือกรวมถึงการไม่รักษา และความเสี่ยงที่ร้ายแรงแม้พบน้อย",
+    "WHO checklist: Sign in ก่อนดมยา · Time out ก่อนลงมีด · Sign out ก่อนออกห้อง"
+   ],
+   "items": [
+    {
+     "id": "N3-01-2-1",
+     "kind": "mcq",
+     "topic": "Preoperative fasting",
+     "stem": "A 45-year-old woman is scheduled for elective laparoscopic cholecystectomy as the first case at 9:00 AM. She has no reflux, diabetes or other medical illness. The ward nurse asks what she may drink in the morning. What is the most appropriate instruction?",
+     "choices": [
+      "Clear fluids are allowed until 7:00 AM",
+      "Nothing by mouth at all after midnight",
+      "Milk tea is allowed until 7:00 AM",
+      "A light breakfast is allowed until 5:00 AM",
+      "Clear fluids are allowed until 8:30 AM"
+     ],
+     "answer": 0,
+     "explain": "แนวทาง ASA ให้ **clear liquid ได้ถึง 2 ชั่วโมง** ก่อนดมยาในผู้ป่วย elective ที่ไม่มีปัจจัยเสี่ยง aspiration (ผ่าตัด 9:00 จึงดื่มได้ถึง 7:00) การอดสั้นลงลด insulin resistance ความหิว และไม่เพิ่ม aspiration ปริมาตรกระเพาะกลับน้อยลง\n- **NPO ทุกอย่างหลังเที่ยงคืน** — ไม่จำเป็น และทำให้ขาดน้ำ/ไม่สบายตัว\n- **ชานม** — มีนม ไม่ใช่ clear liquid ต้องเว้น 6 ชม.\n- **อาหารเช้าเบา ๆ ถึง 5:00** — light meal ต้องเว้นอย่างน้อย 6 ชม. (ถึง 3:00)\n- **Clear fluid ถึง 8:30** — สั้นกว่า 2 ชม.",
+     "pearl": "Clear 2 ชม. · นมแม่ 4 ชม. · อาหารเบา/นม 6 ชม. · อาหารหนัก 8 ชม.",
+     "src": "Schwartz 11e Ch 46",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 46"
+     ]
+    },
+    {
+     "id": "N3-01-2-2",
+     "kind": "mcq",
+     "topic": "Surgical antibiotic prophylaxis — timing and duration",
+     "stem": "A 52-year-old man undergoes elective open right hemicolectomy for colon cancer. Cefazolin 2 g IV plus metronidazole 500 mg IV were given 30 minutes before incision. The operation is expected to last 5 hours with minimal blood loss. Which plan for prophylactic antibiotics is most appropriate?",
+     "choices": [
+      "Redose cefazolin at 4 hours intraoperatively and give no further doses after 24 hours",
+      "No intraoperative redosing; continue both drugs for 5 days after surgery",
+      "Redose both drugs every hour during surgery",
+      "Continue antibiotics until the surgical drain is removed",
+      "Switch to oral ciprofloxacin for 7 days after discharge"
+     ],
+     "answer": 0,
+     "explain": "Prophylaxis ต้องรักษาระดับยาในเนื้อเยื่อตลอดการผ่าตัด → **redose cefazolin ทุก 4 ชม.** (หรือเมื่อเสียเลือดมาก) และ **หยุดภายใน 24 ชม.** หลังผ่าตัด การให้นานกว่านี้ไม่ลด SSI แต่เพิ่มเชื้อดื้อยาและ C. difficile\n- **ให้ต่อ 5 วัน** — เปลี่ยน prophylaxis เป็น treatment โดยไม่มีข้อบ่งชี้\n- **Redose ทุกชั่วโมง** — ถี่เกินกว่า half-life ไม่มีประโยชน์\n- **ให้จนถอดสาย drain** — ไม่มีหลักฐานว่าลดการติดเชื้อ\n- **Ciprofloxacin หลังกลับบ้าน** — ไม่มีข้อบ่งชี้",
+     "pearl": "Prophylaxis: ก่อนลงมีด · redose ตาม half-life · หยุดภายใน 24 ชม.",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N3-01-2-3",
+     "kind": "mcq",
+     "topic": "VTE prophylaxis selection",
+     "stem": "A 67-year-old woman undergoes open low anterior resection for rectal cancer. BMI 31 kg/m². No history of bleeding. Creatinine 0.9 mg/dL. Hemostasis was satisfactory. Which VTE prophylaxis plan is most appropriate?",
+     "choices": [
+      "Enoxaparin 40 mg SC daily plus intermittent pneumatic compression, continued for about 4 weeks after surgery",
+      "Early ambulation only",
+      "Graduated compression stockings only until discharge",
+      "Therapeutic-dose enoxaparin 1 mg/kg SC every 12 hours",
+      "Aspirin 81 mg daily for 7 days"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **ความเสี่ยง VTE สูง** (อายุมากกว่า 60, มะเร็ง, ผ่าตัดใหญ่ช่องท้อง/เชิงกราน, อ้วน) ความเสี่ยงเลือดออกไม่สูง → ให้ **ยา (LMWH ขนาด prophylaxis) ร่วมกับ mechanical** และหลังผ่าตัดมะเร็งช่องท้อง/เชิงกรานควรให้ **extended prophylaxis ราว 4 สัปดาห์**\n- **Early ambulation อย่างเดียว** — พอสำหรับความเสี่ยงต่ำมากเท่านั้น\n- **Stocking อย่างเดียว** — ไม่พอสำหรับความเสี่ยงสูง\n- **Therapeutic dose** — เป็นขนาดรักษา VTE เพิ่มเลือดออก\n- **Aspirin 7 วัน** — ไม่ใช่มาตรฐานใน general surgery ความเสี่ยงสูง",
+     "pearl": "มะเร็ง + ผ่าตัดใหญ่ช่องท้อง = high risk → LMWH + IPC ± extended 4 สัปดาห์",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-01-3",
+   "title": "เขียน post-op order และ ERAS ในทางปฏิบัติ",
+   "summary": "เขียนคำสั่งหลังผ่าตัดให้ครบและปลอดภัย และใช้หลัก ERAS ให้ผู้ป่วยฟื้นตัวเร็ว",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 50 — Enhanced recovery after surgery; Ch 3 — Postoperative fluid therapy",
+   "md": "### โครงสร้าง post-op order ที่ไม่ลืมอะไร\nในโรงพยาบาลไทย order แบ่งเป็น **One day** (ทำครั้งเดียว) และ **Continuation** (ทำต่อเนื่องจนกว่าจะเปลี่ยน) ใช้ checklist ช่วยจำ เช่น **ADC VAAN DIMLS** (Admit, Diagnosis, Condition, Vitals, Activity, Allergy, Nursing, Diet, IV fluid, Medications, Labs, Special)\n\n| หมวด | ตัวอย่าง order หลัง laparoscopic colectomy |\n|---|---|\n| Diagnosis/การผ่าตัด | Post laparoscopic right hemicolectomy POD 0 |\n| **Vital signs** | record V/S q 15 min x 4, q 30 min x 2, then q 1 hr จนคงที่ แล้ว q 4 hr · SpO2 |\n| Nursing | I/O ทุก 8 ชม., สังเกตแผล/drain (สี ปริมาณ), Foley ถอดเช้า POD 1 |\n| **Activity** | นั่งข้างเตียงคืนนี้ ลุกเดิน POD 1 อย่างน้อย 3 ครั้ง · incentive spirometry 10 ครั้ง/ชม.ขณะตื่น |\n| **Diet** | sip clear fluid เมื่อตื่นดี → liquid/soft POD 1 ตามที่ทนได้ |\n| IV fluid | balanced crystalloid ขนาด maintenance แล้ว **หยุดเมื่อกินได้** |\n| **Analgesia** | paracetamol 1 g IV/PO q 6 hr (สูงสุด 4 g/วัน) + NSAID ถ้าไม่มีข้อห้าม + opioid เฉพาะ rescue |\n| PONV | ondansetron 4 mg IV prn/ตามความเสี่ยง |\n| VTE | enoxaparin 40 mg SC OD เริ่มตามเวลาที่ทีมกำหนด + IPC |\n| ยาเดิม | β-blocker, statin กินต่อ · DTX ac/hs ถ้า DM |\n| Labs | CBC, electrolytes, BUN/Cr เช้า POD 1 (เฉพาะเมื่อมีเหตุผล) |\n| **Notify** | แจ้งแพทย์ถ้า SBP น้อยกว่า 90, HR มากกว่า 120, urine น้อยกว่า 0.5 mL/kg/hr x 2 hr, T มากกว่า 38.5, drain เป็นเลือดสด |\n\n> order ที่ดีบอก \"เกณฑ์ให้พยาบาลโทรตาม\" ชัดเจน — ข้อสอบ OSCE ให้คะแนนส่วนนี้\n\n### ERAS คืออะไร และทำไมได้ผล\n**Enhanced Recovery After Surgery (ERAS)** คือชุดมาตรการหลายขั้นที่ลด **surgical stress response** (insulin resistance, catabolism, ileus) ทำให้ฟื้นตัวเร็ว ภาวะแทรกซ้อนลด นอนโรงพยาบาลสั้นลง หลักคือ \"ทุกข้อเล็ก ๆ รวมกันได้ผลใหญ่\" และต้องทำทั้งทีม\n\n| ระยะ | องค์ประกอบหลัก |\n|---|---|\n| ก่อนผ่าตัด | ให้ความรู้/ตั้งเป้าหมาย, **เลิกบุหรี่-สุรา**, prehabilitation, แก้ซีด/โภชนาการ, **NPO สั้น + carbohydrate loading**, ลด bowel prep, ไม่ให้ sedative ระยะยาว |\n| ระหว่างผ่าตัด | **minimally invasive**, **goal-directed fluid** (normovolemia ไม่ให้น้ำเกิน), **ป้องกัน hypothermia**, regional/opioid-sparing anesthesia, ป้องกัน PONV, ไม่ใส่ NG tube/drain routine |\n| หลังผ่าตัด | **early oral feeding**, **early mobilization**, multimodal analgesia, ถอด Foley เร็ว, หยุด IV fluid เร็ว, ป้องกัน VTE, audit ผลลัพธ์ |\n\n- องค์ประกอบที่สัมพันธ์กับนอนโรงพยาบาลสั้นลง: carbohydrate loading, ไม่ใส่ NG tube, ลุกเดินเร็ว, กินเร็ว, TIVA, ถอดสายสวนเร็ว\n- สิ่งที่ทำให้ ERAS ล้มเหลว: เสียเลือดมาก ผ่าตัดนาน ไม่ลุกเดิน อาเจียน ให้ IV fluid ต่อเนื่อง ใส่สายสวนปัสสาวะซ้ำ\n\n### ปวด คลื่นไส้ ลำไส้ไม่ทำงาน: สามศัตรูของการฟื้นตัว\n- **Multimodal analgesia**: paracetamol + NSAID/COX-2 + regional block/wound infiltration/TAP block ± epidural ในผ่าตัดเปิดใหญ่ → ลด opioid ลด ileus ลด PONV และลุกเดินได้เร็ว\n- **PONV** พบบ่อย (อาเจียนราว 30% คลื่นไส้ราว 50%) ปัจจัยเสี่ยง: **เพศหญิง, เคยมี PONV/เมารถ, ไม่สูบบุหรี่, อายุน้อย, ใช้ volatile/N2O, opioid หลังผ่าตัด**, ผ่าตัด lap/chole/นรีเวช → ให้ยาป้องกันหลายกลไกตามจำนวนปัจจัยเสี่ยง (dexamethasone, ondansetron, ฯลฯ)\n- **Postoperative ileus**: ลดด้วยลด opioid, คุมน้ำให้พอดี, ผ่าตัดแผลเล็ก, กินเร็ว · chewing gum มีประโยชน์ชัดน้อยลงเมื่อใช้ ERAS ครบ\n- **NG tube** ไม่ใส่ routine หลังผ่าตัดลำไส้ ใส่เฉพาะอาเจียนมาก/ท้องอืดมาก\n\n### การให้สารน้ำหลังผ่าตัดใน ERAS\n- เป้าหมายคือ **normovolemia/zero balance**: ทั้งขาดน้ำ (ไตขาดเลือด) และน้ำเกิน (ลำไส้บวม anastomosis รั่ว ปอดบวมน้ำ ileus) ทำให้ภาวะแทรกซ้อนเพิ่ม\n- วันผ่าตัด: maintenance ราว **25–30 mL/kg/วัน** หรือใช้สูตร 4-2-1 (ผู้ป่วย 60 kg ≈ 100 mL/hr) + ทดแทน loss ที่วัดได้\n- **หยุด IV เมื่อกินน้ำได้พอ** (มักเช้า POD 1) — IV ที่ค้างไว้ทำให้ผู้ป่วยไม่ลุกเดิน\n- urine output หลังผ่าตัดลดลงเล็กน้อยจาก ADH/aldosterone เป็นเรื่องปกติ ไม่ต้องรีบ bolus ทุกครั้งถ้า hemodynamics ดี (ดูหัวข้อ oliguria คาบถัดไป)\n\n### เกณฑ์กลับบ้านและการวางแผนจำหน่าย\nผู้ป่วยพร้อมกลับบ้านเมื่อ: **กินอาหารได้โดยไม่ต้องให้ IV**, **คุมปวดด้วยยากิน**, **เดินได้**ใกล้เคียงเดิม, ผายลม/ไม่มี ileus, ไม่มีสัญญาณภาวะแทรกซ้อน และผู้ป่วย/ญาติพร้อมดูแล\n- ให้คำแนะนำ: ดูแลแผล, **อาการที่ต้องกลับมาก่อนนัด** (ไข้ ปวดท้องมากขึ้น อาเจียน แผลบวมแดงมีหนอง ขาบวม เหนื่อย), ยากลับบ้าน (รวม extended VTE ถ้ามี), นัดตัดไหม/ฟังผลชิ้นเนื้อ\n- ERAS ลด length of stay แต่ไม่ได้แลกด้วย readmission ที่เพิ่ม ถ้าเลือกผู้ป่วยและติดตามดี\n",
+   "pearls": [
+    "Post-op order ที่ดีต้องมีเกณฑ์แจ้งแพทย์ชัดเจน",
+    "ERAS ลด stress response: insulin resistance, catabolism, ileus",
+    "ไม่ใส่ NG tube/drain routine · ถอด Foley เร็ว · กินเร็ว · เดินเร็ว",
+    "Multimodal analgesia: paracetamol + NSAID ± regional, opioid เป็น rescue",
+    "ปัจจัยเสี่ยง PONV: หญิง, เคย PONV/เมารถ, ไม่สูบบุหรี่, opioid หลังผ่าตัด",
+    "หยุด IV fluid เมื่อกินได้ — น้ำเกินทำให้ ileus และ anastomosis มีปัญหา"
+   ],
+   "mnem": [
+    {
+     "name": "ADC VAAN DIMLS",
+     "what": "Checklist เขียน admission/post-op order",
+     "lines": [
+      [
+       "A",
+       "Admit: ward, แพทย์เจ้าของไข้"
+      ],
+      [
+       "D",
+       "Diagnosis/การผ่าตัด, POD"
+      ],
+      [
+       "C",
+       "Condition"
+      ],
+      [
+       "V",
+       "Vital signs + ความถี่ + notify criteria"
+      ],
+      [
+       "A",
+       "Activity"
+      ],
+      [
+       "A",
+       "Allergy"
+      ],
+      [
+       "N",
+       "Nursing: I/O, แผล, drain, Foley, positioning"
+      ],
+      [
+       "D",
+       "Diet"
+      ],
+      [
+       "I",
+       "IV fluid"
+      ],
+      [
+       "M",
+       "Medications: antibiotic, analgesia, PONV, VTE, ยาเดิม"
+      ],
+      [
+       "L",
+       "Labs/imaging"
+      ],
+      [
+       "S",
+       "Special: consult, เครื่องมือ"
+      ]
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "N3-01-3-1",
+     "kind": "mcq",
+     "topic": "ERAS — postoperative care",
+     "stem": "A 55-year-old man is on postoperative day 1 after laparoscopic sigmoid colectomy under an ERAS pathway. He is alert, afebrile, BP 128/76 mmHg, HR 84/min, abdomen soft with mild incisional pain, urine output 0.8 mL/kg/h via Foley catheter. He is receiving IV fluid at 100 mL/h and is NPO. Which order is most appropriate now?",
+     "choices": [
+      "Start oral fluids and diet as tolerated, remove the Foley catheter and encourage ambulation",
+      "Keep NPO until flatus is passed",
+      "Insert a nasogastric tube for decompression",
+      "Increase IV fluid to 150 mL/h to protect the anastomosis",
+      "Start total parenteral nutrition"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยคงที่ ไม่มีสัญญาณ ileus หรือภาวะแทรกซ้อน หลัก ERAS คือ **early oral feeding**, **ถอด Foley เร็ว** (ลด UTI และทำให้ลุกเดินได้), **early mobilization** และหยุด IV เมื่อกินได้ การกินเร็วไม่เพิ่ม anastomotic leak\n- **NPO จนผายลม** — แนวคิดเดิม ทำให้ฟื้นตัวช้า\n- **ใส่ NG tube** — ไม่ใส่ routine ใส่เฉพาะอาเจียน/ท้องอืดมาก\n- **เพิ่ม IV fluid** — น้ำเกินทำให้ลำไส้บวม ileus และ anastomosis มีปัญหา\n- **TPN** — ไม่มีข้อบ่งชี้ ลำไส้ใช้งานได้",
+     "pearl": "ERAS หลังผ่าตัด: กินเร็ว ลุกเร็ว ถอดสายเร็ว หยุด IV เร็ว",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50"
+     ]
+    },
+    {
+     "id": "N3-01-3-2",
+     "kind": "mcq",
+     "topic": "Multimodal analgesia",
+     "stem": "A 42-year-old woman underwent open total abdominal hysterectomy. On the evening of surgery she reports pain 7/10 and nausea. She received morphine 4 mg IV twice. Creatinine is normal, no history of peptic ulcer or asthma. Which analgesic order best follows enhanced recovery principles?",
+     "choices": [
+      "Scheduled IV paracetamol plus an NSAID, with opioid only as rescue",
+      "Morphine 10 mg IV every 2 hours around the clock",
+      "Pethidine (meperidine) 50 mg IM every 4 hours",
+      "Diazepam at night to help her rest",
+      "Withhold all analgesics until nausea resolves"
+     ],
+     "answer": 0,
+     "explain": "**Multimodal analgesia** ใช้ยาหลายกลไกที่ไม่ใช่ opioid เป็นแกน (paracetamol ตามเวลา + NSAID ถ้าไม่มีข้อห้าม ± regional block) แล้วใช้ opioid เป็น rescue → ลด opioid ลด PONV ลด ileus และลุกเดินได้เร็ว\n- **Morphine ตามเวลาขนาดสูง** — เพิ่มคลื่นไส้ กดการหายใจ ileus\n- **Pethidine** — metabolite (normeperidine) ทำให้ชักและ delirium โดยเฉพาะผู้สูงอายุ/ไตเสื่อม\n- **Diazepam** — ไม่ใช่ยาแก้ปวด เพิ่ม sedation/delirium\n- **งดยาแก้ปวด** — ปวดที่ไม่ได้รักษาเพิ่ม delirium, atelectasis และไม่ลุกเดิน",
+     "pearl": "Paracetamol + NSAID ตามเวลา, opioid เป็น rescue",
+     "src": "Schwartz 11e Ch 50",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 50"
+     ]
+    },
+    {
+     "id": "N3-01-3-3",
+     "kind": "mcq",
+     "topic": "Post-op order — notification criteria",
+     "stem": "An intern writes postoperative orders for a 70-year-old man (weight 60 kg) after open repair of a perforated duodenal ulcer. Which nursing notification criterion is the most appropriate to include in the orders?",
+     "choices": [
+      "Notify the physician if urine output is less than 30 mL/h for 2 consecutive hours",
+      "Notify the physician if heart rate is greater than 160/min",
+      "Notify the physician if temperature is greater than 40°C",
+      "Notify the physician if systolic BP is less than 60 mmHg",
+      "Notify the physician only on the morning round"
+     ],
+     "answer": 0,
+     "explain": "เกณฑ์แจ้งแพทย์ต้อง **จับปัญหาได้เร็วพอจะแก้ไข** urine output เป้าหมายผู้ใหญ่ราว **0.5 mL/kg/hr** (60 kg ≈ 30 mL/hr) ถ้าน้อยกว่านี้ต่อเนื่อง 2 ชม. อาจเป็น hypovolemia/เลือดออก/sepsis ต้องประเมินทันที\n- **HR มากกว่า 160** — ช้าเกินไป ผู้ป่วยอาจอยู่ในภาวะช็อกแล้ว ทั่วไปใช้ราว 120\n- **T มากกว่า 40°C** — สูงเกินไป ใช้ราว 38.5\n- **SBP น้อยกว่า 60** — ใกล้ arrest แล้ว ทั่วไปใช้ SBP น้อยกว่า 90\n- **รอ round เช้า** — ไม่ปลอดภัย",
+     "pearl": "Notify criteria ต้องไวพอ: SBP น้อยกว่า 90, HR มากกว่า 120, UO น้อยกว่า 0.5 mL/kg/hr",
+     "src": "Schwartz 11e Ch 3",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 3"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-01-MEQ1",
+   "part": "MEQ",
+   "topic": "Preoperative evaluation and perioperative orders for elective colectomy",
+   "vignette": "ชายไทยอายุ 68 ปี ส่งมาจาก รพช. ด้วย **มะเร็งลำไส้ใหญ่ส่วน ascending colon** (ส่องกล้องตัดชิ้นเนื้อแล้ว CT ไม่พบการแพร่กระจาย) นัดผ่าตัด elective laparoscopic right hemicolectomy\n\nโรคประจำตัว: DM type 2 ใช้ **insulin glargine** + metformin, HT, เคยใส่ **drug-eluting stent เมื่อ 14 เดือนก่อน** ปัจจุบันกิน aspirin อย่างเดียว (หยุด clopidogrel แล้ว 2 เดือน), atorvastatin, enalapril, empagliflozin · สูบบุหรี่ 1 ซอง/วัน\n\nเดินขึ้นบันได 1 ชั้นได้ไม่เหนื่อย ไม่เจ็บหน้าอก\n\nPE: BP 142/84 mmHg, HR 72/min, BMI 24 kg/m², conjunctivae pale เล็กน้อย\n\n| Lab | ผล |\n|---|---|\n| Hb | 10.1 g/dL, MCV 72 fL |\n| Creatinine | 1.3 mg/dL |\n| HbA1c | 8.9% |\n| Albumin | 3.6 g/dL |",
+   "questions": [
+    {
+     "q": "1. จงประเมิน ASA class และ RCRI ของผู้ป่วย พร้อมตัดสินว่าต้องตรวจหัวใจเพิ่มก่อนผ่าตัดหรือไม่",
+     "a": "- **ASA III** (DM ที่ใช้ insulin คุมไม่ดี + CAD มี stent + HT)\n- **RCRI = 3**: ischemic heart disease, **DM ที่ใช้ insulin**, การผ่าตัด **intraperitoneal** (Cr 1.3 ไม่ถึง 2 จึงไม่นับ) → ความเสี่ยงสูงขึ้น\n- ไม่มี active cardiac condition และ **functional capacity ตั้งแต่ 4 METs** → **ผ่าตัดได้โดยไม่ต้อง stress test**; ทำ **ECG baseline** เพราะมี CAD และจะผ่าตัดเสี่ยงปานกลาง\n- DES ใส่มา 14 เดือน (เกิน 12 เดือน) → ไม่ต้องเลื่อนเรื่อง stent\nเกณฑ์ให้คะแนน: บอก ASA ถูก, นับ RCRI ถูก, ใช้ METs ตัดสิน, ไม่สั่ง stress test โดยไม่มีข้อบ่งชี้"
+    },
+    {
+     "q": "2. จงวางแผนจัดการยาแต่ละตัวก่อนผ่าตัด",
+     "a": "- **Aspirin**: กินต่อ (secondary prevention ของ CAD/stent; ผ่าตัดลำไส้เลือดออกยอมรับได้)\n- **Atorvastatin**: กินต่อ\n- **Empagliflozin**: หยุด **อย่างน้อย 3 วัน** ก่อนผ่าตัด (euglycemic DKA)\n- **Metformin**: งดวันผ่าตัด\n- **Insulin glargine**: ลดขนาดราว 20–25% คืนก่อนผ่าตัด เจาะ DTX ก่อนผ่าตัดและระหว่างอด\n- **Enalapril**: งดเช้าวันผ่าตัด (ตามนโยบายสถาบัน) กลับมาให้เมื่อ hemodynamics คงที่และกินได้\n- **ไม่เริ่ม β-blocker ใหม่ในวันผ่าตัด**"
+    },
+    {
+     "q": "3. สิ่งที่ควร optimize ได้ภายใน 2–4 สัปดาห์ก่อนผ่าตัดมีอะไรบ้าง",
+     "a": "- **Iron deficiency anemia** (Hb 10.1, MCV 72 จากเลือดออกเรื้อรังจากก้อน) → ให้ธาตุเหล็ก (IV iron ถ้าเวลาน้อย) ลดการให้เลือด\n- **เลิกบุหรี่** ทันที ยิ่งนานยิ่งลดภาวะแทรกซ้อนปอดและแผล\n- **คุมน้ำตาล** ให้ดีขึ้น (HbA1c สูงสัมพันธ์กับ SSI) แต่ไม่ควรเลื่อนผ่าตัดมะเร็งนานเพื่อรอ HbA1c\n- **Prehabilitation**: ออกกำลังกาย, โภชนาการโปรตีนเพียงพอ\n- ให้ความรู้ ERAS (เดิน กิน หลังผ่าตัด)"
+    },
+    {
+     "q": "4. จงเขียน preoperative order ที่สำคัญคืนก่อนและเช้าวันผ่าตัด",
+     "a": "- Consent operation + anesthesia, mark site ไม่จำเป็นสำหรับช่องท้องแนวกลาง (ตามนโยบาย)\n- **NPO solid หลังเที่ยงคืน, clear fluid ได้ถึง 2 ชม.ก่อน** · carbohydrate drink ใช้ได้ด้วยความระวังในผู้ป่วย DM (เจาะ DTX)\n- DTX ทุก 4–6 ชม. ระหว่างอด เป้าหมายน้อยกว่า 180–200 mg/dL\n- **Cefazolin 2 g + metronidazole 500 mg IV** ภายใน 60 นาทีก่อนลงมีด (on call to OR)\n- G/M PRC ตามนโยบาย\n- **VTE**: high risk (อายุ มะเร็ง ผ่าตัดใหญ่) → LMWH + IPC และพิจารณา extended 4 สัปดาห์\n- อาบน้ำคืนก่อน ไม่โกนขนด้วยมีดโกน · bowel prep ตามแนวทางของทีม (ไม่ใช่ routine ทุกเคสใน ERAS)"
+    },
+    {
+     "q": "5. POD 2 ตอนตี 2 พยาบาลโทรแจ้งว่าผู้ป่วยสับสน ดึงสายน้ำเกลือ จงบอกแนวทางประเมินและรักษา",
+     "a": "คิดถึง **postoperative delirium** แต่ต้องหาสาเหตุที่รักษาได้ก่อน (DELIRIUM: drugs, electrolytes, withdrawal, infection, retention, intracranial, metabolic รวม hypoxia/MI/PE)\n- ตรวจ V/S, **SpO2, DTX**, แผล/สาย, ปัสสาวะค้าง, ปวด\n- Lab: CBC, electrolytes (Na), glucose, BUN/Cr, ± UA, CXR, ECG/troponin ถ้าสงสัย\n- ทบทวนยา: หยุด benzodiazepine, anticholinergic, pethidine\n- Non-pharmacologic: แว่น/เครื่องช่วยฟัง, ญาติอยู่ด้วย, จัดเวลานอน, เลี่ยงผูกมัด, ถอดสายที่ไม่จำเป็น, ลุกเดิน\n- ยา **haloperidol ขนาดต่ำ (0.5 mg)** เฉพาะเมื่อเป็นอันตรายต่อตนเอง/ผู้อื่น และตรวจ QTc ก่อน"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 46",
+    "Schwartz 11e Ch 47",
+    "Schwartz 11e Ch 50",
+    "2014 ACC/AHA Guideline on Perioperative Cardiovascular Evaluation"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-01-OSCE1",
+   "topic": "Preoperative counselling and informed consent — laparoscopic cholecystectomy",
+   "station": "สถานี 8 นาที · สื่อสาร/ให้ข้อมูลก่อนผ่าตัด",
+   "instruction": "**บทบาท**: คุณเป็นแพทย์ใช้ทุนแผนกศัลยกรรม\n\n**สถานการณ์**: คุณนิภา อายุ 45 ปี มีนิ่วในถุงน้ำดีที่มีอาการปวดซ้ำ 3 ครั้งใน 6 เดือน U/S พบนิ่วหลายก้อน ท่อน้ำดีไม่ขยาย LFT ปกติ ศัลยแพทย์นัด **laparoscopic cholecystectomy** สัปดาห์หน้า\n\n**งานของคุณ** (8 นาที): ให้ข้อมูลและขอความยินยอมผ่าตัด พร้อมให้คำแนะนำการเตรียมตัวก่อนผ่าตัด\n\n**ข้อมูลสำหรับผู้ป่วยจำลอง**: กังวลว่า \"ตัดถุงน้ำดีแล้วจะย่อยอาหารได้ไหม\" กิน aspirin เองเพราะเพื่อนบอกว่ากันเส้นเลือดตีบ ไม่มีโรคหัวใจ และถามว่า \"เช้าวันผ่าตัดกินน้ำได้ไหม\"",
+   "answer": "1. แนะนำตัว ยืนยันตัวตนผู้ป่วย ขออนุญาต ถามความเข้าใจเดิม (1)\n2. อธิบายโรคและเหตุผลที่ต้องผ่าตัด (ปวดซ้ำ เสี่ยง cholecystitis, pancreatitis, ท่อน้ำดีอุดตัน) ด้วยภาษาง่าย (1)\n3. อธิบายวิธีผ่าตัด: ดมยาสลบ แผลเล็ก 3–4 แผล อาจ **เปลี่ยนเป็นผ่าตัดเปิด** ถ้าจำเป็น (1)\n4. ประโยชน์: หายปวด ป้องกันภาวะแทรกซ้อน ฟื้นตัวเร็ว (0.5)\n5. **ความเสี่ยง**: เลือดออก แผลติดเชื้อ น้ำดีรั่ว **ท่อน้ำดีบาดเจ็บ** (พบน้อยแต่ร้ายแรง) นิ่วตกค้าง ความเสี่ยงจากยาสลบ (2)\n6. **ทางเลือก**: เฝ้าดู/คุมอาหาร (เสี่ยงปวดซ้ำ/ภาวะแทรกซ้อน) และผลถ้าไม่รักษา (1)\n7. ตอบข้อกังวลเรื่องย่อยอาหาร: ส่วนใหญ่กินได้ปกติ บางรายถ่ายเหลวหลังอาหารมัน ค่อย ๆ ดีขึ้น (0.5)\n8. คำแนะนำก่อนผ่าตัด: **อาหารงด 6–8 ชม., น้ำใสดื่มได้ถึง 2 ชม.ก่อน**, หยุด aspirin ที่กินเองโดยไม่มีข้อบ่งชี้ ประมาณ 7 วันก่อน, อาบน้ำ, งดบุหรี่ (1)\n9. Teach-back, เปิดโอกาสให้ถาม, ผู้ป่วยมีสิทธิ์ถอนความยินยอม แล้วให้ลงนาม (1)\n\n**Fatal errors**: ไม่บอกความเสี่ยงท่อน้ำดีบาดเจ็บ/การเปลี่ยนเป็นผ่าเปิด, บังคับหรือเร่งให้เซ็น, ใช้ศัพท์แพทย์ล้วน, สั่ง NPO หลังเที่ยงคืนห้ามดื่มน้ำเลยโดยไม่มีเหตุผล"
+  },
+  {
+   "id": "N3-01-OSCE2",
+   "topic": "Writing postoperative orders after appendectomy for perforated appendicitis",
+   "station": "สถานี 7 นาที · เขียนคำสั่งการรักษา (order sheet)",
+   "instruction": "**สถานการณ์**: ชายอายุ 32 ปี น้ำหนัก 70 kg ไม่มีโรคประจำตัว ไม่แพ้ยา ได้รับการผ่าตัด **open appendectomy** เมื่อ 1 ชั่วโมงก่อน พบ **ไส้ติ่งแตก มีหนองเฉพาะที่ใน RLQ** ล้างช่องท้องแล้ว ไม่ได้ใส่ drain เย็บปิดแผลแล้ว ผ่าตัดเสร็จ V/S คงที่ ตื่นดีในห้องพักฟื้น ก่อนผ่าตัดได้ ceftriaxone 2 g + metronidazole 500 mg IV\n\n**งานของคุณ** (7 นาที): เขียน post-operative order (One day และ Continuation) ลงในใบ order ที่ให้ไว้",
+   "answer": "**Continuation** (ให้คะแนนข้อละ 1)\n1. Diagnosis: Post open appendectomy POD 0 (perforated appendicitis with localized abscess)\n2. **Record V/S** q 15 min x 4, q 30 min x 2, q 1 hr จนคงที่ แล้ว q 4 hr + **I/O**\n3. Diet: sip water เมื่อตื่นดี → liquid diet → soft diet ตามที่ทนได้ (ไม่ต้อง NPO ยาว)\n4. Activity: ลุกนั่ง/เดินเร็วที่สุด, deep breathing/incentive spirometry\n5. **Antibiotic ต่อเนื่อง**: ceftriaxone 2 g IV OD + metronidazole 500 mg IV q 8 hr (ไส้ติ่งแตก = treatment ไม่ใช่ prophylaxis ประมาณ **4 วัน** หลัง source control ที่เพียงพอ)\n6. **Analgesia**: paracetamol 1 g IV/PO q 6 hr + NSAID (ไม่มีข้อห้าม) + morphine 2–3 mg IV prn ปวดมาก\n7. Ondansetron 4 mg IV prn คลื่นไส้\n8. ดูแลแผล สังเกตเลือดซึม/หนอง\n9. VTE: ambulation (ความเสี่ยงต่ำ) ± mechanical\n**One day**\n10. IV: balanced crystalloid (LRS) 100 mL/hr แล้ว off เมื่อกินได้\n11. **เกณฑ์แจ้งแพทย์**: SBP น้อยกว่า 90, HR มากกว่า 120, T มากกว่า 38.5, urine น้อยกว่า 35 mL/hr (0.5 mL/kg/hr), ปวดท้องมากขึ้น\n12. Lab เฉพาะเมื่อมีข้อบ่งชี้ (CBC POD 1 พิจารณาได้)\n\n**Fatal errors**: ไม่สั่ง antibiotic ต่อในไส้ติ่งแตก, สั่งยาที่ผู้ป่วยแพ้/ขนาดผิด 10 เท่า, ไม่มี V/S monitoring, ไม่มียาแก้ปวด"
+  }
+ ]
+}

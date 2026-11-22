@@ -66,5 +66,8 @@ def main(p):
     for m in WARN:print("WARN:",m)
     for m in ERR:print("ERROR:",m)
     print(f"{p}: {ns} sections, {nq} MCQ, {len(L.get('meq',[]))} MEQ, {len(L.get('osce',[]))} OSCE — {len(ERR)} errors, {len(WARN)} warnings")
-    sys.exit(1 if ERR else 0)
-for p in sys.argv[1:]:main(p)
+    return len(ERR)
+bad=0
+for p in sys.argv[1:]:
+    ERR.clear();WARN.clear();bad+=main(p)
+sys.exit(1 if bad else 0)

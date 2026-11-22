@@ -1,0 +1,507 @@
+{
+ "lec": "05",
+ "date": "Schwartz Ch 6",
+ "title": "Surgical infection",
+ "subtitle": "ป้องกัน SSI ให้ถูกเวลา คุม source ให้เร็ว ให้ยาให้สั้น และไม่พลาด NSTI กับ C difficile — คาบนี้ตอบว่าศัลยแพทย์ต้องตัดสินใจอะไรในการติดเชื้อทางศัลยกรรม",
+ "objectives": [
+  "เรียนจบแล้วต้องสั่ง antimicrobial prophylaxis ได้ถูกยา ขนาด เวลา redose และระยะเวลา พร้อมอธิบาย SSI bundle ตาม CDC 2017",
+  "เรียนจบแล้วต้องจำแนก peritonitis และวางแผน source control (percutaneous vs operative, on-demand relaparotomy) ได้",
+  "เรียนจบแล้วต้องกำหนดระยะเวลายาปฏิชีวนะใน intra-abdominal infection ตาม SIS 2017 และผลของ STOP-IT ได้",
+  "เรียนจบแล้วต้องวินิจฉัย NSTI จากอาการ แปลผล LRINEC อย่างถูกบทบาท และวางแผน debridement, ยา และ re-look ได้",
+  "เรียนจบแล้วต้องรักษา C difficile ตามความรุนแรงและบอกข้อบ่งชี้/ชนิดการผ่าตัดใน fulminant colitis ได้",
+  "เรียนจบแล้วต้องจัดการ candidemia และ device infection (CLABSI, mesh) ได้ว่าเมื่อไรต้องถอดอุปกรณ์"
+ ],
+ "guidelines": [
+  "**Schwartz's Principles of Surgery** 11e — Ch 6 Surgical Infections (และ Ch 29 C difficile colitis)",
+  "**ASHP/IDSA/SIS/SHEA** Clinical practice guidelines for antimicrobial prophylaxis in surgery (2013) · **CDC** Guideline for prevention of SSI (2017)",
+  "**Surgical Infection Society** revised guidelines on intra-abdominal infection (2017) · **STOP-IT** (NEJM 2015) · **RELAP** (JAMA 2007)",
+  "**IDSA** SSTI guideline (2014) · LRINEC score (Wong, Crit Care Med 2004)",
+  "**IDSA/SHEA** C difficile guideline (2017, focused update 2021) · **IDSA** candidiasis guideline (2016) · Surviving Sepsis Campaign (2021)"
+ ],
+ "sections": [
+  {
+   "id": "res-05-1",
+   "title": "SSI prevention bundle และ antimicrobial prophylaxis",
+   "summary": "จะป้องกัน surgical site infection อย่างไรให้ครบทั้งยา เวลา การ redose และ bundle ที่ไม่ใช่ยา และเมื่อเกิด SSI แล้วต้องทำอะไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Prophylaxis; Surgical site infections",
+   "md": "### นิยาม SSI และ wound class ที่ต้องตอบได้ทันที\nSSI แบ่งตามชั้นที่ติดเชื้อเป็น **superficial incisional** (ผิวหนังและ subcutaneous), **deep incisional** (fascia/กล้ามเนื้อ) และ **organ/space SSI** (ช่องท้อง ช่องอก หรืออวัยวะที่ถูกผ่าตัด) การเฝ้าระวังตามนิยามสากลคือ 30 วันหลังผ่าตัด (ขยายเป็น 90 วันในบางหัตถการที่ใส่ implant ตาม CDC NHSN) แผลที่มีหนองไหลหรือศัลยแพทย์ตัดสินใจเปิดแผลเพราะสงสัยติดเชื้อ ถือว่าเป็น incisional SSI ตามนิยาม\n\n| Wound class | ตัวอย่าง | อัตราติดเชื้อโดยประมาณ (Schwartz) |\n|---|---|---|\n| I Clean | hernia repair, breast biopsy | 1–2% |\n| ID Clean + device | ใส่ mesh, valve | ต้องให้ prophylaxis |\n| II Clean-contaminated | cholecystectomy, elective GI | 2.1–9.5% · colorectal 4–14% |\n| III Contaminated | penetrating abdominal trauma, enterotomy ระหว่าง SBO | 3.4–13.2% |\n| IV Dirty | perforated diverticulitis, NSTI | 3.1–12.8% |\n\n> ตัวเลข elective colorectal ในชีวิตจริงสูงกว่าตาราง (9–25% ในหลายการศึกษา) และ 2 ใน 3 เกิดหลังกลับบ้าน จึงต้องนัดตรวจแผลเสมอ\n\n### ปัจจัยเสี่ยง: คนไข้ แผล และเชื้อ\n- **Patient factors**: อายุมาก, เบาหวาน, อ้วน, สูบบุหรี่, ขาดอาหาร, ภูมิคุ้มกันต่ำ/steroid, ไตวาย, PAD, เคยฉายรังสี, เป็น **S aureus carrier**\n- **Local/operative**: ผ่าเปิดมากกว่าส่องกล้อง, ผ่าตัดนาน, เตรียมผิวไม่ดี, ให้ยาป้องกันผิดเวลา, เนื้อตาย, ให้เลือด, **hypothermia และ hypoxia**\n- **Microbial**: อยู่โรงพยาบาลนาน (เชื้อดื้อยา), เชื้อสร้าง toxin หรือมี capsule\nSSI จึงเป็นผลรวมของ \"ปริมาณเชื้อที่ปนเปื้อน × ระยะเวลาผ่าตัด × ความอ่อนแอของ host\" — bundle ที่ดีต้องลดทั้งสามด้าน\n\n### Antimicrobial prophylaxis: เลือกยา เวลา redose และหยุดยา\nหลักสี่ข้อ: (1) เลือกยาที่ครอบคลุมเชื้อประจำถิ่นของตำแหน่งผ่าตัด (2) ให้ก่อนลงมีดให้ระดับยาในเนื้อเยื่อสูงพอ — Schwartz key point เขียนว่าภายใน 30 นาที ส่วน **ASHP/IDSA/SIS/SHEA 2013** และ CDC ใช้ **ภายใน 60 นาทีก่อน incision** (vancomycin และ fluoroquinolone เริ่มภายใน **120 นาที** เพราะต้อง infuse นาน) (3) **redose** เมื่อผ่าตัดนานเกิน ~2 half-life ของยา หรือเสียเลือด **>1,500 mL** (4) หยุดยา — ส่วนใหญ่ dose เดียวพอ และไม่ควรเกิน **24 ชั่วโมง**; CDC 2017 แนะนำไม่ให้ dose เพิ่มหลังปิดแผลใน clean/clean-contaminated แม้ใส่ drain\n\n| ยา | ขนาดผู้ใหญ่ | Redose interval |\n|---|---|---|\n| **Cefazolin** | 2 g (3 g ถ้า ≥120 kg) | ทุก 4 ชม. |\n| Cefoxitin | 2 g | ทุก 2 ชม. |\n| Cefuroxime | 1.5 g | ทุก 4 ชม. |\n| Clindamycin | 900 mg | ทุก 6 ชม. |\n| Vancomycin | 15 mg/kg | ไม่ต้อง redose ระหว่างผ่าตัดทั่วไป |\n| Metronidazole | 500 mg | ไม่ต้อง redose ระหว่างผ่าตัดทั่วไป |\n| Gentamicin | 5 mg/kg (ใช้ dosing weight) | dose เดียว |\n\nElective colorectal: cefazolin + metronidazole หรือ cefoxitin/cefotetan หรือ ertapenem ร่วมกับ **mechanical bowel prep + oral antibiotics** (เช่น neomycin + metronidazole) ซึ่งข้อมูล NSQIP สนับสนุนว่าลด SSI และ anastomotic leak; MRSA carrier ที่จะผ่าตัด cardiac/orthopedic implant → เพิ่ม vancomycin และพิจารณา decolonize ด้วย **mupirocin** + chlorhexidine\n\n### SSI prevention bundle นอกจากยา\n\n| องค์ประกอบ | สิ่งที่ทำ (CDC 2017 / WHO 2016) |\n|---|---|\n| ผิวหนัง | อาบน้ำด้วยสบู่/antiseptic คืนก่อนผ่าตัด · **clippers** ในห้องผ่าตัด ไม่โกนด้วยมีด · เตรียมผิวด้วย **alcohol-based** antiseptic (เช่น chlorhexidine-alcohol) |\n| สรีรวิทยา | **glucose <200 mg/dL** ช่วง perioperative ทุกราย (ไม่ขึ้นกับเบาหวาน) · **normothermia** · FiO2 สูงระหว่างผ่าตัด/หลังถอดท่อในผู้ที่ปอดปกติ (หลักฐานยังขัดแย้ง) |\n| เทคนิค | wound protector, เปลี่ยนถุงมือ/เครื่องมือก่อนปิดแผลใน colorectal, ไม่ต้องแช่ mesh/ล้างแผลด้วยยาปฏิชีวนะ (ไม่มีประโยชน์ชัด) |\n| การปิดแผล | class I–II ปิดได้ · class III–IV ปิดผิวหนังมี SSI ~25–50% → เปิดไว้หรือ **delayed primary closure** · ยกเว้น perforated/gangrenous appendicitis ในคนแข็งแรงที่ได้ยาครอบคลุม ปิดได้ SSI ~3–4% · **incisional NPWT** ในแผลเสี่ยงสูง |\n\n### เมื่อเกิด SSI แล้วทำอย่างไร\nSuperficial incisional SSI รักษาด้วย **เปิดแผล ระบายหนอง ล้างและ packing** ให้หายแบบ secondary intention — **ยาปฏิชีวนะไม่จำเป็น** เว้นแต่มี cellulitis ลุกลามหรือมี SIRS/sepsis; ส่ง culture ในผู้ป่วยที่อยู่ รพ.นาน/มาจาก long-term care เพราะเสี่ยงเชื้อดื้อยา แผลใหญ่ซับซ้อนใช้ **NPWT (vacuum-assisted closure)** ได้ ถ้าแผลเปิดแล้วเห็น fascia แยก หรือมีหนองจากใต้ fascia ให้คิดถึง deep SSI/organ-space และทำ CT หา collection\n",
+   "pearls": [
+    "Prophylaxis: ภายใน 60 นาทีก่อนลงมีด (vancomycin/FQ ภายใน 120 นาที)",
+    "Cefazolin 2 g (3 g ถ้า ≥120 kg) redose ทุก 4 ชม. · redose เมื่อเสียเลือด >1,500 mL",
+    "ไม่ต้องให้ prophylaxis ต่อหลังปิดแผล แม้ยังมี drain — ยาวสุดไม่เกิน 24 ชม.",
+    "Glucose <200 mg/dL ช่วงผ่าตัดในทุกราย ไม่ใช่แค่ผู้ป่วยเบาหวาน",
+    "ตัดขนด้วย clippers ในห้องผ่าตัด ไม่โกนด้วยมีดโกน",
+    "Superficial SSI = เปิดแผลระบาย · ให้ยาเมื่อมี cellulitis หรือ SIRS เท่านั้น",
+    "Elective colectomy: MBP + oral antibiotics + IV prophylaxis ลด SSI"
+   ],
+   "items": [
+    {
+     "id": "RES-05-1-1",
+     "kind": "mcq",
+     "topic": "Intraoperative antibiotic redosing",
+     "stem": "A 61-year-old man (82 kg) undergoes open low anterior resection. Cefazolin 2 g and metronidazole 500 mg IV were given at 07:30 and incision was at 07:50. At 11:40 the operation is expected to last another 2 hours; estimated blood loss so far is 600 mL and he is normothermic. Which is the most appropriate antimicrobial action now?",
+     "choices": [
+      "Give a second dose of cefazolin 2 g now",
+      "No redose is needed until blood loss exceeds 1,500 mL",
+      "Redose both cefazolin and metronidazole now",
+      "Switch to vancomycin 15 mg/kg for the remainder of the case",
+      "Plan to continue cefazolin every 8 hours for 72 hours postoperatively"
+     ],
+     "answer": 0,
+     "explain": "Cefazolin มี half-life สั้น จึงต้อง **redose ทุก 4 ชั่วโมงนับจาก dose แรก** (07:30 → ~11:30) เพื่อคงระดับยาในเนื้อเยื่อตลอดช่วงที่แผลเปิด ผู้ป่วยรายนี้ผ่านมาเกือบ 4 ชั่วโมงแล้วและยังผ่าต่ออีกนาน จึงควรให้ cefazolin ซ้ำทันที\n- **รอจนเสียเลือด >1,500 mL**: เกณฑ์เสียเลือดเป็นเหตุผลเพิ่มเติมให้ redose ไม่ได้แทนเกณฑ์เวลา ต้อง redose ตามเวลาด้วย\n- **Redose ทั้งสองตัว**: metronidazole half-life ยาว (6–8 ชม.) แนวทาง ASHP 2013 ไม่กำหนด redose ระหว่างผ่าตัดทั่วไป\n- **เปลี่ยนเป็น vancomycin**: ไม่มี MRSA risk และ vancomycin ไม่ครอบคลุม gram-negative/anaerobe ของลำไส้ใหญ่\n- **ให้ต่อ 72 ชม.**: การให้ยาหลังผ่าตัดไม่ลด SSI แต่เพิ่มเชื้อดื้อยาและ C difficile",
+     "pearl": "Cefazolin redose ทุก 4 ชม. หรือเมื่อเสียเลือด >1,500 mL — แล้วแต่อะไรถึงก่อน",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "ASHP/IDSA/SIS/SHEA Clinical practice guidelines for antimicrobial prophylaxis in surgery (2013)"
+     ]
+    },
+    {
+     "id": "RES-05-1-2",
+     "kind": "mcq",
+     "topic": "Timing of vancomycin prophylaxis",
+     "stem": "A 70-year-old woman with documented nasal MRSA colonization is scheduled for elective open repair of a large incisional hernia with retromuscular polypropylene mesh. The team plans vancomycin plus cefazolin prophylaxis. Regarding the vancomycin infusion, which timing best ensures adequate tissue levels at incision?",
+     "choices": [
+      "Begin the infusion within 120 minutes before incision",
+      "Give it as an IV push at the moment of incision",
+      "Begin the infusion the evening before surgery",
+      "Start the infusion after the mesh has been placed",
+      "Begin the infusion within 15 minutes after skin closure"
+     ],
+     "answer": 0,
+     "explain": "Vancomycin ต้อง infuse ช้า (~1–2 ชม.) เพื่อลด red man syndrome/ความดันตก แนวทางจึงให้ **เริ่ม infusion ภายใน 120 นาทีก่อนลงมีด** (เช่นเดียวกับ fluoroquinolone) ส่วน cefazolin ให้ภายใน 60 นาที เป้าหมายคือให้ระดับยาในเนื้อเยื่อสูงตั้งแต่วินาทีที่มีการปนเปื้อน\n- **IV push ตอนลงมีด**: ฉีดเร็วเสี่ยง histamine release และระดับยาในเนื้อเยื่อยังไม่ถึงตอนเริ่มปนเปื้อน\n- **คืนก่อนผ่าตัด**: เร็วเกินไป ระดับยาตกก่อนผ่าตัด และไม่ช่วยลด SSI\n- **หลังวาง mesh / หลังปิดแผล**: ช้าเกินไป เชื้อเกาะ biofilm บน mesh ตั้งแต่ช่วงแรกของการผ่าตัด ยาที่ให้หลังปนเปื้อนไม่ใช่ prophylaxis",
+     "pearl": "Vancomycin/FQ เริ่มภายใน 120 นาที · ยาอื่นภายใน 60 นาทีก่อนลงมีด",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "ASHP/IDSA/SIS/SHEA Clinical practice guidelines for antimicrobial prophylaxis in surgery (2013)"
+     ]
+    },
+    {
+     "id": "RES-05-1-3",
+     "kind": "mcq",
+     "topic": "CDC 2017 SSI bundle",
+     "stem": "A 58-year-old man with well-controlled type 2 diabetes (HbA1c 6.9%) is scheduled for laparoscopic sigmoid colectomy. The surgical quality committee is updating its SSI-prevention bundle according to the 2017 CDC guideline. Which of the following elements is supported by that guideline?",
+     "choices": [
+      "Maintain perioperative blood glucose below 200 mg/dL in all patients, diabetic or not",
+      "Continue IV cefazolin and metronidazole until the drains are removed",
+      "Shave the operative site with a razor on the evening before surgery",
+      "Soak prosthetic material in antibiotic solution before implantation",
+      "Apply topical antibiotic ointment to the closed incision daily"
+     ],
+     "answer": 0,
+     "explain": "CDC 2017 แนะนำให้ **คุมน้ำตาลในเลือด <200 mg/dL ช่วง perioperative ในผู้ป่วยทุกราย** เพราะ hyperglycemia กดการทำงานของ neutrophil (chemotaxis, phagocytosis) และเพิ่ม SSI แม้ในผู้ที่ไม่เป็นเบาหวาน ร่วมกับ normothermia และเตรียมผิวด้วย alcohol-based antiseptic\n- **ให้ยาจนถอด drain**: CDC แนะนำไม่ให้ dose เพิ่มหลังปิดแผล การมี drain ไม่ใช่ข้อบ่งชี้ให้ยาต่อ\n- **โกนด้วยมีดโกนคืนก่อน**: ทำให้ผิวมีรอยถลอกเล็ก ๆ ที่เชื้อเพิ่มจำนวน ถ้าจำเป็นให้ใช้ clippers ในห้องผ่าตัด\n- **แช่ prosthesis ในยาปฏิชีวนะ**: ไม่มีหลักฐานว่าลด SSI\n- **Topical antibiotic บนแผลปิด**: CDC ไม่แนะนำให้ทาเป็นประจำ",
+     "pearl": "Bundle: clippers + alcohol-based prep + glucose <200 + normothermia + ไม่ให้ยาหลังปิดแผล",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "CDC Guideline for the Prevention of Surgical Site Infection (JAMA Surg 2017)"
+     ]
+    },
+    {
+     "id": "RES-05-1-4",
+     "kind": "mcq",
+     "topic": "Management of superficial incisional SSI",
+     "stem": "A 45-year-old woman is seen on postoperative day 6 after an open appendectomy for nonperforated appendicitis. She has a 3-cm area of erythema around the incision with purulent drainage from the lateral end. Temperature is 37.6 C, heart rate 84/min, WBC 10,800/mm3, and the abdomen is otherwise soft. Which is the most appropriate management?",
+     "choices": [
+      "Open the incision, drain and pack it, without systemic antibiotics",
+      "Start oral amoxicillin-clavulanate and keep the wound closed",
+      "Obtain an urgent contrast CT of the abdomen before any wound intervention",
+      "Return to the operating room for exploratory laparotomy",
+      "Start IV vancomycin plus piperacillin-tazobactam for 7 days"
+     ],
+     "answer": 0,
+     "explain": "นี่คือ **superficial incisional SSI** ไม่มี SIRS ไม่มี cellulitis ลุกลาม การรักษาหลักคือ **source control ที่ระดับแผล**: เปิดแผลส่วนที่มีหนอง ระบาย ล้าง และ packing ให้หายแบบ secondary intention ยาปฏิชีวนะไม่ช่วยเพิ่มเมื่อระบายหนองได้ดี\n- **Amoxicillin-clavulanate แล้วไม่เปิดแผล**: ยาเข้าโพรงหนองได้น้อย ไม่แก้ปัญหาที่ต้องระบาย\n- **CT ก่อน**: ไม่จำเป็นเมื่อลักษณะเป็น incisional ชัดและท้องนุ่ม ทำ CT เมื่อสงสัย organ/space SSI (ไข้สูง ท้องอืด ileus ไม่ดีขึ้นหลังเปิดแผล)\n- **Exploratory laparotomy**: ไม่มีหลักฐาน peritonitis\n- **IV broad-spectrum**: เกินจำเป็น เพิ่มเชื้อดื้อยา; ให้ยาเฉพาะมี cellulitis ลุกลามหรือ systemic signs",
+     "pearl": "SSI ชั้นตื้น = ระบายหนองคือการรักษา ยาปฏิชีวนะเป็นตัวเสริมเมื่อมี cellulitis/SIRS",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-05-2",
+   "title": "Complicated intra-abdominal infection, source control และ STOP-IT",
+   "summary": "แยก peritonitis แต่ละแบบ ทำ source control เมื่อไรและอย่างไร เลือกยาตามแหล่งที่มา และควรให้ยานานแค่ไหนตามหลักฐาน STOP-IT",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Intra-abdominal infections; Source control",
+   "md": "### แบ่งประเภท peritonitis ให้ถูกก่อนเลือกการรักษา\n\n| ประเภท | กลไก | เชื้อ | การรักษาหลัก |\n|---|---|---|---|\n| **Primary** (SBP, PD peritonitis) | เชื้อเข้าทางเลือด/ascites/สาย PD | monomicrobial: E coli, Klebsiella, S pneumoniae · PD = gram-positive | ยาปฏิชีวนะ · ascitic PMN >250/mm3 · ถอดสาย PD ถ้าเป็นซ้ำ |\n| **Secondary** | อวัยวะทะลุ/อักเสบรุนแรง/anastomotic leak | polymicrobial aerobe + anaerobe | **source control** + ยา |\n| **Tertiary** (persistent) | รักษา secondary แล้วไม่หาย ภูมิคุ้มกันต่ำ | Enterococcus, Candida, S epidermidis, Pseudomonas | ยากที่สุด mortality >50% |\n\nนอกจากนี้ต้องแยก **uncomplicated** (จำกัดในอวัยวะ เช่น appendicitis ไม่แตก) กับ **complicated IAI (cIAI)** ที่ลามเข้าช่องท้อง และแยก **community-acquired** กับ **healthcare-associated** (หลังผ่าตัด, อยู่ รพ. ≥48 ชม., ได้ยาปฏิชีวนะมาก่อน) เพราะกำหนดสเปกตรัมยา\n\n### Source control: หัวใจของการรักษา\nSource control = **drainage** (ระบายหนอง), **debridement** (ตัดเนื้อตาย), **device removal** และ **restoration of anatomy/function** (ปิดรูรั่ว ตัดต่อหรือเอาลำไส้ออกเป็น stoma) ควรทำเร็วที่สุด — Surviving Sepsis Campaign 2021 แนะนำภายใน **6–12 ชั่วโมง** หลังวินิจฉัย ในผู้ป่วย septic shock ให้ resuscitate คู่ขนานไปกับการเตรียมผ่าตัด\n- Source control ได้ผลดี + ยาเหมาะสม → mortality ~5–6% · คุม source ไม่ได้ → **mortality >40%** (Schwartz)\n- **Abscess เดี่ยว** → CT-guided **percutaneous drainage** เป็นมาตรฐาน · ผ่าตัดเมื่อมี abscess หลายตำแหน่ง อยู่ใกล้โครงสร้างสำคัญ หรือมีการรั่วต่อเนื่อง (enteric leak)\n- ถอดสายระบายเมื่อ cavity ยุบ, output **<10–20 mL/วัน**, ไม่มี source ต่อเนื่อง และอาการดีขึ้น\n- ผู้ป่วยวิกฤต: **damage control laparotomy** (ตัดส่วนเน่า ปล่อยลำไส้ไม่ต่อ, temporary abdominal closure) แล้วกลับมาต่อเมื่อ physiology ดี\n\n### Relaparotomy: on-demand ดีกว่า planned\nRCT **RELAP** (van Ruler, JAMA 2007) ในผู้ป่วย severe secondary peritonitis: **on-demand relaparotomy** (ผ่าซ้ำเมื่ออาการแย่ลงหรือ CT พบปัญหา) ไม่ด้อยกว่า planned relaparotomy ทุก 36–48 ชม. ด้าน death/major morbidity แต่ลดจำนวนการผ่าตัดซ้ำ วัน ICU และค่าใช้จ่าย ข้อยกเว้นคือ planned second look ที่ตั้งใจไว้ เช่น mesenteric ischemia หรือ NSTI\nถ้าได้ยาครบ 5–7 วันแล้วอาการไม่ดีขึ้น ให้หา **source control ที่ไม่สมบูรณ์** หรือแหล่งติดเชื้อใหม่นอกช่องท้อง (CLABSI, pneumonia, C difficile) ก่อนจะเปลี่ยน/เพิ่มยา\n\n### เลือกยาตาม community vs healthcare-associated\n\n| สถานการณ์ | ตัวอย่าง regimen |\n|---|---|\n| Community-acquired ความรุนแรงต่ำ-ปานกลาง | ceftriaxone หรือ cefuroxime + **metronidazole** · ertapenem |\n| Community-acquired รุนแรง/เสี่ยงสูง (APACHE II สูง, ภูมิต่ำ) | piperacillin-tazobactam · meropenem · cefepime + metronidazole |\n| **Healthcare-associated / postoperative** | ครอบคลุม Pseudomonas, **Enterococcus** (pip-tazo/ampicillin/vancomycin), ESBL (carbapenem) ตาม antibiogram · MRSA ถ้าเป็น carrier |\n| Candida | ให้ antifungal เมื่อเป็น HA infection และเพาะเชื้อพบ Candida หรือ upper GI perforation ซ้ำ/ภูมิต่ำ — ไม่ให้ routine ใน community-acquired |\n\nใน secondary peritonitis การเพาะเชื้อมีบทบาทน้อยกว่าใน HA infection เพราะเชื้อที่ปนเปื้อนแรกมีจำนวนมาก **อย่าเปลี่ยนยาตามผลเพาะเชื้ออย่างเดียว** ถ้าคนไข้ดีขึ้น\n\n### Duration: สั้นลงเรื่อย ๆ และ STOP-IT\n\n| สถานการณ์ (SIS 2017 / Schwartz) | ระยะเวลายา |\n|---|---|\n| Traumatic bowel perforation ผ่าตัดภายใน 12 ชม. | **≤24 ชม.** |\n| Gastroduodenal perforation ผ่าตัดภายใน 24 ชม. | ≤24 ชม. |\n| Ischemic bowel ไม่ทะลุ · gangrenous appendicitis/cholecystitis ไม่ทะลุ | ≤24 ชม. |\n| Established cIAI (เช่น perforated appendicitis) ที่ source control ได้ | **~4 วัน** |\n| Abscess ที่ระบายได้ดี | 3–5 วัน |\n\n**STOP-IT** (Sawyer, NEJM 2015): ผู้ป่วย cIAI 518 รายที่ได้ **adequate source control** สุ่มให้ยา **fixed 4 ± 1 วัน** เทียบกับให้จนหายจาก SIRS ครบ 2 วัน (สูงสุด 10 วัน) → composite ของ SSI, recurrent IAI และตาย **ไม่ต่างกัน (21.8% vs 22.3%)** ขณะที่ระยะเวลายาลดจาก ~8 เหลือ ~4 วัน\n> ผู้ที่ไม่มีไข้ (<38 C), WBC ปกติ และไม่มี band form เกือบมั่นใจได้ว่าหายจากการติดเชื้อ หยุดยาได้ · procalcitonin ช่วยตัดสินใจหยุดยาเร็วขึ้น\n",
+   "pearls": [
+    "Source control ช้า = ตายเพิ่ม · คุม source ไม่ได้ mortality >40%",
+    "STOP-IT: cIAI ที่ source control ได้ ให้ยา ~4 วันพอ (ไม่ต้องรอ WBC/ไข้หายนาน)",
+    "≤24 ชม.: trauma perforation ผ่าใน 12 ชม., gastroduodenal perf ผ่าใน 24 ชม., gangrenous appendix/GB ไม่แตก",
+    "Abscess เดี่ยว → percutaneous drainage · ถอดสายเมื่อ output <10–20 mL/วัน",
+    "RELAP: on-demand relaparotomy ไม่ด้อยกว่า planned และผ่าซ้ำน้อยกว่า",
+    "ไม่ดีขึ้นหลังยา 5–7 วัน → หา source ที่ยังไม่ถูกคุม ไม่ใช่เพิ่มยา",
+    "Tertiary peritonitis: Enterococcus, Candida, S epidermidis, Pseudomonas · mortality >50%"
+   ],
+   "items": [
+    {
+     "id": "RES-05-2-1",
+     "kind": "mcq",
+     "topic": "STOP-IT antibiotic duration",
+     "stem": "A 63-year-old man underwent Hartmann procedure for purulent peritonitis from perforated sigmoid diverticulitis. He is on piperacillin-tazobactam started preoperatively. On postoperative day 3 he is afebrile for 24 hours, tolerating clear liquids, with WBC 11,900/mm3 (from 21,000). Based on the best randomized evidence, how long should antibiotic therapy last?",
+     "choices": [
+      "A fixed course of about 4 days after source control",
+      "Until he has been afebrile with a normal WBC for 48 hours, up to 10 days",
+      "A fixed 7-to-10-day course",
+      "14 days, because of fecal contamination",
+      "Until the pelvic drain is removed"
+     ],
+     "answer": 0,
+     "explain": "**STOP-IT** สุ่มผู้ป่วย cIAI ที่ได้ adequate source control ให้ยา **fixed ~4 วัน** เทียบกับให้จนหายจาก SIRS (สูงสุด 10 วัน) — ผลลัพธ์รวม (SSI, recurrent IAI, ตาย) ไม่ต่างกัน แต่ใช้ยาน้อยกว่าครึ่ง ผู้ป่วยรายนี้ source control สมบูรณ์ (ตัดลำไส้ส่วนทะลุออก) และกำลังดีขึ้น จึงหยุดยาที่ราววันที่ 4\n- **จนไข้/WBC ปกติ 48 ชม.**: คือแขน control ของ STOP-IT ซึ่งไม่ได้ดีกว่า\n- **7–10 วัน / 14 วัน**: ไม่มีประโยชน์เพิ่ม เพิ่ม C difficile และเชื้อดื้อยา; ระดับการปนเปื้อนไม่ได้เปลี่ยนข้อสรุปเมื่อ source control ได้\n- **จนถอด drain**: การมี drain ไม่ใช่ข้อบ่งชี้ให้ยาต่อ",
+     "pearl": "cIAI + source control สมบูรณ์ → ยา ~4 วัน (STOP-IT)",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "Sawyer RG et al. Trial of short-course antimicrobial therapy for intraabdominal infection (STOP-IT). N Engl J Med 2015",
+      "Surgical Infection Society revised guidelines on the management of intra-abdominal infection (2017)"
+     ]
+    },
+    {
+     "id": "RES-05-2-2",
+     "kind": "mcq",
+     "topic": "Postoperative abscess management",
+     "stem": "A 27-year-old woman has persistent spiking fevers on postoperative day 7 after laparoscopic appendectomy for perforated appendicitis. She is hemodynamically stable and tolerating diet. CT shows a single 6-cm rim-enhancing pelvic fluid collection with a safe window from the anterior abdominal wall; no free air and no other collections. Which is the best next step?",
+     "choices": [
+      "CT-guided percutaneous drainage with a short course of antibiotics",
+      "Laparoscopic washout and drain placement",
+      "Exploratory laparotomy with ileocecectomy",
+      "Extend IV antibiotics to 14 days without drainage",
+      "Add empiric fluconazole to current antibiotics"
+     ],
+     "answer": 0,
+     "explain": "**Abscess เดี่ยวที่เข้าถึงได้ทางผิวหนัง** รักษาด้วย **percutaneous drainage** ภายใต้ CT/US เป็นมาตรฐาน ได้ทั้ง source control และ culture ร่วมกับยาที่ครอบคลุม aerobe/anaerobe ระยะสั้น (3–5 วันหลังระบายได้ดี) และถอดสายเมื่อ cavity ยุบ output <10–20 mL/วัน\n- **Laparoscopic washout**: สงวนไว้เมื่อ percutaneous ไม่ได้ผลหรือไม่มี window ที่ปลอดภัย\n- **Laparotomy/ileocecectomy**: เกินจำเป็น ผ่าตัดเมื่อมี abscess หลายตำแหน่ง มี leak ต่อเนื่อง หรือ peritonitis ทั่วท้อง\n- **ยาอย่างเดียว 14 วัน**: abscess ขนาด >3–4 cm มักไม่หายด้วยยาอย่างเดียว\n- **Fluconazole**: Candida ไม่ใช่เชื้อหลักใน community-acquired appendiceal abscess",
+     "pearl": "Abscess เดี่ยว เข้าถึงได้ → percutaneous drainage ก่อนผ่าตัดเสมอ",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "RES-05-2-3",
+     "kind": "mcq",
+     "topic": "Enterococcus in healthcare-associated IAI",
+     "stem": "A 71-year-old man in the ICU on postoperative day 9 after pancreaticoduodenectomy has been treated with ceftriaxone and metronidazole for 6 days for a peripancreatic collection, but remains febrile. A percutaneous drain is placed; Gram stain shows gram-positive cocci in pairs and chains, and the isolate is intrinsically resistant to all cephalosporins. Which organism is most likely?",
+     "choices": [
+      "Enterococcus faecalis",
+      "Streptococcus anginosus",
+      "Methicillin-sensitive Staphylococcus aureus",
+      "Peptostreptococcus species",
+      "Streptococcus pneumoniae"
+     ],
+     "answer": 0,
+     "explain": "**Enterococcus** เป็นเชื้อเด่นใน **healthcare-associated/postoperative IAI** และ tertiary peritonitis โดยเฉพาะในผู้ที่ได้ cephalosporin มาก่อน เพราะดื้อ cephalosporin โดยธรรมชาติ (PBP ที่จับยาได้ไม่ดี) จึงถูก \"select\" ขึ้นมา ต้องใช้ ampicillin, piperacillin-tazobactam หรือ vancomycin (ถ้าเป็น E faecium/VRE ใช้ linezolid หรือ daptomycin)\n- **S anginosus (milleri group)**: พบบ่อยใน abscess แต่ไวต่อ ceftriaxone\n- **MSSA**: เป็น cluster ไม่ใช่ chain และไวต่อ cefazolin\n- **Peptostreptococcus**: anaerobic GPC ส่วนใหญ่ไวต่อ beta-lactam และ metronidazole ครอบคลุมได้บางส่วน\n- **S pneumoniae**: สาเหตุ primary peritonitis ไม่ใช่ postoperative collection และไวต่อ ceftriaxone",
+     "pearl": "HA/postop IAI ที่ได้ cephalosporin มา → คิดถึง Enterococcus (ดื้อ cephalosporin โดยกำเนิด)",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "RES-05-2-4",
+     "kind": "mcq",
+     "topic": "On-demand vs planned relaparotomy",
+     "stem": "A 66-year-old woman undergoes emergency laparotomy for feculent peritonitis from a perforated sigmoid cancer; a Hartmann procedure with thorough lavage is performed and the fascia is closed. She is transferred to the ICU on norepinephrine, which is weaning. Which postoperative strategy regarding further laparotomy is supported by randomized evidence?",
+     "choices": [
+      "Relaparotomy on demand, triggered by clinical deterioration or imaging findings",
+      "Planned relaparotomy every 36 to 48 hours until the peritoneum is clean",
+      "Routine open abdomen with negative-pressure dressing for 5 days",
+      "Mandatory CT of the abdomen at 48 hours with relaparotomy if any fluid is seen",
+      "Continuous postoperative peritoneal lavage through indwelling drains"
+     ],
+     "answer": 0,
+     "explain": "RCT **RELAP** (van Ruler 2007) แสดงว่า **on-demand relaparotomy** ไม่ด้อยกว่า planned relaparotomy ด้านการตาย/ภาวะแทรกซ้อนรุนแรง แต่ลดจำนวนการผ่าตัดซ้ำ ลดการใช้ทรัพยากร จึงเป็นแนวทางมาตรฐานเมื่อ source control ครั้งแรกสมบูรณ์\n- **Planned relaparotomy ทุก 36–48 ชม.**: แขนเปรียบเทียบของ RELAP ไม่ได้ดีกว่า และเพิ่มการผ่าตัดที่ไม่จำเป็น (ยกเว้น second look แบบ mesenteric ischemia/NSTI)\n- **Open abdomen routine**: ใช้เมื่อปิดท้องไม่ได้/abdominal compartment syndrome/damage control ไม่ใช่ทุกราย\n- **CT ที่ 48 ชม. แล้วผ่าถ้าเห็นน้ำ**: น้ำในช่องท้องหลังผ่าตัดพบได้ปกติ ต้องตีความร่วมกับคลินิก\n- **Continuous peritoneal lavage**: ไม่มีหลักฐานว่าดีขึ้น",
+     "pearl": "Secondary peritonitis: relaparotomy on demand (RELAP) ไม่ใช่ planned",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "van Ruler O et al. Comparison of on-demand vs planned relaparotomy strategy in patients with severe peritonitis (RELAP). JAMA 2007"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-05-3",
+   "title": "Necrotizing soft tissue infection: LRINEC และ debridement",
+   "summary": "จับ NSTI ให้ได้เร็วจากอาการ ใช้ LRINEC อย่างถูกที่ และวางแผนยา–ผ่าตัด–re-look ที่ลดการตาย",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Infections of the skin and soft tissue",
+   "md": "### แบ่ง NSTI ตามเชื้อและชั้นเนื้อเยื่อ\nชื่อเรียกเก่า (Meleney gangrene, Fournier gangrene, gas gangrene, necrotizing fasciitis) ปัจจุบันรวมเป็น **necrotizing soft tissue infection (NSTI)** แล้วระบุชั้นที่ติดเชื้อ (ผิวหนัง/subcutaneous, fascia, กล้ามเนื้อ) และเชื้อก่อโรค ตำแหน่งที่พบบ่อยเรียงลำดับคือ **แขนขา > perineum > ลำตัว**\n\n| Type | เชื้อ | กลุ่มผู้ป่วยแบบฉบับ |\n|---|---|---|\n| **I polymicrobial** (~50% ขึ้นไป) | aerobe + anaerobe คล้าย secondary peritonitis | เบาหวาน, PAD, อ้วน, perineum (**Fournier**) |\n| **II monomicrobial** | **Group A Streptococcus** ± S aureus (รวม CA-MRSA) | คนหนุ่มสาวแข็งแรง, แผลเล็ก, มัก toxic shock |\n| **III clostridial myonecrosis** | **C perfringens** (บาดแผลสกปรก) · **C septicum** (เกิดเอง ไม่มีแผล) | C septicum สัมพันธ์กับ **colon cancer**/neutropenia |\n| น้ำเค็ม/น้ำจืด | **Vibrio vulnificus** · Aeromonas hydrophila | **cirrhosis**/กินอาหารทะเลดิบ · บาดแผลในน้ำจืด |\n\n> บริบทไทย: ผู้ป่วยตับแข็ง/ดื่มสุราที่กินหอยดิบหรือมีแผลโดนน้ำทะเลแล้วขาบวมมี hemorrhagic bullae และช็อกภายในวันเดียว ให้คิด **V vulnificus** ทันที\n\n### อาการที่ต้องจับให้ได้ก่อนผิวหนังเปลี่ยน\nอาการแรกมักเหมือน cellulitis แต่ **ปวดมากเกินกว่าที่เห็น (pain out of proportion)** ซึ่งเป็น clue สำคัญที่สุด อาการอื่น: บวมตึงเลยขอบแดง (**edema beyond erythema**), ผิวสีบรอนซ์/เทาคล้ำ, **bullae** (โดยเฉพาะ hemorrhagic), **crepitus**, ผิวหนังชา (เส้นประสาทตาย), และ sepsis/ช็อกโดยไม่มีแหล่งชัด เมื่อเปิดแผลพบ **\"dishwater\" fluid** สีเทาขุ่น fascia ซีด ยุ่ย แยกออกจากกล้ามเนื้อได้ด้วยนิ้ว (**positive finger test**) และไม่มีเลือดออก\n- Gas บน X-ray/CT จำเพาะแต่ไม่ไว (ไม่มีแก๊สไม่ได้ตัดโรคทิ้ง)\n- Schwartz เน้น: **ถ้าสงสัยจริงจัง ไม่ควรรอภาพถ่ายรังสี** เพราะทำให้ช้าและได้ข้อมูลกำกวม — ใช้ CT เฉพาะผู้ป่วย stable ที่ยังลังเล\n\n### LRINEC: ช่วยคิด ไม่ใช่ตัวตัดสิน\n**LRINEC** (Wong 2004) ใช้ lab พื้นฐาน 6 ตัว คะแนน 0–13 ไม่ได้อยู่ใน Schwartz แต่ถูกถามบ่อย\n\n| ตัวแปร | เกณฑ์ → คะแนน |\n|---|---|\n| CRP | **≥150 mg/L → 4** |\n| WBC (x10^3/mm3) | 15–25 → 1 · >25 → 2 |\n| Hemoglobin (g/dL) | 11–13.5 → 1 · <11 → 2 |\n| Sodium | <135 mmol/L → 2 |\n| Creatinine | >1.6 mg/dL (141 µmol/L) → 2 |\n| Glucose | >180 mg/dL (10 mmol/L) → 1 |\n\nแปลผล: **≥6 สงสัย**, **≥8 ความเสี่ยงสูง** แต่การศึกษา validation ภายหลังพบ sensitivity ต่ำ — **คะแนนต่ำไม่ตัด NSTI** ถ้าคลินิกเข้าได้ต้องผ่าสำรวจ (surgical exploration เป็นทั้ง diagnosis และ treatment)\n\n### การรักษา: เร็ว กว้าง และกลับมาดูซ้ำ\n1. **Resuscitation** ตาม sepsis bundle, เจาะ blood culture, ไม่รอผลใด ๆ\n2. **Empiric antibiotics กว้าง**: anti-MRSA (vancomycin หรือ linezolid) + piperacillin-tazobactam หรือ carbapenem + **clindamycin** (ยับยั้งการสร้าง toxin ของ GAS/Clostridium และไม่ขึ้นกับ inoculum size) · Schwartz ใช้ vancomycin + carbapenem + **high-dose penicillin G 16–20 ล้านยูนิต/วัน** สำหรับ clostridia · Vibrio: doxycycline + ceftazidime/ceftriaxone\n3. **Radical debridement ทันที**: ตัดเนื้อตายทุกชั้นจนถึงเนื้อที่ดีและมีเลือดออก ส่ง Gram stain/culture จากเนื้อเยื่อ บางครั้งต้อง **amputation** — debridement ไม่ครบสัมพันธ์กับ morbidity/mortality สูงขึ้น\n4. **Planned re-look ภายใน 24 ชม.** และทำซ้ำจนไม่มีเนื้อตายใหม่ (มักต้อง 3–4 ครั้ง)\n5. Fournier: debride กว้าง อัณฑะมักรักษาไว้ได้ (เลือดมาจาก testicular artery) พิจารณา **diverting colostomy** เมื่อแผลถูกอุจจาระปนเปื้อนมากหรือมี anal sphincter เสีย; ใส่สายสวนปัสสาวะ\n6. **HBO**: หลักฐานจำกัด อาจช่วยใน clostridial infection ห้ามทำให้ debridement ช้า · IVIG: พิจารณาใน streptococcal toxic shock (หลักฐานไม่แน่น)\n\n### ผลลัพธ์และการดูแลต่อ\nMortality ถ้าวินิจฉัยช้า/ไม่ได้รักษาสูงถึง ~80–100% แม้รักษาเร็วยังอยู่ราว **16–24%** (Schwartz) ปัจจัยที่แก้ไขได้ที่สำคัญที่สุดคือ **เวลาจนถึง debridement ครั้งแรก** หลังพ้นวิกฤตแผลกว้างต้องใช้ NPWT, skin graft/flap และฟื้นฟูการทำงาน ในบริบท รพช. ถ้าสงสัย NSTI: เปิดแผลสำรวจและ debride เบื้องต้นได้เลยถ้าทำได้ ให้ยาครอบคลุม แล้วส่งต่อ รพท./รพศ. ที่มี ICU และศัลยแพทย์ ไม่ควรรอส่งต่อทั้งที่ยังไม่ได้ทำ source control ถ้าการเดินทางนาน\n",
+   "pearls": [
+    "Pain out of proportion + edema เลยขอบแดง + bullae/crepitus = NSTI จนกว่าจะพิสูจน์ว่าไม่ใช่",
+    "สงสัยจริงจัง → ผ่าสำรวจเลย อย่ารอ CT/MRI",
+    "LRINEC ≥6 สงสัย ≥8 เสี่ยงสูง แต่คะแนนต่ำไม่ตัดโรค",
+    "Clindamycin ใส่เพื่อหยุด toxin (ยับยั้ง protein synthesis) ใน GAS/Clostridium",
+    "Re-look ภายใน 24 ชม. ทุกราย ทำซ้ำจนไม่มีเนื้อตายใหม่",
+    "C septicum myonecrosis ที่ไม่มีแผล → หา colon cancer",
+    "ตับแข็ง + หอยดิบ/น้ำทะเล + hemorrhagic bullae = Vibrio vulnificus"
+   ],
+   "items": [
+    {
+     "id": "RES-05-3-1",
+     "kind": "mcq",
+     "topic": "NSTI — next step",
+     "stem": "A 54-year-old man with poorly controlled diabetes presents 36 hours after a minor abrasion to the left calf with severe pain, tense edema extending beyond a dusky erythematous area, and several hemorrhagic bullae. BP 88/52 mmHg, HR 124/min. Labs: CRP 210 mg/L, WBC 23,000/mm3, Na 131 mmol/L, creatinine 1.9 mg/dL, glucose 290 mg/dL. Fluids and broad-spectrum antibiotics are started. What is the most appropriate next step?",
+     "choices": [
+      "Emergency operative exploration and radical debridement",
+      "MRI of the leg to confirm fascial involvement before surgery",
+      "Continue IV antibiotics and reassess in 24 hours",
+      "Hyperbaric oxygen therapy before any operation",
+      "Bedside punch biopsy for frozen section"
+     ],
+     "answer": 0,
+     "explain": "ภาพนี้เป็น NSTI ชัดเจน: ปวดมาก บวมเลยขอบแดง hemorrhagic bullae และ septic shock; LRINEC = CRP 4 + WBC 1 + Na 2 + Cr 2 + glucose 1 = **10 (เสี่ยงสูง)** การรักษาที่ลดการตายคือ **ผ่าตัด debridement ทันที** ร่วมกับ resuscitation และยาปฏิชีวนะ การผ่าตัดยังให้การวินิจฉัยด้วย (finger test, dishwater fluid, fascia ตาย)\n- **MRI ก่อน**: ทำให้ช้าและอาจกำกวม Schwartz ระบุว่าไม่ควรส่งภาพเมื่อสงสัยจริงจัง\n- **ยาอย่างเดียวแล้วรอ 24 ชม.**: ยาเข้าเนื้อตายไม่ได้ ทุกชั่วโมงที่ช้าเพิ่มการตาย\n- **HBO ก่อนผ่าตัด**: หลักฐานจำกัด และห้ามทำให้ source control ช้า\n- **Punch biopsy/frozen section**: เคยใช้ในอดีตแต่ช้าและไม่จำเป็นเมื่อคลินิกชัด",
+     "pearl": "NSTI = surgical emergency · debridement ก่อน ภาพถ่ายรังสีไม่ต้องรอ",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "Wong CH et al. The LRINEC score. Crit Care Med 2004"
+     ]
+    },
+    {
+     "id": "RES-05-3-2",
+     "kind": "mcq",
+     "topic": "Clindamycin in streptococcal NSTI",
+     "stem": "A 32-year-old previously healthy woman undergoes extensive debridement of necrotizing fasciitis of the thigh with streptococcal toxic shock. She is on vancomycin and piperacillin-tazobactam. Tissue Gram stain shows gram-positive cocci in chains, later identified as Streptococcus pyogenes. Which agent should be added, chiefly to suppress toxin production?",
+     "choices": [
+      "Clindamycin",
+      "Metronidazole",
+      "Gentamicin",
+      "Ciprofloxacin",
+      "Fluconazole"
+     ],
+     "answer": 0,
+     "explain": "**Clindamycin** ยับยั้ง protein synthesis ที่ 50S ribosome จึงหยุดการสร้าง **exotoxin/superantigen** และ M protein ของ GAS ได้ และไม่ได้รับผลจาก **Eagle effect** (beta-lactam ทำงานลดลงเมื่อเชื้อจำนวนมากอยู่ใน stationary phase เพราะ PBP แสดงออกน้อย) แนวทาง IDSA ให้ **penicillin + clindamycin** เมื่อยืนยัน GAS NSTI\n- **Metronidazole**: ครอบคลุม anaerobe ไม่มีฤทธิ์ต่อ streptococci\n- **Gentamicin**: ไม่มีบทบาทต่อ GAS และไม่ลด toxin\n- **Ciprofloxacin**: ครอบคลุม GAS ไม่ดีและไม่ใช่ยามาตรฐาน\n- **Fluconazole**: ไม่เกี่ยวกับเชื้อก่อโรคนี้",
+     "pearl": "GAS/clostridial NSTI: เพิ่ม clindamycin เพื่อตัด toxin",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "IDSA Practice guidelines for the diagnosis and management of skin and soft tissue infections (2014)"
+     ]
+    },
+    {
+     "id": "RES-05-3-3",
+     "kind": "mcq",
+     "topic": "Vibrio vulnificus NSTI",
+     "stem": "A 58-year-old Thai fisherman with alcoholic cirrhosis develops fever and rapidly spreading painful swelling of the right leg with hemorrhagic bullae 18 hours after eating raw shellfish. He has a small fish-fin puncture on the ankle. BP 82/50 mmHg. Which organism is most likely responsible?",
+     "choices": [
+      "Vibrio vulnificus",
+      "Aeromonas hydrophila",
+      "Clostridium perfringens",
+      "Pasteurella multocida",
+      "Burkholderia pseudomallei"
+     ],
+     "answer": 0,
+     "explain": "**V vulnificus** เป็น gram-negative halophilic rod ในน้ำทะเลอุ่นและหอย/อาหารทะเลดิบ ผู้ป่วย **ตับแข็ง/iron overload** เสี่ยงสูงมาก เพราะเชื้อใช้ธาตุเหล็กเจริญเติบโต ลักษณะเด่นคือ sepsis เร็วมาก + **hemorrhagic bullae** และ NSTI mortality สูง รักษาด้วย debridement + **doxycycline ร่วมกับ third-generation cephalosporin**\n- **Aeromonas**: บาดแผลในน้ำจืด (ไม่ใช่น้ำทะเล/หอย)\n- **C perfringens**: บาดแผลสกปรก/บดอัด มี crepitus เด่น ไม่สัมพันธ์กับตับแข็ง+อาหารทะเล\n- **Pasteurella**: แผลสัตว์กัด (แมว/สุนัข) เป็น cellulitis เร็วแต่ไม่ใช่ภาพนี้\n- **B pseudomallei (melioidosis)**: พบบ่อยในอีสาน (ดิน/น้ำนา) ทำให้ abscess หลายตำแหน่ง ไม่ใช่ hemorrhagic bullae หลังกินหอย",
+     "pearl": "Cirrhosis + อาหารทะเลดิบ/น้ำทะเล + hemorrhagic bullae → Vibrio vulnificus",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "RES-05-3-4",
+     "kind": "mcq",
+     "topic": "Clostridium septicum and occult malignancy",
+     "stem": "A 67-year-old man without any history of trauma develops spontaneous, rapidly progressive myonecrosis of the left thigh with gas in the muscle on radiograph. He survives after emergent debridement and penicillin plus clindamycin. Blood cultures grow Clostridium septicum. Before discharge, which investigation is most important?",
+     "choices": [
+      "Colonoscopy",
+      "Transesophageal echocardiography",
+      "Bone marrow biopsy",
+      "Upper GI endoscopy",
+      "Venous duplex of the lower limbs"
+     ],
+     "answer": 0,
+     "explain": "**C septicum** ทำให้ spontaneous (atraumatic) gas gangrene โดยเชื้อเข้ากระแสเลือดผ่านเยื่อบุลำไส้ใหญ่ที่เสียหาย — พบร่วมกับ **colorectal cancer (มักที่ cecum)** และ neutropenic enterocolitis ในสัดส่วนสูง จึงต้องทำ **colonoscopy** ในผู้รอดชีวิตทุกราย\n- **TEE**: นึกถึงเมื่อ S aureus/streptococcal bacteremia ไม่ใช่ C septicum\n- **Bone marrow biopsy**: พิจารณาเฉพาะเมื่อมีลักษณะ hematologic malignancy (เช่น neutropenia ไม่ทราบสาเหตุ)\n- **Upper GI endoscopy**: ความสัมพันธ์หลักอยู่ที่ลำไส้ใหญ่ ไม่ใช่กระเพาะ\n- **Venous duplex**: ไม่ช่วยหาสาเหตุของ bacteremia นี้",
+     "pearl": "C septicum bacteremia/gas gangrene ที่ไม่มีแผล → colonoscopy หา colon cancer",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    }
+   ],
+   "mnem": [
+    {
+     "name": "LRINEC",
+     "what": "จำ 6 lab ของ LRINEC (คะแนนเต็ม 13)",
+     "lines": [
+      [
+       "C",
+       "CRP ≥150 mg/L = 4 (ตัวหนักสุด)"
+      ],
+      [
+       "W",
+       "WBC 15–25 = 1, >25 = 2"
+      ],
+      [
+       "H",
+       "Hb 11–13.5 = 1, <11 = 2"
+      ],
+      [
+       "S",
+       "Sodium <135 = 2"
+      ],
+      [
+       "C",
+       "Creatinine >1.6 mg/dL = 2"
+      ],
+      [
+       "G",
+       "Glucose >180 mg/dL = 1"
+      ]
+     ],
+     "note": "≥6 สงสัย · ≥8 เสี่ยงสูง · คะแนนต่ำไม่ตัดโรค"
+    }
+   ]
+  },
+  {
+   "id": "res-05-4",
+   "title": "Stewardship, C difficile, fungal และ device infections",
+   "summary": "ใช้ยาปฏิชีวนะอย่างรับผิดชอบ รักษาและผ่าตัด C difficile ตามแนวทางปัจจุบัน จัดการ candidemia และตัดสินใจถอด/เก็บอุปกรณ์ที่ติดเชื้อ",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Antimicrobials; Nosocomial infections · Ch 29 — C difficile colitis",
+   "md": "### Antimicrobial stewardship สำหรับศัลยแพทย์\nหลักจาก Schwartz: (1) หาแหล่งติดเชื้อที่น่าจะเป็น (2) เลือกยาที่ครอบคลุมเชื้อของแหล่งนั้น (3) เริ่มเร็วและกว้างในผู้ป่วยหนัก — ช้าหรือไม่ครอบคลุมเพิ่มการตาย (4) เพาะเชื้อก่อนให้ยาเมื่อทำได้แล้ว **de-escalate** (5) ถ้าไม่พบการติดเชื้อภายใน **3 วัน** ให้พิจารณาหยุดยา (6) **กำหนดระยะเวลายาตั้งแต่วันที่สั่ง**\n\n| การติดเชื้อ (monomicrobial) | ระยะเวลาโดยทั่วไป (Schwartz) |\n|---|---|\n| UTI | 3–5 วัน |\n| Pneumonia | 7–8 วัน |\n| Bacteremia | 7–14 วัน (S aureus อย่างน้อย 14 วัน) |\n| Osteomyelitis, endocarditis, prosthetic infection ที่เอาออกไม่ได้ | 6–12 สัปดาห์ |\n| Empiric therapy ที่ไม่ยืนยันการติดเชื้อ | ≤3–5 วันแล้วหยุด |\n\nการใช้ empiric ยาวในผู้ป่วยวิกฤตที่ culture-negative **เพิ่ม mortality** และการให้ยาตาม \"มี drain/tube\" ไม่มีประโยชน์ **Procalcitonin** ช่วยหยุดยาเร็วขึ้นโดยไม่เพิ่มความล้มเหลว\n**Penicillin allergy**: รายงานแพ้ 0.7–10% แต่ส่วนใหญ่ไม่ใช่ IgE จริง cross-reactivity กับ carbapenem ~1% และ monobactam แทบไม่มี (Schwartz ให้ cephalosporin 5–7% ซึ่งเป็นตัวเลขเก่า ข้อมูลใหม่ต่ำกว่านี้มาก) **cefazolin** มี side chain ต่างจาก penicillin จึงใช้ prophylaxis ได้ในผู้ที่ไม่มีประวัติ anaphylaxis/SJS — การหลบไปใช้ vancomycin/clindamycin เพิ่ม SSI\n\n### Clostridioides difficile: วินิจฉัยและรักษาตามแนวทางปัจจุบัน\nปัจจัยเสี่ยง: ยาปฏิชีวนะ (แม้ dose เดียว — clindamycin, FQ, cephalosporin), อายุมาก, อยู่ รพ./nursing home, PPI, ผ่าตัดลำไส้, ภูมิต่ำ เชื้อสร้าง **toxin A (enterotoxin)** และ **toxin B (cytotoxin)** ตรวจเฉพาะ **อุจจาระเหลว ≥3 ครั้ง/24 ชม.** ด้วย NAAT/GDH + toxin EIA\n\n| ความรุนแรง (IDSA/SHEA) | เกณฑ์ | การรักษาครั้งแรก |\n|---|---|---|\n| Non-severe | WBC ≤15,000 และ Cr <1.5 mg/dL | **fidaxomicin 200 mg bid 10 วัน** (preferred) หรือ vancomycin PO 125 mg qid 10 วัน |\n| Severe | **WBC ≥15,000 หรือ Cr >1.5 mg/dL** | เหมือนกัน (ไม่ใช้ metronidazole) |\n| **Fulminant** | hypotension/shock, ileus, megacolon | **vancomycin 500 mg qid PO/NG** + vancomycin ทางทวารถ้ามี ileus + **IV metronidazole 500 mg q8h** + ปรึกษาศัลยแพทย์ |\n\n> Schwartz Ch 29 ยังเขียน metronidazole เป็น first-line ซึ่งล้าสมัย — IDSA/SHEA 2021 ให้ fidaxomicin เป็นทางเลือกแรก (เกิดซ้ำน้อยกว่า) และ **IV vancomycin ไม่ได้ผล** เพราะไม่ขับออกสู่ลำไส้\n\n### ผ่าตัด C difficile: เมื่อไรและผ่าอะไร\nข้อบ่งชี้: **perforation**, peritonitis, **septic shock/ต้องใช้ vasopressor**, toxic megacolon, อวัยวะล้มเหลว หรือไม่ดีขึ้นใน 3–5 วันของการรักษาเต็มที่ สัญญาณว่าควรผ่าก่อนแย่ลง: **lactate ≥5 mmol/L** หรือ **WBC ≥50,000** (mortality สูงมากถ้ารอ)\n\n| ทางเลือก | สาระ |\n|---|---|\n| **Subtotal (total abdominal) colectomy + end ileostomy** | มาตรฐาน ตัดลำไส้ใหญ่ที่เป็นโรคทั้งหมด เหลือ rectal stump · segmental colectomy มีอัตราผ่าซ้ำ/ตายสูง ไม่ควรทำ |\n| **Diverting loop ileostomy + colonic lavage** | (Neal 2011) ล้างด้วย PEG ทาง ileostomy แล้ว antegrade vancomycin flush — เก็บลำไส้ใหญ่ไว้ เหมาะในผู้ที่ยังไม่มี perforation/necrosis ข้อมูลส่วนใหญ่เป็น cohort |\n\nเกิดซ้ำ: ครั้งแรกใช้ fidaxomicin หรือ vancomycin taper-pulse · เกิดซ้ำ ≥2 ครั้ง → **fecal microbiota transplantation**\n\n### Fungal infection ในผู้ป่วยศัลยกรรม\nปัจจัยเสี่ยง Candida: ยาปฏิชีวนะกว้างนาน, **CVC**, **TPN**, upper GI perforation/anastomotic leak ซ้ำ, ผ่าตัดช่องท้องหลายครั้ง, ไตวาย/dialysis, colonization หลายตำแหน่ง\n- **Candidemia** (IDSA 2016): เริ่ม **echinocandin** (caspofungin, micafungin, anidulafungin) · **ถอด CVC** ทุกเส้นที่ถอดได้ · **ตรวจจอตา** (endophthalmitis) · ให้ยาต่อ **14 วันหลัง blood culture ลบครั้งแรก** และอาการหาย · step-down เป็น fluconazole เมื่อเชื้อไวและคนไข้คงที่\n- **C krusei ดื้อ fluconazole โดยกำเนิด**, C glabrata ไวลดลง, **C auris** ดื้อหลายกลุ่มและแพร่ใน รพ.\n- Intra-abdominal candidiasis: รักษาเมื่อพบ Candida จาก peritoneal fluid ใน HA/postoperative IAI; ไม่ให้ prophylaxis ทั่วไปในผู้ป่วย community-acquired\n\n### Device infection: CLABSI, mesh และ graft\n**CLABSI prevention bundle**: hand hygiene, **maximal sterile barrier**, เตรียมผิวด้วย **chlorhexidine**, เลี่ยง femoral, ทบทวนความจำเป็นทุกวันและถอดเร็วที่สุด · chlorhexidine sponge/antibiotic-coated catheter ลด colonization · ห้ามให้ systemic antibiotic/antifungal เพื่อป้องกัน\n**ต้องถอดสาย** เมื่อ: หนอง/tunnel infection, severe sepsis โดยไม่มีแหล่งอื่น, เชื้อ **S aureus, Pseudomonas/gram-negative, Candida**, bacteremia ต่อเนื่องหลังยา 72 ชม. — salvage ด้วยยา 14–21 วัน ± antibiotic lock ได้ผล ~50–60% เฉพาะเชื้อ virulence ต่ำ (เช่น coagulase-negative staphylococci) เมื่อหาเส้นใหม่ไม่ได้\n**Mesh infection**: macroporous monofilament polypropylene มักเก็บไว้ได้ด้วย drainage/NPWT + ยา · **ePTFE/multifilament/microporous** มักต้องเอาออก\n**Vascular graft infection**: ส่วนใหญ่ต้องเอา graft ออกและ revascularize ทาง extra-anatomic หรือ in situ ด้วยวัสดุทนเชื้อ\n",
+   "pearls": [
+    "ไม่พบการติดเชื้อใน 3 วัน → หยุด empiric antibiotics",
+    "C diff non-severe/severe: fidaxomicin (preferred) หรือ vancomycin PO · metronidazole ไม่ใช่ first-line แล้ว",
+    "Fulminant C diff: vanc 500 mg PO qid + rectal vanc + IV metronidazole + ปรึกษาศัลย์",
+    "ผ่าตัด C diff: subtotal colectomy + end ileostomy · lactate ≥5 หรือ WBC ≥50,000 = อย่ารอ",
+    "Candidemia: echinocandin + ถอด CVC + ตรวจตา + ยา 14 วันหลัง culture ลบ",
+    "CLABSI จาก S aureus/gram-negative/Candida → ถอดสายเสมอ",
+    "Penicillin allergy ที่ไม่ใช่ anaphylaxis ยังใช้ cefazolin prophylaxis ได้"
+   ],
+   "items": [
+    {
+     "id": "RES-05-4-1",
+     "kind": "mcq",
+     "topic": "Fulminant C difficile colitis — surgery",
+     "stem": "A 76-year-old woman develops profuse diarrhea 5 days after hip fracture fixation with perioperative cefazolin. Despite oral vancomycin 500 mg four times daily, rectal vancomycin and IV metronidazole for 36 hours, she has a distended tender abdomen, BP 84/48 mmHg on norepinephrine, WBC 42,000/mm3 and lactate 5.4 mmol/L. CT shows pancolitis with a transverse colon of 8 cm, without free air. What is the most appropriate management?",
+     "choices": [
+      "Subtotal colectomy with end ileostomy",
+      "Add fidaxomicin and continue maximal medical therapy for 72 hours",
+      "Urgent fecal microbiota transplantation via colonoscopy",
+      "Left hemicolectomy with primary anastomosis",
+      "Colonoscopic decompression with rectal tube placement"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยเป็น **fulminant C difficile colitis** ที่ล้มเหลวต่อการรักษาเต็มที่: shock ต้องใช้ vasopressor, megacolon, **lactate ≥5** และ WBC สูงมาก — ข้อบ่งชี้ผ่าตัดทันที การผ่าตัดมาตรฐานคือ **subtotal (total abdominal) colectomy + end ileostomy** เพราะโรคเป็นทั้งลำไส้ใหญ่ การรอจน lactate สูงขึ้นอีกเพิ่มการตายมาก\n- **เพิ่ม fidaxomicin แล้วรอ 72 ชม.**: ไม่มีบทบาทใน fulminant ที่ช็อกแล้ว การรอเพิ่ม mortality\n- **FMT เร่งด่วน**: มีรายงานในบางศูนย์แต่ไม่ใช่มาตรฐานในผู้ป่วย shock/megacolon\n- **Left hemicolectomy**: segmental resection ทิ้งลำไส้ที่เป็นโรค อัตราผ่าซ้ำและตายสูง\n- **Colonoscopic decompression**: เสี่ยงทะลุใน colitis รุนแรง และไม่ใช่ source control",
+     "pearl": "Fulminant C diff + shock/lactate ≥5 → subtotal colectomy + end ileostomy ไม่ใช่ segmental",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "IDSA/SHEA Clinical practice guideline for Clostridioides difficile infection (2017, focused update 2021)",
+      "Schwartz's Principles of Surgery 11e, Ch 29"
+     ]
+    },
+    {
+     "id": "RES-05-4-2",
+     "kind": "mcq",
+     "topic": "First-episode C difficile treatment",
+     "stem": "A 49-year-old man develops 6 watery stools daily on postoperative day 4 after laparoscopic sigmoid colectomy. Stool NAAT and toxin EIA are positive. He is afebrile with WBC 11,200/mm3, creatinine 0.9 mg/dL, and a soft abdomen. Which is the preferred initial treatment according to current IDSA/SHEA guidance?",
+     "choices": [
+      "Oral fidaxomicin for 10 days",
+      "Oral metronidazole for 10 days",
+      "Intravenous vancomycin for 10 days",
+      "Oral rifaximin for 14 days",
+      "Loperamide with oral probiotics"
+     ],
+     "answer": 0,
+     "explain": "ตาม **IDSA/SHEA focused update 2021** ผู้ป่วย C difficile ครั้งแรก non-severe (WBC ≤15,000, Cr <1.5) ให้ **fidaxomicin 200 mg bid 10 วัน** เป็นทางเลือกแรก เพราะอัตราเกิดซ้ำต่ำกว่า vancomycin (ทางเลือกที่ยอมรับได้คือ vancomycin PO 125 mg qid 10 วัน) และหยุดยาปฏิชีวนะที่ไม่จำเป็น\n- **Metronidazole PO**: ใช้เฉพาะเมื่อไม่มีสองตัวแรกใน non-severe เท่านั้น (Schwartz ยังเขียนเป็น first-line ซึ่งล้าสมัย)\n- **IV vancomycin**: ไม่ขับเข้าลำไส้ จึงไม่ได้ผลต่อ C difficile\n- **Rifaximin**: ใช้เป็น \"chaser\" หลัง vancomycin ในบางกรณีเกิดซ้ำ ไม่ใช่ครั้งแรก\n- **Loperamide**: antimotility อาจเพิ่มความเสี่ยง toxic megacolon และ probiotics ไม่ใช่การรักษาหลัก",
+     "pearl": "C diff ครั้งแรก: fidaxomicin > vancomycin PO · IV vanc ใช้ไม่ได้",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "IDSA/SHEA Clinical practice guideline for Clostridioides difficile infection (focused update 2021)"
+     ]
+    },
+    {
+     "id": "RES-05-4-3",
+     "kind": "mcq",
+     "topic": "Candidemia in a surgical patient",
+     "stem": "A 64-year-old woman on postoperative day 12 after repair of a leaking gastrojejunostomy is receiving TPN through a tunneled central catheter and has had 10 days of broad-spectrum antibiotics. She develops fever and hypotension; two sets of blood cultures grow Candida glabrata. Which management is most appropriate?",
+     "choices": [
+      "Start an echinocandin, remove the central catheter and arrange a dilated eye examination",
+      "Start fluconazole and keep the catheter if the patient stabilizes",
+      "Exchange the catheter over a guidewire and continue current antibiotics",
+      "Treat with fluconazole for 5 days and repeat cultures only if fever recurs",
+      "Observe off antifungals, since Candida in blood is usually a contaminant"
+     ],
+     "answer": 0,
+     "explain": "**Candidemia** ไม่ถือว่าเป็น contaminant ในทุกกรณี แนวทาง IDSA 2016: เริ่ม **echinocandin** เป็นยาแรก (โดยเฉพาะ C glabrata ซึ่งไวต่อ fluconazole ลดลง และผู้ป่วยหนัก) **ถอด CVC** ที่เป็นแหล่ง (ร่วมกับ TPN เสี่ยงสูง) **ตรวจจอตาแบบขยายม่านตา** หา endophthalmitis ทำ blood culture ซ้ำจนลบ แล้วให้ยาต่อ 14 วันหลัง culture ลบครั้งแรก\n- **Fluconazole + เก็บสาย**: C glabrata มักดื้อ/ไวลดลง และการไม่ถอดสายเพิ่มการตายและ persistent candidemia\n- **Guidewire exchange**: สายใหม่จะ colonize จาก tract/fibrin sheath เดิม ไม่แนะนำใน candidemia\n- **Fluconazole 5 วัน**: สั้นเกินไปและยาไม่เหมาะ\n- **สังเกตอาการ**: candidemia ต้องรักษาทุกราย mortality สูง",
+     "pearl": "Candidemia: echinocandin + ถอด CVC + ตรวจตา + 14 วันหลัง culture ลบ",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "IDSA Clinical practice guideline for the management of candidiasis (2016)"
+     ]
+    },
+    {
+     "id": "RES-05-4-4",
+     "kind": "mcq",
+     "topic": "S aureus CLABSI",
+     "stem": "A 52-year-old man with short bowel syndrome receiving home parenteral nutrition through a tunneled subclavian catheter presents with fever and rigors. Blood cultures from the catheter and a peripheral vein both grow methicillin-sensitive Staphylococcus aureus within 12 hours. The exit site looks normal. Which management is most appropriate?",
+     "choices": [
+      "Remove the catheter, give IV anti-staphylococcal therapy for at least 14 days and obtain echocardiography",
+      "Keep the catheter and treat with antibiotic lock therapy plus 7 days of IV cefazolin",
+      "Exchange the catheter over a guidewire and give 10 days of IV antibiotics",
+      "Remove the catheter only if fever persists after 72 hours of antibiotics",
+      "Treat with oral dicloxacillin for 14 days through the existing catheter"
+     ],
+     "answer": 0,
+     "explain": "**S aureus** bacteremia ที่สัมพันธ์กับสายเป็นข้อบ่งชี้ **ถอดสาย** เสมอ (เชื้อ virulence สูง สร้าง biofilm แพร่กระจายไป endocarditis/osteomyelitis) ให้ยาที่เหมาะสม (cefazolin หรือ antistaphylococcal penicillin) **อย่างน้อย 14 วัน** ใน uncomplicated และทำ **echocardiography** หา endocarditis ทุกราย ใส่สายใหม่เมื่อ blood culture ลบแล้ว\n- **Lock therapy เก็บสาย**: ใช้ได้ในเชื้อ virulence ต่ำ เช่น coagulase-negative staphylococci (สำเร็จ ~50–60%) ไม่ใช่ S aureus\n- **Guidewire exchange**: ไม่กำจัด biofilm/tunnel infection ใน S aureus\n- **ถอดเมื่อไข้ไม่ลงใน 72 ชม.**: ช้าเกินไปสำหรับ S aureus\n- **Oral dicloxacillin**: ไม่เพียงพอสำหรับ S aureus bacteremia ระยะแรก",
+     "pearl": "CLABSI จาก S aureus/gram-negative/Candida = ถอดสาย · salvage ได้เฉพาะ CoNS",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6",
+      "IDSA Clinical practice guidelines for the diagnosis and management of intravascular catheter-related infection (2009)"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-05-MEQ1",
+   "part": "MEQ",
+   "topic": "Perforated diverticulitis — source control, duration and C difficile",
+   "vignette": "ชายไทยอายุ 68 ปี เบาหวาน ความดันสูง มาห้องฉุกเฉิน รพท. ด้วยปวดท้องน้อยซ้าย 3 วัน ปวดทั่วท้อง 12 ชั่วโมง\n\n| V/S | ค่า |\n|---|---|\n| BP | 86/50 mmHg (หลัง crystalloid 2 L เป็น 94/58) |\n| HR | 122/min |\n| T | 38.9 C |\n| Lab | WBC 22,400, Cr 1.8 mg/dL, lactate 4.1 mmol/L |\n\nตรวจร่างกาย: generalized peritonitis · CT: free air, ของเหลวขุ่นทั่วช่องท้อง sigmoid หนาตัวมี extraluminal gas",
+   "questions": [
+    {
+     "q": "1. ให้การวินิจฉัย จัดระดับตาม Hinchey และบอกสิ่งที่ต้องทำใน 1–6 ชั่วโมงแรก",
+     "a": "- **Perforated sigmoid diverticulitis, Hinchey III หรือ IV** (purulent/feculent peritonitis) + **septic shock**\n- เริ่ม sepsis bundle: crystalloid 30 mL/kg, **blood culture แล้วให้ยาภายใน 1 ชม.** (community-acquired รุนแรง: piperacillin-tazobactam หรือ meropenem), norepinephrine ถ้า MAP <65 หลังให้น้ำ\n- **Source control ภายใน 6–12 ชม.** — เตรียมผ่าตัดคู่ขนานกับ resuscitation ไม่รอให้ \"stable เต็มที่\"\n- เกณฑ์ให้คะแนน: ระบุ septic shock · ยาภายใน 1 ชม. · ผ่าตัดเร่งด่วน"
+    },
+    {
+     "q": "2. ในห้องผ่าตัดพบ purulent peritonitis ทั่วท้อง ไม่มีอุจจาระ ผู้ป่วยยังใช้ norepinephrine ขนาดปานกลาง จะผ่าตัดแบบใด และหลังผ่าตัดจะวางแผน relaparotomy อย่างไร",
+     "a": "- ผู้ป่วยไม่ stable (ใช้ vasopressor) → **Hartmann procedure** (sigmoidectomy + end colostomy) หรือ **damage control** (ตัด sigmoid ปิดปลายทั้งสองด้าน temporary closure แล้วกลับมาทำ stoma/anastomosis ใน 24–48 ชม.)\n- Primary anastomosis ± diverting ileostomy เหมาะในผู้ป่วย stable ไม่ใช่รายนี้ · laparoscopic lavage ไม่เหมาะใน septic shock\n- ปิดท้องได้ → **on-demand relaparotomy** (RELAP) ไม่ใช่ planned ทุก 48 ชม.\n- เกณฑ์ให้คะแนน: เลือก Hartmann/damage control พร้อมเหตุผลเรื่อง physiology · ระบุ on-demand"
+    },
+    {
+     "q": "3. วันที่ 3 หลังผ่าตัด ไม่มีไข้ 24 ชม. หยุด norepinephrine แล้ว WBC 12,000 แพทย์ประจำบ้านถามว่าจะให้ยาปฏิชีวนะต่ออีก 10 วันดีหรือไม่ ตอบอย่างไรพร้อมหลักฐาน",
+     "a": "- ได้ **adequate source control** แล้ว → ให้ยา **รวมราว 4 วัน** แล้วหยุด\n- **STOP-IT (NEJM 2015)**: fixed ~4 วัน vs จนหาย SIRS (สูงสุด 10 วัน) → SSI, recurrent IAI, ตาย ไม่ต่างกัน (21.8% vs 22.3%) ใช้ยาน้อยกว่าครึ่ง\n- ถ้าหลังหยุดยามีไข้/WBC สูงขึ้นใหม่ → CT หา abscess (percutaneous drainage) และหาแหล่งนอกช่องท้อง ไม่ใช่ให้ยาต่อแบบไม่มีเป้า"
+    },
+    {
+     "q": "4. วันที่ 7 หลังผ่าตัด มีถ่ายเหลวจาก colostomy ปริมาณมาก ท้องอืด WBC 31,000 Cr 2.1 mg/dL lactate 2.6 stool toxin positive จัดความรุนแรงและให้การรักษา พร้อมบอกข้อบ่งชี้ที่จะผ่าตัด",
+     "a": "- **Severe C difficile infection** (WBC ≥15,000 และ Cr >1.5) ยังไม่มี shock/ileus\n- หยุดยาปฏิชีวนะอื่นที่ไม่จำเป็น · **fidaxomicin 200 mg bid** หรือ **vancomycin 125 mg PO qid** 10 วัน · ให้สารน้ำ · contact precautions (ล้างมือด้วยสบู่ — alcohol ไม่ฆ่า spore)\n- ถ้าเป็น **fulminant** (hypotension, ileus, megacolon): vancomycin 500 mg qid + rectal vancomycin (ทาง stoma/ทวาร) + IV metronidazole และปรึกษาศัลย์\n- ผ่าตัดเมื่อ: perforation, peritonitis, shock ต้อง vasopressor, toxic megacolon, ไม่ดีขึ้น 3–5 วัน หรือ **lactate ≥5 / WBC ≥50,000** → **subtotal colectomy + end ileostomy** (ในรายนี้ต้องเอา colon ที่เหลือออกโดยคำนึงถึง stoma เดิม) หรือ loop ileostomy + colonic lavage ในศูนย์ที่ชำนาญ"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 6",
+    "Schwartz 11e Ch 29",
+    "Surviving Sepsis Campaign 2021",
+    "STOP-IT (NEJM 2015)",
+    "IDSA/SHEA C difficile guideline 2021"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-05-OSCE1",
+   "topic": "Mock oral board — Fournier gangrene",
+   "station": "Mock oral 10 นาที · Necrotizing soft tissue infection (Fournier gangrene)",
+   "instruction": "**บทบาท**: คุณเป็นแพทย์ประจำบ้านศัลยกรรมปีสุดท้าย อยู่เวรที่ รพศ. ผู้สอบจะให้ข้อมูลทีละขั้น ตอบเหมือนสอบ oral board\n\n**Scenario**: ชายอายุ 61 ปี เบาหวานคุมไม่ได้ ดื่มสุรา มาด้วยปวดถุงอัณฑะและฝีเย็บ 3 วัน วันนี้ปวดมากขึ้นและมีกลิ่นเหม็น BP 92/60 HR 118 T 38.6 C ถุงอัณฑะบวมแดงคล้ำ มีจุดดำ 2 cm ที่ฝีเย็บ คลำได้ crepitus ลามถึง inguinal ซ้าย\n\n**Examiner prompts**\n1. \"คุณคิดถึงอะไร และจะ approach ผู้ป่วยรายนี้ใน 30 นาทีแรกอย่างไร\"\n2. \"Lab: CRP 230, WBC 26,000, Hb 10.4, Na 129, Cr 2.0, glucose 410 — LRINEC เท่าไร ช่วยอะไรคุณบ้าง ต้องส่ง CT ก่อนไหม\"\n3. \"บอกแผนในห้องผ่าตัดทีละขั้น จะตัดถึงไหน อัณฑะทำอย่างไร ต้อง colostomy ไหม\"\n4. \"หลังผ่าตัด 18 ชม. ยังใช้ norepinephrine 0.2 mcg/kg/min ขอบแผลด้านหน้าท้องคล้ำขึ้น คุณจะทำอะไร\"\n5. \"ญาติถามว่ารักษาด้วยออกซิเจนแรงดันสูงได้ไหม และโอกาสรอดเท่าไร คุณตอบอย่างไร\"\n",
+   "answer": "1. **Prompt 1 — Dx และ initial approach (2 คะแนน)**\n- Fournier gangrene = NSTI ของ perineum/genitalia, type I polymicrobial (เบาหวาน, สุรา) + septic shock\n- ABC, IV access 2 เส้น, crystalloid 30 mL/kg, blood culture x2, lactate, insulin infusion, Foley\n- Empiric antibiotics ภายใน 1 ชม.: vancomycin + piperacillin-tazobactam (หรือ meropenem) + **clindamycin**\n- แจ้งห้องผ่าตัด/วิสัญญีทันที ไม่รอ stable เต็มที่ — resuscitate ไปพร้อมกัน\n\n2. **Prompt 2 — LRINEC (2 คะแนน)**\n- CRP ≥150 = 4, WBC >25 = 2, Hb <11 = 2, Na <135 = 2, Cr >1.6 = 2, glucose >180 = 1 → **13 (สูงสุด)**\n- LRINEC เป็นเครื่องมือช่วยเมื่อคลินิกกำกวม รายนี้คลินิกชัด (crepitus, necrosis, shock) → **ไม่ต้อง CT ไปผ่าตัดทันที**; บอกได้ว่าคะแนนต่ำก็ไม่ตัดโรค\n\n3. **Prompt 3 — Operative plan (3 คะแนน)**\n- Lithotomy, ตรวจ DRE/proctoscopy หาแหล่ง (perianal abscess, rectal perforation) และ urethra (stricture/injury)\n- กรีดผ่าน necrotic area ตัดเนื้อตายทุกชั้นจนถึงเนื้อที่มีเลือดออก ใช้ finger test ไล่ตาม fascial plane ไปถึง inguinal/abdominal wall\n- อัณฑะมักรอด (blood supply จาก testicular artery) — ห่อไว้ใน thigh pouch หรือ dressing ไม่ต้อง orchiectomy ยกเว้นตายจริง\n- ส่ง tissue Gram stain/culture · **diverting colostomy** เมื่อ sphincter เสีย แผลใกล้ทวารมากและปนเปื้อนอุจจาระต่อเนื่อง (หรือใช้ fecal management system) · suprapubic cystostomy ถ้ามี urethral involvement\n- วางแผน **re-look ภายใน 24 ชม.**\n\n4. **Prompt 4 — Persistent shock (2 คะแนน)**\n- กลับห้องผ่าตัดทันทีเพื่อ re-debride (ขอบคล้ำ = โรคลุกลาม) ไม่รอครบ 24 ชม.\n- ทบทวน source อื่น ยาครอบคลุม (MRSA, clostridia), แก้ hyperglycemia, ประเมิน abdominal wall involvement\n- ICU care: vasopressin เพิ่ม, steroid ถ้า refractory shock, เตรียม CRRT\n\n5. **Prompt 5 — Communication (1 คะแนน)**\n- HBO หลักฐานจำกัด ใช้ได้เป็นส่วนเสริมใน clostridial infection เท่านั้น ห้ามทำให้ debridement ช้า\n- Mortality แม้รักษาเร็วราว 16–24% (สูงกว่านี้เมื่อมี shock/ไตวาย) ต้องผ่าตัดหลายครั้ง และอาจต้องผ่าตัดเสริมสร้าง/ปลูกผิวภายหลัง\n\n**Critical fails**\n- ส่ง CT/MRI หรือรอผล lab ก่อนผ่าตัดในผู้ป่วยที่คลินิกชัดและช็อก\n- Debridement แบบ \"ระบายหนอง\" ไม่ตัดเนื้อตายให้ถึงเนื้อดี หรือไม่วางแผน re-look\n- ไม่ให้ยาปฏิชีวนะครอบคลุม (เช่นไม่มี anaerobe/gram-negative) หรือไม่ resuscitate"
+  }
+ ]
+}

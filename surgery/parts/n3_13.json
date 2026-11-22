@@ -1,0 +1,307 @@
+{
+ "lec": "13",
+ "date": "Schwartz Ch 6, 9, 48, 53",
+ "title": "Procedures, consent & communication",
+ "subtitle": "หัตถการข้างเตียงที่แพทย์ทุกคนต้องทำได้อย่างปลอดภัย — ยาชา เย็บแผล ระบายฝี ใส่ NG/Foley — และการสื่อสารที่ต้องทำได้ดีพอกัน: consent แจ้งข่าวร้าย และคุยเรื่อง DNR",
+ "objectives": [
+  "เรียนจบแล้วต้องคำนวณขนาดสูงสุดของ lidocaine/bupivacaine ได้ทันที และจัดการ local anesthetic systemic toxicity ได้",
+  "เรียนจบแล้วต้องเตรียมแผล เลือกไหม เย็บแบบ simple interrupted และบอกเวลาตัดไหมได้ถูกต้อง",
+  "เรียนจบแล้วต้องทำ incision & drainage ของฝีและตัดสินใจให้หรือไม่ให้ antibiotic ได้",
+  "เรียนจบแล้วต้องใส่และยืนยันตำแหน่ง NG tube และ Foley catheter อย่างปลอดภัย พร้อมบอกข้อห้าม",
+  "เรียนจบแล้วต้องขอ informed consent ครบ 4 องค์ประกอบ และรู้ข้อยกเว้นในภาวะฉุกเฉินและการปฏิเสธการรักษา",
+  "เรียนจบแล้วต้องแจ้งข่าวร้ายตาม SPIKES และคุยเรื่อง goals of care/DNR รวมถึง DNR ช่วงผ่าตัดได้"
+ ],
+ "guidelines": [
+  "ASRA Practice Advisory on Local Anesthetic Systemic Toxicity (2020 update) — lipid emulsion",
+  "NHS Improvement / NPSA Patient Safety Alert: NG tube placement confirmation (pH ≤5.5 or CXR)",
+  "IDSA SSTI guideline (2014) — abscess drainage and antibiotics",
+  "SPIKES protocol (Baile, Buckman et al., The Oncologist 2000)",
+  "ACS Statement on Advance Directives by Patients: DNR in the OR (required reconsideration)",
+  "พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12"
+ ],
+ "sections": [
+  {
+   "id": "n3-13-1",
+   "title": "ยาชาเฉพาะที่และการเย็บแผล: ขนาดยา เทคนิค ไหม และเวลาตัดไหม",
+   "summary": "ใช้ยาชาได้มากแค่ไหนก่อนเป็นพิษ เตรียมแผลอย่างไร เลือกไหมเบอร์ไหน และตัดไหมเมื่อไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 9 — Management of acute wounds; Ch 44 — Local anesthesia",
+   "md": "### ยาชาเฉพาะที่: ขนาดสูงสุดและการคำนวณ\nสูตรจำ: **ความเข้มข้น 1% = 10 mg/mL** (0.5% = 5 mg/mL, 2% = 20 mg/mL)\n| ยา | ออกฤทธิ์/นาน | ขนาดสูงสุด (ไม่ผสม epi) | ผสม epinephrine |\n|---|---|---|---|\n| **Lidocaine** | เร็ว (2–5 นาที) · 1–2 ชม. | **~4.5 mg/kg** (ไม่เกิน ~300 mg) | **7 mg/kg** (ไม่เกิน ~500 mg) · นาน 2–4 ชม. |\n| **Bupivacaine** | ช้า · **6–8 ชม.** | **~2.5 mg/kg** (ไม่เกิน ~175 mg) | ~3 mg/kg (ไม่เกิน ~225 mg) |\n- ตัวอย่าง: ผู้ใหญ่ 60 kg ใช้ 1% lidocaine plain ได้ ≈ 4.5 × 60 = 270 mg = **27 mL** · ผสม epi ได้ ≈ 420 mg = 42 mL\n- Schwartz (Ch 44): เด็กใช้ bupivacaine ได้ **2.5 mg/kg** — จำง่ายว่า 0.25% bupivacaine **1 mL/kg**\n- Schwartz (Ch 9): lidocaine **0.5–1%** หรือ bupivacaine **0.25–0.5%** ผสม epinephrine **1:100,000–1:200,000** ให้ทั้งชาและห้ามเลือด\n- **Epinephrine**: Schwartz Ch 9 แนะนำเลี่ยงที่ **นิ้วมือ นิ้วเท้า หู จมูก องคชาต** (end-artery) ส่วน Ch 44 ระบุว่าการศึกษาขนาดใหญ่พบว่าใช้ในมือได้ปลอดภัยที่ความเข้มข้น ≤1:100,000 (แนวคิด WALANT) — ข้อสอบมักยึดหลักระวังใน end-artery และห้ามในผู้ที่มี peripheral vascular disease\n\n### ฉีดยาชาให้เจ็บน้อยและปลอดภัย และ LAST\n- ใช้เข็มเล็ก (27–30G), ฉีด**ช้า ๆ**, ยาอุ่นเท่าห้อง, **buffer ด้วย NaHCO₃** (ลดความแสบ), ฉีดผ่าน**ขอบแผล**ไม่ใช่ผิวหนังปกติ, **ดูดก่อนฉีด (aspirate)** ทุกครั้งเพื่อไม่ให้เข้าหลอดเลือด\n- Digital block สำหรับนิ้ว; field block สำหรับฝีหรือแผลกว้าง\n- ยาชาออกฤทธิ์ไม่ดีในเนื้อเยื่อที่อักเสบ (pH ต่ำ)\n**Local anesthetic systemic toxicity (LAST)**:\n| ระยะ | อาการ |\n|---|---|\n| CNS (เริ่มก่อน) | **ชารอบปาก ลิ้นชา รสโลหะ** หูอื้อ มึนงง → กระตุก → **ชัก** → หมดสติ |\n| หัวใจ (bupivacaine เด่น) | ความดันต่ำ, bradycardia, arrhythmia, **cardiac arrest** |\nจัดการ: **หยุดฉีด** เรียกช่วยเหลือ → airway/O₂ (ป้องกัน hypoxia/acidosis) → ชักให้ **benzodiazepine** → **20% lipid emulsion** (ASRA: bolus ~1.5 mL/kg แล้ว infusion) → CPR ตามแนวทาง (ลดขนาด epinephrine) อาจต้อง CPR นาน\n\n### ขั้นตอนดูแลแผลสด (acute wound) ก่อนเย็บ\nตามอัลกอริทึมของ Schwartz:\n1. **ประวัติ/ตรวจ**: กลไก เวลา สิ่งแปลกปลอม ความลึก โครงสร้างข้างใต้ (เส้นประสาท เส้นเอ็น หลอดเลือด) — ตรวจ neurovascular/tendon **ก่อนฉีดยาชา**\n2. **Tetanus prophylaxis**\n3. ยาชา → สำรวจ → **ล้างด้วย NSS** (แรงดันสูงพอ) — **ห้ามใช้ povidone-iodine, hydrogen peroxide ในแผล** (ทำลาย neutrophil/macrophage) ใช้ทาผิวหนังรอบแผลได้\n4. เอาก้อนเลือดออก ห้ามเลือด **debride เนื้อตาย**และขอบแผลที่ขาดรุ่ย\n5. **Antibiotic ไม่จำเป็นเป็นส่วนใหญ่** — ให้เมื่อมีการติดเชื้อชัดเจน หรือแผลเสี่ยงสูง (สัตว์กัด, ปนเปื้อนมาก, ภูมิคุ้มกันต่ำ)\n6. เย็บ: ชั้นลึก (fascia) ใช้ absorbable · ผิวหนังใช้ **nonabsorbable monofilament** / staple / dermal glue · จัด**ขอบที่เป็นจุดสังเกต**ก่อน (vermilion border, คิ้ว, แนวผม) และ**ห้ามโกนคิ้ว**\n- แผลปนเปื้อนมาก/สัตว์กัดนาน/บาดแผลบดขยี้ → **delayed primary closure** (ล้างและปิดแผลชั้นนอกไว้ 3–5 วันจึงเย็บ) หรือปล่อยหายเอง (secondary intention)\n\n### เลือกไหมและเทคนิคการเย็บ\n| ไหม | ชนิด | ใช้ที่ไหน |\n|---|---|---|\n| **Nylon / Polypropylene (Prolene)** | nonabsorbable monofilament | ผิวหนัง, หลอดเลือด (polypropylene) — ปฏิกิริยาเนื้อเยื่อต่ำ |\n| **Silk** | nonabsorbable braided | ผูกหลอดเลือด/ยึดท่อ drain — ไม่ใช้ผิวหนังที่ต้องการความสวย |\n| **Polyglactin (Vicryl)** | absorbable braided | ชั้นใต้ผิวหนัง, dermis, mucosa |\n| **Poliglecaprone (Monocryl)** | absorbable monofilament | **subcuticular** (ไม่ต้องตัดไหม) |\n| **PDS (polydioxanone)** | slowly absorbable monofilament | fascia หน้าท้อง |\n- ขนาด: ใบหน้า **5-0/6-0**, หนังศีรษะ/ลำตัว/แขนขา **3-0/4-0**, ฝ่ามือฝ่าเท้า 3-0/4-0 — ใช้เส้นเล็กที่สุดที่ยึดได้\n- **Simple interrupted**: เข็มตั้งฉากผิว (90°) ระยะเท่ากันจากขอบ (~เท่ากับความหนาผิว) ความลึก**มากกว่าความกว้าง**ให้ขอบแผล **evert** เล็กน้อย, ผูกพอให้ขอบชิด**ไม่รัดแน่น** (แผลบวมได้), ปมอยู่ด้านเดียวกัน\n- **Vertical mattress**: บริเวณที่ขอบแผลม้วนเข้า/ผิวหย่อน (ช่วย eversion) · **Horizontal mattress**: แผลตึง · **Subcuticular**: ความสวย\n**ตัดไหม**: Schwartz — **ใบหน้า 4–5 วัน**, ผิวหนังส่วนอื่น **7–10 วัน** (การค้างนานกว่านั้นทำให้เกิดรอย \"ทางรถไฟ\") · ในทางปฏิบัติ หนังศีรษะ 7–10 วัน, ลำตัว/แขนขา 10–14 วัน, เหนือข้อหรือแผลตึง 14 วัน — absorbable subcuticular ไม่ต้องตัด\n",
+   "pearls": [
+    "1% = 10 mg/mL; lidocaine ~4.5 mg/kg (plain), 7 mg/kg (+epi); bupivacaine ~2.5 mg/kg",
+    "Aspirate ก่อนฉีด ฉีดช้า buffer ด้วย bicarbonate ลดปวด",
+    "LAST: ชารอบปาก/รสโลหะ → ชัก → หัวใจ; รักษาด้วย benzodiazepine + 20% lipid emulsion",
+    "ล้างแผลด้วย NSS ห้ามใช้ povidone-iodine/H₂O₂ ในแผล",
+    "Antibiotic ในแผลสดไม่จำเป็นเป็นส่วนใหญ่ — tetanus ต้องดูทุกราย",
+    "ผิวหนังใช้ nonabsorbable monofilament; หน้า 5-0/6-0, อื่น 3-0/4-0",
+    "ตัดไหม: หน้า 4–5 วัน, ผิวหนังอื่น 7–10 วัน"
+   ],
+   "items": [
+    {
+     "id": "N3-13-1-1",
+     "kind": "mcq",
+     "topic": "Maximum dose of lidocaine",
+     "stem": "A 50-kg woman needs repair of multiple lacerations on her forearm and leg after a motorcycle crash. You plan to use 1% lidocaine with epinephrine 1:100,000. What is the approximate maximum volume you can safely infiltrate?",
+     "choices": [
+      "35 mL",
+      "10 mL",
+      "22 mL",
+      "50 mL",
+      "70 mL"
+     ],
+     "answer": 0,
+     "explain": "**1% = 10 mg/mL** · lidocaine **ผสม epinephrine** ใช้ได้ประมาณ **7 mg/kg** → 7 × 50 = **350 mg = 35 mL** (epinephrine ทำให้หลอดเลือดหด ยาดูดซึมช้า จึงใช้ขนาดสูงได้กว่า plain)\n- **10 mL**: = 100 mg (2 mg/kg) น้อยเกินจริงแม้ปลอดภัย\n- **22 mL**: ใกล้เคียงขนาดสูงสุดของ lidocaine **แบบไม่ผสม epi** (~4.5 mg/kg = 225 mg)\n- **50 mL**: = 500 mg (10 mg/kg) เกินขนาด เสี่ยง LAST\n- **70 mL**: = 700 mg เกินขนาดอย่างมาก\nถ้าต้องใช้มากกว่านี้: ใช้ 0.5% เจือจาง, แบ่งทำ, หรือเปลี่ยนเป็นการระงับความรู้สึกแบบอื่น",
+     "pearl": "1% = 10 mg/mL; lidocaine plain ~4.5 mg/kg, + epi 7 mg/kg",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N3-13-1-2",
+     "kind": "mcq",
+     "topic": "Local anesthetic systemic toxicity",
+     "stem": "During excision of a large lipoma, a 65-kg man receives 45 mL of 0.5% bupivacaine plus 20 mL of 1% lidocaine (both without epinephrine). A few minutes later he complains of perioral numbness and a metallic taste, then has a generalized tonic-clonic seizure. Pulse is 48/min, BP 80/50 mmHg. After stopping injection, calling for help, and securing the airway with 100% oxygen, which treatment should be given?",
+     "choices": [
+      "IV benzodiazepine for the seizure and 20% lipid emulsion",
+      "IV naloxone",
+      "IV flumazenil",
+      "IV phenytoin loading and observe",
+      "IV calcium gluconate"
+     ],
+     "answer": 0,
+     "explain": "Bupivacaine 225 mg (~3.5 mg/kg) + lidocaine 200 mg เกินขนาดรวม → **LAST**: เริ่มจาก CNS (ชารอบปาก รสโลหะ ชัก) ตามด้วยหัวใจ (ชีพจรช้า ความดันตก โดยเฉพาะ bupivacaine) การรักษา: หยุดยา, airway/O₂, **benzodiazepine** คุมชัก และ **20% lipid emulsion** (bolus ~1.5 mL/kg แล้ว infusion) จับยาชาที่ละลายในไขมัน พร้อม CPR ถ้าหัวใจหยุด\n- **naloxone**: ใช้กับ opioid ไม่ใช่ยาชา\n- **flumazenil**: ย้อนฤทธิ์ benzodiazepine อาจทำให้ชักมากขึ้น\n- **phenytoin**: ออกฤทธิ์ช้า และมีฤทธิ์ sodium channel blockade ซ้ำเติมพิษต่อหัวใจ\n- **calcium gluconate**: ใช้กับ hyperkalemia/calcium channel blocker toxicity",
+     "pearl": "LAST: ชารอบปาก → ชัก → หัวใจ; รักษาด้วย benzodiazepine + 20% lipid emulsion",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    },
+    {
+     "id": "N3-13-1-3",
+     "kind": "mcq",
+     "topic": "Wound care and suture removal",
+     "stem": "A 6-year-old boy has a clean 2-cm laceration on his cheek from a fall 2 hours ago. It is repaired with 6-0 nylon simple interrupted sutures after irrigation with normal saline. His mother asks when the stitches should be removed. What is the most appropriate answer?",
+     "choices": [
+      "After about 4–5 days",
+      "After 7–10 days",
+      "After 14 days",
+      "After 21 days",
+      "They do not need removal because nylon dissolves"
+     ],
+     "answer": 0,
+     "explain": "Schwartz ให้ตัดไหม**ผิวหนังใบหน้าที่ 4–5 วัน** เพราะใบหน้าเลือดมาเลี้ยงดี หายเร็ว และถ้าค้างนานเยื่อบุผิวจะเติบโตตามรูไหมเกิดรอยแผลเป็นแบบ \"ทางรถไฟ\" อาจเสริมด้วย wound closure tape หลังตัดไหม\n- **7–10 วัน**: ใช้กับผิวหนังส่วนอื่นตาม Schwartz (เช่นหนังศีรษะ ลำตัว)\n- **14 วัน**: ใช้กับแผลเหนือข้อหรือบริเวณที่ตึง\n- **21 วัน**: นานเกินไปทุกตำแหน่ง\n- **ไม่ต้องตัด**: nylon เป็น **nonabsorbable** ต้องตัดออกเสมอ (ไหมที่ไม่ต้องตัดคือ absorbable subcuticular)",
+     "pearl": "ตัดไหม: หน้า 4–5 วัน · ผิวหนังอื่น 7–10 วัน (Schwartz) · เหนือข้อ ~14 วัน",
+     "src": "Schwartz 11e Ch 9",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-13-2",
+   "title": "Incision & drainage, NG tube และ Foley catheter",
+   "summary": "ระบายฝีให้หายในครั้งเดียวทำอย่างไร และใส่ NG/Foley อย่างไรให้ถูกที่ ปลอดภัย และไม่ก่อภาวะแทรกซ้อน",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 6 — Skin and soft tissue infections; Ch 2 — Nasoenteric tubes; Ch 7 — Adjuncts (NG/Foley); Ch 53 — Procedural skills training",
+   "md": "### Incision & drainage (I&D) ของฝี\n**ฝีต้องระบาย — ยาฆ่าเชื้ออย่างเดียวไม่พอ** (Schwartz: incisional SSI รักษาด้วย I&D อย่างเดียวโดยไม่ต้องให้ antibiotic ถ้าไม่มี cellulitis มาก)\n- วินิจฉัย: บวมแดงร้อน **fluctuation**; ไม่แน่ใจ → **ultrasound** หรือเจาะดูดด้วยเข็ม\n- ขั้นตอน:\n1. Consent, aseptic technique, ยาชาแบบ **field block** รอบฝี (ยาชาในฝีออกฤทธิ์ไม่ดี) ± sedation/GA ถ้าฝีใหญ่/ลึก/เด็ก\n2. กรีด**ตรงจุดที่นูนนิ่มที่สุด** ตามแนว skin crease ยาวพอให้ระบายได้ (เกือบตลอดความยาวฝี) — รูเล็กเกินทำให้เป็นซ้ำ\n3. ส่ง **pus culture**, ใช้ clamp/นิ้ว **ทำลาย loculation** ทั้งหมด\n4. ล้างด้วย NSS; ฝีใหญ่อาจใส่ **packing/wick** หลวม ๆ 24–48 ชม. (ฝีเล็กไม่จำเป็นต้อง pack)\n5. ปิด dressing นัดดูแผล/เปลี่ยนแผล แช่น้ำอุ่นต่อ\n- **ให้ antibiotic เพิ่ม** เมื่อ: cellulitis รอบกว้าง, มีไข้/sepsis, เบาหวาน/ภูมิคุ้มกันต่ำ, ฝีที่ใบหน้า มือ หรืออวัยวะเพศ, ไม่ดีขึ้นหลังระบาย (สงสัย **CA-MRSA** → TMP-SMX/clindamycin/doxycycline)\n| ตำแหน่งพิเศษ | ข้อควรรู้ |\n|---|---|\n| **Perianal/ischiorectal abscess** | I&D เร็ว ไม่รอ fluctuation (เบาหวาน → ระวัง necrotizing infection), ตรวจหา fistula ภายหลัง |\n| **Breast abscess** (ให้นม) | **US-guided aspiration ซ้ำ** ก่อน, กรีดเมื่อผิวหนังบางหรือ aspiration ล้มเหลว, ให้นมต่อได้ |\n| **Pilonidal abscess** | กรีดนอกแนวกลาง (off-midline) |\n| ฝีที่คอ/ใบหน้า \"danger triangle\" | ระวังลามเข้าไซนัสในสมอง, deep neck infection → CT |\n| ฝีที่ **เต้นได้** (pulsatile) | อาจเป็น **pseudoaneurysm** (ผู้ใช้ยาเสพติดฉีด/ขาหนีบ) → **US ก่อนกรีด** |\n\n### Nasogastric (NG) tube: ข้อบ่งชี้ ข้อห้าม และการยืนยันตำแหน่ง\n| ข้อบ่งชี้ | ข้อห้าม/ข้อควรระวัง |\n|---|---|\n| ระบายกระเพาะใน **bowel obstruction/ileus**, อาเจียนมาก | **Basal skull fracture/บาดเจ็บใบหน้ารุนแรง** → ใช้ **orogastric tube** แทน (เสี่ยงเข้ากะโหลก) |\n| ลด aspiration ก่อนผ่าตัด/ผู้ป่วยหมดสติ | ผ่าตัดหลอดอาหาร/กระเพาะใหม่ (ต้องให้ศัลยแพทย์ใส่เอง) |\n| UGIB: ดูเลือดในกระเพาะ, ล้าง | Esophageal varices/stricture, coagulopathy (ข้อห้ามสัมพัทธ์) |\n| ให้อาหาร/ยา | ผู้ป่วยไม่ร่วมมือ/airway ไม่ปลอดภัย (ต้องปกป้อง airway ก่อน) |\n**ขั้นตอน**: อธิบาย/consent → นั่งตัวตรง (high Fowler) → วัดความยาว **NEX** (ปลายจมูก → ติ่งหู → xiphoid) ทำเครื่องหมาย → หล่อลื่นด้วย gel (± lidocaine) → ใส่ทางรูจมูกข้างที่โล่ง **ขนานพื้น (ไปทางหลัง ไม่ใช่ขึ้นบน)** → เมื่อถึงคอให้**ก้มคาง** และ**กลืนน้ำ/กลืนน้ำลาย** → ดันจนถึงเครื่องหมาย → ไอ/สำลัก/เขียว/พูดไม่ได้ = เข้าหลอดลม **ดึงออกทันที**\n**ยืนยันตำแหน่ง** (ก่อนใช้ให้อาหารหรือยา):\n- ดูดได้ content และวัด **pH ≤5.5** (แนวทาง NHS/NPSA) — ถ้า pH ไม่ได้ (ได้ยา PPI) → **CXR**\n- **CXR คือมาตรฐานยืนยัน**: ท่อลงตามแนวกลางผ่าน carina, ข้ามกะบังลม, ปลายอยู่ใต้กะบังลมซ้าย\n- การเป่าลมฟังเสียง (\"whoosh test\") **ไม่น่าเชื่อถือ** (Schwartz Ch 2: air instillation with auscultation is inaccurate) ห้ามใช้ยืนยันตำแหน่ง\n- ยึดท่อ ทำเครื่องหมายระดับที่รูจมูก ต่อ free drainage/low intermittent suction, ตรวจซ้ำทุกเวร; ระวัง **แผลกดทับที่รูจมูก**, sinusitis, เกลือแร่เสีย (metabolic alkalosis, hypokalemia) — **ทดแทนสารน้ำที่ออกทาง NG**\n\n### Foley catheter: ข้อบ่งชี้ เทคนิค และการลด CAUTI\n- **ข้อบ่งชี้ที่เหมาะสม**: urinary retention/bladder outlet obstruction, **ติดตาม urine output อย่างแม่นยำ** ในผู้ป่วยวิกฤต/ช็อก, ผ่าตัดนานหรือผ่าตัดระบบปัสสาวะ/ใช้ epidural, แผลกดทับบริเวณก้น/ฝีเย็บในผู้ป่วยกลั้นไม่ได้, palliative comfort\n- **ไม่ใช่ข้อบ่งชี้**: ความสะดวกของพยาบาล, กลั้นปัสสาวะไม่ได้ (ทั่วไป), เก็บปัสสาวะส่งตรวจ (ใช้ straight cath)\n- **ข้อห้าม**: blood at meatus/สงสัย urethral injury (→ RUG/suprapubic)\n- เทคนิคในหญิง: ท่า frog-leg/lithotomy, แยก labia ด้วยมือไม่ถนัด (ถือว่า contaminated) ทำความสะอาดจากหน้าไปหลัง ระบุ **urethral meatus** อยู่เหนือช่องคลอด — สายเข้าช่องคลอดผิด → **ทิ้งไว้เป็นเครื่องหมาย**แล้วใช้สายใหม่ sterile\n- ขนาดทั่วไปผู้ใหญ่ **14–16 Fr**; hematuria/clot ใช้ **3-way 20–22 Fr**\n- **ลด CAUTI**: ใส่เมื่อจำเป็นเท่านั้น, aseptic technique, **ระบบปิด**, ถุงอยู่ต่ำกว่ากระเพาะไม่วางพื้น, ไม่ปลดข้อต่อ, ยึดสายกับต้นขา, **ถอดเร็วที่สุด** (หลังผ่าตัดส่วนใหญ่ภายใน 24–48 ชม.) — ทบทวนความจำเป็นทุกวัน\n- ห้ามเก็บ urine culture จากถุง ให้เจาะจาก **sampling port**\n\n### ภาพรวมหัตถการข้างเตียง: สิ่งที่ผู้คุมสอบดูทุกหัตถการ\n| ขั้น | ประเด็น |\n|---|---|\n| ก่อนทำ | ระบุตัวผู้ป่วย 2 ตัวบ่งชี้, ข้อบ่งชี้/ข้อห้าม, **consent**, ตรวจ coagulation ถ้าจำเป็น, เตรียมอุปกรณ์ครบ |\n| ระหว่างทำ | **hand hygiene**, aseptic technique, สื่อสารกับผู้ป่วยทุกขั้น, ใช้ยาชาเหมาะสม |\n| หลังทำ | ยืนยันผล (เช่น CXR สำหรับ NG/ICD, ปัสสาวะไหลสำหรับ Foley), ทิ้งของมีคม, **บันทึก**หัตถการ, สั่งการดูแลต่อ |\n> หัวใจของ OSCE หัตถการ: **ปลอดภัย (ผู้ป่วย/ผู้ทำ) > ถูกขั้นตอน > เร็ว** และพูดสิ่งที่ทำออกมาให้ผู้คุมสอบได้ยิน\n",
+   "pearls": [
+    "ฝีต้อง I&D: กรีดยาวพอ ทำลาย loculation; antibiotic เฉพาะ cellulitis กว้าง/ไข้/ภูมิคุ้มกันต่ำ",
+    "ฝีที่เต้นได้ (ขาหนีบในผู้ใช้ยาฉีด) → US ก่อนกรีด อาจเป็น pseudoaneurysm",
+    "NG: วัดความยาว NEX, ก้มคางและกลืน, ไอ/เขียว = ดึงออก",
+    "ยืนยัน NG ด้วย pH ≤5.5 หรือ CXR — whoosh test ไม่น่าเชื่อถือ",
+    "Basal skull fracture → orogastric tube",
+    "Foley ใส่เมื่อจำเป็นและถอดเร็วที่สุด ลด CAUTI; ห้ามสวนเมื่อ blood at meatus"
+   ],
+   "items": [
+    {
+     "id": "N3-13-2-1",
+     "kind": "mcq",
+     "topic": "Skin abscess — I&D vs antibiotics",
+     "stem": "A healthy 32-year-old man has a 4-cm tender, fluctuant swelling on his thigh for 5 days with 1 cm of surrounding erythema. T 37.4°C. No diabetes. Bedside ultrasound confirms a fluid collection. What is the most appropriate management?",
+     "choices": [
+      "Incision and drainage under local anesthesia, breaking up loculations, without routine antibiotics",
+      "Oral cloxacillin for 7 days and review if not improving",
+      "Needle aspiration only and warm compresses",
+      "IV vancomycin and admission",
+      "Topical mupirocin and warm compresses"
+     ],
+     "answer": 0,
+     "explain": "ฝีที่ fluctuant ชัดเจนยืนยันด้วย US ต้อง **I&D**: กรีดตรงจุดนูนนิ่ม ยาวพอ ทำลาย loculation ล้าง ± packing — ในคนปกติที่ cellulitis รอบเล็กน้อยและไม่มีอาการทั่วร่างกาย **ไม่ต้องให้ antibiotic** (Schwartz: SSI/ฝีรักษาด้วยการระบายเป็นหลัก) ให้ยาเมื่อ cellulitis กว้าง ไข้/sepsis ภูมิคุ้มกันต่ำ ตำแหน่งพิเศษ หรือไม่ดีขึ้น (คิดถึง CA-MRSA)\n- **cloxacillin อย่างเดียว**: ยาเข้าโพรงหนองได้ไม่ดี ฝีไม่หาย\n- **needle aspiration อย่างเดียว**: ล้มเหลวและเป็นซ้ำสูงในฝีที่ผิวหนัง (ยกเว้น breast abscess ที่ใช้ US-guided aspiration ได้)\n- **IV vancomycin + admit**: เกินความจำเป็นในผู้ป่วยที่ไม่มี sepsis\n- **mupirocin ทา**: ใช้กับ impetigo/decolonization ไม่รักษาฝี",
+     "pearl": "ฝี = ระบายหนอง; antibiotic เป็นส่วนเสริมเมื่อมี cellulitis กว้าง/อาการทั่วร่างกาย/ภูมิคุ้มกันต่ำ",
+     "src": "Schwartz 11e Ch 6",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 6"
+     ]
+    },
+    {
+     "id": "N3-13-2-2",
+     "kind": "mcq",
+     "topic": "Confirming nasogastric tube position",
+     "stem": "A 70-year-old woman after a stroke needs a nasogastric tube for feeding. After insertion to the measured length, she has no cough or distress. A small amount of fluid is aspirated, but pH paper is unreadable because she is on a proton pump inhibitor. The nurse suggests injecting air while auscultating over the epigastrium. What should be done before starting feeds?",
+     "choices": [
+      "Obtain a chest X-ray to confirm the tube tip is below the left hemidiaphragm",
+      "Rely on the epigastric 'whoosh' on air insufflation",
+      "Start a 50 mL water test feed and watch for coughing",
+      "Confirm by the absence of bubbling when the tube end is placed under water",
+      "Start feeds because she did not cough during insertion"
+     ],
+     "answer": 0,
+     "explain": "การยืนยันตำแหน่ง NG ก่อนให้อาหาร: ดูดได้ content และ **pH ≤5.5** — ถ้าวัด pH ไม่ได้/ไม่ชัด (เช่นได้ PPI) ต้อง **CXR** ซึ่งเป็นมาตรฐาน: ท่อลงแนวกลางผ่าน carina ข้ามกะบังลม ปลายอยู่ใต้กะบังลมซ้าย ผู้ป่วย stroke มี dysphagia และ cough reflex ลด ท่อเข้าหลอดลมได้โดยไม่ไอ\n- **whoosh test**: ไม่น่าเชื่อถือ เสียงลมจากหลอดลม/หลอดอาหารส่วนล่างก็คล้ายกัน แนวทางปัจจุบันห้ามใช้\n- **ทดลองให้น้ำ 50 mL**: ถ้าอยู่ในปอดจะเกิด aspiration pneumonia\n- **จุ่มปลายในน้ำดูฟอง**: ไม่น่าเชื่อถือ\n- **ไม่ไอระหว่างใส่**: ไม่ตัดการเข้าหลอดลม โดยเฉพาะผู้ป่วยที่ reflex ลดลง",
+     "pearl": "NG ก่อนให้อาหาร: pH ≤5.5 หรือ CXR — ห้ามใช้ whoosh test",
+     "src": "Schwartz 11e Ch 2",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 2"
+     ]
+    },
+    {
+     "id": "N3-13-2-3",
+     "kind": "mcq",
+     "topic": "Gastric decompression in basal skull fracture",
+     "stem": "A 25-year-old man is intubated after a severe head injury. He has bilateral periorbital ecchymosis, clear fluid from the nose, and a distended abdomen from bag-mask ventilation. Gastric decompression is required. Which is the most appropriate method?",
+     "choices": [
+      "Orogastric tube",
+      "Nasogastric tube with the neck extended",
+      "Nasogastric tube passed through the less swollen nostril",
+      "Percutaneous endoscopic gastrostomy now",
+      "No decompression until CT confirms skull base integrity"
+     ],
+     "answer": 0,
+     "explain": "Raccoon eyes + **CSF rhinorrhea** = **basal skull fracture** (cribriform plate) การใส่ท่อทางจมูกเสี่ยงให้ท่อทะลุเข้าโพรงกะโหลก (intracranial placement) จึงต้องใช้ **orogastric tube** ซึ่งระบายลมในกระเพาะได้เช่นเดียวกัน ลด aspiration และช่วยการหายใจ\n- **NG แบบแหงนคอ**: ยังผ่าน cribriform plate และเสี่ยงต่อ C-spine\n- **NG ทางรูจมูกที่บวมน้อย**: กระดูกฐานกะโหลกแตกอยู่ทั้งสองข้าง ความเสี่ยงไม่ลด\n- **PEG ทันที**: เป็นหัตถการระยะยาวสำหรับให้อาหาร ไม่ใช่การระบายฉุกเฉิน\n- **รอ CT**: กระเพาะโป่งเพิ่ม aspiration และรบกวนการหายใจ ไม่ควรรอ",
+     "pearl": "สงสัย basal skull fracture/บาดเจ็บใบหน้ารุนแรง → orogastric ไม่ใช่ nasogastric",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-13-3",
+   "title": "Informed consent, การแจ้งข่าวร้าย และ DNR/end-of-life",
+   "summary": "consent ที่ถูกต้องต้องมีอะไร เมื่อไรทำได้โดยไม่มี consent จะแจ้งข่าวร้ายอย่างไร และคุยเรื่อง DNR อย่างไรให้ผู้ป่วยได้สิ่งที่ต้องการจริง",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 48 — Informed consent, Withdrawing/withholding therapy, Communicating unfavorable news",
+   "md": "### Informed consent: 4 องค์ประกอบ\nSchwartz ระบุว่า consent ที่สมบูรณ์ต้องมีอย่างน้อย 4 ข้อ:\n1. **Capacity** — แพทย์บันทึกว่าผู้ป่วย (หรือ surrogate) มีความสามารถตัดสินใจ: **เข้าใจ** ข้อมูล, **จำ**ได้พอ, **ชั่งน้ำหนัก**เหตุผล, **สื่อสาร**การตัดสินใจได้ (ความสามารถประเมินเฉพาะเรื่อง ไม่ใช่ทั้งชีวิต)\n2. **Disclosure** — บอกการวินิจฉัย ทางเลือกการรักษา (รวมถึง**การไม่รักษา**) ประโยชน์ **ความเสี่ยงที่พบบ่อยและที่ร้ายแรง** ผลที่คาดหวังหลังผ่าตัด\n3. **Understanding** — ผู้ป่วยแสดงว่าเข้าใจ (ใช้ **teach-back**: \"ช่วยเล่าให้หมอฟังว่าเข้าใจว่าจะผ่าตัดอะไร\")\n4. **Voluntariness** — ตัดสินใจอย่างอิสระ ไม่ถูกบีบบังคับ\n- Consent คือ**กระบวนการพูดคุย** ไม่ใช่แค่ลายเซ็น — ผู้ป่วยจำข้อมูลได้น้อยมาก ควรมีเอกสาร/ภาพประกอบ, ใช้ภาษาที่เข้าใจ, ล่ามถ้าจำเป็น\n- **ผู้ป่วยที่มี capacity มีสิทธิ์ปฏิเสธ**การรักษาแม้เป็นการรักษาที่ช่วยชีวิต (หลัง autonomy) — ให้ข้อมูลผลที่อาจเกิด บันทึก เปิดโอกาสเปลี่ยนใจ\n- **ผู้เยาว์**: ผู้แทนโดยชอบธรรมให้ความยินยอม แต่ควรให้เด็ก**มีส่วนร่วม (assent)** ตามวัย\n- **ไม่มี capacity**: ใช้ advance directive/ผู้ที่ได้รับมอบหมาย → ญาติใกล้ชิด ตัดสินใจตาม **substituted judgment** (ผู้ป่วยจะเลือกอะไรถ้าตัดสินใจได้)\n\n### Consent ในภาวะฉุกเฉิน และสิ่งที่ต้องบอกก่อนผ่าตัด\n**ภาวะฉุกเฉิน**: ผู้ป่วยหมดสติ ไม่มีญาติ และ**การรอจะเกิดอันตรายร้ายแรง** → ศัลยแพทย์ทำการรักษาที่จำเป็นเพื่อรักษาชีวิตได้โดยชอบด้วยกฎหมายและจริยธรรม (presumed consent) — บันทึกเหตุผลให้ชัด, ปรึกษาแพทย์อีกท่านถ้าทำได้, แจ้งผู้ป่วย/ญาติเร็วที่สุด\n| หัวข้อที่ต้องครอบคลุม (ตัวอย่าง lap cholecystectomy) | |\n|---|---|\n| การวินิจฉัย/เหตุผล | symptomatic gallstones: ปวดซ้ำ, เสี่ยง cholecystitis, pancreatitis, CBD stone |\n| หัตถการ | ผ่าตัดผ่านกล้อง แผล 3–4 รู, ดมยาสลบ, ตัดถุงน้ำดีออก |\n| ทางเลือก | สังเกตอาการ/ปรับอาหาร, ผ่าตัดเปิด (ไม่ผ่าตัดเสี่ยงเป็นซ้ำ) |\n| ความเสี่ยงทั่วไป | ปวด, แผลติดเชื้อ, เลือดออก, ไส้เลื่อนที่แผล, ผลข้างเคียงยาสลบ, DVT |\n| ความเสี่ยงเฉพาะ | **bile leak**, **bile duct injury (~0.2%)** อาจต้องผ่าตัดใหญ่ซ่อม, **conversion เป็นผ่าตัดเปิด** (ส่วนใหญ่ <5%), **retained CBD stone**, บาดเจ็บลำไส้/หลอดเลือดจาก trocar |\n| หลังผ่าตัด | นอน รพ. 0–1 วัน, กลับทำงานเบา 1–2 สัปดาห์, อาการที่ต้องกลับมา (ไข้ ตัวเหลือง ปวดท้องมาก) |\n\n### Breaking bad news (SPIKES)\nSchwartz เสนอ 6 ขั้น (ตรงกับ **SPIKES** ของ Buckman/Baile):\n| ขั้น | ทำอะไร | ตัวอย่างประโยค |\n|---|---|---|\n| **S** Setting | ห้องเงียบ เป็นส่วนตัว **นั่งลง** ปิดโทรศัพท์ เชิญญาติตามที่ผู้ป่วยต้องการ | \"วันนี้คุณอยากให้ใครอยู่ด้วยไหมครับ\" |\n| **P** Perception | ถามว่าผู้ป่วยรู้/เข้าใจอะไรแล้ว | \"ก่อนหน้านี้หมอท่านอื่นเล่าเรื่องผลชิ้นเนื้อให้ฟังว่าอย่างไรบ้าง\" |\n| **I** Invitation | ถามว่าอยากรู้ข้อมูลแค่ไหน | \"คุณอยากให้หมอเล่ารายละเอียดทั้งหมดเลยไหม\" |\n| **K** Knowledge | **warning shot** → ให้ข้อมูลทีละน้อย ภาษาง่าย ไม่ใช้ศัพท์ | \"หมอเสียใจที่ต้องบอกว่าผลไม่ค่อยดีนัก...\" |\n| **E** Emotion/Empathy | **เงียบ**ให้เวลา รับรู้และสะท้อนอารมณ์ (NURSE: Name, Understand, Respect, Support, Explore) | \"หมอเห็นว่าเรื่องนี้ทำให้คุณตกใจมาก\" |\n| **S** Strategy/Summary | สรุป วางแผนขั้นต่อไป ให้**ความหวังที่เป็นจริง** (ไม่ทอดทิ้ง คุมอาการได้) นัดคุยต่อ | \"เราจะวางแผนรักษาด้วยกัน\" |\n- **สิ่งที่ห้าม**: บอกในทางเดิน/ยืนพูด, ใช้ศัพท์แพทย์, ให้ความหวังเกินจริง, บอกระยะเวลาที่เหลือเป็นตัวเลขแน่นอน, รีบเปลี่ยนเรื่องเมื่อผู้ป่วยร้องไห้\n- **ญาติขอให้ปิดบังผู้ป่วย** (พบบ่อยในไทย): รับฟังความกังวลของญาติ อธิบายว่าผู้ป่วยมีสิทธิ์รู้ — ถามผู้ป่วยเองว่าต้องการรู้แค่ไหนและอยากให้ใครรับข้อมูลแทน\n\n### DNR, การยุติ/ไม่เริ่มการรักษา และ end-of-life\n- **DNR ≠ do not treat** — ผู้ป่วยที่ DNR ยังได้รับการรักษาอื่นตามปกติ (ยา, ผ่าตัดเพื่อบรรเทาอาการ) Schwartz ให้บอกผู้ป่วยและญาติชัดเจน\n- **DNR ช่วงผ่าตัด**: ไม่ควรยกเลิกอัตโนมัติ — ทำ **required reconsideration** คุยกับผู้ป่วย/ญาติก่อนผ่าตัดว่าจะคง DNR หรือระงับชั่วคราว (เพราะหัตถการบางอย่างของวิสัญญีคล้าย resuscitation)\n- **Withholding = withdrawing** ทางจริยธรรม (ไม่ต่างกันระหว่างไม่เริ่มกับหยุดการรักษาที่ไม่เกิดประโยชน์)\n- **Double effect**: ให้ยา (เช่น opioid) เพื่อ**บรรเทาทุกข์ทรมาน**ได้แม้อาจทำให้หายใจช้าลง ถ้าเจตนาไม่ใช่การทำให้ตาย — ปรับยาตามอาการ ไม่ใช่ bolus ขนาดสูงเพื่อให้หยุดหายใจ\n- **Advance directive**: ประเทศไทยมี **พ.ร.บ.สุขภาพแห่งชาติ พ.ศ. 2550 มาตรา 12** ให้ทำหนังสือแสดงเจตนาไม่รับการรักษาที่เพียงยืดการตายในวาระสุดท้าย; ควรให้ผู้ป่วย**ระบุผู้ตัดสินใจแทน (surrogate)** ตั้งแต่ก่อนผ่าตัดใหญ่\n- การคุยเรื่อง goals of care: ถามสิ่งที่สำคัญที่สุดสำหรับผู้ป่วย ความกลัว สิ่งที่ยอมรับได้/ไม่ได้ → เสนอแนวทางที่ตรงกับเป้าหมาย (\"best case/worst case\") → **palliative care** ตั้งแต่เนิ่น ๆ ไม่ใช่เฉพาะวาระสุดท้าย\n- **CPR ในผู้ป่วยมะเร็งระยะลุกลาม/โรคเรื้อรังหลายระบบ** โอกาสรอดจนกลับบ้านต่ำมาก — ให้ข้อมูลตามจริงประกอบการตัดสินใจ\n",
+   "pearls": [
+    "Consent 4 ข้อ: capacity, disclosure, understanding, voluntariness",
+    "Capacity = เข้าใจ จำ ชั่งน้ำหนัก สื่อสาร — ประเมินเฉพาะเรื่อง",
+    "ฉุกเฉิน + ไม่มี capacity + รอไม่ได้ → รักษาเพื่อช่วยชีวิตได้ บันทึกเหตุผล",
+    "ผู้ป่วยที่มี capacity ปฏิเสธการรักษาได้แม้ช่วยชีวิต",
+    "SPIKES: Setting, Perception, Invitation, Knowledge, Emotion, Strategy",
+    "DNR ≠ do not treat; ช่วงผ่าตัดใช้ required reconsideration",
+    "Withholding = withdrawing ทางจริยธรรม; double effect รองรับการให้ opioid เพื่อบรรเทาทุกข์"
+   ],
+   "items": [
+    {
+     "id": "N3-13-3-1",
+     "kind": "mcq",
+     "topic": "Emergency surgery without consent",
+     "stem": "A 40-year-old unidentified man is brought in unconscious after a motorcycle crash. He has a ruptured spleen on FAST and remains hypotensive despite blood transfusion. No relatives can be contacted and he has no documents. What is the most appropriate action regarding consent?",
+     "choices": [
+      "Proceed with emergency laparotomy, documenting the emergency and the reason consent could not be obtained",
+      "Delay surgery until a relative is located to sign consent",
+      "Wait until the patient regains consciousness and can consent",
+      "Request a court order before operating",
+      "Ask the hospital security officer to sign the consent form"
+     ],
+     "answer": 0,
+     "explain": "Schwartz: ในภาวะฉุกเฉินที่ผู้ป่วย**ไม่สามารถให้ความยินยอม**และ**การรอจะเกิดผลร้ายแรง** ศัลยแพทย์ได้รับความชอบธรรมทั้งทางกฎหมายและจริยธรรมให้ทำการรักษาที่จำเป็นเพื่อรักษาชีวิต (presumed/implied consent — สังคมยอมรับว่าคนส่วนใหญ่ต้องการให้ช่วยชีวิต) ต้อง**บันทึกเหตุผล**ในเวชระเบียน ปรึกษาแพทย์อาวุโสร่วม และแจ้งผู้ป่วย/ญาติโดยเร็ว\n- **รอญาติ**: ผู้ป่วยช็อกจากม้ามแตกจะเสียชีวิตระหว่างรอ\n- **รอผู้ป่วยรู้สึกตัว**: ไม่สามารถรอได้\n- **คำสั่งศาล**: ใช้ในกรณีไม่เร่งด่วนที่มีข้อขัดแย้ง ไม่ใช่ภาวะฉุกเฉิน\n- **ให้ รปภ. ลงนาม**: ไม่ใช่ผู้มีอำนาจตัดสินใจแทนผู้ป่วย ไม่มีผลทางกฎหมาย",
+     "pearl": "ฉุกเฉิน + ไม่มี capacity + ไม่มีญาติ + รอไม่ได้ → ผ่าตัดได้ บันทึกเหตุผลให้ชัด",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48"
+     ]
+    },
+    {
+     "id": "N3-13-3-2",
+     "kind": "mcq",
+     "topic": "Competent refusal of treatment",
+     "stem": "A 68-year-old diabetic man with wet gangrene of the foot and spreading cellulitis is advised to have a below-knee amputation. He is alert, oriented, and after a detailed discussion can explain that without surgery the infection may spread and he could die. He states he would rather die than lose his leg. His daughter asks the surgeon to operate anyway. What is the most appropriate next step?",
+     "choices": [
+      "Respect his refusal, document his capacity and the discussion, and continue other treatment while offering to revisit the decision",
+      "Proceed with amputation with the daughter's signed consent",
+      "Sedate him and perform the amputation as an emergency",
+      "Discharge him because he has refused the recommended treatment",
+      "Ask a psychiatrist to declare him incompetent so surgery can proceed"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย**มี capacity** (เข้าใจ ชั่งน้ำหนัก และอธิบายผลของการปฏิเสธได้) ตามหลัก **autonomy** จึงมีสิทธิ์ปฏิเสธแม้เป็นการรักษาที่ช่วยชีวิต แพทย์ควรค้นหาเหตุผล/ความกลัว ให้ข้อมูลทางเลือก (เช่น debridement, IV antibiotic, ฟื้นฟูหลังตัดขา, ขาเทียม) **บันทึก**การประเมิน capacity และการพูดคุย รักษาด้านอื่นต่อ และเปิดโอกาสให้เปลี่ยนใจ\n- **ใช้ลายเซ็นลูกสาว**: ญาติไม่มีอำนาจเหนือผู้ป่วยที่ตัดสินใจได้เอง\n- **ให้ยานอนหลับแล้วผ่าตัด**: เป็นการทำร้ายร่างกายโดยไม่ยินยอม (battery)\n- **จำหน่ายผู้ป่วย**: การปฏิเสธการรักษาหนึ่งไม่ใช่เหตุให้ทอดทิ้ง ต้องดูแลต่อ\n- **ให้จิตแพทย์ประกาศว่าไร้ความสามารถ**: ปรึกษาจิตแพทย์ได้ถ้าสงสัยภาวะซึมเศร้า/สับสนจริง แต่ไม่ใช่เพื่อหาเหตุผ่าตัดโดยไม่ยินยอม",
+     "pearl": "ผู้ป่วยที่มี capacity ปฏิเสธได้ — ประเมิน บันทึก ให้ข้อมูล ดูแลต่อ ไม่ทอดทิ้ง",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48"
+     ]
+    },
+    {
+     "id": "N3-13-3-3",
+     "kind": "mcq",
+     "topic": "DNR status before palliative surgery",
+     "stem": "An 82-year-old woman with metastatic pancreatic cancer and a documented DNR order develops a malignant gastric outlet obstruction. She and her family request a palliative gastrojejunostomy to allow her to eat. The anesthesia resident says her DNR order must be automatically suspended for surgery. What is the most appropriate approach?",
+     "choices": [
+      "Hold a 'required reconsideration' discussion with the patient to agree on which resuscitative measures she accepts during the perioperative period",
+      "Automatically suspend the DNR order until discharge",
+      "Refuse to operate because she has a DNR order",
+      "Keep the DNR order and refuse intubation for general anesthesia",
+      "Let the family decide without involving the patient"
+     ],
+     "answer": 0,
+     "explain": "Schwartz ชี้ว่า **DNR ไม่ได้แปลว่าไม่รักษา** และประเด็นการระงับ DNR ชั่วคราวช่วงผ่าตัดต้อง**คุยกับผู้ป่วย/ครอบครัวก่อน** (แนวคิด **required reconsideration** ของ ACS/ASA) — ตกลงว่ายอมรับหัตถการใดได้ (เช่น intubation เพื่อดมยา, vasopressor ระยะสั้น) และหากหัวใจหยุดจากเหตุที่แก้ไขได้ระหว่างผ่าตัดจะทำ CPR หรือไม่ บันทึกให้ชัดเจน\n- **ระงับอัตโนมัติจนกลับบ้าน**: ละเมิดความประสงค์ของผู้ป่วย\n- **ปฏิเสธผ่าตัด**: ผู้ป่วย DNR ยังควรได้รับการผ่าตัดบรรเทาอาการที่ตรงกับเป้าหมาย\n- **ห้ามใส่ท่อช่วยหายใจ**: การดมยาสลบต้องใช้ airway management ซึ่งแยกจาก CPR ได้\n- **ให้ครอบครัวตัดสินใจแทน**: ผู้ป่วยยังมี capacity ต้องตัดสินใจเอง",
+     "pearl": "DNR ≠ do not treat; ช่วงผ่าตัดต้อง required reconsideration ไม่ยกเลิกอัตโนมัติ",
+     "src": "Schwartz 11e Ch 48",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 48"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-13-MEQ1",
+   "part": "MEQ",
+   "topic": "Emergency surgery in an elderly patient with advanced cancer — consent, bad news and goals of care",
+   "vignette": "หญิงไทยอายุ 76 ปี มาด้วยท้องอืด ไม่ถ่ายอุจจาระและไม่ผายลม 4 วัน อาเจียนเป็นสีน้ำตาล น้ำหนักลด 8 กก. ใน 3 เดือน\nPE: รู้สึกตัวดี ตอบคำถามถูกต้อง BP 104/66 mmHg PR 108/min T 37.8°C ท้องอืดมาก กดเจ็บทั่วท้องเล็กน้อย ไม่มี guarding\nCT: ก้อนที่ sigmoid colon อุดตัน ลำไส้ใหญ่ขยาย cecum 11 cm มีก้อนในตับหลายก้อน\nเธออาศัยกับลูกสาว ลูกชายคนโตทำงานต่างจังหวัด ลูกสาวบอกแพทย์นอกห้องว่า \"อย่าบอกแม่ว่าเป็นมะเร็งนะคะ แม่รับไม่ได้\"",
+   "questions": [
+    {
+     "q": "1. ก่อนผ่าตัด ท่านจะสั่งการรักษาเบื้องต้นอะไรบ้าง (orders) และหัตถการข้างเตียงที่ต้องทำ",
+     "a": "- **NPO**, IV crystalloid (balanced/NSS) แก้ภาวะขาดน้ำ, ตรวจ electrolyte (K⁺, Cl⁻), BUN/Cr, CBC, coagulation, G/M\n- **NG tube** ต่อ free drainage ระบายกระเพาะ (ลด aspiration) — ยืนยันตำแหน่ง, บันทึกปริมาณ, ทดแทนสารน้ำที่ออก\n- **Foley catheter** ติดตาม urine output (≥0.5 mL/kg/h)\n- IV antibiotic (ครอบคลุม gram-negative + anaerobe) ก่อนผ่าตัด, ยาแก้ปวด\n- เตรียมผ่าตัดด่วน: cecum 11 cm เสี่ยงทะลุ (closed-loop obstruction)\n- **ยังไม่ให้ยาที่กดสติก่อนคุย consent** (ให้ยาแก้ปวดขนาดเหมาะสมได้)"
+    },
+    {
+     "q": "2. ลูกสาวขอให้ปิดบังการวินิจฉัย ท่านจะตอบสนองอย่างไร และจะให้ใครเป็นผู้ให้ความยินยอมผ่าตัด",
+     "a": "- รับฟังและเห็นใจความกังวลของลูกสาว อธิบายว่า**ผู้ป่วยมี capacity** จึงเป็นผู้มีสิทธิ์ตัดสินใจและรับรู้ข้อมูลของตนเอง\n- เสนอว่าจะ**ถามผู้ป่วยเองว่าอยากรู้ข้อมูลมากน้อยแค่ไหน** และอยากให้ใครร่วมรับฟัง/ตัดสินใจ (Invitation ใน SPIKES)\n- consent ต้องได้จาก**ผู้ป่วยเอง**: ต้องบอกเหตุผลของการผ่าตัด (ลำไส้อุดตันจากก้อนที่น่าจะเป็นมะเร็ง), หัตถการ (เช่น Hartmann procedure/ostomy), ความเสี่ยง (ติดเชื้อ, รอยต่อรั่ว, ภาวะแทรกซ้อนปอด-หัวใจ, เสียชีวิต), โอกาสต้องมี**ลำไส้เปิดหน้าท้อง**, ทางเลือก (stent ลำไส้ถ้าทำได้, ไม่ผ่าตัด/ประคับประคอง)\n- ไม่โกหกผู้ป่วยถ้าถาม แต่ให้ข้อมูลตามจังหวะที่ผู้ป่วยพร้อม\nเกณฑ์ให้คะแนน: เคารพ autonomy (2), ถามความต้องการข้อมูลของผู้ป่วย (2), องค์ประกอบ consent ครบ (2)"
+    },
+    {
+     "q": "3. ก่อนผ่าตัด ผู้ป่วยถามว่า \"ถ้าระหว่างผ่าตัดหัวใจหยุดเต้น จะปั๊มหัวใจไหม\" ท่านจะคุยเรื่อง goals of care และ code status อย่างไร",
+     "a": "- ถามสิ่งที่ผู้ป่วยให้ความสำคัญที่สุด ความกลัว และสิ่งที่ยอมรับได้/ไม่ได้ (เช่น ใส่เครื่องช่วยหายใจนาน)\n- ให้ข้อมูลตามจริง: ผ่าตัดนี้เพื่อแก้ลำไส้อุดตันและบรรเทาอาการ โรคน่าจะลุกลามไปตับ; CPR ในผู้สูงอายุที่มีมะเร็งระยะลุกลามมีโอกาสรอดจนกลับบ้านต่ำ แต่หัวใจหยุดจากเหตุที่แก้ได้ช่วงดมยา (เช่น ยาสลบ) อาจตอบสนองดีกว่า\n- ทำ **required reconsideration**: ตกลงว่ายอมรับ intubation, vasopressor, CPR ช่วงผ่าตัดหรือไม่ และหลังผ่าตัดจะทำอย่างไร\n- ย้ำว่า **DNR ไม่ใช่การหยุดรักษา** ยังได้ยาแก้ปวด ยาฆ่าเชื้อ การดูแลเต็มที่\n- ให้ผู้ป่วยระบุ**ผู้ตัดสินใจแทน**ถ้าเธอตัดสินใจเองไม่ได้ และแนะนำหนังสือแสดงเจตนาตาม พ.ร.บ.สุขภาพแห่งชาติ ม.12\n- บันทึกการตัดสินใจในเวชระเบียนและแจ้งทีมวิสัญญี"
+    },
+    {
+     "q": "4. หลังผ่าตัด 5 วัน ผลชิ้นเนื้อเป็น adenocarcinoma และ CT ยืนยัน liver metastases หลายก้อน จงอธิบายขั้นตอนแจ้งข่าวร้ายแก่ผู้ป่วยตามหลัก SPIKES",
+     "a": "1. **Setting**: ห้องส่วนตัว นั่งลงใกล้ผู้ป่วย ถามว่าอยากให้ลูกคนไหนอยู่ด้วย ปิดโทรศัพท์ มีพยาบาลร่วม\n2. **Perception**: \"คุณยายเข้าใจเรื่องผ่าตัดและผลชิ้นเนื้อว่าอย่างไรบ้าง\"\n3. **Invitation**: \"อยากให้หมอเล่ารายละเอียดผลตรวจเลยไหม\"\n4. **Knowledge**: warning shot \"หมอเสียใจที่ผลไม่ค่อยดีนัก\" → บอกทีละน้อยด้วยภาษาง่าย: ก้อนที่ลำไส้เป็นมะเร็ง และกระจายไปที่ตับ — หยุดให้เวลา\n5. **Emotion**: เงียบ ยอมรับอารมณ์ (\"หมอเข้าใจว่าเรื่องนี้หนักมาก\") ส่งกระดาษทิชชู ไม่รีบพูดต่อ\n6. **Strategy/Summary**: บอกสิ่งที่ยังทำได้ — ส่งพบอายุรแพทย์มะเร็งพิจารณาเคมีบำบัดตามสภาพร่างกาย, การดูแลลำไส้เปิดหน้าท้อง, ควบคุมอาการ, **palliative care**; ให้**ความหวังที่เป็นจริง** (เราจะไม่ทิ้ง) ไม่บอกระยะเวลาเป็นตัวเลขแน่นอน, นัดคุยครั้งต่อไปพร้อมครอบครัว, บันทึกในเวชระเบียน"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 48",
+    "Schwartz 11e Ch 6",
+    "Schwartz 11e Ch 9"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-13-OSCE1",
+   "topic": "Simple interrupted suturing of a laceration (procedure)",
+   "station": "สถานี 8 นาที · หัตถการ (หุ่น/pad เย็บแผล)",
+   "instruction": "ชายอายุ 25 ปี (น้ำหนัก 60 kg) ถูกกระจกบาดที่ปลายแขนด้านนอก แผลยาว 3 cm ลึกถึงชั้นไขมัน ขอบเรียบ สะอาด เกิดเหตุ 1 ชั่วโมงก่อน ตรวจ neurovascular และเส้นเอ็นปกติแล้ว ได้วัคซีนบาดทะยักครบเมื่อ 3 ปีก่อน\n\nให้นักศึกษา **ฉีดยาชาและเย็บแผลแบบ simple interrupted** บน pad ฝึกเย็บ พร้อมบอกขั้นตอนให้ผู้คุมสอบฟัง และให้คำแนะนำการดูแลแผลแก่ผู้ป่วย อุปกรณ์: 1% lidocaine (มีทั้ง plain และ with adrenaline), ไหม nylon 3-0/4-0/6-0, Vicryl 3-0, needle holder, toothed forceps, กรรไกร, NSS",
+   "answer": "1. แนะนำตัว ยืนยันผู้ป่วย อธิบายและขอ consent ถามแพ้ยาชา (1)\n2. ล้างมือ ใส่ถุงมือ ทำความสะอาดผิวรอบแผลด้วยน้ำยาฆ่าเชื้อ **ล้างในแผลด้วย NSS** ปูผ้า (1)\n3. เลือก **1% lidocaine** คำนวณขนาดสูงสุด (60 kg: plain ~4.5 mg/kg ≈ 27 mL; ผสม adrenaline 7 mg/kg ≈ 42 mL) (2)\n4. ฉีดผ่านขอบแผล **aspirate ก่อนฉีด** ฉีดช้า ทดสอบว่าชาก่อนเริ่ม (1)\n5. สำรวจแผลหาสิ่งแปลกปลอม/โครงสร้างข้างใต้อีกครั้ง (1)\n6. เลือกไหม **nylon 4-0** (ปลายแขน) — บอกเหตุผล (1)\n7. จับ needle holder ที่ **1/3–1/2 ทางจากปลายเข็มด้านท้าย**, ใช้ forceps จับขอบแผลเบา ๆ (ไม่บีบผิวหนัง) (1)\n8. แทงเข็ม**ตั้งฉาก**กับผิว ห่างขอบเท่ากันสองฝั่ง (~3–5 mm) ตามความโค้งของเข็ม **ความลึก > ความกว้าง** เพื่อ eversion (2)\n9. ผูก **instrument tie**: ปมแรก double throw ตามด้วย single throw สลับทิศ รวม 3–4 throws ปมอยู่ด้านเดียวกัน ไม่รัดแน่นจนขอบซีด (2)\n10. เริ่มเย็บจุดกึ่งกลาง/แบ่งครึ่งแผล ระยะห่างแต่ละเข็ม ~5–10 mm สม่ำเสมอ ตัดไหมเหลือ ~5 mm (1)\n11. ปิด dressing ทิ้งเข็มในภาชนะของมีคมทันที (1)\n12. คำแนะนำ: แผลแห้ง 24–48 ชม., อาการติดเชื้อ (บวมแดงร้อน หนอง ไข้), **นัดตัดไหม 7–10 วัน**, ไม่ต้องให้ tetanus เพิ่ม (ครบ <5 ปี), ไม่ต้องให้ antibiotic (1)\n\n**Fatal errors**: ไม่ aspirate/ใช้ยาชาเกินขนาด, ใช้มือจับเข็ม, ไม่ทิ้งของมีคมอย่างปลอดภัย, ผูกแน่นจนขอบแผลซีด/ม้วนเข้า, ไม่ล้างแผล"
+  },
+  {
+   "id": "N3-13-OSCE2",
+   "topic": "Informed consent for laparoscopic cholecystectomy (communication)",
+   "station": "สถานี 7 นาที · สื่อสาร (ผู้ป่วยจำลอง)",
+   "instruction": "หญิงอายุ 45 ปี (SP) มีอาการปวดใต้ชายโครงขวาหลังอาหารมัน 4 ครั้งใน 6 เดือน ultrasound พบนิ่วในถุงน้ำดีหลายก้อน ผนังไม่หนา ท่อน้ำดีไม่ขยาย LFT ปกติ ศัลยแพทย์นัดผ่าตัด **laparoscopic cholecystectomy** แบบนัดล่วงหน้าสัปดาห์หน้า\n\nให้นักศึกษา **ขอความยินยอมผ่าตัด (informed consent)** ผู้ป่วยจะถามว่า \"ไม่ผ่าได้ไหม กินยาละลายนิ่วแทน\" และ \"ถ้าเอาถุงน้ำดีออกแล้วจะย่อยอาหารได้ไหม\"",
+   "answer": "1. แนะนำตัว ยืนยันตัวผู้ป่วย บอกวัตถุประสงค์ ถามความเข้าใจเดิมและความกังวล (1)\n2. ประเมิน **capacity** โดยอ้อม (เข้าใจ ตอบสนองเหมาะสม) ถามว่าอยากให้ใครร่วมฟังไหม (1)\n3. อธิบายโรค: นิ่วในถุงน้ำดีที่มีอาการ มีแนวโน้มปวดซ้ำและเสี่ยงถุงน้ำดีอักเสบ ตับอ่อนอักเสบ นิ่วตกท่อน้ำดี (1)\n4. อธิบายหัตถการ: ดมยาสลบ ผ่าตัดผ่านกล้อง 3–4 แผลเล็ก เอาถุงน้ำดีพร้อมนิ่วออก ใช้เวลาประมาณ 1 ชม. นอน รพ. 0–1 คืน (1)\n5. **ทางเลือก**: สังเกตอาการ/ปรับอาหาร (ปวดซ้ำและภาวะแทรกซ้อน), **ยาละลายนิ่ว (ursodeoxycholic acid)** ได้ผลจำกัด ช้า และนิ่วกลับเป็นซ้ำ จึงไม่ใช่การรักษามาตรฐาน, ผ่าตัดแบบเปิด (2)\n6. **ความเสี่ยงทั่วไป**: ปวดแผล/ไหล่, แผลติดเชื้อ, เลือดออก, ไส้เลื่อนที่แผล, ผลจากยาสลบ, ลิ่มเลือด (1)\n7. **ความเสี่ยงเฉพาะ**: น้ำดีรั่ว, **บาดเจ็บท่อน้ำดี (ประมาณ 2 ใน 1,000)** ที่อาจต้องผ่าตัดใหญ่, **เปลี่ยนเป็นผ่าตัดเปิด** (ไม่ถึง 5 ใน 100) ถ้าเห็นโครงสร้างไม่ชัด, นิ่วค้างในท่อน้ำดี, บาดเจ็บลำไส้ (2)\n8. ตอบเรื่องการย่อย: ตับยังสร้างน้ำดีตามปกติ ส่วนใหญ่กินอาหารได้ตามเดิม บางรายถ่ายเหลวหลังอาหารมันช่วงแรก (1)\n9. หลังผ่าตัด: กลับทำงานเบา ๆ 1–2 สัปดาห์, อาการที่ต้องกลับมา (ไข้ ตัวเหลือง ปวดท้องมากขึ้น) (1)\n10. **Teach-back** ให้ผู้ป่วยสรุป เปิดโอกาสถาม ให้เวลาตัดสินใจ ย้ำว่า**เปลี่ยนใจได้** ลงนามและบันทึก (1)\n\n**Fatal errors**: ไม่บอกความเสี่ยงบาดเจ็บท่อน้ำดี/conversion, บังคับหรือกดดันผู้ป่วย, ใช้ศัพท์แพทย์ล้วน, ไม่ให้ทางเลือก"
+  }
+ ]
+}

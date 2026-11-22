@@ -1,0 +1,459 @@
+{
+ "lec": "03",
+ "date": "Schwartz Ch 7",
+ "title": "Trauma: operative and critical decisions",
+ "subtitle": "ในผู้บาดเจ็บรุนแรง ศัลยแพทย์ต้องตัดสินใจอย่างไรว่าจะผ่าตัด ห้ามเลือดด้วยวิธีไหน และเมื่อไรต้องหยุดเพื่อรักษาชีวิตก่อนอวัยวะ",
+ "objectives": [
+  "เรียนจบแล้วต้องบอกเกณฑ์และขั้นตอน damage control surgery และวินิจฉัย/รักษา abdominal compartment syndrome ได้",
+  "เรียนจบแล้วต้องเลือก REBOA zone และระบุข้อจำกัดของ endovascular adjuncts ได้",
+  "เรียนจบแล้วต้องตัดสินใจ thoracotomy จาก chest tube output และจัดลำดับการรักษา blunt aortic injury ได้",
+  "เรียนจบแล้วต้องระบุข้อบ่งชี้/ข้อห้ามและทำขั้นตอนหลักของ resuscitative thoracotomy และซ่อม cardiac injury ได้",
+  "เรียนจบแล้วต้องเลือก NOM, angioembolization หรือผ่าตัดใน liver/spleen injury และเลือกวิธีซ่อม colon, duodenum, pancreas ตามตำแหน่งและ physiology ได้",
+  "เรียนจบแล้วต้องแยก hard/soft signs ของ vascular injury, บอกข้อบ่งชี้ fasciotomy และวางแผนห้ามเลือดใน unstable pelvic fracture ได้"
+ ],
+ "guidelines": [
+  "ATLS 10th edition (2018)",
+  "Western Trauma Association critical decisions: resuscitative thoracotomy; EAST guideline on emergency department thoracotomy (2015)",
+  "AAST Organ Injury Scale (2018 revision for spleen, liver, kidney)",
+  "World Society of the Abdominal Compartment Syndrome (WSACS) consensus 2013",
+  "Society for Vascular Surgery clinical practice guideline for blunt thoracic aortic injury (2011)",
+  "UK-REBOA trial (JAMA 2023); EAST guidelines for penetrating colon and extraperitoneal rectal injury"
+ ],
+ "sections": [
+  {
+   "id": "res-03-1",
+   "title": "Damage control resuscitation & surgery, abdominal compartment syndrome และ REBOA",
+   "summary": "เมื่อไรต้องหยุดผ่าตัดกลางทาง ทำอะไรใน damage control และจะใช้ REBOA/decompression อย่างไรให้ถูกที่",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 7 — Damage control surgery, abdominal compartment syndrome, REBOA",
+   "md": "### Bloody vicious cycle และเหตุผลของ damage control\n- **Lethal triad** (bloody vicious cycle, 1981): **hypothermia + acidosis + coagulopathy** — แต่ละตัวเร่งอีกสองตัว จนจบที่ fatal arrhythmia\n- Acidosis แย่ลงจาก aortic clamp, vasopressor, massive transfusion · hypothermia เกิดแม้ใช้ warmer (ระเหยจากช่องท้องเปิด, เลือดเย็น)\n- **Damage control surgery (DCS)**: ผ่าตัดสั้น ทำแค่ **ห้ามเลือด + หยุดการรั่วของลำไส้** → ICU แก้ physiology → กลับห้องผ่าตัดทำ definitive\n\n| ตัวบ่งชี้ให้ abbreviate (Schwartz) | ค่า |\n|---|---|\n| **Hypothermia** ที่แก้ไม่ได้ | น้อยกว่า 35°C |\n| **Acidosis** รุนแรง | pH น้อยกว่า 7.2 หรือ **base deficit มากกว่า 15 mmol/L** |\n| **Coagulopathy** ที่แก้ไม่ได้ | เลือดซึมจากผิวตัดทั่วไป, TEG ผิดปกติ |\n| อื่น ๆ ที่ใช้ร่วม | massive transfusion, injury complex (retrohepatic IVC + pancreas), ต้องผ่าตัดนอกช่องท้องด่วน |\n\n> ตัดสินใจ DCS **ตั้งแต่ต้นหรือระหว่างผ่าตัด** อย่ารอจนผู้ป่วย \"หมดสภาพ\" แล้วค่อยหยุด\n\n### ขั้นตอน DCS ในช่องท้อง\n1. เปิดท้องยาว ตักลิ่มเลือด **pack 4 quadrants** · ถ้า SBP น้อยกว่า 70 ตอนเปิดท้อง → กด/clamp aorta ที่ diaphragmatic hiatus\n2. **Hemorrhage control**: perihepatic packing, Pringle maneuver, Foley/balloon tamponade ในแผลยิงทะลุตับ · ม้ามหรือไตข้างเดียวที่แตกมาก → **ตัดออก** ไม่ซ่อม\n3. **Vascular damage control**: aorta ต้องซ่อม (PTFE graft) · **celiac ligate ได้ แต่ SMA ต้องคง flow → shunt** · iliac/infrainguinal → **temporary intravascular shunt** แล้ว reconstruct ภายใน **6 ชม.** · venous injury → **ligate ได้ ยกเว้น suprarenal IVC และ popliteal vein**\n4. **Contamination control**: รูเล็กเย็บ whipstitch · ลำไส้ขาด/เสียหาย → ตัดด้วย GIA stapler ปล่อยปลายปิด (ไม่ต่อ ไม่ทำ stoma ในรอบแรก) · **pancreas injury: pack + drain** เลื่อนการประเมิน duct\n5. **Temporary abdominal closure** (Ioban/negative-pressure) — **ไม่เย็บ fascia** เพื่อกัน abdominal compartment syndrome\n6. ICU: rewarm, แก้ coagulopathy/acidosis/Ca, DCR · **กลับ OR ภายในราว 24–48 ชม.** เมื่ออุ่น, coagulation ปกติ, acidosis หาย (ก่อนหน้านั้นถ้ายังเลือดออก → กลับ OR/angio ทันที)\n7. Definitive: ต่อลำไส้/stoma, ซ่อมหลอดเลือด, ปิด fascia ให้เร็วที่สุด (early trophic EN ใน open abdomen เพิ่มอัตราปิด fascia)\n\n### Abdominal compartment syndrome (ACS)\n| IAH grade (bladder pressure) | mmHg |\n|---|---|\n| I | 10–15 |\n| II | 16–25 |\n| III | 26–35 |\n| IV | มากกว่า 35 |\n\n- **Primary** (จากการบาดเจ็บ/เลือด/packs) vs **secondary** (bowel edema จาก crystalloid ปริมาณมาก reperfusion — เกิดได้แม้ไม่มี abdominal injury เช่น burn, extremity trauma)\n- ผลต่ออวัยวะ: ↓ venous return/CO, **peak airway pressure ↑**, **oliguria**, ↑ ICP, gut ischemia\n- วัด bladder pressure (instill 50 mL saline ตามตำรา; WSACS แนะนำ 25 mL ระดับ midaxillary line ขณะหายใจออก) ไม่แม่นเมื่อ bladder rupture, pelvic packing, neurogenic bladder\n- **ACS** = IAP ต่อเนื่องมากกว่า 20 mmHg ร่วมกับอวัยวะล้มเหลวใหม่ (WSACS) · Schwartz: ไม่มีค่าตัดเดี่ยว ยกเว้น **มากกว่า 35 mmHg** — ให้ decompress เมื่อมี end-organ dysfunction · **ล่าช้า mortality 70%**, ไม่ decompress ตายเกือบทั้งหมด\n- รักษา: **decompressive laparotomy** + temporary closure (ICU bedside ได้) · มาตรการเสริม: sedation/paralysis, NG/rectal decompression, ลด fluid, percutaneous drain ถ้าเป็น ascites\n\n### REBOA และ endovascular adjuncts\n- **REBOA** ใส่ผ่าน common femoral artery (7 Fr sheath, US-guided) ยืนยันตำแหน่งด้วย X-ray/fluoroscopy\n\n| Zone | ตำแหน่ง | ใช้สำหรับ |\n|---|---|---|\n| **Zone I** | descending thoracic aorta (left subclavian ถึง celiac) | **intra-abdominal hemorrhage** (แทน RT/aortic cross-clamp) |\n| Zone II | celiac ถึง renal arteries | **ห้ามกาง** (no-occlusion zone) |\n| **Zone III** | infrarenal ถึง aortic bifurcation | **pelvic/junctional hemorrhage** |\n\n- เวลา occlusion: Zone I ยิ่งสั้นยิ่งดี (ราว 30 นาที เกิน 60 นาทีเกิด visceral ischemia/reperfusion รุนแรง) → พิจารณา partial/intermittent REBOA · Zone III ทนได้นานกว่า\n- Denver protocol: ใส่ arterial sheath เมื่อ SBP น้อยกว่า 90 และพิจารณา REBOA เมื่อ SBP น้อยกว่า 80 ใน unstable pelvic fracture\n- **ข้อห้าม/ระวัง**: thoracic hemorrhage (zone I จะเพิ่มเลือดออกในอก), blunt aortic injury, ไม่มีทีมผ่าตัด/IR พร้อมห้ามเลือดทันที · ภาวะแทรกซ้อน: limb ischemia จาก sheath, aortic injury\n- **UK-REBOA (2023)** ใน civilian trauma ไม่แสดงประโยชน์และมีสัญญาณว่าอาจเพิ่ม mortality → REBOA เป็น bridge ในศูนย์ที่มีประสบการณ์เท่านั้น\n",
+   "pearls": [
+    "Lethal triad: hypothermia + acidosis + coagulopathy",
+    "DCS เมื่อ temp น้อยกว่า 35°C, pH น้อยกว่า 7.2 หรือ BD มากกว่า 15, coagulopathy ที่แก้ไม่ได้",
+    "DCS = ห้ามเลือด + ปิดการรั่ว + temporary closure → ICU → กลับ OR 24–48 ชม.",
+    "Celiac ligate ได้ · SMA ต้อง shunt · shunt แล้ว reconstruct ภายใน 6 ชม. · vein ligate ได้ยกเว้น suprarenal IVC/popliteal",
+    "IAH: I 10–15, II 16–25, III 26–35, IV มากกว่า 35 mmHg · ACS = decompress ทันที (ล่าช้าตาย 70%)",
+    "REBOA zone I = ช่องท้อง, zone II ห้าม, zone III = pelvis",
+    "UK-REBOA ไม่พบประโยชน์ — ใช้เป็น bridge ในศูนย์ที่พร้อม"
+   ],
+   "items": [
+    {
+     "id": "RES-03-1-1",
+     "kind": "mcq",
+     "topic": "Indications to abbreviate laparotomy — damage control",
+     "stem": "A 31-year-old man undergoes laparotomy for multiple gunshot wounds. After splenectomy and packing of a grade IV liver laceration, you find four small-bowel perforations and a destructive injury of the transverse colon. He has received 12 units RBC, 10 plasma and 2 platelet doses. Core temperature 34.6°C, pH 7.08, base deficit 17 mmol/L, and there is diffuse oozing from wound edges. What is the most appropriate operative plan?",
+     "choices": [
+      "Stapled resection of injured bowel left in discontinuity, packing and temporary abdominal closure, then ICU resuscitation",
+      "Resection of all injured bowel with primary anastomoses and fascial closure",
+      "Resection of the transverse colon with end colostomy and small-bowel anastomoses before closure",
+      "Formal hepatic lobectomy to remove the source of bleeding, then fascial closure",
+      "Primary repair of all injuries followed by fascial closure with retention sutures"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **lethal triad ครบ**: อุณหภูมิน้อยกว่า 35°C, **pH น้อยกว่า 7.2, base deficit มากกว่า 15**, coagulopathy (เลือดซึมทั่ว) → เข้าเกณฑ์ **damage control** หลักคือห้ามเลือด (pack แล้ว) และ **หยุด contamination เร็วที่สุด** ด้วยการ staple ตัดลำไส้ที่เสียหายปล่อย **discontinuity**, pack และ **temporary abdominal closure** แล้วไปแก้ physiology ใน ICU กลับมาทำ definitive ภายใน 24–48 ชม.\n- **Anastomoses + ปิด fascia** ใช้เวลานาน, anastomosis ในภาวะช็อกรั่วสูง และเสี่ยง ACS\n- **End colostomy + small-bowel anastomoses** ยังเป็นงาน definitive ที่ยืดเวลาผ่าตัด\n- **Hepatic lobectomy** ในภาวะ coagulopathy มี mortality สูงมาก packing ดีกว่า\n- **Primary repair ทุกจุด + ปิดด้วย retention suture** ยืดเวลาและทำให้เกิด ACS",
+     "pearl": "Temp น้อยกว่า 35, pH น้อยกว่า 7.2/BD มากกว่า 15, coagulopathy → DCS: ห้ามเลือด, ปิดลำไส้, เปิดท้องไว้",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-1-2",
+     "kind": "mcq",
+     "topic": "REBOA zone selection",
+     "stem": "A 52-year-old woman is struck by a pickup truck. She has an open-book pelvic fracture with a binder in place. BP 68/40 mmHg, HR 140/min after 4 units of uncrossmatched RBC and 4 plasma. FAST is negative and chest radiograph shows no hemothorax or widened mediastinum. A common femoral arterial sheath is in place while the OR is prepared for preperitoneal packing. If REBOA is used, where should the balloon be inflated?",
+     "choices": [
+      "Zone III, between the lowest renal artery and the aortic bifurcation",
+      "Zone I, in the descending thoracic aorta",
+      "Zone II, between the celiac axis and the renal arteries",
+      "Common iliac artery on the side of the fracture",
+      "Aortic arch proximal to the left subclavian artery"
+     ],
+     "answer": 0,
+     "explain": "แหล่งเลือดออกคือ **pelvis** (FAST ลบ, อกปกติ) จึงกาง REBOA ที่ **Zone III** (infrarenal ถึง bifurcation) ซึ่งหยุด inflow ไปอุ้งเชิงกรานโดยไม่ทำให้ลำไส้และไตขาดเลือด และทนการ occlusion ได้นานกว่า Zone I — Denver protocol พิจารณา REBOA เมื่อ SBP น้อยกว่า 80 ระหว่างเตรียม preperitoneal pelvic packing/angio\n- **Zone I** ใช้กับ intra-abdominal hemorrhage ทำให้อวัยวะช่องท้องขาดเลือดโดยไม่จำเป็น\n- **Zone II** เป็น no-occlusion zone (visceral และ renal arteries)\n- **Common iliac ข้างเดียว** ไม่ครอบคลุม collateral จากอีกข้าง และไม่ใช่เทคนิค REBOA มาตรฐาน\n- **Aortic arch** ทำให้สมองและหัวใจเสี่ยง ไม่ใช่ตำแหน่ง REBOA",
+     "pearl": "REBOA: Zone I = ช่องท้อง · Zone II ห้าม · Zone III = pelvis",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-1-3",
+     "kind": "mcq",
+     "topic": "Abdominal compartment syndrome after damage control",
+     "stem": "A 40-year-old man is 14 hours after damage-control laparotomy with perihepatic packing and a temporary closure that was made tight because of fascial retraction concerns. He has received 9 L of crystalloid and blood. Peak airway pressure has risen from 26 to 44 cmH2O, urine output is 5 mL/h for 3 hours, and he needs escalating norepinephrine. Bladder pressure is 31 mmHg. What is the most appropriate management?",
+     "choices": [
+      "Immediate decompressive laparotomy with a looser temporary abdominal closure",
+      "Furosemide infusion to increase urine output",
+      "Additional 2-L crystalloid bolus to improve preload",
+      "CT scan of the abdomen to look for ongoing bleeding before any intervention",
+      "Increase PEEP and continue observation with hourly bladder pressures"
+     ],
+     "answer": 0,
+     "explain": "Bladder pressure **31 mmHg (IAH grade III)** ร่วมกับ **อวัยวะล้มเหลวใหม่** (peak pressure สูง, oliguria, vasopressor เพิ่ม) = **abdominal compartment syndrome** (ทั้ง primary จาก packs และ secondary จาก resuscitation) ต้อง **decompress ทันที** — Schwartz: ล่าช้า mortality 70% ไม่ decompress เสียชีวิตเกือบทั้งหมด ทำได้ที่ ICU ถ้าผู้ป่วยไม่เสถียรพอจะย้าย\n- **Furosemide** ไม่แก้ความดันในช่องท้องและไตมี perfusion ต่ำ\n- **เพิ่ม crystalloid** ยิ่งเพิ่ม bowel edema และ IAP\n- **CT ก่อน** ทำให้ล่าช้าและอันตรายต่อการเคลื่อนย้าย\n- **เพิ่ม PEEP และเฝ้าดู** ไม่แก้สาเหตุ ทำให้ venous return ลดลงอีก",
+     "pearl": "IAP สูง + oliguria + airway pressure ↑ + hypotension = ACS → decompress ทันที",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-1-4",
+     "kind": "mcq",
+     "topic": "Vascular damage control — SMA injury",
+     "stem": "During damage-control laparotomy for a gunshot wound, a 26-year-old man is found to have a near-transection of the proximal superior mesenteric artery just below the pancreas, along with a duodenal injury. He is hypothermic, acidotic and coagulopathic. Proximal and distal control has been obtained. What is the best management of the arterial injury?",
+     "choices": [
+      "Insert a temporary intravascular shunt and plan delayed reconstruction",
+      "Ligate the superior mesenteric artery",
+      "Perform a saphenous vein interposition graft now",
+      "Perform an aortomesenteric bypass with prosthetic graft now",
+      "Embolize the artery with coils in interventional radiology"
+     ],
+     "answer": 0,
+     "explain": "ในภาวะ damage control หลอดเลือดที่ **ต้องคง flow** เช่น **SMA** ไม่ควร ligate (ลำไส้เล็กและ right colon ขาดเลือด) วิธีที่เร็วและคง perfusion คือ **temporary intravascular shunt** (เช่น Pruitt-Inahara หรือ chest tube/feeding tube ขนาดพอดี) แล้วทำ reconstruction เมื่อ physiology ดีขึ้น (ตำราแนะนำ reconstruct หลัง shunt ภายในราว 6 ชม.)\n- **Ligate SMA** ทำให้ bowel ischemia กว้าง (ต่างจาก celiac ที่ ligate ได้เพราะมี collateral)\n- **Vein interposition graft ตอนนี้** ใช้เวลามาก ผิดหลัก DCS ในผู้ป่วย lethal triad\n- **Aortomesenteric prosthetic bypass ตอนนี้** ใช้เวลามาก และมี enteric contamination\n- **Coil embolization** คือการ occlude หลอดเลือด ผลเหมือน ligation",
+     "pearl": "DCS: celiac ligate ได้ · SMA ต้อง shunt · venous ligate ได้ยกเว้น suprarenal IVC/popliteal",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-03-2",
+   "title": "Thoracic & cardiac injury และ resuscitative thoracotomy",
+   "summary": "ผู้บาดเจ็บทรวงอกรายใดต้องผ่าตัด ลำดับการจัดการ blunt aortic injury เป็นอย่างไร และใครคุ้มที่จะทำ resuscitative thoracotomy",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 7 — Primary survey (tamponade, RT), thoracic injuries, BAI, cardiac injury",
+   "md": "### Thoracic injuries ที่ต้องผ่าตัด\nผู้บาดเจ็บทรวงอกส่วนใหญ่ (ราว 85%) รักษาได้ด้วย **tube thoracostomy** อย่างเดียว ที่เหลือต้องผ่าตัดตามเกณฑ์\n\n| ข้อบ่งชี้ thoracotomy (Schwartz Table 7-10) |\n|---|\n| Chest tube ครั้งแรก **มากกว่า 1,000 mL (penetrating)** หรือ **มากกว่า 1,500 mL (blunt)** |\n| ออกต่อเนื่อง **มากกว่า 200 mL/ชม. นาน 3 ชม.ติดกัน** ในผู้ที่ไม่มี coagulopathy |\n| Caked hemothorax แม้ใส่ chest tube 2 สาย |\n| Great vessel injury (endovascular ได้ในบางราย), pericardial tamponade, cardiac herniation |\n| Massive air leak ที่ระบายอากาศไม่พอ, tracheal/main bronchus injury |\n| Open pneumothorax, esophageal perforation, air embolism |\n\n- **Massive hemothorax** = มากกว่า 1,500 mL ในผู้ใหญ่ · แหล่งที่พบบ่อยคือ intercostal/internal mammary artery และ lung parenchyma\n- **Retained hemothorax** หลัง chest tube → **VATS เร็ว (ภายในราว 3–7 วัน)** ลด empyema และ fibrothorax (EAST)\n- เทคนิค lung damage control: **stapled wedge**, **pulmonary tractotomy** (GIA เปิด track แล้ว ligate vessel/bronchus) · **pneumonectomy ทนได้ไม่ดี** (RV failure; inhaled NO อาจช่วย)\n- **Flail chest** (ซี่โครงหัก 3 ซี่ติดกันขึ้นไป ซี่ละ 2 ตำแหน่ง): ปัญหาจริงคือ **pulmonary contusion** ไม่ใช่ paradoxical movement · ระงับปวด (epidural/nerve block), pulmonary toilet, เลี่ยง fluid เกิน, พิจารณา surgical rib fixation ในรายที่เหมาะสม\n\n### Blunt aortic injury (BAI)\n- Mechanism: rapid deceleration · ตำแหน่ง **aortic isthmus** (distal ต่อ left subclavian ที่ ligamentum arteriosum)\n- CXR: mediastinum กว้าง, aortic knob หาย, **left apical cap**, trachea/NG tube เบนขวา, left mainstem bronchus กดลง · วินิจฉัยด้วย **CTA chest**\n\n| SVS grade | ลักษณะ | การรักษา |\n|---|---|---|\n| I | intimal tear | **antiplatelet + BP control** (nonoperative) |\n| II | intramural hematoma | ส่วนใหญ่ TEVAR (บางรายเฝ้าดู) |\n| III | **pseudoaneurysm** | **TEVAR** |\n| IV | rupture | TEVAR/ผ่าตัดฉุกเฉิน |\n\n- ทันทีที่สงสัย: **esmolol** (β1-selective) เป้า **SBP น้อยกว่า 100 mmHg และ HR น้อยกว่า 100/min** (ลด dP/dt)\n- **ลำดับความสำคัญ**: ห้ามเลือดในช่องท้อง, unstable pelvis และ intracranial hemorrhage **ก่อน** ซ่อม aorta ที่ยัง contained\n- **TEVAR** เป็นมาตรฐาน (open repair ใช้ partial left heart bypass ลด paraplegia) · ข้อกังวลคือผลระยะยาวในคนอายุน้อย\n\n### Cardiac injury และ tamponade\n- **Penetrating**: ส่วนใหญ่เป็น stab wound ที่ \"cardiac box\" · **Beck triad** (hypotension, distended neck veins, muffled heart sounds) พบครบไม่บ่อย · **FAST pericardial view** เป็นเครื่องมือหลัก (false negative ได้เมื่อมี hemothorax ร่วมเพราะเลือดระบายเข้าช่องอก)\n- Stable + FAST บวก → **OR: median sternotomy** (หรือ subxiphoid pericardial window ก่อนถ้าไม่ชัด) · unstable ใน ED → pericardiocentesis/drain เป็นเพียง **bridge** (ดูดเพียง 15–20 mL ก็ช่วย; สำเร็จราว 80% ล้มเหลวเมื่อเลือดเป็นลิ่ม) · SBP คงที่ **น้อยกว่า 60 mmHg → resuscitative thoracotomy**\n- เทคนิคซ่อม: ใช้นิ้วอุด → **3-0 polypropylene** running หรือ skin stapler ชั่วคราว · **RV ผนังบางใช้ pledgets** · ระวัง coronary artery (horizontal mattress ใต้ coronary) · atrium ใช้ Satinsky clamp\n- **Blunt cardiac injury**: ตรวจ **ECG + troponin** ทุกรายที่สงสัย — **ทั้งสองปกติ = ตัด BCI ที่สำคัญออกได้** · ผิดปกติ → continuous monitoring 24 ชม. ± echo\n\n### Resuscitative thoracotomy (RT): ใครควรทำ\n| ข้อบ่งชี้ (salvageable post-injury arrest) | เกณฑ์ CPR |\n|---|---|\n| **Penetrating torso**, witnessed | CPR ก่อนถึง รพ. **น้อยกว่า 15 นาที** |\n| **Blunt**, witnessed | CPR **น้อยกว่า 10 นาที** |\n| Penetrating neck/extremity | CPR **น้อยกว่า 5 นาที** |\n| Persistent SBP **60 mmHg หรือต่ำกว่า** | จาก tamponade, hemorrhage (intrathoracic, abdominal, extremity, cervical), air embolism |\n\n**ข้อห้าม**: penetrating CPR มากกว่า 15 นาทีและไม่มี signs of life · **blunt CPR มากกว่า 10 นาทีและไม่มี signs of life หรือ asystole ที่ไม่มี tamponade** (signs of life = pupillary response, respiratory effort, motor activity, electrical activity)\n\nผลลัพธ์ (Schwartz): **isolated cardiac stab ดีที่สุด** — รอด 35% ถ้ามาด้วยช็อก, 20% ถ้าไม่มี vital signs · penetrating รวม 15% · **blunt: 2% ถ้าช็อก, น้อยกว่า 1% ถ้าไม่มี vital signs**\n\n### ขั้นตอน RT\n1. **Left anterolateral thoracotomy** ช่องซี่โครงที่ 4–5 (เริ่มจากขวาของ sternum ขยายเป็น clamshell ได้)\n2. **เปิด pericardium ตามยาวด้านหน้าต่อ phrenic nerve** → ปล่อย tamponade, ซ่อมหัวใจ **ก่อน** ให้ epinephrine/calcium\n3. **Cross-clamp descending aorta** (เพิ่ม coronary/cerebral perfusion, ลดเลือดออกช่องท้อง)\n4. Pulmonary hilar clamp/hilar twist สำหรับ massive lung bleeding หรือ **air embolism** (ดูด air จาก LV/aortic root, Trendelenburg)\n5. **Open cardiac massage สองมือ** (มือเดียวเสี่ยงนิ้วโป้งทะลุหัวใจ)\n6. ต้องได้ **SBP 70 mmHg** หลัง RT จึงถือว่า resuscitable → ย้ายไป OR\n",
+   "pearls": [
+    "Thoracotomy: chest tube แรก มากกว่า 1,000 mL (penetrating)/1,500 mL (blunt) หรือ มากกว่า 200 mL/h × 3 ชม.",
+    "Retained hemothorax → VATS เร็ว (3–7 วัน)",
+    "BAI: esmolol SBP น้อยกว่า 100, HR น้อยกว่า 100 · ห้ามเลือดที่อื่นก่อน · grade III TEVAR, grade I antiplatelet",
+    "BCI: ECG + troponin ปกติทั้งคู่ = ตัดออกได้",
+    "RT: penetrating CPR น้อยกว่า 15 นาที, blunt น้อยกว่า 10 นาที, neck/extremity น้อยกว่า 5 นาที, SBP 60 หรือต่ำกว่า",
+    "RT รอด: cardiac stab 35% (ช็อก)/20% (ไม่มี VS) · blunt 2%/น้อยกว่า 1%",
+    "เปิด pericardium หน้าต่อ phrenic nerve · ต้องได้ SBP 70 หลัง RT"
+   ],
+   "items": [
+    {
+     "id": "RES-03-2-1",
+     "kind": "mcq",
+     "topic": "Resuscitative thoracotomy — futility in blunt arrest",
+     "stem": "A 45-year-old man is ejected in a high-speed crash. Paramedics witnessed loss of pulses at the scene and performed CPR for 14 minutes before arrival. In the ED he has no pupillary response, no respiratory effort and no motor activity; the monitor shows asystole. Bedside ultrasound shows no pericardial fluid and no cardiac motion. What is the most appropriate action?",
+     "choices": [
+      "Cease resuscitation and pronounce death",
+      "Perform left anterolateral resuscitative thoracotomy with aortic cross-clamping",
+      "Perform bilateral finger thoracostomies and continue CPR for another 15 minutes",
+      "Place a Zone I REBOA and continue closed-chest CPR",
+      "Perform pericardiocentesis and continue CPR"
+     ],
+     "answer": 0,
+     "explain": "ข้อห้าม RT ตาม Schwartz/WTA: **blunt trauma ที่ CPR มากกว่า 10 นาทีโดยไม่มี signs of life** หรือ **asystole ที่ไม่มี tamponade** ผู้ป่วยรายนี้เข้าทั้งสองข้อ และ ultrasound ไม่มีการเคลื่อนไหวของหัวใจ อัตรารอดของ blunt arrest ที่ไม่มี vital signs น้อยกว่า 1% จึง **หยุดการกู้ชีพ**\n- **RT** ไม่มีประโยชน์ในกลุ่มนี้และเพิ่มความเสี่ยงต่อทีม (blood-borne exposure)\n- **Finger thoracostomy + CPR ต่อ** อาจทำได้เพื่อตัด tension PTX ก่อนตัดสิน แต่การ CPR ต่ออีก 15 นาทีในภาวะ asystole ไม่ได้ประโยชน์\n- **REBOA** ไม่มีบทบาทใน asystole หลัง blunt CPR นาน\n- **Pericardiocentesis** ไม่มี pericardial fluid ให้ระบาย",
+     "pearl": "Blunt: CPR มากกว่า 10 นาทีไม่มี signs of life หรือ asystole ไม่มี tamponade = ไม่ทำ RT",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-2-2",
+     "kind": "mcq",
+     "topic": "Thoracotomy threshold after chest tube",
+     "stem": "A 23-year-old man is stabbed in the right chest at the 6th intercostal space, midaxillary line. BP 96/60 mmHg, HR 118/min. A right tube thoracostomy immediately drains 1,250 mL of blood. Repeat chest radiograph shows residual opacification. FAST shows no pericardial fluid. What is the most appropriate next step?",
+     "choices": [
+      "Operative thoracotomy",
+      "Place a second chest tube and observe output for 3 hours",
+      "CT angiography of the chest",
+      "Video-assisted thoracoscopic surgery in 3 to 5 days",
+      "Angioembolization of the intercostal arteries"
+     ],
+     "answer": 0,
+     "explain": "เกณฑ์ใน Schwartz Table 7-10: drainage ครั้งแรก **มากกว่า 1,000 mL ใน penetrating** (มากกว่า 1,500 mL ใน blunt) หรือ **มากกว่า 200 mL/ชม. นาน 3 ชม.** ผู้ป่วย penetrating ได้ 1,250 mL ร่วมกับ hemodynamic ไม่ปกติ → **thoracotomy** (อาจต้องตรวจกะบังลมและช่องท้องด้วยเพราะแผลอยู่ต่ำ)\n- **Chest tube สายที่สองแล้วรอ 3 ชม.** ทำให้ล่าช้าในผู้ที่เข้าเกณฑ์แล้ว\n- **CTA** ไม่เหมาะกับผู้ป่วยที่เลือดออกมากและไม่คงที่\n- **VATS ใน 3–5 วัน** ใช้กับ retained hemothorax ในผู้ป่วยคงที่\n- **Angioembolization** อาจใช้กับ intercostal bleeding ในผู้คงที่บางราย ไม่ใช่ทางเลือกหลักที่นี่",
+     "pearl": "Chest tube แรก มากกว่า 1,000 mL (penetrating)/1,500 mL (blunt) หรือ มากกว่า 200 mL/h × 3 ชม. → thoracotomy",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-2-3",
+     "kind": "mcq",
+     "topic": "Blunt aortic injury with associated hemorrhage",
+     "stem": "A 38-year-old woman involved in a head-on collision has a grade III blunt aortic injury (10-mm pseudoaneurysm at the isthmus) on CT angiography and a grade IV splenic injury with active extravasation and a large hemoperitoneum. BP 92/58 mmHg, HR 116/min after 2 units RBC. GCS 15. What is the most appropriate sequence of management?",
+     "choices": [
+      "Control the splenic hemorrhage first (splenectomy or embolization) with anti-impulse therapy once bleeding is controlled, then TEVAR",
+      "Immediate TEVAR, then address the spleen",
+      "Open aortic repair via left thoracotomy with partial left heart bypass first",
+      "Start esmolol now to reduce SBP below 100 mmHg while the spleen continues to bleed, then observe",
+      "Nonoperative management of both injuries with serial CT"
+     ],
+     "answer": 0,
+     "explain": "ใน BAI ที่ยัง **contained (pseudoaneurysm)** ภาวะที่คุกคามชีวิตเร่งด่วนกว่าคือ **intra-abdominal hemorrhage** — Schwartz: การผ่าตัดห้ามเลือดในช่องท้อง unstable pelvis หรือ intracranial มาก่อนการซ่อม aorta → ห้ามเลือดม้ามก่อน แล้วเริ่ม **anti-impulse therapy** (esmolol, SBP น้อยกว่า 100, HR น้อยกว่า 100) เมื่อไม่ช็อกแล้ว ตามด้วย **TEVAR** (มาตรฐานปัจจุบันของ grade III)\n- **TEVAR ก่อน** ปล่อยให้เลือดออกจากม้ามต่อ ซึ่งเป็นสาเหตุช็อกจริง\n- **Open repair ก่อน** ยิ่งใช้เวลาและต้อง heparin\n- **Esmolol ขณะยังเลือดออกและ hypotension** ทำให้ช็อกแย่ลง ต้องห้ามเลือดก่อน\n- **Nonoperative ทั้งคู่** ไม่เหมาะกับม้ามที่มี blush ในผู้ไม่คงที่ และ pseudoaneurysm ที่ควร TEVAR",
+     "pearl": "BAI contained: ห้ามเลือดที่อื่นก่อน → anti-impulse (SBP น้อยกว่า 100, HR น้อยกว่า 100) → TEVAR",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-2-4",
+     "kind": "mcq",
+     "topic": "Penetrating cardiac injury in stable patient",
+     "stem": "A 19-year-old man has a stab wound just left of the sternum at the 4th intercostal space. BP 112/74 mmHg, HR 104/min, no jugular venous distension. Chest radiograph shows no hemothorax. FAST subxiphoid view shows a pericardial fluid collection. What is the most appropriate next step?",
+     "choices": [
+      "Transfer to the operating room for median sternotomy and cardiac repair",
+      "Ultrasound-guided pericardiocentesis and admission for observation",
+      "CT angiography of the chest to define the injury",
+      "Repeat FAST in 6 hours and operate if the effusion enlarges",
+      "Resuscitative thoracotomy in the emergency department"
+     ],
+     "answer": 0,
+     "explain": "แผล cardiac box + **FAST pericardial บวก** = hemopericardium จาก cardiac injury จนกว่าพิสูจน์ว่าไม่ใช่ ผู้ป่วยยังคงที่จึงควรไป **OR** เพื่อ **median sternotomy** (หรือ subxiphoid pericardial window ก่อนแล้ว sternotomy ถ้าพบเลือด) และซ่อมด้วย polypropylene ± pledgets ผู้ป่วยแบบนี้อาจทรุดเป็น tamponade ได้ทันที\n- **Pericardiocentesis + observe** เป็นเพียงการ bridge ในผู้ไม่คงที่ และลิ่มเลือดมักดูดไม่ออก\n- **CTA** ทำให้ล่าช้าและไม่เปลี่ยนการตัดสินใจ\n- **รอ FAST ซ้ำ 6 ชม.** เสี่ยง tamponade/arrest\n- **RT ใน ED** สงวนสำหรับ SBP 60 หรือต่ำกว่าหรือ arrest ไม่ใช่ผู้ป่วยที่ BP ปกติ",
+     "pearl": "Cardiac box stab + FAST pericardial บวก + stable → OR sternotomy (pericardiocentesis = bridge)",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-03-3",
+   "title": "Solid organ injury (AAST) & NOM, hollow viscus และ pancreaticoduodenal injury",
+   "summary": "ผู้ป่วยรายใดรักษาตับ/ม้ามแบบไม่ผ่าตัดได้ เมื่อไรต้อง angio หรือผ่าตัด และจะซ่อม colon, duodenum, pancreas อย่างไร",
+   "minutes": 18,
+   "source": "Schwartz 11e Ch 7 — Abdominal evaluation (CT, AAST grading), liver, spleen, duodenum, pancreas, colon and rectum",
+   "md": "### หลัก nonoperative management (NOM) ของ solid organ injury\n- เงื่อนไข: **hemodynamically stable**, **ไม่มี peritonitis**, ไม่มีข้อบ่งชี้ laparotomy อื่น, มีทีม/ICU/OR/IR พร้อม · **absolute contraindication เดียวคือ hemodynamic instability จาก intraperitoneal hemorrhage**\n- Grade สูง (มากกว่า II) → ICU, ตรวจ Hb และหน้าท้องซ้ำ, **NPO อย่างน้อย 48 ชม.** สำหรับ grade III ขึ้นไป\n- ตัวทำนาย NOM ล้มเหลว: **grade สูง, hemoperitoneum มาก, contrast blush, pseudoaneurysm**\n- CT ต้องรายงาน: grade, **contrast extravasation (blush)**, ปริมาณเลือด, pseudoaneurysm · FAST บอกว่ามีน้ำมากกว่า 250 mL แต่ไม่บอกแหล่ง/grade\n\n| AAST (ตามตาราง Schwartz) | Liver | Spleen |\n|---|---|---|\n| I | subcapsular hematoma น้อยกว่า 10% · laceration ลึกน้อยกว่า 1 cm | เหมือนกัน |\n| II | 10–50% · ลึก 1–3 cm | เหมือนกัน |\n| III | มากกว่า 50% หรือ intraparenchymal มากกว่า 10 cm · ลึกมากกว่า 3 cm | เหมือนกัน |\n| IV | parenchymal disruption 25–75% ของ lobe | devascularization มากกว่า 25% · hilum |\n| V | มากกว่า 75% ของ lobe (± juxtahepatic venous injury) | **shattered** หรือ devascularized ทั้งหมด |\n| VI | hepatic avulsion | — |\n\n(AAST 2018 เพิ่ม vascular injury: active bleeding ภายในอวัยวะ = III, ออกนอกอวัยวะเข้าช่องท้อง = IV สำหรับ liver/V สำหรับ spleen)\n\n### Liver และ spleen: เมื่อ NOM ไม่พอ\n**Liver**\n- **Angiography/embolization** เมื่อต้องให้เลือด **4 units ใน 6 ชม. หรือ 6 units ใน 24 ชม.** จากตับ หรือมี blush · หลัง embolize ระวัง hepatic necrosis, gallbladder ischemia\n- ภาวะแทรกซ้อนของ NOM: **biloma/bile leak** → percutaneous drainage + **ERCP sphincterotomy/stent** · hemobilia → angioembolization · bile ascites/bile peritonitis → laparoscopic washout\n- Laparotomy (ราว 15%): **perihepatic packing + manual compression** ก่อน → **Pringle** (ถ้ายังเลือดออกแม้ทำ Pringle ให้คิดถึง hepatic vein/retrohepatic IVC) → finger fracture ligate vessel · แผลยิงทะลุ: balloon tamponade · retrohepatic IVC: packing เป็นหลัก (atriocaval shunt/total vascular isolation แทบไม่รอด)\n- ตับมักเลือดออกซ้ำภายใน 48 ชม.\n\n**Spleen**\n- NOM สำเร็จมาก แต่ **15–20% ต้อง splenectomy เร็ว** · ข้อบ่งชี้ผ่าตัดเร็วในผู้ใหญ่: **ต้องเริ่มให้เลือดภายใน 12 ชม.แรก** และ hemodynamic instability\n- **Angioembolization** สำหรับ high grade โดยเฉพาะมี **blush** หรือ pseudoaneurysm (proximal vs distal coil)\n- **Delayed rupture** เกิดได้ **หลายสัปดาห์** (ต่างจากตับ) → แนะนำงดกิจกรรมกระทบกระแทก\n- Splenectomy → วัคซีน **pneumococcal, meningococcal, Hib** (ราววันที่ 14 หรือก่อนจำหน่ายถ้าเสี่ยงไม่กลับมา) ป้องกัน **OPSI** · ภาวะแทรกซ้อน: subphrenic abscess, pancreatic tail injury, thrombocytosis\n\n### Hollow viscus injury: วินิจฉัยและเลือกการซ่อม\n- พลาดง่ายใน blunt trauma: **seat-belt sign**, **Chance fracture**, free fluid ใน CT **โดยไม่มี solid organ injury**, mesenteric stranding/bowel wall thickening → ตรวจซ้ำ/laparoscopy/laparotomy\n- **Small bowel**: รูเล็ก (น้อยกว่า 50% ของเส้นรอบวง) → primary repair (single-layer running) · มากกว่า 50% หรือหลายรูใกล้กัน หรือ mesenteric devascularization → resection + anastomosis\n- **Colon**: **primary repair หรือ resection + anastomosis ปลอดภัยในเกือบทุกราย** (nondestructive และ destructive) · ใช้ **physiology ของผู้ป่วย** ไม่ใช่ลักษณะแผลในการตัดสิน · left colon ที่ทำ DCS มี leak มากกว่า 40% → พิจารณา colostomy หรือ anastomosis + diverting ileostomy\n- **Extraperitoneal rectum**: **proximal diversion** (sigmoid loop colostomy) — ไม่ต้อง presacral drainage หรือ distal rectal washout (EAST) · intraperitoneal rectum ซ่อมเหมือน colon\n\n### Duodenum และ pancreas\n| การบาดเจ็บ | การรักษา |\n|---|---|\n| **Duodenal hematoma** (เช่น handlebar ในเด็ก) | **NG suction + PN** หายราว 2 สัปดาห์ · ไม่ดีขึ้นใน 3 สัปดาห์ → ผ่าตัด · สงสัยทะลุ (retroperitoneal air, contrast leak) → ผ่าตัด |\n| Duodenal laceration เล็ก | **primary repair** running single-layer 3-0 ขวางเพื่อคง lumen |\n| D1 สูญเสียเนื้อเยื่อมาก | debride + end-to-end anastomosis |\n| **D2 สูญเสียเนื้อเยื่อ** | **Roux-en-Y duodenojejunostomy (patch)** — D2 ยึดกับ pancreas ระดมได้ไม่เกิน 1 cm |\n| D3–D4 | resect + duodenojejunostomy |\n| ซ่อมยาก/ร่วม pancreatic head | **pyloric exclusion** (+ gastrojejunostomy) ให้ fistula เป็น end fistula · suture อยู่ได้ราว 3–4 สัปดาห์ · duodenal fistula มักหายใน 6–8 สัปดาห์ |\n| **Pancreas** ไม่มี duct injury (contusion) | NOM หรือ **closed suction drainage** |\n| Proximal (ขวาของ SMV) | **drainage** เป็นหลัก · bile duct ขาด → ligate distal CBD + Roux-en-Y choledochojejunostomy |\n| **Distal (ซ้ายของ SMV) มี duct disruption** | **distal pancreatectomy** (stable: spleen-preserving · unstable: + splenectomy) · ปิด duct ที่ stump |\n| ทำลาย ampulla/ทั้ง CBD + pancreatic duct ใน head/D2 ทั้งหมด | **pancreaticoduodenectomy แบบ staged (damage control ก่อน)** |\n\n- ประเมิน duct: สำรวจตรง, intraoperative pancreatography, ERCP, MRCP · ตรวจ CBD: บีบ gallbladder ดูน้ำดีจากแผล หรือ cholangiography\n- ใน DCS: pancreas ทุกตำแหน่ง **pack + drain** ก่อน\n- ภาวะแทรกซ้อน: pancreatic fistula (ส่วนใหญ่หายเองด้วย drain + nutrition), pseudocyst, abscess, delayed hemorrhage (angioembolization)\n",
+   "pearls": [
+    "NOM: stable + ไม่มี peritonitis · ข้อห้ามเด็ดขาดคือ instability จากเลือดในช่องท้อง",
+    "Failure predictors: grade สูง, hemoperitoneum มาก, blush, pseudoaneurysm",
+    "Liver angio: 4 units ใน 6 ชม. หรือ 6 units ใน 24 ชม. · bile leak → drain + ERCP",
+    "Spleen: 15–20% ต้อง splenectomy เร็ว · ให้เลือดใน 12 ชม.แรก = ผ่าตัด · delayed rupture ได้หลายสัปดาห์",
+    "Colon: primary repair/anastomosis เกือบทุกราย · ตัดสินด้วย physiology",
+    "D2 tissue loss → Roux-en-Y duodenojejunostomy · duodenal hematoma → NG + PN",
+    "Pancreas distal duct injury → distal pancreatectomy · proximal → drain · Whipple เฉพาะ destruction (staged)"
+   ],
+   "items": [
+    {
+     "id": "RES-03-3-1",
+     "kind": "mcq",
+     "topic": "Splenic injury with contrast blush — angioembolization",
+     "stem": "A 29-year-old man fell from a motorcycle. He is alert with left upper quadrant tenderness. BP 124/78 mmHg, HR 96/min, Hb 12.1 g/dL, stable after 1 L crystalloid without transfusion. CT shows a grade IV splenic laceration involving the hilum with a focal contrast blush and moderate hemoperitoneum; no other injuries. There is no peritonitis. Interventional radiology is available. What is the most appropriate management?",
+     "choices": [
+      "Splenic angioembolization with ICU monitoring",
+      "Immediate laparotomy and splenectomy",
+      "Observation on the ward with daily hemoglobin",
+      "Laparoscopic splenorrhaphy",
+      "Discharge with activity restriction for 6 weeks"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **hemodynamically stable** และไม่มี peritonitis จึงเข้าเกณฑ์ **NOM** แต่มีปัจจัยเสี่ยงล้มเหลว (high grade, **contrast blush**, hemoperitoneum ปานกลาง) Schwartz: selective angioembolization เหมาะกับ high-grade โดยเฉพาะที่มี blush → **angioembolization + ICU** ตรวจ Hb/หน้าท้องซ้ำ NPO 48 ชม.\n- **Splenectomy ทันที** เหมาะเมื่อ unstable หรือต้องให้เลือดเร็วใน 12 ชม.แรก\n- **Ward observation** สำหรับ grade IV ที่มี blush เสี่ยงล้มเหลวสูงและควรอยู่ ICU\n- **Laparoscopic splenorrhaphy** ไม่ใช่มาตรฐานใน high-grade hilar injury\n- **จำหน่ายกลับบ้าน** อันตรายอย่างยิ่ง",
+     "pearl": "Stable + high-grade spleen + blush → angioembolization + ICU",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-3-2",
+     "kind": "mcq",
+     "topic": "Distal pancreatic duct injury",
+     "stem": "A 34-year-old man sustains a stab wound to the epigastrium and undergoes laparotomy. He is hemodynamically normal, normothermic, and has no other significant injuries. There is a complete transection of the pancreatic body to the left of the superior mesenteric vein with obvious main duct disruption. The spleen is uninjured. What is the most appropriate procedure?",
+     "choices": [
+      "Spleen-preserving distal pancreatectomy with closure of the pancreatic duct at the stump",
+      "Closed suction drainage alone",
+      "Pancreaticoduodenectomy",
+      "Primary suture repair of the pancreatic duct over a stent",
+      "Distal pancreatectomy with splenectomy and drainage of the pancreatic head"
+     ],
+     "answer": 0,
+     "explain": "การบาดเจ็บ pancreas **distal (ซ้ายของ SMV) ที่มี main duct disruption** รักษาด้วย **distal pancreatectomy** ในผู้ป่วยคงที่ควร **preserve spleen** (หลีกเลี่ยง OPSI) และปิด duct ที่ stump แยกหรือด้วย stapler ± fibrin glue\n- **Drainage อย่างเดียว** ใช้กับ contusion/ไม่มี duct injury หรือ injury ด้านขวาของ SMV — ใน distal duct transection จะเกิด high-output fistula\n- **Pancreaticoduodenectomy** สำหรับการทำลาย head/ampulla/D2 ไม่ใช่ body\n- **ซ่อม duct over stent** มี stricture/fistula สูง ไม่ใช่มาตรฐาน\n- **Distal pancreatectomy + splenectomy** เป็นทางเลือกในผู้ป่วยไม่คงที่ physiology ผู้ป่วยรายนี้ดีจึงควรเก็บม้าม",
+     "pearl": "Distal duct injury → distal pancreatectomy (stable: เก็บม้าม; unstable: + splenectomy)",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-3-3",
+     "kind": "mcq",
+     "topic": "Destructive colon injury in stable patient",
+     "stem": "A 27-year-old man with a single gunshot wound to the abdomen undergoes laparotomy. He was transiently hypotensive in the ED but has been stable intraoperatively after 2 units of RBC, temperature 36.6°C, pH 7.34. There is a destructive injury involving more than 50% of the circumference of the descending colon, with modest local contamination and no other injuries. What is the most appropriate management?",
+     "choices": [
+      "Segmental resection with primary colocolostomy",
+      "Resection with end colostomy and Hartmann pouch",
+      "Primary repair with proximal diverting loop colostomy",
+      "Exteriorization of the injured segment as a loop colostomy",
+      "Resection with ends stapled closed and planned second-look laparotomy"
+     ],
+     "answer": 0,
+     "explain": "หลักฐานจากหลาย prospective studies ที่ Schwartz อ้าง: **primary repair หรือ resection + anastomosis ปลอดภัยในเกือบทุกราย** แม้ destructive colon injury โดยใช้ **physiology ของผู้ป่วย** (ช็อก, transfusion มาก, comorbidity, DCS) เป็นตัวตัดสินแทนลักษณะแผล ผู้ป่วยรายนี้ stable, normothermic, pH ปกติ, ให้เลือดเพียง 2 units → **resection + primary anastomosis**\n- **End colostomy** ต้องผ่าตัดซ้ำปิด stoma โดยไม่ได้ลด morbidity ในผู้ป่วยกลุ่มนี้\n- **Primary repair + diverting colostomy** เพิ่ม stoma morbidity โดยไม่จำเป็น\n- **Exteriorization** เป็นเทคนิคเก่าที่เลิกใช้\n- **Staple ปิดแล้ว second look** สำหรับ damage control ในผู้ป่วย lethal triad",
+     "pearl": "Colon injury ส่วนใหญ่ → primary repair/anastomosis · เลือก stoma ตาม physiology (DCS left colon leak มากกว่า 40%)",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-3-4",
+     "kind": "mcq",
+     "topic": "Duodenal hematoma — nonoperative management",
+     "stem": "An 11-year-old boy fell onto his bicycle handlebar 2 days ago and now has bilious vomiting and epigastric pain. He is afebrile with a soft abdomen. CT shows an intramural hematoma of the second and third portions of the duodenum causing near-complete obstruction, with no free air, no retroperitoneal air and no oral contrast extravasation. Amylase is mildly elevated. What is the most appropriate initial management?",
+     "choices": [
+      "Nasogastric decompression and parenteral nutrition",
+      "Laparotomy with evacuation of the hematoma",
+      "Gastrojejunostomy to bypass the obstruction",
+      "Pyloric exclusion with gastrojejunostomy",
+      "Endoscopic balloon dilation of the duodenum"
+     ],
+     "answer": 0,
+     "explain": "**Duodenal hematoma** ที่ไม่มีหลักฐานทะลุ (ไม่มี free/retroperitoneal air, ไม่มี contrast leak, ไม่มี peritonitis) รักษาแบบ **nonoperative ด้วย NG suction + PN** ส่วนใหญ่หายภายในราว **2 สัปดาห์** (NG output ที่ลดลงมากบอกการหาย) ถ้าไม่ดีขึ้นใน **3 สัปดาห์** หรือสงสัยทะลุจึงผ่าตัด · ในเด็กต้องคิดถึง pancreatic injury ร่วมและ child abuse ถ้าประวัติไม่เข้ากัน\n- **Laparotomy evacuate hematoma** ไม่จำเป็นในช่วงแรกและเสี่ยงเปลี่ยน hematoma เป็นรูทะลุ\n- **Gastrojejunostomy** เป็นการรักษาเกินจำเป็นของภาวะที่หายเอง\n- **Pyloric exclusion** ใช้กับการซ่อม duodenum ที่ทะลุซับซ้อน\n- **Endoscopic dilation** อาจทำให้ทะลุ",
+     "pearl": "Duodenal hematoma: NG + PN ราว 2 สัปดาห์ · ไม่ดีขึ้น 3 สัปดาห์ หรือสงสัยทะลุ → ผ่าตัด",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-03-4",
+   "title": "Vascular, pelvic & extremity injury",
+   "summary": "จะแยก hard/soft signs ของ vascular injury อย่างไร เมื่อไรต้อง fasciotomy และจะหยุดเลือดจาก pelvic fracture ด้วยวิธีใด",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 7 — Vascular injury, compartment syndromes, pelvic fracture hemorrhage control, retroperitoneal exposure",
+   "md": "### Peripheral vascular injury: hard signs vs soft signs\n| Hard signs → **ผ่าตัดเลย** | Soft signs → ตรวจเพิ่ม |\n|---|---|\n| **Pulsatile hemorrhage** | อยู่ใกล้หลอดเลือดใหญ่ (proximity) |\n| **Absent distal pulses** | hematoma ขนาดมากที่ไม่โตขึ้น |\n| **Acute ischemia** (6P) | nerve injury ร่วม |\n| Expanding/pulsatile hematoma, thrill หรือ bruit (ตำราส่วนใหญ่จัดเป็น hard sign) | **A-A index (API) น้อยกว่า 0.9** |\n\n- **API/A-A index** = SBP ข้างที่บาดเจ็บ ÷ ข้างปกติ · **น้อยกว่า 0.9 → CTA** · 0.9 ขึ้นไปและไม่มี hard sign → สังเกตอาการได้\n- Hard signs: ไป OR ได้เลย (ไม่ต้อง CTA) อาจทำ **on-table angiography** เพื่อระบุตำแหน่งเมื่อมีหลายแผล/shotgun\n- คู่ fracture–artery ที่ต้องจำ: clavicle/first rib → subclavian · shoulder dislocation/proximal humerus → axillary · **supracondylar humerus/elbow dislocation → brachial** · femur → SFA · **knee dislocation → popliteal** (ต้องตรวจ API ทุกราย)\n- เทคนิค: proximal/distal control, Fogarty thrombectomy ทั้งสองทิศ, **heparinized saline** ฉีดเฉพาะที่, debride ขอบ, **interposition graft: autologous saphenous vein จากขาด้านตรงข้าม** (PTFE ได้ใน vessel ใหญ่/contaminated น้อย), ปิดคลุม graft ด้วยเนื้อเยื่อ · ตรวจ completion angiogram\n- **Fracture + arterial injury**: **temporary shunt ก่อน** → ทำ fracture fixation → definitive vascular repair (ลด ischemic time และไม่ให้ graft ขาดเมื่อจัดกระดูก)\n- **Venous injury**: ซ่อมได้ถ้าคงที่ (popliteal vein ควรซ่อม) · DCS ligate ได้ · Blunt cerebrovascular injury → antithrombotic เป็นหลัก\n\n### Extremity compartment syndrome และ mangled extremity\n- อาการ: **ปวดเกินสัดส่วน** ปวดมากขึ้นเมื่อ **passive stretch** · ชาระหว่างนิ้วเท้าที่ 1–2 (deep peroneal nerve, anterior compartment) เป็นสัญญาณแรก · **ชีพจรหายเป็น late sign**\n- สาเหตุ: เลือดออกในช่อง, venous ligation/thrombosis, crush, **reperfusion หลังซ่อมหลอดเลือด**\n- **ข้อบ่งชี้ fasciotomy (Schwartz)**: **ΔP (diastolic − compartment) น้อยกว่า 30 mmHg**, absolute compartment pressure **มากกว่า 30 mmHg**, **ischemia มากกว่า 6 ชม.**, **combined arterial + venous injury**\n- ขาท่อนล่าง: **two-incision four-compartment fasciotomy** · ต้อง **detach soleus จาก tibia** เพื่อเปิด deep posterior compartment · ระวัง superficial peroneal nerve ที่ lateral incision\n- ผลตามมา: rhabdomyolysis → myoglobinuria (urine output 1–2 mL/kg/h ขึ้นไป), hyperkalemia\n- **Mangled extremity**: primary amputation พิจารณาเมื่อ bone + soft tissue + vessel + nerve (โดยเฉพาะ **nerve transection**) เสียหายรุนแรงร่วมกับ ischemia นาน หรือผู้ป่วยต้อง DCS · MESS 7 ขึ้นไปเป็นเพียงแนวทางประกอบ ไม่ใช่เกณฑ์เดี่ยว · ตัดสินใจร่วมกับ orthopedics/plastic\n\n### Unstable pelvic fracture: binder, packing, angio\n- **85% ของเลือดออกจาก pelvic fracture มาจาก venous plexus และกระดูก** — มีเพียงส่วนน้อยเป็น arterial\n- ED: **pelvic binder/sheet ที่ระดับ greater trochanters** ทันทีในผู้ไม่คงที่ (ไม่ต้องรอ X-ray ถ้ากลไกเข้าได้), DCR, **หาแหล่งเลือดอื่น** (FAST, CXR) — FAST บวก + unstable → laparotomy ก่อน\n- ตรวจ **urethra (blood at meatus → retrograde urethrogram ก่อน Foley)**, rectum, vagina — open pelvic fracture ที่ perineum → พิจารณา **diverting colostomy**\n\n| ทางเลือกห้ามเลือด | ข้อดี/ข้อบ่งชี้ |\n|---|---|\n| **Preperitoneal pelvic packing (PPP)** + anterior external fixation | เหมาะกับ venous/bony bleeding · ทำได้ใน **น้อยกว่า 30 นาที** ผ่าน suprapubic incision ใส่ laparotomy pads **6 ผืน** (เด็ก 4) ใน paravesical space · ทำร่วม laparotomy/อื่น ๆ ได้ · ไม่ต้องรอ IR |\n| **Angioembolization** | **arterial bleeding**: CT contrast blush ใน transient responder หรือเลือดออกต่อหลัง PPP (**มากกว่า 4 units RBC ใน 12 ชม.แรก** หลังแก้ coagulopathy) |\n| **REBOA zone III** | bridge ใน SBP น้อยกว่า 80 ระหว่างไป OR/IR |\n| External fixation / C-clamp | ลดปริมาตร pelvis และกันกระดูกขยับ |\n\n- **ถอด packs ภายใน 48 ชม.** หลังแก้ coagulopathy · **repacking เพิ่มการติดเชื้อถึง 47%** → ใช้ topical hemostatic/จี้ให้ได้ตอนเอาออก\n\n### Retroperitoneal hematoma: สำรวจหรือไม่\n| Zone | ตำแหน่ง | Blunt | Penetrating |\n|---|---|---|---|\n| **Zone 1** (central/midline) | aorta, IVC, celiac, SMA, pancreas, duodenum | **explore เสมอ** | explore เสมอ |\n| Zone 2 (flank/perirenal) | ไต, ท่อไต, colon | ไม่ explore ถ้าไม่โต/ไม่ pulsatile | explore (ยกเว้นบางรายที่ CT ชัดเจนและคงที่) |\n| Zone 3 (pelvic) | iliac vessels | **ไม่ explore** — ใช้ PPP/angio | explore (ควบคุม proximal ก่อน) |\n\n- Zone 1 supracolic: **left medial visceral rotation (Mattox)** เข้าถึง aorta, celiac, proximal SMA, left renal · infracolic/IVC: **right medial visceral rotation (Cattell–Braasch + Kocher)**\n- SMA injury (Fullen zones) และ portal/SMV: venous ligate ได้ในภาวะวิกฤต แต่ต้องเตรียมรับ bowel edema มาก\n",
+   "pearls": [
+    "Hard signs → OR · soft signs/API น้อยกว่า 0.9 → CTA",
+    "Knee dislocation → popliteal · supracondylar humerus → brachial",
+    "Fracture + artery: shunt ก่อน → fix → repair",
+    "Fasciotomy: ΔP น้อยกว่า 30, pressure มากกว่า 30, ischemia มากกว่า 6 ชม., arterial + venous injury",
+    "Pelvic bleeding 85% venous/bony → binder + preperitoneal packing + ex-fix",
+    "Angio หลัง PPP ถ้า มากกว่า 4 units ใน 12 ชม. · ถอด packs ภายใน 48 ชม. (repack ติดเชื้อ 47%)",
+    "Retroperitoneal zone 1 explore เสมอ · zone 3 blunt ไม่ explore"
+   ],
+   "items": [
+    {
+     "id": "RES-03-4-1",
+     "kind": "mcq",
+     "topic": "Hard signs of arterial injury",
+     "stem": "A 24-year-old man has a gunshot wound to the medial right thigh. There is pulsatile bleeding controlled with direct pressure, and the right foot is cool and pale with absent dorsalis pedis and posterior tibial pulses. BP 104/66 mmHg after 2 units RBC. Femur radiograph shows no fracture. What is the most appropriate next step?",
+     "choices": [
+      "Operative exploration with vascular repair, with on-table angiography if needed",
+      "CT angiography of the lower extremity",
+      "Measure the arterial pressure index and repeat in 6 hours",
+      "Duplex ultrasonography of the femoral vessels",
+      "Formal catheter angiography in interventional radiology before deciding"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **hard signs** หลายข้อ (**pulsatile hemorrhage, absent pulses, acute ischemia**) Schwartz Table 7-8: hard sign = **ผ่าตัดเลย** ไม่ต้องรอภาพวินิจฉัย อาจทำ on-table angiography เพื่อระบุตำแหน่ง แผลอยู่ medial thigh สงสัย SFA → proximal/distal control, thrombectomy, interposition graft ด้วย saphenous vein จากขาตรงข้าม พิจารณา fasciotomy\n- **CTA** ใช้กับ soft signs หรือ API น้อยกว่า 0.9 ในผู้ไม่มี hard sign — ทำให้ ischemic time ยาวขึ้น\n- **API ซ้ำใน 6 ชม.** ไม่มีที่ใช้เมื่อชีพจรหายและขาดเลือด\n- **Duplex** ขึ้นกับผู้ตรวจ ล่าช้า\n- **Catheter angiography ใน IR** ล่าช้าและไม่จำเป็นเมื่อมี hard signs",
+     "pearl": "Hard signs (pulsatile bleeding, absent pulse, ischemia) → OR ทันที ไม่ต้อง CTA",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-4-2",
+     "kind": "mcq",
+     "topic": "Arterial pressure index after knee dislocation",
+     "stem": "A 30-year-old woman has a posterior knee dislocation from a motorcycle crash that was reduced in the ED. The foot is warm with palpable but diminished pedal pulses. There is no active bleeding or expanding hematoma. The arterial pressure index (injured/uninjured systolic ankle pressure) is 0.82. What is the most appropriate next step?",
+     "choices": [
+      "CT angiography of the injured extremity",
+      "Immediate operative exploration of the popliteal artery",
+      "Discharge with orthopedic follow-up",
+      "Repeat pulse examination in 24 hours without imaging",
+      "Empiric four-compartment fasciotomy"
+     ],
+     "answer": 0,
+     "explain": "Knee dislocation สัมพันธ์กับ **popliteal artery injury** สูง ต้องวัด API ทุกราย ผู้ป่วยไม่มี hard sign แต่ **API น้อยกว่า 0.9** ซึ่งเป็น soft sign ที่ต้อง **CTA** เพื่อหา intimal flap, thrombosis หรือ occlusion ก่อนวางแผนรักษา\n- **Explore ทันที** สำหรับ hard signs; ในรายนี้ภาพวินิจฉัยช่วยวางแผนโดยไม่ทำให้เสี่ยง\n- **จำหน่าย** พลาด popliteal injury ที่อาจลงเอยด้วยการตัดขา\n- **ตรวจชีพจรซ้ำใน 24 ชม.** ช้าเกินไปเมื่อ API ผิดปกติ (ischemia มากกว่า 6 ชม.ทำให้ผลแย่)\n- **Fasciotomy** ยังไม่มีข้อบ่งชี้ (ไม่มี compartment syndrome หรือ ischemia นาน)",
+     "pearl": "API น้อยกว่า 0.9 → CTA · knee dislocation ต้องวัด API ทุกราย",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-4-3",
+     "kind": "mcq",
+     "topic": "Unstable pelvic fracture — preperitoneal packing",
+     "stem": "A 48-year-old man is crushed between a truck and a wall. He has a vertical-shear pelvic fracture with a binder applied. BP 74/40 mmHg, HR 136/min despite 6 units RBC and 6 units plasma. FAST is negative and chest radiograph is normal. Interventional radiology is not available for at least 90 minutes. What is the most appropriate hemorrhage-control strategy?",
+     "choices": [
+      "Preperitoneal pelvic packing with external fixation in the operating room",
+      "Exploratory laparotomy with opening of the pelvic hematoma",
+      "CT scan of the abdomen and pelvis to look for contrast blush",
+      "Continue transfusion and wait for angioembolization",
+      "Bilateral internal iliac artery ligation through a transperitoneal approach"
+     ],
+     "answer": 0,
+     "explain": "เลือดออกจาก pelvic fracture **ราว 85% เป็น venous/bony** และผู้ป่วยไม่คงที่ (non-responder) โดยไม่มีแหล่งอื่น (FAST ลบ อกปกติ) และ IR ไม่พร้อม → **preperitoneal pelvic packing** ผ่าน suprapubic incision (laparotomy pads 6 ผืน, ทำได้ภายใน 30 นาที) + **anterior external fixation** ถ้ายังเลือดออกหลังผ่าตัด (มากกว่า 4 units ใน 12 ชม.หลังแก้ coagulopathy) จึงทำ angioembolization · REBOA zone III เป็น bridge ได้\n- **Laparotomy เปิด pelvic hematoma** ทำลาย tamponade เลือดออกมากขึ้น และ FAST ลบ\n- **CT ในผู้ป่วย BP 74** อันตราย (\"donut of death\")\n- **รอ angio 90 นาที** ในผู้ที่ไม่ตอบสนองต่อเลือดทำให้เสียชีวิต และ angio ไม่แก้ venous bleeding\n- **Internal iliac ligation** ไม่ได้ผลเพราะ collateral มากและไม่หยุด venous bleeding",
+     "pearl": "Unstable pelvis, ไม่มีแหล่งอื่น → binder + PPP + ex-fix · angio สำหรับ arterial/ต่อเนื่อง",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "RES-03-4-4",
+     "kind": "mcq",
+     "topic": "Fasciotomy indications after vascular repair",
+     "stem": "A 36-year-old man undergoes repair of combined popliteal artery and popliteal vein injuries after a gunshot wound. Time from injury to restoration of arterial flow was 7 hours. At the end of the reconstruction the calf is soft, and measured anterior compartment pressure is 22 mmHg with diastolic BP 70 mmHg. What is the most appropriate management of the leg?",
+     "choices": [
+      "Two-incision four-compartment fasciotomy now",
+      "Close the wounds and measure compartment pressures every 4 hours",
+      "Elevate the leg above heart level and start mannitol",
+      "Fasciotomy only if pedal pulses are lost",
+      "Single lateral incision decompressing only the anterior compartment"
+     ],
+     "answer": 0,
+     "explain": "แม้ความดัน compartment ตอนนี้ยังไม่ถึงเกณฑ์ (22 mmHg, ΔP 48) แต่ Schwartz ให้ทำ **fasciotomy** เมื่อ **ischemia มากกว่า 6 ชม.** หรือ **combined arterial + venous injury** — ผู้ป่วยมีทั้งสองข้อ จึงทำ **prophylactic two-incision four-compartment fasciotomy** ทันทีเพื่อกัน reperfusion compartment syndrome (และต้อง detach soleus เพื่อเปิด deep posterior compartment)\n- **ปิดแผลแล้ววัดทุก 4 ชม.** เสี่ยง missed compartment syndrome และสูญเสียขา\n- **ยกขาสูง** ลด arterial inflow ทำให้แย่ลง และ mannitol ไม่ใช่การรักษาหลัก\n- **รอชีพจรหาย** — pulse loss เป็น late sign\n- **Anterior compartment อย่างเดียว** ไม่พอ ต้องเปิดทั้ง 4 compartment",
+     "pearl": "Fasciotomy: ΔP น้อยกว่า 30, compartment มากกว่า 30, ischemia มากกว่า 6 ชม., arterial + venous injury",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-03-MEQ1",
+   "part": "MEQ",
+   "topic": "Penetrating pancreaticoduodenal injury — staged damage control",
+   "vignette": "ชายไทยอายุ 28 ปี ถูกยิงที่ท้องส่วนบนด้านขวา 1 นัด ส่งต่อจาก รพช. ถึง รพ.ศูนย์ 50 นาทีหลังถูกยิง\nV/S: BP 80/50 mmHg, HR 132/min, RR 28/min, GCS 15, อุณหภูมิ 35.6°C\nPE: แผลเข้าที่ right upper quadrant ไม่มีแผลออก ท้องตึง กดเจ็บทั่วไป\nFAST: fluid ที่ Morison pouch · CXR: ไม่มี hemothorax, เห็นกระสุนที่ระดับ L1 ใกล้ midline",
+   "questions": [
+    {
+     "q": "1. จงบอกการจัดการในห้องฉุกเฉินจนถึงห้องผ่าตัด",
+     "a": "- Primary survey, **2 large-bore IV/IO**, เจาะ type & cross, lactate/BD, TEG\n- **Activate MTP** (ABC score: penetrating + SBP 90 หรือต่ำกว่า + HR 120 ขึ้นไป + FAST บวก = 4) · **1:1:1**, **TXA 1 g** (ภายใน 3 ชม.), **CaCl₂**, permissive hypotension, อุ่นร่างกาย, **จำกัด crystalloid**\n- **ไม่ทำ CT** — penetrating + unstable + peritonitis → **laparotomy ทันที**\n- antibiotic ก่อนผ่าตัด, tetanus\n\nเกณฑ์ให้คะแนน: MTP + ratio (2), ไป OR ไม่ CT (2), TXA/Ca/warming (1)"
+    },
+    {
+     "q": "2. ขณะผ่าตัดพบ zone 1 retroperitoneal hematoma, D2 ฉีกขาดเกือบครึ่งวงพร้อมเนื้อเยื่อหาย, pancreatic head แตก, ไม่แน่ใจเรื่อง duct/ampulla, ได้เลือดไป 10 units อุณหภูมิ 34.8°C pH 7.12 BD 16 จะทำอย่างไร",
+     "a": "- **Zone 1 hematoma explore เสมอ** — Kocher maneuver (± Cattell–Braasch) ควบคุมเลือด\n- ผู้ป่วยเข้าเกณฑ์ **damage control** (temp น้อยกว่า 35, pH น้อยกว่า 7.2, BD มากกว่า 15)\n- **DCS**: ห้ามเลือด (ligate/pack), ควบคุม contamination ของ duodenum อย่างรวดเร็ว (เย็บปิดชั่วคราว/staple, NG decompression), **pancreas: pack + closed suction drains** โดย **เลื่อนการประเมิน duct**\n- **ไม่ทำ Whipple ในรอบแรก**\n- Temporary abdominal closure → ICU แก้ lethal triad"
+    },
+    {
+     "q": "3. 36 ชม. ต่อมา physiology ปกติแล้ว กลับมาผ่าตัด พบ duct ปกติ ampulla ไม่ได้รับบาดเจ็บ pancreas เป็น contusion ที่ head D2 มี defect ใหญ่ จะทำ definitive operation อะไร",
+     "a": "- **Duodenum D2 สูญเสียเนื้อเยื่อ** → ซ่อมโดยตรงจะแคบ → **Roux-en-Y duodenojejunostomy (patch)** หรือซ่อมแล้ว **pyloric exclusion + gastrojejunostomy** เพื่อให้ fistula (ถ้าเกิด) เป็น end fistula\n- **Pancreatic head contusion ไม่มี duct injury** → **closed suction drainage**\n- ใส่ **feeding jejunostomy** สำหรับ enteral nutrition\n- ประเมิน CBD (บีบ gallbladder/cholangiogram)\n- ปิด fascia ถ้าทำได้โดยไม่ตึง (ถ้าไม่ได้ ใช้ temporary closure ต่อ)"
+    },
+    {
+     "q": "4. วันที่ 7 หลังผ่าตัด drain ออกน้ำใสสีเขียวปน 600 mL/วัน amylase ใน drain สูงมาก ไข้ต่ำ ๆ จงวินิจฉัยและวางแผนการรักษา",
+     "a": "- **Pancreatic fistula ± duodenal fistula** (bilious = มี duodenal component)\n- **SNAP**: Sepsis — CT หา collection → percutaneous drainage, antibiotic ตามเชื้อ · Nutrition — **EN ทาง feeding jejunostomy** (ส่วนใหญ่ทนได้) ± PN, ทดแทน electrolyte · Anatomy — fistulogram/CT · ปกป้องผิวหนัง\n- พิจารณา somatostatin analogue (ลด output)\n- ส่วนใหญ่ปิดเองได้: duodenal end fistula หายใน **6–8 สัปดาห์** เมื่อระบายดีและไม่มี distal obstruction\n- ระวัง delayed hemorrhage (pseudoaneurysm) → **angioembolization**"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 7",
+    "EAST practice management guidelines — pancreatic and duodenal injury"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-03-OSCE1",
+   "topic": "Penetrating cardiac injury and resuscitative thoracotomy",
+   "station": "Mock oral 10 นาที · Penetrating chest trauma และ resuscitative thoracotomy",
+   "instruction": "**บทบาท**: คุณเป็น senior surgical resident เวร trauma ตอบคำถามผู้คุมสอบ\n\n**สถานการณ์**: ชายอายุ 21 ปี ถูกแทงด้วยมีดที่หน้าอกซ้ายข้าง sternum ช่องซี่โครงที่ 4 มาถึง ED 20 นาทีหลังเหตุ · BP 78/56 mmHg, HR 128/min, คอโป่ง, เสียงหัวใจเบา, SpO₂ 95%, หายใจได้ปกติสองข้าง\n\n**คำถามของผู้คุมสอบ (ทีละข้อ)**\n1. วินิจฉัยเบื้องต้นและจะยืนยันอย่างไร\n2. ถ้า FAST pericardial บวก จะทำอะไรต่อ (ลำดับและสถานที่)\n3. ระหว่างรอห้องผ่าตัด ผู้ป่วยหมดสติ คลำชีพจรไม่ได้ (PEA) จะทำอะไร ใช้เกณฑ์อะไรตัดสิน\n4. อธิบายขั้นตอน resuscitative thoracotomy\n5. เปิดแล้วพบรูที่ right ventricle 1.5 cm อยู่ข้าง LAD จะซ่อมอย่างไร\n6. ถ้าเป็นผู้ป่วย blunt trauma ที่ CPR มาแล้ว 15 นาทีและ asystole คุณจะทำอย่างไร เพราะอะไร",
+   "answer": "1. **Cardiac tamponade** จาก penetrating cardiac injury (Beck triad: hypotension, JVD, muffled heart sounds) · ยืนยันด้วย **FAST subxiphoid pericardial view** (ระวัง false negative ถ้ามี hemothorax) · ตัด tension pneumothorax (1 คะแนน)\n2. Resuscitate (เลือด, MTP standby), **ไป OR ทันทีเพื่อ median sternotomy** · ถ้ายังไม่คงที่และต้องรอ: **pericardiocentesis/pericardial drain ภายใต้ US เป็น bridge** (ดูด 15–20 mL ก็ช่วย; ล้มเหลวเมื่อเป็นลิ่ม) · SBP คงที่ 60 หรือต่ำกว่า → RT (2)\n3. **Resuscitative thoracotomy** ทันที — penetrating torso ที่มี witnessed arrest และ CPR น้อยกว่า 15 นาที คือกลุ่มที่ได้ประโยชน์สูงสุด (isolated cardiac stab รอดราว 35% ถ้าช็อก, 20% ถ้าไม่มี VS) (2)\n4. **Left anterolateral thoracotomy** ช่องซี่โครง 4–5 (ขยายเป็น clamshell ได้) → **เปิด pericardium ตามยาวหน้าต่อ phrenic nerve** ระบายลิ่มเลือด → ควบคุมรูด้วยนิ้ว/ซ่อม **ก่อน** ให้ epinephrine → **cross-clamp descending aorta** → open cardiac massage สองมือ → ถ้าได้ **SBP 70 ขึ้นไป** จึงย้ายไป OR (2)\n5. นิ้วอุดชั่วคราว (หรือ Foley balloon ระวังดึงแรงจนรูขยาย หรือ skin stapler) → ซ่อมด้วย **3-0 polypropylene + pledgets** (RV ผนังบาง) · ใกล้ coronary ใช้ **horizontal mattress ใต้ LAD** ไม่ให้ลิ่มเย็บรัด coronary · หลังผ่าตัด echo หา VSD/valve injury (1)\n6. **ไม่ทำ RT — หยุดกู้ชีพ**: blunt + CPR มากกว่า 10 นาทีไม่มี signs of life และ asystole ไม่มี tamponade เป็นข้อห้าม; blunt arrest ไม่มี VS รอดน้อยกว่า 1% และเสี่ยงต่อทีม (2)\n\n**Critical fails**: ส่ง CT ในผู้ป่วย tamponade ที่ไม่คงที่ · ทำ pericardiocentesis แล้วรับไว้สังเกตอาการแทนการผ่าตัด · เปิด pericardium หลัง phrenic nerve หรือให้ epinephrine ก่อนปิดรู · ทำ RT ใน blunt arrest ที่ asystole นาน"
+  }
+ ]
+}

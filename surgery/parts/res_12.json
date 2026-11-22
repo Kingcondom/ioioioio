@@ -1,0 +1,475 @@
+{
+ "lec": "12",
+ "date": "Schwartz Ch 22–24",
+ "title": "Vascular & aortic surgery",
+ "subtitle": "ใช้หลักฐานจาก trial ตัดสินว่าเมื่อไรควรผ่าหรือทำ endovascular ตั้งแต่ carotid, aneurysm/dissection, CLTI และขาขาดเลือดเฉียบพลัน ไปจนถึง VTE เส้นเลือดขอด และ lymphedema",
+ "objectives": [
+  "เรียนจบแล้วต้องเลือกผู้ป่วย carotid stenosis สำหรับ CEA หรือ CAS โดยอ้าง NASCET/ACAS/ACST/CREST และจัดการภาวะแทรกซ้อนหลัง CEA ได้",
+  "เรียนจบแล้วต้องบอกเกณฑ์ซ่อม AAA และ thoracic aneurysm อธิบายผลระยะยาวของ EVAR-1/DREAM/OVER และจัดการ endoleak แต่ละชนิด",
+  "เรียนจบแล้วต้องจำแนก aortic dissection ตาม Stanford/DeBakey ให้ anti-impulse therapy และระบุข้อบ่งชี้ open repair หรือ TEVAR",
+  "เรียนจบแล้วต้องใช้ WIfI, GLASS และหลักฐาน BEST-CLI/BASIL เลือก revascularization ใน CLTI และจัดการ ALI ตาม Rutherford รวมถึง fasciotomy",
+  "เรียนจบแล้วต้องป้องกันและรักษา VTE (รวม IVC filter, phlegmasia) และวางแผนรักษา varicose veins/venous ulcer และ lymphedema"
+ ],
+ "guidelines": [
+  "Schwartz's Principles of Surgery 11e — Ch 22 Thoracic Aneurysms and Aortic Dissection, Ch 23 Arterial Disease, Ch 24 Venous and Lymphatic Disease",
+  "SVS clinical practice guidelines: extracranial cerebrovascular disease (2021) และ AAA (2018)",
+  "ACC/AHA 2022 Guideline for the Diagnosis and Management of Aortic Disease",
+  "Global Vascular Guidelines on CLTI (2019) — WIfI, GLASS; BEST-CLI (2022), BASIL-1/2",
+  "ACCP/CHEST antithrombotic therapy for VTE; ATTRACT, EVRA, ESCHAR trials",
+  "International Society of Lymphology consensus on peripheral lymphedema (2020)"
+ ],
+ "sections": [
+  {
+   "id": "res-12-1",
+   "title": "Carotid disease: NASCET/ACAS/ACST thresholds และ CEA vs CAS",
+   "summary": "ผู้ป่วย carotid stenosis คนไหนได้ประโยชน์จาก revascularization ต้องทำเมื่อไร และจะเลือก CEA หรือ stenting อย่างไร",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 23 — Cerebrovascular disease",
+   "md": "### Carotid stenosis: วัดอย่างไรและ trial บอกอะไร\n- วัดความตีบแบบ **NASCET**: (1 − เส้นผ่านศูนย์กลางที่ตีบที่สุด / ICA ส่วนปลายที่ปกติ) × 100 · duplex ใช้ peak systolic velocity (PSV ≥ ~230 cm/s, ICA/CCA ratio เกิน 4 สอดคล้อง ≥70%) แล้วยืนยันด้วย CTA/MRA ก่อนผ่าตัด\n- **Symptomatic** = TIA, amaurosis fugax หรือ non-disabling stroke ในเขตของ carotid ข้างนั้น **ภายใน 6 เดือน**\n| Trial | ประชากร | ผลสำคัญ |\n|---|---|---|\n| **NASCET** | symptomatic **≥70%** | ipsilateral stroke 2 ปี **26% (medical) vs 9% (CEA)** ARR ~17%, NNT ~6 |\n| NASCET | symptomatic **50–69%** | ประโยชน์ปานกลาง (5 ปี ~22% vs ~16%) · ชัดในผู้ชาย, อาการทาง hemisphere |\n| NASCET/ECST | น้อยกว่า 50% | **ไม่ได้ประโยชน์** |\n| **ACAS** | asymptomatic **≥60%** | ipsilateral stroke 5 ปี **~11% vs ~5.1%** (RRR ~53%) |\n| **ACST-1** | asymptomatic ≥60% | ยืนยันประโยชน์ CEA แม้ medical therapy ดีขึ้น (statin) |\n> **เงื่อนไขสำคัญ**: ประโยชน์เกิดเมื่อ perioperative stroke/death **น้อยกว่า 6% (symptomatic)** และ **น้อยกว่า 3% (asymptomatic)** และผู้ป่วยมี life expectancy ≥3–5 ปี\n\n### Timing และ best medical therapy\n- **Symptomatic ≥50% → CEA ภายใน 2 สัปดาห์** (ideal 48 ชม.–14 วัน) — ความเสี่ยง stroke ซ้ำสูงสุดในวันแรกๆ หลัง TIA; ประโยชน์ลดลงเร็วถ้ารอนาน\n- ข้อยกเว้น: **disabling stroke ขนาดใหญ่/หมดสติ**, hemorrhagic transformation → รอให้คงที่\n- **Best medical therapy ทุกราย**: antiplatelet (aspirin ± clopidogrel ระยะสั้น), **high-intensity statin**, คุม BP/DM, **เลิกบุหรี่** — การรักษายุคใหม่ทำให้ประโยชน์ของ intervention ใน asymptomatic ลดลง จึงคัดเลือกผู้ป่วยที่มี high-risk features (stenosis โตเร็ว, silent infarct, plaque echolucent/ulcerated, microemboli บน TCD)\n- **Asymptomatic 70–99%**: CEA ได้ถ้า perioperative risk ต่ำและ life expectancy ≥5 ปี · 50–69% ใน asymptomatic ยังไม่แนะนำ intervention\n- **Total occlusion** → ไม่ revascularize\n\n### CEA vs CAS (และ TCAR)\n| | CEA | Transfemoral CAS | TCAR |\n|---|---|---|---|\n| หลักฐาน | มาตรฐาน | **CREST**: composite stroke/MI/death ไม่ต่าง · CAS **stroke มากกว่า**, CEA **MI มากกว่า** · อายุ เกิน 70 ปี CEA ดีกว่า | flow reversal ลด embolization, stroke ใกล้ CEA (registry) |\n| เหมาะ | ทั่วไป โดยเฉพาะ **อายุมาก**, aortic arch ซับซ้อน (type III), heavy calcification | **hostile neck**: เคยฉายรังสี/radical neck dissection, **restenosis หลัง CEA**, lesion สูงเกิน C2 หรือต่ำกว่า clavicle, tracheostomy, contralateral vocal cord palsy | hostile neck แต่ CCA ยาวพอ |\n| ความเสี่ยงสูง | cardiac risk สูงมาก (SAPPHIRE: CAS noninferior ใน high-risk) | arch โค้ง/มีคราบมาก, อายุมาก, thrombus | CCA disease |\n- เทคนิค CEA: shunt แบบ routine หรือ selective (stump pressure, EEG, awake under regional), **patch closure** ลด restenosis/stroke เทียบ primary closure · eversion endarterectomy เป็นทางเลือก\n\n### ภาวะแทรกซ้อนหลัง CEA\n| ภาวะ | ข้อควรรู้ |\n|---|---|\n| **New neurologic deficit ทันที** | สงสัย **thrombosis/flap ที่ endarterectomy site** → **re-explore ทันที** (ใช้ duplex ได้ถ้าไม่ทำให้ล่าช้า) |\n| Deficit ภายหลัง/ปวดศีรษะข้างเดียว ชัก | **cerebral hyperperfusion syndrome** (มักวันที่ 3–7) — คุม BP เข้มงวด |\n| **Neck hematoma** | ทางเดินหายใจถูกกด → **เปิดแผลข้างเตียง** แล้วกลับ OR |\n| **Hypoglossal nerve** | ลิ้นเบี้ยวไป **ด้านที่บาดเจ็บ** |\n| **Vagus/recurrent laryngeal** | เสียงแหบ (บาดเจ็บ nerve บ่อยที่สุดคือ vagus/RLN ร่วมกับ hypoglossal) |\n| Marginal mandibular | มุมปากตก (retractor ที่มุมขากรรไกร) |\n| Superior laryngeal | เสียงล้า ร้องเสียงสูงไม่ได้ |\n| Glossopharyngeal | กลืนลำบาก (lesion สูง) |\n| Hemodynamic instability | carotid sinus manipulation → bradycardia/hypotension หรือ hypertension |\n- Restenosis ระยะแรก (น้อยกว่า 2 ปี) = **myointimal hyperplasia** · หลัง 2 ปี = atherosclerosis ใหม่\n",
+   "pearls": [
+    "Symptomatic ≥70%: NASCET stroke 2 ปี 26% → 9% (NNT ~6) · 50–69% ประโยชน์ปานกลาง · น้อยกว่า 50% ไม่ได้ประโยชน์",
+    "Symptomatic → CEA ภายใน 2 สัปดาห์",
+    "Asymptomatic ≥60%: ACAS 11% → 5% ใน 5 ปี · ต้อง perioperative risk น้อยกว่า 3%",
+    "Perioperative stroke/death: symptomatic น้อยกว่า 6%, asymptomatic น้อยกว่า 3%",
+    "CREST: CAS stroke มากกว่า, CEA MI มากกว่า · อายุ เกิน 70 → CEA",
+    "Hostile neck (radiation, restenosis, lesion สูง) → CAS/TCAR",
+    "Deficit ทันทีหลัง CEA → re-explore · hypoglossal: ลิ้นเบี้ยวไปข้างที่บาดเจ็บ"
+   ],
+   "items": [
+    {
+     "id": "RES-12-1-1",
+     "kind": "mcq",
+     "topic": "Symptomatic carotid stenosis — timing",
+     "stem": "A 68-year-old man had a 20-minute episode of right hand weakness and expressive aphasia 4 days ago that fully resolved. MRI shows a small left frontal diffusion-weighted lesion. Duplex and CTA show an 80% (NASCET) stenosis of the left internal carotid artery with an ulcerated plaque; the right ICA has 30% stenosis. He is on aspirin and atorvastatin 80 mg. The center's perioperative stroke/death rate for symptomatic CEA is 2.5%. What is the most appropriate management?",
+     "choices": [
+      "Left carotid endarterectomy within the next 2 weeks",
+      "Best medical therapy alone with duplex surveillance every 6 months",
+      "Delay endarterectomy for 6 weeks to allow the infarct to stabilize",
+      "Bilateral carotid endarterectomy",
+      "Left carotid angioplasty without stent"
+     ],
+     "answer": 0,
+     "explain": "**Symptomatic ICA stenosis 70–99%** ได้ประโยชน์สูงจาก CEA (NASCET: stroke 2 ปี 26% → 9%, NNT ~6) และ **ประโยชน์มากที่สุดเมื่อทำภายใน 2 สัปดาห์** หลังอาการ เพราะความเสี่ยง stroke ซ้ำสูงสุดในช่วงแรก · ศูนย์นี้มี perioperative risk 2.5% (น้อยกว่าเกณฑ์ 6%) และ infarct เล็ก ไม่ disabling จึงผ่าตัดเร็วได้\n- **Medical therapy อย่างเดียว** — ด้อยกว่า CEA ในกลุ่มนี้ชัดเจน\n- **รอ 6 สัปดาห์** — ปฏิบัติเดิมที่ทำให้ผู้ป่วยมี stroke ซ้ำระหว่างรอ ยกเว้น stroke ใหญ่/ hemorrhagic transformation\n- **Bilateral CEA** — ฝั่งขวาตีบ 30% ไม่มีอาการ ไม่มีข้อบ่งชี้\n- **Angioplasty without stent** — ไม่ใช่มาตรฐาน เสี่ยง dissection/embolization",
+     "pearl": "Symptomatic ≥70% (และ 50–69% ที่เลือกแล้ว) → CEA ภายใน 2 สัปดาห์",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "NASCET Collaborators. N Engl J Med 1991;325:445–53",
+      "SVS clinical practice guidelines for extracranial cerebrovascular disease (2021)"
+     ]
+    },
+    {
+     "id": "RES-12-1-2",
+     "kind": "mcq",
+     "topic": "Asymptomatic carotid stenosis — conditions for benefit",
+     "stem": "A 64-year-old active woman is found to have an asymptomatic 80% right internal carotid stenosis on duplex performed for a cervical bruit. She has well-controlled hypertension, no cardiac disease, and an expected life expectancy of more than 10 years. She is already on aspirin and a high-intensity statin. She asks whether an endarterectomy will help her. On which condition does the benefit of CEA in her case most depend?",
+     "choices": [
+      "A perioperative stroke and death rate below 3% at the operating center",
+      "Achieving a stenosis of at least 90% before intervention",
+      "Development of a first transient ischemic attack",
+      "A perioperative stroke and death rate below 10%",
+      "Concomitant contralateral carotid occlusion"
+     ],
+     "answer": 0,
+     "explain": "ACAS และ ACST แสดงว่า CEA ลด stroke ใน asymptomatic ≥60% (ACAS: ~11% → ~5% ใน 5 ปี) แต่ **absolute benefit น้อย (ราว 1% ต่อปี)** จึงเกิดประโยชน์จริงก็ต่อเมื่อ **perioperative stroke/death น้อยกว่า 3%** และผู้ป่วยมี life expectancy ≥5 ปี — ถ้าความเสี่ยงผ่าตัดสูงกว่านี้ ประโยชน์หายไปหมด\n- **รอให้ตีบ ≥90%** — ใน trials ระดับความตีบใน asymptomatic ไม่ได้ทำนายประโยชน์แบบเส้นตรง\n- **รอให้มี TIA** — ไม่ใช่เงื่อนไข และ stroke อาจเป็นอาการแรก\n- **Risk น้อยกว่า 10%** — สูงเกินไป ทำให้ผ่าตัดเกิดโทษมากกว่าประโยชน์\n- **Contralateral occlusion** — เพิ่มความเสี่ยงผ่าตัดและไม่ได้เพิ่มประโยชน์",
+     "pearl": "Asymptomatic: CEA คุ้มเมื่อ perioperative stroke/death น้อยกว่า 3% และ life expectancy ≥5 ปี",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "ACAS. JAMA 1995;273:1421–8",
+      "Halliday A et al. ACST-1. Lancet 2004;363:1491–502"
+     ]
+    },
+    {
+     "id": "RES-12-1-3",
+     "kind": "mcq",
+     "topic": "CEA vs CAS — hostile neck",
+     "stem": "A 71-year-old man with a history of laryngeal cancer treated with neck irradiation and a left radical neck dissection 9 years ago presents with recurrent left amaurosis fugax. Imaging shows an 85% left ICA stenosis at the bifurcation. He has a type I aortic arch, a normal-length common carotid artery, minimal calcification and no intraluminal thrombus. What is the most appropriate revascularization?",
+     "choices": [
+      "Carotid artery stenting (transfemoral with embolic protection or transcarotid with flow reversal)",
+      "Left carotid endarterectomy with patch",
+      "Carotid–subclavian bypass",
+      "Best medical therapy alone",
+      "Extracranial–intracranial bypass"
+     ],
+     "answer": 0,
+     "explain": "**Hostile neck** (ฉายรังสี + radical neck dissection) ทำให้ CEA เสี่ยงต่อ wound complication และ **cranial nerve injury** สูง จึงเป็นข้อบ่งชี้ที่ชัดเจนของ **carotid stenting** · รายนี้ arch type I ไม่มี thrombus/calcification มาก จึงเหมาะกับ CAS (หรือ TCAR ซึ่งลด embolization ด้วย flow reversal)\n- **CEA** — ทำได้ในบางศูนย์แต่เสี่ยงมากกว่าในคอที่ฉายรังสี\n- **Carotid–subclavian bypass** — ใช้กับ proximal CCA/subclavian disease ไม่ใช่ bifurcation\n- **Medical therapy อย่างเดียว** — symptomatic 85% ได้ประโยชน์จาก revascularization\n- **EC–IC bypass** — ไม่ได้ผลใน ICA stenosis (COSS)",
+     "pearl": "Hostile neck/restenosis/lesion สูง → CAS (หรือ TCAR) · อายุมาก/arch ยาก → CEA",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "Brott TG et al. CREST. N Engl J Med 2010;363:11–23"
+     ]
+    },
+    {
+     "id": "RES-12-1-4",
+     "kind": "mcq",
+     "topic": "Immediate deficit after CEA",
+     "stem": "A 73-year-old woman undergoes uneventful left carotid endarterectomy with patch under general anesthesia. In the recovery room 30 minutes later she is noted to have new right arm weakness and aphasia. BP is 148/80 mmHg, and the neck wound is soft without hematoma. What is the most appropriate next step?",
+     "choices": [
+      "Immediate return to the operating room for re-exploration of the endarterectomy site",
+      "Non-contrast head CT and observation in the stroke unit",
+      "Systemic thrombolysis with alteplase",
+      "Lower the blood pressure to below 110 mmHg systolic",
+      "Start therapeutic heparin and repeat neurologic examination in 6 hours"
+     ],
+     "answer": 0,
+     "explain": "Neurologic deficit ใหม่ **ทันทีหลัง CEA** ฝั่งเดียวกับที่ผ่า ส่วนใหญ่เกิดจาก **thrombosis หรือ intimal flap ที่ endarterectomy site/embolization** ซึ่งแก้ได้ถ้าเร็ว → **re-explore ทันที** (ตรวจ duplex ในห้องผ่าตัดได้แต่อย่าให้ล่าช้า) แก้ flap/thrombectomy/revise patch\n- **CT แล้วสังเกต** — เสียเวลาในภาวะที่ต้องเปิดหลอดเลือดเร่งด่วน\n- **Systemic alteplase** — ห้ามหลังผ่าตัดใหญ่เพิ่งเสร็จ (เลือดออกแผล)\n- **ลด BP ต่ำ** — ทำให้ perfusion ของสมองแย่ลง (hyperperfusion syndrome มักเกิดวันหลังๆ พร้อมปวดศีรษะ/ชัก)\n- **Heparin แล้วรอ 6 ชั่วโมง** — สูญเสียโอกาสกู้สมอง",
+     "pearl": "Deficit ทันทีหลัง CEA → กลับ OR re-explore เลย",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-12-2",
+   "title": "Aortic aneurysm (thresholds, EVAR vs open) และ aortic dissection (Stanford/DeBakey, TEVAR)",
+   "summary": "Aneurysm ขนาดเท่าไรต้องซ่อม EVAR ต่างจาก open ในระยะยาวอย่างไร และ dissection แบบใดต้องผ่าตัดด่วน ใส่ TEVAR หรือรักษาด้วยยา",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 23 — Abdominal aortic aneurysm; Ch 22 — Thoracic aneurysms and aortic dissection",
+   "md": "### Abdominal aortic aneurysm: เมื่อไรต้องซ่อม\n- AAA = infrarenal aorta ≥3.0 cm · ปัจจัยเสี่ยง: **สูบบุหรี่ (สำคัญสุด)**, อายุ, ชาย, ประวัติครอบครัว · DM สัมพันธ์ผกผัน\n- Screening (USPSTF): **ชาย 65–75 ปีที่เคยสูบบุหรี่ US ครั้งเดียว**\n| ข้อบ่งชี้ซ่อม (SVS 2018) | |\n|---|---|\n| **ชาย ≥5.5 cm** | ความเสี่ยงแตกเกินความเสี่ยงผ่าตัด |\n| **หญิง ≥5.0 cm** (5.0–5.4) | ผู้หญิงแตกที่ขนาดเล็กกว่าและแตกบ่อยกว่า ~4 เท่าในขนาดเดียวกัน |\n| โต **เกิน 1 cm/ปี** (หรือ เกิน 0.5 cm ใน 6 เดือน) | |\n| **มีอาการ** (ปวดท้อง/หลัง, กดเจ็บ) | ซ่อมเร่งด่วนแม้ขนาดเล็ก |\n| **Saccular**, mycotic, ร่วมกับ iliac aneurysm ≥3.5 cm | |\n- UK Small Aneurysm Trial/ADAM และ CAESAR/PIVOTAL: ซ่อม AAA **4.0–5.4 cm ไม่ช่วยเพิ่ม survival** → surveillance (3.0–3.9 ทุก 3 ปี, 4.0–4.9 ทุกปี, 5.0–5.4 ทุก 6 เดือน) + เลิกบุหรี่ + statin\n- Thoracic: ascending **≥5.5 cm** (Marfan ~5.0, Loeys-Dietz ~4.4–4.6, bicuspid 5.0–5.5 ตามปัจจัยเสี่ยง) · descending **≥6.0 cm** (หรือ TEVAR ≥5.5 cm) · โต เกิน 0.5 cm/ปี · \"hinge point\" ของ complication: ascending 6.0 cm, descending 7.0 cm\n\n### EVAR vs open repair: อ่าน trial ให้เป็น\n| Trial | ผลระยะสั้น | ผลระยะยาว |\n|---|---|---|\n| **EVAR-1** (UK) | 30-day mortality **~1.7% vs 4.7%** | survival advantage หายใน **~2 ปี** · หลัง ~8 ปี **open ดีกว่า** (aneurysm-related death/late rupture ใน EVAR) · reintervention มากกว่า |\n| **DREAM** (Netherlands) | operative mortality ~1.2% vs 4.6% | survival เท่ากันระยะยาว · EVAR reintervention มากกว่า |\n| **OVER** (US VA) | perioperative mortality ~0.5% vs 3.0% | survival ใกล้กันถึง ~14 ปี · EVAR อาจดีกว่าในอายุ น้อยกว่า 70 |\n| **EVAR-2** | ผู้ป่วย unfit for open | EVAR ไม่เพิ่ม all-cause survival เทียบ no repair |\n- สรุป: EVAR = **early survival/morbidity ดีกว่า** แลกกับ **reintervention, late rupture และ surveillance ตลอดชีวิต** (CTA/duplex) · เลือกตาม anatomy (**neck ≥10–15 mm, angulation น้อยกว่า 60°, diameter ไม่เกิน ~32 mm**, iliac access ≥6–7 mm), อายุ, ความเสี่ยง และความพร้อมติดตาม\n- **Ruptured AAA**: **permissive hypotension** (SBP ~70–90 mmHg ให้รู้สึกตัว), CTA ถ้า stable พอ, **EVAR ถ้า anatomy เหมาะ** (IMPROVE: mortality 30 วันไม่ต่างแต่ discharge home เร็ว/ผู้หญิงได้ประโยชน์), aortic occlusion balloon · ระวัง **ACS หลัง EVAR** สำหรับ rupture\n- **Colon ischemia หลังซ่อม** (IMA ถูกตัด): bloody diarrhea ภายใน 24–48 ชม. → **sigmoidoscopy** · transmural → colectomy\n\n### Endoleak\n| Type | แหล่ง | การจัดการ |\n|---|---|---|\n| **I** (Ia proximal, Ib distal) | attachment site seal ไม่ดี | **แก้ทันที**: balloon, proximal cuff/extension, Palmaz stent, endoanchors, หรือ convert |\n| **II** (พบบ่อยสุด) | retrograde จาก **lumbar/IMA** | **สังเกต** · รักษา (embolization) เมื่อ **sac โต เกิน 5 mm** |\n| **III** | junction แยก/fabric tear | **แก้ทันที** (reline) |\n| IV | graft porosity | มักหายเอง |\n| V (endotension) | sac โตโดยไม่เห็น leak | ประเมินซ้ำ อาจ relining/convert |\n\n### Aortic dissection: Stanford/DeBakey และหลักการรักษา\n| Stanford | DeBakey | ขอบเขต |\n|---|---|---|\n| **A** (มี ascending) | **I** ascending + ต่อไปถึง arch/descending · **II** เฉพาะ ascending | **emergency open repair** |\n| **B** (ไม่มี ascending) | **III** (IIIa thoracic, IIIb ถึงช่องท้อง) | anti-impulse ± TEVAR |\n- Chronicity: acute น้อยกว่า 14 วัน (บางระบบแบ่ง hyperacute น้อยกว่า 24 ชม., subacute 15–90 วัน) · Type A ไม่รักษา mortality สูงราว **1–2% ต่อชั่วโมงใน 48 ชม.แรก** (tamponade, AR, coronary malperfusion, rupture)\n- **Anti-impulse therapy** ทุกราย: **IV β-blocker ก่อน (esmolol/labetalol)** แล้วจึงเพิ่ม vasodilator (nitroprusside/nicardipine) · เป้า Schwartz: **HR 60–80, SBP 100–110** (ACC/AHA 2022: SBP น้อยกว่า 120) + opioid คุมปวด · ห้าม vasodilator เดี่ยวก่อน β-blockade (reflex tachycardia เพิ่ม dP/dt)\n- **Type A**: ผ่าตัดด่วน — แทนที่ ascending ± hemiarch (resect entry tear) ภายใต้ circulatory arrest/antegrade cerebral perfusion · คงหรือเปลี่ยน aortic valve · ข้อยกเว้นน้อยมาก\n- **Type B uncomplicated**: medical (in-hospital mortality ต่ำ) · TEVAR ระยะ subacute พิจารณาใน **high-risk features** (aortic diameter ≥40 mm, false lumen ≥20–22 mm, entry tear ใหญ่) — **INSTEAD-XL**: TEVAR + OMT ลด aorta-specific mortality และ progression ที่ 5 ปี\n- **Type B complicated** → **TEVAR ปิด primary entry tear**: **malperfusion** (mesenteric, renal, limb, spinal), **rupture/impending rupture**, **ปวดไม่หาย/ความดันคุมไม่ได้**, **ขยายเร็ว**\n- TEVAR: ไม่ balloon ใน dissection, oversize ≤10%, ระวัง **retrograde type A**, **spinal cord ischemia** → **CSF drainage** (เป้า CSF pressure ≤10 mmHg), MAP สูงพอ, **revascularize left subclavian** เมื่อจำเป็น\n- Variant: **intramural hematoma** และ **penetrating aortic ulcer** — รักษาตามตำแหน่ง (A → ส่วนใหญ่ผ่าตัด; B → medical/TEVAR ถ้า complicated)\n",
+   "pearls": [
+    "AAA ซ่อมเมื่อ: ชาย ≥5.5 cm · หญิง ≥5.0 cm · โต เกิน 1 cm/ปี · มีอาการ · saccular",
+    "Ascending ≥5.5 cm (Marfan ~5.0) · descending ≥6.0 cm",
+    "EVAR-1/DREAM/OVER: EVAR early mortality ต่ำกว่า แต่ survival เท่ากันใน 2–3 ปี + reintervention มากกว่า",
+    "Endoleak I/III แก้ทันที · II (บ่อยสุด) รักษาเมื่อ sac โต เกิน 5 mm",
+    "Ruptured AAA: permissive hypotension SBP 70–90 · EVAR ถ้า anatomy ได้",
+    "Stanford A → ผ่าตัดด่วน (mortality ~1–2%/ชม.) · B uncomplicated → anti-impulse",
+    "Anti-impulse: β-blocker ก่อน vasodilator · complicated B → TEVAR ปิด entry tear"
+   ],
+   "items": [
+    {
+     "id": "RES-12-2-1",
+     "kind": "mcq",
+     "topic": "AAA — repair threshold in women",
+     "stem": "A 72-year-old woman is followed for an infrarenal abdominal aortic aneurysm. Current CT shows a fusiform aneurysm of 5.2 cm (4.7 cm one year ago). She is asymptomatic, is an ex-smoker, and has preserved functional status with acceptable cardiopulmonary risk. Anatomy is suitable for EVAR. What is the most appropriate management?",
+     "choices": [
+      "Elective repair now",
+      "Continue surveillance until the aneurysm reaches 5.5 cm",
+      "Repeat CT in 12 months",
+      "Repair only if she becomes symptomatic",
+      "Start doxycycline to slow aneurysm growth and continue surveillance"
+     ],
+     "answer": 0,
+     "explain": "แนวทาง SVS 2018 แนะนำซ่อม AAA ใน **ผู้หญิงที่ 5.0–5.4 cm** เพราะผู้หญิง **แตกที่ขนาดเล็กกว่าและอัตราแตกสูงกว่า** ผู้ชายในขนาดเดียวกัน (เกณฑ์ 5.5 cm มาจากประชากรชายเป็นหลัก) รายนี้ 5.2 cm และโต 0.5 cm/ปี ร่วมกับความเสี่ยงผ่าตัดยอมรับได้ → **ซ่อมแบบ elective** (EVAR หรือ open)\n- **รอถึง 5.5 cm** — ใช้กับผู้ชาย\n- **CT ซ้ำ 12 เดือน** — ช่วง 5.0–5.4 cm ถ้ายังไม่ซ่อมต้องติดตามทุก 6 เดือน และรายนี้มีข้อบ่งชี้แล้ว\n- **ซ่อมเมื่อมีอาการ** — ช้าเกินไป เสี่ยง rupture ซึ่ง mortality สูงมาก\n- **Doxycycline** — RCT (N-TA3CT) ไม่ลดการโต",
+     "pearl": "AAA: ชาย ≥5.5 cm · หญิง ≥5.0 cm · โต เกิน 1 cm/ปี · มีอาการ → ซ่อม",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "Chaikof EL et al. SVS practice guidelines on AAA. J Vasc Surg 2018;67:2–77"
+     ]
+    },
+    {
+     "id": "RES-12-2-2",
+     "kind": "mcq",
+     "topic": "EVAR vs open — long-term evidence",
+     "stem": "A 66-year-old fit man with a 6.0-cm infrarenal AAA and anatomy suitable for either approach asks how EVAR compares with open repair. Based on EVAR-1, DREAM and OVER, which statement is most accurate?",
+     "choices": [
+      "EVAR lowers perioperative mortality, but the survival advantage disappears within a few years and late reinterventions and ruptures are more frequent",
+      "EVAR provides a sustained long-term survival advantage over open repair",
+      "Open repair has higher reintervention rates than EVAR in long-term follow-up",
+      "EVAR eliminates the need for imaging surveillance after the first year",
+      "Open repair and EVAR have identical 30-day mortality"
+     ],
+     "answer": 0,
+     "explain": "ทั้งสาม trial ให้ภาพเดียวกัน: **EVAR มี perioperative mortality ต่ำกว่า** (EVAR-1 ~1.7% vs 4.7%; DREAM ~1.2% vs 4.6%; OVER ~0.5% vs 3.0%) แต่ **survival advantage หายภายในราว 2–3 ปี** และระยะยาว EVAR มี **reintervention และ late aneurysm rupture มากกว่า** (EVAR-1 ระยะยาวพบ open ดีกว่าหลัง ~8 ปี) จึงต้อง **surveillance ตลอดชีวิต**\n- **Sustained survival advantage** — ไม่มีใน trial ใด\n- **Open reintervention มากกว่า** — ตรงข้าม (open มีปัญหา incisional hernia/adhesion แต่ graft-related reintervention น้อยกว่า)\n- **ไม่ต้อง surveillance** — endoleak/migration เกิดได้ช้า\n- **30-day mortality เท่ากัน** — EVAR ต่ำกว่าชัดเจน",
+     "pearl": "EVAR: ตายช่วงผ่าตัดน้อยกว่า แต่ catch-up ใน ~2–3 ปี + reintervention/late rupture → ติดตามตลอดชีวิต",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "EVAR trial participants. Lancet 2004;364:843–8 / Patel R et al. Lancet 2016",
+      "Prinssen M et al. DREAM. N Engl J Med 2004",
+      "Lederle FA et al. OVER. N Engl J Med 2019;380:2126–35"
+     ]
+    },
+    {
+     "id": "RES-12-2-3",
+     "kind": "mcq",
+     "topic": "Endoleak — type Ia",
+     "stem": "A 78-year-old man underwent EVAR for a 6.2-cm AAA with a short (12 mm) angulated infrarenal neck. One-month CTA shows contrast entering the aneurysm sac early in the arterial phase from the proximal attachment site, with sac diameter unchanged. He is asymptomatic. What is the most appropriate management?",
+     "choices": [
+      "Prompt endovascular correction with balloon molding, proximal cuff, Palmaz stent or endoanchors",
+      "Observation with CTA every 6 months unless the sac grows more than 5 mm",
+      "Translumbar embolization of the lumbar arteries",
+      "Coil embolization of the inferior mesenteric artery",
+      "No action because most endoleaks seal spontaneously"
+     ],
+     "answer": 0,
+     "explain": "Contrast เข้า sac จาก **proximal attachment site** = **type Ia endoleak** ซึ่ง sac ได้รับแรงดันระบบโดยตรง เสี่ยง rupture จึงต้อง **แก้ไขทันที** ด้วย balloon molding, proximal extension cuff, **Palmaz stent** หรือ **endoanchors** (หรือ fenestrated/convert ถ้าแก้ไม่ได้) — neck สั้นและงอเป็นปัจจัยเสี่ยงของ type I\n- **Observation จนโต เกิน 5 mm** — เป็นแนวทางของ **type II** ไม่ใช่ type I\n- **Translumbar embolization / IMA embolization** — รักษา type II (retrograde branch flow)\n- **ไม่ต้องทำอะไร** — ใช้ได้กับ type II/IV บางราย แต่ type I/III ไม่หายเองและอันตราย",
+     "pearl": "Endoleak I และ III แก้ทันที · II (บ่อยสุด) สังเกต รักษาเมื่อ sac โต เกิน 5 mm",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23"
+     ]
+    },
+    {
+     "id": "RES-12-2-4",
+     "kind": "mcq",
+     "topic": "Complicated type B dissection — TEVAR",
+     "stem": "A 57-year-old man with poorly controlled hypertension presents with tearing back pain. CTA shows an aortic dissection starting just distal to the left subclavian artery and extending to the iliac arteries; the ascending aorta is not involved. Despite IV esmolol and nicardipine achieving HR 64/min and SBP 112 mmHg, he develops worsening abdominal pain, lactate rises to 5.2 mmol/L, and repeat CTA shows dynamic compression of the true lumen with poor superior mesenteric artery opacification. What is the most appropriate next step?",
+     "choices": [
+      "Thoracic endovascular aortic repair (TEVAR) to cover the primary entry tear",
+      "Emergency replacement of the ascending aorta and hemiarch",
+      "Continue anti-impulse therapy and repeat CTA in 24 hours",
+      "Exploratory laparotomy with small bowel resection only",
+      "Open thoracoabdominal aortic replacement as first-line therapy"
+     ],
+     "answer": 0,
+     "explain": "Dissection ไม่ถึง ascending = **Stanford B / DeBakey IIIb** ที่กลายเป็น **complicated** (dynamic **mesenteric malperfusion** แม้ anti-impulse ได้เป้า) → **TEVAR ปิด primary entry tear** เพื่อ redirect เลือดเข้า true lumen ซึ่งแก้ dynamic malperfusion ได้ส่วนใหญ่ จากนั้นประเมินลำไส้ (อาจต้อง laparoscopy/laparotomy ถ้าลำไส้ขาดเลือดต่อ) — morbidity ต่ำกว่า open repair มาก\n- **Ascending/hemiarch replacement** — สำหรับ type A\n- **Medical ต่อแล้วรอ** — malperfusion เป็นข้อบ่งชี้ intervention ทันที\n- **Laparotomy อย่างเดียว** — ไม่แก้ต้นเหตุที่ aorta ลำไส้จะขาดเลือดต่อ\n- **Open thoracoabdominal** — morbidity/mortality สูงกว่า สงวนไว้เมื่อ TEVAR ไม่ได้ (เช่น connective tissue disease บางราย)",
+     "pearl": "Type B + malperfusion/rupture/ปวดไม่หาย/โตเร็ว → TEVAR ปิด entry tear",
+     "src": "Schwartz 11e Ch 22",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 22",
+      "Schwartz's Principles of Surgery 11e, Ch 22",
+      "Nienaber CA et al. INSTEAD-XL. Circ Cardiovasc Interv 2013"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-12-3",
+   "title": "PAD/CLTI (WIfI, GLASS, BEST-CLI) และ acute limb ischemia (Rutherford, fasciotomy)",
+   "summary": "จัดระดับขาที่ขาดเลือดเรื้อรังและเฉียบพลันอย่างไร เลือก bypass หรือ endovascular ตามหลักฐานแบบใด และจะป้องกันขาเสียจาก compartment syndrome อย่างไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 23 — Lower extremity arterial occlusive disease; Acute limb ischemia",
+   "md": "### Chronic limb-threatening ischemia (CLTI): นิยามและ PLAN\n**CLTI (Global Vascular Guidelines 2019)** = PAD + **ischemic rest pain** หรือ **แผล/gangrene** (แผลที่ไม่หายเกิน 2 สัปดาห์) · หลักฐาน hemodynamic เช่น **ankle pressure น้อยกว่า 50 mmHg**, **ABI น้อยกว่า 0.4**, **toe pressure น้อยกว่า 30 mmHg**, TcPO2 น้อยกว่า 30 mmHg (สำหรับ rest pain) · ใน DM/CKD **ABI อาจสูงหลอกจาก calcification (เกิน 1.4)** → ใช้ **toe pressure/TBI**\nแนวคิด **PLAN**: **P**atient risk (อายุคาด เกิน 2 ปี?, ความเสี่ยงผ่าตัด) → **L**imb severity (**WIfI**) → **AN**atomy (**GLASS**)\n| Fontaine | Rutherford (chronic) |\n|---|---|\n| I ไม่มีอาการ | 0 ไม่มีอาการ |\n| IIa/IIb claudication น้อย/มาก | 1–3 claudication mild/moderate/severe |\n| III rest pain | **4 rest pain** |\n| IV ulcer/gangrene | **5 minor tissue loss · 6 major tissue loss** |\n\n### WIfI และ GLASS\n**WIfI** (SVS) ให้คะแนน 0–3 ใน 3 มิติ → clinical stage 1–4 ทำนาย **amputation risk ที่ 1 ปี** และประโยชน์จาก revascularization (stage 5 = unsalvageable)\n| มิติ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| **W**ound | ไม่มีแผล (rest pain) | แผลตื้นเล็ก | แผลลึกถึง tendon/bone, gangrene นิ้ว | แผลกว้างลึก ถึง midfoot/heel |\n| **I**schemia (ABI · TP/TcPO2) | ≥0.80 · ≥60 | 0.6–0.79 · 40–59 | 0.4–0.59 · 30–39 | ≤0.39 · น้อยกว่า 30 mmHg |\n| **fI** (foot infection) | ไม่มี | ผิวหนังจำกัด | ลึก/cellulitis เกิน 2 cm | **SIRS (systemic)** |\n**GLASS (Global Limb Anatomic Staging System)**: ประเมินความซับซ้อนของรอยโรคตาม **target arterial path (TAP)** — femoropopliteal grade 0–4 + infrapopliteal grade 0–4 → **stage I–III** ทำนาย **technical failure/limb-based patency ของ endovascular** (stage III → endovascular ไม่ทน มักเลือก bypass) · inflow (aortoiliac) และ pedal ประเมินแยก\n> ลำดับในผู้ป่วยติดเชื้อ: **infection ควบคุมก่อน** (drain/debride ภายใน 24–48 ชม. + antibiotic) → revascularize ในไม่กี่วัน → ปิดแผล/minor amputation\n\n### Revascularization: BASIL และ BEST-CLI\n| Trial | ผลหลัก |\n|---|---|\n| **BASIL-1** | bypass vs angioplasty-first ใน infrainguinal: amputation-free survival ใกล้กัน · ผู้รอดเกิน 2 ปี **bypass (โดยเฉพาะ vein) ดีกว่า** · bypass หลัง angioplasty ล้มเหลวผลแย่กว่า |\n| **BEST-CLI** (NEJM 2022) | cohort ที่มี **single-segment great saphenous vein เพียงพอ**: **surgical bypass ดีกว่า** (MALE หรือ death น้อยกว่า ~ HR 0.68) · cohort ไม่มี GSV ที่ดี: ไม่ต่างกัน |\n| **BASIL-2** (2023) | **infrapopliteal** disease: vein bypass-first ให้ amputation-free survival **แย่กว่า** best endovascular (ส่วนใหญ่จาก death) → endovascular-first เหมาะใน tibial disease ของผู้ป่วยกลุ่มนี้ |\n- สรุปปฏิบัติ: ความเสี่ยงผ่าตัดเฉลี่ย + มี **GSV ดี** + รอยโรคซับซ้อน (GLASS สูง, femoropopliteal ยาว) → **bypass ด้วย GSV** · ความเสี่ยงสูง/อายุขัยสั้น/ไม่มี vein/รอยโรค tibial ที่ทำ endo ได้ → **endovascular**\n- Conduit: **autologous GSV ดีที่สุด** (ทั้ง above และ below knee) → arm vein/SSV → prosthetic (PTFE ใช้ได้เหนือเข่าเป็นหลัก)\n- Claudication: **supervised exercise therapy + cilostazol + risk-factor modification** ก่อน · intervention เฉพาะ lifestyle-limiting ที่ล้มเหลว · ยาทุกคน: antiplatelet, statin; COMPASS/VOYAGER: **rivaroxaban 2.5 mg bid + aspirin** ลด MALE\n\n### Acute limb ischemia (ALI): Rutherford และการรักษา\n6P: pain, pallor, pulselessness, poikilothermia, **paresthesia, paralysis** (สองตัวหลังบ่งความรุนแรง) · สาเหตุ: **embolism** (หัวใจ — **AF** เกิน 80% ของ emboli; มักติดที่ **common femoral bifurcation**) vs **thrombosis** บน atherosclerosis/graft (มี claudication เดิม, อีกข้างชีพจรเบา)\n| Rutherford ALI | Sensory loss | Motor | Arterial Doppler | Venous Doppler | การรักษา |\n|---|---|---|---|---|---|\n| **I** viable | ไม่มี | ไม่มี | ได้ยิน | ได้ยิน | revascularize แบบ urgent (imaging ก่อนได้) |\n| **IIa** marginally threatened | น้อย (นิ้วเท้า) | ไม่มี | มักไม่ได้ยิน | ได้ยิน | **prompt** — endovascular (CDT) หรือผ่าตัด |\n| **IIb** immediately threatened | เกินนิ้วเท้า + rest pain | **อ่อนแรงเล็กน้อย-ปานกลาง** | ไม่ได้ยิน | ได้ยิน | **immediate** — ส่วนใหญ่ **open embolectomy/thrombectomy** (หรือ percutaneous mechanical ที่เร็ว) |\n| **III** irreversible | ชาหมด | **paralysis (rigor)** | ไม่ได้ยิน | **ไม่ได้ยิน** | **primary amputation** |\n- เริ่ม **IV unfractionated heparin bolus + infusion ทันที** ที่วินิจฉัย\n- Embolus → **Fogarty balloon embolectomy** ผ่าน common femoral arteriotomy · thrombosis บน atherosclerosis → CDT/angiography + แก้ lesion หรือ bypass · หลังรักษาหา source (echo, ECG/Holter) และ anticoagulate (AF)\n\n### Reperfusion injury และ compartment syndrome\n- หลัง revascularization ของขาที่ขาดเลือดนาน (โดยเฉพาะ **เกิน 4–6 ชั่วโมง**, IIb): **reperfusion** → edema ใน compartment → **compartment syndrome**, rhabdomyolysis (CK สูง, **hyperkalemia**, myoglobinuric AKI, acidosis)\n- อาการ: **ปวดเกินสัดส่วน**, **ปวดเมื่อยืดกล้ามเนื้อ passive**, ชา · **anterior compartment** พบบ่อยสุด → ชาที่ **first web space** (deep peroneal nerve) · ชีพจรยังคลำได้ไม่ตัดการวินิจฉัย\n- วัด compartment pressure: **เกิน 30 mmHg** หรือ **delta pressure (DBP − compartment) น้อยกว่า 30 mmHg** → fasciotomy (แต่การวินิจฉัยทางคลินิกพอ)\n- **Four-compartment fasciotomy ผ่านสองแผล**: **lateral** (anterior + lateral compartments; ระวัง superficial peroneal nerve) และ **medial** (superficial + deep posterior; ปลด soleus จาก tibia) · ทำ **prophylactic fasciotomy** เมื่อ ischemia นาน/IIb ที่เพิ่ง revascularize\n- ดูแล rhabdomyolysis: IV fluid ให้ UO ≥ ~200–300 mL/h, แก้ K, ติดตาม CK/ไต\n",
+   "pearls": [
+    "CLTI: rest pain/แผล + ankle P น้อยกว่า 50, toe P น้อยกว่า 30 mmHg · DM ใช้ toe pressure",
+    "PLAN: Patient risk → Limb (WIfI) → ANatomy (GLASS)",
+    "BEST-CLI: มี GSV ดี → bypass ดีกว่า endovascular · BASIL-2: infrapopliteal → endo-first",
+    "Infected ischemic foot: drain/debride ก่อน แล้ว revascularize",
+    "ALI IIb = sensory เกินนิ้วเท้า + อ่อนแรง, venous Doppler ได้ยิน → revascularize ทันที",
+    "ALI III = paralysis + venous Doppler หาย → amputation",
+    "Compartment เกิน 30 mmHg หรือ delta น้อยกว่า 30 → 4-compartment fasciotomy 2 แผล · anterior = first web space ชา"
+   ],
+   "items": [
+    {
+     "id": "RES-12-3-1",
+     "kind": "mcq",
+     "topic": "CLTI — BEST-CLI",
+     "stem": "A 66-year-old man with diabetes has a non-healing forefoot ulcer for 6 weeks with rest pain. Toe pressure is 22 mmHg. Angiography shows a long-segment occlusion of the superficial femoral and popliteal arteries with reconstitution of a patent posterior tibial artery to the foot (high GLASS stage). Duplex shows a 4-mm single-segment great saphenous vein. He has acceptable cardiac risk and expected survival beyond 2 years. Infection is controlled. What is the most appropriate revascularization?",
+     "choices": [
+      "Femoral–posterior tibial bypass using the ipsilateral great saphenous vein",
+      "Endovascular angioplasty and stenting of the SFA and popliteal arteries",
+      "Femoral–posterior tibial bypass using PTFE",
+      "Primary below-knee amputation",
+      "Cilostazol and supervised exercise therapy"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **CLTI** (rest pain + แผล, toe pressure น้อยกว่า 30) ที่มี **รอยโรคซับซ้อน (GLASS สูง)**, **มี single-segment GSV ที่ดี**, ความเสี่ยงผ่าตัดยอมรับได้และอายุขัยเกิน 2 ปี — **BEST-CLI** cohort ที่มี GSV ดีพบว่า **surgical bypass** ลด major adverse limb event หรือ death เทียบ endovascular-first (และ BASIL-1 พบว่าผู้รอดเกิน 2 ปีได้ประโยชน์จาก bypass)\n- **Endovascular SFA/popliteal** — patency ต่ำใน long-segment occlusion (GLASS III) และ BEST-CLI ด้อยกว่าเมื่อมี vein ดี\n- **PTFE ลงถึง tibial** — patency แย่กว่า vein มาก ใช้เมื่อไม่มี autogenous conduit\n- **Primary amputation** — ขายังกู้ได้และผู้ป่วยยัง ambulatory\n- **Cilostazol/exercise** — สำหรับ claudication ไม่ใช่ CLTI",
+     "pearl": "CLTI + มี GSV ดี + ความเสี่ยงเฉลี่ย → vein bypass (BEST-CLI)",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "Farber A et al. BEST-CLI. N Engl J Med 2022;387:2305–16",
+      "Conte MS et al. Global Vascular Guidelines on CLTI. J Vasc Surg 2019"
+     ]
+    },
+    {
+     "id": "RES-12-3-2",
+     "kind": "mcq",
+     "topic": "Infected ischemic diabetic foot — sequencing",
+     "stem": "A 61-year-old woman with diabetes presents with a swollen, erythematous, fluctuant dorsal foot with purulent drainage from a plantar ulcer and crepitus, temperature 38.8 °C, HR 112/min and WBC 19,000/µL. Pedal pulses are absent and ankle pressure is 54 mmHg. X-ray shows soft-tissue gas. What is the most appropriate initial management?",
+     "choices": [
+      "Urgent incision, drainage and debridement with broad-spectrum antibiotics, followed by revascularization within days",
+      "Immediate femoral–distal bypass before any debridement",
+      "Angiography and tibial angioplasty first, then debridement after 2 weeks",
+      "Oral antibiotics and outpatient wound care",
+      "Hyperbaric oxygen therapy as primary treatment"
+     ],
+     "answer": 0,
+     "explain": "ภาพเป็น **WIfI foot infection grade 3** (SIRS + deep abscess + gas) ร่วมกับ ischemia — ลำดับที่ถูกคือ **ควบคุม infection ก่อน**: **ผ่าระบาย/debride ด่วน** (± open minor amputation) + **IV broad-spectrum antibiotics** เพราะการติดเชื้อลุกลามเร็วและทำลายเนื้อเยื่อมากกว่ารอ revascularization จากนั้นจึง **revascularize ภายในไม่กี่วัน** เพื่อให้แผลหาย\n- **Bypass ก่อน debride** — ทิ้งหนองในภาวะ sepsis และเสี่ยง graft infection\n- **Angioplasty แล้วรอ 2 สัปดาห์ค่อย debride** — infection ลุกลามจนเสียเท้า\n- **Oral antibiotics ผู้ป่วยนอก** — ไม่เหมาะกับ systemic infection และ abscess\n- **Hyperbaric oxygen** — adjunct เท่านั้น ไม่ใช่การรักษาหลัก",
+     "pearl": "Diabetic foot ติดเชื้อรุนแรง + ischemia → drain/debride ก่อน แล้วค่อย revascularize",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "IWGDF/IDSA guidelines on diabetic foot infection (2023)"
+     ]
+    },
+    {
+     "id": "RES-12-3-3",
+     "kind": "mcq",
+     "topic": "Acute limb ischemia — Rutherford IIb",
+     "stem": "A 74-year-old woman with atrial fibrillation not on anticoagulation develops sudden pain and coldness of the right leg 5 hours ago. The foot is pale and cool, with no femoral, popliteal or pedal pulses on the right; left leg pulses are normal. She has sensory loss over the foot and lower calf and weak ankle dorsiflexion. Arterial Doppler signals are absent at the ankle, while venous signals are present. What is the most appropriate management after starting IV heparin?",
+     "choices": [
+      "Emergency surgical balloon embolectomy via common femoral arteriotomy",
+      "Catheter-directed thrombolysis over 24–48 hours",
+      "Primary above-knee amputation",
+      "CT angiography and observation on heparin for 24 hours",
+      "Elective femoral–popliteal bypass within 1 week"
+     ],
+     "answer": 0,
+     "explain": "อาการเฉียบพลัน + AF + ขาอีกข้างปกติ = **embolism** (มักติดที่ common femoral bifurcation) มี **sensory loss เกินนิ้วเท้าและอ่อนแรง** แต่ venous Doppler ยังได้ยิน = **Rutherford IIb (immediately threatened)** → ต้อง **revascularize ทันที**; สำหรับ embolus ที่ femoral วิธีที่เร็วและได้ผลที่สุดคือ **Fogarty balloon embolectomy** และพิจารณา **fasciotomy** ร่วม\n- **CDT 24–48 ชั่วโมง** — ช้าเกินไปสำหรับ IIb (เหมาะกับ I–IIa หรือ thrombosis ในหลอดเลือดเล็ก)\n- **Primary amputation** — สำหรับ class III (paralysis, ชาหมด, venous Doppler หาย)\n- **CTA + สังเกต 24 ชั่วโมง** — กล้ามเนื้อจะตายระหว่างรอ\n- **Elective bypass** — ไม่ใช่การรักษา ALI และไม่จำเป็นใน embolus ที่หลอดเลือดเดิมปกติ",
+     "pearl": "ALI IIb (sensory เกินนิ้วเท้า + motor อ่อน) → revascularize ทันที (embolectomy) · III → amputation",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23",
+      "Rutherford RB et al. Recommended standards for reports dealing with lower extremity ischemia. J Vasc Surg 1997"
+     ]
+    },
+    {
+     "id": "RES-12-3-4",
+     "kind": "mcq",
+     "topic": "Compartment syndrome after revascularization",
+     "stem": "Eight hours after femoral embolectomy for a 7-hour acute limb ischemia, a 69-year-old man complains of severe right leg pain unrelieved by IV morphine. The anterior leg is tense, passive plantarflexion of the toes worsens the pain, and he has numbness of the first dorsal web space. Pedal Doppler signals are present. Anterior compartment pressure is 42 mmHg with diastolic BP 70 mmHg. What is the most appropriate management?",
+     "choices": [
+      "Four-compartment fasciotomy through medial and lateral incisions",
+      "Anterior compartment fasciotomy only",
+      "Elevate the leg above heart level and re-measure in 4 hours",
+      "Repeat embolectomy for presumed re-occlusion",
+      "Mannitol infusion and observation"
+     ],
+     "answer": 0,
+     "explain": "ปวดเกินสัดส่วน ปวดเมื่อยืด passive ชา **first web space (deep peroneal nerve)** หลัง reperfusion และ compartment pressure เกิน 30 mmHg (**delta pressure 70 − 42 = 28 mmHg น้อยกว่า 30**) = **compartment syndrome** → **four-compartment fasciotomy ผ่านสองแผล** (lateral: anterior + lateral · medial: superficial + deep posterior) — ชีพจร/Doppler ที่ยังมีไม่ตัดการวินิจฉัย\n- **Anterior เพียงช่องเดียว** — compartment อื่นบวมด้วยหลัง reperfusion และเสี่ยงพลาด deep posterior\n- **ยกขาสูงแล้วรอ** — การยกขาสูงลด perfusion pressure ทำให้แย่ลง และการรอทำให้กล้ามเนื้อ/เส้นประสาทตาย\n- **Repeat embolectomy** — Doppler ยังได้ยิน ปัญหาไม่ใช่ re-occlusion\n- **Mannitol** — ไม่ใช่การรักษาหลักของ compartment syndrome ที่ชัดเจน",
+     "pearl": "Compartment pressure เกิน 30 หรือ delta pressure น้อยกว่า 30 → 4-compartment fasciotomy 2 แผล",
+     "src": "Schwartz 11e Ch 23",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res-12-4",
+   "title": "Venous thromboembolism, varicose veins และ lymphedema",
+   "summary": "ป้องกันและรักษา VTE ในผู้ป่วยศัลยกรรมอย่างไร เมื่อไรใช้ IVC filter หรือ thrombus removal และจัดการ chronic venous disease กับ lymphedema ตามหลักฐาน",
+   "minutes": 13,
+   "source": "Schwartz 11e Ch 24 — Venous thromboembolism; Chronic venous disease; Lymphedema",
+   "md": "### VTE: ป้องกันและรักษาในผู้ป่วยศัลยกรรม\n- **Virchow's triad**: stasis, endothelial injury, hypercoagulability · ประเมินความเสี่ยงด้วย **Caprini** (หรือ Rogers)\n| Caprini | ความเสี่ยง VTE | Prophylaxis (ACCP) |\n|---|---|---|\n| 0 | very low (น้อยกว่า 0.5%) | ลุกเดินเร็ว |\n| 1–2 | low (~1.5%) | **mechanical (IPC)** |\n| 3–4 | moderate (~3%) | **LMWH หรือ low-dose UFH** (หรือ IPC ถ้าเสี่ยงเลือดออก) |\n| **≥5** | high (~6%) | **pharmacologic + mechanical** · มะเร็งผ่าตัดช่องท้อง/เชิงกราน → **extended LMWH 4 สัปดาห์** |\n- **Treatment**: proximal DVT/PE → **DOAC** (apixaban/rivaroxaban ไม่ต้อง bridge; dabigatran/edoxaban ต้อง parenteral 5 วันก่อน) หรือ LMWH → warfarin (INR 2–3) · มะเร็ง: LMWH หรือ DOAC (ระวัง GI/GU malignancy)\n- **ระยะเวลา**: provoked by surgery/transient risk → **3 เดือน** · unprovoked → อย่างน้อย 3 เดือนแล้วพิจารณา **extended** ถ้าเลือดออกเสี่ยงต่ำ · active cancer → นานตราบที่มะเร็งยัง active\n- Isolated distal (calf) DVT ไม่มีอาการมาก → serial duplex 2 สัปดาห์ได้\n- **HIT**: plt ลด เกิน 50% วันที่ 5–10 หลังได้ heparin, thrombosis · 4Ts score → **หยุด heparin ทั้งหมด (รวม flush)** → **argatroban/bivalirudin/fondaparinux/DOAC** · ห้าม warfarin จนเกล็ดเลือดฟื้น (venous limb gangrene) · ห้ามให้ platelet\n\n### IVC filter, thrombolysis และ phlegmasia\n- **IVC filter ข้อบ่งชี้หลัก**: **acute proximal DVT/PE + มีข้อห้าม anticoagulation** (เช่น เลือดออกในสมอง, หลังผ่าตัดสมอง/บาดเจ็บรุนแรงที่ห้ามยา) หรือเกิดเลือดออกขณะรักษา · **ไม่ใส่ป้องกัน routine** (ไม่ลด mortality, เพิ่ม DVT ระยะยาว) · ใช้ **retrievable** แล้ว **เริ่มยาเมื่อปลอดภัยและถอดออกโดยเร็ว** (FDA warning)\n- **Catheter-directed thrombolysis (CDT)/pharmacomechanical**: **ATTRACT** — ไม่ลด post-thrombotic syndrome (PTS) โดยรวมในproximal DVT และเลือดออกมากขึ้น แต่ลดความรุนแรงของ PTS ใน **iliofemoral DVT** → เลือกใช้ในผู้ป่วยอายุน้อย iliofemoral อาการมาก ความเสี่ยงเลือดออกต่ำ\n- **Phlegmasia cerulea dolens**: ขาบวมคล้ำเขียว ปวดมาก จาก thrombosis ของ deep + collateral veins → เสี่ยง **venous gangrene**, compartment syndrome, shock → **heparin + ยกขา + CDT/pharmacomechanical thrombectomy หรือ surgical venous thrombectomy** ± **fasciotomy** (phlegmasia alba dolens = ระยะก่อนหน้า ขาซีด)\n- **May–Thurner**: **left common iliac vein ถูก right common iliac artery กด** → left iliofemoral DVT ในหญิงอายุน้อย → thrombus removal + **venous stent**\n- **Paget–Schroetter** (effort thrombosis, subclavian vein ที่ costoclavicular junction) → CDT แล้ว **first rib resection**\n\n### Chronic venous disease และ varicose veins\n**CEAP**: C0 ไม่มีอาการ · C1 telangiectasia/reticular · **C2 varicose veins** · C3 edema · C4 skin changes (C4a pigmentation/eczema, C4b **lipodermatosclerosis**/atrophie blanche) · **C5 healed ulcer** · **C6 active ulcer**\n- พยาธิ: **venous hypertension** จาก valvular reflux (superficial/perforator/deep) หรือ obstruction · ประเมินด้วย **duplex (reflux เกิน 0.5 วินาทีใน superficial, เกิน 1 วินาทีใน deep veins)**\n| การรักษา | หลักฐาน/ข้อควรรู้ |\n|---|---|\n| **Compression** | พื้นฐานสำหรับ C3–C6 · ulcer ใช้ multilayer ~40 mmHg (ตรวจ ABI ก่อน — ห้ามถ้า ABI น้อยกว่า ~0.6) |\n| **Endovenous thermal ablation (EVLA/RFA)** | **first-line** สำหรับ GSV/SSV reflux ที่มีอาการ (แทน high ligation & stripping) · ภาวะแทรกซ้อน: **EHIT** (thrombus ยื่นเข้า CFV), nerve injury (saphenous/sural), skin burn |\n| Non-thermal (cyanoacrylate, MOCA), foam sclerotherapy | ไม่ต้อง tumescent · foam ดีสำหรับ tributaries/recurrent |\n| **EVRA** (NEJM 2018) | venous ulcer + superficial reflux: **early endovenous ablation + compression** → แผลหาย **เร็วขึ้น** (median ~56 vs 82 วัน) และ recurrence น้อยกว่า |\n| **ESCHAR** | superficial vein surgery + compression **ลด ulcer recurrence** (แต่ไม่เร่งการหาย) |\n| Deep venous obstruction | iliac vein stenting (non-thrombotic/post-thrombotic) |\n\n### Lymphedema\n- **Primary**: congenital (**Milroy**, VEGFR3/FLT4, เกิดก่อน 1 ขวบ), **praecox (พบบ่อยสุด, วัยรุ่นหญิง)**, tarda (หลัง 35 ปี)\n- **Secondary**: ทั่วโลกสาเหตุอันดับ 1 คือ **filariasis** (Wuchereria bancrofti; ภาคใต้ของไทยพบ **Brugia malayi**; ชายแดนตะวันตกพบ W. bancrofti) · ประเทศพัฒนาแล้ว: **รักษามะเร็ง** (axillary/inguinal dissection + radiation), obesity\n- ตรวจ: **Stemmer sign** (จับผิวหนังโคนนิ้วเท้าที่ 2 ไม่ขึ้น), บวมกดไม่บุ๋มระยะหลัง, ไม่มี pigmentation แบบ venous · **lymphoscintigraphy** เป็น gold standard, ICG lymphography วางแผนผ่าตัด · ISL stage 0–III\n| การรักษา | รายละเอียด |\n|---|---|\n| **Complete decongestive therapy (CDT)** — first-line | manual lymphatic drainage, **multilayer short-stretch bandaging**, exercise, skin care แล้วตามด้วย compression garment |\n| Cellulitis | รักษาเร็วและป้องกันซ้ำ (penicillin prophylaxis เมื่อเป็นบ่อย) |\n| Physiologic surgery | **lymphovenous anastomosis (LVA)**, **vascularized lymph node transfer (VLNT)** — ระยะต้นที่ยังมี lymphatic ทำงาน |\n| Debulking/excisional | **suction-assisted lipectomy** (fat-dominant ระยะหลัง ต้องใส่ compression ตลอด) · **Charles procedure** (ระยะรุนแรงมาก) |\n| Filariasis | **DEC + albendazole** (mass drug administration) + hygiene |\n- ยาขับปัสสาวะ **ไม่ช่วย** lymphedema · lymphangiosarcoma (**Stewart–Treves**) เป็นภาวะแทรกซ้อนหายากของ lymphedema เรื้อรัง (หลัง mastectomy)\n",
+   "pearls": [
+    "Caprini ≥5 → pharmacologic + mechanical · มะเร็งช่องท้อง/เชิงกราน → LMWH 4 สัปดาห์",
+    "Provoked by surgery → anticoagulate 3 เดือน · unprovoked พิจารณา extended",
+    "IVC filter = proximal DVT/PE + ข้อห้าม anticoagulation · retrievable ถอดเร็ว",
+    "HIT: หยุด heparin ทั้งหมด → argatroban/bivalirudin · ห้าม warfarin/platelet ช่วงแรก",
+    "Phlegmasia cerulea dolens → thrombus removal ด่วน ± fasciotomy",
+    "EVRA: venous ulcer → early endovenous ablation + compression แผลหายเร็วขึ้น",
+    "Lymphedema: filariasis สาเหตุอันดับ 1 ของโลก · first-line = complete decongestive therapy"
+   ],
+   "items": [
+    {
+     "id": "RES-12-4-1",
+     "kind": "mcq",
+     "topic": "IVC filter — indication",
+     "stem": "A 46-year-old man is on postoperative day 2 after craniotomy for evacuation of a traumatic subdural hematoma. He develops left leg swelling, and duplex shows an acute occlusive thrombus in the common femoral and femoral veins. He is hemodynamically stable with normal oxygenation. The neurosurgeon states that therapeutic anticoagulation is contraindicated for at least 7 days. What is the most appropriate management?",
+     "choices": [
+      "Placement of a retrievable IVC filter, then start anticoagulation when safe and retrieve the filter",
+      "Therapeutic enoxaparin immediately",
+      "Catheter-directed thrombolysis",
+      "Observation with serial duplex until anticoagulation is allowed",
+      "Placement of a permanent IVC filter without plans for anticoagulation"
+     ],
+     "answer": 0,
+     "explain": "ข้อบ่งชี้ที่ชัดเจนที่สุดของ IVC filter คือ **acute proximal DVT (หรือ PE) ร่วมกับข้อห้าม anticoagulation** ซึ่งรายนี้เป็นหลังผ่าตัดสมอง ใช้ **retrievable filter** แล้วเมื่อเลือดออกปลอดภัยให้ **เริ่ม anticoagulation** ตามระยะเวลาของ DVT และ **ถอด filter โดยเร็ว** เพราะ filter ที่ค้างนานเพิ่ม DVT, IVC thrombosis, strut perforation\n- **Enoxaparin ทันที** — ห้ามตามข้อห้ามทางระบบประสาท (เสี่ยงเลือดออกในสมอง)\n- **CDT** — ใช้ thrombolytic หลังผ่าตัดสมองเป็นข้อห้ามเด็ดขาด\n- **Observation** — proximal femoral DVT เสี่ยง PE สูงในช่วงที่ยังให้ยาไม่ได้\n- **Permanent filter ไม่มีแผนให้ยา** — ไม่จำเป็นเพราะข้อห้ามเป็นชั่วคราว และ filter ถาวรเพิ่ม DVT ระยะยาว",
+     "pearl": "IVC filter = proximal DVT/PE + ข้อห้าม anticoagulation · retrievable แล้วถอดเร็ว",
+     "src": "Schwartz 11e Ch 24",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 24"
+     ]
+    },
+    {
+     "id": "RES-12-4-2",
+     "kind": "mcq",
+     "topic": "Phlegmasia cerulea dolens",
+     "stem": "A 58-year-old woman with metastatic pancreatic cancer develops rapidly progressive swelling of the entire left leg over 12 hours. The leg is massively edematous, deeply cyanotic and extremely painful, with blebs on the foot; pedal Doppler signals are weak but present. BP 96/60 mmHg, HR 118/min. Duplex shows thrombosis of the iliac, femoral and popliteal veins. Platelet count is normal and she has no bleeding history. What is the most appropriate management in addition to IV heparin and leg elevation?",
+     "choices": [
+      "Urgent venous thrombus removal (catheter-directed pharmacomechanical thrombolysis or surgical thrombectomy) with assessment for fasciotomy",
+      "Compression stockings and oral rivaroxaban",
+      "Above-knee amputation",
+      "IVC filter placement alone",
+      "Warfarin with a target INR of 2–3 and outpatient follow-up"
+     ],
+     "answer": 0,
+     "explain": "ขาบวมมาก คล้ำเขียว ปวดรุนแรง มี bleb และ hemodynamic เปลี่ยน = **phlegmasia cerulea dolens** (deep + collateral venous outflow อุดตันทั้งหมด) → เสี่ยง **venous gangrene**, compartment syndrome และ shock — นอกจาก heparin และยกขา ต้อง **เอา thrombus ออกเร่งด่วน** (pharmacomechanical CDT หรือ **surgical venous thrombectomy**) และประเมิน/ทำ **fasciotomy** ถ้ามี compartment syndrome\n- **Compression + DOAC** — ไม่พอและ compression เป็นอันตรายในภาวะนี้\n- **Amputation** — ทำเมื่อเกิด venous gangrene ที่ไม่ฟื้นแล้ว\n- **IVC filter อย่างเดียว** — ไม่แก้ venous outflow obstruction\n- **Warfarin ผู้ป่วยนอก** — ภาวะคุกคามขาและชีวิตต้องรักษาในโรงพยาบาล",
+     "pearl": "Phlegmasia cerulea dolens → heparin + เอา thrombus ออกด่วน ± fasciotomy",
+     "src": "Schwartz 11e Ch 24",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 24"
+     ]
+    },
+    {
+     "id": "RES-12-4-3",
+     "kind": "mcq",
+     "topic": "Venous ulcer — EVRA",
+     "stem": "A 63-year-old woman has a 4-month non-healing ulcer above the medial malleolus with surrounding lipodermatosclerosis (CEAP C6). ABI is 1.05. Duplex shows great saphenous vein reflux from the saphenofemoral junction to the ankle with a competent deep system. She has been using multilayer compression bandaging for 6 weeks. What is the most appropriate additional management?",
+     "choices": [
+      "Early endovenous ablation of the great saphenous vein while continuing compression",
+      "Continue compression alone until the ulcer heals, then consider ablation",
+      "Split-thickness skin graft without treating reflux",
+      "Deep venous valve reconstruction",
+      "Oral warfarin to prevent venous thrombosis"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วย **venous ulcer (C6)** ที่มี **superficial (GSV) reflux** และ deep system ปกติ — **EVRA trial** แสดงว่า **early endovenous ablation + compression** ทำให้แผล **หายเร็วกว่า** และ recurrence น้อยกว่าการรอ ablation หลังแผลหาย (ESCHAR ยืนยันว่า superficial surgery ลด recurrence) ABI ปกติจึงใช้ compression ต่อได้อย่างปลอดภัย\n- **Compression อย่างเดียวจนแผลหาย** — คือกลุ่ม deferred ใน EVRA ที่หายช้ากว่า\n- **Skin graft โดยไม่แก้ reflux** — เป็น adjunct ได้แต่แผลจะกลับเป็นซ้ำถ้า venous hypertension ยังอยู่\n- **Deep valve reconstruction** — deep system ปกติ ไม่มีข้อบ่งชี้\n- **Warfarin** — ไม่ใช่การรักษา venous ulcer",
+     "pearl": "Venous ulcer + superficial reflux → early endovenous ablation + compression (EVRA)",
+     "src": "Schwartz 11e Ch 24",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 24",
+      "Gohel MS et al. EVRA. N Engl J Med 2018;378:2105–14"
+     ]
+    },
+    {
+     "id": "RES-12-4-4",
+     "kind": "mcq",
+     "topic": "Secondary lymphedema — first-line therapy",
+     "stem": "A 52-year-old woman developed progressive swelling of the right arm 14 months after modified radical mastectomy with axillary lymph node dissection and regional radiotherapy. The swelling is soft with slight pitting, arm circumference is 3.5 cm greater than the left, and she has had one episode of cellulitis. Duplex shows no venous thrombosis, and there is no evidence of recurrent cancer. What is the most appropriate initial management?",
+     "choices": [
+      "Complete decongestive therapy with manual lymphatic drainage, multilayer bandaging, exercise and skin care, followed by compression garments",
+      "Furosemide 40 mg daily",
+      "Suction-assisted lipectomy of the arm",
+      "Charles procedure (radical excision and skin grafting)",
+      "Long-term warfarin"
+     ],
+     "answer": 0,
+     "explain": "**Secondary lymphedema** หลังผ่าตัดต่อมน้ำเหลืองรักแร้และฉายแสง ในระยะต้น (ยังกดบุ๋ม) การรักษา first-line คือ **complete decongestive therapy (CDT)**: manual lymphatic drainage, multilayer short-stretch bandaging, exercise และ skin care ตามด้วย **compression garment** ระยะยาว + ป้องกัน/รักษา cellulitis เร็ว · ผู้ที่ไม่ดีขึ้นอาจพิจารณา LVA/VLNT ในระยะต้น\n- **Furosemide** — ไม่ได้ผลใน lymphedema (ของเหลวโปรตีนสูง) และทำให้ electrolyte ผิดปกติ\n- **Suction-assisted lipectomy** — สำหรับระยะหลังที่เป็น fat-dominant ไม่บุ๋ม และหลังล้มเหลว conservative\n- **Charles procedure** — debulking รุนแรงสำหรับ elephantiasis ระยะสุดท้าย\n- **Warfarin** — ไม่มี thrombosis",
+     "pearl": "Lymphedema first-line = complete decongestive therapy · diuretic ไม่ช่วย",
+     "src": "Schwartz 11e Ch 24",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 24"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "RES-12-MEQ1",
+   "part": "MEQ",
+   "topic": "Acute aortic dissection — classification, anti-impulse therapy and operative choice",
+   "vignette": "ชายไทยอายุ 52 ปี ความดันสูงไม่กินยา สูบบุหรี่ มาด้วยเจ็บหน้าอกแบบฉีกทะลุไปหลังทันทีขณะยกของ 2 ชั่วโมงก่อน\nPE: BP แขนขวา 178/96 mmHg แขนซ้าย 142/80 mmHg, HR 104/min, ได้ยิน diastolic murmur ที่ left sternal border, ไม่มี neurologic deficit, ชีพจรขาสองข้างคลำได้\nECG: sinus tachycardia, LVH ไม่มี ST elevation · troponin ปกติ · Cr 1.0 mg/dL, lactate 1.8 mmol/L\n| Imaging | ผล |\n|---|---|\n| Bedside echo | มี aortic regurgitation ปานกลาง, pericardial effusion เล็กน้อย ไม่มี tamponade |\n| CTA | intimal flap เริ่มที่ ascending aorta เหนือ sinotubular junction ต่อเนื่องถึง arch และ descending aorta ลงไปถึง iliac, ascending diameter 5.1 cm |",
+   "questions": [
+    {
+     "q": "1. จงจำแนกชนิดของ dissection ตาม Stanford และ DeBakey และบอกการพยากรณ์โรคถ้าไม่ผ่าตัด",
+     "a": "- **Stanford A**, **DeBakey I** (ascending + ต่อเนื่องถึง arch/descending) · acute (น้อยกว่า 14 วัน)\n- ไม่ผ่าตัด mortality ราว **1–2% ต่อชั่วโมงใน 48 ชม.แรก** จาก rupture เข้า pericardium (tamponade), acute AR, coronary malperfusion, stroke\n- เกณฑ์ให้คะแนน: Stanford ถูก (1) · DeBakey ถูก (1) · บอก mortality/กลไกตาย (1)"
+    },
+    {
+     "q": "2. ระหว่างเตรียมผ่าตัด จงสั่งการรักษาเพื่อควบคุมความดันและอัตราการเต้นของหัวใจ พร้อมเป้าหมายและข้อควรระวัง",
+     "a": "- **Anti-impulse therapy**: **IV esmolol หรือ labetalol ก่อน** → เป้า **HR 60–80** (หรือต่ำกว่า) แล้วเพิ่ม **nicardipine/nitroprusside** ถ้า BP ยังสูง → เป้า **SBP ~100–120 mmHg** (Schwartz 100–110) ตราบที่ปัสสาวะออกและสติดี\n- **ห้าม vasodilator เดี่ยวก่อน β-blocker** (reflex tachycardia เพิ่ม dP/dt)\n- ระวัง β-blocker ในภาวะ **AR รุนแรง/tamponade** (พึ่ง HR) → ใช้อย่างระมัดระวัง\n- IV opioid คุมปวด · arterial line (วัดที่แขนขวาซึ่งความดันสูงกว่า), Foley, crossmatch\n- **ไม่ให้ antithrombotic/thrombolytic** (อย่าสับสนกับ ACS) · ถ้ามี tamponade → ไปห้องผ่าตัด ไม่ทำ pericardiocentesis ปริมาณมาก (อาจทำ controlled drainage เล็กน้อยถ้า arrest ใกล้)"
+    },
+    {
+     "q": "3. จงบอกการผ่าตัดที่เหมาะสม และสิ่งที่ต้องตัดสินใจระหว่างผ่าตัด",
+     "a": "- **Emergency open repair**: median sternotomy, cardiopulmonary bypass (cannulation **axillary** หรือ femoral/central), **resect primary entry tear**, **ascending aortic replacement ± hemiarch** ภายใต้ **hypothermic circulatory arrest + antegrade cerebral perfusion**\n- Aortic valve: **resuspend** ถ้าลิ้นปกติ (AR จาก commissural detachment) · root dilated/connective tissue disease → **aortic root replacement (Bentall หรือ valve-sparing)**\n- พิจารณา **total arch/frozen elephant trunk** เมื่อ entry tear ที่ arch หรือ malperfusion/arch ขยาย\n- ประเมิน **malperfusion** หลัง repair (ไต ลำไส้ ขา) — residual dissection ใน descending ต้องติดตาม"
+    },
+    {
+     "q": "4. ถ้า CTA พบว่า flap เริ่มหลัง left subclavian artery ไม่เกี่ยว ascending ผู้ป่วยปวดหายด้วยยา ไม่มี malperfusion จงวางแผนการรักษาและติดตาม",
+     "a": "- **Stanford B / DeBakey III**, uncomplicated → **optimal medical therapy** (anti-impulse ใน ICU แล้วเปลี่ยนเป็นยากิน β-blocker + ACEi/ARB, BP น้อยกว่า 130/80 ระยะยาว, เลิกบุหรี่)\n- ข้อบ่งชี้ **TEVAR**: complicated (rupture, malperfusion, ปวด/ความดันดื้อ, โตเร็ว) และพิจารณาใน uncomplicated ที่มี **high-risk features** (aortic diameter ≥40 mm, false lumen ≥20–22 mm, entry tear ใหญ่) ในระยะ subacute — **INSTEAD-XL**: TEVAR + OMT ลด aorta-specific mortality/progression ที่ 5 ปี\n- ติดตาม CTA ที่ 1, 3, 6, 12 เดือนแล้วทุกปี · ซ่อมเมื่อ descending ≥5.5–6.0 cm หรือโต เกิน 0.5 cm/ปี"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 22",
+    "ACC/AHA 2022 Guideline for the Diagnosis and Management of Aortic Disease",
+    "INSTEAD-XL (Circ Cardiovasc Interv 2013)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "RES-12-OSCE1",
+   "topic": "Ruptured abdominal aortic aneurysm — mock oral board",
+   "station": "Mock oral 10 นาที · Ruptured AAA: resuscitation, EVAR vs open, complications",
+   "instruction": "**บทบาท**: คุณเป็นศัลยแพทย์หลอดเลือดเวรที่ รพศ. ผู้สอบถามตามลำดับ ตอบแบบ oral board\n**ฉาก**: ชายไทยอายุ 74 ปี สูบบุหรี่ 50 pack-year ถูกส่งต่อจาก รพช. ด้วยปวดหลังและปวดท้องเฉียบพลัน 3 ชั่วโมง เป็นลมหนึ่งครั้ง แรกรับ BP 82/50 mmHg, HR 124/min รู้สึกตัวดี คลำได้ก้อนเต้นตามชีพจรกลางท้องกดเจ็บ Hb 9.8 g/dL\n**Prompt ของผู้สอบ**\n1. \"คุณจะเริ่มดูแลผู้ป่วยรายนี้อย่างไรในห้องฉุกเฉิน รวมถึงเป้าความดัน\"\n2. \"ผู้ป่วยตอบสนองพอที่จะไป CT ได้ไหม และถ้า CT พบ infrarenal AAA 7.5 cm มี retroperitoneal hematoma neck ยาว 20 mm คุณจะเลือก EVAR หรือ open เพราะอะไร\"\n3. \"ระหว่างทำ EVAR ความดันตกจนวัดไม่ได้ คุณจะทำอย่างไร\"\n4. \"หลังผ่าตัด 12 ชั่วโมง ผู้ป่วยใส่ท่อช่วยหายใจ ท้องตึง peak airway pressure สูง ปัสสาวะออกน้อย คุณคิดถึงอะไรและจัดการอย่างไร\"\n5. \"วันที่ 2 ผู้ป่วยถ่ายเป็นเลือดปนมูก คุณจะทำอย่างไร\"",
+   "answer": "1. **Resuscitation (2 คะแนน)**: เรียกทีม/แจ้ง OR และ hybrid suite ทันที · large-bore IV 2 เส้น, crossmatch 6–10 units, **massive transfusion protocol** (balanced 1:1:1), tranexamic acid ตามบริบท · **permissive hypotension: SBP ~70–90 mmHg** หรือพอให้รู้สึกตัว — ไม่ให้ crystalloid มาก (เลือดออกเพิ่ม/dilutional coagulopathy) · ไม่ใส่ Foley/ท่อช่วยหายใจก่อนพร้อมผ่าตัด (induction ทำให้ BP ตก — prep and drape ก่อน induce)\n2. **CT + EVAR vs open (2 คะแนน)**: ถ้า **รู้สึกตัวและ SBP คงที่ด้วย permissive hypotension** → **CTA** วางแผน EVAR ได้ · neck 20 mm เหมาะ → **EVAR** (ทำ local anesthesia ได้, IMPROVE: mortality 30 วันไม่ต่างแต่ discharge home มากกว่า, ผู้หญิงได้ประโยชน์, quality of life ดีกว่า) · ถ้า anatomy ไม่เหมาะหรือ unstable มากไม่ไป CT → open repair (supraceliac/infrarenal clamp)\n3. **Collapse ระหว่าง EVAR (2 คะแนน)**: **aortic occlusion balloon** (REBOA) ผ่าน femoral ขึ้น supraceliac/ปลาย thoracic aorta (ใน sheath ป้องกันเลื่อน) → deploy main body ให้เร็ว · ถ้าไม่ได้ → convert/open กับ supraceliac clamp\n4. **Abdominal compartment syndrome (2 คะแนน)**: วัด **bladder pressure** (IAP เกิน 20 + organ dysfunction) · พบบ่อยหลัง EVAR ของ ruptured AAA (hematoma + resuscitation) → **decompressive laparotomy** ± evacuate hematoma + temporary abdominal closure (negative pressure) · ติดตาม recurrent ACS\n5. **Colon ischemia (2 คะแนน)**: สงสัย **ischemic colitis ของ sigmoid** (IMA ถูกปิด/hypotension) → **flexible sigmoidoscopy ข้างเตียงทันที** · mucosal → supportive, antibiotics, bowel rest, sigmoidoscopy ซ้ำ · **transmural/peritonitis/acidosis เพิ่ม → sigmoid colectomy + end colostomy (Hartmann)** ระวัง graft contamination\n**Critical fails**: resuscitate ด้วย crystalloid ปริมาณมากจน BP ปกติก่อนควบคุมเลือด · induce GA ก่อนพร้อมผ่า · ส่ง CT ในผู้ป่วยที่ไม่ stable · ไม่คิดถึง ACS/colon ischemia"
+  }
+ ]
+}

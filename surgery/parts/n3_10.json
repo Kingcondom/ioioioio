@@ -1,0 +1,304 @@
+{
+ "lec": "10",
+ "date": "Schwartz Ch 19, 7",
+ "title": "Chest emergencies & chest drain",
+ "subtitle": "เจอภาวะฉุกเฉินทรวงอกที่ข้างเตียงต้องรู้ทันทีว่าทำอะไรก่อน ใส่และดูแล ICD อย่างไรให้ปลอดภัย และจัดการ effusion/empyema/spontaneous pneumothorax ตามขั้นตอน",
+ "objectives": [
+  "เรียนจบแล้วต้องวินิจฉัย tension pneumothorax, open pneumothorax, massive hemothorax, flail chest และ cardiac tamponade จากการตรวจร่างกายและ eFAST และสั่งหัตถการแรกได้ถูกต้องโดยไม่รอภาพรังสี",
+  "เรียนจบแล้วต้องบอกข้อบ่งชี้ ขนาดท่อ ตำแหน่ง safe triangle และขั้นตอนการใส่ ICD แบบ blunt dissection ได้ครบ",
+  "เรียนจบแล้วต้องแปลผล water seal (swing, bubbling), แก้ปัญหาท่ออุดตัน/air leak และกำหนดเกณฑ์ถอด ICD ได้",
+  "เรียนจบแล้วต้องใช้เกณฑ์ output ของ ICD (>1000/1500 mL, >200 mL/h × 3 ชม.) ตัดสินใจส่ง thoracotomy หรือส่งต่อ",
+  "เรียนจบแล้วต้องแยก transudate/exudate ด้วย Light's criteria และวางแผนระบาย parapneumonic effusion/empyema ตามระยะ",
+  "เรียนจบแล้วต้องจัดการ spontaneous pneumothorax ทั้ง primary และ secondary และบอกข้อบ่งชี้ VATS bleb resection ได้"
+ ],
+ "guidelines": [
+  "ATLS 10th edition (2018) — thoracic trauma, needle decompression site, chest tube size",
+  "BTS Guideline for pleural disease (2023) — pneumothorax size, safe triangle, pleural infection",
+  "MIST2 trial (Rahman et al., NEJM 2011) — intrapleural t-PA + DNase"
+ ],
+ "sections": [
+  {
+   "id": "n3-10-1",
+   "title": "ภาวะฉุกเฉินทรวงอกข้างเตียง: tension, open pneumothorax, massive hemothorax, flail chest, tamponade",
+   "summary": "ผู้ป่วยบาดเจ็บทรวงอกที่หอบและความดันตก ต้องแยกให้ได้ภายในนาทีว่าเป็นภาวะใด และหัตถการแรกที่ช่วยชีวิตคืออะไร",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 7 — Primary survey: breathing and circulation; Chest injuries",
+   "md": "### หลักคิดที่ข้างเตียง: chest emergency ต้องรักษาก่อนได้ภาพ\nใน primary survey ของ ATLS มีภาวะในทรวงอกที่ฆ่าผู้ป่วยได้ภายในไม่กี่นาที และ**ต้องวินิจฉัยด้วยการตรวจร่างกาย**ไม่ใช่ CXR ได้แก่ **tension pneumothorax**, **open pneumothorax**, **flail chest** ที่มี pulmonary contusion, **massive hemothorax**, **cardiac tamponade** และ major air leak จาก tracheobronchial injury\n- ผู้ป่วยหอบ + ความดันตก = คิดถึง tension ก่อนเสมอ ห้ามรอ CXR\n- ใช้ **eFAST** ข้างเตียงช่วยดู pneumothorax (ไม่มี lung sliding), hemothorax และ pericardial fluid ได้ภายในนาทีเดียว\n- ทุกหัตถการเปิดทรวงอกในภาวะฉุกเฉิน ทำพร้อมกับ resuscitation (O₂, IV 2 เส้น, เลือด)\n\n| ภาวะ | หลอดลม | เสียงหายใจ | เคาะ | JVP | หัตถการทันที |\n|---|---|---|---|---|---|\n| Tension pneumothorax | เอียงไปฝั่งตรงข้าม | หายไปข้างเจ็บ | โปร่ง (hyperresonance) | โป่ง (อาจแฟบถ้าเสียเลือด) | needle/finger decompression → ICD |\n| Massive hemothorax | กลางหรือเอียงออก | ลดลง | ทึบ (dullness) | แฟบ | ICD ใหญ่ + เตรียม OR |\n| Cardiac tamponade | กลาง | ปกติ | ปกติ | โป่ง | pericardiocentesis/OR |\n| Open pneumothorax | กลาง | ลดลง | โปร่ง | ปกติ | three-sided dressing → ICD ห่างแผล |\n\n### Tension pneumothorax: วินิจฉัยทางคลินิก ลดแรงดันทันที\nกลไก: รอยฉีกของปอดทำหน้าที่เป็น **one-way valve** ลมเข้าช่องเยื่อหุ้มปอดทุกครั้งที่หายใจเข้า แรงดันกลายเป็นบวก → mediastinum ถูกดันไปฝั่งตรงข้าม หัวใจบิดรอบ SVC/IVC → **venous return ลด** → cardiac output ตก → ช็อก\n- Schwartz ให้ถือว่าเป็น tension เมื่อมี **respiratory distress + hypotension** ร่วมกับ trachea deviation, เสียงหายใจลด, hyperresonance หรือ subcutaneous emphysema ข้างนั้น\n- **hypotension** คือสิ่งที่แยก tension ออกจาก simple pneumothorax\n- การรักษา: needle decompression ด้วย angiocath **14G** เป็นมาตรการชั่วคราว ตามด้วย **tube thoracostomy** ทันทีใน ER ก่อนถ่าย CXR\n- ตำแหน่งเข็มในผู้ใหญ่: ATLS 10th แนะนำ **ICS 4–5 แนว midaxillary/anterior axillary line** (ผนังอกหนาบริเวณ ICS 2 แนว midclavicular ทำให้เข็มสั้นเข้าไม่ถึง) · เด็กยังใช้ ICS 2 แนว midclavicular\n- ถ้าใส่ท่อช่วยหายใจแล้วความดันตกทันทีหลังเริ่ม positive pressure ventilation → นึกถึง tension ก่อน\n\n### Open pneumothorax และ flail chest\n#### Open pneumothorax (sucking chest wound)\nผนังอกขาดทะลุตลอดชั้น อากาศเข้า-ออกทางแผลแทนหลอดลม (เมื่อรูกว้างพอ อากาศจะเลือกทางที่ต้านน้อยกว่า) → ปอดไม่ขยาย → **hypoxia และ hypercarbia**\n- ปฐมพยาบาล: ปิดด้วย **occlusive dressing ติดเทป 3 ด้าน** ทำหน้าที่เป็น flutter valve ลมออกได้แต่เข้าไม่ได้\n- อย่าปิดทึบ 4 ด้านโดยไม่มี ICD เพราะจะกลายเป็น **tension pneumothorax**\n- definitive: ใส่ ICD **ที่ตำแหน่งห่างจากแผล** แล้วซ่อมผนังอกในห้องผ่าตัด\n#### Flail chest\nซี่โครง **3 ซี่ขึ้นไปติดกัน หักซี่ละ ≥2 ตำแหน่ง** → ชิ้นผนังอกลอยเคลื่อนที่สวนทาง (**paradoxical movement**) ขณะหายใจเอง\n- ตัวที่ทำให้หายใจล้มเหลวจริงคือ **pulmonary contusion** ข้างใต้ (compliance ลด, shunt เพิ่ม) ซึ่ง**มักแย่ลงใน 12 ชั่วโมงแรก** และ CXR แรกมักประเมินต่ำไป\n- หลักรักษา: O₂, **ระงับปวดให้ดี** (rib block/intercostal, epidural เมื่อหักหลายซี่), pulmonary toilet, ระวังสารน้ำเกิน, intubate เมื่อ hypoxemia/hypoventilation แม้ให้ O₂ แล้ว\n- พิจารณา **rib fixation** เมื่อ flail กว้าง, ซี่โครงเคลื่อนมาก หรือสูญเสียปริมาตรทรวงอกมาก\n\n### Massive hemothorax: ตัวเลขที่ต้องจำ\nนิยามตาม Schwartz: เลือดในช่องเยื่อหุ้มปอด **>1500 mL** (เด็ก: >25% ของ blood volume) — CXR ท่านอนอาจเห็นเพียงฝ้าทั้งข้าง ICD เป็นวิธีเดียวที่วัดปริมาณได้จริง\n- blunt: มักมาจาก intercostal artery จากซี่โครงหัก · penetrating: สงสัย great vessel/hilar vessel\n- ใส่ **ICD ขนาดใหญ่** (ATLS: 28–32 Fr) เพื่อให้ปอดขยาย ช่วย oxygenation และกดหลอดเลือดดำ พร้อม **resuscitate ด้วยเลือด** (massive transfusion protocol) และพิจารณา autotransfusion\n\n| ข้อบ่งชี้ thoracotomy (Schwartz Table 7-10) | ค่า |\n|---|---|\n| ปริมาณเลือดครั้งแรกจาก ICD | **>1000 mL (penetrating)** · **>1500 mL (blunt)** |\n| เลือดออกต่อเนื่อง | **>200 mL/h ติดกัน 3 ชั่วโมง** (ไม่มี coagulopathy) |\n| เลือดค้างเป็นก้อน | caked hemothorax แม้ใส่ ICD 2 สาย |\n| อื่น ๆ | tamponade, great vessel injury, massive air leak หายใจไม่พอ, open pneumothorax, esophageal perforation, air embolism |\n\n> ข้อยกเว้น: ผู้ป่วยมาช้า output แรก 1.5 L แต่หยุดไหล ปอดขยายดีและ hemodynamics stable อาจไม่ต้องผ่าตัด\n\n### Cardiac tamponade: Beck's triad มักไม่ครบใน ER\n- มักเกิดจาก **penetrating** บริเวณ \"cardiac box\" เลือดในเยื่อหุ้มหัวใจเฉียบพลันเพียง **<100 mL** ก็ทำให้ tamponade ได้ เพราะ pericardium ยืดไม่ทัน\n- **Beck's triad**: JVP โป่ง, เสียงหัวใจเบา, ความดันตก — ในห้อง ER ที่เสียงดังและผู้ป่วยเสียเลือดร่วม มักตรวจไม่ครบ อาจพบ **pulsus paradoxus**\n- วินิจฉัยด้วย **pericardial ultrasound (FAST)** ดีที่สุด\n- ให้สารน้ำช่วยพยุงชั่วคราว (เพิ่ม preload) แต่การรักษาจริงคือ **ระบายเลือดออก**: subxiphoid pericardiocentesis/pigtail ดูดเพียง **15–20 mL** ก็อาจทำให้ความดันดีขึ้นพอส่ง OR ทำ **sternotomy** (pericardiocentesis สำเร็จราว 80% ล้มเหลวเพราะเลือดจับเป็นก้อน)\n- SBP คงอยู่ **<60 mmHg** → **resuscitative thoracotomy** เปิด pericardium\n- ข้อห้าม RT: penetrating ที่ CPR >15 นาทีไม่มี signs of life · blunt ที่ CPR >10 นาทีไม่มี signs of life หรือ asystole ที่ไม่มี tamponade\n",
+   "pearls": [
+    "Tension pneumothorax เป็น clinical diagnosis — hypotension คือสิ่งที่แยกจาก simple pneumothorax",
+    "Needle decompression ผู้ใหญ่: ICS 4–5 anterior/midaxillary line (ATLS 10th) แล้วต้องตามด้วย ICD",
+    "Open pneumothorax: dressing ติด 3 ด้าน แล้วใส่ ICD ห่างจากแผล",
+    "Flail chest: ซี่โครง ≥3 ซี่ หักซี่ละ ≥2 ตำแหน่ง ตัวร้ายคือ pulmonary contusion ที่แย่ลงใน 12 ชม.",
+    "Massive hemothorax >1500 mL; OR เมื่อ ICD แรก >1000 (penetrating)/>1500 (blunt) หรือ >200 mL/h × 3 ชม.",
+    "Tamponade: เลือด <100 mL ก็พอ, ดูดออก 15–20 mL ช่วยได้ชั่วคราว, definitive = sternotomy"
+   ],
+   "items": [
+    {
+     "id": "N3-10-1-1",
+     "kind": "mcq",
+     "topic": "Tension pneumothorax — immediate action",
+     "stem": "A 24-year-old man is brought to the ER after a motorcycle crash. He is agitated, RR 36/min, BP 74/40 mmHg, HR 138/min, SpO2 82% on a non-rebreather mask. The trachea is deviated to the left, the right chest is hyperresonant with absent breath sounds, and there is crepitus over the right chest wall. A portable chest X-ray is being set up. What is the most appropriate next step?",
+     "choices": [
+      "Immediate right-sided decompression followed by tube thoracostomy without waiting for imaging",
+      "Obtain the portable chest X-ray to confirm the diagnosis before any procedure",
+      "Rapid-sequence intubation and positive-pressure ventilation first",
+      "Two liters of crystalloid bolus and reassess blood pressure",
+      "Urgent CT chest to look for associated great vessel injury"
+     ],
+     "answer": 0,
+     "explain": "ผู้ป่วยมี **respiratory distress + hypotension** ร่วมกับหลอดลมเอียงไปซ้าย เคาะโปร่งและเสียงหายใจหายข้างขวา = **tension pneumothorax** ซึ่งเป็น clinical diagnosis ต้อง**ลดแรงดันทันที** (needle/finger decompression ที่ ICS 4–5 แนว midaxillary แล้วใส่ ICD) ก่อนรอภาพใด ๆ\n- **รอ portable CXR**: เสียเวลาในผู้ป่วยที่ใกล้ cardiac arrest — ATLS ห้ามใช้ CXR ยืนยัน tension\n- **intubate ก่อน**: positive pressure ดันลมเข้าช่องเยื่อหุ้มปอดเพิ่ม ทำให้ความดันตกหนักขึ้น\n- **ให้ crystalloid 2 L**: ไม่แก้กลไกที่ venous return ถูกบีบ และเป็นปริมาณที่ ATLS 10th ไม่แนะนำแล้ว\n- **CT chest**: ห้ามส่งผู้ป่วย unstable ไปห้อง CT",
+     "pearl": "หอบ + ความดันตก + เสียงหายใจหายข้างเดียว = decompress ก่อน ถ่ายภาพทีหลัง",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N3-10-1-2",
+     "kind": "mcq",
+     "topic": "Massive hemothorax — indication for thoracotomy",
+     "stem": "A 35-year-old man was stabbed in the left chest. BP 88/56 mmHg, HR 124/min. Breath sounds are reduced on the left with dullness to percussion. A 32 Fr chest tube is inserted and immediately drains 1,200 mL of blood. After 2 units of blood his BP is 96/60 mmHg. What is the most appropriate next step?",
+     "choices": [
+      "Proceed to operative thoracotomy",
+      "Observe chest tube output hourly and operate only if >200 mL/h for 3 hours",
+      "Insert a second chest tube to evacuate retained blood",
+      "Obtain CT angiography of the chest before deciding",
+      "Clamp the chest tube to tamponade the bleeding"
+     ],
+     "answer": 0,
+     "explain": "ตาม Schwartz Table 7-10 ข้อบ่งชี้ผ่าตัดคือ **output แรก >1000 mL ใน penetrating** (หรือ >1500 mL ใน blunt) ผู้ป่วยถูกแทงและได้เลือด 1,200 mL พร้อม shock ที่ตอบสนองเพียงบางส่วน → ไป **thoracotomy** (สงสัย great vessel/hilar/intercostal injury) พร้อม massive transfusion\n- **สังเกต 200 mL/h × 3 ชม.**: เป็นเกณฑ์ ongoing bleeding ใช้เมื่อ output แรกยังไม่ถึงเกณฑ์ ไม่ใช่กรณีนี้\n- **ใส่ ICD สายที่ 2**: ใช้กับ retained/caked hemothorax ไม่หยุดเลือดที่ออกจากหลอดเลือดแดง\n- **CTA ก่อน**: ผู้ป่วยยัง marginal ไม่ควรเสียเวลาส่งตรวจ\n- **clamp ICD**: ไม่ได้หยุดเลือดจริง เลือดยังสะสมและบีบปอด/หัวใจ ทำให้ทรุดลง",
+     "pearl": "ICD output แรก >1000 mL (penetrating) / >1500 mL (blunt) หรือ >200 mL/h × 3 ชม. → OR",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N3-10-1-3",
+     "kind": "mcq",
+     "topic": "Cardiac tamponade — bedside management",
+     "stem": "A 28-year-old man has a stab wound just left of the sternum at the 4th intercostal space. BP 80/60 mmHg, HR 130/min, neck veins distended, breath sounds equal bilaterally, trachea midline. FAST shows a pericardial fluid collection with right ventricular diastolic collapse. The operating room needs 20 minutes to be ready. What is the most appropriate immediate action?",
+     "choices": [
+      "Ultrasound-guided subxiphoid pericardial drainage while preparing for sternotomy",
+      "Bilateral needle thoracostomy at the 2nd intercostal space",
+      "Left tube thoracostomy and observe output",
+      "Start norepinephrine infusion and repeat FAST in 15 minutes",
+      "Obtain echocardiography by cardiology before any intervention"
+     ],
+     "answer": 0,
+     "explain": "แผลแทงใน cardiac box + JVP โป่ง + ความดันตก + เสียงหายใจเท่ากันสองข้าง + FAST เห็นน้ำในเยื่อหุ้มหัวใจและ RV collapse = **cardiac tamponade** การรักษาคือ **ระบายเลือดออก** — ดูดเพียง 15–20 mL ทาง subxiphoid (ใช้ ultrasound นำ) ก็ทำให้ hemodynamics ดีขึ้นพอส่ง OR เพื่อ **sternotomy** ซ่อมหัวใจ ถ้า SBP <60 mmHg ค้าง → resuscitative thoracotomy\n- **needle thoracostomy สองข้าง**: ไม่มีหลักฐาน pneumothorax (เสียงหายใจเท่ากัน หลอดลมตรง)\n- **ICD ข้างซ้าย**: ไม่แก้ tamponade\n- **norepinephrine**: ไม่แก้การบีบหัวใจ อาจพยุงได้สั้น ๆ แต่เสียเวลา\n- **รอ cardiology echo**: FAST ให้คำตอบแล้ว การรอทำให้ arrest",
+     "pearl": "Tamponade: ดูดเลือด 15–20 mL ก็ช่วยได้ แต่ definitive คือ sternotomy",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-10-2",
+   "title": "Chest tube (ICD): ข้อบ่งชี้ การใส่ safe triangle การดูแลและการถอด",
+   "summary": "จะใส่ ICD ที่ไหน ด้วยท่อขนาดเท่าไร ดูขวด underwater seal อย่างไร และเมื่อไรถอดได้อย่างปลอดภัย",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 7 Fig 7-3; Ch 19 — Chest tube management, pleural drainage",
+   "md": "### ข้อบ่งชี้ของ ICD (intercostal drainage, tube thoracostomy)\nICD คือการใส่ท่อเข้าช่องเยื่อหุ้มปอดต่อกับขวด **underwater seal** เพื่อระบายลม/ของเหลวให้ปอดขยาย Schwartz ระบุว่าผู้ป่วยบาดเจ็บทรวงอกมากกว่า **85%** รักษาได้ด้วย chest tube อย่างเดียว\n- **Pneumothorax**: tension (หลัง decompress), traumatic pneumothorax, pneumothorax ในผู้ใช้เครื่องช่วยหายใจ, spontaneous ที่ขนาดใหญ่/มีอาการหรือ aspiration ไม่สำเร็จ\n- **Hemothorax** ทุกรายที่เห็นชัด (ใช้วัดปริมาณเลือดและตัดสินใจผ่าตัด)\n- **Empyema/complicated parapneumonic effusion** (pH <7.2, glucose <40 mg/dL, หนอง)\n- **Malignant pleural effusion** ที่จะทำ pleurodesis\n- หลังผ่าตัดทรวงอก/หัวใจ, chylothorax, bronchopleural fistula\n\n| สถานการณ์ | ขนาดท่อที่ใช้ (แนวทาง) | ตำแหน่งปลายท่อ |\n|---|---|---|\n| Simple pneumothorax | เล็ก 14–20 Fr หรือ pigtail | apical, anterior |\n| Hemothorax (trauma) | ใหญ่ 28–32 Fr (Schwartz: 36 Fr ถ้าเลือดเยอะ) | posterior, basal |\n| Empyema หนอง/ข้น | 28–36 Fr หรือ pigtail + fibrinolytic | ตามตำแหน่ง loculation (US/CT guide) |\n| Effusion ใส ไหลอิสระ | pigtail 10–14 Fr | dependent/posterior |\n\n> หลักทั่วไป: ใช้ท่อเล็กที่สุดที่ระบายได้ผล — ท่อเล็กเจ็บน้อยกว่าแต่อุดตัน/หักพับง่าย\n\n### Safe triangle และขั้นตอนใส่ ICD (blunt dissection)\n**Safe triangle** (BTS): ขอบหน้าของ **latissimus dorsi**, ขอบข้างของ **pectoralis major**, เส้นแนวนอนระดับหัวนม (**ICS 5**/inframammary crease) และยอดอยู่ใต้รักแร้ — หลีกเลี่ยง long thoracic nerve, internal mammary artery, ตับและม้าม\n1. Consent (ถ้าทำได้), ตรวจข้าง (ดู CXR/คลินิกซ้ำ), จัดท่านอนหงายยกแขนข้างนั้นไว้เหนือศีรษะ\n2. ระบุ **ICS 4–5 แนว anterior–midaxillary line** ในสามเหลี่ยม ไม่ต่ำกว่าระดับหัวนมเพื่อไม่ให้เข้าช่องท้อง\n3. Aseptic technique; ฉีด **lidocaine** ผิวหนัง → periosteum ขอบบนซี่โครง → pleura (ดูดได้ลม/น้ำ = ยืนยันตำแหน่ง)\n4. กรีดผิวหนัง 2–3 ซม. ขนานซี่โครง เลาะ blunt ด้วย Kelly **ข้ามขอบบนของซี่โครงล่าง** (neurovascular bundle อยู่ใต้ขอบล่างของซี่โครง)\n5. เจาะ parietal pleura ด้วย clamp แล้ว **finger sweep** ยืนยันว่าอยู่ในช่องเยื่อหุ้มปอดและไม่มีพังผืด\n6. ใส่ท่อโดยใช้ clamp จับปลายนำ (**ห้ามใช้ trocar**) — ลมให้ปลายไปทาง apex, น้ำ/เลือดให้ไปทาง posterior-basal; รูข้างสุดท้ายต้องอยู่ในช่องอก\n7. ต่อ underwater seal ดู **fogging/swinging/bubbling** เย็บยึดท่อด้วย anchoring/mattress suture (BTS ไม่แนะนำ purse-string เพราะแผลเป็นไม่สวย) ปิด dressing\n8. **CXR หลังใส่** ยืนยันตำแหน่งและการขยายของปอด บันทึกปริมาณที่ออก\n\n### ระบบ underwater seal และการดูแลท่อ (drain management)\nระบบ 3 ขวด/ระบบสำเร็จรูป: **collection chamber** – **water seal** (ปลายท่อจุ่มน้ำ ~2 cm ทำหน้าที่ one-way valve) – **suction control** (ทั่วไป −20 cmH₂O)\n| สิ่งที่เห็นใน water seal | แปลผล | ทำอะไร |\n|---|---|---|\n| ระดับน้ำ **swing** ขึ้นลงตามการหายใจ | ท่อเปิดอยู่ในช่องเยื่อหุ้มปอด | ปกติ |\n| **ไม่ swing** | ท่ออุดตัน/หักพับ/ผู้ป่วยนอนทับ หรือปอดขยายเต็มจนเกิด pleurodesis | ตรวจสาย, flush pigtail ด้วย NSS, CXR |\n| **Bubbling** ต่อเนื่อง | air leak จากปอด (หรือรูข้างท่อหลุดออกนอกอก/ข้อต่อรั่ว) | หาจุดรั่วตั้งแต่ข้อต่อ, CXR |\n| bubbling มาก + ปอดยุบ | major air leak/bronchial injury | เพิ่ม suction, ใส่ท่อเพิ่ม, bronchoscopy |\n- ขวดต้อง**อยู่ต่ำกว่าระดับหน้าอก**เสมอ ห้ามยกขวดสูงกว่าอก (น้ำไหลย้อน)\n- **ห้าม clamp** ท่อที่มี air leak — อาจเกิด tension\n- Schwartz ชี้ว่าการใช้ suction กับ air leak อาจทำให้รั่วนานขึ้น ถ้าปอดขยายดีใช้ water seal อย่างเดียวได้ ถ้าปอดยุบค่อยเพิ่ม suction\n- ระบาย effusion ปริมาณมาก: ครั้งแรกไม่เกิน **1500 mL** เพื่อป้องกัน **re-expansion (postexpansion) pulmonary edema**\n\n### การถอด ICD และภาวะแทรกซ้อน\n**เกณฑ์ถอด**: ไม่มี air leak (ไม่มีฟองแม้ไอ), ปอดขยายเต็มใน CXR, ปริมาณที่ออกลดลง — เดิมใช้ <150 mL/24 ชม. แต่ Schwartz ระบุว่าหลัง lobectomy ถอดได้เมื่อ ≤400 mL/24 ชม. เพราะ pleural lymphatic ดูดซึมได้ถึง ~500 mL/วัน (ยกเว้นกรณี empyema, malignant effusion, หลัง pleurodesis ที่ต้องเข้มกว่า)\n- ขั้นตอน: ตัดไหมยึด เตรียมผ้าก๊อซ occlusive ให้ผู้ป่วย **กลั้นหายใจ** (ปลายหายใจเข้าแบบ Valsalva หรือปลายหายใจออก — ทั้งสองแบบรับได้) ดึงออกเร็วในจังหวะเดียว ปิดแผลทันที → **CXR** ดู pneumothorax ซ้ำ\n- บางทีมทำ **clamp trial** ก่อนถอดในรายที่ air leak เพิ่งหาย\n\n| ภาวะแทรกซ้อน | การป้องกัน |\n|---|---|\n| ใส่ผิดที่: ใต้กะบังลม (ตับ/ม้าม), subcutaneous | อยู่เหนือระดับหัวนม, finger sweep, ห้าม trocar |\n| เลือดออกจาก intercostal artery | เลาะข้ามขอบบนซี่โครง |\n| Re-expansion pulmonary edema | ระบายครั้งแรก ≤1500 mL |\n| Empyema/ติดเชื้อแผล | aseptic technique เข้มงวด (หลักฐาน antibiotic prophylaxis ยังไม่ชัด) |\n| Subcutaneous emphysema | ตรวจรูข้างท่ออยู่ในอก, ท่อไม่อุดตัน |\n",
+   "pearls": [
+    "Safe triangle: latissimus dorsi – pectoralis major – ระดับหัวนม (ICS 5)",
+    "เลาะข้ามขอบบนของซี่โครงล่าง หลบ neurovascular bundle ใต้ขอบล่างของซี่โครง",
+    "ไม่ใช้ trocar ต้อง finger sweep ก่อนใส่ท่อทุกครั้ง",
+    "Swing = ท่อเปิด · bubbling = air leak · ไม่ swing = ท่ออุดตันหรือปอดขยายเต็ม",
+    "ห้าม clamp ท่อที่ยังมี air leak และห้ามยกขวดสูงกว่าอก",
+    "ระบาย effusion ครั้งแรก ≤1500 mL ป้องกัน re-expansion pulmonary edema",
+    "ถอดเมื่อไม่มี air leak + ปอดขยาย + output ลดลง แล้ว CXR ซ้ำ"
+   ],
+   "items": [
+    {
+     "id": "N3-10-2-1",
+     "kind": "mcq",
+     "topic": "Chest tube — safe insertion site",
+     "stem": "A 40-year-old woman with a traumatic right hemothorax needs a chest tube. The intern plans to insert it at the 7th intercostal space in the posterior axillary line because 'blood collects at the bottom'. As the supervising resident, which insertion site do you recommend?",
+     "choices": [
+      "4th–5th intercostal space between the anterior and mid-axillary lines, over the upper border of the rib below",
+      "7th intercostal space in the posterior axillary line, over the lower border of the rib above",
+      "2nd intercostal space in the midclavicular line",
+      "6th intercostal space in the midclavicular line",
+      "8th intercostal space in the scapular line"
+     ],
+     "answer": 0,
+     "explain": "ICD ควรใส่ใน **safe triangle** (ขอบ latissimus dorsi, ขอบ pectoralis major, ระดับหัวนม/ICS 5) คือ **ICS 4–5 ระหว่าง anterior–midaxillary line** โดยเลาะ**ข้ามขอบบนของซี่โครงล่าง**เพื่อเลี่ยง neurovascular bundle ที่อยู่ใต้ขอบล่างของซี่โครง ส่วนการระบายเลือดได้ดีขึ้นอยู่กับการ**ชี้ปลายท่อไปทาง posterior-basal** ไม่ใช่การเจาะต่ำ\n- **ICS 7 posterior axillary ขอบล่างซี่บน**: กะบังลมขึ้นสูงได้ถึง ICS 5 ขณะหายใจออก เสี่ยงทะลุตับ/ม้าม และขอบล่างของซี่โครงคือที่อยู่ของ intercostal vessels\n- **ICS 2 midclavicular**: ตำแหน่ง needle decompression ในเด็ก ไม่เหมาะใส่ท่อระบายเลือด และเสี่ยง internal mammary/แผลเป็นด้านหน้า\n- **ICS 6 midclavicular**: อยู่หน้าและต่ำเกินไป เสี่ยงกะบังลมและกล้ามเนื้อหน้าอกหนา\n- **ICS 8 scapular line**: ต่ำมาก เสี่ยงเข้าช่องท้องและไตรวมถึงผู้ป่วยต้องนอนทับท่อ",
+     "pearl": "ICD = safe triangle, ICS 4–5, ข้ามขอบบนของซี่โครงล่าง, ไม่ต่ำกว่าระดับหัวนม",
+     "src": "Schwartz 11e Ch 7",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 7"
+     ]
+    },
+    {
+     "id": "N3-10-2-2",
+     "kind": "mcq",
+     "topic": "Chest drain — no swing in water seal",
+     "stem": "A 60-year-old man had a 24 Fr chest tube placed 2 days ago for a right pneumothorax. On the morning round the nurse reports that the fluid in the water-seal chamber no longer moves with respiration and there is no bubbling. He has new dyspnea, SpO2 dropped from 97% to 91%, and breath sounds are reduced on the right. What is the most appropriate next step?",
+     "choices": [
+      "Check the tubing for kinks or compression and obtain a chest X-ray to assess tube patency and lung expansion",
+      "Remove the chest tube because the absent swing shows the lung is fully expanded",
+      "Clamp the chest tube for 4 hours and repeat the chest X-ray",
+      "Raise the drainage bottle above the chest to improve drainage",
+      "Increase suction to −60 cmH2O without further assessment"
+     ],
+     "answer": 0,
+     "explain": "ระดับน้ำที่ **ไม่ swing** แปลได้ 2 แบบคือ ท่อ**อุดตัน/หักพับ/ถูกนอนทับ** หรือปอดขยายเต็มจน pleura ติดกัน แต่ผู้ป่วยรายนี้**มีอาการใหม่และเสียงหายใจลด** จึงต้องคิดว่าท่ออุดตันและลมกลับมาสะสม → ตรวจสายตั้งแต่ผิวหนังถึงขวด (kink, ผู้ป่วยนอนทับ, clot) ให้ผู้ป่วยไอดูการ swing และถ่าย **CXR** ถ้าท่ออุดตันจริงอาจต้องเปลี่ยน/ใส่ใหม่\n- **ถอดท่อ**: ห้ามถอดในผู้ป่วยที่มีอาการใหม่โดยยังไม่รู้สาเหตุ\n- **clamp ท่อ**: ถ้ามีลมสะสมอยู่อาจกลายเป็น tension\n- **ยกขวดสูงกว่าอก**: น้ำในขวดจะไหลย้อนเข้าช่องอก ผิดหลัก\n- **เพิ่ม suction −60**: ไม่แก้ท่ออุดตัน และ suction สูงเกินเสี่ยงทำลายเนื้อปอด",
+     "pearl": "Water seal ไม่ swing + ผู้ป่วยแย่ลง = คิดว่าท่ออุดตัน → ตรวจสาย + CXR ห้าม clamp",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "N3-10-2-3",
+     "kind": "mcq",
+     "topic": "Re-expansion pulmonary edema",
+     "stem": "A 68-year-old woman with a large malignant left pleural effusion has a chest tube inserted. Within 40 minutes 2,800 mL of straw-colored fluid has drained. She now develops cough, frothy sputum, tachypnea and SpO2 86%. A chest X-ray shows new alveolar opacities in the left lung, which is now expanded. Which measure would most likely have prevented this complication?",
+     "choices": [
+      "Limiting the initial drainage to about 1,500 mL",
+      "Using a larger-bore chest tube",
+      "Applying −40 cmH2O suction from the start",
+      "Giving prophylactic intravenous antibiotics before insertion",
+      "Inserting the tube in the 2nd intercostal space"
+     ],
+     "answer": 0,
+     "explain": "อาการเกิดหลังระบายน้ำปริมาณมากอย่างรวดเร็ว และเห็นฝ้าในปอดข้างที่เพิ่งขยาย = **re-expansion (postexpansion) pulmonary edema** Schwartz แนะนำให้**ระบายครั้งแรกไม่เกิน 1500 mL** แล้ว clamp เป็นช่วง ๆ เพื่อป้องกัน รักษาแบบ supportive (O₂, อาจต้อง NIV/ventilator)\n- **ท่อใหญ่ขึ้น**: ยิ่งระบายเร็วขึ้น เพิ่มความเสี่ยง\n- **suction −40 ตั้งแต่ต้น**: แรงดูดสูงทำให้ปอดขยายเร็ว เป็นปัจจัยเสี่ยงเสียเอง\n- **antibiotic**: ไม่เกี่ยวกับกลไก (เป็น capillary leak จากการขยายของปอดที่ยุบนาน)\n- **ICS 2**: ตำแหน่งไม่เกี่ยวกับภาวะนี้ และไม่เหมาะระบายน้ำ",
+     "pearl": "ระบาย effusion ครั้งแรก ≤1.5 L ป้องกัน re-expansion pulmonary edema",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3-10-3",
+   "title": "Pleural effusion, empyema และ spontaneous pneumothorax",
+   "summary": "เจาะน้ำในช่องเยื่อหุ้มปอดแล้วจะแปลผลอย่างไร เมื่อไรต้องระบายหรือผ่าตัด และ spontaneous pneumothorax รักษาแบบไหน",
+   "minutes": 15,
+   "source": "Schwartz 11e Ch 19 — Pleural effusion, Empyema, Spontaneous pneumothorax",
+   "md": "### Pleural effusion: เจาะก่อน แล้วแยก transudate/exudate\nขั้นแรกคือดูว่ามีเหตุผลต้องเจาะหรือไม่ — effusion ทั้งสองข้างในผู้ป่วย CHF ที่ชัดเจนอาจรักษาโรคเดิมก่อน ส่วน effusion ข้างเดียวที่ไม่รู้สาเหตุ มีไข้ หรือมากพอ ให้ทำ **diagnostic thoracentesis** (ใช้ ultrasound นำ)\n**Light's criteria** — เป็น **exudate** ถ้ามีข้อใดข้อหนึ่ง:\n- pleural/serum **protein >0.5**\n- pleural/serum **LDH >0.6**\n- pleural LDH **> 2/3 ของ upper limit** ของ serum LDH\n\n| ผล | สาเหตุที่พบบ่อย | สิ่งที่ตรวจต่อ |\n|---|---|---|\n| Transudate | CHF, cirrhosis, nephrotic, hypoalbuminemia | รักษาโรคต้นเหตุ |\n| Exudate เด่น neutrophil | parapneumonic/empyema, PE, pancreatitis | gram stain, culture, pH, glucose |\n| Exudate เด่น lymphocyte/mononuclear | มะเร็ง, **วัณโรค** (บริบทไทยพบบ่อย) | cytology, **ADA**, pleural biopsy/VATS |\n| น้ำขุ่นขาวเหมือนนม | chylothorax | triglyceride (>110 mg/dL), chylomicron |\n| เลือด | trauma, มะเร็ง, PE | hematocrit น้ำเทียบเลือด |\n\n### Parapneumonic effusion และ empyema: 3 ระยะ กับการตัดสินใจระบาย\nระยะของ empyema (ATS):\n| ระยะ | ลักษณะ | การรักษา |\n|---|---|---|\n| **Exudative** (วันแรก ๆ) | น้ำใส ไหลอิสระ, pH >7.3, glucose >60, LDH <500 | antibiotic ± thoracentesis |\n| **Fibrinopurulent** | ขุ่น มี fibrin เริ่ม **loculation**, pH <7.2, glucose <40 | **ICD/pigtail** ± intrapleural t-PA + DNase หรือ **VATS** |\n| **Organizing** (หลายสัปดาห์) | เกิด pleural peel หนา → **trapped lung** | **decortication** (VATS/thoracotomy) |\n- สัญญาณที่บอกว่า \"ต้องระบาย\": **หนองจริง**, gram stain/culture บวก, **pH <7.2**, glucose <40 mg/dL, loculation ใน US/CT\n- Intrapleural **t-PA 10 mg + DNase 5 mg** วันละ 2 ครั้ง (MIST2) ลด LOS และการส่งผ่าตัด; t-PA อย่างเดียวไม่ช่วย\n- Antibiotic ต้องครอบคลุม **anaerobe** (เช่น amoxicillin/clavulanate หรือ ceftriaxone + metronidazole) ให้ยาวหลายสัปดาห์\n- เด็กและผู้ใหญ่ไทยที่มี empyema + เบาหวาน/ทำนา นึกถึง **melioidosis** ด้วย (ส่ง culture และเลือก ceftazidime/meropenem)\n- ไม่ดีขึ้นใน 5–7 วันหลังระบาย (ไข้ไม่ลง น้ำค้าง) → CT ดู loculation → ส่ง VATS\n\n### Spontaneous pneumothorax: primary vs secondary\n**Primary (PSP)**: ไม่มีโรคปอดเดิม เกิดจาก **apical subpleural bleb** แตก พบในชายวัยรุ่น **รูปร่างสูงผอม สูบบุหรี่**\n**Secondary (SSP)**: มีโรคปอด เช่น **COPD/emphysema**, วัณโรค, cystic fibrosis, PCP ใน HIV, มะเร็ง (sarcoma metastasis) — อาการหนักกว่าแม้ลมน้อย เพราะ reserve ต่ำ\n- **Catamenial pneumothorax**: หญิงอายุ 20–30 ปี เกิดภายใน 72 ชม. หลังเริ่มมีประจำเดือน สัมพันธ์กับ endometriosis\n\n| สถานการณ์ (BTS 2023 แบบย่อ) | แนวทาง |\n|---|---|\n| PSP ไม่มี/อาการน้อย | **conservative** (สังเกตอาการ, นัดตรวจซ้ำ) แม้ขนาดค่อนข้างใหญ่ |\n| PSP มีอาการ | **needle aspiration** หรือ ambulatory device/ICD เล็ก |\n| SSP | ส่วนใหญ่ admit + **ICD ขนาดเล็ก** |\n| Tension หรือ hemodynamics ผิดปกติ | decompress → ICD ทันที |\n- ขนาด \"ใหญ่\" ตาม BTS 2010 คือ ระยะขอบปอดถึงผนังอก **≥2 ซม. ที่ระดับ hilum**\n- ให้ O₂ ความเข้มข้นสูงในรายที่ admit ช่วยเร่งการดูดซึมลม (ระวังใน COPD ที่ CO₂ คั่ง)\n\n### ข้อบ่งชี้ผ่าตัด (VATS bleb resection + pleurodesis)\nตาม Schwartz:\n- **Air leak ต่อเนื่อง >3 วัน** (บางแนวทางใช้ 5 วัน)\n- **กลับเป็นซ้ำ** (recurrence) หรือเป็นข้างตรงข้าม/สองข้าง\n- **ปอดแฟบทั้งหมด**ตั้งแต่ครั้งแรก\n- อาชีพ/กิจกรรมเสี่ยง: **นักบิน, นักดำน้ำลึก**, ผู้ที่ต้องเดินทางไปที่ห่างไกล\n- CT พบ bleb ใหญ่หรือ bullae หลายอัน เสี่ยงเป็นซ้ำ\n- หัตถการ: **VATS** ตัด bleb ที่ apex ด้วย stapler + **pleurodesis** (mechanical abrasion, pleurectomy หรือ talc)\n- คำแนะนำก่อนกลับบ้าน: **เลิกบุหรี่**, งดขึ้นเครื่องบินจนกว่า CXR ยืนยันว่าหายสนิท, **ห้ามดำน้ำลึก**ตลอดไปยกเว้นได้ผ่าตัด pleurectomy สองข้าง, กลับมาทันทีถ้าเหนื่อย/เจ็บอก\n",
+   "pearls": [
+    "Light's: protein ratio >0.5, LDH ratio >0.6 หรือ pleural LDH >2/3 ULN = exudate",
+    "Exudate เด่น lymphocyte ในไทย → นึกถึง TB ส่ง ADA",
+    "Empyema 3 ระยะ: exudative → fibrinopurulent → organizing (trapped lung → decortication)",
+    "pH <7.2 / glucose <40 / หนอง / loculation → ต้องระบาย",
+    "t-PA + DNase ร่วมกันลดการส่งผ่าตัด; t-PA เดี่ยวไม่ช่วย",
+    "PSP = apical bleb ในชายสูงผอมสูบบุหรี่; SSP = มีโรคปอดเดิม อาการหนักกว่า",
+    "ผ่าตัด VATS เมื่อ air leak >3 วัน, เป็นซ้ำ, ปอดยุบหมด, นักบิน/นักดำน้ำ"
+   ],
+   "items": [
+    {
+     "id": "N3-10-3-1",
+     "kind": "mcq",
+     "topic": "Complicated parapneumonic effusion — drainage",
+     "stem": "A 55-year-old diabetic rice farmer has had fever and right pleuritic chest pain for 8 days despite oral antibiotics. CXR shows a moderate right pleural effusion; ultrasound shows septations. Thoracentesis yields turbid fluid: pH 6.95, glucose 28 mg/dL, LDH 1,800 U/L, neutrophils 90%, gram stain negative. Blood and pleural cultures are pending. Besides IV antibiotics, what is the most appropriate management?",
+     "choices": [
+      "Chest tube drainage of the pleural space",
+      "Repeat thoracentesis only if fever persists after 1 week",
+      "Continue antibiotics alone and repeat CXR in 2 weeks",
+      "Immediate open thoracotomy and decortication",
+      "Talc pleurodesis through a small-bore catheter"
+     ],
+     "answer": 0,
+     "explain": "น้ำมี **pH <7.2, glucose <40 mg/dL** และ septation ใน US = **complicated parapneumonic effusion ระยะ fibrinopurulent** → ต้อง**ระบายช่องเยื่อหุ้มปอด** ด้วย ICD/pigtail (± intrapleural t-PA + DNase) ร่วมกับ antibiotic ครอบคลุม anaerobe ในบริบทชาวนาเบาหวานต้องครอบคลุม **melioidosis** ด้วย ถ้ายังไม่ดีขึ้นจึงส่ง VATS\n- **thoracentesis ซ้ำเมื่อไข้ไม่ลง 1 สัปดาห์**: ช้าเกินไป น้ำจะกลายเป็นระยะ organizing\n- **antibiotic อย่างเดียว**: เหมาะเฉพาะ simple effusion ที่ pH >7.2\n- **thoracotomy + decortication ทันที**: ใช้ในระยะ organizing/trapped lung หรือเมื่อการระบายและ VATS ล้มเหลว\n- **talc pleurodesis**: ใช้กับ malignant effusion ห้ามทำในช่องเยื่อหุ้มปอดที่ติดเชื้อ",
+     "pearl": "Pleural fluid pH <7.2 หรือ glucose <40 หรือหนอง/loculation = ต้องระบาย",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "N3-10-3-2",
+     "kind": "mcq",
+     "topic": "Primary spontaneous pneumothorax — indication for surgery",
+     "stem": "A 19-year-old tall, thin male smoker has a right primary spontaneous pneumothorax (his second episode on the same side; the first was 8 months ago and resolved with aspiration). He is comfortable, SpO2 97%. A small-bore chest drain is placed and the lung re-expands. What is the most appropriate definitive management?",
+     "choices": [
+      "Video-assisted thoracoscopic bleb resection with pleurodesis",
+      "Remove the drain when the leak stops and advise follow-up only",
+      "Long-term outpatient Heimlich valve",
+      "Lifelong home oxygen therapy",
+      "Right upper lobectomy by open thoracotomy"
+     ],
+     "answer": 0,
+     "explain": "การ**เป็นซ้ำข้างเดิม**เป็นข้อบ่งชี้ผ่าตัดตาม Schwartz (เช่นเดียวกับ air leak >3 วัน, ปอดยุบทั้งหมดครั้งแรก, อาชีพเสี่ยง) หัตถการมาตรฐานคือ **VATS ตัด apical bleb + pleurodesis** (abrasion/pleurectomy/talc) ลดการเป็นซ้ำได้มาก พร้อมแนะนำเลิกบุหรี่\n- **ถอดท่อแล้วนัดดู**: โอกาสเป็นซ้ำหลังครั้งที่สองสูงมาก จึงไม่เพียงพอ\n- **Heimlich valve ระยะยาว**: เป็นอุปกรณ์ระบายชั่วคราว ไม่ป้องกันการเกิดซ้ำ\n- **home oxygen**: ไม่ได้รักษาโรคและผู้ป่วยไม่มีภาวะขาดออกซิเจนเรื้อรัง\n- **lobectomy เปิดอก**: เกินความจำเป็น ปัญหาคือ bleb ขนาดเล็กที่ apex",
+     "pearl": "PSP เป็นซ้ำ / leak >3 วัน / ปอดยุบหมด / นักบิน-นักดำน้ำ → VATS bleb resection + pleurodesis",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    },
+    {
+     "id": "N3-10-3-3",
+     "kind": "mcq",
+     "topic": "Pleural effusion — Light's criteria interpretation",
+     "stem": "A 62-year-old man has a right pleural effusion. Serum protein 7.0 g/dL, serum LDH 200 U/L (upper limit of normal 220 U/L). Pleural fluid: protein 4.6 g/dL, LDH 260 U/L, glucose 80 mg/dL, lymphocytes 85%, no organisms on gram stain. He has had 2 months of evening fever and 5 kg weight loss. Which test on the pleural fluid is most useful next?",
+     "choices": [
+      "Adenosine deaminase (ADA)",
+      "Triglyceride level",
+      "Amylase level",
+      "Brain natriuretic peptide",
+      "Hematocrit"
+     ],
+     "answer": 0,
+     "explain": "Pleural/serum protein = 4.6/7.0 = 0.66 (>0.5) และ LDH ratio = 1.3 (>0.6) → **exudate** เด่น **lymphocyte** ร่วมกับไข้ตอนเย็นและน้ำหนักลด ในบริบทประเทศไทยต้องคิดถึง **tuberculous pleuritis** ก่อน → ตรวจ **ADA** (ค่าสูงสนับสนุน TB) ควบคู่ cytology หาเซลล์มะเร็ง ถ้ายังไม่ได้คำตอบทำ pleural biopsy/VATS\n- **triglyceride**: ใช้เมื่อสงสัย chylothorax (น้ำขุ่นขาว)\n- **amylase**: ใช้เมื่อสงสัย pancreatitis หรือ esophageal rupture\n- **BNP**: ช่วยในกรณีที่สงสัยว่าเป็น transudate จาก heart failure ซึ่งไม่ใช่รายนี้\n- **hematocrit**: ใช้เมื่อน้ำเป็นเลือด เพื่อแยก hemothorax",
+     "pearl": "Exudate เด่น lymphocyte ในคนไทย = TB จนกว่าจะพิสูจน์ว่าไม่ใช่ → ส่ง ADA + cytology",
+     "src": "Schwartz 11e Ch 19",
+     "ref": [
+      "Schwartz's Principles of Surgery 11e, Ch 19"
+     ]
+    }
+   ]
+  }
+ ],
+ "meq": [
+  {
+   "id": "N3-10-MEQ1",
+   "part": "MEQ",
+   "topic": "Blunt chest trauma — tension pneumothorax, hemothorax and chest drain management",
+   "vignette": "ชายไทยอายุ 32 ปี ขับมอเตอร์ไซค์ชนเสาไฟฟ้า ถูกนำส่ง ER รพช. ภายใน 30 นาที\nแรกรับ: พูดได้แต่หอบ GCS E4V5M6, RR 34/min, BP 78/50 mmHg, PR 132/min, SpO₂ 84% (O₂ mask with bag 15 L/min)\nPE: หลอดลมเอียงไปซ้าย ทรวงอกขวามีรอยถลอกและกดเจ็บซี่โครงหลายซี่ เสียงหายใจขวาหายไป เคาะขวาโปร่ง คลำได้ subcutaneous emphysema ที่ผนังอกขวา คอไม่มีหลอดเลือดโป่งชัด",
+   "questions": [
+    {
+     "q": "1. ภาวะที่คุกคามชีวิตในผู้ป่วยรายนี้คืออะไร และจะจัดการภายใน 2 นาทีแรกอย่างไร (ต้องถ่าย CXR ก่อนหรือไม่)",
+     "a": "**Right tension pneumothorax** (หอบ + hypotension + หลอดลมเอียงไปฝั่งตรงข้าม + เสียงหายใจหาย + เคาะโปร่ง + subcutaneous emphysema) JVP ไม่โป่งได้เพราะมีภาวะเสียเลือดร่วม\n- **ไม่ต้องรอ CXR** — เป็น clinical diagnosis\n- ทำ **needle decompression** ด้วย IV catheter 14G ที่ **ICS 4–5 anterior/midaxillary line** ข้างขวา (หรือ finger thoracostomy) ได้ยินลมพุ่งออก\n- ตามด้วย **ICD ทันที** ใน safe triangle\n- พร้อมกัน: O₂ high flow, ประคองคอ (C-spine), เปิด IV เบอร์ใหญ่ 2 เส้น ส่ง CBC/G/M\nเกณฑ์ให้คะแนน\n- บอก tension pneumothorax ข้างขวา (2)\n- decompression ทันทีโดยไม่รอ CXR (2)\n- ตำแหน่งถูกต้อง (1) และตามด้วย ICD (1)"
+    },
+    {
+     "q": "2. หลังใส่ ICD 32 Fr ข้างขวา มีลมออกมากและเลือดออก 900 mL ทันที BP 96/60 mmHg จงอธิบายสิ่งที่จะติดตามในชั่วโมงต่อมา และเกณฑ์ที่จะส่งผ่าตัด thoracotomy",
+     "a": "- ติดตาม **ปริมาณเลือดจาก ICD ทุกชั่วโมง**, V/S, urine output, Hb, การ swing/bubbling ของ water seal, CXR หลังใส่ท่อ\n- resuscitate ด้วยเลือด (**balanced transfusion** PRC:FFP:platelet) และ **tranexamic acid** ภายใน 3 ชม.\n- เกณฑ์ thoracotomy (blunt): **output แรก >1500 mL** (รายนี้ 900 ยังไม่ถึง), **>200 mL/h ต่อเนื่อง 3 ชั่วโมง**, hemodynamics ไม่คงที่แม้ resuscitate, caked hemothorax แม้มี ICD 2 สาย, **massive air leak** ที่ปอดยังไม่ขยาย/ventilation ไม่พอ (สงสัย bronchial injury)\n- บริบท รพช.: ถ้าแนวโน้มต้องผ่าตัดหรือไม่มีศัลยแพทย์ทรวงอก → **ประสานส่งต่อ รพศ./รพท.** ตั้งแต่ต้น พร้อมเลือดและพยาบาลประจำรถ"
+    },
+    {
+     "q": "3. วันที่ 2 ใน ward พบว่าฟองอากาศใน water seal ยังออกต่อเนื่องทุกครั้งที่หายใจ CXR ปอดขวายังยุบประมาณ 30% จงให้แนวทางประเมินและจัดการ",
+     "a": "- ตรวจหาการรั่วจาก**ระบบ**ก่อน: ข้อต่อหลวม, **รูข้างท่อหลุดออกมาอยู่นอกอก** (ดูจาก CXR/ตำแหน่งเส้นทึบรังสีของท่อ), แผลรอบท่อรั่ว — ลอง clamp ชั่วคราวใกล้ผนังอก ถ้าฟองหยุด = รั่วจากผู้ป่วย ถ้ายังมี = รั่วจากระบบ\n- รั่วจากปอดและปอดยังยุบ → **เพิ่ม suction (−20 cmH₂O)**, ตรวจว่าท่อไม่อุดตัน, พิจารณา**ใส่ท่อที่ 2**\n- air leak มากต่อเนื่องหรือปอดไม่ขยายแม้มี 2 ท่อ → **bronchoscopy** หา tracheobronchial injury → ผ่าตัด\n- air leak เล็กน้อยต่อเนื่อง >3–5 วัน → ปรึกษาศัลยแพทย์ทรวงอกพิจารณา VATS\n- **ห้าม clamp ICD** ค้างไว้ขณะยังมี air leak"
+    },
+    {
+     "q": "4. วันที่ 5 ไม่มี air leak ปอดขยายเต็ม ICD ออก 80 mL/24 ชม. เป็นน้ำใสปนเลือด จงเขียนคำสั่ง/ขั้นตอนการถอด ICD และสิ่งที่ต้องเฝ้าระวังหลังถอด",
+     "a": "**เกณฑ์ครบ**: ไม่มีฟองแม้ไอ, ปอดขยายเต็มใน CXR, output น้อย (<150–200 mL/วัน), ผู้ป่วยไม่หอบ\n1. อธิบายผู้ป่วย ให้ยาแก้ปวดก่อน 30 นาที\n2. ตัดไหมยึดท่อ เตรียม occlusive dressing (vaseline gauze + gauze + plaster)\n3. ให้ผู้ป่วย**กลั้นหายใจ** (Valsalva ปลายหายใจเข้า) ดึงท่อออกเร็วในจังหวะเดียว ปิดแผลทันที (หรือผูก mattress suture ที่เตรียมไว้)\n4. **CXR หลังถอด** (ภายใน 4–24 ชม. ตามสถาบัน) ดู pneumothorax ซ้ำ\n5. เฝ้าระวัง: หอบ เจ็บอก SpO₂ ลด subcutaneous emphysema, ไข้/แผลมีหนอง, **retained hemothorax/empyema** ในภายหลัง\n6. นัดติดตาม ระงับปวดซี่โครงหัก ฝึก **incentive spirometry** ป้องกัน pneumonia"
+    }
+   ],
+   "ref": [
+    "Schwartz 11e Ch 7",
+    "Schwartz 11e Ch 19",
+    "ATLS 10th edition (2018)"
+   ]
+  }
+ ],
+ "osce": [
+  {
+   "id": "N3-10-OSCE1",
+   "topic": "Intercostal chest drain insertion (procedure checklist)",
+   "station": "สถานี 8 นาที · หัตถการ (หุ่นฝึก ICD)",
+   "instruction": "ผู้ป่วยชายอายุ 45 ปี มี **traumatic right hemothorax** ปานกลาง V/S stable (BP 118/76, PR 98, SpO₂ 95% on cannula) CXR ยืนยันแล้ว\n\nให้นักศึกษา **ใส่ intercostal chest drain ข้างขวา** บนหุ่นฝึก พร้อมพูดอธิบายแต่ละขั้นตอนให้ผู้คุมสอบฟัง มีอุปกรณ์ครบ (ชุด ICD, ท่อ 28 Fr, ขวด underwater seal, 1% lidocaine, ไหม silk 1-0)\n\nไม่ต้องซักประวัติเพิ่ม เวลา 8 นาที",
+   "answer": "1. แนะนำตัว ยืนยันผู้ป่วยและ**ข้างที่ทำ** (ดู CXR/ตรวจซ้ำ) ขอ consent อธิบายประโยชน์และความเสี่ยง (1)\n2. จัดท่านอนหงายเอนเล็กน้อย **ยกแขนขวาไว้เหนือศีรษะ** (1)\n3. ระบุ **safe triangle**: ขอบ latissimus dorsi, ขอบ pectoralis major, ระดับหัวนม/ICS 5 — เลือก **ICS 4–5 anterior–midaxillary line** (2)\n4. ล้างมือ ใส่ sterile gown/glove ทาน้ำยา ปูผ้า (1)\n5. ฉีด **lidocaine** ผิวหนัง → ขอบบนซี่โครง → pleura ดูดได้เลือด/น้ำยืนยัน (คำนวณขนาด ≤3 mg/kg plain lidocaine) (1)\n6. กรีด 2–3 ซม. ขนานซี่โครง เลาะ blunt **ข้ามขอบบนของซี่โครงล่าง** (2)\n7. เจาะ pleura ด้วย clamp แล้ว **finger sweep** (2)\n8. ใส่ท่อด้วย clamp นำ ไม่ใช้ trocar ปลายชี้ **posterior-superior** สำหรับเลือด; ตรวจว่ารูข้างสุดท้ายอยู่ในอก (2)\n9. ต่อ **underwater seal** ดู swing/fogging/เลือดไหล ขวดอยู่ต่ำกว่าอก (1)\n10. เย็บยึดท่อ ปิด dressing (1)\n11. สั่ง **CXR** ยืนยันตำแหน่ง บันทึกปริมาณเลือดที่ออก และบอกเกณฑ์ผ่าตัด (>1500 mL ทันที หรือ >200 mL/h × 3 ชม.) (2)\n12. ทิ้งของมีคมถูกที่ สื่อสารกับผู้ป่วยตลอด (1)\n\n**Fatal errors**: ใส่ผิดข้าง, ใช้ trocar ดันเข้าแรง, เจาะใต้ระดับหัวนม/ขอบล่างของซี่โครง, ไม่ต่อ underwater seal หรือยกขวดสูงกว่าอก, ไม่ทำ aseptic technique"
+  },
+  {
+   "id": "N3-10-OSCE2",
+   "topic": "Chest X-ray interpretation — chest emergencies",
+   "station": "สถานี 5 นาที · แปลผล CXR",
+   "instruction": "ผู้คุมสอบให้ภาพ CXR 3 ภาพตามลำดับ พร้อมประวัติสั้น ๆ ให้นักศึกษาบรรยายสิ่งที่เห็นอย่างเป็นระบบ บอกการวินิจฉัย และสิ่งที่จะทำต่อทันที\n\n- **ภาพ A**: ชาย 20 ปี สูงผอม เจ็บอกซ้ายทันทีขณะนั่งเรียน V/S ปกติ — CXR PA upright: เห็นเส้น visceral pleura ด้านซ้ายห่างผนังอก 3 ซม. ที่ระดับ hilum ไม่มีลายปอดด้านนอกเส้นนี้ mediastinum อยู่กลาง\n- **ภาพ B**: หญิง 30 ปี ถูกรถชน supine AP film: ทรวงอกขวาฝ้าขาวทั่วทั้งข้างแบบ ground-glass ยังเห็นลายหลอดเลือดปอด ไม่มี air-fluid level BP 90/60\n- **ภาพ C**: ภาพหลังใส่ ICD ข้างขวา: ปลายท่ออยู่ที่ apex ดี แต่เห็นรูข้างท่อสุดท้าย (sentinel hole/ช่องในเส้นทึบรังสี) อยู่นอกขอบซี่โครง ในชั้นใต้ผิวหนัง มี subcutaneous emphysema",
+   "answer": "**ภาพ A** (รวม 4)\n1. ระบุชนิดภาพ PA upright, ผู้ป่วย, คุณภาพ (1)\n2. พบ **left pneumothorax** เห็นเส้น visceral pleura ไม่มีลายปอดด้านนอก ขนาด **≥2 ซม. ที่ hilum = large** ตาม BTS (2)\n3. ไม่มี mediastinal shift, V/S ปกติ → **primary spontaneous pneumothorax** ไม่ใช่ tension; มีอาการ → needle aspiration หรือ ICD เล็ก/ambulatory device ตาม BTS (1)\n\n**ภาพ B** (รวม 4)\n4. ฟิล์ม **supine** ทำให้เลือดกระจายด้านหลัง เห็นเป็นฝ้าทั้งข้างโดยไม่มี meniscus — สงสัย **right hemothorax** ปริมาณมาก (2)\n5. ร่วมกับ hypotension → resuscitate + **ICD ใหญ่ 28–32 Fr** วัด output; >1500 mL หรือ >200 mL/h × 3 ชม. → thoracotomy; ใช้ eFAST ช่วยยืนยัน (2)\n\n**ภาพ C** (รวม 3)\n6. ท่ออยู่ไม่ลึกพอ **รูข้างท่อสุดท้ายอยู่นอกช่องอก** → ลมรั่วเข้า subcutaneous และเกิด air leak จากระบบ (2)\n7. แก้ไข: **ห้ามดันท่อที่ไม่ sterile กลับเข้าไป** — ใส่ท่อใหม่ (หรือเปลี่ยนท่อ) แล้วถ่าย CXR ซ้ำ (1)\n\n**Fatal errors**: เรียกภาพ B ว่าปกติ/consolidation แล้วไม่ใส่ ICD, สั่ง CT ในผู้ป่วยความดันต่ำ, ดันท่อที่หลุดกลับเข้าไป"
+  }
+ ]
+}
