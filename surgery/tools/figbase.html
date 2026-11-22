@@ -1,0 +1,73 @@
+<!doctype html><meta charset=utf-8><style>:root{
+  /* palette — สีดิบ เขียนครั้งเดียว */
+  --g-50:#eef3f0; --g-0:#ffffff; --g-100:#e3ebe6; --g-900:#0d1712; --g-700:#3d4c44; --g-500:#6d7f75; --g-200:#d8e2dc; --g-300:#bccbc3;
+  --wine-700:#8c1d2f; --wine-50:#f6e9eb; --wine-800:#6e1624;
+  --green-700:#0f7a4a; --green-50:#dff0e6; --amber-700:#9a5f08; --amber-50:#f8efdc; --red-700:#a3271f; --red-50:#f8e9e7; --blue-600:#1f6feb;
+  --n-950:#090d0b; --n-900:#111915; --n-850:#18221d; --n-50:#e7f0ea; --n-300:#a5b8ac; --n-400:#788c80; --n-800:#1d2922; --n-700:#2a3830;
+  --pink-300:#ff8fa3; --pink-950:#24151a; --pink-200:#ffb3c0; --mint-300:#5fe3a1; --mint-950:#0f2419; --gold-300:#e8bb63; --gold-950:#241f10;
+  --coral-300:#e8877c; --coral-950:#2a1715; --sky-300:#7fb4ff;
+  /* ชื่อตามหน้าที่ — โค้ดส่วนอื่นใช้แค่ชุดนี้ */
+  --paper:var(--g-50); --surface:var(--g-0); --surface-sunk:var(--g-100);
+  --ink:var(--g-900); --ink-2:var(--g-700); --ink-3:var(--g-500);
+  --rule:var(--g-200); --rule-strong:var(--g-300);
+  --accent:var(--wine-700); --accent-soft:var(--wine-50); --accent-ink:var(--wine-800); --on-accent:#ffffff;
+  --ok:var(--green-700); --ok-soft:var(--green-50); --miss:var(--amber-700); --miss-soft:var(--amber-50);
+  --bad:var(--red-700); --bad-soft:var(--red-50);
+  --focus:var(--blue-600);
+  --shadow:0 1px 2px rgba(13,23,18,.05),0 12px 28px -20px rgba(13,23,18,.3);
+  /* สเกล (study-page-design) */
+  --r-sm:6px; --r-md:10px; --r-lg:16px;
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px; --s-7:48px;
+  --sans:"IBM Plex Sans Thai","Noto Sans Thai",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --serif:var(--sans);
+  --e:cubic-bezier(.22,.9,.28,1);
+}
+body{font-family:'IBM Plex Sans Thai','Noto Sans Thai',sans-serif;background:#fff}
+.fig{margin:16px 0;border:1px solid var(--rule);border-radius:var(--r-md);background:var(--surface);padding:12px 12px 12px}
+.fig .figt{font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--accent-ink);margin:0 0 8px}
+.fig .figt span{color:var(--ink-3);font-weight:600;margin-right:4px}
+.fig .figt.q{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.fig .figt.q .tt{flex:1 1 200px;min-width:0}
+.fig .figt.q .tt span{color:var(--ink-3);font-weight:600;margin-right:4px}
+.figq{font:inherit;font-size:12px;font-weight:600;letter-spacing:0;color:var(--ink-2);background:var(--surface);border:1px dashed var(--rule-strong);border-radius:999px;padding:4px 8px;cursor:pointer;white-space:nowrap}
+.figq:hover{border-color:var(--accent);color:var(--accent-ink)}.fig.czon .figq{border-style:solid;border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+.fig svg .cz{cursor:pointer}.fig svg .cz rect{fill:var(--surface-sunk);stroke:var(--accent);stroke-width:1;stroke-dasharray:3 2}
+.fig svg .cz:hover rect,.fig svg .cz:focus rect{fill:var(--accent-soft)}.fig svg .cz:focus{outline:none}
+.fig svg .cz text{fill:var(--ink-3);font-weight:600}
+.fig.czon figcaption{display:none}  /* คำอธิบายใต้ภาพเฉลยกลไก — ซ่อนจนกว่าจะเฉลยทั้งหมด */
+.fig .figsv{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fig .figin{margin:0 auto}
+.fig svg{display:block;width:100%;height:auto;color:var(--ink);font-family:var(--sans)}
+.fig figcaption{font-size:14px;line-height:1.6;color:var(--ink-2);margin-top:8px;padding-top:8px;border-top:1px dashed var(--rule)}
+.fig figcaption strong{color:var(--ink)}
+.fig .figscroll{display:none;font-size:12px;color:var(--ink-3);margin-top:4px}
+.fig svg text{fill:var(--ink);font-size:13px;stroke:none}
+.fig svg :is(rect,circle,ellipse,path,polygon){fill:none;stroke:var(--ink-2);stroke-width:1.3}
+.fig svg :is(line,polyline){fill:none;stroke:var(--ink-2);stroke-width:1.3}
+.fig .lg{font-size:15px}.fig .sm{font-size:11.5px}.fig .xs{font-size:10.5px}.fig .b{font-weight:700}
+.fig .mid{text-anchor:middle}.fig .end{text-anchor:end}
+.fig .mu{fill:var(--ink-3)}.fig .i2{fill:var(--ink-2)}.fig .tac{fill:var(--accent-ink)}.fig .tok{fill:var(--ok)}
+.fig .tbad{fill:var(--bad)}.fig .tms{fill:var(--miss)}.fig .twa{fill:var(--focus)}.fig .tpa{fill:var(--surface)}
+.fig .bx{fill:var(--surface);stroke:var(--rule-strong)}.fig .sk{fill:var(--surface-sunk);stroke:var(--rule-strong)}
+.fig .ac{fill:var(--accent-soft);stroke:var(--accent)}.fig .ok{fill:var(--ok-soft);stroke:var(--ok)}
+.fig .bad{fill:var(--bad-soft);stroke:var(--bad)}.fig .ms{fill:var(--miss-soft);stroke:var(--miss)}
+.fig .wa{fill:color-mix(in srgb,var(--focus) 14%,var(--surface));stroke:var(--focus)}
+.fig .acf{fill:var(--accent);stroke:none}.fig .okf{fill:var(--ok);stroke:none}.fig .badf{fill:var(--bad);stroke:none}
+.fig .msf{fill:var(--miss);stroke:none}.fig .waf{fill:var(--focus);stroke:none}.fig .inkf{fill:var(--ink-2);stroke:none}
+.fig .muf{fill:var(--ink-3);stroke:none}.fig .ruf{fill:var(--rule-strong);stroke:none}.fig .paf{fill:var(--surface);stroke:none}
+.fig .ln{fill:none;stroke:var(--ink-2)}.fig .lmu{fill:none;stroke:var(--ink-3)}.fig .lac{fill:none;stroke:var(--accent)}
+.fig .lok{fill:none;stroke:var(--ok)}.fig .lbad{fill:none;stroke:var(--bad)}.fig .lms{fill:none;stroke:var(--miss)}
+.fig .lwa{fill:none;stroke:var(--focus)}.fig .lru{fill:none;stroke:var(--rule-strong)}
+.fig .w2{stroke-width:2.2}.fig .w3{stroke-width:3.4}.fig .w5{stroke-width:5}.fig .da{stroke-dasharray:5 4}.fig .dt{stroke-dasharray:1.5 3.5;stroke-linecap:round}.fig .ns{stroke:none}
+.fig.a3d{border-color:color-mix(in srgb,var(--accent) 30%,var(--rule))}
+.fig.a3d .figt span{color:var(--accent);}
+.fig.anim{border-color:color-mix(in srgb,var(--accent) 30%,var(--rule))}
+.fig.anim .figt span{color:var(--accent);}
+.fig.pimg{padding:8px 8px 12px}
+.fig.pimg a.pz{display:block;border-radius:var(--r-sm);overflow:hidden;background:var(--surface-sunk)}
+.fig.pimg img{display:block;width:100%;height:auto;max-width:620px;margin:0 auto}
+.fig.pimg .pcr{font-size:12px;color:var(--ink-3);margin-top:4px}
+.fig.pimg .pq{margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fig.pimg .pq b{font-size:14px;color:var(--accent-ink)}
+.fig.pimg .pans{margin-top:8px;padding:8px 12px;border-radius:var(--r-sm);background:var(--ok-soft);border:1px solid var(--ok);font-size:14px;line-height:1.6}
+.mk{fill:var(--ink-2)}.mk-ac{fill:var(--accent)}.mk-ok{fill:var(--ok)}.mk-bad{fill:var(--bad)}.mk-ms{fill:var(--miss)}.mk-wa{fill:var(--focus)}.mk-mu{fill:var(--ink-3)}</style><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk"/></marker><marker id="ah-ac" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ac"/></marker><marker id="ah-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ok"/></marker><marker id="ah-bad" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-bad"/></marker><marker id="ah-ms" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-ms"/></marker><marker id="ah-wa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-wa"/></marker><marker id="ah-mu" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0.8L10,5L0,9.2z" class="mk-mu"/></marker></defs></svg><div id=root></div>

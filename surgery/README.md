@@ -15,3 +15,7 @@ CONTENT_SPEC.md     สเปกการเขียนเนื้อหา/�
 
 แก้เนื้อหา → `python3 validate.py parts/*.json && python3 build.py` → publish `index.html` พร้อม `data/*.json` ไปที่ URL เดิม
 สี ชื่อแบบฝึก (MEQ/OSCE/Mock oral) และบทบาทของ AI tutor ของแต่ละกลุ่มตั้งไว้ใน `COURSES` ใน build.py
+
+## แผนภาพ pathophysiology
+ทุกหัวข้อมีแผนภาพ SVG (298 ภาพ) เก็บใน `figs` ของแต่ละ section และวางในเนื้อหาด้วยบรรทัด `[[fig:key]]` — สเปกอยู่ใน FIG_SPEC.md
+ตรวจ: `python3 tools/figlint.py parts/*.json` และ `node tools/figrender.js parts/*.json` (ต้องได้ 0 ทั้งคู่)
