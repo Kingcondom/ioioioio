@@ -933,6 +933,29 @@ body.tr-toc .cols>aside#outline{display:block!important}
 
 
 
+
+/* ---------- แนะนำการอ่าน (lecture.reading) + แผนการอ่านของกลุ่ม (course.plan) ---------- */
+.rdg{margin:16px 0 0;padding:0 16px 16px;border-radius:20px;background:var(--surface-sunk);border:1px solid var(--rule)}
+.rdg>summary{min-height:52px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;cursor:pointer;font-weight:600;font-size:16px;line-height:1.5}
+.rdg>summary .chip{font-weight:500}
+.rdg-lede{margin:0 0 8px;font-size:14px;color:var(--ink-2)}
+.rdg h5{margin:16px 0 4px;font-size:14px;line-height:1.6;font-weight:600;color:var(--accent-ink)}
+.rdg ul{margin:0;padding-left:20px;font-size:14px;line-height:1.6}.rdg li{margin:4px 0}
+.rdg-ord{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px;counter-reset:rd}
+.rdg-ord li{counter-increment:rd;margin:0}
+.rdg-go{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 8px;align-items:start;width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--rule);border-radius:16px;background:var(--surface);color:var(--ink);text-align:left;font:inherit;cursor:pointer}
+.rdg-go:hover{border-color:var(--lime-3)}
+.rdg-go b{font-size:14px;line-height:1.5;font-weight:600}.rdg-go b::before{content:counter(rd) ". "}
+.rdg-go .w{grid-column:2;font-size:12px;line-height:1.5;color:var(--ink-3)}
+.rdg-tag{font-size:12px;line-height:1.5;font-weight:600;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.rdg-tag.must{background:var(--lime);color:var(--on-lime)}.rdg-tag.extra{background:var(--surface-sunk);color:var(--ink-3);border:1px solid var(--rule)}
+.tr-plan>div{padding-bottom:16px}
+.tr-plan-l{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.tr-plan-l>li{display:grid;gap:4px}
+.tr-plan-l>li>b{font-size:14px;line-height:1.5;color:var(--ink)}
+.tr-plan-l>li>span{font-size:12px;line-height:1.5;color:var(--ink-3)}
+.tr-plan-c{display:flex;flex-wrap:wrap;gap:8px}
+.tr-plan-c .tr-tag{min-height:44px;display:inline-flex;align-items:center;border:0;font:inherit;font-size:12px;font-weight:600;cursor:pointer;white-space:normal;text-align:left;max-width:100%}
 /* ===== LIQUID GLASS START (ผู้ใช้ขอ 20 พ.ย. — การ์ดกระจกใส เห็นพื้นหลังเบลอ) ===== */
 :root{
   --paper:#f4efe1; --surface:rgba(255,255,255,.56); --surface-sunk:rgba(255,255,255,.34);
@@ -1724,6 +1747,22 @@ function recallHtml(s){
   return h;
 }
 
+/* ---------- แนะนำการอ่าน ---------- */
+function readingHtml(l){
+  var r=l.reading;if(!r)return "";
+  var by={};l.sections.forEach(function(s){by[s.id]=s;});
+  var h="<details class='rdg' open><summary>แนะนำการอ่าน"+(r.minutes?" <span class='chip'>ใช้เวลา ~"+esc(r.minutes)+" นาที</span>":"")+"</summary>";
+  if(r.start)h+="<p class='rdg-lede'>"+inline(r.start)+"</p>";
+  if(r.order&&r.order.length)h+="<ol class='rdg-ord'>"+r.order.map(function(o){var s=by[o.sec];if(!s)return "";var m=o.level==="must";
+    return "<li><button class='rdg-go' data-sec='"+esc(s.id)+"' data-slec='"+esc(l.lec)+"'><span class='rdg-tag "+(m?"must":"extra")+"'>"+(m?"ต้องอ่าน":"อ่านเสริม")+"</span><b>"+esc(s.title)+"</b>"+
+      (o.why?"<span class='w'>"+inline(o.why)+"</span>":"")+"</button></li>";}).join("")+"</ol>";
+  function list(t,a,f){return a&&a.length?"<h5>"+t+"</h5><ul>"+a.map(f).join("")+"</ul>":"";}
+  h+=list("อ่านต่อใน Schwartz 11e",r.schwartz,function(x){return "<li><b>"+esc(x.ch)+"</b> — "+inline(x.part)+(x.why?" ("+inline(x.why)+")":"")+"</li>";});
+  h+=list("แนวทางและงานวิจัยที่ควรรู้",r.beyond,function(x){return "<li>"+inline(x)+"</li>";});
+  h+=list("ข้อสอบชอบถาม",r.tips,function(x){return "<li>"+inline(x)+"</li>";});
+  return h+"</details>";
+}
+function readPos(l,s){var o=(l.reading&&l.reading.order)||[];for(var i=0;i<o.length;i++)if(o[i].sec===s.id)return {i:i+1,n:o.length,must:o[i].level==="must"};return null;}
 /* ---------- หน้า "คาบเรียน": การ์ดทุกคาบของชุด → กดเข้าไปดูทีละคาบ ---------- */
 function lecCard(l){
   var h="";
@@ -1732,6 +1771,7 @@ function lecCard(l){
     "<h2>"+esc(l.title)+"</h2><p class='lede'>"+esc(l.subtitle||"")+"</p>";
   if(l.objectives&&l.objectives.length)
     h+="<div class='pearls'><h4>เรียนจบคาบนี้แล้วต้องทำได้</h4><ul>"+l.objectives.map(function(o){return "<li>"+inline(o)+"</li>";}).join("")+"</ul></div>";
+  h+=readingHtml(l);
   h+=nlPanel(l);
   var hid=lecHidden(l);
   h+="<div class='meta'><span class='chip"+(done===l.sections.length?" acc":"")+"'>ความคืบหน้า "+done+"/"+l.sections.length+" หัวข้อ</span>"+
@@ -1790,7 +1830,7 @@ function viewSection(){
   list.forEach(function(x,i){if(x.sec.id===s.id)idx=i;});
   var h="<section class='card'><div class='eyebrow'>คาบ "+esc(l.lec)+" · "+esc(l.title)+"</div>"+
     "<h2>"+esc(s.title)+"</h2>"+(s.summary&&!hid?"<p class='lede'>"+esc(s.summary)+"</p>":"")+
-    "<div class='meta'>"+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
+    "<div class='meta'>"+(function(){var rp=readPos(l,s);return rp?"<span class='chip"+(rp.must?" acc":"")+"'>ลำดับอ่าน "+rp.i+"/"+rp.n+" · "+(rp.must?"ต้องอ่าน":"อ่านเสริม")+"</span>":"";})()+(s.minutes?"<span class='chip'>อ่าน ~"+s.minutes+" นาที</span>":"")+
     (s.source?"<span class='chip'>อ้างอิง: "+esc(s.source)+"</span>":"")+nlChips(s.nl)+"<button class='btn' data-act='present' data-plec='"+esc(l.lec)+"' data-psec='"+esc(s.id)+"'>▶ พรีเซนต์จากหัวข้อนี้</button>"+(PVADD.countSec(s)?"<span class='chip acc' title='ลากคลุมข้อความในบทเรียนแล้วกด ＋ ใส่ในสไลด์ เพื่อเพิ่ม'>ใส่ในสไลด์เอง "+PVADD.countSec(s)+"</span>":"")+""+hideBtn(l)+"<a class='chip acc' style='text-decoration:none' href='https://claude.ai/artifact/BRsYSzd35CARo2m6Jw6ANY#l-"+esc(s.id)+"' target='_blank' rel='noopener' title='ปักหัวข้อนี้ไว้ในหน้า Post-it ห้ามลืม'>ปักไว้ใน post-it</a>"+"</div>"+
     (FIGS=s.figs||{},FIGN=0,ANIMS=s.anims||{},ANIMN=0,IMGS=s.imgs||{},"<div class='prose'>"+(hid?recallHtml(s):md(s.md))+"</div>");
   FIGS={};ANIMS={};IMGS={};
@@ -2780,6 +2820,10 @@ var TR=(function(){
       "<button class='tr-tile press"+(wc?" warn":"")+"' data-trview='review'><small>ข้อที่ผิด รอทวน</small><b>"+wc+"</b></button>"+
       "<button class='tr-tile press' data-trview='meq'><small>"+esc(PL().meq+" / "+PL().osce)+"</small><b>"+meqN+"</b></button>"+
       "<button class='tr-tile press tr-desk' data-trview='lectures'><small>ข้อสอบ MCQ ทั้งชุด</small><b>"+allSections().reduce(function(a,x){return a+x.sec.items.length},0)+"</b></button></div>";
+    if(c.plan&&c.plan.length)h+="<details class='tr-about tr-plan' open><summary>แผนการอ่านแนะนำ · "+esc(c.label)+"</summary><div>"+(c.planNote?"<p style='margin:0 0 12px'>"+inline(c.planNote)+"</p>":"")+"<ol class='tr-plan-l'>"+
+      c.plan.map(function(p,pi){return "<li><b>"+(pi+1)+". "+esc(p.name)+"</b>"+(p.note?"<span>"+inline(p.note)+"</span>":"")+"<div class='tr-plan-c'>"+
+        (p.lecs||[]).map(function(id){var l=lecOf(id);if(!l)return "";var s=cardStat(l);
+          return "<button class='tr-tag press"+(s.ok===s.n?" ok":s.ok?" go":"")+"' data-trlec='"+esc(id)+"'>"+(s.ok===s.n?"✓ ":"")+"คาบ "+esc(id)+" "+esc(l.title)+"</button>";}).join("")+"</div></li>";}).join("")+"</ol></div></details>";
     h+="<div class='tr-whead'><h3>คาบเรียน</h3><span>"+lectures().length+" คาบ</span></div><div class='tr-grid'>";
     lectures().forEach(function(l){var s=cardStat(l);
       h+="<button class='tr-card press"+(s.ok===s.n?" done":"")+"' data-trlec='"+esc(l.lec)+"' aria-label='คาบ "+esc(l.lec)+" "+esc(l.title)+" เรียนแล้ว "+s.ok+" จาก "+s.n+" หัวข้อ'>"+
